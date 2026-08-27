@@ -1,0 +1,48 @@
+# correctness-by-construction
+
+One authoritative home for a single concept: **correctness by
+construction** — the design principle that correctness is built into
+the structure of a thing rather than tested in afterwards. The repo
+holds the plain-words statement of the concept (with its rationale,
+open questions, and the log of what changed it and why) and the
+executions derived from it — agent skills, checklists, templates —
+each pinned to the concept version it derives from. It is the middle
+tier of a three-tier workspace (handbook → concepts → runs; see
+docs/models/tiers.md): runs happen in other repos pinned to a concept
+version, and their surprises come back here as harvested concept
+changes. It exists so its author's understanding improves in a
+recorded way instead of living in a head and scattered notes.
+
+## Prerequisites
+
+- <e.g. Python 3.12+ / Node 22+ / Docker>
+
+## Run
+
+<!-- Or delete Run and Test — Framing decides whether this project
+     has commands (ADR-0024). -->
+
+```bash
+# The ONE command that builds & runs from a clean clone:
+<command>
+```
+
+## Test
+
+```bash
+<command>
+```
+
+## Project records
+
+| Record | Where | What it answers |
+|---|---|---|
+| Plan | [PLAN.md](PLAN.md) | Where are we, what's next, what does *done* mean |
+| Decisions | [docs/adr/](docs/adr/) | Why is it built this way |
+| Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | What is the current shape of the system |
+| Backlog | [TODO.md](TODO.md) | What's known but not done |
+| Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per version (for users) |
+| Devlog | [devlog/](devlog/) | Day-to-day work, dead ends, open questions |
+
+<!-- Keep this file short and CORRECT. Live status belongs in PLAN.md,
+     not here. Release gate: README verified on a clean machine. -->
