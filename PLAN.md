@@ -11,37 +11,22 @@ Detail only the next 1–2 steps finely; keep later steps coarse (rolling wave).
 
 ---
 
-## Step 0: Bootstrap                                [~]
-
-<!-- First session, this step still open: you are bootstrapping.
-     Take the briefing. Before touching anything else, draft
-     CHANGE-PLAN.md per the change-plans skill (shipped in the
-     kit). The plan's substance is the per-project content: what
-     each placeholder becomes, which records this project will
-     actually keep current (delete the rest), the birth entry's
-     date and handbook commit filled in .claude/decisions.md.
-     The middle steps are absent by design (ADR-0024): Framing
-     authors them, from a playbook or fresh — the change-plan
-     here covers Step 0 only.
-     Commit order for this set: plan open → project records →
-     agent install → plan close; the repo and its hygiene commit
-     already exist. The gates below are the exit — draft against
-     them. -->
+## Step 0: Bootstrap                                [x] 2026-08-27
 
 Goal: the container exists — repo, records, arrangement — before content.
 Gate:
-- [ ] Repo initialized; hygiene base files present.
-- [ ] Every placeholder filled, or explicitly deferred to a named
+- [x] Repo initialized; hygiene base files present.
+- [x] Every placeholder filled, or explicitly deferred to a named
       step (Commands and the stack overlay defer to Framing, which
       authors the steps that fill or delete them).
-- [ ] No fill-comment remains: where a comment says its content
+- [x] No fill-comment remains: where a comment says its content
       replaces it, the content is there and the comment is not.
       Every other stub comment is a standing rule — it stays.
-- [ ] Briefing committed: README purpose draft + devlog entry (a) —
+- [x] Briefing committed: README purpose draft + devlog entry (a) —
       names given here may change at Framing; that is what it is for.
-- [ ] Agent/project commit split held from the first commit: no
+- [x] Agent/project commit split held from the first commit: no
       commit mixes CLAUDE.md / .claude/ with the records.
-- [ ] Birth entry in .claude/decisions.md filled: date and the
+- [x] Birth entry in .claude/decisions.md filled: date and the
       copy-time handbook commit.
 Notes: Deferred to Framing (Step 1): Commands — CLAUDE.md's Commands
 block and README's Prerequisites/Run/Test (ADR-0024); ARCHITECTURE
