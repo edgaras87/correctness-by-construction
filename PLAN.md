@@ -91,6 +91,7 @@ Notes:
 ## Decision index
 
 - ADR-0001: Record architecture decisions (Step 0)
+- ADR-0002: Vendor handbook models as pinned copies (Step 0)
 
 ---
 
