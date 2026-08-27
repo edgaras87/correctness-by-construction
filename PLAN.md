@@ -34,18 +34,20 @@ below the Overview (components, invariants, codemap — nothing has a
 shape until content lands); CHANGELOG's role (may become the
 concept-version log — its "users" are run repos pinning versions).
 
-## Step 1: Framing                                  [ ]
+## Step 1: Framing                                  [x] 2026-08-28
 
 Goal: know what we're building and why, before code.
 Gate:
-- [ ] One-paragraph problem statement in README.
-- [ ] Success criteria written (how we'll know it worked).
-- [ ] Out-of-scope list written.
-- [ ] Middle steps authored and the plan sketched end-to-end once,
+- [x] One-paragraph problem statement in README.
+- [x] Success criteria written (how we'll know it worked).
+- [x] Out-of-scope list written.
+- [x] Middle steps authored and the plan sketched end-to-end once,
       coarsely — copied from a playbook (playbooks/) where one fits,
       written fresh where none does; birth materials brought with
       the briefing weigh in here.
-Notes:
+Notes: Written fresh — no concept-repo playbook existed to copy
+from. The name held (the material itself says CbC). problem-framer/
+excluded as noise at review.
 
 ## Step 2: Concept lands (mental layer)             [ ]
 
