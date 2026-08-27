@@ -6,6 +6,36 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-28  (Step 1: framing)
+
+- Framing done in one session (spanned midnight; gates closed
+  2026-08-28). Six-commit change set: README framed (success
+  criteria, out-of-scope, command stubs deleted — no-commands
+  resolved on both sides of the agent/project split), middle steps
+  authored (Steps 2–5: concept → birth-material executions →
+  practice executions → first harvest), Step 1 closed.
+- Read the two archive directories for the first time. Findings:
+  the concept is mature — five chapters that read as the mental
+  layer's seed, and their split answers the one-doc-or-several
+  question (several). The executions form a pipeline: cbc-framing
+  → infra-establish → cbc-bootstrap → cbc-slice, each refusing to
+  run without the previous one's artifacts. The startup snippet
+  cleanly separates method from project decisions.
+- Finding: agents-from-practice/ holds three executions, not the
+  briefed two. The third, problem-framer/, is a framing method
+  from an older lab/walk lineage overlapping cbc-framing —
+  excluded completely as noise at review, same status as the rest
+  of the archive.
+- Decisions: import order is dependency order (concept before the
+  executions that pin to its version); first harvest gets its own
+  early step to prove the loop; no models routing line in
+  CLAUDE.md — pointers ride the steps that need them (agent model
+  P2); the name held (the material itself says CbC).
+- Resume: Step 2 (concept lands) — draft its change-plan: import
+  the five chapters with provenance, decide the concept-version
+  scheme (v1) and CHANGELOG's role, de-provisionalize
+  ARCHITECTURE.
+
 ## 2026-08-27  (Step 0: bootstrap)
 
 - Project started. Repo initialized from the starter kit
