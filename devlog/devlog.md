@@ -46,6 +46,21 @@
 - Open: what granularity a "concept version" is; whether
   harvest/provenance discipline is local rules or its own
   convention; whether the mental layer is one document or several.
-- Resume: Framing (PLAN Step 1) — problem statement, success
-  criteria, out-of-scope, middle steps authored; the archive import
-  is project work there and gets its own change-plan.
+- Session close: Step 0 done — six-commit change set landed as
+  planned (plan open → agent install → records → models → step
+  close → plan close); three decisions.md entries queued as
+  handbook feedback (commit order, stub comment discipline,
+  attribution — trailers stripped from history and disabled before
+  anything was pushed). Agreed working practice, not yet recorded
+  anywhere binding: this repo has no project end, so
+  playbook/retrospective fold-back happens at step-gate closes —
+  log it as a decisions.md deviation the first time it is
+  exercised. Parked for Framing: whether CLAUDE.md gets a models
+  routing line (agent model P2 — pointer at the moment of need vs
+  ambient), and whether ARCHITECTURE's Components/Invariants/
+  Codemap sections fit a docs-only repo (fill with structural
+  invariants, or delete).
+- Resume: Framing (PLAN Step 1) — read the two archive directories
+  (birth-materials/, agents-from-practice/), then problem statement,
+  success criteria, out-of-scope, middle steps authored; the archive
+  import is project work there and gets its own change-plan.
