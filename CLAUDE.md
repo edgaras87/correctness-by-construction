@@ -47,19 +47,6 @@ it. Documents only — no code, no runs.
 - Artifact kinds — `.claude/skills/artifact-kinds/`
 - Hygiene — `.gitignore` `.gitattributes` `.editorconfig` (repo-hygiene)
 
-## Commands
-
-<!-- What an agent needs before touching anything. If a command only
-     works on the author's machine, it is not the command.
-     Or delete the section — Framing decides whether this project
-     has commands (ADR-0024). -->
-
-```bash
-<build>
-<test>
-<run>
-```
-
 <!-- SIZE BUDGET: this file is loaded in full, on every task, relevant
      or not. It is the only text that costs something even when it is
      useless. If it is longer than a screen, something in it belongs in
