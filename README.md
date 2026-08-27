@@ -13,25 +13,31 @@ version, and their surprises come back here as harvested concept
 changes. It exists so its author's understanding improves in a
 recorded way instead of living in a head and scattered notes.
 
-## Prerequisites
+## Success criteria
 
-- <e.g. Python 3.12+ / Node 22+ / Docker>
+- The concept statement here is the single authoritative version;
+  the archive copy is demoted to a historical snapshot.
+- The harvest loop has run end-to-end at least once: a real run's
+  surprise recorded as a concept change with provenance, and the
+  affected execution re-derived. First queued: checkout-system's
+  Boot 4.1 testing-trap improvement.
+- At least one new run is born from executions copied from this
+  repo, not from the archive.
+- Months-scale: the concept doc is actually consulted and updated
+  after runs.
 
-## Run
+## Out of scope
 
-<!-- Or delete Run and Test — Framing decides whether this project
-     has commands (ADR-0024). -->
-
-```bash
-# The ONE command that builds & runs from a clean clone:
-<command>
-```
-
-## Test
-
-```bash
-<command>
-```
+- Running projects or experiments here — runs happen in their own
+  repos, pinned to a concept version (runs tier).
+- Authoring method or working-arrangement conventions — the
+  handbook owns method.
+- Garden machinery — none until the garden rule triggers: a second
+  concept repo, a rule written twice.
+- Graduating an execution to its own concept repo — same trigger,
+  not now.
+- Everything in the archive repo outside the two directories named
+  in the birth briefing.
 
 ## Project records
 
