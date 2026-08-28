@@ -12,7 +12,12 @@
      Re-derived 2026-08-28: stage 3's config skeleton and stage 4's
      test-runtime properties now point at copy-and-fill masters in
      templates/ beside this skill's references (ADR-0008); whys and
-     traps kept (PLAN Step 6). -->
+     traps kept (PLAN Step 6).
+     Re-derived 2026-08-28: stages 4 and 5 point at
+     spring-harness-reference.md — the recurring harness artifacts
+     as code, confirmed by the third lived pass; a reference on
+     ADR-0008's imitated side, never pasted. Outcomes and traps
+     stay mastered here. -->
 
 # Spring Boot bootstrap walkthrough — outcomes and lived traps
 
@@ -133,6 +138,11 @@ enable the user socket unit, point the library at it.
   ground). The first real migration turns the count positive without
   changing what the test proves.
 
+The recurring artifacts these outcomes converge on — the two bases and
+the migration-path test — live as confirmed code in
+`spring-harness-reference.md` beside this walkthrough: **imitated,
+never pasted**; read its variation points before writing a line.
+
 **Traps, exact:**
 1. `spring-boot-restclient` must be present **at test scope** on Boot 4,
    or the web test context dies with
@@ -164,6 +174,9 @@ enable the user socket unit, point the library at it.
   HTTP → application → real-PostgreSQL round-trip through the real door;
   every response asserted. The release-at-one-instant pattern *is* the
   shape later race evidence takes — aimed at nothing yet.
+- The probe pair as lived code — endpoint, barrier test, and the
+  scheduled-death javadoc — is in `spring-harness-reference.md`, same
+  imitate-don't-paste rule.
 
 **Verified:** the standard test command green.
 
