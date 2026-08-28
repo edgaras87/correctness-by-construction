@@ -6,6 +6,40 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-28  (Step 5: first harvest)
+
+- The loop the repo exists for ran once, end to end: checkout-
+  system lived a Boot 4.1 trap (RANDOM_PORT alone provides no
+  TestRestTemplate bean; @AutoConfigureTestRestTemplate required),
+  recorded it in its decision log, fixed its own copy — and this
+  repo read that record and took the lesson into the authoritative
+  spring-boot-walkthrough.md in the run's own wording. Body now
+  byte-identical to the run's lived copy. Run repo read, never
+  edited. Six commits, none diverged.
+- Harvest discipline settled from the lived case (ADR-0007): the
+  execution's provenance header is its change log — one dated
+  harvest line per change, traveling with every future copy; no
+  concept bump for execution-only changes; CHANGELOG stays the
+  pure concept-version log; archive visibly stale by design.
+  Local rule in the bundle doc's Harvest section; promotion to
+  the handbook waits for the garden rule's trigger.
+- Worth remembering: the harvest was a two-hunk diff — smaller
+  than any plan around it. That is the loop working: the run pays
+  the hunt once, everyone downstream inherits it at birth.
+- Templates question resolved at plan review: checkout-system's
+  lived ground files put extraction past the don't-author-
+  speculatively bar, so Step 6 (templates extracted from the
+  lived run) was authored at this step's close — templates as
+  master, both walkthroughs re-derived to point at them, pom
+  excluded by its own convention.
+- README success criterion "harvest loop run once end-to-end" is
+  now met; noted in PLAN for release time.
+- Resume: Step 6 (templates) — draft its change-plan: read
+  checkout-system's compose/bootstrap-SQL/verify-suite/env files
+  read-only, land them as pinned master templates, re-derive the
+  two walkthroughs to keep whys and point at the templates
+  (harvest lines record it, ADR-0007).
+
 ## 2026-08-28  (Step 4: practice executions land)
 
 - Step 4 done in one session — ten commits, one mid-set revision,
