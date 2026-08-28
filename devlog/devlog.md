@@ -6,6 +6,36 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-28  (post-Step 6: the harness reference adopted)
+
+- Two workbench-era docs handed over (temp/, uncommitted, deleted
+  after use). The pom convention was superseded — our Step 4 import
+  is its cleaned descendant; diffed section by section, nothing to
+  take. The harness reference was the find: the stage 4–5 recurring
+  artifacts as code, exactly the test-support gap TODO'd in Later.
+- ADR-0008's second-run trigger judged fired: the doc itself proves
+  two pre-repo passes, checkout-system re-derived the shape a third
+  time. Landed as a *reference* (imitated, never pasted) —
+  ADR-0008's own boundary, not a rule change. spring-harness-
+  reference.md now sits beside the walkthrough, which routes to it
+  from stages 4–5.
+- The confirmation pass against checkout's bootstrap (read-only,
+  d732b53 and 83262b5) corrected the handed doc in five places —
+  the load-bearing one: the container as a faithful miniature
+  carrying the ground's authority split (bootstrap.sql mounted,
+  migrate as migrator, context as runtime, identity asserted);
+  the second pass had run the whole harness as the Testcontainers
+  superuser. Also: two bases not three; MigrationPathIT joins the
+  set; the probe round-trips current_user; the pool is sized to
+  the count. The old virtual-threads claim and the
+  failOnMissingLocations guard survive as variation points, each
+  attributed to the pass that lived it.
+- The old maintenance language (genre labels, workbench mastering,
+  flow-back, node/seat vocabulary) stripped on import, per the
+  standing rule from the earlier archive read: identify, never
+  adopt.
+- Resume: Step N (release) still next in PLAN.
+
 ## 2026-08-28  (post-Step 6: harvest from the archived run)
 
 - On request, read safe-reservations' project-replica (the run that
