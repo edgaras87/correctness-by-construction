@@ -41,7 +41,18 @@ concept version names.
 Why shaped this way: ADR-0003 (versioning); several documents because
 the statement's own split is by chapter (Framing, Step 2).
 
-The executions layer lands at Steps 3–4 and is added here then.
+### Executions (`executions/`)
+
+Responsibility: the derived layer — the skills, references, and
+startup snippet a run repo copies at birth, each file pinned to the
+concept version it derives from. Content, not this repo's working
+arrangement: nothing here is installed in this repo's own
+`.claude/`. The bundle doc (`executions/README.md`) states the
+birth mapping and the authoritative-vs-pinned rule.
+Why shaped this way: ADR-0004.
+
+The practice executions (infra-establish, cbc-bootstrap) land at
+Step 4 and join this component then.
 
 ## Invariants
 
@@ -56,6 +67,9 @@ The executions layer lands at Steps 3–4 and is added here then.
 - Vendored models are never edited locally — changes arrive only as
   a fresh pinned copy. Enforced in their provenance headers
   (ADR-0002).
+- An execution never lands without stating which concept version it
+  derives from. Enforced in each file's pin header, which travels
+  with every copy into a run repo (ADR-0004).
 
 ## Codemap
 
@@ -63,6 +77,7 @@ The executions layer lands at Steps 3–4 and is added here then.
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
+| `executions/` | The derived layer: skills + snippet a run copies at birth; `README.md` there is the bundle doc (ADR-0004) |
 | `docs/models/` | Handbook models, vendored pinned copies (ADR-0002) |
 | `docs/adr/` | Architecture decision records |
 | `devlog/` | Session-by-session work history |
