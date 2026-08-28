@@ -6,6 +6,38 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-28  (Step 3: executions land)
+
+- Step 3 done in one session, seven-commit change set, none
+  diverged. The derived layer exists: nine files under
+  executions/ (cbc-framing and cbc-slice with their references,
+  the startup snippet), each header opening "derives from concept
+  v1" plus provenance @ fe0075d. A run can now be born from this
+  repo's copies — executions/README.md carries the birth mapping
+  and the authoritative-vs-pinned rule.
+- Home decision (ADR-0004): executions/ at the repo root as
+  content, not .claude/skills/ — this repo never frames or slices
+  itself, the skills could only misfire here, and content commits
+  would land agent-scoped. Committed the ADR before the placement
+  it governs; the pattern read well at review.
+- Close-read finding, marked not fixed: the two worked-example.md
+  files are byte-identical — bundle design, each installed skill
+  self-contained. Twin note in both headers so a change to one
+  lands in both. Divergence between them would otherwise be
+  invisible (agent model O1).
+- Mechanical detail worth keeping: SKILL.md pin headers sit below
+  the YAML frontmatter so a verbatim run-repo copy still parses
+  as a skill; the pin line names the concept repo so it stays
+  self-contained in a copy.
+- Step 4's close read surfaced two honest questions now in its
+  gate: practice-born executions may not truthfully say "derives
+  from concept v1" (they grew from practice), and the archive's
+  STATUS/LAYOUT companion docs need a decided fate.
+- Resume: Step 4 (practice executions land) — draft its
+  change-plan: import infra-establish (+ infra-serve) and
+  cbc-bootstrap; decide the pin phrasing and the companion-doc
+  fate; update the bundle doc; problem-framer/ stays out.
+
 ## 2026-08-28  (Step 2: concept lands)
 
 - Step 2 done in one session, seven-commit change set, none
