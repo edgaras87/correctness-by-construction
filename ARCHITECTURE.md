@@ -43,16 +43,17 @@ the statement's own split is by chapter (Framing, Step 2).
 
 ### Executions (`executions/`)
 
-Responsibility: the derived layer — the skills, references, and
-startup snippet a run repo copies at birth, each file pinned to the
-concept version it derives from. Content, not this repo's working
-arrangement: nothing here is installed in this repo's own
-`.claude/`. The bundle doc (`executions/README.md`) states the
-birth mapping and the authoritative-vs-pinned rule.
-Why shaped this way: ADR-0004.
-
-The practice executions (infra-establish, cbc-bootstrap) land at
-Step 4 and join this component then.
+Responsibility: the derived layer — the five skills, their
+references, and the startup snippet a run repo copies at birth,
+covering the whole pipeline (cbc-framing → infra-establish /
+infra-serve → cbc-bootstrap → cbc-slice), each file pinned to the
+concept version it derives from or is checked against (ADR-0005).
+Content, not this repo's working arrangement: nothing here is
+installed in this repo's own `.claude/`, and the archive's agent
+definitions stayed behind (ADR-0006). The bundle doc
+(`executions/README.md`) states the birth mapping and the
+authoritative-vs-pinned rule.
+Why shaped this way: ADR-0004, ADR-0006.
 
 ## Invariants
 
