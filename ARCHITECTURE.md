@@ -63,8 +63,10 @@ Why shaped this way: ADR-0004, ADR-0006, ADR-0008.
 <!-- What must NEVER happen to the data / system, and where each rule
      is enforced (DB constraint, module boundary, ...). -->
 - Concept substance never changes in the archive — this repo is
-  authoritative, the archive a historical snapshot. Enforced in each
-  chapter's provenance header, which travels with the file.
+  authoritative, the archive a historical snapshot (retired
+  2026-08-28: frozen, never consulted as a source again; provenance
+  pins remain checkable against it). Enforced in each chapter's
+  provenance header, which travels with the file.
 - A substantive concept change never lands without a version entry.
   Enforced in CHANGELOG's standing comment and ADR-0003; checked at
   commit review — a review-grade wall, named as such.
