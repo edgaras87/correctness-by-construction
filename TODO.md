@@ -26,6 +26,13 @@
 - [ ] Trigger descriptions of the practice skills are unoptimized
       (archive STATUS); if they under- or over-fire in runs, the
       descriptions are the knob.
+- [ ] The postgres image tag floats: the ground template and the
+      harness reference both say postgres:17, so ground and harness
+      can pull different minors at different times — noticed while
+      discussing the harness reference. If a run ever hits a
+      minor-drift surprise, decide whether both should pin tighter
+      (full version or digest); until then the shared major is the
+      deliberate coupling.
 - [ ] checkout-system reads the db port as CHECKOUT_DB_PORT while
       its .env.example names POSTGRES_PORT — two env keys for one
       fact, found at template extraction. If it is a defect, fix it
