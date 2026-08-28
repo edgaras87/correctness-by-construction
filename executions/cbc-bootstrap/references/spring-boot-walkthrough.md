@@ -3,7 +3,12 @@
      archive/cbc/system-design-method agents-from-practice/
      system-bootstrap/.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md
      @ fe0075d (imported 2026-08-28, PLAN Step 4). Changes on
-     import: none — verbatim below this header. -->
+     import: none — verbatim below this header.
+     Harvested 2026-08-28: the Boot 4.1 TestRestTemplate trap
+     (RANDOM_PORT alone provides no bean;
+     @AutoConfigureTestRestTemplate required) — from
+     checkout-system's decision record of 2026-08-27, in the run's
+     own wording (ADR-0007). -->
 
 # Spring Boot bootstrap walkthrough — outcomes and lived traps
 
@@ -122,7 +127,12 @@ enable the user socket unit, point the library at it.
    `NoClassDefFoundError: RestTemplateBuilder` — the failure names
    something else.
 2. Boot 4 moved the test REST client to
-   `org.springframework.boot.resttestclient.*`.
+   `org.springframework.boot.resttestclient.*` — and `RANDOM_PORT`
+   alone **no longer provides the `TestRestTemplate` bean**: the test
+   (or base) needs `@AutoConfigureTestRestTemplate` from
+   `org.springframework.boot.resttestclient.autoconfigure`, or the
+   autowire fails with "No qualifying bean". (Lived on Boot 4.1.1,
+   checkout-system bootstrap.)
 3. Testcontainers 2.x renamed artifacts and packages:
    `testcontainers-postgresql`, `org.testcontainers.postgresql`.
 4. **No dummy baseline migration** — keep the home honestly empty until a
@@ -156,7 +166,8 @@ at the first slice.
 1. Boot 4 renames: web starter → web-MVC name; `-test` companions per
    starter; test REST client in `org.springframework.boot.resttestclient.*`.
 2. `spring-boot-restclient` at test scope or the web test context fails on
-   `RestTemplateBuilder`.
+   `RestTemplateBuilder`; `@AutoConfigureTestRestTemplate` required —
+   `RANDOM_PORT` alone provides no `TestRestTemplate` bean.
 3. Testcontainers 2.x: `testcontainers-postgresql`,
    `org.testcontainers.postgresql`.
 4. `~/.testcontainers.properties` binds only from `$HOME`.
