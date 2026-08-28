@@ -35,6 +35,16 @@ infrastructure step and a bootstrap step that invoke their skills
 cbc-slice); only re-entry (infra-serve) arrives unplanned, and its
 trigger covers that.
 
+Two skills (infra-establish, cbc-bootstrap) carry a `templates/`
+directory beside their references — copy-and-fill masters for the
+repeating ground and harness files (ADR-0008). They ride the skill
+copy at birth like everything else. At use, the run copies a
+template to the path its walkthrough names and fills the
+placeholders; the filled file becomes the run's own — not a pinned
+copy — and the run's infrastructure contract notes it was filled
+from the skill's templates. Fills never harvest back; a change to a
+template's *shape* harvests like any execution change (ADR-0007).
+
 Deliberately absent — the born project's own decisions: recording
 conventions, commit conventions, run files, the run's own
 versioning. Also deliberately absent: the archive's agent

@@ -50,10 +50,13 @@ infra-serve → cbc-bootstrap → cbc-slice), each file pinned to the
 concept version it derives from or is checked against (ADR-0005).
 Content, not this repo's working arrangement: nothing here is
 installed in this repo's own `.claude/`, and the archive's agent
-definitions stayed behind (ADR-0006). The bundle doc
+definitions stayed behind (ADR-0006). Two skills carry copy-and-fill
+template masters in `templates/` beside their references, extracted
+from the first run's lived files; a run fills them and the filled
+file is the run's own (ADR-0008). The bundle doc
 (`executions/README.md`) states the birth mapping and the
 authoritative-vs-pinned rule.
-Why shaped this way: ADR-0004, ADR-0006.
+Why shaped this way: ADR-0004, ADR-0006, ADR-0008.
 
 ## Invariants
 
