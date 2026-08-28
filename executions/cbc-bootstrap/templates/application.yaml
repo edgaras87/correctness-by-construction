@@ -8,6 +8,11 @@
 # own project key; run-local ADR references generalized to neutral
 # wording. Copy into a run and fill; the filled file is the run's
 # own (ADR-0008).
+# Harvested 2026-08-28: the password key renamed
+# <PROJECT>_DB_PASSWORD → <PROJECT>_RUNTIME_PASSWORD, together with
+# the .env shape it must match (infra-establish
+# templates/.env.example) — from safe-reservations' lived key
+# (ADR-0007).
 
 spring:
   application:
@@ -26,7 +31,7 @@ spring:
     username: <project>_runtime
     # secrets never default: exported by the operator; local-dev value
     # rides in .env (see .env.example)
-    password: ${<PROJECT>_DB_PASSWORD}
+    password: ${<PROJECT>_RUNTIME_PASSWORD}
 
 management:
   endpoint:
