@@ -6,6 +6,12 @@
 -- (<project>, <project_db>, <project_schema>, container name).
 -- Copy into a run at the same path and fill; the filled file is the
 -- run's own (ADR-0008).
+-- Harvested 2026-08-28: \echo section banners and readable
+-- object-type names in query 5, from safe-reservations' lived
+-- verify-database-model.sql (ADR-0007). Its other divergences —
+-- an explicit role IN list, a row-per-privilege matrix — not
+-- adopted: the prefix LIKE also surfaces stray roles, and the
+-- boolean matrix is more compact.
 
 -- infrastructure/postgres/verify-database-model.sql
 --
@@ -20,7 +26,8 @@
 -- other document open. The behavioral half (DDL attempted as runtime and
 -- refused) lives in the operator manual and the establishment log.
 
--- 1 · Project roles and capabilities
+\echo ''
+\echo '=== 1 · Project roles and capabilities ==='
 -- expected: exactly <project>_migrator and <project>_runtime; for both:
 --   rolsuper=f, rolcreatedb=f, rolcreaterole=f, rolcanlogin=t
 SELECT rolname, rolsuper, rolcreatedb, rolcreaterole, rolcanlogin
@@ -28,13 +35,15 @@ FROM pg_roles
 WHERE rolname LIKE '<project>\_%'
 ORDER BY rolname;
 
--- 2 · Database ownership — stays above the split
+\echo ''
+\echo '=== 2 · Database ownership — stays above the split ==='
 -- expected: <project_db> owned by postgres (the bootstrap identity)
 SELECT datname, pg_get_userbyid(datdba) AS owner
 FROM pg_database
 WHERE datname = '<project_db>';
 
--- 3 · Schema ownership
+\echo ''
+\echo '=== 3 · Schema ownership ==='
 -- expected: <project_schema> owned by <project>_migrator;
 --           public untouched, owned by pg_database_owner
 SELECT nspname, pg_get_userbyid(nspowner) AS owner
@@ -42,7 +51,8 @@ FROM pg_namespace
 WHERE nspname IN ('<project_schema>', 'public')
 ORDER BY nspname;
 
--- 4 · Schema privileges
+\echo ''
+\echo '=== 4 · Schema privileges ==='
 -- expected: <project>_migrator USAGE=t CREATE=t (owner);
 --           <project>_runtime  USAGE=t CREATE=f
 SELECT r.rolname,
@@ -52,12 +62,17 @@ FROM pg_roles r
 WHERE r.rolname LIKE '<project>\_%'
 ORDER BY r.rolname;
 
--- 5 · Default privileges — the model's load-bearing mechanism
+\echo ''
+\echo '=== 5 · Default privileges — the load-bearing mechanism ==='
 -- expected, for owner <project>_migrator in schema <project_schema>, grantee
 -- <project>_runtime, is_grantable=f throughout:
---   objtype r (tables):    SELECT, INSERT, UPDATE, DELETE
---   objtype S (sequences): USAGE, SELECT
-SELECT d.defaclobjtype                AS objtype,
+--   sequence: USAGE, SELECT
+--   table:    SELECT, INSERT, UPDATE, DELETE
+SELECT CASE d.defaclobjtype
+         WHEN 'r' THEN 'table'
+         WHEN 'S' THEN 'sequence'
+         ELSE d.defaclobjtype::text
+       END                            AS objtype,
        pg_get_userbyid(a.grantee)     AS grantee,
        a.privilege_type,
        a.is_grantable
