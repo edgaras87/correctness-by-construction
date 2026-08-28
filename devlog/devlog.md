@@ -6,6 +6,44 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-28  (Step 4: practice executions land)
+
+- Step 4 done in one session — ten commits, one mid-set revision,
+  the change set that proved the boundaries. The pipeline is
+  complete: infra-establish (+ absorbed record defaults),
+  infra-serve, cbc-bootstrap under executions/ as skills, pinned
+  "checked against concept v1" (ADR-0005 — practice-born
+  executions get honest pins, not derives-from claims).
+- The form debate, worth remembering whole: the archive ships the
+  practice phases as skills driven by agent seats. At the commit-3
+  boundary the over-engineering question was raised; a ten-file
+  skills+agents staging was reverted unlanded. First swing: guides
+  + plan-step pointers (P2 — the phases are planned, pointers at
+  the moment of need fire). Counter-swing: re-entry is unplanned —
+  "we need Redis now" has no plan step waiting, and a guide then
+  depends on human memory (P1). Settled: skills minus agents
+  (ADR-0006) — one delivery mechanism, triggers covering the
+  unplanned case, the never-lived seat layer left behind.
+- DEAD END: the guides-shaped revision (drafted, staged, replaced
+  at the same boundary before landing). Not wasted — its P2
+  reasoning survives in ADR-0006's rejected-options.
+- Import fixes finally fired: the archive keeps infra-establish at
+  skills/SKILL.md against its own STATUS diagram (unregisterable
+  as a named skill) — normalized, recorded in headers; the
+  groundskeeper's record-path defaults absorbed into the SKILL as
+  a recorded addition.
+- STATUS/LAYOUT stayed behind; their open/owed items are in TODO
+  Later, joined by the templates idea from review: extract
+  copy-and-fill templates (compose, bootstrap SQL, verify suite —
+  not the pom) from the next lived run, template as master.
+- Plan-prose slip caught at staging: "twelve files" where the
+  enumeration said ten. Never landed; retro'd in the close.
+- Resume: Step 5 (first harvest) — draft its change-plan: read
+  checkout-system's Boot 4.1 testing-trap entry (read-only),
+  bring it into spring-boot-walkthrough.md with run provenance,
+  decide the post-import change discipline (execution changes vs
+  the concept-version log) and the harvest-discipline question.
+
 ## 2026-08-28  (Step 3: executions land)
 
 - Step 3 done in one session, seven-commit change set, none
