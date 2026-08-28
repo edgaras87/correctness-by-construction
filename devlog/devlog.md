@@ -6,6 +6,44 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-28  (Step 6: templates from the lived run)
+
+- Step 6 done in one session, nine commits, none diverged. Seven
+  copy-and-fill masters now live inside their skills (five under
+  infra-establish/templates/, two under cbc-bootstrap/templates/),
+  each verified by substituting checkout's identities back in and
+  diffing against the lived file — deltas matched the declared
+  generalizations exactly. Both walkthroughs shrank to whys, traps,
+  and pointers; the bodies live once.
+- ADR-0008 got the load-bearing distinctions: templates ride inside
+  the skill (self-containment); a fill becomes the run's own file,
+  not a pinned copy; fills never harvest back, shape changes do;
+  and the boundary rule — imitated content stays an example under
+  references/, pasted content becomes a template, application
+  source is neither until a second run re-derives the same shape
+  (test-support Java parked in TODO Later on that trigger).
+- The blind-trust question at review produced the off-template
+  rule (assumptions differ → derive from the model, record, expect
+  a harvest — never bend a decided constraint to fit a template)
+  and the fill-trail line in the handoff. The guards that already
+  existed: decisions upstream of templates, Verified: gates
+  downstream, harvest loop around it all.
+- Second harvest landed en route: the lived .env carries a fourth
+  key (runtime application password) the walkthrough predated.
+  Extraction also surfaced a run inconsistency (CHECKOUT_DB_PORT
+  vs POSTGRES_PORT) — kept as lived in the templates, TODO'd:
+  fix in the run first, then harvest.
+- Also this session, advisory: close read confirmed
+  the-whole-system-in-plain.md agrees with concept v1 (four minor
+  compressions noted, no rewrite owed); archive deprecation needs
+  no header changes — the headers already deny it authority —
+  frozen beats deleted so pins stay checkable; ARCHITECTURE
+  invariant now says retired.
+- Resume: Step N (Release) — CHANGELOG release entry, README true
+  for a stranger, known issues filed in TODO. The harvest-loop
+  success criterion was met at Step 5; templates were the last
+  authored step.
+
 ## 2026-08-28  (Step 5: first harvest)
 
 - The loop the repo exists for ran once, end to end: checkout-
