@@ -8,7 +8,11 @@
      (RANDOM_PORT alone provides no bean;
      @AutoConfigureTestRestTemplate required) — from
      checkout-system's decision record of 2026-08-27, in the run's
-     own wording (ADR-0007). -->
+     own wording (ADR-0007).
+     Re-derived 2026-08-28: stage 3's config skeleton and stage 4's
+     test-runtime properties now point at copy-and-fill masters in
+     templates/ beside this skill's references (ADR-0008); whys and
+     traps kept (PLAN Step 6). -->
 
 # Spring Boot bootstrap walkthrough — outcomes and lived traps
 
@@ -20,7 +24,12 @@ are load-bearing throughout; on Boot 3 the names differ.
 
 This doc carries **required outcomes** (what must be true, the how is
 yours) and **lived traps** (exact facts about this stack and environment).
-It carries no code to copy. **The project's requirements document wins over
+It carries no code to copy. Its config files, though, are
+copy-and-fill masters in `templates/` beside this skill's
+`references/` (ADR-0008); they implement the stack line above, and
+if the run's decided stack differs you are **off-template**: derive
+from the outcomes here, record the deviation in the run's log, and
+expect it to harvest. **The project's requirements document wins over
 this doc on any conflict.** Governing principle at every tier: *something
 outside the app migrates; the app runs.*
 
@@ -61,6 +70,10 @@ announces **Java 21** (align IDE and terminal JDK if not); health UP.
 
 ## 3. Wire the runtime datasource
 
+Config skeleton copy-and-fill: `templates/application.yaml` — the
+absences below ride in it as comments; the run's business config
+grows under its own key, never in the template.
+
 - Connect **as the runtime identity only**, using the connection facts the
   requirements carry; details in the operator manual.
 - **Three deliberate absences, each commented in the config with its why:**
@@ -87,9 +100,8 @@ enable the user socket unit, point the library at it.
 
 **Traps, exact:**
 1. `~/.testcontainers.properties` binds **only from `$HOME`** — never the
-   project root (lived as a long "no valid Docker environment" hunt). It
-   carries `docker.host=unix:///run/user/<uid>/podman/podman.sock` and
-   `ryuk.disabled=true`.
+   project root (lived as a long "no valid Docker environment" hunt).
+   Copy-and-fill: `templates/testcontainers.properties`.
 2. Ryuk misbehaves under rootless podman; disabling it is the accepted
    trade — a hard-killed test JVM can strand a throwaway container,
    cleaned with `podman ps` / `rm -f`.
