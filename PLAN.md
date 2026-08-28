@@ -73,36 +73,49 @@ Notes: The CHANGELOG stub's rules had to be replaced, not filled
 .claude/decisions.md. The archive birth-materials README was not
 imported; the bundle question it answers moves to Step 3.
 
-## Step 3: Executions land (birth materials)        [ ]
+## Step 3: Executions land (birth materials)        [x] 2026-08-28
 
 Goal: cbc-framing, cbc-slice, and the startup snippet live here,
 each pinned to concept v1.
 Gate:
-- [ ] The three imported with the same provenance discipline as
-      Step 2 (source path, archive commit, changes on import —
-      fixes recorded, never silently absorbed), each stating
-      "derives from concept v1".
-- [ ] Executions' home decided and recorded (ADR if warranted):
-      they are content this repo delivers, not its own working
-      arrangement — this repo never runs cbc-framing on itself —
-      so .claude/skills/ placement needs an argument, not a habit.
-- [ ] The bundle question answered: what a run repo copies at
-      birth and how (the archive README's job), recorded where a
-      run birth will find it.
-- [ ] ARCHITECTURE: executions component added, codemap updated.
-Records: provenance headers, devlog, ADR if the home warrants one.
-Notes: consumes docs/models/agent.md (channel and delivery
-vocabulary for execution form). Own change-plan.
+- [x] Nine files imported (two skills + references, the snippet)
+      with the Step 2 discipline, each header opening "derives
+      from concept v1". Close read found no defects; one finding
+      marked, not fixed: the two worked-example.md files are
+      byte-identical by bundle design — both headers carry a Twin
+      note so a change to one lands in both.
+- [x] Home decided and recorded: executions/ at the repo root as
+      content, not .claude/skills/ (ADR-0004). SKILL.md headers
+      sit below the frontmatter so run-repo copies still parse.
+- [x] Bundle question answered: executions/README.md states the
+      birth mapping and the authoritative-vs-pinned rule.
+- [x] ARCHITECTURE: executions component, codemap row, pinning
+      invariant added.
+Records: ADR-0004, provenance headers, devlog.
+Notes: consumed docs/models/agent.md — P2 placed the bundle doc,
+the installed/content distinction shaped ADR-0004.
 
 ## Step 4: Practice executions land                 [ ]
 
 Goal: infra-establish (+ infra-serve) and cbc-bootstrap live here,
 same discipline as Step 3.
 Gate:
-- [ ] Same provenance and version-pinning discipline as Step 3.
+- [ ] Imported under executions/ with the Step 3 header
+      discipline — fixes recorded, never silently absorbed.
+- [ ] The pin phrasing for practice-born executions decided
+      honestly: they grew from practice rather than being derived
+      from the chapters, so "derives from concept v1" may be the
+      wrong claim — decide what the header says and record why.
+- [ ] Companion docs decided: what happens to the archive's
+      STATUS / LAYOUT files — imported, absorbed into headers, or
+      left behind with the reason recorded.
+- [ ] Bundle doc updated: whether a run copies these at birth too
+      (checkout-system did), and the mapping if so.
 - [ ] problem-framer/ stays out (excluded as noise at Framing).
-Records: provenance, devlog.
-Notes: coarse — detail at Step 3's close.
+- [ ] ARCHITECTURE: forward note removed; codemap current.
+Records: provenance headers, devlog, ADR if the pin phrasing
+warrants one.
+Notes: own change-plan.
 
 ## Step 5: First harvest                            [ ]
 
@@ -140,6 +153,7 @@ Notes:
 - ADR-0001: Record architecture decisions (Step 0)
 - ADR-0002: Vendor handbook models as pinned copies (Step 0)
 - ADR-0003: Whole-number concept versions, logged in CHANGELOG (Step 2)
+- ADR-0004: Executions live as content under executions/ (Step 3)
 
 ---
 
