@@ -6,6 +6,31 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-29  (session: app-structure question opened, undecided)
+
+- Q&A session, no change set. Discussed application structure
+  against checkout's lived shape (package-by-feature,
+  package-private boundaries, depth earned per feature): classic
+  layered, hexagonal/onion/clean, vertical slice, modular monolith
+  named and weighed. Two positions reached, neither enacted yet:
+  structure is a bootstrap decision recorded like the stack
+  decision (default = the lived shape; a named pattern is legal
+  when the run's log carries the why — practicing a pattern counts
+  as a deciding input if stated); and a short app-structure
+  reference in cbc-bootstrap/references likely earns its place —
+  decision hook + recall + user↔agent shared vocabulary, NOT a
+  patterns survey (pros/cons essays stay re-derivable). If adopted
+  it absorbs the TODO Later trigger line parked 2026-08-28.
+- The user's closing observation, not to lose: the structure
+  choice also shapes how slice work writes code against its
+  planned requirements — so the decision's reach is beyond
+  bootstrap. Weigh tomorrow whether the reference (or the run-log
+  decision it prescribes) needs routing where cbc-slice work sees
+  it, not only at bootstrap.
+- Resume: decide the app-structure reference — yes/no, its home,
+  its pointers (including the slice-side reach above); if yes, run
+  it as a change set. Next PLAN step remains Step N (release).
+
 ## 2026-08-28  (post-Step 6: the harness reference adopted)
 
 - Two workbench-era docs handed over (temp/, uncommitted, deleted
