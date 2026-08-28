@@ -39,3 +39,17 @@ Deliberately absent — the born project's own decisions: recording
 conventions, commit conventions, run files, the run's own
 versioning. Also deliberately absent: the archive's agent
 definitions (ADR-0006) — the skills carry the method whole.
+
+## Harvest — how a run's lesson lands here
+
+A run's surprise about an execution travels through records
+(docs/models/tiers.md): the run records it in its own log and may
+fix its own copy; this repo reads that record — read-only, a
+harvest never edits a run — and updates the authoritative copy
+here, in the run's own wording. The change is logged as one dated
+harvest line in that execution's provenance header, which travels
+with every future copy. The pin is untouched and no concept
+version bumps unless the mental layer itself changed; CHANGELOG
+carries concept versions only. The archive's copy stays a
+historical snapshot — visibly stale is its job. Why this shape:
+ADR-0007.
