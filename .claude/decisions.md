@@ -71,3 +71,15 @@
   the arrangement should state an attribution policy at birth (in
   the kit/install block), so it is decided once instead of
   discovered at the first commit.
+
+- 2026-08-28 CHANGELOG stub repurposed: header and standing comment
+  rewritten for the concept-version log role (ADR-0003).
+  Why: the kit stub assumes an application repo — SemVer, user-speak
+  examples, Deprecated/Security categories. A concept repo's
+  changelog users are pinners (run repos, executions citing a
+  version), and its versions are concept versions; the stub's rules
+  had to be replaced, not filled. Candidate handbook feedback: the
+  kit may want per-repo-type CHANGELOG stubs, or a stub that asks
+  what a version is here instead of assuming SemVer.
+  Rejected: keeping the stub and logging versions elsewhere — two
+  version-shaped records where the repo needs one.
