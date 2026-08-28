@@ -5,7 +5,14 @@
      @ fe0075d (imported 2026-08-28, PLAN Step 4). Changes on
      import: moved — from .claude/skills/references/, beside rather
      than inside the skill directory (same normalization as the
-     SKILL.md). Content verbatim below this header. -->
+     SKILL.md). Content verbatim below this header.
+     Re-derived 2026-08-28: embedded file bodies (compose, bootstrap
+     SQL, flyway.conf) and the verify-suite section list replaced by
+     pointers to the templates/ masters beside this skill's
+     references (ADR-0008); whys and traps kept (PLAN Step 6).
+     Harvested 2026-08-28: .env carries a fourth key — the runtime
+     application password the app reads from the environment — from
+     checkout-system's lived .env.example (ADR-0007). -->
 
 # PostgreSQL setup walkthrough — from nothing to a governed, verified ground
 
@@ -20,6 +27,16 @@ Placeholders: `<project>` — underscored in SQL identifiers
 (`<project>_migrator`), hyphenated where project naming allows
 (compose project name).
 
+The files themselves are copy-and-fill masters in `templates/`,
+beside this skill's `references/` (ADR-0008) — this walk carries the
+whys and the order; the templates carry the bodies and their recall
+comments. Fill a template, and the filled file is the run's own.
+The templates implement the assumptions above; if the run's decided
+constraints differ, you are **off-template**: derive from the model
+(`postgres-role-split.md`), record the deviation in the run's log,
+and expect it to harvest — never bend a decided constraint to fit a
+template.
+
 ## 0 · Preconditions
 
 - podman installed, a compose provider present; `podman compose config`
@@ -32,45 +49,9 @@ Placeholders: `<project>` — underscored in SQL identifiers
 
 ## 1 · Declare the service (compose)
 
-`compose.yaml` — a `postgres` service and the Flyway one-shot:
-
-```yaml
-name: <project>          # pinned: volumes/networks keep their names wherever
-                         # the file runs (a staging dir, the repo, CI)
-services:
-  postgres:
-    image: docker.io/library/postgres:17
-    container_name: <project>-postgres
-    environment:
-      POSTGRES_PASSWORD: ${POSTGRES_BOOTSTRAP_PASSWORD}
-      POSTGRES_DB: <project_db>
-    ports:
-      - "${POSTGRES_PORT:-5432}:5432"      # host side = machine variance
-    volumes:
-      - postgres-data:/var/lib/postgresql/data
-      - ./infrastructure/postgres/init:/docker-entrypoint-initdb.d:ro,Z
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d <project_db>"]
-      interval: 5s
-      timeout: 3s
-      retries: 10
-
-  flyway:                                   # the only DDL path — a one-shot,
-    image: docker.io/flyway/flyway:11       # hidden from plain `up`
-    profiles: ["migrate"]
-    environment:
-      FLYWAY_USER: <project>_migrator
-      FLYWAY_PASSWORD: ${FLYWAY_MIGRATOR_PASSWORD}
-    depends_on:
-      postgres:
-        condition: service_healthy
-    volumes:
-      - ./infrastructure/flyway/conf:/flyway/conf:ro,Z
-      - ./infrastructure/flyway/migrations:/flyway/sql:ro,Z
-
-volumes:
-  postgres-data:        # bare name — compose prefixes the pinned project name
-```
+`compose.yaml` — a `postgres` service and the Flyway one-shot (a
+one-shot behind a profile: the only DDL path, hidden from plain
+`up`). Copy-and-fill: `templates/compose.yaml`.
 
 Podman notes: the `:Z` mount flag matters on SELinux hosts; volume and
 network names get the compose project prefix automatically — never
@@ -79,81 +60,27 @@ volume identity depends on the directory the file happens to run from.
 
 ## 2 · Split out credentials (`.env`)
 
-`.env` (git-ignored) + committed `.env.example`. Keys: the bootstrap
-password, the migrator password (**must equal** the literal in the
-bootstrap SQL below), optional `POSTGRES_PORT`. Rule: secrets and
-machine variance are variables; **decided identities (db, schema, role
-names) stay literal** in the files that use them — changing one is a
-committed decision, not configuration.
+`.env` (git-ignored) + committed `.env.example`. Copy-and-fill:
+`templates/.env.example`. Keys: the bootstrap password, the migrator
+password (**must equal** the literal in the bootstrap SQL), optional
+`POSTGRES_PORT`, and the runtime application password (**must
+equal** the runtime literal in the bootstrap SQL) — the app reads it
+from the environment at bootstrap; the run that lived this walk
+added the key. Rule: secrets and machine variance are variables;
+**decided identities (db, schema, role names) stay literal** in the
+files that use them — changing one is a committed decision, not
+configuration.
 
 ## 3 · Write the bootstrap SQL (the model instantiated)
 
 `infrastructure/postgres/init/bootstrap.sql` — runs **once**,
 automatically, at the container's first start against an empty volume,
-as the bootstrap identity, **connected to `POSTGRES_DB`**. Comments
-carried in full — they are the recall layer:
-
-```sql
--- infrastructure/postgres/init/bootstrap.sql
---
--- Purpose:
---   Instantiate the postgres role model for this project: the two working
---   identities, the application schema, and the privilege boundaries.
---
--- Run as:
---   the bootstrap identity (postgres) — runs automatically, ONCE, at the
---   container's first start against an empty volume (docker-entrypoint-initdb.d;
---   files there run in lexical order — irrelevant while this is the only one).
---   Re-run = full reset: podman compose down --volumes, then up.
---
--- Database context:
---   <project_db> — the container's entrypoint creates POSTGRES_DB
---   (compose.yaml) at first start, then runs this script CONNECTED TO IT:
---   schema and grant statements below land in this database. CREATE ROLE is
---   the exception — roles are cluster-wide, in no database.
---
--- Local development note:
---   Role passwords are explicit local-dev placeholders, coupled to .env
---   (FLYWAY_MIGRATOR_PASSWORD must equal the migrator password here).
---
--- Boundary:
---   Identities, schema, and privilege boundaries only — no tables, no
---   application objects; those arrive solely through the migration tool.
-
--- the two identities of the authority split
-CREATE ROLE <project>_migrator LOGIN PASSWORD '...';
-CREATE ROLE <project>_runtime  LOGIN PASSWORD '...';
-
--- PUBLIC (the grant target: every role, present and future) loses the default
--- right to connect; access to this database exists only by the named grants
--- below. The bootstrap identity needs no grant — superusers bypass checks.
-REVOKE CONNECT ON DATABASE <project_db> FROM PUBLIC;
-GRANT  CONNECT ON DATABASE <project_db> TO <project>_migrator;
-GRANT  CONNECT ON DATABASE <project_db> TO <project>_runtime;
-
--- the application schema: owned by migrator, consumable by runtime
-CREATE SCHEMA <project_schema> AUTHORIZATION <project>_migrator;
-GRANT USAGE ON SCHEMA <project_schema> TO <project>_runtime;
-
--- the DEFAULT SCHEMA named "public" (unrelated to the PUBLIC grant target
--- above) stops being usable by anyone — no side door beside the governed
--- schema. (PG15+ already revokes CREATE; this makes the whole stance explicit.)
-REVOKE ALL ON SCHEMA public FROM PUBLIC;
-
--- the load-bearing lines: every table and sequence a future migration creates
--- arrives already granted to runtime — the split needs no per-migration
--- discipline, so it cannot erode
-ALTER DEFAULT PRIVILEGES FOR ROLE <project>_migrator IN SCHEMA <project_schema>
-  GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO <project>_runtime;
-ALTER DEFAULT PRIVILEGES FOR ROLE <project>_migrator IN SCHEMA <project_schema>
-  GRANT USAGE, SELECT ON SEQUENCES TO <project>_runtime;
-
--- search_path: where unqualified names resolve — pinned so migrations and
--- application statements land in the governed schema, never in public. A
--- default for convenience; the authority boundary is the grants above.
-ALTER ROLE <project>_migrator SET search_path = <project_schema>;
-ALTER ROLE <project>_runtime  SET search_path = <project_schema>;
-```
+as the bootstrap identity, **connected to `POSTGRES_DB`**.
+Copy-and-fill: `templates/bootstrap.sql` — its comments are the
+recall layer, carried in full; the load-bearing lines are the
+default privileges (every table and sequence a future migration
+creates arrives already granted to runtime, so the split needs no
+per-migration discipline and cannot erode).
 
 Who creates the database: **the container**, from `POSTGRES_DB` —
 owned by the bootstrap identity; migrator owns only the schema. No
@@ -162,36 +89,19 @@ owned by the bootstrap identity; migrator owns only the schema. No
 ## 4 · Land the verification suite
 
 `infrastructure/postgres/verify-database-model.sql` — beside `init/`,
-**not in it** (run on demand, never at container start). It queries
-the catalog against the model's claims; expected results ride as
-comments so the reader needs no other doc open. The five sections:
-
-1. **Project roles and capabilities** — `pg_roles` for both roles;
-   expected: no superuser, no createdb, no createrole; login only.
-2. **Database ownership** — `pg_database`; expected: `<project_db>`
-   owned by the bootstrap identity — ownership stays above the split.
-3. **Schema ownership** — `pg_namespace` for `<project_schema>` and
-   `public`; expected: project schema owned by migrator; public
-   untouched under `pg_database_owner`.
-4. **Schema privileges** — `has_schema_privilege` matrix over both
-   roles × USAGE/CREATE; expected: migrator both true (owner);
-   runtime USAGE true, CREATE **false**.
-5. **Default privileges** — `pg_default_acl` exploded with
-   `aclexplode`; expected: for owner migrator in the project schema —
-   runtime granted SELECT/INSERT/UPDATE/DELETE on tables, USAGE/SELECT
-   on sequences, `is_grantable` false throughout. The model's
-   load-bearing mechanism, invisible to `\dn+`.
+**not in it** (run on demand, never at container start).
+Copy-and-fill: `templates/verify-database-model.sql`. It queries the
+catalog against the model's claims — roles and capabilities,
+database and schema ownership, schema privileges, default privileges
+(the model's load-bearing mechanism, invisible to `\dn+`); expected
+results ride as comments beside each query so the reader needs no
+other doc open.
 
 ## 5 · Wire Flyway (config + empty migrations)
 
 `infrastructure/flyway/conf/flyway.conf` — no credentials (env-passed
-by compose); the url speaks the compose network's service name:
-
-```
-flyway.url=jdbc:postgresql://postgres:5432/<project_db>
-flyway.schemas=<project_schema>
-flyway.locations=filesystem:/flyway/sql
-```
+by compose); the url speaks the compose network's service name.
+Copy-and-fill: `templates/flyway.conf`.
 
 `infrastructure/flyway/migrations/` — empty (+`.gitkeep`) until work
 earns schema; naming, when it does: `V<n>__<description>.sql`. **No
@@ -253,4 +163,6 @@ Day-to-day IDE/psql inspection: runtime.
 
 These facts land in the project's **living infrastructure contract** —
 one section per service, grown at each later addition, the refusals
-written as contract terms.
+written as contract terms. Note there that the ground files were
+filled from this skill's templates — the trail a later reader needs
+to find the masters.
