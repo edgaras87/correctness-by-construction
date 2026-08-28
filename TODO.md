@@ -11,9 +11,11 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Step 5: harvest checkout-system's Boot 4.1 testing-trap
-      improvement; settle harvest discipline (local rules vs its
-      own convention).
+- [ ] Step 6: extract copy-and-fill templates from
+      checkout-system's lived files (compose, bootstrap SQL,
+      verify suite, env and testcontainers files — not the pom);
+      templates become master, walkthroughs re-derived to point at
+      them.
 
 ## Later / someday
 
@@ -28,11 +30,5 @@
 - [ ] Trigger descriptions of the practice skills are unoptimized
       (archive STATUS); if they under- or over-fire in runs, the
       descriptions are the knob.
-- [ ] Extract copy-and-fill templates from the next lived run:
-      compose.yaml, bootstrap SQL, the verification suite,
-      .env.example, testcontainers properties — not the pom (its
-      convention refuses code ahead of earning). The template
-      becomes the master; the walkthrough keeps the whys and points
-      at it.
 
 ## Known issues (deferred deliberately — each entry: what, why accepted, when to revisit)

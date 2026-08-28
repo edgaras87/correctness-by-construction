@@ -121,27 +121,52 @@ Notes: the change-plan was revised mid-set — the packaging
 question (skills+agents vs guides vs skills-only) was settled at a
 commit boundary, exactly what the boundaries are for.
 
-## Step 5: First harvest                            [ ]
+## Step 5: First harvest                            [x] 2026-08-28
 
 Goal: the harvest loop exercised end-to-end on a real item.
 Gate:
-- [ ] The Boot 4.1 testing-trap improvement read from
-      checkout-system's own decision record and brought into the
-      affected execution (spring-boot-walkthrough.md) with run
-      provenance: which run, which record entry, what changed.
-      The run repo is read, never edited (tiers model).
-- [ ] The post-import change discipline decided: how a changed
-      execution's header records changes made here after import,
-      and where execution-level changes are logged given CHANGELOG
-      is the concept-version log (ADR-0003) — an execution fix may
-      not bump the concept.
-- [ ] The harvest-discipline question answered from the lived case
-      (local rules vs its own convention) and recorded.
-- [ ] The archive's copy of the walkthrough is now visibly stale —
-      confirmed acceptable (historical snapshot, no action).
-Records: the harvest record itself, ADR or local rule, devlog.
-Notes: own change-plan. Consumes checkout-system's decision log
-read-only.
+- [x] The Boot 4.1 TestRestTemplate trap brought from
+      checkout-system's decision record (2026-08-27) into
+      spring-boot-walkthrough.md in the run's own wording; body
+      now byte-identical to the run's lived copy; run repo read,
+      never edited.
+- [x] Post-import change discipline decided: the execution's
+      header is its change log — one dated harvest line per
+      change (ADR-0007); "changes on import" stays an import-time
+      statement.
+- [x] Harvest-discipline question answered: local rule in the
+      bundle doc's Harvest section, ADR-0007 keeping the why;
+      promotion to a handbook convention waits for the garden
+      rule's trigger.
+- [x] Archive staleness confirmed acceptable: the snapshot's job
+      is to be visibly stale; no action.
+Records: ADR-0007, the harvest header line, devlog.
+Notes: the loop the repo exists for has now run once end-to-end —
+the README success criterion is met by this step.
+
+## Step 6: Templates extracted from the lived run   [ ]
+
+Goal: the repeating ground and harness files exist here as
+copy-and-fill templates, so no run re-derives them from prose.
+Gate:
+- [ ] Sources read read-only from checkout-system's lived files.
+- [ ] Templates landed as the master copies with pin+provenance
+      headers: compose.yaml, bootstrap SQL, the verification
+      suite, .env.example, testcontainers properties — not the
+      pom (its convention refuses code ahead of earning).
+- [ ] spring-boot-walkthrough.md and
+      postgres-setup-walkthrough.md re-derived: whys and traps
+      kept, embedded file bodies replaced by pointers to the
+      templates — one master, no drifting twins (harvest lines
+      record the change, ADR-0007).
+- [ ] Bundle doc updated: where templates land in a run.
+- [ ] ARCHITECTURE codemap updated if templates get their own
+      directory.
+Records: provenance headers, harvest lines, devlog, ADR if the
+template home warrants one.
+Notes: own change-plan. Authored at Step 5's close —
+checkout-system makes the extraction lived, not speculative, and
+ADR-0007 gives it its discipline.
 
 ## Step N: Release                                  [ ]
 
@@ -152,7 +177,8 @@ Gate:
 - [ ] README true for a stranger; any commands verified on a clean
       machine.
 - [ ] Known issues filed in TODO.md, not just remembered.
-Notes:
+Notes: the success criterion "harvest loop run once end-to-end"
+was met at Step 5.
 
 ---
 
@@ -170,6 +196,7 @@ Notes:
 - ADR-0004: Executions live as content under executions/ (Step 3)
 - ADR-0005: Practice-born executions pin as checked-against (Step 4)
 - ADR-0006: Practice executions as skills, without agent seats (Step 4)
+- ADR-0007: Harvest discipline for executions (Step 5)
 
 ---
 
