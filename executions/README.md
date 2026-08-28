@@ -21,8 +21,21 @@ At a run repo's birth, copy:
 | `concept/` (repo root) | `concept/` — read `00-cbc.md` first |
 | `cbc-framing/` | `.claude/skills/cbc-framing/` |
 | `cbc-slice/` | `.claude/skills/cbc-slice/` |
+| `infra-establish/` | `.claude/skills/infra-establish/` |
+| `infra-serve/` | `.claude/skills/infra-serve/` |
+| `cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
 | `cbc-startup-snippet.md` | merged into the run's CLAUDE.md, then the copy deleted |
+
+Everything copies at birth, including the phases that run much
+later: each practice skill's readiness gate refuses to start before
+its inputs exist, so an early copy is inert, and one delivery
+moment keeps the whole set at one pin. In the run's PLAN, author an
+infrastructure step and a bootstrap step that invoke their skills
+(the pipeline: cbc-framing → infra-establish → cbc-bootstrap →
+cbc-slice); only re-entry (infra-serve) arrives unplanned, and its
+trigger covers that.
 
 Deliberately absent — the born project's own decisions: recording
 conventions, commit conventions, run files, the run's own
-versioning.
+versioning. Also deliberately absent: the archive's agent
+definitions (ADR-0006) — the skills carry the method whole.
