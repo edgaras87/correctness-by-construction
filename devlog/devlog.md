@@ -6,6 +6,29 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-28  (post-Step 6: harvest from the archived run)
+
+- On request, read safe-reservations' project-replica (the run that
+  predates this repo, in the ai-context-system archive worksite) —
+  read-only, fenced to that one directory — and compared it against
+  all seven template masters. Verdict: the old run is the templates'
+  ancestor, same lineage through checkout-system; every divergence
+  bar two was our later decision already. Its own maintenance
+  language (worksite/node/replica layout, numbered log entries, the
+  internal-masters doctrine) identified and deliberately not
+  adopted; the shared ground vocabulary (Execution Environment,
+  service constraints) already lives here via infra-establish.
+- The two divergences worth keeping harvested as their own change
+  set (ADR-0007), four commits, nothing diverged: the verify
+  suite's \echo banners and readable object-type names; the runtime
+  password key renamed <PROJECT>_RUNTIME_PASSWORD across
+  .env.example and application.yaml (one commit — declaring and
+  reading sides of one key). The masters now diverge from
+  checkout-system's lived key by intent; its copy picks the rename
+  up only by copying anew. Non-adopted divergences are named in the
+  verify master's harvest line, so the question does not reopen.
+- Resume: Step N (release) is still the next PLAN step.
+
 ## 2026-08-28  (Step 6: templates from the lived run)
 
 - Step 6 done in one session, nine commits, none diverged. Seven
