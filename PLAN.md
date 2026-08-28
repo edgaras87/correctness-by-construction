@@ -144,26 +144,32 @@ Records: ADR-0007, the harvest header line, devlog.
 Notes: the loop the repo exists for has now run once end-to-end —
 the README success criterion is met by this step.
 
-## Step 6: Templates extracted from the lived run   [ ]
+## Step 6: Templates extracted from the lived run   [x] 2026-08-28
 
 Goal: the repeating ground and harness files exist here as
 copy-and-fill templates, so no run re-derives them from prose.
 Gate:
-- [ ] Sources read read-only from checkout-system's lived files.
-- [ ] Templates landed as the master copies with pin+provenance
-      headers: compose.yaml, bootstrap SQL, the verification
-      suite, .env.example, testcontainers properties — not the
-      pom (its convention refuses code ahead of earning).
-- [ ] spring-boot-walkthrough.md and
-      postgres-setup-walkthrough.md re-derived: whys and traps
-      kept, embedded file bodies replaced by pointers to the
-      templates — one master, no drifting twins (harvest lines
-      record the change, ADR-0007).
-- [ ] Bundle doc updated: where templates land in a run.
-- [ ] ARCHITECTURE codemap updated if templates get their own
-      directory.
-Records: provenance headers, harvest lines, devlog, ADR if the
-template home warrants one.
+- [x] Sources read read-only from checkout-system's lived files.
+- [x] Seven templates landed as master copies with pin+provenance
+      headers in each file's own comment syntax: compose.yaml,
+      bootstrap.sql, verify-database-model.sql, .env.example,
+      flyway.conf (infra-establish); testcontainers.properties,
+      application.yaml (cbc-bootstrap). flyway.conf and
+      application.yaml joined the original five at plan review.
+      Not the pom (its convention refuses code ahead of earning);
+      not the test-support Java (TODO Later, second-run trigger).
+- [x] Both walkthroughs re-derived: whys and traps kept, embedded
+      file bodies replaced by pointers; off-template rule and
+      fill-trail line added at boundary review; Re-derived and
+      Harvested header lines record it (ADR-0007). A second
+      harvest landed en route: .env's fourth key, the runtime
+      application password, from the lived .env.example.
+- [x] Bundle doc updated: Templates paragraph — birth, fill, and
+      harvest relations.
+- [x] ARCHITECTURE current: executions component names the
+      templates; no codemap change — templates live inside their
+      skills (ADR-0008). Archive invariant marked retired.
+Records: ADR-0008, provenance headers, harvest lines, devlog.
 Notes: own change-plan. Authored at Step 5's close —
 checkout-system makes the extraction lived, not speculative, and
 ADR-0007 gives it its discipline.
@@ -197,6 +203,7 @@ was met at Step 5.
 - ADR-0005: Practice-born executions pin as checked-against (Step 4)
 - ADR-0006: Practice executions as skills, without agent seats (Step 4)
 - ADR-0007: Harvest discipline for executions (Step 5)
+- ADR-0008: Templates live inside their skill (Step 6)
 
 ---
 

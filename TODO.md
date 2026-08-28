@@ -11,11 +11,7 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Step 6: extract copy-and-fill templates from
-      checkout-system's lived files (compose, bootstrap SQL,
-      verify suite, env and testcontainers files — not the pom);
-      templates become master, walkthroughs re-derived to point at
-      them.
+- [ ]
 
 ## Later / someday
 
@@ -30,5 +26,14 @@
 - [ ] Trigger descriptions of the practice skills are unoptimized
       (archive STATUS); if they under- or over-fire in runs, the
       descriptions are the knob.
+- [ ] Test-support Java (DatabaseIT, WebDatabaseIT, MigrationPathIT)
+      earns templating only when a second run re-derives the same
+      shape — today it is code, and the walkthroughs' stance is
+      outcomes, not code to copy (ADR-0008).
+- [ ] checkout-system reads the db port as CHECKOUT_DB_PORT while
+      its .env.example names POSTGRES_PORT — two env keys for one
+      fact, found at template extraction. If it is a defect, fix it
+      in the run first, then harvest; the templates carry it as
+      lived.
 
 ## Known issues (deferred deliberately — each entry: what, why accepted, when to revisit)
