@@ -6,6 +6,37 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-28  (Step 2: concept lands)
+
+- Step 2 done in one session, seven-commit change set, none
+  diverged. The mental layer exists: five chapters at concept/,
+  archive names kept, each verbatim below a provenance header
+  pinned to archive fe0075d. Close read found no defects — the
+  plan's provision for recorded fixes went unused. Archive concept/
+  is now a historical snapshot.
+- Versioning: whole-number concept versions over the mental layer
+  as a whole (ADR-0003); rejected SemVer (false precision over
+  prose), per-chapter versions (no consumer), commits-as-versions
+  (indiscriminate). CHANGELOG is the concept-version log, opened
+  at v1 = the chapters as imported. Bump rule: could it invalidate
+  a derived execution.
+- Repurposing the CHANGELOG stub meant replacing its rules, not
+  filling them (app-repo assumptions) — fourth handbook-feedback
+  entry queued in decisions.md.
+- Call worth remembering: chapter provenance headers deliberately
+  omit any versioning reference — the import commit landed before
+  the scheme was decided, and a forward reference would have
+  reverted incoherently. ADR-0003 governs; headers carry
+  provenance only.
+- ARCHITECTURE de-provisionalized: the Step 0 hunch held. The
+  no-version-entry-no-change invariant is named a review-grade
+  wall — the repo's own concept says what to think of that.
+- Resume: Step 3 (executions land) — draft its change-plan:
+  import cbc-framing, cbc-slice, startup snippet pinned to concept
+  v1; decide the executions' home (content, not this repo's
+  arrangement) and the bundle question (what a run repo copies at
+  birth). Consumes docs/models/agent.md.
+
 ## 2026-08-28  (Step 1: framing)
 
 - Framing done in one session (spanned midnight; gates closed
