@@ -11,9 +11,6 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Step 2: import the five concept chapters as the mental
-      layer; decide the concept-version scheme (v1) and
-      CHANGELOG's role there.
 - [ ] Step 3: import cbc-framing, cbc-slice, and the startup
       snippet, pinned to concept v1.
 - [ ] Step 4: import infra-establish (+ infra-serve) and

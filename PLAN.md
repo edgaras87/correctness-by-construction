@@ -49,41 +49,50 @@ Notes: Written fresh — no concept-repo playbook existed to copy
 from. The name held (the material itself says CbC). problem-framer/
 excluded as noise at review.
 
-## Step 2: Concept lands (mental layer)             [ ]
+## Step 2: Concept lands (mental layer)             [x] 2026-08-28
 
 Goal: the concept statement lives here as the authoritative
 version, citable as concept v1.
 Gate:
-- [ ] The five chapters imported from the archive
-      (birth-materials/concept/), fixed where the import reveals
-      defects — fixes recorded, never silently absorbed — each
-      with provenance: source path, archive state, what changed
-      on the way in.
-- [ ] Layout decided and recorded: the mental layer is several
-      documents (the archive's own split); where they live is
-      settled and in ARCHITECTURE's codemap.
-- [ ] Concept-version scheme decided, v1 identity stated: what a
-      version is, where it is declared, how executions cite it.
-      ADR expected.
-- [ ] CHANGELOG's role decided (deferred from Step 0): is it the
-      concept-version log?
-- [ ] ARCHITECTURE overview no longer provisional.
-Records: ADR (versioning), provenance headers, devlog.
-Notes: consumes docs/models/tiers.md (delivery and harvest rules).
-Own change-plan.
+- [x] The five chapters imported from the archive
+      (birth-materials/concept/ @ fe0075d), each with a provenance
+      header. Close read found no defects — all verbatim below
+      their headers, and each header says so.
+- [x] Layout decided and recorded: several documents at concept/,
+      archive names kept; in ARCHITECTURE's codemap.
+- [x] Concept-version scheme decided, v1 identity stated: ADR-0003
+      (whole-number versions over the mental layer as a whole;
+      executions cite "derives from concept v1").
+- [x] CHANGELOG's role decided: it is the concept-version log,
+      opening at v1 (ADR-0003).
+- [x] ARCHITECTURE overview no longer provisional; components,
+      invariants, codemap filled for what exists.
+Records: ADR-0003, provenance headers, devlog.
+Notes: The CHANGELOG stub's rules had to be replaced, not filled
+(app-repo assumptions) — queued as handbook feedback in
+.claude/decisions.md. The archive birth-materials README was not
+imported; the bundle question it answers moves to Step 3.
 
 ## Step 3: Executions land (birth materials)        [ ]
 
 Goal: cbc-framing, cbc-slice, and the startup snippet live here,
 each pinned to concept v1.
 Gate:
-- [ ] Each execution states which concept version it derives from.
-- [ ] Import fixes recorded, never silently absorbed.
-- [ ] Executions' home decided; ARCHITECTURE codemap updated.
-Records: provenance, devlog, ADR if the layout warrants one.
+- [ ] The three imported with the same provenance discipline as
+      Step 2 (source path, archive commit, changes on import —
+      fixes recorded, never silently absorbed), each stating
+      "derives from concept v1".
+- [ ] Executions' home decided and recorded (ADR if warranted):
+      they are content this repo delivers, not its own working
+      arrangement — this repo never runs cbc-framing on itself —
+      so .claude/skills/ placement needs an argument, not a habit.
+- [ ] The bundle question answered: what a run repo copies at
+      birth and how (the archive README's job), recorded where a
+      run birth will find it.
+- [ ] ARCHITECTURE: executions component added, codemap updated.
+Records: provenance headers, devlog, ADR if the home warrants one.
 Notes: consumes docs/models/agent.md (channel and delivery
-vocabulary for execution form). Own change-plan. Coarse — detail
-at Step 2's close.
+vocabulary for execution form). Own change-plan.
 
 ## Step 4: Practice executions land                 [ ]
 
@@ -130,6 +139,7 @@ Notes:
 
 - ADR-0001: Record architecture decisions (Step 0)
 - ADR-0002: Vendor handbook models as pinned copies (Step 0)
+- ADR-0003: Whole-number concept versions, logged in CHANGELOG (Step 2)
 
 ---
 
