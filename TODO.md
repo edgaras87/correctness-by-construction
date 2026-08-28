@@ -11,8 +11,6 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Step 4: import infra-establish (+ infra-serve) and
-      cbc-bootstrap.
 - [ ] Step 5: harvest checkout-system's Boot 4.1 testing-trap
       improvement; settle harvest discipline (local rules vs its
       own convention).

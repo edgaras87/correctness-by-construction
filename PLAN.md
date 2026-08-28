@@ -95,39 +95,53 @@ Records: ADR-0004, provenance headers, devlog.
 Notes: consumed docs/models/agent.md — P2 placed the bundle doc,
 the installed/content distinction shaped ADR-0004.
 
-## Step 4: Practice executions land                 [ ]
+## Step 4: Practice executions land                 [x] 2026-08-28
 
 Goal: infra-establish (+ infra-serve) and cbc-bootstrap live here,
 same discipline as Step 3.
 Gate:
-- [ ] Imported under executions/ with the Step 3 header
-      discipline — fixes recorded, never silently absorbed.
-- [ ] The pin phrasing for practice-born executions decided
-      honestly: they grew from practice rather than being derived
-      from the chapters, so "derives from concept v1" may be the
-      wrong claim — decide what the header says and record why.
-- [ ] Companion docs decided: what happens to the archive's
-      STATUS / LAYOUT files — imported, absorbed into headers, or
-      left behind with the reason recorded.
-- [ ] Bundle doc updated: whether a run copies these at birth too
-      (checkout-system did), and the mapping if so.
-- [ ] problem-framer/ stays out (excluded as noise at Framing).
-- [ ] ARCHITECTURE: forward note removed; codemap current.
-Records: provenance headers, devlog, ADR if the pin phrasing
-warrants one.
-Notes: own change-plan.
+- [x] Eight files imported under executions/ with the Step 3
+      header discipline; two fixes recorded, never silent: the
+      infra-establish layout normalized to the named-skill shape
+      (the archive disagreed with its own STATUS diagram), and the
+      groundskeeper record-defaults section absorbed into that
+      SKILL.md.
+- [x] Pin phrasing decided: practice-born executions read "checked
+      against concept v1", not "derives from" (ADR-0005).
+- [x] Companion docs decided: STATUS/LAYOUT stay behind — layout
+      superseded by the bundle doc, open/owed items triaged to
+      TODO, translation history archived.
+- [x] Bundle doc updated: copy-all-at-birth, whole pipeline in the
+      birth table, plan-step working advice.
+- [x] problem-framer/ stayed out; the agent definitions also stay
+      out (ADR-0006 — form revised at review: skills minus agents).
+- [x] ARCHITECTURE: forward note removed; codemap current.
+Records: ADR-0005, ADR-0006, provenance headers, devlog.
+Notes: the change-plan was revised mid-set — the packaging
+question (skills+agents vs guides vs skills-only) was settled at a
+commit boundary, exactly what the boundaries are for.
 
 ## Step 5: First harvest                            [ ]
 
 Goal: the harvest loop exercised end-to-end on a real item.
 Gate:
-- [ ] checkout-system's Boot 4.1 testing-trap improvement recorded
-      as a concept/execution change with run provenance.
-- [ ] The affected execution re-derived and re-pinned.
+- [ ] The Boot 4.1 testing-trap improvement read from
+      checkout-system's own decision record and brought into the
+      affected execution (spring-boot-walkthrough.md) with run
+      provenance: which run, which record entry, what changed.
+      The run repo is read, never edited (tiers model).
+- [ ] The post-import change discipline decided: how a changed
+      execution's header records changes made here after import,
+      and where execution-level changes are logged given CHANGELOG
+      is the concept-version log (ADR-0003) — an execution fix may
+      not bump the concept.
 - [ ] The harvest-discipline question answered from the lived case
       (local rules vs its own convention) and recorded.
+- [ ] The archive's copy of the walkthrough is now visibly stale —
+      confirmed acceptable (historical snapshot, no action).
 Records: the harvest record itself, ADR or local rule, devlog.
-Notes: coarse — detail at Step 4's close.
+Notes: own change-plan. Consumes checkout-system's decision log
+read-only.
 
 ## Step N: Release                                  [ ]
 
@@ -154,6 +168,8 @@ Notes:
 - ADR-0002: Vendor handbook models as pinned copies (Step 0)
 - ADR-0003: Whole-number concept versions, logged in CHANGELOG (Step 2)
 - ADR-0004: Executions live as content under executions/ (Step 3)
+- ADR-0005: Practice-born executions pin as checked-against (Step 4)
+- ADR-0006: Practice executions as skills, without agent seats (Step 4)
 
 ---
 
