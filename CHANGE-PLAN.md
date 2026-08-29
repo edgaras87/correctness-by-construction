@@ -88,10 +88,13 @@ Deletes this file; body records what diverged.
 
 ## Decisions taken inside this plan
 
-- **The derivation doc is named `framing.derivation.md` at the run
+- **The derivation doc is named `framing-derivation.md` at the run
   repo's root** — a visible sibling of the three exports the skill
   already places at root; appendix files (if any) sit beside it as
-  `framing.<name>.md`.
+  `framing-<name>.md`. Revised from the dotted form at review: the
+  dot-suffix was the old system's kind-tagging in filenames — meta
+  info our docs carry in their headers; the three dotted export
+  names stay as grandfathered lived names.
 - **The probe machinery lands inside the workflow, compressed**, not
   as a separate reference: it is method core every census needs, not
   imitated optional material — references are for the latter
