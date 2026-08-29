@@ -15,7 +15,9 @@ description: Frame a new backend system with correctness-driven design - turn a 
      Harvested 2026-08-29, same run: the exports are living records
      — post-close changes only as logged revision entries (the run
      updated its intent at a breach's close and revised its system
-     definition by logged return trips from downstream stages). -->
+     definition by logged return trips from downstream stages).
+     Harvested 2026-08-29, same run: step 2's gate names the
+     recorded probe log (details in the workflow's step 2). -->
 
 # CbC framing — one promise worked into a slice surface
 
@@ -74,7 +76,8 @@ polish passes.
 - **Step 2:** facts only, concrete enough to attack with ("responses get
   lost", never "networks are unreliable"), consequence-first. **A census is
   not an assumption inventory** — list what can hurt, never what you trust.
-  Exit only by saturation: two consecutive fresh probes finding nothing new.
+  Exit only by saturation: two consecutive fresh probes finding nothing
+  new — the probe log recorded in L1.
 - **Step 3:** each kill states **what dies, never how it's saved** — park
   any mechanism the instant it surfaces. Land kills invariant-shaped with
   adversity named, consumable by the slice workflow with zero translation.

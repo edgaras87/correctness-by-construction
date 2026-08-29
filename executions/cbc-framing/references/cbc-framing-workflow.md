@@ -2,7 +2,10 @@
      (ADR-0003). Provenance — archive/cbc/system-design-method
      birth-materials/.claude/skills/cbc-framing/references/cbc-framing-workflow.md
      @ fe0075d (imported 2026-08-28, PLAN Step 3). Changes on
-     import: none — verbatim below this header. -->
+     import: none — verbatim below this header.
+     Harvested 2026-08-29 from checkout-system's lived framing,
+     read read-only (ADR-0007): step 2 records its saturation
+     probe log in L1 — saturation checkable, not just claimed. -->
 
 # CbC framing workflow — layering the system
 
@@ -113,8 +116,10 @@ The store is an actor that can hurt you, not an ally with guaranteed tools.
 **Exit — saturation by probes:** re-attack the list from angles the
 derivation didn't use (what does each line quietly assume? stretch the
 timeline; every quantity at zero/many/huge). Two consecutive probes finding
-nothing new = saturated. Out-of-scope facts get a written refusal or
-deferral line, never silence.
+nothing new = saturated. **The probe log is recorded in L1** — each
+probe's angle and what it surfaced (or "nothing new") — so the
+saturation claim is checkable by a later reader, not just made.
+Out-of-scope facts get a written refusal or deferral line, never silence.
 
 **Hands down:** the fact list. **Hands up (conditional, logged):** a missed
 possession or unwritten refusal → L2 revision.
