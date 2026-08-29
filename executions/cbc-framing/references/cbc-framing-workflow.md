@@ -16,7 +16,10 @@
      Harvested 2026-08-29, same node: step 2 carries the probe
      machinery as runnable procedure — the three lenses, the
      three-stamp rule, the audit checklist — taught in the lived
-     walk at the human's own demand. -->
+     walk at the human's own demand.
+     Harvested 2026-08-29, same node: step 2's exit leaves three
+     ledgers — the numbered fence list, the not-probed ledger,
+     and scope verdicts with recommendation and reason. -->
 
 # CbC framing workflow — layering the system
 
@@ -183,8 +186,26 @@ what it surfaced (or "nothing new") — so the saturation claim is
 checkable by a later reader, not just made. Out-of-scope facts get a
 written refusal or deferral line, never silence.
 
-**Hands down:** the fact list. **Hands up (conditional, logged):** a missed
-possession or unwritten refusal → L2 revision.
+**What the exit leaves behind — three ledgers, in ink:**
+
+- **The fence list.** Every written-out scope exclusion as a
+  numbered line (W1, W2, …). A fence is a working boundary, not a
+  disclaimer — it earns its ink by *visibly stopping facts* at
+  step 3, where a fenced fact collides with nothing.
+- **The not-probed ledger.** What was *not* examined, named honestly
+  (clock skew, deployment transitions, …) — so a later reader knows
+  the census's edge, not just its content. An unprobed door flagged
+  here is raised at the step's close, never silently carried.
+- **The scope verdicts.** Each boundary question the census surfaced
+  is put as a named verdict with a recommendation and its reason —
+  *in* (more of the same named kind, richer demonstration) · *out*
+  (a new kind of difficulty, another promise's territory) ·
+  *censused-and-fenced* (the facts stay, the boundary holds). The
+  verdicts follow the mode's rule on who decides.
+
+**Hands down:** the fact list and the three ledgers. **Hands up
+(conditional, logged):** a missed possession or unwritten refusal →
+L2 revision.
 
 ## Step 3 — Run the collisions (L4)
 
