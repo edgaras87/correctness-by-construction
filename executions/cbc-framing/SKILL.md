@@ -38,7 +38,12 @@ description: Frame a new backend system with correctness-driven design - turn a 
      docs/system/framing/. Root placement was an auto run's
      unverdicted default, never a decision; the directory makes the
      truth set one nameable path and dissolves the prefix-carried
-     names (the dotted exports, the framing- appendix prefix). -->
+     names (the dotted exports, the framing- appendix prefix).
+     Harvested 2026-08-30: the README projection law — the export
+     section's projected-surface block — from the safe-reservations
+     node's projection model and guide, read read-only (ADR-0007),
+     their vocabulary never adopted; the lived core only, the
+     deeper lifecycle left unharvested until a run lives it. -->
 
 # CbC framing — one promise worked into a slice surface
 
@@ -159,7 +164,8 @@ references the derivation doc's machinery — conclusions travel
 re-grounded in the exports themselves, which must stand alone.
 Default export practice: **commit in derivation order** — the
 intent; the system definition growing L2 → L1 → L4 → L3 → L5, one
-lived state per commit; the registry; then the adoption record — so
+lived state per commit; the registry; the adoption record; the
+README last (the surface derives from committed internals) — so
 the run repo's own history tells the derivation story. Skipping the
 sequence is off-default: log why.
 
@@ -195,6 +201,32 @@ export is updated **only through a logged revision entry** (dated:
 what changed, why, what triggered it), the framing's own
 return-trip discipline extended past close. Silent edits and stale
 claims are the same forbidden channel.
+
+**The README — the projected surface.** The run repo's README is
+**derived from the three exports, never authored on its own**:
+every claim on it has a master in `docs/system/`. A fact the
+reader needs that lives only in the derivation record marks a gap
+in the exports — fix the export first, then re-derive; a surface
+patched independently is a second master, and two masters diverge.
+What each piece derives from:
+
+| From | Becomes | How much |
+|---|---|---|
+| the intent | why this exists | one paragraph |
+| the definition's owned-and-refused | what this is | one paragraph, no parts named |
+| the registry | the planned invariants | one line per invariant |
+| the method | a pointer note | two lines, never a restatement |
+| the repo's observable state | an honest status line | one line |
+
+Depth is a routing link into the exports, never more prose. At
+framing close the thin README is the whole public surface — with
+the masters one click away, a public restatement fails: the reader
+clicks into the master instead. A run whose conditions differ may
+rebut this, off-default, logged. The README refreshes the way it
+was born: event-driven at milestones (a slice close moves the
+status line), re-derived from the masters, never patched in place.
+The residue filter applies with full force: the surface tells what
+the system is and guarantees, never how the work ran.
 
 Then say this explicitly to the user: **the handoff is to bootstrap, not to
 slicing.** Between framing and the first slice sits real project work —
