@@ -6,6 +6,35 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-29  (session: framing check run 1 — checkout harvested)
+
+- The TODO framing-check direction opened (24f9e5f queued it) and
+  run 1 of 2 executed: checkout-system's framing artifacts read
+  read-only against the cbc-framing skill. Verdict: no violations —
+  every per-step gate checkably satisfied, terminology fully ours.
+  Five lived-beyond-the-skill findings; four harvested as a
+  seven-commit change set (aaad989 plan → bba4755 registry
+  template + skill-side outcomes → 01e9422 living exports with
+  logged revisions → d87a4ed recorded saturation log → b30e76e
+  labeled trust list → c365890 delegated-verdict mode → db06098
+  close, no divergence), user reviewing at each boundary.
+- The delegation decision, since it changes how future auto runs
+  read the skill: human verdicts stay the default; a run may
+  delegate only via an explicit decision in its own
+  .claude/decisions.md naming the delegation and its cost. A config
+  flag was rejected — it would hide a decision that must stay
+  visible. The user plans more fully-auto runs; this is the
+  sanctioned path.
+- Finding 2 deliberately NOT harvested: checkout already splits
+  pure exports from derivation record (ADR-0002 carries the kill
+  list), but the record is thin — the process itself is lost. Held
+  as evidence for the one-derivation-doc-translated-to-three-exports
+  decision, parked in TODO until safe-reservations (run 2) is read.
+- Resume: framing check run 2 — safe-reservations at
+  archive .../worksites/safe-reservations/problem-framing-node,
+  read-only, old custom language distinguished and never adopted;
+  then the record-shape decision; then the doc-projection node.
+
 ## 2026-08-29  (session: app-structure reference adopted)
 
 - Yesterday's parked decision decided: adopt. Four-commit change
