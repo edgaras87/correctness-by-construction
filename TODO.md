@@ -11,10 +11,7 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] After the framing check: safe-reservations' doc-projection
-      node — different levels of visibility of project truths — is
-      a capability this concept doesn't have; check what it is and
-      whether it earns a place here. Same language rule applies.
+- [ ]
 
 ## Later / someday
 
@@ -48,14 +45,12 @@
       remote repo description, each decided with verdicts. No skill
       here covers that gap — cbc-bootstrap territory; consider a
       small addition when bootstrap next gets touched.
-- [ ] The three framing export names (project.intent.md,
-      system.definition.md, slices.registry.md) carry the old
-      workbench dot-suffix kind-tagging — noticed 2026-08-29 when
-      the new derivation doc deliberately got the hyphenated form
-      (framing-derivation.md). Decide whether the exports rename to
-      match this repo's convention or stay grandfathered as lived
-      names; if renaming, the skill's export section, the registry
-      template, and checkout's precedent all move together.
+- [ ] The projection law's deeper lifecycle is unharvested: public
+      docs beyond the README, earned by demonstrated substance and
+      refreshed at slice closes — cbc-slice-close territory, seen
+      in the safe-reservations node's projection model
+      (2026-08-30) but never lived by a run of ours. Harvest when
+      a run first reaches the milestone that fires it.
 - [ ] checkout-system reads the db port as CHECKOUT_DB_PORT while
       its .env.example names POSTGRES_PORT — two env keys for one
       fact, found at template extraction. If it is a defect, fix it
