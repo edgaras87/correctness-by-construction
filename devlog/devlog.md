@@ -6,6 +6,39 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-29  (session: framing shape decided, run 2 harvested)
+
+- The record-shape decision taken and landed with the run-2 harvest
+  as one change set (2095d02 plan → ed5f19b shape → 4131157 intent
+  → a607cca probes → f7216b8 ledgers → cd86b76 step-6 passes →
+  75cb903 registry → 1a22fbe TODO → 8c51396 close), user reviewing
+  at each boundary. The shape: one working record,
+  framing-derivation.md at the run repo's root — per-step sections
+  split earned/how-it-ran, frozen at their verdicts, decision-free
+  appendix files as the escape valve — composed at close into the
+  three exports under the residue filter and committed in
+  derivation order. Deciding argument for one doc over per-step
+  files: the steps compound (each consumes the previous, the earned
+  layers stack into one definition), so file boundaries were
+  artificial and cost restated-context glue; the verdict-freeze
+  rule keeps multi-doc's real virtue. Rewriting turned out to be a
+  non-argument — safe-reservations' translation was near-verbatim
+  assembly either way.
+- One divergence, caught by the user at a boundary review: the
+  planned name framing.derivation.md carried the old workbench
+  dot-suffix kind-tagging — meta info our headers already carry.
+  Revised first-class (90b84c0) to the hyphenated form. The same
+  review surfaced that the three export names are themselves dotted
+  inheritances; parked in TODO (b8028d1) as a deliberate decision,
+  with checkout as the lived precedent either way.
+- Parked in TODO from run 2, not landed: the two-tier harvest idea
+  (an ADR-0007 question), the define phase gap (cbc-bootstrap
+  territory).
+- Resume: doc-projection check (the TODO Next item) — the model and
+  guide live in the safe-reservations node's close/ and knowledge/;
+  same read-only and language rules. The repo's PLAN resume point
+  remains Step N (release).
+
 ## 2026-08-29  (session: framing check run 2 — safe-reservations read)
 
 - Run 2 of the TODO framing check executed: the safe-reservations
