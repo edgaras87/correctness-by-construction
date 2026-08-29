@@ -17,7 +17,11 @@
      spring-harness-reference.md — the recurring harness artifacts
      as code, confirmed by the third lived pass; a reference on
      ADR-0008's imitated side, never pasted. Outcomes and traps
-     stay mastered here. -->
+     stay mastered here.
+     Re-derived 2026-08-29: stage 1 carries the application-
+     structure decision beside the stack decision, routed to
+     app-structure.md — the decision surface: lived default,
+     decision rule, vocabulary of unlived alternatives. -->
 
 # Spring Boot bootstrap walkthrough — outcomes and lived traps
 
@@ -40,9 +44,12 @@ outside the app migrates; the app runs.*
 
 ## 1. Record the stack decision
 
-Before any code, the project's log carries: the stack; Flyway staying
-outside the app (no migrator credentials in any profile); the migrations
-home confirmed.
+Before any code, the project's log carries: the stack; the
+application structure, decided against the lived default —
+`app-structure.md` beside this walkthrough is the decision surface,
+and deviating from its default is a logged off-default decision;
+Flyway staying outside the app (no migrator credentials in any
+profile); the migrations home confirmed.
 
 **Trap — the standard recipe reverses the ground's constraint.** The usual
 Spring path (in-app Flyway with dual credentials, JPA with
