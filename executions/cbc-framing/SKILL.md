@@ -20,14 +20,22 @@ description: Frame a new backend system with correctness-driven design - turn a 
      recorded probe log (details in the workflow's step 2).
      Harvested 2026-08-29, same run: the mode section names the
      delegated-verdict mode — human default unchanged, delegation
-     only by a decision recorded in the run's own records. -->
+     only by a decision recorded in the run's own records.
+     Re-derived 2026-08-29: the record shape decided — one
+     derivation doc as the framing's working record, composed at
+     close into the three exports under a residue filter, committed
+     in derivation order; harvested from the safe-reservations
+     framing node read read-only (ADR-0007), its own vocabulary
+     never adopted; the shape's one-doc form is this repo's
+     decision, both lived runs its evidence. -->
 
 # CbC framing — one promise worked into a slice surface
 
 Turn a standing project idea into three artifacts: **intent** (the promise),
 **system definition** (L1–L5), **slice registry** (the work, cut and ready).
-All paper — no code, no tech choices, no repo. A framing may honestly end in
-"no project"; that is a valid exit.
+All paper — no code, no tech choices; the run's stub-born repo is the
+paper's home. A framing may honestly end in "no project"; that is a
+valid exit.
 
 The full procedure is `references/cbc-framing-workflow.md` — read it before
 step 0 and keep it open; this file is the operating rules, not a substitute.
@@ -106,9 +114,42 @@ polish passes.
   slices + folds — nothing silently dropped) and a chosen-next slice.
   Ordering is an expectation, re-decided at each slice close.
 
+## The record — one derivation doc
+
+The framing's working record is **one file, `framing-derivation.md`,
+at the run repo's root** — kept as the archive forever, never
+deleted. Three rules give it multi-doc's virtues without the file
+sprawl:
+
+1. **One section per step**, each split in two: *what this step
+   earned* (clean statements, on top — export composes from these)
+   and *how it ran* (reasoning, probes, dead ends, below). Verdicts
+   are written inline, where they happen.
+2. **A section freezes at its verdict.** Append-only after that;
+   revisions touch it only as logged return trips.
+3. **The escape valve:** a genuinely bulky mechanical sweep (a
+   collision grid, say) may live as a referenced appendix file
+   beside it (`framing-<name>.md`), carrying sweep output only,
+   never decisions. The doc stays the single record.
+
+Where each record kind lives: framing verdicts — inline here; a
+delegation arrangement — the run's `.claude/decisions.md` (agent
+setup, not project truth); the framing's adoption — one ADR in the
+run's `docs/adr/` at close.
+
 ## Export and handoff
 
-At close, write the three artifacts into the project repo:
+At close, **compose** the three artifacts from the derivation doc's
+earned blocks, under the **residue filter**: an export never
+references the derivation doc's machinery — conclusions travel
+re-grounded in the exports themselves, which must stand alone.
+Default export practice: **commit in derivation order** — the
+intent; the system definition growing L2 → L1 → L4 → L3 → L5, one
+lived state per commit; the registry; then the adoption record — so
+the run repo's own history tells the derivation story. Skipping the
+sequence is off-default: log why.
+
+The three artifacts, at the repo root:
 
 - `project.intent.md` — the promise + banked rejections
 - `system.definition.md` — L1–L5, filled or empty-with-reasons
