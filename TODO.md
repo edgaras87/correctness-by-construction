@@ -11,22 +11,6 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Framing check, two runs in order: (1) checkout-system's
-      framing artifacts vs the cbc-framing skill + concept —
-      artifacts exist, process unrecorded (run on auto); (2)
-      safe-reservations' framing process vs the workflow, at
-      archive .../worksites/safe-reservations/problem-framing-node
-      — process recorded jointly, but in the old custom maintenance
-      language: distinguish and never adopt, only the framing logic
-      counts. Both read-only (ADR-0007); harvest corrections.
-- [ ] After both checks: decide the framing record shape — one full
-      derivation doc translated at close into the three exports
-      (intent, system definition, slice registry), full doc kept as
-      archive of the derivation. Hypothesis for now; decide as a
-      harvest with both runs' evidence, and check whether
-      safe-reservations' multi-doc checkpoints had a reason (e.g.
-      resumability) the one-doc shape must preserve. Also settles
-      where the working doc lives during "all paper, no repo".
 - [ ] After the framing check: safe-reservations' doc-projection
       node — different levels of visibility of project truths — is
       a capability this concept doesn't have; check what it is and
@@ -52,6 +36,18 @@
       minor-drift surprise, decide whether both should pin tighter
       (full version or digest); until then the shared major is the
       deliberate coupling.
+- [ ] Two-tier harvest idea, from safe-reservations' close: its
+      flow-back split sure adoptions (landed in the masters) from
+      insights held as evidence with a named promotion path (the
+      next run's comparison confirms or kills them). ADR-0007 has
+      only the first tier. Consider whether a held-insight tier
+      earns a place in the harvest discipline — an ADR-0007
+      amendment, decided deliberately, not in passing.
+- [ ] A define phase lived in safe-reservations between framing and
+      bootstrap: project name (under a naming rule), repo name, and
+      remote repo description, each decided with verdicts. No skill
+      here covers that gap — cbc-bootstrap territory; consider a
+      small addition when bootstrap next gets touched.
 - [ ] The three framing export names (project.intent.md,
       system.definition.md, slices.registry.md) carry the old
       workbench dot-suffix kind-tagging — noticed 2026-08-29 when
