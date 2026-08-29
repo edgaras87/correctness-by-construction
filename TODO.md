@@ -11,7 +11,26 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ]
+- [ ] Framing check, two runs in order: (1) checkout-system's
+      framing artifacts vs the cbc-framing skill + concept —
+      artifacts exist, process unrecorded (run on auto); (2)
+      safe-reservations' framing process vs the workflow, at
+      archive .../worksites/safe-reservations/problem-framing-node
+      — process recorded jointly, but in the old custom maintenance
+      language: distinguish and never adopt, only the framing logic
+      counts. Both read-only (ADR-0007); harvest corrections.
+- [ ] After both checks: decide the framing record shape — one full
+      derivation doc translated at close into the three exports
+      (intent, system definition, slice registry), full doc kept as
+      archive of the derivation. Hypothesis for now; decide as a
+      harvest with both runs' evidence, and check whether
+      safe-reservations' multi-doc checkpoints had a reason (e.g.
+      resumability) the one-doc shape must preserve. Also settles
+      where the working doc lives during "all paper, no repo".
+- [ ] After the framing check: safe-reservations' doc-projection
+      node — different levels of visibility of project truths — is
+      a capability this concept doesn't have; check what it is and
+      whether it earns a place here. Same language rule applies.
 
 ## Later / someday
 
