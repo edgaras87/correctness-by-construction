@@ -19,7 +19,10 @@
      walk at the human's own demand.
      Harvested 2026-08-29, same node: step 2's exit leaves three
      ledgers — the numbered fence list, the not-probed ledger,
-     and scope verdicts with recommendation and reason. -->
+     and scope verdicts with recommendation and reason.
+     Harvested 2026-08-29, same node: step 6 named as three
+     passes — sort, dedupe, folds — each with its test and its
+     record. -->
 
 # CbC framing workflow — layering the system
 
@@ -256,14 +259,28 @@ redefines them.
 
 *Question: which concerns are theorems, which are definitions?*
 
-A **slice** = one promise × one enemy needing its own proof. The
-operational test: two kills are two slices only when their evidence must
-*create different adversity* (a proof that sequential replay generates is
-not the proof contention demands). **Definitions** — contract-shaped
-concerns carrying no invariant-under-adversity of their own — fold into the
-first slice that consumes them. The registry carries a
-**fold-reconciliation line** (concerns ↔ slices + folds) so nothing is
-silently dropped.
+A **slice** = one promise × one enemy needing its own proof. The step
+runs as **three passes**, each with its test and its record:
+
+1. **The sort.** Every concern stamped **theorem** (carries an
+   invariant-under-adversity of its own — proof means *creating*
+   that adversity and witnessing the invariant survive) or
+   **definition** (contract-shaped — declared and checked, no
+   adversity stages against it), with a written *because* per stamp
+   so a near-miss's doubt is answered in the record, not left
+   lingering. When step 3's discipline held, kills arrive already
+   theorem-shaped and this pass is a confirmation sweep — that is
+   the discipline working, not the pass being skipped.
+2. **The dedupe.** Pairwise on the theorems, the operational test:
+   two kills are two slices only when their evidence must *create
+   different adversity* (a proof that sequential replay generates is
+   not the proof contention demands). Same stageable adversity ⇒ one
+   slice, merged visibly; different ⇒ both stand. Splits parked
+   earlier as visible choices are settled here.
+3. **The folds.** Each definition folds into the first slice that
+   consumes it, its check riding along. The registry is composed,
+   carrying the **fold-reconciliation line** (concerns ↔ slices +
+   folds) so nothing is silently dropped.
 
 Ordering is an *expectation*, not a commitment: derive a presumption order
 (what each proof takes as already standing), but re-decide the actual next
