@@ -1,7 +1,11 @@
 <!-- Copy-and-fill master for the slice-registry export (ADR-0008).
      Provenance — harvested 2026-08-29 from checkout-system's lived
      registry across its nine slices, read read-only (ADR-0007);
-     placeholders generalized here. Fill every <angle> slot; delete
+     placeholders generalized here.
+     Harvested 2026-08-29 from the safe-reservations framing node,
+     read read-only (ADR-0007), its vocabulary never adopted:
+     grouping as headings-never-boundaries, riders, evidence-shape
+     flags, the written zero. Fill every <angle> slot; delete
      the guidance lines. Declining this template is off-template:
      the outcomes in the skill's export section still bind — derive
      your own shape from them and record the deviation in the run's
@@ -21,7 +25,9 @@ Status values: `open` · `chosen-next` · `in-progress` ·
 
 ---
 
-## <Stage heading — only if the framing staged its slices; else delete>
+## <Group heading — a version stage or an adversity class; else delete.
+    Groupings are headings for the reader, NEVER a boundary: slices in
+    one group share a kind of storm (or a stage), nothing more.>
 
 ### SL-1 — <the invariant in a few words>  `chosen-next`
 
@@ -30,6 +36,12 @@ Status values: `open` · `chosen-next` · `in-progress` ·
   from the L1 census, not invented>
 - **Area:** <owner from L3>. **Kills covered:** <K-ids from L4>.
 - **Folds in:** <definitions this slice consumes first — only if any>
+- **Rider:** <only if one exists — a structural condition checked,
+  never battle-tested, whose silent violation voids this slice's
+  evidence>
+- **Flag riding:** <only if the adversity cannot be staged the normal
+  way — name the unusual evidence shape here, so the consumer
+  inherits the warning, not the surprise>
 - **Presumes:** <what must already stand, or "nothing">
 - **Judgment logged:** <only when a cut decision could be questioned
   — e.g. why this and SL-n are two slices sharing one adversity class>
@@ -56,6 +68,8 @@ slice through this registry, never around it.>
 
 - K1→SL-1 · K2→SL-2 · <…every kill accounted — nothing dropped>
 - Folds: <each definition → the first slice consuming it>
+- <The written zero: state absences too — "no fold-candidates
+  existed" is a line, never a silence.>
 
 ## Ordering expectation (re-decided at each close)
 

@@ -29,7 +29,9 @@ description: Frame a new backend system with correctness-driven design - turn a 
      never adopted; the shape's one-doc form is this repo's
      decision, both lived runs its evidence.
      Harvested 2026-08-29, same node: step 0's gate names the
-     audience and done-means (details in the workflow's step 0). -->
+     audience and done-means (details in the workflow's step 0).
+     Harvested 2026-08-29, same node: the registry outcomes gain
+     riders, flags, headings-never-boundaries, the written zero. -->
 
 # CbC framing — one promise worked into a slice surface
 
@@ -164,8 +166,11 @@ shape): every slice entry states its invariant, the adversity its
 evidence must *create*, its owning area, the kills it covers, and
 what it presumes already stands; statuses are trustworthy
 (`open · chosen-next · in-progress · closed (date, evidence)`);
-the reconciliation line accounts for every kill; exactly one slice
-is chosen-next while open work remains. The default shape is the
+riders and evidence-shape flags ride the entry they guard; any
+grouping is headings for the reader, never a boundary; the
+reconciliation line accounts for every kill and states even its
+absences (the written zero); exactly one slice is chosen-next
+while open work remains. The default shape is the
 copy-and-fill master `templates/slices.registry.md` beside this
 skill's references (ADR-0008). Declining it is **off-template**:
 derive your own shape from the outcomes above and record the
