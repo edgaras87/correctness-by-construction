@@ -5,7 +5,10 @@
      import: none — verbatim below this header.
      Harvested 2026-08-29 from checkout-system's lived framing,
      read read-only (ADR-0007): step 2 records its saturation
-     probe log in L1 — saturation checkable, not just claimed. -->
+     probe log in L1 — saturation checkable, not just claimed.
+     Harvested 2026-08-29, same run: the census may carry a short
+     labeled trust-assumptions list beside the facts, never
+     instead of them. -->
 
 # CbC framing workflow — layering the system
 
@@ -112,6 +115,13 @@ consequence-first — what each fact leaves *us* facing.
 *trust* ("the store is atomic") instead of what can *hurt* ("a write's
 outcome can be unknowable") passes casual reading and fails the standard.
 The store is an actor that can hurt you, not an ally with guaranteed tools.
+
+What *is* allowed — the opposite of hidden trust: a short list under
+its own label, **"Trust assumptions — accepted deliberately, not
+defended"**, sitting *beside* the facts, never replacing them. Each
+line is a deliberate acceptance a reviewer can challenge ("the store
+durably holds a commit it acknowledged"). Kept short; the moment it
+grows easier to extend than the fact list, it has become the trap.
 
 **Exit — saturation by probes:** re-attack the list from angles the
 derivation didn't use (what does each line quietly assume? stretch the
