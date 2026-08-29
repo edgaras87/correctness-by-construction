@@ -11,7 +11,11 @@ description: Frame a new backend system with correctness-driven design - turn a 
      Harvested 2026-08-29: the registry export's lived format from
      checkout-system's nine-slice run, read read-only (ADR-0007) —
      outcomes stated in the export section, copy-and-fill master in
-     templates/slices.registry.md (ADR-0008). -->
+     templates/slices.registry.md (ADR-0008).
+     Harvested 2026-08-29, same run: the exports are living records
+     — post-close changes only as logged revision entries (the run
+     updated its intent at a breach's close and revised its system
+     definition by logged return trips from downstream stages). -->
 
 # CbC framing — one promise worked into a slice surface
 
@@ -105,6 +109,16 @@ copy-and-fill master `templates/slices.registry.md` beside this
 skill's references (ADR-0008). Declining it is **off-template**:
 derive your own shape from the outcomes above and record the
 deviation in the run's log.
+
+**The exports are living records, not write-once.** The registry
+already lives (statuses change at every slice close); the other two
+stay true the same way: when later work changes what an export
+claims — a named breach closes (intent's staging honesty), a
+downstream stage surfaces facts the definition must carry — the
+export is updated **only through a logged revision entry** (dated:
+what changed, why, what triggered it), the framing's own
+return-trip discipline extended past close. Silent edits and stale
+claims are the same forbidden channel.
 
 Then say this explicitly to the user: **the handoff is to bootstrap, not to
 slicing.** Between framing and the first slice sits real project work —
