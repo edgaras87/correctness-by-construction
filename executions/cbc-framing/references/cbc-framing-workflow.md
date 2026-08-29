@@ -12,7 +12,11 @@
      Harvested 2026-08-29 from the safe-reservations framing node,
      read read-only (ADR-0007), its vocabulary never adopted:
      step 0 carries the audience distinction, worth-proving, and
-     what done demonstrably means. -->
+     what done demonstrably means.
+     Harvested 2026-08-29, same node: step 2 carries the probe
+     machinery as runnable procedure — the three lenses, the
+     three-stamp rule, the audit checklist — taught in the lived
+     walk at the human's own demand. -->
 
 # CbC framing workflow — layering the system
 
@@ -141,13 +145,43 @@ line is a deliberate acceptance a reviewer can challenge ("the store
 durably holds a commit it acknowledged"). Kept short; the moment it
 grows easier to extend than the fact list, it has become the trap.
 
-**Exit — saturation by probes:** re-attack the list from angles the
-derivation didn't use (what does each line quietly assume? stretch the
-timeline; every quantity at zero/many/huge). Two consecutive probes finding
-nothing new = saturated. **The probe log is recorded in L1** — each
-probe's angle and what it surfaced (or "nothing new") — so the
-saturation claim is checkable by a later reader, not just made.
-Out-of-scope facts get a written refusal or deferral line, never silence.
+**The probe machinery — how saturation is earned.** The enumeration
+ran on one lens (actors × three negations), which only finds facts
+shaped like "someone misbehaves." A probe deliberately picks up a
+**different lens** and re-scans the same territory; what a new lens
+catches, the old one was blind to. Three lenses, each mechanical:
+
+1. **The assumption hunt.** Per census line, finish *"this line is
+   only true/complete if ___"* — the blank is the hidden assumption;
+   then ask *what if that's false?* Hunt **silent singulars** (every
+   "the X" — could there be two?) and **silent successes** (every
+   action taken for granted — what's the other branch?).
+2. **The timeline stretched.** Run the film long, three questions:
+   *what accumulates?* (anything that only grows) · *what expires or
+   is forgotten?* (forgetting collides with late arrivals) · *what
+   arrives very late?* Shortest form: take every noun and ask *"what
+   does this look like after a year?"*
+3. **The resource lens.** List every *quantity*, set each to
+   **zero / many / huge**, watch what breaks — a literal grid works.
+   Boring cells are evidence, not failure.
+
+**The three-stamp rule.** Every probe result gets one stamp, out
+loud: **new fact** (the census grows) · **nothing new** (naming which
+existing line covers it — forcing the actual check) · **out of
+scope** (written out in ink). A silent probe is no probe; the stamps
+are what make "did we miss something?" answerable.
+
+**The audit checklist** — the human verifies the framer without
+out-deriving him: did each line get the assumption question? was
+every quantity in the grid? did anything accumulate un-asked? does
+every probe result carry a stamp?
+
+**Exit — saturation by probes:** run the lenses until **two
+consecutive lenses yield zero new facts** — a number, not a feeling.
+**The probe log is recorded in L1** — each probe's lens, its stamps,
+what it surfaced (or "nothing new") — so the saturation claim is
+checkable by a later reader, not just made. Out-of-scope facts get a
+written refusal or deferral line, never silence.
 
 **Hands down:** the fact list. **Hands up (conditional, logged):** a missed
 possession or unwritten refusal → L2 revision.
