@@ -17,7 +17,10 @@ description: Frame a new backend system with correctness-driven design - turn a 
      updated its intent at a breach's close and revised its system
      definition by logged return trips from downstream stages).
      Harvested 2026-08-29, same run: step 2's gate names the
-     recorded probe log (details in the workflow's step 2). -->
+     recorded probe log (details in the workflow's step 2).
+     Harvested 2026-08-29, same run: the mode section names the
+     delegated-verdict mode — human default unchanged, delegation
+     only by a decision recorded in the run's own records. -->
 
 # CbC framing — one promise worked into a slice surface
 
@@ -47,6 +50,16 @@ human works it with you. The hard rule, from the method itself:
 - **Every "outside" is written.** Rejected candidate promises, refused
   responsibilities, out-of-scope facts — recorded, never silently dropped.
   Silence is the only forbidden channel.
+
+**Delegated-verdict mode.** A run may hand these verdicts to the
+agent — but only through an explicit decision recorded in the run's
+own records (its `.claude/decisions.md`), naming what is delegated,
+why, and the cost accepted: the written derivation trail becomes
+the only review, so its legibility is part of the product. Every
+gate is still presented, decided, and recorded where the record
+scheme puts sign-offs — delegation changes who calls the verdict,
+never whether it is written. Absent that recorded decision, the
+default above stands: every verdict is the human's.
 
 ## The derivation order (not the presentation order)
 
