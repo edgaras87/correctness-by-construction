@@ -7,7 +7,11 @@ description: Frame a new backend system with correctness-driven design - turn a 
      (ADR-0003). Provenance — archive/cbc/system-design-method
      birth-materials/.claude/skills/cbc-framing/SKILL.md
      @ fe0075d (imported 2026-08-28, PLAN Step 3). Changes on
-     import: none — verbatim below this header. -->
+     import: none — verbatim below this header.
+     Harvested 2026-08-29: the registry export's lived format from
+     checkout-system's nine-slice run, read read-only (ADR-0007) —
+     outcomes stated in the export section, copy-and-fill master in
+     templates/slices.registry.md (ADR-0008). -->
 
 # CbC framing — one promise worked into a slice surface
 
@@ -89,6 +93,18 @@ At close, write the three artifacts into the project repo:
 - `project.intent.md` — the promise + banked rejections
 - `system.definition.md` — L1–L5, filled or empty-with-reasons
 - `slices.registry.md` — slices + folds + reconciliation line + chosen-next
+
+**The registry's outcomes** (what the file must carry, whatever its
+shape): every slice entry states its invariant, the adversity its
+evidence must *create*, its owning area, the kills it covers, and
+what it presumes already stands; statuses are trustworthy
+(`open · chosen-next · in-progress · closed (date, evidence)`);
+the reconciliation line accounts for every kill; exactly one slice
+is chosen-next while open work remains. The default shape is the
+copy-and-fill master `templates/slices.registry.md` beside this
+skill's references (ADR-0008). Declining it is **off-template**:
+derive your own shape from the outcomes above and record the
+deviation in the run's log.
 
 Then say this explicitly to the user: **the handoff is to bootstrap, not to
 slicing.** Between framing and the first slice sits real project work —
