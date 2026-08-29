@@ -52,6 +52,14 @@
       minor-drift surprise, decide whether both should pin tighter
       (full version or digest); until then the shared major is the
       deliberate coupling.
+- [ ] The three framing export names (project.intent.md,
+      system.definition.md, slices.registry.md) carry the old
+      workbench dot-suffix kind-tagging — noticed 2026-08-29 when
+      the new derivation doc deliberately got the hyphenated form
+      (framing-derivation.md). Decide whether the exports rename to
+      match this repo's convention or stay grandfathered as lived
+      names; if renaming, the skill's export section, the registry
+      template, and checkout's precedent all move together.
 - [ ] checkout-system reads the db port as CHECKOUT_DB_PORT while
       its .env.example names POSTGRES_PORT — two env keys for one
       fact, found at template extraction. If it is a defect, fix it
