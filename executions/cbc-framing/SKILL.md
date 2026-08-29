@@ -27,7 +27,9 @@ description: Frame a new backend system with correctness-driven design - turn a 
      in derivation order; harvested from the safe-reservations
      framing node read read-only (ADR-0007), its own vocabulary
      never adopted; the shape's one-doc form is this repo's
-     decision, both lived runs its evidence. -->
+     decision, both lived runs its evidence.
+     Harvested 2026-08-29, same node: step 0's gate names the
+     audience and done-means (details in the workflow's step 0). -->
 
 # CbC framing — one promise worked into a slice surface
 
@@ -89,7 +91,9 @@ polish passes.
 ## Per-step gates (check before asking the human to close a step)
 
 - **Step 0:** exactly one promise, one sentence, falsifiable — the breaking
-  scenario can be described concretely. A second real purpose means the
+  scenario can be described concretely. The audience named as who the
+  claim is sold to (system consumers belong in the census); what done
+  demonstrably means stated. A second real purpose means the
   intent is overloaded: force the choice. Bank rejected candidates.
 - **Step 1:** every possession earned by the hostage test ("if someone else
   owned this, could they break the promise?"); every refusal written with

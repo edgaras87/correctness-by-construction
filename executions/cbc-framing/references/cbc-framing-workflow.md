@@ -8,7 +8,11 @@
      probe log in L1 — saturation checkable, not just claimed.
      Harvested 2026-08-29, same run: the census may carry a short
      labeled trust-assumptions list beside the facts, never
-     instead of them. -->
+     instead of them.
+     Harvested 2026-08-29 from the safe-reservations framing node,
+     read read-only (ADR-0007), its vocabulary never adopted:
+     step 0 carries the audience distinction, worth-proving, and
+     what done demonstrably means. -->
 
 # CbC framing workflow — layering the system
 
@@ -78,6 +82,20 @@ means. Filter out promises that are really features: *could this claim be
 false, and would proving it true matter to the named audience?* A second
 real purpose is not a second promise — an intent carrying two is overloaded;
 force the choice.
+
+Three sharpenings, each written into the intent:
+
+- **The audience is who the claim is sold to** — the party for whom
+  the proof matters. Consumers of the running system (callers,
+  services) cannot be sold a claim; they generate adversity and
+  enter the census as actors, never the intent as audience.
+- **Worth proving is two questions, both answered concretely:**
+  could it be false — the negation named as an event, not a mood;
+  and would proving it true matter to the named audience.
+- **What "done" demonstrably means, spelled out:** the named
+  adversity genuinely created (never sequential replay pretending),
+  the witness — checkable from outside, on state — never firing,
+  and the path from claim to proof followable by the audience.
 
 **Exit:** one promise, one sentence, falsifiable, worth proving.
 **Hands down:** the promise. **Residue (written):** rejected candidates and
