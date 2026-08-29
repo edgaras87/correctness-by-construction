@@ -6,6 +6,47 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-30  (session: doc projection checked, layout re-derived)
+
+- The queued doc-projection check ran, on two versions of the
+  material: the safe-reservations node's originals (close/ and
+  knowledge/realization/) and the user's latest copies staged in
+  temp/. Substantively identical — the newer pair is the rename
+  after their masters adopted it, which reads as the law surviving
+  review, not changing. The idea in our words: a run repo's README
+  (and any later public doc) is derived from internal truth, never
+  authored on its own — an independently patched surface is a
+  second master, and two masters diverge; refresh is event-driven
+  at milestones, growth is by demonstrated substance.
+- Harvested the lived core only (3a463e7 plan → 5e88c09 layout →
+  3cd695b projection → 5695004 TODO): the derivation table, the
+  thin-README-only default at framing close, milestone refresh,
+  the residue filter extended to the surface, README last in the
+  derivation-order commit story. Refused as unlived: the model's
+  plane directories (internal/, public/), the docs-practice
+  setting apparatus, per-milestone guides. Evidence the core is
+  natural: safe-reservations walked it; checkout's auto run
+  converged on nearly the same README shape with no law at all.
+- The check knocked over the week's layout decision. The user
+  pushed on root placement; on inspection it was an auto run's
+  default, never a verdict, and the derivation doc's placement was
+  unlived entirely. Re-derived: exports to docs/system/ as
+  intent.md, definition.md, registry.md; derivation record nested
+  at docs/system/framing/ (plain-named appendix sweeps beside it).
+  One directory now does what three name-prefixes were doing — the
+  dotted exports and the framing- appendix prefix dissolved, the
+  grandfathered-names TODO deleted as moot. The ripple was wider
+  than that TODO predicted: cbc-slice's trigger and R1, the
+  readiness checklist, the startup snippet, and infra-establish
+  all named the old paths — one commit by the revert test.
+- checkout-system stays untouched (ADR-0007), its root-level
+  dotted exports standing as the old lived state. temp/ holds the
+  user's staging copies, theirs to clear.
+- Resume: the Next slot is empty. Nearest Later candidates: the
+  two-tier harvest question (ADR-0007 amendment) and the define
+  phase gap (cbc-bootstrap territory). The new layout and the
+  README law await their first lived run.
+
 ## 2026-08-29  (session: framing shape decided, run 2 harvested)
 
 - The record-shape decision taken and landed with the run-2 harvest
