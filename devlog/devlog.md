@@ -6,6 +6,34 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-29  (session: app-structure reference adopted)
+
+- Yesterday's parked decision decided: adopt. Four-commit change
+  set landed (plan → reference → walkthrough routing → close),
+  the user reviewing at each boundary. app-structure.md now sits
+  in cbc-bootstrap/references: the lived default authoritative
+  (package-by-feature, package-private, depth earned per feature —
+  harvested from checkout's nine slices), the decision rule
+  (decided at bootstrap, logged with its why; a stated practice
+  intent is a legitimate deciding input), and the four named
+  alternatives in two lines each, all marked unlived. The
+  slice-reach question resolved without coupling skills: the
+  decision travels through the run's own log, which slice work
+  already operates under; the doc states its reach in one line.
+- CORRECTION, recorded as a new fact (the old entry stands —
+  never clean up): the previous entry refers to a TODO Later
+  trigger line "parked 2026-08-28". That line was never committed
+  — the in-session claim was made without the edit actually
+  happening; only the postgres tag-drift note (e783a33) was real.
+  Nothing existed to absorb; the change-plan and its close carry
+  the same statement.
+- Standing expectations after this set: the next run tests the
+  harness reference on the lived stack line and the default
+  structure (one variable at a time); the first run to live an
+  alternative structure upgrades its vocabulary entry with a
+  harvest line.
+- Resume: Step N (release) remains the next PLAN step.
+
 ## 2026-08-29  (session: app-structure question opened, undecided)
 
 - Q&A session, no change set. Discussed application structure
