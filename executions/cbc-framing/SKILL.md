@@ -31,7 +31,14 @@ description: Frame a new backend system with correctness-driven design - turn a 
      Harvested 2026-08-29, same node: step 0's gate names the
      audience and done-means (details in the workflow's step 0).
      Harvested 2026-08-29, same node: the registry outcomes gain
-     riders, flags, headings-never-boundaries, the written zero. -->
+     riders, flags, headings-never-boundaries, the written zero.
+     Re-derived 2026-08-29: the run-repo doc layout — the three
+     exports live under docs/system/ as intent.md, definition.md,
+     registry.md; the derivation record nests beside them at
+     docs/system/framing/. Root placement was an auto run's
+     unverdicted default, never a decision; the directory makes the
+     truth set one nameable path and dissolves the prefix-carried
+     names (the dotted exports, the framing- appendix prefix). -->
 
 # CbC framing — one promise worked into a slice surface
 
@@ -122,10 +129,10 @@ polish passes.
 
 ## The record — one derivation doc
 
-The framing's working record is **one file, `framing-derivation.md`,
-at the run repo's root** — kept as the archive forever, never
-deleted. Three rules give it multi-doc's virtues without the file
-sprawl:
+The framing's working record is **one file,
+`docs/system/framing/derivation.md`** — nested beside the truth it
+earns, kept as the archive forever, never deleted. Three rules give
+it multi-doc's virtues without the file sprawl:
 
 1. **One section per step**, each split in two: *what this step
    earned* (clean statements, on top — export composes from these)
@@ -133,10 +140,11 @@ sprawl:
    are written inline, where they happen.
 2. **A section freezes at its verdict.** Append-only after that;
    revisions touch it only as logged return trips.
-3. **The escape valve:** a genuinely bulky mechanical sweep (a
-   collision grid, say) may live as a referenced appendix file
-   beside it (`framing-<name>.md`), carrying sweep output only,
-   never decisions. The doc stays the single record.
+3. **The escape valve:** a genuinely bulky mechanical sweep may
+   live as a referenced appendix file beside it in the same
+   directory, plain-named (`collision-grid.md`, say), carrying
+   sweep output only, never decisions. The doc stays the single
+   record.
 
 Where each record kind lives: framing verdicts — inline here; a
 delegation arrangement — the run's `.claude/decisions.md` (agent
@@ -155,11 +163,13 @@ lived state per commit; the registry; then the adoption record — so
 the run repo's own history tells the derivation story. Skipping the
 sequence is off-default: log why.
 
-The three artifacts, at the repo root:
+The three artifacts, under `docs/system/` — internal truth as one
+nameable path, the directory carrying the context the old dotted
+prefixes carried:
 
-- `project.intent.md` — the promise + banked rejections
-- `system.definition.md` — L1–L5, filled or empty-with-reasons
-- `slices.registry.md` — slices + folds + reconciliation line + chosen-next
+- `intent.md` — the promise + banked rejections
+- `definition.md` — L1–L5, filled or empty-with-reasons
+- `registry.md` — slices + folds + reconciliation line + chosen-next
 
 **The registry's outcomes** (what the file must carry, whatever its
 shape): every slice entry states its invariant, the adversity its
@@ -171,7 +181,7 @@ grouping is headings for the reader, never a boundary; the
 reconciliation line accounts for every kill and states even its
 absences (the written zero); exactly one slice is chosen-next
 while open work remains. The default shape is the
-copy-and-fill master `templates/slices.registry.md` beside this
+copy-and-fill master `templates/registry.md` beside this
 skill's references (ADR-0008). Declining it is **off-template**:
 derive your own shape from the outcomes above and record the
 deviation in the run's log.

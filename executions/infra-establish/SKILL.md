@@ -14,7 +14,11 @@ description: Establish a framed backend project's infrastructure ground - decide
      to the diagram's layout. One addition: the Records-and-outputs
      defaults section at the end, absorbed from the
      agents/groundskeeper.md file left behind (ADR-0006). Content
-     otherwise verbatim below this header. -->
+     otherwise verbatim below this header.
+     Re-derived 2026-08-29: the framing exports' paths — they live
+     under docs/system/ as intent.md, definition.md, registry.md
+     (cbc-framing's layout re-derivation); Stage 0 updated to
+     match. -->
 
 # Infra establish — from no infrastructure to a governed, verified ground
 
@@ -39,8 +43,8 @@ in. Verify against the actual repo:
 1. **The framing artifacts exist and are settled**: the project intent,
    the system definition (its environment facts are binding), and the
    slice registry (its slices' adversity requirements are the deciding
-   constraints). With cbc-framing these are `project.intent.md`,
-   `system.definition.md`, `slices.registry.md`.
+   constraints). With cbc-framing these live under `docs/system/`:
+   `intent.md`, `definition.md`, `registry.md`.
 2. **The environment facts are readable** — the definition states what
    runtime ground the system assumes (local, single machine, OS-level
    facts). If the definition has no environment facts, the framing

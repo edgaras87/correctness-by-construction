@@ -2,7 +2,10 @@
      (ADR-0003). Provenance — archive/cbc/system-design-method
      birth-materials/cbc-startup-snippet.md
      @ fe0075d (imported 2026-08-28, PLAN Step 3). Changes on
-     import: none — verbatim below this header. -->
+     import: none — verbatim below this header.
+     Re-derived 2026-08-29: the framing exports' paths — they live
+     under docs/system/ as intent.md, definition.md, registry.md
+     (cbc-framing's layout re-derivation). -->
 
 # CbC startup snippet
 
@@ -19,10 +22,10 @@ skills: `cbc-framing` and `cbc-slice`.
 
 ## Method state
 
-- The framing artifacts are `project.intent.md`, `system.definition.md`,
-  and `slices.registry.md`. The registry is the source of truth for what
-  to work next; ordering is re-decided at each slice close, never assumed
-  from the original expectation.
+- The framing artifacts live under `docs/system/`: `intent.md`,
+  `definition.md`, and `registry.md`. The registry is the source of
+  truth for what to work next; ordering is re-decided at each slice
+  close, never assumed from the original expectation.
 - If the framing artifacts do not exist yet, the project is pre-framing:
   the only method work available is running the cbc-framing skill jointly
   with the human. Do not invent artifacts to fill the gap.

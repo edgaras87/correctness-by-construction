@@ -5,7 +5,11 @@
      Harvested 2026-08-29 from the safe-reservations framing node,
      read read-only (ADR-0007), its vocabulary never adopted:
      grouping as headings-never-boundaries, riders, evidence-shape
-     flags, the written zero. Fill every <angle> slot; delete
+     flags, the written zero.
+     Renamed 2026-08-29 slices.registry.md → registry.md, mirroring
+     the export it fills (now docs/system/registry.md — the
+     directory carries what the dotted prefix carried).
+     Fill every <angle> slot; delete
      the guidance lines. Declining this template is off-template:
      the outcomes in the skill's export section still bind — derive
      your own shape from them and record the deviation in the run's

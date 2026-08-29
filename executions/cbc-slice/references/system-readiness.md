@@ -2,7 +2,10 @@
      (ADR-0003). Provenance — archive/cbc/system-design-method
      birth-materials/.claude/skills/cbc-slice/references/system-readiness.md
      @ fe0075d (imported 2026-08-28, PLAN Step 3). Changes on
-     import: none — verbatim below this header. -->
+     import: none — verbatim below this header.
+     Re-derived 2026-08-29: the framing exports' paths — they live
+     under docs/system/ as intent.md, definition.md, registry.md
+     (cbc-framing's layout re-derivation); R1 updated to match. -->
 
 # System readiness — the contract between framing and slicing
 
@@ -13,9 +16,10 @@ is deliberately unspecified: bootstrap is project work, not method work.*
 
 ## R1 — The framing artifacts are in the repo
 
-- `project.intent.md` — the one promise, with banked rejections.
-- `system.definition.md` — L1–L5, each layer filled or empty-with-reasons.
-- `slices.registry.md` — slices + folds, the fold-reconciliation line
+- `docs/system/intent.md` — the one promise, with banked rejections.
+- `docs/system/definition.md` — L1–L5, each layer filled or
+  empty-with-reasons.
+- `docs/system/registry.md` — slices + folds, the fold-reconciliation line
   (concerns ↔ slices + folds, nothing silently dropped), and a
   **chosen-next slice**.
 

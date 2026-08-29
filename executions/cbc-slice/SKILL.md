@@ -1,13 +1,17 @@
 ---
 name: cbc-slice
-description: Work one slice of a correctness-driven backend - take one invariant from the project's slice registry through specify-correctness, plan, build, and document, until a test that CREATES the adversity (concurrent hammering, injected duplicates, kill mid-transaction) proves the invariant survives. Use this whenever the user asks to work, implement, or close a slice, to implement an invariant or idempotency/contention/recovery guarantee, or to continue a project that has a slices.registry.md - even if they just say "let's build the next piece". Requires a completed framing AND a bootstrapped system - this skill's Stage 0 checks readiness first and refuses to proceed if the system is not ready. Do NOT use for framing a new project (that is cbc-framing) or for ordinary feature work outside the registry.
+description: Work one slice of a correctness-driven backend - take one invariant from the project's slice registry through specify-correctness, plan, build, and document, until a test that CREATES the adversity (concurrent hammering, injected duplicates, kill mid-transaction) proves the invariant survives. Use this whenever the user asks to work, implement, or close a slice, to implement an invariant or idempotency/contention/recovery guarantee, or to continue a project that has a slice registry (docs/system/registry.md) - even if they just say "let's build the next piece". Requires a completed framing AND a bootstrapped system - this skill's Stage 0 checks readiness first and refuses to proceed if the system is not ready. Do NOT use for framing a new project (that is cbc-framing) or for ordinary feature work outside the registry.
 ---
 
 <!-- Derives from concept v1 of correctness-by-construction
      (ADR-0003). Provenance — archive/cbc/system-design-method
      birth-materials/.claude/skills/cbc-slice/SKILL.md
      @ fe0075d (imported 2026-08-28, PLAN Step 3). Changes on
-     import: none — verbatim below this header. -->
+     import: none — verbatim below this header.
+     Re-derived 2026-08-29: the framing exports' paths — they live
+     under docs/system/ as intent.md, definition.md, registry.md
+     (cbc-framing's layout re-derivation); the trigger description
+     and R1 updated to match. -->
 
 # CbC slice — one invariant made real
 
@@ -23,9 +27,9 @@ Stage 1; this file adds the operating rules and the readiness gate.
 
 Read `references/system-readiness.md` and verify against the actual repo:
 
-1. **R1** — the three framing artifacts exist (`project.intent.md`,
-   `system.definition.md`, `slices.registry.md`), and the registry names a
-   chosen-next slice with a fold-reconciliation line.
+1. **R1** — the three framing artifacts exist under `docs/system/`
+   (`intent.md`, `definition.md`, `registry.md`), and the registry names
+   a chosen-next slice with a fold-reconciliation line.
 2. **R2** — the repo builds, runs, and the test suite executes.
 3. **R3** — the real store is reachable from tests (not mocked — evidence
    against a mock proves the mock).
