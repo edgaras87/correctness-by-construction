@@ -6,6 +6,59 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-29  (session: framing check run 2 — safe-reservations read)
+
+- Run 2 of the TODO framing check executed: the safe-reservations
+  problem-framing-node read in full, read-only, at
+  archive .../worksites/safe-reservations/problem-framing-node. The
+  custom maintenance language (walks, labs, forks, flow-back,
+  D/F-numbers) identified and ignored throughout; underneath it the
+  node is the method's birthplace — our skill is its distillation,
+  so the check became "what did the distillation lose."
+- Origin fact worth keeping: the walk log records why the
+  every-verdict-human rule exists — an informal walk 0 where the
+  agent derived competently but the human "did not control the
+  process and did not see the decisions being taken." The rule's
+  lived origin; checkout later proved recorded delegation workable.
+  Both stances now sit in our skill (default + delegated mode).
+- Harvest candidates banked (verdicts owed, none landed yet):
+  (1) probe machinery as teachable procedure — three lenses
+  (assumption hunt / stretched timeline / resource grid), the
+  three-stamp rule (new fact · nothing new naming the covering
+  line · out of scope written), the audit checklist for verifying
+  the framer without re-deriving — born from the user's own demand;
+  (2) numbered fences (W-list) for written-out scope, visibly doing
+  work at step 3; (3) the "not probed" honest ledger; (4) scope
+  verdicts as a named step-2 output, each with recommendation and
+  reason; (5) richer intent shape — audience (claim-buyer vs
+  consumers), worth-proving, what done demonstrably means;
+  (6) registry refinements beyond checkout's — adversity-class
+  grouping as headings-never-boundaries, riders whose silent
+  violation voids a slice's evidence, evidence-shape flags, the
+  written zero; (7) step 6 as three visible passes (sort with a
+  because per stamp → pairwise dedupe → folds); (8) a two-tier
+  harvest idea (sure adoptions vs held insights with a promotion
+  path) beside ADR-0007; (9) a small define phase (project name,
+  repo name, repo description, decided with verdicts) between
+  framing and bootstrap — currently covered by no skill.
+- Evidence for the record-shape decision (TODO item): the lived
+  pipeline was per-step pairs (completion = what the step earned,
+  pure, verdict-closed, feeds the next step; derivation = how it
+  ran, kept for audit) → at close composed into the three exports
+  by a written export plan — committed to the project repo in
+  derivation order, eight commits, so the project's git history
+  tells the derivation story — under a residue filter: no lab
+  vocabulary or paths ever project-side, conclusions re-grounded.
+  The user's one-doc-translated-at-close idea matches the
+  composition half; the open half is whether the working record is
+  one growing doc or per-step files.
+- Doc-projection confirmed real and separate (model + guide live in
+  the node; README derived from internal masters at milestones) —
+  stays parked in TODO as its own later check.
+- Resume: the record-shape decision (options + recommendation),
+  then the harvest change-plan for the banked candidates, then
+  doc-projection.
+
 ## 2026-08-29  (session: framing check run 1 — checkout harvested)
 
 - The TODO framing-check direction opened (24f9e5f queued it) and
