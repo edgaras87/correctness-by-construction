@@ -66,4 +66,14 @@
       in the run first, then harvest; the templates carry it as
       lived.
 
+- [ ] The bundle's not-copied boundary is weaker than the kit's:
+      the handbook keeps its manual outside the shipped directory
+      (starter/README.md beside kit/, their ADR-0016 — structural,
+      nothing drifts in by accident), while executions/README.md
+      sits among the files that copy and stays home only because
+      the table does not list it. Same effect for one file; if the
+      bundle ever grows more stay-home files, adopt the
+      directory-boundary shape (noticed 2026-08-30, comparing the
+      two manuals).
+
 ## Known issues (deferred deliberately — each entry: what, why accepted, when to revisit)
