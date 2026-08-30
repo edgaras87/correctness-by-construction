@@ -83,3 +83,16 @@
   what a version is here instead of assuming SemVer.
   Rejected: keeping the stub and logging versions elsewhere — two
   version-shaped records where the repo needs one.
+
+- 2026-08-30 The four candidate-handbook-feedback entries above
+  graduated: delivered in the first upward handoff (temp/ channel)
+  and triaged handbook-side the same day (their change set
+  06cc06d..e3e45bd). Outcomes: commit order freed (their fix cites
+  the 2026-08-27 entry's reasoning); comment discipline and
+  attribution parked in their TODO with leanings; CHANGELOG stub
+  parked, leaning one-stub-that-asks. Graduation ahead of the
+  retrospective, at the user's call — the birth from the manual
+  needed the kit bug fixed first, and the ledger items rode along.
+  Rejected: holding them for a retrospective this endless repo will
+  not have (the fold-back-at-gate-closes practice, devlog
+  2026-08-27, applied to the ledger for the first time).
