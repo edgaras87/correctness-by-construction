@@ -66,6 +66,17 @@
       in the run first, then harvest; the templates carry it as
       lived.
 
+- [ ] Birth-walker skill for this repo's arrangement: a thin skill
+      in .claude/skills/ that reads the two birth manuals at use
+      time (executions/README.md Birth section, which defers to the
+      handbook's starter/README.md) and walks them with review
+      stops — never restating the steps (the handbook's ADR-0014
+      pointer idiom; a skill body that copies the manual is a
+      second master). Trigger: distill it from the first lived
+      birth, not before — the manual is unwalked (2026-08-30), and
+      the skill should carry what the walk teaches, not
+      speculation. Whether the handbook wants its own walker over
+      its manual is its call — FYI for the next handoff.
 - [ ] The bundle's not-copied boundary is weaker than the kit's:
       the handbook keeps its manual outside the shipped directory
       (starter/README.md beside kit/, their ADR-0016 — structural,
