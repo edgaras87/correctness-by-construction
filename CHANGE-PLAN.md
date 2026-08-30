@@ -44,7 +44,8 @@ New section in `executions/README.md` — the birth manual: a numbered
 sequence a person follows to start a CbC project on the stub (copy
 the kit and fill its stubs → copy the bundle per the table → merge
 the snippet into CLAUDE.md, delete the copy → copy the playbook to
-`playbooks/`, then to PLAN.md, fill → begin at framing). It also
+`playbooks/` → run the stub's own Step 0, then Framing, which
+copies the playbook's middle steps into PLAN.md). It also
 names the assumed kit surface explicitly — a CLAUDE.md to append to,
 a `playbooks/` directory, the plan step/gate idiom — so a handbook
 update is checked against a written list, not archaeology; anything
@@ -72,9 +73,14 @@ Deletes this file; body records what diverged.
 
 - **Playbook home and name:** flat beside the snippet as
   `executions/cbc-run-playbook.md`, copied at birth to the run's
-  `playbooks/cbc-run.md`; the run then follows the kit's own playbook
-  usage (copy to PLAN.md, fill, delete inapplicable steps). Not a
-  `playbooks/` directory here — one file does not earn one.
+  `playbooks/cbc-run.md`. Not a `playbooks/` directory here — one
+  file does not earn one.
+- **Middle steps only** (revision, 2026-08-30): the kit's lived
+  idiom — its PLAN stub carries Bootstrap, Framing, and Release;
+  playbooks carry only the middle steps, copied into PLAN.md at
+  Framing and renumbered (checkout's ADR-0024, the current stub's
+  own comments). The playbook and the birth manual follow that, not
+  the kit TEMPLATE.md's older copy-whole-to-PLAN usage.
 - **Slice waves are not hard-coded.** checkout's V1/V2/V3 grouping
   enters as a lived example in a warning/note, not as steps; the
   playbook's slice step defers ordering to the registry, re-decided
