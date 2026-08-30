@@ -44,9 +44,10 @@ the statement's own split is by chapter (Framing, Step 2).
 ### Executions (`executions/`)
 
 Responsibility: the derived layer — the five skills, their
-references, and the startup snippet a run repo copies at birth,
-covering the whole pipeline (cbc-framing → infra-establish /
-infra-serve → cbc-bootstrap → cbc-slice), each file pinned to the
+references, the startup snippet, and the cbc-run playbook a run
+repo copies at birth, covering the whole pipeline (cbc-framing →
+infra-establish / infra-serve → cbc-bootstrap → cbc-slice), each
+file pinned to the
 concept version it derives from or is checked against (ADR-0005).
 Content, not this repo's working arrangement: nothing here is
 installed in this repo's own `.claude/`, and the archive's agent

@@ -25,6 +25,7 @@ At a run repo's birth, copy:
 | `infra-serve/` | `.claude/skills/infra-serve/` |
 | `cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
 | `cbc-startup-snippet.md` | merged into the run's CLAUDE.md, then the copy deleted |
+| `cbc-run-playbook.md` | `playbooks/cbc-run.md` — its middle steps are copied into PLAN.md at Framing |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before
