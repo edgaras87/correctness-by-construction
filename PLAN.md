@@ -204,6 +204,7 @@ was met at Step 5.
 - ADR-0006: Practice executions as skills, without agent seats (Step 4)
 - ADR-0007: Harvest discipline for executions (Step 5)
 - ADR-0008: Templates live inside their skill (Step 6)
+- ADR-0009: CbC delivered as an overlay on the handbook kit
 
 ---
 
