@@ -6,6 +6,44 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-30  (session: handoff loop ran, first birth prelude walked)
+
+- The first upward handoff went to the handbook and came back
+  answered same-day: TEMPLATE.md fixed at its root
+  (project-recording §9 itself still taught copy-whole), Step 0
+  middle commit order freed, our three-assumption surface adopted
+  as a named contract in the starter manual (two-sided: they state
+  what may be assumed, we state what we assume). Absorbed here in
+  dc925cc/e90a5ae; the ledger's four feedback entries graduated —
+  its first graduation, ahead of the retrospective under the
+  fold-back-at-gate-closes practice. Two items came back for our
+  backlog: playbook overlap at birth, walker composition.
+- The next run decided: safe-reservations, again — a second run at
+  the same territory under the standardized arrangement. Old run
+  renamed/archived as safe-reservations-v1 (GitHub rename frees
+  the name; archive alone does not). Key design call: blind
+  replication — the run's briefing deliberately omits the baseline
+  so the derivation cannot steer by it; comparison is concept-side
+  work at phase closes, deltas recorded here, run 1's held
+  insights judged at those readings (b16e86e). The briefing also
+  dropped the idempotent-orders mention — the user counts that run
+  incomplete and may redo it (if so, third birth: the walker
+  skill's candidate first outing).
+- Birth prelude walked for the first time, both manuals in
+  sequence: kit copy, pin filled (@ e3e45bd, the post-triage
+  handbook), marker stripped, hygiene commit 04805d5; bundle
+  overlaid — concept/, five skills, playbook to
+  playbooks/cbc-run.md, snippet merged into CLAUDE.md with its pin
+  comment (title and merge-instruction lines dropped, copy
+  deleted). No trap hit; the manuals composed as written. The
+  two-playbooks decision (backend-service.md beside cbc-run.md)
+  rides into the run's Framing, flagged in the first-session
+  prompt.
+- Resume: the run's first session takes the briefing and runs
+  Step 0 (its own territory). This repo's next work is the phase-
+  close comparison readings, the two-playbooks outcome (note on
+  both sides), and the walker skill once the walk finishes.
+
 ## 2026-08-30  (session: birth delivery decided, playbook harvested)
 
 - The delivery question answered: how CbC reaches a run repo. Two
