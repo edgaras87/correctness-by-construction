@@ -7,13 +7,16 @@
 
 ## Now (current plan step)
 
-- [ ] First run birth from the birth manual — unblocked: the
-      handoff was delivered and answered same-day (handbook change
-      set 06cc06d..e3e45bd; return handoff absorbed 2026-08-30),
-      the TEMPLATE.md bug fixed at its root (project-recording §9),
-      the overlay surface now a two-sided contract. Waits only on
-      the briefing and a working name. temp/ holds both handoff
-      notes, staging only, clear after reading.
+- [ ] First run birth from the birth manual — in motion
+      (2026-08-30): working name safe-reservations, briefing final.
+      Standing protocol, owned here, not by the run: the run is a
+      blind replication of safe-reservations-v1 (archived) — its
+      briefing omits the baseline deliberately so the derivation
+      cannot steer by it. This repo opens both repos at phase
+      closes (framing, ground, bootstrap, each slice stage),
+      records the deltas here, and judges run 1's held insights at
+      those readings (their named promotion path). The baseline at
+      ~/IdeaProjects/safe-reservations-v1 stays read-only.
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
