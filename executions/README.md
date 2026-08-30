@@ -30,11 +30,39 @@ At a run repo's birth, copy:
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before
 its inputs exist, so an early copy is inert, and one delivery
-moment keeps the whole set at one pin. In the run's PLAN, author an
-infrastructure step and a bootstrap step that invoke their skills
-(the pipeline: cbc-framing → infra-establish → cbc-bootstrap →
-cbc-slice); only re-entry (infra-serve) arrives unplanned, and its
-trigger covers that.
+moment keeps the whole set at one pin. The run's middle plan steps
+come from the playbook, which carries the pipeline (cbc-framing →
+infra-establish → cbc-bootstrap → cbc-slice) as steps with gates;
+only re-entry (infra-serve) arrives unplanned, and its trigger
+covers that.
+
+## Birth — starting a CbC project on the kit
+
+A run repo is born in two copies: the handbook's starter kit
+(`engineering-handbook/starter/kit/`) supplies the container, this
+bundle overlays the method (ADR-0009). The sequence:
+
+1. Copy the kit and follow its own instructions — repo, hygiene,
+   records, the PLAN stub.
+2. Copy this bundle per the table above.
+3. Merge `cbc-startup-snippet.md` into the run's CLAUDE.md and
+   delete the copy — the stub agent is now the CbC project agent.
+4. Run the stub's Step 0 (bootstrap) as the kit directs.
+5. At Framing, the step's gates are met *via* cbc-framing — the
+   intent, definition, and registry are the problem statement,
+   success criteria, and out-of-scope in the method's richer form —
+   and the middle-steps gate item is where the playbook's steps are
+   copied into PLAN.md and renumbered.
+
+The overlay assumes exactly three things of the kit — a CLAUDE.md
+to append to, a `playbooks/` directory, the plan step/gate idiom —
+and must not depend on anything else; a handbook kit update is
+checked against this list, nothing more. It touches one kit file
+(CLAUDE.md, by append) and otherwise adds files in paths the kit
+does not claim. Records stay the kit's: CbC events are recorded as
+ordinary project events under the kit's rules, and the method's own
+artifacts (`docs/system/`, the framing derivation) live beside the
+records, not in place of them.
 
 Two skills (infra-establish, cbc-bootstrap) carry a `templates/`
 directory beside their references — copy-and-fill masters for the
