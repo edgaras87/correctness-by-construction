@@ -7,7 +7,14 @@
 
 ## Now (current plan step)
 
-- [ ]
+- [ ] Deliver the handbook handoff (drafted 2026-08-30, staged at
+      temp/handbook-handoff-2026-08-30.md — temp/ is staging, not
+      a record; delete after pasting): one kit bug (TEMPLATE.md
+      copy-whole usage vs their ADR-0024), four ledger feedback
+      items graduated early, three FYIs. The first run birth waits
+      on the bug fix (the kit manual's own audit-then-fix-upstream
+      rule) plus a briefing and working name. When handed, note
+      the graduation date on the ledger entries it delivers.
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
