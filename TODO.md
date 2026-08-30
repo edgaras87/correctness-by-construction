@@ -40,11 +40,20 @@
       only the first tier. Consider whether a held-insight tier
       earns a place in the harvest discipline — an ADR-0007
       amendment, decided deliberately, not in passing.
-- [ ] A define phase lived in safe-reservations between framing and
-      bootstrap: project name (under a naming rule), repo name, and
-      remote repo description, each decided with verdicts. No skill
-      here covers that gap — cbc-bootstrap territory; consider a
-      small addition when bootstrap next gets touched.
+- [ ] The define phase's skill-level half is still open: the
+      cbc-run playbook now carries Define as a step (2026-08-30,
+      ADR-0009 change set), but no skill walks it the way
+      cbc-framing walks framing — naming rule, verdict protocol.
+      Consider a small addition when cbc-bootstrap next gets
+      touched, or when a run's Define step chafes without one.
+- [ ] Handbook suggestion, parked with its trigger: an overlay
+      marker in the kit PLAN stub's Framing step (the hygiene
+      files' append-below-the-marker pattern), so a method bundle
+      can add gate items first-class. Propose it if a CbC run's
+      Framing ever needs a gate the generic step cannot express,
+      or when a second method bundle appears. Until then the
+      generic gates are the interface and cbc-framing meets them
+      (bundle doc, Birth section).
 - [ ] The projection law's deeper lifecycle is unharvested: public
       docs beyond the README, earned by demonstrated substance and
       refreshed at slice closes — cbc-slice-close territory, seen
