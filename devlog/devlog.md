@@ -6,6 +6,50 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-30  (session: birth delivery decided, playbook harvested)
+
+- The delivery question answered: how CbC reaches a run repo. Two
+  births compose — the handbook kit supplies the container, this
+  repo's bundle overlays the method (ADR-0009; 1b2dd56 plan →
+  ef87a8a ADR → 832809c playbook → 9c813ee manual → f78416f TODO).
+  Rejected at the ADR: a pre-baked stub here (second master of
+  every kit file — yesterday's projection law applied to the kit,
+  plus a sync burden with no mechanism) and delivery-as-edit-
+  instructions (the kit's playbooks/ slot already is that
+  mechanism). The overlay's coupling is a named surface of three
+  assumptions in the birth manual — CLAUDE.md append, playbooks/,
+  the step/gate idiom — with the rule that nothing off the list
+  may be depended on; a handbook update is a list check, not
+  archaeology. Record layering stated the same way: kit owns the
+  record system, CbC events are ordinary project events, method
+  artifacts live beside the records under docs/system/.
+- cbc-run playbook harvested, not authored: Ground / Bootstrap /
+  Slices / Release from checkout-system's retro-folded
+  backend-service.md v1 in its own wording, warnings intact; the
+  Define step (name under a rule, repo name, remote description,
+  verdicts) from safe-reservations log Entry 0001. The merged
+  sequence is this repo's judgment — the header says which run
+  contributed what. Slice waves deliberately not steps: ordering
+  stays registry-driven.
+- One divergence, revised first-class (649abce): the plan assumed
+  the kit TEMPLATE.md's copy-whole-to-PLAN usage; the lived kit is
+  middle-steps-only (Bootstrap/Framing/Release in the stub,
+  checkout's ADR-0024). The playbook and manual follow the lived
+  shape. The kit's own TEMPLATE.md still carries the older usage —
+  the handbook's inconsistency, not ours to fix from here.
+- Considered and declined: the bundle overriding the stub's Framing
+  step. checkout lived framing under the generic gates with zero
+  friction — they are the interface, cbc-framing is how they're
+  met. The overlay-marker idea (hygiene-files pattern, applied to
+  the PLAN stub) parked in TODO with a trigger instead.
+- Runs read-only throughout (ADR-0007). User's stated posture for
+  what's next: stop overthinking, birth a run, redo what surprises.
+- Resume: the birth manual is untested — the next run repo birth is
+  its first walk (and the Define step's first kit-born walk).
+  Nearest parked items unchanged: two-tier harvest (ADR-0007
+  amendment), define-phase skill half, the overlay-marker handbook
+  suggestion. Step N: Release still open in PLAN.
+
 ## 2026-08-30  (session: doc projection checked, layout re-derived)
 
 - The queued doc-projection check ran, on two versions of the
