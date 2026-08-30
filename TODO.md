@@ -7,18 +7,24 @@
 
 ## Now (current plan step)
 
-- [ ] Deliver the handbook handoff (drafted 2026-08-30, staged at
-      temp/handbook-handoff-2026-08-30.md — temp/ is staging, not
-      a record; delete after pasting): one kit bug (TEMPLATE.md
-      copy-whole usage vs their ADR-0024), four ledger feedback
-      items graduated early, three FYIs. The first run birth waits
-      on the bug fix (the kit manual's own audit-then-fix-upstream
-      rule) plus a briefing and working name. When handed, note
-      the graduation date on the ledger entries it delivers.
+- [ ] First run birth from the birth manual — unblocked: the
+      handoff was delivered and answered same-day (handbook change
+      set 06cc06d..e3e45bd; return handoff absorbed 2026-08-30),
+      the TEMPLATE.md bug fixed at its root (project-recording §9),
+      the overlay surface now a two-sided contract. Waits only on
+      the briefing and a working name. temp/ holds both handoff
+      notes, staging only, clear after reading.
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ]
+- [ ] Playbook overlap, fires at the next birth (return handoff
+      item 6): the kit ships playbooks/backend-service.md, the
+      bundle overlays cbc-run.md beside it — the born project holds
+      two playbooks and its Framing must know whether to copy from
+      one, both, or merge. The handbook holds the same question
+      from its side; the trigger fires at our birth, where the
+      handbook is not in the room. Decide there, in the room, and
+      note the outcome on both sides.
 
 ## Later / someday
 
@@ -83,7 +89,11 @@
       birth, not before — the manual is unwalked (2026-08-30), and
       the skill should carry what the walk teaches, not
       speculation. Whether the handbook wants its own walker over
-      its manual is its call — FYI for the next handoff.
+      its manual is its call — FYI delivered 2026-08-30; the return
+      handoff (item 7) adds: the handbook has its own parked walker
+      candidate, and if both ever exist they walk composing manuals
+      (kit first, bundle second), so shape them together, not
+      derived twice — dual-noted on their birth-skill entry.
 - [ ] The bundle's not-copied boundary is weaker than the kit's:
       the handbook keeps its manual outside the shipped directory
       (starter/README.md beside kit/, their ADR-0016 — structural,

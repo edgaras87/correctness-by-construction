@@ -57,7 +57,11 @@ bundle overlays the method (ADR-0009). The sequence:
 The overlay assumes exactly three things of the kit — a CLAUDE.md
 to append to, a `playbooks/` directory, the plan step/gate idiom —
 and must not depend on anything else; a handbook kit update is
-checked against this list, nothing more. It touches one kit file
+checked against this list, nothing more. The kit names the same
+contract from its side (starter/README.md, "The kit's overlay
+surface", 2026-08-30): the handbook states what may be assumed,
+each bundle states what it assumes, and a bundle needing a fourth
+surface widens the contract handbook-side first. It touches one kit file
 (CLAUDE.md, by append) and otherwise adds files in paths the kit
 does not claim. Records stay the kit's: CbC events are recorded as
 ordinary project events under the kit's rules, and the method's own
