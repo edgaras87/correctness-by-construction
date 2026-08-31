@@ -82,6 +82,16 @@
       in the run first, then harvest; the templates carry it as
       lived.
 
+- [ ] Watch the first Step 0 walk for stub-vs-manual overlap
+      friction: the kit's PLAN Step 0 comment and starter/README
+      steps 3–7 partially restate each other. The user's instinct
+      is to slim the stub comment and carry the logic in the first
+      prompt; counter-argument on record (2026-08-31 session): the
+      prompt doesn't persist across sessions and the manual isn't
+      copied — if anything shrinks, it's the manual deferring to
+      the stub (stub-teaches-itself, their ADR-0004). If the walk
+      shows lived friction either way, it becomes a handoff item
+      with evidence.
 - [ ] Birth-walker skill for this repo's arrangement: a thin skill
       in .claude/skills/ that reads the two birth manuals at use
       time (executions/README.md Birth section, which defers to the
