@@ -7,8 +7,36 @@
 
 ## Now (current plan step)
 
-- [ ] First run birth from the birth manual — in motion
-      (2026-08-30): working name safe-reservations, briefing final.
+- [ ] Handbook handoff — prepped 2026-08-31, deliver and await
+      reply. Two items that compose (item 2 justifies item 1):
+      1. Slim the kit stub to direction-neutral. Decision rule: a
+         stub section stays only if true or fillable at birth for
+         every project type. Prerequisites/Run/Test are direction,
+         not container — the README stub's own fill-comment hedges
+         ("or delete Run and Test — Framing decides", their
+         ADR-0024), this repo's Step 0 deferred Commands/Run/Test
+         and repurposed the CHANGELOG stub outright. Kit-side home
+         for the dropped sections (non-CbC app births) is the
+         handbook's call — likely its own overlay/playbook
+         mechanism, the overlay contract's philosophy applied
+         inward.
+      2. project-recording gains the projection rule: README is a
+         record with a when-row — touched when something became
+         true that the outside should see; a gate that makes
+         something projectable true includes its projection. Gate
+         items where relevant, no mandatory doc step per gate.
+         Evidence: the projection-law entry in Later; the kit can
+         drop app-shaped sections because this rule guarantees
+         they arrive when they become true.
+- [ ] Re-birth under the scenario, after the handoff reply and the
+      bundle-side reintroduction: safe-reservations (born
+      2026-08-30, zero project commits) stopped and discarded
+      2026-08-31 — the birth design changed under it
+      (executions/birth-scenario.md trial); deleting the born repo
+      is the user's act, outside this repo. Surviving, held for
+      the re-birth: the briefing (deliberately baseline-blind) —
+      the re-birth takes it unchanged, so the scenario's first
+      walk is a fair test — and the standing protocol below.
       Standing protocol, owned here, not by the run: the run is a
       blind replication of safe-reservations-v1 (archived) — its
       briefing omits the baseline deliberately so the derivation
@@ -20,6 +48,13 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Bundle-side reintroduction, after the handbook handoff reply
+      (its own change set, designed against the slimmed kit's
+      final shape): infra-establish and cbc-bootstrap gain "the
+      README says it now" walkthrough steps — Prerequisites when
+      the ground stands, Run/Test when the harness is real — with
+      the section skeletons as template fragments inside each
+      skill (ADR-0008).
 - [ ] Playbook overlap, fires at the next birth (return handoff
       item 6): the kit ships playbooks/backend-service.md, the
       bundle overlays cbc-run.md beside it — the born project holds
@@ -31,6 +66,14 @@
 
 ## Later / someday
 
+- [ ] Prebuilt CbC stub — a cache of the birth scenario's output,
+      versioned, so a birth becomes one copy plus a briefing with
+      a single composite pin. Parked with its trigger: when births
+      come faster than harvests. Until then the cache would be
+      stale more often than used, and the scenario walks fresh
+      from the masters (2026-08-31 discussion; the ADR-0009
+      objection weakens when the stub is derived by a written
+      scenario, but the staleness cost stands).
 - [ ] First lived use of the practice skills in their imported form
       is owed (archive STATUS: they are distillations, exercised as
       agent-driven skills never, as skills-without-agents never) —
@@ -107,6 +150,9 @@
       candidate, and if both ever exist they walk composing manuals
       (kit first, bundle second), so shape them together, not
       derived twice — dual-noted on their birth-skill entry.
+      (2026-08-31) executions/birth-scenario.md is now this skill's
+      precursor: the skill distills from the scenario once walks
+      stabilize the draft, not from the manuals directly.
 - [ ] The bundle's not-copied boundary is weaker than the kit's:
       the handbook keeps its manual outside the shipped directory
       (starter/README.md beside kit/, their ADR-0016 — structural,
