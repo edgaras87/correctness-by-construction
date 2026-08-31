@@ -6,6 +6,53 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-08-31  (session: birth-scenario pivot, safe-reservations stopped)
+
+- The birth design changed out from under the newborn:
+  safe-reservations (born 2026-08-30, zero project commits) stopped
+  and discarded rather than walked under a procedure being replaced.
+  Kept: the baseline-blind briefing, the blind-replication protocol
+  (TODO Now), the archived v1 baseline. The re-birth takes the same
+  briefing — the same problem through the new birth makes the
+  scenario's first walk a fair test.
+- The pivot: birth as an ordered introduction, not a file operation.
+  executions/birth-scenario.md drafted provisional — seed by pointer
+  to the handbook manual (no restated steps), a newborn-walked
+  introduction (boot → concept → map → records; the log read
+  top-down is the introduction) meeting the kit's Step 0 gates the
+  way cbc-framing meets Framing's, briefing last and outside.
+  Rejected in discussion: a prebuilt stub now (a cache of the
+  scenario's output — parked in TODO behind "births come faster
+  than harvests"; the ADR-0009 objection weakens when the stub is
+  derived by a written scenario, but the staleness cost stands
+  while harvests are weekly); scenario-as-skill first (a
+  provisional skill automates speculation — the walker distills
+  after walks); paste-delivery (prompts don't persist; the scenario
+  copies to the newborn's root, birth-in-flight visible from a
+  clean clone); editing the handbook manual from here (wrong tier;
+  pointer only).
+- Deliberately untouched until the trial closes:
+  cbc-startup-snippet.md, the Birth section's body (one in-trial
+  paragraph added), the cbc-run playbook (different job — the run's
+  map, not the birth). The trial closes with an adopt-or-kill ADR,
+  which also decides the snippet question.
+- A second front opened mid-session, from the user noticing the kit
+  stub is not basic enough: Prerequisites/Run/Test are direction,
+  not container — delete-after-birth baked into the stub, its own
+  fill-comment hedging ("Framing decides", ADR-0024). The split
+  that untangled it: the when is convention-tier (README as a
+  projection record in project-recording — touched when something
+  became true the outside should see; gate items where relevant,
+  no mandatory doc step per gate), the what is method-tier
+  (walkthrough steps plus template fragments in infra-establish /
+  cbc-bootstrap, existing ADR-0008 machinery — no new mechanism
+  needed anywhere). Handoff prepped in TODO Now, two items
+  composing; bundle-side reintroduction parked in Next until the
+  reply.
+- Resume: deliver the handoff to the handbook (user-side, under its
+  records); after the reply, the bundle-side reintroduction set;
+  then the re-birth — slim kit, scenario walk, same briefing.
+
 ## 2026-08-30  (session: handoff loop ran, first birth prelude walked)
 
 - The first upward handoff went to the handbook and came back
