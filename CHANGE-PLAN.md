@@ -13,8 +13,11 @@ meets Framing's, with the briefing arriving last. The Birth section
 points at the trial without being rewritten. Deliberately untouched:
 cbc-startup-snippet.md, the Birth section's body, the cbc-run
 playbook — masters retire only after the trial proves a successor.
-TODO carries the experiment protocol (changes tracked per walk, the
-prebuilt-stub idea parked behind "births come faster than harvests").
+TODO carries the trial's surroundings — the prebuilt-stub idea
+parked behind "births come faster than harvests" — and the handbook
+handoff: the kit stub slimmed to direction-neutral, project-recording
+gaining the projection rule; the bundle-side reintroduction waits in
+Next for the reply.
 
 ## Commits
 
@@ -24,11 +27,17 @@ master, plus one pointer line in executions/README.md's Birth
 section naming the trial. One step — the pointer without the draft
 reverts incoherently.
 
-**2. `docs: record the safe-reservations stop and scenario trial`**
+**2. `docs: record the safe-reservations stop and trial`**
 TODO.md: the Now entry rewritten (run stopped and discarded, what
-survives, the re-birth as the scenario's first walk), the experiment
-protocol and stub trigger parked in Later, the birth-walker entry
-updated to name the scenario draft as its precursor.
+survives, the re-birth as the scenario's first walk) and the
+handbook handoff prepped beside it — two composing items: slim the
+kit stub to direction-neutral (a section stays only if true or
+fillable at birth for every project type) and the projection rule
+for project-recording (README as a record, touched when something
+became true the outside should see). The bundle-side reintroduction
+parked in Next, the prebuilt-stub idea with its trigger in Later,
+the birth-walker entry updated to name the scenario draft as its
+precursor.
 
 **3. `docs: add devlog entry for the birth-scenario pivot`**
 The session record: the decision and its why, the options rejected
