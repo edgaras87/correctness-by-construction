@@ -8,7 +8,10 @@
 ## Now (current plan step)
 
 - [ ] Handbook handoff — prepped 2026-08-31, deliver and await
-      reply. Two items that compose (item 2 justifies item 1):
+      reply. Drafted message staged at
+      temp/handbook-handoff-2026-08-31.md (temp/ is staging, not a
+      record; delete after pasting — regenerable from this entry).
+      Two items that compose (item 2 justifies item 1):
       1. Slim the kit stub to direction-neutral. Decision rule: a
          stub section stays only if true or fillable at birth for
          every project type. Prerequisites/Run/Test are direction,
