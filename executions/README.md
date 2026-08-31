@@ -38,6 +38,11 @@ covers that.
 
 ## Birth — starting a CbC project on the kit
 
+**In trial:** the next birth walks `birth-scenario.md` — a draft
+reordering this procedure (seed, a newborn-walked introduction,
+briefing last). This section stays the procedure of record until
+the trial closes in adoption; divergences land in the devlog.
+
 A run repo is born in two copies: the handbook's starter kit
 (`engineering-handbook/starter/kit/`) supplies the container, this
 bundle overlays the method (ADR-0009). The sequence:
