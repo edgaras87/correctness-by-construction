@@ -6,6 +6,59 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-01  (session: handbook reply absorbed, convention injected)
+
+- The 2026-08-31 handoff came back adopted on both asks (their
+  ADR-0025/0026). Projection rule into project-recording as
+  proposed — gate items where relevant, README row in the records
+  table. The stub rule reworded, and rightly: our
+  fillable-at-birth form overshot at truthfully-empty sections
+  (How-to-work-here); the adopted form is container stays,
+  direction goes. Stubs slimmed, both self-deletion hedges dead,
+  CHANGELOG stub fixed en route (our 08-30 item 5 — its trigger,
+  the next non-app birth, is our waiting re-birth). Plain-app
+  destination for the dropped sections: their seed playbook's
+  Skeleton & CI gate — our overlay-applied-inward suggestion,
+  taken.
+- First live convention injection ever (their return item 11; the
+  procedure deliberately unwritten, our friction the field data
+  they want back): change-plans overwritten from the handbook
+  @ 65dd7ee — rolling commit lists, material-first order, records
+  steps planned by walking the records table, in-set ADRs
+  Proposed by default — injection entry in decisions.md, README
+  row into CLAUDE.md. Friction notes gathered in TODO's handoff
+  item. This absorption set was then the first planned under the
+  injected rules; the records walk ran at drafting and cleared
+  ARCHITECTURE deliberately (shape unchanged, coarse component
+  row covers new files).
+- default.md ambiguity caught by the user before it bit: two
+  same-named starter files meaning opposites — installs/ (the
+  handbook's own direction, replaced by our bundle manual in
+  composition, never a dependency) vs kit/playbooks/ (the bare
+  sequence, our rebuild base). Naming collision queued for the
+  next handoff with the reply's own bare-name usage as evidence.
+- The playbook independence question argued and settled: the
+  rebuilt cbc-run is complete and self-contained — nothing
+  references the handbook at use time; the kit endpoint steps it
+  carries are vendored with provenance and pin (drift checkable
+  against a named commit, harvest routing instant, updates flow
+  the handoff channel), specialized never weakened. Declaring
+  them fully ours would not cut the coupling — the gates are kit
+  facts — only untrack it. Formal decision: the bundle-side
+  set's Proposed ADR.
+- Their ADR-0028 moved our ground mid-plan: birth docs re-aimed
+  at starter/installs/pure.md; the overlay contract's third
+  assumption now concrete (STEPS-marker region +
+  playbooks/default.md); playbooks hold full sequences copied
+  whole at birth, Framing confirms not authors — cbc-run must be
+  rebuilt, and the parked playbook-overlap question likely
+  dissolves (one playbook chosen at birth).
+- Resume: the bundle-side set — reintroduction plus playbook
+  rebuild, first set to exercise the new convention's
+  Proposed-ADR and provisional-tail machinery — then the
+  re-birth: slim kit, new starter, scenario walk, same briefing.
+  The next handoff rides when that set closes.
+
 ## 2026-08-31  (session: birth-scenario pivot, safe-reservations stopped)
 
 - The birth design changed out from under the newborn:
