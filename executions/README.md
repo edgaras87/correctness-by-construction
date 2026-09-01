@@ -86,11 +86,13 @@ every item below is a verifiable fact:
   (ADR-0007).
 
 The overlay assumes exactly three things of the kit — a CLAUDE.md
-to append to, a `playbooks/` directory, the plan step/gate idiom —
-and must not depend on anything else; a handbook kit update is
-checked against this list, nothing more. The kit names the same
-contract from its side (starter/README.md, "The kit's overlay
-surface", 2026-08-30): the handbook states what may be assumed,
+to append to, a `playbooks/` directory, and the plan's
+STEPS-marker region with `playbooks/default.md` as its base
+(their ADR-0028) — and must not depend on anything else; a
+handbook kit update is checked against this list, nothing more.
+The kit names the same contract from its side (starter/README.md's
+contract list, 2026-08-30; step item updated 2026-09-01): the
+handbook states what may be assumed,
 each bundle states what it assumes, and a bundle needing a fourth
 surface widens the contract handbook-side first. It touches one kit file
 (CLAUDE.md, by append) and otherwise adds files in paths the kit

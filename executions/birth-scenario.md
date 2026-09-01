@@ -17,9 +17,10 @@ construction.
 
 Done from outside; the newborn cannot introduce its own boot.
 
-1. Kit birth per the handbook's manual
-   (engineering-handbook/starter/README.md), through its hygiene
-   commit. By pointer — no step of that manual is restated here.
+1. Kit birth per the handbook's pure install manual
+   (engineering-handbook/starter/installs/pure.md, their
+   ADR-0028), through its hygiene commit. By pointer — no step of
+   that manual is restated here.
 2. Copy the bundle per README.md's table, plus this scenario to the
    newborn's repo root, at one moment — one delivery, one pin. A
    scenario at the root makes a birth in flight visible from a
