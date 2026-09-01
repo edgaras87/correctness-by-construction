@@ -7,32 +7,30 @@
 
 ## Now (current plan step)
 
-- [ ] Handbook handoff — prepped 2026-08-31, deliver and await
-      reply. Drafted message staged at
-      temp/handbook-handoff-2026-08-31.md (temp/ is staging, not a
-      record; delete after pasting — regenerable from this entry).
-      Two items that compose (item 2 justifies item 1):
-      1. Slim the kit stub to direction-neutral. Decision rule: a
-         stub section stays only if true or fillable at birth for
-         every project type. Prerequisites/Run/Test are direction,
-         not container — the README stub's own fill-comment hedges
-         ("or delete Run and Test — Framing decides", their
-         ADR-0024), this repo's Step 0 deferred Commands/Run/Test
-         and repurposed the CHANGELOG stub outright. Kit-side home
-         for the dropped sections (non-CbC app births) is the
-         handbook's call — likely its own overlay/playbook
-         mechanism, the overlay contract's philosophy applied
-         inward.
-      2. project-recording gains the projection rule: README is a
-         record with a when-row — touched when something became
-         true that the outside should see; a gate that makes
-         something projectable true includes its projection. Gate
-         items where relevant, no mandatory doc step per gate.
-         Evidence: the projection-law entry in Later; the kit can
-         drop app-shaped sections because this rule guarantees
-         they arrive when they become true.
-- [ ] Re-birth under the scenario, after the handoff reply and the
-      bundle-side reintroduction: safe-reservations (born
+- [ ] Next handbook handoff — queued 2026-09-01, deliver when the
+      bundle-side set closes (more may accrue there). Two items:
+      1. Injection friction log — the field data their return item
+         11 asked back, from the first live convention injection
+         (change-plans @ 65dd7ee): the copy is also a rename
+         (CONVENTION.md → SKILL.md); the byte-identity claim
+         needed a diff mandated before overwrite; whether an
+         injection needs a change-plan is unstated (we judged no:
+         independent mechanical commits); whether the injection
+         entry may ride the overwrite commit is unstated (our
+         decisions log's standing rule says no); the records-table
+         row text came without a table position; frontmatter
+         compatibility worked only because the convention file is
+         authored skill-shaped — a written procedure must check
+         each of these, not inherit our luck.
+      2. default.md naming collision: starter/installs/default.md
+         (the handbook's own direction — a bundle manual) and
+         starter/kit/playbooks/default.md (the bare sequence — the
+         absence of direction) share a name meaning opposite
+         things. Their own reply used the bare name in context and
+         disambiguation cost a session detour. Suggest renaming
+         one side; their call which.
+- [ ] Re-birth under the scenario, after the bundle-side set
+      closes: safe-reservations (born
       2026-08-30, zero project commits) stopped and discarded
       2026-08-31 — the birth design changed under it
       (executions/birth-scenario.md trial); deleting the born repo
@@ -51,13 +49,26 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Bundle-side reintroduction, after the handbook handoff reply
-      (its own change set, designed against the slimmed kit's
-      final shape): infra-establish and cbc-bootstrap gain "the
-      README says it now" walkthrough steps — Prerequisites when
-      the ground stands, Run/Test when the harness is real — with
+- [ ] Bundle-side set — unblocked 2026-09-01 by the handbook
+      reply; designed against the slimmed stubs and the starter
+      redesign (their ADR-0026/0028). Two halves, one set:
+      (a) Moment-of-need reintroduction: infra-establish gains the
+      README Prerequisites step when the ground stands,
+      cbc-bootstrap gains Run/Test when the harness is real, with
       the section skeletons as template fragments inside each
-      skill (ADR-0008).
+      skill (ADR-0008). Wording discipline (their return item 9):
+      restate the stub rule only in the adopted form — container
+      stays, direction goes.
+      (b) cbc-run playbook rebuilt as a full sequence on
+      playbooks/default.md's base: kit endpoint steps
+      (Bootstrap/Framing/Release) vendored with provenance and
+      pin, specialized never weakened; our harvested middles
+      (Define, Ground, harness Bootstrap, Slices) inserted
+      unchanged; the ownership decision lands as the set's
+      Proposed ADR. The bundle README's playbook-usage lines
+      (table row "copied at Framing", Birth step 6) update in the
+      same set — deferred from the absorption set because the
+      master was still middles-shaped.
 - [ ] Playbook overlap, fires at the next birth (return handoff
       item 6): the kit ships playbooks/backend-service.md, the
       bundle overlays cbc-run.md beside it — the born project holds
@@ -65,7 +76,11 @@
       one, both, or merge. The handbook holds the same question
       from its side; the trigger fires at our birth, where the
       handbook is not in the room. Decide there, in the room, and
-      note the outcome on both sides.
+      note the outcome on both sides. (2026-09-01) The starter
+      redesign likely dissolves this: playbooks now hold full
+      sequences, one chosen and copied whole at birth — a CbC
+      birth chooses cbc-run.md and the others stay uncopied.
+      Confirm at the birth; still note the outcome both sides.
 
 ## Later / someday
 
