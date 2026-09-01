@@ -6,6 +6,39 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-01  (session: bundle gathered under starter/)
+
+- Same day, second set: the delivery layout now mirrors the
+  handbook's starter shape (ADR-0010, the set's Proposed ADR,
+  flipped Accepted at this close). starter/README.md describes and
+  maps, starter/installs/cbc.md is the birth manual — peer of
+  their installs/default.md, now also pointing the kit half at
+  pure.md — and starter/bundle/ ships whole: five skills, snippet,
+  playbook, birth-scenario.md (which joined the copy table it was
+  only implicitly in). concept/ stays at the root and ships from
+  there: the copy rule is two wholesale directories, and the
+  file-level ambiguity ADR-0016 guards against never existed in
+  concept/. executions/ is gone; historical records keep the old
+  paths, the ADR carries the mapping.
+- The fork that got us here: evict (delivery/ beside untouched
+  content dirs — cheapest, my recommendation) vs gather (the
+  mirror). User chose the mirror for the two-repo birth visit's
+  legibility; the full gather (method/ absorbing concept/) and
+  the concept/-inside-bundle variant were rejected on identity
+  and redundancy grounds. The 2026-08-30 boundary-asymmetry TODO
+  item closed resolved — by the symmetry argument, not its
+  predicted trigger.
+- The naming hazard from the handbook exchange bit here
+  immediately: our own contract paragraph cites "the handbook's
+  starter/README.md" one line above our own starter/README.md —
+  the same-name collision now exists across tiers, more fuel for
+  the queued default.md naming handoff item.
+- Resume: unchanged queue — the bundle-side set (playbook rebuilt
+  full-sequence on playbooks/default.md's base in its new home,
+  moment-of-need README steps, the vendored-endpoints Proposed
+  ADR), then the re-birth; the handoff (now three items) rides
+  after that set closes.
+
 ## 2026-09-01  (session: handbook reply absorbed, convention injected)
 
 - The 2026-08-31 handoff came back adopted on both asks (their
