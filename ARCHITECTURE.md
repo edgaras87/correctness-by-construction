@@ -41,23 +41,27 @@ concept version names.
 Why shaped this way: ADR-0003 (versioning); several documents because
 the statement's own split is by chapter (Framing, Step 2).
 
-### Executions (`executions/`)
+### Executions (`starter/bundle/`)
 
 Responsibility: the derived layer — the five skills, their
-references, the startup snippet, and the cbc-run playbook a run
-repo copies at birth, covering the whole pipeline (cbc-framing →
-infra-establish / infra-serve → cbc-bootstrap → cbc-slice), each
-file pinned to the
-concept version it derives from or is checked against (ADR-0005).
+references, the startup snippet, the cbc-run playbook, and the
+birth scenario (in trial) a run repo copies at birth, covering the
+whole pipeline (cbc-framing → infra-establish / infra-serve →
+cbc-bootstrap → cbc-slice), each file pinned to the concept
+version it derives from or is checked against (ADR-0005).
 Content, not this repo's working arrangement: nothing here is
 installed in this repo's own `.claude/`, and the archive's agent
 definitions stayed behind (ADR-0006). Two skills carry copy-and-fill
 template masters in `templates/` beside their references, extracted
 from the first run's lived files; a run fills them and the filled
-file is the run's own (ADR-0008). The bundle doc
-(`executions/README.md`) states the birth mapping and the
-authoritative-vs-pinned rule.
-Why shaped this way: ADR-0004, ADR-0006, ADR-0008.
+file is the run's own (ADR-0008). The stay-home delivery docs sit
+beside the bundle, outside the copy set (ADR-0010): the starter doc
+(`starter/README.md`) states the birth mapping and the
+authoritative-vs-pinned rule; the install manual
+(`starter/installs/cbc.md`) is the birth procedure, peer of the
+handbook's `installs/default.md`.
+Why shaped this way: ADR-0004 (amended), ADR-0006, ADR-0008,
+ADR-0010.
 
 ## Invariants
 
@@ -84,7 +88,7 @@ Why shaped this way: ADR-0004, ADR-0006, ADR-0008.
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
-| `executions/` | The derived layer: skills + snippet a run copies at birth; `README.md` there is the bundle doc (ADR-0004) |
+| `starter/` | The delivery layout (ADR-0010): `bundle/` is the derived layer a run copies at birth (skills, snippet, playbook, scenario); `README.md` describes and maps; `installs/cbc.md` is the birth manual |
 | `docs/models/` | Handbook models, vendored pinned copies (ADR-0002) |
 | `docs/adr/` | Architecture decision records |
 | `devlog/` | Session-by-session work history |

@@ -1,8 +1,9 @@
 <!-- Draft — provisional, untested. Authored 2026-08-31 from the
      birth-scenario discussion (devlog of that date); it has never
      been walked. First walk: the next birth. Until a trial-closing
-     ADR adopts it, README.md's Birth section remains the procedure
-     of record — this draft changes only the order of introduction
+     ADR adopts it, the install manual (starter/installs/cbc.md)
+     remains the procedure of record — this draft changes only the
+     order of introduction
      and who commits what, nothing about which files copy or where
      they land. -->
 
@@ -21,14 +22,14 @@ Done from outside; the newborn cannot introduce its own boot.
    (engineering-handbook/starter/installs/pure.md, their
    ADR-0028), through its hygiene commit. By pointer — no step of
    that manual is restated here.
-2. Copy the bundle per README.md's table, plus this scenario to the
-   newborn's repo root, at one moment — one delivery, one pin. A
-   scenario at the root makes a birth in flight visible from a
-   clean clone, the change-plan convention's own argument. Nothing
-   is committed; the walk commits it in order.
+2. Copy the bundle per the starter README's table — this scenario
+   is in it, landing at the newborn's repo root, where a birth in
+   flight is visible from a clean clone (the change-plan
+   convention's own argument). One moment, one delivery, one pin.
+   Nothing is committed; the walk commits it in order.
 3. Merge cbc-startup-snippet.md into CLAUDE.md and delete the copy;
    append the bundle birth entry to .claude/decisions.md beside the
-   kit's (README.md Birth steps 3–4, unchanged).
+   kit's (install manual steps 3–4, unchanged).
 
 ## Walk — the newborn's first session
 
@@ -49,7 +50,7 @@ top-down, the log is the introduction.
    CbC-specific.
 
 Boundaries within a step are the newborn's Step 0 change-plan's
-call; correctness stays the Birth section's checklist, verified
+call; correctness stays the install manual's checklist, verified
 after Step 0 closes.
 
 ## Briefing — last, and outside
@@ -62,8 +63,8 @@ scenario ends here — nothing above it may mention the problem.
 
 This repo owns the trial, not the run. Each walk's divergences are
 recorded in this repo's devlog at the birth; the draft is revised
-after each walk. The trial closes with an ADR — adopt (the Birth
-section rewritten around the scenario, the snippet question
+after each walk. The trial closes with an ADR — adopt (the install
+manual rewritten around the scenario, the snippet question
 decided) or kill (this file deleted, the why in the ADR).
 
 Open, deliberately, deciding at trial close and not before:
