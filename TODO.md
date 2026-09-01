@@ -29,11 +29,16 @@
          things. Their own reply used the bare name in context and
          disambiguation cost a session detour. Suggest renaming
          one side; their call which.
+      3. FYI, no ask: our bundle now mirrors the starter shape —
+         starter/README.md describes and maps, installs/cbc.md is
+         the birth manual (the peer of their installs/default.md),
+         bundle/ ships (ADR-0010) — making their "the shape yours
+         mirrors" line true in both directions.
 - [ ] Re-birth under the scenario, after the bundle-side set
       closes: safe-reservations (born
       2026-08-30, zero project commits) stopped and discarded
       2026-08-31 — the birth design changed under it
-      (executions/birth-scenario.md trial); deleting the born repo
+      (starter/bundle/birth-scenario.md trial); deleting the born repo
       is the user's act, outside this repo. Surviving, held for
       the re-birth: the briefing (deliberately baseline-blind) —
       the re-birth takes it unchanged, so the scenario's first
@@ -65,10 +70,10 @@
       pin, specialized never weakened; our harvested middles
       (Define, Ground, harness Bootstrap, Slices) inserted
       unchanged; the ownership decision lands as the set's
-      Proposed ADR. The bundle README's playbook-usage lines
-      (table row "copied at Framing", Birth step 6) update in the
-      same set — deferred from the absorption set because the
-      master was still middles-shaped.
+      Proposed ADR. The playbook-usage lines (the starter README's
+      table row "copied at Framing", install manual step 6) update
+      in the same set — deferred from the absorption set because
+      the master was still middles-shaped.
 - [ ] Playbook overlap, fires at the next birth (return handoff
       item 6): the kit ships playbooks/backend-service.md, the
       bundle overlays cbc-run.md beside it — the born project holds
@@ -144,8 +149,9 @@
       lived.
 
 - [ ] Watch the first Step 0 walk for stub-vs-manual overlap
-      friction: the kit's PLAN Step 0 comment and starter/README
-      steps 3–7 partially restate each other. The user's instinct
+      friction: the kit's PLAN Step 0 comment and the handbook's
+      install manual (was starter/README steps 3–7, now
+      installs/pure.md) partially restate each other. The user's instinct
       is to slim the stub comment and carry the logic in the first
       prompt; counter-argument on record (2026-08-31 session): the
       prompt doesn't persist across sessions and the manual isn't
@@ -155,8 +161,8 @@
       with evidence.
 - [ ] Birth-walker skill for this repo's arrangement: a thin skill
       in .claude/skills/ that reads the two birth manuals at use
-      time (executions/README.md Birth section, which defers to the
-      handbook's starter/README.md) and walks them with review
+      time (starter/installs/cbc.md, which defers to the handbook's
+      installs/pure.md) and walks them with review
       stops — never restating the steps (the handbook's ADR-0014
       pointer idiom; a skill body that copies the manual is a
       second master). Trigger: distill it from the first lived
@@ -168,17 +174,8 @@
       candidate, and if both ever exist they walk composing manuals
       (kit first, bundle second), so shape them together, not
       derived twice — dual-noted on their birth-skill entry.
-      (2026-08-31) executions/birth-scenario.md is now this skill's
+      (2026-08-31) starter/bundle/birth-scenario.md is now this skill's
       precursor: the skill distills from the scenario once walks
       stabilize the draft, not from the manuals directly.
-- [ ] The bundle's not-copied boundary is weaker than the kit's:
-      the handbook keeps its manual outside the shipped directory
-      (starter/README.md beside kit/, their ADR-0016 — structural,
-      nothing drifts in by accident), while executions/README.md
-      sits among the files that copy and stays home only because
-      the table does not list it. Same effect for one file; if the
-      bundle ever grows more stay-home files, adopt the
-      directory-boundary shape (noticed 2026-08-30, comparing the
-      two manuals).
 
 ## Known issues (deferred deliberately — each entry: what, why accepted, when to revisit)
