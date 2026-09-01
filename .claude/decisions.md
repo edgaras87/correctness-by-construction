@@ -96,3 +96,18 @@
   Rejected: holding them for a retrospective this endless repo will
   not have (the fold-back-at-gate-closes practice, devlog
   2026-08-27, applied to the ledger for the first time).
+
+- 2026-09-01 change-plans convention updated in place from the
+  handbook @ 65dd7ee (their ADR-0027): rolling commit lists,
+  material-first step order, records steps planned by walking the
+  records table, in-set ADRs Proposed by default; requires gains
+  project-recording. First live-repo convention injection —
+  procedure hand-supplied in their return item 11, deliberately
+  unwritten on their side; our friction notes are the payload they
+  asked back.
+  Why: the vendored copy was stale against the convention now
+  governing our own change sets; the next set would have been
+  planned under superseded rules.
+  Rejected: waiting for the next birth (births refresh kit copies,
+  not a live repo's); re-deriving the changes locally (wrong tier —
+  the handbook authors method, we consume it pinned).
