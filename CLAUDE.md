@@ -24,6 +24,7 @@ it. Documents only — no code, no runs.
 | Noticed something, not doing it now | Backlog | TODO.md |
 | Session ending, or a dead end hit | Work history, dead ends | devlog/devlog.md |
 | Shipped something users can see | What changed, for users | CHANGELOG.md |
+| Something became true the outside should see | The front door: what this is, how to use it | README.md |
 | The system's shape changed | Shape of the system | ARCHITECTURE.md |
 | Agent setup changed | Decision, why, rejected options | .claude/decisions.md |
 
