@@ -1,7 +1,8 @@
 # 0004. Executions live as content under executions/
 
 Date: 2026-08-28
-Status: Accepted
+Status: Accepted (amended by ADR-0010, 2026-09-01: the executions'
+home moved to `starter/bundle/`; all else stands)
 
 ## Context
 
