@@ -1,7 +1,8 @@
 # 0011. Playbook step ownership: vendored endpoints, harvested middles
 
 Date: 2026-09-02
-Status: Proposed
+Status: Accepted (Proposed at the set's open; flipped at its final
+records commit, no boundary contradicted it)
 
 ## Context
 

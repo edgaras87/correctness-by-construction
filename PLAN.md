@@ -206,6 +206,7 @@ was met at Step 5.
 - ADR-0008: Templates live inside their skill (Step 6)
 - ADR-0009: CbC delivered as an overlay on the handbook kit
 - ADR-0010: The bundle gathers under starter/
+- ADR-0011: Playbook steps — vendored endpoints, harvested middles
 
 ---
 

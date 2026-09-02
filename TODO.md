@@ -8,7 +8,8 @@
 ## Now (current plan step)
 
 - [ ] Next handbook handoff — queued 2026-09-01, deliver when the
-      bundle-side set closes (more may accrue there). Two items:
+      moment-of-need set closes — the bundle-side work's remaining
+      half (more may accrue there). Four items:
       1. Injection friction log — the field data their return item
          11 asked back, from the first live convention injection
          (change-plans @ 65dd7ee): the copy is also a rename
@@ -34,7 +35,14 @@
          the birth manual (the peer of their installs/default.md),
          bundle/ ships (ADR-0010) — making their "the shape yours
          mirrors" line true in both directions.
-- [ ] Re-birth under the scenario, after the bundle-side set
+      4. Kit playbook base, Framing gate wording (cosmetic): the
+         middle-steps item's clause "written fresh here where the
+         project was born on this bare default" vendors verbatim
+         into typed playbooks (our cbc-run v2 carries it), where it
+         reads off-context — the conditional stays true, but a
+         neutral phrasing in the base would read clean in every
+         vendored copy. Their call.
+- [ ] Re-birth under the scenario, after the moment-of-need set
       closes: safe-reservations (born
       2026-08-30, zero project commits) stopped and discarded
       2026-08-31 — the birth design changed under it
@@ -54,26 +62,14 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Bundle-side set — unblocked 2026-09-01 by the handbook
-      reply; designed against the slimmed stubs and the starter
-      redesign (their ADR-0026/0028). Two halves, one set:
-      (a) Moment-of-need reintroduction: infra-establish gains the
-      README Prerequisites step when the ground stands,
-      cbc-bootstrap gains Run/Test when the harness is real, with
-      the section skeletons as template fragments inside each
-      skill (ADR-0008). Wording discipline (their return item 9):
-      restate the stub rule only in the adopted form — container
-      stays, direction goes.
-      (b) cbc-run playbook rebuilt as a full sequence on
-      playbooks/default.md's base: kit endpoint steps
-      (Bootstrap/Framing/Release) vendored with provenance and
-      pin, specialized never weakened; our harvested middles
-      (Define, Ground, harness Bootstrap, Slices) inserted
-      unchanged; the ownership decision lands as the set's
-      Proposed ADR. The playbook-usage lines (the starter README's
-      table row "copied at Framing", install manual step 6) update
-      in the same set — deferred from the absorption set because
-      the master was still middles-shaped.
+- [ ] Moment-of-need set — the bundle-side work's remaining half
+      (the playbook half landed 2026-09-02, ADR-0011):
+      infra-establish gains the README Prerequisites step when the
+      ground stands, cbc-bootstrap gains Run/Test when the harness
+      is real, with the section skeletons as template fragments
+      inside each skill (ADR-0008). Wording discipline (their
+      return item 9): restate the stub rule only in the adopted
+      form — container stays, direction goes.
 - [ ] Playbook overlap, fires at the next birth (return handoff
       item 6): the kit ships playbooks/backend-service.md, the
       bundle overlays cbc-run.md beside it — the born project holds
@@ -86,6 +82,10 @@
       sequences, one chosen and copied whole at birth — a CbC
       birth chooses cbc-run.md and the others stay uncopied.
       Confirm at the birth; still note the outcome both sides.
+      (2026-09-02) Now asserted on our side: ADR-0011 and the
+      install manual's step 3 state the choice explicitly. What
+      remains is the birth's confirmation and the handbook-side
+      note.
 
 ## Later / someday
 

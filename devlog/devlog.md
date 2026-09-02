@@ -6,6 +6,41 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-02  (session: cbc-run playbook rebuilt full-sequence)
+
+- The bundle-side work split at the user's "lets do now playbook":
+  this set is the playbook half alone (ADR-0011, the set's
+  Proposed ADR, flipped Accepted at this close); the moment-of-need
+  half stays queued as its own set. Ownership per step: Bootstrap,
+  Framing, Release vendored from the kit's playbooks/default.md
+  @ 65dd7ee, refreshed against the pin and never weakened; the
+  middles are ours, changed only by harvest. cbc-run-playbook.md
+  is v2, a full sequence, (CbC)-marked additions only; the old
+  Release-additions section dissolved into the vendored Step N.
+- En route: playbooks/TEMPLATE.md (pre-redesign generation,
+  unpinned since the birth commit) replaced by a pinned copy of
+  the kit base, same name as its master — the user asked whether
+  to rename; kept default.md because a pinned copy keeps its
+  master's name, and the naming collision resolves upstream via
+  the queued handoff item.
+- The real find of the set, from reading the composition
+  end-to-end while planning: the STEPS-region sed lives in the
+  handbook's installs/default.md — the manual ours *replaces* — 
+  and pure.md ends with a stepless plan, so a CbC birth had no
+  step that put the playbook into PLAN.md at all. installs/cbc.md
+  now carries the block itself (new step 3, cbc-run hardcoded),
+  Framing became confirm-not-copy, checklist and README row
+  updated. Constraint worth remembering: the sed takes first
+  "## Step" to EOF, so the playbook master must end at Step N.
+- At review: all paths in the stay-home docs made repo-rooted
+  (user: no relative paths). New handoff item 4 (cosmetic): the
+  kit Framing gate's "born on this bare default" clause vendors
+  off-context into typed playbooks.
+- Resume: the moment-of-need set (infra-establish README step,
+  cbc-bootstrap Run/Test step, skeletons as template fragments,
+  adopted wording only), then the re-birth; the handoff (now four
+  items) rides after the moment-of-need set closes.
+
 ## 2026-09-01  (session: bundle gathered under starter/)
 
 - Same day, second set: the delivery layout now mirrors the
