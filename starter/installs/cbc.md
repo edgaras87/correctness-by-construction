@@ -40,20 +40,20 @@ bundle overlays the method (ADR-0009). The sequence:
    source is the newborn's `playbooks/cbc-run.md`, landed at
    step 2; the kit's own playbooks stay in `playbooks/`,
    uncopied — a CbC birth chooses cbc-run.md (ADR-0011).
-4. Merge `cbc-startup-snippet.md` into the run's CLAUDE.md and
-   delete the copy — the stub agent is now the CbC project agent.
-5. Append the bundle's birth entry to `.claude/decisions.md`,
+4. Append the bundle's birth entry to `.claude/decisions.md`,
    beside the kit's: the date, this repo's commit at copy time,
    "pinned to concept v1". Mechanical, done at copy time like the
    kit's own pin fill — never left for the born agent to remember.
-6. Run the plan's Step 0 (bootstrap) as it directs. The
+5. Run the plan's Step 0 (bootstrap) as it directs. CLAUDE.md's
+   CbC section is the newborn's own writing at this step — derived
+   from `concept/`, no text supplied by the bundle (ADR-0012). The
    bundle files need no Step 0 decisions of their own: the kit's
-   commit-messages rule already scopes them — the skills and
-   CLAUDE.md's merged section are arrangement (agent commits);
-   `concept/` and `playbooks/cbc-run.md` are project content and
-   land with the records. State this in the Step 0 change-plan;
-   do not re-derive it per birth.
-7. At Framing, the step's gates are met *via* cbc-framing — the
+   commit-messages rule already scopes them — the skills and every
+   CLAUDE.md edit are arrangement (agent commits); `concept/` and
+   `playbooks/cbc-run.md` are project content and land with the
+   records. State this in the Step 0 change-plan; do not re-derive
+   it per birth.
+6. At Framing, the step's gates are met *via* cbc-framing — the
    intent, definition, and registry are the problem statement,
    success criteria, and out-of-scope in the method's richer form —
    and the middle-steps gate item is confirmation, not authoring:
@@ -68,8 +68,9 @@ every item below is a verifiable fact:
 - PLAN.md's STEPS region holds the playbook's full sequence
   (Step 0 through Step N, no marker left), and the "Steps from:"
   line names `playbooks/cbc-run.md` at the copied version.
-- CLAUDE.md carries the snippet's content with its pin comment;
-  the snippet copy is deleted.
+- CLAUDE.md's CbC section is the newborn's own — derived at
+  Step 0 from `concept/`, no text merged in at copy time
+  (ADR-0012).
 - `.claude/decisions.md` carries both birth entries: the kit's
   (handbook commit) and the bundle's (this repo's commit, concept
   v1).

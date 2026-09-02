@@ -5,7 +5,13 @@
      import: none — verbatim below this header.
      Re-derived 2026-08-29: the framing exports' paths — they live
      under docs/system/ as intent.md, definition.md, registry.md
-     (cbc-framing's layout re-derivation). -->
+     (cbc-framing's layout re-derivation).
+     Withheld from births 2026-09-02 (ADR-0012): out of the bundle,
+     held here as a baseline. Written from theory before any birth;
+     the comparison point is the first walked birth's derived
+     CLAUDE.md section, and stay/retire/merge is decided at that
+     trial's close. Blind: not shown to newborns, like the
+     safe-reservations-v1 baseline. -->
 
 # CbC startup snippet
 

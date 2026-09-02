@@ -14,7 +14,10 @@
      playbooks/default.md @ 65dd7ee (ADR-0011) — Steps 0, 1, and N
      vendored from that base, middles unchanged; the old "Release
      additions" section dissolved into the vendored Step N as
-     (CbC)-marked gate items. -->
+     (CbC)-marked gate items.
+     2026-09-02 (same day): Step 0's CbC comment reworded — the
+     startup snippet is withdrawn and the newborn derives its own
+     CLAUDE.md section (ADR-0012). -->
 
 # Playbook: CbC run
 
@@ -55,10 +58,12 @@ safe-reservations (define step) 2026-08-30.
 
 <!-- CbC: the bundle files need no Step 0 decisions of their own —
      the kit's commit split already scopes them: the skills and
-     CLAUDE.md's merged section are arrangement (agent commits);
-     concept/ and playbooks/cbc-run.md are project content and land
-     with the records. State this in the Step 0 change-plan; do not
-     re-derive it per birth (starter/installs/cbc.md). -->
+     every CLAUDE.md edit are arrangement (agent commits); concept/
+     and playbooks/cbc-run.md are project content and land with the
+     records. CLAUDE.md's CbC section is this newborn's own writing,
+     derived from concept/ — no text is supplied (ADR-0012). State
+     this in the Step 0 change-plan; do not re-derive it per birth
+     (starter/installs/cbc.md). -->
 
 Goal: the container exists — repo, records, arrangement — before content.
 Gate:

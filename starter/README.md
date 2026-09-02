@@ -26,7 +26,6 @@ At a run repo's birth, copy:
 | `starter/bundle/infra-establish/` | `.claude/skills/infra-establish/` |
 | `starter/bundle/infra-serve/` | `.claude/skills/infra-serve/` |
 | `starter/bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
-| `starter/bundle/cbc-startup-snippet.md` | merged into the run's CLAUDE.md, then the copy deleted |
 | `starter/bundle/cbc-run-playbook.md` | `playbooks/cbc-run.md` — its full sequence then replaces the PLAN stub's STEPS region (starter/installs/cbc.md step 3) |
 | `starter/bundle/birth-scenario.md` | the newborn's repo root (in trial — kept or deleted per the trial's open point) |
 
@@ -48,18 +47,20 @@ the method.
 
 ## The contract
 
-The overlay assumes exactly three things of the kit — a CLAUDE.md
-to append to, a `playbooks/` directory, and the plan's
-STEPS-marker region with `playbooks/default.md` as its base
-(their ADR-0028) — and must not depend on anything else; a
-handbook kit update is checked against this list, nothing more.
+The overlay assumes exactly two things of the kit — a `playbooks/`
+directory, and the plan's STEPS-marker region with
+`playbooks/default.md` as its base (their ADR-0028) — and must not
+depend on anything else; a handbook kit update is checked against
+this list, nothing more. CLAUDE.md left the list with the startup
+snippet (ADR-0012): the newborn writes its own CbC section, so
+the overlay no longer appends to any kit file.
 The kit names the same contract from its side (the handbook's
 `starter/README.md` contract list, 2026-08-30; step item updated
 2026-09-01): the handbook states what may be assumed, each bundle
 states what it assumes, and a bundle needing a fourth surface
-widens the contract handbook-side first. The overlay touches one
-kit file (CLAUDE.md, by append) and otherwise adds files in paths
-the kit does not claim. Records stay the kit's: CbC events are
+widens the contract handbook-side first. The overlay touches no
+kit file — it only adds files in paths the kit does not claim
+(ADR-0012). Records stay the kit's: CbC events are
 recorded as ordinary project events under the kit's rules, and the
 method's own artifacts (`docs/system/`, the framing derivation)
 live beside the records, not in place of them.
