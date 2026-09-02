@@ -6,7 +6,7 @@
      explicit. Carries no "derives from" pin of its own — this is
      delivery instructions, not a derived execution.
      2026-09-01: split under the starter layout (ADR-0010) — the
-     Birth section moved to installs/cbc.md; this file describes. -->
+     Birth section moved to starter/installs/cbc.md; this file describes. -->
 
 # CbC starter — what a run repo copies at birth
 
@@ -20,27 +20,28 @@ At a run repo's birth, copy:
 
 | From here | Into the run repo |
 |---|---|
-| `concept/` (repo root) | `concept/` — read `00-cbc.md` first |
-| `bundle/cbc-framing/` | `.claude/skills/cbc-framing/` |
-| `bundle/cbc-slice/` | `.claude/skills/cbc-slice/` |
-| `bundle/infra-establish/` | `.claude/skills/infra-establish/` |
-| `bundle/infra-serve/` | `.claude/skills/infra-serve/` |
-| `bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
-| `bundle/cbc-startup-snippet.md` | merged into the run's CLAUDE.md, then the copy deleted |
-| `bundle/cbc-run-playbook.md` | `playbooks/cbc-run.md` — its middle steps are copied into PLAN.md at Framing |
-| `bundle/birth-scenario.md` | the newborn's repo root (in trial — kept or deleted per the trial's open point) |
+| `concept/` | `concept/` — read `00-cbc.md` first |
+| `starter/bundle/cbc-framing/` | `.claude/skills/cbc-framing/` |
+| `starter/bundle/cbc-slice/` | `.claude/skills/cbc-slice/` |
+| `starter/bundle/infra-establish/` | `.claude/skills/infra-establish/` |
+| `starter/bundle/infra-serve/` | `.claude/skills/infra-serve/` |
+| `starter/bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
+| `starter/bundle/cbc-startup-snippet.md` | merged into the run's CLAUDE.md, then the copy deleted |
+| `starter/bundle/cbc-run-playbook.md` | `playbooks/cbc-run.md` — its full sequence then replaces the PLAN stub's STEPS region (starter/installs/cbc.md step 3) |
+| `starter/bundle/birth-scenario.md` | the newborn's repo root (in trial — kept or deleted per the trial's open point) |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before
 its inputs exist, so an early copy is inert, and one delivery
-moment keeps the whole set at one pin. The run's middle plan steps
-come from the playbook, which carries the pipeline (cbc-framing →
-infra-establish → cbc-bootstrap → cbc-slice) as steps with gates;
-only re-entry (infra-serve) arrives unplanned, and its trigger
-covers that.
+moment keeps the whole set at one pin. The run's plan steps come
+from the playbook, which carries the full sequence (ADR-0011): the
+kit's endpoint steps vendored at their pin, and the pipeline
+(cbc-framing → infra-establish → cbc-bootstrap → cbc-slice) as its
+middles, each a step with gates; only re-entry (infra-serve)
+arrives unplanned, and its trigger covers that.
 
 The birth procedure itself is the install manual,
-`installs/cbc.md` — the peer of the handbook's
+`starter/installs/cbc.md` — the peer of the handbook's
 `starter/installs/default.md` in the two-birth composition
 (ADR-0009): their kit supplies the container, this bundle overlays
 the method.
