@@ -9,23 +9,103 @@
      name, repo description, each under a verdict). The merged
      sequence is this repo's judgment: the two parts were lived in
      different runs — checkout had no define phase, safe-reservations
-     was not kit-born. -->
+     was not kit-born.
+     2026-09-02: rebuilt as a full sequence on the kit's
+     playbooks/default.md @ 65dd7ee (ADR-0011) — Steps 0, 1, and N
+     vendored from that base, middles unchanged; the old "Release
+     additions" section dissolved into the vendored Step N as
+     (CbC)-marked gate items. -->
 
 # Playbook: CbC run
 
-<!-- Middle steps only — Bootstrap, Framing, and Release live in
-     the kit's PLAN stub. At the run's Framing, copy these steps
-     into PLAN.md after Framing and renumber; fill the specifics,
-     delete what this project has no use for, add what it needs.
-     After the project: fold the retrospective's lessons back into
-     the authoritative copy — by harvest (ADR-0007), never by
-     editing the run's pinned copy alone. -->
+<!-- The full sequence (ADR-0011). At birth this file is copied
+     whole to the run's playbooks/cbc-run.md, and the install
+     manual (starter/installs/cbc.md) replaces the PLAN stub's
+     STEPS region with everything from the first "## Step" down,
+     filling the stub's "Steps from:" line. Ownership per step:
+     kit-owned steps carry a vendor line and change only by refresh
+     against a new kit pin; (CbC)-marked items and the middle steps
+     are this repo's own and change only by harvest (ADR-0007) —
+     fold a run's retrospective lessons into this master, never
+     into the run's pinned copy alone. -->
 
-Playbook version: v1 (created 2026-08-30)
+Playbook version: v2 (created 2026-08-30 middles-only; rebuilt
+full-sequence 2026-09-02, ADR-0011)
 Last updated from project: checkout-system 2026-08-27;
 safe-reservations (define step) 2026-08-30.
 
-## Step: Define (naming)
+## Step 0: Bootstrap                                [~]
+
+<!-- Kit step — vendored from playbooks/default.md @ 65dd7ee;
+     additions marked (CbC) (ADR-0011). -->
+
+<!-- First session, this step still open: you are bootstrapping.
+     Take the briefing. Before touching anything else, draft
+     CHANGE-PLAN.md per the change-plans skill (shipped in the
+     kit). The plan's substance is the per-project content: what
+     each placeholder becomes, which records this project will
+     actually keep current (delete the rest), the birth entry's
+     date and handbook commit filled in .claude/decisions.md.
+     Later steps are Framing's to confirm or author (ADR-0028) —
+     the change-plan here covers Step 0 only.
+     Commit order for this set: plan open first, plan close last;
+     the project-records and agent-install commits land in either
+     order between them. The repo and its hygiene commit already
+     exist. The gates below are the exit — draft against them. -->
+
+<!-- CbC: the bundle files need no Step 0 decisions of their own —
+     the kit's commit split already scopes them: the skills and
+     CLAUDE.md's merged section are arrangement (agent commits);
+     concept/ and playbooks/cbc-run.md are project content and land
+     with the records. State this in the Step 0 change-plan; do not
+     re-derive it per birth (starter/installs/cbc.md). -->
+
+Goal: the container exists — repo, records, arrangement — before content.
+Gate:
+- [ ] Repo initialized; hygiene base files present.
+- [ ] Every placeholder filled, or explicitly deferred to a named
+      step (Commands and the stack overlay defer to Framing, which
+      confirms the steps that fill or delete them).
+- [ ] No fill-comment remains: where a comment says its content
+      replaces it, the content is there and the comment is not.
+      Every other stub comment is a standing rule — it stays.
+- [ ] Briefing committed: README purpose draft + devlog entry (a) —
+      names given here may change at Framing; that is what it is for.
+- [ ] Agent/project commit split held from the first commit: no
+      commit mixes CLAUDE.md / .claude/ with the records.
+- [ ] Birth entry in .claude/decisions.md filled: date and the
+      copy-time handbook commit.
+- [ ] (CbC) The bundle's birth entry beside the kit's in
+      .claude/decisions.md: this repo's commit at copy time,
+      "pinned to concept v1" — and the correct-birth checklist in
+      the install manual passes item by item.
+Notes:
+
+## Step 1: Framing                                  [ ]
+
+<!-- Kit step — vendored from playbooks/default.md @ 65dd7ee;
+     additions marked (CbC) (ADR-0011). -->
+
+<!-- CbC: these gates are met via the cbc-framing skill — the
+     intent, definition, and adversity registry are the problem
+     statement, success criteria, and out-of-scope in the method's
+     richer form (ADR-0009). The middle-steps gate item is
+     confirmation, not authoring: the steps below came whole with
+     this playbook at birth. -->
+
+Goal: know what we're building and why, before code.
+Gate:
+- [ ] One-paragraph problem statement in README.
+- [ ] Success criteria written (how we'll know it worked).
+- [ ] Out-of-scope list written.
+- [ ] Middle steps stand and the plan reads end-to-end once,
+      coarsely — the playbook's confirmed against the framed
+      problem where a typed one was copied in, written fresh here
+      where the project was born on this bare default; birth
+      materials brought with the briefing weigh in either way.
+Notes:
+
+## Step 2: Define (naming)                          [ ]
 
 Goal: the project's public identity decided, not defaulted.
 Gate:
@@ -40,7 +120,7 @@ Warnings from past runs:
   ("single-SKU · reserve → confirm | release") — the description is
   where a stranger first meets the promise.
 
-## Step: Ground / infrastructure  (infra-establish)
+## Step 3: Ground / infrastructure  (infra-establish)    [ ]
 
 Goal: services stood up, constrained to need, verified both ways.
 Gate:
@@ -63,7 +143,7 @@ Warnings from past runs:
   cheap here and priceless later: every immutability wall
   checkout-system grew (REVOKEs, column-grain grants) stood on it.
 
-## Step: Skeleton & bootstrap  (cbc-bootstrap)
+## Step 4: Skeleton & bootstrap  (cbc-bootstrap)    [ ]
 
 Goal: an empty but buildable, testable, runnable system wired to the
 real ground, with the evidence harness proven on one adversity.
@@ -86,7 +166,7 @@ Warnings from past runs:
   @AutoConfigureTestRestTemplate (also recorded in the bootstrap
   skill's walkthrough).
 
-## Step(s): Invariant slices  (cbc-slice, one step per stage)
+## Steps 5..N-1: Invariant slices  (cbc-slice, one step per stage)
 
 Goal: each registry slice closed by evidence that creates its
 adversity; ordering re-decided at each close, never assumed from
@@ -110,13 +190,21 @@ Warnings from past runs:
   steps the areas' replayable acts — recovery then falls out of the
   replay discipline instead of needing new machinery.
 
-## Release additions
+## Step N: Release                                  [ ]
 
-The kit stub's Release step gates records discipline; a running
-service adds:
-- [ ] Monitoring/alerts in place — unless observability was a
+<!-- Kit step — vendored from playbooks/default.md @ 65dd7ee;
+     additions marked (CbC) (ADR-0011). -->
+
+Gate:
+- [ ] CHANGELOG entry for the release.
+- [ ] README true for a stranger; any commands verified on a clean
+      machine.
+- [ ] Known issues filed in TODO.md, not just remembered.
+- [ ] (CbC) Monitoring/alerts in place — unless observability was a
       recorded exclusion (it was, for checkout-system's
       correctness-portfolio shape; a deployed service should not
       skip it).
-- [ ] Deploy/rollback procedure documented and tried once — same
-      caveat: locally-runnable-only was a recorded exclusion there.
+- [ ] (CbC) Deploy/rollback procedure documented and tried once —
+      same caveat: locally-runnable-only was a recorded exclusion
+      there.
+Notes:
