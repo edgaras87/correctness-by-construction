@@ -54,6 +54,20 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Variant B at the birth after this one (user's design,
+      2026-09-03): seed delivers AND commits — stub + bundle land
+      on main as delivery commits (the birth-seed receipt becoming
+      main) — and the newborn continues on top, its commits pure
+      fills/edits/derivations. Compare against this run's variant A
+      (seed uncommitted, walk commits the introduction) before the
+      procedure is fixed: A shows comprehension order in the log,
+      B gives a razor authorship split and a trivially scriptable
+      seed. Known risk to watch in B: nothing forces the reading —
+      the scenario or prompt must still mandate it, and the first
+      derivation commit is the only evidence it took. So the
+      trial-close ADR after THIS walk adopts provisionally at
+      most; the A-vs-B judgment closes after both are lived.
+
 - [ ] Fourth handbook handoff — field data accrued, no trigger
       set (rides at or after the re-birth trial, or when items
       accrue): the §8 field data from both lived runs this
