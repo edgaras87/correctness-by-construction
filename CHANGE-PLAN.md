@@ -39,17 +39,20 @@ copy against the pinned master first (expect identical — no local
 edits on record), overwrite, registry entry. One commit, skill
 delivery.
 
-**4. `chore(agent): register project-recording update @ f9371e4`**
-The first lived installed-path update, run per §8 step 4's
-by-argument paragraph: compare kit stubs at 4fe8083 and f9371e4,
-carry changed comment text our records lack. Expectation: nothing
-to carry — both replies were absorbed when they came (stub slimming
-2026-09-01, playbook rebuild 2026-09-02) — so what lands is the
-verification and the registry entry pinning project-recording
-@ f9371e4. Provisional: if the compare surfaces missed text, it
-lands project-side as its own `docs:` commit before this one (the
-two sides never share a commit, §8 step 3), and the plan is revised
-to say so.
+**4a. `docs: carry the README stub's projection comment`**
+The compare ran at the boundary and surfaced exactly one carry: the
+kit README stub's closing comment gained a standing rule ours lacks
+("Missing sections are not omissions: a section arrives when a
+step's gate makes it true — projection follows truth"). PLAN drift
+is all birth-shape (nothing retrofits into a living plan);
+CHANGELOG is specialized past the generalization (ADR-0003 answered
+what the placeholder asks). Project side, its own commit — the two
+sides never share one (§8 step 3).
+
+**4b. `chore(agent): register project-recording update @ f9371e4`**
+The registry entry closing the first lived installed-path update:
+the three findings, the new pin, and the friction gathered for the
+handoff.
 
 **5. `docs: sweep the installs/handbook.md rename`**
 Their ADR-0029: installs/default.md is installs/handbook.md. Living
