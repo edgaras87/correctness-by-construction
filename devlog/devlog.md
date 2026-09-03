@@ -6,6 +6,60 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-03  (session: the seed — cbc-newborn born)
+
+- The seed ran step by step with a review stop at each boundary,
+  under the birth scenario's ordering (trial): audit, kit copy,
+  hygiene commit, bundle copy, birth entries — stop. cbc-newborn
+  exists at exactly one commit (048c15c, hygiene base) plus a
+  deliberately dirty tree: "nothing is committed; the walk
+  commits it in order." All eight bundle rows verified
+  byte-identical to the masters; kit pin filled @ f9371e4; both
+  birth entries in .claude/decisions.md (the kit's names six
+  conventions — the absorption's prediction lived; the bundle's
+  @ 250bbcf, pinned to concept v1). The install manual's second
+  lived test, and the scenario seed's first.
+- The audit (pure.md step 0) found one bug, ours: starter/README
+  counted two template carriers, but cbc-framing's registry
+  master (2026-08-29) makes three — fixed before anything copied
+  (250bbcf), the fix-upstream-first rule lived. Handbook side
+  clean: HEAD still f9371e4 — the state today's absorption
+  already verified — and both contract surfaces hold (playbooks/
+  with default.md; the STEPS marker region).
+- Three manual findings for the fourth handoff, handbook-side,
+  none blocking: pure.md's copy block assumes the target dir
+  exists but no step creates it (mkdir -p needed first); "seven
+  of the kit's seventeen files" is stale — the kit holds 18; and
+  the install block fills <handbook-commit> but not the birth
+  entry's <YYYY-MM-DD> date — filled by hand here, per cbc.md's
+  "mechanical, done at copy time" spirit.
+- Noticed in passing: the old ~/IdeaProjects/safe-reservations is
+  already gone, so the rename-time precondition is met early.
+- The user wanted the seed inspectable in git — per-step diffs,
+  deletable — without polluting main's log (the walk's
+  introduction). Built as a receipt branch in the newborn:
+  birth-seed, from the hygiene root, five commits (kit remainder
+  → concept/ → skills → playbook+scenario → birth entries), never
+  merged; main's worktree restored to the same content untracked,
+  verified file-by-file. Delete anytime, or keep as the birth's
+  receipt. Trial evidence for the rebuild-script question: the
+  desire to see the seed as commits is an argument the trial-close
+  ADR should hear.
+- Second trial datum from the user: the instinct to delete the
+  kit's playbooks (default.md, backend-service.md) once cbc-run.md
+  lands — the born project holds two playbooks it will never use.
+  Held, not done: ADR-0011 and their closed overlap item say the
+  two coexist, and no kit file changes at copy. The walk may do it
+  as the newborn's own recorded decision; otherwise it waits for
+  the trial-close ADR.
+- Resume: the walk — a FRESH agent session inside
+  ~/IdeaProjects/cbc-newborn (never this repo's sessions: they
+  know the withheld baseline) reads birth-scenario.md at the
+  newborn's root and walks Concept → Derive → Map → Skills →
+  Records. This repo watches at phase closes and records
+  divergences here (trial protocol). Briefing last, unchanged,
+  brings the name safe-reservations.
+
 ## 2026-09-03  (session: third reply absorbed, arrangement current)
 
 - The reply came back same-day, everything adopted or answered:

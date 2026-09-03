@@ -37,6 +37,12 @@
       gone by the rename moment, not by birth. Placeholder-birth
       is itself a scenario finding — note it at the first walk,
       adopt at the trial-close ADR.
+      (2026-09-03) Seed done: cbc-newborn born at 048c15c, one
+      hygiene commit plus the deliberately dirty tree, all copies
+      verified byte-identical, both birth entries in. The old
+      safe-reservations is already deleted — rename precondition
+      met. Remains: the walk (a fresh session in the newborn —
+      never this repo's), then the briefing.
 - [ ] Watch at the re-birth's phase closes (ADR-0013's scope
       boundary): does the newborn update its own CLAUDE.md at the
       two parallel mid-run moments — the stack fact at bootstrap,
@@ -64,6 +70,11 @@
       the trap their missed-check implies, stated: reply
       absorption without a registry entry leaves the pin lying.
       Full detail in the two registry entries (2026-09-03).
+      From the seed (2026-09-03), three pure.md findings: the copy
+      block assumes the target dir exists (no mkdir step); "seven
+      of the kit's seventeen files" is stale (18 now); the install
+      block fills the hash but not the birth entry's date
+      placeholder.
 - [ ] Playbook overlap, fires at the next birth (return handoff
       item 6): the kit ships playbooks/backend-service.md, the
       bundle overlays cbc-run.md beside it — the born project holds
