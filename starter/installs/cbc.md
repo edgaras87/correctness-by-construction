@@ -1,6 +1,6 @@
 <!-- Split from the bundle doc 2026-09-01 (ADR-0010): the Birth
      section, now the install manual — peer of the handbook's
-     starter/installs/default.md. The describing side is
+     starter/installs/handbook.md. The describing side is
      starter/README.md. -->
 
 # Install: correctness by construction
@@ -22,7 +22,7 @@ bundle overlays the method (ADR-0009). The sequence:
 3. Replace the plan's STEPS region with the playbook's sequence —
    the handbook's mechanism (their ADR-0028), run against our
    playbook. The manual carrying their block
-   (their `starter/installs/default.md`) is the one this file replaces, so the
+   (their `starter/installs/handbook.md`) is the one this file replaces, so the
    block lives here too; the paths are pure.md's, same terminal
    session:
 

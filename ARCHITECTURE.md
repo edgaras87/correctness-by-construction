@@ -59,7 +59,7 @@ beside the bundle, outside the copy set (ADR-0010): the starter doc
 (`starter/README.md`) states the birth mapping and the
 authoritative-vs-pinned rule; the install manual
 (`starter/installs/cbc.md`) is the birth procedure, peer of the
-handbook's `installs/default.md`.
+handbook's `installs/handbook.md`.
 Why shaped this way: ADR-0004 (amended), ADR-0006, ADR-0008,
 ADR-0010.
 

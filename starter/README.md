@@ -41,7 +41,7 @@ arrives unplanned, and its trigger covers that.
 
 The birth procedure itself is the install manual,
 `starter/installs/cbc.md` — the peer of the handbook's
-`starter/installs/default.md` in the two-birth composition
+`starter/installs/handbook.md` in the two-birth composition
 (ADR-0009): their kit supplies the container, this bundle overlays
 the method.
 
