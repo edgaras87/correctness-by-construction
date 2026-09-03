@@ -140,3 +140,26 @@
   every future injection.
   Rejected: leaving it (the drift is cosmetic today, but currency
   is now a stated §8 requirement, not a judgment call).
+
+- 2026-09-03 Convention updated: project-recording @ f9371e4 (was
+  @ 4fe8083, the birth pin) — the first lived installed-path update
+  anywhere, per §8 step 4's by-argument paragraph. Compare ran kit
+  stub against kit stub across the span. Findings: PLAN stub drift
+  is birth-shape only (STEPS region, ADR-0028 — nothing retrofits
+  into a living plan); CHANGELOG stub already answered here,
+  specialized past its new placeholder (ADR-0003); README stub's
+  closing comment gained the projection rule, carried into our
+  README as its own project-side commit (§8 step 3 — sides never
+  share a commit). Friction for the next handoff: the by-argument
+  paragraph held, but "compare kit stub to kit stub" spans three
+  record stubs and the reader must know which records the
+  convention ships through — a stub manifest per installed
+  convention would make the compare mechanical; and a living
+  record that already absorbed the change via a reply reads as
+  "nothing to carry", so the update is mostly verification when
+  the reply loop is healthy — worth §8 saying so.
+  Why: their reply flagged the chain check we missed (change-plans
+  requires project-recording); currency is now a §8 requirement.
+  Rejected: treating reply absorption as the update (it leaves the
+  registry pin stale — the registry would say 4fe8083 while the
+  records lived at f9371e4).
