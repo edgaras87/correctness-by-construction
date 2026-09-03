@@ -47,6 +47,7 @@ it. Documents only — no code, no runs.
 - Multi-commit work — `.claude/skills/change-plans/`
 - Artifact kinds — `.claude/skills/artifact-kinds/`
 - Hygiene — `.gitignore` `.gitattributes` `.editorconfig` (repo-hygiene)
+- Convention arrivals — `.claude/skills/convention-lifecycle/`
 
 <!-- SIZE BUDGET: this file is loaded in full, on every task, relevant
      or not. It is the only text that costs something even when it is

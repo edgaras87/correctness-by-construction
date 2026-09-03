@@ -111,3 +111,19 @@
   Rejected: waiting for the next birth (births refresh kit copies,
   not a live repo's); re-deriving the changes locally (wrong tier —
   the handbook authors method, we consume it pinned).
+
+- 2026-09-03 Convention injected: convention-lifecycle @ f9371e4
+  (their ADR-0030; ships in the kit since ADR-0023's condition
+  landed). Sixth convention here; first injection run under
+  written §8 — the procedure our 2026-09-01 friction notes built.
+  Friction gathered for the next handoff: our CLAUDE.md deleted
+  the kit's placeholder line (as the stub permits), so "row at the
+  placeholder line" had no anchor — row landed at the list's end
+  per §8's own reading, which differs from where the kit stub
+  places this convention's row (before Hygiene); born and injected
+  repos will disagree on row order.
+  Why: taken now, not at leisure — the re-birth's newborn holds
+  six conventions, and this repo running §8 first hands the newborn
+  a procedure with two lived runs behind it.
+  Rejected: waiting for the re-birth (the reply's "not urgent") —
+  our own arrangement would sit behind the kit we deliver on.
