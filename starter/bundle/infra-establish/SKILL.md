@@ -18,7 +18,11 @@ description: Establish a framed backend project's infrastructure ground - decide
      Re-derived 2026-08-29: the framing exports' paths — they live
      under docs/system/ as intent.md, definition.md, registry.md
      (cbc-framing's layout re-derivation); Stage 0 updated to
-     match. -->
+     match.
+     Changed 2026-09-03 (ADR-0013): records-and-outputs gains the
+     README Prerequisites projection — fired at the exit, skeleton
+     in templates/readme-prerequisites.md; the walk's step 7 carries
+     the direction. -->
 
 # Infra establish — from no infrastructure to a governed, verified ground
 
@@ -123,6 +127,10 @@ but a silent deviation poisons the record.
 - `operator-manual.md` — the operator's full stand-up-and-use truth,
   written **from the lived setup, contemporaneously** — never
   reconstructed later.
+- README `Prerequisites` section — projected at the exit, when the
+  ground stands: the environment lines only, merged and filled from
+  `templates/readme-prerequisites.md` (ADR-0013). The stack's line
+  arrives at bootstrap, not here. Direction in the walk's step 7.
 - Optional, only if the project keeps public docs: a setup guide
   derived from the operator manual — a projection, never a second
   master; re-derived when the manual changes.

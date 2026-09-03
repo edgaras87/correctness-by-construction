@@ -5,7 +5,10 @@
      @ fe0075d (imported 2026-08-28, PLAN Step 4). Changes on
      import: moved — from .claude/skills/references/, beside rather
      than inside the skill directory (same normalization as the
-     SKILL.md). Content verbatim below this header. -->
+     SKILL.md). Content verbatim below this header.
+     Changed 2026-09-03 (ADR-0013): step 7 gains the README
+     Prerequisites projection — the section arrives when the ground
+     stands, skeleton in templates/readme-prerequisites.md. -->
 
 # The establishment walk — step by step
 
@@ -137,6 +140,18 @@ a stated need, every exclusion to a stated why? Do both verifications
 pass, recorded from actual output? Do both manuals stand, written
 from lived work? Could a reader stand the same ground up on their own
 machine from the operator manual alone? Any no → the walk isn't done.
+
+When the exit test passes, the ground's truth projects outward: the
+run's README gains its **Prerequisites** section — the environment
+lines a stranger's machine needs before this ground can stand,
+derived from the operator manual, carrying only what a stranger
+needs in hand and linking the manual for the rest. Skeleton:
+`templates/readme-prerequisites.md` in this skill — merge, fill,
+and the section is the run's own (ADR-0008). The stack's own
+prerequisite line is **not** written here: its fact is born at
+bootstrap, whose skill carries it (ADR-0013). The kit's README stub
+ships without the section — container stays, direction goes — and
+the section arrives now because this gate made it true.
 
 If the project keeps public docs: derive the setup guide from the
 operator manual now — a projection, never a second master.
