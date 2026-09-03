@@ -7,41 +7,16 @@
 
 ## Now (current plan step)
 
-- [ ] Next handbook handoff — queued 2026-09-01; its trigger fired
-      2026-09-03 (the moment-of-need set closed, the bundle-side
-      work is whole) — deliver now. Four items:
-      1. Injection friction log — the field data their return item
-         11 asked back, from the first live convention injection
-         (change-plans @ 65dd7ee): the copy is also a rename
-         (CONVENTION.md → SKILL.md); the byte-identity claim
-         needed a diff mandated before overwrite; whether an
-         injection needs a change-plan is unstated (we judged no:
-         independent mechanical commits); whether the injection
-         entry may ride the overwrite commit is unstated (our
-         decisions log's standing rule says no); the records-table
-         row text came without a table position; frontmatter
-         compatibility worked only because the convention file is
-         authored skill-shaped — a written procedure must check
-         each of these, not inherit our luck.
-      2. default.md naming collision: starter/installs/default.md
-         (the handbook's own direction — a bundle manual) and
-         starter/kit/playbooks/default.md (the bare sequence — the
-         absence of direction) share a name meaning opposite
-         things. Their own reply used the bare name in context and
-         disambiguation cost a session detour. Suggest renaming
-         one side; their call which.
-      3. FYI, no ask: our bundle now mirrors the starter shape —
-         starter/README.md describes and maps, installs/cbc.md is
-         the birth manual (the peer of their installs/default.md),
-         bundle/ ships (ADR-0010) — making their "the shape yours
-         mirrors" line true in both directions.
-      4. Kit playbook base, Framing gate wording (cosmetic): the
-         middle-steps item's clause "written fresh here where the
-         project was born on this bare default" vendors verbatim
-         into typed playbooks (our cbc-run v2 carries it), where it
-         reads off-context — the conditional stays true, but a
-         neutral phrasing in the base would read clean in every
-         vendored copy. Their call.
+- [ ] Third handbook handoff delivered 2026-09-03 (their temp/,
+      the established channel; queued 2026-09-01) — awaiting the
+      reply, which blocks nothing here. Four items: the injection
+      friction log (their return item 11's field data), the
+      default.md naming collision (ask, their call), the two-way
+      mirror FYI, the Framing-gate wording (cosmetic). Full text
+      rides in temp/ until processed; the item details live in the
+      devlog entries that queued them (2026-08-31 → 2026-09-02).
+      When the reply lands: absorb under a change-plan if it moves
+      our ground, delete both temp/ copies.
 - [ ] Re-birth under the scenario — unblocked 2026-09-03 (the
       moment-of-need set closed): safe-reservations (born
       2026-08-30, zero project commits) stopped and discarded

@@ -34,12 +34,18 @@
   which adoption is not.
 - Two queued triggers fired at this close: the handbook handoff
   (four items, TODO Now) and the re-birth are both unblocked.
-- Resume: deliver the handoff (user-side, under the handbook's
-  records); then the re-birth walks the scenario — three
-  experiments riding one run now watched from here (walked birth,
-  derived arrangement vs the blind snippet baseline, blind
-  replication vs safe-reservations-v1), trial readings at phase
-  closes, the CLAUDE.md watch item among them.
+- The third handoff delivered same-session, the temp/-to-temp/
+  channel as before: friction log, naming ask, mirror FYI, gate
+  wording — opened with "nothing blocks us" so the reply can be at
+  their leisure, closed with the no-action context block (three
+  ADRs, contract at two assumptions and zero touches, re-birth
+  next).
+- Resume: the re-birth walks the scenario — three experiments
+  riding one run now watched from here (walked birth, derived
+  arrangement vs the blind snippet baseline, blind replication vs
+  safe-reservations-v1), trial readings at phase closes, the
+  CLAUDE.md watch item among them. The handbook reply is awaited,
+  non-blocking; both temp/ copies die when it is absorbed.
 
 ## 2026-09-02  (session: snippet withdrawn, birth derives)
 
