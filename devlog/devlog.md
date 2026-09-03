@@ -52,6 +52,19 @@
   two coexist, and no kit file changes at copy. The walk may do it
   as the newborn's own recorded decision; otherwise it waits for
   the trial-close ADR.
+- Two more trial datums from the user, post-seed. First: reading
+  the lived birth, they independently re-derived the scenario's
+  seed/walk/briefing split (outside-mechanical, inside-derived,
+  handover at the problem) — confirmation the ordering is natural,
+  not just written; the boundary is who commits, and the halves
+  now mirror the repo's two histories (birth-seed branch = what
+  arrived, main's log = how it was understood) — candidate
+  vocabulary for the rewritten manual. Second, on the
+  rebuild-script question: leaning against a script — the walked
+  seed's value was the checking (the audit caught a real bug, the
+  review stops caught manual gaps); a script would replay the copy
+  but not the verification. Both decided at the trial-close ADR,
+  not now.
 - Resume: the walk — a FRESH agent session inside
   ~/IdeaProjects/cbc-newborn (never this repo's sessions: they
   know the withheld baseline) reads birth-scenario.md at the
