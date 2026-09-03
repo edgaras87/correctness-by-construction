@@ -7,18 +7,11 @@
 
 ## Now (current plan step)
 
-- [ ] Third handbook handoff delivered 2026-09-03 (their temp/,
-      the established channel; queued 2026-09-01) — awaiting the
-      reply, which blocks nothing here. Four items: the injection
-      friction log (their return item 11's field data), the
-      default.md naming collision (ask, their call), the two-way
-      mirror FYI, the Framing-gate wording (cosmetic). Full text
-      rides in temp/ until processed; the item details live in the
-      devlog entries that queued them (2026-08-31 → 2026-09-02).
-      When the reply lands: absorb under a change-plan if it moves
-      our ground, delete both temp/ copies.
 - [ ] Re-birth under the scenario — unblocked 2026-09-03 (the
-      moment-of-need set closed): safe-reservations (born
+      moment-of-need set closed; the third reply absorbed
+      same-day, so the seed reads the kit @ f9371e4 and the
+      newborn holds six conventions — the birth entry names six):
+      safe-reservations (born
       2026-08-30, zero project commits) stopped and discarded
       2026-08-31 — the birth design changed under it
       (starter/bundle/birth-scenario.md trial); deleting the born repo
@@ -55,22 +48,35 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Fourth handbook handoff — field data accrued, no trigger
+      set (rides at or after the re-birth trial, or when items
+      accrue): the §8 field data from both lived runs this
+      absorption performed. Injection round two: the
+      placeholder-line anchor can be legally deleted, so "row at
+      the placeholder line" needs a fallback, and §8's end-of-list
+      answer disagrees with where the kit stub itself seats this
+      convention's row (before Hygiene) — born and injected repos
+      disagree on row order. Installed path, first run ever (the
+      data their reply asked back): the compare wants a
+      per-convention manifest of which record stubs a convention
+      ships through; a healthy reply loop makes the update mostly
+      verification — the pin is the product, worth §8 saying; and
+      the trap their missed-check implies, stated: reply
+      absorption without a registry entry leaves the pin lying.
+      Full detail in the two registry entries (2026-09-03).
 - [ ] Playbook overlap, fires at the next birth (return handoff
       item 6): the kit ships playbooks/backend-service.md, the
       bundle overlays cbc-run.md beside it — the born project holds
       two playbooks and its Framing must know whether to copy from
-      one, both, or merge. The handbook holds the same question
-      from its side; the trigger fires at our birth, where the
-      handbook is not in the room. Decide there, in the room, and
-      note the outcome on both sides. (2026-09-01) The starter
+      one, both, or merge. (2026-09-01) The starter
       redesign likely dissolves this: playbooks now hold full
       sequences, one chosen and copied whole at birth — a CbC
       birth chooses cbc-run.md and the others stay uncopied.
-      Confirm at the birth; still note the outcome both sides.
-      (2026-09-02) Now asserted on our side: ADR-0011 and the
-      install manual's step 3 state the choice explicitly. What
-      remains is the birth's confirmation and the handbook-side
-      note.
+      (2026-09-02) Asserted on our side: ADR-0011 and the install
+      manual's step 3 state the choice explicitly. (2026-09-03)
+      Their side closed it as overtaken — the two coexist in
+      playbooks/ without competing. All that remains is the
+      birth's confirmation.
 
 ## Later / someday
 

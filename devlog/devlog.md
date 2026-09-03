@@ -6,6 +6,43 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-03  (session: third reply absorbed, arrangement current)
+
+- The reply came back same-day, everything adopted or answered:
+  our friction log is now their convention-lifecycle §8
+  (ADR-0030), the naming collision resolved their side —
+  installs/default.md is installs/handbook.md (ADR-0029), manuals
+  named by bundle, the playbook keeps default — the mirror noted,
+  the gate wording deferred with candidate text ready. Handbook
+  moved 65dd7ee → f9371e4; the kit's playbooks/ verifiably did not
+  move, so our vendored pins stay honest untouched.
+- The absorption ran §8 three times in one set, each a first: the
+  sixth convention injected by the procedure our own friction
+  built (convention-lifecycle, first run of written §8); the
+  chain-currency check caught artifact-kinds one line stale —
+  their reply's missed-check lesson, lived the same day it
+  arrived; and the first installed-path update anywhere ran on
+  project-recording — compare kit stub to kit stub, one comment
+  carried (the README projection rule), CHANGELOG already
+  specialized past its generalization, PLAN drift birth-shape
+  only. The registry now pins all three at f9371e4.
+- Fresh field data queued for the fourth handoff (no trigger
+  set): the placeholder-line anchor can be legally deleted so §8's
+  row-position rule needs a fallback — and disagrees with the kit
+  stub's own seating; the installed compare wants a per-convention
+  stub manifest; a healthy reply loop makes the update mostly
+  verification — the pin is the product.
+- One plan revision, fired as reserved: the provisional installed-
+  update step split when the compare surfaced its one carry —
+  planned refinement, the §5 road walked for the first time here.
+- Resume: seed cbc-newborn — installs/cbc.md steps 1–4 from here
+  (mechanical; stop before anything derivational), kit read
+  @ f9371e4, newborn holds six conventions; then the walk goes to
+  a fresh session in the newborn (this repo's sessions know the
+  withheld baseline); briefing last, unchanged, brings the name
+  safe-reservations. Both temp/ copies deleted at this set's
+  close.
+
 ## 2026-09-03  (session: moment-of-need set — README direction homed)
 
 - The bundle-side work's second half landed (ADR-0013, the set's
