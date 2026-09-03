@@ -40,12 +40,26 @@
   their leisure, closed with the no-action context block (three
   ADRs, contract at two assumptions and zero touches, re-birth
   next).
-- Resume: the re-birth walks the scenario — three experiments
-  riding one run now watched from here (walked birth, derived
-  arrangement vs the blind snippet baseline, blind replication vs
-  safe-reservations-v1), trial readings at phase closes, the
-  CLAUDE.md watch item among them. The handbook reply is awaited,
-  non-blocking; both temp/ copies die when it is absorbed.
+- Re-birth path decided with the user: born as cbc-newborn, a
+  placeholder — the pre-briefing walk is problem-agnostic, so the
+  placeholder keeps Derive problem-blind; the briefing brings the
+  name and the rename sweep (kit-sanctioned). Also stated as
+  protocol: the walk must be a fresh session in the newborn — this
+  repo's sessions have read the withheld baseline, so a derivation
+  done here would measure memory, not concept/'s legibility. The
+  seed alone may run from here (mechanical, precedent 2026-08-30).
+- Resume: seed waits on the handbook reply at the user's call —
+  the reply may move the kit under us (the naming ask touches
+  files the seed copies and our playbook pins), and the first
+  birth died of exactly that. When the reply lands: absorb it,
+  refresh pins if it moved anything, then seed cbc-newborn
+  (installs/cbc.md steps 1–4, stop before anything derivational);
+  the walk goes to a fresh session in the newborn; briefing last,
+  unchanged, brings the name safe-reservations. Three experiments
+  ride the run (walked birth, derived arrangement vs the blind
+  snippet baseline, blind replication vs v1), trial readings at
+  phase closes, the CLAUDE.md watch item among them. Both temp/
+  copies die when the reply is absorbed.
 
 ## 2026-09-02  (session: snippet withdrawn, birth derives)
 
