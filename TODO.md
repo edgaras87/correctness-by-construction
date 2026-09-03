@@ -34,6 +34,16 @@
       records the deltas here, and judges run 1's held insights at
       those readings (their named promotion path). The baseline at
       ~/IdeaProjects/safe-reservations-v1 stays read-only.
+      Decided 2026-09-03: born under a placeholder name,
+      cbc-newborn — everything pre-briefing is problem-agnostic,
+      so the name would claim an identity that does not exist yet,
+      and a domain-naming name would leak the problem into the
+      Derive step; the briefing brings the name and the rename
+      sweep (kit-sanctioned: "names given here may change at
+      Framing"). The old ~/IdeaProjects/safe-reservations must be
+      gone by the rename moment, not by birth. Placeholder-birth
+      is itself a scenario finding — note it at the first walk,
+      adopt at the trial-close ADR.
 - [ ] Watch at the re-birth's phase closes (ADR-0013's scope
       boundary): does the newborn update its own CLAUDE.md at the
       two parallel mid-run moments — the stack fact at bootstrap,
