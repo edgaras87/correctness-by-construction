@@ -51,4 +51,7 @@ recorded way instead of living in a head and scattered notes.
 | Devlog | [devlog/](devlog/) | Day-to-day work, dead ends, open questions |
 
 <!-- Keep this file short and CORRECT. Live status belongs in PLAN.md,
-     not here. Release gate: README verified on a clean machine. -->
+     not here. Missing sections (Prerequisites, Run, Test, …) are not
+     omissions: a section arrives when a step's gate makes it true —
+     projection follows truth. Release gate: README verified on a
+     clean machine. -->
