@@ -127,3 +127,16 @@
   a procedure with two lived runs behind it.
   Rejected: waiting for the re-birth (the reply's "not urgent") —
   our own arrangement would sit behind the kit we deliver on.
+
+- 2026-09-03 Convention updated: artifact-kinds @ f9371e4 (was
+  @ 4fe8083, the birth pin). One drift line: the playbook kind's
+  exemplar, starter/kit/playbooks/TEMPLATE.md → playbooks/default.md
+  (their ADR-0028 trail). Caught by §8 step 2's chain-currency
+  check while injecting convention-lifecycle, whose requires names
+  artifact-kinds — the reply's missed-check lesson, lived the same
+  day it arrived. Compare-first ran clean: our copy was identical
+  to the master at the pin, no local edits, overwrite silent-safe.
+  Why: a stale requires-chain member fails the §8 evaluation for
+  every future injection.
+  Rejected: leaving it (the drift is cosmetic today, but currency
+  is now a stated §8 requirement, not a judgment call).

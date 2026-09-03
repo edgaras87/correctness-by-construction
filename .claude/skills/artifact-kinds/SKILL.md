@@ -88,7 +88,8 @@ A reusable script for a *type* of undertaking: step sequence, gates,
 accumulated warnings. Copied per instance, never executed in place.
 Coordinates: executes; template.
 Question: *do you copy it to use it?* Yes → playbook.
-Exemplar: starter/kit/playbooks/TEMPLATE.md.
+Exemplar: playbooks/default.md — the kit's copy in this handbook,
+your own in a born project.
 
 ### plan
 
