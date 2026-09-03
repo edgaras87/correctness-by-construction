@@ -8,7 +8,11 @@ description: Bootstrap a framed project's system on an established ground - deci
      archive/cbc/system-design-method agents-from-practice/
      system-bootstrap/.claude/skills/cbc-bootstrap/SKILL.md
      @ fe0075d (imported 2026-08-28, PLAN Step 4). Changes on
-     import: none — verbatim below this header. -->
+     import: none — verbatim below this header.
+     Changed 2026-09-03 (ADR-0013): Stage 5 gains the README Run and
+     Test projection — the sections (and the stack's Prerequisites
+     line) arrive when the harness is real, skeleton in
+     templates/readme-run-test.md. -->
 
 # cbc-bootstrap — bring a framed system to life
 
@@ -180,6 +184,15 @@ by member:
 Then write the exit records in the project's own docs: the milestone
 certified, run and test commands, operator manual linked, an honest "no
 business behavior yet", the probe's death scheduled at the first slice.
+
+The certified facts also project into the README (ADR-0013): the
+**Run** and **Test** sections, plus the stack's line joining the
+Prerequisites section the establishment opened — merged and filled
+from `templates/readme-run-test.md`. Run ends in the lived proof of
+life; Test is the one standard test command, verified structurally at
+certification. The kit's README stub ships without these sections —
+container stays, direction goes — and they arrive now because the
+harness is real.
 
 **Exit test:** the skeleton runs on the real ground as the runtime identity
 alone, and the harness demonstrably creates the chosen adversity through the
