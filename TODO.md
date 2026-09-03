@@ -97,6 +97,14 @@
       from the masters (2026-08-31 discussion; the ADR-0009
       objection weakens when the stub is derived by a written
       scenario, but the staleness cost stands).
+      (2026-09-02) Rebuild-script variant, user's proposal: not a
+      stored cache but a script replaying the seed fresh from the
+      two pins at each birth — no staleness at all, so that
+      objection dies for the seed half. What it cannot settle:
+      whether the walk's commits belong to a script or to the
+      newborn (the derivation experiment, ADR-0012). The trial's
+      closing ADR decides how much becomes script — the scenario's
+      trial protocol carries the question.
 - [ ] First lived use of the practice skills in their imported form
       is owed (archive STATUS: they are distillations, exercised as
       agent-driven skills never, as skills-without-agents never) —

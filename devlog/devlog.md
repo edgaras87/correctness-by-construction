@@ -6,6 +6,41 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-02  (session: snippet withdrawn, birth derives)
+
+- Same day, second set, from the user's redesign of the birth:
+  cbc-startup-snippet.md leaves the bundle (ADR-0012, the set's
+  Proposed ADR, flipped Accepted at this close). It was the
+  bundle's last theory-only artifact — written in the archive
+  before any birth, never checked against a run. Now held blind at
+  docs/baselines/; the newborn derives its own CLAUDE.md section,
+  README purpose, and stub fills after reading concept/ first, and
+  the first walked birth's derived section is compared against the
+  baseline at trial close — stay, retire, or merge, on evidence.
+  Withdrawal is unconditional: manual and scenario both derive
+  (two procedures of record must not disagree about what a birth
+  is). The overlay contract dropped to two kit assumptions and
+  zero kit-file touches.
+- The scenario reordered around it (the user's order, marked
+  provisional): Concept → Derive → Map → Skills → Records,
+  briefing last unchanged. The playbook sed placed in Map — a
+  read introduction over a silent seed fact — first walk decides.
+  The known risk, stated in the ADR: the derived arrangement may
+  miss the snippet's human-gates and standing guards and the run
+  pays live; that outcome is itself the answer, and attribution
+  between the two experiments riding one run (walked birth,
+  derived arrangement) is argued in the devlog at the boundary
+  where a divergence is seen.
+- Also this set: the user's rebuild-script idea recorded on the
+  prebuilt-stub TODO item — a script replaying the seed fresh
+  from the two pins kills the staleness objection; how much of a
+  birth becomes script is the trial-close ADR's question now.
+- Resume: unchanged queue otherwise — the moment-of-need set
+  (skills' README/Run-Test steps, adopted wording only), then the
+  re-birth walks the scenario (now: derive experiment included,
+  baseline blind), trial readings at phase closes; the handoff
+  (four items) rides after the moment-of-need set closes.
+
 ## 2026-09-02  (session: cbc-run playbook rebuilt full-sequence)
 
 - The bundle-side work split at the user's "lets do now playbook":

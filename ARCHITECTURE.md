@@ -44,7 +44,7 @@ the statement's own split is by chapter (Framing, Step 2).
 ### Executions (`starter/bundle/`)
 
 Responsibility: the derived layer — the five skills, their
-references, the startup snippet, the cbc-run playbook, and the
+references, the cbc-run playbook, and the
 birth scenario (in trial) a run repo copies at birth, covering the
 whole pipeline (cbc-framing → infra-establish / infra-serve →
 cbc-bootstrap → cbc-slice), each file pinned to the concept
@@ -88,7 +88,8 @@ ADR-0010.
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
-| `starter/` | The delivery layout (ADR-0010): `bundle/` is the derived layer a run copies at birth (skills, snippet, playbook, scenario); `README.md` describes and maps; `installs/cbc.md` is the birth manual |
+| `starter/` | The delivery layout (ADR-0010): `bundle/` is the derived layer a run copies at birth (skills, playbook, scenario); `README.md` describes and maps; `installs/cbc.md` is the birth manual |
+| `docs/baselines/` | Held baselines — theory artifacts withheld from delivery, blind, compared against lived results (ADR-0012) |
 | `docs/models/` | Handbook models, vendored pinned copies (ADR-0002) |
 | `docs/adr/` | Architecture decision records |
 | `devlog/` | Session-by-session work history |
