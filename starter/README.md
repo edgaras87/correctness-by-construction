@@ -67,12 +67,14 @@ live beside the records, not in place of them.
 
 Two skills (infra-establish, cbc-bootstrap) carry a `templates/`
 directory beside their references — copy-and-fill masters for the
-repeating ground and harness files (ADR-0008). They ride the skill
-copy at birth like everything else. At use, the run copies a
-template to the path its walkthrough names and fills the
-placeholders; the filled file becomes the run's own — not a pinned
-copy — and the run's infrastructure contract notes it was filled
-from the skill's templates. Fills never harvest back; a change to a
+repeating ground and harness files, plus the README section
+fragments each skill projects at its moment of need (ADR-0008,
+ADR-0013). They ride the skill copy at birth like everything else.
+At use, the run copies a template to the path its walkthrough
+names — or merges a section fragment into its README — and fills
+the placeholders; the filled file becomes the run's own — not a
+pinned copy — and the run's infrastructure contract notes it was
+filled from the skill's templates. Fills never harvest back; a change to a
 template's *shape* harvests like any execution change (ADR-0007).
 
 Deliberately absent — the born project's own decisions: recording

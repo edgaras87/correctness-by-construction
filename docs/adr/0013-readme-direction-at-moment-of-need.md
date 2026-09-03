@@ -1,7 +1,8 @@
 # 0013. README direction lives at the skills' moments of need
 
 Date: 2026-09-03
-Status: Proposed
+Status: Accepted (Proposed at the set's open; flipped at its final
+records commit, no boundary contradicted it)
 
 ## Context
 

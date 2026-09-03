@@ -6,6 +6,41 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-03  (session: moment-of-need set — README direction homed)
+
+- The bundle-side work's second half landed (ADR-0013, the set's
+  Proposed ADR, flipped Accepted at this close): the direction the
+  handbook's stub slimming orphaned — which step makes
+  Prerequisites/Run/Test true, and their shape — now lives in the
+  skills. infra-establish's step 7 projects Prerequisites when the
+  ground stands; cbc-bootstrap's Stage 5 projects Run/Test (and
+  the stack's Prerequisites line) when the harness is real. Both
+  skeletons extracted from checkout-system's lived README as
+  template fragments (ADR-0008 machinery) — the lived file itself
+  forced the honest split: its JDK line is stack, not ground, so
+  no single skill could own the whole section.
+- The user's consultation shaped the set before it opened: does
+  CLAUDE.md deserve the same treatment? Answer argued and taken:
+  no — its parallel mid-run moments are real (stack fact at
+  bootstrap, ground-up rule at establish) but un-orphaned (the
+  stub's comments teach its own fills), and pre-empting them would
+  contaminate the ADR-0012 derivation experiment one set after we
+  built it. Boundary stated in the ADR; watch item in TODO — the
+  re-birth's phase closes observe whether the newborn catches
+  those moments unprompted.
+- Playbook untouched, deliberately: gate items for README sections
+  would be the mandatory-doc-step-per-gate pattern the adopted
+  rule refuses, and the middles change by harvest (ADR-0011),
+  which adoption is not.
+- Two queued triggers fired at this close: the handbook handoff
+  (four items, TODO Now) and the re-birth are both unblocked.
+- Resume: deliver the handoff (user-side, under the handbook's
+  records); then the re-birth walks the scenario — three
+  experiments riding one run now watched from here (walked birth,
+  derived arrangement vs the blind snippet baseline, blind
+  replication vs safe-reservations-v1), trial readings at phase
+  closes, the CLAUDE.md watch item among them.
+
 ## 2026-09-02  (session: snippet withdrawn, birth derives)
 
 - Same day, second set, from the user's redesign of the birth:

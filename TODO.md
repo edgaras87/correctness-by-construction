@@ -7,9 +7,9 @@
 
 ## Now (current plan step)
 
-- [ ] Next handbook handoff — queued 2026-09-01, deliver when the
-      moment-of-need set closes — the bundle-side work's remaining
-      half (more may accrue there). Four items:
+- [ ] Next handbook handoff — queued 2026-09-01; its trigger fired
+      2026-09-03 (the moment-of-need set closed, the bundle-side
+      work is whole) — deliver now. Four items:
       1. Injection friction log — the field data their return item
          11 asked back, from the first live convention injection
          (change-plans @ 65dd7ee): the copy is also a rename
@@ -42,8 +42,8 @@
          reads off-context — the conditional stays true, but a
          neutral phrasing in the base would read clean in every
          vendored copy. Their call.
-- [ ] Re-birth under the scenario, after the moment-of-need set
-      closes: safe-reservations (born
+- [ ] Re-birth under the scenario — unblocked 2026-09-03 (the
+      moment-of-need set closed): safe-reservations (born
       2026-08-30, zero project commits) stopped and discarded
       2026-08-31 — the birth design changed under it
       (starter/bundle/birth-scenario.md trial); deleting the born repo
@@ -59,17 +59,17 @@
       records the deltas here, and judges run 1's held insights at
       those readings (their named promotion path). The baseline at
       ~/IdeaProjects/safe-reservations-v1 stays read-only.
+- [ ] Watch at the re-birth's phase closes (ADR-0013's scope
+      boundary): does the newborn update its own CLAUDE.md at the
+      two parallel mid-run moments — the stack fact at bootstrap,
+      the ground-must-be-up local rule at establish? Its stub
+      teaches both fills; no skill prompts them, deliberately (the
+      ADR-0012 derivation experiment). A costly miss is evidence
+      for a harvested skill line — decided at trial close, beside
+      the snippet comparison.
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Moment-of-need set — the bundle-side work's remaining half
-      (the playbook half landed 2026-09-02, ADR-0011):
-      infra-establish gains the README Prerequisites step when the
-      ground stands, cbc-bootstrap gains Run/Test when the harness
-      is real, with the section skeletons as template fragments
-      inside each skill (ADR-0008). Wording discipline (their
-      return item 9): restate the stub rule only in the adopted
-      form — container stays, direction goes.
 - [ ] Playbook overlap, fires at the next birth (return handoff
       item 6): the kit ships playbooks/backend-service.md, the
       bundle overlays cbc-run.md beside it — the born project holds
