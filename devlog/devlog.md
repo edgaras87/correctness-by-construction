@@ -6,6 +6,70 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-03  (session: walk 1 read — the first phase-close reading)
+
+- The walk closed same-day it was seeded. Twelve commits over the
+  hygiene root, tree clean, pristine close at cbc-newborn
+  @ 56352d1. The log-as-introduction bet paid: read top-down it is
+  an introduction — change-plan open → kit arrangement → scenario
+  → concept → derive (CLAUDE.md, then stub fills) → map → skills
+  in three groups → Step 0 close → change-plan close. The kit's
+  Step 0 was met entirely inside the walk, via its own
+  change-plan, exactly the step-is-interface relation the
+  scenario claims.
+- Checklist (install manual's checkable birth): copies all
+  byte-identical to the masters at the pin — no bundle file
+  edited; both birth entries in; CLAUDE.md's CbC section the
+  newborn's own; commit scoping clean throughout (agent files
+  never mixed with records); birth-scenario.md kept at root (an
+  open point, now answered by the walk: kept). One item fails
+  literally: the STEPS markers are still in PLAN — the newborn
+  filled the region in place, which the kit marker's own text
+  sanctions while our checklist says "no marker left." The two
+  documents disagree with each other; the newborn obeyed the
+  marker. Ours for the trial close, theirs for the fourth
+  handoff. Kept markers also keep the region re-runnable — the
+  friendlier outcome.
+- The walk reordered the draft, defensibly: the draft says
+  Concept first, but the newborn had to introduce the commit
+  conventions before it could make any convention-governed
+  commit — the draft's order ignores its own bootstrap
+  dependency. Arrangement-first is the fix the draft revision
+  takes.
+- The snippet comparison ran (the derivation is committed, so
+  reading it contaminates nothing; the verdict stays with the
+  trial-close ADR). The derivation re-derived the snippet's
+  standing guards in its own words (erosion, escape-hatch,
+  wall-to-test drift — all inside "watch for the rot" and
+  "prefer the wall over the test"), and its pre-stack discipline
+  is stronger than the snippet's. It missed two things: the
+  human sign-off gates (Stage 1/2, framing verdicts — though
+  those live in the skills, so ADR-0013's moment-of-need logic
+  cuts the other way), and the docs/system/ framing-artifact
+  home with registry-as-source-of-truth (an every-session fact,
+  weaker excuse). Novel and best: the records-carry-the-method
+  mapping (README = promise, Invariants = guarantee inventory,
+  ADRs = refusals, PLAN cut by invariant) — the snippet predates
+  the kit and never had it. Emerging shape: merge — but decided
+  at trial close, and the misses are harvest questions (concept/
+  or skills?), not snippet edits.
+- The derivation captured to docs/baselines/
+  cbc-derived-claude-walk1.md — trial evidence, not a master,
+  blind to future newborns like the snippet (imitation is not
+  legibility). NOT a snippet v2: if derivation wins the ADR-0012
+  question there is no snippet to version — improvements flow to
+  concept/ and the skills, and convergence between independent
+  derivations is the metric.
+- User observations from the review stops: (pending — recorded
+  here when given, before their corrections land in the newborn.)
+- Resume: user edits the newborn next — ordinary commits, never
+  amends, so 56352d1..HEAD stays the correction list (trial data:
+  what the walk got wrong by the watcher's judgment). Then the
+  briefing, unchanged, as the first project prompt — brings the
+  name safe-reservations; old path already clear. Draft revision
+  (arrangement-first + the marker line) after the trial's
+  readings, trial-close ADR after the briefing settles in.
+
 ## 2026-09-03  (session: the seed — cbc-newborn born)
 
 - The seed ran step by step with a review stop at each boundary,
