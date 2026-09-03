@@ -65,11 +65,12 @@ recorded as ordinary project events under the kit's rules, and the
 method's own artifacts (`docs/system/`, the framing derivation)
 live beside the records, not in place of them.
 
-Two skills (infra-establish, cbc-bootstrap) carry a `templates/`
-directory beside their references — copy-and-fill masters for the
-repeating ground and harness files, plus the README section
-fragments each skill projects at its moment of need (ADR-0008,
-ADR-0013). They ride the skill copy at birth like everything else.
+Three skills (cbc-framing, infra-establish, cbc-bootstrap) carry a
+`templates/` directory beside their references — copy-and-fill
+masters for the slice registry and the repeating ground and harness
+files, plus the README section fragments the infra skills project
+at their moments of need (ADR-0008, ADR-0013). They ride the
+skill copy at birth like everything else.
 At use, the run copies a template to the path its walkthrough
 names — or merges a section fragment into its README — and fills
 the placeholders; the filled file becomes the run's own — not a
