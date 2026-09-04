@@ -6,6 +6,47 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-04  (session: the stop, the fourth handoff drafted, sockets die)
+
+- cbc-newborn stops before the briefing — the user's decision, no
+  further work there; archived later for comparison. Its yield was
+  already absorbed, so nothing is lost; the briefing survives
+  unchanged for the next birth, which runs assembly and is the
+  trial's walk 2. TODO retargeted (9915bac).
+- The models observation dissolved on inspection: the handbook's
+  model set is exactly agent.md + tiers.md and our pinned copies
+  are byte-current with their HEAD (f9371e4). The kit-side fact
+  (the kit ships no models) was queued as a handoff question and
+  then DROPPED by the user — not asked; the fact stays in TODO.
+- The fourth handoff drafted to temp/handbook-handoff-2026-09-04.md
+  — staging only, deliberately NOT committed (user's call; the
+  substance is on record in TODO and here, the file is a paste
+  buffer). One ask: pure ships no waiting-slots — empty sections
+  are slots waiting for content pure cannot know; a prepared stub
+  built on pure owns its own slots; fills (name, intro) stay,
+  waiting-slots go entirely. Plus the three pure.md defects, the
+  two disagreement FYIs, the earlier rounds' backlog. Delivery is
+  the user's act, as before.
+- The big design turn, user's, mid-drafting: NO SOCKETS. The
+  first draft asked the handbook to stabilize four CLAUDE.md stub
+  slots (the contract widening ADR-0014 implied). Killed: the
+  bundle will ship a complete CLAUDE.md template instead —
+  composed once here from the kit-universal content (records
+  table, conventions list) plus the CbC fragments, copied whole
+  at birth. No merge into their file, no anchors assumed,
+  CLAUDE.md never re-enters the contract; the widening request
+  died before being sent. ADR-0014's substance stands (shipped
+  text, merged once, no derivation) — only the delivery mechanism
+  changes. The reshape is TODO's Now item (22abd6f): template
+  file, contract paragraph back to two surfaces, scenario step 3
+  reworded copy-not-merge, a short ADR note. Cost accepted:
+  the template carries kit content and updates at re-pin — the
+  architecture's normal staleness, traded for zero live
+  dependence on their stub's shape.
+- Resume: user delivers the handoff (then the staging file is
+  deleted); the template-whole reshape next in this repo; then
+  the next birth — assembly, receipt of six, same briefing.
+
 ## 2026-09-04  (session: the absorb set — assembly lands in the masters)
 
 - The change-plan ran open to close in one sitting (1cc3707 →
