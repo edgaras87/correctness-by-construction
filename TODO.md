@@ -7,6 +7,22 @@
 
 ## Now (current plan step)
 
+- [ ] Absorb the assembly rewrite (2026-09-04, from the newborn's
+      post-walk sessions, cbc-newborn 3b27b46 + its devlog): carry
+      the revised scenario into starter/bundle/birth-scenario.md
+      (the trial protocol's own post-walk revision step — the
+      newborn's copy is the draft, re-headered for the master);
+      run the one-time CLAUDE.md comparison — the walk's derived
+      section vs docs/baselines/cbc-startup-snippet.md — merge,
+      and freeze the result into the bundle as shipped text, with
+      the ADR that closes ADR-0012; add the birth fills as bundle
+      files (newborn drafts: e7a13f9 for the stubs, CLAUDE.md as
+      of aa1e17e). While in the bundle, fix the pin findings:
+      cbc-run.md's Step 0 comment still says concept/ (bundle now
+      lands under docs/); the concept chapters' headers call each
+      copy authoritative — false in a newborn, needs a variant.
+      Stays at trial close: install-manual rewrite, the rebuild
+      script, whether the scenario file still ships.
 - [ ] Re-birth under the scenario — unblocked 2026-09-03 (the
       moment-of-need set closed; the third reply absorbed
       same-day, so the seed reads the kit @ f9371e4 and the
@@ -67,6 +83,13 @@
       derivation commit is the only evidence it took. So the
       trial-close ADR after THIS walk adopts provisionally at
       most; the A-vs-B judgment closes after both are lived.
+      (2026-09-04) Overtaken by the assembly rewrite (cbc-newborn
+      3b27b46): assembly keeps A's clean main — the seed commits
+      nothing on the newborn's line — but prescribes the three
+      commits and allows a script to make them. A-vs-B dissolves
+      into "session or script," decided with the rebuild script
+      at trial close. Kept for the risk note: nothing forces the
+      reading — still true of assembly, still to watch.
 
 - [ ] Fourth handbook handoff — field data accrued, no trigger
       set (rides at or after the re-birth trial, or when items
@@ -89,6 +112,14 @@
       of the kit's seventeen files" is stale (18 now); the install
       block fills the hash but not the birth entry's date
       placeholder.
+      From the newborn's post-walk sessions (2026-09-04, its
+      devlog): the kit's PLAN Step 0 comment disagrees with the
+      assembly shape on three points — "take the briefing",
+      "draft CHANGE-PLAN.md", "plan open first"; and the kit PLAN
+      stub says fold retro lessons into the local playbook while
+      cbc-run.md's header says into the master — kit and bundle
+      disagree (the second half is ours to fix, the stub's half
+      is theirs to know).
 - [ ] Playbook overlap, fires at the next birth (return handoff
       item 6): the kit ships playbooks/backend-service.md, the
       bundle overlays cbc-run.md beside it — the born project holds

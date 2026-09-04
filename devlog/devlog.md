@@ -6,6 +6,63 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-04  (session: post-walk read — the scenario becomes assembly)
+
+- Read cbc-newborn again: five commits on main past the pristine
+  close (56352d1..2ea3e8a), birth-seed untouched, tree clean,
+  Step 0 still standing closed as walked. The corrections came
+  not as spoken notes but as lived commits with their own devlog
+  entries — the previous entry's pending slot resolves to this
+  reading.
+- Layout (d7d2817): the bundle material moved under docs/
+  (concept, playbook, scenario), the kit's two unused playbooks
+  deleted. One commit deliberately crossing the agent/project
+  split — their devlog owns it: a layout move splits into a
+  dangling pointer either way.
+- The big one (3b27b46): the newborn's scenario COPY rewritten as
+  assembly. Verdict of the walk, per its rationale: the CLAUDE.md
+  derivation needed the whole bundle in view and the concept read
+  first — nothing more; the staged introduction lived only in the
+  commit log, for a human reader. New shape: seed of six
+  mechanical steps (now including the bundle's shipped CLAUDE.md
+  text merged into the stub, and the stub fills as templates),
+  then exactly three commits under the split (arrangement /
+  bundle + records / Step 0 close) by the newborn's first session
+  or a script, then the briefing. No per-birth derivation, no
+  change-plan, no ladder (their DEAD END, drafted and discarded).
+  Receipt branch survives, re-cut to six steps (260a39e). Our
+  master at starter/bundle/birth-scenario.md is untouched — the
+  freeze held; the carry is now ours to make, and the trial
+  protocol's own post-walk revision step is the vehicle.
+- Variant B is overtaken, not lost: assembly keeps A's clean main
+  (the seed commits nothing on the newborn's line) but prescribes
+  the three commits and allows a script to make them — the A-vs-B
+  question dissolves into "session or script," parked with the
+  rebuild script at trial close.
+- The rewrite asserts ADR-0012's close: the two CLAUDE.md
+  candidates (the walk's derivation, the blind snippet baseline)
+  compared once, merged, frozen into the bundle as shipped text —
+  the derivation was a one-time review of the concept's clarity,
+  not a birth step, and it does not repeat. The evidence is
+  complete (both candidates exist and will not change); the ADR
+  is ours to write, here.
+- Carry-list received (their devlog, "Carry to the source repo"):
+  the scenario revision; the CLAUDE.md merge + freeze; the birth
+  fills as bundle files (drafts: e7a13f9 for the stubs, CLAUDE.md
+  as of aa1e17e); the rebuild script (trial close); pin findings —
+  cbc-run.md's Step 0 comment still says concept/, the concept
+  chapters' headers call each copy authoritative (false in a
+  newborn), the kit PLAN stub and cbc-run's header disagree on
+  where retro lessons fold; handbook finding — the kit's Step 0
+  comment disagrees with the assembly shape on three points
+  ("take the briefing", "draft CHANGE-PLAN.md", "plan open
+  first"). Findings routed to TODO.
+- Resume: on the user's word — carry the assembly rewrite into
+  the master scenario, then the CLAUDE.md comparison/merge with
+  the ADR-0012-close ADR and the birth-fill templates. The
+  briefing stays the user's act and does not wait on any of it:
+  the newborn's copy is already the revised text.
+
 ## 2026-09-03  (session: walk 1 read — the first phase-close reading)
 
 - The walk closed same-day it was seeded. Twelve commits over the
@@ -60,8 +117,9 @@
   question there is no snippet to version — improvements flow to
   concept/ and the skills, and convergence between independent
   derivations is the metric.
-- User observations from the review stops: (pending — recorded
-  here when given, before their corrections land in the newborn.)
+- User observations from the review stops: arrived as commits and
+  devlog entries in the newborn, not as notes — read in the
+  2026-09-04 entry above.
 - Resume: user edits the newborn next — ordinary commits, never
   amends, so 56352d1..HEAD stays the correction list (trial data:
   what the walk got wrong by the watcher's judgment). Then the
