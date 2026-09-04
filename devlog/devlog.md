@@ -6,6 +6,51 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-04  (session: the absorb set — assembly lands in the masters)
+
+- The change-plan ran open to close in one sitting (1cc3707 →
+  2a2e38b), user-reviewed at every boundary. Landed: the master
+  scenario is the assembly text (48ce28b); ADR-0014 closes the
+  ADR-0012 experiment — merged once, frozen, no per-birth
+  derivation; the bundle ships claude-md-cbc.md (four slim
+  fragments) and birth-fills.md (eight templates, the records
+  mapping distributed into them); the masters the walk falsified
+  are fixed (concept headers location-neutral, playbook comments
+  on the docs/ layout and ADR-0014, copy table at the docs/
+  destinations); CHANGELOG carries it under Unreleased, concept
+  stays v1.
+- The set's lesson, earned twice: lived is evidence, not master
+  text. The first staged merge froze the newborn's derivation on
+  the authority of "it won the comparison" — unaudited, it
+  restated the concept, hardcoded step numbers, and imported
+  facts whose homes are the skills (user caught it; plan revised
+  fe0311f, redone slim). Then the README fill shipped the
+  newborn's birth narration as the front door — same mode, one
+  fragment, caught again at the boundary. Every adoption from a
+  run gets audited against the target record's own rule.
+- Standing state to know: until the trial-close rewrite, the
+  install manual's hardcoded paths disagree with the copy table
+  it defers to — the scenario is the only internally consistent
+  birth procedure. Flagged inline on the copy table's playbook
+  row; the rewrite plus the rebuild script remain the closing
+  ADR's work, after the briefing.
+- Parked in TODO for after the set, three user observations: the
+  pure kit stub may carry too much (handbook-side, fourth
+  handoff); this repo holds only two handbook models (agent.md,
+  tiers.md) — is our arrangement shaped the handbook's way?; and
+  record-audience boundaries (README vs CLAUDE.md vs internal
+  records) may need a sharper guard, given the lesson above.
+- Also owed to the handbook (TODO, fourth handoff): CLAUDE.md's
+  stub slots re-entered our assumed-surface list (ADR-0014) —
+  their contract rule wants the widening handbook-side first.
+- DEAD END: none in this set; the step-3 rejection was a caught
+  divergence, not a dead end — the plan's boundary did its job.
+- Resume: the briefing is still the user's act in cbc-newborn,
+  unchanged and blocked on nothing here. After it: the trial-close
+  ADR (manual rewrite, rebuild script, scenario-copy fate, marker
+  line, session-or-script) — and the next birth runs assembly
+  from these masters, its receipt branch cut to six.
+
 ## 2026-09-04  (session: post-walk read — the scenario becomes assembly)
 
 - Read cbc-newborn again: five commits on main past the pristine
