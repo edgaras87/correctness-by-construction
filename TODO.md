@@ -70,6 +70,20 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] After the absorb change-plan closes, two user observations
+      (2026-09-04), raised mid-set and parked deliberately:
+      (a) the pure kit's CLAUDE.md stub carries too much — the
+      pure/handbook starter split exists, but part of what the
+      pure stub ships should migrate to the handbook's own stub,
+      leaving pure emptier (handbook-side change: shape it as
+      evidence for the fourth handoff, with what our births
+      actually used vs overwrote as the data);
+      (b) this repo carries only two of the handbook's models
+      (docs/models/: agent.md, tiers.md), so our agent
+      arrangement may not be shaped the way the handbook shapes
+      its own — compare against the handbook's model set, bring
+      what's missing, or record why not.
+
 - [ ] Variant B at the birth after this one (user's design,
       2026-09-03): seed delivers AND commits — stub + bundle land
       on main as delivery commits (the birth-seed receipt becoming
