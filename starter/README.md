@@ -29,6 +29,7 @@ At a run repo's birth, copy:
 | `starter/bundle/cbc-run-playbook.md` | `playbooks/cbc-run.md` — its full sequence then replaces the PLAN stub's STEPS region (starter/installs/cbc.md step 3) |
 | `starter/bundle/birth-scenario.md` | the newborn's repo root (in trial — kept or deleted per the trial's open point) |
 | `starter/bundle/claude-md-cbc.md` | not copied as a file — its fragments merge into the kit's CLAUDE.md stub at the slots their markers name (assembly step 3, ADR-0014) |
+| `starter/bundle/birth-fills.md` | not copied as a file — its fragments fill the kit's record stubs and the decisions log, variables filled by the seed (assembly steps 5–6, ADR-0014) |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before
