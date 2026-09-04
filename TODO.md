@@ -82,7 +82,16 @@
       (docs/models/: agent.md, tiers.md), so our agent
       arrangement may not be shaped the way the handbook shapes
       its own — compare against the handbook's model set, bring
-      what's missing, or record why not.
+      what's missing, or record why not;
+      (c) record-audience boundaries — what may go in a README vs
+      CLAUDE.md vs the internal records. The rule exists (the
+      records table: README is the front door, for the outside)
+      but slipped twice in one session, both times the same way:
+      lived newborn text adopted on provenance authority without
+      auditing it against the target record's own rule (the fat
+      CLAUDE.md merge, the birth-narrating README fill). Consider
+      whether the rule needs a sharper guard, and name the
+      discipline: lived is evidence, not master text.
 
 - [ ] Variant B at the birth after this one (user's design,
       2026-09-03): seed delivers AND commits — stub + bundle land
