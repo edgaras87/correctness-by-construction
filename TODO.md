@@ -7,7 +7,28 @@
 
 ## Now (current plan step)
 
-- [ ] Absorb the assembly rewrite (2026-09-04, from the newborn's
+- [ ] Reshape the CLAUDE.md delivery: template-whole, no sockets
+      (user's design, 2026-09-04, decided while drafting the
+      fourth handoff). The bundle ships a complete CLAUDE.md
+      template — composed once here from the kit-stub content
+      that is true for every project (records table, conventions
+      list) plus claude-md-cbc.md's fragments, variables like the
+      other fills — copied whole at birth; no merge into the
+      kit's stub, no slot anchors assumed. ADR-0014's decision
+      (shipped text, merged once, no derivation) stands; only
+      the delivery mechanism changes — record that as a short
+      amendment or follow-up ADR. Also revert what step 3 of the
+      absorb set claimed: the starter README contract paragraph
+      goes back to two assumed surfaces (playbooks/, STEPS
+      region), the copy-table rows for claude-md-cbc.md update,
+      and assembly step 3 in the scenario rewords (copy, not
+      merge). Cost accepted: the template carries kit content, so
+      it updates at re-pin like every pinned copy — the
+      architecture's normal staleness, traded for zero live
+      dependence on their stub's shape.
+- [x] DONE 2026-09-04, change-plan 1cc3707..2a2e38b — all but the
+      trial-close leftovers it names. Absorb the assembly rewrite
+      (2026-09-04, from the newborn's
       post-walk sessions, cbc-newborn 3b27b46 + its devlog): carry
       the revised scenario into starter/bundle/birth-scenario.md
       (the trial protocol's own post-walk revision step — the
@@ -159,10 +180,12 @@
       (2026-09-04, ADR-0014) The CLAUDE.md stub's slots re-enter
       our assumed-surface list — the bundle again merges into the
       stub at birth. Their contract rule says a new surface widens
-      handbook-side first; we owe them the widening request
-      (slots: the opening paragraph, the Conventions list, "How
-      to work here", "Local rules"), and until it lands our
-      contract list is one surface ahead of theirs.
+      handbook-side first; we owe them the widening request.
+      OVERTAKEN same day, user's design: no sockets at all — the
+      bundle ships a complete CLAUDE.md template instead of
+      merging fragments into their stub, so CLAUDE.md never
+      re-enters the contract and no widening is asked (the
+      handoff says so). The reshape is the Now item below.
       (2026-09-04) The kit ships no models (starter/kit/docs/
       holds only adr/): born repos are shaped without the agent
       model the handbook shapes itself by — should the kit ship
