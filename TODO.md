@@ -113,10 +113,9 @@
       (b) RESOLVED for this repo (2026-09-04): the handbook's
       model set is exactly agent.md + tiers.md and our pinned
       copies are byte-identical with their HEAD (f9371e4) —
-      nothing missing, nothing stale. The surviving question is
-      kit-side and moved to the fourth handoff: the kit ships no
-      models, so born repos are shaped without the agent model
-      the handbook shapes itself by;
+      nothing missing, nothing stale. The kit-side question (the
+      kit ships no models) was dropped from the handoff by the
+      user — closed, not asked;
       (c) record-audience boundaries — what may go in a README vs
       CLAUDE.md vs the internal records. The rule exists (the
       records table: README is the front door, for the outside)
@@ -187,10 +186,9 @@
       re-enters the contract and no widening is asked (the
       handoff says so). The reshape is the Now item below.
       (2026-09-04) The kit ships no models (starter/kit/docs/
-      holds only adr/): born repos are shaped without the agent
-      model the handbook shapes itself by — should the kit ship
-      it, or a pointer? The surviving half of the user's models
-      observation.
+      holds only adr/). DROPPED from the handoff, user's call
+      same day: not asked, not ours to raise. Kept here only as
+      the fact.
       (2026-09-04) Evidence for the user's pure-stub argument
       (the stub carries too much; the pure/handbook split should
       go further): assembly overrode the kit's Step 0 comment on
