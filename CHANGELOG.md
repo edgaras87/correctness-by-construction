@@ -15,6 +15,26 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 
 ## [Unreleased]
 
+### Added
+
+- The bundle ships the newborn's arrangement as text: CLAUDE.md
+  fragments (`starter/bundle/claude-md-cbc.md`, merged once from
+  the first walked birth's derivation and the withheld snippet)
+  and birth-fill templates (`starter/bundle/birth-fills.md`,
+  generalized from that birth's lived fills). No newborn derives
+  its arrangement again (ADR-0014).
+
+### Changed
+
+- A birth is assembly (`starter/bundle/birth-scenario.md`,
+  revised in the first newborn and carried back): six mechanical
+  seed steps, three prescribed commits, then the briefing. The
+  bundle lands under `docs/` in the newborn and only the chosen
+  playbook copies — the copy table has the new destinations.
+- Concept chapter headers name the authoritative copy by path
+  instead of claiming it for whichever copy is being read —
+  header-only, the concept stays v1.
+
 ## [v1] - 2026-08-28
 
 ### Added

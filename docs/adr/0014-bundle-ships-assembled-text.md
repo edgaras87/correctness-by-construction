@@ -1,7 +1,10 @@
 # 0014. The bundle ships assembled text; the derivation experiment closes
 
 Date: 2026-09-04
-Status: Proposed
+Status: Accepted (Proposed at the set's open; flipped at its final
+records commit. One boundary reshaped it before the flip: the
+step-3 review slimmed the shipped text and moved the records
+mapping to the fills — the Decision below is the reshaped one.)
 
 ## Context
 
