@@ -29,13 +29,20 @@ what the comparison found (the misses, the novel mapping) and the
 baselines' fate. Proposed until the merge is seen; flips in step 6.
 
 **3. `docs(starter): add the shipped CLAUDE.md text to the bundle`**
-The merge itself: a new bundle file with the CbC section, built
-from the newborn's derived section (as of aa1e17e, paths per the
-docs/ layout) plus what the snippet had and the derivation missed —
-judged per ADR-0013's moment-of-need rule, so a miss that lives in
-a skill may stay there. Both baseline headers annotated: comparison
-consumed. Starter README table row added here (one step with its
-listing). Provisional in wording — the merge shapes the file.
+The merge, slim by design: fragments for the kit stub — a short
+CbC section (concept pointer, the ordering in one parenthetical,
+the pre-framing guard), the Method conventions row, the stance
+lines, the local-rule lines. Dropped from the derivation: the
+concept summary (a summary is a lossy copy; the concept is the
+master) and the step-routing rows (PLAN carries the mapping via
+the playbook, and hardcoded step numbers lie once framing
+renumbers). From the snippet only the pre-framing guard enters —
+the registry rule is verified already living in cbc-slice, the
+sign-off gates in both skills. ADR-0014's Decision amended to
+this shape (it is Proposed, gathering boundary evidence), the
+scenario's step-3 fragment list trimmed to match, both baseline
+headers annotated, README row and contract paragraph riding
+along.
 
 **4. `docs(starter): add the birth fills as templates`**
 The problem-agnostic stub fills as bundle templates, drafted from
@@ -43,7 +50,12 @@ the newborn's e7a13f9: README purpose paragraph, PLAN title,
 ADR-0001, ARCHITECTURE overview, CHANGELOG deferral, TODO
 deferrals, devlog birth entry, decisions.md bundle entry.
 Variables: name, date, the two pins. Table row rides along.
-Provisional — may fold into step 3 if the material is small.
+Absorbs the records-carry-the-method mapping from the derivation:
+each record's fill carries the method's reading of that record
+(README = promise, ARCHITECTURE Invariants = guarantee inventory,
+ADRs = refusals, PLAN cut by invariant) — the rule riding in the
+record it governs, the kit's records-teach-themselves model,
+instead of a block in CLAUDE.md.
 
 **5. `docs: fix what the walk falsified in the masters`**
 cbc-run-playbook.md's Step 0 comment still says concept/ (the
@@ -74,3 +86,9 @@ templates are the last evidence in.
 - ADR-0014 is a new ADR, not an edit to ADR-0012: the experiment
   ADR stands as written; its close is a new decision with new
   evidence.
+- Revised at the step-3 boundary (2026-09-04, user review): the
+  first staged merge froze the derivation on the authority of
+  "it won the comparison" without re-auditing it as CLAUDE.md
+  text. Against the stub's own rules it restated the concept,
+  hardcoded plan step numbers, and imported facts whose homes are
+  the skills. Slimmed; the mapping moved to the fills.
