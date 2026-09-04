@@ -20,14 +20,14 @@ At a run repo's birth, copy:
 
 | From here | Into the run repo |
 |---|---|
-| `concept/` | `concept/` — read `00-cbc.md` first |
+| `concept/` | `docs/concept/` — read `00-cbc.md` first |
 | `starter/bundle/cbc-framing/` | `.claude/skills/cbc-framing/` |
 | `starter/bundle/cbc-slice/` | `.claude/skills/cbc-slice/` |
 | `starter/bundle/infra-establish/` | `.claude/skills/infra-establish/` |
 | `starter/bundle/infra-serve/` | `.claude/skills/infra-serve/` |
 | `starter/bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
-| `starter/bundle/cbc-run-playbook.md` | `playbooks/cbc-run.md` — its full sequence then replaces the PLAN stub's STEPS region (starter/installs/cbc.md step 3) |
-| `starter/bundle/birth-scenario.md` | the newborn's repo root (in trial — kept or deleted per the trial's open point) |
+| `starter/bundle/cbc-run-playbook.md` | `docs/playbooks/cbc-run.md` — the chosen playbook, alone; its full sequence then replaces the PLAN stub's STEPS region (starter/installs/cbc.md step 3, its paths pending the trial-close rewrite) |
+| `starter/bundle/birth-scenario.md` | `docs/birth-scenario.md` (in trial — kept or deleted per the trial's closing ADR) |
 | `starter/bundle/claude-md-cbc.md` | not copied as a file — its fragments merge into the kit's CLAUDE.md stub at the slots their markers name (assembly step 3, ADR-0014) |
 | `starter/bundle/birth-fills.md` | not copied as a file — its fragments fill the kit's record stubs and the decisions log, variables filled by the seed (assembly steps 5–6, ADR-0014) |
 

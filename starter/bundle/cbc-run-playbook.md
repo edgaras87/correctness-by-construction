@@ -22,9 +22,10 @@
 # Playbook: CbC run
 
 <!-- The full sequence (ADR-0011). At birth this file is copied
-     whole to the run's playbooks/cbc-run.md, and the install
-     manual (starter/installs/cbc.md) replaces the PLAN stub's
-     STEPS region with everything from the first "## Step" down,
+     whole to the run's docs/playbooks/cbc-run.md, and the PLAN
+     stub's STEPS region is replaced with everything from the
+     first "## Step" down (assembly step 4;
+     the install manual's sed, pending its rewrite),
      filling the stub's "Steps from:" line. Ownership per step:
      kit-owned steps carry a vendor line and change only by refresh
      against a new kit pin; (CbC)-marked items and the middle steps
@@ -58,12 +59,13 @@ safe-reservations (define step) 2026-08-30.
 
 <!-- CbC: the bundle files need no Step 0 decisions of their own —
      the kit's commit split already scopes them: the skills and
-     every CLAUDE.md edit are arrangement (agent commits); concept/
-     and playbooks/cbc-run.md are project content and land with the
-     records. CLAUDE.md's CbC section is this newborn's own writing,
-     derived from concept/ — no text is supplied (ADR-0012). State
-     this in the Step 0 change-plan; do not re-derive it per birth
-     (starter/installs/cbc.md). -->
+     every CLAUDE.md edit are arrangement (agent commits);
+     docs/concept/ and docs/playbooks/cbc-run.md are project
+     content and land with the records. CLAUDE.md's CbC section is
+     the bundle's shipped text, merged at the seed (ADR-0014) —
+     never derived per birth. Step 0 runs as assembly: three
+     commits per docs/birth-scenario.md, no change-plan — the
+     split is fixed there. -->
 
 Goal: the container exists — repo, records, arrangement — before content.
 Gate:
