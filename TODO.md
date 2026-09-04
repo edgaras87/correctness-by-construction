@@ -120,6 +120,12 @@
       cbc-run.md's header says into the master — kit and bundle
       disagree (the second half is ours to fix, the stub's half
       is theirs to know).
+      (2026-09-04, ADR-0014) The CLAUDE.md stub's slots re-enter
+      our assumed-surface list — the bundle again merges into the
+      stub at birth. Their contract rule says a new surface widens
+      handbook-side first; we owe them the widening request, and
+      until it lands our contract list is one surface ahead of
+      theirs.
 - [ ] Playbook overlap, fires at the next birth (return handoff
       item 6): the kit ships playbooks/backend-service.md, the
       bundle overlays cbc-run.md beside it — the born project holds

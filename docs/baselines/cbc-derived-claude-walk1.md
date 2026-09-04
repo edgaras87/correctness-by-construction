@@ -13,7 +13,15 @@
      First reading vs the snippet (devlog 2026-09-03): standing
      guards re-derived in own words; missed the human sign-off
      gates and the docs/system/ framing-artifact home; novel and
-     best: the records-carry-the-method mapping. -->
+     best: the records-carry-the-method mapping.
+     2026-09-04: comparison consumed (ADR-0014) — merged with the
+     snippet into starter/bundle/claude-md-cbc.md, this derivation
+     the base: its stance and local-rule lines ship verbatim, its
+     records mapping ships through the birth fills; its concept
+     summary and step-routing rows were dropped at the merge
+     review as restatement and staleness, not comparison losses.
+     The experiment does not repeat; held as the comparison's
+     record, still blind. -->
 
 
 # cbc-newborn

@@ -28,6 +28,7 @@ At a run repo's birth, copy:
 | `starter/bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
 | `starter/bundle/cbc-run-playbook.md` | `playbooks/cbc-run.md` — its full sequence then replaces the PLAN stub's STEPS region (starter/installs/cbc.md step 3) |
 | `starter/bundle/birth-scenario.md` | the newborn's repo root (in trial — kept or deleted per the trial's open point) |
+| `starter/bundle/claude-md-cbc.md` | not copied as a file — its fragments merge into the kit's CLAUDE.md stub at the slots their markers name (assembly step 3, ADR-0014) |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before
@@ -47,19 +48,25 @@ the method.
 
 ## The contract
 
-The overlay assumes exactly two things of the kit — a `playbooks/`
-directory, and the plan's STEPS-marker region with
-`playbooks/default.md` as its base (their ADR-0028) — and must not
-depend on anything else; a handbook kit update is checked against
-this list, nothing more. CLAUDE.md left the list with the startup
-snippet (ADR-0012): the newborn writes its own CbC section, so
-the overlay no longer appends to any kit file.
+The overlay assumes exactly three things of the kit — a `playbooks/`
+directory, the plan's STEPS-marker region with
+`playbooks/default.md` as its base (their ADR-0028), and the
+CLAUDE.md stub's slots (opening paragraph, Conventions list, "How
+to work here", "Local rules") — and must not depend on anything
+else; a handbook kit update is checked against this list, nothing
+more. CLAUDE.md left the list with the startup snippet (ADR-0012)
+and returned with the assembled text (ADR-0014): the bundle ships
+its CbC fragments in claude-md-cbc.md, merged into the stub's slots
+at birth — text earned from the first walked derivation, not
+theory.
 The kit names the same contract from its side (the handbook's
 `starter/README.md` contract list, 2026-08-30; step item updated
 2026-09-01): the handbook states what may be assumed, each bundle
-states what it assumes, and a bundle needing a fourth surface
-widens the contract handbook-side first. The overlay touches no
-kit file — it only adds files in paths the kit does not claim
+states what it assumes, and a bundle needing a new surface
+widens the contract handbook-side first — the stub's slots
+re-entering our list is owed to theirs (fourth handoff). The
+overlay's one write into a kit file is that merge (ADR-0014);
+everything else only adds files in paths the kit does not claim
 (ADR-0012). Records stay the kit's: CbC events are
 recorded as ordinary project events under the kit's rules, and the
 method's own artifacts (`docs/system/`, the framing derivation)

@@ -45,13 +45,27 @@ different CLAUDE.md.
 
 ## Decision
 
-The bundle ships a CLAUDE.md text file: the CbC section, the
-Method row, the stance and local-rule lines, the skill rows —
-merged once from the two candidates. The seed merges it into the
-kit's CLAUDE.md stub at birth (assembly step 3). No birth derives
-it again. The two misses are judged at the merge under ADR-0013:
-a fact whose moment of need lives inside a skill stays in the
-skill; an every-session fact enters the shipped text.
+The bundle ships a CLAUDE.md text file, merged once from the two
+candidates and slim by design: a short CbC section (the concept
+pointer, the ordering in one line, the pre-framing guard), the
+Method conventions row, the stance lines, the local-rule lines.
+The seed merges it into the kit's CLAUDE.md stub at birth
+(assembly step 3). No birth derives it again.
+
+Slimming happened at the merge review (2026-09-04 boundary), not
+in the comparison: the derivation's concept summary is dropped as
+a lossy copy beside its master, and its step-routing rows as
+redundant with the playbook mapped into PLAN — and fragile, since
+framing may renumber the plan. Its records-carry-the-method
+mapping — the comparison's best find — ships through the birth
+fills instead: each record's fill carries the method's reading of
+that record, the kit's records-teach-themselves model.
+
+The two misses are judged under ADR-0013: the sign-off gates stay
+in cbc-framing and cbc-slice, the registry rule already lives in
+cbc-slice (Stage 0, the close step) — both verified, not assumed.
+Only the pre-framing guard enters the shipped text, the one rule
+that must hold in sessions where no skill has fired yet.
 
 The shipped text is a derived execution like the rest of the
 bundle: header pins the concept version, changes flow back as

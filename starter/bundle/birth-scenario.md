@@ -38,9 +38,9 @@ the briefing. The scenario ends where the problem begins.
    docs/birth-scenario.md. One moment, one delivery, one pin.
 3. Copy the CbC skills to .claude/skills/. Merge the bundle's
    CLAUDE.md text — the CbC section, the Method row, the stance
-   and local-rule lines, the skill rows — into the kit's CLAUDE.md
-   stub. Shipped text, written once from the whole bundle; not
-   derived per birth.
+   and local-rule lines — into the kit's CLAUDE.md stub. Shipped
+   text, merged once from the first walk's evidence; not derived
+   per birth.
 4. Map the playbook into PLAN: its steps replace the stub's STEPS
    region, "Steps from:" filled.
 5. Fill the stubs from the bundle's birth fills: README's

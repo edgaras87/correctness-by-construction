@@ -11,7 +11,12 @@
      the comparison point is the first walked birth's derived
      CLAUDE.md section, and stay/retire/merge is decided at that
      trial's close. Blind: not shown to newborns, like the
-     safe-reservations-v1 baseline. -->
+     safe-reservations-v1 baseline.
+     2026-09-04: comparison consumed (ADR-0014) — verdict merge,
+     the derivation the base; this snippet contributed the
+     pre-framing guard, its other facts verified already living
+     in the skills. Merged into starter/bundle/claude-md-cbc.md;
+     held as the comparison's record, still blind. -->
 
 # CbC startup snippet
 
