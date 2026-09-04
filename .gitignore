@@ -22,5 +22,13 @@ Thumbs.db
 .claude/settings.local.json
 
 # ======================================================================
+# this repo
+# ======================================================================
+
+# Staging buffers — handoff drafts pasted into the handbook session,
+# then deleted; substance lives in TODO/devlog, never here
+temp/
+
+# ======================================================================
 # stack overlays — appended below this line at app bootstrap
 # ======================================================================
