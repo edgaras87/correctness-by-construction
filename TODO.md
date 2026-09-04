@@ -59,14 +59,25 @@
       safe-reservations is already deleted — rename precondition
       met. Remains: the walk (a fresh session in the newborn —
       never this repo's), then the briefing.
-- [ ] Watch at the re-birth's phase closes (ADR-0013's scope
-      boundary): does the newborn update its own CLAUDE.md at the
-      two parallel mid-run moments — the stack fact at bootstrap,
-      the ground-must-be-up local rule at establish? Its stub
-      teaches both fills; no skill prompts them, deliberately (the
-      ADR-0012 derivation experiment). A costly miss is evidence
-      for a harvested skill line — decided at trial close, beside
-      the snippet comparison.
+      (2026-09-04) cbc-newborn STOPS before the briefing — user's
+      decision. No further work there; the user archives it later
+      for comparison. Its yield is already absorbed: the assembly
+      scenario, the shipped text, the fills, ADR-0014. The
+      briefing survives unchanged, still baseline-blind, held for
+      the NEXT birth — which runs assembly from the current
+      masters (receipt branch of six) and is the trial's walk 2.
+      The trial-close ADR re-gates on that birth reaching its
+      briefing, not on cbc-newborn.
+- [ ] Watch at the next birth's phase closes (ADR-0013's scope
+      boundary; retargeted 2026-09-04, cbc-newborn stopped
+      pre-briefing): does the newborn update its own CLAUDE.md at
+      the two parallel mid-run moments — the stack fact at
+      bootstrap, the ground-must-be-up local rule at establish?
+      Its stub teaches both fills; no skill prompts them. The
+      ADR-0012 experiment is closed (ADR-0014, text ships), but
+      this question survives it: shipped text still leaves mid-run
+      fills to the newborn. A costly miss is evidence for a
+      harvested skill line.
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
@@ -78,11 +89,13 @@
       leaving pure emptier (handbook-side change: shape it as
       evidence for the fourth handoff, with what our births
       actually used vs overwrote as the data);
-      (b) this repo carries only two of the handbook's models
-      (docs/models/: agent.md, tiers.md), so our agent
-      arrangement may not be shaped the way the handbook shapes
-      its own — compare against the handbook's model set, bring
-      what's missing, or record why not;
+      (b) RESOLVED for this repo (2026-09-04): the handbook's
+      model set is exactly agent.md + tiers.md and our pinned
+      copies are byte-identical with their HEAD (f9371e4) —
+      nothing missing, nothing stale. The surviving question is
+      kit-side and moved to the fourth handoff: the kit ships no
+      models, so born repos are shaped without the agent model
+      the handbook shapes itself by;
       (c) record-audience boundaries — what may go in a README vs
       CLAUDE.md vs the internal records. The rule exists (the
       records table: README is the front door, for the outside)
@@ -146,10 +159,25 @@
       (2026-09-04, ADR-0014) The CLAUDE.md stub's slots re-enter
       our assumed-surface list — the bundle again merges into the
       stub at birth. Their contract rule says a new surface widens
-      handbook-side first; we owe them the widening request, and
-      until it lands our contract list is one surface ahead of
-      theirs.
-- [ ] Playbook overlap, fires at the next birth (return handoff
+      handbook-side first; we owe them the widening request
+      (slots: the opening paragraph, the Conventions list, "How
+      to work here", "Local rules"), and until it lands our
+      contract list is one surface ahead of theirs.
+      (2026-09-04) The kit ships no models (starter/kit/docs/
+      holds only adr/): born repos are shaped without the agent
+      model the handbook shapes itself by — should the kit ship
+      it, or a pointer? The surviving half of the user's models
+      observation.
+      (2026-09-04) Evidence for the user's pure-stub argument
+      (the stub carries too much; the pure/handbook split should
+      go further): assembly overrode the kit's Step 0 comment on
+      all three points; the first method birth deleted both kit
+      playbooks post-walk; the stub's teaching comments are
+      standing rules every born repo carries forever, by the
+      kit's own gate — while the size-budget comment argues
+      against exactly that. The stub's filled content is thin;
+      the weight is the teaching text.
+- [x] Playbook overlap, fires at the next birth (return handoff
       item 6): the kit ships playbooks/backend-service.md, the
       bundle overlays cbc-run.md beside it — the born project holds
       two playbooks and its Framing must know whether to copy from
@@ -162,6 +190,11 @@
       Their side closed it as overtaken — the two coexist in
       playbooks/ without competing. All that remains is the
       birth's confirmation.
+      (2026-09-04) Confirmed and closed: walk 1 landed both kit
+      playbooks beside cbc-run.md without competition — then the
+      user deleted the kit's two post-walk (that datum feeds the
+      pure-stub handoff argument), and assembly now copies the
+      chosen playbook alone.
 
 ## Later / someday
 
