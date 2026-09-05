@@ -137,9 +137,11 @@ concept repo's, with this prompt and nothing more:
 > every file and every seed commit. Then plan the work as the
 > conventions you were given direct — your own commit sequence,
 > your own order of artifacts, split by the commit scopes the
-> skills define, each choice one you can justify in the plan. The
-> problem arrives later, as a briefing that opens Framing; nothing
-> before it names the problem.
+> skills define, each choice one you can justify in the plan.
+> Work only within this repository — the source repos the pins
+> name are not yours to read. The problem arrives later, as a
+> briefing that opens Framing; nothing before it names the
+> problem.
 
 The prompt is the session channel — it carries what is true only
 of this moment: the situation (two sources, why split), the task,
@@ -150,7 +152,10 @@ to touch or how far to adapt them, whether skills land as one
 commit or split by source — the sequence the agent chooses and
 justifies is the run's central data. The commit-scope rule is not
 restated; it rides in the delivered skills, and the prompt only
-points at them.
+points at them. The stay-inside line guards the blindness: the
+source repos hold the answer sheet (the template, the scenario,
+the baselines), and the permission prompt on any outside read is
+the human's hard backstop behind it.
 
 **A correct seed is checkable** — before the agent starts, every
 item is a verifiable fact:
