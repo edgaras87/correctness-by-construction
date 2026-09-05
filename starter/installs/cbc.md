@@ -41,8 +41,9 @@ bundle overlays the method (ADR-0009). The sequence:
    Then fill the plan's "Steps
    from:" line from the playbook's own version line. The copy
    source is the newborn's `playbooks/cbc-run.md`, landed at
-   step 2; the kit's own playbooks stay in `playbooks/`,
-   uncopied — a CbC birth chooses cbc-run.md (ADR-0011).
+   step 2; the kit ships no playbooks (their ADR-0031 — they
+   live in the handbook's `starter/playbooks/`), so cbc-run.md
+   is the only one the newborn holds (ADR-0011).
 4. Append the bundle's birth entry to `.claude/decisions.md`,
    beside the kit's: the date, this repo's commit at copy time,
    "pinned to concept v1". Mechanical, done at copy time like the

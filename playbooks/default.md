@@ -1,8 +1,10 @@
-<!-- Vendored copy — engineering-handbook starter/kit/playbooks/default.md
-     @ 65dd7ee (copied 2026-09-02, replacing the pre-redesign
-     TEMPLATE.md from the birth commit; ADR-0011). Pinned: do not
-     edit here — changes happen in the handbook and arrive as a
-     fresh pinned copy (ADR-0002). This is the base this repo's own
+<!-- Vendored copy — engineering-handbook starter/playbooks/default.md
+     @ c670fe5 (copied 2026-09-05, v2; their ADR-0031 moved the
+     playbooks out of the kit to starter/playbooks/ — first copied
+     2026-09-02 @ 65dd7ee from the old kit path, replacing the
+     pre-redesign TEMPLATE.md; ADR-0011). Pinned: do not edit
+     here — changes happen in the handbook and arrive as a fresh
+     pinned copy (ADR-0002). This is the base this repo's own
      retrospective folds into a typed playbook; the bundle's
      cbc-run playbook vendors its endpoint steps from the same
      master. -->
@@ -20,32 +22,28 @@
      change is carried into every playbook holding copies of
      these steps. -->
 
-Playbook version: v1 (created 2026-09-01)
+Playbook version: v2 (2026-09-05 — Framing's gate asks every
+authored step for its projection; v1 created 2026-09-01)
 Last updated from project: none — distilled from the pre-ADR-0028
 PLAN stub.
 
 ## Step 0: Bootstrap                                [~]
 
 <!-- First session, this step still open: you are bootstrapping.
-     Take the briefing. Before touching anything else, draft
-     CHANGE-PLAN.md per the change-plans skill (shipped in the
-     kit). The plan's substance is the per-project content: what
-     each placeholder becomes, which records this project will
-     actually keep current (delete the rest), the birth entry's
-     date and handbook commit filled in .claude/decisions.md.
-     Later steps are Framing's to confirm or author (ADR-0028) —
-     the change-plan here covers Step 0 only.
-     Commit order for this set: plan open first, plan close last;
-     the project-records and agent-install commits land in either
-     order between them. The repo and its hygiene commit already
-     exist. The gates below are the exit — draft against them. -->
+     The repo, its hygiene commit and the birth entry's pin already
+     exist; the gates below are the exit, and they are facts about
+     the kit, the same in every birth. How you reach them — a
+     briefing, a change-plan, a commit order — is the bundle's, and
+     the manual that born you says it (ADR-0031). Two comment kinds
+     in every stub: a fill-comment says its content replaces it;
+     every other comment is a standing rule and stays. -->
 
 Goal: the container exists — repo, records, arrangement — before content.
 Gate:
 - [ ] Repo initialized; hygiene base files present.
 - [ ] Every placeholder filled, or explicitly deferred to a named
-      step (Commands and the stack overlay defer to Framing, which
-      confirms the steps that fill or delete them).
+      step (the stack overlay defers to Framing, which confirms the
+      steps that fill or delete it).
 - [ ] No fill-comment remains: where a comment says its content
       replaces it, the content is there and the comment is not.
       Every other stub comment is a standing rule — it stays.
@@ -69,6 +67,10 @@ Gate:
       problem where a typed one was copied in, written fresh here
       where the project was born on this bare default; birth
       materials brought with the briefing weigh in either way.
+- [ ] Every step whose gate makes something true that the outside
+      should see names its projection as a gate item — the README
+      section, the ARCHITECTURE change. Projection follows truth,
+      and the gate is where it is caught.
 Notes:
 
 ## Steps 2..N-1: authored at Framing
@@ -76,8 +78,9 @@ Notes:
 <!-- This playbook deliberately has none (ADR-0028): the bare
      sequence cannot know a project type's steps. Born on this
      sequence, author them at Framing — keeping the form: a goal,
-     a gate of verifiable facts, the records expected; detail only
-     the next 1–2 steps finely. A typed playbook carries its own
+     a gate of verifiable facts, the records expected, and the
+     projection where the step makes one true; detail only the
+     next 1–2 steps finely. A typed playbook carries its own
      middles instead, and this section with them. -->
 
 ## Step N: Release                                  [ ]

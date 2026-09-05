@@ -17,7 +17,13 @@
      (CbC)-marked gate items.
      2026-09-02 (same day): Step 0's CbC comment reworded — the
      startup snippet is withdrawn and the newborn derives its own
-     CLAUDE.md section (ADR-0012). -->
+     CLAUDE.md section (ADR-0012).
+     2026-09-05: kit steps re-vendored from
+     starter/playbooks/default.md v2 @ c670fe5 — their ADR-0031
+     moved the playbooks out of the kit, so the vendor path sweeps
+     with the refresh. Step 0's first-session comment slimmed to
+     kit facts (method's procedure is the bundle's manual's),
+     Framing gains the projection gate item, Step N unchanged. -->
 
 # Playbook: CbC run
 
@@ -33,29 +39,25 @@
      fold a run's retrospective lessons into this master, never
      into the run's pinned copy alone. -->
 
-Playbook version: v2 (created 2026-08-30 middles-only; rebuilt
-full-sequence 2026-09-02, ADR-0011)
+Playbook version: v3 (kit steps refreshed from default.md v2
+2026-09-05; rebuilt full-sequence 2026-09-02, ADR-0011; created
+2026-08-30 middles-only)
 Last updated from project: checkout-system 2026-08-27;
 safe-reservations (define step) 2026-08-30.
 
 ## Step 0: Bootstrap                                [~]
 
-<!-- Kit step — vendored from playbooks/default.md @ 65dd7ee;
-     additions marked (CbC) (ADR-0011). -->
+<!-- Kit step — vendored from starter/playbooks/default.md
+     @ c670fe5; additions marked (CbC) (ADR-0011). -->
 
 <!-- First session, this step still open: you are bootstrapping.
-     Take the briefing. Before touching anything else, draft
-     CHANGE-PLAN.md per the change-plans skill (shipped in the
-     kit). The plan's substance is the per-project content: what
-     each placeholder becomes, which records this project will
-     actually keep current (delete the rest), the birth entry's
-     date and handbook commit filled in .claude/decisions.md.
-     Later steps are Framing's to confirm or author (ADR-0028) —
-     the change-plan here covers Step 0 only.
-     Commit order for this set: plan open first, plan close last;
-     the project-records and agent-install commits land in either
-     order between them. The repo and its hygiene commit already
-     exist. The gates below are the exit — draft against them. -->
+     The repo, its hygiene commit and the birth entry's pin already
+     exist; the gates below are the exit, and they are facts about
+     the kit, the same in every birth. How you reach them — a
+     briefing, a change-plan, a commit order — is the bundle's, and
+     the manual that born you says it (ADR-0031). Two comment kinds
+     in every stub: a fill-comment says its content replaces it;
+     every other comment is a standing rule and stays. -->
 
 <!-- CbC: the bundle files need no Step 0 decisions of their own —
      the kit's commit split already scopes them: the skills and
@@ -71,8 +73,8 @@ Goal: the container exists — repo, records, arrangement — before content.
 Gate:
 - [ ] Repo initialized; hygiene base files present.
 - [ ] Every placeholder filled, or explicitly deferred to a named
-      step (Commands and the stack overlay defer to Framing, which
-      confirms the steps that fill or delete them).
+      step (the stack overlay defers to Framing, which confirms the
+      steps that fill or delete it).
 - [ ] No fill-comment remains: where a comment says its content
       replaces it, the content is there and the comment is not.
       Every other stub comment is a standing rule — it stays.
@@ -90,8 +92,8 @@ Notes:
 
 ## Step 1: Framing                                  [ ]
 
-<!-- Kit step — vendored from playbooks/default.md @ 65dd7ee;
-     additions marked (CbC) (ADR-0011). -->
+<!-- Kit step — vendored from starter/playbooks/default.md
+     @ c670fe5; additions marked (CbC) (ADR-0011). -->
 
 <!-- CbC: these gates are met via the cbc-framing skill — the
      intent, definition, and adversity registry are the problem
@@ -110,6 +112,10 @@ Gate:
       problem where a typed one was copied in, written fresh here
       where the project was born on this bare default; birth
       materials brought with the briefing weigh in either way.
+- [ ] Every step whose gate makes something true that the outside
+      should see names its projection as a gate item — the README
+      section, the ARCHITECTURE change. Projection follows truth,
+      and the gate is where it is caught.
 Notes:
 
 ## Step 2: Define (naming)                          [ ]
@@ -199,8 +205,8 @@ Warnings from past runs:
 
 ## Step N: Release                                  [ ]
 
-<!-- Kit step — vendored from playbooks/default.md @ 65dd7ee;
-     additions marked (CbC) (ADR-0011). -->
+<!-- Kit step — vendored from starter/playbooks/default.md
+     @ c670fe5; additions marked (CbC) (ADR-0011). -->
 
 Gate:
 - [ ] CHANGELOG entry for the release.
