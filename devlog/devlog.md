@@ -6,6 +6,49 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-05  (session: the reply lands, the template ships whole)
+
+- The handbook answered the fourth handoff at scale: 41 commits,
+  ADR-0031..0034, HEAD c670fe5. The ask taken further than asked —
+  playbooks and the "or delete" marks left the kit (0031), then
+  the empty sections ("guard without sections", 0032, a third
+  shape neither side had proposed), then the Conventions list
+  itself (0034, "the registry is the list"). Their entry file is
+  ~41 lines of map and guard. The retro-fold disagreement settled
+  our way (into the master); item 4a dissolved with the list; a
+  new convention, agent-arrangement, now owns the entry-file
+  rules. They also found a defect under ours: their own playbook
+  copy command deleted the STEPS markers too.
+- The reply reshaped the template-whole Now item rather than
+  queueing behind it: one change-plan (ff518f7..5819506), six
+  steps, no divergence. Our install sed keeps the markers now
+  (tested twice in a scratch birth); ADR-0015 records the
+  delivery change against ADR-0014; the kit steps re-vendored at
+  c670fe5 (cbc-run.md v3, Framing's projection gate item); the
+  compose landed claude-md-template.md — kit half diff-verified
+  verbatim, method half unchanged from the fragments, the
+  fragments file retired; scenario and README carry whole-copy
+  and the three-surface contract paragraph narrowed to the real
+  three (STEPS region, step/gate idiom, default.md as vendor
+  base — CLAUDE.md off the list, as the handoff promised them).
+- Two decisions rode in the plan, both held: the newborn holds no
+  playbook copy — their ADR-0031's model applied to ourselves,
+  steps in PLAN plus a "Steps from:" line, the concept copy
+  deliberately kept (read throughout the run; the playbook, once
+  mapped, is not) — and the temp/ staging file deleted
+  uncommitted, both repos' reply list asking it.
+- Found while re-vendoring, now accruing for a fifth handoff: the
+  ADR-citation trap. Text copied into a newborn's PLAN carries
+  bare citations that read as the newborn's OWN ADR numbers.
+  Ours dropped from the (CbC) comment this set; their default.md
+  v2 ships "(ADR-0031)" into every born PLAN — their line to
+  draw, FYI-shaped.
+- Resume: the next birth — assembly from the current masters, kit
+  pinned at c670fe5, receipt branch of six, the held briefing
+  (~/IdeaProjects/safe-reservation-briefing.md, still
+  baseline-blind) as the first prompt after Step 0 closes. It is
+  the trial's walk 2, and the trial-close ADR gates on it.
+
 ## 2026-09-04  (session: the stop, the fourth handoff drafted, sockets die)
 
 - cbc-newborn stops before the briefing — the user's decision, no
