@@ -19,12 +19,22 @@
       two-line prompt: finish the birth, Step 0's gates are the
       exit; the problem arrives later as a briefing. No order
       hints — the order chosen is data.
-      (2026-09-05, revised twice before firing: the kit half
-      runs pure.md by pointer, fills included; the playbook is
-      not delivered as a file — the seed inserts its steps into
-      PLAN and fills "Steps from:", so the find-the-mapping and
-      strip-the-marker observations are deliberately given
-      away.)
+      (2026-09-05, revised three times before firing: the kit
+      half runs pure.md by pointer, fills included; the playbook
+      is not delivered as a file — the seed inserts its steps
+      into PLAN and fills "Steps from:", so the find-the-mapping
+      and strip-the-marker observations are deliberately given
+      away; and the insert omits the playbook's (CbC) Step 0
+      comment — caught at the user's question: it encodes the
+      assembly conclusions the experiment withholds and would
+      have contaminated the derivation and commit-structure
+      measurements. Fourth: that omission is an artifact, not a
+      script filter — cbc-run-pure-playbook.md, the CANDIDATE
+      SUCCESSOR (user's framing): if the experiment's reading
+      goes well the parent is deleted and the variant stays,
+      with the assembly artifacts falling at trial close;
+      otherwise the variant dies. Until the reading, the parent
+      is procedure of record and harvest lands there first.)
       What it measures: a second independent derivation of the
       arrangement (the convergence point ADR-0014 gave up),
       compared against the first walk's (archived newborn

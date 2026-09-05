@@ -13,7 +13,18 @@
      file — the seed inserts its steps into PLAN and fills the
      "Steps from:" line, matching the adopted no-copy model. The
      does-the-agent-find-the-mapping observation is deliberately
-     given away; the run walked is reseeded to this shape. -->
+     given away; the run walked is reseeded to this shape.
+     Third revision, same day: the insert omits the playbook's
+     (CbC) Step 0 comment — it encodes the assembly conclusions
+     (shipped template, three commits, no change-plan, the
+     scenario pointer) that this experiment withholds, and in a
+     run without them it lies.
+     Fourth revision, same day, user's call: the filter becomes
+     an artifact — the insert reads cbc-run-pure-playbook.md
+     verbatim, the pure-seed candidate variant (its header
+     states the two deltas and its lifespan: the experiment's
+     reading keeps one of variant and parent, deletes the
+     other). Staged changes over scripted-out parts. -->
 
 # Install: the pure seed — material only, the agent finishes
 
@@ -78,19 +89,28 @@ git add .claude/skills
 git commit -m "chore: seed — the five CbC skills"
 
 sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
-    "$bundle_dir"/starter/bundle/cbc-run-playbook.md; echo) \
+    "$bundle_dir"/starter/bundle/cbc-run-pure-playbook.md; echo) \
     -e '/<!-- STEPS-BEGIN/,/<!-- STEPS-END/{/STEPS-BEGIN/b;/STEPS-END/b;d}' \
     PLAN.md
-sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run.md v3 at $bundle_pin|" \
+sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run-pure v1 at $bundle_pin|" \
     PLAN.md
 git add PLAN.md
-git commit -m "chore: seed — steps into PLAN, cbc-run.md v3 @ $bundle_pin"
+git commit -m "chore: seed — steps into PLAN, cbc-run-pure v1 @ $bundle_pin"
 ```
 
 The first sed is the kit's marker-keeping swap — the steps land
 between the STEPS markers and the markers stay; the second fills
 the "Steps from:" comment's placeholder in place, as its own text
 sanctions. Both are re-runnable.
+
+The source is cbc-run-pure-playbook.md, the candidate variant,
+read verbatim — no filter rides the insert. What the variant
+omits against its parent (the assembly Step 0 comment, the
+install-manual clause) and why is its own header's to say; this
+manual delivers what the master holds, like every other seed
+step. The kit's first-session comment and Framing's (CbC)
+comment ride in with the steps: container orientation and a
+pointer to a delivered skill, no conclusions.
 
 **4. Fire the agent** — a fresh session in the newborn, never the
 concept repo's, with this prompt and nothing more:
@@ -113,10 +133,12 @@ item is a verifiable fact:
 - Five commits on main, no other branch; the tree clean.
 - Every bundle copy byte-identical to its master at the subject's
   pin: the concept chapters, the five skills.
-- PLAN's STEPS region holds the playbook's sequence — identical
-  to the master from its first step down at the subject's pin —
-  with both markers in place, and the "Steps from:" comment names
-  cbc-run.md v3 at the bundle pin. No playbook file exists.
+- PLAN's STEPS region holds the pure variant's sequence —
+  identical to cbc-run-pure-playbook.md from its first step down
+  at the subject's pin — both markers in place, and the "Steps
+  from:" comment names cbc-run-pure v1 at the bundle pin. No
+  playbook file exists, and no line of the region states an
+  assembly conclusion.
 - The kit's own birth fills are done, per pure.md: the birth
   entry's pin and date, ADR-0001's date, the devlog heading, the
   TEMPLATE marker gone. Beyond them, nothing is filled: every
