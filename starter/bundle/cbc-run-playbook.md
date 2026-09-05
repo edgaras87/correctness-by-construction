@@ -49,7 +49,7 @@ safe-reservations (define step) 2026-08-30.
 ## Step 0: Bootstrap                                [~]
 
 <!-- Kit step — vendored from starter/playbooks/default.md
-     @ c670fe5; additions marked (CbC) (ADR-0011). -->
+     @ c670fe5; additions marked (CbC). -->
 
 <!-- First session, this step still open: you are bootstrapping.
      The repo, its hygiene commit and the birth entry's pin already
@@ -94,14 +94,14 @@ Notes:
 ## Step 1: Framing                                  [ ]
 
 <!-- Kit step — vendored from starter/playbooks/default.md
-     @ c670fe5; additions marked (CbC) (ADR-0011). -->
+     @ c670fe5; additions marked (CbC). -->
 
 <!-- CbC: these gates are met via the cbc-framing skill — the
      intent, definition, and adversity registry are the problem
      statement, success criteria, and out-of-scope in the method's
-     richer form (ADR-0009). The middle-steps gate item is
-     confirmation, not authoring: the steps below came whole with
-     this playbook at birth. -->
+     richer form. The middle-steps gate item is confirmation, not
+     authoring: the steps below came whole with this playbook at
+     birth. -->
 
 Goal: know what we're building and why, before code.
 Gate:
@@ -207,7 +207,7 @@ Warnings from past runs:
 ## Step N: Release                                  [ ]
 
 <!-- Kit step — vendored from starter/playbooks/default.md
-     @ c670fe5; additions marked (CbC) (ADR-0011). -->
+     @ c670fe5; additions marked (CbC). -->
 
 Gate:
 - [ ] CHANGELOG entry for the release.
