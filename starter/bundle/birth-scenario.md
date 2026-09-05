@@ -16,7 +16,13 @@
      per-birth derivation, no change-plan, no ladder.
      2026-09-04: carried back to this master from the newborn's
      revision (cbc-newborn 3b27b46 + 260a39e), the trial
-     protocol's post-walk revision step. -->
+     protocol's post-walk revision step.
+     2026-09-05: two changes under ADR-0015 and the handbook's
+     reply (their ADR-0031): the CLAUDE.md text lands as a whole
+     template copied over the kit's stub, not merged into its
+     slots; and the newborn holds no playbook copy — the steps
+     live in PLAN between the STEPS markers, the "Steps from:"
+     line names the master at the bundle pin. -->
 
 # Birth scenario — assembly
 
@@ -33,16 +39,18 @@ the briefing. The scenario ends where the problem begins.
    ADR-0028), through its hygiene commit. By pointer — no step of
    that manual is restated here.
 2. Copy the bundle per the starter README's table, under docs/:
-   the concept at docs/concept/, the run's playbook alone at
-   docs/playbooks/cbc-run.md, this scenario at
-   docs/birth-scenario.md. One moment, one delivery, one pin.
-3. Copy the CbC skills to .claude/skills/. Merge the bundle's
-   CLAUDE.md text — the CbC section, the Method row, the stance
-   and local-rule lines — into the kit's CLAUDE.md stub. Shipped
+   the concept at docs/concept/, this scenario at
+   docs/birth-scenario.md. No playbook copy — the newborn holds
+   its steps in PLAN (step 4). One moment, one delivery, one pin.
+3. Copy the CbC skills to .claude/skills/. Copy the bundle's
+   CLAUDE.md template whole — everything from its title line
+   down replaces the kit's stub, the working name filled. Shipped
    text, merged once from the first walk's evidence; not derived
-   per birth.
-4. Map the playbook into PLAN: its steps replace the stub's STEPS
-   region, "Steps from:" filled.
+   per birth, not merged into slots (ADR-0015).
+4. Map the playbook into PLAN from the bundle checkout: its steps
+   replace everything between the stub's STEPS markers — the
+   markers stay — and the "Steps from:" line names cbc-run.md's
+   version at the bundle pin.
 5. Fill the stubs from the bundle's birth fills: README's
    problem-agnostic purpose paragraph and method line, PLAN's
    title, ADR-0001's date, ARCHITECTURE's "nothing built"
@@ -60,8 +68,8 @@ step, recording what each step brought, so kit and bundle delivery
 can be checked against the pins before the newborn's first
 session. The first walk's receipt (cbc-newborn `birth-seed`) has
 five commits for the five steps of the scenario as it then stood;
-under this revision the receipt is six, with the CLAUDE.md merge
-and the stub fills among the things it records.
+under this revision the receipt is six, with the CLAUDE.md
+template copy and the stub fills among the things it records.
 
 ## Commits — the newborn's first session, or the same script
 
@@ -71,7 +79,8 @@ set is; no change-plan, the split is fixed here.
 1. `chore(agent): install the arrangement` — CLAUDE.md, every
    skill (kit and CbC), .claude/decisions.md.
 2. `docs: add the CbC bundle and the records at birth` — the
-   concept, the playbook, this scenario, every stub filled.
+   concept, this scenario, every stub filled (the playbook's
+   steps arrive inside PLAN).
 3. `docs: close Step 0 in PLAN` — gates ticked on verified facts;
    the briefing gate left blocked, unblocked by the briefing
    prompt.
@@ -106,6 +115,8 @@ What the first walk settled, and what remains:
   procedure and the script is the proof. Until then this file
   ships and the newborn's copy is the procedure its Step 0 trials.
 - The kit's Step 0 comment ("take the briefing", "draft
-  CHANGE-PLAN.md", "plan open first") disagrees with this shape on
-  all three points. A finding for the handbook, not fixed in a
-  pinned copy.
+  CHANGE-PLAN.md", "plan open first") disagreed with this shape on
+  all three points. Delivered as a finding and resolved upstream
+  (their ADR-0031, 2026-09-04): the comment now carries kit facts
+  only, and how the gates are reached is stated as the bundle's
+  to say.

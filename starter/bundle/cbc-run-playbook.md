@@ -27,17 +27,18 @@
 
 # Playbook: CbC run
 
-<!-- The full sequence (ADR-0011). At birth this file is copied
-     whole to the run's docs/playbooks/cbc-run.md, and the PLAN
-     stub's STEPS region is replaced with everything from the
-     first "## Step" down (assembly step 4;
-     the install manual's sed, pending its rewrite),
-     filling the stub's "Steps from:" line. Ownership per step:
-     kit-owned steps carry a vendor line and change only by refresh
-     against a new kit pin; (CbC)-marked items and the middle steps
-     are this repo's own and change only by harvest (ADR-0007) —
-     fold a run's retrospective lessons into this master, never
-     into the run's pinned copy alone. -->
+<!-- The full sequence (ADR-0011). At birth the newborn holds no
+     copy of this file (ADR-0015 set, their ADR-0031's model): the
+     seed replaces everything between the PLAN stub's STEPS
+     markers — the markers stay — with everything from the first
+     "## Step" down (assembly step 4), and fills the stub's
+     "Steps from:" line with this playbook's version at the
+     bundle pin. Ownership per step: kit-owned steps carry a
+     vendor line and change only by refresh against a new kit
+     pin; (CbC)-marked items and the middle steps are this repo's
+     own and change only by harvest (ADR-0007) — a run's
+     retrospective lessons fold into this master, the one copy
+     that exists. -->
 
 Playbook version: v3 (kit steps refreshed from default.md v2
 2026-09-05; rebuilt full-sequence 2026-09-02, ADR-0011; created
@@ -62,12 +63,12 @@ safe-reservations (define step) 2026-08-30.
 <!-- CbC: the bundle files need no Step 0 decisions of their own —
      the kit's commit split already scopes them: the skills and
      every CLAUDE.md edit are arrangement (agent commits);
-     docs/concept/ and docs/playbooks/cbc-run.md are project
-     content and land with the records. CLAUDE.md's CbC section is
-     the bundle's shipped text, merged at the seed (ADR-0014) —
-     never derived per birth. Step 0 runs as assembly: three
-     commits per docs/birth-scenario.md, no change-plan — the
-     split is fixed there. -->
+     docs/concept/ and the scenario are project content and land
+     with the records. CLAUDE.md is the bundle's shipped
+     template, copied whole at the seed — never derived per
+     birth, never merged into the stub. Step 0 runs as assembly:
+     three commits per docs/birth-scenario.md, no change-plan —
+     the split is fixed there. -->
 
 Goal: the container exists — repo, records, arrangement — before content.
 Gate:

@@ -26,9 +26,9 @@ At a run repo's birth, copy:
 | `starter/bundle/infra-establish/` | `.claude/skills/infra-establish/` |
 | `starter/bundle/infra-serve/` | `.claude/skills/infra-serve/` |
 | `starter/bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
-| `starter/bundle/cbc-run-playbook.md` | `docs/playbooks/cbc-run.md` — the chosen playbook, alone; its full sequence then replaces the PLAN stub's STEPS region (starter/installs/cbc.md step 3, its paths pending the trial-close rewrite) |
+| `starter/bundle/cbc-run-playbook.md` | not copied as a file — its full sequence replaces everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (assembly step 4; the newborn holds no playbook copy, their ADR-0031's model) |
 | `starter/bundle/birth-scenario.md` | `docs/birth-scenario.md` (in trial — kept or deleted per the trial's closing ADR) |
-| `starter/bundle/claude-md-cbc.md` | not copied as a file — its fragments merge into the kit's CLAUDE.md stub at the slots their markers name (assembly step 3, ADR-0014) |
+| `starter/bundle/claude-md-template.md` | copied whole — everything from its title line down becomes the newborn's CLAUDE.md, replacing the kit's stub, the working name filled (assembly step 3, ADR-0015) |
 | `starter/bundle/birth-fills.md` | not copied as a file — its fragments fill the kit's record stubs and the decisions log, variables filled by the seed (assembly steps 5–6, ADR-0014) |
 
 Everything copies at birth, including the phases that run much
@@ -49,26 +49,27 @@ the method.
 
 ## The contract
 
-The overlay assumes exactly three things of the kit — a `playbooks/`
-directory, the plan's STEPS-marker region with
-`playbooks/default.md` as its base (their ADR-0028), and the
-CLAUDE.md stub's slots (opening paragraph, Conventions list, "How
-to work here", "Local rules") — and must not depend on anything
-else; a handbook kit update is checked against this list, nothing
-more. CLAUDE.md left the list with the startup snippet (ADR-0012)
-and returned with the assembled text (ADR-0014): the bundle ships
-its CbC fragments in claude-md-cbc.md, merged into the stub's slots
-at birth — text earned from the first walked derivation, not
-theory.
+The overlay assumes exactly three things of the kit — the plan's
+STEPS-marker region (the markers stay; only what sits between
+them is replaced), the step/gate idiom those steps are written
+in, and the handbook's `starter/playbooks/default.md` as the
+vendor base for our playbook's endpoint steps (their ADR-0031
+contract; `playbooks/` is no longer a kit directory) — and must
+not depend on anything else; a handbook kit update is checked
+against this list, nothing more. CLAUDE.md is not on the list and
+does not return: the bundle ships a complete template
+(claude-md-template.md) copied whole over the kit's stub at birth
+(ADR-0015) — text earned from the first walked derivation
+(ADR-0014), no slot of the stub assumed.
 The kit names the same contract from its side (the handbook's
-`starter/README.md` contract list, 2026-08-30; step item updated
-2026-09-01): the handbook states what may be assumed, each bundle
+`starter/README.md` contract list, 2026-08-30; narrowed by their
+ADR-0031): the handbook states what may be assumed, each bundle
 states what it assumes, and a bundle needing a new surface
-widens the contract handbook-side first — the stub's slots
-re-entering our list is owed to theirs (fourth handoff). The
-overlay's one write into a kit file is that merge (ADR-0014);
-everything else only adds files in paths the kit does not claim
-(ADR-0012). Records stay the kit's: CbC events are
+widens the contract handbook-side first — the fourth handoff
+told them CLAUDE.md stays off our list, and ADR-0015 holds it.
+The overlay's one non-additive act is the template replacing the
+stub (ADR-0015); everything else only adds files in paths the
+kit does not claim (ADR-0012). Records stay the kit's: CbC events are
 recorded as ordinary project events under the kit's rules, and the
 method's own artifacts (`docs/system/`, the framing derivation)
 live beside the records, not in place of them.
