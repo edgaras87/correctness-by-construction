@@ -26,6 +26,32 @@
       it updates at re-pin like every pinned copy — the
       architecture's normal staleness, traded for zero live
       dependence on their stub's shape.
+      (2026-09-05) The reply reshapes this item — absorb, don't
+      run ahead of it. The handbook answered with 41 commits
+      (HEAD c670fe5, ADR-0031..0034): the kit's CLAUDE.md is now
+      ~41 lines — orientation, records table (change-plans row
+      added), one guard comment; the empty sections are gone
+      (0032) and the Conventions list is gone (0034, "the
+      registry is the list") — so the kit content the template
+      tracks shrank and our Method-row fragment is dead (the
+      birth entry already names the convention). New stub rule:
+      no handbook ADR citations in shipped stub text. Playbooks
+      left the kit for starter/playbooks/ (0031) — we owe the
+      path sweep their ADR names, and the assumed surfaces are
+      now the STEPS region + step/gate idiom + default.md as
+      vendor base (playbooks/ is no kit directory). default.md
+      v2 adds the Framing projection gate item — take it at the
+      re-vendor. Retro-fold settled in our direction: lessons
+      fold into the playbook where it lives, the master. Their
+      model also says a newborn holds NO playbook copy — steps
+      in PLAN plus a "Steps from" line — which puts our
+      docs/playbooks/ copy in question: decide inside the
+      reshape's change-plan. agent-arrangement (0033) is the new
+      home for entry-file rules; the template's provenance cites
+      it at re-pin. Still ours from the earlier reply: our
+      installs/cbc.md sed deletes the markers, and its "no
+      marker left" line — both flip to markers-stay. Both repos'
+      reply list asks temp/ deleted; delivery is done.
 - [x] DONE 2026-09-04, change-plan 1cc3707..2a2e38b — all but the
       trial-close leftovers it names. Absorb the assembly rewrite
       (2026-09-04, from the newborn's
@@ -89,6 +115,10 @@
       masters (receipt branch of six) and is the trial's walk 2.
       The trial-close ADR re-gates on that birth reaching its
       briefing, not on cbc-newborn.
+      (2026-09-05) The next birth waits for the reshape set to
+      close and pins the kit at the handbook's c670fe5 (their
+      full stub pass: slim entry file, README test, Framing
+      projection gate, birth block fills all three dates).
 - [ ] Watch at the next birth's phase closes (ADR-0013's scope
       boundary; retargeted 2026-09-04, cbc-newborn stopped
       pre-briefing): does the newborn update its own CLAUDE.md at
@@ -147,10 +177,19 @@
       at trial close. Kept for the risk note: nothing forces the
       reading — still true of assembly, still to watch.
 
-- [ ] Fourth handbook handoff — field data accrued, no trigger
-      set (rides at or after the re-birth trial, or when items
-      accrue): the §8 field data from both lived runs this
-      absorption performed. Injection round two: the
+- [x] Fourth handbook handoff — DELIVERED 2026-09-04 (user
+      pasted temp/ staging copy), ANSWERED 2026-09-05 at their
+      c670fe5. Disposition: the ask was taken further than asked
+      — playbooks and "or delete" marks left the kit (ADR-0031),
+      then the empty sections (0032, "guard without sections"),
+      then the Conventions list itself (0034); the three pure.md
+      defects were fixed same-day (39ddf48) plus one they found
+      under ours (their own copy command also deleted the STEPS
+      markers); retro-fold settled our way — into the master;
+      item 4a dissolved with the list. What lands on us rides in
+      the Now item above. Accrued data below kept as the record
+      of what was sent: the §8 field data from both lived runs
+      this absorption performed. Injection round two: the
       placeholder-line anchor can be legally deleted, so "row at
       the placeholder line" needs a fallback, and §8's end-of-list
       answer disagrees with where the kit stub itself seats this
