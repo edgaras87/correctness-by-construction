@@ -4,17 +4,23 @@
      a trial-closing ADR decides between the assembly birth
      (docs/birth-scenario.md) and this shape. Authored from the
      lived run, not before it — the script this generalizes seeded
-     ~/IdeaProjects/cbc-pure-run. -->
+     ~/IdeaProjects/cbc-pure-run.
+     Revised same day, before any walk: the kit half defers to the
+     handbook's pure install by pointer, its fills included — the
+     seeded run-1 repo predates this and holds the kit raw; a
+     divergence for the reading, not a defect. -->
 
 # Install: the pure seed — material only, the agent finishes
 
 One idea: the seed delivers everything and decides nothing. Every
 delivery is a commit on main, so the history is the manifest —
 what arrived, from where, at which pin — and the newborn's agent
-finishes the birth itself by reading what is there. No field is
-filled anywhere: not the kit's birth placeholders, not the stubs,
-not CLAUDE.md. What the agent cannot derive (the two pins) rides
-in the seed commits' subjects; everything else it can.
+finishes the birth itself by reading what is there. The kit is
+born per the handbook's pure install, which fills its own
+mechanical birth fields; beyond that no field is filled: not the
+stubs, not CLAUDE.md, no bundle birth entry. What the agent
+cannot derive (the bundle pin) rides in its seed commit's
+subject; everything else it can.
 
 Deliberately not delivered — nothing that encodes a prior run's
 conclusions: the birth scenario, the CLAUDE.md template, the
@@ -35,26 +41,15 @@ bundle_pin=$(git -C "$bundle_dir" rev-parse --short HEAD)
 The name is a placeholder — everything before the briefing is
 problem-agnostic, and the briefing brings the real name.
 
-**2. Copy the kit raw, dotfiles included.** This is pure.md's copy
-step without its fills: no pin sed, no dates, no TEMPLATE-marker
-strip. The placeholders land as placeholders.
+**2. Kit birth per the handbook's pure install manual**
+(`engineering-handbook/starter/installs/pure.md`), through its
+hygiene commit — by pointer, no step of that manual restated
+here. Its blocks use the same `handbook_dir` / `new_project_dir`
+variables, same terminal session. Its fills run as written: the
+kit's birth entry pin, the three birth dates, the TEMPLATE
+marker stripped — seed-mechanical, the kit's own.
 
-```bash
-mkdir -p "$new_project_dir"
-cp -r "$handbook_dir"/starter/kit/. "$new_project_dir"/
-```
-
-**3. Repo and hygiene commit** — pure.md step 3, verbatim:
-
-```bash
-cd "$new_project_dir"
-git init
-git branch -M main
-git add .gitignore .gitattributes .editorconfig
-git commit -m "chore: add repo hygiene base"
-```
-
-**4. Commit the deliveries, pins in the subjects.** One commit per
+**3. Commit the deliveries, pins in the subjects.** One commit per
 delivery; the subject is where the agent later reads the pin.
 
 ```bash
@@ -79,7 +74,7 @@ git add docs/playbooks
 git commit -m "chore: seed — the CbC run playbook"
 ```
 
-**5. Fire the agent** — a fresh session in the newborn, never the
+**4. Fire the agent** — a fresh session in the newborn, never the
 concept repo's, with this prompt and nothing more:
 
 > The container and the method are delivered — the commit history
@@ -98,21 +93,24 @@ No order hints — the order the agent chooses is the run's data.
 item is a verifiable fact:
 
 - Five commits on main, no other branch; the tree clean.
-- Every copied file byte-identical to its master at the subject's
-  pin; the concept chapters, the playbook, the five skills present.
-- No fill entered: CLAUDE.md still opens with the kit's TEMPLATE
-  marker; `<handbook-commit>` and every `<YYYY-MM-DD>` placeholder
-  still read as placeholders.
+- Every bundle copy byte-identical to its master at the subject's
+  pin: the concept chapters, the playbook, the five skills.
+- The kit's own birth fills are done, per pure.md: the birth
+  entry's pin and date, ADR-0001's date, the devlog heading, the
+  TEMPLATE marker gone. Beyond them, nothing is filled: every
+  stub still reads as a stub, CLAUDE.md carries no content
+  beyond the kit's, and no bundle birth entry exists.
 - Nothing from the excluded list present: no birth-scenario.md, no
-  CLAUDE.md template, no birth-fill content, no birth entries.
+  CLAUDE.md template, no birth-fill content, no bundle birth
+  entry.
 
 What the agent is left to do — the reader's checklist for the
 reading afterwards, not instructions delivered to it: its own
 CLAUDE.md; the playbook mapped into PLAN between the STEPS markers
-with the "Steps from:" line; the record stubs filled; the birth
-entries reconstructed from the seed subjects and the log; the
-TEMPLATE marker noticed and stripped; Step 0 closed on its gates;
-the agent/project commit split held throughout.
+with the "Steps from:" line; the record stubs filled; the bundle's
+birth entry reconstructed from its seed subject (the kit's is
+filled at birth); Step 0 closed on its gates; the agent/project
+commit split held throughout.
 
 The reading is the concept repo's act, read-only, recorded there:
 the derived arrangement against the walk-1 baseline and the
