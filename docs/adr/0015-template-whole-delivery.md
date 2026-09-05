@@ -1,10 +1,13 @@
 # 0015. The shipped text is a whole template, copied not merged
 
 Date: 2026-09-05
-Status: Proposed (opened per change-plans §4; flips at the set's
-final records commit). Amends ADR-0014's delivery mechanism only —
-its decision (shipped text, merged once from the two candidates,
-no per-birth derivation) stands.
+Status: Accepted (2026-09-05, at the set's final records commit;
+opened Proposed per change-plans §4. The compose held the shape as
+proposed; one refinement at its boundary — the guard comment sits
+above the appended sections, as the kit places it, so its "every
+line below" stays true). Amends ADR-0014's delivery mechanism
+only — its decision (shipped text, merged once from the two
+candidates, no per-birth derivation) stands.
 
 ## Context
 

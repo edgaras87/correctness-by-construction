@@ -7,7 +7,15 @@
 
 ## Now (current plan step)
 
-- [ ] Reshape the CLAUDE.md delivery: template-whole, no sockets
+- [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
+      commit ends the set) — all six steps: sed fix, ADR-0015,
+      re-vendor @ c670fe5, claude-md-template.md composed (the
+      fragments file retired), scenario/README whole-copy, this
+      records commit. Two decisions rode in the plan: the newborn
+      holds no playbook copy (Steps-from line instead), and the
+      temp/ staging file is deleted. What remains is the next
+      birth (the re-birth item below).
+      Reshape the CLAUDE.md delivery: template-whole, no sockets
       (user's design, 2026-09-04, decided while drafting the
       fourth handoff). The bundle ships a complete CLAUDE.md
       template — composed once here from the kit-stub content
@@ -131,6 +139,16 @@
       harvested skill line.
 
 ## Next (upcoming steps — assign each to a step when triaged)
+
+- [ ] Fifth handoff material, accruing (no trigger set): the
+      ADR-citation trap in text that lands inside a newborn —
+      playbook steps copied into PLAN carry bare citations that
+      read as the newborn's OWN ADR numbers there. Their stub
+      rule (no handbook citations, "am" entry) covers stubs, yet
+      their default.md v2 Step 0 comment ships "(ADR-0031)" into
+      every born PLAN — their line to draw, FYI-shaped. Our side
+      fixed 2026-09-05: the (CbC) Step 0 comment's citation
+      dropped; audit any future shipped text the same way.
 
 - [ ] After the absorb change-plan closes, two user observations
       (2026-09-04), raised mid-set and parked deliberately:

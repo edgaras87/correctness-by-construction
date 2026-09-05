@@ -17,20 +17,32 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 
 ### Added
 
-- The bundle ships the newborn's arrangement as text: CLAUDE.md
-  fragments (`starter/bundle/claude-md-cbc.md`, merged once from
-  the first walked birth's derivation and the withheld snippet)
-  and birth-fill templates (`starter/bundle/birth-fills.md`,
-  generalized from that birth's lived fills). No newborn derives
-  its arrangement again (ADR-0014).
+- The bundle ships the newborn's arrangement as text: a complete
+  CLAUDE.md template (`starter/bundle/claude-md-template.md`,
+  composed from the kit's entry file at the pin and the method's
+  text — merged once from the first walked birth's derivation and
+  the withheld snippet — copied whole at birth, no merge into the
+  kit's stub; ADR-0014, delivery per ADR-0015) and birth-fill
+  templates (`starter/bundle/birth-fills.md`, generalized from
+  that birth's lived fills). No newborn derives its arrangement
+  again.
 
 ### Changed
 
 - A birth is assembly (`starter/bundle/birth-scenario.md`,
   revised in the first newborn and carried back): six mechanical
   seed steps, three prescribed commits, then the briefing. The
-  bundle lands under `docs/` in the newborn and only the chosen
-  playbook copies — the copy table has the new destinations.
+  bundle lands under `docs/` in the newborn; the newborn holds no
+  playbook copy — its steps land in PLAN between the STEPS
+  markers, with a "Steps from:" line naming the master at the
+  bundle pin — and the copy table has the new destinations.
+- The install manual's playbook block keeps the STEPS markers:
+  only what sits between them is swapped, so re-running the block
+  is genuinely harmless.
+- The playbook's kit steps re-vendored from the handbook's
+  `starter/playbooks/default.md` v2 (their new home): Step 0's
+  comment slims to kit facts, Framing gains the every-step
+  projection gate item — cbc-run.md is v3.
 - Concept chapter headers name the authoritative copy by path
   instead of claiming it for whichever copy is being read —
   header-only, the concept stays v1.
