@@ -167,6 +167,31 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Header audiences (2026-09-05, user's question at the
+      pure-seed run): a bundle artifact's header has two
+      audiences — the garden's mechanics (tiers, harvest, the
+      three homes, master-side use notes) and the copy's reader,
+      who needs only neutral vendor language: source + version +
+      pin, do not edit this copy, changes arrive by re-copy,
+      record your surprises in this repo's own records (the run
+      never needs the word "harvest" — its half of the contract
+      is writing surprises down). Only claude-md-template.md
+      separates the two today (header above the copy line); the
+      concept chapters mix them — location-neutral by design
+      (b90e7d7) but speaking ecosystem vocabulary into a repo
+      that may go public or detach its agent side — and the
+      playbook's use-comment travelled into the pure-seed copy
+      claiming "the newborn holds no copy of this file", with
+      bare ADR citations riding along (the citation trap, in a
+      header). Skills are fine as-is: agent-side, not public
+      docs — user's call. Fix pattern exists: master header
+      above a marker, the copy is everything below, checkable as
+      identical-below-the-marker. Not urgent — decide the split
+      deliberately at the trial-close delivery rework; the
+      seeded run-1 copy stays as delivered (its reaction is
+      data). Related: observation (c) record-audience
+      boundaries; fifth-handoff item below (their stubs face the
+      same question).
 - [ ] Fifth handoff material, accruing (no trigger set): the
       ADR-citation trap in text that lands inside a newborn —
       playbook steps copied into PLAN carry bare citations that
