@@ -27,15 +27,18 @@ bundle overlays the method (ADR-0009). The sequence:
    session:
 
    ```bash
-   sed -i -e "/<!-- STEPS-BEGIN/r "<(sed -n '/^## Step/,$p' \
-       "$new_project_dir"/playbooks/cbc-run.md) \
-       -e '/<!-- STEPS-BEGIN/,/STEPS-END -->/d' \
+   sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
+       "$new_project_dir"/playbooks/cbc-run.md; echo) \
+       -e '/<!-- STEPS-BEGIN/,/<!-- STEPS-END/{/STEPS-BEGIN/b;/STEPS-END/b;d}' \
        "$new_project_dir"/PLAN.md
    ```
 
    The inner sed keeps everything from the first step down; the
-   outer swaps the marker region for it. Markers, not line
-   numbers — re-running is harmless. Then fill the plan's "Steps
+   outer swaps everything between the STEPS markers for it and
+   leaves the markers themselves in place. The markers stay for
+   good — that is what makes re-running harmless: the region
+   swaps clean instead of the block finding nothing to replace.
+   Then fill the plan's "Steps
    from:" line from the playbook's own version line. The copy
    source is the newborn's `playbooks/cbc-run.md`, landed at
    step 2; the kit's own playbooks stay in `playbooks/`,
@@ -66,8 +69,9 @@ every item below is a verifiable fact:
 - `concept/`, the five skills, and `playbooks/cbc-run.md` present
   and byte-identical to this repo's masters at the pinned commit.
 - PLAN.md's STEPS region holds the playbook's full sequence
-  (Step 0 through Step N, no marker left), and the "Steps from:"
-  line names `playbooks/cbc-run.md` at the copied version.
+  (Step 0 through Step N) between the STEPS markers, both markers
+  still in place, and the "Steps from:" line names
+  `playbooks/cbc-run.md` at the copied version.
 - CLAUDE.md's CbC section is the newborn's own — derived at
   Step 0 from `concept/`, no text merged in at copy time
   (ADR-0012).
