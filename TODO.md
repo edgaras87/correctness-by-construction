@@ -34,7 +34,21 @@
       goes well the parent is deleted and the variant stays,
       with the assembly artifacts falling at trial close;
       otherwise the variant dies. Until the reading, the parent
-      is procedure of record and harvest lands there first.)
+      is procedure of record and harvest lands there first.
+      Fifth, user's design — the CHANNEL SPLIT: session-scoped
+      text belongs to the firing prompt, PLAN to the project.
+      The prompt now carries the situation (two sources, why
+      split), the task, read-everything, and the expectation of
+      a change-plan; the variant's Step 0 is pure container prep
+      (agent-side gates out; the briefing moves to Framing as
+      its starting input, so Step 0 closes clean — the walk-1
+      blocked-gate known-issue dissolves). This deliberately
+      re-opens assembly's "no change-plan": in the pure design
+      the split is not fixed by us, so the convention fires on
+      its own trigger. The measured object is now ASSEMBLY
+      JUDGMENT — the sequence chosen and justified (entrance doc
+      first? records when, adapted how far? skills whole or
+      split by source?) — not discovery from nothing.)
       What it measures: a second independent derivation of the
       arrangement (the convergence point ADR-0014 gave up),
       compared against the first walk's (archived newborn

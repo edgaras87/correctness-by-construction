@@ -2,13 +2,19 @@
      cbc-run-playbook.md (v3, this repo — provenance, harvest
      history and the kit-vendor base live in its header), created
      for the pure-seed experiment (starter/installs/pure-seed.md).
-     The steps are the parent's verbatim except two deltas, each
-     a birth-procedure statement the pure design has no place
-     for: the (CbC) Step 0 comment is omitted (assembly's
-     shipped-template / three-commits / no-change-plan
-     procedure), and Step 0's (CbC) gate item loses its trailing
-     install-manual clause (a pointer the pure newborn cannot
-     follow; the birth-entry fact stays). Lifespan: the
+     The steps are the parent's except four deltas. Two drop
+     birth-procedure statements the pure design has no place
+     for: the assembly (CbC) Step 0 comment (shipped-template /
+     three-commits / no-change-plan), and the (CbC) gate item's
+     trailing install-manual clause. Two are the channel split
+     (2026-09-05, user's design): session-scoped text belongs to
+     the firing prompt and PLAN to the project — so the kit's
+     first-session comment and the agent-side gates (the commit
+     split, the two birth entries) leave Step 0 for the prompt
+     and the run's own change-plan, making Step 0 pure container
+     prep; and the briefing leaves Step 0's gates to open
+     Framing as its starting input, so Step 0 closes clean, no
+     gate born blocked. Lifespan: the
      experiment's reading decides — of this file and the parent,
      the winner stays and the other is deleted; until then the
      parent is the procedure of record, harvest lands there
@@ -21,16 +27,7 @@ Playbook version: v1 (2026-09-05, variant of cbc-run v3)
 ## Step 0: Bootstrap                                [~]
 
 <!-- Kit step — vendored from starter/playbooks/default.md
-     @ c670fe5; additions marked (CbC). -->
-
-<!-- First session, this step still open: you are bootstrapping.
-     The repo, its hygiene commit and the birth entry's pin already
-     exist; the gates below are the exit, and they are facts about
-     the kit, the same in every birth. How you reach them — a
-     briefing, a change-plan, a commit order — is the bundle's, and
-     the manual that born you says it (ADR-0031). Two comment kinds
-     in every stub: a fill-comment says its content replaces it;
-     every other comment is a standing rule and stays. -->
+     @ c670fe5; re-cut for the pure design per the header. -->
 
 Goal: the container exists — repo, records, arrangement — before content.
 Gate:
@@ -41,21 +38,17 @@ Gate:
 - [ ] No fill-comment remains: where a comment says its content
       replaces it, the content is there and the comment is not.
       Every other stub comment is a standing rule — it stays.
-- [ ] Briefing committed: README purpose draft + devlog entry (a) —
-      names given here may change at Framing; that is what it is for.
-- [ ] Agent/project commit split held from the first commit: no
-      commit mixes CLAUDE.md / .claude/ with the records.
-- [ ] Birth entry in .claude/decisions.md filled: date and the
-      copy-time handbook commit.
-- [ ] (CbC) The bundle's birth entry beside the kit's in
-      .claude/decisions.md: this repo's commit at copy time,
-      "pinned to concept v1".
 Notes:
 
 ## Step 1: Framing                                  [ ]
 
 <!-- Kit step — vendored from starter/playbooks/default.md
      @ c670fe5; additions marked (CbC). -->
+
+<!-- CbC: this step opens on the briefing — its starting input,
+     the first prompt of project work. The README purpose
+     paragraph and the devlog's briefing line land here; names
+     given before it are working names. -->
 
 <!-- CbC: these gates are met via the cbc-framing skill — the
      intent, definition, and adversity registry are the problem

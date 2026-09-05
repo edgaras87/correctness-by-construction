@@ -22,9 +22,19 @@
      Fourth revision, same day, user's call: the filter becomes
      an artifact — the insert reads cbc-run-pure-playbook.md
      verbatim, the pure-seed candidate variant (its header
-     states the two deltas and its lifespan: the experiment's
+     states the deltas and its lifespan: the experiment's
      reading keeps one of variant and parent, deletes the
-     other). Staged changes over scripted-out parts. -->
+     other). Staged changes over scripted-out parts.
+     Fifth revision, same day, user's design — the channel
+     split: session-scoped text moves to the firing prompt
+     (situation, task, read-everything, the plan expectation),
+     PLAN keeps only project truth — the variant's Step 0 is
+     pure container prep, its agent-side gates gone to the
+     prompt and the run's own change-plan, and the briefing
+     moves from Step 0's gates to Framing's starting input, so
+     Step 0 closes clean. The measured object is now assembly
+     judgment: the commit sequence the agent chooses and
+     justifies, not discovery from nothing. -->
 
 # Install: the pure seed — material only, the agent finishes
 
@@ -115,17 +125,32 @@ pointer to a delivered skill, no conclusions.
 **4. Fire the agent** — a fresh session in the newborn, never the
 concept repo's, with this prompt and nothing more:
 
-> The container and the method are delivered — the commit history
-> shows what arrived and from where. Finish the birth: set up what
-> is left — your own arrangement, the records, the plan. PLAN's
-> Step 0 gates are the exit.
->
-> The problem arrives later as a briefing; nothing before it names
-> the problem.
+> This repo was seeded, not born whole — the commit history shows
+> it: the handbook's starter kit first (the container — records,
+> conventions, the entry file), then the correctness-by-construction
+> bundle (the method — docs/concept/, five skills, the steps in
+> PLAN), each seed commit naming its source's pin. The kit knows
+> nothing of the method; the bundle presumes the container. Your
+> task is to finish the birth: assemble what was delivered into a
+> working project — your own arrangement, the records, PLAN's
+> Step 0 closed on its gates. Read the whole repository first,
+> every file and every seed commit. Then plan the work as the
+> conventions you were given direct — your own commit sequence,
+> your own order of artifacts, split by the commit scopes the
+> skills define, each choice one you can justify in the plan. The
+> problem arrives later, as a briefing that opens Framing; nothing
+> before it names the problem.
 
-The first line is scope; the second is a fact about the world the
-agent cannot know and the one guard that must precede every skill.
-No order hints — the order the agent chooses is the run's data.
+The prompt is the session channel — it carries what is true only
+of this moment: the situation (two sources, why split), the task,
+the read-everything instruction, the expectation of a plan. PLAN
+carries only what stays true of the project. What the prompt
+deliberately never says: any order, any answer to which records
+to touch or how far to adapt them, whether skills land as one
+commit or split by source — the sequence the agent chooses and
+justifies is the run's central data. The commit-scope rule is not
+restated; it rides in the delivered skills, and the prompt only
+points at them.
 
 **A correct seed is checkable** — before the agent starts, every
 item is a verifiable fact:
@@ -149,11 +174,16 @@ item is a verifiable fact:
   entry.
 
 What the agent is left to do — the reader's checklist for the
-reading afterwards, not instructions delivered to it: its own
-CLAUDE.md; the record stubs filled; the bundle's birth entry
-reconstructed from the seed subjects (the kit's is filled at
-birth); Step 0 closed on its gates; the agent/project commit
-split held throughout.
+reading afterwards, not instructions delivered to it: a
+change-plan whose commit sequence is chosen and justified (the
+entrance doc's place in it, when records enter history and how
+far they adapt to the method, whether skills land whole or split
+by source); its own CLAUDE.md; the record stubs filled; the
+bundle's birth entry reconstructed from the seed subjects (the
+kit's is filled at birth); Step 0 closed clean on its container
+gates — no briefing gate exists to block it, the briefing opens
+Framing; the agent/project commit split held throughout, from
+the skills, unprompted.
 
 The reading is the concept repo's act, read-only, recorded there:
 the derived arrangement against the walk-1 baseline and the
