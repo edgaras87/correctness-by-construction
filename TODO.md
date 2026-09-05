@@ -7,6 +7,33 @@
 
 ## Now (current plan step)
 
+- [ ] Pure-seed experiment (2026-09-05, user's design) — separate
+      from the trial: NOT walk 2, the assembly birth keeps the
+      held briefing and the trial-close ADR still gates on it.
+      Shape: the seed delivers material only, committed on main
+      (hygiene; kit remainder raw — none of pure.md's fills, the
+      TEMPLATE marker left in; concept/; the five skills; the
+      playbook — pins in the commit subjects; NO scenario,
+      template, fills, or birth entries: nothing that encodes a
+      prior run's conclusions). Then one agent session with a
+      two-line prompt: finish the birth, Step 0's gates are the
+      exit; the problem arrives later as a briefing. No order
+      hints — the order chosen is data.
+      What it measures: a second independent derivation of the
+      arrangement (the convergence point ADR-0014 gave up),
+      compared against the first walk's (archived newborn
+      8f167c4, held blind at docs/baselines/) and the shipped
+      template; whether the agent maps the playbook into PLAN,
+      reconstructs the birth entries from the seed subjects,
+      strips the TEMPLATE marker, holds the commit split. It
+      also live-tests variant B's delivery shape (seed commits
+      on main — the delivered/authored split is exact in the
+      log).
+      Reading is this repo's act, read-only, recorded here.
+      2026-09-05: cbc-newborn moved to archive/cbc-newborn-v1
+      (user's act, both branches intact) — the walk-1 comparison
+      source for this experiment and for the trial.
+
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
       re-vendor @ c670fe5, claude-md-template.md composed (the
