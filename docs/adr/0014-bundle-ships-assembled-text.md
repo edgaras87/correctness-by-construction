@@ -5,6 +5,9 @@ Status: Accepted (Proposed at the set's open; flipped at its final
 records commit. One boundary reshaped it before the flip: the
 step-3 review slimmed the shipped text and moved the records
 mapping to the fills — the Decision below is the reshaped one.)
+Delivery amended by ADR-0015 (2026-09-05): the text ships as a
+complete template copied whole — the merge into the kit's stub,
+including the write-clause return below, is overtaken.
 
 ## Context
 
