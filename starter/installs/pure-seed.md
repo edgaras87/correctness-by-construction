@@ -8,7 +8,12 @@
      Revised same day, before any walk: the kit half defers to the
      handbook's pure install by pointer, its fills included — the
      seeded run-1 repo predates this and holds the kit raw; a
-     divergence for the reading, not a defect. -->
+     divergence for the reading, not a defect.
+     Revised again same day: the playbook is not delivered as a
+     file — the seed inserts its steps into PLAN and fills the
+     "Steps from:" line, matching the adopted no-copy model. The
+     does-the-agent-find-the-mapping observation is deliberately
+     given away; the run walked is reseeded to this shape. -->
 
 # Install: the pure seed — material only, the agent finishes
 
@@ -17,15 +22,19 @@ delivery is a commit on main, so the history is the manifest —
 what arrived, from where, at which pin — and the newborn's agent
 finishes the birth itself by reading what is there. The kit is
 born per the handbook's pure install, which fills its own
-mechanical birth fields; beyond that no field is filled: not the
+mechanical birth fields; the seed also maps the playbook's steps
+into PLAN and fills its "Steps from:" line — mechanical, from
+the pins, matching the no-copy model (the newborn holds no
+playbook file). Beyond those, no field is filled: not the other
 stubs, not CLAUDE.md, no bundle birth entry. What the agent
-cannot derive (the bundle pin) rides in its seed commit's
-subject; everything else it can.
+cannot derive (the bundle pin) rides in the seed commits'
+subjects; everything else it can.
 
 Deliberately not delivered — nothing that encodes a prior run's
 conclusions: the birth scenario, the CLAUDE.md template, the
-birth fills, the pre-written birth entries. The agent meets the
-kit and the method raw.
+birth fills, the pre-written birth entries, and no playbook
+file — its steps ride in PLAN. The agent meets the kit and the
+method raw.
 
 **1. Set the paths and capture the pins.**
 
@@ -68,11 +77,20 @@ done
 git add .claude/skills
 git commit -m "chore: seed — the five CbC skills"
 
-mkdir -p docs/playbooks
-cp "$bundle_dir"/starter/bundle/cbc-run-playbook.md docs/playbooks/cbc-run.md
-git add docs/playbooks
-git commit -m "chore: seed — the CbC run playbook"
+sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
+    "$bundle_dir"/starter/bundle/cbc-run-playbook.md; echo) \
+    -e '/<!-- STEPS-BEGIN/,/<!-- STEPS-END/{/STEPS-BEGIN/b;/STEPS-END/b;d}' \
+    PLAN.md
+sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run.md v3 at $bundle_pin|" \
+    PLAN.md
+git add PLAN.md
+git commit -m "chore: seed — steps into PLAN, cbc-run.md v3 @ $bundle_pin"
 ```
+
+The first sed is the kit's marker-keeping swap — the steps land
+between the STEPS markers and the markers stay; the second fills
+the "Steps from:" comment's placeholder in place, as its own text
+sanctions. Both are re-runnable.
 
 **4. Fire the agent** — a fresh session in the newborn, never the
 concept repo's, with this prompt and nothing more:
@@ -94,7 +112,11 @@ item is a verifiable fact:
 
 - Five commits on main, no other branch; the tree clean.
 - Every bundle copy byte-identical to its master at the subject's
-  pin: the concept chapters, the playbook, the five skills.
+  pin: the concept chapters, the five skills.
+- PLAN's STEPS region holds the playbook's sequence — identical
+  to the master from its first step down at the subject's pin —
+  with both markers in place, and the "Steps from:" comment names
+  cbc-run.md v3 at the bundle pin. No playbook file exists.
 - The kit's own birth fills are done, per pure.md: the birth
   entry's pin and date, ADR-0001's date, the devlog heading, the
   TEMPLATE marker gone. Beyond them, nothing is filled: every
@@ -106,11 +128,10 @@ item is a verifiable fact:
 
 What the agent is left to do — the reader's checklist for the
 reading afterwards, not instructions delivered to it: its own
-CLAUDE.md; the playbook mapped into PLAN between the STEPS markers
-with the "Steps from:" line; the record stubs filled; the bundle's
-birth entry reconstructed from its seed subject (the kit's is
-filled at birth); Step 0 closed on its gates; the agent/project
-commit split held throughout.
+CLAUDE.md; the record stubs filled; the bundle's birth entry
+reconstructed from the seed subjects (the kit's is filled at
+birth); Step 0 closed on its gates; the agent/project commit
+split held throughout.
 
 The reading is the concept repo's act, read-only, recorded there:
 the derived arrangement against the walk-1 baseline and the

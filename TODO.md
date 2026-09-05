@@ -19,13 +19,19 @@
       two-line prompt: finish the birth, Step 0's gates are the
       exit; the problem arrives later as a briefing. No order
       hints — the order chosen is data.
+      (2026-09-05, revised twice before firing: the kit half
+      runs pure.md by pointer, fills included; the playbook is
+      not delivered as a file — the seed inserts its steps into
+      PLAN and fills "Steps from:", so the find-the-mapping and
+      strip-the-marker observations are deliberately given
+      away.)
       What it measures: a second independent derivation of the
       arrangement (the convergence point ADR-0014 gave up),
       compared against the first walk's (archived newborn
       8f167c4, held blind at docs/baselines/) and the shipped
-      template; whether the agent maps the playbook into PLAN,
-      reconstructs the birth entries from the seed subjects,
-      strips the TEMPLATE marker, holds the commit split. It
+      template; whether the agent reconstructs the bundle's
+      birth entry from the seed subjects and holds the commit
+      split. It
       also live-tests variant B's delivery shape (seed commits
       on main — the delivered/authored split is exact in the
       log).
