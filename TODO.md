@@ -116,9 +116,19 @@
       own reason-to-exist, measured. The parent stays procedure
       of record, untouched (2026-09-06, overtaken the same day:
       ADR-0016 deleted the parent — the variant is the only
-      playbook, and pure-seed.md the procedure of record). Run 2 of the pure seed delivers v3
-      at a new pin and then measures arrangement and gates in
-      one run.
+      playbook, and pure-seed.md the procedure of record). Run 2
+      of the pure seed delivers the provisional playbook at a
+      new pin and then measures arrangement and gates in one
+      run. (2026-09-06, v4 — the user took the strip
+      whole-playbook: Bootstrap and Framing lose their vendored
+      kit gates and kit comments too, overturning decision one
+      above for steps 0 and 1; only Release stays vendored, the
+      fixed endpoint. Framing's sweeper item and the two
+      projection items now sit only in frozen v2 — hand-back
+      candidates at the Framing boundary if the derivation
+      misses them. The reading gains a category: kit hygiene an
+      agent re-derives unaided vs kit knowledge only the
+      vendored text held.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,

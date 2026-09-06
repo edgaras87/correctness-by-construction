@@ -32,65 +32,41 @@
      docs/baselines/cbc-run-pure-playbook-v2.md for the per-step
      derived-vs-frozen reading (the TODO item holds the
      protocol: warnings handed to the run only after each
-     derivation is recorded). -->
+     derivation is recorded).
+     v4 (2026-09-06, provisional, user's design — the strip goes
+     whole-playbook): Bootstrap and Framing lose their vendored
+     kit gates and kit comments too; every step but Release now
+     derives its gate at opening. Release keeps its vendored
+     text as the one fixed endpoint, so the kit-refresh rule
+     above now reaches only Step N. No new baseline: v2 holds
+     every stripped gate whole, kit text included. -->
 
 # Playbook: CbC run — pure
 
-Playbook version: v3 (2026-09-06, provisional — middle gates
-derived at step opening; v2 2026-09-06, retirement gate item;
-v1 2026-09-05, variant of cbc-run v3)
+Playbook version: v4 (2026-09-06, provisional — every gate but
+Release's derived at step opening; v3 2026-09-06, middle strip;
+v2 2026-09-06, retirement gate item; v1 2026-09-05, variant of
+cbc-run v3)
 
 ## Step 0: Bootstrap                                [~]
 
-<!-- Kit step — vendored from starter/playbooks/default.md
-     @ c670fe5; re-cut for the pure design per the header. -->
-
 Goal: the container exists — repo, records, arrangement — before content.
-Gate:
-- [ ] Repo initialized; hygiene base files present.
-- [ ] Every placeholder filled, or explicitly deferred to a named
-      step (the stack overlay defers to Framing, which confirms the
-      steps that fill or delete it).
-- [ ] No fill-comment remains: where a comment says its content
-      replaces it, the content is there and the comment is not.
-      Every other stub comment is a standing rule — it stays.
+Gate: derived when this step opens — verifiable facts, from the
+goal and the newborn's own records; written into this step before
+its work starts.
 Notes:
 
-## Step 1: Framing                                  [ ]
-
-<!-- Kit step — vendored from starter/playbooks/default.md
-     @ c670fe5; additions marked (CbC). -->
+## Step 1: Framing  (cbc-framing)                   [ ]
 
 <!-- CbC: this step opens on the briefing — its starting input,
      the first prompt of project work. The README purpose
      paragraph and the devlog's briefing line land here; names
      given before it are working names. -->
 
-<!-- CbC: these gates are met via the cbc-framing skill — the
-     intent, definition, and adversity registry are the problem
-     statement, success criteria, and out-of-scope in the method's
-     richer form. The middle-steps gate item confirms the step
-     sequence, which came whole at birth; each middle step's gate
-     is its own — authored when that step opens, as its Gate line
-     says. -->
-
 Goal: know what we're building and why, before code.
-Gate:
-- [ ] One-paragraph problem statement in README.
-- [ ] Success criteria written (how we'll know it worked).
-- [ ] Out-of-scope list written.
-- [ ] Middle steps stand and the plan reads end-to-end once,
-      coarsely — the playbook's confirmed against the framed
-      problem where a typed one was copied in, written fresh here
-      where the project was born on this bare default; birth
-      materials brought with the briefing weigh in either way.
-- [ ] Every step whose gate makes something true that the outside
-      should see names its projection as a gate item — the README
-      section, the ARCHITECTURE change. Projection follows truth,
-      and the gate is where it is caught.
-- [ ] (CbC) Entry-file lines the briefing made false are retired
-      in this set; every temporary line still standing names a
-      later step as its end.
+Gate: derived when this step opens — verifiable facts, from the
+goal, the named skill, and the briefing; written into this step
+before its work starts.
 Notes:
 
 ## Step 2: Define (naming)                          [ ]

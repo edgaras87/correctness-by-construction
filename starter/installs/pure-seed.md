@@ -113,10 +113,10 @@ sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
     "$bundle_dir"/starter/bundle/cbc-run-pure-playbook.md; echo) \
     -e '/<!-- STEPS-BEGIN/,/<!-- STEPS-END/{/STEPS-BEGIN/b;/STEPS-END/b;d}' \
     PLAN.md
-sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run-pure v3 at $bundle_pin|" \
+sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run-pure v4 at $bundle_pin|" \
     PLAN.md
 git add PLAN.md
-git commit -m "chore: seed — steps into PLAN, cbc-run-pure v3 @ $bundle_pin"
+git commit -m "chore: seed — steps into PLAN, cbc-run-pure v4 @ $bundle_pin"
 ```
 
 The first sed is the kit's marker-keeping swap — the steps land
@@ -190,7 +190,7 @@ item is a verifiable fact:
 - PLAN's STEPS region holds the pure variant's sequence —
   identical to cbc-run-pure-playbook.md from its first step down
   at the subject's pin — both markers in place, and the "Steps
-  from:" comment names cbc-run-pure v3 at the bundle pin. No
+  from:" comment names cbc-run-pure v4 at the bundle pin. No
   playbook file exists, and no line of the region states an
   assembly conclusion.
 - The kit's own birth fills are done, per pure.md: the birth
