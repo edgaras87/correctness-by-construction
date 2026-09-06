@@ -16,7 +16,9 @@ authoritative; a run's copies are pinned — they change only by
 copying anew from here, and a run's surprises come back as harvest,
 never as edits (docs/models/tiers.md).
 
-At a run repo's birth, copy:
+Two kinds of delivery, two directories (ADR-0017). **Pinned
+copies** land as files at paths the kit does not claim; the run
+never edits them, only re-copies at a new pin:
 
 | From here | Into the run repo |
 |---|---|
@@ -26,9 +28,16 @@ At a run repo's birth, copy:
 | `starter/bundle/infra-establish/` | `.claude/skills/infra-establish/` |
 | `starter/bundle/infra-serve/` | `.claude/skills/infra-serve/` |
 | `starter/bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
-| `starter/fills/cbc-run-pure-playbook.md` | not copied as a file — its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (pure-seed step 3; the newborn holds no playbook copy, their ADR-0031's model) |
-| `starter/fills/claude-md-template.md` | not copied — parked, undelivered (ADR-0016): the pure-born newborn derives its own CLAUDE.md; the template stays as the three-way reading's comparison object |
-| `starter/fills/readme-md-template.md` | not copied — parked, undelivered: composed 2026-09-06 from the kit's README stub @ c670fe5 and run-1's harvested fills, waiting with the CLAUDE template for a semi-pure install if one is designed (TODO) |
+
+**Fills** are text the seed writes into a file the kit already
+put there; from that moment the text is the run's own — edited in
+place, never re-copied, no pin beyond the seed commit's subject:
+
+| From here | Into the run repo |
+|---|---|
+| `starter/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (pure-seed step 3; the newborn holds no playbook copy, their ADR-0031's model) |
+| `starter/fills/claude-md-template.md` | parked, undelivered (ADR-0016): the pure-born newborn derives its own CLAUDE.md from the kit's stub. If delivered, the body goes over that stub whole from the title line down, headless (ADR-0015) — a semi-pure install's act, its own decision when designed |
+| `starter/fills/readme-md-template.md` | parked, undelivered: composed 2026-09-06 from the kit's README stub @ c670fe5 and the runs' harvested fills, waiting with the CLAUDE template for the same semi-pure install (TODO) |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before

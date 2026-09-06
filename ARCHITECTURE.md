@@ -41,14 +41,18 @@ concept version names.
 Why shaped this way: ADR-0003 (versioning); several documents because
 the statement's own split is by chapter (Framing, Step 2).
 
-### Executions (`starter/bundle/`)
+### Executions (`starter/bundle/`, `starter/fills/`)
 
-Responsibility: the derived layer — the five skills, their
-references, and the pure playbook (cbc-run-pure, ADR-0016) a run
-repo receives at birth, covering the
-whole pipeline (cbc-framing → infra-establish / infra-serve →
-cbc-bootstrap → cbc-slice), each file pinned to the concept
-version it derives from or is checked against (ADR-0005).
+Responsibility: the derived layer a run repo receives at birth,
+covering the whole pipeline (cbc-framing → infra-establish /
+infra-serve → cbc-bootstrap → cbc-slice), each file pinned to the
+concept version it derives from or is checked against (ADR-0005).
+Two kinds by how they land (ADR-0017): `bundle/` holds the five
+skills with their references, copied as files the run keeps
+pinned; `fills/` holds text the seed writes into the kit's own
+files and the run then owns — the pure playbook's steps into PLAN
+(cbc-run-pure, ADR-0016) and the two parked entry-file templates
+(ADR-0015), undelivered until a semi-pure install is designed.
 Content, not this repo's working arrangement: nothing here is
 installed in this repo's own `.claude/`, and the archive's agent
 definitions stayed behind (ADR-0006). Two skills carry copy-and-fill
@@ -62,7 +66,7 @@ authoritative-vs-pinned rule; the install manual
 (ADR-0016) — the material-only seed, its kit half running the
 handbook's pure install by pointer.
 Why shaped this way: ADR-0004 (amended), ADR-0006, ADR-0008,
-ADR-0010, ADR-0016.
+ADR-0010, ADR-0016, ADR-0017.
 
 ## Invariants
 
@@ -89,7 +93,7 @@ ADR-0010, ADR-0016.
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
-| `starter/` | The delivery layout (ADR-0010): `bundle/` is the derived layer a run copies at birth (skills, playbook steps, the parked templates); `README.md` describes and maps; `installs/pure-seed.md` is the birth manual (ADR-0016) |
+| `starter/` | The delivery layout (ADR-0010, ADR-0017): `bundle/` is what a run copies as pinned files (the five skills); `fills/` is text written into the kit's own files (the playbook's steps; the parked entry-file templates); `README.md` describes and maps; `installs/pure-seed.md` is the birth manual (ADR-0016) |
 | `docs/baselines/` | Held baselines — theory artifacts withheld from delivery, blind, compared against lived results (ADR-0012) |
 | `docs/models/` | Handbook models, vendored pinned copies (ADR-0002) |
 | `docs/adr/` | Architecture decision records |
