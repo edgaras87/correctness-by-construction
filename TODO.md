@@ -63,6 +63,12 @@
       2026-09-05: cbc-newborn moved to archive/cbc-newborn-v1
       (user's act, both branches intact) — the walk-1 comparison
       source for this experiment and for the trial.
+      (2026-09-06) ADR-0016 takes the verdict this item deferred
+      to a trial close: the pure shape is adopted, the assembly
+      walk cancelled, the parent playbook deleted — the variant
+      is the only playbook. The held briefing is released to the
+      pure path: it opens Framing in the pure-born run when the
+      user fires it. The item's trial framing above is history.
 
 - [ ] Template three-way reading, after the next full run
       (2026-09-06, user's design): the shipped CLAUDE.md template
@@ -108,7 +114,9 @@
       skills (re-derived) and which are knowledge only the
       playbook holds (missed) — that answer is the playbook's
       own reason-to-exist, measured. The parent stays procedure
-      of record, untouched. Run 2 of the pure seed delivers v3
+      of record, untouched (2026-09-06, overtaken the same day:
+      ADR-0016 deleted the parent — the variant is the only
+      playbook, and pure-seed.md the procedure of record). Run 2 of the pure seed delivers v3
       at a new pin and then measures arrangement and gates in
       one run.
 
@@ -183,7 +191,15 @@
       copy authoritative — false in a newborn, needs a variant.
       Stays at trial close: install-manual rewrite, the rebuild
       script, whether the scenario file still ships.
-- [ ] Re-birth under the scenario — unblocked 2026-09-03 (the
+- [x] CANCELLED 2026-09-06 by ADR-0016: the pure shape is
+      adopted and the assembly walk will not happen. The
+      briefing — still baseline-blind — is released to the pure
+      path and opens Framing in the pure-born run; the
+      blind-replication protocol below survives with it (this
+      repo still opens run and baseline at phase closes and
+      records the deltas here). The rest of this item is
+      history.
+      Re-birth under the scenario — unblocked 2026-09-03 (the
       moment-of-need set closed; the third reply absorbed
       same-day, so the seed reads the kit @ f9371e4 and the
       newborn holds six conventions — the birth entry names six):

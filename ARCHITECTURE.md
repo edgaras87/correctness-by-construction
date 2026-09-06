@@ -58,10 +58,11 @@ file is the run's own (ADR-0008). The stay-home delivery docs sit
 beside the bundle, outside the copy set (ADR-0010): the starter doc
 (`starter/README.md`) states the birth mapping and the
 authoritative-vs-pinned rule; the install manual
-(`starter/installs/cbc.md`) is the birth procedure, peer of the
-handbook's `installs/handbook.md`.
+(`starter/installs/pure-seed.md`) is the birth procedure
+(ADR-0016) — the material-only seed, its kit half running the
+handbook's pure install by pointer.
 Why shaped this way: ADR-0004 (amended), ADR-0006, ADR-0008,
-ADR-0010.
+ADR-0010, ADR-0016.
 
 ## Invariants
 
@@ -88,7 +89,7 @@ ADR-0010.
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
-| `starter/` | The delivery layout (ADR-0010): `bundle/` is the derived layer a run copies at birth (skills, playbook, scenario); `README.md` describes and maps; `installs/cbc.md` is the birth manual |
+| `starter/` | The delivery layout (ADR-0010): `bundle/` is the derived layer a run copies at birth (skills, playbook steps, the parked template); `README.md` describes and maps; `installs/pure-seed.md` is the birth manual (ADR-0016) |
 | `docs/baselines/` | Held baselines — theory artifacts withheld from delivery, blind, compared against lived results (ADR-0012) |
 | `docs/models/` | Handbook models, vendored pinned copies (ADR-0002) |
 | `docs/adr/` | Architecture decision records |

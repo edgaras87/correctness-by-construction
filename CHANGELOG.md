@@ -17,15 +17,13 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 
 ### Added
 
-- The bundle ships the newborn's arrangement as text: a complete
-  CLAUDE.md template (`starter/bundle/claude-md-template.md`,
-  composed from the kit's entry file at the pin and the method's
-  text — merged once from the first walked birth's derivation and
-  the withheld snippet — copied whole at birth, no merge into the
-  kit's stub; ADR-0014, delivery per ADR-0015) and birth-fill
-  templates (`starter/bundle/birth-fills.md`, generalized from
-  that birth's lived fills). No newborn derives its arrangement
-  again.
+- A CLAUDE.md template (`starter/bundle/claude-md-template.md`,
+  composed from the kit's entry file at the pin and this repo's
+  own fills; ADR-0014, ADR-0015) — since ADR-0016 parked,
+  undelivered: the pure-born newborn derives its own arrangement,
+  and the template stands as the three-way reading's comparison
+  object. The birth-fill templates were retired with the assembly
+  path.
 
 ### Changed
 
@@ -36,20 +34,27 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   first slice", which the runs' lived order (ground and skeleton
   stood up before the first slice, every service traced to a
   registry need) contradicted.
-- A birth is assembly (`starter/bundle/birth-scenario.md`,
-  revised in the first newborn and carried back): six mechanical
-  seed steps, three prescribed commits, then the briefing. The
-  bundle lands under `docs/` in the newborn; the newborn holds no
-  playbook copy — its steps land in PLAN between the STEPS
-  markers, with a "Steps from:" line naming the master at the
-  bundle pin — and the copy table has the new destinations.
+- A birth is the pure seed (ADR-0016, superseding the assembly
+  shape earlier drafts of this entry described): material only —
+  every delivery a commit on main with its source's pin in the
+  subject, the newborn's agent finishing the birth itself,
+  paced by a reviewer at every commit boundary.
+  `starter/installs/pure-seed.md` is the birth procedure. The
+  newborn still holds no playbook copy — the steps land in PLAN
+  between the STEPS markers, with a "Steps from:" line naming
+  the playbook at the bundle pin. Retired with the assembly
+  shape (history keeps them): the birth scenario, the assembly
+  install manual, the birth fills, and the parent playbook —
+  the pure variant (cbc-run-pure) is the playbook.
 - The install manual's playbook block keeps the STEPS markers:
   only what sits between them is swapped, so re-running the block
   is genuinely harmless.
 - The playbook's kit steps re-vendored from the handbook's
   `starter/playbooks/default.md` v2 (their new home): Step 0's
   comment slims to kit facts, Framing gains the every-step
-  projection gate item — cbc-run.md is v3.
+  projection gate item — cbc-run.md is v3 (that parent playbook
+  has since retired, ADR-0016; the pure variant carries the
+  vendored steps forward).
 - Concept chapter headers name the authoritative copy by path
   instead of claiming it for whichever copy is being read —
   header-only, the concept stays v1.

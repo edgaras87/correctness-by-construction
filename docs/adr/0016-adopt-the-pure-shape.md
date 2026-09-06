@@ -1,7 +1,9 @@
 # 0016. Adopt the pure shape; the assembly walk is cancelled
 
 Date: 2026-09-06
-Status: Proposed
+Status: Accepted (2026-09-06, at the set's records commit; opened
+Proposed per change-plans §4 — flipped once the deletions the
+Decision names existed, adbbcfc)
 
 ## Context
 
