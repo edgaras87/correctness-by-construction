@@ -19,19 +19,25 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 
 - A CLAUDE.md template (`starter/fills/claude-md-template.md`,
   composed from the kit's entry file at the pin and this repo's
-  own fills; ADR-0014, ADR-0015) — since ADR-0016 parked,
-  undelivered: the pure-born newborn derives its own arrangement,
-  and the template stands as the three-way reading's comparison
-  object. The birth-fill templates were retired with the assembly
-  path.
+  own fills; ADR-0014, ADR-0015) — parked by ADR-0016 while two
+  pure runs derived their own arrangement, delivered again since
+  ADR-0019 by the seed's semi-pure step. The birth-fill templates
+  were retired with the assembly path.
 - A README template (`starter/fills/readme-md-template.md`,
   composed from the kit's README stub at the pin and run-1's
   harvested fills; run 2's opening line harvested at its Step 0
-  reading) — parked, undelivered like the CLAUDE template: both
-  wait for a semi-pure install shape if one is designed (TODO).
+  reading) — delivered with the CLAUDE template by the semi-pure
+  step (ADR-0019).
 
 ### Changed
 
+- The seed gains one optional step, the semi-pure delivery
+  (ADR-0019): the two entry-file fills written over the kit's
+  CLAUDE.md and README.md stubs, headless, the name filled, one
+  more commit on the receipt branch. ADR-0016's parking condition
+  fired: two runs derived the entry files unaided and neither
+  produced the pre-framing guard or the skills' pin stance. Run 3
+  is seeded with the step on.
 - The pure seed delivers on a receipt branch (ADR-0018): the five
   seed commits land on `birth-seed`, never merged, and main stays
   at the kit's hygiene commit with the same files untracked, for

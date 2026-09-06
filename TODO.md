@@ -104,6 +104,9 @@
       (user's call): it is garden-authored — the withdrawn
       snippet's line, no run's text — and the pure seed ships no
       template, so the does-it-invent-protections measurement
+      (ended with run 2 — ADR-0019 delivers the guard from run 3
+      on; two pure runs are its whole evidence: neither invented
+      it)
       lives in the pure runs untouched while the assembly path
       keeps its brake. ADR-0014's decision (shipped text, never
       per-birth derivation) stands; its merged content is
@@ -165,9 +168,11 @@
       so at Step 0 the vendored gates were a cache. Awaits the
       briefing; the Framing boundary is the next reading. Note
       for run 3 onward, 2026-09-07: seeded per ADR-0018 on the
-      receipt branch — its Step 0 differs from run 2's in that
-      the agent commits the deliveries itself; the gates reading
-      compares the derived gate, not the commit count.)
+      receipt branch and per ADR-0019 with the entry files
+      delivered — its Step 0 differs from run 2's in that the
+      agent commits the deliveries itself and meets an
+      arrangement it did not write; the gates reading compares
+      the derived gate, not the commit count.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
@@ -310,7 +315,16 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Semi-pure install scenario (2026-09-06, user's idea, shape
+- [x] DONE 2026-09-07, ADR-0019 (change-plan 2ca749b..close):
+      the semi-pure delivery is pure-seed.md's optional step 4 —
+      both fills written over the kit's stubs, headless, one
+      commit on birth-seed; run 3 runs with it on. The
+      kill-or-justify test below was answered on the justify side
+      by run 2's Step 0 reading: the guard and the skills' pin
+      stance were missed twice. The reading's object changes: what
+      the agent edits in delivered entry files, and whether the
+      guard holds through Framing. Original item:
+      Semi-pure install scenario (2026-09-06, user's idea, shape
       undecided): a third birth shape between assembly (deleted,
       ADR-0016) and pure — the entry files ship filled
       (claude-md-template.md, readme-md-template.md, both parked

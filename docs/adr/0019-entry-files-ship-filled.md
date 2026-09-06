@@ -1,9 +1,13 @@
 # 0019. The entry files ship filled — the semi-pure delivery
 
 Date: 2026-09-07
-Status: Proposed (opened inside the semi-pure change set per
-change-plans §4; flips to Accepted at the set's final records
-commit if no boundary contradicts it)
+Status: Accepted (2026-09-07, at the set's final records commit;
+opened Proposed per change-plans §4. The manual's boundary proved
+the cut-and-fill against the real fills on a scratch repo — both
+outputs byte-identical to their fill from the title line down, no
+header or placeholder leaking — before it was written; the
+contract boundary held the "no surface enters" claim as stated.
+No boundary contradicted the shape)
 
 ## Context
 
