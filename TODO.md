@@ -86,6 +86,32 @@
       per-birth derivation) stands; its merged content is
       archived pending re-harvest.
 
+- [ ] Playbook gates experiment (2026-09-06, user's design; the
+      template freeze's move, one level deeper): the pure
+      variant re-cut provisional at v3 (55d3dbb) — middle steps
+      keep name, skill pointer, and goal; their gates, records
+      lines, and warnings stripped to a derive-at-opening
+      instruction — and v2 frozen whole at
+      docs/baselines/cbc-run-pure-playbook-v2.md. Three
+      decisions, taken consciously: kit steps stay vendored
+      whole (their gates are the kit's text, not our harvest);
+      warnings stripped for purity even though they are
+      underivable paid-for facts; the newborn learns nothing of
+      the frozen master. Protocol, riding the reviewer-paced
+      prompt: at each step opening the run's agent derives the
+      gate and stops at the boundary; here, read-only, derived
+      vs frozen v2 is compared, then any missing paid-for
+      warning (Boot 4, the faithful-miniature container, one
+      test command...) is handed over as session input, after
+      the derivation is recorded, never as silent playbook
+      text. What it measures: which gates are a cache of the
+      skills (re-derived) and which are knowledge only the
+      playbook holds (missed) — that answer is the playbook's
+      own reason-to-exist, measured. The parent stays procedure
+      of record, untouched. Run 2 of the pure seed delivers v3
+      at a new pin and then measures arrangement and gates in
+      one run.
+
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
       re-vendor @ c670fe5, claude-md-template.md composed (the
