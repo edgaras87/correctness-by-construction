@@ -69,6 +69,13 @@
       is the only playbook. The held briefing is released to the
       pure path: it opens Framing in the pure-born run when the
       user fires it. The item's trial framing above is history.
+      (2026-09-06, run 2's Step 0 read: the arrangement converged
+      with run 1 on the pre-briefing line and the records table,
+      came out thinner on the pin stance and README's method
+      pointer, and presumed "backend" as run 1 and the parked
+      CLAUDE template did — three of three; the fix is upstream,
+      concept or kit stub, undecided. Neither run derived the
+      pre-framing guard.)
 
 - [ ] Template three-way reading, after the next full run
       (2026-09-06, user's design): the shipped CLAUDE.md template
@@ -133,7 +140,12 @@
       c670fe5, bundle @ 322dd43, v4 steps verified byte-true;
       run 1 at ~/IdeaProjects/cbc-pure-run stays frozen in
       place, the reading's evidence, its pins checkable at
-      their recorded path. Awaits the user's firing prompt.)
+      their recorded path. Fired the same day: Step 0 closed in
+      nine commits, reviewer-paced; the Step 0 reading is in the
+      devlog (2026-09-06, fifth arc) — the derived gate covers
+      v2's three and adds five, each traced to a kit convention,
+      so at Step 0 the vendored gates were a cache. Awaits the
+      briefing; the Framing boundary is the next reading.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,

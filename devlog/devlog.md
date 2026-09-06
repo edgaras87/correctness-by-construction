@@ -6,6 +6,51 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-06  (session: run 2 seeded and fired; the Step 0 reading)
+
+- Fifth arc of the day, logged late. Run 2 was seeded per
+  pure-seed.md at ~/IdeaProjects/cbc-pure-run-2 (five commits,
+  kit @ c670fe5, bundle @ 322dd43, v4 steps byte-true) and
+  recorded in TODO (2aac876) but not here — that session closed
+  without its entry. The user then fired it: its agent closed
+  Step 0 in nine commits, reviewer-paced, and waits on the
+  briefing.
+- The Step 0 reading, read-only, both runs against the parked
+  templates and frozen v2:
+  - Nothing went wrong in either. Run 1 (v1, vendored gates)
+    closed on the kit's three gates, unattended, and wrote an
+    adoption ADR at birth. Run 2 (v4) derived an eight-item gate
+    before working, took no ADR (deferred to framing's close),
+    and held the commit split from a836439 on.
+  - Gates: run 2's derivation covers v2's three and adds five,
+    each traceable to a kit convention (skills registered with
+    pins, records table resolving, TODO triaged, day-one devlog
+    entry, the split checkable in the log). For Step 0 the
+    vendored gates were a cache — the experiment's first data
+    point. Framing's hand-back candidates stand unchanged.
+  - "Backend", three of three: run 1 "a backend", run 2 "one
+    backend" and "a backend", the parked CLAUDE template "a
+    backend service" — only the README template was corrected to
+    "a system". The watch item from the README-template session
+    fired: the fix belongs upstream (concept or kit stub), not in
+    shipped text. Open — where, not decided this session.
+  - Entry files: both runs derived the nothing-to-build-yet line
+    unaided; neither derived the pre-framing guard nor a Local
+    rules section. Run 2 came out thinner than run 1: pin stance
+    for the concept only, README without the start-at-00-cbc
+    pointer (its own devlog: "written badly").
+  - Run 2 reported three frictions about the bundle; two were
+    real and are fixed (da86fdc): the stale slices.registry.md
+    name in cbc-framing's header, the pinless skills seed commit.
+    The third — the kit-remainder seed commit straddling agent
+    and project paths — is pure-seed's `git add -A`, by design;
+    noted, not changed.
+- Resume: decide where "backend" is fixed; then deliver the
+  briefing to run 2 — it opens Framing, and at that boundary the
+  derived gate is compared against frozen v2's Step 1, with the
+  cbc-framing mapping comment and the retire-entry-lines gate
+  handed back if missed.
+
 ## 2026-09-06  (session: the README template, and a third shape named)
 
 - Fourth arc of the day. Opened on the run-1 README, read
