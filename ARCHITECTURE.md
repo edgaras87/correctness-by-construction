@@ -64,9 +64,10 @@ beside the bundle, outside the copy set (ADR-0010): the starter doc
 authoritative-vs-pinned rule; the install manual
 (`starter/installs/pure-seed.md`) is the birth procedure
 (ADR-0016) — the material-only seed, its kit half running the
-handbook's pure install by pointer.
+handbook's pure install by pointer, its deliveries committed on a
+receipt branch the newborn never merges (ADR-0018).
 Why shaped this way: ADR-0004 (amended), ADR-0006, ADR-0008,
-ADR-0010, ADR-0016, ADR-0017.
+ADR-0010, ADR-0016, ADR-0017, ADR-0018.
 
 ## Invariants
 

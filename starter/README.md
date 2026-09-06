@@ -52,8 +52,10 @@ one kit endpoint still vendored at its pin; only re-entry
 
 The birth procedure itself is the install manual,
 `starter/installs/pure-seed.md` (ADR-0016) — the material-only
-seed: every delivery a commit on main, pins in the subjects, the
-newborn's agent finishing the birth. The two-birth composition
+seed: every delivery a commit on the receipt branch `birth-seed`,
+pins in the subjects, main left at the kit's hygiene commit with
+the same files untracked (ADR-0018), the newborn's agent finishing
+the birth by committing them under its own sequence. The two-birth composition
 stands (ADR-0009): their kit supplies the container, this bundle
 overlays the method.
 
