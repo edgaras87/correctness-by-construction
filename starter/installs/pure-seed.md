@@ -54,7 +54,17 @@
      additions; run 2's straddling-seed known issue never enters
      main. The prompt gains the one line that names the branch.
      Runs 1 and 2 were seeded on main; readings against them say
-     so. -->
+     so.
+     Eighth revision, 2026-09-07 (ADR-0019): one optional step,
+     the semi-pure delivery — the two fills written over the
+     kit's entry stubs, headless, name filled, one more commit on
+     the branch. ADR-0016's parking condition fired at run 2's
+     Step 0 reading: two runs derived the entry files unaided and
+     neither produced the pre-framing guard or the skills' pin
+     stance. Run 3 runs with the step on; the prompt's situation
+     sentence names the delivery. The manual's name stays —
+     "pure" is the seed's nature, delivers and decides nothing;
+     the switch delivers two more texts. -->
 
 # Install: the pure seed — material only, the agent finishes
 
@@ -75,10 +85,12 @@ cannot derive (the bundle pin) rides in the seed commits'
 subjects; everything else it can.
 
 Deliberately not delivered — nothing that encodes a prior run's
-conclusions: the birth scenario, the CLAUDE.md template, the
-birth fills, the pre-written birth entries, and no playbook
-file — its steps ride in PLAN. The agent meets the kit and the
-method raw.
+conclusions: the birth scenario, the birth fills, the pre-written
+birth entries, and no playbook file — its steps ride in PLAN. The
+agent meets the kit and the method raw. One exception, switched
+on per run (step 4, ADR-0019): the two entry files written from
+the fills — the harvest of the readings so far, delivered because
+two runs showed it cannot be derived.
 
 **1. Set the paths and capture the pins.**
 
@@ -148,7 +160,30 @@ step. The kit's first-session comment and Framing's (CbC)
 comment ride in with the steps: container orientation and a
 pointer to a delivered skill, no conclusions.
 
-**4. Return to main and restore the branch tip into its worktree,
+**4. Semi-pure, optional: write the two entry files from the
+fills.** Each fill is cut from its title line down — the
+provenance header stays in the concept repo — with
+`<working-name>` filled by the placeholder directory name, and
+written over the kit's stub. One commit, both files: the branch
+is a receipt, never merged, so the newborn's commit split does not
+govern it (ADR-0019). Skip this step for a pure run.
+
+```bash
+name=$(basename "$new_project_dir")
+for f in claude-md-template:CLAUDE.md readme-md-template:README.md; do
+  src=${f%%:*}; dst=${f##*:}
+  sed -n '/^# <working-name>/,$p' "$bundle_dir"/starter/fills/"$src".md \
+    | sed "s/<working-name>/$name/g" > "$dst"
+done
+git add CLAUDE.md README.md
+git commit -m "chore: seed — entry files from the fills, pin @ $bundle_pin"
+```
+
+No other placeholder exists in either fill; nothing else is
+filled. From this commit the two files are the newborn's own
+(ADR-0017's fill rule): edited in place, never re-copied.
+
+**5. Return to main and restore the branch tip into its worktree,
 untracked.** The branch is never merged.
 
 ```bash
@@ -164,7 +199,7 @@ hygiene commit. Check it before firing: `git add -A && git diff
 --cached --quiet birth-seed && git reset -q` prints nothing when
 the worktree equals the branch tip.
 
-**5. Fire the agent** — a fresh session in the newborn, never the
+**6. Fire the agent** — a fresh session in the newborn, never the
 concept repo's, with this prompt and nothing more:
 
 ```text
@@ -195,6 +230,13 @@ briefing that opens Framing; nothing before it names the
 problem.
 ```
 
+With the semi-pure step on, the parenthetical naming the bundle
+reads instead: "(the method — docs/concept/, five skills, the
+steps in PLAN, and the two entry files, CLAUDE.md and README.md,
+written filled from the bundle's fills)". Nothing else in the
+prompt changes: what the agent does with delivered entry files is
+its own choice, and that choice is the reading's object.
+
 The prompt is the session channel — it carries what is true only
 of this moment: the situation (two sources, why split, the branch
 that holds them — deletable, never merged, session-shaped truth),
@@ -219,11 +261,11 @@ the human's hard backstop behind it.
 **A correct seed is checkable** — before the agent starts, every
 item is a verifiable fact:
 
-- Five commits on birth-seed above the hygiene commit; main at
-  the hygiene commit, its log holding nothing else; main's
-  worktree byte-identical to the branch tip, every delivered file
-  listed untracked by `git status` (the check in step 4 prints
-  nothing).
+- Five commits on birth-seed above the hygiene commit — six with
+  the semi-pure step on; main at the hygiene commit, its log
+  holding nothing else; main's worktree byte-identical to the
+  branch tip, every delivered file listed untracked by
+  `git status` (the check in step 5 prints nothing).
 - Every bundle copy byte-identical to its master at the subject's
   pin: the concept chapters, the five skills.
 - PLAN's STEPS region holds the pure variant's sequence —
@@ -235,11 +277,14 @@ item is a verifiable fact:
 - The kit's own birth fills are done, per pure.md: the birth
   entry's pin and date, ADR-0001's date, the devlog heading, the
   TEMPLATE marker gone. Beyond them, nothing is filled: every
-  stub still reads as a stub, CLAUDE.md carries no content
-  beyond the kit's, and no bundle birth entry exists.
-- Nothing from the excluded list present: no birth-scenario.md, no
-  CLAUDE.md template, no birth-fill content, no bundle birth
-  entry.
+  stub still reads as a stub, and no bundle birth entry exists.
+  CLAUDE.md carries no content beyond the kit's — unless the
+  semi-pure step ran, in which case CLAUDE.md and README.md are
+  byte-identical to their fills from the title line down with
+  the name filled, and neither carries a provenance header.
+- Nothing from the excluded list present: no birth-scenario.md,
+  no birth-fill content, no bundle birth entry; no fill's header
+  in the newborn.
 
 What the agent is left to do — the reader's checklist for the
 reading afterwards, not instructions delivered to it: every
