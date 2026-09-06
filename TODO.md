@@ -64,6 +64,27 @@
       (user's act, both branches intact) — the walk-1 comparison
       source for this experiment and for the trial.
 
+- [ ] Template three-way reading, after the next full run
+      (2026-09-06, user's design): the shipped CLAUDE.md template
+      was re-cut fresh at 8e25977 — the walk-1-era method half
+      (the five stance bullets, walk-1's derivation; the
+      pre-framing guard, the withdrawn snippet's line; both the
+      ADR-0014 merge, earned under different skills than today's)
+      stripped and frozen whole at
+      docs/baselines/claude-md-template-v1.md. After the next
+      full run (through framing and build, current skills), read
+      three ways: the run's derived CLAUDE.md vs the frozen
+      template-v1 vs cbc-derived-claude-walk1.md. Harvest
+      re-enters the template only from that reading, each line
+      traceable to the run that earned it. Known risk, accepted:
+      the pre-framing guard (a brake) now ships nowhere — run 1
+      showed brakes do not re-derive, so whether the new
+      arrangement invents its own protections is part of the
+      measurement; the human is the backstop at framing (joint
+      by default). ADR-0014's decision (shipped text, never
+      per-birth derivation) stands; its merged content is
+      archived pending re-harvest.
+
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
       re-vendor @ c670fe5, claude-md-template.md composed (the
