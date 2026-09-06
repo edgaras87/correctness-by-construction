@@ -45,14 +45,26 @@
      instruction the prompt never gave ("instructed to finish
      unattended"), the harness voice heard as the user's. The reviewer's presence is
      session truth — the channel split's own logic, applied to
-     pacing. Run 1's straight-through walk stands as data. -->
+     pacing. Run 1's straight-through walk stands as data.
+     Seventh revision, 2026-09-07 (ADR-0018): the seed commits on
+     a receipt branch, birth-seed, and main holds the same files
+     untracked — the agent's first commit on main is its own, so
+     the sequence and split the experiment measures are the
+     agent's to choose for every delivered file, not only its
+     additions; run 2's straddling-seed known issue never enters
+     main. The prompt gains the one line that names the branch.
+     Runs 1 and 2 were seeded on main; readings against them say
+     so. -->
 
 # Install: the pure seed — material only, the agent finishes
 
 One idea: the seed delivers everything and decides nothing. Every
-delivery is a commit on main, so the history is the manifest —
-what arrived, from where, at which pin — and the newborn's agent
-finishes the birth itself by reading what is there. The kit is
+delivery is a commit on a receipt branch, `birth-seed`, so that
+branch is the manifest — what arrived, from where, at which pin —
+while main stays at the kit's hygiene commit with the same files
+in its worktree, untracked: the newborn's agent finishes the birth
+itself by reading what is there and committing it under its own
+sequence and split (ADR-0018). The kit is
 born per the handbook's pure install, which fills its own
 mechanical birth fields; the seed also maps the playbook's steps
 into PLAN and fills its "Steps from:" line — mechanical, from
@@ -90,10 +102,13 @@ variables, same terminal session. Its fills run as written: the
 kit's birth entry pin, the three birth dates, the TEMPLATE
 marker stripped — seed-mechanical, the kit's own.
 
-**3. Commit the deliveries, pins in the subjects.** One commit per
-delivery; the subject is where the agent later reads the pin.
+**3. Cut the receipt branch and commit the deliveries there, pins
+in the subjects.** One commit per delivery; the subject is where
+the agent later reads the pin. Main is left at the hygiene commit.
 
 ```bash
+git switch -c birth-seed
+
 git add -A
 git commit -m "chore: seed — kit remainder, pin @ $kit_pin"
 
@@ -133,16 +148,35 @@ step. The kit's first-session comment and Framing's (CbC)
 comment ride in with the steps: container orientation and a
 pointer to a delivered skill, no conclusions.
 
-**4. Fire the agent** — a fresh session in the newborn, never the
+**4. Return to main and restore the branch tip into its worktree,
+untracked.** The branch is never merged.
+
+```bash
+git switch main
+git restore --source=birth-seed --worktree --staged -- .
+git reset -q
+```
+
+The restore writes every file of the branch tip into main's
+worktree and index; the reset empties the index again, so the
+files stand untracked and main's log holds nothing but the
+hygiene commit. Check it before firing: `git add -A && git diff
+--cached --quiet birth-seed && git reset -q` prints nothing when
+the worktree equals the branch tip.
+
+**5. Fire the agent** — a fresh session in the newborn, never the
 concept repo's, with this prompt and nothing more:
 
 ```text
-This repo was seeded, not born whole — the commit history shows
-it: the handbook's starter kit first (the container — records,
-conventions, the entry file), then the correctness-by-construction
-bundle (the method — docs/concept/, five skills, the steps in
-PLAN), each seed commit naming its source's pin. The kit knows
-nothing of the method; the bundle presumes the container. Your
+This repo was seeded, not born whole — the branch birth-seed
+shows it: the handbook's starter kit first (the container —
+records, conventions, the entry file), then the
+correctness-by-construction bundle (the method — docs/concept/,
+five skills, the steps in PLAN), each seed commit naming its
+source's pin. Main holds the same files, untracked, on top of the
+kit's hygiene commit; the branch is a receipt, never merged. The
+kit knows nothing of the method; the bundle presumes the
+container. Your
 task is to finish the birth: assemble what was delivered into a
 working project — your own arrangement, the records, PLAN's
 Step 0 closed on its gates. Read the whole repository first,
@@ -162,9 +196,10 @@ problem.
 ```
 
 The prompt is the session channel — it carries what is true only
-of this moment: the situation (two sources, why split), the task,
-the read-everything instruction, the expectation of a plan, and
-the review protocol. That last is session truth like the rest —
+of this moment: the situation (two sources, why split, the branch
+that holds them — deletable, never merged, session-shaped truth),
+the task, the read-everything instruction, the expectation of a
+plan, and the review protocol. That last is session truth like the rest —
 a reviewer is present *this run* — and run 1 showed the delivered
 convention cannot establish it alone: its §6 names "the reviewer"
 but a file-level stop loses to the harness's finish-the-task
@@ -184,7 +219,11 @@ the human's hard backstop behind it.
 **A correct seed is checkable** — before the agent starts, every
 item is a verifiable fact:
 
-- Five commits on main, no other branch; the tree clean.
+- Five commits on birth-seed above the hygiene commit; main at
+  the hygiene commit, its log holding nothing else; main's
+  worktree byte-identical to the branch tip, every delivered file
+  listed untracked by `git status` (the check in step 4 prints
+  nothing).
 - Every bundle copy byte-identical to its master at the subject's
   pin: the concept chapters, the five skills.
 - PLAN's STEPS region holds the pure variant's sequence —
@@ -203,11 +242,14 @@ item is a verifiable fact:
   entry.
 
 What the agent is left to do — the reader's checklist for the
-reading afterwards, not instructions delivered to it: a
-change-plan whose commit sequence is chosen and justified (the
-entrance doc's place in it, when records enter history and how
-far they adapt to the method, whether skills land whole or split
-by source); its own CLAUDE.md; the record stubs filled; the
+reading afterwards, not instructions delivered to it: every
+delivered file committed on main by the agent, under its own
+sequence and the commit split the skills define (an add-all in
+one commit is an outcome the reading records, not one the seed
+prevents); a change-plan whose commit sequence is chosen and
+justified (the entrance doc's place in it, when records enter
+history and how far they adapt to the method, whether skills land
+whole or split by source); its own CLAUDE.md; the record stubs filled; the
 bundle's birth entry reconstructed from the seed subjects (the
 kit's is filled at birth); Step 0 closed clean on its container
 gates — no briefing gate exists to block it, the briefing opens
