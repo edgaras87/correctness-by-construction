@@ -63,9 +63,10 @@ Notes:
 <!-- CbC: these gates are met via the cbc-framing skill — the
      intent, definition, and adversity registry are the problem
      statement, success criteria, and out-of-scope in the method's
-     richer form. The middle-steps gate item is confirmation, not
-     authoring: the steps below came whole with this playbook at
-     birth. -->
+     richer form. The middle-steps gate item confirms the step
+     sequence, which came whole at birth; each middle step's gate
+     is its own — authored when that step opens, as its Gate line
+     says. -->
 
 Goal: know what we're building and why, before code.
 Gate:
