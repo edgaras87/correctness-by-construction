@@ -1,9 +1,11 @@
 # 0017. Fills beside the bundle
 
 Date: 2026-09-07
-Status: Proposed (opened inside the fills-layout change set per
-change-plans §4; flips to Accepted at the set's final records
-commit if no boundary contradicts it)
+Status: Accepted (2026-09-07, at the set's final records commit;
+opened Proposed per change-plans §4. The move held the shape as
+proposed; one finding at the describing boundary — ADR-0010's
+"nothing outside bundle/ ships" sentence lived only in that ADR,
+so no describing doc had it to rewrite)
 
 ## Context
 

@@ -102,6 +102,14 @@
       keeps its brake. ADR-0014's decision (shipped text, never
       per-birth derivation) stands; its merged content is
       archived pending re-harvest.
+      (2026-09-07, rule revised, user's call: a birth template is
+      judged by what a run derived at birth, so it harvests at
+      the Step 0 reading, not after a full run — the README
+      template already did (166bc7e, run 2's opening line); the
+      CLAUDE template was read the same way and kept as it stood.
+      The three-way reading after the full run still owes the
+      frozen-v1 comparison for the stance bullets, which no birth
+      can judge.)
 
 - [ ] Playbook gates experiment (2026-09-06, user's design; the
       template freeze's move, one level deeper): the pure
@@ -296,7 +304,9 @@
       undecided): a third birth shape between assembly (deleted,
       ADR-0016) and pure — the entry files ship filled
       (claude-md-template.md, readme-md-template.md, both parked
-      in the bundle) while the rest of the birth stays pure. Not
+      under starter/fills/ since ADR-0017 — text written over the
+      kit's stubs, not files copied) while the rest of the birth
+      stays pure. Not
       designed yet; both templates wait for it. What run 2
       contributes before any design: its derived CLAUDE.md and
       README are comparison objects against the parked harvests

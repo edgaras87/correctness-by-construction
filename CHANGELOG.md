@@ -26,11 +26,17 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   path.
 - A README template (`starter/fills/readme-md-template.md`,
   composed from the kit's README stub at the pin and run-1's
-  harvested fills, the "a backend" presumption corrected) —
-  parked, undelivered like the CLAUDE template: both wait for a
-  semi-pure install shape if one is designed (TODO).
+  harvested fills; run 2's opening line harvested at its Step 0
+  reading) — parked, undelivered like the CLAUDE template: both
+  wait for a semi-pure install shape if one is designed (TODO).
 
 ### Changed
+
+- `starter/` splits by how a delivery lands (ADR-0017): `bundle/`
+  is what a run copies as pinned files, the five skills; the new
+  `fills/` holds text the seed writes into the kit's own files —
+  the playbook's steps and the two parked entry-file templates,
+  moved there from the bundle. Delivery itself is unchanged.
 
 - The framing chapter's technology-timing sentence corrected
   against the lived runs (`concept/03-cbc-framing.md`, first
