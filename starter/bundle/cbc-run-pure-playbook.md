@@ -1,18 +1,29 @@
-<!-- Draft — the pure-seed candidate (2026-09-05). A variant of
-     cbc-run-playbook.md (v3, this repo — provenance, harvest
-     history and the kit-vendor base live in its header), created
-     for the pure-seed experiment (starter/installs/pure-seed.md).
-     The steps are the parent's except the deltas below; the
-     parent is the procedure of record, and harvest lands there
-     first. v1 deltas (2026-09-05): the assembly (CbC) Step 0
-     comment and the (CbC) gate item's install-manual clause
-     dropped — no place in the pure design; and the channel
-     split — the kit's first-session comment and the agent-side
-     gates leave Step 0 for the firing prompt and the run's own
-     change-plan, and the briefing opens Framing as its starting
-     input, so Step 0 closes clean, no gate born blocked.
-     v2 (2026-09-06): Framing gains the parent's entry-file
-     retirement gate item, by re-derivation.
+<!-- The CbC run playbook, pure shape — the only playbook:
+     ADR-0016 (2026-09-06) adopts pure and retires the parent,
+     cbc-run-playbook.md, whose full header lives in git history
+     at that path. Provenance, condensed from it: checked against
+     concept v1 (ADR-0003, ADR-0005 — practice-born). Middles and
+     warnings harvested 2026-08-30 from the two lived runs,
+     read-only (ADR-0007, ADR-0009): Ground / Bootstrap / Slices
+     / Release and their warnings from checkout-system's
+     retro-folded playbook and its PLAN as lived; the Define step
+     from safe-reservations log.md Entry 0001. Rebuilt as a full
+     sequence on the kit's default.md (ADR-0011); kit steps last
+     re-vendored from the handbook's starter/playbooks/default.md
+     v2 @ c670fe5. Harvest lands here — the one copy that exists
+     (ADR-0007); kit-owned steps (0, 1, N) change only by refresh
+     against a new kit pin.
+     Born 2026-09-05 as the pure-seed candidate variant
+     (starter/installs/pure-seed.md). v1 deltas against the
+     parent: the assembly (CbC) Step 0 comment and the (CbC)
+     gate item's install-manual clause dropped — no place in the
+     pure design; and the channel split — the kit's
+     first-session comment and the agent-side gates leave Step 0
+     for the firing prompt and the run's own change-plan, and
+     the briefing opens Framing as its starting input, so Step 0
+     closes clean, no gate born blocked.
+     v2 (2026-09-06): Framing gains the entry-file retirement
+     gate item.
      v3 (2026-09-06, provisional, user's design — the gates
      experiment): the middle steps keep their name, their skill
      pointer, and their goal; their gates, records lines, and
@@ -21,12 +32,7 @@
      docs/baselines/cbc-run-pure-playbook-v2.md for the per-step
      derived-vs-frozen reading (the TODO item holds the
      protocol: warnings handed to the run only after each
-     derivation is recorded). Kit steps (0, 1, N) stay vendored
-     whole — their gates are the kit's text, not this repo's
-     harvest. Lifespan: the experiment's reading decides — of
-     this file and the parent, the winner stays and the other is
-     deleted; until then this file changes only by re-deriving
-     from the parent, the v3 strip excepted. -->
+     derivation is recorded). -->
 
 # Playbook: CbC run — pure
 
