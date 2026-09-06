@@ -1,7 +1,12 @@
 <!-- Provenance — archive/cbc/system-design-method
      birth-materials/concept/03-cbc-framing.md @ fe0075d (imported
      2026-08-28, PLAN Step 2). Changes on import: none — verbatim
-     below this header. The authoritative copy lives in
+     below this header, until: 2026-09-06, the technology-timing
+     sentence corrected against the lived runs ("with the first
+     slice" → "after framing, answerable to the registry") — the
+     runs stand up ground and skeleton before the first slice,
+     and that is where technology lands, traced to registry
+     needs. The authoritative copy lives in
      correctness-by-construction's concept/ — a run's copy
      (docs/concept/) is pinned, changed only by copying anew
      (harvest, never edits); the archive copy is a historical
@@ -77,4 +82,5 @@ Three things, whatever their recorded form: the **intent** (the promise and
 the purposes refused), the **system definition** (authority, boundary,
 adversary, owners), and the **slice registry** (the work, cut into
 invariants). Nothing in them names a language, a store, or a framework —
-technology enters with the first slice, not before.
+technology arrives only after framing, each choice answerable to the
+registry it must serve, never the other way around.

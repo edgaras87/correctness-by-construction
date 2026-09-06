@@ -29,6 +29,13 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 
 ### Changed
 
+- The framing chapter's technology-timing sentence corrected
+  against the lived runs (`concept/03-cbc-framing.md`, first
+  content change since import): technology arrives after framing,
+  each choice answerable to the slice registry — not "with the
+  first slice", which the runs' lived order (ground and skeleton
+  stood up before the first slice, every service traced to a
+  registry need) contradicted.
 - A birth is assembly (`starter/bundle/birth-scenario.md`,
   revised in the first newborn and carried back): six mechanical
   seed steps, three prescribed commits, then the briefing. The
