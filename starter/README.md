@@ -26,10 +26,8 @@ At a run repo's birth, copy:
 | `starter/bundle/infra-establish/` | `.claude/skills/infra-establish/` |
 | `starter/bundle/infra-serve/` | `.claude/skills/infra-serve/` |
 | `starter/bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
-| `starter/bundle/cbc-run-playbook.md` | not copied as a file — its full sequence replaces everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (assembly step 4; the newborn holds no playbook copy, their ADR-0031's model) |
-| `starter/bundle/birth-scenario.md` | `docs/birth-scenario.md` (in trial — kept or deleted per the trial's closing ADR) |
-| `starter/bundle/claude-md-template.md` | copied whole — everything from its title line down becomes the newborn's CLAUDE.md, replacing the kit's stub, the working name filled (assembly step 3, ADR-0015) |
-| `starter/bundle/birth-fills.md` | not copied as a file — its fragments fill the kit's record stubs and the decisions log, variables filled by the seed (assembly steps 5–6, ADR-0014) |
+| `starter/bundle/cbc-run-pure-playbook.md` | not copied as a file — its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (pure-seed step 3; the newborn holds no playbook copy, their ADR-0031's model) |
+| `starter/bundle/claude-md-template.md` | not copied — parked, undelivered (ADR-0016): the pure-born newborn derives its own CLAUDE.md; the template stays as the three-way reading's comparison object |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before
@@ -38,14 +36,16 @@ moment keeps the whole set at one pin. The run's plan steps come
 from the playbook, which carries the full sequence (ADR-0011): the
 kit's endpoint steps vendored at their pin, and the pipeline
 (cbc-framing → infra-establish → cbc-bootstrap → cbc-slice) as its
-middles, each a step with gates; only re-entry (infra-serve)
+middles — under the v3 provisional cut each middle's gate is
+derived when its step opens; only re-entry (infra-serve)
 arrives unplanned, and its trigger covers that.
 
 The birth procedure itself is the install manual,
-`starter/installs/cbc.md` — the peer of the handbook's
-`starter/installs/handbook.md` in the two-birth composition
-(ADR-0009): their kit supplies the container, this bundle overlays
-the method.
+`starter/installs/pure-seed.md` (ADR-0016) — the material-only
+seed: every delivery a commit on main, pins in the subjects, the
+newborn's agent finishing the birth. The two-birth composition
+stands (ADR-0009): their kit supplies the container, this bundle
+overlays the method.
 
 ## The contract
 
@@ -57,19 +57,18 @@ vendor base for our playbook's endpoint steps (their ADR-0031
 contract; `playbooks/` is no longer a kit directory) — and must
 not depend on anything else; a handbook kit update is checked
 against this list, nothing more. CLAUDE.md is not on the list and
-does not return: the bundle ships a complete template
-(claude-md-template.md) copied whole over the kit's stub at birth
-(ADR-0015) — text earned from the first walked derivation
-(ADR-0014), no slot of the stub assumed.
+does not return: the pure-born newborn derives its own from the
+kit's stub (ADR-0016; the shipped template is parked, undelivered,
+its content awaiting the three-way reading).
 The kit names the same contract from its side (the handbook's
 `starter/README.md` contract list, 2026-08-30; narrowed by their
 ADR-0031): the handbook states what may be assumed, each bundle
 states what it assumes, and a bundle needing a new surface
 widens the contract handbook-side first — the fourth handoff
 told them CLAUDE.md stays off our list, and ADR-0015 holds it.
-The overlay's one non-additive act is the template replacing the
-stub (ADR-0015); everything else only adds files in paths the
-kit does not claim (ADR-0012). Records stay the kit's: CbC events are
+The overlay only adds files in paths the kit does not claim
+(ADR-0012); since ADR-0016 it has no non-additive act — the kit's
+stub stays the newborn's own to fill. Records stay the kit's: CbC events are
 recorded as ordinary project events under the kit's rules, and the
 method's own artifacts (`docs/system/`, the framing derivation)
 live beside the records, not in place of them.

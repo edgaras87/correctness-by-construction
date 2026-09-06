@@ -1,10 +1,9 @@
-<!-- Draft — provisional, run once (2026-09-05, the pure-seed
-     experiment; TODO's Now item is the protocol). Not the
-     procedure of record: starter/installs/cbc.md holds that until
-     a trial-closing ADR decides between the assembly birth
-     (docs/birth-scenario.md) and this shape. Authored from the
-     lived run, not before it — the script this generalizes seeded
-     ~/IdeaProjects/cbc-pure-run.
+<!-- The procedure of record: ADR-0016 (2026-09-06) adopted the
+     pure shape and cancelled the assembly walk — this manual is
+     the birth procedure (born 2026-09-05 as the pure-seed
+     experiment; TODO's Now item is the protocol). Authored from
+     the lived run, not before it — the script this generalizes
+     seeded ~/IdeaProjects/cbc-pure-run.
      Revised same day, before any walk: the kit half defers to the
      handbook's pure install by pointer, its fills included — the
      seeded run-1 repo predates this and holds the kit raw; a
