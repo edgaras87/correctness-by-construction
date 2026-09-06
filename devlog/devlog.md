@@ -6,6 +6,58 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-07  (session: "backend" kept, run 2 harvested, fills/)
+
+- Opened on the open question from yesterday's Resume: where to
+  fix "backend". Traced before deciding: the concept chapters and
+  the kit never say it; three skill description lines do, and the
+  practice skills' bodies are backend-born. So the word names the
+  toolkit, not the problem — kept (4079880). The README template's
+  "a system" reverted to match the CLAUDE template, its header
+  saying made-and-reverted; a Later item holds the trigger, the
+  first non-backend run. Lesson: the reading applied "nothing
+  before the briefing names the problem" one level too strictly —
+  a run may say what its skills can build.
+- Then the templates against run 2's entry files. Opinion given:
+  the templates are better for a stranger, run 2's tighter; the
+  guard line no run has derived is the template's reason to
+  exist. The user overturned the harvest rule with the right
+  argument: a birth template is judged by what a run derived at
+  birth, so it harvests at the Step 0 reading, not after a full
+  run. Staged both templates recomposed; the user kept the old
+  CLAUDE whole and took only run 2's opening line for the README
+  (166bc7e; two fixes at the staging — trailing spaces, and the
+  header claiming a sentence not taken).
+- The semi-pure install came into view — the receipt branch from
+  newborn-v1 (birth-seed: what arrived; main: how it was
+  understood), the five deliveries plus one commit for the two
+  templates, then the agent on main with the boot prompt. Four
+  things named for its ADR: two variables change at once against
+  run 2; it overturns pure-seed's "five commits on main, no other
+  branch"; whether the firing prompt names the branch; the
+  templates ship headless. Not decided — the user saw a
+  prerequisite first.
+- The prerequisite, user's finding: the templates do not travel
+  as documents, they are written as contents into files the kit
+  already put there. The playbook is the same act, and had been
+  the copy table's "not copied as a file" all along. ADR-0017 and
+  a six-commit change-plan (64151ac..c47055f): starter/fills/ for
+  all three, bundle/ = pinned copies, installs/ = manuals; every
+  live path swept, the starter doc's one table now two, codemap
+  and CHANGELOG current, the three-way reading item's rule
+  revised. No divergence; one finding — ADR-0010's structural
+  sentence lived only in that ADR, nothing to rewrite elsewhere.
+- Judgment call disclosed: the user said "stage the ADR first";
+  the convention says the change-plan opens the set, so the plan
+  was staged first and the ADR immediately after. Accepted at
+  the boundary.
+- Resume: the semi-pure install decision — ADR-0018 (receipt
+  branch, the two fills written over the kit's stubs headless,
+  the contract paragraph's "no non-additive act" reopened, the
+  prompt's line about the branch) and a manual beside
+  pure-seed.md; then seed run 3. Run 2 still waits on the
+  briefing; its Framing boundary is the next gates reading.
+
 ## 2026-09-06  (session: run 2 seeded and fired; the Step 0 reading)
 
 - Fifth arc of the day, logged late. Run 2 was seeded per
