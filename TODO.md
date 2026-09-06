@@ -76,12 +76,13 @@
       three ways: the run's derived CLAUDE.md vs the frozen
       template-v1 vs cbc-derived-claude-walk1.md. Harvest
       re-enters the template only from that reading, each line
-      traceable to the run that earned it. Known risk, accepted:
-      the pre-framing guard (a brake) now ships nowhere — run 1
-      showed brakes do not re-derive, so whether the new
-      arrangement invents its own protections is part of the
-      measurement; the human is the backstop at framing (joint
-      by default). ADR-0014's decision (shipped text, never
+      traceable to the run that earned it. The pre-framing guard
+      was stripped with the bullets, then restored same day
+      (user's call): it is garden-authored — the withdrawn
+      snippet's line, no run's text — and the pure seed ships no
+      template, so the does-it-invent-protections measurement
+      lives in the pure runs untouched while the assembly path
+      keeps its brake. ADR-0014's decision (shipped text, never
       per-birth derivation) stands; its merged content is
       archived pending re-harvest.
 

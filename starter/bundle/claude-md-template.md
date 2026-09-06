@@ -1,12 +1,16 @@
 <!-- Derives from concept v1 of correctness-by-construction
      (ADR-0003). Re-cut fresh 2026-09-06, user's design: the
-     past-run harvest — the stance bullets and the pre-framing
-     guard, walk-1-era text merged by ADR-0014 and earned under a
-     different arrangement than the current skills — is stripped
-     and frozen at docs/baselines/claude-md-template-v1.md for
-     the three-way reading after the next full run. Harvest
-     re-enters only from a run reading, each line traceable to
-     the run that earned it under the current skills.
+     past-run harvest — the five stance bullets, walk-1's own
+     derivation text merged by ADR-0014, earned under a different
+     arrangement than the current skills — is stripped and frozen
+     at docs/baselines/claude-md-template-v1.md for the three-way
+     reading after the next full run. Harvest re-enters only from
+     a run reading, each line traceable to the run that earned it
+     under the current skills. The pre-framing guard was stripped
+     with them, then restored same day: it is garden-authored
+     (the withdrawn snippet's line, no run's text), the pure seed
+     ships no template so the derivation measurement is
+     untouched, and the assembly path keeps its brake.
      — the kit half: engineering-handbook starter/kit/CLAUDE.md
        @ c670fe5 — the title line, the records table and its
        comment, the guard comment, all verbatim; their
@@ -15,7 +19,7 @@
        file at the new pin.
      — this repo's own fills, no run's text: the orientation
        (the kit's orientation comment, filled problem-agnostic),
-       the CbC pointer and the pin stance (structural facts),
+       the CbC pointer, the pre-framing guard, the pin stance,
        and the Local rules (the trial line — the trial-closing
        ADR removes it — and the briefing rule).
      Use: assembly step 3 copies everything from the title line
@@ -44,6 +48,11 @@ other chapters deepen it. It is not restated here: the order of
 questions (promise → guarantees → structure → features → code,
 never backwards) lives there, and the method's reading of each
 record lives in that record's own comments.
+
+Until the framing artifacts exist (cbc-framing creates them, under
+`docs/system/`), the project is pre-framing: the only method work
+is running cbc-framing jointly with the human — never invent the
+artifacts to fill the gap.
 
 `docs/concept/` and the method skills under `.claude/skills/` are
 pinned copies: never edited in place — a change is a new copy
