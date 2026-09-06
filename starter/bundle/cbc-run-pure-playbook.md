@@ -2,32 +2,37 @@
      cbc-run-playbook.md (v3, this repo — provenance, harvest
      history and the kit-vendor base live in its header), created
      for the pure-seed experiment (starter/installs/pure-seed.md).
-     The steps are the parent's except four deltas. Two drop
-     birth-procedure statements the pure design has no place
-     for: the assembly (CbC) Step 0 comment (shipped-template /
-     three-commits / no-change-plan), and the (CbC) gate item's
-     trailing install-manual clause. Two are the channel split
-     (2026-09-05, user's design): session-scoped text belongs to
-     the firing prompt and PLAN to the project — so the kit's
-     first-session comment and the agent-side gates (the commit
-     split, the two birth entries) leave Step 0 for the prompt
-     and the run's own change-plan, making Step 0 pure container
-     prep; and the briefing leaves Step 0's gates to open
-     Framing as its starting input, so Step 0 closes clean, no
-     gate born blocked. Lifespan: the
-     experiment's reading decides — of this file and the parent,
-     the winner stays and the other is deleted; until then the
-     parent is the procedure of record, harvest lands there
-     first, and this file changes only by re-deriving from it.
-     2026-09-06 re-derivation: Framing gains the parent's new
-     entry-file retirement gate item (pure-seed run 1 harvest);
-     v2. -->
+     The steps are the parent's except the deltas below; the
+     parent is the procedure of record, and harvest lands there
+     first. v1 deltas (2026-09-05): the assembly (CbC) Step 0
+     comment and the (CbC) gate item's install-manual clause
+     dropped — no place in the pure design; and the channel
+     split — the kit's first-session comment and the agent-side
+     gates leave Step 0 for the firing prompt and the run's own
+     change-plan, and the briefing opens Framing as its starting
+     input, so Step 0 closes clean, no gate born blocked.
+     v2 (2026-09-06): Framing gains the parent's entry-file
+     retirement gate item, by re-derivation.
+     v3 (2026-09-06, provisional, user's design — the gates
+     experiment): the middle steps keep their name, their skill
+     pointer, and their goal; their gates, records lines, and
+     warnings from past runs are stripped to a derive-at-opening
+     instruction, and v2 is frozen whole at
+     docs/baselines/cbc-run-pure-playbook-v2.md for the per-step
+     derived-vs-frozen reading (the TODO item holds the
+     protocol: warnings handed to the run only after each
+     derivation is recorded). Kit steps (0, 1, N) stay vendored
+     whole — their gates are the kit's text, not this repo's
+     harvest. Lifespan: the experiment's reading decides — of
+     this file and the parent, the winner stays and the other is
+     deleted; until then this file changes only by re-deriving
+     from the parent, the v3 strip excepted. -->
 
 # Playbook: CbC run — pure
 
-Playbook version: v2 (2026-09-06, entry-file retirement gate
-item re-derived from the parent; v1 2026-09-05, variant of
-cbc-run v3)
+Playbook version: v3 (2026-09-06, provisional — middle gates
+derived at step opening; v2 2026-09-06, retirement gate item;
+v1 2026-09-05, variant of cbc-run v3)
 
 ## Step 0: Bootstrap                                [~]
 
@@ -84,87 +89,37 @@ Notes:
 ## Step 2: Define (naming)                          [ ]
 
 Goal: the project's public identity decided, not defaulted.
-Gate:
-- [ ] Project name decided under a naming rule, with a verdict —
-      not the framing's working name kept by inertia.
-- [ ] Repo name and remote repo description decided the same way.
-- [ ] Records updated where the working name changed (README,
-      PLAN title).
-Records: the verdicts, in the run's own decision log.
-Warnings from past runs:
-- Lived once (safe-reservations): scope belongs in the description
-  ("single-SKU · reserve → confirm | release") — the description is
-  where a stranger first meets the promise.
+Gate: derived when this step opens — verifiable facts, from the
+goal and the run's own records; written into this step before
+its work starts.
+Notes:
 
 ## Step 3: Ground / infrastructure  (infra-establish)    [ ]
 
 Goal: services stood up, constrained to need, verified both ways.
-Gate:
-- [ ] Environment decided against a lived default; decision recorded
-      with its defeaters (ADR).
-- [ ] Every provisioned service traced to a concrete registry
-      adversity need; the not-provisioned list states each
-      exclusion's why.
-- [ ] Stand-up from clean checkout with one documented command;
-      catalog check AND behavioral refusal check pass.
-- [ ] Builder-facing contract and operator manual exist, written
-      from lived work.
-Records: ADRs; the two manuals; an establishment log of actual
-outputs.
-Warnings from past runs:
-- The runtime ground facts must already be in the system definition
-  before this step opens — check first, log the return trip if not
-  (checkout-system d25ff48).
-- Database authority as grants (role split, migrations-only DDL) is
-  cheap here and priceless later: every immutability wall
-  checkout-system grew (REVOKEs, column-grain grants) stood on it.
+Gate: derived when this step opens — verifiable facts, from the
+goal, the named skill, and the registry; written into this step
+before its work starts.
+Notes:
 
 ## Step 4: Skeleton & bootstrap  (cbc-bootstrap)    [ ]
 
 Goal: an empty but buildable, testable, runnable system wired to the
 real ground, with the evidence harness proven on one adversity.
-Gate:
-- [ ] Builds and runs from clean clone with one documented command.
-- [ ] Test harness drives the real store (never a mock) and one
-      adversity class end to end; a deliberate break turns it red.
-- [ ] Stack overlay appended to the hygiene files, below the marker.
-- [ ] Requirements/decisions recorded before the code that applies
-      them exists.
-- [ ] cbc-slice Stage 0 readiness (R1–R6) passes and is recorded.
-Records: requirements doc; ADR for stack; README run instructions.
-Warnings from past runs:
-- Make the test container a faithful miniature of the ground (same
-  bootstrap SQL file, same identities): evidence then runs under
-  production authority and proves the grant machinery for free.
-- One standard test command from day one (widen surefire to *IT);
-  a second command is a test that quietly never runs.
-- Boot 4 line: RANDOM_PORT no longer provides TestRestTemplate —
-  @AutoConfigureTestRestTemplate (also recorded in the bootstrap
-  skill's walkthrough).
+Gate: derived when this step opens — verifiable facts, from the
+goal, the named skill, and the registry; written into this step
+before its work starts.
+Notes:
 
 ## Steps 5..N-1: Invariant slices  (cbc-slice, one step per stage)
 
 Goal: each registry slice closed by evidence that creates its
 adversity; ordering re-decided at each close, never assumed from
 the original expectation.
-Gate (per stage of slices):
-- [ ] Every slice: spec (zero mechanisms) → plan (one owner per
-      guarantee, strongest wall) → build → adversity evidence green.
-- [ ] Slice closes recorded in the registry with evidence pointers;
-      ARCHITECTURE invariants updated per close.
-Records: one doc per slice (spec → plan → evidence table).
-Warnings from past runs:
-- Budget a red-check per slice: break the guard (uncommitted),
-  watch the evidence redden and the wall hold alone — the strongest
-  line in every slice doc, at the cost of one run.
-- Cross-check queries in earlier slices' evidence WILL trip on later
-  vocabulary growth — that is the erosion guard working; update
-  with a recorded note in both slice docs, never silently.
-- A PLAN gate item must map to a named commit in the change-plan
-  that will close it, or it lands as a divergence.
-- The composition slice: keep the coordinator stateless and its
-  steps the areas' replayable acts — recovery then falls out of the
-  replay discipline instead of needing new machinery.
+Gate: derived when each stage opens — verifiable facts, from the
+goal, the named skill, and the registry; written into the stage
+before its work starts.
+Notes:
 
 ## Step N: Release                                  [ ]
 
