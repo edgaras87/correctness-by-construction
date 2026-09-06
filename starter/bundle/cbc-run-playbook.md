@@ -23,7 +23,12 @@
      moved the playbooks out of the kit, so the vendor path sweeps
      with the refresh. Step 0's first-session comment slimmed to
      kit facts (method's procedure is the bundle's manual's),
-     Framing gains the projection gate item, Step N unchanged. -->
+     Framing gains the projection gate item, Step N unchanged.
+     2026-09-06: Framing gains the entry-file retirement gate
+     item — pure-seed run 1's reading: the entry file's
+     birth-scoped lines each name their own end, but nothing
+     sweeps the ones whose end has passed; the gate is the
+     sweeper. Mirrored into the pure variant by re-derivation. -->
 
 # Playbook: CbC run
 
@@ -117,6 +122,9 @@ Gate:
       should see names its projection as a gate item — the README
       section, the ARCHITECTURE change. Projection follows truth,
       and the gate is where it is caught.
+- [ ] (CbC) Entry-file lines the briefing made false are retired
+      in this set; every temporary line still standing names a
+      later step as its end.
 Notes:
 
 ## Step 2: Define (naming)                          [ ]

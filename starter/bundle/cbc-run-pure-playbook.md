@@ -18,11 +18,16 @@
      experiment's reading decides — of this file and the parent,
      the winner stays and the other is deleted; until then the
      parent is the procedure of record, harvest lands there
-     first, and this file changes only by re-deriving from it. -->
+     first, and this file changes only by re-deriving from it.
+     2026-09-06 re-derivation: Framing gains the parent's new
+     entry-file retirement gate item (pure-seed run 1 harvest);
+     v2. -->
 
 # Playbook: CbC run — pure
 
-Playbook version: v1 (2026-09-05, variant of cbc-run v3)
+Playbook version: v2 (2026-09-06, entry-file retirement gate
+item re-derived from the parent; v1 2026-09-05, variant of
+cbc-run v3)
 
 ## Step 0: Bootstrap                                [~]
 
@@ -71,6 +76,9 @@ Gate:
       should see names its projection as a gate item — the README
       section, the ARCHITECTURE change. Projection follows truth,
       and the gate is where it is caught.
+- [ ] (CbC) Entry-file lines the briefing made false are retired
+      in this set; every temporary line still standing names a
+      later step as its end.
 Notes:
 
 ## Step 2: Define (naming)                          [ ]
