@@ -6,6 +6,72 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-06  (session: the pure seed runs, the reading, the template re-cut)
+
+- The pure-seed experiment, designed 09-05 through six recorded
+  revisions (the manual's banner keeps them all): material-only
+  seed, five commits on main with pins in the subjects, kit born
+  per the handbook's pure.md by pointer, the playbook's steps
+  into PLAN from a candidate variant (cbc-run-pure), no template,
+  no scenario, no fills — the agent finishes the birth blind.
+  Each revision converged on a repo principle already held:
+  artifact over script filter, channel split (prompt carries the
+  session, PLAN the project), briefing as Framing's starting
+  input so Step 0 closes clean.
+- Run 1 walked (user fired it, ~/IdeaProjects/cbc-pure-run): the
+  newborn passed nearly everything. Change-plan fired unprompted,
+  eight commits, sequence justified by where each decision lives
+  — entrance doc FOURTH, after what it presumes. Commit split
+  perfect. Bundle birth entry reconstructed from the seed
+  subjects, citing the copy-entry binding, and it re-derived our
+  blindness rule as its own rejected option. README stayed a
+  front door. ADR-0002 landed Accepted via the marked case,
+  argued correctly. THE FINDING: its derived CLAUDE.md is
+  minimal — kit table plus orientation plus one pin stance, no
+  stances, no guard. Walk-1 fat, template middle, pure run lean:
+  derivation follows whatever rule text is present.
+- The miss, and the best data of the run: change-plans §6
+  (stop at every boundary) never fired. Not silently — the agent
+  recorded the deviation and justified it by an instruction the
+  prompt never gave ("instructed to finish unattended"): the
+  harness's finish-the-task voice, heard as the user's. Named it
+  the three-voices problem (harness > prompt > files; skills are
+  files): forms travel as files, brakes need a stronger voice.
+  Fix shipped: the prompt now establishes the reviewer and the
+  staged-step pace (ab4bdf6). Fifth-handoff note accrued.
+- Harvest from the reading: the run's promise-line and pin
+  stance folded into the template (faa110f); the entry-file
+  sweeper gate item into both playbooks — birth-scoped lines
+  name their ends, the gates now sweep them (d4af956, variant
+  v2, manual synced).
+- Then the section-by-section template pass with the user, and
+  it ended somewhere unplanned: the stance bullets traced to
+  walk-1's derivation (they beat our snippet in the ADR-0014
+  merge — a newborn wrote our shipped text), and the user called
+  it: text earned under a different arrangement must not ride
+  into the next run. Template frozen whole at
+  docs/baselines/claude-md-template-v1.md (6ca9edc), live file
+  re-cut with no past-run text (8e25977) — stance bullets and
+  pre-framing guard out, the guard's exclusion accepted
+  knowingly (brakes don't re-derive; the human backstops
+  framing). Three-way reading protocol in TODO: next full run's
+  derived CLAUDE.md vs template-v1 vs walk-1's baseline.
+- The pass also caught the concept lying: "technology enters
+  with the first slice" vs the lived ground-then-skeleton order.
+  First content change to a concept chapter since import
+  (211bd0f): technology arrives after framing, answerable to the
+  registry — the inversion kept, the false timestamp dropped.
+  A TODO-worthy footnote: the header-compression attempt (moving
+  the template header's history to TODO) was rolled back by the
+  user — the comment stays where the editing happens.
+- Open: the doc-by-doc comparison paused (birth-scenario next,
+  then the playbook verdict, then the skills); the variant vs
+  parent call waits for trial close; run 2, if walked, uses the
+  new reviewer-paced prompt.
+- Resume: birth-scenario.md against run 1's eight-planned-commits
+  — the three-commits/no-change-plan prescription now has a lived
+  counterexample.
+
 ## 2026-09-05  (session: the reply lands, the template ships whole)
 
 - The handbook answered the fourth handoff at scale: 41 commits,
