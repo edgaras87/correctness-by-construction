@@ -44,8 +44,8 @@ the statement's own split is by chapter (Framing, Step 2).
 ### Executions (`starter/bundle/`)
 
 Responsibility: the derived layer — the five skills, their
-references, the cbc-run playbook, and the
-birth scenario (in trial) a run repo copies at birth, covering the
+references, and the pure playbook (cbc-run-pure, ADR-0016) a run
+repo receives at birth, covering the
 whole pipeline (cbc-framing → infra-establish / infra-serve →
 cbc-bootstrap → cbc-slice), each file pinned to the concept
 version it derives from or is checked against (ADR-0005).
