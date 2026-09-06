@@ -89,7 +89,7 @@ ADR-0010, ADR-0016.
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
-| `starter/` | The delivery layout (ADR-0010): `bundle/` is the derived layer a run copies at birth (skills, playbook steps, the parked template); `README.md` describes and maps; `installs/pure-seed.md` is the birth manual (ADR-0016) |
+| `starter/` | The delivery layout (ADR-0010): `bundle/` is the derived layer a run copies at birth (skills, playbook steps, the parked templates); `README.md` describes and maps; `installs/pure-seed.md` is the birth manual (ADR-0016) |
 | `docs/baselines/` | Held baselines — theory artifacts withheld from delivery, blind, compared against lived results (ADR-0012) |
 | `docs/models/` | Handbook models, vendored pinned copies (ADR-0002) |
 | `docs/adr/` | Architecture decision records |

@@ -271,6 +271,18 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Semi-pure install scenario (2026-09-06, user's idea, shape
+      undecided): a third birth shape between assembly (deleted,
+      ADR-0016) and pure — the entry files ship filled
+      (claude-md-template.md, readme-md-template.md, both parked
+      in the bundle) while the rest of the birth stays pure. Not
+      designed yet; both templates wait for it. What run 2
+      contributes before any design: its derived CLAUDE.md and
+      README are comparison objects against the parked harvests
+      — if derivation keeps producing what the templates hold,
+      the shape may never be needed; if it keeps missing
+      something, that gap is the install's justification.
+
 - [ ] Header audiences (2026-09-05, user's question at the
       pure-seed run): a bundle artifact's header has two
       audiences — the garden's mechanics (tiers, harvest, the

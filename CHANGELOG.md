@@ -24,6 +24,11 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   and the template stands as the three-way reading's comparison
   object. The birth-fill templates were retired with the assembly
   path.
+- A README template (`starter/bundle/readme-md-template.md`,
+  composed from the kit's README stub at the pin and run-1's
+  harvested fills, the "a backend" presumption corrected) —
+  parked, undelivered like the CLAUDE template: both wait for a
+  semi-pure install shape if one is designed (TODO).
 
 ### Changed
 
