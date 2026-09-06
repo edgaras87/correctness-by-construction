@@ -6,6 +6,54 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-07  (session: the receipt branch, then the semi-pure delivery)
+
+- Second arc of the day, two change sets back to back, both
+  reviewer-paced, no divergence in either.
+- The user asked, before semi-pure: should the pure install also
+  put its seed commits on a branch before the agent writes its
+  change-plan? Yes, and the records said why better than tidiness
+  did — the pure experiment names the commit sequence as its
+  measured object, and a seed on main had already taken that
+  choice away; run 2's straddling-seed known issue; newborn-v1's
+  birth-seed as the lived precedent. ADR-0018 and six commits
+  (1a6cdbe..fcc4d66): the seed commits on birth-seed, main stays
+  at hygiene with the same files untracked, the prompt gains one
+  line naming the branch. The restore-and-reset and the check
+  command were proven on a scratch repo before the manual stated
+  them. Closed the old variant A-vs-B item on the way: B's
+  committed manifest and A's clean main, both.
+- Then semi-pure. ADR-0016 had foreseen it in one clause — the
+  parked template "may re-enter delivery if the pure runs show
+  derivation inadequate" — and run 2's reading was that showing:
+  two runs, same skills, neither produced the pre-framing guard
+  or the skills' pin stance. ADR-0019 and six commits
+  (2ca749b..6b63308): one optional step in pure-seed.md, both
+  fills cut from the title line, name filled, written over the
+  kit's stubs, one commit on the branch. The cut was proven
+  against the real fills first — byte-identical from the title
+  down, nothing leaking. The starter doc's contract paragraph
+  now says why CLAUDE.md stays off the list even though the step
+  writes over it: a fill assumes nothing of the stub.
+- Judgment calls disclosed and standing: one manual with a
+  switch, not two manuals (the difference is one commit, and one
+  file keeps that structural); both entry files in one commit on
+  the receipt branch, where the newborn's split rule does not
+  govern; the manual keeps its name. The plan was staged before
+  the ADR in both sets, the convention's order, as in the
+  morning's set.
+- What run 3 measures changes: not whether the agent derives the
+  guard but what it edits in delivered entry files, and whether
+  the guard holds through Framing. The does-it-invent-protections
+  measurement ended with run 2 — two pure runs are its whole
+  evidence, and neither invented it.
+- Resume: seed run 3 per pure-seed.md with step 4 on — check the
+  branch (six commits, main at hygiene, worktree equal to the
+  tip), then fire the agent on main with the semi-pure
+  parenthetical. The Step 0 reading of run 3 afterwards, here,
+  read-only. Run 2 still waits on its briefing; its Framing
+  boundary is the next gates reading.
+
 ## 2026-09-07  (session: "backend" kept, run 2 harvested, fills/)
 
 - Opened on the open question from yesterday's Resume: where to
