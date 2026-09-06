@@ -73,9 +73,13 @@
       with run 1 on the pre-briefing line and the records table,
       came out thinner on the pin stance and README's method
       pointer, and presumed "backend" as run 1 and the parked
-      CLAUDE template did — three of three; the fix is upstream,
-      concept or kit stub, undecided. Neither run derived the
-      pre-framing guard.)
+      CLAUDE template did — three of three. Decided the same day:
+      keep it — the concept and kit never say backend, the
+      skills' description lines do, and their bodies are
+      backend-born, so the word names the toolkit, not the
+      problem; the README template's "a system" reverted to
+      match. Trigger to revisit: the first non-backend run (Later).
+      Neither run derived the pre-framing guard.)
 
 - [ ] Template three-way reading, after the next full run
       (2026-09-06, user's design): the shipped CLAUDE.md template
@@ -517,6 +521,13 @@
       gets stood up in a run, decide whether it earns its own
       walkthrough beside postgres-setup-walkthrough.md (the test:
       long, sequenced, likely to recur).
+- [ ] "Backend" in the skills' description lines (cbc-framing,
+      cbc-slice, infra-establish) and both parked entry-file
+      templates — kept 2026-09-06: it is the toolkit's honest
+      scope, and every run so far is one. At the first
+      non-backend run the description lines are where to start;
+      the practice skills' bodies (compose, Flyway, Spring Boot)
+      are the larger job behind them.
 - [ ] Trigger descriptions of the practice skills are unoptimized
       (archive STATUS); if they under- or over-fire in runs, the
       descriptions are the knob.

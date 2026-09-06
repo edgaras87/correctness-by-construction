@@ -16,8 +16,14 @@
        (cbc-pure-run README @ c3ffda8, grown unaided from the
        kit stub), a run's words taken consciously — the trade
        the semi-pure shape makes on purpose. One correction
-       against docs/concept/: the run's "a backend" was a
-       pre-framing presumption, neutralized to "a system". The
+       made and reverted: the run's "a backend" was read as a
+       pre-framing presumption and neutralized to "a system",
+       then restored 2026-09-06 after the run-2 reading — the
+       word is the skills' own (their description lines say
+       backend, and their bodies are backend-born), so it names
+       the toolkit, not the problem; the CLAUDE template says
+       the same. Revisit at the first non-backend run (TODO
+       Later). The
        temporary paragraph survives harvest because it is true
        for every newborn at delivery time and names its own end
        (Step 1) — the entry-file retirement rule's shape.
@@ -34,7 +40,7 @@
 
 # <working-name>
 
-A correctness-by-construction run: a system whose design is
+A correctness-by-construction run: a backend whose design is
 derived from one falsifiable promise — asking what must never
 happen before what it should do — and whose every invariant is
 closed by a test that creates its adversity. The problem is not
