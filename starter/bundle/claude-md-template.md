@@ -1,51 +1,33 @@
 <!-- Derives from concept v1 of correctness-by-construction
-     (ADR-0003). Composed 2026-09-05 (ADR-0015) from two masters,
-     each half attributable:
+     (ADR-0003). Re-cut fresh 2026-09-06, user's design: the
+     past-run harvest — the stance bullets and the pre-framing
+     guard, walk-1-era text merged by ADR-0014 and earned under a
+     different arrangement than the current skills — is stripped
+     and frozen at docs/baselines/claude-md-template-v1.md for
+     the three-way reading after the next full run. Harvest
+     re-enters only from a run reading, each line traceable to
+     the run that earned it under the current skills.
      — the kit half: engineering-handbook starter/kit/CLAUDE.md
        @ c670fe5 — the title line, the records table and its
        comment, the guard comment, all verbatim; their
-       agent-arrangement convention holds the rules this half
-       answers to, and names the two section headings below.
-       Refreshed at each kit re-pin: re-read their entry file at
-       the new pin and re-verify this half against it.
-     — the method half: the shipped text merged once from the
-       first walked birth (ADR-0014; the fragment history is
-       claude-md-cbc.md's, retired 2026-09-05 — see git). The CbC
-       section, the stance lines, the local rules. Changes flow
-       back as harvest, never as per-birth rewrites.
-     The orientation lines are this repo's fill of the kit's
-     orientation comment, problem-agnostic by design.
-     Trial note: the first Local-rules line ships only while the
-     birth-scenario trial runs; the trial-closing ADR removes it
-     from this file. The second is permanent until the briefing
-     lands, after which the newborn may retire it from its copy.
-
+       agent-arrangement convention holds this half's rules. At
+       each kit re-pin, re-verify this half against their entry
+       file at the new pin.
+     — this repo's own fills, no run's text: the orientation
+       (the kit's orientation comment, filled problem-agnostic),
+       the CbC pointer and the pin stance (structural facts),
+       and the Local rules (the trial line — the trial-closing
+       ADR removes it — and the briefing rule).
      Use: assembly step 3 copies everything from the title line
      down, whole, as the newborn's CLAUDE.md — no merge into the
      kit's stub, no section anchors assumed (ADR-0015). The seed
      fills <working-name>. After birth the copy is the newborn's
      own arrangement, maintained by it.
-     2026-09-06 harvest from pure-seed run 1, whose agent derived
-     a CLAUDE.md blind to this file: the orientation gains the
-     falsifiable-promise line and the CbC section the
-     pinned-copies stance — both that run's inventions. The
-     counter-evidence is also on file: its lean derivation
-     dropped the framing guard and the stance bullets — kept
-     here deliberately, as harvested brakes a fresh derivation
-     does not reproduce (the reading, concept-repo TODO). The
-     file's delivery fate — the pure seed excludes it — is the
-     trial-close ADR's question, not this comparison's.
-     Authoring rules (2026-09-06): every edit to the body below
-     answers to the copy's own guard comment, read at authoring
-     time — a line here is loaded by every future project on
-     every task, and a shipped line is rarely pruned, so the
-     three tests and the screen budget bind this template harder
-     than any live copy. At each bundle harvest or concept
-     re-pin, re-read the stance bullets and the CbC section
-     against docs/concept/ — they are its compressed reading and
-     drift silently otherwise. "A backend service" is a
-     harvested presumption (every run so far has been one);
-     unhardcode at the first non-backend run. -->
+     Authoring: every edit to the body below answers to the
+     copy's own guard comment, read at authoring time — a line
+     here is loaded by every future project on every task and is
+     rarely pruned once shipped; the three tests and the screen
+     budget bind this file harder than any live copy. -->
 
 # <working-name>
 
@@ -62,11 +44,6 @@ other chapters deepen it. It is not restated here: the order of
 questions (promise → guarantees → structure → features → code,
 never backwards) lives there, and the method's reading of each
 record lives in that record's own comments.
-
-Until the framing artifacts exist (cbc-framing creates them, under
-`docs/system/`), the project is pre-framing: the only method work
-is running cbc-framing jointly with the human — never invent the
-artifacts to fill the gap.
 
 `docs/concept/` and the method skills under `.claude/skills/` are
 pinned copies: never edited in place — a change is a new copy
@@ -103,21 +80,6 @@ from the source, logged in `.claude/decisions.md`.
         may edit by hand.
      Longer than a screen means a line is failing. Shrinking it is
      maintenance, not tidying. -->
-
-## How to work here
-
-- Design conversations before build conversations. Framing runs on
-  paper; no language, store, or framework is named before the first
-  slice.
-- When asked for a feature, ask which guarantee it serves. If none,
-  the answer is a recorded refusal, not a quiet yes.
-- Name the kill, not the cure: state what dies under an attack before
-  choosing a mechanism.
-- Prefer the wall over the test. A green test proves the wall was
-  there once; only structure makes the attack meaningless.
-- Watch for the rot: a feature shipped without re-checking guarantees,
-  an admin path around the single entry, guarantees drifting into the
-  test suite, theory before the world is bounded.
 
 ## Local rules
 
