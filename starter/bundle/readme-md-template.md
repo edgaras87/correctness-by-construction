@@ -27,11 +27,17 @@
        temporary paragraph survives harvest because it is true
        for every newborn at delivery time and names its own end
        (Step 1) — the entry-file retirement rule's shape.
-     Use: parked, undelivered — no install delivers this file;
-     it waits beside claude-md-template.md for the semi-pure
-     install if one is designed, and run 2's README derivation
-     is a comparison object against this harvest in the
-     meantime.
+     — Harvested 2026-09-06 from run 2's Step 0 derivation
+       (cbc-pure-run-2 README @ 8eda9ae), under the revised
+       reading rule (a birth template harvests at the Step 0
+       reading): the opening — "A backend built by", the
+       concept linked from the first line. The paragraph itself
+       stays run 1's: the promise-first phrasing, the
+       not-yet-chosen problem, the self-rewriting note, the
+       start-here pointer — absent from run 2's, its own devlog
+       calling that paragraph badly written.
+     Use: parked — the semi-pure install, next, is what delivers
+     it, beside claude-md-template.md.
      Authoring: every edit to the body below answers to the
      copy's own closing comment, read at authoring time — a
      line here must be true at birth for every project, meant
@@ -40,18 +46,18 @@
 
 # <working-name>
 
-A correctness-by-construction run: a backend whose design is
-derived from one falsifiable promise — asking what must never
-happen before what it should do — and whose every invariant is
-closed by a test that creates its adversity. The problem is not
-yet chosen. It arrives with the framing briefing, and this
-paragraph is then re-derived from the framed intent
-([PLAN.md](PLAN.md), Step 1). Until then the repository holds
-the method, the plan, and the records — no code.
+A backend built by [correctness-by-construction](docs/concept/):
+a system whose design is derived from one falsifiable promise —
+asking what must never happen before what it should do — and
+whose every invariant is closed by a test that creates its
+adversity. The problem is not yet chosen. It arrives with the
+briefing that opens framing, and this paragraph is then
+re-derived from the framed intent ([PLAN.md](PLAN.md), Step 1).
+Until then the repository holds the method, the plan, and the
+records — no code.
 
 The method: [docs/concept/](docs/concept/), a pinned copy of the
-correctness-by-construction concept in five chapters; start with
-[00-cbc.md](docs/concept/00-cbc.md).
+concept in five chapters; start with [00-cbc.md](docs/concept/00-cbc.md).
 
 ## Project records
 
