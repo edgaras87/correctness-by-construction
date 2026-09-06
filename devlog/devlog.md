@@ -6,6 +6,37 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-06  (session: the strip goes whole-playbook — pure v4)
+
+- Third arc of the day, opened on the user's question: why does
+  the playbook still have gates, didn't we decide to derive them?
+  Answer on record was decision one of the gates experiment — kit
+  steps (0, 1, N) stay vendored whole, their gates being the
+  kit's text, not our harvest. The user overturned it for steps 0
+  and 1: "i want to make it pure" — Bootstrap and Framing lose
+  their vendored kit gates and kit comments too, only Release
+  stays as the fixed endpoint (bb7d970, playbook v4).
+- Judgment calls disclosed and standing: Framing's briefing
+  comment kept (channel-split wiring, garden-authored, not kit
+  text — without it the newborn doesn't know where the briefing
+  lands); Framing's skill pointer moved into the heading to match
+  the middles; no new baseline, since frozen v2 already holds
+  every stripped gate whole, kit text included.
+- What v4 raises the stakes on: Framing's sweeper item and the
+  two projection items now live only in frozen v2 — hand-back
+  candidates at the Framing boundary if run 2's derivation misses
+  them. And the reading gains a category: kit hygiene an agent
+  re-derives unaided vs kit knowledge only the vendored text
+  held. The TODO experiment item carries the dated note.
+- Found at the staging's reference check: ARCHITECTURE's
+  executions responsibility line still named the deleted parent
+  playbook and birth scenario — the retirement change-plan's
+  records walk fixed that section's birth-procedure sentences
+  and the codemap but missed its opening line. Caught up as its
+  own commit (e99f0c8).
+- Resume: reseed for run 2 (pure-seed.md now delivers v4), or
+  the skills reading — user's pick, unchanged.
+
 ## 2026-09-06  (session: the gates go derivable, the assembly path retires)
 
 - Same session as the entry below, second arc — the experiments
