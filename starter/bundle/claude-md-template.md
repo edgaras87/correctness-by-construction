@@ -24,13 +24,36 @@
      down, whole, as the newborn's CLAUDE.md — no merge into the
      kit's stub, no section anchors assumed (ADR-0015). The seed
      fills <working-name>. After birth the copy is the newborn's
-     own arrangement, maintained by it. -->
+     own arrangement, maintained by it.
+     2026-09-06 harvest from pure-seed run 1, whose agent derived
+     a CLAUDE.md blind to this file: the orientation gains the
+     falsifiable-promise line and the CbC section the
+     pinned-copies stance — both that run's inventions. The
+     counter-evidence is also on file: its lean derivation
+     dropped the framing guard and the stance bullets — kept
+     here deliberately, as harvested brakes a fresh derivation
+     does not reproduce (the reading, concept-repo TODO). The
+     file's delivery fate — the pure seed excludes it — is the
+     trial-close ADR's question, not this comparison's.
+     Authoring rules (2026-09-06): every edit to the body below
+     answers to the copy's own guard comment, read at authoring
+     time — a line here is loaded by every future project on
+     every task, and a shipped line is rarely pruned, so the
+     three tests and the screen budget bind this template harder
+     than any live copy. At each bundle harvest or concept
+     re-pin, re-read the stance bullets and the CbC section
+     against docs/concept/ — they are its compressed reading and
+     drift silently otherwise. "A backend service" is a
+     harvested presumption (every run so far has been one);
+     unhardcode at the first non-backend run. -->
 
 # <working-name>
 
 A backend service to be built by correctness-by-construction —
-until the briefing brings the problem, this repo is method and
-records, ready to start: nothing to build, no tests, no runtime.
+the design derived from one falsifiable promise, what must never
+happen first, features last. Until the briefing brings the
+problem, this repo is method and records, ready to start:
+nothing to build, no tests, no runtime.
 
 ## Correctness by construction
 
@@ -44,6 +67,10 @@ Until the framing artifacts exist (cbc-framing creates them, under
 `docs/system/`), the project is pre-framing: the only method work
 is running cbc-framing jointly with the human — never invent the
 artifacts to fill the gap.
+
+`docs/concept/` and the method skills under `.claude/skills/` are
+pinned copies: never edited in place — a change is a new copy
+from the source, logged in `.claude/decisions.md`.
 
 ## Records
 
