@@ -6,6 +6,55 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-06  (session: the gates go derivable, the assembly path retires)
+
+- Same session as the entry below, second arc — the experiments
+  compounded and then took the decision they were circling.
+- The pre-framing guard came back into the template (ea1f6b2), a
+  second look at lineage: it is garden-authored (the withdrawn
+  snippet's line), not a run's text, so the re-cut's rule never
+  barred it — and the pure seed ships no template, so the
+  derivation measurement never needed its absence. Lesson worth
+  keeping: when stripping by origin, check each line's actual
+  author before sweeping by era.
+- The gates experiment (user's design, the template freeze's move
+  one level deeper): variant frozen at v2 in baselines, re-cut
+  provisional at v3 — middles keep name, skill pointer, goal;
+  gates, records lines, and warnings stripped to
+  derive-at-opening. Three decisions taken consciously: kit
+  steps stay vendored whole; warnings stripped for purity (they
+  are underivable paid-for facts — the boundary rhythm hands
+  them back after each derivation); the newborn learns nothing
+  of the frozen master. What it measures, plainly: which gates
+  are a cache of the skills and which are playbook-only
+  knowledge — the playbook's reason-to-exist, measured.
+- Then the user asked "can we discard cbc-run-playbook.md?" and
+  the honest answer surfaced the real question: is the assembly
+  walk ever going to happen? It is not — ADR-0016, a full
+  change-plan (47ad294..f1dfe1a, eight commits, one §5 revision,
+  reviewer-paced at every boundary): pure adopted, assembly walk
+  cancelled, four artifacts deleted (parent playbook, birth
+  scenario, installs/cbc.md, birth-fills), the variant the only
+  playbook carrying its own provenance, pure-seed.md the
+  procedure of record, the template parked as the three-way
+  reading's comparison object, the held briefing released to the
+  pure path. The trial closed without its walk — the pure
+  evidence answered the trial's question first.
+- The one divergence, recorded not silent: the change-plan's
+  records walk missed ARCHITECTURE (the shape change fires its
+  moment) — caught by a post-sweep reference grep at a boundary,
+  revision-committed. The convention's own failure mode, §3's
+  "planned, not remembered", lived once more in miniature.
+- DEAD END, cheap: staged a compression of the template's header
+  (history to TODO) — user rolled it back; the comment stays
+  where the editing happens. Second rollback of that shape;
+  the pattern is now memory.
+- Open: run 2 reseed (fresh pin, v3 steps, reviewer-paced
+  prompt, then the gates readings per boundary); the skills are
+  the last unread doc-by-doc comparison; the briefing fires in
+  the pure-born run whenever the user chooses.
+- Resume: reseed for run 2, or read the skills — user's pick.
+
 ## 2026-09-06  (session: the pure seed runs, the reading, the template re-cut)
 
 - The pure-seed experiment, designed 09-05 through six recorded
