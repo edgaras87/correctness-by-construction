@@ -60,7 +60,10 @@ cancelled; the pure-seed item records the variant-vs-parent
 verdict (decided here, not at a trial close); the briefing's
 release to the pure path noted where the held briefing is named.
 CHANGELOG: assembly birth removed, pure seed is the birth
-procedure. CLAUDE.md untouched — no row changes.
+procedure. ARCHITECTURE: the birth-procedure paragraph and the
+starter row updated to the pure shape (added by the §5 revision —
+the original records walk missed that the shape change fires
+ARCHITECTURE's moment). CLAUDE.md untouched — no row changes.
 
 **7. `docs(agent): close change-plan for the assembly retirement`**
 Deletes this file; the body records what diverged.
