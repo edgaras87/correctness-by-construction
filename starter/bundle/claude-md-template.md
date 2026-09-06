@@ -20,13 +20,14 @@
      — this repo's own fills, no run's text: the orientation
        (the kit's orientation comment, filled problem-agnostic),
        the CbC pointer, the pre-framing guard, the pin stance,
-       and the Local rules (the trial line — the trial-closing
-       ADR removes it — and the briefing rule).
-     Use: assembly step 3 copies everything from the title line
-     down, whole, as the newborn's CLAUDE.md — no merge into the
-     kit's stub, no section anchors assumed (ADR-0015). The seed
-     fills <working-name>. After birth the copy is the newborn's
-     own arrangement, maintained by it.
+       and the Local rules (the briefing rule; the trial line
+       that stood beside it left with ADR-0016 — its own removal
+       clause honored, the scenario it named retired).
+     Use: parked, undelivered (ADR-0016) — the pure-born newborn
+     derives its own CLAUDE.md, and this file waits as the
+     three-way reading's comparison object; if delivery returns,
+     the copy is whole from the title line down, no merge into
+     the kit's stub (ADR-0015), the seed filling <working-name>.
      Authoring: every edit to the body below answers to the
      copy's own guard comment, read at authoring time — a line
      here is loaded by every future project on every task and is
@@ -92,7 +93,4 @@ from the source, logged in `.claude/decisions.md`.
 
 ## Local rules
 
-- Step 0 here is a trial of `docs/birth-scenario.md`: it is the
-  procedure, and every divergence from it is written into the
-  devlog, not fixed silently.
 - Nothing before the briefing names the problem.
