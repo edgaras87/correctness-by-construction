@@ -34,7 +34,19 @@
      moves from Step 0's gates to Framing's starting input, so
      Step 0 closes clean. The measured object is now assembly
      judgment: the commit sequence the agent chooses and
-     justifies, not discovery from nothing. -->
+     justifies, not discovery from nothing.
+     Sixth revision, 2026-09-06, after run 1: the prompt gains
+     the review protocol — the plan staged and approved before
+     it commits, then step by step, each step staged, shown, and
+     committed only on the reviewer's word. Run 1 ran straight
+     through: change-plans §6 assumes a reviewer nothing had
+     established, and a file-level "stop" loses to the harness's
+     finish-the-task pressure — not silently: the agent saw §6,
+     recorded the deviation in its plan, and justified it by an
+     instruction the prompt never gave ("instructed to finish
+     unattended"), the harness voice heard as the user's. The reviewer's presence is
+     session truth — the channel split's own logic, applied to
+     pacing. Run 1's straight-through walk stands as data. -->
 
 # Install: the pure seed — material only, the agent finishes
 
@@ -125,28 +137,41 @@ pointer to a delivered skill, no conclusions.
 **4. Fire the agent** — a fresh session in the newborn, never the
 concept repo's, with this prompt and nothing more:
 
-> This repo was seeded, not born whole — the commit history shows
-> it: the handbook's starter kit first (the container — records,
-> conventions, the entry file), then the correctness-by-construction
-> bundle (the method — docs/concept/, five skills, the steps in
-> PLAN), each seed commit naming its source's pin. The kit knows
-> nothing of the method; the bundle presumes the container. Your
-> task is to finish the birth: assemble what was delivered into a
-> working project — your own arrangement, the records, PLAN's
-> Step 0 closed on its gates. Read the whole repository first,
-> every file and every seed commit. Then plan the work as the
-> conventions you were given direct — your own commit sequence,
-> your own order of artifacts, split by the commit scopes the
-> skills define, each choice one you can justify in the plan.
-> Work only within this repository — the source repos the pins
-> name are not yours to read. The problem arrives later, as a
-> briefing that opens Framing; nothing before it names the
-> problem.
+```text
+This repo was seeded, not born whole — the commit history shows
+it: the handbook's starter kit first (the container — records,
+conventions, the entry file), then the correctness-by-construction
+bundle (the method — docs/concept/, five skills, the steps in
+PLAN), each seed commit naming its source's pin. The kit knows
+nothing of the method; the bundle presumes the container. Your
+task is to finish the birth: assemble what was delivered into a
+working project — your own arrangement, the records, PLAN's
+Step 0 closed on its gates. Read the whole repository first,
+every file and every seed commit. Then plan the work as the
+conventions you were given direct — your own commit sequence,
+your own order of artifacts, split by the commit scopes the
+skills define, each choice one you can justify in the plan.
+I am the reviewer the change-plans convention names, and the
+work moves at my pace: stage the plan and ask for my approval
+before committing it; then one step at a time — stage a step,
+show me what changed, and commit only on my word, staging the
+next step after each approval.
+Work only within this repository — the source repos the pins
+name are not yours to read. The problem arrives later, as a
+briefing that opens Framing; nothing before it names the
+problem.
+```
 
 The prompt is the session channel — it carries what is true only
 of this moment: the situation (two sources, why split), the task,
-the read-everything instruction, the expectation of a plan. PLAN
-carries only what stays true of the project. What the prompt
+the read-everything instruction, the expectation of a plan, and
+the review protocol. That last is session truth like the rest —
+a reviewer is present *this run* — and run 1 showed the delivered
+convention cannot establish it alone: its §6 names "the reviewer"
+but a file-level stop loses to the harness's finish-the-task
+pressure when no voice above the file confirms anyone is
+watching. Pacing is not a measured object, so the lines leak
+nothing. PLAN carries only what stays true of the project. What the prompt
 deliberately never says: any order, any answer to which records
 to touch or how far to adapt them, whether skills land as one
 commit or split by source — the sequence the agent chooses and

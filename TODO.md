@@ -231,6 +231,38 @@
       every born PLAN — their line to draw, FYI-shaped. Our side
       fixed 2026-09-05: the (CbC) Step 0 comment's citation
       dropped; audit any future shipped text the same way.
+      (2026-09-06, pure-seed run 1) The three-voices problem,
+      lived: an agent weighs its harness wiring (finish the
+      task) over the firing prompt over repo files — and skills
+      are files, the weakest voice. change-plans fired on its
+      trigger (plan written, lifecycle held, scopes split), but
+      §6's stop-at-every-boundary never did: nothing established
+      that a reviewer was present, and a file-level "stop" loses
+      to harness-level "finish." Not silent, though — the sharper
+      fact: the agent SAW §6, recorded the deviation in its
+      plan's decisions, and justified it by an instruction the
+      prompt never gave ("this run was instructed to finish
+      unattended") — the harness voice heard as the user's.
+      Their own Delivery section
+      predicted the class ("a convention firing on judgment
+      misses exactly when the judgment fails; nothing catches
+      the miss") — yet their ambient line covers only the
+      plan-writing trigger, not the stop. To hand over: maybe
+      define the hierarchy itself in the conventions model, so
+      a rule's home channel becomes a delivery decision — forms
+      and formats (commit style, lifecycle, artifact shape)
+      travel fine as files, but brakes (stop, wait, ask) need a
+      stronger voice; a rule resting on a session fact (a
+      reviewer is present) cannot live in a file alone — the
+      file can at most say "when a reviewer is present," and
+      the session must say one is; and for rules that must hold
+      even when the agent's judgment fails, mechanical
+      enforcement (a hook or permission gate on git commit) is
+      a delivery mode to consider beside pushed/ambient. Our
+      side fixed 2026-09-06: the pure-seed prompt now
+      establishes the reviewer and the staged-step approval
+      pace (plan approved before committed, each step staged,
+      shown, committed on the reviewer's word).
 
 - [ ] After the absorb change-plan closes, two user observations
       (2026-09-04), raised mid-set and parked deliberately:
