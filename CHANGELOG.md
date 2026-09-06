@@ -32,6 +32,11 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 
 ### Changed
 
+- The pure seed delivers on a receipt branch (ADR-0018): the five
+  seed commits land on `birth-seed`, never merged, and main stays
+  at the kit's hygiene commit with the same files untracked, for
+  the newborn's agent to commit under its own sequence and split.
+  Runs 1 and 2 were seeded on main and keep that shape.
 - `starter/` splits by how a delivery lands (ADR-0017): `bundle/`
   is what a run copies as pinned files, the five skills; the new
   `fills/` holds text the seed writes into the kit's own files —

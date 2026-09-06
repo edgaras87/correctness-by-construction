@@ -58,7 +58,13 @@
       split. It
       also live-tests variant B's delivery shape (seed commits
       on main — the delivered/authored split is exact in the
-      log).
+      log). (2026-09-07, superseded by ADR-0018: from the next
+      seed the deliveries commit on the receipt branch
+      birth-seed and main holds them untracked — the agent's
+      first commit on main is its own, so the sequence and split
+      are measured for every delivered file, not only the
+      agent's additions. Runs 1 and 2 were seeded on main; a
+      reading against them says so.)
       Reading is this repo's act, read-only, recorded here.
       2026-09-05: cbc-newborn moved to archive/cbc-newborn-v1
       (user's act, both branches intact) — the walk-1 comparison
@@ -157,7 +163,11 @@
       devlog (2026-09-06, fifth arc) — the derived gate covers
       v2's three and adds five, each traced to a kit convention,
       so at Step 0 the vendored gates were a cache. Awaits the
-      briefing; the Framing boundary is the next reading.)
+      briefing; the Framing boundary is the next reading. Note
+      for run 3 onward, 2026-09-07: seeded per ADR-0018 on the
+      receipt branch — its Step 0 differs from run 2's in that
+      the agent commits the deliveries itself; the gates reading
+      compares the derived gate, not the commit count.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
@@ -425,6 +435,12 @@
       into "session or script," decided with the rebuild script
       at trial close. Kept for the risk note: nothing forces the
       reading — still true of assembly, still to watch.
+      (2026-09-07) Closed by ADR-0018: the pure seed adopted B's
+      committed manifest and A's clean main at once — the seed
+      commits on birth-seed, never merged, main holds the files
+      untracked and the agent commits them. The risk note holds
+      its shape: the prompt names the branch, and the first
+      commit on main is the evidence the reading took.
 
 - [x] Fourth handbook handoff — DELIVERED 2026-09-04 (user
       pasted temp/ staging copy), ANSWERED 2026-09-05 at their

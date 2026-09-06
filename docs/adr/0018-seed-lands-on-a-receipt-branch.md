@@ -1,9 +1,13 @@
 # 0018. The seed lands on a receipt branch
 
 Date: 2026-09-07
-Status: Proposed (opened inside the receipt-branch change set per
-change-plans §4; flips to Accepted at the set's final records
-commit if no boundary contradicts it)
+Status: Accepted (2026-09-07, at the set's final records commit;
+opened Proposed per change-plans §4. The manual's boundary proved
+the mechanism on a scratch repo — restore from the branch tip,
+reset the index, the check printing nothing — before it was
+written; no boundary contradicted the shape. Closes TODO's
+variant-B question: B's committed manifest and A's clean main,
+both)
 
 ## Context
 
