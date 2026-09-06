@@ -4,6 +4,11 @@ Date: 2026-09-06
 Status: Accepted (2026-09-06, at the set's records commit; opened
 Proposed per change-plans §4 — flipped once the deletions the
 Decision names existed, adbbcfc)
+Amended by ADR-0019 (2026-09-07): the parked template's re-entry
+condition fired — with the semi-pure step on, the entry files
+ship filled from the fills; the newborn no longer derives its
+CLAUDE.md. Delivery mechanics also amended by ADR-0018 (the
+receipt branch).
 
 ## Context
 
