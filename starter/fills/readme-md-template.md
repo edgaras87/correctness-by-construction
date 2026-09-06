@@ -36,8 +36,12 @@
        not-yet-chosen problem, the self-rewriting note, the
        start-here pointer — absent from run 2's, its own devlog
        calling that paragraph badly written.
-     Use: parked — the semi-pure install, next, is what delivers
-     it, beside claude-md-template.md.
+     Use: delivered by the seed's semi-pure step (pure-seed.md
+     step 4, ADR-0019, 2026-09-07), in one commit with
+     claude-md-template.md: the copy is whole from the title line
+     down, this header stays here, <working-name> filled by the
+     seed. With the step off, the newborn derives its own README
+     from the kit's stub.
      Authoring: every edit to the body below answers to the
      copy's own closing comment, read at authoring time — a
      line here must be true at birth for every project, meant

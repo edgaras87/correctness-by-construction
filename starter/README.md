@@ -36,8 +36,8 @@ place, never re-copied, no pin beyond the seed commit's subject:
 | From here | Into the run repo |
 |---|---|
 | `starter/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (pure-seed step 3; the newborn holds no playbook copy, their ADR-0031's model) |
-| `starter/fills/claude-md-template.md` | parked, undelivered (ADR-0016): the pure-born newborn derives its own CLAUDE.md from the kit's stub. If delivered, the body goes over that stub whole from the title line down, headless (ADR-0015) — a semi-pure install's act, its own decision when designed |
-| `starter/fills/readme-md-template.md` | parked, undelivered: composed 2026-09-06 from the kit's README stub @ c670fe5 and the runs' harvested fills, waiting with the CLAUDE template for the same semi-pure install (TODO) |
+| `starter/fills/claude-md-template.md` | its body, from the title line down with `<working-name>` filled, written over the kit's CLAUDE.md stub by the seed's semi-pure step (pure-seed step 4, ADR-0019) — whole, headless, no merge (ADR-0015); with the step off, the newborn derives its own from the stub (ADR-0016) |
+| `starter/fills/readme-md-template.md` | the same, over the kit's README.md stub, in the same commit — composed from the kit's README stub @ c670fe5 and the runs' harvested fills |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before
@@ -69,18 +69,24 @@ vendor base for our playbook's endpoint steps (their ADR-0031
 contract; `playbooks/` is no longer a kit directory) — and must
 not depend on anything else; a handbook kit update is checked
 against this list, nothing more. CLAUDE.md is not on the list and
-does not return: the pure-born newborn derives its own from the
-kit's stub (ADR-0016; the shipped template is parked, undelivered,
-its content awaiting the three-way reading).
+does not return even though the semi-pure step writes over it: a
+fill replaces the stub whole and assumes nothing of its shape
+(ADR-0015, ADR-0019) — what it depends on is the kit's entry-file
+text at the pin, carried verbatim in the fill's kit half and
+re-verified at each re-pin, which is a harvest duty here, not a
+surface the kit must hold still.
 The kit names the same contract from its side (the handbook's
 `starter/README.md` contract list, 2026-08-30; narrowed by their
 ADR-0031): the handbook states what may be assumed, each bundle
 states what it assumes, and a bundle needing a new surface
 widens the contract handbook-side first — the fourth handoff
 told them CLAUDE.md stays off our list, and ADR-0015 holds it.
-The overlay only adds files in paths the kit does not claim
-(ADR-0012); since ADR-0016 it has no non-additive act — the kit's
-stub stays the newborn's own to fill. Records stay the kit's: CbC events are
+The overlay adds files in paths the kit does not claim
+(ADR-0012) and performs one non-additive act, switched on per
+run: the semi-pure step replaces the kit's two entry stubs,
+CLAUDE.md and README.md, whole with the fills (ADR-0019); with
+the step off, the stubs stay the newborn's own to fill
+(ADR-0016). Records stay the kit's: CbC events are
 recorded as ordinary project events under the kit's rules, and the
 method's own artifacts (`docs/system/`, the framing derivation)
 live beside the records, not in place of them.
