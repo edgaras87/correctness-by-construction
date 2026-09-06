@@ -58,10 +58,10 @@ nothing to build, no tests, no runtime.
 ## Correctness by construction
 
 The method is in `docs/concept/` — read `00-cbc.md` first; the
-other four chapters deepen it. It is not restated here: the order
-of questions (promise → guarantees → structure → features → code,
-never backwards) lives there, and each record's birth fill carries
-the method's reading of that record.
+other chapters deepen it. It is not restated here: the order of
+questions (promise → guarantees → structure → features → code,
+never backwards) lives there, and the method's reading of each
+record lives in that record's own comments.
 
 Until the framing artifacts exist (cbc-framing creates them, under
 `docs/system/`), the project is pre-framing: the only method work
