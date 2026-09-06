@@ -128,7 +128,12 @@
       candidates at the Framing boundary if the derivation
       misses them. The reading gains a category: kit hygiene an
       agent re-derives unaided vs kit knowledge only the
-      vendored text held.)
+      vendored text held.) (2026-09-06, seeded: run 2 is
+      ~/IdeaProjects/cbc-pure-run-2 — five commits, kit @
+      c670fe5, bundle @ 322dd43, v4 steps verified byte-true;
+      run 1 at ~/IdeaProjects/cbc-pure-run stays frozen in
+      place, the reading's evidence, its pins checkable at
+      their recorded path. Awaits the user's firing prompt.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
