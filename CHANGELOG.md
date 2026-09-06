@@ -17,14 +17,14 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 
 ### Added
 
-- A CLAUDE.md template (`starter/bundle/claude-md-template.md`,
+- A CLAUDE.md template (`starter/fills/claude-md-template.md`,
   composed from the kit's entry file at the pin and this repo's
   own fills; ADR-0014, ADR-0015) — since ADR-0016 parked,
   undelivered: the pure-born newborn derives its own arrangement,
   and the template stands as the three-way reading's comparison
   object. The birth-fill templates were retired with the assembly
   path.
-- A README template (`starter/bundle/readme-md-template.md`,
+- A README template (`starter/fills/readme-md-template.md`,
   composed from the kit's README stub at the pin and run-1's
   harvested fills, the "a backend" presumption corrected) —
   parked, undelivered like the CLAUDE template: both wait for a

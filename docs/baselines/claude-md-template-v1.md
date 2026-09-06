@@ -7,7 +7,7 @@
      arrangement than the current skills. Held for the three-way
      reading after the next full run: that run's derived CLAUDE.md
      vs this file vs cbc-derived-claude-walk1.md. The live
-     template continues at starter/bundle/claude-md-template.md,
+     template continues at starter/fills/claude-md-template.md,
      re-cut fresh the same day. The original garden header follows,
      preserved as frozen. -->
 

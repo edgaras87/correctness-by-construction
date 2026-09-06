@@ -6,7 +6,7 @@
      boundary in the concept repo, read-only — the paid-for
      warnings handed to the run only after each derivation is
      recorded, never as silent playbook text. The live variant
-     continues at starter/bundle/cbc-run-pure-playbook.md. The
+     continues at starter/fills/cbc-run-pure-playbook.md. The
      original header follows, preserved as frozen. -->
 
 <!-- Draft — the pure-seed candidate (2026-09-05). A variant of

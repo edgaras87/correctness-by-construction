@@ -26,9 +26,9 @@ At a run repo's birth, copy:
 | `starter/bundle/infra-establish/` | `.claude/skills/infra-establish/` |
 | `starter/bundle/infra-serve/` | `.claude/skills/infra-serve/` |
 | `starter/bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
-| `starter/bundle/cbc-run-pure-playbook.md` | not copied as a file — its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (pure-seed step 3; the newborn holds no playbook copy, their ADR-0031's model) |
-| `starter/bundle/claude-md-template.md` | not copied — parked, undelivered (ADR-0016): the pure-born newborn derives its own CLAUDE.md; the template stays as the three-way reading's comparison object |
-| `starter/bundle/readme-md-template.md` | not copied — parked, undelivered: composed 2026-09-06 from the kit's README stub @ c670fe5 and run-1's harvested fills, waiting with the CLAUDE template for a semi-pure install if one is designed (TODO) |
+| `starter/fills/cbc-run-pure-playbook.md` | not copied as a file — its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (pure-seed step 3; the newborn holds no playbook copy, their ADR-0031's model) |
+| `starter/fills/claude-md-template.md` | not copied — parked, undelivered (ADR-0016): the pure-born newborn derives its own CLAUDE.md; the template stays as the three-way reading's comparison object |
+| `starter/fills/readme-md-template.md` | not copied — parked, undelivered: composed 2026-09-06 from the kit's README stub @ c670fe5 and run-1's harvested fills, waiting with the CLAUDE template for a semi-pure install if one is designed (TODO) |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before

@@ -110,7 +110,7 @@ git add .claude/skills
 git commit -m "chore: seed — the five CbC skills, pin @ $bundle_pin"
 
 sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
-    "$bundle_dir"/starter/bundle/cbc-run-pure-playbook.md; echo) \
+    "$bundle_dir"/starter/fills/cbc-run-pure-playbook.md; echo) \
     -e '/<!-- STEPS-BEGIN/,/<!-- STEPS-END/{/STEPS-BEGIN/b;/STEPS-END/b;d}' \
     PLAN.md
 sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run-pure v4 at $bundle_pin|" \
