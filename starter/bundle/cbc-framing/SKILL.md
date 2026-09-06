@@ -11,7 +11,7 @@ description: Frame a new backend system with correctness-driven design - turn a 
      Harvested 2026-08-29: the registry export's lived format from
      checkout-system's nine-slice run, read read-only (ADR-0007) —
      outcomes stated in the export section, copy-and-fill master in
-     templates/slices.registry.md (ADR-0008).
+     templates/registry.md (ADR-0008).
      Harvested 2026-08-29, same run: the exports are living records
      — post-close changes only as logged revision entries (the run
      updated its intent at a breach's close and revised its system

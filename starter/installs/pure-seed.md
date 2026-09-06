@@ -107,7 +107,7 @@ for s in cbc-framing cbc-slice infra-establish infra-serve cbc-bootstrap; do
   cp -r "$bundle_dir"/starter/bundle/"$s" .claude/skills/
 done
 git add .claude/skills
-git commit -m "chore: seed — the five CbC skills"
+git commit -m "chore: seed — the five CbC skills, pin @ $bundle_pin"
 
 sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
     "$bundle_dir"/starter/bundle/cbc-run-pure-playbook.md; echo) \
