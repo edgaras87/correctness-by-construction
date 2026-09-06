@@ -6,6 +6,43 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-06  (session: the README template, and a third shape named)
+
+- Fourth arc of the day. Opened on the run-1 README, read
+  against the kit stub it grew from (01147b1 → c3ffda8): the
+  fill-comment honored exactly, the temporary paragraph
+  exemplary (names its own end, Step 1 — the retirement rule's
+  shape before the rule ever reached it), and one flaw — "a
+  backend", the same pre-framing presumption the parked CLAUDE
+  template carried. Data point worth watching: the seed shipped
+  no template, yet the run re-derived the exact presumption the
+  template held. If run 2 does it again, the fix belongs in the
+  concept or the kit stub, not in shipped text.
+- First answer on templating it was no — the kit stub IS the
+  reusable template, the run's additions are the derivation. The
+  user then named the real frame: a semi-pure install, a third
+  birth shape between assembly (deleted) and pure, where the
+  entry files ship filled and the rest stays pure. Under that
+  frame the answer flips, and the CLAUDE template's parking is
+  the precedent, not the objection.
+- Composed and parked (c8f1be5):
+  starter/bundle/readme-md-template.md, same apparatus as the
+  CLAUDE template — kit half verbatim @ c670fe5, fills harvested
+  consciously from run-1's derivation with the "backend"
+  presumption corrected to "a system", provenance naming the
+  harvest as a run's words taken on purpose (the semi-pure
+  trade, explicit). Judgment call: TODO item, not ADR — no
+  decision exists yet, the install is undesigned and may never
+  be; the ADR moment is if it gets designed.
+- The TODO item carries the kill-or-justify test: run 2's
+  derived entry files vs the parked harvests — derivation
+  keeps producing what the templates hold and the shape is
+  never needed, or keeps missing something and that gap is the
+  install's justification.
+- Resume: unchanged — reseed for run 2 (delivers pure v4), or
+  the skills reading; the semi-pure design waits on run-2
+  evidence either way.
+
 ## 2026-09-06  (session: the strip goes whole-playbook — pure v4)
 
 - Third arc of the day, opened on the user's question: why does
