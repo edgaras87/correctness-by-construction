@@ -102,4 +102,4 @@ ADR-0010, ADR-0016, ADR-0017, ADR-0018, ADR-0019.
 | `devlog/` | Session-by-session work history |
 | `temp/` | Working drafts, tracked and deleted when served — handoffs, replies, briefings being molded (not records; `temp/README.md` holds the rule) |
 | `CHANGELOG.md` | The concept-version log (ADR-0003) |
-| `.claude/` | Working arrangement: skills, agent decisions log |
+| `.claude/` | Working arrangement: CLAUDE.md (moved here 2026-09-07), skills, agent decisions log |
