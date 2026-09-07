@@ -182,7 +182,19 @@
       step's first commit, the merge fast-forward with main
       linear, the gates reading before the merge, and no
       question the rule made the agent ask. Holds → playbook v6
-      preamble; bends → the bend is the finding.)
+      preamble; bends → the bend is the finding. Same day, two
+      more trials ride the same pre-briefing session
+      (temp/prebriefing-run-3.md): a tracked .claude/settings.json
+      with one ask rule on git commit — the harness stops every
+      commit at a prompt, from the briefing session on — and an
+      untracked CLAUDE.local.md holding the reviewer's pace, with
+      its gitignore line. The reading adds: whether the agent
+      stages and shows before the prompt bites or walks into it;
+      whether the local file's text stayed out of the records;
+      whether the three arrivals landed as decisions entries and
+      one TODO Later item. Holds → kit stub (settings, gitignore
+      line) or bundle, decided at the handbook; the decisions
+      file here already trials CLAUDE.md under .claude/, ebd1416.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
