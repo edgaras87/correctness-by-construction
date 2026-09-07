@@ -1,13 +1,13 @@
 # Pre-briefing prompt — run 3
 
 Fired in its own session, before the briefing. Everything below the
-line is pasted whole. Three trials for the retrospective: the
-step-branch rule, the commit ask rule, and the operator's local
-instruction file.
+line is pasted whole. Four trials for the retrospective: the
+step-branch rule, the commit ask rule, the operator's local
+instruction file, and CLAUDE.md under .claude/.
 
 ---
 
-Before the briefing arrives, three pieces of working arrangement go
+Before the briefing arrives, four pieces of working arrangement go
 in, each on trial from Step 1 and evaluated at the retrospective for
 folding back to the source — the kit stub or the bundle, whichever
 each belongs to. Nothing here names the problem.
@@ -37,9 +37,14 @@ each belongs to. Nothing here names the problem.
    The file is mine: nothing in the records repeats its text, and
    no project file derives from it.
 
+4. CLAUDE.md moves to .claude/CLAUDE.md, content untouched — the
+   harness reads either address, and every agent-side file then
+   sits under .claude/. Mentions of it by name stay true; none
+   names its path.
+
 Record each arrival where the records table says a convention's
 arrival or an agent-setup change goes, the third as "exists,
 ignored, holds the reviewer's pace" so the retrospective can find
-it. File one TODO Later item naming all three as on trial, to fold
+it. File one TODO Later item naming all four as on trial, to fold
 back to the source at the retrospective if they hold. Commit per
 your split, staged and shown to me first; commit only on my word.

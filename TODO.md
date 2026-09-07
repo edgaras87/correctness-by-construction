@@ -192,9 +192,13 @@
       stages and shows before the prompt bites or walks into it;
       whether the local file's text stayed out of the records;
       whether the three arrivals landed as decisions entries and
-      one TODO Later item. Holds → kit stub (settings, gitignore
-      line) or bundle, decided at the handbook; the decisions
-      file here already trials CLAUDE.md under .claude/, ebd1416.)
+      one TODO Later item. A fourth trial, 2026-09-08: the run's
+      CLAUDE.md moves under .claude/ too, content untouched — the
+      shape this repo took at ebd1416; the reading checks the
+      harness read it there (the briefing session's first act
+      shows) and that the rename stayed a pure rename. Holds →
+      kit stub (settings, gitignore line, the stub's address) or
+      bundle, decided at the handbook.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
