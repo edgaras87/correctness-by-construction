@@ -6,7 +6,7 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
-## 2026-09-07  (session: run 3's Step 0 read, playbook v5, temp/ tracked)
+## 2026-09-07/08  (session: run 3's Step 0 read, playbook v5, temp/ tracked, four trials for run 3)
 
 - Run 3 (~/IdeaProjects/cbc-pure-run-3, seeded per ADR-0018 and
   ADR-0019: receipt branch of six, entry files delivered filled)
@@ -66,14 +66,71 @@
   whether it may be read. Draft at temp/briefing-run-3.md: the
   paragraph gone, a "This session" close carrying the session
   truths (opens Framing, reviewer present, stay inside), the
-  territory saying nothing of checkout-system is needed. Open:
-  whether the close keeps "derive the gate first" or says only
-  "open Step 1".
-- Resume: settle the briefing draft, then fire it into run 3's
-  session. Run 3's Framing boundary is the next gates reading
-  (derived vs frozen v2; hand-backs after the derivation is
-  recorded). TODO's gates-experiment item still owes a dated
-  run-3 note.
+  territory saying nothing of checkout-system is needed. Settled
+  (258dfcb): the close carries session truths only — "derive the
+  gate first" would spoil the gates reading, and nothing done here
+  needs applying in run 3 (v5 came from its own PLAN text; the
+  twin note is header-only; its Later items stay as written).
+- The user asked why "This session" exists at all and whether the
+  framing skill fires unprompted. Files can name the reviewer
+  role; only the prompt can say the reviewer is here — and "no
+  other repo is yours" is a fact about the machine, not the
+  project. The skill has three signals (its trigger line, the
+  entry file's pre-framing sentence, PLAN's Step 1); if it still
+  misses, that is a finding, not a prompt defect.
+- A branch per step, user's design: at the step grain, not the
+  run (the receipt branch is already the run's restart point, and
+  a repeat wants a fresh repo); fast-forward only, so the readings
+  see linear history; the merge after the gate closes, on the
+  reviewer's word; a restarted step keeps its old branch renamed.
+  First drafted into the briefing's close, then pulled back out:
+  a process rule riding the briefing is noise for what framing
+  consumes, and the rule must be on main before Step 1 cuts its
+  branch. Delivered instead as its own pre-briefing commit, on
+  trial, TODO note here (5c1845b).
+- The rule that would not hold — stage, show, commit on the word
+  — traced to its channel: it lived only in change-plans §6, a
+  pulled channel that single commits never open. Four channels
+  ranked (harness permission → always-loaded text → triggered
+  text → prompt); the rhythm is the user's, not the project's, so
+  it went global: ~/.claude/settings.json ask rule on git commit
+  plus ~/.claude/CLAUDE.md. Restored within the hour — the user
+  wants it local, per project, and trialled in run 3 rather than
+  set in the handbook.
+- CLAUDE.md moved under .claude/ here (ebd1416, 6b2a81c): same
+  channel, two addresses; 103 mentions in 26 files, three live —
+  the rest are history and the run-facing starter text. The
+  pinned split needed no edit; ".claude/" already covers it.
+- CLAUDE.local.md, checked against the harness docs: defined by
+  not being committed, root only, the init flow ignores it. The
+  user's argument for tracking it (the agent split already
+  isolates its commits; diffs would show) was good and was
+  dropped anyway — trial 3 tests the native mechanism, and if the
+  words prove to be project truth they move into the convention
+  under an honest name. Kept ignored; the decisions entry in the
+  run records that it exists.
+- Pre-briefing prompt drafted (temp/prebriefing-run-3.md): four
+  trials for run 3 before its briefing — the branch rule, a
+  tracked .claude/settings.json with the ask rule, the ignored
+  local file with the reviewer's pace, and (2026-09-08) the
+  CLAUDE.md move. Each a decisions entry, one TODO Later item,
+  agent-split commits. TODO's gates-experiment note carries what
+  the Step 1 reading checks for each (bebd91b, b808225).
+- 2026-09-08: handoff to the handbook drafted and committed
+  (temp/handbook-handoff-2026-09-08.md, e5b99c8): the agent model
+  applied to the pace rule — §8's own diagnostic, the fix its
+  table names (pushed at commit time plus a gate), the harness
+  permission as a gate with no machinery, an ownership note for
+  ambient text; the handbook's own CLAUDE.md move; the stub's
+  address; two starting templates. Says which asks can wait for
+  run 3's Step 1 reading.
+- Resume: three drafts in temp/ in order — the pre-briefing prompt
+  into a run 3 session on main; then a fresh session on step-1
+  with the briefing; the handoff into a handbook session any time.
+  Run 3's Step 1 boundary is the next reading: derived gate vs
+  frozen v2, hand-backs after the derivation is recorded, plus
+  the four trials' checks in TODO. Each draft is deleted once
+  served, logged here.
 
 ## 2026-09-07  (session: the receipt branch, then the semi-pure delivery)
 
