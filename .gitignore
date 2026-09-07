@@ -25,9 +25,9 @@ Thumbs.db
 # this repo
 # ======================================================================
 
-# Staging buffers — handoff drafts pasted into the handbook session,
-# then deleted; substance lives in TODO/devlog, never here
-temp/
+# temp/ is tracked since 2026-09-07 — working drafts (handoffs,
+# replies, briefings being molded) whose shaping should be visible;
+# see temp/README.md for the rule
 
 # ======================================================================
 # stack overlays — appended below this line at app bootstrap
