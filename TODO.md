@@ -172,7 +172,17 @@
       delivered — its Step 0 differs from run 2's in that the
       agent commits the deliveries itself and meets an
       arrangement it did not write; the gates reading compares
-      the derived gate, not the commit count.)
+      the derived gate, not the commit count. 2026-09-07, a
+      trial rides Step 1 onward: a standing PLAN rule, delivered
+      to run 3 as its own commit before the briefing — each step
+      starts on its own branch cut from main and ends after its
+      gate closes by fast-forward merge, on the reviewer's word;
+      a restarted step keeps its old branch renamed. The Step 1
+      reading checks four things: the branch cut before the
+      step's first commit, the merge fast-forward with main
+      linear, the gates reading before the merge, and no
+      question the rule made the agent ask. Holds → playbook v6
+      preamble; bends → the bend is the finding.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
