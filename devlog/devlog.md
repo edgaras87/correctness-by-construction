@@ -6,6 +6,75 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/2026-08.md per month. -->
 
+## 2026-09-07  (session: run 3's Step 0 read, playbook v5, temp/ tracked)
+
+- Run 3 (~/IdeaProjects/cbc-pure-run-3, seeded per ADR-0018 and
+  ADR-0019: receipt branch of six, entry files delivered filled)
+  closed Step 0 and waits on the briefing. The Step 0 reading,
+  read-only, every gate item re-checked here:
+  - Nine commits above hygiene on main, eight under a change-plan,
+    reviewer-paced: plan, kit conventions, concept, records with
+    Step 0's gate written in and still open, CbC skills with the
+    registry entry, entry file last ("nothing it names may be
+    missing when it lands"), close, close plan. The bundle's
+    birth entry reconstructed from the seed subjects with pin,
+    why, and rejected — fuller than run 2's.
+  - Six gate items, all verifiable and all true at the close;
+    against run 2's eight: adds the receipt diff and the
+    commit-length rule, drops the placeholder and README-true
+    items (delivered filled, nothing to check). Both cover frozen
+    v2's three. The split held in every commit, unprompted —
+    three runs of three.
+  - The entry files: untouched, byte-identical to the fills. The
+    change-plan says CLAUDE.md was read line by line and passes,
+    README "unchanged, its paragraph already true" — read as its
+    own to check, not as vendor text. The reading's object under
+    ADR-0019 (what the agent edits in delivered entry files) is
+    nothing, at Step 0.
+  - Two findings the run filed for us: Release's (CbC) items
+    carried checkout-system's exclusions; the worked-example twin
+    note claimed byte-identical while the path lines differ.
+  - One deviation: a ninth commit after the close reshaped the
+    vendored Release step in place — outside the change-plan, a
+    vendored step edited in the run rather than only filed — with
+    a 56-char subject, breaking the run's own gate item six. Not
+    a blocker; the reshape was right and is harvested below.
+  - Run 3 also wrote a preamble line into PLAN — every step
+    derives its gate at opening — a candidate for the playbook's
+    own preamble; not taken this session.
+- Playbook v5 (a08adfc): Release joins the derive-at-opening form
+  from run 3's text — Goal line, the kit's three facts as "Known
+  already", the exclusions re-decided per run. The step's
+  kit-provenance comment went too, at the user's question: the
+  pin lives in the header as for Steps 0 and 1 since v4, and no
+  step ships a path the newborn cannot see. The starter README's
+  "fixed endpoint" sentence followed.
+- Twin note narrowed to identical-below-the-header, a harvest line
+  in each (9527a9b); bodies verified identical.
+- temp/ is tracked from today (d918991), user's call: drafts on
+  their way somewhere — handoffs, replies, briefings being molded
+  — so the shaping shows as diffs, deleted once served, never
+  records; temp/README.md holds the rule and the no-citations
+  rule for anything leaving for a run. The 2026-09-05 handbook
+  reply, absorbed and asked deleted by its own header, was deleted
+  rather than committed spent.
+- The held briefing read against the pure setup: stale in three
+  places — the birth-materials paragraph (concept/ not
+  docs/concept/, a playbook file that no longer exists, a kit
+  playbook the kit no longer ships), the closing "Bootstrap, Step
+  0" line, and checkout-system named as lineage with no word on
+  whether it may be read. Draft at temp/briefing-run-3.md: the
+  paragraph gone, a "This session" close carrying the session
+  truths (opens Framing, reviewer present, stay inside), the
+  territory saying nothing of checkout-system is needed. Open:
+  whether the close keeps "derive the gate first" or says only
+  "open Step 1".
+- Resume: settle the briefing draft, then fire it into run 3's
+  session. Run 3's Framing boundary is the next gates reading
+  (derived vs frozen v2; hand-backs after the derivation is
+  recorded). TODO's gates-experiment item still owes a dated
+  run-3 note.
+
 ## 2026-09-07  (session: the receipt branch, then the semi-pure delivery)
 
 - Second arc of the day, two change sets back to back, both
