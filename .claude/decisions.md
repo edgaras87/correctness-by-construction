@@ -163,3 +163,14 @@
   Rejected: treating reply absorption as the update (it leaves the
   registry pin stale — the registry would say 4fe8083 while the
   records lived at f9371e4).
+
+- 2026-09-07 CLAUDE.md moved to .claude/CLAUDE.md. Same channel,
+  read identically by the harness; every agent-side file now sits
+  under .claude/, so the agent/project commit split reads as "under
+  .claude/ or not", with no file named beside it.
+  Why: the split rule and the records table both listed CLAUDE.md
+  as the one agent file outside the agent directory — one location
+  removes the exception. This repo trials the shape; the kit stub
+  runs receive stays at root until the handbook decides.
+  Rejected: moving the run's copy in the same stroke (the kit stub
+  is the handbook's; the pure seed still delivers it to root).
