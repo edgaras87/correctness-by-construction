@@ -60,10 +60,7 @@ naming decision confirms or overturns it.
 
 ## This session
 
-This briefing opens Framing — PLAN's Step 1. Derive its gate
-first and stage it for my review before any framing work; then
-run the framing jointly with me, as the skill says. I am the
-reviewer the change-plans convention names, and the work moves
-at my pace: stage, show me what changed, commit only on my word.
-Work only within this repository — no other repo is yours to
-read.
+This briefing opens Framing — PLAN's Step 1. I am the reviewer
+the change-plans convention names, and the work moves at my pace:
+stage, show me what changed, commit only on my word. Work only
+within this repository — no other repo is yours to read.
