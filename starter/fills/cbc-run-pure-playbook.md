@@ -39,11 +39,28 @@
      derives its gate at opening. Release keeps its vendored
      text as the one fixed endpoint, so the kit-refresh rule
      above now reaches only Step N. No new baseline: v2 holds
-     every stripped gate whole, kit text included. -->
+     every stripped gate whole, kit text included.
+     v5 (2026-09-07, harvested from run 3, read-only —
+     ~/IdeaProjects/cbc-pure-run-3, its commit da27510 and TODO
+     Later item): Release joins the derive-at-opening form — a
+     Goal line, the gate derived when the step opens. The kit's
+     three gate facts stay vendored inside a "Known already"
+     line, so the kit-refresh rule still reaches them and no kit
+     gate item is weakened (ADR-0011); the two (CbC) items no
+     longer carry checkout-system's recorded exclusions — a
+     prior run's conclusion in shipped text, which the pure seed
+     excludes on purpose — and read "unless this run's own
+     recorded exclusion" instead. The step's kit-provenance
+     comment goes with the strip, as Steps 0 and 1's did at v4:
+     the pin lives in this header only, and no step ships a path
+     the newborn cannot see. v4's "one fixed endpoint" clause is
+     superseded by this paragraph. -->
 
 # Playbook: CbC run — pure
 
-Playbook version: v4 (2026-09-06, provisional — every gate but
+Playbook version: v5 (2026-09-07, provisional — Release derives
+its gate at opening too, the kit's three facts kept as Known
+already, harvested from run 3; v4 2026-09-06, every gate but
 Release's derived at step opening; v3 2026-09-06, middle strip;
 v2 2026-09-06, retirement gate item; v1 2026-09-05, variant of
 cbc-run v3)
@@ -106,19 +123,13 @@ Notes:
 
 ## Step N: Release                                  [ ]
 
-<!-- Kit step — vendored from starter/playbooks/default.md
-     @ c670fe5; additions marked (CbC). -->
-
-Gate:
-- [ ] CHANGELOG entry for the release.
-- [ ] README true for a stranger; any commands verified on a clean
-      machine.
-- [ ] Known issues filed in TODO.md, not just remembered.
-- [ ] (CbC) Monitoring/alerts in place — unless observability was a
-      recorded exclusion (it was, for checkout-system's
-      correctness-portfolio shape; a deployed service should not
-      skip it).
-- [ ] (CbC) Deploy/rollback procedure documented and tried once —
-      same caveat: locally-runnable-only was a recorded exclusion
-      there.
+Goal: the system handed to its audience — the promise shipped,
+observable, and reversible wherever it deploys.
+Gate: derived when this step opens — verifiable facts, from the
+goal, the run's records, and the exclusions framing recorded.
+Known already: a CHANGELOG entry for the release; README true for
+a stranger, its commands verified on a clean machine; known
+issues filed in TODO.md. Decided at framing, checked here:
+monitoring and alerts in place; deploy and rollback documented and
+tried once — each unless this run's own recorded exclusion.
 Notes:

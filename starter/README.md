@@ -45,9 +45,9 @@ its inputs exist, so an early copy is inert, and one delivery
 moment keeps the whole set at one pin. The run's plan steps come
 from the playbook, which carries the full sequence (ADR-0011),
 with the pipeline (cbc-framing → infra-establish → cbc-bootstrap
-→ cbc-slice) as its middles — under the v4 provisional cut every
-step's gate is derived when the step opens, except Release, the
-one kit endpoint still vendored at its pin; only re-entry
+→ cbc-slice) as its middles — under the v5 provisional cut every
+step's gate is derived when the step opens, Release included,
+its three kit facts riding as Known already; only re-entry
 (infra-serve) arrives unplanned, and its trigger covers that.
 
 The birth procedure itself is the install manual,
