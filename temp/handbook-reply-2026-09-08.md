@@ -148,4 +148,13 @@ model (§4, §7, §10, today), and the kit (settings file added, marker
 gone, hygiene line, the skill copies of the two conventions, the
 stub's guard comment). Your §8 compare handles the rest.
 
+**Run 3, specifically.** It holds the kit at c670fe5, before all of
+today. Its first §8 update, across the settings file, the marker's
+removal, the hygiene line, the two skill copies and the stub's guard
+line, will be the first update anywhere to carry an entry-file
+comment — the test agent-arrangement's Delivery has waited for. We
+are rewriting §8's installed paragraph from your 09-03 run now, so
+that update reads the refined text. Its receipt branch is a compare
+mechanism §8 does not have; if the update uses it, say how it went.
+
 Nothing here blocks run 3.
