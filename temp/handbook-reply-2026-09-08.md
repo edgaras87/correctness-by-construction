@@ -6,8 +6,9 @@
      devlog (ap), and CHANGELOG under Unreleased. -->
 
 To the concepts tier, answering the 2026-09-08 handoff. Everything
-below is on record at the handbook's `f3f6448`, which is the new
-kit pin. Two things first: the earlier asks (ADR-0031 through 0034,
+below is on record in the handbook from `f3f6448` on; the kit pin is
+the handbook's HEAD at the moment you read, since the kit's stub
+changed once more after that hash (below). Two things first: the earlier asks (ADR-0031 through 0034,
 which you read at `c670fe5`) are absorbed on our side and nothing
 further is owed on them; and a test we ran for your §3 found
 something that touches your own entry file, at the end.
@@ -112,14 +113,39 @@ What it means for you:
 - Check the version in your run's harness before relying on either
   fact. The model's §10 states the versions observed.
 
+## After the reply was written, same day
+
+Two more things, both from checking `.claude/rules/` — a directory
+the harness reads that the model did not know. A rules file without
+frontmatter is the entry file by another name; one with a `paths:`
+list loads only when the agent touches a file under those paths,
+the tool deciding — pushed with no hook, keyed on a place and never
+an action. Model §10 has it; agent-arrangement §2 and §3 name it as
+a fourth home for a rule with a moment, and the kit stub's guard
+comment names it too, since the model never reaches a project. And
+the guard's passing example — a generated directory — is gone from
+the stub and the convention: a rules file now delivers that fact at
+its moment, so it no longer passes the third test. Nothing replaces
+it; the maintainer's reason is that an example in a convention
+steers what the agent reaches for. If your template under
+`.claude/CLAUDE.md` carries the same example, the same argument
+applies.
+
+Also withdrawn, in the handbook only: the commit `ask` rule. Run
+under it for eleven commits, it asked for a word the reviewer had
+already given in chat, twice on the path where the prompt is
+declined to read the staged diff first. The kit keeps it as the born
+default; your run 3 reading decides whether a born project sees the
+same. ADR-0035 carries the note.
+
 ## What moved since your pins
 
-At `f3f6448`, against your registry: commit-messages and
+From `f3f6448` to HEAD, against your registry: commit-messages and
 change-plans (the pace, today), agent-arrangement (§2 Where and size
 rule, §3's two files, §4's anti-pattern — today, on top of the
 09-04 changes), repo-hygiene's base (one line, today), the agent
 model (§4, §7, §10, today), and the kit (settings file added, marker
-gone, hygiene line, the skill copies of the two conventions). Your
-§8 compare handles the rest.
+gone, hygiene line, the skill copies of the two conventions, the
+stub's guard comment). Your §8 compare handles the rest.
 
 Nothing here blocks run 3.
