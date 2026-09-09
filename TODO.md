@@ -187,7 +187,12 @@
       ride the same pre-briefing session (temp/prebriefing-run-3.md,
       rewritten 2026-09-09): an untracked CLAUDE.local.md holding
       the reviewer's pace, and the run's CLAUDE.md under .claude/,
-      content untouched. The commit ask rule — a tracked
+      content untouched (2026-09-09: no longer waiting on a
+      reading on our side — the seed's semi-pure step delivers the
+      entry file at .claude/CLAUDE.md from the next birth, the
+      user's call: a layout preference, mechanically identical
+      either way; run 3's move stays the handbook's evidence for
+      its own stub, their decision 5). The commit ask rule — a tracked
       .claude/settings.json, the harness stopping every commit at a
       prompt — no longer rides as a trial of ours: the kit ships it
       as the born default since af16eb7, so it reaches run 3 with

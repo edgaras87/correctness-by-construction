@@ -52,8 +52,9 @@ skills with their references, copied as files the run keeps
 pinned; `fills/` holds text the seed writes into the kit's own
 files and the run then owns — the pure playbook's steps into PLAN
 (cbc-run-pure, ADR-0016) and the two entry-file fills written
-over the kit's CLAUDE.md and README.md stubs by the seed's
-semi-pure step (ADR-0015, ADR-0019).
+by the seed's semi-pure step — the README over the kit's stub,
+the entry file to `.claude/CLAUDE.md` with the root stub removed
+(ADR-0015, ADR-0019).
 Content, not this repo's working arrangement: nothing here is
 installed in this repo's own `.claude/`, and the archive's agent
 definitions stayed behind (ADR-0006). Two skills carry copy-and-fill

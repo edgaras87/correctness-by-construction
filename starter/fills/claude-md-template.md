@@ -30,9 +30,11 @@
      step 4, ADR-0019, 2026-09-07 — ADR-0016's parking condition
      fired at run 2's Step 0 reading): the copy is whole from the
      title line down, this header stays here, no merge into the
-     kit's stub (ADR-0015), the seed filling <working-name>. With
-     the step off, the newborn derives its own and this file is
-     the reading's comparison object.
+     kit's stub (ADR-0015), the seed filling <working-name>; it
+     lands at .claude/CLAUDE.md, the kit's root stub removed
+     (2026-09-09: an app repo keeps every agent-side file under
+     .claude/). With the step off, the newborn derives its own and
+     this file is the reading's comparison object.
      Authoring: every edit to the body below answers to the
      copy's own guard comment, read at authoring time — a line
      here is loaded by every future project on every task and is

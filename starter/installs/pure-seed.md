@@ -165,19 +165,25 @@ pointer to a delivered skill, no conclusions.
 **4. Semi-pure, optional: write the two entry files from the
 fills.** Each fill is cut from its title line down — the
 provenance header stays in the concept repo — with
-`<working-name>` filled by the placeholder directory name, and
-written over the kit's stub. One commit, both files: the branch
-is a receipt, never merged, so the newborn's commit split does not
+`<working-name>` filled by the placeholder directory name. The
+README is written over the kit's stub; the entry file lands at
+`.claude/CLAUDE.md` and the kit's root stub goes: a run builds an
+app, and an app repo keeps every agent-side file under `.claude/`
+so the tracked root is the project's alone (the harness reads
+either address as one file; the kit still ships the stub at root,
+so the seed moves it — this step's second half goes the day the
+kit ships it there). One commit, both files: the branch is a
+receipt, never merged, so the newborn's commit split does not
 govern it (ADR-0019). Skip this step for a pure run.
 
 ```bash
 name=$(basename "$new_project_dir")
-for f in claude-md-template:CLAUDE.md readme-md-template:README.md; do
-  src=${f%%:*}; dst=${f##*:}
-  sed -n '/^# <working-name>/,$p' "$bundle_dir"/starter/fills/"$src".md \
-    | sed "s/<working-name>/$name/g" > "$dst"
-done
-git add CLAUDE.md README.md
+sed -n '/^# <working-name>/,$p' "$bundle_dir"/starter/fills/claude-md-template.md \
+  | sed "s/<working-name>/$name/g" > .claude/CLAUDE.md
+sed -n '/^# <working-name>/,$p' "$bundle_dir"/starter/fills/readme-md-template.md \
+  | sed "s/<working-name>/$name/g" > README.md
+git rm -q CLAUDE.md
+git add .claude/CLAUDE.md README.md
 git commit -m "chore: seed — entry files from the fills, pin @ $bundle_pin"
 ```
 
@@ -234,8 +240,8 @@ problem.
 
 With the semi-pure step on, the parenthetical naming the bundle
 reads instead: "(the method — docs/concept/, five skills, the
-steps in PLAN, and the two entry files, CLAUDE.md and README.md,
-written filled from the bundle's fills)". Nothing else in the
+steps in PLAN, and the two entry files, .claude/CLAUDE.md and
+README.md, written filled from the bundle's fills)". Nothing else in the
 prompt changes: what the agent does with delivered entry files is
 its own choice, and that choice is the reading's object.
 
@@ -281,9 +287,10 @@ item is a verifiable fact:
   Beyond them, nothing is filled: every
   stub still reads as a stub, and no bundle birth entry exists.
   CLAUDE.md carries no content beyond the kit's — unless the
-  semi-pure step ran, in which case CLAUDE.md and README.md are
-  byte-identical to their fills from the title line down with
-  the name filled, and neither carries a provenance header.
+  semi-pure step ran, in which case .claude/CLAUDE.md and
+  README.md are byte-identical to their fills from the title line
+  down with the name filled, neither carries a provenance header,
+  and no CLAUDE.md sits at the root.
 - Nothing from the excluded list present: no birth-scenario.md,
   no birth-fill content, no bundle birth entry; no fill's header
   in the newborn.

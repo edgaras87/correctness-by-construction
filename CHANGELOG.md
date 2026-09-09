@@ -41,6 +41,14 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   directory named as a home for a rule about one directory; the
   generated-directory example dropped), and the seed manual no
   longer mentions the TEMPLATE marker the kit stopped shipping.
+- The seed's semi-pure step writes the entry file to
+  `.claude/CLAUDE.md` and removes the kit's root stub: a run builds
+  an app, and an app repo keeps every agent-side file under
+  `.claude/` so the tracked root is the project's alone. The
+  harness reads either address as one file; the kit still ships
+  the stub at root, so the seed moves it, and that half of the
+  step goes when the kit ships it there. Run 3, born before this,
+  makes the move by prompt.
 - The seed gains one optional step, the semi-pure delivery
   (ADR-0019): the two entry-file fills written over the kit's
   CLAUDE.md and README.md stubs, headless, the name filled, one
