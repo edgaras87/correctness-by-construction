@@ -219,3 +219,38 @@
   Rejected: waiting for run 3's Step 1 reading (the reading needs
   the current text on this side); folding the installed drift into
   this commit (sides never share one).
+
+- 2026-09-09 Convention injected: agent-arrangement @ af16eb7 — the
+  seventh, the one convention-lifecycle's requires now names that
+  this repo was born without (the birth pin predates it). Installed
+  delivery through the entry file: the kit stub's two comments at
+  the pin replace ours (the records comment; the three-tests guard,
+  rules directory named, in place of the SIZE BUDGET comment), the
+  table takes the stub's two rows this one lacked (the decisions
+  row's wording — the conventions held, with versions; the
+  CHANGE-PLAN.md row, change-plans' one ambient line), and the
+  Conventions section leaves whole: this registry is the project's
+  only list of its conventions (their ADR-0034), and the skills load
+  themselves. Orientation lines untouched.
+  The entry file returns to the root in the same commit, undoing
+  the 2026-09-07 move: the handbook's reading of 09-09 gives the
+  address a meaning — root for a repo whose subject is the
+  arrangement, .claude/ for one that builds an app — and this repo
+  is the first kind; run 3, the second, keeps its trial of the other
+  address. The 09-07 entry stands as history, superseded here.
+  Comments are edit-time text (their ADR-0036): the guard governs
+  every edit of this file and costs no session; the file's ambient
+  weight is its table and three lines.
+  Why: §8 step 2 makes chain currency a requirement, and the same
+  pass checks a member newly required; here the member was absent,
+  and the installed compare that updated the other two conventions
+  is the same procedure.
+  Rejected: .claude/settings.json — the commit ask rule is run 3's
+  trial and withdrawn at the handbook; and nothing under starter/
+  needs claudeMdExcludes: the harness loads skills only from
+  .claude/skills/ and memory only from files named CLAUDE.md, and
+  starter/ has neither (this session's skill list is the four kit
+  copies). Keeping the Conventions list "for a human": the registry
+  serves that reader, with versions. Keeping the .claude/ address
+  because run 3 trials it: the trial reads an app repo's shape, and
+  this repo's address would not add to that reading.
