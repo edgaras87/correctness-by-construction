@@ -174,3 +174,48 @@
   runs receive stays at root until the handbook decides.
   Rejected: moving the run's copy in the same stroke (the kit stub
   is the handbook's; the pure seed still delivers it to root).
+
+- 2026-09-09 Pinned copies updated to the handbook @ af16eb7:
+  commit-messages (was @ 4fe8083, the birth pin), change-plans,
+  artifact-kinds and convention-lifecycle (were @ f9371e4), and
+  the agent model docs/models/agent.md (was @ 4fe8083); tiers.md
+  verified identical across the span, pin left as is. Compare-first
+  ran clean on all four skills: each identical to the kit copy at
+  its pinned hash, no local edits, overwrite silent-safe. What
+  moved: the pace rule now the first rule of thumb in
+  commit-messages, with the commit stop named a gate (their
+  ADR-0035); change-plans §3's gate-item walk and §6 pointing at
+  the pace; convention-lifecycle §8's installed-path text lived,
+  its step 5 dropping the entry-file row (their ADR-0034), and its
+  requires gaining agent-arrangement; artifact-kinds' playbook
+  exemplar line; the model's §4 ownership, §7 permission prompt,
+  §10 rules directory, comments dropped by the loader (their
+  ADR-0036), and the gate row.
+  Findings from the pass, each a decision still open: (1) §8
+  step 2's chain check fails — convention-lifecycle now requires
+  agent-arrangement, which this repo never received (born before
+  it existed; run 3 was born with it); its injection is installed
+  delivery through the entry file's guard comment and the settings
+  file. (2) The entry file's Conventions list, which the lifecycle
+  copy now says a project does not keep (their ADR-0034), stands
+  here — it goes with the same injection or stays by decision.
+  (3) The installed conventions drifted too — repo-hygiene's base
+  gained the operator's-file line, project-recording's stubs moved
+  f9371e4..af16eb7 — and land project-side, in their own commits
+  (§8 step 3). (4) The pin had been lying since 2026-09-07: the
+  c670fe5 changes were absorbed through TODO and the reply loop
+  with no entry — §8's own warning, lived here. (5) Every ADR
+  number inside a pinned copy — the four skills, the two models —
+  is the handbook's, and the bare ones below 0020 collide with
+  this repo's own sequence on other subjects. Reading rule: a
+  citation in a copy resolves at the source, at the hash this
+  registry names for that copy, never against docs/adr/ here. The
+  copies stay verbatim; the fix belongs at the master (a
+  self-qualifying citation survives the copy) and goes up as §8
+  friction with the next handoff.
+  Why: the reply of 2026-09-08 was written against af16eb7's
+  state; a bundle read at the retrospective must hold the text it
+  answers, and the registry must name the hash the records are at.
+  Rejected: waiting for run 3's Step 1 reading (the reading needs
+  the current text on this side); folding the installed drift into
+  this commit (sides never share one).

@@ -2,7 +2,7 @@
 name: convention-lifecycle
 description: How conventions themselves are authored, delivered, vendored, and tracked. Use when creating or changing a convention, or when vendoring or injecting one into a project.
 delivery: pushed
-requires: artifact-kinds, change-plans
+requires: artifact-kinds, change-plans, agent-arrangement
 ---
 
 # Convention Lifecycle
@@ -72,7 +72,8 @@ closest, and a hook closes the remainder — model §10).
 - A rule bound to one identifiable moment → a skill, triggered by
   the `description`.
 - A map of paths the agent must know exists → `ambient`, in the
-  entry file.
+  entry file (agent-arrangement §2). The records table is the one
+  instance; a convention's own presence is not one (ADR-0034).
 - A rule that must never be violated → additionally a gate; no text
   channel substitutes (model §7).
 
@@ -102,6 +103,15 @@ compares before it overwrites (§8).
 **The maintainer rule (ADR-0022):** a convention entering or
 leaving the kit updates, in the same commit, the manual's file
 table and the birth entry in the kit's decisions-log stub.
+
+**A stub does not cite the handbook's decisions.** A born project
+has its own `docs/adr/` sequence, so a bare `ADR-nnnn` in a stub's
+comment points at that project's decision, not the handbook's; and
+a prefixed one carries the why into a comment whose job is the rule
+(ADR-0020's division of labor). The rule rides in the stub; the why
+is the handbook's, reachable through the birth pin. The decisions
+log is the one place that pointer lives (§7), so its own comment may
+name the handbook decision it is provisional under.
 
 ## 7. Tracking: the registry and the hash
 
@@ -146,8 +156,8 @@ project's registry (§7). Written from the first lived injection
    is checked in the same pass.
 
 3. **Vehicle.** The landing's commits follow the ADR-0019 line. A
-   skill delivery lands entirely agent-side — copy, registry entry,
-   entry-file row — and is one commit (step 5). An installed
+   skill delivery lands entirely agent-side — copy and registry
+   entry — and is one commit (step 5). An installed
    delivery lands in project records too — stub comments, template
    files — and the two sides never share a commit, so that landing
    runs under a change-plan (change-plans §1). Not by definition: by
@@ -167,23 +177,34 @@ project's registry (§7). Written from the first lived injection
    An **installed** convention has no copy in the project to
    compare: what shipped was stub comments and template files, and
    the comments now sit inside filled, living records. The compare
-   is kit against kit — the stub at the pinned hash against the stub
-   now — and what lands is the changed comment text, carried into
-   the project's records; a template file is diffed as a file. The
-   project's content around the comments is not a local edit, it is
-   the record. Stated by argument (ADR-0030): no installed update
-   has run yet, and the first one refines this.
+   is kit against kit — `git diff <hash>..HEAD -- starter/kit/<stub>`
+   for each stub the convention ships through, and the list of
+   those stubs is the "Shipped conventions" table in
+   `starter/README.md`, read there rather than remembered. What
+   lands is the changed comment text, carried into the project's
+   record; a template file is diffed as a file. The project's
+   content around the comments is not a local edit, it is the
+   record.
 
-5. **Register — one commit.** Three things land together: the copy;
-   the registry entry appended to `.claude/decisions.md` — date,
+   Most of the time the diff carries nothing: a rule that changed
+   reached the project through a reply before the update ran, and
+   the record already says it. The update is then verification,
+   and its product is the registry entry (step 5) — which is why
+   the entry is never skipped. A handbook change absorbed through a
+   reply without an entry leaves the pin lying: the registry names
+   a hash the records have moved past, and the currency check in
+   step 2 reads that lie as truth.
+
+5. **Register — one commit.** Two things land together: the copy,
+   and the registry entry appended to `.claude/decisions.md` — date,
    convention, injected or updated `@ <hash>`, why, what was
    rejected — after which that hash is the convention's version in
-   this project (§7); and, on a first injection, the entry-file row,
-   at the placeholder line the kit's `CLAUDE.md` Conventions list
-   keeps for it. The revert test binds them: the copy without the
-   entry leaves the registry lying — the same binding §6 puts on the
-   kit's file table and birth entry. Splitting is allowed, never
-   required; every piece is agent-scoped (ADR-0019 rule 3).
+   this project (§7). The registry is the project's only list of
+   its conventions; the entry file carries none (ADR-0034). The
+   revert test binds the two: the copy without the entry leaves the
+   registry lying — the same binding §6 puts on the kit's file table
+   and birth entry. Splitting is allowed, never required; every piece
+   is agent-scoped (ADR-0019 rule 3).
 
 6. **Nothing edits the handbook.** Friction met here — a step this
    procedure left unstated, an edit the compare surfaced — goes up

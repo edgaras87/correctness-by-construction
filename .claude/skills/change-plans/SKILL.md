@@ -126,6 +126,11 @@ say) simply has nothing to walk there. The final records commit
 noticed at the close works exactly as long as judgment is present,
 and nothing catches the run where it is not.
 
+The same walk covers the plan's gate. A change set that will close a
+`PLAN.md` gate item names the commit that closes it — the item is a
+record-moment like any other, and a close with no step to land in
+lands as a divergence.
+
 ## 4. Lifecycle
 
 | Step | Commit | Contents |
@@ -178,14 +183,18 @@ commit's body distinguishes the two.
 
 ## 6. Review protocol
 
-Work stops at every commit boundary. The reviewer inspects the actual
-diff before it lands, and may ask for an explanation of any part of it
-before agreeing to continue.
+Work stops at every commit boundary. The rule is commit-messages' —
+stage, show the diff, commit only on the reviewer's word — and it
+binds at every commit, not only inside a change set; the arrangement's
+settings file makes the stop a gate (ADR-0035). The reviewer inspects
+the actual diff before it lands, and may ask for an explanation of any
+part of it before agreeing to continue.
 
-This matters most when an agent is doing the committing: the boundary
-is the only place where a misunderstanding is cheap to catch. Without
-it, a wrong assumption in step 2 propagates silently through every
-later step, and the review becomes an archaeology exercise.
+Why it matters most here: when an agent is doing the committing,
+the boundary is the only place where a misunderstanding is cheap to
+catch. Without it, a wrong assumption in step 2 propagates silently
+through every later step, and the review becomes an archaeology
+exercise.
 
 ## 7. Anti-patterns
 
@@ -249,6 +258,14 @@ large is a judgment, and a convention firing on judgment misses exactly
 when the judgment fails. Nothing catches the miss, which is why "the
 plan written after the work" is an anti-pattern here (§7) rather than
 a lapse.
+
+**One ambient line softens it.** The entry file's records table
+carries a row for `CHANGE-PLAN.md` — the moment "work needs more than
+one commit", the path — read at the start of every session, before
+the judgment is made (ADR-0018: a row names a moment, not a rule, and
+that is what the table is for). It is not a second copy of this
+convention; it is the trigger placed where the skill's description
+alone did not reach.
 
 **What this constrains.** It has to be usable at the moment it fires —
 mid-task, before anything is committed — so a cross-reference is a cost

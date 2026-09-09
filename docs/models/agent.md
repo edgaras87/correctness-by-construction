@@ -1,7 +1,7 @@
-<!-- Vendored copy — engineering-handbook models/agent.md @ 4fe8083
-     (copied 2026-08-27, same commit as this repo's kit birth pin).
-     Pinned: do not edit here — changes happen in the handbook and
-     arrive as a fresh pinned copy. See ADR-0002. -->
+<!-- Vendored copy — engineering-handbook models/agent.md @ af16eb7
+     (copied 2026-09-09; first copied 2026-08-27 @ 4fe8083, this
+     repo's kit birth pin). Pinned: do not edit here — changes happen
+     in the handbook and arrive as a fresh pinned copy. See ADR-0002. -->
 
 # Agent Model
 
@@ -84,7 +84,15 @@ Entry files loaded at session start, before the first task.
 - **Costs:** paid every session, on every task, relevant or not. Grows
   without bound if used as a rulebook; each addition dilutes the rest.
 - **Fidelity:** space is scarce here, so rules arrive compressed — and
-  compression loses parts (§12 M1).
+  compression loses parts (§12 M1). The binding can lose parts too:
+  what the tool loads is not always the file on disk (§10 says what
+  one tool drops; ADR-0036).
+- **Ownership:** the project's text, or one operator's. An operator's
+  standing file fires and costs like the entry file but belongs to
+  one person and one checkout, stays out of the repo's history, and
+  its words never enter records (ADR-0035). Repeated use of it for a
+  rule that would be true in any project is the told diagnostic
+  below, parked rather than fixed.
 - **Suits:** orientation and routing. Where to look, what kind of repo
   this is, what must never happen — if it is short.
 
@@ -185,8 +193,9 @@ Consequences:
 ## 7. The gate
 
 Enforcement is not in the text. A file cannot prevent anything. Only a
-check outside the text — a hook, CI, a human review — turns "should"
-into "cannot".
+check outside the text — a hook, CI, a human review, or the tool's own
+permission prompt, which is a human review the tool forces — turns
+"should" into "cannot".
 
 **No channel choice substitutes for a gate.** If a rule must never be
 violated, ambient/pulled/pushed changes the odds; only a gate changes
@@ -230,23 +239,50 @@ Sketch, Claude Code:
 
 | Layer 1 | Claude Code mechanism |
 |---|---|
-| ambient | memory files — `CLAUDE.md`, `~/.claude/CLAUDE.md`, `@` imports; a skill's `name` and `description` |
+| ambient | memory files — `CLAUDE.md` (root or under `.claude/`), `~/.claude/CLAUDE.md`, `@` imports; `.claude/rules/*.md` without frontmatter; `CLAUDE.local.md`, the operator's; a skill's `name` and `description` |
 | pulled | `Read`, `Grep`, `Glob`; a skill's body, once the agent invokes it |
-| pushed | context-injecting hooks, slash commands, subagents |
+| pushed | context-injecting hooks, slash commands, subagents; `.claude/rules/*.md` with a `paths:` list — loaded when the agent reads a matching file with the Read tool; not on a write, a new file, or a shell command |
 | told | the prompt |
 | observed | tool results |
 | installed | files in the repo; the starter kit that puts them there |
-| gate | blocking hooks (`PreToolUse`), CI |
+| gate | blocking hooks (`PreToolUse`), CI; permission rules in `settings.json` — `ask` stops at a prompt, `deny` refuses |
 
 Hooks appear twice: some inject context (pushed), others block (gate).
 One mechanism, two roles — a binding has to say which.
+
+Memory files arrive without their HTML comments. The loader drops
+every `<!-- … -->` block before the text enters context, so a comment
+in an entry file is never ambient: it reaches the agent only when the
+file is opened with a tool, which for the entry file is edit time
+(ADR-0036). Observed on 2.1.260 through 2.1.263; a later version may
+differ. The same loader honours `claudeMdExcludes` in `settings.json`,
+globs against the absolute path, which is how a template entry file
+kept inside a repo stays out of its sessions.
+
+A permission rule is a gate only in a mode that honours it; a mode
+that bypasses prompts skips `ask`. The gate is the tool's, not the
+repo's (ADR-0035).
 
 Skills appear twice as well, and neither time under pushed. Claude
 Code loads a skill's `name` and `description` at session start and
 its body only when the agent invokes it: an ambient trigger over a
 pulled body. The agent still decides, and pushed promises it does
-not (§4). A skill is the closest this tool gets to pushed; a hook
-closes the remainder (ADR-0015).
+not (§4). A skill is still the closest this tool gets to pushed for a
+rule about an action; a hook closes the remainder (ADR-0015).
+
+`.claude/rules/` holds instruction files like `CLAUDE.md`, with one
+extra: a `paths:` list at the top. Without it, the file is read every
+session — ambient, no different from `CLAUDE.md`. With it, the file is
+read only when the agent reads a file under one of those paths with
+the Read tool, and the tool decides that, not the agent. That is
+pushed with no hook to write. Two limits, both observed: the trigger
+is the Read tool alone — writing a new file under the path, or
+listing it from the shell, loads nothing, so a record written from
+scratch gets the rule no earlier than a comment in a template would
+have given it; and the condition it can check is a place, never an
+action — "when work is under `generated/`", not "when committing" —
+so it does not replace a skill. A skill is the agent's judgment
+about an action; a rules file is the tool's check on a read.
 
 ## 11. Out of scope
 
