@@ -254,3 +254,29 @@
   serves that reader, with versions. Keeping the .claude/ address
   because run 3 trials it: the trial reads an app repo's shape, and
   this repo's address would not add to that reading.
+
+- 2026-09-09 Convention updated: project-recording @ af16eb7 (was
+  @ f9371e4). The installed compare, kit stub against kit stub
+  across the span, per §8 step 4's lived text and the "Shipped
+  conventions" table: README's closing comment rewritten, TODO's
+  header comment, the devlog's split-file line, PLAN's retrospective
+  item 6 and its fold-back line — carried into the records
+  project-side in 5e2cb69, "carry the stubs' changed comments into
+  the records". Not carried: PLAN's birth-shape comments (nothing
+  retrofits into a living plan, the 09-03 reading) and the kit's
+  first ADR's context wording (ours is an accepted record, not a
+  stub). CHANGELOG's comment already said "lands".
+  Why: the pin must name the hash the records are at; the carries
+  are the stub's rules as they now read.
+  Rejected: none — every change was rule text, none a local edit.
+
+- 2026-09-09 Convention updated: repo-hygiene @ af16eb7 (was
+  @ 4fe8083, the birth pin). The base .gitignore's two changes
+  carried into ours in the same project-side commit: the settings
+  comment loses "(if any)", and the operator's-file block arrives —
+  CLAUDE.local.md ignored, with the reason that the tool never
+  ignores it on its own. .gitattributes and .editorconfig
+  unchanged across the span.
+  Why: the line is the hygiene base's now (their ADR-0035), and a
+  checkout here may hold the operator's file.
+  Rejected: none.
