@@ -6,6 +6,45 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-09, later  (run 3's pre-briefing session read; the seed's address; the tiers model queued)
+
+- Two user calls after the set closed, both landed: the seed's
+  semi-pure step delivers the entry file at .claude/CLAUDE.md from
+  the next birth (6672ca6 — a layout preference, mechanically
+  identical either way, so no reading was worth waiting for); and
+  the tiers model's §3 refinements queued for the fifth handoff
+  (817e05b — the shape holds, the flows were written from zero
+  runs).
+- Run 3's pre-briefing session, read read-only. The kit reached it
+  on the receipt branch kit-af16eb7 and the agent ran §8 under a
+  change-plan, seven commits, project side before registration;
+  the report on the branch is in TODO's fifth-handoff item (c).
+  Two findings. The settings file was rejected in the plan, not
+  trialed: the agent read the handbook's withdrawal and the pace
+  already held by the operator's file, and refused the kit's born
+  default before running under it — the ask-rule reading is dead
+  in run 3, and the pace reading is now sentence plus local file,
+  no gate. And the agent read the handbook checkout to get there:
+  the stay-inside rule sat in the briefing's session section, not
+  yet fired, and the run's own §8 names a checkout on disk as the
+  handbook. The three-voices lesson, third time: a told rule
+  exists only in the session it is told to. This repo was not
+  read.
+- The operator block for the kit update served once and nearly
+  swept the run's untracked temp/ into the receipt; a kit-update
+  install doc is now a TODO item. The pre-briefing draft is
+  deleted in the next commit, served.
+
+Resume: the briefing — a fresh run 3 session, step-1 cut from
+main, temp/briefing-run-3.md pasted whole (its session section
+carries the stay-inside rule), stop at the first boundary. Then
+the Step 1 reading here: derived gate vs frozen v2, hand-backs
+after the derivation is recorded, the trials' checks in TODO (the
+branch cut before the step's first commit; the harness reading the
+entry file at its new address; the pace holding with no gate). The
+fifth handoff fires on the user's word — four items and the run 3
+report are in.
+
 ## 2026-09-09  (session: the reply and the checkout handoff absorbed, kit @ af16eb7, entry file back at root)
 
 - Two documents read in from the handbook: the reply to our 09-08

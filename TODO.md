@@ -192,7 +192,23 @@
       entry file at .claude/CLAUDE.md from the next birth, the
       user's call: a layout preference, mechanically identical
       either way; run 3's move stays the handbook's evidence for
-      its own stub, their decision 5). The commit ask rule — a tracked
+      its own stub, their decision 5). Pre-briefing session read
+      2026-09-09: the kit update, the move (pure rename, own
+      entry), and the local file (yours, written 09-08, logged
+      unquoted) all landed, seven commits on a branch of the
+      reviewer's choosing, fast-forwarded; the settings file was
+      rejected in the plan, not trialed — so the ask-rule reading
+      is dead here and the pace reading changes shape: sentence
+      plus local file, no gate. And a channel finding, the
+      three-voices lesson once more: the agent read the handbook
+      checkout (its devlog says so; its registry cites their
+      ADR-0035 five times) — "stay inside this repository" sits in
+      the briefing's session section, which had not fired, and the
+      run's own §8 names a checkout on disk as the handbook, so the
+      convention sent it there. Not this repo: no mention. A
+      session rule absent from the session's prompt does not exist
+      for that session; every prompt to a run carries it from now
+      on. The commit ask rule — a tracked
       .claude/settings.json, the harness stopping every commit at a
       prompt — no longer rides as a trial of ours: the kit ships it
       as the born default since af16eb7, so it reaches run 3 with
@@ -475,10 +491,34 @@
       agent-arrangement, and a repo born before it existed has no
       position for it — §8 step 2 reads as "check the copy", and
       there is none; we ran it as a first injection by the
-      installed path. Worth one sentence in §8. (c) Pending: how
-      run 3's kit update went — the receipt branch as the compare
-      §8 lacks, what it gave and where it fell short — from the
-      run's devlog after the pre-briefing session.
+      installed path. Worth one sentence in §8. (c) Run 3's kit
+      update, c670fe5 → af16eb7, read 2026-09-09 from the run's
+      records: the kit delivered on a receipt branch kit-af16eb7
+      (one commit cut from the seed commit, the kit copied over
+      it); the agent ran §8 under a change-plan, seven commits,
+      project side first so the registry entry named an existing
+      commit. What the branch gave the compare, the run's words:
+      the whole kit diff at the two pins in one place, and
+      compare-first became one git diff per file against the seed
+      commit — every copy identical, every overwrite clean. Where
+      it fell short: the four placeholder reversions are noise to
+      read past; the receipt cannot say which convention a stub
+      change belongs to (the starter README's table is not a kit
+      file); the why is not in it (ADRs and convention text are
+      not kit files) — and the agent went to the handbook checkout
+      for both, its own §8 naming "a checkout on disk" as the
+      handbook; the entry-file stub diff was carried into the
+      living file by hand, comment only. Two things the reading
+      adds for the kit's born default: the agent REJECTED the
+      settings file, not deferred it, on the handbook's own
+      withdrawal (their ADR-0035 read at the checkout) and the
+      pace already held by the operator's file and the
+      commit-messages sentence — the first born project to read
+      the rule's why refused it before running under it once; and
+      the hygiene comment's "(if any)" was kept as a recorded local
+      edit for the same reason. Run 3 now trials the sentence plus
+      the local file with no gate — the case their reply named as
+      deciding whether the local copy is dead weight or a band-aid.
       (d) The tiers model, models/tiers.md @ 4fe8083, unchanged at
       af16eb7: its shape holds — three tiers, copies down, records
       up, one tier per repo, the garden paragraph exact — but §3
@@ -638,6 +678,18 @@
       chosen playbook alone.
 
 ## Later / someday
+
+- [ ] A kit-update procedure for a born run, as an install doc
+      beside pure-seed.md: the operator block that served once in
+      temp/prebriefing-run-3.md — cut a receipt branch kit-<pin>
+      from the seed commit carrying the old pin, copy the kit over,
+      commit, switch back — with the two things the first run
+      taught: guard the `git add -A` against the run's untracked
+      files (temp/ nearly rode into the receipt), and say in the
+      prompt where the why lives, since the receipt cannot carry it
+      and the run's §8 points at a checkout on disk otherwise.
+      Every future kit update to a run needs it; the pure seed's
+      birth block is the model.
 
 - [ ] Prebuilt CbC stub — a cache of the birth scenario's output,
       versioned, so a birth becomes one copy plus a briefing with
