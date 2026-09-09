@@ -37,7 +37,7 @@ place, never re-copied, no pin beyond the seed commit's subject:
 |---|---|
 | `starter/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (pure-seed step 3; the newborn holds no playbook copy, their ADR-0031's model) |
 | `starter/fills/claude-md-template.md` | its body, from the title line down with `<working-name>` filled, written over the kit's CLAUDE.md stub by the seed's semi-pure step (pure-seed step 4, ADR-0019) — whole, headless, no merge (ADR-0015); with the step off, the newborn derives its own from the stub (ADR-0016) |
-| `starter/fills/readme-md-template.md` | the same, over the kit's README.md stub, in the same commit — composed from the kit's README stub @ c670fe5 and the runs' harvested fills |
+| `starter/fills/readme-md-template.md` | the same, over the kit's README.md stub, in the same commit — composed from the kit's README stub @ af16eb7 and the runs' harvested fills, plus the System row (2026-09-09) |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before

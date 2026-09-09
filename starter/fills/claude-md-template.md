@@ -12,15 +12,18 @@
      ships no template so the derivation measurement is
      untouched, and the assembly path keeps its brake.
      — the kit half: engineering-handbook starter/kit/CLAUDE.md
-       @ c670fe5 — the title line, the records table and its
+       @ af16eb7 — the title line, the records table and its
        comment, the guard comment, all verbatim; their
        agent-arrangement convention holds this half's rules. At
        each kit re-pin, re-verify this half against their entry
-       file at the new pin.
+       file at the new pin. (Re-pinned 2026-09-09 from c670fe5:
+       the guard names .claude/rules/ and drops its example.)
      — this repo's own fills, no run's text: the orientation
        (the kit's orientation comment, filled problem-agnostic),
        the CbC pointer, the pre-framing guard, the pin stance,
-       and the Local rules (the briefing rule; the trial line
+       the docs/system/ row in the records table (2026-09-09, the
+       handbook's checkout reading: a record gets a row), and the
+       Local rules (the briefing rule; the trial line
        that stood beside it left with ADR-0016 — its own removal
        clause honored, the scenario it named retired).
      Use: delivered by the seed's semi-pure step (pure-seed.md
@@ -77,6 +80,7 @@ from the source, logged in `.claude/decisions.md`.
 | Session ending, or a dead end hit | Work history, dead ends | devlog/devlog.md |
 | Shipped something users can see | What changed, for users | CHANGELOG.md |
 | The system's shape changed | Shape of the system | ARCHITECTURE.md |
+| The promise, the layers, or the slices are in question | Intent, system definition, slice registry | docs/system/ |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |
 | Agent setup changed, or a convention arrives | Decision, why, rejected options; the conventions held, with versions | .claude/decisions.md |
 | Work needs more than one commit | In-flight change set | CHANGE-PLAN.md (when present) |
@@ -86,10 +90,10 @@ from the source, logged in `.claude/decisions.md`.
      1. True of this project and nowhere else — else it is a
         convention, stated once, there.
      2. No moment — else it goes where the moment is: the record's
-        stub, README, a project skill.
+        stub, README, a project skill, or .claude/rules/ with a
+        paths: list for a rule about one directory.
      3. Nothing else would deliver it — a stance, or a fact whose
-        failure is not noticing it, like a generated directory nobody
-        may edit by hand.
+        failure is not noticing it.
      Longer than a screen means a line is failing. Shrinking it is
      maintenance, not tidying. -->
 

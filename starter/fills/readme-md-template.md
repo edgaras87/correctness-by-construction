@@ -5,8 +5,10 @@
      the rest of the birth stays pure (the TODO item holds the
      idea; no such install exists yet).
      — the kit half: engineering-handbook starter/kit/README.md
-       @ c670fe5 — the records table and both its comments,
-       verbatim. The kit's fill-comment (the purpose paragraph
+       @ af16eb7 (unchanged since c670fe5, verified 2026-09-09) —
+       the records table and both its comments, verbatim; the
+       System row is this repo's fill (2026-09-09, the handbook's
+       checkout reading: a record gets a row). The kit's fill-comment (the purpose paragraph
        replaces it) is consumed here at composition, per its own
        rule; the title placeholder is renamed to the CLAUDE
        template's <working-name> slot, one name filled once by
@@ -70,6 +72,7 @@ concept in five chapters; start with [00-cbc.md](docs/concept/00-cbc.md).
 | Plan | [PLAN.md](PLAN.md) | Where are we, what's next, what does *done* mean |
 | Decisions | [docs/adr/](docs/adr/) | Why is it built this way |
 | Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | What is the current shape of the system |
+| System | [docs/system/](docs/system/) | What is promised, what must never happen, what the slices are |
 | Backlog | [TODO.md](TODO.md) | What's known but not done |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per version (for users) |
 | Devlog | [devlog/](devlog/) | Day-to-day work, dead ends, open questions |

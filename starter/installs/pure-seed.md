@@ -111,8 +111,10 @@ problem-agnostic, and the briefing brings the real name.
 hygiene commit — by pointer, no step of that manual restated
 here. Its blocks use the same `handbook_dir` / `new_project_dir`
 variables, same terminal session. Its fills run as written: the
-kit's birth entry pin, the three birth dates, the TEMPLATE
-marker stripped — seed-mechanical, the kit's own.
+kit's birth entry pin and the three birth dates — seed-mechanical,
+the kit's own. (The TEMPLATE marker it once stripped is gone from
+the kit since af16eb7: comments never reach a session, so the
+marker protected no one.)
 
 **3. Cut the receipt branch and commit the deliveries there, pins
 in the subjects.** One commit per delivery; the subject is where
@@ -275,8 +277,8 @@ item is a verifiable fact:
   playbook file exists, and no line of the region states an
   assembly conclusion.
 - The kit's own birth fills are done, per pure.md: the birth
-  entry's pin and date, ADR-0001's date, the devlog heading, the
-  TEMPLATE marker gone. Beyond them, nothing is filled: every
+  entry's pin and date, ADR-0001's date, the devlog heading.
+  Beyond them, nothing is filled: every
   stub still reads as a stub, and no bundle birth entry exists.
   CLAUDE.md carries no content beyond the kit's — unless the
   semi-pure step ran, in which case CLAUDE.md and README.md are
