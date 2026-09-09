@@ -50,8 +50,8 @@ recorded way instead of living in a head and scattered notes.
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per version (for users) |
 | Devlog | [devlog/](devlog/) | Day-to-day work, dead ends, open questions |
 
-<!-- Keep this file short and CORRECT. Live status belongs in PLAN.md,
-     not here. Missing sections (Prerequisites, Run, Test, …) are not
-     omissions: a section arrives when a step's gate makes it true —
-     projection follows truth. Release gate: README verified on a
-     clean machine. -->
+<!-- A line here is true now, and meant for someone arriving from
+     outside. What changes weekly is PLAN.md's; why is the ADRs'; how
+     it went is the devlog's. A missing section is not an omission: it
+     arrives when a step's gate makes it true — projection follows
+     truth. -->

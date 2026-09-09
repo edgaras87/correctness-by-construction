@@ -221,5 +221,9 @@ Ran: <start> → <end>
 3. Dead ends — approaches tried and abandoned (→ playbook warnings).
 4. Missing steps — work that had no home in the plan.
 5. Useless gates — ceremony that caught nothing.
+6. The entry file — read CLAUDE.md top to bottom; every line still
+   passes its three tests, or leaves (agent-arrangement §2).
 
-Then fold lessons into playbooks/<type>.md and bump its version.
+Then fold lessons into the playbook the steps came from — the
+"Steps from" line at the top names it — in the repo that owns it,
+and bump its version there.

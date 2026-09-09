@@ -18,8 +18,12 @@ Thumbs.db
 .env
 
 # Claude Code machine-local settings — permissions and local overrides;
-# the committed shape (if any) is .claude/settings.json
+# the committed shape is .claude/settings.json
 .claude/settings.local.json
+
+# The operator's standing instructions — one person, one checkout;
+# the tool loads it beside CLAUDE.md but never ignores it on its own
+CLAUDE.local.md
 
 # ======================================================================
 # this repo
