@@ -138,6 +138,44 @@ declined to read the staged diff first. The kit keeps it as the born
 default; your run 3 reading decides whether a born project sees the
 same. ADR-0035 carries the note.
 
+## The next day, 2026-09-09: §2 and §3 read together
+
+The maintainer's reading of your move: the address can carry a
+distinction the tree states nowhere else. A repo whose subject is
+the arrangement — this one, yours — keeps the entry file at the
+root. A repo that builds an app puts it under `.claude/`, so the
+tracked root is the project's truth and one directory holds
+everything the agent owns; ADR-0019's commit split becomes `.claude`
+plus `CHANGE-PLAN.md`. ADR-0020 already draws that line for the
+decisions log; this extends it to the address.
+
+Nothing in the handbook has to change for the bundle to do it.
+Agent-arrangement §2 permits either address, so a bundle install
+that moves the stub into `.claude/` is inside the convention as
+written — and it is exactly the evidence ADR-0035 decision 5 waits
+for: run 3 lives under `.claude/`, the retrospective says what the
+clean root bought, and the kit's stub moves on that reading or
+stays. Three things to hold while trialing it:
+
+- Until the kit moves, the address says "installed by the bundle",
+  not "an app repo": a project born from the pure seed still has
+  the stub at root. Fine for a trial; if the shape proves out, the
+  end state is the kit shipping the stub under `.claude/` and the
+  bundle's step going away.
+- A move at install time is one install step. The last one — the
+  `sed` line — went because it protected no one. This one names
+  what the clean root bought at the retrospective, or goes the
+  same way.
+- The operator's file does not follow. The harness installed here
+  today (2.1.266) reads `CLAUDE.local.md` at the project root and
+  ancestor directories only; the second address exists for the
+  checked-in entry file alone. An app repo's working tree keeps
+  that one file at root, untracked and ignored. The tracked root is
+  clean; the working tree is not quite. §10 takes the line once the
+  move is a shape in use.
+
+§3's answer stands: the kit's stub stays at root until the reading.
+
 ## What moved since your pins
 
 From `f3f6448` to HEAD, against your registry: commit-messages and
