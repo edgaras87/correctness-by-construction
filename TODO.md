@@ -479,6 +479,33 @@
       run 3's kit update went — the receipt branch as the compare
       §8 lacks, what it gave and where it fell short — from the
       run's devlog after the pre-briefing session.
+      (d) The tiers model, models/tiers.md @ 4fe8083, unchanged at
+      af16eb7: its shape holds — three tiers, copies down, records
+      up, one tier per repo, the garden paragraph exact — but §3
+      was written from zero runs and five have lived it. Five
+      refinements, each with evidence: delivery has two forms, the
+      pinned copy and the fill the run owns from the seed commit
+      on (our ADR-0017; steps in PLAN, the two entry files — folded
+      back by name, never re-copied); up is a reading, not a
+      sending — the tier above reads the run's records read-only,
+      at step boundaries during the run, the run sends nothing,
+      and the handbook's checkout review is the same flow one tier
+      up, splitting the yield by ownership; one downward channel is
+      deliberately not a copy — the gates experiment hands a
+      missing warning to the run as session input after the
+      derivation is recorded, told, unpinned, a designed exception
+      "downward: only pinned copies" would call a violation; tiers
+      talk in documents because no tier's agent reads another
+      tier's repo (a run reads only its own; a concept repo opens
+      a handbook checkout only for the lifecycle update), and the
+      pin must follow the talk — our registry lay for two days
+      after a reply was absorbed without an entry; vocabulary — the
+      "startup snippet" withdrawn 09-02, "pinned at a concept
+      version" is a concept-repo commit with each execution naming
+      its concept version, and the DRAFT's revise trigger names the
+      garden, which has not fired, where "no runs yet" is what
+      changed. Ask: revise §3 and the DRAFT note; we re-vendor at
+      the new pin.
 
 - [ ] After the absorb change-plan closes, two user observations
       (2026-09-04), raised mid-set and parked deliberately:
