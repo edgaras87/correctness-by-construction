@@ -6,6 +6,79 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-09  (session: the reply and the checkout handoff absorbed, kit @ af16eb7, entry file back at root)
+
+- Two documents read in from the handbook: the reply to our 09-08
+  handoff (b313498, grown through e5b762d, ebbde21, ac77216 as the
+  handbook kept writing) and a new handoff from its checkout-system
+  reading (2e05825). The reply: all three model asks taken (the
+  pace rule now commit-messages' first rule of thumb; the
+  permission prompt a named gate kind; the operator's file ambient
+  with an owner), the kit now ships the settings file with the ask
+  rule, the address move permitted and waiting on run 3, the local
+  file's shipped shape refused for three reasons. Its finding: the
+  loader drops every HTML comment from a memory file before it
+  reaches the agent — confirmed here, this session's copy of the
+  entry file arrived without its three comments. Later sections:
+  the rules directory, the guard example dropped, the ask rule
+  withdrawn at the handbook after eleven commits, and a 09-09
+  reading that gives the address a meaning — root for a repo about
+  the arrangement, .claude/ for an app repo. The handoff: eight
+  playbook lessons that are the method's (all in frozen v2 already,
+  by grep), the records table missing the method's three files, and
+  the checkout run's delegated gates as evidence for run 3's trial.
+- Run 3, read read-only before anything: it took only the branch
+  rule of the four pre-briefing trials (d4e8cdd, 529d830, 34e00cf);
+  no settings file, no local file, CLAUDE.md at root, kit still at
+  c670fe5.
+- The absorption, as a set. First the pinned copies, one commit
+  before the plan (6dc8b23): four skills and the agent model to
+  af16eb7, compare-first clean on all, and five findings in the
+  registry entry — the chain wants agent-arrangement, the entry
+  file's Conventions list, the installed drift, the pin lying since
+  09-07 (c670fe5 absorbed through TODO, no entry — §8's own
+  warning), and the handbook's ADR numbers colliding with ours. The
+  user's question on the citations settled the reading rule: a
+  number in a copy resolves at the source at the registry's hash,
+  never against docs/adr/ here; the copies stay verbatim, the fix
+  is the master's. Same for the playbook exemplar line, which
+  names "a concept repo" to every born project and points nowhere.
+  Then the plan (2ed87c1) and its steps: agent-arrangement injected
+  by the installed path, the Conventions section gone, the entry
+  file back at the root (8d08cfd — the 09-07 move undone on the
+  handbook's reading; run 3, the app repo, keeps its trial); the
+  stubs' changed comments carried project-side (5e2cb69), the two
+  registry entries (b0bf648), the fills recomposed with one
+  docs/system/ row in both templates (da4db7c — one row, the way
+  the ADR row covers a directory, the user's call over three), and
+  the pre-briefing prompt rewritten (4d45ce0): the kit update opens
+  it, delivered on a receipt branch cut from the seed commit so its
+  one commit against its parent is the kit at the two pins; the
+  settings item goes, the local file and the move stay.
+- Decided against, with reasons on record: a settings file here
+  (the ask rule is run 3's trial; nothing under starter/ loads —
+  the harness reads skills from .claude/skills/ only and memory
+  from files named CLAUDE.md only, and starter/ has neither);
+  patching citations or exemplars in copies; a project ADR (every
+  decision is arrangement or applies theirs).
+- The three drafts in temp/ — the 09-08 handoff, its reply, the
+  09-09 handoff — are deleted in the next commit, served: their
+  substance is in the registry entries, TODO's fifth-handoff item
+  (§8 friction: citations, exemplars, the chain naming a
+  convention a repo was born without; the run 3 update report
+  pending), the gates-experiment item's evidence notes, and this
+  entry.
+
+Resume: fire temp/prebriefing-run-3.md — the operator steps above
+its line first (the receipt branch kit-af16eb7 from 27db35e), then
+the prompt in a run 3 session on main; then a fresh session on
+step-1 with temp/briefing-run-3.md. Back here: read run 3's update
+(the branch as compare, the entry-file comment carry, the settings
+file's arrival), add its report to the fifth-handoff item, and the
+Step 1 boundary reading — derived gate vs frozen v2, hand-backs
+after the derivation is recorded, the trials' checks in TODO. The
+fifth handoff fires on the user's word once the report is in.
+
 ## 2026-09-07/08  (session: run 3's Step 0 read, playbook v5, temp/ tracked, four trials for run 3)
 
 - Run 3 (~/IdeaProjects/cbc-pure-run-3, seeded per ADR-0018 and

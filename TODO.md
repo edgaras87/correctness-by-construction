@@ -183,23 +183,42 @@
       step's first commit, the merge fast-forward with main
       linear, the gates reading before the merge, and no
       question the rule made the agent ask. Holds → playbook v6
-      preamble; bends → the bend is the finding. Same day, two
-      more trials ride the same pre-briefing session
-      (temp/prebriefing-run-3.md): a tracked .claude/settings.json
-      with one ask rule on git commit — the harness stops every
-      commit at a prompt, from the briefing session on — and an
-      untracked CLAUDE.local.md holding the reviewer's pace, with
-      its gitignore line. The reading adds: whether the agent
-      stages and shows before the prompt bites or walks into it;
-      whether the local file's text stayed out of the records;
-      whether the three arrivals landed as decisions entries and
-      one TODO Later item. A fourth trial, 2026-09-08: the run's
-      CLAUDE.md moves under .claude/ too, content untouched — the
-      shape this repo took at ebd1416; the reading checks the
-      harness read it there (the briefing session's first act
-      shows) and that the rename stayed a pure rename. Holds →
-      kit stub (settings, gitignore line, the stub's address) or
-      bundle, decided at the handbook.)
+      preamble; bends → the bend is the finding. Two more trials
+      ride the same pre-briefing session (temp/prebriefing-run-3.md,
+      rewritten 2026-09-09): an untracked CLAUDE.local.md holding
+      the reviewer's pace, and the run's CLAUDE.md under .claude/,
+      content untouched. The commit ask rule — a tracked
+      .claude/settings.json, the harness stopping every commit at a
+      prompt — no longer rides as a trial of ours: the kit ships it
+      as the born default since af16eb7, so it reaches run 3 with
+      the kit update the same prompt opens with (delivered on a
+      receipt branch cut from the seed commit, the first kit update
+      anywhere to carry an entry-file comment change — the handbook
+      wants to hear how the branch served the compare). The
+      handbook withdrew the rule for itself after eleven commits:
+      it asked for a word already given, twice on the path where
+      the prompt is declined to read the diff first. The reading
+      adds: whether the agent stages and shows before the prompt
+      bites or walks into it; whether the local file's text stayed
+      out of the records; whether the arrivals landed as decisions
+      entries and one TODO item; for the move, that the harness
+      read the file at the new address (the briefing session's
+      first act shows) and the rename stayed pure. Run 3 is the app
+      repo for the address question — this repo moved its own
+      entry file under .claude/ on 09-07 and back on 09-09
+      (8d08cfd), on the handbook's reading that the address means
+      something: root for a repo about the arrangement, .claude/
+      for one that builds an app. Evidence from the handbook's
+      checkout-system reading (2026-09-09), for the retrospective:
+      that run delegated every gate to the agent by one decisions
+      entry and needed no gate, only the record — the ask rule is
+      the reviewed mode's gate, and the other mode shows it needs
+      none; and the eight playbook lessons the reading listed as
+      the method's all sit in frozen v2 already, absent from the
+      live fill by this experiment's design — nothing to add, the
+      readings decide what re-enters. Holds → kit stub (the
+      address; their decision 5 waits on this reading) or bundle,
+      decided at the handbook.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
@@ -431,6 +450,30 @@
       establishes the reviewer and the staged-step approval
       pace (plan approved before committed, each step staged,
       shown, committed on the reviewer's word).
+      (2026-09-09, the af16eb7 update, §8 friction — three items,
+      one pending.) (a) Text that does not survive the copy, two
+      forms: every ADR number in the kit's skill copies and the
+      models is the handbook's, bare, and the ones below 0020
+      collide with this repo's own sequence on other subjects —
+      their new stub rule (no handbook citations in a stub) stops
+      one step short of the skill copies; a self-qualifying
+      citation at the master ("handbook ADR-nnnn") survives
+      verbatim copying and can never collide. And artifact-kinds'
+      exemplars are written from the handbook's seat (conventions/
+      paths, "this repo"); the playbook one was patched to name "a
+      concept repo", which a born project has never heard of, and
+      points nowhere for either reader — a born project holds no
+      playbook copy, ours is a fill. Exemplars by role survive the
+      copy ("the playbook your PLAN's Steps-from line names"). (b)
+      The requires chain can name a convention a project was born
+      without: convention-lifecycle @ af16eb7 requires
+      agent-arrangement, and a repo born before it existed has no
+      position for it — §8 step 2 reads as "check the copy", and
+      there is none; we ran it as a first injection by the
+      installed path. Worth one sentence in §8. (c) Pending: how
+      run 3's kit update went — the receipt branch as the compare
+      §8 lacks, what it gave and where it fell short — from the
+      run's devlog after the pre-briefing session.
 
 - [ ] After the absorb change-plan closes, two user observations
       (2026-09-04), raised mid-set and parked deliberately:

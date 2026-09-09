@@ -31,6 +31,16 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 
 ### Changed
 
+- The two entry-file templates gain a row for `docs/system/` in
+  their records tables — the intent, the system definition, the
+  slice registry, opened when the promise, the layers, or the
+  slices are in question. The handbook's reading of the
+  checkout-system run: those files are records by the project's
+  own description, and a record gets a row. The CLAUDE template's
+  guard comment follows the kit stub at af16eb7 (the rules
+  directory named as a home for a rule about one directory; the
+  generated-directory example dropped), and the seed manual no
+  longer mentions the TEMPLATE marker the kit stopped shipping.
 - The seed gains one optional step, the semi-pure delivery
   (ADR-0019): the two entry-file fills written over the kit's
   CLAUDE.md and README.md stubs, headless, the name filled, one
