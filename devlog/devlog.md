@@ -29,12 +29,26 @@
   its act, and the hand-back line for its Step 2 opening (TODO
   Now) is unchanged by this set.
 
+- The fifth handoff fired on the user's word, drafted to
+  temp/handbook-handoff-2026-09-10.md (2 asks, 1 report, 3 FYIs)
+  from TODO's item (a)–(e): run 3's Step 1 report answers their
+  decision 5 (the address is a layout preference, mechanically
+  identical; we act on their root-vs-app reading) and reports the
+  settings file rejected on their own withdrawal, the pace held by
+  sentence plus local file; the asks are the copy-surviving forms
+  (self-qualifying citations, exemplars by role, §8's born-without
+  sentence) and the tiers model's §3 from five runs. One claim
+  softened at the draft's check: the pace at every boundary is
+  not verifiable from the run's records — every verdict the
+  reviewer's is. The user delivers it into a handbook session.
+
 Resume: the change-plan is closed (d12e26c). Run 3's Step 2 is
 opened in the run, the user's way — nothing is drafted here for
 it; a draft was written and refused. What this repo owes the run
 is the one hand-back line in TODO's Now, carried over by the user
 in whatever form they choose. Back here: the Step 2 boundary
-reading when it closes. The fifth handoff on the user's word.
+reading when it closes. The fifth handoff is drafted; its reply is
+read in through temp/ when it comes, then the draft goes.
 
 ## 2026-09-10  (run 3's Step 1 read: the gates reading at the Framing boundary; the four trials held)
 

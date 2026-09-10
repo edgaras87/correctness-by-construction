@@ -514,7 +514,17 @@
       data). Related: observation (c) record-audience
       boundaries; fifth-handoff item below (their stubs face the
       same question).
-- [ ] Fifth handoff material, accruing (no trigger set): the
+- [ ] Fifth handoff — DRAFTED 2026-09-10 as
+      temp/handbook-handoff-2026-09-10.md (two asks: the copy-
+      surviving citation and exemplar forms with the born-without
+      sentence for §8; the tiers model's §3 and DRAFT note; one
+      report: run 3 through Step 1, decision 5's answer; FYIs:
+      the change-plans lessons, the three voices). Delivered by
+      the user into a handbook session; the draft is deleted when
+      the reply is absorbed. Awaiting: decision 5 and a kit pin if
+      the stub moves; the citation form; §3 at a pin. Material as
+      it accrued:
+      Fifth handoff material, accruing (no trigger set): the
       ADR-citation trap in text that lands inside a newborn —
       playbook steps copied into PLAN carry bare citations that
       read as the newborn's OWN ADR numbers there. Their stub
