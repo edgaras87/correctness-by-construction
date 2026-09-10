@@ -29,9 +29,12 @@
   its act, and the hand-back line for its Step 2 opening (TODO
   Now) is unchanged by this set.
 
-Resume: close the change-plan; then the hand-back rides the Step 2
-opening prompt when the user fires run 3. The fifth handoff on the
-user's word.
+Resume: the change-plan is closed (d12e26c). Run 3's Step 2 is
+opened in the run, the user's way — nothing is drafted here for
+it; a draft was written and refused. What this repo owes the run
+is the one hand-back line in TODO's Now, carried over by the user
+in whatever form they choose. Back here: the Step 2 boundary
+reading when it closes. The fifth handoff on the user's word.
 
 ## 2026-09-10  (run 3's Step 1 read: the gates reading at the Framing boundary; the four trials held)
 
