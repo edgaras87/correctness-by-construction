@@ -43,7 +43,13 @@ description: Frame a new backend system with correctness-driven design - turn a 
      section's projected-surface block — from the safe-reservations
      node's projection model and guide, read read-only (ADR-0007),
      their vocabulary never adopted; the lived core only, the
-     deeper lifecycle left unharvested until a run lives it. -->
+     deeper lifecycle left unharvested until a run lives it.
+     Harvested 2026-09-10 from run 3 (cbc-pure-run-3, its Step 1
+     change-plan and TODO), read read-only (ADR-0007): "growing
+     L2 → L1 → L4 → L3 → L5, one lived state per commit" was read
+     as append, and the definition had to be reordered after —
+     the export section now says the order is the commits', the
+     file ends L1 → L5. -->
 
 # CbC framing — one promise worked into a slice surface
 
@@ -166,7 +172,10 @@ Default export practice: **commit in derivation order** — the
 intent; the system definition growing L2 → L1 → L4 → L3 → L5, one
 lived state per commit; the registry; the adoption record; the
 README last (the surface derives from committed internals) — so
-the run repo's own history tells the derivation story. Skipping the
+the run repo's own history tells the derivation story. The order
+is the commits', not the file's: each layer commit places its
+section where the workflow presents it, so the definition ends
+L1 → L5, outside-in, and no reorder is needed after. Skipping the
 sequence is off-default: log why.
 
 The three artifacts, under `docs/system/` — internal truth as one
