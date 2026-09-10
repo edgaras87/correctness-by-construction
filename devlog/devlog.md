@@ -6,6 +6,51 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-10  (run 3's Step 1 read: the gates reading at the Framing boundary; the four trials held)
+
+- Run 3 closed Framing: 44 commits on step-1-framing from the
+  gate to the change-plan's close, eight of them agent-scoped,
+  none straddling; fast-forwarded to main by the user before this
+  reading — the one bend in the protocol, ours, the reading was to
+  come first. The framing: one promise (reserved never exceeds
+  on-hand-count under contention), four possessions, six
+  refusals, twenty kills, one area, four slices, SL-1 chosen-next;
+  ADR-0002 adopts it; README re-derived last; the entry file's
+  three false lines retired in one widened step.
+- The gates reading, derived vs frozen v2, in TODO's experiment
+  item: v2's four content items were a cache of cbc-framing and
+  the briefing; two items derived that v2 never had (verdicts
+  inline, no delegation entry; Release's framing-time decisions
+  written in the exports — earned by reading forward into the
+  vendored Release step); one miss that goes back as session
+  input at the Step 2 opening (the middle steps confirmed against
+  the framed problem); the sweeper moot under v4; the entry-file
+  retirement done unasked, at the moment rather than the gate.
+- The four trials held: branch cut before the first commit,
+  fast-forward, main linear, no question asked; the entry file
+  read at .claude/ (the plan names it by path, the guard held);
+  the pace with no gate, the local file's text in no record;
+  no handbook read this step. Three fold-back lines for the
+  branch rule: the branch gate item can only be ticked in
+  anticipation, since the merge follows the close commit; the
+  rule says nothing about the merged branch, so step-1-framing
+  still stands (deletion is safe, the user's act); two revision
+  subjects at 54 characters.
+- The run filed three hand-offs to the bundle, all three
+  confirmed here and queued as one harvest change-plan: the
+  registry template's opening line in agent voice, the export
+  section's "growing" read as append, the worked-example twins
+  differing in their provenance path. Its rule from the first —
+  exports carry no agent language — is the fix's shape. Two
+  change-plans lessons for the fifth handoff: a touch-ups-on-
+  reading step named from the start; the step as a commit series.
+- temp/briefing-run-3.md has served; deleted in the next commit.
+
+Resume: delete the served briefing; then the harvest change-plan
+for the three cbc-framing fixes; the hand-back line rides the
+Step 2 opening prompt, which the user fires. The fifth handoff
+fires on the user's word — five items now.
+
 ## 2026-09-09, later  (run 3's pre-briefing session read; the seed's address; the tiers model queued)
 
 - Two user calls after the set closed, both landed: the seed's

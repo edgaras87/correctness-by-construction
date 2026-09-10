@@ -8,6 +8,29 @@
 
 ## Now (current plan step)
 
+- [ ] Hand-back to run 3 at the Step 2 opening (2026-09-10, the
+      gates experiment's protocol): one line of session input,
+      told after its Step 1 derivation is on record — confirm the
+      middle steps against the framed problem, the plan read
+      end-to-end once (frozen v2's Framing item the derived gate
+      missed; the run's Step 3 and 4 TODO items show the reading
+      happened without the gate). Nothing else from v2 goes
+      back: the sweeper is moot under v4, the entry-file
+      retirement was done unasked.
+- [ ] Harvest run 3's three cbc-framing hand-offs into the bundle
+      master (2026-09-10, read from its TODO, all three confirmed
+      here): the registry template's opening line puts the
+      skill's name, step number and delegation slot into a
+      project artifact — the run's rule from it, exports carry no
+      agent language, is the fix's shape; SKILL.md's export
+      section says the definition grows "L2 → L1 → L4 → L3 → L5,
+      one lived state per commit" and was read as append — say the
+      commits carry the derivation and the file ends in the
+      workflow's order L1→L5; the worked-example twins claim
+      byte-identity and differ in line 3, the provenance path
+      (diff confirms it in starter/bundle/ too). One change-plan,
+      pinned copies in the runs untouched until a re-pin.
+
 - [ ] Pure-seed experiment (2026-09-05, user's design) — separate
       from the trial: NOT walk 2, the assembly birth keeps the
       held briefing and the trial-close ADR still gates on it.
@@ -240,6 +263,47 @@
       readings decide what re-enters. Holds → kit stub (the
       address; their decision 5 waits on this reading) or bundle,
       decided at the handbook.)
+      (2026-09-10, the Step 1 reading — run 3 closed Framing on
+      step-1-framing, 44 commits, fast-forwarded to main before
+      this reading, the one bend and ours: the reading was to
+      come first. Derived gate, twelve items, vs frozen v2's six:
+      the problem statement, success criteria, out-of-scope and
+      README projection all covered in the method's form — the
+      exports, the intent's six bars, the definition layer by
+      layer, the registry on template, the README re-derived per
+      the skill's projection table — so those four were a cache
+      of cbc-framing and the briefing. Two additions v2 never
+      had: verdicts inline and no delegation entry; and Release's
+      framing-time decisions written in the exports, derived by
+      reading forward into the vendored Release step — a gate
+      item earned from another step's text. Missed: the
+      middle-steps confirmation against the framed problem (the
+      run did file Step 3 and Step 4 TODO items from the framing,
+      so the reading happened without the gate saying so) — the
+      one hand-back, told at the Step 2 opening (Now item); and
+      the projection sweeper, moot under v4 since later gates
+      derive at opening — no hand-back. The entry-file
+      retirement item was absent from the gate and done anyway:
+      the agent widened its last step to the whole post-framing
+      entry file when three lines had gone false — a paid-for
+      warning re-derived at the moment, not at the gate. The
+      four trials held: the branch cut from main before the
+      step's first commit, fast-forward, main linear, no question
+      the rule made the agent ask; the entry file read at
+      .claude/ — the plan targets it by path and the guard it
+      held governed the session; the pace, sentence plus local
+      file, no gate, the file's text in no record; stay-inside —
+      no handbook read this step, the one ADR-0035 mention a
+      carry-over line in the run's TODO. Three findings on the
+      branch rule for its fold-back: the branch gate item was
+      ticked before it was true, since the merge is the
+      reviewer's act after the close commit — the rule must say
+      how that item closes; the rule is silent on the merged
+      branch, which is why step-1-framing still exists (deletion
+      is safe, main holds every commit — the user's act); and two
+      change-plan revision subjects ran to 54 characters, the
+      em-dash form. Held → playbook v6 preamble with those
+      three lines.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
@@ -546,6 +610,20 @@
       garden, which has not fired, where "no runs yet" is what
       changed. Ask: revise §3 and the DRAFT note; we re-vendor at
       the new pin.
+      (e) Run 3's Step 1, read 2026-09-10: the three pre-briefing
+      trials held through a full step — the entry file at .claude/
+      read at its address (their decision 5's report: the move is
+      a pure rename, the harness follows, nothing else changes);
+      the pace as sentence plus local file with no gate, the
+      file's text in no record; the branch per step, cut before
+      the first commit and fast-forwarded on the word. Two lessons
+      for change-plans from the run's own close: name a
+      touch-ups-on-reading step from the start (three plan
+      revisions each cost a commit before a provisional step named
+      them), and a step run as a commit series — draft, one
+      revision per reviewer question, verdict — so a question's
+      effect is a diff; whether the series shape wants naming in
+      change-plans is theirs to decide.
 
 - [ ] After the absorb change-plan closes, two user observations
       (2026-09-04), raised mid-set and parked deliberately:
