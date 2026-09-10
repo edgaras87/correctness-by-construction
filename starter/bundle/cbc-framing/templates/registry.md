@@ -9,6 +9,12 @@
      Renamed 2026-08-29 slices.registry.md → registry.md, mirroring
      the export it fills (now docs/system/registry.md — the
      directory carries what the dotted prefix carried).
+     Harvested 2026-09-10 from run 3 (cbc-pure-run-3, its Step 1
+     change-plan and TODO), read read-only (ADR-0007): the opening
+     line named the skill, its step number and the delegation slot,
+     and the filled registry carried them into a project artifact —
+     rewritten in project voice; the run's rule, exports carry no
+     agent language.
      Fill every <angle> slot; delete
      the guidance lines. Declining this template is off-template:
      the outcomes in the skill's export section still bind — derive
@@ -17,11 +23,10 @@
 
 # Slice registry — the work, cut and ready
 
-Framed <date> (cbc-framing step 6; verdicts <human sign-off — or:
-under the run's delegation, see the run's decision record>). Source
-of truth for what to work next. Ordering is an expectation,
-re-decided at each slice close — never assumed from this file's
-original state.
+Framed <date>; every verdict <the reviewer's — or: delegated, per
+<the run's record of that decision>>. Source of truth for what to
+work next. Ordering is an expectation, re-decided at each slice
+close — never assumed from this file's original state.
 
 A slice = one invariant × the adversity its evidence must *create*.
 Status values: `open` · `chosen-next` · `in-progress` ·
