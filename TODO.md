@@ -16,7 +16,15 @@
       missed; the run's Step 3 and 4 TODO items show the reading
       happened without the gate). Nothing else from v2 goes
       back: the sweeper is moot under v4, the entry-file
-      retirement was done unasked.
+      retirement was done unasked. The line, for the prompt after
+      its cut-the-branch and derive-the-gate instructions (no ADR
+      numbers, paths, or vocabulary of this repo — the temp/ rule):
+      "One item for Step 2's gate, or its notes, as you judge: now
+      that the problem is framed, confirm the middle steps of the
+      plan against it — read the plan end to end once and say
+      whether each step still stands as named, and where the
+      framing changed a step's shape. A step that no longer fits
+      is reworded there, not silently kept."
 - [x] DONE 2026-09-10, change-plan da5c95f..close — two of the
       three, plus one the run never filed: the registry template's
       opening line in project voice (2d57b01), its reconciliation
