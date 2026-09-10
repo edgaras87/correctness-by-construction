@@ -6,6 +6,33 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-10, later  (the run 3 framing harvest into cbc-framing)
+
+- The harvest change-plan (da5c95f), four fixes to the cbc-framing
+  master in the run's wording, one dated harvest line per file
+  touched (ADR-0007), the pin untouched: the registry template
+  opens in project voice; its fold-reconciliation line is a table
+  under a sentence naming L4 the master — the reviewer's touch-ups
+  in run 3, harvested without a filed hand-off, the plan's one
+  decision open to objection; the export section says the order
+  is the commits' and the file ends L1→L5; the residue filter
+  refuses agent language, run 3's rule.
+- Correction to the entry below: the worked-example twin was not
+  a third open fix. Both master headers were narrowed on
+  2026-09-07 to "only the provenance path differs", from run 3's
+  first report of it; the diff I confirmed today is that line, by
+  design. Run 3's copies still carry the byte-identical claim at
+  their pin, so its TODO item stays open there until a re-pin.
+  Two fixes were owed, not three.
+- Nothing in concept/ moved: no CHANGELOG entry, no ADR, no
+  concept version. Run 3 keeps its installed copies; a re-pin is
+  its act, and the hand-back line for its Step 2 opening (TODO
+  Now) is unchanged by this set.
+
+Resume: close the change-plan; then the hand-back rides the Step 2
+opening prompt when the user fires run 3. The fifth handoff on the
+user's word.
+
 ## 2026-09-10  (run 3's Step 1 read: the gates reading at the Framing boundary; the four trials held)
 
 - Run 3 closed Framing: 44 commits on step-1-framing from the

@@ -17,7 +17,19 @@
       happened without the gate). Nothing else from v2 goes
       back: the sweeper is moot under v4, the entry-file
       retirement was done unasked.
-- [ ] Harvest run 3's three cbc-framing hand-offs into the bundle
+- [x] DONE 2026-09-10, change-plan da5c95f..close — two of the
+      three, plus one the run never filed: the registry template's
+      opening line in project voice (2d57b01), its reconciliation
+      line as a table under an L4-is-the-master sentence (bb51b61,
+      the reviewer's own touch-ups in run 3, 79344c5 and 827d123),
+      the export order said as the commits' with the file ending
+      L1→L5 (dd481ea), the residue filter refusing agent language
+      (the run's rule, now the skill's). The twin hand-off was
+      already harvested 2026-09-07, both headers narrowed to the
+      path line — the 5bdcf71 reading miscounted it as open; run
+      3's copies are stale at their pin and its two TODO items are
+      its own to close at a re-pin. Original item:
+      Harvest run 3's three cbc-framing hand-offs into the bundle
       master (2026-09-10, read from its TODO, all three confirmed
       here): the registry template's opening line puts the
       skill's name, step number and delegation slot into a
