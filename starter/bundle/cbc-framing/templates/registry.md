@@ -15,6 +15,10 @@
      and the filled registry carried them into a project artifact —
      rewritten in project voice; the run's rule, exports carry no
      agent language.
+     Harvested 2026-09-10, same run: the fold-reconciliation line
+     as a table, one row per kill, under a sentence naming L4 the
+     master — the reviewer found the arrow list weak on reading it;
+     rows are counted, arrows are not.
      Fill every <angle> slot; delete
      the guidance lines. Declining this template is off-template:
      the outcomes in the skill's export section still bind — derive
@@ -72,13 +76,23 @@ slice through this registry, never around it.>
 
 ## Fold-reconciliation line
 
-<N> kills (K1–K<N>, derivation trace in <where>) ↔ <n> slices +
-<m> folds + <deferrals> + <refusals>:
+Every kill the definition's L4 names, accounted for: <N> kills ↔
+<n> slices + <m> folds + <deferrals> + <refusals>. One row per
+kill; nothing dropped is checked by counting. The definition's L4
+is the master for every kill — what dies, against which fact, from
+which possession; the middle column here is a summary for
+counting, never to be read in its place.
 
-- K1→SL-1 · K2→SL-2 · <…every kill accounted — nothing dropped>
-- Folds: <each definition → the first slice consuming it>
-- <The written zero: state absences too — "no fold-candidates
-  existed" is a line, never a silence.>
+| Kill | What dies | Lands in |
+|---|---|---|
+| 1 | <a few words> | SL-1 |
+| 2 | <…> | <SL-n; or a fold; or "fenced: <fence>"; or "deferred: <why>"> |
+| <…every kill, one row> | | |
+
+Folds: <each definition → the first slice consuming it>.
+
+The written zero: <state absences too — "no deferrals; no kill
+dropped" is a line, never a silence.>
 
 ## Ordering expectation (re-decided at each close)
 
