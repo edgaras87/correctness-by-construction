@@ -49,7 +49,11 @@ description: Frame a new backend system with correctness-driven design - turn a 
      L2 → L1 → L4 → L3 → L5, one lived state per commit" was read
      as append, and the definition had to be reordered after —
      the export section now says the order is the commits', the
-     file ends L1 → L5. -->
+     file ends L1 → L5.
+     Harvested 2026-09-10, same run: the residue filter refuses
+     agent language — the run's rule, made when the filled registry
+     template named the skill, a step and the delegation slot; it
+     stands in the run's entry file as a local rule. -->
 
 # CbC framing — one promise worked into a slice surface
 
@@ -167,7 +171,10 @@ run's `docs/adr/` at close.
 At close, **compose** the three artifacts from the derivation doc's
 earned blocks, under the **residue filter**: an export never
 references the derivation doc's machinery — conclusions travel
-re-grounded in the exports themselves, which must stand alone.
+re-grounded in the exports themselves, which must stand alone. The
+same filter refuses **agent language**: nothing in an export names
+this skill, a workflow step, or the run's arrangement — a reader
+without the skills directory must not need it to read them.
 Default export practice: **commit in derivation order** — the
 intent; the system definition growing L2 → L1 → L4 → L3 → L5, one
 lived state per commit; the registry; the adoption record; the
