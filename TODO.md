@@ -33,7 +33,22 @@
       still fits Step 4's opening as written — the run has not
       re-read its middle steps against the framed problem since
       Framing closed.)
-- [ ] Harvest run 3's Step 3 into infra-establish and cbc-framing
+- [x] DONE 2026-09-11, change-plan c6dbd68..close — all six, in
+      the run's wording, one harvest line per change per file
+      (CBC ADR-0007), pins untouched: the records section states
+      the log-less shape as the default for a repo with records
+      and the layout both runs used, the log for a repo without
+      records now under docs/ beside the manuals (user's
+      correction at the boundary), infra-serve reading the ground's
+      record wherever it lives (e1a7c06); Stage 0's check 2 and the
+      walk's inputs name the return trip (8e92316); cbc-framing's
+      census gains "The runtime ground" beside the trust list
+      (a3c0792); the walkthrough's two traps (2118bb6); query 6
+      and the probe-role refusal (b06fac5); the naming-case
+      comments in both SQL templates (56beb8c). Run
+      3's copies stay at their pin; a re-pin is its act. Original
+      item:
+      Harvest run 3's Step 3 into infra-establish and cbc-framing
       (2026-09-11, read from its TODO's two hand-offs and its
       devlog; every finding confirmed at the master; one
       change-plan, harvest lines per ADR-0007, pinned copies

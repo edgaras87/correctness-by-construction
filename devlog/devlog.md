@@ -6,6 +6,38 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-11, later still  (run 3's ground harvested into the bundle)
+
+- The harvest change-plan (c6dbd68): six fixes from run 3's Step 3
+  into infra-establish, infra-serve and cbc-framing, each in the
+  run's wording with one dated harvest line per change per file
+  (CBC ADR-0007), the first lines written in the tagged form. The
+  records section now says what run 3 lived — no establishment log
+  in a repo with records; decisions as ADRs, the walk in the devlog,
+  expected results in the verify suite and the operator manual, the
+  mapping note in the environment ADR — and the layout both runs
+  used; one correction at the boundary, the user's: the log a
+  record-less repo keeps goes under docs/ beside the manuals, not
+  under infrastructure/, which holds only what runs — checkout-
+  system had it there already. infra-serve reads the ground's record
+  wherever it lives, so a re-entry no longer fails on a log never
+  written.
+- Stage 0's check 2 names the return trip; the census asks for the
+  runtime ground at framing, closing the mismatch between two of our
+  own skills; the walkthrough carries the health-check window and
+  the client-container witness read; the verify suite checks the
+  CONNECT revoke, with the live probe beside it; the SQL templates
+  say which naming case they ship. The verify template took three
+  harvest lines from this set, one per change, the user's word.
+- Nothing in concept/ moved: no CHANGELOG entry, no ADR, no concept
+  version. Runs 1 to 3 hold their copies at their pins.
+
+Resume: close the set. Then nothing is owed here until run 3 closes
+Step 4 (cbc-bootstrap), read at its boundary as the others were; the
+sixth handoff accrues in TODO with no trigger set. The user carries
+the Step 2 hand-back line's fate — told or not — and the Step 4
+opening in the run.
+
 ## 2026-09-11, later  (the fifth reply absorbed; the kit at ab916a1; the CBC tag)
 
 - The reply arrived this morning, the user's file into temp/,
