@@ -12,6 +12,10 @@
 -- an explicit role IN list, a row-per-privilege matrix — not
 -- adopted: the prefix LIKE also surfaces stray roles, and the
 -- boolean matrix is more compact.
+-- Harvested 2026-09-11 from never-oversold (run 3) Step 3, read
+-- read-only (CBC ADR-0007): the behavioral half's home named as the
+-- ground's record, which in a repo with records is the devlog, not a
+-- log file.
 
 -- infrastructure/postgres/verify-database-model.sql
 --
@@ -24,7 +28,8 @@
 --
 -- Expected results ride as comments beside each query — this file needs no
 -- other document open. The behavioral half (DDL attempted as runtime and
--- refused) lives in the operator manual and the establishment log.
+-- refused) lives in the operator manual and the ground's record — the
+-- establishment log, or the devlog in a repo with records.
 
 \echo ''
 \echo '=== 1 · Project roles and capabilities ==='

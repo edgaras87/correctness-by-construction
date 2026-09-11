@@ -22,7 +22,16 @@ description: Establish a framed backend project's infrastructure ground - decide
      Changed 2026-09-03 (CBC ADR-0013): records-and-outputs gains the
      README Prerequisites projection — fired at the exit, skeleton
      in templates/readme-prerequisites.md; the walk's step 7 carries
-     the direction. -->
+     the direction.
+     Harvested 2026-09-11 from never-oversold (run 3 of the pure
+     seed) Step 3, read read-only (CBC ADR-0007): the records
+     section states the record-keeping-repo shape — no
+     establishment log; decisions as ADRs, the walk in the devlog,
+     expected results in the verify suite and the operator manual,
+     the mapping note in the environment ADR — and the layout both
+     lived runs used: compose and env files at the root, the
+     runnable ground under infrastructure/, the manuals under
+     docs/. The log stays for a repo without records. -->
 
 # Infra establish — from no infrastructure to a governed, verified ground
 
@@ -103,8 +112,9 @@ non-negotiables:
 
 State the command and its expected result → run → read the actual
 output → the outcome is what actually happened. Record it in the
-establishment log. Destructive acts (volume drops, resets) need the
-user's explicit yes; host-level installs are the user's own acts.
+ground's record (Records and outputs, below). Destructive acts
+(volume drops, resets) need the user's explicit yes; host-level
+installs are the user's own acts.
 
 ## Deviations — legal, never silent
 
@@ -114,27 +124,57 @@ references. Depart when the ground demands it; log where, what was
 done instead, and why. The references are lived captures, not law —
 but a silent deviation poisons the record.
 
-## Records and outputs (defaults — the repo's own conventions win)
+## Records and outputs (the repo's own conventions win)
 
-- `infrastructure/establishment-log.md` — the decision record.
-- `infrastructure/` — ground files (compose, bootstrap SQL, verify
-  suite, migration tool config), landed as the walk produces them.
-- `infrastructure-contract.md` — the **living** builder-facing manual:
-  one section per service, which identity to connect as and which never
-  to use, reachability inside vs outside the environment's network, what
-  the constraints refuse, how schema changes are made. Grown at every
-  re-entry, never rewritten from scratch.
-- `operator-manual.md` — the operator's full stand-up-and-use truth,
-  written **from the lived setup, contemporaneously** — never
-  reconstructed later.
+Where the ground's record lives depends on what the repo keeps —
+lived by two runs, and the shape below is theirs:
+
+- **A repo with records** (a plan, ADRs, a devlog — every kit-born
+  project): **no establishment log.** Decisions are ADRs — the
+  environment; the service set with its not-provisioned list; the
+  constraints, each with its enforcement. The walk as lived is the
+  devlog's entry for the step, growing as the walk runs: for every
+  executing step, the command, what was expected, what actually
+  happened. Expected results sit in the verify suite and the
+  operator manual. The environment ADR carries the mapping from
+  this skill's default records to the repo's own — the sentence
+  the log's first entry would have held. Run 3 (never-oversold)
+  opened the log at the decision and withdrew it one commit later
+  at the reviewer's question — what does it hold that the records
+  do not? — nothing.
+- **A repo without records:**
+  `docs/infrastructure/establishment-log.md`, beside the manuals —
+  the decision record and the walk's lived outputs, its first entry
+  mapping this skill's defaults to whatever the repo does keep.
+  Prose about the ground lives with the manuals; `infrastructure/`
+  holds only what runs.
+
+The layout, both cases:
+
+- `compose.yaml` and `.env.example` at the root, `.env` ignored —
+  the stranger's first command finds them there, and at bootstrap
+  the file becomes the whole system's declaration.
+- `infrastructure/` — the rest of the runnable ground (bootstrap
+  SQL, verify suite, migration tool config), landed as the walk
+  produces them.
+- The two manuals under the repo's docs directory
+  (`docs/infrastructure/`), beside what else is written about the
+  system:
+  - `infrastructure-contract.md` — the **living** builder-facing
+    manual: one section per service, which identity to connect as
+    and which never to use, reachability inside vs outside the
+    environment's network, what the constraints refuse, how schema
+    changes are made. Grown at every re-entry, never rewritten from
+    scratch.
+  - `operator-manual.md` — the operator's full stand-up-and-use
+    truth, written **from the lived setup, contemporaneously** —
+    never reconstructed later.
 - README `Prerequisites` section — projected at the exit, when the
   ground stands: the environment lines only, merged and filled from
-  `templates/readme-prerequisites.md` (CBC ADR-0013). The stack's line
-  arrives at bootstrap, not here. Direction in the walk's step 7.
+  `templates/readme-prerequisites.md` (CBC ADR-0013). The stack's
+  line arrives at bootstrap, not here. Direction in the walk's step
+  7.
 - Optional, only if the project keeps public docs: a setup guide
   derived from the operator manual — a projection, never a second
   master; re-derived when the manual changes.
-
-If the repo already has record/doc conventions, follow them and note the
-mapping in the log's first entry.
 
