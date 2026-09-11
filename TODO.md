@@ -447,7 +447,10 @@
       to merge, given at this boundary" — that wording is the
       rule's. Held → playbook v6: Step 2 retitled Identity
       (name, description, remote), the run's own fold-back item;
-      the branch item's closing wording.)
+      the branch item's closing wording. The retitle landed as v6
+      the same day (3242c59); the branch item's
+      wording stays held with Step 1's three branch-rule lines,
+      for the version after run 3's trial verdict.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
