@@ -10,7 +10,10 @@
      from safe-reservations log.md Entry 0001. Rebuilt as a full
      sequence on the kit's default.md (ADR-0011); kit steps last
      re-vendored from the handbook's starter/playbooks/default.md
-     v2 @ c670fe5. Harvest lands here — the one copy that exists
+     v2 @ c670fe5 (verified 2026-09-11: at ab916a1 default.md
+     changed only in two comments the v4 strip had already
+     removed; Step N's three Known-already facts unchanged).
+     Harvest lands here — the one copy that exists
      (ADR-0007); kit-owned steps (0, 1, N) change only by refresh
      against a new kit pin.
      Born 2026-09-05 as the pure-seed candidate variant

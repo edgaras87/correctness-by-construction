@@ -5,7 +5,10 @@
      the rest of the birth stays pure (the TODO item holds the
      idea; no such install exists yet).
      — the kit half: engineering-handbook starter/kit/README.md
-       @ af16eb7 (unchanged since c670fe5, verified 2026-09-09) —
+       @ ab916a1 (re-verified 2026-09-11: the decisions row gained
+       its citation clause there, `<TAG>` left literal — the run
+       declares its own tag at its naming; before that unchanged
+       since c670fe5) —
        the records table and both its comments, verbatim; the
        System row is this repo's fill (2026-09-09, the handbook's
        checkout reading: a record gets a row). The kit's fill-comment (the purpose paragraph
@@ -70,7 +73,7 @@ concept in five chapters; start with [00-cbc.md](docs/concept/00-cbc.md).
 | Record | Where | What it answers |
 |---|---|---|
 | Plan | [PLAN.md](PLAN.md) | Where are we, what's next, what does *done* mean |
-| Decisions | [docs/adr/](docs/adr/) | Why is it built this way |
+| Decisions | [docs/adr/](docs/adr/) — cited from other repos as `<TAG> ADR-nnnn` | Why is it built this way |
 | Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | What is the current shape of the system |
 | System | [docs/system/](docs/system/) | What is promised, what must never happen, what the slices are |
 | Backlog | [TODO.md](TODO.md) | What's known but not done |
