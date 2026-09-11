@@ -8,7 +8,9 @@
 
 ## Now (current plan step)
 
-- [ ] Hand-back to run 3 at the Step 2 opening (2026-09-10, the
+- [-] SKIPPED for run 3, 2026-09-11 (see the note at the end;
+      held for the next run). Original item:
+      Hand-back to run 3 at the Step 2 opening (2026-09-10, the
       gates experiment's protocol): one line of session input,
       told after its Step 1 derivation is on record — confirm the
       middle steps against the framed problem, the plan read
@@ -28,11 +30,19 @@
       (2026-09-11, read at the Step 2 and Step 3 boundaries: no
       trace in the run — neither derived gate carries a
       middle-steps item, no devlog line, no plan-wide reading
-      recorded. Whether the line was told is the user's to say;
-      if it was not, the Step 2 window has passed and the line
-      still fits Step 4's opening as written — the run has not
-      re-read its middle steps against the framed problem since
-      Framing closed.)
+      recorded. Checked 2026-09-11 in the run's session
+      transcripts, read-only: the wording appears in none of the
+      nine; Step 2 opened on "So what next? is it step 2?" and
+      nothing else. Never told. Decided the same day, the user's
+      call: not told to run 3 at all — the moment was Step 2's,
+      the run is two steps past it, and its Step 1 reading showed
+      the re-read happening unasked (its Step 3 and 4 items filed
+      from the framing), so a forced reading at Step 4 would
+      measure little. The line waits for the next pure-seed run's
+      Step 2 opening — the clean test of the told channel — or
+      for playbook v6 to write the item back as a gate, whichever
+      the readings earn first. Item closed here; the line itself
+      stays above for that use.)
 - [x] DONE 2026-09-11, change-plan c6dbd68..close — all six, in
       the run's wording, one harvest line per change per file
       (CBC ADR-0007), pins untouched: the records section states

@@ -36,8 +36,11 @@ Resume: the set is closed (8379781); the tree is clean, 21 commits
 today in three sets — the reading, the reply absorbed, the harvest.
 Nothing is owed here until run 3 closes Step 4 (cbc-bootstrap), read
 at its boundary as the others were; the sixth handoff accrues in
-TODO with no trigger set. The user carries the Step 2 hand-back
-line's fate — told or not — and the Step 4 opening in the run. Runs
+TODO with no trigger set. The Step 2 hand-back line was never told
+(checked in the run's transcripts, read-only) and is skipped for run
+3 by the user's call — the moment was Step 2's, and the run re-read
+its plan unasked; it waits for the next run's Step 2 opening, the
+clean test of the told channel, or for playbook v6. Runs
 1 to 3 hold their copies at their pins; a re-pin, each run's own
 act, brings the tagged citations and the six fixes.
 
