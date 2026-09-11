@@ -32,8 +32,10 @@
 - Nothing in concept/ moved: no CHANGELOG entry, no ADR, no concept
   version. Runs 1 to 3 hold their copies at their pins.
 
-Resume: the set is closed (8379781); the tree is clean, 21 commits
-today in three sets — the reading, the reply absorbed, the harvest.
+Resume: the set is closed (8379781); after it, playbook v6 landed
+with Step 2 retitled Identity (3242c59), the branch-rule lines held
+for the version after run 3's trial verdict. The tree is clean, 26
+commits today — the reading, the reply absorbed, the harvest, v6.
 Nothing is owed here until run 3 closes Step 4 (cbc-bootstrap), read
 at its boundary as the others were; the sixth handoff accrues in
 TODO with no trigger set. The Step 2 hand-back line was never told
