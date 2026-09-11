@@ -57,13 +57,25 @@
      comment goes with the strip, as Steps 0 and 1's did at v4:
      the pin lives in this header only, and no step ships a path
      the newborn cannot see. v4's "one fixed endpoint" clause is
-     superseded by this paragraph. -->
+     superseded by this paragraph.
+     v6 (2026-09-11, harvested from run 3, read-only — its Step 2
+     as lived and its own fold-back item): Step 2 is "Identity
+     (name, description, remote)", retitled from "Define (naming)"
+     — a public identity is a name, a one-line description derived
+     from the intent's why, and a remote under that name; the run
+     retitled it at the step's opening and its derived gate covered
+     all three. The goal line already said "public identity"; the
+     title now matches it. Held for a later version, not this one:
+     the branch-per-step rule and its gate item's closing wording,
+     which wait on run 3's trial verdict. -->
 
 # Playbook: CbC run — pure
 
-Playbook version: v5 (2026-09-07, provisional — Release derives
-its gate at opening too, the kit's three facts kept as Known
-already, harvested from run 3; v4 2026-09-06, every gate but
+Playbook version: v6 (2026-09-11, provisional — Step 2 retitled
+Identity: name, description, remote, harvested from run 3; v5
+2026-09-07, Release derives its gate at opening too, the kit's
+three facts kept as Known already, harvested from run 3; v4
+2026-09-06, every gate but
 Release's derived at step opening; v3 2026-09-06, middle strip;
 v2 2026-09-06, retirement gate item; v1 2026-09-05, variant of
 cbc-run v3)
@@ -89,7 +101,7 @@ goal, the named skill, and the briefing; written into this step
 before its work starts.
 Notes:
 
-## Step 2: Define (naming)                          [ ]
+## Step 2: Identity (name, description, remote)     [ ]
 
 Goal: the project's public identity decided, not defaulted.
 Gate: derived when this step opens — verifiable facts, from the
