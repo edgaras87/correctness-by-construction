@@ -6,6 +6,77 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-11  (run 3's Steps 2 and 3 read: the identity and the ground; the gates reading twice; the trials held)
+
+- Run 3 closed two steps since the Step 1 reading, both
+  fast-forwarded to main before it, as then. Step 2 Identity on
+  step-2-define, eight commits, 2026-09-10: named never-oversold by
+  ADR-0003, seven candidates against a four-point bar the run wrote
+  itself, the working name overturned in so many words, the remote
+  created by the reviewer by hand. Step 3 Ground on step-3-ground,
+  eighteen commits, 2026-09-10 → 11: PostgreSQL 17 under podman
+  compose as the whole service set, eight exclusions each with its
+  why, nine constraints each with its enforcement, verified both
+  ways from actual output, T2's tool refused live, the clean
+  re-stand from the operator manual alone. Read read-only.
+- The gates reading, Step 2 — derived eight vs frozen v2's three:
+  all three covered sharper, five additions v2 never had (the
+  remote as part of the identity, the step retitled at opening;
+  CHANGELOG; README true for a stranger from the remote; the devlog
+  entry; the branch item). v2's one warning, scope in the
+  description, re-derived unaided. A cache, whole; nothing to hand
+  back.
+- The gates reading, Step 3 — derived eleven vs v2's four: all four
+  covered in the skill's form; the additions traced to the skill,
+  the definition's trust line (T2's tool named, its refusal seen —
+  an item no playbook could hold), and the records. v2's two
+  warnings both re-derived: the runtime-ground return trip lived
+  exactly as checkout-system's, Stage 0 tripping and L1 revised by a
+  dated entry in one commit; grants as authority from the role-split
+  reference. v2's records line, "an establishment log of actual
+  outputs", is the one thing refused: the log opened at the decision
+  and was withdrawn a commit later at the reviewer's question — what
+  does it hold that the records do not? — the walk in the devlog's
+  tables, decisions in ADRs, expected results in the verify suite and
+  the operator manual. checkout-system kept its log; both runs put
+  compose.yaml at the root, the runnable ground under
+  infrastructure/, the manuals under docs/, and the skill's default
+  paths match neither. Nothing to hand back to the run.
+- Six findings for the bundle, the run's two hand-offs among them,
+  every one confirmed at the master (TODO Now, one harvest
+  change-plan): the log-less shape and the layout as the default for
+  record-keeping repos, with somewhere for the mapping note to go;
+  Stage 0's check 2 naming the return trip instead of "stop";
+  cbc-framing's census asking for the runtime ground — the mismatch
+  is between two of our own skills; two walkthrough traps (the
+  init-time temporary server behind a healthy check; the witness
+  read from a host without psql); the verify template's missing C3
+  query; the templates' unconditional role prefix against the
+  reference's conditional one.
+- The hand-back line for Step 2 left no trace in the run: neither
+  gate carries a middle-steps item, no devlog line. Whether it was
+  told is the user's to say; the TODO item stays open, annotated.
+- The four trials held through both steps: each branch cut at the
+  previous close commit, tip on main by fast-forward, the merged
+  branches kept; twenty-six commits, none straddling agent and
+  project paths; the entry file edited at .claude/ in two agent
+  commits; the pace in no record, the destructive acts on the
+  recorded yes; no handbook mention in any diff. The run answered
+  the Step 1 branch-item finding itself — "ticked on the reviewer's
+  word to merge, given at this boundary". Two more subjects over 50,
+  the em-dash revision form. One change-plan shape new to us: an
+  outward action, the remote, as a numbered step with no commit, so
+  the close body could say whether it happened.
+
+Resume: the harvest change-plan for run 3's Step 3 — six fixes
+across infra-establish and cbc-framing — is the next act here. The
+fifth handoff's reply arrived during this reading, the user's act:
+temp/handbook-reply-2026-09-10.md, staged, unread here beyond its
+headings — it names a new kit pin, ab916a1, and says the commit gate
+is gone from the kit. Absorbing it is the next session's first act,
+before the harvest. Run 3 opens Step 4 (cbc-bootstrap) in the run,
+the user's way; back here at its close.
+
 ## 2026-09-10, later  (the run 3 framing harvest into cbc-framing)
 
 - The harvest change-plan (da5c95f), four fixes to the cbc-framing

@@ -25,6 +25,62 @@
       whether each step still stands as named, and where the
       framing changed a step's shape. A step that no longer fits
       is reworded there, not silently kept."
+      (2026-09-11, read at the Step 2 and Step 3 boundaries: no
+      trace in the run — neither derived gate carries a
+      middle-steps item, no devlog line, no plan-wide reading
+      recorded. Whether the line was told is the user's to say;
+      if it was not, the Step 2 window has passed and the line
+      still fits Step 4's opening as written — the run has not
+      re-read its middle steps against the framed problem since
+      Framing closed.)
+- [ ] Harvest run 3's Step 3 into infra-establish and cbc-framing
+      (2026-09-11, read from its TODO's two hand-offs and its
+      devlog; every finding confirmed at the master; one
+      change-plan, harvest lines per ADR-0007, pinned copies
+      untouched until a re-pin). Six fixes: (1) records-and-
+      outputs — in a repo with records the shape is no
+      establishment log: decisions as ADRs, the walk as lived in
+      the devlog, expected results in the verify suite and the
+      operator manual; compose.yaml and the env files at the
+      root, the runnable ground under infrastructure/, the
+      manuals under docs/. Both lived runs used that layout
+      (checkout-system docs/infra/, run 3 docs/infrastructure/)
+      and the skill's default paths match neither; they differ
+      only on the log — checkout-system kept it, run 3 withdrew
+      it at the reviewer's question. The section's last line
+      sends the mapping note to "the log's first entry", which
+      the log-less shape lacks — say where it goes (run 3: the
+      environment ADR). (2) Stage 0's check 2 says "if the
+      definition has no environment facts, the framing isn't
+      finished" and "any check fails → stop"; both runs that hit
+      it took the return trip instead — a dated revision entry in
+      the definition, the framing's own revision rule, one commit
+      (checkout-system d25ff48, run 3 44f256d). Name that remedy
+      for check 2; the stop stays for the other two. (3)
+      cbc-framing — the census never asks for the runtime ground
+      (L1 is "the world"; no reference names the machine, plural
+      instances, the store as a service, the clock) while
+      infra-establish's Stage 0 requires the definition to carry
+      it: a mismatch between two skills of this bundle. The
+      workflow's L1 (or the worked example) gains a runtime-ground
+      block, asked at framing. (4) postgres-setup-walkthrough —
+      two traps lived, neither in the reference: the image runs
+      the bootstrap against a temporary server and restarts, so
+      the health check can report healthy in that window and the
+      first query fails with "the database system is shutting
+      down" — pg_isready plus one real query is the honest up;
+      and a host without a psql client reads the witness through
+      a client container on the host network. (5) templates/
+      verify-database-model.sql verifies C1, C2, C4, C5 and
+      leaves C3, the CONNECT revoke, unchecked; run 3 added query
+      6 (has_database_privilege for both roles and PUBLIC as
+      0::oid) because C3 claims it — the template gains it. (6)
+      the bootstrap and verify templates hardcode <project>_
+      prefixed roles and a LIKE filter, while the role-split
+      reference makes the prefix conditional on a shared cluster;
+      run 3 took bare names on its dedicated cluster and rewrote
+      the filter as an explicit IN list — a comment at the
+      template's role names naming the case it ships.
 - [x] DONE 2026-09-10, change-plan da5c95f..close — two of the
       three, plus one the run never filed: the registry template's
       opening line in project voice (2d57b01), its reconciliation
@@ -324,6 +380,49 @@
       change-plan revision subjects ran to 54 characters, the
       em-dash form. Held → playbook v6 preamble with those
       three lines.)
+      (2026-09-11, the Step 2 and Step 3 readings — both steps
+      closed and fast-forwarded before the reading, as at Step
+      1. Step 2, derived eight vs frozen v2's three: all three
+      covered sharper — the naming rule became a four-point bar
+      the run wrote itself, the description derived from the
+      intent's why, the rename traced into every record with a
+      dated revision entry per export; five additions v2 never
+      had — the remote as part of the identity (the run retitled
+      the step "Identity (name, description, remote)" at
+      opening), the CHANGELOG line, README true for a stranger
+      from the remote, the devlog entry, the branch item. v2's
+      one warning, scope in the description, re-derived unaided.
+      A cache, whole; no hand-back. Step 3, derived eleven vs
+      v2's four: all four covered in the skill's form (Stage 0,
+      the step gates, the exit test); additions — Stage 0's pass
+      recorded, the environment section contemporaneous with its
+      facts named, standing knowledge as the rebuttable default,
+      no ground file older than its decision, T2's tool named
+      and its refusal seen (a project item from the definition's
+      trust line, which no playbook could hold), the re-stand
+      from the manual alone, README/ARCHITECTURE/records rows.
+      v2's two warnings both re-derived: the runtime-ground
+      return trip was lived exactly (Stage 0 tripped, L1 revised
+      by a dated entry, one commit) — a cache of the skill's
+      Stage 0 plus the definition's revision rule; grants as
+      authority — a cache of the role-split reference. v2's
+      records line, "an establishment log of actual outputs", is
+      the one thing refused: opened at the decision, withdrawn a
+      commit later at the reviewer's question, the walk in the
+      devlog's tables instead — one lived run each way now, so
+      the log is a run's shape, not the playbook's. No hand-back;
+      the skill-side findings are the harvest item in Now. The
+      trials held through both steps: branches cut at the
+      previous close commit, tips on main, merged branches kept;
+      twenty-six commits, none straddling; the entry file edited
+      at .claude/ in two agent commits; the pace in no record;
+      no handbook mention in any diff. Two more subjects over 50,
+      the em-dash revision form (52, 55). The run answered the
+      branch-item finding itself: "ticked on the reviewer's word
+      to merge, given at this boundary" — that wording is the
+      rule's. Held → playbook v6: Step 2 retitled Identity
+      (name, description, remote), the run's own fold-back item;
+      the branch item's closing wording.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,
@@ -654,6 +753,15 @@
       revision per reviewer question, verdict — so a question's
       effect is a diff; whether the series shape wants naming in
       change-plans is theirs to decide.
+      (f) After the draft went — run 3's Steps 2 and 3, read
+      2026-09-11, for the next handoff: the three trials held
+      through two more steps (twenty-six commits, none
+      straddling; the entry file edited at .claude/ twice; the
+      pace in no record; no handbook read); a change-plan shape
+      worth a line — an outward action, the remote created by
+      hand, as a numbered step with no commit, so the close body
+      says whether it happened; the em-dash revision subject over
+      50 twice more.
 
 - [ ] After the absorb change-plan closes, two user observations
       (2026-09-04), raised mid-set and parked deliberately:
