@@ -12,7 +12,14 @@
      references (CBC ADR-0008); whys and traps kept (PLAN Step 6).
      Harvested 2026-08-28: .env carries a fourth key — the runtime
      application password the app reads from the environment — from
-     checkout-system's lived .env.example (CBC ADR-0007). -->
+     checkout-system's lived .env.example (CBC ADR-0007).
+     Harvested 2026-09-11 from never-oversold (run 3 of the pure
+     seed) Step 3, read read-only (CBC ADR-0007): two traps — step
+     6, the image's health check reporting healthy during the
+     init-time temporary server, the first query failing with "the
+     database system is shutting down"; step 9, the witness read
+     from a host without a psql client, through a client container
+     on the host network. -->
 
 # PostgreSQL setup walkthrough — from nothing to a governed, verified ground
 
@@ -115,6 +122,12 @@ podman compose up -d       # first start: db created, bootstrap SQL runs
 podman compose ps          # expect: <project>-postgres Up (healthy)
 ```
 
+**A trap, lived:** the image runs the bootstrap against a
+*temporary* server and then restarts. The health check can report
+healthy during that temporary server, and a query in that window
+fails with `the database system is shutting down`. Wait a second and
+retry; `pg_isready` plus one real query is the honest "up".
+
 ## 7 · Verify — both ways, always
 
 **Catalog check:**
@@ -160,6 +173,18 @@ container-to-container; database `<project_db>`, schema
 and nothing else** — migrator is the migration tool's identity alone;
 the bootstrap identity is an occasional admin lens, never wired in.
 Day-to-day IDE/psql inspection: runtime.
+
+**Reading from outside without a host `psql`.** The witness read —
+persisted state read from the host, as runtime, through the
+published port — needs a client. A host without one uses a client
+container on the host network; with a host `psql`, the same URL
+works directly:
+
+```sh
+podman run --rm --network host docker.io/library/postgres:17 \
+  psql "postgresql://<project>_runtime:<password>@localhost:${POSTGRES_PORT:-5432}/<project_db>" -c 'select 1'
+# expected: 1
+```
 
 These facts land in the project's **living infrastructure contract** —
 one section per service, grown at each later addition, the refusals
