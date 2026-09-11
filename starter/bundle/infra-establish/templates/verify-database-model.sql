@@ -20,6 +20,10 @@
 -- CONNECT privilege for both roles and PUBLIC — the bootstrap's REVOKE
 -- was a claim the suite never checked; the run added it because its
 -- constraint list claimed it.
+-- Harvested 2026-09-11, same run (CBC ADR-0007): the role filter's
+-- comment names the naming case — prefixed roles, the shared-cluster
+-- case; on a dedicated cluster with bare names the filter becomes an
+-- explicit IN list, the trade the header above once declined.
 
 -- infrastructure/postgres/verify-database-model.sql
 --
@@ -37,6 +41,9 @@
 
 \echo ''
 \echo '=== 1 · Project roles and capabilities ==='
+-- the LIKE filter assumes prefixed roles (the shared-cluster case) and
+-- also surfaces stray roles; on a dedicated cluster with bare names it
+-- becomes an explicit IN list: WHERE rolname IN ('migrator', 'runtime')
 -- expected: exactly <project>_migrator and <project>_runtime; for both:
 --   rolsuper=f, rolcreatedb=f, rolcreaterole=f, rolcanlogin=t
 SELECT rolname, rolsuper, rolcreatedb, rolcreaterole, rolcanlogin
