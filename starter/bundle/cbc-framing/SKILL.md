@@ -4,14 +4,14 @@ description: Frame a new backend system with correctness-driven design - turn a 
 ---
 
 <!-- Derives from concept v1 of correctness-by-construction
-     (ADR-0003). Provenance — archive/cbc/system-design-method
+     (CBC ADR-0003). Provenance — archive/cbc/system-design-method
      birth-materials/.claude/skills/cbc-framing/SKILL.md
      @ fe0075d (imported 2026-08-28, PLAN Step 3). Changes on
      import: none — verbatim below this header.
      Harvested 2026-08-29: the registry export's lived format from
-     checkout-system's nine-slice run, read read-only (ADR-0007) —
+     checkout-system's nine-slice run, read read-only (CBC ADR-0007) —
      outcomes stated in the export section, copy-and-fill master in
-     templates/registry.md (ADR-0008).
+     templates/registry.md (CBC ADR-0008).
      Harvested 2026-08-29, same run: the exports are living records
      — post-close changes only as logged revision entries (the run
      updated its intent at a breach's close and revised its system
@@ -25,7 +25,7 @@ description: Frame a new backend system with correctness-driven design - turn a 
      derivation doc as the framing's working record, composed at
      close into the three exports under a residue filter, committed
      in derivation order; harvested from the safe-reservations
-     framing node read read-only (ADR-0007), its own vocabulary
+     framing node read read-only (CBC ADR-0007), its own vocabulary
      never adopted; the shape's one-doc form is this repo's
      decision, both lived runs its evidence.
      Harvested 2026-08-29, same node: step 0's gate names the
@@ -41,11 +41,11 @@ description: Frame a new backend system with correctness-driven design - turn a 
      names (the dotted exports, the framing- appendix prefix).
      Harvested 2026-08-30: the README projection law — the export
      section's projected-surface block — from the safe-reservations
-     node's projection model and guide, read read-only (ADR-0007),
+     node's projection model and guide, read read-only (CBC ADR-0007),
      their vocabulary never adopted; the lived core only, the
      deeper lifecycle left unharvested until a run lives it.
      Harvested 2026-09-10 from run 3 (cbc-pure-run-3, its Step 1
-     change-plan and TODO), read read-only (ADR-0007): "growing
+     change-plan and TODO), read read-only (CBC ADR-0007): "growing
      L2 → L1 → L4 → L3 → L5, one lived state per commit" was read
      as append, and the definition had to be reordered after —
      the export section now says the order is the commits', the
@@ -204,7 +204,7 @@ reconciliation line accounts for every kill and states even its
 absences (the written zero); exactly one slice is chosen-next
 while open work remains. The default shape is the
 copy-and-fill master `templates/registry.md` beside this
-skill's references (ADR-0008). Declining it is **off-template**:
+skill's references (CBC ADR-0008). Declining it is **off-template**:
 derive your own shape from the outcomes above and record the
 deviation in the run's log.
 

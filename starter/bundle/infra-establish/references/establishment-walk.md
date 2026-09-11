@@ -1,12 +1,12 @@
 <!-- Checked against concept v1 of correctness-by-construction
-     (ADR-0003, ADR-0005 — practice-born). Provenance —
+     (CBC ADR-0003, CBC ADR-0005 — practice-born). Provenance —
      archive/cbc/system-design-method agents-from-practice/
      Infrastructure-establishment/.claude/skills/references/establishment-walk.md
      @ fe0075d (imported 2026-08-28, PLAN Step 4). Changes on
      import: moved — from .claude/skills/references/, beside rather
      than inside the skill directory (same normalization as the
      SKILL.md). Content verbatim below this header.
-     Changed 2026-09-03 (ADR-0013): step 7 gains the README
+     Changed 2026-09-03 (CBC ADR-0013): step 7 gains the README
      Prerequisites projection — the section arrives when the ground
      stands, skeleton in templates/readme-prerequisites.md. -->
 
@@ -147,9 +147,9 @@ lines a stranger's machine needs before this ground can stand,
 derived from the operator manual, carrying only what a stranger
 needs in hand and linking the manual for the rest. Skeleton:
 `templates/readme-prerequisites.md` in this skill — merge, fill,
-and the section is the run's own (ADR-0008). The stack's own
+and the section is the run's own (CBC ADR-0008). The stack's own
 prerequisite line is **not** written here: its fact is born at
-bootstrap, whose skill carries it (ADR-0013). The kit's README stub
+bootstrap, whose skill carries it (CBC ADR-0013). The kit's README stub
 ships without the section — container stays, direction goes — and
 the section arrives now because this gate made it true.
 

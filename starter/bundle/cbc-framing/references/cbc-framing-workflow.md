@@ -1,16 +1,16 @@
 <!-- Derives from concept v1 of correctness-by-construction
-     (ADR-0003). Provenance — archive/cbc/system-design-method
+     (CBC ADR-0003). Provenance — archive/cbc/system-design-method
      birth-materials/.claude/skills/cbc-framing/references/cbc-framing-workflow.md
      @ fe0075d (imported 2026-08-28, PLAN Step 3). Changes on
      import: none — verbatim below this header.
      Harvested 2026-08-29 from checkout-system's lived framing,
-     read read-only (ADR-0007): step 2 records its saturation
+     read read-only (CBC ADR-0007): step 2 records its saturation
      probe log in L1 — saturation checkable, not just claimed.
      Harvested 2026-08-29, same run: the census may carry a short
      labeled trust-assumptions list beside the facts, never
      instead of them.
      Harvested 2026-08-29 from the safe-reservations framing node,
-     read read-only (ADR-0007), its vocabulary never adopted:
+     read read-only (CBC ADR-0007), its vocabulary never adopted:
      step 0 carries the audience distinction, worth-proving, and
      what done demonstrably means.
      Harvested 2026-08-29, same node: step 2 carries the probe

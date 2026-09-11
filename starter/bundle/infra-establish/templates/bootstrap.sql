@@ -1,12 +1,12 @@
--- Template — master copy in correctness-by-construction (ADR-0008);
--- checked against concept v1 (ADR-0003, ADR-0005 — practice-born).
+-- Template — master copy in correctness-by-construction (CBC ADR-0008);
+-- checked against concept v1 (CBC ADR-0003, CBC ADR-0005 — practice-born).
 -- Extracted 2026-08-28 from checkout-system's lived
 -- infrastructure/postgres/init/bootstrap.sql (PLAN Step 6). Changes
 -- on extraction: identities and local-dev passwords generalized to
 -- placeholders (<project>, <project_db>, <project_schema>); the
 -- run-local model path and ADR references generalized to neutral
 -- wording. Copy into a run at the same path and fill; the filled
--- file is the run's own (ADR-0008).
+-- file is the run's own (CBC ADR-0008).
 
 -- infrastructure/postgres/init/bootstrap.sql
 --

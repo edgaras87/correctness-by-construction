@@ -1,16 +1,16 @@
-<!-- Copy-and-fill master for the slice-registry export (ADR-0008).
+<!-- Copy-and-fill master for the slice-registry export (CBC ADR-0008).
      Provenance — harvested 2026-08-29 from checkout-system's lived
-     registry across its nine slices, read read-only (ADR-0007);
+     registry across its nine slices, read read-only (CBC ADR-0007);
      placeholders generalized here.
      Harvested 2026-08-29 from the safe-reservations framing node,
-     read read-only (ADR-0007), its vocabulary never adopted:
+     read read-only (CBC ADR-0007), its vocabulary never adopted:
      grouping as headings-never-boundaries, riders, evidence-shape
      flags, the written zero.
      Renamed 2026-08-29 slices.registry.md → registry.md, mirroring
      the export it fills (now docs/system/registry.md — the
      directory carries what the dotted prefix carried).
      Harvested 2026-09-10 from run 3 (cbc-pure-run-3, its Step 1
-     change-plan and TODO), read read-only (ADR-0007): the opening
+     change-plan and TODO), read read-only (CBC ADR-0007): the opening
      line named the skill, its step number and the delegation slot,
      and the filled registry carried them into a project artifact —
      rewritten in project voice; the run's rule, exports carry no

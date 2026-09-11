@@ -1,5 +1,5 @@
 <!-- Checked against concept v1 of correctness-by-construction
-     (ADR-0003, ADR-0005 — practice-born). Provenance —
+     (CBC ADR-0003, CBC ADR-0005 — practice-born). Provenance —
      archive/cbc/system-design-method agents-from-practice/
      system-bootstrap/.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md
      @ fe0075d (imported 2026-08-28, PLAN Step 4). Changes on
@@ -8,15 +8,15 @@
      (RANDOM_PORT alone provides no bean;
      @AutoConfigureTestRestTemplate required) — from
      checkout-system's decision record of 2026-08-27, in the run's
-     own wording (ADR-0007).
+     own wording (CBC ADR-0007).
      Re-derived 2026-08-28: stage 3's config skeleton and stage 4's
      test-runtime properties now point at copy-and-fill masters in
-     templates/ beside this skill's references (ADR-0008); whys and
+     templates/ beside this skill's references (CBC ADR-0008); whys and
      traps kept (PLAN Step 6).
      Re-derived 2026-08-28: stages 4 and 5 point at
      spring-harness-reference.md — the recurring harness artifacts
      as code, confirmed by the third lived pass; a reference on
-     ADR-0008's imitated side, never pasted. Outcomes and traps
+     CBC ADR-0008's imitated side, never pasted. Outcomes and traps
      stay mastered here.
      Re-derived 2026-08-29: stage 1 carries the application-
      structure decision beside the stack decision, routed to
@@ -35,7 +35,7 @@ This doc carries **required outcomes** (what must be true, the how is
 yours) and **lived traps** (exact facts about this stack and environment).
 It carries no code to copy. Its config files, though, are
 copy-and-fill masters in `templates/` beside this skill's
-`references/` (ADR-0008); they implement the stack line above, and
+`references/` (CBC ADR-0008); they implement the stack line above, and
 if the run's decided stack differs you are **off-template**: derive
 from the outcomes here, record the deviation in the run's log, and
 expect it to harvest. **The project's requirements document wins over

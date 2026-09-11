@@ -1,5 +1,5 @@
 <!-- Checked against concept v1 of correctness-by-construction
-     (ADR-0003, ADR-0005 — practice-born). Provenance — the
+     (CBC ADR-0003, CBC ADR-0005 — practice-born). Provenance — the
      workbench-era doc system-bootstrap-spring-harness.reference.md
      (ai-context-system, born from the second lived pass,
      safe-reservations), handed over 2026-08-28 as an uncommitted
@@ -10,7 +10,7 @@
      walkthroughs' placeholder notation.
      Confirmed and corrected 2026-08-28 against the third lived
      pass — checkout-system's bootstrap (commits d732b53, 83262b5),
-     read read-only (ADR-0007). The third pass's corrections, taken:
+     read read-only (CBC ADR-0007). The third pass's corrections, taken:
      the container is a faithful miniature carrying the ground's
      authority split (the second pass ran the harness as the
      Testcontainers superuser); the layering is two bases, not
@@ -43,7 +43,7 @@ which are shaped by the stack and the harness outcomes rather than by
 the problem — three projects produced them near-identically, and each
 executor's only route was reading the previous project's source. This
 file exists to make that read unnecessary. **It is a reference, not a
-template** (ADR-0008): imitated, never pasted-and-filled — copied
+template** (CBC ADR-0008): imitated, never pasted-and-filled — copied
 thoughtlessly it will be wrong in the variation points named at the
 end.
 

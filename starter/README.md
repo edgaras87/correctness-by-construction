@@ -121,4 +121,9 @@ with every future copy. The pin is untouched and no concept
 version bumps unless the mental layer itself changed; CHANGELOG
 carries concept versions only. The archive's copy stays a
 historical snapshot — visibly stale is its job. Why this shape:
-ADR-0007.
+ADR-0007. A harvest line, like every citation of this repo's
+decisions in the bundle, writes the number as `CBC ADR-nnnn`: the
+bundle is copied verbatim into runs, where a bare number is the
+run's own (ADR-0020, which swept the existing citations once,
+without a header line per file). Text that stays in this repo —
+this doc, the fills, the seed, the records — cites bare.

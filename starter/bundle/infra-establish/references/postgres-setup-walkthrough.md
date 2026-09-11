@@ -1,5 +1,5 @@
 <!-- Checked against concept v1 of correctness-by-construction
-     (ADR-0003, ADR-0005 — practice-born). Provenance —
+     (CBC ADR-0003, CBC ADR-0005 — practice-born). Provenance —
      archive/cbc/system-design-method agents-from-practice/
      Infrastructure-establishment/.claude/skills/references/postgres-setup-walkthrough.md
      @ fe0075d (imported 2026-08-28, PLAN Step 4). Changes on
@@ -9,10 +9,10 @@
      Re-derived 2026-08-28: embedded file bodies (compose, bootstrap
      SQL, flyway.conf) and the verify-suite section list replaced by
      pointers to the templates/ masters beside this skill's
-     references (ADR-0008); whys and traps kept (PLAN Step 6).
+     references (CBC ADR-0008); whys and traps kept (PLAN Step 6).
      Harvested 2026-08-28: .env carries a fourth key — the runtime
      application password the app reads from the environment — from
-     checkout-system's lived .env.example (ADR-0007). -->
+     checkout-system's lived .env.example (CBC ADR-0007). -->
 
 # PostgreSQL setup walkthrough — from nothing to a governed, verified ground
 
@@ -28,7 +28,7 @@ Placeholders: `<project>` — underscored in SQL identifiers
 (compose project name).
 
 The files themselves are copy-and-fill masters in `templates/`,
-beside this skill's `references/` (ADR-0008) — this walk carries the
+beside this skill's `references/` (CBC ADR-0008) — this walk carries the
 whys and the order; the templates carry the bodies and their recall
 comments. Fill a template, and the filled file is the run's own.
 The templates implement the assumptions above; if the run's decided

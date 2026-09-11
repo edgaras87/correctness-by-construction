@@ -4,7 +4,7 @@ description: Establish a framed backend project's infrastructure ground - decide
 ---
 
 <!-- Checked against concept v1 of correctness-by-construction
-     (ADR-0003, ADR-0005 — practice-born). Provenance —
+     (CBC ADR-0003, CBC ADR-0005 — practice-born). Provenance —
      archive/cbc/system-design-method agents-from-practice/
      Infrastructure-establishment/.claude/skills/SKILL.md
      @ fe0075d (imported 2026-08-28, PLAN Step 4). Changes on
@@ -13,13 +13,13 @@ description: Establish a framed backend project's infrastructure ground - decide
      layout diagram and unregisterable as a named skill; normalized
      to the diagram's layout. One addition: the Records-and-outputs
      defaults section at the end, absorbed from the
-     agents/groundskeeper.md file left behind (ADR-0006). Content
+     agents/groundskeeper.md file left behind (CBC ADR-0006). Content
      otherwise verbatim below this header.
      Re-derived 2026-08-29: the framing exports' paths — they live
      under docs/system/ as intent.md, definition.md, registry.md
      (cbc-framing's layout re-derivation); Stage 0 updated to
      match.
-     Changed 2026-09-03 (ADR-0013): records-and-outputs gains the
+     Changed 2026-09-03 (CBC ADR-0013): records-and-outputs gains the
      README Prerequisites projection — fired at the exit, skeleton
      in templates/readme-prerequisites.md; the walk's step 7 carries
      the direction. -->
@@ -129,7 +129,7 @@ but a silent deviation poisons the record.
   reconstructed later.
 - README `Prerequisites` section — projected at the exit, when the
   ground stands: the environment lines only, merged and filled from
-  `templates/readme-prerequisites.md` (ADR-0013). The stack's line
+  `templates/readme-prerequisites.md` (CBC ADR-0013). The stack's line
   arrives at bootstrap, not here. Direction in the walk's step 7.
 - Optional, only if the project keeps public docs: a setup guide
   derived from the operator manual — a projection, never a second
