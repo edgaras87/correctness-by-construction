@@ -44,7 +44,7 @@ recorded way instead of living in a head and scattered notes.
 | Record | Where | What it answers |
 |---|---|---|
 | Plan | [PLAN.md](PLAN.md) | Where are we, what's next, what does *done* mean |
-| Decisions | [docs/adr/](docs/adr/) | Why is it built this way |
+| Decisions | [docs/adr/](docs/adr/) — cited from other repos as `CBC ADR-nnnn` | Why is it built this way |
 | Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | What is the current shape of the system |
 | Backlog | [TODO.md](TODO.md) | What's known but not done |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per version (for users) |
