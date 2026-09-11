@@ -31,7 +31,11 @@ description: Establish a framed backend project's infrastructure ground - decide
      the mapping note in the environment ADR — and the layout both
      lived runs used: compose and env files at the root, the
      runnable ground under infrastructure/, the manuals under
-     docs/. The log stays for a repo without records. -->
+     docs/. The log stays for a repo without records.
+     Harvested 2026-09-11, same run (CBC ADR-0007): Stage 0's check
+     2 names the return trip — a definition without runtime-ground
+     facts gains them by a dated revision entry in L1, one commit —
+     instead of "stop"; lived by both runs that hit it. -->
 
 # Infra establish — from no infrastructure to a governed, verified ground
 
@@ -59,16 +63,25 @@ in. Verify against the actual repo:
    constraints). With cbc-framing these live under `docs/system/`:
    `intent.md`, `definition.md`, `registry.md`.
 2. **The environment facts are readable** — the definition states what
-   runtime ground the system assumes (local, single machine, OS-level
-   facts). If the definition has no environment facts, the framing
-   isn't finished.
+   runtime ground the system assumes: the machine, a stranger's clean
+   machine, whether more than one instance runs on it, the store as a
+   service outliving the instances, the clock. If the definition has
+   no runtime-ground facts, this is not "stop": it is the downstream
+   trigger the definition's own revision rule names. The facts are
+   added by a dated revision entry in L1 — what changed, why,
+   triggered by this check — one commit, no possession, refusal or
+   verdict touched; then the check passes. Lived twice, the same way
+   both times (checkout-system, never-oversold). Framing work is not
+   done here; a fact the framing left unstated is written where it
+   belongs.
 3. **The repo exists and is a git repo** with its plumbing dotfiles
    present or creatable (`.gitignore` at minimum — secrets handling
    depends on it).
 
-**Any check fails → stop.** Report exactly what is missing. Framing
-work is never done here — that is the framing job's territory. An
-establishment started on an unframed project provisions from habit,
+**Check 1 or 3 fails → stop.** Report exactly what is missing.
+Framing work is never done here — that is the framing job's
+territory. An establishment started on an unframed project
+provisions from habit,
 and habit is exactly what the method exists to refuse.
 
 ## The walk and its gates
