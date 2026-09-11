@@ -6,6 +6,48 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-11, later  (the fifth reply absorbed; the kit at ab916a1; the CBC tag)
+
+- The reply arrived this morning, the user's file into temp/,
+  committed as delivery (44b5bac) before the plan. Absorbed under a
+  change-plan (bd3b785): pinned copies to ab916a1 — the four skill
+  copies and both models, compare-first clean, tiers moving for the
+  first time since the birth pin; the three installed conventions
+  registered at the hash, one carry (README's decisions row);
+  repo-hygiene unchanged across the span, pin left.
+- What the reply settled: decision 5 closed on run 3's report, the
+  kit's stub staying at the root and the seed's rename at birth the
+  bundle's own; decision 1 withdrawn outright — the kit ships no
+  settings file, and the 09-09 rejection here is now the kit's
+  state; the citation ask returned as a rule wider than asked — a
+  tag per repo, both directions (HANDBOOK ADR-0037), every
+  convention and model now reading HANDBOOK ADR-nnnn; exemplars by
+  role; the born-without sentence in §8; the tiers model's §3
+  rewritten from our five with the told channel named; the
+  three-voices report absorbed as an agent-model correction (the
+  window carries roles, W2).
+- The tag question decided here, ADR-0020: this repo is CBC. The
+  bundle's 102 citations of our decisions — six numbers, all ours —
+  swept to CBC ADR-nnnn by script in one commit, verified by grep
+  both sides; the collision it ends was lived, run 3's ADR-0003
+  against ours in cbc-framing's header. Records, the bundle doc,
+  the seed and the fills' headers stay bare; the temp rule for told
+  text stands, since a told line is unfollowable either way. No
+  header line per file for the sweep — logged once, the user's
+  word at the plan.
+- The fills re-verified at the pin: the README fill's row gains the
+  stub's clause with <TAG> literal; the CLAUDE stub unchanged; the
+  playbook's kit steps untouched by default.md's two comment
+  changes. PLAN's decision index caught up, ADR-0014 to 0020 — it
+  had stopped at 0013. The fifth-handoff item DONE; a sixth opens
+  with the post-draft material.
+
+Resume: the two served drafts leave temp/ and the set closes. Then
+the harvest change-plan for run 3's Step 3 — six fixes across
+infra-establish and cbc-framing, harvest lines now written as CBC
+ADR-nnnn. Run 3 opens Step 4 in the run, the user's way; back here
+at its close.
+
 ## 2026-09-11  (run 3's Steps 2 and 3 read: the identity and the ground; the gates reading twice; the trials held)
 
 - Run 3 closed two steps since the Step 1 reading, both

@@ -613,7 +613,26 @@
       data). Related: observation (c) record-audience
       boundaries; fifth-handoff item below (their stubs face the
       same question).
-- [ ] Fifth handoff — DRAFTED 2026-09-10 as
+- [x] DONE 2026-09-11 — replied 2026-09-10, absorbed at ab916a1
+      (change-plan bd3b785..close). The answers: decision 5 closed
+      on run 3's report — the kit's stub stays at the root, a
+      bundle that wants .claude/ renames at birth, as the seed
+      does; decision 1 withdrawn — the kit ships no settings file,
+      the stop is the commit-messages sentence, and run 3's 44
+      commits on sentence plus local file are the only lived
+      evidence about the stop; the citation ask taken as a wider
+      rule (HANDBOOK ADR-0037): a bare number is the reader's own,
+      another repo's decision carries its tag, records that never
+      leave stay bare — ours is CBC, the bundle swept, ADR-0020;
+      exemplars by role; the born-without sentence in §8; no ADR
+      cited below the first step of either playbook; tiers §3
+      rewritten from our five, the told channel named as what the
+      gates experiment uses, unpinned by design; the three-voices
+      report became an agent-model correction (the window carries
+      roles, W2) rather than a TODO; the two change-plans practices
+      sit in their Step 10 for a read with more runs. Nothing asked
+      of run 3. Original item:
+      Fifth handoff — DRAFTED 2026-09-10 as
       temp/handbook-handoff-2026-09-10.md (two asks: the copy-
       surviving citation and exemplar forms with the born-without
       sentence for §8; the tiers model's §3 and DRAFT note; one
@@ -753,15 +772,21 @@
       revision per reviewer question, verdict — so a question's
       effect is a diff; whether the series shape wants naming in
       change-plans is theirs to decide.
-      (f) After the draft went — run 3's Steps 2 and 3, read
-      2026-09-11, for the next handoff: the three trials held
-      through two more steps (twenty-six commits, none
-      straddling; the entry file edited at .claude/ twice; the
-      pace in no record; no handbook read); a change-plan shape
-      worth a line — an outward action, the remote created by
-      hand, as a numbered step with no commit, so the close body
-      says whether it happened; the em-dash revision subject over
-      50 twice more.
+
+- [ ] Sixth handoff material, accruing (no trigger set):
+      (a) run 3's Steps 2 and 3, read 2026-09-11 after the fifth
+      draft went: the three trials held through two more steps
+      (twenty-six commits, none straddling; the entry file edited
+      at .claude/ twice; the pace in no record; no handbook read);
+      a change-plan shape worth a line — an outward action, the
+      remote created by hand, as a numbered step with no commit,
+      so the close body says whether it happened; the em-dash
+      revision subject over 50 twice more. (b) The tag rule lived
+      on this side, 2026-09-11: 102 bundle citations swept by
+      script in one commit, no header line per file (ADR-0020's
+      reasoning); the fills' `<TAG>` left literal for the run to
+      fill at its naming — whether the kit's stub should say when
+      a born project fills it is theirs to read.
 
 - [ ] After the absorb change-plan closes, two user observations
       (2026-09-04), raised mid-set and parked deliberately:

@@ -1,8 +1,11 @@
 # 0020. This repo's decisions are cited from other repos as CBC ADR-nnnn
 
 Date: 2026-09-11
-Status: Proposed (opened inside the fifth reply's absorption
-change-plan; flips at its final records commit)
+Status: Accepted (2026-09-11, at the set's final records commit;
+opened Proposed per change-plans §4. The sweep boundary held the
+claim as stated: 102 citations, six numbers all ours, zero bare
+after, none doubled, the twins still differing only in their
+provenance path)
 
 ## Context
 

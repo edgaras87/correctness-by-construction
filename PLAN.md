@@ -209,6 +209,13 @@ was met at Step 5.
 - ADR-0011: Playbook steps — vendored endpoints, harvested middles
 - ADR-0012: The newborn derives its arrangement; snippet withdrawn
 - ADR-0013: README direction at the skills' moments of need
+- ADR-0014: The bundle ships assembled text; the derivation experiment closes
+- ADR-0015: The shipped text is a whole template, copied not merged
+- ADR-0016: Adopt the pure shape; the assembly walk is cancelled
+- ADR-0017: Fills beside the bundle
+- ADR-0018: The seed lands on a receipt branch
+- ADR-0019: The entry files ship filled — the semi-pure delivery
+- ADR-0020: This repo's decisions are cited from other repos as CBC ADR-nnnn
 
 ---
 
