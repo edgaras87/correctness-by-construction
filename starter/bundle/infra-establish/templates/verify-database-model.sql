@@ -16,6 +16,10 @@
 -- read-only (CBC ADR-0007): the behavioral half's home named as the
 -- ground's record, which in a repo with records is the devlog, not a
 -- log file.
+-- Harvested 2026-09-11, same run (CBC ADR-0007): query 6 checks the
+-- CONNECT privilege for both roles and PUBLIC — the bootstrap's REVOKE
+-- was a claim the suite never checked; the run added it because its
+-- constraint list claimed it.
 
 -- infrastructure/postgres/verify-database-model.sql
 --
@@ -86,3 +90,12 @@ FROM pg_default_acl d
      JOIN pg_namespace n ON n.oid = d.defaclnamespace
 WHERE n.nspname = '<project_schema>'
 ORDER BY objtype, privilege_type;
+
+\echo ''
+\echo '=== 6 · Connect privilege — access by grant, never by default ==='
+-- expected: <project>_migrator t, <project>_runtime t, and PUBLIC (the
+-- empty-string role, oid 0) f — the bootstrap's REVOKE CONNECT, checked
+SELECT '<project>_migrator' AS who, has_database_privilege('<project>_migrator', '<project_db>', 'CONNECT') AS connect
+UNION ALL SELECT '<project>_runtime',  has_database_privilege('<project>_runtime',  '<project_db>', 'CONNECT')
+UNION ALL SELECT 'PUBLIC',             has_database_privilege(0::oid,               '<project_db>', 'CONNECT')
+ORDER BY who;

@@ -19,7 +19,11 @@
      init-time temporary server, the first query failing with "the
      database system is shutting down"; step 9, the witness read
      from a host without a psql client, through a client container
-     on the host network. -->
+     on the host network.
+     Harvested 2026-09-11, same run (CBC ADR-0007): step 7's
+     behavioral check gains the ungranted-role probe — created,
+     refused to connect, dropped — the live half of the CONNECT
+     revoke that query 6 now checks in the catalog. -->
 
 # PostgreSQL setup walkthrough — from nothing to a governed, verified ground
 
@@ -143,6 +147,16 @@ podman exec -i <project>-postgres \
 podman exec -it <project>-postgres \
   psql -U <project>_runtime -d <project_db> -c 'CREATE TABLE t(i int);'
 # expected: ERROR: permission denied for schema <project_schema>
+```
+
+The other refusal worth watching live — an ungranted role cannot
+connect (a probe role, dropped after):
+
+```sh
+podman exec <project>-postgres psql -U postgres -d <project_db> -c "CREATE ROLE probe LOGIN;"
+podman exec <project>-postgres psql -U probe -d <project_db> -c 'select 1'
+# expected: FATAL:  permission denied for database "<project_db>"
+podman exec <project>-postgres psql -U postgres -d <project_db> -c "DROP ROLE probe;"
 ```
 
 **Flyway as migrator** (connects, sees the schema, empty history —
