@@ -1,13 +1,15 @@
-<!-- Vendored copy — engineering-handbook models/tiers.md @ 4fe8083
-     (copied 2026-08-27, same commit as this repo's kit birth pin).
+<!-- Vendored copy — engineering-handbook models/tiers.md @ ab916a1
+     (copied 2026-09-11; first copied 2026-08-27 @ 4fe8083, this
+     repo's kit birth pin, and unchanged there through af16eb7).
      Pinned: do not edit here — changes happen in the handbook and
      arrive as a fresh pinned copy. See ADR-0002. -->
 
 # Tiers Model
 
-DRAFT (named from one worked instance — this handbook, one concept
-repo being born, no runs yet; revise when the garden tier earns
-machinery).
+DRAFT (named 2026-08-25 from one worked instance — this handbook,
+one concept repo being born, no runs; §3 revised 2026-09-10 from
+five lived runs, on the concept repo's report. The garden tier is
+still a folder; revise again when it earns machinery).
 
 A structured description of how the workspace's repos relate: three
 tiers, each answering a different question, with delivery flowing down
@@ -62,20 +64,46 @@ runs          what you try      projects, experiments
 
 ## 3. The flows
 
-**Down is delivery.** Always a copy, always pinned — a kit copy at a
-handbook commit, an execution at a concept version. At a repo's birth
-the two deliveries meet: the kit births the container, a concept's
-birth materials — a playbook, a startup snippet — birth the shape,
-both pinned, both input to Framing rather than agreement (ADR-0024).
-Nothing downstream tracks upstream by reference; how copies are made
-and tracked is the convention-lifecycle's, not this model's.
+**Down is delivery, in two forms.** The first is a copy, always
+pinned — a kit copy at a handbook commit, an execution at a
+concept-repo commit, which is what "a concept version" is. The second
+is a fill: what the run owns from its seed commit on — the steps
+written into its plan, its entry file, whatever the birth materials
+left for it to author — which is never re-copied and is folded back
+by name at the retrospective, into the playbook or the concept that
+seeded it. At a repo's birth the two meet: the kit births the
+container, the concept's birth materials birth the shape, both
+pinned, both input to Framing rather than agreement
+(HANDBOOK ADR-0024). Nothing downstream tracks upstream by reference;
+how copies are made and tracked is the convention-lifecycle's, not
+this model's.
 
-**Up is harvest.** Learning moves only through records: a run's
-surprise becomes a concept change (and the executions are re-derived
-from the updated concept); a method lesson or arrangement experiment
-anywhere rides the promotion queue (`.claude/decisions.md`, read at
-retrospective) or a friction list back to the handbook. Nothing edits
-an upstream repo as a side effect of downstream work.
+**Told is not delivery.** A tier above may hand a run something as
+session input — a warning the run's own derivation missed, given
+after that derivation is on record, as an experiment's instrument.
+That is the told channel, unpinned by design (agent model §4), and
+the run's records say it was told; it is not a third form of
+delivery, and a run that leans on it has the diagnostic told
+carries.
+
+**Up is harvest, through records.** Learning moves only through
+records, and the run sends nothing: the tier above reads the run's
+records, read-only, at step boundaries during the run or whole at
+its end; or the records travel as a handoff document, one repo's
+`temp/` to another's. A run's surprise becomes a concept change (and
+the executions are re-derived from the updated concept); a method
+lesson or arrangement experiment anywhere reaches the handbook the
+same two ways — read at the retrospective from the promotion queue
+(`.claude/decisions.md`), or carried in a handoff. Nothing edits an
+upstream repo as a side effect of downstream work, in either
+direction.
+
+**Tiers talk in documents, and the pin follows the talk.** No tier's
+agent reads another tier's repo: a run reads only its own, and a
+concept repo opens a handbook checkout only for the lifecycle update
+(convention-lifecycle §8). So every exchange is a document, and a
+document absorbed without its pin moving leaves the registry lying —
+the update procedure's own warning, lived once.
 
 ## 4. What the model answers
 

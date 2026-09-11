@@ -1,7 +1,8 @@
-<!-- Vendored copy — engineering-handbook models/agent.md @ af16eb7
-     (copied 2026-09-09; first copied 2026-08-27 @ 4fe8083, this
-     repo's kit birth pin). Pinned: do not edit here — changes happen
-     in the handbook and arrive as a fresh pinned copy. See ADR-0002. -->
+<!-- Vendored copy — engineering-handbook models/agent.md @ ab916a1
+     (copied 2026-09-11; before that @ af16eb7 2026-09-09, first
+     copied 2026-08-27 @ 4fe8083, this repo's kit birth pin).
+     Pinned: do not edit here — changes happen in the handbook and
+     arrive as a fresh pinned copy. See ADR-0002. -->
 
 # Agent Model
 
@@ -35,7 +36,7 @@ itself is one instance of it, not the subject.
 
 The practical question the model exists to answer: *given a convention
 sitting in a project, how does it reach the agent that is supposed to
-follow it?* — §8, §9, and ADR-0012.
+follow it?* — §8, §9, and HANDBOOK ADR-0012.
 
 ## 2. Components
 
@@ -86,13 +87,13 @@ Entry files loaded at session start, before the first task.
 - **Fidelity:** space is scarce here, so rules arrive compressed — and
   compression loses parts (§12 M1). The binding can lose parts too:
   what the tool loads is not always the file on disk (§10 says what
-  one tool drops; ADR-0036).
+  one tool drops; HANDBOOK ADR-0036).
 - **Ownership:** the project's text, or one operator's. An operator's
-  standing file fires and costs like the entry file but belongs to
-  one person and one checkout, stays out of the repo's history, and
-  its words never enter records (ADR-0035). Repeated use of it for a
-  rule that would be true in any project is the told diagnostic
-  below, parked rather than fixed.
+  standing file fires and costs like the entry file but belongs to one
+  person and one checkout, stays out of the repo's history, and its
+  words never enter records (HANDBOOK ADR-0035). Repeated use of it for
+  a rule that would be true in any project is the told diagnostic below,
+  parked rather than fixed.
 - **Suits:** orientation and routing. Where to look, what kind of repo
   this is, what must never happen — if it is short.
 
@@ -156,25 +157,36 @@ committed template.
   self-enforcing when acting on the artifact is what puts the rule in
   front of you — the rule for filling in `PLAN.md` sits inside
   `PLAN.md`, so it cannot be skipped without opening the file it
-  governs. No trigger is needed because the act is the trigger. This
-  is how a text convention can be installed at all (ADR-0004,
-  ADR-0015): `.gitignore` is self-enforcing by mechanism; a stub with
-  its rules in comments is self-enforcing by placement, and only
-  while the comments stay in the file. It covers the act, not the
-  decision to act: a record's format travels this way, its timing
-  cannot (ADR-0018).
+  governs. No trigger is needed because the act is the trigger. This is
+  how a text convention can be installed at all (HANDBOOK ADR-0004,
+  HANDBOOK ADR-0015): `.gitignore` is self-enforcing by mechanism; a
+  stub with its rules in comments is self-enforcing by placement, and
+  only while the comments stay in the file. It covers the act, not the
+  decision to act: a record's format travels this way, its timing cannot
+  (HANDBOOK ADR-0018).
 
 ## 5. The context window
 
 - **Finite.** Everything in it competes with everything else.
-- **Undifferentiated.** Once text arrives, *its channel of origin is
-  not marked.* A rule from the entry file and a rule from a file read
-  mid-task are the same kind of object.
+- **Undifferentiated within a role.** Once text arrives, *its channel
+  of origin is not marked.* A rule from the entry file and a rule from
+  a file read mid-task are the same kind of object.
 
-  Consequence: **no channel carries authority.** "The entry file
-  overrides the convention" has no mechanism to run on — the agent sees
-  two statements, not two ranks. Precedence must be resolved before
-  text reaches the window, by not writing the rule twice.
+  Consequence: **no file carries authority over another.** "The entry
+  file overrides the convention" has no mechanism to run on — the
+  agent sees two statements, not two ranks. Precedence between files
+  must be resolved before text reaches the window, by not writing the
+  rule twice.
+
+- **Roled above that.** The harness does mark three things apart —
+  its own wiring, the prompt, and what tools return — and an agent
+  weighs them in that order: a rule in the prompt beats the same rule's
+  contrary in a file, and a file's rule holds only until the prompt
+  says otherwise (§12 W2). Every file, ambient or pulled, sits in the
+  lowest role. So a rule that rests on a fact of the session — a
+  reviewer is present, a repo is out of bounds — cannot live in a file
+  alone: the file cannot know the session, and the prompt outranks it.
+  It is told, every session, by design (§8).
 
 - **Ordered, not prioritised.** Position is not rank.
 
@@ -204,7 +216,7 @@ the outcome (§12 G1).
 ## 8. Choosing a channel
 
 The design decision a convention author makes, and until now made
-implicitly. Recorded per convention (ADR-0012).
+implicitly. Recorded per convention (HANDBOOK ADR-0012).
 
 | The rule is… | Channel | Because |
 |---|---|---|
@@ -213,7 +225,8 @@ implicitly. Recorded per convention (ADR-0012).
 | long, precise, occasionally needed | **pulled** | fidelity matters more than presence |
 | bound to a specific action | **pushed** | present at the moment, without initiative |
 | must never be violated | + **gate** | §7 |
-| stated by a human repeatedly | — | a convention is missing, or its channel is not firing |
+| resting on a fact of this session | **told**, every session | a file cannot know the session, and the prompt outranks it (§5) |
+| stated by a human repeatedly, and true of any project | — | a convention is missing, or its channel is not firing |
 
 A rule placed in two channels is not twice as reliable. It is one rule
 with two texts that can disagree (§5).
@@ -222,7 +235,7 @@ with two texts that can disagree (§5).
 
 Stated by each convention for itself: `delivery` in the frontmatter
 of its `CONVENTION.md`, with the reasoning in a **Delivery** section
-below (ADR-0012, ADR-0013). Read it there.
+below (HANDBOOK ADR-0012, HANDBOOK ADR-0013). Read it there.
 
 A worked table stood here until every convention carried its own
 statement, at which point the two disagreed on two of five rows.
@@ -250,25 +263,25 @@ Sketch, Claude Code:
 Hooks appear twice: some inject context (pushed), others block (gate).
 One mechanism, two roles — a binding has to say which.
 
-Memory files arrive without their HTML comments. The loader drops
-every `<!-- … -->` block before the text enters context, so a comment
-in an entry file is never ambient: it reaches the agent only when the
-file is opened with a tool, which for the entry file is edit time
-(ADR-0036). Observed on 2.1.260 through 2.1.263; a later version may
-differ. The same loader honours `claudeMdExcludes` in `settings.json`,
-globs against the absolute path, which is how a template entry file
-kept inside a repo stays out of its sessions.
+Memory files arrive without their HTML comments. The loader drops every
+`<!-- … -->` block before the text enters context, so a comment in an
+entry file is never ambient: it reaches the agent only when the file is
+opened with a tool, which for the entry file is edit time
+(HANDBOOK ADR-0036). Observed on 2.1.260 through 2.1.263; a later
+version may differ. The same loader honours `claudeMdExcludes` in
+`settings.json`, globs against the absolute path, which is how a
+template entry file kept inside a repo stays out of its sessions.
 
 A permission rule is a gate only in a mode that honours it; a mode
 that bypasses prompts skips `ask`. The gate is the tool's, not the
-repo's (ADR-0035).
+repo's (HANDBOOK ADR-0035).
 
 Skills appear twice as well, and neither time under pushed. Claude
 Code loads a skill's `name` and `description` at session start and
 its body only when the agent invokes it: an ambient trigger over a
 pulled body. The agent still decides, and pushed promises it does
 not (§4). A skill is still the closest this tool gets to pushed for a
-rule about an action; a hook closes the remainder (ADR-0015).
+rule about an action; a hook closes the remainder (HANDBOOK ADR-0015).
 
 `.claude/rules/` holds instruction files like `CLAUDE.md`, with one
 extra: a `paths:` list at the top. Without it, the file is read every
@@ -344,8 +357,8 @@ fire when it should (silence, indistinguishable from having no rule).
 two disagreeing copies of a rule to be noticed unless something
 compares them.
 - `partially evidenced` — the three-place hygiene update (devlog k) was
-  caught by hand, as ADR-0008 predicted. Not yet observed: a *missed*
-  divergence.
+  caught by hand, as HANDBOOK ADR-0008 predicted. Not yet observed: a
+  *missed* divergence.
 - *Refuted by:* an agent flagging a stale copy unprompted.
 
 ### On the context window
@@ -353,9 +366,20 @@ compares them.
 **W1 — Conflict fails silently.** Faced with two conflicting rules, an
 agent resolves one and proceeds rather than reporting the ambiguity.
 - `assumed` · *Refuted by:* halting to ask which rule wins.
-- The *precedence* half of this is no longer a claim: §5 makes it
-  structural — channel of origin is not marked, so a stated precedence
-  has nothing to run on.
+- The *precedence* half of this is no longer a claim between files:
+  §5 makes it structural — channel of origin is not marked, so a
+  stated precedence has nothing to run on. Between roles it is W2.
+
+**W2 — Roles rank.** Text in the harness's own wiring outranks the
+prompt, which outranks anything a tool returned — so a file's rule
+loses to a contrary rule in the prompt, and a told rule exists only
+in the session it was told to.
+- `evidenced` · three runs of the CbC pure seed, reported 2026-09-10:
+  a change-plans stop skipped on an instruction the prompt never gave;
+  a checkout opened because the prompt's "stay inside this repository"
+  had not fired yet while the run's own procedure named a checkout on
+  disk. *Refuted by:* an agent holding a file's rule against a prompt
+  that contradicts it.
 
 ### On persistence
 
@@ -392,11 +416,11 @@ check outside the text can.
 
 | Status | Claims |
 |---|---|
-| evidenced | A1, M1, M2, G1 |
+| evidenced | A1, M1, M2, G1, W2 |
 | partially evidenced | O1 |
 | assumed | A2, P1, P2, U1, W1, S1 |
 
-Six of eleven remain assumed. **P2** decides router versus rulebook;
+Six of twelve remain assumed. **P2** decides router versus rulebook;
 the field test (Step 9) is what resolves it.
 
 Note that **installed** carries no claims. It is the only delivery that

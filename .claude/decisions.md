@@ -280,3 +280,40 @@
   Why: the line is the hygiene base's now (their ADR-0035), and a
   checkout here may hold the operator's file.
   Rejected: none.
+
+- 2026-09-11 Pinned copies updated to the handbook @ ab916a1 (were
+  @ af16eb7): the four skill copies — commit-messages, change-plans,
+  artifact-kinds, convention-lifecycle — and both models,
+  docs/models/agent.md and tiers.md (tiers moves for the first time
+  since the birth pin). Compare-first ran clean: each skill copy
+  byte-identical to the kit at af16eb7, each model identical below
+  its header; no local edits, overwrite silent-safe. What moved:
+  every citation in the copies and the models reads HANDBOOK
+  ADR-nnnn (their ADR-0037 — a reference to another repo's decision
+  carries that repo's tag; a bare number is the reader's own);
+  commit-messages' delivery is pushed with no gate, the stop being
+  the sentence alone (their ADR-0035, decision 1 withdrawn — the
+  kit ships no settings file); change-plans §6 names no settings
+  file; convention-lifecycle §6 states the tag rule as the general
+  case its stub rule was the special case of, and §8 step 2 says a
+  convention required since the pin that the project was born
+  without lands as a first injection in the same pass — what this
+  repo did on 09-09; artifact-kinds' exemplar lines name their
+  document by the role it holds for the reader; the agent model's
+  window carries roles — the harness's wiring, the prompt, and tool
+  results, weighed in that order, so a rule resting on a fact of the
+  session is told every session by design (§5 corrected, §8's row,
+  claim W2 evidenced by our three runs); the tiers model's §3
+  rewritten from our five in four paragraphs, the told channel named
+  for what it is — unpinned by design, not a third form — and the
+  DRAFT note re-dated. The chain check (§8 step 2):
+  convention-lifecycle requires agent-arrangement, held here @
+  af16eb7 by installed delivery; its update at ab916a1 lands by that
+  path, project side first, in this change set (CHANGE-PLAN.md,
+  commits 5 and 7). The tag rule's project-side consequence — this
+  repo's own tag, and the bundle's citations — is a decision of this
+  repo, ADR-0020, in the same set.
+  Why: the reply of 2026-09-10 was written against ab916a1's state,
+  and the registry must name the hash the records are at (§8 step
+  4's warning, lived here on 09-07).
+  Rejected: none — no copy carried a local edit.
