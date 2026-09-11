@@ -22,7 +22,14 @@
      and scope verdicts with recommendation and reason.
      Harvested 2026-08-29, same node: step 6 named as three
      passes — sort, dedupe, folds — each with its test and its
-     record. -->
+     record.
+     Harvested 2026-09-11 from never-oversold (run 3 of the pure
+     seed) Step 3, read read-only (CBC ADR-0007): step 2's census
+     states the runtime ground under its own label beside the trust
+     list — the machine, a stranger's clean machine, plural
+     instances, the store as a service, the clock — so the ground's
+     readiness check reads it at framing; both runs that hit the
+     check wrote the block later by a dated revision. -->
 
 # CbC framing workflow — layering the system
 
@@ -150,6 +157,20 @@ defended"**, sitting *beside* the facts, never replacing them. Each
 line is a deliberate acceptance a reviewer can challenge ("the store
 durably holds a commit it acknowledged"). Kept short; the moment it
 grows easier to extend than the fact list, it has become the trap.
+
+Also allowed, and required by the ground that follows: a second
+short block under its own label, **"The runtime ground"** — what the
+system assumes about where it runs, stated so the ground is derived
+from need rather than habit: the machine (one local machine, or
+not); a stranger's clean machine, if the system must stand up from
+one by the README's commands; whether more than one instance of our
+process runs on that machine — a fact, not a deployment choice, when
+a census line races them; the store as a service on that machine,
+reachable by every instance and outliving any of them — what it is
+stays the ground's decision; the clock as the machine's, shared by
+the instances unless the evidence skews it. Five lines, not a
+design. The ground's readiness check reads this block first; both
+runs that framed without it wrote it later by a dated revision.
 
 **The probe machinery — how saturation is earned.** The enumeration
 ran on one lens (actors × three negations), which only finds facts
