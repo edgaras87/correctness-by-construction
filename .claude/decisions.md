@@ -317,3 +317,34 @@
   and the registry must name the hash the records are at (§8 step
   4's warning, lived here on 09-07).
   Rejected: none — no copy carried a local edit.
+
+- 2026-09-11 Convention updated: agent-arrangement @ ab916a1 (was
+  @ af16eb7). The installed compare, kit stub against kit stub
+  across the span: the entry-file stub and the decisions-log stub
+  unchanged; the kit's .claude/settings.json deleted — the commit
+  gate left the kit (their ADR-0035, decision 1 withdrawn, on run
+  3's report that every reader of the note opts out before running
+  under it), and §3 now describes the file as one a project adds
+  when it needs a gate or an exclude. Nothing lands: this repo
+  never held the file (rejected 2026-09-09, the same reading), so
+  what was a local rejection is now the kit's own state. The
+  starter README's two tables lose the file's rows; no project
+  text here named it.
+  Why: the pin must name the hash the records are at; the entry
+  records that the rejection needs no restating.
+  Rejected: none.
+
+- 2026-09-11 Convention updated: project-recording @ ab916a1 (was
+  @ af16eb7). The installed compare across the span: one stub
+  changed, README's — the decisions row gains "cited from other
+  repos as `<TAG> ADR-nnnn`" (their ADR-0037; §3 states the rule,
+  §7 names the slot). Carried project-side in 919dc9a with the tag
+  filled, CBC (ADR-0020); the README fill follows the stub with
+  `<TAG>` literal (aa5a1a5). PLAN, TODO, CHANGELOG, devlog
+  and ARCHITECTURE stubs unchanged.
+  Why: the row is where a repo declares its tag, and the reply
+  asked for the declaration.
+  Rejected: none.
+  repo-hygiene verified unchanged across af16eb7..ab916a1 (the
+  reply says so; the kit's three base files show no diff); pin left
+  as is, the tiers precedent of 09-09.
