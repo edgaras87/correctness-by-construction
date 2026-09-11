@@ -32,11 +32,14 @@
 - Nothing in concept/ moved: no CHANGELOG entry, no ADR, no concept
   version. Runs 1 to 3 hold their copies at their pins.
 
-Resume: close the set. Then nothing is owed here until run 3 closes
-Step 4 (cbc-bootstrap), read at its boundary as the others were; the
-sixth handoff accrues in TODO with no trigger set. The user carries
-the Step 2 hand-back line's fate — told or not — and the Step 4
-opening in the run.
+Resume: the set is closed (8379781); the tree is clean, 21 commits
+today in three sets — the reading, the reply absorbed, the harvest.
+Nothing is owed here until run 3 closes Step 4 (cbc-bootstrap), read
+at its boundary as the others were; the sixth handoff accrues in
+TODO with no trigger set. The user carries the Step 2 hand-back
+line's fate — told or not — and the Step 4 opening in the run. Runs
+1 to 3 hold their copies at their pins; a re-pin, each run's own
+act, brings the tagged citations and the six fixes.
 
 ## 2026-09-11, later  (the fifth reply absorbed; the kit at ab916a1; the CBC tag)
 
