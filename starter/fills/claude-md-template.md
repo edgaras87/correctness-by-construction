@@ -40,15 +40,32 @@
      copy's own guard comment, read at authoring time — a line
      here is loaded by every future project on every task and is
      rarely pruned once shipped; the three tests and the screen
-     budget bind this file harder than any live copy. -->
+     budget bind this file harder than any live copy.
+     Harvested 2026-09-12 from never-oversold (run 3 of the pure
+     seed) Step 4, read read-only (CBC ADR-0007): the orientation's
+     state clause — "nothing to build, no tests, no runtime" —
+     dropped, and a standing comment says why. The clause came
+     from the kit's stub; the run rewrote it at two step closes
+     and missed the third, so "no code yet" stood on its main with
+     seven tests green. Its own fix: a line about current state
+     has a moment and stales at every step — the entry file states
+     only what never changes, and current state is PLAN's by the
+     records table (agent-arrangement's test 2). The kit's stub
+     carries the same clause; that is the handbook's, through the
+     sixth handoff. -->
 
 # <working-name>
 
 A backend service to be built by correctness-by-construction —
 the design derived from one falsifiable promise, what must never
-happen first, features last. Until the briefing brings the
-problem, this repo is method and records, ready to start:
-nothing to build, no tests, no runtime.
+happen first, features last. The problem arrives with the
+briefing.
+
+<!-- This paragraph states only what never changes: the method,
+     the problem once the briefing names it, its framing date. No
+     current state — a state clause has a moment and stales at
+     every step's close; where the project stands is PLAN's, by
+     the records table. -->
 
 ## Correctness by construction
 
