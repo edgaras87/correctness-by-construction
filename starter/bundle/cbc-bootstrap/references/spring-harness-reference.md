@@ -28,7 +28,13 @@
      Harvested 2026-09-12, same run (CBC ADR-0007): §1's bound
      facts state the Boot 4 Flyway split — the engine alone on the
      test classpath runs no auto-configuration, so the harness's
-     own call is the only migration path in tests. -->
+     own call is the only migration path in tests.
+     Harvested 2026-09-12, same run (CBC ADR-0007): §3 gains a
+     third test, lived once — the runtime identity attempting DDL
+     in the miniature, refused with the ground's own message; the
+     assertion on the root cause, since Spring wraps the driver's
+     error. Code, not prose: the trap is in the three lines'
+     shape. -->
 
 # Spring harness reference — the recurring artifacts, as code
 
@@ -70,7 +76,7 @@ major version.
 |---|---|---|
 | `DatabaseIT` | test | one container per test JVM as a faithful miniature of the ground; migrations harness-side as migrator; the context connects as runtime |
 | `WebDatabaseIT` | test | the evidence tier: random-port HTTP server over the same database |
-| `MigrationPathIT` | test | the migration path proven, not assumed; the connection identity asserted |
+| `MigrationPathIT` | test | the migration path proven, not assumed; the connection identity asserted; the authority split witnessed by a refused DDL |
 | probe endpoint | **main** | one identity round-trip through the real door — scaffolding, dies at the first slice |
 | contention probe | test | many requests released at one instant, all asserted |
 
@@ -239,7 +245,9 @@ public abstract class WebDatabaseIT extends DatabaseIT {
 ## 3 · The migration-path test
 
 **Outcome** (stage 4): the migration path **proven, not assumed** —
-and, riding on it, the connection identity asserted.
+and, riding on it, the connection identity asserted and the
+authority split witnessed: the runtime identity cannot change
+structure in the miniature, refused with the ground's own message.
 
 ```java
 package <base-package>;
@@ -250,6 +258,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.simple.JdbcClient;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 /**
  * Proves the migration path rather than assuming it: even a
@@ -285,6 +294,16 @@ class MigrationPathIT extends DatabaseIT {
                 .query(Integer.class).single();
         assertThat(applied).isZero();
     }
+
+    @Test
+    void theRuntimeIdentityCannotChangeStructure() {
+        // the ground's first refusal, held in the miniature; the store's
+        // message sits at the root of Spring's translated exception
+        assertThatThrownBy(() ->
+                jdbc.sql("CREATE TABLE <project_schema>.t (i int)").update())
+                .rootCause()
+                .hasMessageContaining("permission denied for schema <project_schema>");
+    }
 }
 ```
 
@@ -300,6 +319,14 @@ class MigrationPathIT extends DatabaseIT {
   identity. It costs three lines and catches a harness quietly wired
   as the wrong identity — the exact failure the miniature exists to
   prevent.
+- **The refused DDL witnesses the authority, not only the identity**
+  (lived once, run 3): a miniature wired as the right name but
+  without the split — the grants missing, the bootstrap SQL not
+  mounted — passes the identity assertion and fails here, with the
+  ground's own message. Its trap is in the shape: Spring translates
+  the driver's error and wraps it, so the message sits on the **root
+  cause**, not the thrown exception — assert there, or the test is
+  red for the wrong reason.
 
 ## 4 · The probe pair
 
