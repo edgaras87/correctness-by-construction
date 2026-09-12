@@ -40,7 +40,10 @@
      health tells. Recall item 11.
      Harvested 2026-09-12, same run (CBC ADR-0007): stage 4's
      harness bullet — the Flyway engine enters, not Boot's Flyway
-     module. -->
+     module.
+     Harvested 2026-09-12, same run (CBC ADR-0007): stage 2's
+     rename trap says when it bites — Initializr on Boot 4 already
+     emits the new names. -->
 
 # Spring Boot bootstrap walkthrough — outcomes and lived traps
 
@@ -95,7 +98,8 @@ announces **Java 21** (align IDE and terminal JDK if not); health UP.
 **Traps:**
 - Boot 4 renames the web starter to the web-MVC name, and pairs runtime
   starters with `-test` companions (state the pairing rule once as a pom
-  comment).
+  comment). Initializr on Boot 4 already emits both, so the trap bites
+  when a pom is written or translated by hand, not when it is generated.
 - A `4.x.y.RELEASE`-style coordinate does not resolve on this line — the
   version is plain `4.x.y`.
 
