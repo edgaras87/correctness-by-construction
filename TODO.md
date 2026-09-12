@@ -8,7 +8,25 @@
 
 ## Now (current plan step)
 
-- [ ] Harvest run 3's Step 4 into cbc-bootstrap (2026-09-12,
+- [x] DONE 2026-09-12, change-plan 7652e2c..close — nine fixes
+      after the run's own re-read added one and retargeted one
+      (df39fbe), in the run's wording, one harvest line per change
+      per file (CBC ADR-0007), pins untouched: the Ryuk trap and
+      template true for Testcontainers 2.x (7531281); Stage 2
+      naming no directory (2a74d1c); the machinery proof across
+      processes — Stage 1 reading the instance count, stage 5's
+      condition and lived realization, variation point 8 in prose
+      (d20d0a6); the missing secret — stage 3's trap and recall
+      11, Stage 1's fail-fast exclusion, the README template's
+      symptom line (3727c59); the Boot 4 Flyway split (c5ecf97);
+      the refusal test in the miniature, as code, lived once
+      (3d82e33); the application template reading POSTGRES_PORT
+      (9bdd33a); the rename trap saying when it bites (57f2fd7);
+      the entry-file fill stating no current state, with a
+      standing comment — fix 8 retargeted from the skill's Stage 5
+      to the fill on the run's answer (cde0e97). Run 3's copies
+      stay at their pin; a re-pin is its act. Original item:
+      Harvest run 3's Step 4 into cbc-bootstrap (2026-09-12,
       read from its TODO's two hand-offs, its devlog and its
       delivered files; every finding confirmed at the master; one
       change-plan, harvest lines per CBC ADR-0007, pinned copies
@@ -670,7 +688,19 @@
       beside the README projection (CBC ADR-0013's shape) — fix 8
       of the Step 4 harvest in Now. The kit owns the file's shape;
       its opening line's truth is the run's, and the moment is the
-      skill's. Evidence for the sixth handoff.)
+      skill's. Evidence for the sixth handoff.
+      Reversed later the same day on run 3's own fix, the user's
+      call: the run dropped the state clause outright — a line
+      about current state has a moment and stales at every step;
+      the entry file states only what never changes, current
+      state is PLAN's by the records table. Stronger than making
+      the line true at each close, so fix 8 landed in our fill
+      (cde0e97): the clause gone, a standing comment beside the
+      paragraph saying why. No skill names the entry file. The
+      kit's stub carries the same clause, and agent-arrangement's
+      test 2 has its instance — both the handbook's, in the sixth
+      handoff. The bootstrap half of this watch is answered; the
+      establish half stays open for the next run.)
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
@@ -901,7 +931,15 @@
       the pace in no record; no handbook read); three subjects
       over 50 again; and the newborn did not update its entry
       file's opening line at bootstrap — the watch item under
-      Later holds the evidence and the open question.
+      Later holds the evidence. Two fold-backs from it for the
+      kit: the CLAUDE.md stub's orientation carries a state
+      clause ("nothing to build, no tests, no runtime") that a
+      born project rewrites at every step close until it misses
+      one — the stub should state only what never changes, with
+      current state PLAN's by the records table; and
+      agent-arrangement's test 2 gains a lived instance, a line
+      with a moment that went where the moment is. Our fill took
+      the cut 2026-09-12 (cde0e97).
 
 - [ ] After the absorb change-plan closes, two user observations
       (2026-09-04), raised mid-set and parked deliberately:
@@ -1115,7 +1153,11 @@
       in the safe-reservations node's projection model
       (2026-08-30) but never lived by a run of ours. Harvest when
       a run first reaches the milestone that fires it.
-- [ ] checkout-system reads the db port as CHECKOUT_DB_PORT while
+- [x] DONE 2026-09-12 (9bdd33a, the Step 4 harvest): the
+      application template reads POSTGRES_PORT, the key the env
+      and compose templates name. checkout-system's own pair is
+      its own to fix. Original item:
+      checkout-system reads the db port as CHECKOUT_DB_PORT while
       its .env.example names POSTGRES_PORT — two env keys for one
       fact, found at template extraction. If it is a defect, fix it
       in the run first, then harvest; the templates carry it as

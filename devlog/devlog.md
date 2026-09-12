@@ -6,6 +6,45 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-12, later  (run 3's bootstrap harvested into the bundle; the fill's state clause cut)
+
+- The harvest change-plan (7652e2c): nine fixes from run 3's Step 4
+  into cbc-bootstrap's skill, walkthrough, harness reference and
+  three templates, and one into the entry-file fill — each in the
+  run's wording, one dated harvest line per change per file (CBC
+  ADR-0007). Revised once before work began (df39fbe): run 3 had
+  re-read the skill after its merge and filed four hand-offs, three
+  matching planned fixes and one new — the refusal test in the
+  miniature, which enters the reference as code, lived once, since
+  its trap (assert on the root cause) is in the three lines' shape;
+  the forked-instance shape enters as prose, a variation point,
+  until a second run lives it.
+- The morning's call on the entry file reversed on the run's own
+  fix, the user's word: not "the skill makes the line true at each
+  close" but "no state line at all" — the run dropped the clause,
+  current state being PLAN's by the records table. So the fix
+  landed in our fill, not the skill: the orientation states only
+  what never changes, a standing comment beside it says why, and
+  the kit's stub with the same clause goes to the handbook through
+  the sixth handoff, with agent-arrangement's test 2 gaining its
+  instance.
+- Verified here rather than taken from the report: the Ryuk key,
+  against the Testcontainers 2.0.5 jar — the properties file reads
+  only the ryuk.container.* keys; the switch is the environment
+  variable.
+- Nothing in concept/ moved: no CHANGELOG entry, no ADR, no concept
+  version. Runs 1 to 3 hold their copies at their pins; run 3's two
+  bootstrap hand-offs and the four from its re-read are all
+  answered at the master, its own TODO items its to close at a
+  re-pin.
+
+Resume: the set closes on the word. After it, nothing is owed here
+until run 3 closes Step 5 (SL-1, cbc-slice), read at its boundary
+as the others were — its Stage 0 is where v2's two un-derived
+items (the deliberate break, the R1–R6 record) get their reading.
+The sixth handoff accrues in TODO with no trigger set; the
+establish half of the entry-file watch stays open for the next run.
+
 ## 2026-09-12  (run 3's Step 4 read: the bootstrap; the gates reading; the trials held; eight for the bundle)
 
 - Run 3 closed Step 4 Skeleton & bootstrap on step-4-bootstrap,
