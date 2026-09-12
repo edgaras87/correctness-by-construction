@@ -21,7 +21,13 @@
      Re-derived 2026-08-29: stage 1 carries the application-
      structure decision beside the stack decision, routed to
      app-structure.md — the decision surface: lived default,
-     decision rule, vocabulary of unlived alternatives. -->
+     decision rule, vocabulary of unlived alternatives.
+     Harvested 2026-09-12 from never-oversold (run 3 of the pure
+     seed) Step 4, read read-only (CBC ADR-0007): stage 4's Ryuk
+     trap and recall item 6 rewritten for Testcontainers 2.x — the
+     properties file reads no disable key, Ryuk ran unmodified
+     under rootless podman 5.8, and the switch for a host where it
+     fails is the environment variable. -->
 
 # Spring Boot bootstrap walkthrough — outcomes and lived traps
 
@@ -114,9 +120,17 @@ enable the user socket unit, point the library at it.
 1. `~/.testcontainers.properties` binds **only from `$HOME`** — never the
    project root (lived as a long "no valid Docker environment" hunt).
    Copy-and-fill: `templates/testcontainers.properties`.
-2. Ryuk misbehaves under rootless podman; disabling it is the accepted
-   trade — a hard-killed test JVM can strand a throwaway container,
-   cleaned with `podman ps` / `rm -f`.
+2. Ryuk, the library's reaper, runs fine under rootless podman on the
+   Testcontainers 2.x line (lived: podman 5.8, Testcontainers 2.0.5,
+   both throwaways reaped within seconds of the JVM's exit) — keep it
+   on. Older guidance disables it with a `ryuk.disabled=true` line in
+   the properties file; 2.x does not read that key, the line is inert.
+   If Ryuk fails on a host, the switch is
+   `TESTCONTAINERS_RYUK_DISABLED=true` in the environment, never a
+   properties line; a hard-killed test JVM can then strand a
+   throwaway — `podman ps` shows it by image (`postgres:<major>` with
+   a random name, and `testcontainers/ryuk`); remove those and only
+   those with `podman rm -f <name>`.
 3. The socket unit can report *active (listening)* with the socket file
    missing. Active is not enough: stop socket+service user units, start
    the socket again, confirm the file exists.
@@ -205,7 +219,8 @@ at the first slice.
 4. `~/.testcontainers.properties` binds only from `$HOME`.
 5. Podman socket can be *active* with the file missing — restart user
    units, confirm the file.
-6. Ryuk off under rootless podman; accept occasional stranded throwaways.
+6. Ryuk stays on under rootless podman on 2.x; `ryuk.disabled` in the
+   properties file is inert — if it fails, the environment variable.
 7. No dummy baseline migration; the history table is born by a
    zero-migration run.
 8. Flyway is harness-only; at runtime scope it undoes the ground's
