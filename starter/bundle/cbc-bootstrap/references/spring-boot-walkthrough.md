@@ -27,7 +27,13 @@
      trap and recall item 6 rewritten for Testcontainers 2.x — the
      properties file reads no disable key, Ryuk ran unmodified
      under rootless podman 5.8, and the switch for a host where it
-     fails is the environment variable. -->
+     fails is the environment variable.
+     Harvested 2026-09-12, same run (CBC ADR-0007): stage 5 gains
+     the plural-instance condition and the lived realization —
+     when the definition names more than one instance, the proof
+     is N ≥ 2 instances as separate processes, forked from the
+     build's own output with the runtime classpath the dependency
+     plugin writes before the tests. -->
 
 # Spring Boot bootstrap walkthrough — outcomes and lived traps
 
@@ -198,6 +204,35 @@ never pasted**; read its variation points before writing a line.
 - The probe pair as lived code — endpoint, barrier test, and the
   scheduled-death javadoc — is in `spring-harness-reference.md`, same
   imitate-don't-paste rule.
+- **When the definition's runtime ground names plural instances**, the
+  in-process burst is the cheap first check and does not close the
+  proof: a lock inside the process would make it pass while two real
+  instances still oversell, so it proves a shape nobody runs. The proof
+  is then **N ≥ 2 instances of the system as separate processes** against
+  one store, each addressed through its own door, requests released at
+  one instant across all of them, every response asserted, and the
+  witness read from the store from outside — never through an instance.
+  Only a mechanism in the store, or a protocol every process honours,
+  can pass it. The reference carries the shape as its variation point 8.
+
+**Lived realization (run 3):** the instances are **forked from the
+build's own output** — `target/classes` plus exactly the runtime
+classpath, which the dependency plugin writes to a file at
+`process-test-classes` — because the test phase runs before packaging,
+so an image of the system would need a second command. No test-scope
+code runs inside an instance (verify: the written classpath carries no
+flyway, testcontainers, junit or `-test` artifact). Each instance is
+started with the three environment facts a real instance gets — the
+store's port, the runtime password, its own listen port — and nothing
+else from the harness; its output goes to a log file under `target/`.
+Free ports come from a bound-and-released socket; the up signal is
+health UP with the store's component UP through the instance's own
+door; the harness owns the lifecycle — started before the race,
+closed in `finally`, destroy then forcibly, none left running on a
+failed test. The probe answers its process id beside the identity, so
+the race asserts the pids served are exactly the instances started.
+Traps met: none bit — three instances, 120 requests at one instant,
+no port collision across runs.
 
 **Verified:** the standard test command green.
 

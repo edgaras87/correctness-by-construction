@@ -17,7 +17,11 @@ description: Bootstrap a framed project's system on an established ground - deci
      seed) Step 4, read read-only (CBC ADR-0007): Stage 2 names no
      directory for the requirements document — the path is the
      project's records' to choose; both lived runs used
-     docs/construction/. -->
+     docs/construction/.
+     Harvested 2026-09-12, same run (CBC ADR-0007): Stage 1's
+     proven-adversity bullet reads the instance count from the
+     definition's runtime ground — plural instances there mean the
+     machinery proof crosses the process boundary. -->
 
 # cbc-bootstrap — bring a framed system to life
 
@@ -82,6 +86,11 @@ Reason out and present for confirmation, each with its why:
   words — the promise's named adversity class and the first slice's shape
   (e.g. contention, duplicate delivery). The harness proves the *machinery*
   on that one class alone; every other class is staged at its own slice.
+  Read, too, **from how many instances** the adversity comes: the
+  definition's runtime ground says whether the system runs as more than
+  one instance, and if it does, a single-process pass proves a shape
+  nobody runs — the proof must cross the process boundary (the stack
+  walkthrough's stage 5). Decide it here, by name, with its why.
 - **The initialization identity**: group (the owner's namespace — ask, never
   invent), artifact (the project's name), base package (hyphens dropped),
   packaging, language version.

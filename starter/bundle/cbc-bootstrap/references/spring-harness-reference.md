@@ -17,7 +17,14 @@
      three; the migration-path test joins the set; the probe
      round-trips the identity, not `select 1`; the contention pool
      is sized to the count. The second pass's virtual-threads claim
-     and failOnMissingLocations guard demoted to variation points. -->
+     and failOnMissingLocations guard demoted to variation points.
+     Harvested 2026-09-12 from never-oversold (run 3 of the pure
+     seed) Step 4, read read-only (CBC ADR-0007): variation point 8,
+     the plural-instance shape — lived once, carried as prose until
+     a second run lives it. The "two bases, not three" line above
+     holds for the single-process shape; when the definition names
+     plural instances the store leaves the base for a holder of its
+     own, and the layering is the two bases plus the holder. -->
 
 # Spring harness reference — the recurring artifacts, as code
 
@@ -466,3 +473,25 @@ class ContentionProbeIT extends WebDatabaseIT {
    together.
 7. **Package layout** (`testsupport/`, `probe/`) is the executor's —
    the layering is the outcome, the names are not.
+8. **Plural instances, when the definition names them.** The shape
+   above stages the race inside one test process. If the framing's
+   runtime ground says the system runs as more than one instance,
+   the machinery proof must cross the process boundary (walkthrough,
+   stage 5): a single-process pass proves a shape nobody runs, and a
+   lock inside the process could make it pass. Lived once (run 3,
+   never-oversold), carried here as prose until a second run lives
+   it: the container and the migration lifted out of the database
+   base into a **store holder** of their own, so a test with no
+   application context shares the store — the base keeps only the
+   datasource override, and the layering is the two bases plus the
+   holder; a **process helper** that starts one instance of the
+   build's own output on a free port against the holder's store,
+   waits for its door to answer UP with the store's component UP,
+   and stops it on close; the **probe answering its process id**
+   beside the identity, so the race asserts the pids served are
+   exactly the instances started; and the **race test running no
+   Spring context of its own**, the requests released at one
+   instant round-robin across the instances, the witness read from
+   the store as the runtime identity while the instances are still
+   up. The in-process burst stays beside it as the cheap first
+   check.
