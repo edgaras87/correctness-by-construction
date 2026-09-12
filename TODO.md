@@ -8,6 +8,72 @@
 
 ## Now (current plan step)
 
+- [ ] Harvest run 3's Step 4 into cbc-bootstrap (2026-09-12,
+      read from its TODO's two hand-offs, its devlog and its
+      delivered files; every finding confirmed at the master; one
+      change-plan, harvest lines per CBC ADR-0007, pinned copies
+      untouched until a re-pin). Seven fixes: (1) the Ryuk trap is
+      stale on Testcontainers 2.x — checked against the 2.0.5 jar:
+      the properties file reads only ryuk.container.image |
+      privileged | timeout, the disable switch is the environment
+      variable TESTCONTAINERS_RYUK_DISABLED, and Ryuk reaped both
+      throwaways within seconds under rootless podman 5.8.
+      templates/testcontainers.properties loses the inert
+      `ryuk.disabled` line; the walkthrough's stage 4 trap 2 and
+      recall item 6 read "if Ryuk fails on your host, the
+      variable in the environment", not a properties line. (2)
+      SKILL.md Stage 2 names `internal/construction/…`, a
+      directory neither lived run has — both put the document at
+      docs/construction/ beside the builder's manuals; the stage
+      says "at the path the project's records choose" and names
+      no directory. (3) The reference's concurrency probe is
+      single-process; run 3's definition named plural instances
+      (F17, the intent's done-line), so the machinery proof had
+      to cross the process boundary: the store lifted out of the
+      database base into its own holder (container + migration),
+      the base keeping only the datasource override; a process
+      helper forking the build's own output — `target/classes`
+      plus the runtime classpath the dependency plugin writes at
+      process-test-classes — with the three environment facts a
+      real instance gets and no test-scope code inside; the probe
+      answering its pid beside the identity; the race asserting
+      the pids served are exactly the instances started and
+      reading the witness from the store while they run. The
+      walkthrough's stage 5 gains the condition (when L1 says
+      plural instances, the proof is across processes) and the
+      pom convention the plugin's earning reason; the reference
+      carries the shape as a variation point, its "two bases, not
+      three" line qualified. (4) A missing secret does not stop
+      the app: Boot's binding leaves an unresolvable placeholder
+      as the literal, the app starts with it as the password, and
+      only health (`db` DOWN) tells; the store logs the failed
+      authentication. Stage 3's "Fact:" paragraph gains it, and
+      templates/readme-run-test.md's Run section gains the
+      symptom line run 3 wrote. Whether to refuse to start is a
+      *what* — run 3 decided it at release; the trap says decide,
+      never absorb. (5) The Boot 4 Flyway split: with only
+      `flyway-core` (+ the postgresql module) on the test
+      classpath, no Flyway auto-configuration runs in the app
+      context — the harness's own call is the only migration path
+      in tests; a bound fact for the reference's §1. (6)
+      templates/application.yaml reads `${<PROJECT>_DB_PORT:5432}`
+      while the .env template names POSTGRES_PORT; run 3 lived one
+      key — the template reads POSTGRES_PORT (closes the checkout
+      two-keys item in Later). (7) Initializr on Boot 4 already
+      emits `webmvc` and the `-test` companions; stage 2's rename
+      trap bites only when a pom is written or translated by hand
+      — one clause. (8) The entry file's opening line: run 3 left
+      "no code yet" standing after the bootstrap — the watch item
+      under Later holds the evidence. Decided 2026-09-12, the
+      user's call: the skill carries it, so the next run does it
+      unprompted. Stage 5's exit-records paragraph names the
+      entry file's orientation beside the README projection: a
+      line that states the system's state is made true at this
+      close, "no code yet" being false now. The kit owns the
+      file's shape, not its opening line's truth, so this stays
+      on our side; noted for the sixth handoff. Whether
+      infra-establish's close wants the same clause is decided at
+      the harvest boundary, not assumed.
 - [-] SKIPPED for run 3, 2026-09-11 (see the note at the end;
       held for the next run). Original item:
       Hand-back to run 3 at the Step 2 opening (2026-09-10, the
@@ -590,6 +656,21 @@
       this question survives it: shipped text still leaves mid-run
       fills to the newborn. A costly miss is evidence for a
       harvested skill line.
+      (2026-09-12, run 3's Step 4 reading — the first answer:
+      at bootstrap, no. The entry file's opening line still says
+      "the ground stands, no code yet" after the skeleton, the
+      harness and seven tests landed; Step 3 had rewritten that
+      line, Step 4 edited the file only for the records-table row.
+      No stack fact entered either — README carries the stack and
+      the one test command, so the guard's third test may keep it
+      out; the false line is the miss. At establish, no local rule
+      entered; the miss cost nothing visible. The fix is run 3's
+      own agent commit. Decided the same day, the user's call:
+      cbc-bootstrap's Stage 5 names the entry file's opening line
+      beside the README projection (CBC ADR-0013's shape) — fix 8
+      of the Step 4 harvest in Now. The kit owns the file's shape;
+      its opening line's truth is the run's, and the moment is the
+      skill's. Evidence for the sixth handoff.)
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
@@ -814,7 +895,13 @@
       script in one commit, no header line per file (ADR-0020's
       reasoning); the fills' `<TAG>` left literal for the run to
       fill at its naming — whether the kit's stub should say when
-      a born project fills it is theirs to read.
+      a born project fills it is theirs to read. (c) Run 3's Step 4,
+      read 2026-09-12: the trials held a fourth step (fourteen
+      commits, none straddling; the entry file at .claude/ once;
+      the pace in no record; no handbook read); three subjects
+      over 50 again; and the newborn did not update its entry
+      file's opening line at bootstrap — the watch item under
+      Later holds the evidence and the open question.
 
 - [ ] After the absorb change-plan closes, two user observations
       (2026-09-04), raised mid-set and parked deliberately:
@@ -1033,6 +1120,10 @@
       fact, found at template extraction. If it is a defect, fix it
       in the run first, then harvest; the templates carry it as
       lived.
+      (2026-09-12: run 3 lived one key, POSTGRES_PORT in both
+      .env.example and application.yaml — the Step 4 harvest's
+      fix 6 aligns the template to it; this item closes with that
+      change-plan. checkout-system's own pair is its own to fix.)
 
 - [ ] Watch the first Step 0 walk for stub-vs-manual overlap
       friction: the kit's PLAN Step 0 comment and the handbook's

@@ -6,6 +6,74 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-12  (run 3's Step 4 read: the bootstrap; the gates reading; the trials held; eight for the bundle)
+
+- Run 3 closed Step 4 Skeleton & bootstrap on step-4-bootstrap,
+  fourteen commits, 2026-09-11 → 12, fast-forwarded to main before
+  the reading, as the others were. Read read-only. Spring Boot
+  4.1.1 on Java 21 by fluency and audience (its ADR-0007), the
+  lived default structure after the alternatives were laid out
+  (ADR-0008), the harness racing three forked instances of the
+  build's own output against one throwaway store (ADR-0009 —
+  the one place it left the harness reference, by decision);
+  the requirements certified member by member from the delivered
+  files; seven tests green from a clean build with nothing
+  exported; health UP with the store UP on the real ground as
+  `runtime` and no other identity.
+- The gates reading, Step 4 — derived sixteen vs frozen v2's
+  five: all five covered, most sharper (requirements and ADRs
+  before code, the README commands, the overlay below the
+  marker). Two of v2's not re-derived, both cbc-slice's Stage 0
+  at the next opening — the deliberate break turning the harness
+  red (R5) and the R1–R6 readiness record; nothing to hand back.
+  v2's three warnings all re-derived unaided: the miniature
+  mounts the ground's own bootstrap SQL, surefire widened to
+  `*IT`, the Boot 4 test-client annotation on the web base. The
+  additions trace to the skill's stages, the definition's
+  runtime ground (F17, the intent's own done-line — plural
+  instances, never a sequential replay), and SL-1's clock flag.
+- The four trials held through the step: branch cut at the Step
+  3 close, tip on main by fast-forward, no commit straddling
+  agent and project paths, the entry file edited at .claude/
+  once, no handbook mention in the diff, the pace in no record.
+  Three subjects over 50 (52, 55, 56).
+- Seven findings for the bundle, the run's two hand-offs among
+  them, each confirmed at the master (TODO Now, one harvest
+  change-plan): the Ryuk trap and the properties template are
+  stale on Testcontainers 2.x — checked here against the 2.0.5
+  jar: the properties file reads only the ryuk.container.* keys,
+  the disable switch is the environment variable, and Ryuk
+  reaped fine under rootless podman 5.8; Stage 2's `internal/`
+  path, which neither lived run used (both: docs/construction/);
+  the plural-instance machinery the reference lacks (the store
+  lifted out of the base, a process helper, the probe answering
+  its pid, the runtime classpath written by the dependency
+  plugin so the fork is the real app from the one test command);
+  a missing secret does not stop the app — Boot binds the
+  unresolved placeholder as the literal, health alone tells; the
+  Boot 4 Flyway module split — the engine alone on the test
+  classpath runs no auto-configuration; the application
+  template's port key against .env.example's POSTGRES_PORT (the
+  checkout two-keys item, lived as one key); Initializr on Boot 4
+  already emitting the renamed starters.
+- One miss in the run, the TODO watch item's answer: the entry
+  file's opening line still says "the ground stands, no code
+  yet" — Step 3 rewrote that line, Step 4 touched the file only
+  for the records row. The fix is the run's own agent commit.
+  The user's call at the reading: the skill carries the moment,
+  so the next run does it unprompted — cbc-bootstrap's Stage 5
+  names the entry file's opening line beside the README
+  projection, fix 8 of the harvest. The kit owns the file's
+  shape, not that line's truth; noted for the sixth handoff.
+- Nothing for the playbook from this step; the branch-rule lines
+  still wait on the trial verdict at the run's retrospective.
+
+Resume: the harvest change-plan for run 3's Step 4 — eight fixes
+across cbc-bootstrap's skill, walkthrough, reference and three
+templates, harvest lines per CBC ADR-0007, pinned copies
+untouched. Run 3 opens Step 5 (SL-1, cbc-slice) in the run, the user's
+way; back here at its close.
+
 ## 2026-09-11, later still  (run 3's ground harvested into the bundle)
 
 - The harvest change-plan (c6dbd68): six fixes from run 3's Step 3
