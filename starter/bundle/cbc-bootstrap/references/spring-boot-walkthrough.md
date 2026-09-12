@@ -37,7 +37,10 @@
      Harvested 2026-09-12, same run (CBC ADR-0007): stage 3's fact
      gains its flip side — a missing secret does not stop the app;
      Boot binds the unresolved placeholder as the literal and only
-     health tells. Recall item 11. -->
+     health tells. Recall item 11.
+     Harvested 2026-09-12, same run (CBC ADR-0007): stage 4's
+     harness bullet — the Flyway engine enters, not Boot's Flyway
+     module. -->
 
 # Spring Boot bootstrap walkthrough — outcomes and lived traps
 
@@ -164,7 +167,9 @@ enable the user socket unit, point the library at it.
 - **Test-scope capabilities only**: drive a real PostgreSQL container from
   tests; integrate with the Spring test context; run migrations
   **harness-side**. Flyway is a harness tool — at runtime scope it would
-  undo step 3's claim.
+  undo step 3's claim. On Boot 4 the engine enters, not Boot's Flyway
+  module: the engine alone runs no auto-configuration, so the harness's
+  own call is the only migration path (reference, §1).
 - **One container per test JVM**, same major version as the ground,
   started once and shared, lifecycle explicitly the harness's own.
 - **Migration runs immediately after container start, before any app

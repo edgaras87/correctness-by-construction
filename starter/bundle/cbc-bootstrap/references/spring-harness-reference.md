@@ -24,7 +24,11 @@
      a second run lives it. The "two bases, not three" line above
      holds for the single-process shape; when the definition names
      plural instances the store leaves the base for a holder of its
-     own, and the layering is the two bases plus the holder. -->
+     own, and the layering is the two bases plus the holder.
+     Harvested 2026-09-12, same run (CBC ADR-0007): §1's bound
+     facts state the Boot 4 Flyway split — the engine alone on the
+     test classpath runs no auto-configuration, so the harness's
+     own call is the only migration path in tests. -->
 
 # Spring harness reference — the recurring artifacts, as code
 
@@ -176,6 +180,13 @@ public abstract class DatabaseIT {
   different major than the ground's one-shot image — the third pass
   lived 12 against the ground's 11. They never meet: separate
   databases, separate history tables. Noted, accepted.
+- **On Boot 4 the engine enters alone, and that is load-bearing.**
+  Boot 4 moved Flyway's auto-configuration into its own module; with
+  only `flyway-core` and `flyway-database-postgresql` on the test
+  classpath, no auto-configuration runs inside the application
+  context, so the `static` call above is the only migration path in
+  tests — nothing can migrate from inside a context, at any scope.
+  Entering Boot's Flyway module instead would reopen that door.
 - **The filesystem location is deliberate**: `filesystem:` and the
   project's one home, so nothing can drift from a classpath copy.
 
