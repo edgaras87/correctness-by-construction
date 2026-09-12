@@ -12,7 +12,12 @@ description: Bootstrap a framed project's system on an established ground - deci
      Changed 2026-09-03 (CBC ADR-0013): Stage 5 gains the README Run and
      Test projection — the sections (and the stack's Prerequisites
      line) arrive when the harness is real, skeleton in
-     templates/readme-run-test.md. -->
+     templates/readme-run-test.md.
+     Harvested 2026-09-12 from never-oversold (run 3 of the pure
+     seed) Step 4, read read-only (CBC ADR-0007): Stage 2 names no
+     directory for the requirements document — the path is the
+     project's records' to choose; both lived runs used
+     docs/construction/. -->
 
 # cbc-bootstrap — bring a framed system to life
 
@@ -103,8 +108,9 @@ Reason out and present for confirmation, each with its why:
 
 ## Stage 2 — compose the requirements document
 
-Write `internal/construction/bootstrap-requirements.md` (or the project's
-own equivalent path) in the project's language:
+Write `bootstrap-requirements.md` at the path the project's records
+choose — beside the builder's other manuals; both lived runs put it at
+`docs/construction/` — in the project's language:
 
 - §1 the initialization identity
 - §2 the capabilities, each with its why
