@@ -33,7 +33,11 @@
      when the definition names more than one instance, the proof
      is N ≥ 2 instances as separate processes, forked from the
      build's own output with the runtime classpath the dependency
-     plugin writes before the tests. -->
+     plugin writes before the tests.
+     Harvested 2026-09-12, same run (CBC ADR-0007): stage 3's fact
+     gains its flip side — a missing secret does not stop the app;
+     Boot binds the unresolved placeholder as the literal and only
+     health tells. Recall item 11. -->
 
 # Spring Boot bootstrap walkthrough — outcomes and lived traps
 
@@ -114,6 +118,19 @@ grows under its own key, never in the template.
 **Verified:** ground up → app runs, health UP **with the db component UP**.
 Fact: the test run stays green with the ground down — the pool connects
 lazily; degradation shows only in health. Correct, not a gap.
+
+**Trap — a missing secret does not stop the app.** The flip side of the
+same fact, lived: started with nothing exported, the app *starts* —
+Boot's configuration binding leaves an unresolvable `${VAR}` as the
+literal string, so the literal becomes the password; the store logs
+`password authentication failed`, health answers DOWN with the db
+component DOWN, and nothing else says so. Consequences: the plain
+context test needs no environment and no test property (a property
+added "so the placeholder resolves" is dead — verify by removing it);
+and the README's Run section names the symptom. Whether the app should
+refuse to start without its secret is a *what*, not a wiring detail —
+decided at Stage 1 by name (run 3: not at bootstrap, at release), never
+absorbed here.
 
 ## 4. Stand up the evidence harness
 
@@ -264,3 +281,6 @@ at the first slice.
    resolve.
 10. Environment facts notation-neutral — never compose placeholder syntax
     in application config or authored requirement text.
+11. A missing secret does not stop the app — the unresolved placeholder
+    binds as the literal; only health (`db` DOWN) tells. Fail-fast is a
+    *what*, decided by name.

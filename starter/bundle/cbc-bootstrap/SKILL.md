@@ -21,7 +21,11 @@ description: Bootstrap a framed project's system on an established ground - deci
      Harvested 2026-09-12, same run (CBC ADR-0007): Stage 1's
      proven-adversity bullet reads the instance count from the
      definition's runtime ground — plural instances there mean the
-     machinery proof crosses the process boundary. -->
+     machinery proof crosses the process boundary.
+     Harvested 2026-09-12, same run (CBC ADR-0007): Stage 1's
+     exclusions name fail-fast on a missing secret, decided at
+     release unless the run says otherwise — so it is not
+     re-decided mid-set when the trap is met. -->
 
 # cbc-bootstrap — bring a framed system to life
 
@@ -111,7 +115,12 @@ Reason out and present for confirmation, each with its why:
   scaffolding, marked to die at the first slice); no persistence schema (no
   table before its invariant); no other adversity classes; no auth unless a
   slice demands identity at the door; no delivery machinery beyond locally
-  runnable and testable.
+  runnable and testable; **no fail-fast on a missing secret** — lived: the
+  app starts with the unresolved placeholder as its password and only
+  health tells; the only operator at bootstrap is the reviewer, the
+  harness accepts an instance only on health with the store UP, and the
+  release gate's clean-machine test is where a forgotten export becomes
+  a real need — decided there, unless this run decides otherwise by name.
 
 **Gate: the human confirms the decisions before Stage 2.**
 

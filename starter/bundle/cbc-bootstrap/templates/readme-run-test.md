@@ -11,7 +11,11 @@
      command bodies are the lived Spring/Maven shape — a different
      stack writes its own, keeping the shape: Run stands the ground
      up and ends in a proof of life; Test is the one standard test
-     command, with what it really drives stated beside it. -->
+     command, with what it really drives stated beside it.
+     Harvested 2026-09-12 from never-oversold (run 3 of the pure
+     seed) Step 4, read read-only (CBC ADR-0007): Run gains the
+     symptom line — health with db DOWN means the environment was
+     not exported; the app starts regardless. -->
 
 <!-- Into the existing Prerequisites section: -->
 
@@ -30,6 +34,10 @@ set -a; . ./.env; set +a
 ./mvnw spring-boot:run
 # proof of life: curl localhost:8080/actuator/health → status UP, db UP
 ```
+
+If health answers with `db` DOWN, the environment was not exported:
+the system starts anyway and only health tells. Export `.env` in the
+same shell and start again.
 
 ## Test
 
