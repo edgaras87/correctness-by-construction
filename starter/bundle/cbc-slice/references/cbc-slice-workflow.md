@@ -14,7 +14,11 @@
      justification puts the candidate owners in front of the
      signer as a comparison, the way an ADR presents options.
      Harvested 2026-09-14, same run (CBC ADR-0007): Stage 1's exit
-     asks that every flag on the registry row is answered by name. -->
+     asks that every flag on the registry row is answered by name.
+     Harvested 2026-09-14, same run (CBC ADR-0007): Stage 4's exit
+     is more than a status — the row went to in-progress at the
+     specification, and the close names the provisionals and the
+     hand-ons to later slices. -->
 
 # CbC slice workflow
 
@@ -167,7 +171,19 @@ Record, compactly: the invariant → its guarantees → the owner enforcing
 each → the evidence proving each. This is the slice's visible product — in
 this discipline the guarantee depth, not the feature, is what's on display.
 
-**Exit:** the slice closes in the registry as evidence-closed.
+The registry close is more than a status flip. The row went to
+`in-progress` when the specification landed — the first project-visible
+work — so the registry never read `chosen-next` through a build. At the
+close, the row's entry names what this slice left provisional and what it
+hands to later slices, by name: a wall that already holds part of a later
+invariant, a counter that over-approximates until a later slice ends
+something, a shape a later slice must decide. Then the ordering is
+re-decided with its reason written. This is the step that lets a built
+slice teach that the next expected slice is wrong, split, or unnecessary
+— the registry can only re-decide on what the close wrote down.
+
+**Exit:** the slice closes in the registry as evidence-closed, with its
+provisionals and hand-ons named and the ordering re-decided in writing.
 
 ---
 

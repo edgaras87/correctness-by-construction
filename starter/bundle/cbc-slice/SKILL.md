@@ -27,7 +27,11 @@ description: Work one slice of a correctness-driven backend - take one invariant
      Harvested 2026-09-14, same run (CBC ADR-0007): Stage 1 exits
      only when every flag on the registry row is answered by
      name — staged as its own evidence, or removed by a definition
-     with the removal shown. -->
+     with the removal shown.
+     Harvested 2026-09-14, same run (CBC ADR-0007): the registry
+     row flips to in-progress when the specification lands, and
+     the close names the provisionals and what the slice hands to
+     later slices by name. -->
 
 # CbC slice — one invariant made real
 
@@ -132,6 +136,13 @@ over the code, plant the violation it forbids.
 one's owner → each one's evidence. Close the slice in the registry as
 evidence-closed; the registry re-decides what's next (ordering is
 re-decided at each close, never assumed from the original expectation).
+The close is more than a status: the row's entry names what this slice
+left provisional and what it hands to later slices by name — a wall that
+already holds part of a later invariant, a debt a later slice must pay —
+so the re-decision has its reasons on the page. And the row goes to
+`in-progress` when the specification lands, the first project-visible
+work, not at the close: a registry that reads `chosen-next` through a
+whole build is not the source of truth for what is being worked.
 
 ## Deviations — legal, never silent
 
