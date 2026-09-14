@@ -23,7 +23,11 @@ description: Work one slice of a correctness-driven backend - take one invariant
      owns the surface at its minimum.
      Harvested 2026-09-14, same run (CBC ADR-0007): Stage 2 puts
      the candidate owners in front of the signer as a comparison,
-     the way an ADR presents options. -->
+     the way an ADR presents options.
+     Harvested 2026-09-14, same run (CBC ADR-0007): Stage 1 exits
+     only when every flag on the registry row is answered by
+     name — staged as its own evidence, or removed by a definition
+     with the removal shown. -->
 
 # CbC slice — one invariant made real
 
@@ -85,7 +89,12 @@ hold on paper yet break in fact?") until each distinct answer is a
 strategy-free guarantee. Set evidence criteria per guarantee.
 **Gate: zero mechanisms.** If the spec mentions a lock, constraint, queue,
 key, or any technology — it leaked; park it and restate as a property.
-**Human sign-off on the spec before Stage 2.**
+**And every flag on the registry row answered by name**: a flag says the
+adversity cannot be staged the normal way, so the spec says what its
+evidence is instead — staged as its own evidence, or removed by a
+definition the spec adopts, with the removal shown. A flag left unanswered
+is a warning the slice inherited and dropped. **Human sign-off on the spec
+before Stage 2.**
 
 **Stage 2 — plan.** One structural owner per guarantee, strongest wall
 available: database constraint → type system → single validated entry path

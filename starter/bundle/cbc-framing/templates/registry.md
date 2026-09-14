@@ -19,6 +19,10 @@
      as a table, one row per kill, under a sentence naming L4 the
      master — the reviewer found the arrow list weak on reading it;
      rows are counted, arrows are not.
+     Harvested 2026-09-14 from never-oversold (run 3 of the pure
+     seed) Step 5, read read-only (CBC ADR-0007): the flag-riding
+     slot says what a flag demands of the slice — an answer by
+     name in its specification.
      Fill every <angle> slot; delete
      the guidance lines. Declining this template is off-template:
      the outcomes in the skill's export section still bind — derive
@@ -54,7 +58,8 @@ Status values: `open` · `chosen-next` · `in-progress` ·
   evidence>
 - **Flag riding:** <only if the adversity cannot be staged the normal
   way — name the unusual evidence shape here, so the consumer
-  inherits the warning, not the surprise>
+  inherits the warning, not the surprise; the slice answers it by
+  name in its specification, staged or removed with the removal shown>
 - **Presumes:** <what must already stand, or "nothing">
 - **Judgment logged:** <only when a cut decision could be questioned
   — e.g. why this and SL-n are two slices sharing one adversity class>

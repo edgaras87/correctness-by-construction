@@ -12,7 +12,9 @@
      the opening; Stage 2 gains the surface at its minimum.
      Harvested 2026-09-14, same run (CBC ADR-0007): Stage 2's
      justification puts the candidate owners in front of the
-     signer as a comparison, the way an ADR presents options. -->
+     signer as a comparison, the way an ADR presents options.
+     Harvested 2026-09-14, same run (CBC ADR-0007): Stage 1's exit
+     asks that every flag on the registry row is answered by name. -->
 
 # CbC slice workflow
 
@@ -77,9 +79,13 @@ alternatives are never weighed against the actual requirement.
    its adversity and show survival? Named now, built in stage 3.
 
 **Exit:** a **correctness spec** — invariant → guarantees → evidence
-criteria, plus the adversity model. **Gate: zero mechanisms.** If the spec
-mentions a lock, a constraint, a queue, or any technology — it has leaked;
-park the mechanism and restate as a property.
+criteria, plus the adversity model — and every flag the registry row
+carries answered by name: a flag means the adversity cannot be staged the
+normal way, so the spec says what its evidence is instead, staged as its
+own evidence or removed by a definition the spec adopts, with the removal
+shown. **Gate: zero mechanisms.** If the spec mentions a lock, a
+constraint, a queue, or any technology — it has leaked; park the mechanism
+and restate as a property.
 
 ## Stage 2 — plan
 
