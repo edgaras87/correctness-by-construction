@@ -2,7 +2,11 @@
      (CBC ADR-0003). Provenance — archive/cbc/system-design-method
      birth-materials/.claude/skills/cbc-slice/references/cbc-slice-workflow.md
      @ fe0075d (imported 2026-08-28, PLAN Step 3). Changes on
-     import: none — verbatim below this header. -->
+     import: none — verbatim below this header.
+     Harvested 2026-09-14 from never-oversold (run 3 of the pure
+     seed) Step 5, read read-only (CBC ADR-0007): Stage 3's gate
+     asks that every evidence test was seen red with its wall
+     absent, recorded from actual output, before it counts. -->
 
 # CbC slice workflow
 
@@ -104,8 +108,21 @@ it defeats the adversity. **Gate: no unowned guarantees.**
    scheme. If the build reveals a missed guarantee, add it to the spec with
    this slice as provenance — guarantees are discovered in flight too.
 
+4. **See it red.** Run each evidence test with its wall absent — in a
+   state that never lands in history — and record the red from actual
+   output;
+   then, with the wall standing, watch the same test, unchanged, go green.
+   How the wall is made absent is the slice's choice: when this slice
+   births the wall, the naive version can land first and the wall be its
+   own diff; when the wall already stands, remove it and restore it; when
+   the wall is a rule over the code, plant the violation it forbids. This
+   is also how a slice answers R5 when readiness had no wall to break —
+   the usual first slice.
+
 **Exit:** all evidence tests pass. **Gate: every guarantee has a test that
-creates its adversity — a green suite of happy-path tests closes nothing.**
+creates its adversity, and was red without the wall — a green suite of
+happy-path tests closes nothing, and a test never seen red proves only
+that it runs.**
 
 ## Stage 4 — document
 

@@ -11,7 +11,12 @@ description: Work one slice of a correctness-driven backend - take one invariant
      Re-derived 2026-08-29: the framing exports' paths — they live
      under docs/system/ as intent.md, definition.md, registry.md
      (cbc-framing's layout re-derivation); the trigger description
-     and R1 updated to match. -->
+     and R1 updated to match.
+     Harvested 2026-09-14 from never-oversold (run 3 of the pure
+     seed) Step 5, read read-only (CBC ADR-0007): R5 at the first
+     slice is answered in the build, not at Stage 0, when no wall
+     exists yet to break; Stage 3's gate asks that every evidence
+     test was seen red with its wall absent. -->
 
 # CbC slice — one invariant made real
 
@@ -38,7 +43,9 @@ Read `references/system-readiness.md` and verify against the actual repo:
    delivery, process-kill for partial failure. Check only what the slice
    needs.
 5. **R5** — the harness can fail (a deliberately broken invariant turns it
-   red).
+   red). When no wall exists yet to break — the usual first slice — R5 is
+   answered in this slice's Stage 3, the gate saying so, not a blocker
+   here.
 6. **R6** — the registry is writable, and the project has an agreed place
    to record deviations and sign-offs (the project decides its own record
    scheme; this skill only requires that one exists).
@@ -82,7 +89,14 @@ cleverness here usually means Stage 1 or 2 was skipped. Build the evidence
 tests: tests that **create** the adversity (hammer concurrently, inject the
 duplicate, kill mid-transaction) and show the invariant surviving,
 guarantee by guarantee. **Gate: every guarantee has an adversity-creating
-test, and all pass. A green happy-path suite closes nothing.**
+test, and all pass — and each was seen red with its wall absent, in a
+state that never lands in history, recorded from actual output, then
+green unchanged once the wall stood. A green happy-path suite closes nothing;
+a test never seen red is not known to be watching.** How the wall is made
+absent is the slice's choice: when this slice births the wall, the naive
+version can land first and the wall be its own diff; when the wall
+already stands, remove it on the working tree; when the wall is a rule
+over the code, plant the violation it forbids.
 
 **Stage 4 — document.** Record compactly: invariant → guarantees → each
 one's owner → each one's evidence. Close the slice in the registry as
