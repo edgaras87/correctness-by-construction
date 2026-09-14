@@ -34,7 +34,13 @@
      in the miniature, refused with the ground's own message; the
      assertion on the root cause, since Spring wraps the driver's
      error. Code, not prose: the trap is in the three lines'
-     shape. -->
+     shape.
+     Harvested 2026-09-14 from never-oversold (run 3 of the pure
+     seed) Step 5, read read-only (CBC ADR-0007): variation point
+     9 states how the evidence asserts on a body — by path for a
+     shape, by type under a shared contract, never by substring;
+     the probe's `.contains` line annotated as the identity
+     witness, not the pattern. -->
 
 # Spring harness reference — the recurring artifacts, as code
 
@@ -427,6 +433,9 @@ class ContentionProbeIT extends WebDatabaseIT {
             for (Future<ResponseEntity<String>> response : responses) {
                 ResponseEntity<String> entity = response.get();
                 assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
+                // a substring is enough here: the body IS the identity
+                // string, not a shape. A real body is asserted by path
+                // (variation point 9), never by substring.
                 assertThat(entity.getBody()).contains("<project>_runtime");
             }
         } finally {
@@ -533,3 +542,17 @@ class ContentionProbeIT extends WebDatabaseIT {
    the store as the runtime identity while the instances are still
    up. The in-process burst stays beside it as the cheap first
    check.
+9. **How the evidence asserts on a body** is a stack convention this
+   file left unsaid, so each run decided by habit. Lived once (run 3,
+   never-oversold): substring first, replaced mid-slice by JSON path
+   — a substring cannot tell `3` from `30`, cannot say a field exists,
+   and cannot say one is absent. The convention, decided before the
+   first slice and held after: **by path for a shape** (a small
+   test-support reader that parses a body once and answers a path —
+   `$.id`, `$.onHandCount` — so a field's value, presence and absence
+   are each one assertion); **by type when a shared API contract
+   exists** (a client type both sides compile against — none exists
+   in a system born from its invariant, so path is the default);
+   **never by substring**, even for a word — an error title is a
+   path too. The probe above is the one exception, and says why in
+   its comment: its body is the identity string itself, not a shape.
