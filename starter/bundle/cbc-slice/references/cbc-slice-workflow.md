@@ -6,7 +6,10 @@
      Harvested 2026-09-14 from never-oversold (run 3 of the pure
      seed) Step 5, read read-only (CBC ADR-0007): Stage 3's gate
      asks that every evidence test was seen red with its wall
-     absent, recorded from actual output, before it counts. -->
+     absent, recorded from actual output, before it counts.
+     Harvested 2026-09-14, same run (CBC ADR-0007): Stage 1 gains
+     the whats the framing does not carry, decided as records at
+     the opening; Stage 2 gains the surface at its minimum. -->
 
 # CbC slice workflow
 
@@ -51,14 +54,23 @@ alternatives are never weighed against the actual requirement.
    crashes/partial failure, reordering. "Correct" is meaningless until you
    say correct *against what*. Same fallback: named directly only when no
    framing exists.
-3. **Run the guarantee challenge.** Attack your own invariant: *"what would
+3. **Name the whats the framing does not carry.** A slice may need
+   answers the framing never gave — how the thing the invariant is about
+   comes to exist at all, the conventions of the door the adversity
+   arrives through, what the first schema holds. The first slice meets
+   most of them. Each is a *what*, decided at the opening as a record with
+   its options, before the specification that depends on it; absorbing one
+   into code is the silent decision this workflow forbids. It is still not
+   a mechanism — "an item becomes known by its first adjustment" names no
+   table.
+4. **Run the guarantee challenge.** Attack your own invariant: *"what would
    let this hold on paper yet be violated in fact?"* Every distinct answer
    becomes a **guarantee** — a strategy-free sub-property that must hold.
    (For the order example: uniqueness of the key; a winner and a loser under
    concurrency; safe replay of the winner's response; correct key scope.)
    Guarantees are **derived by attack, never looked up** — this middle layer
    is the real work; textbook examples skip it.
-4. **Set evidence criteria.** For each guarantee: what test would *create*
+5. **Set evidence criteria.** For each guarantee: what test would *create*
    its adversity and show survival? Named now, built in stage 3.
 
 **Exit:** a **correctness spec** — invariant → guarantees → evidence
@@ -86,9 +98,16 @@ park the mechanism and restate as a property.
 3. **Hunt escape hatches.** Any path that bypasses the wall — an admin
    endpoint, a raw script, a migration — turns the guarantee into fiction.
    Every write path goes through the owner, or the owner is not an owner.
+4. **Name the surface at its minimum.** Only what the guarantees need
+   somewhere to live — the door they are attacked through, the schema
+   the walls stand in, the records the close needs — and nothing beyond.
+   A slice is not a feature: the door exists because the invariant needs
+   one, and anything entering here that no guarantee needs is scope, to be
+   refused or sent back to the registry.
 
 **Exit:** every guarantee has exactly one named owner and a one-line reason
-it defeats the adversity. **Gate: no unowned guarantees.**
+it defeats the adversity; the surface named at its minimum. **Gate: no
+unowned guarantees.**
 
 ## Stage 3 — build
 

@@ -16,7 +16,11 @@ description: Work one slice of a correctness-driven backend - take one invariant
      seed) Step 5, read read-only (CBC ADR-0007): R5 at the first
      slice is answered in the build, not at Stage 0, when no wall
      exists yet to break; Stage 3's gate asks that every evidence
-     test was seen red with its wall absent. -->
+     test was seen red with its wall absent.
+     Harvested 2026-09-14, same run (CBC ADR-0007): Stage 1 names
+     the whats a slice meets that the framing does not carry —
+     decided as records at the opening, never absorbed; Stage 2
+     owns the surface at its minimum. -->
 
 # CbC slice — one invariant made real
 
@@ -67,7 +71,13 @@ Stage 0: ready?  →  1: specify-correctness  →  2: plan  →  3: build  →  
 
 **Stage 1 — specify-correctness.** Take the invariant and adversity **from
 the registry entry and the L1 census, as written** — never re-invent them.
-Run the guarantee challenge: attack the invariant ("what would let this
+A slice may meet **whats the framing does not carry** — how the thing the
+invariant is about comes to exist at all, the door's conventions the
+adversity arrives through, what the first schema holds; the first slice
+meets most of them. Each is decided at the opening, as a record with its
+options, before the specification that depends on it — never absorbed into
+code, and never a mechanism: it is still a *what*. Then run the guarantee
+challenge: attack the invariant ("what would let this
 hold on paper yet break in fact?") until each distinct answer is a
 strategy-free guarantee. Set evidence criteria per guarantee.
 **Gate: zero mechanisms.** If the spec mentions a lock, constraint, queue,
@@ -80,8 +90,11 @@ available: database constraint → type system → single validated entry path
 adversity ("a unique constraint defeats duplicate delivery because the
 second insert cannot physically succeed" — not "we use a unique
 constraint"). Hunt escape hatches: admin paths, raw scripts, migrations
-that bypass the wall. **Gate: no unowned guarantee** — "all the code being
-careful" is the absence of an owner. **Human sign-off on the plan before
+that bypass the wall. Name **the surface at its minimum**: only what the
+guarantees need somewhere to live — the door, the schema, the records —
+and nothing beyond; a slice is not a feature, and what enters here without
+a guarantee needing it is scope. **Gate: no unowned guarantee** — "all the
+code being careful" is the absence of an owner. **Human sign-off on the plan before
 Stage 3.**
 
 **Stage 3 — build.** Implement the enforcement — the code should be boring;
