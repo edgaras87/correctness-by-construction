@@ -9,7 +9,10 @@
      absent, recorded from actual output, before it counts.
      Harvested 2026-09-14, same run (CBC ADR-0007): Stage 1 gains
      the whats the framing does not carry, decided as records at
-     the opening; Stage 2 gains the surface at its minimum. -->
+     the opening; Stage 2 gains the surface at its minimum.
+     Harvested 2026-09-14, same run (CBC ADR-0007): Stage 2's
+     justification puts the candidate owners in front of the
+     signer as a comparison, the way an ADR presents options. -->
 
 # CbC slice workflow
 
@@ -94,7 +97,14 @@ park the mechanism and restate as a property.
    flag it now, before implementation.
 2. **Justify each choice against the named adversity.** Not "we use a
    unique constraint" but "a unique constraint defeats duplicate delivery
-   because the second insert cannot physically succeed."
+   because the second insert cannot physically succeed." Where more than
+   one face could hold the guarantee, the plan shows the candidates as a
+   comparison the signer can weigh — each face, how it holds the
+   guarantee, its cost — and recommends one, the way an ADR presents
+   options. Faces named in a paragraph after the choice are not weighed;
+   the reviewer reads past them and asks afterwards whether alternatives
+   existed. The sign-off is only real if the alternatives were in front of
+   the signer.
 3. **Hunt escape hatches.** Any path that bypasses the wall — an admin
    endpoint, a raw script, a migration — turns the guarantee into fiction.
    Every write path goes through the owner, or the owner is not an owner.

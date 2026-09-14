@@ -20,7 +20,10 @@ description: Work one slice of a correctness-driven backend - take one invariant
      Harvested 2026-09-14, same run (CBC ADR-0007): Stage 1 names
      the whats a slice meets that the framing does not carry —
      decided as records at the opening, never absorbed; Stage 2
-     owns the surface at its minimum. -->
+     owns the surface at its minimum.
+     Harvested 2026-09-14, same run (CBC ADR-0007): Stage 2 puts
+     the candidate owners in front of the signer as a comparison,
+     the way an ADR presents options. -->
 
 # CbC slice — one invariant made real
 
@@ -89,7 +92,12 @@ available: database constraint → type system → single validated entry path
 → runtime check → code review → hope. Justify each against the *named*
 adversity ("a unique constraint defeats duplicate delivery because the
 second insert cannot physically succeed" — not "we use a unique
-constraint"). Hunt escape hatches: admin paths, raw scripts, migrations
+constraint"). Where more than one face could hold a guarantee, put the
+candidates in front of the signer as a comparison — each face, how it
+holds the guarantee, its cost — with a recommendation, the way an ADR
+presents options; a rejected face named after the choice is not a
+weighed one, and the sign-off is only real if the alternatives were in
+front of the signer. Hunt escape hatches: admin paths, raw scripts, migrations
 that bypass the wall. Name **the surface at its minimum**: only what the
 guarantees need somewhere to live — the door, the schema, the records —
 and nothing beyond; a slice is not a feature, and what enters here without
