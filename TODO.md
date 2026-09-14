@@ -8,6 +8,54 @@
 
 ## Now (current plan step)
 
+- [ ] Harvest run 3's SL-1 into cbc-slice (2026-09-14, read from
+      its TODO's ten hand-offs, its slice record, devlog and
+      delivered files; seven confirmed at the master; one
+      change-plan, harvest lines per CBC ADR-0007, pinned copies
+      untouched until a re-pin). The seven: (1) R5 at the first
+      slice — system-readiness.md's R5 presumes a wall to break;
+      SKILL.md's Stage 0 says the first slice answers it in the
+      build: the naive version committed first, the wall its own
+      diff, the evidence run red on the working tree before the
+      wall's commit, recorded from actual output; "red before
+      green" the build stage's own gate. (2) The birth whats —
+      Stage 1 names what the first slice births that the framing
+      cannot carry (the schema, the first migration, the door and
+      its conventions, how the aggregate comes to exist), and
+      Stage 2 owns "the surface at its minimum". The worked
+      example stays duplicate-delivery; a contention twin is not
+      written ahead of a second lived contention slice. (3) Stage
+      2 presents the owner candidates as a comparison the signer
+      weighs — each face, how it holds the guarantee, its cost —
+      with a recommendation, the way an ADR presents options.
+      (4) The harness reference states the body-assertion
+      convention as a variation point: by path for a shape, by
+      type when a shared API contract exists, never by substring;
+      its own contention probe's `.contains` line reworked or
+      annotated. (5) Stage 1 exit item: every flag on the
+      registry row is answered by name — staged as its own
+      evidence, or removed by a definition with the removal
+      shown. (6) Stage 4: the row flips to `in-progress` when the
+      specification lands; the close names the provisionals and
+      what the slice hands to later slices by name — the step that
+      makes concept 04's "a built slice may teach that the next is
+      wrong or split" true in the registry. (7) A
+      `references/spring-slice-reference.md` on the bootstrap's
+      model — imitated never pasted, each artifact stating the
+      outcome it realizes with variation points — from what run 3
+      lived: the naive-then-wall split and the red run, the
+      witness over plain JDBC from outside every instance with the
+      sampler, the one-statement admit with the row count as the
+      decision, value types at the door, bodies by path, the
+      absence rung as bytecode rules. An ADR first: cbc-slice
+      gains a stack reference, the SKILL stays stack-free (CBC
+      ADR-0008's model). Not taken: the absence rung in the
+      enforcement hierarchy (a concept question — Later); the
+      contract's "in its own specification" wording (run 3's own
+      document, not the master's — the run's to fix). Told to the
+      run at its Step 6 opening, the user's way: which of its ten
+      items the master took, so its in-place edits (its
+      2026-09-14 decision) need not repeat them.
 - [x] DONE 2026-09-12, change-plan 7652e2c..close — nine fixes
       after the run's own re-read added one and retargeted one
       (df39fbe), in the run's wording, one harvest line per change
@@ -701,6 +749,10 @@
       test 2 has its instance — both the handbook's, in the sixth
       handoff. The bootstrap half of this watch is answered; the
       establish half stays open for the next run.)
+      (2026-09-14, run 3's Step 5 reading: the bootstrap half held
+      — the opening paragraph has stated no state since the 09-12
+      cut, nothing to go stale through a fifth step; the establish
+      half stays open.)
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
@@ -940,6 +992,17 @@
       agent-arrangement's test 2 gains a lived instance, a line
       with a moment that went where the moment is. Our fill took
       the cut 2026-09-12 (cde0e97).
+      (d) Run 3's Step 5, read 2026-09-14: the trials held a fifth
+      step (eighteen commits, none straddling; the entry file at
+      .claude/ once; the pace in no record; no handbook read, the
+      handbook named once as a hand-off's destination); four
+      subjects over 50; and run 3's kata hand-off — a personal
+      cut-a-kata skill, practice exercises cut from live work,
+      lived at SL-1 (three cards cut), graduating after katas in
+      two projects — is the handbook's to read. Run 3's
+      2026-09-14 decision to edit its skill copies in place under
+      guards and hand diffs is the run's arrangement; whether the
+      handbook's pinned-copy rule wants the variant is theirs.
 
 - [ ] After the absorb change-plan closes, two user observations
       (2026-09-04), raised mid-set and parked deliberately:
@@ -1072,6 +1135,18 @@
       chosen playbook alone.
 
 ## Later / someday
+
+- [ ] Concept question from run 3's SL-1 (2026-09-14): a guarantee
+      held by absence — no process clock, no state outside the
+      store — has no runtime evidence; its wall is a rule on the
+      compiled classes (ArchUnit, each rule with a `because`
+      naming its guarantee, each shown to fire on a plant). Run 3
+      asks for a rung between "single validated entry path" and
+      "code review". The hierarchy lives in concept/02 as well as
+      both cbc-slice files, so this is a concept change — an ADR
+      and the version question (CBC ADR-0003), not a bundle
+      harvest. Lived once; a second run meeting an absence
+      guarantee is the trigger.
 
 - [ ] A kit-update procedure for a born run, as an install doc
       beside pure-seed.md: the operator block that served once in

@@ -6,6 +6,93 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-14  (run 3's Step 5 read: SL-1; the gates reading; the trials held; ten hand-offs, seven for the bundle)
+
+- Run 3 closed Step 5, SL-1 no over-admission under contention, on
+  step-5-sl-1: eighteen commits, 2026-09-12 → 14, cut from the
+  Step 4 close (be61f60), fast-forwarded to main before the
+  reading. Read read-only. Six guarantees by attack, zero
+  mechanisms; the store's check constraint and one conditional
+  UPDATE as the wall; both storms red without the wall (22 and 23
+  of 20) and green unchanged with it; the adjustment race; the
+  one-clock pair; ArchUnit rules for the absence guarantees after
+  a text-search dead end; 29 tests under the one command; the run
+  on the real ground with V1 applied as `migrator`. The slice
+  record is one document in three movements — spec, plan,
+  evidence — with dated sign-offs; the registry flips SL-1 closed
+  and keeps SL-2 next by a dated revision naming what SL-1 leaves
+  it; version 0.1 as a state of the evidence.
+- The gates reading, Step 5 — derived twelve vs frozen v2's two:
+  both covered, sharper (Stage 0 recorded, the two opening ADRs,
+  each stage's exit with the reviewer's sign-off, the probe pair's
+  deletion, the records). v2's records line — one doc per slice,
+  spec → plan → evidence — re-derived exactly. Of v2's four
+  warnings: the red-check re-derived unaided and stronger — not
+  break-the-guard-after but red before the wall exists, since R5
+  has nothing to break at the first slice's Stage 0; the
+  gate-item-to-named-commit mapping not in the gate, the one
+  divergence (sub-packages against "one package-private package")
+  recorded at the close anyway; the erosion cross-check and the
+  composition warnings do not apply to a first slice — untested,
+  not missed. No hand-back.
+- The four trials held a fifth step: branch cut at the previous
+  close, tip on main by fast-forward; eighteen commits, none
+  straddling; the entry file edited at .claude/ once, the
+  slice-records row; the pace in no record; no handbook read —
+  three "handbook" mentions in the diff, all one TODO line naming
+  it as the kata skill's destination, the first time the run names
+  the handbook as a target. Four subjects over 50 (52, 53, 54, 54).
+  The branch item ticked "on the reviewer's word to merge, given
+  at this boundary" — the held wording, again.
+- Ten hand-offs filed, nine for the bundle, one for the handbook.
+  Seven confirmed at the master: R5 at the first slice (the
+  readiness reference says drop the constraint or comment the
+  guard — neither exists yet); the birth whats (Stage 1 takes only
+  the registry's invariant and adversity; nothing names the
+  schema, the door, how the aggregate comes to exist; the worked
+  example is duplicate-delivery); the owner candidates as a
+  comparison the signer weighs (Stage 2 asks for one owner,
+  justified, never the rejected faces — the run restated its own
+  §7 after the close); body assertion (the harness reference
+  itself asserts by substring in its contention probe); what a
+  flag demands (the framing template's flag-riding line, cbc-slice
+  silent on it); the close as more than a status (the template's
+  `in-progress` never used; concept 04's "a built slice may teach
+  that the next is wrong or split" has no Stage 4 step making it
+  true in the registry); a stack reference beside the stack-free
+  skill, on the bootstrap's model — a shape change, an ADR here.
+  Two not as stated: the absence rung asks for a new level in the
+  enforcement hierarchy, which lives in concept/02 as well as the
+  skill — a concept change, ADR and the version question, not a
+  bundle harvest; the contract's "in its own specification" is
+  run 3's own contract document, not the master's — no
+  infra-establish file names faces — so the fix is the run's. The
+  kata skill goes to the sixth handoff.
+- Run 3 has a staged, uncommitted agent-side decision: its method
+  skills may be edited in place under five guards — lived, a
+  question or outcome never the run's answer, logged in the
+  skill's header and its decisions log, handed to the source as a
+  diff against the pin, our verdict back as one line there. The
+  concept chapters stay pinned. The run's arrangement to make;
+  what changes here is the channel — after these ten prose items,
+  hand-offs arrive as hunks. Decided at the reading, the user's
+  call: harvest the seven confirmed items now as prose per CBC
+  ADR-0007, and tell the run which it need not re-edit; the diff
+  channel is read when the first diff arrives.
+- The entry-file watch: the bootstrap half held through a fifth
+  step — the opening paragraph has stated no state since the 09-12
+  cut, nothing to go stale; the establish half stays open for the
+  next run. Nothing for the playbook: the slice step's gate
+  derives at opening, and the run did that.
+
+Resume: the harvest change-plan for run 3's SL-1 — seven fixes
+across cbc-slice's skill, readiness reference and workflow, the
+harness reference, and the framing template's flag line; the
+stack reference as an ADR; harvest lines per CBC ADR-0007, pinned
+copies untouched. The absence rung waits as a concept question in
+TODO Later. Run 3 opens Step 6 (SL-2) in the run, the user's way;
+back here at its close, or when its first skill diff arrives.
+
 ## 2026-09-12, later  (run 3's bootstrap harvested into the bundle; the fill's state clause cut)
 
 - The harvest change-plan (7652e2c): nine fixes from run 3's Step 4
