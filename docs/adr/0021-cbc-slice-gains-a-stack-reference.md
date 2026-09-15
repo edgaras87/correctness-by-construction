@@ -1,9 +1,11 @@
-# 0021. cbc-slice gains a stack reference beside its stack-free skill
+# 0021. A Spring slice reference, held here and handed after the build
 
 Date: 2026-09-14
 Status: Proposed (opened at the SL-1 harvest change-plan's second
-commit, per change-plans §4; flips at the set's final records
-commit once the reference's shape has held)
+commit, per change-plans §4; revised 2026-09-15 at the boundary
+before the reference landed — the decision turned from shipped in
+the bundle to held here, the user's design; flips at the set's
+final records commit once the held reference is in place)
 
 ## Context
 
@@ -43,36 +45,97 @@ not be: a second skill.
    copies it whole; a stack paragraph in the skill is the first
    thing such a run has to cut, and the pin then differs from the
    master for a reason that is not the method's.
-3. **A reference on cbc-bootstrap's model** — one file under
-   `references/`, pinned to concept v1, provenance from run 3's SL-1
-   read read-only, each artifact with the outcome it realizes and
-   its variation points; SKILL.md carries one pointer line marked as
-   one stack's reading. Chosen: it is the shape the bundle already
-   uses for stack knowledge, and it lets a run on another stack write
-   its own reference beside this one without touching the skill.
+3. **A reference on cbc-bootstrap's model, shipped in the bundle** —
+   one file under the skill's `references/`, pinned to concept v1,
+   provenance from run 3's SL-1 read read-only, each artifact with
+   the outcome it realizes and its variation points; SKILL.md
+   carrying one pointer line. The first decision here, 2026-09-14,
+   and staged that way. Rejected 2026-09-15 at the boundary: a file
+   of working code inside the skill is a lookup, and the skill's own
+   teaching is that walls are chosen by comparison, never looked up.
+   Moving the pointer to Stage 3 and opening the file with "read
+   after the plan is signed" was tried in the staging; asked whether
+   that stops an agent reading it early, the honest answer was no —
+   a prose guard is the "code review" rung of the skill's own
+   hierarchy, and the only wall left was the Stage 2 comparison in
+   front of the signer. The exposure is removed instead (option 5).
 4. **Nothing — the slice record in run 3 is the reference.** A run
    reads its predecessor's `docs/construction/sl-1-*.md`. Rejected:
    a run reads only its own repo (the tier rule); what a run cannot
-   reach, the bundle carries.
+   reach, it is handed.
+5. **The reference held here and handed after the build** — the
+   user's design. The file lives beside frozen v2 under
+   `docs/baselines/`, blind to newborns: the pure seed copies the
+   bundle, and this is not in it. A run derives its build with no
+   reference in hand. After the build is on record, at the slice
+   close and before the reading here, the reference is handed to the
+   run as session input — told, unpinned, the gates experiment's
+   designed exception to the tier rule — and the run compares its
+   shapes against it section by section. Chosen: the run's
+   derivation is uninfluenced, the reference improves by comparison
+   rather than by copying, and the reading here gains a second
+   measured category beside the gates — which shapes a run
+   re-derives unaided, which it derives weaker, which it beats.
 
 ## Decision
 
-Option 3. cbc-slice gains `references/spring-slice-reference.md`,
-written from run 3's SL-1 as lived, on the harness reference's
-model. The SKILL stays stack-free; its one new line points at the
-reference as a Spring reading of the build stage, to be imitated,
-never pasted. A run on another stack writes its own reference at
-the same address pattern and hands it back; the skill is not
-touched for it.
+Option 5. `docs/baselines/spring-slice-reference.md`, written from
+run 3's SL-1 as lived, on the harness reference's model, opening
+with the protocol it is handed under. Nothing in cbc-slice points at
+it; the skill stays stack-free and unchanged for it.
+
+The protocol:
+
+- **The moment.** After the run's build is on record — the close
+  commit on the step's branch — and before the fast-forward to main,
+  which waits on the reviewer's word. Not at the plan sign-off:
+  handed after the plan but before the build, it would still shape
+  the build. Before the merge rather than after it, so a build the
+  comparison finds weaker can be redone on a fresh branch from the
+  same main instead of refined on top; the run's branch rule
+  already lets a restart rename the old branch and cut a new one.
+  The run's agent cannot know the moment is for this — it is blind
+  to the reference — so its close says only that the step is closed
+  on its branch and the fast-forward waits; what the reviewer holds
+  against the step is compared then.
+- **The channel.** One line of session input in the run, after the
+  close is committed: here is a reference from an earlier run's
+  build; compare your shapes against it section by section; for
+  each, say which is stronger and why; record the verdict. The file
+  is not copied into the run's tree.
+- **The verdict, per shape**, recorded in the run's devlog and its
+  decisions log: the run's is stronger — the run keeps it and files
+  a hand-off; the reference's is stronger — the run adopts it as a
+  recorded revision with its reason, a refinement commit if the
+  build changes; equal or incomparable — a variation point.
+- **The update.** Each verdict the reading here confirms lands in
+  the reference with one dated harvest line naming the run that
+  earned it (ADR-0007). The reference is a lived best, never a
+  master.
+- **A second derivation**, when the reviewer wants one: the first
+  branch is moved out of the local repo — bundled to a file outside
+  it and deleted locally, since a branch left in place, local or
+  remote-tracking, is readable — a fresh session cuts a new branch
+  from the same main and runs the slice again; both are restored
+  for the comparison, and one reaches main. The chosen branch gains
+  one commit before the merge naming the rival and the verdict; the
+  other is kept as the bundle. The cost is the slice's work twice,
+  spent only where the reviewer chooses.
+- **The first moment** is run 3's SL-2 close. Run 3 is the
+  reference's source, so SL-1 has nothing to compare.
 
 ## Consequences
 
-Good: the next Spring run does not re-derive six decisions and one
-dead end; the reference is where a contention slice is legible in
-the bundle without a written-not-lived worked example; the bundle's
-one model for stack knowledge holds across both practice skills.
-Accepted costs: the reference is lived once — every section is a
-variation point until a second run confirms or replaces it, and the
-header says so; a reader of SKILL.md now sees a stack name in a
-stack-free file, one line, marked; the twin worked-example note
-stays as it is, since the example is not this reference's job.
+Good: a run's build is derived clean, and the reference cannot
+become the answer before the plan's comparison has happened; the
+reference improves only by a lived comparison, each change traced
+to the run that earned it; the reading here measures the reference
+the way the gates reading measures the playbook. Accepted costs: a
+run that derives a weaker shape has already built it and pays a
+refinement commit; the next Spring run gets the six shapes and the
+dead end only after it has met them itself — which is the point; a
+comparison session per slice close is the reviewer's time; one more
+held document to keep current. The reference is lived once — every
+section is a variation point until a comparison confirms or
+replaces it, and the header says so. The twin worked-example note
+stays as it is; the example is not this reference's job.
