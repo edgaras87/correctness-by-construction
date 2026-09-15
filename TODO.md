@@ -8,11 +8,25 @@
 
 ## Now (current plan step)
 
-- [ ] Harvest run 3's SL-1 into cbc-slice (2026-09-14, read from
-      its TODO's ten hand-offs, its slice record, devlog and
-      delivered files; seven confirmed at the master; one
-      change-plan, harvest lines per CBC ADR-0007, pinned copies
-      untouched until a re-pin). The seven: (1) R5 at the first
+- [x] DONE 2026-09-15, change-plan 0205a7d..close — seven fixes,
+      one revision at the boundary (124744c): (1) R5 in the first
+      slice's build, the Stage 3 gate reworded at the boundary
+      from a process to the outcome — each test seen red with its
+      wall absent, three ways named (9886800); (2) the whats the
+      framing does not carry and the surface at its minimum
+      (7dfd90d); (3) the owner candidates in front of the signer
+      (ec51460); (5) every flag answered by name, the template's
+      clause (70900fc); (6) the close more than a status (304119b);
+      (4) bodies by path, variation point 9 (df75f6c); (7) the
+      Spring slice reference — NOT in the bundle: the user's design
+      at commit 9's boundary holds it at docs/baselines/, handed to
+      a run after its build is on record, ADR-0021 revised then
+      accepted (8017028, 8383932); the skill carries no pointer.
+      Original item: Harvest run 3's SL-1 into cbc-slice
+      (2026-09-14, read from its TODO's ten hand-offs, its slice
+      record, devlog and delivered files; seven confirmed at the
+      master; one change-plan, harvest lines per CBC ADR-0007,
+      pinned copies untouched until a re-pin). The seven: (1) R5 at the first
       slice — system-readiness.md's R5 presumes a wall to break;
       SKILL.md's Stage 0 says the first slice answers it in the
       build: the naive version committed first, the wall its own
@@ -583,6 +597,26 @@
       the same day (3242c59); the branch item's
       wording stays held with Step 1's three branch-rule lines,
       for the version after run 3's trial verdict.)
+      (2026-09-15, a second reading category, the user's design —
+      ADR-0021: the build comparison. The Spring slice reference is
+      held at docs/baselines/, blind to newborns; after a run's
+      slice close is committed on its branch and before the
+      fast-forward, the reviewer hands it over as session input and
+      the run compares its build shape by shape, the verdicts in
+      its devlog and decisions log; the reading here checks each
+      verdict and lands the confirmed ones in the reference as
+      harvest lines. Measures the reference as the gates reading
+      measures the playbook: which shapes a run re-derives unaided,
+      which weaker, which it beats. A second derivation before the
+      merge is the reviewer's option — the first branch bundled out
+      of the local repo, a fresh session on a new branch, both
+      restored for the comparison, one merged with a commit naming
+      the rival. First moment: run 3's SL-2 close. One line joins
+      the held branch-rule lines for the playbook: at the close the
+      agent says the step is closed on its branch and the
+      fast-forward waits — what the reviewer holds against the step
+      is compared then; it names no reference. For run 3, told at
+      SL-2's opening or the run's own agent commit.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,

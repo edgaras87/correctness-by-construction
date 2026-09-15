@@ -6,6 +6,48 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-15  (run 3's SL-1 harvested into cbc-slice; the reference held, not shipped)
+
+- The harvest change-plan (0205a7d): six fixes from run 3's SL-1
+  into cbc-slice's skill, workflow and readiness reference, the
+  framing's registry template and the bootstrap's harness
+  reference, each in the run's wording, one dated harvest line per
+  change per file (CBC ADR-0007). Two rewordings at boundaries, the
+  user's questions: the Stage 3 red gate, staged first as run 3's
+  process (naive commit first, the wall its own diff, red before
+  the wall's commit), asked whether it over-restricts — it did,
+  for a slice whose wall already stands, and for a brownfield first
+  slice — and reworded to the outcome only, each test seen red
+  with its wall absent, three ways of making it absent named; and
+  "never committed" widened to "never lands in history".
+- The seventh fix diverged at its boundary (124744c). The Spring
+  slice reference was staged into the bundle with a pointer in the
+  skill, then the pointer moved to Stage 3 with a read-after-the-
+  plan guard; asked whether that stops an agent reading it early,
+  the honest answer was no — a prose guard is the code-review rung,
+  and the Stage 2 comparison plus the sign-off were the only wall.
+  The user's design instead: the reference held here beside frozen
+  v2, blind to newborns, handed to a run as session input after its
+  build is committed on its branch and before the fast-forward, for
+  a comparison shape by shape whose verdicts come back as harvest
+  lines — the gates experiment's protocol applied to the build,
+  with a second derivation on a fresh branch as the reviewer's
+  option. ADR-0021 revised then accepted; the skill carries no
+  pointer and is unchanged for it.
+- Nothing in concept/ moved: no CHANGELOG entry, no ADR beyond
+  0021, no concept version. Run 3's copies stay at their pin; its
+  ten items answered at the master or handed back — the absence
+  rung waits as a concept question, the contract wording is the
+  run's own document.
+
+Resume: the set closes on the word. Then nothing is owed here until
+run 3 closes SL-2 on its branch — told at its Step 6 opening which
+of its ten items the master took, and the close reminder line; at
+its close, before the merge, the first build comparison, and after
+the merge the reading, now in two categories. The run's first skill
+diff, if its in-place editing produces one, is read hunk by hunk
+against the master as it stands after this set.
+
 ## 2026-09-14  (run 3's Step 5 read: SL-1; the gates reading; the trials held; ten hand-offs, seven for the bundle)
 
 - Run 3 closed Step 5, SL-1 no over-admission under contention, on

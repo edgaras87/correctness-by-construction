@@ -216,6 +216,7 @@ was met at Step 5.
 - ADR-0018: The seed lands on a receipt branch
 - ADR-0019: The entry files ship filled — the semi-pure delivery
 - ADR-0020: This repo's decisions are cited from other repos as CBC ADR-nnnn
+- ADR-0021: A Spring slice reference, held here and handed after the build
 
 ---
 

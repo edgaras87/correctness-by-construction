@@ -1,11 +1,13 @@
 # 0021. A Spring slice reference, held here and handed after the build
 
 Date: 2026-09-14
-Status: Proposed (opened at the SL-1 harvest change-plan's second
-commit, per change-plans §4; revised 2026-09-15 at the boundary
+Status: Accepted (2026-09-15, at the set's final records commit;
+opened Proposed per change-plans §4 and revised at the boundary
 before the reference landed — the decision turned from shipped in
-the bundle to held here, the user's design; flips at the set's
-final records commit once the held reference is in place)
+the bundle to held here, the user's design. The held reference is
+in place at docs/baselines/spring-slice-reference.md, 8383932;
+cbc-slice unchanged for it; the first comparison waits on run 3's
+SL-2 close)
 
 ## Context
 
