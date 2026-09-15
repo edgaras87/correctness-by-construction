@@ -15,9 +15,12 @@ signer as a comparison; Stage 1 exits only when every flag on the
 registry row is answered by name; Stage 4 flips the row to
 `in-progress` at the specification and closes it naming the
 provisionals and what the slice hands on; the harness reference
-states the body-assertion convention as a variation point; and
-cbc-slice carries a stack reference beside its stack-free skill, on
-the bootstrap's model, decided by an ADR. Two of run 3's hand-offs
+states the body-assertion convention as a variation point; and a
+Spring slice reference exists — **held here, not shipped in the
+bundle** (ADR-0021 as revised at this set's boundary): a run derives
+its build uninfluenced, and the reference is handed over as session
+input after the build is on record, for a comparison whose verdict
+improves the reference or the run. Two of run 3's hand-offs
 are not taken: the absence rung (a concept question, TODO Later)
 and the contract wording (the run's own document). Nothing in
 `concept/` moves: no CHANGELOG entry, no concept version.
@@ -105,31 +108,53 @@ substring; the contention probe's own `.contains` line annotated to
 say it is the identity witness, not the pattern. Harvest line in
 the reference.
 
-**9. `docs(starter): a Spring reference for the slice`** *(provisional
-— the split of its sections is decided when the material is in
-hand; the intent is firm)*
-cbc-slice/references/spring-slice-reference.md, on the harness
-reference's model: a header pinned to concept v1 and provenance
-from run 3's SL-1 read read-only; each artifact stating the outcome
-it realizes, with variation points, so a reader can reject the
+**9. `docs(adr): the slice reference is held, not shipped`**
+ADR-0021, still Proposed, revised at the boundary before the
+reference lands: the decision becomes a reference **held in this
+repo and handed to a run as session input after its build is on
+record**, never copied at birth — so a run derives its build
+uninfluenced, and the comparison decides which shape is stronger.
+The bundle placement (the previous option 3) moves to the rejected
+options with its reason: a file of working code inside the skill is
+a lookup, and a prose guard against opening it early is the "code
+review" rung of the skill's own hierarchy. The rejected "nothing"
+option's tier-rule reasoning is kept: the handed document is the
+gates experiment's designed exception — told, unpinned, after the
+derivation is recorded. The protocol in the ADR: the moment (the
+slice close, before the reading here), the channel (one line of
+session input), the verdict (per shape — the run's stronger, the
+reference's stronger, or a variation point — recorded in the run's
+devlog and decisions log), and the update (a harvest line here per
+change the comparison earned).
+
+**10. `docs: a Spring slice reference, held for the comparison`**
+*(provisional — the split of its sections is decided when the
+material is in hand; the intent is firm)*
+docs/baselines/spring-slice-reference.md beside frozen v2, on the
+harness reference's model: a header pinned to concept v1 and
+provenance from run 3's SL-1 read read-only, opening with the
+protocol it is handed under; each artifact stating the outcome it
+realizes, with variation points, so a reader can reject the
 artifact and keep the outcome. From what run 3 lived: the
 naive-then-wall commit split and the red run; the witness over
 plain JDBC from outside every instance, with the sampler for "in
 every readable state"; the one-statement admit with the row count
 as the decision; value types at the door; bodies by path; the
-absence rung as bytecode rules with one plant per rule. SKILL.md
-gains the pointer line beside the workflow's, marked as one stack's
-reading — a run on another stack writes its own.
+absence rung as bytecode rules with one plant per rule. Nothing in
+the skill points at it.
 
-**10. `docs: records for the run 3 SL-1 harvest`**
-ADR-0021 flips to Accepted with the reference's shape as its
+**11. `docs: records for the run 3 SL-1 harvest`**
+ADR-0021 flips to Accepted with the held reference in place as its
 evidence; PLAN's decision index gains its line; TODO Now's harvest
-item closes with the commit per fix; the devlog entry for the set.
-The registry-template and harness-reference changes need no row
-anywhere — templates and references live inside their skill (CBC
-ADR-0008), and no codemap lists them.
+item closes with the commit per fix; the gates-experiment item in
+TODO gains the build comparison as a second reading category, with
+its first moment named — run 3's SL-2 close; ARCHITECTURE's codemap
+gains the baselines row if it lacks one; the devlog entry for the
+set. The registry-template and harness-reference changes need no
+row anywhere — templates and references live inside their skill
+(CBC ADR-0008), and no codemap lists them.
 
-**11. `docs(agent): close change-plan for the run 3 SL-1 harvest`**
+**12. `docs(agent): close change-plan for the run 3 SL-1 harvest`**
 Deletes this file; the body records what diverged.
 
 ## Decisions taken inside this plan
@@ -145,8 +170,20 @@ Deletes this file; the body records what diverged.
 - **The ADR before the reference, Proposed until the shape held.**
   Decision-first, since the decision was settled at the reading;
   the reference's split is the one thing only the material can
-  show, so commit 9 is the provisional step and commit 10 flips the
+  show, so commit 10 is the provisional step and commit 11 flips the
   status.
+- **Held, not shipped (revised 2026-09-15, the user's design at
+  commit 9's boundary).** The reference was planned into the bundle
+  with a pointer in the skill. Staged that way, the question was
+  whether a prose guard stops an agent reading it before the plan is
+  signed; it does not, and the honest answer was that the Stage 2
+  comparison and the sign-off are the only wall. The user's design
+  removes the exposure instead: the run never has the file, derives
+  its build clean, and gets the reference after — the gates
+  experiment's own protocol, applied to the build. Cost accepted: a
+  run that derives weaker has already built it and pays a refinement
+  commit; the next Spring run gets nothing for free, which is the
+  point.
 - **Prose now, diffs later.** Run 3 has decided (staged, 2026-09-14)
   to edit its skill copies in place under guards and hand diffs.
   This set harvests the ten prose items it filed before that
