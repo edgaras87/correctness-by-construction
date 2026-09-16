@@ -21,7 +21,7 @@
      time by the install block in the handbook's manual. It pins
      which handbook state — and so which version of every
      convention — this project was born from (convention-lifecycle
-     §7). If that line still shows a placeholder instead of a
+     §2). If that line still shows a placeholder instead of a
      commit hash, the install block was not run from the handbook;
      fix it before the bootstrap commit. -->
 
@@ -399,3 +399,46 @@
   about is settled one tier up inside this very delivery, so CBC
   ADR-0007 would have been written blind to it; the ask does not
   block run 3, whose Step 6 opens on the copies as they stand.
+
+- 2026-09-17 Convention updated: agent-arrangement @ ba7eaa4 (was
+  @ ab916a1). The installed compare, kit stub against kit stub
+  across the span: the entry-file stub unchanged; the decisions-log
+  stub changed by one line, its cross-reference following the
+  renumbering — "convention-lifecycle §7" to "§2", the registry and
+  the hash. Carried into this file's own header above, which keeps
+  its birth wording and takes only the section number. The
+  conventions/ side of both stubs is now a symlink into the kit, so
+  the kit is master in fact and not only by the note's word.
+  Why: the pin must name the hash the records are at, and a live
+  cross-reference to a renumbered section is a reader sent to the
+  wrong rule.
+  Rejected: none.
+
+- 2026-09-17 Convention updated: project-recording @ ba7eaa4 (was
+  @ ab916a1), verified unchanged across the span: of the kit's
+  files only the four skills and the decisions-log stub moved, so
+  README, PLAN, TODO, devlog, CHANGELOG, ARCHITECTURE and the first
+  ADR are all untouched. Nothing lands; the pin moves so the
+  registry names the hash the records are at.
+  Why: an update absorbed without the pin moving leaves step 2
+  reading a stale hash as current — this repo's own lesson of
+  2026-09-08.
+  Rejected: leaving the pin at ab916a1 on the grounds that nothing
+  changed (the tiers precedent of 09-09 did that for repo-hygiene
+  and it was right there, the reply being the evidence; here the
+  evidence is our own diff over the kit, so the pin moves with it).
+
+- 2026-09-17 Convention updated: repo-hygiene @ ba7eaa4 (was
+  @ ab916a1), verified unchanged across the span: the kit's three
+  base files — .editorconfig, .gitattributes, .gitignore — show no
+  diff. Nothing lands.
+  Why: as above.
+  Rejected: none.
+  Checked and needing nothing: every live citation of a renumbered
+  section. convention-lifecycle's live §-references here were the
+  header's alone; the two in this log's history are left as they
+  were, the handbook's own practice with its own. change-plans kept
+  §1–§7 and lost only §8, §9 and its Delivery section, so
+  starter/installs/pure-seed.md's "change-plans §6" still names the
+  review protocol and is not carried. The ADRs' "per change-plans
+  §4" lines are history and stand.
