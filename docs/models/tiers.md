@@ -1,12 +1,13 @@
-<!-- Vendored copy — engineering-handbook models/tiers.md @ ab916a1
-     (copied 2026-09-11; first copied 2026-08-27 @ 4fe8083, this
-     repo's kit birth pin, and unchanged there through af16eb7).
-     Pinned: do not edit here — changes happen in the handbook and
-     arrive as a fresh pinned copy. See ADR-0002. -->
+<!-- Vendored copy — engineering-handbook models/tiers.md @ ba7eaa4
+     (copied 2026-09-17; before that @ ab916a1 2026-09-11, first
+     copied 2026-08-27 @ 4fe8083, this repo's kit birth pin, and
+     unchanged there through af16eb7). Pinned: do not edit here —
+     changes happen in the handbook and arrive as a fresh pinned
+     copy. See ADR-0002. -->
 
 # Tiers Model
 
-DRAFT (named 2026-08-25 from one worked instance — this handbook,
+DRAFT (named 2026-08-25 from one worked instance — the handbook,
 one concept repo being born, no runs; §3 revised 2026-09-10 from
 five lived runs, on the concept repo's report. The garden tier is
 still a folder; revise again when it earns machinery).
@@ -84,24 +85,27 @@ after that derivation is on record, as an experiment's instrument.
 That is the told channel, unpinned by design (agent model §4), and
 the run's records say it was told; it is not a third form of
 delivery, and a run that leans on it has the diagnostic told
-carries.
+carries. Nor is a copy the run has edited between two pins
+(convention-lifecycle §3): delivery comes down, and an edit goes up.
 
 **Up is harvest, through records.** Learning moves only through
 records, and the run sends nothing: the tier above reads the run's
-records, read-only, at step boundaries during the run or whole at
-its end; or the records travel as a handoff document, one repo's
-`temp/` to another's. A run's surprise becomes a concept change (and
-the executions are re-derived from the updated concept); a method
-lesson or arrangement experiment anywhere reaches the handbook the
-same two ways — read at the retrospective from the promotion queue
-(`.claude/decisions.md`), or carried in a handoff. Nothing edits an
-upstream repo as a side effect of downstream work, in either
-direction.
+records, read-only, at step boundaries during the run or whole at its
+end; or the records travel as a handoff document, one repo's `temp/`
+to another's. An edited copy's diff against its pin is one of those
+records — the tier above reads it at the next update and answers in
+its own text, never in the copy (HANDBOOK ADR-0038). A run's surprise
+becomes a concept change (and the executions are re-derived from the
+updated concept); a method lesson or arrangement experiment anywhere
+reaches the handbook the same two ways — read at the retrospective
+from the promotion queue (`.claude/decisions.md`), or carried in a
+handoff. Nothing edits an upstream repo as a side effect of downstream
+work, in either direction.
 
 **Tiers talk in documents, and the pin follows the talk.** No tier's
 agent reads another tier's repo: a run reads only its own, and a
 concept repo opens a handbook checkout only for the lifecycle update
-(convention-lifecycle §8). So every exchange is a document, and a
+(convention-lifecycle §3). So every exchange is a document, and a
 document absorbed without its pin moving leaves the registry lying —
 the update procedure's own warning, lived once.
 

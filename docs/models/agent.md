@@ -1,14 +1,15 @@
-<!-- Vendored copy — engineering-handbook models/agent.md @ ab916a1
-     (copied 2026-09-11; before that @ af16eb7 2026-09-09, first
-     copied 2026-08-27 @ 4fe8083, this repo's kit birth pin).
-     Pinned: do not edit here — changes happen in the handbook and
-     arrive as a fresh pinned copy. See ADR-0002. -->
+<!-- Vendored copy — engineering-handbook models/agent.md @ ba7eaa4
+     (copied 2026-09-17; before that @ ab916a1 2026-09-11, @ af16eb7
+     2026-09-09, first copied 2026-08-27 @ 4fe8083, this repo's kit
+     birth pin). Pinned: do not edit here — changes happen in the
+     handbook and arrive as a fresh pinned copy. See ADR-0002. -->
 
 # Agent Model
 
-DRAFT (Step 14). Deliberately incomplete — a first structure to test,
-not a finished description. Behavioural statements carry a status and a
-refutation condition (§12).
+DRAFT (named 2026-08-22, at the handbook's Step 14). Deliberately
+incomplete — a first structure to test, not a finished description.
+Behavioural statements carry a status and a refutation condition
+(§12).
 
 A structured description of what an AI agent working inside a
 repository *is*: its parts, the channels that carry text into it, and
@@ -233,9 +234,12 @@ with two texts that can disagree (§5).
 
 ## 9. Where each convention lands
 
-Stated by each convention for itself: `delivery` in the frontmatter
-of its `CONVENTION.md`, with the reasoning in a **Delivery** section
-below (HANDBOOK ADR-0012, HANDBOOK ADR-0013). Read it there.
+Shown by each convention's artifacts: a skill file for a rule bound
+to a moment, stubs and templates for a rule that rides in the files
+a project is born with. What a convention ships is what its
+directory lists, and the choice rests on §8
+(HANDBOOK ADR-0015, HANDBOOK ADR-0040). A skill's frontmatter names
+its trigger; nothing names a channel.
 
 A worked table stood here until every convention carried its own
 statement, at which point the two disagreed on two of five rows.
@@ -314,16 +318,18 @@ attached to the component it constrains, each written so it can be
 proven wrong.
 
 `evidenced` = observed. `assumed` = asserted but never observed —
-including assertions this repo has already acted on.
+including assertions the handbook has already acted on. The evidence
+below is the handbook's own history unless it says otherwise; a
+repo that vendors this model adds its own.
 
 ### On ambient
 
 **A1 — Presence is not compliance.** A rule being in context does not
 mean it is followed.
-- `evidenced` — the commit-subject limit (≤50 chars) has been ambient
-  in `AGENTS.md` since Step 6 and pulled in `commit-messages` since
-  Step 5. 15 of the first 20 commits in this repo exceed it. Present,
-  correct, unfollowed.
+- `evidenced` — the commit-subject limit (≤50 chars) was ambient in
+  the handbook's entry file from its Step 6 and pulled in
+  `commit-messages` from its Step 5. 15 of the handbook's first 20
+  commits exceed it. Present, correct, unfollowed.
 - **Open question it raises:** unenforced, or mis-set —
   `docs(handbook):` consumes 15 of the 50 characters before the verb.
 
@@ -335,7 +341,7 @@ the lower compliance with any single rule in it.
 
 **P1 — A pointer is not the file.** An agent can act on a rule's topic
 without opening the file that states it.
-- `assumed` · *Refuted by:* opening a linked `CONVENTION.md` unprompted,
+- `assumed` · *Refuted by:* opening a linked skill file unprompted,
   before doing the thing it governs.
 
 **P2 — Placement decides whether a pointer fires.** A pointer at the
@@ -356,9 +362,9 @@ fire when it should (silence, indistinguishable from having no rule).
 **O1 — Divergence is invisible without a comparison.** Nothing causes
 two disagreeing copies of a rule to be noticed unless something
 compares them.
-- `partially evidenced` — the three-place hygiene update (devlog k) was
-  caught by hand, as HANDBOOK ADR-0008 predicted. Not yet observed: a
-  *missed* divergence.
+- `partially evidenced` — the three-place hygiene update (the
+  handbook's devlog, k) was caught by hand, as HANDBOOK ADR-0008
+  predicted. Not yet observed: a *missed* divergence.
 - *Refuted by:* an agent flagging a stale copy unprompted.
 
 ### On the context window
@@ -393,10 +399,10 @@ including by the same agent.
 
 **M1 — A hand-written summary is lossy on arrival.** Summarising drops
 parts of a rule immediately, before any drift.
-- `evidenced` — `commit-messages/CONVENTION.md:11` states "≤50 chars,
-  imperative, **no period**". `AGENTS.md` renders it as "imperative
-  subject ≤50 chars, body explains why, footers link ADRs/issues". "No
-  period" was gone on arrival.
+- `evidenced` — commit-messages states "≤50 chars, imperative, **no
+  period**". The handbook's entry file of the time rendered it as
+  "imperative subject ≤50 chars, body explains why, footers link
+  ADRs/issues". "No period" was gone on arrival.
 
 **M2 — Derived text cannot drift, only go stale.** A generated summary
 disagrees with its source only by being out of date, which
@@ -409,8 +415,8 @@ look current.
 **G1 — Text does not enforce.** No file prevents a violation; only a
 check outside the text can.
 - `evidenced` — same measurement as A1. The rule existed in two
-  channels for the whole life of the repo, no gate existed, and it was
-  broken 15 times.
+  channels for the whole life of the handbook, no gate existed, and
+  it was broken 15 times.
 
 ### Scorecard
 
@@ -421,7 +427,7 @@ check outside the text can.
 | assumed | A2, P1, P2, U1, W1, S1 |
 
 Six of twelve remain assumed. **P2** decides router versus rulebook;
-the field test (Step 9) is what resolves it.
+the handbook's field test (its Step 9) is what resolves it.
 
 Note that **installed** carries no claims. It is the only delivery that
 does not depend on an agent doing anything.

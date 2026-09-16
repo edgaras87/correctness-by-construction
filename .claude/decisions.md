@@ -348,3 +348,54 @@
   repo-hygiene verified unchanged across af16eb7..ab916a1 (the
   reply says so; the kit's three base files show no diff); pin left
   as is, the tiers precedent of 09-09.
+
+- 2026-09-17 Pinned copies updated to the handbook @ ba7eaa4 (were
+  @ ab916a1): the four skill copies — commit-messages, change-plans,
+  artifact-kinds, convention-lifecycle — and both models,
+  docs/models/agent.md and tiers.md. Compare-first ran clean: each
+  skill copy byte-identical to the kit at ab916a1, each model
+  identical below its vendoring header; no local edits, overwrite
+  silent-safe. Taken under the note of 2026-09-16 in temp/, told not
+  delivered, whose three corrections are what let the procedure at
+  our pin run at all: step 1 diffs starter/kit/, not
+  conventions/<name>/, the kit being the master of everything that
+  ships (HANDBOOK ADR-0040); step 2's `delivery` frontmatter field
+  is gone and landing is shown by where a file sits; step 4's master
+  is starter/kit/.claude/skills/<name>/SKILL.md at the path we
+  already hold it, no rename. The old file compared against still
+  resolves — `git show ab916a1:conventions/<name>/CONVENTION.md` —
+  because the compare is at our pin, not at HEAD: the layout change
+  broke the fetch, not the comparison.
+  What moved: all four rewritten, not adjusted, roughly two thirds
+  of the text gone, each now rules only with its explanation left in
+  a handbook page that never ships; convention-lifecycle renumbered
+  §1–§8 to §1–§3 (requires-chains, the registry and the hash,
+  updating a copy), step numbers inside the update unchanged, so our
+  §8 step 4 is its §3 step 4 — citations of the old numbers in this
+  log's history are left alone, the handbook fixed only its live
+  ones. The rule changes, as against prose: convention-lifecycle §3
+  step 4 gains "a project may edit its copy between two pins",
+  provisional until one such edit has gone through an update
+  (HANDBOOK ADR-0038, from run 3's hand-off of 09-15 — its rules 1–3,
+  5, 6 and 7 in the handbook's text, rule 4's cadence reshaped), and
+  gains the receipt branch as the compare when a project holds one,
+  which we do not; its `requires` drops artifact-kinds, leaving
+  change-plans and agent-arrangement, and its description gains the
+  trigger "when a copy under .claude/skills/ turns out wrong
+  mid-step"; commit-messages names CHANGE-PLAN.md among the agent's
+  own files as before, unchanged in substance; change-plans' revert
+  exemplar becomes a module and its ARCHITECTURE paragraph, and its
+  records walk reads the entry file's table rather than naming
+  project-recording; artifact-kinds' exemplars become repo-relative,
+  each naming where this repo holds the thing. The models: tiers §3
+  says an edited copy is not a third form of delivery — delivery
+  comes down, an edit goes up — and that an edited copy's diff
+  against its pin is one of the records the tier above reads; both
+  models follow the renumbering in their cross-references.
+  Why: the registry must name the hash the records are at, and the
+  procedure we hold cannot run again until this lands.
+  Rejected: none — no copy carried a local edit. Answering run 3's
+  ask first (temp/bundle-handoff-2026-09-17.md): the shape it asks
+  about is settled one tier up inside this very delivery, so CBC
+  ADR-0007 would have been written blind to it; the ask does not
+  block run 3, whose Step 6 opens on the copies as they stand.
