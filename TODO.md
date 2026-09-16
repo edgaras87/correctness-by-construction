@@ -1170,6 +1170,28 @@
 
 ## Later / someday
 
+- [ ] The handbook's invitation, 2026-09-16, not owed and not a
+      condition of anything: when we next author or restructure
+      something of our own, notice what we had to invent because
+      nothing told us — what an artifact must carry, how it is
+      written, how explanation is kept apart from instruction.
+      None of that ships today and the handbook is deliberately not
+      guessing it from its own single instance. Two unfinished
+      drafts sit in its temp/, repo-shapes-model-draft.md and
+      repo-shapes-gap-list.md; they are thinking, not decisions,
+      they bind nothing, and they are ours for the asking. The
+      trigger is our next authoring, not a date.
+
+- [ ] Two constraints that bind if we ever restructure our own
+      parts, from the same note: whatever we split them into, do
+      not call them conventions — that word means method, and
+      method has one owner, the handbook. And keep the concept
+      beside those parts rather than inside them: the executions
+      are derived from the concept, and a repo that reframes itself
+      around its executions loses the thing they derive from. Told,
+      not delivered; recorded here because the moment it binds is
+      one where it would otherwise be forgotten.
+
 - [ ] Concept question from run 3's SL-1 (2026-09-14): a guarantee
       held by absence — no process clock, no state outside the
       store — has no runtime evidence; its wall is a rule on the

@@ -6,6 +6,63 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-17  (the handbook delivery @ ba7eaa4, taken under a note; run 3's ask parked one set out)
+
+- A note arrived in temp/ on 09-16, told not delivered: the kit
+  moved and the update procedure at our pin names three things that
+  no longer exist — the directory it diffs, the `delivery`
+  frontmatter field it reads, the CONVENTION.md master it copies
+  from. Three corrections, applied once, and the problem is gone
+  for good because the new procedure does not have it. Taken this
+  session: the four skill copies and both models at ba7eaa4,
+  compare-first clean on all six, and registry entries for all
+  seven conventions.
+- The corrections checked out in the material, not only on the
+  note's word. conventions/<name>/stubs/*.md at ba7eaa4 are
+  symlinks into starter/kit/ — a plain diff calls them different
+  and they are 0-line files holding a relative path, which is the
+  exact trap correction 1 warns about. And the compare survived the
+  layout change: `git show ab916a1:conventions/<name>/CONVENTION.md`
+  resolves although the file is gone at HEAD, because the compare
+  is at our pin. A layout change breaks the fetch, not the
+  comparison — the handbook recorded the same narrowing at da93a88.
+- What actually changed, as against two thirds of the text being
+  cut: convention-lifecycle §3 step 4 gains "a project may edit its
+  copy between two pins" (HANDBOOK ADR-0038, provisional) and the
+  receipt branch as the compare where one exists; its `requires`
+  drops artifact-kinds; its description gains a mid-step trigger.
+  tiers §3 says an edited copy is not a third form of delivery and
+  that its diff against the pin is a record the tier above reads.
+  The rest is exemplars moving and prose leaving.
+- Run 3's handoff arrived 09-17 with one ask: may a run edit its
+  copy of a bundle skill between two pins? Parked deliberately for
+  the next set. The handbook settled that shape for its own four
+  conventions at kit 9e28143, from run 3's own hand-off, and the
+  text rides inside this delivery — answering CBC ADR-0007 first
+  would have been writing blind to it. The ask does not block run
+  3: its Step 6 opens on the copies as they stand.
+- Checked before assuming: run 3 is on our latest bundle exactly.
+  All 28 files under starter/bundle/ byte-identical to its copies,
+  file lists identical, nothing uncommitted or untracked in its
+  skill directories, no commit touching them since its re-pin, and
+  all five concept chapters identical. Its in-place editing rule is
+  live but unexercised — there is no skill diff to harvest, here or
+  anywhere, which is what its own handoff says too.
+- First branch in this repo: handbook-delivery-ba7eaa4, cut from
+  main at 7bbf49a, closing by fast-forward. Not kit-<hash> — that
+  spelling means a receipt branch in the procedure being taken, and
+  we hold none. On trial for this set; the retrospective decides
+  whether it becomes anything.
+
+Resume: the set closes on the word, then main fast-forwards. Next
+is run 3's ask — read its unread span a08093d..5a4b548 read-only,
+with its staged TODO and .claude/rules/skills-changed-in-place.md,
+then answer in CBC ADR-0007 and starter/README.md's Harvest
+section: taken, reshaped, declined or held, naming our hash. After
+that, whether run 3 is told the kit moved — it is pinned at
+9e28143, before the restructure, and will meet the same break with
+no note.
+
 ## 2026-09-15  (run 3's SL-1 harvested into cbc-slice; the reference held, not shipped)
 
 - The harvest change-plan (0205a7d): six fixes from run 3's SL-1
