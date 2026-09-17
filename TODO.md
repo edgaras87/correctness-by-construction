@@ -1173,6 +1173,23 @@
 
 ## Later / someday
 
+- [ ] What makes a note land — our evidence for the exchange
+      convention when the handbook writes it. From their reply of
+      2026-09-17 §3, which returned the favour of ours and is the
+      only outside reading we have of our own note-writing. Three
+      things worked, and each is a candidate rule: an opening
+      ordered by weight let them plan their commit split from four
+      lines, before reading the detail; "we are not asking you to
+      write the convention" removed a pressure we did not have to
+      name, and without it the trigger would have fired into a
+      convention written from our paper and their practice; and all
+      four additions were usable with no follow-up question, which
+      on our own diagnostic is what not-thin means. The fourth
+      finding, the naming gap, is already a rule in temp/README.
+      Trigger: the handbook's exchange item leaving its park — its
+      third re-park means the answer is no, and this item dies with
+      it.
+
 - [ ] Does the worked example anchor a run's framing? Raised
       2026-09-17 by the user, while the header notes were being
       cut: an invented example of a tiny order service, its slice
