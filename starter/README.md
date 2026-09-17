@@ -66,10 +66,13 @@ overlays the method.
 
 `starter/kit/` is this repo's copy of the handbook's starter kit,
 at their path names so a compare is a directory diff with nothing
-to map. Pinned to the handbook @ `ba7eaa4`, taken 2026-09-18
-(ADR-0024). Fourteen of its sixteen files are byte-identical to
-the master; two carry a composed body and a third a changed birth
-entry.
+to map. Fourteen of its sixteen files are byte-identical to the
+master; two carry a composed body and a third a changed birth
+entry (ADR-0024).
+
+Kit pin: `ba7eaa4` — taken 2026-09-18. This line is the pin's one
+home: `installs/pure-seed.md` reads the hash out of it, so a
+re-pin moves one line and the birth procedure follows.
 
 A run receives the kit and the bundle as one delivery with one
 pin, and that pin claims what ADR-0023 decision 8 says it claims:

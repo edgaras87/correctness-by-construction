@@ -55,6 +55,14 @@
      main. The prompt gains the one line that names the branch.
      Runs 1 and 2 were seeded on main; readings against them say
      so.
+     Ninth revision, 2026-09-18 (ADR-0024): the kit comes from
+     this repo, not from the handbook's manual by pointer. Step 2
+     is ours and copies starter/kit/; the hygiene commit is its
+     own step; and the semi-pure step goes — the entry files
+     arrive in the kit, so there is no stub to write over and no
+     switch to throw. The pure/semi-pure distinction dies with
+     it: its measurement, whether an agent derives the guard
+     unaided, ended with run 2 by ADR-0019's own words.
      Eighth revision, 2026-09-07 (ADR-0019): one optional step,
      the semi-pure delivery — the two fills written over the
      kit's entry stubs, headless, name filled, one more commit on
@@ -71,60 +79,109 @@
 One idea: the seed delivers everything and decides nothing. Every
 delivery is a commit on a receipt branch, `birth-seed`, so that
 branch is the manifest — what arrived, from where, at which pin —
-while main stays at the kit's hygiene commit with the same files
-in its worktree, untracked: the newborn's agent finishes the birth
-itself by reading what is there and committing it under its own
-sequence and split (ADR-0018). The kit is
-born per the handbook's pure install, which fills its own
-mechanical birth fields; the seed also maps the playbook's steps
-into PLAN and fills its "Steps from:" line — mechanical, from
-the pins, matching the no-copy model (the newborn holds no
-playbook file). Beyond those, no field is filled: not the other
-stubs, not CLAUDE.md, no bundle birth entry. What the agent
-cannot derive (the bundle pin) rides in the seed commits'
-subjects; everything else it can.
+while main stays at the hygiene commit with the same files in its
+worktree, untracked: the newborn's agent finishes the birth itself
+by reading what is there and committing it under its own sequence
+and split (ADR-0018). The container comes from `starter/kit/`,
+this repo's copy of the handbook's kit at a pin (ADR-0024), and
+the seed fills only what is mechanical: the birth entry's two pins
+and date, two other birth dates, the working name in the two entry
+files, and the playbook's steps into PLAN with its "Steps from:"
+line. Beyond those, no field is filled: not the other stubs, no
+bundle birth entry. What the agent cannot derive rides in the seed
+commits' subjects; everything else it can.
 
 Deliberately not delivered — nothing that encodes a prior run's
 conclusions: the birth scenario, the birth fills, the pre-written
 birth entries, and no playbook file — its steps ride in PLAN. The
-agent meets the kit and the method raw. One exception, switched
-on per run (step 4, ADR-0019): the two entry files written from
-the fills — the harvest of the readings so far, delivered because
-two runs showed it cannot be derived.
+agent meets the container and the method raw. One exception, no
+longer a switch: the two entry files arrive composed, in the kit
+itself (ADR-0024). They are the harvest of the readings so far,
+delivered because two runs derived their own unaided and neither
+produced the pre-framing guard or the pin stance (ADR-0019) — a
+measurement that ended with run 2, which is why the pure and
+semi-pure paths are now one path.
 
 **1. Set the paths and capture the pins.**
 
 ```bash
 new_project_dir=~/IdeaProjects/<placeholder-name>
-handbook_dir=~/PycharmProjects/engineering/engineering-handbook
 bundle_dir=~/PycharmProjects/engineering/concept-garden/correctness-by-construction
 
-kit_pin=$(git -C "$handbook_dir" rev-parse --short HEAD)
 bundle_pin=$(git -C "$bundle_dir" rev-parse --short HEAD)
+kit_pin=$(sed -n 's/^Kit pin: `\([0-9a-f]\{7,\}\)`.*/\1/p' \
+    "$bundle_dir"/starter/README.md)
 ```
+
+No `handbook_dir`. The kit is held here at a pin, and that pin's
+one home is the Kit pin line in `starter/README.md` — read from
+there so a re-pin moves one line and this manual follows. A run is
+born without any handbook checkout existing.
 
 The name is a placeholder — everything before the briefing is
 problem-agnostic, and the briefing brings the real name.
 
-**2. Kit birth per the handbook's pure install manual**
-(`engineering-handbook/starter/installs/pure.md`), through its
-hygiene commit — by pointer, no step of that manual restated
-here. Its blocks use the same `handbook_dir` / `new_project_dir`
-variables, same terminal session. Its fills run as written: the
-kit's birth entry pin and the three birth dates — seed-mechanical,
-the kit's own. (The TEMPLATE marker it once stripped is gone from
-the kit since af16eb7: comments never reach a session, so the
-marker protected no one.)
+**2. Audit, then copy the kit.** The kit here is a copy at a pin,
+so it cannot drift from itself; what drifts is the text about it.
+Before copying, check `starter/README.md`'s kit-half section
+against `starter/kit/`'s contents — the file count, the delta
+list, the re-verify duty. A divergence found here is this repo's
+bug, and fixing it before the copy is cheaper than a run carrying
+it.
 
-**3. Cut the receipt branch and commit the deliveries there, pins
-in the subjects.** One commit per delivery; the subject is where
+```bash
+mkdir -p "$new_project_dir"
+cp -r "$bundle_dir"/starter/kit/. "$new_project_dir"/
+sed -i -e "s/<bundle-commit>/$bundle_pin/" \
+    -e "s/<handbook-commit>/$kit_pin/" \
+    -e "s/<YYYY-MM-DD> Born/$(date +%F) Born/" \
+    "$new_project_dir"/.claude/decisions.md
+sed -i "s/^Date: <YYYY-MM-DD>/Date: $(date +%F)/" \
+    "$new_project_dir"/docs/adr/0001-record-architecture-decisions.md
+sed -i "s/^## <YYYY-MM-DD>/## $(date +%F)/" \
+    "$new_project_dir"/devlog/devlog.md
+name=$(basename "$new_project_dir")
+sed -i "s/<working-name>/$name/g" \
+    "$new_project_dir"/.claude/CLAUDE.md "$new_project_dir"/README.md
+```
+
+The trailing `/.` matters: `starter/kit/*` silently skips the
+dotfiles — `.gitignore`, `.gitattributes`, `.editorconfig` — and
+the whole `.claude/` directory.
+
+The birth entry takes three placeholders now, not two: the bundle
+pin for what was delivered, the kit pin for the handbook state
+inside it, and the date. Naming both is the point — one pin
+standing for two states would be a pin that lies (ADR-0023). The
+next two `sed`s fill the other birth dates the kit carries, the
+first ADR's and the devlog's first heading: three records, one
+moment. The last fills the working name into the two entry files,
+which arrive inside the kit rather than being written over stubs.
+Every `sed` targets a placeholder and not a line number, so
+re-running the block is harmless. Installing by hand, fill the six
+placeholders yourself before the agent's first session.
+
+**3. Create the repo and land the hygiene commit** — verbatim, the
+same in every project, because the hygiene base carries no
+per-project content:
+
+```bash
+cd "$new_project_dir"
+git init
+git branch -M main
+git add .gitignore .gitattributes .editorconfig
+git commit -m "chore: add repo hygiene base"
+```
+
+**4. Cut the receipt branch and commit the deliveries there, the
+pin in the subjects.** One commit per delivery; the subject is where
 the agent later reads the pin. Main is left at the hygiene commit.
 
 ```bash
 git switch -c birth-seed
 
 git add -A
-git commit -m "chore: seed — kit remainder, pin @ $kit_pin"
+git commit -m "chore: seed — kit remainder, pin @ $bundle_pin"
 
 mkdir -p docs/concept
 cp "$bundle_dir"/concept/*.md docs/concept/
@@ -142,11 +199,15 @@ sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
     "$bundle_dir"/starter/fills/cbc-run-pure-playbook.md; echo) \
     -e '/<!-- STEPS-BEGIN/,/<!-- STEPS-END/{/STEPS-BEGIN/b;/STEPS-END/b;d}' \
     PLAN.md
-sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run-pure v4 at $bundle_pin|" \
+sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run-pure v6 at $bundle_pin|" \
     PLAN.md
 git add PLAN.md
-git commit -m "chore: seed — steps into PLAN, cbc-run-pure v4 @ $bundle_pin"
+git commit -m "chore: seed — steps into PLAN, cbc-run-pure v6 @ $bundle_pin"
 ```
+
+One pin in every subject now, the bundle's: the kit arrives
+inside the delivery rather than beside it, and which handbook
+state is inside that delivery is the birth entry's to say.
 
 The first sed is the kit's marker-keeping swap — the steps land
 between the STEPS markers and the markers stay; the second fills
@@ -161,35 +222,6 @@ manual delivers what the master holds, like every other seed
 step. The kit's first-session comment and Framing's (CbC)
 comment ride in with the steps: container orientation and a
 pointer to a delivered skill, no conclusions.
-
-**4. Semi-pure, optional: write the two entry files from the
-fills.** Each fill is cut from its title line down — the
-provenance header stays in the concept repo — with
-`<working-name>` filled by the placeholder directory name. The
-README is written over the kit's stub; the entry file lands at
-`.claude/CLAUDE.md` and the kit's root stub goes: a run builds an
-app, and an app repo keeps every agent-side file under `.claude/`
-so the tracked root is the project's alone (the harness reads
-either address as one file; the kit still ships the stub at root,
-so the seed moves it — this step's second half goes the day the
-kit ships it there). One commit, both files: the branch is a
-receipt, never merged, so the newborn's commit split does not
-govern it (ADR-0019). Skip this step for a pure run.
-
-```bash
-name=$(basename "$new_project_dir")
-sed -n '/^# <working-name>/,$p' "$bundle_dir"/starter/fills/claude-md-template.md \
-  | sed "s/<working-name>/$name/g" > .claude/CLAUDE.md
-sed -n '/^# <working-name>/,$p' "$bundle_dir"/starter/fills/readme-md-template.md \
-  | sed "s/<working-name>/$name/g" > README.md
-git rm -q CLAUDE.md
-git add .claude/CLAUDE.md README.md
-git commit -m "chore: seed — entry files from the fills, pin @ $bundle_pin"
-```
-
-No other placeholder exists in either fill; nothing else is
-filled. From this commit the two files are the newborn's own
-(ADR-0017's fill rule): edited in place, never re-copied.
 
 **5. Return to main and restore the branch tip into its worktree,
 untracked.** The branch is never merged.
@@ -212,14 +244,14 @@ concept repo's, with this prompt and nothing more:
 
 ```text
 This repo was seeded, not born whole — the branch birth-seed
-shows it: the handbook's starter kit first (the container —
-records, conventions, the entry file), then the
-correctness-by-construction bundle (the method — docs/concept/,
-five skills, the steps in PLAN), each seed commit naming its
-source's pin. Main holds the same files, untracked, on top of the
-kit's hygiene commit; the branch is a receipt, never merged. The
-kit knows nothing of the method; the bundle presumes the
-container. Your
+shows it: one delivery from the correctness-by-construction
+bundle, its container half first (the records, the conventions,
+the two entry files) and its method half after (docs/concept/,
+five skills, the steps in PLAN), every seed commit naming that
+one pin. Main holds the same files, untracked, on top of the
+hygiene commit; the branch is a receipt, never merged. Which
+handbook state the container half holds is the birth entry's to
+say. Your
 task is to finish the birth: assemble what was delivered into a
 working project — your own arrangement, the records, PLAN's
 Step 0 closed on its gates. Read the whole repository first,
@@ -238,16 +270,12 @@ briefing that opens Framing; nothing before it names the
 problem.
 ```
 
-With the semi-pure step on, the parenthetical naming the bundle
-reads instead: "(the method — docs/concept/, five skills, the
-steps in PLAN, and the two entry files, .claude/CLAUDE.md and
-README.md, written filled from the bundle's fills)". Nothing else in the
-prompt changes: what the agent does with delivered entry files is
-its own choice, and that choice is the reading's object.
+What the agent does with the delivered entry files stays its own
+choice, and that choice is the reading's object.
 
 The prompt is the session channel — it carries what is true only
-of this moment: the situation (two sources, why split, the branch
-that holds them — deletable, never merged, session-shaped truth),
+of this moment: the situation (one delivery in two halves, the
+branch that holds them — deletable, never merged, session-shaped truth),
 the task, the read-everything instruction, the expectation of a
 plan, and the review protocol. That last is session truth like the rest —
 a reviewer is present *this run* — and run 1 showed the delivered
@@ -269,8 +297,9 @@ the human's hard backstop behind it.
 **A correct seed is checkable** — before the agent starts, every
 item is a verifiable fact:
 
-- Five commits on birth-seed above the hygiene commit — six with
-  the semi-pure step on; main at the hygiene commit, its log
+- Four commits on birth-seed above the hygiene commit: the kit
+  remainder, the concept chapters, the five skills, the steps
+  into PLAN. Main at the hygiene commit, its log
   holding nothing else; main's worktree byte-identical to the
   branch tip, every delivered file listed untracked by
   `git status` (the check in step 5 prints nothing).
@@ -279,21 +308,19 @@ item is a verifiable fact:
 - PLAN's STEPS region holds the pure variant's sequence —
   identical to cbc-run-pure-playbook.md from its first step down
   at the subject's pin — both markers in place, and the "Steps
-  from:" comment names cbc-run-pure v4 at the bundle pin. No
+  from:" comment names cbc-run-pure v6 at the bundle pin. No
   playbook file exists, and no line of the region states an
   assembly conclusion.
-- The kit's own birth fills are done, per pure.md: the birth
-  entry's pin and date, ADR-0001's date, the devlog heading.
-  Beyond them, nothing is filled: every
-  stub still reads as a stub, and no bundle birth entry exists.
-  CLAUDE.md carries no content beyond the kit's — unless the
-  semi-pure step ran, in which case .claude/CLAUDE.md and
-  README.md are byte-identical to their fills from the title line
-  down with the name filled, neither carries a provenance header,
-  and no CLAUDE.md sits at the root.
+- The six birth placeholders are filled and no more: the birth
+  entry's two pins and date, ADR-0001's date, the devlog heading,
+  and the working name in the two entry files. Every other stub
+  still reads as a stub, and no bundle birth entry exists.
+  `.claude/CLAUDE.md` and `README.md` are byte-identical to the
+  kit's with the name filled, neither carries a provenance
+  header, and no `CLAUDE.md` sits at the root.
 - Nothing from the excluded list present: no birth-scenario.md,
-  no birth-fill content, no bundle birth entry; no fill's header
-  in the newborn.
+  no bundle birth entry, no provenance header from this repo
+  anywhere in the newborn.
 
 What the agent is left to do — the reader's checklist for the
 reading afterwards, not instructions delivered to it: every
