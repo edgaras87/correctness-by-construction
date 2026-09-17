@@ -35,39 +35,49 @@ why a read is not guarded by asking. States what a skill still
 carries, what a manual holds, how a verdict reaches a run, and that
 a run still does not read this repo.
 
-**3. `docs(starter): the notes move to manuals, the skills ship lean`**
-Five manuals under `starter/manuals/`, one per skill, each holding
-that skill's provenance and every harvest line verbatim — nothing
-is rewritten and nothing is lost. The twenty-one bundle files lose
-their note blocks in the same commit: split apart, a revert of
-either half would drop the notes on the floor. Provisional in one
-respect: if the diff proves unreviewable at the boundary it splits
-per skill, five commits, and the plan is revised first.
+**3–7. `docs(starter): <skill>'s notes move to its manual`**, one
+commit per skill — cbc-framing, cbc-bootstrap, cbc-slice,
+infra-establish, infra-serve. Each commit writes that skill's manual
+under `starter/manuals/` and strips that skill's files in the same
+breath: split apart, a revert of either half would drop the notes on
+the floor. One skill per commit because the edit is not mechanical —
+see the plan's decisions below.
 
-**4. `docs(starter): the Harvest section names the new reply channel`**
+**8. `docs(starter): the Harvest section names the new reply channel`**
 `starter/README.md`'s Harvest section rewritten from the harvester's
 seat: a run's change may arrive already made in its copy, so the
 harvest is a diff against the pin, not a reading of prose; the
 verdict goes back as a document at the re-pin; the provenance stays
 in the manual. This is the half of run 3's ask that it can act on.
 
-**5. `docs(temp): the reply to run 3`**
+**9. `docs(temp): the reply to run 3`**
 The verdict document, in this repo's `temp/` for the operator to
 carry: its ask taken, what changed about the channel and why, and
 the second item its handoff did not carry — whether infra-establish
 should say that a contract carries a facility paragraph and where
 the face is chosen.
 
-**6. `docs: records for the notes leaving the bundle`**
+**10. `docs: records for the notes leaving the bundle`**
 The devlog entry, TODO lines for what the set leaves open, and
 ADR-0022 flipped to Accepted — the set's final records commit, never
 the close.
 
-**7. `docs(agent): close change-plan for the harvest notes leaving the bundle`**
+**11. `docs(agent): close change-plan for the harvest notes leaving the bundle`**
 Deletes this file; the body carries what diverged. Run 3's handoff
 leaves `temp/` here too, served.
 
 ## Decisions taken inside this plan
+
+**The strip is a judgment per line, not a block deletion.** A
+template's header mixes both kinds. `.env.example` says "Extracted
+2026-08-28 from checkout-system's lived .env.example" — record — and
+"Copy into a run and fill; the filled file is the run's own" —
+instruction. `testcontainers.properties` carries a lived trap in its
+header: it binds only from `$HOME`, never the project root. Those
+stay; the extraction and harvest lines around them go. ADR-0022's
+test is the reader, and here it does real work rather than naming a
+block. That is why the move runs one skill per commit: eight files
+for cbc-bootstrap alone, each needing the test applied by hand.
 
 **One line stays in the shipped skill: what it derives from.** "Derives
 from concept v1" is instruction, not record — it tells a run the skill
