@@ -112,18 +112,45 @@ definitions (ADR-0006) — the skills carry the method whole.
 ## Harvest — how a run's lesson lands here
 
 A run's surprise about an execution travels through records
-(docs/models/tiers.md): the run records it in its own log and may
-fix its own copy; this repo reads that record — read-only, a
-harvest never edits a run — and updates the authoritative copy
-here, in the run's own wording. The change is logged as one dated
-harvest line in that execution's provenance header, which travels
-with every future copy. The pin is untouched and no concept
-version bumps unless the mental layer itself changed; CHANGELOG
-carries concept versions only. The archive's copy stays a
-historical snapshot — visibly stale is its job. Why this shape:
-ADR-0007. A harvest line, like every citation of this repo's
-decisions in the bundle, writes the number as `CBC ADR-nnnn`: the
-bundle is copied verbatim into runs, where a bare number is the
-run's own (ADR-0020, which swept the existing citations once,
-without a header line per file). Text that stays in this repo —
-this doc, the fills, the seed, the records — cites bare.
+(docs/models/tiers.md): the run records it in its own log, and it
+may have fixed its own copy already. This repo reads that record —
+read-only, a harvest never edits a run — and updates the
+authoritative copy here, in the run's own wording.
+
+**The change may arrive already made.** A run may edit its copy
+between two pins, under rules it keeps and logs (ADR-0022). When it
+has, the harvest is a diff of that copy against the pin rather than
+a reading of prose, and each hunk is taken, reshaped or declined;
+the run's provenance carries into the commit that takes it. When it
+has not, the harvest is the reading it always was. Either way the
+run sends nothing and this repo reaches into nothing.
+
+**The commit is the record.** There is no harvest line in a shipped
+file any more: a file here carries instruction only, and what
+changed is the commit that changed it, whose subject states it and
+whose body says why (ADR-0022). `git log --follow` over a bundle
+path is that file's history; the devlog entry of the date is the
+session around it.
+
+**Ask what the run teaches the worked example.** The harvest walks
+the skills and their workflows by habit, and the worked example
+sat untouched through three runs because nobody asked. It is
+bundle content like the rest. Its smallness is deliberate, so the
+question is what this run teaches the example — not whether a
+lived framing would make a better one.
+
+**The verdict goes back as a note**, carried to the run with its
+next copy: what was taken, reshaped or declined, and why. A
+declined edit is gone at the re-pin and never edited back; what the
+run still needs goes into the run's own records.
+
+The pin is untouched and no concept version bumps unless the mental
+layer itself changed; CHANGELOG carries concept versions only. The
+archive's copy stays a historical snapshot — visibly stale is its
+job. Why this shape: ADR-0007, amended by ADR-0022.
+
+Every citation of this repo's decisions in a file the bundle ships
+writes the number as `CBC ADR-nnnn`: the bundle is copied verbatim
+into runs, where a bare number is the run's own (ADR-0020). Text
+that stays in this repo — this doc, the fills, the seed, the
+records — cites bare.
