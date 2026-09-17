@@ -174,6 +174,99 @@ Notes: own change-plan. Authored at Step 5's close —
 checkout-system makes the extraction lived, not speculative, and
 ADR-0007 gives it its discipline.
 
+## Step 7: The delivery takes shape                 [x] 2026-09-17
+
+Goal: a run can be born from here and updated afterwards, by a
+written procedure rather than by a session's memory.
+Gate:
+- [x] `starter/` holds the delivery in three parts with one rule
+      each — `bundle/` copied as files, `fills/` written into the
+      kit's own files, `installs/` staying home (ADR-0010, 0017).
+- [x] Birth is one procedure of record, the pure seed: every
+      delivery a commit on the `birth-seed` receipt branch, main
+      left at the kit's hygiene commit, the newborn's agent
+      finishing the birth itself (ADR-0016, 0018, 0019).
+- [x] Three runs seeded and read; the entry files ship filled
+      because two runs showed they cannot be derived (ADR-0019).
+- [x] Update has a procedure too: `starter/installs/bundle-update.md`,
+      the note and the copy, after run 3's re-pin ran without one.
+- [x] A shipped file carries instruction only — 455 lines of
+      provenance and harvest notes left 28 files, and the exchange
+      replaces the channel they were standing in for (ADR-0022).
+- [x] The conventions are held and current: seven registered, four
+      re-pin rounds (09-03, 09-09, 09-11, 09-17), the last absorbing
+      a total rewrite of all four skills.
+Records: ADR-0009 through ADR-0022, the registry, devlog.
+Notes: authored retroactively at Step 8's opening — this arc ran
+from 2026-09-01 to 09-17 with the ADRs and devlog as its record and
+no step around it. The gate items state what is true now, not a
+sequence that was planned; a plan step written after the fact can
+do no more than that honestly.
+
+## Step 8: The kit comes here                       [~] opened 2026-09-18
+
+Goal: a run has one upstream, one pin, one procedure — the kit as
+we hold it and the bundle on top, composed here and tested together
+before a run sees it.
+Gate:
+- [ ] ADR-0023 and ADR-0024 accepted at this step's close, or
+      rewritten at a boundary and accepted as rewritten.
+- [ ] `starter/kit/` holds the handbook's kit at a pin, at their
+      path name, thirteen of sixteen files byte-identical.
+- [ ] The delta list is stated with a reason per line and stands
+      under its ceiling — a third of the kit's files (ADR-0024).
+- [ ] `starter/fills/` is absorbed and the category retired;
+      ADR-0017's three-way split reads `kit/` and `bundle/` land,
+      `installs/` stays.
+- [ ] `pure-seed.md` step 2 is gone: no step of this repo's birth
+      runs another repo's bash in our shell at an unpinned commit.
+- [ ] The birth entry in the delivered `.claude/decisions.md` names
+      both upstreams, and the registry entry states what the pin
+      claims — derived from, delta list, last read (ADR-0023).
+- [ ] `starter/README.md` and `bundle-update.md` are true for the
+      new shape; the assumed-surface contract is gone from both.
+Records: ADR-0023, ADR-0024, the registry, devlog.
+Notes: the take is measured, not estimated — 16 files, 926 lines,
+13 untouched, 3 flavoured and those 3 already held as fills. Needs
+its own change-plan. The letter to the handbook is written and held
+in `temp/`, and goes after this step with lived numbers (ADR-0024
+decision 10).
+
+## Step 9: The groups                               [ ]
+
+Goal: what this repo ships is named as the three things it is — the
+work kit, the concept and the skills derived from it, and the
+practice executions shaped by one stack — so a CbC project that is
+not Spring and Postgres can be born from the first two.
+Gate:
+- [ ] An ADR naming the groups, their boundaries and their pins;
+      the existing evidence weighed in it (the derives-from versus
+      checked-against split of ADR-0005, the reference held out of
+      the bundle by ADR-0021, six templates all in one group).
+- [ ] The stack-shaped group is named for the stack it assumes,
+      not for the tier it serves.
+- [ ] Each group is copied whole or not at all, with anything
+      *about* a group kept beside it and never inside it.
+Notes: stands whether or not Step 8 lands; raised by the user at
+Step 8's opening.
+
+## Step 10: One delivery, run for real               [ ]
+
+Goal: the composed delivery used to birth and carry a project, so
+the design has two shapes behind it rather than one.
+Gate:
+- [ ] A project born from this repo alone, holding one pin.
+- [ ] One update delivered to it under `bundle-update.md`, the note
+      and the copy both, so the manual has run end to end.
+- [ ] The letter goes up with lived numbers: what the take cost,
+      what the manual taught, the defect report, the constraint.
+- [ ] Run 3 migrated from two pins to one, or the reason it is not
+      recorded.
+Notes: the sketch's "use it for a project or two, then stop —
+design nothing further until there is a second shape to design
+from." Purifying the handbook's own kit is their work, not a step
+here; it waits on their reading of the letter.
+
 ## Step N: Release                                  [ ]
 
 Goal: concept v1 consultable — a stranger (or future-you) can
