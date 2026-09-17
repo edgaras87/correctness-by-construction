@@ -232,6 +232,51 @@ handbook, it comes through here, slower and traceable.
   would have to name both, which is two pins wearing one coat —
   acceptable if we say so, dishonest if we do not.
 
+## What the handbook's repo-shapes drafts do to this
+
+Read 2026-09-17, after this draft was written, arrived as thinking
+and binding nothing (`from-handbook-2026-09-17-*`).
+
+**Their model states the shape this proposal contradicts.** Its §4:
+*"A run owns a problem. It is born with the kit, takes a concept's
+bundle on top (kit first, bundle second)."* Two upstreams, written
+as fact rather than as a question. Their gap list B3 recommends
+folding the model into `models/tiers.md`, which we vendor pinned.
+So the sentence this proposal argues against may arrive as a
+delivery.
+
+**That is not a reason to hurry, and not something to decline.**
+Nothing is delivered yet; a draft in their `temp/` binds nothing.
+And when it does arrive, we take it whole. That is the rule we
+wrote for a run three days ago and it binds us the same way: a pin
+naming a state the receiver reworded is a pin that lies, and a
+disagreement goes up as a handoff, never into the copy. If §4 is
+wrong for us, the answer is evidence sent upward, not an edited
+model held here.
+
+**They have already built the door.** Their §7 names three things
+that would refute the model, and one is close to what this proposal
+would show — that the maintainer/spender line is a boundary rather
+than a spectrum, and that a concept repo's shape may not follow the
+handbook's. They expect to be wrong somewhere.
+
+**Two pieces of their thinking are directly useful to step 2, and
+were not in this draft before.** *Bases, not stubs*: what a
+receiver gets is complete and usable as delivered and designed to
+be extended locally, which is what the bundle's kit would ship, and
+it is not the word `stub`. And *only the set is copied*: the
+artifacts of every bucket assembled into one thing copied whole,
+with anything *about* the set kept beside it and never in it. That
+second one is the shape `starter/` already has, and it is the test
+for whether the bundle's kit is built right.
+
+**One thing owed, and it is not a reply.** Their letter asks for
+exactly one thing, whenever it happens: that `bundle-update.md`
+having run for real, we say what it taught, or that it taught
+nothing. Building the bundle's kit and running one delivery
+produces that message. Sending them this proposal first would be
+more paper, which is the thing they just declined to write.
+
 ## Scope: one of the two derivations moves, not both
 
 Settled with the user 2026-09-17, and it halves the work.
