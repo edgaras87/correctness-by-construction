@@ -1,7 +1,14 @@
 # 0022. The notes go; the exchange is a note and a copy
 
 Date: 2026-09-17
-Status: Proposed
+Status: Accepted (2026-09-17, at the set's final records commit;
+opened Proposed per change-plans §4 and rewritten twice at
+boundaries — the manual per skill drafted and abandoned when git
+history proved it a third copy, then the decision widened from a
+reply document to the exchange itself, the user's design. The
+strip is in place across 28 files; the procedure it needs is
+starter/installs/bundle-update.md; the first run to exercise the
+exchange is never-oversold, whose note went out with this set)
 
 ## Context
 

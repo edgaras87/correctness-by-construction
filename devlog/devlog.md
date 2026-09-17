@@ -6,6 +6,82 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-17, later  (the harvest notes leave the bundle; the exchange replaces them)
+
+- Two questions turned out to be one. Run 3's handoff asked whether
+  a run may edit its copy of a method skill between two pins, and
+  named its channel — our verdict read "as a document or as the
+  header line the run sees at its next copy". We asked separately
+  whether the skills could be as lean as the handbook just made its
+  conventions. The notes the second question removes are the
+  channel the first uses; run 3's own registry says so, calling the
+  harvest lines "the record of what was taken". ADR-0022 answers
+  both: yes to the edit, no to the channel, and the exchange — a
+  note and a copy, the same both directions — in place of it.
+- DEAD END, and it cost a written commit: a manual per skill under
+  starter/manuals/, holding every removed note verbatim. cbc-framing's
+  was written, staged and shown before the check ran. `git log
+  --follow` on templates/registry.md returns the header's own
+  harvest lines as commit subjects — ec8e504, dd481ea, 7531281 are
+  three of them word for word — and the commit bodies say more than
+  the headers did. ADR-0007 had already listed that shape and
+  rejected it, in its own words "a second log for what git history
+  and the file itself can already record". The user saw it first
+  and asked why we could not just put it in the records. Kept as
+  ADR-0022's option 5 rather than deleted, so it is not re-proposed
+  in three months.
+- The strip: 28 files, 520 lines out, 16 in. The cut is per line,
+  not per block — a template header mixes a copy-and-fill
+  instruction and a lived trap in with the extraction record, and
+  a block rule would have deleted the trap that binds
+  testcontainers.properties to $HOME. Every dropped harvest line
+  was checked against the body first; each one recorded a change
+  the body already carries. The two .sql templates needed the
+  boundary placed by hand, their bodies opening with -- comments
+  too.
+- One thing moved rather than went: the worked-example twin rule —
+  the two copies are identical, a change to one lands in both — is
+  a standing rule, not a record of a past change, and had no live
+  home once the headers went. It is in ARCHITECTURE's executions
+  section. With both headers gone the twins are byte-identical, so
+  diff now checks what a sentence used to assert, which closes the
+  TODO line recording the discrepancy.
+- The exchange, the user's design, arrived mid-set and was the best
+  turn in it. A note is not a wrapper for a path — it is an
+  insight: the sender reads the receiver's records, evaluates, and
+  writes where you stand, what changed, why it matters to you, what
+  it recommends, told not delivered. We had the worked example
+  already: the handbook's note of 09-16, which we verified in the
+  material rather than complying with. And the path question
+  dissolves — a good note plus the files is complete, so reaching
+  for a path is the diagnostic that the note was thin, not
+  something to forbid. A run gets a copy in its own temp/, never a
+  path: our records hold our readings of the run, and a run that
+  can read its own assessment stops being an independent instance.
+- Two gaps the set had to fill. starter/installs/bundle-update.md
+  did not exist — pure-seed.md covers birth and nothing after it,
+  and run 3's one re-pin ran without a written procedure. And the
+  handbook's parked exchange item names its trigger as "a second
+  endpoint speaking it — a second concept repo, or a run repo
+  injecting from a concept"; the second clause is now true, so the
+  hand-off went up with four pieces its five points do not reach,
+  including that its "the compare survived" narrows again for a
+  receiver holding no checkout, whose compare runs against its own
+  delivery commit.
+- Three questions from the user parked with triggers rather than
+  settled: whether the worked example anchors a run's framing (no
+  evidence in three runs; one weak signal, both landing on "one
+  area", which has two explanations); whether the twin should be
+  deduplicated; and whether a project could ever need its own mould
+  of a skill, where run 3's rejected overlay is the named fallback.
+
+Resume: the set closes on the word, then main fast-forwards. Then
+two documents wait in temp/ for the operator to carry — the
+hand-off to the handbook, and the note to run 3, which goes with
+run 3's next bundle copy under the new procedure. Nothing is owed
+here until one of them is answered, or until run 3's in-place rule
+fires for the first time, which neither of us has watched.
+
 ## 2026-09-17  (the handbook delivery @ ba7eaa4, taken under a note; run 3's ask parked one set out)
 
 - A note arrived in temp/ on 09-16, told not delivered: the kit

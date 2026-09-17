@@ -275,7 +275,10 @@
       commits carry the derivation and the file ends in the
       workflow's order L1→L5; the worked-example twins claim
       byte-identity and differ in line 3, the provenance path
-      (diff confirms it in starter/bundle/ too). One change-plan,
+      (diff confirms it in starter/bundle/ too — resolved
+      2026-09-17: both headers are gone and the two files are
+      byte-identical, checked by diff, and ARCHITECTURE carries
+      the fact). One change-plan,
       pinned copies in the runs untouched until a re-pin.
 
 - [ ] Pure-seed experiment (2026-09-05, user's design) — separate
@@ -1170,6 +1173,53 @@
 
 ## Later / someday
 
+- [ ] Does the worked example anchor a run's framing? Raised
+      2026-09-17 by the user, while the header notes were being
+      cut: an invented example of a tiny order service, its slice
+      an idempotency one, could steer a run toward that shape
+      whatever its own problem is. No evidence yet — no record in
+      three runs, and run 3 framed over-admission under contention,
+      a different problem with a different invariant. One weak
+      signal, unresolvable from here: the example and run 3 both
+      land on one area, which either means anchoring or means
+      small systems have one area. The skill already scopes the
+      example to "unsure what a step's output looks like" and the
+      example calls itself invented for teaching. Trigger: the next
+      framing read on a differently shaped problem — if it still
+      lands on one area and an idempotency-flavoured first slice,
+      that is the signal. The answer then is a second example on a
+      different shape, never deleting the one we have: it is the
+      only place in the bundle that shows finished output rather
+      than procedure, and Part 2 shows the seam between two skills
+      that neither can show alone.
+
+- [ ] Deduplicate the worked example. It is one document shipped
+      twice, identical in both skills' references/, so either
+      skill's directory stands alone. The cost is 202 duplicated
+      lines; the cost of merging is a skill pointing into another
+      skill's directory, so cbc-slice could not be installed
+      without cbc-framing. Nothing has ever needed that. Since
+      2026-09-17 the copies are byte-identical with no headers, so
+      diff polices the duplication and nothing can rot silently.
+      Trigger: a reason to install one skill without the other.
+
+- [ ] Could a project need its own mould of a bundle skill?
+      Raised 2026-09-17 by the user, and deliberately not built
+      for. The answer today: a skill is the same for every
+      project, and what one project alone needs goes into that
+      project's own committed records — its entry file, a gate
+      item, an ADR — never into the copy, and never into an
+      operator's local file, which belongs to one person on one
+      checkout. The gap that could force the question: a declined
+      edit the project genuinely needs in the skill's behaviour,
+      where a record states it but the agent reads the skill. Run
+      3 named the fallback for exactly that and rejected building
+      it — an overlay file per skill beside the pinned copy,
+      holding project-specific behaviour, at the cost of a second
+      file per skill and a prune at every re-pin. Trigger:
+      declined-but-needed becoming a pattern rather than a
+      possibility.
+
 - [ ] The handbook's invitation, 2026-09-16, not owed and not a
       condition of anything: when we next author or restructure
       something of our own, notice what we had to invent because
@@ -1214,7 +1264,10 @@
       prompt where the why lives, since the receipt cannot carry it
       and the run's §8 points at a checkout on disk otherwise.
       Every future kit update to a run needs it; the pure seed's
-      birth block is the model.
+      birth block is the model, and since 2026-09-17 so is
+      starter/installs/bundle-update.md, which answers the same
+      gap for the bundle — who does what, the copy staged in the
+      run's own temp/, the note beside it.
 
 - [ ] Prebuilt CbC stub — a cache of the birth scenario's output,
       versioned, so a birth becomes one copy plus a briefing with
