@@ -62,6 +62,49 @@ everything after birth is `starter/installs/bundle-update.md`
 stands (ADR-0009): their kit supplies the container, this bundle
 overlays the method.
 
+## The kit half — held here at a pin
+
+`starter/kit/` is this repo's copy of the handbook's starter kit,
+at their path names so a compare is a directory diff with nothing
+to map. Pinned to the handbook @ `ba7eaa4`, taken 2026-09-18
+(ADR-0024). Fourteen of its sixteen files are byte-identical to
+the master; two carry a composed body and a third a changed birth
+entry.
+
+A run receives the kit and the bundle as one delivery with one
+pin, and that pin claims what ADR-0023 decision 8 says it claims:
+derived from the handbook at this hash, with the delta below, last
+read on the date the registry entry names. Both hashes are written
+down, here and in the delivered birth entry — one pin standing for
+two states would be a pin that lies.
+
+**The delta — one line per departure, with its reason.**
+
+| What departs from the master | Why |
+|---|---|
+| `CLAUDE.md` is absent from the root; the kit ships it at `.claude/CLAUDE.md` | a run builds an app and the root is the app's. This was the seed's step-4 `sed` until the kit came here; now it is the artifact |
+| `.claude/CLAUDE.md` carries a body composed here, not the kit's stub | two runs derived their entry file unaided and neither produced the pre-framing guard or the pin stance (ADR-0019). A whole file, copied never merged (ADR-0015) |
+| `README.md` carries a body composed here, not the kit's stub | the same reading and the same delivery rule |
+| `.claude/decisions.md`'s birth entry, and the comment above it, name both upstreams | the delivery has two parents and the record must say so (ADR-0023 decision 8) |
+
+Three files of sixteen. The ceiling is a third — pass it, or find a
+departure that cannot be stated in one sentence with its reason,
+and the take was the wrong shape and ADR-0024 is revisited rather
+than extended.
+
+**The re-verify duty inside the two composed files.** Each carries
+text that is the kit's own, held verbatim, and their
+agent-arrangement convention holds that half's rules:
+`.claude/CLAUDE.md` keeps the title line, the records table with
+its comment, and the guard comment; `README.md` keeps the records
+table and both its comments. The rest of each file is this repo's,
+harvested from the runs' own derivations — the orientation, the
+CbC pointer, the pre-framing guard, the pin stance, the
+`docs/system/` and System rows, the Local rules. At every re-pin,
+re-verify the kit's half against their entry files at the new pin;
+a re-pin that moves the four skills and leaves these unchecked
+leaves the record claiming a check it did not make.
+
 ## The contract
 
 The overlay assumes exactly three things of the kit — the plan's
