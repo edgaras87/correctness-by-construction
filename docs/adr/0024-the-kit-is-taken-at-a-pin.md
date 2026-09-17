@@ -32,6 +32,12 @@ the kit ships it there" — and the kit's entry-file text carried
 verbatim in the fills. The adaptation layer is not a proposal. It
 exists, as a `sed` command with a wish attached.
 
+The handbook has already written this role down. Its TODO, since
+their ADR-0041: "every maintainer repo is both sides — the handbook
+receives its own kit and sends to CbC, CbC receives and sends to its
+runs. Only a run is receiver-only." That is this decision in their
+words, and the kit half is the part that was never made true.
+
 The objection that stood in the way — two masters, so the compare
 dies — is answered by ADR-0023: a compare is a reading over two
 diffs, and the diff that survives two masters is our copy against
@@ -152,7 +158,17 @@ sixteen has the answer in it already.
    last read on this date. One pin that hides which kit is inside it
    would be a pin that lies.
 
-8. **The assumed-surface contract ends**, and with it ADR-0009's
+8. **No back door.** The chain runs one way in each direction and
+   has no special case: a run does not contact the handbook
+   directly, and the handbook does not reach a run except through
+   here. A back door that exists is used, and then there are two
+   chains *plus* a rule about which applies, which is worse than the
+   two chains this decision exists to end. What a run needs from the
+   handbook comes through here — slower, and traceable. What the
+   handbook needs from a run is section 4's cost, paid in reports we
+   owe rather than in a channel we keep open.
+
+9. **The assumed-surface contract ends**, and with it ADR-0009's
    two-copy birth. There is no contract to hold when the shapes are
    ours: `starter/README.md`'s three assumptions — the STEPS region,
    the step/gate idiom, the playbook vendor base — stop being things
@@ -161,18 +177,29 @@ sixteen has the answer in it already.
    system, CbC owns method content. ADR-0016 stands; `pure-seed.md`
    loses its step 2 and shrinks.
 
-9. **Three things go up before the take lands**, as observation and
-   not request. The constraint: whatever their pure kit becomes,
-   ours should be derivable from it — not "change for us", but "here
-   is the shape that exists; pure should be able to produce it".
-   The cost they are about to pay: runs are their only field data
-   about the kit outside their own repo, their ADR-0035 gate was
-   withdrawn on a run's report and their ADR-0038 came from a run's
-   hand-off, and interposing this repo removes that channel; we owe
-   them kit-level findings explicitly in its place, and whether that
-   is as good is genuinely unknown. And the finding: `ARCHITECTURE.md`
-   is right below and wrong above, which is a defect report about
-   one stub, not a preference about who owns method.
+10. **Three things go up after the take, in one letter**, as
+    observation and not request. Not before: the handbook asked for
+    exactly one thing, whenever it happens — that `bundle-update.md`
+    having run for real, we say what it taught or that it taught
+    nothing — and the take running is what produces that message.
+    Sending the case first and the report later is two letters where
+    one will do, which is the paper they had just declined to write.
+    The timing risk is accepted with open eyes: their repo-shapes
+    model's §4 states two upstreams as fact and may reach us folded
+    into `models/tiers.md`, which we vendor pinned. If it arrives
+    first we take it whole and send our evidence after, which is the
+    rule we handed a run three days ago and which binds us the same
+    way. The constraint: whatever their pure kit becomes,
+    ours should be derivable from it — not "change for us", but "here
+    is the shape that exists; pure should be able to produce it".
+    The cost they are about to pay: runs are their only field data
+    about the kit outside their own repo, their ADR-0035 gate was
+    withdrawn on a run's report and their ADR-0038 came from a run's
+    hand-off, and interposing this repo removes that channel; we owe
+    them kit-level findings explicitly in its place, and whether that
+    is as good is genuinely unknown. And the finding: `ARCHITECTURE.md`
+    is right below and wrong above, which is a defect report about
+    one stub, not a preference about who owns method.
 
 ## Consequences
 
