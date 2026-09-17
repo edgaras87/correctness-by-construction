@@ -66,18 +66,28 @@ insert, and the stale literal in it is fixed: the `sed` writes
 two versions. Provisional: what the seed becomes is visible only
 once the kit is in place, and the step count may change.
 
-**5. `docs(starter): the delivery docs lose the contract`**
+**5. `docs: the conventions' manuals, vendored`**
+ADR-0024 decision 5 says the seven manuals come here at a pin and
+no step of this plan did it — decided and unimplemented until the
+user asked at step 5's boundary. `docs/conventions/` mirrors their
+tree verbatim, all eleven files: the seven manuals, their own
+README, and the three java-spring hygiene overlay parts.
+`docs/conventions.md` sits beside the directory and carries the
+pin, the read-only rule and the compare — about the set, never in
+it.
+
+**6. `docs(starter): the delivery docs lose the contract`**
 *(provisional)*
 `starter/README.md`'s contract section and its two-kinds-of-delivery
 table, and `bundle-update.md`, made true for a delivery that
 carries its own container. Provisional for the same reason.
 
-**6. `docs: the shape after the kit`**
+**7. `docs: the shape after the kit`**
 `ARCHITECTURE.md` — the kit as a component, a codemap row for
 `starter/kit/`, the pinning invariant widened — and `README.md` if
 the front door no longer describes what this repo ships.
 
-**7. `docs(adr): accept 0023 and 0024, and close Step 8`**
+**8. `docs(adr): accept 0023 and 0024, and close Step 8`**
 The set's final records commit: both ADRs flip to Accepted, PLAN
 Step 8's gate items close naming the commits that closed them, and
 anything the work discovered is triaged into TODO. **ADR-0024's
@@ -85,7 +95,11 @@ decision 3 is corrected here** — it lists `PLAN.md` among the
 flavoured files, which option B makes false. A Proposed ADR out of
 step with the work mid-set is what Proposed is for; PLAN Step 8's
 gate already provides for "rewritten at a boundary and accepted as
-rewritten".
+rewritten". **Decision 5 gains its second half** — the manuals are
+read-only because they explain *their* artifacts, and anything we
+flavour needs an explanation that is ours to write: the delta list
+is that explanation today, and it graduates into manuals here when
+it outgrows a table.
 
 ## Decisions taken inside this plan
 
@@ -113,6 +127,17 @@ not divergence.
 
 **No CHANGELOG entry.** It is the concept-version log (ADR-0003) and
 the mental layer does not change here.
+
+**`convention-lifecycle` is not flavoured, and nothing had to be.**
+Its §3 step 1 tells a project to diff the handbook — which a
+one-chain run cannot reach — and the same paragraph already answers
+it: "the handbook is a checkout on disk or the payload a handoff
+carries; the protocol is git either way." Our delivery is that
+payload. What the manual owes a run is one sentence naming which
+payload is its handbook and at which hash, not an edit to their
+rule. The finding that goes up instead: their sentence assumes the
+payload comes from the handbook itself, and does not name the case
+where an intermediary carries their files at a pin it chose.
 
 **The playbook stays a document, and the insert stays with it** —
 the user's call at step 2's boundary, over retiring it into
