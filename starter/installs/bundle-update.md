@@ -50,8 +50,17 @@ If the run edited its copies, diff them against what it received,
 using the run's own history, not ours:
 
 ```bash
-git -C "$run_dir" diff <run's-delivery-commit> -- .claude/skills/cbc-\* .claude/skills/infra-\*
+git -C "$run_dir" diff <run's-delivery-commit> -- \
+  .claude/skills/cbc-framing .claude/skills/cbc-bootstrap \
+  .claude/skills/cbc-slice .claude/skills/infra-establish \
+  .claude/skills/infra-serve docs/concept
 ```
+
+The five and the concept chapters — everything the run holds from
+here. The run's `.claude/skills/` also holds the handbook's four
+conventions; those are not ours to read. Named rather than globbed,
+as everywhere else in this manual: a `cbc-*` pattern would also
+catch a skill of the run's own.
 
 Empty means no local layer. Non-empty is the hand-off: each hunk is
 taken, reshaped or declined, in our own wording, in the commits
@@ -63,18 +72,20 @@ below.
 **3. Stage the copy and the note in the run's `temp/`.** (operator)
 
 ```bash
-mkdir -p "$run_dir/temp/bundle-$new_pin"
+mkdir -p "$run_dir/temp/bundle-$new_pin"/concept
 for s in cbc-framing cbc-bootstrap cbc-slice infra-establish infra-serve; do
   cp -r "$bundle_dir"/starter/bundle/"$s" "$run_dir/temp/bundle-$new_pin"/
 done
+cp "$bundle_dir"/concept/*.md "$run_dir/temp/bundle-$new_pin"/concept/
 cp "$bundle_dir"/temp/<the-note>.md "$run_dir/temp/"
 ```
 
 Nothing is overwritten yet. The run sees what is coming before it
 takes it.
 
-If `concept/` changed, it is staged the same way and lands at the
-run's `docs/concept/`; it usually has not.
+The concept chapters are staged every time, changed or not, so the
+run compares rather than trusts a claim that they did not move.
+They usually have not.
 
 **4. The run evaluates and takes it whole.** (the run's agent)
 
@@ -85,6 +96,7 @@ against what it holds. Then it takes the whole thing:
 for s in cbc-framing cbc-bootstrap cbc-slice infra-establish infra-serve; do
   rm -rf .claude/skills/$s && cp -r temp/bundle-<pin>/$s .claude/skills/
 done
+cp temp/bundle-<pin>/concept/*.md docs/concept/
 ```
 
 Whole, never re-derived. A pin names an exact state, and a copy the
