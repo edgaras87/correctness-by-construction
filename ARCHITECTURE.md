@@ -102,7 +102,7 @@ ADR-0010, ADR-0016, ADR-0017, ADR-0018, ADR-0019.
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
-| `starter/` | The delivery layout (ADR-0010, ADR-0017): `bundle/` is what a run copies as pinned files (the five skills); `fills/` is text written into the kit's own files (the playbook's steps; the two entry-file fills, ADR-0019); `README.md` describes and maps; `installs/pure-seed.md` is the birth manual (ADR-0016) |
+| `starter/` | The delivery layout (ADR-0010, ADR-0017): `bundle/` is what a run copies as pinned files (the five skills); `fills/` is text written into the kit's own files (the playbook's steps; the two entry-file fills, ADR-0019); `README.md` describes and maps; `installs/` holds the two operator manuals — `pure-seed.md` for birth (ADR-0016) and `bundle-update.md` for every update after it (ADR-0022) |
 | `docs/baselines/` | Held baselines — artifacts withheld from delivery, blind to newborns, compared against lived results: the frozen playbook (ADR-0012) and the Spring slice reference, handed to a run only after its build is on record (ADR-0021) |
 | `docs/models/` | Handbook models, vendored pinned copies (ADR-0002) |
 | `docs/adr/` | Architecture decision records |

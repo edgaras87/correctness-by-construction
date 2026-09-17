@@ -55,7 +55,10 @@ The birth procedure itself is the install manual,
 seed: every delivery a commit on the receipt branch `birth-seed`,
 pins in the subjects, main left at the kit's hygiene commit with
 the same files untracked (ADR-0018), the newborn's agent finishing
-the birth by committing them under its own sequence. The two-birth composition
+the birth by committing them under its own sequence. Its peer for
+everything after birth is `starter/installs/bundle-update.md`
+(ADR-0022) — the note and the copy, staged in the run's own
+`temp/`, taken whole, the pin recorded by the run. The two-birth composition
 stands (ADR-0009): their kit supplies the container, this bundle
 overlays the method.
 
