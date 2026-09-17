@@ -442,3 +442,31 @@
   starter/installs/pure-seed.md's "change-plans §6" still names the
   review protocol and is not carried. The ADRs' "per change-plans
   §4" lines are history and stand.
+
+- 2026-09-18 Local rule: a path written in a document of this repo
+  is written from the repo root, never relative to the file it
+  sits in. In anything this repo ships, the root meant is the
+  receiving repo's — a shipped file names `docs/concept/00-cbc.md`,
+  never `../concept/`, and never a path of ours.
+  Why: found the same day, in the material. The handbook's
+  convention manuals cite each other and the repo around them
+  relatively; vendored to `docs/conventions/` they were read from
+  a different root, and of the four links reaching outside their
+  own directory, two dangled — `../../starter/README.md` and
+  `../../starter/playbooks/` resolve to `docs/starter/...`, which
+  does not exist here — while `../../models/tiers.md` and
+  `../../models/agent.md` resolved only because `docs/models/` is
+  where we happen to keep them. Two broken, two saved by accident,
+  in one copy of one directory. Every artifact this repo makes is
+  read from a root other than the one it was written at: the kit,
+  the bundle, the fills, the vendored manuals. A relative path is
+  a bet that the tree above a file travels with it, and here it
+  never does.
+  Rejected: fixing the vendored manuals' links — they are
+  read-only and correct where they were written, and an edit
+  would fork the explanation (ADR-0024 decision 5); the dangle is
+  recorded in `docs/conventions.md` as a known consequence
+  instead. Also rejected: filesystem-absolute paths, which name
+  one person's checkout — `~/PycharmProjects/...` appears in the
+  install manuals as an operator's variable and stays there,
+  which is a different thing from a path inside a document.
