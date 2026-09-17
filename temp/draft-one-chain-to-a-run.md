@@ -74,6 +74,121 @@ Vendored, it ships a kit for anyone, and adapting it is our job.
 note. `bundle-update.md` becomes a whole manual instead of half of
 one.
 
+## The kit is not neutral, and here is the evidence
+
+Raised by the user 2026-09-17: the kit cannot be the same thing for
+everyone, because a handbook, this repo and a run are different
+kinds of repo. Checked, and the strongest instance is the kit's
+`ARCHITECTURE.md` stub:
+
+```
+## Invariants
+<!-- What must NEVER happen to the data / system, and where each rule
+     is enforced (DB constraint, module boundary, ...). -->
+- <invariant> — enforced in <where>.
+
+## Codemap
+| `src/...` | |
+```
+
+Two leaks in one stub. "What must NEVER happen", "invariant",
+"where enforced" is this concept's own vocabulary sitting in a
+generic kit — a kit that says "list your invariants" has already
+decided the project does correctness-by-construction. And
+`src/...`, `DB constraint` assume an application repo, which
+neither the handbook nor this repo is.
+
+We are carrying it: our own `ARCHITECTURE.md` has an `## Invariants`
+section with that comment verbatim, because the kit handed us the
+slot.
+
+**The sweep, so the size is not guessed.** Every file in the kit at
+`ba7eaa4`, against this concept's vocabulary and app-shape markers:
+
+| file | hits |
+|---|---|
+| `ARCHITECTURE.md` | 4 — the Invariants section and `src/...` |
+| `.claude/skills/commit-messages/SKILL.md` | 1 — an example commit body about a unique index |
+| everything else | 0 |
+
+The four conventions are clean apart from that one example line.
+So the flavour is one section of one stub, not rot through the kit.
+That matters for what follows.
+
+**What the sweep does not test** is shape rather than words. Our
+CHANGELOG stub "had to be replaced, not filled — app-repo
+assumptions" (2026-08-28), and a grep for vocabulary would not have
+caught it. A real pass asks of each kit artifact: does this assume
+what kind of thing is being built? That is a report the handbook
+can act on without conceding anything about who owns method — a
+defect list, not a preference.
+
+## Two derivations, not one
+
+If the kit is purified upstream, one update becomes two here:
+
+    handbook's pure kit
+          │
+          ├──→ the kit for this repo's agent  (a maintainer repo:
+          │    documents, no src/, no invariants section)
+          └──→ the kit inside the bundle      (a CbC project: the
+               invariants slot, the walls, the slice records)
+
+Different targets, different adaptations, one source. When the pure
+kit moves, the note from the handbook is evaluated twice, once per
+derivation, and both are re-derived.
+
+**Half of this exists already and is not named as such.** Our
+`.claude/skills/` is the first derivation — four convention copies
+adapted to us by being held, registered and pinned. Our
+`starter/fills/` is the second — the playbook's steps into PLAN,
+the CLAUDE.md fill, the README fill, all shaped for a run. They are
+the same kind of thing and have never been called that. Naming them
+is most of the design.
+
+## Rebuild the handbook, or fix it?
+
+Asked by the user: would a new pure repo, with the current one
+archived and used as reference, be simpler than updating what
+exists?
+
+**Recommend against, on the evidence above.** Four lines in one
+stub plus one example is a defect, not rot, and a rebuild is the
+largest available tool.
+
+Four reasons, in order of weight:
+
+1. **It is not ours to decide.** The handbook is another repo with
+   its own ADRs and its own owner. We can report a defect; we
+   cannot retire their repository.
+2. **A new repo discards the record we just decided to rely on.**
+   This repo's own ADR-0022 concluded, days ago, that git history
+   is where a change's account lives — that is why the harvest
+   notes could leave the bundle. Starting fresh throws away forty
+   ADRs of accumulated why, or copies them across, which is the
+   update again at higher cost.
+3. **Every pin downstream stops resolving.** Our registry names
+   handbook hashes in roughly ten entries; run 3 holds kit pins on
+   receipt branches. This whole session turned on `git show
+   ab916a1:...` still resolving. A new repo makes all of that
+   dead reference.
+4. **It does not solve the thing it is aimed at.** The purification
+   still has to be decided artifact by artifact. A new repo starts
+   with the same questions and no history of how the old answers
+   were reached.
+
+**The case where it would be right** is a structural one — if the
+kit's shape, not its words, assumed an application repo throughout.
+The sweep does not show that, and the handbook itself now consumes
+its own kit (their ADR-0041), which is the strongest ongoing
+pressure toward neutrality there could be.
+
+**The lighter path that gets the same result**: a defect report
+listing what each kit artifact assumes, ours to write and theirs to
+act on; the CbC-flavoured slots move here into the bundle's
+derivation, where they shape a run's records and nothing else. No
+repo is retired and no pin dies.
+
 ## What it costs — the honest list
 
 - **We own the kit's correctness in runs.** The handbook fixes
