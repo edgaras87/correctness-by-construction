@@ -232,15 +232,122 @@ handbook, it comes through here, slower and traceable.
   would have to name both, which is two pins wearing one coat —
   acceptable if we say so, dishonest if we do not.
 
+## Scope: one of the two derivations moves, not both
+
+Settled with the user 2026-09-17, and it halves the work.
+
+The problem is that **a run** has two parents. This repo having one
+upstream is ordinary. So our own agent side does not move: we go on
+taking the four conventions and the three installed ones from the
+handbook, with the registry and the procedure we already run. Only
+the bundle gains a kit.
+
+**And derivation one is already complete, which is the evidence the
+machinery works.** Our registry names all seven conventions, each
+pinned, each with a lived update behind it — three re-pins this
+month, one of them under a note from the handbook when its layout
+broke our procedure. Nothing about the second derivation is new
+except its target.
+
+## How much of the bundle's kit already exists
+
+`starter/fills/` is not a separate idea. It is the bundle's kit,
+started and never finished. Its two entry-file fills each carry
+**the kit's own text verbatim** as "the kit half", re-verified
+against the kit at every re-pin — `claude-md-template.md` against
+`starter/kit/CLAUDE.md`, `readme-md-template.md` against
+`starter/kit/README.md`. That is vendoring, already, for two files,
+with a harvest duty already attached.
+
+Present as fills (359 lines): the two entry files, and the
+playbook's steps for PLAN.
+
+Missing: `ARCHITECTURE.md`, `CHANGELOG.md`, `TODO.md`, `devlog/`,
+the first ADR, the three hygiene dotfiles, `.claude/decisions.md`,
+the four convention skills, and the PLAN frame the steps sit
+inside.
+
+So this is finishing something half-built, not starting something.
+
+## The coupling is worse than a pointer
+
+`pure-seed.md` step 2 does not merely cite the handbook's install
+manual. It says: *by pointer, no step of that manual restated here;
+its blocks use the same `handbook_dir` / `new_project_dir`
+variables, same terminal session.*
+
+That is two documents in two repositories sharing shell state, at
+whatever commit their checkout happens to be on, with no pin
+between them. Rename a variable there and our birth breaks here,
+silently, at the next birth rather than at the change.
+
+Four more surfaces the seed depends on, each a shape the kit must
+hold still:
+
+- `PLAN.md`'s `STEPS-BEGIN` / `STEPS-END` markers, matched by `sed`
+- `PLAN.md`'s `<playbook> v<N> at <handbook or concept commit>`
+  placeholder, matched as a literal string
+- the kit shipping `CLAUDE.md` at the root — which step 4 then
+  *undoes*, moving it to `.claude/` because "a run builds an app",
+  with a note that this half "goes the day the kit ships it there"
+- the kit's entry-file text, carried verbatim in the fills
+
+The last two are the interesting ones. The seed is already
+performing surgery on a kit decision it disagrees with, and already
+waiting on the kit to adopt our preference. The adaptation layer
+exists — it is a `sed` command with a wish attached.
+
+## The cost to the handbook that nobody has named
+
+Today run 3 exercises the handbook's kit **directly** and reports
+on it. That reporting has changed the handbook: their ADR-0035's
+commit gate was withdrawn on run 3's report; their receipt-branch
+trial was run and reported by run 3; their ADR-0038 came from run
+3's hand-off.
+
+Interpose this repo and the handbook loses its only field data
+about its kit in a repo that is not the handbook. Their kit would
+be exercised by us, and by runs only through our adaptation — so a
+defect in the pure kit reaches them filtered, or not at all.
+
+That is the strongest argument they could make against this, and it
+should be in the note to them rather than discovered by them. A
+possible answer: our readings of runs already travel up as
+hand-offs, and we would owe them kit-level findings explicitly
+rather than incidentally. Whether that is as good as direct
+exposure is genuinely unknown.
+
+## The sequencing risk, and the constraint that answers it
+
+If we compose here and the handbook purifies later, the two can
+diverge structurally, and re-deriving becomes a merge rather than a
+copy — which is the failure mode this whole proposal exists to
+avoid.
+
+The user's answer, and it is right: **tell them what we hold, so
+that pure is constrained to be something ours can derive from.** Not
+"change for us" — "here is the shape that exists; whatever pure
+becomes, it should be able to produce this." That keeps their
+freedom and removes ours to drift.
+
 ## Order of work, if it goes ahead
 
-1. **Decide here first.** We have the problem, the evidence and the
-   friction; the handbook has neither. Asking them to move for an
-   unvalidated design is backwards.
-2. **Hand it up**, paired with the exchange hand-off already in
-   `temp/` — that one says we now have a sending side; this one
-   says we would like to be the only sender to runs.
-3. **Migrate run 3** at its next re-pin, once both have agreed.
+The user's sequence, adopted 2026-09-17, and it asks the handbook
+for nothing:
 
-Not before the lighter version above has been costed and rejected
-on its merits.
+1. **Build the bundle's kit here**, finishing what `fills/` began.
+   One composed delivery, one pin, and `pure-seed.md` stops running
+   another repo's bash in our shell.
+2. **Tell the handbook**, as an observation and not a request: what
+   we are doing, what we found in their ARCHITECTURE stub, the
+   field-data cost they are about to pay, and the constraint —
+   whatever pure becomes, ours should be derivable from it.
+3. **Run it for a project or two.** Two shapes, not one.
+4. **Distil pure only when a second shape needs it** — a project
+   that wants the handbook's conventions and is not a CbC project.
+   The handbook's own rule, applied back to them: do not guess a
+   general form from a single instance.
+
+The lighter version considered earlier — vendoring only the install
+procedure — is moot under this sequence. Bringing the kit covers
+it.
