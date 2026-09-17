@@ -1,0 +1,7 @@
+
+# --- java-spring (Maven) overlay --------------------------------------
+
+# The Maven wrapper: the shell script stays LF, the Windows wrapper
+# stays CRLF.
+/mvnw text eol=lf
+*.cmd text eol=crlf

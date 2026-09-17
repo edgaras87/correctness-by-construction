@@ -1,0 +1,6 @@
+
+# --- java-spring (Maven) overlay --------------------------------------
+
+# Maven build output — derived, never source
+target/
+.mvn/wrapper/maven-wrapper.jar

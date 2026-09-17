@@ -1,0 +1,14 @@
+
+# ---------------------------------------------------------------------
+# --- java-spring overlay ---
+[*.sql]
+
+# [typing][format] width only - SQL layout opinions stay with the IDE
+# formatter
+indent_size = 4
+
+# ---------------------------------------------------------------------
+[*.conf]
+
+# [typing][format]
+indent_size = 2
