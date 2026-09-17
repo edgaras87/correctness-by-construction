@@ -219,6 +219,7 @@ was met at Step 5.
 - ADR-0021: A Spring slice reference, held here and handed after the build
 - ADR-0022: The notes go; the exchange is a note and a copy
 - ADR-0023: The compare is a reading; the diff is its evidence
+- ADR-0024: The kit is taken here, verbatim but for a stated delta
 
 ---
 
