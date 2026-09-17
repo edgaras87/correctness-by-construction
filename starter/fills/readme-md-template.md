@@ -8,7 +8,8 @@
        @ ab916a1 (re-verified 2026-09-11: the decisions row gained
        its citation clause there, `<TAG>` left literal — the run
        declares its own tag at its naming; before that unchanged
-       since c670fe5) —
+       since c670fe5; unchanged at ba7eaa4, verified
+       2026-09-17) —
        the records table and both its comments, verbatim; the
        System row is this repo's fill (2026-09-09, the handbook's
        checkout reading: a record gets a row). The kit's fill-comment (the purpose paragraph

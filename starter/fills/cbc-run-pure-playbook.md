@@ -12,7 +12,8 @@
      re-vendored from the handbook's starter/playbooks/default.md
      v2 @ c670fe5 (verified 2026-09-11: at ab916a1 default.md
      changed only in two comments the v4 strip had already
-     removed; Step N's three Known-already facts unchanged).
+     removed; Step N's three Known-already facts unchanged;
+     unchanged at ba7eaa4, verified 2026-09-17).
      Harvest lands here — the one copy that exists
      (ADR-0007); kit-owned steps (0, 1, N) change only by refresh
      against a new kit pin.

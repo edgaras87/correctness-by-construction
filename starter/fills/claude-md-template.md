@@ -12,7 +12,8 @@
      ships no template so the derivation measurement is
      untouched, and the assembly path keeps its brake.
      — the kit half: engineering-handbook starter/kit/CLAUDE.md
-       @ af16eb7, verified unchanged at ab916a1 (2026-09-11) —
+       @ af16eb7, verified unchanged at ab916a1 (2026-09-11)
+       and at ba7eaa4 (2026-09-17) —
        the title line, the records table and its
        comment, the guard comment, all verbatim; their
        agent-arrangement convention holds this half's rules. At
