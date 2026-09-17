@@ -17,18 +17,22 @@
      At the project retrospective, read top to bottom: each entry
      graduates to the handbook, stays local, or dies.
 
-     The two placeholders in the birth entry below — the date and
-     the "@" hash — are replaced at copy time by the install block
-     in the handbook's manual. The hash pins which handbook state —
-     and so which version of every convention — this project was
-     born from (convention-lifecycle §2). If either still shows a
-     placeholder, the install block was not run from the handbook;
+     The three placeholders in the birth entry below — the date and
+     the two "@" hashes — are replaced at copy time by the seed in
+     the concept repo's install manual. The bundle hash pins what
+     was delivered; the kit hash inside it pins which handbook
+     state, and so which version of every convention, this project
+     was born from (convention-lifecycle §2). Both are named
+     because one pin standing for two states would be a pin that
+     lies. If any still shows a placeholder, the seed was not run;
      fix it before the bootstrap commit. -->
 
-- <YYYY-MM-DD> Born from the engineering-handbook starter kit
-  @ <handbook-commit>.
+- <YYYY-MM-DD> Born from the correctness-by-construction bundle
+  @ <bundle-commit>, whose kit half is the engineering-handbook
+  starter kit @ <handbook-commit>, held there at a pin.
   Conventions: project-recording, commit-messages, repo-hygiene,
   artifact-kinds, change-plans, convention-lifecycle,
   agent-arrangement.
-  Why: handbook defaults.
-  Rejected: none — see the handbook's ADRs.
+  Why: handbook defaults, delivered through the bundle.
+  Rejected: none — see the handbook's ADRs, and the bundle's for
+  anything the bundle changed.
