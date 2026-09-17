@@ -6,6 +6,86 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-17, later still  (both documents delivered, both answered; the exchange ran twice on its first day)
+
+- The exchange ADR-0022 decided was exercised in both directions
+  within hours of being written, which was not the plan and is the
+  best evidence the set produced. Both receivers read a note, read
+  their own records, decided for themselves, wrote their verdict
+  into their own logs and deleted the paper. Neither repo reached
+  into another.
+- Run 3 first. The note went into its temp/, and its two commits
+  came back accurate on the parts least certain to carry: the seven
+  rules taken as written, the channel "declined, and replaced", the
+  facility paragraph held with its trigger, and our reason for
+  sending no path restated in its own words. It caught two things
+  unprompted that the note did not spell out — that its rule 2 now
+  adds a dated line to a header block with no counterpart upstream,
+  and that its own temp/ is ignored, so it put the record where it
+  survives. bundle-update.md gained a paragraph from the second: a
+  run's temp/ need not behave like ours, and the decisions entry is
+  therefore the whole record rather than a pointer to one.
+- The handbook took the trigger as fired — bundle-update.md is
+  their ADR-0030's second clause — and then narrowed it rather than
+  writing the convention: it now waits on the first live run of
+  that manual. Their reason is our own argument turned around, and
+  it is right. The thin-note diagnostic is a claim about what a
+  receiver does when a note falls short, and no receiver had read a
+  note under it; writing the rule now would freeze a prediction.
+  They set a guard with it — a third re-park means the answer is
+  no, not later — which is the kind of thing worth stealing.
+- One correction from them, accepted. Our handoff said run 3
+  reached "copied whole" independently. It did not: its handoff of
+  09-15 went to both of us, their ADR-0038 came from it, and what
+  we read as two arrivals was one with two recipients.
+- And the correction's cause is ours, lived the same day. They had
+  to work out that our "run 3" is their "never-oversold", got it
+  wrong first, and staged the wrong version before catching it. Our
+  records say "run 3" a hundred and sixteen times and
+  "never-oversold" once — and the only live bridge between the two
+  was the bundle's harvest lines, "never-oversold (run 3 of the
+  pure seed)", which this session deleted. ADR-0022's cost, on its
+  first day, to the party we had just written to. The fix is a
+  second rule in temp/README beside its sibling: a document naming
+  a third repo gives both names, with the three names written down
+  and the condition for the table outgrowing the file.
+- Their two repo-shapes drafts arrived with the reply, verbatim and
+  deliberately not rewritten against our handoff — "rewriting first
+  would have handed you a conclusion instead". Two things in them
+  join the next step: bases-not-stubs, what a receiver gets is
+  complete as delivered and extended locally; and only-the-set-is-
+  copied, anything about the set kept beside it. The second is the
+  test for whether the bundle's kit is built right, and starter/
+  already has the shape.
+- The one to watch, recorded in the draft and not acted on: their
+  model §4 states two upstreams as fact — born with the kit, bundle
+  on top — and their B3 wants the model folded into the tiers model
+  we vendor. Nothing is delivered, so nothing is declined; when it
+  arrives we take it whole, as we just told a run to, and a
+  disagreement goes up as evidence rather than into the copy. They
+  have built the door themselves: their §7 names three refutations
+  and one is close to what one-chain would show.
+- The one-chain idea itself grew all session and is thinking only.
+  What re-reading the material added, against the argument: the
+  coupling to the handbook is not a pointer but shared shell state
+  across two repos, unpinned; the seed already performs surgery on
+  a kit decision it disagrees with and waits for the kit to adopt
+  our preference; starter/fills/ is the bundle's kit half-built,
+  two files already carrying the kit's text verbatim; and the cost
+  nobody had named — runs are the handbook's only field data about
+  its kit, and interposing removes it. A sketch holds the order,
+  orientational, and says what it does not settle.
+
+Resume: nothing is owed to either side. The handbook asked for one
+thing whenever it happens — that bundle-update.md having run for
+real, we say what it taught or that it taught nothing — and run 3's
+backlog line for us is closed. Next is the sketch's step 2, the
+bundle's kit, which is both the answer to the one-chain question
+and the message the handbook asked for. Before it: decide whether
+every handbook update being evaluated here twice, for ever, is
+worth one chain to a run. If it is not, the sketch fails at step 2
+and the honest move is writing down why.
+
 ## 2026-09-17, later  (the harvest notes leave the bundle; the exchange replaces them)
 
 - Two questions turned out to be one. Run 3's handoff asked whether
