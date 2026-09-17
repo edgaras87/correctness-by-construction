@@ -49,7 +49,13 @@ infra-serve → cbc-bootstrap → cbc-slice), each file pinned to the
 concept version it derives from or is checked against (ADR-0005).
 Two kinds by how they land (ADR-0017): `bundle/` holds the five
 skills with their references, copied as files the run keeps
-pinned; `fills/` holds text the seed writes into the kit's own
+pinned — cbc-framing and cbc-slice ship the same
+`references/worked-example.md`, one document read in halves, Part 1
+the framing and Part 2 the slice, duplicated so either skill's
+directory stands alone; the two copies are byte-identical and a
+change to one lands in both, which `diff` checks now that neither
+carries a header (ADR-0022); `fills/` holds text the seed writes
+into the kit's own
 files and the run then owns — the pure playbook's steps into PLAN
 (cbc-run-pure, ADR-0016) and the two entry-file fills written
 by the seed's semi-pure step — the README over the kit's stub,
