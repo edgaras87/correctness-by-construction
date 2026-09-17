@@ -114,6 +114,17 @@ what moved, what the note said about its own edits, and what it
 decided. That entry is the run's memory of this exchange; nothing
 in the files carries it.
 
+Nothing in the run's history may carry it either. A run's `temp/`
+need not behave like this repo's, which is tracked so that an
+arrival shows as a diff: never-oversold's is excluded in
+`.git/info/exclude`, local to that checkout and not committed, so
+the staged copy and the note land invisibly and leave when they are
+deleted with no trace at all. That is the run's arrangement to
+make, not ours. It only means the decisions entry is the whole
+record, not a pointer to one — so it says what the note said, not
+that a note arrived (never-oversold, 2026-09-17, which handled this
+unprompted).
+
 **6. Delete what was served.** (operator or the run)
 
 ```bash
