@@ -257,7 +257,10 @@ Gate:
 - [ ] An ADR naming the groups, their boundaries and their pins;
       the existing evidence weighed in it (the derives-from versus
       checked-against split of ADR-0005, the reference held out of
-      the bundle by ADR-0021, six templates all in one group).
+      the bundle by ADR-0021, six templates all in one group, and
+      `starter/kit/.claude/skills/` meaning exactly one thing —
+      pinned copies of the handbook's conventions — which a native
+      skill of ours would make two, ADR-0028 decision 5).
 - [ ] The stack-shaped group is named for the stack it assumes,
       not for the tier it serves.
 - [ ] Each group is copied whole or not at all, with anything
@@ -330,6 +333,8 @@ was met at Step 5.
 - ADR-0024: The kit is taken here, verbatim but for a stated delta
 - ADR-0025: The kit is ours; the handbook becomes provenance
 - ADR-0026: The models are ours; ADR-0002's clause goes
+- ADR-0027: The architecture diagram is Mermaid, provisionally
+- ADR-0028: The procedure gets a picture; the method becomes a skill
 
 ---
 

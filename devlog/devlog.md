@@ -6,6 +6,116 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-19, small hours  (the landing gets a step; a format question, second time)
+
+Session opened 2026-09-18 and spanned midnight. ADR-0028 carries
+its authoring date, 09-18, as Step 1's entry did when it did the
+same thing.
+
+- **`bundle-update.md` step 7 exists.** The gap the last entry
+  named as the first work of this session: ADR-0023 decision 5
+  makes a re-pin a trigger for a compare and decision 4 says a
+  verdict is written every time, and the six-step procedure ended
+  at a delete and implemented neither. Both verifications so far
+  ran because the operator remembered.
+- The verdict home turned out to have one branch, not two. Decision
+  4's registry-or-devlog split was written for a *compare* between
+  repos that each hold a pin of the other. A delivery is not that
+  shape: our registry records copies we hold from an upstream, a
+  run sits downstream, and step 1 already said this repo does not
+  hold its pin. So the devlog, always — and it is the symmetry
+  decision 7 asks for, our half beside the run's step 5 entry.
+  Which is why the step was missing without anyone noticing: the
+  run's half was written, so the exchange looked complete from the
+  run's end.
+- **The step runs after the delete, on purpose.** With the staging
+  copy gone, the only comparison within reach is against our
+  masters. That is the fix for the 09-18 false pass, where a check
+  read the run's copies against a directory step 6 had already
+  removed and reported all nine identical: leave nothing broken
+  within reach.
+- **DEAD END (mine): I drafted it mechanism-first.** The diff got
+  the most prose, so it read as the point. It is not — ADR-0023
+  decision 1 says a compare is a *reading*, and the reading is
+  where the value is. Found by the user asking "why do we do that
+  with diff, what does that give", which is the second time in two
+  days that a question, not a check, found the defect. Restaged as
+  a reading with the diff demoted to its evidence, and the answer
+  to "why look at all, when the run already checked" is now written
+  into the step rather than assumed.
+- The particular reason a delivery needs the look: never-oversold
+  recorded our byte-identity claim as *attributed rather than
+  checked*, honestly, having no material to check it against. A
+  verification built on its records alone would read that careful
+  non-claim back as confirmation — two logs agreeing and nobody
+  having looked.
+
+- **The second format question, and ADR-0027 decision 5's trigger
+  fired on its own.** The manual is structured — seven steps, role
+  markers, six bash blocks — and none of it visible under 20–50
+  lines of reasoning per step. The manual-and-rule split was tried
+  first and does not fit: that split exists because one half
+  *ships*, and nothing in `installs/` does, and the reasoning here
+  is load-bearing at execution time rather than background. Strip
+  the story behind "grep every old identifier" and the next agent
+  greps for one number again.
+- Four candidates against six written requirements. The flowchart
+  with two subgraphs held five and was confirmed on screen.
+  **`sequenceDiagram` is this round's `block-beta`** — the dialect
+  built for handoffs, rejected because step 7 must be drawn as an
+  arrow from us into the run, that being the only way it says "our
+  agent reads the run." A read is not a call. It asserted the
+  opposite of the one rule the procedure exists to keep.
+- Building found what arguing would not: two subgraphs cannot place
+  the operator, who works in both repos. Not a third box — the
+  operator is transport, not a place, so steps 3 and 6 became the
+  crossing arrows. And a requirement no candidate could hold turned
+  out to be evidence about the requirement; struck, not failed.
+- **The method became a skill, and the first home was wrong.**
+  `playbooks/` was the answer for half an hour, on artifact-kinds'
+  axes — executes plus template is a playbook, and it is. But kind
+  and home are different questions, and conflating them produced
+  the wrong answer: `playbooks/` has no channel. Nothing routes an
+  agent there. agent-arrangement §2 decides homes, sends a rule
+  with a moment to where the moment is, and names a skill. Raised
+  by the user asking why it could not be an agent rule.
+- **The skill's first act was to fail the ADR that created it.**
+  Its §2 step 6 requires an ADR to carry the requirements, the
+  candidates and why each lost; ADR-0028 said "six requirements"
+  and listed none, so deleting the draft would have taken them to
+  history only. Cheapest possible evidence the thing does
+  something — and the opposite of the failure mode the objection
+  named.
+- The objection stands recorded rather than dropped: two uses by
+  one author in one week is thin evidence for a rule. Where it
+  shows, if right, is the skill's §4 warnings list, by not growing.
+- **Shipping it was asked twice and is not done.** Of three
+  arguments against, one died when the home moved — a skill has an
+  obvious kit slot where a playbook file had none — and one was
+  overstated: the delta ceiling guards re-verification of the
+  sixteen taken files, and an added file does not touch them. What
+  stands is that this is PLAN Step 9's question, and Step 9 is
+  next, not distant. Checked while answering: birth copies the kit
+  whole, so a new project would get it automatically, while
+  `bundle-update.md` names the four conventions explicitly in two
+  loops, so run 3 would not. New projects with it and run 3
+  without, until three sentences change. Underneath the mechanics,
+  `starter/kit/.claude/skills/` means exactly one thing today —
+  pinned convention copies — and a native skill makes it mean two.
+  Onto Step 9's gate, which is where it will be read.
+- Two findings, neither fixed here. `playbooks/default.md` still
+  carries the ADR-0002 rule ADR-0026 retired, in a file that
+  decision did not reach. And the grep that found it had to be
+  written twice, because the sentence wraps — third instance of
+  one lesson, after the `§8` hunt that missed a `§7` and the
+  renumbering described without reading its range. Both to TODO.
+- Resume: PLAN Step 9, the groups — its naming is still unanswered,
+  it has a gate item the measurement contradicts, and it now holds
+  the kit-skills question this session handed it. Then run 3's
+  TODO, where four items are answerable. `bundle-update.md` is
+  whole for the first time: seven steps, a picture, and both halves
+  of ADR-0023 decision 4 implemented.
+
 ## 2026-09-18, evening  (the fork is told, and the last upstream goes)
 
 - The letter to the handbook went, and its trigger was its own.

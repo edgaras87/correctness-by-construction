@@ -793,6 +793,26 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] `playbooks/default.md` still carries the rule ADR-0026
+      retired (2026-09-19): "Pinned: do not edit here — changes
+      happen in the handbook and arrive as a fresh pinned copy
+      (ADR-0002)". Nothing in this repo tracks the handbook, so
+      the rule cannot fire — the same defect ADR-0026 hunted in
+      `docs/models/`, in a file that decision did not reach. Two
+      questions in one: is this file ours now on ADR-0026's
+      reasoning, or is it still a vendored copy of something we
+      no longer track — and if the latter, what does a pin mean
+      with no upstream to pin to. ADR-0026's subject, not
+      ADR-0028's, which is why it was not fixed in the set that
+      found it.
+      **And the grep that found it had to be written twice.** The
+      first missed it: the sentence wraps, and the file stores it
+      as "do not edit\n     here". Third instance of one lesson —
+      the `§8` hunt that missed a `§7`, a renumbering described
+      without reading its range, and now a phrase broken by a line
+      wrap. Worth a line wherever the grep discipline is written
+      down: search the unwrapped text, not the file.
+
 - [x] DONE 2026-09-07, ADR-0019 (change-plan 2ca749b..close):
       the semi-pure delivery is pure-seed.md's optional step 4 —
       both fills written over the kit's stubs, headless, one
