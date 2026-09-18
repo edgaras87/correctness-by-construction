@@ -33,8 +33,27 @@ as a trigger.
 
 The comparison ran on ADR-0027's method: six requirements written
 down first, four candidates rendered against them, a pass or fail
-per line. One requirement was struck in the course of it (decision
-3 below), leaving five.
+per line. One was struck in the course of it (decision 3 below),
+leaving five, and these are they — written down so a later change
+to the shape has something to fail against:
+
+1. **The seven steps in order**, findable by number, so a reader
+   mid-procedure can locate where they are and drop back into the
+   prose for that step.
+2. **Who does each** — three actors, and they are not
+   interchangeable.
+3. **The repo boundary** — two repos, two `temp/` directories, and
+   nobody reaching into anybody. This is the rule the procedure
+   exists to keep, so a shape that hides it is worse than none.
+4. **The two records written**, one per side: the run's decisions
+   entry at step 5, our devlog verdict at step 7.
+5. **It must cost less to edit than it costs to read.** A shape
+   that goes stale is worse than none, because it will be believed.
+
+The requirements were written as what a reader must *get* rather
+than what a picture must *show*, because whether it should be a
+picture at all was open — unlike ADR-0027, where that was settled
+and only the dialect was in question.
 
 1. **Step index.** Seven lines, numbered, actor in parentheses.
    Cheapest to edit of the four. Rejected: the repo boundary is
