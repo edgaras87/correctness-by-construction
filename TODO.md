@@ -1173,6 +1173,24 @@
 
 ## Later / someday
 
+- [ ] Two sources for one Spring hygiene overlay, and our runs
+      use neither. Found 2026-09-18 while vendoring the manuals.
+      The handbook keeps stack overlay parts at
+      `docs/conventions/repo-hygiene/templates/java-spring/`
+      (`gitignore.part`, `gitattributes.part`, `editorconfig.part`),
+      appended below the base layer's marked line at app bootstrap
+      — their own skeleton-plus-flavour shape, built once and
+      deliberately. Our `cbc-bootstrap` never points at them: its
+      walkthrough has a run grow its own `.gitignore` from what the
+      Spring skeleton produces, and `SKILL.md` says "grow, never
+      overwrite". So three runs have derived by hand what a
+      template already held. Not fixed mid-take, because which
+      group the parts belong to is the question — a stack-shaped
+      artifact in a container that is meant to fit any project.
+      Trigger: PLAN Step 9, where the groups are named. Decide
+      there whether the parts ride the container, ride the
+      stack-shaped group, or stay upstream unused.
+
 - [ ] What makes a note land — our evidence for the exchange
       convention when the handbook writes it. From their reply of
       2026-09-17 §3, which returned the favour of ours and is the

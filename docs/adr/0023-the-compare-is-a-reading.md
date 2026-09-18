@@ -1,10 +1,13 @@
 # 0023. The compare is a reading; the diff is its evidence
 
 Date: 2026-09-17
-Status: Proposed (change-plans §4; opened at the head of the set
-that takes the handbook's kit, and to be accepted or rewritten at
-that set's boundaries — this decision defines what taking the kit
-means, so it lands before the taking)
+Status: Accepted (2026-09-18, at the set's final records commit;
+opened Proposed per change-plans §4 at the head of the set that
+took the handbook's kit, and unrevised — nothing in the work
+contradicted it. Its mechanical half found a stale re-verification
+on its first use, ten minutes after it was written, and a byte
+check read through a broken step during the manuals' copy, which
+is the failure it exists to make visible)
 
 ## Context
 

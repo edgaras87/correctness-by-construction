@@ -1,9 +1,14 @@
 # 0024. The kit is taken here, verbatim but for a stated delta
 
 Date: 2026-09-17
-Status: Proposed (change-plans §4; the decision that ADR-0023 was
-written to make possible, and the one the work that follows
-executes — to be accepted or rewritten at that set's boundaries)
+Status: Accepted (2026-09-18, at the set's final records commit;
+opened Proposed per change-plans §4 and rewritten twice at
+boundaries — decision 3 lost `PLAN.md` when the user chose to keep
+the playbook a document, and decision 5 gained its second half when
+the manuals were actually brought. The take is in place:
+`starter/kit/` at `ba7eaa4`, fourteen files verbatim, the delta
+list in `starter/README.md`, and a birth that no longer runs
+another repo's bash in our shell)
 
 ## Context
 
@@ -122,14 +127,26 @@ sixteen has the answer in it already.
    and at each re-pin the delta is re-applied to the new master, not
    merged into the old copy.
 
-3. **The delta at the take is three files and a line.** `CLAUDE.md`
-   and `README.md` are the composed entry files this repo already
-   holds — ADR-0015's whole-delivery rule, now true of the kit and
-   not only of one file. `CLAUDE.md` sits at `.claude/CLAUDE.md`,
-   which is the seed's step-4 surgery relocated from a `sed` into
-   the artifact. `PLAN.md` arrives with the playbook's steps already
-   between its markers. And the birth entry in
-   `.claude/decisions.md` names both upstreams.
+3. **The delta at the take is two files and a birth entry.**
+   `CLAUDE.md` and `README.md` are the composed entry files this
+   repo already holds — ADR-0015's whole-delivery rule, now true of
+   the kit and not only of one file. `CLAUDE.md` sits at
+   `.claude/CLAUDE.md`, which is the seed's step-4 surgery
+   relocated from a `sed` into the artifact. And the birth entry in
+   `.claude/decisions.md`, with the comment above it, names both
+   upstreams.
+
+   *Revised at the set's second boundary.* This decision listed
+   `PLAN.md` as a third flavoured file, arriving with the
+   playbook's steps already between its markers. The user chose
+   otherwise: the playbook stays a document and the seed goes on
+   inserting its steps at birth, so `PLAN.md` comes over verbatim
+   and the take is fourteen files untouched rather than thirteen.
+   What that buys is ADR-0011 untouched and playbooks kept as a
+   menu, against a marked-region insert surviving as the birth's
+   one genuine merge. The forward reason is PLAN Step 9's: a CbC
+   project that is not Spring and Postgres wants a different
+   sequence, and a menu makes that a choice rather than a rewrite.
 
 4. **`starter/fills/` is absorbed and the category retires.** A fill
    was text written into a file the kit had already put there; once
@@ -138,12 +155,29 @@ sixteen has the answer in it already.
    `installs/` staying home. ADR-0019's semi-pure step dissolves
    with it — not switched off, unnecessary.
 
-5. **The manuals are vendored read-only.** `conventions/` — seven
-   manuals, 1,696 lines, never shipped — comes here at a pin under
-   ADR-0002's rule, as reference, and is never re-flavoured. The
-   rules live in artifacts we may flavour; the *why* keeps one
-   master, or the explanation forks too and nothing anchors either
-   copy.
+5. **The manuals are vendored read-only, and what we flavour is
+   ours to explain.** `conventions/` — seven manuals, never
+   shipped — comes here at the kit's own pin under ADR-0002's rule,
+   as reference, and is never re-flavoured. The rules live in
+   artifacts we may flavour; the *why* keeps one master, or the
+   explanation forks too and nothing anchors either copy.
+
+   The second half, added when the manuals were brought: their
+   manuals explain *their* artifacts, and anything this repo
+   flavours needs an explanation they cannot give, because they do
+   not know it happened. That explanation is ours. Today it is the
+   delta list in `starter/README.md` — a table, because the
+   departures are stub-level and one sentence each. When it
+   outgrows a table it graduates into manuals here, beside theirs,
+   and that graduation is the signal the flavour has become
+   rule-level rather than shape-level.
+
+   What came: eleven files. Sixteen further entries under their
+   `conventions/` are symlinks into `starter/kit/`, which we hold,
+   so the links are not reproduced and a manual's pointer to its
+   artifact resolves here into `starter/kit/` instead. One does not
+   resolve — `agent-arrangement/stubs/CLAUDE.md` names
+   `starter/kit/CLAUDE.md`, which delta row 1 moved.
 
 6. **A ceiling, so the take can be found wrong.** If more than a
    third of the kit's files carry a delta, or if any delta cannot be

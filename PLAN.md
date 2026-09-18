@@ -203,34 +203,47 @@ no step around it. The gate items state what is true now, not a
 sequence that was planned; a plan step written after the fact can
 do no more than that honestly.
 
-## Step 8: The kit comes here                       [~] opened 2026-09-18
+## Step 8: The kit comes here                       [x] 2026-09-18
 
 Goal: a run has one upstream, one pin, one procedure — the kit as
 we hold it and the bundle on top, composed here and tested together
 before a run sees it.
 Gate:
-- [ ] ADR-0023 and ADR-0024 accepted at this step's close, or
-      rewritten at a boundary and accepted as rewritten.
-- [ ] `starter/kit/` holds the handbook's kit at a pin, at their
-      path name, thirteen of sixteen files byte-identical.
-- [ ] The delta list is stated with a reason per line and stands
-      under its ceiling — a third of the kit's files (ADR-0024).
-- [ ] `starter/fills/` is absorbed and the category retired;
-      ADR-0017's three-way split reads `kit/` and `bundle/` land,
-      `installs/` stays.
-- [ ] `pure-seed.md` step 2 is gone: no step of this repo's birth
-      runs another repo's bash in our shell at an unpinned commit.
-- [ ] The birth entry in the delivered `.claude/decisions.md` names
-      both upstreams, and the registry entry states what the pin
-      claims — derived from, delta list, last read (ADR-0023).
-- [ ] `starter/README.md` and `bundle-update.md` are true for the
-      new shape; the assumed-surface contract is gone from both.
-Records: ADR-0023, ADR-0024, the registry, devlog.
-Notes: the take is measured, not estimated — 16 files, 926 lines,
-13 untouched, 3 flavoured and those 3 already held as fills. Needs
-its own change-plan. The letter to the handbook is written and held
-in `temp/`, and goes after this step with lived numbers (ADR-0024
-decision 10).
+- [x] ADR-0023 and ADR-0024 accepted, both rewritten at boundaries
+      first and accepted as rewritten (the set's final records
+      commit).
+- [x] `starter/kit/` holds the handbook's kit at `ba7eaa4`, at
+      their path names — **fourteen** of sixteen files
+      byte-identical, not the thirteen this gate was written with:
+      `PLAN.md` stayed verbatim when the playbook stayed a document
+      (e418e9d, dc3b7db).
+- [x] The delta list is stated with a reason per line and stands
+      under its ceiling — three files of sixteen against a third
+      (e788d27).
+- [x] `starter/fills/` **keeps one member**, not retired as this
+      gate expected: the playbook is still text written into the
+      container's own file, so the category stands with the two
+      entry-file fills gone from it (dc3b7db).
+- [x] `pure-seed.md` step 2 is gone: no step of this repo's birth
+      runs another repo's bash in our shell, and `handbook_dir` has
+      left the manual (f8084b6).
+- [x] The birth entry in the delivered `.claude/decisions.md` names
+      both upstreams (dc3b7db), and what the pin claims is stated
+      in `starter/README.md` rather than the agent registry — the
+      kit is content we ship, not a convention we use, so its pin
+      record is project-side (e788d27).
+- [x] `starter/README.md` and `bundle-update.md` are true for the
+      new shape; the contract is gone from both, and the
+      container-half update rule is written down (f721414).
+- [x] Beyond the gate, because the take reached them: the seven
+      convention manuals vendored read-only at the kit's pin
+      (9a1637d), and the shape records caught up (bcbd833).
+Records: ADR-0023, ADR-0024, ARCHITECTURE, starter/README.md,
+devlog.
+Notes: the take was measured before it was made — 16 files, 926
+lines — and came in smaller than the measurement, at fourteen
+untouched. Two gate items above are corrected rather than ticked:
+a gate that closes by rewording itself says so.
 
 ## Step 9: The groups                               [ ]
 
