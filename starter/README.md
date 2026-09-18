@@ -16,9 +16,17 @@ authoritative; a run's copies are pinned — they change only by
 copying anew from here, and a run's surprises come back as harvest,
 never as edits (docs/models/tiers.md).
 
-Two kinds of delivery, two directories (ADR-0017). **Pinned
-copies** land as files at paths the kit does not claim; the run
-never edits them, only re-copies at a new pin:
+Three kinds of delivery, three directories (ADR-0017, widened by
+ADR-0024). **The kit** is the container: `starter/kit/` copied
+whole into the new repo, the handbook's kit as we hold it at a
+pin, with the delta the section below lists. Inside it the parts
+divide again, and the division is what an update obeys — the four
+convention skills are pinned copies; the record stubs, the two
+entry files and the hygiene files are the run's own from birth and
+never travel again.
+
+**Pinned copies** land as files at paths the container does not
+claim; the run never edits them, only re-copies at a new pin:
 
 | From here | Into the run repo |
 |---|---|
@@ -31,13 +39,13 @@ never edits them, only re-copies at a new pin:
 
 **Fills** are text the seed writes into a file the kit already
 put there; from that moment the text is the run's own — edited in
-place, never re-copied, no pin beyond the seed commit's subject:
+place, never re-copied, no pin beyond the seed commit's subject.
+One remains, the playbook: the two entry-file fills retired at
+ADR-0024, their bodies now shipped inside the kit itself.
 
 | From here | Into the run repo |
 |---|---|
-| `starter/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (pure-seed step 3; the newborn holds no playbook copy, their ADR-0031's model) |
-| `starter/fills/claude-md-template.md` | its body, from the title line down with `<working-name>` filled, written to `.claude/CLAUDE.md` by the seed's semi-pure step, the kit's root stub removed (pure-seed step 4, ADR-0019; the address since 2026-09-09) — whole, headless, no merge (ADR-0015); with the step off, the newborn derives its own from the stub, at root (ADR-0016) |
-| `starter/fills/readme-md-template.md` | the same, over the kit's README.md stub, in the same commit — composed from the kit's README stub @ af16eb7 and the runs' harvested fills, plus the System row (2026-09-09) |
+| `starter/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (`starter/installs/pure-seed.md` step 4; the newborn holds no playbook copy, HANDBOOK ADR-0031's model) |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before
@@ -53,14 +61,15 @@ its three kit facts riding as Known already; only re-entry
 The birth procedure itself is the install manual,
 `starter/installs/pure-seed.md` (ADR-0016) — the material-only
 seed: every delivery a commit on the receipt branch `birth-seed`,
-pins in the subjects, main left at the kit's hygiene commit with
-the same files untracked (ADR-0018), the newborn's agent finishing
-the birth by committing them under its own sequence. Its peer for
+the pin in the subjects, main left at the hygiene commit with the
+same files untracked (ADR-0018), the newborn's agent finishing the
+birth by committing them under its own sequence. Its peer for
 everything after birth is `starter/installs/bundle-update.md`
 (ADR-0022) — the note and the copy, staged in the run's own
-`temp/`, taken whole, the pin recorded by the run. The two-birth composition
-stands (ADR-0009): their kit supplies the container, this bundle
-overlays the method.
+`temp/`, taken whole, the pin recorded by the run. One birth from
+one place: ADR-0009's two-copy composition is retired by ADR-0024,
+the container now being ours to ship rather than the handbook's to
+supply.
 
 ## The kit half — held here at a pin
 
@@ -108,37 +117,28 @@ re-verify the kit's half against their entry files at the new pin;
 a re-pin that moves the four skills and leaves these unchecked
 leaves the record claiming a check it did not make.
 
-## The contract
+## What replaced the contract
 
-The overlay assumes exactly three things of the kit — the plan's
-STEPS-marker region (the markers stay; only what sits between
-them is replaced), the step/gate idiom those steps are written
-in, and the handbook's `starter/playbooks/default.md` as the
-vendor base for our playbook's endpoint steps (their ADR-0031
-contract; `playbooks/` is no longer a kit directory) — and must
-not depend on anything else; a handbook kit update is checked
-against this list, nothing more. CLAUDE.md is not on the list and
-does not return even though the semi-pure step writes over it: a
-fill replaces the stub whole and assumes nothing of its shape
-(ADR-0015, ADR-0019) — what it depends on is the kit's entry-file
-text at the pin, carried verbatim in the fill's kit half and
-re-verified at each re-pin, which is a harvest duty here, not a
-surface the kit must hold still.
-The kit names the same contract from its side (the handbook's
-`starter/README.md` contract list, 2026-08-30; narrowed by their
-ADR-0031): the handbook states what may be assumed, each bundle
-states what it assumes, and a bundle needing a new surface
-widens the contract handbook-side first — the fourth handoff
-told them CLAUDE.md stays off our list, and ADR-0015 holds it.
-The overlay adds files in paths the kit does not claim
-(ADR-0012) and performs one non-additive act, switched on per
-run: the semi-pure step replaces the kit's two entry stubs,
-CLAUDE.md and README.md, whole with the fills (ADR-0019); with
-the step off, the stubs stay the newborn's own to fill
-(ADR-0016). Records stay the kit's: CbC events are
-recorded as ordinary project events under the kit's rules, and the
-method's own artifacts (`docs/system/`, the framing derivation)
-live beside the records, not in place of them.
+There was a contract here, and ADR-0024 ended it. It named three
+things the overlay assumed of someone else's kit — the plan's
+STEPS-marker region, the step/gate idiom, and the handbook's
+playbook as the vendor base for our endpoint steps — and said a
+bundle needing a fourth widens the contract handbook-side first.
+That shape existed because the container arrived from a repo we did
+not control. It arrives from here now, so there is nothing to
+assume and no one to ask.
+
+What stands in its place is one-directional and ours: the delta
+list above, which says how our container departs from the master it
+was taken from, and the re-verify duty that keeps the departures
+honest at each re-pin. The handbook is owed no promise about shapes
+it holds still; what it is owed is a report, and that is the
+exchange (ADR-0022), not a contract.
+
+Records stay the container's: CbC events are recorded as ordinary
+project events under its rules, and the method's own artifacts
+(`docs/system/`, the framing derivation) live beside the records,
+not in place of them.
 
 Three skills (cbc-framing, infra-establish, cbc-bootstrap) carry a
 `templates/` directory beside their references — copy-and-fill
@@ -153,9 +153,14 @@ pinned copy — and the run's infrastructure contract notes it was
 filled from the skill's templates. Fills never harvest back; a change to a
 template's *shape* harvests like any execution change (ADR-0007).
 
-Deliberately absent — the born project's own decisions: recording
-conventions, commit conventions, run files, the run's own
-versioning. Also deliberately absent: the archive's agent
+No longer absent, and this is the change ADR-0024 made to what a
+birth delivers: recording conventions, commit conventions and the
+hygiene base now ship, because the container ships. They are the
+handbook's rules, held here at a pin and passed on unedited — what
+a run receives is theirs, by way of us.
+
+Still deliberately absent — the born project's own decisions: its
+run files and its own versioning. Also absent: the archive's agent
 definitions (ADR-0006) — the skills carry the method whole.
 
 ## Harvest — how a run's lesson lands here

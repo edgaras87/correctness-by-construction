@@ -56,11 +56,38 @@ git -C "$run_dir" diff <run's-delivery-commit> -- \
   .claude/skills/infra-serve docs/concept
 ```
 
-The five and the concept chapters — everything the run holds from
-here. The run's `.claude/skills/` also holds the handbook's four
-conventions; those are not ours to read. Named rather than globbed,
-as everywhere else in this manual: a `cbc-*` pattern would also
-catch a skill of the run's own.
+The five and the concept chapters — the method half of what the
+run holds from here. Named rather than globbed, as everywhere else
+in this manual: a `cbc-*` pattern would also catch a skill of the
+run's own.
+
+**The container half updates by a different rule, and most of it
+never updates at all.** Since ADR-0024 the run's container comes
+from `starter/kit/` here, and its parts divide:
+
+- **The four convention skills** are pinned copies and travel at a
+  kit re-pin, the same way the five method skills do. They are the
+  handbook's text, held here at a pin and passed on unedited; the
+  run's own `convention-lifecycle` governs how it takes them.
+- **The record stubs** — `PLAN.md`, `TODO.md`, `devlog/`,
+  `ARCHITECTURE.md`, `CHANGELOG.md`, `.claude/decisions.md`, the
+  first ADR — are the run's living records from its first session.
+  They never travel again. Re-delivering one would overwrite the
+  run's own work with a stub.
+- **The two entry files and the hygiene files** are the run's own
+  from birth on the same rule, the hygiene files having grown a
+  stack overlay the moment the run bootstrapped.
+
+So a kit re-pin delivers four files, not sixteen, and the note says
+which of the four moved and what changed in them.
+
+**Which repo is the run's "handbook".** The run's
+`convention-lifecycle` §3 step 1 tells it to diff the handbook, and
+a run born under one chain holds no handbook checkout. The same
+paragraph answers it: "the handbook is a checkout on disk or the
+payload a handoff carries; the protocol is git either way." This
+delivery is that payload. The note names the kit hash the container
+half is held at, which is the hash that procedure compares from.
 
 Empty means no local layer. Non-empty is the hand-off: each hunk is
 taken, reshaped or declined, in our own wording, in the commits
