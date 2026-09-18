@@ -48,14 +48,21 @@ the whole repo.
 
 **One exception to the scoping, learned 2026-09-18.** When the
 change renames or renumbers anything the run may have cited — a
-section, a file, a rule — grep its whole tree for the old name
-before writing, not only the records you expect it in. Our note of
-that date named two stale `§8` citations and never-oversold found a
-third, in its entry file, because we read its rules file and its
-TODO and did not think to read its `CLAUDE.md`. A citation lives
-wherever someone once needed it, and a diff cannot find it: the
-stale text is in the run's own writing, not in the files it
-receives.
+section, a file, a rule — grep its whole tree before writing, not
+only the records you expect it in. A citation lives wherever
+someone once needed it, and no diff can find it: the stale text is
+in the run's own writing, not in the files it receives.
+
+**And grep for every identifier the change moved, not only the one
+you are describing.** Our note of that date named two stale `§8`
+citations; never-oversold found four. The third was in its entry
+file, which we did not think to read. The fourth was in its
+decisions log and cited `§7` — the registry section, which moved to
+§2 in the same renumbering. A search for `§8` could never have
+found it, and neither could a reader who had only the change in
+mind. A renumbering moves every number, so the search is for every
+old number, and the cheapest form is the whole span: `§1` through
+`§9` here.
 
 If the run edited its copies, diff them against what it received,
 using the run's own history, not ours:
@@ -186,6 +193,24 @@ make, not ours. It only means the decisions entry is the whole
 record, not a pointer to one — so it says what the note said, not
 that a note arrived (never-oversold, 2026-09-17, which handled this
 unprompted).
+
+**On the receipt branch, when a convention changes channel.** The
+receiving convention lets a project keep a frozen branch holding
+every delivered file as it arrived, named for the deliverer's
+commit. Moving the four conventions onto this channel raises what
+happens to theirs, and never-oversold answered it for itself on
+2026-09-18; the answer generalises and is adopted here.
+
+A receipt earns its place where the delivered file's *local*
+content is the record — the record stubs, whose PLAN and TODO and
+devlog fill up with the project's own work, and which therefore
+cannot be diffed against any master. For a pinned copy the receipt
+is redundant: the copy is pristine by its own rule, so the delivery
+commit already holds exactly what arrived, and that commit is what
+step 4 diffs against. So no receipt is cut for a bundle delivery,
+and conventions moving onto this channel simply leave the kit's
+receipt — which carries four fewer files from then on, they having
+changed channel rather than been deleted.
 
 **6. Delete what was served.** (operator or the run)
 
