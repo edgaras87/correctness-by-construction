@@ -13,20 +13,26 @@ docs/models/tiers.md, vendored here pinned). It holds two layers: the
 construction, its rationale, open questions, and the log of what
 changed it — and the **executions** derived from it (agent skills,
 checklists, templates), each pinned to the concept version it derives
-from. Delivery flows down as pinned copies into run repos; learning
-flows back up as harvested concept changes, after which executions
-are re-derived.
+from. It also holds the **container** a run is born into —
+the handbook's starter kit, vendored here at a pin (ADR-0024) —
+so a run has one upstream instead of two. Delivery flows down as
+pinned copies into run repos; learning flows back up as harvested
+concept changes, after which executions are re-derived.
 
 ```
-┌────────────── this repo ──────────────┐
-│  mental layer   (the statement)       │
-│      │ derive — pinned at a           │
-│      ▼ concept version                │
-│  executions     (skills, checklists,  │
-│                  templates)           │
-└──────┬──────────────────────▲─────────┘
-  copy │ pinned               │ harvest: a run's
-       ▼                      │ surprises
+  handbook ──── kit, vendored at a pin ────┐
+     ▲                                     │
+     │ findings                            ▼
+┌────┴───────── this repo ──────────────────────┐
+│  mental layer   (the statement)               │
+│      │ derive — pinned at a                   │
+│      ▼ concept version                        │
+│  executions     (skills, checklists,          │
+│                  templates)                   │
+│  container      (starter/kit/, theirs + delta)│
+└──────┬──────────────────────▲─────────────────┘
+  copy │ one delivery,        │ harvest: a run's
+       ▼ one pin              │ surprises
      runs   (other repos) ────┘
 ```
 
@@ -55,12 +61,12 @@ the framing and Part 2 the slice, duplicated so either skill's
 directory stands alone; the two copies are byte-identical and a
 change to one lands in both, which `diff` checks now that neither
 carries a header (ADR-0022); `fills/` holds text the seed writes
-into the kit's own
-files and the run then owns — the pure playbook's steps into PLAN
-(cbc-run-pure, ADR-0016) and the two entry-file fills written
-by the seed's semi-pure step — the README over the kit's stub,
-the entry file to `.claude/CLAUDE.md` with the root stub removed
-(ADR-0015, ADR-0019).
+into the container's own files and the run then owns. One member
+since ADR-0024: the pure playbook's steps into PLAN (cbc-run-pure,
+ADR-0016). The two entry-file fills retired there — their bodies
+ship inside the container itself, which is the same
+whole-file-never-merged rule at a new address (ADR-0015,
+ADR-0019).
 Content, not this repo's working arrangement: nothing here is
 installed in this repo's own `.claude/`, and the archive's agent
 definitions stayed behind (ADR-0006). Two skills carry copy-and-fill
@@ -71,11 +77,31 @@ beside the bundle, outside the copy set (ADR-0010): the starter doc
 (`starter/README.md`) states the birth mapping and the
 authoritative-vs-pinned rule; the install manual
 (`starter/installs/pure-seed.md`) is the birth procedure
-(ADR-0016) — the material-only seed, its kit half running the
-handbook's pure install by pointer, its deliveries committed on a
-receipt branch the newborn never merges (ADR-0018).
+(ADR-0016) — the material-only seed, copying the container from
+`starter/kit/` and the method beside it, its deliveries committed
+on a receipt branch the newborn never merges (ADR-0018).
 Why shaped this way: ADR-0004 (amended), ADR-0006, ADR-0008,
-ADR-0010, ADR-0016, ADR-0017, ADR-0018, ADR-0019.
+ADR-0010, ADR-0016, ADR-0017, ADR-0018, ADR-0019, ADR-0024.
+
+### Container (`starter/kit/`, `docs/conventions/`)
+
+Responsibility: what a run is born into — records, conventions,
+hygiene, entry files — held here as the handbook's kit at a pin
+rather than taken by the run from the handbook itself (ADR-0024).
+Fourteen of sixteen files are byte-identical to the master; the
+delta is listed in `starter/README.md` beside the set, never
+inside it, one line per departure with its reason and a ceiling of
+a third of the files. The seven convention manuals ride along at
+the same pin in `docs/conventions/`, read-only, explaining
+artifacts we hold verbatim; `docs/conventions.md` beside them
+carries that pin and the rule. Inside the container the parts
+divide by how they update: the four convention skills are pinned
+copies that travel at a re-pin; the record stubs, the entry files
+and the hygiene files are the run's own from birth and never
+travel again.
+Why shaped this way: ADR-0024 (the take), ADR-0023 (what a pin
+claims and how a compare runs), ADR-0002 (the vendoring rule the
+manuals follow).
 
 ## Invariants
 
@@ -95,6 +121,21 @@ ADR-0010, ADR-0016, ADR-0017, ADR-0018, ADR-0019.
 - An execution never lands without stating which concept version it
   derives from. Enforced in each file's pin header, which travels
   with every copy into a run repo (ADR-0004).
+- The container never departs from its master without a line in the
+  delta list saying so and why. Enforced in `starter/README.md`'s
+  kit-half section, with a ceiling — past a third of the files, or
+  a departure not stateable in one sentence, the take was the wrong
+  shape (ADR-0024).
+- A pin never claims more than was checked: verbatim means
+  identical at that hash, flavoured means derived from it with this
+  delta, last read on this date. Enforced in the registry entry and
+  the delta list; a compare is a reading over two diffs, and the
+  verdict is written every time, including "taught nothing"
+  (ADR-0023).
+- A record stub is never re-delivered to a live run. Enforced in
+  `starter/installs/bundle-update.md`'s container-half rule: a kit
+  re-pin moves four files, and the rest are the run's own work
+  (ADR-0024).
 
 ## Codemap
 
@@ -102,9 +143,10 @@ ADR-0010, ADR-0016, ADR-0017, ADR-0018, ADR-0019.
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
-| `starter/` | The delivery layout (ADR-0010, ADR-0017): `bundle/` is what a run copies as pinned files (the five skills); `fills/` is text written into the kit's own files (the playbook's steps; the two entry-file fills, ADR-0019); `README.md` describes and maps; `installs/` holds the two operator manuals — `pure-seed.md` for birth (ADR-0016) and `bundle-update.md` for every update after it (ADR-0022) |
+| `starter/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `kit/` is the container, the handbook's kit at a pin with a stated delta; `bundle/` is what a run copies as pinned files (the five skills); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and carries the delta list and the kit pin; `installs/` holds the two operator manuals — `pure-seed.md` for birth (ADR-0016) and `bundle-update.md` for every update after it (ADR-0022) |
 | `docs/baselines/` | Held baselines — artifacts withheld from delivery, blind to newborns, compared against lived results: the frozen playbook (ADR-0012) and the Spring slice reference, handed to a run only after its build is on record (ADR-0021) |
 | `docs/models/` | Handbook models, vendored pinned copies (ADR-0002) |
+| `docs/conventions/` | The handbook's seven convention manuals, vendored read-only at the kit's pin; `docs/conventions.md` beside them holds the pin and the rule (ADR-0024) |
 | `docs/adr/` | Architecture decision records |
 | `devlog/` | Session-by-session work history |
 | `temp/` | Working drafts, tracked and deleted when served — handoffs, replies, briefings being molded (not records; `temp/README.md` holds the rule) |

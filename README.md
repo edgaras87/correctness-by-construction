@@ -6,7 +6,10 @@ the structure of a thing rather than tested in afterwards. The repo
 holds the plain-words statement of the concept (with its rationale,
 open questions, and the log of what changed it and why) and the
 executions derived from it — agent skills, checklists, templates —
-each pinned to the concept version it derives from. It is the middle
+each pinned to the concept version it derives from. Since 2026-09-18
+it also holds the container a run is born into: the handbook's
+starter kit, vendored here at a pin, so a run has one upstream and
+one pin instead of two (ADR-0024). It is the middle
 tier of a three-tier workspace (handbook → concepts → runs; see
 docs/models/tiers.md): runs happen in other repos pinned to a concept
 version, and their surprises come back here as harvested concept
@@ -31,7 +34,10 @@ recorded way instead of living in a head and scattered notes.
 - Running projects or experiments here — runs happen in their own
   repos, pinned to a concept version (runs tier).
 - Authoring method or working-arrangement conventions — the
-  handbook owns method.
+  handbook owns method. We now *ship* its conventions, held at a
+  pin and passed on unedited, which is carriage and not authorship:
+  friction with one goes up to the handbook as a finding, never
+  into the copy.
 - Garden machinery — none until the garden rule triggers: a second
   concept repo, a rule written twice.
 - Graduating an execution to its own concept repo — same trigger,
