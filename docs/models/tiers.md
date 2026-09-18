@@ -1,9 +1,12 @@
-<!-- Vendored copy — engineering-handbook models/tiers.md @ ba7eaa4
-     (copied 2026-09-17; before that @ ab916a1 2026-09-11, first
+<!-- This repo's (ADR-0026). Taken from the handbook's
+     models/tiers.md at ba7eaa4, and identical through their
+     8adb46f, the last state this repo was aligned with. Nothing
+     tracks that repo; the coordinates are what a re-sync would
+     start from. Copy history, kept as provenance: copied
+     2026-09-17 @ ba7eaa4; before that @ ab916a1 2026-09-11; first
      copied 2026-08-27 @ 4fe8083, this repo's kit birth pin, and
-     unchanged there through af16eb7). Pinned: do not edit here —
-     changes happen in the handbook and arrive as a fresh pinned
-     copy. See ADR-0002. -->
+     unchanged there through af16eb7. Edit when something lived
+     here contradicts the text; the body is otherwise as taken. -->
 
 # Tiers Model
 

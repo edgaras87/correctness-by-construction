@@ -117,18 +117,16 @@ ADR-0024 (the take that brought it here).
 - A substantive concept change never lands without a version entry.
   Enforced in CHANGELOG's standing comment and ADR-0003; checked at
   commit review — a review-grade wall, named as such.
-- Vendored models are never edited locally — changes arrive only as
-  a fresh pinned copy. Enforced in their provenance headers
-  (ADR-0002).
 - An execution never lands without stating which concept version it
   derives from. Enforced in each file's pin header, which travels
   with every copy into a run repo (ADR-0004).
-- The container's provenance is never lost: where it came from, and
-  the last upstream state it was aligned with, stay written down
-  even though nothing tracks that repo any more. Enforced in
-  `starter/README.md`'s kit-half section and `docs/conventions.md`
-  — the coordinates a re-sync would start from, and the only
-  protection against it becoming archaeology (ADR-0025).
+- Taken material never loses its provenance: where it came from,
+  and the last upstream state it was aligned with, stay written
+  down even though nothing tracks that repo any more. Enforced in
+  `starter/README.md`'s kit-half section, in `docs/conventions.md`,
+  and in each model's own header — the coordinates a re-sync would
+  start from, and the only protection against it becoming
+  archaeology (ADR-0025, ADR-0026).
 - A manual never outlives the rule it explains: a rule changed in
   `starter/kit/` moves its manual in `docs/conventions/` in the
   same commit. Enforced in `docs/conventions.md` — a stale manual
@@ -152,7 +150,7 @@ ADR-0024 (the take that brought it here).
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
 | `starter/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `kit/` is the container, this repo's since ADR-0025, taken from the handbook's kit at `ba7eaa4` with the delta kept as a reading aid; `bundle/` is what a run copies as pinned files (the five skills); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and carries the delta list and the kit pin; `installs/` holds the two operator manuals — `pure-seed.md` for birth (ADR-0016) and `bundle-update.md` for every update after it (ADR-0022) |
 | `docs/baselines/` | Held baselines — artifacts withheld from delivery, blind to newborns, compared against lived results: the frozen playbook (ADR-0012) and the Spring slice reference, handed to a run only after its build is on record (ADR-0021) |
-| `docs/models/` | Handbook models, vendored pinned copies (ADR-0002) |
+| `docs/models/` | Two models, this repo's (ADR-0026), taken from the handbook at the kit's pin; each header carries the coordinates |
 | `docs/conventions/` | Seven convention manuals, this repo's (ADR-0025), taken at the kit's pin; `docs/conventions.md` beside them holds the coordinates and the rule that a manual moves with its rule |
 | `docs/adr/` | Architecture decision records |
 | `devlog/` | Session-by-session work history |
