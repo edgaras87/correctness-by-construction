@@ -6,6 +6,141 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-18, evening  (the fork is told, and the last upstream goes)
+
+- The letter to the handbook went, and its trigger was its own.
+  ADR-0025 decision 8 parked it "until we have something to say"
+  and named the one thing worth sending: what `bundle-update.md`
+  taught once it had run for real. It ran end to end that morning.
+  So the letter was not overdue bookkeeping — the condition we set
+  fired, and we noticed.
+- **DEAD END (mine, small, and instructive): the DRAFT banner
+  travelled.** The letter carried a banner addressed to us — which
+  file in `temp/` to delete, which decision parked it — and the
+  operator copied the file as it stood. The handbook recorded it
+  whole and asked, reasonably, whether the letter was meant to be
+  held. Nothing in our procedure strips a banner before a draft is
+  handed over. The same shape as the four findings the letter
+  itself carried: no diff catches it, and the receiver is the one
+  who finds it.
+- The reply conceded the fork without argument, and did it better
+  than we asked. It verified our two coordinates in its own history
+  rather than taking them from our text — `git diff ba7eaa4
+  8adb46f` empty across all five paths — recorded the decision as
+  its ADR-0042, and let its tiers model say what a fork is: not
+  delivery, not harvest, not the told channel, but the state of
+  having left the three, asking one thing at the moment it happens,
+  that both sides record the last aligned commit.
+- **It also priced what we had only described.** We wrote that
+  interposing ourselves costs them their field data. They answered
+  with the ledger: we were the only outside reader of the kit, run
+  3 reached them through us, and several of their decisions are
+  parked on "a born project reports the same". Those parks are now
+  closed by circumstance, not met — and they wrote that into the
+  ADRs rather than leave it to be found. ADR-0035 came back
+  answered and marked the last of its kind; ADR-0038's provisional
+  mark came off, not because the condition was met but because it
+  can never resolve, and an unresolvable provisional mark tells
+  every later reader to wait for a report that will not come. That
+  sentence is the sharpest thing either side wrote today, and it
+  found a defect in our own ADR-0002 within the hour.
+- The one factual error in the reply was caused by our sentence.
+  We wrote "We told run 3 that convention-lifecycle had renumbered
+  §1–§8 to §1–§3. It is §1–§9" — which reads as a claim about the
+  file. It was a claim about the *range the renumbering covered*.
+  They read it the first way, checked their own copy, found §1–§3,
+  and concluded we had miscounted our own file. Both repos hold it
+  at three. The miscount was the word "eight" in our note to
+  never-oversold, describing an old range that was nine.
+- **Two arithmetic claims travelled wrong in two days, and the
+  failure modes are mirror images.** Ours travelled because we
+  wrote a number we had not checked. Theirs travelled because they
+  read a number in our text instead of in the material — the one
+  thing both repos' records say a note must never be allowed to
+  do. They closed it by checking `git show ab916a1:...` themselves,
+  found nine numbered sections and an unnumbered Delivery, and took
+  our reading of why it matters: a renumbering described without
+  reading its range, then a grep for one number out of nine, is how
+  the citation at old §7 escaped. That is what makes "grep every
+  old identifier" load-bearing rather than tidy.
+- Both sides left their sent letters unedited, for the same stated
+  reason: an accurate record of what was sent beats a corrected one.
+  The corrections travelled as their own notes.
+- **The models turned out to be the last live upstream, and nobody
+  had decided to keep them.** ADR-0025 took the kit and the manuals
+  and never mentioned `docs/models/`, so two files still carried
+  "do not edit here — changes happen in the handbook and arrive as
+  a fresh pinned copy". A rule that cannot fire once that repo is
+  parked, sitting in shipped-adjacent text — the same defect the
+  handbook had removed from its own ADR-0038 that afternoon, found
+  in our repo hours later. `ARCHITECTURE.md` carried it as a
+  standing invariant two entries below one saying nothing tracks
+  that repo any more: two invariants, two different worlds, both
+  true as written.
+- ADR-0026 takes them, supersedes ADR-0002 in part — that clause
+  only, its reasoning about why a copy beats a reference still
+  governs everything shipped to a run — and names the cost rather
+  than dressing it: we now maintain a picture of a tier we cannot
+  see, and own a draft whose refutation conditions have no owner.
+  Ran as a four-step change-plan. One divergence, recorded: step
+  4's records catch-up found two records stating what the set had
+  just made false, including a closed Step 8 gate line and ADR-0002
+  itself sitting under an unqualified Accepted.
+- Nothing in this repo now tracks the handbook. Not by reference,
+  not by pin, not by an owed report. It appears in four places that
+  name a hash. The ARCHITECTURE diagram lost its last upstream
+  arrow and shows two tiers.
+- **The diagram question was settled by rendering, not by
+  argument**, which is worth keeping as a move. The ASCII was exact
+  and cost three rounds of re-squaring borders in one evening.
+  Rather than debate formats, a draft in `temp/` wrote down what
+  the picture must carry — derivation order, one boundary, two
+  labelled flows in opposite directions, the handbook attached to
+  nothing — and three candidates were rendered against it.
+  `block-beta`, the dialect *meant* for stacked blocks, lost the
+  labels and the order. The flowchart with a subgraph held all
+  four. ADR-0027 adopts it provisionally, with two revert
+  conditions, and it does not travel: the kit's stub keeps its
+  ASCII, because a run must not inherit a renderer dependency from
+  a trial we are still running.
+- The ADR's own revert condition was wrong on arrival — it listed
+  "direction hints" among what reverts us, and `direction TB` is
+  the diagram's second line, so the condition fired on itself.
+  Corrected in place at the swap, with the correction stated rather
+  than reworded quietly. The invisible link that candidate B used
+  to force the stack was dropped for the same reason; the stack
+  held without it.
+- **What a question from the user found, which nothing else
+  would have:** the update procedure has six steps and none of them
+  is "verify the landing". Steps 4–6 are the run's business and end
+  at a delete. Yet ADR-0023 decision 5 makes a re-pin a trigger for
+  a compare, and decision 4 says a verdict is written every time.
+  So a decision exists whose second half no step implements — and
+  today's verification of never-oversold's landing happened twice,
+  both times because the operator remembered, not because the
+  manual said. Same shape as the four findings that arrived this
+  morning: true in the records, absent from the procedure. Step 7
+  is the first work of next session.
+- One rule landed and one stayed parked, split on whether the claim
+  is structural or empirical. Sending half, now in force: where a
+  note claims something the receiver has no material to check, the
+  note says so — true by definition for a thin note and for a
+  newborn, so no second instance was owed. Receiving half, parked
+  and reframed: both receivers so far marked an unverifiable claim
+  as unverified *without being told*, never-oversold a day before
+  the handbook wrote it down, so the open question is whether the
+  rule is needed at all. Trigger is now the first receiver that
+  does not.
+- `temp/` is empty but for its README, which is where it should sit
+  between deliveries. Seven drafts served and were deleted.
+- Resume: `bundle-update.md` step 7 — the read-only verification of
+  a landing, and which of the two verdict homes it writes to
+  (registry when a pin moves, devlog when nothing does). Then run
+  3's TODO, where four items are now answerable and three of them
+  were closed by the handbook's own action today. Step 9 (the
+  grouping) still has its naming unanswered and a gate item that
+  the measurement contradicts.
+
 ## 2026-09-18, later still  (the exchange runs end to end; the receiver finds what we missed)
 
 - `bundle-update.md` ran for the first time as a note *and* a copy,
