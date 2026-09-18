@@ -71,51 +71,44 @@ one place: ADR-0009's two-copy composition is retired by ADR-0024,
 the container now being ours to ship rather than the handbook's to
 supply.
 
-## The kit half — held here at a pin
+## The kit half — ours, and where it came from
 
-`starter/kit/` is this repo's copy of the handbook's starter kit,
-at their path names so a compare is a directory diff with nothing
-to map. Fourteen of its sixteen files are byte-identical to the
-master; two carry a composed body and a third a changed birth
-entry (ADR-0024).
+`starter/kit/` is this repo's container: the records, the
+conventions, the hygiene files and the entry files a run is born
+into. It is ours to change when this repo needs it changed
+(ADR-0025). It began as a copy of the handbook's starter kit and
+keeps their path names, which costs nothing and keeps a comparison
+possible.
 
-Kit pin: `ba7eaa4` — taken 2026-09-18. This line is the pin's one
-home: `installs/pure-seed.md` reads the hash out of it, so a
-re-pin moves one line and the birth procedure follows.
+**Provenance, recorded once.** The bytes came from the handbook at
+`ba7eaa4`. Every path we took is identical through their `8adb46f`
+— twelve commits later, none of them touching anything we hold —
+so `8adb46f` is the last state this repo was aligned with, and
+divergence starts after it. These are coordinates for a re-sync
+that may never happen, not an obligation: nothing here tracks that
+repo, and no update from it is owed a reading.
 
-A run receives the kit and the bundle as one delivery with one
-pin, and that pin claims what ADR-0023 decision 8 says it claims:
-derived from the handbook at this hash, with the delta below, last
-read on the date the registry entry names. Both hashes are written
-down, here and in the delivered birth entry — one pin standing for
-two states would be a pin that lies.
+Kit pin: `ba7eaa4` — this line is the hash's one home, and
+`installs/pure-seed.md` reads it from here for the birth entry, so
+it moves in one place.
 
-**The delta — one line per departure, with its reason.**
+**What differs from what we took, and why.** A reading aid for
+whoever attempts a re-sync — not a gate, with nothing counting its
+rows:
 
-| What departs from the master | Why |
+| What differs | Why |
 |---|---|
 | `CLAUDE.md` is absent from the root; the kit ships it at `.claude/CLAUDE.md` | a run builds an app and the root is the app's. This was the seed's step-4 `sed` until the kit came here; now it is the artifact |
 | `.claude/CLAUDE.md` carries a body composed here, not the kit's stub | two runs derived their entry file unaided and neither produced the pre-framing guard or the pin stance (ADR-0019). A whole file, copied never merged (ADR-0015) |
 | `README.md` carries a body composed here, not the kit's stub | the same reading and the same delivery rule |
-| `.claude/decisions.md`'s birth entry, and the comment above it, name both upstreams | the delivery has two parents and the record must say so (ADR-0023 decision 8) |
+| `.claude/decisions.md`'s birth entry, and the comment above it, name both upstreams | the delivery has two parents and the record says so |
 
-Three files of sixteen. The ceiling is a third — pass it, or find a
-departure that cannot be stated in one sentence with its reason,
-and the take was the wrong shape and ADR-0024 is revisited rather
-than extended.
-
-**The re-verify duty inside the two composed files.** Each carries
-text that is the kit's own, held verbatim, and their
-agent-arrangement convention holds that half's rules:
-`.claude/CLAUDE.md` keeps the title line, the records table with
-its comment, and the guard comment; `README.md` keeps the records
-table and both its comments. The rest of each file is this repo's,
-harvested from the runs' own derivations — the orientation, the
-CbC pointer, the pre-framing guard, the pin stance, the
-`docs/system/` and System rows, the Local rules. At every re-pin,
-re-verify the kit's half against their entry files at the new pin;
-a re-pin that moves the four skills and leaves these unchecked
-leaves the record claiming a check it did not make.
+Inside the two composed entry files, some text came from the kit's
+own stubs — `.claude/CLAUDE.md`'s title line, records table and
+guard comment; `README.md`'s records table and both its comments —
+and the rest is this repo's, harvested from the runs' own
+derivations. Recorded because it tells a re-sync which half is
+which, not because anything must be re-verified against them.
 
 ## What replaced the contract
 

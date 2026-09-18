@@ -1,13 +1,17 @@
-> **HELD — not sent, and not ready to send.** This block is ours,
-> not theirs; it is deleted when the letter goes.
+> **HELD — not sent, and no longer owed.** This block is ours, not
+> theirs; it is deleted if the letter ever goes.
 >
-> It waits on PLAN Step 8 landing and Step 10's delivery running,
-> because two of its five sections are written from projections
-> rather than from what happened (ADR-0024 decision 10: one letter,
-> after, with lived numbers). Before it goes, refresh: §1's report
-> once `bundle-update.md` has run end to end, note and copy both;
-> §2's measurement against what the take actually cost; the date
-> line; and the pin it names. §3, §4 and §5 hold as written.
+> ADR-0025 took full ownership of the kit and the manuals, so
+> sections 2, 3 and 4 describe a relationship this repo no longer
+> has: there is no constraint to place on their purification, and
+> no field-data bargain to strike. What survives is §1 (what
+> `bundle-update.md` taught, once it has actually run) and §5's
+> defect report, which is still true and still theirs to use.
+>
+> It waits on having something to say, not on a step. If a re-sync
+> is ever attempted — the trigger is a second repo needing this kit
+> that is not a CbC project — this letter is the record of what we
+> would have told them, written while it was fresh.
 
 # Hand-off to the handbook — the kit comes here, and what your manual-run taught
 

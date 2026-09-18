@@ -86,22 +86,21 @@ ADR-0010, ADR-0016, ADR-0017, ADR-0018, ADR-0019, ADR-0024.
 ### Container (`starter/kit/`, `docs/conventions/`)
 
 Responsibility: what a run is born into — records, conventions,
-hygiene, entry files — held here as the handbook's kit at a pin
-rather than taken by the run from the handbook itself (ADR-0024).
-Fourteen of sixteen files are byte-identical to the master; the
-delta is listed in `starter/README.md` beside the set, never
-inside it, one line per departure with its reason and a ceiling of
-a third of the files. The seven convention manuals ride along at
-the same pin in `docs/conventions/`, read-only, explaining
-artifacts we hold verbatim; `docs/conventions.md` beside them
-carries that pin and the rule. Inside the container the parts
-divide by how they update: the four convention skills are pinned
-copies that travel at a re-pin; the record stubs, the entry files
-and the hygiene files are the run's own from birth and never
-travel again.
-Why shaped this way: ADR-0024 (the take), ADR-0023 (what a pin
-claims and how a compare runs), ADR-0002 (the vendoring rule the
-manuals follow).
+hygiene, entry files — and this repo's to shape (ADR-0025). It
+began as the handbook's starter kit, taken at `ba7eaa4` and
+identical through their `8adb46f`; those coordinates stay written
+down in `starter/README.md` and `docs/conventions.md`, and nothing
+tracks that repo. Fourteen of sixteen files are still as they
+arrived; what differs is listed beside the set as a reading aid
+for a re-sync, not a gate. The seven convention manuals sit in
+`docs/conventions/` — the *why* behind each rule, for a maintainer,
+never shipped — and move with the rules they explain. Inside the
+container the parts divide by how they reach a run: the four
+convention skills travel again at an update; the record stubs, the
+entry files and the hygiene files are the run's own from birth and
+never travel twice.
+Why shaped this way: ADR-0025 (ours, with the fork point recorded),
+ADR-0024 (the take that brought it here).
 
 ## Invariants
 
@@ -121,17 +120,22 @@ manuals follow).
 - An execution never lands without stating which concept version it
   derives from. Enforced in each file's pin header, which travels
   with every copy into a run repo (ADR-0004).
-- The container never departs from its master without a line in the
-  delta list saying so and why. Enforced in `starter/README.md`'s
-  kit-half section, with a ceiling — past a third of the files, or
-  a departure not stateable in one sentence, the take was the wrong
-  shape (ADR-0024).
-- A pin never claims more than was checked: verbatim means
-  identical at that hash, flavoured means derived from it with this
-  delta, last read on this date. Enforced in the registry entry and
-  the delta list; a compare is a reading over two diffs, and the
-  verdict is written every time, including "taught nothing"
-  (ADR-0023).
+- The container's provenance is never lost: where it came from, and
+  the last upstream state it was aligned with, stay written down
+  even though nothing tracks that repo any more. Enforced in
+  `starter/README.md`'s kit-half section and `docs/conventions.md`
+  — the coordinates a re-sync would start from, and the only
+  protection against it becoming archaeology (ADR-0025).
+- A manual never outlives the rule it explains: a rule changed in
+  `starter/kit/` moves its manual in `docs/conventions/` in the
+  same commit. Enforced in `docs/conventions.md` — a stale manual
+  is the kind of lie nothing catches, because it is read rarely and
+  by whoever is least sure (ADR-0025).
+- A pin never claims more than was checked. Enforced where this
+  repo still reads what it does not own, which is now the runs: a
+  compare is a reading over two diffs and the verdict is written
+  every time, including "taught nothing" (ADR-0023, narrowed by
+  ADR-0025).
 - A record stub is never re-delivered to a live run. Enforced in
   `starter/installs/bundle-update.md`'s container-half rule: a kit
   re-pin moves four files, and the rest are the run's own work

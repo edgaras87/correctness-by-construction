@@ -1,30 +1,29 @@
-# The conventions' manuals — vendored, read-only
+# The conventions' manuals
 
-`docs/conventions/` holds the handbook's `conventions/` directory:
-the seven manuals, their index, and the three java-spring hygiene
-overlay parts. Eleven files, byte-identical to the handbook at the
-pin below (ADR-0002's rule, ADR-0024 decision 5). This file sits
-beside them rather than inside, so nothing about the set travels
-with the set.
+`docs/conventions/` holds the seven convention manuals, their
+index, and the three java-spring hygiene overlay parts — eleven
+files. A manual is the *why* behind a rule, written for a
+maintainer and never shipped to a run; the rules themselves are
+the skill files in `starter/kit/.claude/skills/` and the shapes of
+the stubs beside them.
 
-Conventions pin: `ba7eaa4` — taken 2026-09-18, the same pin
-`starter/kit/` is held at. The two move together: a manual
-explaining an artifact at a different hash than the artifact is a
-manual that lies.
+They are this repo's, to change when a rule here changes
+(ADR-0025). They began as copies of the handbook's `conventions/`
+and are still identical to them.
 
-**Read-only, and why.** A manual is the *why* behind a rule,
-written for a maintainer. We hold four of the rule artifacts
-verbatim, so their manuals explain ours exactly, and an edit here
-would fork the explanation while the rule stayed shared —
-anchoring neither copy. Friction with a manual goes up as a
-finding, never into the copy (ADR-0022 decision 7).
+**Provenance, recorded once.** Taken from the handbook at
+`ba7eaa4`, and identical through their `8adb46f`, which is the
+last state this repo was aligned with. The same coordinates
+`starter/kit/` carries, because the two were taken together and a
+manual explaining an artifact from a different state would
+mislead. Nothing here tracks that repo.
 
-**What is ours to write, and where it lives.** Anything this repo
-flavours needs an explanation these manuals cannot give, because
-they do not know it happened. Today that explanation is the delta
-list in `starter/README.md` — four departures, one reason each.
-When it outgrows a table it graduates into manuals here, ours,
-beside theirs.
+**Keep them true to the rules they explain.** A manual's only job
+is to say why its rule is shaped as it is. If a rule in
+`starter/kit/` changes and its manual here does not, the manual
+lies — and it is the kind of lie nothing catches, because a
+manual is read rarely and by whoever is least sure. So the manual
+moves with its rule, in the same commit.
 
 **What did not come, and why.** Sixteen of the handbook's entries
 under `conventions/` are symlinks into `starter/kit/`, not files:
@@ -50,23 +49,25 @@ reach outside it resolve here by accident —
 `../../starter/README.md` and `../../starter/playbooks/` resolve
 to `docs/starter/...`, which does not exist, because our
 `starter/` is at the root and theirs sits one level up from
-`conventions/`. Not defects to fix — the manuals are read-only and
-they are correct where they were written. They are what a relative
+`conventions/`. Not defects to fix today — they are correct where
+they were written, and rewriting eleven files' links buys nothing
+until someone follows one. They are what a relative
 path does the moment a file is read from a different root, which
 is every vendored copy and every shipped file. This repo's own
 documents write paths from the repo root instead; a file we ship
 writes them from the root of the repo that receives it.
 
-**The compare.** Byte-identity against the handbook at the pin,
-for all eleven; then the reading, which asks what either side has
-learned (ADR-0023). Run it when the kit pin moves, since the two
-pins move together.
+**No compare runs on a schedule.** These are ours; nothing
+upstream is owed a reading (ADR-0025). If a re-sync is ever
+attempted, the coordinates above are where it starts — and
+`git diff 8adb46f..<theirs> -- conventions` is the whole of what
+it would have to read.
 
-**One finding, parked rather than acted on.** The handbook keeps
-Spring hygiene overlays here, at
+**One finding, parked rather than acted on.** Spring hygiene
+overlays live here, at
 `docs/conventions/repo-hygiene/templates/java-spring/`. Our
 `cbc-bootstrap` never
 points at them — it has a run grow its own `.gitignore` from what
 the Spring skeleton produces. Two sources for one thing, and our
 runs have used neither. Worth a decision when the groups are named
-(PLAN Step 9), not before.
+(PLAN Step 9), not before — and now ours to decide alone.
