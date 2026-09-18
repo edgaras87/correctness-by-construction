@@ -6,6 +6,100 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-18  (the kit comes here; a compare stops meaning identical)
+
+- The one-chain question was decided and executed in one session,
+  which was not the plan when the session opened. Two ADRs and
+  thirteen commits: `starter/kit/` now holds the handbook's kit at
+  `ba7eaa4`, fourteen of sixteen files verbatim, and the birth no
+  longer runs another repo's bash in our shell.
+- The session's own idea, and it is the user's: a compare is not
+  "are these identical". Between two repos that have both grown the
+  question is what either side has learned that the other should
+  have, and that question does not care which side moved. That
+  dissolved the objection that had blocked the take for a day —
+  two masters, so the compare dies — rather than answering it.
+- What kept the mechanical half alive was our own history. The pass
+  of 2026-09-09 produced five findings that split by instrument:
+  two only a reading could find (ADR-number collisions inside
+  byte-perfect copies), two only a diff could (the installed drift,
+  the pin lying since 09-07 because a change was absorbed through
+  conversation with no entry). Neither instrument finds the other's
+  findings. So ADR-0023 keeps both: the diffs are evidence, the
+  reading decides, and a verdict is written every time including
+  "taught nothing".
+- ADR-0023 earned itself twice in a day. Ten minutes after it was
+  committed its mechanical half found the three fills claiming a
+  re-verification made at `ab916a1` while we sit at `ba7eaa4` — the
+  09-17 re-pin covered the four skills and the two models and not
+  them. Harmless, as it happens: the entry files were unchanged
+  across the span. Then during the manuals' copy a byte check
+  called sixteen wrong files identical, because both sides were
+  read through the same broken step. A check that pulls both sides
+  through one broken read confirms nothing, and that is the failure
+  ADR-0023 exists to make visible, met on day one.
+- The take came in smaller than measured. 16 files, 926 lines;
+  thirteen were expected verbatim and fourteen landed, because the
+  user chose to keep the playbook a document rather than fold its
+  steps into `PLAN.md`. That kept ADR-0011 untouched and playbooks
+  a menu, at the cost of the marked-region insert surviving as the
+  birth's one genuine merge. The forward reason is Step 9's: a CbC
+  project that is not Spring and Postgres wants a different
+  sequence.
+- Two things were decided and not done, and only a question found
+  them. ADR-0024 decision 5 brought the seven manuals here and no
+  step of the change-plan did it. And the same decision was written
+  without its second half — their manuals explain their artifacts,
+  so anything we flavour needs an explanation that is ours. The
+  delta list is that explanation today; outgrowing its table is the
+  signal the flavour has turned rule-level.
+- DEAD END avoided, and the avoidance is worth more than the fix:
+  `convention-lifecycle` tells a run to diff the handbook, and a
+  one-chain run holds no handbook checkout. Two options were costed
+  — flavour their rule, or carry it in our procedure — before
+  reading three lines further, where their own paragraph says the
+  handbook is "a checkout on disk or the payload a handoff
+  carries". Our delivery is that payload. Nothing needed changing.
+  The finding that goes up instead is smaller and real: their
+  sentence assumes the payload comes from the handbook itself, not
+  from an intermediary holding their files at a pin it chose.
+- The letter to the handbook was written too early, on an
+  instruction I had put in the ADR myself — decision 9, "three
+  things go up before the take lands", which contradicted the
+  draft's own conclusion that sending first would be two letters
+  where one will do. The user caught it. The decision is now
+  decision 10, sent after, and the letter is held in `temp/` with
+  a block naming what to refresh before it goes.
+- `temp/` cleared, and the clearing was a harvest rather than
+  housekeeping: the one-chain draft held two things no ADR had —
+  the handbook's own ADR-0041 statement of this role, and the back
+  door considered and rejected. Both landed before the draft went.
+  The sketch that had been steering the work, while declaring it
+  bound nothing, graduated into PLAN steps 7 through 10 — which
+  also closed a three-week hole where sixteen decisions and three
+  seeded runs had no step around them.
+- One local rule arrived from the material: paths are written from
+  the repo root, never relative to the file. The vendored manuals
+  cite relatively; read from a new root, two of their four outward
+  links dangled and two resolved only because `docs/models/` is
+  where we happen to keep those files. Every artifact this repo
+  makes is read from a root other than the one it was written at.
+- Parked for Step 9: the handbook keeps Spring hygiene overlay
+  parts as templates appended below the base layer's marked line —
+  their own skeleton-plus-flavour shape, built once, deliberately,
+  in exactly one of sixteen kit files. Our `cbc-bootstrap` points
+  at none of it, so three runs have grown by hand what a template
+  already held.
+
+Resume: Step 9, the groups — the work kit, the concept and its
+skills, and the practice executions shaped by one stack, which the
+repo has drawn three times without naming (the derives-from versus
+checked-against split, the reference held out of the bundle, six
+templates all in one group). It stands whether or not the take had
+landed, and the Spring-overlay item waits inside it. Step 10 is the
+delivery run that produces the letter's lived numbers; nothing goes
+to the handbook before it. Nothing is owed to either side today.
+
 ## 2026-09-17, later still  (both documents delivered, both answered; the exchange ran twice on its first day)
 
 - The exchange ADR-0022 decided was exercised in both directions
