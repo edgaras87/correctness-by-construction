@@ -99,16 +99,32 @@ below.
 **3. Stage the copy and the note in the run's `temp/`.** (operator)
 
 ```bash
-mkdir -p "$run_dir/temp/bundle-$new_pin"/concept
+staged="$run_dir/temp/bundle-$new_pin"
+mkdir -p "$staged"/concept "$staged"/conventions
+
+# the method half — the five skills and the concept chapters
 for s in cbc-framing cbc-bootstrap cbc-slice infra-establish infra-serve; do
-  cp -r "$bundle_dir"/starter/bundle/"$s" "$run_dir/temp/bundle-$new_pin"/
+  cp -r "$bundle_dir"/starter/bundle/"$s" "$staged"/
 done
-cp "$bundle_dir"/concept/*.md "$run_dir/temp/bundle-$new_pin"/concept/
+cp "$bundle_dir"/concept/*.md "$staged"/concept/
+
+# the container half — the four convention skills, and only those
+for c in commit-messages change-plans artifact-kinds convention-lifecycle; do
+  cp -r "$bundle_dir"/starter/kit/.claude/skills/"$c" "$staged"/conventions/
+done
+
 cp "$bundle_dir"/temp/<the-note>.md "$run_dir/temp/"
 ```
 
 Nothing is overwritten yet. The run sees what is coming before it
 takes it.
+
+**The container half is staged only when it moved**, and only these
+four. The record stubs, the entry files and the hygiene files are
+the run's own from birth and are never staged — a copy of one would
+be an offer to overwrite the run's own work with a blank. A run
+still taking its conventions from the handbook directly gets no
+`conventions/` directory here, and the note says which case it is.
 
 The concept chapters are staged every time, changed or not, so the
 run compares rather than trusts a claim that they did not move.
@@ -124,6 +140,11 @@ for s in cbc-framing cbc-bootstrap cbc-slice infra-establish infra-serve; do
   rm -rf .claude/skills/$s && cp -r temp/bundle-<pin>/$s .claude/skills/
 done
 cp temp/bundle-<pin>/concept/*.md docs/concept/
+
+# only if the container half was staged
+for c in temp/bundle-<pin>/conventions/*/; do
+  n=$(basename "$c"); rm -rf .claude/skills/$n && cp -r "$c" .claude/skills/
+done
 ```
 
 Whole, never re-derived. A pin names an exact state, and a copy the
@@ -138,7 +159,10 @@ entry is two commits and needs none.
 
 One entry in its `.claude/decisions.md`: the new hash, the old one,
 what moved, what the note said about its own edits, and what it
-decided. That entry is the run's memory of this exchange; nothing
+decided. Where the container half moved too, the entry names both
+hashes — ours for what was delivered, the handbook's for the state
+inside it — because one hash standing for two states would lie, and
+because the run's convention copies are pinned by that second one. That entry is the run's memory of this exchange; nothing
 in the files carries it.
 
 Nothing in the run's history may carry it either. A run's `temp/`
