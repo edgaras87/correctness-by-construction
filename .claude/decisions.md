@@ -470,3 +470,30 @@
   one person's checkout — `~/PycharmProjects/...` appears in the
   install manuals as an operator's variable and stays there,
   which is a different thing from a path inside a document.
+
+- 2026-09-18 Correction to the entry of 2026-09-17: that entry says
+  convention-lifecycle was "renumbered §1–§8 to §1–§3". It was
+  §1–§9. Checked at both hashes that matter — the pin it was written
+  against, `ab916a1`, and the one never-oversold held, `9e28143` —
+  and each has nine numbered sections plus an unnumbered Delivery
+  section. The entry's substance stands: the three new sections are
+  named correctly, step numbers inside the update are unchanged, and
+  §8 step 4 is §3 step 4.
+  Why it is recorded rather than edited: this log is append-only, so
+  a wrong fact is corrected by a later entry and the original stays
+  as it was written. And the error travelled — the note delivered to
+  never-oversold on 2026-09-18 repeated "eight sections", and that
+  run stated nine in its own entry without flagging it as a
+  correction. A receiver quietly fixing our arithmetic is the mildest
+  possible way to learn this, and it would not always be.
+  What it cost, which is the part worth keeping: the miscount was not
+  the reason we missed the fourth stale citation, but it is the same
+  mistake one step earlier — we described a renumbering without
+  reading the range it covered, and then searched for one number out
+  of nine. The procedure fix is in starter/installs/bundle-update.md
+  (d209f9c); this entry is the fact.
+  Rejected: editing the 09-17 entry in place (append-only, and a
+  silently corrected record is worse than a visibly corrected one);
+  leaving it, on the grounds that the substance held (the number is
+  cited in a live procedure, and a wrong range invites a wrong
+  search).
