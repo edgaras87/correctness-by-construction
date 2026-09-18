@@ -46,6 +46,17 @@ Read-only, and scoped: what the change touches, plus the records
 around it — the step it lands in, the decisions log, the TODO. Not
 the whole repo.
 
+**One exception to the scoping, learned 2026-09-18.** When the
+change renames or renumbers anything the run may have cited — a
+section, a file, a rule — grep its whole tree for the old name
+before writing, not only the records you expect it in. Our note of
+that date named two stale `§8` citations and never-oversold found a
+third, in its entry file, because we read its rules file and its
+TODO and did not think to read its `CLAUDE.md`. A citation lives
+wherever someone once needed it, and a diff cannot find it: the
+stale text is in the run's own writing, not in the files it
+receives.
+
 If the run edited its copies, diff them against what it received,
 using the run's own history, not ours:
 
@@ -204,6 +215,22 @@ compliance to.
 If the run has to reach for something the note and the files do not
 carry, the note was thin. That is the diagnostic, and it is worth
 more than a rule against reaching.
+
+**It has a third outcome, found on its first real firing
+(2026-09-18).** never-oversold reached for a handbook checkout, to
+verify that the convention skills it was handed were byte-identical
+to the handbook at the hash the note named — and could not, having
+none. The note was not thin. The reach was unnecessary: the
+handbook stopped being its upstream with that delivery, so its pin
+is ours and the handbook hash inside it is provenance rather than a
+claim to check. What was stale was its model of the relationship,
+and the note had not thought to say so.
+
+So a reach means one of three things, and the sender has to say
+which: the note was thin; or what the run wanted does not exist;
+or the run is working from a relationship that has changed and the
+note did not name the change. The third is the sender's fault as
+much as the first, and only the sender can see it.
 
 ## What this does not do
 
