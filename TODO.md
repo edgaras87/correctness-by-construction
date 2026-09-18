@@ -1173,6 +1173,33 @@
 
 ## Later / someday
 
+- [ ] The imperative test has quietly stopped governing record
+      commits — decide whether the convention names the split or
+      gives it up. Raised by never-oversold at the re-pin of
+      2026-09-18, in its own log, and it applies here harder than
+      there. `commit-messages` says a subject completes "if applied,
+      this commit will …". Measured over our last thirty subjects:
+      twenty-three are statements, seven imperative — and the seven
+      divide exactly as that run described. Procedural commits stayed
+      imperative ("add change-plan", "close change-plan", "accept
+      0023 and 0024", "correct the 09-17 entry"); content and record
+      commits became statements ("the kit is ours", "the obligations
+      leave the texts that carried them", "the one-chain draft is
+      spent"). Nobody decided this on either side; it settled in two
+      repos independently, which is the strongest evidence a rule can
+      get that it is wrong rather than merely unfollowed.
+      The case for the split, as that run put it: a record commit
+      reports what became true, and ordering it about reads worse.
+      The case against: one test is one test, and a convention with a
+      mood exception is a convention nobody can apply without first
+      classifying the commit.
+      Since 2026-09-18 this file is ours to change (ADR-0025), so the
+      decision is available rather than a hand-off. Not taken now
+      because it governs every commit and deserves better than the
+      end of a long session. Trigger: the next time `commit-messages`
+      is opened for any reason, or a retrospective, whichever comes
+      first.
+
 - [ ] Two sources for one Spring hygiene overlay, and our runs
       use neither. Found 2026-09-18 while vendoring the manuals.
       The handbook keeps stack overlay parts at
