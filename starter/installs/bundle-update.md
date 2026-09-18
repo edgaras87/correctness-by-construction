@@ -24,6 +24,35 @@ Who does what: **this repo's agent** reads and writes the note;
 evaluates, takes, and records. No agent reaches into another
 repo's working tree.
 
+```mermaid
+flowchart TB
+  subgraph here["correctness-by-construction — our agent"]
+    direction TB
+    s1["1 · paths and pins"]
+    s2["2 · read the run,<br/>write the note"]
+    s7["7 · read the landing,<br/>write the verdict"]
+    dev[("devlog — the verdict")]
+    s1 --> s2
+    s7 -.-> dev
+  end
+  subgraph therun["the run — its agent"]
+    direction TB
+    s4["4 · diff, then<br/>take it whole"]
+    s5["5 · record the new pin"]
+    dec[("decisions.md — the pin")]
+    s4 --> s5
+    s5 -.-> dec
+  end
+  s2 -->|"3 · operator stages copy + note"| s4
+  s5 -->|"6 · operator deletes what was served"| s7
+```
+
+The operator is not a box, because the operator is not a place:
+steps 3 and 6 are the two crossings, and they are the only things
+that cross. Each side writes one record, in its own log. The map is
+an entry point — the steps below are the procedure, and each keeps
+the reasoning it needs at the moment it is done (ADR-0028).
+
 ---
 
 **1. Set the paths and capture the pins.**
