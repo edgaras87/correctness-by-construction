@@ -24,16 +24,20 @@ A project's convention registry is its agent decisions log,
 `.claude/decisions.md`, as entries:
 
 - The birth entry names the conventions the project was born with
-  and the copy-time handbook commit.
+  and the deliverer's commit at copy time. Where the deliverer
+  composed its delivery from another source, the entry names that
+  hash too: one hash standing for two states would lie.
 - Every later injection or update appends an entry with its own
   hash (§3, step 5).
 - A convention's version in a project is the hash of the last entry
   that touched it. There are no per-convention version numbers.
 - A copy edited since that entry (§3, step 4) is still at that
   version; the edits are the diff against it.
-- "Is there newer, and what changed" is answered in the handbook,
-  where the kit is the master of every shipped file:
-  `git diff <hash>..HEAD -- starter/kit/`.
+- "Is there newer, and what changed" is answered at the deliverer,
+  whose kit is the master of every shipped file:
+  `git diff <hash>..HEAD -- <its kit path>`. A project holding no
+  checkout of its deliverer reads that diff from the delivery it is
+  handed instead (§3, step 1).
 
 ## 3. Updating a copy
 

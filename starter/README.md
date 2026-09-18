@@ -102,6 +102,7 @@ rows:
 | `.claude/CLAUDE.md` carries a body composed here, not the kit's stub | two runs derived their entry file unaided and neither produced the pre-framing guard or the pin stance (ADR-0019). A whole file, copied never merged (ADR-0015) |
 | `README.md` carries a body composed here, not the kit's stub | the same reading and the same delivery rule |
 | `.claude/decisions.md`'s birth entry, and the comment above it, name both upstreams | the delivery has two parents and the record says so |
+| `convention-lifecycle` §2 says "the deliverer" where it said "the handbook", in two places | never-oversold found the file pointing at a repo it no longer uses, on the first delivery after the take (2026-09-18). Its own manual already said "the deliverer's commit hash" — the skill and its manual had disagreed upstream, and this closes it |
 
 Inside the two composed entry files, some text came from the kit's
 own stubs — `.claude/CLAUDE.md`'s title line, records table and
