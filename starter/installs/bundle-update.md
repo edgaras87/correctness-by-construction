@@ -221,23 +221,32 @@ rm -rf "$run_dir/temp/bundle-$new_pin" "$run_dir/temp/<the-note>.md"
 The note here stays until step 7 has run — it is what the verdict
 is written from.
 
-**7. Verify the landing, and write the verdict.** (this repo's agent)
+**7. Read the landing, and write the verdict.** (this repo's agent)
 
 ADR-0023 decision 5 makes a re-pin a trigger for a compare, and
 decision 4 says a verdict is written every time, including "taught
 nothing." Steps 1–6 end at a delete and implement neither. This step
 is the sender's half of the exchange; step 5 is the run's.
 
-**It runs after the delete, on purpose.** With the staging copy gone
-there is nothing left to compare against but our masters and the
-run's own history, which is the only comparison that means anything.
-On 2026-09-18 a check read the run's copies against a staging
-directory step 6 had already removed and reported all nine
-identical. A byte-check that reads both sides through the same
-broken step confirms nothing, and the cheapest way not to make that
-mistake twice is to leave nothing broken within reach.
+**It is a reading, and the reading is the step.** A compare asks what
+either side has learned that the other should have (ADR-0023
+decision 1). Read, in this order, all of it read-only:
 
-Read-only on both sides, and each side reached by its own route:
+- **the note we sent** — what we recommended, and what we claimed;
+- **the run's decisions entry from step 5** — what it took, what it
+  reshaped, what it declined, and its reasons;
+- **its records around the change** — the step it landed in, its
+  TODO, its devlog.
+
+Then evaluate. Did what we recommended survive contact? What did the
+run do that we had not thought of — never-oversold answered a
+question we had left unasked, and we adopted its answer. What did it
+reach for? A reach means the note was thin, or the thing does not
+exist, or the run is working from a relationship that has changed
+and we did not name the change; only the sender can see the third.
+
+**Then look at the files, because a record is an account and not a
+fact.** Four lines, and each side reached by its own route:
 
 ```bash
 n=0
@@ -257,22 +266,42 @@ done
 echo "compared $n method files"
 ```
 
+**Why look, when the run already checked.** Its check at step 4 asks
+whether what it is about to take matches what was staged. This one
+asks whether what it ended up holding matches our master — the
+end-to-end question, and the only one still answerable after the
+delete. The records say what the run decided; the files say what it
+has. This repo has had the two come apart twice, and both times the
+records read fine: a pin that lied for two days while its content
+was absorbed by conversation, and installed conventions that had
+drifted with nobody suspecting it. "A compare made only of judgment
+has no way to notice that it did not happen" (ADR-0023).
+
+There is a second reason, and it is the one particular to a
+delivery. On 2026-09-18 never-oversold recorded our byte-identity
+claim as *attributed rather than checked*, honestly, having no
+material to check it against. A verification built only on its
+records would read that careful non-claim back as confirmation — two
+logs agreeing and nobody having looked. We hold the masters, so we
+are the only side that can look.
+
+**It runs after the delete, on purpose.** With the staging copy gone
+the only comparison within reach is against our masters, which is
+the one that means anything. On 2026-09-18 a check read the run's
+copies against a staging directory step 6 had already removed and
+reported all nine identical. A byte-check that reads both sides
+through the same broken step confirms nothing.
+
 **State the count in the verdict.** A check that silently compared
 nothing prints the same silence as a check that passed — which is
-exactly how the 09-18 false pass read. The number is what separates
-them, and it is the only part of the output a later reader can
-check.
+exactly how that false pass read. The number is what separates them,
+and it is the only part of the output a later reader can check.
 
 **A difference is not automatically a defect.** The run may edit its
-copies, under rules it keeps and logs. So read its
-`.claude/decisions.md` entry from step 5 before judging: a hunk it
-recorded as its own edit is the arrangement working, and a hunk
-nothing accounts for is the landing failing. Only the run's log
-tells the two apart; ours cannot.
-
-Read what it decided, too — what it took, what it declined, what it
-reached for. A reach is the thin-note diagnostic, and the sender is
-the one who has to say which of the three it was.
+copies, under rules it keeps and logs. Its step 5 entry is what
+tells the two apart: a hunk it recorded as its own edit is the
+arrangement working, a hunk nothing accounts for is the landing
+failing. Ours cannot tell.
 
 **The verdict goes in this repo's devlog, every time.** Never the
 registry: that records copies *we* hold from an upstream, at the pin
@@ -282,14 +311,14 @@ entry and the run's decisions entry are the two halves, each side
 writing in its own log, nobody reaching into anybody (ADR-0023
 decision 7).
 
-The entry carries what was delivered and at which pin, the count
-compared, what differed and whether the run's log accounts for it,
-what it took and declined, and what the exchange taught us — or that
-it taught nothing. That last one must be written even when there is
-nothing to say, because a reading that produces no writing is
-indistinguishable from a reading that did not happen.
+The entry carries what was delivered and at which pin, what the run
+took and declined, what the reading taught us — or that it taught
+nothing — and, as its evidence, the count compared and anything that
+differed. The "taught nothing" must be written when it is true,
+because a reading that produces no writing is indistinguishable from
+a reading that did not happen.
 
-Whatever the verification finds that outlives the entry goes where
+Whatever the reading finds that outlives the entry goes where
 findings go: a TODO item, a fix here, an ADR. The devlog entry is
 the verdict, not the whole consequence.
 
