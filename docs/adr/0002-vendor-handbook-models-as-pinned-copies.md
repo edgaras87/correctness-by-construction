@@ -1,7 +1,12 @@
 # 0002. Vendor handbook models as pinned copies
 
 Date: 2026-08-27
-Status: Accepted
+Status: Accepted; superseded in part by ADR-0026 (2026-09-18) —
+the decision's last clause, that updates "arrive only as a fresh
+pinned copy from the handbook, never as local edits", no longer
+holds: both models were taken and are this repo's. The options
+below, and why a pinned copy beats a live reference or a summary,
+still stand and still govern every file shipped to a run.
 
 ## Context
 

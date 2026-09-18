@@ -236,8 +236,10 @@ Gate:
       new shape; the contract is gone from both, and the
       container-half update rule is written down (f721414).
 - [x] Beyond the gate, because the take reached them: the seven
-      convention manuals vendored read-only at the kit's pin
-      (9a1637d), and the shape records caught up (bcbd833).
+      convention manuals taken at the kit's pin (9a1637d), and the
+      shape records caught up (bcbd833). Corrected 2026-09-18: they
+      landed read-only, and ADR-0025 made them ours later the same
+      day; the two models followed under ADR-0026.
 Records: ADR-0023, ADR-0024, ARCHITECTURE, starter/README.md,
 devlog.
 Notes: the take was measured before it was made — 16 files, 926
@@ -327,6 +329,7 @@ was met at Step 5.
 - ADR-0023: The compare is a reading; the diff is its evidence
 - ADR-0024: The kit is taken here, verbatim but for a stated delta
 - ADR-0025: The kit is ours; the handbook becomes provenance
+- ADR-0026: The models are ours; ADR-0002's clause goes
 
 ---
 

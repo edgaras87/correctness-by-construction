@@ -1,9 +1,9 @@
 # 0026. The models are ours; ADR-0002's clause goes
 
 Date: 2026-09-18
-Status: Proposed (opened inside the change-plan for taking the
-models, per change-plans §4; flips at that set's final records
-commit)
+Status: Accepted (2026-09-18, at the final records commit of the
+change-plan for taking the models; opened Proposed per
+change-plans §4. Supersedes ADR-0002 in part — decision 3)
 
 ## Context
 
