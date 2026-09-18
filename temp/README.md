@@ -15,7 +15,21 @@ One rule for anything that leaves here for a run: no ADR numbers,
 paths, or vocabulary of this repo in it — the run cannot see this
 repo, and a citation it cannot follow reads as its own.
 
-A second, for anything that names a third repo: give both names.
+A second, the same rule for claims rather than citations: where a
+note claims something the receiver has no material to check, the
+note says so. Mostly this does not arise, and by design — the
+exchange is a note *and a copy*, so a claim about a delivered file
+has the file beside it, and a receiver that checks will catch us.
+Four kinds have no second end and are not covered by the first
+rule, because none of them carries a citation: a thin note, which
+ships no copy at all; a claim about material outside the delivery;
+a negative claim, which is about this whole tree rather than the
+files in hand; and anything said to a newborn, which holds no
+earlier state for "this changed from" to land against. Marking the
+claim costs a clause. The receiver's half of this — what it should
+do when handed one — is not ours to write and is parked in TODO.
+
+A third, for anything that names a third repo: give both names.
 Our records call a run by its ordinal; a run that has reached its
 Identity step calls itself something else, and the other side of
 the wall may know it only by that. Neither side's records say so.

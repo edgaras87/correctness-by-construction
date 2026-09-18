@@ -1173,6 +1173,30 @@
 
 ## Later / someday
 
+- [ ] What a receiver should *do* when handed a claim it cannot
+      check. The sending half is settled and in force —
+      `temp/README.md`'s second rule, 2026-09-18: where a note
+      claims something the receiver has no material to check, the
+      note says so. That half is structural and needed no second
+      instance; a thin note ships no copy by definition, and a
+      newborn holds no earlier state by definition.
+      This half is not structural and is not ours. The handbook's
+      answer, sent 2026-09-18 and notable for being the first of
+      these findings produced by it getting something wrong rather
+      than by us reporting it: the receiver says it is taking the
+      claim on trust, or asks. never-oversold reached the same
+      shape unprompted the day before — it recorded our
+      byte-identity claim as "the bundle's claim, not checked
+      here". Two receivers, two shapes that agree, and neither was
+      told to do it.
+      So the open question is narrow: does a rule need writing at
+      all, or is this what a good receiver does anyway? Trigger:
+      the first receiver that is handed an unmarked uncheckable
+      claim and acts on it as fact. That is the instance that says
+      the behaviour is not reliable without a rule — and until one
+      exists, writing one is telling two receivers to keep doing
+      what they already do.
+
 - [ ] The imperative test has quietly stopped governing record
       commits — decide whether the convention names the split or
       gives it up. Raised by never-oversold at the re-pin of
