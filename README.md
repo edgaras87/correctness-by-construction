@@ -7,13 +7,13 @@ holds the plain-words statement of the concept (with its rationale,
 open questions, and the log of what changed it and why) and the
 executions derived from it — agent skills, checklists, templates —
 each pinned to the concept version it derives from. Since 2026-09-18
-it also holds the container a run is born into: the handbook's
-starter kit, vendored here at a pin, so a run has one upstream and
-one pin instead of two (ADR-0024). It is the middle
-tier of a three-tier workspace (handbook → concepts → runs; see
-docs/models/tiers.md): runs happen in other repos pinned to a concept
-version, and their surprises come back here as harvested concept
-changes. It exists so its author's understanding improves in a
+it also holds the container a run is born into — its own, taken from
+the handbook's starter kit at a pin and owned here since — so a run
+has one upstream and one pin instead of two (ADR-0024, ADR-0025). It
+is the middle tier of a three-tier workspace (handbook → concepts →
+runs; see docs/models/tiers.md): runs happen in other repos pinned to
+a concept version, and their surprises come back here as harvested
+concept changes. It exists so its author's understanding improves in a
 recorded way instead of living in a head and scattered notes.
 
 ## Success criteria
