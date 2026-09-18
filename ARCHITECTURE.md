@@ -8,29 +8,28 @@
 
 A documentation system, not code: one concept repo on the concepts
 tier of the three-tier workspace (handbook → concepts → runs — see
-docs/models/tiers.md, vendored here pinned). It holds two layers: the
-**mental layer** — the plain-words statement of correctness by
-construction, its rationale, open questions, and the log of what
-changed it — and the **executions** derived from it (agent skills,
-checklists, templates), each pinned to the concept version it derives
-from. It also holds the **container** a run is born into — this repo's
-own, taken from the handbook's starter kit at a pin and owned here
-since (ADR-0024, ADR-0025) — so a run has one upstream instead of
-two. Delivery flows down as pinned copies into run repos; learning
-flows back up as harvested concept changes, after which executions
-are re-derived.
+docs/models/tiers.md, this repo's since ADR-0026). It holds two
+layers: the **mental layer** — the plain-words statement of
+correctness by construction, its rationale, open questions, and the
+log of what changed it — and the **executions** derived from it
+(agent skills, checklists, templates), each pinned to the concept
+version it derives from. It also holds the **container** a run is
+born into — this repo's own, taken from the handbook's starter kit
+at a pin and owned here since (ADR-0024, ADR-0025) — so a run has
+one upstream instead of two. Delivery flows down as pinned copies
+into run repos; learning flows back up as harvested concept changes,
+after which executions are re-derived.
 
 ```
-  handbook ──── kit, vendored at a pin ────┐
-     ▲                                     │
-     │ findings                            ▼
-┌────┴───────── this repo ──────────────────────┐
+  handbook ╌╌╌╌ origin only: the container, its manuals and the
+                models were taken at ba7eaa4. Nothing flows now.
+┌────────────── this repo ──────────────────────┐
 │  mental layer   (the statement)               │
 │      │ derive — pinned at a                   │
 │      ▼ concept version                        │
 │  executions     (skills, checklists,          │
 │                  templates)                   │
-│  container      (starter/kit/, theirs + delta)│
+│  container      (starter/kit/ + its manuals)  │
 └──────┬──────────────────────▲─────────────────┘
   copy │ one delivery,        │ harvest: a run's
        ▼ one pin              │ surprises
