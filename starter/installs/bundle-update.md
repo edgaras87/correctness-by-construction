@@ -218,8 +218,83 @@ changed channel rather than been deleted.
 rm -rf "$run_dir/temp/bundle-$new_pin" "$run_dir/temp/<the-note>.md"
 ```
 
-And here, delete the note from this repo's `temp/` once it has
-landed — git history keeps it.
+The note here stays until step 7 has run — it is what the verdict
+is written from.
+
+**7. Verify the landing, and write the verdict.** (this repo's agent)
+
+ADR-0023 decision 5 makes a re-pin a trigger for a compare, and
+decision 4 says a verdict is written every time, including "taught
+nothing." Steps 1–6 end at a delete and implement neither. This step
+is the sender's half of the exchange; step 5 is the run's.
+
+**It runs after the delete, on purpose.** With the staging copy gone
+there is nothing left to compare against but our masters and the
+run's own history, which is the only comparison that means anything.
+On 2026-09-18 a check read the run's copies against a staging
+directory step 6 had already removed and reported all nine
+identical. A byte-check that reads both sides through the same
+broken step confirms nothing, and the cheapest way not to make that
+mistake twice is to leave nothing broken within reach.
+
+Read-only on both sides, and each side reached by its own route:
+
+```bash
+n=0
+for s in cbc-framing cbc-bootstrap cbc-slice infra-establish infra-serve; do
+  diff -r "$bundle_dir"/starter/bundle/"$s" "$run_dir"/.claude/skills/"$s" \
+    || echo "DIFFERS: $s"
+  n=$((n + $(find "$bundle_dir"/starter/bundle/"$s" -type f | wc -l)))
+done
+diff -r "$bundle_dir"/concept "$run_dir"/docs/concept || echo "DIFFERS: concept"
+
+# only where the container half was delivered
+for c in commit-messages change-plans artifact-kinds convention-lifecycle; do
+  diff -r "$bundle_dir"/starter/kit/.claude/skills/"$c" \
+    "$run_dir"/.claude/skills/"$c" || echo "DIFFERS: $c"
+done
+
+echo "compared $n method files"
+```
+
+**State the count in the verdict.** A check that silently compared
+nothing prints the same silence as a check that passed — which is
+exactly how the 09-18 false pass read. The number is what separates
+them, and it is the only part of the output a later reader can
+check.
+
+**A difference is not automatically a defect.** The run may edit its
+copies, under rules it keeps and logs. So read its
+`.claude/decisions.md` entry from step 5 before judging: a hunk it
+recorded as its own edit is the arrangement working, and a hunk
+nothing accounts for is the landing failing. Only the run's log
+tells the two apart; ours cannot.
+
+Read what it decided, too — what it took, what it declined, what it
+reached for. A reach is the thin-note diagnostic, and the sender is
+the one who has to say which of the three it was.
+
+**The verdict goes in this repo's devlog, every time.** Never the
+registry: that records copies *we* hold from an upstream, at the pin
+we hold them at, and a run sits on the other side of the exchange —
+step 1 already says this repo does not hold its pin. The devlog
+entry and the run's decisions entry are the two halves, each side
+writing in its own log, nobody reaching into anybody (ADR-0023
+decision 7).
+
+The entry carries what was delivered and at which pin, the count
+compared, what differed and whether the run's log accounts for it,
+what it took and declined, and what the exchange taught us — or that
+it taught nothing. That last one must be written even when there is
+nothing to say, because a reading that produces no writing is
+indistinguishable from a reading that did not happen.
+
+Whatever the verification finds that outlives the entry goes where
+findings go: a TODO item, a fix here, an ADR. The devlog entry is
+the verdict, not the whole consequence.
+
+Then delete the note from this repo's `temp/` — it has landed, and
+git history keeps it.
 
 ---
 
