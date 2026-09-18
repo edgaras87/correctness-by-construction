@@ -497,3 +497,35 @@
   leaving it, on the grounds that the substance held (the number is
   cited in a live procedure, and a wrong range invites a wrong
   search).
+
+- 2026-09-19 Deviation from change-plans §4, recorded not repaired:
+  ADR-0028 was committed with Status: Accepted at the second commit
+  of an eight-commit set. The convention says an ADR inside a set
+  opens Proposed and flips in the set's final records commit, and
+  §7 lists the early Accepted among its anti-patterns.
+  What it cost, which is exactly what the rule predicts: two later
+  boundaries changed the ADR. Decision 5 lost one of its three
+  arguments when decision 4's home moved from a playbooks/ file to
+  a skill, and a later commit added the five requirements the ADR
+  had claimed to have and not listed. Neither contradicted it, so
+  no record became false — it claimed a settledness it did not have
+  for six commits, which is the weaker half of the failure and
+  still the one the rule exists to prevent.
+  Why it is here as well as in the close commit's body: a close body
+  is read once, by whoever was at the close. This log is read top to
+  bottom at the retrospective, which is the only place a second
+  instance would be recognised as a pattern rather than met as a
+  fresh surprise. The close body is the set's retrospective and
+  keeps the account of what diverged; this entry is the fact that a
+  convention was broken.
+  If it recurs it is not a slip. A set whose ADRs are routinely
+  settled before its last boundary is either running its ADRs too
+  late or its boundaries too loosely, and the answer then is a
+  change to one of them, not a third entry.
+  Rejected: leaving it in the close body alone, which was the
+  recommendation — the convention names that body as the set's
+  retrospective, and two records of one event can drift apart. The
+  user's call was that a broken rule earns a durable record where
+  rules are kept. Also rejected: an entry per change set, which
+  would make this log a set index; it is here because a rule was
+  broken, not because a set closed.
