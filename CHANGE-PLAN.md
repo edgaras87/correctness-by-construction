@@ -8,38 +8,42 @@ carries what the prose could not show at a glance: the order, the
 three actors, the boundary between two repos, and the one record
 each side writes.
 
-`playbooks/format-comparison.md` states the method that produced
-it, so the third format question does not re-derive it: write what
-the artifact must carry, render candidates against it, judge per
-requirement, let the render decide. It carries the two warnings the
-two runs have accumulated.
+`.claude/skills/format-comparison/SKILL.md` states the method that
+produced it, so the third format question does not re-derive it:
+write what the artifact must carry, render candidates against it,
+judge per requirement, let the render decide. It carries the two
+warnings the two runs have accumulated.
 
 ADR-0028 records both — why that shape and not the other three,
 what the comparison cost the spec it was judged against, and that
 ADR-0027 decision 5's trigger fired and was answered rather than
 parked.
 
-## The kind, named before the file is written
+## The kind and the home, which are two questions
 
-By artifact-kinds' axes: **force** is *executes* — it walks you
-through doing a thing, in a sequence, with gates. **Reuse** is
-*template* — each comparison copies it into a fresh `temp/` draft
-with its own requirements, and is never executed in place. Both
-answers point at **playbook**, and its test — *do you copy it to
-use it?* — is yes.
+**Kind, by artifact-kinds' axes:** *executes* (a step sequence with
+gates) and *template* (copied into a fresh `temp/` draft each time)
+point at **playbook**, and its test — *do you copy it to use it?* —
+is yes. Not a convention: "do they owe an explanation if they
+ignore it" is thin here.
 
-Not a convention: a convention binds and is consulted, and the
-question "do they owe an explanation if they ignore it" is thin
-here. Not a kit convention in any case — `playbooks/` does not
-ship, which is the containment this decision needs and the same
-one ADR-0007 used when it kept the harvest discipline local and
-gave promotion its own trigger.
+**Home, by agent-arrangement §2**, which is a different question
+and was answered wrong first. A rule with a moment goes where the
+moment is, and §2 names a skill as one of those places. This has a
+sharp moment — a format is in question — so it is neither
+entry-file content nor `playbooks/` content. It becomes
+`.claude/skills/format-comparison/SKILL.md`.
 
-**A tension to note rather than resolve:** `playbooks/` holds one
-file today, a vendored *project* playbook whose steps become a
-PLAN. Ours is native, much smaller, and about a document rather
-than a project. The kind still fits; the folder's single precedent
-does not. Worth a second look when a third playbook arrives.
+`playbooks/` was the first answer, and the reason it failed is
+worth keeping: that directory has no channel. Nothing routes an
+agent to it; it is read only when a project playbook is copied into
+a PLAN at Framing. A method filed where no moment sends anyone goes
+stale unread.
+
+**A tension to note rather than resolve:** a native skill now sits
+beside four pinned convention copies, and what distinguishes it is
+absence — no pin header, no manual, no registry entry. Weak, but
+real. Worth marking positively if a second native skill arrives.
 
 ## Commits
 
@@ -58,10 +62,12 @@ in conversation, confirmed by a render, recorded before implemented.
 Diagram C into `bundle-update.md`, above step 1. The prose is not
 touched.
 
-**4. `docs(playbook): spec, then render`**
-`playbooks/format-comparison.md`. Lands after the instance, not
-before: a playbook is distilled from what held, which is why
-`default.md` carries a "Last updated from project" line.
+**4. `docs(agent): spec, then render`**
+`.claude/skills/format-comparison/SKILL.md`. Lands after the
+instance, not before: a playbook is distilled from what held, which
+is why `default.md` carries a "Last updated from project" line.
+Agent scope, not project — it changes what the agent is arranged
+with, and the agent/project commit split has held since Step 0.
 
 **5. `docs(temp): the comparison is spent`**
 Delete the draft. It has served; git history keeps it.
@@ -86,6 +92,14 @@ this comparison.
 - **The trial now spans two files.** Both never ship, so no run
   inherits a renderer. What changes is that ADR-0027 decision 2's
   revert, if it fires, is now two reverts.
+
+- **It does not ship, and the trigger is named** — the first run
+  that actually faces a format question, seen through the harvest
+  loop. Two reasons stand: the kit delta is at its ceiling, and a
+  method *about* the work is Step 9's question. A third died when
+  the home moved — a skill has an obvious slot where a playbook
+  file had none — and ADR-0028 records that rather than deleting
+  it.
 
 - **ADR-0027 decision 5 is answered, not parked** (the user's call,
   against my recommendation to wait for a third instance). The
