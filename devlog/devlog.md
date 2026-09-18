@@ -6,6 +6,102 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-18, later  (the protocol is dismantled; run 3's update written)
+
+- The session's second half undid a good part of its first, on the
+  user's call, and the undoing is the better decision. We had built
+  a protocol for holding another repo's material — a delta list with
+  a ceiling, read-only manuals, a compliance check per delta, a
+  letter owed upward. The user named it: a two-party protocol for a
+  party of one, whose second party is a repo that does not exist and
+  whose needs cannot be specified until it does. We had applied "no
+  general form from one instance" to conventions, playbooks and
+  stack overlays, and never to the relationship.
+- ADR-0025 was drafted twice and committed once. The first draft was
+  the compliance check — every delta names its governing convention
+  and proves it still satisfies it. It was staged, and two questions
+  killed it. The first was narrow: does it apply to all conventions
+  and concepts? That found the draft already wrong — an artifact
+  answers to more than one convention (`.claude/decisions.md` to
+  `agent-arrangement` for its stub and `convention-lifecycle` for
+  its registry entry), and the draft named one. The second question
+  was the real one, and it removed the thing the check existed to
+  manage.
+- The check did produce one finding worth keeping, and it is in the
+  letter: `convention-lifecycle`'s rule says "the *deliverer's*
+  commit hash", not "the handbook's". Their conventions were written
+  with a deliverer abstraction, so an intermediary is already inside
+  the rule — while their repo-shapes model's §4 states two upstreams
+  as fact. Their rules are readier for one chain than their thinking
+  is.
+- The fork is lossless, measured rather than assumed: our copy holds
+  `ba7eaa4`, their HEAD is `8adb46f` twelve commits later, and
+  `starter/kit`, `conventions`, `models`, `starter/playbooks` and
+  `starter/installs` are unchanged across every one of them. So we
+  fork level, not behind, and `8adb46f` is the coordinate a re-sync
+  would start from. That pair of hashes is now the whole of what the
+  relationship is: provenance, not protocol.
+- What we gave up is named in the ADR rather than discovered later:
+  improvements stop arriving free. They fixed the CHANGELOG stub
+  unasked; their 09-17 rewrite cut two thirds of the four
+  conventions' text while keeping the rules. Both landed here at no
+  cost, and that channel is closed by choice.
+- The invariants that replaced the dropped ones are the ones that
+  now carry weight: provenance is never lost, because those
+  coordinates are all that stands between a re-sync and archaeology;
+  and a manual never outlives the rule it explains, which is the
+  live risk once the manuals are ours — a stale manual is a lie
+  nothing catches, read rarely and by whoever is least sure.
+- Step 9's boundary check ran and its numbers are worth keeping even
+  though the step did not start. The method group — five concept
+  chapters, cbc-framing, cbc-slice — holds **zero** occurrences of
+  Spring, Postgres, Flyway, Maven, Docker, Testcontainers or Java
+  across 1,456 lines. The pins agree exactly with that line, with no
+  exceptions. And the practice group splits again, which nobody had
+  named: of its 2,131 lines, 1,450 are stack-bound (the two
+  walkthroughs, the pom convention, the role split, and all nine
+  templates) and 681 are stack-neutral method. The seam is partly
+  welded — five places name stack files directly where others say
+  "the stack walkthrough in `references/`".
+- The naming question was put up and not answered: `method/` +
+  `practice/` (by provenance, matching the pins), `method/` +
+  `build/` (by what they do), nesting inside `bundle/`, or
+  `method/` + `java-spring/` — which PLAN Step 9's gate currently
+  asks for and which the measurement contradicts, since a third of
+  that group is stack-neutral. The gate item will need correcting
+  the way Step 8's two did.
+- Then run 3's update, which turned out to be owed and overdue. Its
+  pin `7bbf49a` is the commit that closed the harvest of its own
+  SL-1 work, so the seven fixes from that are already its; the
+  method half since then is purely the header strip and no rule
+  changed. It has edited nothing — every commit touching its copies
+  is a delivery, its rule 2 has never fired — so nothing comes back
+  and the delivery is one-way. And it is blocked on us: its own log
+  declined to rewrite its rules file "because that copy has not
+  arrived".
+- The note's weight is the part no diff carries:
+  `convention-lifecycle` renumbered from eight sections to three,
+  and run 3 cites "§8 step 4" twice in its own prose — in its rules
+  file's header and in the TODO line it owes the handbook. Those
+  numbers are in its handwriting, not in the files it receives.
+- One defect found by running the procedure rather than reading it.
+  `bundle-update.md`'s prose, written yesterday, says a kit re-pin
+  delivers four convention files; the command block under it copied
+  only the five method skills. Words and commands had disagreed for
+  a day. Fixed, with the safety rail written down for the first
+  time: a record stub is never staged, because staging one is an
+  offer to overwrite a run's own work with a blank.
+
+Resume: run 3's delivery is staged by the operator — five skills,
+the concept chapters, the four convention skills at `ba7eaa4`, and
+the note, all into its own `temp/`. Then its agent evaluates, takes
+whole, records one entry naming both hashes, and both sides delete
+the staging; our note leaves `temp/` here when it has landed. If it
+takes the recommendation, PLAN Step 10's migration item closes as a
+side effect and run 3 has one upstream. Step 9 stays open with its
+naming unanswered and its gate item needing the same correction
+Step 8's two got.
+
 ## 2026-09-18  (the kit comes here; a compare stops meaning identical)
 
 - The one-chain question was decided and executed in one session,
