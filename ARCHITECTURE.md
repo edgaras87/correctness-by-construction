@@ -20,20 +20,25 @@ one upstream instead of two. Delivery flows down as pinned copies
 into run repos; learning flows back up as harvested concept changes,
 after which executions are re-derived.
 
-```
-  handbook ╌╌╌╌ origin only: the container, its manuals and the
-                models were taken at ba7eaa4. Nothing flows now.
-┌────────────── this repo ──────────────────────┐
-│  mental layer   (the statement)               │
-│      │ derive — pinned at a                   │
-│      ▼ concept version                        │
-│  executions     (skills, checklists,          │
-│                  templates)                   │
-│  container      (starter/kit/ + its manuals)  │
-└──────┬──────────────────────▲─────────────────┘
-  copy │ one delivery,        │ harvest: a run's
-       ▼ one pin              │ surprises
-     runs   (other repos) ────┘
+```mermaid
+flowchart TB
+    handbook["handbook<br/><i>origin only — the container, its manuals<br/>and the models were taken at ba7eaa4;<br/>nothing flows now</i>"]
+
+    subgraph repo["this repo"]
+        direction TB
+        mental["mental layer<br/>(the statement)"]
+        exec["executions<br/>(skills, checklists, templates)"]
+        container["container<br/>(starter/kit/ + its manuals)"]
+        mental -- "derive — pinned at a concept version" --> exec
+    end
+
+    runs["runs<br/>(other repos)"]
+
+    repo -- "copy: one delivery, one pin" --> runs
+    runs -- "harvest: a run's surprises" --> repo
+    handbook -.- repo
+
+    style handbook stroke-dasharray: 4 4
 ```
 
 ## Components

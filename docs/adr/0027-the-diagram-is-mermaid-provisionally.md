@@ -62,13 +62,21 @@ candidates were rendered against it:
    subgraph.** The ASCII goes; git history keeps it.
 
 2. **It is provisional, and two things revert it.** First: if
-   holding the four requirements ever needs the layout hand-nudged
-   — direction hints, invisible links, spacer nodes — then we have
-   traded counting characters for fighting a layout engine and
-   gained nothing. Second: if a surface we actually read this file
-   in shows source instead of a picture. On either, we return to
-   option 2, ASCII authored in AsciiFlow, and this ADR is
-   superseded rather than amended.
+   holding the four requirements ever needs the layout *fought* —
+   invisible links, spacer nodes, nodes declared out of meaning
+   order to trick the placer — then we have traded counting
+   characters for fighting a layout engine and gained nothing.
+   Ordinary syntax is not a fight: `direction TB` inside a subgraph
+   is how the dialect is written, not a workaround. Second: if a
+   surface we actually read this file in shows source instead of a
+   picture. On either, we return to option 2, ASCII authored in
+   AsciiFlow, and this ADR is superseded rather than amended.
+
+   Corrected the same day, at the swap: this decision first listed
+   "direction hints" among the things that revert it, which would
+   have fired the condition on the first line of the first diagram
+   and is not what was meant. The line between using a dialect and
+   fighting it is the one that matters.
 
 3. **It does not travel.** `starter/kit/ARCHITECTURE.md` keeps its
    ASCII placeholder. Provisional means the trial is ours to run; a
