@@ -6,6 +6,94 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-18, later still  (the exchange runs end to end; the receiver finds what we missed)
+
+- `bundle-update.md` ran for the first time as a note *and* a copy,
+  which is the thing the handbook asked us to report on whenever it
+  happened. It worked. never-oversold took both halves whole at
+  `c3a3d97` — nine copies verified byte-identical to our masters
+  here, concept chapters unchanged and correctly not re-copied,
+  staging deleted. The four conventions moved onto this channel, so
+  it holds one upstream and one procedure, which closes PLAN Step
+  10's migration item ahead of the step itself.
+- **The receiver was better than the note, and that is the finding.**
+  It verified rather than believed: it proved "no rule changed" by
+  stripping comments from both sides and comparing what was left,
+  instead of taking our word that the strip was only the strip. It
+  recorded our byte-identity claim as *attributed rather than
+  checked* — "this is the bundle's claim and is not checked here,
+  this repo holds no handbook checkout" — which is more honest than
+  our note was. And it answered the receipt-branch question we had
+  left unasked, for itself, with an argument general enough that we
+  adopted it.
+- Four things came back, all of them things no diff could carry.
+  The stale citations were miscounted: we named two, there were
+  four. The third was in its entry file, which we did not think to
+  read. **The fourth cited `§7`** — the registry section, which
+  moved in the same renumbering — so a search for `§8` could never
+  have found it, and neither could a reader with only our own change
+  in mind. The receipt-branch question. And the one that matters
+  most: `convention-lifecycle` §2 still answered "is there newer"
+  with a diff of the handbook's kit, which a run born from here
+  cannot reach. We fixed §3 step 1 that morning and never read the
+  rest of the file; the receiver read it on arrival.
+- The §2 fix is this repo's first real edit to a taken file, and it
+  turned out not to be an invention: the convention's own manual
+  already said "the *deliverer's* commit hash" while the shipped
+  skill said "handbook commit". They had disagreed upstream before
+  we touched anything, and the edit closes it.
+- It also corrected our arithmetic without mentioning it. Our
+  registry entry of 09-17 says convention-lifecycle renumbered
+  "§1–§8 to §1–§3"; it is §1–§9, at both hashes that matter, and the
+  note repeated the error. never-oversold simply wrote nine in its
+  own entry. A receiver quietly fixing our numbers is the mildest
+  way to learn that, and would not always be. Corrected by an
+  appended entry, the log being append-only — a silently corrected
+  record is worse than a visibly corrected one. The miscount and the
+  missed citation are one mistake at two depths: a renumbering
+  described without reading the range it covered, then searched for
+  one number out of nine.
+- The thin-note diagnostic fired for the first time and produced an
+  outcome ADR-0022 did not imagine. It reached for a handbook
+  checkout and had none — but the note was not thin; the reach was
+  unnecessary, because the handbook had stopped being its upstream
+  with that same delivery. What was stale was its model of the
+  relationship, and our note had not thought to name the change.
+  So a reach means one of three things, not two, and only the
+  sender can see the third. Recorded in the procedure.
+- One of its own findings applies to us harder than to it: the
+  imperative test has quietly stopped governing record commits.
+  Measured here — twenty-three of our last thirty subjects are
+  statements, seven imperative, and the seven divide exactly as it
+  described, procedural imperative and record statements. Nobody
+  decided this in either repo; it settled the same way in both
+  independently, which is stronger evidence a rule is wrong than
+  that it is merely unfollowed. Parked with both sides of the
+  argument and a trigger, because it governs every commit.
+- DEAD END, twice, same shape, mine: a byte-check that reads both
+  sides through the same broken step confirms nothing. This morning
+  sixteen symlinks were copied as files and a check compared each
+  target string against itself and called them identical. This
+  evening a check compared the run's copies against a staging
+  directory that rule 5 had already deleted, and reported all nine
+  as differing. Opposite verdicts, one cause. The habit to watch is
+  not the individual slip: it is writing the comparison without
+  asking what a false pass and a false fail would each look like.
+- Smaller, and not yet recorded anywhere binding: the manual assigns
+  staging to the operator, and the operator delegated it here. The
+  substantive protections held — it touches only the run's ignored
+  `temp/`, and the run's agent still decided everything — but the
+  role line describes something that is not what happens.
+
+Resume: the exchange is closed on both sides and nothing is owed.
+Step 9 is where work stops — the grouping, with its naming
+unanswered (`method/` + `practice/` recommended, by provenance,
+matching the pins) and its gate item still asking for the
+stack-shaped group to be named for its stack, which the measurement
+contradicts and which needs the correction Step 8's two got. The
+boundary numbers are in the entry above this one. Also open and
+cheap: the operator/agent role line in `bundle-update.md`.
+
 ## 2026-09-18, later  (the protocol is dismantled; run 3's update written)
 
 - The session's second half undid a good part of its first, on the
