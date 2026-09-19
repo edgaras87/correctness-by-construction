@@ -117,15 +117,19 @@ down in `delivery/README.md` and `docs/conventions/README.md`, and
 nothing
 tracks that repo. Fourteen of sixteen files are still as they
 arrived; what differs is listed beside the set as a reading aid
-for a re-sync, not a gate. The seven convention manuals sit in
+for a re-sync, not a gate — and three files were added that the
+kit never had (ADR-0031). The ten convention manuals sit in
 `docs/conventions/` — the *why* behind each rule, for a maintainer,
 never shipped — and move with the rules they explain. Inside the
-container the parts divide by how they reach a run: the four
+container the parts divide by how they reach a run: the seven
 convention skills travel again at an update; the record stubs, the
 entry files and the hygiene files are the run's own from birth and
-never travel twice.
+never travel twice. Ten conventions, seven skills — the other
+three reach a run through the stubs and templates they ship as.
 Why shaped this way: ADR-0025 (ours, with the fork point recorded),
-ADR-0024 (the take that brought it here).
+ADR-0024 (the take that brought it here), ADR-0031 (three
+conventions of our own, where every earlier one came from the
+handbook).
 
 ## Invariants
 
@@ -183,7 +187,7 @@ ADR-0024 (the take that brought it here).
 | `delivery/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `kit/` is the container, this repo's since ADR-0025, taken from the handbook's kit at `ba7eaa4` with the delta kept as a reading aid; `method/` and `spring-postgres/` are the two groups a run copies as pinned files — two skills and three, whole, a group taken entirely or not at all (ADR-0029); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and carries the delta list and the kit pin; `installs/` holds the two operator manuals — `pure-seed.md` for birth (ADR-0016) and `bundle-update.md` for every update after it (ADR-0022) |
 | `docs/baselines/` | Held baselines — artifacts withheld from delivery, blind to newborns, compared against lived results: the frozen playbook (ADR-0012) and the Spring slice reference, handed to a run only after its build is on record (ADR-0021) |
 | `docs/models/` | Two models, this repo's (ADR-0026), taken from the handbook at the kit's pin; each header carries the coordinates |
-| `docs/conventions/` | Seven convention manuals, this repo's (ADR-0025), taken at the container's pin; its own `README.md` is the index and carries both ends of the anchor, what did not come across, and the rule that a manual moves with its rule |
+| `docs/conventions/` | Ten convention manuals, this repo's — seven taken from the handbook (ADR-0025) and three written here (ADR-0031); its own `README.md` is the index and carries both ends of the anchor, what did not come across, and the rule that a manual moves with its rule |
 | `docs/adr/` | Architecture decision records |
 | `devlog/` | Session-by-session work history |
 | `temp/` | Working drafts, tracked and deleted when served — handoffs, replies, briefings being molded (not records; `temp/README.md` holds the rule) |

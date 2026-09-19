@@ -1,7 +1,7 @@
 # 0031. decide-first and the comparisons become conventions
 
 Date: 2026-09-19
-Status: Proposed
+Status: Accepted
 
 ## Context
 

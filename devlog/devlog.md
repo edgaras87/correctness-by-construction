@@ -6,6 +6,61 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-19, later still  (the three become conventions; ten where there were seven)
+
+Nine commits, no divergence. The shortest set of the day and the
+one with the least argument in it, because the decision arrived
+whole: the user wanted the three skills shipped and wanted every
+skill to have a manual, on the grounds that the conventions are
+ours and we may shape them as we like.
+
+- **The premise was a frame I had kept after fixing the files.** I
+  argued twice that the three could not ship because the
+  container's skills directory held *borrowed* convention copies,
+  and a native playbook would make it mean two things. ADR-0025
+  made those files ours weeks ago and this morning's corrections
+  made them speak from this seat. "Pinned convention copies"
+  describes where a file came from, not a different kind of thing.
+  Fourth time today I have held a stale premise after correcting
+  the artifact.
+- **The set's test passed, and the test was worth running.** Step 3
+  wrote one manual, alone, for the thinnest-evidenced skill, to see
+  whether a manual for these says anything a skill does not. It
+  does: why `decide-first` is a separate artifact rather than a
+  paragraph in `commit-plan` (the paragraph would have been read
+  inside the frame that hid the question), why risk-order beats
+  dependency-order when they disagree, why `ask` is named first.
+- **Eleven citations were caught by the rule written this morning.**
+  The moment the three became shipped files, their bare
+  `ADR-0027`/`0028`/`0030` stopped being correct — a bare number
+  names the reading repo's decision, so a run would follow them
+  into its own ADRs. Same defect class as the 66 in the manuals,
+  caught before shipping rather than a week after.
+- **DEAD END (mine, small): ten conventions, seven skills.** I
+  widened `bundle-update.md`'s loops to ten names because there are
+  ten conventions. Three of them ship as stubs and templates and
+  have no skill directory, so the loop would have copied three
+  paths that do not exist. Found by listing the directory against
+  the loop rather than by reading. The list is now two things deep
+  — which conventions exist, and which ship as a skill — which
+  strengthens the filed item about deriving it from the run's pin.
+- **A first injection with nothing to inject**, recorded as
+  vacuous. The copy and the original are the same file, so
+  convention-lifecycle's compare-first step passes by construction.
+  Written down so a clean diff is not later read as evidence a
+  compare was run — the failure `bundle-update.md` step 7 exists to
+  prevent, arriving on our side of the exchange.
+- What this costs, stated in ADR-0031 rather than softened: three
+  rules reach three runs having been used three times between them,
+  all by their author, all here. The falsification is named — a run
+  that ignores one, gives no reason, and comes to no harm.
+- Resume: the map, immediately — one document stating how the ten
+  relate, holding relations only and never a rule that lives in a
+  manual or a skill, with `visual-comparison` settling its diagram.
+  That is the fourth use its own trigger has been waiting for. Then
+  PLAN Step 10, one delivery run for real, which now carries ten
+  conventions instead of seven.
+
 ## 2026-09-19, later  (a change-plan is a commit plan; three skills where there was one)
 
 Twelve commits, one revision, and the session's best question was
