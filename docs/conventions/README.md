@@ -36,6 +36,72 @@ has to be the origin (HANDBOOK ADR-0040).
 | option-comparison | [option-comparison/](option-comparison/) | a skill |
 | visual-comparison | [visual-comparison/](visual-comparison/) | a skill: option-comparison specialised to things you look at |
 
+## The chain
+
+How they relate across a piece of work. **Relations only** — every
+rule lives in a manual or a skill, and nothing here restates one
+(CBC ADR-0032).
+
+```mermaid
+flowchart TB
+    idea["an idea, or a request"]
+    df["decide-first"]
+    ask["ask"]
+    meas["measure"]
+    oc["option-comparison"]
+    vc["visual-comparison"]
+    cp["commit-plan"]
+    cm["commit-messages"]
+    dom["the domain skills<br/>cbc-framing · infra-establish<br/>cbc-bootstrap · cbc-slice"]
+
+    idea --> df
+    df --> ask
+    df --> meas
+    df --> oc
+    oc --> vc
+    ask --> cp
+    meas --> cp
+    oc --> cp
+    dom -- "the sequence" --> cp
+    cp --> cm
+```
+
+**Each fires at its own moment; the arrows say what hands to what,
+not what you must pass through.** A typo fix reaches only
+`commit-messages`. A settled decision needing four commits reaches
+only `commit-plan`. A question about a diagram's shape reaches
+`visual-comparison` from wherever it arose, with no `decide-first`
+before it.
+
+- **`decide-first`** fires when something is undecided *and the
+  shape of the work depends on it* — the sign being that you cannot
+  say roughly how many commits it needs. It routes each question to
+  an *ask*, a *measure*, or a comparison.
+- **`option-comparison`** fires when more than one option could
+  work and each can be built cheaply enough to look at.
+  **`visual-comparison`** is the same method when what is being
+  chosen is how a structure is shown; it is a specialisation, not a
+  stage after it.
+- **`commit-plan`** fires when the work needs more than one commit.
+  It plans the commits, not the change.
+- **`commit-messages`** fires when you are writing any commit, in a
+  plan or alone.
+
+**The order *inside* a plan does not come from here.** It comes
+from the domain skill that knows the work — `cbc-bootstrap` names a
+five-step shape, `cbc-slice` runs specify → plan → build →
+document, `infra-establish` has its walk. That division is why
+`commit-plan` stays generic and a project on another stack can use
+it unchanged.
+
+**What the chain produces** is not on it: an ADR for a decision
+with rejected options, a `temp/` draft for a measurement or a
+comparison, and the commits themselves. The remaining six
+conventions — `project-recording`, `repo-hygiene`,
+`agent-arrangement`, `artifact-kinds`, `convention-lifecycle` and
+the records they govern — are not stages of this and fire on their
+own moments.
+
 ## A skill file
 
 Opens with YAML frontmatter, which is what a skill loader reads:
