@@ -1,9 +1,16 @@
-# Change-plan: decide-first, and two renames
+# Change-plan: decide-first, and the comparison skills
+
+**Revised 2026-09-19 at step 3's boundary.** Step 3 was planned as
+a rename and a widening; it landed as a split, because the method
+turned out to have a general spine and one specialisation rather
+than a scope that could widen. Two commits are added: this
+revision, and a correction to ADR-0030 decision 6, which describes
+the rename that did not happen.
 
 Ordered so that nothing expensive is built on an unvalidated
 decision — which is the thing this set exists to write down. The
-step most likely to be wrong is step 4, and the two commits before
-it are cheap and independent of it.
+step most likely to be wrong is step 6, and everything before it is
+cheap or independent of it.
 
 ## Summary — the state after all commits
 
@@ -31,64 +38,79 @@ it — the cascade surfaces a step the other three shapes do not
 contain. Then the three decisions that follow. The temp draft
 cannot be deleted before this exists (the method's §2 step 6).
 
-**3. `chore(agent): format-comparison becomes option-comparison`**
-The rename, and the widening that justifies it: the method's real
-constraint was never *form*, it was whether the options can be
-built cheaply enough to look at. Evidence is yesterday's `stack/`
-quarantine — built, looked at, found wrong — which was a structure
-question the skill's own §1 would have excluded. §1 widens and the
-render stays the gate that keeps unbuildable options out.
-**Before step 4, though less risky than it**, because `decide-first`
-will name this skill and should name it once.
+**3. `chore(agent): format-comparison splits into visual and option`**
+Planned as a rename plus a widening; landed as a split. Widening the
+one file would have left it saying *render them where they will be
+read*, which is literal for a picture and a metaphor for a plan —
+and the act is where the discipline lives. So `visual-comparison`
+keeps every word of the old file and its subject is how a structure
+is shown; `option-comparison` is written fresh with general verbs.
+Two rules arrived with it, both the user's: a findings list is
+things to check rather than rules to obey, each entry naming its
+case; and a visual comparison's candidate set must hold a
+non-picture, or a picture wins by construction.
 
-**4. `feat(agent): decide-first`**
+**4. `docs(agent): revise change-plan — the skill split in two`**
+This revision, per the convention's §5.
+
+**5. `docs(adr): 0030 decision 6 described a rename, not a split`**
+The ADR is Proposed, which is what makes this cheap; it is corrected
+here rather than at the close, because a Proposed record may be
+unsettled but should not be inaccurate. Decision 8's
+one-directional reference survives unchanged and now has two
+skills to hold between.
+
+**6. `feat(agent): decide-first`**
 **The step most likely to be wrong.** Its own objection is in the
 ADR: the routing step has one destination filled in, so the skill
-may be a wrapper around `option-comparison` with two empty slots.
-Building it is the only way to find out and costs one file. If it
-is a wrapper, the set stops here and the ADR is revised — steps 6
-to 8 survive either way, because "change-plan" reads as *plan the
-change* whatever else is true.
+may be a wrapper with two empty slots — and step 3 has just given it
+a second destination, which weakens that objection without
+answering it. Building it is the only way to find out and costs one
+file. If it is a wrapper, the set stops here and the ADR is revised
+— steps 8 to 10 survive either way, because "change-plan" reads as
+*plan the change* whatever else is true.
 
-**5. `docs(agent): register decide-first`**
+**7. `docs(agent): register decide-first`**
 `.claude/decisions.md`. Its own commit because HANDBOOK ADR-0019
 keeps the agent's files out of project commits, and because step
 4's outcome may change what this entry says.
 
-**6. `docs(conventions): change-plans becomes commit-plan`**
+**8. `docs(conventions): change-plans becomes commit-plan`**
 The manual, the shipped skill under
 `delivery/container/.claude/skills/`, the delivery's references,
 and this file's name. The project half.
 
-**7. `chore(agent): our copy and the registry follow the rename`**
+**9. `chore(agent): our copy and the registry follow the rename`**
 `.claude/skills/` and the registry entry. Separate from step 6 for
 the same reason step 5 is separate.
 
-**8. `docs(delivery): bundle-update learns the renamed convention`**
+**10. `docs(delivery): bundle-update learns the renamed convention`**
 The gap the rename exposed: the procedure copies conventions by
 name, so a rename installs the new directory and leaves the old one
 in the run forever. It will recur whatever we decide here.
 
-**9. `docs(adr): accept 0030, and the records catch up`**
+**11. `docs(adr): accept 0030, and the records catch up`**
 The final records commit. ADR-0030 flips to Accepted here and
 nowhere earlier; TODO's change-plans watch is retargeted or closed;
 devlog takes the session; the temp draft is deleted, having served.
 
-**10. `docs(agent): close the plan`**
+**12. `docs(agent): close the plan`**
 Deletes this file, under its new name. The body records what
 diverged.
 
 ## Decisions taken inside this plan
 
-- **Ordered by what rests on it, not strictly by risk.** Step 3 is
-  less likely to be wrong than step 4 but comes first, because
-  `decide-first` names the renamed skill and naming it twice is
-  churn for nothing. The principle being kept is the narrower one:
+- **Ordered by what rests on it, not strictly by risk.** Step 3 was
+  less likely to be wrong than step 6 but came first, because
+  `decide-first` names those skills and naming them twice is churn
+  for nothing. That held: step 3 changed what they are called and
+  how many there are, and a `decide-first` written first would have
+  named a skill that no longer exists. The principle being kept is the narrower one:
   nothing *expensive* is built before the step that could overturn
   it. Steps 3 and 5–8 are cheap or independent.
 
-- **The renames do not depend on the skill.** If step 4 finds a
-  wrapper, steps 6 to 8 still stand. "change-plan" reads as *plan
+- **The renames do not depend on the skill.** If step 6 finds a
+  wrapper, steps 8 to 10 still stand. "change-plan" reads as *plan
   the change*, which is what it must not mean, and that is true
   whether or not `decide-first` exists.
 
