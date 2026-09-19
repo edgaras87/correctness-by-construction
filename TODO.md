@@ -793,8 +793,9 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Does change-plans need a rule about provisional steps, or did
-      one author under-use the one it has? Raised 2026-09-19 at the
+- [ ] Does commit-plan need a rule about provisional steps, or did
+      one author under-use the one it has? (`change-plans` until
+      2026-09-19; ADR-0030 renamed it.) Raised 2026-09-19 at the
       groups set's close. That set was planned for six commits,
       revised to thirteen at step 6, and landed at twelve with three
       divergences — and **the two steps written with the most
@@ -819,9 +820,52 @@
       own named anti-pattern, "steps grouped by file type, tidy-looking,
       reverts incoherently". The connection between the two
       conventions is not written in either.
+      **First test, 2026-09-19:** the decide-first set was planned
+      for ten and landed at twelve, revised once at step 3's
+      boundary when a rename turned out to be a split. Two added
+      steps of ten is not "more than half", so the trigger did not
+      fire — and the revision was caught at a boundary by the
+      convention working, not missed. One data point on the side of
+      the author having under-used §2 rather than the convention
+      lacking a rule.
       Trigger: the close of the next change set that diverges by
       more than half its planned steps, or a retrospective,
       whichever comes first.
+
+- [ ] The update procedure reconciles by hardcoded name, and it
+      should derive from pins. Raised 2026-09-19 by the user, at the
+      close of the set that renamed `change-plans`. Three lists in
+      `bundle-update.md` still name their members —
+      `commit-messages commit-plan artifact-kinds
+      convention-lifecycle` twice, and the five skills once — where
+      the groups change already converted two loops to read the
+      group directories. Each list would silently miss a fifth
+      convention or a new skill.
+      **But listing directories is not the fix, and the user's
+      correction is the better answer.** Neither side's directory
+      names can be trusted: a run may hold skills of its own —
+      `bundle-update.md` step 3 already refuses a `cbc-*` glob
+      because it "would also catch a skill of the run's own" — and
+      after a rename the names differ by design. What both sides
+      *do* have is a pin: the run's birth entry and every update
+      entry name a hash, and our history from that hash says what
+      changed, with `git diff -M` showing a rename as a rename
+      rather than as a delete plus an add.
+      So the reconciliation is a reading of the diff since the run's
+      pin, not a set difference of two listings. That is what
+      `convention-lifecycle` already says — "is there newer, and
+      what changed" is answered at the deliverer — and what today's
+      anchors were built for.
+      What it would produce, and none of it exists today: in ours
+      and not in the run, propose it with whether it fits as-is or
+      needs adaptation; renamed, say the pair; in the run and not in
+      ours and not renamed, it is the run's own and is left alone.
+      Not done in the set that found it: step 10 makes renames
+      correct by hand, so nothing is blocked, and it changes no
+      decision of ADR-0030 — which is that ADR's own classification
+      rule applied to itself.
+      Trigger: the next delivery to a run, or the second convention
+      rename, whichever comes first.
 
 - [ ] Nine sentences in four manuals still put the handbook in our
       seat. Raised 2026-09-19; **two of the three layers are now

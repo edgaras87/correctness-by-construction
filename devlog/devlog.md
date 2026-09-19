@@ -6,6 +6,81 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-19, later  (a change-plan is a commit plan; three skills where there was one)
+
+Twelve commits, one revision, and the session's best question was
+the user's: *a change-plan is just a commit plan — what we actually
+need is the thing that comes before it.*
+
+- **The comparison method ran a third time and the finding was
+  structural.** Four shapes for a step list, built as real plans for
+  the groups set using only what was knowable that morning. The
+  cascade won because it *contains a step the others cannot
+  express* — is a group a directory or a description — which is the
+  question whose absence had cost that set four commits. Not a
+  reordering of the same steps; a different set of them.
+- **DEAD END (mine): I tried to widen one skill and it split
+  instead.** `format-comparison` was to become `option-comparison`
+  by widening §1. Widening left it saying "render them where they
+  will be read", which is literal for a picture and a figure of
+  speech for a plan — and that act is where the discipline lives.
+  A shared spine with different middles is two skills, not one
+  widened one. `visual-comparison` keeps every word of the old
+  file; `option-comparison` is written fresh.
+- **The name went through four candidates.**
+  `format-comparison` → `option-comparison` → `diagram-comparison`
+  → `visual-comparison`, each one the user's correction of mine.
+  The one that stuck names the *question* — how is this structure
+  shown — rather than the winning candidate. `diagram-comparison`
+  would have quietly excluded the table and the list from the
+  candidate set, which is where ADR-0028's best answer to one
+  requirement came from.
+- **DEAD END (mine, and the sharpest): I built a gate on a test
+  that fails on its own founding case.** The shipped `commit-plan`
+  got "say roughly how many commits; if you cannot, a shape
+  question is open". Yesterday's set could say how many. It said
+  six, confidently, and landed at twelve. The skill's own findings
+  list already said *confidence about the count was the tell* — I
+  had the evidence and built the opposite check on it. The user cut
+  the gate entirely on better grounds: the decision comes from
+  discussion or from `decide-first`, and §5 plus a Proposed ADR
+  already handle being wrong mid-set.
+- **And the gate would have broken three runs' citations.** My
+  first placement made it §1 and shifted every number after it,
+  which invalidates `pure-seed.md`'s three §6 references and
+  whatever the runs cite. `bundle-update.md` §86 exists because a
+  renumbering did exactly this once before. Folded into §1 instead;
+  no number moved.
+- **`decide-first` was built and is not a wrapper**, which was the
+  objection it carried. Of its three ways to settle a question —
+  ask, measure, compare — the groups set needed an ask and a
+  measure. Its findings are all marked retrospective, and the file
+  says the first unmarked one is the evidence it works.
+- **A template for it was drafted and cut.** Fifteen lines of
+  structure for a skill that had not run once, which is this
+  repo's own rule arriving against its author. Trigger recorded:
+  the second run that reinvents the same structure.
+- **The rename found two copies already stale.** `commit-messages`
+  still named `CHANGE-PLAN.md`; `convention-lifecycle` still said
+  "is there newer" is answered *in the handbook*, where the
+  container has said *at the deliverer* since it arrived. That is
+  the only content change the container ever took and our copy had
+  never taken it.
+- **First update taken from our own container**, pinned at a commit
+  of this repo. New and slightly circular — we are the deliverer
+  and a receiver of the same artifacts — and recorded as such,
+  because the convention's language assumes two repos.
+- **Process note: a `git rm` failed and `&&` swallowed every edit
+  after it.** Found on the dangling-reference check rather than by
+  noticing the missing output. Second time this session that a
+  command's silent no-op was caught downstream.
+- Resume: PLAN Step 10, one delivery run for real — unchanged, and
+  now with more riding on it. Two conventions and three skills have
+  been reshaped against a single set's evidence, and the next
+  delivery is where that gets tested. TODO gained the reconciliation
+  item: the update procedure still reconciles by hardcoded name and
+  should derive from the run's pin instead.
+
 ## 2026-09-19, after the close  (the manuals were citing our ADR numbers)
 
 One commit after Step 9 closed, and it exists because the user

@@ -1,7 +1,7 @@
 # 0030. The cascade wins; decide-first, and two renames
 
 Date: 2026-09-19
-Status: Proposed
+Status: Accepted
 
 ## Context
 
