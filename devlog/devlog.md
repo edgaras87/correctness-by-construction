@@ -49,6 +49,29 @@ asked "can't we fix that now" about an item I had just filed.
   none by a check. That is written into the groups entry above as a
   pattern; this is the fifth instance and it arrived after the
   change set had already closed.
+- **`docs/conventions.md` is gone, folded into the set's own
+  index.** The user asked what it was for and I could not answer
+  without opening it, which was the answer. Measured: of its 126
+  lines, the provenance was in ADR-0025, the manual-moves-with-its-
+  rule was an ARCHITECTURE invariant, the parked finding was in
+  TODO. It had grown because adding a paragraph there was always
+  cheaper than finding the right record. What was unique to it —
+  the anchor, the rename rule, the pointer rule — is now a section
+  of `docs/conventions/README.md`, where a reader of the manuals
+  actually is.
+- **And the index was adopted, which ADR-0025 decided and nobody
+  had done.** Three sentences named the handbook as the actor. That
+  is the useful measurement: the job of making a vendored document
+  ours is small, because only the sentences about *who does the
+  work* carry a seat. Nine such sentences remain in four manuals
+  and are now scoped in TODO, including one that matters — the
+  handbook's commit typing for a documents-only repo sits in our
+  manual describing a practice we do not follow, while ours is
+  written nowhere.
+- Process note, mine: the first attempt at the delete silently did
+  nothing. `git rm` failed on a staged file and `&&` short-circuited
+  every edit after it, and I found that on the dangling-reference
+  check rather than by noticing the missing output.
 - Resume: unchanged — PLAN Step 10, one delivery run for real.
   Before it, one item is worth its own look:
   `docs/conventions/README.md` is written as the handbook end to

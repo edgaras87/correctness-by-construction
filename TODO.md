@@ -793,39 +793,50 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] The convention manuals are ours by decision and theirs by
-      voice — one file, and one question. Raised 2026-09-19 while
-      renaming `starter/` to `delivery/`. **The mechanical half was
-      fixed the same day** and is recorded in the set's own
-      `README.md`, under *Where these files came from*:
-      66 bare ADR citations prefixed `HANDBOOK` (they read as ours,
-      and 22 of the numbers exist here pointing at unrelated
-      decisions), nine paths repointed at our tree, four relative
-      links fixed or replaced.
-      What is left is `docs/conventions/README.md`, which is written
-      *as the handbook*, end to end — "the kit is the master",
-      "this repo's own `.claude/skills/` holds copies at a pin, like
-      any project's". Its citations and paths are now right and its
-      seat is still wrong, which no find-and-replace reaches.
-      **The question is ADR-0025's, not a fix.** A manual we own but
+- [ ] Nine sentences in four manuals still put the handbook in our
+      seat. Raised 2026-09-19; **two of the three layers are now
+      done.** The citations and paths were fixed that day (66 bare
+      `ADR-nnnn` prefixed `HANDBOOK`, nine paths, four links), and
+      `docs/conventions/README.md` was adopted as ours — three
+      sentences changed, and `docs/conventions.md` folded into it as
+      *Where these files came from*.
+      What is left is smaller and needs judgment per line, not
+      find-and-replace. `grep -rn 'the handbook' docs/conventions/*/README.md`
+      returns nine, in four files, and they are not one kind:
+      - **`commit-messages`, the section "In the handbook itself"** —
+        a whole section describing *their* commit typing for a
+        documents-only repo: `feat(<convention>)` for the product,
+        `docs(handbook)` for records. **We are also a documents-only
+        repo and we do not do this** — this session typed
+        `docs(delivery)`, `docs(conventions)`, `docs(adr)`,
+        `docs(agent)`. So our own typing is unwritten while a
+        section describing a different one sits in our manual.
+        Either adopt theirs, write ours, or mark the section theirs.
+      - **`repo-hygiene`: "the overlays live in the handbook, not in
+        the project"** — they live *here* now, at
+        `docs/conventions/repo-hygiene/templates/java-spring/`. This
+        one tangles with the parked java-spring item below and
+        should be decided with it, not before.
+      - **`convention-lifecycle` and `artifact-kinds`** — "leaves
+        the handbook", "the handbook's seat", "the handbook's plan".
+        Four lines pointing at their roadmap and their role, both of
+        which are now ours. Mechanical once the first two are
+        settled.
+      The question this answers is ADR-0025's: a manual we own but
       never rewrite is read in a voice that is not ours, and every
-      reader translates. Either it becomes ours in fact — rewritten
-      from this repo's side, addressed to whoever maintains this
-      repo's conventions — or it is re-marked as vendored reference
-      with the translation expected. What it cannot stay is both,
-      which is what ADR-0025 left it as. They *are* ours to change:
-      nothing tracks the handbook, no re-sync is planned, and
-      holding them byte-identical buys only a comparison nobody has
-      scheduled.
-      Two things worth carrying out of the fixed half. The shipped
-      rules had been prefixed and the manuals had not — whoever did
-      the one did not walk the other, which is why this was an
-      oversight and not a decision. And nothing here would have
-      caught it: no check follows a citation, and no check reads a
-      file nobody reads.
-      Trigger: the next time `docs/conventions/README.md` is opened
-      for any reason, or a re-sync attempt against the handbook,
-      whichever comes first.
+      reader translates. The index proved the job is small — the
+      seven manuals are mostly explanations that read the same from
+      either seat, and only where a manual describes *who does the
+      work* does the seat matter.
+      Two things worth carrying, from the fixed layers. The shipped
+      rules had been prefixed `HANDBOOK` and the manuals had not —
+      whoever did the one did not walk the other, which is why this
+      was an oversight rather than a decision. And nothing here
+      would have caught any of it: no check follows a citation, and
+      no check reads a file nobody reads.
+      Trigger: the next time any convention manual is opened for any
+      reason, or the java-spring decision below, whichever comes
+      first.
 
 - [ ] `playbooks/default.md` still carries the rule ADR-0026
       retired (2026-09-19): "Pinned: do not edit here — changes
