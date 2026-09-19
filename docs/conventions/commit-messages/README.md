@@ -23,20 +23,20 @@ change too small to deserve a real one.
 
 - **Conventional Commits, not just 50/72.** The type prefix carries
   information a plain subject does not, and it is enforceable later
-  by a commitlint hook (ADR-0005).
+  by a commitlint hook (HANDBOOK ADR-0005).
 - **The agent's files never share a commit with the project's.**
   A project that works with an agent has two histories in one repo:
   the work, and the arrangement that made an agent do the work a
   particular way. They stay separable, for a filtered log or a
   portfolio copy that drops the arrangement, only if no commit ever
-  straddles them. Hence the `agent` scope (ADR-0019).
+  straddles them. Hence the `agent` scope (HANDBOOK ADR-0019).
 - **Commit on the word.** The commit boundary is the one place a
   wrong assumption is cheap to catch when an agent is doing the
   committing, so the agent stages, shows the diff, and waits. The
   rule is text, in the skill, and gated nowhere: a permission rule
   that stopped every commit at a prompt was shipped once and
   withdrawn, after the one project that could have used it declined
-  it and held forty-four commits on the sentence alone (ADR-0035).
+  it and held forty-four commits on the sentence alone (HANDBOOK ADR-0035).
 
 ## In the handbook itself
 

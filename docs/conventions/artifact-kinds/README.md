@@ -35,7 +35,7 @@ the handbook, a convention is a manual and its artifacts under
   RFC 2119; reader mode from Diátaxis. Their word lists were not
   imported: we formalise the words actually spoken here, DDD's
   ubiquitous language, and use the frameworks only as definition
-  machinery (ADR-0009).
+  machinery (HANDBOOK ADR-0009).
 - **Loose definitions on purpose.** Prototype theory is why loose
   definitions survive edge cases and strict membership criteria do
   not.
@@ -43,7 +43,7 @@ the handbook, a convention is a manual and its artifacts under
   document by the role it holds for the reader, so the same words
   point at the right file from the handbook's seat and from a born
   project's, where some roles are empty. They are illustration, not
-  dependency (ADR-0017, ADR-0037).
+  dependency (HANDBOOK ADR-0017, HANDBOOK ADR-0037).
 
 ## An open question
 

@@ -12,7 +12,7 @@ This page explains it; the skill states it.
 ## The two sides
 
 **The deliverer** keeps one origin for everything it ships. In the
-handbook that is `starter/kit/`: the record stubs, the entry file,
+handbook that is `delivery/container/`: the record stubs, the entry file,
 the hygiene base, and one skill file per convention. Nothing else
 leaves the handbook. The kit is copied whole, as real files, at
 the moment of birth.
@@ -26,7 +26,7 @@ handoff — which the deliverer reads.
 The handbook is a receiver of its own kit as well. Its agent holds
 the four skills as copies at a pin and takes a kit change by the
 procedure below, so the first seat a shipped sentence is read from
-is one with no handbook in reach (ADR-0041).
+is one with no handbook in reach (HANDBOOK ADR-0041).
 
 ## How the two stay in step
 
@@ -70,21 +70,21 @@ edit has yet gone through a re-pin.
 
 - **The registry is entries, not a manifest.** A separate file
   listing versions needs a bump ritual and can lie; an appended
-  entry with a hash cannot (ADR-0022, ADR-0034).
+  entry with a hash cannot (HANDBOOK ADR-0022, HANDBOOK ADR-0034).
 - **Compare before overwriting.** The CbC repo's copy of a
   convention was nearly overwritten unread on 2026-09-03; the
-  procedure was written from that injection (ADR-0030).
+  procedure was written from that injection (HANDBOOK ADR-0030).
 - **Register even an empty update.** A change absorbed through a
   reply without an entry left the pin lying once, on 2026-09-08,
-  and the currency check read the lie as truth (ADR-0030).
+  and the currency check read the lie as truth (HANDBOOK ADR-0030).
 - **Two commits, one per side, need no change-plan.** The agent
-  side and the project side never share a commit (ADR-0019), and a
-  plan pays for itself only across a sequence (ADR-0038).
+  side and the project side never share a commit (HANDBOOK ADR-0019), and a
+  plan pays for itself only across a sequence (HANDBOOK ADR-0038).
 - **An edit goes up, delivery comes down.** An edited copy is not a
   third form of delivery; its diff against the pin is a record the
-  deliverer reads (ADR-0038, the tiers model §3).
+  deliverer reads (HANDBOOK ADR-0038, the tiers model §3).
 - **The lifecycle is the kit's, not a topic beside the others.** It
-  is the protocol every deliverer and receiver share (ADR-0040).
+  is the protocol every deliverer and receiver share (HANDBOOK ADR-0040).
 
 ## Where to look
 
@@ -92,6 +92,6 @@ edit has yet gone through a re-pin.
 - How the handbook builds and ships a convention:
   [`../README.md`](../README.md).
 - The kit itself and what each file comes from:
-  [`../../starter/README.md`](../../starter/README.md).
+  `delivery/README.md`.
 - The tiers model, for how deliverers and receivers relate across
-  the workspace: [`../../models/tiers.md`](../../models/tiers.md).
+  the workspace: `docs/models/tiers.md`.

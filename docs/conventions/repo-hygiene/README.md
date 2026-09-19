@@ -82,12 +82,12 @@ This convention never reaches an agent as text. Its product is
 three files that shape the repo by existing: nobody complies with
 `.gitignore`, git simply hides what it names. A rule here that
 cannot become a line in one of the three files has no delivery at
-all (ADR-0008).
+all (HANDBOOK ADR-0008).
 
 ## Where to look
 
 - The base: [`templates/base/`](templates/base/), links into
-  `starter/kit/`.
+  `delivery/container/`.
 - The overlays: [`templates/java-spring/`](templates/java-spring/).
 - The step that appends an overlay: the backend playbook in
-  [`../../starter/playbooks/`](../../starter/playbooks/).
+  `playbooks/`.

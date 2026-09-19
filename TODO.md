@@ -794,43 +794,37 @@
 ## Next (upcoming steps — assign each to a step when triaged)
 
 - [ ] The convention manuals are ours by decision and theirs by
-      voice. Found 2026-09-19 while renaming `starter/` to
-      `delivery/` (ADR-0029): their pointers went stale and I left
-      them, on the strength of `docs/conventions.md`'s standing note
-      that rewriting "eleven files' links buys nothing until someone
-      follows one". The note was inherited rather than re-tested,
-      and it overstates the job — the wrong pointers are about
-      **eight lines in five files**, not eleven files. Correct the
-      note when this is done.
-      **Two tiers, and only the first is cheap.** Lines that just
-      name the wrong path (`starter/kit/` where our tree says
-      `delivery/container/`) are find-and-replace:
-      `agent-arrangement/README.md`, `project-recording/README.md`,
-      `repo-hygiene/README.md`, `convention-lifecycle/README.md`.
-      But `docs/conventions/README.md` is written **as the
-      handbook**, end to end — "the kit is the master", bare
-      `ADR-0041` citations that mean their numbering not ours,
+      voice — one file, and one question. Raised 2026-09-19 while
+      renaming `starter/` to `delivery/`. **The mechanical half was
+      fixed the same day** and is recorded in `docs/conventions.md`:
+      66 bare ADR citations prefixed `HANDBOOK` (they read as ours,
+      and 22 of the numbers exist here pointing at unrelated
+      decisions), nine paths repointed at our tree, four relative
+      links fixed or replaced.
+      What is left is `docs/conventions/README.md`, which is written
+      *as the handbook*, end to end — "the kit is the master",
       "this repo's own `.claude/skills/` holds copies at a pin, like
-      any project's". Swapping paths there leaves a document
-      half-ours and half-theirs, which is worse than either whole.
-      That one is a rewrite, not an edit.
-      **The question underneath is the one worth answering**, and it
-      is ADR-0025's, not ADR-0029's: a manual we own but never
-      rewrite is a manual read in a voice that is not ours, and
-      every reader has to translate it. Either they become ours in
-      fact — rewritten from this repo's side, citing CBC numbers,
-      naming our tree — or they are re-marked as vendored reference
-      we read as theirs, with the pin stated and the translation
-      expected. What they cannot stay is both, which is what
-      ADR-0025 left them as.
-      Two smaller facts for whoever takes it: the two dangling
-      relative links now fail **twice over** since ADR-0029 — wrong
-      level *and* wrong name — and nothing in the repo would have
-      caught the staleness, because no check follows a link in a
+      any project's". Its citations and paths are now right and its
+      seat is still wrong, which no find-and-replace reaches.
+      **The question is ADR-0025's, not a fix.** A manual we own but
+      never rewrite is read in a voice that is not ours, and every
+      reader translates. Either it becomes ours in fact — rewritten
+      from this repo's side, addressed to whoever maintains this
+      repo's conventions — or it is re-marked as vendored reference
+      with the translation expected. What it cannot stay is both,
+      which is what ADR-0025 left it as. They *are* ours to change:
+      nothing tracks the handbook, no re-sync is planned, and
+      holding them byte-identical buys only a comparison nobody has
+      scheduled.
+      Two things worth carrying out of the fixed half. The shipped
+      rules had been prefixed and the manuals had not — whoever did
+      the one did not walk the other, which is why this was an
+      oversight and not a decision. And nothing here would have
+      caught it: no check follows a citation, and no check reads a
       file nobody reads.
-      Trigger: the next time a convention manual is opened for any
-      reason, or a re-sync attempt against the handbook, whichever
-      comes first.
+      Trigger: the next time `docs/conventions/README.md` is opened
+      for any reason, or a re-sync attempt against the handbook,
+      whichever comes first.
 
 - [ ] `playbooks/default.md` still carries the rule ADR-0026
       retired (2026-09-19): "Pinned: do not edit here — changes

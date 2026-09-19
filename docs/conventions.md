@@ -9,7 +9,10 @@ the stubs beside them.
 
 They are this repo's, to change when a rule here changes
 (ADR-0025). They began as copies of the handbook's `conventions/`
-and are still identical to them.
+and were identical to them until 2026-09-19, when 66 citations and
+nine paths were corrected to be true in this repo — see below. The
+bodies are otherwise untouched, so a re-sync still diffs cleanly
+against the handbook once those two classes are set aside.
 
 **Provenance, recorded once.** Taken from the handbook at
 `ba7eaa4`, and identical through their `8adb46f`, which is the
@@ -40,23 +43,57 @@ delta rather than a defect:
 `delivery/container/CLAUDE.md`, which our kit does not have — it
 ships the entry file at `.claude/CLAUDE.md` (delta row 1).
 
-**Two links dangle, and they are the evidence for a local rule.**
-The manuals cite each other and the repo around them with relative
-paths. Inside the vendored tree those still resolve, and two that
-reach outside it resolve here by accident —
-`../../models/tiers.md` and `../../models/agent.md` land on
-`docs/models/`, which is where we happen to keep them. Two do not:
-`../../starter/README.md` and `../../starter/playbooks/` resolve
-to `docs/starter/...`, which does not exist — twice over, since
-ADR-0029: their `starter/` sits one level up from `conventions/`
-while ours is at the root, and ours is no longer called that. Not
-defects to fix today — they are correct where they were written, and
-rewriting eleven files' links buys nothing until someone follows
-one. They are what a relative path does the moment a file is read
-from a different root, which
-is every vendored copy and every shipped file. This repo's own
-documents write paths from the repo root instead; a file we ship
-writes them from the root of the repo that receives it.
+**What was corrected, and why it could not wait.** Two classes,
+both of which made a manual say something false *here* while being
+correct where it was written.
+
+The citations, and these were the serious ones. A shipped rule
+writes `HANDBOOK ADR-nnnn` precisely because, as
+`docs/conventions/README.md` states, a bare number names the
+reading repo's own decision. The manuals wrote bare numbers — 66 of
+them across all eight files — so every one read as ours, and about
+22 of the numbers exist here and point at an unrelated decision. A
+manual saying `ADR-0005` meant Conventional Commits and read as
+*practice-born executions pin as checked-against*. Nothing errors;
+a reader lands somewhere plausible and wrong. The shipped half had
+been prefixed and the kept half had not, which is what makes this
+an oversight rather than a choice: whoever prefixed the rules did
+not walk the manuals.
+
+The paths, nine lines in five files, plus the pointers that reach
+out of the vendored tree into this repo. Four of those: two did
+not resolve at all — their `starter/` sits one level up from
+`conventions/` while ours is at the root and, since ADR-0029, is
+not called that either — and two resolved *by accident*,
+`../../models/tiers.md` and `../../models/agent.md` landing on
+`docs/models/` because that is where we happen to keep them. All
+four are now written from the repo root, as `docs/models/agent.md`
+and `delivery/README.md` rather than as relative links, because
+that is this file's own rule and a pointer that works by accident
+is the one that breaks silently. The `stubs/` links went the same
+way: those directories were never reproduced here, so the lines
+name `delivery/container/` instead of linking into nothing.
+
+**The line that decides which pointers get rewritten** is whether
+they leave the tree. The ten remaining relative links go
+manual-to-manual — `../commit-messages/` and its kin — and are
+left alone: they resolve, they are the handbook's own internal
+cross-references, and rewriting them would be a change of voice
+rather than a correction.
+
+**The local rule this is evidence for** is unchanged, and is why
+the bodies could be left alone otherwise: a relative path means a
+different thing the moment a file is read from a different root,
+which is every vendored copy and every shipped file. This repo's
+own documents write paths from the repo root instead; a file we
+ship writes them from the root of the repo that receives it.
+
+**What is still not ours** is the voice. `docs/conventions/README.md`
+is written *as the handbook*, end to end — "the kit is the master",
+"this repo's own `.claude/skills/` holds copies at a pin, like any
+project's". Correcting its citations and paths does not touch that,
+and rewriting it is ADR-0025's question rather than a fix. It is in
+TODO.
 
 **No compare runs on a schedule.** These are ours; nothing
 upstream is owed a reading (ADR-0025). If a re-sync is ever

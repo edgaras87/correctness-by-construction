@@ -11,14 +11,14 @@ one is two things, kept apart:
   a rule bound to a moment; stubs and templates for rules that ride
   in the files a project is born with. The rules live here, one
   sentence each. The artifacts are real files in the starter kit,
-  `starter/kit/`, and each convention's directory links to its own
+  `delivery/container/`, and each convention's directory links to its own
   beside the manual.
 
 The kit is the master. Edit an artifact there and the links under
 `conventions/` follow; this repo's own `.claude/skills/` holds
 copies at a pin and takes the change at its next update, like any
-project's (ADR-0041). The kit is copied whole into a new project,
-as real files, which is why it has to be the origin (ADR-0040).
+project's (HANDBOOK ADR-0041). The kit is copied whole into a new project,
+as real files, which is why it has to be the origin (HANDBOOK ADR-0040).
 
 ## The seven
 
@@ -65,16 +65,16 @@ opening it at the moment of use.
 - A worked example in a code block is exempt from all of this.
 
 The manual is free prose. It explains, points at the artifact and
-the ADRs, and states no rule the artifact does not (ADR-0039).
+the ADRs, and states no rule the artifact does not (HANDBOOK ADR-0039).
 
 ## The kit's rules
 
 - A convention entering or leaving the kit updates the file table
-  and the shipped-conventions table in `starter/README.md`, and the
+  and the shipped-conventions table in `delivery/README.md`, and the
   birth entry in the kit's decisions-log stub, in the same commit.
 - A citation in any shipped file is written `HANDBOOK ADR-nnnn`,
   since a bare number names the reading repo's own decision.
-- Only `starter/kit/` is copied. Everything else under `starter/`
+- Only `delivery/container/` is copied. Everything else under `delivery/`
   is about the kit.
 
 ## Adding a convention
@@ -89,4 +89,4 @@ the ADRs, and states no rule the artifact does not (ADR-0039).
 6. For a skill, this repo's own copy under `.claude/skills/` and a
    registry entry, landed as a first injection by
    convention-lifecycle §3, in its own agent-scoped commit
-   (ADR-0041).
+   (HANDBOOK ADR-0041).
