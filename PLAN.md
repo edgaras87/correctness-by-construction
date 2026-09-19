@@ -247,26 +247,48 @@ lines — and came in smaller than the measurement, at fourteen
 untouched. Two gate items above are corrected rather than ticked:
 a gate that closes by rewording itself says so.
 
-## Step 9: The groups                               [ ]
+## Step 9: The groups                               [x] 2026-09-19
 
 Goal: what this repo ships is named as the three things it is — the
 work kit, the concept and the skills derived from it, and the
 practice executions shaped by one stack — so a CbC project that is
 not Spring and Postgres can be born from the first two.
 Gate:
-- [ ] An ADR naming the groups, their boundaries and their pins;
-      the existing evidence weighed in it (the derives-from versus
-      checked-against split of ADR-0005, the reference held out of
-      the bundle by ADR-0021, six templates all in one group, and
-      `starter/kit/.claude/skills/` meaning exactly one thing —
-      pinned copies of the handbook's conventions — which a native
-      skill of ours would make two, ADR-0028 decision 5).
-- [ ] The stack-shaped group is named for the stack it assumes,
-      not for the tier it serves.
-- [ ] Each group is copied whole or not at all, with anything
-      *about* a group kept beside it and never inside it.
+- [x] ADR-0029 names them, and they are directories rather than
+      prose: `delivery/container/`, `delivery/method/`,
+      `delivery/spring-postgres/`. Two of the evidence items held —
+      ADR-0005's derives-from/checked-against split falls on this
+      exact line, drawn from the pinning question three weeks
+      earlier, and ADR-0021 is the same line enforced by hand for
+      one file. **Two are corrected rather than ticked:** "six
+      templates all in one group" is wrong twice (ten templates, in
+      three skills, and `registry.md` is method), and the
+      kit-skills question is settled by the artifact's *kind*, not
+      by a group — the directory holds conventions, and
+      `format-comparison` is a playbook, so it is ineligible
+      whatever the boundary says.
+- [x] Named `spring-postgres/`, for the stack it assumes: a
+      stranger matches it against their own project, and it reads
+      correctly beside a `go-mysql/` that does not exist yet.
+- [x] Whole or not at all, held by the tree rather than by a rule:
+      a skill belongs to exactly one group and travels whole, and
+      `fills/`, `installs/` and `delivery/README.md` sit beside the
+      groups because they are *about* delivery. Also renamed for
+      the same reason: `starter/` → `delivery/` (it serves updates,
+      not only births) and `kit/` → `container/` ("kit" named where
+      the files came from, not what they are). One exception is
+      recorded rather than fixed: the three `java-spring/*.part`
+      files stay in `docs/conventions/` until their wiring is
+      decided with them (ADR-0029 decision 7, retargeted in TODO).
 Notes: stands whether or not Step 8 lands; raised by the user at
-Step 8's opening.
+Step 8's opening. The sort (729368d) measured the material before
+the ADR was written and found both of the gate's premises wrong.
+The first ADR quarantined the stack inside two skills; the user's
+reading of the gate was the literal one and the plan was revised at
+step 6's boundary (af90c0e). Also answered here, from the last
+session: `format-comparison` is container group and is held back
+for maturity rather than membership — ADR-0028's trigger has not
+fired. Closed by 657d6eb and this commit.
 
 ## Step 10: One delivery, run for real               [ ]
 
@@ -335,6 +357,7 @@ was met at Step 5.
 - ADR-0026: The models are ours; ADR-0002's clause goes
 - ADR-0027: The architecture diagram is Mermaid, provisionally
 - ADR-0028: The procedure gets a picture; the method becomes a skill
+- ADR-0029: Three groups, three directories (Step 9)
 
 ---
 

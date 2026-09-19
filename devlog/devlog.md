@@ -6,6 +6,86 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-19  (the groups become directories; the ADR is written twice)
+
+PLAN Step 9 closed. Thirteen commits, one plan revision, and an ADR
+that was rewritten whole after being written once — the second time
+in two days that Proposed status caught something, and the first
+time it caught something this big.
+
+- **The sort went first and was right to.** Every shipped file
+  assigned to a candidate group before a word of the ADR existed.
+  Both of the gate's premises turned out wrong. Neither would have
+  been found by arguing.
+- **DEAD END: the grep over-reports, and convincingly.** `compose`,
+  `bootstrap` and `boot` are method vocabulary in this bundle as
+  much as stack vocabulary — "compose the requirements document",
+  the pipeline's third stage. cbc-framing scored 5 hits and
+  cbc-slice 5; **all ten are false on reading.** Twenty minutes to
+  disbelieve a number that looked like evidence.
+- **DEAD END (mine, the big one): the `stack/` quarantine.** Built
+  at 01a4729 — thirteen files into `<skill>/stack/`, pointers
+  rewritten, a one-sentence copy rule. Argued on *a skill is one
+  directory an agent loads*. That is true of a run's
+  `.claude/skills/` and **false here**: ADR-0004 and ADR-0006 make
+  executions in this repo content, never installed, so nothing
+  loads a skill from `delivery/`. I protected a property the source
+  layout does not have. Undone at 657d6eb, forward rather than
+  reverted, all five edited files restored byte-identical.
+- **What actually decided it was the gate's own sentence** — *each
+  group is copied whole or not at all* — and a quarantine makes a
+  skill half-copied. Plus two precedents running the other way:
+  ADR-0005 had drawn this line between the same five skills, and
+  ADR-0021 kept cbc-slice whole by putting its stack reference
+  *outside* the bundle rather than in a sub-directory of it. Both
+  were in front of me while I wrote the quarantine.
+- **DEAD END (mine): `format-comparison` excluded by the wrong
+  test.** The first draft said it is *about* the work rather than
+  part of it. The user asked why. The test fails on its own
+  evidence — `commit-messages`, `artifact-kinds` and `change-plans`
+  are all about how you work, and all four kit skills ship. It is
+  container group, held back because ADR-0028's trigger has not
+  fired.
+- **A fourth group died on reading its members.** Six files looked
+  like a container-ground middle. Four of the six are method files
+  *naming a lived default*, so the middle is a property of a file,
+  not a set of files.
+- **The user's reading of the gate was the literal one and it was
+  right.** Groups are directories with names, not a taxonomy in
+  prose. Which also produced the two renames nobody had asked for
+  and both of which were overdue: `starter/` → `delivery/`, because
+  the directory serves updates and not only births, and `kit/` →
+  `container/`, because "kit" named where the files came from
+  rather than what they are.
+- **Four user questions found four defects this session**, none of
+  them found by a check: why not just take format-comparison, why
+  do we keep separating artifacts from skills, can we have three
+  groups, do we keep the root as starter. That is now the dominant
+  defect-finding mechanism in this repo and it should be said out
+  loud rather than noticed each time.
+- **The ADR claimed a move the set had excluded**, caught at the
+  records step: decision 5 said the `java-spring/*.part` files
+  "move out of" `docs/conventions/` when the plan had kept the move
+  out. Checking where they would go made the exclusion right rather
+  than merely procedural — nothing points at those files, so an
+  unwired move ships three unread files to every Spring run.
+- Two guards added that nothing asked for. `bundle-update.md` now
+  skips a group the run does not hold, or a run born with `method/`
+  alone would silently gain three skills at its first update. And
+  the seed's commit subject was left saying "the five CbC skills"
+  though it may now be two, because `bundle-update.md` greps that
+  exact string to find a run's pin and three runs carry it.
+- Two findings filed, neither fixed: the convention manuals are
+  ours by decision and theirs by voice (ADR-0025's question, not
+  this step's), and `playbooks/default.md` still carries the rule
+  ADR-0026 retired.
+- Resume: PLAN Step 10, one delivery run for real — a project born
+  from this repo alone on one pin, an update delivered under
+  `bundle-update.md`, the letter with lived numbers, run 3 migrated
+  to one pin or the reason written down. Step 9's central judgment
+  has no birth behind it: three of five skills now ship to nobody
+  outside this stack, and Step 10 is where that gets tested.
+
 ## 2026-09-19, small hours  (the landing gets a step; a format question, second time)
 
 Session opened 2026-09-18 and spanned midnight. ADR-0028 carries

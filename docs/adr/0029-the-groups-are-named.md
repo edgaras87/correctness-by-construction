@@ -1,7 +1,7 @@
 # 0029. Three groups, three directories
 
 Date: 2026-09-18
-Status: Proposed
+Status: Accepted
 
 ## Context
 

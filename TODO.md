@@ -1297,9 +1297,21 @@
       template already held. Not fixed mid-take, because which
       group the parts belong to is the question — a stack-shaped
       artifact in a container that is meant to fit any project.
-      Trigger: PLAN Step 9, where the groups are named. Decide
-      there whether the parts ride the container, ride the
-      stack-shaped group, or stay upstream unused.
+      **Group decided 2026-09-19, ADR-0029 decision 7: they are
+      spring-postgres, and they stay put until the wiring is
+      decided with them.** The home the groups now offer is
+      `delivery/spring-postgres/cbc-bootstrap/templates/`, and
+      nothing points at them there either, so the move alone would
+      ship three unread files to every Spring run. So the item is
+      one question, not two: does cbc-bootstrap point at these
+      parts, or does "grow, never overwrite" stand and the parts
+      are an upstream habit we did not take? Whichever answer, the
+      move travels with it. Until then `docs/conventions/` holds a
+      stack file against ADR-0029 decision 5's beside-it rule — an
+      exception recorded in the ADR, not an oversight.
+      New trigger: the next time cbc-bootstrap's hygiene step is
+      opened for any reason, or a fourth run deriving `.gitignore`
+      by hand, whichever comes first.
 
 - [ ] What makes a note land — our evidence for the exchange
       convention when the handbook writes it. From their reply of
