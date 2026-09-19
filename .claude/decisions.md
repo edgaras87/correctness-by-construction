@@ -607,3 +607,29 @@
   as local. A copy at a hash that predates the rename would name a
   convention the container no longer ships, and the registry would
   be recording a fiction.
+
+- 2026-09-19 Conventions injected: decide-first, option-comparison
+  and visual-comparison, @ ee244c6 — this repo's container, which is
+  also where they were written. Ten conventions held where there
+  were seven; seven of the ten ship as skills, the other three as
+  stubs. CBC ADR-0031 holds the reasoning.
+  The entry of earlier today stands corrected by this one rather
+  than by an edit: it said the three were ours, pinned to nothing,
+  with no registry entry and no manual, and gave that as the shape
+  to mark positively. They now have all three, and the distinction
+  it described is gone — `.claude/skills/` holds seven convention
+  copies and nothing else.
+  A first injection with nothing to inject. convention-lifecycle §3
+  takes a copy from the deliverer; here the copy and the original
+  are the same file, because these were written in `.claude/skills/`
+  and copied outward. The compare-first step is vacuous by
+  construction rather than by luck, and is recorded as vacuous so
+  the next reader does not take a clean diff for evidence that one
+  was run.
+  What a re-pin means for them is new and is in bundle-update.md:
+  every previous delivery of this group was triggered by taking a
+  handbook pin, and three of the seven now change when we change
+  them.
+  Rejected: registering them at `ba7eaa4` with the other four. That
+  hash is the handbook's kit, which never held these files; a pin
+  is a claim about where a copy came from, and theirs is here.
