@@ -101,7 +101,20 @@ Recorded so the next comparison inherits the corrected form.
    settle the top one before touching the next, record it, and only
    then ask whether the work is one commit or many.
 
-3. **It fires on shape, not on every set.** The line, which is the
+3. **A draft template for its `temp/` file was written and not
+   adopted.** The skill's draft is repeated fixed-field blocks —
+   the question, how it settles, what rests on it, the answer —
+   unlike the comparison skills, whose drafts are prose, so a
+   template looked earned. It was cut at the user's call, and the
+   reason is this repo's own rule arriving against its own author:
+   fifteen lines of structure were being written for a skill that
+   has not run once. §2 step 1 already says to write the questions
+   into a draft, and what that draft should look like is what
+   running this will teach. **Trigger: the second run that
+   reinvents the same structure** — one run inventing it is a run,
+   two is a shape.
+
+4. **It fires on shape, not on every set.** The line, which is the
    whole of its scope:
 
    > A question whose answer changes the **shape of the set** is
@@ -115,7 +128,7 @@ Recorded so the next comparison inherits the corrected form.
    falls out: **if you cannot say roughly how many steps the set
    has, a shape question is still open.**
 
-4. **`commit-plan` keeps everything it has.** An earlier draft of
+5. **`commit-plan` keeps everything it has.** An earlier draft of
    this decision narrowed its job to "sequence and classify", and
    that was wrong: it would have discarded the two modes §3 already
    provides — decision-first for a decision settled in
@@ -129,12 +142,12 @@ Recorded so the next comparison inherits the corrected form.
    was running material-first *without knowing which material to
    touch*, because a shape question had never been asked.
 
-5. **What a commit plan does when it discovers something mid-way**
+6. **What a commit plan does when it discovers something mid-way**
    is written down, because it will: classify it. In scope, keep
    going; changes the decision, back to contemplation; neither, to
    TODO. The groups set produced all three.
 
-6. **`format-comparison` splits into `visual-comparison` and
+7. **`format-comparison` splits into `visual-comparison` and
    `option-comparison`.** This decision was drafted as a rename and
    a widening, and the attempt is what corrected it: widening the
    one file left it saying *render them where they will be read*,
@@ -174,26 +187,27 @@ Recorded so the next comparison inherits the corrected form.
    both files on ADR-0022's model, which the middles being
    different makes wrong.
 
-7. **`change-plans` becomes `commit-plan`.** The name reads as
+8. **`change-plans` becomes `commit-plan`.** The name reads as
    *plan the change*, which is what it must not mean, and that
    misreading is the defect in the Context. Rejected: fixing the
    text and keeping the name, which leaves the trap in place for
    whoever reads only the name.
 
-8. **The reference between the two skills is one-directional.**
+9. **The reference between the two skills is one-directional.**
    `decide-first` may name `option-comparison`; `option-comparison`
    gains no mention of `decide-first`. Both of its uses arrived
    with the question already on the table, raised by the user, and
    its trigger is source-agnostic. An earlier draft of this shape
    described a pipeline, which would have coupled them.
 
-9. **Two triggers, because two of these are thin.**
+10. **Three triggers, because three of these are thin.**
    - If `decide-first` runs three times and never routes anywhere
      except `option-comparison`, it is a wrapper with two empty
      slots and the two should merge.
-   - If the widened `option-comparison` never once settles a
-     question that is not about form, the widening was wrong and
-     the name goes back.
+   - If `visual-comparison`'s findings list never gains an entry
+     from a comparison whose winner was not a picture, the split
+     was decoration and the two should merge back.
+   - The template trigger in decision 3.
 
 ## Consequences
 
