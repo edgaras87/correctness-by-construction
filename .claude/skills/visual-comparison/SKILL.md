@@ -1,22 +1,44 @@
 ---
-name: format-comparison
-description: Settle a question of form — a diagram's dialect, a document's shape, a layout — by writing down what the artifact must carry and rendering candidates against it. Use when more than one form could work and the argument is about which.
+name: visual-comparison
+description: Settle how a structure is shown — a picture, a table, a plain list — by writing down what the reader must get and rendering every candidate against it. Use when a diagram might be the answer, including deciding it should not be. For a choice that is not about showing something, use option-comparison; this is that method specialised to things you look at, and what rendering them has cost us.
 ---
 
-# Format Comparison
+# Visual Comparison
 
-A question of form is settled by rendering, not by argument. Write
-what the artifact must carry *before* looking at candidates, build
-each one, judge it line by line, and let the render decide.
+How a structure is shown is settled by rendering, not by argument.
+Write what the reader must get *before* looking at candidates,
+build each one, judge it line by line, and let the render decide.
+
+**This is `option-comparison` specialised to things you look at.**
+The spine is the same — requirements first, every candidate built,
+judged per requirement, recorded in an ADR. What is here and not
+there is the failure mode only a picture has: *a notation that
+asserts something you did not mean*, and what that has cost.
 
 Kind: playbook — copied into a fresh draft each time, never
 executed in place.
 
 ## 1. When this fires
 
-More than one form could work and the discussion has become about
-taste. Typically: a diagram's dialect, the shape of a document, a
-layout, a table against a picture.
+A structure is hard to see and more than one way of showing it
+could work. A Mermaid dialect against another, a table against a
+picture, a numbered list against both.
+
+**The candidate set must contain at least one thing that is not a
+picture** — a table, a numbered list, the prose you already have.
+Otherwise a picture wins by construction and the comparison cannot
+return *no picture*, which is a real answer. In ADR-0028 the table
+was the best answer to one requirement and lost on another; a set
+without it would have hidden that.
+
+Under this repo's constraint — plain text, rendering on GitHub and
+in the IDE with no build step — the buildable notations are Mermaid
+and Unicode box drawing. PlantUML, Graphviz and D2 all need a
+render step or a plugin and are out; a committed SVG renders but is
+not text anyone can read in a diff.
+
+A choice that is not about showing something goes to
+`option-comparison`.
 
 It does not fire for a form with one obvious answer, and it does
 not fire twice for the same question — the ADR from last time is
@@ -66,6 +88,12 @@ the answer.
 Kept because it is the evidence this method works, and because a
 list that stops growing is the sign it was written too early.
 
+**These are things to check, not rules to obey.** Each names the
+case it came from, so you can judge whether yours is like it. An
+entry that would give the wrong answer on a different real case is
+too broad — narrow it to what was actually observed. If you cannot
+name the case, it is not an entry yet.
+
 - **The dialect built for the job can be the one that fails.**
   Mermaid `block-beta` is meant for stacked blocks and lost both
   the arrow labels and the vertical order. `sequenceDiagram` is
@@ -108,3 +136,7 @@ list that stops growing is the sign it was written too early.
   recommendation was to wait for a third instance: two uses by one
   author in one week is thin evidence. If that objection was
   right, §4 is where it shows, by not growing
+- CBC ADR-0030 — the third run was not about showing anything,
+  which separated the general method out as `option-comparison` and
+  left this one specialised. §4's discipline line is from there,
+  and so is §1's rule that the set must hold a non-picture
