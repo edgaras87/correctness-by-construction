@@ -142,13 +142,26 @@ reading this file.
      bullet above, does not fall where the worry sits.
 
 5. **The three `java-spring/*.part` files belong to
-   spring-postgres**, and move out of
-   `docs/conventions/repo-hygiene/templates/`. They are stack files
-   living inside the container's manuals, which decision 4's
-   beside-it rule forbids directly. Wiring cbc-bootstrap to point
-   at them — three runs have re-derived by hand what they already
-   hold — is the work this decision authorizes and not part of this
-   set; it stays in TODO.
+   spring-postgres, and stay where they are for now.** They are
+   stack files living inside the container's manuals, which
+   decision 4's beside-it rule forbids directly — so the group
+   answer is not in doubt. What is in doubt is the destination.
+   `cbc-bootstrap/stack/templates/` is the only home the groups
+   offer, and nothing in our bundle points at these files: three
+   runs have re-derived by hand what they already hold, because
+   cbc-bootstrap's walkthrough has a run grow its `.gitignore` from
+   what the Spring skeleton produces. Moving them there without
+   wiring would ship three unread files to every Spring run, which
+   is a worse breach than the one it fixes.
+
+   So this is a decision recorded against an exception left
+   standing, deliberately: the group is named, the violation is
+   written down here rather than discovered later, and the move
+   travels with the wiring. Both stay in TODO under one item, with
+   this ADR as its trigger's reason. Stated this way because the
+   first draft said they *move*, which would have left this ADR
+   describing a tree that does not exist — the failure mode a
+   Proposed status is for.
 
 6. **ADR-0005's pin phrasings are this boundary, and are left
    alone.** *Derives from* and *checked against* answer a different

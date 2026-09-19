@@ -20,6 +20,12 @@ one upstream instead of two. Delivery flows down as pinned copies
 into run repos; learning flows back up as harvested concept changes,
 after which executions are re-derived.
 
+What it ships is named as three groups (ADR-0029): the **container**,
+the **method**, and **spring-postgres** — everything unusable
+without Spring Boot, Maven, PostgreSQL or podman. The third is
+quarantined in `stack/` directories so a project on another stack
+copies by a rule rather than by judgment.
+
 ```mermaid
 flowchart TB
     handbook["handbook<br/><i>origin only — the container, its manuals<br/>and the models were taken at ba7eaa4;<br/>nothing flows now</i>"]
@@ -77,16 +83,24 @@ installed in this repo's own `.claude/`, and the archive's agent
 definitions stayed behind (ADR-0006). Two skills carry copy-and-fill
 template masters in `templates/` beside their references, extracted
 from the first run's lived files; a run fills them and the filled
-file is the run's own (ADR-0008). The stay-home delivery docs sit
-beside the bundle, outside the copy set (ADR-0010): the starter doc
-(`starter/README.md`) states the birth mapping and the
-authoritative-vs-pinned rule; the install manual
+file is the run's own (ADR-0008).
+The stack is quarantined rather than split out (ADR-0029): the
+boundary between method and stack runs *inside* infra-establish and
+cbc-bootstrap and not between the five skills, so each skill stays
+one directory an agent loads, and its thirteen stack-shaped files
+gather in `stack/references/` and `stack/templates/`. A project on
+another stack copies every skill except every `stack/` directory,
+and gets the method without its lived walkthrough.
+The stay-home delivery docs sit beside the bundle, outside the copy
+set (ADR-0010): the starter doc (`starter/README.md`) states the
+birth mapping and the authoritative-vs-pinned rule; the install manual
 (`starter/installs/pure-seed.md`) is the birth procedure
 (ADR-0016) — the material-only seed, copying the container from
 `starter/kit/` and the method beside it, its deliveries committed
 on a receipt branch the newborn never merges (ADR-0018).
 Why shaped this way: ADR-0004 (amended), ADR-0006, ADR-0008,
-ADR-0010, ADR-0016, ADR-0017, ADR-0018, ADR-0019, ADR-0024.
+ADR-0010, ADR-0016, ADR-0017, ADR-0018, ADR-0019, ADR-0024,
+ADR-0029.
 
 ### Container (`starter/kit/`, `docs/conventions/`)
 
@@ -141,6 +155,12 @@ ADR-0024 (the take that brought it here).
   compare is a reading over two diffs and the verdict is written
   every time, including "taught nothing" (ADR-0023, narrowed by
   ADR-0025).
+- A file unusable without Spring, PostgreSQL, Maven or podman never
+  sits outside a `stack/` directory. Enforced at commit review and
+  by the shape itself — a misfiled stack file is visible as a path,
+  which is the whole reason the quarantine is a directory rather
+  than a list (ADR-0029). The test is *unusable without*, not
+  *mentions*: a method file may name a lived default.
 - A record stub is never re-delivered to a live run. Enforced in
   `starter/installs/bundle-update.md`'s container-half rule: a kit
   re-pin moves four files, and the rest are the run's own work
@@ -152,7 +172,7 @@ ADR-0024 (the take that brought it here).
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
-| `starter/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `kit/` is the container, this repo's since ADR-0025, taken from the handbook's kit at `ba7eaa4` with the delta kept as a reading aid; `bundle/` is what a run copies as pinned files (the five skills); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and carries the delta list and the kit pin; `installs/` holds the two operator manuals — `pure-seed.md` for birth (ADR-0016) and `bundle-update.md` for every update after it (ADR-0022) |
+| `starter/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `kit/` is the container, this repo's since ADR-0025, taken from the handbook's kit at `ba7eaa4` with the delta kept as a reading aid; `bundle/` is what a run copies as pinned files (the five skills, each with its stack-shaped half quarantined in `stack/`, ADR-0029); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and carries the delta list and the kit pin; `installs/` holds the two operator manuals — `pure-seed.md` for birth (ADR-0016) and `bundle-update.md` for every update after it (ADR-0022) |
 | `docs/baselines/` | Held baselines — artifacts withheld from delivery, blind to newborns, compared against lived results: the frozen playbook (ADR-0012) and the Spring slice reference, handed to a run only after its build is on record (ADR-0021) |
 | `docs/models/` | Two models, this repo's (ADR-0026), taken from the handbook at the kit's pin; each header carries the coordinates |
 | `docs/conventions/` | Seven convention manuals, this repo's (ADR-0025), taken at the kit's pin; `docs/conventions.md` beside them holds the coordinates and the rule that a manual moves with its rule |

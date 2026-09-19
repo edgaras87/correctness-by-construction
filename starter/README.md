@@ -140,6 +140,28 @@ masters for the slice registry and the repeating ground and harness
 files, plus the README section fragments the infra skills project
 at their moments of need (ADR-0008, ADR-0013). They ride the
 skill copy at birth like everything else.
+
+**What assumes Spring, PostgreSQL, Maven or podman sits in a
+`stack/` directory of its own skill** — `stack/references/` and
+`stack/templates/`, keeping ADR-0008's distinction inside the
+quarantine (ADR-0029). Today that is seven files in
+infra-establish and six in cbc-bootstrap; the other three skills
+have none, and `cbc-framing/templates/registry.md` stays outside
+because the slice registry is method, not stack.
+
+So a project on a different stack is born by a rule instead of by
+judgment:
+
+> copy everything in the table above **except every `stack/`
+> directory**.
+
+What it gets is each skill's own instruction without the lived
+walkthrough that makes it concrete — the method of establishing a
+ground and bootstrapping a system, with the Spring and PostgreSQL
+worked examples absent. That is the trade ADR-0029 took knowingly
+over the alternative, which was handing those two skills away
+whole. No such birth has happened yet; the first one is where the
+trade gets judged.
 At use, the run copies a template to the path its walkthrough
 names — or merges a section fragment into its README — and fills
 the placeholders; the filled file becomes the run's own — not a
