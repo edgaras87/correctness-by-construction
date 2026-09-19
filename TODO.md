@@ -871,50 +871,31 @@
       Trigger: the next delivery to a run, or the second convention
       rename, whichever comes first.
 
-- [ ] Nine sentences in four manuals still put the handbook in our
-      seat. Raised 2026-09-19; **two of the three layers are now
-      done.** The citations and paths were fixed that day (66 bare
-      `ADR-nnnn` prefixed `HANDBOOK`, nine paths, four links), and
-      `docs/conventions/README.md` was adopted as ours — three
-      sentences changed, and `docs/conventions.md` folded into it as
-      *Where these files came from*.
-      What is left is smaller and needs judgment per line, not
-      find-and-replace. `grep -rn 'the handbook' docs/conventions/*/README.md`
-      returns nine, in four files, and they are not one kind:
-      - **`commit-messages`, the section "In the handbook itself"** —
-        a whole section describing *their* commit typing for a
-        documents-only repo: `feat(<convention>)` for the product,
-        `docs(handbook)` for records. **We are also a documents-only
-        repo and we do not do this** — this session typed
-        `docs(delivery)`, `docs(conventions)`, `docs(adr)`,
-        `docs(agent)`. So our own typing is unwritten while a
-        section describing a different one sits in our manual.
-        Either adopt theirs, write ours, or mark the section theirs.
-      - **`repo-hygiene`: "the overlays live in the handbook, not in
-        the project"** — they live *here* now, at
-        `docs/conventions/repo-hygiene/templates/java-spring/`. This
-        one tangles with the parked java-spring item below and
-        should be decided with it, not before.
-      - **`convention-lifecycle` and `artifact-kinds`** — "leaves
-        the handbook", "the handbook's seat", "the handbook's plan".
-        Four lines pointing at their roadmap and their role, both of
-        which are now ours. Mechanical once the first two are
-        settled.
-      The question this answers is ADR-0025's: a manual we own but
-      never rewrite is read in a voice that is not ours, and every
-      reader translates. The index proved the job is small — the
-      seven manuals are mostly explanations that read the same from
-      either seat, and only where a manual describes *who does the
-      work* does the seat matter.
-      Two things worth carrying, from the fixed layers. The shipped
-      rules had been prefixed `HANDBOOK` and the manuals had not —
-      whoever did the one did not walk the other, which is why this
-      was an oversight rather than a decision. And nothing here
-      would have caught any of it: no check follows a citation, and
-      no check reads a file nobody reads.
-      Trigger: the next time any convention manual is opened for any
-      reason, or the java-spring decision below, whichever comes
-      first.
+- [x] DONE 2026-09-19 (a4f0f94) — the manuals speak from this seat.
+      All three layers closed the same day. The citations and paths
+      first: 66 bare `ADR-nnnn` prefixed `HANDBOOK` because they
+      read as this repo's own decisions, nine paths repointed, four
+      outward links written from the repo root. Then
+      `docs/conventions/README.md` adopted as ours, three sentences
+      changed, and `docs/conventions.md` folded into it. Then the
+      nine: seven were seat swaps; two needed a decision — the
+      repo-hygiene line claiming the stack overlays live in the
+      handbook when they live here (the factual half fixed, the
+      wiring left to the java-spring item below), and
+      artifact-kinds deferring a question to "a Step 10 gate item in
+      the handbook's plan" when this repo has its own Step 10, the
+      same collision the bare ADR numbers had.
+      One `the handbook` remains in `commit-messages/README.md` and
+      is deliberate: it names them, comparing their commit typing
+      for a documents-only repo with ours. That section is where
+      this repo's own typing was written down for the first time —
+      `docs(<area>)` with the scope carrying the signal — measured
+      from 480 commits rather than guessed.
+      Original item: nine sentences in four manuals still put the
+      handbook in our seat, in three kinds — a whole section of
+      commit-messages describing their commit typing, a
+      repo-hygiene line about where overlays live, and four roadmap
+      pointers in convention-lifecycle and artifact-kinds.
 
 - [ ] `playbooks/default.md` still carries the rule ADR-0026
       retired (2026-09-19): "Pinned: do not edit here — changes
