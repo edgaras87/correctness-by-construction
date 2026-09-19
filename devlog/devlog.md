@@ -6,6 +6,55 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-19, after the close  (the manuals were citing our ADR numbers)
+
+One commit after Step 9 closed, and it exists because the user
+asked "can't we fix that now" about an item I had just filed.
+
+- **The TODO item I wrote was the wrong problem, twice over.** It
+  said the manuals have stale paths, because that is what
+  `docs/conventions.md`'s standing note said, and I took the note
+  instead of looking. The real defect is citations: 66 bare
+  `ADR-nnnn` across all eight manuals, in a repo whose own rule —
+  stated in `docs/conventions/README.md` — is that a bare number
+  names the reading repo's decision. So all 66 read as ours, and 22
+  of the numbers exist here and point at something unrelated. A
+  manual citing `ADR-0005` for Conventional Commits reads as
+  *practice-born executions pin as checked-against*.
+- **The asymmetry is what makes it an oversight and not a
+  decision**: the four shipped `SKILL.md` rules had been prefixed
+  `HANDBOOK` and the manuals had not. Whoever did the one did not
+  walk the other. Worth knowing because it predicts where else to
+  look — anywhere a set was half-processed by the same hand.
+- **Then I fixed the links wrong, and the user caught that too.** I
+  made the outward pointers *resolve* — `../../../playbooks/` —
+  when `docs/conventions.md` says two paragraphs further down that
+  this repo's documents write paths from the repo root. Fixed to
+  `playbooks/`, and the deciding line is now written down rather
+  than judged twice differently: a pointer that leaves the vendored
+  tree is written from our root; ten manual-to-manual links stay
+  relative, because rewriting those is a change of voice.
+- **Two of the four "worked" before.** `../../models/agent.md`
+  landed on `docs/models/` by accident, because that is where we
+  happen to keep them. That is the worse case of the two — a broken
+  link announces itself, an accidental one breaks the day something
+  moves.
+- **DEAD END (mine, and it is the session's pattern): I believed a
+  note instead of counting.** The note said "rewriting eleven
+  files' links buys nothing until someone follows one". It
+  undercounted, named the wrong class, and was written before the
+  rename made it worse. It is gone; what replaces it records both
+  classes and the line between them.
+- Five defects this session, all five found by a user question and
+  none by a check. That is written into the groups entry above as a
+  pattern; this is the fifth instance and it arrived after the
+  change set had already closed.
+- Resume: unchanged — PLAN Step 10, one delivery run for real.
+  Before it, one item is worth its own look:
+  `docs/conventions/README.md` is written as the handbook end to
+  end, which is ADR-0025's question rather than a fix, and
+  `playbooks/default.md` still carries the rule ADR-0026 retired.
+
 ## 2026-09-19  (the groups become directories; the ADR is written twice)
 
 PLAN Step 9 closed. Thirteen commits, one plan revision, and an ADR
