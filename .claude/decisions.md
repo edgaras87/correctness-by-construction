@@ -580,3 +580,30 @@
   rather than a silent overwrite, because the log is read top to
   bottom at the retrospective and an entry that rejects what was
   later done reads as a reversal nobody noticed.
+
+- 2026-09-19 Convention renamed: change-plans is commit-plan, and
+  the four pinned copies are updated to this repo's container @
+  478ecdc (were @ ba7eaa4, the handbook). First update taken from
+  our own container rather than from the handbook, which ADR-0025
+  made possible and nothing had exercised.
+  What moved: `.claude/skills/change-plans/` is
+  `.claude/skills/commit-plan/`, and `CHANGE-PLAN.md` is
+  `COMMIT-PLAN.md`. Two copies were stale in ways the rename
+  exposed rather than caused — commit-messages still named
+  `CHANGE-PLAN.md` among the agent's own files, and
+  convention-lifecycle still said "Is there newer" is answered *in
+  the handbook* at `starter/kit/`, where the container has said
+  *at the deliverer* since it came here. All four are now
+  byte-identical to the container.
+  The pin is a commit of this repo, which is new and slightly
+  circular: we are the deliverer and a receiver of the same
+  artifacts. It resolves cleanly enough — the container is the
+  master, `.claude/skills/` holds copies of it, and "is there
+  newer" is `git diff 478ecdc..HEAD -- delivery/container` — but
+  the convention's language assumes two repos, and a second
+  instance should say whether that assumption needs writing down
+  or is harmless.
+  Rejected: leaving the copies at ba7eaa4 and treating the rename
+  as local. A copy at a hash that predates the rename would name a
+  convention the container no longer ships, and the registry would
+  be recording a fiction.
