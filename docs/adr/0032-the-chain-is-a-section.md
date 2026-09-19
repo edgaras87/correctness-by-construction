@@ -1,7 +1,7 @@
 # 0032. The chain is a section, and it is drawn
 
 Date: 2026-09-19
-Status: Proposed
+Status: Accepted
 
 ## Context
 

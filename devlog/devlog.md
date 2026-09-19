@@ -6,6 +6,67 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-19, last  (the chain gets a section, and a picture that loses on the reading)
+
+Six commits. The first set opened by `decide-first`, and the first
+comparison whose decision went against its own reading.
+
+- **`decide-first` ran for real and its count line did the work.**
+  Not sayable until the user answered whether the map ships — two
+  commits if not, seven or eight if so. That is the whole of what
+  the skill claims to do, and it did it before anything was built.
+- **Its first non-retrospective finding came from the run, not
+  from the outcome.** A *measure* question far down the list — what
+  kind is this, by `artifact-kinds`? — took five minutes and
+  produced an argument against shipping that nobody had: a map is a
+  *guide*, and a guide in a directory of conventions is a second
+  kind, which ADR-0031 had just removed. Cheap questions inform
+  expensive ones; they are not independent.
+- **Seven candidates in two rounds.** Round one asked whether it is
+  a picture at all — flowchart, table, list, prose — and the table
+  failed on what it could not hold rather than what it showed: the
+  domain skills have no "fires when", so a row for them is a lie in
+  a column. Round two asked which dialect, after the user chose a
+  picture.
+- **The finding is that grouping beats chaining in the same
+  dialect.** A chained flowchart's arrows *are* the order, so it
+  cannot also say "you may start anywhere". Two subgraphs with
+  nothing crossing between them can. First time this method found
+  the fix to be a different *use* of a dialect rather than a
+  different dialect, after three instances of the opposite.
+- **`mindmap` produced the sharpest line and lost anyway.** No
+  arrows, so no route can be asserted — and it nests, so it asserts
+  containment instead, which was false of the pair it was drawn
+  for. A shape with no way to be wrong about direction has no way
+  to be right about relation. Requirement 6 also caught its
+  whitespace sensitivity, which no reading would have.
+- **DEAD END (mine): I wrote "no picture wins" into the draft and
+  it was wrong twice over.** Wrong as a prediction — the user chose
+  one — and wrong as a claim about the trigger, which turns on the
+  outcome rather than the reading. `visual-comparison`'s merge-back
+  question stays open. Corrected in ADR-0032 decision 4 rather than
+  left standing.
+- **The decision went against the reading and both are kept.** G
+  held requirements 1 and 2 together, alone among seven; A was
+  chosen. The ADR does not rewrite the candidates to agree with the
+  outcome, and names what would show the choice was wrong: a reader
+  who starts a typo fix at `decide-first` on the strength of the
+  picture.
+- **Neither findings list was added to, at the user's call.** Three
+  entries for `visual-comparison` and one for `decide-first` were
+  written and cut. The reason is the constraint set when those
+  lists were created: they are things to check, not rules to obey,
+  and a lesson from one task must not become a boundary that stops
+  the next from a correct answer. Three entries out of one
+  comparison is the rate at which that happens. The findings are in
+  ADR-0032 and in this entry, which are read at a retrospective
+  rather than at a moment of use — which is the difference.
+- Resume: PLAN Step 10, one delivery run for real. Everything since
+  the groups set has been reshaping what a run receives — ten
+  conventions, three of them ours, a chain section, two renames —
+  and none of it has met a run. That is now the only thing left
+  that can test any of it.
+
 ## 2026-09-19, later still  (the three become conventions; ten where there were seven)
 
 Nine commits, no divergence. The shortest set of the day and the

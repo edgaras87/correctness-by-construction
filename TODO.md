@@ -833,7 +833,11 @@
       whichever comes first.
 
 - [ ] The update procedure reconciles by hardcoded name, and it
-      should derive from pins. Raised 2026-09-19 by the user, at the
+      should derive from pins. **Stronger since 2026-09-19:** the
+      lists went from four names to seven and are now two things
+      deep — which conventions exist, and which of them ship as a
+      skill — and widening them wrong was caught by listing the
+      directory, not by reading. Raised 2026-09-19 by the user, at the
       close of the set that renamed `change-plans`. Three lists in
       `bundle-update.md` still name their members —
       `commit-messages commit-plan artifact-kinds
