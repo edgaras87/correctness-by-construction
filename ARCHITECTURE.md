@@ -20,11 +20,11 @@ one upstream instead of two. Delivery flows down as pinned copies
 into run repos; learning flows back up as harvested concept changes,
 after which executions are re-derived.
 
-What it ships is named as three groups (ADR-0029): the **container**,
-the **method**, and **spring-postgres** — everything unusable
-without Spring Boot, Maven, PostgreSQL or podman. The third is
-quarantined in `stack/` directories so a project on another stack
-copies by a rule rather than by judgment.
+What it ships is three groups, and each is a directory under
+`delivery/` (ADR-0029): **`container/`**, **`method/`** and
+**`spring-postgres/`**. A skill belongs to exactly one and travels
+whole; a group is copied whole or not at all. A project on another
+stack takes two of the three, decided by reading their names.
 
 ```mermaid
 flowchart TB
@@ -58,15 +58,17 @@ concept version names.
 Why shaped this way: ADR-0003 (versioning); several documents because
 the statement's own split is by chapter (Framing, Step 2).
 
-### Executions (`delivery/bundle/`, `delivery/fills/`)
+### Executions (`delivery/method/`, `delivery/spring-postgres/`, `delivery/fills/`)
 
 Responsibility: the derived layer a run repo receives at birth,
 covering the whole pipeline (cbc-framing → infra-establish /
 infra-serve → cbc-bootstrap → cbc-slice), each file pinned to the
 concept version it derives from or is checked against (ADR-0005).
-Two kinds by how they land (ADR-0017): `bundle/` holds the five
-skills with their references, copied as files the run keeps
-pinned — cbc-framing and cbc-slice ship the same
+Two kinds by how they land (ADR-0017), which is a different
+question from which group they are in: `method/` and
+`spring-postgres/` hold the five skills with their references,
+copied as files the run keeps pinned — cbc-framing and cbc-slice
+ship the same
 `references/worked-example.md`, one document read in halves, Part 1
 the framing and Part 2 the slice, duplicated so either skill's
 directory stands alone; the two copies are byte-identical and a
@@ -84,13 +86,16 @@ definitions stayed behind (ADR-0006). Two skills carry copy-and-fill
 template masters in `templates/` beside their references, extracted
 from the first run's lived files; a run fills them and the filled
 file is the run's own (ADR-0008).
-The stack is quarantined rather than split out (ADR-0029): the
-boundary between method and stack runs *inside* infra-establish and
-cbc-bootstrap and not between the five skills, so each skill stays
-one directory an agent loads, and its thirteen stack-shaped files
-gather in `stack/references/` and `stack/templates/`. A project on
-another stack copies every skill except every `stack/` directory,
-and gets the method without its lived walkthrough.
+The groups cut between skills, never through one (ADR-0029):
+`method/` holds cbc-framing and cbc-slice, the two that derive from
+concept v1 and carry no stack at all; `spring-postgres/` holds
+infra-establish, infra-serve and cbc-bootstrap, whole. A project on
+another stack therefore gets no ground or bootstrap skill —
+not the walkthroughs and not their stack-free stages either. All
+three are practice-born (ADR-0005), and another stack's versions
+are that stack's to harvest, landing as a fourth group beside this
+one. The pipeline this repo describes is whole only for this
+stack.
 The stay-home delivery docs sit beside the bundle, outside the copy
 set (ADR-0010): the starter doc (`delivery/README.md`) states the
 birth mapping and the authoritative-vs-pinned rule; the install manual
@@ -155,12 +160,12 @@ ADR-0024 (the take that brought it here).
   compare is a reading over two diffs and the verdict is written
   every time, including "taught nothing" (ADR-0023, narrowed by
   ADR-0025).
-- A file unusable without Spring, PostgreSQL, Maven or podman never
-  sits outside a `stack/` directory. Enforced at commit review and
-  by the shape itself — a misfiled stack file is visible as a path,
-  which is the whole reason the quarantine is a directory rather
-  than a list (ADR-0029). The test is *unusable without*, not
-  *mentions*: a method file may name a lived default.
+- A skill never spans two groups, and nothing unusable without
+  Spring, PostgreSQL, Maven or podman sits under `method/`.
+  Enforced by the shape as much as at commit review — a group is a
+  directory, so a misfiled file is visible as a path (ADR-0029).
+  The test for the group is what the *skill* assumes, not what a
+  sentence mentions: a method file may name a lived default.
 - A record stub is never re-delivered to a live run. Enforced in
   `delivery/installs/bundle-update.md`'s container-half rule: a kit
   re-pin moves four files, and the rest are the run's own work
@@ -172,7 +177,7 @@ ADR-0024 (the take that brought it here).
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
-| `delivery/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `kit/` is the container, this repo's since ADR-0025, taken from the handbook's kit at `ba7eaa4` with the delta kept as a reading aid; `bundle/` is what a run copies as pinned files (the five skills, each with its stack-shaped half quarantined in `stack/`, ADR-0029); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and carries the delta list and the kit pin; `installs/` holds the two operator manuals — `pure-seed.md` for birth (ADR-0016) and `bundle-update.md` for every update after it (ADR-0022) |
+| `delivery/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `kit/` is the container, this repo's since ADR-0025, taken from the handbook's kit at `ba7eaa4` with the delta kept as a reading aid; `method/` and `spring-postgres/` are the two groups a run copies as pinned files — two skills and three, whole, a group taken entirely or not at all (ADR-0029); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and carries the delta list and the kit pin; `installs/` holds the two operator manuals — `pure-seed.md` for birth (ADR-0016) and `bundle-update.md` for every update after it (ADR-0022) |
 | `docs/baselines/` | Held baselines — artifacts withheld from delivery, blind to newborns, compared against lived results: the frozen playbook (ADR-0012) and the Spring slice reference, handed to a run only after its build is on record (ADR-0021) |
 | `docs/models/` | Two models, this repo's (ADR-0026), taken from the handbook at the kit's pin; each header carries the coordinates |
 | `docs/conventions/` | Seven convention manuals, this repo's (ADR-0025), taken at the kit's pin; `docs/conventions.md` beside them holds the coordinates and the rule that a manual moves with its rule |

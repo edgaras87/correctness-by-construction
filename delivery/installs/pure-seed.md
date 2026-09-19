@@ -189,8 +189,12 @@ git add docs/concept
 git commit -m "chore: seed — concept/ from the bundle, pin @ $bundle_pin"
 
 mkdir -p .claude/skills
-for s in cbc-framing cbc-slice infra-establish infra-serve cbc-bootstrap; do
-  cp -r "$bundle_dir"/delivery/bundle/"$s" .claude/skills/
+# Both shipping groups: this run is Spring and PostgreSQL. A run on
+# another stack drops the second path and takes method/ alone, and
+# is then born with two skills, not five (CBC ADR-0029).
+for d in "$bundle_dir"/delivery/method/*/ \
+         "$bundle_dir"/delivery/spring-postgres/*/; do
+  cp -r "${d%/}" .claude/skills/
 done
 git add .claude/skills
 git commit -m "chore: seed — the five CbC skills, pin @ $bundle_pin"

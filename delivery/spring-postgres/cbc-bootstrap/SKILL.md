@@ -24,7 +24,7 @@ a **hard stage boundary**:
   evidence owed. **No dependency, no class, no file layout is named there.**
 - Stage 4 is where implementation judgment lives — dependencies and their
   timing, code shape, commit split — under the stack conventions in
-  `stack/references/`.
+  `references/`.
 - Never let a mechanism chosen early masquerade as a requirement. If while
   implementing you discover a missing *what* (a capability or constraint the
   work turns out to need), **stop and return to Stage 1 as a logged
@@ -131,7 +131,7 @@ deliberate and Stage 4 closes it. Commit it before implementing.
 
 Produce an ordered step plan: each step one logical change, with its own
 verification and its own commit, naming what it gives. The lived shape is
-five steps (see the stack walkthrough in `stack/references/`):
+five steps (see the stack walkthrough in `references/`):
 
 1. the stack decision recorded
 2. the skeleton standing in the live repo
@@ -148,10 +148,10 @@ Per step: make the change, **verify it**, commit. A step whose verification
 fails is not committed; it is reported. Implementation decisions are yours
 here — under the stack conventions:
 
-- Read `stack/references/spring-boot-walkthrough.md` for the outcomes and the
+- Read `references/spring-boot-walkthrough.md` for the outcomes and the
   lived traps (Boot 4 renames, test-scope companions, container-runtime
   setup, the zero-applied migration proof, the concurrency probe shape).
-- Write the build file per `stack/references/spring-pom-convention.md` — every
+- Write the build file per `references/spring-pom-convention.md` — every
   dependency enters at the step that earns it, with its earning reason as a
   comment, grouped by capability.
 - The repo already exists: **extract into it, merge plumbing files, never
@@ -191,7 +191,7 @@ business behavior yet", the probe's death scheduled at the first slice.
 The certified facts also project into the README (CBC ADR-0013): the
 **Run** and **Test** sections, plus the stack's line joining the
 Prerequisites section the establishment opened — merged and filled
-from `stack/templates/readme-run-test.md`. Run ends in the lived proof of
+from `templates/readme-run-test.md`. Run ends in the lived proof of
 life; Test is the one standard test command, verified structurally at
 certification. The kit's README stub ships without these sections —
 container stays, direction goes — and they arrive now because the

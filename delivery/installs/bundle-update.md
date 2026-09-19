@@ -149,9 +149,14 @@ below.
 staged="$run_dir/temp/bundle-$new_pin"
 mkdir -p "$staged"/concept "$staged"/conventions
 
-# the method half — the five skills and the concept chapters
-for s in cbc-framing cbc-bootstrap cbc-slice infra-establish infra-serve; do
-  cp -r "$bundle_dir"/delivery/bundle/"$s" "$staged"/
+# the shipping groups — the skills and the concept chapters.
+# Stage only the groups the run was born with: a run that took
+# method/ alone must not be handed spring-postgres/ at an update
+# (CBC ADR-0029). Its .claude/skills/ says which it holds.
+for d in "$bundle_dir"/delivery/method/*/ \
+         "$bundle_dir"/delivery/spring-postgres/*/; do
+  [ -d "$run_dir/.claude/skills/$(basename "$d")" ] || continue
+  cp -r "${d%/}" "$staged"/
 done
 cp "$bundle_dir"/concept/*.md "$staged"/concept/
 
@@ -279,10 +284,12 @@ fact.** Four lines, and each side reached by its own route:
 
 ```bash
 n=0
-for s in cbc-framing cbc-bootstrap cbc-slice infra-establish infra-serve; do
-  diff -r "$bundle_dir"/delivery/bundle/"$s" "$run_dir"/.claude/skills/"$s" \
-    || echo "DIFFERS: $s"
-  n=$((n + $(find "$bundle_dir"/delivery/bundle/"$s" -type f | wc -l)))
+for d in "$bundle_dir"/delivery/method/*/ \
+         "$bundle_dir"/delivery/spring-postgres/*/; do
+  s=$(basename "$d")
+  [ -d "$run_dir/.claude/skills/$s" ] || continue
+  diff -r "${d%/}" "$run_dir"/.claude/skills/"$s" || echo "DIFFERS: $s"
+  n=$((n + $(find "${d%/}" -type f | wc -l)))
 done
 diff -r "$bundle_dir"/concept "$run_dir"/docs/concept || echo "DIFFERS: concept"
 

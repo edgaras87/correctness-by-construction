@@ -16,8 +16,20 @@ authoritative; a run's copies are pinned — they change only by
 copying anew from here, and a run's surprises come back as harvest,
 never as edits (docs/models/tiers.md).
 
-Three kinds of delivery, three directories (ADR-0017, widened by
-ADR-0024). **The container** is what a run is born into:
+**Three groups, three directories** (ADR-0029): `container/`,
+`method/`, `spring-postgres/`. A skill belongs to exactly one and
+travels whole; a group is copied whole or not at all. A run on
+Spring and PostgreSQL takes all three. A run on another stack takes
+`container/` and `method/` and leaves `spring-postgres/` — two
+directories of three, decided by reading their names, and it gets
+no ground or bootstrap skill at all. Beside the groups and never
+inside one sit the things *about* delivery: `fills/`, `installs/`
+and this file.
+
+There are also three kinds of delivery, which is a different
+question — how a thing lands, not which group it is in (ADR-0017,
+widened by ADR-0024). **The container** is what a run is born
+into:
 `delivery/container/` copied whole into the new repo — the
 handbook's kit as we hold it at a pin, with the delta the section
 below lists. Inside it the parts
@@ -32,11 +44,16 @@ claim; the run never edits them, only re-copies at a new pin:
 | From here | Into the run repo |
 |---|---|
 | `concept/` | `docs/concept/` — read `00-cbc.md` first |
-| `delivery/bundle/cbc-framing/` | `.claude/skills/cbc-framing/` |
-| `delivery/bundle/cbc-slice/` | `.claude/skills/cbc-slice/` |
-| `delivery/bundle/infra-establish/` | `.claude/skills/infra-establish/` |
-| `delivery/bundle/infra-serve/` | `.claude/skills/infra-serve/` |
-| `delivery/bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
+| `delivery/method/cbc-framing/` | `.claude/skills/cbc-framing/` |
+| `delivery/method/cbc-slice/` | `.claude/skills/cbc-slice/` |
+| `delivery/spring-postgres/infra-establish/` | `.claude/skills/infra-establish/` |
+| `delivery/spring-postgres/infra-serve/` | `.claude/skills/infra-serve/` |
+| `delivery/spring-postgres/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
+
+The last three rows are the ones a run on another stack does not
+copy. They flatten into `.claude/skills/` all the same — the group
+is a fact about this repo, not about the run, which receives five
+skills (or two) side by side as it always did.
 
 **Fills** are text the seed writes into a file the container
 already put there; from that moment the text is the run's own — edited in
@@ -147,27 +164,16 @@ files, plus the README section fragments the infra skills project
 at their moments of need (ADR-0008, ADR-0013). They ride the
 skill copy at birth like everything else.
 
-**What assumes Spring, PostgreSQL, Maven or podman sits in a
-`stack/` directory of its own skill** — `stack/references/` and
-`stack/templates/`, keeping ADR-0008's distinction inside the
-quarantine (ADR-0029). Today that is seven files in
-infra-establish and six in cbc-bootstrap; the other three skills
-have none, and `cbc-framing/templates/registry.md` stays outside
-because the slice registry is method, not stack.
-
-So a project on a different stack is born by a rule instead of by
-judgment:
-
-> copy everything in the table above **except every `stack/`
-> directory**.
-
-What it gets is each skill's own instruction without the lived
-walkthrough that makes it concrete — the method of establishing a
-ground and bootstrapping a system, with the Spring and PostgreSQL
-worked examples absent. That is the trade ADR-0029 took knowingly
-over the alternative, which was handing those two skills away
-whole. No such birth has happened yet; the first one is where the
-trade gets judged.
+**What a run on another stack does not get is worth saying
+plainly**: no infra-establish, no infra-serve, no cbc-bootstrap —
+not the walkthroughs, and not their stack-free stages either. All
+three are practice-born (ADR-0005), harvested from lived Spring and
+PostgreSQL runs rather than derived from the concept. Another
+stack's versions are that stack's to harvest, and would land here
+as a fourth group beside `spring-postgres/`. The pipeline this repo
+describes is therefore whole only for this stack; everyone else
+gets its two ends. No such birth has happened yet, and the first
+one is where that judgment gets tested (ADR-0029).
 At use, the run copies a template to the path its walkthrough
 names — or merges a section fragment into its README — and fills
 the placeholders; the filled file becomes the run's own — not a
