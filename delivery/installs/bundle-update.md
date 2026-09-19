@@ -93,6 +93,23 @@ mind. A renumbering moves every number, so the search is for every
 old number, and the cheapest form is the whole span: `§1` through
 `§9` here.
 
+**A renamed convention needs one more thing, and the copy step will
+not do it for you** (learned 2026-09-19, when `change-plans` became
+`commit-plan`). Step 4 copies conventions by name, so a rename
+*adds* the new directory and leaves the old one in the run — two
+skills stating the same rules, one of them abandoned, and an agent
+that loads whichever it finds first. The note must therefore say
+**old name → new name** in its own line, and step 4 must delete the
+old directory by name.
+
+Three more things move with it, and none of them is reached by a
+diff: the run's registry entry names the old convention at a hash;
+any `requires:` line in another skill names it; and the convention's
+artifact may be renamed too — ours took `CHANGE-PLAN.md` to
+`COMMIT-PLAN.md`, which a run with one in flight has to move rather
+than copy. Say all of it in the note; the run cannot infer any of it
+from the files it receives.
+
 If the run edited its copies, diff them against what it received,
 using the run's own history, not ours:
 
@@ -197,6 +214,10 @@ cp temp/bundle-<pin>/concept/*.md docs/concept/
 for c in temp/bundle-<pin>/conventions/*/; do
   n=$(basename "$c"); rm -rf .claude/skills/$n && cp -r "$c" .claude/skills/
 done
+
+# a renamed convention: the loop above added the new name and left
+# the old directory standing. The note names the pair; delete it.
+rm -rf .claude/skills/<old-name>
 ```
 
 Whole, never re-derived. A pin names an exact state, and a copy the
