@@ -562,7 +562,8 @@ failure being fixed. Restating a record's rules in the entry file
 ## Where to look
 
 - The stubs: in `delivery/container/` — the links were not
-  reproduced here (see `docs/conventions.md`).
+  reproduced here (see this set's README, *Where these files
+  came from*).
 - The entry file and its records table:
   [`../agent-arrangement/`](../agent-arrangement/).
 - Commit messages, the finest-grained record:

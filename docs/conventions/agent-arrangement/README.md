@@ -232,7 +232,8 @@ text at an update, through the kit's protocol.
 ## Where to look
 
 - The stubs: in `delivery/container/` — the links were not
-  reproduced here (see `docs/conventions.md`).
+  reproduced here (see this set's README, *Where these files
+  came from*).
 - The records table the entry file carries:
   [`../project-recording/`](../project-recording/), its §13.
 - The `agent` scope: [`../commit-messages/`](../commit-messages/).

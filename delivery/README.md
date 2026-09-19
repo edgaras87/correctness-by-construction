@@ -115,6 +115,25 @@ Kit pin: `ba7eaa4` — this line is the hash's one home, and
 `installs/pure-seed.md` reads it from here for the birth entry, so
 it moves in one place.
 
+**Landed here at `dc3b7db`** — the other half of the same anchor,
+and the one a reader coming from the handbook needs. `ba7eaa4` says
+where the bytes came from; `dc3b7db` says where they arrived, which
+is what makes "what have you changed since" a command rather than
+an excavation:
+
+```bash
+git diff -M dc3b7db..HEAD -- starter/kit delivery/container
+```
+
+**Both paths, and the old one first.** The directory was
+`starter/kit/` until ADR-0029 renamed it, so at `dc3b7db` the path
+`delivery/container/` does not exist and asking for it alone
+reports the whole container as new — 970 insertions against the 8
+that are real. The `-M` finds the rename across the gap. Any later
+rename of this directory adds its old path to that list, and the
+line above is where it gets added; a rename that does not land here
+leaves the next reader with a diff that says everything changed.
+
 **What differs from what we took, and why.** A reading aid for
 whoever attempts a re-sync — not a gate, with nothing counting its
 rows:

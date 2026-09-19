@@ -796,7 +796,8 @@
 - [ ] The convention manuals are ours by decision and theirs by
       voice — one file, and one question. Raised 2026-09-19 while
       renaming `starter/` to `delivery/`. **The mechanical half was
-      fixed the same day** and is recorded in `docs/conventions.md`:
+      fixed the same day** and is recorded in the set's own
+      `README.md`, under *Where these files came from*:
       66 bare ADR citations prefixed `HANDBOOK` (they read as ours,
       and 22 of the numbers exist here pointing at unrelated
       decisions), nine paths repointed at our tree, four relative

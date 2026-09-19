@@ -6,7 +6,13 @@
      2026-09-17 @ ba7eaa4; before that @ ab916a1 2026-09-11,
      @ af16eb7 2026-09-09; first copied 2026-08-27 @ 4fe8083, this
      repo's kit birth pin. Edit when something lived here
-     contradicts the text; the body is otherwise as taken. -->
+     contradicts the text; the body is otherwise as taken.
+     Landed here at df9d5ed, the 2026-09-17 re-copy — the anchor is
+     the LAST re-copy, not the first vendoring, because the earlier
+     pins bring their own churn: git diff -M df9d5ed..HEAD --
+     docs/models is 17 lines, against 7b049af it is 183 and almost
+     all of it theirs. If this path is ever renamed, its old path
+     joins that command here, in the same commit. -->
 
 # Agent Model
 

@@ -14,11 +14,12 @@ one is two things, kept apart:
   `delivery/container/`, and each convention's directory links to its own
   beside the manual.
 
-The kit is the master. Edit an artifact there and the links under
-`conventions/` follow; this repo's own `.claude/skills/` holds
-copies at a pin and takes the change at its next update, like any
-project's (HANDBOOK ADR-0041). The kit is copied whole into a new project,
-as real files, which is why it has to be the origin (HANDBOOK ADR-0040).
+The container is the master. Edit an artifact there and the
+pointers under `conventions/` follow; this repo's own
+`.claude/skills/` holds copies at a pin and takes the change at its
+next update, like any project's (HANDBOOK ADR-0041). The container
+is copied whole into a new project, as real files, which is why it
+has to be the origin (HANDBOOK ADR-0040).
 
 ## The seven
 
@@ -67,26 +68,99 @@ opening it at the moment of use.
 The manual is free prose. It explains, points at the artifact and
 the ADRs, and states no rule the artifact does not (HANDBOOK ADR-0039).
 
-## The kit's rules
+## The container's rules
 
-- A convention entering or leaving the kit updates the file table
-  and the shipped-conventions table in `delivery/README.md`, and the
-  birth entry in the kit's decisions-log stub, in the same commit.
-- A citation in any shipped file is written `HANDBOOK ADR-nnnn`,
-  since a bare number names the reading repo's own decision.
-- Only `delivery/container/` is copied. Everything else under `delivery/`
-  is about the kit.
+- A convention entering or leaving the container updates the table
+  above, the shipped-conventions table in `delivery/README.md`, and
+  the birth entry in the container's decisions-log stub, in the
+  same commit.
+- A citation in any shipped file names the repo that decided it —
+  `HANDBOOK ADR-nnnn` for a decision inherited from the handbook,
+  `CBC ADR-nnnn` for one of ours — since a bare number names the
+  reading repo's own decision.
+- Only `delivery/container/` is copied into a run. Everything else
+  under `delivery/` is about the delivery (CBC ADR-0029).
 
 ## Adding a convention
 
 1. A directory `conventions/<name>/` with its `README.md`.
 2. Its artifacts in the kit, and links to them from the directory.
 3. An ADR for the decisions behind it.
-4. A row in the table above and in the handbook README; the kit's
-   tables and birth entry per the rules above.
+4. A row in the table above; the container's tables and birth
+   entry per the rules above.
 5. A changelog entry prefixed with the convention name; a PLAN
    step, numbered by creation.
 6. For a skill, this repo's own copy under `.claude/skills/` and a
    registry entry, landed as a first injection by
    convention-lifecycle §3, in its own agent-scoped commit
    (HANDBOOK ADR-0041).
+
+## Where these files came from
+
+Taken from the handbook, and this repo's since CBC ADR-0025: ours
+to change when a rule here changes, with nothing tracking that repo
+and no update from it owed a reading. That decision is the *why*;
+what follows is what a reader — or a handbook agent asking what we
+did — needs in order to act on it.
+
+**Both ends of the anchor.** The bytes came from the handbook at
+`ba7eaa4`, identical through their `8adb46f`, which is the last
+state this repo was aligned with. They landed here at `9a1637d`.
+One hash without the other is an excavation; with both it is a
+command:
+
+```bash
+git diff -M 9a1637d..HEAD -- docs/conventions
+```
+
+If this directory is ever renamed, its old path is added to that
+line in the same commit. A rename that does not land here leaves
+the next reader a diff saying every file is new — which is what
+`delivery/README.md` records happening to the container.
+
+**Keep a manual true to the rule it explains.** A manual's only job
+is to say why its rule is shaped as it is. If a rule in
+`delivery/container/` changes and its manual here does not, the
+manual lies — the kind of lie nothing catches, because a manual is
+read rarely and by whoever is least sure. So the manual moves with
+its rule, in the same commit.
+
+**What did not come across.** Sixteen of the handbook's entries
+here are symlinks into its kit, not files: each convention's
+`SKILL.md`, the record stubs, the base hygiene templates. We hold
+those artifacts at `delivery/container/`, so reproducing the links
+would duplicate what we already have, and a manual's pointer to
+"its artifact" resolves into `delivery/container/` instead. One
+such pointer names `delivery/container/CLAUDE.md`, which our
+container does not have — it ships the entry file at
+`.claude/CLAUDE.md`. That is delta row 1 in `delivery/README.md`,
+not a defect.
+
+**What was corrected, 2026-09-19, and why it could not wait.** 66
+bare `ADR-nnnn` citations across these eight files were prefixed
+`HANDBOOK`. The rule above says a bare number names the reading
+repo's own decision, so every one of them read as ours — and 22 of
+the numbers exist here, pointing at something unrelated. A manual
+citing `ADR-0005` meant Conventional Commits and read as *practice-born
+executions pin as checked-against*. Nothing errors; a reader lands
+somewhere plausible and wrong. The shipped rules had been prefixed
+and these had not, which is what makes it an oversight rather than
+a choice. Nine paths were repointed at our tree in the same pass.
+
+**Which pointers get rewritten, and which do not**, since the
+question will recur: whether the pointer leaves this directory.
+Four that reached out into the repo are now written from the repo
+root — two had never resolved, and two resolved *by accident*,
+`../../models/` landing on `docs/models/` because that is where we
+happen to keep them, which is the worse case because it breaks
+silently the day something moves. The ten manual-to-manual links
+stay relative: they resolve, and rewriting them would be a change
+of voice rather than a correction. The rule behind both is that a
+relative path means a different thing the moment a file is read
+from a different root, which is every copy and every shipped file.
+
+**No compare runs on a schedule.** Nothing upstream is owed a
+reading (CBC ADR-0025). If a re-sync is ever attempted, the
+coordinates above are where it starts, and
+`git diff 8adb46f..<theirs> -- conventions` is the whole of what it
+would have to read.
