@@ -1,7 +1,7 @@
 ---
 name: convention-lifecycle
 description: How a project holds its conventions — what requires means, the registry, and updating a copy. Use when a convention is injected or updated, or when a copy under .claude/skills/ turns out wrong mid-step.
-requires: change-plans, agent-arrangement
+requires: commit-plan, agent-arrangement
 ---
 
 # Convention Lifecycle

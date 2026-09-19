@@ -29,8 +29,8 @@ A closed list of paths (HANDBOOK ADR-0019):
 
 **Detachable, and kept so.** A commit that touches these paths
 touches nothing else, scoped `agent` — the rule is commit-messages',
-stated there. `CHANGE-PLAN.md` rides the same scope while it exists
-but is change-plans' artifact, not this convention's.
+stated there. `COMMIT-PLAN.md` rides the same scope while it exists
+but is commit-plan's artifact, not this convention's.
 
 **Not records.** The arrangement holds no project truth: nothing here
 says what the project is deciding, planning or shipping. It says how

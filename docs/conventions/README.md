@@ -29,7 +29,7 @@ has to be the origin (HANDBOOK ADR-0040).
 | commit-messages | [commit-messages/](commit-messages/) | a skill |
 | repo-hygiene | [repo-hygiene/](repo-hygiene/) | the hygiene base; stack overlays stay here |
 | artifact-kinds | [artifact-kinds/](artifact-kinds/) | a skill |
-| change-plans | [change-plans/](change-plans/) | a skill |
+| commit-plan | [commit-plan/](commit-plan/) | a skill |
 | convention-lifecycle | [convention-lifecycle/](convention-lifecycle/) | a skill: the kit's protocol, receiver side |
 | agent-arrangement | [agent-arrangement/](agent-arrangement/) | the entry-file and decisions-log stubs |
 

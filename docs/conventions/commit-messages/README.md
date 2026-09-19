@@ -67,6 +67,6 @@ This note is local and does not ship.
 
 - The rules: [`SKILL.md`](SKILL.md).
 - The commit boundary inside a change set:
-  [`../change-plans/`](../change-plans/).
+  [`../commit-plan/`](../commit-plan/).
 - What the `agent` scope covers:
   [`../agent-arrangement/`](../agent-arrangement/).

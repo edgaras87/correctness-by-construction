@@ -38,7 +38,7 @@
      the review protocol — the plan staged and approved before
      it commits, then step by step, each step staged, shown, and
      committed only on the reviewer's word. Run 1 ran straight
-     through: change-plans §6 assumes a reviewer nothing had
+     through: commit-plan §6 assumes a reviewer nothing had
      established, and a file-level "stop" loses to the harness's
      finish-the-task pressure — not silently: the agent saw §6,
      recorded the deviation in its plan, and justified it by an
@@ -263,7 +263,7 @@ every file and every seed commit. Then plan the work as the
 conventions you were given direct — your own commit sequence,
 your own order of artifacts, split by the commit scopes the
 skills define, each choice one you can justify in the plan.
-I am the reviewer the change-plans convention names, and the
+I am the reviewer the commit-plan convention names, and the
 work moves at my pace: stage the plan and ask for my approval
 before committing it; then one step at a time — stage a step,
 show me what changed, and commit only on my word, staging the

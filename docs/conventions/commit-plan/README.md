@@ -1,12 +1,13 @@
-# Change plans
+# Commit plan
 
-How work larger than one commit is planned before it starts,
+How work larger than one commit is sequenced into commits before it
+starts,
 reviewed at every commit boundary, and closed with a note of what
 diverged. The unit is the change set: the scope between one commit
 and a whole project.
 
 **What ships:** [`SKILL.md`](SKILL.md), which a project holds at
-`.claude/skills/change-plans/` and an agent opens when work turns
+`.claude/skills/commit-plan/` and an agent opens when work turns
 out to need several commits. This page explains it; the skill
 states it.
 
@@ -17,7 +18,7 @@ directly instead of mailed: one logical change per commit, ordered
 so each applies on the last, reviewed commit by commit rather than
 as a lump. What is added is the plan agreed before the series is
 written, and its disposal afterwards. The plan is one file at the
-repo root, `CHANGE-PLAN.md`, committed after it is agreed and
+repo root, `COMMIT-PLAN.md`, committed after it is agreed and
 deleted at the close; everything durable in it survives as the
 commit messages it produced, and the close commit's body is the
 cheapest retrospective that exists.

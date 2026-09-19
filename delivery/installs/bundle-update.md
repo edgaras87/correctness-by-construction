@@ -161,7 +161,7 @@ done
 cp "$bundle_dir"/concept/*.md "$staged"/concept/
 
 # the container half — the four convention skills, and only those
-for c in commit-messages change-plans artifact-kinds convention-lifecycle; do
+for c in commit-messages commit-plan artifact-kinds convention-lifecycle; do
   cp -r "$bundle_dir"/delivery/container/.claude/skills/"$c" "$staged"/conventions/
 done
 
@@ -294,7 +294,7 @@ done
 diff -r "$bundle_dir"/concept "$run_dir"/docs/concept || echo "DIFFERS: concept"
 
 # only where the container half was delivered
-for c in commit-messages change-plans artifact-kinds convention-lifecycle; do
+for c in commit-messages commit-plan artifact-kinds convention-lifecycle; do
   diff -r "$bundle_dir"/delivery/container/.claude/skills/"$c" \
     "$run_dir"/.claude/skills/"$c" || echo "DIFFERS: $c"
 done

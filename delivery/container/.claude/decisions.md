@@ -31,7 +31,7 @@
   @ <bundle-commit>, whose kit half is the engineering-handbook
   starter kit @ <handbook-commit>, held there at a pin.
   Conventions: project-recording, commit-messages, repo-hygiene,
-  artifact-kinds, change-plans, convention-lifecycle,
+  artifact-kinds, commit-plan, convention-lifecycle,
   agent-arrangement.
   Why: handbook defaults, delivered through the bundle.
   Rejected: none — see the handbook's ADRs, and the bundle's for
