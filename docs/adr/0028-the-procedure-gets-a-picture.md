@@ -1,4 +1,4 @@
-# 0028. The procedure gets a picture; the method becomes a playbook
+# 0028. The procedure gets a picture; the method becomes a skill
 
 Date: 2026-09-18
 Status: Accepted
