@@ -529,3 +529,54 @@
   rules are kept. Also rejected: an entry per change set, which
   would make this log a set index; it is here because a rule was
   broken, not because a set closed.
+
+- 2026-09-19 Three skills of this repo's own, where there was one.
+  `format-comparison` split into `visual-comparison` (how a
+  structure is shown — a picture, a table, a plain list) and
+  `option-comparison` (any choice whose options can be built), and
+  `decide-first` was added above both. ADR-0030 holds the reasoning;
+  this entry is the arrangement change.
+  Why the split rather than a widening: the spine is shared —
+  requirements before candidates, every candidate built, judged per
+  requirement, recorded in an ADR — but the middle is not. "Render
+  them where they will be read" is literal for a picture and a
+  figure of speech for a plan, and that act is where the discipline
+  lives. A shared spine with different middles is two skills.
+  Why `decide-first` at all: a change-plan is a commit plan, and
+  nothing in this repo worked out *what* was being changed before
+  one was opened. ADR-0029's set is the evidence — planned for six
+  commits, landed at twelve, its two most confident steps undone,
+  because the question "is a group a directory or a description"
+  was never asked out loud.
+  The registry is not touched. It lists conventions held at a pin
+  (ADR-0028 decision 4), and these three are ours, pinned to
+  nothing. Four directories under `.claude/skills/` are convention
+  copies and three are native; the distinction is still carried by
+  absence — no pin header, no manual, no registry row — which
+  ADR-0028 already named as a weak signal and is now weaker at
+  three.
+  Rejected: registering them anyway, which would make the registry
+  two lists under one heading. Also rejected: a draft template for
+  `decide-first`, cut because it had never been run (ADR-0030
+  decision 3 carries its trigger).
+
+- 2026-09-19 Correction to the entry of 2026-09-18 on relative
+  paths: its Rejected clause is no longer true. That entry rejected
+  fixing the vendored manuals' links, on the grounds that they are
+  read-only and correct where they were written, and said the
+  dangle was recorded in `docs/conventions.md` instead. Both halves
+  have since gone. The manuals were fixed the next day — four
+  outward pointers written from the repo root, nine paths
+  repointed, and 66 bare `ADR-nnnn` citations prefixed `HANDBOOK`
+  because they were reading as this repo's own decisions — and
+  `docs/conventions.md` was deleted, its surviving content folded
+  into `docs/conventions/README.md`.
+  The rule itself stands and is unchanged: a path in a document of
+  this repo is written from the repo root.
+  What changed under it was the premise, not the rule. "Read-only"
+  came from ADR-0024 decision 5 and was retired by ADR-0025 the
+  same week, which made the manuals ours; the entry was written
+  against a status that had already lapsed. Worth the correction
+  rather than a silent overwrite, because the log is read top to
+  bottom at the retrospective and an entry that rejects what was
+  later done reads as a reversal nobody noticed.
