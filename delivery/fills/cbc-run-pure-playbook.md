@@ -18,7 +18,7 @@
      (ADR-0007); kit-owned steps (0, 1, N) change only by refresh
      against a new kit pin.
      Born 2026-09-05 as the pure-seed candidate variant
-     (starter/installs/pure-seed.md). v1 deltas against the
+     (delivery/installs/pure-seed.md). v1 deltas against the
      parent: the assembly (CbC) Step 0 comment and the (CbC)
      gate item's install-manual clause dropped — no place in the
      pure design; and the channel split — the kit's

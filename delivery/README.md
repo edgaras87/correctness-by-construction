@@ -6,9 +6,9 @@
      explicit. Carries no "derives from" pin of its own — this is
      delivery instructions, not a derived execution.
      2026-09-01: split under the starter layout (ADR-0010) — the
-     Birth section moved to starter/installs/cbc.md; this file describes. -->
+     Birth section moved to delivery/installs/cbc.md; this file describes. -->
 
-# CbC starter — what a run repo copies at birth
+# CbC delivery — what a run repo copies at birth
 
 The executions derived from the concept, each pinned to the concept
 version its own header names (ADR-0003). This repo's copies are
@@ -17,9 +17,10 @@ copying anew from here, and a run's surprises come back as harvest,
 never as edits (docs/models/tiers.md).
 
 Three kinds of delivery, three directories (ADR-0017, widened by
-ADR-0024). **The kit** is the container: `starter/kit/` copied
-whole into the new repo, the handbook's kit as we hold it at a
-pin, with the delta the section below lists. Inside it the parts
+ADR-0024). **The container** is what a run is born into:
+`delivery/container/` copied whole into the new repo — the
+handbook's kit as we hold it at a pin, with the delta the section
+below lists. Inside it the parts
 divide again, and the division is what an update obeys — the four
 convention skills are pinned copies; the record stubs, the two
 entry files and the hygiene files are the run's own from birth and
@@ -31,21 +32,21 @@ claim; the run never edits them, only re-copies at a new pin:
 | From here | Into the run repo |
 |---|---|
 | `concept/` | `docs/concept/` — read `00-cbc.md` first |
-| `starter/bundle/cbc-framing/` | `.claude/skills/cbc-framing/` |
-| `starter/bundle/cbc-slice/` | `.claude/skills/cbc-slice/` |
-| `starter/bundle/infra-establish/` | `.claude/skills/infra-establish/` |
-| `starter/bundle/infra-serve/` | `.claude/skills/infra-serve/` |
-| `starter/bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
+| `delivery/bundle/cbc-framing/` | `.claude/skills/cbc-framing/` |
+| `delivery/bundle/cbc-slice/` | `.claude/skills/cbc-slice/` |
+| `delivery/bundle/infra-establish/` | `.claude/skills/infra-establish/` |
+| `delivery/bundle/infra-serve/` | `.claude/skills/infra-serve/` |
+| `delivery/bundle/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
 
-**Fills** are text the seed writes into a file the kit already
-put there; from that moment the text is the run's own — edited in
+**Fills** are text the seed writes into a file the container
+already put there; from that moment the text is the run's own — edited in
 place, never re-copied, no pin beyond the seed commit's subject.
 One remains, the playbook: the two entry-file fills retired at
-ADR-0024, their bodies now shipped inside the kit itself.
+ADR-0024, their bodies now shipped inside the container itself.
 
 | From here | Into the run repo |
 |---|---|
-| `starter/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (`starter/installs/pure-seed.md` step 4; the newborn holds no playbook copy, HANDBOOK ADR-0031's model) |
+| `delivery/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (`delivery/installs/pure-seed.md` step 4; the newborn holds no playbook copy, HANDBOOK ADR-0031's model) |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before
@@ -59,26 +60,31 @@ its three kit facts riding as Known already; only re-entry
 (infra-serve) arrives unplanned, and its trigger covers that.
 
 The birth procedure itself is the install manual,
-`starter/installs/pure-seed.md` (ADR-0016) — the material-only
+`delivery/installs/pure-seed.md` (ADR-0016) — the material-only
 seed: every delivery a commit on the receipt branch `birth-seed`,
 the pin in the subjects, main left at the hygiene commit with the
 same files untracked (ADR-0018), the newborn's agent finishing the
 birth by committing them under its own sequence. Its peer for
-everything after birth is `starter/installs/bundle-update.md`
+everything after birth is `delivery/installs/bundle-update.md`
 (ADR-0022) — the note and the copy, staged in the run's own
 `temp/`, taken whole, the pin recorded by the run. One birth from
 one place: ADR-0009's two-copy composition is retired by ADR-0024,
 the container now being ours to ship rather than the handbook's to
 supply.
 
-## The kit half — ours, and where it came from
+## The container half — ours, and where it came from
 
-`starter/kit/` is this repo's container: the records, the
+`delivery/container/` is this repo's container: the records, the
 conventions, the hygiene files and the entry files a run is born
 into. It is ours to change when this repo needs it changed
-(ADR-0025). It began as a copy of the handbook's starter kit and
-keeps their path names, which costs nothing and keeps a comparison
-possible.
+(ADR-0025). It began as a copy of the handbook's starter kit.
+
+**The directory no longer keeps their name**, as of ADR-0029: they
+call it `starter/kit/`, we call it `delivery/container/`, because
+"kit" named where the files came from rather than what they are.
+The names *inside* it are unchanged, which is where a comparison
+actually happens — a re-sync diffs sixteen files, not two
+directory names.
 
 **Provenance, recorded once.** The bytes came from the handbook at
 `ba7eaa4`. Every path we took is identical through their `8adb46f`

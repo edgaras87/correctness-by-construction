@@ -110,7 +110,7 @@ run's own.
 
 **The container half updates by a different rule, and most of it
 never updates at all.** Since ADR-0024 the run's container comes
-from `starter/kit/` here, and its parts divide:
+from `delivery/container/` here, and its parts divide:
 
 - **The four convention skills** are pinned copies and travel at a
   kit re-pin, the same way the five method skills do. They are the
@@ -151,13 +151,13 @@ mkdir -p "$staged"/concept "$staged"/conventions
 
 # the method half — the five skills and the concept chapters
 for s in cbc-framing cbc-bootstrap cbc-slice infra-establish infra-serve; do
-  cp -r "$bundle_dir"/starter/bundle/"$s" "$staged"/
+  cp -r "$bundle_dir"/delivery/bundle/"$s" "$staged"/
 done
 cp "$bundle_dir"/concept/*.md "$staged"/concept/
 
 # the container half — the four convention skills, and only those
 for c in commit-messages change-plans artifact-kinds convention-lifecycle; do
-  cp -r "$bundle_dir"/starter/kit/.claude/skills/"$c" "$staged"/conventions/
+  cp -r "$bundle_dir"/delivery/container/.claude/skills/"$c" "$staged"/conventions/
 done
 
 cp "$bundle_dir"/temp/<the-note>.md "$run_dir/temp/"
@@ -280,15 +280,15 @@ fact.** Four lines, and each side reached by its own route:
 ```bash
 n=0
 for s in cbc-framing cbc-bootstrap cbc-slice infra-establish infra-serve; do
-  diff -r "$bundle_dir"/starter/bundle/"$s" "$run_dir"/.claude/skills/"$s" \
+  diff -r "$bundle_dir"/delivery/bundle/"$s" "$run_dir"/.claude/skills/"$s" \
     || echo "DIFFERS: $s"
-  n=$((n + $(find "$bundle_dir"/starter/bundle/"$s" -type f | wc -l)))
+  n=$((n + $(find "$bundle_dir"/delivery/bundle/"$s" -type f | wc -l)))
 done
 diff -r "$bundle_dir"/concept "$run_dir"/docs/concept || echo "DIFFERS: concept"
 
 # only where the container half was delivered
 for c in commit-messages change-plans artifact-kinds convention-lifecycle; do
-  diff -r "$bundle_dir"/starter/kit/.claude/skills/"$c" \
+  diff -r "$bundle_dir"/delivery/container/.claude/skills/"$c" \
     "$run_dir"/.claude/skills/"$c" || echo "DIFFERS: $c"
 done
 

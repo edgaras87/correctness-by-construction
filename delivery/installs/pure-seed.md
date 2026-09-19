@@ -57,7 +57,7 @@
      so.
      Ninth revision, 2026-09-18 (ADR-0024): the kit comes from
      this repo, not from the handbook's manual by pointer. Step 2
-     is ours and copies starter/kit/; the hygiene commit is its
+     is ours and copies delivery/container/; the hygiene commit is its
      own step; and the semi-pure step goes — the entry files
      arrive in the kit, so there is no stub to write over and no
      switch to throw. The pure/semi-pure distinction dies with
@@ -82,7 +82,7 @@ branch is the manifest — what arrived, from where, at which pin —
 while main stays at the hygiene commit with the same files in its
 worktree, untracked: the newborn's agent finishes the birth itself
 by reading what is there and committing it under its own sequence
-and split (ADR-0018). The container comes from `starter/kit/`,
+and split (ADR-0018). The container comes from `delivery/container/`,
 this repo's copy of the handbook's kit at a pin (ADR-0024), and
 the seed fills only what is mechanical: the birth entry's two pins
 and date, two other birth dates, the working name in the two entry
@@ -110,11 +110,11 @@ bundle_dir=~/PycharmProjects/engineering/concept-garden/correctness-by-construct
 
 bundle_pin=$(git -C "$bundle_dir" rev-parse --short HEAD)
 kit_pin=$(sed -n 's/^Kit pin: `\([0-9a-f]\{7,\}\)`.*/\1/p' \
-    "$bundle_dir"/starter/README.md)
+    "$bundle_dir"/delivery/README.md)
 ```
 
 No `handbook_dir`. The kit is held here at a pin, and that pin's
-one home is the Kit pin line in `starter/README.md` — read from
+one home is the Kit pin line in `delivery/README.md` — read from
 there so a re-pin moves one line and this manual follows. A run is
 born without any handbook checkout existing.
 
@@ -123,15 +123,15 @@ problem-agnostic, and the briefing brings the real name.
 
 **2. Audit, then copy the kit.** The kit here is a copy at a pin,
 so it cannot drift from itself; what drifts is the text about it.
-Before copying, check `starter/README.md`'s kit-half section
-against `starter/kit/`'s contents — the file count, the delta
+Before copying, check `delivery/README.md`'s container-half section
+against `delivery/container/`'s contents — the file count, the delta
 list, the re-verify duty. A divergence found here is this repo's
 bug, and fixing it before the copy is cheaper than a run carrying
 it.
 
 ```bash
 mkdir -p "$new_project_dir"
-cp -r "$bundle_dir"/starter/kit/. "$new_project_dir"/
+cp -r "$bundle_dir"/delivery/container/. "$new_project_dir"/
 sed -i -e "s/<bundle-commit>/$bundle_pin/" \
     -e "s/<handbook-commit>/$kit_pin/" \
     -e "s/<YYYY-MM-DD> Born/$(date +%F) Born/" \
@@ -145,7 +145,7 @@ sed -i "s/<working-name>/$name/g" \
     "$new_project_dir"/.claude/CLAUDE.md "$new_project_dir"/README.md
 ```
 
-The trailing `/.` matters: `starter/kit/*` silently skips the
+The trailing `/.` matters: `delivery/container/*` silently skips the
 dotfiles — `.gitignore`, `.gitattributes`, `.editorconfig` — and
 the whole `.claude/` directory.
 
@@ -190,13 +190,13 @@ git commit -m "chore: seed — concept/ from the bundle, pin @ $bundle_pin"
 
 mkdir -p .claude/skills
 for s in cbc-framing cbc-slice infra-establish infra-serve cbc-bootstrap; do
-  cp -r "$bundle_dir"/starter/bundle/"$s" .claude/skills/
+  cp -r "$bundle_dir"/delivery/bundle/"$s" .claude/skills/
 done
 git add .claude/skills
 git commit -m "chore: seed — the five CbC skills, pin @ $bundle_pin"
 
 sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
-    "$bundle_dir"/starter/fills/cbc-run-pure-playbook.md; echo) \
+    "$bundle_dir"/delivery/fills/cbc-run-pure-playbook.md; echo) \
     -e '/<!-- STEPS-BEGIN/,/<!-- STEPS-END/{/STEPS-BEGIN/b;/STEPS-END/b;d}' \
     PLAN.md
 sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run-pure v6 at $bundle_pin|" \
