@@ -134,19 +134,45 @@ Recorded so the next comparison inherits the corrected form.
    going; changes the decision, back to contemplation; neither, to
    TODO. The groups set produced all three.
 
-6. **`format-comparison` becomes `option-comparison`, and widens.**
-   The method's real constraint was never *form* — it is whether
-   the options can be built cheaply enough to look at. The evidence
-   is in this repo: the `stack/` quarantine was built, looked at,
-   and found wrong, and that was a structure question the skill's
-   own §1 would have excluded. §1 widens to *more than one option
-   could work, and each can be built cheaply enough to look at*,
-   and the render stays the gate that keeps unbuildable options
-   out — "should we ship this to runs" has no candidates to build.
+6. **`format-comparison` splits into `visual-comparison` and
+   `option-comparison`.** This decision was drafted as a rename and
+   a widening, and the attempt is what corrected it: widening the
+   one file left it saying *render them where they will be read*,
+   which is literal for a picture and a metaphor for a plan. The
+   spine is shared — requirements first, every candidate built,
+   judged per requirement, recorded here — but **how a candidate is
+   made real, and where it is looked at, differs by kind**, and
+   that act is where the discipline lives. A shared spine with
+   different middles is two skills, not one widened one, and not a
+   twin: neither file is a copy of the other.
+
+   - **`visual-comparison`** keeps every word of the old file. Its
+     subject is how a structure is shown — a picture, a table, a
+     plain list — because that was always its subject: ADR-0028's
+     candidate set was a step index, a table and two Mermaid
+     dialects, and only two of the four were pictures. What is
+     specific to it is the failure mode only a picture has, a
+     notation asserting something you did not mean.
+   - **`option-comparison`** is written fresh, with general verbs
+     and its own findings list.
+
+   Two rules arrive with the split, both the user's, both general
+   enough to sit in each file. **A findings list is things to
+   check, not rules to obey**, and each entry names the case it
+   came from — the danger being that a lesson from one task becomes
+   a boundary that blocks the next from a correct answer. And **a
+   visual comparison's candidate set must hold at least one
+   non-picture**, or a picture wins by construction and *no
+   picture* cannot be returned; ADR-0028's table is the evidence,
+   being the best answer to one requirement and losing on another.
 
    Rejected: `decision-comparison`, which collides with
    `decide-first` and reads as its sibling when it is one of its
-   treatments.
+   treatments. `diagram-comparison`, which names the winning
+   candidate rather than the question and would have excluded the
+   table and the list from the set. And a twin of the method in
+   both files on ADR-0022's model, which the middles being
+   different makes wrong.
 
 7. **`change-plans` becomes `commit-plan`.** The name reads as
    *plan the change*, which is what it must not mean, and that
