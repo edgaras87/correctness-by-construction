@@ -24,8 +24,8 @@ dominant force. A convention's reference document is such a hybrid,
 reference doc in shape and convention in force.
 
 This convention is a metamodel, a convention about what conventions
-and their sibling kinds are. A context may specialise a kind: in
-the handbook, a convention is a manual and its artifacts under
+and their sibling kinds are. A context may specialise a kind: here,
+a convention is a manual and its artifacts under
 `conventions/<name>/`.
 
 ## Why it is shaped this way
@@ -41,16 +41,18 @@ the handbook, a convention is a manual and its artifacts under
   not.
 - **Exemplars by role, not by path.** Each exemplar names its
   document by the role it holds for the reader, so the same words
-  point at the right file from the handbook's seat and from a born
+  point at the right file from a deliverer's seat and from a born
   project's, where some roles are empty. They are illustration, not
   dependency (HANDBOOK ADR-0017, HANDBOOK ADR-0037).
 
 ## An open question
 
 No run in five reached for these words. Whether the convention
-earns its place in the kit, and whether the axes need a third
-reader-mode value and a lifetime axis, are Step 10 gate items in
-the handbook's plan. Until then the skill ships as it is.
+earns its place in the container, and whether the axes need a third
+reader-mode value and a lifetime axis, are gate items in *the
+handbook's own plan* — their Step 10, not this repo's, which is a
+delivery run. Inherited open question, not ours to close. Until it
+is, the skill ships as it is.
 
 ## Where to look
 

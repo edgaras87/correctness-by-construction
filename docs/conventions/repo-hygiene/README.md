@@ -35,7 +35,9 @@ the templates split:
 - **`templates/<stack>/`** — overlay snippets (`*.part` files)
   appended at the step that makes the stack true, the walking
   skeleton in a backend playbook, below the marked line in each
-  base file. The overlays live in the handbook, not in the project.
+  base file. The overlays live with the deliverer, not in the
+  project — here that is
+  `docs/conventions/repo-hygiene/templates/java-spring/`.
   Currently: `java-spring` (Maven build output, wrapper line-ending
   exceptions, SQL/conf indents).
 
@@ -55,8 +57,8 @@ cat "$t"/editorconfig.part   >> .editorconfig
   is a gate item of the step that introduces the stack ("hygiene
   overlay applied").
 - Overlay content goes below the marker; base content is never
-  edited per project. A needed base change is a change to the kit's
-  file, with an ADR and a changelog entry in the handbook, and
+  edited per project. A needed base change is a change to the
+  container's file, with an ADR and a changelog entry here, and
   reaches it from a project as a friction item, never as a local
   patch: that is how fixes propagate to the next project instead of
   dying in one repo.

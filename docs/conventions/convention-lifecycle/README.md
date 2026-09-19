@@ -11,11 +11,11 @@ This page explains it; the skill states it.
 
 ## The two sides
 
-**The deliverer** keeps one origin for everything it ships. In the
-handbook that is `delivery/container/`: the record stubs, the entry file,
-the hygiene base, and one skill file per convention. Nothing else
-leaves the handbook. The kit is copied whole, as real files, at
-the moment of birth.
+**The deliverer** keeps one origin for everything it ships. Here
+that is `delivery/container/`: the record stubs, the entry file, the
+hygiene base, and one skill file per convention. Nothing else
+leaves. The container is copied whole, as real files, at the moment
+of birth.
 
 **The receiver** is a project, and its agent. It holds copies,
 never links, because a link into a repo it does not have points at
@@ -89,9 +89,9 @@ edit has yet gone through a re-pin.
 ## Where to look
 
 - The receiver's procedure: [`SKILL.md`](SKILL.md).
-- How the handbook builds and ships a convention:
+- How a convention is built and shipped here:
   [`../README.md`](../README.md).
-- The kit itself and what each file comes from:
+- The container itself and what each file comes from:
   `delivery/README.md`.
 - The tiers model, for how deliverers and receivers relate across
   the workspace: `docs/models/tiers.md`.

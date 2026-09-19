@@ -38,20 +38,30 @@ change too small to deserve a real one.
   withdrawn, after the one project that could have used it declined
   it and held forty-four commits on the sentence alone (HANDBOOK ADR-0035).
 
-## In the handbook itself
+## In this repo itself
 
-A repo whose product is documents would file every commit under
-`docs`, and the type would carry nothing. So here:
+This repo's product is documents too, and the handbook's answer to
+that was to make the type carry the signal — `feat(<convention>)`
+for the product, `docs(handbook)` for the records — so that `docs`
+did not swallow everything. **We did not adopt it**, and the
+practice that grew instead is worth stating rather than leaving to
+be inferred from 480 commits:
 
-- `feat(<convention>)` or `fix(<convention>)` for the product, the
-  scope being the unit that ships — a convention's name, `starter`
-  for the kit, `agent-model` or `tiers-model` for a model.
-- `docs(handbook)` for the records catching up: PLAN, ADRs, devlog,
-  TODO, changelog.
-- `chore` for hygiene and tooling; `chore(agent)`, `feat(agent)`,
-  `docs(agent)` for this repo's own arrangement, as anywhere.
+- `docs(<area>)` for almost everything, the scope naming the area
+  touched: `adr`, `delivery`, `conventions`, `temp`, `devlog`,
+  `agent`. Bare `docs` where a commit spans the records generally.
+- `chore(agent)` for pinned copies updated to a new upstream state.
+- `feat`/`fix` only where the delivery gained or lost something a
+  run would notice — rare, and all on the delivery so far.
 
-This note is the handbook's and does not ship.
+So the type is nearly always `docs` and the **scope** carries the
+signal here, which is the mirror of their answer, not a weaker
+version of it. Either works; what does not work is following
+neither and discovering the shape afterwards, which is what
+happened — this section was theirs, describing a practice we do not
+have, while ours was written nowhere until 2026-09-19.
+
+This note is local and does not ship.
 
 ## Where to look
 

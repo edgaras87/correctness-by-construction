@@ -793,6 +793,36 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Does change-plans need a rule about provisional steps, or did
+      one author under-use the one it has? Raised 2026-09-19 at the
+      groups set's close. That set was planned for six commits,
+      revised to thirteen at step 6, and landed at twelve with three
+      divergences — and **the two steps written with the most
+      confidence, 4 and 5, are the ones that were undone.** Steps 10
+      and 11 folded into 9 because they had been split by artifact
+      (the manuals, then ARCHITECTURE) and separately would have
+      left commits describing a tree that did not exist.
+      The convention already answers this: §2 says the list may
+      roll and steps past the decision horizon are marked
+      provisional. One step of thirteen was. So on one instance the
+      fault is the author's, not the convention's, and writing a
+      rule from it would be building ahead.
+      **The watch, and why it is here rather than in the devlog:** a
+      second set diverging by more than half is the evidence that
+      the convention lacks something — most likely a line saying
+      the commit list past the first untaken decision is a
+      hypothesis, not an agreement. One instance cannot say that;
+      two can.
+      Worth carrying either way: scope-names-the-area, which
+      `commit-messages` now records as this repo's practice, quietly
+      invites splitting steps by directory — which is change-plans'
+      own named anti-pattern, "steps grouped by file type, tidy-looking,
+      reverts incoherently". The connection between the two
+      conventions is not written in either.
+      Trigger: the close of the next change set that diverges by
+      more than half its planned steps, or a retrospective,
+      whichever comes first.
+
 - [ ] Nine sentences in four manuals still put the handbook in our
       seat. Raised 2026-09-19; **two of the three layers are now
       done.** The citations and paths were fixed that day (66 bare
