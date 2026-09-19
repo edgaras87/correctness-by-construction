@@ -21,7 +21,7 @@ next update, like any project's (HANDBOOK ADR-0041). The container
 is copied whole into a new project, as real files, which is why it
 has to be the origin (HANDBOOK ADR-0040).
 
-## The seven
+## The ten
 
 | Convention | Manual | Artifacts |
 |---|---|---|
@@ -32,6 +32,9 @@ has to be the origin (HANDBOOK ADR-0040).
 | commit-plan | [commit-plan/](commit-plan/) | a skill |
 | convention-lifecycle | [convention-lifecycle/](convention-lifecycle/) | a skill: the kit's protocol, receiver side |
 | agent-arrangement | [agent-arrangement/](agent-arrangement/) | the entry-file and decisions-log stubs |
+| decide-first | [decide-first/](decide-first/) | a skill |
+| option-comparison | [option-comparison/](option-comparison/) | a skill |
+| visual-comparison | [visual-comparison/](visual-comparison/) | a skill: option-comparison specialised to things you look at |
 
 ## A skill file
 

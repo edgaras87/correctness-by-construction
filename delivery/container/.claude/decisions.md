@@ -32,7 +32,10 @@
   starter kit @ <handbook-commit>, held there at a pin.
   Conventions: project-recording, commit-messages, repo-hygiene,
   artifact-kinds, commit-plan, convention-lifecycle,
-  agent-arrangement.
-  Why: handbook defaults, delivered through the bundle.
+  agent-arrangement, decide-first, option-comparison,
+  visual-comparison.
+  Why: handbook defaults, delivered through the bundle. The last
+  three are the bundle's own, not the handbook's — their decisions
+  are cited CBC ADR-nnnn and are the bundle's to explain.
   Rejected: none — see the handbook's ADRs, and the bundle's for
   anything the bundle changed.
