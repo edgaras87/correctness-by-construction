@@ -9,8 +9,9 @@ are load-bearing throughout; on Boot 3 the names differ.
 This doc carries **required outcomes** (what must be true, the how is
 yours) and **lived traps** (exact facts about this stack and environment).
 It carries no code to copy. Its config files, though, are
-copy-and-fill masters in `templates/` beside this skill's
-`references/` (CBC ADR-0008); they implement the stack line above, and
+copy-and-fill masters in `stack/templates/`, beside this file in
+`stack/references/` (CBC ADR-0008, CBC ADR-0029); they implement the
+stack line above, and
 if the run's decided stack differs you are **off-template**: derive
 from the outcomes here, record the deviation in the run's log, and
 expect it to harvest. **The project's requirements document wins over
@@ -58,7 +59,7 @@ announces **Java 21** (align IDE and terminal JDK if not); health UP.
 
 ## 3. Wire the runtime datasource
 
-Config skeleton copy-and-fill: `templates/application.yaml` — the
+Config skeleton copy-and-fill: `stack/templates/application.yaml` — the
 absences below ride in it as comments; the run's business config
 grows under its own key, never in the template.
 
@@ -102,7 +103,7 @@ enable the user socket unit, point the library at it.
 **Traps, exact:**
 1. `~/.testcontainers.properties` binds **only from `$HOME`** — never the
    project root (lived as a long "no valid Docker environment" hunt).
-   Copy-and-fill: `templates/testcontainers.properties`.
+   Copy-and-fill: `stack/templates/testcontainers.properties`.
 2. Ryuk, the library's reaper, runs fine under rootless podman on the
    Testcontainers 2.x line (lived: podman 5.8, Testcontainers 2.0.5,
    both throwaways reaped within seconds of the JVM's exit) — keep it

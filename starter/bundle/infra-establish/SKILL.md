@@ -16,9 +16,9 @@ ground runs, constrained to need, both manuals stand.**
 
 The full walk is `references/establishment-walk.md` — read it before
 Stage 1. When PostgreSQL is the decided datastore, two more references
-apply at their steps: `references/postgres-role-split.md` (the authority
+apply at their steps: `stack/references/postgres-role-split.md` (the authority
 model — the constraint's realization) and
-`references/postgres-setup-walkthrough.md` (the lived end-to-end
+`stack/references/postgres-setup-walkthrough.md` (the lived end-to-end
 sequence, confirmed by two projects).
 
 ## Stage 0 — readiness gate (before anything else)

@@ -75,13 +75,13 @@ registry invariants: they are no properties of persisted state under
 adversity. **Each constraint names its enforcement mechanism.**
 
 Where governing knowledge for a decided service already stands (for
-PostgreSQL: `postgres-role-split.md` in this skill's references), its
-constraint set is the **rebuttable default**: check it against this
-project's facts; deviate only when a project fact defeats it, naming
-the defeater. The project's log entry stays — its own constraints are
-its own truth — but references the standing knowledge as the
-realization, never re-deriving it. A service without standing
-knowledge gets its constraints derived fresh.
+PostgreSQL: `postgres-role-split.md` in this skill's
+`stack/references/`), its constraint set is the **rebuttable
+default**: check it against this project's facts; deviate only when a
+project fact defeats it, naming the defeater. The project's log entry
+stays — its own constraints are its own truth — but references the
+standing knowledge as the realization, never re-deriving it. A service
+without standing knowledge gets its constraints derived fresh.
 
 ## 4 · Apply — or record — the governing knowledge
 
@@ -89,8 +89,8 @@ Where a constraint's realization is reusable across projects, it is
 knowledge, not project truth: keep it generic, keep the project's
 concrete wiring in its manuals. When this walk derives a fresh
 reusable realization (a new service family), write it up as a new
-reference beside `postgres-role-split.md` so no later project
-re-derives it.
+reference beside `postgres-role-split.md` in `stack/references/` so no
+later project re-derives it.
 
 ## 5 · Stand the services up, and verify both ways
 
@@ -111,8 +111,8 @@ Then **two complementary verifications, always both**:
 The operator manual grows its service sections from this lived work.
 
 For PostgreSQL, the whole of steps 3–6 has a lived end-to-end
-sequence: `postgres-setup-walkthrough.md`. Consult it when PostgreSQL
-recurs; never force its shape on a different service.
+sequence: `stack/references/postgres-setup-walkthrough.md`. Consult it
+when PostgreSQL recurs; never force its shape on a different service.
 
 ## 6 · Write the infrastructure contract
 
