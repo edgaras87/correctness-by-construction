@@ -290,22 +290,37 @@ session: `format-comparison` is container group and is held back
 for maturity rather than membership — ADR-0028's trigger has not
 fired. Closed by 657d6eb and this commit.
 
-## Step 10: One delivery, run for real               [ ]
+## Step 10: One delivery, run for real               [~]
 
 Goal: the composed delivery used to birth and carry a project, so
 the design has two shapes behind it rather than one.
 Gate:
 - [ ] A project born from this repo alone, holding one pin.
-- [ ] One update delivered to it under `bundle-update.md`, the note
-      and the copy both, so the manual has run end to end.
+- [x] One update delivered to it under `bundle-update.md`, the note
+      and the copy both, so the manual has run end to end. 2026-09-20
+      to never-oversold @ `6f2be1d`: all seven steps ran, including
+      step 7, which the previous delivery ended before. The manual
+      gained three things from the running of it — a section on what
+      a verdict is, because §5 of the note reported facts the run
+      could not check and it sent the note back; a fourth outcome
+      for the reach diagnostic, the note carrying right content in
+      an unusable shape; and the deliverer named where its own text
+      still said handbook.
 - [ ] The letter goes up with lived numbers: what the take cost,
       what the manual taught, the defect report, the constraint.
-- [ ] Run 3 migrated from two pins to one, or the reason it is not
-      recorded.
+- [x] Run 3 migrated from two pins to one, or the reason it is not
+      recorded. 2026-09-20: one pin, ours, with the handbook's
+      `ba7eaa4` in words as provenance for the four conventions that
+      came from there. Three of the seven have no handbook ancestor,
+      so a second hash could no longer name the set.
 Notes: the sketch's "use it for a project or two, then stop —
 design nothing further until there is a second shape to design
 from." Purifying the handbook's own kit is their work, not a step
-here; it waits on their reading of the letter.
+here; it waits on their reading of the letter. Two items closed
+2026-09-20; the two open ones are a birth and the letter, and the
+letter is richer for this delivery — the receiver found five lines
+we shipped broken and argued one of our rules down the same day
+(ADR-0034).
 
 ## Step N: Release                                  [ ]
 
