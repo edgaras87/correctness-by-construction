@@ -1,7 +1,10 @@
 # 0034. An edited copy carries no header line; the record is elsewhere
 
 Date: 2026-09-20
-Status: Proposed
+Status: Accepted (2026-09-20, at the set's final records commit;
+opened Proposed and accepted as written — the rule text, the
+verdict in the devlog and the gate close all landed under it
+unchanged)
 
 ## Context
 

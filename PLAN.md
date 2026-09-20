@@ -377,6 +377,7 @@ was met at Step 5.
 - ADR-0031: The three become conventions
 - ADR-0032: The chain is a section, and it is drawn
 - ADR-0033: Every slice derives blind; the reading happens once, at the end
+- ADR-0034: An edited copy carries no header line (Step 10)
 
 ---
 
