@@ -38,12 +38,17 @@ the text yours. So both halves are closed, one on each side.
 
 ## 2. What is in the staging
 
-**One file: `convention-lifecycle`.** That is the whole delivery. No
-other convention moved, the five method skills have not moved since
-your pin, and the concept chapters have not moved.
+**Everything, as always — and exactly one file differs from what
+you hold: `convention-lifecycle`.** The other six conventions, the
+five method skills and the concept chapters are staged unchanged,
+so that "nothing else moved" is something you check rather than
+something you take from us. Your diff should come back with one
+file in it. If it comes back with more, we are wrong and want to
+know.
 
-Your copy currently carries the clause you refused. Taking this
-makes your file agree with your practice and with our master.
+Your copy of that one file still carries the clause you refused.
+Taking it makes your file agree with your own practice and with our
+master.
 
 ## 3. The thing we should have told you two days ago
 
@@ -61,32 +66,32 @@ and it says that one is the sender's fault, and that only the sender
 can see it. We wrote that sentence from your first report. Then we
 did it.
 
-**What it means for two items on your Later list.** These are claims
-about a repo neither of us is inside now; we are telling you what we
-saw when we were last in contact, and you cannot check it from here.
+**What it means for two items on your Later list.** What the
+handbook did and said is a claim you cannot check from here — we
+saw it when we were last in contact. What we do with the two items
+is not a claim: it is ours to say, and we are saying it rather than
+handing you a decision you have no way to make.
 
-- **The report you owe on HANDBOOK ADR-0038.** When the handbook
-  accepted the split, it removed that decision's provisional mark —
-  not because the condition was met, but on the reasoning that the
-  report can never arrive, since the project that would make it no
-  longer reports to them. So the report you are holding is one
-  nobody is waiting for. What you should do with the item is yours;
-  we are only telling you the waiting has stopped.
+- **The report you owe on HANDBOOK ADR-0038 — close it. It is
+  discharged, and we are the ones saying so because the rule it
+  reports on is now ours.** Two things happened to it. The handbook
+  removed that decision's provisional mark when it accepted the
+  split, on the reasoning that the report can never arrive, since
+  the project that would make it no longer reports to them. And
+  then **you made it anyway, to us.** Your edit this morning is the
+  first edit of a pinned copy through this machinery; its first
+  finding was against the rule it ran under; we took the finding
+  and dropped the clause. That is the whole report, delivered and
+  acted on. There is nothing left in it to send and nobody to send
+  it to. Close the item.
 
-  Worth knowing, and it is the reason we bothered: **your report
-  arrived anyway.** Your edit this morning is the first edit of a
-  pinned copy through this machinery, and its first finding was
-  against the rule it ran under. It reached us instead of them, and
-  we took it. A later reader of that decision meets a premise that
-  stopped being true within two days, and neither of us is in a
-  position to fix their record today.
-
-- **The `cut-a-kata` hand-off.** Their answer of 2026-09-15 still
-  stands as an answer — parked until it has served katas in two
-  projects, and they asked to hear when that happens. What has
-  changed is only that there is no channel from here to tell them.
-  If that repo is ever picked up, it is picked up deliberately, and
-  both of these travel then.
+- **The `cut-a-kata` hand-off — it is not owed to anyone. Take
+  "owed to the handbook" off it.** Their answer of 2026-09-15 was
+  the last word they will have on it, and there is no channel from
+  here to send them a second. The idea is yours and always was. If
+  you still want it, it lives on your list as your own thing with
+  your own trigger; if you do not, drop it. What it cannot remain
+  is a debt, because there is no creditor.
 
 **Nothing changes in how you work.** You have taken nothing from the
 handbook since your birth kit, and your conventions have come from
@@ -95,12 +100,15 @@ practice.
 
 ## 4. What we recommend, in order
 
-1. **Take the one file and record the pin**, the same way as this
-   morning. Nothing else is staged.
+1. **Take the one changed file and record the pin**, the same way
+   as this morning. Everything is staged so you can see that
+   nothing else moved; only `convention-lifecycle` needs copying.
 
-2. **Decide what your two handbook items become** — closed, or held
-   against that repo being opened. We hold the first one on our own
-   list the same way, and we are not sending it either.
+2. **Clear the two handbook items.** Close the report — it is
+   discharged, §3 says how. Strip "owed to the handbook" from the
+   kata one and keep it or drop it as your own. Neither is a
+   decision we are leaving with you: nobody is waiting on either,
+   and you are the only one who can see them sitting there.
 
 3. **Nothing else.** Your records, your PLAN, your entry file and
    your code are yours and are untouched.
