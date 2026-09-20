@@ -93,6 +93,31 @@ mind. A renumbering moves every number, so the search is for every
 old number, and the cheapest form is the whole span: `§1` through
 `§9` here.
 
+**A changed *relationship* needs the same sweep, and no string
+search will start it for you** (learned 2026-09-20, the third
+undercount in three deliveries). The rules above are about
+identifiers: something was renamed or renumbered, so there is an
+old word to grep for. When what changes is a **party** — who the
+run's upstream is, who owns a file, who is waiting for a report —
+**nothing is renamed and no word changes**, so a grep for the
+change finds nothing and the sweep never starts.
+
+Grep for the *old party's name* instead, across the run's whole
+tree, and read every hit rather than the ones you came for. Our
+note of that date named two items pointing at the handbook;
+never-oversold found three, and two more mentions in a file we had
+not thought to open. Its own wording is the rule: **a map
+correction moves every arrow that pointed at the old party, not
+the two the sender has in mind.**
+
+The sweep is wider than a rename's, because a party is named in
+more kinds of sentence than an identifier is: an item *owed to*
+them, a decision *provisional on* their answer, a procedure that
+*diffs against* them, a record saying where a file *came from*. The
+last of those usually stays true and the first three usually do
+not, so read each hit for which kind it is rather than editing on
+sight.
+
 **A renamed convention needs one more thing, and the copy step will
 not do it for you** (learned 2026-09-19, when `change-plans` became
 `commit-plan`). Step 4 copies conventions by name, so a rename
