@@ -6,8 +6,17 @@ opened Proposed per change-plans §4 and revised at the boundary
 before the reference landed — the decision turned from shipped in
 the bundle to held here, the user's design. The held reference is
 in place at docs/baselines/spring-slice-reference.md, 8383932;
-cbc-slice unchanged for it; the first comparison waits on run 3's
-SL-2 close)
+cbc-slice unchanged for it); **superseded in part by ADR-0033
+(2026-09-20)** — decision 5's protocol no longer holds, and it
+never fired. Nothing is handed at a slice close; a run derives
+every slice with no reference in hand, each closed slice is written
+off here as material, and one reading over the whole set happens at
+the run's Release step. So the title's "handed after the build" is
+stale, and the "first comparison waits on run 3's SL-2 close" this
+line used to end with is withdrawn. What still holds: the reference
+is held here and not in the bundle, it is blind to newborns,
+cbc-slice names nothing, and options 1 through 4 below are still
+why.
 
 ## Context
 
