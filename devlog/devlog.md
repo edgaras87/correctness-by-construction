@@ -6,6 +6,123 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-20  (a rule withdrawn before it fired, a delivery, and the receiver's verdict on us)
+
+Twelve commits. The second delivery as a note and a copy, and the
+first time a run's argument changed a rule of ours.
+
+- **ADR-0033: the slice reference is handed to nobody, ever.**
+  ADR-0021 gave it to a run at each slice close for a shape-by-shape
+  comparison. Read again before its first firing — run 3's SL-2 —
+  two things killed it: it generalised from one slice, which is the
+  rule we apply everywhere else and had not applied here; and its
+  first comparison would have ended the independence of every later
+  one, since a shape adopted from the reference is inherited by the
+  next slice rather than derived. Nothing is handed; one reading at
+  the run's Release step.
+
+- **The ADR was revised at a boundary and the revision was the
+  user's question, not my reading.** Decision 2 asked for a write-up
+  per slice close. Asked what it bought, it bought nothing: the
+  deadline it served was the hand-off's, which decision 1 had just
+  removed, and the source is the run's own `docs/construction/`
+  record, which is not going anywhere. One line per close now.
+  **Twice in one day a clause survived the thing that justified
+  it** — this, and §3 of `convention-lifecycle` still saying
+  "handbook" after §2 stopped.
+
+- **The delivery: conventions only, at `6f2be1d`.** Nothing in the
+  five method skills or the concept chapters had moved since the
+  run's pin. Three new conventions, one renamed, two edited. Staged
+  and verified identical before the note claimed it, so "not one
+  line" was checked rather than asserted.
+
+- **The note went out twice, and the run sent the first one
+  back.** Its §5 read the run's Later list and reported facts about
+  our tree — "already in the playbook", "we hold the same finding".
+  The run holds no checkout of ours, so every item it closed would
+  have closed with a hedge beside it forever. It said so before
+  acting. Rewritten as verdicts: *we are taking this off you; we
+  accept that half; that rule is withdrawn; this is held, and here
+  is the trigger.* Our saying it in the note **is** the event, so
+  there is nothing behind it to check. Most converted in a
+  sentence, because they were already acts — what was missing was
+  saying so.
+
+- **A fourth outcome for the reach diagnostic.** `bundle-update.md`
+  said a reach means the note was thin, or the thing does not
+  exist, or the relationship changed. This was none: the note
+  carried the right content in a shape the receiver could not act
+  on. The rule and the three shapes it produced are now a section
+  of that manual.
+
+- **One verdict in the first draft was a lie and the user caught
+  it.** The framing-as-commit-series fold-back was answered
+  "accepted" when nothing was accepted and nothing checked. Working
+  it through showed it collides with what `commit-plan` already
+  asserts — that the commits which exist are the steps done — so
+  naming a step that runs as a series means saying what a step is.
+  Held with a trigger, beside the imperative test. **"Held, and
+  here is the trigger" is a complete answer; an unverifiable
+  promise is the one verdict shape worse than a report.**
+
+- **MY MISTAKE: I re-staged into the run's `temp/` while its agent
+  was mid-work.** The first note needed replacing, and I deleted
+  `bundle-9041d00/` and the old note without checking whether
+  anything had started over there. It had — a commit plan was
+  already written against that pin and that note. The files were
+  byte-identical between the two hashes so nothing was lost, and
+  the run renamed its branch and revised before committing. The
+  staging is the *operator's* step in the manual for exactly this
+  reason, and I took it twice; the second time I had no standing
+  to.
+
+### The verdict on the landing (step 7)
+
+**Delivered** at `6f2be1d`: seven convention skills. **Taken**:
+all seven, whole, in one commit, with `change-plans` deleted by
+name — the one step a copy cannot do. **Declined**: nothing. One
+pin recorded, ours; the handbook's `ba7eaa4` in words as provenance
+for the four that came from there, not as a second pin, because
+three of the seven have no handbook ancestor.
+
+**The evidence.** 28 method files compared, identical. `concept/`
+identical. Seven conventions compared, **four differ** —
+`commit-messages`, `commit-plan`, `convention-lifecycle`,
+`option-comparison` — and all four are accounted for by the run's
+own decisions entry. Nothing unexplained.
+
+**What the run did that we had not thought of, and it is the whole
+of what this reading taught.** It found five lines in four files we
+shipped still saying "change-plan" after the rename — the template
+heading in `commit-plan` among them, which is the text every future
+plan file would have opened on. It fixed them in its copies: its
+first in-place edit of a pinned copy, five words, one exact hunk
+per file, landed after the take so the delivery commit stayed a
+pristine compare. **Our own note had told it the grep-the-whole-span
+lesson, written from its first report, and we had not run that rule
+on our own files.** Taken whole; the masters and our copies now
+match its byte for byte.
+
+**And it argued against the rule it was running under, the same day
+it first ran it.** `convention-lifecycle` §3 step 4 asked for a
+dated line in an edited copy's header comment. It wrote them,
+looked at them, removed them unstaged, dropped the clause from its
+own rules file in a step of its own, and asked us to drop it from
+both: a comment in an artifact says how to use it or what a part
+is, never what changed. Taken — ADR-0034. That is ADR-0022's
+reasoning reaching the receiver's copy, where ADR-0022 only reached
+the sender's master, and it is the first rule of ours changed on a
+run's argument rather than on our own reading. The clause was
+provisional until one edit had gone through the machinery; the
+machinery's first firing found its own test wrong.
+
+- Resume: PLAN Step 10. Gate items 2 and 4 are now true and
+  unticked — one update delivered end to end under the manual, and
+  run 3 on one pin. Item 1 (a project born from this repo alone)
+  and item 3 (the letter with lived numbers) are what remain, and
+  the letter has more in it than it did this morning.
+
 ## 2026-09-19, last  (the chain gets a section, and a picture that loses on the reading)
 
 Six commits. The first set opened by `decide-first`, and the first
