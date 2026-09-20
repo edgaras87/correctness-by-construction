@@ -306,8 +306,21 @@ Gate:
       for the reach diagnostic, the note carrying right content in
       an unusable shape; and the deliverer named where its own text
       still said handbook.
-- [ ] The letter goes up with lived numbers: what the take cost,
+- [x] The letter goes up with lived numbers: what the take cost,
       what the manual taught, the defect report, the constraint.
+      **Sent 2026-09-18**, before this step was written, and it
+      carried all four — the cost in §2 (ten registry entries and
+      run 3's receipt pins that a rebuild would kill) with §4's
+      sweep so the size was not guessed; the manual's four findings
+      from its first end-to-end run in §1; the `ARCHITECTURE` stub
+      defect in §4; and the fork with its coordinates and its one
+      reopen trigger in §2. The handbook replied, verified our two
+      coordinates in its own history rather than from our text, and
+      recorded the fork as its ADR-0042. Ticked here rather than
+      rewritten: the item was authored while the handbook was still
+      upstream, and its condition — the delivery run that produces
+      lived numbers — had fired the same morning. Nothing has been
+      owed upward since (devlog, 2026-09-18 evening).
 - [x] Run 3 migrated from two pins to one, or the reason it is not
       recorded. 2026-09-20: one pin, ours, with the handbook's
       `ba7eaa4` in words as provenance for the four conventions that

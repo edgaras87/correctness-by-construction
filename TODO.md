@@ -1318,6 +1318,23 @@
 
 ## Later / someday
 
+- [ ] Held for the handbook, if it is ever picked up again — not
+      sent, and nothing is owed (we forked 2026-09-18; its ADR-0042
+      records it). Their ADR-0038 lost its provisional mark that
+      day on the stated grounds that the report it waited for **can
+      never resolve**: the run that would make it no longer reports
+      to them. Our devlog called that the sharpest sentence either
+      side wrote. **The report arrived two days later.** On
+      2026-09-20 never-oversold made the first in-place edit of a
+      pinned copy — five nouns the commit-plan rename left standing
+      in four files we shipped — and its first finding was against
+      the rule it was running under: the dated header line §3 step
+      4 asked for. We took the finding (CBC ADR-0034) and dropped
+      the clause. So a later reader of their ADR-0038 meets a
+      premise that stopped being true within 48 hours, and we are
+      the only side that can see it. A few sentences, not a letter,
+      and only if that repo is opened.
+
 - [ ] What a receiver should *do* when handed a claim it cannot
       check. The sending half is settled and in force —
       `temp/README.md`'s second rule, 2026-09-18: where a note
