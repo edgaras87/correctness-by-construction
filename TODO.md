@@ -620,6 +620,27 @@
       fast-forward waits — what the reviewer holds against the step
       is compared then; it names no reference. For run 3, told at
       SL-2's opening or the run's own agent commit.)
+      (2026-09-20, withdrawn before it ever fired — CBC ADR-0033,
+      the user's design. There is no build comparison and no second
+      reading category. Nothing is handed at a slice close; a run
+      derives every slice with no reference in hand, and the
+      reference is opened once, at the run's Release step, for one
+      reading across all its slices. Two reasons, and the second is
+      the one the protocol could not survive: it generalised from a
+      single instance, which is the rule this repo applies
+      everywhere else and did not apply here; and its first
+      comparison would have ended the independence of every later
+      one, since a shape adopted from the reference is inherited by
+      the next slice rather than derived. The per-slice write-up
+      went with it at the same boundary — it was urgent only
+      because it had to exist in time to be handed back, and the
+      run's own docs/construction/ record is the source either way.
+      What is left is one line here at each slice close. Nothing
+      for run 3 to do: it never held the reference and never will.
+      The line this item held for the playbook — the agent says the
+      step is closed and the fast-forward waits — stands on the
+      branch rule's own account, naming no reference, which it
+      already did not.)
 
 - [x] DONE 2026-09-05, change-plan opened ff518f7 (its close
       commit ends the set) — all six steps: sed fix, ADR-0015,

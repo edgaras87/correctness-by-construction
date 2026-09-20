@@ -349,7 +349,7 @@ was met at Step 5.
 - ADR-0018: The seed lands on a receipt branch
 - ADR-0019: The entry files ship filled — the semi-pure delivery
 - ADR-0020: This repo's decisions are cited from other repos as CBC ADR-nnnn
-- ADR-0021: A Spring slice reference, held here and handed after the build
+- ADR-0021: A Spring slice reference, held here and handed after the build (superseded in part by ADR-0033)
 - ADR-0022: The notes go; the exchange is a note and a copy
 - ADR-0023: The compare is a reading; the diff is its evidence
 - ADR-0024: The kit is taken here, verbatim but for a stated delta
@@ -358,6 +358,10 @@ was met at Step 5.
 - ADR-0027: The architecture diagram is Mermaid, provisionally
 - ADR-0028: The procedure gets a picture; the method becomes a skill
 - ADR-0029: Three groups, three directories (Step 9)
+- ADR-0030: decide-first, and two renames
+- ADR-0031: The three become conventions
+- ADR-0032: The chain is a section, and it is drawn
+- ADR-0033: Every slice derives blind; the reading happens once, at the end
 
 ---
 

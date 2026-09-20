@@ -1,7 +1,10 @@
 # 0033. Every slice derives blind; the reading happens once, at the end
 
 Date: 2026-09-20
-Status: Proposed
+Status: Accepted (2026-09-20, at the set's final records commit;
+opened Proposed and revised at a boundary before acceptance —
+decision 2 had kept the withdrawn protocol's deadline and asked for
+a write-up per slice close, which nothing any longer needed)
 
 ## Context
 
