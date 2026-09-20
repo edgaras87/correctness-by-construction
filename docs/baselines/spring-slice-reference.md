@@ -1,32 +1,36 @@
-<!-- BASELINE — held for comparison, blind to newborns (CBC ADR-0021).
-     Not in the bundle: no run receives it at birth, and cbc-slice
-     never names it. Handed to a run as session input only after
-     that run's build is on record — the close commit on the
-     step's branch, before the fast-forward to main — so the run's
-     shapes are derived clean and compared, never copied. The
-     verdict per shape is the run's, in its devlog and decisions
-     log; each verdict confirmed at the reading here lands below
-     as one dated harvest line naming the run that earned it
-     (CBC ADR-0007). A lived best, never a master.
+<!-- MATERIAL — held here, seen by no run (CBC ADR-0033, superseding
+     ADR-0021 decision 5). Not in the bundle: no run receives it at
+     birth, and cbc-slice never names it. It is handed to nobody, at
+     no moment. A run derives every slice with no reference in hand,
+     and this file is opened once — at that run's Release step — for
+     a single reading across all its slices, its material being the
+     run's own slice records read read-only, and this.
+     It holds SL-1 and does not grow. Nothing is written up per
+     slice close, no verdict lands here as a harvest line, and no
+     later slice is measured against it: not a baseline, not a lived
+     best, one slice's build kept because the shapes cost a run real
+     time and the next Spring project would re-invent them.
      Checked against concept v1 of correctness-by-construction
      (CBC ADR-0003, ADR-0005 — practice-born), on the harness
      reference's model. Provenance — harvested 2026-09-14 from
      never-oversold (run 3 of the pure seed) Step 5, SL-1 "no
      over-admission under contention", read read-only (CBC ADR-0007):
      its slice record, devlog, and delivered files at the step's
-     close. Lived once: every section is a variation point until a
-     comparison confirms or replaces it. -->
+     close. Lived once: every section is a variation point — and one
+     run's slices are one run's, so a recurrence across them may be
+     the same habit twice rather than the right shape. -->
 
 # Spring slice reference — one slice's build, as code
 
-**Handed, never shipped.** This file reaches a run only after its
-own build of a slice is committed on its branch, for a comparison
-shape by shape: for each, which is stronger against that run's
-guarantees and why, or that they are not comparable. It is not
-copied into the run's tree. Opened before the plan is signed it
-would become the answer instead of one candidate, and the skill's
-seam — what before how, walls by comparison never by lookup — would
-be lost; that is why no run has it.
+**Held, never handed.** No run has this file and none is given it,
+at any moment. A run derives every slice of its build without it.
+It is opened once, at that run's Release step, for a single reading
+across all the slices at once — what recurs, and what a recurrence
+is evidence of. Put in front of a run any earlier it would become
+the answer instead of one candidate, and the skill's seam — what
+before how, walls by comparison never by lookup — would be lost.
+That is why no run has it, and why "after the build" was not a
+safe enough version of the same rule (CBC ADR-0033).
 
 What the *build* stage of one slice looked like on the Spring line,
 from the one run that lived it. **Stack-scoped by name**: Spring Boot
