@@ -156,13 +156,15 @@ them ship as a skill. The standing item to derive this set from the
 run's pin rather than a list is worth reading before an eighth
 arrives.
 
-**Which repo is the run's "handbook".** The run's
-`convention-lifecycle` §3 step 1 tells it to diff the handbook, and
-a run born under one chain holds no handbook checkout. The same
-paragraph answers it: "the handbook is a checkout on disk or the
-payload a handoff carries; the protocol is git either way." This
-delivery is that payload. The note names the kit hash the container
-half is held at, which is the hash that procedure compares from.
+**Which repo is the run's deliverer.** `convention-lifecycle` used
+to send a project to *the handbook* for its compare, and a run born
+under one chain holds no handbook checkout. Since 2026-09-20 both
+§2 and §3 say **the deliverer** throughout — never-oversold
+reported the §2 half, and the §3 half was found beside it — so the
+question answers itself: we are the deliverer, and the payload in
+the run's `temp/` is the checkout it compares against. The note
+names the kit hash the container half is held at, which is the hash
+that procedure compares from.
 
 Empty means no local layer. Non-empty is the hand-off: each hunk is
 taken, reshaped or declined, in our own wording, in the commits
@@ -412,6 +414,9 @@ compliance to.
 - **Why it matters to this run** — the part a diff cannot carry.
 - **Its own edits, answered** — each taken, reshaped or declined,
   and why. This is the verdict; there is no other channel.
+- **A verdict on every open item of the run's that is addressed to
+  us**, read from its TODO at step 2. See below; this is the
+  section that goes wrong.
 - **What it recommends, in order** — and what is optional.
 
 If the run has to reach for something the note and the files do not
@@ -433,6 +438,59 @@ which: the note was thin; or what the run wanted does not exist;
 or the run is working from a relationship that has changed and the
 note did not name the change. The third is the sender's fault as
 much as the first, and only the sender can see it.
+
+### The run's own items: a verdict, never a report
+
+Step 2 reads the run's TODO. Some of what is on it is addressed to
+us — a fold-back owed to a convention we own, a question about a
+rule, a hand-off. **Every one of those gets an answer in the note.**
+Leaving them silent means both sides read them again at the
+retrospective, which is the waste never-oversold named on
+2026-09-20, and an item with no answer stays open forever.
+
+**But the run holds no checkout of ours**, so how the answer is
+phrased decides whether it can act on it. Two shapes, and only one
+works:
+
+- **A verdict** — *we are taking this fold-back off you; we accept
+  that half; that rule is withdrawn; this is held, and here is the
+  trigger.* Our saying it in the note **is** the event. Nothing sits
+  behind it to check, so the run closes the item outright.
+- **A report** — *that fold-back is already done; the kit is ours
+  now; we hold the same finding.* Every one of these is a fact about
+  our tree. The run cannot check any of them, so it closes on our
+  word with a hedge beside it in its own records, forever.
+
+The first draft of the 2026-09-20 note was reports wearing the
+costume of verdicts, and the run said so before acting on it. Most
+of them converted in a sentence, because they were already acts —
+what was missing was saying so.
+
+**Three rules fall out of that, and each was a defect first.**
+
+1. **A verdict is the decision and what the run owes now. Nothing
+   else.** Not whose problem the remainder is, not what is or is not
+   a fact the run needs — that is the sender reasoning about
+   information inside someone else's backlog.
+2. **Never describe our own practice.** A verdict on the run's item
+   gives it nothing to copy. A sentence about how we work — *we
+   write record commits as statements now* — is a rule the run never
+   agreed to, arriving through a channel that cannot carry rules.
+   Nor does a rule about the exchange itself belong in the note: a
+   rule announced in a message that gets deleted at step 6 is not a
+   rule. It belongs here.
+3. **Do not answer "accepted" for something not decided.** The same
+   draft accepted a fold-back into `commit-plan` that nobody had
+   worked through, and working it through showed it collided with
+   what that skill already asserts. **"Held, and here is the
+   trigger" is a complete answer** — it closes the run's waiting
+   without closing the question. An unverifiable promise is the one
+   verdict shape that is worse than a report.
+
+And where a fact genuinely must be told because it changes what the
+run does, the evidence ships with it in the staged copy — the way
+the concept chapters are staged every time, changed or not, so the
+run compares rather than trusts a claim that they did not move.
 
 ## What this does not do
 
