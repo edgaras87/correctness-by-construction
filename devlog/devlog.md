@@ -150,12 +150,63 @@ machinery's first firing found its own test wrong.
   cost is named rather than dressed:** if someone reads that ADR
   cold, they read something false, and this decision is why.
 
+### A second delivery the same day, and the verdict on it
+
+Reading run 3 once more turned up three things it could not know:
+its two asks were answered, one file had changed under it, and
+**we had never told it we forked from the handbook.** The third is
+ours. `bundle-update.md`'s own diagnostic lists it — a run working
+from a relationship that has changed, which the note did not name,
+the sender's fault and visible only to the sender — and we wrote
+that sentence from this run's first report.
+
+So a second note went, small: two answers, one changed file, and
+the map correction. Its two handbook items were **told, not
+asked** — the user's call, and the right one. Leaving a project to
+decide what to do about a repo it cannot see hands the decision to
+the side with no information.
+
+**The verdict.** Delivered at `4c3ac99`: one changed file,
+`convention-lifecycle`, staged whole with everything else so
+"nothing else moved" was checkable. Taken whole, all seven copied,
+git showing one. **Evidence: 28 method files, the concept chapters
+and all seven conventions compared — nothing differs. The first
+fully clean compare of the three.**
+
+**The trial that both texts were provisional on has now run.** The
+run's five-noun edit was made against a pinned copy, handed back,
+taken into our masters in its wording, and returned through a
+re-pin. First edit, first full lap, and the machinery's first
+finding was against its own rule.
+
+**And it caught us a third time — the headline of this reading.**
+Our map correction named two of its items as pointing at the
+handbook. There were three. The one we missed folded three
+arrangement pieces back "to the handbook" and still called their
+ADR-0038 provisional; it also found its own rules file's header
+and rule 6 naming the handbook, which we never mentioned. Its line
+back: *a map correction moves every arrow that pointed at the old
+party, not the two the sender has in mind.*
+
+**Three deliveries, three undercounts, every one found by the
+receiver:** two citations where there were four (09-18); five
+stale nouns we shipped and did not know (this morning); two
+handbook items where there were three (this afternoon).
+
+**The manual cannot catch the third, and that is the defect.** Its
+rule says grep every identifier a rename moved. Here nothing was
+renamed — a party stopped being the upstream, and no word changed,
+so there was no string to search for. The rule we wrote from miss
+one is structurally unable to catch miss three. Extending it from
+identifiers to parties is the next commit.
+
 - Resume: PLAN Step 10, and it is down to one item — **a project
-  born from this repo alone.** The update ran end to end, the
-  letter went, run 3 is on one pin. Everything the delivery has
-  learned since the groups set has now been tested by a receiver
-  once; what it has never been tested by is a birth. That is the
-  second shape the step exists to get.
+  born from this repo alone.** The manual has now run end to end
+  twice in a day, the letter went, run 3 is on one pin with a clean
+  compare. Everything the delivery has learned since the groups set
+  has been tested by a receiver three times. What it has never been
+  tested by is a birth. That is the second shape the step exists to
+  get.
 
 ## 2026-09-19, last  (the chain gets a section, and a picture that loses on the reading)
 
