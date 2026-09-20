@@ -44,18 +44,24 @@ Read again before it fires, three things about it:
    close, before the fast-forward — is withdrawn. A run derives
    every slice with no reference in hand, not only its first.
 
-2. **Each closed slice is written off here the way SL-1 was**:
-   read-only from the run's slice record, devlog and delivered files
-   at the step's close, one write-up per slice, on the harness
-   reference's model (ADR-0007, ADR-0008). They accumulate. None of
-   them is a baseline while it accumulates.
+2. **Nothing is written up per slice.** One line here when a slice
+   closes — which slice, when, and what caught the eye — and no
+   more. Writing SL-1 up at its close was urgent only because the
+   write-up had to exist in time to be handed back at SL-2's;
+   decision 1 removes that deadline. The source it was written from
+   is the run's own `docs/construction/` record, which sits in the
+   run's repo and is not going anywhere. Making our copy early does
+   the work twice, ahead of a reading that has not happened.
 
-3. **The reading happens once, over the whole set.** Its question is
-   not "is this slice's shape stronger than that one's" but what
-   recurs across slices that were each derived without sight of our
-   write-up of the others — and what a recurrence is evidence of.
-   The reference proper is written *from* that reading. Until it
-   runs, nothing here is a lived best; the write-ups are material.
+3. **The reading happens once, over the whole set**, at the moment
+   decision 4 names. Its material is the run's own slice records
+   read read-only, plus `spring-slice-reference.md`, which holds
+   SL-1 and is already paid for. Its question is not "is this
+   slice's shape stronger than that one's" but what recurs across
+   slices each derived without sight of our reading of the others —
+   and what a recurrence is evidence of. A shipped reference, if
+   there is to be one, is written *from* that reading. Until it
+   runs, nothing here is a lived best.
 
 4. **The moment is the run's Release step opening** — the first
    point at which "all the slices" is a closed set rather than a
@@ -79,20 +85,25 @@ Read again before it fires, three things about it:
    stack-free and names nothing. Only decision 5's protocol changes,
    and ADR-0021's status line says so.
 
-7. **Whether the file is renamed is not decided here.**
-   `spring-slice-reference.md` is named for the artifact the reading
-   will produce, and it currently holds one write-up. The question
-   of one file per slice versus one file growing is answered when
-   the second write-up is made and there is something to answer it
-   with.
+7. **`spring-slice-reference.md` stays where it is and does not
+   grow.** It holds SL-1 and will hold SL-1 only. It is material in
+   a drawer until decision 3's reading — not a document kept
+   current, not a baseline, not something a later slice is measured
+   against — and its header says that instead of the protocol it
+   was opened with. Deleting it was considered and rejected: six
+   shapes that cost a run real time, one of them through a dead
+   end, and the next Spring project would re-invent or re-derive
+   every one.
 
 ## Consequences
 
 Good: the set the generalisation is drawn from has more than one
 member in it, which is the rule this repo applies to everything
-else. Each write-up is an independent sample of how a slice gets
-shaped rather than a refinement of the one before. No reviewer
-session per slice close.
+else. What the reading weighs is what a run derived without sight
+of our reading, rather than refinements of a baseline it had
+already adopted. And it is nearly free until it fires — a line at
+each slice close, and one reading — where ADR-0021 spent a
+write-up and a reviewer session per slice.
 
 Bad: **a weaker design is now found after it has shipped.**
 ADR-0021's timing was chosen exactly so a build the comparison found
@@ -108,6 +119,15 @@ If a second Spring run is born in the meantime, this decision is
 what stands between it and the only Spring slice write-up we have,
 and that is the trade being made knowingly.
 
-Also: the reading at Release is a larger single piece of work than
-the per-slice comparisons it replaces, and it happens at the busiest
-gate in a run. Foreseen, not discovered.
+Also: the reading at Release is one large piece of work at a run's
+busiest gate, and decision 2 makes it larger — it reads the run's
+records cold rather than write-ups made while the work was close.
+Foreseen, not discovered, and the price of not paying per slice.
+
+Also, and it limits what the reading can conclude: every slice in
+the set comes from one run. What recurs may recur because it is the
+same project and the same agent, not because it is the right shape.
+Decision 5 says the set is independent of our reading and not of
+itself; this says the rest of it — a shipped reference wants a
+second Spring run, and the reading at Release can only say what is
+worth carrying to one.
