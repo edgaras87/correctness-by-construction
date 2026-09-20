@@ -117,11 +117,45 @@ run's argument rather than on our own reading. The clause was
 provisional until one edit had gone through the machinery; the
 machinery's first firing found its own test wrong.
 
-- Resume: PLAN Step 10. Gate items 2 and 4 are now true and
-  unticked — one update delivered end to end under the manual, and
-  run 3 on one pin. Item 1 (a project born from this repo alone)
-  and item 3 (the letter with lived numbers) are what remain, and
-  the letter has more in it than it did this morning.
+### Later the same day — three gate items, and a letter that had already gone
+
+- **ADR-0034 accepted as written**, which is worth the distinction
+  beside 0033 of the same morning: that one was revised at a
+  boundary before acceptance, this one was not. The rule text, the
+  verdict and the gate close all landed under it unchanged.
+
+- **The third gate item was already served, and by two days.** It
+  asks for a letter with lived numbers — the take's cost, what the
+  manual taught, the defect report, the constraint. All four went
+  on 2026-09-18, in the fork letter, before the step that asks for
+  them was written; the handbook replied and recorded the fork as
+  its ADR-0042. **The near-miss was writing a second one.** Asked
+  to write the letter, I went to the records first and found it
+  sent, which is the only reason it was not duplicated. A gate item
+  authored while a relationship still existed can outlive the
+  relationship and still read as a task.
+
+- **One finding is parked rather than sent, and the parking is the
+  decision.** When the handbook conceded the fork it removed
+  ADR-0038's provisional mark on the stated grounds that its report
+  **can never resolve** — the run that would make it no longer
+  reports to them. The report arrived 48 hours later, through the
+  fork: never-oversold's first in-place edit, whose first finding
+  was against the rule it was running under. So their record holds
+  a premise that stopped being true almost immediately, and we are
+  the only side that can see it. Not sent: nothing is owed upward
+  since the fork, and traffic two days after telling them so would
+  undo the split we had just made. Held in TODO against that repo
+  being opened, which is nobody's task and may never happen. **The
+  cost is named rather than dressed:** if someone reads that ADR
+  cold, they read something false, and this decision is why.
+
+- Resume: PLAN Step 10, and it is down to one item — **a project
+  born from this repo alone.** The update ran end to end, the
+  letter went, run 3 is on one pin. Everything the delivery has
+  learned since the groups set has now been tested by a receiver
+  once; what it has never been tested by is a birth. That is the
+  second shape the step exists to get.
 
 ## 2026-09-19, last  (the chain gets a section, and a picture that loses on the reading)
 
