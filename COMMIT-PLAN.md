@@ -130,12 +130,21 @@ or none: how exposure works — the same file binding in `rules/` and
 describing in `shapes/` — and how a shape moves between this repo
 and a run across plan steps and gates.
 
-It runs as the convention says or not at all: requirements written
-in a `temp/` draft first, as what a reader must get rather than what
-a form must show; at least one non-picture candidate, so "no picture"
-can win; every candidate built and rendered, not sketched; verdicts
-citing the requirement they turn on; the outcome in an ADR before
-the draft is deleted. Several commits, and the ADR is its own.
+*Revised at its own close: it ran, loosely, and there is no ADR.*
+The method was reached for and mostly not run — no non-picture
+candidate was built, so a picture won by construction; the
+requirement that mattered, what a shape is *for*, was written after
+the first candidate; and no verdict was settled by looking. Two
+pictures landed in the model, §4 and §5.
+
+An ADR was drafted and dropped. Adding two pictures to one document
+is ordinary work, and an ADR over a comparison that did not happen
+is ceremony. What was worth keeping went where it fires instead: the
+rule that a model's pictures illustrate its prose and never carry a
+fact alone, into the model's header with the evidence for it; and
+the misreading that produced the loose run, into
+`visual-comparison`'s own lesson list, which exists for exactly
+that.
 
 **One trap is already paid for and the requirements must carry it.**
 That skill's own list records `sequenceDiagram` drawing a read-only
