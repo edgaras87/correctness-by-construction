@@ -191,13 +191,28 @@ commit plan of their own; the rest are a commit or two.
   expected. It also paid for itself twice: reading the other seven
   occurrences established that none of them should change, and it
   is where the second half of W2 was found.
-- **W2 — a sweep for stale names and paths in live text** (F2).
-  No longer a fold into W1 and no longer one noun: two known
-  targets, and the sweep is for the class rather than the string,
-  which is the lesson we wrote for run 3 and keep failing to apply
-  here. Its own pass.
-- **W3 — the standing rule into PLAN and the decisions log.**
-  Needs D8.
+- **W2 — a sweep for stale names and paths in live text. Done,
+  `e9baf63`.** Twenty candidates, three defects, all of them
+  pointers saying "the live version continues at X" where X had
+  moved or gone. The other seventeen are records — dated revision
+  notes, a version log, captured evidence, frozen baseline halves,
+  the handbook's own paths, and `delivery/README.md`, which carries
+  both names on purpose because its `git diff -M` needs the old one
+  to resolve the rename. One left on purpose: `docs/models/agent.md`
+  names the convention by its old name, and that file belongs to the
+  models item in TODO, not here — fixing one noun would make it look
+  swept.
+- **W3 — the standing rule into PLAN and the decisions log.
+  Moved to the end of this branch, 2026-09-23, the reviewer's
+  call.** It was second in the order and drafted mid-run; the
+  draft was discarded unstaged. **This branch is the rule's first
+  run, so the rule is written from what the run taught, not from
+  what we expected before it started.** The same reasoning already
+  governs W7 and was not applied here until the reviewer applied
+  it. **plan**, and the plan opens with a proposal — the whole
+  rule text, written once and approved before any of it lands,
+  rather than approved a commit at a time. Two commits at least,
+  since `.claude/` and PLAN never share one.
 - **W4 — a `decide-first` draft on the collector**, which settles
   D1. One unsettled shape, not the pile below it.
 - **W5 — take the tripwire rule into the master** (D5). **plan** —
@@ -209,6 +224,8 @@ commit plan of their own; the rest are a commit or two.
   **plan**.
 - **W8 — record the checked-through mark** at `9869798`. Lands
   wherever D7 puts it, so it follows W7.
+- **W3 (out of order, deliberately) — the standing rule**, written
+  last from the list below. See its item above for why.
 - **W9 — one delivery to run 3**: verdicts on all four hand-offs,
   the three edits answered, and F3 told as a finding with the five
   lines quoted so they can restore what they want. Last, and one
@@ -217,15 +234,32 @@ commit plan of their own; the rest are a commit or two.
 - **W10 — records catch up**: the ADRs each decision earns, the
   devlog, TODO.
 
+## What the first run of the rule has taught
+
+Kept as it happens, because W3 writes the rule from this list and
+nothing else. Each line is something the rule did not say and
+should.
+
+- **Items keep their numbers when they close.** Marked done in
+  place, never deleted or renumbered — this file cites its own
+  items by number, and so does a TODO entry outside it. Found at
+  the W1 revision.
+- **Revise at the item's close, not when it next occurs to
+  anyone.** Found when the reviewer noticed W2 had closed and the
+  file still listed it as pending while W3 was already underway.
+- **A reading is written before the branch and counts it.** Lived
+  rather than assumed: ten items, four wanting plans, which is
+  what made this branch work rather than a single commit plan.
+- **The order is preliminary and the reviewer reorders it.** W3
+  moved from second to last mid-run, because the branch turned out
+  to be the rule's own first firing.
+
 ## Notes
 
-- Ten work items, one done. At least four of the rest want a
+- Ten work items, two done. At least four of the rest want a
   commit plan of their own, so by D8's test this stays branch work.
-- **Items keep their numbers when they close.** Marked done in
-  place rather than deleted, and never renumbered: this file cites
-  its own items by number, and so now does a TODO entry outside it.
-- Revised 2026-09-23 after W1 landed — the first time this file was
-  brought back into line with what is actually left.
+- Revised after W1, and again after W2. What each revision taught
+  is in the section above, which is the one W3 reads.
 - W9 is deliberately last. A delivery costs the receiver a take,
   and run 3 has three branches of its own queued before SL-3.
 - Nothing here is staged into run 3's `temp/` yet. Its tree is
