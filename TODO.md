@@ -814,6 +814,52 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Does this repo's working arrangement still fit it? Proposed
+      as the next branch after `reading-run-3-2026-09-23` closes,
+      with its own reading — which would be the second firing of
+      that shape, and the second firing is what D7 and W7 in that
+      file wait for. Raised 2026-09-23: the kit was designed for
+      app-dev repos, and this one develops no app — it holds a
+      concept and ships a delivery bundle — so whether PLAN, TODO
+      and the rest are still the right records here is open rather
+      than settled.
+      Three facts to start from, written here so none is
+      re-derived.
+      **One — we asked this on 2026-08-28 and the answer is
+      stranded.** The decisions entry of that date says the
+      CHANGELOG stub "assumes an application repo" and that its
+      rules "had to be replaced, not filled". It went up with three
+      siblings on 2026-08-30 and was parked handbook-side, leaning
+      one-stub-that-asks. We forked 2026-09-18 and the kit became
+      ours (ADR-0025), so a question about our own container sits
+      parked in a repo that no longer answers to us. Same class as
+      the map correction we sent run 3 — an item left pointing at a
+      party that changed — and this one is ours end to end, found
+      by nobody but us.
+      **Two — TODO does two jobs, and it is measurable.** This
+      file's "Now" section runs about 800 lines to carry seven
+      completed entries and four open ones. The entry file defines
+      this record as "noticed something, not doing it now —
+      backlog". Eight hundred lines of finished harvests with their
+      findings is the devlog's job and the commit history's,
+      written a third time.
+      **Three — the reading's relation to PLAN is undecided, and
+      PLAN changes first.** The standing rule at D8/W3 lands in
+      PLAN on the branch now running, before this question is
+      asked. Cheap to move if the answer changes PLAN's role, but
+      it does land first and should not be mistaken later for a
+      settled view of what PLAN is for.
+
+- [ ] `docs/models/` may no longer match reality (2026-09-23, the
+      user's reading; deliberately not this session's work). It
+      matters because the models are cited live rather than kept in
+      a drawer: `CLAUDE.md`'s opening line sends the reader to
+      `docs/models/tiers.md` for what kind of repo this is, and
+      `delivery/README.md` cites the same file for the
+      authoritative-vs-pinned rule. Likely folds into the
+      arrangement item above — "what are the tiers and where is
+      this repo in them" is that question one level up.
+
 - [ ] Does commit-plan need a rule about provisional steps, or did
       one author under-use the one it has? (`change-plans` until
       2026-09-19; ADR-0030 renamed it.) Raised 2026-09-19 at the
