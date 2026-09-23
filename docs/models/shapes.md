@@ -9,6 +9,14 @@
      the implementation turned out to be. Written earlier it would
      have been a guess that the work then had to correct.
 
+     **Its pictures illustrate its prose and never carry a fact
+     alone.** Measured once and found false: five claims lived only
+     in a chart — who moves a shape, that a project fetches nothing,
+     that a difference is proposed and never corrected, what a tick
+     records, and that a delivery becomes the project's own shape.
+     The prose grew to cover them. Read where Mermaid does not
+     render, this file should lose the pictures and no facts.
+
      Delivered to nobody. `docs/models/` is this repo's (ADR-0026);
      what reaches a project is the vocabulary entry, the rule, and
      the placement — never this. -->
