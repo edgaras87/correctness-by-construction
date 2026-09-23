@@ -122,6 +122,30 @@ convention, trial evidence — how exposure relates to the two places,
 how a shape's group follows its output, and which of those a project
 may disagree with without violating anything, which is all of it.
 
+**8a. The model gets a picture, if one earns its place** —
+`visual-comparison`, run properly.
+*Added at step 8's boundary, the reviewer's ask.* Two things want
+showing and it is not yet settled whether they are one picture, two,
+or none: how exposure works — the same file binding in `rules/` and
+describing in `shapes/` — and how a shape moves between this repo
+and a run across plan steps and gates.
+
+It runs as the convention says or not at all: requirements written
+in a `temp/` draft first, as what a reader must get rather than what
+a form must show; at least one non-picture candidate, so "no picture"
+can win; every candidate built and rendered, not sketched; verdicts
+citing the requirement they turn on; the outcome in an ADR before
+the draft is deleted. Several commits, and the ADR is its own.
+
+**One trap is already paid for and the requirements must carry it.**
+That skill's own list records `sequenceDiagram` drawing a read-only
+reading as an arrow into the other repo — asserting the opposite of
+the rule the procedure existed to keep (ADR-0027, ADR-0028). The
+repo-to-run half here has the same shape: nothing in this repo
+reaches into a run, an operator stages into the run's `temp/`, and
+the run reads its own tree. A picture that draws us reaching in
+states the opposite of the rule.
+
 **9. `docs: ARCHITECTURE carries the shape rule`**
 *Provisional in extent, firm in existence.* The codemap row for
 `docs/baselines/` states the withheld-and-blind mechanism and goes
@@ -180,6 +204,12 @@ finding owed back to never-oversold. Never the close commit.
   future set, and under this order it belongs here beside the other
   edit to the same file. Steps 6, 7 and 8 are now all our side and
   sit together behind the last take.
+- **8a added at step 8's boundary, and it is the largest thing added
+  to this set.** A picture for the model was asked for; the
+  convention for settling that is `visual-comparison`, which wants
+  requirements, built candidates, a render and an ADR. It is not a
+  diagram written into the model in passing, and saying so here is
+  what stops it becoming one.
 - **Steps 6, 7 and 9 are provisional and say so.** The count is
   sayable at four and soft after that; the honest form is a firm head
   and a marked tail rather than confidence about steps whose shape
