@@ -98,6 +98,35 @@ unexposed one is in no birth copy at all — it would spend the only
 independence there is — so it is held apart, names its group, and
 reaches a project as a delivery staged at a gate.
 
+**Birth and delivery, drawn.** Where a shape of each kind sits here,
+and the two different moments at which each reaches a run. Every
+arrow that crosses is carried by a person: nothing in this repo
+reaches into a run, and nothing in a run reaches out.
+
+```mermaid
+flowchart LR
+  subgraph HERE["this repo"]
+    direction TB
+    EX["an exposed shape<br/>sits in the group of<br/>the thing it shapes"]
+    UN["unexposed stock<br/>held apart, naming its group<br/>(none held yet)"]
+  end
+
+  subgraph RUN["a run repo"]
+    direction TB
+    MADE["what a step made"]
+    TMP["temp/<br/>staged, never fetched"]
+    SHP[".claude/shapes/<br/>nothing loads it"]
+    RUL[".claude/rules/<br/>loads on its paths:"]
+  end
+
+  EX -->|"an operator copies it,<br/>at a birth or an update"| RUL
+  UN -->|"an operator stages it,<br/>for one step's gate"| TMP
+  TMP -->|"the gate opens it"| SHP
+  MADE -->|"read against it, at the close"| SHP
+  SHP -->|"the reviewer exposes"| RUL
+  RUL -->|"the reviewer withdraws"| SHP
+```
+
 What travels upward is a **finding**, never a proposal: one project
 saying what it arrived at. What must not travel is a status, not a
 wording — a shape handed down as a standard is inherited rather than
@@ -105,7 +134,32 @@ derived, and the next project's own answer is lost before it is
 written. The protection is in how a shape moves, not in how vaguely
 it is phrased.
 
-## 5. What a difference means
+## 5. How a shape is used, and what a difference means
+
+**Use, drawn.** What a gate actually does when a step closes: look in
+`temp/`, find which shapes govern what was made, read, and settle
+each difference. Two of its endings are easy to misread as gaps in
+prose and are plainly endings here — "nothing was staged" is a
+complete answer, and "no shape governs this" means nothing is
+checked and that is correct.
+
+```mermaid
+flowchart TB
+  CLOSE["a step closes"] --> TMP{"anything staged<br/>in temp/ for this step?"}
+  TMP -->|no| TICK1["tick it, saying so —<br/>'none' is a complete answer"]
+  TMP -->|yes| MOVE["read it, then it becomes<br/>this project's own shape"]
+  TICK1 --> GOV
+  MOVE --> GOV{"does any shape govern<br/>what this step made?"}
+  GOV -->|none| NONE["nothing is checked,<br/>and that is correct"]
+  GOV -->|one or more| READ["read what the step made<br/>against each"]
+  READ --> DIFF{"a difference?"}
+  DIFF -->|no| TICK2["tick, naming what it<br/>was checked against"]
+  DIFF -->|yes| PROP["propose it as a diff —<br/>never correct it"]
+  PROP --> WHO{"the human says<br/>which of three"}
+  WHO -->|"the shape was wrong here"| A["the shape changes;<br/>the output stands"]
+  WHO -->|"the output drifted"| B["the output is brought<br/>to the shape"]
+  WHO -->|"each has something"| C["both move"]
+```
 
 A gate reads what a step made against every shape governing it. A
 difference is a question, and it ends one of three ways, decided per
