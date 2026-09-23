@@ -124,6 +124,22 @@ that paragraph as evidence the first slice needed it. SL-2 does not
 mention the facility at all. The item stays held; what changes is
 that it has now been checked rather than left looking unexamined.
 
+**F6 — `decide-first` is not returning what it costs, and we ship
+it.** Raised 2026-09-23 by the reviewer, after its draft for D1
+produced seven ordered questions and no purchase. Three firings are
+known. Ours of 2026-09-19, which the devlog records as working —
+"its count line did the work", "built and is not a wrapper". Run
+3's in the writing pass, whose lesson was that the draft was
+covering a pile of queued work rather than one unsettled shape.
+And today's, written and discarded. The complaint is not the one
+ADR-0030 already records as a review trigger — that one is about
+routing nowhere but a comparison skill. It is that writing the
+questions costs more than proposing a decision and correcting it
+while building, which is what `commit-plan` §4 and §5 already
+support with a Proposed ADR and revisions. This is a defect report
+against a convention this repo wrote and ships to runs, so it is
+not a local preference. Goes to TODO; not this branch's work.
+
 ## What the run taught us that we had not thought of
 
 **A tripwire never discharges a kill.** Our skill demanded a red
@@ -213,8 +229,14 @@ commit plan of their own; the rest are a commit or two.
   rule text, written once and approved before any of it lands,
   rather than approved a commit at a time. Two commits at least,
   since `.claude/` and PLAN never share one.
-- **W4 — a `decide-first` draft on the collector**, which settles
-  D1. One unsettled shape, not the pile below it.
+- **W4 — settle D1 provisionally, then polish it by building.**
+  Reshaped 2026-09-23, the reviewer's call. The `decide-first`
+  draft was written and discarded unstaged (F6). In its place: a
+  Proposed ADR stating the decision, a commit plan that implements
+  it, and the plan's revisions as the place the wording is
+  corrected — `commit-plan` §4 and §5, the shape this repo has used
+  before. The ADR flips to Accepted in the set's final records
+  commit, never in the close. **plan.**
 - **W5 — take the tripwire rule into the master** (D5). **plan** —
   the skill, its workflow reference, and the records.
 - **W6 — whatever D1 settles**: D2, D3, D4. **plan**, size unknown
