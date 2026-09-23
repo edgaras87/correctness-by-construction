@@ -63,12 +63,23 @@ has it right. Wrong for four days in the one file loaded in full on
 every task. **Fourth instance of the class** run 3 has now caught us
 on three times — and our own `bundle-update.md:133` uses this exact
 rename as the worked example when telling a run to sweep for it.
+**Fixed at `6a3eac3` (W1).** The seven other occurrences were read
+and none should change: five are append-only history in the devlog
+and the decisions log, one is a quotation inside a backlog item,
+one is that worked example, and one is a baseline frozen whole on
+2026-09-06 — where the old name is what the file said that day,
+which is what a baseline is for.
 
-**F2 — possibly more of the same noun in shipped files.**
-`delivery/fills/cbc-run-pure-playbook.md:26`,
-`delivery/installs/pure-seed.md:18, 32, 334`. Most read as
-historical narration inside comments; `pure-seed.md:334` reads as
-live prose. One grep pass decides, not a decision.
+**F2 — stale names and paths in live text.** Widened 2026-09-23
+by what W1 turned up; it is no longer about one noun. Two known
+targets. `delivery/installs/pure-seed.md:334` reads as live prose
+rather than the historical narration its neighbours at lines 18 and
+32 are, as does `delivery/fills/cbc-run-pure-playbook.md:26`. And
+the *live* header of `docs/baselines/claude-md-template-v1.md`
+points the reader at `starter/fills/claude-md-template.md` — a
+directory ADR-0029 renamed and a file ADR-0024 retired, so both
+halves of that pointer are wrong. The frozen half of the same file
+is correct and must not be touched.
 
 **F3 — run 3's last commit deleted five TODO items, and two have
 no survivor.** The commit message describes a rewrite of `Now` and
@@ -176,9 +187,15 @@ sayable until it settles.
 Preliminary order. Items marked **plan** are expected to need a
 commit plan of their own; the rest are a commit or two.
 
-- **W1 — fix `CLAUDE.md:25`.** Needs no decision. One commit.
-- **W2 — grep pass for the remaining stale noun** (F2). May fold
-  into W1 or may not, depending on what it finds.
+- **W1 — fix `CLAUDE.md:25`. Done, `6a3eac3`.** One commit, as
+  expected. It also paid for itself twice: reading the other seven
+  occurrences established that none of them should change, and it
+  is where the second half of W2 was found.
+- **W2 — a sweep for stale names and paths in live text** (F2).
+  No longer a fold into W1 and no longer one noun: two known
+  targets, and the sweep is for the class rather than the string,
+  which is the lesson we wrote for run 3 and keep failing to apply
+  here. Its own pass.
 - **W3 — the standing rule into PLAN and the decisions log.**
   Needs D8.
 - **W4 — a `decide-first` draft on the collector**, which settles
@@ -202,8 +219,13 @@ commit plan of their own; the rest are a commit or two.
 
 ## Notes
 
-- Ten work items, at least four of them wanting a commit plan. By
-  D8's test this is branch work.
+- Ten work items, one done. At least four of the rest want a
+  commit plan of their own, so by D8's test this stays branch work.
+- **Items keep their numbers when they close.** Marked done in
+  place rather than deleted, and never renumbered: this file cites
+  its own items by number, and so now does a TODO entry outside it.
+- Revised 2026-09-23 after W1 landed — the first time this file was
+  brought back into line with what is actually left.
 - W9 is deliberately last. A delivery costs the receiver a take,
   and run 3 has three branches of its own queued before SL-3.
 - Nothing here is staged into run 3's `temp/` yet. Its tree is
