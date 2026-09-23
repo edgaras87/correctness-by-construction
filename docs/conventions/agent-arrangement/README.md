@@ -23,9 +23,10 @@ The model describes; this page explains against it.
 A closed list of paths (HANDBOOK ADR-0019):
 
 - **`CLAUDE.md`** — the entry file, §2. The name is the tool's
-  (HANDBOOK ADR-0014); the shape is this convention's.
-- **`.claude/`** — the skills directory, the decisions log, and the
-  tool's settings, tracked and machine-local, §3.
+  (HANDBOOK ADR-0014); what goes in it is this convention's.
+- **`.claude/`** — the skills directory, the rules directory, the
+  shapes directory, the decisions log, and the tool's settings,
+  tracked and machine-local, §3.
 
 **Detachable, and kept so.** A commit that touches these paths
 touches nothing else, scoped `agent` — the rule is commit-messages',
@@ -137,8 +138,8 @@ again or leaves — the same move the decisions log makes for its entries
 directory per convention, the copy verbatim (convention-lifecycle §3
 owns the update; this convention owns the place). A project may add
 a skill of its own, for a moment-bound local rule the entry file
-must not hold (§2) — permitted, and its
-shape is not yet stated: what such a skill is, whether it registers,
+must not hold (§2) — permitted, and not yet
+defined: what such a skill is, whether it registers,
 how it survives the HANDBOOK ADR-0019 split are open until a project has
 written one.
 
@@ -150,7 +151,24 @@ when it writes a new one there — the tool deciding, not the agent
 of the tree, which a skill would carry only if the agent noticed the
 moment.
 Without the list, the file is the entry file by another name and
-fails §2's tests the same way. Empty at birth; the kit ships none.
+fails §2's tests the same way. Empty at birth until 2026-09-23,
+when the kit began shipping one: `shapes-lifecycle.md`, which
+governs the directory below (CBC ADR-0035).
+
+**`shapes/`** — where a project keeps an **unexposed** shape: what a
+kind of its own output looks like, form and never content. Nothing
+loads this directory, which is the whole of why it is a directory
+and not a rules file — a shape here is opened at a gate, so what the
+work produces *without* it stays visible, and a shape that should be
+in front of whoever writes moves to `rules/` with a `paths:` list.
+The place is therefore the force, and it is the only thing under
+`.claude/` of which that is true. Not born with the project and the
+kit ships none, deliberately: the first output of a kind is the only
+one nothing has influenced. A project makes the directory when it
+writes its first shape. When one is written, who moves it between
+here and `rules/`, and what an arriving delivery does are the rule's,
+in `rules/shapes-lifecycle.md` — which this convention places rather
+than states.
 
 **`decisions.md`** — the arrangement's decision log (HANDBOOK ADR-0020):
 append-only, dated, three lines per entry — what changed, why, what
@@ -176,7 +194,7 @@ neighbour: the operator's standing instructions, loaded beside the
 entry file and read the same way (model §4, ownership). One person,
 one checkout; the repo-hygiene base ignores it, and its words never
 enter a record — a record that quotes it has let one operator's
-preference into the project's truth. The kit ships no shape for it.
+preference into the project's truth. The kit ships no stub for it.
 
 ## 4. Anti-patterns
 
@@ -190,7 +208,7 @@ preference into the project's truth. The kit ships no shape for it.
   carries the test, and the header arrives with the first line that
   passes it (HANDBOOK ADR-0032).
 - **Restating a convention's rules "so they are always in context"** —
-  the rulebook shape; it grows once per convention and drifts from
+  the rulebook pattern; it grows once per convention and drifts from
   the source.
 - **A second entry file kept beside the first for another tool**,
   unless that tool is actually in use (HANDBOOK ADR-0014).
