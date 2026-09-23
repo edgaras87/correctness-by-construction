@@ -163,6 +163,14 @@ Preliminary order. D1 gates three of the others, which is why it is
 first and why the commit count for this whole reading is not
 sayable until it settles.
 
+**Settled 2026-09-23, all in one set: D1, D2, D3, D4 and D5.** D1's
+answer was not one of the three it offered — not accept, hold or
+decline a role, but *we already do this and have never named it*.
+That reframing came from the reviewer reading our own tree, and it
+collapsed D2, D3 and D4 into the same set rather than leaving them
+behind D1. D6, D7 and D8 remain open; D6 and the consequences of D1
+are now in TODO.
+
 - **D1 — do we become the collector?** Run 3 asks this repo to hold
   unexposed shapes from every project, stage them into a run's
   `temp/` with a note when that run reaches a gate ("I hold none" is
@@ -229,7 +237,13 @@ commit plan of their own; the rest are a commit or two.
   rule text, written once and approved before any of it lands,
   rather than approved a commit at a time. Two commits at least,
   since `.claude/` and PLAN never share one.
-- **W4 — settle D1 provisionally, then polish it by building.**
+- **W4 — settle D1 provisionally, then polish it by building.
+  Done, `1a96faa`..`6f51a7b`.** It settled differently from the way
+  it was framed. D1 was written as "do we take a new role", and
+  reading our own tree answered that we have run the mechanism since
+  2026-09-06 in `docs/baselines/` — so the question was never a role
+  but a missing name and rule. ADR-0035 accepted; the set took D2,
+  D3 and D4 with it, which is why W6 closes here too.
   Reshaped 2026-09-23, the reviewer's call. The `decide-first`
   draft was written and discarded unstaged (F6). In its place: a
   Proposed ADR stating the decision, a commit plan that implements
@@ -237,10 +251,14 @@ commit plan of their own; the rest are a commit or two.
   corrected — `commit-plan` §4 and §5, the shape this repo has used
   before. The ADR flips to Accepted in the set's final records
   commit, never in the close. **plan.**
-- **W5 — take the tripwire rule into the master** (D5). **plan** —
-  the skill, its workflow reference, and the records.
-- **W6 — whatever D1 settles**: D2, D3, D4. **plan**, size unknown
-  until D1.
+- **W5 — take the tripwire rule into the master. Done, `f2d9477`**,
+  as step 4b of W4's set rather than a set of its own: under
+  "takes first" it belonged beside the other edit to the same file.
+- **W6 — whatever D1 settles. Done inside W4's set**, `4e73d8a`,
+  `02d2495`, `9ce2d70`, `16868ea`. D2 and D3 were taken; D4 landed
+  as the arrangement manual's `shapes/` entry. The size that was
+  "unknown until D1" turned out to be most of a twenty-three-commit
+  set.
 - **W7 — write the inbound harvest manual** (D7), from the running
   of W4–W6 rather than from memory of the last three harvests.
   **plan**.
@@ -275,10 +293,19 @@ should.
 - **The order is preliminary and the reviewer reorders it.** W3
   moved from second to last mid-run, because the branch turned out
   to be the rule's own first firing.
+- **An item's own set can close other items.** W6 did not run; it
+  closed inside W4's set, because settling D1 meant taking what D2,
+  D3 and D4 asked. The list's items are not independent, and a
+  reading that assumes they are will over-count what is left.
+- **A decision can be answered by a question the list never asked.**
+  D1 offered accept, hold or decline. The answer was none of them —
+  the reviewer read our own tree and found the mechanism already
+  running, unnamed. The three options were all about a role, and the
+  thing that mattered was not a role.
 
 ## Notes
 
-- Ten work items, two done. At least four of the rest want a
+- Ten work items, five done — W1, W2, W4, W5 and W6. At least four of the rest want a
   commit plan of their own, so by D8's test this stays branch work.
 - Revised after W1, and again after W2. What each revision taught
   is in the section above, which is the one W3 reads.
