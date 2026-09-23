@@ -7,8 +7,11 @@
      arrangement than the current skills. Held for the three-way
      reading after the next full run: that run's derived CLAUDE.md
      vs this file vs cbc-derived-claude-walk1.md. The live
-     template continues at starter/fills/claude-md-template.md,
-     re-cut fresh the same day. The original garden header follows,
+     template was re-cut fresh the same day at
+     starter/fills/claude-md-template.md; that fill was retired by
+     ADR-0024 and its body now ships inside the container, so the
+     live text is delivery/container/.claude/CLAUDE.md. The
+     original garden header follows,
      preserved as frozen. -->
 
 <!-- Derives from concept v1 of correctness-by-construction

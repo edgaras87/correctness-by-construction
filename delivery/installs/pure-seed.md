@@ -331,7 +331,7 @@ reading afterwards, not instructions delivered to it: every
 delivered file committed on main by the agent, under its own
 sequence and the commit split the skills define (an add-all in
 one commit is an outcome the reading records, not one the seed
-prevents); a change-plan whose commit sequence is chosen and
+prevents); a commit plan whose sequence is chosen and
 justified (the entrance doc's place in it, when records enter
 history and how far they adapt to the method, whether skills land
 whole or split by source); its own CLAUDE.md; the record stubs filled; the
