@@ -833,13 +833,50 @@
       lands, the rule ships unfindable**, and this line is the
       record of it.
 
-- [ ] Fold run 3's step form and default gate items into the run
-      playbook (2026-09-23). Our playbook says "Gate: derived when
-      this step opens" for every step and carries no defaults; run
-      3's PLAN grew a form — two items at the opening, seven at the
-      close — and three of the close items are the shape check,
-      which is what makes the rule above findable. Their branch
-      trial rides with it and is still open.
+- [ ] **Now, and narrow:** one `Known already:` line about shapes on
+      the playbook's steps — check `temp/` for shapes staged for this
+      step and say what was found including nothing; read what the
+      step made against whatever governs it. This is the whole fix
+      for the item above and it needs no new ADR: ADR-0035 decision
+      8 already names the gap and says no new procedure is written.
+      It fits the existing design rather than reversing it — the
+      Release step already carries a `Known already:` list, so
+      supplying a fact into a derived gate is our idiom. It works
+      with zero shapes in existence, because "none" is a complete
+      answer.
+
+- [ ] **Held until run 3's Step 7 has run** (2026-09-23): fold its
+      step form and default gate items into the run playbook. The
+      form is two items at the opening and seven at the close,
+      copied into each step and never shared — "a step's gate item
+      carries that step's own tick, so one checkbox cannot serve six
+      steps". Two things worth taking on their own merits whatever
+      we decide: that line, and the reason the opening items cannot
+      wait — "a gate derived at the close is a description of what
+      happened rather than a standard the work was held to", which
+      our playbook half-says already in "written into this step
+      before its work starts".
+      **Held because the form has never fired.** Their Step 7 is the
+      first to use it. Taking an untested form is speculation, which
+      is the rule both repos apply everywhere else. The trigger is
+      their Step 7 closing and saying whether it held.
+
+- [ ] **Also held to the same trigger** (2026-09-23): run 3's two
+      standing rules, which sit in a `## Standing rules` section of
+      its PLAN above the steps, separate from the step form. One
+      branch per step — considered and not taken for this repo, our
+      branch test being commit plans rather than steps. And **gate
+      items ticked as they come true**, on trial there since Step 6
+      and never evaluated here: an item is ticked the moment it is
+      verifiably true, the step's marker stands at `[~]` from first
+      tick to last, and a tick records a verification rather than
+      that the item is final. Its argument is that "a gate that
+      reads all-unticked through a step is not telling the truth
+      about where the step is".
+      The section's own form is worth copying whatever we take from
+      it: a heading, then a comment giving the arrival date, the
+      trial status, and a pointer to the decisions log for the why
+      and the rejected options.
 
 - [ ] Sort `docs/baselines/` (2026-09-23, ADR-0035 decision 6).
       Two kinds are in there and their blindness runs opposite
