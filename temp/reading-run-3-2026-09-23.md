@@ -212,3 +212,62 @@ commit plan of their own; the rest are a commit or two.
   operator's step either way.
 - This file is itself on trial. If it turns out to be TODO's "Now"
   written earlier, one firing will show it and we drop it.
+
+## Why this file has this shape
+
+Written down because it lives nowhere else. The shape was settled
+in conversation on 2026-09-23, and W7 will be written from this
+file rather than from that conversation.
+
+**The branch is `reading-run-3-2026-09-23`**, cut from main at
+`93b7f1a`. Named for the artifact, because the artifact is what
+decided the branch exists. Recorded here because this repo has made
+no merge commit in its history — every branch is fast-forwarded, so
+nothing in main will say a branch existed or what it was called.
+
+**The list is not a commit plan, and could not be.** That
+convention rules it out twice over: it plans the commits and not
+the change, so what is being changed is settled *before* it opens —
+and half the list here is not settled. And it forbids status, where
+this list must carry it, because settling one item reshapes or
+deletes others.
+
+**The kind is `plan`, by `artifact-kinds`' own test.** *Does it lie
+if not kept current?* Yes. Narrowed from "one per project" to one
+per undertaking, which that convention permits — contexts may
+specialise, not contradict. Its top half is findings, which
+describes; a hybrid, named by its dominant force.
+
+**The reading comes before the branch, not after.** The branch test
+is whether the work needs more than one commit plan, and only the
+list can answer that. So the reading is written first, on main, and
+the branch is cut from what it counts.
+
+### What was rejected
+
+- **TODO's "Now" section as the home.** It is the nearest fit and
+  the real competitor: an ordered worklist for what is being done
+  now, where the last two harvests went. Rejected because TODO
+  accretes — completed entries stay as history, which is its job —
+  and this list is edited down as it is worked. A record whose
+  value is that nothing leaves it cannot hold a list whose value is
+  that things do.
+- **A branch per step, run 3's standing rule.** Rejected because
+  their steps are gated: the gate closes, then the branch
+  fast-forwards, so the branch is the unit the gate certifies. A
+  reading has no gate. Taking their rule because we happened to be
+  reading their repo is the wrong way for a convention to arrive.
+- **A `.claude/rules/` file with a `paths:` list.** Rejected on
+  mechanism: a rules file loads when a matching path is touched,
+  and a reading begins with no file open. The trigger could never
+  fire.
+- **Making it a convention now.** Rejected as generalising from one
+  firing — the thing that withdrew ADR-0021, and what run 3's own
+  `shapes-lifecycle` §1 rules out. It goes in as a standing rule on
+  trial (D8) and earns promotion or dies.
+
+### What is deliberately not being done yet
+
+The manual, an `installs/` file, or a convention. That is D7 and
+W7, and it should be written from two firings. Noting the reasoning
+is not promoting it.
