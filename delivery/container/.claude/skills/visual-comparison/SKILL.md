@@ -112,6 +112,19 @@ name the case, it is not an entry yet.
   The fix was not a third box but the recognition that the
   operator is transport, not a place (CBC ADR-0028).
 
+- **Asked for a picture, this method is not always what is wanted.**
+  A model written in prose was asked for a diagram of it. The method
+  was reached for, and most of it was not run — no non-picture
+  candidate, requirements written after the first candidate was
+  built, no verdict settled by looking. What the work actually
+  needed was to build one picture, ask what it was *for*, and build
+  the second picture that question produced. §1's "it does not fire
+  for a form with one obvious answer" covers this, and was read as
+  being about simple forms rather than about clear answers. Adding
+  two pictures to one document is ordinary work; it earned no ADR,
+  and writing one would have been ceremony over a comparison that
+  did not happen (CBC, the shapes model, 2026-09-23).
+
 - **Using a dialect is not fighting it.** Ordinary syntax is
   ordinary. Invisible links, spacer nodes and nodes declared out
   of meaning order are the fight, and a candidate needing them has
