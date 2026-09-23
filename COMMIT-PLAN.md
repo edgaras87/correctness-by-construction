@@ -53,14 +53,21 @@ name — and §2's "the repository this project takes its method from",
 which is wrong once a shape's home follows its group. The
 container's first `.claude/rules/` artifact.
 
-**4. `chore(agent): a project is born with the shapes place`**
-*Revised at step 3's boundary — one stub, not two.* `.claude/rules/`
-needs none: step 3 landed a real file in it, and `agent-arrangement`
-§3 already says what that directory is for. Only `.claude/shapes/`
-ships empty and therefore needs a stub saying what belongs in it and
-that nothing loads it. Ships the place, never the contents — an
-unexposed shape in a birth copy spends the one thing that cannot be
-got back.
+**4. Dropped at its own boundary — the container ships no shapes
+directory.** It was to be a stub for `.claude/shapes/`. The stub was
+written, staged and discarded: it said what `agent-arrangement` §3
+and the rule's own §2 already say, and most of what was left was
+making an empty directory trackable at all. A project creates the
+directory when it writes its first shape.
+
+What the drop exposes, and it is real: the rule loads only when a
+file under `.claude/shapes/` is read, so a project with no shape
+never meets it. Two other homes were weighed and rejected — a clause
+in `artifact-kinds`, which has no moment and waits to be stumbled
+on, and the stub itself. The answer is a default gate item at a
+step's close, which is run 3's step form and is not in this set.
+**Recorded at step 10 as a gap this set ships with**, not papered
+over.
 
 **4a. `docs: the arrangement names the shapes directory`**
 *Added at step 3's boundary.* `agent-arrangement` §3 enumerates what
@@ -142,6 +149,11 @@ finding owed back to never-oversold. Never the close commit.
   gave `.claude/rules/` an occupant, and 4a was missing entirely —
   the container half claimed to be three parts and the third had no
   commit. Recorded here rather than absorbed, per `commit-plan` §5.
+- **Then step 4 was dropped at its own boundary**, on the reviewer's
+  reading that a third statement of one fact is not a stub but
+  duplication. Kept in the list as a dropped step rather than
+  deleted, so the close reads what was planned and did not happen,
+  and so the gap it leaves is visible rather than inferred.
 - **Steps 5, 6 and 9 are provisional and say so.** The count is
   sayable at four and soft after that; the honest form is a firm head
   and a marked tail rather than confidence about steps whose shape
