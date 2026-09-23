@@ -68,6 +68,15 @@ provided, specifics awaited. Force of whatever it will become;
 template. *Is it full of `<placeholders>`?* Yes → template.
 Exemplar: the stubs this repo's records were born from.
 
+**shape** — what a kind of a project's output looks like here: its
+form, never its content. Its force is the one kind whose force is
+decided by placement — it *binds* where the project puts it in front
+of whoever writes, and *describes* where it does not — so where it
+sits is part of what it is. Instance, one per kind of output;
+consulted. *Does it say how an output should look, and leave what it
+says to someone else?* Yes → shape. Exemplar: none named yet; a
+project's first is written from its own work rather than supplied.
+
 **specification** — a precise, testable description of what
 something must be. Binds; consulted. *Could a test verify
 conformance to it?* Yes → specification. Exemplar: none named yet
@@ -101,3 +110,7 @@ the gate lists inside PLAN.md steps.
 - HANDBOOK ADR-0009 — own words, stolen axes: the kinds are located
   by force and reuse, and the frameworks' word lists are not
   imported
+- CBC ADR-0035 — the **shape** entry, on never-oversold's finding:
+  naming its first shape took "model" plus a paragraph saying model
+  is wrong, and the vocabulary had nothing for a document whose
+  force depends on where it is put
