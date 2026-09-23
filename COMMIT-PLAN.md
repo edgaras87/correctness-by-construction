@@ -78,17 +78,34 @@ and cannot share the agent-side one above. The plan had no step for
 it; it was the reading's D4, carried in the ADR's decision 1 and
 never given a commit.
 
-**5. `docs: a shape rides the group of the thing it shapes`**
-*Provisional in extent.* `delivery/README.md` — the placement rule,
-and a pinned-copies row for an exposed shape. Whether the row is
-written with no occupant, or deferred until one exists, is decided
-at step 4's boundary.
+**4b. `chore(agent): cbc-slice says what a test is for, and what a tripwire is`**
+*Added at step 4a's boundary, with the swap below.* never-oversold's
+Stage 3 edit — the last of its material not in this set. Each test
+carries its criterion, its guarantee and its kill beside it in plain
+words; a test that cannot fail for the invariant says on itself that
+it is a tripwire on a decided face — and **a tripwire never
+discharges a kill**, with the red run deciding which kind a test is
+rather than its author. It closes a hole we shipped: the skill
+demanded a red for every guarantee and said nothing about a test
+that cannot be reddened, so such a test was either mislabelled as
+evidence or deleted.
 
-**6. `chore(agent): cbc-slice reads a slice against the project's shapes`**
+Numbered 4b rather than renumbering the tail, so the cross-references
+already written into steps below keep pointing where they point. It
+runs before step 5 because Stage 3 precedes Stage 4 in the file both
+edit.
+
+**5. `chore(agent): cbc-slice reads a slice against the project's shapes`**
 *Provisional.* The Stage 4 edit, which was dead text before this ADR
 because a project had no notion of a shape, and is live after it.
 Belongs to `method`, not the container, which is why it is here
 rather than beside step 2.
+
+**6. `docs: a shape rides the group of the thing it shapes`**
+*Provisional in extent.* `delivery/README.md` — the placement rule,
+and a pinned-copies row for an exposed shape. Whether the row is
+written with no occupant, or deferred until one exists, is decided
+at step 4's boundary.
 
 **7. `docs: the baselines drawer holds evidence, not shapes`**
 The distinction written where the drawer is described. Its own step
@@ -154,7 +171,16 @@ finding owed back to never-oversold. Never the close commit.
   duplication. Kept in the list as a dropped step rather than
   deleted, so the close reads what was planned and did not happen,
   and so the gap it leaves is visible rather than inferred.
-- **Steps 5, 6 and 9 are provisional and say so.** The count is
+- **Steps 5 and 6 swapped, and 4b added, 2026-09-23.** The
+  reviewer's order is take first, decide our own side after:
+  everything never-oversold edited or offered lands, and only then
+  does this repo choose where it keeps and ships shapes. The old
+  step 5 was ours and stood ahead of a take. The tripwire edit was
+  in no step at all — it had been sitting in the reading as its own
+  future set, and under this order it belongs here beside the other
+  edit to the same file. Steps 6, 7 and 8 are now all our side and
+  sit together behind the last take.
+- **Steps 6, 7 and 9 are provisional and say so.** The count is
   sayable at four and soft after that; the honest form is a firm head
   and a marked tail rather than confidence about steps whose shape
   earlier boundaries decide.
