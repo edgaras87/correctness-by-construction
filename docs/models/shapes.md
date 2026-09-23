@@ -83,6 +83,15 @@ which is the only one nothing has influenced yet. Exposed is chosen
 when conformance is what is wanted, and keeping the shape out of
 sight would only make the next output re-derive it badly.
 
+**The reviewer moves a shape, in both directions, and no count
+does.** Exposing one and withdrawing it again are judgements. A
+count can only prompt the question — a shape that has taken nothing
+up across several closes has probably stopped teaching, one that
+keeps changing probably still is — and the shape's own dated lines
+are what the question is asked against. Changing an exposed shape
+does not withdraw it; it returns to `.claude/shapes/` only when
+someone decides the question is open again.
+
 ## 4. Where a shape lives, between repositories
 
 Inside a project, §3. Between repositories, a shape follows the
@@ -97,6 +106,16 @@ Only an exposed shape travels that way, as a pinned copy. An
 unexposed one is in no birth copy at all — it would spend the only
 independence there is — so it is held apart, names its group, and
 reaches a project as a delivery staged at a gate.
+
+**A project fetches nothing.** It holds no address for its deliverer
+and reaches no repository but its own; what arrives, arrives because
+a person asked for it and staged it. So the gate's act is local and
+always the same: look in `temp/`. And what it finds does not stay a
+delivery — after the gate has read it, the result **becomes that
+project's own shape**, whether it came back unchanged, changed by
+what the project found, or merged with what was already there. The
+staging leaves; the shape stays, with dated lines saying what
+arrived, what was taken and what was refused.
 
 **Birth and delivery, drawn.** Where a shape of each kind sits here,
 and the two different moments at which each reaches a run. Every
@@ -125,10 +144,25 @@ flowchart LR
   MADE -->|"read against it, at the close"| SHP
   SHP -->|"the reviewer exposes"| RUL
   RUL -->|"the reviewer withdraws"| SHP
+
+  SHP -.->|"read at a harvest: what it kept,<br/>and what its dated lines say"| UN
+  RUL -.->|"read at a harvest: the copy<br/>against the pin it was sent at"| EX
 ```
 
+**The dashed lines back are a reading, and the difference in the
+line is the point.** Nothing is sent upward and nothing is fetched:
+this repo opens a run's tree read-only and looks at both places — at
+`.claude/shapes/` for what the project kept and what its dated lines
+say it refused, and at `.claude/rules/` for the copy against the pin
+it was sent at. The run never reads this repo at all. That asymmetry
+is the whole traffic model, and a solid arrow in one direction with a
+dashed one in the other is the only part of this picture that states
+it rather than captioning it.
+
 What travels upward is a **finding**, never a proposal: one project
-saying what it arrived at. What must not travel is a status, not a
+saying what it arrived at — and it travels by being *read*, not by
+being sent. A project offers by keeping its shape where its own
+records are, and this repo finds it when it next reads that run. What must not travel is a status, not a
 wording — a shape handed down as a standard is inherited rather than
 derived, and the next project's own answer is lost before it is
 written. The protection is in how a shape moves, not in how vaguely
@@ -161,9 +195,16 @@ flowchart TB
   WHO -->|"each has something"| C["both move"]
 ```
 
-A gate reads what a step made against every shape governing it. A
-difference is a question, and it ends one of three ways, decided per
-difference and never by a policy of preferring one side: **the shape
+A gate reads what a step made against every shape governing it, and
+**what it ticks records what it checked against** — including that
+nothing was staged and nothing governed, which are answers rather
+than omissions. A tick with no note is what would be wrong.
+
+A difference is **proposed as a diff and never corrected**. That is
+the whole guard against a shape check becoming a review of the work:
+the gate says where two things differ, and a human says what that
+means. It ends one of three ways, decided per difference and never
+by a policy of preferring one side: **the shape
 was wrong here**, so it changes and the output stands; **the output
 drifted**, so it is brought to the shape; or **each has something**,
 and both move.
