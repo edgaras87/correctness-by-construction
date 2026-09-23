@@ -77,6 +77,62 @@ flowchart TB
   WHO -->|"each has something"| C["both move"]
 ```
 
+## Candidate 1b — the two repos, with nothing crossing
+
+The same content as candidate 1, with R3 answered structurally
+rather than by a label. Nothing crosses because there are two
+pictures, and what carries between them is a sentence.
+
+**What this repo holds.**
+
+```mermaid
+flowchart TB
+  EX["an exposed shape<br/>in the group of the thing it shapes"]
+  UN["unexposed stock<br/>held apart, naming its group<br/>(none held yet)"]
+  EX --- NOTE["both sit here until<br/>someone carries them"]
+  UN --- NOTE
+```
+
+Between the two: **a person copies files across.** At a birth or an
+update an exposed shape is copied into the run's `.claude/rules/`;
+for one step's gate an unexposed one is staged into the run's
+`temp/`. Neither repo reaches the other, and neither picture shows
+an arrow that leaves it.
+
+**What a run finds, and what it does with it.**
+
+```mermaid
+flowchart TB
+  RUL[".claude/rules/<br/>loads on its paths:<br/>— arrives at a birth or an update"]
+  TMP["temp/<br/>— arrives for one step's gate"]
+  SHP[".claude/shapes/<br/>nothing loads it"]
+  TMP -->|"the gate opens it"| SHP
+  SHP -->|"the reviewer exposes"| RUL
+  RUL -->|"the reviewer withdraws"| SHP
+```
+
+### What building 1b found
+
+- **The obvious Mermaid way to build it is disqualified by our own
+  list.** One picture with two unconnected subgraphs needs `~~~`
+  invisible links to sit them side by side, and the lesson list says
+  a candidate needing invisible links or spacer nodes has lost
+  (ADR-0027 decision 2). So 1b is not one picture at all — it is two
+  pictures and a sentence, and that is the only form of it that does
+  not fight the notation.
+- **That may be the answer rather than a compromise.** R3 stops
+  being a claim a label has to carry and becomes a fact about the
+  page: there is no arrow out of either picture, because there is no
+  arrow out of either repo.
+- **What it costs: the two moments get harder to see.** Candidate 1
+  put "at a birth or an update" and "for one step's gate" on arrows,
+  where a reader meets them in motion. Here they are captions inside
+  the run's boxes, arriving already landed. R2 is weaker.
+- **And a page with three pictures on it is now the real question.**
+  1b is two, candidate 2 is a third. Whether a model carries three
+  pictures, or whether 1b's first half is better as the prose it
+  nearly already is, is what the render has to settle.
+
 ## What building it already shows
 
 Judgements to make by looking, not by reasoning about it.
