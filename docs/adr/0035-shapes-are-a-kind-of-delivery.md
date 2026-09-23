@@ -1,8 +1,10 @@
 # 0035. What a shape is belongs to the container; each rides its group
 
 Date: 2026-09-23
-Status: Proposed (opened at this set's first commit; flips to
-Accepted in the set's final records commit, never in the close)
+Status: Accepted (2026-09-23, at the set's final records commit;
+opened Proposed and revised at a boundary before acceptance —
+decision 4 promised a shipped `.claude/shapes/` stub, and the stub
+was written, staged and dropped as duplication)
 
 ## Context
 
@@ -102,12 +104,25 @@ CbC outputs and are not the container's business at all.
    §3. It takes a row in the pinned-copies table like any other
    delivered path.
 
-4. **The container ships the places, never the contents.** A newborn
-   gets `.claude/rules/` and `.claude/shapes/` with a stub saying
-   what belongs in each — the container's existing idiom, the way
-   the record stubs ship. An unexposed shape must never be in a
-   birth copy: the first output of a kind is the only one nothing
-   here has influenced, and shipping one spends that for good.
+4. **The container ships no shapes directory, and a project makes
+   one when it writes its first shape.** *Revised at this step's own
+   boundary.* The rule and `agent-arrangement` §3 both say what the
+   directory is for, so a stub in it was a third statement of one
+   fact, and most of what remained was making an empty directory
+   trackable. What must never happen still holds and is the reason
+   nothing is shipped into it: an unexposed shape in a birth copy
+   spends the only independence there is, since the first output of
+   a kind is the only one nothing here has influenced.
+
+   **The gap this leaves is named rather than hidden.** The rule
+   loads only when a file under `.claude/shapes/` is read, so a
+   project holding it with no shape never meets it. Two other homes
+   were weighed and rejected — a stub in the directory, and a clause
+   in `artifact-kinds`, which has no moment and waits to be stumbled
+   on. The answer is a default gate item at a step's close, which is
+   run 3's step form and is not in this set. **This set ships a rule
+   a project can hold and not find**, and that is the cost of
+   dropping the stub rather than an oversight.
 
 5. **Unexposed stock is held apart from the groups, and each piece
    names the group it belongs to.** It is not part of any birth copy,

@@ -814,6 +814,77 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Our own side of shapes — the half ADR-0035 deliberately did
+      not decide (2026-09-23). Where this repo keeps unexposed
+      stock, what it stages to whom and when, and whether
+      `delivery/shapes/` ever exists. The rule is written and the
+      directory arrives with its first occupant; we hold none. It
+      waits on a first shape being ours to hold — never-oversold's
+      `slice-record.md` is offered and not yet evaluated.
+
+- [ ] A project can hold the shape rule and never find it
+      (2026-09-23, ADR-0035 decision 4). The rule loads only when a
+      file under `.claude/shapes/` is read, so a project with no
+      shape never meets it. A stub in the directory and a clause in
+      `artifact-kinds` were both weighed and rejected. The answer is
+      a default gate item at a step's close — which means folding
+      run 3's step form and its default gate items into
+      `cbc-run-pure-playbook.md`, the item below. **Until that
+      lands, the rule ships unfindable**, and this line is the
+      record of it.
+
+- [ ] Fold run 3's step form and default gate items into the run
+      playbook (2026-09-23). Our playbook says "Gate: derived when
+      this step opens" for every step and carries no defaults; run
+      3's PLAN grew a form — two items at the opening, seven at the
+      close — and three of the close items are the shape check,
+      which is what makes the rule above findable. Their branch
+      trial rides with it and is still open.
+
+- [ ] Sort `docs/baselines/` (2026-09-23, ADR-0035 decision 6).
+      Two kinds are in there and their blindness runs opposite
+      ways: trial evidence, withheld so that a later derivation
+      measures independence rather than imitation, and anything
+      that is really a shape, withheld only until a gate. The
+      codemap row now says which stays; nothing has been moved.
+      A wrong move destroys a measurement that cannot be remade,
+      so this wants its own reading rather than a tidy-up.
+
+- [ ] Five shipped artifacts tell a project to use `temp/` and the
+      container ships none (2026-09-23). `decide-first`,
+      `option-comparison` and `visual-comparison` each say to work
+      in a `temp/` draft; `shapes-lifecycle` says a gate looks
+      there; `bundle-update.md` stages into it. A newborn is told to
+      use a folder it was not born with, and no shipped text says
+      what the folder is or that it is tracked. Predates shapes;
+      found while placing them.
+
+- [ ] Re-render the ARCHITECTURE codemap (2026-09-23), by
+      `visual-comparison` and as its own set. Two rows are now
+      **900+ and 782 characters** on one line, against 282 for the
+      next and about 55 for the median of the other seven. An editor
+      cannot show the line and a line diff marks the whole row when
+      one word changes. never-oversold killed a table of its own on
+      this measurement at 435. This set made both rows worse, twice,
+      which is the evidence rather than an aside.
+
+- [ ] `artifact-kinds` asks for a changelog line with every new kind
+      and this repo has nowhere to put one (2026-09-23). The shape
+      entry's line went to the skill's own Decisions section beside
+      HANDBOOK ADR-0009, which is the closest thing and is not what
+      the rule says. Either the rule means that section, or the
+      convention wants a changelog the container does not ship.
+
+- [ ] `agent-arrangement`'s manual says "the kit" six times
+      (2026-09-23). ADR-0029 renamed ours to `delivery/container/`
+      because "kit" named where the files came from rather than
+      what they are. It is a consistent vocabulary in that file
+      rather than a slip, so changing one instance would leave it
+      inconsistent — a sweep, and its own small set. Two loose uses
+      of "shape" in the same file were fixed when the word gained a
+      definition; a third pass may find more of that class
+      elsewhere.
+
 - [ ] Does this repo's working arrangement still fit it? Proposed
       as the next branch after `reading-run-3-2026-09-23` closes,
       with its own reading — which would be the second firing of
