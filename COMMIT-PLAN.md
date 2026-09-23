@@ -53,12 +53,23 @@ name — and §2's "the repository this project takes its method from",
 which is wrong once a shape's home follows its group. The
 container's first `.claude/rules/` artifact.
 
-**4. `chore(agent): a project is born with the two places`**
-The stubs for `.claude/rules/` and `.claude/shapes/`. Ships the
-place, never the contents: an unexposed shape in a birth copy spends
-the one thing that cannot be got back. Its own step because it is
-the container half's last piece, and because after it that half
-stands alone if the rest is abandoned.
+**4. `chore(agent): a project is born with the shapes place`**
+*Revised at step 3's boundary — one stub, not two.* `.claude/rules/`
+needs none: step 3 landed a real file in it, and `agent-arrangement`
+§3 already says what that directory is for. Only `.claude/shapes/`
+ships empty and therefore needs a stub saying what belongs in it and
+that nothing loads it. Ships the place, never the contents — an
+unexposed shape in a birth copy spends the one thing that cannot be
+got back.
+
+**4a. `docs: the arrangement names the shapes directory`**
+*Added at step 3's boundary.* `agent-arrangement` §3 enumerates what
+lives under `.claude/` — `skills/`, `rules/`, the decisions log — and
+now omits one. Its manual is `docs/conventions/agent-arrangement/`,
+which is ours and ships to nobody, so this is a project-side commit
+and cannot share the agent-side one above. The plan had no step for
+it; it was the reading's D4, carried in the ADR's decision 1 and
+never given a commit.
 
 **5. `docs: a shape rides the group of the thing it shapes`**
 *Provisional in extent.* `delivery/README.md` — the placement rule,
@@ -126,6 +137,11 @@ finding owed back to never-oversold. Never the close commit.
   stays in the drawer; moving anything is a separate set with its own
   reading, because a wrong move there destroys a measurement that
   cannot be remade.
+- **Two divergences at step 3's boundary, both found by doing the
+  work rather than by planning it.** Step 4 shrank because step 3
+  gave `.claude/rules/` an occupant, and 4a was missing entirely —
+  the container half claimed to be three parts and the third had no
+  commit. Recorded here rather than absorbed, per `commit-plan` §5.
 - **Steps 5, 6 and 9 are provisional and say so.** The count is
   sayable at four and soft after that; the honest form is a firm head
   and a marked tail rather than confidence about steps whose shape
