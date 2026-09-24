@@ -1,12 +1,12 @@
 ---
 name: artifact-kinds
-description: Vocabulary of document kinds — convention, model, guide, playbook. Use when writing or requesting a document whose kind must be named.
+description: Vocabulary of document kinds — convention, model, playbook, plan. Use when writing or requesting a document whose kind must be named.
 ---
 
 # Artifact Kinds
 
 A shared vocabulary for the kinds of documents we create and
-request, so that "draft a guide" or "is this a convention or a
+request, so that "draft a playbook" or "is this a convention or a
 model?" resolves the same way for everyone. Kinds are located by
 axes and anchored by exemplars, never by membership tests.
 
@@ -29,22 +29,20 @@ the word.
 **concept** — an idea, pre-artifact; lives inside documents, never
 a document kind itself. Describes; no home of its own. *Is it a
 thing you could hand someone as a file?* No → concept. Exemplar:
-"the distillation pipeline" in project-recording.
+*force* and *reuse* in §1 of this file — named, used, and not
+documents.
 
 **model** — a structured description of how things relate; says
 what is, demands nothing. Describes; studied. *Could you disagree
-with it and violate nothing?* Yes → model. Exemplar: the
-record-system diagram in project-recording.
+with it and violate nothing?* Yes → model. Exemplar: this project's
+own `ARCHITECTURE.md` once filled — it says how the parts relate
+and binds nobody.
 
 **convention** — a normative agreement about how we do things;
 deviation is allowed but needs a reason. Binds; consulted. *If
 someone ignores it, do they owe an explanation?* Yes → convention.
 Exemplar: the commit-messages convention, wherever this repo holds
 it.
-
-**guide** — an advisory how-to; teaches a good path without binding
-to it. Advises; studied or consulted. *If someone ignores it, is
-that fine?* Yes → guide. Exemplar: none named yet.
 
 **playbook** — a reusable script for a type of undertaking: step
 sequence, gates, accumulated warnings; copied per instance, never

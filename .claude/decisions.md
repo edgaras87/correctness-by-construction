@@ -689,3 +689,30 @@
   Consequence, named rather than hidden: a choice that is not about
   showing something now has no skill. It gets decided and corrected
   while building, which is what `commit-plan` §4 and §5 carry.
+
+- 2026-09-24 `artifact-kinds`: `guide` dropped, two exemplars
+  re-anchored. Ten kinds where there were eleven.
+  Why the exemplars: the manual's own rule says an exemplar names a
+  document by the role it holds *for the reader*, so the word points
+  at the right file from our seat and from a born project's. Two did
+  not. *concept* and *model* pointed into `docs/conventions/`, which
+  never ships — a run opened the vocabulary and read two examples it
+  could not see. They now name `§1` of the file itself and the
+  reader's own `ARCHITECTURE.md`. Raised by the reviewer asking
+  whether a global dictionary misleads when the context changes; it
+  did, in exactly this way, and the rule against it was already
+  written.
+  Why `guide` goes: an advisory how-to, no exemplar in a year, and
+  no live text outside this vocabulary reaching for the word. The
+  scope rule is the convention's own — a kind earns an entry only
+  when its absence has caused someone to reach for the wrong word.
+  Rejected: dropping `specification` with it, which is how this
+  started. It has no exemplar either, and it is load-bearing:
+  `docs/models/shapes.md` §2 defines a shape by what it is not, and
+  *could a test verify conformance?* is the line that separates the
+  two. A word can be load-bearing without ever being worn, and the
+  no-exemplar test does not see that.
+  Not done here: our copy is still one entry behind the master —
+  the `shape` kind has been in what we ship since 2026-09-23 and has
+  never reached us, because we deliver to runs and never to
+  ourselves. The drift is named, not fixed.
