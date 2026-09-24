@@ -748,3 +748,34 @@
   has never decided anything, and cutting the file to 84 lines. Both
   were staged and both are dropped; they made an unusable thing
   smaller.
+
+- 2026-09-24 The document rule is a shape, exposed, and this repo's
+  first. `.claude/rules/document-header.md`, `paths: **/*.md`.
+  Why there: it was written into `CLAUDE.md` first, and both of that
+  file's own tests sent it away. Test 2 names `.claude/rules/` with a
+  `paths:` list as the home for a rule that has a moment, and writing
+  a document is the moment. Test 3 asks whether anything else would
+  deliver it — a rules file does, automatically, where a line in the
+  entry file waits to be read and followed. `CLAUDE.md` is back to
+  what it was.
+  Why a shape rather than a convention: `shapes-lifecycle` §1 asks
+  that a shape be written from work that exists, and this one
+  recurred in eight of ten documents before anyone wrote it down.
+  §2 puts an exposed shape in `.claude/rules/` — exposed because
+  conformance is what is wanted here, not independence.
+  This is the first occupant of a directory we have shipped since
+  2026-09-23 and never held, and the first test of the rule we wrote
+  for other people.
+  Rejected: `CLAUDE.md` carrying the rule text, which the reviewer
+  asked for and which was staged. A pointer that must be read and
+  followed is weaker than a file that loads itself, and the entry
+  file is the one place where every added line costs every task.
+  Rejected: a convention — manual, skill, shipped copy. That is the
+  three-places cost this day has been spent removing.
+  Corrected before the commit, on the reviewer's question: the shape
+  was written with a "Where this came from" section giving its birth
+  and what it replaced. That is provenance in an artifact, which
+  ADR-0034 rules out — a comment says how to use a thing or what a
+  part is, never what changed — and it duplicated this entry. Cut.
+  The dated lines `shapes-lifecycle` §3 wants are a different thing:
+  what the shape takes up as it goes, and nothing has yet.
