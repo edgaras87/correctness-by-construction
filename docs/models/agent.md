@@ -25,8 +25,8 @@ A structured description of what an AI agent working inside a
 repository *is*: its parts, the channels that carry text into it, and
 what each channel can and cannot guarantee.
 
-This is a **model**, not a convention (artifact-kinds: *could you
-disagree with it and violate nothing?* — yes). It binds nothing. Its
+This is a **model**: you could disagree with all of it and violate
+nothing. It binds nothing. Its
 job is to let conventions be written against something stated, instead
 of each author reasoning from a private picture of "the agent".
 

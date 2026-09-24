@@ -81,9 +81,9 @@ in front of whoever does the work.
 
 The directory is not a filing decision. It *is* the force: the same
 file binds in one place and merely describes in the other, and
-nothing else in the arrangement works that way. That is why
-`artifact-kinds` gives shape the only entry whose force is decided
-by placement rather than fixed.
+nothing else in the arrangement works that way: a shape is the one
+thing here whose force is decided by where it sits rather than
+fixed.
 
 Unexposed is chosen while it still matters what the work produces
 *without* the shape — most of all for the first output of a kind,
@@ -233,10 +233,10 @@ with §2's four boundaries, violates nothing and costs nothing; the
 worst case is that this file is wrong and wants correcting.
 
 What does bind is elsewhere and is short: the rule says how shapes
-live and what a gate does, `delivery/README.md` says where one
-sits, and `artifact-kinds` gives the word. This exists so that a
-month from now the rule is recallable — so that "why is this a
-directory and not a rules file?" has an answer that is not
+live, what a gate does, and what the word means; `delivery/README.md`
+says where one sits. This exists so that a month from now the rule
+is recallable — so that "why is this a directory and not a rules
+file?" has an answer that is not
 archaeology.
 
 ## 7. What this does not cover

@@ -165,7 +165,7 @@ rows:
 | `README.md` carries a body composed here, not the kit's stub | the same reading and the same delivery rule |
 | `.claude/decisions.md`'s birth entry, and the comment above it, name both upstreams | the delivery has two parents and the record says so |
 | `convention-lifecycle` §2 says "the deliverer" where it said "the handbook", in two places | never-oversold found the file pointing at a repo it no longer uses, on the first delivery after the take (2026-09-18). Its own manual already said "the deliverer's commit hash" — the skill and its manual had disagreed upstream, and this closes it |
-| One convention the handbook's kit never had: `visual-comparison` | written here, and a convention of this container rather than the handbook's (CBC ADR-0031). A run is born with eight, not seven; its decisions are cited `CBC ADR-nnnn` because they are ours to explain. Two siblings shipped beside it and were discarded unused, 2026-09-24 |
+| One convention the handbook's kit never had: `visual-comparison` | written here, and a convention of this container rather than the handbook's (CBC ADR-0031). A run is born with seven, and not the same seven; its decisions are cited `CBC ADR-nnnn` because they are ours to explain. Two siblings shipped beside it and were discarded unused, 2026-09-24 |
 
 Inside the two composed entry files, some text came from the kit's
 own stubs — `.claude/CLAUDE.md`'s title line, records table and

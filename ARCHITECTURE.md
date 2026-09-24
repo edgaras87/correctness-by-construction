@@ -120,8 +120,9 @@ arrived; what differs is listed beside the set as a reading aid
 for a re-sync, not a gate — and two files were added that the
 kit never had: one convention (ADR-0031) and the shape
 lifecycle, the container's first `.claude/rules/` artifact
-(ADR-0035). Two more conventions were added and discarded unused,
-2026-09-24. The eight convention manuals sit in
+(ADR-0035). Three more conventions were added and discarded,
+2026-09-24 — two unused, and `artifact-kinds` after five firings in
+a year. The seven convention manuals sit in
 `docs/conventions/` — the *why* behind each rule, for a maintainer,
 never shipped — and move with the rules they explain. Inside the
 container the parts divide by how they reach a run: the seven

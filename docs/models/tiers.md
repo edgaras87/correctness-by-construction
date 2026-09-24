@@ -27,8 +27,8 @@ and learning flowing up. Its job is to answer, for any lesson or
 artifact, *which repo does this belong to* — instead of each session
 re-deriving the picture.
 
-This is a **model**, not a convention (artifact-kinds: *could you
-disagree with it and violate nothing?* — yes). It binds nothing.
+This is a **model**: you could disagree with all of it and violate
+nothing. It binds nothing.
 
 ---
 

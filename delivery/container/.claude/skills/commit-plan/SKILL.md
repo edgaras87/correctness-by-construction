@@ -1,7 +1,7 @@
 ---
 name: commit-plan
 description: How work larger than one commit is sequenced into commits, reviewed at each boundary, and closed. Use before starting a change set that needs more than one commit.
-requires: commit-messages, artifact-kinds, project-recording
+requires: commit-messages, project-recording
 ---
 
 # Commit Plan

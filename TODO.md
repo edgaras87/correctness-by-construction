@@ -938,12 +938,12 @@
       this measurement at 435. This set made both rows worse, twice,
       which is the evidence rather than an aside.
 
-- [ ] `artifact-kinds` asks for a changelog line with every new kind
-      and this repo has nowhere to put one (2026-09-23). The shape
+- [-] MOOT 2026-09-24 — the convention that asked is discarded.
+      `artifact-kinds` asked for a changelog line with every new kind
+      and this repo had nowhere to put one (2026-09-23); the shape
       entry's line went to the skill's own Decisions section beside
-      HANDBOOK ADR-0009, which is the closest thing and is not what
-      the rule says. Either the rule means that section, or the
-      convention wants a changelog the container does not ship.
+      HANDBOOK ADR-0009, which was the closest thing and was not what
+      the rule said. Nothing now asks.
 
 - [ ] `agent-arrangement`'s manual says "the kit" six times
       (2026-09-23). ADR-0029 renamed ours to `delivery/container/`

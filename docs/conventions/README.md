@@ -21,14 +21,13 @@ next update, like any project's (HANDBOOK ADR-0041). The container
 is copied whole into a new project, as real files, which is why it
 has to be the origin (HANDBOOK ADR-0040).
 
-## The eight
+## The seven
 
 | Convention | Manual | Artifacts |
 |---|---|---|
 | project-recording | [project-recording/](project-recording/) | the record stubs |
 | commit-messages | [commit-messages/](commit-messages/) | a skill |
 | repo-hygiene | [repo-hygiene/](repo-hygiene/) | the hygiene base; stack overlays stay here |
-| artifact-kinds | [artifact-kinds/](artifact-kinds/) | a skill |
 | commit-plan | [commit-plan/](commit-plan/) | a skill |
 | convention-lifecycle | [convention-lifecycle/](convention-lifecycle/) | a skill: the kit's protocol, receiver side |
 | agent-arrangement | [agent-arrangement/](agent-arrangement/) | the entry-file and decisions-log stubs |
@@ -80,10 +79,10 @@ it unchanged.
 
 **What the chain produces** is not on it: an ADR for a decision
 with rejected options, a `temp/` draft for a measurement or a
-comparison, and the commits themselves. The remaining five
+comparison, and the commits themselves. The remaining four
 conventions — `project-recording`, `repo-hygiene`,
-`agent-arrangement`, `artifact-kinds`, `convention-lifecycle` and
-the records they govern — are not stages of this and fire on their
+`agent-arrangement`, `convention-lifecycle` and the records they
+govern — are not stages of this and fire on their
 own moments.
 
 ## A skill file

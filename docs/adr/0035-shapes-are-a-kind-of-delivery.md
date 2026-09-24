@@ -4,7 +4,11 @@ Date: 2026-09-23
 Status: Accepted (2026-09-23, at the set's final records commit;
 opened Proposed and revised at a boundary before acceptance —
 decision 4 promised a shipped `.claude/shapes/` stub, and the stub
-was written, staged and dropped as duplication)
+was written, staged and dropped as duplication); **amended
+2026-09-24** — decision 2's vocabulary entry is gone with
+`artifact-kinds`, which was discarded whole. What a shape is now
+lives only in the rule, which is where decision 3 had already put
+how it lives. Nothing else in this ADR changes.
 
 ## Context
 

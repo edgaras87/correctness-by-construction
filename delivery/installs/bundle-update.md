@@ -156,8 +156,8 @@ from `delivery/container/` here, and its parts divide:
 
 - **The seven convention *skills*** are pinned copies and travel
   at a kit re-pin, the same way the five method skills do; the
-  run's own `convention-lifecycle` governs how it takes them. Eight
-  conventions, five skills: `project-recording`, `repo-hygiene`
+  run's own `convention-lifecycle` governs how it takes them. Seven
+  conventions, four skills: `project-recording`, `repo-hygiene`
   and `agent-arrangement` ship through stubs and templates, which
   fall under the next rule and never travel again. Four of the
   five came from the handbook; one — `visual-comparison` — is this
@@ -214,9 +214,9 @@ for d in "$bundle_dir"/delivery/method/*/ \
 done
 cp "$bundle_dir"/concept/*.md "$staged"/concept/
 
-# the container half — the five convention skills, and only those.
+# the container half — the four convention skills, and only those.
 # The other three conventions ship as stubs and never travel again.
-for c in commit-messages commit-plan artifact-kinds \
+for c in commit-messages commit-plan \
          convention-lifecycle visual-comparison; do
   cp -r "$bundle_dir"/delivery/container/.claude/skills/"$c" "$staged"/conventions/
 done
@@ -354,7 +354,7 @@ done
 diff -r "$bundle_dir"/concept "$run_dir"/docs/concept || echo "DIFFERS: concept"
 
 # only where the container half was delivered
-for c in commit-messages commit-plan artifact-kinds \
+for c in commit-messages commit-plan \
          convention-lifecycle visual-comparison; do
   diff -r "$bundle_dir"/delivery/container/.claude/skills/"$c" \
     "$run_dir"/.claude/skills/"$c" || echo "DIFFERS: $c"
