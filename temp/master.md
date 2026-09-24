@@ -54,7 +54,7 @@ and is either derived from it or checked against it.
   can be run is the method below, which is where the concept
   becomes work.
 
-## 2. The delivery — `delivery/`
+## 2. The delivery — what a project gets, and where it goes
 
 **The repeatable stub a project is born from, and updated with
 afterwards.** Four kinds of thing live here and only three of them
@@ -142,8 +142,10 @@ reach that far.*
 
 ## 3. The agent as maintainer
 
-**What the agent is in this repo: the maintainer of the concept,
-the delivery, and the records that hold both.**
+### 3.1 What it maintains
+
+**The maintainer of the concept, the delivery, and the records that
+hold both.**
 
 It keeps the concept's statement true, derives the method from it,
 holds the master of every file any run receives, delivers to runs,
@@ -152,11 +154,11 @@ and reads runs back to learn what to change here.
 It is not a builder. There is nothing here to build.
 
 What it is made of is a **work arrangement** — an entry file, a set
-of conventions, rules, and a decisions log — which is the next
-section, because there are two of them and the difference is the
-part worth writing down.
+of conventions, rules, and a decisions log. There are two of those
+in play, and the difference between them is the part worth writing
+down.
 
-## 4. Work arrangements — two of them
+### 3.2 Work arrangements — two of them
 
 **The same machinery, in both repos, doing two different jobs.** In
 each it is `CLAUDE.md`, `.claude/skills/`, `.claude/rules/` and
