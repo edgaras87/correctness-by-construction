@@ -633,3 +633,28 @@
   Rejected: registering them at `ba7eaa4` with the other four. That
   hash is the handbook's kit, which never held these files; a pin
   is a claim about where a copy came from, and theirs is here.
+
+- 2026-09-24 `decide-first` discarded. The skill, its manual and the
+  master we ship are deleted; `option-comparison` loses the two
+  lines that pointed at it. Nine conventions where there were ten.
+  Why: three firings, one win. The win was 2026-09-19 and what
+  worked in it was one line — *can you say roughly how many commits
+  this takes?* — while the seven-step method rode along. The two
+  misfires produced a draft covering queued work rather than one
+  unsettled shape, and seven ordered questions that were written and
+  discarded. What settled that same question instead was a proposed
+  ADR corrected while building, which `commit-plan` §4 and §5
+  already carry. ADR-0030 recorded the thin evidence at the time:
+  built on one clear instance, "thinner evidence than this repo
+  usually accepts".
+  Rejected: keeping the count line by moving it into `commit-plan`.
+  It is a good line and it is not lost — it is in this entry and in
+  ADR-0030 — but moving a sentence to keep a discard from feeling
+  wasteful is how the thing being discarded grows back. If the
+  question is missed in real work, that is the trigger to put it
+  somewhere, and then it lands with a firing behind it rather than a
+  reluctance.
+  Also rejected: replacing it now with the interview shape the
+  reviewer described — an agent asking the reviewer questions rather
+  than drafting them alone. Not written anywhere yet, deliberately:
+  it has never run, which is the mistake this entry is closing.

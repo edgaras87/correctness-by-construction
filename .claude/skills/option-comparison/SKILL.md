@@ -25,8 +25,7 @@ answer for a while, this is not the tool.
 
 It does not fire for a choice with one obvious answer, and it does
 not fire twice for the same question — the ADR from last time is
-the answer. It does not need a `decide-first` to send it; the
-question arrives from wherever it arrives.
+the answer. The question arrives from wherever it arrives.
 
 ## 2. The method
 
@@ -101,8 +100,6 @@ name the case, it is not an entry yet.
 
 ## 5. What this does not do
 
-- It does not decide *which* questions get settled or in what order
-  — that is `decide-first`.
 - It does not choose for another repo. A run decides its own forms.
 - It does not run on a schedule, and it is not a review of choices
   already settled.
