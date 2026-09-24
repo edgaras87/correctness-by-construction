@@ -20,6 +20,32 @@ both true.**
 Nothing is built here. No application, no service, no run — this
 repo holds documents and hands them to projects that do build.
 
+## What this is for
+
+**Not a description to be right about — a picture of what is tied
+to what, so that changing one part shows the others move.**
+
+The strings are real and none of them is visible from inside a
+single file. Change the work arrangement and the container may have
+to change, because it ships one. Change the concept and everything
+derived from it is in question. Change what a run may edit to its
+copies and three documents in two repos start disagreeing.
+
+**Today those strings get noticed afterwards**, usually by the run,
+usually after something has already shipped wrong. Three such
+findings are on this page, left written as contradictions rather
+than smoothed away.
+
+So the use is: **before a change, read this to see what else it
+pulls.** If a change would make something else here untrue, that
+gets said at the time — with what would have to move — instead of
+being discovered a week later. Then the change can be taken, taken
+differently, or dropped, which is a decision and not a discovery.
+
+The cost of that is this page being current. A map that is wrong
+about what connects to what is worse than no map, because it is
+believed.
+
 ## The parts
 
 - **The concept** — why the repo exists. The design idea itself, in
@@ -33,6 +59,11 @@ repo holds documents and hands them to projects that do build.
 Each has a section below. What a run is, and how the two repos
 reach each other, sits inside the delivery — it is where the
 delivery goes.
+
+And one thing that is **not** a part, because it appears in two of
+them: the **work arrangement**. The agent is made of one, and the
+container ships another. It gets its own section so both can point
+at it.
 
 ---
 
@@ -92,6 +123,9 @@ None of it is CbC. A project with no correctness-by-construction in
 it would still want most of this — which is why it is a group of
 its own and not part of the method.
 
+Among what it ships is a whole **work arrangement** for the run's
+own agent — section 4.
+
 ### 2.4 What does not travel — `installs/`, `fills/`
 
 - **`installs/`** — our procedures, for the person operating the
@@ -142,8 +176,6 @@ reach that far.*
 
 ## 3. The agent as maintainer
 
-### 3.1 What it maintains
-
 **The maintainer of the concept, the delivery, and the records that
 hold both.**
 
@@ -153,34 +185,66 @@ and reads runs back to learn what to change here.
 
 It is not a builder. There is nothing here to build.
 
-What it is made of is a **work arrangement** — an entry file, a set
-of conventions, rules, and a decisions log. There are two of those
-in play, and the difference between them is the part worth writing
-down.
+What it is made of is a **work arrangement**, which is section 4 —
+the one it runs under is described there as 4.1.
 
-### 3.2 Work arrangements — two of them
+## 4. The work arrangement
 
-**The same machinery, in both repos, doing two different jobs.** In
-each it is `CLAUDE.md`, `.claude/skills/`, `.claude/rules/` and
-`.claude/decisions.md`.
+**What tells an agent how to work in a repo — not the work, and not
+a record of it.** Four kinds of file, and each reaches the agent a
+different way:
 
-**Here, the arrangement is a maintainer's.** Its entry file opens:
-*"A concept repo... Documents only — no code, no runs."* The work
-is holding masters, deciding, recording, delivering, harvesting.
+- **the entry file**, `CLAUDE.md` — loaded in full on every task,
+  relevant or not, which is why every line in it is expensive
+- **skills**, `.claude/skills/` — opened at a moment, by name
+- **rules**, `.claude/rules/` — loaded when a file matching their
+  `paths:` is touched
+- **the decisions log**, `.claude/decisions.md` — why the
+  arrangement is the shape it is; read at a retrospective, not
+  mid-work
 
-**In a run, the arrangement is a builder's.** It ships inside the
-container, so it is something we write and they receive. Its entry
-file says the opposite thing about the same files: `docs/concept/`
-and the method skills are *pinned copies*, and until the framing
-artifacts exist the only method work is running `cbc-framing`
-jointly with the human.
+Every repo in this workspace has one. **Two of them exist here:**
+the one this repo runs under, and the one it ships inside the
+container for someone else to run under.
 
-The same four convention skills sit in both — `commit-messages`,
-`commit-plan`, `convention-lifecycle`, `visual-comparison` — but
-they are not equally ours. `convention-lifecycle` is the
-**receiver's** protocol: how a project takes a newer copy without
-losing its own edits. A run uses it constantly. This repo has no
-deliverer, so it has never fired here.
+### 4.1 This repo's — a maintainer's
+
+Entry file: *"A concept repo... Documents only — no code, no
+runs."* Four convention skills — `commit-messages`, `commit-plan`,
+`convention-lifecycle`, `visual-comparison`. No rules.
+
+The work it arranges: hold masters, decide, record, deliver,
+harvest.
+
+### 4.2 A run's — a builder's
+
+Shipped in `delivery/container/`, so it is something we write and
+they receive.
+
+Entry file: `docs/concept/` and the method skills are **pinned
+copies**, and until the framing artifacts exist the only method
+work is running `cbc-framing` jointly with the human. The same four
+convention skills. One rule, `shapes-lifecycle`. And beside them
+the records the arrangement refers to.
+
+The work it arranges: build a real system, keep its records, take
+deliveries.
+
+### 4.3 What the difference explains
+
+**Nearly identical, and that is the trap.** The four skills are the
+same files. The records table has the same shape. The agent/project
+commit split is the same rule.
+
+What differs is the *job*, and therefore which parts ever fire.
+`convention-lifecycle` is the **receiver's** protocol — how a
+project takes a newer copy without losing its own edits. A run uses
+it constantly: eight takes recorded, three receipt branches, four
+in-place edits. This repo has no deliverer, so it has never fired
+here at all.
+
+Reading a shared file and assuming a shared job is how a rule ends
+up held in the repo it cannot apply to.
 
 *Contradiction, stated rather than resolved: the entry file we ship
 says the method skills are "never edited in place — a change is a
