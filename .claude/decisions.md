@@ -716,3 +716,35 @@
   the `shape` kind has been in what we ship since 2026-09-23 and has
   never reached us, because we deliver to runs and never to
   ourselves. The drift is named, not fixed.
+
+- 2026-09-24 `artifact-kinds` discarded, and the practice it sat on
+  top of becomes the rule instead. The skill, its manual and the
+  master we ship go; `commit-plan` loses a `requires` line it never
+  used. Seven conventions where there were ten this morning.
+  Why: its purpose was that one word means the same thing to both
+  parties, and it does not. The reviewer cannot use the definitions
+  — "one definition has to fit all, and then I cannot tell what it
+  means" — which is the whole job failing, and failing in the worst
+  direction, because a word we do not share still reads as agreement
+  to me.
+  What replaces it was already there. Eight of ten main documents
+  open with a block saying what they are and how to read them; the
+  vocabulary was a second layer over a practice that works. The rule
+  is that block, and two questions it answers — does ignoring this
+  owe an explanation, and does it go stale — which is the only axis
+  that ever decided anything (force, four citations) and the only
+  distinction the records ever turned on.
+  It also dissolves this morning's defect rather than patching it: a
+  self-describing document needs no exemplar in someone else's repo,
+  so a run points at its own.
+  Five firings, and four would have gone the same way under a header
+  block. The fifth is run 3 having no word for a shape and writing
+  "model" plus a paragraph saying model is wrong — under the rule it
+  writes what the thing is, and we read that.
+  Rejected: keeping it for this repo and no longer shipping it, on
+  the evidence that no run in five ever reached for the words. It
+  would have kept a vocabulary one of the two readers cannot use.
+  Rejected: fixing it instead — dropping the reader-mode axis, which
+  has never decided anything, and cutting the file to 84 lines. Both
+  were staged and both are dropped; they made an unusable thing
+  smaller.
