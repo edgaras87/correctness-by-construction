@@ -31,7 +31,8 @@ repo holds documents and hands them to projects that do build.
   what it is made of.
 
 Each has a section below. What a run is, and how the two repos
-reach each other, is the last one.
+reach each other, sits inside the delivery — it is where the
+delivery goes.
 
 ---
 
@@ -57,7 +58,7 @@ and is either derived from it or checked against it.
 
 **The repeatable stub a project is born from, and updated with
 afterwards.** Four kinds of thing live here and only three of them
-travel.
+travel; the last subsection is where they go and what comes back.
 
 ### 2.1 The method — `delivery/method/`
 
@@ -99,6 +100,45 @@ its own and not part of the method.
   these.
 - **`fills/`** — text written *into* a newborn's own files rather
   than copied as files.
+
+### 2.5 Where it all goes, and what comes back
+
+A **run** is a separate repository that builds a real system using
+what we gave it. Run 3, `never-oversold`, is the live one.
+
+**A run is blind to us.** It holds no address for this repo, no
+checkout, no remote. It cannot fetch, and nothing here reaches it
+by itself. Every delivery is a person copying files into the run's
+`temp/`, and the run's own agent taking them from there.
+
+```
+          this repo                              a run
+   ┌────────────────────────┐            ┌────────────────────────┐
+   │ concept/               │            │ docs/concept/   copy   │
+   │ delivery/method/       │  ── a  ──▶ │ .claude/skills/ copies │
+   │ delivery/spring-…/     │   person   │ .claude/rules/  copies │
+   │ delivery/container/    │   copies   │ PLAN, TODO, devlog     │
+   │                        │            │ src/  ← the only thing │
+   │  masters               │            │        that is its own │
+   └────────────────────────┘            └────────────────────────┘
+              ▲                                       │
+              └───────── we read its repo ────────────┘
+                         and take what it learned
+```
+
+**Down — delivery.** Files, copied whole. The run records one hash
+for the whole delivery in its own decisions log. That hash is a
+commit of ours; the run stores it without being able to resolve it.
+
+**Up — harvest.** No files move. We read the run's repository
+directly and write what we learned into our own masters. A run
+never pushes anything here.
+
+*Intended, not yet true: that this asymmetry is written down
+anywhere but here. Today it is spread across `delivery/README.md`,
+`delivery/installs/bundle-update.md`, the `convention-lifecycle`
+skill, and a rules file run 3 wrote for itself because ours did not
+reach that far.*
 
 ## 3. The agent as maintainer
 
@@ -147,42 +187,3 @@ three times, we took every edit into our masters, and on 2026-09-17
 we adopted the seven rules run 3 wrote to govern such edits. We
 never shipped those rules. A project born today gets the
 prohibition and nothing else.*
-
-## 5. The runs, and the two flows
-
-A **run** is a separate repository that builds a real system using
-what we gave it. Run 3, `never-oversold`, is the live one.
-
-**A run is blind to us.** It holds no address for this repo, no
-checkout, no remote. It cannot fetch, and nothing here reaches it
-by itself. Every delivery is a person copying files into the run's
-`temp/`, and the run's own agent taking them from there.
-
-```
-          this repo                              a run
-   ┌────────────────────────┐            ┌────────────────────────┐
-   │ concept/               │            │ docs/concept/   copy   │
-   │ delivery/method/       │  ── a  ──▶ │ .claude/skills/ copies │
-   │ delivery/spring-…/     │   person   │ .claude/rules/  copies │
-   │ delivery/container/    │   copies   │ PLAN, TODO, devlog     │
-   │                        │            │ src/  ← the only thing │
-   │  masters               │            │        that is its own │
-   └────────────────────────┘            └────────────────────────┘
-              ▲                                       │
-              └───────── we read its repo ────────────┘
-                         and take what it learned
-```
-
-**Down — delivery.** Files, copied whole. The run records one hash
-for the whole delivery in its own decisions log. That hash is a
-commit of ours; the run stores it without being able to resolve it.
-
-**Up — harvest.** No files move. We read the run's repository
-directly and write what we learned into our own masters. A run
-never pushes anything here.
-
-*Intended, not yet true: that this asymmetry is written down
-anywhere but here. Today it is spread across `delivery/README.md`,
-`delivery/installs/bundle-update.md`, the `convention-lifecycle`
-skill, and a rules file run 3 wrote for itself because ours did not
-reach that far.*
