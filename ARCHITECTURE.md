@@ -117,10 +117,11 @@ down in `delivery/README.md` and `docs/conventions/README.md`, and
 nothing
 tracks that repo. Fourteen of sixteen files are still as they
 arrived; what differs is listed beside the set as a reading aid
-for a re-sync, not a gate — and four files were added that the
-kit never had: three conventions (ADR-0031) and the shape
+for a re-sync, not a gate — and two files were added that the
+kit never had: one convention (ADR-0031) and the shape
 lifecycle, the container's first `.claude/rules/` artifact
-(ADR-0035). The ten convention manuals sit in
+(ADR-0035). Two more conventions were added and discarded unused,
+2026-09-24. The eight convention manuals sit in
 `docs/conventions/` — the *why* behind each rule, for a maintainer,
 never shipped — and move with the rules they explain. Inside the
 container the parts divide by how they reach a run: the seven

@@ -1,7 +1,11 @@
 # 0031. decide-first and the comparisons become conventions
 
 Date: 2026-09-19
-Status: Accepted
+Status: Accepted; **superseded in part 2026-09-24** — two of the
+three are discarded. `visual-comparison` remains a convention of
+this container on exactly these terms; `decide-first` and
+`option-comparison` are gone, and a run is born with eight
+conventions rather than ten.
 
 ## Context
 

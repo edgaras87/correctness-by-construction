@@ -386,8 +386,10 @@ was met at Step 5.
 - ADR-0027: The architecture diagram is Mermaid, provisionally
 - ADR-0028: The procedure gets a picture; the method becomes a skill
 - ADR-0029: Three groups, three directories (Step 9)
-- ADR-0030: decide-first, and two renames
-- ADR-0031: The three become conventions
+- ADR-0030: decide-first, and two renames (superseded in part by the
+  2026-09-24 discards)
+- ADR-0031: The three become conventions (superseded in part —
+  two of the three discarded 2026-09-24)
 - ADR-0032: The chain is a section, and it is drawn
 - ADR-0033: Every slice derives blind; the reading happens once, at the end
 - ADR-0034: An edited copy carries no header line (Step 10)

@@ -156,14 +156,13 @@ from `delivery/container/` here, and its parts divide:
 
 - **The seven convention *skills*** are pinned copies and travel
   at a kit re-pin, the same way the five method skills do; the
-  run's own `convention-lifecycle` governs how it takes them. Ten
-  conventions, seven skills: `project-recording`, `repo-hygiene`
+  run's own `convention-lifecycle` governs how it takes them. Eight
+  conventions, five skills: `project-recording`, `repo-hygiene`
   and `agent-arrangement` ship through stubs and templates, which
   fall under the next rule and never travel again. Four of the
-  seven came from the handbook; three — `decide-first`,
-  `option-comparison`, `visual-comparison` — are this repo's own
-  (CBC ADR-0031) and change when we change them, so a re-pin is no
-  longer the only reason this group moves.
+  five came from the handbook; one — `visual-comparison` — is this
+  repo's own (CBC ADR-0031) and changes when we change it, so a
+  re-pin is no longer the only reason this group moves.
 - **The record stubs** — `PLAN.md`, `TODO.md`, `devlog/`,
   `ARCHITECTURE.md`, `CHANGELOG.md`, `.claude/decisions.md`, the
   first ADR — are the run's living records from its first session.
@@ -215,11 +214,10 @@ for d in "$bundle_dir"/delivery/method/*/ \
 done
 cp "$bundle_dir"/concept/*.md "$staged"/concept/
 
-# the container half — the seven convention skills, and only those.
+# the container half — the five convention skills, and only those.
 # The other three conventions ship as stubs and never travel again.
 for c in commit-messages commit-plan artifact-kinds \
-         convention-lifecycle decide-first option-comparison \
-         visual-comparison; do
+         convention-lifecycle visual-comparison; do
   cp -r "$bundle_dir"/delivery/container/.claude/skills/"$c" "$staged"/conventions/
 done
 
@@ -357,8 +355,7 @@ diff -r "$bundle_dir"/concept "$run_dir"/docs/concept || echo "DIFFERS: concept"
 
 # only where the container half was delivered
 for c in commit-messages commit-plan artifact-kinds \
-         convention-lifecycle decide-first option-comparison \
-         visual-comparison; do
+         convention-lifecycle visual-comparison; do
   diff -r "$bundle_dir"/delivery/container/.claude/skills/"$c" \
     "$run_dir"/.claude/skills/"$c" || echo "DIFFERS: $c"
 done

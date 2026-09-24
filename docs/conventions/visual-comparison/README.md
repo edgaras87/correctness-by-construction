@@ -3,8 +3,7 @@
 How a structure is shown — a picture, a table, a plain list — is
 settled by building every candidate and rendering it, judged
 against what the reader must get. The unit is the thing being
-shown; the method is [`../option-comparison/`](../option-comparison/)
-specialised to things you look at.
+shown.
 
 **What ships:** [`SKILL.md`](SKILL.md), which a project holds at
 `.claude/skills/visual-comparison/` and an agent opens when a
@@ -57,10 +56,13 @@ requirement came from. The question is *how is this shown*, and
 
 ## An open question
 
-Whether this earns a second artifact at all. CBC ADR-0030 decision
-10: if its findings never gain an entry from a comparison whose
-winner was not a picture, the split from `option-comparison` was
-decoration and the two merge back.
+Settled 2026-09-24, the other way round. CBC ADR-0030 decision 10
+asked whether this earned a second artifact: if its findings never
+gained an entry from a comparison whose winner was not a picture,
+the split was decoration and the two should merge back. The trigger
+never fired, and the general half was discarded rather than merged
+into — it had run once, in the set that created it. This is the
+method now, not a specialisation of one.
 
 A narrower one: this repo's Mermaid trial is provisional (CBC
 ADR-0027 decision 3) and does not travel. A project deciding its
@@ -70,5 +72,4 @@ it may not.
 ## Where to look
 
 - The rule: [`SKILL.md`](SKILL.md).
-- The general method: [`../option-comparison/`](../option-comparison/).
 - The decisions: CBC ADR-0027, CBC ADR-0028, CBC ADR-0030.

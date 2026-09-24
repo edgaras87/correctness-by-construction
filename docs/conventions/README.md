@@ -21,7 +21,7 @@ next update, like any project's (HANDBOOK ADR-0041). The container
 is copied whole into a new project, as real files, which is why it
 has to be the origin (HANDBOOK ADR-0040).
 
-## The ten
+## The eight
 
 | Convention | Manual | Artifacts |
 |---|---|---|
@@ -32,9 +32,7 @@ has to be the origin (HANDBOOK ADR-0040).
 | commit-plan | [commit-plan/](commit-plan/) | a skill |
 | convention-lifecycle | [convention-lifecycle/](convention-lifecycle/) | a skill: the kit's protocol, receiver side |
 | agent-arrangement | [agent-arrangement/](agent-arrangement/) | the entry-file and decisions-log stubs |
-| decide-first | [decide-first/](decide-first/) | a skill |
-| option-comparison | [option-comparison/](option-comparison/) | a skill |
-| visual-comparison | [visual-comparison/](visual-comparison/) | a skill: option-comparison specialised to things you look at |
+| visual-comparison | [visual-comparison/](visual-comparison/) | a skill: how a structure is shown, settled by rendering |
 
 ## The chain
 
@@ -45,23 +43,14 @@ rule lives in a manual or a skill, and nothing here restates one
 ```mermaid
 flowchart TB
     idea["an idea, or a request"]
-    df["decide-first"]
-    ask["ask"]
-    meas["measure"]
-    oc["option-comparison"]
     vc["visual-comparison"]
     cp["commit-plan"]
     cm["commit-messages"]
     dom["the domain skills<br/>cbc-framing · infra-establish<br/>cbc-bootstrap · cbc-slice"]
 
-    idea --> df
-    df --> ask
-    df --> meas
-    df --> oc
-    oc --> vc
-    ask --> cp
-    meas --> cp
-    oc --> cp
+    idea --> vc
+    idea --> cp
+    vc --> cp
     dom -- "the sequence" --> cp
     cp --> cm
 ```
@@ -70,18 +59,13 @@ flowchart TB
 not what you must pass through.** A typo fix reaches only
 `commit-messages`. A settled decision needing four commits reaches
 only `commit-plan`. A question about a diagram's shape reaches
-`visual-comparison` from wherever it arose, with no `decide-first`
-before it.
+`visual-comparison` from wherever it arose.
 
-- **`decide-first`** fires when something is undecided *and the
-  shape of the work depends on it* — the sign being that you cannot
-  say roughly how many commits it needs. It routes each question to
-  an *ask*, a *measure*, or a comparison.
-- **`option-comparison`** fires when more than one option could
-  work and each can be built cheaply enough to look at.
-  **`visual-comparison`** is the same method when what is being
-  chosen is how a structure is shown; it is a specialisation, not a
-  stage after it.
+- **`visual-comparison`** fires when what is being chosen is how a
+  structure is shown and the candidates can be rendered cheaply
+  enough to look at. A choice that is not about showing something
+  has no convention: it is decided and corrected while building,
+  which `commit-plan` §4 and §5 carry.
 - **`commit-plan`** fires when the work needs more than one commit.
   It plans the commits, not the change.
 - **`commit-messages`** fires when you are writing any commit, in a
@@ -96,7 +80,7 @@ it unchanged.
 
 **What the chain produces** is not on it: an ADR for a decision
 with rejected options, a `temp/` draft for a measurement or a
-comparison, and the commits themselves. The remaining six
+comparison, and the commits themselves. The remaining five
 conventions — `project-recording`, `repo-hygiene`,
 `agent-arrangement`, `artifact-kinds`, `convention-lifecycle` and
 the records they govern — are not stages of this and fire on their

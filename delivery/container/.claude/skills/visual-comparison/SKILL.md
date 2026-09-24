@@ -1,6 +1,6 @@
 ---
 name: visual-comparison
-description: Settle how a structure is shown — a picture, a table, a plain list — by writing down what the reader must get and rendering every candidate against it. Use when a diagram might be the answer, including deciding it should not be. For a choice that is not about showing something, use option-comparison; this is that method specialised to things you look at, and what rendering them has cost us.
+description: Settle how a structure is shown — a picture, a table, a plain list — by writing down what the reader must get and rendering every candidate against it. Use when a diagram might be the answer, including deciding it should not be.
 ---
 
 # Visual Comparison
@@ -9,11 +9,10 @@ How a structure is shown is settled by rendering, not by argument.
 Write what the reader must get *before* looking at candidates,
 build each one, judge it line by line, and let the render decide.
 
-**This is `option-comparison` specialised to things you look at.**
-The spine is the same — requirements first, every candidate built,
-judged per requirement, recorded in an ADR. What is here and not
-there is the failure mode only a picture has: *a notation that
-asserts something you did not mean*, and what that has cost.
+The spine is requirements first, every candidate built, judged per
+requirement, recorded in an ADR. What makes it its own method is the
+failure mode only a picture has: *a notation that asserts something
+you did not mean*, and what that has cost.
 
 Kind: playbook — copied into a fresh draft each time, never
 executed in place.
@@ -36,9 +35,6 @@ in the IDE with no build step — the buildable notations are Mermaid
 and Unicode box drawing. PlantUML, Graphviz and D2 all need a
 render step or a plugin and are out; a committed SVG renders but is
 not text anyone can read in a diff.
-
-A choice that is not about showing something goes to
-`option-comparison`.
 
 It does not fire for a form with one obvious answer, and it does
 not fire twice for the same question — the ADR from last time is
@@ -150,6 +146,7 @@ name the case, it is not an entry yet.
   author in one week is thin evidence. If that objection was
   right, §4 is where it shows, by not growing
 - CBC ADR-0030 — the third run was not about showing anything,
-  which separated the general method out as `option-comparison` and
-  left this one specialised. §4's discipline line is from there,
-  and so is §1's rule that the set must hold a non-picture
+  which separated a general method out and left this one
+  specialised. That general half was discarded 2026-09-24, unused;
+  §4's discipline line is from there, and so is §1's rule that the
+  set must hold a non-picture

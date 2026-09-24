@@ -920,11 +920,11 @@
       A wrong move destroys a measurement that cannot be remade,
       so this wants its own reading rather than a tidy-up.
 
-- [ ] Five shipped artifacts tell a project to use `temp/` and the
-      container ships none (2026-09-23). `decide-first`,
-      `option-comparison` and `visual-comparison` each say to work
-      in a `temp/` draft; `shapes-lifecycle` says a gate looks
-      there; `bundle-update.md` stages into it. A newborn is told to
+- [ ] Three shipped artifacts tell a project to use `temp/` and the
+      container ships none (2026-09-23; was five until the
+      2026-09-24 discards took two of them). `visual-comparison`
+      says to work in a `temp/` draft; `shapes-lifecycle` says a
+      gate looks there; `bundle-update.md` stages into it. A newborn is told to
       use a folder it was not born with, and no shipped text says
       what the folder is or that it is tracked. Predates shapes;
       found while placing them.
