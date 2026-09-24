@@ -814,6 +814,39 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Split `bundle-update.md`, and write the inbound half to the
+      same shape (2026-09-23). Measured: 527 lines, of which the
+      five mechanical steps — set the pins, stage, take, record,
+      delete — are 133. The rest is judgement and accumulated
+      lesson: step 2 alone is **129 lines**, step 7 is **110**, and
+      "what the note carries" is **90**. Fourteen passages are dated
+      findings of the form "learned 2026-09-18" or "was a defect
+      first".
+      **Why it grew: it has no lessons list, so every lesson was
+      welded into the step where it happened.** Step 2 has swallowed
+      four separate failures — the grep-the-whole-span rule, the
+      changed-party sweep, the renamed-convention rule, and the
+      three verdict rules. Every other procedure we own separates
+      the two: `visual-comparison` has "the method" and "what the
+      render has caught", `decide-first` has "the method" and "what
+      this has caught", and that second section exists precisely so
+      the first stays followable. This manual is the only one
+      without the split, and it is the one that has run most.
+      **What it cost, demonstrated:** step 3's staging script has no
+      line for a rules file, so `shapes-lifecycle.md` was copied
+      across by hand at the 2026-09-23 delivery. The omission was
+      invisible inside 527 lines and would have been obvious in 133.
+      Two of the seven "steps" are not steps — 2 and 7 are authoring
+      tasks needing judgement, not operations.
+      **Do it with the inbound half, not before it.** There is no
+      manual for reading a run and harvesting from it; that
+      direction lives as six paragraphs inside `delivery/README.md`,
+      a document whose job is to describe what a run copies at
+      birth. Three deliveries and three harvests have now happened,
+      and only one direction was ever written down. Writing the
+      inbound one first and reshaping the outbound one after would
+      shape the second twice.
+
 - [ ] Our own side of shapes — the half ADR-0035 deliberately did
       not decide (2026-09-23). Where this repo keeps unexposed
       stock, what it stages to whom and when, and whether
