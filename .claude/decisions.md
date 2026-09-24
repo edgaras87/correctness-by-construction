@@ -658,3 +658,34 @@
   reviewer described — an agent asking the reviewer questions rather
   than drafting them alone. Not written anywhere yet, deliberately:
   it has never run, which is the mistake this entry is closing.
+
+- 2026-09-24 `option-comparison` discarded; `visual-comparison`
+  stays and stays about pictures. The skill, its manual and the
+  master we ship are deleted, and the seven places
+  `visual-comparison` leaned on it are rewritten so it stands on its
+  own. Eight conventions where there were ten this morning.
+  Why: it fired once, in the run that created it. Everything its
+  findings list knows was learned either there or in a picture
+  comparison. The method it carries is good and is not being
+  discarded — `visual-comparison` is the same spine and has three
+  firings behind it. What is discarded is a second copy of that
+  spine, kept for choices that are not about showing something, of
+  which one has ever come.
+  The split's own test never fired: ADR-0030 decision 10 said that
+  if `visual-comparison` never won a comparison whose winner was not
+  a picture, the split was decoration and the two should merge back.
+  ADR-0032 checked and recorded that it had not. Discarding the
+  general half answers that trigger the other way — there is nothing
+  to merge back into, because the specialised half was always the
+  one doing the work.
+  Rejected: merging the general method into `visual-comparison` and
+  renaming it. That is the merge ADR-0030 anticipated, and it keeps
+  every line while changing the sign on the door. Nothing asked for
+  the general scope in five weeks.
+  Rejected: moving its two non-picture findings into
+  `visual-comparison`. They are in ADR-0030 and in git history. A
+  discard that rescues its best parts is not a discard — the same
+  call as the count line earlier today.
+  Consequence, named rather than hidden: a choice that is not about
+  showing something now has no skill. It gets decided and corrected
+  while building, which is what `commit-plan` §4 and §5 carry.
