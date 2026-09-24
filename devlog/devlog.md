@@ -6,6 +6,85 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-24  (the reading of run 3 — six items, a delivery, and a deliberate stop)
+
+Two days, 38 commits and this one, branch
+`reading-run-3-2026-09-23`. The branch is paused rather than closed,
+by the user's call, and the pause is the part of this entry worth
+reading.
+
+- **The shape set, ADR-0035.** D1 asked whether we become the
+  collector of other projects' unexposed shapes. The answer was
+  none of the three options the reading offered: reading our own
+  tree found the mechanism already running since 2026-09-06 in
+  `docs/baselines/`, unnamed. So the question was a missing name,
+  not a missing role — and that reframing collapsed D2, D3 and D4
+  into the same set. `artifact-kinds` gained the shape entry,
+  `shapes-lifecycle` ships as the container's first `.claude/rules/`
+  file, `cbc-slice` took the tripwire rule and the close-time shape
+  check, and the arrangement manual names `shapes/`.
+
+- **Two sweeps that paid for themselves.** W1 fixed `CLAUDE.md:25`
+  naming a file renamed four days earlier — fourth instance of a
+  class run 3 has now caught us on three times, in the one file
+  loaded on every task, while our own manual uses that exact rename
+  as its worked example. Reading the other seven occurrences
+  established that none should change, and turned up half of W2.
+
+- **The delivery went out.** The bundle and a note into run 3's
+  `temp/`: all four hand-offs answered, the three in-place edits
+  taken, the collector ask declined as a name and done as work, and
+  one finding in their own records told rather than filed. Delivered
+  is the whole of what we did; what is made of it is theirs.
+
+- **The note undercounts, and we found it here.** It says four files
+  differ and five do — the fifth is
+  `cbc-slice/references/cbc-slice-workflow.md`. The check behind
+  "four" counted skills rather than files, so the pass written to
+  end three deliveries of miscounting made the fourth. It also says
+  nothing about the paragraphs having been re-wrapped, which is most
+  of what a diff of the two `cbc-slice` files shows. **The content
+  claims were re-verified file by file and all hold**: 36 of 41
+  identical, the three edits as described, "collector" gone from the
+  lifecycle, and the five deleted backlog items exact.
+
+- **W7 left the branch for TODO.** The inbound harvest manual goes
+  with the split of `bundle-update.md`: 527 lines, of which the five
+  mechanical steps are 133, the rest lessons welded into the step
+  where each happened. Writing the inbound half first and reshaping
+  the outbound half after would shape the second one twice. Its cost
+  was demonstrated the same day — the staging script has no line for
+  a rules file, so `shapes-lifecycle.md` was copied by hand.
+
+### The stop
+
+**The user's call: how we work has grown past manageable, and the
+system gets revised before more work runs through it.** The branch
+stops with W3, W8 and W10 open and nothing half-landed — clean tree,
+no commit plan, and the one thing pointing outward delivered.
+
+**W3 is held back for a reason, not left behind.** It writes a new
+standing rule into PLAN, and the next branch asks what PLAN is for.
+Landing it first would settle by accident the thing that branch
+exists to decide. TODO's arrangement item already names that
+ordering as its third fact; stopping here removes the risk instead
+of accepting it.
+
+**The next question is filed and was filed before it was asked.**
+TODO, 2026-09-23: *does this repo's working arrangement still fit
+it?* — proposed there as the branch after this one, with three facts
+written down so none is re-derived: a 2026-08-28 question about our
+own container still parked in a repo that no longer answers to us;
+TODO's "Now" running ~800 lines to carry eleven entries, doing the
+devlog's job a third time; and PLAN's role undecided while PLAN
+changes first.
+
+Resume: either the arrangement branch (the intended next), or this
+one — `temp/reading-run-3-2026-09-23.md` carries its own stop banner
+and the three open items, W8 needing a home now that W7's is gone,
+and W3's six lessons parked in the section that is the only place
+they live.
+
 ## 2026-09-20  (a rule withdrawn before it fired, a delivery, and the receiver's verdict on us)
 
 Twelve commits. The second delivery as a note and a copy, and the

@@ -18,6 +18,32 @@
 
 # Reading: run 3, through `9869798`
 
+## Stopped here, 2026-09-24
+
+**Paused, not closed.** Seven of ten items are settled — five done,
+one deferred to TODO, one delivered — and the three that remain are
+W3, W8 and W10. The reason for stopping is not fatigue with this
+reading: the user's call is that the working arrangement itself has
+grown past what is manageable, and the next branch is TODO's
+"Does this repo's working arrangement still fit it?", raised
+2026-09-23 and already proposed there as the one after this.
+
+**W3 is held back on purpose, and that is the one thing to read
+before resuming.** It writes a new standing rule into PLAN. The
+arrangement question asks what PLAN is for. Landing the rule first
+would settle by accident the thing the next branch exists to decide
+— which is the third of the three facts that TODO item already
+names. So the rule stays unwritten and its six lessons stay parked
+in the section below, which is the only place they live.
+
+**Nothing is owed outward.** The delivery was made — the bundle and
+the note into run 3's `temp/` — and what is made of it is theirs.
+The one loose thread is ours: the note's count is wrong, recorded at
+W9 and unfixed.
+
+This file therefore survives the pause. Its rule is that it is
+deleted when the work closes, and the work is not closed.
+
 ## Where we read to
 
 **Run 3 (`never-oversold`, `~/IdeaProjects/cbc-pure-run-3`) read
@@ -259,18 +285,38 @@ commit plan of their own; the rest are a commit or two.
   as the arrangement manual's `shapes/` entry. The size that was
   "unknown until D1" turned out to be most of a twenty-three-commit
   set.
-- **W7 — write the inbound harvest manual** (D7), from the running
-  of W4–W6 rather than from memory of the last three harvests.
-  **plan**.
-- **W8 — record the checked-through mark** at `9869798`. Lands
-  wherever D7 puts it, so it follows W7.
+- **W7 — write the inbound harvest manual** (D7). **Left this
+  branch 2026-09-24, filed in TODO's Next** (`674e83a`), and not as
+  itself: it goes with the split of `bundle-update.md`, because
+  writing the inbound half first and reshaping the outbound half
+  after would shape the second one twice. The measurement that
+  earned the filing is in that entry — 527 lines, of which the five
+  mechanical steps are 133 — as is the cost demonstrated the same
+  day, a staging script with no line for a rules file.
+- **W8 — record the checked-through mark** at `9869798`. **Open,
+  and its home went with W7.** It was to land wherever D7 put it;
+  D7 is deferred, so the mark now needs somewhere of its own. It
+  matters because that coordinate lives only in this file, which is
+  temporary — the last reading had to excavate its own starting
+  point from commit dates, and this item exists so the next one
+  does not.
 - **W3 (out of order, deliberately) — the standing rule**, written
   last from the list below. See its item above for why.
-- **W9 — one delivery to run 3**: verdicts on all four hand-offs,
-  the three edits answered, and F3 told as a finding with the five
-  lines quoted so they can restore what they want. Last, and one
-  delivery rather than two — nothing over there is waiting on us.
-  **plan**.
+- **W9 — one delivery to run 3. Delivered, `5db9268`..`b9d1b20`.**
+  `bundle-5db9268/` and the note went into run 3's `temp/`. All four
+  hand-offs answered, the three edits taken, the collector ask
+  declined as a name and done as work, and F3 told with its five
+  lines. **Delivered is all this item claims**; what is made of it
+  is the receiver's.
+  **The note undercounts, found here 2026-09-24.** Four files named,
+  five differ — the fifth is
+  `cbc-slice/references/cbc-slice-workflow.md`, whose one content
+  change is the exit line the note does describe. "Four" came of
+  counting skills rather than files, and the note is also silent on
+  the re-wrapping, which is most of what a diff of the two
+  `cbc-slice` files shows. Its content claims were re-verified file
+  by file and all hold: 36 of 41 identical, the three edits as
+  described, "collector" gone from the lifecycle, F3's five exact.
 - **W10 — records catch up**: the ADRs each decision earns, the
   devlog, TODO.
 
@@ -305,16 +351,18 @@ should.
 
 ## Notes
 
-- Ten work items, five done — W1, W2, W4, W5 and W6. At least four of the rest want a
-  commit plan of their own, so by D8's test this stays branch work.
+- Ten work items. **Six done — W1, W2, W4, W5, W6, W9 — and W7
+  deferred to TODO.** Open: W3, W8, W10. Of those only W3 wants a
+  commit plan, so a resumed branch is nearer one plan than four.
 - Revised after W1, and again after W2. What each revision taught
   is in the section above, which is the one W3 reads.
 - W9 is deliberately last. A delivery costs the receiver a take,
   and run 3 has three branches of its own queued before SL-3.
-- Nothing here is staged into run 3's `temp/` yet. Its tree is
-  clean as of `9869798`, so the 2026-09-20 mistake — staging while
-  its agent was mid-work — is not in play, but the staging is the
-  operator's step either way.
+- Staged into run 3's `temp/` on 2026-09-24, its tree clean at
+  `9869798`, so the 2026-09-20 mistake — staging while its agent
+  was mid-work — was not in play. `shapes-lifecycle.md` was copied
+  by hand: the staging script has no line for a rules file, which
+  is the defect W7's TODO entry now carries.
 - This file is itself on trial. If it turns out to be TODO's "Now"
   written earlier, one firing will show it and we drop it.
 
