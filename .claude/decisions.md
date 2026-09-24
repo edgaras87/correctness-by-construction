@@ -779,3 +779,25 @@
   part is, never what changed — and it duplicated this entry. Cut.
   The dated lines `shapes-lifecycle` §3 wants are a different thing:
   what the shape takes up as it goes, and nothing has yet.
+
+- 2026-09-24 The document-header shape discarded, hours after it
+  landed. `.claude/rules/` is empty again and nothing replaces
+  `artifact-kinds`.
+  Why: the reviewer's reading of the same fact, and it is the better
+  one. The shape was justified by having recurred in eight of ten
+  documents — but a practice that recurs eight times unprompted is
+  holding itself up, and a rule describing it changes nothing except
+  adding a file that loads on every `.md` touched. The recurrence
+  was evidence against the rule, and it was written down as evidence
+  for it.
+  Item by item, as the reviewer put it: what a document is, is
+  already in the document; who reads it and when is decided when
+  there is a reason to decide it; and the other two are specific
+  cases that arise rarely enough to be handled when they arise.
+  So nothing replaces `artifact-kinds`. That is the answer, not a
+  gap waiting for one — five firings in a year, all of them ours,
+  and the practice that actually carried the weight was already
+  running without either artifact.
+  Rejected: keeping it on trial for a few weeks to see whether it
+  earns its place. Everything discarded today was kept on exactly
+  that reasoning, and the trial never ends by itself.
