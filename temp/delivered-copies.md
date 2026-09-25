@@ -13,14 +13,24 @@ paths:
      run never needs it. -->
 
 1. **Every file delivered here is a copy pinned at the deliverer's
-   commit** — the hash in the decisions log's last delivery entry.
-   One pin covers all of it: the skills and rules under `.claude/`,
-   and `docs/concept/`. The concept chapters are copies too, and are
-   never edited here — nothing in a chapter is run, so nothing in it
-   can fail a step; a lesson about one is a prose line in the
-   backlog. The records — `PLAN`, `TODO`, the devlog, the entry file
-   — were delivered once as stubs and are this run's own; they are
-   not copies and this file does not govern them.
+   commit.** The decisions log's last delivery entry carries two
+   numbers: the **pin**, the deliverer's commit these copies equal,
+   and the **read-through**, this run's own commit the deliverer
+   last read up to — the first from the staging's name, the second
+   from the note. One pin covers all of it: the skills and rules
+   under `.claude/`, and `docs/concept/`. The concept chapters are
+   copies too, and are never edited here — nothing in a chapter is
+   run, so nothing in it can fail a step; a lesson about one is a
+   prose line in the backlog. The records — `PLAN`, `TODO`, the
+   devlog, the entry file — were delivered once as stubs and are
+   this run's own; they are not copies and this file does not
+   govern them.
+
+   **A copy is never renamed or deleted here.** Its delivered path
+   is its identity for the take: a renamed copy becomes two files at
+   the next delivery, a deleted one comes back. A copy this run has
+   no use for is a line under *To the deliverer* — *we do not use
+   this* — and the deliverer decides.
 
 2. **A copy may be edited in place during a step when all three
    hold.** Something happened in this project that the copy did not
@@ -63,12 +73,20 @@ paths:
    this run holds; the note says how many differ, the diff says how
    many, and a mismatch is reported first. Then diff each held copy
    against this run's own delivery commit to find its own edits, and
-   read the note's verdict on each. Then copy whole, empty `temp/`,
-   and write one decisions entry carrying the new hash; the copy is
-   pristine again; the TODO line leaves with the hash. A
-   declined edit is gone with the re-pin — never edited back in. If the
-   project still needs what was declined, that need goes into
-   records per rule 3, and the decisions entry says so.
+   read the note's verdict on each. Then copy whole. **Then remove
+   what the note says is gone** — each path it names as deleted is
+   deleted, each it names as renamed is moved; a copy cannot carry
+   absence, so the note carries it and this step does it. Then empty
+   `temp/` and write one decisions entry carrying both numbers, the
+   new pin and the read-through the note names; the copy is pristine
+   again; the TODO line leaves with the pin. A declined edit is gone
+   with the re-pin — never edited back in. If the project still
+   needs what was declined, that need goes into records per rule 3,
+   and the decisions entry says so.
+
+   **A note may arrive alone**, with no files: *read through
+   `<commit>`, nothing to answer.* The entry records the
+   read-through; the pin does not move; nothing else happens.
 
 6. **If a step opens before the reply**, work continues on the edited
    copy, and edits keep landing under rule 2. They stack on this side

@@ -167,7 +167,10 @@ was sent back and rewritten as verdicts.*
 
 ## 4. The take
 
-The run's agent, from `temp/`, in this order.
+The run's agent, from `temp/`, in this order. Nothing in `temp/`
+is in force until it is copied into place — a staged skill is a
+file, not a skill, and a step that opens meanwhile runs on the held
+copy.
 
 1. **Check the note against the staging.** Diff every delivered
    file against what the run holds. The note said N files differ;
@@ -326,26 +329,39 @@ the pin does not.
 | the line-6 derivation comments in eight skills | shipped | become the one frontmatter field, §3 |
 | `master.md` §2.5 and §3 | ours | stay; this is their detail |
 
-## What this would be made usable as
+## What this is made usable as
 
-Two artifacts, each side holding only what it does. *Intended.*
+**The exchange is a convention**: this document is its manual, which
+never ships, and four artifacts are what a repo actually holds. It
+replaces `convention-lifecycle`, which was a convention, with one —
+and it is the first whose artifacts split between the two
+arrangements in `master.md` §4, each side holding only what it does.
+*Intended: the manual's home is `docs/conventions/exchange/`, and
+the artifacts' are named below.*
 
-- **The run's half — a rule, shipped.** §4 and §5. A rule rather
-  than a skill because its moment is a path being touched: a copy
-  under `.claude/skills/` or `docs/concept/`, or a file in `temp/`.
-  It loads when the moment arrives instead of waiting to be opened
-  by name — which is the failure the receiver's protocol has had
-  since the day it shipped.
-- **Our half — two procedures, not shipped**, in
-  `delivery/installs/`. *Read* (§6): find the span, read the three
-  things, write the reading. *Deliver* (§3): the note, committed
-  last, and the staging on the word — the same whether a reading
-  preceded it or we changed something on our own. Birth is a
-  delivery into the root plus the fills, and `pure-seed.md` keeps
-  that. Between read and deliver is work, not procedure.
+- **`delivered-copies.md` — a rule, the run's, shipped** in the
+  container at `.claude/rules/`. §4 and §5. A rule rather than a
+  skill because its moment is a path being touched: a copy, or a
+  file in `temp/`. It loads when the moment arrives instead of
+  waiting to be opened by name — the failure the receiver's protocol
+  had since the day it shipped.
+- **`read` — a skill, ours**, in this repo's `.claude/skills/`. §6:
+  find the span from the run's read-through, read the three things,
+  write the reading. Ends where the work begins.
+- **`deliver` — a skill, ours**, beside it. §3: the note committed
+  last, the staging on the word; the same whether a reading preceded
+  it or not. Birth is a delivery into the root plus the fills, and
+  `pure-seed.md` keeps that.
+- **The reading's shape — ours**, in `.claude/rules/` with a
+  `paths:` line or in `.claude/shapes/`, undecided. What `read`
+  writes, and what the work then fills, to one form.
 
-The description stays here, once. Neither artifact explains
-anything; both point at this.
+Between read and deliver is work, not procedure. How this repo
+works a reading is arrangement, not exchange, and lives with the
+standing rules once it has run twice.
+
+The description stays here, once. No artifact explains anything;
+all four point at this.
 
 *Does the name hold? Every section is about something passing
 between two repos. Nothing in it is about versions except one
