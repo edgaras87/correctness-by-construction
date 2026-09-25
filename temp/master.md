@@ -20,31 +20,14 @@ that keeps both true.**
 Nothing is built here. No application, no service, no run — this
 repo holds documents and hands them to projects that do build.
 
-## What this is for
+## What this is
 
-**Not a description to be right about — a picture of what is tied
-to what, so that changing one part shows the others move.**
+A picture of what is tied to what in this repo, so that changing
+one part shows what else moves.
 
-The strings are real and none of them is visible from inside a
-single file. Change the work arrangement and the container may have
-to change, because it ships one. Change the concept and everything
-derived from it is in question. Change what a run may edit to its
-copies and three documents in two repos start disagreeing.
-
-**Today those strings get noticed afterwards**, usually by the run,
-usually after something has already shipped wrong. Four such
-findings are on this page, left where they were found and listed at
-the end.
-
-So the use is: **before a change, read this to see what else it
-pulls.** If a change would make something else here untrue, that
-gets said at the time — with what would have to move — instead of
-being discovered a week later. Then the change can be taken, taken
-differently, or dropped, which is a decision and not a discovery.
-
-The cost of that is this page being current. A map that is wrong
-about what connects to what is worse than no map, because it is
-believed.
+It is only useful while it is current: a map wrong about what
+connects to what is worse than none, because it is believed. What
+it already knows is wrong is listed at the end.
 
 ## How to read it
 
