@@ -1,0 +1,187 @@
+<!-- DRAFT, 2026-09-25. The stated half of one thing that today lives
+     in four artifacts across two repos. Written as if none of them
+     existed, keeping only what cannot change. What exists today, and
+     what this would replace, is at the end — read that last, on
+     purpose.
+
+     Same rule as master.md: only what is checkable, and anything
+     merely intended marked as intended. -->
+
+# The exchange
+
+**Everything that passes between a deliverer and a run, in both
+directions, and what each side keeps so it can happen again.**
+
+Not version control. A pin is one part of it. The rest is how files
+go down, how they come back changed, and how a verdict returns.
+
+## 1. What cannot change
+
+Five facts. A design that ignores one of them is describing a
+different system.
+
+1. **A run is blind.** It holds no address for its deliverer, no
+   checkout, no remote. It cannot fetch.
+2. **A person carries.** Every delivery is someone copying files
+   into the run. Nothing arrives by itself.
+3. **The run holds copies; the deliverer holds masters.** A copy
+   changes only by being copied anew — or by the run editing it,
+   which is the next fact.
+4. **A run edits a copy when it fails it.** That is where learning
+   starts, and it happens in the file, mid-work, not in a note.
+5. **Nothing moves upward as files.** The deliverer reads the run.
+   A run never pushes.
+
+## 2. What each side keeps
+
+**The deliverer:** the masters. And, per run, two coordinates —
+**the pin** it holds, and **the read point**, the run's own commit
+we last read through. *Intended: today the pin is recorded only in
+the run and the read point only in a devlog entry. One line per run,
+held here, is the smallest change in this document.*
+
+**The run:** the copies, and one line per delivery in its own
+decisions log naming the pin. Its edits since the pin need no
+record of their own — they are the diff against what was delivered,
+and git holds it.
+
+The pin is a commit of the deliverer's. The run stores it and
+cannot resolve it, so everything the run needs to check must be
+checkable against its own tree.
+
+## 3. Down
+
+**Staging.** A person copies the delivery and its note into the
+run's `temp/`. Only when the run's tree is quiet: staging into a
+run whose agent is mid-step has cost one commit plan already.
+
+**What goes.** Files, whole. The groups that ship — method,
+container, a stack practice if the run is on that stack — and the
+concept. Nothing that explains them; the explanation stays home.
+
+**One pin** for all of it. Not one per group, not one per
+convention. A run that holds two pins for one delivery has been
+given a way to be inconsistent.
+
+**The note.** What changed since the run's pin, stated so the run
+can diff the staging against what it holds and find the note wrong.
+A verdict on everything the run addressed to us since we last read
+it. Nothing that needs our repo to verify: a note that reports facts
+about our tree gives the run a hedge it cannot close.
+
+## 4. The take
+
+The run's agent, from `temp/`, in this order.
+
+1. **Check the note against the staging.** Diff every delivered
+   file against what the run holds. The note said N files differ;
+   the diff says how many. A mismatch is reported before anything
+   moves.
+2. **Find your own edits.** The diff of each held copy against the
+   pin. Empty: nothing to protect. Not empty: each edit is either
+   answered in the note (taken — the new copy carries it; declined
+   — it goes, and the need it served goes to the run's records) or
+   unanswered, which means it was made after we last read, and it
+   is re-applied on top.
+3. **Place.** The delivered files overwrite the copies whole. A
+   receipt branch — the delivery as it arrived, named by the pin —
+   is worth cutting when the run expects to edit, because it makes
+   step 2's diff exact next time. Optional.
+4. **Register.** One line in the run's decisions log: the date, the
+   pin, what came, what was declined and where its need went. Agent
+   side only. Then `temp/` is emptied.
+
+## 5. Editing a copy
+
+**One rule for every shipped skill and rule.** There are not two.
+*Finding: today the same three conditions and the same three records
+are written twice — once for conventions in the receiver's protocol,
+once for the method skills in a file the run wrote itself. They
+differ in wording and in nothing else.*
+
+A copy may be edited in place when all three hold:
+
+- **Something happened** in this run that the copy did not foresee.
+  Never a speculation.
+- **The edit asks a question or demands an outcome any run would
+  want.** Never this run's own answer. What only this run needs goes
+  in its own records, not in the copy.
+- **Three records, none of them in the file:** one entry in the
+  run's decisions log saying what changed and why; one line in its
+  backlog addressed to the deliverer, asking for a verdict since the
+  pin; and the diff against the pin, which exists whether anyone
+  writes anything.
+
+Nothing is written into the copy but the edit. No dated line, no
+comment saying what changed — a file says how to use it, never its
+own history.
+
+**The concept is never edited.** A chapter is not run, so nothing
+in it can fail a step. A lesson about the concept is a prose
+hand-off in the backlog line, and it reaches the chapter, if it
+does, from our side.
+
+**The records are the run's own from birth.** `PLAN`, `TODO`, the
+devlog, the entry file: delivered once as stubs and never again.
+They are not copies and this section does not apply to them.
+
+## 6. Up
+
+**The read.** We open the run's repository and read three things
+since the read point: its decisions log (every edit and why), its
+backlog (every line addressed to us), and the diff of every held
+copy against its pin. Nothing else is required; the devlog is
+context.
+
+**Verdicts.** Each edit and each ask gets one of three:
+
+- **Taken** — our master changes. The next delivery carries it, and
+  the run's edit is absorbed rather than overwritten.
+- **Declined** — with why, and the why is never "the description
+  says otherwise". A description can be what the run has found
+  wrong. Declined means: not general, or not worth the change.
+- **Held** — with the trigger that would settle it.
+
+An unverifiable promise is worse than any of the three.
+
+**The read point moves** to the run's commit we read through, and
+is written where we keep it (§2). The next read starts there and
+does not excavate.
+
+**Verdicts travel in the next note down.** There is no other
+channel. If a run needs an answer before the next delivery, a
+person carries a note alone, with no files — that is still a
+delivery, and it still moves the read point.
+
+---
+
+## What exists today, and what this replaces
+
+| today | where | what happens to it |
+|---|---|---|
+| `convention-lifecycle` skill, 154 lines | ours, and shipped | replaced by §4–§5 as the run's half; deleted here |
+| `skills-changed-in-place.md`, run 3's own | run 3 | replaced by §5 as shipped; run 3 told in the note |
+| `bundle-update.md`, 527 lines | `delivery/installs/` | replaced by §3 and §6 as our half; the lessons list it never had is what §3–§6 are |
+| the harvest section of `delivery/README.md` | ours | folds into §6 |
+| the entry-file line "never edited in place" | shipped | contradicts §5; goes |
+| `master.md` §2.5 and §3 | ours | stay; this is their detail |
+
+## What this would be made usable as
+
+Two artifacts, each side holding only what it does. *Intended.*
+
+- **The run's half — a rule, shipped.** §4 and §5. A rule rather
+  than a skill because its moment is a path being touched: a copy
+  under `.claude/skills/` or `docs/concept/`, or a file in `temp/`.
+  It loads when the moment arrives instead of waiting to be opened
+  by name — which is the failure the receiver's protocol has had
+  since the day it shipped.
+- **Our half — a procedure, not shipped.** §3 and §6, in
+  `delivery/installs/`, with the per-run table from §2 beside it.
+
+The description stays here, once. Neither artifact explains
+anything; both point at this.
+
+*Does the name hold? Every section is about something passing
+between two repos. Nothing in it is about versions except one
+number. It held.*
