@@ -266,16 +266,28 @@ reference the run thinks any project would want. Then it gets a
 verdict like an edit does. That is how a run's rule for editing
 copies reached this document.
 
-**Verdicts.** Each edit and each ask gets one of three:
+**The read produces a reading** — a document in `temp/` listing
+every edit, every ask and every finding, one line each, revised as
+items close and deleted when the work does. The reading is the
+list; working it is ordinary work here — a commit plan when it
+takes more than one commit, an ADR when a decision has rejected
+options — and the exchange says nothing about how, only what each
+item must end as, and where.
 
-- **Taken** — our master changes. The next delivery carries it, and
-  the run's edit is absorbed rather than overwritten.
+**Verdicts.** Each item leaves the list with one of three:
+
+- **Taken** — a master changes here, committed. The next delivery
+  carries it, and the run's edit is absorbed rather than
+  overwritten.
 - **Declined** — with why, and the why is never "the description
   says otherwise". A description can be what the run has found
-  wrong. Declined means: not general, or not worth the change.
-- **Held** — with the trigger that would settle it.
+  wrong. Declined means: not general, or not worth the change. The
+  why goes in the note and nowhere else; nothing in our tree moves.
+- **Held** — with the trigger that would settle it, and a line in
+  our own backlog so it is not lost between readings.
 
-An unverifiable promise is worse than any of the three.
+An unverifiable promise is worse than any of the three. The note
+carries all of them, in the run's order.
 
 **Every read ends with a note, even an empty one.** The note names
 the run's commit we read through; the run records it beside the pin
@@ -314,8 +326,13 @@ Two artifacts, each side holding only what it does. *Intended.*
   It loads when the moment arrives instead of waiting to be opened
   by name — which is the failure the receiver's protocol has had
   since the day it shipped.
-- **Our half — a procedure, not shipped.** §3 and §6, in
-  `delivery/installs/`, with the per-run table from §2 beside it.
+- **Our half — two procedures, not shipped**, in
+  `delivery/installs/`. *Read* (§6): find the span, read the three
+  things, write the reading. *Deliver* (§3): the note, committed
+  last, and the staging on the word — the same whether a reading
+  preceded it or we changed something on our own. Birth is a
+  delivery into the root plus the fills, and `pure-seed.md` keeps
+  that. Between read and deliver is work, not procedure.
 
 The description stays here, once. Neither artifact explains
 anything; both point at this.
