@@ -317,6 +317,11 @@ commit plan of their own; the rest are a commit or two.
   `cbc-slice` files shows. Its content claims were re-verified file
   by file and all hold: 36 of 41 identical, the three edits as
   described, "collector" gone from the lifecycle, F3's five exact.
+  **Withdrawn 2026-09-25, untaken.** The staging was removed from
+  run 3's `temp/` before its agent saw it: the bundle shipped three
+  conventions discarded on 09-24, and the note miscounted. Run 3
+  stays at `9869798` with nothing pending from us. A fresh delivery
+  follows the arrangement review.
 - **W10 — records catch up**: the ADRs each decision earns, the
   devlog, TODO.
 

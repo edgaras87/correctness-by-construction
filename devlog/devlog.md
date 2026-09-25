@@ -154,8 +154,10 @@ Resume: `docs/master.md` is placed and nothing points at it —
 own decision. The four errata are real defects, and the third
 reaches run 3. `convention-lifecycle` is explained and not yet
 deleted. `main` is 60 commits behind and the paused reading branch
-sits one commit back at `cf90073`. The note in run 3's `temp/`
-still miscounts and has not been taken.
+sits one commit back at `cf90073`. The 09-24 delivery was
+withdrawn from run 3's `temp/` untaken, 09-25 — its bundle shipped
+three conventions since discarded — and run 3 is at `9869798` with
+nothing pending from us.
 
 ## 2026-09-24  (the reading of run 3 — six items, a delivery, and a deliberate stop)
 
