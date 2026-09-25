@@ -52,15 +52,17 @@ paths:
 
 5. **After the reply, the re-pin — the take.** The deliverer's new
    version arrives staged in this repo's own `temp/`: a directory
-   named for the hash, the note beside it. In this order, before
-   anything moves: **check the note against the staging** — diff
-   every delivered file against what this run holds; the note says
-   how many differ, the diff says how many, and a mismatch is
-   reported first. Then diff each held copy against this run's own
-   delivery commit to find its own edits, and read the note's
-   verdict on each. Then copy whole, empty `temp/`, and write one
-   decisions entry carrying the new hash; the copy is pristine
-   again; the TODO line leaves with the hash. A
+   named for the hash, the note beside it. **Nothing in `temp/` is
+   in force until it is copied into place** — a staged skill is a
+   file, not a skill, and a step that opens meanwhile runs on the
+   held copy. In this order, before anything moves: **check the note
+   against the staging** — diff every delivered file against what
+   this run holds; the note says how many differ, the diff says how
+   many, and a mismatch is reported first. Then diff each held copy
+   against this run's own delivery commit to find its own edits, and
+   read the note's verdict on each. Then copy whole, empty `temp/`,
+   and write one decisions entry carrying the new hash; the copy is
+   pristine again; the TODO line leaves with the hash. A
    declined edit is gone with the re-pin — never edited back in. If the
    project still needs what was declined, that need goes into
    records per rule 3, and the decisions entry says so.
