@@ -34,12 +34,12 @@ done, `deliver.md` carries the verdicts down.
      `kit-P` is the run's receipt branch when it cut one; otherwise
      the commit of the registry entry that recorded `P`.
 
-4. **Write the reading**, `temp/reading-<run>-<date>.md`: one line
-   per edit, per ask, per finding — what it is, where it is, and
-   nothing decided yet. Its first line names the run's `HEAD` as
-   read; that is the read-through the next note will carry. The
-   reading is revised as its items close and deleted when the work
-   does; history keeps it.
+4. **Write the reading**, `temp/reading-<run>-<date>.md`, to the
+   shape that governs it: one line per edit, per ask, per finding —
+   what it is, where it is, and nothing decided yet. Its first line
+   names the run's `HEAD` as read; that is the read-through the next
+   note will carry. The reading is revised as its items close and
+   deleted when the work does; history keeps it.
 
 Then the work: each item ends as taken, declined or held, where
 `exchange.md` §6 says each lands. Then `deliver.md` — with files if
