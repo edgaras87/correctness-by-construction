@@ -37,7 +37,8 @@ wrote (3). **The actor** — the work arrangement, which the agent
 here is made of and which the container ships a second copy of
 (4).
 
-What this page knows is wrong is listed at the end.
+At the end: what must stay true, the words, and what this page
+knows is wrong.
 
 ---
 
@@ -318,6 +319,56 @@ never shipped those rules. A project born today gets the
 prohibition and nothing else.*
 
 ---
+
+## What must stay true
+
+The strings, as constraints. Each is already on this page as a
+sentence; here they are collected so a change can be checked
+against them in one pass.
+
+- **The concept is authoritative here.** Every copy elsewhere is a
+  copy, changed only by copying anew.
+- **The container is the master** of every file a run receives.
+  Our own `.claude/skills/` copies are downstream of it, not beside
+  it.
+- **A manual never ships.** What a project gets is the artifact,
+  never the explanation.
+- **A run is blind.** No address for this repo, no checkout, no
+  remote. Nothing here reaches it by itself.
+- **Nothing moves upward as files.** A run never pushes here; we
+  read it.
+- **One pin per run, for the whole delivery.** Not one per group,
+  not one per convention.
+- **Our reasoning reaches a run only through the note.** The files
+  carry none of it.
+- **Agent side and project side never share a commit** — in this
+  repo and in every run.
+
+## The words
+
+Used across both repos, defined here and nowhere else.
+
+- **deliverer** — the repository holding the master of every file a
+  project receives. Here, this repo.
+- **run** — a separate repository that builds a real system with
+  what it was given. Blind to its deliverer.
+- **delivery** — files copied whole into a run, with a note. At
+  birth, and after.
+- **staging** — a person copying the delivery and its note into a
+  run's `temp/`. The operator's act; the run does nothing until it
+  has happened.
+- **take** — the run's act: moving delivered files from `temp/`
+  into place and recording the pin.
+- **pin** — the one hash a run records for a delivery. A commit of
+  the deliverer's; the run stores it and cannot resolve it.
+- **note** — the text beside a delivery: what changed since the
+  run's pin, and a verdict on everything the run asked.
+- **harvest** — us reading a run's repository and changing our
+  masters from what it learned. No files move.
+- **master** — the one copy of a file that is edited. Every other
+  copy changes only by being copied anew.
+- **made usable** — what a stated body becomes in the delivery:
+  the concept as the method, the conventions as the container.
 
 ## What this page knows is wrong
 
