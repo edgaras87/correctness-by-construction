@@ -814,6 +814,17 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] The rename sweep needs a home before `bundle-update.md` goes
+      (2026-09-25). The one lesson in that file with nowhere else
+      to live: when anything is renamed or renumbered, grep the
+      whole span for every old identifier, not the one being
+      described — a renumbering moves every number, and the cheapest
+      search is all of them. Run 3 found four stale citations where
+      our note had found two, one in a file we did not think to
+      read. Not exchange: it is what happens at the close of any
+      change set that renames something here. Home: `commit-plan`'s
+      close step, one line. Then `bundle-update.md` is deleted.
+
 - [ ] Split `bundle-update.md`, and write the inbound half to the
       same shape (2026-09-23). Measured: 527 lines, of which the
       five mechanical steps — set the pins, stage, take, record,

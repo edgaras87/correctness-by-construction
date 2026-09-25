@@ -44,16 +44,25 @@ item must end as; this is how the list gets there.
    not independent, and the only cheap moment to find out how one
    moved the others is right after it moved.
 
-6. **Each item ends as one of three**, where `exchange.md` §6 says
+6. **A changed line is an edit only if their log says so.** For
+   every hunk the diff put on the reading, the first question is
+   whether the run's decisions log records it. Recorded: the run
+   edited it on purpose, and it is an item to decide. Not recorded:
+   something went wrong at the take, and it is a defect of a
+   different kind — a finding about the exchange, not about the
+   copy. The diff alone cannot tell the two apart; only their log
+   can. Twice the records read fine while the files were off.
+
+7. **Each item ends as one of three**, where `exchange.md` §6 says
    each lands: taken changes a master here; declined puts its why
    in the reading, to go into the note; held takes a trigger and a
    line in our backlog.
 
-7. **Records as they fall.** An ADR per decision with rejected
+8. **Records as they fall.** An ADR per decision with rejected
    options. The decisions log for any change to the arrangement.
    The devlog at a session's end, and at a pause.
 
-8. **When the list is closed, `deliver.md`.** The note is written
+9. **When the list is closed, `deliver`.** The note is written
    from the reading's final state — every item's verdict, in the
    run's order — and the read-through from its first line. Then the
    reading is deleted, the branch fast-forwards, and the devlog
