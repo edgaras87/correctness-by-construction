@@ -118,15 +118,66 @@ and then wrote the thing it had been pointing at.
   last, name the staging after — the last one was named a commit
   early.
 
-Resume: `temp/exchange.md` is the stated half and
-`temp/skills-changed-in-place.md` is the run's derived half, both
-drafts. Not yet written: our half (staging, reading, the note) to
-replace `bundle-update.md`; the layout move (two `git mv` per
-skill); the field; the discards of `convention-lifecycle` here and
-shipped; `master.md` §2 and §5 following the layout and the
-numbers. Then the delivery to run 3 with the note telling it to
-drop its own rule for the one derived from it. `main` is 74
-commits behind.
+### Evening — our half, and the middle nobody had written
+
+Six more commits. The exchange's last unwritten part was ours, and
+writing it split twice.
+
+- **`deliverer.md`, then `read.md` and `deliver.md`.** The first
+  draft was read → note → stage as one procedure, 129 lines against
+  `bundle-update.md`'s 527. The reviewer saw it did several things
+  and asked whether to split. It should have been obvious from the
+  precedent: the reading of run 3 was not a step, it was a document
+  with F, D and W lists and a branch of 21 commits, and the delivery
+  was one item on it. So: `read.md` finds the span from the run's
+  own read-through, reads the three things, and ends by writing the
+  reading — four steps, 48 lines, one rule across the gap: *a read
+  that sends no note has not finished.* `deliver.md` is the note
+  and the staging, the same whether a reading came first or we
+  changed something ourselves; verdicts and read-through ride only
+  when one did. Birth stays a pointer to `pure-seed.md`.
+- **The exchange says what a reading is and where each verdict
+  lands**, and no more: taken changes a master; declined puts its
+  why in the note and nowhere else; held takes a trigger and a line
+  in our backlog. Working the list is ordinary work, and the
+  exchange does not describe it. The closing line became two
+  procedures with *between them is work, not procedure*.
+- **The reading's shape** — `temp/reading-shape.md`, written from
+  the one reading that exists, eight sections in order and the
+  rules that hold across them. The rules are the six lessons the
+  09-23 reading kept as it went, *so that a rule could be written
+  from them*; this is that rule, arriving as a shape rather than
+  the standing rule W3 had been going to be. Where it lives —
+  `.claude/shapes/` or `.claude/rules/` with `paths:` — is the
+  reviewer's; I lean rules, the moment being a file written.
+- **Working a reading**, provisional, the arrangement's half of the
+  middle: eight steps from list to note, five things the one firing
+  got right, five to watch, four not yet thought about. Among the
+  watched: a pause had no form; a delivery mid-list is allowed and
+  dangerous — W9 went down with three items open, miscounted, and
+  came back; and **two readings at once** — the run-3 reading is
+  paused on its branch and this review was cut from it, and nothing
+  says how they relate or which moves `main`. Among the unthought:
+  when to read at all. The trigger is unnamed, so readings happen
+  when someone remembers.
+- **The reviewer's rule, added to both:** every close is followed
+  by one pass over every open item — F, D or W — asking whether the
+  close changed it, closed it, or blocked it. The draft had two
+  weaker rules that only caught knock-ons by running into them. The
+  evidence is exact: W4's set closed W6 and it was seen because the
+  set hit it; W7's deferral took W8's home and nobody saw until the
+  pause. Minutes per pass, and the only cheap moment.
+
+Resume: six drafts in `temp/` are the whole exchange —
+`exchange.md`, the run's rule, `read.md`, `deliver.md`, the
+reading's shape, `working-a-reading.md`. Undecided: where the shape
+lives. Not yet done: the layout move (two `git mv` per skill), the
+derivation field, the discards of `convention-lifecycle` here and
+shipped and of `bundle-update.md`, `master.md` §2 and §5 following
+the layout and the two numbers, and W3's rule from
+`working-a-reading.md` once it has run twice. Then the delivery to
+run 3, whose note tells it to drop its own rule for the one derived
+from it. `main` is 81 commits behind.
 
 ## 2026-09-25  (the arrangement review — three conventions gone, and a page that says what this repo is)
 
