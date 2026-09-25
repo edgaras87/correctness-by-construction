@@ -32,9 +32,9 @@ derived from it is in question. Change what a run may edit to its
 copies and three documents in two repos start disagreeing.
 
 **Today those strings get noticed afterwards**, usually by the run,
-usually after something has already shipped wrong. Three such
-findings are on this page, left written as contradictions rather
-than smoothed away.
+usually after something has already shipped wrong. Four such
+findings are on this page, left where they were found and listed at
+the end.
 
 So the use is: **before a change, read this to see what else it
 pulls.** If a change would make something else here untrue, that
@@ -46,27 +46,16 @@ The cost of that is this page being current. A map that is wrong
 about what connects to what is worse than no map, because it is
 believed.
 
-## The parts
+## How to read it
 
-- **What is stated here** — two bodies of writing that ship
-  nothing by themselves. The **concept**, why the repo exists; and
-  the **conventions**, how work is done.
-- **The delivery** — the repeatable stub a project is born from and
-  updated with. Both of those made usable.
-- **The agent as maintainer** — who keeps the first two true, and
-  what it is made of.
+Three movements. **The material** — what is stated here (1) and
+what ships from it (2), paired row by row. **The motion** — how any
+of it changes, and the rule for when a run disagrees with what we
+wrote (3). **The actor** — the work arrangement, which the agent
+here is made of and which the container ships a second copy of
+(4).
 
-Each has a section below. What a run is, and how the two repos
-reach each other, sits inside the delivery — it is where the
-delivery goes.
-
-How all of it changes — and the rule for when a run disagrees with
-what we wrote — is section 3.
-
-And one thing that is **not** a part, because it appears in two of
-them: the **work arrangement**. The agent is made of one, and the
-container ships another. It gets its own section so both can point
-at it.
+What this page knows is wrong is listed at the end.
 
 ---
 
@@ -167,7 +156,7 @@ one — the one artifact here that nothing in 1.2 explains.*
 A project with no correctness-by-construction in it would still want
 most of this, which is why it is a group of its own and not part of
 the method. Among what it ships is a whole **work arrangement** for
-the run's own agent — section 5.
+the run's own agent — section 4.
 
 ### 2.4 What does not travel — `installs/`, `fills/`
 
@@ -266,21 +255,7 @@ and not a wish:
 decline is caught being made "because the manual says" — that is
 the trigger, and until it fires this paragraph is the whole of it.*
 
-## 4. The agent as maintainer
-
-**The maintainer of the concept, the delivery, and the records that
-hold both.**
-
-It keeps the concept's statement true, derives the method from it,
-holds the master of every file any run receives, delivers to runs,
-and reads runs back to learn what to change here.
-
-It is not a builder. There is nothing here to build.
-
-What it is made of is a **work arrangement**, which is section 5 —
-the one it runs under is described there as 5.1.
-
-## 5. The work arrangement
+## 4. The work arrangement
 
 **What tells an agent how to work in a repo — not the work, and not
 a record of it.** Four kinds of file, and each reaches the agent a
@@ -299,16 +274,25 @@ Every repo in this workspace has one. **Two of them exist here:**
 the one this repo runs under, and the one it ships inside the
 container for someone else to run under.
 
-### 5.1 This repo's — a maintainer's
+### 4.1 This repo's — a maintainer's
+
+**The maintainer of the concept, the delivery, and the records that
+hold both.** It keeps the concept's statement true, derives the
+method from it, holds the master of every file any run receives,
+delivers to runs, and reads runs back to learn what to change here.
+It is not a builder; there is nothing here to build. **Its work is
+section 3, run from this side.**
 
 Entry file: *"A concept repo... Documents only — no code, no
 runs."* Four convention skills — `commit-messages`, `commit-plan`,
 `convention-lifecycle`, `visual-comparison`. No rules.
 
-The work it arranges: hold masters, decide, record, deliver,
-harvest.
+*The records it keeps — `PLAN`, `TODO`, the devlog, the ADRs, the
+decisions log, `CHANGELOG`, `ARCHITECTURE` — are not on this page.
+Records are where things go stale, and `ARCHITECTURE.md` already
+describes most of section 2 a second time. Named here, not filled.*
 
-### 5.2 A run's — a builder's
+### 4.2 A run's — a builder's
 
 Shipped in `delivery/container/`, so it is something we write and
 they receive.
@@ -322,7 +306,7 @@ the records the arrangement refers to.
 The work it arranges: build a real system, keep its records, take
 deliveries.
 
-### 5.3 What the difference explains
+### 4.3 What the difference explains
 
 **Nearly identical, and that is the trap.** The four skills are the
 same files. The records table has the same shape. The agent/project
@@ -345,3 +329,22 @@ three times, we took every edit into our masters, and on 2026-09-17
 we adopted the seven rules run 3 wrote to govern such edits. We
 never shipped those rules. A project born today gets the
 prohibition and nothing else.*
+
+---
+
+## What this page knows is wrong
+
+Four things, each left standing where it was found:
+
+1. **2.3** — `shapes-lifecycle` ships with no manual behind it.
+2. **2.5** — the delivery/harvest asymmetry is written down nowhere
+   but here.
+3. **4.3** — we ship an entry file forbidding in-place edits of the
+   method skills, and have taken three such edits under seven rules
+   we adopted and never shipped.
+4. **4.1** — this repo's own records are not on the map, and
+   `ARCHITECTURE.md` describes section 2 a second time.
+
+When one is fixed it leaves this list. When the list is empty, this
+page is claiming to be current — and that is the claim to distrust
+most.
