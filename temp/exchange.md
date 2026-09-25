@@ -193,6 +193,16 @@ A copy may be edited in place when all three hold:
   pin; and the diff against the pin, which exists whether anyone
   writes anything.
 
+The backlog lines live under one heading kept for them, *To the
+deliverer*. The backlog is the channel — a hand-off is the run's
+own open item, waiting on an answer, with a lifecycle git can see:
+filed at a step's close, gone with the pin that answers it. `temp/`
+is not the channel the other way: it is untracked, emptied at the
+take, and a line left there would vanish without a record. One
+heading keeps the lines from being swept with a rewrite elsewhere —
+which has happened, five items in one commit — and makes the read
+one section instead of a search.
+
 Nothing is written into the copy but the edit. No dated line, no
 comment saying what changed — a file says how to use it, never its
 own history.

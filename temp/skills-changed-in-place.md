@@ -41,7 +41,10 @@ paths:
 
 4. **At every step's close, the hand-off.** One TODO line per edited
    copy: "deliverer: evaluate this run's changes to `<copy>` since
-   `<pin>`". The line is the request — without it the deliverer finds a
+   `<pin>`", under one heading kept for that purpose — `## To the
+   deliverer` — so a rewrite of another section cannot take it and
+   the deliverer reads one section rather than the whole backlog.
+   The line is the request — without it the deliverer finds a
    changed file and must guess; the edits describe themselves in the
    diff and the log. The deliverer reads this repo read-only when it
    reads it — at a hand-off, or at the retrospective — not at every
