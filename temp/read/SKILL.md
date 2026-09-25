@@ -1,13 +1,15 @@
-<!-- DRAFT, 2026-09-25. Our half of the exchange, first procedure:
-     read a run and write the reading. Derived from temp/exchange.md
-     §2 and §6 and explains nothing. Replaces the harvest section of
-     delivery/README.md. Never shipped. -->
+---
+name: read
+description: Read a run since the deliverer last read it, and write the reading. Use when the reviewer says to read a run, or before a delivery that should answer what the run asked.
+---
 
 # Read a run
 
 Four steps, and the fourth is a document. What happens to the
-document afterwards is work, not this procedure; when the work is
-done, `deliver.md` carries the verdicts down.
+document afterwards is work, not this skill; when the work is done,
+`deliver` carries the verdicts down.
+
+## 1. The method
 
 1. **Find where to start.** Open the run's `.claude/decisions.md`.
    Its last delivery entry carries the **pin** `P` — our commit its
@@ -38,11 +40,27 @@ done, `deliver.md` carries the verdicts down.
    shape that governs it: one line per edit, per ask, per finding —
    what it is, where it is, and nothing decided yet. Its first line
    names the run's `HEAD` as read; that is the read-through the next
-   note will carry. The reading is revised as its items close and
-   deleted when the work does; history keeps it.
+   note will carry.
 
-Then the work: each item ends as taken, declined or held, where
-`exchange.md` §6 says each lands. Then `deliver.md` — with files if
-anything was taken, without if not. **A read that sends no note has
-not finished**: the run's read-through stays where it was, and the
-run cannot tell it was read.
+## 2. Gates
+
+- The reading exists, to its shape, and its first line names the
+  run's `HEAD`.
+- Every edit, ask and finding in the span has one line, and none of
+  them is decided.
+- Nothing in the run was written to. The run is read only.
+
+## 3. What this does not do
+
+- It does not decide. Each item ends as taken, declined or held in
+  the work that follows, where the exchange says each lands.
+- It does not send. `deliver` does — and a read that sends no note
+  has not finished, because the run's read-through stays where it
+  was and the run cannot tell it was read.
+
+---
+
+## Decisions
+
+- `exchange.md` §2 — the two numbers, and why both are in the run
+- `exchange.md` §6 — what a reading is, and the three verdicts

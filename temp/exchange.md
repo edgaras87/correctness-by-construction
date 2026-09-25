@@ -151,9 +151,19 @@ and the note says both halves.
 
 **The note.** What changed since the run's pin, stated so the run
 can diff the staging against what it holds and find the note wrong.
-A verdict on everything the run addressed to us since we last read
-it. Nothing that needs our repo to verify: a note that reports facts
+Why it matters to this run — the part a diff cannot carry. A verdict
+on everything the run addressed to us since we last read it.
+Nothing that needs our repo to verify: a note that reports facts
 about our tree gives the run a hedge it cannot close.
+
+*Three rules about verdicts, each a defect first: a verdict is the
+decision and what the run owes now, nothing else; never describe our
+own practice, which the run cannot check; never say "accepted" for
+something not decided. And four ways a note fails to reach: it was
+thin; the thing it names does not exist; the relationship changed
+under it; or it carried the right content in a shape the run could
+not act on — the last found on 2026-09-20, when a note of reports
+was sent back and rewritten as verdicts.*
 
 ## 4. The take
 

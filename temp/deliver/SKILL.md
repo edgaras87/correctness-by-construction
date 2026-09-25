@@ -1,18 +1,13 @@
-<!-- DRAFT, 2026-09-25. Our half of the exchange, second procedure:
-     write the note and stage. Derived from temp/exchange.md §2 and
-     §3 and explains nothing. The same whether a reading preceded it
-     or we changed something on our own. Replaces
-     delivery/installs/bundle-update.md. Never shipped.
-
-     Written for the mirrored layout (exchange §3): every path under
-     delivery/<group>/ is the path it lands at. Until the move lands,
-     step 3.2 does not run as written. -->
+---
+name: deliver
+description: Write the note and stage a delivery into a run's temp/. Use when the reviewer says to deliver — after a reading, or when something a run holds has changed here — and for a note alone when a reading found nothing to send.
+---
 
 # Deliver
 
-Two acts: the note, then the staging on the word. A pin is one of
-our commits held by the run; a read-through is one of the run's
-commits, also held by the run. We hold nothing per run.
+Two acts: the note, then the staging on the word. The same whether
+a reading preceded it or we changed something on our own; the
+verdicts and the read-through ride only when one did.
 
 ## 1. Write the note
 
@@ -30,18 +25,26 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
    what it holds; the note says what that diff will show, and the
    run finds the note wrong if it does not.
 
-2. **The verdicts**, if a reading preceded this — one for every
-   line under *To the deliverer* and every edit, in the run's order,
-   as the reading's items ended.
+2. **Why it matters to this run** — the part a diff cannot carry.
+   What the change does to the run's next step, not what it does to
+   the files.
 
-3. **The read-through**, if a reading preceded this: `read through
+3. **The verdicts**, if a reading preceded this — one for every
+   line under *To the deliverer* and every edit, in the run's order,
+   as the reading's items ended. A verdict is the decision and what
+   the run owes now; never a description of our own practice, which
+   the run cannot check; never "accepted" for something not decided.
+
+4. **The read-through**, if a reading preceded this: `read through
    <run HEAD>`, from the reading's first line. A delivery without a
    reading carries none, and the run's stays where it was.
 
-4. Nothing that needs our repo to verify. A claim the run cannot
+5. **What it recommends, in order**, and what is optional.
+
+6. Nothing that needs our repo to verify. A claim the run cannot
    check from its own tree is a hedge it can never close.
 
-5. **Commit the note last.** The commit after this one is `H`, and
+7. **Commit the note last.** The commit after this one is `H`, and
    the staging is named by it.
 
 ## 2. Stage
@@ -88,9 +91,27 @@ through <run HEAD>, nothing to answer, no files` — and step 2 copies
 only the note. The run records the read-through; the pin does not
 move.
 
-## Birth
+## 4. Gates
 
-The same overlay as 2.2, into the newborn's root instead of
-`temp/`, followed by the fills. `pure-seed.md` has the rest; the
-first registry entry it writes carries the pin and a read-through
-of the newborn's first commit.
+- The note is committed, and the staging is named by that commit.
+- The run's tree was quiet and its `temp/` empty before anything
+  was copied.
+- No path was claimed by two groups.
+- The run's `temp/` holds exactly the bundle and the note, and
+  nothing tracked in the run changed.
+
+## 5. What this does not do
+
+- It does not decide verdicts. They come from the reading, as its
+  items ended.
+- It does not take. The run's rule does, from `temp/`, in its own
+  time.
+- Birth: the same overlay as 2.2 into the newborn's root, followed
+  by the fills — `pure-seed.md` has the rest.
+
+---
+
+## Decisions
+
+- `exchange.md` §2 — the two numbers
+- `exchange.md` §3 — staging, what goes, absence, the note
