@@ -86,6 +86,15 @@ concept. Nothing that explains them; the explanation stays home.
 convention. A run that holds two pins for one delivery has been
 given a way to be inconsistent.
 
+**A copy carries presence and content, never absence.** A file
+that was delivered before and is not in this staging is still in
+the run, and nothing copied can say otherwise. So the note names
+every deletion and every rename by path — this is gone, this is
+now that. The deliverer finds them with `git diff -M` between the
+run's pin and the staging; the run cannot, because it cannot
+resolve the pin. A rename in the delivery is a delete and an add,
+and the note says both halves.
+
 **The note.** What changed since the run's pin, stated so the run
 can diff the staging against what it holds and find the note wrong.
 A verdict on everything the run addressed to us since we last read
@@ -110,7 +119,12 @@ The run's agent, from `temp/`, in this order.
    receipt branch — the delivery as it arrived, named by the pin —
    is worth cutting when the run expects to edit, because it makes
    step 2's diff exact next time. Optional.
-4. **Register.** One line in the run's decisions log: the date, the
+4. **Remove what the note says is gone.** Each path the note names
+   as deleted is deleted; each it names as renamed is moved. The
+   only step a copy cannot do, and the one that has been missed
+   before — a rename once left the old file standing in a run for
+   four days.
+5. **Register.** One line in the run's decisions log: the date, the
    pin, what came, what was declined and where its need went. Agent
    side only. Then `temp/` is emptied.
 
@@ -158,6 +172,12 @@ One word for the other side, in the rule and in the backlog line:
 *deliverer*. Run 3's text says *source*; `master.md` says
 deliverer, and the shipped rule says one thing.
 
+**A run does not rename or delete a copy.** The delivered path is
+the copy's identity for the take: a renamed copy becomes two files
+at the next delivery, a deleted one comes back. A copy the run has
+no use for is a backlog line — *we do not use this* — and the
+deliverer decides.
+
 **The concept is never edited.** A chapter is not run, so nothing
 in it can fail a step. A lesson about the concept is a prose
 hand-off in the backlog line, and it reaches the chapter, if it
@@ -174,6 +194,13 @@ since the read point: its decisions log (every edit and why), its
 backlog (every line addressed to us), and the diff of every held
 copy against its pin. Nothing else is required; the devlog is
 context.
+
+**A file the run wrote is the run's own until the run offers it.**
+It appears in the diff against the pin as an addition, and it is
+read only if a backlog line points at it — a shape, a rule, a
+reference the run thinks any project would want. Then it gets a
+verdict like an edit does. That is how a run's rule for editing
+copies reached this document.
 
 **Verdicts.** Each edit and each ask gets one of three:
 
