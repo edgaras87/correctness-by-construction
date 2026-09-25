@@ -1,16 +1,15 @@
-<!-- DRAFT, 2026-09-24. It lives in temp/ and is edited in place
-     until it is worth placing; where it finally sits, and what kind
-     of document it is, are decided from what it ends up containing
-     rather than before. A section that outgrows this file becomes
-     its own document and leaves a paragraph behind.
+<!-- Placed here 2026-09-25, loose under docs/ on purpose: not in
+     models/ or conventions/, because either would argue for what
+     this should say. A section that outgrows this file becomes its
+     own document and leaves a paragraph behind.
 
-     The name is provisional: everything here is a master, and
-     everywhere else holds copies.
+     The name: everything here is a master, and everywhere else
+     holds copies.
 
      Written under one rule: state only what is checkable in this
-     repo and in run 3 today, and mark anything that is merely
-     intended as intended. Where we contradict ourselves, say so
-     rather than pick a side. -->
+     repo and in the live run, and mark anything merely intended as
+     intended. Where we contradict ourselves, say so rather than
+     pick a side — the list at the end is where that goes. -->
 
 # Master
 
