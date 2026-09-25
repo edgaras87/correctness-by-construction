@@ -49,6 +49,29 @@ The pin is a commit of the deliverer's. The run stores it and
 cannot resolve it, so everything the run needs to check must be
 checkable against its own tree.
 
+**At the pin, the bytes match.** The moment a run takes a delivery,
+every copy equals the master exactly, and anyone can check it with
+`diff`. Between pins the copy is the master plus the run's edits,
+and that difference is the whole of what the deliverer reads. A
+take overwrites whole and the bytes match again. Same pin, same
+bytes; different bytes means the run has learned something not yet
+read.
+
+**The records are the one exception, and the reason is that they
+never update.** `PLAN`, `TODO`, the devlog, the entry file are
+delivered once as stubs; the run fills them; no later delivery
+touches them. Their skeleton froze at birth, so no compare ever
+runs on them.
+
+*Rejected 2026-09-25: syncing a skeleton and letting the rest stay
+local, for every copy. It would make the compare a judgement where
+it is now a `diff` — the miscount problem made permanent; it would
+let a run's edit stay in the local part and never reach the next
+run, which is the one thing the loop exists to prevent; and the
+need it serves already has a home, the run's own records (§5). The
+trigger that would reopen it: a run re-applying the same declined
+edit after two re-pins. It has not happened.*
+
 ## 3. Down
 
 **Staging.** A person copies the delivery and its note into the
