@@ -6,6 +6,128 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-25, later  (master.md placed, and the exchange drafted from five facts)
+
+Thirteen commits after the morning entry; 35 on the branch. The
+morning ended with `master.md` in `temp/`. The afternoon placed it
+and then wrote the thing it had been pointing at.
+
+### `master.md`, placed
+
+- Moved to `docs/master.md`, loose, on the argument that a page
+  keeping its own errata cannot be mistaken for finished. Not in
+  `models/` or `conventions/` — either would argue for what it
+  should say.
+- The note joined §2.5: the only way our reasoning reaches a run,
+  the files carrying none of it. Two closing sections went in to be
+  looked at and were kept: **what must stay true**, eight
+  constraints already on the page as sentences; and **the words**,
+  ten defined nowhere else, *made usable* marked as the coinage to
+  doubt. The candidates were not filed in TODO — the reviewer wanted
+  to see them, and seeing them was the decision.
+- "What this is for" became "What this is", 25 lines to 7, on the
+  reviewer's question. The cut paragraph told the reader what to do
+  — a work-arrangement rule inside a design document, the same
+  category error as the provenance section the day before.
+
+### The 09-24 delivery, withdrawn untaken
+
+- Asked whether we were current on run 3: yes, completely — HEAD
+  `9869798`, our read point `9869798`, zero commits between. The
+  one hazard was ours: their `temp/` still held `bundle-5db9268`,
+  shipping three conventions discarded the day after it was staged,
+  with a note that miscounted. Removed on the word. Run 3 clean,
+  nothing pending from us.
+- **`skills-changed-in-place.md` — what we had actually decided.**
+  "Everything" was too strong; the records show the seven rules went
+  two ways. The convention half reached `convention-lifecycle` §3
+  step 4 through the handbook (HANDBOOK ADR-0038) and ships. The
+  method-skill half stayed in run 3's own file; our ADR-0022
+  answered the *ask* (how edits come back) and the question of
+  shipping the rule was never posed. Meanwhile the entry file we
+  ship says "never edited in place". Errata #3 of `master.md`, now
+  with its mechanism.
+
+### `temp/exchange.md` — one thing, four artifacts, written as if none existed
+
+- The reviewer's frame: version sync cannot be fixed until one
+  document says what this repo is, what a run is, and how they
+  relate — and then design the exchange ignoring the current
+  artifacts, keeping only what cannot change. Five facts: a run is
+  blind; nothing arrives by itself; copies against masters; a run
+  edits a copy when it fails it; nothing moves up as files.
+- **Not version control.** The pin is one number in it. Every
+  section is about something passing between two repos; the name
+  from ADR-0022's title held.
+- **The side-by-side, and a correction of mine.** The draft said the
+  two edit rules "differ in wording and nothing else". Read against
+  each other: six elements the same rule; run 3's the superset —
+  the pin and never-edited concept in one place, a priority when
+  edits stack, a finished copy edited the same way; ours carrying a
+  "provisional" clause that expired on 09-20. **The shipped rule is
+  built from theirs.** Their text was committed verbatim first, so
+  every change is a diff the note can show them: paths widened to
+  every copy and `temp/`, nineteen lines of header history out,
+  *skill* → *copy*, *source* → *deliverer*, and rule 5 becomes the
+  take, opening with the check that would have caught every
+  miscount from the receiving side.
+- **Eight decisions written into the draft, each marked where it
+  lands:**
+  1. *At the pin, the bytes match.* Skeleton-sync for every copy
+     rejected with its trigger — it makes the compare a judgement
+     and keeps a run's edit local. The records are the exception
+     because they never update.
+  2. *A copy carries presence and content, never absence.* The note
+     names deletions and renames by path; the take gains a step to
+     remove them — the one step a copy cannot do, missed once for
+     four days. A run does not rename or delete a copy; it asks.
+  3. *Each group is a piece of the run's tree.* Staging becomes
+     copying groups on top of each other, a group left out by not
+     naming its directory. `concept/` stays at root as the one named
+     mapping. The reviewer's worry — losing what came from where —
+     answered: the groups stay as directories here and were never
+     in the run's tree anyway.
+  4. *Every shipped file is in exactly one group*, checked at
+     staging; cross-group words are a fill. One fill exists; one is
+     owed with its trigger — the container's entry file names method
+     files.
+  5. *Every shipped file says what it derives from*, one frontmatter
+     field, a live claim never history. Eight skills already say it
+     as a line-6 comment in two verbs; four say nothing. Not called
+     `source`.
+  6. *Hand-offs live under one heading* in the run's backlog. The
+     backlog is the channel because a hand-off is the run's own open
+     item with a lifecycle git can see; `temp/` is untracked and
+     emptied. The heading answers F3's five swept items.
+  7. **Both numbers live in the run** — the reviewer's, and it
+     removed the per-run table I had proposed. Pin and read-through,
+     written by the run at every note. We hold nothing. Every read
+     ends with a note, even an empty one; forgetting only makes the
+     next read longer, because the number can lag but never lead.
+  8. *Staging on the reviewer's word, by either hand.* The
+     constraint was never a human's hand; it was that nothing is
+     started by the run. The agent never stages unasked — named with
+     its one occurrence.
+- **DEAD END (mine): keeping the note verbatim on the run's side.**
+  Proposed because a run is blind and cannot open our history. The
+  reviewer asked what would be lost. Nothing: the run's registry
+  entry is written at the take with the note on screen, our side
+  holds the note at the pin, and no run has needed our exact words
+  in three deliveries. A record ahead of its trigger, the exact
+  shape ADR-0022 removed. Kept only the ordering: commit the note
+  last, name the staging after — the last one was named a commit
+  early.
+
+Resume: `temp/exchange.md` is the stated half and
+`temp/skills-changed-in-place.md` is the run's derived half, both
+drafts. Not yet written: our half (staging, reading, the note) to
+replace `bundle-update.md`; the layout move (two `git mv` per
+skill); the field; the discards of `convention-lifecycle` here and
+shipped; `master.md` §2 and §5 following the layout and the
+numbers. Then the delivery to run 3 with the note telling it to
+drop its own rule for the one derived from it. `main` is 74
+commits behind.
+
 ## 2026-09-25  (the arrangement review — three conventions gone, and a page that says what this repo is)
 
 Two days, 21 commits, branch `arrangement-review-2026-09-24`, cut
