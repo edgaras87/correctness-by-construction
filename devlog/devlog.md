@@ -168,16 +168,65 @@ writing it split twice.
   set hit it; W7's deferral took W8's home and nobody saw until the
   pause. Minutes per pass, and the only cheap moment.
 
-Resume: six drafts in `temp/` are the whole exchange —
-`exchange.md`, the run's rule, `read.md`, `deliver.md`, the
-reading's shape, `working-a-reading.md`. Undecided: where the shape
+### Night — the bundle made to correspond, and named
+
+Four more commits.
+
+- **`skills-changed-in-place.md` → `delivered-copies.md`**, by
+  `git mv` so history runs back to run 3's verbatim copy. Named for
+  what it governs, which its own first line already said. The old
+  name said what run 3 first wrote it for.
+- **`read.md` and `deliver.md` became skills.** The reviewer asked
+  why they were not rules, and the answer was that a procedure in
+  `installs/` is a document nothing loads at any moment — which is
+  what `bundle-update.md` was, and why its steps got skipped. Each
+  has a moment, a name the reviewer says. As skills they gained what
+  they lacked and the reviewer had felt missing: a description
+  naming the trigger, and gates. Four things carried over from
+  `bundle-update.md` on the way: why a change matters to this run,
+  what the note recommends in order, the three verdict rules, the
+  four ways a note fails to reach. Still in `temp/`; nothing there
+  loads — checked, and the same answer as for the run's `temp/`.
+- **`bundle-update.md` inventoried line by line.** Everything in it
+  is now somewhere else, dead with the fork, or folded into the next
+  `read`. One lesson had nowhere to live — the rename sweep, grep
+  the whole span for every old identifier — filed in TODO with its
+  home named, `commit-plan`'s close step. Then the file goes. One
+  thing taken into `working-a-reading.md`: a changed line is an edit
+  only if the run's log says so; unrecorded, it is a defect of the
+  take. Twice the records read fine while the files were off.
+- **The correspondence check found three gaps, all one cause.** The
+  run's rule was written before three decisions reached the
+  description: the read-through (the rule recorded one number, not
+  two), absence (no step to remove what the note names gone, no
+  rule against renaming a copy), and a note arriving alone. Fixed
+  in rules 1 and 5. One line went the other way, `temp/` not in
+  force until copied. **A run following the rule as written would
+  have done the old thing** — which is the reason the check was
+  worth running before anything ships.
+- **The exchange is a convention.** The reviewer asked whether the
+  bundle was the same shape as concept → method and conventions →
+  container, and it is exactly the conventions README's definition:
+  a manual that never ships, and artifacts a repo holds. Manual:
+  `exchange.md`, home `docs/conventions/exchange/`. Artifacts:
+  `delivered-copies.md` shipped; `read`, `deliver` and the reading's
+  shape ours. The first convention whose artifacts split between the
+  two arrangements — because the two do different jobs, which
+  `master.md` §4 already said. It replaces a convention with a
+  convention.
+
+Resume: the exchange is six drafts in `temp/` that correspond —
+`exchange.md`, `delivered-copies.md`, `read/SKILL.md`,
+`deliver/SKILL.md`, `reading-shape.md`, `working-a-reading.md`. Its
+home is `docs/conventions/exchange/`. Undecided: where the shape
 lives. Not yet done: the layout move (two `git mv` per skill), the
-derivation field, the discards of `convention-lifecycle` here and
-shipped and of `bundle-update.md`, `master.md` §2 and §5 following
-the layout and the two numbers, and W3's rule from
+derivation field, the rename sweep into `commit-plan`'s close, then
+the discards of `convention-lifecycle` here and shipped and of
+`bundle-update.md`, `master.md` §2 and §5 following the layout and
+the two numbers, placing the six, and W3's rule from
 `working-a-reading.md` once it has run twice. Then the delivery to
 run 3, whose note tells it to drop its own rule for the one derived
-from it. `main` is 81 commits behind.
+from it. `main` is 86 commits behind.
 
 ## 2026-09-25  (the arrangement review — three conventions gone, and a page that says what this repo is)
 
