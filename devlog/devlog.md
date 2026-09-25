@@ -6,6 +6,157 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-25  (the arrangement review — three conventions gone, and a page that says what this repo is)
+
+Two days, 21 commits, branch `arrangement-review-2026-09-24`, cut
+from the paused reading branch. The reviewer's call at the start:
+how we work has grown past manageable; revise the system part by
+part before more work runs through it. Conventions first.
+
+### The discards — ten to seven, nothing put in their place
+
+- **`decide-first`.** Three firings, one win, and in the win it was
+  one line doing the work — *can you say roughly how many commits?*
+  — while the seven-step method rode along. The two misfires: a
+  draft covering queued work, and seven ordered questions written
+  and discarded. What settled that same question was a proposed ADR
+  corrected while building, which `commit-plan` §4–5 already carry.
+  The count line was **not** rescued into `commit-plan`: moving a
+  sentence so a discard feels less wasteful is how the discarded
+  thing grows back.
+- **`option-comparison`.** One firing, in the set that created it.
+  Every win in its findings list came from the picture version.
+  ADR-0030 decision 10's merge-back trigger is answered the other
+  way — nothing to merge into, the specialised half was always the
+  one working. `visual-comparison` stays, about pictures, standing
+  alone.
+- **`artifact-kinds`.** The reviewer's argument, and it is the
+  decisive one: a vocabulary's only job is that a word means the
+  same to both parties, and one of the two could not use these
+  definitions. Worse than useless — a word not shared still reads
+  as agreement to me. The practice it sat on top of already existed
+  unprompted in eight of ten documents. And `commit-plan` declared
+  `requires: artifact-kinds` without using the word "kind" once,
+  which is why the vocabulary shipped into every run that opened a
+  plan.
+- **Caught before acting:** I proposed dropping `specification`
+  with `guide` on the no-exemplar test. `shapes.md` §2 defines a
+  shape by contrast with it, using its exact test. **A word can be
+  load-bearing without ever being worn, and a no-exemplar test does
+  not see boundary uses.** `guide` went; `specification` stayed.
+- **DEAD END (mine, twice in one afternoon):** the document-header
+  shape. Written as the replacement for `artifact-kinds`, first as
+  seven lines in `CLAUDE.md`, then as `.claude/rules/
+  document-header.md` — our first shape, exposed, born under our
+  own `shapes-lifecycle` §1 because the form had recurred in eight
+  of ten documents. Discarded hours later on the reviewer's reading
+  of the same fact: **a practice that recurs eight times unprompted
+  is holding itself up, and a rule describing it changes nothing
+  except adding a file that loads on every `.md` touched.** I had
+  used the recurrence as evidence *for* the rule. It carried a
+  "Where this came from" section until asked why — provenance in an
+  artifact, ADR-0034's exact prohibition, duplicating the decisions
+  entry. Nothing replaces `artifact-kinds`, and that is the answer.
+- The two-place drift was measured at the start and is structural:
+  our `.claude/skills/` copies and the `delivery/container/` masters
+  are duplicates nothing syncs. `artifact-kinds` was six days behind
+  what we ship; `visual-comparison` is still thirteen lines behind.
+
+### `convention-lifecycle`, and the question underneath it
+
+- Explained three times, simpler each time. It is the **receiver's**
+  protocol — 154 lines, our longest — and we stopped being a
+  receiver at the fork. Walked all six steps: none can fire here.
+  Our own registry pins us to ourselves (`ee244c6`, "this repo's
+  container"). Run 3's records show the opposite: eight takes with
+  from→to hashes, three receipt branches, four in-place edits, and
+  the take that found five "change-plan" lines in our shipped
+  files. Heavy use for them, none for us. Not deleted yet.
+- **Does it cover the whole delivery?** No, by its own text — and
+  run 3 wrote `.claude/rules/skills-changed-in-place.md` for the
+  method skills because ours did not reach them. Its header says so
+  in as many words. The versioning half is already general in
+  practice (one pin covers everything); only the wording is narrow.
+- **Live contradiction found on the way:** the entry file we ship
+  says the method skills are "never edited in place". Run 3 has
+  edited `cbc-slice` in place three times, we took every edit, and
+  on 09-17 we adopted their seven rules permitting it. **We never
+  shipped those rules.** A project born today gets the prohibition
+  and nothing else.
+- The reviewer's diagnosis: we cannot fix version sync until one
+  document says what this repo is, what `delivery/` is, what a run
+  is, and how they relate. Nothing did.
+
+### `docs/master.md`
+
+- **Naming, and what it exposed about "our vocabulary".** `system`
+  rejected: the concept's L2 is *the thing being built*, and
+  `cbc-framing` writes `docs/system/` into every run — the one path
+  in the workspace that means the built product, on the one repo
+  that builds nothing. `structure` rejected as static; half the
+  content is flow. `models` was my recommendation until the
+  reviewer asked what vocabulary I meant: **"model" had been
+  defined in `artifact-kinds`, deleted four hours earlier.** What
+  remained was two files describing themselves and me inferring
+  from directory contents — an example set, not a definition, and
+  inference is where two readers drift apart without noticing.
+  Named `master` from its own first two sections. Placed loose in
+  `docs/` on purpose: a category argues for what the page should
+  say.
+- **Shape, arrived at by revision rather than design** — eleven
+  commits on the draft, each a reviewer question. Stated (concept,
+  conventions) → made usable (method, container), the pairing as a
+  two-row table that is the spine. The runs moved under the
+  delivery and the heading stopped naming a directory to make that
+  honest. The work arrangement pulled out as a section of its own
+  because its two instances have different owners — the agent is
+  made of one, the container ships the other. Then the agent folded
+  into the arrangement as its first instance, with the line it was
+  missing: *its work is section 3, run from this side.*
+- **§3, the loop and the rule about declining** — the reviewer's:
+  a finding from practice is declined only for not being general,
+  never because the description says otherwise. The statement is a
+  candidate, not the judge; that includes the page. Four records
+  behind it, and one correction made while writing: **the concept
+  has not bent.** I was about to say it had. Step 5's harvest went
+  into a `cbc-bootstrap` reference, not a chapter. Nothing from
+  three runs has reached the concept, and the page says it does not
+  know whether that means right or unread. Not a rule; the trigger
+  is a decline caught being made "because the manual says".
+- **The purpose section went from 25 lines to 7 and changed
+  heading**, "what this is for" → "what this is". The reviewer's
+  question. The cut paragraph was an instruction — *before a
+  change, read this* — which is a work-arrangement rule inside a
+  design document, the same error as the provenance section.
+- **The map caught its own front page inside an hour.** The
+  opening said "the work derived from it"; §2 spends two
+  subsections saying `spring-postgres` is checked against and the
+  container is not CbC at all. First string pulled.
+- **Three closing sections:** what must stay true (eight
+  constraints, the declining rule deliberately absent), the words
+  (ten, defined nowhere else; *made usable* marked as the coinage
+  to doubt), and what this page knows is wrong — four entries with
+  section numbers, ending on the line that governs reading it: when
+  the list is empty the page is claiming to be current, and that is
+  the claim to distrust most.
+
+### Working notes
+
+- The reviewer's questions were the review, every time. Two of my
+  recommendations were reversed by the reviewer reading the same
+  fact I had cited, the other way. Both reversals were right.
+- Stage, show, stop held for 21 commits. Agent-side and project-side
+  never shared one.
+
+Resume: `docs/master.md` is placed and nothing points at it —
+`CLAUDE.md` line 3 still sends a reader to `tiers.md`, and
+`ARCHITECTURE.md` describes §2 a second time; each pointer is its
+own decision. The four errata are real defects, and the third
+reaches run 3. `convention-lifecycle` is explained and not yet
+deleted. `main` is 60 commits behind and the paused reading branch
+sits one commit back at `cf90073`. The note in run 3's `temp/`
+still miscounts and has not been taken.
+
 ## 2026-09-24  (the reading of run 3 — six items, a delivery, and a deliberate stop)
 
 Two days, 38 commits and this one, branch
