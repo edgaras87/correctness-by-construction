@@ -82,6 +82,44 @@ run whose agent is mid-step has cost one commit plan already.
 container, a stack practice if the run is on that stack — and the
 concept. Nothing that explains them; the explanation stays home.
 
+**Each group is a piece of the run's tree.** Inside
+`delivery/<group>/`, every path is the path it lands at:
+`delivery/method/.claude/skills/cbc-framing/` lands at
+`.claude/skills/cbc-framing/`. Staging is copying each group the
+run takes on top of the last; the result *is* the run's tree, and a
+group is left out by not naming its directory. No list of files, no
+mapping, nothing to forget. *Intended: today `container/` already
+mirrors and the other two do not — their skills sit flat and are
+re-homed by a script line each.* The one named exception is
+`concept/`, which stays at this repo's root because the repo is the
+concept, and lands at `docs/concept/`; that is the whole of the
+mapping, stated here once.
+
+**Every shipped file is in exactly one group.** The staging checks:
+a path claimed by two groups is an error, not a merge. When one
+group's words must sit in another group's file — the method's
+playbook inside the container's `PLAN.md` — that is a **fill**: the
+owning group's file has a marked place, the other group provides
+the text, the staging writes it in. Fills are the only step that is
+not a copy; they are listed in one place and there are few. *One
+exists. One is owed: the container's entry file names the method
+skills and `docs/concept/`, so a run taking container without
+method would be born with an entry file about files it does not
+hold. No such run exists; when one does, those lines become a
+fill.*
+
+**Every shipped file says what it derives from.** One frontmatter
+field, beside `name` and `description`, holding a live claim and
+never history: what this file comes from *now*, not when or from
+which run. Method skills — the concept and its version. Stack
+practice — the concept it was checked against. Container skills —
+the convention whose artifact this is, by name; the manual stays
+home but the name finds it. Concept chapters — nothing; they are
+the top. *Intended: today eight of twelve skills carry this as a
+comment on line 6, in two different verbs, and the container's four
+carry nothing.* The field is not called `source`; that word already
+means the deliverer in a run's text.
+
 **One pin** for all of it. Not one per group, not one per
 convention. A run that holds two pins for one delivery has been
 given a way to be inconsistent.
@@ -233,6 +271,9 @@ delivery, and it still moves the read point.
 | `bundle-update.md`, 527 lines | `delivery/installs/` | replaced by §3 and §6 as our half; the lessons list it never had is what §3–§6 are |
 | the harvest section of `delivery/README.md` | ours | folds into §6 |
 | the entry-file line "never edited in place" | shipped | contradicts §5; goes |
+| `delivery/method/` and `delivery/spring-postgres/` laid out flat | ours | each becomes a piece of the run's tree, §3; two `git mv` per skill |
+| the file lists inside `bundle-update.md`'s scripts | ours | gone with the mapping; a group is a directory name |
+| the line-6 derivation comments in eight skills | shipped | become the one frontmatter field, §3 |
 | `master.md` §2.5 and §3 | ours | stay; this is their detail |
 
 ## What this would be made usable as
