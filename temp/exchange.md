@@ -82,7 +82,11 @@ edit after two re-pins. It has not happened.*
 
 **Staging.** A person copies the delivery and its note into the
 run's `temp/`. Only when the run's tree is quiet: staging into a
-run whose agent is mid-step has cost one commit plan already.
+run whose agent is mid-step has cost one commit plan already. The
+staging is named by the commit at which the files and the note are
+both final — commit the note last, then name the bundle — so the
+pin the run records points at exactly the note it read. *The last
+delivery was named one commit before its note was finished.*
 
 **What goes.** Files, whole. The groups that ship — method,
 container, a stack practice if the run is on that stack — and the
