@@ -32,20 +32,28 @@ item must end as; this is how the list gets there.
 
 4. **A work item is a commit, or a commit plan.** One commit when it
    is one; a plan when it is not, with the reviewer at every
-   boundary. An item's set may close other items — W6 never ran,
-   because W4's set answered it — and the reading is marked so, in
-   place, at the moment it happens.
+   boundary.
 
-5. **Each item ends as one of three**, where `exchange.md` §6 says
+5. **Every close is followed by one pass over every open item.** F,
+   D and W alike: does this close change it, close it, or block it?
+   Mark each that it touches, in place, before the next item is
+   opened. A pass over a list of twenty is minutes; the alternative
+   is what happened last time — W4's set closed W6 and that was
+   caught because the set ran into it, while W7's deferral took
+   W8's home with it and nobody saw until the pause. The items are
+   not independent, and the only cheap moment to find out how one
+   moved the others is right after it moved.
+
+6. **Each item ends as one of three**, where `exchange.md` §6 says
    each lands: taken changes a master here; declined puts its why
    in the reading, to go into the note; held takes a trigger and a
    line in our backlog.
 
-6. **Records as they fall.** An ADR per decision with rejected
+7. **Records as they fall.** An ADR per decision with rejected
    options. The decisions log for any change to the arrangement.
    The devlog at a session's end, and at a pause.
 
-7. **When the list is closed, `deliver.md`.** The note is written
+8. **When the list is closed, `deliver.md`.** The note is written
    from the reading's final state — every item's verdict, in the
    run's order — and the read-through from its first line. Then the
    reading is deleted, the branch fast-forwards, and the devlog
