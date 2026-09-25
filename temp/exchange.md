@@ -80,6 +80,31 @@ need it serves already has a home, the run's own records (§5). The
 trigger that would reopen it: a run re-applying the same declined
 edit after two re-pins. It has not happened.*
 
+**One cycle, drawn.** Two repos, two numbers, and only a note moves
+either.
+
+```
+   ours   ───X───────────────────────────Y──────────▶
+             ▲                             ▲
+             │ pin = X                     │ pin = Y
+             │                             │
+   theirs ───b────e1────e2────r────────────t──────────▶
+                               ▲
+                               │ read-through = r
+                               (named in the note, recorded at t)
+
+   b   born from X. The run writes: pin X, read-through b.
+   e   the run edits a copy. Nothing moves; the diff grows.
+   r   we read from b to r, write the reading, work it, change
+       masters here. Our tree moves; neither number does yet.
+   Y   the note is committed here, last. The staging is named Y.
+   t   the run takes. It writes: pin Y, read-through r.
+```
+
+Read from the read-through, forward in their tree. Deliver from the
+pin, forward in ours. A note without files is a `t` that writes the
+read-through and leaves the pin where it was.
+
 ## 3. Down
 
 **Staging.** On the reviewer's word, the delivery and its note are
