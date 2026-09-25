@@ -34,16 +34,22 @@ different system.
 
 ## 2. What each side keeps
 
-**The deliverer:** the masters. And, per run, two coordinates —
-**the pin** it holds, and **the read point**, the run's own commit
-we last read through. *Intended: today the pin is recorded only in
-the run and the read point only in a devlog entry. One line per run,
-held here, is the smallest change in this document.*
+**The deliverer:** the masters. Nothing per run.
 
-**The run:** the copies, and one line per delivery in its own
-decisions log naming the pin. Its edits since the pin need no
-record of their own — they are the diff against what was delivered,
-and git holds it.
+**The run:** the copies, and one line per note in its own decisions
+log carrying two numbers — **the pin**, the deliverer's commit its
+copies equal, and **the read-through**, its own commit the
+deliverer last read up to. The first comes from the staging's name,
+the second from the note. Its edits since the pin need no record
+of their own — they are the diff against what was delivered, and
+git holds it.
+
+Both numbers are in the run because the run is the only place the
+deliverer can look. To deliver, read the run's pin and diff forward
+in our tree. To read, read the run's read-through and go forward in
+theirs. *Intended: today the run records the pin and nobody records
+the read-through; the last reading found its start by matching a
+devlog date against the run's log.*
 
 The pin is a commit of the deliverer's. The run stores it and
 cannot resolve it, so everything the run needs to check must be
@@ -261,14 +267,16 @@ copies reached this document.
 
 An unverifiable promise is worse than any of the three.
 
-**The read point moves** to the run's commit we read through, and
-is written where we keep it (§2). The next read starts there and
-does not excavate.
+**Every read ends with a note, even an empty one.** The note names
+the run's commit we read through; the run records it beside the pin
+(§2). A read that finds nothing addressed to us still sends *read
+through `<commit>`, nothing to answer, no files* — one line each
+side — so the run always holds the latest read-through, and can see
+for itself when a hand-off was seen and not yet answered.
 
-**Verdicts travel in the next note down.** There is no other
-channel. If a run needs an answer before the next delivery, a
-person carries a note alone, with no files — that is still a
-delivery, and it still moves the read point.
+**Verdicts travel in the note.** There is no other channel. A note
+alone, with no files, is still a delivery: the read-through moves,
+the pin does not.
 
 ---
 
