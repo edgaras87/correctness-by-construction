@@ -48,11 +48,11 @@ believed.
 
 ## The parts
 
-- **The concept** — why the repo exists. The design idea itself, in
-  plain words.
+- **What is stated here** — two bodies of writing that ship
+  nothing by themselves. The **concept**, why the repo exists; and
+  the **conventions**, how work is done.
 - **The delivery** — the repeatable stub a project is born from and
-  updated with. The concept made usable, plus everything else a
-  project needs to be kept.
+  updated with. Both of those made usable.
 - **The agent as maintainer** — who keeps the first two true, and
   what it is made of.
 
@@ -67,7 +67,18 @@ at it.
 
 ---
 
-## 1. The concept — `concept/`
+## 1. What is stated here
+
+Two bodies of writing, neither of which ships. Each has something
+in the delivery that is it *made usable*, and the pairing is the
+spine of this repo:
+
+| stated | made usable |
+|---|---|
+| the concept (1.1) | the method (2.1) |
+| the conventions (1.2) | the container (2.3) |
+
+### 1.1 The concept — `concept/`
 
 **Five chapters in plain words: correctness is built into the
 structure of a thing rather than tested in afterwards.**
@@ -84,6 +95,26 @@ and is either derived from it or checked against it.
 - **It demands nothing by itself.** A chapter cannot be run. What
   can be run is the method below, which is where the concept
   becomes work.
+
+### 1.2 The conventions — `docs/conventions/`
+
+**Seven manuals: how work is done here, and why each rule is the
+shape it is.** Recording, committing, hygiene, how an agent is
+arranged, how a project takes a newer copy, how a choice between
+things you look at is settled.
+
+None of it is CbC. The concept is about how a system is built; the
+conventions are about how a repo is kept.
+
+- **A manual never ships.** It is written for a person maintaining
+  this, not for a project using it. What a project gets is the
+  artifact, never the explanation.
+- **Each convention is two things kept apart**: the manual at
+  `docs/conventions/<name>/README.md`, and its artifacts — real
+  files in `delivery/container/`, which is the master.
+- **Seven, not ten.** `decide-first`, `option-comparison` and
+  `artifact-kinds` were discarded on 2026-09-24 and nothing replaced
+  them.
 
 ## 2. The delivery — what a project gets, and where it goes
 
@@ -119,12 +150,21 @@ keeps the rest.
 file, the agent decisions log, four convention skills, one rules
 file, the hygiene files.
 
-None of it is CbC. A project with no correctness-by-construction in
-it would still want most of this — which is why it is a group of
-its own and not part of the method.
+**This is the conventions made usable**, the way the method is the
+concept made usable. Sixteen of its seventeen files are the
+artifacts of one of the seven manuals in 1.2 — the records belong to
+`project-recording`, the entry file and the decisions log to
+`agent-arrangement`, the three dotfiles to `repo-hygiene`, and the
+four skills to the four conventions named after them.
 
-Among what it ships is a whole **work arrangement** for the run's
-own agent — section 4.
+*The seventeenth is `.claude/rules/shapes-lifecycle.md`, which has
+no manual. It arrived from run 3 under ADR-0035 and was never given
+one — the one artifact here that nothing in 1.2 explains.*
+
+A project with no correctness-by-construction in it would still want
+most of this, which is why it is a group of its own and not part of
+the method. Among what it ships is a whole **work arrangement** for
+the run's own agent — section 4.
 
 ### 2.4 What does not travel — `installs/`, `fills/`
 
