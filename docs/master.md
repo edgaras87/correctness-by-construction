@@ -174,13 +174,18 @@ by itself. Every delivery is a person copying files into the run's
                          and take what it learned
 ```
 
-**Down — delivery.** Files, copied whole. The run records one hash
-for the whole delivery in its own decisions log. That hash is a
-commit of ours; the run stores it without being able to resolve it.
+**Down — delivery.** Files, copied whole, and a **note** beside
+them: what changed since the run's pin, and a verdict on everything
+the run addressed to us — taken, declined, or held with a trigger.
+The note is the only way our reasoning reaches a run; the files
+carry none of it. The run records one hash for the whole delivery
+in its own decisions log. That hash is a commit of ours; the run
+stores it without being able to resolve it.
 
 **Up — harvest.** No files move. We read the run's repository
 directly and write what we learned into our own masters. A run
-never pushes anything here.
+never pushes anything here, and what it asked us gets its answer in
+the next note down.
 
 *Intended, not yet true: that this asymmetry is written down
 anywhere but here. Today it is spread across `delivery/README.md`,
