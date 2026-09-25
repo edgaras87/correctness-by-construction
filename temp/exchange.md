@@ -22,8 +22,10 @@ different system.
 
 1. **A run is blind.** It holds no address for its deliverer, no
    checkout, no remote. It cannot fetch.
-2. **A person carries.** Every delivery is someone copying files
-   into the run. Nothing arrives by itself.
+2. **Nothing arrives by itself.** Every delivery is decided on the
+   deliverer's side and carried across by hand — the reviewer's, or
+   the agent's on the reviewer's word. Never automatic, never
+   started by the run.
 3. **The run holds copies; the deliverer holds masters.** A copy
    changes only by being copied anew — or by the run editing it,
    which is the next fact.
@@ -80,9 +82,13 @@ edit after two re-pins. It has not happened.*
 
 ## 3. Down
 
-**Staging.** A person copies the delivery and its note into the
-run's `temp/`. Only when the run's tree is quiet: staging into a
-run whose agent is mid-step has cost one commit plan already. The
+**Staging.** On the reviewer's word, the delivery and its note are
+copied into the run's `temp/` — by the reviewer, or by the agent
+when told to. The agent never stages unasked: this repo did once,
+into a run mid-step, and it cost that run a commit plan. Whoever
+copies, the run's tree is checked quiet first — `git status` there,
+nothing in flight — and when it is the agent, it reports what it
+found and waits for the word before anything lands. The
 staging is named by the commit at which the files and the note are
 both final — commit the note last, then name the bundle — so the
 pin the run records points at exactly the note it read. *The last
