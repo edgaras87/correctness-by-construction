@@ -94,10 +94,16 @@ The run's agent, from `temp/`, in this order.
 ## 5. Editing a copy
 
 **One rule for every shipped skill and rule.** There are not two.
-*Finding: today the same three conditions and the same three records
-are written twice — once for conventions in the receiver's protocol,
-once for the method skills in a file the run wrote itself. They
-differ in wording and in nothing else.*
+*Finding, checked side by side 2026-09-25: today it is written twice
+— once for conventions inside the receiver's protocol, once for the
+method skills in a file run 3 wrote itself. Six elements are the
+same rule in different words. Run 3's is the superset: it alone
+puts the pin and the never-edited concept in one place, states a
+priority when edits stack — behind the source is acceptable, behind
+this run's own lessons is not — and covers a skill the run has
+finished with. Ours alone carries a "provisional" clause that
+expired on 09-20, when the first edit went through a re-pin. The
+shipped rule is built from theirs.*
 
 A copy may be edited in place when all three hold:
 
@@ -115,6 +121,19 @@ A copy may be edited in place when all three hold:
 Nothing is written into the copy but the edit. No dated line, no
 comment saying what changed — a file says how to use it, never its
 own history.
+
+**A copy the run has finished with is edited the same way.** One
+process for every copy. The one difference is said in the log
+entry: a running skill's fix is exercised by the next step here; a
+finished skill's fix is first used by the deliverer.
+
+**Edits made before a verdict arrives stack on the run's side
+only.** Behind the deliverer is acceptable; behind the run's own
+lessons is not.
+
+One word for the other side, in the rule and in the backlog line:
+*deliverer*. Run 3's text says *source*; `master.md` says
+deliverer, and the shipped rule says one thing.
 
 **The concept is never edited.** A chapter is not run, so nothing
 in it can fail a step. A lesson about the concept is a prose
