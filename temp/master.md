@@ -14,8 +14,8 @@
 
 # Master
 
-**One concept, the work derived from it, and the agent that keeps
-both true.**
+**One concept, the delivery a project is born from, and the agent
+that keeps both true.**
 
 Nothing is built here. No application, no service, no run — this
 repo holds documents and hands them to projects that do build.
