@@ -307,7 +307,7 @@ the pin does not.
 | today | where | what happens to it |
 |---|---|---|
 | `convention-lifecycle` skill, 154 lines | ours, and shipped | replaced by §4–§5 as the run's half; deleted here |
-| `skills-changed-in-place.md`, run 3's own | run 3 | replaced by §5 as shipped; run 3 told in the note |
+| `skills-changed-in-place.md`, run 3's own | run 3 | replaced by `delivered-copies.md`, derived from it and shipped; the note names the rename |
 | `bundle-update.md`, 527 lines | `delivery/installs/` | replaced by §3 and §6 as our half; the lessons list it never had is what §3–§6 are |
 | the harvest section of `delivery/README.md` | ours | folds into §6 |
 | the entry-file line "never edited in place" | shipped | contradicts §5; goes |
