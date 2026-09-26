@@ -18,6 +18,48 @@
 
 # Reading: run 3, through `9869798`
 
+## Closed, 2026-09-26 — overtaken
+
+**Not finished; overtaken.** Between the pause and today the
+deliverer's tree moved sixty-odd commits: three conventions
+discarded, `convention-lifecycle` replaced by the exchange
+(ADR-0036), the layout and the field decided. The run has not moved
+— run 3 is still at `9869798`, and everything this reading says
+about the run is still true. What is dead is every item that named
+something on our side. The pass over the open items, one line each:
+
+- **W3 — the standing rule into PLAN.** Its six lessons became the
+  reading's shape (`.claude/rules/exchange-reading.md`); the rest is
+  `temp/working-a-reading.md`, waiting on the records question
+  (TODO, the arrangement item, fact four). Not written into PLAN,
+  for the reason the pause gave.
+- **W8 — record the read-through somewhere here.** Dissolved. The
+  exchange puts both numbers in the run (manual §2); we hold nothing
+  per run.
+- **W10 — records catch up.** Done piecemeal: devlog entries of
+  09-24, 09-25 (twice) and 09-26, the decisions log, ADR-0036.
+- **D6 — the step form into the playbook.** Unchanged, held in TODO
+  until run 3's Step 7 closes.
+- **D7 — the inbound manual, and where it sits.** Superseded by
+  `exchange-read`, a skill; the description is the exchange's §6.
+- **D8 — a branch and a reading for work needing more than one
+  plan.** `temp/working-a-reading.md`, one firing, this one.
+
+**What this reading found about the run still stands and is not
+re-derived here:** F1–F6, the four hand-offs, the three in-place
+edits. The verdicts given in the withdrawn note of 09-24 were
+right on content and wrong on count; they are given again, fresh,
+in the note that follows the next read — which starts from
+`9869798`, since the run's read-through never moved.
+
+**What this reading taught, beyond its section for that:** a
+reading is a snapshot of two trees. When the deliverer's moves far
+while it is open, its items rot from that side while the run's
+side stays true, and extending it is worse than closing it. That
+went into the manual's §6 today.
+
+Deleted in the next commit. History keeps it.
+
 ## Stopped here, 2026-09-24
 
 **Paused, not closed.** Seven of ten items are settled — five done,
