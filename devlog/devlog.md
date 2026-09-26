@@ -6,6 +6,58 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-26, evening  (the mirrored layout and the `foundation` field — one set, seven commits)
+
+ADR-0036 decision 7, landed on `mirrored-layout-2026-09-26`, cut
+from `main` after the review branch was deleted — its name recorded
+a job that had closed.
+
+- **Five `git mv`, and the overlay runs as written.** Each method
+  and stack skill now sits at `<group>/.claude/skills/<name>/`, the
+  path it lands at; `exchange-deliver` §2.2 run into a scratch
+  directory yielded a run's tree — eight skills, two rules, five
+  chapters — with the duplicate-path check silent. The six-row
+  mapping table in `delivery/README.md` is one row, the concept.
+  No run path moves, so the next note carries no renames.
+- **The seed's prose still said two pins.** Found reading
+  `pure-seed.md` for step 3: the last set fixed the lines that
+  *fill* a second pin and missed the four that *explain* one, and
+  `delivery/README.md` still said the seed reads the kit pin from
+  it. Stopped before staging, revised the plan on its own commit,
+  widened the step. Five passages; no new mechanics.
+- **The field is `foundation`, the reviewer's word.** `derivation`
+  was the draft; it reads wrong on the stack skills, the one kind
+  not derived. `source` is the deliverer in the manual and source
+  code in every run; `origin` is history and a git word. Values:
+  `concept v1`; `practice, checked against concept v1`, which is
+  what `master.md` §2.2 already said in words; `the <name>
+  convention`. Nine templates lost the line that repeated the
+  claim — a skill travels whole, so one claim per skill. No ADR:
+  decided in ADR-0036, named for objection in the plan, reopen
+  trigger a run tripping on the name.
+- **Our copies were thirteen lines behind.** Copying the three
+  container skills whole for the field brought `visual-comparison`
+  a lesson its master took on 09-23 and our copy never did — the
+  09-24 drift measurement, closed by the rule rather than by a
+  hand edit that would have kept it.
+- **Two items filed, on the reviewer's reading.** Birth becomes a
+  skill, `exchange-birth`, written from scratch on the exchange's
+  manual with the seed's intent — not a rewrite of `pure-seed.md`;
+  trigger the next birth. And the handbook filtered out of live
+  text: measured at about 150 mentions in 20 files, three kinds of
+  work, its own set after the shapes convention and before the
+  delivery.
+- **The sweep found the last set's misses.** `master.md` §2.4 still
+  named `bundle-update.md`; two open TODO items asked for what the
+  exchange already is — reconciliation from the pin, and a
+  kit-update procedure — and are superseded; one named the deleted
+  manual as what stages into `temp/`.
+
+Resume: close the plan. Then the shapes convention from
+`docs/models/shapes.md`, on the exchange's pattern; then read run 3
+fresh under `exchange-read` and deliver. `working-a-reading.md`
+stays in `temp/` until that reading.
+
 ## 2026-09-26  (the exchange placed, and convention-lifecycle gone — one set, twelve commits)
 
 The commit plan for the exchange, opened in the morning and at its

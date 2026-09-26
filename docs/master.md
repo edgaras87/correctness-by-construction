@@ -147,10 +147,9 @@ the run's own agent — section 4.
 
 ### 2.4 What does not travel — `installs/`, `fills/`
 
-- **`installs/`** — our procedures, for the person operating the
-  delivery. How a run is seeded (`pure-seed.md`), how an update is
-  staged and handed over (`bundle-update.md`). A run never sees
-  these.
+- **`installs/`** — our procedure for the person operating a birth:
+  how a run is seeded (`pure-seed.md`). An update is the exchange
+  (2.5), held as two skills of ours. A run never sees this.
 - **`fills/`** — text written *into* a newborn's own files rather
   than copied as files.
 

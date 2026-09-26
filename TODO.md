@@ -1045,7 +1045,7 @@
       container ships none (2026-09-23; was five until the
       2026-09-24 discards took two of them). `visual-comparison`
       says to work in a `temp/` draft; `shapes-lifecycle` says a
-      gate looks there; `bundle-update.md` stages into it. A newborn is told to
+      gate looks there; `exchange-deliver` stages into it. A newborn is told to
       use a folder it was not born with, and no shipped text says
       what the folder is or that it is tracked. Predates shapes;
       found while placing them.
@@ -1176,7 +1176,13 @@
       more than half its planned steps, or a retrospective,
       whichever comes first.
 
-- [ ] The update procedure reconciles by hardcoded name, and it
+- [-] SUPERSEDED 2026-09-26 — by the exchange (ADR-0036), which is
+      what this item asked for: `exchange-deliver` reads
+      `git diff -M` from the run's pin and the note names every
+      deletion and rename by path; the lists it names went with
+      `bundle-update.md`, and a group is a directory a run takes
+      whole. Original item:
+      The update procedure reconciles by hardcoded name, and it
       should derive from pins. **Stronger since 2026-09-19:** the
       lists went from four names to seven and are now two things
       deep — which conventions exist, and which of them ship as a
@@ -1726,7 +1732,7 @@
       **Group decided 2026-09-19, ADR-0029 decision 7: they are
       spring-postgres, and they stay put until the wiring is
       decided with them.** The home the groups now offer is
-      `delivery/spring-postgres/cbc-bootstrap/templates/`, and
+      `delivery/spring-postgres/.claude/skills/cbc-bootstrap/templates/`, and
       nothing points at them there either, so the move alone would
       ship three unread files to every Spring run. So the item is
       one question, not two: does cbc-bootstrap point at these
@@ -1837,7 +1843,12 @@
       harvest. Lived once; a second run meeting an absence
       guarantee is the trigger.
 
-- [ ] A kit-update procedure for a born run, as an install doc
+- [-] SUPERSEDED 2026-09-26 — by the exchange (ADR-0036): a kit
+      update is a delivery like any other, staged by
+      `exchange-deliver` into the run's `temp/` and taken under
+      `delivered-copies.md`, the receipt branch optional on the
+      run's side. Original item:
+      A kit-update procedure for a born run, as an install doc
       beside pure-seed.md: the operator block that served once in
       temp/prebriefing-run-3.md — cut a receipt branch kit-<pin>
       from the seed commit carrying the old pin, copy the kit over,
