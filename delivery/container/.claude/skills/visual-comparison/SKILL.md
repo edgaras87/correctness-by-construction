@@ -1,6 +1,7 @@
 ---
 name: visual-comparison
 description: Settle how a structure is shown — a picture, a table, a plain list — by writing down what the reader must get and rendering every candidate against it. Use when a diagram might be the answer, including deciding it should not be.
+foundation: the visual-comparison convention
 ---
 
 # Visual Comparison

@@ -107,9 +107,9 @@ falsifiable promise, a layered definition, a registry of slices)
 and `cbc-slice` (take one invariant through specify, plan, build,
 document until a test that creates the adversity proves it holds).
 
-**Derived from the concept**, and each states which version it
-derives from. A change to the concept asks whether these are still
-right.
+**Derived from the concept**, and each says so in its `foundation`
+field: `concept v1`. A change to the concept asks whether these are
+still right.
 
 ### 2.2 The stack practice — `delivery/spring-postgres/`
 
@@ -117,9 +117,9 @@ What one real Spring and Postgres project taught:
 `infra-establish`, `infra-serve`, `cbc-bootstrap`.
 
 **Not derived from the concept — checked against it.** These came
-from practice, not from the idea, and the phrasing in their headers
-says so. A project on another stack drops this group whole and
-keeps the rest.
+from practice, not from the idea, and their `foundation` field says
+so: `practice, checked against concept v1`. A project on another
+stack drops this group whole and keeps the rest.
 
 ### 2.3 The container — `delivery/container/`
 

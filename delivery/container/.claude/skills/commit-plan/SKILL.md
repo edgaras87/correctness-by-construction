@@ -2,6 +2,7 @@
 name: commit-plan
 description: How work larger than one commit is sequenced into commits, reviewed at each boundary, and closed. Use before starting a change set that needs more than one commit.
 requires: commit-messages, project-recording
+foundation: the commit-plan convention
 ---
 
 # Commit Plan

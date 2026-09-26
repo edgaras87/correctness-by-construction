@@ -1,10 +1,8 @@
 ---
 name: cbc-slice
 description: Work one slice of a correctness-driven backend - take one invariant from the project's slice registry through specify-correctness, plan, build, and document, until a test that CREATES the adversity (concurrent hammering, injected duplicates, kill mid-transaction) proves the invariant survives. Use this whenever the user asks to work, implement, or close a slice, to implement an invariant or idempotency/contention/recovery guarantee, or to continue a project that has a slice registry (docs/system/registry.md) - even if they just say "let's build the next piece". Requires a completed framing AND a bootstrapped system - this skill's Stage 0 checks readiness first and refuses to proceed if the system is not ready. Do NOT use for framing a new project (that is cbc-framing) or for ordinary feature work outside the registry.
+foundation: concept v1
 ---
-
-<!-- Derives from concept v1 of correctness-by-construction
-     (CBC ADR-0003). -->
 
 # CbC slice — one invariant made real
 

@@ -155,10 +155,15 @@ which run. Method skills — the concept and its version. Stack
 practice — the concept it was checked against. Container skills —
 the convention whose artifact this is, by name; the manual stays
 home but the name finds it. Concept chapters — nothing; they are
-the top. *Intended: today eight of twelve skills carry this as a
-comment on line 6, in two different verbs, and the container's four
-carry nothing.* The field is not called `source`; that word already
-means the deliverer in a run's text.
+the top. The field is `foundation`, and the value carries the
+relation where it is not derivation: `concept v1`; `practice,
+checked against concept v1`; `the exchange convention`. One shipped
+file has none, `shapes-lifecycle.md`, because it has no convention
+to name yet. *Until 2026-09-26 the five method and stack skills
+carried this as a comment on line 6, in two different verbs, nine
+templates repeated it, and the container's files carried nothing.*
+The field is not called `source`; that word already means the
+deliverer in a run's text.
 
 **One pin** for all of it. Not one per group, not one per
 convention. A run that holds two pins for one delivery has been
@@ -364,7 +369,7 @@ the pin does not.
 | the entry-file line "never edited in place" | shipped | contradicts §5; goes |
 | `delivery/method/` and `delivery/spring-postgres/` laid out flat | ours | each becomes a piece of the run's tree, §3; two `git mv` per skill |
 | the file lists inside `bundle-update.md`'s scripts | ours | gone with the mapping; a group is a directory name |
-| the line-6 derivation comments in eight skills | shipped | become the one frontmatter field, §3 |
+| the line-6 derivation comments in five skills, and nine template lines | shipped | become the one frontmatter field, `foundation`, §3 |
 | `master.md` §2.5 and §3 | ours | stay; this is their detail |
 
 ## What this is made usable as

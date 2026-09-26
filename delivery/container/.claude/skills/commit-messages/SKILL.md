@@ -1,6 +1,7 @@
 ---
 name: commit-messages
 description: Conventional Commits format and the 50/72 rules. Use before writing any commit message.
+foundation: the commit-messages convention
 ---
 
 # Commit Messages

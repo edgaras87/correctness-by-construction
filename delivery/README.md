@@ -11,7 +11,7 @@
 # CbC delivery — what a run repo copies at birth
 
 The executions derived from the concept, each pinned to the concept
-version its own header names (ADR-0003). This repo's copies are
+version its own `foundation` field names (ADR-0003, ADR-0036). This repo's copies are
 authoritative; a run's copies are pinned — they change only by
 copying anew from here, and a run's surprises come back as harvest,
 never as edits (docs/models/tiers.md).

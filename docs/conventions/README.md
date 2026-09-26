@@ -94,6 +94,7 @@ Opens with YAML frontmatter, which is what a skill loader reads:
 name: <the convention's name>
 description: <when to read this file — the trigger>
 requires: <conventions this one delegates to; omit if none>
+foundation: the <name> convention
 ---
 ```
 
@@ -102,6 +103,9 @@ requires: <conventions this one delegates to; omit if none>
   lines refer to the convention by it.
 - `requires` names the conventions this one delegates rules to; a
   receiver lands a convention together with its chain.
+- `foundation` says what the file stands on now — for a convention's
+  artifact, the convention by name. Every shipped skill and rule
+  carries one; the exchange's manual §3 says what each kind holds.
 
 ## Writing an artifact
 

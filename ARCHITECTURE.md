@@ -62,8 +62,9 @@ the statement's own split is by chapter (Framing, Step 2).
 
 Responsibility: the derived layer a run repo receives at birth,
 covering the whole pipeline (cbc-framing → infra-establish /
-infra-serve → cbc-bootstrap → cbc-slice), each file pinned to the
-concept version it derives from or is checked against (ADR-0005).
+infra-serve → cbc-bootstrap → cbc-slice), each skill's `foundation`
+field naming the concept version it derives from or is checked
+against (ADR-0005, ADR-0036).
 Two kinds by how they land (ADR-0017), which is a different
 question from which group they are in: `method/` and
 `spring-postgres/` hold the five skills with their references,
@@ -153,8 +154,8 @@ handbook).
   Enforced in CHANGELOG's standing comment and ADR-0003; checked at
   commit review — a review-grade wall, named as such.
 - An execution never lands without stating which concept version it
-  derives from. Enforced in each file's pin header, which travels
-  with every copy into a run repo (ADR-0004).
+  derives from. Enforced in each skill's `foundation` field, which
+  travels with every copy into a run repo (ADR-0004, ADR-0036).
 - Taken material never loses its provenance: where it came from,
   and the last upstream state it was aligned with, stay written
   down even though nothing tracks that repo any more. Enforced in

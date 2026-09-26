@@ -4,6 +4,7 @@ paths:
   - ".claude/rules/**"
   - "docs/concept/**"
   - "temp/**"
+foundation: the exchange convention
 ---
 
 # Delivered copies: pinned, edited in place, re-pinned
