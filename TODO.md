@@ -814,6 +814,29 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Shapes need their source of truth, and it may already exist
+      (2026-09-26, the reviewer). Three facts. **One** — what ships
+      is `shapes-lifecycle.md`, a rule, and behind it sits ADR-0035
+      (a record) and `docs/models/shapes.md` (a model); there is no
+      manual, which is `master.md` errata #1. Today an hour was
+      spent reading the rule to learn what a shape is — an artifact
+      standing in for its source. **Two** — the rule is written from
+      the run's seat: §4 is what a step's gate does with shapes
+      staged in `temp/`. This repo has no steps, no gates, nothing
+      staged to it; its one shape loads by `paths:` while a file is
+      written. Our use is a subset of §2 and nothing says so. The
+      same one-file-two-seats asymmetry the exchange had before
+      ADR-0036. **Three** — the manual may be `docs/models/shapes.md`
+      moved: 249 lines of what a shape is, is not, and why the split
+      exists, calling itself a model because that was the word
+      available. Candidate answer: a `shapes` convention on the
+      exchange's pattern — a manual, from which the run's rule
+      derives and our side is stated — and the lesson from today's
+      shape goes in it: a shape says form; the lifecycle of what it
+      governs is the owning convention's, and a shape that restates
+      it drifts. When: after the layout plan, before the delivery to
+      run 3, whose note names the rule.
+
 - [ ] A maintenance rule for core descriptions, candidate
       convention (2026-09-26, the reviewer). Every description this
       repo derives things from — the concept, each convention's
