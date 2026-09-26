@@ -135,9 +135,9 @@ divergence starts after it. These are coordinates for a re-sync
 that may never happen, not an obligation: nothing here tracks that
 repo, and no update from it is owed a reading.
 
-Kit pin: `ba7eaa4` — this line is the hash's one home, and
-`installs/pure-seed.md` reads it from here for the birth entry, so
-it moves in one place.
+Kit pin: `ba7eaa4` — this line is the hash's one home. Nothing
+reads it: the seed fills one pin, ours, and this is provenance
+(ADR-0025).
 
 **Landed here at `dc3b7db`** — the other half of the same anchor,
 and the one a reader coming from the handbook needs. `ba7eaa4` says

@@ -814,6 +814,51 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Birth becomes a skill, `exchange-birth`, written from scratch
+      (2026-09-26, the reviewer). Not a rewrite of `pure-seed.md`:
+      written from the exchange's manual the way `exchange-read` and
+      `exchange-deliver` were — from the five facts, for the moment
+      "the reviewer says to birth a run" — with the seed's intent
+      kept: the seed delivers everything and decides nothing; every
+      delivery a commit on the receipt branch; main at the hygiene
+      commit with the same files untracked; the newborn's agent
+      finishes the birth from a prompt that carries session truth
+      only. What the seed knows that the manual does not — the git
+      mechanics in the newborn, the one fill, the prompt, the
+      checkable list — is read as evidence for the skill, not copied
+      into it. The manual is an operator's script from 2026-09-05,
+      kept a manual by ADR-0022 when the update side was one too;
+      the update side is two skills now and `exchange-deliver` §5
+      already says birth is the same overlay plus the fills. Home:
+      `.claude/skills/exchange-birth/`; then deliver §5 points at
+      it, `pure-seed.md` goes, and ADR-0016's procedure of record
+      moves. When: the next birth — Step 10's open gate item —
+      written while running it, so the run shapes it. Not before: the
+      seed has not run since ADR-0024, and shaping it twice from
+      intent was the last plan's reason to wait.
+
+- [ ] The handbook filtered out of live text (2026-09-26, the
+      reviewer). Measured today, history excluded: about 150
+      mentions in 20 live files. Three kinds of work in it. **The
+      provenance sections** — `delivery/README.md`'s container half,
+      `docs/conventions/README.md` "where these files came from",
+      `ARCHITECTURE.md`'s taken-material invariant, `tiers.md`, the
+      seed — were kept as coordinates for a re-sync nobody plans
+      (ADR-0025: "may never happen"); they become history, and
+      ADR-0024 through 0026 are the record. **The manuals and the
+      model that came from there** — agent-arrangement (26),
+      project-recording (15), `docs/models/agent.md` (24),
+      repo-hygiene, commit-plan, commit-messages — tell the
+      handbook's story in its voice; rewritten in ours. **Seven
+      `HANDBOOK ADR-nnnn` citations in two shipped skills** point a
+      blind run at decisions it cannot read; their reasons need a
+      home here — one ADR adopting them as ours — before they become
+      `CBC ADR-nnnn`, and the citation rule in the conventions index
+      goes with them. Also the shipped birth entry's "began as the
+      engineering-handbook starter kit" line. When: after the shapes
+      convention, before the delivery to run 3, so the citations do
+      not ship once more. Its own change set.
+
 - [ ] Shapes need their source of truth, and it may already exist
       (2026-09-26, the reviewer). Three facts. **One** — what ships
       is `shapes-lifecycle.md`, a rule, and behind it sits ADR-0035

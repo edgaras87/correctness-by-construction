@@ -146,17 +146,19 @@ The trailing `/.` matters: `delivery/container/*` silently skips the
 dotfiles — `.gitignore`, `.gitattributes`, `.editorconfig` — and
 the whole `.claude/` directory.
 
-The birth entry takes three placeholders now, not two: the bundle
-pin for what was delivered, the kit pin for the handbook state
-inside it, and the date. Naming both is the point — one pin
-standing for two states would be a pin that lies (ADR-0023). The
-next two `sed`s fill the other birth dates the kit carries, the
-first ADR's and the devlog's first heading: three records, one
-moment. The last fills the working name into the two entry files,
-which arrive inside the kit rather than being written over stubs.
-Every `sed` targets a placeholder and not a line number, so
-re-running the block is harmless. Installing by hand, fill the six
-placeholders yourself before the agent's first session.
+The birth entry takes two placeholders: the pin, for what was
+delivered, and the date. Its read-through is written as *none* in
+the template — nothing has been read before the first note — and
+the seed leaves it. One pin, because the run holds one delivery;
+the handbook state the container began from is provenance, not a
+second number (ADR-0025, ADR-0036). The next two `sed`s fill the
+other birth dates the kit carries, the first ADR's and the devlog's
+first heading: three records, one moment. The last fills the working
+name into the two entry files, which arrive inside the kit rather
+than being written over stubs. Every `sed` targets a placeholder and
+not a line number, so re-running the block is harmless. Installing
+by hand, fill the five placeholders yourself before the agent's
+first session.
 
 **3. Create the repo and land the hygiene commit** — verbatim, the
 same in every project, because the hygiene base carries no
@@ -185,16 +187,16 @@ cp "$bundle_dir"/concept/*.md docs/concept/
 git add docs/concept
 git commit -m "chore: seed — concept/ from the bundle, pin @ $bundle_pin"
 
-mkdir -p .claude/skills
-# Both shipping groups: this run is Spring and PostgreSQL. A run on
-# another stack drops the second path and takes method/ alone, and
-# is then born with two skills, not five (CBC ADR-0029).
-for d in "$bundle_dir"/delivery/method/*/ \
-         "$bundle_dir"/delivery/spring-postgres/*/; do
-  cp -r "${d%/}" .claude/skills/
+# The groups this run takes, on top of the container that step 2
+# copied. Each group is a piece of the run's tree, so copying it in
+# place is the whole of the mapping (CBC ADR-0036). This run is
+# Spring and PostgreSQL; a run on another stack names method alone
+# and is born with two skills, not five (CBC ADR-0029).
+for g in method spring-postgres; do
+  cp -r "$bundle_dir"/delivery/$g/. .
 done
 git add .claude/skills
-git commit -m "chore: seed — the five CbC skills, pin @ $bundle_pin"
+git commit -m "chore: seed — the method and stack groups, pin @ $bundle_pin"
 
 sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
     "$bundle_dir"/delivery/fills/cbc-run-pure-playbook.md; echo) \
@@ -206,9 +208,9 @@ git add PLAN.md
 git commit -m "chore: seed — steps into PLAN, cbc-run-pure v6 @ $bundle_pin"
 ```
 
-One pin in every subject now, the bundle's: the kit arrives
-inside the delivery rather than beside it, and which handbook
-state is inside that delivery is the birth entry's to say.
+One pin in every subject, ours: the container arrives inside the
+delivery rather than beside it, and where it began is provenance in
+`delivery/README.md`, not a number the newborn holds.
 
 The first sed is the kit's marker-keeping swap — the steps land
 between the STEPS markers and the markers stay; the second fills
@@ -250,9 +252,7 @@ bundle, its container half first (the records, the conventions,
 the two entry files) and its method half after (docs/concept/,
 five skills, the steps in PLAN), every seed commit naming that
 one pin. Main holds the same files, untracked, on top of the
-hygiene commit; the branch is a receipt, never merged. Which
-handbook state the container half holds is the birth entry's to
-say. Your
+hygiene commit; the branch is a receipt, never merged. Your
 task is to finish the birth: assemble what was delivered into a
 working project — your own arrangement, the records, PLAN's
 Step 0 closed on its gates. Read the whole repository first,
@@ -299,8 +299,8 @@ the human's hard backstop behind it.
 item is a verifiable fact:
 
 - Four commits on birth-seed above the hygiene commit: the kit
-  remainder, the concept chapters, the five skills, the steps
-  into PLAN. Main at the hygiene commit, its log
+  remainder, the concept chapters, the method and stack groups,
+  the steps into PLAN. Main at the hygiene commit, its log
   holding nothing else; main's worktree byte-identical to the
   branch tip, every delivered file listed untracked by
   `git status` (the check in step 5 prints nothing).
