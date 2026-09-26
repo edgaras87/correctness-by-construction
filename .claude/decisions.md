@@ -887,3 +887,23 @@
   when it is written. And shapes have no manual yet (`master.md`
   errata #1); when one is written, this is a line for it. Third
   firing of the rule by hand.
+
+- 2026-09-26 Conventions updated: commit-messages, commit-plan,
+  visual-comparison — our three copies made equal to the masters at
+  `delivery/container/`, which gained a `foundation` field the
+  commit before (`d5e7e17`, ADR-0036 decision 7). `cmp`-identical
+  after the copy. The field on our own copies says *the
+  commit-plan convention* and so on: a claim about what the file
+  stands on, true here as in a run, because a copy is the master
+  and the master says it.
+  Also arrived with the copy: `visual-comparison`'s master had
+  gained a lesson on 2026-09-23 — asked for a picture, this method
+  is not always what is wanted — that our copy never took, thirteen
+  lines apart. The 09-24 drift measurement, closed by copying whole
+  rather than by editing the one line the field needed.
+  Why: our `.claude/skills/` copies are downstream of the container,
+  not beside it (`master.md`, what must stay true). A copy is
+  changed by being copied anew, here as in a run.
+  Rejected: adding the field to our copies by hand. That would have
+  left the thirteen lines, and a hand edit is the drift this entry
+  closes.
