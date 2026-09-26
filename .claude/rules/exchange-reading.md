@@ -11,12 +11,11 @@ paths:
 **Governs:** how a reading — the document `exchange-read` produces and
 the work then fills — is written. Its form, never its content.
 
-## Where it sits and how long
+## Where it sits
 
-`temp/reading-<run>-<date>.md`. A scaffold, not a record: revised
-as its items close, deleted when the work does, kept by history. It
-is not a commit plan — it holds what must be done or considered,
-several of which will open a commit plan of their own.
+`temp/reading-<run>-<date>.md`, the date being the read that opened
+it. When it opens, extends and closes is the exchange's, not this
+file's.
 
 ## The header comment
 

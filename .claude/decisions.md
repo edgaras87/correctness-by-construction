@@ -868,3 +868,22 @@
   the two measured on 09-24 came from exactly this not happening.
   Rejected: editing our copy by hand to match. A copy is changed by
   being copied anew, here as in a run.
+
+- 2026-09-26 `exchange-reading.md` loses its lifecycle sentences.
+  The manual gained a clause in §6 the previous commit — a reading
+  also closes when overtaken — and the derived list was walked. The
+  two skills need nothing. The shape turned out to *restate* the
+  reading's lifecycle in its first section — revised as items close,
+  deleted when the work does, not a commit plan — all of which the
+  manual already says. First staged as the same clause added to the
+  shape; the reviewer asked what lifecycle has to do with form, and
+  it has nothing. A shape says what an output looks like while it
+  exists; when it opens and closes is the owning convention's.
+  Removed rather than duplicated. The section keeps the path pattern
+  and one line saying whose the lifecycle is.
+  Why it matters beyond this file: a derived artifact *follows* its
+  description, it does not *repeat* it — a copy that repeats is what
+  drifts, and the maintenance rule filed this morning must say so
+  when it is written. And shapes have no manual yet (`master.md`
+  errata #1); when one is written, this is a line for it. Third
+  firing of the rule by hand.
