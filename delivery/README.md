@@ -59,21 +59,23 @@ stubs, the two entry files and the hygiene files are the run's own
 from birth and never travel again.
 
 **Pinned copies** land as files at paths the container does not
-claim; the run never edits them, only re-copies at a new pin:
+claim; the run never edits them, only re-copies at a new pin.
+**Each group is a piece of the run's tree**: inside
+`delivery/<group>/`, every path is the path it lands at, so
+`delivery/method/.claude/skills/cbc-framing/` lands at
+`.claude/skills/cbc-framing/` and the three groups copied on top of
+one another *are* the run's tree. No mapping, and nothing to
+forget; a group is left out by not naming its directory. One
+exception, stated here and in the exchange's manual and nowhere
+else:
 
 | From here | Into the run repo |
 |---|---|
 | `concept/` | `docs/concept/` — read `00-cbc.md` first |
-| `delivery/method/cbc-framing/` | `.claude/skills/cbc-framing/` |
-| `delivery/method/cbc-slice/` | `.claude/skills/cbc-slice/` |
-| `delivery/spring-postgres/infra-establish/` | `.claude/skills/infra-establish/` |
-| `delivery/spring-postgres/infra-serve/` | `.claude/skills/infra-serve/` |
-| `delivery/spring-postgres/cbc-bootstrap/` | `.claude/skills/cbc-bootstrap/` |
 
-The last three rows are the ones a run on another stack does not
-copy. They flatten into `.claude/skills/` all the same — the group
-is a fact about this repo, not about the run, which receives five
-skills (or two) side by side as it always did.
+The concept stays at this repo's root because the repo *is* the
+concept. A run on another stack receives two skills, not five, and
+its tree is the same shape.
 
 **Fills** are text the seed writes into a file the container
 already put there; from that moment the text is the run's own — edited in

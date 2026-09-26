@@ -128,9 +128,9 @@ concept. Nothing that explains them; the explanation stays home.
 `.claude/skills/cbc-framing/`. Staging is copying each group the
 run takes on top of the last; the result *is* the run's tree, and a
 group is left out by not naming its directory. No list of files, no
-mapping, nothing to forget. *Intended: today `container/` already
-mirrors and the other two do not — their skills sit flat and are
-re-homed by a script line each.* The one named exception is
+mapping, nothing to forget. *Until 2026-09-26 `container/` mirrored
+and the other two did not — their skills sat flat and were re-homed
+by a script line each.* The one named exception is
 `concept/`, which stays at this repo's root because the repo is the
 concept, and lands at `docs/concept/`; that is the whole of the
 mapping, stated here once.
