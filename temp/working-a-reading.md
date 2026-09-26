@@ -102,6 +102,17 @@ item must end as; this is how the list gets there.
   commits inside a ten-item list. The reading is a list of lists,
   and the count in step 1 undercounts by construction. Fine, as long
   as nobody reads the count as a size.
+- **The deliverer moves while the reading is paused.** The other
+  direction, and it happened: the run-3 reading was paused on 09-24
+  with three items open, and sixty commits here — three conventions
+  gone, the exchange in — dissolved or moved every one of them
+  while the run's side of the reading stayed true. A reading is a
+  snapshot of two trees, and it rots from whichever side moves. The
+  manual's §6 now says a reading can be **overtaken**: closed the
+  same way, one pass over the open items, then deleted, and the
+  next read starts fresh. Extending it would have meant marking six
+  dead items in a 430-line file written before its own shape.
+  Second firing of this document's subject; first thing it taught.
 - **The run moves while the reading is worked.** Both sides moved
   from one pin. Before the note, `exchange-deliver` runs
   `exchange-read` on the span since the reading's first line;
