@@ -59,6 +59,18 @@ The checkable list and the prompt's "five skills" follow where they
 count files. Provisional in wording: the seed has not run since
 ADR-0024 and this step touches only the lines the layout makes
 false. If the rewrite wants more than that, §5 revises here.
+*Revised at its boundary, 2026-09-26, before staging:* the manual
+still says the birth entry takes three placeholders, the kit pin
+among them, that naming both is the point, and, twice, that which
+handbook state the container holds is the birth entry's to say —
+one paragraph, one line in the fired prompt, one closing sentence
+of step 4. The last set's step 5 fixed the lines that *fill* a
+second pin and missed the lines that *explain* one. And
+`delivery/README.md` still says the seed reads the kit pin from its
+Kit-pin line, which the last set stopped it doing. This step takes
+those too: same file, same reading, and a seed manual that says one
+pin in its script and two in its prose is the contradiction the
+last set was closing. Five passages, no new mechanics.
 
 **4. `docs: every shipped skill and rule says what it stands on`**
 One frontmatter field, `foundation`, beside `name` and `description`:
@@ -133,7 +145,8 @@ Deletes this file; the body records what diverged.
   the seed's rewrite are different changes: revert the seed's
   overlay and the layout still stands, with the old loop simply
   wrong — which is where the seed is today.
-- **Step 6 fixes a stale line the last set missed.** `master.md`
-  §2.4 naming a deleted file is a defect of the 09-26 close, not of
-  this set, and is fixed here because it was found here and is one
-  line.
+- **Steps 3 and 6 fix stale lines the last set missed.** `master.md`
+  §2.4 naming a deleted file, and the seed manual's prose about a
+  second pin, are defects of the 09-26 close, not of this set, and
+  are fixed here because they were found here and each is a few
+  lines in a file the step already touches.
