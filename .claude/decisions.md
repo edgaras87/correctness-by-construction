@@ -801,3 +801,34 @@
   Rejected: keeping it on trial for a few weeks to see whether it
   earns its place. Everything discarded today was kept on exactly
   that reasoning, and the trial never ends by itself.
+
+- 2026-09-26 The exchange's three artifacts of ours arrive: skills
+  `exchange-read` and `exchange-deliver` under `.claude/skills/`, and
+  the shape `exchange-reading.md` under `.claude/rules/` with
+  `paths: temp/reading-*.md`. CBC ADR-0036, Proposed, in the commit
+  plan for the exchange.
+  Why skills: each has a moment that is a name the reviewer says —
+  "read run 3", "deliver" — and a procedure in `installs/` is a
+  document nothing loads at any moment, which is what
+  `bundle-update.md` was and why its steps were skipped. As skills
+  they gained a description naming the trigger and gates saying what
+  must be true at the end.
+  Why the shape is in `rules/`, not `shapes/`: its moment is a file
+  being written, which is what `paths:` is for; `.claude/shapes/` is
+  for a shape opened at a gate, and a reading has no gate. Deferred
+  twice by the reviewer to "when we move"; this is the move, named
+  in the plan for objection. First exposed shape anywhere; first
+  occupant of this directory that stayed.
+  Why the prefix: a skill called `read` sat beside a tool called
+  `Read`; and the exchange is the first convention with more than
+  one artifact, so its name on each ties them together in a listing.
+  Rejected: a procedure file for our half (nothing loads it); a
+  single skill for read, work and deliver (the work between is a
+  branch-long activity with no moment to open by name); a `-shape`
+  suffix or a `rules/shapes/` subdirectory (the Governs line is the
+  marker by the rule we ship, and a subdirectory is a third home
+  that rule does not name).
+  This commit crosses the agent/project line: three moves from
+  `temp/`, kept as renames so history follows the files. `temp/` is
+  scratch, not a record, so the split rule's reason is untouched.
+  Named in the plan.

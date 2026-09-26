@@ -1,7 +1,10 @@
-<!-- DRAFT, 2026-09-25. A shape, written from the one reading that
-     exists. Where it lives — .claude/shapes/ or .claude/rules/ with
-     a paths: line — is undecided; read.md step 4 points at it
-     either way. -->
+---
+paths:
+  - "temp/reading-*.md"
+---
+
+<!-- The shape of a reading. Loads while one is being written or
+     worked; says its form, never its content. -->
 
 # The reading
 
@@ -71,3 +74,10 @@ starts from. Written first, before anything is read.
 - **Written before the branch.** The reading counts the work and
   the count says whether a branch is needed, so the reading comes
   first, on main.
+
+---
+
+## Decisions
+
+- CBC ADR-0036 — the exchange: what a reading is, and that its shape
+  is held here, exposed, because its moment is a file being written

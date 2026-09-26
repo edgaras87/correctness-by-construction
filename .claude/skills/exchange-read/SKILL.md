@@ -65,5 +65,6 @@ document afterwards is work, not this skill; when the work is done,
 
 ## Decisions
 
-- `exchange.md` §2 — the two numbers, and why both are in the run
-- `exchange.md` §6 — what a reading is, and the three verdicts
+- CBC ADR-0036 — the exchange: the two numbers and why both are in
+  the run; what a reading is; the three verdicts and where each
+  lands

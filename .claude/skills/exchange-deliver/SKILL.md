@@ -122,5 +122,6 @@ move.
 
 ## Decisions
 
-- `exchange.md` §2 — the two numbers
-- `exchange.md` §3 — staging, what goes, absence, the note
+- CBC ADR-0036 — the exchange: the two numbers; staging on the
+  reviewer's word; what goes and what a copy cannot carry; what the
+  note is for
