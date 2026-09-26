@@ -30,6 +30,7 @@ has to be the origin (HANDBOOK ADR-0040).
 | repo-hygiene | [repo-hygiene/](repo-hygiene/) | the hygiene base; stack overlays stay here |
 | commit-plan | [commit-plan/](commit-plan/) | a skill |
 | convention-lifecycle | [convention-lifecycle/](convention-lifecycle/) | a skill: the kit's protocol, receiver side |
+| exchange | [exchange/](exchange/) | a rule shipped to the run; two skills and a shape held here |
 | agent-arrangement | [agent-arrangement/](agent-arrangement/) | the entry-file and decisions-log stubs |
 | visual-comparison | [visual-comparison/](visual-comparison/) | a skill: how a structure is shown, settled by rendering |
 

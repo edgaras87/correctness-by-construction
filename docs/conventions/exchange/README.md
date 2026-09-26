@@ -1,8 +1,7 @@
-<!-- DRAFT, 2026-09-25. The stated half of one thing that today lives
-     in four artifacts across two repos. Written as if none of them
-     existed, keeping only what cannot change. What exists today, and
-     what this would replace, is at the end — read that last, on
-     purpose.
+<!-- The exchange's manual: what passes between this repo and a run,
+     and why it works the way it does. Never shipped; a run holds the
+     rule, not this. Written from what cannot change, with what it
+     replaced at the end.
 
      Same rule as master.md: only what is checkable, and anything
      merely intended marked as intended. -->
@@ -362,8 +361,8 @@ never ships, and four artifacts are what a repo actually holds. It
 replaces `convention-lifecycle`, which was a convention, with one —
 and it is the first whose artifacts split between the two
 arrangements in `master.md` §4, each side holding only what it does.
-*Intended: the manual's home is `docs/conventions/exchange/`, and
-the artifacts' are named below.*
+This manual is at `docs/conventions/exchange/`. *Intended: the
+artifacts' homes are named below and are not yet true.*
 
 - **`delivered-copies.md` — a rule, the run's, shipped** in the
   container at `.claude/rules/`. §4 and §5. A rule rather than a
