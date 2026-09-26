@@ -102,6 +102,14 @@ item must end as; this is how the list gets there.
   commits inside a ten-item list. The reading is a list of lists,
   and the count in step 1 undercounts by construction. Fine, as long
   as nobody reads the count as a size.
+- **The run moves while the reading is worked.** Both sides moved
+  from one pin. Before the note, `deliver` runs `read` on the span
+  since the reading's first line; whatever the three things yield
+  is appended — next numbers, the pass after every close on them
+  too, the first line moved — and the whole is delivered once. The
+  run sees only the final delivery; the intermediate work is in our
+  history alone. The fork grows with delay on both sides, which is
+  the cost of the unnamed trigger below.
 - **Two readings at once.** The run-3 reading is paused on its own
   branch; this arrangement review is a second undertaking on a
   branch cut from it. Nothing says how two relate, which one moves

@@ -13,6 +13,15 @@ verdicts and the read-through ride only when one did.
 
 In `temp/note-to-<run>-<date>.md`, told not delivered.
 
+0. **If the run moved since the reading, run `read` on the new
+   span.** The reading's first line names `R`; if `R..HEAD` is not
+   empty, `read` steps 2–4 on it. The three things it reads are the
+   filter — the run's own building yields nothing and the extension
+   is empty in seconds; a copy edited or a line to us yields items,
+   which take the next numbers and are worked before the note. The
+   note then says the new `HEAD`. Both sides moved from one pin;
+   this is where their side is read before the take merges it.
+
 1. **What changed since the run's pin**, as paths the run can check
    against its own tree:
 

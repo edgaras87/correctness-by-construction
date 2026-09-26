@@ -73,7 +73,14 @@ paths:
    this run holds; the note says how many differ, the diff says how
    many, and a mismatch is reported first. Then diff each held copy
    against this run's own delivery commit to find its own edits, and
-   read the note's verdict on each. Then copy whole. **Then remove
+   read the note's verdict on each. **An edit with no verdict was
+   made after the read-through the note names**: the copy lands
+   whole and that edit is re-applied on top, its log entry and its
+   TODO line standing until a later note answers it. If the path it
+   was made to is one the note names as gone, there is no copy to
+   land on and nothing is re-applied — the log entry and the TODO
+   line stand, the diff is in this run's history, and the next note
+   answers them. Then copy whole. **Then remove
    what the note says is gone** — each path it names as deleted is
    deleted, each it names as renamed is moved; a copy cannot carry
    absence, so the note carries it and this step does it. Then empty

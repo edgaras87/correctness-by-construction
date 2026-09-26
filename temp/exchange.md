@@ -304,9 +304,10 @@ reference the run thinks any project would want. Then it gets a
 verdict like an edit does. That is how a run's rule for editing
 copies reached this document.
 
-**The read produces a reading** — a document in `temp/` listing
-every edit, every ask and every finding, one line each, revised as
-items close and deleted when the work does. The reading is the
+**The read produces a reading, or extends the one open for that
+run** — a document in `temp/` listing every edit, every ask and
+every finding, one line each, revised as items close and deleted
+when the work does. One per run at a time. The reading is the
 list; working it is ordinary work here — a commit plan when it
 takes more than one commit, an ADR when a decision has rejected
 options — and the exchange says nothing about how, only what each

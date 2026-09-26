@@ -36,11 +36,14 @@ document afterwards is work, not this skill; when the work is done,
      `kit-P` is the run's receipt branch when it cut one; otherwise
      the commit of the registry entry that recorded `P`.
 
-4. **Write the reading**, `temp/reading-<run>-<date>.md`, to the
+4. **Write the reading — or extend the one that is open.** If
+   `temp/` holds a reading for this run, this read extends it: new
+   items take the next numbers, and its first line moves to the new
+   `HEAD`. Otherwise write `temp/reading-<run>-<date>.md`, to the
    shape that governs it: one line per edit, per ask, per finding —
    what it is, where it is, and nothing decided yet. Its first line
    names the run's `HEAD` as read; that is the read-through the next
-   note will carry.
+   note will carry. One reading per run, open at a time.
 
 ## 2. Gates
 
