@@ -53,7 +53,7 @@ why a shape and two skills rather than a procedure, and where the
 shape lives. This step crosses the `temp/` → `.claude/` boundary in
 one commit — see Decisions below.
 
-**5. `docs: the run's rule ships, and the entry file stops forbidding it`**
+**5. `docs: the run's rule ships, and the container follows it`**
 `temp/delivered-copies.md` → `delivery/container/.claude/rules/`,
 citing CBC ADR-0036. The shipped `CLAUDE.md` loses "never edited in
 place — a change is a new copy from the source". The shipped
@@ -61,6 +61,17 @@ place — a change is a new copy from the source". The shipped
 `convention-lifecycle`. `delivery/README.md`'s harvest paragraphs and
 its "everything after birth is `bundle-update.md`" line point at the
 exchange instead.
+*Widened at its boundary, 2026-09-26:* the shipped birth entry still
+carried two hashes — the bundle's and the handbook kit's — with a
+comment saying one pin for two states would lie. Post-fork there is
+one pin, and the rule this step ships says the entry carries **pin
+and read-through**. A container whose rule and whose template
+disagree on what the entry holds ships a contradiction in the two
+files a newborn reads first. So: the template's second placeholder
+becomes the read-through — the newborn's first commit — its comment
+says why, and `pure-seed.md`'s three lines that fill "two pins"
+follow (lines 87, 135–136, 319). The rest of `pure-seed.md` stands;
+see Decisions.
 
 **6. `docs: convention-lifecycle leaves the delivery`**
 `delivery/container/.claude/skills/convention-lifecycle/` and
@@ -133,3 +144,12 @@ Deletes this file; the body records what diverged.
 - **Skills cite the ADR, not the manual by path.** Every other skill
   here cites decisions as `CBC ADR-nnnn`; a manual's path can move,
   an ADR number cannot.
+- **`pure-seed.md` is updated, not rewritten, in this set.** Birth
+  has mechanics the exchange does not describe — `git init`, the
+  hygiene commit, the `birth-seed` receipt branch, the fills, the
+  newborn's agent finishing the birth — and they still hold. What
+  the exchange makes false is the birth entry's shape, fixed here.
+  What the exchange makes *better* — staging as one overlay of the
+  groups — needs the mirrored layout, and lands with it in the
+  second plan. Rewriting the seed twice would shape it once from
+  intent.
