@@ -312,6 +312,17 @@ takes more than one commit, an ADR when a decision has rejected
 options — and the exchange says nothing about how, only what each
 item must end as, and where.
 
+**A reading closes two ways.** Its work closes — every item taken,
+declined or held, the note gone down. Or it is **overtaken**: the
+deliverer's tree has moved so far while the reading was open that
+its items no longer describe it, though the run's side may still be
+true. An overtaken reading is closed the same way — one pass over
+its open items saying where each went — and deleted; the next read
+starts fresh rather than extending a list written against a tree
+that no longer exists. *Found once: a reading paused on 09-24 while
+sixty commits changed the ground under it; every open item had been
+dissolved or moved by what was done instead.*
+
 **Verdicts.** Each item leaves the list with one of three:
 
 - **Taken** — a master changes here, committed. The next delivery
