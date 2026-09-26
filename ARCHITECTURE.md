@@ -179,9 +179,9 @@ handbook).
   The test for the group is what the *skill* assumes, not what a
   sentence mentions: a method file may name a lived default.
 - A record stub is never re-delivered to a live run. Enforced in
-  `delivery/installs/bundle-update.md`'s container-half rule: a kit
-  re-pin moves four files, and the rest are the run's own work
-  (ADR-0024).
+  the run's own rule, `delivered-copies.md` rule 1, and the
+  exchange's §5: the records are the run's own from birth, not
+  copies, and no delivery touches them (ADR-0036).
 
 ## Codemap
 
@@ -189,7 +189,7 @@ handbook).
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
-| `delivery/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `container/` is what a run is born into, this repo's since ADR-0025, taken from the handbook's kit at `ba7eaa4` with the delta kept as a reading aid — named `kit/` until ADR-0029, which renamed it for what it is rather than where it came from; `method/` and `spring-postgres/` are the two groups a run copies as pinned files — two skills and three, whole, a group taken entirely or not at all (ADR-0029); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and carries the delta list and the kit pin; `installs/` holds the two operator manuals — `pure-seed.md` for birth (ADR-0016) and `bundle-update.md` for every update after it (ADR-0022); a shape rides the group of the thing it shapes, an exposed one as a pinned copy and an unexposed one staged at a gate, held apart from the groups and naming its own (ADR-0035) |
+| `delivery/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `container/` is what a run is born into, this repo's since ADR-0025, taken from the handbook's kit at `ba7eaa4` with the delta kept as a reading aid — named `kit/` until ADR-0029, which renamed it for what it is rather than where it came from; `method/` and `spring-postgres/` are the two groups a run copies as pinned files — two skills and three, whole, a group taken entirely or not at all (ADR-0029); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and carries the delta list and the kit pin; `installs/` holds `pure-seed.md` for birth (ADR-0016); every update after it is the exchange, `docs/conventions/exchange/`, whose two skills sit in this repo's `.claude/skills/` (ADR-0036); a shape rides the group of the thing it shapes, an exposed one as a pinned copy and an unexposed one staged at a gate, held apart from the groups and naming its own (ADR-0035) |
 | `docs/baselines/` | Held baselines — artifacts withheld from delivery, blind to newborns, compared against lived results: the frozen playbook (ADR-0012) and the Spring slice reference, handed to no run at any moment and opened once at a run's Release step (ADR-0033, superseding ADR-0021's hand-off). **Trial evidence, and not shapes** (ADR-0035): what is withheld here is withheld *in order to stay* undelivered, because a derivation that has seen it measures imitation — where a shape is withheld only until a gate, after which being in front of the next writer is the point. The two look alike and their blindness runs opposite ways; a shape does not live here, and nothing here ships under a shape's rule. Which of these files is which is not yet sorted — its own change set |
 | `docs/models/` | Three models, this repo's (ADR-0026). Two were taken from the handbook at the kit's pin and their headers carry the coordinates; `shapes.md` was written here (ADR-0035) and takes none. None is delivered — what reaches a project is the rule, not the model of it |
 | `docs/conventions/` | Ten convention manuals, this repo's — seven taken from the handbook (ADR-0025) and three written here (ADR-0031); its own `README.md` is the index and carries both ends of the anchor, what did not come across, and the rule that a manual moves with its rule |

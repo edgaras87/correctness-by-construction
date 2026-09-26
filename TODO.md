@@ -814,7 +814,10 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] The rename sweep needs a home before `bundle-update.md` goes
+- [x] DONE 2026-09-26 — landed as `commit-plan` §4's last bullet
+      in the shipped master (a1b0331) and our copy (4c8c5f1);
+      `bundle-update.md` deleted in the same set. Original item:
+      The rename sweep needs a home before `bundle-update.md` goes
       (2026-09-25). The one lesson in that file with nowhere else
       to live: when anything is renamed or renumbered, grep the
       whole span for every old identifier, not the one being
@@ -825,7 +828,15 @@
       change set that renames something here. Home: `commit-plan`'s
       close step, one line. Then `bundle-update.md` is deleted.
 
-- [ ] Split `bundle-update.md`, and write the inbound half to the
+- [-] SUPERSEDED 2026-09-26 — by the exchange (ADR-0036). Not a
+      split and a second half: one manual at
+      `docs/conventions/exchange/`, with `exchange-read` and
+      `exchange-deliver` as the two directions and a shipped rule
+      for the run; `bundle-update.md` deleted. Its fourteen dated
+      lessons are the manual's italics or gone with the fork; the
+      staging-script gap named below is what the mirrored layout
+      answers, in the plan after this one. Original item:
+      Split `bundle-update.md`, and write the inbound half to the
       same shape (2026-09-23). Measured: 527 lines, of which the
       five mechanical steps — set the pins, stage, take, record,
       delete — are 133. The rest is judgement and accumulated
