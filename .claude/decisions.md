@@ -856,3 +856,15 @@
   09-24 — thirteen lines apart on one skill, six days on another.
   The registry entries from 09-03 through 09-20 that record this
   convention's injections and updates stand as history.
+
+- 2026-09-26 Convention updated: commit-plan, our copy made equal to
+  the master at `delivery/container/`, which gained one bullet in §4
+  the commit before — the rename sweep before a close. Byte-identical
+  after the copy, checked with `cmp`.
+  Why: the one lesson in `bundle-update.md` with nowhere else to
+  live; the moment it applies is the close of a change set, and this
+  is the convention that governs that moment. Our copy follows the
+  master by copying whole, the same day, because the drift between
+  the two measured on 09-24 came from exactly this not happening.
+  Rejected: editing our copy by hand to match. A copy is changed by
+  being copied anew, here as in a run.

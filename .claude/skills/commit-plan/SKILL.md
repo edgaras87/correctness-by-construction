@@ -96,6 +96,12 @@ section.>
   in the set's final records commit, never in the close commit. An
   ADR committed Accepted early claims that no later boundary can
   contradict it. An abandoned set leaves its ADRs Proposed.
+- **Before the close, sweep for every name the set moved.** When a
+  step renamed or renumbered anything, grep live text for each old
+  identifier — all of them, not the one being described. A
+  renumbering moves every number, so the search is the whole span;
+  the cheapest form is every old value at once. What is history
+  stays; what points at the old name from live text is the defect.
 
 ## 5. Divergence
 
