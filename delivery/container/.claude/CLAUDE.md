@@ -24,9 +24,9 @@ Until the framing artifacts exist (cbc-framing creates them, under
 is running cbc-framing jointly with the human — never invent the
 artifacts to fill the gap.
 
-`docs/concept/` and the method skills under `.claude/skills/` are
-pinned copies: never edited in place — a change is a new copy
-from the source, logged in `.claude/decisions.md`.
+`docs/concept/` and everything under `.claude/skills/` and
+`.claude/rules/` are delivered copies, pinned; what may be done to
+them is `.claude/rules/delivered-copies.md`.
 
 ## Records
 

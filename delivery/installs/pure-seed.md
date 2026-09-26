@@ -84,8 +84,8 @@ worktree, untracked: the newborn's agent finishes the birth itself
 by reading what is there and committing it under its own sequence
 and split (ADR-0018). The container comes from `delivery/container/`,
 this repo's copy of the handbook's kit at a pin (ADR-0024), and
-the seed fills only what is mechanical: the birth entry's two pins
-and date, two other birth dates, the working name in the two entry
+the seed fills only what is mechanical: the birth entry's pin and
+date, two other birth dates, the working name in the two entry
 files, and the playbook's steps into PLAN with its "Steps from:"
 line. Beyond those, no field is filled: not the other stubs, no
 bundle birth entry. What the agent cannot derive rides in the seed
@@ -102,21 +102,19 @@ produced the pre-framing guard or the pin stance (ADR-0019) — a
 measurement that ended with run 2, which is why the pure and
 semi-pure paths are now one path.
 
-**1. Set the paths and capture the pins.**
+**1. Set the paths and capture the pin.**
 
 ```bash
 new_project_dir=~/IdeaProjects/<placeholder-name>
 bundle_dir=~/PycharmProjects/engineering/concept-garden/correctness-by-construction
 
 bundle_pin=$(git -C "$bundle_dir" rev-parse --short HEAD)
-kit_pin=$(sed -n 's/^Kit pin: `\([0-9a-f]\{7,\}\)`.*/\1/p' \
-    "$bundle_dir"/delivery/README.md)
 ```
 
-No `handbook_dir`. The kit is held here at a pin, and that pin's
-one home is the Kit pin line in `delivery/README.md` — read from
-there so a re-pin moves one line and this manual follows. A run is
-born without any handbook checkout existing.
+No `handbook_dir`, and no second pin. The container began as the
+handbook's kit; that is provenance, recorded once in
+`delivery/README.md`, and the seed does not read it. One pin, ours,
+and a run is born without any handbook checkout existing.
 
 The name is a placeholder — everything before the briefing is
 problem-agnostic, and the briefing brings the real name.
@@ -133,7 +131,6 @@ it.
 mkdir -p "$new_project_dir"
 cp -r "$bundle_dir"/delivery/container/. "$new_project_dir"/
 sed -i -e "s/<bundle-commit>/$bundle_pin/" \
-    -e "s/<handbook-commit>/$kit_pin/" \
     -e "s/<YYYY-MM-DD> Born/$(date +%F) Born/" \
     "$new_project_dir"/.claude/decisions.md
 sed -i "s/^Date: <YYYY-MM-DD>/Date: $(date +%F)/" \
@@ -315,8 +312,8 @@ item is a verifiable fact:
   from:" comment names cbc-run-pure v6 at the bundle pin. No
   playbook file exists, and no line of the region states an
   assembly conclusion.
-- The six birth placeholders are filled and no more: the birth
-  entry's two pins and date, ADR-0001's date, the devlog heading,
+- The five birth placeholders are filled and no more: the birth
+  entry's pin and date, ADR-0001's date, the devlog heading,
   and the working name in the two entry files. Every other stub
   still reads as a stub, and no bundle birth entry exists.
   `.claude/CLAUDE.md` and `README.md` are byte-identical to the

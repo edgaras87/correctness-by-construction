@@ -113,3 +113,12 @@ paths:
 The pin is the truth of origin, the log is the why, and the diff
 between the pin and the copy is the whole of what this run changed
 — which is what the deliverer reads.
+
+---
+
+## Decisions
+
+- CBC ADR-0036 — the exchange. This rule is the run's half of it,
+  built from the seven rules never-oversold wrote for its own method
+  skills and widened to every delivered copy; the pin and the
+  read-through; what a copy cannot carry; the check at the take

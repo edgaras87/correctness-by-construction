@@ -17,24 +17,22 @@
      At the project retrospective, read top to bottom: each entry
      graduates to the handbook, stays local, or dies.
 
-     The three placeholders in the birth entry below — the date and
-     the two "@" hashes — are replaced at copy time by the seed in
-     the concept repo's install manual. The bundle hash pins what
-     was delivered; the kit hash inside it pins which handbook
-     state, and so which version of every convention, this project
-     was born from (convention-lifecycle §2). Both are named
-     because one pin standing for two states would be a pin that
-     lies. If any still shows a placeholder, the seed was not run;
+     The two placeholders in the birth entry below — the date and
+     the "@" hash — are replaced at copy time by the deliverer's
+     seed. The hash is the pin: the deliverer's commit every copy
+     here equals. Beside it the entry carries the read-through, the
+     commit of this project the deliverer last read up to; at birth
+     nothing has been read, and the first note sets it. Every later
+     delivery entry carries both (.claude/rules/delivered-copies.md,
+     rule 1). If the placeholder still shows, the seed was not run;
      fix it before the bootstrap commit. -->
 
-- <YYYY-MM-DD> Born from the correctness-by-construction bundle
-  @ <bundle-commit>, whose kit half is the engineering-handbook
-  starter kit @ <handbook-commit>, held there at a pin.
+- <YYYY-MM-DD> Born from the correctness-by-construction delivery,
+  pin <bundle-commit>; read-through none — nothing read before the
+  first note. The container began as the engineering-handbook
+  starter kit, which is provenance and not a pin.
   Conventions: project-recording, commit-messages, repo-hygiene,
-  commit-plan, convention-lifecycle, agent-arrangement,
-  visual-comparison.
-  Why: handbook defaults, delivered through the bundle. The last
-  one is the bundle's own, not the handbook's — its decisions are
-  cited CBC ADR-nnnn and are the bundle's to explain.
-  Rejected: none — see the handbook's ADRs, and the bundle's for
-  anything the bundle changed.
+  commit-plan, exchange, agent-arrangement, visual-comparison.
+  Why: the deliverer's defaults. Their decisions are cited
+  CBC ADR-nnnn and are the deliverer's to explain.
+  Rejected: none — see the deliverer's ADRs.

@@ -102,9 +102,11 @@ seed: every delivery a commit on the receipt branch `birth-seed`,
 the pin in the subjects, main left at the hygiene commit with the
 same files untracked (ADR-0018), the newborn's agent finishing the
 birth by committing them under its own sequence. Its peer for
-everything after birth is `delivery/installs/bundle-update.md`
-(ADR-0022) — the note and the copy, staged in the run's own
-`temp/`, taken whole, the pin recorded by the run. One birth from
+everything after birth is the exchange (ADR-0036,
+`docs/conventions/exchange/`) — the note and the copy, staged in the
+run's own `temp/` on the reviewer's word, taken whole under the
+run's `delivered-copies.md`, the pin and the read-through recorded
+by the run. One birth from
 one place: ADR-0009's two-copy composition is retired by ADR-0024,
 the container now being ours to ship rather than the handbook's to
 supply.
@@ -233,43 +235,24 @@ definitions (ADR-0006) — the skills carry the method whole.
 
 ## Harvest — how a run's lesson lands here
 
-A run's surprise about an execution travels through records
-(docs/models/tiers.md): the run records it in its own log, and it
-may have fixed its own copy already. This repo reads that record —
-read-only, a harvest never edits a run — and updates the
-authoritative copy here, in the run's own wording.
+The up-flow of the exchange, `docs/conventions/exchange/` §6: we
+read the run — read-only, a harvest never edits a run — from its own
+read-through forward, write the reading, work it, and change the
+masters here for what is taken. The verdicts go back in the next
+note. A run's edit may arrive already made in its copy, and then the
+harvest is a diff against the pin rather than a reading of prose
+(ADR-0022). The commit that changes a master is the record of the
+change; no shipped file carries a harvest line.
 
-**The change may arrive already made.** A run may edit its copy
-between two pins, under rules it keeps and logs (ADR-0022). When it
-has, the harvest is a diff of that copy against the pin rather than
-a reading of prose, and each hunk is taken, reshaped or declined;
-the run's provenance carries into the commit that takes it. When it
-has not, the harvest is the reading it always was. Either way the
-run sends nothing and this repo reaches into nothing.
+One thing the manual does not say, kept here because it was learned
+here: **ask what the run teaches the worked example.** It is bundle
+content like the rest and sat untouched through three runs because
+nobody asked.
 
-**The commit is the record.** There is no harvest line in a shipped
-file any more: a file here carries instruction only, and what
-changed is the commit that changed it, whose subject states it and
-whose body says why (ADR-0022). `git log --follow` over a bundle
-path is that file's history; the devlog entry of the date is the
-session around it.
-
-**Ask what the run teaches the worked example.** The harvest walks
-the skills and their workflows by habit, and the worked example
-sat untouched through three runs because nobody asked. It is
-bundle content like the rest. Its smallness is deliberate, so the
-question is what this run teaches the example — not whether a
-lived framing would make a better one.
-
-**The verdict goes back as a note**, carried to the run with its
-next copy: what was taken, reshaped or declined, and why. A
-declined edit is gone at the re-pin and never edited back; what the
-run still needs goes into the run's own records.
-
-The pin is untouched and no concept version bumps unless the mental
-layer itself changed; CHANGELOG carries concept versions only. The
-archive's copy stays a historical snapshot — visibly stale is its
-job. Why this shape: ADR-0007, amended by ADR-0022.
+The pin is untouched by a harvest and no concept version bumps
+unless the mental layer itself changed; CHANGELOG carries concept
+versions only. The archive's copy stays a historical snapshot —
+visibly stale is its job.
 
 Every citation of this repo's decisions in a file the bundle ships
 writes the number as `CBC ADR-nnnn`: the bundle is copied verbatim
