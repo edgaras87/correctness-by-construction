@@ -62,7 +62,7 @@ item must end as; this is how the list gets there.
    options. The decisions log for any change to the arrangement.
    The devlog at a session's end, and at a pause.
 
-9. **When the list is closed, `deliver`.** The note is written
+9. **When the list is closed, `exchange-deliver`.** The note is written
    from the reading's final state — every item's verdict, in the
    run's order — and the read-through from its first line. Then the
    reading is deleted, the branch fast-forwards, and the devlog
@@ -103,8 +103,9 @@ item must end as; this is how the list gets there.
   and the count in step 1 undercounts by construction. Fine, as long
   as nobody reads the count as a size.
 - **The run moves while the reading is worked.** Both sides moved
-  from one pin. Before the note, `deliver` runs `read` on the span
-  since the reading's first line; whatever the three things yield
+  from one pin. Before the note, `exchange-deliver` runs
+  `exchange-read` on the span since the reading's first line;
+  whatever the three things yield
   is appended — next numbers, the pass after every close on them
   too, the first line moved — and the whole is delivered once. The
   run sees only the final delivery; the intermediate work is in our

@@ -1,5 +1,5 @@
 ---
-name: read
+name: exchange-read
 description: Read a run since the deliverer last read it, and write the reading. Use when the reviewer says to read a run, or before a delivery that should answer what the run asked.
 ---
 
@@ -7,7 +7,7 @@ description: Read a run since the deliverer last read it, and write the reading.
 
 Four steps, and the fourth is a document. What happens to the
 document afterwards is work, not this skill; when the work is done,
-`deliver` carries the verdicts down.
+`exchange-deliver` carries the verdicts down.
 
 ## 1. The method
 
@@ -57,7 +57,7 @@ document afterwards is work, not this skill; when the work is done,
 
 - It does not decide. Each item ends as taken, declined or held in
   the work that follows, where the exchange says each lands.
-- It does not send. `deliver` does — and a read that sends no note
+- It does not send. `exchange-deliver` does — and a read that sends no note
   has not finished, because the run's read-through stays where it
   was and the run cannot tell it was read.
 

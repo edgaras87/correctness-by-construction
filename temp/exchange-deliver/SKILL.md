@@ -1,5 +1,5 @@
 ---
-name: deliver
+name: exchange-deliver
 description: Write the note and stage a delivery into a run's temp/. Use when the reviewer says to deliver — after a reading, or when something a run holds has changed here — and for a note alone when a reading found nothing to send.
 ---
 
@@ -13,9 +13,9 @@ verdicts and the read-through ride only when one did.
 
 In `temp/note-to-<run>-<date>.md`, told not delivered.
 
-0. **If the run moved since the reading, run `read` on the new
+0. **If the run moved since the reading, run `exchange-read` on the new
    span.** The reading's first line names `R`; if `R..HEAD` is not
-   empty, `read` steps 2–4 on it. The three things it reads are the
+   empty, `exchange-read` steps 2–4 on it. The three things it reads are the
    filter — the run's own building yields nothing and the extension
    is empty in seconds; a copy edited or a line to us yields items,
    which take the next numbers and are worked before the note. The

@@ -5,7 +5,7 @@
 
 # The reading
 
-**Governs:** how a reading — the document `read.md` produces and
+**Governs:** how a reading — the document `exchange-read` produces and
 the work then fills — is written. Its form, never its content.
 
 ## Where it sits and how long

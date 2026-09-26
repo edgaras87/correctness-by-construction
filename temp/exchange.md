@@ -371,15 +371,15 @@ the artifacts' are named below.*
   file in `temp/`. It loads when the moment arrives instead of
   waiting to be opened by name — the failure the receiver's protocol
   had since the day it shipped.
-- **`read` — a skill, ours**, in this repo's `.claude/skills/`. §6:
+- **`exchange-read` — a skill, ours**, in this repo's `.claude/skills/`. §6:
   find the span from the run's read-through, read the three things,
   write the reading. Ends where the work begins.
-- **`deliver` — a skill, ours**, beside it. §3: the note committed
+- **`exchange-deliver` — a skill, ours**, beside it. §3: the note committed
   last, the staging on the word; the same whether a reading preceded
   it or not. Birth is a delivery into the root plus the fills, and
   `pure-seed.md` keeps that.
 - **The reading's shape — ours**, in `.claude/rules/` with a
-  `paths:` line or in `.claude/shapes/`, undecided. What `read`
+  `paths:` line or in `.claude/shapes/`, undecided. What `exchange-read`
   writes, and what the work then fills, to one form.
 
 Between read and deliver is work, not procedure. How this repo
