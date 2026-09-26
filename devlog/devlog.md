@@ -6,6 +6,75 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-26  (the exchange placed, and convention-lifecycle gone — one set, twelve commits)
+
+The commit plan for the exchange, opened in the morning and at its
+records commit by afternoon. Everything the last two days drafted in
+`temp/` is where it belongs, and what it replaced is gone.
+
+- **The order held: ADR first, then the artifacts that cite it.**
+  ADR-0036 opened Proposed at step 2 so the skills and the shipped
+  rule could cite `CBC ADR-0036` rather than a manual by path, and
+  so a boundary could still revise it. None did. It flips Accepted
+  in this commit, unrevised — the plan widened, the ADR did not.
+- **One divergence, at step 5, found in the material.** The shipped
+  birth entry still carried two hashes — bundle and handbook kit —
+  with a comment saying one pin for two states would lie. Post-fork
+  there is one pin, and the rule that very step shipped says the
+  entry holds pin and read-through. Stopped before committing,
+  revised the plan on its own commit, widened the step: the template
+  says two numbers now, the seed stops filling a second pin, and
+  its dead `kit_pin` variable and the paragraph explaining where to
+  read it went with the line. `pure-seed.md` otherwise stands; its
+  overlay rewrite waits for the layout it needs.
+- **The reviewer's question about `exchange-reading.md`** — is it
+  the run's? No: it is the shape of the reading *we* write; a run is
+  blind and writes none. It stayed in our `.claude/rules/`, with the
+  decision that had been deferred twice made at the move and named
+  for objection. First exposed shape anywhere. Both new skills
+  appeared in the agent's skill list the turn after they landed;
+  `convention-lifecycle` left it the turn after step 7.
+- **The sweep found more than the plan said.** Step 6 planned two
+  live mentions of `convention-lifecycle`; the grep found eleven in
+  six files — the shipped `shapes-lifecycle.md` among them, citing
+  a convention that no longer existed. Two of the eleven were not
+  about the name at all: a delta-table row still saying the birth
+  entry names both upstreams, which step 5 had made false hours
+  earlier, and the tiers model saying no tier's agent reads
+  another's repo, which the deliverer does at every harvest. Step 8
+  then wrote that very sweep into `commit-plan` §4 as a rule, and
+  step 9 copied our commit-plan whole from the master — `cmp`
+  identical — rather than editing it to match, because the drift
+  measured on 09-24 was exactly that step not happening.
+- **`bundle-update.md`, 524 lines, deleted at step 10** with nothing
+  left in it: inventoried on 09-25, its one homeless lesson landed
+  two steps before. Two TODO items closed, one done and one
+  superseded — not a split into two halves but one manual, two
+  skills and a shipped rule. Three ticked gate items in PLAN still
+  name the file and stand, as history.
+- **This commit: `master.md` catches up.** Seven conventions still,
+  with the exchange for `convention-lifecycle`. The container counts
+  three skills and two rules; sixteen of seventeen files still map
+  to a manual, the seventeenth unchanged. §2.5 keeps the facts and
+  the picture and cites the manual for the mechanism. §4.3 stops
+  describing an accident — the receiver's protocol held by a
+  non-receiver — and describes a design: each side holds its half
+  because neither could run the other's. *What must stay true* cites
+  the exchange's five facts instead of restating four of them. *The
+  words* gains *read-through*. **Two errata close** — the asymmetry
+  is written down, and the shipped entry file no longer forbids what
+  the shipped rule permits — and two stand.
+
+Resume: step 12 closes the plan. After it, the second plan — the
+mirrored layout (two `git mv` per skill) and the derivation field,
+which is what makes `exchange-deliver`'s overlay run as written and
+what `pure-seed.md`'s rewrite waits for. `working-a-reading.md`
+stays in `temp/` until the next reading. Then the delivery to run 3:
+its note tells it to drop `skills-changed-in-place.md` for
+`delivered-copies.md`, derived from it, and to delete three
+conventions and a rule by name. `main` is 103 commits behind; the
+paused reading branch sits at `cf90073`.
+
 ## 2026-09-25, later  (master.md placed, and the exchange drafted from five facts)
 
 Thirteen commits after the morning entry; 35 on the branch. The

@@ -75,8 +75,9 @@ and is either derived from it or checked against it.
 
 **Seven manuals: how work is done here, and why each rule is the
 shape it is.** Recording, committing, hygiene, how an agent is
-arranged, how a project takes a newer copy, how a choice between
-things you look at is settled.
+arranged, how a choice between things you look at is settled, and
+the exchange — how a delivery goes down to a run and how what the
+run learned comes back.
 
 None of it is CbC. The concept is about how a system is built; the
 conventions are about how a repo is kept.
@@ -89,7 +90,9 @@ conventions are about how a repo is kept.
   files in `delivery/container/`, which is the master.
 - **Seven, not ten.** `decide-first`, `option-comparison` and
   `artifact-kinds` were discarded on 2026-09-24 and nothing replaced
-  them.
+  them. `convention-lifecycle` went on 2026-09-26 and the exchange
+  took its place (ADR-0036) — the first convention whose artifacts
+  split between the two arrangements in section 4.
 
 ## 2. The delivery — what a project gets, and where it goes
 
@@ -122,15 +125,16 @@ keeps the rest.
 
 **How a project is kept, not how it is thought.** The records
 (`PLAN`, `TODO`, `devlog`, `ARCHITECTURE`, `CHANGELOG`), the entry
-file, the agent decisions log, four convention skills, one rules
-file, the hygiene files.
+file, the agent decisions log, three convention skills, two rules,
+the hygiene files.
 
 **This is the conventions made usable**, the way the method is the
 concept made usable. Sixteen of its seventeen files are the
 artifacts of one of the seven manuals in 1.2 — the records belong to
 `project-recording`, the entry file and the decisions log to
-`agent-arrangement`, the three dotfiles to `repo-hygiene`, and the
-four skills to the four conventions named after them.
+`agent-arrangement`, the three dotfiles to `repo-hygiene`, the
+three skills to the three conventions named after them, and
+`.claude/rules/delivered-copies.md` to the exchange.
 
 *The seventeenth is `.claude/rules/shapes-lifecycle.md`, which has
 no manual. It arrived from run 3 under ADR-0035 and was never given
@@ -176,23 +180,21 @@ by itself. Every delivery is a person copying files into the run's
 ```
 
 **Down — delivery.** Files, copied whole, and a **note** beside
-them: what changed since the run's pin, and a verdict on everything
-the run addressed to us — taken, declined, or held with a trigger.
-The note is the only way our reasoning reaches a run; the files
-carry none of it. The run records one hash for the whole delivery
-in its own decisions log. That hash is a commit of ours; the run
-stores it without being able to resolve it.
+them. The note is the only way our reasoning reaches a run; the
+files carry none of it. The run records two numbers in its own
+decisions log: the **pin**, a commit of ours it cannot resolve, and
+the **read-through**, its own commit we last read up to.
 
 **Up — harvest.** No files move. We read the run's repository
 directly and write what we learned into our own masters. A run
 never pushes anything here, and what it asked us gets its answer in
 the next note down.
 
-*Intended, not yet true: that this asymmetry is written down
-anywhere but here. Today it is spread across `delivery/README.md`,
-`delivery/installs/bundle-update.md`, the `convention-lifecycle`
-skill, and a rules file run 3 wrote for itself because ours did not
-reach that far.*
+The mechanism — the take, what a copy may become between pins, what
+a copy cannot carry, what a note holds — is the exchange,
+`docs/conventions/exchange/`; the run's half of it ships as
+`delivered-copies.md`, ours is `exchange-read` and
+`exchange-deliver`.
 
 ## 3. How anything here changes
 
@@ -272,8 +274,10 @@ It is not a builder; there is nothing here to build. **Its work is
 section 3, run from this side.**
 
 Entry file: *"A concept repo... Documents only — no code, no
-runs."* Four convention skills — `commit-messages`, `commit-plan`,
-`convention-lifecycle`, `visual-comparison`. No rules.
+runs."* Three convention skills — `commit-messages`, `commit-plan`,
+`visual-comparison` — and the exchange's two, `exchange-read` and
+`exchange-deliver`. One rule, `exchange-reading.md`: the shape of
+the reading, loading while one is written.
 
 *The records it keeps — `PLAN`, `TODO`, the devlog, the ADRs, the
 decisions log, `CHANGELOG`, `ARCHITECTURE` — are not on this page.
@@ -285,38 +289,36 @@ describes most of section 2 a second time. Named here, not filled.*
 Shipped in `delivery/container/`, so it is something we write and
 they receive.
 
-Entry file: `docs/concept/` and the method skills are **pinned
-copies**, and until the framing artifacts exist the only method
-work is running `cbc-framing` jointly with the human. The same four
-convention skills. One rule, `shapes-lifecycle`. And beside them
-the records the arrangement refers to.
+Entry file: `docs/concept/` and everything under `.claude/` are
+**delivered copies**, pinned, and until the framing artifacts exist
+the only method work is running `cbc-framing` jointly with the
+human. The same three convention skills. Two rules,
+`shapes-lifecycle` and `delivered-copies` — the exchange's half for
+this side. And beside them the records the arrangement refers to.
 
 The work it arranges: build a real system, keep its records, take
 deliveries.
 
 ### 4.3 What the difference explains
 
-**Nearly identical, and that is the trap.** The four skills are the
-same files. The records table has the same shape. The agent/project
-commit split is the same rule.
+**Nearly identical, and the difference is now designed rather than
+accidental.** Three skills are the same files. The records table has
+the same shape. The agent/project commit split is the same rule.
 
-What differs is the *job*, and therefore which parts ever fire.
-`convention-lifecycle` is the **receiver's** protocol — how a
-project takes a newer copy without losing its own edits. A run uses
-it constantly: eight takes recorded, three receipt branches, four
-in-place edits. This repo has no deliverer, so it has never fired
-here at all.
+What differs is the *job*, and since ADR-0036 the two arrangements
+hold different things because of it. The run holds the receiver's
+rule, `delivered-copies.md` — how to take a newer copy without
+losing its own edits, and what it may do to one meanwhile. We hold
+the deliverer's skills, `exchange-read` and `exchange-deliver`, and
+the shape of the reading they produce. Neither side holds the
+other's half, because neither could run it.
 
-Reading a shared file and assuming a shared job is how a rule ends
-up held in the repo it cannot apply to.
-
-*Contradiction, stated rather than resolved: the entry file we ship
-says the method skills are "never edited in place — a change is a
-new copy from the source". Run 3 has edited `cbc-slice` in place
-three times, we took every edit into our masters, and on 2026-09-17
-we adopted the seven rules run 3 wrote to govern such edits. We
-never shipped those rules. A project born today gets the
-prohibition and nothing else.*
+Until 2026-09-26 this repo held the receiver's protocol,
+`convention-lifecycle`, and had never once run it — our registry
+pinned us to ourselves — while run 3 ran it at every take. Reading a
+shared file and assuming a shared job is how a rule ends up held in
+the repo it cannot apply to. That is the string this section exists
+to show, and it has been pulled once.
 
 ---
 
@@ -333,16 +335,14 @@ against them in one pass.
   it.
 - **A manual never ships.** What a project gets is the artifact,
   never the explanation.
-- **A run is blind.** No address for this repo, no checkout, no
-  remote. Nothing here reaches it by itself.
-- **Nothing moves upward as files.** A run never pushes here; we
-  read it.
-- **One pin per run, for the whole delivery.** Not one per group,
-  not one per convention.
-- **Our reasoning reaches a run only through the note.** The files
-  carry none of it.
 - **Agent side and project side never share a commit** — in this
   repo and in every run.
+- **The exchange's five facts** — a run is blind; nothing arrives by
+  itself; copies against masters; a run edits a copy when it fails
+  it; nothing moves upward as files — and what follows from them:
+  one pin per run, both numbers held by the run, bytes matching at
+  the pin, absence carried by the note. Stated once, in
+  `docs/conventions/exchange/` §1–§3, and checked there.
 
 ## The words
 
@@ -359,6 +359,9 @@ Used across both repos, defined here and nowhere else.
   has happened.
 - **take** — the run's act: moving delivered files from `temp/`
   into place and recording the pin.
+- **read-through** — the run's own commit the deliverer last read
+  up to. Recorded by the run from the note; moved by every note,
+  files or not. Read from here forward.
 - **pin** — the one hash a run records for a delivery. A commit of
   the deliverer's; the run stores it and cannot resolve it.
 - **note** — the text beside a delivery: what changed since the
@@ -372,16 +375,15 @@ Used across both repos, defined here and nowhere else.
 
 ## What this page knows is wrong
 
-Four things, each left standing where it was found:
+Two things, each left standing where it was found:
 
 1. **2.3** — `shapes-lifecycle` ships with no manual behind it.
-2. **2.5** — the delivery/harvest asymmetry is written down nowhere
-   but here.
-3. **4.3** — we ship an entry file forbidding in-place edits of the
-   method skills, and have taken three such edits under seven rules
-   we adopted and never shipped.
-4. **4.1** — this repo's own records are not on the map, and
+2. **4.1** — this repo's own records are not on the map, and
    `ARCHITECTURE.md` describes section 2 a second time.
+
+Two left the list on 2026-09-26, with ADR-0036: the asymmetry is
+written down in the exchange's manual, and the shipped entry file no
+longer forbids what the shipped rule permits.
 
 When one is fixed it leaves this list. When the list is empty, this
 page is claiming to be current — and that is the claim to distrust

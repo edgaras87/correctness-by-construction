@@ -1,8 +1,10 @@
 # 0036. The exchange replaces convention-lifecycle
 
 Date: 2026-09-26
-Status: Proposed (opened under the commit plan for the exchange;
-flips to Accepted in that set's records commit)
+Status: Accepted (2026-09-26, at the set's records commit; opened
+Proposed under the commit plan for the exchange and not revised —
+the plan widened once at step 5, to the birth entry, and the text
+here already said one pin)
 
 ## Context
 

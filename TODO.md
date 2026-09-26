@@ -814,6 +814,37 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] A maintenance rule for core descriptions, candidate
+      convention (2026-09-26, the reviewer). Every description this
+      repo derives things from — the concept, each convention's
+      manual, `master.md` — is defined in one place, and several
+      artifacts and summaries follow it: the exchange's manual has
+      four derived files and one map summary, and nothing says so
+      in a way that fires. The rule: (1) a description lists what
+      derives from it; (2) each derived artifact names its source —
+      the field decided in ADR-0036 §7; (3) a change to the
+      description walks the list; (4) a change forced in an artifact
+      is checked back against the description; (5) disagreement is
+      raised and decided, and if the description changes, the walk
+      runs again. Steps 1–2 half-exist; 3–5 do not.
+      Two firings, both by hand: the correspondence check of
+      2026-09-25, which found three gaps in the run's rule that a
+      run following it would have hit; and step 11 of the exchange
+      plan, which walked `master.md` section by section. Both were
+      run because the reviewer asked, not because anything made
+      anyone look. `master.md`'s stated purpose — changing one part
+      shows what else moves — is this rule as a picture; the sweep
+      line in `commit-plan` §4 and `shapes-lifecycle`'s check of
+      output against a shape are two special cases of it.
+      The pattern recurs in a run: `docs/system/definition.md` → the
+      slice records, tied through the registry. So it may be a
+      convention that ships, which is the reason to let it earn
+      that rather than decide it now.
+      Trigger: the next time a core description changes and the
+      derived artifacts are hunted for by hand. Then it is written,
+      and its form — rule, skill, or a section of the manual it
+      governs — is chosen from what that hunt needed.
+
 - [x] DONE 2026-09-26 — landed as `commit-plan` §4's last bullet
       in the shipped master (a1b0331) and our copy (4c8c5f1);
       `bundle-update.md` deleted in the same set. Original item:

@@ -318,9 +318,11 @@ item must end as, and where.
   carries it, and the run's edit is absorbed rather than
   overwritten.
 - **Declined** — with why, and the why is never "the description
-  says otherwise". A description can be what the run has found
-  wrong. Declined means: not general, or not worth the change. The
-  why goes in the note and nowhere else; nothing in our tree moves.
+  says otherwise" (`docs/master.md` §3 owns that rule; it is about
+  every description here, not only this one). A description can be
+  what the run has found wrong. Declined means: not general, or not
+  worth the change. The why goes in the note and nowhere else;
+  nothing in our tree moves.
 - **Held** — with the trigger that would settle it, and a line in
   our own backlog so it is not lost between readings.
 
@@ -361,8 +363,8 @@ never ships, and four artifacts are what a repo actually holds. It
 replaces `convention-lifecycle`, which was a convention, with one —
 and it is the first whose artifacts split between the two
 arrangements in `master.md` §4, each side holding only what it does.
-This manual is at `docs/conventions/exchange/`. *Intended: the
-artifacts' homes are named below and are not yet true.*
+This manual is at `docs/conventions/exchange/`, and the four
+artifacts are where the list below says.
 
 - **`delivered-copies.md` — a rule, the run's, shipped** in the
   container at `.claude/rules/`. §4 and §5. A rule rather than a
