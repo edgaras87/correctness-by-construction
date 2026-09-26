@@ -29,7 +29,6 @@ has to be the origin (HANDBOOK ADR-0040).
 | commit-messages | [commit-messages/](commit-messages/) | a skill |
 | repo-hygiene | [repo-hygiene/](repo-hygiene/) | the hygiene base; stack overlays stay here |
 | commit-plan | [commit-plan/](commit-plan/) | a skill |
-| convention-lifecycle | [convention-lifecycle/](convention-lifecycle/) | a skill: the kit's protocol, receiver side |
 | exchange | [exchange/](exchange/) | a rule shipped to the run; two skills and a shape held here |
 | agent-arrangement | [agent-arrangement/](agent-arrangement/) | the entry-file and decisions-log stubs |
 | visual-comparison | [visual-comparison/](visual-comparison/) | a skill: how a structure is shown, settled by rendering |
@@ -82,7 +81,7 @@ it unchanged.
 with rejected options, a `temp/` draft for a measurement or a
 comparison, and the commits themselves. The remaining four
 conventions — `project-recording`, `repo-hygiene`,
-`agent-arrangement`, `convention-lifecycle` and the records they
+`agent-arrangement`, `exchange` and the records they
 govern — are not stages of this and fire on their
 own moments.
 
@@ -144,9 +143,8 @@ the ADRs, and states no rule the artifact does not (HANDBOOK ADR-0039).
 5. A changelog entry prefixed with the convention name; a PLAN
    step, numbered by creation.
 6. For a skill, this repo's own copy under `.claude/skills/` and a
-   registry entry, landed as a first injection by
-   convention-lifecycle §3, in its own agent-scoped commit
-   (HANDBOOK ADR-0041).
+   registry entry, in its own agent-scoped commit (HANDBOOK
+   ADR-0041).
 
 ## Where these files came from
 

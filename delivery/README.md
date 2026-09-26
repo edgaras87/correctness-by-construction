@@ -165,8 +165,8 @@ rows:
 | `CLAUDE.md` is absent from the root; the kit ships it at `.claude/CLAUDE.md` | a run builds an app and the root is the app's. This was the seed's step-4 `sed` until the kit came here; now it is the artifact |
 | `.claude/CLAUDE.md` carries a body composed here, not the kit's stub | two runs derived their entry file unaided and neither produced the pre-framing guard or the pin stance (ADR-0019). A whole file, copied never merged (ADR-0015) |
 | `README.md` carries a body composed here, not the kit's stub | the same reading and the same delivery rule |
-| `.claude/decisions.md`'s birth entry, and the comment above it, name both upstreams | the delivery has two parents and the record says so |
-| `convention-lifecycle` §2 says "the deliverer" where it said "the handbook", in two places | never-oversold found the file pointing at a repo it no longer uses, on the first delivery after the take (2026-09-18). Its own manual already said "the deliverer's commit hash" — the skill and its manual had disagreed upstream, and this closes it |
+| `.claude/decisions.md`'s birth entry carries one pin and a read-through, and names the handbook as provenance only | one pin, ours, since the fork (ADR-0025); the read-through is the exchange's second number (ADR-0036). It carried two pins until 2026-09-26 |
+| `convention-lifecycle` is absent; the kit shipped it | replaced by the exchange (ADR-0036). The run's half is `.claude/rules/delivered-copies.md`; the receiver's protocol is no longer held by a repo that is not a receiver |
 | One convention the handbook's kit never had: `visual-comparison` | written here, and a convention of this container rather than the handbook's (CBC ADR-0031). A run is born with seven, and not the same seven; its decisions are cited `CBC ADR-nnnn` because they are ours to explain. Two siblings shipped beside it and were discarded unused, 2026-09-24 |
 
 Inside the two composed entry files, some text came from the kit's

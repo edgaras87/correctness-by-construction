@@ -64,7 +64,7 @@ is now what is wanted, and keeping a shape out of sight only makes
 the next output re-derive it badly.
 
 **Held at the deliverer — the repository this project takes its
-container from** (`convention-lifecycle` §2). Unexposed shapes are
+container from** (`delivered-copies.md`, rule 1). Unexposed shapes are
 held in one place and projects do not read each other's directly.
 Having one in the tree before this project has made its own first
 output of that kind spends the only independence there is — so it
@@ -193,5 +193,5 @@ between them, and what a delivery of one does when it arrives.
 
 - CBC ADR-0035 — written in never-oversold from its own lived work
   and taken here reshaped: the holder is named as the deliverer,
-  which `convention-lifecycle` already defines, and the role-name it
+  which the run's `delivered-copies.md` names, and the role-name it
   arrived under is not adopted

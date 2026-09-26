@@ -135,8 +135,9 @@ again or leaves — the same move the decisions log makes for its entries
 ## 3. `.claude/`
 
 **`skills/`** — where a convention delivered as a skill lands, one
-directory per convention, the copy verbatim (convention-lifecycle §3
-owns the update; this convention owns the place). A project may add
+directory per convention, the copy verbatim (the exchange owns the
+update, [`../exchange/`](../exchange/); this convention owns the
+place). A project may add
 a skill of its own, for a moment-bound local rule the entry file
 must not hold (§2) — permitted, and not yet
 defined: what such a skill is, whether it registers,
@@ -175,7 +176,8 @@ append-only, dated, three lines per entry — what changed, why, what
 was rejected. The standing rule rides as a comment in the artifact it
 governs; the log keeps the why and the rejected options; neither
 repeats the other. It doubles as the project's convention registry
-(convention-lifecycle §2). Its rules ride in its own stub.
+(the exchange, [`../exchange/`](../exchange/) §2). Its rules ride
+in its own stub.
 
 **`settings.json`** — the tool's settings that are the project's:
 tracked, and the one place the arrangement holds a gate as repo state.
@@ -256,4 +258,4 @@ text at an update, through the kit's protocol.
   [`../project-recording/`](../project-recording/), its §13.
 - The `agent` scope: [`../commit-messages/`](../commit-messages/).
 - How a project receives and updates its arrangement:
-  [`../convention-lifecycle/`](../convention-lifecycle/).
+  [`../exchange/`](../exchange/).

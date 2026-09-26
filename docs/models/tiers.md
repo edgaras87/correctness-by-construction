@@ -85,8 +85,8 @@ seeded it. At a repo's birth the two meet: the kit births the
 container, the concept's birth materials birth the shape, both
 pinned, both input to Framing rather than agreement
 (HANDBOOK ADR-0024). Nothing downstream tracks upstream by reference;
-how copies are made and tracked is the convention-lifecycle's, not
-this model's.
+how copies are made and tracked is the exchange's
+(`docs/conventions/exchange/`), not this model's.
 
 **Told is not delivery.** A tier above may hand a run something as
 session input — a warning the run's own derivation missed, given
@@ -95,7 +95,7 @@ That is the told channel, unpinned by design (agent model §4), and
 the run's records say it was told; it is not a third form of
 delivery, and a run that leans on it has the diagnostic told
 carries. Nor is a copy the run has edited between two pins
-(convention-lifecycle §3): delivery comes down, and an edit goes up.
+(the exchange, §5): delivery comes down, and an edit goes up.
 
 **Up is harvest, through records.** Learning moves only through
 records, and the run sends nothing: the tier above reads the run's
@@ -112,9 +112,9 @@ handoff. Nothing edits an upstream repo as a side effect of downstream
 work, in either direction.
 
 **Tiers talk in documents, and the pin follows the talk.** No tier's
-agent reads another tier's repo: a run reads only its own, and a
-concept repo opens a handbook checkout only for the lifecycle update
-(convention-lifecycle §3). So every exchange is a document, and a
+agent reads a tier above it: a run reads only its own, and the
+deliverer reads a run's repo read-only to harvest (the exchange,
+§6). So every delivery is a document, and a
 document absorbed without its pin moving leaves the registry lying —
 the update procedure's own warning, lived once.
 
