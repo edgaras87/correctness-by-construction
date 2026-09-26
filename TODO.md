@@ -1000,7 +1000,22 @@
       PLAN on the branch now running, before this question is
       asked. Cheap to move if the answer changes PLAN's role, but
       it does land first and should not be mistaken later for a
-      settled view of what PLAN is for.
+      settled view of what PLAN is for. *(Superseded 2026-09-24: W3
+      was held back for exactly this reason and has not landed.)*
+      **Four — one record convention serves two designs**
+      (2026-09-26, the reviewer). The container ships `PLAN`,
+      `TODO`, the devlog, ADRs and `CHANGELOG` as stubs; we hold the
+      same files. A run builds toward a release; this repo stores,
+      maintains and delivers. Same files, two jobs, and the
+      difference has never been designed — `master.md` §4 states it
+      for the arrangement, and the records are part of the
+      arrangement. The question is not only whether these records
+      fit us but whether `project-recording` must tell the two uses
+      apart rather than let one shape serve both. Evidence already
+      in the tree: `CHANGELOG` repurposed on day two because its
+      stub assumed an application; Step 7 written after the fact;
+      `TODO` carrying finished harvests at ~1,800 lines. Where
+      `working-a-reading.md` finally lands waits on this.
 
 - [ ] `docs/models/` may no longer match reality (2026-09-23, the
       user's reading; deliberately not this session's work). It
