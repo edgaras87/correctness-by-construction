@@ -65,15 +65,55 @@ records commit by afternoon. Everything the last two days drafted in
   is written down, and the shipped entry file no longer forbids what
   the shipped rule permits — and two stand.
 
-Resume: step 12 closes the plan. After it, the second plan — the
-mirrored layout (two `git mv` per skill) and the derivation field,
-which is what makes `exchange-deliver`'s overlay run as written and
-what `pure-seed.md`'s rewrite waits for. `working-a-reading.md`
-stays in `temp/` until the next reading. Then the delivery to run 3:
-its note tells it to drop `skills-changed-in-place.md` for
-`delivered-copies.md`, derived from it, and to delete three
-conventions and a rule by name. `main` is 103 commits behind; the
-paused reading branch sits at `cf90073`.
+### Later — the plan closed, the paused reading overtaken, main moved
+
+Six commits after the set, and two branch operations.
+
+- **The plan closed** with its retrospective in the body: twelve
+  planned, twelve landed, one revision; the divergence at step 5,
+  the sweep that found eleven where two were named, what held.
+- **The reviewer asked what to do with the paused run-3 reading.**
+  Its run-side facts are still true — run 3 has not moved — but
+  every open item named something on our side, and sixty commits
+  had dissolved or moved all of them. The manual's §6 did not know
+  this case: a reading closes when its work does, and this one's
+  work never would. So the manual gained a second way, **overtaken**,
+  and the derived list was walked — the maintenance rule filed that
+  morning, run by hand for the first time since being written.
+- **The walk caught me doing it wrong.** The shape restated the
+  reading's lifecycle, so I staged the same clause into it. The
+  reviewer asked what lifecycle has to do with form. Nothing: a
+  shape says what an output looks like while it exists, and when it
+  opens and closes is the owning convention's. **Removed** the
+  shape's lifecycle sentences rather than adding to them. A derived
+  artifact *follows* its description; it does not *repeat* it — a
+  copy that repeats is what drifts. The maintenance rule must say
+  that when it is written.
+- **Shapes have no source of truth** — the reviewer's, and the same
+  finding one level up. What ships is a rule; behind it an ADR and a
+  model, no manual (`master.md` errata #1). The rule is written from
+  the run's seat, with a section about gates this repo does not
+  have. And `docs/models/shapes.md` may be the manual already, under
+  the word we had. Filed: a `shapes` convention on the exchange's
+  pattern, after the layout plan and before the delivery.
+- **The reading closed as the shape asks** — the pass over its six
+  open items written into the file, one commit; then the file
+  deleted with the two served notes, the next. `working-a-reading.md`
+  gained the lesson as its second firing: a reading is a snapshot of
+  two trees and rots from whichever side moves.
+- **`main` fast-forwarded** to `0b9d056`, 110 commits, on the word.
+  `reading-run-3-2026-09-23` deleted; its commits were already in
+  the history. Not pushed.
+
+Resume: on `arrangement-review-2026-09-24`, equal to `main`. Next, on
+the word: cut a branch for the second plan — the mirrored layout
+(two `git mv` per skill) and the derivation field, which make
+`exchange-deliver`'s overlay run as written and unblock the seed's
+rewrite. Then the shapes convention from `docs/models/shapes.md`.
+Then read run 3 fresh from `9869798` under `exchange-read`, and
+deliver: the note drops `skills-changed-in-place.md` for
+`delivered-copies.md` and deletes three conventions by name.
+`working-a-reading.md` stays in `temp/` until that reading.
 
 ## 2026-09-25, later  (master.md placed, and the exchange drafted from five facts)
 
