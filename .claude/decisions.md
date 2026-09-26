@@ -832,3 +832,27 @@
   `temp/`, kept as renames so history follows the files. `temp/` is
   scratch, not a record, so the split rule's reason is untouched.
   Named in the plan.
+
+- 2026-09-26 `convention-lifecycle` leaves this arrangement. The copy
+  under `.claude/skills/` is deleted; the master and the manual left
+  the delivery in the previous commit. CBC ADR-0036, Proposed.
+  Why: it was the receiver's protocol — how a project takes a newer
+  copy without losing its own edits — held by a repo that stopped
+  being a receiver at the fork and never once ran it. Our registry
+  pinned us to ourselves. Walked all six of its steps: none could
+  fire here. Its one rule that applied to us, that this log lists
+  the conventions held, is already a row in the entry file's
+  records table. Run 3 used it heavily — eight takes, three receipt
+  branches, four in-place edits — and that use continues under the
+  rule that replaces it on their side, `delivered-copies.md`, built
+  from their own text.
+  What replaces it here: nothing of the same kind. Our side of the
+  exchange is `exchange-read` and `exchange-deliver`, landed two
+  commits ago, which do what a deliverer does rather than what a
+  receiver does.
+  Rejected: keeping the copy as a reference to what runs hold. The
+  shipped file is the reference, at `delivery/container/`, and a
+  second copy that nothing here can run is the drift we measured on
+  09-24 — thirteen lines apart on one skill, six days on another.
+  The registry entries from 09-03 through 09-20 that record this
+  convention's injections and updates stand as history.
