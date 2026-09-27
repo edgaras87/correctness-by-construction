@@ -122,8 +122,10 @@ opening it at the moment of use.
   and then name the run.
 - A worked example in a code block is exempt from all of this.
 
-The manual is free prose. It explains, points at the artifact and
-the ADRs, and states no rule the artifact does not (HANDBOOK ADR-0039).
+The manual is free prose: the convention stated, from which the
+artifact is made usable (`docs/master.md` §1). It explains and points
+at the ADRs; the artifact says what a project does, and its
+`foundation` line names the manual it derives from.
 
 ## The container's rules
 
@@ -174,12 +176,12 @@ line in the same commit. A rename that does not land here leaves
 the next reader a diff saying every file is new — which is what
 `delivery/README.md` records happening to the container.
 
-**Keep a manual true to the rule it explains.** A manual's only job
-is to say why its rule is shaped as it is. If a rule in
-`delivery/container/` changes and its manual here does not, the
-manual lies — the kind of lie nothing catches, because a manual is
-read rarely and by whoever is least sure. So the manual moves with
-its rule, in the same commit.
+**A manual and its artifact move in the same commit.** The artifact
+derives from the manual; when they disagree, neither is right by
+default — the disagreement is decided, practice being the evidence
+(`docs/master.md` §3), and whichever changes, the other follows at
+once. A manual left behind lies in the way nothing catches, because
+it is read rarely and by whoever is least sure.
 
 **What did not come across.** Sixteen of the handbook's entries
 here are symlinks into its kit, not files: each convention's

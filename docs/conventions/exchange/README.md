@@ -3,6 +3,11 @@
      rule, not this. Written from what cannot change, with what it
      replaced at the end.
 
+     The four artifacts derive from this. If one and this disagree,
+     neither is right by default: the disagreement is decided,
+     practice being the evidence (docs/master.md §3), and whichever
+     changes, the other follows in the same commit.
+
      Same rule as master.md: only what is checkable, and anything
      merely intended marked as intended. -->
 

@@ -25,23 +25,10 @@ directories of three, decided by reading their names, and it gets
 no ground or bootstrap skill at all.
 
 **A shape belongs to the group of the thing it shapes** (ADR-0035),
-by the same rule and for the same reason. A shape says what a kind of
-a project's output looks like — its form, never its content — so the
-one governing a slice record is `method/`, beside `cbc-slice`; one
-governing a Spring harness file is `spring-postgres/`; one governing
-a devlog entry or a commit plan is `container/`. A run on another
-stack then receives the first and never the second, and that falls
-out of the groups rather than being enforced on top of them.
-
-Only an **exposed** shape travels that way, as a pinned copy into the
-run's `.claude/rules/`. An **unexposed** one — held where nothing
-loads it and opened at a gate — is in no birth copy at all, so it
-cannot sit inside a group without breaking "copied whole"; it is held
-apart and names its group, and the name is what decides who may be
-staged it. This repo holds none today and has made no place for them:
-the rule is here, and the directory arrives with its first occupant.
-How shapes live once a project has them is the container's rule,
-`.claude/rules/shapes-lifecycle.md`.
+by the same rule and for the same reason, and only an exposed one
+travels, as a pinned copy into the run's `.claude/rules/`. The rest —
+unexposed stock held apart, what a gate does with a staged one — is
+the shapes convention's, `docs/conventions/shapes/` §5 (ADR-0037).
 
 Beside the groups and never inside one sit the things *about*
 delivery: `fills/`, `installs/` and this file.

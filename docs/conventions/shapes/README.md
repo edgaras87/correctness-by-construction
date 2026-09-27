@@ -1,9 +1,11 @@
 <!-- The shapes convention's manual: what a shape is, how one lives,
      and why the rule is the shape it is. Never shipped; a run holds
      the rule, `delivery/container/.claude/rules/shapes-lifecycle.md`,
-     which binds. This describes and demands nothing. If this and
-     the rule disagree, the rule is what binds and this is wrong —
-     say so here and fix it. Written here first (CBC ADR-0035) at
+     which binds. This describes and demands nothing; the rule
+     derives from it. If the two disagree, neither is right by
+     default: the disagreement is decided, practice being the
+     evidence (docs/master.md §3), and whichever changes, the other
+     follows in the same commit. Written here first (CBC ADR-0035) at
      the end of the set that made shapes real, from what the
      implementation turned out to be, and made the manual under
      CBC ADR-0037 rather than rewritten. Same rule as master.md:
@@ -161,6 +163,27 @@ project's own shape**, whether it came back unchanged, changed by
 what the project found, or merged with what was already there. The
 staging leaves; the shape stays, with dated lines saying what
 arrived, what was taken and what was refused.
+
+**Why kept rather than deleted.** Deleting would only hide what has
+already been read. Keeping it makes the next gate cheap and the
+reconciliation possible: the deliverer reads the project's version
+and its dated lines against what it sent, and decides whether to
+take the change or leave its own standing.
+
+**Staleness, honestly.** A kept copy is a snapshot, current only as
+of the delivery it came from, and nothing in a project can tell
+when the deliverer's has moved on. A fresh delivery is the only
+refresh, and asking for one is a person's act on this side, not the
+project's.
+
+**A shape is written in two separable layers, and only one of them
+travels well.** The skeleton and what it encodes are general by
+construction: they say *a worked example with real numbers from this
+system*, not which numbers. The illustrations filling the
+placeholders are the project's, and are marked as such. A reader
+takes the first and leaves the second, and nothing has to be
+rewritten at the hand-off to make that possible. This is why the
+rule asks a project to mark its illustrations apart.
 
 *Intended, and a named gap: a staged shape is therefore not a
 pinned copy — it becomes the project's own after the gate reads it —
