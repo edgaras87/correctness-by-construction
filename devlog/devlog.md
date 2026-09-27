@@ -58,13 +58,32 @@ branch fast-forwarded and was deleted.
   container's seventeen files is the artifact of a manual. *The
   words* gains description, manual and foundation.
 
-Resume: close the plan. Then the one-line gate item on the
-playbook's steps (TODO, "Now, and narrow"), one commit. Then the
-handbook filtered out of live text, its own set. Then read run 3
-fresh under `exchange-read` and deliver: the note carries the
-shorter rule, the field, and the sentence its slice-record shape
-argues against. `working-a-reading.md` stays in `temp/` until that
-reading.
+### Later — the plan closed, one more item filed, main moved
+
+- **The plan closed** (`86fb4d0`): seven planned, eight landed, the
+  one revision at step 4 when the rule was cut to instruction.
+- **A convention for descriptions** filed on its own commit
+  (`4eab901`), on the reviewer's question whether the seats, the
+  "made usable as" section and the `foundation` line are one thing:
+  they are — a manual, a shape of a manual born from the pair that
+  recurred, and the field. It names the three earlier items as its
+  parts; trigger the seats pass, or the maintenance item's own.
+- **`main` fast-forwarded** to `4eab901`, nine commits;
+  `shapes-convention-2026-09-26` deleted. Not pushed. Session ended
+  here on the reviewer's word, the next work in a new session.
+
+Resume: on `main`, clean. Next, in order, each on a fresh branch:
+the one-line gate item on the playbook's steps (TODO, "Now, and
+narrow"), one commit — bump the playbook's version and the seed's
+reference to it. Then the handbook filtered out of live text, its
+own set (TODO, ~150 mentions, three kinds of work; the two index
+lines on the manual relation are already done). Then read run 3
+fresh from `9869798` under `exchange-read` and deliver: the note
+carries the shorter shapes rule, the `foundation` field on nine
+files, `delivered-copies.md` for `skills-changed-in-place.md`, the
+three conventions deleted by name, and the sentence its
+slice-record shape argues against. `working-a-reading.md` stays in
+`temp/` until that reading.
 
 ## 2026-09-26, evening  (the mirrored layout and the `foundation` field — one set, seven commits)
 
