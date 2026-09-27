@@ -1,8 +1,10 @@
-# 0038. The handbook's decisions become ours, and its coordinates live here
+# 0038. The handbook is history: its decisions become ours, and no re-sync is kept
 
 Date: 2026-09-27
 Status: Proposed (opened under the commit plan for the handbook
-filter; flips at the set's records commit)
+filter; revised once at step 5's boundary, when the reviewer
+rejected the re-sync premise the first draft kept; flips at the
+set's records commit)
 
 ## Context
 
@@ -56,6 +58,22 @@ The delivery to run 3 is next. Its note carries the shorter shapes
 rule and the `foundation` field on nine files, and would carry the
 seven citations once more.
 
+**The premise under all of it, read at step 5's boundary.** The
+first draft of this record kept every coordinate *for a re-sync*:
+it moved the protection ADR-0025 built into one place and called
+that the fix. The reviewer's reading, when the delta table's
+purpose came up: the handbook was built ahead of its evidence — a
+repo responsible for the manuals and the container of every other
+repo, designed before a second repo existed. That is the
+prediction without proof this repo refuses everywhere else. The
+rule that replaces it is the one this repo already applies to
+conventions and playbooks: derive nothing general from one
+instance. A second repo that needs what this one holds copies
+parts of it. A third does the same. Only after three is anything
+handbook-like worth considering, from what the three lived. Under
+that rule a re-sync has no reader, and the coordinates are a fact
+of history, not a protection.
+
 ## Options considered
 
 1. **Leave it.** The tag is honest: those decisions were the
@@ -77,8 +95,14 @@ seven citations once more.
    Where a manual already gives the reason the citation is
    redundant; where it does not, the reason is what belongs there.
 
-4. **One ADR adopting the six, holding every coordinate, and the
-   text rewritten as ours.** Chosen.
+4. **One ADR adopting the six, holding every coordinate for a
+   re-sync, and the text rewritten as ours.** The first draft.
+   Rejected at step 5's boundary: it kept the re-sync as a future
+   to protect, in one file instead of four, and the future is not
+   planned.
+
+5. **One ADR adopting the six, recording where the bytes came from
+   as history, and ending the re-sync.** Chosen.
 
 ## Decision
 
@@ -101,32 +125,31 @@ seven citations once more.
    against the claim as stated above and not against the handbook's
    text.
 
-2. **The provenance coordinates live here and nowhere else in live
-   text.** The bytes came from the handbook (`engineering-handbook`)
-   at `ba7eaa4`, and every path we took is identical through their
-   `8adb46f`, the last state this repo was aligned with. They landed
-   here in three sets: the container at `dc3b7db` and the manuals at
-   `9a1637d`, both 2026-09-18; the models at `df9d5ed`, 2026-09-17,
-   the last re-copy — the anchor is the last re-copy, not the first
-   vendoring, because earlier pins bring their own churn. The
-   default playbook, `playbooks/default.md`, came separately from
-   their `starter/playbooks/default.md` v2 at `c670fe5`. Paths at
-   landing: `delivery/container/` (then `starter/kit/`, renamed by
-   ADR-0029), `docs/conventions/`, `docs/models/`. A re-sync diffs
-   from the landing commit at the path then current; if a path is
-   renamed after this, git's rename detection is what follows it,
-   and no live file keeps a command current.
+2. **The handbook is history, and where the bytes came from is a
+   fact recorded here once.** The container, the conventions'
+   manuals, the two models and the default playbook came from the
+   handbook (`engineering-handbook`): the first four at `ba7eaa4`,
+   identical through their `8adb46f`, landing here at `dc3b7db`,
+   `9a1637d` and `df9d5ed`; the playbook from their
+   `starter/playbooks/default.md` v2 at `c670fe5`. That is the whole
+   of it. No re-sync is planned, protected or prepared for: no live
+   file repeats a hash, keeps a diff command current, lists what
+   differs from what was taken, or names the handbook as a tier
+   above this repo.
 
-   This amends ADR-0025 decision 2 and ADR-0026 decision 2 in one
-   respect: where the coordinates are written. What they are, and
-   that they are no obligation, stands.
+   This supersedes ADR-0025 decisions 2, 4 and 7 and ADR-0026
+   decisions 2 and 5. In their place, the reviewer's rule: a second
+   repo that needs what this one holds copies parts of it, and so
+   does a third; anything handbook-like is considered only after
+   three repos have lived, from what they lived. ADR-0025's
+   decisions 1, 3, 5, 6 and 8 and ADR-0026's 1, 3 and 4 stand.
 
 3. **`HANDBOOK` is retired as a tag in this repo's text.** The
    conventions index's citation rule says shipped files cite
    `CBC ADR-nnnn`; the artifact rule's footer form says the same.
    ADR-0020 stands whole — the reading repo's own decisions are
    bare, another repo's carry its tag, and a run cites us as `CBC`.
-   Nothing here decides for a second repo what tag it declares.
+   Nothing here decides what tag a second repo declares.
 
 4. **The manuals say their why as this repo's text.** Where a manual
    cites a handbook decision it already explains, the citation goes;
@@ -137,31 +160,45 @@ seven citations once more.
    map from their numbers to what we hold is the table above and
    this record, for whoever has a handbook checkout.
 
-5. **The models' bodies stay as taken.** ADR-0026 decision 4
-   governs and nothing lived here contradicts them. Their headers
-   say whose they are and point here for where they came from. The
-   mentions their bodies keep are attributions of evidence, and the
-   open question of whether `docs/models/` still matches reality is
-   held in TODO on its own trigger.
+5. **The tiers model says what is true; the agent model keeps its
+   evidence.** ADR-0026 decision 4 lets a model's body change when
+   something lived here contradicts it, and decision 2 above is
+   that contradiction for the tiers model's first tier: no repo
+   owns method above this one. Its shape shows the top row empty,
+   with the rule of three as what fills it, and its upward channels
+   name the tier above, which today is nobody. The agent model's
+   evidence is the handbook's own history and says so; that is
+   attribution, nothing contradicts it, and it stays. Its subject
+   sentence names the conventions a project was born with. Both
+   headers say whose the file is and point here for where it came
+   from. Whether `docs/models/` matches reality beyond this is the
+   open TODO item, on its own trigger.
 
 6. **What stays as history is not filtered.** The records — ADRs,
    the devlog, TODO, CHANGELOG, the registry, PLAN's closed gates —
-   and one dated note in `temp/README.md` recording an event.
+   and one dated note in `temp/README.md` recording an event. Three
+   TODO items waited on the handbook being opened again; two are
+   dropped, since it is not, and the third keeps its own trigger
+   without the handbook's name.
 
 ## Consequences
 
 Good: a run receives citations it can follow, and the next delivery
-carries none it cannot. The manuals explain rather than defer. The
-coordinates a re-sync needs are in one record that cannot drift,
-where ADR-0025 said the protection lived, instead of in four live
-files with a maintenance rule each. The trigger and the cost of a
-re-sync are unchanged — ADR-0025 decisions 6 and 7 — and the paths
-at landing are written so that the merge stays a one-time diff.
+carries none it cannot. The manuals explain rather than defer. Four
+live files stop carrying coordinates with a maintenance rule each,
+and the rename rule that made those coordinates an obligation goes
+with them. The tiers model stops describing a tier that governs
+nothing. And the question of what this repo's container becomes,
+which ADR-0025 left open between "close to the handbook's, so a
+re-sync stays cheap" and "what CbC runs need", is answered: the
+second, because the first had no reader.
 
 Bad, and accepted: the adopted claims are restatements. A reader
 who wants the options the handbook weighed for Conventional Commits
 or the detachability split needs its checkout, and this record only
-names the numbers. Rewriting five manuals in our voice edits text
-that was byte-identical to the fork point, which makes the re-sync
-diff larger by exactly the rewrite; ADR-0025 accepted that drift the
-day the files became ours.
+names the numbers. If a fourth repo ever wants a general form, it
+starts from what this repo holds then, and from what the second and
+third copied and changed, not from a fork point; the merge ADR-0025
+kept cheap is given up because nothing plans to make it. And the
+handbook's own improvements, which ADR-0025 decision 6 already
+said would stop arriving, now also stop being looked for.
