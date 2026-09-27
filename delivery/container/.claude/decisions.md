@@ -1,7 +1,7 @@
 # Agent decisions
 
-<!-- The working arrangement's decision log (handbook ADR-0020,
-     provisional). Append-only, newest last. One entry per
+<!-- The working arrangement's decision log. Append-only, newest
+     last. One entry per
      arrangement decision — a skill added or changed, a rule tuned,
      a workflow adopted. Three lines: what, why, what was rejected.
 
@@ -15,7 +15,7 @@
      that rule).
 
      At the project retrospective, read top to bottom: each entry
-     graduates to the handbook, stays local, or dies.
+     graduates to the deliverer, stays local, or dies.
 
      The two placeholders in the birth entry below — the date and
      the "@" hash — are replaced at copy time by the deliverer's
@@ -29,8 +29,7 @@
 
 - <YYYY-MM-DD> Born from the correctness-by-construction delivery,
   pin <bundle-commit>; read-through none — nothing read before the
-  first note. The container began as the engineering-handbook
-  starter kit, which is provenance and not a pin.
+  first note.
   Conventions: project-recording, commit-messages, repo-hygiene,
   commit-plan, exchange, agent-arrangement, visual-comparison,
   shapes.

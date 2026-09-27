@@ -202,7 +202,7 @@ sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
     "$bundle_dir"/delivery/fills/cbc-run-pure-playbook.md; echo) \
     -e '/<!-- STEPS-BEGIN/,/<!-- STEPS-END/{/STEPS-BEGIN/b;/STEPS-END/b;d}' \
     PLAN.md
-sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run-pure v7 at $bundle_pin|" \
+sed -i "s|<playbook> v<N> at <concept commit>|cbc-run-pure v7 at $bundle_pin|" \
     PLAN.md
 git add PLAN.md
 git commit -m "chore: seed — steps into PLAN, cbc-run-pure v7 @ $bundle_pin"

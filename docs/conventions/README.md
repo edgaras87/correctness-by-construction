@@ -117,7 +117,7 @@ opening it at the moment of use.
   or the ADR's.
 - Cite no decision mid-sentence. A skill lists the decisions it
   rests on once, in a footer headed *Decisions*, each as
-  `HANDBOOK ADR-nnnn`. A stub cites nothing.
+  `CBC ADR-nnnn`. A stub cites nothing.
 - Say what a rule is not only when a consumer lived the misreading,
   and then name the run.
 - A worked example in a code block is exempt from all of this.
@@ -133,10 +133,11 @@ at the ADRs; the artifact says what a project does, and its
   above, the shipped-conventions table in `delivery/README.md`, and
   the birth entry in the container's decisions-log stub, in the
   same commit.
-- A citation in any shipped file names the repo that decided it —
-  `HANDBOOK ADR-nnnn` for a decision inherited from the handbook,
-  `CBC ADR-nnnn` for one of ours — since a bare number names the
-  reading repo's own decision.
+- A citation in any shipped file is `CBC ADR-nnnn`, since a bare
+  number names the reading repo's own decision. A decision this
+  repo inherited is adopted as ours before a shipped file cites it
+  (CBC ADR-0038); a run holds no other repo to resolve a tag
+  against.
 - Only `delivery/container/` is copied into a run. Everything else
   under `delivery/` is about the delivery (CBC ADR-0029).
 

@@ -140,9 +140,9 @@ at every commit, not only inside a change set.
 
 ## Decisions
 
-- HANDBOOK ADR-0010 — a separate convention; the plan is a scaffold,
+- CBC ADR-0038, 1b — a separate convention; the plan is a scaffold,
   not a record
-- HANDBOOK ADR-0025 — a set that closes a gate item names the commit
-- HANDBOOK ADR-0027 — order follows where the decision lives;
+- CBC ADR-0038, 1d — a set that closes a gate item names the commit
+- CBC ADR-0038, 1e — order follows where the decision lives;
   provisional tails; ADRs open Proposed
-- HANDBOOK ADR-0035 — the stop at every boundary is commit-messages'
+- CBC ADR-0038, 1f — the stop at every boundary is commit-messages'

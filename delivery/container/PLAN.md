@@ -3,12 +3,12 @@
 <!-- The stub ships the pure shape: the steps below are placeholders
      showing the form — a goal, a gate of verifiable facts, the records
      expected. At birth the install manual replaces the region between
-     the STEPS markers with a playbook's full sequence — the handbook's
-     or a concept's; the playbook itself stays where it came from. Born
+     the STEPS markers with a playbook's full sequence — a concept's;
+     the playbook itself stays where it came from. Born
      without one, fill the placeholders in place. Either way the two
      STEPS markers stay: they are what makes the swap re-runnable. -->
 
-<!-- Steps from: <playbook> v<N> at <handbook or concept commit>,
+<!-- Steps from: <playbook> v<N> at <concept commit>,
      copied at birth. Filled in place at birth; this comment stays —
      the retrospective folds lessons back to what it names. -->
 
