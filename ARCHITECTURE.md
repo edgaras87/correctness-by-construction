@@ -14,9 +14,8 @@ correctness by construction, its rationale, open questions, and the
 log of what changed it — and the **executions** derived from it
 (agent skills, checklists, templates), each pinned to the concept
 version it derives from. It also holds the **container** a run is
-born into — this repo's own, taken from the handbook's starter kit
-at a pin and owned here since (ADR-0024, ADR-0025) — so a run has
-one upstream instead of two. Delivery flows down as pinned copies
+born into — this repo's own (ADR-0024, ADR-0025, ADR-0038) — so a
+run has one upstream and one pin. Delivery flows down as pinned copies
 into run repos; learning flows back up as harvested concept changes,
 after which executions are re-derived.
 
@@ -28,8 +27,6 @@ stack takes two of the three, decided by reading their names.
 
 ```mermaid
 flowchart TB
-    handbook["handbook<br/><i>origin only — the container, its manuals<br/>and the models were taken at ba7eaa4;<br/>nothing flows now</i>"]
-
     subgraph repo["this repo"]
         direction TB
         mental["mental layer<br/>(the statement)"]
@@ -42,9 +39,6 @@ flowchart TB
 
     repo -- "copy: one delivery, one pin" --> runs
     runs -- "harvest: a run's surprises" --> repo
-    handbook -.- repo
-
-    style handbook stroke-dasharray: 4 4
 ```
 
 ## Components
@@ -113,15 +107,10 @@ ADR-0029.
 ### Container (`delivery/container/`, `docs/conventions/`)
 
 Responsibility: what a run is born into — records, conventions,
-hygiene, entry files — and this repo's to shape (ADR-0025). It
-began as the handbook's starter kit, taken at `ba7eaa4` and
-identical through their `8adb46f`; those coordinates stay written
-down in `delivery/README.md` and `docs/conventions/README.md`, and
-nothing
-tracks that repo. Fourteen of sixteen files are still as they
-arrived; what differs is listed beside the set as a reading aid
-for a re-sync, not a gate — and two files were added that the
-kit never had: one convention (ADR-0031) and the shapes rule,
+hygiene, entry files — and this repo's to shape (ADR-0025). Where
+it came from is ADR-0038's record, and nothing tracks that repo.
+Two files were added that it did not begin with: one convention
+(ADR-0031) and the shapes rule,
 the container's first `.claude/rules/` artifact (ADR-0035, its
 convention ADR-0037). Three more conventions were added and
 discarded, 2026-09-24 — two unused, and `artifact-kinds` after five
@@ -134,10 +123,9 @@ record stubs, the entry files and the hygiene files are the run's
 own from birth and never travel twice. Eight conventions, three
 skills and two rules — the other three reach a run through the
 stubs and templates they ship as.
-Why shaped this way: ADR-0025 (ours, with the fork point recorded),
-ADR-0024 (the take that brought it here), ADR-0031 (three
-conventions of our own, where every earlier one came from the
-handbook).
+Why shaped this way: ADR-0025 (ours), ADR-0024 (the take that
+brought it here), ADR-0038 (where it came from is history),
+ADR-0031 (the first convention written here).
 
 ## Invariants
 
@@ -156,14 +144,6 @@ handbook).
 - An execution never lands without stating which concept version it
   derives from. Enforced in each skill's `foundation` field, which
   travels with every copy into a run repo (ADR-0004, ADR-0036).
-- Taken material never loses its provenance: where it came from,
-  and the last upstream state it was aligned with, stay written
-  down even though nothing tracks that repo any more. Enforced in
-  `delivery/README.md`'s container-half section, in
-  `docs/conventions/README.md`,
-  and in each model's own header — the coordinates a re-sync would
-  start from, and the only protection against it becoming
-  archaeology (ADR-0025, ADR-0026).
 - A manual never outlives the rule it explains: a rule changed in
   `delivery/container/` moves its manual in `docs/conventions/` in the
   same commit. Enforced in `docs/conventions/README.md` — a stale
@@ -192,7 +172,7 @@ handbook).
 | Path | What lives there |
 |---|---|
 | `concept/` | The mental layer: five chapters, `00-cbc.md` first (concept v1) |
-| `delivery/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `container/` is what a run is born into, this repo's since ADR-0025, taken from the handbook's kit at `ba7eaa4` with the delta kept as a reading aid — named `kit/` until ADR-0029, which renamed it for what it is rather than where it came from; `method/` and `spring-postgres/` are the two groups a run copies as pinned files — two skills and three, whole, a group taken entirely or not at all (ADR-0029), each laid out as the piece of the run's tree it lands as, so staging is copying the groups on top of one another and `concept/` → `docs/concept/` is the one mapping (ADR-0036); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and carries the delta list and the kit pin; `installs/` holds `pure-seed.md` for birth (ADR-0016); every update after it is the exchange, `docs/conventions/exchange/`, whose two skills sit in this repo's `.claude/skills/` (ADR-0036); a shape rides the group of the thing it shapes, an exposed one as a pinned copy and an unexposed one staged at a gate, held apart from the groups and naming its own (ADR-0035) |
+| `delivery/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `container/` is what a run is born into, this repo's (ADR-0025; where it came from is ADR-0038's record) — named `kit/` until ADR-0029, which renamed it for what it is; `method/` and `spring-postgres/` are the two groups a run copies as pinned files — two skills and three, whole, a group taken entirely or not at all (ADR-0029), each laid out as the piece of the run's tree it lands as, so staging is copying the groups on top of one another and `concept/` → `docs/concept/` is the one mapping (ADR-0036); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and says what the container holds; `installs/` holds `pure-seed.md` for birth (ADR-0016); every update after it is the exchange, `docs/conventions/exchange/`, whose two skills sit in this repo's `.claude/skills/` (ADR-0036); a shape rides the group of the thing it shapes, an exposed one as a pinned copy and an unexposed one staged at a gate, held apart from the groups and naming its own (ADR-0035) |
 | `docs/baselines/` | Held baselines — artifacts withheld from delivery, blind to newborns, compared against lived results: the frozen playbook (ADR-0012) and the Spring slice reference, handed to no run at any moment and opened once at a run's Release step (ADR-0033, superseding ADR-0021's hand-off). **Trial evidence, and not shapes** (ADR-0035): what is withheld here is withheld *in order to stay* undelivered, because a derivation that has seen it measures imitation — where a shape is withheld only until a gate, after which being in front of the next writer is the point. The two look alike and their blindness runs opposite ways; a shape does not live here, and nothing here ships under a shape's rule. Which of these files is which is not yet sorted — its own change set |
 | `docs/models/` | Two models, this repo's (ADR-0026), taken from the handbook at the kit's pin with the coordinates in their headers. Neither is delivered. The shapes model that sat beside them became the shapes convention's manual (ADR-0037) |
 | `docs/conventions/` | Eight convention manuals, this repo's — five taken from the handbook (ADR-0025) and three written here: `visual-comparison` (ADR-0031), `exchange` (ADR-0036), `shapes` (ADR-0037, the model reshaped); its own `README.md` is the index and carries both ends of the anchor, what did not come across, and the rule that a manual moves with its rule |

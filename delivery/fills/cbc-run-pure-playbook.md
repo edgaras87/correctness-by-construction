@@ -8,15 +8,10 @@
      / Release and their warnings from checkout-system's
      retro-folded playbook and its PLAN as lived; the Define step
      from safe-reservations log.md Entry 0001. Rebuilt as a full
-     sequence on the kit's default.md (ADR-0011); kit steps last
-     re-vendored from the handbook's starter/playbooks/default.md
-     v2 @ c670fe5 (verified 2026-09-11: at ab916a1 default.md
-     changed only in two comments the v4 strip had already
-     removed; Step N's three Known-already facts unchanged;
-     unchanged at ba7eaa4, verified 2026-09-17).
-     Harvest lands here — the one copy that exists
-     (ADR-0007); kit-owned steps (0, 1, N) change only by refresh
-     against a new kit pin.
+     sequence on playbooks/default.md (ADR-0011), this repo's; its
+     endpoint steps (0, 1, N) were that file's until v4 and v5
+     stripped them to the derive-at-opening form.
+     Harvest lands here — the one copy that exists (ADR-0007).
      Born 2026-09-05 as the pure-seed candidate variant
      (delivery/installs/pure-seed.md). v1 deltas against the
      parent: the assembly (CbC) Step 0 comment and the (CbC)
@@ -78,8 +73,8 @@
      so a run with no shape never met it; a fact supplied into a
      derived gate is the idiom Release already uses, and "none"
      is a complete answer, so the item holds with no shape in
-     existence. Release's line gains it after the kit's three
-     facts, which the kit-refresh rule still reaches alone. -->
+     existence. Release's line gains it after the default
+     playbook's three facts. -->
 
 # Playbook: CbC run — pure
 

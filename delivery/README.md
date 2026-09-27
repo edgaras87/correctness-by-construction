@@ -37,9 +37,9 @@ There are also three kinds of delivery, which is a different
 question — how a thing lands, not which group it is in (ADR-0017,
 widened by ADR-0024). **The container** is what a run is born
 into:
-`delivery/container/` copied whole into the new repo — the
-handbook's kit as we hold it at a pin, with the delta the section
-below lists. Inside it the parts
+`delivery/container/` copied whole into the new repo — this
+repo's, and the section below says what it holds. Inside it the
+parts
 divide again, and the division is what an update obeys — the seven
 convention skills and the rules file are pinned copies; the record
 stubs, the two entry files and the hygiene files are the run's own
@@ -72,7 +72,7 @@ ADR-0024, their bodies now shipped inside the container itself.
 
 | From here | Into the run repo |
 |---|---|
-| `delivery/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (`delivery/installs/pure-seed.md` step 4; the newborn holds no playbook copy, HANDBOOK ADR-0031's model) |
+| `delivery/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers (the markers stay), and the "Steps from:" line names it at the bundle pin (`delivery/installs/pure-seed.md` step 4; the newborn holds no playbook copy) |
 
 Everything copies at birth, including the phases that run much
 later: each practice skill's readiness gate refuses to start before
@@ -96,92 +96,48 @@ everything after birth is the exchange (ADR-0036,
 run's own `temp/` on the reviewer's word, taken whole under the
 run's `delivered-copies.md`, the pin and the read-through recorded
 by the run. One birth from
-one place: ADR-0009's two-copy composition is retired by ADR-0024,
-the container now being ours to ship rather than the handbook's to
-supply.
+one place: ADR-0009's two-copy composition is retired by ADR-0024;
+the container ships from here.
 
-## The container half — ours, and where it came from
+## The container half — ours
 
 `delivery/container/` is this repo's container: the records, the
 conventions, the hygiene files and the entry files a run is born
 into. It is ours to change when this repo needs it changed
-(ADR-0025). It began as a copy of the handbook's starter kit.
+(ADR-0025). Where it came from is a fact recorded once, in
+ADR-0038, and nothing here tracks that repo or prepares to.
 
-**The directory no longer keeps their name**, as of ADR-0029: they
-call it `starter/kit/`, we call it `delivery/container/`, because
-"kit" named where the files came from rather than what they are.
-The names *inside* it are unchanged, which is where a comparison
-actually happens — a re-sync diffs sixteen files, not two
-directory names.
+**The directory is named for what it is**, as of ADR-0029:
+`delivery/container/`, where "kit" had named where the files came
+from.
 
-**Provenance, recorded once.** The bytes came from the handbook at
-`ba7eaa4`. Every path we took is identical through their `8adb46f`
-— twelve commits later, none of them touching anything we hold —
-so `8adb46f` is the last state this repo was aligned with, and
-divergence starts after it. These are coordinates for a re-sync
-that may never happen, not an obligation: nothing here tracks that
-repo, and no update from it is owed a reading.
+**What the container holds that its tree does not show.**
 
-Kit pin: `ba7eaa4` — this line is the hash's one home. Nothing
-reads it: the seed fills one pin, ours, and this is provenance
-(ADR-0025).
-
-**Landed here at `dc3b7db`** — the other half of the same anchor,
-and the one a reader coming from the handbook needs. `ba7eaa4` says
-where the bytes came from; `dc3b7db` says where they arrived, which
-is what makes "what have you changed since" a command rather than
-an excavation:
-
-```bash
-git diff -M dc3b7db..HEAD -- starter/kit delivery/container
-```
-
-**Both paths, and the old one first.** The directory was
-`starter/kit/` until ADR-0029 renamed it, so at `dc3b7db` the path
-`delivery/container/` does not exist and asking for it alone
-reports the whole container as new — 970 insertions against the 8
-that are real. The `-M` finds the rename across the gap. Any later
-rename of this directory adds its old path to that list, and the
-line above is where it gets added; a rename that does not land here
-leaves the next reader with a diff that says everything changed.
-
-**What differs from what we took, and why.** A reading aid for
-whoever attempts a re-sync — not a gate, with nothing counting its
-rows:
-
-| What differs | Why |
+| What | Why |
 |---|---|
-| `CLAUDE.md` is absent from the root; the kit ships it at `.claude/CLAUDE.md` | a run builds an app and the root is the app's. This was the seed's step-4 `sed` until the kit came here; now it is the artifact |
-| `.claude/CLAUDE.md` carries a body composed here, not the kit's stub | two runs derived their entry file unaided and neither produced the pre-framing guard or the pin stance (ADR-0019). A whole file, copied never merged (ADR-0015) |
-| `README.md` carries a body composed here, not the kit's stub | the same reading and the same delivery rule |
-| `.claude/decisions.md`'s birth entry carries one pin and a read-through, and names the handbook as provenance only | one pin, ours, since the fork (ADR-0025); the read-through is the exchange's second number (ADR-0036). It carried two pins until 2026-09-26 |
-| `convention-lifecycle` is absent; the kit shipped it | replaced by the exchange (ADR-0036). The run's half is `.claude/rules/delivered-copies.md`; the receiver's protocol is no longer held by a repo that is not a receiver |
-| One convention the handbook's kit never had: `visual-comparison` | written here, and a convention of this container rather than the handbook's (CBC ADR-0031). A run is born with seven, and not the same seven; its decisions are cited `CBC ADR-nnnn` because they are ours to explain. Two siblings shipped beside it and were discarded unused, 2026-09-24 |
+| `CLAUDE.md` sits at `.claude/CLAUDE.md`, not at the root | a run builds an app and the root is the app's. This was the seed's step-4 `sed` until the container came here; now it is the artifact |
+| `.claude/CLAUDE.md` carries a body composed here, not a stub | two runs derived their entry file unaided and neither produced the pre-framing guard or the pin stance (ADR-0019). A whole file, copied never merged (ADR-0015) |
+| `README.md` carries a body composed here, not a stub | the same reading and the same delivery rule |
+| `.claude/decisions.md`'s birth entry carries one pin and a read-through | one pin, ours (ADR-0025); the read-through is the exchange's second number (ADR-0036). It carried two pins until 2026-09-26 |
+| No `convention-lifecycle` | replaced by the exchange (ADR-0036). The run's half is `.claude/rules/delivered-copies.md`; the receiver's protocol is no longer held by a repo that is not a receiver |
+| `visual-comparison` | written here (CBC ADR-0031). A run is born with eight conventions, and its decisions are cited `CBC ADR-nnnn` because they are ours to explain. Two siblings shipped beside it and were discarded unused, 2026-09-24 |
 
-Inside the two composed entry files, some text came from the kit's
-own stubs — `.claude/CLAUDE.md`'s title line, records table and
-guard comment; `README.md`'s records table and both its comments —
-and the rest is this repo's, harvested from the runs' own
-derivations. Recorded because it tells a re-sync which half is
-which, not because anything must be re-verified against them.
+Inside the two composed entry files, the title line, the records
+tables and the standing comments are the stubs' own shape; the
+rest is this repo's, harvested from the runs' own derivations.
 
 ## What replaced the contract
 
 There was a contract here, and ADR-0024 ended it. It named three
-things the overlay assumed of someone else's kit — the plan's
-STEPS-marker region, the step/gate idiom, and the handbook's
-playbook as the vendor base for our endpoint steps — and said a
-bundle needing a fourth widens the contract handbook-side first.
-That shape existed because the container arrived from a repo we did
-not control. It arrives from here now, so there is nothing to
-assume and no one to ask.
-
-What stands in its place is one-directional and ours: the delta
-list above, which says how our container departs from the master it
-was taken from, and the re-verify duty that keeps the departures
-honest at each re-pin. The handbook is owed no promise about shapes
-it holds still; what it is owed is a report, and that is the
-exchange (ADR-0022), not a contract.
+things the overlay assumed of a container it did not own — the
+plan's STEPS-marker region, the step/gate idiom, and a playbook
+held elsewhere as the vendor base for our endpoint steps — and
+said a bundle needing a fourth widens the contract on the other
+side first. That shape existed because the container arrived from
+a repo we did not control. It arrives from here now, so there is
+nothing to assume and no one to ask. What stands in its place is
+the exchange (ADR-0036): what a run receives, what it changes and
+what comes back are read, never contracted.
 
 Records stay the container's: CbC events are recorded as ordinary
 project events under its rules, and the method's own artifacts
@@ -214,9 +170,8 @@ template's *shape* harvests like any execution change (ADR-0007).
 
 No longer absent, and this is the change ADR-0024 made to what a
 birth delivers: recording conventions, commit conventions and the
-hygiene base now ship, because the container ships. They are the
-handbook's rules, held here at a pin and passed on unedited — what
-a run receives is theirs, by way of us.
+hygiene base now ship, because the container ships. They are this
+repo's rules (ADR-0025), and a run receives them from here.
 
 Still deliberately absent — the born project's own decisions: its
 run files and its own versioning. Also absent: the archive's agent

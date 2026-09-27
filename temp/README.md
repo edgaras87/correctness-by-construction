@@ -2,8 +2,8 @@
 
 Tracked since 2026-09-07 (before that, gitignored as a paste
 buffer). What lives here is a draft on its way somewhere else: a
-handoff to the handbook, a reply read in from it, a briefing being
-molded before it goes to a run. Tracking keeps the shaping visible
+note on its way to a run, a reading written from one, a briefing
+being molded before it goes to a run. Tracking keeps the shaping visible
 as diffs; a draft is deleted once it has served, and git history
 keeps every version.
 

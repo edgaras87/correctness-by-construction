@@ -1,13 +1,9 @@
-<!-- Vendored copy — engineering-handbook starter/playbooks/default.md
-     @ c670fe5 (copied 2026-09-05, v2; their ADR-0031 moved the
-     playbooks out of the kit to starter/playbooks/ — first copied
-     2026-09-02 @ 65dd7ee from the old kit path, replacing the
-     pre-redesign TEMPLATE.md; ADR-0011). Pinned: do not edit
-     here — changes happen in the handbook and arrive as a fresh
-     pinned copy (ADR-0002). This is the base this repo's own
+<!-- This repo's default playbook — the bare sequence (ADR-0011).
+     Came from the handbook's default playbook, v2, copied
+     2026-09-05, and is ours since; where it came from is ADR-0038's
+     record and nothing tracks it. This is the base this repo's own
      retrospective folds into a typed playbook; the bundle's
-     cbc-run playbook vendors its endpoint steps from the same
-     master. -->
+     cbc-run playbook took its endpoint steps from it. -->
 
 # Playbook: Default — the bare sequence
 
@@ -52,7 +48,7 @@ Gate:
 - [ ] Agent/project commit split held from the first commit: no
       commit mixes CLAUDE.md / .claude/ with the records.
 - [ ] Birth entry in .claude/decisions.md filled: date and the
-      copy-time handbook commit.
+      pin.
 Notes:
 
 ## Step 1: Framing                                  [ ]

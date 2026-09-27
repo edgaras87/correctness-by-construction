@@ -83,8 +83,8 @@ while main stays at the hygiene commit with the same files in its
 worktree, untracked: the newborn's agent finishes the birth itself
 by reading what is there and committing it under its own sequence
 and split (ADR-0018). The container comes from `delivery/container/`,
-this repo's copy of the handbook's kit at a pin (ADR-0024), and
-the seed fills only what is mechanical: the birth entry's pin and
+this repo's (ADR-0024, ADR-0025), and the seed fills only what is
+mechanical: the birth entry's pin and
 date, two other birth dates, the working name in the two entry
 files, and the playbook's steps into PLAN with its "Steps from:"
 line. Beyond those, no field is filled: not the other stubs, no
@@ -111,10 +111,8 @@ bundle_dir=~/PycharmProjects/engineering/concept-garden/correctness-by-construct
 bundle_pin=$(git -C "$bundle_dir" rev-parse --short HEAD)
 ```
 
-No `handbook_dir`, and no second pin. The container began as the
-handbook's kit; that is provenance, recorded once in
-`delivery/README.md`, and the seed does not read it. One pin, ours,
-and a run is born without any handbook checkout existing.
+One pin, ours, and one directory: everything the seed copies is
+under `$bundle_dir`, and a run is born from this repo alone.
 
 The name is a placeholder — everything before the briefing is
 problem-agnostic, and the briefing brings the real name.
@@ -149,9 +147,8 @@ the whole `.claude/` directory.
 The birth entry takes two placeholders: the pin, for what was
 delivered, and the date. Its read-through is written as *none* in
 the template — nothing has been read before the first note — and
-the seed leaves it. One pin, because the run holds one delivery;
-the handbook state the container began from is provenance, not a
-second number (ADR-0025, ADR-0036). The next two `sed`s fill the
+the seed leaves it. One pin, because the run holds one delivery
+(ADR-0025, ADR-0036). The next two `sed`s fill the
 other birth dates the kit carries, the first ADR's and the devlog's
 first heading: three records, one moment. The last fills the working
 name into the two entry files, which arrive inside the kit rather
