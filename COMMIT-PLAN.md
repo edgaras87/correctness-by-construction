@@ -70,6 +70,21 @@ ADR-0035. The shipped birth entry lists `shapes` among the
 conventions. `delivery/README.md`'s two shape paragraphs become two
 sentences and a pointer to the manual. The rule's definition of a
 shape stays: a run cannot read the manual.
+*Revised at its boundary, 2026-09-27, on the reviewer's reading:*
+the rule is about 200 lines and half is why, against the index's
+own test — a rule is the instruction, its why is the manual's. It
+is cut to what a run does: the definition and the Governs line, the
+two births, the two places, who moves a shape, the close as three
+numbered steps, the three endings of a difference, and what it does
+not govern — about 90 lines. Every cut passage is checked for a
+home in the manual; three had none and move there: why a kept copy
+is not deleted, staleness, and the two layers of a shape. One line
+is instruction the rule never stated and the manual did — a
+difference is proposed as a diff, never corrected — and is kept
+because the rule derives from the manual. Also in this step, on the
+same reading: both manuals' headers say the artifacts derive from
+the page and a disagreement is decided, not won; the index's two
+handbook lines on that relation say the same in our position.
 
 **5. `chore(agent): the shapes convention is registered`**
 One decisions-log entry: the convention held; what of it this repo
@@ -120,7 +135,12 @@ Deletes this file; the body records what diverged.
   it — a line in the note naming a staged shape as one, and the
   copies rule's take excluding it — is written when a first shape is
   staged, from that staging.
-- **Step 4 ships one new sentence.** Run 3 will receive it in the
-  next delivery and its own shape has the section the sentence
-  argues against. That is the note's business, not this set's; here
-  it is named so the delivery does not surprise anyone.
+- **Step 4 ships one new sentence, and a rule half its length.**
+  Run 3 will receive both in the next delivery; its own shape has
+  the section the sentence argues against, and it has run the long
+  rule at every close since 09-23. Shrinking now rather than after
+  the delivery costs the run one take of the file instead of two.
+  What the run loses is explanation it can ask for in a backlog
+  line; what it keeps is every instruction. That is the note's
+  business to say; here it is named so the delivery does not
+  surprise anyone.
