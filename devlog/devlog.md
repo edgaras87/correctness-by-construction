@@ -6,6 +6,74 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-27, afternoon  (playbook v7, and the handbook becomes history — one commit, then one set of twelve)
+
+- **The narrow gate fix went first**, one commit on its own branch,
+  fast-forwarded: playbook v7. Every step's gate carries one Known
+  already fact about shapes — `temp/` looked in, what was found
+  said including nothing, the output read against every shape
+  governing it. Release's line sits after the default playbook's
+  three facts. The seed's three references moved to v7. Run 3's
+  step form, two opening and seven closing items above its STEPS
+  markers, stays held for its Step 7: it belongs to the plan stub,
+  not the playbook, and the run has no Step 7 yet.
+- **The handbook filter opened as planned and changed shape at
+  step 5.** The plan's three kinds of work held — provenance
+  sections to history, manuals in our voice, seven shipped
+  citations adopted in one ADR — until the delta table came up.
+  The reviewer's reading: the handbook was designed before a second
+  repo existed, which is the prediction without proof this repo
+  refuses everywhere else. So no re-sync, ever. A second repo that
+  needs what this one holds copies parts, a third the same, and
+  only after three is anything handbook-like considered. ADR-0038
+  was revised while Proposed and retitled: the hashes are a fact
+  recorded once, ADR-0025 decisions 2, 4 and 7 and ADR-0026
+  decisions 2 and 5 are superseded, and the tiers model's top tier
+  is empty — its body's first edit since it was taken, ADR-0026
+  decision 4's condition met by that decision itself.
+- **What each step found.** The delta table's rows were facts
+  about the container whatever they were compared against, so the
+  comparison ended and the rows stayed. ARCHITECTURE's
+  taken-material invariant named three live sections as the
+  coordinates' home; a fact in an ADR enforces nothing, so it went.
+  The manuals' citations mostly pointed at reasons the sentence
+  already gave; two became the measured case they pointed at (98
+  lines, two files, three disagreeing copies of one rule), the rest
+  became `ADR-0038, 1a`–`1f` or nothing. Three manuals linked
+  symlinks that never came across — `stubs/`, two `SKILL.md`, a
+  `templates/base/` — and the index paragraph that explained the
+  gap was leaving in the same set, so the links now point at the
+  container's files. agent-arrangement said the kit ships the entry
+  file at the root; ours ships it under `.claude/`, now stated.
+- **Left as named, and counted.** The agent model's 22 mentions
+  are its evidence and stay. One drafting-history line in the
+  tiers model, two revision-log lines in the seed's header, the
+  default playbook's one provenance sentence, the temp README's
+  dated note. `HANDBOOK` as a tag survives in live text only in the
+  agent model's citations. The six bare "the kit" wordings in
+  agent-arrangement keep their own TODO item.
+- **Two items dropped, one renamed, one found.** The note held for
+  the handbook's ADR-0038 and the handbook's invitation waited on a
+  repo nobody opens. The overlay-marker suggestion keeps its
+  trigger without the name. Found at the records commit and not
+  touched: the item on restructuring our own parts still reasons
+  from "method has one owner, the handbook".
+- **Twelve commits for eleven planned**, one revision at step 5's
+  boundary, `main` fast-forwarded twice today and both branches
+  deleted. Not pushed. Two local branches still carry the old
+  names, `handbook-delivery-ba7eaa4` and the two main backups.
+
+Resume: on `main`, clean. Next: read run 3 fresh from `9869798`
+under `exchange-read` and deliver. The note carries the shorter
+shapes rule, the `foundation` field on nine files,
+`delivered-copies.md` for `skills-changed-in-place.md`, the three
+conventions deleted by name, the sentence its slice-record shape
+argues against, and now two more things: the two skills' footers
+cite `CBC ADR-0038`, and playbook v7's gate line — a fill, so the
+run's steps are its own and the line is offered in the note, not
+delivered. `working-a-reading.md` stays in `temp/` until that
+reading.
+
 ## 2026-09-27  (shapes become a convention — one set, seven commits and one revision)
 
 `shapes-convention-2026-09-26`, cut from `main` after the layout
