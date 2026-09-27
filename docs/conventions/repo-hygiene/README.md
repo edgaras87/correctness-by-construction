@@ -4,14 +4,11 @@ Three files every repo carries from its first commit, `.gitignore`,
 `.gitattributes` and `.editorconfig`, maintained as layered
 templates instead of being re-derived per project.
 
-**What ships:** the three base files, in the starter kit and linked
-from [`templates/base/`](templates/base/) beside this page, the
-links named without the leading dot because git will not follow a
-symlinked `.gitignore`. They carry no rules to read; they shape the
-repo by existing. The stack
-overlays under [`templates/<stack>/`](templates/) stay here and are
-appended from a handbook checkout at the step that makes the stack
-true.
+**What ships:** the three base files, the dotfiles at the root of
+the container, `delivery/container/`. They carry no rules to read;
+they shape the repo by existing. The stack overlays under
+[`templates/<stack>/`](templates/) stay here and are appended from
+this repo at the step that makes the stack true.
 
 ## The three files
 
@@ -29,9 +26,9 @@ LF, git *guarantees* LF. Neither alone is sufficient.
 A repo following project-recording exists before its app does, so
 the templates split:
 
-- **The base** — stack-agnostic; correct for any repo including
-  records-only and handbook repos. It is the kit's three dotfiles,
-  copied at repo creation.
+- **The base** — stack-agnostic; correct for any repo including a
+  records-only one. It is the container's three dotfiles, copied at
+  repo creation.
 - **`templates/<stack>/`** — overlay snippets (`*.part` files)
   appended at the step that makes the stack true, the walking
   skeleton in a backend playbook, below the marked line in each
@@ -44,8 +41,8 @@ the templates split:
 Composition is plain concatenation; all three formats append cleanly:
 
 ```bash
-# at the skeleton step, from a handbook checkout:
-t="$handbook_dir"/conventions/repo-hygiene/templates/java-spring
+# at the skeleton step, from the deliverer's checkout:
+t="$bundle_dir"/docs/conventions/repo-hygiene/templates/java-spring
 cat "$t"/gitignore.part      >> .gitignore
 cat "$t"/gitattributes.part  >> .gitattributes
 cat "$t"/editorconfig.part   >> .editorconfig
@@ -53,7 +50,7 @@ cat "$t"/editorconfig.part   >> .editorconfig
 
 ## Rules
 
-- Base files ship with the starter kit; appending the stack overlay
+- Base files ship with the container; appending the stack overlay
   is a gate item of the step that introduces the stack ("hygiene
   overlay applied").
 - Overlay content goes below the marker; base content is never
@@ -74,9 +71,9 @@ cat "$t"/editorconfig.part   >> .editorconfig
 
 These files follow the playbook pattern: when a project's field use
 reveals a missing ignore or a wrong setting, the fix goes to the
-handbook's file, base in the kit or overlay here, whichever truly
-owns it, with a changelog entry, and every future project starts
-corrected.
+master here — base in the container, overlay under `templates/`,
+whichever truly owns it — with a changelog entry, and every future
+project starts corrected.
 
 ## Why it is delivered as files
 
@@ -84,12 +81,11 @@ This convention never reaches an agent as text. Its product is
 three files that shape the repo by existing: nobody complies with
 `.gitignore`, git simply hides what it names. A rule here that
 cannot become a line in one of the three files has no delivery at
-all (HANDBOOK ADR-0008).
+all.
 
 ## Where to look
 
-- The base: [`templates/base/`](templates/base/), links into
-  `delivery/container/`.
+- The base: the three dotfiles at the root of `delivery/container/`.
 - The overlays: [`templates/java-spring/`](templates/java-spring/).
 - The step that appends an overlay: the backend playbook in
   `playbooks/`.
