@@ -814,6 +814,43 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] A convention for descriptions, gathering three items below
+      into one (2026-09-27, the reviewer). The idea this repo runs
+      on and states nowhere in one place: **one description, and
+      everything else derived from it and pointing back.** Today it
+      is in five places — `master.md` §1 (stated, made usable) and
+      §3 (both bent by practice); ADR-0036 decision 7 (every shipped
+      file says what it derives from); the exchange manual's closing
+      ("the description stays here, once; no artifact explains
+      anything; all four point at this"); the shapes manual's
+      closing ("what derives from this page is that list; a change
+      here walks it"); and both manuals' headers (a disagreement is
+      decided, the other follows in the same commit). No reader
+      finds it without knowing where to look.
+      What the convention would hold. **The manual**: the idea
+      above, and the maintenance rule — the item "a maintenance rule
+      for core descriptions" is this manual's §-to-be. **A shape of
+      a manual**, ours, exposed in `.claude/rules/` on
+      `docs/conventions/*/README.md`: the sections two manuals now
+      share, and which is what makes a shape by the rule's own first
+      birth (a pair recurred) — a header saying what derives from it
+      and how a disagreement ends; an opening statement; *what ships*;
+      *what cannot change* or the equivalent; the seats (the item
+      "every manual says its seats" is one section of this shape);
+      lessons as dated italics; *what this is made usable as*,
+      listing the derived artifacts. **The `foundation` line** is
+      already the convention's artifact in every shipped file; the
+      item "the words for what things derive from" settles its
+      vocabulary. Whether any of it ships: a run has descriptions
+      too (`docs/system/definition.md` → the slice records, through
+      the registry), which the maintenance item already notes; not
+      decided here.
+      Trigger: the seats pass over the six manuals, which is the
+      first time a form is applied to every manual at once and will
+      show whether the shape holds — or the maintenance item's own
+      trigger, whichever fires first. Until then the three items
+      stand on their own and this one only names them as parts.
+
 - [ ] Every manual says its seats, candidate rule for descriptions
       (2026-09-27, the reviewer). Twice now a manual grew a section
       because the two sides do different things — the exchange (§3
