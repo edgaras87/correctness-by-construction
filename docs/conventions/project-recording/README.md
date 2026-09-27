@@ -104,8 +104,8 @@ playbook.
 
 **When.** Created at project start; its steps arrive whole from a
 playbook at birth and are confirmed at Framing — the middles written
-fresh there when the project was born on the bare default (§9,
-HANDBOOK ADR-0028); touched every working session — updating it *is* part of
+fresh there when the project was born on the bare default (§9);
+touched every working session — updating it *is* part of
 the work, not paperwork after it.
 
 **Anti-patterns.** Steps without gates (it's just a wish list); detailing
@@ -160,10 +160,10 @@ Bad: schema migrations become a discipline we must maintain.
 - **A number is local to one repo.** A bare `ADR-nnnn` names the
   decision in the repo where it is read. A reference to another
   repo's decision carries that repo's tag before the number —
-  `HANDBOOK ADR-0014`, `CBC ADR-0012` — a short upper-case name each
-  repo declares once in its README's decisions row (§7). A document
-  written to be read in another repo carries the tag on every
-  citation (HANDBOOK ADR-0037).
+  `CBC ADR-0012`, as a run cites this repo's — a short upper-case
+  name each repo declares once in its README's decisions row (§7).
+  A document written to be read in another repo carries the tag on
+  every citation (ADR-0020).
 
 **When.** At the moment the decision is made — typically when a gate in the
 plan forces it. Writing it *before* deciding (status: Proposed) is even
@@ -196,7 +196,7 @@ for small projects. Newest entries on top.
 ```markdown
 ## 2026-08-21  (Step 2: data model)
 - Migrations up/down now clean. Down-migration for soft deletes was the
-  hard part; note in HANDBOOK ADR-0004 consequences.
+  hard part; note in ADR-0004 consequences.
 - DEAD END: tried enforcing the "one active order per user" invariant in
   application code — race condition under two concurrent requests.
   Moving it to a partial unique index instead.
@@ -286,7 +286,7 @@ developer-voiced; the changelog is the curated, user-voiced digest.
 depends on the repo type — an application releases SemVer versions; a
 concept or docs repo versions something else, and says what at Framing.
 The discipline (curated, user-voiced, written per change) carries
-unchanged (HANDBOOK ADR-0026).
+unchanged.
 
 **How.**
 
@@ -338,14 +338,14 @@ CHANGELOG — the decisions row also declares the repo's tag, the name
 its decisions are cited by from another repo (§3). A project that runs
 adds: prerequisites; the *one command* to build/run from a clean
 clone; how to run tests — each arriving at the moment it becomes true
-(see When), not at birth (HANDBOOK ADR-0026). Keep it short and current — a
+(see When), not at birth. Keep it short and current — a
 wrong README is worse than a sparse one, so anything that changes
 often (detailed status) belongs in PLAN.md and is only *linked* from
 here.
 
 **When.** Stubbed at project start; thereafter, when something became true
 that the outside should see — projection follows truth, so the README never
-claims what is not yet true (HANDBOOK ADR-0025). The mechanism is a gate item
+claims what is not yet true (ADR-0038, 1d). The mechanism is a gate item
 where relevant: a step whose gate makes something projectable true includes
 updating its projection, exactly as record upkeep is already expressed in
 lived gates ("ARCHITECTURE current"). Never a standing item on every gate —
@@ -402,11 +402,11 @@ bit.
 
 **Where.** `playbooks/<type>.md` in the repo that owns the type — the
 one a project's "Steps from" line names — never in the project born
-from it, which holds only the copy in its plan (HANDBOOK ADR-0031).
+from it, which holds only the copy in its plan.
 Versioned (v1, v2, …) with a note of which project last updated it.
 
-**How.** The full sequence, first step to last (HANDBOOK ADR-0028, amending
-HANDBOOK ADR-0024's middle-steps-only). The plan's stub prescribes no step;
+**How.** The full sequence, first step to last. The plan's stub
+prescribes no step;
 a playbook prescribes them all. Each step keeps the plan's form — a
 goal, a gate of verifiable facts, the records expected — plus its
 own "Warnings from past runs"; its Release step carries the type's
@@ -517,7 +517,7 @@ If yes, it gets written down, once, in its designated home.
      referenced by number from other conventions, and renumbering them
      to slot this beside §7 would break those references for a
      cosmetic gain. Held its number again when the entry file itself
-     moved to the agent-arrangement convention (HANDBOOK ADR-0033): this
+     moved to the agent-arrangement convention: this
      section is cited by number from there and from the starter
      manual. -->
 
@@ -537,8 +537,8 @@ down the second. Both are real questions and a table answering only
 one of them is half a table. A rule written only inside the record it
 governs teaches the format but cannot teach the timing: "write a
 devlog entry at session end" sits in `devlog.md`, and opening
-`devlog.md` at session end is the thing you needed telling
-(HANDBOOK ADR-0018). A moment is not a restatement — it says when to go, and
+`devlog.md` at session end is the thing you needed telling. A
+moment is not a restatement — it says when to go, and
 contains nothing about what to write.
 
 **Anti-pattern.** Local status in the entry file — where the work
@@ -551,13 +551,14 @@ PLAN.md is where the entry file says so.
 
 A rule for filling in `PLAN.md` sits inside `PLAN.md`, so acting on
 the record is what puts the rule in front of you; there is no
-trigger to fire and nothing to remember (HANDBOOK ADR-0004). Timing is the
+trigger to fire and nothing to remember. Timing is the
 one exception: a rule saying when to open a record cannot live
 inside it, so the entry file's records table carries a moment per
-row (§13, HANDBOOK ADR-0018). A skill would not do: it fires when the agent
+row (§13). A skill would not do: it fires when the agent
 recognises the moment, and failing to recognise the moment is the
 failure being fixed. Restating a record's rules in the entry file
-"so they are always available" is the failure HANDBOOK ADR-0014 measured.
+"so they are always available" is the failure measured once: 98
+lines, two files, three disagreeing copies of one rule.
 
 ## Where to look
 
