@@ -907,3 +907,19 @@
   Rejected: adding the field to our copies by hand. That would have
   left the thirteen lines, and a hand edit is the drift this entry
   closes.
+
+- 2026-09-27 Convention held: shapes (CBC ADR-0037). What this repo
+  holds of it: nothing that loads. The shipped rule fires on
+  `.claude/shapes/**`, and this repo has no such directory, no
+  steps and no gates, so no copy of it sits here. Our shapes are
+  rules with a Governs line under `.claude/rules/`, exposed, which
+  is the convention's §4 — `exchange-reading.md` is the one
+  instance, the exchange's artifact and this convention's instance
+  at once. The reviewer moves a shape; here that means writing one
+  or withdrawing it.
+  Why no artifact of our own: a file saying only "we hold nothing"
+  is the stub ADR-0035 dropped; the manual states our seat instead.
+  Rejected: a copy of the shipped rule here for symmetry with the
+  three convention skills. Those we run; this we could not, and a
+  rule held by the repo it cannot apply to is the fault ADR-0036
+  closed for `convention-lifecycle`.
