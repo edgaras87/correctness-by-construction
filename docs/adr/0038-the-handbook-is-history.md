@@ -1,10 +1,11 @@
 # 0038. The handbook is history: its decisions become ours, and no re-sync is kept
 
 Date: 2026-09-27
-Status: Proposed (opened under the commit plan for the handbook
-filter; revised once at step 5's boundary, when the reviewer
-rejected the re-sync premise the first draft kept; flips at the
-set's records commit)
+Status: Accepted (2026-09-27, at the set's records commit; opened
+Proposed under the commit plan for the handbook filter and revised
+once at step 5's boundary, when the reviewer rejected the re-sync
+premise the first draft kept. Supersedes ADR-0025 decisions 2, 4
+and 7 and ADR-0026 decisions 2 and 5)
 
 ## Context
 
@@ -135,7 +136,10 @@ of history, not a protection.
    of it. No re-sync is planned, protected or prepared for: no live
    file repeats a hash, keeps a diff command current, lists what
    differs from what was taken, or names the handbook as a tier
-   above this repo.
+   above this repo. The delta list ADR-0025 decision 4 kept as a
+   re-sync aid ended with this set: its rows stay in
+   `delivery/README.md` as a description of what the container
+   holds, compared against nothing.
 
    This supersedes ADR-0025 decisions 2, 4 and 7 and ADR-0026
    decisions 2 and 5. In their place, the reviewer's rule: a second

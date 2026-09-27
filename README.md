@@ -7,11 +7,11 @@ holds the plain-words statement of the concept (with its rationale,
 open questions, and the log of what changed it and why) and the
 executions derived from it — agent skills, checklists, templates —
 each pinned to the concept version it derives from. Since 2026-09-18
-it also holds the container a run is born into — its own, taken from
-the handbook's starter kit at a pin and owned here since — so a run
-has one upstream and one pin instead of two (ADR-0024, ADR-0025). It
-is the middle tier of a three-tier workspace (handbook → concepts →
-runs; see docs/models/tiers.md): runs happen in other repos pinned to
+it also holds the container a run is born into — its own (ADR-0024,
+ADR-0025; where it came from is ADR-0038's record) — so a run has
+one upstream and one pin. It is the concepts tier of the workspace
+(concepts → runs, the tier above empty; see docs/models/tiers.md):
+runs happen in other repos pinned to
 a concept version, and their surprises come back here as harvested
 concept changes. It exists so its author's understanding improves in a
 recorded way instead of living in a head and scattered notes.
@@ -33,11 +33,11 @@ recorded way instead of living in a head and scattered notes.
 
 - Running projects or experiments here — runs happen in their own
   repos, pinned to a concept version (runs tier).
-- Authoring method or working-arrangement conventions — the
-  handbook owns method. We now *ship* its conventions, held at a
-  pin and passed on unedited, which is carriage and not authorship:
-  friction with one goes up to the handbook as a finding, never
-  into the copy.
+- A general method or working arrangement — the conventions
+  shipped here are this repo's, held for CbC runs and changed by
+  what runs live (ADR-0025, ADR-0031). A second repo that needs
+  them copies parts, and anything general waits on three
+  (ADR-0038).
 - Garden machinery — none until the garden rule triggers: a second
   concept repo, a rule written twice.
 - Graduating an execution to its own concept repo — same trigger,

@@ -3,7 +3,9 @@
 Date: 2026-09-18
 Status: Accepted (2026-09-18, at the final records commit of the
 change-plan for taking the models; opened Proposed per
-change-plans §4. Supersedes ADR-0002 in part — decision 3)
+change-plans §4. Supersedes ADR-0002 in part — decision 3) —
+decisions 2 and 5 superseded by ADR-0038 (2026-09-27): where the
+models came from is that record's, and no revival is waited on
 
 ## Context
 

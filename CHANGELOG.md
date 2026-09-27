@@ -15,6 +15,15 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 
 ## [Unreleased]
 
+### Changed
+
+- What a run receives cites only this repo's decisions. The
+  `commit-messages` and `commit-plan` skills' Decisions footers
+  cite `CBC ADR-0038`, which adopts the six decisions they rested
+  on, where they cited a repo a run cannot read; the decisions-log
+  stub loses its provenance line and the plan stub's placeholder
+  reads `<concept commit>` (ADR-0038).
+
 ### Added
 
 - A CLAUDE.md template (`starter/fills/claude-md-template.md`,

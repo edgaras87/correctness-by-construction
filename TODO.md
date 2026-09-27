@@ -926,7 +926,16 @@
       seed has not run since ADR-0024, and shaping it twice from
       intent was the last plan's reason to wait.
 
-- [ ] The handbook filtered out of live text (2026-09-26, the
+- [x] DONE 2026-09-27, ADR-0038, one change set — and wider than
+      filed: at step 5's boundary the reviewer rejected the re-sync
+      premise itself, so the coordinates are history in the ADR,
+      the tiers model's top tier is empty, and the rule of three
+      replaces the reopen triggers. Left as named: the agent
+      model's evidence (22), one drafting-history line in the tiers
+      model, the seed header's revision log (2), the default
+      playbook's one provenance sentence, and the temp README's
+      dated note. Original item:
+      The handbook filtered out of live text (2026-09-26, the
       reviewer). Measured today, history excluded: about 150
       mentions in 20 live files. Three kinds of work in it. **The
       provenance sections** — `delivery/README.md`'s container half,
@@ -1746,23 +1755,6 @@
 
 ## Later / someday
 
-- [ ] Held for the handbook, if it is ever picked up again — not
-      sent, and nothing is owed (we forked 2026-09-18; its ADR-0042
-      records it). Their ADR-0038 lost its provisional mark that
-      day on the stated grounds that the report it waited for **can
-      never resolve**: the run that would make it no longer reports
-      to them. Our devlog called that the sharpest sentence either
-      side wrote. **The report arrived two days later.** On
-      2026-09-20 never-oversold made the first in-place edit of a
-      pinned copy — five nouns the commit-plan rename left standing
-      in four files we shipped — and its first finding was against
-      the rule it was running under: the dated header line §3 step
-      4 asked for. We took the finding (CBC ADR-0034) and dropped
-      the clause. So a later reader of their ADR-0038 meets a
-      premise that stopped being true within 48 hours, and we are
-      the only side that can see it. A few sentences, not a letter,
-      and only if that repo is opened.
-
 - [ ] What a receiver should *do* when handed a claim it cannot
       check. The sending half is settled and in force —
       `temp/README.md`'s second rule, 2026-09-18: where a note
@@ -1908,20 +1900,9 @@
       declined-but-needed becoming a pattern rather than a
       possibility.
 
-- [ ] The handbook's invitation, 2026-09-16, not owed and not a
-      condition of anything: when we next author or restructure
-      something of our own, notice what we had to invent because
-      nothing told us — what an artifact must carry, how it is
-      written, how explanation is kept apart from instruction.
-      None of that ships today and the handbook is deliberately not
-      guessing it from its own single instance. Two unfinished
-      drafts sit in its temp/, repo-shapes-model-draft.md and
-      repo-shapes-gap-list.md; they are thinking, not decisions,
-      they bind nothing, and they are ours for the asking. The
-      trigger is our next authoring, not a date.
-
 - [ ] Two constraints that bind if we ever restructure our own
-      parts, from the same note: whatever we split them into, do
+      parts, from a note received 2026-09-16: whatever we split
+      them into, do
       not call them conventions — that word means method, and
       method has one owner, the handbook. And keep the concept
       beside those parts rather than inside them: the executions
@@ -2016,8 +1997,8 @@
       cbc-framing walks framing — naming rule, verdict protocol.
       Consider a small addition when cbc-bootstrap next gets
       touched, or when a run's Define step chafes without one.
-- [ ] Handbook suggestion, parked with its trigger: an overlay
-      marker in the kit PLAN stub's Framing step (the hygiene
+- [ ] Parked with its trigger: an overlay marker in the
+      container's PLAN stub's Framing step (the hygiene
       files' append-below-the-marker pattern), so a method bundle
       can add gate items first-class. Propose it if a CbC run's
       Framing ever needs a gate the generic step cannot express,
