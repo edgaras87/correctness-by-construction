@@ -6,11 +6,17 @@ No live file of this repo tells the handbook's story. What a run
 receives cites only decisions it can be handed — `CBC ADR-nnnn` —
 and the six handbook decisions the two shipped skills rested on are
 adopted as ours in one ADR, with each one's claim stated so the
-adoption is readable without the handbook. Where the bytes came
-from is a fact recorded once, in that ADR, with every coordinate a
-re-sync would need: the take, the last aligned state, and where
-each set landed here. Nothing in live text repeats those hashes,
-keeps a diff command current, or promises a re-verify. The manuals
+adoption is readable without the handbook. The same ADR says the
+handbook is history: where the bytes came from is a fact recorded
+once, and no re-sync is planned, protected or prepared for. The
+coordinates ADR-0025 and ADR-0026 kept as protection, the delta
+list kept as a re-sync aid, and the two reopen triggers — a second
+repo wanting the kit, the handbook revived — are superseded by the
+reviewer's rule: a second repo copies parts of this one, a third
+does the same, and only after three is anything handbook-like
+considered. Nothing in live text repeats those hashes, keeps a
+diff command current, promises a re-verify, or names the handbook
+as a tier above this repo. The manuals
 say their why in this repo's voice, as text this repo owns since
 ADR-0025 rather than as a copy narrating another repo's history.
 README's scope says what is true: the conventions shipped here are
@@ -18,13 +24,17 @@ ours to hold, changed by what runs live. TODO's handbook-filter
 item is closed, and the citation rule in the conventions index
 knows one tag, ours.
 
-What stays, and is named rather than filtered: the two models'
-bodies. Their evidence is the handbook's own history, taken
-verbatim under ADR-0026 decision 4 and edited only when something
-lived here contradicts them. Naming where evidence came from is
-attribution, not the handbook's voice. The records — ADRs, devlog,
-TODO, CHANGELOG, the registry, PLAN's closed gates — are history and
-are not touched.
+The tiers model says what is true: two tiers today, concepts and
+runs, the top row empty until three repos say otherwise. ADR-0026
+decision 4 let a model's body change only when something lived
+here contradicted it; the reviewer's rule is that contradiction.
+The agent model keeps its evidence, which is the handbook's own
+history and says so — attribution, not the handbook's voice — and
+its subject sentence names the conventions a project was born
+with rather than "the handbook's". The records — ADRs, devlog,
+TODO, CHANGELOG, the registry, PLAN's closed gates — are history
+and are not touched, except the three TODO items that waited on
+the handbook being opened again, triaged at the records commit.
 
 ## Commits
 
@@ -44,6 +54,19 @@ ADR-0025 decision 2 and ADR-0026 decision 2 put them. Retires the
 `HANDBOOK` tag from shipped text; the tag rule ADR-0020 adopted is
 unchanged, since a run still cites us. Decision-first: the shape
 was settled in the TODO item and this conversation.
+
+**2a. `docs(adr): ADR-0038 says the handbook is history`**
+Revision at step 5's boundary, the ADR still Proposed. Retitled.
+Decision 2 no longer keeps coordinates *for* a re-sync: the
+hashes stay as the fact of where the bytes came from, the paths at
+landing go with the diff guidance, and the decision supersedes
+ADR-0025 decisions 2, 4 and 7 and ADR-0026 decisions 2 and 5,
+stating the reviewer's rule of three in their place. Decision 5
+changes: the tiers model's body is edited, the agent model's
+subject sentence too. Consequences rewritten: the cost is no
+longer "a re-sync diff grows", it is that a fourth repo, if one
+comes, starts from what this repo holds then and not from a fork
+point. The set's other decisions are unchanged.
 
 **3. `refactor(container): shipped files cite CBC, not the handbook`**
 The two shipped skills' Decisions footers cite `CBC ADR-0038`; the
@@ -72,14 +95,31 @@ it is now; the playbook fill's "refresh against a new kit pin"
 clause, an obligation ADR-0025 removed, goes; ARCHITECTURE's
 container section, its diagram's origin node and the delivery
 codemap row follow. Coordinates that leave point at ADR-0038.
+Widened at its boundary: the delta table, "what differs from what
+we took", was a re-sync reading aid (ADR-0025 decision 4) and now
+has no reader. Its rows are true facts about the container — the
+entry file's address, the composed bodies, one pin, the exchange
+in place of `convention-lifecycle`, `visual-comparison` ours — so
+the table stays as a description of the container's own shape, in
+this repo's terms, and the sentence calling it a reading aid goes.
+ARCHITECTURE's taken-material invariant, which names the three
+live sections as where the coordinates are held, goes with them:
+a fact in an ADR is not an invariant anything enforces.
 
 **6. `docs(conventions): the manuals' and models' provenance becomes history`**
 `docs/conventions/README.md`'s "Where these files came from"
-section goes; its one standing rule — a manual and its artifact
-move in the same commit — moves up under the container's rules.
-Both models' header comments say "this repo's (ADR-0026); where it
-came from, ADR-0038" and nothing else about it. ARCHITECTURE's
-models and conventions codemap rows follow.
+section goes, and so does "no compare runs on a schedule", which
+told a re-sync where to start; the one standing rule — a manual
+and its artifact move in the same commit — moves up under the
+container's rules. Both models' header comments say "this repo's
+(ADR-0026); where it came from, ADR-0038" and nothing else about
+it. The tiers model's body: §1's shape and §2's first tier say the
+top row is empty — no repo owns method above this one, and the
+rule of three says when that is reconsidered; the upward channels
+in §3 and §4 that named the handbook name the tier above, which
+today is nobody. The agent model's §2 subject sentence names the
+conventions a project was born with. ARCHITECTURE's models and
+conventions codemap rows follow.
 
 **7. `docs(conventions): agent-arrangement says its why in our voice`**
 Twenty-six mentions, the most of any manual. Each inline
@@ -105,7 +145,11 @@ conventions are this repo's, with authoring bounded by ADR-0025's
 trigger rather than by the handbook owning method. ADR-0038 flips
 Accepted; ADR-0025 and ADR-0026 gain a Status line naming the
 amendment. CHANGELOG: what a run receives at its next delivery
-cites CBC only. TODO's item is ticked. The sweep: `HANDBOOK` in
+cites CBC only. TODO: the filter item is ticked; the note held
+for the handbook's ADR-0038 and the handbook's invitation are
+dropped, since the repo they wait on is not opened; the overlay
+marker suggestion loses "handbook" from its name and keeps its
+trigger, a second method bundle. The sweep: `HANDBOOK` in
 live text is zero, and `handbook` survives only where the summary
 says it does, counted in the commit body.
 
@@ -118,14 +162,23 @@ Deletes this file; the body records what diverged.
   numbered line with its claim. The TODO asked for one; six would
   spend six numbers on decisions taken elsewhere and read as if we
   had weighed the options ourselves.
-- **The models' bodies stay as taken.** The TODO counted
-  `agent.md`'s 24 mentions among the text to rewrite; ADR-0026
-  decision 4 says the bodies change only when something lived here
-  contradicts them, and nothing has. Their evidence is the
-  handbook's history and says so. Headers go, bodies stay, and the
-  open item on whether `docs/models/` still matches reality keeps
-  the rest. If the reviewer reads the TODO as overriding ADR-0026,
-  step 6 widens and the ADR is amended in step 10.
+- **The models' bodies: the tiers model changes, the agent model's
+  evidence stays** (revised at step 5's boundary; the plan first
+  said both stay). ADR-0026 decision 4 lets a body change when
+  something lived here contradicts it. The reviewer's rule — no
+  handbook until three repos exist — contradicts the tiers model's
+  first tier directly, so it is edited. The agent model's mentions
+  are the source of its evidence, which nothing contradicts; they
+  stay.
+- **The delta table is described, not deleted** (revised at the
+  same boundary). Deleting it would lose five facts about the
+  container that are true whatever they are compared against;
+  keeping it as a comparison would keep a reader who does not
+  exist. The comparison ends; the facts stay where a reader of the
+  delivery looks for them.
+- **ADR-0038 is revised rather than a second ADR written.** It is
+  Proposed and a living document until the flip; the re-sync
+  premise was its own, so it is the record that changes.
 - **`temp/README.md`'s dated episode stays.** Its purpose line is
   rewritten in step 5 with the seed; the 2026-09 note about the
   handbook mistaking our run's name is a recorded event, not live
