@@ -1,18 +1,7 @@
-<!-- This repo's (ADR-0026). Taken from the handbook's
-     models/agent.md at ba7eaa4, and identical through their
-     8adb46f, the last state this repo was aligned with. Nothing
-     tracks that repo; the coordinates are what a re-sync would
-     start from. Copy history, kept as provenance: copied
-     2026-09-17 @ ba7eaa4; before that @ ab916a1 2026-09-11,
-     @ af16eb7 2026-09-09; first copied 2026-08-27 @ 4fe8083, this
-     repo's kit birth pin. Edit when something lived here
-     contradicts the text; the body is otherwise as taken.
-     Landed here at df9d5ed, the 2026-09-17 re-copy — the anchor is
-     the LAST re-copy, not the first vendoring, because the earlier
-     pins bring their own churn: git diff -M df9d5ed..HEAD --
-     docs/models is 17 lines, against 7b049af it is 183 and almost
-     all of it theirs. If this path is ever renamed, its old path
-     joins that command here, in the same commit. -->
+<!-- This repo's (ADR-0026); where it came from is ADR-0038's
+     record. Edit when something lived here contradicts the text;
+     the body is otherwise as taken, its evidence the handbook's
+     own history and named as such. -->
 
 # Agent Model
 
@@ -37,13 +26,13 @@ Layer 1 — vendor-neutral. One tool's mechanisms are a **binding**
 
 ## 1. Who this is about
 
-An agent working in **a project that follows the handbook's
-conventions**, where those conventions arrive as vendored copies at a
-pinned version.
+An agent working in **a project that follows the conventions it was
+born with**, where those conventions arrive as pinned copies from
+the repo that delivered them.
 
 That is the case worth getting right: the conventions are written for
-it, and it is the case nobody can watch. The handbook maintaining
-itself is one instance of it, not the subject.
+it, and it is the case nobody can watch. The delivering repo
+maintaining itself is one instance of it, not the subject.
 
 The practical question the model exists to answer: *given a convention
 sitting in a project, how does it reach the agent that is supposed to
