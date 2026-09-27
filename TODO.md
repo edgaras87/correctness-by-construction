@@ -1069,7 +1069,10 @@
       waits on a first shape being ours to hold — never-oversold's
       `slice-record.md` is offered and not yet evaluated.
 
-- [ ] A project can hold the shape rule and never find it
+- [x] DONE 2026-09-27, playbook v7 — the narrow fix below, one
+      Known already fact on every step's gate; the run 3 step-form
+      fold stays its own held item. Original item:
+      A project can hold the shape rule and never find it
       (2026-09-23, ADR-0035 decision 4). The rule loads only when a
       file under `.claude/shapes/` is read, so a project with no
       shape never meets it. A stub in the directory and a clause in
@@ -1080,7 +1083,10 @@
       lands, the rule ships unfindable**, and this line is the
       record of it.
 
-- [ ] **Now, and narrow:** one `Known already:` line about shapes on
+- [x] DONE 2026-09-27, playbook v7 — the line on all seven steps,
+      Release's after the kit's three facts; the seed's three
+      references moved to v7. Original item:
+      **Now, and narrow:** one `Known already:` line about shapes on
       the playbook's steps — check `temp/` for shapes staged for this
       step and say what was found including nothing; read what the
       step made against whatever governs it. This is the whole fix

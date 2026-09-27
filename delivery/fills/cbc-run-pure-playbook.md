@@ -68,12 +68,25 @@
      all three. The goal line already said "public identity"; the
      title now matches it. Held for a later version, not this one:
      the branch-per-step rule and its gate item's closing wording,
-     which wait on run 3's trial verdict. -->
+     which wait on run 3's trial verdict.
+     v7 (2026-09-27, the gap ADR-0035 decision 8 names, no new
+     procedure): every step's gate carries one Known already fact
+     about shapes — temp/ looked in for shapes staged for this
+     step, what was found said including nothing, and what the
+     step made read against every shape governing it. The shapes
+     rule loads only when a file under .claude/shapes/ is read,
+     so a run with no shape never met it; a fact supplied into a
+     derived gate is the idiom Release already uses, and "none"
+     is a complete answer, so the item holds with no shape in
+     existence. Release's line gains it after the kit's three
+     facts, which the kit-refresh rule still reaches alone. -->
 
 # Playbook: CbC run — pure
 
-Playbook version: v6 (2026-09-11, provisional — Step 2 retitled
-Identity: name, description, remote, harvested from run 3; v5
+Playbook version: v7 (2026-09-27, provisional — one Known already
+fact about shapes on every step's gate, ADR-0035 decision 8; v6
+2026-09-11, Step 2 retitled Identity: name, description, remote,
+harvested from run 3; v5
 2026-09-07, Release derives its gate at opening too, the kit's
 three facts kept as Known already, harvested from run 3; v4
 2026-09-06, every gate but
@@ -87,6 +100,9 @@ Goal: the container exists — repo, records, arrangement — before content.
 Gate: derived when this step opens — verifiable facts, from the
 goal and the newborn's own records; written into this step before
 its work starts.
+Known already: `temp/` looked in for shapes staged for this
+step, what was found said in one line, nothing included; what the
+step made read against every shape governing it.
 Notes:
 
 ## Step 1: Framing  (cbc-framing)                   [ ]
@@ -100,6 +116,9 @@ Goal: know what we're building and why, before code.
 Gate: derived when this step opens — verifiable facts, from the
 goal, the named skill, and the briefing; written into this step
 before its work starts.
+Known already: `temp/` looked in for shapes staged for this
+step, what was found said in one line, nothing included; what the
+step made read against every shape governing it.
 Notes:
 
 ## Step 2: Identity (name, description, remote)     [ ]
@@ -108,6 +127,9 @@ Goal: the project's public identity decided, not defaulted.
 Gate: derived when this step opens — verifiable facts, from the
 goal and the run's own records; written into this step before
 its work starts.
+Known already: `temp/` looked in for shapes staged for this
+step, what was found said in one line, nothing included; what the
+step made read against every shape governing it.
 Notes:
 
 ## Step 3: Ground / infrastructure  (infra-establish)    [ ]
@@ -116,6 +138,9 @@ Goal: services stood up, constrained to need, verified both ways.
 Gate: derived when this step opens — verifiable facts, from the
 goal, the named skill, and the registry; written into this step
 before its work starts.
+Known already: `temp/` looked in for shapes staged for this
+step, what was found said in one line, nothing included; what the
+step made read against every shape governing it.
 Notes:
 
 ## Step 4: Skeleton & bootstrap  (cbc-bootstrap)    [ ]
@@ -125,6 +150,9 @@ real ground, with the evidence harness proven on one adversity.
 Gate: derived when this step opens — verifiable facts, from the
 goal, the named skill, and the registry; written into this step
 before its work starts.
+Known already: `temp/` looked in for shapes staged for this
+step, what was found said in one line, nothing included; what the
+step made read against every shape governing it.
 Notes:
 
 ## Steps 5..N-1: Invariant slices  (cbc-slice, one step per stage)
@@ -135,6 +163,9 @@ the original expectation.
 Gate: derived when each stage opens — verifiable facts, from the
 goal, the named skill, and the registry; written into the stage
 before its work starts.
+Known already: `temp/` looked in for shapes staged for this
+step, what was found said in one line, nothing included; what the
+step made read against every shape governing it.
 Notes:
 
 ## Step N: Release                                  [ ]
@@ -148,4 +179,7 @@ a stranger, its commands verified on a clean machine; known
 issues filed in TODO.md. Decided at framing, checked here:
 monitoring and alerts in place; deploy and rollback documented and
 tried once — each unless this run's own recorded exclusion.
+And `temp/` looked in for shapes staged for this step, what was
+found said in one line, nothing included; what the step made read
+against every shape governing it.
 Notes:

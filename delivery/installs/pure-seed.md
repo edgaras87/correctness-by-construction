@@ -202,10 +202,10 @@ sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
     "$bundle_dir"/delivery/fills/cbc-run-pure-playbook.md; echo) \
     -e '/<!-- STEPS-BEGIN/,/<!-- STEPS-END/{/STEPS-BEGIN/b;/STEPS-END/b;d}' \
     PLAN.md
-sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run-pure v6 at $bundle_pin|" \
+sed -i "s|<playbook> v<N> at <handbook or concept commit>|cbc-run-pure v7 at $bundle_pin|" \
     PLAN.md
 git add PLAN.md
-git commit -m "chore: seed — steps into PLAN, cbc-run-pure v6 @ $bundle_pin"
+git commit -m "chore: seed — steps into PLAN, cbc-run-pure v7 @ $bundle_pin"
 ```
 
 One pin in every subject, ours: the container arrives inside the
@@ -309,7 +309,7 @@ item is a verifiable fact:
 - PLAN's STEPS region holds the pure variant's sequence —
   identical to cbc-run-pure-playbook.md from its first step down
   at the subject's pin — both markers in place, and the "Steps
-  from:" comment names cbc-run-pure v6 at the bundle pin. No
+  from:" comment names cbc-run-pure v7 at the bundle pin. No
   playbook file exists, and no line of the region states an
   assembly conclusion.
 - The five birth placeholders are filled and no more: the birth
