@@ -923,3 +923,15 @@
   three convention skills. Those we run; this we could not, and a
   rule held by the repo it cannot apply to is the fault ADR-0036
   closed for `convention-lifecycle`.
+
+- 2026-09-27 Copies renewed: `commit-messages` and `commit-plan`,
+  copied whole from `delivery/container/` at 76f077c. What changed
+  in them: the Decisions footers cite `CBC ADR-0038` by the adopted
+  claim's letter where they cited `HANDBOOK ADR-nnnn`; no rule
+  moved. Diffed before copying: the footers were the only lines
+  apart.
+  Why: a run holds no handbook, and neither, since ADR-0025, does
+  this repo's text; the six decisions are adopted in ADR-0038 so a
+  footer cites something its reader can open.
+  Rejected: editing the footers in place. A copy is changed by
+  being copied anew (the 2026-09-26 entry above).

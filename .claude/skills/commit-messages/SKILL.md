@@ -123,8 +123,8 @@ touches nothing else.
 
 ## Decisions
 
-- HANDBOOK ADR-0005 — Conventional Commits over plain 50/72
-- HANDBOOK ADR-0019 — the agent's files and the project's records
+- CBC ADR-0038, 1a — Conventional Commits over plain 50/72
+- CBC ADR-0038, 1c — the agent's files and the project's records
   never share a commit
-- HANDBOOK ADR-0035 — the stop is this file's sentence, gated
+- CBC ADR-0038, 1f — the stop is this file's sentence, gated
   nowhere
