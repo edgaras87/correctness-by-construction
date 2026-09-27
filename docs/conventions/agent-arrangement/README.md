@@ -2,12 +2,14 @@
 
 The agent side of a project: the files that make an agent work here
 a particular way, and that a copy of the project can drop while
-keeping the work. HANDBOOK ADR-0019 drew the line; this page says what sits
-on its far side and what each file may hold (HANDBOOK ADR-0033).
+keeping the work. The line is detachability (ADR-0038, 1c): a file
+is agent-side when removing it breaks nothing about the project.
+This page says what sits on its far side and what each file may
+hold.
 
-**What ships:** two stubs in the starter kit, linked from
-[`stubs/`](stubs/) beside this page — the entry file `CLAUDE.md`
-and the decisions log `.claude/decisions.md`. Every rule here rides
+**What ships:** two stubs in the container, `delivery/container/`
+— the entry file, shipped at `.claude/CLAUDE.md`, and the decisions
+log `.claude/decisions.md`. Every rule here rides
 as a comment in the file it governs, met when the file is opened to
 edit it. This page explains the arrangement; the stubs state the
 rules. Nothing here is loaded into an agent.
@@ -20,10 +22,10 @@ The model describes; this page explains against it.
 
 ## 1. What the arrangement is
 
-A closed list of paths (HANDBOOK ADR-0019):
+A closed list of paths (ADR-0038, 1c):
 
-- **`CLAUDE.md`** — the entry file, §2. The name is the tool's
-  (HANDBOOK ADR-0014); what goes in it is this convention's.
+- **`CLAUDE.md`** — the entry file, §2. The name is the tool's;
+  what goes in it is this convention's.
 - **`.claude/`** — the skills directory, the rules directory, the
   shapes directory, the decisions log, and the tool's settings,
   tracked and machine-local, §3.
@@ -47,12 +49,12 @@ at the start of every session before it is given any task. It is a
 map — what the project is, where the records are — and the little
 that has to be present on every task because no moment would deliver
 it. Which conventions apply is not in it: the registry in
-`.claude/decisions.md` is that list (§3, HANDBOOK ADR-0034), and each
+`.claude/decisions.md` is that list (§3), and each
 convention reaches the agent through its own channel.
 
 **Why.** The records teach their own use, and so does every stub in the
 arrangement — each carries its rules in embedded comments, met at the
-moment the file is opened (HANDBOOK ADR-0004). That only works if the
+moment the file is opened. That only works if the
 agent knows the files exist. The entry file is the one piece of text
 present before anything is looked up, and it earns that by being a map,
 not a rulebook.
@@ -60,9 +62,11 @@ not a rulebook.
 **Where.** Repo root, or under `.claude/` — Claude Code reads
 `CLAUDE.md` at either address as one file (model §10), and a project may
 take the second so that every agent-side path sits in one directory.
-Whatever the tool looks for otherwise (HANDBOOK ADR-0014). The starter
-kit ships it at the root; a bundle that wants the other address
-renames it at birth (HANDBOOK ADR-0035, decision 5).
+Whatever the tool looks for otherwise. The container ships it
+under `.claude/`, so that every agent-side path sits in one
+directory; a project that wants it at the root moves it, which one
+run showed to be a pure rename — content untouched, the tool
+reading the file at the new address from the next session.
 
 **How.** The file is paid for on every task, so the boundary is a
 test applied to every line, not a list of sections. Three tests, the
@@ -73,30 +77,30 @@ same three the stub's guard comment states:
   the rule rides in a skill or a stub, it is not repeated here.
   **It points; it never restates**: a summary is lossy on arrival,
   and then two files disagree while both look current (model claim
-  M1; HANDBOOK ADR-0014 records the measured case).
+  M1, measured once: 98 lines, two files, three disagreeing copies
+  of one rule).
 - **No moment.** A line with a moment goes where the moment is — the
   record's stub, README, a skill, or, for a rule true only under one
   directory, a rules file with a `paths:` list (§3) — and is read
   there, at the moment it is about, instead of on every task it is
   not.
 - **Nothing else would deliver it.** What stays is what no channel fires
-  for: a map, a stance, a fact whose failure is not noticing it
-  (HANDBOOK ADR-0018). A rule that acts somewhere lives there; the entry
-  file says where.
+  for: a map, a stance, a fact whose failure is not noticing it. A
+  rule that acts somewhere lives there; the entry file says where.
 
 What passes, in practice, is five kinds of content: what the project is
 · the records table · build and test commands, where the project has
-them (HANDBOOK ADR-0026) · how to work here · local rules that have no
+them · how to work here · local rules that have no
 moment. That is a description of what the tests leave, not a fence — a
 line that passes belongs whatever heading it sits under, and no heading
 saves one that fails. The first two are present at birth; the other
-three arrive when they become true (HANDBOOK ADR-0032), and take their
+three arrive when they become true, and take their
 headings from the names below — *How to work here*, *Local rules* — so
 two born repos spell them the same way.
 
 *The records table* is the slot this convention provides and
 project-recording fills: its rows, and the requirement that every row
-names a moment, belong to that convention (its §13, HANDBOOK ADR-0018).
+names a moment, belong to that convention (its §13).
 
 *How to work here* is the stance a project expects where it is not
 the obvious one — "decide before building", "prefer exploring over
@@ -106,8 +110,8 @@ what is true across projects. It is also the easiest slot in which to
 start rebuilding the rulebook, so it takes stance and not rules.
 
 *Local rules* pass one test before they enter: **a rule earns ambient
-space only when its failure is not noticing the moment**
-(HANDBOOK ADR-0018). A test prerequisite, a migration rule, a service
+space only when its failure is not noticing the moment**. A test
+prerequisite, a migration rule, a service
 that must be running fails: each has a moment, and goes where the moment
 is — the record's stub, README, a skill the project adds under
 `.claude/skills/`, a rules file under `.claude/rules/` (§3). Most facts
@@ -122,15 +126,15 @@ every task, including the tasks it is irrelevant to, and each line added
 lowers compliance with every other (model claim A2, assumed). So its
 size is a running concern, not a one-time one. The cost is what the
 harness delivers, not the file: HTML comments are dropped on load (model
-§10, HANDBOOK ADR-0036), so the guard and the records comment cost
+§10), so the guard and the records comment cost
 nothing per task and are read when the file is opened to edit it — the
 moment they govern. If what remains is longer than a screen, something
 in it belongs in a convention, a record or a skill; shrinking it is
 maintenance, not tidying. Noticing that has no moment of its own, so the
 one moment that re-reads the file is the project retrospective: the
 plan's questionnaire asks it, and every line passes the three tests
-again or leaves — the same move the decisions log makes for its entries
-(HANDBOOK ADR-0020).
+again or leaves — the same move the decisions log makes for its
+entries.
 
 ## 3. `.claude/`
 
@@ -141,8 +145,8 @@ place). A project may add
 a skill of its own, for a moment-bound local rule the entry file
 must not hold (§2) — permitted, and not yet
 defined: what such a skill is, whether it registers,
-how it survives the HANDBOOK ADR-0019 split are open until a project has
-written one.
+how it survives the agent/project split are open until a project
+has written one.
 
 **`rules/`** — instruction files read like the entry file, with one
 extra: a `paths:` list at the top makes the file load only when the
@@ -171,8 +175,8 @@ here and `rules/`, and what an arriving delivery does are the rule's,
 in `rules/shapes-lifecycle.md` — which this convention places rather
 than states.
 
-**`decisions.md`** — the arrangement's decision log (HANDBOOK ADR-0020):
-append-only, dated, three lines per entry — what changed, why, what
+**`decisions.md`** — the arrangement's decision log: append-only,
+dated, three lines per entry — what changed, why, what
 was rejected. The standing rule rides as a comment in the artifact it
 governs; the log keeps the why and the rejected options; neither
 repeats the other. It doubles as the project's convention registry
@@ -183,8 +187,11 @@ in its own stub.
 tracked, and the one place the arrangement holds a gate as repo state.
 Not born with the project: a project adds it when it has a rule that
 must not depend on text — a permission rule that halts a command at a
-prompt the human answers — or an exclude to declare (HANDBOOK ADR-0035,
-HANDBOOK ADR-0036). JSON carries no comment, so the why lives in the
+prompt the human answers — or an exclude to declare. The commit
+stop is not such a rule: it is one sentence in commit-messages,
+gated nowhere (ADR-0038, 1f), and a project that adds the gate does
+so for a reason of its own. JSON carries no comment, so the why
+lives in the
 decisions log, never in the file; later inserts are merges, not text
 edits.
 
@@ -208,12 +215,12 @@ preference into the project's truth. The kit ships no stub for it.
 - **Shipping the stance and local-rules slots as empty sections** — a
   header waiting for content is weight with no guard in it; the stub
   carries the test, and the header arrives with the first line that
-  passes it (HANDBOOK ADR-0032).
+  passes it.
 - **Restating a convention's rules "so they are always in context"** —
   the rulebook pattern; it grows once per convention and drifts from
   the source.
 - **A second entry file kept beside the first for another tool**,
-  unless that tool is actually in use (HANDBOOK ADR-0014).
+  unless that tool is actually in use.
 - **Project truth in the arrangement** — local status, a decision
   about the system, a plan step. They belong in PLAN.md, `docs/adr/`,
   the records; the arrangement is what a portfolio copy drops.
@@ -230,17 +237,17 @@ preference into the project's truth. The kit ships no stub for it.
 
 Every rule here governs a file the kit ships and rides in it as a
 comment: the entry file's comments carry points-never-restates, the
-guard and the size rule; the decisions log's carry HANDBOOK ADR-0020's.
-Acting on the file is the trigger (HANDBOOK ADR-0004).
+guard and the size rule; the decisions log's carry its own. Acting
+on the file is the trigger.
 
 Not a skill, because the failure guarded against is a noticing
 failure: told "remember X", an agent writes X into the entry file
-where it stands, and a skill fires only on recognising the moment
-(HANDBOOK ADR-0018, HANDBOOK ADR-0015). Not paid at ambient cost
+where it stands, and a skill fires only on recognising the moment.
+Not paid at ambient cost
 either: the harness drops HTML comments from the entry file on
 load, so the comments
 are read when the file is opened to edit it and cost nothing on any
-other task (HANDBOOK ADR-0036). That is why §2's size rule counts the lines
+other task. That is why §2's size rule counts the lines
 the harness delivers; a long guard is free, a long records table is
 not.
 
@@ -251,9 +258,8 @@ text at an update, through the kit's protocol.
 
 ## Where to look
 
-- The stubs: in `delivery/container/` — the links were not
-  reproduced here (see this set's README, *Where these files
-  came from*).
+- The stubs: `.claude/CLAUDE.md` and `.claude/decisions.md` in
+  `delivery/container/`.
 - The records table the entry file carries:
   [`../project-recording/`](../project-recording/), its §13.
 - The `agent` scope: [`../commit-messages/`](../commit-messages/).
