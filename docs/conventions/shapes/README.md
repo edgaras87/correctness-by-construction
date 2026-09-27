@@ -25,9 +25,9 @@
 
 # Shapes
 
-**What a kind of a project's output looks like — its form, never
-its content — written from work that exists, and held where its
-place decides its force.**
+**What a kind of output looks like, in whichever repository makes
+it — its form, never its content — written from work that exists,
+and held where its place decides its force.**
 
 **What ships:** the rule, which a project holds at
 `.claude/rules/shapes-lifecycle.md` and which loads when a file
@@ -36,8 +36,9 @@ states it. What this repo holds of the convention is §4.
 
 ## 1. What a shape is
 
-A **shape** says what a kind of a project's output looks like: its
-form, never its content.
+A **shape** says what a kind of output looks like: its form, never
+its content. *Project*, below, means whichever repository makes the
+output — a run, or this one.
 
 The two halves matter equally. *Form* is what recurs — which parts a
 record has, what each is for, what a worked example must contain.
@@ -122,8 +123,8 @@ someone decides the question is open again.
 
 ## 4. This repo's seat
 
-This repo makes documents, not outputs of a project's kind, and it
-has no steps and no gates. So of §3 it runs the exposed case only:
+This repo makes outputs too — a reading is one — but it has no
+steps and no gates. So of §3 it runs the exposed case only:
 a shape here is a rule under `.claude/rules/` with its own `paths:`,
 marked as a shape by its Governs line, loading while the file it
 governs is written. There is no `.claude/shapes/` here, nothing is
@@ -185,13 +186,16 @@ takes the first and leaves the second, and nothing has to be
 rewritten at the hand-off to make that possible. This is why the
 rule asks a project to mark its illustrations apart.
 
-*Intended, and a named gap: a staged shape is therefore not a
-pinned copy — it becomes the project's own after the gate reads it —
-while `delivered-copies.md` loads on `temp/` and says to take what
-is there whole. No unexposed shape exists on either side, so nothing
-fires wrongly today. What closes it is written from the first
-staging: the note names a staged shape as one, and the take excludes
-it. Not before (CBC ADR-0037).*
+*Intended: staging a shape for a gate is a third act of the
+exchange, beside read and deliver, and not a delivery. It reads only
+which step the run stands at; it moves neither the pin nor the
+read-through; its note is one line naming the shape and the step;
+and what it stages becomes the project's own after the gate reads it,
+never a pinned copy — so `delivered-copies.md`, which loads on
+`temp/` and says to take what is there whole, must not apply to it.
+No unexposed shape exists on either side, so nothing fires wrongly
+today. Its skill, and the copies rule's exclusion, are written from
+the first staging, not before (CBC ADR-0037 decision 5).*
 
 **Birth and delivery, drawn.** Where a shape of each kind sits here,
 and the two different moments at which each reaches a run. Every
@@ -229,8 +233,9 @@ flowchart LR
 line is the point.** Nothing is sent upward and nothing is fetched:
 this repo opens a run's tree read-only and looks at both places — at
 `.claude/shapes/` for what the project kept and what its dated lines
-say it refused, and at `.claude/rules/` for the copy against the pin
-it was sent at. The run never reads this repo at all. That asymmetry
+say it refused, when a backlog line of the run's offers it, and at
+`.claude/rules/` for the copy against the pin it was sent at, which
+the exchange reads at every reading. The run never reads this repo at all. That asymmetry
 is the whole traffic model, and a solid arrow in one direction with a
 dashed one in the other is the only part of this picture that states
 it rather than captioning it.
@@ -238,7 +243,8 @@ it rather than captioning it.
 What travels upward is a **finding**, never a proposal: one project
 saying what it arrived at — and it travels by being *read*, not by
 being sent. A project offers by keeping its shape where its own
-records are, and this repo finds it when it next reads that run. What must not travel is a status, not a
+records are and pointing at it from its backlog, and this repo reads
+it at the next reading (the exchange, §6). What must not travel is a status, not a
 wording — a shape handed down as a standard is inherited rather than
 derived, and the next project's own answer is lost before it is
 written. The protection is in how a shape moves, not in how vaguely

@@ -814,6 +814,58 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Every manual says its seats, candidate rule for descriptions
+      (2026-09-27, the reviewer). Twice now a manual grew a section
+      because the two sides do different things — the exchange (§3
+      down, §4 the take, §6 up) and shapes (§4, this repo's seat) —
+      and nothing tells the writer of the next manual to ask. The
+      rule: a manual answers one question, does this repo use the
+      convention the same way a run does. Same way — one sentence
+      says so. Differently — a section per seat. No moment here at
+      all — one line says so, "not used in this repo", so a reader
+      does not hunt for our half. Two pieces of work: the rule, in
+      the conventions index beside "Writing an artifact"; and one
+      pass over the six manuals that never answered — project-
+      recording, commit-messages, repo-hygiene, commit-plan, agent-
+      arrangement, visual-comparison — adding the sentence each.
+      Today no convention is run-only; one artifact is, the shapes
+      rule, and the shapes manual §4 says why. Belongs with the
+      maintenance rule for core descriptions below, or lands first
+      as its simplest case.
+
+- [ ] The words for what things derive from — decide them, in
+      their own piece of work (2026-09-27, the reviewer). Current
+      state, as explained in conversation and nowhere else:
+      **description** is the wider word — any body of writing that
+      things derive from; three kinds exist here, the concept, each
+      convention's manual, and `master.md`. **Manual** is one kind:
+      a convention's description, the README inside
+      `docs/conventions/<name>/`; for a convention, "its
+      description" and "its manual" name the same file. **The
+      index**, `docs/conventions/README.md`, is neither — it lists
+      the manuals. **`foundation`** is what a derived file says
+      about its description, from the derived side only. Three
+      relations, three pairs of words, not one: master and copy
+      (same file, two places, bytes match at the pin); description
+      and artifact (stated, made usable); deliverer and run (the
+      two repositories). **`source`** is not a word of ours — run 3
+      used it for the deliverer, which is why the field is not
+      called that — and it floats in the maintenance-rule item
+      below, where it means description.
+      **The reviewer's question, to answer here:** does the split
+      `manual → conventions` but `description → concept,
+      conventions, any body of writing` carry meaning, or did it
+      arise from one conversation, so that either word may serve
+      for both sets? What to check: where each word is used in
+      live text today (`master.md`'s *the words* list has neither;
+      the exchange's manual and ADR-0036 say "description" for the
+      exchange's own page; the conventions index says "manual"
+      throughout); whether the concept is ever called a manual
+      anywhere, and whether calling it one would mislead; and
+      whether `master.md` is a description or the map of them.
+      Whatever is decided lands in *the words*, and the field's
+      name is re-read against it.
+
 - [ ] Birth becomes a skill, `exchange-birth`, written from scratch
       (2026-09-26, the reviewer). Not a rewrite of `pure-seed.md`:
       written from the exchange's manual the way `exchange-read` and
@@ -859,7 +911,11 @@
       convention, before the delivery to run 3, so the citations do
       not ship once more. Its own change set.
 
-- [ ] Shapes need their source of truth, and it may already exist
+- [x] DONE 2026-09-27 (ADR-0037) — the model became the manual at
+      `docs/conventions/shapes/`, the rule derives from it and was
+      cut to instruction, our seat is the manual's §4, the lesson is
+      one paragraph in the rule. Original item:
+      Shapes need their source of truth, and it may already exist
       (2026-09-26, the reviewer). Three facts. **One** — what ships
       is `shapes-lifecycle.md`, a rule, and behind it sits ADR-0035
       (a record) and `docs/models/shapes.md` (a model); there is no

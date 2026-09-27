@@ -6,6 +6,66 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-27  (shapes become a convention — one set, seven commits and one revision)
+
+`shapes-convention-2026-09-26`, cut from `main` after the layout
+branch fast-forwarded and was deleted.
+
+- **The model was the manual all along.** `docs/models/shapes.md`
+  moved to `docs/conventions/shapes/README.md` as a rename and was
+  reshaped, not rewritten: a manual's header, an opening like the
+  other manuals written here, our seat as a new §4, placement owned
+  in §5, the 09-26 lesson as a dated finding, a closing list of what
+  derives from it. The pictures stayed. Eight conventions.
+- **The rule was cut in half on the reviewer's reading.** 218 lines
+  to 108, against the index's own test — a rule is the instruction,
+  its why is the manual's. Every instruction of the old file checked
+  present in the new; three explanatory passages with no home in the
+  manual moved there; one instruction the manual stated and the rule
+  never did, kept. The plan was revised on its own commit first.
+  Run 3 gets the shorter rule and one new paragraph in one take.
+- **A model's header carried into a manual said the wrong thing.**
+  "If this and the rule disagree, the rule is what binds and this is
+  wrong" was right for a model and backwards for a manual: the rule
+  derives from it. The reviewer caught it. Both manual headers and
+  the index's two handbook lines on the relation now say a
+  disagreement is decided, practice the evidence, and the other file
+  follows in the same commit.
+- **"A project's output" was a run's word.** The convention governs
+  this repo too, and this repo makes outputs — a reading is one. One
+  sentence defines *project* as whichever repository makes the
+  output; three lines lost the possessive.
+- **Staging a shape for a gate is not a delivery.** The reviewer
+  asked whether it should be separate from deliver, since deliver
+  assumes a reading and this needs only the run's current step. Yes:
+  a third act, moving neither number, its note one line, its result
+  the run's own. ADR-0037 decision 5 was revised from "a gap in a
+  delivery" to that before acceptance; the manual says the same as
+  intended. Not built — no unexposed shape exists.
+- **The exchange corrected the shapes manual once more.** It said we
+  read a run's `.claude/shapes/` at a harvest; the exchange says a
+  run's own file is read when a backlog line offers it. The exchange
+  has run; the manual follows it.
+- **Three items filed, on the reviewer's questions.** The words for
+  what things derive from — description, manual, foundation, and
+  not source — with the question whether the description/manual
+  split carries meaning; every manual says its seats, with a pass
+  over the six that never did; and the gates question answered
+  rather than filed — gate items predate shapes, the three shape
+  items reach a run through the playbook as a fill, and the narrow
+  fix already in TODO is one line per step, right after this set.
+- **`master.md`'s first erratum closes.** Every one of the
+  container's seventeen files is the artifact of a manual. *The
+  words* gains description, manual and foundation.
+
+Resume: close the plan. Then the one-line gate item on the
+playbook's steps (TODO, "Now, and narrow"), one commit. Then the
+handbook filtered out of live text, its own set. Then read run 3
+fresh under `exchange-read` and deliver: the note carries the
+shorter rule, the field, and the sentence its slice-record shape
+argues against. `working-a-reading.md` stays in `temp/` until that
+reading.
+
 ## 2026-09-26, evening  (the mirrored layout and the `foundation` field — one set, seven commits)
 
 ADR-0036 decision 7, landed on `mirrored-layout-2026-09-26`, cut

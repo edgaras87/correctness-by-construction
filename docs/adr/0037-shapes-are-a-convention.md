@@ -1,8 +1,10 @@
 # 0037. Shapes are a convention, and the model is its manual
 
 Date: 2026-09-27
-Status: Proposed (opened under the commit plan for the shapes
-convention; flips Accepted in that set's records commit)
+Status: Accepted (2026-09-27, at the set's records commit; opened
+Proposed under the commit plan for the shapes convention and revised
+once at a boundary — decision 5, from a gap in a delivery to a third
+act of the exchange, on the reviewer's reading)
 
 ## Context
 
@@ -88,13 +90,21 @@ copy, and a copy that repeats is what drifts.
    in the model and in `delivery/README.md` both. The manual owns it;
    the README keeps two sentences and a pointer.
 
-5. **One gap is named and not closed.** An unexposed shape staged for
-   a gate is not a pinned copy: it becomes the run's own after the
-   gate reads it. `delivered-copies.md` loads on `temp/` and says to
-   take what is there whole. No unexposed shape exists on either
-   side, so nothing fires wrongly today. What closes it — the note
-   naming a staged shape as one, and the take excluding it — is
-   written from the first staging, not before.
+5. **Staging a shape for a gate is a third act of the exchange, and
+   it is named, not built.** It is not a delivery: it reads only
+   which step the run stands at, moves neither the pin nor the
+   read-through, carries one line naming the shape and the step, and
+   what it stages becomes the run's own after the gate reads it —
+   never a pinned copy. So neither `exchange-read` nor
+   `exchange-deliver` is its home, and `delivered-copies.md`, which
+   loads on `temp/` and says to take what is there whole, does not
+   know it. No unexposed shape exists on either side, so nothing
+   fires wrongly today. What closes it — a skill of its own, and the
+   copies rule's take excluding what a note names as a shape — is
+   written from the first staging, not before. *Revised at step 6's
+   boundary, on the reviewer's reading: the first draft called this
+   a delivery with a gap, which would have sent a shape down the
+   path built for updates.*
 
 6. **ADR-0035 decision 9 is superseded in part.** The description of
    shapes is a manual, not a model; `docs/models/` holds two. The

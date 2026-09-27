@@ -73,11 +73,12 @@ and is either derived from it or checked against it.
 
 ### 1.2 The conventions — `docs/conventions/`
 
-**Seven manuals: how work is done here, and why each rule is the
+**Eight manuals: how work is done here, and why each rule is the
 shape it is.** Recording, committing, hygiene, how an agent is
-arranged, how a choice between things you look at is settled, and
-the exchange — how a delivery goes down to a run and how what the
-run learned comes back.
+arranged, how a choice between things you look at is settled, the
+exchange — how a delivery goes down to a run and how what the run
+learned comes back — and shapes, what a kind of output looks like
+and where that description sits.
 
 None of it is CbC. The concept is about how a system is built; the
 conventions are about how a repo is kept.
@@ -88,11 +89,13 @@ conventions are about how a repo is kept.
 - **Each convention is two things kept apart**: the manual at
   `docs/conventions/<name>/README.md`, and its artifacts — real
   files in `delivery/container/`, which is the master.
-- **Seven, not ten.** `decide-first`, `option-comparison` and
+- **Eight, not ten.** `decide-first`, `option-comparison` and
   `artifact-kinds` were discarded on 2026-09-24 and nothing replaced
   them. `convention-lifecycle` went on 2026-09-26 and the exchange
   took its place (ADR-0036) — the first convention whose artifacts
-  split between the two arrangements in section 4.
+  split between the two arrangements in section 4. `shapes` arrived
+  on 2026-09-27 (ADR-0037), its model reshaped into the manual it
+  had been all along.
 
 ## 2. The delivery — what a project gets, and where it goes
 
@@ -129,16 +132,13 @@ file, the agent decisions log, three convention skills, two rules,
 the hygiene files.
 
 **This is the conventions made usable**, the way the method is the
-concept made usable. Sixteen of its seventeen files are the
-artifacts of one of the seven manuals in 1.2 — the records belong to
+concept made usable. Every one of its seventeen files is the
+artifact of one of the eight manuals in 1.2 — the records belong to
 `project-recording`, the entry file and the decisions log to
 `agent-arrangement`, the three dotfiles to `repo-hygiene`, the
-three skills to the three conventions named after them, and
-`.claude/rules/delivered-copies.md` to the exchange.
-
-*The seventeenth is `.claude/rules/shapes-lifecycle.md`, which has
-no manual. It arrived from run 3 under ADR-0035 and was never given
-one — the one artifact here that nothing in 1.2 explains.*
+three skills to the three conventions named after them,
+`.claude/rules/delivered-copies.md` to the exchange, and
+`.claude/rules/shapes-lifecycle.md` to shapes.
 
 A project with no correctness-by-construction in it would still want
 most of this, which is why it is a group of its own and not part of
@@ -276,7 +276,9 @@ Entry file: *"A concept repo... Documents only — no code, no
 runs."* Three convention skills — `commit-messages`, `commit-plan`,
 `visual-comparison` — and the exchange's two, `exchange-read` and
 `exchange-deliver`. One rule, `exchange-reading.md`: the shape of
-the reading, loading while one is written.
+the reading, loading while one is written — the exchange's artifact
+and the shapes convention's one instance here, since this repo has
+no gate and holds shapes exposed only.
 
 *The records it keeps — `PLAN`, `TODO`, the devlog, the ADRs, the
 decisions log, `CHANGELOG`, `ARCHITECTURE` — are not on this page.
@@ -371,18 +373,25 @@ Used across both repos, defined here and nowhere else.
   copy changes only by being copied anew.
 - **made usable** — what a stated body becomes in the delivery:
   the concept as the method, the conventions as the container.
+- **description** — any body of writing things derive from: the
+  concept, a manual, this page.
+- **manual** — a convention's description, at
+  `docs/conventions/<name>/README.md`. Never shipped.
+- **foundation** — the frontmatter line by which a shipped file
+  names the description it derives from. Not *source*: that was a
+  run's word for the deliverer, and is not ours.
 
 ## What this page knows is wrong
 
-Two things, each left standing where it was found:
+One thing, left standing where it was found:
 
-1. **2.3** — `shapes-lifecycle` ships with no manual behind it.
-2. **4.1** — this repo's own records are not on the map, and
+1. **4.1** — this repo's own records are not on the map, and
    `ARCHITECTURE.md` describes section 2 a second time.
 
 Two left the list on 2026-09-26, with ADR-0036: the asymmetry is
 written down in the exchange's manual, and the shipped entry file no
-longer forbids what the shipped rule permits.
+longer forbids what the shipped rule permits. One left on 2026-09-27,
+with ADR-0037: `shapes-lifecycle` has a manual behind it.
 
 When one is fixed it leaves this list. When the list is empty, this
 page is claiming to be current — and that is the claim to distrust

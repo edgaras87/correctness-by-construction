@@ -121,19 +121,19 @@ nothing
 tracks that repo. Fourteen of sixteen files are still as they
 arrived; what differs is listed beside the set as a reading aid
 for a re-sync, not a gate — and two files were added that the
-kit never had: one convention (ADR-0031) and the shape
-lifecycle, the container's first `.claude/rules/` artifact
-(ADR-0035). Three more conventions were added and discarded,
-2026-09-24 — two unused, and `artifact-kinds` after five firings in
-a year. The seven convention manuals sit in
+kit never had: one convention (ADR-0031) and the shapes rule,
+the container's first `.claude/rules/` artifact (ADR-0035, its
+convention ADR-0037). Three more conventions were added and
+discarded, 2026-09-24 — two unused, and `artifact-kinds` after five
+firings in a year. The eight convention manuals sit in
 `docs/conventions/` — the *why* behind each rule, for a maintainer,
 never shipped — and move with the rules they explain. Inside the
-container the parts divide by how they reach a run: the seven
-convention skills and the shape lifecycle travel again at an
-update; the record stubs, the entry files and the hygiene files are
-the run's own from birth and never travel twice. Ten conventions,
-seven skills — the other three reach a run through the stubs and
-templates they ship as.
+container the parts divide by how they reach a run: the three
+convention skills and the two rules travel again at an update; the
+record stubs, the entry files and the hygiene files are the run's
+own from birth and never travel twice. Eight conventions, three
+skills and two rules — the other three reach a run through the
+stubs and templates they ship as.
 Why shaped this way: ADR-0025 (ours, with the fork point recorded),
 ADR-0024 (the take that brought it here), ADR-0031 (three
 conventions of our own, where every earlier one came from the
