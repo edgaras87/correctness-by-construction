@@ -21,7 +21,7 @@ next update, like any project's (HANDBOOK ADR-0041). The container
 is copied whole into a new project, as real files, which is why it
 has to be the origin (HANDBOOK ADR-0040).
 
-## The seven
+## The eight
 
 | Convention | Manual | Artifacts |
 |---|---|---|
@@ -32,6 +32,7 @@ has to be the origin (HANDBOOK ADR-0040).
 | exchange | [exchange/](exchange/) | a rule shipped to the run; two skills and a shape held here |
 | agent-arrangement | [agent-arrangement/](agent-arrangement/) | the entry-file and decisions-log stubs |
 | visual-comparison | [visual-comparison/](visual-comparison/) | a skill: how a structure is shown, settled by rendering |
+| shapes | [shapes/](shapes/) | a rule shipped to the run; this repo's shapes are its instances |
 
 ## The chain
 
@@ -79,9 +80,9 @@ it unchanged.
 
 **What the chain produces** is not on it: an ADR for a decision
 with rejected options, a `temp/` draft for a measurement or a
-comparison, and the commits themselves. The remaining four
+comparison, and the commits themselves. The remaining five
 conventions — `project-recording`, `repo-hygiene`,
-`agent-arrangement`, `exchange` and the records they
+`agent-arrangement`, `exchange`, `shapes` and the records they
 govern — are not stages of this and fire on their
 own moments.
 

@@ -1,13 +1,14 @@
-<!-- This repo's, written here (CBC ADR-0035) rather than taken from
-     anywhere. It describes and demands nothing: what binds is the
-     rule, `delivery/container/.claude/rules/shapes-lifecycle.md`,
-     and where a shape sits is `delivery/README.md`. If this file
-     and either of those disagree, they are right and this is
-     wrong — say so here and fix it.
-
-     Written at the end of the set that made shapes real, from what
-     the implementation turned out to be. Written earlier it would
-     have been a guess that the work then had to correct.
+<!-- The shapes convention's manual: what a shape is, how one lives,
+     and why the rule is the shape it is. Never shipped; a run holds
+     the rule, `delivery/container/.claude/rules/shapes-lifecycle.md`,
+     which binds. This describes and demands nothing. If this and
+     the rule disagree, the rule is what binds and this is wrong —
+     say so here and fix it. Written here first (CBC ADR-0035) at
+     the end of the set that made shapes real, from what the
+     implementation turned out to be, and made the manual under
+     CBC ADR-0037 rather than rewritten. Same rule as master.md:
+     only what is checkable, and anything merely intended marked as
+     intended.
 
      **Its pictures illustrate its prose and never carry a fact
      alone.** Measured once and found false: five claims lived only
@@ -17,11 +18,19 @@
      The prose grew to cover them. Read where Mermaid does not
      render, this file should lose the pictures and no facts.
 
-     Delivered to nobody. `docs/models/` is this repo's (ADR-0026);
-     what reaches a project is the vocabulary entry, the rule, and
-     the placement — never this. -->
+     Delivered to nobody. What reaches a project is the rule, and
+     an exposed shape as a pinned copy — never this. -->
 
-# Shapes Model
+# Shapes
+
+**What a kind of a project's output looks like — its form, never
+its content — written from work that exists, and held where its
+place decides its force.**
+
+**What ships:** the rule, which a project holds at
+`.claude/rules/shapes-lifecycle.md` and which loads when a file
+under `.claude/shapes/` is touched. This page explains it; the rule
+states it. What this repo holds of the convention is §4.
 
 ## 1. What a shape is
 
@@ -34,6 +43,15 @@ record has, what each is for, what a worked example must contain.
 the work: a shape can say a guarantee needs an example with real
 numbers, and cannot say which numbers, or whether the guarantee is
 any good.
+
+*Found twice on 2026-09-26. A shape says what an output looks like
+while it exists; when the output opens, extends and closes is the
+owning convention's, and a shape that restates it is a copy of that
+convention, and a copy that repeats is what drifts. The reading's
+shape here restated the reading's lifecycle in its first section and
+lost the sentences rather than gaining a clause; run 3's
+`slice-record.md` opens with a section on how it is used that says
+the same thing from its side. The rule now says it in one sentence.*
 
 A shape is written from work that exists. Two ways one is born, and
 neither ranks above the other: **it recurred**, so a pair is the
@@ -100,9 +118,28 @@ are what the question is asked against. Changing an exposed shape
 does not withdraw it; it returns to `.claude/shapes/` only when
 someone decides the question is open again.
 
-## 4. Where a shape lives, between repositories
+## 4. This repo's seat
 
-Inside a project, §3. Between repositories, a shape follows the
+This repo makes documents, not outputs of a project's kind, and it
+has no steps and no gates. So of §3 it runs the exposed case only:
+a shape here is a rule under `.claude/rules/` with its own `paths:`,
+marked as a shape by its Governs line, loading while the file it
+governs is written. There is no `.claude/shapes/` here, nothing is
+staged to this repo, and the rule's §4 — what a gate does with what
+arrives in `temp/` — has no moment to fire on. The reviewer moves a
+shape, as the rule says, and here that means only writing one or
+withdrawing it. One exists: `.claude/rules/exchange-reading.md`, the
+form of a reading, which is the exchange's artifact and this
+convention's instance.
+
+Unexposed stock, when this repo holds any, is held apart from the
+groups and names its group (§5); today it holds none, and no
+directory is made ahead of a first occupant.
+
+## 5. Where a shape lives, between repositories
+
+Stated here once; `delivery/README.md` points here. Inside a
+project, §3. Between repositories, a shape follows the
 group of the thing it shapes — the same rule by which a skill
 belongs to exactly one group and travels whole. A slice record's
 shape is `method/`; a Spring harness file's is `spring-postgres/`; a
@@ -124,6 +161,14 @@ project's own shape**, whether it came back unchanged, changed by
 what the project found, or merged with what was already there. The
 staging leaves; the shape stays, with dated lines saying what
 arrived, what was taken and what was refused.
+
+*Intended, and a named gap: a staged shape is therefore not a
+pinned copy — it becomes the project's own after the gate reads it —
+while `delivered-copies.md` loads on `temp/` and says to take what
+is there whole. No unexposed shape exists on either side, so nothing
+fires wrongly today. What closes it is written from the first
+staging: the note names a staged shape as one, and the take excludes
+it. Not before (CBC ADR-0037).*
 
 **Birth and delivery, drawn.** Where a shape of each kind sits here,
 and the two different moments at which each reaches a run. Every
@@ -176,7 +221,7 @@ derived, and the next project's own answer is lost before it is
 written. The protection is in how a shape moves, not in how vaguely
 it is phrased.
 
-## 5. How a shape is used, and what a difference means
+## 6. How a shape is used, and what a difference means
 
 **Use, drawn.** What a gate actually does when a step closes: look in
 `temp/`, find which shapes govern what was made, read, and settle
@@ -225,25 +270,51 @@ line is not a withdrawal.
 
 **A shape record that never changes is either finished or unread.**
 
-## 6. What you may disagree with here
+## 7. What you may disagree with here
 
-All of it — that is what makes this a model rather than a rule.
-Nothing in this file has force. Disagreeing with §1's two births, or
-with §2's four boundaries, violates nothing and costs nothing; the
-worst case is that this file is wrong and wants correcting.
+All of it — a manual demands nothing. Disagreeing with §1's two
+births, or with §2's four boundaries, violates nothing and costs
+nothing; the worst case is that this file is wrong and wants
+correcting, and a run that contradicts it may have found its flaw
+(`docs/master.md` §3).
 
-What does bind is elsewhere and is short: the rule says how shapes
-live, what a gate does, and what the word means; `delivery/README.md`
-says where one sits. This exists so that a month from now the rule
-is recallable — so that "why is this a directory and not a rules
-file?" has an answer that is not
-archaeology.
+What does bind is the rule, and it is short: how shapes live, what a
+gate does, and what the word means. This exists so that a month from
+now the rule is recallable — so that "why is this a directory and
+not a rules file?" has an answer that is not archaeology.
 
-## 7. What this does not cover
+## 8. What this does not cover
 
-Which shapes this repo holds, and what it stages to whom — there are
-none yet, and the place for them arrives with the first. The gate
-items that make a project meet a shape at a step's close. And
-whether `docs/baselines/` holds anything that is a shape rather than
-trial evidence: §2 draws the line, and the sorting against it is
-its own work.
+What this repo stages to whom — no unexposed shape is held, and the
+place for them arrives with the first. The gate items that make a
+project meet a shape at a step's close, which belong to whatever
+defines the project's steps. And whether `docs/baselines/` holds
+anything that is a shape rather than trial evidence: §2 draws the
+line, and the sorting against it is its own work.
+
+---
+
+## What this is made usable as
+
+**Shapes are a convention**: this is its manual, which never ships,
+and what a repo holds is below. The first convention with no skill:
+its artifact is a rule, because a shape's moment is a path being
+touched.
+
+- **`shapes-lifecycle.md` — a rule, the run's, shipped** in the
+  container at `.claude/rules/`, loading on `.claude/shapes/**`. §1
+  to §3 and §6, from the run's seat, with the definition repeated
+  because a run cannot open this page.
+- **This repo's shapes — instances, not copies.** Rules under
+  `.claude/rules/` with a Governs line; `exchange-reading.md` today.
+  They follow §4 and hold no copy of the shipped rule, which has
+  nothing here to load on.
+- **`delivery/README.md` — a pointer.** Two sentences on placement
+  and this page's §5 for the rest.
+
+What derives from this page is that list. A change here walks it;
+a change forced in one of them is checked back against this page.
+
+*Does the name hold? Every section is about a shape — what one is,
+where it sits, who moves it, what a difference with one means. It
+held.*
