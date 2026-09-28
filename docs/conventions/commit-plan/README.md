@@ -1,23 +1,62 @@
+<!-- The commit-plan convention's manual: how work larger than one
+     commit is sequenced, reviewed and closed, and why the skill is
+     the shape it is. Never shipped; a run holds the skill.
+
+     What derives from this: the skill,
+     `delivery/container/.claude/skills/commit-plan/SKILL.md`, and
+     this repo's own copy of it. If one and this disagree, neither
+     is right by default: the disagreement is decided, practice
+     being the evidence (docs/conventions/conventions/ §3), and
+     whichever changes, the other follows in the same commit.
+
+     Came with the container; its decisions adopted as ours in CBC
+     ADR-0038 (1b, 1d, 1e, 1f); said in this repo's voice since
+     2026-09-27 and read to the shape on 2026-09-28. Same rule as
+     master.md: only what is checkable, and anything merely
+     intended marked as intended. -->
+
 # Commit plan
 
-How work larger than one commit is sequenced into commits before it
-starts,
-reviewed at every commit boundary, and closed with a note of what
-diverged. The unit is the change set: the scope between one commit
-and a whole project.
+**How work larger than one commit is sequenced into commits before
+it starts, reviewed at every commit boundary, and closed with a
+note of what diverged. The unit is the change set: the scope
+between one commit and a whole project.**
 
-**What ships:** [`SKILL.md`](../../../delivery/container/.claude/skills/commit-plan/SKILL.md), which a project holds at
-`.claude/skills/commit-plan/` and an agent opens when work turns
-out to need several commits. This page explains it; the skill
-states it.
+## What it is for
 
-**The seats.** A run runs its change sets under the skill it was
-born with, the plan file at its root its own. The deliverer runs
-its change sets under the same skill, its copy in `.claude/skills/`
-downstream of the container's, and the plan file at its root is
-its own.
+So that a change set can be inspected commit
+by commit before it lands, and a divergence at step *k* forces the
+remaining steps to be re-evaluated rather than continued on a
+plan that no longer holds. Adopted with the container (CBC
+ADR-0038, 1b): the failure it answered was lived elsewhere — a
+commit sequence kept by hand in a scratch file across four
+sessions, fitting no record — and is not ours to restate. Lived
+here since: every set since 2026-08-27 has run under it, and on
+2026-09-27 and 28 one set was revised four times at its boundaries
+on the reviewer's readings, each revision on its own commit — the
+failure it guards against, doing otherwise than the plan and
+fixing it afterwards or not at all, has not happened here.
 
-## What it is
+## What this is made usable as
+
+- **`delivery/container/.claude/skills/commit-plan/SKILL.md` — the
+  skill, shipped**, held at `.claude/skills/commit-plan/` and opened
+  when work turns out to need several commits. The rules, one
+  sentence each, with the decisions it rests on in its footer.
+- **`.claude/skills/commit-plan/SKILL.md` — the deliverer's copy**,
+  downstream of the container's, changed by being copied anew.
+
+This page explains; the skill states. What derives from this page
+is that list. A change here walks it; a change forced in one of
+them is checked back against this page.
+
+## The seats
+
+A run runs its change sets under the skill, the plan file at its
+root its own. The deliverer runs its change sets under the same
+skill, the plan file at its root its own.
+
+## 1. What it is
 
 A patch series, carried into a repo where work is committed
 directly instead of mailed: one logical change per commit, ordered
@@ -38,12 +77,13 @@ touching the material, with the durable record written from what
 held. The second kind makes the tail of a plan provisional, and the
 plan says so.
 
-## Why it is shaped this way
+## 2. Why it is shaped this way
 
 - **Its own convention, and not a record.** It is a scaffold, not a
   record: nothing about it is meant to be read a year later except
-  through `git log`, so it sits outside project-recording, whose
-  records are all append-or-evolve (ADR-0038, 1b).
+  through `git log`, so it sits outside
+  `docs/conventions/project-recording/`, whose records are all
+  append-or-evolve (CBC ADR-0038, 1b).
 - **Root placement.** An in-flight change set is visible from a
   clean clone, so "is work half-landed, and where did it stop?" is
   answerable without the working tree.
@@ -54,21 +94,31 @@ plan says so.
   seed's third run found four shapes in staged material that no
   conversation could have settled first, which made the
   provisional tail, the revision commit and the Proposed-then-
-  Accepted ADR the normal road for it (ADR-0038, 1e).
+  Accepted ADR the normal road for it (CBC ADR-0038, 1e).
 - **The records steps are planned.** A change set batches record
   moments, and a record's trigger can fire mid-set before its truth
   exists. Walking the entry file's records table while drafting the
-  commit list is what catches it (ADR-0038, 1d).
-- **The stop at every boundary is commit-messages' rule.** It was
-  stated here first, in §6, a file that opens only for multi-commit
-  work, and the reviewer's pace had to be said every session; the
-  sentence moved to commit-messages, which opens at every commit,
-  and this convention points at it (ADR-0038, 1f).
+  commit list is what catches it (CBC ADR-0038, 1d).
+- **The stop at every boundary is commit-messages' rule**,
+  `docs/conventions/commit-messages/`; this convention points at
+  it. *Until 2026-09-08 the sentence was stated here, in §6, a file
+  that opens only for multi-commit work, and the reviewer's pace
+  had to be said every session; it moved to where every commit
+  opens (CBC ADR-0038, 1f).*
+
+## What this does not cover
+
+- **The commit boundary itself, and the `agent` scope** —
+  `docs/conventions/commit-messages/`.
+- **The records a plan is walked against, and what an ADR is** —
+  `docs/conventions/project-recording/`.
+- **The order of the work inside a plan** — the domain skill that
+  knows the work; the index's chain, `docs/conventions/README.md`,
+  says which.
 
 ## Where to look
 
-- The rules: [`SKILL.md`](../../../delivery/container/.claude/skills/commit-plan/SKILL.md).
 - The commit boundary and the `agent` scope:
-  [`../commit-messages/`](../commit-messages/).
+  `docs/conventions/commit-messages/`.
 - The records table the plan is walked against:
-  [`../project-recording/`](../project-recording/).
+  `docs/conventions/project-recording/`.
