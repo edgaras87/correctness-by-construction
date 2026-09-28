@@ -24,7 +24,10 @@ artifacts a project holds.**
 **What it is for.** A convention is written when something made
 usable is needed, and the need is written down first: what work
 it makes possible, what went wrong without it, and the event that
-made it. What went wrong without this one: the rules for
+made it — as evidence, with the run or the date; or as intent,
+marked *on trial* with what would make it evidence and when to
+look again, after which the need is rewritten from what was seen
+or the convention goes. What went wrong without this one: the rules for
 conventions lived in the index, against its scope, and two of them
 were dead letters nobody had followed (CBC ADR-0039). The trigger:
 the descriptions item filed on 2026-09-27, and the index read
@@ -149,7 +152,8 @@ manual is opened (how a rule loads is
 one has: a header saying what derives from the page and how a
 disagreement ends; an opening statement; *what it is for* — the
 need, the failure lived without it, and the trigger, as evidence
-and never as intent; *what ships*; the seats; lessons as dated
+or as intent marked on trial, never intent dressed as evidence;
+*what ships*; the seats; lessons as dated
 italics; *what this does not cover*, the boundary against its
 neighbours by path; and *what this is made usable as*, the list a
 change to the page walks. The shape was not designed.
