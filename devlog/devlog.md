@@ -70,6 +70,22 @@ filter fast-forwarded; fast-forwarded and deleted at the close.
   birth case says the set that follows is where a newborn
   description walks its existing derivatives.
 
+### Later — a word, on its own branch
+
+- **A description is canonical** (`c56307e`). The reviewer's
+  reading: every description, concept or convention, is how we
+  understand the thing today — possibly wrong, binding regardless,
+  changed only for a reason — and the downstream applies it and
+  does not explain. That is now the definition in the master's
+  words and at the head of the rule in the conventions manual.
+  *Canonical* replaced *authoritative* in fourteen places, the
+  five concept headers among them, chosen for saying reference and
+  never correctness; *source of truth* is recorded as its gloss,
+  *standing* as the runner-up if it reads as settled. A stack
+  description, from which the three stack skills would derive, was
+  raised and not started: a third row in the master's table when
+  it comes, with its version rule the one edge to decide.
+
 Resume: on `main`, clean, not pushed. Two sets queued and either
 may go first: the reading of run 3 from `9869798` under
 `exchange-read` and the delivery (the note's contents in
