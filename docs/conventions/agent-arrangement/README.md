@@ -14,6 +14,14 @@ as a comment in the file it governs, met when the file is opened to
 edit it. This page explains the arrangement; the stubs state the
 rules. Nothing here is loaded into an agent.
 
+**The seats.** A run holds the arrangement as shipped: the entry
+file at `.claude/CLAUDE.md`, the decisions log, the container's
+skills and rules. The deliverer holds the same shape with two
+differences of content: its entry file at the repo root, the
+address the arrangement is described from, and in its `.claude/`
+the deliverer's own skills and rules — the exchange's two, the
+shape of a manual — which no run holds.
+
 The theory this leans on is `docs/models/agent.md`:
 the ambient channel (§4), the choosing table (§8), the claims (§12).
 The model describes; this page explains against it.

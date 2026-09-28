@@ -114,11 +114,15 @@ rule says a shape is born when a pair recurs. This is the pair.
    rule living in a manual or a skill leaves for the manual, with its
    wording.
 
-3. **Every manual says its seats.** One question: does this repo
-   use the convention the way a run does. The same way — one
-   sentence. Differently — a section per seat. Not at all here — one
-   line saying so. Placed after *what ships*. The six manuals that
-   never answered gain the sentence in this set.
+3. **Every manual names both seats**, the run's and the
+   deliverer's: what each holds and does under the convention, the
+   run first — one paragraph when they are alike, a section per
+   seat when they are not, and "no seat" said outright when one
+   side has none. Placed after *what ships*. The six manuals that
+   never answered gain the paragraph in this set. *Revised at step
+   5: the first wording asked whether this repo uses the
+   convention the way a run does — a question from one chair, with
+   the other seat assumed.*
 
 4. **The shape of a manual is a rule of ours**, exposed under
    `.claude/rules/` on `docs/conventions/*/README.md`, listing the
@@ -169,7 +173,10 @@ rule says a shape is born when a pair recurs. This is the pair.
    claim, and only that side's. The split carries meaning: the five
    edges above are where a manual and the concept are handled
    differently, and a reader who has only one word for both loses
-   them. *Source* stays a run's word for the deliverer.
+   them. *Source* stays a run's word for the deliverer. *Deliverer*
+   stays: *hub*, weighed at step 5, names a topology that is not
+   true — a run is blind, nothing flows up as files, the connection
+   is one person copying — and is the shape ADR-0038 left behind.
 
 8. **A pointer is a path.** Text that points at a manual names
    its directory with the slash — a path from the repo root, or a

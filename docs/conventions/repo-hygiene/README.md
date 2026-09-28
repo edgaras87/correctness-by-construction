@@ -10,6 +10,11 @@ they shape the repo by existing. The stack overlays under
 [`templates/<stack>/`](templates/) stay here and are appended from
 this repo at the step that makes the stack true.
 
+**The seats.** A run carries the three base files from birth and
+appends its stack's overlay at the step that makes the stack true.
+The deliverer carries the same three and holds the overlays
+without applying one, since it has no stack.
+
 ## The three files
 
 | File | What it governs | Why it must exist from day zero |

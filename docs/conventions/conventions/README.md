@@ -27,10 +27,9 @@ artifact here is the shape of a manual,
 `.claude/rules/convention-manual.md`, loading whenever a manual is
 read.
 
-**The seats.** This repo writes manuals and holds the master of
-every artifact; a run holds artifacts and writes no manuals. The
-two seats use this convention differently, and this page is written
-from the writer's.
+**The seats.** A run holds the artifacts and writes no manuals.
+The deliverer writes the manuals and holds the master of every
+artifact. This page is written from the deliverer's seat.
 
 ## 1. What a convention is
 
@@ -148,13 +147,15 @@ the same six sections with nothing telling either writer to, which
 is a shape by the test in `docs/conventions/shapes/` §2: a pair
 recurred.
 
-**The seats.** A manual answers one question: does this repo use
-the convention the way a run does. The same way — one sentence says
-so. Differently — a section per seat. Not at all here — one line
-says so, so a reader does not hunt for our half. Twice a manual
-grew a seats section because the two sides do different things,
-and nothing told the writer of the next one to ask; the sentence
-after *what ships* is where the asking is now built in.
+**The seats.** A convention has two seats, the run's and the
+deliverer's, and a manual names both: what each holds and does
+under it, the run first. One paragraph when they are alike, a
+section per seat when they are not, and "no seat" said outright
+when one side has none, so a reader does not hunt for it. Placed
+after *what ships*. Twice a manual grew seat sections because the
+two sides do different things, and nothing told the writer of the
+next one to ask; the paragraph is where the asking is now built
+in.
 
 **One rule for every description**, this page included. A
 description is any body of writing that things derive from: the

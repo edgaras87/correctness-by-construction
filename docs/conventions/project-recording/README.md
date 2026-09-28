@@ -4,14 +4,20 @@ How a software project records its decisions, state, plans, history
 and lessons: what each record is, why it exists, where it lives, and
 how to write it.
 
-**What ships:** the record stubs in the starter kit, linked from
-[`stubs/`](stubs/) beside this page — `README.md`, `PLAN.md`,
-`TODO.md`, `CHANGELOG.md`, `ARCHITECTURE.md`, the first ADR and the
-devlog. Each stub carries its own rules as comments, met when the
-file is opened; the one rule that cannot live inside a record, when
+**What ships:** the record stubs in the container,
+`delivery/container/` — `README.md`, `PLAN.md`, `TODO.md`,
+`CHANGELOG.md`, `ARCHITECTURE.md`, the first ADR and the devlog.
+Each stub carries its own rules as comments, met when the file is
+opened; the one rule that cannot live inside a record, when
 to open it, rides as the records table in the entry file, which
 agent-arrangement governs. This page explains the records; the
 stubs state the rules. Nothing here is loaded into an agent.
+
+**The seats.** A run keeps every record the stubs name, from
+birth, and its `CHANGELOG.md` logs releases. The deliverer keeps
+the same records under the same stubs; its `CHANGELOG.md` versions
+the concept instead (CBC ADR-0003), a difference of content and
+not of rule.
 
 ---
 

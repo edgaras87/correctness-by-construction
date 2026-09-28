@@ -5,10 +5,14 @@ settled by building every candidate and rendering it, judged
 against what the reader must get. The unit is the thing being
 shown.
 
-**What ships:** [`SKILL.md`](SKILL.md), which a project holds at
+**What ships:** [`SKILL.md`](../../../delivery/container/.claude/skills/visual-comparison/SKILL.md), which a project holds at
 `.claude/skills/visual-comparison/` and an agent opens when a
 structure is hard to see and more than one way of showing it could
 work. This page explains it; the skill states it.
+
+**The seats.** A run runs it on its own pictures, from the copy it
+was born with. The deliverer runs it the same way on its own, its
+copy in `.claude/skills/` downstream of the container's.
 
 ## What it is
 

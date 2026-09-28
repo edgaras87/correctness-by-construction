@@ -11,6 +11,12 @@ and a whole project.
 out to need several commits. This page explains it; the skill
 states it.
 
+**The seats.** A run runs its change sets under the skill it was
+born with, the plan file at its root its own. The deliverer runs
+its change sets under the same skill, its copy in `.claude/skills/`
+downstream of the container's, and the plan file at its root is
+its own.
+
 ## What it is
 
 A patch series, carried into a repo where work is committed

@@ -8,6 +8,12 @@ may share a commit.
 `.claude/skills/commit-messages/` and an agent opens before writing
 a commit message. This page explains it; the skill states it.
 
+**The seats.** A run commits under the skill it was born with, a
+pinned copy. The deliverer commits under the same skill, its copy
+in `.claude/skills/` downstream of the container's, and has one
+local habit — which scope carries the signal — stated below and not
+shipped.
+
 ## What it is
 
 A subject line that says what, a body that says why, footers that
