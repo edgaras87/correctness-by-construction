@@ -73,12 +73,13 @@ and is either derived from it or checked against it.
 
 ### 1.2 The conventions — `docs/conventions/`
 
-**Eight manuals: how work is done here, and why each rule is the
+**Nine manuals: how work is done here, and why each rule is the
 shape it is.** Recording, committing, hygiene, how an agent is
 arranged, how a choice between things you look at is settled, the
 exchange — how a delivery goes down to a run and how what the run
-learned comes back — and shapes, what a kind of output looks like
-and where that description sits.
+learned comes back — shapes, what a kind of output looks like and
+where that description sits — and conventions themselves, what one
+is and how it is made.
 
 None of it is CbC. The concept is about how a system is built; the
 conventions are about how a repo is kept.
@@ -89,13 +90,15 @@ conventions are about how a repo is kept.
 - **Each convention is two things kept apart**: the manual at
   `docs/conventions/<name>/README.md`, and its artifacts — real
   files in `delivery/container/`, which is the master.
-- **Eight, not ten.** `decide-first`, `option-comparison` and
+- **Nine, not ten.** `decide-first`, `option-comparison` and
   `artifact-kinds` were discarded on 2026-09-24 and nothing replaced
   them. `convention-lifecycle` went on 2026-09-26 and the exchange
   took its place (ADR-0036) — the first convention whose artifacts
   split between the two arrangements in section 4. `shapes` arrived
   on 2026-09-27 (ADR-0037), its model reshaped into the manual it
-  had been all along.
+  had been all along. `conventions` arrived on 2026-09-28
+  (ADR-0039), born from the rules the index had accreted; it ships
+  nothing.
 
 ## 2. The delivery — what a project gets, and where it goes
 
@@ -133,7 +136,8 @@ the hygiene files.
 
 **This is the conventions made usable**, the way the method is the
 concept made usable. Every one of its seventeen files is the
-artifact of one of the eight manuals in 1.2 — the records belong to
+artifact of one of eight of the nine manuals in 1.2 — `conventions`
+ships nothing — the records belong to
 `project-recording`, the entry file and the decisions log to
 `agent-arrangement`, the three dotfiles to `repo-hygiene`, the
 three skills to the three conventions named after them,
@@ -240,9 +244,40 @@ and not a wish:
   against it hard enough. This page does not know which, and says
   so rather than choosing.
 
-*Not a rule yet. Written here first. It becomes one the day a
-decline is caught being made "because the manual says" — that is
-the trigger, and until it fires this paragraph is the whole of it.*
+**The rule, for every description.** The concept, each manual and
+this page are descriptions: bodies of writing that things derive
+from. One rule holds for all of them, and this section is where it
+is stated:
+
+1. A description lists what derives from it.
+2. Each derived thing names its description — in a shipped file,
+   the `foundation` line.
+3. A change to the description walks the list.
+4. A change forced in a derived thing is checked back against the
+   description.
+5. A disagreement is raised and decided, practice the evidence; if
+   the description changes, the walk runs again.
+
+Steps 1 and 2 are checkable today: every shipped file carries
+`foundation`, and the exchange and shapes manuals close with their
+lists. Steps 3 to 5 ran twice by hand before this was a rule — the
+correspondence check of 2026-09-25, and the walk of this page at
+the exchange plan's close — both because the reviewer asked, not
+because anything made anyone look.
+
+Where a manual and the concept are handled differently is not in
+this rule but at its edges: versioning, shipping, the kind of
+derivative, the seats, and what each asserts (ADR-0039). The
+concept's edges are ADR-0003, the CHANGELOG's standing comment and
+1.1; a manual's are the conventions convention,
+`docs/conventions/conventions/`.
+
+*A rule since 2026-09-28 (ADR-0039). The trigger this paragraph
+once named — a decline caught being made "because the manual says"
+— never fired; the reviewer's question of how differently a
+description and a manual should be handled did. If this section
+outgrows the page it becomes its own document and leaves a
+paragraph behind.*
 
 ## 4. The work arrangement
 
@@ -374,9 +409,12 @@ Used across both repos, defined here and nowhere else.
 - **made usable** — what a stated body becomes in the delivery:
   the concept as the method, the conventions as the container.
 - **description** — any body of writing things derive from: the
-  concept, a manual, this page.
+  concept, a manual, this page. One rule for all of them (3); they
+  differ at the edges (ADR-0039).
 - **manual** — a convention's description, at
   `docs/conventions/<name>/README.md`. Never shipped.
+- **seats** — the sides a convention has, this repo's and a run's.
+  A manual says whether the two use it the same way.
 - **foundation** — the frontmatter line by which a shipped file
   names the description it derives from. Not *source*: that was a
   run's word for the deliverer, and is not ours.
