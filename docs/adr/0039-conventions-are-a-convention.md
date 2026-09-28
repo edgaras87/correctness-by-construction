@@ -6,7 +6,8 @@ Proposed under the commit plan for the conventions manual and
 revised at two boundaries on the reviewer's readings — the master
 is a map, a pointer is a path, the boundary section, `foundation`
 moves home, seats are two named roles. Amends ADR-0036 decision 7
-in the ownership of `foundation`)
+in the ownership of `foundation`. Decision 4 amended 2026-09-28,
+after acceptance: an eighth section, *what it is for*)
 
 ## Context
 
@@ -137,7 +138,12 @@ rule says a shape is born when a pair recurs. This is the pair.
    the conventions manual needed to draw its line four times in one
    reading: it is the section that makes *one place* checkable from
    the reader's side. It is the convention's artifact here. It ships
-   nowhere: a run writes no manuals.
+   nowhere: a run writes no manuals. *Amended 2026-09-28, later: an
+   eighth section, what it is for — the need, the failure lived
+   without it, and the trigger, written as evidence and never as
+   intent — after the opening statement, on the reviewer's reading
+   that every convention here was born from a problem and no manual
+   said which. The walk writes it into the other eight.*
 
 5. **The convention ships nothing else, and `foundation` is its.**
    The field — its name, that every derived file carries one, ours

@@ -21,6 +21,15 @@
 stated once, in a manual that never ships, and made usable as
 artifacts a project holds.**
 
+**What it is for.** A convention is written when something made
+usable is needed, and the need is written down first: what work
+it makes possible, what went wrong without it, and the event that
+made it. What went wrong without this one: the rules for
+conventions lived in the index, against its scope, and two of them
+were dead letters nobody had followed (CBC ADR-0039). The trigger:
+the descriptions item filed on 2026-09-27, and the index read
+against it the next day.
+
 **What ships:** nothing of this convention's own. Its artifact in a
 run is the `foundation` line every shipped file carries (§2). Its
 artifact here is the shape of a manual,
@@ -138,10 +147,12 @@ every old path, before the close.
 manual is opened (how a rule loads is
 `docs/conventions/agent-arrangement/` §3), and lists the sections
 one has: a header saying what derives from the page and how a
-disagreement ends; an opening statement; *what ships*; the seats;
-lessons as dated italics; *what this does not cover*, the
-boundary against its neighbours by path; and *what this is made
-usable as*, the list a change to the page walks. The shape was not designed.
+disagreement ends; an opening statement; *what it is for* — the
+need, the failure lived without it, and the trigger, as evidence
+and never as intent; *what ships*; the seats; lessons as dated
+italics; *what this does not cover*, the boundary against its
+neighbours by path; and *what this is made usable as*, the list a
+change to the page walks. The shape was not designed.
 `docs/conventions/exchange/` and `docs/conventions/shapes/` grew
 the same six sections with nothing telling either writer to, which
 is a shape by the test in `docs/conventions/shapes/` §2: a pair
