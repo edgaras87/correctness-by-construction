@@ -90,7 +90,17 @@ to a manual greps for them, the rename case being commit-plan's
 sweep; and the birth case is stated — a newborn description with
 existing derivatives walks them in the set that follows, not the
 same commit. Widened at step 4's boundary, on the reviewer's
-readings of the manual against its own rule.
+readings of the manual against its own rule. Widened once more
+after the plan's second revision, on the reviewer's question:
+`foundation` moves home. The conventions manual §2 states the
+field — its name, that every derived file carries one, and what
+it holds for each kind: the concept and its version, the concept
+checked against, the convention by name — and §5's boundary
+bullet no longer leaves the values to the exchange; the exchange's
+§3 paragraph becomes a pointer and keeps what is the exchange's,
+that the field travels with the copy as a live claim, with its
+dated history. ADR-0039 gains the decision, amending ADR-0036
+decision 7 in the ownership respect.
 
 **5. `docs(conventions): six manuals say their seats`**
 One sentence each — project-recording, commit-messages,
@@ -108,7 +118,11 @@ manual has: the header on what derives from it and how a
 disagreement ends; the opening statement; what ships; the seats;
 lessons as dated italics; what this does not cover; what it is
 made usable as. Registry entry "Convention held: conventions".
-Agent-scoped, alone.
+And the rule's step 2 applied to our own side: the three artifacts
+of ours that carry no `foundation` line — `exchange-read`,
+`exchange-deliver`, `.claude/rules/exchange-reading.md` — gain
+`foundation: the exchange convention`, found by the check at the
+third revision. Agent-scoped, alone.
 
 **7. `docs: records, and ADR-0039 accepted`**
 ARCHITECTURE's conventions row says nine; the master's 2.3 count
@@ -182,6 +196,14 @@ Deletes this file; the body records what diverged.
   into a step here would make this set two. The birth case is
   written into the ADR so the rule's "same commit" is not a lie on
   the day the rule lands.
+- **`foundation` is the conventions convention's, not the
+  exchange's** (revision after the second, on the reviewer's
+  question). The field is the derived side's claim in the
+  description-and-derivative relation, which is this manual's
+  subject; the exchange's is what passes between repos, and it
+  keeps the one fact that is its own — the field travels with the
+  copy. The exchange never listed the field among its four
+  artifacts, so nothing it is made usable as changes.
 - **The index is cut, not rewritten.** What leaves it goes to the
   manual with its wording; a sentence that is a relation stays. The
   test is ADR-0032's: does it restate a rule that lives in a manual
