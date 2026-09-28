@@ -14,15 +14,6 @@ foundation: the conventions convention
 **Governs:** how a convention's manual, `docs/conventions/<name>/README.md`,
 is written. Its form, never its content.
 
-## The header comment
-
-Says what this is and that it never ships; names what derives from
-this page and how a disagreement between the page and a derivative
-ends — decided, practice the evidence, the other following in the
-same commit; and says when and from what the page was born. Same
-rule as `docs/master.md`: only what is checkable, and anything
-merely intended marked as intended.
-
 ## The sections, in this order
 
 Each a `##` heading, except the opening statement, which is a bold
@@ -57,14 +48,14 @@ others are not.
 ## What this does not fix
 
 Length, tone, and how the body is divided. Whether a section is
-needed is the manual's to decide; that a reader finds the seven
+needed is the manual's to decide; that a reader finds the six
 where they expect them is this file's.
 
 ## The list is the floor, not the ceiling
 
-Content that fits none of the seven gets its own heading in the
+Content that fits none of the six gets its own heading in the
 body, and the writer looks for such content rather than forcing it
 into a section it does not belong to. A section two manuals grow
 without this file asking for it is a candidate for the list — that
-is how the seven were born (`docs/conventions/shapes/` §2: a pair
+is how the six were born (`docs/conventions/shapes/` §2: a pair
 recurred) and the only way the list grows.
