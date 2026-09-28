@@ -19,8 +19,14 @@ file, and the run's own descriptions earn their rule later.
 The shared core — one description, everything derived points back,
 a change walks the list, a forced change is checked back, a
 disagreement is decided with practice as the evidence — is stated
-once, in the master document's section 3, which stops calling
-itself "not a rule yet". Both kinds of description point at it; the
+once, in the conventions manual, which is the one truth for the
+relation between a description and what comes from it; the concept
+is its other instance. The master is a map, an entry point one
+level in from the README, and its section 3 narrates the loop and
+points at the manual for the rule. Two relations are named and both
+are findable: a derivative names its description in `foundation`,
+and a pointer names the manual by its path from the repo root, so
+that a change to a manual walks its list and greps its path. The
 edges that differ stay where they are. The words are decided: a
 description is any body of writing things derive from, a manual is
 a convention's, `foundation` is the derived side's claim, and the
@@ -47,10 +53,10 @@ nobody took. Decision-first: settled in conversation on
 2026-09-27 and 28.
 
 **3. `docs: the master's section 3 is the rule for every description`**
-The five steps stated as the rule, the "not a rule yet" paragraph
-gone, its trigger recorded as fired. *The words* gains what the
-ADR decided. Section 1.2 says nine. This comes before the manual
-because the manual points at it.
+Landed as planned (69aceb2), and reversed by 4a below: the
+reviewer read the master as a map and the rule as a truth split in
+two. What survives of it is the counts, the words, and the loop
+narrative; the rule moves.
 
 **4. `docs(conventions): the conventions manual, and the index returns to relations`**
 `docs/conventions/conventions/README.md` written from the index's
@@ -60,9 +66,23 @@ asserts, in the manual shape: header, opening, what ships (nothing
 the seats (this repo writes manuals; a run holds artifacts), *what
 this is made usable as*. *Adding a convention* is rewritten from
 what the last three did. The index keeps the table, with a ninth
-row, and the chain; every rule leaves it. Provisional in one
-respect: which sentences of the index are relations and stay is
-seen only in the cutting.
+row, and the chain; every rule leaves it. Widened at its boundary,
+on the reviewer's two readings: §3 gains *one place* — the subject
+stated in the manual and nowhere else, two relations, point and
+derive — and states the rule for every description in full, the
+five steps plus the pointer relation: a pointer is the manual's
+path from the repo root, so the walk on a change is the list for
+derivatives and a grep for pointers. Until 4a lands the rule is
+stated twice, which is the mode inside a set.
+
+**4a. `docs: the master points at the rule, and ADR-0039 says where it lives`**
+The master's section 3 keeps the loop, the record of where
+practice already bent a description, and one paragraph pointing at
+the conventions manual for the rule; the five steps and the
+"a rule since" italic leave it. ADR-0039 decision 6 is rewritten
+while Proposed — the rule lives in the manual, the master is a map
+— and a decision is added: pointers are paths, and a change to a
+manual greps for them; the rename case is commit-plan's sweep.
 
 **5. `docs(conventions): six manuals say their seats`**
 One sentence each — project-recording, commit-messages,
@@ -83,8 +103,12 @@ lessons as dated italics; what it is made usable as. Registry entry
 ARCHITECTURE's conventions row says nine; the master's 2.3 count
 stands (nothing entered the container). TODO: the descriptions
 convention item closes into the ADR, the seats item into step 5,
-the words item into the ADR, the maintenance rule into step 3.
-ADR-0039 flips.
+the words item into the ADR, the maintenance rule into step 4. One
+item filed: the master and ARCHITECTURE are two maps of one thing
+— the master's own erratum says so — and whether the master
+becomes ARCHITECTURE waits on project-recording's revision, which
+ARCHITECTURE derives from; trigger, that revision or the next
+change that updates both maps for one fact. ADR-0039 flips.
 
 **8. `docs(agent): close commit plan for the conventions manual`**
 Deletes this file; the body records what diverged.
@@ -109,6 +133,28 @@ Deletes this file; the body records what diverged.
   convention* stops asking for one. The CHANGELOG is the
   concept-version log (ADR-0003); the last three conventions wrote
   no line in it and were right not to.
+- **The master is a map, not a truth** (revision at step 4's
+  boundary, reversing the plan's step 3 and the previous day's
+  call). The argument for the master was that it already narrated
+  the loop for both kinds and that a descriptions convention would
+  be built from two instances. The second misapplied ADR-0038's
+  rule of three: that rule is about building ahead of evidence, and
+  the rule for descriptions has fourteen shipped derivatives, nine
+  manuals and two walks by hand behind it. Splitting the truth
+  between a map and a manual was the defect the manual's own *one
+  place* paragraph names. The manual holds it; the master points.
+- **A pointer is a path.** Derivatives were findable by
+  `foundation`; pointers were not, and the previous day's sweep of
+  a word across twenty files was the pointer walk done by hand. A
+  manual's path from the repo root is unique, already the
+  container's rule for pointers that leave a directory, and
+  greppable; a rename is the case commit-plan §4's sweep already
+  covers. A name in prose is not a pointer, because names are words.
+- **The master and ARCHITECTURE are not merged here.** Both are
+  maps and the master says it duplicates ARCHITECTURE. ARCHITECTURE
+  is project-recording's record, and that convention is queued for
+  revision; deciding the merge before it would decide it twice.
+  Filed, with the trigger.
 - **The index is cut, not rewritten.** What leaves it goes to the
   manual with its wording; a sentence that is a relation stays. The
   test is ADR-0032's: does it restate a rule that lives in a manual
