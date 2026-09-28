@@ -6,6 +6,79 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-28  (conventions are a convention — one set, twelve commits and four revisions)
+
+`conventions-manual-2026-09-28`, cut from `main` after the handbook
+filter fast-forwarded; fast-forwarded and deleted at the close.
+
+- **The index had become the manual by accretion.** ADR-0032 scoped
+  it to relations, and it had grown four rule sections since, two
+  of them dead letters: *Adding a convention* asked for a CHANGELOG
+  line and a PLAN step, and the last three conventions took
+  neither. The ninth convention's manual is those four sections
+  moved with their wording, plus what ADR-0031 says a convention
+  asserts; the index is the table and the chain again.
+- **Yesterday's call on the master was wrong, and the reviewer
+  found it.** The plan put the rule for every description in the
+  master's section 3, on the argument that a descriptions
+  convention would be built from two instances. That misapplied
+  the rule of three: fourteen shipped files carry `foundation`,
+  nine manuals exist, the walk had run twice by hand. And it split
+  one truth between a map and a manual, which is the defect the
+  manual's own *one place* paragraph names. Step 3 landed as
+  planned and step 4a reversed it: the rule lives in the manual's
+  §3, the master is a map and points. The master is not the
+  README either — the README is the stranger's front door, the
+  master the maintainer's map one level in — and whether it and
+  ARCHITECTURE are one map is filed, waiting on project-recording.
+- **The manual read against its own rule, four times.** Each
+  reading widened step 4 before it committed: *one place* — the
+  subject stated in the manual and nowhere else, two relations,
+  point and derive; *a pointer is a path* — the directory with its
+  slash is the grep token, so a change to a manual finds its
+  pointers as `foundation` finds its derivatives, and yesterday's
+  sweep of one word across twenty files was that walk done by
+  hand; whose the freedom is — the work may break a convention
+  with a reason, a derivative and a pointer may not; and the
+  boundary section, *what this does not cover*, the shape's
+  seventh, born when this manual had to draw its line four times
+  in one sitting. Then the manual applied *one place* to itself:
+  §1's master-and-copies paragraph was the exchange's, §4 was four
+  duplicates and one orphan, and both became pointers.
+- **`foundation` moved home.** The field is the derived side's
+  claim in the description-and-derivative relation, which is this
+  manual's subject; the exchange keeps that the line travels with
+  the copy. ADR-0036 decision 7 amended in ownership only. The
+  check found three artifacts of ours with no line — the exchange's
+  two skills and the reading shape — and the rule for every
+  description makes no exception for our side.
+- **Seats are two named roles.** The first wording asked whether
+  this repo uses the convention the way a run does — one chair, the
+  other seat assumed. The six paragraphs were redone run first,
+  deliverer second, the rule's wording moving in the same commit
+  as its derivatives. *Hub* was weighed for the deliverer's word
+  and declined: a run is blind and nothing flows up, so there is no
+  hub, and the shape is the handbook's.
+- **Four dangling links, the same defect as yesterday's**: `stubs/`
+  in project-recording, `SKILL.md` in visual-comparison, and two
+  more found on the way — symlinks that never came across, now
+  pointing at the container's files.
+- **Filed.** The walk: every manual read against the conventions
+  manual — boundary sections, pointers by path, restatements to
+  pointers, "this repo" to "the deliverer", each disagreement about
+  whose a subject is decided one at a time. Its own set; the rule's
+  birth case says the set that follows is where a newborn
+  description walks its existing derivatives.
+
+Resume: on `main`, clean, not pushed. Two sets queued and either
+may go first: the reading of run 3 from `9869798` under
+`exchange-read` and the delivery (the note's contents in
+yesterday's resume, plus the two footers citing `CBC ADR-0038`
+and the v7 gate line offered, not delivered); and the walk. The
+walk touches only manuals, which never ship, so the delivery is
+unaffected by it and has waited longer. `working-a-reading.md`
+stays in `temp/` until that reading.
+
 ## 2026-09-27, afternoon  (playbook v7, and the handbook becomes history — one commit, then one set of twelve)
 
 - **The narrow gate fix went first**, one commit on its own branch,
