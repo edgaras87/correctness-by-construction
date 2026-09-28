@@ -110,6 +110,16 @@ the sentence is written from each manual, and if one turns out to
 need a section, the boundary says so. Not widened to the boundary
 section and the pointer sweep: those are the walk (below), and a
 set with one decision does not pick up a second on the way past.
+Refined at its boundary, on the reviewer's reading of the six
+sentences: the rule asked whether this repo uses the convention
+the way a run does — one chair, the other seat assumed. A manual
+names both seats, the run's and the deliverer's, the run first.
+The six paragraphs are rewritten in that form, and the rule's
+wording in the conventions manual §3 and ADR-0039 decision 3 moves
+in the same commit, which is the rule for a description and its
+derivatives. "This repo" elsewhere in the manuals is the walk's;
+the words say *deliverer*, and the reviewer's question whether to
+rename it *hub* is answered in the ADR: no.
 
 **6. `chore(agent): the shape of a manual, as a rule here`**
 `.claude/rules/convention-manual.md`, a Governs line and
@@ -204,6 +214,15 @@ Deletes this file; the body records what diverged.
   keeps the one fact that is its own — the field travels with the
   copy. The exchange never listed the field among its four
   artifacts, so nothing it is made usable as changes.
+- **Seats are two named roles** (refinement at step 5's boundary).
+  A seats paragraph written as "this repo does the same as a run"
+  names one seat and assumes the other, which is the asymmetry the
+  reviewer found. Run first, because the manual's body already
+  explains the artifact a run holds; the deliverer second, by the
+  master's word for it. *Hub* was weighed for that word and
+  declined: it names a topology that is not true — a run is blind
+  and nothing flows up — and it is the handbook's shape, a day
+  after ADR-0038.
 - **The index is cut, not rewritten.** What leaves it goes to the
   manual with its wording; a sentence that is a relation stays. The
   test is ADR-0032's: does it restate a rule that lives in a manual
