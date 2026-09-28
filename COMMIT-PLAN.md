@@ -25,6 +25,17 @@ The set changes no shipped file. The manuals never ship.
 **1. `docs(agent): add commit plan for the walk`**
 This file.
 
+**1a. `docs(conventions): what ships folds into made usable as`**
+Found by step 2 on the thinnest manual, before it committed: the
+shipped artifact was named three times — *what ships*, the seats,
+*made usable as*. One list, placed after *what it is for* as the
+answer to the need, each item marked shipped or the deliverer's
+with the moment it opens at, the walk sentence at its end; the
+seats say what each side does, not what it holds. Seven sections.
+The conventions manual's §3 list, its own sections, and ADR-0039
+decision 4 (amended again after acceptance) in one commit; the
+shape rule in the agent-scoped commit after it.
+
 **2. `docs(conventions): commit-plan reads to the shape`**
 The thinnest manual, zero seats wording, no dangling links: the
 test of the form. Header, *what it is for* from ADR-0038 claim 1b
@@ -101,14 +112,31 @@ walk is how it learns. Its §4 claim about the registry form is
 corrected to what the registry holds. Anything the eight showed
 the shape lacks or overstates lands here, with the shape rule in
 the same commit if the list changes — which would make step 10
-two commits, agent and project, and the boundary says so.
+two commits, agent and project, and the boundary says so. And the
+master is cut in the same commit, on the reviewer's reading at
+step 2's boundary: its §3 still states the decline rule — a
+finding is declined only for not being general, never because the
+description says otherwise — and lists where practice bent a
+description. The rule is step 5 of the rule for every description
+and moves here as its why; the list moves with it as dated
+lessons, evidence belonging with the rule it supports. The
+master's §3 keeps the five-step loop, motion on a map, and one
+pointer. Every step from 2 on cites
+`docs/conventions/conventions/` §3 in its header for how a
+disagreement ends, not the master. And every pointer is a path
+from the repo root, in backticks, never a relative link — the
+reviewer's reading at step 2: a relative link is a path from
+somewhere else, and the allowance for manual-to-manual links in
+the conventions manual's pointer paragraph goes in step 10.
 
 **11. `docs(conventions): the sync pass`**
 The rule's own walk, run over all nine at once: every manual's
 path grepped for its pointers; every one of the six duplicates
 confirmed to have one home; the eight sections present in all
 nine; every link resolved with `ls`; no line over the width the
-files keep; "this repo" counted. Whatever the pass finds is fixed
+files keep; "this repo" counted; and the body headings listed
+across the nine, so a heading two manuals grew shows as the
+shape's next candidate. Whatever the pass finds is fixed
 in this commit and listed in its body. Provisional by nature: it
 may find nothing, and then the commit is the count.
 
@@ -147,6 +175,23 @@ Deletes this file; the body records what diverged.
   says so, and names what has been lived under them since; it does
   not invent a failure, and it does not call itself a trial that
   was never opened.
+- **The master states no rule, and the headers stop citing it for
+  one** (revision at step 2's boundary). 4a left the decline
+  paragraph in the master's §3 and every manual header pointing
+  there; the first header written to the shape copied the pointer.
+  Fixed in the walk because the walk is where the nine headers are
+  being written, and deferred it would be written nine times on
+  purpose.
+- **Root paths only.** The pointer paragraph allowed relative
+  links between manuals on the argument that they carry the same
+  grep token. They do, and they still read differently from every
+  other root; the rule is simpler with one form. Every step writes
+  root paths, and step 10 tightens the paragraph.
+- **One list of what is made usable, not three sections naming
+  the same files** (found by the form test, step 2). *What ships*
+  was the run-facing answer near the top; *made usable as* was the
+  walk list at the end; the seats named the files again. The list
+  moves up and carries both jobs; the seats keep only the doing.
 - **Thinnest first.** commit-plan tests the form on 74 lines
   before it is applied to 577. If the form costs more than it
   gives on the small one, the plan is revised before the large
