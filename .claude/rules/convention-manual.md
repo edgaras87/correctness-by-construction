@@ -27,25 +27,31 @@ merely intended marked as intended.
 
 1. **The opening statement.** One bold paragraph: what the
    convention is, in a sentence a reader can hold.
-2. **What ships.** The artifacts a run holds, by path in the
+2. **What it is for.** The need: what work the convention makes
+   possible, what went wrong without it — with the run or the date
+   — and the event that made it. Evidence, or intent marked *on
+   trial* with what would make it evidence and when to look again.
+   Never intent dressed as evidence: a wish ("so that X is easier")
+   is not a need.
+3. **What ships.** The artifacts a run holds, by path in the
    container — or "nothing", and then what the deliverer holds.
-3. **The seats.** Both named, the run's first: what each holds and
+4. **The seats.** Both named, the run's first: what each holds and
    does under the convention. One paragraph when alike; a section
    per seat when not; "no seat" said outright when one side has
    none.
-4. **The body**, numbered sections, free prose. Pointers to other
+5. **The body**, numbered sections, free prose. Pointers to other
    conventions by path, never a restatement of their subject.
-5. **Lessons as dated italics**, where they happened: *what was
+6. **Lessons as dated italics**, where they happened: *what was
    measured, when, and what changed*.
-6. **What this does not cover.** A list: each neighbouring subject
+7. **What this does not cover.** A list: each neighbouring subject
    in bold, then the path it belongs to.
-7. **What this is made usable as.** The derived artifacts, each by
+8. **What this is made usable as.** The derived artifacts, each by
    path and kind, and the sentence that a change here walks that
    list.
-8. **Where to look**, optional: pointers only.
+9. **Where to look**, optional: pointers only.
 
 ## What this does not fix
 
 Length, tone, and how the body is divided. Whether a section is
-needed is the manual's to decide; that a reader finds the seven
+needed is the manual's to decide; that a reader finds the eight
 where they expect them is this file's.
