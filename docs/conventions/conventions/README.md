@@ -1,20 +1,3 @@
-<!-- The conventions convention's manual: what a convention is here,
-     its two parts, and how one is written, held and added. Never
-     shipped; a run holds artifacts and writes no manuals.
-
-     What derives from this: the shape of a manual,
-     `.claude/rules/convention-manual.md`, this repo's; and the form
-     of every shipped artifact's frontmatter, which each shipped
-     file carries. If one and this disagree, neither is right by
-     default: the disagreement is decided, practice being the
-     evidence (docs/master.md §3), and whichever changes, the other
-     follows in the same commit.
-
-     Born 2026-09-28 (CBC ADR-0039) from the four rule sections the
-     conventions index had accreted against its own scope, moved
-     here with their wording. Same rule as master.md: only what is
-     checkable, and anything merely intended marked as intended. -->
-
 # Conventions
 
 **A convention is a rule the work may break only with a reason —
@@ -162,9 +145,8 @@ every old path, before the close.
 **Its shape** is a rule under `.claude/rules/`, loading when a
 manual is opened (how a rule loads is
 `docs/conventions/agent-arrangement/` §3), and lists the sections
-one has, each a heading after the opening: a header saying what
-derives from the page and how a disagreement ends; an opening
-statement; *what it is for* — the
+one has, each a heading after the opening: an opening statement;
+*what it is for* — the
 need, the failure lived without it, and the trigger, as evidence
 or as intent marked on trial, never intent dressed as evidence;
 *what this is made usable as* — the list a change to the page

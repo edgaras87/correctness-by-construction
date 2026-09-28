@@ -1,20 +1,3 @@
-<!-- The commit-plan convention's manual: how work larger than one
-     commit is sequenced, reviewed and closed, and why the skill is
-     the shape it is. Never shipped; a run holds the skill.
-
-     What derives from this: the skill,
-     `delivery/container/.claude/skills/commit-plan/SKILL.md`, and
-     this repo's own copy of it. If one and this disagree, neither
-     is right by default: the disagreement is decided, practice
-     being the evidence (docs/conventions/conventions/ §3), and
-     whichever changes, the other follows in the same commit.
-
-     Came with the container; its decisions adopted as ours in CBC
-     ADR-0038 (1b, 1d, 1e, 1f); said in this repo's voice since
-     2026-09-27 and read to the shape on 2026-09-28. Same rule as
-     master.md: only what is checkable, and anything merely
-     intended marked as intended. -->
-
 # Commit plan
 
 **How work larger than one commit is sequenced into commits before

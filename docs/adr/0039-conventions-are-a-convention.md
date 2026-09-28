@@ -7,8 +7,9 @@ revised at two boundaries on the reviewer's readings — the master
 is a map, a pointer is a path, the boundary section, `foundation`
 moves home, seats are two named roles. Amends ADR-0036 decision 7
 in the ownership of `foundation`. Decision 4 amended 2026-09-28,
-after acceptance: an eighth section, *what it is for*; and again,
-*what ships* folded into *made usable as* — seven)
+after acceptance: an eighth section, *what it is for*; again,
+*what ships* folded into *made usable as*; and again, the header
+comment gone — six)
 
 ## Context
 
@@ -149,7 +150,9 @@ rule says a shape is born when a pair recurs. This is the pair.
    manual: what ships folds into what this is made usable as, one
    list placed after what it is for, each item marked shipped or
    the deliverer's; the shipped artifact had been named in three
-   sections. Seven sections.*
+   sections. Seven sections. And the header comment goes, found at
+   step 3 by the reviewer: it restated the opening, made usable
+   as, rule step 5 and the master's rule, invisibly. Six.*
 
 5. **The convention ships nothing else, and `foundation` is its.**
    The field — its name, that every derived file carries one, ours
