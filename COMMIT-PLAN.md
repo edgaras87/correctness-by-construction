@@ -79,25 +79,36 @@ stated twice, which is the mode inside a set.
 The master's section 3 keeps the loop, the record of where
 practice already bent a description, and one paragraph pointing at
 the conventions manual for the rule; the five steps and the
-"a rule since" italic leave it. ADR-0039 decision 6 is rewritten
-while Proposed — the rule lives in the manual, the master is a map
-— and a decision is added: pointers are paths, and a change to a
-manual greps for them; the rename case is commit-plan's sweep.
+"a rule since" italic leave it. *The words* gains **project**, and
+the shapes manual's local definition of it becomes a pointer.
+ADR-0039 is revised while Proposed: decision 6 says the rule lives
+in the manual and the master is a map; decision 4 lists the
+boundary section, *what this does not cover*, as the shape's
+seventh, born when this manual needed one four times in one
+reading; a decision is added that pointers are paths, and a change
+to a manual greps for them, the rename case being commit-plan's
+sweep; and the birth case is stated — a newborn description with
+existing derivatives walks them in the set that follows, not the
+same commit. Widened at step 4's boundary, on the reviewer's
+readings of the manual against its own rule.
 
 **5. `docs(conventions): six manuals say their seats`**
 One sentence each — project-recording, commit-messages,
 repo-hygiene, commit-plan, agent-arrangement, visual-comparison —
 placed where the shape says, after *what ships*. Material-first:
 the sentence is written from each manual, and if one turns out to
-need a section, the boundary says so.
+need a section, the boundary says so. Not widened to the boundary
+section and the pointer sweep: those are the walk (below), and a
+set with one decision does not pick up a second on the way past.
 
 **6. `chore(agent): the shape of a manual, as a rule here`**
 `.claude/rules/convention-manual.md`, a Governs line and
 `paths: docs/conventions/*/README.md`, stating the sections a
 manual has: the header on what derives from it and how a
 disagreement ends; the opening statement; what ships; the seats;
-lessons as dated italics; what it is made usable as. Registry entry
-"Convention held: conventions". Agent-scoped, alone.
+lessons as dated italics; what this does not cover; what it is
+made usable as. Registry entry "Convention held: conventions".
+Agent-scoped, alone.
 
 **7. `docs: records, and ADR-0039 accepted`**
 ARCHITECTURE's conventions row says nine; the master's 2.3 count
@@ -108,7 +119,14 @@ item filed: the master and ARCHITECTURE are two maps of one thing
 — the master's own erratum says so — and whether the master
 becomes ARCHITECTURE waits on project-recording's revision, which
 ARCHITECTURE derives from; trigger, that revision or the next
-change that updates both maps for one fact. ADR-0039 flips.
+change that updates both maps for one fact. A second item filed,
+at the top of Now: **the walk** — the first firing of the rule on
+this description. Every manual read against the conventions
+manual: a boundary section, pointers by path where a neighbour's
+subject is named, restatements turned into pointers, seats where a
+sentence turned out not to be enough; each disagreement about
+whose a subject is, decided one at a time. Its own set, opened
+next; the trigger has fired. ADR-0039 flips.
 
 **8. `docs(agent): close commit plan for the conventions manual`**
 Deletes this file; the body records what diverged.
@@ -155,6 +173,15 @@ Deletes this file; the body records what diverged.
   is project-recording's record, and that convention is queued for
   revision; deciding the merge before it would decide it twice.
   Filed, with the trigger.
+- **The walk is the next set, not this one's step 5** (revision at
+  step 4's boundary, on the reviewer's question). The rule this
+  set writes demands it — a change to a description walks its
+  derivatives — and this description was born with nine. Eight
+  manuals read in full, each likely to raise a disagreement about
+  whose a subject is, is a set with its own decisions; folding it
+  into a step here would make this set two. The birth case is
+  written into the ADR so the rule's "same commit" is not a lie on
+  the day the rule lands.
 - **The index is cut, not rewritten.** What leaves it goes to the
   manual with its wording; a sentence that is a relation stays. The
   test is ADR-0032's: does it restate a rule that lives in a manual
