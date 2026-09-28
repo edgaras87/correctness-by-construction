@@ -21,7 +21,9 @@
 stated once, in a manual that never ships, and made usable as
 artifacts a project holds.**
 
-**What it is for.** A convention is written when something made
+## What it is for
+
+A convention is written when something made
 usable is needed, and the need is written down first: what work
 it makes possible, what went wrong without it, and the event that
 made it — as evidence, with the run or the date; or as intent,
@@ -33,15 +35,26 @@ were dead letters nobody had followed (CBC ADR-0039). The trigger:
 the descriptions item filed on 2026-09-27, and the index read
 against it the next day.
 
-**What ships:** nothing of this convention's own. Its artifact in a
-run is the `foundation` line every shipped file carries (§2). Its
-artifact here is the shape of a manual,
-`.claude/rules/convention-manual.md`, loading whenever a manual is
-read.
+## What this is made usable as
 
-**The seats.** A run holds the artifacts and writes no manuals.
-The deliverer writes the manuals and holds the master of every
-artifact. This page is written from the deliverer's seat.
+Nothing shipped of its own; what a repo holds is:
+
+- **the `foundation` line in every shipped file** — a run's, and
+  this convention's artifact there (§2);
+- **`.claude/rules/convention-manual.md` — the shape of a manual,
+  the deliverer's**, loading whenever a manual is opened;
+- **the index, `docs/conventions/README.md`** — a pointer: the
+  table and the chain, relations only (CBC ADR-0032), and one line
+  sending a reader to `docs/conventions/conventions/`.
+
+What derives from this page is that list. A change here walks it;
+a change forced in one of them is checked back against this page.
+
+## The seats
+
+A run holds artifacts and writes no manuals. The deliverer writes
+the manuals and holds the master of every artifact. This page is
+written from the deliverer's seat.
 
 ## 1. What a convention is
 
@@ -149,18 +162,24 @@ every old path, before the close.
 **Its shape** is a rule under `.claude/rules/`, loading when a
 manual is opened (how a rule loads is
 `docs/conventions/agent-arrangement/` §3), and lists the sections
-one has: a header saying what derives from the page and how a
-disagreement ends; an opening statement; *what it is for* — the
+one has, each a heading after the opening: a header saying what
+derives from the page and how a disagreement ends; an opening
+statement; *what it is for* — the
 need, the failure lived without it, and the trigger, as evidence
 or as intent marked on trial, never intent dressed as evidence;
-*what ships*; the seats; lessons as dated
-italics; *what this does not cover*, the boundary against its
-neighbours by path; and *what this is made usable as*, the list a
-change to the page walks. The shape was not designed.
-`docs/conventions/exchange/` and `docs/conventions/shapes/` grew
+*what this is made usable as* — the list a change to the page
+walks, each item marked shipped or the deliverer's, with the
+moment it opens at, placed as the answer to the need; the seats,
+what each side does; lessons as dated italics; and *what this
+does not cover*, the boundary against its neighbours by path. The
+shape was not designed. `docs/conventions/exchange/` and
+`docs/conventions/shapes/` grew
 the same six sections with nothing telling either writer to, which
 is a shape by the test in `docs/conventions/shapes/` §2: a pair
-recurred.
+recurred. It grows the same way and no other: the list is the
+floor, and content that fits none of it takes its own heading in
+the body, where a section two manuals need becomes the next
+candidate.
 
 **The seats.** A convention has two seats, the run's and the
 deliverer's, and a manual names both: what each holds and does
@@ -228,7 +247,7 @@ index asked for both until 2026-09-28, and the last three
 conventions took neither — a rule kept where nobody reads it (CBC
 ADR-0039).*
 
-## 5. What this does not cover
+## What this does not cover
 
 - **Which copy is the master, how a copy changes, and what
   ships** — `docs/conventions/exchange/`.
@@ -242,21 +261,6 @@ ADR-0039).*
   ADR-0003 and `docs/master.md` §1.1.
 - **A run's own descriptions and what derives from them** — the
   run's, and not yet a rule of ours.
-
-## What this is made usable as
-
-- **`.claude/rules/convention-manual.md` — the shape of a manual,
-  this repo's.** Loads on `docs/conventions/*/README.md`; lists the
-  sections and no more.
-- **The `foundation` line in every shipped file** — stated by the
-  exchange's manual §3, named here as this convention's artifact
-  in a run.
-- **The index, `docs/conventions/README.md`** — a pointer: the
-  table and the chain, relations only (CBC ADR-0032), and one line
-  sending a reader to `docs/conventions/conventions/`.
-
-What derives from this page is that list. A change here walks it;
-a change forced in one of them is checked back against this page.
 
 ## Where to look
 

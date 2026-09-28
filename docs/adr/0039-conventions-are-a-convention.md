@@ -7,7 +7,8 @@ revised at two boundaries on the reviewer's readings — the master
 is a map, a pointer is a path, the boundary section, `foundation`
 moves home, seats are two named roles. Amends ADR-0036 decision 7
 in the ownership of `foundation`. Decision 4 amended 2026-09-28,
-after acceptance: an eighth section, *what it is for*)
+after acceptance: an eighth section, *what it is for*; and again,
+*what ships* folded into *made usable as* — seven)
 
 ## Context
 
@@ -143,7 +144,12 @@ rule says a shape is born when a pair recurs. This is the pair.
    without it, and the trigger, written as evidence and never as
    intent — after the opening statement, on the reviewer's reading
    that every convention here was born from a problem and no manual
-   said which. The walk writes it into the other eight.*
+   said which. The walk writes it into the other eight. Amended
+   once more the same day, by the walk's form test on its thinnest
+   manual: what ships folds into what this is made usable as, one
+   list placed after what it is for, each item marked shipped or
+   the deliverer's; the shipped artifact had been named in three
+   sections. Seven sections.*
 
 5. **The convention ships nothing else, and `foundation` is its.**
    The field — its name, that every derived file carries one, ours

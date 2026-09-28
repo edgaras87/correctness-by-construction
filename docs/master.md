@@ -251,8 +251,8 @@ practice as the evidence — is stated once, in the conventions
 manual, `docs/conventions/conventions/` §3, for every description
 this page names: the concept, each manual, and this page. This page
 is a map and states no rule of its own. Where a manual and the
-concept are handled differently is that manual's §5 and CBC
-ADR-0039.
+concept are handled differently is that manual's *What this does
+not cover* and CBC ADR-0039.
 
 ## 4. The work arrangement
 
