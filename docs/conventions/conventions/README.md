@@ -158,9 +158,13 @@ next one to ask; the paragraph is where the asking is now built
 in.
 
 **One rule for every description**, this page included. A
-description is any body of writing that things derive from: the
-concept, each manual, the master. The rule is the same for all of
-them, and this is where it is stated:
+description is how we understand a thing today, written down: the
+concept, each manual, the master. It may be wrong or incomplete,
+and it is canonical regardless — everything derived from it agrees
+with it until it changes, and it changes only for a reason
+recorded, practice being the evidence. What derives from it is not
+a description: it applies, it does not explain. The rule is the
+same for all of them, and this is where it is stated:
 
 1. A description lists what derives from it.
 2. Each derived thing names its description — in a shipped file,

@@ -45,7 +45,7 @@ flowchart TB
 
 ### Mental layer (`concept/`)
 
-Responsibility: the authoritative plain-words statement of the
+Responsibility: the canonical plain-words statement of the
 concept — five chapters, read `00-cbc.md` first. The only place the
 concept's substance changes; a state of this directory is what a
 concept version names.
@@ -95,7 +95,7 @@ one. The pipeline this repo describes is whole only for this
 stack.
 The stay-home delivery docs sit beside the bundle, outside the copy
 set (ADR-0010): the starter doc (`delivery/README.md`) states the
-birth mapping and the authoritative-vs-pinned rule; the install manual
+birth mapping and the canonical-vs-pinned rule; the install manual
 (`delivery/installs/pure-seed.md`) is the birth procedure
 (ADR-0016) — the material-only seed, copying the container from
 `delivery/container/` and the method beside it, its deliveries committed
@@ -134,7 +134,7 @@ ADR-0031 (the first convention written here).
      travels with a file, a standing comment, a procedure, or a check
      at commit review - so each entry names which. -->
 - Concept substance never changes in the archive — this repo is
-  authoritative, the archive a historical snapshot (retired
+  canonical, the archive a historical snapshot (retired
   2026-08-28: frozen, never consulted as a source again; provenance
   pins remain checkable against it). Enforced in each chapter's
   provenance header, which travels with the file.

@@ -1,6 +1,6 @@
 # correctness-by-construction
 
-One authoritative home for a single concept: **correctness by
+One canonical home for a single concept: **correctness by
 construction** — the design principle that correctness is built into
 the structure of a thing rather than tested in afterwards. The repo
 holds the plain-words statement of the concept (with its rationale,
@@ -18,7 +18,7 @@ recorded way instead of living in a head and scattered notes.
 
 ## Success criteria
 
-- The concept statement here is the single authoritative version;
+- The concept statement here is the single canonical version;
   the archive copy is demoted to a historical snapshot.
 - The harvest loop has run end-to-end at least once: a real run's
   surprise recorded as a concept change with provenance, and the

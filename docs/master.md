@@ -61,7 +61,7 @@ structure of a thing rather than tested in afterwards.**
 This is the repo's purpose. Everything else exists because of it,
 and is either derived from it or checked against it.
 
-- **Authoritative here.** This is where the concept is true. Every
+- **Canonical here.** This is where the concept is true. Every
   copy elsewhere — a run's `docs/concept/` — is a copy, changed
   only by copying anew, never edited in place.
 - **Versioned as a whole**, not per chapter. It is at **v1**. The
@@ -339,7 +339,7 @@ The strings, as constraints. Each is already on this page as a
 sentence; here they are collected so a change can be checked
 against them in one pass.
 
-- **The concept is authoritative here.** Every copy elsewhere is a
+- **The concept is canonical here.** Every copy elsewhere is a
   copy, changed only by copying anew.
 - **The container is the master** of every file a run receives.
   Our own `.claude/skills/` copies are downstream of it, not beside
@@ -385,10 +385,22 @@ Used across both repos, defined here and nowhere else.
   copy changes only by being copied anew.
 - **made usable** — what a stated body becomes in the delivery:
   the concept as the method, the conventions as the container.
-- **description** — any body of writing things derive from: the
-  concept, a manual, this page. One rule for all of them,
+- **description** — how we understand a thing today, written down:
+  the concept, a manual, this page. It may be wrong or incomplete
+  and is canonical regardless; what derives from it applies it and
+  does not explain. One rule for all of them,
   `docs/conventions/conventions/` §3; they differ at the edges
   (ADR-0039).
+- **canonical** — of a description or a copy: the one that counts,
+  from which every other is derived or copied. Says reference,
+  never correctness — a canonical description is today's
+  understanding and changes only for a reason recorded. In plain
+  engineering words, a source of truth, where the truth is ours
+  today; that phrase is a gloss on this word, not a second term.
+  Chosen 2026-09-28 over *authoritative*, which it replaced in
+  fourteen places; if it reads as settled where the stance is
+  today, *standing* is the runner-up, and that is recorded here
+  rather than decided.
 - **manual** — a convention's description, at
   `docs/conventions/<name>/README.md`. Never shipped.
 - **seats** — the sides a convention has, this repo's and a run's.

@@ -2,7 +2,7 @@
      birth-materials/README.md @ fe0075d (PLAN Step 3, 2026-08-28).
      Changes on adaptation: paths rewritten from the bundle's
      copy-me layout to this repo's tree (ADR-0004); the
-     authoritative-vs-pinned rule and the concept-version pin made
+     canonical-vs-pinned rule and the concept-version pin made
      explicit. Carries no "derives from" pin of its own — this is
      delivery instructions, not a derived execution.
      2026-09-01: split under the starter layout (ADR-0010) — the
@@ -12,7 +12,7 @@
 
 The executions derived from the concept, each pinned to the concept
 version its own `foundation` field names (ADR-0003, ADR-0036). This repo's copies are
-authoritative; a run's copies are pinned — they change only by
+canonical; a run's copies are pinned — they change only by
 copying anew from here, and a run's surprises come back as harvest,
 never as edits (docs/models/tiers.md).
 
