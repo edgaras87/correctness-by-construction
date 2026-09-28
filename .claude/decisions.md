@@ -935,3 +935,22 @@
   footer cites something its reader can open.
   Rejected: editing the footers in place. A copy is changed by
   being copied anew (the 2026-09-26 entry above).
+
+- 2026-09-28 Convention held: conventions (CBC ADR-0039). What this
+  repo holds of it: the shape of a manual,
+  `.claude/rules/convention-manual.md`, loading on
+  `docs/conventions/*/README.md` — ours, exposed, shipped nowhere,
+  born from the pair the exchange and shapes manuals made and the
+  boundary section the conventions manual needed. And the rule's
+  step 2 applied to our own side: `exchange-read`,
+  `exchange-deliver` and `exchange-reading.md` gain
+  `foundation: the exchange convention`, which they lacked — the
+  exchange manual's claim was about shipped files, and the rule for
+  every description makes no such exception.
+  Why: a manual written to a shape answers the seats and the
+  boundary because the shape asks; the last two manuals grew the
+  sections unprompted and the next writer had nothing telling them
+  to.
+  Rejected: holding the shape until a third manual grew the
+  sections. The shapes rule's own test is a pair, and a stricter
+  test for our own instance is a rule kept for symmetry.

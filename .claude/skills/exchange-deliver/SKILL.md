@@ -1,6 +1,7 @@
 ---
 name: exchange-deliver
 description: Write the note and stage a delivery into a run's temp/. Use when the reviewer says to deliver — after a reading, or when something a run holds has changed here — and for a note alone when a reading found nothing to send.
+foundation: the exchange convention
 ---
 
 # Deliver

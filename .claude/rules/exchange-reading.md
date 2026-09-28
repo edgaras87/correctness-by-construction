@@ -1,6 +1,7 @@
 ---
 paths:
   - "temp/reading-*.md"
+foundation: the exchange convention
 ---
 
 <!-- The shape of a reading. Loads while one is being written or

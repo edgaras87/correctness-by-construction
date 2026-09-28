@@ -1,6 +1,7 @@
 ---
 name: exchange-read
 description: Read a run since the deliverer last read it, and write the reading. Use when the reviewer says to read a run, or before a delivery that should answer what the run asked.
+foundation: the exchange convention
 ---
 
 # Read a run
