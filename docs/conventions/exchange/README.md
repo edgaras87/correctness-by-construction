@@ -153,22 +153,16 @@ method would be born with an entry file about files it does not
 hold. No such run exists; when one does, those lines become a
 fill.*
 
-**Every shipped file says what it derives from.** One frontmatter
-field, beside `name` and `description`, holding a live claim and
-never history: what this file comes from *now*, not when or from
-which run. Method skills — the concept and its version. Stack
-practice — the concept it was checked against. Container skills —
-the convention whose artifact this is, by name; the manual stays
-home but the name finds it. Concept chapters — nothing; they are
-the top. The field is `foundation`, and the value carries the
-relation where it is not derivation: `concept v1`; `practice,
-checked against concept v1`; `the exchange convention`. One shipped
-file has none, `shapes-lifecycle.md`, because it has no convention
-to name yet. *Until 2026-09-26 the five method and stack skills
-carried this as a comment on line 6, in two different verbs, nine
-templates repeated it, and the container's files carried nothing.*
-The field is not called `source`; that word already means the
-deliverer in a run's text.
+**Every shipped file carries `foundation`.** The field — its
+name, that every derived file has one, and what it holds for each
+kind — is the conventions convention's,
+`docs/conventions/conventions/` §2. What is the exchange's: the
+line travels with the copy as a live claim, what this file comes
+from *now* and not when or from which run, and nothing in a copy
+can say otherwise. *Until 2026-09-26 the five method and stack
+skills carried this as a comment on line 6, in two different
+verbs, nine templates repeated it, and the container's files
+carried nothing.*
 
 **One pin** for all of it. Not one per group, not one per
 convention. A run that holds two pins for one delivery has been

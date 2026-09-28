@@ -22,10 +22,10 @@ stated once, in a manual that never ships, and made usable as
 artifacts a project holds.**
 
 **What ships:** nothing of this convention's own. Its artifact in a
-run is the `foundation` line every shipped file already carries
-(`docs/conventions/exchange/` §3). Its artifact here is the shape
-of a manual, `.claude/rules/convention-manual.md`, loading whenever
-a manual is read.
+run is the `foundation` line every shipped file carries (§2). Its
+artifact here is the shape of a manual,
+`.claude/rules/convention-manual.md`, loading whenever a manual is
+read.
 
 **The seats.** This repo writes manuals and holds the master of
 every artifact; a run holds artifacts and writes no manuals. The
@@ -97,10 +97,15 @@ foundation: the <name> convention
   lines refer to the convention by it.
 - `requires` names the conventions this one delegates rules to; a
   receiver lands a convention together with its chain.
-- `foundation` says what the file stands on now — for a convention's
-  artifact, the convention by name. Every shipped skill and rule
-  carries one; `docs/conventions/exchange/` §3 says what each kind
-  holds.
+- `foundation` says what the file stands on *now* — a live claim,
+  never history. Every derived file carries one, shipped or this
+  repo's own: for the method, the concept and its version,
+  `concept v1`; for the stack practice, the concept it was checked
+  against, `practice, checked against concept v1`; for a
+  convention's artifact, the convention by name, `the exchange
+  convention`. The value carries the relation where it is not
+  derivation. Concept chapters carry none; they are the top. That
+  the line travels with a copy is `docs/conventions/exchange/` §3.
 
 ## 3. The manual
 
@@ -205,9 +210,8 @@ ADR-0039).*
 
 ## 5. What this does not cover
 
-- **Which copy is the master, how a copy changes, what ships, and
-  what `foundation` holds for each kind of file** —
-  `docs/conventions/exchange/`.
+- **Which copy is the master, how a copy changes, and what
+  ships** — `docs/conventions/exchange/`.
 - **The tag a citation carries, and the records a project keeps** —
   `docs/conventions/project-recording/`.
 - **How a rule or a skill reaches an agent, and which paths are the

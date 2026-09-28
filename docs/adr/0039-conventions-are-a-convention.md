@@ -2,7 +2,9 @@
 
 Date: 2026-09-28
 Status: Proposed (opened under the commit plan for the conventions
-manual; flips at the set's records commit)
+manual; revised at step 4's boundary on the reviewer's readings —
+the master is a map, a pointer is a path, the boundary section,
+`foundation` moves home; flips at the set's records commit)
 
 ## Context
 
@@ -82,7 +84,13 @@ rule says a shape is born when a pair recurs. This is the pair.
    the page.
 
 3. **A conventions manual, the core in the master, the edges where
-   they are.** Chosen.
+   they are.** The first draft. Rejected at step 4's boundary: the
+   master is a map, an entry point one level in from the README,
+   and a rule split between a map and a manual is two places for
+   one truth — the defect the manual's own *one place* names.
+
+5. **A conventions manual holding the core, the master pointing at
+   it, the edges where they are.** Chosen.
 
 4. **The shape of a manual held until a third manual grows the
    sections.** Rejected. The shapes convention's own rule is that a
@@ -114,28 +122,46 @@ rule says a shape is born when a pair recurs. This is the pair.
 
 4. **The shape of a manual is a rule of ours**, exposed under
    `.claude/rules/` on `docs/conventions/*/README.md`, listing the
-   sections a manual has and no more. It is the convention's
-   artifact here. It ships nowhere: a run writes no manuals.
+   sections a manual has and no more: a header on what derives
+   from the page and how a disagreement ends; an opening statement;
+   *what ships*; the seats; lessons as dated italics; *what this
+   does not cover*, the boundary against its neighbours by path; and
+   *what this is made usable as*. The seventh was not in the pair
+   that birthed the shape — only shapes had one — and joined when
+   the conventions manual needed to draw its line four times in one
+   reading: it is the section that makes *one place* checkable from
+   the reader's side. It is the convention's artifact here. It ships
+   nowhere: a run writes no manuals.
 
-5. **The convention ships nothing else.** `foundation` is already
-   in every shipped file (ADR-0036 decision 7) and is this
-   convention's artifact in a run. A run's own descriptions —
+5. **The convention ships nothing else, and `foundation` is its.**
+   The field — its name, that every derived file carries one, ours
+   included, and what it holds for each kind — is stated in the
+   conventions manual §2, and is this convention's artifact in a
+   run. ADR-0036 decision 7 decided the field as the exchange's;
+   it is amended in that one respect, ownership, and the exchange
+   keeps what is its own: that the line travels with the copy as a
+   live claim. Three artifacts of ours carried no line and gain
+   one. A run's own descriptions —
    `docs/system/definition.md` and the slice records through the
    registry — follow the same core, and whether that earns a
    shipped rule is left to the run that trips on it.
 
-6. **The master's section 3 is the rule for every description.**
-   A description lists what derives from it; each derivative names
-   its description; a change to the description walks the list; a
-   change forced in a derivative is checked back; a disagreement is
-   decided, practice the evidence, and if the description changes
-   the walk runs again. The section stops calling itself "not a
-   rule yet": the trigger it named — a decline made "because the
-   manual says" — did not fire, and the reviewer's question above
-   is what fired instead. The conventions manual and the concept's
-   own records point at it. The trigger for a descriptions manual
-   of its own is the master's rule for itself: the section
-   outgrows the page and leaves a paragraph behind.
+6. **The rule for every description lives in the conventions
+   manual, and the master points at it.** A description lists what
+   derives from it; each derivative names its description; a
+   change to the description walks the list in the same commit and
+   greps for the description's path; a change forced in a
+   derivative is checked back; a disagreement is decided, practice
+   the evidence, and if the description changes the walk runs
+   again. The master's section 3 keeps the loop and the record of
+   where practice bent a description, and states no rule: it is a
+   map, and its "not a rule yet" paragraph is gone — the trigger it
+   named never fired, and the reviewer's question did. The birth
+   case: a description born with existing derivatives walks them in
+   the set that follows, not the same commit; this manual was born
+   with nine, and the walk is the next set. The trigger for a
+   descriptions manual of its own stands: the section outgrows the
+   manual and leaves a paragraph behind.
 
 7. **The words.** *Description* is any body of writing things
    derive from — the concept, each manual, the master. *Manual* is
@@ -145,7 +171,16 @@ rule says a shape is born when a pair recurs. This is the pair.
    differently, and a reader who has only one word for both loses
    them. *Source* stays a run's word for the deliverer.
 
-8. **No CHANGELOG entry and no PLAN step**, now or for any
+8. **A pointer is a path.** Text that points at a manual names
+   its directory with the slash — a path from the repo root, or a
+   relative link between manuals, which carries the same token —
+   so that a change to a manual finds every pointer with one grep,
+   as it finds every derivative by `foundation`. A name in prose is
+   not a pointer. A rename is commit-plan §4's sweep. The evidence
+   that the walk over pointers is needed: the previous day's sweep
+   of one word across twenty live files, done by hand.
+
+9. **No CHANGELOG entry and no PLAN step**, now or for any
    convention that ships nothing. The CHANGELOG is the
    concept-version log; a convention entering the container is
    recorded in the container's tables and the registry, which is

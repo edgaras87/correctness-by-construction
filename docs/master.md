@@ -244,40 +244,15 @@ and not a wish:
   against it hard enough. This page does not know which, and says
   so rather than choosing.
 
-**The rule, for every description.** The concept, each manual and
-this page are descriptions: bodies of writing that things derive
-from. One rule holds for all of them, and this section is where it
-is stated:
-
-1. A description lists what derives from it.
-2. Each derived thing names its description — in a shipped file,
-   the `foundation` line.
-3. A change to the description walks the list.
-4. A change forced in a derived thing is checked back against the
-   description.
-5. A disagreement is raised and decided, practice the evidence; if
-   the description changes, the walk runs again.
-
-Steps 1 and 2 are checkable today: every shipped file carries
-`foundation`, and the exchange and shapes manuals close with their
-lists. Steps 3 to 5 ran twice by hand before this was a rule — the
-correspondence check of 2026-09-25, and the walk of this page at
-the exchange plan's close — both because the reviewer asked, not
-because anything made anyone look.
-
-Where a manual and the concept are handled differently is not in
-this rule but at its edges: versioning, shipping, the kind of
-derivative, the seats, and what each asserts (ADR-0039). The
-concept's edges are ADR-0003, the CHANGELOG's standing comment and
-1.1; a manual's are the conventions convention,
-`docs/conventions/conventions/`.
-
-*A rule since 2026-09-28 (ADR-0039). The trigger this paragraph
-once named — a decline caught being made "because the manual says"
-— never fired; the reviewer's question of how differently a
-description and a manual should be handled did. If this section
-outgrows the page it becomes its own document and leaves a
-paragraph behind.*
+**The rule that holds all of this** — a description lists what
+derives from it, each derivative names it, a change walks the list,
+a forced change is checked back, a disagreement is decided with
+practice as the evidence — is stated once, in the conventions
+manual, `docs/conventions/conventions/` §3, for every description
+this page names: the concept, each manual, and this page. This page
+is a map and states no rule of its own. Where a manual and the
+concept are handled differently is that manual's §5 and CBC
+ADR-0039.
 
 ## 4. The work arrangement
 
@@ -388,6 +363,8 @@ Used across both repos, defined here and nowhere else.
   project receives. Here, this repo.
 - **run** — a separate repository that builds a real system with
   what it was given. Blind to its deliverer.
+- **project** — whichever repository is doing the work under a
+  convention or making an output: a run, or this one.
 - **delivery** — files copied whole into a run, with a note. At
   birth, and after.
 - **staging** — a person copying the delivery and its note into a
@@ -409,8 +386,9 @@ Used across both repos, defined here and nowhere else.
 - **made usable** — what a stated body becomes in the delivery:
   the concept as the method, the conventions as the container.
 - **description** — any body of writing things derive from: the
-  concept, a manual, this page. One rule for all of them (3); they
-  differ at the edges (ADR-0039).
+  concept, a manual, this page. One rule for all of them,
+  `docs/conventions/conventions/` §3; they differ at the edges
+  (ADR-0039).
 - **manual** — a convention's description, at
   `docs/conventions/<name>/README.md`. Never shipped.
 - **seats** — the sides a convention has, this repo's and a run's.

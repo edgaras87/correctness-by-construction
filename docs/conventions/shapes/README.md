@@ -37,8 +37,8 @@ states it. What this repo holds of the convention is §4.
 ## 1. What a shape is
 
 A **shape** says what a kind of output looks like: its form, never
-its content. *Project*, below, means whichever repository makes the
-output — a run, or this one.
+its content. *Project*, below, is the master's word: whichever
+repository makes the output — a run, or this one.
 
 The two halves matter equally. *Form* is what recurs — which parts a
 record has, what each is for, what a worked example must contain.
