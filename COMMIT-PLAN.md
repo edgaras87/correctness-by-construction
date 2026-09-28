@@ -36,6 +36,16 @@ The conventions manual's §3 list, its own sections, and ADR-0039
 decision 4 (amended again after acceptance) in one commit; the
 shape rule in the agent-scoped commit after it.
 
+**1b. `docs(conventions): the header comment goes`**
+Found at step 3's boundary by the reviewer: the header comment
+restates the opening, *made usable as*, rule step 5 and the
+master's checkable-only rule — the exchange's and shapes' pre-rule
+way of saying what the conventions manual now says once — and is
+invisible to a reader of the page. Six sections. The conventions
+manual's §3 list and its own header, ADR-0039 decision 4, and
+commit-plan's header in one commit; the shape rule in the
+agent-scoped commit after it.
+
 **2. `docs(conventions): commit-plan reads to the shape`**
 The thinnest manual, zero seats wording, no dangling links: the
 test of the form. Header, *what it is for* from ADR-0038 claim 1b
@@ -192,6 +202,12 @@ Deletes this file; the body records what diverged.
   was the run-facing answer near the top; *made usable as* was the
   walk list at the end; the seats named the files again. The list
   moves up and carries both jobs; the seats keep only the doing.
+- **No header comment** (found at step 3's boundary). The header
+  was the rule for every description written locally, twice,
+  before the rule existed; with the rule in one place and the
+  shape as sections, every line of it is a second home. What it
+  carried that was history — came from where, read to the shape
+  when — is git's.
 - **Thinnest first.** commit-plan tests the form on 74 lines
   before it is applied to 577. If the form costs more than it
   gives on the small one, the plan is revised before the large
