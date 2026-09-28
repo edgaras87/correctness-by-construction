@@ -114,7 +114,7 @@ Two files were added that it did not begin with: one convention
 the container's first `.claude/rules/` artifact (ADR-0035, its
 convention ADR-0037). Three more conventions were added and
 discarded, 2026-09-24 — two unused, and `artifact-kinds` after five
-firings in a year. The eight convention manuals sit in
+firings in a year. The nine convention manuals sit in
 `docs/conventions/` — the *why* behind each rule, for a maintainer,
 never shipped — and move with the rules they explain. Inside the
 container the parts divide by how they reach a run: the three
@@ -146,8 +146,8 @@ ADR-0031 (the first convention written here).
   travels with every copy into a run repo (ADR-0004, ADR-0036).
 - A manual never outlives the rule it explains: a rule changed in
   `delivery/container/` moves its manual in `docs/conventions/` in the
-  same commit. Enforced in `docs/conventions/README.md` — a stale
-  manual
+  same commit. Enforced in `docs/conventions/conventions/` §3, the
+  rule for every description — a stale manual
   is the kind of lie nothing catches, because it is read rarely and
   by whoever is least sure (ADR-0025).
 - A pin never claims more than was checked. Enforced where this
@@ -175,9 +175,9 @@ ADR-0031 (the first convention written here).
 | `delivery/` | The delivery layout (ADR-0010, ADR-0017, widened by ADR-0024): `container/` is what a run is born into, this repo's (ADR-0025; where it came from is ADR-0038's record) — named `kit/` until ADR-0029, which renamed it for what it is; `method/` and `spring-postgres/` are the two groups a run copies as pinned files — two skills and three, whole, a group taken entirely or not at all (ADR-0029), each laid out as the piece of the run's tree it lands as, so staging is copying the groups on top of one another and `concept/` → `docs/concept/` is the one mapping (ADR-0036); `fills/` is text written into the container's own files (the playbook's steps); `README.md` describes, maps, and says what the container holds; `installs/` holds `pure-seed.md` for birth (ADR-0016); every update after it is the exchange, `docs/conventions/exchange/`, whose two skills sit in this repo's `.claude/skills/` (ADR-0036); a shape rides the group of the thing it shapes, an exposed one as a pinned copy and an unexposed one staged at a gate, held apart from the groups and naming its own (ADR-0035) |
 | `docs/baselines/` | Held baselines — artifacts withheld from delivery, blind to newborns, compared against lived results: the frozen playbook (ADR-0012) and the Spring slice reference, handed to no run at any moment and opened once at a run's Release step (ADR-0033, superseding ADR-0021's hand-off). **Trial evidence, and not shapes** (ADR-0035): what is withheld here is withheld *in order to stay* undelivered, because a derivation that has seen it measures imitation — where a shape is withheld only until a gate, after which being in front of the next writer is the point. The two look alike and their blindness runs opposite ways; a shape does not live here, and nothing here ships under a shape's rule. Which of these files is which is not yet sorted — its own change set |
 | `docs/models/` | Two models, this repo's (ADR-0026; where they came from is ADR-0038's record). Neither is delivered. The shapes model that sat beside them became the shapes convention's manual (ADR-0037) |
-| `docs/conventions/` | Eight convention manuals, this repo's — five that came with the container (ADR-0025, ADR-0038) and three written here: `visual-comparison` (ADR-0031), `exchange` (ADR-0036), `shapes` (ADR-0037, the model reshaped); its own `README.md` is the index and carries the container's rules, among them that a manual moves with its rule |
+| `docs/conventions/` | Nine convention manuals, this repo's — five that came with the container (ADR-0025, ADR-0038) and four written here: `visual-comparison` (ADR-0031), `exchange` (ADR-0036), `shapes` (ADR-0037, the model reshaped), `conventions` (ADR-0039, born from the rules the index had accreted, and the one truth for what a description and its derivatives owe each other); its own `README.md` is the index — the table and the chain, relations only |
 | `docs/adr/` | Architecture decision records |
 | `devlog/` | Session-by-session work history |
 | `temp/` | Working drafts, tracked and deleted when served — handoffs, replies, briefings being molded (not records; `temp/README.md` holds the rule) |
 | `CHANGELOG.md` | The concept-version log (ADR-0003) |
-| `.claude/` | Working arrangement: skills, agent decisions log |
+| `.claude/` | Working arrangement: skills, rules — the shape of a reading and the shape of a manual — and the agent decisions log |

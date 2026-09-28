@@ -1,10 +1,12 @@
 # 0039. Conventions are a convention, and every description follows one rule
 
 Date: 2026-09-28
-Status: Proposed (opened under the commit plan for the conventions
-manual; revised at step 4's boundary on the reviewer's readings —
-the master is a map, a pointer is a path, the boundary section,
-`foundation` moves home; flips at the set's records commit)
+Status: Accepted (2026-09-28, at the set's records commit; opened
+Proposed under the commit plan for the conventions manual and
+revised at two boundaries on the reviewer's readings — the master
+is a map, a pointer is a path, the boundary section, `foundation`
+moves home, seats are two named roles. Amends ADR-0036 decision 7
+in the ownership of `foundation`)
 
 ## Context
 

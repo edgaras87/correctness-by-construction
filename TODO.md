@@ -8,6 +8,29 @@
 
 ## Now (current plan step)
 
+- [ ] **The walk** (2026-09-28, ADR-0039): the first firing of the
+      rule for every description on the conventions manual, born
+      with nine derivatives. Every manual read against
+      `docs/conventions/conventions/`: a *what this does not cover*
+      section each, by path; a pointer by path wherever a
+      neighbour's subject is named, and every restatement of one
+      turned into a pointer; the seats widened to a section where a
+      paragraph turned out not to be enough; "this repo" made "the
+      deliverer" where it means that; each disagreement about whose
+      a subject is, decided one at a time. Its own set, opened next
+      — the trigger has fired, and the rule's birth case says the
+      set that follows is where it runs.
+
+- [ ] The master and ARCHITECTURE are two maps of one thing
+      (2026-09-28, the reviewer). The master's own erratum says it
+      duplicates ARCHITECTURE's section 2; ARCHITECTURE is
+      project-recording's record and the master sits loose under
+      `docs/` on purpose. Whether the master becomes ARCHITECTURE,
+      or the reverse, waits on project-recording's revision, which
+      ARCHITECTURE derives from — deciding the merge first would
+      decide it twice. Trigger: that revision, or the next change
+      that has to update both maps for one fact.
+
 - [x] DONE 2026-09-15, change-plan 0205a7d..close — seven fixes,
       one revision at the boundary (124744c): (1) R5 in the first
       slice's build, the Stage 3 gate reworded at the boundary
@@ -814,7 +837,11 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] A convention for descriptions, gathering three items below
+- [x] DONE 2026-09-28, ADR-0039 — the ninth convention,
+      `conventions`, its manual born from the index's four rule
+      sections; the shared core is that manual's §3, and the three
+      items below closed with it. Original item:
+      A convention for descriptions, gathering three items below
       into one (2026-09-27, the reviewer). The idea this repo runs
       on and states nowhere in one place: **one description, and
       everything else derived from it and pointing back.** Today it
@@ -851,7 +878,9 @@
       trigger, whichever fires first. Until then the three items
       stand on their own and this one only names them as parts.
 
-- [ ] Every manual says its seats, candidate rule for descriptions
+- [x] DONE 2026-09-28, ADR-0039 decision 3, one paragraph on each
+      of the six, both seats named and the run first. Original item:
+      Every manual says its seats, candidate rule for descriptions
       (2026-09-27, the reviewer). Twice now a manual grew a section
       because the two sides do different things — the exchange (§3
       down, §4 the take, §6 up) and shapes (§4, this repo's seat) —
@@ -870,7 +899,10 @@
       maintenance rule for core descriptions below, or lands first
       as its simplest case.
 
-- [ ] The words for what things derive from — decide them, in
+- [x] DONE 2026-09-28, ADR-0039 decision 7 — the split carries
+      meaning, five edges named; *project* added to the master's
+      words; *deliverer* kept over *hub*. Original item:
+      The words for what things derive from — decide them, in
       their own piece of work (2026-09-27, the reviewer). Current
       state, as explained in conversation and nowhere else:
       **description** is the wider word — any body of writing that
@@ -984,7 +1016,12 @@
       it drifts. When: after the layout plan, before the delivery to
       run 3, whose note names the rule.
 
-- [ ] A maintenance rule for core descriptions, candidate
+- [x] DONE 2026-09-28, ADR-0039 decision 6 — the five steps are
+      the rule, in `docs/conventions/conventions/` §3, with the
+      pointer grep added to step 3 and the birth case stated; the
+      trigger below did not fire, the reviewer's question did.
+      Original item:
+      A maintenance rule for core descriptions, candidate
       convention (2026-09-26, the reviewer). Every description this
       repo derives things from — the concept, each convention's
       manual, `master.md` — is defined in one place, and several
