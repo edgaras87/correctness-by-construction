@@ -12,7 +12,9 @@ it makes possible, what went wrong without it, and the event that
 made it — as evidence, with the run or the date; or as intent,
 marked *on trial* with what would make it evidence and when to
 look again, after which the need is rewritten from what was seen
-or the convention goes. What went wrong without this one: the rules for
+or the convention goes; or, for a convention taken whole from
+elsewhere, as adopted: where it came from, and what has been lived
+under it since. What went wrong without this one: the rules for
 conventions lived in the index, against its scope, and two of them
 were dead letters nobody had followed (CBC ADR-0039). The trigger:
 the descriptions item filed on 2026-09-27, and the index read
@@ -151,8 +153,9 @@ The shape is a rule under `.claude/rules/`, loading when a manual
 is opened (how a rule loads is `docs/conventions/agent-arrangement/`
 §3), and lists the sections one has, each a heading after the
 opening: an opening statement; *what it is for* — the need, the
-failure lived without it, and the trigger, as evidence or as
-intent marked on trial, never intent dressed as evidence; *what
+failure lived without it, and the trigger, as evidence, as intent
+marked on trial, or as adopted, never intent dressed as evidence;
+*what
 this is made usable as* — the list a change to the page walks,
 each item marked shipped or the deliverer's, with the moment it
 opens at, placed as the answer to the need; the seats (§3.4);
@@ -176,10 +179,13 @@ manual names both: what each does under it, the run first — what
 each holds is the list in *what this is made usable as*. One
 paragraph when they are alike, a section per seat when they are
 not, and "no seat" said outright when one side has none, so a
-reader does not hunt for it. Placed after *what this is made usable
-as*. Twice a manual grew seat sections because the two sides do
-different things, and nothing told the writer of the next one to
-ask; the section is where the asking is now built in.
+reader does not hunt for it. When the body is already written per
+seat, the section is a paragraph naming which body sections are
+whose, as `docs/conventions/exchange/` does. Placed after *what
+this is made usable as*. Twice a manual grew seat sections
+because the two sides do different things, and nothing told the
+writer of the next one to ask; the section is where the asking is
+now built in.
 
 ### 3.5 The rule for every description
 
@@ -226,6 +232,26 @@ derived thing changes, it follows in the same commit. The decision
 is recorded where the repo records decisions: a commit body, or an
 ADR when options were weighed.
 
+**A finding is declined only for not being general** — this run's
+alone, an exception, or not worth the change. It is never declined
+because the description says otherwise: a description is
+downstream of practice like everything else, and a run that
+contradicts one may have found the description's flaw rather than
+its own. When practice and a statement disagree, the statement is
+a candidate for change, not the judge. That includes this page.
+
+*Where it has already happened, so the rule reads as a record and
+not a wish. CBC ADR-0034: run 3 argued down a clause of
+`convention-lifecycle` on the day it first ran under it — taken,
+against the text as shipped. CBC ADR-0035: run 3 made a thing the
+vocabulary had no word for; the vocabulary gained one, and the
+next day went, on the same evidence read further. `cbc-slice`,
+three times: every in-place edit run 3 made to the method was
+taken whole. And the concept has not bent: it is at v1, verbatim
+from the archive, nothing from three runs has reached a chapter —
+either evidence it is right or evidence nothing has been read
+against it hard enough, and this page does not know which.*
+
 ## 4. Adding a convention
 
 As the last three were added — `visual-comparison`, the exchange,
@@ -239,10 +265,11 @@ shapes — and not as the index once said:
    shipped-conventions table in `delivery/README.md`, and the birth
    entry in the container's decisions-log stub, in the same commit.
 4. A row in the index's table.
-5. A registry entry in `.claude/decisions.md`, *Convention held:
-   \<name\>*, saying what this repo holds of it — and for a skill,
-   this repo's own copy under `.claude/skills/`, in its own
-   agent-scoped commit.
+5. A registry entry in `.claude/decisions.md` saying what the
+   deliverer holds of it — headed *Convention held: \<name\>* since
+   2026-09-27; the entries for `visual-comparison` and the exchange
+   predate the heading — and for a skill, the deliverer's own copy
+   under `.claude/skills/`, in its own agent-scoped commit.
 
 No CHANGELOG line and no PLAN step. The CHANGELOG is the
 concept-version log (CBC ADR-0003) and has no place for a

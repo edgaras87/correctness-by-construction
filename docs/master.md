@@ -84,12 +84,8 @@ is and how it is made.
 None of it is CbC. The concept is about how a system is built; the
 conventions are about how a repo is kept.
 
-- **A manual never ships.** It is written for a person maintaining
-  this, not for a project using it. What a project gets is the
-  artifact, never the explanation.
-- **Each convention is two things kept apart**: the manual at
-  `docs/conventions/<name>/README.md`, and its artifacts — real
-  files in `delivery/container/`, which is the master.
+- **What a convention is, its two parts, and that a manual never
+  ships** — `docs/conventions/conventions/` §1.
 - **Nine, not ten.** `decide-first`, `option-comparison` and
   `artifact-kinds` were discarded on 2026-09-24 and nothing replaced
   them. `convention-lifecycle` went on 2026-09-26 and the exchange
@@ -217,40 +213,15 @@ The loop, as it actually runs:
    the same failure. **Declined:** we judge it project-specific, an
    exception, or not worth the change — and the run keeps its edit.
 
-**The rule that matters is about step 5.** A finding is declined
-only for not being general. It is never declined because the
-description says otherwise. A description is downstream of practice
-like everything else here, and a run that contradicts one may have
-found the description's flaw rather than its own. When practice and
-a statement disagree, the statement is a candidate for change, not
-the judge.
-
-That includes this document.
-
-**Where it has already happened**, so the rule is read as a record
-and not a wish:
-
-- **ADR-0034.** Run 3 argued down a clause of `convention-lifecycle`
-  on the day it first ran under it. Taken. A rule of ours changed on
-  a run's argument, against the text as we had shipped it.
-- **ADR-0035.** Run 3 made a thing our vocabulary had no word for.
-  The vocabulary gained one — and the next day the vocabulary itself
-  went, on the same evidence read further.
-- **`cbc-slice`, three times.** Every in-place edit run 3 made to
-  the method was taken whole. The method has bent three times.
-- **The concept has not bent.** It is at v1, verbatim from the
-  archive; nothing from three runs has reached a chapter. That is
-  either evidence it is right or evidence nothing has been read
-  against it hard enough. This page does not know which, and says
-  so rather than choosing.
-
 **The rule that holds all of this** — a description lists what
 derives from it, each derivative names it, a change walks the list,
 a forced change is checked back, a disagreement is decided with
 practice as the evidence — is stated once, in the conventions
 manual, `docs/conventions/conventions/` §3.5, for every description
-this page names: the concept, each manual, and this page. This page
-is a map and states no rule of its own. Where a manual and the
+this page names: the concept, each manual, and this page. Why step
+5 declines a finding only for not being general, and where practice
+has already bent a description, is its §3.6. This page is a map and
+states no rule of its own. Where a manual and the
 concept are handled differently is that manual's *What this does
 not cover* and CBC ADR-0039.
 
@@ -275,25 +246,18 @@ filled.*
 
 ## What must stay true
 
-The strings, as constraints. Each is already on this page as a
-sentence; here they are collected so a change can be checked
-against them in one pass.
+The strings a change is checked against in one pass, each stated
+in its home:
 
-- **The concept is canonical here.** Every copy elsewhere is a
-  copy, changed only by copying anew.
-- **The container is the master** of every file a run receives.
-  Our own `.claude/skills/` copies are downstream of it, not beside
-  it.
-- **A manual never ships.** What a project gets is the artifact,
-  never the explanation.
-- **Agent side and project side never share a commit** — in this
-  repo and in every run.
-- **The exchange's five facts** — a run is blind; nothing arrives by
-  itself; copies against masters; a run edits a copy when it fails
-  it; nothing moves upward as files — and what follows from them:
-  one pin per run, both numbers held by the run, bytes matching at
-  the pin, absence carried by the note. Stated once, in
-  `docs/conventions/exchange/` §1–§3, and checked there.
+- **The concept is canonical here** — §1.1, and
+  `docs/conventions/conventions/` §3.5.
+- **The container is the master of every file a run receives** —
+  `docs/conventions/exchange/` §1 and §2.
+- **A manual never ships** — `docs/conventions/conventions/` §1.
+- **Agent side and project side never share a commit** —
+  `docs/conventions/commit-messages/` §2.
+- **The exchange's five facts, and what follows from them** —
+  `docs/conventions/exchange/` §1 to §3.
 
 ## The words
 
