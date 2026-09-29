@@ -1,11 +1,12 @@
 # Plan: correctness-by-construction
 
 <!-- No playbook supplies these steps: each is written here when a
-     milestone is named, and finished ones join Reached. With no
-     project end, a milestone's last two gate items do what a
-     retrospective would: fold its lessons back, and re-read the
+     milestone is named, and leaves when it is reached — the devlog
+     entry that closes it names the step, and the story is there.
+     With no project end, a milestone's last two gate items do what
+     a retrospective would: fold its lessons back, and re-read the
      entry file. Findings go to TODO.md the moment they appear, and
-     the ADRs are listed by docs/adr/ itself. -->
+     docs/adr/ lists the ADRs itself. -->
 
 ## Legend
 
@@ -15,24 +16,6 @@
 Detail only the next 1–2 steps finely; keep later steps coarse (rolling wave).
 
 ---
-
-## Reached
-
-<!-- Finished steps, one line each: the date, the step, where its
-     story lives. The step numbers stay because other files cite
-     them ("PLAN Step 2"). -->
-
-- 2026-08-27  Step 0: Bootstrap — devlog; ADR-0001, 0002
-- 2026-08-28  Step 1: Framing — devlog; README
-- 2026-08-28  Step 2: Concept lands — devlog; ADR-0003
-- 2026-08-28  Step 3: Executions land — devlog; ADR-0004
-- 2026-08-28  Step 4: Practice executions land — devlog; ADR-0005, 0006
-- 2026-08-28  Step 5: First harvest — devlog; ADR-0007
-- 2026-08-28  Step 6: Templates from the lived run — devlog; ADR-0008
-- 2026-09-17  Step 7: The delivery takes shape — devlog 09-01 to
-              09-18; ADR-0009 to 0022
-- 2026-09-18  Step 8: The kit comes here — devlog; ADR-0023 to 0026
-- 2026-09-19  Step 9: The groups — devlog; ADR-0029
 
 ## Step 10: One delivery, run for real               [~]
 
