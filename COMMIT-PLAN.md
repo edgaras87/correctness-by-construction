@@ -46,6 +46,18 @@ manual's §3 list and its own header, ADR-0039 decision 4, and
 commit-plan's header in one commit; the shape rule in the
 agent-scoped commit after it.
 
+**1c. `docs(conventions): the conventions manual's §3 in subsections`**
+Found at step 3's boundary by the reviewer: §3 held six rules as
+bold paragraphs, and every pointer into it said "§3" and landed on
+a wall. Six numbered subsections — one place, a pointer is a path,
+the shape, the seats, the rule for every description, a
+disagreement — the last its own for the first time, as shapes has
+"a difference". The pointer rule says a pointer carries the
+section number when it means one, and relative links go now rather
+than at step 10; the seats subsection loses its stale "after
+*what ships*". The three live pointers into §3 move to §3.5.
+Step 10 still moves the master's decline rule, now into §3.6.
+
 **2. `docs(conventions): commit-plan reads to the shape`**
 The thinnest manual, zero seats wording, no dangling links: the
 test of the form. Header, *what it is for* from ADR-0038 claim 1b
@@ -208,6 +220,12 @@ Deletes this file; the body records what diverged.
   shape as sections, every line of it is a second home. What it
   carried that was history — came from where, read to the shape
   when — is git's.
+- **A rule other text points at gets a numbered subsection** (found
+  at step 3's boundary). A pointer into a wall of bold paragraphs
+  is a pointer to a search. Numbers, because the repo already
+  points by section number and the sweep covers renumbering; the
+  one-line definitions stay in the master's glossary, the rule and
+  its why in the subsection.
 - **Thinnest first.** commit-plan tests the form on 74 lines
   before it is applied to 577. If the form costs more than it
   gives on the small one, the plan is revised before the large
