@@ -60,21 +60,38 @@ seat, §2 and the container's stub stay as they are. README's
 records row changes with it if PLAN no longer answers "what's
 next" here.
 
-**7. `chore(agent): the entry file says where next is`**
-*Provisional.* The records table in `CLAUDE.md` gives PLAN "current
-state, next steps, gates". If step 6 moves "next" to TODO's Now,
-this row says so. The agent's files never share a commit with the
-records, so this is a step of its own. If step 6 leaves the row
-true, this step is dropped at that boundary.
+**7. `docs(conventions): the default playbook goes`**
+The reviewer's call at step 6's boundary. `playbooks/default.md`
+had three jobs and none is live: a fallback for births with no
+typed playbook, where this repo births only CbC runs and the
+container's stub already covers a birth without one; the base for
+new typed playbooks, which the CbC playbook no longer uses; and
+the base this repo's retrospective folds into, which ADR-0041
+removed. The file goes, and project-recording's list, seat and §9
+stop naming it. The CbC playbook's provenance line says it was
+removed. ADR-0041, still Proposed, gains a seventh decision. The
+seat also gains the sentence behind the whole difference: a run's
+step gates are derived from the skill that holds the step, while
+the deliverer's milestones come from the situation, no skill
+holds them, and their gates are written when they are named.
 
-**8. `docs: devlog carries the PLAN pass`**
-The session's entry. ADR-0041 flips to Accepted here. It records
+**8. `chore(agent): the entry file says where next is`**
+*Provisional.* The records table in `CLAUDE.md` gives PLAN "current
+state, next steps, gates". Step 6 moved "next" to TODO's Now, so
+this row says so. The agent's files never share a commit with the
+records, so this is a step of its own.
+
+**9. `docs: devlog carries the PLAN pass`**
+The session's entry. ADR-0041 flips to Accepted here. TODO changes
+twice. The item on run 3's step form gains an idea: a step form as
+PLAN's shape. And a Later item asks whether the playbook needs a
+convention of its own, triggered by a second typed playbook. It records
 one error of mine from the TODO pass: I closed "Does this repo's
 working arrangement still fit it?" as answered by the seats, but its
 third fact, what PLAN is for here, was never answered. This set is
 the answer.
 
-**9. `docs(agent): close commit plan for the PLAN pass`**
+**10. `docs(agent): close commit plan for the PLAN pass`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
