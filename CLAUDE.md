@@ -14,9 +14,9 @@ it. Documents only — no code, no runs.
 
 | When | What's in it | Record |
 |---|---|---|
-| Starting work, or closing a step's gate | Current state, next steps, gates | PLAN.md |
+| Naming a milestone, or closing one's gate | Open milestones and their gates | PLAN.md |
 | A decision taken, options rejected | Decisions and why | docs/adr/ |
-| Noticed something, not doing it now | Backlog | TODO.md |
+| Starting work, or noticed something not doing it now | What's next; the backlog | TODO.md |
 | Session ending, or a dead end hit | Work history, dead ends | devlog/devlog.md |
 | Shipped something users can see | What changed, for users | CHANGELOG.md |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |
