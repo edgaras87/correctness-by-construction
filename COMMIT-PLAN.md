@@ -183,8 +183,27 @@ at the deliverer; and the TODO practice, where the deliverer keeps
 DONE entries whole and the manual calls never deleting an
 anti-pattern, is applied as the reviewer decides it.
 
+**11a. `docs(conventions): a manual says why it reaches an agent the way it does`**
+Found by the sync pass's heading count and taken on the reviewer's
+word: three manuals grew a section on why the convention arrives
+as a stub, as files or as files with comments, each under its own
+title, and every convention has to answer the question somewhere
+— a skill, a rule, a stub, a file. The shape gains it as a body
+section every manual has, one title; the three rename to it, and
+the six others write it from what they already say in passing —
+the exchange's "a rule rather than a skill", shapes' "the first
+convention with no skill", commit-messages' opening at the commit
+moment. The conventions manual's §3.3, ADR-0039 decision 4 and the
+nine manuals in one commit; the shape rule in the agent-scoped
+commit after it. The other candidate the count found — "what it
+is" and "why it is shaped this way" opening three bodies — is not
+taken: the body stays free.
+
 **12. `docs: records — the walk done`**
-TODO: the walk item and the kit-wording item close. ARCHITECTURE
+TODO: the walk item and the kit-wording item close, and one is
+filed: the deliverer's TODO practice — nineteen DONE entries kept
+whole where project-recording §5 says prune — to be decided as a
+seat rule or a prune, deferred at step 11 on the reviewer's word. ARCHITECTURE
 and the index are checked for a fact the walk moved; none is
 expected. No CHANGELOG entry: nothing shipped changed.
 
@@ -252,6 +271,11 @@ Deletes this file; the body records what diverged.
   points by section number and the sweep covers renumbering; the
   one-line definitions stay in the master's glossary, the rule and
   its why in the subsection.
+- **The channel section joins the shape; the body's opening does
+  not** (step 11's boundary). Both were grown by three manuals.
+  The channel is a question every convention must answer and a
+  reader looks for; "what it is" and "why it is shaped this way"
+  are how three short manuals happened to divide a free body.
 - **Thinnest first.** commit-plan tests the form on 74 lines
   before it is applied to 577. If the form costs more than it
   gives on the small one, the plan is revised before the large
