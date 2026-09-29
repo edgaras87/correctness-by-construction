@@ -94,6 +94,15 @@
       was decided.
       See: devlog 2026-09-18, later still.
 
+- [ ] Should a run's decisions-log entries be shorter? (2026-09-29)
+      Context: ours now point at an ADR in a line or two, because no
+      one reads them but us (ADR-0042). A run's are read by
+      `exchange-read`, which is why they run long; whether they run
+      too long is a reading's question.
+      Ideas: the one-line pointer rule, in the container's stub.
+      Trigger: the next reading of run 3.
+      See: devlog 2026-09-29, the split.
+
 - [ ] Decide whether the master becomes ARCHITECTURE, or the
       reverse (2026-09-28, the reviewer).
       Context: the master's "What this page knows is wrong" says
@@ -220,6 +229,17 @@
       Ideas: a convention of its own, split from §9.
       Trigger: a second typed playbook.
       See: devlog 2026-09-29, the PLAN pass.
+
+- [ ] Filter a maintainer's container out of this repo, when one is
+      needed (2026-09-29, the reviewer).
+      Context: `delivery/container/` is the run's derivation of the
+      conventions, and this repo's own files are the deliverer's
+      (ADR-0042). No second maintainer repo exists, so no
+      maintainer's container does either.
+      Ideas: filter this repo — keep the functionality and layout,
+             drop this concept's own content.
+      Trigger: a second maintainer repo.
+      See: devlog 2026-09-29, the split.
 
 - [ ] Give "step" one meaning (2026-09-29, the reviewer).
       Context: it names a PLAN.md step and a commit in a commit

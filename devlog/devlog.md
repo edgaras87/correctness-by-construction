@@ -6,6 +6,55 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-29, last  (the split — two derivations of the conventions; ten commits, two revisions)
+
+`the-split-2026-09-29`, cut from `main` at `32943ca`.
+
+- **The reviewer's reading: the container is the run's, not ours.**
+  This repo had kept its setup downstream of `delivery/container/`:
+  skills renewed from it at a pin of our own, records "under the
+  same stubs". The 2026-09-19 decisions entry had seen the
+  circularity and left it open. Now the manuals are the one source,
+  and two things derive from them: the container, for a run, and
+  our own records and `.claude/`. Identical files are fine; neither
+  side is copied from the other (ADR-0042). ADR-0038 had already
+  answered whom the container serves; this made our side say so.
+- **Every file already said it.** Each skill and rule we hold names
+  its convention as its `foundation`, never the container. The
+  practice and ten sentences were the tie: project-recording's
+  "same stubs", three times; agent-arrangement's seats, twice, and
+  its entry file's "When"; commit-messages' renewed copies; master's
+  "tied to each other" and "second copy"; the delivery README.
+  ARCHITECTURE gained a sentence saying so. The sweep found two the
+  plan had not listed.
+- **The decisions log, asked about twice.** First: is its header
+  needed? Two of five paragraphs were. Then: is the log needed at
+  all, beside the ADRs? I answered too fast that it was a second
+  copy, and was wrong. Read entry by entry, about 20 of 44 are a
+  receiver's registry, history now; about 12 hold arrangement
+  choices nothing else holds, commit attribution among them; about
+  12 retell an ADR at 20 to 50 lines. It stays, keeps no registry,
+  and a new entry that follows an ADR points at it in a line or
+  two. My own entry of this morning retells ADR-0042 in 18 lines;
+  it predates the rule and stays.
+- **A maintainer's container is not built.** The reviewer's idea is
+  parked in TODO: when a second maintainer repo needs one, filter
+  this repo, keeping the functionality and layout and dropping this
+  concept's own content.
+- **Corrected before commit:** `convention-lifecycle` sat here 23
+  days, 2026-09-03 to 09-26, not the nine I said.
+- **Not taken:** one container for both seats; a maintainer's
+  container now; diverging identical skills to make the split
+  visible; closing the decisions log.
+
+Resume: on `the-split-2026-09-29`, closed at the next commit, not
+pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.** Unchanged, and nothing about the
+   split goes to it. The reading also asks whether a run's log
+   entries run too long (TODO, Next).
+2. **The imperative test** — due.
+
 ## 2026-09-29, later still  (the PLAN pass — 419 lines to 56; fourteen commits, three revisions)
 
 `plan-to-the-seat-2026-09-29`, cut from `main` at `9461623`.

@@ -1,7 +1,10 @@
 # 0042. Two derivations of one set of conventions
 
 Date: 2026-09-29
-Status: Proposed (2026-09-29, under the commit plan for the split)
+Status: Accepted (2026-09-29, at the set's records commit; opened
+Proposed under the commit plan for the split, and amended at step
+4's boundary on the reviewer's question — decision 6, the
+deliverer's decisions log)
 
 ## Context
 
@@ -76,6 +79,16 @@ Every skill and rule this repo holds names its convention as its
    needs one.** It is then filtered out of this repo.
 5. **The run's side does not change.** The container, its stubs and
    what it ships stay as they are.
+6. **The deliverer's decisions log holds arrangement decisions
+   only** (the reviewer's question at step 4: what is it for?). Of
+   its 44 entries, about 20 are a receiver's registry, history
+   now; about 12 are arrangement choices with no other home, such
+   as commit attribution; and about 12 retell an ADR at 20 to 50
+   lines. It stays, because it holds how this repo's own agent
+   works, and the ADRs do not. It keeps no registry, and an entry
+   that follows from an ADR says what changed here in a line or two
+   and points at it. A run's log keeps its registry and its longer
+   entries, because `exchange-read` reads them.
 
 ## Consequences
 
@@ -89,4 +102,7 @@ Every skill and rule this repo holds names its convention as its
 - The decisions log's 2026-09-19 question is answered: the
   assumption did need writing down, and the answer is that there are
   two derivations, not a deliverer that receives from itself.
+- The decisions log's header lost its handbook retrospective, its
+  birth pin and a repeated commit rule, and `CLAUDE.md`'s row for it
+  says "agent setup changed" and no more.
 - Nothing reaches run 3: its container is what it was.
