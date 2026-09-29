@@ -1,6 +1,7 @@
 # Plan: correctness-by-construction
 
-<!-- Written fresh from the kit stub — no concept-repo playbook exists yet. -->
+<!-- No playbook supplies these steps: each is written here when a
+     milestone is named, and finished ones join Reached. -->
 
 ## Legend
 
@@ -34,45 +35,17 @@ Detail only the next 1–2 steps finely; keep later steps coarse (rolling wave).
 Goal: the composed delivery used to birth and carry a project, so
 the design has two shapes behind it rather than one.
 Gate:
-- [ ] A project born from this repo alone, holding one pin.
-- [x] One update delivered to it under `bundle-update.md`, the note
-      and the copy both, so the manual has run end to end. 2026-09-20
-      to never-oversold @ `6f2be1d`: all seven steps ran, including
-      step 7, which the previous delivery ended before. The manual
-      gained three things from the running of it — a section on what
-      a verdict is, because §5 of the note reported facts the run
-      could not check and it sent the note back; a fourth outcome
-      for the reach diagnostic, the note carrying right content in
-      an unusable shape; and the deliverer named where its own text
-      still said handbook.
-- [x] The letter goes up with lived numbers: what the take cost,
-      what the manual taught, the defect report, the constraint.
-      **Sent 2026-09-18**, before this step was written, and it
-      carried all four — the cost in §2 (ten registry entries and
-      run 3's receipt pins that a rebuild would kill) with §4's
-      sweep so the size was not guessed; the manual's four findings
-      from its first end-to-end run in §1; the `ARCHITECTURE` stub
-      defect in §4; and the fork with its coordinates and its one
-      reopen trigger in §2. The handbook replied, verified our two
-      coordinates in its own history rather than from our text, and
-      recorded the fork as its ADR-0042. Ticked here rather than
-      rewritten: the item was authored while the handbook was still
-      upstream, and its condition — the delivery run that produces
-      lived numbers — had fired the same morning. Nothing has been
-      owed upward since (devlog, 2026-09-18 evening).
-- [x] Run 3 migrated from two pins to one, or the reason it is not
-      recorded. 2026-09-20: one pin, ours, with the handbook's
-      `ba7eaa4` in words as provenance for the four conventions that
-      came from there. Three of the seven have no handbook ancestor,
-      so a second hash could no longer name the set.
-Notes: the sketch's "use it for a project or two, then stop —
+- [ ] A project born from this repo alone, holding one pin, with
+      `exchange-birth` written while it runs (TODO, Now).
+- [x] One update delivered to a run end to end, the note and the
+      copy both — 2026-09-20, to never-oversold @ `6f2be1d`
+      (devlog 2026-09-20).
+- [x] The letter to the handbook sent with lived numbers —
+      2026-09-18 (devlog 2026-09-18, evening; ADR-0038).
+- [x] Run 3 on one pin, ours — 2026-09-20 (devlog 2026-09-20).
+Notes: from the sketch — "use it for a project or two, then stop;
 design nothing further until there is a second shape to design
-from." Purifying the handbook's own kit is their work, not a step
-here; it waits on their reading of the letter. Two items closed
-2026-09-20; the two open ones are a birth and the letter, and the
-letter is richer for this delivery — the receiver found five lines
-we shipped broken and argued one of our rules down the same day
-(ADR-0034).
+from." The birth is that second shape.
 
 ## Step N: Release                                  [ ]
 
@@ -80,11 +53,10 @@ Goal: concept v1 consultable — a stranger (or future-you) can
 read, cite, and copy from this repo without the archive.
 Gate:
 - [ ] CHANGELOG entry for the release.
-- [ ] README true for a stranger; any commands verified on a clean
-      machine.
+- [ ] README true for a stranger.
+- [ ] `docs/models/` checked against the repo, since `CLAUDE.md`
+      sends a stranger there (TODO, Next).
 - [ ] Known issues filed in TODO.md, not just remembered.
-Notes: the success criterion "harvest loop run once end-to-end"
-was met at Step 5.
 
 ---
 
