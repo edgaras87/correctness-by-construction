@@ -252,7 +252,8 @@ A second tool's binding would be written beside this one, and writing
 it is the test for tool-shaped assumptions hiding in Layer 1. None has
 been needed.
 
-Sketch, Claude Code:
+Sketch, Claude Code — checked against 2.1.284 on 2026-09-29, by its
+documentation and by what could be observed here:
 
 | Layer 1 | Claude Code mechanism |
 |---|---|
@@ -268,17 +269,21 @@ Hooks appear twice: some inject context (pushed), others block (gate).
 One mechanism, two roles — a binding has to say which.
 
 Memory files arrive without their HTML comments. The loader drops every
-`<!-- … -->` block before the text enters context, so a comment in an
-entry file is never ambient: it reaches the agent only when the file is
-opened with a tool, which for the entry file is edit time
-Observed on 2.1.260 through 2.1.263; a later
-version may differ. The same loader honours `claudeMdExcludes` in
+block-level `<!-- … -->` comment before the text enters context — one
+inside a code block is kept — so a comment in an entry file is never
+ambient: it reaches the agent only when the file is opened with a tool,
+which for the entry file is edit time. Observed on 2.1.260 through
+2.1.263, documented since, and observed again on 2.1.284: this repo's
+`CLAUDE.md` holds two comment blocks, and the text a session loads
+holds neither. The same loader honours `claudeMdExcludes` in
 `settings.json`, globs against the absolute path, which is how a
 template entry file kept inside a repo stays out of its sessions.
 
-A permission rule is a gate only in a mode that honours it; a mode
-that bypasses prompts skips `ask`. The gate is the tool's, not the
-repo's.
+A permission rule is a gate only in a mode that honours it. In a mode
+that does not prompt, `ask` stops nothing: auto mode has a classifier
+decide in the background, and a mode that bypasses permissions skips
+the prompt. `deny` still refuses in both. The gate is the tool's, not
+the repo's.
 
 Skills appear twice as well, and neither time under pushed. Claude
 Code loads a skill's `name` and `description` at session start and
@@ -292,7 +297,9 @@ extra: a `paths:` list at the top. Without it, the file is read every
 session — ambient, no different from `CLAUDE.md`. With it, the file is
 read only when the agent reads a file under one of those paths with
 the Read tool, and the tool decides that, not the agent. That is
-pushed with no hook to write. Two limits, both observed: the trigger
+pushed with no hook to write. The documentation says the rule loads
+when a matching file is read; that the Read tool alone fires it rests
+on observation. Two limits, both observed: the trigger
 is the Read tool alone — writing a new file under the path, or
 listing it from the shell, loads nothing, so a record written from
 scratch gets the rule no earlier than a comment in a template would
