@@ -154,6 +154,11 @@ sixteen has the answer in it already.
    three-way split becomes `kit/` and `bundle/` landing as files,
    `installs/` staying home. ADR-0019's semi-pure step dissolves
    with it — not switched off, unnecessary.
+   *Amended 2026-09-29, a finding of 2026-09-18 held until now only
+   in PLAN's Step 8 gate: the category did not retire. The two entry
+   files left it for the kit (dc3b7db), but the playbook stayed a
+   document written into the container's own `PLAN.md`, so `fills/`
+   keeps that one member.*
 
 5. **The manuals are vendored read-only, and what we flavour is
    ours to explain.** `conventions/` — seven manuals, never
