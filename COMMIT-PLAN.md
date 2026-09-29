@@ -100,7 +100,14 @@ protocol" become the container and the exchange, closing the TODO
 item. The entry-file address contradiction is decided: the
 container ships `.claude/CLAUDE.md`, a fact, and project-recording's
 diagram is corrected in step 9 — the two are named here so the
-decision has one place. "One shipped rule" becomes two.
+decision has one place. "One shipped rule" becomes two. Widened
+at its boundary, on the reviewer's reading: the master's §4 held
+this convention's two seats, in more detail than the manual did,
+and was stale. The seats become a section per seat, since the two
+differ by design (`docs/conventions/conventions/` §3.4), taking
+what the master's 4.1 to 4.3 said, with its lesson as a dated
+italic; the master's §4 becomes a map paragraph and a pointer, in
+the same commit, and the exchange's pointer to it follows.
 
 **7. `docs(conventions): shapes reads to the shape`**
 The seats paragraph after *what ships* names both, and §4 stays as
@@ -143,7 +150,11 @@ description. The rule is step 5 of the rule for every description
 and moves here as its why; the list moves with it as dated
 lessons, evidence belonging with the rule it supports. The
 master's §3 keeps the five-step loop, motion on a map, and one
-pointer. Every step from 2 on cites
+pointer. The master's *what must stay true* list goes the same
+way: each string a rule with a home now — the concept canonical,
+the container the master, a manual never ships, the agent and
+project split, the exchange's five facts — and each becomes a
+pointer to it. Every step from 2 on cites
 `docs/conventions/conventions/` §3 in its header for how a
 disagreement ends, not the master. And every pointer is a path
 from the repo root, in backticks, never a relative link — the
@@ -204,6 +215,11 @@ Deletes this file; the body records what diverged.
   Fixed in the walk because the walk is where the nine headers are
   being written, and deferred it would be written nine times on
   purpose.
+- **The master's §4 moves into agent-arrangement's seats**
+  (revision at step 6's boundary). The master is a map; the two
+  arrangements, what each holds and why they differ, are the
+  convention's seats, and a subject moving between two files moves
+  in one commit.
 - **Root paths only.** The pointer paragraph allowed relative
   links between manuals on the argument that they carry the same
   grep token. They do, and they still read differently from every
