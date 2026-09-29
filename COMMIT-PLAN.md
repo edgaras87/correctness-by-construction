@@ -61,11 +61,29 @@ changes with it. That stub reaches only the next birth, since
 records never travel twice. If the run needs its own shape, the
 rule goes in the deliverer's seat, with the reason the run differs.
 
-**7. `docs: devlog carries the TODO pass`**
-The session's entry, written with the pass done and the plan's
-divergences known. ADR-0040 flips to Accepted here.
+**7. `docs(conventions): a TODO item may carry ideas`**
+The reviewer's addition at step 6's boundary. An item gets an
+optional `Ideas:` field for ideas about how to handle it, noted
+when the item is written, one line each and none weighed. Weighing
+is the work's, done when the item comes due. Each idea is then
+taken, extended or declined, and the verdict goes where that work
+is recorded. The stub, §5 and ADR-0040 gain the field; the ADR is
+still Proposed, so it may change inside this set. Existing items
+that already carry an unweighed idea in their Context move it
+into the field.
 
-**8. `docs(agent): close commit plan for the TODO pass`**
+**8. `docs: devlog carries the TODO pass`**
+The session's entry, written with the pass done and the plan's
+divergences known. ADR-0040 flips to Accepted here. Two more
+records ride along, both asked for by the reviewer at step 6's
+boundary. PLAN's decision index gains ADR-0035 to ADR-0040; it
+had stopped at 0034. And TODO gains an item in the new shape, on
+the word "step" naming both a PLAN step and a commit in a commit
+plan. Its ideas are "commit" for the commit plan's unit and the
+reviewer's "plan stage" for PLAN's; its context says "stage" is
+already taken three ways.
+
+**9. `docs(agent): close commit plan for the TODO pass`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
