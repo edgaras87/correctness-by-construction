@@ -85,8 +85,8 @@ instead is worth stating rather than leaving to be inferred from
 - `docs(<area>)` for almost everything, the scope naming the area
   touched: `adr`, `delivery`, `conventions`, `temp`, `devlog`,
   `agent`. Bare `docs` where a commit spans the records generally.
-- `chore(agent)` for the deliverer's own skill copies renewed from
-  the container.
+- `chore(agent)` for the deliverer's own skills and rules, each
+  derived from its manual.
 - `feat`/`fix` only where the delivery gained or lost something a
   run would notice — rare, and all on the delivery so far.
 

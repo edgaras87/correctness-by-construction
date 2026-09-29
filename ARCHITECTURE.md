@@ -107,7 +107,10 @@ ADR-0029.
 ### Container (`delivery/container/`, `docs/conventions/`)
 
 Responsibility: what a run is born into — records, conventions,
-hygiene, entry files — and this repo's to shape (ADR-0025). Where
+hygiene, entry files — and this repo's to shape (ADR-0025). This
+repo's own records and arrangement are not taken from it: both
+derive from the manuals, and a file identical in both is an
+outcome, not a dependency (ADR-0042). Where
 it came from is ADR-0038's record, and nothing tracks that repo.
 Two files were added that it did not begin with: one convention
 (ADR-0031) and the shapes rule,

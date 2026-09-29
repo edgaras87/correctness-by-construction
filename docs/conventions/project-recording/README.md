@@ -30,7 +30,8 @@ there is.
   the rule that cannot live inside a record, when to open it.
 - **`delivery/fills/cbc-run-pure-playbook.md` — the playbook's
   steps, filled into a run's `PLAN.md` at birth** (§9).
-- **The deliverer's own records**, under the same stubs.
+- **The deliverer's own records**, derived from this page as the
+  stubs are, and never copied from them (CBC ADR-0042).
 
 This page explains the records; the stubs state the rules. Nothing
 here is loaded into an agent. What derives from this page is that
@@ -39,8 +40,9 @@ checked back against this page.
 
 ## The seats
 
-The same records under the same stubs, with four differences of
-rule or ownership — so a section each
+The same records in both seats, each derived from this page — the
+run's through the stubs, the deliverer's directly — with four
+differences of rule or ownership — so a section each
 (`docs/conventions/conventions/` §3.4).
 
 ### The run's seat
@@ -53,13 +55,14 @@ lessons reach the playbook when the deliverer reads the run. Its
 
 ### The deliverer's seat
 
-The deliverer keeps the same records under the same stubs, and
-differs in four things. It has no project end, so lessons fold
-back at each step's gate close rather than at a retrospective, as
-its first devlog entry agreed on 2026-08-27. It owns the
-playbook, `delivery/fills/cbc-run-pure-playbook.md`, where a run
-holds only the steps filled into its plan (§9). Its `CHANGELOG.md`
-versions the concept, not a release (CBC ADR-0003).
+The deliverer keeps the same records, derived from this page rather
+than from the stubs (CBC ADR-0042), and differs in four things. It
+has no project end, so lessons fold back at each step's gate close
+rather than at a retrospective, as its first devlog entry agreed on
+2026-08-27. It owns the playbook,
+`delivery/fills/cbc-run-pure-playbook.md`, where a run holds only
+the steps filled into its plan (§9). Its `CHANGELOG.md` versions the
+concept, not a release (CBC ADR-0003).
 
 And its `PLAN.md` holds milestones only: things that become true
 once and have a gate, like a birth or a release. Recurring work —

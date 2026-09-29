@@ -39,7 +39,8 @@ this page.
 
 ## The seats
 
-Nearly the same files, and different by design in their job — so a
+Two derivations of this page, neither copied from the other: nearly
+the same files, and different by design in their job — so a
 section each (`docs/conventions/conventions/` §3.4).
 
 ### The run's seat — a builder's
@@ -71,10 +72,11 @@ and `exchange-deliver`; and two rules of its own,
 
 ### What the difference is
 
-Three skills are the same files; the records table has the same
-shape; the agent and project split is the same rule. What differs
-is the job, and since CBC ADR-0036 the two hold different things
-because of it: the run holds the receiver's rule,
+Three skills are identical files, each derived from its manual on
+both sides rather than copied across (CBC ADR-0042); the records
+table has the same shape; the agent and project split is the same
+rule. What differs is the job, and since CBC ADR-0036 the two hold
+different things because of it: the run holds the receiver's rule,
 `delivered-copies.md` — how to take a newer copy without losing its
 own edits, and what it may do to one meanwhile; the deliverer holds
 the deliverer's skills and the shape of the reading they produce.
@@ -190,7 +192,8 @@ is — the record's stub, README, a skill the project adds under
 `.claude/skills/`, a rules file under `.claude/rules/` (§3). Most facts
 that feel local have a moment, which is why this slot stays short.
 
-**When.** Written at project start, from the container's. Revisited
+**When.** Written at project start — a run's from the container's,
+the deliverer's from this page (CBC ADR-0042). Revisited
 when a record moves, a convention is adopted, or the build command
 changes — not otherwise.
 

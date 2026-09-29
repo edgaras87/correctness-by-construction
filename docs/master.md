@@ -34,8 +34,8 @@ Three movements. **The material** — what is stated here (1) and
 what ships from it (2), paired row by row. **The motion** — how any
 of it changes, and the rule for when a run disagrees with what we
 wrote (3). **The actor** — the work arrangement, which the agent
-here is made of and which the container ships a second copy of
-(4).
+here is made of and which the container ships a run's own
+derivation of (4).
 
 At the end: what must stay true, the words, and what this page
 knows is wrong.
@@ -228,11 +228,12 @@ not cover* and CBC ADR-0039.
 ## 4. The work arrangement
 
 **What tells an agent how to work in a repo — not the work, and not
-a record of it.** Two exist here, tied to each other: the one this
-repo runs under as the deliverer, a maintainer's, and the one it
-ships in the container for a run to work under, a builder's. They
-are nearly the same files and differ by design in their job, each
-side holding only the half it can run. What the files are, how
+a record of it.** Two exist here, derived from the same manuals and
+neither from the other (ADR-0042): the one this repo runs under as
+the deliverer, a maintainer's, and the one it ships in the
+container for a run to work under, a builder's. They are nearly the
+same files and differ by design in their job, each side holding
+only the half it can run. What the files are, how
 each reaches an agent, and what each seat holds is
 `docs/conventions/agent-arrangement/`, its seats.
 

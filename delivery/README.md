@@ -101,11 +101,13 @@ the container ships from here.
 
 ## The container half — ours
 
-`delivery/container/` is this repo's container: the records, the
-conventions, the hygiene files and the entry files a run is born
-into. It is ours to change when this repo needs it changed
-(ADR-0025). Where it came from is a fact recorded once, in
-ADR-0038, and nothing here tracks that repo or prepares to.
+`delivery/container/` is the run's container, which this repo keeps:
+the records, the conventions, the hygiene files and the entry files
+a run is born into. This repo's own arrangement is not taken from
+it; both derive from the manuals (ADR-0042). It is ours to change
+when this repo needs it changed (ADR-0025). Where it came from is a
+fact recorded once, in ADR-0038, and nothing here tracks that repo
+or prepares to.
 
 **The directory is named for what it is**, as of ADR-0029:
 `delivery/container/`, where "kit" had named where the files came
