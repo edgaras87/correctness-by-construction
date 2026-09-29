@@ -4,7 +4,19 @@
      Triage when closing a step. Prune "Later" ruthlessly: deleting an
      idea you'd re-derive anyway costs nothing.
      Rule: an inline TODO:/FIXME: anywhere in the work must reference an
-     item here. -->
+     item here.
+     Open work only: a closed item goes, since the devlog, the ADRs
+     and git already say what closed. Every item takes one shape:
+
+     - [ ] <What to do or decide.> (<date>, <who raised it>)
+           Context: <why it holds, true today — eight lines at most>.
+           Trigger: <the moment it is due>.
+           See: <the devlog entry, ADR or commit with its story>.
+
+     The story goes in that session's devlog entry, and See points
+     at it; an item that is its story's only home keeps it and has
+     no See. When an item changes, rewrite it true for today — never
+     stack a dated update on it; the change's story is the devlog's. -->
 
 ## Now (current plan step)
 

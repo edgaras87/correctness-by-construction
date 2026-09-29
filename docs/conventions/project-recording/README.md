@@ -291,13 +291,20 @@ allowed only with an issue/TODO reference attached, otherwise they rot.
 # TODO
 
 ## Now (this plan step)
-- [ ] CRUD tests for Order entity
+- [ ] Add CRUD tests for the Order entity (08-18, the plan).
+      Context: Step 2's gate names them; none exist yet.
+      Trigger: Step 2's close.
 
 ## Next (upcoming steps — assign to a step when triaged)
-- [ ] Rate limiting → belongs in Step 3 (found 08-19, see devlog)
+- [ ] Rate-limit the public endpoints (08-19, load test).
+      Context: one client held the pool for 40 s at 200 rps.
+      Trigger: Step 3 opens.
+      See: devlog 08-19.
 
 ## Later / someday
-- [ ] Admin dashboard — no committed step
+- [ ] Consider an admin dashboard (08-20, the owner).
+      Context: no committed step wants it; support reads the DB.
+      Trigger: a second support person.
 
 ## Known issues (deferred deliberately)
 - Slow query on /orders list past 10k rows. Accepted for now: real data
@@ -310,12 +317,36 @@ allowed only with an issue/TODO reference attached, otherwise they rot.
   assigned to a step, parked in later, or deleted.
 - Prune ruthlessly. A 200-item "later" list is a graveyard, not a plan;
   deleting an idea you'd re-derive anyway if it mattered costs nothing.
+- Open work only. A closed item goes: what closed is the devlog's,
+  the ADRs' and git's to tell, and a closed entry kept here is a
+  second copy of it.
+- One shape per item: what to do or decide, with the date and who
+  raised it; a **Context** of at most eight lines, saying why it
+  holds today; a **Trigger**, the moment it is due; and **See**,
+  the devlog entry, ADR or commit that tells its story. The context
+  is there so triage reads an item without opening its pointer; the
+  story is not, because the devlog already holds it.
+- The story is written where it happens. When something is noticed,
+  that session's devlog entry says so and the item points at it.
+  An item that is its story's only home keeps the story and has no
+  See.
+- An item that changes is rewritten true for today. A dated update
+  stacked on it is history, and history is the devlog's.
+
+*Found 2026-09-29: the deliverer's TODO kept closed entries whole
+and stacked dated updates on open ones — 2,120 lines, half of them
+finished work, one item at 248. Run 3's, read the same day, stacks
+its answers the same way, its longest items at 38 and 36 lines.
+The deliverer's was pruned and reshaped to this form, and the cap
+found on it: three lines cut meaning and lost a fact (CBC
+ADR-0040).*
 
 **When.** Item added the moment it's discovered (so it stops occupying your
 head); triaged when closing a step (§11, rule 3: moments, not schedules).
 
 **Anti-patterns.** Using it as the plan (it has no gates or sequence);
-never deleting; inline code TODOs with no tracked counterpart.
+never deleting; closed entries kept whole; dated updates stacked on an
+open item; inline code TODOs with no tracked counterpart.
 
 ---
 
