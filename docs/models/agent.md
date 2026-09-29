@@ -1,12 +1,10 @@
-<!-- This repo's (ADR-0026); where it came from is ADR-0038's
-     record. Edit when something lived here contradicts the text;
-     the body is otherwise as taken, its evidence the handbook's
-     own history and named as such. -->
+<!-- This repo's, edited as ours (ADR-0026, ADR-0043); where it
+     came from is ADR-0038's record. Its evidence names its source. -->
 
 # Agent Model
 
-DRAFT (named 2026-08-22, at the handbook's Step 14). Deliberately
-incomplete — a first structure to test, not a finished description.
+Deliberately incomplete — a structure to test, not a finished
+description.
 Behavioural statements carry a status and a refutation condition
 (§12).
 
@@ -19,8 +17,8 @@ nothing. It binds nothing. Its
 job is to let conventions be written against something stated, instead
 of each author reasoning from a private picture of "the agent".
 
-Layer 1 — vendor-neutral. One tool's mechanisms are a **binding**
-(§10), written separately.
+Layer 1 — vendor-neutral. One tool's mechanisms are a **binding**;
+§10 sketches the one in use.
 
 ---
 
@@ -31,8 +29,10 @@ born with**, where those conventions arrive as pinned copies from
 the repo that delivered them.
 
 That is the case worth getting right: the conventions are written for
-it, and it is the case nobody can watch. The delivering repo
-maintaining itself is one instance of it, not the subject.
+it, and it is the case nobody can watch. The delivering repo is not
+an instance of it: it receives no conventions, and derives its own
+arrangement from the same manuals (ADR-0042). Its agent meets the
+same channels all the same.
 
 The practical question the model exists to answer: *given a convention
 sitting in a project, how does it reach the agent that is supposed to
@@ -235,8 +235,9 @@ with two texts that can disagree (§5).
 
 Shown by each convention's artifacts: a skill file for a rule bound
 to a moment, stubs and templates for a rule that rides in the files
-a project is born with. What a convention ships is what its
-directory lists, and the choice rests on §8
+a project is born with. What a convention ships is what its manual
+lists under *what this is made usable as*, and the choice rests on
+§8
 (HANDBOOK ADR-0015, HANDBOOK ADR-0040). A skill's frontmatter names
 its trigger; nothing names a channel.
 
@@ -248,8 +249,9 @@ one fact, two homes, and this was the one nothing edited.
 ## 10. Bindings (Layer 2)
 
 Layer 1 names capabilities; a binding names the mechanisms in one tool.
-Bindings are separate files, one per tool, so that writing a second one
-is the test for tool-shaped assumptions hiding in Layer 1.
+A second tool's binding would be written beside this one, and writing
+it is the test for tool-shaped assumptions hiding in Layer 1. None has
+been needed.
 
 Sketch, Claude Code:
 
@@ -260,7 +262,7 @@ Sketch, Claude Code:
 | pushed | context-injecting hooks, slash commands, subagents; `.claude/rules/*.md` with a `paths:` list — loaded when the agent reads a matching file with the Read tool; not on a write, a new file, or a shell command |
 | told | the prompt |
 | observed | tool results |
-| installed | files in the repo; the starter kit that puts them there |
+| installed | files in the repo; the container that puts them there at birth |
 | gate | blocking hooks (`PreToolUse`), CI; permission rules in `settings.json` — `ask` stops at a prompt, `deny` refuses |
 
 Hooks appear twice: some inject context (pushed), others block (gate).
