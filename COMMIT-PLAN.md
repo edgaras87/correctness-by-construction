@@ -57,28 +57,38 @@ our own skills stop, and the 2026-09-19 entry's open question is
 answered. The agent's files never share a commit with the records.
 
 **5. `chore(agent): the log and its row say what is true`**
-Found at step 4, and cut at the reviewer's question: do we need
-this at all? The decisions log's header comment has five
-paragraphs, and two still work: what the file is, and the division
-of labour between a rule and its log. The rest go. One repeats
-commit-messages' rule, as the comment itself says. One sends
-entries to a handbook at a retrospective, and neither exists for
-us (ADR-0038, ADR-0041). One describes a birth pin, which our files
-no longer carry (ADR-0042). `CLAUDE.md`'s row for the log also drops
-"the conventions held, with versions", the half of a run's log
-that the deliverer no longer has. Both are agent files, so they
-share one commit.
+Found at step 4. The reviewer asked what the log is for, and it
+was re-evaluated on its 44 entries. About 20 are the registry of a
+receiver: conventions injected and updated at a pin, and copies
+renewed. They are history now, since ADR-0038 and ADR-0042. About
+12 are arrangement choices with no other home, such as commit
+attribution and the path rule. About 12 record what our
+arrangement did about an ADR, and those run to 20–50 lines retelling
+it. The log stays, because it holds how this repo's own agent works,
+which the ADRs do not. Its header keeps what the file is and the
+division of labour, and gains one rule: an entry that follows from
+an ADR says in a line or two what changed here, and points at the
+ADR. The paragraphs on a handbook retrospective, a birth pin and a
+repeated commit rule go. `CLAUDE.md`'s row for the log becomes
+"Agent setup changed | Decision, why, rejected options", since here
+a convention is written, not received. Both are agent files, so
+they share one commit.
 
-**6. `docs: devlog carries the split`**
+**6. `docs(conventions): our log holds no registry`**
+agent-arrangement's deliverer seat gains the sentence: our decisions
+log holds arrangement decisions only, and no registry of received
+conventions (CBC ADR-0042). A run's log keeps both, and it is the
+channel `exchange-read` reads, which is why its entries are longer.
+
+**7. `docs: devlog carries the split`**
 The session's entry. ADR-0042 flips to Accepted here. TODO gains
 two items. One is the maintainer container: the trigger is a second
 maintainer repo, and the idea, the reviewer's, is to filter this
 repo, keeping the functionality and layout and dropping what is
-this concept's. The other asks whether a log entry that restates an
-ADR shrinks to a line pointing at it, the pattern TODO and PLAN
-took. That would touch the run's log shape too, so it waits.
+this concept's. The other asks whether a run's log entries should
+be shorter too. We read them, so that waits on a reading of run 3.
 
-**7. `docs(agent): close commit plan for the split`**
+**8. `docs(agent): close commit plan for the split`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
