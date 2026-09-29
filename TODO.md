@@ -10,13 +10,16 @@
 
      - [ ] <What to do or decide.> (<date>, <who raised it>)
            Context: <why it holds, true today — eight lines at most>.
+           Ideas: <optional — how it might be handled, a line each>.
            Trigger: <the moment it is due>.
            See: <the devlog entry, ADR or commit with its story>.
 
      The story goes in that session's devlog entry, and See points
      at it; an item that is its story's only home keeps it and has
-     no See. When an item changes, rewrite it true for today — never
-     stack a dated update on it; the change's story is the devlog's. -->
+     no See. Ideas are noted as they come and weighed only when the
+     item is due — each is then taken, extended or declined. When an
+     item changes, rewrite it true for today — never stack a dated
+     update on it; the change's story is the devlog's. -->
 
 ## Now (current plan step)
 
@@ -56,10 +59,10 @@
       its mechanics, and the copy's reader, who needs only source,
       version, pin, do-not-edit, how changes arrive, and to write
       surprises in its own records. The concept chapters' headers
-      still say "harvest, never edits" to the run's copy. The fix:
-      the master's header above a marker, the copy everything
-      below, checkable as identical-below-the-marker. Skills stay
-      as they are — agent-side, the user's call.
+      still say "harvest, never edits" to the run's copy. Skills
+      stay as they are — agent-side, the user's call.
+      Ideas: the master's header above a marker, the copy everything
+             below, checkable as identical-below-the-marker.
       Trigger: the next birth.
 
 - [ ] Tell the next birth the middle-steps line at its Step 2
@@ -255,8 +258,8 @@
       Context: an invented order service with an idempotency slice
       could steer a run toward that shape. No evidence in three
       runs; one weak signal — the example and run 3 both land on
-      one area. If it shows, add a second example on another
-      shape; never delete this one.
+      one area.
+      Ideas: a second example on another shape, keeping this one.
       Trigger: the next framing read on a differently shaped
       problem.
       See: devlog 2026-09-17, later.
@@ -274,8 +277,9 @@
       Context: a skill is the same for every project; what one
       project needs goes in its own records, never the copy. The
       gap: an edit the project needs in the skill's behaviour,
-      declined. Run 3 named the fallback — an overlay file per
-      skill beside the copy — and rejected building it.
+      declined.
+      Ideas: an overlay file per skill beside the copy — run 3's,
+             which it declined to build.
       Trigger: declined-but-needed becoming a pattern.
       See: devlog 2026-09-17, later.
 
@@ -301,9 +305,9 @@
 - [ ] Revisit "backend" in the skills' description lines
       (2026-09-06).
       Context: kept — it names the toolkit's honest scope, and
-      every run so far is one. The description lines are where to
-      start; the practice skills' bodies (compose, Flyway, Spring
-      Boot) are the larger job.
+      every run so far is one. The practice skills' bodies
+      (compose, Flyway, Spring Boot) are backend-born too.
+      Ideas: start with the description lines.
       Trigger: the first non-backend run.
       See: devlog 2026-09-07.
 

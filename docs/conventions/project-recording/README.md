@@ -304,6 +304,7 @@ allowed only with an issue/TODO reference attached, otherwise they rot.
 ## Later / someday
 - [ ] Consider an admin dashboard (08-20, the owner).
       Context: no committed step wants it; support reads the DB.
+      Ideas: a read-only view over the orders table first.
       Trigger: a second support person.
 
 ## Known issues (deferred deliberately)
@@ -322,10 +323,16 @@ allowed only with an issue/TODO reference attached, otherwise they rot.
   second copy of it.
 - One shape per item: what to do or decide, with the date and who
   raised it; a **Context** of at most eight lines, saying why it
-  holds today; a **Trigger**, the moment it is due; and **See**,
-  the devlog entry, ADR or commit that tells its story. The context
-  is there so triage reads an item without opening its pointer; the
-  story is not, because the devlog already holds it.
+  holds today; **Ideas**, optional; a **Trigger**, the moment it is
+  due; and **See**, the devlog entry, ADR or commit that tells its
+  story. The context is there so triage reads an item without
+  opening its pointer; the story is not, because the devlog already
+  holds it.
+- Ideas are how the item might be handled, noted when they come, a
+  line each and none weighed. Weighing is the work's: when the item
+  is due, each idea is taken, extended or declined, and the verdict
+  is recorded with the work. An idea parked here is not lost to the
+  session that had it, and not mistaken for a decision.
 - The story is written where it happens. When something is noticed,
   that session's devlog entry says so and the item points at it.
   An item that is its story's only home keeps the story and has no

@@ -55,6 +55,12 @@ repository holds.
   fit the same four parts. What differs — where an item is owed, a
   playbook or the deliverer — sits in the what line, and its
   sequencing items in Now are PLAN's job, not a second shape's.
+- **An Options field: the choices with their cases, the leaning one
+  marked.** Proposed at step 6's boundary, from five items carrying
+  choices inside their Context. Rejected by the reviewer: options
+  are weighed when the item is worked, not when it is written. What
+  the writer has at that moment is an idea or two, unweighed, and
+  that is what the field should hold.
 
 ## Decision
 
@@ -62,8 +68,9 @@ repository holds.
    the ADRs and git say what closed.
 2. **An item has one shape:** what to do or decide, with the date
    and who raised it; **Context**, at most eight lines, saying why it
-   holds today; **Trigger**, the moment it is due; **See**, the
-   devlog entry, ADR or commit that tells its story.
+   holds today; **Ideas**, optional; **Trigger**, the moment it is
+   due; **See**, the devlog entry, ADR or commit that tells its
+   story.
 3. **The story is written where it happens.** When something is
    noticed, that session's devlog entry says so and the item points
    at it. An item that is its story's only home keeps it and has no
@@ -73,6 +80,10 @@ repository holds.
 5. **One shape for both seats.** The container's `TODO.md` stub
    states it in its comment, where a run meets it;
    project-recording §5 explains it.
+6. **Ideas are parked, not weighed** (the reviewer, 2026-09-29). An
+   idea for how to handle an item is noted when it comes, a line
+   each. When the item is due, each is taken, extended or declined,
+   and the verdict is recorded with that work.
 
 ## Consequences
 
