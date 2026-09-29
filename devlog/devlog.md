@@ -6,6 +6,73 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-29, later still  (the PLAN pass — 419 lines to 56; fourteen commits, three revisions)
+
+`plan-to-the-seat-2026-09-29`, cut from `main` at `9461623`.
+
+- **PLAN had stopped leading the work.** From 2026-09-20, with
+  Step 10 in progress, 203 commits landed and two touched PLAN, one
+  of them my index catch-up this morning. What was next lived in
+  TODO's Now and each entry's Resume. The plan's opening commit said
+  "since Step 10 opened"; Step 10 was written on 09-18 with Steps 7
+  to 9, so the ADR and the seat say "with Step 10 in progress".
+- **The deliverer's PLAN holds milestones** (ADR-0041): things that
+  become true once and have a gate. Recurring work is TODO's. The
+  reviewer named the core of the difference: a run's step names the
+  skill that holds it and derives its gate from that skill; our
+  milestones come from the situation, and nobody but us writes
+  their gates.
+- **Finished steps went, in two moves.** First to a Reached list of
+  one line each, then out, at the reviewer's question: what is it
+  for? The seven "PLAN Step 2/3" pointers resolve through this
+  devlog's entries titled by step, and its headings are the
+  timeline. A run keeps its steps whole, because its playbook is
+  folded from them; ours feed nothing. One fact lived only in a
+  gate: `fills/` kept one member against ADR-0024 decision 4, which
+  now carries a dated amendment.
+- **The sections the stub gave us.** The Retrospective waited for a
+  project end we do not have, and its two jobs, folding lessons back
+  and re-reading `CLAUDE.md`, became closing gate items on each
+  milestone. "Discovered" never held a finding. The decision index
+  went stale twice and repeated `docs/adr/`. I added its six
+  missing lines this morning and recommended dropping it by the
+  afternoon; the reviewer took the second.
+- **The default playbook went.** Its three jobs were dead: a
+  fallback for births that are all CbC, a base the CbC playbook no
+  longer builds on, and a retrospective that no longer exists. The
+  reviewer asked whether a playbook is a shape. By shapes §1–2 it
+  is not — content, filled at birth, is a template. The step form
+  might be PLAN's shape; that idea waits on run 3's Step 7.
+- **The CbC playbook's header** was 78 lines of version history
+  that never reached a run. Each version's facts were checked
+  against the ADRs, the devlog and git, then cut to eight lines.
+  A "kit-refresh rule" it mentioned turned out moot: it kept copies
+  of Release's facts in step, and there is one copy now.
+- **Tags, asked about:** the rule is where a text is read. Bare in
+  this repo, `CBC` where a run reads it. The playbook's header stays
+  here; its shipped steps cite nothing. Of eleven apparently bare
+  citations in the manuals, eight are `CBC` wrapped onto the line
+  above, one cites a fictional project's ADR in an example, and two
+  are slips in project-recording: "(ADR-0020)" and "(ADR-0038,
+  1d)". Not fixed here.
+- **My error from the TODO pass:** I closed "Does this repo's
+  working arrangement still fit it?" as answered by the seats. Its
+  third fact, what PLAN is for here, was never answered. This set
+  answers it.
+- **Not taken:** keeping PLAN current as §2 describes; a step per
+  change set; the Reached list; changing §2 for both seats; a
+  playbook as a shape.
+
+Resume: on `plan-to-the-seat-2026-09-29`, closed at the next commit,
+not pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.** Unchanged from the TODO pass's
+   Resume, plus: the deliverer's plan is milestones now, and a run's
+   plan stays as it is — nothing to send about it.
+2. **The imperative test** — due.
+3. **Two tag slips** in project-recording, if the reviewer wants
+   them fixed.
+
 ## 2026-09-29, later  (the TODO pass — 2,120 lines to 368; eleven commits, two revisions)
 
 `todo-to-the-manual-2026-09-29`, cut from `main` at `970ceff`.

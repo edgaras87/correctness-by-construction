@@ -1,8 +1,11 @@
 # 0041. The deliverer's plan holds milestones
 
 Date: 2026-09-29
-Status: Proposed (2026-09-29, under the commit plan for the PLAN
-pass)
+Status: Accepted (2026-09-29, at the set's records commit; opened
+Proposed under the commit plan for the PLAN pass, and amended at
+two boundaries on the reviewer's readings — decision 6 gained its
+reason, a run's gates come from the skill holding the step, and
+decision 7, the default playbook goes)
 
 ## Context
 

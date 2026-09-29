@@ -121,6 +121,7 @@
       gate derived at the close is a description of what happened
       rather than a standard the work was held to". Held because
       the form has never fired; taking it untested is speculation.
+      Ideas: a step form as PLAN's shape (the reviewer, 2026-09-29).
       Trigger: run 3's Step 7 closing.
       See: devlog 2026-09-27, afternoon.
 
@@ -209,6 +210,16 @@
       phrase missed because the file wraps it across two lines.
       Trigger: the next set that changes commit-plan.
       See: devlog 2026-09-19, small hours.
+
+- [ ] Does the playbook need a convention of its own? (2026-09-29,
+      the reviewer)
+      Context: project-recording §9 describes it, and one playbook
+      exists, the CbC run's. It is not a shape: shapes §1–2 say a
+      shape is form, never content, and a filled-in template is not
+      one; a playbook is content, copied and filled at birth.
+      Ideas: a convention of its own, split from §9.
+      Trigger: a second typed playbook.
+      See: devlog 2026-09-29, the PLAN pass.
 
 - [ ] Give "step" one meaning (2026-09-29, the reviewer).
       Context: it names a PLAN.md step and a commit in a commit
