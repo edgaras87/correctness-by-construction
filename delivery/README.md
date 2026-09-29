@@ -28,7 +28,7 @@ no ground or bootstrap skill at all.
 by the same rule and for the same reason, and only an exposed one
 travels, as a pinned copy into the run's `.claude/rules/`. The rest —
 unexposed stock held apart, what a gate does with a staged one — is
-the shapes convention's, `docs/conventions/shapes/` §5 (ADR-0037).
+the shapes convention's, `docs/conventions/shapes/` §4 (ADR-0037).
 
 Beside the groups and never inside one sit the things *about*
 delivery: `fills/`, `installs/` and this file.

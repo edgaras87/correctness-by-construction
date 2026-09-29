@@ -1,44 +1,80 @@
-<!-- The shapes convention's manual: what a shape is, how one lives,
-     and why the rule is the shape it is. Never shipped; a run holds
-     the rule, `delivery/container/.claude/rules/shapes-lifecycle.md`,
-     which binds. This describes and demands nothing; the rule
-     derives from it. If the two disagree, neither is right by
-     default: the disagreement is decided, practice being the
-     evidence (docs/master.md §3), and whichever changes, the other
-     follows in the same commit. Written here first (CBC ADR-0035) at
-     the end of the set that made shapes real, from what the
-     implementation turned out to be, and made the manual under
-     CBC ADR-0037 rather than rewritten. Same rule as master.md:
-     only what is checkable, and anything merely intended marked as
-     intended.
-
-     **Its pictures illustrate its prose and never carry a fact
-     alone.** Measured once and found false: five claims lived only
-     in a chart — who moves a shape, that a project fetches nothing,
-     that a difference is proposed and never corrected, what a tick
-     records, and that a delivery becomes the project's own shape.
-     The prose grew to cover them. Read where Mermaid does not
-     render, this file should lose the pictures and no facts.
-
-     Delivered to nobody. What reaches a project is the rule, and
-     an exposed shape as a pinned copy — never this. -->
-
 # Shapes
 
 **What a kind of output looks like, in whichever repository makes
 it — its form, never its content — written from work that exists,
 and held where its place decides its force.**
 
-**What ships:** the rule, which a project holds at
-`.claude/rules/shapes-lifecycle.md` and which loads when a file
-under `.claude/shapes/` is touched. This page explains it; the rule
-states it. What this repo holds of the convention is §4.
+## What it is for
+
+So that what a kind of output looks like is written down once, from
+work that exists, and held where its place decides whether it
+binds — instead of each output re-deriving the form, or a template
+being filled in. The failure is lived: run 3 made a thing this
+repo's vocabulary had no word for, and it was called a template, a
+specification, a convention and trial evidence before it got its
+own (§2; CBC ADR-0035, 2026-09-23). Made a convention, with this
+page as its manual, on 2026-09-27 (CBC ADR-0037): the rule binds,
+and this page is why the rule is the shape it is, so that "why is
+this a directory and not a rules file?" has an answer that is not
+archaeology.
+
+## What this is made usable as
+
+The first convention with no skill: its artifact is a rule, because
+a shape's moment is a path being touched.
+
+- **`delivery/container/.claude/rules/shapes-lifecycle.md` — the
+  rule, shipped**, held at `.claude/rules/shapes-lifecycle.md` and
+  loading when a file under `.claude/shapes/` is touched. §1 to §3
+  and §5, from the run's seat, with the definition repeated because
+  a run cannot open this page.
+- **The deliverer's shapes — instances, not copies**: rules under
+  `.claude/rules/` with a Governs line,
+  `.claude/rules/exchange-reading.md` and
+  `.claude/rules/convention-manual.md` today. They hold no copy of
+  the shipped rule, which has nothing at the deliverer to load on.
+- **`delivery/README.md` — a pointer**: two sentences on placement,
+  and §4 for the rest.
+
+What derives from this page is that list. A change here walks it;
+a change forced in one of them is checked back against this page.
+
+*Does the name hold? Every section is about a shape — what one is,
+where it sits, who moves it, what a difference with one means. It
+held, 2026-09-27.*
+
+## The seats
+
+### The run's seat
+
+A run holds the rule, and keeps shapes both ways: exposed under
+`.claude/rules/`, loading while the work is written, and unexposed
+under `.claude/shapes/`, opened at a gate. It meets a staged shape
+at a step's close (§5), and what the gate reads becomes its own
+shape. It offers what it arrived at by keeping it and pointing at
+it from its backlog.
+
+### The deliverer's seat
+
+The deliverer makes outputs too — a reading is one — but it has no
+steps and no gates. So of §3 it runs the exposed case only: a
+shape at the deliverer is a rule under `.claude/rules/` with its
+own `paths:`, marked as a shape by its Governs line, loading while
+the file it governs is written. There is no `.claude/shapes/`
+here, nothing is staged to the deliverer, and the rule's §4 — what
+a gate does with what arrives in `temp/` — has no moment to fire
+on. The reviewer moves a shape, as the rule says, and here that
+means only writing one or withdrawing it.
+
+Unexposed stock, when the deliverer holds any, is held apart from
+the groups and names its group (§4); today it holds none, and no
+directory is made ahead of a first occupant.
 
 ## 1. What a shape is
 
 A **shape** says what a kind of output looks like: its form, never
 its content. *Project*, below, is the master's word: whichever
-repository makes the output — a run, or this one.
+repository makes the output — a run, or the deliverer.
 
 The two halves matter equally. *Form* is what recurs — which parts a
 record has, what each is for, what a worked example must contain.
@@ -98,7 +134,7 @@ in front of whoever does the work.
 | | Where | What happens |
 |---|---|---|
 | **Unexposed** | `.claude/shapes/` | nothing loads it; it is opened at a gate |
-| **Exposed** | `.claude/rules/`, with `paths:` | loads whenever a matching path is touched |
+| **Exposed** | `.claude/rules/`, with `paths:` | loads on its `paths:` (`docs/conventions/agent-arrangement/` §3) |
 
 The directory is not a filing decision. It *is* the force: the same
 file binds in one place and merely describes in the other, and
@@ -121,25 +157,7 @@ are what the question is asked against. Changing an exposed shape
 does not withdraw it; it returns to `.claude/shapes/` only when
 someone decides the question is open again.
 
-## 4. This repo's seat
-
-This repo makes outputs too — a reading is one — but it has no
-steps and no gates. So of §3 it runs the exposed case only:
-a shape here is a rule under `.claude/rules/` with its own `paths:`,
-marked as a shape by its Governs line, loading while the file it
-governs is written. There is no `.claude/shapes/` here, nothing is
-staged to this repo, and the rule's §4 — what a gate does with what
-arrives in `temp/` — has no moment to fire on. The reviewer moves a
-shape, as the rule says, and here that means only writing one or
-withdrawing it. One exists: `.claude/rules/exchange-reading.md`, the
-form of a reading, which is the exchange's artifact and this
-convention's instance.
-
-Unexposed stock, when this repo holds any, is held apart from the
-groups and names its group (§5); today it holds none, and no
-directory is made ahead of a first occupant.
-
-## 5. Where a shape lives, between repositories
+## 4. Where a shape lives, between repositories
 
 Stated here once; `delivery/README.md` points here. Inside a
 project, §3. Between repositories, a shape follows the
@@ -155,11 +173,11 @@ unexposed one is in no birth copy at all — it would spend the only
 independence there is — so it is held apart, names its group, and
 reaches a project as a delivery staged at a gate.
 
-**A project fetches nothing.** It holds no address for its deliverer
-and reaches no repository but its own; what arrives, arrives because
-a person asked for it and staged it. So the gate's act is local and
-always the same: look in `temp/`. And what it finds does not stay a
-delivery — after the gate has read it, the result **becomes that
+**A project fetches nothing** (`docs/conventions/exchange/` §1):
+what arrives, arrives because a person asked for it and staged it.
+So the gate's act is local and always the same: look in `temp/`.
+And what it finds does not stay a delivery — after the gate has
+read it, the result **becomes that
 project's own shape**, whether it came back unchanged, changed by
 what the project found, or merged with what was already there. The
 staging leaves; the shape stays, with dated lines saying what
@@ -197,14 +215,21 @@ No unexposed shape exists on either side, so nothing fires wrongly
 today. Its skill, and the copies rule's exclusion, are written from
 the first staging, not before (CBC ADR-0037 decision 5).*
 
-**Birth and delivery, drawn.** Where a shape of each kind sits here,
-and the two different moments at which each reaches a run. Every
-arrow that crosses is carried by a person: nothing in this repo
-reaches into a run, and nothing in a run reaches out.
+**Birth and delivery, drawn.** Where a shape of each kind sits at
+the deliverer, and the two different moments at which each reaches
+a run. Every arrow that crosses is carried by a person.
+
+*This page's pictures illustrate its prose and never carry a fact
+alone. Measured 2026-09-27 and found false: five claims lived only
+in a chart — who moves a shape, that a project fetches nothing,
+that a difference is proposed and never corrected, what a tick
+records, and that a delivery becomes the project's own shape. The
+prose grew to cover them; read where Mermaid does not render, this
+page loses the pictures and no facts.*
 
 ```mermaid
 flowchart LR
-  subgraph HERE["this repo"]
+  subgraph HERE["the deliverer"]
     direction TB
     EX["an exposed shape<br/>sits in the group of<br/>the thing it shapes"]
     UN["unexposed stock<br/>held apart, naming its group<br/>(none held yet)"]
@@ -230,27 +255,29 @@ flowchart LR
 ```
 
 **The dashed lines back are a reading, and the difference in the
-line is the point.** Nothing is sent upward and nothing is fetched:
-this repo opens a run's tree read-only and looks at both places — at
-`.claude/shapes/` for what the project kept and what its dated lines
-say it refused, when a backlog line of the run's offers it, and at
-`.claude/rules/` for the copy against the pin it was sent at, which
-the exchange reads at every reading. The run never reads this repo at all. That asymmetry
-is the whole traffic model, and a solid arrow in one direction with a
-dashed one in the other is the only part of this picture that states
-it rather than captioning it.
+line is the point.** The traffic model — nothing sent upward,
+nothing fetched, the deliverer reading a run and never the reverse
+— is `docs/conventions/exchange/` §1 and §6. What is this
+convention's is where the reading looks for shapes: at
+`.claude/shapes/` for what the project kept and what its dated
+lines say it refused, when a backlog line of the run's offers it;
+and at `.claude/rules/` for the copy against the pin it was sent
+at, at every reading. A solid arrow in one direction and a dashed
+one in the other is the part of the picture that states the
+asymmetry rather than captioning it.
 
 What travels upward is a **finding**, never a proposal: one project
 saying what it arrived at — and it travels by being *read*, not by
 being sent. A project offers by keeping its shape where its own
-records are and pointing at it from its backlog, and this repo reads
-it at the next reading (the exchange, §6). What must not travel is a status, not a
-wording — a shape handed down as a standard is inherited rather than
+records are and pointing at it from its backlog, and the deliverer
+reads it at the next reading (`docs/conventions/exchange/` §6).
+What must not travel is a status, not a wording — a shape handed
+down as a standard is inherited rather than
 derived, and the next project's own answer is lost before it is
 written. The protection is in how a shape moves, not in how vaguely
 it is phrased.
 
-## 6. How a shape is used, and what a difference means
+## 5. How a shape is used, and what a difference means
 
 **Use, drawn.** What a gate actually does when a step closes: look in
 `temp/`, find which shapes govern what was made, read, and settle
@@ -299,51 +326,17 @@ line is not a withdrawal.
 
 **A shape record that never changes is either finished or unread.**
 
-## 7. What you may disagree with here
+## What this does not cover
 
-All of it — a manual demands nothing. Disagreeing with §1's two
-births, or with §2's four boundaries, violates nothing and costs
-nothing; the worst case is that this file is wrong and wants
-correcting, and a run that contradicts it may have found its flaw
-(`docs/master.md` §3).
-
-What does bind is the rule, and it is short: how shapes live, what a
-gate does, and what the word means. This exists so that a month from
-now the rule is recallable — so that "why is this a directory and
-not a rules file?" has an answer that is not archaeology.
-
-## 8. What this does not cover
-
-What this repo stages to whom — no unexposed shape is held, and the
-place for them arrives with the first. The gate items that make a
-project meet a shape at a step's close, which belong to whatever
-defines the project's steps. And whether `docs/baselines/` holds
-anything that is a shape rather than trial evidence: §2 draws the
-line, and the sorting against it is its own work.
-
----
-
-## What this is made usable as
-
-**Shapes are a convention**: this is its manual, which never ships,
-and what a repo holds is below. The first convention with no skill:
-its artifact is a rule, because a shape's moment is a path being
-touched.
-
-- **`shapes-lifecycle.md` — a rule, the run's, shipped** in the
-  container at `.claude/rules/`, loading on `.claude/shapes/**`. §1
-  to §3 and §6, from the run's seat, with the definition repeated
-  because a run cannot open this page.
-- **This repo's shapes — instances, not copies.** Rules under
-  `.claude/rules/` with a Governs line; `exchange-reading.md` today.
-  They follow §4 and hold no copy of the shipped rule, which has
-  nothing here to load on.
-- **`delivery/README.md` — a pointer.** Two sentences on placement
-  and this page's §5 for the rest.
-
-What derives from this page is that list. A change here walks it;
-a change forced in one of them is checked back against this page.
-
-*Does the name hold? Every section is about a shape — what one is,
-where it sits, who moves it, what a difference with one means. It
-held.*
+- **When an output opens, extends and closes** — the convention
+  that owns the output; a shape that restates it is a copy of that
+  convention (§1).
+- **How a rule loads** — `docs/conventions/agent-arrangement/` §3.
+- **What passes between repositories, and how** —
+  `docs/conventions/exchange/`.
+- **The gate items that make a project meet a shape at a step's
+  close** — whatever defines the project's steps; for a run born
+  from the deliverer, `delivery/fills/cbc-run-pure-playbook.md`.
+- **Whether `docs/baselines/` holds anything that is a shape
+  rather than trial evidence** — §2 draws the line; the sorting
+  against it is its own work, not yet done.

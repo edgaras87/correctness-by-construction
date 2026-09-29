@@ -162,7 +162,7 @@ boundary against its neighbours by path.
 The shape was not designed. `docs/conventions/exchange/` and
 `docs/conventions/shapes/` grew the same sections with nothing
 telling either writer to, which is a shape by the test in
-`docs/conventions/shapes/` §2: a pair recurred. It grows the same
+`docs/conventions/shapes/` §1: a pair recurred. It grows the same
 way and no other: the list is the floor, and content that fits
 none of it takes its own heading in the body, where a section two
 manuals need becomes the next candidate. A rule, a term or a
