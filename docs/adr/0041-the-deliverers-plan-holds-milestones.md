@@ -65,7 +65,18 @@ once and stays true — a birth, a release, a concept version.
 6. **A seat difference, not a change to §2.** project-recording's
    deliverer seat states it as its fourth difference; the run's
    seat, §2, §3's index and the container's `PLAN.md` stub stay as
-   they are.
+   they are. The seat says why: a run's step names the skill that
+   holds it and derives its gate from that skill; the deliverer's
+   milestones come from the situation, and no skill holds them.
+7. **The default playbook goes** (the reviewer, at step 6's
+   boundary). `playbooks/default.md` had three jobs and none is
+   live. It was the fallback for a birth with no typed playbook,
+   but only CbC runs are born here, and the container's stub
+   already covers a birth without one. It was the base for new
+   typed playbooks, and the CbC playbook no longer builds on it.
+   And it was what this repo's retrospective folded into, which
+   decision 5 removes. If a new repo needs a playbook, it is
+   derived from this repo's history.
 
 ## Consequences
 
@@ -76,6 +87,9 @@ once and stays true — a birth, a release, a concept version.
 - The seven pointers to "PLAN Step 2" and "Step 3" in the concept
   chapters, the startup snippet and `delivery/README.md` now resolve
   through the devlog.
+- `playbooks/` is gone. project-recording names one playbook, the
+  CbC run's, and §9 says a birth without one fills the stub in
+  place.
 - ADR-0024 decision 4 was wrong since 2026-09-18 and the correction
   lived only in the removed Step 8 gate; it carries a dated
   amendment now.

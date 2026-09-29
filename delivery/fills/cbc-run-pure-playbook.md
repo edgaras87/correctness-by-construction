@@ -8,9 +8,10 @@
      / Release and their warnings from checkout-system's
      retro-folded playbook and its PLAN as lived; the Define step
      from safe-reservations log.md Entry 0001. Rebuilt as a full
-     sequence on playbooks/default.md (ADR-0011), this repo's; its
-     endpoint steps (0, 1, N) were that file's until v4 and v5
-     stripped them to the derive-at-opening form.
+     sequence on this repo's default playbook (ADR-0011), removed
+     2026-09-29 (ADR-0041); its endpoint steps (0, 1, N) were that
+     file's until v4 and v5 stripped them to the derive-at-opening
+     form.
      Harvest lands here — the one copy that exists (ADR-0007).
      Born 2026-09-05 as the pure-seed candidate variant
      (delivery/installs/pure-seed.md). v1 deltas against the

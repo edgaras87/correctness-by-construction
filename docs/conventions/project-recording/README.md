@@ -28,10 +28,8 @@ there is.
   `delivery/container/.claude/CLAUDE.md`** — this convention's one
   stake in a file `docs/conventions/agent-arrangement/` owns (§13):
   the rule that cannot live inside a record, when to open it.
-- **`delivery/fills/cbc-run-pure-playbook.md` — a playbook's steps,
-  filled into a run's `PLAN.md` at birth**, and
-  **`playbooks/default.md` — the deliverer's default playbook**
-  (§9).
+- **`delivery/fills/cbc-run-pure-playbook.md` — the playbook's
+  steps, filled into a run's `PLAN.md` at birth** (§9).
 - **The deliverer's own records**, under the same stubs.
 
 This page explains the records; the stubs state the rules. Nothing
@@ -59,24 +57,26 @@ The deliverer keeps the same records under the same stubs, and
 differs in four things. It has no project end, so lessons fold
 back at each step's gate close rather than at a retrospective, as
 its first devlog entry agreed on 2026-08-27. It owns the
-playbooks — `playbooks/default.md` and
-`delivery/fills/cbc-run-pure-playbook.md` — where a run holds only
-the steps filled into its plan (§9). Its `CHANGELOG.md`
+playbook, `delivery/fills/cbc-run-pure-playbook.md`, where a run
+holds only the steps filled into its plan (§9). Its `CHANGELOG.md`
 versions the concept, not a release (CBC ADR-0003).
 
 And its `PLAN.md` holds milestones only: things that become true
 once and have a gate, like a birth or a release. Recurring work —
 reading runs, delivering, keeping the conventions — is not a step;
-TODO's Now holds it. A reached milestone leaves the plan, and the
-devlog entry that closes it names the step. A run keeps its
-finished steps whole, because they are the evidence its playbook
-is folded from; the deliverer holds no playbook of its own, so
-its finished steps are only history, which is the devlog's. For
-the same reasons its plan has no Retrospective, whose two jobs —
-folding lessons back and re-reading the entry file — close each
-milestone's gate instead; no "Discovered along the way", since
-TODO takes a finding at once; and no decision index, since
-`docs/adr/` lists itself (§3's index is the run's).
+TODO's Now holds it. A run's step names the skill that holds it, and
+its gate is derived from that skill when the step opens; the
+deliverer's milestones come from the situation, no skill holds them,
+and their gates are written when they are named. A reached milestone
+leaves the plan, and the devlog entry that closes it names the step.
+A run keeps its finished steps whole, because they are the evidence
+its playbook is folded from; no playbook is folded from the
+deliverer's own plan, so its finished steps are only history, which
+is the devlog's. For the same reasons its plan has no Retrospective,
+whose two jobs — folding lessons back and re-reading the entry file
+— close each milestone's gate instead; no "Discovered along the
+way", since TODO takes a finding at once; and no decision index,
+since `docs/adr/` lists itself (§3's index is the run's).
 
 *Found 2026-09-29: from 2026-09-20, with Step 10 in progress, 203
 commits, two of them touching `PLAN.md`; one step written after
@@ -171,7 +171,7 @@ playbook.
 
 **When.** Created at project start; its steps arrive whole from a
 playbook at birth and are confirmed at Framing — the middles written
-fresh there when the project was born on the bare default (§9);
+fresh there when the project was born without one (§9);
 touched every working session — updating it *is* part of
 the work, not paperwork after it.
 
@@ -505,9 +505,10 @@ head start. The first plan of a familiar project type writes itself, and
 past mistakes are pre-loaded as warnings at exactly the step where they
 bit.
 
-**Where.** `playbooks/<type>.md` in the repo that owns the type — the
-one a project's "Steps from" line names — never in the project born
-from it, which holds only the copy in its plan.
+**Where.** In the repo that owns the type — the one a project's
+"Steps from" line names — and never in the project born from it,
+which holds only the copy in its plan. Here,
+`delivery/fills/cbc-run-pure-playbook.md`.
 Versioned (v1, v2, …) with a note of which project last updated it.
 
 **How.** The full sequence, first step to last. The plan's stub
@@ -519,12 +520,12 @@ own release facts. The lifecycle:
 
 1. **Birth:** whoever births the project copies the chosen playbook
    whole into PLAN.md; the plan's "Steps from" line records which
-   and at what version. The bare default is the fallback when no
-   typed playbook fits.
+   and at what version. Born without one, the stub's placeholders
+   are filled in place.
 2. **Framing:** confirm the steps against the framed problem — fill
    specifics, delete what this project has no use for, add what it
-   needs, renumber; author the middles if the project was born on
-   the bare default.
+   needs, renumber; author the steps if the project was born
+   without one.
 3. **Project end:** run the retrospective in PLAN.md — estimate vs
    reality per step, wrong ordering, dead ends, missing steps, useless
    gates.
