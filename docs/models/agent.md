@@ -318,9 +318,8 @@ attached to the component it constrains, each written so it can be
 proven wrong.
 
 `evidenced` = observed. `assumed` = asserted but never observed —
-including assertions the handbook has already acted on. The evidence
-below is the handbook's own history unless it says otherwise; a
-repo that vendors this model adds its own.
+including assertions already acted on. Each piece of evidence says
+where it was seen: the handbook's history, this repo's, or a run's.
 
 ### On ambient
 
@@ -330,8 +329,16 @@ mean it is followed.
   the handbook's entry file from its Step 6 and pulled in
   `commit-messages` from its Step 5. 15 of the handbook's first 20
   commits exceed it. Present, correct, unfollowed.
+- `evidenced` here too — 125 of this repo's 233 commits from
+  2026-09-20 to 09-29 run over 50 characters, in a repo whose
+  commit-messages skill is opened at every commit; so did seven of
+  the eight commit-plan revisions of 2026-09-29, the longest at 67.
+  Run 3's subjects crossed 50 at every step read, at 52 to 56
+  (devlog, 2026-09-10 to 09-14).
 - **Open question it raises:** unenforced, or mis-set —
-  `docs(handbook):` consumes 15 of the 50 characters before the verb.
+  `docs(handbook):` consumes 15 of the 50 characters before the verb,
+  and commit-plan's own revision form, `docs(agent): revise commit
+  plan — `, consumes 34 before saying what changed.
 
 **A2 — Instructions have a per-rule cost.** The longer the ambient set,
 the lower compliance with any single rule in it.
@@ -348,7 +355,9 @@ without opening the file that states it.
 moment of need fires more reliably than the same pointer in a reading
 list at session start.
 - `assumed` — **this is the claim that decides router vs rulebook.**
-- *Refuted by:* both placements performing the same.
+- *Refuted by:* both placements performing the same. The test that
+  can run: a reading of a run that holds one rule both ways, pointed
+  at from a skill at its moment and from the entry file alone.
 
 ### On pushed
 
@@ -362,9 +371,16 @@ fire when it should (silence, indistinguishable from having no rule).
 **O1 — Divergence is invisible without a comparison.** Nothing causes
 two disagreeing copies of a rule to be noticed unless something
 compares them.
-- `partially evidenced` — the three-place hygiene update (the
-  handbook's devlog, k) was caught by hand. Not yet observed: a
-  *missed* divergence.
+- `evidenced` — here, three divergences were missed until a
+  comparison was run for another reason. ADR-0024 decision 4 said
+  `fills/` retires, and it had kept a member since 2026-09-18; found
+  on 2026-09-29 while PLAN's Step 8 was being shrunk. PLAN's
+  decision index went stale twice, found each time while something
+  else was being written. project-recording said the deliverer kept
+  its records "under the same stubs" after ADR-0041 had split its
+  PLAN from the stub; found at the reviewer's question. Earlier, the
+  handbook's three-place hygiene update (its devlog, k) was caught
+  by hand.
 - *Refuted by:* an agent flagging a stale copy unprompted.
 
 ### On the context window
@@ -422,12 +438,11 @@ check outside the text can.
 
 | Status | Claims |
 |---|---|
-| evidenced | A1, M1, M2, G1, W2 |
-| partially evidenced | O1 |
+| evidenced | A1, M1, M2, G1, W2, O1 |
 | assumed | A2, P1, P2, U1, W1, S1 |
 
-Six of twelve remain assumed. **P2** decides router versus rulebook;
-the handbook's field test (its Step 9) is what resolves it.
+Six of twelve remain assumed. **P2** decides router versus rulebook,
+and a reading of a run is what can resolve it.
 
 Note that **installed** carries no claims. It is the only delivery that
 does not depend on an agent doing anything.
