@@ -295,7 +295,7 @@ preference into the project's truth. The container ships none.
   is missing, or its channel is not firing. `CLAUDE.local.md` makes
   the saying persistent and the diagnosis invisible.
 
-## 5. Why it is delivered as files with comments
+## Why it arrives this way
 
 Every rule here governs a file the container ships and rides in it
 as a

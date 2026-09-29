@@ -90,6 +90,15 @@ plan says so.
   had to be said every session; it moved to where every commit
   opens (CBC ADR-0038, 1f).*
 
+## Why it arrives this way
+
+A skill, because its moment is one the agent recognises — work
+turning out to need several commits — and nothing in a record
+would put the plan in front of it then. The one rule that must
+fire at every commit, the stop, is not here: a skill that opens
+only for multi-commit work cannot carry it, and it moved to
+`docs/conventions/commit-messages/` for that reason (§2).
+
 ## What this does not cover
 
 - **The commit boundary itself, and the `agent` scope** —

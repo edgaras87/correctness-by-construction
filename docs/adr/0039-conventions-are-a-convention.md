@@ -152,7 +152,10 @@ rule says a shape is born when a pair recurs. This is the pair.
    the deliverer's; the shipped artifact had been named in three
    sections. Seven sections. And the header comment goes, found at
    step 3 by the reviewer: it restated the opening, made usable
-   as, rule step 5 and the master's rule, invisibly. Six.*
+   as, rule step 5 and the master's rule, invisibly. Six. And, on
+   2026-09-29, a section every manual has: why it arrives this
+   way, the channel — found by the walk's sync pass in three
+   manuals under three titles. Seven.*
 
 5. **The convention ships nothing else, and `foundation` is its.**
    The field — its name, that every derived file carries one, ours

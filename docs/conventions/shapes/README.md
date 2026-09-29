@@ -20,9 +20,6 @@ archaeology.
 
 ## What this is made usable as
 
-The first convention with no skill: its artifact is a rule, because
-a shape's moment is a path being touched.
-
 - **`delivery/container/.claude/rules/shapes-lifecycle.md` — the
   rule, shipped**, held at `.claude/rules/shapes-lifecycle.md` and
   loading when a file under `.claude/shapes/` is touched. §1 to §3
@@ -325,6 +322,14 @@ changed. And an exposed shape that changes stays exposed; a dated
 line is not a withdrawal.
 
 **A shape record that never changes is either finished or unread.**
+
+## Why it arrives this way
+
+The first convention with no skill: its artifact is a rule,
+because a shape's moment is a path being touched, and a rule loads
+on the path. An exposed shape arrives the same way, as a rule with
+its own `paths:`. An unexposed one reaches no agent by design —
+nothing loads `.claude/shapes/`, and that is its force (§3).
 
 ## What this does not cover
 

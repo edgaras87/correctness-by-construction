@@ -159,7 +159,9 @@ marked on trial, or as adopted, never intent dressed as evidence;
 this is made usable as* — the list a change to the page walks,
 each item marked shipped or the deliverer's, with the moment it
 opens at, placed as the answer to the need; the seats (§3.4);
-lessons as dated italics; and *what this does not cover*, the
+lessons as dated italics; *why it arrives this way* — the
+channel, a skill, a rule, a stub or a file, and why that one; and
+*what this does not cover*, the
 boundary against its neighbours by path.
 
 The shape was not designed. `docs/conventions/exchange/` and
@@ -277,6 +279,16 @@ convention's entry; the PLAN has no per-convention steps. *The
 index asked for both until 2026-09-28, and the last three
 conventions took neither — a rule kept where nobody reads it (CBC
 ADR-0039).*
+
+## Why it arrives this way
+
+The manual reaches no agent: a maintainer reads it. The shape of a
+manual is a rule, loading when a manual is opened, because the
+moment a manual's form matters is while it is written, and nothing
+else would put the list in front of the writer then. The
+`foundation` line rides in the frontmatter of every shipped file,
+read by whoever opens the file, because a claim about what a file
+stands on has to travel with the file.
 
 ## What this does not cover
 

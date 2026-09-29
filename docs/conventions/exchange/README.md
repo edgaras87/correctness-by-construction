@@ -25,11 +25,7 @@ arrangements, each side holding only what it runs
 
 - **`delivery/container/.claude/rules/delivered-copies.md` — a
   rule, shipped**, held at `.claude/rules/delivered-copies.md` and
-  loading when a copy or a file in `temp/` is touched. §4 and §5. A
-  rule rather than a skill because its moment is a path being
-  touched; it loads when the moment arrives instead of waiting to
-  be opened by name — the failure the receiver's protocol had
-  since the day it shipped.
+  loading when a copy or a file in `temp/` is touched. §4 and §5.
 - **`.claude/skills/exchange-read/SKILL.md` — the deliverer's**,
   opened when the reviewer says to read a run. §6: find the span
   from the run's read-through, read the three things, write the
@@ -461,6 +457,17 @@ the pin does not.
 | the file lists inside `bundle-update.md`'s scripts | ours | gone with the mapping; a group is a directory name |
 | the line-6 derivation comments in five skills, and nine template lines | shipped | became the one frontmatter field, `foundation`, `docs/conventions/conventions/` §2 |
 | `master.md` §2.5 and §3 | ours | stay; this is their detail |
+
+## Why it arrives this way
+
+The run's half is a rule rather than a skill because its moment is
+a path being touched — a copy, or a file in `temp/` — and it loads
+when the moment arrives instead of waiting to be opened by name:
+the failure the receiver's protocol had since the day it shipped.
+The deliverer's two skills open on the reviewer's word, "read" or
+"deliver", which is a moment the agent is told rather than one it
+must notice. The reading's shape loads by path while a reading is
+written.
 
 ## What this does not cover
 

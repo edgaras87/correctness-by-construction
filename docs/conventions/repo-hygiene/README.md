@@ -90,7 +90,7 @@ append. How an overlay reaches a run is open.*
 - Secrets: `.env` is ignored; the committed shape is
   `.env.example`.
 
-## 4. Why it is delivered as files
+## Why it arrives this way
 
 This convention never reaches an agent as text. Its product is
 three files that shape the repo by existing: nobody complies with

@@ -99,6 +99,14 @@ its own was written nowhere.*
 
 This section is the deliverer's and does not ship.
 
+## Why it arrives this way
+
+A skill, opened at the moment of writing a commit message, because
+the rule held ambient in an entry file was present and unfollowed
+(*What it is for*). The commit is also the moment other
+conventions' discipline binds at — the `agent` scope, the stop —
+which is why those sentences live in this skill and nowhere else.
+
 ## What this does not cover
 
 - **The change set: sequencing, the boundary inside a plan, the

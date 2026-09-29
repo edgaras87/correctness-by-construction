@@ -567,7 +567,7 @@ The entry file — the one file loaded before any task, what it may
 hold, how it stays small — is
 `docs/conventions/agent-arrangement/` §2. This convention keeps one
 stake in it: the records table, the only ambient part of
-project-recording (§14).
+project-recording (*Why it arrives this way*).
 
 **Every row of the records table names three things: the moment, what
 the record holds, and its path** — and adding a record means adding
@@ -588,7 +588,7 @@ contains nothing about what to write.
 stands, what is next. It belongs in PLAN.md; the table's row for
 PLAN.md is where the entry file says so.
 
-## 14. Why it is delivered as stubs
+## Why it arrives this way
 
 A rule for filling in `PLAN.md` sits inside `PLAN.md`, so acting on
 the record is what puts the rule in front of you; there is no
