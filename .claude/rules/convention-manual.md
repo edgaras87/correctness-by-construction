@@ -24,10 +24,11 @@ others are not.
    convention is, in a sentence a reader can hold.
 2. **What it is for.** The need: what work the convention makes
    possible, what went wrong without it — with the run or the date
-   — and the event that made it. Evidence, or intent marked *on
-   trial* with what would make it evidence and when to look again.
-   Never intent dressed as evidence: a wish ("so that X is easier")
-   is not a need.
+   — and the event that made it. Evidence; or intent marked *on
+   trial* with what would make it evidence and when to look again;
+   or, taken whole from elsewhere, adopted — where it came from and
+   what has been lived under it since. Never intent dressed as
+   evidence: a wish ("so that X is easier") is not a need.
 3. **What this is made usable as.** The answer to the need: every
    derived artifact, each by path from the repo root, marked
    shipped or the deliverer's, with the moment it opens at — or
@@ -35,7 +36,9 @@ others are not.
    sentence that a change here walks that list.
 4. **The seats.** Both named, the run's first: what each does
    under the convention. One paragraph when alike; a section per
-   seat when not; "no seat" said outright when one side has none.
+   seat when not; a paragraph naming which body sections are whose
+   when the body is already written per seat; "no seat" said
+   outright when one side has none.
 5. **The body**, numbered sections, free prose. Pointers to other
    conventions as paths from the repo root, never a restatement
    of their subject.
