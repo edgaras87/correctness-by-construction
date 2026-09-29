@@ -6,6 +6,59 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-29, after the last  (the agent model becomes ours — eight commits, no revision)
+
+`the-agent-model-2026-09-29`, cut from `main` at `0b8d981`.
+
+- **The freeze outlived its reason.** ADR-0026 kept `agent.md`
+  verbatim to keep a re-sync cheap, and ADR-0038 ended the re-sync.
+  ADR-0043 makes both models ours to edit: corrected when false,
+  cited so a reader can follow, the handbook's evidence kept as
+  attribution, no section or claim renumbered.
+- **"Live" is not "canonical".** The reviewer asked whether being
+  cited made the model a source of truth. It does not: it binds
+  nothing, and nothing derives from it. The manuals reason from it,
+  so a false premise there makes their reasoning false. That is
+  why it had to be right, and "live" was a loose word for it.
+- **Fold or keep, asked twice.** First I argued for keeping it a
+  model, on a weak reason (four readers; manuals cite each other
+  anyway). Asked again, I argued for folding it into
+  agent-arrangement, the way the shapes model became a manual. The
+  reviewer asked whether correcting it first would keep the manual
+  from growing before we knew. It would, and almost nothing done
+  here is wasted by a later fold. The fold is deferred to the
+  `tiers.md` reading, since whether `docs/models/` stays a kind of
+  thing needs both files.
+- **What changed in it.** Seven false statements corrected, among
+  them §1 counting the deliverer as a project receiving pinned
+  copies (ADR-0042). Thirteen handbook citations gone — I had been
+  saying twelve. A1 and O1 carry this repo's evidence; O1 is
+  evidenced now. P2 names a test a run's reading can make.
+- **The binding checked on 2.1.284.** The guide agent read the
+  documentation, and one fact was observed here: our `CLAUDE.md`'s
+  two comment blocks do not reach the session. Two refinements:
+  comments are stripped at block level only, and in a mode that
+  does not prompt, `ask` stops nothing while `deny` still refuses.
+  That is this session's own mode.
+- **A1's count, made properly.** 125 of 233 subjects since 09-20
+  run over 50 characters, and seven of today's eight commit-plan
+  revisions did, the longest at 67. The first count read bytes, and
+  the em-dash is three. Commit-plan's revision form spends 34
+  characters before saying anything, so the limit may be mis-set
+  rather than unenforced. That question is filed in TODO next to
+  the imperative one.
+- **Slips of mine, caught before commit:** "its timing cannot" was
+  briefly garbled into "cannot either". Not caught: step 4 left
+  "edit time" without its full stop, and step 6 closed it.
+
+Resume: on `the-agent-model-2026-09-29`, closed at the next
+commit, not pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.** The reading can also make P2's test
+   and answer the run-log question in TODO.
+2. **The imperative test and the 50-character limit**, together,
+   when commit-messages is next opened.
+
 ## 2026-09-29, last  (the split — two derivations of the conventions; ten commits, two revisions)
 
 `the-split-2026-09-29`, cut from `main` at `32943ca`.

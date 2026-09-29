@@ -94,6 +94,18 @@
       was decided.
       See: devlog 2026-09-18, later still.
 
+- [ ] Decide whether the 50-character subject limit holds
+      (2026-09-29).
+      Context: 125 of 233 commits here from 2026-09-20 run over it,
+      with commit-messages opened at every commit, and so did seven
+      of eight commit-plan revisions on 2026-09-29. Commit-plan's
+      own revision form spends 34 characters before saying what
+      changed. The agent model's A1 asks: unenforced, or mis-set?
+      Ideas: a shorter revision form in commit-plan.
+      Trigger: with the mood decision above, when commit-messages
+      is next opened.
+      See: devlog 2026-09-29, the agent model.
+
 - [ ] Should a run's decisions-log entries be shorter? (2026-09-29)
       Context: ours now point at an ADR in a line or two, because no
       one reads them but us (ADR-0042). A run's are read by
@@ -180,13 +192,17 @@
       Trigger: the next birth's Step 3 close.
       See: devlog 2026-09-12, later.
 
-- [ ] Check `docs/models/` against today's repo (2026-09-23, the
-      user).
-      Context: the models are cited live. `CLAUDE.md`'s opening
-      line sends the reader to `tiers.md` for what kind of repo
-      this is, and `delivery/README.md` cites it for the
-      pinned-copy rule.
+- [ ] Check `docs/models/tiers.md` against today's repo, and
+      decide whether `docs/models/` stays a kind of thing
+      (2026-09-23, the user; narrowed 2026-09-29).
+      Context: `CLAUDE.md`'s opening line sends the reader to
+      `tiers.md` for what kind of repo this is, and
+      `delivery/README.md` cites it for the pinned-copy rule. The
+      agent model was made ours and corrected (ADR-0043).
+      Ideas: fold `agent.md` into agent-arrangement as its theory,
+             and empty `docs/models/` if tiers goes the same way.
       Trigger: Step N, Release — README true for a stranger.
+      See: devlog 2026-09-29, the agent model.
 
 ## Later / someday
 

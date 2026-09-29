@@ -1,8 +1,10 @@
 # 0043. The models are ours to edit
 
 Date: 2026-09-29
-Status: Proposed (2026-09-29, under the commit plan for the agent
-model)
+Status: Accepted (2026-09-29, at the set's records commit; opened
+Proposed under the commit plan for the agent model, and amended
+before acceptance at the reviewer's question — folding the agent
+model into agent-arrangement moved from rejected to deferred)
 
 ## Context
 
@@ -37,9 +39,11 @@ pushed.
 - **Keep the freeze.** Rejected: its only reason is gone, and a
   frozen text that is false misleads every manual that cites it.
 - **Fold the agent model into agent-arrangement,** as the shapes
-  model became the shapes manual (ADR-0037). Rejected: that fold
-  worked because the two covered one convention. This model serves
-  four readers.
+  model became the shapes manual (ADR-0037). Deferred to the reading
+  of `tiers.md`. Whether `docs/models/` stays a kind of thing needs
+  both files, and the fold would grow agent-arrangement by about 200
+  lines before that is known. The first reason given here, that the
+  model serves four readers, was weak: manuals cite one another.
 - **Rewrite it from scratch as ours.** Rejected: its structure and
   most of its claims hold, and its handbook evidence was lived.
   Correcting it keeps what is true.
