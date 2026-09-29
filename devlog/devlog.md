@@ -6,6 +6,95 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-29  (the walk — nine manuals read to one shape; twenty-eight commits, six revisions)
+
+`the-walk-2026-09-28`, cut from `main` after the what-it-is-for
+branch fast-forwarded; closed at `7e04d50`, fast-forwarded,
+deleted. Before it, on its own branch: the two forms of *what it is
+for* (evidence, or intent marked on trial) and the shape rule
+asking for it (`d4dfb51`).
+
+- **The plan said thinnest first, and the thinnest changed the
+  form.** commit-plan, 74 lines, was the test. At its boundary the
+  reviewer found *what ships*, the seats and *made usable as*
+  naming the same file three times: one list now, placed after
+  *what it is for* as the answer to the need. At commit-messages'
+  boundary: the header comment restated the opening, *made usable
+  as*, the disagreement rule and the master's rule, invisibly — it
+  went. At the same boundary: the conventions manual's §3 held six
+  rules as bold paragraphs and every pointer said "§3" — six
+  numbered subsections, the disagreement its own for the first
+  time (§3.6). At the sync pass: three manuals answered "why does
+  this arrive as a stub, a skill, a file" under three titles — one
+  section in all nine now, *why it arrives this way*. The shape is
+  seven sections: opening, what it is for, made usable as, the
+  seats, the body, why it arrives this way, what this does not
+  cover — dated lessons inline. The list is the floor; a heading two
+  manuals grow unprompted is the next candidate.
+- **The reviewer's readings, each a rule now.** A pointer is a
+  root path in backticks, never a relative link, with the section
+  number when it means one. Seats are two named roles, the run's
+  first. The freedom to break a convention is the work's, with a
+  reason — never a derivative's, never a pointer's. *What it is
+  for* is evidence, or intent marked on trial, or adopted — never
+  intent dressed as evidence. A rule other text points at gets a
+  numbered subsection. The master is a map: its decline rule and
+  its record of where practice bent a description moved into the
+  conventions manual's §3.6; its §4, the two arrangements, became
+  agent-arrangement's seats; its *what must stay true* is pointers.
+- **What the reading of each manual found.** Two contradictions,
+  decided: the entry file's address (the container ships
+  `.claude/CLAUDE.md`; project-recording's diagram was wrong) and
+  whether a run patches its hygiene files (it owns them; the
+  exchange wins). Six duplicates, one home each. Stale since
+  yesterday: one rule where there are two, the reading's shape
+  "undecided", a pointer to a deleted index section, "kit" six
+  times. Two pointers wrong since before the walk: shapes §2 cited
+  for the pair test, which is §1. Two dead letters in repo-hygiene
+  (a playbook gate item and changelog entries never written), and
+  the open question they hid, stated: nothing ships a stack
+  overlay, and a blind run cannot fetch one.
+- **Project-recording fits both seats, but not as one paragraph.**
+  Checked against both repos' files: the deliverer has no project
+  end and folds lessons back at step closes, owns the playbooks,
+  and versions the concept. And a disagreement, deferred on the
+  reviewer's word and filed: this TODO keeps nineteen DONE entries
+  whole where §5 says prune.
+- **Not taken:** "what it is" and "why it is shaped this way" open
+  three manuals' bodies — how three short manuals divided a free
+  body, not a question every manual must answer. The name
+  `project-recording` stays: *project* means either repository, and
+  the name ships.
+
+Resume: on `main` at `7e04d50`, clean, not pushed. Local branches
+the reviewer may delete: `handbook-delivery-ba7eaa4`,
+`harvest-notes-and-the-reply-channel`, `main-backup-1`,
+`main-backup-2`. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver** — waiting since 2026-09-26. Run 3 is
+   at `9869798` and has not moved; `exchange-read` finds the span
+   from the read-through its decisions log records, and
+   `exchange-deliver` diffs from its pin. The note, gathered across
+   four sessions, carries: the shorter shapes rule; the
+   `foundation` field on nine files; `delivered-copies.md` for its
+   `skills-changed-in-place.md`, by name; the three conventions
+   deleted, by name; the sentence its `slice-record.md` shape
+   argues against; the two container skills' footers citing
+   `CBC ADR-0038`; the five concept chapter headers changed —
+   *authoritative* to *canonical*, bytes only; and playbook v7's
+   gate line offered, not delivered, since a fill is the run's
+   own. The record stubs changed too (the decisions-log stub, the
+   plan stub's placeholder) but records never travel twice, so they
+   reach only the next birth. `temp/working-a-reading.md` stays
+   until that reading.
+2. **The deliverer's TODO practice** — TODO, Next: a seat rule
+   keeping DONE entries, or a prune. One small change either way.
+3. **Held, with triggers in TODO:** the master and ARCHITECTURE as
+   two maps (project-recording's revision); run 3's step form and
+   standing rules (its Step 7); a stack description as the third
+   row of the master's table, raised 2026-09-28 and not started —
+   its version rule the one edge to decide when it is born.
+
 ## 2026-09-28  (conventions are a convention — one set, twelve commits and four revisions)
 
 `conventions-manual-2026-09-28`, cut from `main` after the handbook
