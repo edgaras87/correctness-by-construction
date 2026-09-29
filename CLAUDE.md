@@ -21,7 +21,7 @@ it. Documents only — no code, no runs.
 | Shipped something users can see | What changed, for users | CHANGELOG.md |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |
 | The system's shape changed | Shape of the system | ARCHITECTURE.md |
-| Agent setup changed, or a convention arrives | Decision, why, rejected options; the conventions held, with versions | .claude/decisions.md |
+| Agent setup changed | Decision, why, rejected options | .claude/decisions.md |
 | Work needs more than one commit | In-flight change set | COMMIT-PLAN.md (when present) |
 
 <!-- This file is loaded in full on every task, relevant or not, so

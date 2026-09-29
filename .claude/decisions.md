@@ -1,29 +1,18 @@
 # Agent decisions
 
-<!-- The working arrangement's decision log (handbook ADR-0020,
-     provisional). Append-only, newest last. One entry per
-     arrangement decision — a skill added or changed, a rule tuned,
-     a workflow adopted. Three lines: what, why, what was rejected.
+<!-- The working arrangement's decision log. Append-only, newest
+     last. One entry per arrangement decision — a skill added or
+     changed, a rule tuned, a workflow adopted. Three lines: what,
+     why, what was rejected.
 
      Division of labor: the standing rule rides as a comment in the
      artifact it governs — this log keeps the why and the rejected
      options, and neither repeats the other. Commit bodies stay
      ordinary commit bodies.
 
-     This file is agent-side: a commit touching it is scoped `agent`
-     and touches nothing else (the commit-messages skill carries
-     that rule).
-
-     At the project retrospective, read top to bottom: each entry
-     graduates to the handbook, stays local, or dies.
-
-     The placeholder on the "@" line below is replaced at copy
-     time by the install block in the handbook's manual. It pins
-     which handbook state — and so which version of every
-     convention — this project was born from (convention-lifecycle
-     §2). If that line still shows a placeholder instead of a
-     commit hash, the install block was not run from the handbook;
-     fix it before the bootstrap commit. -->
+     An entry that follows from an ADR says in a line or two what
+     changed in this arrangement, and points at the ADR; it does
+     not retell it. -->
 
 - 2026-08-27 Born from the engineering-handbook starter kit
   @ 4fe8083.
