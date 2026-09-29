@@ -106,7 +106,15 @@ working arrangement still fit it?" as answered by the seats, but its
 third fact, what PLAN is for here, was never answered. This set is
 the answer.
 
-**11. `docs(agent): close commit plan for the PLAN pass`**
+**11. `docs(conventions): tag two citations in §3 and §7`**
+The reviewer's call at step 10's boundary. The check the reviewer
+asked for found two slips in project-recording: "(ADR-0020)" and
+"(ADR-0038, 1d)" cite this repo's decisions bare, in a manual that
+tags them everywhere else. Both gain `CBC`. The third bare
+citation there names a fictional project's ADR inside an example,
+and stays bare.
+
+**12. `docs(agent): close commit plan for the PLAN pass`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
