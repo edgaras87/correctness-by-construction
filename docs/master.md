@@ -257,79 +257,19 @@ not cover* and CBC ADR-0039.
 ## 4. The work arrangement
 
 **What tells an agent how to work in a repo — not the work, and not
-a record of it.** Four kinds of file, and each reaches the agent a
-different way:
+a record of it.** Two exist here, tied to each other: the one this
+repo runs under as the deliverer, a maintainer's, and the one it
+ships in the container for a run to work under, a builder's. They
+are nearly the same files and differ by design in their job, each
+side holding only the half it can run. What the files are, how
+each reaches an agent, and what each seat holds is
+`docs/conventions/agent-arrangement/`, its seats.
 
-- **the entry file**, `CLAUDE.md` — loaded in full on every task,
-  relevant or not, which is why every line in it is expensive
-- **skills**, `.claude/skills/` — opened at a moment, by name
-- **rules**, `.claude/rules/` — loaded when a file matching their
-  `paths:` is touched
-- **the decisions log**, `.claude/decisions.md` — why the
-  arrangement is the shape it is; read at a retrospective, not
-  mid-work
-
-Every repo in this workspace has one. **Two of them exist here:**
-the one this repo runs under, and the one it ships inside the
-container for someone else to run under.
-
-### 4.1 This repo's — a maintainer's
-
-**The maintainer of the concept, the delivery, and the records that
-hold both.** It keeps the concept's statement true, derives the
-method from it, holds the master of every file any run receives,
-delivers to runs, and reads runs back to learn what to change here.
-It is not a builder; there is nothing here to build. **Its work is
-section 3, run from this side.**
-
-Entry file: *"A concept repo... Documents only — no code, no
-runs."* Three convention skills — `commit-messages`, `commit-plan`,
-`visual-comparison` — and the exchange's two, `exchange-read` and
-`exchange-deliver`. One rule, `exchange-reading.md`: the shape of
-the reading, loading while one is written — the exchange's artifact
-and the shapes convention's one instance here, since this repo has
-no gate and holds shapes exposed only.
-
-*The records it keeps — `PLAN`, `TODO`, the devlog, the ADRs, the
-decisions log, `CHANGELOG`, `ARCHITECTURE` — are not on this page.
-Records are where things go stale, and `ARCHITECTURE.md` already
-describes most of section 2 a second time. Named here, not filled.*
-
-### 4.2 A run's — a builder's
-
-Shipped in `delivery/container/`, so it is something we write and
-they receive.
-
-Entry file: `docs/concept/` and everything under `.claude/` are
-**delivered copies**, pinned, and until the framing artifacts exist
-the only method work is running `cbc-framing` jointly with the
-human. The same three convention skills. Two rules,
-`shapes-lifecycle` and `delivered-copies` — the exchange's half for
-this side. And beside them the records the arrangement refers to.
-
-The work it arranges: build a real system, keep its records, take
-deliveries.
-
-### 4.3 What the difference explains
-
-**Nearly identical, and the difference is now designed rather than
-accidental.** Three skills are the same files. The records table has
-the same shape. The agent/project commit split is the same rule.
-
-What differs is the *job*, and since ADR-0036 the two arrangements
-hold different things because of it. The run holds the receiver's
-rule, `delivered-copies.md` — how to take a newer copy without
-losing its own edits, and what it may do to one meanwhile. We hold
-the deliverer's skills, `exchange-read` and `exchange-deliver`, and
-the shape of the reading they produce. Neither side holds the
-other's half, because neither could run it.
-
-Until 2026-09-26 this repo held the receiver's protocol,
-`convention-lifecycle`, and had never once run it — our registry
-pinned us to ourselves — while run 3 ran it at every take. Reading a
-shared file and assuming a shared job is how a rule ends up held in
-the repo it cannot apply to. That is the string this section exists
-to show, and it has been pulled once.
+*The records this repo keeps — `PLAN`, `TODO`, the devlog, the
+ADRs, the decisions log, `CHANGELOG`, `ARCHITECTURE` — are not on
+this page. Records are where things go stale, and `ARCHITECTURE.md`
+already describes most of section 2 a second time. Named here, not
+filled.*
 
 ---
 
@@ -413,7 +353,7 @@ Used across both repos, defined here and nowhere else.
 
 One thing, left standing where it was found:
 
-1. **4.1** — this repo's own records are not on the map, and
+1. **4** — this repo's own records are not on the map, and
    `ARCHITECTURE.md` describes section 2 a second time.
 
 Two left the list on 2026-09-26, with ADR-0036: the asymmetry is

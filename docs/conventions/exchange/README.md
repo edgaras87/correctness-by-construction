@@ -377,7 +377,8 @@ the pin does not.
 never ships, and four artifacts are what a repo actually holds. It
 replaces `convention-lifecycle`, which was a convention, with one —
 and it is the first whose artifacts split between the two
-arrangements in `master.md` §4, each side holding only what it does.
+arrangements — `docs/conventions/agent-arrangement/`, its seats —
+each side holding only what it does.
 This manual is at `docs/conventions/exchange/`, and the four
 artifacts are where the list below says.
 

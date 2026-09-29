@@ -1,36 +1,99 @@
 # Agent arrangement
 
-The agent side of a project: the files that make an agent work here
-a particular way, and that a copy of the project can drop while
-keeping the work. The line is detachability (ADR-0038, 1c): a file
-is agent-side when removing it breaks nothing about the project.
-This page says what sits on its far side and what each file may
-hold.
+**The agent side of a project: the files that make an agent work
+here a particular way, and that a copy of the project can drop
+while keeping the work. The line is detachability (CBC ADR-0038,
+1c): a file is agent-side when removing it breaks nothing about the
+project. This page says what sits on its far side and what each
+file may hold.**
 
-**What ships:** two stubs in the container, `delivery/container/`
-— the entry file, shipped at `.claude/CLAUDE.md`, and the decisions
-log `.claude/decisions.md`. Every rule here rides
-as a comment in the file it governs, met when the file is opened to
-edit it. This page explains the arrangement; the stubs state the
-rules. Nothing here is loaded into an agent.
+## What it is for
 
-**The seats.** A run holds the arrangement as shipped: the entry
-file at `.claude/CLAUDE.md`, the decisions log, the container's
-skills and rules. The deliverer holds the same shape with two
-differences of content: its entry file at the repo root, the
-address the arrangement is described from, and in its `.claude/`
-the deliverer's own skills and rules — the exchange's two, the
-shape of a manual — which no run holds.
+So that an agent works in a project the way the project needs,
+from the first session, and the project can shed the arrangement
+and keep its work. The failure it answers is measured: an entry
+file that restated convention rules "so they are always in
+context" grew to 98 lines across two files holding three
+disagreeing copies of one rule (`docs/models/agent.md` §12, M1).
+Adopted with the container (CBC ADR-0038, 1c). Lived since: every
+run was born with the arrangement; run 3 moved its entry file under
+`.claude/` and it was a pure rename, content untouched, the tool
+reading it at the new address from the next session — which is why
+the container now ships it there.
 
-The theory this leans on is `docs/models/agent.md`:
-the ambient channel (§4), the choosing table (§8), the claims (§12).
-The model describes; this page explains against it.
+## What this is made usable as
 
----
+- **`delivery/container/.claude/CLAUDE.md` — the entry file,
+  shipped**, a body composed by the deliverer and not a stub;
+  loaded at the start of every session, the run's own from birth.
+- **`delivery/container/.claude/decisions.md` — the decisions-log
+  stub, shipped**, opened when the arrangement changes; the run's
+  own from birth.
+- **The deliverer's own `CLAUDE.md` and `.claude/decisions.md`.**
+
+Every rule here rides as a comment in the file it governs, met when
+the file is opened to edit it; nothing here is loaded into an
+agent. What derives from this page is that list. A change here
+walks it; a change forced in one of them is checked back against
+this page.
+
+## The seats
+
+Nearly the same files, and different by design in their job — so a
+section each (`docs/conventions/conventions/` §3.4).
+
+### The run's seat — a builder's
+
+Shipped in `delivery/container/`: the deliverer writes it and the
+run receives it. Its entry file says that `docs/concept/` and
+everything under `.claude/` are delivered copies, pinned, and that
+until the framing artifacts exist the only method work is running
+`cbc-framing` jointly with the human. It holds the three
+convention skills, and two rules: `shapes-lifecycle.md` and
+`delivered-copies.md`, the exchange's half for this side. The work
+it arranges is building a real system, keeping its records and
+taking deliveries; it changes the arrangement through its own
+decisions log.
+
+### The deliverer's seat — a maintainer's
+
+The maintainer of the concept, the delivery and the records that
+hold both: it keeps the concept's statement true, derives the
+method from it, holds the master of every file a run receives,
+delivers to runs, and reads them back to learn what to change. It
+is not a builder; there is nothing to build. Its entry file sits at
+the repo root, the address the arrangement is described from: *"A
+concept repo… Documents only — no code, no runs."* It holds the
+same three convention skills; the exchange's two, `exchange-read`
+and `exchange-deliver`; and two rules of its own,
+`exchange-reading.md`, the shape of a reading, and
+`convention-manual.md`, the shape of a manual.
+
+### What the difference is
+
+Three skills are the same files; the records table has the same
+shape; the agent and project split is the same rule. What differs
+is the job, and since CBC ADR-0036 the two hold different things
+because of it: the run holds the receiver's rule,
+`delivered-copies.md` — how to take a newer copy without losing its
+own edits, and what it may do to one meanwhile; the deliverer holds
+the deliverer's skills and the shape of the reading they produce.
+Neither holds the other's half, because neither could run it.
+
+*Until 2026-09-26 the deliverer held the receiver's protocol,
+`convention-lifecycle`, and had never once run it — its registry
+pinned it to itself — while run 3 ran it at every take. Reading a
+shared file and assuming a shared job is how a rule ends up held in
+the repo that cannot apply it.*
 
 ## 1. What the arrangement is
 
-A closed list of paths (ADR-0038, 1c):
+The theory this leans on is `docs/models/agent.md`: the ambient
+channel (§4), the choosing table (§8), the claims (§12). The model
+describes; this page explains against it.
+
+
+A closed list of paths (CBC ADR-0038, 1c):
 
 - **`CLAUDE.md`** — the entry file, §2. The name is the tool's;
   what goes in it is this convention's.
@@ -39,9 +102,10 @@ A closed list of paths (ADR-0038, 1c):
   tracked and machine-local, §3.
 
 **Detachable, and kept so.** A commit that touches these paths
-touches nothing else, scoped `agent` — the rule is commit-messages',
-stated there. `COMMIT-PLAN.md` rides the same scope while it exists
-but is commit-plan's artifact, not this convention's.
+touches nothing else, scoped `agent` — the rule is
+`docs/conventions/commit-messages/` §2. `COMMIT-PLAN.md` rides the
+same scope while it exists but is
+`docs/conventions/commit-plan/`'s artifact, not this convention's.
 
 **Not records.** The arrangement holds no project truth: nothing here
 says what the project is deciding, planning or shipping. It says how
@@ -52,7 +116,7 @@ holds the container.
 
 ## 2. The entry file
 
-**What.** One file at the repo root, loaded into an agent's context
+**What.** One file, loaded into an agent's context
 at the start of every session before it is given any task. It is a
 map — what the project is, where the records are — and the little
 that has to be present on every task because no moment would deliver
@@ -107,8 +171,9 @@ headings from the names below — *How to work here*, *Local rules* — so
 two born repos spell them the same way.
 
 *The records table* is the slot this convention provides and
-project-recording fills: its rows, and the requirement that every row
-names a moment, belong to that convention (its §13).
+`docs/conventions/project-recording/` fills: its rows, and the
+requirement that every row names a moment, belong to that
+convention (its §13).
 
 *How to work here* is the stance a project expects where it is not
 the obvious one — "decide before building", "prefer exploring over
@@ -125,7 +190,7 @@ is — the record's stub, README, a skill the project adds under
 `.claude/skills/`, a rules file under `.claude/rules/` (§3). Most facts
 that feel local have a moment, which is why this slot stays short.
 
-**When.** Written at project start, from the starter stub. Revisited
+**When.** Written at project start, from the container's. Revisited
 when a record moves, a convention is adopted, or the build command
 changes — not otherwise.
 
@@ -147,11 +212,10 @@ entries.
 ## 3. `.claude/`
 
 **`skills/`** — where a convention delivered as a skill lands, one
-directory per convention, the copy verbatim (the exchange owns the
-update, [`../exchange/`](../exchange/); this convention owns the
-place). A project may add
-a skill of its own, for a moment-bound local rule the entry file
-must not hold (§2) — permitted, and not yet
+directory per convention, the copy verbatim (the update is
+`docs/conventions/exchange/`'s; this convention owns the place).
+A project may add a skill of its own, for a moment-bound local
+rule the entry file must not hold (§2) — permitted, and not yet
 defined: what such a skill is, whether it registers,
 how it survives the agent/project split are open until a project
 has written one.
@@ -164,54 +228,46 @@ when it writes a new one there — the tool deciding, not the agent
 of the tree, which a skill would carry only if the agent noticed the
 moment.
 Without the list, the file is the entry file by another name and
-fails §2's tests the same way. Empty at birth until 2026-09-23,
-when the kit began shipping one: `shapes-lifecycle.md`, which
-governs the directory below (CBC ADR-0035).
+fails §2's tests the same way. The container ships two —
+`shapes-lifecycle.md`, whose convention is
+`docs/conventions/shapes/`, and `delivered-copies.md`, whose
+convention is `docs/conventions/exchange/` — and the deliverer
+holds its own. *Empty at birth until 2026-09-23.*
 
-**`shapes/`** — where a project keeps an **unexposed** shape: what a
-kind of its own output looks like, form and never content. Nothing
-loads this directory, which is the whole of why it is a directory
-and not a rules file — a shape here is opened at a gate, so what the
-work produces *without* it stays visible, and a shape that should be
-in front of whoever writes moves to `rules/` with a `paths:` list.
-The place is therefore the force, and it is the only thing under
-`.claude/` of which that is true. Not born with the project and the
-kit ships none, deliberately: the first output of a kind is the only
-one nothing has influenced. A project makes the directory when it
-writes its first shape. When one is written, who moves it between
-here and `rules/`, and what an arriving delivery does are the rule's,
-in `rules/shapes-lifecycle.md` — which this convention places rather
-than states.
+**`shapes/`** — where a project keeps an unexposed shape. What a
+shape is, why this is a directory nothing loads, and who moves one
+between here and `rules/` are `docs/conventions/shapes/`'s; this
+convention places the directory and states nothing else about it.
+Not born with the project: a project makes it when it writes its
+first shape.
 
 **`decisions.md`** — the arrangement's decision log: append-only,
 dated, three lines per entry — what changed, why, what
 was rejected. The standing rule rides as a comment in the artifact it
 governs; the log keeps the why and the rejected options; neither
 repeats the other. It doubles as the project's convention registry
-(the exchange, [`../exchange/`](../exchange/) §2). Its rules ride
-in its own stub.
+(`docs/conventions/exchange/` §2). Its rules ride in its own
+stub.
 
 **`settings.json`** — the tool's settings that are the project's:
 tracked, and the one place the arrangement holds a gate as repo state.
 Not born with the project: a project adds it when it has a rule that
 must not depend on text — a permission rule that halts a command at a
 prompt the human answers — or an exclude to declare. The commit
-stop is not such a rule: it is one sentence in commit-messages,
-gated nowhere (ADR-0038, 1f), and a project that adds the gate does
-so for a reason of its own. JSON carries no comment, so the why
-lives in the
-decisions log, never in the file; later inserts are merges, not text
-edits.
+stop is not such a rule: `docs/conventions/commit-messages/` §2.
+JSON carries no comment, so the why lives in the decisions log,
+never in the file; later inserts are merges, not text edits.
 
 **`settings.local.json`** — the tool's machine-local state, never
-project truth; the repo-hygiene base ignores it.
+project truth; the hygiene base ignores it
+(`docs/conventions/repo-hygiene/`).
 
 **`CLAUDE.local.md`** — not under `.claude/`, but the arrangement's
 neighbour: the operator's standing instructions, loaded beside the
 entry file and read the same way (model §4, ownership). One person,
-one checkout; the repo-hygiene base ignores it, and its words never
+one checkout; the hygiene base ignores it, and its words never
 enter a record — a record that quotes it has let one operator's
-preference into the project's truth. The kit ships no stub for it.
+preference into the project's truth. The container ships none.
 
 ## 4. Anti-patterns
 
@@ -239,11 +295,10 @@ preference into the project's truth. The kit ships no stub for it.
   is missing, or its channel is not firing. `CLAUDE.local.md` makes
   the saying persistent and the diagnosis invisible.
 
----
+## 5. Why it is delivered as files with comments
 
-## Why it is delivered as stubs
-
-Every rule here governs a file the kit ships and rides in it as a
+Every rule here governs a file the container ships and rides in it
+as a
 comment: the entry file's comments carry points-never-restates, the
 guard and the size rule; the decisions log's carry its own. Acting
 on the file is the trigger.
@@ -261,15 +316,24 @@ not.
 
 A rule for an arrangement file goes in that file's stub comment,
 not here and not in the entry file's prose. A project meets this
-convention only as its stubs at birth and as their changed comment
-text at an update, through the kit's protocol.
+convention only as its files at birth and as their changed comment
+text at an update, through `docs/conventions/exchange/`.
+
+## What this does not cover
+
+- **The commit that touches these paths, and its scope** —
+  `docs/conventions/commit-messages/`.
+- **The records the entry file's table lists, and when each is
+  touched** — `docs/conventions/project-recording/` §13.
+- **What a shape is, and how one lives** —
+  `docs/conventions/shapes/`.
+- **How a copy under `.claude/` is updated, and what a run may do
+  to it** — `docs/conventions/exchange/`.
+- **What the hygiene base ignores** —
+  `docs/conventions/repo-hygiene/`.
 
 ## Where to look
 
-- The stubs: `.claude/CLAUDE.md` and `.claude/decisions.md` in
-  `delivery/container/`.
-- The records table the entry file carries:
-  [`../project-recording/`](../project-recording/), its §13.
-- The `agent` scope: [`../commit-messages/`](../commit-messages/).
-- How a project receives and updates its arrangement:
-  [`../exchange/`](../exchange/).
+- The stubs: `delivery/container/.claude/CLAUDE.md` and
+  `delivery/container/.claude/decisions.md`.
+- The model it explains against: `docs/models/agent.md`.
