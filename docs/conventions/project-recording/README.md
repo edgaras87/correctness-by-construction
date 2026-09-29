@@ -1,25 +1,50 @@
 # Project recording
 
-How a software project records its decisions, state, plans, history
-and lessons: what each record is, why it exists, where it lives, and
-how to write it.
+**How a software project records its decisions, state, plans,
+history and lessons: what each record is, why it exists, where it
+lives, and how to write it.**
 
-**What ships:** the record stubs in the container,
-`delivery/container/` — `README.md`, `PLAN.md`, `TODO.md`,
-`CHANGELOG.md`, `ARCHITECTURE.md`, the first ADR and the devlog.
-Each stub carries its own rules as comments, met when the file is
-opened; the one rule that cannot live inside a record, when
-to open it, rides as the records table in the entry file, which
-agent-arrangement governs. This page explains the records; the
-stubs state the rules. Nothing here is loaded into an agent.
+## What it is for
 
-**The seats.** A run keeps every record the stubs name, from
-birth, and its `CHANGELOG.md` logs releases. The deliverer keeps
-the same records under the same stubs; its `CHANGELOG.md` versions
-the concept instead (CBC ADR-0003), a difference of content and
-not of rule.
+So that what a project decided, where it stands, what it tried and
+what it learned can be read by someone who was not there — a
+newcomer, future-you, or the deliverer, which reads a run through
+its records and nothing else (`docs/conventions/exchange/` §6.1).
+Adopted with the container (CBC ADR-0038, 1d for the README's
+moment); no failure of the deliverer's is recorded before it. Lived
+since: three runs kept their records under these stubs, and every
+reading of run 3 has been a reading of its decisions log, its
+backlog and its devlog — the need proved by being the only channel
+there is.
 
----
+## What this is made usable as
+
+- **The record stubs, shipped**, in `delivery/container/`:
+  `README.md`, `PLAN.md`, `TODO.md`, `CHANGELOG.md`,
+  `ARCHITECTURE.md`, `docs/adr/0001-record-architecture-decisions.md`
+  and `devlog/devlog.md`. Each carries its own rules as comments,
+  met when the file is opened; each is the run's own from birth.
+- **The records table in the entry file,
+  `delivery/container/.claude/CLAUDE.md`** — this convention's one
+  stake in a file `docs/conventions/agent-arrangement/` owns (§13):
+  the rule that cannot live inside a record, when to open it.
+- **`delivery/fills/cbc-run-pure-playbook.md` — a playbook's steps,
+  filled into a run's `PLAN.md` at birth**, and
+  **`playbooks/default.md` — the deliverer's default playbook**
+  (§9).
+- **The deliverer's own records**, under the same stubs.
+
+This page explains the records; the stubs state the rules. Nothing
+here is loaded into an agent. What derives from this page is that
+list. A change here walks it; a change forced in one of them is
+checked back against this page.
+
+## The seats
+
+A run keeps every record the stubs name, from birth, and its
+`CHANGELOG.md` logs releases. The deliverer keeps the same records
+under the same stubs; its `CHANGELOG.md` versions the concept
+instead (CBC ADR-0003), a difference of content and not of rule.
 
 ## 1. The model at a glance
 
@@ -60,7 +85,8 @@ read them cover to cover.
 ```
 repo/
 ├── README.md
-├── CLAUDE.md                 (agent entry file; agent-arrangement §2)
+├── .claude/
+│   └── CLAUDE.md             (the entry file: agent-arrangement §2)
 ├── PLAN.md
 ├── CHANGELOG.md
 ├── TODO.md
@@ -80,8 +106,6 @@ project type, never in a project born from it (§9).
 Everything is Markdown, in the repo, versioned with git. That is itself a
 rule of the convention: records live next to the code they describe, so
 they branch, review, and roll back together with it.
-
----
 
 ## 2. PLAN.md — the spine
 
@@ -166,7 +190,7 @@ Bad: schema migrations become a discipline we must maintain.
 - **A number is local to one repo.** A bare `ADR-nnnn` names the
   decision in the repo where it is read. A reference to another
   repo's decision carries that repo's tag before the number —
-  `CBC ADR-0012`, as a run cites this repo's — a short upper-case
+  `CBC ADR-0012`, as a run cites the deliverer's — a short upper-case
   name each repo declares once in its README's decisions row (§7).
   A document written to be read in another repo carries the tag on
   every citation (ADR-0020).
@@ -362,9 +386,9 @@ machine."
 **Anti-patterns.** Duplicating live status into it; setup instructions
 that only work on the author's machine.
 
-<!-- README is the front door for people. The entry file is the one
-     for agents (agent-arrangement §2).
-     Two audiences, two files, no shared text. -->
+README is the front door for people; the entry file is the one for
+agents, `docs/conventions/agent-arrangement/` §2. Two audiences, two
+files, no shared text.
 
 ---
 
@@ -452,10 +476,8 @@ proposal written *before* building, circulated for comment, kept in
 full exploration. Solo projects rarely need them; teams making
 cross-cutting changes do.
 
-**Commit messages.** The finest-grained decision trail: subject line
-says what, body says *why* — the why is the part `git blame` can't
-reconstruct. A good commit body is a micro-ADR for changes too small to
-deserve a real one. The format is the commit-messages convention's.
+**Commit messages.** The finest-grained decision trail —
+`docs/conventions/commit-messages/` §1.
 
 **PR descriptions.** Where a change's reasoning and its review discussion
 live. Link the plan step and any ADR; the review thread often contains the
@@ -519,18 +541,15 @@ If yes, it gets written down, once, in its designated home.
 
 ## 13. The records table in the entry file
 
-<!-- Numbered by creation, not by reading order: §11 and §12 are
-     referenced by number from other conventions, and renumbering them
-     to slot this beside §7 would break those references for a
-     cosmetic gain. Held its number again when the entry file itself
-     moved to the agent-arrangement convention: this
-     section is cited by number from there and from the starter
-     manual. -->
+*Numbered by creation, not reading order: §11, §12 and §13 are
+cited by number from other conventions, and renumbering would break
+them for a cosmetic gain.*
 
 The entry file — the one file loaded before any task, what it may
-hold, how it stays small — is the agent-arrangement convention's (its
-§2). This convention keeps one stake in it: the records table, the
-only ambient part of project-recording (Delivery).
+hold, how it stays small — is
+`docs/conventions/agent-arrangement/` §2. This convention keeps one
+stake in it: the records table, the only ambient part of
+project-recording (§14).
 
 **Every row of the records table names three things: the moment, what
 the record holds, and its path** — and adding a record means adding
@@ -551,9 +570,7 @@ contains nothing about what to write.
 stands, what is next. It belongs in PLAN.md; the table's row for
 PLAN.md is where the entry file says so.
 
----
-
-## Why it is delivered as stubs
+## 14. Why it is delivered as stubs
 
 A rule for filling in `PLAN.md` sits inside `PLAN.md`, so acting on
 the record is what puts the rule in front of you; there is no
@@ -563,15 +580,26 @@ inside it, so the entry file's records table carries a moment per
 row (§13). A skill would not do: it fires when the agent
 recognises the moment, and failing to recognise the moment is the
 failure being fixed. Restating a record's rules in the entry file
-"so they are always available" is the failure measured once: 98
-lines, two files, three disagreeing copies of one rule.
+"so they are always available" is the failure
+`docs/conventions/agent-arrangement/` measured.
+
+## What this does not cover
+
+- **The entry file as a whole: what it may hold, and how it stays
+  small** — `docs/conventions/agent-arrangement/` §2.
+- **How a commit is written, and why its body is a micro-ADR** —
+  `docs/conventions/commit-messages/`.
+- **How work larger than one commit is sequenced** —
+  `docs/conventions/commit-plan/`.
+- **Why the records are never re-delivered to a run** —
+  `docs/conventions/exchange/` §2.4.
+- **What the deliverer's CHANGELOG versions** — the concept, CBC
+  ADR-0003 and `docs/master.md` §1.1.
 
 ## Where to look
 
-- The stubs: in `delivery/container/` — the links were not
-  reproduced here (see this set's README, *Where these files
-  came from*).
+- The stubs: `delivery/container/`.
 - The entry file and its records table:
-  [`../agent-arrangement/`](../agent-arrangement/).
+  `docs/conventions/agent-arrangement/`.
 - Commit messages, the finest-grained record:
-  [`../commit-messages/`](../commit-messages/).
+  `docs/conventions/commit-messages/`.
