@@ -9,9 +9,9 @@ step. Reading runs, delivering and keeping the conventions live in
 TODO's Now and in the devlog, which is where they have lived since
 2026-09-20: 203 commits since then, and two touched PLAN.
 
-Finished steps are one line each, a goal, a date and a pointer,
-because the stories in them are the devlog's and the ADRs'. What
-is left open is true today. Nothing in the file waits for a project
+Finished steps are gone, because the stories in them are the
+devlog's and the ADRs', and the devlog names the early steps in its
+own headings. What is left open is true today. Nothing in the file waits for a project
 end the deliverer does not have. project-recording's deliverer seat
 says all of this as its fourth difference, and the run's seat and
 the container's `PLAN.md` stub do not change.
@@ -44,29 +44,37 @@ index went stale for six ADRs without anyone noticing. Each one is
 kept, changed or dropped on the material after steps 2 and 3. The
 wording waits on those answers.
 
-**5. `docs(conventions): the deliverer plans milestones`**
+**5. `docs: PLAN's finished steps go`**
+The reviewer's question at step 4's boundary: what is the Reached
+list for? Neither of its two jobs needs it. The seven files citing
+"PLAN Step 2" or "Step 3" resolve through the devlog, whose entries
+for Steps 0 to 6 are titled by step. And the devlog's headings give
+the timeline. PLAN keeps only open milestones, and its header says
+where finished ones went.
+
+**6. `docs(conventions): the deliverer plans milestones`**
 *Provisional in wording.* The deliverer's seat in
 project-recording gains its fourth difference, stated from what
-steps 2 to 4 settled, and ADR-0041 opens as Proposed. The run's
+steps 2 to 5 settled, and ADR-0041 opens as Proposed. The run's
 seat, §2 and the container's stub stay as they are. README's
 records row changes with it if PLAN no longer answers "what's
 next" here.
 
-**6. `chore(agent): the entry file says where next is`**
+**7. `chore(agent): the entry file says where next is`**
 *Provisional.* The records table in `CLAUDE.md` gives PLAN "current
-state, next steps, gates". If step 5 moves "next" to TODO's Now,
+state, next steps, gates". If step 6 moves "next" to TODO's Now,
 this row says so. The agent's files never share a commit with the
-records, so this is a step of its own. If step 5 leaves the row
+records, so this is a step of its own. If step 6 leaves the row
 true, this step is dropped at that boundary.
 
-**7. `docs: devlog carries the PLAN pass`**
+**8. `docs: devlog carries the PLAN pass`**
 The session's entry. ADR-0041 flips to Accepted here. It records
 one error of mine from the TODO pass: I closed "Does this repo's
 working arrangement still fit it?" as answered by the seats, but its
 third fact, what PLAN is for here, was never answered. This set is
 the answer.
 
-**8. `docs(agent): close commit plan for the PLAN pass`**
+**9. `docs(agent): close commit plan for the PLAN pass`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
@@ -78,9 +86,11 @@ Deletes this file. The body records what diverged.
 - **Material first, the rule after**, as in the TODO pass. Which
   sections stay and what counts as a milestone show up on the
   cleaned file, so the ADR is written from what held.
-- **Finished steps shrink rather than go.** Unlike a closed TODO
-  entry, a finished step is a milestone that became true, and one
-  line of it tells a reader what this repo has been through.
-  Deleting them would leave PLAN with nothing behind Step 10.
+- **Finished steps go** — reversed at step 4's boundary. The plan
+  first said they shrink, since a line each would tell a reader what
+  this repo had been through. The reviewer asked what that was for,
+  and neither job held: the pointers resolve through the devlog, and
+  the devlog's headings are the timeline. It is the TODO rule again,
+  where closed work goes.
 - **The run-3 reading waits** until this set closes, on the
   reviewer's word. The TODO item stays first in Now.
