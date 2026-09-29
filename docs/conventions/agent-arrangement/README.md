@@ -68,7 +68,12 @@ concept repo… Documents only — no code, no runs."* It holds the
 same three convention skills; the exchange's two, `exchange-read`
 and `exchange-deliver`; and two rules of its own,
 `exchange-reading.md`, the shape of a reading, and
-`convention-manual.md`, the shape of a manual.
+`convention-manual.md`, the shape of a manual. Its decisions log
+holds arrangement decisions only, and no registry: it receives no
+conventions, and no one reads it but itself, so an entry that
+follows from an ADR is a line pointing at it (CBC ADR-0042). A
+run's log keeps its registry, and its entries run longer because
+`exchange-read` reads them.
 
 ### What the difference is
 
@@ -122,8 +127,9 @@ holds the container.
 at the start of every session before it is given any task. It is a
 map — what the project is, where the records are — and the little
 that has to be present on every task because no moment would deliver
-it. Which conventions apply is not in it: the registry in
-`.claude/decisions.md` is that list (§3), and each
+it. Which conventions apply is not in it: in a run, the registry in
+`.claude/decisions.md` is that list (§3); at the deliverer, it is
+the `foundation` each of its skills and rules names. Each
 convention reaches the agent through its own channel.
 
 **Why.** The records teach their own use, and so does every stub in the
@@ -248,9 +254,10 @@ first shape.
 dated, three lines per entry — what changed, why, what
 was rejected. The standing rule rides as a comment in the artifact it
 governs; the log keeps the why and the rejected options; neither
-repeats the other. It doubles as the project's convention registry
-(`docs/conventions/exchange/` §2). Its rules ride in its own
-stub.
+repeats the other. A run's doubles as its convention registry
+(`docs/conventions/exchange/` §2); the deliverer's does not, since
+it receives no conventions (CBC ADR-0042). Its rules ride in its
+own stub.
 
 **`settings.json`** — the tool's settings that are the project's:
 tracked, and the one place the arrangement holds a gate as repo state.
