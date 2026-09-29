@@ -112,7 +112,7 @@ foundation: the <name> convention
   convention's artifact, the convention by name, `the exchange
   convention`. The value carries the relation where it is not
   derivation. Concept chapters carry none; they are the top. That
-  the line travels with a copy is `docs/conventions/exchange/` §3.
+  the line travels with a copy is `docs/conventions/exchange/` §3.5.
 
 ## 3. The manual
 
