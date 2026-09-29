@@ -171,7 +171,17 @@ files keep; "this repo" counted; and the body headings listed
 across the nine, so a heading two manuals grew shows as the
 shape's next candidate. Whatever the pass finds is fixed
 in this commit and listed in its body. Provisional by nature: it
-may find nothing, and then the commit is the count.
+may find nothing, and then the commit is the count. Widened at
+step 9's boundary, on the reviewer's reading of project-recording
+against both repos: its opening drops "software", since *project*
+means either; its seats become a section each, for three
+differences of rule or ownership the paragraph hid — the
+deliverer has no project end and folds lessons back at step
+closes, the deliverer owns playbooks where a run holds only the
+steps filled into its plan, and the CHANGELOG versions the concept
+at the deliverer; and the TODO practice, where the deliverer keeps
+DONE entries whole and the manual calls never deleting an
+anti-pattern, is applied as the reviewer decides it.
 
 **12. `docs: records — the walk done`**
 TODO: the walk item and the kit-wording item close. ARCHITECTURE
