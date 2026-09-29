@@ -230,7 +230,7 @@ Bad: schema migrations become a discipline we must maintain.
   `CBC ADR-0012`, as a run cites the deliverer's — a short upper-case
   name each repo declares once in its README's decisions row (§7).
   A document written to be read in another repo carries the tag on
-  every citation (ADR-0020).
+  every citation (CBC ADR-0020).
 
 **When.** At the moment the decision is made — typically when a gate in the
 plan forces it. Writing it *before* deciding (status: Proposed) is even
@@ -450,7 +450,7 @@ here.
 
 **When.** Stubbed at project start; thereafter, when something became true
 that the outside should see — projection follows truth, so the README never
-claims what is not yet true (ADR-0038, 1d). The mechanism is a gate item
+claims what is not yet true (CBC ADR-0038, 1d). The mechanism is a gate item
 where relevant: a step whose gate makes something projectable true includes
 updating its projection, exactly as record upkeep is already expressed in
 lived gates ("ARCHITECTURE current"). Never a standing item on every gate —
