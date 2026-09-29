@@ -36,7 +36,7 @@ same channels all the same.
 
 The practical question the model exists to answer: *given a convention
 sitting in a project, how does it reach the agent that is supposed to
-follow it?* — §8, §9, and HANDBOOK ADR-0012.
+follow it?* — §8 and §9.
 
 ## 2. Components
 
@@ -87,11 +87,11 @@ Entry files loaded at session start, before the first task.
 - **Fidelity:** space is scarce here, so rules arrive compressed — and
   compression loses parts (§12 M1). The binding can lose parts too:
   what the tool loads is not always the file on disk (§10 says what
-  one tool drops; HANDBOOK ADR-0036).
+  one tool drops).
 - **Ownership:** the project's text, or one operator's. An operator's
   standing file fires and costs like the entry file but belongs to one
   person and one checkout, stays out of the repo's history, and its
-  words never enter records (HANDBOOK ADR-0035). Repeated use of it for
+  words never enter records. Repeated use of it for
   a rule that would be true in any project is the told diagnostic below,
   parked rather than fixed.
 - **Suits:** orientation and routing. Where to look, what kind of repo
@@ -158,12 +158,11 @@ committed template.
   front of you — the rule for filling in `PLAN.md` sits inside
   `PLAN.md`, so it cannot be skipped without opening the file it
   governs. No trigger is needed because the act is the trigger. This is
-  how a text convention can be installed at all (HANDBOOK ADR-0004,
-  HANDBOOK ADR-0015): `.gitignore` is self-enforcing by mechanism; a
-  stub with its rules in comments is self-enforcing by placement, and
-  only while the comments stay in the file. It covers the act, not the
-  decision to act: a record's format travels this way, its timing cannot
-  (HANDBOOK ADR-0018).
+  how a text convention can be installed at all: `.gitignore` is
+  self-enforcing by mechanism; a stub with its rules in comments is
+  self-enforcing by placement, and only while the comments stay in the
+  file. It covers the act, not the decision to act: a record's format
+  travels this way, its timing cannot.
 
 ## 5. The context window
 
@@ -216,7 +215,8 @@ the outcome (§12 G1).
 ## 8. Choosing a channel
 
 The design decision a convention author makes, and until now made
-implicitly. Recorded per convention (HANDBOOK ADR-0012).
+implicitly. Recorded per convention, in its manual's *why it
+arrives this way*.
 
 | The rule is… | Channel | Because |
 |---|---|---|
@@ -237,8 +237,7 @@ Shown by each convention's artifacts: a skill file for a rule bound
 to a moment, stubs and templates for a rule that rides in the files
 a project is born with. What a convention ships is what its manual
 lists under *what this is made usable as*, and the choice rests on
-§8
-(HANDBOOK ADR-0015, HANDBOOK ADR-0040). A skill's frontmatter names
+§8. A skill's frontmatter names
 its trigger; nothing names a channel.
 
 A worked table stood here until every convention carried its own
@@ -272,21 +271,21 @@ Memory files arrive without their HTML comments. The loader drops every
 `<!-- … -->` block before the text enters context, so a comment in an
 entry file is never ambient: it reaches the agent only when the file is
 opened with a tool, which for the entry file is edit time
-(HANDBOOK ADR-0036). Observed on 2.1.260 through 2.1.263; a later
+Observed on 2.1.260 through 2.1.263; a later
 version may differ. The same loader honours `claudeMdExcludes` in
 `settings.json`, globs against the absolute path, which is how a
 template entry file kept inside a repo stays out of its sessions.
 
 A permission rule is a gate only in a mode that honours it; a mode
 that bypasses prompts skips `ask`. The gate is the tool's, not the
-repo's (HANDBOOK ADR-0035).
+repo's.
 
 Skills appear twice as well, and neither time under pushed. Claude
 Code loads a skill's `name` and `description` at session start and
 its body only when the agent invokes it: an ambient trigger over a
 pulled body. The agent still decides, and pushed promises it does
 not (§4). A skill is still the closest this tool gets to pushed for a
-rule about an action; a hook closes the remainder (HANDBOOK ADR-0015).
+rule about an action; a hook closes the remainder.
 
 `.claude/rules/` holds instruction files like `CLAUDE.md`, with one
 extra: a `paths:` list at the top. Without it, the file is read every
@@ -364,8 +363,8 @@ fire when it should (silence, indistinguishable from having no rule).
 two disagreeing copies of a rule to be noticed unless something
 compares them.
 - `partially evidenced` — the three-place hygiene update (the
-  handbook's devlog, k) was caught by hand, as HANDBOOK ADR-0008
-  predicted. Not yet observed: a *missed* divergence.
+  handbook's devlog, k) was caught by hand. Not yet observed: a
+  *missed* divergence.
 - *Refuted by:* an agent flagging a stale copy unprompted.
 
 ### On the context window
