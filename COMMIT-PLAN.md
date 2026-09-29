@@ -22,17 +22,19 @@ deliverer's seat alone.
 This plan.
 
 **2. `docs: TODO drops its closed entries`**
-Removes the 24 done and 5 superseded, skipped or moot entries,
-about 1,090 lines. Each closing fact is checked against the devlog,
-an ADR or a commit first. One that has no home gets it in the
-devlog, in this same commit, before it leaves here. This commit
-closes the item "The deliverer's TODO practice against
+Removes 28 closed entries, the 24 done and the 4 superseded or
+moot, about 1,050 lines. The one skipped entry stays, because it
+still holds open work (step 3). Each closing fact is checked
+against the devlog, an ADR or a commit first. One that has no home
+gets it in the devlog, in this same commit, before it leaves here.
+This commit closes the item "The deliverer's TODO practice against
 project-recording §5", by pruning rather than by a seat rule.
 
 **3. `docs: TODO's stale items closed or given triggers`**
 *Provisional.* This goes through the open items from before the
-exchange with the reviewer, one at a time: the sixth handoff
-material, Variant B, the absorb set's observations, header
+exchange with the reviewer, one at a time: the skipped hand-back
+to run 3, whose line still waits on a birth's Step 2, the sixth
+handoff material, Variant B, the absorb set's observations, header
 audiences, the pure-seed experiment, and any others the reading
 turns up. Each one is closed, or rewritten with a trigger. The
 split into commits and their wording wait on those answers.
