@@ -162,8 +162,9 @@ ADR-0031 (the first convention written here).
   The test for the group is what the *skill* assumes, not what a
   sentence mentions: a method file may name a lived default.
 - A record stub is never re-delivered to a live run. Enforced in
-  the run's own rule, `delivered-copies.md` rule 1, and the
-  exchange's §5: the records are the run's own from birth, not
+  the run's own rule, `delivered-copies.md` rule 1, and
+  `docs/conventions/exchange/` §2.4: the records are the run's own
+  from birth, not
   copies, and no delivery touches them (ADR-0036).
 
 ## Codemap

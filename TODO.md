@@ -8,7 +8,16 @@
 
 ## Now (current plan step)
 
-- [ ] **The walk** (2026-09-28, ADR-0039): the first firing of the
+- [x] DONE 2026-09-29, the walk's change set — nine manuals read to
+      the shape one at a time, thinnest first, then a sync pass over
+      all nine. The form changed five times on the way, each at a
+      boundary: what ships folded into made usable as, the header
+      comment went, §3 of the conventions manual took subsections,
+      the adopted form and the seats map joined, and the channel
+      became the seventh section. The master states no rule. Two
+      contradictions between manuals decided, six duplicates given
+      one home each. Original item:
+      **The walk** (2026-09-28, ADR-0039): the first firing of the
       rule for every description on the conventions manual, born
       with nine derivatives. Every manual read against
       `docs/conventions/conventions/`: a *what this does not cover*
@@ -837,6 +846,18 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] The deliverer's TODO practice against project-recording §5
+      (2026-09-29, the walk's sync pass; deferred on the reviewer's
+      word). The manual says prune ruthlessly and calls never
+      deleting an anti-pattern; this TODO keeps nineteen DONE
+      entries whole, with their original text and commit references,
+      and runs to about 2,100 lines; run 3's keeps none. Two ways to
+      settle it, per `docs/conventions/conventions/` §3.6: the
+      deliverer's seat in project-recording gains a rule that DONE
+      entries stay as the record of what closed, or this TODO is
+      pruned to match the manual, the history being in git and the
+      devlog already. Either is one small change.
+
 - [x] DONE 2026-09-28, ADR-0039 — the ninth convention,
       `conventions`, its manual born from the index's four rule
       sections; the shared core is that manual's §3, and the three
@@ -1211,7 +1232,10 @@
       HANDBOOK ADR-0009, which was the closest thing and was not what
       the rule said. Nothing now asks.
 
-- [ ] `agent-arrangement`'s manual says "the kit" six times
+- [x] DONE 2026-09-29, the walk's step 6: "kit", "starter" and "the
+      kit's protocol" became the container and the exchange in all
+      six places. Original item:
+      `agent-arrangement`'s manual says "the kit" six times
       (2026-09-23). ADR-0029 renamed ours to `delivery/container/`
       because "kit" named where the files came from rather than
       what they are. It is a consistent vocabulary in that file
