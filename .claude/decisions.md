@@ -954,3 +954,22 @@
   Rejected: holding the shape until a third manual grew the
   sections. The shapes rule's own test is a pair, and a stricter
   test for our own instance is a rule kept for symmetry.
+
+- 2026-09-29 Derived, not copied (CBC ADR-0042). The three
+  convention skills this repo holds — commit-messages, commit-plan,
+  visual-comparison — are its own, each derived from its manual,
+  and identical to the container's today because the manuals ask
+  the same of both seats. No copy is renewed from
+  `delivery/container/` again, and none of our skills or rules
+  carries a pin: the "copies renewed … at <commit>" entries of
+  2026-09-19 and 2026-09-27 are the last of their kind. The
+  2026-09-19 entry's open question — whether being "the deliverer
+  and a receiver of the same artifacts" needs writing down — is
+  answered: it did, and there are two derivations, not a deliverer
+  that receives from itself.
+  Why: the container is the run's (CBC ADR-0038). Our PLAN and
+  entry file already differ from its stubs, and a shared file
+  taken for a shared job is how `convention-lifecycle` was held
+  here unrun from 2026-09-03 to 09-26.
+  Rejected: diverging the three skills to make the split visible —
+  a change nobody needs.
