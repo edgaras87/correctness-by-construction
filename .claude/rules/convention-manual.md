@@ -44,21 +44,24 @@ others are not.
    of their subject.
 6. **Lessons as dated italics**, where they happened: *what was
    measured, when, and what changed*.
-7. **What this does not cover.** A list: each neighbouring subject
+7. **Why it arrives this way.** The channel — a skill, a rule, a
+   stub or a file — and why that one: the moment it serves, and
+   what would or would not put it in front of its reader then.
+8. **What this does not cover.** A list: each neighbouring subject
    in bold, then the path it belongs to.
-8. **Where to look**, optional: pointers only, as root paths.
+9. **Where to look**, optional: pointers only, as root paths.
 
 ## What this does not fix
 
 Length, tone, and how the body is divided. Whether a section is
-needed is the manual's to decide; that a reader finds the six
+needed is the manual's to decide; that a reader finds the seven
 where they expect them is this file's.
 
 ## The list is the floor, not the ceiling
 
-Content that fits none of the six gets its own heading in the
+Content that fits none of the seven gets its own heading in the
 body, and the writer looks for such content rather than forcing it
 into a section it does not belong to. A section two manuals grow
 without this file asking for it is a candidate for the list — that
-is how the six were born (`docs/conventions/shapes/` §1: a pair
+is how the seven were born (`docs/conventions/shapes/` §1: a pair
 recurred) and the only way the list grows.
