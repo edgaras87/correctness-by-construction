@@ -49,15 +49,15 @@ recorded way instead of living in a head and scattered notes.
 
 | Record | Where | What it answers |
 |---|---|---|
-| Plan | [PLAN.md](PLAN.md) | Where are we, what's next, what does *done* mean |
+| Plan | [PLAN.md](PLAN.md) | Which milestones are open, and what *done* means for each |
 | Decisions | [docs/adr/](docs/adr/) — cited from other repos as `CBC ADR-nnnn` | Why is it built this way |
 | Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | What is the current shape of the system |
-| Backlog | [TODO.md](TODO.md) | What's known but not done |
+| Backlog | [TODO.md](TODO.md) | What's next, and what's known but not done |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per version (for users) |
 | Devlog | [devlog/](devlog/) | Day-to-day work, dead ends, open questions |
 
 <!-- A line here is true now, and meant for someone arriving from
-     outside. What changes weekly is PLAN.md's; why is the ADRs'; how
+     outside. What changes weekly is TODO.md's; why is the ADRs'; how
      it went is the devlog's. A missing section is not an omission: it
      arrives when a step's gate makes it true — projection follows
      truth. -->

@@ -41,7 +41,7 @@ checked back against this page.
 
 ## The seats
 
-The same records under the same stubs, with three differences of
+The same records under the same stubs, with four differences of
 rule or ownership — so a section each
 (`docs/conventions/conventions/` §3.4).
 
@@ -56,13 +56,32 @@ lessons reach the playbook when the deliverer reads the run. Its
 ### The deliverer's seat
 
 The deliverer keeps the same records under the same stubs, and
-differs in three things. It has no project end, so lessons fold
+differs in four things. It has no project end, so lessons fold
 back at each step's gate close rather than at a retrospective, as
 its first devlog entry agreed on 2026-08-27. It owns the
 playbooks — `playbooks/default.md` and
 `delivery/fills/cbc-run-pure-playbook.md` — where a run holds only
-the steps filled into its plan (§9). And its `CHANGELOG.md`
+the steps filled into its plan (§9). Its `CHANGELOG.md`
 versions the concept, not a release (CBC ADR-0003).
+
+And its `PLAN.md` holds milestones only: things that become true
+once and have a gate, like a birth or a release. Recurring work —
+reading runs, delivering, keeping the conventions — is not a step;
+TODO's Now holds it. A reached milestone leaves the plan, and the
+devlog entry that closes it names the step. A run keeps its
+finished steps whole, because they are the evidence its playbook
+is folded from; the deliverer holds no playbook of its own, so
+its finished steps are only history, which is the devlog's. For
+the same reasons its plan has no Retrospective, whose two jobs —
+folding lessons back and re-reading the entry file — close each
+milestone's gate instead; no "Discovered along the way", since
+TODO takes a finding at once; and no decision index, since
+`docs/adr/` lists itself (§3's index is the run's).
+
+*Found 2026-09-29: from 2026-09-20, with Step 10 in progress, 203
+commits, two of them touching `PLAN.md`; one step written after
+its work was done; the decision index stale twice. The work had been led by TODO and the devlog's Resume all
+along (CBC ADR-0041).*
 
 ## 1. The model at a glance
 
