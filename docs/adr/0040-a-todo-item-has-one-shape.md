@@ -1,8 +1,10 @@
 # 0040. A TODO holds open work, and an item has one shape
 
 Date: 2026-09-29
-Status: Proposed (2026-09-29, under the commit plan for the TODO
-pass)
+Status: Accepted (2026-09-29, at the set's records commit; opened
+Proposed under the commit plan for the TODO pass, and amended at
+step 6's boundary on the reviewer's reading — the Ideas field,
+decision 6, in place of the Options field first proposed)
 
 ## Context
 

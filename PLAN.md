@@ -393,6 +393,12 @@ was met at Step 5.
 - ADR-0032: The chain is a section, and it is drawn
 - ADR-0033: Every slice derives blind; the reading happens once, at the end
 - ADR-0034: An edited copy carries no header line (Step 10)
+- ADR-0035: What a shape is belongs to the container; each rides its group (Step 10)
+- ADR-0036: The exchange replaces convention-lifecycle (Step 10)
+- ADR-0037: Shapes are a convention, and the model is its manual (Step 10)
+- ADR-0038: The handbook is history: its decisions become ours, and no re-sync is kept (Step 10)
+- ADR-0039: Conventions are a convention, and every description follows one rule (Step 10)
+- ADR-0040: A TODO holds open work, and an item has one shape (Step 10)
 
 ---
 

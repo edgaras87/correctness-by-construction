@@ -24,12 +24,13 @@
 ## Now (current plan step)
 
 - [ ] Read run 3 and deliver (2026-09-26, the reviewer).
-      Context: run 3 was last seen at `9869798`; `exchange-read`
-      from the span its decisions log records, then
-      `exchange-deliver` from its pin. `temp/working-a-reading.md`
-      stays until this reading.
+      Context: run 3 is at `~/IdeaProjects/cbc-pure-run-3`, still
+      at `9869798`; `exchange-read` from the span its decisions log
+      records, then `exchange-deliver` from its pin.
+      `temp/working-a-reading.md` stays until this reading.
       Trigger: now — first in the reviewer's order.
-      See: devlog 2026-09-29, Resume, for what the note carries.
+      See: devlog 2026-09-29 (the walk) and 2026-09-29, later, both
+      under Resume, for what the note carries.
 
 - [ ] Write `exchange-birth` while running the next birth
       (2026-09-26, the reviewer).
@@ -208,6 +209,20 @@
       phrase missed because the file wraps it across two lines.
       Trigger: the next set that changes commit-plan.
       See: devlog 2026-09-19, small hours.
+
+- [ ] Give "step" one meaning (2026-09-29, the reviewer).
+      Context: it names a PLAN.md step and a commit in a commit
+      plan — 21 times in the commit-plan skill, and "stop at every
+      step's boundary" in the reviewer's local file — and runs hold
+      both, since the skill ships; a run also has the skills'
+      stages inside a step. "Stage" is already taken three ways:
+      the skills' Stage 0–5, git's staging area, and a delivery
+      into `temp/`. The commit plan already heads its list Commits.
+      Ideas: a commit plan's unit becomes "commit".
+             PLAN's step becomes "plan stage".
+      Trigger: the next set that changes commit-plan, with the grep
+      item above.
+      See: devlog 2026-09-29, the TODO pass.
 
 - [ ] Name the discipline "lived is evidence, not master text"
       (2026-09-04, the user).

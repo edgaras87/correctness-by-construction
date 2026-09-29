@@ -6,6 +6,77 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-29, later  (the TODO pass — 2,120 lines to 368; eleven commits, two revisions)
+
+`todo-to-the-manual-2026-09-29`, cut from `main` at `970ceff`.
+
+- **The prune.** Twenty-eight closed entries went, 1,053 lines —
+  every cited ADR exists, every closing date has an entry here,
+  and the fourteen hashes not in this repo are other repositories'
+  evidence. One "skipped" entry still held open work, the
+  middle-steps line for a birth's Step 2, so it stayed and the plan
+  was revised before the commit rather than after. The item asking
+  for this closed by pruning, not by a seat rule: what closed is
+  already told here, in the ADRs and in git.
+- **The stale pass, 27 verdicts with the reviewer.** Fourteen
+  closed — the handbook's departure, the exchange and
+  `exchange-birth` overtook most — one reopened, ten given a
+  trigger that can still fire. One was found due: the imperative
+  test's trigger, "the next time commit-messages is opened", fired
+  in the walk and nobody decided anything.
+- **The sort.** Now is Step 10's work and the reading of run 3,
+  which the TODO did not carry. Next is what waits on a known
+  event, Later what waits on one that may never come. The floating
+  postgres tag became the first known issue.
+- **The shape was found on the material, and the cap twice.**
+  Items were five parts: what, when raised, why, when due, and a
+  stack of dated updates — the fifth being history. A three-line
+  context failed 27 of 31 items; trimming to it lost one fact that
+  lived nowhere else (a scope naming the area invites steps split
+  by directory). I told the reviewer 20 of 31 before measuring;
+  the ADR carries the measured 27. Five lines proposed; the reviewer
+  read the result and asked for eight, to see items clearly.
+- **Context, not a context document.** The reviewer asked whether
+  context belongs in a field, a separate doc, or a TODO directory,
+  or whether the records already hold it. The records hold the
+  story; the item holds enough to triage without opening the
+  pointer. A directory would be a second home for the devlog's job,
+  and the stub ships to every run.
+- **Ideas, not options.** I proposed an Options field — the choices
+  with their cases. The reviewer meant something else: a place to
+  park an idea when it comes, unweighed, handled when the item is
+  due. Weighing is the work's. The field is `Ideas:`.
+- **Run 3's TODO fits the same parts** (read at `9869798`, in
+  `~/IdeaProjects/cbc-pure-run-3`). It keeps no closed entries but
+  stacks answers the same way, 38 and 36 lines at its longest. So
+  the rule is both seats': the stub states it (ADR-0040), and it
+  reaches the next birth, not run 3.
+- **"Step" means two things**, the reviewer noticed: a PLAN step
+  and a commit in a commit plan. Their idea "plan stage" is parked
+  beside "commit" in a Later item; "stage" is already the skills'
+  Stage 0–5, git's staging area and a delivery into `temp/`.
+- **Also found:** PLAN's decision index had stopped at ADR-0034;
+  0035 to 0040 are in now. And this devlog is past 4,400 lines
+  against its own "split per month" comment — noticed, not acted
+  on.
+- **Not taken:** a seat rule keeping closed entries; a title-only
+  item; a context document or TODO directory; the Options field.
+
+Resume: on `todo-to-the-manual-2026-09-29`, closed at the next
+commit, not pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.** The note carries the earlier entry's
+   list, plus: the TODO shape, offered and not delivered, since
+   records never travel twice (ADR-0040); two observations from its
+   TODO — its Now repeats Next's items as "1 of 3" sequencing,
+   which is PLAN's job, and its 36-line "held at the bundle" item
+   records what we hold, where our TODO is the one home; and our
+   imperative-test item, due now, which the run raised.
+2. **The imperative test** — due; the first Next item.
+3. **Held, with triggers in TODO:** the master and ARCHITECTURE,
+   run 3's step form and standing rules, and the "step" naming with
+   the grep lesson, both at the next set that changes commit-plan.
+
 ## 2026-09-29  (the walk — nine manuals read to one shape; twenty-eight commits, six revisions)
 
 `the-walk-2026-09-28`, cut from `main` after the what-it-is-for
