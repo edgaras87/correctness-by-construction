@@ -56,13 +56,29 @@ today. Its "copies renewed … at <commit>" entries and the pins on
 our own skills stop, and the 2026-09-19 entry's open question is
 answered. The agent's files never share a commit with the records.
 
-**5. `docs: devlog carries the split`**
-The session's entry. ADR-0042 flips to Accepted here. TODO gains
-the maintainer-container item: the trigger is a second maintainer
-repo, and the idea, the reviewer's, is to filter this repo, keeping
-the functionality and layout and dropping what is this concept's.
+**5. `chore(agent): the log and its row say what is true`**
+Found at step 4, and cut at the reviewer's question: do we need
+this at all? The decisions log's header comment has five
+paragraphs, and two still work: what the file is, and the division
+of labour between a rule and its log. The rest go. One repeats
+commit-messages' rule, as the comment itself says. One sends
+entries to a handbook at a retrospective, and neither exists for
+us (ADR-0038, ADR-0041). One describes a birth pin, which our files
+no longer carry (ADR-0042). `CLAUDE.md`'s row for the log also drops
+"the conventions held, with versions", the half of a run's log
+that the deliverer no longer has. Both are agent files, so they
+share one commit.
 
-**6. `docs(agent): close commit plan for the split`**
+**6. `docs: devlog carries the split`**
+The session's entry. ADR-0042 flips to Accepted here. TODO gains
+two items. One is the maintainer container: the trigger is a second
+maintainer repo, and the idea, the reviewer's, is to filter this
+repo, keeping the functionality and layout and dropping what is
+this concept's. The other asks whether a log entry that restates an
+ADR shrinks to a line pointing at it, the pattern TODO and PLAN
+took. That would touch the run's log shape too, so it waits.
+
+**7. `docs(agent): close commit plan for the split`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
