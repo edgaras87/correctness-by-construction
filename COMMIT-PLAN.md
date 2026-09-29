@@ -1,0 +1,86 @@
+# Commit plan: the deliverer's PLAN holds milestones
+
+## Summary — the state after all commits
+
+`PLAN.md` does a job this repo has, rather than a run's. It holds
+milestones: things that become true once and have a gate, like a
+birth, a release or a concept version. Recurring work is not a
+step. Reading runs, delivering and keeping the conventions live in
+TODO's Now and in the devlog, which is where they have lived since
+2026-09-20: 203 commits since then, and two touched PLAN.
+
+Finished steps are one line each, a goal, a date and a pointer,
+because the stories in them are the devlog's and the ADRs'. What
+is left open is true today. Nothing in the file waits for a project
+end the deliverer does not have. project-recording's deliverer seat
+says all of this as its fourth difference, and the run's seat and
+the container's `PLAN.md` stub do not change.
+
+## Commits
+
+**1. `docs(agent): add commit plan for the PLAN pass`**
+This plan.
+
+**2. `docs: PLAN's finished steps take a line each`**
+Steps 0 to 9, 279 lines, become one line each: the goal, the
+closing date, and where the story lives. Each step's gate facts and
+notes are checked against the devlog and the ADRs first, as the
+TODO prune checked its entries. A fact with no other home goes into
+the devlog in this same commit, before it leaves here.
+
+**3. `docs: PLAN's open steps say what is true today`**
+*Provisional.* Step 10 and Release are rewritten so their goals and
+gates hold today: the birth as the one open milestone, and Release
+read against what "consultable by a stranger" means now. The
+header comment still says "kit stub" and goes. Whether anything
+else is a milestone, such as concept v2, is decided at this
+boundary with the reviewer.
+
+**4. `docs: PLAN's sections serve the deliverer`**
+*Provisional.* A decision for each section the stub gave us. The
+Retrospective waits for a project end we do not have. "Discovered
+along the way" is unused, since TODO takes that job. The decision
+index went stale for six ADRs without anyone noticing. Each one is
+kept, changed or dropped on the material after steps 2 and 3. The
+wording waits on those answers.
+
+**5. `docs(conventions): the deliverer plans milestones`**
+*Provisional in wording.* The deliverer's seat in
+project-recording gains its fourth difference, stated from what
+steps 2 to 4 settled, and ADR-0041 opens as Proposed. The run's
+seat, §2 and the container's stub stay as they are. README's
+records row changes with it if PLAN no longer answers "what's
+next" here.
+
+**6. `chore(agent): the entry file says where next is`**
+*Provisional.* The records table in `CLAUDE.md` gives PLAN "current
+state, next steps, gates". If step 5 moves "next" to TODO's Now,
+this row says so. The agent's files never share a commit with the
+records, so this is a step of its own. If step 5 leaves the row
+true, this step is dropped at that boundary.
+
+**7. `docs: devlog carries the PLAN pass`**
+The session's entry. ADR-0041 flips to Accepted here. It records
+one error of mine from the TODO pass: I closed "Does this repo's
+working arrangement still fit it?" as answered by the seats, but its
+third fact, what PLAN is for here, was never answered. This set is
+the answer.
+
+**8. `docs(agent): close commit plan for the PLAN pass`**
+Deletes this file. The body records what diverged.
+
+## Decisions taken inside this plan
+
+- **The deliverer's seat, not the manual.** A run's PLAN works:
+  run 3's steps lead its work, and its gates are derived at
+  opening. The misfit is ours alone, so the change is a seat
+  difference, as `CHANGELOG` was one.
+- **Material first, the rule after**, as in the TODO pass. Which
+  sections stay and what counts as a milestone show up on the
+  cleaned file, so the ADR is written from what held.
+- **Finished steps shrink rather than go.** Unlike a closed TODO
+  entry, a finished step is a milestone that became true, and one
+  line of it tells a reader what this repo has been through.
+  Deleting them would leave PLAN with nothing behind Step 10.
+- **The run-3 reading waits** until this set closes, on the
+  reviewer's word. The TODO item stays first in Now.
