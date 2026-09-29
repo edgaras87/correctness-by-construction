@@ -75,13 +75,28 @@ step gates are derived from the skill that holds the step, while
 the deliverer's milestones come from the situation, no skill
 holds them, and their gates are written when they are named.
 
-**8. `chore(agent): the entry file says where next is`**
+**8. `docs: the CbC playbook's header says what it is`**
+The reviewer's question at step 7's boundary. The playbook opens
+with 78 lines of history: its provenance, and each version from v1
+to v7 with its reasons. A 10-line version line follows. None of it
+reaches a run, because the birth copies from the first step down.
+Its stories are ADR-0016's, ADR-0011's and ADR-0007's, the devlog's
+for each version, and the file's own git log. §9 asks for a version
+and a note of who last updated it, and no more. Each version's
+facts are checked against those homes first. What has no other
+home goes into the devlog in this same commit, as the TODO prune
+did. What stays is what the file is, how a birth uses it, its
+current version, and where its history lives. `pure-seed.md`'s
+pointer to "its own header" for the v1 deltas is reworded to
+point at that history.
+
+**9. `chore(agent): the entry file says where next is`**
 *Provisional.* The records table in `CLAUDE.md` gives PLAN "current
 state, next steps, gates". Step 6 moved "next" to TODO's Now, so
 this row says so. The agent's files never share a commit with the
 records, so this is a step of its own.
 
-**9. `docs: devlog carries the PLAN pass`**
+**10. `docs: devlog carries the PLAN pass`**
 The session's entry. ADR-0041 flips to Accepted here. TODO changes
 twice. The item on run 3's step form gains an idea: a step form as
 PLAN's shape. And a Later item asks whether the playbook needs a
@@ -91,7 +106,7 @@ working arrangement still fit it?" as answered by the seats, but its
 third fact, what PLAN is for here, was never answered. This set is
 the answer.
 
-**10. `docs(agent): close commit plan for the PLAN pass`**
+**11. `docs(agent): close commit plan for the PLAN pass`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
