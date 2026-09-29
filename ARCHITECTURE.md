@@ -146,7 +146,7 @@ ADR-0031 (the first convention written here).
   travels with every copy into a run repo (ADR-0004, ADR-0036).
 - A manual never outlives the rule it explains: a rule changed in
   `delivery/container/` moves its manual in `docs/conventions/` in the
-  same commit. Enforced in `docs/conventions/conventions/` §3, the
+  same commit. Enforced in `docs/conventions/conventions/` §3.5, the
   rule for every description — a stale manual
   is the kind of lie nothing catches, because it is read rarely and
   by whoever is least sure (ADR-0025).

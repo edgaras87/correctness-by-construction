@@ -42,7 +42,7 @@ written from the deliverer's seat.
 ## 1. What a convention is
 
 Each one is two things, kept apart — and from everywhere else,
-only pointers (§3):
+only pointers (§3.1):
 
 - **A manual**, `docs/conventions/<name>/README.md`. What this is,
   how it works, why, with pointers to the decisions. Written for a
@@ -64,7 +64,7 @@ ADR-0031): that this is a rule and not a method — *the work may
 ignore this, with a reason it can give*. That freedom is the
 worker's, in one case, with the reason where that repo's records
 live; an artifact derived from the manual says what the manual
-says, and a pointer says nothing of its own (§3). A run that
+says, and a pointer says nothing of its own (§3.1). A run that
 ignores a convention, gives no reason and comes to no harm has
 found one nobody owes anything to, which is a method filed in the
 wrong place. The manual is where that is recorded when it happens;
@@ -121,66 +121,76 @@ artifact is made usable (`docs/master.md` §1). It explains and
 points at the ADRs; the artifact says what a project does, and its
 `foundation` line names the manual it derives from.
 
-**One place.** A convention's subject is stated in its manual and
-nowhere else. Text that touches the subject points at the manual
-and does not restate it: another manual, the index, the master, an
-ADR's context, an entry file. Text that makes the subject usable
-derives from the manual and names it in `foundation`. Two
-relations, two verbs — point and derive — and a reader who finds
-the subject stated twice has found a defect. Measured once: 98
-lines, two files, three disagreeing copies of one rule.
+### 3.1 One place
 
-**A pointer is a path.** Text that points names the manual by its
-directory with the slash, `<name>/` — as a path from the repo root,
-`docs/conventions/<name>/`, or as a relative link between manuals,
-which resolves and carries the same token — so that the manual can
-find everything pointing at it with one grep. A pointer that leaves
-a convention's directory is written from the repo root, because a
+A convention's subject is stated in its manual and nowhere else.
+Text that touches the subject points at the manual and does not
+restate it: another manual, the index, the master, an ADR's
+context, an entry file. Text that makes the subject usable derives
+from the manual and names it in `foundation`. Two relations, two
+verbs — point and derive — and a reader who finds the subject
+stated twice has found a defect. Measured once: 98 lines, two
+files, three disagreeing copies of one rule.
+
+### 3.2 A pointer is a path
+
+Text that points names the manual by its path from the repo root,
+`docs/conventions/<name>/`, with the section number when it means
+one — `docs/conventions/conventions/` §3.4 — so that the manual
+can find everything pointing at it with one grep, and a reader
+lands on a paragraph rather than a wall. Never a relative link: a
 relative path means a different thing the moment a file is read
 from a different root, which is every copy and every shipped file.
-A name in prose is not a pointer, because names are words. A rename
-is the case `docs/conventions/commit-plan/` §4's sweep covers:
-every old path, before the close.
+A name in prose is not a pointer, because names are words. A
+rename or a renumbering is the case `docs/conventions/commit-plan/`
+§4's sweep covers: every old path and number, before the close.
 
-**Its shape** is a rule under `.claude/rules/`, loading when a
-manual is opened (how a rule loads is
-`docs/conventions/agent-arrangement/` §3), and lists the sections
-one has, each a heading after the opening: an opening statement;
-*what it is for* — the
-need, the failure lived without it, and the trigger, as evidence
-or as intent marked on trial, never intent dressed as evidence;
-*what this is made usable as* — the list a change to the page
-walks, each item marked shipped or the deliverer's, with the
-moment it opens at, placed as the answer to the need; the seats,
-what each side does; lessons as dated italics; and *what this
-does not cover*, the boundary against its neighbours by path. The
-shape was not designed. `docs/conventions/exchange/` and
-`docs/conventions/shapes/` grew
-the same six sections with nothing telling either writer to, which
-is a shape by the test in `docs/conventions/shapes/` §2: a pair
-recurred. It grows the same way and no other: the list is the
-floor, and content that fits none of it takes its own heading in
-the body, where a section two manuals need becomes the next
-candidate.
+### 3.3 The shape
 
-**The seats.** A convention has two seats, the run's and the
-deliverer's, and a manual names both: what each holds and does
-under it, the run first. One paragraph when they are alike, a
-section per seat when they are not, and "no seat" said outright
-when one side has none, so a reader does not hunt for it. Placed
-after *what ships*. Twice a manual grew seat sections because the
-two sides do different things, and nothing told the writer of the
-next one to ask; the paragraph is where the asking is now built
-in.
+The shape is a rule under `.claude/rules/`, loading when a manual
+is opened (how a rule loads is `docs/conventions/agent-arrangement/`
+§3), and lists the sections one has, each a heading after the
+opening: an opening statement; *what it is for* — the need, the
+failure lived without it, and the trigger, as evidence or as
+intent marked on trial, never intent dressed as evidence; *what
+this is made usable as* — the list a change to the page walks,
+each item marked shipped or the deliverer's, with the moment it
+opens at, placed as the answer to the need; the seats (§3.4);
+lessons as dated italics; and *what this does not cover*, the
+boundary against its neighbours by path.
 
-**One rule for every description**, this page included. A
-description is how we understand a thing today, written down: the
-concept, each manual, the master. It may be wrong or incomplete,
-and it is canonical regardless — everything derived from it agrees
-with it until it changes, and it changes only for a reason
-recorded, practice being the evidence. What derives from it is not
-a description: it applies, it does not explain. The rule is the
-same for all of them, and this is where it is stated:
+The shape was not designed. `docs/conventions/exchange/` and
+`docs/conventions/shapes/` grew the same sections with nothing
+telling either writer to, which is a shape by the test in
+`docs/conventions/shapes/` §2: a pair recurred. It grows the same
+way and no other: the list is the floor, and content that fits
+none of it takes its own heading in the body, where a section two
+manuals need becomes the next candidate. A rule, a term or a
+mechanism that other text will point at gets its own numbered
+subsection, as this section's six do, so the pointer lands on it.
+
+### 3.4 The seats
+
+A convention has two seats, the run's and the deliverer's, and a
+manual names both: what each does under it, the run first — what
+each holds is the list in *what this is made usable as*. One
+paragraph when they are alike, a section per seat when they are
+not, and "no seat" said outright when one side has none, so a
+reader does not hunt for it. Placed after *what this is made usable
+as*. Twice a manual grew seat sections because the two sides do
+different things, and nothing told the writer of the next one to
+ask; the section is where the asking is now built in.
+
+### 3.5 The rule for every description
+
+This page included. A description is how we understand a thing
+today, written down: the concept, each manual, the master. It may
+be wrong or incomplete, and it is canonical regardless — everything
+derived from it agrees with it until it changes, and it changes
+only for a reason recorded, practice being the evidence. What
+derives from it is not a description: it applies, it does not
+explain. The rule is the same for all of them, and this is where it
+is stated:
 
 1. A description lists what derives from it.
 2. Each derived thing names its description — in a shipped file,
@@ -189,20 +199,32 @@ same for all of them, and this is where it is stated:
    and greps for the description's path to find what points at it.
 4. A change forced in a derived thing is checked back against the
    description.
-5. A disagreement is raised and decided, practice the evidence; if
-   the description changes, the walk runs again.
+5. A disagreement is raised and decided (§3.6); if the description
+   changes, the walk runs again.
 
 Steps 1, 2 and the grep in 3 are checkable today: every shipped
 file carries `foundation`, `docs/conventions/exchange/` and
 `docs/conventions/shapes/` close with their lists, and a path is a
-token. The rest ran twice by hand
-before this was a rule — the correspondence check of 2026-09-25,
-and the walk of `docs/master.md` at the exchange plan's close —
-both because the reviewer asked, not because anything made anyone
-look. Where a manual and the concept are handled differently —
-versioning, shipping, the kind of derivative, the seats, what each
-asserts — is CBC ADR-0039; the concept's edges are CBC ADR-0003,
-the CHANGELOG's standing comment and `docs/master.md` §1.1.
+token. The rest ran twice by hand before this was a rule — the
+correspondence check of 2026-09-25, and the walk of
+`docs/master.md` at the exchange plan's close — both because the
+reviewer asked, not because anything made anyone look. Where a
+manual and the concept are handled differently — versioning,
+shipping, the kind of derivative, the seats, what each asserts — is
+CBC ADR-0039; the concept's edges are CBC ADR-0003, the CHANGELOG's
+standing comment and `docs/master.md` §1.1.
+
+### 3.6 A disagreement
+
+A derived thing, a pointer or practice saying other than its
+description. It is raised where it is found — a finding in a
+reading, an edit a run made to its copy, a question at a boundary
+— and decided, never defaulted: neither side is right for being
+the description, nor for being newer. Practice is the evidence.
+When the description changes, the walk in §3.5 runs again; when the
+derived thing changes, it follows in the same commit. The decision
+is recorded where the repo records decisions: a commit body, or an
+ADR when options were weighed.
 
 ## 4. Adding a convention
 

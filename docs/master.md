@@ -248,7 +248,7 @@ and not a wish:
 derives from it, each derivative names it, a change walks the list,
 a forced change is checked back, a disagreement is decided with
 practice as the evidence — is stated once, in the conventions
-manual, `docs/conventions/conventions/` §3, for every description
+manual, `docs/conventions/conventions/` §3.5, for every description
 this page names: the concept, each manual, and this page. This page
 is a map and states no rule of its own. Where a manual and the
 concept are handled differently is that manual's *What this does
@@ -389,7 +389,7 @@ Used across both repos, defined here and nowhere else.
   the concept, a manual, this page. It may be wrong or incomplete
   and is canonical regardless; what derives from it applies it and
   does not explain. One rule for all of them,
-  `docs/conventions/conventions/` §3; they differ at the edges
+  `docs/conventions/conventions/` §3.5; they differ at the edges
   (ADR-0039).
 - **canonical** — of a description or a copy: the one that counts,
   from which every other is derived or copied. Says reference,
