@@ -217,7 +217,7 @@ sanctions. Both are re-runnable.
 The source is cbc-run-pure-playbook.md, the candidate variant,
 read verbatim — no filter rides the insert. What the variant
 omits against its parent (the assembly Step 0 comment, the
-install-manual clause) and why is its own header's to say; this
+install-manual clause) and why is ADR-0016's to say; this
 manual delivers what the master holds, like every other seed
 step. The kit's first-session comment and Framing's (CbC)
 comment ride in with the steps: container orientation and a
