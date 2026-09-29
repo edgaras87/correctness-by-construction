@@ -26,8 +26,8 @@ same day, made a convention on 2026-09-19 (CBC ADR-0031).
   and opened when a structure is hard to see and more than one way
   of showing it could work.
 - **`.claude/skills/visual-comparison/SKILL.md` — the deliverer's
-  copy**, downstream of the container's, changed by being copied
-  anew.
+  copy**, a copy of the container's (`docs/conventions/exchange/`
+  §1).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of

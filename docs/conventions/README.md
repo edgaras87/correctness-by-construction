@@ -2,21 +2,22 @@
 
 The nine conventions this repo holds, and how they relate across a
 piece of work. What a convention is, how one is written and how
-one is added is the `conventions` manual, [conventions/](conventions/).
+one is added is the `conventions` manual,
+`docs/conventions/conventions/`.
 
 ## The nine
 
 | Convention | Manual | Artifacts |
 |---|---|---|
-| project-recording | [project-recording/](project-recording/) | the record stubs |
-| commit-messages | [commit-messages/](commit-messages/) | a skill |
-| repo-hygiene | [repo-hygiene/](repo-hygiene/) | the hygiene base; stack overlays stay here |
-| commit-plan | [commit-plan/](commit-plan/) | a skill |
-| exchange | [exchange/](exchange/) | a rule shipped to the run; two skills and a shape held here |
-| agent-arrangement | [agent-arrangement/](agent-arrangement/) | the entry-file and decisions-log stubs |
-| visual-comparison | [visual-comparison/](visual-comparison/) | a skill: how a structure is shown, settled by rendering |
-| shapes | [shapes/](shapes/) | a rule shipped to the run; this repo's shapes are its instances |
-| conventions | [conventions/](conventions/) | nothing shipped; the shape of a manual held here, and the `foundation` line every shipped file carries |
+| project-recording | `docs/conventions/project-recording/` | the record stubs |
+| commit-messages | `docs/conventions/commit-messages/` | a skill |
+| repo-hygiene | `docs/conventions/repo-hygiene/` | the hygiene base; stack overlays stay with the deliverer |
+| commit-plan | `docs/conventions/commit-plan/` | a skill |
+| exchange | `docs/conventions/exchange/` | a rule shipped to the run; two skills and a rule held by the deliverer |
+| agent-arrangement | `docs/conventions/agent-arrangement/` | the entry file and the decisions-log stub |
+| visual-comparison | `docs/conventions/visual-comparison/` | a skill: how a structure is shown, settled by rendering |
+| shapes | `docs/conventions/shapes/` | a rule shipped to the run; the deliverer's shapes are its instances |
+| conventions | `docs/conventions/conventions/` | nothing shipped; the shape of a manual, held by the deliverer, and the `foundation` line every shipped file carries |
 
 ## The chain
 

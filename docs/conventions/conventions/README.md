@@ -58,7 +58,7 @@ only pointers (§3.1):
   are real files in the container, `delivery/container/`.
 
 Which copy of an artifact is the master, and how every other copy
-changes — this repo's own `.claude/skills/` included — is the
+changes — the deliverer's own `.claude/skills/` included — is the
 exchange's, `docs/conventions/exchange/` §1 and §4.
 
 **What a convention asserts**, and what falsifies it (CBC
@@ -131,8 +131,8 @@ restate it: another manual, the index, the master, an ADR's
 context, an entry file. Text that makes the subject usable derives
 from the manual and names it in `foundation`. Two relations, two
 verbs — point and derive — and a reader who finds the subject
-stated twice has found a defect. Measured once: 98 lines, two
-files, three disagreeing copies of one rule.
+stated twice has found a defect; the measured case is
+`docs/conventions/agent-arrangement/`'s.
 
 ### 3.2 A pointer is a path
 
@@ -295,9 +295,9 @@ ADR-0039).*
 
 ## Where to look
 
-- The index and the chain: [`../README.md`](../README.md).
+- The index and the chain: `docs/conventions/README.md`.
 - The rule for every description: `docs/master.md` §3.
 - What `foundation` holds for each kind of file: the exchange,
-  [`../exchange/`](../exchange/) §3.
+  `docs/conventions/exchange/` §3.
 - A convention whose artifact is a rule, not a skill:
-  [`../shapes/`](../shapes/).
+  `docs/conventions/shapes/`.

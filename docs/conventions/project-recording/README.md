@@ -1,7 +1,7 @@
 # Project recording
 
-**How a software project records its decisions, state, plans,
-history and lessons: what each record is, why it exists, where it
+**How a project records its decisions, state, plans, history and
+lessons: what each record is, why it exists, where it
 lives, and how to write it.**
 
 ## What it is for
@@ -41,10 +41,28 @@ checked back against this page.
 
 ## The seats
 
-A run keeps every record the stubs name, from birth, and its
-`CHANGELOG.md` logs releases. The deliverer keeps the same records
-under the same stubs; its `CHANGELOG.md` versions the concept
-instead (CBC ADR-0003), a difference of content and not of rule.
+The same records under the same stubs, with three differences of
+rule or ownership — so a section each
+(`docs/conventions/conventions/` §3.4).
+
+### The run's seat
+
+A run keeps every record the stubs name, from birth. Its `PLAN.md`
+steps arrive whole from a playbook it does not hold, filled in at
+birth. Its retrospective runs at the project's end, and its
+lessons reach the playbook when the deliverer reads the run. Its
+`CHANGELOG.md` logs releases.
+
+### The deliverer's seat
+
+The deliverer keeps the same records under the same stubs, and
+differs in three things. It has no project end, so lessons fold
+back at each step's gate close rather than at a retrospective, as
+its first devlog entry agreed on 2026-08-27. It owns the
+playbooks — `playbooks/default.md` and
+`delivery/fills/cbc-run-pure-playbook.md` — where a run holds only
+the steps filled into its plan (§9). And its `CHANGELOG.md`
+versions the concept, not a release (CBC ADR-0003).
 
 ## 1. The model at a glance
 

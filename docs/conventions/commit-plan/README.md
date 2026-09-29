@@ -27,7 +27,8 @@ fixing it afterwards or not at all, has not happened here.
   when work turns out to need several commits. The rules, one
   sentence each, with the decisions it rests on in its footer.
 - **`.claude/skills/commit-plan/SKILL.md` — the deliverer's copy**,
-  downstream of the container's, changed by being copied anew.
+  a copy of the container's (`docs/conventions/exchange/`
+  §1).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of

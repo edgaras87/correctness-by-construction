@@ -27,8 +27,8 @@ alone with no gate.
   table, the `agent` scope, the stop, with the decisions it rests
   on in its footer.
 - **`.claude/skills/commit-messages/SKILL.md` — the deliverer's
-  copy**, downstream of the container's, changed by being copied
-  anew.
+  copy**, a copy of the container's (`docs/conventions/exchange/`
+  §1).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of
