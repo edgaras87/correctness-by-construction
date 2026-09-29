@@ -57,5 +57,5 @@ Content that fits none of the six gets its own heading in the
 body, and the writer looks for such content rather than forcing it
 into a section it does not belong to. A section two manuals grow
 without this file asking for it is a candidate for the list — that
-is how the six were born (`docs/conventions/shapes/` §2: a pair
+is how the six were born (`docs/conventions/shapes/` §1: a pair
 recurred) and the only way the list grows.
