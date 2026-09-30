@@ -236,8 +236,9 @@ The restore writes every file of the branch tip into main's
 worktree and index; the reset empties the index again, so the
 files stand untracked and main's log holds nothing but the
 hygiene commit. Check it before firing: `git add -A && git diff
---cached --quiet birth-seed && git reset -q` prints nothing when
-the worktree equals the branch tip.
+--cached --stat birth-seed; git reset -q` lists every file that
+differs from the branch tip, so it lists nothing when the worktree
+equals it, and it empties the index either way.
 
 **6. Fire the agent** — a fresh session in the newborn, never the
 concept repo's, with this prompt and nothing more:
@@ -307,7 +308,7 @@ item is a verifiable fact:
   the steps into PLAN. Main at the hygiene commit, its log
   holding nothing else; main's worktree byte-identical to the
   branch tip, every delivered file listed untracked by
-  `git status` (the check in step 5 prints nothing).
+  `git status` (the check in step 5 lists nothing).
 - Every bundle copy byte-identical to its master at the subject's
   pin: the concept chapters, the five skills.
 - PLAN's STEPS region holds the pure variant's sequence —
