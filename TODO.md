@@ -197,10 +197,11 @@
       (2026-09-23, the user; narrowed 2026-09-29).
       Context: `CLAUDE.md`'s opening line sends the reader to
       `tiers.md` for what kind of repo this is, and
-      `delivery/README.md` cites it for the pinned-copy rule. The
-      agent model was made ours and corrected (ADR-0043).
-      Ideas: fold `agent.md` into agent-arrangement as its theory,
-             and empty `docs/models/` if tiers goes the same way.
+      `delivery/README.md` cites it for the pinned-copy rule. It
+      maps how the workspace's repos relate, a different subject
+      from the agent model's, and falls under ADR-0043 too.
+      Ideas: move it to the workspace's own README.
+             Empty `docs/models/` if the agent model folds too.
       Trigger: Step N, Release — README true for a stranger.
       See: devlog 2026-09-29, the agent model.
 
@@ -256,6 +257,19 @@
              drop this concept's own content.
       Trigger: a second maintainer repo.
       See: devlog 2026-09-29, the split.
+
+- [ ] Fold the agent model into agent-arrangement? (2026-09-29,
+      the reviewer)
+      Context: agent-arrangement reasons from `docs/models/agent.md`
+      and states a few of its facts itself, each beside a pointer.
+      A fold would grow the manual from about 350 lines to about
+      600; keeping them apart costs a second file to open. On
+      2026-09-30 neither had drifted from the other.
+      Ideas: the model as the manual's theory section, its binding
+             and claims with it.
+      Trigger: a change to the arrangement that has to edit both
+      files for one fact.
+      See: devlog 2026-09-29, the agent model.
 
 - [ ] Give "step" one meaning (2026-09-29, the reviewer).
       Context: it names a PLAN.md step and a commit in a commit
