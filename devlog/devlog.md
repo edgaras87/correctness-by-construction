@@ -6,6 +6,43 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-30, after closing  (group 1 — nine commits, no revision)
+
+`group-1-2026-09-30`, cut from `main` at `51c1a9f`.
+
+- **A delivery would have wiped run 3's records.** `exchange-deliver`
+  staged every group whole, the container's PLAN, TODO and devlog
+  stubs and both entry files included, and a run's take lands each
+  staged file whole. The exchange said the records never travel
+  again, but its "What goes" did not, so the script had no rule to
+  follow. §3.2 now says it: at birth every file, after it only the
+  copies. The staging and the note's diff take each group's skills
+  and rules and the concept, 38 files, tested in scratch.
+- **The first diff matched nothing, silently.** A git pathspec with
+  a glob and no trailing `/*` never looks inside the directory it
+  names; the skill says why the `/*` is there.
+- **What every delivery re-sends is true in a run.**
+  `visual-comparison` names the deliverer where it said "this
+  repo", which in a run meant the run, and our copy stays
+  byte-identical; the copies rule says the entry file arrives
+  composed.
+- **What only a birth sees is true in a run.** The retrospective
+  keeps a run's lessons in its own file instead of asking it to edit
+  our playbook; the entry file names what was delivered rather than
+  whole directories; the stubs and the seed's subjects and prompt
+  lose kit, bundle, install manual and container half.
+- **Two went elsewhere:** the concept headers to the TODO item that
+  already holds them, due at the next birth; run history in the
+  method skills to group 2, which edits the same files.
+
+Resume: on `group-1-2026-09-30`, closed at the next commit, not
+pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver** — due now.
+2. **The eval's groups 2 to 6**, group 3 once its decision is taken.
+3. **The conventions' full local map, and the imperative test with
+   the 50-character limit**, still due in TODO.
+
 ## 2026-09-30, closing  (the eval — five commits, no revision)
 
 `the-eval-2026-09-30`, cut from `main` at `c6968ad`.

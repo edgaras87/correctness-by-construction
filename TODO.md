@@ -28,8 +28,8 @@
       at `9869798`; `exchange-read` from the span its decisions log
       records, then `exchange-deliver` from its pin.
       `temp/working-a-reading.md` stays until this reading.
-      Trigger: once the eval's G1 is fixed, since a delivery now
-      would carry it (`temp/eval-2026-09-30.md`).
+      Trigger: now — the eval's G1 is fixed, and a delivery
+      carries copies only.
       See: devlog 2026-09-29 (the walk) and 2026-09-29, later, both
       under Resume, for what the note carries.
 

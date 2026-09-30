@@ -108,6 +108,17 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   instead of claiming it for whichever copy is being read —
   header-only, the concept stays v1.
 
+### Fixed
+
+- A delivery after birth carries only copies — each group's skills
+  and rules, and the concept — so it can no longer land the
+  container's stubs over a run's own records. What a run receives
+  says nothing only this repo could resolve: `visual-comparison`
+  names the deliverer where it said "this repo", the PLAN
+  retrospective keeps a run's lessons in its own file, and the
+  entry file, the stubs and the seed's subjects and prompt drop
+  words a run never learns.
+
 ## [v1] - 2026-08-28
 
 ### Added
