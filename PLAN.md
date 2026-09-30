@@ -34,7 +34,7 @@ Gate:
       playbooks, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2).
+      §2.4).
 Notes: from the sketch — "use it for a project or two, then stop;
 design nothing further until there is a second shape to design
 from." The birth is that second shape.
@@ -53,4 +53,4 @@ Gate:
       playbooks, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2).
+      §2.4).

@@ -123,33 +123,41 @@ and this one holds the container.
 
 ## 2. The entry file
 
-**What.** One file, loaded into an agent's context
-at the start of every session before it is given any task. It is a
-map — what the project is, where the records are — and the little
-that has to be present on every task because no moment would deliver
-it. Which conventions apply is not in it: in a run, the registry in
-`.claude/decisions.md` is that list (§3); at the deliverer, it is
-the `foundation` each of its skills and rules names. Each
-convention reaches the agent through its own channel.
+### 2.1 What
 
-**Why.** The records teach their own use, and so does every stub in the
-arrangement — each carries its rules in embedded comments, met at the
-moment the file is opened. That only works if the
-agent knows the files exist. The entry file is the one piece of text
-present before anything is looked up, and it earns that by being a map,
-not a rulebook.
+One file, loaded into an agent's context at the start of every
+session before it is given any task. It is a map — what the project
+is, where the records are — and the little that has to be present on
+every task because no moment would deliver it. Which conventions
+apply is not in it: in a run, the registry in `.claude/decisions.md`
+is that list (§3); at the deliverer, it is the `foundation` each of
+its skills and rules names. Each convention reaches the agent
+through its own channel.
 
-**Where.** Repo root, or under `.claude/` — Claude Code reads
-`CLAUDE.md` at either address as one file (model §10). The container
-ships it under `.claude/`, so that every agent-side path sits in one
-directory; a project that wants it at the root moves it, which one
-run showed to be a pure rename — content untouched, the tool reading
-the file at the new address from the next session. The deliverer's
-sits at the root.
+### 2.2 Why
 
-**How.** The file is paid for on every task, so the boundary is a
-test applied to every line, not a list of sections. Three tests, the
-same three the stub's guard comment states:
+The records teach their own use, and so does every stub in the
+arrangement — each carries its rules in embedded comments, met at
+the moment the file is opened. That only works if the agent knows
+the files exist. The entry file is the one piece of text present
+before anything is looked up, and it earns that by being a map, not
+a rulebook.
+
+### 2.3 Where
+
+Repo root, or under `.claude/` — Claude Code reads `CLAUDE.md` at
+either address as one file (model §10). The container ships it under
+`.claude/`, so that every agent-side path sits in one directory; a
+project that wants it at the root moves it, which one run showed to
+be a pure rename — content untouched, the tool reading the file at
+the new address from the next session. The deliverer's sits at the
+root.
+
+### 2.4 How
+
+The file is paid for on every task, so the boundary is a test
+applied to every line, not a list of sections. Three tests, the same
+three the stub's guard comment states:
 
 - **True of this project and nowhere else.** A line that would be
   true in another project is a convention, and lives there — once. If
@@ -196,26 +204,30 @@ is — the record's stub, README, a skill the project adds under
 `.claude/skills/`, a rules file under `.claude/rules/` (§3). Most facts
 that feel local have a moment, which is why this slot stays short.
 
-**When.** Written at project start — a run's from the container's,
-the deliverer's from this page (CBC ADR-0042). Revisited when a
-record moves, a convention is adopted, or the build command changes,
-and at the re-reading *Size* names below — not otherwise.
+### 2.5 When
 
-**Size.** The entry file is the ambient channel (model §4): paid on
-every task, including the tasks it is irrelevant to, and each line added
+Written at project start — a run's from the container's, the
+deliverer's from this page (CBC ADR-0042). Revisited when a record
+moves, a convention is adopted, or the build command changes, and at
+the re-reading §2.6 names — not otherwise.
+
+### 2.6 Size
+
+The entry file is the ambient channel (model §4): paid on every
+task, including the tasks it is irrelevant to, and each line added
 lowers compliance with every other (model claim A2, assumed). So its
 size is a running concern, not a one-time one. The cost is what the
-harness delivers, not the file: HTML comments are dropped on load (model
-§10), so the guard and the records comment cost
-nothing per task and are read when the file is opened to edit it — the
-moment they govern. If what remains is longer than a screen, something
-in it belongs in a convention, a record or a skill; shrinking it is
-maintenance, not tidying. Noticing that has no moment of its own, so a
-run re-reads the file at its project retrospective: the plan's
-questionnaire asks it, and every line passes the three tests again or
-leaves — the same move a run's decisions log makes for its entries.
-The deliverer has no project end, and re-reads it at each milestone's
-close instead, as a gate item (CBC ADR-0041).
+harness delivers, not the file: HTML comments are dropped on load
+(model §10), so the guard and the records comment cost nothing per
+task and are read when the file is opened to edit it — the moment
+they govern. If what remains is longer than a screen, something in
+it belongs in a convention, a record or a skill; shrinking it is
+maintenance, not tidying. Noticing that has no moment of its own, so
+a run re-reads the file at its project retrospective: the plan's
+questionnaire asks it, and every line passes the three tests again
+or leaves — the same move a run's decisions log makes for its
+entries. The deliverer has no project end, and re-reads it at each
+milestone's close instead, as a gate item (CBC ADR-0041).
 
 ## 3. `.claude/`
 
@@ -237,7 +249,7 @@ when it writes a new one there — the tool deciding, not the agent
 of the tree, which a skill would carry only if the agent noticed the
 moment.
 Without the list, the file is the entry file by another name and
-fails §2's tests the same way. The container ships two —
+fails §2.4's tests the same way. The container ships two —
 `shapes-lifecycle.md`, whose convention is
 `docs/conventions/shapes/`, and `delivered-copies.md`, whose
 convention is `docs/conventions/exchange/` — and the deliverer
@@ -316,7 +328,7 @@ Not a skill, because the failure guarded against is a noticing
 failure: told "remember X", an agent writes X into the entry file
 where it stands, and a skill fires only on recognising the moment.
 Not paid at ambient cost either: the comments are dropped on load
-(§2, *Size*), so they are read when the file is opened to edit it
+(§2.6), so they are read when the file is opened to edit it
 and cost nothing on any other task. A long guard is free; a long
 records table is not.
 
