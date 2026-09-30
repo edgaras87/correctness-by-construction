@@ -6,6 +6,49 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-30, closing  (the eval — five commits, no revision)
+
+`the-eval-2026-09-30`, cut from `main` at `c6968ad`.
+
+- **The whole repo, read.** Six readers, one area each, every file
+  read whole: the front door and records, the conventions and
+  models, the container and installs, the concept and the method,
+  the ADRs and baselines, our agent setup. Sixty-five findings, and
+  the main ones checked against the tree here; each says whether it
+  was checked, rests on its reader, or is uncertain.
+- **Nothing is broken at the root.** The concept agrees with itself,
+  the ADRs are numbered clean, and pure-seed ran end to end in
+  scratch. The weakness is at the edges: one fact in two places, and
+  one of them moved on.
+- **What ships is the most urgent**, group 1: the update staging
+  that re-sends the records, a retrospective that asks a blind run
+  to edit our playbook, our words and run history inside shipped
+  files. A delivery to run 3 now would carry them, so run 3 waits
+  on group 1.
+- **Two of group 1 are mine**, from today's pure-seed set: "two
+  skills, not five", which counted method skills only, and the
+  prompt's own words, "bundle" and "container half", which I set
+  aside as out of scope. The exchange's §3.7 forbids them in a
+  prompt, so they were a defect, not a scope.
+- **Held, not filed.** `temp/eval-2026-09-30.md`, in a reading's
+  form: numbered findings, nothing decided, each marked done in
+  place by the set that fixes it, the file gone when all are. Most
+  findings are wrong now rather than waiting, and sixty items would
+  drown TODO. TODO holds the two decisions — the commit type for a
+  new agent skill here, and whether 2026-09-24's partial reversals
+  need an ADR — and run 3's new trigger.
+- **Not read:** the devlog below its top two entries, and the runs,
+  except run 3's decisions log.
+
+Resume: on `the-eval-2026-09-30`, closed at the next commit, not
+pushed. Next, in the reviewer's order:
+
+1. **The eval's group 1**, what reaches a run.
+2. **Read run 3 and deliver.**
+3. **The eval's groups 2 to 6**, group 3 once its decision is taken.
+4. **The conventions' full local map, and the imperative test with
+   the 50-character limit**, still due in TODO.
+
 ## 2026-09-30, night, later  (pure-seed — seven commits, one revision)
 
 `pure-seed-2026-09-30`, cut from `main` at `d3db78b`.
