@@ -41,7 +41,9 @@ others are not.
    outright when one side has none.
 5. **The body**, numbered sections, free prose. Pointers to other
    conventions as paths from the repo root, never a restatement
-   of their subject.
+   of their subject. A part other text points at gets a numbered
+   subsection, `### N.M`, and then every part of its section does,
+   in order (`docs/conventions/conventions/` §3.2).
 6. **Lessons as dated italics**, where they happened: *what was
    measured, when, and what changed*.
 7. **Why it arrives this way.** The channel — a skill, a rule, a
