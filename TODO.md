@@ -94,6 +94,17 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Decide whether `commit-plan` names a step that runs as a series
+      of commits (2026-09-20, never-oversold).
+      Context: run 3 ran its framing steps as a draft, one commit per
+      reviewer question, and a verdict. Naming that collides with
+      the convention's claim that the commits which exist are the
+      steps done: it means saying what a step is. We told run 3 it
+      waits for the next opening of that file; it was opened on
+      2026-09-29 without it.
+      Trigger: due.
+      See: devlog 2026-09-20.
+
 - [ ] Decide whether the partial reversals of 2026-09-24 need an ADR
       of their own (2026-09-30, the eval).
       Context: ADR-0030, 0031 and 0035 were each changed in part that
@@ -211,6 +222,15 @@
       See: devlog 2026-09-12, later.
 
 ## Later / someday
+
+- [ ] Decide whether `infra-establish`'s contract carries a paragraph
+      on the store's facility (2026-09-17, never-oversold).
+      Context: run 3 wrote one at Step 3 — the ways its store makes
+      two writers disagree — because the skill is silent on it. We
+      held it rather than declined: one instance is not a shape.
+      Trigger: a second run reaching the same gap unprompted, or run
+      3 saying SL-2 leaned on the paragraph.
+      See: devlog 2026-09-17, later still.
 
 - [ ] Decide our own side of shapes (2026-09-23, ADR-0035).
       Context: where unexposed stock lives, what is staged to whom
