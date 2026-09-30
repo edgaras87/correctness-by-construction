@@ -6,7 +6,7 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
-## 2026-09-30, late  (the index — seven commits, one revision)
+## 2026-09-30, late  (the index — eleven commits, two revisions)
 
 `the-index-2026-09-30`, cut from `main` at `f6a2ad8`.
 
@@ -35,8 +35,23 @@
 - **`delivery/README.md`** said "seven convention skills and the rules
   file"; the container ships three and two. Its wider reading
   against the map is in TODO, on a trigger.
-- **No rule for directory READMEs.** The one lived failure, the
-  index gathering rules, is answered by ADR-0032 and ADR-0039.
+- **A second pass, after "that is it" again.** At the close the
+  reviewer asked what "the nine" gives: names and paths the folder
+  shows. It went, and the index is the chain's home alone. Then:
+  should directory READMEs be small architectures? In a narrow
+  sense, yes: a local map, how an area's parts relate, which the map
+  points into. It says nothing a part says about itself, and holds
+  no counts. The file keeps the name `README.md`, because the name
+  is the tool's and the content ours, as with `CLAUDE.md`. Then:
+  why only three conventions in the chain? The chain answers the
+  order of a piece of work (ADR-0032); the other six relate by what
+  they govern, read or describe. The opening now says so, and a
+  full local map of all nine is in TODO. The word "local map" and
+  its rule wait for a pair, which `delivery/README.md`'s reading may
+  complete.
+- **No rule for directory READMEs yet.** The one lived failure, the
+  index gathering rules, is answered by ADR-0032 and ADR-0039. A
+  local map is the candidate, on its pair.
 
 Resume: on `the-index-2026-09-30`, closed at the next commit, not
 pushed. Next, in the reviewer's order:
