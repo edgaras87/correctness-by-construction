@@ -35,13 +35,11 @@ delivery: `fills/`, `installs/` and this file.
 
 There are also three kinds of delivery, which is a different
 question — how a thing lands, not which group it is in (ADR-0017,
-widened by ADR-0024). **The container** is what a run is born
-into:
-`delivery/container/` copied whole into the new repo — this
-repo's, and the section below says what it holds. Inside it the
-parts
-divide again, and the division is what an update obeys — the seven
-convention skills and the rules file are pinned copies; the record
+widened by ADR-0024). **The container** is what a run is born into:
+`delivery/container/` copied whole into the new repo — this repo's,
+and the section below says what it holds. Inside it the parts divide
+again, and the division is what an update obeys — the three
+convention skills and the two rules are pinned copies; the record
 stubs, the two entry files and the hygiene files are the run's own
 from birth and never travel again.
 
