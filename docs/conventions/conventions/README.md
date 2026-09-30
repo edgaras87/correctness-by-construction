@@ -127,11 +127,11 @@ points at the ADRs; the artifact says what a project does, and its
 
 A convention's subject is stated in its manual and nowhere else.
 Text that touches the subject points at the manual and does not
-restate it: another manual, the index, the master, an ADR's
+restate it: another manual, the index, `ARCHITECTURE.md`, an ADR's
 context, an entry file. Text that makes the subject usable derives
 from the manual and names it in `foundation`. Two relations, two
-verbs — point and derive — and a reader who finds the subject
-stated twice has found a defect; the measured case is
+verbs — point and derive — and a reader who finds the subject stated
+twice has found a defect; the measured case is
 `docs/conventions/agent-arrangement/`'s.
 
 ### 3.2 A pointer is a path
@@ -206,11 +206,11 @@ now built in.
 ### 3.5 The rule for every description
 
 This page included. A description is how we understand a thing
-today, written down: the concept, each manual, the master. It may
-be wrong or incomplete, and it is canonical regardless — everything
-derived from it agrees with it until it changes, and it changes
-only for a reason recorded, practice being the evidence. What
-derives from it is not a description: it applies, it does not
+today, written down: the concept, each manual, `ARCHITECTURE.md`. It
+may be wrong or incomplete, and it is canonical regardless —
+everything derived from it agrees with it until it changes, and it
+changes only for a reason recorded, practice being the evidence.
+What derives from it is not a description: it applies, it does not
 explain. The rule is the same for all of them, and this is where it
 is stated:
 
@@ -277,15 +277,18 @@ shapes — and not as the index once said:
    inside a change set.
 2. The manual at `docs/conventions/<name>/README.md`, in the shape.
 3. Its artifacts in the container, if it ships any. A convention
-   entering or leaving the container updates the index's table, the
-   shipped-conventions table in `delivery/README.md`, and the birth
-   entry in the container's decisions-log stub, in the same commit.
+   entering or leaving the container updates the birth entry in the
+   container's decisions-log stub, in the same commit: a run holds
+   that list, and cannot open this repo's.
 4. A row in the index's table.
-5. A registry entry in `.claude/decisions.md` saying what the
-   deliverer holds of it — headed *Convention held: \<name\>* since
-   2026-09-27; the entries for `visual-comparison` and the exchange
-   predate the heading — and for a skill, the deliverer's own copy
-   under `.claude/skills/`, in its own agent-scoped commit.
+5. `ARCHITECTURE.md`: §1.2's count and what the manuals cover, §2.3's
+   line on which convention owns which container file, and the
+   codemap's count.
+6. What the deliverer holds of it, derived from the manual: for a
+   skill, its own under `.claude/skills/`, in its own agent-scoped
+   commit, with an entry in `.claude/decisions.md` when it changes
+   how this repo's agent works. No registry entry: the deliverer
+   receives no conventions (CBC ADR-0042).
 
 No CHANGELOG line and no PLAN step. The CHANGELOG is the
 concept-version log (CBC ADR-0003) and has no place for a
