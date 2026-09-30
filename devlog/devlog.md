@@ -6,6 +6,45 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-30, night  (temp/README — ten commits, two revisions)
+
+`the-temp-readme-2026-09-30`, cut from `main` at `b15698a`.
+
+- **`temp/README.md` held rules and a table, not what `temp/` is.**
+  Three rules for anything sent to a run, and the runs' names. Each
+  moved to where it is used: the rules, with their why, to the
+  exchange's §3.7, and as lines to `exchange-deliver` §1, where the
+  note is written; the names to ARCHITECTURE §2.5. What stays says
+  what `temp/` is and points to §3.7.
+- **The first rule's scope was already ADR-0020's**: told text, a
+  note or a prompt, carries no ADR number, path or vocabulary of
+  ours; a shipped file carries `CBC ADR-nnnn`. §3.7 says so now.
+- **I copied a birth case into the update note, and the reviewer
+  asked.** The second rule listed four claims a receiver cannot
+  check, and one, anything said to a newborn, happens only at
+  birth. The reviewer asked why an update note mentions a newborn.
+  The case went to `pure-seed.md` step 6, for what is said to the
+  newborn after its prompt. The plan was revised first.
+- **I wrote twice that a newborn holds no pin**, in the plan's text
+  for steps 4 and 5. The seed names our pin in every seed commit
+  and fills it into the birth entry. What a newborn lacks is
+  earlier state. Caught at step 5's start, and the plan revised
+  before the word went into ARCHITECTURE.
+- **"Newborn" is defined now**, beside "run" in ARCHITECTURE's
+  words. It was used in about fifteen places and defined in none.
+- **Run 2's state is my word**, "idle since its Step 0": its last
+  commit closes Step 0 on 2026-09-06, and this log last said it
+  waits on its briefing.
+- **Not decided here:** who owns `temp/`. It is the open TODO item,
+  due before the next birth, and the trimmed README seeds it.
+
+Resume: on `the-temp-readme-2026-09-30`, closed at the next commit,
+not pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.**
+2. **The conventions' full local map**, due.
+3. **The imperative test and the 50-character limit**, together.
+
 ## 2026-09-30, later still  (local maps — seven commits, no revision)
 
 `local-maps-2026-09-30`, cut from `main` at `d2a12a7`.

@@ -51,7 +51,7 @@
       `delivered-copies` send a newborn to `temp/`, and
       `exchange-deliver` stages into it; the container ships none,
       and no shipped text says what the folder is or that it is
-      tracked.
+      tracked. Ours, `temp/README.md`, now says just that: the seed.
       Trigger: before the next birth.
 
 - [ ] Split a shipped file's header between its two readers
