@@ -148,8 +148,9 @@ parts after it. Never a relative link: a relative path means a
 different thing the moment a file is read from a different root,
 which is every copy and every shipped file. A name in prose is not a
 pointer, because names are words. A rename or a renumbering is the
-case `docs/conventions/commit-plan/` §4's sweep covers: every old
-path and number, before the close.
+case the commit-plan skill's sweep covers,
+`delivery/container/.claude/skills/commit-plan/SKILL.md` §4: every
+old path and number, before the close.
 
 *Decided in the walk, 2026-09-29, when this manual's §3 held six
 rules as bold paragraphs and every pointer into it said "§3"; it

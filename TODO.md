@@ -229,8 +229,8 @@
       steps, or a retrospective.
       See: devlog 2026-09-19, later.
 
-- [ ] Write "grep the unwrapped text, not the file" into
-      commit-plan §4's sweep (2026-09-19).
+- [ ] Write "grep the unwrapped text, not the file" into the
+      commit-plan skill's sweep, its §4 (2026-09-19).
       Context: three misses — the `§8` hunt that missed a `§7`, a
       renumbering described without reading its range, and a
       phrase missed because the file wraps it across two lines.
