@@ -91,23 +91,23 @@ the agent later reads the pin. Main is left at the hygiene commit.
 git switch -c birth-seed
 
 git add -A
-git commit -m "chore: seed — kit remainder, pin @ $bundle_pin"
+git commit -m "chore: seed — records and conventions, pin @ $bundle_pin"
 
 mkdir -p docs/concept
 cp "$bundle_dir"/concept/*.md docs/concept/
 git add docs/concept
-git commit -m "chore: seed — concept/ from the bundle, pin @ $bundle_pin"
+git commit -m "chore: seed — the concept, pin @ $bundle_pin"
 
 # The groups this run takes, on top of the container that step 2
 # copied. Each group is a piece of the run's tree, so copying it in
 # place is the whole of the mapping (ADR-0036). This run is
 # Spring and PostgreSQL; a run on another stack names method alone
-# and is born with two skills, not five (ADR-0029).
+# and is born with two method skills, not five (ADR-0029).
 for g in method spring-postgres; do
   cp -r "$bundle_dir"/delivery/$g/. .
 done
 git add .claude/skills
-git commit -m "chore: seed — the method and stack groups, pin @ $bundle_pin"
+git commit -m "chore: seed — method and stack skills, pin @ $bundle_pin"
 
 sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
     "$bundle_dir"/delivery/fills/cbc-run-pure-playbook.md; echo) \
@@ -155,12 +155,12 @@ concept repo's, with this prompt and nothing more:
 
 ```text
 This repo was seeded, not born whole — the branch birth-seed
-shows it: one delivery from the correctness-by-construction
-bundle, its container half first (the records, the conventions,
-the two entry files) and its method half after (docs/concept/,
-five skills, the steps in PLAN), every seed commit naming that
-one pin. Main holds the same files, untracked, on top of the
-hygiene commit; the branch is a receipt, never merged. Your
+shows it: one delivery from correctness-by-construction, in two
+halves — first the records, the conventions and the two entry
+files, then docs/concept/, five method and stack skills and the
+steps in PLAN — every seed commit naming that one pin. Main
+holds the same files, untracked, on top of the hygiene commit;
+the branch is a receipt, never merged. Your
 task is to finish the birth: assemble what was delivered into a
 working project — your own arrangement, the records, PLAN's
 Step 0 closed on its gates. Read the whole repository first,
@@ -211,9 +211,9 @@ a clause.
 **A correct seed is checkable** — before the agent starts, every
 item is a verifiable fact:
 
-- Four commits on birth-seed above the hygiene commit: the kit
-  remainder, the concept chapters, the method and stack groups,
-  the steps into PLAN. Main at the hygiene commit, its log
+- Four commits on birth-seed above the hygiene commit: the
+  records and conventions, the concept, the method and stack
+  skills, the steps into PLAN. Main at the hygiene commit, its log
   holding nothing else; main's worktree byte-identical to the
   branch tip, every delivered file listed untracked by
   `git status` (the check in step 5 lists nothing).
