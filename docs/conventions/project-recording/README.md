@@ -574,8 +574,9 @@ popularized by matklad's "ARCHITECTURE.md" essay.)
 One or two pages: a component diagram (ASCII is fine), a paragraph
 per component ("the `orders` module owns all order state
 transitions; nothing else writes to the orders table"), the system's
-key invariants, and a "where to find things" codemap. Link ADRs for
-the *why* behind each shape. Update it when structure changes —
+key invariants, a "where to find things" codemap, and pointers into
+the local maps of the areas that have one (§8.6). Link ADRs for the
+*why* behind each shape. Update it when structure changes —
 practical trigger: whenever a step gate closes and the diagram it
 implies no longer matches reality.
 
@@ -584,6 +585,22 @@ implies no longer matches reality.
 Describing the aspirational design instead of the real one; so much
 detail it goes stale in a week — it maps the forest, the code is the
 trees.
+
+### 8.6 Local maps
+
+An area whose parts relate in ways the map should not carry — how
+they connect, hand work to each other, or land elsewhere — gets a
+local map: its directory's `README.md`, which ARCHITECTURE points
+into. A local map holds relations only. It holds no count or list the
+map holds, and nothing a part says about itself; its first lines say
+what it maps and point for the rest. The file keeps the tool's name,
+`README.md`, and not every README is one: a README holding a folder's
+rules is another kind (CBC ADR-0045).
+
+*Found 2026-09-30: the conventions index and the delivery's README,
+read the same day, had both decayed by retelling the map, a manual
+and the exchange. Cut to their relations, each held what nothing
+else did.*
 
 ---
 

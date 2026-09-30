@@ -1,10 +1,10 @@
 # Delivery — how its parts land in a run
 
-How the parts of `delivery/` relate, and where each lands in a run.
-What each part is, is `ARCHITECTURE.md` §2. How a run is born is
-`delivery/installs/pure-seed.md`; how it is updated afterwards, and
-how what it learns comes back, is the exchange,
-`docs/conventions/exchange/`.
+A local map (ADR-0045): how the parts of `delivery/` relate, and
+where each lands in a run. What each part is, is `ARCHITECTURE.md`
+§2. How a run is born is `delivery/installs/pure-seed.md`; how it is
+updated afterwards, and how what it learns comes back, is the
+exchange, `docs/conventions/exchange/`.
 
 ## 1. The groups are pieces of the run's tree
 

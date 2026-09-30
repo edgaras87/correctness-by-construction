@@ -88,7 +88,7 @@ conventions are about how a repo is kept.
 - **What a convention is, its two parts, and that a manual never
   ships** — `docs/conventions/conventions/` §1.
 - **How they hand work to each other** —
-  `docs/conventions/README.md`, the index.
+  `docs/conventions/README.md`, the index, a local map.
 
 ## 2. The delivery — what a project gets, and where it goes
 
@@ -150,8 +150,8 @@ the run's own agent — section 4.
   (2.5), held as two skills of ours. A run never sees this.
 - **`fills/`** — text written *into* a newborn's own files rather
   than copied as files: the playbook's steps, into its `PLAN.md`.
-- **`README.md`** — what the delivery holds and how it maps into a
-  run.
+- **`README.md`** — the delivery's local map: how its parts land in
+  a run.
 
 ### 2.5 Where it all goes, and what comes back
 
@@ -304,7 +304,7 @@ delivery/
 ├── spring-postgres/ the stack practice (§2.2)
 ├── fills/           text written into a newborn's own files (§2.4)
 ├── installs/        how a run is seeded (§2.4)
-└── README.md        what the delivery holds, and how it maps (§2.4)
+└── README.md        the delivery's local map (§2.4)
 temp/                working drafts, tracked, deleted when served
 CLAUDE.md, .claude/  this repo's work arrangement (§4)
 .editorconfig        hygiene: editor settings
@@ -359,6 +359,9 @@ Used across both repos, defined here and nowhere else.
   today; that phrase is a gloss on this word, not a second term. If
   it reads as settled where the stance is today, *standing* is the
   runner-up, recorded here rather than decided.
+- **local map** — a directory's `README.md` that says how the parts
+  of that area relate, which this page points into. Relations only;
+  not every README is one (ADR-0045).
 - **manual** — a convention's description, at
   `docs/conventions/<name>/README.md`. Never shipped.
 - **seats** — the sides a convention has, this repo's and a run's.
