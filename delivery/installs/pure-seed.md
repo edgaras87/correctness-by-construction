@@ -1,105 +1,26 @@
-<!-- The procedure of record: ADR-0016 (2026-09-06) adopted the
-     pure shape and cancelled the assembly walk — this manual is
-     the birth procedure (born 2026-09-05 as the pure-seed
-     experiment; TODO's Now item is the protocol). Authored from
-     the lived run, not before it — the script this generalizes
-     seeded ~/IdeaProjects/cbc-pure-run.
-     Revised same day, before any walk: the kit half defers to the
-     handbook's pure install by pointer, its fills included — the
-     seeded run-1 repo predates this and holds the kit raw; a
-     divergence for the reading, not a defect.
-     Revised again same day: the playbook is not delivered as a
-     file — the seed inserts its steps into PLAN and fills the
-     "Steps from:" line, matching the adopted no-copy model. The
-     does-the-agent-find-the-mapping observation is deliberately
-     given away; the run walked is reseeded to this shape.
-     Third revision, same day: the insert omits the playbook's
-     (CbC) Step 0 comment — it encodes the assembly conclusions
-     (shipped template, three commits, no change-plan, the
-     scenario pointer) that this experiment withholds, and in a
-     run without them it lies.
-     Fourth revision, same day, user's call: the filter becomes
-     an artifact — the insert reads cbc-run-pure-playbook.md
-     verbatim, the pure-seed candidate variant (its header
-     states the deltas and its lifespan: the experiment's
-     reading keeps one of variant and parent, deletes the
-     other). Staged changes over scripted-out parts.
-     Fifth revision, same day, user's design — the channel
-     split: session-scoped text moves to the firing prompt
-     (situation, task, read-everything, the plan expectation),
-     PLAN keeps only project truth — the variant's Step 0 is
-     pure container prep, its agent-side gates gone to the
-     prompt and the run's own change-plan, and the briefing
-     moves from Step 0's gates to Framing's starting input, so
-     Step 0 closes clean. The measured object is now assembly
-     judgment: the commit sequence the agent chooses and
-     justifies, not discovery from nothing.
-     Sixth revision, 2026-09-06, after run 1: the prompt gains
-     the review protocol — the plan staged and approved before
-     it commits, then step by step, each step staged, shown, and
-     committed only on the reviewer's word. Run 1 ran straight
-     through: commit-plan §6 assumes a reviewer nothing had
-     established, and a file-level "stop" loses to the harness's
-     finish-the-task pressure — not silently: the agent saw §6,
-     recorded the deviation in its plan, and justified it by an
-     instruction the prompt never gave ("instructed to finish
-     unattended"), the harness voice heard as the user's. The reviewer's presence is
-     session truth — the channel split's own logic, applied to
-     pacing. Run 1's straight-through walk stands as data.
-     Seventh revision, 2026-09-07 (ADR-0018): the seed commits on
-     a receipt branch, birth-seed, and main holds the same files
-     untracked — the agent's first commit on main is its own, so
-     the sequence and split the experiment measures are the
-     agent's to choose for every delivered file, not only its
-     additions; run 2's straddling-seed known issue never enters
-     main. The prompt gains the one line that names the branch.
-     Runs 1 and 2 were seeded on main; readings against them say
-     so.
-     Ninth revision, 2026-09-18 (ADR-0024): the kit comes from
-     this repo, not from the handbook's manual by pointer. Step 2
-     is ours and copies delivery/container/; the hygiene commit is its
-     own step; and the semi-pure step goes — the entry files
-     arrive in the kit, so there is no stub to write over and no
-     switch to throw. The pure/semi-pure distinction dies with
-     it: its measurement, whether an agent derives the guard
-     unaided, ended with run 2 by ADR-0019's own words.
-     Eighth revision, 2026-09-07 (ADR-0019): one optional step,
-     the semi-pure delivery — the two fills written over the
-     kit's entry stubs, headless, name filled, one more commit on
-     the branch. ADR-0016's parking condition fired at run 2's
-     Step 0 reading: two runs derived the entry files unaided and
-     neither produced the pre-framing guard or the skills' pin
-     stance. Run 3 runs with the step on; the prompt's situation
-     sentence names the delivery. The manual's name stays —
-     "pure" is the seed's nature, delivers and decides nothing;
-     the switch delivers two more texts. -->
-
 # Install: the pure seed — material only, the agent finishes
 
-One idea: the seed delivers everything and decides nothing. Every
-delivery is a commit on a receipt branch, `birth-seed`, so that
-branch is the manifest — what arrived, from where, at which pin —
-while main stays at the hygiene commit with the same files in its
-worktree, untracked: the newborn's agent finishes the birth itself
-by reading what is there and committing it under its own sequence
-and split (ADR-0018). The container comes from `delivery/container/`,
-this repo's (ADR-0024, ADR-0025), and the seed fills only what is
-mechanical: the birth entry's pin and
-date, two other birth dates, the working name in the two entry
-files, and the playbook's steps into PLAN with its "Steps from:"
-line. Beyond those, no field is filled: not the other stubs, no
-bundle birth entry. What the agent cannot derive rides in the seed
-commits' subjects; everything else it can.
+The birth procedure of record (ADR-0016). One idea: the seed
+delivers everything and decides nothing. Every delivery is a commit
+on a receipt branch, `birth-seed`, so that branch is the manifest —
+what arrived, from where, at which pin — while main stays at the
+hygiene commit with the same files in its worktree, untracked: the
+newborn's agent finishes the birth itself by reading what is there
+and committing it under its own sequence and split (ADR-0018). The
+container comes from `delivery/container/`, this repo's (ADR-0024,
+ADR-0025), and the seed fills only what is mechanical: the birth
+entry's pin and date, two other birth dates, the working name in the
+two entry files, and the playbook's steps into PLAN with its "Steps
+from:" line. Beyond those, no field is filled: not the other stubs,
+no bundle birth entry. What the agent cannot derive rides in the
+seed commits' subjects; everything else it can.
 
 Deliberately not delivered: nothing that encodes a prior run's
 conclusions, and no playbook file — its steps ride in PLAN. The
-agent meets the container and the method raw. One exception, no
-longer a switch: the two entry files arrive composed, in the kit
-itself (ADR-0024). They are the harvest of the readings so far,
-delivered because two runs derived their own unaided and neither
-produced the pre-framing guard or the pin stance (ADR-0019) — a
-measurement that ended with run 2, which is why the pure and
-semi-pure paths are now one path.
+agent meets the container and the method raw. One exception: the
+two entry files arrive composed, in the kit itself, because runs
+that derived their own produced neither the pre-framing guard nor
+the pin stance (ADR-0019, ADR-0024).
 
 **1. Set the paths and capture the pin.**
 
@@ -207,13 +128,10 @@ between the STEPS markers and the markers stay; the second fills
 the "Steps from:" comment's placeholder in place, as its own text
 sanctions. Both are re-runnable.
 
-The source is cbc-run-pure-playbook.md, the candidate variant,
-read verbatim — no filter rides the insert. What the variant
-omits against its parent (the assembly Step 0 comment, the
-install-manual clause) and why is ADR-0016's to say; this
-manual delivers what the master holds, like every other seed
-step. Framing's (CbC) comment rides in with the steps: where the
-briefing lands, no conclusions.
+The source is `delivery/fills/cbc-run-pure-playbook.md`, read
+verbatim — no filter rides the insert; this manual delivers what the
+master holds, like every other seed step. Framing's (CbC) comment
+rides in with the steps: where the briefing lands, no conclusions.
 
 **5. Return to main and restore the branch tip into its worktree,
 untracked.** The branch is never merged.
@@ -264,25 +182,24 @@ problem.
 What the agent does with the delivered entry files stays its own
 choice, and that choice is the reading's object.
 
-The prompt is the session channel — it carries what is true only
-of this moment: the situation (one delivery in two halves, the
-branch that holds them — deletable, never merged, session-shaped truth),
+The prompt is the session channel — it carries what is true only of
+this moment: the situation (one delivery in two halves, the branch
+that holds them — deletable, never merged, session-shaped truth),
 the task, the read-everything instruction, the expectation of a
-plan, and the review protocol. That last is session truth like the rest —
-a reviewer is present *this run* — and run 1 showed the delivered
-convention cannot establish it alone: its §6 names "the reviewer"
-but a file-level stop loses to the harness's finish-the-task
-pressure when no voice above the file confirms anyone is
-watching. Pacing is not a measured object, so the lines leak
-nothing. PLAN carries only what stays true of the project. What the prompt
-deliberately never says: any order, any answer to which records
-to touch or how far to adapt them, whether skills land as one
-commit or split by source — the sequence the agent chooses and
-justifies is the run's central data. The commit-scope rule is not
-restated; it rides in the delivered skills, and the prompt only
-points at them. The stay-inside line guards the blindness: this
-repo holds the answer sheet, `docs/baselines/`, and the permission
-prompt on any outside read is the human's hard backstop behind it.
+plan, and the review protocol. That last is session truth like the
+rest — a reviewer is present *this run* — and a stop written only in
+a file loses to the harness's pressure to finish when no voice above
+the file says anyone is watching (devlog 2026-09-06, "the pure seed
+runs"). Pacing is not a measured object, so the lines leak nothing.
+PLAN carries only what stays true of the project. What the prompt
+deliberately never says: any order, any answer to which records to
+touch or how far to adapt them, whether skills land as one commit or
+split by source — the sequence the agent chooses and justifies is
+the run's central data. The commit-scope rule is not restated; it
+rides in the delivered skills, and the prompt only points at them.
+The stay-inside line guards the blindness: this repo holds the
+answer sheet, `docs/baselines/`, and the permission prompt on any
+outside read is the human's hard backstop behind it.
 
 Anything said to the newborn after this prompt, at a review stop or
 in an answer, is told text, held to the note's rules
@@ -302,7 +219,7 @@ item is a verifiable fact:
   `git status` (the check in step 5 lists nothing).
 - Every bundle copy byte-identical to its master at the subject's
   pin: the concept chapters, the five skills.
-- PLAN's STEPS region holds the pure variant's sequence —
+- PLAN's STEPS region holds the pure playbook's sequence —
   identical to cbc-run-pure-playbook.md from its first step down
   at the subject's pin — both markers in place, and the "Steps
   from:" comment names cbc-run-pure v7 at the bundle pin. No
