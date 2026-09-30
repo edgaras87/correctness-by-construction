@@ -2,28 +2,26 @@
 
 ## Summary — the state after all commits
 
-The walk's rule is written down: a part of a document that other
-text points at gets a numbered subsection, `### N.M`, so the
-pointer lands on it and one grep finds everything pointing there.
-It sits in the conventions manual's §3.2 and in the shape rule for
-a manual, where the next writer meets it. Until now it was in the
-devlog alone.
+A manual's structure follows its form, and not the accidents of
+citation. A section divided into labelled parts numbers them,
+`### N.M`, and so does every section of the same form in the same
+document. A pointer to a part names the number, so it lands on the
+part and one grep finds it. Bold emphasis inside running prose is
+not a part. The rule sits in the conventions manual's §3.2 and in
+the shape rule for a manual. The walk first wrote it only in the
+devlog, and this set first wrote it as "a part other text points
+at", which numbered one section of a manual and left its siblings
+as they were.
 
-It is applied wherever a pointer lands on a named part today:
-- agent-arrangement §2, "§2's tests" and "§2, *Size*".
-- project-recording §3, the tag rule and "§3's index".
-- The agent model's §4, where "model §4" means ambient, told or
-  ownership.
-- The agent model's §10, where "model §10" means three different
-  facts.
+Applied:
+- agent-arrangement §2 and §3.
+- project-recording §2 to §10.
+- The agent model's §4, §10 and §12. Its §10 is divided into its
+  facts, because three pointers name different ones.
 
-Every such pointer names its number. No existing section number
-changes, because subsections go inside their sections.
-
-One pointer was broken and is fixed: "`docs/conventions/commit-plan/`
-§4's sweep" names a section that manual does not have. The sweep
-lives in the commit-plan skill's §4. The concept is left as it is,
-with a TODO item naming the trigger that would number it.
+No existing section number changes. One broken pointer is fixed:
+the commit-plan sweep lives in the skill's §4. The concept waits
+for its first pointer into a chapter's section.
 
 ## Commits
 
@@ -51,35 +49,53 @@ manual's §4 does not exist.
 §2's six parts become `### 2.1` What to `### 2.6` Size, in their
 order. "§2's tests" and "§2, *Size*" name their numbers.
 
-**6. `docs(conventions): project-recording §3 numbered`**
-*Provisional in its cut.* The tag rule is a bullet inside §3's How,
-and the index is a sentence in its Where, and both are pointed at.
-How §3 divides, so that each gets its own number and nothing falls
-under another heading, is decided on the material. Its pointers name the numbers: the
-conventions manual's "project-recording's rule, §3" and the seat's
-"§3's index".
+**6. `docs(conventions): number parts by form`**
+The reviewer's reading at step 6's boundary. Numbering only the part
+that is pointed at gave project-recording §3 subsections while §2
+and §4 to §9, which are built the same way, kept bold paragraphs,
+and gave agent-arrangement a numbered §2 beside an unnumbered §3.
+§3.2's sentence becomes structural: a section divided into labelled
+parts numbers them, every section of the same form in the document
+does too, and a pointer names the number. Emphasis in running prose
+is not a part.
 
-**7. `docs(models): agent model §4 and §10 numbered`**
-§4's six channels become `### 4.1` ambient to `### 4.6` installed,
-already headed, now numbered. §10's facts become subsections. The
-pointers in agent-arrangement and the tiers model name the number
-they mean.
+**7. `chore(agent): the shape rule numbers by form`**
+The shape rule's body item says the same, in its own agent commit.
 
-**8. `docs: devlog carries numbered parts`**
+**8. `docs(conventions): agent-arrangement §3 numbered`**
+§3's seven parts, one per path, become `### 3.1` `skills/` to
+`### 3.7` `CLAUDE.local.md`. §1's two bold lead-ins follow an
+unlabelled opening. They are emphasis, not parts, and stay.
+
+**9. `docs(conventions): project-recording numbered`**
+§2 to §9, the records, each What, Why, Where, How, When and
+Anti-patterns, and §10's four supporting records are numbered in
+order. §3's tag rule becomes a part of its own, §3.5, and pointers
+name §3.3 for the index and §3.5 for the tag. §13's bold lead
+sentence is emphasis and stays.
+
+**10. `docs(models): agent model §4, §10 and §12 numbered`**
+§4's channels and §12's claim groups, already `###`, get numbers.
+§10 is divided into its facts: the table, hooks, memory files and
+comments, permission rules, skills, rules files. The pointers in
+agent-arrangement and the tiers model name the number they mean.
+
+**11. `docs: devlog carries numbered parts`**
 The session's entry. TODO gains the concept's item: its chapters
 get numbered headings when a pointer first needs a section of one.
 Nothing points into a chapter's section today, and the chapters are
 the canonical text every run holds a copy of.
 
-**9. `docs(agent): close commit plan for numbered parts`**
+**12. `docs(agent): close commit plan for numbered parts`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
 
-- **The whole section, once one part is numbered.** A `###` heading
-  runs until the next heading, so a single numbered part among bold
-  paragraphs would take in the parts after it. Numbering all of them
-  in order keeps each part under its own heading.
+- **By form, not by citation** — revised at step 6's boundary. The
+  plan first numbered a section when one of its parts was pointed
+  at, and all of that section's parts, since a `###` heading runs
+  until the next one. Every section of the same form in the document
+  is numbered too, so a reader meets one structure throughout.
 - **No section number moves.** Subsections sit inside, so every
   existing "§N" pointer still resolves, and only pointers to a named
   part change.
