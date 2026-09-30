@@ -179,6 +179,13 @@ Files, whole. The groups that ship — method,
 container, a stack practice if the run is on that stack — and the
 concept. Nothing that explains them; the explanation stays home.
 
+At birth, every file of each group. After it, only the copies: the
+container's skills and rules, the method, the stack practice, the
+concept. The rest of the container — its records, the two entry
+files, the decisions log, the hygiene files — went once and is the
+run's (§2.4); a later delivery that carried it would land stubs over
+what the run has written.
+
 ### 3.3 Each group is a piece of the run's tree
 
 Inside
