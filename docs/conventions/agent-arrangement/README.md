@@ -100,7 +100,6 @@ The theory this leans on is `docs/models/agent.md`: the ambient
 channel (§4), the choosing table (§8), the claims (§12). The model
 describes; this page explains against it.
 
-
 A closed list of paths (CBC ADR-0038, 1c):
 
 - **`CLAUDE.md`** — the entry file, §2. The name is the tool's;
@@ -115,12 +114,12 @@ touches nothing else, scoped `agent` — the rule is
 same scope while it exists but is
 `docs/conventions/commit-plan/`'s artifact, not this convention's.
 
-**Not records.** The arrangement holds no project truth: nothing here
-says what the project is deciding, planning or shipping. It says how
-an agent is to work in it. Where the two sides touch — the records
-table in the entry file, the decisions log's promotion queue — the
-touch is stated by the convention that owns the content, and this one
-holds the container.
+**Not records.** The arrangement holds no project truth: nothing
+here says what the project is deciding, planning or shipping. It
+says how an agent is to work in it. Where the two sides touch — the
+records table in the entry file, a run's decisions log's promotion
+queue — the touch is stated by the convention that owns the content,
+and this one holds the container.
 
 ## 2. The entry file
 
@@ -141,13 +140,12 @@ present before anything is looked up, and it earns that by being a map,
 not a rulebook.
 
 **Where.** Repo root, or under `.claude/` — Claude Code reads
-`CLAUDE.md` at either address as one file (model §10), and a project may
-take the second so that every agent-side path sits in one directory.
-Whatever the tool looks for otherwise. The container ships it
-under `.claude/`, so that every agent-side path sits in one
+`CLAUDE.md` at either address as one file (model §10). The container
+ships it under `.claude/`, so that every agent-side path sits in one
 directory; a project that wants it at the root moves it, which one
-run showed to be a pure rename — content untouched, the tool
-reading the file at the new address from the next session.
+run showed to be a pure rename — content untouched, the tool reading
+the file at the new address from the next session. The deliverer's
+sits at the root.
 
 **How.** The file is paid for on every task, so the boundary is a
 test applied to every line, not a list of sections. Three tests, the
@@ -199,9 +197,9 @@ is — the record's stub, README, a skill the project adds under
 that feel local have a moment, which is why this slot stays short.
 
 **When.** Written at project start — a run's from the container's,
-the deliverer's from this page (CBC ADR-0042). Revisited
-when a record moves, a convention is adopted, or the build command
-changes — not otherwise.
+the deliverer's from this page (CBC ADR-0042). Revisited when a
+record moves, a convention is adopted, or the build command changes,
+and at the re-reading *Size* names below — not otherwise.
 
 **Size.** The entry file is the ambient channel (model §4): paid on
 every task, including the tasks it is irrelevant to, and each line added
@@ -221,14 +219,15 @@ close instead, as a gate item (CBC ADR-0041).
 
 ## 3. `.claude/`
 
-**`skills/`** — where a convention delivered as a skill lands, one
-directory per convention, the copy verbatim (the update is
-`docs/conventions/exchange/`'s; this convention owns the place).
-A project may add a skill of its own, for a moment-bound local
-rule the entry file must not hold (§2) — permitted, and not yet
-defined: what such a skill is, whether it registers,
-how it survives the agent/project split are open until a project
-has written one.
+**`skills/`** — where a convention's skill lives, one directory per
+convention: in a run, a delivered copy, verbatim (the update is
+`docs/conventions/exchange/`'s); at the deliverer, its own
+derivation from the manual (CBC ADR-0042). This convention owns the
+place. A project may add a skill of its own, for a moment-bound
+local rule the entry file must not hold (§2) — permitted, and not
+yet defined: what such a skill is, whether it registers, how it
+survives the agent/project split are open until a project has
+written one.
 
 **`rules/`** — instruction files read like the entry file, with one
 extra: a `paths:` list at the top makes the file load only when the
@@ -309,10 +308,9 @@ preference into the project's truth. The container ships none.
 ## Why it arrives this way
 
 Every rule here governs a file the container ships and rides in it
-as a
-comment: the entry file's comments carry points-never-restates, the
-guard and the size rule; the decisions log's carry its own. Acting
-on the file is the trigger.
+as a comment: the entry file's comments carry points-never-restates,
+the guard and the size rule; the decisions log's carry its own.
+Acting on the file is the trigger.
 
 Not a skill, because the failure guarded against is a noticing
 failure: told "remember X", an agent writes X into the entry file
