@@ -4,13 +4,15 @@
 
 agent-arrangement and `docs/models/agent.md` say nothing false, and
 each fact they share has one home. The 98-line measurement, which
-the manual credited to the model's M1 although M1 never held it,
-lives in M1's evidence, credited to the handbook, and the manual
-points at it once. The manual's §2 and §3 are true for both seats.
-Its skills are derived at the deliverer, not copied. Its entry file
-is revisited at the re-reading its own Size paragraph names. And
-its Where paragraph says each thing once. The model says what names
-a channel, and G1 carries this repo's evidence.
+the manual credited to the model's M1 although M1 never held it, is
+stated once, in the manual's *what it is for*, as where the
+convention came from: measured in the handbook's entry file before
+it was adopted. M1 keeps only its own evidence. The manual's §2 and
+§3 are true for both seats. Its skills are derived at the deliverer,
+not copied. Its entry file is revisited at the re-reading its own
+Size paragraph names. And its Where paragraph says each thing once.
+The model says what names a channel, and G1 carries this repo's
+evidence.
 
 This branch already holds two commits, `812271c` and `935c88d`. They
 were made as a single small change before the whole manual was
@@ -21,15 +23,18 @@ read. This plan covers what that reading found.
 **1. `docs(agent): add commit plan for the arrangement`**
 This plan.
 
-**2. `docs: the 98-line measurement moves to M1`**
+**2. `docs(conventions): the founding case, stated once`**
 agent-arrangement states it twice, on lines 16 and 160, citing the
 model's M1. M1's evidence is a different case, the lost "no
 period". Git shows the origin: on 2026-09-27 (`426b39c`),
 "HANDBOOK ADR-0014 records the measured case" became "model claim
-M1, measured once: 98 lines". The measurement goes into M1's
-evidence, credited to the handbook's entry file. The manual keeps
-its reason and points at M1. It is one commit across both files,
-because one fact changes home.
+M1, measured once: 98 lines". The measurement is not evidence for
+M1's claim that a summary is lossy. It is the failure this
+convention answers, so it belongs in *what it is for*, in the
+adopted form: where it came from, the handbook's entry file before
+adoption. §2 keeps "(model claim M1)" for the lossy-summary point
+alone. It cannot be re-verified here, since there is no handbook
+checkout, and the manual says it is reported.
 
 **3. `docs(conventions): agent-arrangement's §2 and §3`**
 - §3's `skills/` says "the copy verbatim". That is a run's case; the
@@ -60,10 +65,12 @@ Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
 
-- **The measurement's home is the model.** It is evidence for a
-  claim, and the model is where claims keep their evidence. The
-  manual keeps the reason it needs, and the number stays in one
-  place.
+- **The measurement's home is the manual** — reversed at step 2's
+  boundary. The plan first put it in M1's evidence, so that the
+  manual's pointer would land on it. The reviewer asked why a second
+  handbook line was there at all. M1 was already evidenced, and the
+  case is the convention's founding failure, not the claim's
+  evidence.
 - **No ADR.** These are corrections under ADR-0042 and ADR-0043.
 - **The same branch.** The two commits before this plan and this
   set are one tidy-up of one manual and its model, and land
