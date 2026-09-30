@@ -31,9 +31,9 @@ return *no picture*, which is a real answer. In CBC ADR-0028 the table
 was the best answer to one requirement and lost on another; a set
 without it would have hidden that.
 
-Under this repo's constraint — plain text, rendering on GitHub and
-in the IDE with no build step — the buildable notations are Mermaid
-and Unicode box drawing. PlantUML, Graphviz and D2 all need a
+Where a project holds to plain text that renders on GitHub and in
+the IDE with no build step, the buildable notations are Mermaid and
+Unicode box drawing. PlantUML, Graphviz and D2 all need a
 render step or a plugin and are out; a committed SVG renders but is
 not text anyone can read in a diff.
 
@@ -120,7 +120,7 @@ name the case, it is not an entry yet.
   being about simple forms rather than about clear answers. Adding
   two pictures to one document is ordinary work; it earned no ADR,
   and writing one would have been ceremony over a comparison that
-  did not happen (CBC, the shapes model, 2026-09-23).
+  did not happen.
 
 - **Using a dialect is not fighting it.** Ordinary syntax is
   ordinary. Invisible links, spacer nodes and nodes declared out
@@ -129,7 +129,7 @@ name the case, it is not an entry yet.
 
 ## 5. What this does not do
 
-- It does not choose a format for another repo. This repo's
+- It does not choose a format for another repo. The deliverer's
   Mermaid trial is provisional and does not travel (CBC ADR-0027
   decision 3); a run decides its own forms.
 - It does not run on a schedule, and it is not a review of forms
