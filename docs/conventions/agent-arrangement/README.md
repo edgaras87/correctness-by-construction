@@ -97,7 +97,7 @@ the repo that cannot apply it.*
 ## 1. What the arrangement is
 
 The theory this leans on is `docs/models/agent.md`: the ambient
-channel (§4), the choosing table (§8), the claims (§12). The model
+channel (§4.1), the choosing table (§8), the claims (§12). The model
 describes; this page explains against it.
 
 A closed list of paths (CBC ADR-0038, 1c):
@@ -146,7 +146,7 @@ a rulebook.
 ### 2.3 Where
 
 Repo root, or under `.claude/` — Claude Code reads `CLAUDE.md` at
-either address as one file (model §10). The container ships it under
+either address as one file (model §10.1). The container ships it under
 `.claude/`, so that every agent-side path sits in one directory; a
 project that wants it at the root moves it, which one run showed to
 be a pure rename — content untouched, the tool reading the file at
@@ -214,12 +214,12 @@ the re-reading §2.6 names — not otherwise.
 
 ### 2.6 Size
 
-The entry file is the ambient channel (model §4): paid on every
+The entry file is the ambient channel (model §4.1): paid on every
 task, including the tasks it is irrelevant to, and each line added
 lowers compliance with every other (model claim A2, assumed). So its
 size is a running concern, not a one-time one. The cost is what the
 harness delivers, not the file: HTML comments are dropped on load
-(model §10), so the guard and the records comment cost nothing per
+(model §10.3), so the guard and the records comment cost nothing per
 task and are read when the file is opened to edit it — the moment
 they govern. If what remains is longer than a screen, something in
 it belongs in a convention, a record or a skill; shrinking it is
@@ -249,8 +249,7 @@ written one.
 Instruction files read like the entry file, with one extra: a
 `paths:` list at the top makes the file load only when the agent
 reads a file under one of those paths with the Read tool — not when
-it writes a new one there — the tool deciding, not the agent (model
-§10). The home for a rule true only in one part of the tree, which a
+it writes a new one there — the tool deciding, not the agent (model §10.6). The home for a rule true only in one part of the tree, which a
 skill would carry only if the agent noticed the moment. Without the
 list, the file is the entry file by another name and fails §2.4's
 tests the same way. The container ships two — `shapes-lifecycle.md`,
@@ -297,7 +296,7 @@ base ignores it (`docs/conventions/repo-hygiene/`).
 
 Not under `.claude/`, but the arrangement's neighbour: the
 operator's standing instructions, loaded beside the entry file and
-read the same way (model §4, ownership). One person, one checkout;
+read the same way (model §4.1, ownership). One person, one checkout;
 the hygiene base ignores it, and its words never enter a record — a
 record that quotes it has let one operator's preference into the
 project's truth. The container ships none.

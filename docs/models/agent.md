@@ -76,7 +76,7 @@ fire** and **what they guarantee** — and a rule's reliability is a
 property of the channel it travels, not of how well the rule is
 written. A sixth delivers nothing to the window at all.
 
-### ambient
+### 4.1 ambient
 
 Entry files loaded at session start, before the first task.
 - **Fires:** always.
@@ -86,7 +86,7 @@ Entry files loaded at session start, before the first task.
   without bound if used as a rulebook; each addition dilutes the rest.
 - **Fidelity:** space is scarce here, so rules arrive compressed — and
   compression loses parts (§12 M1). The binding can lose parts too:
-  what the tool loads is not always the file on disk (§10 says what
+  what the tool loads is not always the file on disk (§10.3 says what
   one tool drops).
 - **Ownership:** the project's text, or one operator's. An operator's
   standing file fires and costs like the entry file but belongs to one
@@ -97,7 +97,7 @@ Entry files loaded at session start, before the first task.
 - **Suits:** orientation and routing. Where to look, what kind of repo
   this is, what must never happen — if it is short.
 
-### pulled
+### 4.2 pulled
 
 The agent reads a file because it decided to.
 - **Fires:** at the agent's initiative.
@@ -108,7 +108,7 @@ The agent reads a file because it decided to.
 - **Suits:** depth. Full conventions, reference material, anything long
   or precise.
 
-### pushed
+### 4.3 pushed
 
 Something outside the agent's choosing puts text in context at a
 particular moment: a task type matches, an event occurs.
@@ -120,7 +120,7 @@ particular moment: a task type matches, an event occurs.
 - **Costs:** machinery. Something defines and maintains the condition.
 - **Suits:** rules bound to an action. A commit format at commit time.
 
-### told
+### 4.4 told
 
 A human says it in the session.
 - **Fires:** when the human bothers.
@@ -130,7 +130,7 @@ A human says it in the session.
   this channel is a diagnostic:** a convention is missing, or one
   exists in a channel that is not firing.
 
-### observed
+### 4.5 observed
 
 Results of commands the agent runs: file contents, search hits, test
 output, diffs.
@@ -141,7 +141,7 @@ output, diffs.
   of a rule disagree requires this channel — no instruction substitutes
   for a comparison actually being run (§12 O1).
 
-### installed
+### 4.6 installed
 
 Not a channel into the window. The convention arrives as **files** and
 works by existing: `.gitignore`, `.editorconfig`, a directory layout, a
@@ -252,6 +252,8 @@ A second tool's binding would be written beside this one, and writing
 it is the test for tool-shaped assumptions hiding in Layer 1. None has
 been needed.
 
+### 10.1 The mapping
+
 Sketch, Claude Code — checked against 2.1.284 on 2026-09-29, by its
 documentation and by what could be observed here:
 
@@ -265,8 +267,12 @@ documentation and by what could be observed here:
 | installed | files in the repo; the container that puts them there at birth |
 | gate | blocking hooks (`PreToolUse`), CI; permission rules in `settings.json` — `ask` stops at a prompt, `deny` refuses |
 
+### 10.2 Hooks
+
 Hooks appear twice: some inject context (pushed), others block (gate).
 One mechanism, two roles — a binding has to say which.
+
+### 10.3 Memory files and their comments
 
 Memory files arrive without their HTML comments. The loader drops every
 block-level `<!-- … -->` comment before the text enters context — one
@@ -279,11 +285,15 @@ holds neither. The same loader honours `claudeMdExcludes` in
 `settings.json`, globs against the absolute path, which is how a
 template entry file kept inside a repo stays out of its sessions.
 
+### 10.4 Permission rules
+
 A permission rule is a gate only in a mode that honours it. In a mode
 that does not prompt, `ask` stops nothing: auto mode has a classifier
 decide in the background, and a mode that bypasses permissions skips
 the prompt. `deny` still refuses in both. The gate is the tool's, not
 the repo's.
+
+### 10.5 Skills
 
 Skills appear twice as well, and neither time under pushed. Claude
 Code loads a skill's `name` and `description` at session start and
@@ -291,6 +301,8 @@ its body only when the agent invokes it: an ambient trigger over a
 pulled body. The agent still decides, and pushed promises it does
 not (§4). A skill is still the closest this tool gets to pushed for a
 rule about an action; a hook closes the remainder.
+
+### 10.6 Rules files
 
 `.claude/rules/` holds instruction files like `CLAUDE.md`, with one
 extra: a `paths:` list at the top. Without it, the file is read every
@@ -328,7 +340,7 @@ proven wrong.
 including assertions already acted on. Each piece of evidence says
 where it was seen: the handbook's history, this repo's, or a run's.
 
-### On ambient
+### 12.1 On ambient
 
 **A1 — Presence is not compliance.** A rule being in context does not
 mean it is followed.
@@ -351,7 +363,7 @@ mean it is followed.
 the lower compliance with any single rule in it.
 - `assumed` · *Refuted by:* compliance staying flat as ambient grows.
 
-### On pulled
+### 12.2 On pulled
 
 **P1 — A pointer is not the file.** An agent can act on a rule's topic
 without opening the file that states it.
@@ -366,14 +378,14 @@ list at session start.
   can run: a reading of a run that holds one rule both ways, pointed
   at from a skill at its moment and from the entry file alone.
 
-### On pushed
+### 12.3 On pushed
 
 **U1 — A trigger fails in both directions.** A condition can fire when
 it should not (noise, which trains the reader to ignore it) and fail to
 fire when it should (silence, indistinguishable from having no rule).
 - `assumed` · *Refuted by:* a condition reliably exact in practice.
 
-### On observed
+### 12.4 On observed
 
 **O1 — Divergence is invisible without a comparison.** Nothing causes
 two disagreeing copies of a rule to be noticed unless something
@@ -390,7 +402,7 @@ compares them.
   by hand.
 - *Refuted by:* an agent flagging a stale copy unprompted.
 
-### On the context window
+### 12.5 On the context window
 
 **W1 — Conflict fails silently.** Faced with two conflicting rules, an
 agent resolves one and proceeds rather than reporting the ambiguity.
@@ -410,7 +422,7 @@ in the session it was told to.
   disk. *Refuted by:* an agent holding a file's rule against a prompt
   that contradicts it.
 
-### On persistence
+### 12.6 On persistence
 
 **S1 — A record is only as good as its self-containment.** A record
 assuming context from the session that wrote it is unreadable later,
@@ -418,7 +430,7 @@ including by the same agent.
 - `assumed` · *Refuted by:* acting correctly on a terse old record
   without asking.
 
-### On summaries
+### 12.7 On summaries
 
 **M1 — A hand-written summary is lossy on arrival.** Summarising drops
 parts of a rule immediately, before any drift.
@@ -433,7 +445,7 @@ regeneration detects. A hand-written one can disagree while both files
 look current.
 - `evidenced` (definitional)
 
-### On the gate
+### 12.8 On the gate
 
 **G1 — Text does not enforce.** No file prevents a violation; only a
 check outside the text can.
@@ -442,7 +454,7 @@ check outside the text can.
   it was broken 15 times. Here too: nothing gates a subject's
   length, and A1's count is 125 of 233.
 
-### Scorecard
+### 12.9 Scorecard
 
 | Status | Claims |
 |---|---|

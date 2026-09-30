@@ -83,7 +83,7 @@ reference; how copies are made and tracked is the exchange's
 **Told is not delivery.** A tier above may hand a run something as
 session input — a warning the run's own derivation missed, given
 after that derivation is on record, as an experiment's instrument.
-That is the told channel, unpinned by design (agent model §4), and
+That is the told channel, unpinned by design (agent model §4.4), and
 the run's records say it was told; it is not a third form of
 delivery, and a run that leans on it has the diagnostic told
 carries. Nor is a copy the run has edited between two pins
