@@ -397,6 +397,13 @@ takes more than one commit, an ADR when a decision has rejected
 options — and the exchange says nothing about how, only what each
 item must end as, and where.
 
+*Learned by 2026-09-17: a reading asks what the run teaches the
+worked example, `references/worked-example.md` in cbc-framing and
+cbc-slice. It ships like everything else, and it sat untouched
+through three runs because no reading asked. Moved here on
+2026-09-30 from `delivery/README.md`, where it had no rule beside
+it.*
+
 ### 6.4 A reading closes two ways
 
 Its work closes — every item taken,
