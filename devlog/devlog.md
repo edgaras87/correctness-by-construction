@@ -6,6 +6,42 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-30, last  (the tiers model, read — five commits, no revision)
+
+`the-tiers-model-2026-09-30`, cut from `main` at `f8571b9`.
+
+- **It stays, and says so.** The tiers model maps the workspace,
+  and the workspace has no home. By its own §2.2 the garden stays a
+  plain folder until a second concept repo exists, so it lives here
+  until then, and §2.2 now names that move. Yesterday I put "move it
+  to the workspace's README" in TODO as an idea. There is no such
+  README, and the model's own rule forbids one yet. The idea went
+  with the item it was on. `docs/models/` stays: two models, each
+  with a trigger for leaving.
+- **Corrected in place.** Header and draft line, as in the agent
+  model; "kit-born" and "a kit copy" (ADR-0042); an update
+  procedure that is gone; pointers in the root-path form. Beyond the
+  plan, our own decisions were cited as `CBC ADR-nnnn`, four times
+  counting the one I first wrote; read here, they cite bare, as the
+  agent model already did.
+- **§3 points home.** It retold the master's "Down" and "Up" and
+  parts of the exchange. It keeps what holds between tiers, and
+  points to `docs/master.md` §2.5 and the exchange for the rest. Two
+  routes up were stale: records "travel as a handoff document,
+  `temp/` to `temp/`", and a lesson "carried in a handoff". Nothing
+  travels up now; we read the run.
+- **Numbered by form**, all of §2, §3 and §4, since each was divided
+  into labelled parts.
+- **Not taken:** folding it into the master, which maps this repo
+  and would have to give it back; moving it to the garden before the
+  garden exists.
+
+Resume: on `the-tiers-model-2026-09-30`, closed at the next commit,
+not pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.**
+2. **The imperative test and the 50-character limit**, together.
+
 ## 2026-09-30, later  (numbered parts — thirteen commits, one revision)
 
 `numbered-parts-2026-09-30`, cut from `main` at `f1ec9c9`.
