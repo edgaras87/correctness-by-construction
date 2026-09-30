@@ -3,10 +3,10 @@
 ## Summary — the state after all commits
 
 `docs/conventions/README.md`, the index, points and does not
-restate. Its table says which conventions ship and which are the
-deliverer's alone, and leaves the list of artifacts to each
-manual's *what this is made usable as*, where a row can no longer
-drift from it. Its chain names the commit-plan skill's §4 and §5,
+restate. It holds what only it can hold: the list of names, each
+with its manual's path, and the chain. Which conventions ship is
+ARCHITECTURE §2.3's, and what each is made usable as is its
+manual's. Its chain names the commit-plan skill's §4 and §5,
 which exist, instead of the manual's, which do not, and lists every
 domain skill.
 
@@ -31,10 +31,12 @@ This plan.
 **2. `docs(conventions): the index points`**
 - The chain's "`commit-plan` §4 and §5" becomes the skill's
   sections, since the manual has only §1 and §2.
-- The Artifacts column becomes a marker: shipped, the deliverer's,
-  or both. The list of artifacts is each manual's.
+- The Artifacts column goes. It restated each manual's list, and
   project-recording's row had already drifted, naming the record
   stubs and not the playbook's steps or the records-table stake.
+  Which conventions ship is ARCHITECTURE §2.3's already. A marker
+  column in its place would restate §2.3 instead (the reviewer's
+  question at this step).
 - `infra-serve` joins the chain's domain skills.
 
 **3. `docs(conventions): adding a convention, as it is`**
@@ -42,7 +44,10 @@ The conventions manual's §4 and two lists of descriptions:
 - Step 3 names a "shipped-conventions table" in `delivery/README.md`
   that does not exist. What a convention entering or leaving the
   container updates is the index's table and the container stub's
-  birth entry.
+  birth entry. And adding any convention also updates ARCHITECTURE:
+  §1.2's count and summary, and §2.3's line on which convention
+  owns which container file, and the codemap's "nine manuals". The
+  map states those counts, and no step named it.
 - Step 5 asks for a registry entry and, for a skill, the deliverer's
   own copy. Since ADR-0042 the deliverer's log keeps no registry,
   and its skills are derivations.
