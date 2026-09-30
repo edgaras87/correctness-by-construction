@@ -28,9 +28,21 @@
       at `9869798`; `exchange-read` from the span its decisions log
       records, then `exchange-deliver` from its pin.
       `temp/working-a-reading.md` stays until this reading.
-      Trigger: now — first in the reviewer's order.
+      Trigger: once the eval's G1 is fixed, since a delivery now
+      would carry it (`temp/eval-2026-09-30.md`).
       See: devlog 2026-09-29 (the walk) and 2026-09-29, later, both
       under Resume, for what the note carries.
+
+- [ ] Decide the commit type for a new agent skill here, and whether
+      our convention skills are copies of the container's or our own
+      derivations (2026-09-30, the eval).
+      Context: our `commit-messages` skill is byte-identical to the
+      container's and says `feat(agent)`; the manual's deliverer
+      section and our practice say `chore(agent)`. Three manuals
+      call our skills copies; ADR-0042 says neither is copied from
+      the other.
+      Trigger: when the eval's G3 opens.
+      See: devlog 2026-09-30, the eval.
 
 - [ ] Write `exchange-birth` while running the next birth
       (2026-09-26, the reviewer).
@@ -81,6 +93,16 @@
       See: devlog 2026-09-11.
 
 ## Next (upcoming steps — assign each to a step when triaged)
+
+- [ ] Decide whether the partial reversals of 2026-09-24 need an ADR
+      of their own (2026-09-30, the eval).
+      Context: ADR-0030, 0031 and 0035 were each changed in part that
+      day, when decide-first, option-comparison and artifact-kinds
+      were discarded. Their Status lines say so and
+      `.claude/decisions.md` says why, but no ADR is dated that day;
+      ADR-0001 asks for a new one marked "Supersedes".
+      Trigger: when the eval's G6 opens.
+      See: devlog 2026-09-30, the eval.
 
 - [ ] Decide whether commit subjects keep one mood (2026-09-18,
       never-oversold).
