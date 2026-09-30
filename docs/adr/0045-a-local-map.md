@@ -1,7 +1,8 @@
 # 0045. A local map
 
 Date: 2026-09-30
-Status: Proposed (2026-09-30, under the commit plan for local maps)
+Status: Accepted (2026-09-30, at the set's records commit; opened
+Proposed under the commit plan for local maps)
 
 ## Context
 

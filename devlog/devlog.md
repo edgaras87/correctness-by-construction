@@ -6,6 +6,42 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-30, later still  (local maps — seven commits, no revision)
+
+`local-maps-2026-09-30`, cut from `main` at `d2a12a7`.
+
+- **`delivery/README.md` was a third relations.** 207 lines: the
+  groups as pieces of a run's tree, three ways a file lands, the one
+  exception, what the container holds beyond its tree. The rest
+  retold ARCHITECTURE §2, the exchange and project-recording, or
+  told history: a provenance header naming `installs/cbc.md`, gone;
+  a whole section on a contract ADR-0024 ended; "v5" and "kit
+  facts". "Another stack gets no ground skill" appeared three times
+  in the one file. Cut to its relations, it is 86 lines, and every
+  passage that went was checked against its home first.
+- **One lesson had no home**, "ask what the run teaches the worked
+  example", and it moved to the exchange's §6.3, the reading,
+  before the file shrank.
+- **The pair made the rule.** With the conventions index, two
+  READMEs had decayed the same way and held the same kind of thing.
+  ADR-0045 and project-recording §8.6: an area whose parts relate
+  beyond what the map carries keeps a `README.md` that is a local
+  map, relations only, pointed into by ARCHITECTURE. The file keeps
+  the tool's name. Not every README is one; `temp/README.md` holds
+  rules. The reviewer's word was "small architectures"; "local map"
+  is the name, in ARCHITECTURE's words.
+- **The full local map of the conventions is due**, and gets a set
+  of its own with `visual-comparison`.
+- **Not taken:** the relations folded into ARCHITECTURE; `MAP.md`
+  or a nested ARCHITECTURE; one rule for every README.
+
+Resume: on `local-maps-2026-09-30`, closed at the next commit, not
+pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.**
+2. **The conventions' full local map**, now due.
+3. **The imperative test and the 50-character limit**, together.
+
 ## 2026-09-30, late  (the index — eleven commits, two revisions)
 
 `the-index-2026-09-30`, cut from `main` at `f6a2ad8`.

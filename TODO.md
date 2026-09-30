@@ -106,6 +106,19 @@
       is next opened.
       See: devlog 2026-09-29, the agent model.
 
+- [ ] Make the conventions index a full local map (2026-09-30, the
+      reviewer).
+      Context: its chain shows only the conventions that act in
+      sequence during a piece of work. The other six relate by what
+      they govern, read or describe, stated as about thirty pointers
+      across the manuals' *What this does not cover*, and seen
+      together nowhere. The local-map rule now exists
+      (project-recording §8.6, ADR-0045).
+      Ideas: all nine and how each touches the others, derived from
+             those pointers, built by `visual-comparison`.
+      Trigger: due — the pair it waited on was made on 2026-09-30.
+      See: devlog 2026-09-30, local maps.
+
 - [ ] Should a run's decisions-log entries be shorter? (2026-09-29)
       Context: ours now point at an ADR in a line or two, because no
       one reads them but us (ADR-0042). A run's are read by
@@ -162,33 +175,6 @@
       Trigger: run 3's Release reading, where the Spring slice
       reference opens.
       See: devlog 2026-09-24.
-
-- [ ] Read `delivery/README.md` against ARCHITECTURE §2
-      (2026-09-30).
-      Context: since the one-map set, the map's §2 describes the
-      delivery, and `delivery/README.md`, 207 lines, may retell it.
-      A reading on 2026-09-30 fixed only a wrong count; it still
-      calls Release's facts "kit facts", and it holds the birth
-      mapping and the container's exceptions.
-      Ideas: a local map, like the conventions index: how the
-             delivery's parts relate, which the map points into.
-      Trigger: the next change to `delivery/`, or the birth that
-      writes `exchange-birth`, whichever comes first.
-      See: devlog 2026-09-30, the index.
-
-- [ ] Make the conventions index a full local map (2026-09-30, the
-      reviewer).
-      Context: its chain shows only the conventions that act in
-      sequence during a piece of work. The other six relate by what
-      they govern, read or describe, stated as about thirty pointers
-      across the manuals' *What this does not cover*, and seen
-      together nowhere. If `delivery/README.md`'s reading comes out
-      a local map too, that is the pair: "local map" and its rule go
-      into project-recording §8 and ARCHITECTURE's words.
-      Ideas: all nine and how each touches the others, derived from
-             those pointers, built by `visual-comparison`.
-      Trigger: `delivery/README.md`'s reading, above.
-      See: devlog 2026-09-30, the index.
 
 - [ ] Watch whether the next newborn adds the ground-must-be-up
       rule to its entry file unasked (2026-09-04, ADR-0013's scope
