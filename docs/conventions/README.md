@@ -7,17 +7,21 @@ one is added is the `conventions` manual,
 
 ## The nine
 
-| Convention | Manual | Artifacts |
-|---|---|---|
-| project-recording | `docs/conventions/project-recording/` | the record stubs |
-| commit-messages | `docs/conventions/commit-messages/` | a skill |
-| repo-hygiene | `docs/conventions/repo-hygiene/` | the hygiene base; stack overlays stay with the deliverer |
-| commit-plan | `docs/conventions/commit-plan/` | a skill |
-| exchange | `docs/conventions/exchange/` | a rule shipped to the run; two skills and a rule held by the deliverer |
-| agent-arrangement | `docs/conventions/agent-arrangement/` | the entry file and the decisions-log stub |
-| visual-comparison | `docs/conventions/visual-comparison/` | a skill: how a structure is shown, settled by rendering |
-| shapes | `docs/conventions/shapes/` | a rule shipped to the run; the deliverer's shapes are its instances |
-| conventions | `docs/conventions/conventions/` | nothing shipped; the shape of a manual, held by the deliverer, and the `foundation` line every shipped file carries |
+| Convention | Manual |
+|---|---|
+| project-recording | `docs/conventions/project-recording/` |
+| commit-messages | `docs/conventions/commit-messages/` |
+| repo-hygiene | `docs/conventions/repo-hygiene/` |
+| commit-plan | `docs/conventions/commit-plan/` |
+| exchange | `docs/conventions/exchange/` |
+| agent-arrangement | `docs/conventions/agent-arrangement/` |
+| visual-comparison | `docs/conventions/visual-comparison/` |
+| shapes | `docs/conventions/shapes/` |
+| conventions | `docs/conventions/conventions/` |
+
+What each is made usable as is its manual's list, *what this is
+made usable as*; which of them ship to a run is `ARCHITECTURE.md`
+§2.3.
 
 ## The chain
 
@@ -31,7 +35,7 @@ flowchart TB
     vc["visual-comparison"]
     cp["commit-plan"]
     cm["commit-messages"]
-    dom["the domain skills<br/>cbc-framing · infra-establish<br/>cbc-bootstrap · cbc-slice"]
+    dom["the domain skills<br/>cbc-framing · infra-establish<br/>infra-serve · cbc-bootstrap · cbc-slice"]
 
     idea --> vc
     idea --> cp
@@ -50,7 +54,8 @@ only `commit-plan`. A question about a diagram's shape reaches
   structure is shown and the candidates can be rendered cheaply
   enough to look at. A choice that is not about showing something
   has no convention: it is decided and corrected while building,
-  which `commit-plan` §4 and §5 carry.
+  which the commit-plan skill's §4 and §5 carry,
+  `delivery/container/.claude/skills/commit-plan/SKILL.md`.
 - **`commit-plan`** fires when the work needs more than one commit.
   It plans the commits, not the change.
 - **`commit-messages`** fires when you are writing any commit, in a
