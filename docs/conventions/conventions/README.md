@@ -165,7 +165,7 @@ form.*
 
 The shape is a rule under `.claude/rules/`, loading when a manual
 is opened (how a rule loads is `docs/conventions/agent-arrangement/`
-§3), and lists the sections one has, each a heading after the
+§3.2), and lists the sections one has, each a heading after the
 opening: an opening statement; *what it is for* — the need, the
 failure lived without it, and the trigger, as evidence, as intent
 marked on trial, or as adopted, never intent dressed as evidence;

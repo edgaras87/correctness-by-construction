@@ -131,7 +131,7 @@ in front of whoever does the work.
 | | Where | What happens |
 |---|---|---|
 | **Unexposed** | `.claude/shapes/` | nothing loads it; it is opened at a gate |
-| **Exposed** | `.claude/rules/`, with `paths:` | loads on its `paths:` (`docs/conventions/agent-arrangement/` §3) |
+| **Exposed** | `.claude/rules/`, with `paths:` | loads on its `paths:` (`docs/conventions/agent-arrangement/` §3.2) |
 
 The directory is not a filing decision. It *is* the force: the same
 file binds in one place and merely describes in the other, and
@@ -336,7 +336,7 @@ nothing loads `.claude/shapes/`, and that is its force (§3).
 - **When an output opens, extends and closes** — the convention
   that owns the output; a shape that restates it is a copy of that
   convention (§1).
-- **How a rule loads** — `docs/conventions/agent-arrangement/` §3.
+- **How a rule loads** — `docs/conventions/agent-arrangement/` §3.2.
 - **What passes between repositories, and how** —
   `docs/conventions/exchange/`.
 - **The gate items that make a project meet a shape at a step's

@@ -130,7 +130,7 @@ session before it is given any task. It is a map — what the project
 is, where the records are — and the little that has to be present on
 every task because no moment would deliver it. Which conventions
 apply is not in it: in a run, the registry in `.claude/decisions.md`
-is that list (§3); at the deliverer, it is the `foundation` each of
+is that list (§3.4); at the deliverer, it is the `foundation` each of
 its skills and rules names. Each convention reaches the agent
 through its own channel.
 
@@ -167,7 +167,7 @@ three the stub's guard comment states:
   M1).
 - **No moment.** A line with a moment goes where the moment is — the
   record's stub, README, a skill, or, for a rule true only under one
-  directory, a rules file with a `paths:` list (§3) — and is read
+  directory, a rules file with a `paths:` list (§3.2) — and is read
   there, at the moment it is about, instead of on every task it is
   not.
 - **Nothing else would deliver it.** What stays is what no channel fires
@@ -196,13 +196,14 @@ no other home: a convention cannot hold it, because a convention is
 what is true across projects. It is also the easiest slot in which to
 start rebuilding the rulebook, so it takes stance and not rules.
 
-*Local rules* pass one test before they enter: **a rule earns ambient
-space only when its failure is not noticing the moment**. A test
-prerequisite, a migration rule, a service
-that must be running fails: each has a moment, and goes where the moment
-is — the record's stub, README, a skill the project adds under
-`.claude/skills/`, a rules file under `.claude/rules/` (§3). Most facts
-that feel local have a moment, which is why this slot stays short.
+*Local rules* pass one test before they enter: **a rule earns
+ambient space only when its failure is not noticing the moment**. A
+test prerequisite, a migration rule, a service that must be running
+fails: each has a moment, and goes where the moment is — the
+record's stub, README, a skill the project adds under
+`.claude/skills/`, a rules file under `.claude/rules/` (§3.2). Most
+facts that feel local have a moment, which is why this slot stays
+short.
 
 ### 2.5 When
 
@@ -231,8 +232,10 @@ milestone's close instead, as a gate item (CBC ADR-0041).
 
 ## 3. `.claude/`
 
-**`skills/`** — where a convention's skill lives, one directory per
-convention: in a run, a delivered copy, verbatim (the update is
+### 3.1 `skills/`
+
+Where a convention's skill lives, one directory per convention: in a
+run, a delivered copy, verbatim (the update is
 `docs/conventions/exchange/`'s); at the deliverer, its own
 derivation from the manual (CBC ADR-0042). This convention owns the
 place. A project may add a skill of its own, for a moment-bound
@@ -241,55 +244,63 @@ yet defined: what such a skill is, whether it registers, how it
 survives the agent/project split are open until a project has
 written one.
 
-**`rules/`** — instruction files read like the entry file, with one
-extra: a `paths:` list at the top makes the file load only when the
-agent reads a file under one of those paths with the Read tool — not
-when it writes a new one there — the tool deciding, not the agent
-(model §10). The home for a rule true only in one part
-of the tree, which a skill would carry only if the agent noticed the
-moment.
-Without the list, the file is the entry file by another name and
-fails §2.4's tests the same way. The container ships two —
-`shapes-lifecycle.md`, whose convention is
-`docs/conventions/shapes/`, and `delivered-copies.md`, whose
-convention is `docs/conventions/exchange/` — and the deliverer
-holds its own. *Empty at birth until 2026-09-23.*
+### 3.2 `rules/`
 
-**`shapes/`** — where a project keeps an unexposed shape. What a
-shape is, why this is a directory nothing loads, and who moves one
-between here and `rules/` are `docs/conventions/shapes/`'s; this
-convention places the directory and states nothing else about it.
-Not born with the project: a project makes it when it writes its
-first shape.
+Instruction files read like the entry file, with one extra: a
+`paths:` list at the top makes the file load only when the agent
+reads a file under one of those paths with the Read tool — not when
+it writes a new one there — the tool deciding, not the agent (model
+§10). The home for a rule true only in one part of the tree, which a
+skill would carry only if the agent noticed the moment. Without the
+list, the file is the entry file by another name and fails §2.4's
+tests the same way. The container ships two — `shapes-lifecycle.md`,
+whose convention is `docs/conventions/shapes/`, and
+`delivered-copies.md`, whose convention is
+`docs/conventions/exchange/` — and the deliverer holds its own.
+*Empty at birth until 2026-09-23.*
 
-**`decisions.md`** — the arrangement's decision log: append-only,
-dated, three lines per entry — what changed, why, what
-was rejected. The standing rule rides as a comment in the artifact it
-governs; the log keeps the why and the rejected options; neither
-repeats the other. A run's doubles as its convention registry
-(`docs/conventions/exchange/` §2); the deliverer's does not, since
-it receives no conventions (CBC ADR-0042). Its rules ride in its
-own stub.
+### 3.3 `shapes/`
 
-**`settings.json`** — the tool's settings that are the project's:
-tracked, and the one place the arrangement holds a gate as repo state.
-Not born with the project: a project adds it when it has a rule that
-must not depend on text — a permission rule that halts a command at a
-prompt the human answers — or an exclude to declare. The commit
-stop is not such a rule: `docs/conventions/commit-messages/` §2.
-JSON carries no comment, so the why lives in the decisions log,
-never in the file; later inserts are merges, not text edits.
+Where a project keeps an unexposed shape. What a shape is, why this
+is a directory nothing loads, and who moves one between here and
+`rules/` are `docs/conventions/shapes/`'s; this convention places
+the directory and states nothing else about it. Not born with the
+project: a project makes it when it writes its first shape.
 
-**`settings.local.json`** — the tool's machine-local state, never
-project truth; the hygiene base ignores it
-(`docs/conventions/repo-hygiene/`).
+### 3.4 `decisions.md`
 
-**`CLAUDE.local.md`** — not under `.claude/`, but the arrangement's
-neighbour: the operator's standing instructions, loaded beside the
-entry file and read the same way (model §4, ownership). One person,
-one checkout; the hygiene base ignores it, and its words never
-enter a record — a record that quotes it has let one operator's
-preference into the project's truth. The container ships none.
+The arrangement's decision log: append-only, dated, three lines per
+entry — what changed, why, what was rejected. The standing rule
+rides as a comment in the artifact it governs; the log keeps the why
+and the rejected options; neither repeats the other. A run's doubles
+as its convention registry (`docs/conventions/exchange/` §2); the
+deliverer's does not, since it receives no conventions (CBC
+ADR-0042). Its rules ride in its own stub.
+
+### 3.5 `settings.json`
+
+The tool's settings that are the project's: tracked, and the one
+place the arrangement holds a gate as repo state. Not born with the
+project: a project adds it when it has a rule that must not depend
+on text — a permission rule that halts a command at a prompt the
+human answers — or an exclude to declare. The commit stop is not
+such a rule: `docs/conventions/commit-messages/` §2. JSON carries no
+comment, so the why lives in the decisions log, never in the file;
+later inserts are merges, not text edits.
+
+### 3.6 `settings.local.json`
+
+The tool's machine-local state, never project truth; the hygiene
+base ignores it (`docs/conventions/repo-hygiene/`).
+
+### 3.7 `CLAUDE.local.md`
+
+Not under `.claude/`, but the arrangement's neighbour: the
+operator's standing instructions, loaded beside the entry file and
+read the same way (model §4, ownership). One person, one checkout;
+the hygiene base ignores it, and its words never enter a record — a
+record that quotes it has let one operator's preference into the
+project's truth. The container ships none.
 
 ## 4. Anti-patterns
 
