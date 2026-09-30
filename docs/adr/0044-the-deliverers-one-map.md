@@ -58,13 +58,33 @@ which is what the master already does.
    the devlog's, and the map points there.
 5. **The word "master" stays** for the canonical file every copy
    comes from. Only the document named for it goes.
+6. **The codemap is a tree** in a code block, one line per path,
+   descriptions from column 22 (the reviewer's choice). Settled by
+   `visual-comparison` on 2026-09-30. The requirements were: a path's
+   contents in one look (R1); every tracked top-level path, this
+   repo's records included (R2); each entry whole on a line of 100
+   characters or fewer, so that one word changed is one line diffed
+   (R3); what is there with a pointer for why, and no history (R4);
+   which paths sit inside which (R5). The candidates:
+   - the table as it stood, which failed R2, R3 and R4, with a
+     longest row of 1,097 characters and five words of history;
+   - a table with short rows, which held R5 only as a shared path
+     prefix;
+   - a nested list, which held all five with nothing to maintain;
+   - the tree, which shows nesting best, and was chosen with its cost
+     accepted. The column is aligned by hand, so a path longer than
+     it would move every line. A new path is fitted to the column
+     instead.
+   Measured on the raw text. GitHub's rendering was not seen, which
+   leaves the table's and the list's rendered verdicts as
+   predictions. The tree's code block renders as written.
 
 ## Consequences
 
 - The master's erratum closes: there is one map.
-- About ten pointers into `docs/master.md §N` move, in the exchange,
+- Eight pointers into `docs/master.md §N` move, in the exchange,
   conventions and project-recording manuals and the tiers model.
-- The codemap is re-rendered with short rows, and holds this repo's
-  own records.
+- The codemap is a tree that holds this repo's own records, and the
+  map's list of what it knows is wrong is empty.
 - The TODO items "Decide whether the master becomes ARCHITECTURE"
   and "Re-render the ARCHITECTURE codemap" close.
