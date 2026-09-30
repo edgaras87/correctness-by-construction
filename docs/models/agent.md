@@ -233,12 +233,12 @@ with two texts that can disagree (§5).
 
 ## 9. Where each convention lands
 
-Shown by each convention's artifacts: a skill file for a rule bound
-to a moment, stubs and templates for a rule that rides in the files
-a project is born with. What a convention ships is what its manual
-lists under *what this is made usable as*, and the choice rests on
-§8. A skill's frontmatter names
-its trigger; nothing names a channel.
+Shown by each convention's artifacts: a skill file for a rule bound to
+a moment, stubs and templates for a rule that rides in the files a
+project is born with. What a convention ships is what its manual lists
+under *what this is made usable as*, and the choice rests on §8. A
+skill's frontmatter names its trigger; no field anywhere names a
+channel — the manual's *why it arrives this way* does, in prose.
 
 A worked table stood here until every convention carried its own
 statement, at which point the two disagreed on two of five rows.
@@ -439,7 +439,8 @@ look current.
 check outside the text can.
 - `evidenced` — same measurement as A1. The rule existed in two
   channels for the whole life of the handbook, no gate existed, and
-  it was broken 15 times.
+  it was broken 15 times. Here too: nothing gates a subject's
+  length, and A1's count is 125 of 233.
 
 ### Scorecard
 
