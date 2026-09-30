@@ -2,7 +2,7 @@
 
 <!-- The stub ships the pure shape: the steps below are placeholders
      showing the form — a goal, a gate of verifiable facts, the records
-     expected. At birth the install manual replaces the region between
+     expected. At birth the seed replaces the region between
      the STEPS markers with a playbook's full sequence — a concept's;
      the playbook itself stays where it came from. Born
      without one, fill the placeholders in place. Either way the two
@@ -10,7 +10,7 @@
 
 <!-- Steps from: <playbook> v<N> at <concept commit>,
      copied at birth. Filled in place at birth; this comment stays —
-     the retrospective folds lessons back to what it names. -->
+     the retrospective writes its lessons for what it names. -->
 
 ## Legend
 
@@ -79,8 +79,8 @@ Ran: <start> → <end>
 4. Missing steps — work that had no home in the plan.
 5. Useless gates — ceremony that caught nothing.
 6. The entry file — read CLAUDE.md top to bottom; every line still
-   passes its three tests, or leaves (agent-arrangement §2).
+   passes the three tests in its guard comment, or leaves.
 
-Then fold lessons into the playbook the steps came from — the
-"Steps from" line at the top names it — in the repo that owns it,
-and bump its version there.
+Then write each lesson for the playbook the steps came from — the
+"Steps from" line at the top names it — here, under the question it
+answers. The deliverer reads them from this file; nothing is sent.

@@ -8,7 +8,7 @@
 
 ## <YYYY-MM-DD>  (Step 0: bootstrap)
 
-- Project started. Repo initialized from the starter kit.
+- Project started. Repo initialized from its delivery.
 - Briefing: <the problem as brought, in its own words — the fuller
   text than README's paragraph; names used here may change at
   framing, and that is fine: this entry is the record of what it

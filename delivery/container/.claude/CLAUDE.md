@@ -24,9 +24,10 @@ Until the framing artifacts exist (cbc-framing creates them, under
 is running cbc-framing jointly with the human — never invent the
 artifacts to fill the gap.
 
-`docs/concept/` and everything under `.claude/skills/` and
-`.claude/rules/` are delivered copies, pinned; what may be done to
-them is `.claude/rules/delivered-copies.md`.
+`docs/concept/`, and the skills and rules that arrived with a
+delivery, are copies, pinned; what may be done to them is
+`.claude/rules/delivered-copies.md`. A skill or rule this project
+writes is its own.
 
 ## Records
 
@@ -46,11 +47,11 @@ them is `.claude/rules/delivered-copies.md`.
 | The system's shape changed | Shape of the system | ARCHITECTURE.md |
 | The promise, the layers, or the slices are in question | Intent, system definition, slice registry | docs/system/ |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |
-| Agent setup changed, or a convention arrives | Decision, why, rejected options; the conventions held, with versions | .claude/decisions.md |
+| Agent setup changed, or a convention arrives | Decision, why, rejected options; the conventions held, the pin | .claude/decisions.md |
 | Work needs more than one commit | In-flight change set | COMMIT-PLAN.md (when present) |
 
 <!-- This file is loaded in full on every task, relevant or not, so
-     every line below passes three tests or leaves (agent-arrangement):
+     every line below passes three tests or leaves:
      1. True of this project and nowhere else — else it is a
         convention, stated once, there.
      2. No moment — else it goes where the moment is: the record's
