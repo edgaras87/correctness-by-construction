@@ -6,6 +6,45 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-30, night, later  (pure-seed — seven commits, one revision)
+
+`pure-seed-2026-09-30`, cut from `main` at `d3db78b`.
+
+- **pure-seed was out of date around its sequence.** The sequence
+  still works; the text about it had fallen behind the repo. Step
+  2 audited a `delivery/README.md` section, a delta list and a
+  re-verify duty that are gone; now it only copies. The prompt
+  spoke of pins, and there is one. The closing checklist had
+  the agent write a CLAUDE.md that arrives composed and rebuild a
+  second birth entry that no longer exists. The birth scenario and
+  fills, deleted with the assembly path (ADR-0016), were still
+  named in three places.
+- **Step 5's check was broken**, tested in a scratch repo: it
+  printed nothing either way, and on a mismatch left every file
+  staged for the agent. It now lists what differs and always
+  resets. A fix of its own.
+- **The history went.** A 75-line header of nine revisions, two of
+  its claims false, and three retellings in the body. Each keeps
+  its one-line why and a pointer to the ADR or devlog entry.
+- **I widened step 3 at its start.** Checking what the file names
+  against the tree found the scenario and fills; the plan was
+  revised first. My first revision cited the deleting commit, and
+  the reviewer asked why a hash: the ADR is the why, and it went in
+  instead.
+- **Not taken:** numbered headings for its steps, the reviewer's
+  question. The rule is the manuals'; the steps are already
+  numbered in one form, and `exchange-birth` replaces the file at
+  the next birth. "Bundle", the old word for the delivery, stays in
+  the prompt and the container's placeholder; changing it touches
+  the container.
+
+Resume: on `pure-seed-2026-09-30`, closed at the next commit, not
+pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.**
+2. **The conventions' full local map**, due.
+3. **The imperative test and the 50-character limit**, together.
+
 ## 2026-09-30, night  (temp/README — ten commits, two revisions)
 
 `the-temp-readme-2026-09-30`, cut from `main` at `b15698a`.
