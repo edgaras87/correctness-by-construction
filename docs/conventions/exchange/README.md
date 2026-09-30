@@ -244,7 +244,21 @@ can diff the staging against what it holds and find the note wrong.
 Why it matters to this run — the part a diff cannot carry. A verdict
 on everything the run addressed to us since we last read it.
 Nothing that needs our repo to verify: a note that reports facts
-about our tree gives the run a hedge it cannot close.
+about our tree gives the run a hedge it cannot close. Where a claim
+cannot avoid it — a thin note, which ships no copy; material
+outside the delivery; a negative claim, which is about our whole
+tree; anything said to a newborn, which holds no earlier state for
+"this changed" to land on — the note says so, in a clause.
+
+No ADR number, no path in this repo and no word of this repo's own
+vocabulary, in a note or in a prompt: the run cannot see this repo,
+and a citation it cannot follow reads as its own. That is told text.
+A shipped file carries the tag instead, `CBC ADR-nnnn`, because a
+file stays in the run and a note is read once (CBC ADR-0020).
+
+A note that names a third repository gives both names: ours, by
+ordinal, and the one it gave itself at its Identity step. Neither
+side's records say which is which.
 
 *Three rules about verdicts, each a defect first: a verdict is the
 decision and what the run owes now, nothing else; never describe our
