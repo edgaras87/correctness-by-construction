@@ -6,6 +6,45 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-30, later  (numbered parts — thirteen commits, one revision)
+
+`numbered-parts-2026-09-30`, cut from `main` at `f1ec9c9`.
+
+- **A rule decided in the walk and never written.** "A rule other
+  text points at gets a numbered subsection" lived in the devlog of
+  2026-09-29 alone. The reviewer asked whether it had reached the
+  other manuals, the models and the concept. It had reached none of
+  them, and neither the conventions manual nor the shape rule said
+  it.
+- **Numbered by citation, then by form.** I first wrote it as "a
+  part other text points at", and staged project-recording §3 with
+  subsections beside seven sections built the same way. The reviewer
+  said it was worse, and that it should be both or none. The rule
+  now numbers by form: a section divided into labelled parts numbers
+  them, and so does every section of the same form in the document.
+  Emphasis in prose is not a part. Applied to agent-arrangement §2
+  and §3, project-recording §2 to §10, and the agent model's §4,
+  §10 and §12, with §10 divided into its facts.
+- **A pointer into a section that does not exist.** "commit-plan §4's
+  sweep" named the manual, which has only §1 and §2. The sweep is
+  the skill's §4, and the manual never explains it. That is now an
+  idea on the grep item in TODO.
+- **Two slips of my own, caught before commit.** The first pass over
+  project-recording missed the How parts where "**How.**" stands
+  alone on its line, and left them under Where. And a
+  "(model §10)" pointer wrapped across two lines escaped a search:
+  the grep lesson, a fourth time, now counted in its TODO item.
+- **The concept waits** for its first pointer into a chapter's
+  section. It is the text every run holds, and nothing points there.
+- **Not taken:** numbering only what is cited; the "none" option,
+  back to bold labels everywhere.
+
+Resume: on `numbered-parts-2026-09-30`, closed at the next commit,
+not pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.**
+2. **The imperative test and the 50-character limit**, together.
+
 ## 2026-09-30  (agent-arrangement read whole — nine commits, one revision)
 
 `the-manual-points-2026-09-29`, cut from `main` at `a736d9d`.

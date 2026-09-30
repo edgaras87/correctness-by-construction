@@ -231,11 +231,24 @@
 
 - [ ] Write "grep the unwrapped text, not the file" into the
       commit-plan skill's sweep, its §4 (2026-09-19).
-      Context: three misses — the `§8` hunt that missed a `§7`, a
-      renumbering described without reading its range, and a
-      phrase missed because the file wraps it across two lines.
+      Context: four misses — the `§8` hunt that missed a `§7`, a
+      renumbering described without reading its range, a phrase
+      the file wraps across two lines, and on 2026-09-30 a
+      "(model §10)" pointer wrapped the same way. The commit-plan
+      manual never explains the sweep; the rule is the skill's
+      alone.
+      Ideas: the sweep's why, into the commit-plan manual.
       Trigger: the next set that changes commit-plan.
-      See: devlog 2026-09-19, small hours.
+      See: devlog 2026-09-19, small hours; 2026-09-30.
+
+- [ ] Number the concept chapters' sections (2026-09-30).
+      Context: their `##` headings are unnumbered, and nothing points
+      into a chapter's section today. The chapters are the canonical
+      text every run holds a copy of, so numbering them would change
+      every copy for no reader yet
+      (`docs/conventions/conventions/` §3.2 numbers by form).
+      Trigger: the first pointer that needs a section of a chapter.
+      See: devlog 2026-09-30, numbered parts.
 
 - [ ] Does the playbook need a convention of its own? (2026-09-29,
       the reviewer)
