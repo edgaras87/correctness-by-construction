@@ -11,7 +11,7 @@ then it says only what is true of the repo as it stands:
 - Nothing in it points at what is gone: step 2's audit of a
   `delivery/README.md` section, a delta list and a re-verify duty;
   the container's provenance in that README; a "first-session
-  comment".
+  comment"; the birth scenario and the birth fills.
 - The prompt names one pin, as its own first sentence does.
 - The reader's checklist at the end agrees with the checks above
   it: the entry files arrive composed, and there is one birth entry.
@@ -45,6 +45,15 @@ nothing".
 - The reader's checklist loses "its own CLAUDE.md" and "the
   bundle's birth entry reconstructed".
 - Step 4's comment cites ADR-0036 and ADR-0029 bare.
+- The birth scenario and the birth fills, deleted on 2026-09-06
+  with the assembly path (ADR-0016), leave the three places that
+  still name them: what is deliberately not delivered, the answer
+  sheet the stay-inside line guards, and the checklist's excluded
+  list. The rule each served stays: nothing delivered encodes a
+  prior run's conclusions.
+
+Widened at its start: the plan first missed these three, which a
+check of what the file names against the tree found.
 
 **4. `docs(installs): pure-seed's history goes`**
 The 75-line header comment goes. Its nine revisions are ADR-0016,
