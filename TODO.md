@@ -163,6 +163,17 @@
       reference opens.
       See: devlog 2026-09-24.
 
+- [ ] Read `delivery/README.md` against ARCHITECTURE §2
+      (2026-09-30).
+      Context: since the one-map set, the map's §2 describes the
+      delivery, and `delivery/README.md`, 207 lines, may retell it.
+      A reading on 2026-09-30 fixed only a wrong count; it still
+      calls Release's facts "kit facts", and it holds the birth
+      mapping and the container's exceptions.
+      Trigger: the next change to `delivery/`, or the birth that
+      writes `exchange-birth`, whichever comes first.
+      See: devlog 2026-09-30, the index.
+
 - [ ] Watch whether the next newborn adds the ground-must-be-up
       rule to its entry file unasked (2026-09-04, ADR-0013's scope
       boundary).

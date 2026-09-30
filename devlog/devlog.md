@@ -6,6 +6,44 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-30, late  (the index — seven commits, one revision)
+
+`the-index-2026-09-30`, cut from `main` at `f6a2ad8`.
+
+- **The index points now.** `docs/conventions/README.md` is the
+  conventions manual's own "index": the list of nine and the chain.
+  Its Artifacts column restated each manual's list, and one row had
+  drifted. Its chain pointed at "commit-plan §4 and §5", sections the
+  manual does not have; they are the skill's. It keeps the list and
+  the chain, and points to each manual and to ARCHITECTURE §2.3.
+- **I replaced one restatement with another, and the reviewer
+  asked.** My first version turned the column into "ships to a run",
+  and the reviewer asked whether the README repeats ARCHITECTURE. It
+  did: which conventions ship is §2.3's. The column went, and the
+  plan was revised first.
+- **The conventions manual's §4 was out of date three ways.** It
+  named a "shipped-conventions table" in `delivery/README.md` that
+  never existed. It asked for a registry entry and a copied skill,
+  which ADR-0042 ended and the split set's sweep missed. And it left
+  out ARCHITECTURE, whose counts nothing updated. It also named "the
+  master" twice as a description, which my one-map sweep missed
+  because it searched for the file name, not the word.
+- **One list, two homes, by necessity.** For us the index is the
+  home of the list of conventions. The container's decisions stub
+  keeps its own in the birth entry, because it ships, and a run
+  cannot open our index.
+- **`delivery/README.md`** said "seven convention skills and the rules
+  file"; the container ships three and two. Its wider reading
+  against the map is in TODO, on a trigger.
+- **No rule for directory READMEs.** The one lived failure, the
+  index gathering rules, is answered by ADR-0032 and ADR-0039.
+
+Resume: on `the-index-2026-09-30`, closed at the next commit, not
+pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.**
+2. **The imperative test and the 50-character limit**, together.
+
 ## 2026-09-30, after the last  (one map — eight commits, no revision)
 
 `one-map-2026-09-30`, cut from `main` at `7c9973a`.
