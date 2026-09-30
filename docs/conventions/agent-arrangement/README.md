@@ -9,17 +9,18 @@ file may hold.**
 
 ## What it is for
 
-So that an agent works in a project the way the project needs,
-from the first session, and the project can shed the arrangement
-and keep its work. The failure it answers is measured: an entry
-file that restated convention rules "so they are always in
-context" grew to 98 lines across two files holding three
-disagreeing copies of one rule (`docs/models/agent.md` §12, M1).
-Adopted with the container (CBC ADR-0038, 1c). Lived since: every
-run was born with the arrangement; run 3 moved its entry file under
-`.claude/` and it was a pure rename, content untouched, the tool
-reading it at the new address from the next session — which is why
-the container now ships it there.
+So that an agent works in a project the way the project needs, from
+the first session, and the project can shed the arrangement and keep
+its work. The failure it answers was measured before it was adopted,
+in the handbook's entry file, and is reported here, since this repo
+cannot re-check it: restating convention rules "so they are always
+in context" grew the entry file to 98 lines, split across two files,
+with three disagreeing copies of one rule. Adopted with the
+container (CBC ADR-0038, 1c). Lived since: every run was born with
+the arrangement; run 3 moved its entry file under `.claude/` and it
+was a pure rename, content untouched, the tool reading it at the new
+address from the next session — which is why the container now ships
+it there.
 
 ## What this is made usable as
 
@@ -157,8 +158,7 @@ same three the stub's guard comment states:
   the rule rides in a skill or a stub, it is not repeated here.
   **It points; it never restates**: a summary is lossy on arrival,
   and then two files disagree while both look current (model claim
-  M1, measured once: 98 lines, two files, three disagreeing copies
-  of one rule).
+  M1).
 - **No moment.** A line with a moment goes where the moment is — the
   record's stub, README, a skill, or, for a rule true only under one
   directory, a rules file with a `paths:` list (§3) — and is read
