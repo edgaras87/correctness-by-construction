@@ -2,13 +2,15 @@
 
 ## Summary — the state after all commits
 
-`docs/conventions/README.md`, the index, points and does not
-restate. It holds what only it can hold: the list of names, each
-with its manual's path, and the chain. Which conventions ship is
-ARCHITECTURE §2.3's, and what each is made usable as is its
-manual's. Its chain names the commit-plan skill's §4 and §5,
-which exist, instead of the manual's, which do not, and lists every
-domain skill.
+`docs/conventions/README.md`, the index, is the home of the chain
+and of nothing else: how the conventions relate across a piece of
+work. It is what the reviewer called a small architecture at step
+5's boundary, a local map, though the word waits for a pair before
+it is written down. It carries no list, no count and no description.
+The folder shows the names, ARCHITECTURE §1.2 says what they are and
+how many, and each manual says what it is and ships. Its chain names
+the commit-plan skill's §4 and §5, which exist, instead of the
+manual's, which do not, and lists every domain skill.
 
 The conventions manual says what is true after ADR-0042 and
 ADR-0044. Adding a convention asks for no registry entry and no
@@ -65,7 +67,33 @@ against ARCHITECTURE §2, which it may retell since the one-map set.
 Its trigger is the next change to `delivery/`, or the birth that
 writes `exchange-birth`, whichever comes first.
 
-**6. `docs(agent): close commit plan for the index`**
+**6. `docs(conventions): the index is the chain`**
+The reviewer's question at step 5's boundary: what does "the nine"
+give? Names and paths, which the folder already shows. "The nine"
+goes. The opening says the README is where the conventions' chain
+lives, and points to ARCHITECTURE §1.2 for the list. The last
+paragraph loses its count and names: "the remaining six …" becomes
+"the other conventions", so that adding one changes nothing here
+unless it joins the chain.
+
+**7. `docs: the index's pointers follow`**
+- The conventions manual lists the index as "the table and the
+  chain"; it becomes "the chain".
+- §4 step 4, "A row in the index's table", goes: a new convention
+  touches the index only when it takes part in the chain.
+- ARCHITECTURE §1.2's "The nine, and how they relate" becomes "How
+  they relate".
+- The codemap's "nine manuals and their index" keeps its count,
+  which is the map's, and calls the index what it holds.
+
+**8. `docs: records carry the index's second pass`**
+The session's devlog entry gains the second pass. TODO's
+`delivery/README.md` item gains the idea: a local map, like the
+conventions index. If its reading lands that way, the pair is
+there, and "local map" and its rule go into project-recording §8
+and ARCHITECTURE's words.
+
+**9. `docs(agent): close commit plan for the index`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
@@ -75,9 +103,12 @@ Deletes this file. The body records what diverged.
   decisions stub point at the index. The stub cannot: it ships, and
   a shipped file cannot point into a repo its reader cannot open.
   `delivery/README.md` holds no such list.
-- **No rule for directory READMEs.** The one lived failure, the
-  index gathering rules, is answered by ADR-0032 and ADR-0039, and
-  restating is §3.1's. The trigger is a second README drifting on its
-  own.
+- **No rule for directory READMEs yet.** A README that maps how an
+  area's parts relate is a local map, and so is this one. The file
+  keeps the name `README.md`, because that is what a reader sees on
+  arriving at the folder, and the name is the tool's while the
+  content is ours (agent-arrangement §1). The rule and the word wait
+  for a pair: `delivery/README.md`'s reading is the second candidate.
+  `temp/README.md` holds rules, not a map, and is not one.
 - **`delivery/README.md`'s wider reading waits.** Only its wrong count
   is fixed here.
