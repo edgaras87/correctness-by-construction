@@ -91,7 +91,7 @@ Findings from reading it against our tree:
 - **F19** — two items we told the run we hold have no home here: the
   facility paragraph (F11, held 2026-09-17) and framing steps as
   commit series (F13, held 2026-09-20). No TODO line, no trigger;
-  ADR-0033 mentions the first in passing.
+  ADR-0033 mentions the first in passing. **Fixed**, `4918882`.
 
 ## 4. What the run taught us that we had not thought of
 
@@ -107,14 +107,16 @@ Proposed; the reviewer's.
   the same path, as its rule taken and reshaped — or ships under
   another name. Proposed: it lands over it, and the note says so by
   name; the run's SL-2 example and `temp/` path are its own and stay
-  in its records. Gates W1.
+  in its records. Gates W1. **Settled** by the reviewer, 2026-09-30,
+  as proposed.
 - **D2** — F8, F9, F10: fold-backs addressed to the run's
   retrospective, which has not run. Proposed: held until it runs;
-  nothing owed now. Gates W1.
+  nothing owed now. Gates W1. **Settled** by the reviewer,
+  2026-09-30, as proposed.
 - **D3** — F5: evaluate the slice-record shape now, or keep it held
   under our TODO "Decide our own side of shapes", whose trigger is a
   first shape ours to hold. Proposed: held, with that trigger.
-  Gates W1.
+  Gates W1. **Settled** by the reviewer, 2026-09-30, as proposed.
 
 ## 6. The work
 
@@ -134,13 +136,14 @@ The verdicts that need no decision, from records here:
   shapes line, which reaches a run at its next birth, since a plan
   is the run's own.
 - F11 — held still: the run says whether SL-2 leaned on the
-  paragraph. Its home here is W2.
+  paragraph. Its home here is TODO, Later.
 - F12 — taken: a sweep of every old path and number is now
   commit-plan's rule.
 - F13 — the absence rung, held, in our TODO with its trigger; the
   Spring slice reference, a baseline, sorted at run 3's Release
-  reading; framing steps as commit series, held, its home W2; the
-  imperative test, due in our TODO now.
+  reading; framing steps as commit series, due in our TODO now, its
+  promised trigger having fired unnoticed; the imperative test, due
+  in our TODO now.
 
 Work:
 
@@ -152,7 +155,7 @@ Work:
   since the pin. One commit for the note, the staging on the word.
 - **W2** — F19: a TODO line each for the two held items, with the
   triggers we gave the run. One commit, before W1, so the note's
-  "held" points at something.
+  "held" points at something. **Done**, `4918882`.
 - **W3** — §4 and §7 here: a take can land on a run's own path, and
   an overtaken reading leaves asks unanswered. Proposed: a TODO line
   each, weighed later; not fixed in this reading.
