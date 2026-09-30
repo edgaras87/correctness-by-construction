@@ -23,9 +23,9 @@ foundation: the exchange convention
    copies too, and are never edited here — nothing in a chapter is
    run, so nothing in it can fail a step; a lesson about one is a
    prose line in the backlog. The records — `PLAN`, `TODO`, the
-   devlog, the entry file — were delivered once as stubs and are
-   this run's own; they are not copies and this file does not
-   govern them.
+   devlog — were delivered once as stubs, and the entry file once
+   composed; all are this run's own, not copies, and this file does
+   not govern them.
 
    **A copy is never renamed or deleted here.** Its delivered path
    is its identity for the take: a renamed copy becomes two files at
