@@ -52,10 +52,15 @@ ARCHITECTURE §2.5 gains the runs: ours by ordinal, each run's own
 name, where it sits on disk, and which one is live. "Run 3,
 `never-oversold`, is the live one" folds into it. ARCHITECTURE's
 words gain **newborn**, a run at its birth, from its seed until its
-agent finishes the birth, holding our files and no pin of its own,
-beside **run**. The word is used correctly in about fifteen live
-places and defined in none. §3.7 of the exchange points to the names
-from here.
+agent finishes the birth, beside **run**. It holds what the seed put
+there, one pin included, and no earlier state. The word is used
+correctly in about fifteen live places and defined in none. §3.7 of
+the exchange points to the names from here.
+
+A check at step 5's start: this plan first said a newborn holds no
+pin. The seed names the pin in every commit and fills it into the
+birth entry. What a newborn lacks is earlier state, which is what
+step 4 already says.
 
 **6. `docs(temp): temp/README says what temp/ is`**
 The three rules and the table leave, now that each has its home, and
