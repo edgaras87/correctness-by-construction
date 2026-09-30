@@ -27,8 +27,13 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
    against its own tree:
 
    ```sh
-   git diff -M --stat P..HEAD -- delivery/ concept/
+   git diff -M --stat P..HEAD -- concept/ \
+     'delivery/*/.claude/skills/*' 'delivery/*/.claude/rules/*'
    ```
+
+   Those are the copies, and only they travel after birth
+   (`docs/conventions/exchange/` §3.2); the trailing `/*` is what
+   makes git match inside them.
 
    Every path that differs, is new, is gone, or moved — deletions
    and renames named as such. The run will diff the staging against
@@ -79,17 +84,25 @@ reports, and waits for the word before 2.3.
    ls "$run"/temp                   # must be empty
    ```
 
-2. **Overlay the groups the run takes**, after checking that no path
-   is claimed twice:
+2. **Overlay the copies of the groups the run takes**, after checking
+   that no path is claimed twice:
 
    ```sh
    groups="container method spring-postgres"   # the run's groups
-   for g in $groups; do (cd delivery/$g && find . -type f); done \
+   copies() { (cd delivery/$1 && find .claude/skills .claude/rules \
+                -type f 2>/dev/null); }
+   for g in $groups; do copies $g; done \
      | sort | uniq -d                          # must print nothing
    stage=$(mktemp -d)
-   for g in $groups; do cp -r delivery/$g/. "$stage"/; done
+   for g in $groups; do
+     copies $g | (cd delivery/$g && xargs cp --parents -t "$stage")
+   done
    mkdir -p "$stage"/docs && cp -r concept "$stage"/docs/concept
    ```
+
+   Each group's `.claude/skills/` and `.claude/rules/`, and nothing
+   else of it: the container's records, entry files, decisions log
+   and hygiene files went at birth and are the run's.
 
    `concept/` is the one path that is not a mirror, and this is the
    one line that says so.
