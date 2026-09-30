@@ -29,8 +29,8 @@ Nothing shipped of its own; what a repo holds is:
 - **`.claude/rules/convention-manual.md` — the shape of a manual,
   the deliverer's**, loading whenever a manual is opened;
 - **the index, `docs/conventions/README.md`** — a pointer: the
-  table and the chain, relations only (CBC ADR-0032), and one line
-  sending a reader to `docs/conventions/conventions/`.
+  chain, relations only (CBC ADR-0032), and one line sending a
+  reader here and to `ARCHITECTURE.md` §1.2.
 
 What derives from this page is that list. A change here walks it;
 a change forced in one of them is checked back against this page.
@@ -280,7 +280,8 @@ shapes — and not as the index once said:
    entering or leaving the container updates the birth entry in the
    container's decisions-log stub, in the same commit: a run holds
    that list, and cannot open this repo's.
-4. A row in the index's table.
+4. The index's chain, only if the convention acts in sequence
+   during a piece of work.
 5. `ARCHITECTURE.md`: §1.2's count and what the manuals cover, §2.3's
    line on which convention owns which container file, and the
    codemap's count.
@@ -324,7 +325,7 @@ stands on has to travel with the file.
 
 ## Where to look
 
-- The index and the chain: `docs/conventions/README.md`.
+- The chain: `docs/conventions/README.md`.
 - The rule for every description: `ARCHITECTURE.md` §3.
 - What `foundation` holds for each kind of file: the exchange,
   `docs/conventions/exchange/` §3.

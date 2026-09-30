@@ -87,8 +87,8 @@ conventions are about how a repo is kept.
 
 - **What a convention is, its two parts, and that a manual never
   ships** — `docs/conventions/conventions/` §1.
-- **The nine, and how they relate** — `docs/conventions/README.md`,
-  the index.
+- **How they hand work to each other** —
+  `docs/conventions/README.md`, the index.
 
 ## 2. The delivery — what a project gets, and where it goes
 
