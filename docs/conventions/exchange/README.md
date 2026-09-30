@@ -247,8 +247,7 @@ Nothing that needs our repo to verify: a note that reports facts
 about our tree gives the run a hedge it cannot close. Where a claim
 cannot avoid it — a thin note, which ships no copy; material
 outside the delivery; a negative claim, which is about our whole
-tree; anything said to a newborn, which holds no earlier state for
-"this changed" to land on — the note says so, in a clause.
+tree — the note says so, in a clause.
 
 No ADR number, no path in this repo and no word of this repo's own
 vocabulary, in a note or in a prompt: the run cannot see this repo,

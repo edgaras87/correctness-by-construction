@@ -292,6 +292,13 @@ source repos hold the answer sheet (the template, the scenario,
 the baselines), and the permission prompt on any outside read is
 the human's hard backstop behind it.
 
+Anything said to the newborn after this prompt, at a review stop or
+in an answer, is told text, held to the note's rules
+(`docs/conventions/exchange/` §3.7). One case is the birth's own: a
+newborn holds no earlier state, so it cannot check "this changed
+since" — the claim has nothing to land on. Such a claim says so, in
+a clause.
+
 **A correct seed is checkable** — before the agent starts, every
 item is a verifiable fact:
 
