@@ -212,11 +212,12 @@ harness delivers, not the file: HTML comments are dropped on load (model
 nothing per task and are read when the file is opened to edit it — the
 moment they govern. If what remains is longer than a screen, something
 in it belongs in a convention, a record or a skill; shrinking it is
-maintenance, not tidying. Noticing that has no moment of its own, so the
-one moment that re-reads the file is the project retrospective: the
-plan's questionnaire asks it, and every line passes the three tests
-again or leaves — the same move the decisions log makes for its
-entries.
+maintenance, not tidying. Noticing that has no moment of its own, so a
+run re-reads the file at its project retrospective: the plan's
+questionnaire asks it, and every line passes the three tests again or
+leaves — the same move a run's decisions log makes for its entries.
+The deliverer has no project end, and re-reads it at each milestone's
+close instead, as a gate item (CBC ADR-0041).
 
 ## 3. `.claude/`
 
@@ -316,13 +317,10 @@ on the file is the trigger.
 Not a skill, because the failure guarded against is a noticing
 failure: told "remember X", an agent writes X into the entry file
 where it stands, and a skill fires only on recognising the moment.
-Not paid at ambient cost
-either: the harness drops HTML comments from the entry file on
-load, so the comments
-are read when the file is opened to edit it and cost nothing on any
-other task. That is why §2's size rule counts the lines
-the harness delivers; a long guard is free, a long records table is
-not.
+Not paid at ambient cost either: the comments are dropped on load
+(§2, *Size*), so they are read when the file is opened to edit it
+and cost nothing on any other task. A long guard is free; a long
+records table is not.
 
 A rule for an arrangement file goes in that file's stub comment,
 not here and not in the entry file's prose. A project meets this
