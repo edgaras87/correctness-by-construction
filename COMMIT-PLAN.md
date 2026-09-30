@@ -33,24 +33,40 @@ from (ADR-0020 for the first). The second merges with what §3.7
 already says about verdicts on what a run cannot check.
 
 **3. `chore(agent): exchange-deliver writes by them`**
-The skill's §1 gains the three rules as lines, where the note is
-written. It is an agent file, so it gets a commit of its own.
+The skill's §1 gains the rules as lines, where the note is written.
+It is an agent file, so it gets a commit of its own. Only the cases
+an update can meet are listed: a thin note, material outside the
+delivery, a negative claim. An update never goes to a newborn.
 
-**4. `docs: the runs' names go on the map`**
+**4. `docs: the newborn case goes to the birth`**
+The reviewer's question at step 3's boundary: why does an update
+note mention a newborn? It should not. Step 2 copied rule 2's four
+cases into the exchange's §3.7, which is about the update's note,
+and one of them, "anything said to a newborn", happens only at
+birth. It leaves §3.7, and goes into `delivery/installs/pure-seed.md`
+step 6, where the birth first tells the newborn anything. A newborn
+holds no pin, so "this changed since" has nothing to land on.
+
+**5. `docs: the runs go on the map`**
 ARCHITECTURE §2.5 gains the runs: ours by ordinal, each run's own
 name, where it sits on disk, and which one is live. "Run 3,
-`never-oversold`, is the live one" folds into it.
+`never-oversold`, is the live one" folds into it. ARCHITECTURE's
+words gain **newborn**, a run at its birth, from its seed until its
+agent finishes the birth, holding our files and no pin of its own,
+beside **run**. The word is used correctly in about fifteen live
+places and defined in none. §3.7 of the exchange points to the names
+from here.
 
-**5. `docs(temp): temp/README says what temp/ is`**
+**6. `docs(temp): temp/README says what temp/ is`**
 The three rules and the table leave, now that each has its home, and
 so does the history. What stays is what `temp/` is.
 
-**6. `docs: devlog carries temp/README`**
+**7. `docs: devlog carries temp/README`**
 The session's entry. The TODO item on `temp/` in the container gains
 a line: the trimmed README is the seed of whatever convention comes
 to own `temp/`.
 
-**7. `docs(agent): close commit plan for temp/README`**
+**8. `docs(agent): close commit plan for temp/README`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
