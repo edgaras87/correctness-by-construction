@@ -82,7 +82,7 @@ opening it at the moment of use.
 - Cite no decision mid-sentence. A skill lists the decisions it
   rests on once, in a footer headed *Decisions*, each as
   `CBC ADR-nnnn` — the tag is project-recording's rule,
-  `docs/conventions/project-recording/` §3, and a decision this
+  `docs/conventions/project-recording/` §3.5, and a decision this
   repo inherited is adopted before a shipped file cites it (CBC
   ADR-0038). A stub cites nothing.
 - Say what a rule is not only when a consumer lived the misreading,

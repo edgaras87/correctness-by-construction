@@ -79,7 +79,7 @@ is the devlog's. For the same reasons its plan has no Retrospective,
 whose two jobs — folding lessons back and re-reading the entry file
 — close each milestone's gate instead; no "Discovered along the
 way", since TODO takes a finding at once; and no decision index,
-since `docs/adr/` lists itself (§3's index is the run's).
+since `docs/adr/` lists itself (§3.3's index is the run's).
 
 *Found 2026-09-29: from 2026-09-20, with Step 10 in progress, 203
 commits, two of them touching `PLAN.md`; one step written after
@@ -149,19 +149,26 @@ they branch, review, and roll back together with it.
 
 ## 2. PLAN.md — the spine
 
-**What.** The gated step plan: the full journey sketched coarsely, the next
-1–2 steps detailed finely (rolling wave), each step with exit criteria
-(gates) and a live status.
+### 2.1 What
 
-**Why.** It answers "where are we, what's next, and what does *done* mean"
-at any moment — the three questions that otherwise live only in someone's
-head. Gates prevent steps from being declared finished by fatigue. The
-completed plan is also the raw material for the retrospective and the
-playbook.
+The gated step plan: the full journey sketched coarsely, the next
+1–2 steps detailed finely (rolling wave), each step with exit
+criteria (gates) and a live status.
 
-**Where.** Repo root, `PLAN.md`. One per project.
+### 2.2 Why
 
-**How.**
+It answers "where are we, what's next, and what does *done* mean" at
+any moment — the three questions that otherwise live only in
+someone's head. Gates prevent steps from being declared finished by
+fatigue. The completed plan is also the raw material for the
+retrospective and the playbook.
+
+### 2.3 Where
+
+Repo root, `PLAN.md`. One per project.
+
+### 2.4 How
+
 - Statuses: `[ ]` planned, `[~]` in progress, `[x]` done (+date), `[!]`
   blocked (+what unblocks it), `[-]` skipped (+why).
 - A gate is a checklist of verifiable facts, not intentions: "tests pass on
@@ -172,32 +179,43 @@ playbook.
 - Ends with a "Discovered along the way" holding pen and a Retrospective
   section (see Playbook, §9).
 
-**When.** Created at project start; its steps arrive whole from a
-playbook at birth and are confirmed at Framing — the middles written
-fresh there when the project was born without one (§9);
-touched every working session — updating it *is* part of
-the work, not paperwork after it.
+### 2.5 When
 
-**Anti-patterns.** Steps without gates (it's just a wish list); detailing
-step 9 before step 2 is done; letting statuses go stale so the plan lies.
+Created at project start; its steps arrive whole from a playbook at
+birth and are confirmed at Framing — the middles written fresh there
+when the project was born without one (§9); touched every working
+session — updating it *is* part of the work, not paperwork after it.
+
+### 2.6 Anti-patterns
+
+Steps without gates (it's just a wish list); detailing step 9 before
+step 2 is done; letting statuses go stale so the plan lies.
 
 ---
 
 ## 3. ADR — Architecture Decision Records
 
-**What.** One short document per significant decision: the context that
-forced it, options considered, the decision, and its consequences —
+### 3.1 What
+
+One short document per significant decision: the context that forced
+it, options considered, the decision, and its consequences —
 including the downsides knowingly accepted.
 
-**Why.** Code shows *what* was built; ADRs preserve *why*. Six months
-later, "why is this Postgres and not Mongo" has an answer, and — equally
-important — "we already considered that and rejected it because…" stops
-the same debate from recurring.
+### 3.2 Why
 
-**Where.** `docs/adr/NNNN-short-title.md`, numbered sequentially, never
+Code shows *what* was built; ADRs preserve *why*. Six months later,
+"why is this Postgres and not Mongo" has an answer, and — equally
+important — "we already considered that and rejected it because…"
+stops the same debate from recurring.
+
+### 3.3 Where
+
+`docs/adr/NNNN-short-title.md`, numbered sequentially, never
 renumbered. Indexed with one line each in PLAN.md's Decision index.
 
-**How.** The Nygard template:
+### 3.4 How
+
+The Nygard template:
 
 ```markdown
 # 0004. Use PostgreSQL for primary storage
@@ -227,41 +245,53 @@ Bad: schema migrations become a discipline we must maintain.
   of database, framework, sync-vs-async, build-vs-buy: yes.
 - Keep it under a page. An ADR you won't write because it's heavy is worse
   than a terse one.
-- **A number is local to one repo.** A bare `ADR-nnnn` names the
-  decision in the repo where it is read. A reference to another
-  repo's decision carries that repo's tag before the number —
-  `CBC ADR-0012`, as a run cites the deliverer's — a short upper-case
-  name each repo declares once in its README's decisions row (§7).
-  A document written to be read in another repo carries the tag on
-  every citation (CBC ADR-0020).
 
-**When.** At the moment the decision is made — typically when a gate in the
-plan forces it. Writing it *before* deciding (status: Proposed) is even
-better; the writing often changes the decision.
+### 3.5 A number is local to one repo
 
-**Anti-patterns.** Editing old ADRs; ADRs so long nobody writes them;
-recording the decision but not the rejected options (the rejections are
-half the value).
+A bare `ADR-nnnn` names the decision in the repo where it is read. A
+reference to another repo's decision carries that repo's tag before
+the number — `CBC ADR-0012`, as a run cites the deliverer's — a
+short upper-case name each repo declares once in its README's
+decisions row (§7). A document written to be read in another repo
+carries the tag on every citation (CBC ADR-0020).
+
+### 3.6 When
+
+At the moment the decision is made — typically when a gate in the
+plan forces it. Writing it *before* deciding (status: Proposed) is
+even better; the writing often changes the decision.
+
+### 3.7 Anti-patterns
+
+Editing old ADRs; ADRs so long nobody writes them; recording the
+decision but not the rejected options (the rejections are half the
+value).
 
 ---
 
 ## 4. Devlog — the engineering journal
 
-**What.** Dated, informal entries: what was worked on, what was tried,
-what failed and why, open questions, hunches. The lab notebook of the
+### 4.1 What
+
+Dated, informal entries: what was worked on, what was tried, what
+failed and why, open questions, hunches. The lab notebook of the
 project.
 
-**Why.** Three payoffs: (1) dead ends are recorded, so they aren't
-re-explored — "tried caching at the repo layer, caused stale reads" saves
-the next attempt; (2) resuming after a break takes minutes instead of an
-hour of re-reading code; (3) it is the raw material that gets distilled
-upward — a devlog struggle becomes an ADR's context, a retro lesson, a
-playbook warning.
+### 4.2 Why
 
-**Where.** `devlog/2026-08.md` (file per month) or a single `devlog.md`
-for small projects. Newest entries on top.
+Three payoffs: (1) dead ends are recorded, so they aren't
+re-explored — "tried caching at the repo layer, caused stale reads"
+saves the next attempt; (2) resuming after a break takes minutes
+instead of an hour of re-reading code; (3) it is the raw material
+that gets distilled upward — a devlog struggle becomes an ADR's
+context, a retro lesson, a playbook warning.
 
-**How.**
+### 4.3 Where
+
+`devlog/2026-08.md` (file per month) or a single `devlog.md` for
+small projects. Newest entries on top.
+
+### 4.4 How
 
 ```markdown
 ## 2026-08-21  (Step 2: data model)
@@ -283,31 +313,41 @@ for small projects. Newest entries on top.
   exists. It marks a place in the work, not a time: sessions resume
   after walks, days or weeks.
 
-**When.** Every working session, 2–5 minutes, ideally as you go or at
-session end. Never retroactively "cleaned up."
+### 4.5 When
 
-**Anti-patterns.** Polishing it (kills the habit); recording only successes
-(the failures are the valuable part); letting it replace ADRs (decisions
+Every working session, 2–5 minutes, ideally as you go or at session
+end. Never retroactively "cleaned up."
+
+### 4.6 Anti-patterns
+
+Polishing it (kills the habit); recording only successes (the
+failures are the valuable part); letting it replace ADRs (decisions
 must still be promoted to their durable form).
 
 ---
 
 ## 5. TODO / backlog
 
-**What.** Everything known but not done: upcoming work not yet in a plan
-step, bugs, ideas, and consciously deferred problems.
+### 5.1 What
 
-**Why.** An open loop held in the head costs attention; written down and
-triaged, it costs nothing until its time comes. It also makes deferral
-*explicit* — "we know about this and chose not yet" is a decision, and
-this is where it's recorded.
+Everything known but not done: upcoming work not yet in a plan step,
+bugs, ideas, and consciously deferred problems.
 
-**Where.** `TODO.md` in the repo root for small/solo projects; an issue
-tracker (GitHub Issues, Linear, Jira) when there's a team — same
-structure, different tool. Inline `TODO:`/`FIXME:` code comments are
-allowed only with an issue/TODO reference attached, otherwise they rot.
+### 5.2 Why
 
-**How.**
+An open loop held in the head costs attention; written down and
+triaged, it costs nothing until its time comes. It also makes
+deferral *explicit* — "we know about this and chose not yet" is a
+decision, and this is where it's recorded.
+
+### 5.3 Where
+
+`TODO.md` in the repo root for small/solo projects; an issue tracker
+(GitHub Issues, Linear, Jira) when there's a team — same structure,
+different tool. Inline `TODO:`/`FIXME:` code comments are allowed
+only with an issue/TODO reference attached, otherwise they rot.
+
+### 5.4 How
 
 ```markdown
 # TODO
@@ -370,33 +410,45 @@ The deliverer's was pruned and reshaped to this form, and the cap
 found on it: three lines cut meaning and lost a fact (CBC
 ADR-0040).*
 
-**When.** Item added the moment it's discovered (so it stops occupying your
-head); triaged when closing a step (§11, rule 3: moments, not schedules).
+### 5.5 When
 
-**Anti-patterns.** Using it as the plan (it has no gates or sequence);
-never deleting; closed entries kept whole; dated updates stacked on an
-open item; inline code TODOs with no tracked counterpart.
+Item added the moment it's discovered (so it stops occupying your
+head); triaged when closing a step (§11, rule 3: moments, not
+schedules).
+
+### 5.6 Anti-patterns
+
+Using it as the plan (it has no gates or sequence); never deleting;
+closed entries kept whole; dated updates stacked on an open item;
+inline code TODOs with no tracked counterpart.
 
 ---
 
 ## 6. CHANGELOG.md
 
-**What.** Human-written record of notable changes per released version,
-addressed to *users* of the project (which may be your future self or
-another team), not its developers.
+### 6.1 What
 
-**Why.** "What changed between 1.3 and 1.5, and will it break me?" must be
-answerable without reading commit history. Commits are too granular and
-developer-voiced; the changelog is the curated, user-voiced digest.
+Human-written record of notable changes per released version,
+addressed to *users* of the project (which may be your future self
+or another team), not its developers.
 
-**Where.** `CHANGELOG.md` in the repo root. Format: Keep a Changelog
+### 6.2 Why
+
+"What changed between 1.3 and 1.5, and will it break me?" must be
+answerable without reading commit history. Commits are too granular
+and developer-voiced; the changelog is the curated, user-voiced
+digest.
+
+### 6.3 Where
+
+`CHANGELOG.md` in the repo root. Format: Keep a Changelog
 (keepachangelog.com) with Semantic Versioning. What a version *is*
-depends on the repo type — an application releases SemVer versions; a
-concept or docs repo versions something else, and says what at Framing.
-The discipline (curated, user-voiced, written per change) carries
-unchanged.
+depends on the repo type — an application releases SemVer versions;
+a concept or docs repo versions something else, and says what at
+Framing. The discipline (curated, user-voiced, written per change)
+carries unchanged.
 
-**How.**
+### 6.4 How
 
 ```markdown
 # Changelog
@@ -420,49 +472,66 @@ unchanged.
   written *when the change is made*, not reconstructed at release time.
 - Breaking changes get called out explicitly and drive the major version.
 
-**When.** A line whenever a user-visible change merges — natural moment is
+### 6.5 When
+
+A line whenever a user-visible change merges — natural moment is
 when a plan step's gate closes.
 
-**Anti-patterns.** Dumping git log into it; writing it from memory at
-release time; developer-speak ("refactored OrderService") instead of
-user-speak ("order creation is ~3x faster").
+### 6.6 Anti-patterns
+
+Dumping git log into it; writing it from memory at release time;
+developer-speak ("refactored OrderService") instead of user-speak
+("order creation is ~3x faster").
 
 ---
 
 ## 7. README.md — the front door
 
-**What.** What this project is, who it's for, how to run it, and where
+### 7.1 What
+
+What this project is, who it's for, how to run it, and where
 everything else is.
 
-**Why.** It's the entry point for every newcomer including future-you.
-Its quality determines whether the rest of the record system gets found
+### 7.2 Why
+
+It's the entry point for every newcomer including future-you. Its
+quality determines whether the rest of the record system gets found
 at all.
 
-**Where.** Repo root, mandatory.
+### 7.3 Where
 
-**How.** Minimum sections, true for every project type: one-paragraph
-purpose; a "Project records" section linking PLAN, ARCHITECTURE, ADRs,
-CHANGELOG — the decisions row also declares the repo's tag, the name
-its decisions are cited by from another repo (§3). A project that runs
-adds: prerequisites; the *one command* to build/run from a clean
-clone; how to run tests — each arriving at the moment it becomes true
-(see When), not at birth. Keep it short and current — a
-wrong README is worse than a sparse one, so anything that changes
-often (detailed status) belongs in PLAN.md and is only *linked* from
-here.
+Repo root, mandatory.
 
-**When.** Stubbed at project start; thereafter, when something became true
-that the outside should see — projection follows truth, so the README never
-claims what is not yet true (CBC ADR-0038, 1d). The mechanism is a gate item
-where relevant: a step whose gate makes something projectable true includes
-updating its projection, exactly as record upkeep is already expressed in
-lived gates ("ARCHITECTURE current"). Never a standing item on every gate —
-most steps make nothing projectable true, and a usually-vacuous item trains
-rubber-stamping. The Release gate includes "README verified on a clean
-machine."
+### 7.4 How
 
-**Anti-patterns.** Duplicating live status into it; setup instructions
-that only work on the author's machine.
+Minimum sections, true for every project type: one-paragraph
+purpose; a "Project records" section linking PLAN, ARCHITECTURE,
+ADRs, CHANGELOG — the decisions row also declares the repo's tag,
+the name its decisions are cited by from another repo (§3.5). A
+project that runs adds: prerequisites; the *one command* to
+build/run from a clean clone; how to run tests — each arriving at
+the moment it becomes true (see When), not at birth. Keep it short
+and current — a wrong README is worse than a sparse one, so anything
+that changes often (detailed status) belongs in PLAN.md and is only
+*linked* from here.
+
+### 7.5 When
+
+Stubbed at project start; thereafter, when something became true
+that the outside should see — projection follows truth, so the
+README never claims what is not yet true (CBC ADR-0038, 1d). The
+mechanism is a gate item where relevant: a step whose gate makes
+something projectable true includes updating its projection, exactly
+as record upkeep is already expressed in lived gates ("ARCHITECTURE
+current"). Never a standing item on every gate — most steps make
+nothing projectable true, and a usually-vacuous item trains
+rubber-stamping. The Release gate includes "README verified on a
+clean machine."
+
+### 7.6 Anti-patterns
+
+Duplicating live status into it; setup instructions that only work
+on the author's machine.
 
 README is the front door for people; the entry file is the one for
 agents, `docs/conventions/agent-arrangement/` §2. Two audiences, two
@@ -472,54 +541,72 @@ files, no shared text.
 
 ## 8. ARCHITECTURE.md — the map of current state
 
-**What.** A short prose description of the system as it *is now*: the main
-components, their responsibilities, how they talk to each other, where the
-important invariants live, and where in the codebase each piece is found.
+### 8.1 What
 
-**Why.** ADRs are a history of individual choices; this is the synthesized
-present. It's the difference between a stack of route decisions and a map.
-Newcomers read it second, right after the README. (Convention popularized
-by matklad's "ARCHITECTURE.md" essay.)
+A short prose description of the system as it *is now*: the main
+components, their responsibilities, how they talk to each other,
+where the important invariants live, and where in the codebase each
+piece is found.
 
-**Where.** `ARCHITECTURE.md` in the repo root (or `docs/`).
+### 8.2 Why
 
-**How.** One or two pages: a component diagram (ASCII is fine), a
-paragraph per component ("the `orders` module owns all order state
-transitions; nothing else writes to the orders table"), the system's key
-invariants, and a "where to find things" codemap. Link ADRs for the *why*
-behind each shape. Update it when structure changes — practical trigger:
-whenever a step gate closes and the diagram it implies no longer matches
-reality.
+ADRs are a history of individual choices; this is the synthesized
+present. It's the difference between a stack of route decisions and
+a map. Newcomers read it second, right after the README. (Convention
+popularized by matklad's "ARCHITECTURE.md" essay.)
 
-**Anti-patterns.** Describing the aspirational design instead of the real
-one; so much detail it goes stale in a week — it maps the forest, the code
-is the trees.
+### 8.3 Where
+
+`ARCHITECTURE.md` in the repo root (or `docs/`).
+
+### 8.4 How
+
+One or two pages: a component diagram (ASCII is fine), a paragraph
+per component ("the `orders` module owns all order state
+transitions; nothing else writes to the orders table"), the system's
+key invariants, and a "where to find things" codemap. Link ADRs for
+the *why* behind each shape. Update it when structure changes —
+practical trigger: whenever a step gate closes and the diagram it
+implies no longer matches reality.
+
+### 8.5 Anti-patterns
+
+Describing the aspirational design instead of the real one; so much
+detail it goes stale in a week — it maps the forest, the code is the
+trees.
 
 ---
 
 ## 9. Playbook — the cross-project script
 
-**What.** The reusable, versioned template distilled from completed
-plans of the same project type: the full step sequence, gates, and
+### 9.1 What
+
+The reusable, versioned template distilled from completed plans of
+the same project type: the full step sequence, gates, and
 accumulated "warnings from past runs."
 
-**Why.** It converts one project's experience into the next project's
-head start. The first plan of a familiar project type writes itself, and
-past mistakes are pre-loaded as warnings at exactly the step where they
-bit.
+### 9.2 Why
 
-**Where.** In the repo that owns the type — the one a project's
-"Steps from" line names — and never in the project born from it,
-which holds only the copy in its plan. Here,
-`delivery/fills/cbc-run-pure-playbook.md`.
-Versioned (v1, v2, …) with a note of which project last updated it.
+It converts one project's experience into the next project's head
+start. The first plan of a familiar project type writes itself, and
+past mistakes are pre-loaded as warnings at exactly the step where
+they bit.
 
-**How.** The full sequence, first step to last. The plan's stub
-prescribes no step;
-a playbook prescribes them all. Each step keeps the plan's form — a
-goal, a gate of verifiable facts, the records expected — plus its
-own "Warnings from past runs"; its Release step carries the type's
-own release facts. The lifecycle:
+### 9.3 Where
+
+In the repo that owns the type — the one a project's "Steps from"
+line names — and never in the project born from it, which holds only
+the copy in its plan. Here,
+`delivery/fills/cbc-run-pure-playbook.md`. Versioned (v1, v2, …)
+with a note of which project last updated it.
+
+### 9.4 How
+
+The full sequence, first step to last. The plan's stub prescribes no
+step; a playbook prescribes them all. Each step keeps the plan's
+form — a goal, a gate of verifiable facts, the records expected —
+plus its own "Warnings from past runs"; its Release step carries the
+type's own release facts. The lifecycle:
 
 1. **Birth:** whoever births the project copies the chosen playbook
    whole into PLAN.md; the plan's "Steps from" line records which
@@ -538,33 +625,45 @@ own release facts. The lifecycle:
    and Release lessons fold into the playbook's own copies of those
    steps — they have a home now.
 
-**When.** Created after the *second* project of a type (the first time you
+### 9.5 When
+
+Created after the *second* project of a type (the first time you
 notice "I've done this before"); updated at every retro thereafter.
 
-**Anti-patterns.** Writing a playbook from theory before doing the project
-type even once; never folding retros back (a playbook that stops learning
-is just bureaucracy); gates so heavy people route around the playbook.
+### 9.6 Anti-patterns
+
+Writing a playbook from theory before doing the project type even
+once; never folding retros back (a playbook that stops learning is
+just bureaucracy); gates so heavy people route around the playbook.
 
 ---
 
 ## 10. Supporting records (use when scale demands)
 
-**Design docs / RFCs.** For decisions too large for an ADR — a multi-page
-proposal written *before* building, circulated for comment, kept in
-`docs/rfc/`. The ADR that follows records the outcome; the RFC records the
-full exploration. Solo projects rarely need them; teams making
+### 10.1 Design docs / RFCs
+
+For decisions too large for an ADR — a multi-page proposal written
+*before* building, circulated for comment, kept in `docs/rfc/`. The
+ADR that follows records the outcome; the RFC records the full
+exploration. Solo projects rarely need them; teams making
 cross-cutting changes do.
 
-**Commit messages.** The finest-grained decision trail —
+### 10.2 Commit messages
+
+The finest-grained decision trail —
 `docs/conventions/commit-messages/` §1.
 
-**PR descriptions.** Where a change's reasoning and its review discussion
-live. Link the plan step and any ADR; the review thread often contains the
-"options considered" that should be promoted into the ADR.
+### 10.3 PR descriptions
 
-**Runbooks.** Operational procedures for a *running* system ("how to
-restore the DB from backup," "release checklist"). Same checklist spirit
-as playbooks, but for operating, not building. `docs/runbooks/`.
+Where a change's reasoning and its review discussion live. Link the
+plan step and any ADR; the review thread often contains the "options
+considered" that should be promoted into the ADR.
+
+### 10.4 Runbooks
+
+Operational procedures for a *running* system ("how to restore the
+DB from backup," "release checklist"). Same checklist spirit as
+playbooks, but for operating, not building. `docs/runbooks/`.
 
 ---
 
