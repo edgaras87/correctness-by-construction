@@ -52,9 +52,19 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
 5. **What it recommends, in order**, and what is optional.
 
 6. Nothing that needs our repo to verify. A claim the run cannot
-   check from its own tree is a hedge it can never close.
+   check from its own tree is a hedge it can never close. Where one
+   cannot be avoided — a thin note, material outside the delivery, a
+   negative claim — the note says so, in a clause.
 
-7. **Commit the note last.** The commit after this one is `H`, and
+7. **No ADR number, no path in this repo, no word of our own
+   vocabulary.** The note is told text, and a citation the run cannot
+   follow reads as its own. A shipped file carries `CBC ADR-nnnn`
+   instead.
+
+8. **A third repository gets both names**: ours, by ordinal, and the
+   one it gave itself.
+
+9. **Commit the note last.** The commit after this one is `H`, and
    the staging is named by it.
 
 ## 2. Stage
