@@ -1,33 +1,17 @@
 # Conventions
 
-The nine conventions this repo holds, and how they relate across a
-piece of work. What a convention is, how one is written and how
-one is added is the `conventions` manual,
-`docs/conventions/conventions/`.
-
-## The nine
-
-| Convention | Manual |
-|---|---|
-| project-recording | `docs/conventions/project-recording/` |
-| commit-messages | `docs/conventions/commit-messages/` |
-| repo-hygiene | `docs/conventions/repo-hygiene/` |
-| commit-plan | `docs/conventions/commit-plan/` |
-| exchange | `docs/conventions/exchange/` |
-| agent-arrangement | `docs/conventions/agent-arrangement/` |
-| visual-comparison | `docs/conventions/visual-comparison/` |
-| shapes | `docs/conventions/shapes/` |
-| conventions | `docs/conventions/conventions/` |
-
-What each is made usable as is its manual's list, *what this is
-made usable as*; which of them ship to a run is `ARCHITECTURE.md`
-§2.3.
+How the conventions that act in sequence during a piece of work
+hand to each other, from an idea to committed work. The others
+relate through what they govern, read or describe, and each states
+those relations in its manual's *What this does not cover*. Which
+conventions there are and what each covers is `ARCHITECTURE.md`
+§1.2; what a convention is, how one is written and how one is added
+is `docs/conventions/conventions/`.
 
 ## The chain
 
-How they relate across a piece of work. **Relations only** — every
-rule lives in a manual or a skill, and nothing here restates one
-(CBC ADR-0032).
+**Relations only** — every rule lives in a manual or a skill, and
+nothing here restates one (CBC ADR-0032).
 
 ```mermaid
 flowchart TB
@@ -70,8 +54,6 @@ it unchanged.
 
 **What the chain produces** is not on it: an ADR for a decision
 with rejected options, a `temp/` draft for a measurement or a
-comparison, and the commits themselves. The remaining six
-conventions — `project-recording`, `repo-hygiene`,
-`agent-arrangement`, `exchange`, `shapes`, `conventions` and the
-records they govern — are not stages of this and fire on their
+comparison, and the commits themselves. The other conventions, and
+the records they govern, are not stages of this and fire on their
 own moments.
