@@ -91,9 +91,8 @@ line. Beyond those, no field is filled: not the other stubs, no
 bundle birth entry. What the agent cannot derive rides in the seed
 commits' subjects; everything else it can.
 
-Deliberately not delivered — nothing that encodes a prior run's
-conclusions: the birth scenario, the birth fills, the pre-written
-birth entries, and no playbook file — its steps ride in PLAN. The
+Deliberately not delivered: nothing that encodes a prior run's
+conclusions, and no playbook file — its steps ride in PLAN. The
 agent meets the container and the method raw. One exception, no
 longer a switch: the two entry files arrive composed, in the kit
 itself (ADR-0024). They are the harvest of the readings so far,
@@ -117,13 +116,7 @@ under `$bundle_dir`, and a run is born from this repo alone.
 The name is a placeholder — everything before the briefing is
 problem-agnostic, and the briefing brings the real name.
 
-**2. Audit, then copy the kit.** The kit here is a copy at a pin,
-so it cannot drift from itself; what drifts is the text about it.
-Before copying, check `delivery/README.md`'s container-half section
-against `delivery/container/`'s contents — the file count, the delta
-list, the re-verify duty. A divergence found here is this repo's
-bug, and fixing it before the copy is cheaper than a run carrying
-it.
+**2. Copy the kit.**
 
 ```bash
 mkdir -p "$new_project_dir"
@@ -186,9 +179,9 @@ git commit -m "chore: seed — concept/ from the bundle, pin @ $bundle_pin"
 
 # The groups this run takes, on top of the container that step 2
 # copied. Each group is a piece of the run's tree, so copying it in
-# place is the whole of the mapping (CBC ADR-0036). This run is
+# place is the whole of the mapping (ADR-0036). This run is
 # Spring and PostgreSQL; a run on another stack names method alone
-# and is born with two skills, not five (CBC ADR-0029).
+# and is born with two skills, not five (ADR-0029).
 for g in method spring-postgres; do
   cp -r "$bundle_dir"/delivery/$g/. .
 done
@@ -206,8 +199,8 @@ git commit -m "chore: seed — steps into PLAN, cbc-run-pure v7 @ $bundle_pin"
 ```
 
 One pin in every subject, ours: the container arrives inside the
-delivery rather than beside it, and where it began is provenance in
-`delivery/README.md`, not a number the newborn holds.
+delivery rather than beside it, and where it began is ADR-0025's,
+not a number the newborn holds.
 
 The first sed is the kit's marker-keeping swap — the steps land
 between the STEPS markers and the markers stay; the second fills
@@ -219,9 +212,8 @@ read verbatim — no filter rides the insert. What the variant
 omits against its parent (the assembly Step 0 comment, the
 install-manual clause) and why is ADR-0016's to say; this
 manual delivers what the master holds, like every other seed
-step. The kit's first-session comment and Framing's (CbC)
-comment ride in with the steps: container orientation and a
-pointer to a delivered skill, no conclusions.
+step. Framing's (CbC) comment rides in with the steps: where the
+briefing lands, no conclusions.
 
 **5. Return to main and restore the branch tip into its worktree,
 untracked.** The branch is never merged.
@@ -263,8 +255,8 @@ work moves at my pace: stage the plan and ask for my approval
 before committing it; then one step at a time — stage a step,
 show me what changed, and commit only on my word, staging the
 next step after each approval.
-Work only within this repository — the source repos the pins
-name are not yours to read. The problem arrives later, as a
+Work only within this repository — the repo the delivery came
+from is not yours to read. The problem arrives later, as a
 briefing that opens Framing; nothing before it names the
 problem.
 ```
@@ -288,10 +280,9 @@ to touch or how far to adapt them, whether skills land as one
 commit or split by source — the sequence the agent chooses and
 justifies is the run's central data. The commit-scope rule is not
 restated; it rides in the delivered skills, and the prompt only
-points at them. The stay-inside line guards the blindness: the
-source repos hold the answer sheet (the template, the scenario,
-the baselines), and the permission prompt on any outside read is
-the human's hard backstop behind it.
+points at them. The stay-inside line guards the blindness: this
+repo holds the answer sheet, `docs/baselines/`, and the permission
+prompt on any outside read is the human's hard backstop behind it.
 
 Anything said to the newborn after this prompt, at a review stop or
 in an answer, is told text, held to the note's rules
@@ -324,9 +315,7 @@ item is a verifiable fact:
   `.claude/CLAUDE.md` and `README.md` are byte-identical to the
   kit's with the name filled, neither carries a provenance
   header, and no `CLAUDE.md` sits at the root.
-- Nothing from the excluded list present: no birth-scenario.md,
-  no bundle birth entry, no provenance header from this repo
-  anywhere in the newborn.
+- No provenance header from this repo anywhere in the newborn.
 
 What the agent is left to do — the reader's checklist for the
 reading afterwards, not instructions delivered to it: every
@@ -336,12 +325,10 @@ one commit is an outcome the reading records, not one the seed
 prevents); a commit plan whose sequence is chosen and
 justified (the entrance doc's place in it, when records enter
 history and how far they adapt to the method, whether skills land
-whole or split by source); its own CLAUDE.md; the record stubs filled; the
-bundle's birth entry reconstructed from the seed subjects (the
-kit's is filled at birth); Step 0 closed clean on its container
-gates — no briefing gate exists to block it, the briefing opens
-Framing; the agent/project commit split held throughout, from
-the skills, unprompted.
+whole or split by source); the record stubs filled; Step 0 closed
+clean on its container gates — no briefing gate exists to block
+it, the briefing opens Framing; the agent/project commit split
+held throughout, from the skills, unprompted.
 
 The reading is the concept repo's act, read-only, recorded there:
 the derived arrangement against the walk-1 baseline and the
