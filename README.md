@@ -51,7 +51,7 @@ recorded way instead of living in a head and scattered notes.
 |---|---|---|
 | Plan | [PLAN.md](PLAN.md) | Which milestones are open, and what *done* means for each |
 | Decisions | [docs/adr/](docs/adr/) — cited from other repos as `CBC ADR-nnnn` | Why is it built this way |
-| Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | What is the current shape of the system |
+| Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | The map: what is here, what ships, and what must stay true |
 | Backlog | [TODO.md](TODO.md) | What's next, and what's known but not done |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per version (for users) |
 | Devlog | [devlog/](devlog/) | Day-to-day work, dead ends, open questions |

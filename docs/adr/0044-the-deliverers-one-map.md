@@ -1,7 +1,9 @@
 # 0044. The deliverer's one map
 
 Date: 2026-09-30
-Status: Proposed (2026-09-30, under the commit plan for one map)
+Status: Accepted (2026-09-30, at the set's records commit; opened
+Proposed under the commit plan for one map, and amended at step 6
+with decision 6, the codemap's form, the reviewer's choice)
 
 ## Context
 

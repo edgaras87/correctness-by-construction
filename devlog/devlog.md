@@ -6,6 +6,50 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-30, after the last  (one map — eight commits, no revision)
+
+`one-map-2026-09-30`, cut from `main` at `7c9973a`.
+
+- **Two maps of one repo, and one said so.** The master's own list
+  of what it knew was wrong named ARCHITECTURE as describing its §2
+  a second time. The reviewer chose one map. It is named
+  ARCHITECTURE, because both seats have that record and a newcomer
+  reads it second, and its content comes from the master, which was
+  the better kept. The master is gone, and eight live pointers moved
+  with their section numbers unchanged.
+- **The difference written first.** A run's ARCHITECTURE maps a
+  built system; ours maps documents and delivery, carries its words
+  and its errata, and runs past §8's two pages. That is
+  project-recording's fifth seat difference (ADR-0044). A run's §8
+  did not change.
+- **What the merge kept and dropped.** ARCHITECTURE's seven
+  invariants and the master's five strings became one list of
+  eleven, each saying where it is held. Its history went: the
+  fifty-line *Executions* entry, the rename of `kit/`, the discarded
+  conventions. The map says what is, and points to the ADRs for how.
+- **The codemap, by `visual-comparison`.** Five requirements
+  written first; four candidates built: the old table, a short
+  table, a nested list, a tree. I recommended the nested list, the
+  only one holding all five with nothing to maintain. The reviewer
+  chose the tree, which shows nesting best, and accepted its upkeep:
+  its column is aligned by hand. Building it had found the cost
+  already, in a hygiene line that broke the column and became three.
+  The rendered verdicts for the table and the list stayed
+  predictions, since GitHub's page was not seen. The draft was never
+  committed, and ADR-0044's decision 6 keeps what the method asks
+  for.
+- **The map claims to be current**: its list of what it knows is
+  wrong is empty for the first time. That is the claim it says to
+  distrust most.
+- **Not taken:** two maps with split roles; one map named master;
+  §8's two pages for our map.
+
+Resume: on `one-map-2026-09-30`, closed at the next commit, not
+pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.**
+2. **The imperative test and the 50-character limit**, together.
+
 ## 2026-09-30, last  (the tiers model, read — five commits, no revision)
 
 `the-tiers-model-2026-09-30`, cut from `main` at `f8571b9`.

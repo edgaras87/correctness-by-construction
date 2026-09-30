@@ -115,24 +115,6 @@
       Trigger: the next reading of run 3.
       See: devlog 2026-09-29, the split.
 
-- [ ] Decide whether the master becomes ARCHITECTURE, or the
-      reverse (2026-09-28, the reviewer).
-      Context: the master's "What this page knows is wrong" says
-      `ARCHITECTURE.md` describes its section 2 a second time.
-      ARCHITECTURE is project-recording's record, so deciding the
-      merge before that manual's revision would decide it twice.
-      Trigger: project-recording's revision, or the next change
-      that has to update both maps for one fact.
-
-- [ ] Re-render the ARCHITECTURE codemap, by `visual-comparison`
-      and as its own set (2026-09-23).
-      Context: two rows run to 1,097 and 782 characters on one
-      line, against a median near 55. An editor cannot show them,
-      and a line diff marks the whole row when one word changes;
-      never-oversold killed a table of its own at 435.
-      Trigger: the master/ARCHITECTURE decision, which reshapes
-      the same file.
-
 - [ ] Fold run 3's step form into the run playbook, if its Step 7
       says the form held (2026-09-23).
       Context: two items at a step's opening and seven at its
