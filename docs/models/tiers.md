@@ -68,7 +68,7 @@ concept* does not stay in the run — it is harvested.
 ## 3. The flows
 
 What moves between tiers, and in which direction. How it moves —
-the note, the pin, the read — is `docs/master.md` §2.5 and
+the note, the pin, the read — is `ARCHITECTURE.md` §2.5 and
 `docs/conventions/exchange/`.
 
 ### 3.1 Down is delivery

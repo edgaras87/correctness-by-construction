@@ -344,8 +344,8 @@ acceptable; behind the run's own lessons is not.
 ### 5.4 One word for the other side
 
 In the rule and in the backlog line:
-*deliverer*. Run 3's text says *source*; `master.md` says
-deliverer, and the shipped rule says one thing.
+*deliverer*. Run 3's text says *source*; `ARCHITECTURE.md`'s words
+say deliverer, and the shipped rule says one thing.
 
 ### 5.5 A run does not rename or delete a copy
 
@@ -481,6 +481,6 @@ written.
   plan when it takes more than one commit,
   `docs/conventions/commit-plan/`, and an ADR when a decision has
   rejected options, `docs/conventions/project-recording/`.
-- **The concept's version** — CBC ADR-0003, and `docs/master.md`
+- **The concept's version** — CBC ADR-0003, and `ARCHITECTURE.md`
   §1.1.
 - **The birth procedure** — `delivery/installs/pure-seed.md`.

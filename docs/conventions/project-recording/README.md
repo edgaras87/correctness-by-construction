@@ -782,7 +782,7 @@ failure being fixed. Restating a record's rules in the entry file
 - **Why the records are never re-delivered to a run** —
   `docs/conventions/exchange/` §2.4.
 - **What the deliverer's CHANGELOG versions** — the concept, CBC
-  ADR-0003 and `docs/master.md` §1.1.
+  ADR-0003 and `ARCHITECTURE.md` §1.1.
 
 ## Where to look
 

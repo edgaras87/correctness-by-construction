@@ -119,7 +119,7 @@ foundation: the <name> convention
 ## 3. The manual
 
 The manual is free prose: the convention stated, from which the
-artifact is made usable (`docs/master.md` §1). It explains and
+artifact is made usable (`ARCHITECTURE.md` §1). It explains and
 points at the ADRs; the artifact says what a project does, and its
 `foundation` line names the manual it derives from.
 
@@ -234,7 +234,7 @@ reviewer asked, not because anything made anyone look. Where a
 manual and the concept are handled differently — versioning,
 shipping, the kind of derivative, the seats, what each asserts — is
 CBC ADR-0039; the concept's edges are CBC ADR-0003, the CHANGELOG's
-standing comment and `docs/master.md` §1.1.
+standing comment and `ARCHITECTURE.md` §1.1.
 
 ### 3.6 A disagreement
 
@@ -315,14 +315,14 @@ stands on has to travel with the file.
 - **What a shape is and how one lives** — `docs/conventions/shapes/`.
   The shape of a manual is one instance of it, held here.
 - **The concept's edges, its version and its changelog** — CBC
-  ADR-0003 and `docs/master.md` §1.1.
+  ADR-0003 and `ARCHITECTURE.md` §1.1.
 - **A run's own descriptions and what derives from them** — the
   run's, and not yet a rule of ours.
 
 ## Where to look
 
 - The index and the chain: `docs/conventions/README.md`.
-- The rule for every description: `docs/master.md` §3.
+- The rule for every description: `ARCHITECTURE.md` §3.
 - What `foundation` holds for each kind of file: the exchange,
   `docs/conventions/exchange/` §3.
 - A convention whose artifact is a rule, not a skill:
