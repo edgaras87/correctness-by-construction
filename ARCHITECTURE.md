@@ -156,7 +156,14 @@ the run's own agent — section 4.
 ### 2.5 Where it all goes, and what comes back
 
 A **run** is a separate repository that builds a real system using
-what we gave it. Run 3, `never-oversold`, is the live one.
+what we gave it. We call a run by its ordinal. It names itself at its
+Identity step, and until then has only ours:
+
+| ours | its own | where | state |
+|---|---|---|---|
+| run 1 | — | `~/IdeaProjects/cbc-pure-run` | frozen |
+| run 2 | — | `~/IdeaProjects/cbc-pure-run-2` | idle since its Step 0 |
+| run 3 | `never-oversold` | `~/IdeaProjects/cbc-pure-run-3` | live |
 
 **A run is blind to us.** It holds no address for this repo, no
 checkout, no remote. It cannot fetch, and nothing here reaches it
@@ -323,6 +330,9 @@ Used across both repos, defined here and nowhere else.
   project receives. Here, this repo.
 - **run** — a separate repository that builds a real system with
   what it was given. Blind to its deliverer.
+- **newborn** — a run at its birth, from its seed until its agent
+  finishes the birth. It holds what the seed put there, one pin
+  included, and no earlier state.
 - **project** — whichever repository is doing the work under a
   convention or making an output: a run, or this one.
 - **delivery** — files copied whole into a run, with a note. At

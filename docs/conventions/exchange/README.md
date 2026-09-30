@@ -256,8 +256,9 @@ A shipped file carries the tag instead, `CBC ADR-nnnn`, because a
 file stays in the run and a note is read once (CBC ADR-0020).
 
 A note that names a third repository gives both names: ours, by
-ordinal, and the one it gave itself at its Identity step. Neither
-side's records say which is which.
+ordinal, and the one it gave itself at its Identity step. A run's
+records do not say which is which; ours do, in `ARCHITECTURE.md`
+§2.5.
 
 *Three rules about verdicts, each a defect first: a verdict is the
 decision and what the run owes now, nothing else; never describe our
