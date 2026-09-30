@@ -6,6 +6,49 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-30  (agent-arrangement read whole — nine commits, one revision)
+
+`the-manual-points-2026-09-29`, cut from `main` at `a736d9d`.
+
+- **The fold, weighed on numbers, and kept apart.** agent-arrangement
+  is about 350 lines and the model 455; folded, the manual would run
+  to about 600. I first said the manual's restatements of the model
+  had already drifted since yesterday's corrections, and proposed
+  replacing them with pointers. Read closely, they had not: each was
+  still true at the precision its rule needs. That was overstated,
+  and the plan shrank to what was wrong. The fold has its own TODO
+  item now, triggered by a change that has to edit both files for
+  one fact, rather than riding on the `tiers.md` reading.
+- **Two small commits, then "that is it" — too soon.** The re-reading
+  moment had named the retrospective for every repo, and the
+  comments fact was stated twice. After those, the reviewer asked
+  whether anything else was wrong. I had read only the passages
+  being changed. Read whole, the manual had four more defects, and
+  the model two, which became this plan.
+- **A measurement credited to the wrong claim.** The manual said
+  twice that an entry file grew to 98 lines with three disagreeing
+  copies of one rule, citing the model's M1. M1 never held it. On
+  2026-09-27 (`426b39c`) the handbook's record of the case had been
+  rewritten as a citation of M1. I first moved it into M1 as a second
+  evidence line. The reviewer asked why. It was never M1's evidence:
+  it is the failure the convention answers. It is stated once now,
+  in *what it is for*, and marked as reported, since there is no
+  handbook checkout to re-check it against.
+- **What else the reading found.** The deliverer's skills were
+  called copies, which the split set's sweep missed, because the
+  sweep looked for words, not meaning. When contradicted Size.
+  Where said one thing twice. And a run's log is the only one with a
+  promotion queue. In the model: §9's "nothing names a channel", and
+  G1 without this repo's evidence.
+- **Not taken:** the fold now; option B, the manual pointing instead
+  of restating, as a set of its own.
+
+Resume: on `the-manual-points-2026-09-29`, closed at the next
+commit, not pushed. Next, in the reviewer's order:
+
+1. **Read run 3 and deliver.**
+2. **The imperative test and the 50-character limit**, together.
+
 ## 2026-09-29, after the last  (the agent model becomes ours — eight commits, no revision)
 
 `the-agent-model-2026-09-29`, cut from `main` at `0b8d981`.
