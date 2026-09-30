@@ -41,8 +41,8 @@ checked back against this page.
 ## The seats
 
 The same records in both seats, each derived from this page — the
-run's through the stubs, the deliverer's directly — with four
-differences of rule or ownership — so a section each
+run's through the stubs, the deliverer's directly — with five
+differences of rule or ownership, so a section each
 (`docs/conventions/conventions/` §3.4).
 
 ### The run's seat
@@ -56,7 +56,7 @@ lessons reach the playbook when the deliverer reads the run. Its
 ### The deliverer's seat
 
 The deliverer keeps the same records, derived from this page rather
-than from the stubs (CBC ADR-0042), and differs in four things. It
+than from the stubs (CBC ADR-0042), and differs in five things. It
 has no project end, so lessons fold back at each step's gate close
 rather than at a retrospective, as its first devlog entry agreed on
 2026-08-27. It owns the playbook,
@@ -81,10 +81,19 @@ whose two jobs — folding lessons back and re-reading the entry file
 way", since TODO takes a finding at once; and no decision index,
 since `docs/adr/` lists itself (§3.3's index is the run's).
 
+And its `ARCHITECTURE.md` maps documents and delivery rather than a
+built system: what is stated here, what ships, how it changes, the
+arrangement, and what must stay true, where a run's maps modules,
+runtime invariants and a `src/` codemap. It also carries its own
+words and the list of what it knows is wrong — a map of a
+vocabulary needs the vocabulary, and a map that names its errors is
+believed less blindly — and runs past §8's two pages for them (CBC
+ADR-0044).
+
 *Found 2026-09-29: from 2026-09-20, with Step 10 in progress, 203
-commits, two of them touching `PLAN.md`; one step written after
-its work was done; the decision index stale twice. The work had been led by TODO and the devlog's Resume all
-along (CBC ADR-0041).*
+commits, two of them touching `PLAN.md`; one step written after its
+work was done; the decision index stale twice. The work had been led
+by TODO and the devlog's Resume all along (CBC ADR-0041).*
 
 ## 1. The model at a glance
 
@@ -546,7 +555,8 @@ files, no shared text.
 A short prose description of the system as it *is now*: the main
 components, their responsibilities, how they talk to each other,
 where the important invariants live, and where in the codebase each
-piece is found.
+piece is found. The deliverer's maps documents and delivery
+instead, and its seat says how.
 
 ### 8.2 Why
 
