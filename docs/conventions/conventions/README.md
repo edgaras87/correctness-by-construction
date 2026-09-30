@@ -140,21 +140,26 @@ Text that points names the manual by its path from the repo root,
 `docs/conventions/<name>/`, with the section number when it means
 one — `docs/conventions/conventions/` §3.4 — so that the manual can
 find everything pointing at it with one grep, and a reader lands on
-a paragraph rather than a wall. So a part that other text points at
-gets its own numbered subsection, `### N.M`, for the pointer to
-name. Once one part of a section is numbered, every part of it is,
-in order: a heading runs until the next one, and would take in the
-parts after it. Never a relative link: a relative path means a
-different thing the moment a file is read from a different root,
-which is every copy and every shipped file. A name in prose is not a
-pointer, because names are words. A rename or a renumbering is the
-case the commit-plan skill's sweep covers,
+a paragraph rather than a wall. So a section divided into labelled
+parts numbers them, `### N.M`, and so does every section of the same
+form in the document, whether anything points there yet or not: the
+pointer names the number, and a reader meets one structure
+throughout. Bold emphasis inside running prose is not a part. Never
+a relative link: a relative path means a different thing the moment
+a file is read from a different root, which is every copy and every
+shipped file. A name in prose is not a pointer, because names are
+words. A rename or a renumbering is the case the commit-plan skill's
+sweep covers,
 `delivery/container/.claude/skills/commit-plan/SKILL.md` §4: every
 old path and number, before the close.
 
 *Decided in the walk, 2026-09-29, when this manual's §3 held six
 rules as bold paragraphs and every pointer into it said "§3"; it
-lived in the devlog alone until 2026-09-30.*
+lived in the devlog alone until 2026-09-30. Written here first as
+"a part other text points at", it would have numbered one section
+of project-recording beside seven built the same way; the reviewer
+caught it at the boundary, and it was reworded the same day, by
+form.*
 
 ### 3.3 The shape
 
