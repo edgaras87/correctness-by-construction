@@ -23,6 +23,10 @@ document afterwards is work, not this skill; when the work is done,
    git -C "$run" log --oneline R..HEAD
    ```
 
+   That `HEAD` is the read-through. Write it now as the reading's
+   first line — a new reading's, or the open one's, moved — before
+   anything is read.
+
 3. **Read three things in the span**, and nothing else is required:
 
    - every entry in `.claude/decisions.md` — each edit and its why
@@ -31,20 +35,22 @@ document afterwards is work, not this skill; when the work is done,
    - the diff of every copy against what was delivered:
 
      ```sh
-     git -C "$run" diff kit-P -- .claude/skills .claude/rules docs/concept
+     git -C "$run" diff <base> -- .claude/skills .claude/rules docs/concept
      ```
 
-     `kit-P` is the run's receipt branch when it cut one; otherwise
-     the commit of the registry entry that recorded `P`.
+     `<base>` is the run's receipt branch for `P` when it cut one;
+     otherwise the commit of its last delivery entry, the one that
+     recorded `P`.
 
 4. **Write the reading — or extend the one that is open.** If
    `temp/` holds a reading for this run, this read extends it: new
-   items take the next numbers, and its first line moves to the new
-   `HEAD`. Otherwise write `temp/reading-<run>-<date>.md`, to the
-   shape that governs it: one line per edit, per ask, per finding —
-   what it is, where it is, and nothing decided yet. Its first line
-   names the run's `HEAD` as read; that is the read-through the next
-   note will carry. One reading per run, open at a time.
+   items take the next numbers. Otherwise write
+   `temp/reading-<run>-<date>.md`, to the shape that governs it: one
+   line per edit, per ask, per finding — what it is, where it is, and
+   nothing decided yet. One question every reading asks: what does
+   the run teach the worked example (`docs/conventions/exchange/`
+   §6.3)? The first line, written at step 2, is the read-through the
+   next note will carry. One reading per run, open at a time.
 
 ## 2. Gates
 

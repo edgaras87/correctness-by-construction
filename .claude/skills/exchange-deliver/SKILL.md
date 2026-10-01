@@ -123,10 +123,12 @@ reports, and waits for the word before 2.3.
 
 ## 3. A note without files
 
-A reading that found nothing to take: the note is one line — `read
-through <run HEAD>, nothing to answer, no files` — and step 2 copies
-only the note. The run records the read-through; the pin does not
-move.
+A reading that found nothing addressed to us: the note is one line —
+`read through <run HEAD>, nothing to answer, no files` — and step 2
+copies only the note. One that found something and took none of it
+is not this case: a declined item still owes its verdict, so its
+note carries the verdicts and no files. The run records the
+read-through; the pin does not move.
 
 ## 4. Gates
 
