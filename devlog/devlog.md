@@ -6,6 +6,36 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-10-02, later  (the eval's group 4 — 13 commits on main)
+
+One commit plan, ten steps, nothing diverged between them.
+
+- **G4 checked**: twenty findings, each cited section read whole, all
+  holding. Not each manual end to end — the note under G4 says so.
+- **D6 to D8 settled.** `foundation` is claimed for skills and rules,
+  where it is carried, not for 36 templates, references and stubs
+  that cannot or need not carry it; exchange §7's history table goes
+  to a pointer at ADR-0036; shapes §4 and §5 number their parts.
+- **By kind of change, not by file.** History out of four bodies,
+  nine false sentences made true, restatements turned into pointers
+  — F66 and F67 among them, the slips the reviewer caught in the
+  take's text. The one shipped change, the decisions stub, reaches
+  the next birth only.
+- **Caught on the way:** a claim that ADR-0036 holds §7's table "file
+  by file" — it holds the main rows — softened before it was shown;
+  and agent-arrangement §2.1 still calling the run's log a registry.
+- Shapes §4, decided in the material: two bold claims became parts,
+  two stayed emphasis, and the staging note moved to the part it is
+  about.
+
+Resume: on `main` at the next commit, clean, not pushed. Next:
+
+1. **Deliver groups 2 and 3 to run 3** once SL-3 closes — read it
+   first.
+2. **The eval's G5 and G6.**
+3. **The conventions' full local map, and the imperative test with
+   the 50-character limit**, still due in TODO.
+
 ## 2026-10-02  (the eval's group 3 — 12 commits on main)
 
 One commit plan, ten steps, nothing diverged between them.
