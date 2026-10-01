@@ -9,7 +9,7 @@ foundation: practice, checked against concept v1
 Take one framed project to **ground**: the environment chosen and
 running, the services the problem's reasoning chain requires stood up,
 constrained to need, verified both ways, with the manuals that make the
-ground usable and reproducible. The exit is the guide's own: **the
+ground usable and reproducible. The exit is the walk's step 7: **the
 ground runs, constrained to need, both manuals stand.**
 
 The full walk is `references/establishment-walk.md` — read it before
@@ -132,8 +132,7 @@ lived by two runs, and the shape below is theirs:
 The layout, both cases:
 
 - `compose.yaml` and `.env.example` at the root, `.env` ignored —
-  the stranger's first command finds them there, and at bootstrap
-  the file becomes the whole system's declaration.
+  the stranger's first command finds them there.
 - `infrastructure/` — the rest of the runnable ground (bootstrap
   SQL, verify suite, migration tool config), landed as the walk
   produces them.
