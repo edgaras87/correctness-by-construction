@@ -216,10 +216,10 @@ method would be born with an entry file about files it does not
 hold. No such run exists; when one does, those lines become a
 fill.*
 
-### 3.5 Every shipped file carries `foundation`
+### 3.5 Every shipped skill and rule carries `foundation`
 
 The field — its
-name, that every derived file has one, and what it holds for each
+name, that every skill and rule has one, and what it holds for each
 kind — is the conventions convention's,
 `docs/conventions/conventions/` §2. What is the exchange's: the
 line travels with the copy as a live claim, what this file comes

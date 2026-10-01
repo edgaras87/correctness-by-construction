@@ -24,8 +24,8 @@ against it the next day.
 
 Nothing shipped of its own; what a repo holds is:
 
-- **the `foundation` line in every shipped file** — a run's, and
-  this convention's artifact there (§2);
+- **the `foundation` line in every shipped skill and rule** — a
+  run's, and this convention's artifact there (§2);
 - **`.claude/rules/convention-manual.md` — the shape of a manual,
   the deliverer's**, loading whenever a manual is opened;
 - **the index, `docs/conventions/README.md`** — a pointer: the
@@ -107,7 +107,7 @@ foundation: the <name> convention
 - `requires` names the conventions this one delegates rules to; a
   receiver lands a convention together with its chain.
 - `foundation` says what the file stands on *now* — a live claim,
-  never history. Every derived file carries one, shipped or this
+  never history. Every skill and rule carries one, shipped or this
   repo's own: for the method, the concept and its version,
   `concept v1`; for the stack practice, the concept it was checked
   against, `practice, checked against concept v1`; for a
@@ -225,7 +225,7 @@ is stated:
    changes, the walk runs again.
 
 Steps 1, 2 and the grep in 3 are checkable today: every shipped
-file carries `foundation`, `docs/conventions/exchange/` and
+skill and rule carries `foundation`, `docs/conventions/exchange/` and
 `docs/conventions/shapes/` close with their lists, and a path is a
 token. The rest ran twice by hand before this was a rule — the
 correspondence check of 2026-09-25, and the walk of
@@ -304,9 +304,9 @@ The manual reaches no agent: a maintainer reads it. The shape of a
 manual is a rule, loading when a manual is opened, because the
 moment a manual's form matters is while it is written, and nothing
 else would put the list in front of the writer then. The
-`foundation` line rides in the frontmatter of every shipped file,
-read by whoever opens the file, because a claim about what a file
-stands on has to travel with the file.
+`foundation` line rides in the frontmatter of every shipped skill
+and rule, read by whoever opens the file, because a claim about
+what a file stands on has to travel with the file.
 
 ## What this does not cover
 
