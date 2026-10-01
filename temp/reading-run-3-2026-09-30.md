@@ -160,7 +160,9 @@ Work:
   "held" points at something. **Done**, `4918882`.
 - **W3** — §4 and §7 here: a take can land on a run's own path, and
   an overtaken reading leaves asks unanswered. Proposed: a TODO line
-  each, weighed later; not fixed in this reading.
+  each, weighed later; not fixed in this reading. **Done**,
+  `2e51f83`: one in Next, one in Later, each a decision with its
+  trigger.
 
 ## 7. What this reading taught
 
