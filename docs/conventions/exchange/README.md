@@ -51,9 +51,9 @@ number. It held, 2026-09-26.*
 ## The seats
 
 The two seats do different things, and the body is written per
-seat. **The deliverer's** is §3, down, and §6, up, written in the
-first person because they are its own. **The run's** is §4, the
-take, and §5, editing a copy. §1 and §2 are both seats'.
+seat. **The run's** is §4, the take, and §5, editing a copy. **The
+deliverer's** is §3, down, and §6, up, written in the first person
+because they are its own. §1 and §2 are both seats'.
 
 ## 1. What cannot change
 
