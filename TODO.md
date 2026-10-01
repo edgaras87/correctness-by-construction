@@ -155,15 +155,6 @@
       Trigger: due — the pair it waited on was made on 2026-09-30.
       See: devlog 2026-09-30, local maps.
 
-- [ ] Should a run's decisions-log entries be shorter? (2026-09-29)
-      Context: ours now point at an ADR in a line or two, because no
-      one reads them but us (ADR-0042). A run's are read by
-      `exchange-read`, which is why they run long; whether they run
-      too long is a reading's question.
-      Ideas: the one-line pointer rule, in the container's stub.
-      Trigger: the next reading of run 3.
-      See: devlog 2026-09-29, the split.
-
 - [ ] Decide whether a delivery checks its paths against the run's
       own files (2026-09-30, the reading of run 3).
       Context: our shipped `.claude/rules/shapes-lifecycle.md` sat
@@ -244,8 +235,8 @@
       Context: run 3 wrote one at Step 3 — the ways its store makes
       two writers disagree — because the skill is silent on it. We
       held it rather than declined: one instance is not a shape.
-      Trigger: a second run reaching the same gap unprompted, or run
-      3 saying SL-2 leaned on the paragraph.
+      Run 3 says SL-2 did not lean on it; SL-2 faces no race.
+      Trigger: a second run reaching the same gap unprompted.
       See: devlog 2026-09-17, later still.
 
 - [ ] Decide our own side of shapes (2026-09-23, ADR-0035).
@@ -438,13 +429,13 @@
 - [ ] Add a rung for guarantees held by absence to the enforcement
       hierarchy (2026-09-14, run 3's SL-1).
       Context: no process clock, no state outside the store —
-      nothing to observe at runtime. Its wall is a rule on the
-      compiled classes (ArchUnit, each rule with a `because` naming
-      its guarantee, each shown to fire on a plant). Run 3 asks for
-      a rung between "single validated entry path" and "code
-      review". The hierarchy lives in `concept/02` and both
-      cbc-slice files, so this is a concept change: an ADR and the
-      version question (ADR-0003).
+      nothing to observe at runtime; its wall is a rule on the
+      compiled classes. Run 3 asks for a rung between "single
+      validated entry path" and "code review", and met it again in
+      SL-2's G5 and G6, each guarded by a test that reads the
+      source — the same run, so not the trigger. The hierarchy lives
+      in `concept/02` and both cbc-slice files, so this is a concept
+      change: an ADR and the version question (ADR-0003).
       Trigger: a second run meeting an absence guarantee.
       See: devlog 2026-09-15.
 
