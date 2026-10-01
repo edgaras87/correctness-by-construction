@@ -6,6 +6,49 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-09-30, at the end  (the delivery to run 3 — seven commits on main)
+
+On `main`, no branch: the reading counted three work items and none
+needed a plan.
+
+- **The span was empty and the asks were not.** Run 3 had not moved
+  since `9869798`, but the reading of 2026-09-24 was overtaken and
+  deleted without a note, so nothing it addressed to us since its
+  pin had a verdict. The reading read them again: three edits to
+  copies, ten asks and offers in its Later, and six findings from
+  our tree — `temp/reading-run-3-2026-09-30.md`.
+- **Two findings mattered for the take.** Our shipped
+  `shapes-lifecycle.md` sits at the path of the run's own rule, so a
+  take lands ours over it; and the run held four conventions and one
+  rule we no longer ship, which a copy cannot delete. The reviewer
+  settled it: ours lands over its own, the note names it, and the
+  five go by name.
+- **We had told run 3 two things were held, and held nothing.** The
+  facility paragraph and framing steps as commit series had no line
+  here; both have one now, and the second's trigger had already
+  fired unnoticed, so it is due.
+- **The note went down at `0000855`**, staged into run 3's `temp/`
+  on the reviewer's word: 38 files — 24 that differ, one new, five
+  of the run's to delete — verdicts in its TODO's order, its first
+  read-through, `9869798`. The counts were checked against a diff of
+  the staging with the run's tree before it was written.
+- **Run 3 took it, and moved on.** By the next morning it stood at
+  `c33a996`, 41 commits on: the take, the five removed by name, its
+  TODO answering the note, then its own work, and two commits
+  addressed to us.
+- **Two lessons, held for W3:** a take can land on a path the run
+  wrote itself, and nothing here checks for that; an overtaken
+  reading leaves the run's asks with no verdict.
+
+Resume: on `main` at the next commit, clean, not pushed. Next, in
+the reviewer's order:
+
+1. **W3**, a TODO line for each lesson; then close the reading.
+2. **Read run 3 again**, from `9869798` to `c33a996`.
+3. **The eval's groups 2 to 6**, group 3 once its decision is taken.
+4. **The conventions' full local map, and the imperative test with
+   the 50-character limit**, still due in TODO.
+
 ## 2026-09-30, after closing  (group 1 — nine commits, no revision)
 
 `group-1-2026-09-30`, cut from `main` at `51c1a9f`.

@@ -23,15 +23,16 @@
 
 ## Now (current plan step)
 
-- [ ] Read run 3 and deliver (2026-09-26, the reviewer).
-      Context: run 3 is at `~/IdeaProjects/cbc-pure-run-3`, still
-      at `9869798`; `exchange-read` from the span its decisions log
-      records, then `exchange-deliver` from its pin.
-      `temp/working-a-reading.md` stays until this reading.
-      Trigger: now — the eval's G1 is fixed, and a delivery
-      carries copies only.
-      See: devlog 2026-09-29 (the walk) and 2026-09-29, later, both
-      under Resume, for what the note carries.
+- [ ] Close the reading of run 3, then read it again (2026-10-01,
+      the reviewer).
+      Context: the note went down at `0000855` and run 3 took it; it
+      has since moved to `c33a996`, and two of its commits address
+      us — which rule wins at a take, and a hand-off readied. The
+      open reading has W3 left, a TODO line for each of its two
+      lessons. Then `exchange-read` from the read-through
+      `9869798`. `temp/working-a-reading.md` stays until then.
+      Trigger: now.
+      See: devlog 2026-09-30, the delivery to run 3.
 
 - [ ] Decide the commit type for a new agent skill here, and whether
       our convention skills are copies of the container's or our own
