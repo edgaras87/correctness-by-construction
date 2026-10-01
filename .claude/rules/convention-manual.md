@@ -57,14 +57,14 @@ others are not.
 ## What this does not fix
 
 Length, tone, and how the body is divided. Whether a section is
-needed is the manual's to decide; that a reader finds the seven
+needed is the manual's to decide; that a reader finds the nine
 where they expect them is this file's.
 
 ## The list is the floor, not the ceiling
 
-Content that fits none of the seven gets its own heading in the
+Content that fits none of the nine gets its own heading in the
 body, and the writer looks for such content rather than forcing it
 into a section it does not belong to. A section two manuals grow
 without this file asking for it is a candidate for the list — that
-is how the seven were born (`docs/conventions/shapes/` §1: a pair
-recurred) and the only way the list grows.
+is how the list's sections were born (`docs/conventions/shapes/` §1: a
+pair recurred) and the only way the list grows.
