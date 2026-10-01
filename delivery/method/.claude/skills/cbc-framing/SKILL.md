@@ -137,8 +137,7 @@ L1 → L5, outside-in, and no reorder is needed after. Skipping the
 sequence is off-default: log why.
 
 The three artifacts, under `docs/system/` — internal truth as one
-nameable path, the directory carrying the context the old dotted
-prefixes carried:
+nameable path:
 
 - `intent.md` — the promise + banked rejections
 - `definition.md` — L1–L5, filled or empty-with-reasons

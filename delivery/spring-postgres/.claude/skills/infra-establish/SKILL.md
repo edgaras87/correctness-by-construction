@@ -38,7 +38,7 @@ in. Verify against the actual repo:
    added by a dated revision entry in L1 — what changed, why,
    triggered by this check — one commit, no possession, refusal or
    verdict touched; then the check passes. Lived twice, the same way
-   both times (checkout-system, never-oversold). Framing work is not
+   both times. Framing work is not
    done here; a fact the framing left unstated is written where it
    belongs.
 3. **The repo exists and is a git repo** with its plumbing dotfiles
@@ -118,10 +118,8 @@ lived by two runs, and the shape below is theirs:
   happened. Expected results sit in the verify suite and the
   operator manual. The environment ADR carries the mapping from
   this skill's default records to the repo's own — the sentence
-  the log's first entry would have held. Run 3 (never-oversold)
-  opened the log at the decision and withdrew it one commit later
-  at the reviewer's question — what does it hold that the records
-  do not? — nothing.
+  the log's first entry would have held. Lived once: a log beside
+  such records held nothing they did not.
 - **A repo without records:**
   `docs/infrastructure/establishment-log.md`, beside the manuals —
   the decision record and the walk's lived outputs, its first entry

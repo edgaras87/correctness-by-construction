@@ -140,8 +140,9 @@ a census line races them; the store as a service on that machine,
 reachable by every instance and outliving any of them — what it is
 stays the ground's decision; the clock as the machine's, shared by
 the instances unless the evidence skews it. Five lines, not a
-design. The ground's readiness check reads this block first; both
-runs that framed without it wrote it later by a dated revision.
+design. The ground's readiness check reads this block first; a
+framing that leaves it out writes it later, by a dated revision —
+lived twice.
 
 **The probe machinery — how saturation is earned.** The enumeration
 ran on one lens (actors × three negations), which only finds facts
