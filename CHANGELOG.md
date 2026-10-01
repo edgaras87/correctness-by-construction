@@ -128,6 +128,15 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   `visual-comparison` records its outcome where the run's records
   table puts a decision of that kind, not in an ADR whatever the
   decision.
+- The method's skills agree with each other. Readiness asks for the
+  adversity this slice names, not every one the registry holds;
+  framing hands off to the ground and the bootstrap; its census gate
+  passes the trust-assumptions and runtime-ground blocks its
+  workflow allows; a caller's key is no longer a leaked mechanism;
+  the worked example shows what framing now requires, and the
+  framing workflow keeps it in step; `infra-establish` promises only
+  what happens; Release no longer claims framing decided its
+  operations items. No shipped skill names a run.
 
 ## [v1] - 2026-08-28
 
