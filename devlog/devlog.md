@@ -6,6 +6,36 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-10-01, later  (working a reading placed — 7 commits on main)
+
+One commit plan, closed with one commit outside it.
+
+- **Where it went was decided twice.** The reviewer picked folding
+  the draft's steps into the reading's shape, on my recommendation;
+  building it, I found the shape is registered as a shape in three
+  manuals, and the shapes rule says form, never content — this file
+  had already lost its lifecycle once for that. I said so before
+  staging, and the reviewer chose a rule of its own instead.
+- **`.claude/rules/working-a-reading.md`**, loading on the reading
+  files beside the shape: nine steps from count to delivery, and
+  the lessons that held. The shape gave up its four process lines
+  and is form only again. Agent-arrangement names three rules of
+  ours.
+- **The draft is gone**; its three open questions — when to read,
+  more than one run, the reviewer's seat — are Later lines. Not
+  carried: a pause's form, lived once; and two readings at once.
+- The close's sweep found the eval's F58 pointing into the draft;
+  marked fixed.
+
+Resume: on `main` at the next commit, clean, not pushed. Next:
+
+1. **Run 3 takes `e6538f6`** in its own time; our note goes once its
+   decisions log names the pin.
+2. **The eval's groups 2 to 6**, group 3 once its decision is taken;
+   G4 holds F66 and F67.
+3. **The conventions' full local map, and the imperative test with
+   the 50-character limit**, still due in TODO.
+
 ## 2026-10-01  (run 3 read and delivered again — 26 commits on main)
 
 On `main`; one commit plan inside it, W2's.
