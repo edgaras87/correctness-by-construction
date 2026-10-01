@@ -32,15 +32,6 @@
       Trigger: run 3's decisions log naming the pin `e6538f6`.
       See: devlog 2026-10-01.
 
-- [ ] Place `temp/working-a-reading.md` where standing rules live
-      (2026-10-01).
-      Context: its header says it lands there once it has run twice;
-      it has run three times — the readings of run 3 of 2026-09-23,
-      2026-09-30 and 2026-10-01. It is arrangement, not exchange:
-      how this repo works a list.
-      Trigger: due.
-      See: devlog 2026-10-01.
-
 - [ ] Decide the commit type for a new agent skill here, and whether
       our convention skills are copies of the container's or our own
       derivations (2026-09-30, the eval).
@@ -401,6 +392,30 @@
              the next read goes back to the last note's read-through.
       Trigger: the next reading overtaken.
       See: devlog 2026-09-30, the delivery to run 3.
+
+- [ ] Name when a run is read (2026-10-01, the working draft).
+      Context: a reading happens when the reviewer says. A hand-off
+      arriving, a step closing at the run, a calendar — none is
+      named, so a reading happens when someone remembers, and both
+      sides drift further from the pin while it waits.
+      Trigger: a hand-off found waiting for a reading nobody called.
+      See: devlog 2026-10-01.
+
+- [ ] Decide how readings work with more than one live run
+      (2026-10-01, the working draft).
+      Context: the rules for reading and working a reading are
+      written for one run. Two live runs mean two readings, and
+      their items may be the same finding twice.
+      Trigger: a second live run.
+      See: devlog 2026-10-01.
+
+- [ ] Say once that a reading's decisions are the reviewer's
+      (2026-10-01, the working draft).
+      Context: the agent proposes and builds, the reviewer settles —
+      every reading has gone so, and nothing says it. Probably the
+      arrangement's to say, not the reading's.
+      Trigger: the next change to `docs/conventions/agent-arrangement/`.
+      See: devlog 2026-10-01.
 
 - [ ] Watch whether the worked example anchors a run's framing
       (2026-09-17, the user).
