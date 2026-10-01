@@ -153,6 +153,8 @@ Work:
   (F16); the first read-through (F17); asks under a *To the
   deliverer* section from now on (F18); and our side's changes
   since the pin. One commit for the note, the staging on the word.
+  **Done**: the note at `0000855`, staged into the run's `temp/` as
+  `bundle-0000855/` on the reviewer's word, 2026-09-30.
 - **W2** — F19: a TODO line each for the two held items, with the
   triggers we gave the run. One commit, before W1, so the note's
   "held" points at something. **Done**, `4918882`.
