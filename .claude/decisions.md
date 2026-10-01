@@ -962,3 +962,20 @@
   here unrun from 2026-09-03 to 09-26.
   Rejected: diverging the three skills to make the split visible —
   a change nobody needs.
+
+- 2026-10-01 Both discards of 2026-09-24 stand, counted again. Run
+  3 used both in its writing pass, 2026-09-21..23, which no reading
+  had read when they were counted. `decide-first` showed its commit
+  count was not yet sayable — the job of the one line its
+  2026-09-24 entry credits. `option-comparison` built five wordings
+  of one guarantee and caught that its labels were already there —
+  a win, its first firing outside the set that made it. That makes
+  four firings and two wins for `decide-first`, two and one for
+  `option-comparison`.
+  Why: the counts move and the reasons do not. `decide-first`'s
+  wins are still its one line; `option-comparison` has one win
+  outside its making, and one instance is not a method. Settled by
+  the reviewer at the reading of 2026-10-01, its D2.
+  Rejected: reopening either. Run 3 holds neither now, by its own
+  reviewer's word, so a second instance would have to come from a
+  run that reaches for the method without the skill.

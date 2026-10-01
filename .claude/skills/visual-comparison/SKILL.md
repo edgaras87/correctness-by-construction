@@ -149,6 +149,6 @@ name the case, it is not an entry yet.
   right, §4 is where it shows, by not growing
 - CBC ADR-0030 — the third run was not about showing anything,
   which separated a general method out and left this one
-  specialised. That general half was discarded 2026-09-24, unused;
-  §4's discipline line is from there, and so is §1's rule that the
-  set must hold a non-picture
+  specialised. That general half was discarded 2026-09-24; §4's
+  discipline line is from there, and so is §1's rule that the set
+  must hold a non-picture
