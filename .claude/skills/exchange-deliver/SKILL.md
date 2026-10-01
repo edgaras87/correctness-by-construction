@@ -93,7 +93,7 @@ reports, and waits for the word before 2.3.
                 -type f 2>/dev/null); }
    for g in $groups; do copies $g; done \
      | sort | uniq -d                          # must print nothing
-   stage=$(mktemp -d)
+   stage=$(mktemp -d) && chmod 755 "$stage"
    for g in $groups; do
      copies $g | (cd delivery/$g && xargs cp --parents -t "$stage")
    done
@@ -106,6 +106,10 @@ reports, and waits for the word before 2.3.
 
    `concept/` is the one path that is not a mirror, and this is the
    one line that says so.
+
+   `mktemp -d` makes the folder owner-only, and the copy in 2.3
+   carries its mode: a run that takes the staging's `.` onto its
+   root gets 700 there, which git does not show. The `chmod` is why.
 
 3. **Copy across, named by `H`, the note beside it:**
 
