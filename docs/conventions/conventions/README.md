@@ -263,15 +263,17 @@ against the text as shipped. CBC ADR-0035: run 3 made a thing the
 vocabulary had no word for; the vocabulary gained one, and the
 next day went, on the same evidence read further. `cbc-slice`,
 three times: every in-place edit run 3 made to the method was
-taken whole. And the concept has not bent: it is at v1, verbatim
-from the archive, nothing from three runs has reached a chapter —
-either evidence it is right or evidence nothing has been read
-against it hard enough, and this page does not know which.*
+taken whole. And the concept has bent once: chapter 03's sentence
+on when technology enters was corrected from the runs (`211bd0f`),
+an editorial fix that left it at v1. Nothing else from three runs
+has reached a chapter — either evidence it is right or evidence
+nothing has been read against it hard enough, and this page does
+not know which.*
 
 ## 4. Adding a convention
 
-As the last three were added — `visual-comparison`, the exchange,
-shapes — and not as the index once said:
+As the last four were added — `visual-comparison`, the exchange,
+shapes, and this one — and not as the index once said:
 
 1. An ADR for the decisions behind it, opened Proposed when it lands
    inside a change set.
@@ -294,7 +296,7 @@ shapes — and not as the index once said:
 No CHANGELOG line and no PLAN step. The CHANGELOG is the
 concept-version log (CBC ADR-0003) and has no place for a
 convention's entry; the PLAN has no per-convention steps. *The
-index asked for both until 2026-09-28, and the last three
+index asked for both until 2026-09-28, and the last four
 conventions took neither — a rule kept where nobody reads it (CBC
 ADR-0039).*
 
@@ -326,8 +328,8 @@ what a file stands on has to travel with the file.
 ## Where to look
 
 - The chain: `docs/conventions/README.md`.
-- The rule for every description: `ARCHITECTURE.md` §3.
-- What `foundation` holds for each kind of file: the exchange,
-  `docs/conventions/exchange/` §3.
+- The rule for every description: §3.5, above.
+- What `foundation` holds for each kind of file: §2, above; that it
+  travels with a copy, `docs/conventions/exchange/` §3.5.
 - A convention whose artifact is a rule, not a skill:
   `docs/conventions/shapes/`.

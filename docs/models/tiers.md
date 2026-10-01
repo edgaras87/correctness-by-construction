@@ -74,11 +74,11 @@ the note, the pin, the read — is `ARCHITECTURE.md` §2.5 and
 ### 3.1 Down is delivery
 
 Two forms. A copy, always pinned at a commit of the tier above,
-which is what "a concept version" is. And a fill: what a run owns
-from its birth on — the steps written into its plan, its entry
-file, whatever the birth materials left for it to author — never
+which is what "a concept version" is. And a fill: text written at
+birth into a file the run owns from then on — today one, the
+playbook's steps into its plan (`delivery/README.md` §2) — never
 re-copied, and folded back by name at the run's retrospective, into
-the playbook or the concept that seeded it. At a run's birth the two
+the playbook that seeded it. At a run's birth the two
 meet, both input to Framing rather than agreement.
 
 ### 3.2 Told is not delivery

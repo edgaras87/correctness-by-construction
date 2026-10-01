@@ -93,10 +93,10 @@ git holds it.
 Both numbers are in the run because the run is the only place the
 deliverer can look. To deliver, read the run's pin and diff forward
 in the deliverer's tree. To read, read the run's read-through and go
-forward in the run's. *Intended: today the run records the pin and
-nobody records the read-through; the last reading found its start
-by matching a
-devlog date against the run's log.*
+forward in the run's. *Until 2026-10-01 the run recorded the pin
+and nobody recorded the read-through; a reading found its start by
+matching a devlog date against the run's log. Run 3's take of that
+day recorded the first.*
 
 The pin is a commit of the deliverer's. The run stores it and
 cannot resolve it, so everything the run needs to check must be

@@ -28,8 +28,9 @@ Only an exposed one travels, as a pinned copy into the run's
   run's from then on. They never travel again.
 - **Pinned copies.** The convention skills and rules in the
   container, and every skill in `method/` and `spring-postgres/`,
-  land where the container claims nothing. The run never edits them
-  in place; a newer one arrives by copying anew at a new pin.
+  land where the container claims nothing. The run may edit one in
+  place, under the exchange's rule (`docs/conventions/exchange/` §5);
+  a newer one arrives by copying anew at a new pin.
 - **Fills.** Text the seed writes into a file the container already
   put there, which is the run's own from that moment. One exists:
 

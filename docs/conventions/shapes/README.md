@@ -22,8 +22,8 @@ archaeology.
 
 - **`delivery/container/.claude/rules/shapes-lifecycle.md` — the
   rule, shipped**, held at `.claude/rules/shapes-lifecycle.md` and
-  loading when a file under `.claude/shapes/` is touched. §1 to §3
-  and §5, from the run's seat, with the definition repeated because
+  loading when a file under `.claude/shapes/` is touched. §1 to §5,
+  from the run's seat, with the definition repeated because
   a run cannot open this page.
 - **The deliverer's shapes — instances, not copies**: rules under
   `.claude/rules/` with a Governs line,

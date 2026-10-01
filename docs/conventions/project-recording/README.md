@@ -57,7 +57,7 @@ lessons reach the playbook when the deliverer reads the run. Its
 
 The deliverer keeps the same records, derived from this page rather
 than from the stubs (CBC ADR-0042), and differs in five things. It
-has no project end, so lessons fold back at each step's gate close
+has no project end, so lessons fold back at each milestone's close
 rather than at a retrospective, as its first devlog entry agreed on
 2026-08-27. It owns the playbook,
 `delivery/fills/cbc-run-pure-playbook.md`, where a run holds only
@@ -746,9 +746,9 @@ If yes, it gets written down, once, in its designated home.
 
 ## 13. The records table in the entry file
 
-*Numbered by creation, not reading order: §11, §12 and §13 are
-cited by number from other conventions, and renumbering would break
-them for a cosmetic gain.*
+*Numbered by creation, not reading order: §13 is cited by number
+from other conventions, and renumbering would break those citations
+for a cosmetic gain.*
 
 The entry file — the one file loaded before any task, what it may
 hold, how it stays small — is
