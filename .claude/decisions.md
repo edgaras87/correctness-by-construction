@@ -995,3 +995,14 @@
   withdrawn when the conflict surfaced. A skill between read and
   deliver — it fires only when called, and a reading is worked
   across sessions. Leaving the draft — its own condition was met.
+
+- 2026-10-01 `commit-messages` types a new agent skill or rule
+  `chore(agent)`, as installing or updating one already was; ours
+  follows the container's, byte-identical.
+  Why: `feat` tells a release tool a user-facing capability arrived,
+  and a skill under `.claude/` is detachable — no user meets it.
+  Our own commits were `chore(agent)` already; the rule we shipped
+  said otherwise.
+  Rejected: keeping `feat(agent)` and following it here; letting our
+  copy differ from the container's (CBC ADR-0042 keeps them
+  derived from one manual).
