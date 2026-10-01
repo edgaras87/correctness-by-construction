@@ -8,7 +8,9 @@ one win, and in the win one line did the work) and
 The renames stand, `visual-comparison` stands, and decision 10's
 merge-back trigger is answered by there being nothing left to merge
 back into. The reasoning for both discards is in `.claude/decisions.md`,
-2026-09-24.
+2026-09-24. Counted again 2026-10-01 with run 3's uses, which that
+count missed — four firings and two, one more win each — and both
+discards stand (the same file, 2026-10-01).
 
 ## Context
 
