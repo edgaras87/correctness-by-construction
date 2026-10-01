@@ -207,6 +207,10 @@ Work:
   TODO names by hand: the staged paths against the run's own files.
   F11's verdict is W2's: the take's commits follow
   `commit-messages`, the chapters' first, the entry in the last.
+  **Done**: the note at `e6538f6`, staged into the run's `temp/` as
+  `bundle-e6538f6/` on the reviewer's word, 2026-10-01. Two copies
+  differ, none new, none gone, as the note says; no staged path is
+  new to the run, so none could land on a file it wrote.
 
 ## 7. What this reading taught
 
