@@ -170,36 +170,16 @@ unexposed one is in no birth copy at all — it would spend the only
 independence there is — so it is held apart, names its group, and
 reaches a project as a delivery staged at a gate.
 
-**A project fetches nothing** (`docs/conventions/exchange/` §1):
-what arrives, arrives because a person asked for it and staged it.
-So the gate's act is local and always the same: look in `temp/`.
-And what it finds does not stay a delivery — after the gate has
-read it, the result **becomes that
-project's own shape**, whether it came back unchanged, changed by
+### 4.1 A project fetches nothing
+
+Nothing is fetched (`docs/conventions/exchange/` §1): what arrives,
+arrives because a person asked for it and staged it. So the gate's act
+is local and always the same: look in `temp/`. And what it finds does
+not stay a delivery — after the gate has read it, the result **becomes
+that project's own shape**, whether it came back unchanged, changed by
 what the project found, or merged with what was already there. The
-staging leaves; the shape stays, with dated lines saying what
-arrived, what was taken and what was refused.
-
-**Why kept rather than deleted.** Deleting would only hide what has
-already been read. Keeping it makes the next gate cheap and the
-reconciliation possible: the deliverer reads the project's version
-and its dated lines against what it sent, and decides whether to
-take the change or leave its own standing.
-
-**Staleness, honestly.** A kept copy is a snapshot, current only as
-of the delivery it came from, and nothing in a project can tell
-when the deliverer's has moved on. A fresh delivery is the only
-refresh, and asking for one is a person's act on this side, not the
-project's.
-
-**A shape is written in two separable layers, and only one of them
-travels well.** The skeleton and what it encodes are general by
-construction: they say *a worked example with real numbers from this
-system*, not which numbers. The illustrations filling the
-placeholders are the project's, and are marked as such. A reader
-takes the first and leaves the second, and nothing has to be
-rewritten at the hand-off to make that possible. This is why the
-rule asks a project to mark its illustrations apart.
+staging leaves; the shape stays, with dated lines saying what arrived,
+what was taken and what was refused.
 
 *Intended: staging a shape for a gate is a third act of the
 exchange, beside read and deliver, and not a delivery. It reads only
@@ -212,9 +192,35 @@ No unexposed shape exists on either side, so nothing fires wrongly
 today. Its skill, and the copies rule's exclusion, are written from
 the first staging, not before (CBC ADR-0037 decision 5).*
 
-**Birth and delivery, drawn.** Where a shape of each kind sits at
-the deliverer, and the two different moments at which each reaches
-a run. Every arrow that crosses is carried by a person.
+### 4.2 Why kept rather than deleted
+
+Deleting would only hide what has already been read. Keeping it makes
+the next gate cheap and the reconciliation possible: the deliverer
+reads the project's version and its dated lines against what it sent,
+and decides whether to take the change or leave its own standing.
+
+### 4.3 Staleness, honestly
+
+A kept copy is a snapshot, current only as of the delivery it came
+from, and nothing in a project can tell when the deliverer's has moved
+on. A fresh delivery is the only refresh, and asking for one is a
+person's act on this side, not the project's.
+
+### 4.4 Two separable layers, and only one travels well
+
+A shape is written in two layers. The skeleton and what it encodes are
+general by construction: they say *a worked example with real numbers
+from this system*, not which numbers. The illustrations filling the
+placeholders are the project's, and are marked as such. A reader takes
+the first and leaves the second, and nothing has to be rewritten at
+the hand-off to make that possible. This is why the rule asks a
+project to mark its illustrations apart.
+
+### 4.5 Birth and delivery, drawn
+
+Where a shape of each kind sits at the deliverer, and the two
+different moments at which each reaches a run. Every arrow that
+crosses is carried by a person.
 
 *This page's pictures illustrate its prose and never carry a fact
 alone. Measured 2026-09-27 and found false: five claims lived only
@@ -276,12 +282,13 @@ it is phrased.
 
 ## 5. How a shape is used, and what a difference means
 
-**Use, drawn.** What a gate actually does when a step closes: look in
-`temp/`, find which shapes govern what was made, read, and settle
-each difference. Two of its endings are easy to misread as gaps in
-prose and are plainly endings here — "nothing was staged" is a
-complete answer, and "no shape governs this" means nothing is
-checked and that is correct.
+### 5.1 Use, drawn
+
+What a gate actually does when a step closes: look in `temp/`, find
+which shapes govern what was made, read, and settle each difference.
+Two of its endings are easy to misread as gaps in prose and are
+plainly endings here — "nothing was staged" is a complete answer, and
+"no shape governs this" means nothing is checked and that is correct.
 
 ```mermaid
 flowchart TB
@@ -300,6 +307,8 @@ flowchart TB
   WHO -->|"the output drifted"| B["the output is brought<br/>to the shape"]
   WHO -->|"each has something"| C["both move"]
 ```
+
+### 5.2 A tick, and a difference
 
 A gate reads what a step made against every shape governing it, and
 **what it ticks records what it checked against** — including that
