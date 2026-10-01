@@ -979,3 +979,19 @@
   Rejected: reopening either. Run 3 holds neither now, by its own
   reviewer's word, so a second instance would have to come from a
   run that reaches for the method without the skill.
+
+- 2026-10-01 Working a reading is a rule,
+  `.claude/rules/working-a-reading.md`, loading on the reading files
+  beside the reading's shape. Placed from `temp/working-a-reading.md`,
+  whose header said it lands once it has run twice; it ran three
+  readings of run 3. The shape's four process lines moved into it,
+  and the shape is form only again.
+  Why: the moment it serves is a reading being worked, which is a
+  reading file opened — the paths the shape already loads on. The
+  shape could not hold it: a shape is form, never content
+  (`docs/conventions/shapes/` §1), and this one lost its lifecycle
+  once for that reason.
+  Rejected: folding it into the shape — the reviewer's first pick,
+  withdrawn when the conflict surfaced. A skill between read and
+  deliver — it fires only when called, and a reading is worked
+  across sessions. Leaving the draft — its own condition was met.

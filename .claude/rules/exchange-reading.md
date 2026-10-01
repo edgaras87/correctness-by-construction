@@ -61,19 +61,8 @@ starts from. Written first, before anything is read.
 - **Numbers are kept.** An item keeps its number when it closes and
   is marked done in place — the file cites its own items, and so
   do lines outside it. Nothing is renumbered.
-- **Every close is followed by one pass over every open item.**
-  The item is marked the moment it closes, and then each open item
-  — F, D or W — is read once against it: changed, closed, or
-  blocked by this close, marked in place. Settling one reshapes or
-  deletes others, and the pass is the only cheap moment to see how.
-- **An item's set can close other items.** The list is not a set of
-  independent things, and a reading that counts them as such
-  over-counts what is left.
-- **A decision may be answered by a question the list never
-  asked.** The options written down are not the space.
-- **Written before the branch.** The reading counts the work and
-  the count says whether a branch is needed, so the reading comes
-  first, on main.
+
+How the list is worked is `.claude/rules/working-a-reading.md`'s.
 
 ---
 
