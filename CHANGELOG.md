@@ -140,6 +140,9 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   framing workflow keeps it in step; `infra-establish` promises only
   what happens; Release no longer claims framing decided its
   operations items. No shipped skill names a run.
+- The decisions-log stub a run is born with points at
+  `commit-messages` for how its commits are made, rather than
+  restating the rule.
 
 ## [v1] - 2026-08-28
 
