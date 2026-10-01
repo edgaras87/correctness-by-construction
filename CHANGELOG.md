@@ -23,6 +23,11 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   on, where they cited a repo a run cannot read; the decisions-log
   stub loses its provenance line and the plan stub's placeholder
   reads `<concept commit>` (ADR-0038).
+- A run takes a delivery in commits that follow `commit-messages`:
+  the concept chapters' commit first, and the decisions entry with
+  the pin in the last, where every copy equals the pin.
+  `delivered-copies.md` rule 5 says the order and points for the
+  rest, where a run had read one pin as one commit (ADR-0046).
 
 ### Added
 

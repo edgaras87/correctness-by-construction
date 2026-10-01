@@ -1,8 +1,10 @@
 # 0046. A take is two commits
 
 Date: 2026-10-01
-Status: Proposed (2026-10-01, under the commit plan for the take's
-two commits)
+Status: Accepted (2026-10-01, at the set's records commit; opened
+Proposed under the commit plan for the take's two commits, and
+corrected at its revision to point at `commit-messages` rather than
+restate it)
 
 ## Context
 

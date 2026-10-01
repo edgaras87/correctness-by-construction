@@ -178,10 +178,15 @@ The verdicts that need no decision, from records here:
 Work:
 
 - **W1** — F12, F14: `exchange-deliver` stages a readable folder,
-  the mode set after `mktemp -d`. One commit, before W6.
+  the mode set after `mktemp -d`. One commit, before W6. **Done**,
+  `9d4370f`.
 - **W2** — D1: **plan**. The ADR, Proposed then Accepted;
   `delivered-copies.md` rule 5 and `docs/conventions/exchange/` §4
-  step 3 say the take's two commits.
+  step 3 say the take's two commits. **Done**, reshaped at the
+  plan's revision: both say only the order and point at
+  `commit-messages` for the rest. ADR-0046 at `bb96c65`, Accepted
+  in the set's records commit; §4 at `2969e15` and `ca84994`; rule
+  5 at `cf109f1`.
 - **W3** — F17: `visual-comparison` step 6 and its gate record the
   outcome where the entry file's records table puts a decision of
   its kind. Both seats, byte-identical. One commit.
@@ -196,6 +201,8 @@ Work:
   verdicts above and D1 to D3's, read through `c33a996`, and our
   side's changes since `0000855`. At its staging, the check our
   TODO names by hand: the staged paths against the run's own files.
+  F11's verdict is W2's: the take's commits follow
+  `commit-messages`, the chapters' first, the entry in the last.
 
 ## 7. What this reading taught
 
