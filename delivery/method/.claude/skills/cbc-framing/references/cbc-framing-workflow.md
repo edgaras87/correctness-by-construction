@@ -4,6 +4,10 @@
 definition and a slice surface. Ends exactly where `cbc-slice-workflow.md`
 begins — its output is that workflow's input.*
 
+*When a step's required output changes here, `worked-example.md` — beside
+this file and in the cbc-slice skill, one text — changes in the same
+commit: a framer is sent to it to see what a step's output looks like.*
+
 ---
 
 ## The unit
