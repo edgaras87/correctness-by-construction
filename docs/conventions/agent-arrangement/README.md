@@ -109,11 +109,10 @@ A closed list of paths (CBC ADR-0038, 1c):
   shapes directory, the decisions log, and the tool's settings,
   tracked and machine-local, §3.
 
-**Detachable, and kept so.** A commit that touches these paths
-touches nothing else, scoped `agent` — the rule is
-`docs/conventions/commit-messages/` §2. `COMMIT-PLAN.md` rides the
-same scope while it exists but is
-`docs/conventions/commit-plan/`'s artifact, not this convention's.
+**Detachable, and kept so.** How a commit that touches these paths
+is made is `docs/conventions/commit-messages/` §2. `COMMIT-PLAN.md`
+is `docs/conventions/commit-plan/`'s artifact, not this
+convention's.
 
 **Not records.** The arrangement holds no project truth: nothing
 here says what the project is deciding, planning or shipping. It
@@ -130,10 +129,10 @@ One file, loaded into an agent's context at the start of every
 session before it is given any task. It is a map — what the project
 is, where the records are — and the little that has to be present on
 every task because no moment would deliver it. Which conventions
-apply is not in it: in a run, the registry in `.claude/decisions.md`
-is that list (§3.4); at the deliverer, it is the `foundation` each of
-its skills and rules names. Each convention reaches the agent
-through its own channel.
+apply is not in it: in a run, the birth entry in
+`.claude/decisions.md` is that list (§3.4); at the deliverer, it is
+the `foundation` each of its skills and rules names. Each
+convention reaches the agent through its own channel.
 
 ### 2.2 Why
 
@@ -272,10 +271,12 @@ project: a project makes it when it writes its first shape.
 The arrangement's decision log: append-only, dated, three lines per
 entry — what changed, why, what was rejected. The standing rule
 rides as a comment in the artifact it governs; the log keeps the why
-and the rejected options; neither repeats the other. A run's doubles
-as its convention registry (`docs/conventions/exchange/` §2); the
-deliverer's does not, since it receives no conventions (CBC
-ADR-0042). Its rules ride in its own stub.
+and the rejected options; neither repeats the other. A run's also
+holds what it was delivered: its birth entry lists the conventions
+it holds, and each delivery entry the pin and the read-through
+(`docs/conventions/exchange/` §2.2). The deliverer's holds neither,
+since it receives no delivery (CBC ADR-0042). Its rules ride in its
+own stub.
 
 ### 3.5 `settings.json`
 

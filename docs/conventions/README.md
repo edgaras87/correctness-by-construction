@@ -37,9 +37,8 @@ only `commit-plan`. A question about a diagram's shape reaches
 - **`visual-comparison`** fires when what is being chosen is how a
   structure is shown and the candidates can be rendered cheaply
   enough to look at. A choice that is not about showing something
-  has no convention: it is decided and corrected while building,
-  which the commit-plan skill's §4 and §5 carry,
-  `delivery/container/.claude/skills/commit-plan/SKILL.md`.
+  has no convention of its own: it is worked inside a commit plan,
+  `docs/conventions/commit-plan/`.
 - **`commit-plan`** fires when the work needs more than one commit.
   It plans the commits, not the change.
 - **`commit-messages`** fires when you are writing any commit, in a
