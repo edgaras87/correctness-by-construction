@@ -10,9 +10,8 @@
      options, and neither repeats the other. Commit bodies stay
      ordinary commit bodies.
 
-     This file is agent-side: a commit touching it is scoped `agent`
-     and touches nothing else (the commit-messages skill carries
-     that rule).
+     This file is agent-side; how a commit touching it is made is
+     the commit-messages skill's.
 
      At the project retrospective, read top to bottom: each entry
      graduates to the deliverer, stays local, or dies.
