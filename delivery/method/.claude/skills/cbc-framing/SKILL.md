@@ -73,9 +73,11 @@ polish passes.
   the mirror test. Sketch-enemies are fine here — they are debt step 2 pays.
 - **Step 2:** facts only, concrete enough to attack with ("responses get
   lost", never "networks are unreliable"), consequence-first. **A census is
-  not an assumption inventory** — list what can hurt, never what you trust.
-  Exit only by saturation: two consecutive fresh probes finding nothing
-  new — the probe log recorded in L1.
+  not an assumption inventory** — list what can hurt, never what you trust,
+  outside the two labelled blocks the workflow allows beside the facts:
+  the trust assumptions, accepted deliberately and kept short, and the
+  runtime ground. Exit only by saturation: two consecutive fresh probes
+  finding nothing new — the probe log recorded in L1.
 - **Step 3:** each kill states **what dies, never how it's saved** — park
   any mechanism the instant it surfaces. Land kills invariant-shaped with
   adversity named, consumable by the slice workflow with zero translation.
