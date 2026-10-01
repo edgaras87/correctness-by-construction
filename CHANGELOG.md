@@ -123,6 +123,11 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   retrospective keeps a run's lessons in its own file, and the
   entry file, the stubs and the seed's subjects and prompt drop
   words a run never learns.
+- A delivery's staging arrives readable: taken onto a run's root, it
+  no longer leaves the root owner-only, which git cannot show.
+  `visual-comparison` records its outcome where the run's records
+  table puts a decision of that kind, not in an ADR whatever the
+  decision.
 
 ## [v1] - 2026-08-28
 

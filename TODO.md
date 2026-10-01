@@ -23,17 +23,23 @@
 
 ## Now (current plan step)
 
-- [ ] Close the reading of run 3, then read it again (2026-10-01,
+- [ ] Delete the note to run 3 once run 3 has taken it (2026-10-01,
       the reviewer).
-      Context: the note went down at `0000855` and run 3 took it; it
-      has since moved to `c33a996`, and two of its commits address
-      us — which rule wins at a take, and a hand-off readied. The
-      open reading's last item, W3, is its two lessons, now lines
-      below; it closes with W3 marked and the file deleted. Then
-      `exchange-read` from the read-through `9869798`.
-      `temp/working-a-reading.md` stays until then.
-      Trigger: now.
-      See: devlog 2026-09-30, the delivery to run 3.
+      Context: the note at `e6538f6` and its staging,
+      `bundle-e6538f6/`, went into run 3's `temp/` on 2026-10-01:
+      two copies, read through `c33a996`. The reading is closed and
+      gone. The take is the run's, in its own time.
+      Trigger: run 3's decisions log naming the pin `e6538f6`.
+      See: devlog 2026-10-01.
+
+- [ ] Place `temp/working-a-reading.md` where standing rules live
+      (2026-10-01).
+      Context: its header says it lands there once it has run twice;
+      it has run three times — the readings of run 3 of 2026-09-23,
+      2026-09-30 and 2026-10-01. It is arrangement, not exchange:
+      how this repo works a list.
+      Trigger: due.
+      See: devlog 2026-10-01.
 
 - [ ] Decide the commit type for a new agent skill here, and whether
       our convention skills are copies of the container's or our own

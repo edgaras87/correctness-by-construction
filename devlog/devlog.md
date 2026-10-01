@@ -6,6 +6,50 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-10-01  (run 3 read and delivered again — 26 commits on main)
+
+On `main`; one commit plan inside it, W2's.
+
+- **The last reading closed.** Its W3 put two lessons in TODO — a
+  take can land on a run's own path; an overtaken reading leaves
+  asks unanswered — and the reading and its served note went.
+- **Run 3 read again, `9869798..c33a996`, 41 commits.** Its take of
+  `0000855` was clean: 38 copies equal the pin byte for byte. Its
+  two asks both traced to our shipped text — two of our rules met at
+  its take, and our staging arrived owner-only, so its `cp -a` set
+  its root to 700. Nineteen findings, three decisions, six work
+  items.
+- **D1 to D3 settled as proposed.** A take's commits follow
+  `commit-messages`, the chapters' first, the entry in the last
+  (ADR-0046); both discards of 2026-09-24 stand with run 3's uses
+  counted; a run's decisions-log entries stay as long as they are.
+- **The reviewer caught a restatement.** Exchange §4 first named the
+  commit types — `commit-messages`' subject, against conventions
+  §3.1. The plan was revised; §4, the ADR and rule 5 point instead.
+  A recheck found two more of the kind, F66 and F67 in the eval's
+  G4: agent-arrangement §1 and the container's decisions stub.
+- **Two seats, two commits.** W3 and W4 each edited a skill both
+  seats hold and were counted as one commit; `commit-messages`
+  split them. The lesson is in `temp/working-a-reading.md`.
+- **Delivered:** the note at `e6538f6`, staged as `bundle-e6538f6/`
+  on the reviewer's word — two copies, read through `c33a996`, the
+  folder 755. No staged path was new to the run.
+- **Asked and answered:** what the absence rung's "held" means — we
+  watch, nothing rejects it by silence, and nothing checks its
+  trigger but a reading noticing. The reviewer kept it so.
+- `working-a-reading.md` has now run three times, and its header
+  says it lands once it has run twice. A TODO line now.
+
+Resume: on `main` at the next commit, clean, not pushed. Next:
+
+1. **Run 3 takes `e6538f6`** in its own time; our note goes once its
+   decisions log names the pin.
+2. **Place `working-a-reading.md`** — due.
+3. **The eval's groups 2 to 6**, group 3 once its decision is taken;
+   G4 now holds F66 and F67.
+4. **The conventions' full local map, and the imperative test with
+   the 50-character limit**, still due in TODO.
+
 ## 2026-09-30, at the end  (the delivery to run 3 — seven commits on main)
 
 On `main`, no branch: the reading counted three work items and none
