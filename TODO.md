@@ -28,9 +28,10 @@
       Context: the note went down at `0000855` and run 3 took it; it
       has since moved to `c33a996`, and two of its commits address
       us — which rule wins at a take, and a hand-off readied. The
-      open reading has W3 left, a TODO line for each of its two
-      lessons. Then `exchange-read` from the read-through
-      `9869798`. `temp/working-a-reading.md` stays until then.
+      open reading's last item, W3, is its two lessons, now lines
+      below; it closes with W3 marked and the file deleted. Then
+      `exchange-read` from the read-through `9869798`.
+      `temp/working-a-reading.md` stays until then.
       Trigger: now.
       See: devlog 2026-09-30, the delivery to run 3.
 
@@ -162,6 +163,20 @@
       Ideas: the one-line pointer rule, in the container's stub.
       Trigger: the next reading of run 3.
       See: devlog 2026-09-29, the split.
+
+- [ ] Decide whether a delivery checks its paths against the run's
+      own files (2026-09-30, the reading of run 3).
+      Context: our shipped `.claude/rules/shapes-lifecycle.md` sat
+      at the path of run 3's own rule, so the take landed ours over
+      the run's. The reading found it; the reviewer let it land and
+      the note named it. `docs/conventions/exchange/` §3.4 checks
+      only that no path is claimed by two of our groups, and the
+      take's diff (§4) sees that a file differs, not whose it is.
+      Once so far.
+      Ideas: in `exchange-deliver`, the staged paths against the
+             run's files that are not at its pin.
+      Trigger: the next delivery — the check by hand at its staging.
+      See: devlog 2026-09-30, the delivery to run 3.
 
 - [ ] Fold run 3's step form into the run playbook, if its Step 7
       says the form held (2026-09-23).
@@ -375,6 +390,20 @@
       four additions were usable with no follow-up question. None
       of the three is in the exchange manual.
       Trigger: the next revision of `docs/conventions/exchange/`.
+
+- [ ] Decide whether an overtaken reading still owes the run a note
+      (2026-09-30, the reading of run 3).
+      Context: the reading of 2026-09-24 was overtaken on 09-26 and
+      deleted without one, so what run 3 had addressed to us since
+      its pin had no verdict until the reading of 2026-09-30 read it
+      again — three edits to copies, ten asks and offers.
+      `docs/conventions/exchange/` §6.4 closes an overtaken reading
+      "the same way", one pass over its items, and is silent on the
+      note §6.6 says every read ends with. Once so far.
+      Ideas: the overtaken reading sends a note: read, asks open.
+             the next read goes back to the last note's read-through.
+      Trigger: the next reading overtaken.
+      See: devlog 2026-09-30, the delivery to run 3.
 
 - [ ] Watch whether the worked example anchors a run's framing
       (2026-09-17, the user).
