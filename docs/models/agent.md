@@ -240,10 +240,8 @@ under *what this is made usable as*, and the choice rests on §8. A
 skill's frontmatter names its trigger; no field anywhere names a
 channel — the manual's *why it arrives this way* does, in prose.
 
-A worked table stood here until every convention carried its own
-statement, at which point the two disagreed on two of five rows.
-The table had been right when written and had no way to stay so —
-one fact, two homes, and this was the one nothing edited.
+No table here: each manual states its own channel, and a list here
+would be a second home for one fact — the one nothing edits.
 
 ## 10. Bindings (Layer 2)
 

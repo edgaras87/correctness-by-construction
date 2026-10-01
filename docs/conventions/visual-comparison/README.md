@@ -46,13 +46,11 @@ unhelpful; a diagram can be *wrong* in a way the reader will
 believe, because a drawing makes a claim by its shape before anyone
 reads a label.
 
-Its name went through four candidates before this one, and the
-reason the others failed is the same reason this page exists.
-`diagram-comparison` named the winning candidate rather than the
-question — and would have excluded the table and the numbered list
-from the set, which is where CBC ADR-0028's best answer to one
-requirement came from. The question is *how is this shown*, and
-"not a picture" is one of its answers.
+Its name is the question, not a candidate: *how is this shown*,
+and "not a picture" is one of its answers. A name that named a
+picture would have kept the table and the numbered list out of the
+set, which is where CBC ADR-0028's best answer to one requirement
+came from.
 
 ## 2. Why it is shaped this way
 

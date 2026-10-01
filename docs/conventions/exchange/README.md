@@ -14,8 +14,8 @@ Until 2026-09-26 the receiver's protocol, `convention-lifecycle`,
 while run 3 ran it at every take; the deliverer's half was
 `bundle-update.md`, 527 lines; and the rule for editing a copy was
 written twice in two repos, six elements the same in different
-words (§5.1). Made one convention on 2026-09-26 (CBC ADR-0036); §7
-says what it replaced.
+words (§5.1). Made one convention on 2026-09-26; what it replaced
+is CBC ADR-0036's.
 
 ## What this is made usable as
 
@@ -316,7 +316,7 @@ and it
 ### 5.1 One rule for every shipped skill and rule
 
 There are not two.
-*Finding, checked side by side 2026-09-25: today it is written twice
+*Found, checked side by side 2026-09-25: it was written twice then
 — once for conventions inside the receiver's protocol, once for the
 method skills in a file run 3 wrote itself. Six elements are the
 same rule in different words. Run 3's is the superset: it alone
@@ -475,20 +475,6 @@ for itself when a hand-off was seen and not yet answered.
 There is no other channel. A note
 alone, with no files, is still a delivery: the read-through moves,
 the pin does not.
-
-## 7. What this replaced, 2026-09-26
-
-| what stood | where | what became of it |
-|---|---|---|
-| `convention-lifecycle` skill, 154 lines | ours, and shipped | replaced by §4–§5 as the run's half; deleted here |
-| `skills-changed-in-place.md`, run 3's own | run 3 | replaced by `delivered-copies.md`, derived from it and shipped; the note names the rename |
-| `bundle-update.md`, 527 lines | `delivery/installs/` | replaced by §3 and §6 as our half; the lessons list it never had is what §3–§6 are |
-| the harvest section of `delivery/README.md` | ours | folds into §6 |
-| the entry-file line "never edited in place" | shipped | contradicts §5; goes |
-| `delivery/method/` and `delivery/spring-postgres/` laid out flat | ours | each becomes a piece of the run's tree, §3; two `git mv` per skill |
-| the file lists inside `bundle-update.md`'s scripts | ours | gone with the mapping; a group is a directory name |
-| the line-6 derivation comments in five skills, and nine template lines | shipped | became the one frontmatter field, `foundation`, `docs/conventions/conventions/` §2 |
-| `master.md` §2.5 and §3 | ours | stay; this is their detail |
 
 ## Why it arrives this way
 
