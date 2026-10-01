@@ -67,8 +67,9 @@ is not a builder; there is nothing to build. Its entry file sits at
 the repo root, the address the arrangement is described from: *"A
 concept repo… Documents only — no code, no runs."* It holds the
 same three convention skills; the exchange's two, `exchange-read`
-and `exchange-deliver`; and two rules of its own,
-`exchange-reading.md`, the shape of a reading, and
+and `exchange-deliver`; and three rules of its own,
+`exchange-reading.md`, the shape of a reading,
+`working-a-reading.md`, how a reading's list is worked, and
 `convention-manual.md`, the shape of a manual. Its decisions log
 holds arrangement decisions only, and no registry: it receives no
 conventions, and no one reads it but itself, so an entry that
