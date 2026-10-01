@@ -101,7 +101,10 @@ item must end as; this is how the list gets there.
 - **One item's set can dwarf the reading.** W4 was twenty-three
   commits inside a ten-item list. The reading is a list of lists,
   and the count in step 1 undercounts by construction. Fine, as long
-  as nobody reads the count as a size.
+  as nobody reads the count as a size. An item that edits a skill
+  both seats hold also undercounts: it is two commits, the agent's
+  own files apart — W3 and W4 on 2026-10-01 were counted as one
+  each.
 - **The deliverer moves while the reading is paused.** The other
   direction, and it happened: the run-3 reading was paused on 09-24
   with three items open, and sixty commits here — three conventions
