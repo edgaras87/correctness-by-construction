@@ -3,19 +3,20 @@
 ## Summary — the state after all commits
 
 A run takes a delivery in two commits, and no rule it holds is
-broken by doing so. The concept chapters land first, in a `docs:`
-commit; then the `.claude/` copies, with the names the note says
-are gone removed and the decisions entry carrying the pin and the
-read-through, in a `chore(agent)` commit. The entry lands in the
-commit where every copy equals the pin, so that commit stays the
-diff base `exchange-read` already names.
+broken by doing so. `commit-messages` already keeps the concept
+chapters and the `.claude/` copies apart; what the take adds is
+the order. The chapters' commit comes first, and the decisions
+entry carrying the pin and the read-through lands in the last,
+where every copy equals the pin — so that commit stays the diff
+base `exchange-read` already names.
 
-`docs/conventions/exchange/` §4 says it for us, and the shipped
-`delivered-copies.md` rule 5 says it for the run. `commit-messages`
-is unchanged: a commit that touches `.claude/` still touches
-nothing else. ADR-0046 records why the take splits rather than the
-rule bending. This is W2 of the reading of 2026-10-01, D1 settled;
-run 3 asked it (F11), and the next note answers it.
+`docs/conventions/exchange/` §4 says the order for us, and the
+shipped `delivered-copies.md` rule 5 says it for the run. Both
+point at `commit-messages` for how each commit is made and restate
+none of it (`docs/conventions/conventions/` §3.1). ADR-0046 records
+why the take splits rather than the rule bending. This is W2 of
+the reading of 2026-10-01, D1 settled; run 3 asked it (F11), and
+the next note answers it.
 
 ## Commits
 
@@ -36,22 +37,35 @@ The exchange's §4: step 3, *Place*, and step 5, *Register*, say
 which commit each lands in. The deliverer's text first, so the
 shipped rule follows its manual.
 
-**4. `fix(delivery): delivered-copies takes in two commits`**
-The container's `.claude/rules/delivered-copies.md` rule 5 says
-the same, in the run's words, and its Decisions footer cites
-`CBC ADR-0046`.
+**4. `docs(conventions): the take points at commit-messages`**
+Step 3 restated `commit-messages` — the commit types, which part
+goes in which — where §3.1 asks for a pointer. §4 keeps only the
+order and points for the rest. ADR-0046, still Proposed, is
+corrected with it: its decision says the take follows
+`commit-messages`, chapters first, and names no type.
 
-**5. `docs: records carry the take's two commits`**
+**5. `fix(delivery): delivered-copies takes in two commits`**
+The container's `.claude/rules/delivered-copies.md` rule 5 says
+the order in the run's words and points at `commit-messages`, and
+its Decisions footer cites `CBC ADR-0046`.
+
+**6. `docs: records carry the take's two commits`**
 ADR-0046 Accepted. CHANGELOG gains a Changed line under
 Unreleased: what a run does at a take. The reading marks W1 done
 at `9d4370f` and W2 done with this set's commits, with the pass
 over its open items.
 
-**6. `docs(agent): close commit plan for the take's two commits`**
+**7. `docs(agent): close commit plan for the take's two commits`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
 
+- **The take says the order, and points for the rest.** Which
+  part goes in which commit, and each commit's type, are
+  `commit-messages`'; which paths are the arrangement's is
+  `docs/conventions/agent-arrangement/`'s. Only the order serves
+  the pin, and the pin is the exchange's. Added at the revision,
+  after step 3 had restated `commit-messages`.
 - **Concept first.** The other order puts the decisions entry in
   a commit where the concept chapters are still at the old pin.
   Concept first means the entry's commit is the one where every
