@@ -23,25 +23,15 @@
 
 ## Now (current plan step)
 
-- [ ] Deliver the eval's group 2 to run 3 once SL-3 closes
+- [ ] Deliver the eval's groups 2 and 3 to run 3 once SL-3 closes
       (2026-10-01, the reviewer).
       Context: G2's fixes touch `cbc-slice`, its readiness checklist,
       `cbc-framing`, `infra-establish` and `cbc-bootstrap`'s
-      references. Held so no copy changes under a step: run 3 opens
-      SL-3 on `e6538f6`. Read the run first, then deliver.
+      references; G3's, the shipped `commit-messages`. Held so no
+      copy changes under a step: run 3 opens SL-3 on `e6538f6`.
+      Read the run first, then deliver.
       Trigger: run 3's registry closing SL-3.
       See: devlog 2026-10-01, evening.
-
-- [ ] Decide the commit type for a new agent skill here, and whether
-      our convention skills are copies of the container's or our own
-      derivations (2026-09-30, the eval).
-      Context: our `commit-messages` skill is byte-identical to the
-      container's and says `feat(agent)`; the manual's deliverer
-      section and our practice say `chore(agent)`. Three manuals
-      call our skills copies; ADR-0042 says neither is copied from
-      the other.
-      Trigger: when the eval's G3 opens.
-      See: devlog 2026-09-30, the eval.
 
 - [ ] Write `exchange-birth` while running the next birth
       (2026-09-26, the reviewer).

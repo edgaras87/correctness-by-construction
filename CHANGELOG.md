@@ -23,6 +23,9 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   on, where they cited a repo a run cannot read; the decisions-log
   stub loses its provenance line and the plan stub's placeholder
   reads `<concept commit>` (ADR-0038).
+- `commit-messages` types a new agent skill or rule `chore(agent)`,
+  as installing or updating one already was: `feat` stays for what
+  the project's users meet.
 - A run takes a delivery in commits that follow `commit-messages`:
   the concept chapters' commit first, and the decisions entry with
   the pin in the last, where every copy equals the pin.
