@@ -138,6 +138,7 @@ Proposed; the reviewer's.
   in `commit-messages` for a take (a rule with an exception cannot
   be applied without first classifying the commit — the objection
   our TODO already holds against a mood exception). Gates W2.
+  **Settled** by the reviewer, 2026-10-01, as proposed.
 - **D2** — F10, F16: the two discards stand, or reopen. The count
   behind them missed run 3's two firings. `decide-first`'s did
   the job the discard credits to its one line, *can you say
@@ -145,12 +146,14 @@ Proposed; the reviewer's.
   carries now; `option-comparison`'s was a win, its second firing
   and its first outside the set that made it. Proposed: both
   stand, the count corrected where it is stated, and the run told
-  its uses were counted. Gates W4.
+  its uses were counted. Gates W4. **Settled** by the reviewer,
+  2026-10-01, as proposed.
 - **D3** — F19: a run's decisions-log entries shorter, or not.
   Proposed: not, and the TODO item closes. This reading checked F1
   and F2 from the log alone; the second runs long because the log
   is the home of an agent-side decision (F17), with no ADR to point
-  at. Gates W5.
+  at. Gates W5. **Settled** by the reviewer, 2026-10-01, as
+  proposed.
 
 ## 6. The work
 
