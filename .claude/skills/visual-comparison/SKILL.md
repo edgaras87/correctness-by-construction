@@ -11,7 +11,7 @@ Write what the reader must get *before* looking at candidates,
 build each one, judge it line by line, and let the render decide.
 
 The spine is requirements first, every candidate built, judged per
-requirement, recorded in an ADR. What makes it its own method is the
+requirement, the outcome recorded. What makes it its own method is the
 failure mode only a picture has: *a notation that asserts something
 you did not mean*, and what that has cost.
 
@@ -38,8 +38,8 @@ render step or a plugin and are out; a committed SVG renders but is
 not text anyone can read in a diff.
 
 It does not fire for a form with one obvious answer, and it does
-not fire twice for the same question — the ADR from last time is
-the answer.
+not fire twice for the same question — the record from last time
+is the answer.
 
 ## 2. The method
 
@@ -67,9 +67,10 @@ the answer.
    confirms it. Both times this method has run, the render changed
    a verdict that reasoning had got wrong.
 
-6. **Decide, and record it in an ADR** — the requirements, the
-   candidates, and why each lost. Then delete the draft; it has
-   served, and git history keeps it.
+6. **Decide, and record it** where the entry file's records table
+   puts a decision of its kind — the requirements, the candidates,
+   and why each lost. Then delete the draft; it has served, and git
+   history keeps it.
 
 ## 3. Gates
 
@@ -78,7 +79,7 @@ the answer.
   expected to lose.
 - Every verdict cites the requirement it turns on.
 - A verdict not yet rendered is marked as a prediction.
-- The outcome is in an ADR before the draft is deleted.
+- The outcome is recorded before the draft is deleted.
 
 ## 4. What the render has caught
 
@@ -101,7 +102,7 @@ name the case, it is not an entry yet.
   CBC ADR-0028).
 
 - **A requirement no candidate can hold is evidence about the
-  requirement.** Struck, not failed — and say so in the ADR, so
+  requirement.** Struck, not failed — and say so in the record, so
   the next comparison starts from a corrected spec (CBC ADR-0028).
 
 - **Building is what finds the modelling error.** The two-subgraph
