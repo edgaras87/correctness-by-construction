@@ -126,11 +126,73 @@ Findings from reading it against our tree:
 
 ## 5. Decisions
 
-None proposed yet.
+Proposed; the reviewer's.
+
+- **D1** — F11, F15: which rule gives way at a take. Neither has
+  to: rule 5 never says one commit, and the run read one into
+  "one act". Proposed: the take is two commits — the concept
+  chapters first, `docs:`; then the `.claude/` copies with the
+  decisions entry, `chore(agent)`, so the entry lands when every
+  copy equals the pin. `delivered-copies.md` rule 5 and
+  `docs/conventions/exchange/` §4 say so. Rejected: an exception
+  in `commit-messages` for a take (a rule with an exception cannot
+  be applied without first classifying the commit — the objection
+  our TODO already holds against a mood exception). Gates W2.
+- **D2** — F10, F16: the two discards stand, or reopen. The count
+  behind them missed run 3's two firings. `decide-first`'s did
+  the job the discard credits to its one line, *can you say
+  roughly how many commits this takes?*, which no skill or rule
+  carries now; `option-comparison`'s was a win, its second firing
+  and its first outside the set that made it. Proposed: both
+  stand, the count corrected where it is stated, and the run told
+  its uses were counted. Gates W4.
+- **D3** — F19: a run's decisions-log entries shorter, or not.
+  Proposed: not, and the TODO item closes. This reading checked F1
+  and F2 from the log alone; the second runs long because the log
+  is the home of an agent-side decision (F17), with no ADR to point
+  at. Gates W5.
 
 ## 6. The work
 
-None proposed yet.
+The verdicts that need no decision, from records here:
+
+- F1 — read; checked here, 38 copies equal the pin (§3).
+- F3, F4, F5 — held still, until the run's retrospective (the
+  reading of 2026-09-30, D2).
+- F6 — held still, under our TODO "Decide our own side of shapes";
+  its third part is read when that item is due.
+- F7, F18 — held still, the trigger narrowed to a second run.
+- F8 — held still: a second run is the trigger, and SL-2 is the
+  same run. Our TODO line gains SL-2's G5 and G6.
+- F9 — nothing owed either way; both are due in our TODO.
+- F12 — answered at the source, F14, by W1: the staging arrives
+  readable, and rule 5 stays as it is.
+- F13 — read.
+- F17 — taken: the run was right by our own container's records
+  table, which puts agent setup in `.claude/decisions.md`;
+  `visual-comparison` step 6 and its gate said ADR regardless.
+
+Work:
+
+- **W1** — F12, F14: `exchange-deliver` stages a readable folder,
+  the mode set after `mktemp -d`. One commit, before W6.
+- **W2** — D1: **plan**. The ADR, Proposed then Accepted;
+  `delivered-copies.md` rule 5 and `docs/conventions/exchange/` §4
+  step 3 say the take's two commits.
+- **W3** — F17: `visual-comparison` step 6 and its gate record the
+  outcome where the entry file's records table puts a decision of
+  its kind. Both seats, byte-identical. One commit.
+- **W4** — D2: `visual-comparison`'s "unused" goes, ADR-0030's
+  Status line counts the run's firings, and a `.claude/decisions.md`
+  entry says why both discards stand. One commit, after W3, which
+  edits the same file.
+- **W5** — F7, F8, F18, D3: our TODO true for today — the facility
+  item's trigger narrowed, the absence rung's context gains SL-2,
+  the decisions-log item closed. One commit.
+- **W6** — the note and the staging, `exchange-deliver`: the
+  verdicts above and D1 to D3's, read through `c33a996`, and our
+  side's changes since `0000855`. At its staging, the check our
+  TODO names by hand: the staged paths against the run's own files.
 
 ## 7. What this reading taught
 
@@ -139,7 +201,8 @@ None proposed yet.
 
 ## 8. Notes
 
-- Nineteen findings, none closed. Nothing decided.
+- Nineteen findings, none closed; three decisions proposed; six
+  work items, one needing a plan, so no branch.
 - Not addressed to us, so not items: its TODO's "seeing what
   changed between versions", once a question of whether to hand it
   to us, now sits in its Later as the learner's own; and its two
