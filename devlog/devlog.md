@@ -6,6 +6,39 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-10-01, evening  (the eval's group 2 — 15 commits on main)
+
+One commit plan, eleven steps, nothing diverged between them.
+
+- **Run 3 took `e6538f6`** in one commit, checking the staging's
+  modes first; all 38 copies equal the pin, nothing new addressed to
+  us. Our note went.
+- **G2 read whole.** Every file its findings name, each read end to
+  end; all nine held, F7 with them, none new. The uncertain ones
+  settled on reading: the key in F18 is the caller's, the workflow
+  refuses what F17's playbook line credits it with.
+- **D3 to D5 settled.** Run names, ordinals and stories leave
+  shipped skills, evidence strength stays; "key" leaves `cbc-slice`'s
+  gate; the worked example takes the four outputs it predated. The
+  reviewer asked whether to drop the example for rules alone — kept,
+  since run 3 found a worked example with real numbers is what made
+  its records readable — and the guard went in the framing
+  workflow's header, where a rule is changed, not the example's.
+- **Fixed:** readiness per slice; framing's hand-off to the ground;
+  the census gate's two blocks; the example; `infra-establish`'s two
+  promises; thirteen run-history lines; Release's claim. The
+  playbook stays v7.
+- **Held for delivery** until run 3 closes SL-3, so no copy changes
+  under a step. A Now line says so.
+
+Resume: on `main` at the next commit, clean, not pushed. Next:
+
+1. **Deliver G2 to run 3** once SL-3 closes — read it first.
+2. **The eval's G3**, once its decision is taken (the commit type
+   for a new agent skill); then G4 — F66 and F67 among it — G5, G6.
+3. **The conventions' full local map, and the imperative test with
+   the 50-character limit**, still due in TODO.
+
 ## 2026-10-01, later  (working a reading placed — 7 commits on main)
 
 One commit plan, closed with one commit outside it.
