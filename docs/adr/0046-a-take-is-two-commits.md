@@ -14,8 +14,9 @@ Two rules a run holds from us met at its take on 2026-10-01.
   sequence: check, find the run's own edits, copy whole, remove what
   the note says is gone, write one decisions entry (rule 5). It
   says nothing about commits.
-- **`commit-messages`**, *The agent's own files*: a commit that
-  touches `.claude/` is scoped `agent` and touches nothing else.
+- **`commit-messages`**, *The agent's own files*
+  (`docs/conventions/commit-messages/`): a commit that touches
+  `.claude/` touches nothing else.
 
 Run 3 read one pin as one commit. Its take @ `0000855` put the
 `.claude/` copies, the concept chapters and the decisions entry in
@@ -37,21 +38,21 @@ birth the concept had gone in a commit of its own.
 
 ## Decision
 
-1. **A take is two commits.** First the concept chapters, `docs:`,
-   with any chapter the note names as gone removed. Then the
-   `.claude/` copies, with any copy the note names as gone removed,
-   and the decisions entry carrying the pin and the read-through,
-   `chore(agent)`.
-2. **The entry's commit is the one where every copy equals the
-   pin.** When the run cuts no receipt branch, it is the commit the
+1. **A take's commits follow `commit-messages`, the chapters'
+   commit first.** How each commit is made is that convention's;
+   the take adds only the order.
+2. **The decisions entry, carrying the pin and the read-through,
+   lands in the last commit, where every copy equals the pin.**
+   When the run cuts no receipt branch, it is the commit the
    deliverer diffs the copies against at the next read.
-3. **A take that changes no chapter is one commit**, the second.
-4. **`commit-messages` is unchanged.**
+3. **`commit-messages` is unchanged.**
 
 ## Consequences
 
 - `docs/conventions/exchange/` §4 and the shipped
-  `delivered-copies.md` rule 5 say which commit each part lands in.
+  `delivered-copies.md` rule 5 say the order and point at
+  `commit-messages` for the rest, restating none of it
+  (`docs/conventions/conventions/` §3.1).
 - `exchange-read` needs no change: the commit of the entry that
   recorded the pin is already its diff base.
 - The next note to run 3 answers its ask with this.

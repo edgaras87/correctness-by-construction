@@ -294,21 +294,21 @@ copy.
    unanswered, which means it was made after the deliverer last read,
 and it
    is re-applied on top.
-3. **Place.** The delivered files overwrite the copies whole, in
-   two commits (CBC ADR-0046): the concept chapters first, `docs:`;
-   then the `.claude/` copies, `chore(agent)`, which step 5's entry
-   joins. A take that changes no chapter is the second alone. A
-   receipt branch — the delivery as it arrived, named by the pin —
-   is worth cutting when the run expects to edit, because it makes
-   step 2's diff exact next time. Optional.
+3. **Place.** The delivered files overwrite the copies whole. The
+   take's commits follow `docs/conventions/commit-messages/`; when
+   they are more than one, the chapters' commit comes first, so
+   step 5's entry lands in the last (CBC ADR-0046). A receipt
+   branch — the delivery as it arrived, named by the pin — is worth
+   cutting when the run expects to edit, because it makes step 2's
+   diff exact next time. Optional.
 4. **Remove what the note says is gone.** Each path the note names
-   as deleted is deleted; each it names as renamed is moved, each
-   in the commit of its kind. The only step a copy cannot do, and
-   the one that has been missed before — a rename once left the old
-   file standing in a run for four days.
+   as deleted is deleted; each it names as renamed is moved. The
+   only step a copy cannot do, and the one that has been missed
+   before — a rename once left the old file standing in a run for
+   four days.
 5. **Register.** One line in the run's decisions log: the date, the
    pin, what came, what was declined and where its need went. Agent
-   side only, and in the second commit, where every copy equals the
+   side only, and in the last commit, where every copy equals the
    pin. Then `temp/` is emptied.
 
 ## 5. Editing a copy
