@@ -95,9 +95,9 @@ Gate: derived when this step opens — verifiable facts, from the
 goal, the run's records, and the exclusions framing recorded.
 Known already: a CHANGELOG entry for the release; README true for
 a stranger, its commands verified on a clean machine; known
-issues filed in TODO.md. Decided at framing, checked here:
-monitoring and alerts in place; deploy and rollback documented and
-tried once — each unless this run's own recorded exclusion.
+issues filed in TODO.md. Checked here: monitoring and alerts in
+place; deploy and rollback documented and tried once — each unless
+this run's own recorded exclusion.
 And `temp/` looked in for shapes staged for this step, what was
 found said in one line, nothing included; what the step made read
 against every shape governing it.
