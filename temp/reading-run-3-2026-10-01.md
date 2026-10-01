@@ -189,14 +189,18 @@ Work:
   5 at `cf109f1`.
 - **W3** — F17: `visual-comparison` step 6 and its gate record the
   outcome where the entry file's records table puts a decision of
-  its kind. Both seats, byte-identical. One commit.
+  its kind. Both seats, byte-identical. One commit. **Done** in two,
+  the agent's files apart: the container's at `e43a74c`, ours at
+  `2abf8f4`.
 - **W4** — D2: `visual-comparison`'s "unused" goes, ADR-0030's
   Status line counts the run's firings, and a `.claude/decisions.md`
   entry says why both discards stand. One commit, after W3, which
-  edits the same file.
+  edits the same file. **Done** in two, the agent's files apart:
+  ADR-0030 and the container's at `468b5c2`, ours and the log entry
+  at `1ede1aa`.
 - **W5** — F7, F8, F18, D3: our TODO true for today — the facility
   item's trigger narrowed, the absence rung's context gains SL-2,
-  the decisions-log item closed. One commit.
+  the decisions-log item closed. One commit. **Done**, `c8c0a76`.
 - **W6** — the note and the staging, `exchange-deliver`: the
   verdicts above and D1 to D3's, read through `c33a996`, and our
   side's changes since `0000855`. At its staging, the check our
@@ -208,6 +212,9 @@ Work:
 
 - A run's work branch named for a delivery is not a receipt branch;
   the copies' diff base is the commit that finished the take.
+- A work item that edits a skill both seats hold is two commits,
+  since the agent's own files never share one; W3 and W4 were
+  counted as one each.
 
 ## 8. Notes
 
