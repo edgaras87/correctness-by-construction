@@ -6,6 +6,36 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-10-02  (the eval's group 3 — 12 commits on main)
+
+One commit plan, ten steps, nothing diverged between them.
+
+- **D1 settled.** A new agent skill is `chore(agent)` in the shipped
+  `commit-messages`, as we already committed; the reviewer asked why
+  `feat` goes — it tells a release tool a user-facing capability
+  arrived, and nothing under `.claude/` is one. Our copy follows the
+  container's in its own commit, with a decisions entry. Our three
+  convention skills are derivations, as ADR-0042 said; the manuals
+  that called them copies say so now. No ADR: ADR-0038 1c decided
+  the scope, never the type.
+- **Our exchange skills say what the exchange says**: the first line
+  written before the read, the diff base in today's words, the
+  worked-example question asked, a one-line note only when nothing is
+  addressed to us.
+- **The decisions log's header narrowed** to decisions; a fix that
+  brings a skill to its manual is told in its commit body. Seven
+  fixes since 2026-09-29 had no entry, and now need none.
+- The manual's shape counts nine; two pointers are root paths.
+- The shipped `commit-messages` joins group 2 in the held delivery.
+
+Resume: on `main` at the next commit, clean, not pushed. Next:
+
+1. **Deliver groups 2 and 3 to run 3** once SL-3 closes — read it
+   first.
+2. **The eval's G4** — F66 and F67 among it — then G5, G6.
+3. **The conventions' full local map, and the imperative test with
+   the 50-character limit**, still due in TODO.
+
 ## 2026-10-01, evening  (the eval's group 2 — 15 commits on main)
 
 One commit plan, eleven steps, nothing diverged between them.
