@@ -26,9 +26,9 @@ fixing it afterwards or not at all, has not happened here.
   skill, shipped**, held at `.claude/skills/commit-plan/` and opened
   when work turns out to need several commits. The rules, one
   sentence each, with the decisions it rests on in its footer.
-- **`.claude/skills/commit-plan/SKILL.md` — the deliverer's copy**,
-  a copy of the container's (`docs/conventions/exchange/`
-  §1).
+- **`.claude/skills/commit-plan/SKILL.md` — the deliverer's**,
+  derived from this page like the container's and identical to it
+  today, neither copied from the other (CBC ADR-0042).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of

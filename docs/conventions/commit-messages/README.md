@@ -26,9 +26,9 @@ alone with no gate.
   and opened before writing a commit message. The format, the type
   table, the `agent` scope, the stop, with the decisions it rests
   on in its footer.
-- **`.claude/skills/commit-messages/SKILL.md` — the deliverer's
-  copy**, a copy of the container's (`docs/conventions/exchange/`
-  §1).
+- **`.claude/skills/commit-messages/SKILL.md` — the deliverer's**,
+  derived from this page like the container's and identical to it
+  today, neither copied from the other (CBC ADR-0042).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of
