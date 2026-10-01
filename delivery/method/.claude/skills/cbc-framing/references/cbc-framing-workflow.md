@@ -247,7 +247,7 @@ redefines them.
 
 *Question: which concerns are theorems, which are definitions?*
 
-A **slice** = one promise × one enemy needing its own proof. The step
+A **slice** = one invariant × one adversity needing its own proof. The step
 runs as **three passes**, each with its test and its record:
 
 1. **The sort.** Every concern stamped **theorem** (carries an
@@ -275,7 +275,8 @@ Ordering is an *expectation*, not a commitment: derive a presumption order
 slice at each close. Step 6's deliverable is the **shape**, not a sequence.
 
 **Exit:** the registry stands — first slice chosen-next.
-**Hands off to:** `cbc-slice-workflow.md`, one slice at a time.
+**Hands off to:** the ground and the bootstrap, then
+`cbc-slice-workflow.md`, one slice at a time.
 
 ---
 

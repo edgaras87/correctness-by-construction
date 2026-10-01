@@ -193,9 +193,10 @@ status line), re-derived from the masters, never patched in place.
 The residue filter applies with full force: the surface tells what
 the system is and guarantees, never how the work ran.
 
-Then say this explicitly to the user: **the handoff is to bootstrap, not to
-slicing.** Between framing and the first slice sits real project work —
-repo skeleton, store, adversity harness — defined by the readiness
+Then say this explicitly to the user: **the handoff is to the ground and
+the bootstrap, not to slicing.** Between framing and the first slice sits
+real project work — the ground the system runs on, its store among it;
+then the skeleton and its adversity harness — defined by the readiness
 checklist (`system-readiness.md`, bundled with the cbc-slice skill). Slicing
 begins only when the human signs off readiness; the cbc-slice skill will
 check.
