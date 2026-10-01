@@ -23,15 +23,6 @@
 
 ## Now (current plan step)
 
-- [ ] Delete the note to run 3 once run 3 has taken it (2026-10-01,
-      the reviewer).
-      Context: the note at `e6538f6` and its staging,
-      `bundle-e6538f6/`, went into run 3's `temp/` on 2026-10-01:
-      two copies, read through `c33a996`. The reading is closed and
-      gone. The take is the run's, in its own time.
-      Trigger: run 3's decisions log naming the pin `e6538f6`.
-      See: devlog 2026-10-01.
-
 - [ ] Decide the commit type for a new agent skill here, and whether
       our convention skills are copies of the container's or our own
       derivations (2026-09-30, the eval).
