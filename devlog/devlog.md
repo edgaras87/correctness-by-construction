@@ -6,6 +6,43 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-10-02, evening  (the eval's group 5 — 14 commits on main)
+
+One commit plan, revised once.
+
+- **G5 checked**, eleven findings holding and one new: the manuals
+  cited our own decisions with the `CBC` tag sixty times, against
+  the rule that keeps it for text read elsewhere (F68).
+- **D9, the CHANGELOG.** Unreleased had become a diary of things
+  added and undone before any release. The reviewer asked whether
+  the rewrite fit this repo, and it did not: it still listed the
+  container, the playbook and birth. It is now the concept and its
+  executions alone — the method, the stack practice, chapter 03's
+  sentence — and its header says both rules it lacked: net change
+  since the last release, and what an entry is. Lines I added in G1
+  to G4 for convention changes were the same mistake; no manual
+  needed changing, project-recording already said it.
+- **D10, citations bare.** The reviewer weighed keeping the tag for
+  an upstream that may come, and declined it: designing for a guess.
+  Sixty-seven citations swept; the footer rule made precise first,
+  after the plan's step 4 met it — tagged where a skill or rule
+  ships, bare where it stays.
+- **Records about records.** The reviewer asked whether the
+  CHANGELOG, decisions log and devlog need better rules. The
+  CHANGELOG got its rule in D9; the devlog's own split, overdue at
+  5,350 lines, and a decisions entry's length — three lines asked,
+  eighteen written — are TODO lines.
+- The front door, the plan and the map true; TODO's due items in
+  Now; `.gitignore` a pointer.
+
+Resume: on `main` at the next commit, clean, not pushed. Next:
+
+1. **Deliver groups 2 and 3 to run 3** once SL-3 closes — read it
+   first.
+2. **The eval's G6**, and D2 with it.
+3. **Now in TODO**: split the devlog; commit-plan's series of
+   commits; one mood; the 50-character limit; the conventions map.
+
 ## 2026-10-02, later  (the eval's group 4 — 13 commits on main)
 
 One commit plan, ten steps, nothing diverged between them.
