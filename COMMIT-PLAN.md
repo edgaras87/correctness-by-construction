@@ -44,20 +44,26 @@ rule. v1's own entry is untouched.
 two passages that describe the shipped form (exchange §3.7's, the
 conventions manual §2's), and every file under `delivery/`.
 
-**4. `chore(agent): our own files cite bare`**
+**4. `docs(conventions): a footer is tagged where the skill ships`**
+The conventions manual §2's footer rule says every skill cites
+`CBC ADR-nnnn`; project-recording §3.5 keeps the tag for text read
+in another repo. The rule becomes: tagged in a skill that ships,
+bare in one that stays here. Before step 5, which applies it.
+
+**5. `chore(agent): our own files cite bare`**
 The same in `.claude/rules/exchange-reading.md` and the two exchange
 skills' footers; `exchange-deliver`'s sentence on the shipped form
 keeps its tag. Our three convention skills keep theirs: identical to
 the container's, by CBC ADR-0042.
 
-**5. `docs: the front door, the plan and the map are true`**
+**6. `docs: the front door, the plan and the map are true`**
 README: the harvest criterion as met, with the commit, and "Since
 2026-09-18" gone (F50, F51). PLAN: the Release gate without "(TODO,
 Next)" (F49). ARCHITECTURE §2.3: the README and ADR-0001 stubs in
 the list (F52); *The words*: pin and read-through point at exchange
 §2.2, and the line above them says what it now is (F53).
 
-**6. `docs: TODO is true`**
+**7. `docs: TODO is true`**
 The three due items move to Now; the 50-character item's trigger
 becomes the mood decision's (F55); the overlay-marker item goes, the
 playbook being ours to change (F56); the worked example's line count
@@ -65,20 +71,21 @@ goes (F57). Two new lines: split the devlog by month, due — its own
 header's trigger, 5,350 lines; decide a decisions entry's length —
 the header says three lines, the median is eighteen.
 
-**7. `chore: .gitignore points at temp/README.md`**
+**8. `chore: .gitignore points at temp/README.md`**
 The dated comment that restated the old list becomes a pointer
 (F59).
 
-**8. `docs: records carry the eval's group 5`**
+**9. `docs: records carry the eval's group 5`**
 The eval marks F48 to F57, F59 and F68 fixed with their commits.
 
-**9. `docs(agent): close commit plan for the eval's group 5`**
+**10. `docs(agent): close commit plan for the eval's group 5`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
 
-- **Two commits for D10**, by seat: the manuals and ARCHITECTURE are
-  docs, our rules and skills are the agent's files.
+- **Three commits for D10**: the manuals and ARCHITECTURE, then the
+  footer rule made precise, then our rules and skills — the agent's
+  files in a commit of their own, after the rule they follow.
 - **Where the tag stays.** A passage describing the shipped form is
   about the tag, not a citation; our three convention skills are
   byte-identical to the container's and stay so; `delivery/` ships.
