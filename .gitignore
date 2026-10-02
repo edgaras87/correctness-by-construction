@@ -29,9 +29,7 @@ CLAUDE.local.md
 # this repo
 # ======================================================================
 
-# temp/ is tracked since 2026-09-07 — working drafts (handoffs,
-# replies, briefings being molded) whose shaping should be visible;
-# see temp/README.md for the rule
+# temp/ is tracked: see temp/README.md
 
 # ======================================================================
 # stack overlays — appended below this line at app bootstrap
