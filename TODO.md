@@ -81,7 +81,13 @@
       Trigger: the next birth's Step 2 opening.
       See: devlog 2026-09-11.
 
-## Next (upcoming steps — assign each to a step when triaged)
+- [ ] Split the devlog by month (2026-10-02, the eval).
+      Context: its header says to split into `devlog/<YYYY-MM>.md`
+      when the file gets long; it is 5,350 lines over three months,
+      and the trigger fired unnoticed. Mechanical: one file per
+      month, newest on top in each, pointers by date unchanged.
+      Trigger: due.
+      See: devlog 2026-10-02.
 
 - [ ] Decide whether `commit-plan` names a step that runs as a series
       of commits (2026-09-20, never-oversold).
@@ -93,16 +99,6 @@
       2026-09-29 without it.
       Trigger: due.
       See: devlog 2026-09-20.
-
-- [ ] Decide whether the partial reversals of 2026-09-24 need an ADR
-      of their own (2026-09-30, the eval).
-      Context: ADR-0030, 0031 and 0035 were each changed in part that
-      day, when decide-first, option-comparison and artifact-kinds
-      were discarded. Their Status lines say so and
-      `.claude/decisions.md` says why, but no ADR is dated that day;
-      ADR-0001 asks for a new one marked "Supersedes".
-      Trigger: when the eval's G6 opens.
-      See: devlog 2026-09-30, the eval.
 
 - [ ] Decide whether commit subjects keep one mood (2026-09-18,
       never-oversold).
@@ -125,8 +121,7 @@
       own revision form spends 34 characters before saying what
       changed. The agent model's A1 asks: unenforced, or mis-set?
       Ideas: a shorter revision form in commit-plan.
-      Trigger: with the mood decision above, when commit-messages
-      is next opened.
+      Trigger: with the mood decision above.
       See: devlog 2026-09-29, the agent model.
 
 - [ ] Make the conventions index a full local map (2026-09-30, the
@@ -142,18 +137,29 @@
       Trigger: due — the pair it waited on was made on 2026-09-30.
       See: devlog 2026-09-30, local maps.
 
+## Next (upcoming steps — assign each to a step when triaged)
+
+- [ ] Decide whether the partial reversals of 2026-09-24 need an ADR
+      of their own (2026-09-30, the eval).
+      Context: ADR-0030, 0031 and 0035 were each changed in part that
+      day, when decide-first, option-comparison and artifact-kinds
+      were discarded. Their Status lines say so and
+      `.claude/decisions.md` says why, but no ADR is dated that day;
+      ADR-0001 asks for a new one marked "Supersedes".
+      Trigger: when the eval's G6 opens.
+      See: devlog 2026-09-30, the eval.
+
 - [ ] Decide whether a delivery checks its paths against the run's
       own files (2026-09-30, the reading of run 3).
       Context: our shipped `.claude/rules/shapes-lifecycle.md` sat
       at the path of run 3's own rule, so the take landed ours over
-      the run's. The reading found it; the reviewer let it land and
-      the note named it. `docs/conventions/exchange/` §3.4 checks
-      only that no path is claimed by two of our groups, and the
-      take's diff (§4) sees that a file differs, not whose it is.
-      Once so far.
+      the run's. `docs/conventions/exchange/` §3.4 checks only that
+      no path is claimed by two of our groups, and the take's diff
+      (§4) sees that a file differs, not whose it is. Once so far;
+      checked by hand at `e6538f6`, where no staged path was new.
       Ideas: in `exchange-deliver`, the staged paths against the
              run's files that are not at its pin.
-      Trigger: the next delivery — the check by hand at its staging.
+      Trigger: the next delivery that ships a path new to the run.
       See: devlog 2026-09-30, the delivery to run 3.
 
 - [ ] Fold run 3's step form into the run playbook, if its Step 7
@@ -216,6 +222,14 @@
       See: devlog 2026-09-12, later.
 
 ## Later / someday
+
+- [ ] Decide a decisions entry's length (2026-10-02, the eval).
+      Context: `.claude/decisions.md`'s header asks for three lines
+      — what, why, what was rejected; its 48 entries run a median of
+      eighteen, the longest fifty-one. Either the header or the
+      habit is wrong.
+      Trigger: the next time the header is opened.
+      See: devlog 2026-10-02.
 
 - [ ] Decide whether `infra-establish`'s contract carries a paragraph
       on the store's facility (2026-09-17, never-oversold).
@@ -420,7 +434,7 @@
 
 - [ ] Deduplicate the worked example (2026-09-17).
       Context: one document shipped twice, byte-identical in both
-      skills' `references/`, 202 lines. Merging would make
+      skills' `references/`. Merging would make
       cbc-slice uninstallable without cbc-framing; diff polices
       the copies.
       Trigger: a reason to install one skill without the other.
@@ -478,16 +492,6 @@
       Trigger: a reading holds an insight it cannot land yet and
       has nowhere to put it.
       See: devlog 2026-08-29 (framing shape decided).
-
-- [ ] Propose an overlay marker in the container's PLAN stub's
-      Framing step (2026-08-30).
-      Context: the hygiene files' append-below-the-marker pattern,
-      so a method bundle can add gate items first-class. Until
-      then the generic gates are the interface, and cbc-framing
-      meets them.
-      Trigger: a CbC run's Framing needing a gate the generic step
-      cannot express, or a second method bundle.
-      See: devlog 2026-09-27, afternoon.
 
 - [ ] Harvest the projection law's deeper lifecycle when a run
       lives it (2026-08-30).
