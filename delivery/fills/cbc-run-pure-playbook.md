@@ -11,7 +11,7 @@
 
 Playbook version: v7 (2026-09-27, provisional; updated here — a
 Known already fact about shapes on every step's gate, ADR-0035
-decision 8)
+decision 4)
 
 ## Step 0: Bootstrap                                [~]
 
