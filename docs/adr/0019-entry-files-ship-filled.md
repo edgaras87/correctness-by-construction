@@ -8,6 +8,8 @@ outputs byte-identical to their fill from the title line down, no
 header or placeholder leaking — before it was written; the
 contract boundary held the "no surface enters" claim as stated.
 No boundary contradicted the shape)
+Changed in part by ADR-0024 (2026-09-17): the semi-pure step
+dissolves, unnecessary once the entry files ship.
 
 ## Context
 

@@ -2,6 +2,8 @@
 
 Date: 2026-09-18
 Status: Accepted
+Changed in part by ADR-0031 (2026-09-19): decision 5's parking ends,
+the comparison shipped as a convention.
 
 ## Context
 

@@ -2,6 +2,8 @@
 
 Date: 2026-09-18
 Status: Accepted
+Changed in part by ADR-0031 (2026-09-19): decision 6's hold for
+maturity ends.
 
 ## Context
 

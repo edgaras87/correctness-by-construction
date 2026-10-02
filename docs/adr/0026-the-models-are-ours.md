@@ -6,6 +6,8 @@ change-plan for taking the models; opened Proposed per
 change-plans §4. Supersedes ADR-0002 in part — decision 3) —
 decisions 2 and 5 superseded by ADR-0038 (2026-09-27): where the
 models came from is that record's, and no revival is waited on
+Changed in part by ADR-0043 (2026-09-29): decision 4's verbatim rule
+ends; the models are edited as ours.
 
 ## Context
 

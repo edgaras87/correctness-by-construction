@@ -1,9 +1,9 @@
 # 0030. The cascade wins; decide-first, and two renames
 
 Date: 2026-09-19
-Status: Accepted; **superseded in part 2026-09-24** — decisions 2
-and 9 no longer hold. `decide-first` is discarded (three firings,
-one win, and in the win one line did the work) and
+Status: Accepted; **superseded in part 2026-09-24 by ADR-0047** —
+decisions 2 and 9 no longer hold. `decide-first` is discarded
+(three firings, one win, and in the win one line did the work) and
 `option-comparison` with it (one firing, the set that created it).
 The renames stand, `visual-comparison` stands, and decision 10's
 merge-back trigger is answered by there being nothing left to merge

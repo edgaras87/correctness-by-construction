@@ -2,6 +2,8 @@
 
 Date: 2026-08-28
 Status: Accepted
+Changed in part by ADR-0022 (2026-09-17): decision 3's harvest record
+no longer travels in shipped files, which carry instruction only.
 
 ## Context
 

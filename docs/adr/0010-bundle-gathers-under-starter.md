@@ -3,6 +3,8 @@
 Date: 2026-09-01
 Status: Accepted (Proposed at the set's open; flipped at its final
 records commit, no boundary contradicted it)
+Changed in part by ADR-0017 (2026-09-07), where fills split from the
+bundle, and by ADR-0029 (2026-09-18), which renamed the directory.
 
 ## Context
 

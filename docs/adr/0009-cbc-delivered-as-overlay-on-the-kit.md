@@ -2,6 +2,8 @@
 
 Date: 2026-08-30
 Status: Accepted
+Changed in part by ADR-0024 (2026-09-17): the assumed-surface contract
+and its two-copy birth end; the record layering stands.
 
 ## Context
 

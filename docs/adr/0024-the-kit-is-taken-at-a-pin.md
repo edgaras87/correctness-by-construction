@@ -9,6 +9,9 @@ the manuals were actually brought. The take is in place:
 `starter/kit/` at `ba7eaa4`, fourteen files verbatim, the delta
 list in `starter/README.md`, and a birth that no longer runs
 another repo's bash in our shell)
+Changed in part by ADR-0025 (2026-09-18): decisions 5, 6, 9 and 10 go
+— the read-only manuals, the delta ceiling, derivable-from-pure, the
+letter owed.
 
 ## Context
 

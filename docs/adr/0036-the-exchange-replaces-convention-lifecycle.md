@@ -5,6 +5,8 @@ Status: Accepted (2026-09-26, at the set's records commit; opened
 Proposed under the commit plan for the exchange and not revised —
 the plan widened once at step 5, to the birth entry, and the text
 here already said one pin)
+Changed in part by ADR-0039 (2026-09-28): decision 7's ownership of
+`foundation` moves to the conventions convention.
 
 ## Context
 

@@ -8,6 +8,8 @@ contradicted it. Its mechanical half found a stale re-verification
 on its first use, ten minutes after it was written, and a byte
 check read through a broken step during the manuals' copy, which
 is the failure it exists to make visible)
+Changed in part by ADR-0025 (2026-09-18): it narrows to the runs, its
+application upward lapsing.
 
 ## Context
 

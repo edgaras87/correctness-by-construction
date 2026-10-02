@@ -6,6 +6,8 @@ opened Proposed per change-plans §4. The move held the shape as
 proposed; one finding at the describing boundary — ADR-0010's
 "nothing outside bundle/ ships" sentence lived only in that ADR,
 so no describing doc had it to rewrite)
+Changed in part by ADR-0024 (2026-09-17): the fills category retires,
+amended 2026-09-29 — the playbook still fills a PLAN.
 
 ## Context
 
