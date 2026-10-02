@@ -11,138 +11,37 @@ concept versions — whole numbers, not SemVer (ADR-0003).
      that could invalidate a derived execution; editorial fixes ride
      with the next version (ADR-0003). Categories:
      Added · Changed · Removed · Fixed.
-     Releasing = rename [Unreleased] to [vN] - date, open a fresh one. -->
+     Releasing = rename [Unreleased] to [vN] - date, open a fresh one.
+     [Unreleased] is the net change since the last release: a later
+     change that undoes or reshapes an entry in it edits that entry,
+     never adds a second. An entry is the concept, or an execution
+     derived from it or checked against it; a convention's change,
+     or the delivery's, is none — a manual has no version
+     (ADR-0039). -->
 
 ## [Unreleased]
 
-### Changed
-
-- What a run receives cites only this repo's decisions. The
-  `commit-messages` and `commit-plan` skills' Decisions footers
-  cite `CBC ADR-0038`, which adopts the six decisions they rested
-  on, where they cited a repo a run cannot read; the decisions-log
-  stub loses its provenance line and the plan stub's placeholder
-  reads `<concept commit>` (ADR-0038).
-- `commit-messages` types a new agent skill or rule `chore(agent)`,
-  as installing or updating one already was: `feat` stays for what
-  the project's users meet.
-- A run takes a delivery in commits that follow `commit-messages`:
-  the concept chapters' commit first, and the decisions entry with
-  the pin in the last, where every copy equals the pin.
-  `delivered-copies.md` rule 5 says the order and points for the
-  rest, where a run had read one pin as one commit (ADR-0046).
-
 ### Added
 
-- A CLAUDE.md template (`starter/fills/claude-md-template.md`,
-  composed from the kit's entry file at the pin and this repo's
-  own fills; ADR-0014, ADR-0015) — parked by ADR-0016 while two
-  pure runs derived their own arrangement, delivered again since
-  ADR-0019 by the seed's semi-pure step. The birth-fill templates
-  were retired with the assembly path.
-- A README template (`starter/fills/readme-md-template.md`,
-  composed from the kit's README stub at the pin and run-1's
-  harvested fills; run 2's opening line harvested at its Step 0
-  reading) — delivered with the CLAUDE template by the semi-pure
-  step (ADR-0019).
+- **The method**, derived from concept v1: `cbc-framing` — an idea
+  worked into one falsifiable promise, a layered system definition
+  and a slice registry — and `cbc-slice` — one invariant carried
+  through specify, plan, build and document until a test that
+  creates its adversity shows it holds. Each with its workflow, a
+  worked example, and the registry template or readiness checklist
+  it hands on (ADR-0008).
+- **The stack practice**, checked against concept v1 and not derived
+  from it: `infra-establish`, `infra-serve` and `cbc-bootstrap`, for
+  a Spring and PostgreSQL run, with the templates a run fills and
+  then owns (ADR-0029).
 
 ### Changed
 
-- The two entry-file templates gain a row for `docs/system/` in
-  their records tables — the intent, the system definition, the
-  slice registry, opened when the promise, the layers, or the
-  slices are in question. The handbook's reading of the
-  checkout-system run: those files are records by the project's
-  own description, and a record gets a row. The CLAUDE template's
-  guard comment follows the kit stub at af16eb7 (the rules
-  directory named as a home for a rule about one directory; the
-  generated-directory example dropped), and the seed manual no
-  longer mentions the TEMPLATE marker the kit stopped shipping.
-- The seed's semi-pure step writes the entry file to
-  `.claude/CLAUDE.md` and removes the kit's root stub: a run builds
-  an app, and an app repo keeps every agent-side file under
-  `.claude/` so the tracked root is the project's alone. The
-  harness reads either address as one file; the kit still ships
-  the stub at root, so the seed moves it, and that half of the
-  step goes when the kit ships it there. Run 3, born before this,
-  makes the move by prompt.
-- The seed gains one optional step, the semi-pure delivery
-  (ADR-0019): the two entry-file fills written over the kit's
-  CLAUDE.md and README.md stubs, headless, the name filled, one
-  more commit on the receipt branch. ADR-0016's parking condition
-  fired: two runs derived the entry files unaided and neither
-  produced the pre-framing guard or the skills' pin stance. Run 3
-  is seeded with the step on.
-- The pure seed delivers on a receipt branch (ADR-0018): the five
-  seed commits land on `birth-seed`, never merged, and main stays
-  at the kit's hygiene commit with the same files untracked, for
-  the newborn's agent to commit under its own sequence and split.
-  Runs 1 and 2 were seeded on main and keep that shape.
-- `starter/` splits by how a delivery lands (ADR-0017): `bundle/`
-  is what a run copies as pinned files, the five skills; the new
-  `fills/` holds text the seed writes into the kit's own files —
-  the playbook's steps and the two parked entry-file templates,
-  moved there from the bundle. Delivery itself is unchanged.
-
-- The framing chapter's technology-timing sentence corrected
-  against the lived runs (`concept/03-cbc-framing.md`, first
-  content change since import): technology arrives after framing,
-  each choice answerable to the slice registry — not "with the
-  first slice", which the runs' lived order (ground and skeleton
-  stood up before the first slice, every service traced to a
-  registry need) contradicted.
-- A birth is the pure seed (ADR-0016, superseding the assembly
-  shape earlier drafts of this entry described): material only —
-  every delivery a commit on main with its source's pin in the
-  subject, the newborn's agent finishing the birth itself,
-  paced by a reviewer at every commit boundary.
-  `starter/installs/pure-seed.md` is the birth procedure. The
-  newborn still holds no playbook copy — the steps land in PLAN
-  between the STEPS markers, with a "Steps from:" line naming
-  the playbook at the bundle pin. Retired with the assembly
-  shape (history keeps them): the birth scenario, the assembly
-  install manual, the birth fills, and the parent playbook —
-  the pure variant (cbc-run-pure) is the playbook.
-- The install manual's playbook block keeps the STEPS markers:
-  only what sits between them is swapped, so re-running the block
-  is genuinely harmless.
-- The playbook's kit steps re-vendored from the handbook's
-  `starter/playbooks/default.md` v2 (their new home): Step 0's
-  comment slims to kit facts, Framing gains the every-step
-  projection gate item — cbc-run.md is v3 (that parent playbook
-  has since retired, ADR-0016; the pure variant carries the
-  vendored steps forward).
-- Concept chapter headers name the authoritative copy by path
-  instead of claiming it for whichever copy is being read —
-  header-only, the concept stays v1.
-
-### Fixed
-
-- A delivery after birth carries only copies — each group's skills
-  and rules, and the concept — so it can no longer land the
-  container's stubs over a run's own records. What a run receives
-  says nothing only this repo could resolve: `visual-comparison`
-  names the deliverer where it said "this repo", the PLAN
-  retrospective keeps a run's lessons in its own file, and the
-  entry file, the stubs and the seed's subjects and prompt drop
-  words a run never learns.
-- A delivery's staging arrives readable: taken onto a run's root, it
-  no longer leaves the root owner-only, which git cannot show.
-  `visual-comparison` records its outcome where the run's records
-  table puts a decision of that kind, not in an ADR whatever the
-  decision.
-- The method's skills agree with each other. Readiness asks for the
-  adversity this slice names, not every one the registry holds;
-  framing hands off to the ground and the bootstrap; its census gate
-  passes the trust-assumptions and runtime-ground blocks its
-  workflow allows; a caller's key is no longer a leaked mechanism;
-  the worked example shows what framing now requires, and the
-  framing workflow keeps it in step; `infra-establish` promises only
-  what happens; Release no longer claims framing decided its
-  operations items. No shipped skill names a run.
-- The decisions-log stub a run is born with points at
-  `commit-messages` for how its commits are made, rather than
-  restating the rule.
+- Chapter 03's sentence on when technology enters, corrected from
+  the runs: after framing, each choice answerable to the slice
+  registry — not "with the first slice". Editorial; the concept
+  stays v1.
+- Every chapter's header names the canonical copy by path.
 
 ## [v1] - 2026-08-28
 
