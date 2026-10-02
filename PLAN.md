@@ -47,7 +47,7 @@ Gate:
 - [ ] CHANGELOG entry for the release.
 - [ ] README true for a stranger.
 - [ ] `docs/models/` checked against the repo, since `CLAUDE.md`
-      sends a stranger there (TODO, Next).
+      sends a stranger there.
 - [ ] Known issues filed in TODO.md, not just remembered.
 - [ ] Lessons folded back where they came from — conventions,
       playbooks, the concept.

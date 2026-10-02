@@ -124,9 +124,9 @@ harvest, as a group beside this one (ADR-0029).
 ### 2.3 The container — `delivery/container/`
 
 **How a project is kept, not how it is thought.** The records
-(`PLAN`, `TODO`, `devlog`, `ARCHITECTURE`, `CHANGELOG`), the entry
-file, the agent decisions log, three convention skills, two rules,
-the hygiene files.
+(`README`, `PLAN`, `TODO`, `devlog`, `ARCHITECTURE`, `CHANGELOG`,
+the first ADR), the entry file, the agent decisions log, three
+convention skills, two rules, the hygiene files.
 
 **This is the conventions made usable**, the way the method is the
 concept made usable. Every one of its seventeen files is the
@@ -324,7 +324,8 @@ COMMIT-PLAN.md       an in-flight change set, when present
 
 ## The words
 
-Used across both repos, defined here and nowhere else.
+Used across both repos, each defined here once — or, where a
+manual owns the thing a word names, pointed at there.
 
 - **deliverer** — the repository holding the master of every file a
   project receives. Here, this repo.
@@ -342,11 +343,10 @@ Used across both repos, defined here and nowhere else.
   has happened.
 - **take** — the run's act: moving delivered files from `temp/`
   into place and recording the pin.
-- **read-through** — the run's own commit the deliverer last read
-  up to. Recorded by the run from the note; moved by every note,
-  files or not. Read from here forward.
-- **pin** — the one hash a run records for a delivery. A commit of
-  the deliverer's; the run stores it and cannot resolve it.
+- **read-through**, **pin** — the two numbers a run records for a
+  delivery: its own commit the deliverer last read up to, and the
+  deliverer's commit its copies equal. The exchange's,
+  `docs/conventions/exchange/` §2.2.
 - **note** — the text beside a delivery: what changed since the
   run's pin, and a verdict on everything the run asked.
 - **harvest** — us reading a run's repository and changing our

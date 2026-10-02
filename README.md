@@ -6,8 +6,8 @@ the structure of a thing rather than tested in afterwards. The repo
 holds the plain-words statement of the concept (with its rationale,
 open questions, and the log of what changed it and why) and the
 executions derived from it — agent skills, checklists, templates —
-each pinned to the concept version it derives from. Since 2026-09-18
-it also holds the container a run is born into — its own (ADR-0024,
+each pinned to the concept version it derives from. It also holds
+the container a run is born into — its own (ADR-0024,
 ADR-0025; where it came from is ADR-0038's record) — so a run has
 one upstream and one pin. It is the concepts tier of the workspace
 (concepts → runs, the tier above empty; see docs/models/tiers.md):
@@ -22,8 +22,7 @@ recorded way instead of living in a head and scattered notes.
   the archive copy is demoted to a historical snapshot.
 - The harvest loop has run end-to-end at least once: a real run's
   surprise recorded as a concept change with provenance, and the
-  affected execution re-derived. First queued: checkout-system's
-  Boot 4.1 testing-trap improvement.
+  affected execution re-derived.
 - At least one new run is born from executions copied from this
   repo, not from the archive.
 - Months-scale: the concept doc is actually consulted and updated
