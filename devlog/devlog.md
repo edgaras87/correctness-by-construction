@@ -6,6 +6,33 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-10-02, night  (the eval's group 6; the eval goes — 10 commits)
+
+One commit plan, eight steps, nothing diverged between them.
+
+- **G6 checked**: six findings, every ADR pair read; all hold.
+- **D2 settled: ADR-0047.** The reviewer asked what ADR-0001 is and
+  why a short ADR — its rule is that a reversed decision gets a new
+  one marked "Supersedes", and 2026-09-24's three discards had only
+  Status notes and the decisions log. Now they have their record,
+  and ADR-0030, 0031 and 0035 point at it.
+- **Fourteen Status lines name what changed them**, each written
+  from the later ADR's own decision. Bodies untouched, but for
+  ADR-0031's and 0033's *Options considered*, laid out from what
+  their own Context weighed — form, not a new decision.
+- F64, a baseline nothing reads, held under TODO's baselines item,
+  where a wrong move would destroy a measurement.
+- **The eval is done.** Sixty-eight findings and ten decisions over
+  six groups since 2026-09-30, every one ended; the file is gone and
+  git keeps it.
+
+Resume: on `main` at the next commit, clean, not pushed. Next:
+
+1. **Deliver groups 2 and 3 to run 3** once SL-3 closes — read it
+   first.
+2. **Now in TODO**: split the devlog; commit-plan's series of
+   commits; one mood; the 50-character limit; the conventions map.
+
 ## 2026-10-02, evening  (the eval's group 5 — 14 commits on main)
 
 One commit plan, revised once.
