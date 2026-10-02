@@ -6,6 +6,28 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-10-02, the delivery  (groups 2 and 3 to run 3 — 4 commits)
+
+- **Delivered before SL-3, not after.** The reviewer asked whether to
+  run SL-3 first or deliver; run 3 stood between steps, SL-3 still
+  `chosen-next`, and two of the held fixes are in what SL-3 opens on
+  — readiness asking for this slice's adversity, and the spec gate no
+  longer flagging a caller's key. Holding them until SL-3 closed was
+  meant to keep copies from changing under a step; at a boundary that
+  reason does not apply.
+- **Read through `65aa18d`**: the span was the take of `e6538f6`,
+  nothing new addressed to us. The reading closed the same day.
+- **The note at `a3b6b8c`**, staged on the reviewer's word as
+  `bundle-a3b6b8c/`: twelve copies differ, none new, none gone,
+  nothing under `docs/concept/`; the folder 755.
+
+Resume: on `main` at the next commit, clean, not pushed. Next:
+
+1. **Run 3 takes `a3b6b8c`, then opens SL-3**, in its own session;
+   our note goes once its decisions log names the pin.
+2. **Now in TODO**: split the devlog; commit-plan's series of
+   commits; one mood; the 50-character limit; the conventions map.
+
 ## 2026-10-02, night  (the eval's group 6; the eval goes — 10 commits)
 
 One commit plan, eight steps, nothing diverged between them.

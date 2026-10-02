@@ -23,15 +23,14 @@
 
 ## Now (current plan step)
 
-- [ ] Deliver the eval's groups 2 and 3 to run 3 once SL-3 closes
-      (2026-10-01, the reviewer).
-      Context: G2's fixes touch `cbc-slice`, its readiness checklist,
-      `cbc-framing`, `infra-establish` and `cbc-bootstrap`'s
-      references; G3's, the shipped `commit-messages`. Held so no
-      copy changes under a step: run 3 opens SL-3 on `e6538f6`.
-      Read the run first, then deliver.
-      Trigger: run 3's registry closing SL-3.
-      See: devlog 2026-10-01, evening.
+- [ ] Delete the note to run 3 once run 3 has taken it (2026-10-02,
+      the reviewer).
+      Context: the note at `a3b6b8c` and its staging,
+      `bundle-a3b6b8c/`, went into run 3's `temp/` on 2026-10-02,
+      between its steps, before SL-3 opened: twelve copies from the
+      eval's groups 2 and 3, read through `65aa18d`.
+      Trigger: run 3's decisions log naming the pin `a3b6b8c`.
+      See: devlog 2026-10-02, the delivery.
 
 - [ ] Write `exchange-birth` while running the next birth
       (2026-09-26, the reviewer).
