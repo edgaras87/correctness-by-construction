@@ -1,8 +1,8 @@
 # 0047. Three conventions discarded, 2026-09-24
 
 Date: 2026-09-24, recorded 2026-10-02
-Status: Proposed (2026-10-02, under the commit plan for the eval's
-group 6)
+Status: Accepted (2026-10-02, at the set's records commit; opened
+Proposed under the commit plan for the eval's group 6, unrevised)
 
 ## Context
 

@@ -139,16 +139,6 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Decide whether the partial reversals of 2026-09-24 need an ADR
-      of their own (2026-09-30, the eval).
-      Context: ADR-0030, 0031 and 0035 were each changed in part that
-      day, when decide-first, option-comparison and artifact-kinds
-      were discarded. Their Status lines say so and
-      `.claude/decisions.md` says why, but no ADR is dated that day;
-      ADR-0001 asks for a new one marked "Supersedes".
-      Trigger: when the eval's G6 opens.
-      See: devlog 2026-09-30, the eval.
-
 - [ ] Decide whether a delivery checks its paths against the run's
       own files (2026-09-30, the reading of run 3).
       Context: our shipped `.claude/rules/shapes-lifecycle.md` sat
