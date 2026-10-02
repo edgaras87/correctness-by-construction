@@ -152,6 +152,6 @@ read-through; the pin does not move.
 
 ## Decisions
 
-- CBC ADR-0036 — the exchange: the two numbers; staging on the
+- ADR-0036 — the exchange: the two numbers; staging on the
   reviewer's word; what goes and what a copy cannot carry; what the
   note is for

@@ -72,6 +72,6 @@ document afterwards is work, not this skill; when the work is done,
 
 ## Decisions
 
-- CBC ADR-0036 — the exchange: the two numbers and why both are in
+- ADR-0036 — the exchange: the two numbers and why both are in
   the run; what a reading is; the three verdicts and where each
   lands

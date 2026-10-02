@@ -68,5 +68,5 @@ How the list is worked is `.claude/rules/working-a-reading.md`'s.
 
 ## Decisions
 
-- CBC ADR-0036 — the exchange: what a reading is, and that its shape
+- ADR-0036 — the exchange: what a reading is, and that its shape
   is held here, exposed, because its moment is a file being written
