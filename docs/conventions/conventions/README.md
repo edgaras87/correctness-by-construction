@@ -79,10 +79,11 @@ opening it at the moment of use.
 
 - A rule is one sentence in the imperative. Its why is the manual's
   or the ADR's.
-- Cite no decision mid-sentence. A skill lists the decisions it
-  rests on once, in a footer headed *Decisions*, each as
-  `CBC ADR-nnnn` — the tag is project-recording's rule,
-  `docs/conventions/project-recording/` §3.5, and a decision this
+- Cite no decision mid-sentence. A skill or rule lists the decisions
+  it rests on once, in a footer headed *Decisions*: each as
+  `CBC ADR-nnnn` in one that ships, `ADR-nnnn` in one that stays
+  here — the tag is project-recording's rule,
+  `docs/conventions/project-recording/` §3.5 — and a decision this
   repo inherited is adopted before a shipped file cites it
   (ADR-0038). A stub cites nothing.
 - Say what a rule is not only when a consumer lived the misreading,
