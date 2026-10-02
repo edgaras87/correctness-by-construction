@@ -9,7 +9,8 @@ moves home, seats are two named roles. Amends ADR-0036 decision 7
 in the ownership of `foundation`. Decision 4 amended 2026-09-28,
 after acceptance: an eighth section, *what it is for*; again,
 *what ships* folded into *made usable as*; and again, the header
-comment gone — six)
+comment gone — six; and on 2026-09-29, *why it arrives this way* —
+seven)
 
 ## Context
 
@@ -94,13 +95,13 @@ rule says a shape is born when a pair recurs. This is the pair.
    and a rule split between a map and a manual is two places for
    one truth — the defect the manual's own *one place* names.
 
-5. **A conventions manual holding the core, the master pointing at
-   it, the edges where they are.** Chosen.
-
 4. **The shape of a manual held until a third manual grows the
    sections.** Rejected. The shapes convention's own rule is that a
    pair births a shape, and holding the third instance to a stricter
    standard than the rule sets would be a rule kept for symmetry.
+
+5. **A conventions manual holding the core, the master pointing at
+   it, the edges where they are.** Chosen.
 
 ## Decision
 

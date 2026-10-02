@@ -3,11 +3,10 @@
 Date: 2026-09-18
 Status: Accepted — decisions 2, 4 and 7 superseded by ADR-0038
 (2026-09-27): the handbook is history, no re-sync is kept, and the
-rule of three replaces the reopen trigger (standalone. Replaces a
-draft of the same number,
-written and staged earlier the same day and never committed — it
-added a per-delta convention check, and this decision removes the
-thing that check existed to manage)
+rule of three replaces the reopen trigger. Standalone: it replaces a
+draft of the same number, written and staged earlier the same day and
+never committed — the draft added a per-delta convention check, and
+this decision removes the thing that check existed to manage.
 
 ## Context
 

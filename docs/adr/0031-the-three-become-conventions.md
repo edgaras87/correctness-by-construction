@@ -50,6 +50,17 @@ watch instead, testing them in runs directly. That is not the
 trigger firing; it is a different method of getting the same
 evidence, and a faster one.
 
+## Options considered
+
+- **Keep the three parked until the trigger fires** — the first run
+  meeting a format question of its own, seen through the harvest
+  loop. Rejected: the user's call, delivering and watching, reaches
+  the same evidence by a faster route.
+- **Keep them out on their kind**, the container's skills directory
+  holding convention copies only. Rejected: the borrowed/native
+  split it rests on is gone, and the kind was a historical accident.
+- **Make them conventions of the container and ship them** — chosen.
+
 ## Decision
 
 1. **The three become conventions of the container.** A manual

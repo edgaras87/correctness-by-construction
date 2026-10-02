@@ -8,7 +8,8 @@ the playbook a document, and decision 5 gained its second half when
 the manuals were actually brought. The take is in place:
 `starter/kit/` at `ba7eaa4`, fourteen files verbatim, the delta
 list in `starter/README.md`, and a birth that no longer runs
-another repo's bash in our shell)
+another repo's bash in our shell). Decision 4's body amended
+2026-09-29: the fills category did not retire.
 Changed in part by ADR-0025 (2026-09-18): decisions 5, 6, 9 and 10 go
 — the read-only manuals, the delta ceiling, derivable-from-pure, the
 letter owed.

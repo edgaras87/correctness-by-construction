@@ -43,6 +43,16 @@ Read again before it fires, three things about it:
    to be about slices in general, and the document moves after every
    firing.
 
+## Options considered
+
+- **Run the protocol as ADR-0021 decision 5 set it**, at SL-2's
+  close. Rejected for the three reasons above.
+- **Withdraw it, and keep its deadline and a write-up per slice
+  close.** The first draft of decision 2; rejected at a boundary,
+  since nothing any longer needed either.
+- **Withdraw it: every slice derives blind, the reference held for
+  one reading at the run's Release** — chosen.
+
 ## Decision
 
 1. **Nothing is handed mid-run.** ADR-0021's moment — the slice
