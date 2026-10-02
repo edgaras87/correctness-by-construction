@@ -10,7 +10,7 @@ So that what a project decided, where it stands, what it tried and
 what it learned can be read by someone who was not there — a
 newcomer, future-you, or the deliverer, which reads a run through
 its records and nothing else (`docs/conventions/exchange/` §6.1).
-Adopted with the container (CBC ADR-0038, 1d for the README's
+Adopted with the container (ADR-0038, 1d for the README's
 moment); no failure of the deliverer's is recorded before it. Lived
 since: three runs kept their records under these stubs, and every
 reading of run 3 has been a reading of its decisions log, its
@@ -31,7 +31,7 @@ there is.
 - **`delivery/fills/cbc-run-pure-playbook.md` — the playbook's
   steps, filled into a run's `PLAN.md` at birth** (§9).
 - **The deliverer's own records**, derived from this page as the
-  stubs are, and never copied from them (CBC ADR-0042).
+  stubs are, and never copied from them (ADR-0042).
 
 This page explains the records; the stubs state the rules. Nothing
 here is loaded into an agent. What derives from this page is that
@@ -56,13 +56,13 @@ lessons reach the playbook when the deliverer reads the run. Its
 ### The deliverer's seat
 
 The deliverer keeps the same records, derived from this page rather
-than from the stubs (CBC ADR-0042), and differs in five things. It
+than from the stubs (ADR-0042), and differs in five things. It
 has no project end, so lessons fold back at each milestone's close
 rather than at a retrospective, as its first devlog entry agreed on
 2026-08-27. It owns the playbook,
 `delivery/fills/cbc-run-pure-playbook.md`, where a run holds only
 the steps filled into its plan (§9). Its `CHANGELOG.md` versions the
-concept, not a release (CBC ADR-0003).
+concept, not a release (ADR-0003).
 
 And its `PLAN.md` holds milestones only: things that become true
 once and have a gate, like a birth or a release. Recurring work —
@@ -87,13 +87,13 @@ arrangement, and what must stay true, where a run's maps modules,
 runtime invariants and a `src/` codemap. It also carries its own
 words and the list of what it knows is wrong — a map of a
 vocabulary needs the vocabulary, and a map that names its errors is
-believed less blindly — and runs past §8's two pages for them (CBC
-ADR-0044).
+believed less blindly — and runs past §8's two pages for them
+(ADR-0044).
 
 *Found 2026-09-29: from 2026-09-20, with Step 10 in progress, 203
 commits, two of them touching `PLAN.md`; one step written after its
 work was done; the decision index stale twice. The work had been led
-by TODO and the devlog's Resume all along (CBC ADR-0041).*
+by TODO and the devlog's Resume all along (ADR-0041).*
 
 ## 1. The model at a glance
 
@@ -262,7 +262,7 @@ reference to another repo's decision carries that repo's tag before
 the number — `CBC ADR-0012`, as a run cites the deliverer's — a
 short upper-case name each repo declares once in its README's
 decisions row (§7). A document written to be read in another repo
-carries the tag on every citation (CBC ADR-0020).
+carries the tag on every citation (ADR-0020).
 
 ### 3.6 When
 
@@ -416,8 +416,8 @@ and stacked dated updates on open ones — 2,120 lines, half of them
 finished work, one item at 248. Run 3's, read the same day, stacks
 its answers the same way, its longest items at 38 and 36 lines.
 The deliverer's was pruned and reshaped to this form, and the cap
-found on it: three lines cut meaning and lost a fact (CBC
-ADR-0040).*
+found on it: three lines cut meaning and lost a fact
+(ADR-0040).*
 
 ### 5.5 When
 
@@ -528,7 +528,7 @@ that changes often (detailed status) belongs in PLAN.md and is only
 
 Stubbed at project start; thereafter, when something became true
 that the outside should see — projection follows truth, so the
-README never claims what is not yet true (CBC ADR-0038, 1d). The
+README never claims what is not yet true (ADR-0038, 1d). The
 mechanism is a gate item where relevant: a step whose gate makes
 something projectable true includes updating its projection, exactly
 as record upkeep is already expressed in lived gates ("ARCHITECTURE
@@ -595,7 +595,7 @@ into. A local map holds relations only. It holds no count or list the
 map holds, and nothing a part says about itself; its first lines say
 what it maps and point for the rest. The file keeps the tool's name,
 `README.md`, and not every README is one: a README holding a folder's
-rules is another kind (CBC ADR-0045).
+rules is another kind (ADR-0045).
 
 *Found 2026-09-30: the conventions index and the delivery's README,
 read the same day, had both decayed by retelling the map, a manual
@@ -798,7 +798,7 @@ failure being fixed. Restating a record's rules in the entry file
   `docs/conventions/commit-plan/`.
 - **Why the records are never re-delivered to a run** —
   `docs/conventions/exchange/` §2.4.
-- **What the deliverer's CHANGELOG versions** — the concept, CBC
+- **What the deliverer's CHANGELOG versions** — the concept,
   ADR-0003 and `ARCHITECTURE.md` §1.1.
 
 ## Where to look

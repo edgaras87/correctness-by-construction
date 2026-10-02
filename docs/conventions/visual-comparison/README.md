@@ -14,10 +14,10 @@ dialects, each built for the job in hand, failed only when
 rendered — `block-beta` lost its arrow labels, and
 `sequenceDiagram` had to draw a read-only reading as an arrow into
 the other repo, asserting the opposite of the rule the procedure
-existed to keep (CBC ADR-0027, CBC ADR-0028). And the answer that
+existed to keep (ADR-0027, ADR-0028). And the answer that
 won one requirement that day was a table, which a method named for
 diagrams would have left out of the set. Written as a method the
-same day, made a convention on 2026-09-19 (CBC ADR-0031).
+same day, made a convention on 2026-09-19 (ADR-0031).
 
 ## What this is made usable as
 
@@ -27,7 +27,7 @@ same day, made a convention on 2026-09-19 (CBC ADR-0031).
   of showing it could work.
 - **`.claude/skills/visual-comparison/SKILL.md` — the deliverer's**,
   derived from this page like the container's and identical to it
-  today, neither copied from the other (CBC ADR-0042).
+  today, neither copied from the other (ADR-0042).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of
@@ -49,7 +49,7 @@ reads a label.
 Its name is the question, not a candidate: *how is this shown*,
 and "not a picture" is one of its answers. A name that named a
 picture would have kept the table and the numbered list out of the
-set, which is where CBC ADR-0028's best answer to one requirement
+set, which is where ADR-0028's best answer to one requirement
 came from.
 
 ## 2. Why it is shaped this way
@@ -76,7 +76,7 @@ came from.
   renders but is not text anyone can read in a diff. A diagram
   nobody can read in review is a binary blob with extra steps.
 
-*Settled 2026-09-24, the other way round from how it was asked. CBC
+*Settled 2026-09-24, the other way round from how it was asked.
 ADR-0030 decision 10 asked whether this earned an artifact of its
 own beside a general comparison method: if its findings never
 gained an entry from a comparison whose winner was not a picture,
@@ -95,8 +95,8 @@ load on, and nothing in a record would bring the method up then.
 ## What this does not cover
 
 - **Which notations a project uses** — the project's own. The
-  deliverer's Mermaid trial is provisional and does not travel (CBC
-  ADR-0027 decision 3); a project deciding its own may reach a
+  deliverer's Mermaid trial is provisional and does not travel
+  (ADR-0027 decision 3); a project deciding its own may reach a
   different answer.
 - **A choice that is not about how something is shown** — no
   convention: it is decided while building, and corrected at a
@@ -107,5 +107,5 @@ load on, and nothing in a record would bring the method up then.
 
 ## Where to look
 
-- The decisions: CBC ADR-0027, CBC ADR-0028, CBC ADR-0030, CBC
+- The decisions: ADR-0027, ADR-0028, ADR-0030,
   ADR-0031.

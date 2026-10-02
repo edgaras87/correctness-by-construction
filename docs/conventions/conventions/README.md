@@ -16,7 +16,7 @@ or the convention goes; or, for a convention taken whole from
 elsewhere, as adopted: where it came from, and what has been lived
 under it since. What went wrong without this one: the rules for
 conventions lived in the index, against its scope, and two of them
-were dead letters nobody had followed (CBC ADR-0039). The trigger:
+were dead letters nobody had followed (ADR-0039). The trigger:
 the descriptions item filed on 2026-09-27, and the index read
 against it the next day.
 
@@ -29,7 +29,7 @@ Nothing shipped of its own; what a repo holds is:
 - **`.claude/rules/convention-manual.md` — the shape of a manual,
   the deliverer's**, loading whenever a manual is opened;
 - **the index, `docs/conventions/README.md`** — a pointer: the
-  chain, relations only (CBC ADR-0032), and one line sending a
+  chain, relations only (ADR-0032), and one line sending a
   reader here and to `ARCHITECTURE.md` §1.2.
 
 What derives from this page is that list. A change here walks it;
@@ -61,8 +61,8 @@ Which copy of an artifact is the master, and how every other copy
 changes — the deliverer's own `.claude/skills/` included — is the
 exchange's, `docs/conventions/exchange/` §1 and §4.
 
-**What a convention asserts**, and what falsifies it (CBC
-ADR-0031): that this is a rule and not a method — *the work may
+**What a convention asserts**, and what falsifies it
+(ADR-0031): that this is a rule and not a method — *the work may
 ignore this, with a reason it can give*. That freedom is the
 worker's, in one case, with the reason where that repo's records
 live; an artifact derived from the manual says what the manual
@@ -83,8 +83,8 @@ opening it at the moment of use.
   rests on once, in a footer headed *Decisions*, each as
   `CBC ADR-nnnn` — the tag is project-recording's rule,
   `docs/conventions/project-recording/` §3.5, and a decision this
-  repo inherited is adopted before a shipped file cites it (CBC
-  ADR-0038). A stub cites nothing.
+  repo inherited is adopted before a shipped file cites it
+  (ADR-0038). A stub cites nothing.
 - Say what a rule is not only when a consumer lived the misreading,
   and then name the run.
 - A worked example in a code block is exempt from all of this.
@@ -233,7 +233,7 @@ correspondence check of 2026-09-25, and the walk of
 reviewer asked, not because anything made anyone look. Where a
 manual and the concept are handled differently — versioning,
 shipping, the kind of derivative, the seats, what each asserts — is
-CBC ADR-0039; the concept's edges are CBC ADR-0003, the CHANGELOG's
+ADR-0039; the concept's edges are ADR-0003, the CHANGELOG's
 standing comment and `ARCHITECTURE.md` §1.1.
 
 ### 3.6 A disagreement
@@ -257,9 +257,9 @@ its own. When practice and a statement disagree, the statement is
 a candidate for change, not the judge. That includes this page.
 
 *Where it has already happened, so the rule reads as a record and
-not a wish. CBC ADR-0034: run 3 argued down a clause of
+not a wish. ADR-0034: run 3 argued down a clause of
 `convention-lifecycle` on the day it first ran under it — taken,
-against the text as shipped. CBC ADR-0035: run 3 made a thing the
+against the text as shipped. ADR-0035: run 3 made a thing the
 vocabulary had no word for; the vocabulary gained one, and the
 next day went, on the same evidence read further. `cbc-slice`,
 three times: every in-place edit run 3 made to the method was
@@ -291,14 +291,14 @@ shapes, and this one — and not as the index once said:
    skill, its own under `.claude/skills/`, in its own agent-scoped
    commit, with an entry in `.claude/decisions.md` when it changes
    how this repo's agent works. No registry entry: the deliverer
-   receives no conventions (CBC ADR-0042).
+   receives no conventions (ADR-0042).
 
 No CHANGELOG line and no PLAN step. The CHANGELOG is the
-concept-version log (CBC ADR-0003) and has no place for a
+concept-version log (ADR-0003) and has no place for a
 convention's entry; the PLAN has no per-convention steps. *The
 index asked for both until 2026-09-28, and the last four
-conventions took neither — a rule kept where nobody reads it (CBC
-ADR-0039).*
+conventions took neither — a rule kept where nobody reads it
+(ADR-0039).*
 
 ## Why it arrives this way
 
@@ -320,7 +320,7 @@ what a file stands on has to travel with the file.
   arrangement's** — `docs/conventions/agent-arrangement/`.
 - **What a shape is and how one lives** — `docs/conventions/shapes/`.
   The shape of a manual is one instance of it, held here.
-- **The concept's edges, its version and its changelog** — CBC
+- **The concept's edges, its version and its changelog** —
   ADR-0003 and `ARCHITECTURE.md` §1.1.
 - **A run's own descriptions and what derives from them** — the
   run's, and not yet a rule of ours.

@@ -2,7 +2,7 @@
 
 **The agent side of a project: the files that make an agent work
 here a particular way, and that a copy of the project can drop
-while keeping the work. The line is detachability (CBC ADR-0038,
+while keeping the work. The line is detachability (ADR-0038,
 1c): a file is agent-side when removing it breaks nothing about the
 project. This page says what sits on its far side and what each
 file may hold.**
@@ -16,7 +16,7 @@ in the handbook's entry file, and is reported here, since this repo
 cannot re-check it: restating convention rules "so they are always
 in context" grew the entry file to 98 lines, split across two files,
 with three disagreeing copies of one rule. Adopted with the
-container (CBC ADR-0038, 1c). Lived since: every run was born with
+container (ADR-0038, 1c). Lived since: every run was born with
 the arrangement; run 3 moved its entry file under `.claude/` and it
 was a pure rename, content untouched, the tool reading it at the new
 address from the next session — which is why the container now ships
@@ -73,16 +73,16 @@ and `exchange-deliver`; and three rules of its own,
 `convention-manual.md`, the shape of a manual. Its decisions log
 holds arrangement decisions only, and no registry: it receives no
 conventions, and no one reads it but itself, so an entry that
-follows from an ADR is a line pointing at it (CBC ADR-0042). A
+follows from an ADR is a line pointing at it (ADR-0042). A
 run's log keeps its registry, and its entries run longer because
 `exchange-read` reads them.
 
 ### What the difference is
 
 Three skills are identical files, each derived from its manual on
-both sides rather than copied across (CBC ADR-0042); the records
+both sides rather than copied across (ADR-0042); the records
 table has the same shape; the agent and project split is the same
-rule. What differs is the job, and since CBC ADR-0036 the two hold
+rule. What differs is the job, and since ADR-0036 the two hold
 different things because of it: the run holds the receiver's rule,
 `delivered-copies.md` — how to take a newer copy without losing its
 own edits, and what it may do to one meanwhile; the deliverer holds
@@ -101,7 +101,7 @@ The theory this leans on is `docs/models/agent.md`: the ambient
 channel (§4.1), the choosing table (§8), the claims (§12). The model
 describes; this page explains against it.
 
-A closed list of paths (CBC ADR-0038, 1c):
+A closed list of paths (ADR-0038, 1c):
 
 - **`CLAUDE.md`** — the entry file, §2. The name is the tool's;
   what goes in it is this convention's.
@@ -208,7 +208,7 @@ short.
 ### 2.5 When
 
 Written at project start — a run's from the container's, the
-deliverer's from this page (CBC ADR-0042). Revisited when a record
+deliverer's from this page (ADR-0042). Revisited when a record
 moves, a convention is adopted, or the build command changes, and at
 the re-reading §2.6 names — not otherwise.
 
@@ -228,7 +228,7 @@ a run re-reads the file at its project retrospective: the plan's
 questionnaire asks it, and every line passes the three tests again
 or leaves — the same move a run's decisions log makes for its
 entries. The deliverer has no project end, and re-reads it at each
-milestone's close instead, as a gate item (CBC ADR-0041).
+milestone's close instead, as a gate item (ADR-0041).
 
 ## 3. `.claude/`
 
@@ -237,7 +237,7 @@ milestone's close instead, as a gate item (CBC ADR-0041).
 Where a convention's skill lives, one directory per convention: in a
 run, a delivered copy, verbatim (the update is
 `docs/conventions/exchange/`'s); at the deliverer, its own
-derivation from the manual (CBC ADR-0042). This convention owns the
+derivation from the manual (ADR-0042). This convention owns the
 place. A project may add a skill of its own, for a moment-bound
 local rule the entry file must not hold (§2) — permitted, and not
 yet defined: what such a skill is, whether it registers, how it
@@ -275,7 +275,7 @@ and the rejected options; neither repeats the other. A run's also
 holds what it was delivered: its birth entry lists the conventions
 it holds, and each delivery entry the pin and the read-through
 (`docs/conventions/exchange/` §2.2). The deliverer's holds neither,
-since it receives no delivery (CBC ADR-0042). Its rules ride in its
+since it receives no delivery (ADR-0042). Its rules ride in its
 own stub.
 
 ### 3.5 `settings.json`

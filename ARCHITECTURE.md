@@ -230,7 +230,7 @@ this page names: the concept, each manual, and this page. Why step
 has already bent a description, is its §3.6. This page is a map and
 states no rule of its own. Where a manual and the
 concept are handled differently is that manual's *What this does
-not cover* and CBC ADR-0039.
+not cover* and ADR-0039.
 
 ## 4. The work arrangement
 

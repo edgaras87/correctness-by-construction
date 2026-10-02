@@ -9,7 +9,7 @@ layered templates instead of being re-derived per project.**
 So that a repo never commits what it should not, and never
 accumulates line-ending noise, from its first commit — the worst
 ignore is the one added after the junk is committed. Adopted with
-the container (CBC ADR-0038); no failure of the deliverer's is
+the container (ADR-0038); no failure of the deliverer's is
 recorded before it. Lived since: every run was born with the base;
 run 3 ignored `CLAUDE.local.md` in its own `.gitignore` before the
 base did (its `aa9b3ec`), and the base carries the line now; run 3
@@ -100,7 +100,7 @@ all.
 
 *Until 2026-09-28 this page asked for a changelog entry with every
 base or overlay change, and none was ever written: the CHANGELOG is
-the concept's version log (CBC ADR-0003).*
+the concept's version log (ADR-0003).*
 
 ## What this does not cover
 

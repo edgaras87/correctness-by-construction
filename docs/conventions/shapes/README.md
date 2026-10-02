@@ -12,8 +12,8 @@ binds — instead of each output re-deriving the form, or a template
 being filled in. The failure is lived: run 3 made a thing this
 repo's vocabulary had no word for, and it was called a template, a
 specification, a convention and trial evidence before it got its
-own (§2; CBC ADR-0035, 2026-09-23). Made a convention, with this
-page as its manual, on 2026-09-27 (CBC ADR-0037): the rule binds,
+own (§2; ADR-0035, 2026-09-23). Made a convention, with this
+page as its manual, on 2026-09-27 (ADR-0037): the rule binds,
 and this page is why the rule is the shape it is, so that "why is
 this a directory and not a rules file?" has an answer that is not
 archaeology.
@@ -190,7 +190,7 @@ never a pinned copy — so `delivered-copies.md`, which loads on
 `temp/` and says to take what is there whole, must not apply to it.
 No unexposed shape exists on either side, so nothing fires wrongly
 today. Its skill, and the copies rule's exclusion, are written from
-the first staging, not before (CBC ADR-0037 decision 5).*
+the first staging, not before (ADR-0037 decision 5).*
 
 ### 4.2 Why kept rather than deleted
 

@@ -1,6 +1,6 @@
 # Conventions
 
-A local map (CBC ADR-0045): how the conventions that act in sequence
+A local map (ADR-0045): how the conventions that act in sequence
 during a piece of work hand to each other, from an idea to committed
 work. The others relate through what they govern, read or describe,
 and each states those relations in its manual's *What this does not
@@ -11,7 +11,7 @@ how one is added is `docs/conventions/conventions/`.
 ## The chain
 
 **Relations only** — every rule lives in a manual or a skill, and
-nothing here restates one (CBC ADR-0032).
+nothing here restates one (ADR-0032).
 
 ```mermaid
 flowchart TB

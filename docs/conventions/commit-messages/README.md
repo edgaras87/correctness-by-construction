@@ -9,7 +9,7 @@ and what may share a commit.**
 So that `git log --oneline` reads as an index of a project's
 history, a release tool can derive a version from the types, and
 the agent's files can be filtered out of the history without
-rewriting it. Adopted with the container (CBC ADR-0038, 1a, 1c,
+rewriting it. Adopted with the container (ADR-0038, 1a, 1c,
 1f). The failure it answers is measured: with the subject limit
 ambient in an entry file and the rule pulled in by a skill,
 fifteen of the first twenty commits of the repo it came from broke
@@ -28,7 +28,7 @@ alone with no gate.
   on in its footer.
 - **`.claude/skills/commit-messages/SKILL.md` — the deliverer's**,
   derived from this page like the container's and identical to it
-  today, neither copied from the other (CBC ADR-0042).
+  today, neither copied from the other (ADR-0042).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of
@@ -55,19 +55,19 @@ change too small to deserve a real one.
 
 - **Conventional Commits, not just 50/72.** The type prefix carries
   information a plain subject does not, and it is enforceable later
-  by a commitlint hook (CBC ADR-0038, 1a).
+  by a commitlint hook (ADR-0038, 1a).
 - **The agent's files never share a commit with the project's.**
   A project that works with an agent has two histories in one repo:
   the work, and the arrangement that made an agent do the work a
   particular way. They stay separable, for a filtered log or a
   portfolio copy that drops the arrangement, only if no commit ever
-  straddles them. Hence the `agent` scope (CBC ADR-0038, 1c); which
+  straddles them. Hence the `agent` scope (ADR-0038, 1c); which
   paths are the arrangement's is
   `docs/conventions/agent-arrangement/` §1.
 - **Commit on the word.** The commit boundary is the one place a
   wrong assumption is cheap to catch when an agent is doing the
   committing, so the agent stages, shows the diff, and waits. The
-  rule is text, in the skill, and gated nowhere (CBC ADR-0038, 1f).
+  rule is text, in the skill, and gated nowhere (ADR-0038, 1f).
   *A permission rule that stopped every commit at a prompt was
   shipped once and withdrawn, 2026-09-10, after the one project
   that could have used it declined it and held forty-four commits

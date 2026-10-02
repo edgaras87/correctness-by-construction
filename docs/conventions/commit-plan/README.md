@@ -10,8 +10,8 @@ between one commit and a whole project.**
 So that a change set can be inspected commit
 by commit before it lands, and a divergence at step *k* forces the
 remaining steps to be re-evaluated rather than continued on a
-plan that no longer holds. Adopted with the container (CBC
-ADR-0038, 1b): the failure it answered was lived elsewhere — a
+plan that no longer holds. Adopted with the container
+(ADR-0038, 1b): the failure it answered was lived elsewhere — a
 commit sequence kept by hand in a scratch file across four
 sessions, fitting no record — and is not ours to restate. Lived
 here since: every set since 2026-08-27 has run under it, and on
@@ -28,7 +28,7 @@ fixing it afterwards or not at all, has not happened here.
   sentence each, with the decisions it rests on in its footer.
 - **`.claude/skills/commit-plan/SKILL.md` — the deliverer's**,
   derived from this page like the container's and identical to it
-  today, neither copied from the other (CBC ADR-0042).
+  today, neither copied from the other (ADR-0042).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of
@@ -67,7 +67,7 @@ plan says so.
   record: nothing about it is meant to be read a year later except
   through `git log`, so it sits outside
   `docs/conventions/project-recording/`, whose records are all
-  append-or-evolve (CBC ADR-0038, 1b).
+  append-or-evolve (ADR-0038, 1b).
 - **Root placement.** An in-flight change set is visible from a
   clean clone, so "is work half-landed, and where did it stop?" is
   answerable without the working tree.
@@ -78,17 +78,17 @@ plan says so.
   seed's third run found four shapes in staged material that no
   conversation could have settled first, which made the
   provisional tail, the revision commit and the Proposed-then-
-  Accepted ADR the normal road for it (CBC ADR-0038, 1e).
+  Accepted ADR the normal road for it (ADR-0038, 1e).
 - **The records steps are planned.** A change set batches record
   moments, and a record's trigger can fire mid-set before its truth
   exists. Walking the entry file's records table while drafting the
-  commit list is what catches it (CBC ADR-0038, 1d).
+  commit list is what catches it (ADR-0038, 1d).
 - **The stop at every boundary is commit-messages' rule**,
   `docs/conventions/commit-messages/`; this convention points at
   it. *Until 2026-09-08 the sentence was stated here, in §6, a file
   that opens only for multi-commit work, and the reviewer's pace
   had to be said every session; it moved to where every commit
-  opens (CBC ADR-0038, 1f).*
+  opens (ADR-0038, 1f).*
 
 ## Why it arrives this way
 

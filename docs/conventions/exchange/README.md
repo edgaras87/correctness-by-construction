@@ -15,7 +15,7 @@ while run 3 ran it at every take; the deliverer's half was
 `bundle-update.md`, 527 lines; and the rule for editing a copy was
 written twice in two repos, six elements the same in different
 words (§5.1). Made one convention on 2026-09-26; what it replaced
-is CBC ADR-0036's.
+is ADR-0036's.
 
 ## What this is made usable as
 
@@ -260,7 +260,7 @@ No ADR number, no path in this repo and no word of this repo's own
 vocabulary, in a note or in a prompt: the run cannot see this repo,
 and a citation it cannot follow reads as its own. That is told text.
 A shipped file carries the tag instead, `CBC ADR-nnnn`, because a
-file stays in the run and a note is read once (CBC ADR-0020).
+file stays in the run and a note is read once (ADR-0020).
 
 A note that names a third repository gives both names: ours, by
 ordinal, and the one it gave itself at its Identity step. A run's
@@ -297,7 +297,7 @@ and it
 3. **Place.** The delivered files overwrite the copies whole. The
    take's commits follow `docs/conventions/commit-messages/`; when
    they are more than one, the chapters' commit comes first, so
-   step 5's entry lands in the last (CBC ADR-0046). A receipt
+   step 5's entry lands in the last (ADR-0046). A receipt
    branch — the delivery as it arrived, named by the pin — is worth
    cutting when the run expects to edit, because it makes step 2's
    diff exact next time. Optional.
@@ -499,6 +499,6 @@ written.
   plan when it takes more than one commit,
   `docs/conventions/commit-plan/`, and an ADR when a decision has
   rejected options, `docs/conventions/project-recording/`.
-- **The concept's version** — CBC ADR-0003, and `ARCHITECTURE.md`
+- **The concept's version** — ADR-0003, and `ARCHITECTURE.md`
   §1.1.
 - **The birth procedure** — `delivery/installs/pure-seed.md`.
