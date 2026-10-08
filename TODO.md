@@ -23,15 +23,6 @@
 
 ## Now (current plan step)
 
-- [ ] Delete the note to run 3 once run 3 has taken it (2026-10-08,
-      the reviewer).
-      Context: the note at `f801fd0` and its staging,
-      `bundle-f801fd0/`, went into run 3's `temp/` on 2026-10-08,
-      between its steps, before SL-4 opened: ten copies, five of
-      them chapters, read through `10437cd`.
-      Trigger: run 3's decisions log naming the pin `f801fd0`.
-      See: devlog 2026-10-08.
-
 - [ ] Write `exchange-birth` while running the next birth
       (2026-09-26, the reviewer).
       Context: written from the exchange's manual, as
