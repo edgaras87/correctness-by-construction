@@ -63,14 +63,6 @@
       Trigger: the next birth's Step 2 opening.
       See: devlog 2026-09-11.
 
-- [ ] Split the devlog by month (2026-10-02, the eval).
-      Context: its header says to split into `devlog/<YYYY-MM>.md`
-      when the file gets long; it is 5,350 lines over three months,
-      and the trigger fired unnoticed. Mechanical: one file per
-      month, newest on top in each, pointers by date unchanged.
-      Trigger: due.
-      See: devlog 2026-10-02.
-
 - [ ] Decide whether `commit-plan` names a step that runs as a series
       of commits (2026-09-20, never-oversold).
       Context: run 3 ran its framing steps as a draft, one commit per

@@ -300,7 +300,7 @@ ARCHITECTURE.md      this map
 PLAN.md              open milestones and their gates
 TODO.md              what's next, and the backlog
 CHANGELOG.md         the concept-version log (ADR-0003)
-devlog/              work history, session by session
+devlog/              work history, one file per month
 concept/             the concept: five chapters, 00-cbc.md first (§1.1)
 docs/
 ├── adr/             decisions and why
