@@ -77,22 +77,29 @@ in front of us. Material-first: the shape is decided there.
 
 **10. `docs: the store's refusal tops the walls`**
 ADR-0048 decisions 1, 2 and 4, as one change: in
-`concept/02-guarantees-and-walls.md` the top rung renamed, the
-paragraph after the ranking, the header naming the change; and the
-three skill files that state the ranking renamed with it —
-`cbc-slice`'s SKILL.md and workflow, `cbc-framing`'s
-`the-whole-system-in-plain.md`. One commit: the chapter alone would
-leave every derivation naming a rung that is gone. L1 is untouched;
-the ADR found no sentence owed there.
+`concept/02-guarantees-and-walls.md` the top rung renamed and the
+paragraph after the ranking; and the three skill files that state
+the ranking renamed with it — `cbc-slice`'s SKILL.md and workflow,
+`cbc-framing`'s `the-whole-system-in-plain.md`. One commit: the
+chapter alone would leave every derivation naming a rung that is
+gone. L1 is untouched; the ADR found no sentence owed there. The
+chapter's header stays as it is: a shipped file carries no history
+(ADR-0022), and the change lives in ADR-0048 and CHANGELOG.
 
-**11. `docs: records carry run 3's edits`**
+**11. `fix(concept): chapter headers carry no history`**
+Chapter 03's header loses its dated line of 2026-09-06, written
+before ADR-0022 took history out of shipped files; CHANGELOG
+already records that change. "Changes on import: none" stays, true
+of the import.
+
+**12. `docs: records carry run 3's edits`**
 ADR-0048 Accepted. CHANGELOG's Changed, for the chapter, naming v2
-(ADR-0048 decision 3). TODO: lines
-for D7–D9; "Decide our own side of shapes" and "Ship `temp/`…" made
-true for what run 3 showed. The reading marks D1–D10 and W2, W4 done.
-The devlog.
+(ADR-0048 decision 3). TODO: lines for D7–D9, and for the skills'
+`foundation: concept v1`, which becomes v2 at the release; "Decide
+our own side of shapes" and "Ship `temp/`…" made true for what run
+3 showed. The reading marks D1–D10 and W2, W4 done. The devlog.
 
-**12. `docs(agent): close commit plan for run 3's edits`**
+**13. `docs(agent): close commit plan for run 3's edits`**
 Deletes this file. The body records what diverged.
 
 ## Decisions taken inside this plan
@@ -131,6 +138,6 @@ And of the plan itself:
 - **No CHANGELOG line for the skills.** [Unreleased] already says
   the method was added; these edits reshape nothing that entry says.
 - **The reading is marked twice**, settled at step 2 and done at
-  step 11, not at every boundary.
+  step 12, not at every boundary.
 - **The note to run 3 is not in this set.** `exchange-deliver`
   follows the close, as W3.
