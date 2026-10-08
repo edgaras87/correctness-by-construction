@@ -89,8 +89,11 @@ chapter's header stays as it is: a shipped file carries no history
 **11. `fix(concept): chapter headers carry no history`**
 Chapter 03's header loses its dated line of 2026-09-06, written
 before ADR-0022 took history out of shipped files; CHANGELOG
-already records that change. "Changes on import: none" stays, true
-of the import.
+already records that change. All five headers then say "Changes on
+import: none; changes since are in CHANGELOG", where they said
+"verbatim below this header" — false of 03 since 2026-09-06 and of
+02 since step 10. One form for all five, so the next change to a
+chapter leaves its header true.
 
 **12. `docs: records carry run 3's edits`**
 ADR-0048 Accepted. CHANGELOG's Changed, for the chapter, naming v2
