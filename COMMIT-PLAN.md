@@ -86,21 +86,24 @@ gone. L1 is untouched; the ADR found no sentence owed there. The
 chapter's header stays as it is: a shipped file carries no history
 (ADR-0022), and the change lives in ADR-0048 and CHANGELOG.
 
-**11. `fix(concept): chapter headers carry no history`**
-Chapter 03's header loses its dated line of 2026-09-06, written
-before ADR-0022 took history out of shipped files; CHANGELOG
-already records that change. All five headers then say "Changes on
-import: none; changes since are in CHANGELOG", where they said
-"verbatim below this header" — false of 03 since 2026-09-06 and of
-02 since step 10. One form for all five, so the next change to a
-chapter leaves its header true.
+**11. `fix(concept): the chapters carry no header`**
+All five chapters lose their provenance comment. Read per line, as
+ADR-0022's test asks of a shipped file, every line is history —
+the archive pin, the import, chapter 03's dated line of 2026-09-06,
+"verbatim below this header", false of 03 since then and of 02
+since step 10 — but one, "a run's copy is pinned, never edited",
+which the run's `delivered-copies.md` says where it loads on
+`docs/concept/**`. The history is CHANGELOG's `[v1]`, ADR-0003 and
+git. No body changes.
 
 **12. `docs: records carry run 3's edits`**
 ADR-0048 Accepted. CHANGELOG's Changed, for the chapter, naming v2
-(ADR-0048 decision 3). TODO: lines for D7–D9, and for the skills'
+(ADR-0048 decision 3), and its line on the chapters' headers made
+true for step 11. TODO: lines for D7–D9, and for the skills'
 `foundation: concept v1`, which becomes v2 at the release; "Decide
-our own side of shapes" and "Ship `temp/`…" made true for what run
-3 showed. The reading marks D1–D10 and W2, W4 done. The devlog.
+our own side of shapes", "Ship `temp/`…" and "Split a shipped
+file's header…" made true for what run 3 and step 11 showed. The
+reading marks D1–D10 and W2, W4 done. The devlog.
 
 **13. `docs(agent): close commit plan for run 3's edits`**
 Deletes this file. The body records what diverged.
