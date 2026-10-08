@@ -6,6 +6,27 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-10-08, later  (run 3 takes `f801fd0` — 2 commits on main)
+
+- **The take checks out.** Two commits, the chapters first; every copy
+  run 3 holds equals the staging, byte for byte; its decisions entry
+  carries `f801fd0` and `10437cd`, the note's count and the modes; its
+  TODO dropped the six lines the note answered, the held ones stayed.
+  Nothing new addressed to us, so no reading: the next starts from
+  `de29d9e`.
+- **The `temp/` rule's first use held**: the take removed our staging
+  and note and left run 3's own draft standing.
+- Main fast-forwarded to the branch on the reviewer's word; the note
+  went (`00c0ee2`).
+
+Resume: on `main`, at the next commit, 30 ahead of origin, not
+pushed. Next:
+
+1. **Run 3 opens SL-4**, in its own session; read it after.
+2. **Due in TODO**: the commit-plan set — grep the unwrapped text,
+   one meaning for "step", series, mood, the 50-character limit;
+   split the devlog; the conventions map.
+
 ## 2026-10-08  (the reading of run 3; its edits, and the delivery — 28 commits on `reading-run-3-2026-10-08`)
 
 - **Read through `10437cd`**: 46 commits — the take of `a3b6b8c`, SL-3
