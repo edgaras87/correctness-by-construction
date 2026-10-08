@@ -117,34 +117,53 @@ What the run teaches the worked example:
 ## 5. Decisions
 
 - **D1** — `cbc-slice`'s five edits (F2): each taken, declined or
-  held. The first rests on D2's trust question.
+  held. The first rests on D2's trust question. Settled: taken
+  whole, D10 with it in one commit.
 - **D2** — `cbc-framing`'s two edits (F3). Gates D1's first edit, D3
   and D4's framing half: the skill asking what the chapter does not.
-- **D3** — `infra-establish`'s hand-off (F4). Rests on D2.
+  Settled: taken whole, the worked example with it, in `6389120`;
+  the chapter is D4's.
+- **D3** — `infra-establish`'s hand-off (F4). Rests on D2. Settled:
+  taken whole.
 - **D4** — the chapter lessons (F7): a concept change, so an ADR and
   the version question (ADR-0003). Touches TODO's absence-rung item
-  (Later), whose trigger this is not.
+  (Later), whose trigger this is not. Settled: taken, the walls half
+  only, under ADR-0048, its shape decided in the chapter's text; the
+  framing half is already L1's line on accepted trust.
 - **D5** — `delivered-copies.md` rule 5 (F1), with F11: whether a
   run's `temp/` is tracked, and TODO's "Ship `temp/` in the
-  container, or stop telling runs to use it".
+  container, or stop telling runs to use it". Settled: taken whole,
+  the exchange manual first, since it says `temp/` is emptied at the
+  take; our `exchange-deliver`, which stops on a run's non-empty
+  `temp/`, with it. The manual already calls a run's `temp/`
+  untracked; the TODO item is made true for that.
 - **D6** — `commit-plan`'s two edits (F5). Meets TODO's due items:
   the 50-character limit, one mood, commit series. Taking it opens
   commit-plan, which fires two Later items: grep the unwrapped
-  text, and one meaning for "step".
+  text, and one meaning for "step". Settled: taken whole, the
+  manual's reasons with the master, then our copy; the two fired
+  Later items are the next set's, with the three due commit
+  decisions.
 - **D7** — the evidence-test shape (F6): ours to hold, hidden or
   exposed, and in which group. TODO's "Decide our own side of
-  shapes" has this as its trigger.
+  shapes" has this as its trigger. Settled: held — one run's tests,
+  as the slice-record shape is held. Trigger: the next birth's first
+  slice, its evidence tests read against the skeleton. D1 takes two
+  of its lessons.
 - **D8** — a rule on trial (F8): a question for the shapes
-  convention.
+  convention. Settled: held with D7, until there is a rule we would
+  deliver that way.
 - **D9** — a glossary (F9): whether, and where — a chapter, or
-  beside them.
-- **D10** — the worked example (F13): follows D1 and D2.
+  beside them. Settled: held. Trigger: Release's README gate.
+- **D10** — the worked example (F13): follows D1 and D2. Settled:
+  its framing half in `6389120`, its slice half with D1.
 
 ## 6. The work
 
 - **W1** — delete the note to run 3, `temp/note-to-run-3-2026-10-02.md`,
   and TODO's line for it (F12). Done in `3b319c6`.
 - **W2** — **plan** — the masters change for whatever D1–D10 take.
+  Under `COMMIT-PLAN.md`, opened at `633ea25`.
 - **W3** — the note to run 3: every verdict in the run's order,
   read through `10437cd` (`exchange-deliver`).
 - **W4** — records: TODO lines for what is held, the devlog.
@@ -154,6 +173,10 @@ What the run teaches the worked example:
 - Finding the run took a search of the disk: nothing here names
   where a run's repository lives
   (`~/IdeaProjects/cbc-pure-run-3`).
+- The reading checked each copy against our master, and never the
+  master against what it derives from. The reviewer asked whether
+  conventions and concepts were touched; two manuals were, and our
+  own `exchange-deliver` would have stopped the next delivery.
 
 ## 8. Notes
 
