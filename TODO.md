@@ -23,15 +23,6 @@
 
 ## Now (current plan step)
 
-- [ ] Delete the note to run 3 once run 3 has taken it (2026-10-02,
-      the reviewer).
-      Context: the note at `a3b6b8c` and its staging,
-      `bundle-a3b6b8c/`, went into run 3's `temp/` on 2026-10-02,
-      between its steps, before SL-3 opened: twelve copies from the
-      eval's groups 2 and 3, read through `65aa18d`.
-      Trigger: run 3's decisions log naming the pin `a3b6b8c`.
-      See: devlog 2026-10-02, the delivery.
-
 - [ ] Write `exchange-birth` while running the next birth
       (2026-09-26, the reviewer).
       Context: written from the exchange's manual, as
