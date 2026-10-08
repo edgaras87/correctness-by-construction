@@ -6,7 +6,7 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
-## 2026-10-08  (the reading of run 3; its edits into the masters — 24 commits on `reading-run-3-2026-10-08`)
+## 2026-10-08  (the reading of run 3; its edits, and the delivery — 28 commits on `reading-run-3-2026-10-08`)
 
 - **Read through `10437cd`**: 46 commits — the take of `a3b6b8c`, SL-3
   whole, and a review after it that corrected four of our copies and
@@ -44,13 +44,22 @@
   entries the log's header rules out, the header thread three times,
   ARCHITECTURE missed in the records walk. Not more than half, so
   the provisional-steps watch item stays unfired.
+- **Delivered @ `f801fd0`**, on the reviewer's word: the note and
+  `bundle-f801fd0/` beside run 3's own draft in its `temp/`, which
+  the new staging check let stand. Ten copies differ, five of them
+  chapters, as the note says; checked against run 3's tree before
+  anything was copied.
+- **The reading's lessons placed**: working a reading checks a taken
+  item at its source and reads its file whole (`88ffba4`); where a
+  run lives is a TODO line.
 
 Resume: on `reading-run-3-2026-10-08`, at the next commit, not
 pushed. Next:
 
-1. **Close the plan**, then the note to run 3 (W3), read through
-   `10437cd`, with the staging — `exchange-deliver`.
-2. **Then main**: the branch fast-forwards on the reviewer's word.
+1. **The reading goes**, then main fast-forwards on the reviewer's
+   word.
+2. **Run 3 takes `f801fd0`, then opens SL-4**, in its own session;
+   our note goes once its decisions log names the pin.
 3. **Due in TODO**: the commit-plan set — grep the unwrapped text,
    one meaning for "step", series, mood, the 50-character limit;
    split the devlog; the conventions map.

@@ -23,6 +23,15 @@
 
 ## Now (current plan step)
 
+- [ ] Delete the note to run 3 once run 3 has taken it (2026-10-08,
+      the reviewer).
+      Context: the note at `f801fd0` and its staging,
+      `bundle-f801fd0/`, went into run 3's `temp/` on 2026-10-08,
+      between its steps, before SL-4 opened: ten copies, five of
+      them chapters, read through `10437cd`.
+      Trigger: run 3's decisions log naming the pin `f801fd0`.
+      See: devlog 2026-10-08.
+
 - [ ] Write `exchange-birth` while running the next birth
       (2026-09-26, the reviewer).
       Context: written from the exchange's manual, as
@@ -408,6 +417,15 @@
              the next read goes back to the last note's read-through.
       Trigger: the next reading overtaken.
       See: devlog 2026-09-30, the delivery to run 3.
+
+- [ ] Say where each run's repository lives (2026-10-08, the
+      reading of run 3).
+      Context: `exchange-read` and `exchange-deliver` both work on
+      `"$run"`, and nothing here names it; finding run 3, at
+      `~/IdeaProjects/cbc-pure-run-3`, took a search of the disk.
+      One run so far, so the devlog's line is enough.
+      Trigger: a second live run, or a run moved.
+      See: devlog 2026-10-08.
 
 - [ ] Name when a run is read (2026-10-01, the working draft).
       Context: a reading happens when the reviewer says. A hand-off
