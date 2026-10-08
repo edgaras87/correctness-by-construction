@@ -83,6 +83,17 @@ plan says so.
   moments, and a record's trigger can fire mid-set before its truth
   exists. Walking the entry file's records table while drafting the
   commit list is what catches it (ADR-0038, 1d).
+- **Subjects are counted where they are first written.** A plan
+  writes every subject before any lands; counted only at each
+  boundary, a long one lands long, or is rewritten there with
+  nothing in the plan saying why. *Run 3's SL-3 plan, 2026-10-08:
+  three planned subjects over the limit, each caught only at its
+  boundary, and one revision's own subject landed long uncounted.*
+- **The agent's files are a step of their own.** commit-messages
+  keeps a commit that touches them apart from everything else, so
+  a records step planned to carry a skill's correction has to be
+  split when it opens. *The same plan put two changes under
+  `.claude/` inside its records step, and split it by revision.*
 - **The stop at every boundary is commit-messages' rule**,
   `docs/conventions/commit-messages/`; this convention points at
   it. *Until 2026-09-08 the sentence was stated here, in §6, a file
