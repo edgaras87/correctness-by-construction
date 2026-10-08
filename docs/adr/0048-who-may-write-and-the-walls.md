@@ -1,8 +1,8 @@
 # 0048. Who may write, and the walls
 
 Date: 2026-10-08
-Status: Proposed (2026-10-08, under the commit plan for run 3's
-edits)
+Status: Accepted (2026-10-08, at the set's records commit; opened
+Proposed under the commit plan for run 3's edits, unrevised)
 
 ## Context
 

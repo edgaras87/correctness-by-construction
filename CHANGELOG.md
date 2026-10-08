@@ -37,11 +37,26 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 
 ### Changed
 
+- **The walls chapter, harvested from never-oversold — the concept
+  becomes v2.** The top rung of the wall ranking is the store's
+  refusal: a constraint, or a right withheld from the identity
+  that writes. A new paragraph says who each wall leaves unbound —
+  whoever can remove it — so the described adversary says who
+  besides the system may write what it stores, and a single entry
+  path is a wall only where that answer names it the only writer.
+  A plan derived from v1 could hold such a path as a wall with no
+  answer behind it (ADR-0048). `cbc-slice` and `cbc-framing` state
+  the ranking anew.
 - Chapter 03's sentence on when technology enters, corrected from
   the runs: after framing, each choice answerable to the slice
-  registry — not "with the first slice". Editorial; the concept
-  stays v1.
-- Every chapter's header names the canonical copy by path.
+  registry — not "with the first slice". Editorial.
+
+### Removed
+
+- The chapters' provenance headers. Each line was history, kept in
+  `[v1]` below, ADR-0003 and git, or the one instruction a run's
+  copy needs — never edited — which the run's own rule gives
+  (ADR-0022).
 
 ## [v1] - 2026-08-28
 

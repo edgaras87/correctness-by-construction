@@ -41,22 +41,14 @@
       it (2026-09-23).
       Context: `visual-comparison`, `shapes-lifecycle` and
       `delivered-copies` send a newborn to `temp/`, and
-      `exchange-deliver` stages into it; the container ships none,
-      and no shipped text says what the folder is or that it is
-      tracked. Ours, `temp/README.md`, now says just that: the seed.
+      `exchange-deliver` stages into it; the container ships none.
+      The exchange manual calls a run's `temp/` untracked, and since
+      2026-10-08 a take removes only its staging, because run 3
+      keeps its own drafts there; ours is tracked. No shipped text
+      says what the folder is for. Ours, `temp/README.md`, is the
+      seed.
       Trigger: before the next birth.
-
-- [ ] Split a shipped file's header between its two readers
-      (2026-09-05, the user).
-      Context: a header speaks to two readers — the garden, about
-      its mechanics, and the copy's reader, who needs only source,
-      version, pin, do-not-edit, how changes arrive, and to write
-      surprises in its own records. The concept chapters' headers
-      still say "harvest, never edits" to the run's copy. Skills
-      stay as they are — agent-side, the user's call.
-      Ideas: the master's header above a marker, the copy everything
-             below, checkable as identical-below-the-marker.
-      Trigger: the next birth.
+      See: devlog 2026-10-08.
 
 - [ ] Tell the next birth the middle-steps line at its Step 2
       opening (2026-09-10; reopened 2026-09-29).
@@ -113,6 +105,33 @@
       Ideas: a shorter revision form in commit-plan.
       Trigger: with the mood decision above.
       See: devlog 2026-09-29, the agent model.
+
+- [ ] Write "grep the unwrapped text, not the file" into the
+      commit-plan skill's sweep, its §4 (2026-09-19).
+      Context: four misses — the `§8` hunt that missed a `§7`, a
+      renumbering described without reading its range, a phrase
+      the file wraps across two lines, and on 2026-09-30 a
+      "(model §10)" pointer wrapped the same way. The commit-plan
+      manual never explains the sweep; the rule is the skill's
+      alone.
+      Ideas: the sweep's why, into the commit-plan manual.
+      Trigger: due — the set of 2026-10-08 changed commit-plan
+      (`489ecf2`) and left it for its own set.
+      See: devlog 2026-09-19, small hours; 2026-09-30.
+
+- [ ] Give "step" one meaning (2026-09-29, the reviewer).
+      Context: it names a PLAN.md step and a commit in a commit
+      plan — 28 times in the commit-plan skill, four of them new on
+      2026-10-08, and "stop at every step's boundary" in the
+      reviewer's local file — and runs hold both, since the skill
+      ships; a run also has the skills' stages inside a step.
+      "Stage" is already taken three ways: the skills' Stage 0–5,
+      git's staging area, and a delivery into `temp/`. The commit
+      plan already heads its list Commits.
+      Ideas: a commit plan's unit becomes "commit".
+             PLAN's step becomes "plan stage".
+      Trigger: due, with the grep item above.
+      See: devlog 2026-09-29, the TODO pass.
 
 - [ ] Make the conventions index a full local map (2026-09-30, the
       reviewer).
@@ -190,6 +209,18 @@
       reference opens.
       See: devlog 2026-09-24.
 
+- [ ] Read the next birth's first evidence tests against run 3's
+      evidence-test shape (2026-10-08, the reading of run 3).
+      Context: never-oversold's `.claude/rules/evidence-test.md`,
+      offered with its skeleton marked apart from its illustration.
+      Held, not shipped: one run's tests, as its slice-record shape
+      is held, and a newborn's tests written without it are the
+      measurement a hidden shape exists for. `cbc-slice` took two
+      of its lessons — a red on the witness, a race's pause on the
+      red tree — at `3758a72`.
+      Trigger: the next birth's first slice closing.
+      See: devlog 2026-10-08.
+
 - [ ] Watch whether the next newborn adds the ground-must-be-up
       rule to its entry file unasked (2026-09-04, ADR-0013's scope
       boundary).
@@ -224,10 +255,37 @@
       Context: where unexposed stock lives, what is staged to whom
       and when, whether `delivery/shapes/` exists. The rule is
       written and the directory arrives with its first occupant;
-      we hold none. never-oversold's `slice-record.md` is offered
-      and not yet evaluated.
+      we hold none. never-oversold offers two, neither evaluated:
+      `slice-record.md`, and since 2026-10-07 its evidence-test
+      shape, exposed there as a rule.
       Trigger: a first shape being ours to hold.
       See: devlog 2026-09-27.
+
+- [ ] Move the skills' `foundation` to concept v2 at the release
+      (2026-10-08, ADR-0048).
+      Context: the method's skills say `foundation: concept v1`.
+      ADR-0048 makes the next release v2, and `cbc-slice` and
+      `cbc-framing` already state its ranking.
+      Trigger: the release that names v2.
+
+- [ ] Decide whether a rule can be delivered on trial, as a shape
+      can (2026-10-08, never-oversold).
+      Context: a shape has two places, hidden and exposed; a rule
+      learned in one run is in force in the next from its first
+      step. Run 3 asks after offering its evidence-test shape as a
+      rule. Held with that shape: the question is real only once
+      there is a rule we would deliver that way.
+      Trigger: a rule we would ship that one run alone has lived.
+      See: devlog 2026-10-08.
+
+- [ ] Give the method a glossary (2026-10-08, never-oversold).
+      Context: its words are defined where each is first used;
+      tripwire, witness, fold, fence and possession appear only in
+      the skills, never in the chapters a reader starts from, and
+      the wall's own check joins them. Whether a list beside the
+      chapters, or a chapter's, is open.
+      Trigger: Release's README gate, where a stranger first needs
+      the words.
 
 - [ ] Watch whether commit-plan needs a rule about provisional
       steps (2026-09-19).
@@ -241,18 +299,6 @@
       Trigger: a set that diverges by more than half its planned
       steps, or a retrospective.
       See: devlog 2026-09-19, later.
-
-- [ ] Write "grep the unwrapped text, not the file" into the
-      commit-plan skill's sweep, its §4 (2026-09-19).
-      Context: four misses — the `§8` hunt that missed a `§7`, a
-      renumbering described without reading its range, a phrase
-      the file wraps across two lines, and on 2026-09-30 a
-      "(model §10)" pointer wrapped the same way. The commit-plan
-      manual never explains the sweep; the rule is the skill's
-      alone.
-      Ideas: the sweep's why, into the commit-plan manual.
-      Trigger: the next set that changes commit-plan.
-      See: devlog 2026-09-19, small hours; 2026-09-30.
 
 - [ ] Number the concept chapters' sections (2026-09-30).
       Context: their `##` headings are unnumbered, and nothing points
@@ -304,20 +350,6 @@
       Trigger: a change to the arrangement that has to edit both
       files for one fact.
       See: devlog 2026-09-29, the agent model.
-
-- [ ] Give "step" one meaning (2026-09-29, the reviewer).
-      Context: it names a PLAN.md step and a commit in a commit
-      plan — 21 times in the commit-plan skill, and "stop at every
-      step's boundary" in the reviewer's local file — and runs hold
-      both, since the skill ships; a run also has the skills'
-      stages inside a step. "Stage" is already taken three ways:
-      the skills' Stage 0–5, git's staging area, and a delivery
-      into `temp/`. The commit plan already heads its list Commits.
-      Ideas: a commit plan's unit becomes "commit".
-             PLAN's step becomes "plan stage".
-      Trigger: the next set that changes commit-plan, with the grep
-      item above.
-      See: devlog 2026-09-29, the TODO pass.
 
 - [ ] Name the discipline "lived is evidence, not master text"
       (2026-09-04, the user).

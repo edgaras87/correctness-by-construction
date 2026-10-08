@@ -40,32 +40,35 @@ Edits to copies, each with its entry in the run's decisions log:
 - **F1** — `delivered-copies.md` rule 5 (2026-10-05): the take removes
   the staging — the hash's directory and its note — and nothing else,
   where it said "empty `temp/`". A reviewer's draft kept in the run's
-  `temp/`, untracked, would have gone with the next take.
+  `temp/`, untracked, would have gone with the next take. Taken in
+  `a2ae7e0`, the exchange manual with it.
 - **F2** — `cbc-slice`, five edits in SKILL.md and the workflow's
   Stages 2–3 (2026-10-08): the escape-hatch hunt aims at the
   definition's trust list; a face's cost says the size it assumes;
   a red counts only if it fails on the witness; a race's held-open
   window lives on the red tree only; a third test kind, the wall's
-  own check, beside evidence and tripwire.
+  own check, beside evidence and tripwire. Taken in `3758a72`.
 - **F3** — `cbc-framing`, two edits in the workflow's Step 2 and
   SKILL.md, a finished copy (2026-10-08): the trust list answers who
   besides the system can write what it stores; the runtime ground
-  gains a sixth line, the size the system is built for.
+  gains a sixth line, the size the system is built for. Taken in
+  `6389120`.
 - **F4** — `infra-establish`'s PostgreSQL walkthrough, the hand-off,
   a finished copy (2026-10-08): the inspection identity is the
   writing one; the project says whether the trust list covers people
   reading with it, or a read-only identity is made at bootstrap.
+  Taken in `2dc4470`.
 - **F5** — `commit-plan`, two edits (2026-10-08): planned subjects
   counted against the limit when the plan is written; a change to
   the agent's own files is its own step, never inside a records
-  step.
+  step. Taken in `489ecf2`, ours following in `13568d5`.
 
 Files the run wrote, offered under *To the deliverer*:
 
 - **F6** — the evidence-test shape, `.claude/rules/evidence-test.md`,
   181 lines, scoped to `src/test/**`, exposed at once (2026-10-07).
   Skeleton marked apart from illustration. Whether it reaches another
-  project, hidden or exposed, is asked of us.
+  project, hidden or exposed, is asked of us. Held (D7).
 
 Asks and offers, under *To the deliverer*:
 
@@ -73,12 +76,14 @@ Asks and offers, under *To the deliverer*:
   never asks who else writes the store, and nothing asks the size.
   Walls: a right withheld from an identity is a wall in the store's
   grant system; the single-entry-path rung holds only while a trust
-  line names that path the only writer.
+  line names that path the only writer. The walls half taken in
+  `86ed0c4`, under ADR-0048; the framing half was already L1's.
 - **F8** — a question: should a rule, not only a shape, be
   deliverable hidden or on trial until a second project reaches it?
+  Held (D8).
 - **F9** — the method has no glossary: tripwire, witness, fold,
   fence, possession appear only in the skills, never in the
-  chapters; the wall's own check joins them.
+  chapters; the wall's own check joins them. Held (D9).
 - **F10** — the held lines stand as our notes left them: three
   retrospective items, the facility paragraph, the absence rung, the
   commit-series and imperative questions ("being weighed there
@@ -90,7 +95,9 @@ From the read itself:
 
 - **F11** — the take and the run's `temp/`: our staging is gone, and
   `temp/` holds the run's own draft, untracked. Our `temp/` is
-  tracked; no shipped text says which it is.
+  tracked; no shipped text says which it is. The manual's side in
+  `a2ae7e0`; our staging check in `f2e3790`; what a run's `temp/` is
+  for stays TODO's.
 - **F12** — our TODO's trigger fired: the run's decisions log names
   the pin `a3b6b8c`, so the note to run 3 is due to go. Fixed in
   `3b319c6`.
@@ -103,6 +110,7 @@ What the run teaches the worked example:
   ("any admin insert path must go through the same
   constraint-guarded table") is the walled-by-default answer F2
   names; its build gate says nothing of a red on the witness.
+  Fixed in `6389120` and `3758a72`.
 
 ## 4. What the run taught us that we had not thought of
 
@@ -118,55 +126,61 @@ What the run teaches the worked example:
 
 - **D1** — `cbc-slice`'s five edits (F2): each taken, declined or
   held. The first rests on D2's trust question. Settled: taken
-  whole, D10 with it in one commit.
+  whole, D10 with it in one commit. Done in `3758a72`.
 - **D2** — `cbc-framing`'s two edits (F3). Gates D1's first edit, D3
   and D4's framing half: the skill asking what the chapter does not.
   Settled: taken whole, the worked example with it, in `6389120`;
   the chapter is D4's.
 - **D3** — `infra-establish`'s hand-off (F4). Rests on D2. Settled:
-  taken whole.
+  taken whole. Done in `2dc4470`.
 - **D4** — the chapter lessons (F7): a concept change, so an ADR and
   the version question (ADR-0003). Touches TODO's absence-rung item
   (Later), whose trigger this is not. Settled: taken, the walls half
   only, under ADR-0048, its shape decided in the chapter's text; the
-  framing half is already L1's line on accepted trust.
+  framing half is already L1's line on accepted trust. Done in
+  `0d79d50` and `86ed0c4`, the top rung renamed as the reviewer
+  chose; the chapters' headers went with it, in `f7f0b5b`.
 - **D5** — `delivered-copies.md` rule 5 (F1), with F11: whether a
   run's `temp/` is tracked, and TODO's "Ship `temp/` in the
   container, or stop telling runs to use it". Settled: taken whole,
   the exchange manual first, since it says `temp/` is emptied at the
   take; our `exchange-deliver`, which stops on a run's non-empty
   `temp/`, with it. The manual already calls a run's `temp/`
-  untracked; the TODO item is made true for that.
+  untracked; the TODO item is made true for that. Done in
+  `a2ae7e0` and `f2e3790`.
 - **D6** — `commit-plan`'s two edits (F5). Meets TODO's due items:
   the 50-character limit, one mood, commit series. Taking it opens
   commit-plan, which fires two Later items: grep the unwrapped
   text, and one meaning for "step". Settled: taken whole, the
   manual's reasons with the master, then our copy; the two fired
   Later items are the next set's, with the three due commit
-  decisions.
+  decisions. Done in `489ecf2` and `13568d5`.
 - **D7** — the evidence-test shape (F6): ours to hold, hidden or
   exposed, and in which group. TODO's "Decide our own side of
   shapes" has this as its trigger. Settled: held — one run's tests,
   as the slice-record shape is held. Trigger: the next birth's first
   slice, its evidence tests read against the skeleton. D1 takes two
-  of its lessons.
+  of its lessons. In TODO, Next.
 - **D8** — a rule on trial (F8): a question for the shapes
   convention. Settled: held with D7, until there is a rule we would
-  deliver that way.
+  deliver that way. In TODO, Later.
 - **D9** — a glossary (F9): whether, and where — a chapter, or
-  beside them. Settled: held. Trigger: Release's README gate.
+  beside them. Settled: held. Trigger: Release's README gate. In
+  TODO, Later.
 - **D10** — the worked example (F13): follows D1 and D2. Settled:
-  its framing half in `6389120`, its slice half with D1.
+  its framing half in `6389120`, its slice half with D1. Done.
 
 ## 6. The work
 
 - **W1** — delete the note to run 3, `temp/note-to-run-3-2026-10-02.md`,
   and TODO's line for it (F12). Done in `3b319c6`.
 - **W2** — **plan** — the masters change for whatever D1–D10 take.
-  Under `COMMIT-PLAN.md`, opened at `633ea25`.
+  Under `COMMIT-PLAN.md`, opened at `633ea25`. Done, the set's
+  records commit last.
 - **W3** — the note to run 3: every verdict in the run's order,
   read through `10437cd` (`exchange-deliver`).
-- **W4** — records: TODO lines for what is held, the devlog.
+- **W4** — records: TODO lines for what is held, the devlog. Done
+  in the set's records commit.
 
 ## 7. What this reading taught
 
@@ -177,6 +191,9 @@ What the run teaches the worked example:
   master against what it derives from. The reviewer asked whether
   conventions and concepts were touched; two manuals were, and our
   own `exchange-deliver` would have stopped the next delivery.
+- Taking a run's edit to a chapter opened the chapter's header, and
+  the header turned out to be history in a shipped file: a change
+  to a master is a moment to read the whole file it lands in.
 
 ## 8. Notes
 

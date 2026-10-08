@@ -65,9 +65,10 @@ and is either derived from it or checked against it.
 - **Canonical here.** This is where the concept is true. Every
   copy elsewhere — a run's `docs/concept/` — is a copy, changed
   only by copying anew, never edited in place.
-- **Versioned as a whole**, not per chapter. It is at **v1**. The
-  bump rule is one question: could this change invalidate something
-  derived from it.
+- **Versioned as a whole**, not per chapter. It is at **v1**, and
+  CHANGELOG's [Unreleased] holds a change that makes the next
+  release v2 (ADR-0048). The bump rule is one question: could this
+  change invalidate something derived from it.
 - **It demands nothing by itself.** A chapter cannot be run. What
   can be run is the method below, which is where the concept
   becomes work.
@@ -255,8 +256,9 @@ review, and each entry names which.
 
 - **The concept is canonical here**, and the archive it came from
   is a frozen snapshot, never consulted as a source — §1.1 and
-  `docs/conventions/conventions/` §3.5; held in each chapter's
-  provenance header.
+  `docs/conventions/conventions/` §3.5; held by CHANGELOG's `[v1]`
+  entry, which names the archive copy a snapshot, and checked at
+  commit review.
 - **A substantive concept change never lands without a version
   entry** — CHANGELOG's standing comment and ADR-0003; checked at
   commit review, a review-grade wall, named as such.

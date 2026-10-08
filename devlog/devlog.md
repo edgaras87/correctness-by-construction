@@ -6,6 +6,55 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
 
+## 2026-10-08  (the reading of run 3; its edits into the masters — 24 commits on `reading-run-3-2026-10-08`)
+
+- **Read through `10437cd`**: 46 commits — the take of `a3b6b8c`, SL-3
+  whole, and a review after it that corrected four of our copies and
+  one rule in place. Every hunk had its decisions entry. Run 3 lives
+  at `~/IdeaProjects/cbc-pure-run-3`; nothing here said so, and
+  finding it took a search of the disk.
+- **The lesson under most of it:** run 3's framing never said who
+  besides the system may write the store, nor how big it is built,
+  and SL-3 walled against scripts that could remove the walls. The
+  framing skill now asks both, the slice skill hunts against the
+  answer, and the PostgreSQL hand-off asks who inspects with which
+  identity.
+- **Taken whole:** framing, slice (five), the hand-off,
+  `delivered-copies` (a take clears only its staging), `commit-plan`
+  (subjects counted at planning; agent files their own step). The
+  worked example followed both method skills, as the framing
+  workflow's header asks.
+- **Masters checked against their sources**, on the reviewer's
+  question: two manuals moved with their masters — the exchange said
+  `temp/` is emptied at a take — and our own `exchange-deliver` would
+  have stopped the next delivery twice over, on run 3's untracked
+  draft and on its `git status`.
+- **The concept moved: ADR-0048, and the next release is v2.** The
+  top rung is the store's refusal, a constraint or a right withheld —
+  the reviewer chose renaming the rung over a paragraph alone — and a
+  paragraph says each wall leaves unbound whoever can remove it.
+- **The chapters lost their headers.** I wrote the change into 02's
+  provenance comment, copying 03's dated line; the reviewer asked why,
+  then why a header at all. Read per line by ADR-0022's test, it was
+  history but for "never edited", which the run's rule gives. Gone
+  from all five; CHANGELOG's `[v1]` keeps where they came from.
+- **Held:** the evidence-test shape (Next), a rule on trial and a
+  glossary (Later), and the skills' `foundation` to v2 at the release.
+- **The plan diverged six times** on twelve steps: two decisions
+  entries the log's header rules out, the header thread three times,
+  ARCHITECTURE missed in the records walk. Not more than half, so
+  the provisional-steps watch item stays unfired.
+
+Resume: on `reading-run-3-2026-10-08`, at the next commit, not
+pushed. Next:
+
+1. **Close the plan**, then the note to run 3 (W3), read through
+   `10437cd`, with the staging — `exchange-deliver`.
+2. **Then main**: the branch fast-forwards on the reviewer's word.
+3. **Due in TODO**: the commit-plan set — grep the unwrapped text,
+   one meaning for "step", series, mood, the 50-character limit;
+   split the devlog; the conventions map.
+
 ## 2026-10-02, the delivery  (groups 2 and 3 to run 3 — 4 commits)
 
 - **Delivered before SL-3, not after.** The reviewer asked whether to
