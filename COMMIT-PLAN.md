@@ -65,8 +65,8 @@ where they are first written; agent files apart from records — and
 the container's master takes run 3's two edits (D6).
 
 **8. `chore(agent): commit-plan follows the container`**
-Our copy follows, with its decisions entry, as D1 of the eval's
-group 3 did it.
+Our copy follows, byte-identical. No decisions entry, as at step 6:
+the manual moved at step 7, and this brings our skill to it.
 
 **9. `docs(adr): 0048, who may write, and the walls`** — *provisional*
 Proposed. Run 3's walls lessons: the single-entry-path rung holds
