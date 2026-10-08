@@ -51,10 +51,13 @@ its staging and nothing else; `delivered-copies.md` rule 5 takes run
 3's edit whole, derived from them (D5).
 
 **6. `chore(agent): deliver looks for our staging only`**
-Our `exchange-deliver`: step 0 checks the run's `temp/` holds no
-staging or note of ours, where it said "must be empty", and its
-closing line drops the same claim; a decisions entry. Run 3's
-`temp/` holds a draft today, so W3 would stop on the old check.
+Our `exchange-deliver`: its quiet-tree check leaves the run's
+`temp/` out of `git status` and looks there only for a staging or
+note of ours, where it said "must be empty"; its closing line and
+gates drop the same claim. No decisions entry: the log's header
+counts a fix that brings a skill to its manual as no decision. Run
+3's `temp/` holds a draft today and shows in its `git status`, so W3
+would stop on either old check.
 
 **7. `docs: commit-plan learns two habits`**
 The commit-plan manual gains the reason for each — subjects counted
