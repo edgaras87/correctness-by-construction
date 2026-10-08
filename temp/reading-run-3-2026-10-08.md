@@ -92,7 +92,8 @@ From the read itself:
   `temp/` holds the run's own draft, untracked. Our `temp/` is
   tracked; no shipped text says which it is.
 - **F12** — our TODO's trigger fired: the run's decisions log names
-  the pin `a3b6b8c`, so the note to run 3 is due to go.
+  the pin `a3b6b8c`, so the note to run 3 is due to go. Fixed in
+  `3b319c6`.
 
 What the run teaches the worked example:
 
@@ -142,7 +143,7 @@ What the run teaches the worked example:
 ## 6. The work
 
 - **W1** — delete the note to run 3, `temp/note-to-run-3-2026-10-02.md`,
-  and TODO's line for it (F12).
+  and TODO's line for it (F12). Done in `3b319c6`.
 - **W2** — **plan** — the masters change for whatever D1–D10 take.
 - **W3** — the note to run 3: every verdict in the run's order,
   read through `10437cd` (`exchange-deliver`).
