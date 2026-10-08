@@ -41,7 +41,10 @@ there.
    needs none is settled on its proposal, and marked so in place.
 
 4. **A work item is a commit or a commit plan**, with the reviewer
-   at every boundary.
+   at every boundary. An item taken into a master is checked against
+   what the master derives from — its manual, or its chapter — and
+   the file it lands in is read whole before the commit: a run's
+   edit shows one file, never what that file stands on.
 
 5. **Every close is followed by one pass over every open item.**
    The item is marked the moment it closes, with its commit; then
@@ -90,3 +93,5 @@ there.
 - `.claude/decisions.md`, 2026-10-01 — placed from the draft that
   ran three readings of run 3; why a rule beside the shape, and not
   the shape, a skill, or the draft left standing
+- `.claude/decisions.md`, 2026-10-08 — a taken item checked against
+  its source, and its file read whole

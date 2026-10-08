@@ -1008,3 +1008,15 @@
   Rejected: keeping `feat(agent)` and following it here; letting our
   copy differ from the container's (CBC ADR-0042 keeps them
   derived from one manual).
+
+- 2026-10-08 Working a reading checks a taken item against what its
+  master derives from — the manual or the chapter — and reads the
+  file it lands in whole before the commit. Rule step 4.
+  Why: the reading of run 3 compared each copy with our master and
+  never the master with its source. The reviewer's question found
+  two manuals the edits contradicted, and our `exchange-deliver`
+  would have stopped the delivery; opening a chapter for one rung
+  found a header of history ADR-0022 had ruled out.
+  Rejected: `exchange-read` (it reads and decides nothing; the check
+  belongs where an item is taken); a step of its own (it is how a
+  work item is done, not another stage of the list).
