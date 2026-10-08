@@ -102,7 +102,9 @@ ADR-0048 Accepted. CHANGELOG's Changed, for the chapter, naming v2
 true for step 11. TODO: lines for D7–D9, and for the skills'
 `foundation: concept v1`, which becomes v2 at the release; "Decide
 our own side of shapes", "Ship `temp/`…" and "Split a shipped
-file's header…" made true for what run 3 and step 11 showed. The
+file's header…" made true for what run 3 and step 11 showed.
+ARCHITECTURE: §1.1's version line names v2 waiting, and §5 no
+longer holds the canonical rule in a header that is gone. The
 reading marks D1–D10 and W2, W4 done. The devlog.
 
 **13. `docs(agent): close commit plan for run 3's edits`**
