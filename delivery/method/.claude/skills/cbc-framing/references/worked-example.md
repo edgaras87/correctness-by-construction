@@ -196,13 +196,19 @@ translation:
 the second insert cannot physically succeed*; (b) the same constraint's
 winner + losers reading the winner's row; (c) the stored original response,
 returned on conflict; (d) a body-hash stored with the key, compared on
-conflict. Escape-hatch hunt: any admin insert path must go through the same
-constraint-guarded table — no side door. Gate passed: no unowned guarantee.
+conflict. Escape-hatch hunt, against the trust line: every write path of
+ours — an admin endpoint included — goes through the same
+constraint-guarded table, no side door; a hand at the store's console is
+trusted, not walled (W3). Gate passed: no unowned guarantee.
 
 **build** — boring code plus the evidence: hammer it, inject the replay,
 send the mismatched body — watch the invariant survive, guarantee by
-guarantee. Gate: green happy-path tests close nothing; only
-adversity-creating tests do.
+guarantee. Each test is seen red with its wall absent, failing on the
+witness — recorded orders per submission, read from the store — never on a
+status code first. Beside them, the unique constraint shown on its own: a
+second row with the key written straight to the store, refused — the
+wall's own check, not evidence. Gate: green happy-path tests close nothing;
+only adversity-creating tests do.
 
 **document** — invariant → four guarantees → their owners → their evidence.
 Slice 1 closes in the registry as evidence-closed; the registry re-decides
