@@ -1,12 +1,3 @@
-<!-- Provenance — archive/cbc/system-design-method
-     birth-materials/concept/02-guarantees-and-walls.md @ fe0075d (imported
-     2026-08-28, PLAN Step 2). Changes on import: none — verbatim
-     below this header. The canonical copy lives in
-     correctness-by-construction's concept/ — a run's copy
-     (docs/concept/) is pinned, changed only by copying anew
-     (harvest, never edits); the archive copy is a historical
-     snapshot. -->
-
 # Guarantees and walls
 
 What the discipline actually produces. Not documents — documents are
