@@ -309,7 +309,12 @@ and it
 5. **Register.** One line in the run's decisions log: the date, the
    pin, what came, what was declined and where its need went. Agent
    side only, and in the last commit, where every copy equals the
-   pin. Then `temp/` is emptied.
+   pin. Then the staging goes — the directory named for the pin and
+   its note — and nothing else: `temp/` may hold the run's own
+   drafts, which are not the delivery's to clear. *Until 2026-10-05
+   this said `temp/` is emptied; run 3 kept a draft there for a
+   review, and the next take would have deleted it, untracked and
+   past recovery.*
 
 ## 5. Editing a copy
 
@@ -344,11 +349,11 @@ The backlog lines live under one heading kept for them, *To the
 deliverer*. The backlog is the channel — a hand-off is the run's
 own open item, waiting on an answer, with a lifecycle git can see:
 filed at a step's close, gone with the pin that answers it. `temp/`
-is not the channel the other way: it is untracked, emptied at the
-take, and a line left there would vanish without a record. One
-heading keeps the lines from being swept with a rewrite elsewhere —
-which has happened, five items in one commit — and makes the read
-one section instead of a search.
+is not the channel the other way: it is untracked, its staging
+removed at the take, and a line left there would vanish without a
+record. One heading keeps the lines from being swept with a rewrite
+elsewhere — which has happened, five items in one commit — and
+makes the read one section instead of a search.
 
 Nothing is written into the copy but the edit. No dated line, no
 comment saying what changed — a file says how to use it, never its
