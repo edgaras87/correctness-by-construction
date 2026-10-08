@@ -77,12 +77,16 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
 On the reviewer's word. If the agent stages, it runs 2.1 and 2.2,
 reports, and waits for the word before 2.3.
 
-1. **The run's tree is quiet:**
+1. **The run's tree is quiet, and nothing of ours is in its
+   `temp/`:**
 
    ```sh
-   git -C "$run" status --short     # must print nothing
-   ls "$run"/temp                   # must be empty
+   git -C "$run" status --short -- ':!temp'      # must print nothing
+   ls -d "$run"/temp/{bundle-,note-to-}* 2>/dev/null  # must print nothing
    ```
+
+   `temp/` is the run's, untracked, and may hold its own drafts; only
+   a staging or note of ours there means a take has not happened.
 
 2. **Overlay the copies of the groups the run takes**, after checking
    that no path is claimed twice:
@@ -118,8 +122,8 @@ reports, and waits for the word before 2.3.
    cp temp/note-to-<run>-<date>.md "$run"/temp/
    ```
 
-   The run's rule takes it from there. `temp/` is empty again when
-   it has.
+   The run's rule takes it from there. The staging and the note
+   leave `temp/` when it has; whatever else is there is the run's.
 
 ## 3. A note without files
 
@@ -133,10 +137,10 @@ read-through; the pin does not move.
 ## 4. Gates
 
 - The note is committed, and the staging is named by that commit.
-- The run's tree was quiet and its `temp/` empty before anything
-  was copied.
+- The run's tree was quiet and its `temp/` held nothing of ours
+  before anything was copied.
 - No path was claimed by two groups.
-- The run's `temp/` holds exactly the bundle and the note, and
+- The run's `temp/` gained exactly the bundle and the note, and
   nothing tracked in the run changed.
 
 ## 5. What this does not do
