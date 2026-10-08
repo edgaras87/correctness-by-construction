@@ -75,13 +75,19 @@ withheld in the store's grants is a wall. Its options and the
 version question (ADR-0003) are written when the chapter's text is
 in front of us. Material-first: the shape is decided there.
 
-**10. `docs(concept): walls hold only with a trust line`** — *provisional*
-`concept/02-guarantees-and-walls.md`, and L1 in
-`concept/01-layered-system.md` only if the ADR finds a sentence owed
-there. Wording and split settled at step 9's boundary.
+**10. `docs: the store's refusal tops the walls`**
+ADR-0048 decisions 1, 2 and 4, as one change: in
+`concept/02-guarantees-and-walls.md` the top rung renamed, the
+paragraph after the ranking, the header naming the change; and the
+three skill files that state the ranking renamed with it —
+`cbc-slice`'s SKILL.md and workflow, `cbc-framing`'s
+`the-whole-system-in-plain.md`. One commit: the chapter alone would
+leave every derivation naming a rung that is gone. L1 is untouched;
+the ADR found no sentence owed there.
 
 **11. `docs: records carry run 3's edits`**
-ADR-0048 Accepted. CHANGELOG's Changed, for the chapter. TODO: lines
+ADR-0048 Accepted. CHANGELOG's Changed, for the chapter, naming v2
+(ADR-0048 decision 3). TODO: lines
 for D7–D9; "Decide our own side of shapes" and "Ship `temp/`…" made
 true for what run 3 showed. The reading marks D1–D10 and W2, W4 done.
 The devlog.
