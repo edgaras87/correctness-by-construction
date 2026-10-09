@@ -8,8 +8,8 @@ between one commit and a whole project.**
 ## What it is for
 
 So that a change set can be inspected commit
-by commit before it lands, and a divergence at step *k* forces the
-remaining steps to be re-evaluated rather than continued on a
+by commit before it lands, and a divergence at commit *k* forces the
+remaining commits to be re-evaluated rather than continued on a
 plan that no longer holds. Adopted with the container
 (ADR-0038, 1b): the failure it answered was lived elsewhere — a
 commit sequence kept by hand in a scratch file across four
@@ -52,8 +52,8 @@ deleted at the close; everything durable in it survives as the
 commit messages it produced, and the close commit's body is the
 cheapest retrospective that exists.
 
-Two ideas carry the rest. **Steps are split by change, not by
-file**, and the test is revert: undo one step and the repo must
+Two ideas carry the rest. **Commits are split by change, not by
+file**, and the test is revert: undo one commit and the repo must
 still make sense. **Order follows where the decision lives**: a
 decision settled in conversation is recorded first and implemented
 second; a decision only visible in the material is found by
@@ -79,19 +79,23 @@ plan says so.
   conversation could have settled first, which made the
   provisional tail, the revision commit and the Proposed-then-
   Accepted ADR the normal road for it (ADR-0038, 1e).
-- **The records steps are planned.** A change set batches record
+- **The records commits are planned.** A change set batches record
   moments, and a record's trigger can fire mid-set before its truth
   exists. Walking the entry file's records table while drafting the
   commit list is what catches it (ADR-0038, 1d).
+- **A plan counts commits.** "Step" is `PLAN.md`'s word; a plan
+  that called its commits steps gave one word two meanings, and a
+  session inside PLAN's Step 10 worked plan steps 1 to 13
+  (ADR-0049, 1).
 - **Subjects are counted where they are first written.** A plan
   writes every subject before any lands; counted only at each
   boundary, a long one lands long, or is rewritten there with
   nothing in the plan saying why. *Run 3's SL-3 plan, 2026-10-08:
   three planned subjects over the limit, each caught only at its
   boundary, and one revision's own subject landed long uncounted.*
-- **The agent's files are a step of their own.** commit-messages
+- **The agent's files are a commit of their own.** commit-messages
   keeps a commit that touches them apart from everything else, so
-  a records step planned to carry a skill's correction has to be
+  a records commit planned to carry a skill's correction has to be
   split when it opens. *The same plan put two changes under
   `.claude/` inside its records step, and split it by revision.*
 - **The stop at every boundary is commit-messages' rule**,
