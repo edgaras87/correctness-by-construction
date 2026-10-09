@@ -1,7 +1,9 @@
 # 0049. The commit rules: a plan's unit, the mood, the limit
 
 Date: 2026-10-09
-Status: Proposed (2026-10-09, under the commit plan for commit rules)
+Status: Accepted (2026-10-09, at the set's records commit; opened
+Proposed under the commit plan for commit rules and revised once,
+when the reviewer kept the past-tense ban at commit 5)
 
 ## Context
 
@@ -74,8 +76,11 @@ For the mood:
    across its line breaks.
 4. **The subject's limit stays 50 characters**, counted when a plan
    writes it.
-5. **A subject may take either mood.** It says what the commit
-   changes and makes sense alone in `git log --oneline`.
+5. **A subject may take either mood, in the present tense.** It
+   says what the commit changes and makes sense alone in `git log
+   --oneline`. Past tense stays barred, as the old test barred it:
+   "fixed race" reports the author, not the repo, and neither habit
+   reaches for it.
 
 ## Consequences
 

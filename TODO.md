@@ -63,68 +63,6 @@
       Trigger: the next birth's Step 2 opening.
       See: devlog 2026-09-11.
 
-- [ ] Decide whether `commit-plan` names a step that runs as a series
-      of commits (2026-09-20, never-oversold).
-      Context: run 3 ran its framing steps as a draft, one commit per
-      reviewer question, and a verdict. Naming that collides with
-      the convention's claim that the commits which exist are the
-      steps done: it means saying what a step is. We told run 3 it
-      waits for the next opening of that file; it was opened on
-      2026-09-29 without it.
-      Trigger: due.
-      See: devlog 2026-09-20.
-
-- [ ] Decide whether commit subjects keep one mood (2026-09-18,
-      never-oversold).
-      Context: `commit-messages` asks for the imperative; our
-      record commits became statements while procedural ones
-      stayed imperative, 23 to 7 over thirty subjects, and
-      never-oversold split the same way unprompted. For naming the
-      split: a record commit reports what became true. Against: a
-      convention with a mood exception cannot be applied without
-      first classifying the commit.
-      Trigger: due — it fired in the walk (`153cfe7`) and nothing
-      was decided.
-      See: devlog 2026-09-18, later still.
-
-- [ ] Decide whether the 50-character subject limit holds
-      (2026-09-29).
-      Context: 125 of 233 commits here from 2026-09-20 run over it,
-      with commit-messages opened at every commit, and so did seven
-      of eight commit-plan revisions on 2026-09-29. Commit-plan's
-      own revision form spends 34 characters before saying what
-      changed. The agent model's A1 asks: unenforced, or mis-set?
-      Ideas: a shorter revision form in commit-plan.
-      Trigger: with the mood decision above.
-      See: devlog 2026-09-29, the agent model.
-
-- [ ] Write "grep the unwrapped text, not the file" into the
-      commit-plan skill's sweep, its §4 (2026-09-19).
-      Context: four misses — the `§8` hunt that missed a `§7`, a
-      renumbering described without reading its range, a phrase
-      the file wraps across two lines, and on 2026-09-30 a
-      "(model §10)" pointer wrapped the same way. The commit-plan
-      manual never explains the sweep; the rule is the skill's
-      alone.
-      Ideas: the sweep's why, into the commit-plan manual.
-      Trigger: due — the set of 2026-10-08 changed commit-plan
-      (`489ecf2`) and left it for its own set.
-      See: devlog 2026-09-19, small hours; 2026-09-30.
-
-- [ ] Give "step" one meaning (2026-09-29, the reviewer).
-      Context: it names a PLAN.md step and a commit in a commit
-      plan — 28 times in the commit-plan skill, four of them new on
-      2026-10-08, and "stop at every step's boundary" in the
-      reviewer's local file — and runs hold both, since the skill
-      ships; a run also has the skills' stages inside a step.
-      "Stage" is already taken three ways: the skills' Stage 0–5,
-      git's staging area, and a delivery into `temp/`. The commit
-      plan already heads its list Commits.
-      Ideas: a commit plan's unit becomes "commit".
-             PLAN's step becomes "plan stage".
-      Trigger: due, with the grep item above.
-      See: devlog 2026-09-29, the TODO pass.
-
 - [ ] Make the conventions index a full local map (2026-09-30, the
       reviewer).
       Context: its chain shows only the conventions that act in
@@ -280,16 +218,16 @@
       the words.
 
 - [ ] Watch whether commit-plan needs a rule about provisional
-      steps (2026-09-19).
+      commits (2026-09-19).
       Context: the groups set planned six and landed twelve, and
-      its two most confident steps were the ones undone. §2
-      already lets the list roll; one step of thirteen was marked
+      its two most confident commits were the ones undone. §2
+      already lets the list roll; one commit of thirteen was marked
       provisional, so on one instance the author under-used it.
       Unwritten in either convention: a scope that names the area
-      invites steps split by directory, commit-plan's own
+      invites commits split by directory, commit-plan's own
       anti-pattern.
       Trigger: a set that diverges by more than half its planned
-      steps, or a retrospective.
+      commits, or a retrospective.
       See: devlog 2026-09-19, later.
 
 - [ ] Number the concept chapters' sections (2026-09-30).
