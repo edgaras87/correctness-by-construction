@@ -57,8 +57,10 @@ container's. No decisions entry: each change brings a skill to its
 manual.
 
 **7. `docs: records carry the commit rules`**
-ADR-0049 Accepted. TODO: the five items close; the provisional
-watch item made true in the new word. The devlog.
+ADR-0049 Accepted, its decision 5 gaining "present tense", as
+commit 5 landed it on the reviewer's word. TODO: the five items
+close; the provisional watch item made true in the new word. The
+devlog.
 
 **8. `docs(agent): close commit plan for commit rules`**
 Deletes this file. The body records what diverged.
