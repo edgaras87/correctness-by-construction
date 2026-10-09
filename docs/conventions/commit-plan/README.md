@@ -98,6 +98,12 @@ plan says so.
   a records commit planned to carry a skill's correction has to be
   split when it opens. *The same plan put two changes under
   `.claude/` inside its records step, and split it by revision.*
+- **The sweep reads the text unwrapped.** A grep matches line by
+  line, and a manual wraps its prose, so a name broken across two
+  lines is never found. *Four misses before it was written down: a
+  `§8` hunt that missed a `§7`, a renumbering described without
+  reading its range, a phrase wrapped across two lines, and on
+  2026-09-30 a "(model §10)" pointer the same way (ADR-0049, 3).*
 - **The stop at every boundary is commit-messages' rule**,
   `docs/conventions/commit-messages/`; this convention points at
   it. *Until 2026-09-08 the sentence was stated here, in §6, a file

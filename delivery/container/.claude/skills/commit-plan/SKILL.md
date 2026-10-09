@@ -110,7 +110,10 @@ section.>
   commit renamed or renumbered anything, grep live text for each old
   identifier — all of them, not the one being described. A
   renumbering moves every number, so the search is the whole span;
-  the cheapest form is every old value at once. What is history
+  the cheapest form is every old value at once. Grep the text
+  unwrapped, its lines joined and its spaces squeezed —
+  `tr '\n' ' ' | tr -s ' '` — since a name the file breaks across
+  two lines is invisible to a line-by-line grep. What is history
   stays; what points at the old name from live text is the defect.
 
 ## 5. Divergence
@@ -157,3 +160,4 @@ at every commit, not only inside a change set.
 - CBC ADR-0038, 1f — the stop at every boundary is commit-messages'
 - CBC ADR-0049, 1 — a commit plan counts commits; "step" is
   `PLAN.md`'s
+- CBC ADR-0049, 3 — the sweep greps the text unwrapped
