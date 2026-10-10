@@ -122,7 +122,9 @@ note; then Release, its gate derived when it opens.
 - **D1** — Take, decline or hold F1. It rests against `commit-plan`'s
   rule that an ADR inside a set opens Proposed
   (`delivery/container/.claude/skills/commit-plan/SKILL.md`), and
-  against `concept/04-cbc-slice.md`. It gates W1.
+  against `concept/04-cbc-slice.md`. It gates W1. **Settled
+  2026-10-10: taken**, on the reviewer's word. Our master differs
+  from the run's copy by this edit alone.
 - **D2** — When the Release-triggered items (F3) and the two Step 7
   items (F4) are worked: now, at run 3's Release opening, or at its
   retrospective. It gates W3.
