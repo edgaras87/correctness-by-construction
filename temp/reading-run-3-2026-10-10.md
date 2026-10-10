@@ -131,6 +131,16 @@ note; then Release, its gate derived when it opens.
   the reviewer's word. F4's two items move their trigger to run 3's
   retrospective, where the run holds them, and say the form has run
   two steps; F3's keep theirs, not yet due.
+- **D3** — F7: whether the note says anything of the run's devlog.
+  **Settled 2026-10-10: one optional line**, on the reviewer's word —
+  its header asks for the split, and the run can check the count.
+- **D4** — §4's worked-example line: whether the example gains a
+  slice that inherits its wall. **Settled 2026-10-10: held**, on the
+  reviewer's word — one run's slice; a TODO line (W5).
+- **D5** — §4's first line, as a lesson for `cbc-slice`: a red that
+  removes a standing wall removes the backstop behind it too.
+  **Settled 2026-10-10: held**, on the reviewer's word — the run
+  proposed no edit, and one slice is one case; a TODO line (W5).
 
 ## 6. The work
 
@@ -139,11 +149,12 @@ note; then Release, its gate derived when it opens.
   against its sources and read whole. **Done** in `2f24dcd`.
 - **W2** — TODO brought true: the evidence-test item's context for
   F2; F5 into the absence-rung item's context; F4's two items
-  retriggered as D2 settled.
+  retriggered as D2 settled. **Done** in `50d5709`.
 - **W3** — The items D2 makes due, each by its own trigger. Closed
   by D2: none is due, and the retriggering went to W2.
 - **W4** — The note, read through `c7073c7`: F1's verdict, F6's
-  answer, and the held lines acknowledged.
+  answer, the held lines acknowledged, and D3's line.
+- **W5** — TODO gains D4's and D5's held lines.
 
 ## 7. What this reading taught
 
@@ -151,6 +162,10 @@ note; then Release, its gate derived when it opens.
   starts from `de29d9e`, the run's last take commit; the run's
   delivery entry says `10437cd`. The skill takes the entry's, so the
   three take commits came back into the span, already checked.
+- A finding and a §4 line can end with no D or W, and nothing
+  stops the note going without them. F7 and two §4 lines did, until
+  the reviewer asked, before the note was committed, whether all
+  was taken.
 
 ## 8. Notes
 

@@ -414,6 +414,26 @@
       Trigger: a second run meeting an absence guarantee.
       See: devlog 2026-09-15; and 2026-10-10.
 
+- [ ] Decide whether the worked example shows a slice that
+      inherits its wall (2026-10-10, the reading of run 3).
+      Context: run 3's SL-4 built no wall — SL-3's one statement
+      already held its invariant — and owed proof only, against its
+      own instance killed mid-write and an outcome its caller cannot
+      know. The worked example has no such slice and no such
+      adversity. One run's slice, so held.
+      Trigger: a second run whose slice inherits its wall.
+      See: devlog 2026-10-10.
+
+- [ ] Decide whether `cbc-slice` says a red removes the backstop too
+      (2026-10-10, the reading of run 3).
+      Context: the skill says a wall that already stands is removed on
+      the working tree for its red. SL-4's red as signed stayed green:
+      the store's check on the units held caught both orders, and the
+      evidence went red only with the one transaction and that check
+      both gone. Run 3 revised its plan for it and proposed no edit.
+      Trigger: a second slice whose red a backstop holds green.
+      See: devlog 2026-10-10.
+
 - [ ] Decide whether a second service family earns its own
       walkthrough (2026-08-28).
       Context: beside `postgres-setup-walkthrough.md`; the test is
