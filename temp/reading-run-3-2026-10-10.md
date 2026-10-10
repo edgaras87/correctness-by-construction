@@ -136,7 +136,7 @@ note; then Release, its gate derived when it opens.
 
 - **W1** — If D1 takes F1: the edit into
   `delivery/method/.claude/skills/cbc-slice/`, both files, checked
-  against its sources and read whole.
+  against its sources and read whole. **Done** in `2f24dcd`.
 - **W2** — TODO brought true: the evidence-test item's context for
   F2; F5 into the absence-rung item's context; F4's two items
   retriggered as D2 settled.

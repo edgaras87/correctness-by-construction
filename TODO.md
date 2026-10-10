@@ -91,31 +91,29 @@
       Trigger: the next delivery that ships a path new to the run.
       See: devlog 2026-09-30, the delivery to run 3.
 
-- [ ] Fold run 3's step form into the run playbook, if its Step 7
-      says the form held (2026-09-23).
-      Context: two items at a step's opening and seven at its
-      close, copied into each step. Two lines worth taking
-      whatever we decide: "a step's gate item carries that step's
-      own tick, so one checkbox cannot serve six steps", and "a
-      gate derived at the close is a description of what happened
-      rather than a standard the work was held to". Held because
-      the form has never fired; taking it untested is speculation.
+- [ ] Fold run 3's three arrangement pieces into the run playbook,
+      each that its retrospective says held (2026-09-23): the step
+      form — each step copies a fixed set of gate items when it
+      opens; one branch per step; gate items ticked the moment they
+      come true, instead of at the step's close.
+      Context: the step form ran Steps 7 and 8, the branch rule every
+      step, the ticking since Step 6. Run 3 holds all three on trial
+      until its retrospective and asks us to fold back what held.
+      Two lines worth taking whatever we decide: "a step's gate item
+      carries that step's own tick, so one checkbox cannot serve six
+      steps", and "a gate derived at the close is a description of
+      what happened rather than a standard the work was held to".
       Ideas: a step form as PLAN's shape (the reviewer, 2026-09-29).
-      Trigger: run 3's Step 7 closing.
-      See: devlog 2026-09-27, afternoon.
-
-- [ ] Weigh run 3's two standing rules, and the branch-rule lines
-      the playbook still holds (2026-09-23).
-      Context: one branch per step — not taken for this repo, whose
-      branch test is commit plans. Gate items ticked as they come
-      true, the step `[~]` from first tick to last: "a gate that
-      reads all-unticked through a step is not telling the truth
-      about where the step is". For the playbook: the branch item
-      closes on the reviewer's word to merge, the agent says the
-      fast-forward waits, and the rule says what a merged branch
-      becomes. The section's dated form is worth copying anyway.
-      Trigger: run 3's Step 7 closing.
-      See: devlog 2026-09-27, afternoon.
+             the branch item closes on the reviewer's word to merge,
+             the agent says the fast-forward waits, and the rule says
+             what a merged branch becomes.
+             one branch per step stays the run's: this repo's branch
+             test is commit plans.
+             "a gate that reads all-unticked through a step is not
+             telling the truth about where the step is".
+             the standing rules' dated form, worth copying anyway.
+      Trigger: run 3's retrospective.
+      See: devlog 2026-09-27, afternoon; and 2026-10-10.
 
 - [ ] Read the frozen CLAUDE template's stance bullets against a
       full run's derived entry file (2026-09-06, the user).
@@ -141,15 +139,15 @@
 
 - [ ] Read the next birth's first evidence tests against run 3's
       evidence-test shape (2026-10-08, the reading of run 3).
-      Context: never-oversold's `.claude/rules/evidence-test.md`,
-      offered with its skeleton marked apart from its illustration.
-      Held, not shipped: one run's tests, as its slice-record shape
-      is held, and a newborn's tests written without it are the
-      measurement a hidden shape exists for. `cbc-slice` took two
-      of its lessons — a red on the witness, a race's pause on the
-      red tree — at `3758a72`.
+      Context: never-oversold's `.claude/rules/evidence-test.md`, its
+      skeleton marked apart from its illustration. Held, not shipped:
+      a newborn's tests written without it are the measurement a
+      hidden shape exists for. `cbc-slice` took two of its lessons at
+      `3758a72`. At SL-4's close it took two more: the slice's own
+      invariant asserted after the promise, where it is narrower, and
+      what must agree read in one read.
       Trigger: the next birth's first slice closing.
-      See: devlog 2026-10-08.
+      See: devlog 2026-10-08; and 2026-10-10.
 
 - [ ] Watch whether the next newborn adds the ground-must-be-up
       rule to its entry file unasked (2026-09-04, ADR-0013's scope
@@ -408,12 +406,13 @@
       nothing to observe at runtime; its wall is a rule on the
       compiled classes. Run 3 asks for a rung between "single
       validated entry path" and "code review", and met it again in
-      SL-2's G5 and G6, each guarded by a test that reads the
-      source — the same run, so not the trigger. The hierarchy lives
-      in `concept/02` and both cbc-slice files, so this is a concept
-      change: an ADR and the version question (ADR-0003).
+      SL-2's G5 and G6 and SL-4's one split the store cannot see,
+      each guarded by a test that reads the source — the same run,
+      so not the trigger. The hierarchy lives in `concept/02` and
+      both cbc-slice files, so this is a concept change: an ADR and
+      the version question (ADR-0003).
       Trigger: a second run meeting an absence guarantee.
-      See: devlog 2026-09-15.
+      See: devlog 2026-09-15; and 2026-10-10.
 
 - [ ] Decide whether a second service family earns its own
       walkthrough (2026-08-28).
