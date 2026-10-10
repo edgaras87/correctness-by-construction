@@ -68,15 +68,18 @@ there.
    options; the decisions log for a change to the arrangement; the
    devlog at a session's end and at a pause.
 
-9. **When the list is closed, `exchange-deliver`.** The note is
-   written from the reading's final state — every item's verdict,
-   in the run's order — and the read-through from its first line.
-   A note may go before the list closes, since a note alone is
-   cheap; it is then written from the items as they stand, and says
-   which are still open. At the close, the reading's lessons go
-   where they act — this rule, the shape, a skill — or to TODO; then
-   the reading is deleted, a branch fast-forwards, and the devlog
-   says so.
+9. **When the list is closed, `exchange-deliver`.** It is closed only
+   when every F, and every line of what the run taught us, has ended
+   in a D or a W, or says why it needs neither: a finding with no
+   item reaches no verdict, and nothing else stops the note going
+   without it. The note is written from the reading's final state —
+   every item's verdict, in the run's order — and the read-through
+   from its first line. A note may go before the list closes, since a
+   note alone is cheap; it is then written from the items as they
+   stand, and says which are still open. At the close, the reading's
+   lessons go where they act — this rule, the shape, a skill — or to
+   TODO; then the reading is deleted, a branch fast-forwards, and the
+   devlog says so.
 
 ## What this does not cover
 
@@ -95,3 +98,5 @@ there.
   the shape, a skill, or the draft left standing
 - `.claude/decisions.md`, 2026-10-08 — a taken item checked against
   its source, and its file read whole
+- `.claude/decisions.md`, 2026-10-10 — the list closes only when
+  every finding has ended in an item

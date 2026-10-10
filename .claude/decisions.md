@@ -1020,3 +1020,14 @@
   Rejected: `exchange-read` (it reads and decides nothing; the check
   belongs where an item is taken); a step of its own (it is how a
   work item is done, not another stage of the list).
+
+- 2026-10-10 Working a reading closes its list only when every
+  finding, and every line of what the run taught us, has ended in a
+  decision or a work item, or says why it needs neither. Rule step 9.
+  Why: the reading of run 3 through `c7073c7` left a finding and two
+  such lines with no item, and the note was written and staged
+  without them until the reviewer asked whether all was taken.
+  Rejected: `exchange-read` (it numbers items and decides none; the
+  gap opens while the list is worked); the reading's shape (it says
+  form, never how the list is worked); a TODO line (the check is one
+  sentence, needed at the moment the note is written).
