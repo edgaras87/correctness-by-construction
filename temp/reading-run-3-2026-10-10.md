@@ -127,7 +127,10 @@ note; then Release, its gate derived when it opens.
   from the run's copy by this edit alone.
 - **D2** — When the Release-triggered items (F3) and the two Step 7
   items (F4) are worked: now, at run 3's Release opening, or at its
-  retrospective. It gates W3.
+  retrospective. It gates W3. **Settled 2026-10-10: none now**, on
+  the reviewer's word. F4's two items move their trigger to run 3's
+  retrospective, where the run holds them, and say the form has run
+  two steps; F3's keep theirs, not yet due.
 
 ## 6. The work
 
@@ -135,9 +138,10 @@ note; then Release, its gate derived when it opens.
   `delivery/method/.claude/skills/cbc-slice/`, both files, checked
   against its sources and read whole.
 - **W2** — TODO brought true: the evidence-test item's context for
-  F2; F5 into the absence-rung item's context.
-- **W3** — The items D2 makes due, each by its own trigger. Likely
-  **plan**.
+  F2; F5 into the absence-rung item's context; F4's two items
+  retriggered as D2 settled.
+- **W3** — The items D2 makes due, each by its own trigger. Closed
+  by D2: none is due, and the retriggering went to W2.
 - **W4** — The note, read through `c7073c7`: F1's verdict, F6's
   answer, and the held lines acknowledged.
 
