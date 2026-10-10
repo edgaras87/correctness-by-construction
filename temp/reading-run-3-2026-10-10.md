@@ -153,19 +153,22 @@ note; then Release, its gate derived when it opens.
 - **W3** — The items D2 makes due, each by its own trigger. Closed
   by D2: none is due, and the retriggering went to W2.
 - **W4** — The note, read through `c7073c7`: F1's verdict, F6's
-  answer, the held lines acknowledged, and D3's line.
-- **W5** — TODO gains D4's and D5's held lines.
+  answer, the held lines acknowledged, and D3's line. **Done** in
+  `5361213`, staged into the run's `temp/` as `bundle-5361213/`.
+- **W5** — TODO gains D4's and D5's held lines. **Done** in
+  `224e6b7`.
 
 ## 7. What this reading taught
 
 - Two starting points disagreed. Our devlog said the next reading
   starts from `de29d9e`, the run's last take commit; the run's
   delivery entry says `10437cd`. The skill takes the entry's, so the
-  three take commits came back into the span, already checked.
+  three take commits came back into the span, already checked. No
+  rule: the devlog's Resume names the run's read-through instead.
 - A finding and a §4 line can end with no D or W, and nothing
   stops the note going without them. F7 and two §4 lines did, until
   the reviewer asked, before the note was committed, whether all
-  was taken.
+  was taken. Placed in working a reading's step 9 (`ddf2d73`).
 
 ## 8. Notes
 
