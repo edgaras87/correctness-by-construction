@@ -39,7 +39,9 @@ three reasons as lists, the take's order as seven numbered steps.
 After it, the shipped rule equals run 3's byte for byte.
 
 **6. `docs: records carry the chapter edits`**
-ADR-0051 Accepted.
+ADR-0051 Accepted; CHANGELOG's [Unreleased] entry on the chapters'
+headers stops calling a run's copy never edited, as its header asks
+of an entry a later change reshapes.
 
 **7. `docs(agent): close commit plan for chapter edits`**
 Deletes this file; the body says what diverged.
