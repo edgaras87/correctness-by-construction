@@ -68,9 +68,9 @@ the repo root, the address the arrangement is described from: *"A
 concept repo… Documents only — no code, no runs."* It holds the
 same three convention skills; the exchange's two, `exchange-read`
 and `exchange-deliver`; and three rules of its own,
-`exchange-reading.md`, the shape of a reading,
+`exchange-reading.md`, the form of a reading,
 `working-a-reading.md`, how a reading's list is worked, and
-`convention-manual.md`, the shape of a manual. Its decisions log
+`convention-manual.md`, the form of a manual. Its decisions log
 holds arrangement decisions only, and no registry: it receives no
 conventions, and no one reads it but itself, so an entry that
 follows from an ADR is a line pointing at it (ADR-0042). A
@@ -86,7 +86,7 @@ rule. What differs is the job, and since ADR-0036 the two hold
 different things because of it: the run holds the receiver's rule,
 `delivered-copies.md` — how to take a newer copy without losing its
 own edits, and what it may do to one meanwhile; the deliverer holds
-the deliverer's skills and the shape of the reading they produce.
+the deliverer's skills and the form of the reading they produce.
 Neither holds the other's half, because neither could run it.
 
 *Until 2026-09-26 the deliverer held the receiver's protocol,

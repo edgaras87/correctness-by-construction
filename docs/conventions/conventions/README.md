@@ -24,9 +24,9 @@ against it the next day.
 
 Nothing shipped of its own; what a repo holds is:
 
-- **the `foundation` line in every shipped skill and rule** — a
-  run's, and this convention's artifact there (§2);
-- **`.claude/rules/convention-manual.md` — the shape of a manual,
+- **the `foundation` line in every shipped skill, rule and shape**
+  — a run's, and this convention's artifact there (§2);
+- **`.claude/rules/convention-manual.md` — the form of a manual,
   the deliverer's**, loading whenever a manual is opened;
 - **the index, `docs/conventions/README.md`** — a pointer: the
   chain, relations only (ADR-0032), and one line sending a
@@ -164,9 +164,9 @@ of project-recording beside seven built the same way; the reviewer
 caught it at the boundary, and it was reworded the same day, by
 form.*
 
-### 3.3 The shape
+### 3.3 The form
 
-The shape is a rule under `.claude/rules/`, loading when a manual
+The form is a rule under `.claude/rules/`, loading when a manual
 is opened (how a rule loads is `docs/conventions/agent-arrangement/`
 §3.2), and lists the sections one has, each a heading after the
 opening: an opening statement; *what it is for* — the need, the
@@ -181,11 +181,13 @@ channel, a skill, a rule, a stub or a file, and why that one; and
 *what this does not cover*, the
 boundary against its neighbours by path.
 
-The shape was not designed. `docs/conventions/exchange/` and
+The form was not designed. `docs/conventions/exchange/` and
 `docs/conventions/shapes/` grew the same sections with nothing
-telling either writer to, which is a shape by the test in
-`docs/conventions/shapes/` §1: a pair recurred. It grows the same
-way and no other: the list is the floor, and content that fits
+telling either writer to: a pair recurred, the test a shape is
+written by (`docs/conventions/shapes/` §1). It is held as a rule
+and not a shape, because a manual is read while it is written and
+the deliverer has no gate (ADR-0052). It grows the same way and no
+other: the list is the floor, and content that fits
 none of it takes its own heading in the body, where a section two
 manuals need becomes the next candidate. A rule, a term or a
 mechanism that other text will point at gets its own numbered
@@ -280,7 +282,8 @@ shapes, and this one — and not as the index once said:
 
 1. An ADR for the decisions behind it, opened Proposed when it lands
    inside a change set.
-2. The manual at `docs/conventions/<name>/README.md`, in the shape.
+2. The manual at `docs/conventions/<name>/README.md`, in the form
+   (§3.3).
 3. Its artifacts in the container, if it ships any. A convention
    entering or leaving the container updates the birth entry in the
    container's decisions-log stub, in the same commit: a run holds
@@ -305,7 +308,7 @@ conventions took neither — a rule kept where nobody reads it
 
 ## Why it arrives this way
 
-The manual reaches no agent: a maintainer reads it. The shape of a
+The manual reaches no agent: a maintainer reads it. The form of a
 manual is a rule, loading when a manual is opened, because the
 moment a manual's form matters is while it is written, and nothing
 else would put the list in front of the writer then. The
@@ -322,7 +325,7 @@ what a file stands on has to travel with the file.
 - **How a rule or a skill reaches an agent, and which paths are the
   arrangement's** — `docs/conventions/agent-arrangement/`.
 - **What a shape is and how one lives** — `docs/conventions/shapes/`.
-  The shape of a manual is one instance of it, held here.
+  The form of a manual is a rule held here, not a shape.
 - **The concept's edges, its version and its changelog** —
   ADR-0003 and `ARCHITECTURE.md` §1.1.
 - **A run's own descriptions and what derives from them** — the

@@ -35,7 +35,7 @@ arrangements, each side holding only what it runs
   last, the staging on the word; the same whether a reading
   preceded it or not. Birth is a delivery into the root plus the
   fills, and `delivery/installs/pure-seed.md` keeps that.
-- **`.claude/rules/exchange-reading.md` — the reading's shape, the
+- **`.claude/rules/exchange-reading.md` — the reading's form, the
   deliverer's**, loading while a reading in `temp/` is written. What
   `exchange-read` writes, and what the work then fills, to one
   form.
@@ -505,7 +505,7 @@ when the moment arrives instead of waiting to be opened by name:
 the failure the receiver's protocol had since the day it shipped.
 The deliverer's two skills open on the reviewer's word, "read" or
 "deliver", which is a moment the agent is told rather than one it
-must notice. The reading's shape loads by path while a reading is
+must notice. The reading's form loads by path while a reading is
 written.
 
 ## What this does not cover
