@@ -63,8 +63,9 @@ This is the repo's purpose. Everything else exists because of it,
 and is either derived from it or checked against it.
 
 - **Canonical here.** This is where the concept is true. Every
-  copy elsewhere — a run's `docs/concept/` — is a copy, changed
-  only by copying anew, never edited in place.
+  copy elsewhere — a run's `docs/concept/` — is a copy; what a run
+  may do to it is `docs/conventions/exchange/` §5.6. The concept
+  changes only here.
 - **Versioned as a whole**, not per chapter. It is at **v1**, and
   CHANGELOG's [Unreleased] holds a change that makes the next
   release v2 (ADR-0048). The bump rule is one question: could this

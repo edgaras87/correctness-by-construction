@@ -385,12 +385,20 @@ at the next delivery, a deleted one comes back. A copy the run has
 no use for is a backlog line — *we do not use this* — and the
 deliverer decides.
 
-### 5.6 The concept is never edited
+### 5.6 A chapter only from a lived mistake
 
-A chapter is not run, so nothing
-in it can fail a step. A lesson about the concept is a prose
-hand-off in the backlog line, and it reaches the chapter, if it
-does, from the deliverer's side.
+A chapter is edited as any copy (§5.1), and only from a mistake
+lived in the run, never from a preference for other wording. Skills
+are written from the chapters and readers learn the method from
+them, so lived work can show one wrong; and the deliverer judges an
+exact hunk where a prose line must first be translated. The edit is
+the run's copy's: the concept changes only when the deliverer takes
+it (ADR-0051).
+*Until 2026-10-15 the concept was never edited: a chapter is not
+run, so nothing in it can fail a step, and a lesson about one went
+as a prose line. Run 3 wrote that clause into its own first rule,
+and reversed it at its retrospective, when its reviewer asked why
+the chapters were blocked at all; it had edited none.*
 
 ### 5.7 The records
 

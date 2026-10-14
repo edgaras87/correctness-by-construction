@@ -20,9 +20,10 @@ foundation: the exchange convention
    last read up to — the first from the staging's name, the second
    from the note. One pin covers all of it: the skills and rules
    under `.claude/`, and `docs/concept/`. The concept chapters are
-   copies too, and are never edited here — nothing in a chapter is
-   run, so nothing in it can fail a step; a lesson about one is a
-   prose line in the backlog. The records — `PLAN`, `TODO`, the
+   copies too, edited as any copy, and only from a mistake lived
+   here: skills are written from them and readers learn the method
+   from them, so lived work can show one wrong. A preference for
+   other wording is never the reason. The records — `PLAN`, `TODO`, the
    devlog — were delivered once as stubs, and the entry file once
    composed; all are this run's own, not copies, and this file does
    not govern them.
