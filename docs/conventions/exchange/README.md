@@ -361,10 +361,19 @@ own history.
 
 ### 5.2 A copy the run has finished with
 
-It is edited the same way. One
-process for every copy. The one difference is said in the log
-entry: a running skill's fix is exercised by the next step here; a
-finished skill's fix is first used by the deliverer.
+It is edited the same way, whenever the evidence is in the run, and
+never kept as a note for a later run: the deliverer takes or
+declines an exact hunk rather than translating a note, and the run
+that lived the mistake writes the fix. One process for every copy.
+The one difference is said in the log entry and in the backlog
+line: a running skill's fix is exercised by the next step here; a
+finished skill's fix is first used by the deliverer, so its line
+marks it *untried here*, and the deliverer reads those hunks
+hardest (ADR-0051).
+*Lived 2026-10-13 to 15: run 3's agent kept its finished skills'
+fixes as notes for the next run until its reviewer stopped it; four
+skills then arrived edited and marked, and the reading here took
+all four.*
 
 ### 5.3 Edits made before a verdict
 

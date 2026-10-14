@@ -56,9 +56,12 @@ foundation: the exchange convention
    `<pin>`", under one heading kept for that purpose — `## To the
    deliverer` — so a rewrite of another section cannot take it and
    the deliverer reads one section rather than the whole backlog.
-   The line is the request — without it the deliverer finds a
-   changed file and must guess; the edits describe themselves in the
-   diff and the log. The deliverer reads this repo read-only when it
+   A copy edited after this run finished with it (rule 7) adds
+   "— untried here: written from this run's evidence, never run", so
+   the deliverer reads those hunks hardest. The line is the
+   request — without it the deliverer finds a changed file and must
+   guess; the edits describe themselves in the diff and the log.
+   The deliverer reads this repo read-only when it
    reads it — at a hand-off, or at the retrospective — not at every
    step's close; a faster answer needs a hand-off document. It diffs
    the copy against its own tree at the pin, takes, reshapes or
@@ -110,13 +113,14 @@ foundation: the exchange convention
    run's own lessons is not.
 
 7. **A copy this project has finished with is edited the same
-   way.** A restarted step may re-run on it, the deliverer takes or
-   declines an exact hunk rather than a translated note, and one
+   way, whenever the evidence is here.** Never kept as a note for a
+   later run: a restarted step may re-run on it, the deliverer takes
+   or declines an exact hunk rather than a translated note, and one
    process serves every copy. The one difference: the problem was
    lived either way, but the fix's wording is never used by a later
    step here — a running skill's fix is exercised by the next step,
    a finished skill's fix is first used by the deliverer. Say so in the
-   log entry.
+   log entry, and in its hand-off line (rule 4).
 
 The pin is the truth of origin, the log is the why, and the diff
 between the pin and the copy is the whole of what this run changed
