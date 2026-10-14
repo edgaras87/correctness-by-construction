@@ -106,6 +106,10 @@ deliverer*. Release opens after it.
   (two writers on one row, one made to wait); a lever the evidence
   pulls is proven by the harness that pulls it (`1cadda1`, D9). It
   touches our Later item on `infra-establish`'s facility paragraph.
+  *Taken 2026-10-15 (`9046a2f`), but for one clause, held: that the
+  ground proves the facility a slice needs. Step 5 never asks for it,
+  and the Later item holds it until a run meets the gap unprompted,
+  which run 3's own D22 asks run 4 to note.*
 - **F5** — `commit-plan`, one edit, logged 2026-10-15, lived in Step
   10 (`3daf0fb`, D19): small commits inside a planned commit, folded
   at its boundary or grouped by kind at the end, kept on
@@ -171,6 +175,9 @@ deliverer*. Release opens after it.
 - **F15** — Held asks restated: `infra-establish` silent on the
   store's facility (F4's edit now writes part of it); the absence
   rung. RETRO D20 names run 4 as the run that can trigger both.
+  *The facility stays held, the clause F4 wrote declined with it
+  (`9046a2f`); the absence rung stays held. Both on their triggers;
+  the note says so.*
 - **F16** — Four held asks answered in RETRO.md: the arrangement
   pieces on trial and ticking as items come true (D4, all kept); a rule
   deliverable on trial (D4: a trial names the close that judges it);
