@@ -228,11 +228,15 @@ deliverer*. Release opens after it.
 - **D7** — Whether the note goes before the list closes. Run 3's
   Release waits on it; working-a-reading step 9 allows an early note
   that says which items are still open. Gates W1.
+  *Settled 2026-10-15: an early note, written and committed
+  (`78242ff`); its copy to the run held, on the reviewer's word.*
 
 ## 6. The work
 
 - **W1** — The note, read through `dac4dd1`: the verdicts as they
-  stand, in the run's order, the open ones named.
+  stand, in the run's order, the open ones named. *Written
+  (`78242ff`), not copied: the reviewer held the copy. The final
+  note, at the list's close, carries the verdicts.*
 - **W2** — The copy edits taken into our masters, each checked against
   its manual or chapter and read whole. **plan**
 - **W3** — The playbook: the step form (F17), the retrospective and
