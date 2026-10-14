@@ -96,6 +96,10 @@ deliverer*. Release opens after it.
   what a slice may rely on (`7007337`, D10); the harness's form is
   chosen by what ships, not by cost (`a2a776e`, D26); the skeleton
   places tests by kind (`2a05394`, D27).
+  *Taken whole 2026-10-15 (`b2d2a4d`). One holds on group D: the
+  close says the project's records table sends "what may a slice rely
+  on" to ARCHITECTURE, and our container's table does not yet (RETRO
+  D10).*
 - **F4** — `infra-establish`, one edit, logged 2026-10-14 and
   untried: the ground proves the engine and what the store promises,
   each constraint seen refused and the facility a slice will need
