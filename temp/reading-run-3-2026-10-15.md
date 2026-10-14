@@ -211,6 +211,22 @@ deliverer*. Release opens after it.
 - **D1** — How RETRO.md's 29 decisions are taken: one by one in
   RETRO's order, or grouped by where each lands in our tree (playbook,
   method skills, container, conventions, concept). It gates W2 to W5.
+  *Settled 2026-10-15: by where each lands, each RETRO decision in
+  one group, so the final note answers them D1 to D29. Worked in this
+  order:*
+  - *A, the copy edits (F1 to F7): D5, D6, D7, D9, D10, D11, D12,
+    D13, D16, D18, D19, D21, D26, D27, D28, each the half already
+    written into a copy.*
+  - *B, the run's own files (F8, F9): D1, D2's rule, D12's and D13's
+    shapes, D17, D23, D24, D29.*
+  - *C, the playbook: D4, D17's closing checks, D20's Release, D22,
+    D23's and D24's steps.*
+  - *D, the container's templates: D1's recording, D10's records
+    table, D16's ARCHITECTURE template.*
+  - *E, text we would write: D2's glossary at framing and plain
+    method texts, D6's layer tags, D8's briefing.*
+  - *F, the reviewer's hand: D3, D25.*
+  - *Nothing for us: D14, the shape's own; D20's lists, the run's.*
 - **D2** — F1 to F7: take, decline or hold each copy edit. F1 to F4
   are untried, first lived by run 4: taken now, or held until run 4
   lives them. Rests on D1. Gates W2.
@@ -249,6 +265,10 @@ deliverer*. Release opens after it.
   F23).
 - **W7** — `CLAUDE.local.md` from the reviewer's hand (F12): where it
   lands here, if anywhere.
+- **W8** — After the list closes: RETRO's lessons applied to this
+  repo's own living records (plain writing, full-name tags, a
+  glossary, one home per fact), as Step 10's "lessons folded back"
+  item. History keeps its words. **plan**
 
 ## 7. What this reading taught
 
