@@ -16,9 +16,8 @@ every path is the path it lands at. So
 another *are* the run's tree. No mapping, and nothing to forget. A
 group is left out by not naming its directory (ADR-0029, ADR-0036).
 
-A shape travels with the group of the thing it shapes (ADR-0035).
-Only an exposed one travels, as a pinned copy into the run's
-`.claude/rules/`. What happens to unexposed ones is
+A shape travels with the group of the thing it shapes, as a copy
+into the run's `.claude/shapes/`; the rest is
 `docs/conventions/shapes/` §4.
 
 ## 2. Three ways a file lands

@@ -260,11 +260,11 @@ whose convention is `docs/conventions/shapes/`, and
 
 ### 3.3 `shapes/`
 
-Where a project keeps an unexposed shape. What a shape is, why this
-is a directory nothing loads, and who moves one between here and
-`rules/` are `docs/conventions/shapes/`'s; this convention places
-the directory and states nothing else about it. Not born with the
-project: a project makes it when it writes its first shape.
+Where a project keeps its shapes. What a shape is, and why this is
+a directory nothing loads, are `docs/conventions/shapes/`'s; this
+convention places the directory and states nothing else about it.
+A project with no shape has none: it arrives with a group that
+ships shapes, or when the project writes its first.
 
 ### 3.4 `decisions.md`
 
