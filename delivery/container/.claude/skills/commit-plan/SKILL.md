@@ -62,6 +62,12 @@ section.>
   its intent and defers its wording and exact split.
 - **No status in the file.** No checkboxes. The commits that exist
   are the plan done so far.
+- **A commit inserted later takes a letter,** `8b` after `8`, so the
+  numbers already cited stay true.
+- **A planned commit may repeat over a set,** when the same change
+  reaches many records: "one commit per record, in this order". It
+  names the order, and, if it may run again, the rule that stops it
+  ("a second pass only over the records the first one changed").
 
 ## 3. How the commits are split
 
@@ -181,3 +187,5 @@ the grant, every commit is a boundary.
 - CBC ADR-0049, 3 — the sweep greps the text unwrapped
 - CBC ADR-0050, 1–3 — small steps on the reviewer's grant, each
   counted when written; a look back before the close
+- CBC ADR-0050, 4–5 — an inserted commit takes a letter; a planned
+  commit may repeat over a set

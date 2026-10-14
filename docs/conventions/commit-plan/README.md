@@ -87,6 +87,15 @@ plan says so.
   that called its commits steps gave one word two meanings, and a
   session inside PLAN's Step 10 worked plan steps 1 to 13
   (ADR-0049, 1).
+- **An inserted commit takes a letter; a commit may repeat.** A
+  plan's numbers are cited, in its notes, its revisions and its
+  commit bodies, so a commit inserted later takes a letter rather
+  than renumbering the rest. Where one change reaches many records,
+  one planned commit repeats over them, naming its order and the
+  rule that stops it. *Run 3's Step 10 inserted 8b, 22b and E2.1 to
+  E2.12 after its plan was written, and ran one plain pass three
+  times over its records, the third only over what the second
+  changed (ADR-0050, 4 and 5).*
 - **Subjects are counted where they are first written.** A plan
   writes every subject before any lands; counted only at each
   boundary, a long one lands long, or is rewritten there with
