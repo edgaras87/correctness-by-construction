@@ -2,6 +2,7 @@
 paths:
   - ".claude/skills/**"
   - ".claude/rules/**"
+  - ".claude/shapes/**"
   - "docs/concept/**"
   - "temp/**"
 foundation: the exchange convention
@@ -21,13 +22,13 @@ foundation: the exchange convention
    - the **read-through:** this run's own commit the deliverer last
      read up to, taken from the note.
 
-   One pin covers everything delivered: the skills and rules under
-   `.claude/`, and `docs/concept/`. The concept chapters are copies
-   too, edited like any copy, but only from a mistake lived here.
-   Skills are written from them and readers learn the method from
-   them, so lived work can show one wrong. A preference for other
-   wording is never the reason. The records (`PLAN`, `TODO`, the
-   devlog) were delivered once as stubs, and the entry file was
+   One pin covers everything delivered: the skills, rules and shapes
+   under `.claude/`, and `docs/concept/`. The concept chapters are
+   copies too, edited like any copy, but only from a mistake lived
+   here. Skills are written from them and readers learn the method
+   from them, so lived work can show one wrong. A preference for
+   other wording is never the reason. The records (`PLAN`, `TODO`,
+   the devlog) were delivered once as stubs, and the entry file was
    composed once. All of them are this run's own, not copies, and
    this file does not govern them.
 

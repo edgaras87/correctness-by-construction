@@ -180,11 +180,11 @@ container, a stack practice if the run is on that stack — and the
 concept. Nothing that explains them; the explanation stays home.
 
 At birth, every file of each group. After it, only the copies: the
-container's skills and rules, the method, the stack practice, the
-concept. The rest of the container — its records, the two entry
-files, the decisions log, the hygiene files — went once and is the
-run's (§2.4); a later delivery that carried it would land stubs over
-what the run has written.
+container's skills and rules; the method's and the stack practice's
+skills, rules and shapes; the concept. The rest of the container —
+its records, the two entry files, the decisions log, the hygiene
+files — went once and is the run's (§2.4); a later delivery that
+carried it would land stubs over what the run has written.
 
 ### 3.3 Each group is a piece of the run's tree
 
@@ -216,11 +216,10 @@ method would be born with an entry file about files it does not
 hold. No such run exists; when one does, those lines become a
 fill.*
 
-### 3.5 Every shipped skill and rule carries `foundation`
+### 3.5 Every shipped skill, rule and shape carries `foundation`
 
-The field — its
-name, that every skill and rule has one, and what it holds for each
-kind — is the conventions convention's,
+The field — its name, that every skill, rule and shape has one,
+and what it holds for each kind — is the conventions convention's,
 `docs/conventions/conventions/` §2. What is the exchange's: the
 line travels with the copy as a live claim, what this file comes
 from *now* and not when or from which run, and nothing in a copy

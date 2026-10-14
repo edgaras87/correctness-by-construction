@@ -109,10 +109,12 @@ foundation: the <name> convention
   receiver lands a convention together with its chain.
 - `foundation` says what the file stands on *now* — a live claim,
   never history. Every skill and rule carries one, shipped or this
-  repo's own: for the method, the concept and its version,
-  `concept v1`; for the stack practice, the concept it was checked
-  against, `practice, checked against concept v1`; for a
-  convention's artifact, the convention by name, `the exchange
+  repo's own, and so does every shipped shape, in frontmatter of its
+  own: for the method, the concept and its version, `concept v1`;
+  for the stack practice, the concept it was checked against,
+  `practice, checked against concept v1`; for a convention's
+  artifact, the convention by name, `the exchange convention`; for a
+  shape, the convention it lives under, `practice, under the shapes
   convention`. The value carries the relation where it is not
   derivation. Concept chapters carry none; they are the top. That
   the line travels with a copy is `docs/conventions/exchange/` §3.5.
