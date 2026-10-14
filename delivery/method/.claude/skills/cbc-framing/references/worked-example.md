@@ -36,9 +36,9 @@ Hostage test on each candidate:
 
 | Candidate | If someone else owned it, could they break the promise? | Verdict |
 |---|---|---|
-| The order records | Yes — they could double-record | **ours** |
-| The new-vs-repeat decision | Yes — a retrying caller deciding "I'm new" breaks it | **ours** |
-| The answer to a repeated submission | Yes — a wrong replay creates a second order | **ours** |
+| POSSESSION-1. The order records | Yes — they could double-record | **ours** |
+| POSSESSION-2. The new-vs-repeat decision | Yes — a retrying caller deciding "I'm new" breaks it | **ours** |
+| POSSESSION-3. The answer to a repeated submission | Yes — a wrong replay creates a second order | **ours** |
 | Payment processing | No — promise stays true even if payment fails | refused, written |
 | Product catalog correctness | No — someone else's fact | refused, written |
 | Notifying the customer | No | refused, written |
@@ -53,22 +53,24 @@ Follow one submission through its life: caller → network → our process →
 store → network → caller. Everything beyond our control is an actor. Facts,
 consequence-first:
 
-- Callers resend the same submission after a timeout → we face the same
-  order twice.
-- Two identical submissions can arrive at the same instant → we face a
-  race, not just a repeat.
-- A response can be lost *after* we recorded the order → the caller doesn't
-  know, will retry, and we must answer again without creating again.
-- Our process can die between accepting and recording, or between recording
-  and responding → we face half-done work at every boundary.
-- A caller can reuse an idempotency key with a *different* order body →
-  we face a lie: "this is a repeat" when it isn't.
-- A write's outcome can be unknowable (store timeout) → we face uncertainty
-  about our own state.
+- **FACT-CALLER-1.** Callers resend the same submission after a timeout →
+  we face the same order twice.
+- **FACT-CALLER-2.** Two identical submissions can arrive at the same
+  instant → we face a race, not just a repeat.
+- **FACT-NETWORK-3.** A response can be lost *after* we recorded the order
+  → the caller doesn't know, will retry, and we must answer again without
+  creating again.
+- **FACT-PROCESS-4.** Our process can die between accepting and recording,
+  or between recording and responding → we face half-done work at every
+  boundary.
+- **FACT-CALLER-5.** A caller can reuse an idempotency key with a
+  *different* order body → we face a lie: "this is a repeat" when it isn't.
+- **FACT-STORE-6.** A write's outcome can be unknowable (store timeout) →
+  we face uncertainty about our own state.
 
-Trust assumptions — accepted deliberately, not defended: our service is
-the only writer of the order records; whoever holds the store's own
-credentials writes none by hand.
+Trust assumptions — accepted deliberately, not defended: **ASSUMPTION-1.**
+Our service is the only writer of the order records; whoever holds the
+store's own credentials writes none by hand.
 
 Census check: one trust line, and it answers who besides us writes what we
 store; "the store is atomic" does not appear — the store appears only as
@@ -90,10 +92,11 @@ Return trip check: did the census reveal a missed possession? No — L2
 stands, no revision logged.
 
 The ledgers the exit leaves:
-- Fence list — **W1** a shop edits or cancels an order after it is
-  recorded: another promise's territory. **W2** a caller submits as
-  another shop: identity at the door, a new kind of difficulty. **W3** a
-  console or a script writes order records: the trust line says none does.
+- Fence list — **NOT-OURS-1** a shop edits or cancels an order after it is
+  recorded: another promise's territory. **NOT-OURS-2** a caller submits as
+  another shop: identity at the door, a new kind of difficulty.
+  **NOT-OURS-3** a console or a script writes order records: the trust line
+  says none does.
 - Not probed — clock skew between machines (one machine); deployment
   transitions (no second version ever runs beside the first).
 
@@ -101,28 +104,29 @@ The ledgers the exit leaves:
 
 Each fact × each possession — what dies (never how it's saved):
 
-1. Retry after timeout × order records → **a second order exists for one
-   submission.**
-2. Simultaneous duplicates × new-vs-repeat decision → **both are judged
-   "new"; two orders exist.**
-3. Lost response × the repeat-answer → **the retry is answered as new; a
-   second order exists.**
-4. Death mid-work × order records → **an order half-exists: recorded but
-   unconfirmable, or confirmed but unrecorded.**
-5. Key reused with different body × new-vs-repeat decision → **the wrong
-   order is silently confirmed as a "repeat."**
-6. Unknowable write outcome × order records → **we ourselves don't know if
-   the order exists.**
+- **KILL-1.** Retry after timeout × order records → **a second order exists
+  for one submission.**
+- **KILL-2.** Simultaneous duplicates × new-vs-repeat decision → **both are
+  judged "new"; two orders exist.**
+- **KILL-3.** Lost response × the repeat-answer → **the retry is answered as
+  new; a second order exists.**
+- **KILL-4.** Death mid-work × order records → **an order half-exists:
+  recorded but unconfirmable, or confirmed but unrecorded.**
+- **KILL-5.** Key reused with different body × new-vs-repeat decision →
+  **the wrong order is silently confirmed as a "repeat."**
+- **KILL-6.** Unknowable write outcome × order records → **we ourselves
+  don't know if the order exists.**
 
-Fenced facts collide with nothing: W1 to W3 stop at the fence.
+Fenced facts collide with nothing: NOT-OURS-1 to NOT-OURS-3 stop at the
+fence.
 
-Dedup by attack surface: kills 1–3 are one concern (duplicate delivery in
-three costumes — same thing dies the same way). Kills 4 and 6 are one
-concern (partial failure — the proof obligation is "recovery converges,"
-different from "duplicates collapse"). Kill 5 stands alone (a lie, not a
-repeat). Fold-candidate found with no enemy: "what a valid submission is"
-(the contract) — contract-shaped, no invariant-under-adversity → folds, not
-a slice.
+Dedup by attack surface: KILL-1 to KILL-3 are one concern (duplicate
+delivery in three costumes — same thing dies the same way). KILL-4 and
+KILL-6 are one concern (partial failure — the proof obligation is "recovery
+converges," different from "duplicates collapse"). KILL-5 stands alone (a
+lie, not a repeat). Fold-candidate found with no enemy: "what a valid
+submission is" (the contract) — contract-shaped, no
+invariant-under-adversity → folds, not a slice.
 
 ## Step 4 — Sort into owners (L3)
 
@@ -142,21 +146,22 @@ coordinate (payment refused at L2). Each emptiness traces to a decision.
 Operational test — two kills are two slices only if their evidence must
 create *different adversity*:
 
-- **Slice 1 — "exactly once under duplicate delivery."** Invariant: N
-  arrivals of one submission → exactly one recorded order. Covers kills
-  1–3 and 5 (its evidence must create replays, races, AND the reused-key
-  lie). Judgment logged: races fold in here because duplicate delivery is
-  the one adversity class, concurrent being its hardest costume.
-- **Slice 2 — "recovery converges under partial failure."** Invariant: a
+- **SLICE-1 — "exactly once under duplicate delivery."** Invariant: N
+  arrivals of one submission → exactly one recorded order. Covers
+  KILL-1 to KILL-3 and KILL-5 (its evidence must create replays, races, AND
+  the reused-key lie). Judgment logged: races fold in here because duplicate
+  delivery is the one adversity class, concurrent being its hardest costume.
+- **SLICE-2 — "recovery converges under partial failure."** Invariant: a
   crash at any point leaves the system where a retry ends in exactly one
-  order and one truthful answer. Covers kills 4 and 6. Different evidence:
-  kill-mid-transaction, not hammering — hence its own slice.
+  order and one truthful answer. Covers KILL-4 and KILL-6. Different
+  evidence: kill-mid-transaction, not hammering — hence its own slice.
 
-Folds, reconciled: the submission contract → folds into slice 1's spec
-(its checks ride along). Nothing dropped: 6 kills → 2 slices + 1 fold.
+Folds, reconciled: the submission contract → folds into SLICE-1's spec, as
+FOLD-1 (its checks ride along). Nothing dropped: 6 kills → 2 slices + 1
+fold.
 
-**Registry:** slice 1 chosen-next (slice 2 presumes 1's uniqueness ground —
-an expectation, re-decided at close).
+**Registry:** SLICE-1 chosen-next (SLICE-2 presumes SLICE-1's uniqueness
+ground — an expectation, re-decided at close).
 
 ---
 
@@ -168,12 +173,12 @@ an expectation, re-decided at close).
    ground, three fences and the not-probed ledger · L2 three possessions,
    three written refusals · L3 one area, one seam named-not-drawn · L4 the
    concerns · L5 empty-with-reasons.
-3. **Slice registry:** 2 slices + 1 fold, reconciliation line, slice 1
+3. **Slice registry:** 2 slices + 1 fold, reconciliation line, SLICE-1
    chosen-next.
 
 ---
 
-# Part 2 — slice 1 enters the slice workflow
+# Part 2 — SLICE-1 enters the slice workflow
 
 **specify-correctness** consumes the registry entry *as written* — zero
 translation:
@@ -199,7 +204,7 @@ returned on conflict; (d) a body-hash stored with the key, compared on
 conflict. Escape-hatch hunt, against the trust line: every write path of
 ours — an admin endpoint included — goes through the same
 constraint-guarded table, no side door; a hand at the store's console is
-trusted, not walled (W3). Gate passed: no unowned guarantee.
+trusted, not walled (NOT-OURS-3). Gate passed: no unowned guarantee.
 
 **build** — boring code plus the evidence: hammer it, inject the replay,
 send the mismatched body — watch the invariant survive, guarantee by
@@ -211,7 +216,7 @@ wall's own check, not evidence. Gate: green happy-path tests close nothing;
 only adversity-creating tests do.
 
 **document** — invariant → four guarantees → their owners → their evidence.
-Slice 1 closes in the registry as evidence-closed; the registry re-decides
+SLICE-1 closes in the registry as evidence-closed; the registry re-decides
 what's next.
 
 ---
@@ -224,4 +229,4 @@ what's next.
   zero-translation handoff.
 - The refusals (step 1) are why the spec never mentions payment.
 - The thin L3 is why there is exactly one place the code and its walls live.
-- The fold carried the contract checks into slice 1 instead of losing them.
+- The fold carried the contract checks into SLICE-1 instead of losing them.
