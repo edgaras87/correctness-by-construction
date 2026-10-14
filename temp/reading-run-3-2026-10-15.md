@@ -83,6 +83,13 @@ deliverer*. Release opens after it.
   D2). SKILL.md 1,744 to 1,887 words; the workflow 2,438 to 1,542.
   *The worked example's share of `d023336` was taken with F1
   (`b7d3448`).*
+  *Taken 2026-10-15 (`2674c03`), all five, with two changes of ours:
+  the workflow's example of a decision the framing does not carry
+  comes from the order service, not run 3's items; the worked
+  example's Part 2 tags its guarantees and evidence and documents one
+  block per guarantee. Two hold on later items: the close points at
+  the shapes rule (F7), and writes rows into ARCHITECTURE's table of
+  rules, which our template keeps as a list (group D, RETRO D16).*
 - **F3** — `cbc-bootstrap`, three edits, logged 2026-10-14 and
   untried: the requirements point to the record that decided each
   constraint and end as history at the close, ARCHITECTURE answering
@@ -179,6 +186,9 @@ deliverer*. Release opens after it.
 - **F20** — Our Later item on whether `cbc-slice` says a red removes
   the backstop too: F2's `f49a71e` asks the red run to note each
   backstop seen or unproven. Near it, not the same.
+  *Since `2674c03` our skill says so too. The Later item's question,
+  whether the red removes the backstop as well, stays open on its
+  trigger; W6 rewrites its context.*
 - **F21** — Run 4 is a birth in view: RETRO.md's goal is "run 4: the
   same project, rebuilt from the start". Our PLAN's Step 10 gate waits
   on a birth with `exchange-birth` written while it runs; three of our
