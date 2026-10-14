@@ -5,7 +5,7 @@ foundation: practice, under the exchange convention
 ---
 
 <!-- How this repo works a reading, from the reading to the note.
-     Loads beside the reading's shape, which says what the file
+     Loads beside the reading's form, which says what the file
      looks like; this says how its list is worked. Written from
      three readings of run 3. -->
 
@@ -77,9 +77,9 @@ there.
    from its first line. A note may go before the list closes, since a
    note alone is cheap; it is then written from the items as they
    stand, and says which are still open. At the close, the reading's
-   lessons go where they act — this rule, the shape, a skill — or to
-   TODO; then the reading is deleted, a branch fast-forwards, and the
-   devlog says so.
+   lessons go where they act — this rule, the reading's form, a
+   skill — or to TODO; then the reading is deleted, a branch
+   fast-forwards, and the devlog says so.
 
 ## What this does not cover
 
@@ -94,8 +94,8 @@ there.
 ## Decisions
 
 - `.claude/decisions.md`, 2026-10-01 — placed from the draft that
-  ran three readings of run 3; why a rule beside the shape, and not
-  the shape, a skill, or the draft left standing
+  ran three readings of run 3; why a rule beside the reading's form,
+  and not that form, a skill, or the draft left standing
 - `.claude/decisions.md`, 2026-10-08 — a taken item checked against
   its source, and its file read whole
 - `.claude/decisions.md`, 2026-10-10 — the list closes only when

@@ -4,8 +4,8 @@ paths:
 foundation: the conventions convention
 ---
 
-<!-- The shape of a manual. Loads while one is being written or
-     read; says its form, never its content. Ours, exposed, shipped
+<!-- The form of a manual, as a rule. Loads while one is being
+     written or read; says its form, never its content. Ours, shipped
      nowhere: a run writes no manuals. The why is
      docs/conventions/conventions/ §3. -->
 

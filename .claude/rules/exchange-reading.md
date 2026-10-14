@@ -4,8 +4,8 @@ paths:
 foundation: the exchange convention
 ---
 
-<!-- The shape of a reading. Loads while one is being written or
-     worked; says its form, never its content. -->
+<!-- The form of a reading, as a rule. Loads while one is being
+     written or worked; says its form, never its content. -->
 
 # The reading
 
@@ -51,7 +51,7 @@ starts from. Written first, before anything is read.
    say so with the commit, in place. The order is preliminary and
    the reviewer reorders it.
 7. **What this reading taught.** Lessons about reading itself, one
-   line each, written as they happen — this is where the shape
+   line each, written as they happen — this is where the form
    learns.
 8. **Notes.** Counts, what is deliberately not being done, and
    anything that fits nowhere above.
@@ -68,5 +68,5 @@ How the list is worked is `.claude/rules/working-a-reading.md`'s.
 
 ## Decisions
 
-- ADR-0036 — the exchange: what a reading is, and that its shape
-  is held here, exposed, because its moment is a file being written
+- ADR-0036 — the exchange: what a reading is, and that its form
+  is held here as a rule, because its moment is a file being written
