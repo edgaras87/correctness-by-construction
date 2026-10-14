@@ -187,24 +187,28 @@ translation:
 - Adversity (pulled from the L1 census, not invented): sequential retries,
   simultaneous duplicates, lost responses, key reuse with different body.
 - Guarantee challenge — "what would let this hold on paper yet break in
-  fact?": (a) **uniqueness** — a key can never map to two orders; (b)
-  **winner/loser** — of simultaneous duplicates, exactly one creates, the
-  rest observe it; (c) **safe replay** — a repeat receives the original
-  outcome, changing nothing; (d) **key scope** — a repeat is only a repeat
-  if the body matches; a mismatch is an error, never a silent success.
-- Evidence criteria: a hammering test (many concurrent identical
-  submissions), an injected-replay test (retry after a swallowed
-  response), a mismatched-body test. Gate passed: zero mechanisms named.
+  fact?": **GUARANTEE-1, uniqueness** — a key can never map to two
+  orders; **GUARANTEE-2, winner/loser** — of simultaneous duplicates,
+  exactly one creates, the rest observe it; **GUARANTEE-3, safe replay** —
+  a repeat receives the original outcome, changing nothing;
+  **GUARANTEE-4, key scope** — a repeat is only a repeat if the body
+  matches; a mismatch is an error, never a silent success.
+- Evidence criteria: **EVIDENCE-1** a hammering test (many concurrent
+  identical submissions; GUARANTEE-1 and GUARANTEE-2), **EVIDENCE-2** an
+  injected-replay test (retry after a swallowed response; GUARANTEE-3),
+  **EVIDENCE-3** a mismatched-body test (GUARANTEE-4). Gate passed: zero
+  mechanisms named.
 
 **plan** — one structural owner per guarantee, strongest wall available:
-(a) database unique constraint on the key — *defeats duplicates because
-the second insert cannot physically succeed*; (b) the same constraint's
-winner + losers reading the winner's row; (c) the stored original response,
-returned on conflict; (d) a body-hash stored with the key, compared on
-conflict. Escape-hatch hunt, against the trust line: every write path of
-ours — an admin endpoint included — goes through the same
-constraint-guarded table, no side door; a hand at the store's console is
-trusted, not walled (NOT-OURS-3). Gate passed: no unowned guarantee.
+GUARANTEE-1, a database unique constraint on the key — *defeats
+duplicates because the second insert cannot physically succeed*;
+GUARANTEE-2, the same constraint's winner + losers reading the winner's
+row; GUARANTEE-3, the stored original response, returned on conflict;
+GUARANTEE-4, a body-hash stored with the key, compared on conflict.
+Escape-hatch hunt, against the trust line: every write path of ours — an
+admin endpoint included — goes through the same constraint-guarded table,
+no side door; a hand at the store's console is trusted, not walled
+(NOT-OURS-3). Gate passed: no unowned guarantee.
 
 **build** — boring code plus the evidence: hammer it, inject the replay,
 send the mismatched body — watch the invariant survive, guarantee by
@@ -215,9 +219,10 @@ second row with the key written straight to the store, refused — the
 wall's own check, not evidence. Gate: green happy-path tests close nothing;
 only adversity-creating tests do.
 
-**document** — invariant → four guarantees → their owners → their evidence.
-SLICE-1 closes in the registry as evidence-closed; the registry re-decides
-what's next.
+**document** — the record completed, one block per guarantee: each of
+GUARANTEE-1 to GUARANTEE-4 holds its attack, its evidence criterion, its
+owner and the tests that proved it. SLICE-1 closes in the registry as
+evidence-closed; the registry re-decides what's next.
 
 ---
 
