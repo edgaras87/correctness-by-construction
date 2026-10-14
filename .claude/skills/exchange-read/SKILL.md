@@ -35,7 +35,8 @@ document afterwards is work, not this skill; when the work is done,
    - the diff of every copy against what was delivered:
 
      ```sh
-     git -C "$run" diff <base> -- .claude/skills .claude/rules docs/concept
+     git -C "$run" diff <base> -- .claude/skills .claude/rules \
+       .claude/shapes docs/concept
      ```
 
      `<base>` is the run's receipt branch for `P` when it cut one;

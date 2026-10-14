@@ -28,7 +28,8 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
 
    ```sh
    git diff -M --stat P..HEAD -- concept/ \
-     'delivery/*/.claude/skills/*' 'delivery/*/.claude/rules/*'
+     'delivery/*/.claude/skills/*' 'delivery/*/.claude/rules/*' \
+     'delivery/*/.claude/shapes/*'
    ```
 
    Those are the copies, and only they travel after birth
@@ -94,7 +95,7 @@ reports, and waits for the word before 2.3.
    ```sh
    groups="container method spring-postgres"   # the run's groups
    copies() { (cd delivery/$1 && find .claude/skills .claude/rules \
-                -type f 2>/dev/null); }
+                .claude/shapes -type f 2>/dev/null); }
    for g in $groups; do copies $g; done \
      | sort | uniq -d                          # must print nothing
    stage=$(mktemp -d) && chmod 755 "$stage"
@@ -104,9 +105,10 @@ reports, and waits for the word before 2.3.
    mkdir -p "$stage"/docs && cp -r concept "$stage"/docs/concept
    ```
 
-   Each group's `.claude/skills/` and `.claude/rules/`, and nothing
-   else of it: the container's records, entry files, decisions log
-   and hygiene files went at birth and are the run's.
+   Each group's `.claude/skills/`, `.claude/rules/` and
+   `.claude/shapes/`, and nothing else of it: the container's
+   records, entry files, decisions log and hygiene files went at
+   birth and are the run's.
 
    `concept/` is the one path that is not a mirror, and this is the
    one line that says so.
