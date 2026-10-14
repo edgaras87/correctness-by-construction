@@ -104,6 +104,23 @@ plan says so.
   `§8` hunt that missed a `§7`, a renumbering described without
   reading its range, a phrase wrapped across two lines, and on
   2026-09-30 a "(model §10)" pointer the same way (ADR-0049, 3).*
+- **Small steps inside a planned commit, on the reviewer's grant.**
+  Each planned commit landing as one leaves no room to try: two
+  ways meant reworking a commit in place. Small commits give the
+  room, and are folded into the planned commit before its boundary,
+  so the reviewer still sees one commit there. The grant is the
+  reviewer's because a small commit is still a commit, and the stop
+  is `docs/conventions/commit-messages/`' rule (below); without the
+  grant, every commit is a boundary. Each small commit is counted
+  when it is written, as a planned subject is. *Run 3's Step 10,
+  2026-10-13 to 15, under its reviewer's grant: about 180 small
+  commits on a `-detail` branch, landed as 16; sixteen subjects over
+  the limit were found only at the regroup (ADR-0050, 1 and 2).*
+- **A look back before the close.** Each boundary shows one commit;
+  nothing showed the set. Looked at whole, two commits can turn out
+  one change, or one two, and are regrouped on the reviewer's word.
+  *Run 3's polish regrouped 36 small commits into 7, after the fact
+  (ADR-0050, 3).*
 - **The stop at every boundary is commit-messages' rule**,
   `docs/conventions/commit-messages/`; this convention points at
   it. *Until 2026-09-08 the sentence was stated here, in §6, a file
