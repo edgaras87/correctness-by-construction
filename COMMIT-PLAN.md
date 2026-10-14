@@ -68,10 +68,17 @@ The run playbook's "`temp/` looked in for shapes staged for this
 step", at every step, becomes the gate's reading against
 `.claude/shapes/`.
 
-**11. `chore(agent): our form rules are rules`** *Provisional.*
-`exchange-reading.md` and `convention-manual.md` call themselves
-exposed shapes. If commit 3 leaves the deliverer holding no shapes,
-their comments stop saying so; if not, this commit goes.
+**10b. `docs: the manuals stop calling rules shapes`**
+Agent-arrangement, the conventions manual and the exchange manual
+call our two form rules "the shape of a reading" and "the shape of
+a manual"; the conventions manual's §3.3 is titled "The shape".
+Each now calls them rules that state a form, as commit 3 left the
+deliverer holding no shape in use; §3.3 keeps its number.
+
+**11. `chore(agent): our form rules are rules`**
+`exchange-reading.md`, `convention-manual.md` and
+`working-a-reading.md` call the two rules shapes, one of them
+exposed, in their comments and a footer; they stop saying so.
 
 **12. `docs: records carry gate shapes`**
 ADR-0052 Accepted. TODO: the evidence-test measurement item says the
