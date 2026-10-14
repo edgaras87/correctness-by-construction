@@ -62,6 +62,12 @@ section.>
   its intent and defers its wording and exact split.
 - **No status in the file.** No checkboxes. The commits that exist
   are the plan done so far.
+- **A commit inserted later takes a letter,** `8b` after `8`, so the
+  numbers already cited stay true.
+- **A planned commit may repeat over a set,** when the same change
+  reaches many records: "one commit per record, in this order". It
+  names the order, and, if it may run again, the rule that stops it
+  ("a second pass only over the records the first one changed").
 
 ## 3. How the commits are split
 
@@ -95,6 +101,7 @@ section.>
 |---|---|---|
 | Open | `docs(agent): add commit plan for <X>` | the approved plan |
 | Work | the planned commits | as planned; stop at each boundary |
+| Small steps | tries, fixes, a way abandoned | inside a planned commit, on the reviewer's grant; folded into it at its boundary (§6) |
 | Diverge | `docs(agent): revise commit plan — <what changed>` | only when reality diverged; body says why |
 | Close | `docs(agent): close commit plan for <X>` | deletes the file; **body records what diverged** |
 
@@ -115,6 +122,11 @@ section.>
   `tr '\n' ' ' | tr -s ' '` — since a name the file breaks across
   two lines is invisible to a line-by-line grep. What is history
   stays; what points at the old name from live text is the defect.
+- **Before the close, look back at the landed commits as a whole.**
+  Where a better grouping shows (two that are one change, or one
+  that is two), propose it to the reviewer, regroup on the word, and
+  revise the plan to match what landed. The look sees the planned
+  commits, never the pile of small ones.
 
 ## 5. Divergence
 
@@ -134,6 +146,18 @@ refinement, not divergence; the close body distinguishes the two.
 Work stops at every commit boundary: stage, show the diff, commit
 only on the reviewer's word. The rule is commit-messages' and binds
 at every commit, not only inside a change set.
+
+**Small steps inside a planned commit, where the reviewer has
+granted them.** A planned commit may then be built as several small
+commits: a try, a fix, a way abandoned. Before its boundary, they
+are squashed into the one commit the plan names, and the reviewer
+reviews that. The small commits are kept on a local
+`<branch>-detail` branch, so nothing tried is lost. Where the
+reviewer lets small commits land as they go, they are grouped by
+kind at the look back instead, and the `-detail` branch keeps them
+the same way. Each small commit follows commit-messages too: subject
+and body are counted when it is written, not at the regroup. Without
+the grant, every commit is a boundary.
 
 ## 7. Anti-patterns
 
@@ -161,3 +185,7 @@ at every commit, not only inside a change set.
 - CBC ADR-0049, 1 — a commit plan counts commits; "step" is
   `PLAN.md`'s
 - CBC ADR-0049, 3 — the sweep greps the text unwrapped
+- CBC ADR-0050, 1–3 — small steps on the reviewer's grant, each
+  counted when written; a look back before the close
+- CBC ADR-0050, 4–5 — an inserted commit takes a letter; a planned
+  commit may repeat over a set
