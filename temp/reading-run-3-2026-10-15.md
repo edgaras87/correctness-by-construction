@@ -67,6 +67,11 @@ deliverer*. Release opens after it.
   template's entry with every field, a Record link, one line per close
   (`8db57c0`, D5, D29). The tags touch the worked example, which is
   still byte-identical in both skills.
+  *Taken 2026-10-15 (`b7d3448`), with two changes of ours: the
+  skill's examples come from the worked example's order service, not
+  run 3's reservations; the worked example tags its possessions, facts
+  and trust line, as its header asks. Layers stay L1 to L5 here; their
+  tags are group E's.*
 - **F2** — `cbc-slice`, five edits, logged 2026-10-14 and untried:
   tags in full words (`d023336`, D6); the record's skeleton, one block
   per guarantee (`0a8b1a9`, D12); evidence checks the promise, then
@@ -76,6 +81,8 @@ deliverer*. Release opens after it.
   (`a291147`, D5, D16); SKILL.md says what to do and each gate, the
   workflow only the why and examples, both plain (`2794ac6`, D21,
   D2). SKILL.md 1,744 to 1,887 words; the workflow 2,438 to 1,542.
+  *The worked example's share of `d023336` was taken with F1
+  (`b7d3448`).*
 - **F3** — `cbc-bootstrap`, three edits, logged 2026-10-14 and
   untried: the requirements point to the record that decided each
   constraint and end as history at the close, ARCHITECTURE answering
@@ -230,6 +237,8 @@ deliverer*. Release opens after it.
 - **D2** — F1 to F7: take, decline or hold each copy edit. F1 to F4
   are untried, first lived by run 4: taken now, or held until run 4
   lives them. Rests on D1. Gates W2.
+  *Settled 2026-10-15: an untried edit is taken now when it is sound,
+  and read hardest; run 4 is its trial, through F11's gate items.*
 - **D3** — F6: accept or decline the reversal of ADR-0036's chapter
   clause. Needs an ADR either way. Gates part of W2.
 - **D4** — F8 and F9: which of the run's own files become ours to
