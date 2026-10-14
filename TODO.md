@@ -39,9 +39,9 @@
 
 - [ ] Ship `temp/` in the container, or stop telling runs to use
       it (2026-09-23).
-      Context: `visual-comparison`, `shapes-lifecycle` and
-      `delivered-copies` send a newborn to `temp/`, and
-      `exchange-deliver` stages into it; the container ships none.
+      Context: `visual-comparison` and `delivered-copies` send a
+      newborn to `temp/`, and `exchange-deliver` stages into it; the
+      container ships none.
       The exchange manual calls a run's `temp/` untracked, and since
       2026-10-08 a take removes only its staging, because run 3
       keeps its own drafts there; ours is tracked. No shipped text
@@ -86,6 +86,9 @@
       no path is claimed by two of our groups, and the take's diff
       (§4) sees that a file differs, not whose it is. Once so far;
       checked by hand at `e6538f6`, where no staged path was new.
+      The method's four shapes now sit at run 3's own
+      `.claude/shapes/` paths (ADR-0052): the next delivery to run 3
+      is this trigger.
       Ideas: in `exchange-deliver`, the staged paths against the
              run's files that are not at its pin.
       Trigger: the next delivery that ships a path new to the run.
@@ -137,15 +140,15 @@
       reference opens.
       See: devlog 2026-09-24.
 
-- [ ] Read the next birth's first evidence tests against run 3's
-      evidence-test shape (2026-10-08, the reading of run 3).
-      Context: never-oversold's `.claude/rules/evidence-test.md`, its
-      skeleton marked apart from its illustration. Held, not shipped:
-      a newborn's tests written without it are the measurement a
-      hidden shape exists for. `cbc-slice` took two of its lessons at
-      `3758a72`. At SL-4's close it took two more: the slice's own
-      invariant asserted after the promise, where it is narrower, and
-      what must agree read in one read.
+- [ ] Read what the next birth's first slice gate found against
+      the evidence-test shape (2026-10-08, the reading of run 3).
+      Context: the shape ships with the method since ADR-0052, read
+      only at the gate. A newborn's first tests are written without
+      it in view, and its first slice's close reads them against it:
+      the differences it records are the measurement this item had
+      held the shape back for. Most of its lessons are in
+      `cbc-slice` already, so a test written from the skill alone
+      may meet it.
       Trigger: the next birth's first slice closing.
       See: devlog 2026-10-08; and 2026-10-10.
 
@@ -179,16 +182,6 @@
       Trigger: a second run reaching the same gap unprompted.
       See: devlog 2026-09-17, later still.
 
-- [ ] Decide our own side of shapes (2026-09-23, ADR-0035).
-      Context: where unexposed stock lives, what is staged to whom
-      and when, whether `delivery/shapes/` exists. The rule is
-      written and the directory arrives with its first occupant;
-      we hold none. never-oversold offers two, neither evaluated:
-      `slice-record.md`, and since 2026-10-07 its evidence-test
-      shape, exposed there as a rule.
-      Trigger: a first shape being ours to hold.
-      See: devlog 2026-09-27.
-
 - [ ] Move the skills' `foundation` to concept v2 at the release
       (2026-10-08, ADR-0048).
       Context: the method's skills say `foundation: concept v1`.
@@ -198,11 +191,11 @@
 
 - [ ] Decide whether a rule can be delivered on trial, as a shape
       can (2026-10-08, never-oversold).
-      Context: a shape has two places, hidden and exposed; a rule
-      learned in one run is in force in the next from its first
-      step. Run 3 asks after offering its evidence-test shape as a
-      rule. Held with that shape: the question is real only once
-      there is a rule we would deliver that way.
+      Context: a shape reaches a run but binds nothing until a
+      gate reads it (ADR-0052); a rule learned in one run is in
+      force in the next from its first step. Run 3 asked after
+      offering its evidence-test shape as a rule. Held: the question
+      is real only once there is a rule we would deliver that way.
       Trigger: a rule we would ship that one run alone has lived.
       See: devlog 2026-10-08.
 

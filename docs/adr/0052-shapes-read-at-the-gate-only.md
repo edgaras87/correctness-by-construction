@@ -1,7 +1,8 @@
 # 0052. Shapes are read at the gate only, and travel as copies
 
 Date: 2026-10-15
-Status: Proposed (2026-10-15, under the commit plan for gate shapes)
+Status: Accepted (2026-10-15, at the set's records commit; opened
+Proposed under the commit plan for gate shapes)
 
 ## Context
 

@@ -29,7 +29,9 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   through specify, plan, build and document until a test that
   creates its adversity shows it holds. Each with its workflow, a
   worked example, and the registry template or readiness checklist
-  it hands on (ADR-0008).
+  it hands on (ADR-0008); and beside them the shapes their gates
+  read: a slice record, an evidence test, a kill and a registry
+  entry, from run 3's records (ADR-0052).
 - **The stack practice**, checked against concept v1 and not derived
   from it: `infra-establish`, `infra-serve` and `cbc-bootstrap`, for
   a Spring and PostgreSQL run, with the templates a run fills and
