@@ -55,8 +55,8 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 
 - The chapters' provenance headers. Each line was history, kept in
   `[v1]` below, ADR-0003 and git, or the one instruction a run's
-  copy needs — never edited — which the run's own rule gives
-  (ADR-0022).
+  copy needs — what may be done to it — which the run's own rule
+  gives (ADR-0022, ADR-0051).
 
 ## [v1] - 2026-08-28
 

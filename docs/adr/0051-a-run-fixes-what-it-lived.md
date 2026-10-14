@@ -1,8 +1,8 @@
 # 0051. A run fixes what it lived, chapters included
 
 Date: 2026-10-15
-Status: Proposed (2026-10-15, under the commit plan for chapter
-edits)
+Status: Accepted (2026-10-15, at the set's records commit; opened
+Proposed under the commit plan for chapter edits)
 
 ## Context
 
