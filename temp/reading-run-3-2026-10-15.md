@@ -147,6 +147,10 @@ deliverer*. Release opens after it.
   `temp/` staging and the exposed place cannot be judged apart from
   F9, the `temp/` Now item and our side of shapes. One decision on
   how a shape reaches a run, with F9.*
+  *Taken 2026-10-15 under ADR-0052, by the commit plan for gate
+  shapes (`7c0355d` to `18ed1e0`), with two changes of ours: the
+  writing rule named as the project's rules; a delivered shape
+  changed under `delivered-copies.md`, not by a dated line.*
 - **F8** — Files the run wrote, offered whole: `writing.md` and
   `one-home.md`, always loaded (D1, D2); `.claude/checks/records.py`,
   178 lines of Python run at every close (D17); the `retrospective`
@@ -159,6 +163,12 @@ deliverer*. Release opens after it.
   that run 4 has them from its first slice. Our Next item holds the
   evidence-test shape back on purpose: the next birth's first tests,
   written without it, are the measurement.
+  *Taken 2026-10-15 under ADR-0052, reshaped: all four ship with the
+  method, read at the gate only, run 3's skeletons kept, tags in full
+  words, illustrations from the worked example's order service; the
+  registry entry gains Rider. The measurement moves to run 4's first
+  slice gate (TODO). Run 3's own `.claude/shapes/` sit at these
+  paths; the note says so before any staging.*
 - **F10** — "Apply RETRO.md's decisions": one line pointing at 29
   decisions. Most land in our tree: the run playbook (the step form, a
   retrospective and an apply step before Release, Release's closing
@@ -286,6 +296,8 @@ deliverer*. Release opens after it.
   ship; whether shapes are delivered or held back, against our
   evidence-test measurement item; whether a code file can live in a
   documents-only repo. Gates W4.
+  *Half settled 2026-10-15: shapes delivered, read at the gate only
+  (ADR-0052). F8's files are open.*
 - **D5** — F21: is run 4 the birth Step 10 waits on, and what must be
   in place before it is born (F11's gate items, `exchange-birth`,
   `temp/` in the container). Gates W3's order.
@@ -309,7 +321,8 @@ deliverer*. Release opens after it.
   apply steps, Release's items (F13), D22's gate items for run 4
   (F11). **plan**
 - **W4** — The run's own files taken into the bundle, as D4 decides.
-  **plan**
+  **plan** *The shapes done 2026-10-15 (`7c0355d` to `18ed1e0`);
+  F8's files open.*
 - **W5** — The ADR for D3.
 - **W6** — TODO brought true: the answered and fired items (F15 to
   F23).
