@@ -117,6 +117,11 @@ deliverer*. Release opens after it.
   close; a commit inserted later takes a letter (`8b`); a planned
   commit may repeat over a set, with an order and a stop rule; small
   commits follow `commit-messages` when written.
+  *Taken 2026-10-15 under ADR-0050, by the commit plan for small
+  steps (`54467ae` to `39cdde7`), with one change of ours: small
+  commits only where the reviewer has granted them, as run 3 lived
+  them; commit-messages makes every other commit wait for the word.
+  Manual, shipped skill and our copy alike.*
 - **F6** — `delivered-copies.md`, two edits, logged 2026-10-14
   (`c6d21b8`, D28; `128801b`, D2): rule 1 lets a concept chapter be
   edited as any copy, only from a mistake lived in the run; a finished
@@ -190,6 +195,9 @@ deliverer*. Release opens after it.
 - **F18** — Our Later watch on provisional commits has fired: its
   trigger names "a retrospective". D19 judged the commit plan, and F5's
   edit is its answer.
+  *Closed 2026-10-15 (`a7beb34`): no provisional rule needed; letters
+  and small steps are what was missing. Its side note is the skill's
+  first anti-pattern already.*
 - **F19** — Our Later item on a decisions entry's length: D1 keeps
   three-line entries and adds a rules-in-force list on top; the run's
   own entries in this span run 5 to 25 lines. Evidence, not its
