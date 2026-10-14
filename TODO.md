@@ -215,19 +215,6 @@
       Trigger: Release's README gate, where a stranger first needs
       the words.
 
-- [ ] Watch whether commit-plan needs a rule about provisional
-      commits (2026-09-19).
-      Context: the groups set planned six and landed twelve, and
-      its two most confident commits were the ones undone. §2
-      already lets the list roll; one commit of thirteen was marked
-      provisional, so on one instance the author under-used it.
-      Unwritten in either convention: a scope that names the area
-      invites commits split by directory, commit-plan's own
-      anti-pattern.
-      Trigger: a set that diverges by more than half its planned
-      commits, or a retrospective.
-      See: devlog 2026-09-19, later.
-
 - [ ] Number the concept chapters' sections (2026-09-30).
       Context: their `##` headings are unnumbered, and nothing points
       into a chapter's section today. The chapters are the canonical

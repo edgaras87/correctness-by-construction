@@ -1,7 +1,8 @@
 # 0050. Small steps inside a planned commit, and a look back
 
 Date: 2026-10-15
-Status: Proposed (2026-10-15, under the commit plan for small steps)
+Status: Accepted (2026-10-15, at the set's records commit; opened
+Proposed under the commit plan for small steps)
 
 ## Context
 
