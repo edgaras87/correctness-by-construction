@@ -30,6 +30,10 @@ staging was never used on either side.*
   loading when a file under `.claude/shapes/` is touched. §1, §3,
   §4 and §5, from the run's seat, with the definition repeated because a
   run cannot open this page.
+- **`delivery/method/.claude/shapes/` — the method's shapes,
+  shipped**, held at `.claude/shapes/` and read at a step's closing
+  gate: instances of this convention, each from a run's lived
+  records, its illustration from the worked example (§4.2).
 - **`delivery/README.md` — a pointer**: one sentence on placement,
   and §4 for the rest.
 

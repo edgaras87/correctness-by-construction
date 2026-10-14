@@ -104,6 +104,9 @@ The concept made usable: `cbc-framing` (turn an idea into one
 falsifiable promise, a layered definition, a registry of slices)
 and `cbc-slice` (take one invariant through specify, plan, build,
 document until a test that creates the adversity proves it holds).
+Beside them, under `.claude/shapes/`, the shapes their gates read:
+what a record or a test of the method looks like, read at a step's
+close and never while it is written (`docs/conventions/shapes/`).
 
 **Derived from the concept**, and each says so in its `foundation`
 field: `concept v1`. A change to the concept asks whether these are
@@ -178,7 +181,8 @@ by itself. Every delivery is a person copying files into the run's
    │ concept/               │            │ docs/concept/   copy   │
    │ delivery/method/       │  ── a  ──▶ │ .claude/skills/ copies │
    │ delivery/spring-…/     │   person   │ .claude/rules/  copies │
-   │ delivery/container/    │   copies   │ PLAN, TODO, devlog     │
+   │ delivery/container/    │   copies   │ .claude/shapes/ copies │
+   │                        │            │ PLAN, TODO, devlog     │
    │                        │            │ src/  ← the only thing │
    │  masters               │            │        that is its own │
    └────────────────────────┘            └────────────────────────┘
@@ -310,7 +314,7 @@ docs/
 └── baselines/       trial evidence withheld from runs (ADR-0035)
 delivery/
 ├── container/       what a run is born into (§2.3)
-├── method/          cbc-framing, cbc-slice (§2.1)
+├── method/          cbc-framing, cbc-slice, their shapes (§2.1)
 ├── spring-postgres/ the stack practice (§2.2)
 ├── fills/           text written into a newborn's own files (§2.4)
 ├── installs/        how a run is seeded (§2.4)
