@@ -129,6 +129,11 @@ deliverer*. Release opens after it.
   marked "untried here"; then written plain, each rule keeping its
   number. The run names the reversal of ADR-0036's chapter clause and
   asks us to accept it, or decline with why. No chapter was edited.
+  *Taken whole 2026-10-15 under ADR-0051, by the commit plan for
+  chapter edits (`d6672ed` to `66e10d7`): the exchange's §5.2 and §5.6,
+  ARCHITECTURE's pointer, CHANGELOG's entry; the shipped rule equals
+  run 3's. The clause was the exchange's §5.6, from run 3's own first
+  rule, not ADR-0036's.*
 - **F7** — `shapes-lifecycle.md`, three edits (`d194038`, `e0169dd`,
   `cdfc432`; D18, D29), logged 2026-10-13 and 10-14: shortened to what
   run 3 used; every shape in one folder, `.claude/shapes/`, read at the
@@ -137,6 +142,11 @@ deliverer*. Release opens after it.
   that names work must be asked for by the skill that runs it; a shape
   starts from a look at its examples for what they all lack. The first
   entry cites "commits 4, 5 and 5b", not hashes.
+  *Moved to group B 2026-10-15, on the reviewer's word: its look,
+  fourth ending and work-naming part stand alone, but dropping the
+  `temp/` staging and the exposed place cannot be judged apart from
+  F9, the `temp/` Now item and our side of shapes. One decision on
+  how a shape reaches a run, with F9.*
 - **F8** — Files the run wrote, offered whole: `writing.md` and
   `one-home.md`, always loaded (D1, D2); `.claude/checks/records.py`,
   178 lines of Python run at every close (D17); the `retrospective`
@@ -253,7 +263,7 @@ deliverer*. Release opens after it.
   - *A, the copy edits (F1 to F7): D5, D6, D7, D9, D10, D11, D12,
     D13, D16, D18, D19, D21, D26, D27, D28, each the half already
     written into a copy.*
-  - *B, the run's own files (F8, F9): D1, D2's rule, D12's and D13's
+  - *B, the run's own files (F8, F9), and F7 with F9 (moved from A): D1, D2's rule, D12's and D13's
     shapes, D17, D23, D24, D29.*
   - *C, the playbook: D4, D17's closing checks, D20's Release, D22,
     D23's and D24's steps.*
@@ -270,6 +280,8 @@ deliverer*. Release opens after it.
   and read hardest; run 4 is its trial, through F11's gate items.*
 - **D3** — F6: accept or decline the reversal of ADR-0036's chapter
   clause. Needs an ADR either way. Gates part of W2.
+  *Settled 2026-10-15: accepted, on the reviewer's word, over the
+  agent's proposed hold (ADR-0051).*
 - **D4** — F8 and F9: which of the run's own files become ours to
   ship; whether shapes are delivered or held back, against our
   evidence-test measurement item; whether a code file can live in a
