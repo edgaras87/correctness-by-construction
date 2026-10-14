@@ -19,9 +19,9 @@ Goal: the container exists — repo, records, arrangement — before content.
 Gate: derived when this step opens — verifiable facts, from the
 goal and the newborn's own records; written into this step before
 its work starts.
-Known already: `temp/` looked in for shapes staged for this
-step, what was found said in one line, nothing included; what the
-step made read against every shape governing it.
+Known already: what the step made read against every shape in
+`.claude/shapes/` that governs it, each difference settled as the
+shapes rule says; where none governs, one line says so.
 Notes:
 
 ## Step 1: Framing  (cbc-framing)                   [ ]
@@ -35,9 +35,9 @@ Goal: know what we're building and why, before code.
 Gate: derived when this step opens — verifiable facts, from the
 goal, the named skill, and the briefing; written into this step
 before its work starts.
-Known already: `temp/` looked in for shapes staged for this
-step, what was found said in one line, nothing included; what the
-step made read against every shape governing it.
+Known already: what the step made read against every shape in
+`.claude/shapes/` that governs it, each difference settled as the
+shapes rule says; where none governs, one line says so.
 Notes:
 
 ## Step 2: Identity (name, description, remote)     [ ]
@@ -46,9 +46,9 @@ Goal: the project's public identity decided, not defaulted.
 Gate: derived when this step opens — verifiable facts, from the
 goal and the run's own records; written into this step before
 its work starts.
-Known already: `temp/` looked in for shapes staged for this
-step, what was found said in one line, nothing included; what the
-step made read against every shape governing it.
+Known already: what the step made read against every shape in
+`.claude/shapes/` that governs it, each difference settled as the
+shapes rule says; where none governs, one line says so.
 Notes:
 
 ## Step 3: Ground / infrastructure  (infra-establish)    [ ]
@@ -57,9 +57,9 @@ Goal: services stood up, constrained to need, verified both ways.
 Gate: derived when this step opens — verifiable facts, from the
 goal, the named skill, and the registry; written into this step
 before its work starts.
-Known already: `temp/` looked in for shapes staged for this
-step, what was found said in one line, nothing included; what the
-step made read against every shape governing it.
+Known already: what the step made read against every shape in
+`.claude/shapes/` that governs it, each difference settled as the
+shapes rule says; where none governs, one line says so.
 Notes:
 
 ## Step 4: Skeleton & bootstrap  (cbc-bootstrap)    [ ]
@@ -69,9 +69,9 @@ real ground, with the evidence harness proven on one adversity.
 Gate: derived when this step opens — verifiable facts, from the
 goal, the named skill, and the registry; written into this step
 before its work starts.
-Known already: `temp/` looked in for shapes staged for this
-step, what was found said in one line, nothing included; what the
-step made read against every shape governing it.
+Known already: what the step made read against every shape in
+`.claude/shapes/` that governs it, each difference settled as the
+shapes rule says; where none governs, one line says so.
 Notes:
 
 ## Steps 5..N-1: Invariant slices  (cbc-slice, one step per stage)
@@ -82,9 +82,9 @@ the original expectation.
 Gate: derived when each stage opens — verifiable facts, from the
 goal, the named skill, and the registry; written into the stage
 before its work starts.
-Known already: `temp/` looked in for shapes staged for this
-step, what was found said in one line, nothing included; what the
-step made read against every shape governing it.
+Known already: what the step made read against every shape in
+`.claude/shapes/` that governs it, each difference settled as the
+shapes rule says; where none governs, one line says so.
 Notes:
 
 ## Step N: Release                                  [ ]
@@ -98,7 +98,7 @@ a stranger, its commands verified on a clean machine; known
 issues filed in TODO.md. Checked here: monitoring and alerts in
 place; deploy and rollback documented and tried once — each unless
 this run's own recorded exclusion.
-And `temp/` looked in for shapes staged for this step, what was
-found said in one line, nothing included; what the step made read
-against every shape governing it.
+And what the step made read against every shape in
+`.claude/shapes/` that governs it, each difference settled as the
+shapes rule says; where none governs, one line says so.
 Notes:
