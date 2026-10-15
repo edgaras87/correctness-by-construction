@@ -50,8 +50,8 @@ Shipped in `delivery/container/`: the deliverer writes it and the
 run receives it. Its entry file says that `docs/concept/` and
 everything under `.claude/` are delivered copies, pinned, and that
 until the framing artifacts exist the only method work is running
-`cbc-framing` jointly with the human. It holds the three
-convention skills, and four rules: `shapes-lifecycle.md`,
+`cbc-framing` jointly with the human. It holds five convention
+skills, the retrospective's two among them, and four rules: `shapes-lifecycle.md`,
 `delivered-copies.md`, the exchange's half for this side, and
 `writing.md` and `one-home.md`, loaded in every session. The work
 it arranges is building a real system, keeping its records and
@@ -66,8 +66,9 @@ method from it, holds the master of every file a run receives,
 delivers to runs, and reads them back to learn what to change. It
 is not a builder; there is nothing to build. Its entry file sits at
 the repo root, the address the arrangement is described from: *"A
-concept repo… Documents only — no code, no runs."* It holds the
-same three convention skills; the exchange's two, `exchange-read`
+concept repo… Documents only — no code, no runs."* It holds three
+of the same convention skills, not the retrospective's, whose seat
+here is on trial; the exchange's two, `exchange-read`
 and `exchange-deliver`; the two rules every session loads,
 `writing.md` and `one-home.md`; and three rules of its own,
 `exchange-reading.md`, the form of a reading,

@@ -31,7 +31,7 @@
   first note.
   Conventions: project-recording, commit-messages, repo-hygiene,
   commit-plan, exchange, agent-arrangement, visual-comparison,
-  shapes, writing.
+  shapes, writing, retrospective.
   Why: the deliverer's defaults. Their decisions are cited
   CBC ADR-nnnn and are the deliverer's to explain.
   Rejected: none — see the deliverer's ADRs.

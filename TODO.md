@@ -78,12 +78,12 @@
 - [ ] Make the conventions index a full local map (2026-09-30, the
       reviewer).
       Context: its chain shows only the conventions that act in
-      sequence during a piece of work. The other seven relate by what
+      sequence during a piece of work. The other eight relate by what
       they govern, read or describe, stated as about thirty pointers
       across the manuals' *What this does not cover*, and seen
       together nowhere. The local-map rule now exists
       (project-recording §8.6, ADR-0045).
-      Ideas: all ten and how each touches the others, derived from
+      Ideas: all eleven and how each touches the others, derived from
              those pointers, built by `visual-comparison`.
       Trigger: due — the pair it waited on was made on 2026-09-30.
       See: devlog 2026-09-30, local maps.
