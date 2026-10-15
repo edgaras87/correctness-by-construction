@@ -156,7 +156,7 @@ deliverer*. Release opens after it.
   178 lines of Python run at every close (D17); the `retrospective`
   skill and manual (D23); the `apply-retrospective` skill and manual
   (D24). This repo holds documents only, no code (`CLAUDE.md`).
-  *Two of three ended 2026-10-15:*
+  *All three ended 2026-10-15:*
   - *`records.py` declined as a file; the idea ships. This repo
     holds no code, and half the script is run 3's own: its short
     tags, its file layout, Java and `pom.xml`. The playbook gets a
@@ -171,7 +171,14 @@ deliverer*. Release opens after it.
     rule 1, which took five points from run 3's rule. Both ship in
     the container with no `paths:`, examples from the order service,
     and this repo loads its own.*
-  - *The retrospective skills stay open.*
+  - *The retrospective skills taken under ADR-0054, by the commit
+    plan for retrospective (`ccf7203` to `8599705`): a convention of
+    their own, taken over from project-recording, whose PLAN section
+    goes, its questions moved into the skill. Both ship in the
+    container, cleaned of run 3. The reviewer's part is the manual's
+    seats; no guide ships, so run 3's two guides stay its own files,
+    and the note says so. Our seat is on trial at Step 10's close.
+    Whether `RETRO.md` wants a shape waits for run 4's reading.*
 - **F9** — The run's four shapes, offered (`.claude/shapes/`): the
   slice record (D12), the evidence test (D13, moved from
   `.claude/rules/`), the kill and the registry entry (D29). Each
@@ -261,6 +268,7 @@ deliverer*. Release opens after it.
 - Looking and changing are two steps: the retrospective changes
   nothing, the apply step changes the run's records and nothing it
   proved, both before Release (D23, D24).
+  *Taken 2026-10-15 (ADR-0054); the steps are W3's.*
 - Copying a result into another record rewords it, and a rewording
   can turn true into false: six places in the definition, one where
   "a reservation not ours" became a check the system never makes
@@ -320,6 +328,7 @@ deliverer*. Release opens after it.
   (ADR-0052). F8's files are open.*
   *F8 further 2026-10-15: `records.py` declined, the two rules taken
   (ADR-0053); the retrospective skills open.*
+  *Settled 2026-10-15: the retrospective skills taken (ADR-0054).*
 - **D5** — F21: is run 4 the birth Step 10 waits on, and what must be
   in place before it is born (F11's gate items, `exchange-birth`,
   `temp/` in the container). Gates W3's order.
@@ -351,11 +360,14 @@ deliverer*. Release opens after it.
 - **W3** — The playbook: the step form (F17), the retrospective and
   apply steps, Release's items (F13), D22's gate items for run 4
   (F11). **plan**
+  *The two skills exist since `fa7fd41`; the steps here open them.*
 - **W4** — The run's own files taken into the bundle, as D4 decides.
   **plan** *The shapes done 2026-10-15 (`7c0355d` to `18ed1e0`);
   F8's files open.*
   *The writing rules done 2026-10-15 (`50cf540` to `5da0484`);
   `records.py` declined; the retrospective skills open.*
+  *Done 2026-10-15: the retrospective skills (`ccf7203` to
+  `8599705`).*
 - **W5** — The ADR for D3.
   *Done 2026-10-15: ADR-0051, by the commit plan for chapter edits
   (`d6672ed` to `66e10d7`).*
@@ -375,6 +387,9 @@ deliverer*. Release opens after it.
   agent-arrangement's seats and §3.2, conventions §1); one home for
   it, the counts dropped for the tree. Each manual's list of what
   derives from it stays, as conventions §3.5 asks.*
+  *Step 10's "lessons folded back" item became this repo's own
+  retrospective, on trial (`5caa466`, ADR-0054). W8 applies run 3's
+  lessons ahead of it.*
 - **W9** — At the reading's close, delete the two run 4 drafts in
   `temp/`, the kickoff and the message (`f097695`), with a devlog
   line. *Added 2026-10-15.*
