@@ -76,13 +76,13 @@ and is either derived from it or checked against it.
 
 ### 1.2 The conventions — `docs/conventions/`
 
-**Nine manuals: how work is done here, and why each rule is the
+**Ten manuals: how work is done here, and why each rule is the
 shape it is.** Recording, committing, hygiene, how an agent is
 arranged, how a choice between things you look at is settled, the
 exchange — how a delivery goes down to a run and how what the run
 learned comes back — shapes, what a kind of output looks like and
-where that description sits — and conventions themselves, what one
-is and how it is made.
+where that description sits — writing, how a text reads — and
+conventions themselves, what one is and how it is made.
 
 None of it is CbC. The concept is about how a system is built; the
 conventions are about how a repo is kept.
@@ -131,17 +131,18 @@ harvest, as a group beside this one (ADR-0029).
 **How a project is kept, not how it is thought.** The records
 (`README`, `PLAN`, `TODO`, `devlog`, `ARCHITECTURE`, `CHANGELOG`,
 the first ADR), the entry file, the agent decisions log, three
-convention skills, two rules, the hygiene files.
+convention skills, three rules, the hygiene files.
 
 **This is the conventions made usable**, the way the method is the
-concept made usable. Every one of its seventeen files is the
-artifact of one of eight of the nine manuals in 1.2 — `conventions`
+concept made usable. Every one of its eighteen files is the
+artifact of one of nine of the ten manuals in 1.2 — `conventions`
 ships nothing — the records belong to
 `project-recording`, the entry file and the decisions log to
 `agent-arrangement`, the three dotfiles to `repo-hygiene`, the
 three skills to the three conventions named after them,
-`.claude/rules/delivered-copies.md` to the exchange, and
-`.claude/rules/shapes-lifecycle.md` to shapes.
+`.claude/rules/delivered-copies.md` to the exchange,
+`.claude/rules/shapes-lifecycle.md` to shapes, and
+`.claude/rules/writing.md` to writing.
 
 A project with no correctness-by-construction in it would still want
 most of this, which is why it is a group of its own and not part of
@@ -309,7 +310,7 @@ devlog/              work history, one file per month
 concept/             the concept: five chapters, 00-cbc.md first (§1.1)
 docs/
 ├── adr/             decisions and why
-├── conventions/     nine manuals and their index (§1.2)
+├── conventions/     ten manuals and their index (§1.2)
 ├── models/          the agent model and the tiers model; neither ships
 └── baselines/       trial evidence withheld from runs (ADR-0035)
 delivery/
