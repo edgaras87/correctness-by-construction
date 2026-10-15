@@ -55,8 +55,9 @@ differences of rule or ownership, so a section each
 
 A run keeps every record the stubs name, from birth. Its `PLAN.md`
 steps arrive whole from a playbook it does not hold, filled in at
-birth. Its retrospective runs at the project's end, and its
-lessons reach the playbook when the deliverer reads the run. Its
+birth. Its retrospective runs before Release
+(`docs/conventions/retrospective/`), and its lessons reach the
+playbook when the deliverer reads the run. Its
 `CHANGELOG.md` logs releases.
 
 ### The deliverer's seat
@@ -65,7 +66,9 @@ The deliverer keeps the same records, derived from this page rather
 than from the stubs (ADR-0042), and differs in five things. It
 has no project end, so lessons fold back at each milestone's close
 rather than at a retrospective, as its first devlog entry agreed on
-2026-08-27. It owns the playbook,
+2026-08-27; whether a retrospective serves it too is on trial at
+Step 10's close (`docs/conventions/retrospective/`, its seats). It
+owns the playbook,
 `delivery/fills/cbc-run-pure-playbook.md`, where a run holds only
 the steps filled into its plan (§9). Its `CHANGELOG.md` versions the
 concept, not a release (ADR-0003).
@@ -81,9 +84,9 @@ leaves the plan, and the devlog entry that closes it names the step.
 A run keeps its finished steps whole, because they are the evidence
 its playbook is folded from; no playbook is folded from the
 deliverer's own plan, so its finished steps are only history, which
-is the devlog's. For the same reasons its plan has no Retrospective,
-whose two jobs — folding lessons back and re-reading the entry file
-— close each milestone's gate instead; no "Discovered along the
+is the devlog's. For the same reasons, folding lessons back and
+re-reading the entry file close each milestone's gate; its plan has
+no "Discovered along the
 way", since TODO takes a finding at once; and no decision index,
 since `docs/adr/` lists itself (§3.3's index is the run's).
 
@@ -191,8 +194,8 @@ Repo root, `PLAN.md`. One per project.
 - When a step closes, add a one-line note of what actually happened,
   especially if it diverged from the estimate — this is retro fuel.
 - Steps link outward: "Decisions: ADR-nnnn," "see devlog 2026-08-14."
-- Ends with a "Discovered along the way" holding pen and a Retrospective
-  section (see Playbook, §9).
+- Ends with a "Discovered along the way" holding pen. The look back
+  is not the plan's: `RETRO.md`, by `docs/conventions/retrospective/`.
 
 ### 2.5 When
 
@@ -649,9 +652,9 @@ type's own release facts. The lifecycle:
    specifics, delete what this project has no use for, add what it
    needs, renumber; author the steps if the project was born
    without one.
-3. **Project end:** run the retrospective in PLAN.md — estimate vs
-   reality per step, wrong ordering, dead ends, missing steps, useless
-   gates.
+3. **Before Release:** the retrospective walks the run and writes
+   `RETRO.md`, each decision naming where its lesson lands
+   (`docs/conventions/retrospective/`).
 4. **Fold back:** each surviving lesson becomes a changed gate, a new
    step, or a warning line in the playbook where it lives — the plan's
    "Steps from" line names it; bump its version there. Framing
@@ -712,7 +715,7 @@ devlog (raw, daily)
   → PLAN notes   when it explains why a step diverged
        → CHANGELOG      when the step ships something user-visible
        → ARCHITECTURE   when the step changed the system's shape
-       → RETROSPECTIVE  when the project ends
+       → RETRO.md       before Release
             → PLAYBOOK  lessons made reusable
                  → next project's PLAN
 ```

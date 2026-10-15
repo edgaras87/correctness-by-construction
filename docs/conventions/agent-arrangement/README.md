@@ -232,8 +232,8 @@ task and are read when the file is opened to edit it — the moment
 they govern. If what remains is longer than a screen, something in
 it belongs in a convention, a record or a skill; shrinking it is
 maintenance, not tidying. Noticing that has no moment of its own, so
-a run re-reads the file at its project retrospective: the plan's
-questionnaire asks it, and every line passes the three tests again
+a run re-reads the file at its retrospective: the skill's close
+asks it, and every line passes the three tests again
 or leaves — the same move a run's decisions log makes for its
 entries. The deliverer has no project end, and re-reads it at each
 milestone's close instead, as a gate item (ADR-0041).

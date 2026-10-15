@@ -10,7 +10,7 @@
 
 <!-- Steps from: <playbook> v<N> at <concept commit>,
      copied at birth. Filled in place at birth; this comment stays —
-     the retrospective writes its lessons for what it names. -->
+     RETRO.md's lessons land in what it names. -->
 
 ## Legend
 
@@ -67,20 +67,3 @@ Notes:
 
 - ADR-0001: Record architecture decisions (birth)
 
----
-
-## Retrospective  (fill at project end)
-
-Ran: <start> → <end>
-
-1. Estimate vs reality — which steps took much longer/shorter, why?
-2. Wrong order — what needed to happen earlier?
-3. Dead ends — approaches tried and abandoned (→ playbook warnings).
-4. Missing steps — work that had no home in the plan.
-5. Useless gates — ceremony that caught nothing.
-6. The entry file — read CLAUDE.md top to bottom; every line still
-   passes the three tests in its guard comment, or leaves.
-
-Then write each lesson for the playbook the steps came from — the
-"Steps from" line at the top names it — here, under the question it
-answers. The deliverer reads them from this file; nothing is sent.

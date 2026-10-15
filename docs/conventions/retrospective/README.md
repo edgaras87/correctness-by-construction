@@ -112,7 +112,8 @@ end.
   dropped, what had no home, which gate items caught nothing; and
   the entry file read top to bottom, its only re-reading
   (`docs/conventions/agent-arrangement/` §2.6). They came from the
-  plan's section, and are prompts now, inside the walk.
+  plan's old Retrospective section, which the skill replaced, and
+  are prompts now, inside the walk.
 
 ## 3. How the apply step decides
 
@@ -146,8 +147,8 @@ that edits text is checked on what it must not touch.*
 
 The look back's record, at the run's root, one per run. It holds
 every decision, the experiments, what was parked, and, after the
-apply step, a row per decision saying what happened to it. It is
-history once the run is
+apply step, a row per decision saying what happened to it. The
+records table names its moment. It is history once the run is
 released: the next run starts from where its decisions landed, not
 from the note.
 

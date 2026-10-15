@@ -48,6 +48,7 @@ writes is its own.
 | The promise, the layers, or the slices are in question | Intent, system definition, slice registry | docs/system/ |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |
 | Agent setup changed, or a convention arrives | Decision, why, rejected options; the conventions held, the pin | .claude/decisions.md |
+| The last step before Release closed | What the next run does differently, and where each lesson lands | RETRO.md (when present) |
 | Work needs more than one commit | In-flight change set | COMMIT-PLAN.md (when present) |
 
 <!-- This file is loaded in full on every task, relevant or not, so
