@@ -30,8 +30,12 @@ Gate:
 - [x] The letter to the handbook sent with lived numbers —
       2026-09-18 (devlog 2026-09-18, evening; ADR-0038).
 - [x] Run 3 on one pin, ours — 2026-09-20 (devlog 2026-09-20).
-- [ ] Lessons folded back where they came from — conventions,
-      playbooks, the concept.
+- [ ] This repo's retrospective run and applied, on trial
+      (`docs/conventions/retrospective/`, the deliverer's seat):
+      `RETRO.md` written with the container's two skills, its
+      lessons landed where they came from — conventions, playbooks,
+      the concept — and the trial's verdict on whether we hold the
+      skills.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
       §2.4).
