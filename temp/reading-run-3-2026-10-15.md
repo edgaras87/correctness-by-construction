@@ -232,6 +232,8 @@ deliverer*. Release opens after it.
   same project, rebuilt from the start". Our PLAN's Step 10 gate waits
   on a birth with `exchange-birth` written while it runs; three of our
   Now items trigger at or before the next birth.
+  *Overtaken 2026-10-15 (D5): run 4 was born from run 3's files, not
+  ours; Step 10's birth is run 5.*
 - **F22** — Our Release-triggered items, the stance bullets and the
   baselines sort, still wait: run 3's Release opens after our note.
 - **F23** — Our Later item "name when a run is read": D24 names it
@@ -288,6 +290,8 @@ deliverer*. Release opens after it.
   lives them. Rests on D1. Gates W2.
   *Settled 2026-10-15: an untried edit is taken now when it is sound,
   and read hardest; run 4 is its trial, through F11's gate items.*
+  *Corrected 2026-10-15 by D5: run 4 lived run 3's text of each edit,
+  as run 3 wrote it; ours, with our changes, is first lived by run 5.*
 - **D3** — F6: accept or decline the reversal of ADR-0036's chapter
   clause. Needs an ADR either way. Gates part of W2.
   *Settled 2026-10-15: accepted, on the reviewer's word, over the
@@ -301,6 +305,13 @@ deliverer*. Release opens after it.
 - **D5** — F21: is run 4 the birth Step 10 waits on, and what must be
   in place before it is born (F11's gate items, `exchange-birth`,
   `temp/` in the container). Gates W3's order.
+  *Settled 2026-10-15, by the event: run 4 was born that day by hand,
+  from run 3's skills, rules and shapes at `dac4dd1` and our container
+  at `35edd3f`, and ran on full auto through Release. It is not the
+  birth Step 10 waits on; the next birth from this repo is run 5.
+  Every item that tests the bundle names run 5: our shapes, our skill
+  edits, the playbook, the container, `exchange-birth`, `temp/` in the
+  container.*
 - **D6** — F14: a word for `cbc-framing`'s parts. Rests on D2 (F1's
   edits touch the same skill).
 - **D7** — Whether the note goes before the list closes. Run 3's
@@ -332,6 +343,13 @@ deliverer*. Release opens after it.
   repo's own living records (plain writing, full-name tags, a
   glossary, one home per fact), as Step 10's "lessons folded back"
   item. History keeps its words. **plan**
+- **W9** — At the reading's close, delete the two run 4 drafts in
+  `temp/`, the kickoff and the message (`f097695`), with a devlog
+  line. *Added 2026-10-15.*
+- **W10** — Before main takes this branch, check again how. Never
+  rebase or squash it: run 4 started from `35edd3f`, which lives only
+  here. Main takes it by fast-forward, unless that check says
+  otherwise. *Added 2026-10-15.*
 
 ## 7. What this reading taught
 
@@ -352,6 +370,10 @@ deliverer*. Release opens after it.
   20 lines under *To the deliverer*, 12 new, 1 widened (the shapes,
   from two to four), 4 now answered by RETRO.md, 3 held as before.
 - Read only: nothing in the run was written to. Its `temp/` is empty.
+- Run 4 was born and finished on 2026-10-15, from run 3 at `dac4dd1`,
+  the commit this reading reads. This reading is finished as if run 4
+  had not run; run 4 is read after, for what it changed on top of
+  `dac4dd1`, what it answered, and what is new.
 - Read whole: RETRO.md and the decisions log's new entries. Not read,
   as each is its item's work: the offered files, the four shapes, the
   glossary, the slice records and the code.
