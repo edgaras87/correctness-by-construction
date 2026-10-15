@@ -51,9 +51,9 @@ run receives it. Its entry file says that `docs/concept/` and
 everything under `.claude/` are delivered copies, pinned, and that
 until the framing artifacts exist the only method work is running
 `cbc-framing` jointly with the human. It holds the three
-convention skills, and three rules: `shapes-lifecycle.md`,
+convention skills, and four rules: `shapes-lifecycle.md`,
 `delivered-copies.md`, the exchange's half for this side, and
-`writing.md`, loaded in every session. The work
+`writing.md` and `one-home.md`, loaded in every session. The work
 it arranges is building a real system, keeping its records and
 taking deliveries; it changes the arrangement through its own
 decisions log.
@@ -269,12 +269,14 @@ qualify. *Added 2026-10-15, from run 3: its writing and one-home
 rules, loaded this way, changed its records where a manual and the
 agent's memory had not (ADR-0053).*
 
-The container ships three — `shapes-lifecycle.md`,
+The container ships four — `shapes-lifecycle.md`,
 whose convention is `docs/conventions/shapes/`,
 `delivered-copies.md`, whose convention is
-`docs/conventions/exchange/`, and `writing.md`, with no `paths:`,
-whose convention is `docs/conventions/writing/` — and the
-deliverer holds its own.
+`docs/conventions/exchange/`, and two with no `paths:`:
+`writing.md`, whose convention is `docs/conventions/writing/`, and
+`one-home.md`, whose convention is
+`docs/conventions/project-recording/` — and the deliverer holds its
+own.
 *Empty at birth until 2026-09-23.*
 
 ### 3.3 `shapes/`

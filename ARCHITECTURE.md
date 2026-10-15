@@ -131,13 +131,13 @@ harvest, as a group beside this one (ADR-0029).
 **How a project is kept, not how it is thought.** The records
 (`README`, `PLAN`, `TODO`, `devlog`, `ARCHITECTURE`, `CHANGELOG`,
 the first ADR), the entry file, the agent decisions log, three
-convention skills, three rules, the hygiene files.
+convention skills, four rules, the hygiene files.
 
 **This is the conventions made usable**, the way the method is the
-concept made usable. Every one of its eighteen files is the
+concept made usable. Every one of its nineteen files is the
 artifact of one of nine of the ten manuals in 1.2 — `conventions`
-ships nothing — the records belong to
-`project-recording`, the entry file and the decisions log to
+ships nothing — the records and `.claude/rules/one-home.md`
+belong to `project-recording`, the entry file and the decisions log to
 `agent-arrangement`, the three dotfiles to `repo-hygiene`, the
 three skills to the three conventions named after them,
 `.claude/rules/delivered-copies.md` to the exchange,

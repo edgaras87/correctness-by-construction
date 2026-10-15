@@ -30,11 +30,14 @@ there is.
   the rule that cannot live inside a record, when to open it.
 - **`delivery/fills/cbc-run-pure-playbook.md` — the playbook's
   steps, filled into a run's `PLAN.md` at birth** (§9).
+- **`delivery/container/.claude/rules/one-home.md` — a rule,
+  shipped**, held at `.claude/rules/one-home.md` with no `paths:`,
+  so it loads at the start of every session: §11, rule 1.
 - **The deliverer's own records**, derived from this page as the
   stubs are, and never copied from them (ADR-0042).
 
-This page explains the records; the stubs state the rules. Nothing
-here is loaded into an agent. What derives from this page is that
+This page explains the records; the stubs state the rules. Only the
+one-home rule is loaded into an agent, in every session. What derives from this page is that
 list. A change here walks it; a change forced in one of them is
 checked back against this page.
 
@@ -715,7 +718,20 @@ The rules that make the pipeline work:
 
 1. **Write once, at the source.** Each fact has one home; other records
    *link* to it, never copy it. Duplicated facts diverge, and diverged
-   records stop being trusted.
+   records stop being trusted. In practice:
+   - **A summary says it is one.** It names its owner, and nobody
+     reads it in the owner's place.
+   - **A fact changes at its home.** The links to it do not change.
+   - **When two copies cannot be avoided,** one is the owner and the
+     other follows it, and a check compares them: the version in the
+     build file, followed by the CHANGELOG.
+   - **History is not a second home.** The devlog, closed ADRs and
+     commit bodies record what was true then. They are never
+     updated, so they cannot drift.
+   - **Comments and config count too,** not only records.
+
+   *Added 2026-10-15, from run 3: its loaded one-home rule said these
+   five things, and this rule did not (ADR-0053).*
 2. **Promote, don't rely on memory.** A dead end noted in the devlog is
    safe; one merely remembered will be repeated. Same for decisions
    (→ADR) and lessons (→playbook).
@@ -787,6 +803,14 @@ recognises the moment, and failing to recognise the moment is the
 failure being fixed. Restating a record's rules in the entry file
 "so they are always available" is the failure
 `docs/conventions/agent-arrangement/` measured.
+
+One rule is loaded, in every session: §11's rule 1, as
+`one-home.md` with no `paths:` (`docs/conventions/agent-arrangement/`
+§3.2). A fact is retold in the record being written, and that
+record's stub says nothing of the record the fact was taken from,
+so no stub is open at the moment. This page held the rule from the
+start, and run 3 still told one step's story in four records: PLAN,
+the devlog, the slice record and the commits (its RETRO.md, D1).
 
 ## What this does not cover
 
