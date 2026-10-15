@@ -156,6 +156,22 @@ deliverer*. Release opens after it.
   178 lines of Python run at every close (D17); the `retrospective`
   skill and manual (D23); the `apply-retrospective` skill and manual
   (D24). This repo holds documents only, no code (`CLAUDE.md`).
+  *Two of three ended 2026-10-15:*
+  - *`records.py` declined as a file; the idea ships. This repo
+    holds no code, and half the script is run 3's own: its short
+    tags, its file layout, Java and `pom.xml`. The playbook gets a
+    closing item instead (W3): every link, path and cited number in
+    the records exists; each run writes its own check. Run 4 kept
+    and changed the script, so its reading may revisit shipping one.
+    Run 3's script lists a stale path, `.claude/apply-retro/`; the
+    note says so.*
+  - *`writing.md` and `one-home.md` taken under ADR-0053, by the
+    commit plan for writing rules (`50cf540` to `5da0484`). Writing
+    is a convention of its own; one home is project-recording's §11,
+    rule 1, which took five points from run 3's rule. Both ship in
+    the container with no `paths:`, examples from the order service,
+    and this repo loads its own.*
+  - *The retrospective skills stay open.*
 - **F9** — The run's four shapes, offered (`.claude/shapes/`): the
   slice record (D12), the evidence test (D13, moved from
   `.claude/rules/`), the kill and the registry entry (D29). Each
@@ -302,6 +318,8 @@ deliverer*. Release opens after it.
   documents-only repo. Gates W4.
   *Half settled 2026-10-15: shapes delivered, read at the gate only
   (ADR-0052). F8's files are open.*
+  *F8 further 2026-10-15: `records.py` declined, the two rules taken
+  (ADR-0053); the retrospective skills open.*
 - **D5** — F21: is run 4 the birth Step 10 waits on, and what must be
   in place before it is born (F11's gate items, `exchange-birth`,
   `temp/` in the container). Gates W3's order.
@@ -328,21 +346,35 @@ deliverer*. Release opens after it.
   note, at the list's close, carries the verdicts.*
 - **W2** — The copy edits taken into our masters, each checked against
   its manual or chapter and read whole. **plan**
+  *Done 2026-10-15: F1 to F7 taken, each marked under its finding
+  (`b7d3448` to `18ed1e0`).*
 - **W3** — The playbook: the step form (F17), the retrospective and
   apply steps, Release's items (F13), D22's gate items for run 4
   (F11). **plan**
 - **W4** — The run's own files taken into the bundle, as D4 decides.
   **plan** *The shapes done 2026-10-15 (`7c0355d` to `18ed1e0`);
   F8's files open.*
+  *The writing rules done 2026-10-15 (`50cf540` to `5da0484`);
+  `records.py` declined; the retrospective skills open.*
 - **W5** — The ADR for D3.
+  *Done 2026-10-15: ADR-0051, by the commit plan for chapter edits
+  (`d6672ed` to `66e10d7`).*
 - **W6** — TODO brought true: the answered and fired items (F15 to
   F23).
 - **W7** — `CLAUDE.local.md` from the reviewer's hand (F12): where it
   lands here, if anywhere.
+  *Since ADR-0053 the writing rule loads here: whatever lands from
+  the reviewer's file points at it, not repeats it (run 3's RETRO
+  D2).*
 - **W8** — After the list closes: RETRO's lessons applied to this
   repo's own living records (plain writing, full-name tags, a
   glossary, one home per fact), as Step 10's "lessons folded back"
   item. History keeps its words. **plan**
+  *Widened 2026-10-15: what each seat holds, and how the two differ,
+  is told in five places (`ARCHITECTURE.md` §2.3 and §4,
+  agent-arrangement's seats and §3.2, conventions §1); one home for
+  it, the counts dropped for the tree. Each manual's list of what
+  derives from it stays, as conventions §3.5 asks.*
 - **W9** — At the reading's close, delete the two run 4 drafts in
   `temp/`, the kickoff and the message (`f097695`), with a devlog
   line. *Added 2026-10-15.*
