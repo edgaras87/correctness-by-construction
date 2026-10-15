@@ -33,11 +33,14 @@ there is.
 - **`delivery/container/.claude/rules/one-home.md` — a rule,
   shipped**, held at `.claude/rules/one-home.md` with no `paths:`,
   so it loads at the start of every session: §11, rule 1.
+- **`.claude/rules/one-home.md` — the deliverer's**, derived from
+  §11 like the container's, its examples this repo's.
 - **The deliverer's own records**, derived from this page as the
   stubs are, and never copied from them (ADR-0042).
 
 This page explains the records; the stubs state the rules. Only the
-one-home rule is loaded into an agent, in every session. What derives from this page is that
+one-home rule, on each side, is loaded into an agent, in every
+session. What derives from this page is that
 list. A change here walks it; a change forced in one of them is
 checked back against this page.
 

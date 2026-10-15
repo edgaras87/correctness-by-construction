@@ -51,8 +51,9 @@ only pointers (§3.1):
   person and for the maintainer. Never shipped, never loaded into an
   agent by default.
 - **Its artifacts**: what a project actually holds — a run, or this
-  repo, whose own `.claude/` holds seven. A skill file for
-  a rule bound to a moment; a rule file for a rule bound to a path;
+  repo, whose own `.claude/` holds ten. A skill file for
+  a rule bound to a moment; a rule file for a rule bound to a path,
+  or, with no path, to every task;
   stubs and templates for rules that ride in the files a project is
   born with. The rules live there, one sentence each. The artifacts
   are real files in the container, `delivery/container/`.

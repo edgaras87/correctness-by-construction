@@ -68,7 +68,8 @@ is not a builder; there is nothing to build. Its entry file sits at
 the repo root, the address the arrangement is described from: *"A
 concept repo… Documents only — no code, no runs."* It holds the
 same three convention skills; the exchange's two, `exchange-read`
-and `exchange-deliver`; and three rules of its own,
+and `exchange-deliver`; the two rules every session loads,
+`writing.md` and `one-home.md`; and three rules of its own,
 `exchange-reading.md`, the form of a reading,
 `working-a-reading.md`, how a reading's list is worked, and
 `convention-manual.md`, the form of a manual. Its decisions log
@@ -88,7 +89,10 @@ different things because of it: the run holds the receiver's rule,
 `delivered-copies.md` — how to take a newer copy without losing its
 own edits, and what it may do to one meanwhile; the deliverer holds
 the deliverer's skills and the form of the reading they produce.
-Neither holds the other's half, because neither could run it.
+Neither holds the other's half, because neither could run it. The
+two rules every session loads differ by the job too: the
+deliverer's writing rule covers what runs read, since it writes
+it, and both take their examples from their own side.
 
 *Until 2026-09-26 the deliverer held the receiver's protocol,
 `convention-lifecycle`, and had never once run it — its registry
