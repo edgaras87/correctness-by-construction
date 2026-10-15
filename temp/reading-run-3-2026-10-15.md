@@ -361,6 +361,50 @@ deliverer*. Release opens after it.
   apply steps, Release's items (F13), D22's gate items for run 4
   (F11). **plan**
   *The two skills exist since `fa7fd41`; the steps here open them.*
+  *Its decisions, one at a time before the plan:*
+  - *1, the step form, settled 2026-10-15: run 3's form, taken
+    once as a section at the playbook's top, copied at birth inside
+    the swapped region before Step 0. Each step keeps its Goal, a
+    Now line, and a Gate from the form; the two stock lines go.
+    The closing items' list is decision 4's. Examples from the
+    order service.*
+  - *2, the two steps, settled 2026-10-15: Retrospective (N-2) and
+    Apply (N-1) between the slices (5..N-3) and Release (N). The
+    retrospective opens when the run stops building slices, every
+    slice closed or not. Each holds what decision 1 gives every
+    step, its goal from run 3's draft with run 3's name taken out;
+    no prewritten gate items, since they would retell the skills
+    (RETRO D4). Notes: when it opens; who decides points at the
+    manual. `apply-retrospective` §0.2 lists gate items itself;
+    decision 4 looks at it.*
+  - *3, Release, settled 2026-10-15: two additions, a Known already
+    item that Release's own lessons are in RETRO.md, in the
+    `retrospective` skill's form, and a Notes line that it opens
+    after the apply step. Release alone keeps its Known already
+    list. The rest of run 3's reshape was ours already. F13 taken;
+    run 5's Release judges it (decision 5).*
+  - *4, the closing items, settled 2026-10-15: run 3's list, plus
+    three from RETRO D17 and D2: links, paths, cited numbers and
+    copy pairs hold; no stale "now" line about what the step
+    changed; new text reads to the writing rule. The records item
+    states the outcome; one sentence says a run may write its own
+    script. `apply-retrospective` §0.2 loses the two items every
+    close now carries.*
+  - *5, RETRO D22's checks, settled 2026-10-15, rewritten for run
+    5. Six become gate items at the steps that judge them, each with
+    its reason and source, removed or kept by run 5's reading: an
+    edited skill's wording (RETRO D28) at Steps 1, 3, 4, the first
+    slice, N-2 and N-1; the claims as specification (RETRO D14) and
+    the shapes' first reading (RETRO D29) at the first slice;
+    gate-only shapes (RETRO D18) at the second slice; the reshaped
+    Release (RETRO D20). Three stay on our side, since telling the
+    run spoils them: the facility and the absence rung (F15), the
+    evidence-test measurement (TODO). RETRO D4's trial rule goes
+    into the step form's text.*
+  - *6, the middle-steps line, settled 2026-10-15: a Known already
+    item at Step 2, for every run: the plan read end to end against
+    the framing, each step standing as named or reworded there. Its
+    TODO item ends.*
 - **W4** — The run's own files taken into the bundle, as D4 decides.
   **plan** *The shapes done 2026-10-15 (`7c0355d` to `18ed1e0`);
   F8's files open.*
