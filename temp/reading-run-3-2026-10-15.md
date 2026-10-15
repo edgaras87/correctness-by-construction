@@ -213,6 +213,8 @@ deliverer*. Release opens after it.
   in the run's repo; the reviewer carries it to us by hand (D3). D25,
   that a new kind of work starts from a provisional manual and gets its
   skill at the close, lives only there.
+  *RETRO D25 moved to D8 on 2026-10-16, on the reviewer's word: a
+  way of working for both seats, not only the reviewer's.*
 - **F13** — Release reshaped at birth, to be folded into the playbook:
   held since 2026-09-23; still open, run 3's Release not yet run
   (D20).
@@ -346,6 +348,17 @@ deliverer*. Release opens after it.
   that says which items are still open. Gates W1.
   *Settled 2026-10-15: an early note, written and committed
   (`78242ff`); its copy to the run held, on the reviewer's word.*
+- **D8** — From F12, RETRO D25: a kind of work neither seat has done
+  before starts from a provisional manual. The manual changes as
+  the step teaches. At the close it becomes the lasting form: a
+  skill, a rule, a shape, or a section of a record. Does this become
+  a convention for both seats, and where does each seat meet it?
+  Lived three times: run 3's Steps 9 and 10, each a skill at its
+  close; here, `working-a-reading.md`, a draft through three
+  readings, then a rule. Planned once more: `exchange-birth`,
+  "written while running the next birth". Worked right after W3. It
+  may add a line to the step form, for a step with no skill; W7
+  then keeps only the reviewer's file. *Added 2026-10-16.*
 
 ## 6. The work
 
@@ -418,7 +431,7 @@ deliverer*. Release opens after it.
 - **W6** — TODO brought true: the answered and fired items (F15 to
   F23).
 - **W7** — `CLAUDE.local.md` from the reviewer's hand (F12): where it
-  lands here, if anywhere.
+  lands here, if anywhere. *RETRO D25 is D8's since 2026-10-16.*
   *Since ADR-0053 the writing rule loads here: whatever lands from
   the reviewer's file points at it, not repeats it (run 3's RETRO
   D2).*
