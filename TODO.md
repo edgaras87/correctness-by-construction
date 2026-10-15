@@ -23,6 +23,18 @@
 
 ## Now (current plan step)
 
+- [ ] Read run 4 against `dac4dd1`, the run 3 commit it was born
+      from (2026-10-15, the reviewer).
+      Context: run 4, safe-reservation-2, was born 2026-10-15 by
+      hand from run 3's skills, rules and shapes at `dac4dd1` and
+      our container at `35edd3f`, and ran on full auto through
+      Release. Reading it shows what it changed on top of
+      `dac4dd1`, what of run 3's asks it answered, what still has
+      to be checked, and what is new. It left twelve lines under
+      To the deliverer.
+      Trigger: run 3's reading closes; in a new session.
+      See: `f097695`, the kickoff and the message it took.
+
 - [ ] Write `exchange-birth` while running the next birth
       (2026-09-26, the reviewer).
       Context: written from the exchange's manual, as
