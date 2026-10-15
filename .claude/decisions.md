@@ -1031,3 +1031,9 @@
   gap opens while the list is worked); the reading's shape (it says
   form, never how the list is worked); a TODO line (the check is one
   sentence, needed at the moment the note is written).
+
+- 2026-10-15 This repo loads the writing and one-home rules,
+  `.claude/rules/writing.md` and `.claude/rules/one-home.md`, with
+  no `paths:`. Ours differ from the container's where the seat
+  does: the writing rule covers what runs read, which we write, and
+  both take their examples from this repo. ADR-0053.
