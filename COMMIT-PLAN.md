@@ -43,10 +43,15 @@ decisions-log birth entry names the convention; `ARCHITECTURE.md`'s
 counts and what the manuals cover.
 
 **5. `docs: one home per fact, loaded`**
-Project-recording: §11's rule 1 gains its loaded rule, its *What
-this is made usable as* and *Why it arrives this way* say so; the
-shipped `delivery/container/.claude/rules/one-home.md`;
-`ARCHITECTURE.md`'s list of the container's files.
+Project-recording: §11's rule 1 gains what run 3's rule found it
+lacked, as a dated lesson: a summary says it is one and names its
+owner; a fact changes at its home; two copies that cannot be
+avoided are an owner and a follower, with a check; history is not a
+second home; comments and config count too. It gains its loaded
+rule, and its *What this is made usable as* and *Why it arrives
+this way* say so. The shipped
+`delivery/container/.claude/rules/one-home.md`; `ARCHITECTURE.md`'s
+list of the container's files.
 
 **6. `chore(agent): this repo loads the writing rules`**
 `.claude/rules/writing.md` and `.claude/rules/one-home.md`, derived
@@ -66,6 +71,11 @@ Deletes this file; the body says what diverged.
   How a text reads is no record's business. Where a fact lives is
   exactly the records': §11 already says it, and the records table
   already says which record owns which fact.
+- **The rule is checked back against its manual**
+  (`docs/conventions/conventions/` §3.5, rule 4). Run 3's one-home
+  rule says five things §11 does not, so §11 takes them; the rule
+  takes nothing back, since its why is the manual's. Writing's
+  manual is new and written from its rule, so nothing to calibrate.
 - **Both always loaded.** Run 3's first draft loaded writing on
   Markdown paths only, and dropped it: chat has no path. A `paths:`
   list loads on reading a file, not on writing one, so one home on
