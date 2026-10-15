@@ -55,12 +55,24 @@ list of the container's files.
 
 **6. `chore(agent): this repo loads the writing rules`**
 `.claude/rules/writing.md` and `.claude/rules/one-home.md`, derived
-from the manuals like the container's; an entry in
-`.claude/decisions.md`, since it changes how this repo's agent
-works.
+from the manuals like the container's, not copied from them. The
+writing rule covers the skills, rules, shapes, manuals and notes
+this repo writes, since they are what runs read; the old ones are
+group E's and W8's. The one-home rule's examples are ours: the root
+`CLAUDE.md`'s records table, and a master in `delivery/` with our
+own copy in `.claude/`. An entry in `.claude/decisions.md`, since
+it changes how this repo's agent works.
+
+**6b. `docs: the deliverer's seat in both manuals`**
+Writing's *What this is made usable as* and *The seats*, and
+project-recording's list, name the deliverer's rules;
+agent-arrangement's deliverer's seat holds five rules; the
+conventions manual's count of this repo's own `.claude/`. Apart
+from 6, since an agent commit touches nothing else, and after it,
+since no commit points at what does not yet exist.
 
 **7. `docs: records carry the writing rules`**
-ADR-0053 Accepted.
+ADR-0053 Accepted; a TODO line for a check on our two copies.
 
 **8. `docs(agent): close commit plan for writing rules`**
 Deletes this file; the body says what diverged.
@@ -85,5 +97,9 @@ Deletes this file; the body says what diverged.
   container record is a glossary yet (group E's).
 - **This repo adopts both now** (commit 6). New text follows them
   from the commit; the old is W8's, after the reading.
+- **No check for our two copies yet.** One-home's rule 5 asks a
+  check where two copies cannot be avoided; a master and our own
+  copy, and the worked example in two skills, are compared by hand
+  today. A TODO line, not a build (commit 7).
 - **Neither rule names CbC.** They are the container's, and the
   container is what any project would want.
