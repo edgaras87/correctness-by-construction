@@ -177,6 +177,18 @@
 
 ## Later / someday
 
+- [ ] Decide whether a check compares the worked example's two
+      copies (2026-10-15, the commit plan for writing rules).
+      Context: one-home's rule 5 asks a check where two copies
+      cannot be avoided (ADR-0053). The worked example sits in
+      `cbc-framing` and `cbc-slice` and must stay identical; it is
+      compared by hand at each edit, and was identical on
+      2026-10-15.
+      Ideas: a diff of the two in `exchange-deliver`'s gates, since
+             a delivery is when the copies leave.
+      Trigger: the two found different, or the worked example's
+               next edit.
+
 - [ ] Decide a decisions entry's length (2026-10-02, the eval).
       Context: `.claude/decisions.md`'s header asks for three lines
       — what, why, what was rejected; its 48 entries run a median of

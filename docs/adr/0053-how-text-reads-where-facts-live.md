@@ -1,7 +1,8 @@
 # 0053. How a text reads, and where a fact lives, are loaded rules
 
 Date: 2026-10-15
-Status: Proposed (under the commit plan for writing rules)
+Status: Accepted (2026-10-15, at the set's records commit; opened
+Proposed under the commit plan for writing rules)
 
 ## Context
 
