@@ -5,10 +5,11 @@
 The CbC run playbook, `delivery/fills/cbc-run-pure-playbook.md`, is
 at v8. It opens on one step form, copied at birth with the steps:
 Goal, a Now line, and a Gate made of the opening items, the step's
-own items asked of its goal, and the closing items. The two stock
-lines every step carried are gone. The closing items gain three
-checks from run 3's RETRO D17 and D2: the records hold together, no
-stale "now" line, new text reads to the writing rule.
+own items asked of its goal, and the closing items. At the close a
+step's gate shrinks to one line. The two stock lines every step
+carried are gone. The closing items gain three checks from run 3's
+RETRO D17 and D2: the records hold together, no stale "now" line,
+new text reads to the writing rule.
 
 Between the slices and Release sit two new steps, Retrospective and
 Apply the retrospective, which open the ADR-0054 skills. Release
@@ -19,30 +20,33 @@ to be removed or kept by run 5's reading.
 
 The seed copies the playbook from the step form down.
 `apply-retrospective` stops listing two items every close now
-carries. ADR-0055 records the six decisions and what was rejected.
-W3 of the reading of run 3 is done.
+carries. ADR-0055 records the seven decisions and what was
+rejected. W3 of the reading of run 3 is done.
 
 ## Commits
 
-The six decisions are marked under W3 in the reading (`e2ae15f`).
+The decisions are marked under W3 in the reading: six in
+`e2ae15f`; the seventh, and a correction to the second, in
+`9b813ae`.
 
 **1. `docs(agent): add commit plan for the playbook`**
 The approved plan.
 
 **2. `docs(adr): 0055, the playbook takes run 3's retro`**
-The six decisions, Proposed: the step form and its home, the two
+The seven decisions, Proposed: the step form and its home, the two
 steps, Release, the closing items, run 5's checks, the middle-steps
-line. Each with its rejected options.
+line, and a closed step in one line. Each with its rejected
+options.
 
 **3. `docs: the playbook opens on a step form`**
 The form section at the top, with run 3's opening and closing
-items, W3 decision 4's three added, RETRO D4's trial rule, and the
-struck default. Each step loses its two stock lines and gains a
-Now line. Version v8. The header comment and the seed
-(`pure-seed.md`: its copy command, its check, its three v7
-references) say "from the step form down" in the same commit: the
-form holds a `## Step <n>` line in its code block, so the old copy
-command would start inside it.
+items, W3 decision 4's three added, RETRO D4's trial rule, the
+struck default, and W3 decision 7's one-line closed step. Each step
+loses its two stock lines and gains a Now line. Version v8. The
+header comment and the seed (`pure-seed.md`: its copy command, its
+check, its three v7 references) say "from the step form down" in
+the same commit: the form holds a `## Step <n>` line in its code
+block, so the old copy command would start inside it.
 
 **4. `docs: apply-retrospective leaves two to the close`**
 §0.2 drops "every link resolves" and "no living line says now",
@@ -52,8 +56,7 @@ file, and reverting it alone leaves a repeat, not a break.
 **5. `docs: the playbook gains the two retro steps`**
 Steps N-2 and N-1, the slices renumbered 5..N-3. Goals from run 3's
 drafts, with run 3's name taken out. The retrospective opens when
-the run stops building slices. Notes point at the manual for who
-decides.
+the slice steps close. Notes point at the manual for who decides.
 
 **6. `docs: Release keeps its own lessons`**
 A Known already item for Release's lessons in RETRO.md, in the
