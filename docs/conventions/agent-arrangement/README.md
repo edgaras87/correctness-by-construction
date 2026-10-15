@@ -161,7 +161,9 @@ three the stub's guard comment states:
 
 - **True of this project and nowhere else.** A line that would be
   true in another project is a convention, and lives there — once. If
-  the rule rides in a skill or a stub, it is not repeated here.
+  the rule rides in a skill or a stub, it is not repeated here. If
+  the convention's moment is every task, its rule loads with no
+  `paths:` (§3.2): the convention's channel, not a line here.
   **It points; it never restates**: a summary is lossy on arrival,
   and then two files disagree while both look current (model claim
   M1).
@@ -252,7 +254,21 @@ reads a file under one of those paths with the Read tool — not when
 it writes a new one there — the tool deciding, not the agent (model §10.6). The home for a rule true only in one part of the tree, which a
 skill would carry only if the agent noticed the moment. Without the
 list, the file is the entry file by another name and fails §2.4's
-tests the same way. The container ships two — `shapes-lifecycle.md`,
+tests the same way, with one exception.
+
+A convention whose moment is every task ships its rule with no
+`paths:`, so it loads in every session. Its moment is every answer
+and every record written, and no path, skill or stub fires at all
+of them. Such a rule fails §2.4's first test, since it is true in
+any project. It passes as the convention's own channel: derived
+from its manual, and naming the manual in `foundation`. That keeps
+it from being the rulebook of §4: one file per convention, never a
+restatement. It is paid for in every session (§2.6), so few
+qualify. *Added 2026-10-15, from run 3: its writing and one-home
+rules, loaded this way, changed its records where a manual and the
+agent's memory had not (ADR-0053).*
+
+The container ships two — `shapes-lifecycle.md`,
 whose convention is `docs/conventions/shapes/`, and
 `delivered-copies.md`, whose convention is
 `docs/conventions/exchange/` — and the deliverer holds its own.
