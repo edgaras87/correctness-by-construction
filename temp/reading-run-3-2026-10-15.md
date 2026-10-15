@@ -418,6 +418,16 @@ deliverer*. Release opens after it.
     item at Step 2, for every run: the plan read end to end against
     the framing, each step standing as named or reworded there. Its
     TODO item ends.*
+  - *Decision 2 corrected 2026-10-16: the retrospective opens when
+    the slice steps close. "Every slice closed or not" rested on run
+    3 having stopped with slices unbuilt. It had not: all four
+    closed by Step 8, and Steps 9..N-1 were skipped with none left.*
+  - *7, a closed step shrinks to one line, from RETRO D1, missed by
+    the six and found while writing ADR-0055; settled 2026-10-16.
+    At the close the gate becomes one line: the date, what the step
+    delivered, and the commit that holds the ticked gate. Untried:
+    run 5 is its first use. In the step form, commit 3 of the
+    plan.*
 - **W4** — The run's own files taken into the bundle, as D4 decides.
   **plan** *The shapes done 2026-10-15 (`7c0355d` to `18ed1e0`);
   F8's files open.*
