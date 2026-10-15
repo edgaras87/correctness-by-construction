@@ -404,8 +404,8 @@ deliverer*. Release opens after it.
     script. `apply-retrospective` §0.2 loses the two items every
     close now carries.*
   - *5, RETRO D22's checks, settled 2026-10-15, rewritten for run
-    5. Six become gate items at the steps that judge them, each with
-    its reason and source, removed or kept by run 5's reading: an
+    5. Five become 10 gate items at the steps that judge them, each
+    with its reason and source, removed or kept by run 5's reading: an
     edited skill's wording (RETRO D28) at Steps 1, 3, 4, the first
     slice, N-2 and N-1; the claims as specification (RETRO D14) and
     the shapes' first reading (RETRO D29) at the first slice;
