@@ -1,7 +1,8 @@
 # 0054. The retrospective is a convention, with two skills
 
 Date: 2026-10-15
-Status: Proposed (under the commit plan for retrospective)
+Status: Accepted (2026-10-15, at the set's records commit; opened
+Proposed under the commit plan for retrospective)
 
 ## Context
 

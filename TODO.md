@@ -32,6 +32,8 @@
       `dac4dd1`, what of run 3's asks it answered, what still has
       to be checked, and what is new. It left twelve lines under
       To the deliverer.
+      Ideas: run 3's and run 4's `RETRO.md` read against the
+             retrospective skill's form, for a shape (ADR-0054).
       Trigger: run 3's reading closes; in a new session.
       See: `f097695`, the kickoff and the message it took.
 
