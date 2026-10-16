@@ -20,14 +20,13 @@ and checks.
 1. **Cut a branch** from main, and ask the reviewer whether small
    commits are free on it.
 2. **Open a PLAN step,** its gate written before any work. Its own
-   items come from the goal: every decision has a
-   row; every applied row names its commits; the run's proof
-   unchanged (where the project has tests: green, as many as at the
-   last close); history untouched; the records later steps were
-   built on changed only by dated revision entries; every link
-   resolves; no living line says "now" about something since
-   changed; each delivered copy edited has its log entry and its
-   hand-off line; what trying taught is written back.
+   items come from the goal: every decision has a row; every
+   applied row names its commits; the run's proof unchanged (where
+   the project has tests: green, as many as at the last close);
+   history untouched; the records later steps were built on changed
+   only by dated revision entries; each delivered copy edited has
+   its log entry and its hand-off line; what trying taught is
+   written back.
 
 ## 1. Triage
 
