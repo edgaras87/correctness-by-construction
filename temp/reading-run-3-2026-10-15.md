@@ -375,6 +375,18 @@ deliverer*. Release opens after it.
   "written while running the next birth". Worked right after W3. It
   may add a line to the step form, for a step with no skill; W7
   then keeps only the reviewer's file. *Added 2026-10-16.*
+  *Settled 2026-10-16: a convention of its own, with a skill shipped
+  in the container and one of ours, and a step-form line for a step
+  with no skill. The provisional manual sits, in a run, at
+  `.claude/<name>/manual.md`, and becomes the lasting form there at
+  the close; here, where manuals live, marked on trial. Its cases:
+  born in a run, read and fitted to the bundle by us; born here, its
+  first run use its trial; born here and used only here, our next
+  use its trial; not new, an edit to a copy (`delivered-copies.md`
+  rule 2); only one project's, kept there (rule 3); a lasting form
+  other than a skill, or none; the way failing, a devlog dead end.
+  It also answers `agent-arrangement` §3.1's open question, how a
+  project's own skill comes to be. Gates W11.*
 
 ## 6. The work
 
@@ -488,6 +500,10 @@ deliverer*. Release opens after it.
   rebase or squash it: run 4 started from `35edd3f`, which lives only
   here. Main takes it by fast-forward, unless that check says
   otherwise. *Added 2026-10-15.*
+- **W11** — The `first-time-work` convention, as D8 settled: its ADR,
+  manual, shipped skill, our own skill, the step form's line.
+  **plan**
+  *Added 2026-10-16.*
 
 ## 7. What this reading taught
 
