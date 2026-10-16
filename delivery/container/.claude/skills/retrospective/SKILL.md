@@ -1,6 +1,6 @@
 ---
 name: retrospective
-description: Walk a finished run part by part and decide what the next run does differently. Use when the run's last step before Release has closed, or when the reviewer asks for a retrospective, a look back, or "what would we do differently". Do NOT use to fix this run's records; that is apply-retrospective, after this.
+description: Walk a finished run part by part and decide what the next run does differently. Use when the run has finished building, before Release, or when the reviewer asks for a retrospective, a look back, or "what would we do differently". Do NOT use to fix this run's records; that is apply-retrospective, after this.
 requires: commit-messages
 foundation: the retrospective convention
 ---

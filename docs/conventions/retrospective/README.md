@@ -31,7 +31,7 @@ Run 3 kept both as skills, and offered them. Taken on 2026-10-15
 
 - **`delivery/container/.claude/skills/retrospective/SKILL.md` —
   the skill, shipped**, held at `.claude/skills/retrospective/` and
-  opened when the run's last step before Release has closed.
+  opened when the run has finished building, before Release.
 - **`delivery/container/.claude/skills/apply-retrospective/SKILL.md`
   — the skill, shipped**, held at `.claude/skills/apply-retrospective/`
   and opened when `RETRO.md` is closed, before Release.
@@ -155,8 +155,8 @@ from the note.
 ## Why it arrives this way
 
 Two skills, because each step is bound to a moment the agent would
-otherwise have to notice: the last step before Release closing, and
-the note closing. A plan step opens each, and names the skill.
+otherwise have to notice: the run finishing its building, and the
+note closing. A plan step opens each, and names the skill.
 
 A section in the plan did not work: its moment was the project's
 end, which a run that stops early never reaches, and a section can

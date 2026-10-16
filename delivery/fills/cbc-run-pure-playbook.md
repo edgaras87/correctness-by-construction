@@ -145,7 +145,7 @@ Now:
 Gate:
 Notes:
 
-## Steps 5..N-1: Invariant slices  (cbc-slice, one step per slice)
+## Steps 5..N-3: Invariant slices  (cbc-slice, one step per slice)
 
 Goal: each registry slice closed by evidence that creates its
 adversity; ordering re-decided at each close, never assumed from
@@ -153,6 +153,28 @@ the original expectation.
 Now:
 Gate:
 Notes:
+
+## Step N-2: Retrospective  (retrospective)    [ ]
+
+Goal: every lesson the next run should act on is a decision in
+RETRO.md, with an example from this run and the place it lands;
+this run's hand-off lists point to those decisions; and what only
+the next run can check is listed, each with the step that judges it.
+Now:
+Gate:
+Notes: opens when the slice steps close, before Release, so it runs
+even if Release is skipped. What the reviewer decides is the
+skill's.
+
+## Step N-1: Apply the retrospective  (apply-retrospective)    [ ]
+
+Goal: this run hands over what its retrospective showed could be
+better, where that changes how its records read and not what it
+proved; RETRO.md says what happened to each decision.
+Now:
+Gate:
+Notes: opens when RETRO.md closes. What the reviewer decides is the
+skill's.
 
 ## Step N: Release                                  [ ]
 
