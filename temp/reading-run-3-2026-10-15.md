@@ -421,6 +421,12 @@ deliverer*. Release opens after it.
   `docs/conventions/conventions/` §3.5 and §3.6 fire, and retells
   neither. Not in `CLAUDE.md`: it fails that file's first two tests.
   No hook yet: a miss under the rule is that trigger.*
+  *Built 2026-10-17 by W12. On the reviewer's questions: the rule
+  looks at the staged paths first, lists every disagreement before
+  deciding any, and walks a changed foundation again until nothing
+  new is found; a walk greps for a description's name as well as its
+  path. Its first commits found conventions §3.5 and §3.6 wrong on
+  "the same commit", now "the same commit, or the next".*
 
 ## 6. The work
 
@@ -510,6 +516,9 @@ deliverer*. Release opens after it.
   F23).
   *Since W3: the three checks kept on our side (the facility, the
   absence rung, the evidence-test measurement) name run 5.*
+  *Since W12: conventions §4 opens "As the last four were added" and
+  names four; writing, retrospective and first-time-work came the
+  same way since. Fixed in this pass.*
 - **W7** — `CLAUDE.local.md` from the reviewer's hand (F12): where it
   lands here, if anywhere. *RETRO D25 is D8's since 2026-10-16.*
   *Since W11, the file's "New kinds of work" can point at the
@@ -544,6 +553,9 @@ deliverer*. Release opens after it.
   work (`ee18132` to `99690d2`).*
 - **W12** — The foundation-check rule, as D10 settles, and
   `working-a-reading.md` step 4 pointing at it. *Added 2026-10-16.*
+  *Done 2026-10-17: by the commit plan for the foundation rule
+  (`e744bd2` to `71df140`), and conventions §4 naming first-time
+  work as a source of conventions (`74cbaa0`).*
 - **W13** — Our PLAN, as D9 settles. **plan** *Added 2026-10-16.*
 
 ## 7. What this reading taught
