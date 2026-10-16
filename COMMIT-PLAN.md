@@ -63,7 +63,12 @@ commit plan, the plan and the branch's log show progress.
 **5. `docs: the playbook gains the two retro steps`**
 Steps N-2 and N-1, the slices renumbered 5..N-3. Goals from run 3's
 drafts, with run 3's name taken out. The retrospective opens when
-the slice steps close. Notes point at the manual for who decides.
+the slice steps close. Notes point at the skill for who decides.
+Four places said the retrospective opens when "the last step before
+Release" closes, now the apply step: the retrospective manual
+twice, the skill's description, and the container's records table.
+All four say "when the run has finished building, before Release",
+in this commit, since this commit makes them wrong.
 
 **6. `docs: Release keeps its own lessons`**
 A Known already item for Release's lessons in RETRO.md, in the
