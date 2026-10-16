@@ -58,8 +58,9 @@ after.
   its place under `.claude/`, and the manual goes. The why goes into
   the run's decisions log.
 - **What the close makes is the run's own.** If it is general, the
-  run offers it under *To the deliverer*. If it is only this
-  project's, it stays.
+  run offers it under *To the deliverer*, as first-time work, a new
+  convention to consider, with the commits that hold its manual's
+  history. If it is only this project's, it stays.
 - **The deliverer judges it after,** at a reading. It reads what
   was written, how it fits the bundle, and what must be cleaned of
   the run before it ships: names, tags, paths, the run's domain.

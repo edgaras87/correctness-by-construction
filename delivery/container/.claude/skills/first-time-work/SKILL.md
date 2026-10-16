@@ -50,7 +50,9 @@ Ask both before anything else:
 
 ## 3. Close
 
-1. **Propose the lasting form,** with the reason. The reviewer
+1. **Look back first:** read the manual's history, one commit per
+   lesson, against what the work did.
+2. **Propose the lasting form,** with the reason. The reviewer
    chooses:
    - a skill, for a procedure bound to a moment:
      `.claude/skills/<name>/SKILL.md`;
@@ -61,14 +63,17 @@ Ask both before anything else:
    - a section of a record, for a fact, not a procedure;
    - nothing, when nothing in it is worth keeping: the work will
      not come again, or what it taught already lives elsewhere.
-2. **Look back first:** read the manual's history, one commit per
-   lesson, against what the work did. Then write the lasting form
-   from both, plainly. What the work never did does not go in.
-3. **Delete the manual** and its folder. History keeps it.
-4. **One decisions-log entry:** what was made, why that form, and
+3. **Write it from both,** the manual's history and the work,
+   plainly. What the work never did does not go in.
+4. **Delete the manual** and its folder. History keeps it.
+5. **One decisions-log entry:** what was made, why that form, and
    the ways rejected at the opening.
-5. **If it is general,** one line under TODO's *To the deliverer*
-   offers it, naming its path.
+6. **If it is general,** one line under TODO's *To the deliverer*
+   offers it as first-time work, a new convention to consider. It
+   names the path and the commits that hold the manual's history,
+   so the deliverer reads how it grew. Example: "first-time work,
+   offered as a new convention: `.claude/skills/retro/`, its
+   manual's history at `a1b2c3d`..`e4f5a6b`".
 
 ## When the way fails
 
