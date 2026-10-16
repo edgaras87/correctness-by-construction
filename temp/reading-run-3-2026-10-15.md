@@ -402,6 +402,51 @@ deliverer*. Release opens after it.
   first-time work" part and our decisions entry change with it.
   Amends ADR-0041, so an ADR. Raised by the reviewer from W3's step
   form. Gates W13. *Added 2026-10-16.*
+  *Settled 2026-10-17, in seven decisions:*
+  - *1, a step is the one piece of work being done now: a reading,
+    or a TODO item big enough for a branch. One at a time, its gate
+    written when it opens. A change set inside it stays in
+    `COMMIT-PLAN.md`; a small item needs no step.*
+  - *2, the run's step form, taken almost whole as `## The step
+    form` at the top of our PLAN: Goal, a Now line by stage, the
+    gate written at opening, Notes; the opening items, the branch
+    "if it has one"; the step's own items; Known already. Dropped:
+    For run 5 only, the shapes item, decision before code, and the
+    one-line closed gate, since a step leaves the plan and the
+    devlog names it with the ticked gate's commit. Kept from
+    ADR-0041 as every step's closing items: lessons folded back,
+    and `CLAUDE.md` re-read.*
+  - *3, a reading is one step. Its Known already: every finding
+    ended, every work item ended and marked, the note in the run,
+    the lessons placed, the reading deleted. Its F, D and W stay in
+    the reading. Its Notes name the stages: read (`exchange-read`),
+    decide and work (`working-a-reading.md`), note
+    (`exchange-deliver`), close (that rule's step 9). An extension
+    returns Now to read; the branch is cut right after the read. A
+    delivery is a reading step's note stage, an own item of the step
+    whose change it sends, or, alone, a TODO item. The two reading
+    rules stay apart, each on its own foundation. Run 3's reading
+    finishes as it began; run 4's is the first step.*
+  - *4, Step 10 and Release leave PLAN. The birth joins TODO's
+    `exchange-birth`, trigger run 5's birth; our retrospective
+    becomes a TODO item, trigger the birth step's close; Release
+    goes to Later with its four own items.*
+  - *5, our `first-time-work` opens at three moments, each with
+    nothing to say how: a step's opening item, a work item inside a
+    step, a small TODO item come due.*
+  - *6, PLAN holds the open step, and TODO never repeats it. TODO's
+    Now: small items due while it runs. Next: the next step's
+    candidates, and items not yet due. A TODO item that becomes a
+    step leaves TODO. Until run 3's reading closes, PLAN says no
+    step is open.*
+  - *7, ADR-0057, amending ADR-0041's decisions 1 and 2 and
+    ADR-0056's decision 6. The texts made true: PLAN, TODO; the
+    deliverer seats of project-recording, retrospective,
+    agent-arrangement, shapes and first-time-work; conventions
+    §3.3; README's Plan row; `ARCHITECTURE.md`'s codemap;
+    `CLAUDE.md`'s records row; our `first-time-work` skill;
+    `working-a-reading.md` step 9; `exchange-read` step 4, whose
+    "shape" is the rule `exchange-reading.md`.*
 - **D10** — A rule for this repo: when a skill, rule or shape is
   edited, the manual or chapter its `foundation` names is opened in
   the same commit, the two texts shown side by side, and the
