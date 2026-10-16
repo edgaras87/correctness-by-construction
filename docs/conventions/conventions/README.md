@@ -28,6 +28,10 @@ Nothing shipped of its own; what a repo holds is:
   — a run's, and this convention's artifact there (§2);
 - **`.claude/rules/convention-manual.md` — the form of a manual,
   the deliverer's**, loading whenever a manual is opened;
+- **`.claude/rules/foundation-check.md` — §3.5 and §3.6 at the
+  commit, the deliverer's**, loaded in every session and acting
+  before a commit is staged that touches a description or what
+  derives from it;
 - **the index, `docs/conventions/README.md`** — a pointer: the
   chain, relations only (ADR-0032), and one line sending a
   reader here and to `ARCHITECTURE.md` §1.2.
@@ -224,7 +228,9 @@ is stated:
 2. Each derived thing names its description — in a shipped file,
    the `foundation` line.
 3. A change to the description walks the list in the same commit,
-   and greps for the description's path to find what points at it.
+   or in the next when one side is an agent file and the other is
+   not (`docs/conventions/commit-messages/`), and greps for the
+   description's path to find what points at it.
 4. A change forced in a derived thing is checked back against the
    description.
 5. A disagreement is raised and decided (§3.6); if the description
@@ -236,7 +242,9 @@ skill and rule carries `foundation`, `docs/conventions/exchange/` and
 token. The rest ran twice by hand before this was a rule — the
 correspondence check of 2026-09-25, and the walk of
 `docs/master.md` at the exchange plan's close — both because the
-reviewer asked, not because anything made anyone look. Where a
+reviewer asked, not because anything made anyone look. Since
+2026-10-17, `.claude/rules/foundation-check.md` makes this repo
+look before every such commit. Where a
 manual and the concept are handled differently — versioning,
 shipping, the kind of derivative, the seats, what each asserts — is
 ADR-0039; the concept's edges are ADR-0003, the CHANGELOG's
@@ -246,13 +254,14 @@ standing comment and `ARCHITECTURE.md` §1.1.
 
 A derived thing, a pointer or practice saying other than its
 description. It is raised where it is found — a finding in a
-reading, an edit a run made to its copy, a question at a boundary
-— and decided, never defaulted: neither side is right for being
-the description, nor for being newer. Practice is the evidence.
+reading, an edit a run made to its copy, a question at a boundary,
+the foundation check at a commit — and decided, never defaulted:
+neither side is right for being the description, nor for being
+newer. Practice is the evidence.
 When the description changes, the walk in §3.5 runs again; when the
-derived thing changes, it follows in the same commit. The decision
-is recorded where the repo records decisions: a commit body, or an
-ADR when options were weighed.
+derived thing changes, it follows in the same commit, or in the next
+under §3.5's step 3. The decision is recorded where the repo records
+decisions: a commit body, or an ADR when options were weighed.
 
 **A finding is declined only for not being general** — this run's
 alone, an exception, or not worth the change. It is never declined
@@ -315,7 +324,11 @@ moment a manual's form matters is while it is written, and nothing
 else would put the list in front of the writer then. The
 `foundation` line rides in the frontmatter of every shipped skill
 and rule, read by whoever opens the file, because a claim about
-what a file stands on has to travel with the file.
+what a file stands on has to travel with the file. The check is a
+rule loaded in every session, because its moment is every commit
+that touches either side, and a rule with `paths:` loads only when a
+file is opened with the Read tool: an edit made by script never
+opens it.
 
 ## What this does not cover
 
