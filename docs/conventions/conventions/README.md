@@ -290,6 +290,12 @@ not know which.*
 
 ## 4. Adding a convention
 
+A new convention can come from first-time work
+(`docs/conventions/first-time-work/`). Ours writes its manual here
+from the start, marked *on trial*, and its close runs the rest of
+these steps. A run's is offered under its *To the deliverer*, and a
+reading takes it by these steps.
+
 As the last four were added — `visual-comparison`, the exchange,
 shapes, and this one — and not as the index once said:
 
