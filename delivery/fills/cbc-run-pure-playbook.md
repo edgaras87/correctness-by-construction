@@ -67,7 +67,9 @@ sets the order of work, and its stages are not copied into the
 gate. An item is ticked when it comes true, whenever that is.
 Items the playbook already knows a step needs, whatever its goal,
 are listed under the step's Known already, and join its own items
-when the gate is written.
+when the gate is written. A list under *For run 5 only* joins them
+the same way: questions only run 5 can answer, from run 3's
+`RETRO.md`, D22. Run 5's reading removes or keeps each.
 
 **At the close.**
 
@@ -124,6 +126,13 @@ Notes:
 Goal: know what we're building and why, before code.
 Now:
 Gate:
+For run 5 only:
+- a line in Notes says where `cbc-framing`'s wording, edited from
+  run 3's evidence and never run before, did not hold, or that it
+  held (run 3's RETRO D28);
+- a line in Notes says what the kill shape found at its first
+  reading, or "nothing" (run 3's RETRO D29).
+
 Notes:
 
 ## Step 2: Identity (name, description, remote)     [ ]
@@ -143,6 +152,11 @@ Notes:
 Goal: services stood up, constrained to need, verified both ways.
 Now:
 Gate:
+For run 5 only:
+- a line in Notes says where `infra-establish`'s wording, edited
+  from run 3's evidence and never run before, did not hold, or that
+  it held (run 3's RETRO D28).
+
 Notes:
 
 ## Step 4: Skeleton & bootstrap  (cbc-bootstrap)    [ ]
@@ -151,6 +165,11 @@ Goal: an empty but buildable, testable, runnable system wired to the
 real ground, with the evidence harness proven on one adversity.
 Now:
 Gate:
+For run 5 only:
+- a line in Notes says where `cbc-bootstrap`'s wording, edited from
+  run 3's evidence and never run before, did not hold, or that it
+  held (run 3's RETRO D28).
+
 Notes:
 
 ## Steps 5..N-3: Invariant slices  (cbc-slice, one step per slice)
@@ -160,6 +179,19 @@ adversity; ordering re-decided at each close, never assumed from
 the original expectation.
 Now:
 Gate:
+For run 5 only, at the first slice:
+- a line in Notes says where `cbc-slice`'s wording, edited from run
+  3's evidence and never run before, did not hold, or that it held
+  (run 3's RETRO D28);
+- the guarantee claims are read once more, and a line says whether
+  they read as specifications (run 3's RETRO D14);
+- a line in Notes says what the registry-entry shape found at its
+  first reading, or "nothing" (run 3's RETRO D29).
+
+For run 5 only, at the second slice:
+- a line in Notes says whether reading shapes only at the gate cost
+  rework or taught something (run 3's RETRO D18).
+
 Notes:
 
 ## Step N-2: Retrospective  (retrospective)    [ ]
@@ -170,6 +202,11 @@ this run's hand-off lists point to those decisions; and what only
 the next run can check is listed, each with the step that judges it.
 Now:
 Gate:
+For run 5 only:
+- a line in Notes says where the `retrospective` skill, taken from
+  run 3 and never run outside it, did not hold, or that it held
+  (run 3's RETRO D23, D28).
+
 Notes: opens when the slice steps close, before Release, so it runs
 even if Release is skipped. What the reviewer decides is the
 skill's.
@@ -181,6 +218,11 @@ better, where that changes how its records read and not what it
 proved; RETRO.md says what happened to each decision.
 Now:
 Gate:
+For run 5 only:
+- a line in Notes says where the `apply-retrospective` skill, taken
+  from run 3 and never run outside it, did not hold, or that it held
+  (run 3's RETRO D24, D28).
+
 Notes: opens when RETRO.md closes. What the reviewer decides is the
 skill's.
 
@@ -201,5 +243,10 @@ Known already:
 Checked here, each unless this run's own recorded exclusion:
 - monitoring and alerts in place;
 - deploy and rollback documented and tried once.
+
+For run 5 only:
+- a line in Notes says whether this step's form held: the Known
+  already list, the lessons item, the checks against recorded
+  exclusions (run 3's RETRO D20).
 
 Notes: opens when the apply step closes.
