@@ -109,14 +109,14 @@ done
 git add .claude/skills
 git commit -m "chore: seed — method and stack skills, pin @ $bundle_pin"
 
-sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## Step/,$p' \
+sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## The step form/,$p' \
     "$bundle_dir"/delivery/fills/cbc-run-pure-playbook.md; echo) \
     -e '/<!-- STEPS-BEGIN/,/<!-- STEPS-END/{/STEPS-BEGIN/b;/STEPS-END/b;d}' \
     PLAN.md
-sed -i "s|<playbook> v<N> at <concept commit>|cbc-run-pure v7 at $bundle_pin|" \
+sed -i "s|<playbook> v<N> at <concept commit>|cbc-run-pure v8 at $bundle_pin|" \
     PLAN.md
 git add PLAN.md
-git commit -m "chore: seed — steps into PLAN, cbc-run-pure v7 @ $bundle_pin"
+git commit -m "chore: seed — steps into PLAN, cbc-run-pure v8 @ $bundle_pin"
 ```
 
 One pin in every subject, ours: the container arrives inside the
@@ -220,9 +220,9 @@ item is a verifiable fact:
 - Every bundle copy byte-identical to its master at the subject's
   pin: the concept chapters, the five skills.
 - PLAN's STEPS region holds the pure playbook's sequence —
-  identical to cbc-run-pure-playbook.md from its first step down
+  identical to cbc-run-pure-playbook.md from the step form down
   at the subject's pin — both markers in place, and the "Steps
-  from:" comment names cbc-run-pure v7 at the bundle pin. No
+  from:" comment names cbc-run-pure v8 at the bundle pin. No
   playbook file exists, and no line of the region states an
   assembly conclusion.
 - The five birth placeholders are filled and no more: the birth
