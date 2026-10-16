@@ -33,11 +33,11 @@ seats.*
 
 - **`delivery/container/.claude/skills/first-time-work/SKILL.md` —
   the skill, shipped**, held at `.claude/skills/first-time-work/`
-  and opened when work starts that no skill covers and neither seat
-  has done.
-- **The step form's line, shipped** with the playbook,
-  `delivery/fills/cbc-run-pure-playbook.md`: a step with no skill,
-  doing such work, opens with the skill.
+  and opened when a step or a piece of work opens and no skill, and
+  no earlier step or run, says how to do it.
+- **The step form's opening item, shipped** with the playbook,
+  `delivery/fills/cbc-run-pure-playbook.md`: every step asks whether
+  its way is known, and a step whose way is not opens the skill.
 - **`.claude/skills/first-time-work/SKILL.md` — the deliverer's**,
   derived from this page, opened at the same moment here.
 
@@ -120,7 +120,7 @@ The manual, and what happened, become one lasting form:
 | A shape | the form of one kind of output | run 3's kill shape |
 | A step | a moment in every run of a playbook | the retrospective step |
 | A section of a record | a fact, not a procedure | |
-| Nothing | the work will not come again | |
+| Nothing | nothing in it is worth keeping: the work will not come again, or what it taught lives elsewhere | |
 
 The reviewer chooses. The manual stops being provisional: in a run,
 it goes; here, its *on trial* mark is rewritten from what was seen.
@@ -136,14 +136,18 @@ an on-trial mark, so the draft needs neither.*
 
 ## Why it arrives this way
 
-A skill, because the way is a procedure bound to two moments the
-agent would otherwise have to notice: work starting that no skill
-covers, and that work's close. A skill fires on its description.
+A skill, because the way is a procedure bound to two moments: work
+opening with nothing to say how to do it, and that work's close. The
+first moment is asked, not left to be noticed: in a run, every
+step's opening items ask whether its way is known. A description
+matched to phrases would miss how the reviewer speaks, and fire when
+something else is meant. *Changed 2026-10-16, before the skill
+shipped, on the reviewer's word.*
 
 A rule loaded in every session would pay for rare work every time.
 A manual alone reaches a maintainer, not the agent at the moment.
-The step form's line is there because, in a run, a step is where
-such work most often starts.
+The step form's item is there because, in a run, a step is where
+such work starts.
 
 ## What this does not cover
 

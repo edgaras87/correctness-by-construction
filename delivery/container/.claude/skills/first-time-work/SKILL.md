@@ -1,6 +1,6 @@
 ---
 name: first-time-work
-description: Start and keep work that no skill covers and that neither the agent nor the reviewer has done before, from a provisional manual the work corrects, to a lasting form at its close. Use when a step or task has no skill and is new to both of you, when the reviewer says "we have never done this", or when a plan step names no skill. Do NOT use for work a skill covers, even a skill with a gap (edit that copy instead), or for writing the lasting form of work already done.
+description: Start work that nothing yet says how to do, from a provisional manual the work corrects, and end it in a lasting form or none. Use when a step or a piece of work opens and no skill, and no earlier step or run, says how to do it; a PLAN step's opening items ask this. Do NOT use for work a skill covers, even a skill with a gap (edit that copy instead). A new skill for such work is written at this skill's close, never first.
 requires: commit-messages
 foundation: the first-time-work convention
 ---
@@ -59,7 +59,8 @@ Ask both before anything else:
    - a shape, for the form of one kind of output:
      `.claude/shapes/<name>.md`;
    - a section of a record, for a fact, not a procedure;
-   - nothing, when the work will not come again.
+   - nothing, when nothing in it is worth keeping: the work will
+     not come again, or what it taught already lives elsewhere.
 2. **Look back first:** read the manual's history, one commit per
    lesson, against what the work did. Then write the lasting form
    from both, plainly. What the work never did does not go in.
