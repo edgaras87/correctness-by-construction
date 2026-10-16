@@ -97,6 +97,12 @@ ADR-0055 Accepted, its decision 5 corrected first: 11 gate items,
 not 10. TODO: the middle-steps item ends; the item to fold run 3's
 arrangement pieces into the playbook ends (F17).
 
+**9b. `docs: the step form labels its lists written ahead`**
+Inserted after 9, from the look back's read of the whole playbook.
+The form's own-items paragraph runs 13 lines over six things; its
+last two, Known already and For run 5 only, become a paragraph of
+their own under a label, as the writing rule asks. Same words.
+
 **10. `docs(agent): close commit plan for the playbook`**
 Deletes this file; the body says what diverged.
 
