@@ -56,6 +56,9 @@ cannot be cut afterwards.
 - [ ] The step's branch `<branch>` is cut from main, and the step
       has not been worked anywhere else.
 - [ ] This gate was written before the work started.
+- [ ] The step's way is known: the skill it runs, or the stages its
+      Notes list from earlier runs. If neither, the step opened a
+      provisional manual (`first-time-work`).
 
 **The step's own items.** Ask of the goal: "how would I check that's
 true?" Each answer is one item: a fact, checkable by looking, what
