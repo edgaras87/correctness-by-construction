@@ -64,19 +64,6 @@
       Trigger: before the next birth.
       See: devlog 2026-10-08.
 
-- [ ] Tell the next birth the middle-steps line at its Step 2
-      opening (2026-09-10; reopened 2026-09-29).
-      Context: gates are derived at opening, so a run hears this
-      only when told, in none of this repo's words. The line:
-      "One item for Step 2's gate, or its notes, as you judge: now
-      that the problem is framed, confirm the middle steps of the
-      plan against it — read the plan end to end once and say
-      whether each step still stands as named, and where the
-      framing changed a step's shape. A step that no longer fits
-      is reworded there, not silently kept."
-      Trigger: the next birth's Step 2 opening.
-      See: devlog 2026-09-11.
-
 - [ ] Make the conventions index a full local map (2026-09-30, the
       reviewer).
       Context: its chain shows only the conventions that act in
@@ -107,30 +94,6 @@
              run's files that are not at its pin.
       Trigger: the next delivery that ships a path new to the run.
       See: devlog 2026-09-30, the delivery to run 3.
-
-- [ ] Fold run 3's three arrangement pieces into the run playbook,
-      each that its retrospective says held (2026-09-23): the step
-      form — each step copies a fixed set of gate items when it
-      opens; one branch per step; gate items ticked the moment they
-      come true, instead of at the step's close.
-      Context: the step form ran Steps 7 and 8, the branch rule every
-      step, the ticking since Step 6. Run 3 holds all three on trial
-      until its retrospective and asks us to fold back what held.
-      Two lines worth taking whatever we decide: "a step's gate item
-      carries that step's own tick, so one checkbox cannot serve six
-      steps", and "a gate derived at the close is a description of
-      what happened rather than a standard the work was held to".
-      Ideas: a step form as PLAN's shape (the reviewer, 2026-09-29).
-             the branch item closes on the reviewer's word to merge,
-             the agent says the fast-forward waits, and the rule says
-             what a merged branch becomes.
-             one branch per step stays the run's: this repo's branch
-             test is commit plans.
-             "a gate that reads all-unticked through a step is not
-             telling the truth about where the step is".
-             the standing rules' dated form, worth copying anyway.
-      Trigger: run 3's retrospective.
-      See: devlog 2026-09-27, afternoon; and 2026-10-10.
 
 - [ ] Read the frozen CLAUDE template's stance bullets against a
       full run's derived entry file (2026-09-06, the user).

@@ -1,7 +1,8 @@
 # 0055. The playbook takes run 3's retrospective
 
 Date: 2026-10-16
-Status: Proposed (under the commit plan for the playbook)
+Status: Accepted (2026-10-16, at the set's records commit; opened
+Proposed under the commit plan for the playbook)
 
 ## Context
 
@@ -81,15 +82,14 @@ lessons.
    Retrospective and Apply the retrospective, each opening its
    skill. The first opens when the slice steps close. Each has a
    goal and the form's gate, and no items written ahead.
-3. **Release keeps its Known already list,** the one step that does.
-   It gains Release's own lessons in `RETRO.md`, and opens after the
-   apply step.
+3. **Release keeps its Known already list.** It gains Release's own
+   lessons in `RETRO.md`, and opens after the apply step.
 4. **Every step's close gains three checks.** The records hold
    together: links, paths, cited numbers, and each pair of copies.
    No living line says "now" about what the step changed. New text
    reads to the writing rule. A run may write its own script for the
    first.
-5. **Five of D22's checks wait at their steps,** as 10 gate items,
+5. **Five of D22's checks wait at their steps,** as 11 gate items,
    each with its reason and source. Run 5's reading removes or keeps
    each. Three checks stay with us, never told to the run: the
    store's facility, the absence rung, and the evidence-test
