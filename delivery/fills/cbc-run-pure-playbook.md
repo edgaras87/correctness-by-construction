@@ -22,16 +22,29 @@ retrospective taken, ADR-0055)
 ## Step <n>: <title>  (<the skill it runs, if any>)    [ ]
 
 Goal: <one sentence: what is true when this step is done>
-Now: <where the step stands, one line, changed when the step
- enters a new stage of its skill, or, for a step with no skill, a
- stage its Notes list>
+Now: <where the step stands, one line>
 Gate:
 <the opening items below, filled in>
 <this step's own items, asked of the goal>
 <the closing items below, filled in>
-Notes: <opened <date>; what the reviewer signs and when; what the
- step takes from the steps before it>
+Notes: <opened <date>; its stages, if it runs no skill; what the
+ reviewer signs and when; what the step takes from the steps before
+ it>
 ```
+
+**The Now line names the stage the step is in, and changes when
+the step enters a new one, not at every commit.** A step that runs
+a skill uses the skill's stages. A step with no skill splits its
+work into a few stages when it opens, and lists them in its Notes.
+Two examples:
+
+- the order service's first slice, which runs `cbc-slice`: "Now:
+  Stage 2, the plan. Specification signed 2026-11-01."
+- Step 2, which runs no skill, its Notes listing name, description
+  and remote: "Now: the description. Name chosen 2026-11-03."
+
+Inside a commit plan, the plan and the branch's log show where the
+work is.
 
 **The gate is written when the step opens, before any of its
 work.** A gate written at the close describes what happened. It
