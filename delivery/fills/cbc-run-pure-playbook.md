@@ -182,9 +182,16 @@ Goal: the system handed to its audience — the promise shipped,
 observable, and reversible wherever it deploys.
 Now:
 Gate:
-Known already: a CHANGELOG entry for the release; README true for
-a stranger, its commands verified on a clean machine; known
-issues filed in TODO.md. Checked here: monitoring and alerts in
-place; deploy and rollback documented and tried once — each unless
-this run's own recorded exclusion.
-Notes:
+Known already:
+- a CHANGELOG entry for the release;
+- README true for a stranger, its commands verified on a clean
+  machine;
+- known issues filed in TODO.md;
+- Release's own lessons added to RETRO.md, as decisions in the
+  `retrospective` skill's form.
+
+Checked here, each unless this run's own recorded exclusion:
+- monitoring and alerts in place;
+- deploy and rollback documented and tried once.
+
+Notes: opens when the apply step closes.
