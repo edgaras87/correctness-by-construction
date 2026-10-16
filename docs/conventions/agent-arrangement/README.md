@@ -50,10 +50,11 @@ Shipped in `delivery/container/`: the deliverer writes it and the
 run receives it. Its entry file says that `docs/concept/` and
 everything under `.claude/` are delivered copies, pinned, and that
 until the framing artifacts exist the only method work is running
-`cbc-framing` jointly with the human. It holds five convention
-skills, the retrospective's two among them, and four rules: `shapes-lifecycle.md`,
-`delivered-copies.md`, the exchange's half for this side, and
-`writing.md` and `one-home.md`, loaded in every session. The work
+`cbc-framing` jointly with the human. It holds six convention
+skills, the retrospective's two and `first-time-work` among them,
+and four rules: `shapes-lifecycle.md`, `delivered-copies.md`, the
+exchange's half for this side, and `writing.md` and `one-home.md`,
+loaded in every session. The work
 it arranges is building a real system, keeping its records and
 taking deliveries; it changes the arrangement through its own
 decisions log.
@@ -247,10 +248,11 @@ run, a delivered copy, verbatim (the update is
 `docs/conventions/exchange/`'s); at the deliverer, its own
 derivation from the manual (ADR-0042). This convention owns the
 place. A project may add a skill of its own, for a moment-bound
-local rule the entry file must not hold (§2) — permitted, and not
-yet defined: what such a skill is, whether it registers, how it
-survives the agent/project split are open until a project has
-written one.
+local rule the entry file must not hold (§2). How one comes to be
+is `docs/conventions/first-time-work/`'s: from a provisional manual,
+at the close of the work that needed it, with an entry in the
+project's decisions log. *Defined 2026-10-16: run 3 wrote two this
+way (ADR-0056).*
 
 ### 3.2 `rules/`
 

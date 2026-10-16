@@ -72,7 +72,7 @@
       across the manuals' *What this does not cover*, and seen
       together nowhere. The local-map rule now exists
       (project-recording §8.6, ADR-0045).
-      Ideas: all eleven and how each touches the others, derived from
+      Ideas: all twelve and how each touches the others, derived from
              those pointers, built by `visual-comparison`.
       Trigger: due — the pair it waited on was made on 2026-09-30.
       See: devlog 2026-09-30, local maps.

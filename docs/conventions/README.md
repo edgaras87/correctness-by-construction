@@ -17,12 +17,15 @@ nothing here restates one (ADR-0032).
 flowchart TB
     idea["an idea, or a request"]
     vc["visual-comparison"]
+    ftw["first-time-work"]
     cp["commit-plan"]
     cm["commit-messages"]
     dom["the domain skills<br/>cbc-framing · infra-establish<br/>infra-serve · cbc-bootstrap · cbc-slice"]
 
     idea --> vc
+    idea --> ftw
     idea --> cp
+    ftw -- "its work" --> cp
     vc --> cp
     dom -- "the sequence" --> cp
     cp --> cm
@@ -39,6 +42,9 @@ only `commit-plan`. A question about a diagram's shape reaches
   enough to look at. A choice that is not about showing something
   has no convention of its own: it is worked inside a commit plan,
   `docs/conventions/commit-plan/`.
+- **`first-time-work`** fires when work starts that no skill
+  covers and neither seat has done. Its provisional manual sets the
+  order of the work, and the work is planned like any other.
 - **`commit-plan`** fires when the work needs more than one commit.
   It plans the commits, not the change.
 - **`commit-messages`** fires when you are writing any commit, in a
