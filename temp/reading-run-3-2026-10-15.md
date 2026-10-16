@@ -387,6 +387,31 @@ deliverer*. Release opens after it.
   other than a skill, or none; the way failing, a devlog dead end.
   It also answers `agent-arrangement` §3.1's open question, how a
   project's own skill comes to be. Gates W11.*
+  *Built 2026-10-16 by W11 (ADR-0056). On the reviewer's word: the
+  skill fires at a fixed moment, a step opening with nothing to say
+  how, not on phrases; a run marks its offer as first-time work,
+  and we take it by conventions §4 with no skill of ours.*
+- **D9** — Our PLAN reconsidered (ADR-0041): does it hold the step
+  being worked, readings included, in the run's step form, with its
+  opening and closing items and a Now line? The reading file keeps
+  its items, and the step holds the gate and links to it.
+  Milestones nobody is working on, Step 10's open items and
+  Release, stay or move to TODO's Later with their triggers. If
+  steps come, our `first-time-work` skill's moment becomes a step's
+  opening item, as in a run: its description, the manual's "our own
+  first-time work" part and our decisions entry change with it.
+  Amends ADR-0041, so an ADR. Raised by the reviewer from W3's step
+  form. Gates W13. *Added 2026-10-16.*
+- **D10** — A rule for this repo: when a skill, rule or shape is
+  edited, the manual or chapter its `foundation` names is opened in
+  the same commit, the two texts shown side by side, and the
+  mismatch ended one of four ways: the edit is wrong, the manual is
+  wrong, both change, or they agree. Its foundation is the
+  conventions convention, whose "a change … is checked back against
+  this page" it makes fire at the edit. `working-a-reading.md` step
+  4 keeps its trigger and points at the rule, so the check has one
+  home. Raised by the reviewer when W11's look back found the manual
+  a commit behind its skills. Gates W12. *Added 2026-10-16.*
 
 ## 6. The work
 
@@ -478,6 +503,8 @@ deliverer*. Release opens after it.
   absence rung, the evidence-test measurement) name run 5.*
 - **W7** — `CLAUDE.local.md` from the reviewer's hand (F12): where it
   lands here, if anywhere. *RETRO D25 is D8's since 2026-10-16.*
+  *Since W11, the file's "New kinds of work" can point at the
+  `first-time-work` skill instead of telling the way.*
   *Since ADR-0053 the writing rule loads here: whatever lands from
   the reviewer's file points at it, not repeats it (run 3's RETRO
   D2).*
@@ -504,6 +531,11 @@ deliverer*. Release opens after it.
   manual, shipped skill, our own skill, the step form's line.
   **plan**
   *Added 2026-10-16.*
+  *Done 2026-10-16: ADR-0056, by the commit plan for first-time
+  work (`ee18132` to `99690d2`).*
+- **W12** — The foundation-check rule, as D10 settles, and
+  `working-a-reading.md` step 4 pointing at it. *Added 2026-10-16.*
+- **W13** — Our PLAN, as D9 settles. **plan** *Added 2026-10-16.*
 
 ## 7. What this reading taught
 
