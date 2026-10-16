@@ -15,7 +15,7 @@ Between the slices and Release sit two new steps, Retrospective and
 Apply the retrospective, which open the ADR-0054 skills. Release
 keeps its own lessons in RETRO.md and opens after the apply step.
 Step 2 reads the plan against the framing. Five checks only run 5
-can answer wait at the steps that judge them, as 10 gate items, each
+can answer wait at the steps that judge them, as 11 gate items, each
 to be removed or kept by run 5's reading.
 
 The seed copies the playbook from the step form down.
@@ -83,21 +83,25 @@ says the list holds items a step needs whatever its goal, and joins
 its own items when the gate is written.
 
 **8. `docs: run 5's checks wait at their steps`**
-Five checks from RETRO D22, as 10 gate items: RETRO D28's at six
-steps, and D14, D18, D20's Release and D29 at one each. Each has
-its reason, its source, and a line that run 5's reading removes or
-keeps it. After 5 and 6, since three of the items sit at those
-steps.
+Five checks from RETRO D22, as 11 gate items: RETRO D28's at six
+steps, D29's at two, and D14, D18 and D20's Release at one each.
+D29's splits by shape: the kill shape is first read at Step 1,
+where kills are written, and the registry-entry shape at the first
+slice. Each step lists its items under "For run 5 only:", each
+naming its source. One sentence in the form says what such a list
+is, and that run 5's reading removes or keeps each item. After 5
+and 6, since three of the items sit at those steps.
 
 **9. `docs: records carry the playbook`**
-ADR-0055 Accepted. TODO: the middle-steps item ends; the item to
-fold run 3's arrangement pieces into the playbook ends (F17).
+ADR-0055 Accepted, its decision 5 corrected first: 11 gate items,
+not 10. TODO: the middle-steps item ends; the item to fold run 3's
+arrangement pieces into the playbook ends (F17).
 
 **10. `docs(agent): close commit plan for the playbook`**
 Deletes this file; the body says what diverged.
 
-After the close, the reading marks W3 done:
-`docs(temp): the reading closes W3`.
+After the close, the reading marks W3 done, with a line correcting
+decision 5's count: `docs(temp): the reading closes W3`.
 
 ## Decisions taken inside this plan
 
