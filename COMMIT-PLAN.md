@@ -78,6 +78,16 @@ skills (ADR-0053, ADR-0054), by `docs/conventions/conventions/` §4.
 ADR-0056 Accepted. TODO's `exchange-birth` item names it this
 skill's first trial on our seat.
 
+**6b. `docs: the manual gives our seat two jobs`**
+Inserted after 6, from the look back's read of the three files
+whole. The manual said our skill opens "at the same moment" as the
+run's, false since 3b and 5. Its deliverer seat splits in two, on
+the reviewer's word: our own first-time work, with our skill's true
+moment; and a run's first-time work offered to us, with no skill on
+purpose, taken by `docs/conventions/conventions/` §4 as ADR-0056
+names. How we judge a run's offer moves there from the run's seat.
+The §4 lesson gets a sentence that reads once.
+
 **7. `docs(agent): close commit plan for first-time work`**
 Deletes this file; the body says what diverged.
 
