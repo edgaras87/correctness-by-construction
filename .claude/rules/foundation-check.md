@@ -16,27 +16,36 @@ Which side is right, never how either reads.
 
 ## The check
 
-1. **A file with a `foundation` line changed** (a skill, a rule, a
-   shape): open what the line names beside the change. For a
-   convention, its manual, `docs/conventions/<name>/README.md`. For
-   `concept v1`, the chapters under `concept/`. Read the parts the
-   change touches.
-2. **A description changed** (a manual, a concept chapter,
-   `ARCHITECTURE.md`): walk what derives from it, its list and a
-   grep for its path (`docs/conventions/conventions/` §3.5, step 3).
-3. **Where the two disagree, show the reviewer both:** what the
-   foundation says, what the change says, and which side the agent
-   thinks is wrong, and why. The reviewer decides (§3.6).
-4. **The commit body names the ending,** one of four:
+1. **Look at the staged paths first.** Only these are checked:
+   - files with a `foundation` line: `.claude/skills/`,
+     `.claude/rules/`, and `.claude/` under `delivery/`;
+   - descriptions: `docs/conventions/*/README.md`, `concept/`,
+     `ARCHITECTURE.md`.
+
+   If none is staged, the check is done.
+2. **A file with a `foundation` line changed:** open what the line
+   names beside the change. For a convention, its manual,
+   `docs/conventions/<name>/README.md`. For `concept v1`, the
+   chapters under `concept/`. Read the parts the change touches.
+3. **A description changed:** walk what derives from it, as
+   `docs/conventions/conventions/` §3.5 step 3 says.
+4. **List every disagreement before deciding any.** For each, show
+   the reviewer what the foundation says, what the change says, and
+   which side the agent thinks is wrong, and why. The reviewer
+   decides each (§3.6).
+5. **The commit body names each ending,** one of four:
    - **the change is wrong:** it is brought back to the foundation;
-   - **the foundation is wrong:** it changes, and its walk runs
-     again;
+   - **the foundation is wrong:** it changes;
    - **both change;**
    - **they agree:** one line names the foundation read.
 
    A change on the other side goes in the same commit, or in the
    next when one side is an agent file and the other is not
    (`commit-messages`).
+6. **A foundation that changes is a description changed.** Step 3
+   runs on it again, and what it finds goes through steps 4 and 5.
+   The check ends when a walk finds nothing new. When the changes
+   need more than one commit, they are a commit plan.
 
 ## What this does not cover
 
