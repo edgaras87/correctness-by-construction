@@ -76,7 +76,11 @@ A Known already item for Release's lessons in RETRO.md, in the
 apply step. After 5, which makes the apply step exist.
 
 **7. `docs: Step 2 reads the plan against the framing`**
-The middle-steps line, as a Known already item at Step 2.
+The middle-steps line, as a Known already item at Step 2. With
+Release, two steps now carry a Known already list, and the form
+never says what one is: one sentence in its own-items paragraph
+says the list holds items a step needs whatever its goal, and joins
+its own items when the gate is written.
 
 **8. `docs: run 5's checks wait at their steps`**
 Five checks from RETRO D22, as 10 gate items: RETRO D28's at six
