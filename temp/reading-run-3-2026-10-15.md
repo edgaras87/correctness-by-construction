@@ -412,6 +412,15 @@ deliverer*. Release opens after it.
   4 keeps its trigger and points at the rule, so the check has one
   home. Raised by the reviewer when W11's look back found the manual
   a commit behind its skills. Gates W12. *Added 2026-10-16.*
+  *Settled 2026-10-16: `.claude/rules/foundation-check.md`, loaded
+  in every session, since a paths rule loads only when a file is
+  opened with the Read tool and edits made by script never open it;
+  the moment is staging a commit, which every edit reaches. Both
+  directions: a skill, rule, shape or chapter against its
+  foundation; a manual against what derives from it. It makes
+  `docs/conventions/conventions/` §3.5 and §3.6 fire, and retells
+  neither. Not in `CLAUDE.md`: it fails that file's first two tests.
+  No hook yet: a miss under the rule is that trigger.*
 
 ## 6. The work
 
