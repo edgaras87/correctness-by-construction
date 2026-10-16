@@ -42,9 +42,9 @@ there.
 
 4. **A work item is a commit or a commit plan**, with the reviewer
    at every boundary. An item taken into a master is checked against
-   what the master derives from — its manual, or its chapter — and
-   the file it lands in is read whole before the commit: a run's
-   edit shows one file, never what that file stands on.
+   its foundation (`.claude/rules/foundation-check.md`), and the
+   file it lands in is read whole before the commit: a run's edit
+   shows one file, never what that file stands on.
 
 5. **Every close is followed by one pass over every open item.**
    The item is marked the moment it closes, with its commit; then

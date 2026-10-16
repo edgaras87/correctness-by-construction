@@ -1051,3 +1051,22 @@
   and here a manual has a home already); a line in
   `working-a-reading.md` asking the question, held until this
   repo's PLAN is reconsidered, which may give it one home.
+
+- 2026-10-17 This repo loads `.claude/rules/foundation-check.md`,
+  with no `paths:`. Before a commit is staged that changes a file
+  with a `foundation` line, or a description, the other side is
+  read, and the commit body names the ending: the change wrong,
+  the foundation wrong, both, or they agree. It makes
+  `docs/conventions/conventions/` §3.5 and §3.6 fire.
+  `working-a-reading.md` step 4 points at it.
+  Why: both sections ran by hand only when the reviewer asked
+  (§3.5 records it twice). The reading of run 3 found two manuals
+  its taken edits contradicted only at the reviewer's question
+  (entry of 2026-10-08), and the check lived in the reading rule
+  alone, so other work never met it.
+  Rejected: a paths rule (it loads only when a file is opened with
+  the Read tool, and an edit made by script never opens it); a
+  `CLAUDE.md` line (it fails that file's first two tests,
+  `docs/conventions/agent-arrangement/` §2.4: it is a convention,
+  and it has a moment); a hook now (no miss under the rule yet; a
+  miss is its trigger).
