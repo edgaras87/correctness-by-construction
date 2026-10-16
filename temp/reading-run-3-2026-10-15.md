@@ -209,6 +209,10 @@ deliverer*. Release opens after it.
   reshaped form (D20); shapes read at the gate only judged (D18); the
   untried copies' first use (D28); the two new shapes' first reading
   (D29).
+  *Taken 2026-10-16 for run 5, by W3 (ADR-0055, decision 5): five
+  checks as 11 gate items under "For run 5 only" (`c617990`); the
+  trial rule in the step form (`0cdc50c`). The facility and the
+  absence rung stay ours, never told to the run.*
 - **F12** — `CLAUDE.local.md`, the reviewer's way of working, is not
   in the run's repo; the reviewer carries it to us by hand (D3). D25,
   that a new kind of work starts from a provisional manual and gets its
@@ -218,10 +222,16 @@ deliverer*. Release opens after it.
 - **F13** — Release reshaped at birth, to be folded into the playbook:
   held since 2026-09-23; still open, run 3's Release not yet run
   (D20).
+  *Taken 2026-10-16 by W3 (`5833e62`): most of the reshape was ours
+  already; Release gains its lessons item and opens after the apply
+  step. Run 5's Release judges it.*
 - **F14** — New ask: `cbc-framing` calls its parts "Step 0" to "Step
   4", and PLAN calls its parts steps, so "step 3" can mean either.
   Run 3's glossary keeps "step" for PLAN. ADR-0049 settled the same
   word for `commit-plan`.
+  *Sharper since W3: the step form's Now line names a skill's
+  stages, and `cbc-framing`'s are called steps, so framing's Now
+  would read "Now: Step 3" inside Step 1.*
 - **F15** — Held asks restated: `infra-establish` silent on the
   store's facility (F4's edit now writes part of it); the absence
   rung. RETRO D20 names run 4 as the run that can trigger both.
@@ -237,6 +247,8 @@ deliverer*. Release opens after it.
   the run playbook" has fired: its trigger, run 3's retrospective,
   closed on 2026-10-12. D4 judged all three kept, and adds to the step
   form: gate items asked of the goal, one fact each, and a "Now:" line.
+  *Closed 2026-10-16 by W3: the step form (`0cdc50c`, `b75f9b1`);
+  the TODO item ended (`1930aae`).*
 - **F18** — Our Later watch on provisional commits has fired: its
   trigger names "a retrospective". D19 judged the commit plan, and F5's
   edit is its answer.
@@ -282,9 +294,12 @@ deliverer*. Release opens after it.
   asked for by the skill that runs it (D18).
 - A trial with no judging close waits for the end; six did in run 3
   (D4).
+  *Taken 2026-10-16: the step form's trial rule (`0cdc50c`).*
 - The evidence starts the system in the form it ships (D26).
 - Mechanical drift is a script's job at every close; a whole-repo
   sweep means a close missed something (D17).
+  *Taken 2026-10-16 as a closing item of every step (`0cdc50c`);
+  the script is each run's own.*
 - For the worked example (`docs/conventions/exchange/` §6.3): it now
   carries the full-word tags. Its six kills carry no worked example
   with numbers, which D2 asks of every kill, and it still calls three
@@ -343,6 +358,7 @@ deliverer*. Release opens after it.
   container.*
 - **D6** — F14: a word for `cbc-framing`'s parts. Rests on D2 (F1's
   edits touch the same skill).
+  *Since W3, "stage" is the step form's word for a skill's parts.*
 - **D7** — Whether the note goes before the list closes. Run 3's
   Release waits on it; working-a-reading step 9 allows an early note
   that says which items are still open. Gates W1.
@@ -374,6 +390,8 @@ deliverer*. Release opens after it.
   apply steps, Release's items (F13), D22's gate items for run 4
   (F11). **plan**
   *The two skills exist since `fa7fd41`; the steps here open them.*
+  *Done 2026-10-16: playbook v8, ADR-0055, by the commit plan for
+  the playbook (`bf2d32e` to `de4a04c`).*
   *Its decisions, one at a time before the plan:*
   - *1, the step form, settled 2026-10-15: run 3's form, taken
     once as a section at the playbook's top, copied at birth inside
@@ -428,6 +446,10 @@ deliverer*. Release opens after it.
     delivered, and the commit that holds the ticked gate. Untried:
     run 5 is its first use. In the step form, commit 3 of the
     plan.*
+  - *Decision 5 corrected 2026-10-16: 11 gate items, not 10. RETRO
+    D29's check splits by shape: the kill shape is first read at
+    Step 1, where kills are written, the registry-entry shape at the
+    first slice.*
 - **W4** — The run's own files taken into the bundle, as D4 decides.
   **plan** *The shapes done 2026-10-15 (`7c0355d` to `18ed1e0`);
   F8's files open.*
@@ -440,6 +462,8 @@ deliverer*. Release opens after it.
   (`d6672ed` to `66e10d7`).*
 - **W6** — TODO brought true: the answered and fired items (F15 to
   F23).
+  *Since W3: the three checks kept on our side (the facility, the
+  absence rung, the evidence-test measurement) name run 5.*
 - **W7** — `CLAUDE.local.md` from the reviewer's hand (F12): where it
   lands here, if anywhere. *RETRO D25 is D8's since 2026-10-16.*
   *Since ADR-0053 the writing rule loads here: whatever lands from
