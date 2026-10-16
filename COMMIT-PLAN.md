@@ -42,13 +42,28 @@ container's skill; the container decisions stub's birth entry;
 convention owns the new file; `agent-arrangement` §3.1 pointing at
 it; the index's chain, since it hands to `commit-plan`.
 
-**4. `docs: the step form sends new work to its skill`**
-One line in the playbook's step form. Playbook stays v8: no run has
-been born from v8.
+**3b. `docs: first-time-work fires when a step opens`**
+Inserted after 3, on the reviewer's word. The skill's description
+matched phrases ("we have never done this"), which miss how the
+reviewer speaks and can fire when something else is meant. It now
+names a moment: a step or piece of work opens, and no skill or
+earlier run says how to do it. Dropping the manual at the close is
+widened from "the work will not come again" to "nothing in it is
+worth keeping". The skill and the manual both.
+
+**4. `docs: the step form asks for the step's way`**
+A third opening item in the playbook's step form: the step's way is
+known, by its skill or by stages from earlier runs, or the step
+opened a provisional manual. Asked at every step's opening, so the
+form fires the skill, not the reviewer's words. Playbook stays v8:
+no run has been born from v8.
 
 **5. `chore(agent): our own first-time-work skill`**
 Our derivation from the manual (ADR-0042), with its entry in
-`.claude/decisions.md`. Agent files only, apart from 3.
+`.claude/decisions.md`. Agent files only, apart from 3. This repo
+has no playbook steps, so its moment is a reading's W item, or a
+TODO item come due, opening with no skill or earlier work to say
+how.
 
 **6. `docs: records carry first-time work`**
 ADR-0056 Accepted. TODO's `exchange-birth` item names it this
