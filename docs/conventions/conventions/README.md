@@ -229,18 +229,21 @@ is stated:
    the `foundation` line.
 3. A change to the description walks the list in the same commit,
    or in the next when one side is an agent file and the other is
-   not (`docs/conventions/commit-messages/`), and greps for the
-   description's path to find what points at it.
+   not (`docs/conventions/commit-messages/`). It greps for the
+   description's path, to find what points at it, and for its name
+   in `foundation` lines, to find what stands on it: `the <name>
+   convention`, or `concept v1`.
 4. A change forced in a derived thing is checked back against the
    description.
 5. A disagreement is raised and decided (§3.6); if the description
    changes, the walk runs again.
 
-Steps 1, 2 and the grep in 3 are checkable today: every shipped
+Steps 1, 2 and the greps in 3 are checkable today: every shipped
 skill and rule carries `foundation`, `docs/conventions/exchange/` and
-`docs/conventions/shapes/` close with their lists, and a path is a
-token. The rest ran twice by hand before this was a rule — the
-correspondence check of 2026-09-25, and the walk of
+`docs/conventions/shapes/` close with their lists, and a path and
+a `foundation` value are tokens (§2). The rest ran twice by hand
+before this was a rule — the correspondence check of 2026-09-25,
+and the walk of
 `docs/master.md` at the exchange plan's close — both because the
 reviewer asked, not because anything made anyone look. Since
 2026-10-17, `.claude/rules/foundation-check.md` makes this repo
