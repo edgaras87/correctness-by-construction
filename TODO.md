@@ -47,6 +47,8 @@
       (Variant B, ADR-0018): nothing forces the newborn to read
       what it was given, and the first commit on main is the only
       evidence the reading took.
+      Ideas: first-time work on our seat, so a provisional manual,
+             `first-time-work`'s first trial here (ADR-0056).
       Trigger: the next birth — Step 10's open gate item.
       See: devlog 2026-09-26, evening; and 2026-09-30, night,
       later, where `pure-seed.md` was brought up to date for it.

@@ -1,7 +1,8 @@
 # 0056. First-time work starts from a provisional manual
 
 Date: 2026-10-16
-Status: Proposed (under the commit plan for first-time work)
+Status: Accepted (2026-10-16, at the set's records commit; opened
+Proposed under the commit plan for first-time work)
 
 ## Context
 
@@ -43,6 +44,14 @@ running the next birth (TODO).
   and is the delivery's staging place. Here, a manual has a home
   already, and the *on trial* mark (`docs/conventions/conventions/`)
   says what "provisional" needs to say.
+- **A skill description matched to phrases,** such as "we have
+  never done this", the first draft. Rejected on the reviewer's
+  word: it misses how the reviewer speaks, and fires when something
+  else is meant. A fixed moment, asked by the step form, does not.
+- **Taking a run's offer written into our reading tools,** or into
+  our own `first-time-work` skill. Rejected on the reviewer's word:
+  either ties two skills together, so a change to one is a change
+  to both. The run marks its offer instead.
 
 ## Decision
 
@@ -51,7 +60,7 @@ running the next birth (TODO).
 2. **The work starts from a provisional manual,** which the work
    corrects as it goes. At the close the manual becomes its lasting
    form: a skill, a rule, a shape, a step of the playbook, a section
-   of a record, or nothing.
+   of a record, or nothing, when nothing in it is worth keeping.
 3. **Where the provisional manual sits depends on the seat.** In a
    run: `.claude/<name>/manual.md`, beside where the lasting form
    will go; at the close it becomes that form, and the manual goes.
@@ -66,15 +75,24 @@ running the next birth (TODO).
    and fitted to the bundle by us; born here, its first use in a run
    its trial; born here and used only here, our next use its trial;
    a lasting form that is not a skill, or none; the way failing, a
-   dead end in the devlog.
+   dead end in the devlog. A run offers its first-time work marked
+   as such, a new convention to consider, with its manual's history.
+   A reading takes it by `docs/conventions/conventions/` §4, as
+   ADR-0053 and ADR-0054 did, and our reading tools do not change.
 6. **Each seat holds a skill,** `first-time-work`. A run's ships in
-   the container. Ours is our own derivation from the manual
-   (ADR-0042), since its manual goes elsewhere.
-7. **The playbook's step form sends a step with no skill,** doing
-   work neither seat has done, to the skill.
+   the container, and opens when a step or a piece of work opens
+   with no skill or earlier run to say how. Ours is our own
+   derivation from the manual (ADR-0042), since its manual goes
+   elsewhere, and opens when a reading's work item, or a TODO item
+   come due, opens with nothing to say how. Each manual change is a
+   commit of its own, and the close looks back at that history.
+7. **Every step's opening items ask whether its way is known:** its
+   skill, or stages its Notes list from earlier runs. If neither,
+   the step opens a provisional manual.
 8. **The trials name their closes.** Our seat: `exchange-birth`'s
-   close. The run's seat: run 5's first step with no skill; if it
-   has none, run 5's reading says so, and the trial carries on.
+   close. The run's seat: run 5's first step whose way is not
+   known; if it has none, run 5's reading says so, and the trial
+   carries on.
 
 ## Consequences
 
