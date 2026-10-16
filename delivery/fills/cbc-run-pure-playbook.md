@@ -65,11 +65,13 @@ goal "a retried order never makes a second order", one item is
 its answer". "The build stage done" is not an item. The named skill
 sets the order of work, and its stages are not copied into the
 gate. An item is ticked when it comes true, whenever that is.
-Items the playbook already knows a step needs, whatever its goal,
-are listed under the step's Known already, and join its own items
-when the gate is written. A list under *For run 5 only* joins them
-the same way: questions only run 5 can answer, from run 3's
-`RETRO.md`, D22. Run 5's reading removes or keeps each.
+
+**Lists written ahead.** Items the playbook already knows a step
+needs, whatever its goal, are listed under the step's Known already,
+and join its own items when the gate is written. A list under *For
+run 5 only* joins them the same way: questions only run 5 can
+answer, from run 3's `RETRO.md`, D22. Run 5's reading removes or
+keeps each.
 
 **At the close.**
 
