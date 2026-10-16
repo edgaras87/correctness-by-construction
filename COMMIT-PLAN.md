@@ -53,6 +53,13 @@ block, so the old copy command would start inside it.
 which commit 3 put in every step's close. Its own commit: another
 file, and reverting it alone leaves a repeat, not a break.
 
+**4b. `docs: the Now line moves at a stage, not a commit`**
+Inserted after 4. Commit 3 put the Now rule only inside the
+template's placeholder, which each step overwrites, and dropped its
+second half (RETRO D4, 2026-10-13). One sentence outside the
+template: Now changes at a new stage, not at every commit; inside a
+commit plan, the plan and the branch's log show progress.
+
 **5. `docs: the playbook gains the two retro steps`**
 Steps N-2 and N-1, the slices renumbered 5..N-3. Goals from run 3's
 drafts, with run 3's name taken out. The retrospective opens when
