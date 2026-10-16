@@ -39,7 +39,8 @@ seats.*
   `delivery/fills/cbc-run-pure-playbook.md`: every step asks whether
   its way is known, and a step whose way is not opens the skill.
 - **`.claude/skills/first-time-work/SKILL.md` — the deliverer's**,
-  derived from this page, opened at the same moment here.
+  derived from this page, opened when a reading's work item, or a
+  TODO item come due, opens with nothing to say how to do it.
 
 This page explains; the skills state. What derives from this page
 is that list. A change here walks it; a change forced in one of
@@ -61,25 +62,42 @@ after.
   run offers it under *To the deliverer*, as first-time work, a new
   convention to consider, with the commits that hold its manual's
   history. If it is only this project's, it stays.
-- **The deliverer judges it after,** at a reading. It reads what
-  was written, how it fits the bundle, and what must be cleaned of
-  the run before it ships: names, tags, paths, the run's domain.
-  Then it writes the manual here, and decides whether this repo
-  holds a copy too. That reading is the exchange's
-  (`docs/conventions/exchange/` §6.2). ADR-0053 and ADR-0054 are
-  worked examples.
+- **The deliverer judges it after,** at a reading: the deliverer's
+  seat, its second job.
 
 ### The deliverer's seat
+
+Two jobs, and only the first has a skill.
+
+**Our own first-time work.**
 
 - **The manual sits where manuals live:** `docs/conventions/<name>/`
   or a concept chapter, marked *on trial*
   (`docs/conventions/conventions/` §1). It is not drafted elsewhere
   first. The mark is what makes it provisional.
+- **Our skill opens** when a reading's work item, or a TODO item
+  come due, opens with nothing to say how to do it.
 - **What the close makes is written for this repo first,** then
   derived for the container if a run needs it.
 - **A run judges it after,** when one first uses it. That run's
   reading is the trial's close. Work only this repo does, such as a
   birth, has no run to judge it: our own next use is the trial.
+
+**A run's first-time work, offered to us.**
+
+- **No skill does this, on purpose.** A skill for it, or a step in
+  our reading tools, would tie them to this convention, so a change
+  to one would be a change to both (ADR-0056).
+- **The run's offer line says what it is:** first-time work, a new
+  convention to consider, with the commits that hold its manual's
+  history. A reading reads that line as it reads every ask
+  (`docs/conventions/exchange/` §6.2).
+- **Taking it is adding a convention,** by
+  `docs/conventions/conventions/` §4. We read what was written and
+  how it grew, how it fits the bundle, and what must be cleaned of
+  the run before it ships: names, tags, paths, the run's domain.
+  Then we write the manual here, and decide whether this repo holds
+  a copy too. ADR-0053 and ADR-0054 are worked examples.
 
 ## 1. Is it first-time work?
 
@@ -133,7 +151,7 @@ was tried stays in the history.
 
 *Lesson, 2026-10-16: the deliverer's one case drafted its manual in
 `temp/`, apart from where rules live. Here a manual has a home and
-an on-trial mark, so the draft needs neither.*
+an on-trial mark, so nothing is drafted apart from it.*
 
 ## Why it arrives this way
 
