@@ -65,6 +65,15 @@ has no playbook steps, so its moment is a reading's W item, or a
 TODO item come due, opening with no skill or earlier work to say
 how.
 
+**5b. `docs: a run marks its first-time work as offered`**
+Inserted after 5, on the reviewer's word. The container skill's
+offer line under *To the deliverer* named only a path. It now says
+the file is first-time work offered as a new convention, and names
+the commits holding the manual's history, so a reading sees what it
+is and how it grew. The exchange and our reading tools stay as they
+are: a reading takes it as it took run 3's rules and retrospective
+skills (ADR-0053, ADR-0054), by `docs/conventions/conventions/` §4.
+
 **6. `docs: records carry first-time work`**
 ADR-0056 Accepted. TODO's `exchange-birth` item names it this
 skill's first trial on our seat.
