@@ -1037,3 +1037,17 @@
   no `paths:`. Ours differ from the container's where the seat
   does: the writing rule covers what runs read, which we write, and
   both take their examples from this repo. ADR-0053.
+
+- 2026-10-16 This repo holds `first-time-work`, its own derivation
+  from the convention's manual (ADR-0056). Its provisional manual
+  sits where manuals live, marked on trial; its moment is a
+  reading's work item, or a TODO item come due, opening with
+  nothing to say how to do it.
+  Why: such work has opened here with nothing to hold it.
+  `working-a-reading.md` lived three readings as a draft in `temp/`
+  before it became a rule. The next case is `exchange-birth`, our
+  first trial.
+  Rejected: the container's copy (its manual goes under `.claude/`,
+  and here a manual has a home already); a line in
+  `working-a-reading.md` asking the question, held until this
+  repo's PLAN is reconsidered, which may give it one home.
