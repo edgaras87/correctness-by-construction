@@ -91,8 +91,34 @@
         manual; the check reads only what changes.
       - words: "run" as a verb for skills and steps, beside "run"
         the project; say "uses".
+      - words: "small steps" in `commit-plan` (ADR-0050), a third
+        "step" beside PLAN's and a numbered list's.
       Trigger: the reading of run 3 closes.
       See: devlog 2026-10-17, the refinement.
+
+- [ ] Write a rule that writes a skill or rule from its convention
+      (2026-10-17, the reviewer).
+      Context: conventions §2 says how a skill or rule is written,
+      and nothing puts it in front of the writer: a manual has
+      `convention-manual.md`, a skill or rule has no such rule.
+      First-time work writes freely, and its output is input: what
+      the work needed. The lasting form comes from the conventions
+      convention, the manual by §3 and each skill or rule from it
+      by §2.
+      Ideas:
+      - a rule derived from §2, as `convention-manual.md` is from
+        §3, on `.claude/skills/`, `.claude/rules/` and `delivery/`.
+      - a `paths:` rule loads only on a Read; the commit is the
+        other moment (`.claude/decisions.md`, 2026-10-17).
+      - first-time work's close hands its output to the rule, in
+        both seats.
+      - our draft moves out of `docs/conventions/` to be free;
+        ADR-0056 put it there, on trial.
+      - shipped or ours only: a run writes no conventions, so its
+        draft may stay free until a reading rewrites it.
+      Trigger: the next first-time work's close, here or offered by
+               a run.
+      See: devlog 2026-10-17, later, the skill rewrite.
 
 - [ ] Rewrite the method's texts plain (2026-10-17, run 3's RETRO
       D2).
