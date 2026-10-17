@@ -389,6 +389,15 @@ deliverer*. Release opens after it.
 - **D6** — F14: a word for `cbc-framing`'s parts. Rests on D2 (F1's
   edits touch the same skill).
   *Since W3, "stage" is the step form's word for a skill's parts.*
+  *Settled 2026-10-17, on the reviewer's word for every skill at
+  once: a skill's phases are stages, and "step" is PLAN's.
+  `cbc-framing`'s step 0 to step 6 become Stage 0 to Stage 6, and
+  `infra-establish`'s walk, after its Stage 0, Stage 1 to Stage 7;
+  every text that cites them follows, the worked examples alike.
+  `cbc-slice`, `cbc-bootstrap` and `infra-serve` say stage already.
+  A numbered instruction inside a stage keeps "step": `cbc-bootstrap`'s
+  step plan, the walkthroughs' sections, our skills' and rules'
+  numbered lists, since no Now line names one. W17.*
 - **D7** — Whether the note goes before the list closes. Run 3's
   Release waits on it; working-a-reading step 9 allows an early note
   that says which items are still open. Gates W1.
@@ -746,6 +755,9 @@ deliverer*. Release opens after it.
   *Done 2026-10-17: by the commit plan for group E (`ff29263` to
   the close), its commits `f2c489c`, `fbd1c5e`, `41d4fc3`,
   `6526be5`, `658d0bc`.*
+- **W17** — D6: a skill's phases called stages, `cbc-framing`'s and
+  `infra-establish`'s, and every text that cites them. **plan**
+  *Added 2026-10-17.*
 
 ## 7. What this reading taught
 
