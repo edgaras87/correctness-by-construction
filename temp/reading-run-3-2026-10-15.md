@@ -695,6 +695,34 @@ deliverer*. Release opens after it.
   (`141fa74`); whether a newborn reads its shapes at birth, a TODO
   item before run 5's birth (`8ec1381`); `cbc-framing` says
   "shape" for the registry file's layout, a word for group E.*
+- **W16** — Group E, text we would write: RETRO D8's briefing, D2's
+  glossary at framing and plain method texts, D6's layer tags.
+  **plan** *Added 2026-10-17.*
+  *Its decisions, one at a time before the plan:*
+  - *1, the briefing, settled 2026-10-17: committed unchanged when
+    framing opens, at `docs/system/framing/briefing.md`, and history
+    after. Anything private is removed first, and the file's first
+    line says what. `cbc-framing`'s opening and the playbook's Step 1
+    say so; the devlog stub's "Briefing:" line points at the file.
+    Run 4 did it so.*
+  - *2, the glossary, settled 2026-10-17: `cbc-framing` starts
+    `docs/glossary.md`, each coined word and tag kind in one plain
+    sentence, and the records table gains its row. Run 3 and run 4
+    each kept one.*
+  - *3, the layer tags, settled 2026-10-17 on the reviewer's word,
+    over the agent's hold: taken, the number before the name, the
+    names our chapter's: LAYER-1-ENVIRONMENT, LAYER-2-SYSTEM,
+    LAYER-3-AREAS, LAYER-4-PROBLEMS, LAYER-5-INTERACTION. Not run
+    3's: four of its names were what it found in a layer, and two,
+    kill and possession, are tags of their own. About 130 uses:
+    chapter 01, `cbc-framing`, both worked examples, `cbc-slice`,
+    `infra-establish`.*
+  - *4, plain method texts, settled 2026-10-17: now, what
+    contradicts what we ship. The worked example's "three costumes",
+    which the writing rule quotes as its before; a worked example
+    with numbers per kill, which the kill shape asks; both copies.
+    `cbc-framing`'s "shape" for the registry's layout. The rest,
+    about 35,000 words, a TODO item big enough for a step.*
 
 ## 7. What this reading taught
 
