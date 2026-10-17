@@ -64,31 +64,31 @@ playbook when the deliverer reads the run. Its
 
 The deliverer keeps the same records, derived from this page rather
 than from the stubs (ADR-0042), and differs in five things. It
-has no project end, so lessons fold back at each milestone's close
+has no project end, so lessons fold back at each step's close
 rather than at a retrospective, as its first devlog entry agreed on
 2026-08-27; whether a retrospective serves it too is on trial at
-Step 10's close (`docs/conventions/retrospective/`, its seats). It
-owns the playbook,
+the close of the birth step (`docs/conventions/retrospective/`, its
+seats). It owns the playbook,
 `delivery/fills/cbc-run-pure-playbook.md`, where a run holds only
 the steps filled into its plan (§9). Its `CHANGELOG.md` versions the
 concept, not a release (ADR-0003).
 
-And its `PLAN.md` holds milestones only: things that become true
-once and have a gate, like a birth or a release. Recurring work —
-reading runs, delivering, keeping the conventions — is not a step;
-TODO's Now holds it. A run's step names the skill that holds it, and
-its gate is derived from that skill when the step opens; the
-deliverer's milestones come from the situation, no skill holds them,
-and their gates are written when they are named. A reached milestone
-leaves the plan, and the devlog entry that closes it names the step.
-A run keeps its finished steps whole, because they are the evidence
-its playbook is folded from; no playbook is folded from the
+And its `PLAN.md` holds one step: the piece of work being done now.
+What makes work a step, and the step's form, the run's adapted to
+this seat, are under `## The step form` at the top of the
+deliverer's own `PLAN.md`. TODO's Now holds what is due while the
+step runs, never the step itself. A run's step takes its gate from
+the skill that holds it; the deliverer's is written from the form
+when the step opens. A finished step leaves the plan, and the devlog
+entry that closes it names the step and the commit of its ticked
+gate. A run keeps its finished steps whole, because they are the
+evidence its playbook is folded from; no playbook is folded from the
 deliverer's own plan, so its finished steps are only history, which
 is the devlog's. For the same reasons, folding lessons back and
-re-reading the entry file close each milestone's gate; its plan has
-no "Discovered along the
-way", since TODO takes a finding at once; and no decision index,
-since `docs/adr/` lists itself (§3.3's index is the run's).
+re-reading the entry file close every step's gate; its plan has no
+"Discovered along the way", since TODO takes a finding at once; and
+no decision index, since `docs/adr/` lists itself (§3.3's index is
+the run's).
 
 And its `ARCHITECTURE.md` maps documents and delivery rather than a
 built system: what is stated here, what ships, how it changes, the
@@ -103,6 +103,11 @@ believed less blindly — and runs past §8's two pages for them
 commits, two of them touching `PLAN.md`; one step written after its
 work was done; the decision index stale twice. The work had been led
 by TODO and the devlog's Resume all along (ADR-0041).*
+
+*Found 2026-10-17: milestones did not lead the work either. From
+2026-09-30, 364 commits, 3 touching `PLAN.md`, none a step being
+worked; the reading of run 3 kept its gate outside the plan. A step
+is now the work being done (ADR-0057).*
 
 ## 1. The model at a glance
 
