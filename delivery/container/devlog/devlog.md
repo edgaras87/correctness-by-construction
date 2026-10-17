@@ -12,9 +12,7 @@
 ## <YYYY-MM-DD>  (Step 0: bootstrap)
 
 - Project started. Repo initialized from its delivery.
-- Briefing: <the problem as brought, in its own words — the fuller
-  text than README's paragraph; names used here may change at
-  framing, and that is fine: this entry is the record of what it
-  was called on day one>
+- Briefing: <a link to docs/system/framing/briefing.md, once
+  framing commits it; names used before then are working names>
 - Open: <first open question>
 - Resume: <first concrete action>

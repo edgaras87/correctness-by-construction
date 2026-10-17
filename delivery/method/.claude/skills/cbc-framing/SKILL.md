@@ -97,6 +97,13 @@ polish passes.
 
 ## The record — the exports, and one derivation doc
 
+**The briefing comes first.** Framing opens by committing it,
+unchanged, at `docs/system/framing/briefing.md`: the problem as
+brought, in its own words. Anything private is removed before that
+commit, and the file's first line says what was removed. After it,
+the briefing is history, never edited. So a claim like "no
+divergence from the briefing" can be checked against it.
+
 **Each step's result is written once, straight into its export,**
 when the human gives the verdict: the intent at step 0, the
 definition's layer at steps 1 to 5, the registry at step 6. The

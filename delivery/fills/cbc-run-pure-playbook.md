@@ -124,9 +124,10 @@ Notes:
 ## Step 1: Framing  (cbc-framing)                   [ ]
 
 <!-- CbC: this step opens on the briefing — its starting input,
-     the first prompt of project work. The README purpose
-     paragraph and the devlog's briefing line land here; names
-     given before it are working names. -->
+     the first prompt of project work, committed unchanged at
+     docs/system/framing/briefing.md (cbc-framing). The README
+     purpose paragraph and the devlog's briefing line land here;
+     names given before it are working names. -->
 
 Goal: know what we're building and why, before code.
 Now:
