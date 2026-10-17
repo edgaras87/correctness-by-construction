@@ -15,9 +15,10 @@ and D16 (the reading's W14, decisions 1 to 4):
 - `.claude/decisions.md` opens on the rules in force now. An entry
   has three parts, not three lines.
 
-The two manuals say the same: project-recording §8, agent-arrangement
-§3.4. `cbc-slice`'s close names the table the template has. F2's and
-F3's holds end, and so does TODO's item on a decisions entry's length.
+Our own decisions log asks three parts too. The two manuals say the
+same: project-recording §8, agent-arrangement §3.4. `cbc-slice`'s
+close names the table the template has. F2's and F3's holds end, and
+so does TODO's item on a decisions entry's length.
 
 ## Commits
 
@@ -40,6 +41,13 @@ On its own, because it reverts apart from the table.
 **3. `docs: a devlog entry links what it would retell`**
 Decision 3. One line in the devlog stub's comment. The manual's §4.1
 agrees and stays.
+
+**3b. `docs(agent): our decisions log asks three parts`**
+Decision 4 for our own log: its header's "three lines" becomes three
+parts, as commit 4 says for a run's. TODO's item was about our header.
+Before commit 4, so the item ends with both headers true. An agent
+file, so a commit of its own (commit-messages). Our log's
+rules-in-force list stays for the refinement.
 
 **4. `docs: the decisions log lists the rules in force`**
 Decision 4. The stub opens on "Rules in force now" and "Replaced, and
