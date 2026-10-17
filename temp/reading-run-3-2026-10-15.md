@@ -90,6 +90,12 @@ deliverer*. Release opens after it.
   block per guarantee. Two hold on later items: the close points at
   the shapes rule (F7), and writes rows into ARCHITECTURE's table of
   rules, which our template keeps as a list (group D, RETRO D16).*
+  *The table's hold ended 2026-10-17 by W14 (`a69821c`): the
+  template keeps a table, and the skill names it the Invariants
+  table. The shapes hold is open: F7's plan never touched
+  `cbc-slice`, whose workflow still says a shape handed down is
+  "an answer a project did not earn", against ADR-0052's four
+  shapes shipped with the method. W15.*
 - **F3** — `cbc-bootstrap`, three edits, logged 2026-10-14 and
   untried: the requirements point to the record that decided each
   constraint and end as history at the close, ARCHITECTURE answering
@@ -100,6 +106,8 @@ deliverer*. Release opens after it.
   close says the project's records table sends "what may a slice rely
   on" to ARCHITECTURE, and our container's table does not yet (RETRO
   D10).*
+  *Ended 2026-10-17 by W14 (`44bcada`): the table's ARCHITECTURE
+  row asks it.*
 - **F4** — `infra-establish`, one edit, logged 2026-10-14 and
   untried: the ground proves the engine and what the store promises,
   each constraint seen refused and the facility a slice will need
@@ -202,6 +210,10 @@ deliverer*. Release opens after it.
   The concept chapters too, for D6's layer tags and D7's line on where
   a result lives, which the run itself calls preferences, not mistakes
   (D28).
+  *Group D taken 2026-10-17 by W14 (`a69821c` to `d1922c4`): the
+  ARCHITECTURE template and records table, the devlog and
+  decisions-log stubs. D1's rules-in-force list stays the
+  retrospective skill's.*
 - **F11** — D22: eight checks only run 4 can answer, each to be a gate
   item in the playbook's PLAN at the step that judges it: trials name
   their close (D4); claims read again for specification style (D14);
@@ -259,6 +271,8 @@ deliverer*. Release opens after it.
   three-line entries and adds a rules-in-force list on top; the run's
   own entries in this span run 5 to 25 lines. Evidence, not its
   trigger.
+  *Ended 2026-10-17 by W14 (`def6692`, `d1922c4`): three parts, no
+  line count, in our log, the stub and agent-arrangement §3.4.*
 - **F20** — Our Later item on whether `cbc-slice` says a red removes
   the backstop too: F2's `f49a71e` asks the red run to note each
   backstop seen or unproven. Near it, not the same.
@@ -321,9 +335,10 @@ deliverer*. Release opens after it.
   - *C, the playbook: D4, D17's closing checks, D20's Release, D22,
     D23's and D24's steps.*
   - *D, the container's templates: D1's recording, D10's records
-    table, D16's ARCHITECTURE template.*
+    table, D16's ARCHITECTURE template. Done 2026-10-17, W14.*
   - *E, text we would write: D2's glossary at framing and plain
-    method texts, D6's layer tags, D8's briefing.*
+    method texts, D6's layer tags, D8's briefing. The devlog stub's
+    birth entry holds a "Briefing:" line today (W14 met it).*
   - *F, the reviewer's hand: D3, D25.*
   - *Nothing for us: D14, the shape's own; D20's lists, the run's.*
 - **D2** — F1 to F7: take, decline or hold each copy edit. F1 to F4
@@ -575,6 +590,8 @@ deliverer*. Release opens after it.
   same way since. Fixed in this pass.*
   *Since W13: TODO's Now keeps only what is due, and the triggers
   that named Step 10 are rewritten (`ff13519`).*
+  *Since W14: the item on a decisions entry's length ended
+  (`d1922c4`); a new item, the records map (`0a75d2d`).*
 - **W7** — `CLAUDE.local.md` from the reviewer's hand (F12): where it
   lands here, if anywhere. *RETRO D25 is D8's since 2026-10-16.*
   *Since W11, the file's "New kinds of work" can point at the
@@ -597,6 +614,8 @@ deliverer*. Release opens after it.
   *Since W13: TODO's refinement item takes W8 when this reading
   closes, the same checks for all our rules; W8 then ends as held,
   moved there (devlog 2026-10-17).*
+  *Since W14: TODO's records map, both seats in project-recording
+  §1 (`0a75d2d`), is where one of the five tellings could land.*
 - **W9** — At the reading's close, delete the two run 4 drafts in
   `temp/`, the kickoff and the message (`f097695`), with a devlog
   line. *Added 2026-10-15.*
@@ -652,6 +671,22 @@ deliverer*. Release opens after it.
     list now says what holds. agent-arrangement §3.4 says the
     same; TODO's item on an entry's length ends. Our own log's
     list goes to the refinement item, with W8.*
+  - *Decision 4 corrected 2026-10-17, by the foundation walk at
+    commit 4 and the reviewer's question: no list in the stub.
+    The retrospective skill's step 3 writes it at the
+    retrospective, and run 3 and run 4 each wrote theirs there,
+    neither from birth. The stub and §3.4 ask three parts only;
+    our own log gets no list.*
+  *Done 2026-10-17: by the commit plan for the templates
+  (`d95ee97` to the close), its commits `a69821c`, `44bcada`,
+  `1e3d403`, `def6692`, `d1922c4`.*
+- **W15** — `cbc-slice`'s shapes text brought true to ADR-0052:
+  the workflow's "Why the shapes are the project's own" says a
+  shape handed down is an answer not earned, and four now ship
+  with the method. Found 2026-10-17 at W14's pass (F2). A commit;
+  the skill stands on concept v1, and is read against the shapes
+  convention and ADR-0052.
+  *Added 2026-10-17.*
 
 ## 7. What this reading taught
 
@@ -663,6 +698,13 @@ deliverer*. Release opens after it.
   was read whole.
 - The run's next step waits on our note: the read-through is now on
   the run's path.
+- A RETRO decision's "Lands in" names a place, not how the run
+  lived it. D1 sent its rules-in-force list to the kit's recording
+  convention, yet run 3 and run 4 each wrote theirs at the
+  retrospective. Settled
+  as written, it was caught only by the foundation walk at the
+  commit (W14, decision 4). Check what the runs did before taking
+  where a decision lands.
 
 ## 8. Notes
 
