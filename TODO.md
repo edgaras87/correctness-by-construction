@@ -23,49 +23,6 @@
 
 ## Now (current plan step)
 
-- [ ] Read run 4 against `dac4dd1`, the run 3 commit it was born
-      from (2026-10-15, the reviewer).
-      Context: run 4, safe-reservation-2, was born 2026-10-15 by
-      hand from run 3's skills, rules and shapes at `dac4dd1` and
-      our container at `35edd3f`, and ran on full auto through
-      Release. Reading it shows what it changed on top of
-      `dac4dd1`, what of run 3's asks it answered, what still has
-      to be checked, and what is new. It left twelve lines under
-      To the deliverer.
-      Ideas: run 3's and run 4's `RETRO.md` read against the
-             retrospective skill's form, for a shape (ADR-0054).
-      Trigger: run 3's reading closes; in a new session.
-      See: `f097695`, the kickoff and the message it took.
-
-- [ ] Write `exchange-birth` while running the next birth
-      (2026-09-26, the reviewer).
-      Context: written from the exchange's manual, as
-      `exchange-read` and `exchange-deliver` were, keeping the
-      seed's intent — it delivers everything and decides nothing.
-      Then deliver §5 points at it, `pure-seed.md` goes, and
-      ADR-0016's procedure of record moves. One risk to carry in
-      (Variant B, ADR-0018): nothing forces the newborn to read
-      what it was given, and the first commit on main is the only
-      evidence the reading took.
-      Ideas: first-time work on our seat, so a provisional manual,
-             `first-time-work`'s first trial here (ADR-0056).
-      Trigger: the next birth — Step 10's open gate item.
-      See: devlog 2026-09-26, evening; and 2026-09-30, night,
-      later, where `pure-seed.md` was brought up to date for it.
-
-- [ ] Ship `temp/` in the container, or stop telling runs to use
-      it (2026-09-23).
-      Context: `visual-comparison` and `delivered-copies` send a
-      newborn to `temp/`, and `exchange-deliver` stages into it; the
-      container ships none.
-      The exchange manual calls a run's `temp/` untracked, and since
-      2026-10-08 a take removes only its staging, because run 3
-      keeps its own drafts there; ours is tracked. No shipped text
-      says what the folder is for. Ours, `temp/README.md`, is the
-      seed.
-      Trigger: before the next birth.
-      See: devlog 2026-10-08.
-
 - [ ] Make the conventions index a full local map (2026-09-30, the
       reviewer).
       Context: its chain shows only the conventions that act in
@@ -80,6 +37,20 @@
       See: devlog 2026-09-30, local maps.
 
 ## Next (upcoming steps — assign each to a step when triaged)
+
+- [ ] Read run 4 against `dac4dd1`, the run 3 commit it was born
+      from (2026-10-15, the reviewer).
+      Context: run 4, safe-reservation-2, was born 2026-10-15 by
+      hand from run 3's skills, rules and shapes at `dac4dd1` and
+      our container at `35edd3f`, and ran on full auto through
+      Release. Reading it shows what it changed on top of
+      `dac4dd1`, what of run 3's asks it answered, what still has
+      to be checked, and what is new. It left twelve lines under
+      To the deliverer.
+      Ideas: run 3's and run 4's `RETRO.md` read against the
+             retrospective skill's form, for a shape (ADR-0054).
+      Trigger: run 3's reading closes; in a new session.
+      See: `f097695`, the kickoff and the message it took.
 
 - [ ] Decide whether our own forms become shapes, and whether a
       shape's part can be optional (2026-10-17, the reviewer).
@@ -122,6 +93,45 @@
         the project; say "uses".
       Trigger: the reading of run 3 closes.
       See: devlog 2026-10-17, the refinement.
+
+- [ ] Birth run 5 from this repo alone, holding one pin, and write
+      `exchange-birth` while it runs (2026-09-26, the reviewer; the
+      birth itself from Step 10, ADR-0057).
+      Context: written from the exchange's manual, as
+      `exchange-read` and `exchange-deliver` were, keeping the
+      seed's intent — it delivers everything and decides nothing.
+      Then deliver §5 points at it, `pure-seed.md` goes, and
+      ADR-0016's procedure of record moves. One risk to carry in
+      (Variant B, ADR-0018): nothing forces the newborn to read
+      what it was given, and the first commit on main is the only
+      evidence the reading took.
+      Ideas: first-time work on our seat, so a provisional manual,
+             `first-time-work`'s first trial here (ADR-0056).
+      Trigger: the reviewer names run 5's birth; it opens as a step.
+      See: devlog 2026-09-26, evening; and 2026-09-30, night,
+      later, where `pure-seed.md` was brought up to date for it.
+
+- [ ] Run this repo's retrospective, on trial (2026-10-17, from
+      Step 10's gate).
+      Context: `docs/conventions/retrospective/`, the deliverer's
+      seat, says what it is: both skills run on this repo, from
+      `delivery/container/`, and a verdict on whether we hold them.
+      Step 10's gate held it until ADR-0057.
+      Trigger: the close of the step that runs run 5's birth.
+      See: ADR-0057, decision 4.
+
+- [ ] Ship `temp/` in the container, or stop telling runs to use
+      it (2026-09-23).
+      Context: `visual-comparison` and `delivered-copies` send a
+      newborn to `temp/`, and `exchange-deliver` stages into it; the
+      container ships none.
+      The exchange manual calls a run's `temp/` untracked, and since
+      2026-10-08 a take removes only its staging, because run 3
+      keeps its own drafts there; ours is tracked. No shipped text
+      says what the folder is for. Ours, `temp/README.md`, is the
+      seed.
+      Trigger: before the next birth.
+      See: devlog 2026-10-08.
 
 - [ ] Decide whether a delivery checks its paths against the run's
       own files (2026-09-30, the reading of run 3).
@@ -185,6 +195,17 @@
       See: devlog 2026-09-12, later.
 
 ## Later / someday
+
+- [ ] Release concept v1 (2026-10-17, from PLAN's Step N).
+      Context: so a stranger, or future-you, can read, cite and copy
+      from this repo without the archive. Four items of its own:
+      a CHANGELOG entry for the release; README true for a
+      stranger; `docs/models/` checked against the repo, since
+      `CLAUDE.md` sends a stranger there; known issues filed here.
+      PLAN held it until ADR-0057.
+      Trigger: the reviewer names it, after the step that runs run
+               5's birth closes.
+      See: ADR-0057, decision 4.
 
 - [ ] Decide whether a TODO item's story is written when the item
       is added (2026-10-17, the reviewer).
@@ -251,7 +272,7 @@
       the skills, never in the chapters a reader starts from, and
       the wall's own check joins them. Whether a list beside the
       chapters, or a chapter's, is open.
-      Trigger: Release's README gate, where a stranger first needs
+      Trigger: Release's README item, where a stranger first needs
       the words.
 
 - [ ] Number the concept chapters' sections (2026-09-30).
