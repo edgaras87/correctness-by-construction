@@ -2,7 +2,8 @@
 
 Date: 2026-10-16
 Status: Accepted (2026-10-16, at the set's records commit; opened
-Proposed under the commit plan for first-time work)
+Proposed under the commit plan for first-time work). Decision 6
+amended 2026-10-17 by ADR-0057: ours opens at a step too.
 
 ## Context
 
@@ -86,6 +87,9 @@ running the next birth (TODO).
    elsewhere, and opens when a reading's work item, or a TODO item
    come due, opens with nothing to say how. Each manual change is a
    commit of its own, and the close looks back at that history.
+   *Amended 2026-10-17 by ADR-0057: ours opens when a step, a work
+   item inside one, or a small TODO item comes due with nothing to
+   say how; a step's opening items ask it, as a run's do.*
 7. **Every step's opening items ask whether its way is known:** its
    skill, or stages its Notes list from earlier runs. If neither,
    the step opens a provisional manual.

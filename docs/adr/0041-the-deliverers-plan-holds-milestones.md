@@ -5,7 +5,8 @@ Status: Accepted (2026-09-29, at the set's records commit; opened
 Proposed under the commit plan for the PLAN pass, and amended at
 two boundaries on the reviewer's readings — decision 6 gained its
 reason, a run's gates come from the skill holding the step, and
-decision 7, the default playbook goes)
+decision 7, the default playbook goes). Decisions 1 and 2 amended
+2026-10-17 by ADR-0057: the plan holds the step being worked.
 
 ## Context
 
@@ -55,8 +56,11 @@ once and stays true — a birth, a release, a concept version.
 
 1. **The deliverer's `PLAN.md` holds milestones only** — things
    that become true once and have a gate.
+   *Amended 2026-10-17 by ADR-0057: it holds the one step being
+   worked, a reading or a TODO item big enough for a branch.*
 2. **Recurring work is not a step.** TODO's Now holds what is next;
    the devlog tells what happened.
+   *Amended 2026-10-17 by ADR-0057: a reading is a step.*
 3. **A reached milestone leaves the plan.** The devlog entry that
    closes it names the step, so a pointer to it still resolves.
 4. **Each milestone closes with the retrospective's two jobs** as

@@ -1,7 +1,11 @@
 # 0057. Our plan holds the step being worked
 
 Date: 2026-10-17
-Status: Proposed (under the commit plan for plan steps)
+Status: Accepted (2026-10-17, at the set's records commit; opened
+Proposed under the commit plan for plan steps, and revised at two
+boundaries on the reviewer's questions — a step takes the gates of
+the skills and rules it uses, so a reading's live in its rule, and
+its own items are written first, the gates checked after)
 
 ## Context
 
@@ -108,12 +112,15 @@ line by stage, opening and closing items.
 
 - `PLAN.md` holds its step form and the open step, or a line saying
   none is open.
-- project-recording's deliverer seat says steps, not milestones.
-  The retrospective's trial moves to the birth step's close.
-- The reasons that rested on the deliverer having no steps or
-  gates, in shapes' deliverer seat and conventions §3.3, are
-  rewritten: a reading's form must hold while it is worked, and a
-  manual is edited outside any step. Both stay rules.
+- project-recording's deliverer seat says steps, not milestones,
+  and points at the step form. The retrospective's trial moves to
+  the close of the step that runs the next birth.
+- `.claude/rules/working-a-reading.md` holds a reading's gates and
+  stages, for its step. Our `first-time-work` opens at a step too.
+- The reason that rested on the deliverer having no steps or gates,
+  in shapes' deliverer seat and conventions §3.3, is gone. Both say
+  our forms are rules today, and whether they become shapes is open
+  (TODO).
 - `exchange-read` step 4 names `.claude/rules/exchange-reading.md`
   where it said "the shape".
 - Reopen if steps go stale as milestones did: an open step nobody
