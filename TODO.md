@@ -94,6 +94,24 @@
       Trigger: the reading of run 3 closes.
       See: devlog 2026-10-17, the refinement.
 
+- [ ] Rebuild project-recording §1 as a map of the records, in both
+      seats (2026-10-17, the reviewer).
+      Context: no one view says which record answers what. §1 draws
+      a run's records only, and leaves out RETRO.md, COMMIT-PLAN,
+      `docs/system/`, the one-home rule, and records another
+      convention owns, such as the decisions log (agent-arrangement
+      §3.4). The deliverer's differences are prose under its seat.
+      W14 of the reading of run 3 met this three times.
+      Ideas:
+      - a section of the manual, §1 rebuilt; a file beside it was
+        weighed against conventions §3.1.
+      - the form chosen by `visual-comparison`: a picture, a table,
+        or both.
+      - per record: the question it answers, the convention that
+        owns it, and how each seat differs.
+      Trigger: the refinement item opens; built with it.
+      See: devlog 2026-10-17, later, the records map.
+
 - [ ] Birth run 5 from this repo alone, holding one pin, and write
       `exchange-birth` while it runs (2026-09-26, the reviewer; the
       birth itself from Step 10, ADR-0057).
