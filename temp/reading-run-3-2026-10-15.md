@@ -618,6 +618,40 @@ deliverer*. Release opens after it.
 - **W13** — Our PLAN, as D9 settles. **plan** *Added 2026-10-16.*
   *Done 2026-10-17: ADR-0057, by the commit plan for plan steps
   (`04a49ed` to `1abee8d`).*
+- **W14** — Group D, the container's templates: RETRO D16's
+  ARCHITECTURE, D10's records table, D1's devlog and decisions log.
+  Ends F2's and F3's holds, and TODO's item on a decisions entry's
+  length. **plan** *Added 2026-10-17.*
+  *Its decisions, one at a time before the plan:*
+  - *1, ARCHITECTURE's invariants, settled 2026-10-17: a table,
+    one row per rule, each linking its slice. Columns as run 3's:
+    Rule, Computed by, Refused by, Guarded by, Proved by. The
+    header comment says by rule, not by slice: a slice's close
+    adds or changes rows, never a paragraph, and how it got there
+    is its record's. The example row from the order service.
+    cbc-slice's close names "the Invariants table". §8.4 gains a
+    line and a dated lesson from run 3.*
+  - *2, the records table, settled 2026-10-17: ARCHITECTURE's row
+    opens on "the system's structure changed, or asking what a
+    slice may rely on", and holds the system as it stands: its
+    components, what a slice may rely on, one row per rule. Each
+    component in the template gains "A slice may rely on:", which
+    cbc-bootstrap's close writes. README's row stays: it speaks
+    to the outside.*
+  - *3, the devlog, settled 2026-10-17: the stub's comment gains
+    one line: an entry is what happened, the dead ends, where to
+    resume; test output and a gate's facts are linked in their own
+    records, not copied. The one-home rule cannot ask it, since it
+    counts the devlog as history. §4.1 agrees already and stays.*
+  - *4, the decisions log, settled 2026-10-17: the stub opens on
+    "Rules in force now", each line the rule, where its text
+    lives, the entry that set it, then "Replaced, and by what", in
+    run 3's form. An entry has three parts, what, why, what was
+    rejected, not three lines: ours ran a median of 18 lines at
+    the eval (2026-10-02), run 3's 5 to 25 after RETRO D1, and the
+    list now says what holds. agent-arrangement §3.4 says the
+    same; TODO's item on an entry's length ends. Our own log's
+    list goes to the refinement item, with W8.*
 
 ## 7. What this reading taught
 
