@@ -34,7 +34,8 @@ Goal: <one sentence: what is true when this step is done>
 Now: <the stage the step is in, one line>
 Gate:
 <the opening items below, filled in>
-<this step's own items, asked of the goal>
+<this step's own items, asked of the goal, then checked against
+ its Known already>
 <the closing items below, filled in>
 Notes: <opened <date>; its stages, and what each uses; what the
  reviewer signs and when>
@@ -67,18 +68,20 @@ does not set a standard the work was held to.
       the stages its Notes list from earlier work. If neither, the
       step opened a provisional manual (`first-time-work`).
 
-**The step's own items.** Ask of the goal: "how would I check that's
-true?" Each answer is one item: a fact, checkable by looking, what
-and not how. Together they equal the goal. For `exchange-birth`'s
-goal "a project born from this repo alone", one item is "run 5's
-birth entry names one pin, ours, and nothing from another repo".
-What a stage uses sets the order of work, and its stages are not
-copied into the gate. An item is ticked when it comes true,
-whenever that is.
+**The step's own items,** written first, from the goal alone. Ask of
+the goal: "how would I check that's true?" Each answer is one item:
+a fact, checkable by looking, what and not how. Together they equal
+the goal. For `exchange-birth`'s goal "a project born from this repo
+alone", one item is "run 5's birth entry names one pin, ours, and
+nothing from another repo". What a stage uses sets the order of
+work, and its stages are not copied into the gate. An item is ticked
+when it comes true, whenever that is.
 
 **Known already.** The gates of the skills and rules a step uses,
-their *Gates* sections, are copied in when its gate is written, and
-its Notes take their stages. A step that uses none writes its own.
+their *Gates* sections. Once the own items are written, each is
+checked against them by meaning: one already met adds nothing, and
+one missed joins as an item. The step's Notes take their stages. A
+step that uses none has only its own items.
 
 **At the close.**
 

@@ -70,8 +70,9 @@ line by stage, opening and closing items.
 2. **The run's step form, taken almost whole,** as `## The step
    form` at the top of our `PLAN.md`: Goal, a Now line by stage,
    the gate written at opening, Notes; the opening items, with the
-   branch "if it has one"; the step's own items; Known already,
-   the gates of the skills and rules a step uses.
+   branch "if it has one"; the step's own items, written first
+   from the goal; Known already, the gates of the skills and rules
+   a step uses, checked against them after by meaning.
    Dropped: *For run 5 only*, the shapes item, decision before code,
    and the one-line closed gate, since a step leaves the plan and
    the devlog names it with the commit of the ticked gate. Kept from

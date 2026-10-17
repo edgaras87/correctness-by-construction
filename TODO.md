@@ -93,6 +93,8 @@
         numbers never changed; the forms become shapes.
       - a part a shape names may be optional, where the work does
         not always produce it.
+      - Known already as questions, a skill's Gates and the
+        playbook's lists, answered in a step's own words.
       Trigger: run 4's reading, which reads how run 4 lived run 3's
                shapes.
       See: devlog 2026-10-17, our forms as shapes.
