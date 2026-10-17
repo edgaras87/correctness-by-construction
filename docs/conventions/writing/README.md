@@ -79,7 +79,10 @@ chat answers, records, commit messages, code comments.
    rule as wrong.
 5. **Plain words, not metaphor.** A metaphor has to be translated,
    and two readers translate it differently. Run 3's retrospective
-   names "costume", "weather" and "stage" as words to drop.
+   names "costume", "weather" and "stage" as words to drop: the
+   stage of a theatre, as in "the stage, not a victim". A skill's
+   phase is a stage, a defined word (`ARCHITECTURE.md`, *The
+   words*).
 6. **Names are labels.** A reference reworded points somewhere
    else. A coined word that is not defined is a word the reader
    cannot check, so each is defined once, in the project's

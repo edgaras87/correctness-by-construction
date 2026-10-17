@@ -393,6 +393,12 @@ manual owns the thing a word names, pointed at there.
 - **foundation** — the frontmatter line by which a shipped file
   names the description it derives from. Not *source*: that was a
   run's word for the deliverer, and is not ours.
+- **step** — one piece of PLAN's work, a run's or ours. What makes
+  work a step here is our `PLAN.md`'s step form (ADR-0057).
+- **stage** — one phase of a skill, numbered from Stage 0:
+  `cbc-slice`'s Stage 3, `cbc-framing`'s Stage 2. A step's Now line
+  names the stage it is in. How a skill names them:
+  `docs/conventions/conventions/` §2.
 
 ## What this page knows is wrong
 

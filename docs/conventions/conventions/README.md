@@ -124,6 +124,18 @@ foundation: the <name> convention
   derivation. Concept chapters carry none; they are the top. That
   the line travels with a copy is `docs/conventions/exchange/` §3.5.
 
+**A skill's phases are stages,** numbered from Stage 0, each under
+its own heading: `## Stage 1 — specify-correctness`. "Step" is
+PLAN's: a step's Now line names the stage it is in, and one word
+for both would read "Now: Step 3" inside Step 1. A numbered
+instruction inside a stage is not a phase, and its list may call
+it a step.
+
+*Found 2026-10-15: `cbc-framing` called its phases steps, inside
+PLAN's Step 1, and run 3 asked for a word of their own;
+`infra-establish`'s walk did the same inside Step 3. Both say stage
+since 2026-10-17, as the other skills did.*
+
 ## 3. The manual
 
 The manual is free prose: the convention stated, from which the
