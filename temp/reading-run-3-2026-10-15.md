@@ -72,6 +72,8 @@ deliverer*. Release opens after it.
   run 3's reservations; the worked example tags its possessions, facts
   and trust line, as its header asks. Layers stay L1 to L5 here; their
   tags are group E's.*
+  *The layer tags taken 2026-10-17 by W16 (`41d4fc3`), named from
+  chapter 01.*
 - **F2** — `cbc-slice`, five edits, logged 2026-10-14 and untried:
   tags in full words (`d023336`, D6); the record's skeleton, one block
   per guarantee (`0a8b1a9`, D12); evidence checks the promise, then
@@ -215,6 +217,10 @@ deliverer*. Release opens after it.
   ARCHITECTURE template and records table, the devlog and
   decisions-log stubs. D1's rules-in-force list stays the
   retrospective skill's.*
+  *Group E taken 2026-10-17 by W16 (`f2c489c` to `658d0bc`): the
+  briefing and the glossary at framing, the layer tags, the worked
+  example's kills. D2's rest of the plain rewrite is a TODO item,
+  before run 5's birth.*
 - **F11** — D22: eight checks only run 4 can answer, each to be a gate
   item in the playbook's PLAN at the step that judges it: trials name
   their close (D4); claims read again for specification style (D14);
@@ -256,6 +262,8 @@ deliverer*. Release opens after it.
   deliverable on trial (D4: a trial names the close that judges it);
   the glossary (D2, D6: born at framing; the run wrote
   `docs/glossary.md`). Each matches a Later or Next item of ours.
+  *The glossary taken 2026-10-17 by W16 (`fbd1c5e`): born at
+  framing, from a template in `cbc-framing`.*
 - **F17** — Our Next item "fold run 3's three arrangement pieces into
   the run playbook" has fired: its trigger, run 3's retrospective,
   closed on 2026-10-12. D4 judged all three kept, and adds to the step
@@ -319,6 +327,10 @@ deliverer*. Release opens after it.
   carries the full-word tags. Its six kills carry no worked example
   with numbers, which D2 asks of every kill, and it still calls three
   kills "three costumes", a metaphor D2 rules out.
+  *Taken 2026-10-17 by W16 (`6526be5`): each kill in the kill
+  shape's form, with numbers; "costume" gone. The fenced
+  collisions are not yet "nothing dies" kills (TODO, the plain
+  method).*
 
 ## 5. Decisions
 
@@ -340,7 +352,8 @@ deliverer*. Release opens after it.
   - *E, text we would write: D2's glossary at framing and plain
     method texts, D6's layer tags, D8's briefing. The devlog stub's
     birth entry holds a "Briefing:" line today (W14 met it), and
-    `cbc-framing` says "shape" for the registry's layout (W15).*
+    `cbc-framing` says "shape" for the registry's layout (W15).
+    Done 2026-10-17, W16; the plain rewrite's rest in TODO.*
   - *F, the reviewer's hand: D3, D25.*
   - *Nothing for us: D14, the shape's own; D20's lists, the run's.*
 - **D2** — F1 to F7: take, decline or hold each copy edit. F1 to F4
@@ -594,6 +607,8 @@ deliverer*. Release opens after it.
   that named Step 10 are rewritten (`ff13519`).*
   *Since W14: the item on a decisions entry's length ended
   (`d1922c4`); a new item, the records map (`0a75d2d`).*
+  *Since W15 and W16: two new items, shapes at birth (`8ec1381`)
+  and the plain method (`658d0bc`), both before run 5's birth.*
 - **W7** — `CLAUDE.local.md` from the reviewer's hand (F12): where it
   lands here, if anywhere. *RETRO D25 is D8's since 2026-10-16.*
   *Since W11, the file's "New kinds of work" can point at the
@@ -723,6 +738,14 @@ deliverer*. Release opens after it.
     with numbers per kill, which the kill shape asks; both copies.
     `cbc-framing`'s "shape" for the registry's layout. The rest,
     about 35,000 words, a TODO item big enough for a step.*
+  - *Decision 4 corrected 2026-10-17: about 26,000 words remain,
+    not 35,000; the count had taken in `cbc-slice` and the shapes,
+    plain already.*
+  - *Decision 1, as built: the briefing is the playbook Step 1
+    comment's, not an opening item, since `cbc-framing` commits it.*
+  *Done 2026-10-17: by the commit plan for group E (`ff29263` to
+  the close), its commits `f2c489c`, `fbd1c5e`, `41d4fc3`,
+  `6526be5`, `658d0bc`.*
 
 ## 7. What this reading taught
 
