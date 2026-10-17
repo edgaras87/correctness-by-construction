@@ -52,6 +52,11 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 - Chapter 03's sentence on when technology enters, corrected from
   the runs: after framing, each choice answerable to the slice
   registry — not "with the first slice". Editorial.
+- Chapter 01's layer tags in full words, the number before the
+  name: LAYER-1-ENVIRONMENT, LAYER-2-SYSTEM, LAYER-3-AREAS,
+  LAYER-4-PROBLEMS, LAYER-5-INTERACTION, where it said L1 to L5.
+  From never-oversold's retrospective; the names are the
+  chapter's own. The method and stack skills use them. Editorial.
 
 ### Removed
 

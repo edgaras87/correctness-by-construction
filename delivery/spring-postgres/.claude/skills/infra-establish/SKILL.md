@@ -35,12 +35,11 @@ in. Verify against the actual repo:
    service outliving the instances, the clock. If the definition has
    no runtime-ground facts, this is not "stop": it is the downstream
    trigger the definition's own revision rule names. The facts are
-   added by a dated revision entry in L1 — what changed, why,
-   triggered by this check — one commit, no possession, refusal or
-   verdict touched; then the check passes. Lived twice, the same way
-   both times. Framing work is not
-   done here; a fact the framing left unstated is written where it
-   belongs.
+   added by a dated revision entry in LAYER-1-ENVIRONMENT — what
+   changed, why, triggered by this check — one commit, no possession,
+   refusal or verdict touched; then the check passes. Lived twice, the
+   same way both times. Framing work is not done here; a fact the
+   framing left unstated is written where it belongs.
 3. **The repo exists and is a git repo** with its plumbing dotfiles
    present or creatable (`.gitignore` at minimum — secrets handling
    depends on it).

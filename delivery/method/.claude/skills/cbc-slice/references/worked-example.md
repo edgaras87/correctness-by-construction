@@ -30,7 +30,7 @@ replayed after a swallowed response; the witness — recorded orders per
 submission, read from the store — never above one; and the path from this
 sentence to that test followable by the shop owner.
 
-## Step 1 — What must be ours? (L2)
+## Step 1 — What must be ours? (LAYER-2-SYSTEM)
 
 Hostage test on each candidate:
 
@@ -47,7 +47,7 @@ Sketch-enemies used (debt for step 2): a retrying caller, a store that
 answers strangely. Edge note: submissions cross from outside → parsed and
 checked at the door.
 
-## Step 2 — Name the enemies (L1)
+## Step 2 — Name the enemies (LAYER-1-ENVIRONMENT)
 
 Follow one submission through its life: caller → network → our process →
 store → network → caller. Everything beyond our control is an actor. Facts,
@@ -88,8 +88,8 @@ for one shop — up to ten thousand orders, each a record and its key kept
 for life, and fifty identical submissions racing at once, the hammering's
 own count.
 
-Return trip check: did the census reveal a missed possession? No — L2
-stands, no revision logged.
+Return trip check: did the census reveal a missed possession? No —
+LAYER-2-SYSTEM stands, no revision logged.
 
 The ledgers the exit leaves:
 - Fence list — **NOT-OURS-1** a shop edits or cancels an order after it is
@@ -100,7 +100,7 @@ The ledgers the exit leaves:
 - Not probed — clock skew between machines (one machine); deployment
   transitions (no second version ever runs beside the first).
 
-## Step 3 — Run the collisions (L4)
+## Step 3 — Run the collisions (LAYER-4-PROBLEMS)
 
 Each fact × each possession — what dies (never how it's saved):
 
@@ -128,7 +128,7 @@ lie, not a repeat). Fold-candidate found with no enemy: "what a valid
 submission is" (the contract) — contract-shaped, no
 invariant-under-adversity → folds, not a slice.
 
-## Step 4 — Sort into owners (L3)
+## Step 4 — Sort into owners (LAYER-3-AREAS)
 
 All concerns touch one state (the order records) and one decision
 (new-vs-repeat). Candidate seam probed: "key management" as its own area —
@@ -136,10 +136,11 @@ fails the bar: no separate state, no separate decision authority. Named,
 not drawn. **Ownership: one area — order intake.** Confirmed by sorting,
 not assumed.
 
-## Step 5 — Between owners (L5)
+## Step 5 — Between owners (LAYER-5-INTERACTION)
 
 **Empty, with reasons:** one internal area (step 4); no sibling systems to
-coordinate (payment refused at L2). Each emptiness traces to a decision.
+coordinate (payment refused at LAYER-2-SYSTEM). Each emptiness traces to a
+decision.
 
 ## Step 6 — Cut the slice surface
 
@@ -169,10 +170,11 @@ ground — an expectation, re-decided at close).
 
 1. **Intent:** the promise, one sentence, its audience and what done
    demonstrably means, plus banked rejections.
-2. **System definition:** L1 the six facts, one trust line, the runtime
-   ground, three fences and the not-probed ledger · L2 three possessions,
-   three written refusals · L3 one area, one seam named-not-drawn · L4 the
-   concerns · L5 empty-with-reasons.
+2. **System definition:** LAYER-1-ENVIRONMENT the six facts, one trust
+   line, the runtime ground, three fences and the not-probed ledger ·
+   LAYER-2-SYSTEM three possessions, three written refusals ·
+   LAYER-3-AREAS one area, one seam named-not-drawn · LAYER-4-PROBLEMS the
+   concerns · LAYER-5-INTERACTION empty-with-reasons.
 3. **Slice registry:** 2 slices + 1 fold, reconciliation line, SLICE-1
    chosen-next.
 
@@ -184,8 +186,9 @@ ground — an expectation, re-decided at close).
 translation:
 
 - Invariant: N arrivals of one submission → exactly one recorded order.
-- Adversity (pulled from the L1 census, not invented): sequential retries,
-  simultaneous duplicates, lost responses, key reuse with different body.
+- Adversity (pulled from the LAYER-1-ENVIRONMENT census, not invented):
+  sequential retries, simultaneous duplicates, lost responses, key reuse
+  with different body.
 - Guarantee challenge — "what would let this hold on paper yet break in
   fact?": **GUARANTEE-1, uniqueness** — a key can never map to two
   orders; **GUARANTEE-2, winner/loser** — of simultaneous duplicates,
@@ -229,9 +232,10 @@ evidence-closed; the registry re-decides what's next.
 ## What the example shows about the seams
 
 - The census (step 2) is where part 2's adversity models come from — the
-  spec *pulled* its threats from L1.
+  spec *pulled* its threats from LAYER-1-ENVIRONMENT.
 - The kills (step 3) arrived in the spec invariant-shaped — the
   zero-translation handoff.
 - The refusals (step 1) are why the spec never mentions payment.
-- The thin L3 is why there is exactly one place the code and its walls live.
+- The thin LAYER-3-AREAS is why there is exactly one place the code and its
+  walls live.
 - The fold carried the contract checks into SLICE-1 instead of losing them.

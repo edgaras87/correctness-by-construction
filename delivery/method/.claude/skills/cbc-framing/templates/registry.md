@@ -26,8 +26,9 @@ Status values: `open` · `chosen-next` · `in-progress` ·
 
 - **Invariant:** <what must hold, stated so it can concretely fail>
 - **Adversity to create:** <the attack the evidence must generate —
-  from the L1 census, not invented>
-- **Area:** <owner from L3>. **Kills covered:** <KILL-ids from L4>.
+  from the LAYER-1-ENVIRONMENT census, not invented>
+- **Area:** <owner from LAYER-3-AREAS>. **Kills covered:**
+  <KILL-ids from LAYER-4-PROBLEMS>.
 - **Folds in:** <definitions this slice consumes first; or "none">
 - **Rider:** <a structural condition checked, never battle-tested,
   whose silent violation voids this slice's evidence; or "none">
@@ -73,12 +74,12 @@ slice through this registry, never around it.>
 
 ## Fold-reconciliation line
 
-Every kill the definition's L4 names, accounted for: <N> kills ↔
-<n> slices + <m> folds + <deferrals> + <refusals>. One row per
-kill; nothing dropped is checked by counting. The definition's L4
-is the master for every kill — what dies, against which fact, from
-which possession; the middle column here is a summary for
-counting, never to be read in its place.
+Every kill the definition's LAYER-4-PROBLEMS names, accounted for:
+<N> kills ↔ <n> slices + <m> folds + <deferrals> + <refusals>. One
+row per kill; nothing dropped is checked by counting. The
+definition's LAYER-4-PROBLEMS is the master for every kill — what
+dies, against which fact, from which possession; the middle column
+here is a summary for counting, never to be read in its place.
 
 | Kill | What dies | Lands in |
 |---|---|---|

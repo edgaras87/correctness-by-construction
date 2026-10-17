@@ -14,8 +14,9 @@ infrastructure, not habit**). The intent is consulted at scope and
 tradeoff questions. If the intent or the registry isn't settled, the
 step isn't ready — stop (Stage 0 in SKILL.md). If only the
 definition's runtime-ground facts are missing, the return trip is the
-move, not the stop: a dated revision entry in the definition's L1,
-one commit, then the walk begins (Stage 0, check 2).
+move, not the stop: a dated revision entry in the definition's
+LAYER-1-ENVIRONMENT, one commit, then the walk begins (Stage 0,
+check 2).
 
 ## 1 · Decide the Execution Environment — demands first, against the lived default
 

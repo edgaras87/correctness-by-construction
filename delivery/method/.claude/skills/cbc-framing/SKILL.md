@@ -1,15 +1,15 @@
 ---
 name: cbc-framing
-description: Frame a new backend system with correctness-driven design - turn a raw project idea into one falsifiable promise, a layered system definition (L1-L5), and a registry of provable slices, BEFORE any code or tech choices. Use this whenever the user wants to start, design, or plan a backend/service where being wrong is expensive (orders, payments, inventory, bookings, anything owning facts or money), mentions framing, a promise, invariants, idempotency, "what must never happen", CbC, or correctness-driven design - even if they just say "I have an idea for a service" or "help me design a backend". Do NOT use for throwaway prototypes, experiments, or low-stakes tools, and do not use for implementing code (that is cbc-slice, which runs only after framing AND bootstrap).
+description: Frame a new backend system with correctness-driven design - turn a raw project idea into one falsifiable promise, a layered system definition (five layers), and a registry of provable slices, BEFORE any code or tech choices. Use this whenever the user wants to start, design, or plan a backend/service where being wrong is expensive (orders, payments, inventory, bookings, anything owning facts or money), mentions framing, a promise, invariants, idempotency, "what must never happen", CbC, or correctness-driven design - even if they just say "I have an idea for a service" or "help me design a backend". Do NOT use for throwaway prototypes, experiments, or low-stakes tools, and do not use for implementing code (that is cbc-slice, which runs only after framing AND bootstrap).
 foundation: concept v1
 ---
 
 # CbC framing — one promise worked into a slice surface
 
 Turn a standing project idea into three artifacts: **intent** (the promise),
-**system definition** (L1–L5), **slice registry** (the work, cut and ready).
-All paper — no code, no tech choices; the run's stub-born repo is the
-paper's home. A framing may honestly end in "no project"; that is a
+**system definition** (its five layers), **slice registry** (the work, cut
+and ready). All paper — no code, no tech choices; the run's stub-born repo
+is the paper's home. A framing may honestly end in "no project"; that is a
 valid exit.
 
 The full procedure is `references/cbc-framing-workflow.md` — read it before
@@ -47,19 +47,19 @@ default above stands: every verdict is the human's.
 ## The derivation order (not the presentation order)
 
 ```
-step 0  choose the promise      (intent)  one claim, falsifiable, worth proving
-step 1  what must be ours?      (L2)      hostage test; refusals in writing
-step 2  name the enemies        (L1)      census: vanishes / duplicates / lies
-step 3  run the collisions      (L4)      facts × possessions → kills
-step 4  sort into owners        (L3)      only if collisions force divisions
-step 5  check between owners    (L5)      only if owners exist; else empty-with-reasons
-step 6  cut the slice surface             slices vs folds; registry
+step 0  choose the promise      (intent)               one claim, falsifiable, worth proving
+step 1  what must be ours?      (LAYER-2-SYSTEM)       hostage test; refusals in writing
+step 2  name the enemies        (LAYER-1-ENVIRONMENT)  census: vanishes / duplicates / lies
+step 3  run the collisions      (LAYER-4-PROBLEMS)     facts × possessions → kills
+step 4  sort into owners        (LAYER-3-AREAS)        only if collisions force divisions
+step 5  check between owners    (LAYER-5-INTERACTION)  only if owners exist; else empty-with-reasons
+step 6  cut the slice surface                          slices vs folds; registry
 ```
 
 Run them in this order — each step consumes exactly the previous step's
 output. Upward corrections only as logged return trips (a census finding
-that reveals a missed possession → logged L2 revision), never scheduled
-polish passes.
+that reveals a missed possession → logged LAYER-2-SYSTEM revision),
+never scheduled polish passes.
 
 ## Per-step gates (check before asking the human to close a step)
 
@@ -79,7 +79,7 @@ polish passes.
   answering, either way, who besides the system can write what it
   stores — and the runtime ground, the size the system is built for
   among it. Exit only by saturation: two consecutive fresh probes
-  finding nothing new — the probe log recorded in L1.
+  finding nothing new — the probe log recorded in LAYER-1-ENVIRONMENT.
 - **Step 3:** each kill states **what dies, never how it's saved** — park
   any mechanism the instant it surfaces. Land kills invariant-shaped with
   adversity named, consumable by the slice workflow with zero translation.
@@ -129,7 +129,7 @@ result and never restates it. Three rules:
    the quantity changed'; folded into FACT-CALLER-5. Asked: is a
    changed quantity the same fact as a changed delivery address?
    Yes: both are a different body under a reused key. Verdict:
-   accepted. Results: definition, L1."
+   accepted. Results: definition, LAYER-1-ENVIRONMENT."
 2. **A section freezes at its verdict.** Append-only after that. A
    return trip changes the export, and adds one line here: what
    changed, and why.
@@ -147,29 +147,31 @@ run's `docs/adr/` at close.
 ## Export and handoff
 
 At close, **check that each export reads alone**, then remove its
-draft line. Nothing is composed or copied: a result copied from one
-file to another drifts, and a rewording can turn true into false.
-The **residue filter** holds throughout: an export never references
-the derivation doc's machinery — conclusions stand re-grounded in
-the exports themselves. The
-same filter refuses **agent language**: nothing in an export names
-this skill, a workflow step, or the run's arrangement — a reader
-without the skills directory must not need it to read them.
-Default export practice: **commit in derivation order** — the
-intent; the system definition growing L2 → L1 → L4 → L3 → L5, each
-step's result committed at its verdict; the registry; the adoption record; the
-README last (the surface derives from committed internals) — so
-the run repo's own history tells the derivation story. The order
-is the commits', not the file's: each layer commit places its
-section where the workflow presents it, so the definition ends
-L1 → L5, outside-in, and no reorder is needed after. Skipping the
-sequence is off-default: log why.
+draft line. Nothing is composed or copied: a result copied from
+one file to another drifts, and a rewording can turn true into
+false. The **residue filter** holds throughout: an export never
+references the derivation doc's machinery — conclusions stand
+re-grounded in the exports themselves. The same filter refuses
+**agent language**: nothing in an export names this skill, a
+workflow step, or the run's arrangement — a reader without the
+skills directory must not need it to read them. Default export
+practice: **commit in derivation order** — the intent; the system
+definition growing LAYER-2-SYSTEM → LAYER-1-ENVIRONMENT →
+LAYER-4-PROBLEMS → LAYER-3-AREAS → LAYER-5-INTERACTION, each
+step's result committed at its verdict; the registry; the adoption
+record; the README last (the surface derives from committed
+internals) — so the run repo's own history tells the derivation
+story. The order is the commits', not the file's: each layer
+commit places its section where the workflow presents it, so the
+definition ends LAYER-1-ENVIRONMENT to LAYER-5-INTERACTION,
+outside-in, and no reorder is needed after. Skipping the sequence
+is off-default: log why.
 
 The three artifacts, under `docs/system/` — internal truth as one
 nameable path:
 
 - `intent.md` — the promise + banked rejections
-- `definition.md` — L1–L5, filled or empty-with-reasons
+- `definition.md` — the five layers, each filled or empty-with-reasons
 - `registry.md` — slices + folds + reconciliation line + chosen-next
 
 **The registry's outcomes** (what the file must carry, whatever its

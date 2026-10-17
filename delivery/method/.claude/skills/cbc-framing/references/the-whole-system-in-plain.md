@@ -21,37 +21,44 @@ not taste.
 
 ## The map: five nested boxes
 
-- **L1 — The world.** Everything outside your control: users, networks,
-  other systems, your own process crashing. It is hostile: things vanish,
-  duplicate, and lie.
-- **L2 — Your system.** One promise: which facts you are the authority on,
-  and what you commit to about them. A real promise can be broken — you can
-  describe the exact scenario where it fails. Also the boundary: everything
-  crossing from outside gets checked right at the door.
-- **L3 — The parts inside.** Split by one rule: every fact has exactly one
-  owner. Often the answer is "one part" — that's fine.
-- **L4 — The small problems.** Inside each part: what must hold true, and
-  what attacks it. Small on purpose — the boxes above made them small.
-- **L5 — Between the parts.** Correctness no single part can own. Where
-  most real incidents live. Empty if there's only one part.
+- **LAYER-1-ENVIRONMENT — The world.** Everything outside your control:
+  users, networks, other systems, your own process crashing. It is
+  hostile: things vanish, duplicate, and lie.
+- **LAYER-2-SYSTEM — Your system.** One promise: which facts you are the
+  authority on, and what you commit to about them. A real promise can be
+  broken — you can describe the exact scenario where it fails. Also the
+  boundary: everything crossing from outside gets checked right at the
+  door.
+- **LAYER-3-AREAS — The parts inside.** Split by one rule: every fact has
+  exactly one owner. Often the answer is "one part" — that's fine.
+- **LAYER-4-PROBLEMS — The small problems.** Inside each part: what must
+  hold true, and what attacks it. Small on purpose — the boxes above made
+  them small.
+- **LAYER-5-INTERACTION — Between the parts.** Correctness no single
+  part can own. Where most real incidents live. Empty if there's only
+  one part.
 
 ## The order of work (not the same as the map's order)
 
 0. **Choose the promise** (intent). One sentence, worth proving, for a
    named audience.
-1. **What must be ours?** (L2). For each candidate: "if someone else owned
-   this, could they break our promise?" Yes → ours. No → refused, in
-   writing.
-2. **List the enemies** (L1). Follow one request through its whole life;
-   everything beyond your control is an actor. For each: can it vanish,
-   duplicate, or lie? Write facts you can attack with ("responses get
-   lost"), not vibes ("networks are unreliable"). Stop when two fresh
-   attacks on the list find nothing new.
-3. **Run the collisions** (L4). Each enemy fact × each thing you own: what
-   dies? Name the kill, never the cure — mechanisms come later.
-4. **Sort into owners** (L3) — only if the collisions actually force
-   separate owners. One owner is a confirmed answer, not a gap.
-5. **Check between owners** (L5) — only if step 4 made more than one.
+1. **What must be ours?** (LAYER-2-SYSTEM). For each candidate: "if
+   someone else owned this, could they break our promise?" Yes → ours. No
+   → refused, in writing.
+2. **List the enemies** (LAYER-1-ENVIRONMENT). Follow one request
+   through its whole life; everything beyond your control is an actor.
+   For each: can it vanish, duplicate, or lie? Write facts you can
+   attack with ("responses get lost"), not vibes ("networks are
+   unreliable"). Stop when two fresh attacks on the list find nothing
+   new.
+3. **Run the collisions** (LAYER-4-PROBLEMS). Each enemy fact × each thing
+   you own: what dies? Name the kill, never the cure — mechanisms come
+   later.
+4. **Sort into owners** (LAYER-3-AREAS) — only if the collisions
+   actually force separate owners. One owner is a confirmed answer,
+   not a gap.
+5. **Check between owners** (LAYER-5-INTERACTION) — only if step 4
+   made more than one.
 6. **Cut into slices.** A slice = one invariant made real: proven to
    survive its specific attack, end to end.
 

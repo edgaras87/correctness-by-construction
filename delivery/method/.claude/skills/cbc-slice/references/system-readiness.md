@@ -9,7 +9,7 @@ work, not method work.*
 ## READINESS-1 — The framing artifacts are in the repo
 
 - `docs/system/intent.md` — the one promise, with banked rejections.
-- `docs/system/definition.md` — L1–L5, each layer filled or
+- `docs/system/definition.md` — the five layers, each filled or
   empty-with-reasons.
 - `docs/system/registry.md` — slices + folds, the fold-reconciliation line
   (concerns ↔ slices + folds, nothing silently dropped), and a

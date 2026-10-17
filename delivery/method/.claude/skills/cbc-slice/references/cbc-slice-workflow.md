@@ -74,10 +74,10 @@ like?*
 **Taken as written, from the framing.** The kill arrived shaped as an
 invariant from the framing's step 3. Using it is the handoff. The seed
 example's invariant: "N identical requests → exactly one persisted
-order." The adversity is pulled from the L1 census, not invented:
-contention, duplicate delivery, crashes and partial failure,
-reordering. "Correct" means nothing until it says correct *against
-what*.
+order." The adversity is pulled from the LAYER-1-ENVIRONMENT census,
+not invented: contention, duplicate delivery, crashes and partial
+failure, reordering. "Correct" means nothing until it says correct
+*against what*.
 
 **What the framing does not carry is still a what.** "An order
 exists once it is recorded, never while it is being accepted" names
