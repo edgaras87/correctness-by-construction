@@ -96,6 +96,7 @@ deliverer*. Release opens after it.
   `cbc-slice`, whose workflow still says a shape handed down is
   "an answer a project did not earn", against ADR-0052's four
   shapes shipped with the method. W15.*
+  *The shapes hold ended 2026-10-17 by W15 (`4e15b7b`).*
 - **F3** — `cbc-bootstrap`, three edits, logged 2026-10-14 and
   untried: the requirements point to the record that decided each
   constraint and end as history at the close, ARCHITECTURE answering
@@ -338,7 +339,8 @@ deliverer*. Release opens after it.
     table, D16's ARCHITECTURE template. Done 2026-10-17, W14.*
   - *E, text we would write: D2's glossary at framing and plain
     method texts, D6's layer tags, D8's briefing. The devlog stub's
-    birth entry holds a "Briefing:" line today (W14 met it).*
+    birth entry holds a "Briefing:" line today (W14 met it), and
+    `cbc-framing` says "shape" for the registry's layout (W15).*
   - *F, the reviewer's hand: D3, D25.*
   - *Nothing for us: D14, the shape's own; D20's lists, the run's.*
 - **D2** — F1 to F7: take, decline or hold each copy edit. F1 to F4
@@ -687,6 +689,12 @@ deliverer*. Release opens after it.
   the skill stands on concept v1, and is read against the shapes
   convention and ADR-0052.
   *Added 2026-10-17.*
+  *Done 2026-10-17 (`4e15b7b`): step 4 reads the shapes in
+  `.claude/shapes/`, and the workflow says why none is in the
+  skill. Found with it: the seed committed only the skills, fixed
+  (`141fa74`); whether a newborn reads its shapes at birth, a TODO
+  item before run 5's birth (`8ec1381`); `cbc-framing` says
+  "shape" for the registry file's layout, a word for group E.*
 
 ## 7. What this reading taught
 
