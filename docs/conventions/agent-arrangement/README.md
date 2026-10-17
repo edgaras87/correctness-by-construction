@@ -237,7 +237,7 @@ a run re-reads the file at its retrospective: the skill's close
 asks it, and every line passes the three tests again
 or leaves — the same move a run's decisions log makes for its
 entries. The deliverer has no project end, and re-reads it at each
-milestone's close instead, as a gate item (ADR-0041).
+step's close instead, as a closing item of its gate (ADR-0057).
 
 ## 3. `.claude/`
 
