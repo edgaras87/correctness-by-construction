@@ -51,7 +51,8 @@ keeps it true, and proposes the lasting form.
    - the manual stays, its *on trial* mark rewritten from what was
      seen, and what derives from it is written: a skill of ours
      under `.claude/skills/`, a rule, or a shipped artifact in
-     `delivery/`, as `docs/conventions/conventions/` §4 lists;
+     `delivery/`, as `docs/conventions/conventions/` §4 lists, each
+     in §2's form;
    - a section of a manual or record we keep, for a fact, not a
      procedure;
    - nothing, when nothing in it is worth keeping: the manual goes,
