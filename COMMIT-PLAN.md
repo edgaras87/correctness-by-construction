@@ -12,8 +12,8 @@ and D16 (the reading's W14, decisions 1 to 4):
   it, and the entry file's records table sends the question there.
 - `devlog/devlog.md` asks for what happened, the dead ends and where
   to resume, and links what another record holds.
-- `.claude/decisions.md` opens on the rules in force now. An entry
-  has three parts, not three lines.
+- `.claude/decisions.md` asks three parts per entry, not three
+  lines.
 
 Our own decisions log asks three parts too. The two manuals say the
 same: project-recording §8, agent-arrangement §3.4. `cbc-slice`'s
@@ -46,18 +46,19 @@ agrees and stays.
 Decision 4 for our own log: its header's "three lines" becomes three
 parts, as commit 4 says for a run's. TODO's item was about our header.
 Before commit 4, so the item ends with both headers true. An agent
-file, so a commit of its own (commit-messages). Our log's
-rules-in-force list stays for the refinement.
+file, so a commit of its own (commit-messages).
 
-**4. `docs: the decisions log lists the rules in force`**
-Decision 4. The stub opens on "Rules in force now" and "Replaced, and
-by what". An entry has three parts, not three lines.
-agent-arrangement §3.4 says the same. TODO's item on an entry's
-length ends, and the refinement item gains our own log's list.
+**4. `docs: a decisions entry has three parts`**
+Decision 4, as corrected. The stub's entry has three parts, not three
+lines, and agent-arrangement §3.4 says the same. TODO's item on an
+entry's length ends. The rules-in-force list stays the
+retrospective's (its skill, step 3): run 3 and run 4 each wrote it
+there, and neither kept one from birth.
 
 **5. `docs(temp): the reading closes W14`**
-W14 marked done with its commits. F2's and F3's holds end. The pass
-over every open item, by `working-a-reading.md` step 5.
+W14 marked done with its commits, its decision 4 corrected in place.
+F2's and F3's holds end. The pass over every open item, by
+`working-a-reading.md` step 5.
 
 ## Decisions taken inside this plan
 
