@@ -46,6 +46,7 @@ writes is its own.
 | Shipped something users can see | What changed, for users | CHANGELOG.md |
 | The system's structure changed, or asking what a slice may rely on | The system as it stands: its components, what a slice may rely on, one row per rule | ARCHITECTURE.md |
 | The promise, the layers, or the slices are in question | Intent, system definition, slice registry | docs/system/ |
+| Meeting a word or a tag you do not know, or coining one | Each coined word and tag kind, one plain sentence | docs/glossary.md (from framing) |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |
 | Agent setup changed, or a convention arrives | Decision, why, rejected options; the conventions held, the pin | .claude/decisions.md |
 | The run has finished building, before Release | What the next run does differently, and where each lesson lands | RETRO.md (when present) |

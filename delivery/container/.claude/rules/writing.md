@@ -29,7 +29,7 @@ commit messages, comments. How it reads, never what it says.
 6. **Keep names as labels.** Write defined names and references
    exactly: KILL-5, FACT-CALLER-5, SLICE-1, ADR-0014. Define each
    coined word once, in plain words, in the project's glossary,
-   where it keeps one. Coin a word only when plain English cannot
+   `docs/glossary.md`. Coin a word only when plain English cannot
    say it. A number local to one record carries its owner outside
    it: "SLICE-1 GUARANTEE-3", never a bare "GUARANTEE-3".
 7. **Cut what adds nothing.** If a sentence can go without losing

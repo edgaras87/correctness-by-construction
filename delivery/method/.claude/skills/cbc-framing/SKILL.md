@@ -104,6 +104,11 @@ commit, and the file's first line says what was removed. After it,
 the briefing is history, never edited. So a claim like "no
 divergence from the briefing" can be checked against it.
 
+**The glossary starts here too:** `docs/glossary.md`, from the
+copy-and-fill master `templates/glossary.md`. Each coined word and
+each tag kind is defined there once, in one plain sentence, when
+framing first uses it. Every later record adds to it.
+
 **Each step's result is written once, straight into its export,**
 when the human gives the verdict: the intent at step 0, the
 definition's layer at steps 1 to 5, the registry at step 6. The
