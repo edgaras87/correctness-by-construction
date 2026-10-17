@@ -1,60 +1,136 @@
 # Plan: correctness-by-construction
 
-<!-- No playbook supplies these steps: each is written here when a
-     milestone is named, and leaves when it is reached — the devlog
-     entry that closes it names the step, and the story is there.
-     With no project end, a milestone's last two gate items do what
-     a retrospective would: fold its lessons back, and re-read the
-     entry file. Findings go to TODO.md the moment they appear, and
-     docs/adr/ lists the ADRs itself. -->
+<!-- One step at a time: the piece of work being done now, in the
+     form below. Its gate is written when it opens. When it closes
+     it leaves this file, and the devlog entry that closes it names
+     the step and the commit of its ticked gate. Findings go to
+     TODO.md the moment they appear, and docs/adr/ lists the ADRs
+     itself (ADR-0041, ADR-0057). -->
 
 ## Legend
 
 `[ ]` planned  ·  `[~]` in progress  ·  `[x]` done (+date)  ·  `[!]` blocked (+what unblocks)  ·  `[-]` skipped (+why)
 
 **Gate** = exit criteria: verifiable facts, not intentions. A step is done only when every gate item is true.
-Detail only the next 1–2 steps finely; keep later steps coarse (rolling wave).
 
 ---
 
-## Step 10: One delivery, run for real               [~]
+## The step form
 
-Goal: the composed delivery used to birth and carry a project, so
-the design has two shapes behind it rather than one.
+<!-- Copied into a step when it opens, and filled in. The run's
+     form, delivery/fills/cbc-run-pure-playbook.md, adapted to this
+     seat (ADR-0057). -->
+
+**A step is the one piece of work being done now:** a reading of a
+run, or a TODO item big enough for a branch. A change set inside it
+is a commit plan, and a small item needs no step. TODO never
+repeats the open step; a TODO item that becomes a step leaves TODO.
+
+```markdown
+## Step: <title>  (<what runs it, if anything>)    [~]
+
+Goal: <one sentence: what is true when this step is done>
+Now: <the stage the step is in, one line>
 Gate:
-- [ ] A project born from this repo alone, holding one pin, with
-      `exchange-birth` written while it runs (TODO, Now).
-- [x] One update delivered to a run end to end, the note and the
-      copy both — 2026-09-20, to never-oversold @ `6f2be1d`
-      (devlog 2026-09-20).
-- [x] The letter to the handbook sent with lived numbers —
-      2026-09-18 (devlog 2026-09-18, evening; ADR-0038).
-- [x] Run 3 on one pin, ours — 2026-09-20 (devlog 2026-09-20).
-- [ ] This repo's retrospective run and applied, on trial
-      (`docs/conventions/retrospective/`, the deliverer's seat):
-      `RETRO.md` written with the container's two skills, its
-      lessons landed where they came from — conventions, playbooks,
-      the concept — and the trial's verdict on whether we hold the
-      skills.
+<the opening items below, filled in>
+<this step's own items, asked of the goal>
+<the closing items below, filled in>
+Notes: <opened <date>; its stages, and what runs each; what the
+ reviewer signs and when>
+```
+
+**The Now line names the stage the step is in, and changes when the
+step enters a new one, not at every commit.** A step whose way is
+known lists its stages in its Notes. Two examples:
+
+- a reading, its Notes listing read, decide and work, note and
+  close: "Now: the work. D1 to D6 settled 2026-10-20."
+- `exchange-birth`, opened as first-time work: "Now: the birth.
+  Provisional manual written 2026-10-25."
+
+Inside a commit plan, the plan and the branch's log show where the
+work is.
+
+**The gate is written when the step opens, before any of its
+work.** A gate written at the close describes what happened. It
+does not set a standard the work was held to.
+
+**At the opening.**
+
+- [ ] The step's branch `<branch>`, if it has one, is cut from main,
+      and nothing of the step was done on main except a reading's
+      read, which comes before the branch
+      (`.claude/rules/working-a-reading.md`, step 1).
+- [ ] This gate was written before the work started.
+- [ ] The step's way is known: what runs it, or the stages its
+      Notes list from earlier work. If neither, the step opened a
+      provisional manual (`first-time-work`).
+
+**The step's own items.** Ask of the goal: "how would I check that's
+true?" Each answer is one item: a fact, checkable by looking, what
+and not how. Together they equal the goal. For `exchange-birth`'s
+goal "a project born from this repo alone", one item is "run 5's
+birth entry names one pin, ours, and nothing from another repo".
+What runs a stage sets the order of work, and its stages are not
+copied into the gate. An item is ticked when it comes true,
+whenever that is.
+
+**Known already.** Items this form already knows a kind of step
+needs, whatever its goal. They join its own items when the gate is
+written.
+
+*A reading.*
+
+- [ ] Every finding has ended in a decision or a work item, or says
+      why it needs neither.
+- [ ] Every work item has ended, taken, declined or held, and is
+      marked in the reading with its commit.
+- [ ] The note, written from the reading's final state, is in the
+      run, and names the commit read through.
+- [ ] The reading's lessons sit where they act, or in TODO.
+- [ ] The reading is deleted, and the devlog says so.
+
+Its Notes name the reading's file and its stages: read
+(`exchange-read`), decide and work
+(`.claude/rules/working-a-reading.md`), note (`exchange-deliver`),
+close (the same rule's step 9). When the run moves and the reading
+is extended, Now returns to read. A delivery is the note stage of a
+reading, an own item of the step whose change it sends, or, alone,
+a TODO item.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves; every ADR a
+      record cites exists; each pair of copies agrees, such as the
+      worked example in `cbc-framing` and in `cbc-slice`.
+- [ ] No living line in a record the step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the step changed.
+- [ ] New and changed text reads to `.claude/rules/writing.md`.
+- [ ] Every commit on `<branch>` follows commit-messages.
+- [ ] No commit straddles agent and project paths.
+- [ ] The step's lessons are folded back where they came from:
+      conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
       §2.4).
-Notes: from the sketch — "use it for a project or two, then stop;
-design nothing further until there is a second shape to design
-from." The birth is that second shape.
+- [ ] The step reached main by fast-forward from `<branch>`, on the
+      reviewer's word.
 
-## Step N: Release                                  [ ]
+**When every item is ticked and committed,** the next commit
+removes the step from this file, and the devlog entry that closes
+it names the step and the commit that holds the ticked gate.
 
-Goal: concept v1 consultable — a stranger (or future-you) can
-read, cite, and copy from this repo without the archive.
-Gate:
-- [ ] CHANGELOG entry for the release.
-- [ ] README true for a stranger.
-- [ ] `docs/models/` checked against the repo, since `CLAUDE.md`
-      sends a stranger there.
-- [ ] Known issues filed in TODO.md, not just remembered.
-- [ ] Lessons folded back where they came from — conventions,
-      playbooks, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
-      three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4).
+**A trial names the close that judges it.** A piece of the way of
+working put on trial says at which step's close it is judged. Its
+verdict there is one line: kept, changed or dropped.
+
+**A default that does not fit a step** is struck there, with its
+reason. That is a finding about the default, not a step cutting a
+corner.
+
+---
+
+No step is open. The reading of run 3 finishes as it began, outside
+this form (`temp/reading-run-3-2026-10-15.md`, ADR-0057). The
+reading of run 4 is the first step opened here.
