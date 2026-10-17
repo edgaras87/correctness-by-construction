@@ -94,6 +94,25 @@
       Trigger: the reading of run 3 closes.
       See: devlog 2026-10-17, the refinement.
 
+- [ ] Rewrite the method's texts plain (2026-10-17, run 3's RETRO
+      D2).
+      Context: the agent copies the voice it reads. Run 3's records
+      came out in the skills' voice, though "explain plainly" was in
+      its memory. Plain already: the rules, the shapes, `cbc-slice`'s
+      skill and workflow (`2674c03`). Not yet, about 26,000 words:
+      `cbc-framing` (8,500), the stack skills (13,800), the concept
+      chapters (3,400), readiness (600). A chapter reworded is a
+      concept change, editorial unless a meaning moves.
+      Ideas:
+      - one commit per file; the worked example's two copies as one.
+      - the fenced collisions as "nothing dies" kills, as the kill
+        shape asks; the example's kill count and reconciliation move.
+      - "invariant-shaped", "contract-shaped": "shape" is a defined
+        word now.
+      - chapter 02's "scope creep wearing a safety costume".
+      Trigger: before run 5's birth, as a step of its own.
+      See: devlog 2026-10-17, later, the plain method.
+
 - [ ] Rebuild project-recording §1 as a map of the records, in both
       seats (2026-10-17, the reviewer).
       Context: no one view says which record answers what. §1 draws
