@@ -13,9 +13,9 @@ is the paper's home. A framing may honestly end in "no project"; that is a
 valid exit.
 
 The full procedure is `references/cbc-framing-workflow.md` — read it before
-step 0 and keep it open; this file is the operating rules, not a substitute.
+stage 0 and keep it open; this file is the operating rules, not a substitute.
 `references/worked-example.md` shows a complete framing of a tiny order
-service — consult it whenever unsure what a step's output looks like.
+service — consult it whenever unsure what a stage's output looks like.
 `references/the-whole-system-in-plain.md` is the one-page orientation if the
 user (or you) needs the whole method reloaded first.
 
@@ -24,7 +24,7 @@ user (or you) needs the whole method reloaded first.
 Framing is **joint work**. You open each question and derive visibly; the
 human works it with you. The hard rule, from the method itself:
 
-- **You never close a step, never call saturation, never resolve a fork
+- **You never close a stage, never call saturation, never resolve a fork
   alone.** Every exit is the human's verdict. Present your derivation, then
   ask for the call.
 - A first-time walker may ask for **demonstration mode** — derive with
@@ -47,31 +47,31 @@ default above stands: every verdict is the human's.
 ## The derivation order (not the presentation order)
 
 ```
-step 0  choose the promise      (intent)               one claim, falsifiable, worth proving
-step 1  what must be ours?      (LAYER-2-SYSTEM)       hostage test; refusals in writing
-step 2  name the enemies        (LAYER-1-ENVIRONMENT)  census: vanishes / duplicates / lies
-step 3  run the collisions      (LAYER-4-PROBLEMS)     facts × possessions → kills
-step 4  sort into owners        (LAYER-3-AREAS)        only if collisions force divisions
-step 5  check between owners    (LAYER-5-INTERACTION)  only if owners exist; else empty-with-reasons
-step 6  cut the slice surface                          slices vs folds; registry
+stage 0 choose the promise      (intent)               one claim, falsifiable, worth proving
+stage 1 what must be ours?      (LAYER-2-SYSTEM)       hostage test; refusals in writing
+stage 2 name the enemies        (LAYER-1-ENVIRONMENT)  census: vanishes / duplicates / lies
+stage 3 run the collisions      (LAYER-4-PROBLEMS)     facts × possessions → kills
+stage 4 sort into owners        (LAYER-3-AREAS)        only if collisions force divisions
+stage 5 check between owners    (LAYER-5-INTERACTION)  only if owners exist; else empty-with-reasons
+stage 6 cut the slice surface                          slices vs folds; registry
 ```
 
-Run them in this order — each step consumes exactly the previous step's
+Run them in this order — each stage consumes exactly the previous stage's
 output. Upward corrections only as logged return trips (a census finding
 that reveals a missed possession → logged LAYER-2-SYSTEM revision),
 never scheduled polish passes.
 
-## Per-step gates (check before asking the human to close a step)
+## Per-stage gates (check before asking the human to close a stage)
 
-- **Step 0:** exactly one promise, one sentence, falsifiable — the breaking
+- **Stage 0:** exactly one promise, one sentence, falsifiable — the breaking
   scenario can be described concretely. The audience named as who the
   claim is sold to (system consumers belong in the census); what done
   demonstrably means stated. A second real purpose means the
   intent is overloaded: force the choice. Bank rejected candidates.
-- **Step 1:** every possession earned by the hostage test ("if someone else
+- **Stage 1:** every possession earned by the hostage test ("if someone else
   owned this, could they break the promise?"); every refusal written with
-  the mirror test. Sketch-enemies are fine here — they are debt step 2 pays.
-- **Step 2:** facts only, concrete enough to attack with ("responses get
+  the mirror test. Sketch-enemies are fine here — they are debt stage 2 pays.
+- **Stage 2:** facts only, concrete enough to attack with ("responses get
   lost", never "networks are unreliable"), consequence-first. **A census is
   not an assumption inventory** — list what can hurt, never what you trust,
   outside the two labelled blocks the workflow allows beside the facts:
@@ -80,16 +80,16 @@ never scheduled polish passes.
   stores — and the runtime ground, the size the system is built for
   among it. Exit only by saturation: two consecutive fresh probes
   finding nothing new — the probe log recorded in LAYER-1-ENVIRONMENT.
-- **Step 3:** each kill states **what dies, never how it's saved** — park
+- **Stage 3:** each kill states **what dies, never how it's saved** — park
   any mechanism the instant it surfaces. Land kills invariant-shaped with
   adversity named, consumable by the slice workflow with zero translation.
   Enemy-less contract-shaped concerns → fold-candidates, not slices.
-- **Step 4:** a division is real only with separate state AND separate
+- **Stage 4:** a division is real only with separate state AND separate
   decision authority. One area is a *confirmed* answer, not a gap. Name
   seams that fail the bar; refuse to draw them.
-- **Step 5:** empty is fine — but empty **with its reasons**, each traced to
+- **Stage 5:** empty is fine — but empty **with its reasons**, each traced to
   a prior decision.
-- **Step 6:** two kills are two slices only if their evidence must create
+- **Stage 6:** two kills are two slices only if their evidence must create
   *different adversity*. Folds ride into the spec of the slice consuming
   them. The registry carries the fold-reconciliation line (concerns ↔
   slices + folds — nothing silently dropped) and a chosen-next slice.
@@ -109,23 +109,23 @@ copy-and-fill master `templates/glossary.md`. Each coined word and
 each tag kind is defined there once, in one plain sentence, when
 framing first uses it. Every later record adds to it.
 
-**Each step's result is written once, straight into its export,**
-when the human gives the verdict: the intent at step 0, the
-definition's layer at steps 1 to 5, the registry at step 6. The
+**Each stage's result is written once, straight into its export,**
+when the human gives the verdict: the intent at stage 0, the
+definition's layer at stages 1 to 5, the registry at stage 6. The
 export is the result's only home; it carries a draft line at its
 top until the close. Example, in the definition: "FACT-CALLER-5. A
 caller reuses an idempotency key with a different order body → a
 lie: 'this is a repeat' when it isn't."
 
-**The derivation keeps how each step ran:**
+**The derivation keeps how each stage ran:**
 `docs/system/framing/derivation.md`, nested beside the truth it
 earns, kept as the archive forever, never deleted. It links to each
 result and never restates it. Three rules:
 
-1. **One section per step:** what was considered, the probes, the
+1. **One section per stage:** what was considered, the probes, the
    dead ends, the human's questions, and the verdict, written
    inline where it happens; then a link to where the result lives.
-   Example: "Step 2. Considered 'a caller resends a key with only
+   Example: "Stage 2. Considered 'a caller resends a key with only
    the quantity changed'; folded into FACT-CALLER-5. Asked: is a
    changed quantity the same fact as a changed delivery address?
    Yes: both are a different body under a reused key. Verdict:
@@ -153,12 +153,12 @@ false. The **residue filter** holds throughout: an export never
 references the derivation doc's machinery — conclusions stand
 re-grounded in the exports themselves. The same filter refuses
 **agent language**: nothing in an export names this skill, a
-workflow step, or the run's arrangement — a reader without the
+workflow stage, or the run's arrangement — a reader without the
 skills directory must not need it to read them. Default export
 practice: **commit in derivation order** — the intent; the system
 definition growing LAYER-2-SYSTEM → LAYER-1-ENVIRONMENT →
 LAYER-4-PROBLEMS → LAYER-3-AREAS → LAYER-5-INTERACTION, each
-step's result committed at its verdict; the registry; the adoption
+stage's result committed at its verdict; the registry; the adoption
 record; the README last (the surface derives from committed
 internals) — so the run repo's own history tells the derivation
 story. The order is the commits', not the file's: each layer

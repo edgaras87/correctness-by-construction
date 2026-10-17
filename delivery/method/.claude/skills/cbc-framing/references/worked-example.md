@@ -1,7 +1,7 @@
 # Worked example: a tiny order service through both workflows
 
 *A demonstration run, invented for teaching — not a lived framing. It shows
-part 1 (framing, steps 0–6), the three artifacts it leaves behind, and how
+part 1 (framing, stages 0–6), the three artifacts it leaves behind, and how
 part 2 (the slice workflow) consumes them. Kept deliberately small: one
 promise, one area.*
 
@@ -9,7 +9,7 @@ promise, one area.*
 
 # Part 1 — the framing
 
-## Step 0 — Choose the promise
+## Stage 0 — Choose the promise
 
 Idea brought to the walk: "a backend where shops submit customer orders."
 
@@ -30,7 +30,7 @@ replayed after a swallowed response; the witness — recorded orders per
 submission, read from the store — never above one; and the path from this
 sentence to that test followable by the shop owner.
 
-## Step 1 — What must be ours? (LAYER-2-SYSTEM)
+## Stage 1 — What must be ours? (LAYER-2-SYSTEM)
 
 Hostage test on each candidate:
 
@@ -43,11 +43,11 @@ Hostage test on each candidate:
 | Product catalog correctness | No — someone else's fact | refused, written |
 | Notifying the customer | No | refused, written |
 
-Sketch-enemies used (debt for step 2): a retrying caller, a store that
+Sketch-enemies used (debt for stage 2): a retrying caller, a store that
 answers strangely. Edge note: submissions cross from outside → parsed and
 checked at the door.
 
-## Step 2 — Name the enemies (LAYER-1-ENVIRONMENT)
+## Stage 2 — Name the enemies (LAYER-1-ENVIRONMENT)
 
 Follow one submission through its life: caller → network → our process →
 store → network → caller. Everything beyond our control is an actor. Facts,
@@ -100,7 +100,7 @@ The ledgers the exit leaves:
 - Not probed — clock skew between machines (one machine); deployment
   transitions (no second version ever runs beside the first).
 
-## Step 3 — Run the collisions (LAYER-4-PROBLEMS)
+## Stage 3 — Run the collisions (LAYER-4-PROBLEMS)
 
 Each fact × each possession — what dies (never how it's saved):
 
@@ -159,7 +159,7 @@ lie, not a repeat). Fold-candidate found with no enemy: "what a valid
 submission is" (the contract) — contract-shaped, no
 invariant-under-adversity → folds, not a slice.
 
-## Step 4 — Sort into owners (LAYER-3-AREAS)
+## Stage 4 — Sort into owners (LAYER-3-AREAS)
 
 All concerns touch one state (the order records) and one decision
 (new-vs-repeat). Candidate seam probed: "key management" as its own area —
@@ -167,13 +167,13 @@ fails the bar: no separate state, no separate decision authority. Named,
 not drawn. **Ownership: one area — order intake.** Confirmed by sorting,
 not assumed.
 
-## Step 5 — Between owners (LAYER-5-INTERACTION)
+## Stage 5 — Between owners (LAYER-5-INTERACTION)
 
-**Empty, with reasons:** one internal area (step 4); no sibling systems to
+**Empty, with reasons:** one internal area (stage 4); no sibling systems to
 coordinate (payment refused at LAYER-2-SYSTEM). Each emptiness traces to a
 decision.
 
-## Step 6 — Cut the slice surface
+## Stage 6 — Cut the slice surface
 
 Operational test — two kills are two slices only if their evidence must
 create *different adversity*:
@@ -262,11 +262,11 @@ evidence-closed; the registry re-decides what's next.
 
 ## What the example shows about the seams
 
-- The census (step 2) is where part 2's adversity models come from — the
+- The census (stage 2) is where part 2's adversity models come from — the
   spec *pulled* its threats from LAYER-1-ENVIRONMENT.
-- The kills (step 3) arrived in the spec invariant-shaped — the
+- The kills (stage 3) arrived in the spec invariant-shaped — the
   zero-translation handoff.
-- The refusals (step 1) are why the spec never mentions payment.
+- The refusals (stage 1) are why the spec never mentions payment.
 - The thin LAYER-3-AREAS is why there is exactly one place the code and its
   walls live.
 - The fold carried the contract checks into SLICE-1 instead of losing them.

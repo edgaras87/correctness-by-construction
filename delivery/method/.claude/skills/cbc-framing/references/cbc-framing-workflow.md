@@ -4,9 +4,9 @@
 definition and a slice surface. Ends exactly where `cbc-slice-workflow.md`
 begins — its output is that workflow's input.*
 
-*When a step's required output changes here, `worked-example.md` — beside
+*When a stage's required output changes here, `worked-example.md` — beside
 this file and in the cbc-slice skill, one text — changes in the same
-commit: a framer is sent to it to see what a step's output looks like.*
+commit: a framer is sent to it to see what a stage's output looks like.*
 
 ---
 
@@ -25,13 +25,13 @@ LAYER-5-INTERACTION (outside-in containment). They are
 *derived* in a different order, and the difference is deliberate:
 
 ```
-step 0   choose the promise        (intent)               — one claim worth proving
-step 1   what must be ours?        (LAYER-2-SYSTEM)       — hostage test
-step 2   name the enemies          (LAYER-1-ENVIRONMENT)  — the census
-step 3   run the collisions        (LAYER-4-PROBLEMS)     — facts × possessions
-step 4   sort into owners          (LAYER-3-AREAS)        — only if collisions force it
-step 5   check between owners      (LAYER-5-INTERACTION)  — only if owners exist
-step 6   cut the slice surface                            — theorems vs definitions
+stage 0  choose the promise        (intent)               — one claim worth proving
+stage 1  what must be ours?        (LAYER-2-SYSTEM)       — hostage test
+stage 2  name the enemies          (LAYER-1-ENVIRONMENT)  — the census
+stage 3  run the collisions        (LAYER-4-PROBLEMS)     — facts × possessions
+stage 4  sort into owners          (LAYER-3-AREAS)        — only if collisions force it
+stage 5  check between owners      (LAYER-5-INTERACTION)  — only if owners exist
+stage 6  cut the slice surface                            — theorems vs definitions
 ```
 
 Two inversions, both tested: **LAYER-2-SYSTEM before LAYER-1-ENVIRONMENT**
@@ -44,13 +44,13 @@ on intuition.
 
 Four rules govern every handoff:
 
-1. **Downward, each step consumes exactly the previous step's output.** The
+1. **Downward, each stage consumes exactly the previous stage's output.** The
    promise feeds the hostage test; the possessions feed the census scope;
    facts × possessions feed the collisions; the kills feed the ownership
-   sort; the owners feed the seams; everything feeds the cut. A step whose
-   input isn't the prior step's output is out of order.
+   sort; the owners feed the seams; everything feeds the cut. A stage whose
+   input isn't the prior stage's output is out of order.
 2. **Upward only through logged return trips, never scheduled ones.** The
-   census (step 2) may reveal a missed possession or an unwritten refusal —
+   census (stage 2) may reveal a missed possession or an unwritten refusal —
    then LAYER-2-SYSTEM gets a *logged revision*. If not, LAYER-2-SYSTEM
    stands. No routine "polish pass" back up: that reopens settled layers
    forever.
@@ -75,22 +75,22 @@ section.
 
 | Item | Tag | Example |
 |---|---|---|
-| a possession (step 1) | POSSESSION-<n> | POSSESSION-4 |
-| a fact (step 2), with its actor | FACT-<ACTOR>-<n> | FACT-STORE-19 |
-| a trust assumption (step 2) | ASSUMPTION-<n> | ASSUMPTION-4 |
-| a fence (step 2) | NOT-OURS-<n> | NOT-OURS-2 |
-| a scope verdict (step 2) | SYSTEM-BOUNDARY-<n> | SYSTEM-BOUNDARY-5 |
-| a kill (step 3) | KILL-<n> | KILL-15 |
-| a definition folded into a slice (step 6) | FOLD-<n> | FOLD-1 |
-| a slice (step 6) | SLICE-<n> | SLICE-4 |
+| a possession (stage 1) | POSSESSION-<n> | POSSESSION-4 |
+| a fact (stage 2), with its actor | FACT-<ACTOR>-<n> | FACT-STORE-19 |
+| a trust assumption (stage 2) | ASSUMPTION-<n> | ASSUMPTION-4 |
+| a fence (stage 2) | NOT-OURS-<n> | NOT-OURS-2 |
+| a scope verdict (stage 2) | SYSTEM-BOUNDARY-<n> | SYSTEM-BOUNDARY-5 |
+| a kill (stage 3) | KILL-<n> | KILL-15 |
+| a definition folded into a slice (stage 6) | FOLD-<n> | FOLD-1 |
+| a slice (stage 6) | SLICE-<n> | SLICE-4 |
 | a layer, its number before its name, as the concept chapter has them | LAYER-<n>-<NAME> | LAYER-4-PROBLEMS |
 
 A concern that becomes exactly one slice is called by that slice's
-tag from step 6 on; a letter only for a concern that does not. A
+tag from stage 6 on; a letter only for a concern that does not. A
 number local to one record carries its owner outside it, owner
 first: "SLICE-4 GUARANTEE-1".
 
-## Step 0 — Choose the promise (intent)
+## Stage 0 — Choose the promise (intent)
 
 *Question: what claim is this project selling, and to whom?*
 
@@ -118,7 +118,7 @@ Three sharpenings, each written into the intent:
 **Hands down:** the promise. **Residue (written):** rejected candidates and
 un-chosen purposes, banked in the log.
 
-## Step 1 — What must be ours? (LAYER-2-SYSTEM)
+## Stage 1 — What must be ours? (LAYER-2-SYSTEM)
 
 *Question: to keep that promise, what must we own — and what do we refuse?*
 
@@ -128,14 +128,14 @@ able to stop them?"* Yes → ours. No → run the mirror: *"can the promise
 stay true even if this goes wrong elsewhere?"* Yes → refused, in writing.
 The test runs on **sketch-enemies** (a retrying caller, a lying store) —
 informal, just concrete enough to power the test. Those sketches are
-**debt**; step 2 pays it.
+**debt**; stage 2 pays it.
 
 **Exit:** owned responsibilities stated; refusals stated.
 **Hands down:** the possessions (what the census must cover) and the
 sketch-debt. **Boundary note:** this is also where the edge lives — every
 crossing from outside is where untrusted becomes trusted; check at the door.
 
-## Step 2 — Name the enemies (LAYER-1-ENVIRONMENT)
+## Stage 2 — Name the enemies (LAYER-1-ENVIRONMENT)
 
 *Question: who and what touches us, and how does each fail, lie, or repeat?*
 
@@ -230,12 +230,12 @@ silence.
 
 - **The fence list.** Every written-out scope exclusion as a numbered line
   (NOT-OURS-1, NOT-OURS-2, …). A fence is a working boundary, not a
-  disclaimer — it earns its ink by *visibly stopping facts* at step 3,
+  disclaimer — it earns its ink by *visibly stopping facts* at stage 3,
   where a fenced fact collides with nothing.
 - **The not-probed ledger.** What was *not* examined, named honestly
   (clock skew, deployment transitions, …) — so a later reader knows
   the census's edge, not just its content. An unprobed door flagged
-  here is raised at the step's close, never silently carried.
+  here is raised at the stage's close, never silently carried.
 - **The scope verdicts.** Each boundary question the census surfaced
   is put as a named verdict with a recommendation and its reason —
   *in* (more of the same named kind, richer demonstration) · *out*
@@ -247,7 +247,7 @@ silence.
 (conditional, logged):** a missed possession or unwritten refusal →
 LAYER-2-SYSTEM revision.
 
-## Step 3 — Run the collisions (LAYER-4-PROBLEMS)
+## Stage 3 — Run the collisions (LAYER-4-PROBLEMS)
 
 *Question: for each enemy fact × each possession — what distinct kill?*
 
@@ -264,7 +264,7 @@ kills and keeps none is the stage, not a victim — normal.
 **Hands down:** kills stated invariant-shaped, adversity named — consumable
 by the slice workflow's specify-correctness with zero translation.
 
-## Step 4 — Sort into owners (LAYER-3-AREAS)
+## Stage 4 — Sort into owners (LAYER-3-AREAS)
 
 *Question: do the collisions force distinct owners, or does one area own
 everything?*
@@ -279,9 +279,9 @@ record than silence.
 empty LAYER-3-AREAS, reached by sorting real kills, is a *confirmed* answer,
 not a gap. **Hands down:** the owners (or the one owner).
 
-## Step 5 — Check between owners (LAYER-5-INTERACTION)
+## Stage 5 — Check between owners (LAYER-5-INTERACTION)
 
-*Question: did step 4 create seams?*
+*Question: did stage 4 create seams?*
 
 If no: record **empty, with its reasons** — each emptiness a consequence of
 a prior decision (one area; siblings refused at LAYER-2-SYSTEM), never a
@@ -293,11 +293,11 @@ LAYER-4-PROBLEMS's local guarantees as given; it never redefines them.
 **Exit:** LAYER-5-INTERACTION empty-with-reason, or its cross-area
 constraints stated.
 
-## Step 6 — Cut the slice surface
+## Stage 6 — Cut the slice surface
 
 *Question: which concerns are theorems, which are definitions?*
 
-A **slice** = one invariant × one adversity needing its own proof. The step
+A **slice** = one invariant × one adversity needing its own proof. The stage
 runs as **three passes**, each with its test and its record:
 
 1. **The sort.** Every concern stamped **theorem** (carries an
@@ -306,7 +306,7 @@ runs as **three passes**, each with its test and its record:
    **definition** (contract-shaped — declared and checked, no
    adversity stages against it), with a written *because* per stamp
    so a near-miss's doubt is answered in the record, not left
-   lingering. When step 3's discipline held, kills arrive already
+   lingering. When stage 3's discipline held, kills arrive already
    theorem-shaped and this pass is a confirmation sweep — that is
    the discipline working, not the pass being skipped.
 2. **The dedupe.** Pairwise on the theorems, the operational test:
@@ -322,7 +322,7 @@ runs as **three passes**, each with its test and its record:
 
 Ordering is an *expectation*, not a commitment: derive a presumption order
 (what each proof takes as already standing), but re-decide the actual next
-slice at each close. Step 6's deliverable is the **shape**, not a sequence.
+slice at each close. Stage 6's deliverable is the **shape**, not a sequence.
 
 **Exit:** the registry stands — first slice chosen-next.
 **Hands off to:** the ground and the bootstrap, then
@@ -339,7 +339,7 @@ workflow sharpens a standing idea; it does not invent one.
 
 ## Open (to be settled by living)
 
-- Step 0 from a genuinely raw itch (all lived framings started from an
+- Stage 0 from a genuinely raw itch (all lived framings started from an
   already-shaped idea).
 - How the promise generalizes for systems that compute or relay rather than
   own facts (renderer, proxy).

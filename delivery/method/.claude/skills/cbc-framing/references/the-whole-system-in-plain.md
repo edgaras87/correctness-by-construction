@@ -57,12 +57,12 @@ not taste.
 4. **Sort into owners** (LAYER-3-AREAS) — only if the collisions
    actually force separate owners. One owner is a confirmed answer,
    not a gap.
-5. **Check between owners** (LAYER-5-INTERACTION) — only if step 4
+5. **Check between owners** (LAYER-5-INTERACTION) — only if stage 4
    made more than one.
 6. **Cut into slices.** A slice = one invariant made real: proven to
    survive its specific attack, end to end.
 
-*(Numbered 0–6 to match the detailed workflows step for step.)*
+*(Numbered 0–6 to match the detailed workflows stage for stage.)*
 
 ## Working one slice
 
