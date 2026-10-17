@@ -44,7 +44,7 @@ writes is its own.
 | Noticed something, not doing it now | Backlog | TODO.md |
 | Session ending, or a dead end hit | Work history, dead ends | devlog/devlog.md |
 | Shipped something users can see | What changed, for users | CHANGELOG.md |
-| The system's shape changed | Shape of the system | ARCHITECTURE.md |
+| The system's structure changed, or asking what a slice may rely on | The system as it stands: its components, what a slice may rely on, one row per rule | ARCHITECTURE.md |
 | The promise, the layers, or the slices are in question | Intent, system definition, slice registry | docs/system/ |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |
 | Agent setup changed, or a convention arrives | Decision, why, rejected options; the conventions held, the pin | .claude/decisions.md |

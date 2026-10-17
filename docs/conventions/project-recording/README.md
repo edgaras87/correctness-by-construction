@@ -569,8 +569,15 @@ files, no shared text.
 A short prose description of the system as it *is now*: the main
 components, their responsibilities, how they talk to each other,
 where the important invariants live, and where in the codebase each
-piece is found. The deliverer's maps documents and delivery
-instead, and its seat says how.
+piece is found. It is what a later slice may rely on. A step's
+contract, once certified, is history, and this map holds what stands
+now. The deliverer's maps documents and delivery instead, and its
+seat says how.
+
+*Found 2026-10-11, by run 3's RETRO D10: its records table sent a
+reader to the bootstrap requirements for what a slice may rely on.
+They were certified history, and read as current: their §3 called
+the migrations home "honestly empty" while it held V1 to V4.*
 
 ### 8.2 Why
 

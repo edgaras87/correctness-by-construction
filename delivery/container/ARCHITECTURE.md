@@ -22,6 +22,7 @@
 ### <component>
 
 Responsibility: <one sentence — what it owns, what nothing else may do>.
+A slice may rely on: <what stands now, one line each>.
 Why shaped this way: ADR-000N.
 
 ## Invariants
