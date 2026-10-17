@@ -9,12 +9,12 @@ foundation: practice, checked against concept v1
 Take one framed project to **ground**: the environment chosen and
 running, the services the problem's reasoning chain requires stood up,
 constrained to need, verified both ways, with the manuals that make the
-ground usable and reproducible. The exit is the walk's step 7: **the
+ground usable and reproducible. The exit is the walk's stage 7: **the
 ground runs, constrained to need, both manuals stand.**
 
 The full walk is `references/establishment-walk.md` — read it before
 Stage 1. When PostgreSQL is the decided datastore, two more references
-apply at their steps: `references/postgres-role-split.md` (the authority
+apply at their stages: `references/postgres-role-split.md` (the authority
 model — the constraint's realization) and
 `references/postgres-setup-walkthrough.md` (the lived end-to-end
 sequence, confirmed by two projects).
@@ -59,37 +59,37 @@ and habit is exactly what the method exists to refuse.
           → 5: stand up + verify BOTH ways → 6: contract → 7: exit test
 ```
 
-Full detail per step: `references/establishment-walk.md`. The
+Full detail per stage: `references/establishment-walk.md`. The
 non-negotiables:
 
-- **Step 1 gate:** the environment decision is logged with its why
-  *before* any ground file exists. **No compose file is born at step
-  1** — its content is steps 2–5's outcome. The adversities' demands
+- **Stage 1 gate:** the environment decision is logged with its why
+  *before* any ground file exists. **No compose file is born at stage
+  1** — its content is stages 2–5's outcome. The adversities' demands
   choose the environment; **the levers the evidence pulls are proven
   by the harness that pulls them**, not here. The operator manual's
   environment section is written from the lived stand-up, at the
   moment it happens.
-- **Step 2 gate:** one logged evaluation, slice by slice: what
+- **Stage 2 gate:** one logged evaluation, slice by slice: what
   capability does each invariant's evidence actually require? The
   service set is what survives that question — **and the
   not-provisioned list is stated with each exclusion's why.** A cache
   refused, a queue refused, and for what reason. No exclusion list, no
-  step 2.
-- **Step 3 gate:** every constraint names its **enforcement
+  stage 2.
+- **Stage 3 gate:** every constraint names its **enforcement
   mechanism** — the database's own grant system, a config, a
   structural wall — never convention, code review, or trust. A
   constraint without enforcement is a wish.
-- **Step 5 gate:** verification runs **both ways, always**: the
+- **Stage 5 gate:** verification runs **both ways, always**: the
   **catalog check** (real state queried against the model's claims,
   expected results stated beside each query) *and* the **behavioral
   check** (the constraint attempted and watched being refused, live).
   A ground verified one way is not verified.
-- **Step 6 gate:** both manuals stand — the **infrastructure
+- **Stage 6 gate:** both manuals stand — the **infrastructure
   contract** (builder-facing: identities, reachability, refusals, how
   schema changes are made) and the **operator manual** (stand-up-and-
   use, written from lived work). No manuals, no exit.
 
-## The lived-result discipline (every executing step)
+## The lived-result discipline (every executing stage)
 
 State the command and its expected result → run → read the actual
 output → the outcome is what actually happened. Record it in the
@@ -115,7 +115,7 @@ lived by two runs, and the shape below is theirs:
   environment; the service set with its not-provisioned list; the
   constraints, each with its enforcement. The walk as lived is the
   devlog's entry for the step, growing as the walk runs: for every
-  executing step, the command, what was expected, what actually
+  executing stage, the command, what was expected, what actually
   happened. Expected results sit in the verify suite and the
   operator manual. The environment ADR carries the mapping from
   this skill's default records to the repo's own — the sentence
@@ -150,7 +150,7 @@ The layout, both cases:
 - README `Prerequisites` section — projected at the exit, when the
   ground stands: the environment lines only, merged and filled from
   `templates/readme-prerequisites.md` (CBC ADR-0013). The stack's
-  line arrives at bootstrap, not here. Direction in the walk's step
+  line arrives at bootstrap, not here. Direction in the walk's stage
   7.
 - Optional, only if the project keeps public docs: a setup guide
   derived from the operator manual — a projection, never a second

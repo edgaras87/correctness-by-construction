@@ -1,4 +1,4 @@
-# The establishment walk — step by step
+# The establishment walk — stage by stage
 
 The method, end to end. Generic throughout; the walking project's
 concrete choices land in its own record and manuals, never here. This
@@ -23,11 +23,11 @@ check 2).
 Derive what the slices' adversities demand the evidence be able to
 *do*: kill processes mid-write, race plural instances, break a commit
 boundary, survive restarts — each project's own list. This derivation
-is the step's living half — it chooses the environment, and the
+is the stage's living half — it chooses the environment, and the
 manuals record it.
 
 **The demands choose the environment; the ground does not prove
-them.** The ground proves the engine (below) and, at step 5, what the
+them.** The ground proves the engine (below) and, at stage 5, what the
 store itself promises: each constraint seen refused. A lever
 the evidence pulls — starting several instances, killing one,
 freezing the store — is proven where the harness that pulls it is
@@ -57,12 +57,12 @@ verified by execution:
 This checklist keeps every project's environment section structurally
 comparable while its facts stay each machine's own.
 
-**No ground file is born at this step.** `compose.yaml` and its kin
-are steps 2–5's outcomes — their content *is* the service evaluation's
+**No ground file is born at this stage.** `compose.yaml` and its kin
+are stages 2–5's outcomes — their content *is* the service evaluation's
 and the constraints' result; a file born here would exist before the
 decisions that define it. The environment's proof is engine-level
 (image pulled, container run, end to end); the file-level path is
-covered at step 5's opening sanity check (`podman compose config`).
+covered at stage 5's opening sanity check (`podman compose config`).
 An ephemeral throwaway compose smoke test outside the repo is allowed
 when the operator wants the earlier signal; it is never owed and never
 committed.
@@ -120,7 +120,7 @@ Then **two complementary verifications, always both**:
 
 The operator manual grows its service sections from this lived work.
 
-For PostgreSQL, the whole of steps 3–6 has a lived end-to-end
+For PostgreSQL, the whole of stages 3–6 has a lived end-to-end
 sequence: `postgres-setup-walkthrough.md`. Consult it when PostgreSQL
 recurs; never force its shape on a different service.
 
