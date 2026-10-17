@@ -81,6 +81,22 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Decide whether our own forms become shapes, and whether a
+      shape's part can be optional (2026-10-17, the reviewer).
+      Context: a shape is read at a step's gate only, so the work
+      is not shaped by it (`docs/conventions/shapes/` §1). Our own
+      forms, a reading's and a manual's, are rules that load while
+      the file is written. They kept that place because this repo
+      had no steps; since ADR-0057 it has.
+      Ideas:
+      - the work's rules keep what must hold while working, such as
+        numbers never changed; the forms become shapes.
+      - a part a shape names may be optional, where the work does
+        not always produce it.
+      Trigger: run 4's reading, which reads how run 4 lived run 3's
+               shapes.
+      See: devlog 2026-10-17, our forms as shapes.
+
 - [ ] Refine this repo against its own rules (2026-10-17, the
       reviewer).
       Context: most of the text predates its rules: writing and

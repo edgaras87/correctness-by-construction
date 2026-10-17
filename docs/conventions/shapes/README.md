@@ -55,12 +55,12 @@ it arrived at by keeping it and pointing at it from its backlog.
 
 ### The deliverer's seat
 
-The deliverer makes outputs too — a reading is one — but it has no
-steps and no gates, so no shape is in use here. It holds the shapes
-it ships, each in the group of what it shapes (§4), and reads a
-run's shapes when it reads the run. Its own rules that state a
-form, with a Governs line, are rules: they load while the file is
-written, which is what a shape never does.
+The deliverer makes outputs too — a reading is one — and its steps
+have gates since ADR-0057. Its own forms are rules today, with a
+Governs line, loaded while the file is written; whether they become
+shapes read at a step's gate is open (TODO). It holds the shapes it
+ships, each in the group of what it shapes (§4), and reads a run's
+shapes when it reads the run.
 
 ## 1. What a shape is
 
