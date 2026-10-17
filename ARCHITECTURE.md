@@ -309,7 +309,7 @@ review, and each entry names which.
 ```
 README.md            the front door: what this is, how to use it
 ARCHITECTURE.md      this map
-PLAN.md              open milestones and their gates
+PLAN.md              the step form, and the step being worked
 TODO.md              what's next, and the backlog
 CHANGELOG.md         the concept-version log (ADR-0003)
 devlog/              work history, one file per month

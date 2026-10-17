@@ -48,7 +48,7 @@ recorded way instead of living in a head and scattered notes.
 
 | Record | Where | What it answers |
 |---|---|---|
-| Plan | [PLAN.md](PLAN.md) | Which milestones are open, and what *done* means for each |
+| Plan | [PLAN.md](PLAN.md) | The step being worked, and what *done* means for it |
 | Decisions | [docs/adr/](docs/adr/) — cited from other repos as `CBC ADR-nnnn` | Why is it built this way |
 | Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | The map: what is here, what ships, and what must stay true |
 | Backlog | [TODO.md](TODO.md) | What's next, and what's known but not done |
