@@ -3,7 +3,7 @@
 <!-- The working arrangement's decision log. Append-only, newest
      last. One entry per
      arrangement decision — a skill added or changed, a rule tuned,
-     a workflow adopted. Three lines: what, why, what was rejected.
+     a workflow adopted. Three parts: what, why, what was rejected.
 
      Division of labor: the standing rule rides as a comment in the
      artifact it governs — this log keeps the why and the rejected

@@ -250,14 +250,6 @@
       Trigger: the two found different, or the worked example's
                next edit.
 
-- [ ] Decide a decisions entry's length (2026-10-02, the eval).
-      Context: `.claude/decisions.md`'s header asks for three lines
-      — what, why, what was rejected; its 48 entries run a median of
-      eighteen, the longest fifty-one. Either the header or the
-      habit is wrong.
-      Trigger: the next time the header is opened.
-      See: devlog 2026-10-02.
-
 - [ ] Decide whether `infra-establish`'s contract carries a paragraph
       on the store's facility (2026-09-17, never-oversold).
       Context: run 3 wrote one at Step 3 — the ways its store makes

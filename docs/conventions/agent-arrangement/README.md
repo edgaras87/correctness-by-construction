@@ -296,8 +296,8 @@ ships shapes, or when the project writes its first.
 
 ### 3.4 `decisions.md`
 
-The arrangement's decision log: append-only, dated, three lines per
-entry — what changed, why, what was rejected. The standing rule
+The arrangement's decision log: append-only and dated, each entry in
+three parts — what changed, why, what was rejected. The standing rule
 rides as a comment in the artifact it governs; the log keeps the why
 and the rejected options; neither repeats the other. A run's also
 holds what it was delivered: its birth entry lists the conventions
@@ -305,6 +305,12 @@ it holds, and each delivery entry the pin and the read-through
 (`docs/conventions/exchange/` §2.2). The deliverer's holds neither,
 since it receives no delivery (ADR-0042). Its rules ride in its
 own stub.
+
+*Found 2026-10-02, at the eval: the deliverer's 48 entries ran a
+median of 18 lines, the longest 51, under a header asking for three.
+Found again 2026-10-11, by run 3's RETRO D1: it kept three-line
+entries, and its entries still ran 5 to 25 lines. Both kept the
+three parts, so the header asks for those and no line count.*
 
 ### 3.5 `settings.json`
 
