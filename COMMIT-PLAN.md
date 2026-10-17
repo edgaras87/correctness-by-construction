@@ -60,6 +60,14 @@ moments.
 with a reading's Known already; "No step open", with run 3's
 reading named; Step 10 and Release gone.
 
+**7b. `docs: a step takes the gates of its skills`**
+Added on the reviewer's question: PLAN's form listed a reading's
+close items, a second home for what its rule holds. project-
+recording's seat: a step's gate takes the gates of what it uses, as
+a run's does, and the rest is written when it opens. PLAN's Known
+already says that, with no list; the reading's list and stages go.
+ADR-0057's decision 3, still Proposed, says the list is the rule's.
+
 **8. `docs: TODO takes Step 10 and Release`**
 `exchange-birth` gains the birth, trigger run 5's birth; a new item,
 our retrospective, trigger the birth step's close; Release to Later
@@ -68,8 +76,9 @@ Release's gate rewritten.
 
 **9. `chore(agent): our skills and rules open at a step`**
 Our `first-time-work` description: the three moments.
-`working-a-reading.md` step 9: its outcomes point at a reading
-step's gate. `exchange-read` step 4: "the shape" becomes
+`working-a-reading.md` gains *Gates*: a reading's five close items
+as outcomes, and its stages for a step's Notes; step 9 keeps the
+how and points at them. `exchange-read` step 4: "the shape" becomes
 `.claude/rules/exchange-reading.md`. `CLAUDE.md`'s PLAN row: opening
 a step, or closing its gate. `.claude/decisions.md`: one entry for
 the arrangement, with the two reading rules kept apart on their
@@ -94,8 +103,9 @@ After the close, the reading marks W13 done:
 
 - **Manuals before what derives from them.** project-recording
   before PLAN and TODO; first-time-work's manual before our skill.
-- **PLAN before the agent commit.** `working-a-reading.md` step 9
-  points at the step form's Known already, which must exist first.
+- **7b before 9.** PLAN's Known already points at what a step
+  uses; the reading's gates then land in its rule, in the agent
+  commit.
 - **The old ADRs are amended at the records commit,** once
   ADR-0057 is Accepted, not while it is Proposed.
 - **One agent commit.** Every agent file follows from the
