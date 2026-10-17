@@ -194,7 +194,7 @@ never seen red is not known to be watching.
    stay in the record. Then the ordering is re-decided, with its
    reason written.
 3. **Where this slice changed how the system is built, add or change
-   rows in ARCHITECTURE's table of rules:** one row per rule, never a
+   rows in ARCHITECTURE's Invariants table:** one row per rule, never a
    paragraph. How the slice got there stays in its record.
 4. **Last, read what the slice made against the project's own
    shapes,** never this skill's, which carries none. Where no shape

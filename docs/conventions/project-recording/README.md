@@ -588,11 +588,22 @@ popularized by matklad's "ARCHITECTURE.md" essay.)
 One or two pages: a component diagram (ASCII is fine), a paragraph
 per component ("the `orders` module owns all order state
 transitions; nothing else writes to the orders table"), the system's
-key invariants, a "where to find things" codemap, and pointers into
+invariants, a "where to find things" codemap, and pointers into
 the local maps of the areas that have one (§8.6). Link ADRs for the
 *why* behind each shape. Update it when structure changes —
 practical trigger: whenever a step gate closes and the diagram it
 implies no longer matches reality.
+
+The invariants are a table, one row per rule: what computes it, what
+refuses a wrong result, the test that goes red, and the slice that
+proved it. A slice's close adds or changes rows. It never adds a
+paragraph: how the slice got there is its record's.
+
+*Found 2026-10-11, by run 3's RETRO D16: run 3's ARCHITECTURE ran
+to 2,031 words. Its invariants section, 634 of them, told each
+slice's story again. The table below it, 304 words, already said
+what was true. Run 3 made the table its invariants section; the
+stub now starts there.*
 
 ### 8.5 Anti-patterns
 
