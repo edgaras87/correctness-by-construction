@@ -23,6 +23,11 @@ Our skill's close writes the lasting form in conventions §2's form,
 where it now points only at §4's list of places. An agent file, so
 a commit of its own (commit-messages).
 
+**2b. `docs: a skill is a procedure in stages`**
+The first-time-work manual's close table called a skill "a
+procedure with steps", against §2 since commit 1. Found by commit
+2's foundation check; a docs file, so apart from commit 2.
+
 **3. `docs: TODO holds the skill and rule rewrite`**
 One item: a rule that writes a skill or rule from its convention,
 loaded where they are written, first-time work's output its input.
