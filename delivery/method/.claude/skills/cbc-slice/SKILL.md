@@ -196,12 +196,13 @@ never seen red is not known to be watching.
 3. **Where this slice changed how the system is built, add or change
    rows in ARCHITECTURE's Invariants table:** one row per rule, never a
    paragraph. How the slice got there stays in its record.
-4. **Last, read what the slice made against the project's own
-   shapes,** never this skill's, which carries none. Where no shape
-   governs what the slice made, nothing is checked. Where one does,
-   each difference is **proposed as a diff, never corrected**. How
-   each ends is the shapes rule's
-   (`.claude/rules/shapes-lifecycle.md`), and the human says which.
+4. **Last, read what the slice made against the shapes in
+   `.claude/shapes/`,** the method's copies and any the project
+   wrote; this skill carries none. Where no shape governs what the
+   slice made, nothing is checked. Where one does, each difference
+   is **proposed as a diff, never corrected**. How each ends is the
+   shapes rule's (`.claude/rules/shapes-lifecycle.md`), and the human
+   says which.
 
 **Gate:** the slice is closed in the registry with its answers,
 provisionals and hand-ons one line each and the ordering re-decided in

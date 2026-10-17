@@ -29,8 +29,8 @@ alternatives are never weighed against the actual requirement.
 
 One record per slice, written as the stages go. This is the minimum
 every record needs: where each stage's output goes, and one block
-per guarantee. A project may keep a shape that adds to it and says
-how each part reads; the shape is read at the close, never while
+per guarantee. The slice-record shape, in `.claude/shapes/`, adds to
+it and says how each part reads; it is read at the close, never while
 writing. Beside each part, the stage that writes it.
 
 ```
@@ -186,12 +186,15 @@ later slice may rely on now, so it stays short and current. Each row
 names what computes the rule, what refuses a wrong result, the test
 that goes red, and the slice that proved it.
 
-**Why the shapes are the project's own.** A shape handed down is an
-answer a project did not earn, and one adopted from elsewhere hides
-what this project would have arrived at itself. Whether an output
-is worth writing a shape from is a judgement the project makes when
-it makes it, not a step of this close. Why a shape is read only at
-the close: the shapes rule, "One place, read at the gate".
+**Why the shapes are not in this skill.** They arrive with the
+method as copies in `.claude/shapes/`: the slice record, the evidence
+test, the kill and the registry entry. The project changes them, or
+writes its own, as the shapes rule says. A shape inside this skill
+would be read while the record is written, and the record would
+follow it instead of showing where it is wrong. Whether an output is
+worth a new shape is a judgement the project makes when it makes it,
+not a step of this close. Why a shape is read only at the close: the
+shapes rule, "One place, read at the gate".
 
 ---
 
