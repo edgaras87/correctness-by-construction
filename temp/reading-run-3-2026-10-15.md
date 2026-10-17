@@ -251,6 +251,9 @@ deliverer*. Release opens after it.
   *Sharper since W3: the step form's Now line names a skill's
   stages, and `cbc-framing`'s are called steps, so framing's Now
   would read "Now: Step 3" inside Step 1.*
+  *Ended 2026-10-17 by W17 (`d7a8afe`, `f169d4a`): framing's parts
+  are Stage 0 to Stage 6, and `infra-establish`'s walk Stage 1 to
+  Stage 7.*
 - **F15** — Held asks restated: `infra-establish` silent on the
   store's facility (F4's edit now writes part of it); the absence
   rung. RETRO D20 names run 4 as the run that can trigger both.
@@ -758,6 +761,9 @@ deliverer*. Release opens after it.
 - **W17** — D6: a skill's phases called stages, `cbc-framing`'s and
   `infra-establish`'s, and every text that cites them. **plan**
   *Added 2026-10-17.*
+  *Done 2026-10-17: by the commit plan for stages (`d6361f2` to the
+  close), its commits `d7a8afe`, `f169d4a`. "Step" stays where it
+  meant PLAN's Step 3, twice in `infra-establish`.*
 
 ## 7. What this reading taught
 
