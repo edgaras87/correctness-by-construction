@@ -44,6 +44,9 @@ line by stage, opening and closing items.
   manual reaches its maintainer, not the step.
 - **The reading's work items as gate items.** Rejected: two homes,
   and the list grows while it is worked.
+- **A reading's close items listed in PLAN's form.** Rejected on
+  the reviewer's word: a second home for what its rule holds, and
+  every new kind of step would edit PLAN.
 - **The read and the work as two steps.** Rejected: the read alone
   has no outcome worth a gate, and an extension would reopen a
   closed step.
@@ -67,22 +70,22 @@ line by stage, opening and closing items.
 2. **The run's step form, taken almost whole,** as `## The step
    form` at the top of our `PLAN.md`: Goal, a Now line by stage,
    the gate written at opening, Notes; the opening items, with the
-   branch "if it has one"; the step's own items; Known already.
+   branch "if it has one"; the step's own items; Known already,
+   the gates of the skills and rules a step uses.
    Dropped: *For run 5 only*, the shapes item, decision before code,
    and the one-line closed gate, since a step leaves the plan and
    the devlog names it with the commit of the ticked gate. Kept from
    ADR-0041 as every step's closing items: lessons folded back, and
    `CLAUDE.md` re-read.
-3. **A reading is one step.** Its Known already: every finding
-   ended, every work item ended and marked, the note in the run,
-   the lessons placed, the reading deleted. Its F, D and W stay in
-   the reading. Its Notes name the stages and what runs each: read
-   (`exchange-read`), decide and work (`working-a-reading.md`),
-   note (`exchange-deliver`), close (that rule's step 9). An
+3. **A reading is one step.** Its gates and stages are those of the
+   skills and rules it uses: `working-a-reading.md` holds the close
+   (every finding ended, every work item ended and marked, the note
+   in the run, the lessons placed, the reading deleted), copied into
+   the step when it opens. Its F, D and W stay in the reading. An
    extension returns Now to read, and the branch is cut right after
    the read. A delivery is a reading step's note stage, an own item
-   of the step whose change it sends, or, alone, a TODO item. The
-   two reading rules stay apart, each on its own foundation. Run 3's
+   of the step whose change it sends, or, alone, a TODO item. The two
+   reading rules stay apart, each on its own foundation. Run 3's
    reading finishes as it began; run 4's is the first step.
 4. **Step 10 and Release leave the plan.** The birth joins TODO's
    `exchange-birth`, due at run 5's birth. Our retrospective becomes
@@ -93,7 +96,7 @@ line by stage, opening and closing items.
    nothing to say how: a step's opening item, a work item inside a
    step, a small TODO item come due.
 6. **PLAN holds the open step, and TODO never repeats it.** TODO's
-   Now holds small items due while the step runs; Next, the next
+   Now holds small items due while the step is open; Next, the next
    step's candidates and items not yet due. A TODO item that becomes
    a step leaves TODO. Until run 3's reading closes, PLAN says no
    step is open.

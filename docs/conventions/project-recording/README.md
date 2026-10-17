@@ -77,18 +77,18 @@ And its `PLAN.md` holds one step: the piece of work being done now.
 What makes work a step, and the step's form, the run's adapted to
 this seat, are under `## The step form` at the top of the
 deliverer's own `PLAN.md`. TODO's Now holds what is due while the
-step runs, never the step itself. A run's step takes its gate from
-the skill that holds it; the deliverer's is written from the form
-when the step opens. A finished step leaves the plan, and the devlog
-entry that closes it names the step and the commit of its ticked
-gate. A run keeps its finished steps whole, because they are the
-evidence its playbook is folded from; no playbook is folded from the
-deliverer's own plan, so its finished steps are only history, which
-is the devlog's. For the same reasons, folding lessons back and
-re-reading the entry file close every step's gate; its plan has no
-"Discovered along the way", since TODO takes a finding at once; and
-no decision index, since `docs/adr/` lists itself (§3.3's index is
-the run's).
+step is open, never the step itself. A step's gate takes the gates
+of the skills and rules it uses, as a run's does, and the rest is
+written from the form when the step opens. A finished step leaves
+the plan, and the devlog entry that closes it names the step and the
+commit of its ticked gate. A run keeps its finished steps whole,
+because they are the evidence its playbook is folded from; no
+playbook is folded from the deliverer's own plan, so its finished
+steps are only history, which is the devlog's. For the same reasons,
+folding lessons back and re-reading the entry file close every
+step's gate; its plan has no "Discovered along the way", since TODO
+takes a finding at once; and no decision index, since `docs/adr/`
+lists itself (§3.3's index is the run's).
 
 And its `ARCHITECTURE.md` maps documents and delivery rather than a
 built system: what is stated here, what ships, how it changes, the

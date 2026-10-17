@@ -116,6 +116,8 @@
         seats differ, told in five (W8).
       - foundations: every `foundation` line read once against its
         manual; the check reads only what changes.
+      - words: "run" as a verb for skills and steps, beside "run"
+        the project; say "uses".
       Trigger: the reading of run 3 closes.
       See: devlog 2026-10-17, the refinement.
 

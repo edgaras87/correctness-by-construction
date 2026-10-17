@@ -23,11 +23,12 @@
 
 **A step is the one piece of work being done now:** a reading of a
 run, or a TODO item big enough for a branch. A change set inside it
-is a commit plan, and a small item needs no step. TODO never
-repeats the open step; a TODO item that becomes a step leaves TODO.
+is a commit plan, and a small item needs no step, nor does a
+delivery alone. TODO never repeats the open step; a TODO item that
+becomes a step leaves TODO.
 
 ```markdown
-## Step: <title>  (<what runs it, if anything>)    [~]
+## Step: <title>  (<the skills and rules it uses, if any>)    [~]
 
 Goal: <one sentence: what is true when this step is done>
 Now: <the stage the step is in, one line>
@@ -35,7 +36,7 @@ Gate:
 <the opening items below, filled in>
 <this step's own items, asked of the goal>
 <the closing items below, filled in>
-Notes: <opened <date>; its stages, and what runs each; what the
+Notes: <opened <date>; its stages, and what each uses; what the
  reviewer signs and when>
 ```
 
@@ -62,41 +63,22 @@ does not set a standard the work was held to.
       read, which comes before the branch
       (`.claude/rules/working-a-reading.md`, step 1).
 - [ ] This gate was written before the work started.
-- [ ] The step's way is known: what runs it, or the stages its
-      Notes list from earlier work. If neither, the step opened a
-      provisional manual (`first-time-work`).
+- [ ] The step's way is known: the skills and rules it uses, or
+      the stages its Notes list from earlier work. If neither, the
+      step opened a provisional manual (`first-time-work`).
 
 **The step's own items.** Ask of the goal: "how would I check that's
 true?" Each answer is one item: a fact, checkable by looking, what
 and not how. Together they equal the goal. For `exchange-birth`'s
 goal "a project born from this repo alone", one item is "run 5's
 birth entry names one pin, ours, and nothing from another repo".
-What runs a stage sets the order of work, and its stages are not
+What a stage uses sets the order of work, and its stages are not
 copied into the gate. An item is ticked when it comes true,
 whenever that is.
 
-**Known already.** Items this form already knows a kind of step
-needs, whatever its goal. They join its own items when the gate is
-written.
-
-*A reading.*
-
-- [ ] Every finding has ended in a decision or a work item, or says
-      why it needs neither.
-- [ ] Every work item has ended, taken, declined or held, and is
-      marked in the reading with its commit.
-- [ ] The note, written from the reading's final state, is in the
-      run, and names the commit read through.
-- [ ] The reading's lessons sit where they act, or in TODO.
-- [ ] The reading is deleted, and the devlog says so.
-
-Its Notes name the reading's file and its stages: read
-(`exchange-read`), decide and work
-(`.claude/rules/working-a-reading.md`), note (`exchange-deliver`),
-close (the same rule's step 9). When the run moves and the reading
-is extended, Now returns to read. A delivery is the note stage of a
-reading, an own item of the step whose change it sends, or, alone,
-a TODO item.
+**Known already.** The gates of the skills and rules a step uses,
+their *Gates* sections, are copied in when its gate is written, and
+its Notes take their stages. A step that uses none writes its own.
 
 **At the close.**
 
