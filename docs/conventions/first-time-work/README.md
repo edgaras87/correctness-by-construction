@@ -38,9 +38,12 @@ seats.*
 - **The step form's opening item, shipped** with the playbook,
   `delivery/fills/cbc-run-pure-playbook.md`: every step asks whether
   its way is known, and a step whose way is not opens the skill.
+- **The same opening item in `PLAN.md`'s step form, the
+  deliverer's** (ADR-0057), asked when a step opens here.
 - **`.claude/skills/first-time-work/SKILL.md` — the deliverer's**,
-  derived from this page, opened when a reading's work item, or a
-  TODO item come due, opens with nothing to say how to do it.
+  derived from this page, opened when a step opens, or a work item
+  inside one, or a small TODO item comes due, with nothing to say
+  how to do it.
 
 This page explains; the skills state. What derives from this page
 is that list. A change here walks it; a change forced in one of
@@ -75,8 +78,10 @@ Two jobs, and only the first has a skill.
   or a concept chapter, marked *on trial*
   (`docs/conventions/conventions/` §1). It is not drafted elsewhere
   first. The mark is what makes it provisional.
-- **Our skill opens** when a reading's work item, or a TODO item
-  come due, opens with nothing to say how to do it.
+- **Our skill opens** at the same moments as a run's: a step
+  opening, a work item inside one, or a small TODO item coming due,
+  with nothing to say how to do it. A step's opening items in our
+  `PLAN.md` ask it, as a run's do.
 - **What the close makes is written for this repo first,** then
   derived for the container if a run needs it.
 - **A run judges it after,** when one first uses it. That run's
@@ -157,16 +162,16 @@ an on-trial mark, so nothing is drafted apart from it.*
 
 A skill, because the way is a procedure bound to two moments: work
 opening with nothing to say how to do it, and that work's close. The
-first moment is asked, not left to be noticed: in a run, every
-step's opening items ask whether its way is known. A description
+first moment is asked, not left to be noticed: in both seats,
+every step's opening items ask whether its way is known. A description
 matched to phrases would miss how the reviewer speaks, and fire when
 something else is meant. *Changed 2026-10-16, before the skill
 shipped, on the reviewer's word.*
 
 A rule loaded in every session would pay for rare work every time.
 A manual alone reaches a maintainer, not the agent at the moment.
-The step form's item is there because, in a run, a step is where
-such work starts.
+The step form's item is there because, in either seat, a step is
+where such work starts.
 
 ## What this does not cover
 
