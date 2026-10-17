@@ -81,6 +81,28 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Refine this repo against its own rules (2026-10-17, the
+      reviewer).
+      Context: most of the text predates its rules: writing and
+      one-home (ADR-0053), the foundation check (2026-10-17). The
+      rules guard new and changed text; older text is rewritten in
+      work of its own, and this is that work. W8 of the reading of
+      run 3 joins it when that reading closes.
+      Ideas:
+      - dependencies: a retelling becomes a pointer, and a pointer
+        stays only if needed (conventions §3.1).
+      - seats: a deliverer seat says how its convention works here,
+        nothing more; project-recording's first (the playbook, why
+        runs keep steps).
+      - plain language: living text older than ADR-0053.
+      - stale lines: each one noticed and not fixed where found.
+      - one home: facts told in several places, such as how the
+        seats differ, told in five (W8).
+      - foundations: every `foundation` line read once against its
+        manual; the check reads only what changes.
+      Trigger: the reading of run 3 closes.
+      See: devlog 2026-10-17, the refinement.
+
 - [ ] Decide whether a delivery checks its paths against the run's
       own files (2026-09-30, the reading of run 3).
       Context: our shipped `.claude/rules/shapes-lifecycle.md` sat
@@ -143,6 +165,19 @@
       See: devlog 2026-09-12, later.
 
 ## Later / someday
+
+- [ ] Decide whether a TODO item's story is written when the item
+      is added (2026-10-17, the reviewer).
+      Context: TODO's header sends an item's story to that
+      session's devlog entry, written at the session's end. By
+      then the reasons are cut to a line, and an item added
+      mid-session has no See until then. Tried first on the
+      refinement item.
+      Ideas: TODO's header gains "when the item is added", and
+             project-recording says it for both seats.
+      Trigger: three items written this way, or the first new
+               session that resumes from one.
+      See: devlog 2026-10-17, the refinement.
 
 - [ ] Decide whether a check compares the worked example's two
       copies (2026-10-15, the commit plan for writing rules).
