@@ -139,7 +139,7 @@ The manual, and what happened, become one lasting form:
 
 | Form | When | Example |
 |---|---|---|
-| A skill | a procedure with steps, bound to a moment | run 3's `retrospective` |
+| A skill | a procedure in stages, bound to a moment | run 3's `retrospective` |
 | A rule | true at a path, or in every session | `working-a-reading.md` |
 | A shape | the form of one kind of output | run 3's kill shape |
 | A step | a moment in every run of a playbook | the retrospective step |
