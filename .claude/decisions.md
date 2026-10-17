@@ -1099,3 +1099,11 @@
   Rejected: three lines kept, and the habit called wrong; a "rules
   in force now" list here too, as a run's log gets (held for the
   refinement, TODO).
+
+- 2026-10-17 The entry above, corrected: a run's log gets its
+  "rules in force now" list at the retrospective (the retrospective
+  skill, step 3), not at birth, and no TODO item holds one for
+  this log.
+  Why: run 3 and run 4 each wrote theirs at the retrospective, so
+  the stub's list from birth was dropped (`d1922c4`).
+  Rejected: editing the entry above (the log is append-only).
