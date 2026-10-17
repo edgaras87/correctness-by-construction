@@ -1070,3 +1070,22 @@
   `docs/conventions/agent-arrangement/` §2.4: it is a convention,
   and it has a moment); a hook now (no miss under the rule yet; a
   miss is its trigger).
+
+- 2026-10-17 This repo's agent opens work at a step (ADR-0057). Our
+  `first-time-work` opens when a step, a work item inside one, or a
+  small TODO item comes due with nothing to say how.
+  `working-a-reading.md` holds a reading's gates and stages, which
+  its step checks its own items against; step 9 keeps how the list
+  closes. `exchange-read` names the reading's form, a rule, where it
+  said "shape". `CLAUDE.md`'s PLAN row: opening a step.
+  Why: a step's gate takes the gates of the skills and rules it
+  uses, so a reading's live in its rule, not in PLAN.
+  Rejected: the gates in PLAN's form (a second home, and every new
+  kind of step would edit PLAN); `exchange-read` and
+  `working-a-reading.md` merged (a skill fires only when called, a
+  reading is worked across sessions, and a rule cannot load before
+  the reading exists); `exchange-reading.md` and
+  `working-a-reading.md` merged. The 2026-10-01 entry kept those two
+  apart because a shape is form only; the form is a rule today, and
+  they stay apart because they stand on two foundations. Whether
+  our forms become shapes is open (TODO).

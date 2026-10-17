@@ -1,6 +1,6 @@
 ---
 name: first-time-work
-description: Start work here that nothing yet says how to do, from a provisional manual written where manuals live and marked on trial, and end it in a lasting form or none. Use when a reading's work item, or a TODO item come due, opens and no skill, rule or earlier work here says how to do it. Do NOT use for work a skill covers, even one with a gap (edit it instead). A new skill is written at this skill's close, never first.
+description: Start work here that nothing yet says how to do, from a provisional manual written where manuals live and marked on trial, and end it in a lasting form or none. Use when a step opens, or a work item inside one, or a small TODO item comes due, and no skill, rule or earlier work here says how to do it; a step's opening items in PLAN.md ask this. Do NOT use for work a skill covers, even one with a gap (edit it instead). A new skill is written at this skill's close, never first.
 foundation: the first-time-work convention
 ---
 
@@ -69,3 +69,4 @@ reviewer whether to start again from a new way.
 
 - ADR-0056 — first-time work starts from a provisional manual; ours
   sits where manuals live, on trial
+- ADR-0057 — it opens at a step too, as a run's does

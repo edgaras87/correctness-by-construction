@@ -14,7 +14,7 @@ it. Documents only — no code, no runs.
 
 | When | What's in it | Record |
 |---|---|---|
-| Naming a milestone, or closing one's gate | Open milestones and their gates | PLAN.md |
+| Opening a step, or closing its gate | The step form, and the open step | PLAN.md |
 | A decision taken, options rejected | Decisions and why | docs/adr/ |
 | Starting work, or noticed something not doing it now | What's next; the backlog | TODO.md |
 | Session ending, or a dead end hit | Work history, dead ends | devlog/<YYYY-MM>.md |

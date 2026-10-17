@@ -43,15 +43,15 @@ document afterwards is work, not this skill; when the work is done,
      otherwise the commit of its last delivery entry, the one that
      recorded `P`.
 
-4. **Write the reading — or extend the one that is open.** If
-   `temp/` holds a reading for this run, this read extends it: new
-   items take the next numbers. Otherwise write
-   `temp/reading-<run>-<date>.md`, to the shape that governs it: one
-   line per edit, per ask, per finding — what it is, where it is, and
-   nothing decided yet. One question every reading asks: what does
-   the run teach the worked example (`docs/conventions/exchange/`
-   §6.3)? The first line, written at step 2, is the read-through the
-   next note will carry. One reading per run, open at a time.
+4. **Write the reading — or extend the one that is open.** If `temp/`
+   holds a reading for this run, this read extends it: new items take
+   the next numbers. Otherwise write `temp/reading-<run>-<date>.md`,
+   to its form, `.claude/rules/exchange-reading.md`: one line per
+   edit, per ask, per finding — what it is, where it is, and nothing
+   decided yet. One question every reading asks: what does the run
+   teach the worked example (`docs/conventions/exchange/` §6.3)? The
+   first line, written at step 2, is the read-through the next note
+   will carry. One reading per run, open at a time.
 
 ## 2. Gates
 
