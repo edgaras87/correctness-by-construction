@@ -447,6 +447,15 @@ deliverer*. Release opens after it.
     `CLAUDE.md`'s records row; our `first-time-work` skill;
     `working-a-reading.md` step 9; `exchange-read` step 4, whose
     "shape" is the rule `exchange-reading.md`.*
+  *Built 2026-10-17 by W13 (ADR-0057). On the reviewer's
+  questions: project-recording's seat points at PLAN's step form
+  and retells no reading; our forms' place as rules is open, our
+  forms as shapes held in TODO; a TODO item's story is written in
+  the devlog when it is added, on trial.*
+  *Decision 3 corrected 2026-10-17: a reading's gates and stages
+  live in `working-a-reading.md`, not in PLAN's form. A step takes
+  the gates of the skills and rules it uses, its own items written
+  first and the gates checked after.*
 - **D10** — A rule for this repo: when a skill, rule or shape is
   edited, the manual or chapter its `foundation` names is opened in
   the same commit, the two texts shown side by side, and the
@@ -564,6 +573,8 @@ deliverer*. Release opens after it.
   *Since W12: conventions §4 opens "As the last four were added" and
   names four; writing, retrospective and first-time-work came the
   same way since. Fixed in this pass.*
+  *Since W13: TODO's Now keeps only what is due, and the triggers
+  that named Step 10 are rewritten (`ff13519`).*
 - **W7** — `CLAUDE.local.md` from the reviewer's hand (F12): where it
   lands here, if anywhere. *RETRO D25 is D8's since 2026-10-16.*
   *Since W11, the file's "New kinds of work" can point at the
@@ -583,6 +594,9 @@ deliverer*. Release opens after it.
   *Step 10's "lessons folded back" item became this repo's own
   retrospective, on trial (`5caa466`, ADR-0054). W8 applies run 3's
   lessons ahead of it.*
+  *Since W13: TODO's refinement item takes W8 when this reading
+  closes, the same checks for all our rules; W8 then ends as held,
+  moved there (devlog 2026-10-17).*
 - **W9** — At the reading's close, delete the two run 4 drafts in
   `temp/`, the kickoff and the message (`f097695`), with a devlog
   line. *Added 2026-10-15.*
@@ -602,6 +616,8 @@ deliverer*. Release opens after it.
   (`e744bd2` to `71df140`), and conventions §4 naming first-time
   work as a source of conventions (`74cbaa0`).*
 - **W13** — Our PLAN, as D9 settles. **plan** *Added 2026-10-16.*
+  *Done 2026-10-17: ADR-0057, by the commit plan for plan steps
+  (`04a49ed` to `1abee8d`).*
 
 ## 7. What this reading taught
 
