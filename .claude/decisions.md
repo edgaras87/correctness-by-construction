@@ -4,7 +4,7 @@
      last. One entry per arrangement decision — a skill or rule
      added, what one asks changed, a workflow adopted. A fix that
      brings a skill or rule to its manual is no decision: its
-     commit body says why. Three lines: what, why, what was
+     commit body says why. Three parts: what, why, what was
      rejected.
 
      Division of labor: the standing rule rides as a comment in the
@@ -1089,3 +1089,13 @@
   apart because a shape is form only; the form is a rule today, and
   they stay apart because they stand on two foundations. Whether
   our forms become shapes is open (TODO).
+
+- 2026-10-17 An entry here has three parts, what, why, what was
+  rejected, not three lines.
+  Why: at the eval (2026-10-02) our 48 entries ran a median of 18
+  lines, the longest 51; run 3's ran 5 to 25 after its RETRO D1
+  kept three lines. The habit outgrew the rule. W14 of the reading
+  of run 3, decision 4.
+  Rejected: three lines kept, and the habit called wrong; a "rules
+  in force now" list here too, as a run's log gets (held for the
+  refinement, TODO).
