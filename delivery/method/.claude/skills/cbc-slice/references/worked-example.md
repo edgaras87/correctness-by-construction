@@ -104,24 +104,55 @@ The ledgers the exit leaves:
 
 Each fact × each possession — what dies (never how it's saved):
 
-- **KILL-1.** Retry after timeout × order records → **a second order exists
-  for one submission.**
-- **KILL-2.** Simultaneous duplicates × new-vs-repeat decision → **both are
-  judged "new"; two orders exist.**
-- **KILL-3.** Lost response × the repeat-answer → **the retry is answered as
-  new; a second order exists.**
-- **KILL-4.** Death mid-work × order records → **an order half-exists:
-  recorded but unconfirmable, or confirmed but unrecorded.**
-- **KILL-5.** Key reused with different body × new-vs-repeat decision →
-  **the wrong order is silently confirmed as a "repeat."**
-- **KILL-6.** Unknowable write outcome × order records → **we ourselves
-  don't know if the order exists.**
+**KILL-1.** FACT-CALLER-1 × POSSESSION-1 → a submission resent after
+a timeout is recorded again: **a second order exists for one
+submission.**
+*Say:* order 1 is recorded for key K; its caller times out after five
+seconds and resends K; the store holds orders 1 and 2 for K.
+
+**KILL-2.** FACT-CALLER-2 × POSSESSION-2 → two identical submissions
+each decide "new" before either is recorded: **two orders exist for
+one submission.**
+*Say:* fifty identical submissions released at one instant; each
+finds no order for its key; the store holds two orders for the key,
+or fifty.
+
+**KILL-3.** FACT-NETWORK-3 × POSSESSION-3 → the order is recorded,
+its answer is lost, and the retry is answered as new: **a second
+order exists for one submission.** KILL-1's death, the answer lost
+rather than late.
+*Say:* order 1 is recorded for key K and "created" is sent; the
+network drops it; the caller resends K; the store holds orders 1 and
+2 for K.
+
+**KILL-4.** FACT-PROCESS-4 × POSSESSION-1 → we die between
+recording and replying, two ways:
+(a) recorded, then killed before the reply: **an order exists that
+its caller cannot confirm.**
+(b) replied, then killed before the record commits: **an order is
+confirmed that does not exist.**
+*Say:* (a) a submission with key K is recorded; the process is
+killed; the store holds one order for K, and the caller holds no
+reply. (b) the caller holds "created" for K; the store holds none.
+
+**KILL-5.** FACT-CALLER-5 × POSSESSION-2 → a key reused with a
+different body is judged a repeat: **the wrong order is silently
+confirmed as a "repeat."**
+*Say:* key K records an order for two mugs; the caller sends K again
+for five plates; it is answered "repeat" with the order for two mugs,
+and no order for five plates exists.
+
+**KILL-6.** FACT-STORE-6 × POSSESSION-1 → a write times out and its
+outcome cannot be known: **we ourselves don't know if the order
+exists.**
+*Say:* the write for key K times out after two seconds; the store
+holds one order for K or none, and nothing we hold says which.
 
 Fenced facts collide with nothing: NOT-OURS-1 to NOT-OURS-3 stop at the
 fence.
 
-Dedup by attack surface: KILL-1 to KILL-3 are one concern (duplicate
-delivery in three costumes — same thing dies the same way). KILL-4 and
+Dedup by attack surface: KILL-1 to KILL-3 are one concern: the same
+failure, a second order, caused three ways. KILL-4 and
 KILL-6 are one concern (partial failure — the proof obligation is "recovery
 converges," different from "duplicates collapse"). KILL-5 stands alone (a
 lie, not a repeat). Fold-candidate found with no enemy: "what a valid
@@ -151,7 +182,7 @@ create *different adversity*:
   arrivals of one submission → exactly one recorded order. Covers
   KILL-1 to KILL-3 and KILL-5 (its evidence must create replays, races, AND
   the reused-key lie). Judgment logged: races fold in here because duplicate
-  delivery is the one adversity class, concurrent being its hardest costume.
+  delivery is the one adversity class, the concurrent case its hardest.
 - **SLICE-2 — "recovery converges under partial failure."** Invariant: a
   crash at any point leaves the system where a retry ends in exactly one
   order and one truthful answer. Covers KILL-4 and KILL-6. Different

@@ -2,7 +2,7 @@
      Fill every <angle> slot; delete
      the guidance lines. Declining this template is off-template:
      the outcomes in the skill's export section still bind — derive
-     your own shape from them and record the deviation in the run's
+     your own layout from them and record the deviation in the run's
      log. -->
 
 # Slice registry — the work, cut and ready
@@ -33,7 +33,7 @@ Status values: `open` · `chosen-next` · `in-progress` ·
 - **Rider:** <a structural condition checked, never battle-tested,
   whose silent violation voids this slice's evidence; or "none">
 - **Flag riding:** <what cannot be staged the normal way — name the
-  unusual evidence shape here, so the consumer inherits the warning,
+  unusual form of evidence here, so the consumer inherits the warning,
   not the surprise; the slice answers it by name in its
   specification, staged or removed with the removal shown; or
   "none">

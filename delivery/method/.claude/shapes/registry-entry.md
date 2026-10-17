@@ -85,8 +85,8 @@ method's worked example, a tiny order service.
 - **Flag riding:** none.
 - **Presumes:** nothing.
 - **Judgment logged:** races fold in here because duplicate
-  delivery is the one adversity class, concurrent being its hardest
-  costume.
+  delivery is the one adversity class, the concurrent case its
+  hardest.
 - **Record:** [SLICE-1](<the path to its record>)
 - **Answered at close:**
   - The judgment held: the race needed no wall of its own. The

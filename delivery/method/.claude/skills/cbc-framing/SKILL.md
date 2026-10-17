@@ -175,18 +175,18 @@ nameable path:
 - `registry.md` — slices + folds + reconciliation line + chosen-next
 
 **The registry's outcomes** (what the file must carry, whatever its
-shape): every slice entry states its invariant, the adversity its
+layout): every slice entry states its invariant, the adversity its
 evidence must *create*, its owning area, the kills it covers, and
 what it presumes already stands; statuses are trustworthy
 (`open · chosen-next · in-progress · closed (date, evidence)`);
-riders and evidence-shape flags ride the entry they guard; any
+riders and flags ride the entry they guard; any
 grouping is headings for the reader, never a boundary; the
 reconciliation line accounts for every kill and states even its
 absences (the written zero); exactly one slice is chosen-next
-while open work remains. The default shape is the
+while open work remains. The default layout is the
 copy-and-fill master `templates/registry.md` beside this
 skill's references (CBC ADR-0008). Declining it is **off-template**:
-derive your own shape from the outcomes above and record the
+derive your own layout from the outcomes above and record the
 deviation in the run's log.
 
 **The exports are living records, not write-once.** The registry
