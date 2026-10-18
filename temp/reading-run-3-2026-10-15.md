@@ -238,6 +238,7 @@ deliverer*. Release opens after it.
   skill at the close, lives only there.
   *RETRO D25 moved to D8 on 2026-10-16, on the reviewer's word: a
   way of working for both seats, not only the reviewer's.*
+  *Ended 2026-10-18 by W7, declined.*
 - **F13** — Release reshaped at birth, to be folded into the playbook:
   held since 2026-09-23; still open, run 3's Release not yet run
   (D20).
@@ -642,6 +643,23 @@ deliverer*. Release opens after it.
   *Since ADR-0053 the writing rule loads here: whatever lands from
   the reviewer's file points at it, not repeats it (run 3's RETRO
   D2).*
+  *Declined 2026-10-18, on the reviewer's word: the file stays the
+  reviewer's, carried by hand into a run, and the container ships
+  none (agent-arrangement §3.7). Four of its lines are in the
+  bundle, each read against the shipped text, three taken from run
+  3 after the file was written:
+  - commit on the word: `commit-messages`, since 2026-09-19;
+  - commit freely, regrouped, `-detail` kept: `commit-plan`
+    (`1e50055`);
+  - write to be read once: the writing rule (ADR-0053);
+  - new kinds of work: `first-time-work` (ADR-0056).
+  Two lines live only in some skills: decisions one at a time
+  (the two retrospective skills), and a plain manual beside the
+  agent's instructions (`first-time-work` deletes its manual at
+  the close). Both declined as TODO items: no need seen now, and
+  the reviewer raises them again if one appears. What the file
+  is for now: settings for one checkout, the rules being the
+  bundle's, as run 4's file shows.*
 - **W8** — After the list closes: RETRO's lessons applied to this
   repo's own living records (plain writing, full-name tags, a
   glossary, one home per fact), as Step 10's "lessons folded back"
