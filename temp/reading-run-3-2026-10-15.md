@@ -309,6 +309,9 @@ deliverer*. Release opens after it.
   baselines sort, still wait: run 3's Release opens after our note.
   *Ended 2026-10-18 by W6: both kept on run 3's Release, on the
   reviewer's word, though run 4 may answer them first.*
+  *Corrected 2026-10-18 (`04643e6`): run 3's Release is skipped,
+  staged in its tree and not committed, since run 4 does its own.
+  Both items wait for run 4's reading.*
 - **F23** — Our Later item "name when a run is read": D24 names it
   for this run — after the apply step, so the decisions arrive tried —
   and the run's TODO *Now* waits on our re-check.
@@ -371,6 +374,9 @@ deliverer*. Release opens after it.
     Done 2026-10-17, W16; the plain rewrite's rest in TODO.*
   - *F, the reviewer's hand: D3, D25.*
   - *Nothing for us: D14, the shape's own; D20's lists, the run's.*
+  - *D15 was in no group. Found 2026-10-18 while writing the final
+    note, and taken (`0d2ffcf`): `cbc-slice`'s build stage says what
+    a code comment holds.*
 - **D2** — F1 to F7: take, decline or hold each copy edit. F1 to F4
   are untried, first lived by run 4: taken now, or held until run 4
   lives them. Rests on D1. Gates W2.
@@ -542,6 +548,11 @@ deliverer*. Release opens after it.
   stand, in the run's order, the open ones named. *Written
   (`78242ff`), not copied: the reviewer held the copy. The final
   note, at the list's close, carries the verdicts.*
+  *Done 2026-10-18: the final note (`7728785`), read through
+  `dac4dd1`, no files, every line's verdict, the early draft
+  replaced. Its copy waits: run 3's tree holds five files staged
+  and not committed, which skip its Release, so the delivery's
+  quiet-tree check fails until the run commits or drops them.*
 - **W2** — The copy edits taken into our masters, each checked against
   its manual or chapter and read whole. **plan**
   *Done 2026-10-15: F1 to F7 taken, each marked under its finding
@@ -823,6 +834,15 @@ deliverer*. Release opens after it.
   as written, it was caught only by the foundation walk at the
   commit (W14, decision 4). Check what the runs did before taking
   where a decision lands.
+- A run's tree can hold what its commits do not. Run 3 skipped its
+  Release in five staged files, never committed, so the reading
+  missed it, and W6 ended F22 on a trigger that cannot come. Found
+  only at the note's step 0, by `git status`. Look at the tree as
+  well as `R..HEAD`.
+- A grouping can drop an item. D1 put RETRO's 29 decisions into
+  groups, and D15 was in none; found only when the note answered
+  them one by one. Count the groups against the list when the
+  grouping is made.
 
 ## 8. Notes
 
