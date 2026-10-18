@@ -258,13 +258,14 @@
 - [ ] Read the frozen CLAUDE template's stance bullets against a
       full run's derived entry file (2026-09-06, the user).
       Context: the template's walk-1-era method half is frozen at
-      `docs/baselines/claude-md-template-v1.md`. Birth templates
-      harvest at the Step 0 reading since 2026-09-07, but no birth
-      can judge the stance bullets — only a run that has framed and
-      built. Three ways: the run's `CLAUDE.md`, frozen v1, and
+      `docs/baselines/claude-md-template-v1.md`. No birth can judge
+      the stance bullets — only a run that has framed and built.
+      Three ways: the run's `CLAUDE.md`, frozen v1, and
       `cbc-derived-claude-walk1.md`; harvest re-enters the template
-      only from that reading, each line traced to the run.
-      Trigger: run 3's Release.
+      only from that reading, each line traced to the run. Run 3
+      skipped its Release (2026-10-15); run 4 released the same
+      project, so its entry file is read, run 3's beside it.
+      Trigger: run 4's reading.
       See: devlog 2026-09-06 (the template re-cut).
 
 - [ ] Sort `docs/baselines/` by kind (2026-09-23, ADR-0035
@@ -272,9 +273,11 @@
       Context: trial evidence is withheld so a later derivation
       measures independence; a shape is withheld only until a
       gate. A wrong move destroys a measurement that cannot be
-      remade, so this is its own reading, not a tidy-up.
-      Trigger: run 3's Release reading, where the Spring slice
-      reference opens.
+      remade, so this is its own reading, not a tidy-up. The
+      Spring slice reference opens once, at a run's Release
+      (ADR-0033); run 3 skipped its Release, and run 4 had one.
+      Trigger: run 4's reading, where the Spring slice reference
+               opens.
       See: devlog 2026-09-24.
 
 - [ ] Read what run 5's first slice gate found against the
