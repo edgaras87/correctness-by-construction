@@ -1131,3 +1131,15 @@
   Rejected: the count in `exchange-reading.md` (it is how a list
   is worked, not its form); the runs check left to the foundation
   check (that reads the foundation, not what the runs did).
+
+- 2026-10-18 A reading tags its items in full words: FINDING-n,
+  DECISION-n, WORK-n, from the next reading on.
+  Why: the reading of run 3 numbered its decisions D1 to D14 beside
+  run 3's RETRO D1 to D29, and a bare "D22" could be either; the
+  writing rule had to name the clash. Our numbers are cited outside
+  the reading, in commits, the devlog and TODO. Run 3's RETRO D6
+  asked the same of every run's tags.
+  Rejected: renaming the reading of run 3's items (it closes now,
+  and commits cite its numbers); short tags kept, with the owner
+  named each time (the rule already asked that, and the clash came
+  anyway).

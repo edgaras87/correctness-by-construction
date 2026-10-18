@@ -19,21 +19,21 @@ there.
 
 ## The steps
 
-1. **Count it, before any branch.** How many W, and how many marked
-   **plan**. More than one plan means a branch, cut from main after
-   the reading is written; the count is what says whether one is
+1. **Count it, before any branch.** How many work items, and how many
+   marked **plan**. More than one plan means a branch, cut from main
+   after the reading is written; the count is what says whether one is
    needed. The count undercounts: one item's set can run to twenty
    commits, and an item that edits a skill both seats hold is two
    commits, the agent's own files apart. It is a number of items,
    never a size.
 
-2. **Decisions first.** A D gates the W that rest on it, and
-   settling it reshapes or deletes them. A question outside the
-   reading can gate an item too; the item says so rather than being
-   reordered in silence. The order is preliminary, and the reviewer
-   reorders it. A decision may be answered by a question the list
-   never asked: the options written down are not the space. When a
-   decision sorts items into groups, the groups are counted against
+2. **Decisions first.** A decision gates the work that rests on it,
+   and settling it reshapes or deletes that work. A question outside
+   the reading can gate an item too; the item says so rather than
+   being reordered in silence. The order is preliminary, and the
+   reviewer reorders it. A decision may be answered by a question the
+   list never asked: the options written down are not the space. When
+   a decision sorts items into groups, the groups are counted against
    the list as they are made: an item in no group is lost without a
    sign.
 
@@ -51,13 +51,13 @@ there.
    against what the runs did, too: where a run's decision says it
    lands names a place, never how the runs lived it.
 
-5. **Every close is followed by one pass over every open item.**
-   The item is marked the moment it closes, with its commit; then
-   each open F, D and W is read once against it — changed, closed,
-   or blocked — and marked in place before the next is opened. The
-   items are not independent: one item's set can close another, and
-   right after one moved is the only cheap moment to see how the
-   others moved with it.
+5. **Every close is followed by one pass over every open item.** The
+   item is marked the moment it closes, with its commit; then each
+   open finding, decision and work item is read once against it —
+   changed, closed, or blocked — and marked in place before the next
+   is opened. The items are not independent: one item's set can close
+   another, and right after one moved is the only cheap moment to see
+   how the others moved with it.
 
 6. **A changed line is an edit only if the run's log says so.** For
    every hunk the diff put on the reading, ask first whether the
