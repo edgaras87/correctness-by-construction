@@ -63,10 +63,31 @@ out:
 
 Each refinement names the rules it reads against. Each rule is one
 kind of finding: what a finding of it is, the rule, and its round
-(§2). The kinds are the refinement's own, so they are written in
+(§2.1). The kinds are the refinement's own, so they are written in
 its file, not here.
 
-## 2. The rounds
+## 2. The stages
+
+A map of the stages. Each section holds its rule.
+
+| Stage | Does | The refinement's file |
+|---|---|---|
+| 2.1 Group the kinds | kinds from TODO, each in its round | created, with the kinds |
+| 2.2 List the files | every living file into a layer, with counts | the layer list |
+| 2.3 Check the rules | doubts found, and tried on a sample | each rule's result |
+| 2.4–2.8 Each round | read, list the findings, decide, work, close | the round's section |
+| 2.9 The last read | every kind, read until nothing is found | its section |
+| 2.10 The close | the file goes; git keeps it | deleted |
+
+The file is `temp/refinement-<date>.md`. It holds data; this page
+says how it is made.
+
+Each round reads, lists, decides and fixes before the next one
+reads, so it reads the text as the round before left it. The
+reviewer never decides a finding on text a later round deletes.
+The reviewer's time is what the extra reads save.
+
+### 2.1 Group the kinds
 
 A kind goes into a round by what its fix does to the text:
 
@@ -80,30 +101,10 @@ Each sort with a kind in it is a round, in that order. A sort with
 none is no round. Kinds whose fixes do the same to the text do not
 undo each other, so they share a round.
 
-Each round reads, lists, decides and fixes before the next one
-reads, so it reads the text as the round before left it. The
-reviewer never decides a finding on text a later round deletes.
-The reviewer's time is what the extra reads save.
-
-Everything a refinement makes goes into one file,
-`temp/refinement-<date>.md`, in three parts:
-
-1. **Before round 1:** the kinds and their rounds, the living
-   files by layer with their counts, and how each rule's check
-   ended (§2.1 to §2.3).
-2. **A section per round:** its findings, decisions and counts
-   (§2.5 to §2.8).
-3. **The last read** (§2.9).
-
-The file holds data; this page says how it is made. At the close
-the file goes (§2.10).
-
-### 2.1 Group the kinds
-
 The kinds are collected from the TODO items that asked for the
-refinement. The agent puts each in its round, by what its fix
-does, and writes them into a new file, the refinement's file. The
-reviewer confirms the kinds and their rounds.
+refinement. The agent puts each in its round, and writes them into
+a new file, the refinement's file. The reviewer confirms the kinds
+and their rounds.
 
 ### 2.2 List the files
 
@@ -233,7 +234,7 @@ no fixes between them. The order of the rounds is for fixes, not
 for reads: with nothing changing, a read gives the same result in
 any order.
 
-What it finds is sorted by §2's rule, and fixed in that order, a
+What it finds is sorted by §2.1's rule, and fixed in that order, a
 round only for each sort with a finding. Then everything is read
 again, until a read finds nothing that breaks a rule. §2.4's rule
 for a finding is what makes this end.
