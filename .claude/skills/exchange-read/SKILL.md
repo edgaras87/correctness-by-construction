@@ -27,7 +27,7 @@ document afterwards is work, not this skill; when the work is done,
    first line — a new reading's, or the open one's, moved — before
    anything is read.
 
-3. **Read three things in the span**, and nothing else is required:
+3. **Read three things in the span.** They give every item:
 
    - every entry in `.claude/decisions.md` — each edit and its why
    - the `## To the deliverer` section of `TODO.md` — every line is
@@ -42,6 +42,22 @@ document afterwards is work, not this skill; when the work is done,
      `<base>` is the run's receipt branch for `P` when it cut one;
      otherwise the commit of its last delivery entry, the one that
      recorded `P`.
+
+   Two checks follow, and neither gives an item:
+
+   - **The run's tree.** Work staged or changed but not committed
+     is named in the reading's Notes, and no verdict is written
+     against what it undoes (`docs/conventions/exchange/` §6.1):
+
+     ```sh
+     git -C "$run" status --short
+     ```
+
+   - **A hash the run cites is on the branch read.** A run may
+     cite commits from a branch beside it, such as a `-detail`
+     branch of small commits. Before trusting such a hash, check
+     that what it changed is the same on the branch read. A branch
+     and a tag may share a name; `refs/heads/<name>` says which.
 
 4. **Write the reading — or extend the one that is open.** If `temp/`
    holds a reading for this run, this read extends it: new items take
@@ -59,6 +75,7 @@ document afterwards is work, not this skill; when the work is done,
   run's `HEAD`.
 - Every edit, ask and finding in the span has one line, and none of
   them is decided.
+- The run's uncommitted work, if any, is named in the reading.
 - Nothing in the run was written to. The run is read only.
 
 ## 3. What this does not do

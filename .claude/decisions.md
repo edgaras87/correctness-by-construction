@@ -1107,3 +1107,14 @@
   Why: run 3 and run 4 each wrote theirs at the retrospective, so
   the stub's list from birth was dropped (`d1922c4`).
   Rejected: editing the entry above (the log is append-only).
+
+- 2026-10-18 `exchange-read` checks two things that give no item:
+  the run's tree, and that a hash the run cites is on the branch
+  read.
+  Why: run 3 skipped its Release in staged files, and one verdict
+  rested on that Release; its decisions log cited hashes from its
+  `-detail` branch. The reading of run 3, §7, lessons 1 and 5;
+  exchange §6.1 (`37638ac`).
+  Rejected: the hash check in exchange §6.1 (it is how to check,
+  not what a read is); the tree's work read as items (the run has
+  not committed it).
