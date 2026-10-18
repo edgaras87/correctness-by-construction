@@ -337,6 +337,24 @@ the hygiene base ignores it, and its words never enter a record — a
 record that quotes it has let one operator's preference into the
 project's truth. The container ships none.
 
+It holds the operator's settings, never rules. A setting is a
+choice one operator makes where the project leaves it open: how
+often the agent stops for review, how far it decides alone, how a
+session starts. One test sorts a line: would another operator of
+the same project write it differently? Then it is a setting, and
+stays here. Would every operator want it? Then it is a rule, and
+goes where the project keeps its rules; the file only uses it. For
+example, "small commits only where the reviewer grants them" is a
+rule, and "on this branch, commit freely" is a setting. The
+operator writes the file for each project and carries it there by
+hand.
+
+*Run 3 wrote its file at its retrospective (its RETRO D3,
+2026-10-11): five ways of working, learned by correction. Four
+were rules, and by 2026-10-18 the bundle held them. Run 4's file
+held only settings. The reading of run 3 declined to ship the
+file, and the paragraph above came of it.*
+
 ## 4. Anti-patterns
 
 - **Putting rules in the working-style slot** — a rule that is true
