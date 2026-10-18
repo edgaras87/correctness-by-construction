@@ -269,8 +269,8 @@
       Three ways: the run's `CLAUDE.md`, frozen v1, and
       `cbc-derived-claude-walk1.md`; harvest re-enters the template
       only from that reading, each line traced to the run. Run 3
-      skipped its Release (2026-10-15); run 4 released the same
-      project, so its entry file is read, run 3's beside it.
+      has had no Release; run 4 released the same project, so its
+      entry file is read, run 3's beside it.
       Trigger: run 4's reading.
       See: devlog 2026-09-06 (the template re-cut).
 
@@ -281,7 +281,7 @@
       gate. A wrong move destroys a measurement that cannot be
       remade, so this is its own reading, not a tidy-up. The
       Spring slice reference opens once, at a run's Release
-      (ADR-0033); run 3 skipped its Release, and run 4 had one.
+      (ADR-0033); run 3 has had no Release, and run 4 had one.
       Trigger: run 4's reading, where the Spring slice reference
                opens.
       See: devlog 2026-09-24.
