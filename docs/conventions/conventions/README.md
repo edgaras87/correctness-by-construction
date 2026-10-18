@@ -309,8 +309,9 @@ from the start, marked *on trial*, and its close runs the rest of
 these steps. A run's is offered under its *To the deliverer*, and a
 reading takes it by these steps.
 
-As the last four were added — `visual-comparison`, the exchange,
-shapes, and this one — and not as the index once said:
+As the last seven were added — `visual-comparison`, the exchange,
+shapes, this one, writing, the retrospective and first-time work —
+and not as the index once said:
 
 1. An ADR for the decisions behind it, opened Proposed when it lands
    inside a change set.
@@ -334,7 +335,7 @@ shapes, and this one — and not as the index once said:
 No CHANGELOG line and no PLAN step. The CHANGELOG is the
 concept-version log (ADR-0003) and has no place for a
 convention's entry; the PLAN has no per-convention steps. *The
-index asked for both until 2026-09-28, and the last four
+index asked for both until 2026-09-28, and the last seven
 conventions took neither — a rule kept where nobody reads it
 (ADR-0039).*
 
