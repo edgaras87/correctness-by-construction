@@ -31,8 +31,18 @@
       across the manuals' *What this does not cover*, and seen
       together nowhere. The local-map rule now exists
       (project-recording §8.6, ADR-0045).
-      Ideas: all twelve and how each touches the others, derived from
-             those pointers, built by `visual-comparison`.
+      Ideas:
+      - all twelve and how each touches the others, derived from
+        those pointers, built by `visual-comparison`.
+      - three links, each with its upkeep: derives (conventions
+        §3.5, the foundation check), points (one home, a step's
+        close), governs (none: a change to a rule that governs
+        other text could sweep that text or file the sweep, a rule
+        beside §3.5).
+      - scenarios as entries into one procedure, the foundation
+        check: a manual, a skill or rule, a run's finding. Two
+        exits it lacks: the governs sweep, and what must run again
+        after.
       Trigger: due — the pair it waited on was made on 2026-09-30.
       See: devlog 2026-09-30, local maps.
 
