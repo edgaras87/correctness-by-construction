@@ -94,12 +94,13 @@ step that uses none has only its own items.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
       §2.4).
-- [ ] The step reached main by fast-forward from `<branch>`, on the
-      reviewer's word.
 
-**When every item is ticked and committed,** the next commit
-removes the step from this file, and the devlog entry that closes
-it names the step and the commit that holds the ticked gate.
+**When every item is ticked and committed,** main takes the step's
+branch, if it has one, by fast-forward on the reviewer's word. Then
+one commit on main closes the step: it removes the step from this
+file and adds the devlog entry, which names the step and the commit
+that holds the ticked gate. Nothing is recorded before the
+fast-forward that it would make untrue.
 
 **A trial names the close that judges it.** A piece of the way of
 working put on trial says at which step's close it is judged. Its
