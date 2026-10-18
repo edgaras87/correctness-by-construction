@@ -86,7 +86,8 @@
 - [ ] Refine this repo against its own rules (2026-10-17, the
       reviewer).
       Context: most of the text predates its rules: writing and
-      one-home (ADR-0053), the foundation check (2026-10-17). The
+      one-home (ADR-0053), the foundation check (2026-10-17), a
+      lesson written in general (conventions §3.7, 2026-10-18). The
       rules guard new and changed text; older text is rewritten in
       work of its own, and this is that work. W8 of the reading of
       run 3 joins it when that reading closes.
@@ -102,6 +103,10 @@
         seats differ, told in five (W8).
       - foundations: every `foundation` line read once against its
         manual; the check reads only what changes.
+      - lessons: each manual's body read against conventions §3.7;
+        a case written as the rule becomes a general statement,
+        the case its dated italic. *What it is for* keeps its
+        case, since its evidence is one by design.
       - words: "run" as a verb for skills and steps, beside "run"
         the project; say "uses".
       - words: "small steps" in `commit-plan` (ADR-0050), a third
