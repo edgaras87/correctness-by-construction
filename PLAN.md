@@ -133,21 +133,22 @@ Gate:
 
 - [ ] Before round 1, no rule in the manual's §1 table was in
       doubt, or each doubt was tried on a sample and ended; the
-      findings file says which.
+      findings file says which (`docs/conventions/refinement/`
+      §2.2).
 - [ ] Every kind in the manual's §1 table was read in its round
       across all living text, and each read names the files it
       covered.
 - [ ] Every finding has the reviewer's ending: fixed, declined
       with its reason, or a TODO item.
 - [ ] The last read found nothing that breaks a rule
-      (`docs/conventions/refinement/` §2.7).
+      (`docs/conventions/refinement/` §2.8).
 - [ ] project-recording §1 shows in one view which record answers
       what, in both seats. It includes `RETRO.md`, `COMMIT-PLAN.md`,
       `docs/system/`, and records another convention owns.
 - [ ] The records map's form was chosen by `visual-comparison`,
       and that skill's gates hold for it.
 - [ ] Each round's close read has its counts
-      (`docs/conventions/refinement/` §2.6).
+      (`docs/conventions/refinement/` §2.7).
 - [ ] The reviewer chose the manual's lasting form, and an ADR
       records it with the ways rejected at the opening
       (`first-time-work` §3).
@@ -180,7 +181,7 @@ Notes:
   1. sort the kinds into rounds; the reviewer confirms them, the
      areas, whether the method's texts are read here (§3), and
      that no rule is in doubt, or a doubted rule is tried and
-     fixed first (§2.1);
+     fixed first (§2.2);
   2. each round: read, list, decide, work, then its close read;
   3. the last read, repeated until it finds nothing;
   4. the close: the findings file goes, then `first-time-work` §3
