@@ -102,9 +102,10 @@ refinement. The agent sorts each by what its fix does, and writes
 the sort into §1's table.
 
 The agent lists the living files (§1) by §2.4's layers, with their
-counts. Every living file falls in exactly one layer. A file that
-falls in none widens a layer or adds one, so no file goes unread.
-Each round shows from this list that it covered every file.
+counts. Every living file falls in exactly one layer. When the
+list finds a file that fits none, a layer is widened to hold it,
+or a new layer is added. Each round shows from this list that it
+covered every file.
 
 The reviewer confirms the kinds, their rounds and the layers
 before the first round reads.
