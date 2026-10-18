@@ -41,7 +41,7 @@ Nothing yet: the close decides (`docs/conventions/first-time-work/`
 §3). While a refinement is open, a repo holds:
 
 - **its step in `PLAN.md`**, whose Notes list this page's stages;
-- **its findings file in `temp/`**, deleted at the close.
+- **its file, `temp/refinement-<date>.md`**, deleted at the close.
 
 What derives from this page is that list. A change here walks it.
 
@@ -62,19 +62,9 @@ out:
 - a run's own text in `temp/`, which its reading reads.
 
 Each refinement names the rules it reads against. Each rule is one
-kind of finding. This one's eight kinds, each with its round
-(§2):
-
-| Round | Kind | What a finding is | The rule |
-|---|---|---|---|
-| 1 | Stale lines | a line no longer true | `PLAN.md`, the step form's close |
-| 1 | Foundations | a `foundation` line that disagrees with its manual | `.claude/rules/foundation-check.md` |
-| 2 | One home | a fact told in more than one place | `.claude/rules/one-home.md` |
-| 2 | Dependencies | a retelling where a pointer would do | `docs/conventions/conventions/` §3.1 |
-| 2 | Seats | a deliverer seat that says more than how its convention works here | `docs/conventions/conventions/` §3.4 |
-| 2 | Lessons | a case written as the rule | `docs/conventions/conventions/` §3.7 |
-| 3 | Writing | text older than ADR-0053, against the whole rule | `.claude/rules/writing.md` |
-| 3 | Words | "run" as a verb for a skill or a step; "small steps" in `commit-plan` | `.claude/rules/writing.md`, rule 6 |
+kind of finding: what a finding of it is, the rule, and its round
+(§2). The kinds are the refinement's own, so they are written in
+its file, not here.
 
 ## 2. The rounds
 
@@ -95,17 +85,30 @@ reads, so it reads the text as the round before left it. The
 reviewer never decides a finding on text a later round deletes.
 The reviewer's time is what the extra reads save.
 
+Everything a refinement makes goes into one file,
+`temp/refinement-<date>.md`, in three parts:
+
+1. **Before round 1:** the kinds and their rounds, how each rule's
+   check ended, and the living files by layer, with their counts
+   (§2.1, §2.2).
+2. **A section per round:** its findings, decisions and counts
+   (§2.4 to §2.7).
+3. **The last read** (§2.8).
+
+The file holds data; this page says how it is made. At the close
+the file goes (§2.9).
+
 ### 2.1 Sort the kinds
 
 The kinds are collected from the TODO items that asked for the
 refinement. The agent sorts each by what its fix does, and writes
-the sort into §1's table.
+the sort into the file.
 
-The agent lists the living files (§1) by §2.4's layers, with their
-counts. Every living file falls in exactly one layer. When the
-list finds a file that fits none, a layer is widened to hold it,
-or a new layer is added. Each round shows from this list that it
-covered every file.
+The agent lists the living files (§1) in the file, by §2.4's
+layers, with their counts. Every living file falls in exactly one
+layer. When the list finds a file that fits none, a layer is
+widened to hold it, or a new layer is added. Each round shows from
+this list that it covered every file.
 
 The reviewer confirms the kinds, their rounds and the layers
 before the first round reads.
@@ -113,13 +116,14 @@ before the first round reads.
 ### 2.2 Check the rules
 
 A wrong rule makes every finding against it wrong. So, before the
-first round reads, the reviewer confirms that no rule in §1's
-table is in doubt. A doubt comes from the reviewer, or from a TODO
-item that names the rule; the agent searches TODO for each rule's
-name. A doubted rule is tried on a sample of the text it governs,
-and the reviewer judges the result. A rule that fails is fixed
+first round reads, the reviewer confirms that no rule among the
+file's kinds is in doubt. A doubt comes from the reviewer, or from
+a TODO item that names the rule; the agent searches TODO for each
+rule's name. A doubted rule is tried on a sample of the text it
+governs, and the reviewer judges the result. A rule that fails is fixed
 before the first round reads, in a commit of its own, through the
-foundation check.
+foundation check. The file says, for each rule, whether it was in
+doubt and how its check ended.
 
 ### 2.3 Read
 
@@ -153,9 +157,8 @@ section two readers called wrong and right became one finding.*
 
 ### 2.4 List
 
-The findings go into one file, `temp/refinement-<date>.md`, a
-section per round. Each finding is FINDING-n, numbered on across
-the rounds, and says:
+The findings go into the round's section of the file. Each
+finding is FINDING-n, numbered on across the rounds, and says:
 
 - where: the path, and lines;
 - what the rule says, and what the text says;
@@ -166,7 +169,9 @@ DECISION-n: the options, a recommendation, and the findings that
 rest on it.
 
 A round's findings are grouped by the files they edit, one group
-to a layer, in the order the work takes them:
+to a layer, in the order the work takes them. Every refinement
+starts from these six; the file records a layer widened or added
+(§2.1):
 
 1. the conventions manual, `docs/conventions/conventions/`, which
    every other manual is read against;
@@ -208,7 +213,7 @@ round covers is read again against the round's kinds, held to
 §2.3's rule for a finding. Reading only the changed text is not
 enough: a fix in one file can make an unchanged line in another
 wrong. What the read finds is listed and decided like any finding,
-and it counts:
+and the round's section counts:
 
 - findings in text the round changed, and in text it did not;
 - how many the reviewer took, and how many were declined as taste.
@@ -246,7 +251,7 @@ commit, so the file can be read from git.
   writing kind reads them here, or leaves them to it.
 - **Whether a refinement comes again,** and what makes one due: a
   new rule, or a count of rules since the last.
-- **Whether the findings file needs a shape.** It borrows the
+- **Whether the refinement's file needs a shape.** It borrows the
   eval's form, which borrowed a reading's.
 - **How big a group is.**
 - **Whether the full reads again paid.** The counts of findings in
