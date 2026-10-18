@@ -95,7 +95,12 @@ The reviewer's time is what the extra reads save.
 
 ### 2.1 Group the kinds
 
-A kind goes into a round by what its fix does to the text:
+Rounds are ordered so that no round's fixes are undone or wasted
+by a later round. Kinds whose fixes do not undo each other share a
+round.
+
+Every refinement starts from three rounds, by what a kind's fix
+does to the text:
 
 1. **Makes a line true.** A wrong line is not worth moving or
    rewording.
@@ -103,9 +108,10 @@ A kind goes into a round by what its fix does to the text:
    goes, so it is not reworded first.
 3. **Rewords what stays.**
 
-Each of the three with a kind in it is a round, in that order. One
-with none is no round. Kinds whose fixes do the same to the text do not
-undo each other, so they share a round.
+A round with no kind in it is left out. A kind that fits none of
+the three gets a round added or changed, by the rule above. The
+file records the rounds used, and why any differs from these
+three.
 
 The kinds are collected from the TODO items that asked for the
 refinement. The agent puts each in its round, and writes them into
@@ -262,6 +268,9 @@ commit, so the file can be read from git.
   new rule, or a count of rules since the last.
 - **Whether the refinement's file needs a shape.** It borrows the
   eval's form, which borrowed a reading's.
+- **Whether the three rounds hold.** They were drawn from one
+  refinement's eight kinds. Adding missing text is the first that
+  may not fit.
 - **Whether one layer's findings fit one commit plan.**
 - **"Stage" in `ARCHITECTURE.md`'s *The words*** is one phase of a
   skill. This page uses it for its own phases. The close widens
