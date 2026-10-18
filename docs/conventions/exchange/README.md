@@ -420,8 +420,19 @@ section does not apply to them.
 We open the run's repository and read three things
 since the read point: its decisions log (every edit and why), its
 backlog (every line addressed to us), and the diff of every held
-copy against its pin. Nothing else is required; the devlog is
+copy against its pin. Those three give every item; the devlog is
 context.
+
+One more look gives no item: the run's tree, the work staged or
+changed there but not committed. That work is not yet the run's
+word. But a verdict may rest on it, so the reading names it, and no
+verdict is written against what that work undoes.
+
+*Learned 2026-10-18, at the reading of run 3. Run 3 had skipped its
+Release in five staged files it never committed. The reading read
+only its commits, and one verdict waited on that Release. `git
+status` found the skip when the note was written, and the verdict
+moved to run 4's reading.*
 
 ### 6.2 A file the run wrote
 
