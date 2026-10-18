@@ -111,5 +111,4 @@ corner.
 
 ---
 
-No step is open. The reading of run 4 is the first step opened
-here (ADR-0057).
+No step is open.

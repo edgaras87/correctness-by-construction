@@ -76,7 +76,7 @@
       - `temp/RUN-4.md`, run 3's hand-off that started run 4, never
         committed there: what run 4 was told, read for lessons, and
         deleted once read.
-      Trigger: run 3's reading closes; in a new session.
+      Trigger: the refinement of this repo closes; in a new session.
       See: `f097695`, the kickoff and the message it took.
 
 - [ ] Decide whether our own forms become shapes, and whether a
