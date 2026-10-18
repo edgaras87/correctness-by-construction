@@ -1148,3 +1148,11 @@
   numbered its decisions D1 to D10, not D1 to D14.
   Why: the count was written from memory, not from the reading.
   Rejected: editing the entry above (the log is append-only).
+
+- 2026-10-18 A reading's close is one commit on main, after the
+  fast-forward: it deletes the reading and adds the devlog entry.
+  Why: the reading of run 3 wrote its devlog before the
+  fast-forward, and the Resume it carried needed a second commit.
+  PLAN's step form closes a step the same way (`49d06e6`).
+  Rejected: the devlog on the branch, its Resume written ahead of
+  the fast-forward (a record of what has not happened yet).

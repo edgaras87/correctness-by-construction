@@ -82,8 +82,8 @@ there.
    cheap; it is then written from the items as they stand, and says
    which are still open. At the close, the reading's lessons go
    first, where they act — this rule, the reading's form, a skill —
-   or to TODO; then the reading is deleted, a branch fast-forwards,
-   and the devlog says so.
+   or to TODO. Then main takes the branch by fast-forward, and one
+   commit on main deletes the reading and adds the devlog entry.
 
 ## Gates
 
