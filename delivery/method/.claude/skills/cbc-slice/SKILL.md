@@ -131,7 +131,10 @@ sign-off on the plan before Stage 3.**
 
 ### Stage 3 — build
 
-1. **Implement the enforcement.** The code should be boring.
+1. **Implement the enforcement.** The code should be boring. A
+   comment says, in a few lines, what the code relies on that the
+   code cannot show, and names its guarantee with the slice
+   ("Holds SLICE-1 GUARANTEE-1"). The argument stays in the record.
 2. **Build the evidence tests:** tests that **create** the adversity
    (hammer concurrently, inject the duplicate, kill mid-transaction,
    replay out of order) and show the invariant surviving, guarantee by
