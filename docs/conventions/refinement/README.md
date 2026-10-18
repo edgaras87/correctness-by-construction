@@ -4,7 +4,7 @@
 It goes in rounds: what is true, then where it lives, then how it
 reads. Each round reads first and lists what it finds. Nothing
 changes until the reviewer has ended each finding, and then the
-text is fixed one group at a time.**
+text is fixed one layer at a time.**
 
 ## What it is for
 
@@ -27,12 +27,12 @@ then predated four rules:
 
 Done once before, unnamed: the eval of 2026-09-30 to 2026-10-02
 read the whole repo, listed 68 findings and 10 decisions in six
-groups, and ended every one. Its file is in git at
+parts, and ended every one. Its file is in git at
 `19f1d7b^:temp/eval-2026-09-30.md`.
 
 *On trial.* What would make it evidence: the refinement step in
 `PLAN.md` closes with every finding ended, and the reviewer judges
-whether rounds, each read first and fixed in groups, held.
+whether rounds, each read first and fixed layer by layer, held.
 Look again at that step's close.
 
 ## What this is made usable as
@@ -52,19 +52,25 @@ alone, so its trial is our own next refinement. A run that finds it
 needs one offers it under *To the deliverer*. The rest of this page
 is the deliverer's.
 
-## 1. What it reads
+## 1. What it reads, and its words
 
-Living text: every file but history. History is the devlog, closed
-ADRs and commit bodies (`.claude/rules/one-home.md`). Also left
-out:
+A refinement reads living text against the rules it names. Its
+kinds are its own, so they are written in its file, not here.
 
-- `docs/baselines/`, frozen on purpose;
-- a run's own text in `temp/`, which its reading reads.
+The words of this page, each defined once:
 
-Each refinement names the rules it reads against. Each rule is one
-kind of finding: what a finding of it is, the rule, and its round
-(§2.1). The kinds are the refinement's own, so they are written in
-its file, not here.
+- **living text** — every file but history. History is the
+  devlog, closed ADRs and commit bodies
+  (`.claude/rules/one-home.md`). Also left out: `docs/baselines/`,
+  frozen on purpose, and a run's own text in `temp/`, which its
+  reading reads.
+- **kind** — one rule the refinement reads against, and the
+  findings it makes. Written as what a finding of it is, the rule,
+  and its round.
+- **round** — the kinds whose fixes do the same to the text, read
+  and fixed together before the next round reads (§2.1).
+- **layer** — a set of files fixed together. Layers go in an order
+  that puts a source before what derives from it (§2.5).
 
 ## 2. The stages
 
@@ -97,8 +103,8 @@ A kind goes into a round by what its fix does to the text:
    goes, so it is not reworded first.
 3. **Rewords what stays.**
 
-Each sort with a kind in it is a round, in that order. A sort with
-none is no round. Kinds whose fixes do the same to the text do not
+Each of the three with a kind in it is a round, in that order. One
+with none is no round. Kinds whose fixes do the same to the text do not
 undo each other, so they share a round.
 
 The kinds are collected from the TODO items that asked for the
@@ -171,8 +177,8 @@ A finding that needs the reviewer's choice beyond "fix it" gets a
 DECISION-n: the options, a recommendation, and the findings that
 rest on it.
 
-A round's findings are grouped by the files they edit, one group
-to a layer, in the order the work takes them. Every refinement
+A round's findings are listed by layer, in the order the work
+takes them. Every refinement
 starts from these six; the file records a layer widened or added
 (§2.2):
 
@@ -199,13 +205,13 @@ A finding is never deleted or renumbered while the file lives.
 
 ### 2.7 Work
 
-One group at a time, in §2.5's order, each a commit plan
+One layer's findings at a time, in §2.5's order, each a commit plan
 (`docs/conventions/commit-plan/`). A source comes before what
 derives from it, so a fix is carried down once and never redone.
 A commit that touches a description goes through the foundation
 check.
 
-A fact told in several groups is fixed in the group of its home.
+A fact told in several layers is fixed with its home's layer.
 Its other copies become pointers in the same commit plan: a
 deletion, not a rewrite, so the order holds.
 
@@ -234,8 +240,8 @@ no fixes between them. The order of the rounds is for fixes, not
 for reads: with nothing changing, a read gives the same result in
 any order.
 
-What it finds is sorted by §2.1's rule, and fixed in that order, a
-round only for each sort with a finding. Then everything is read
+What it finds is put in rounds by §2.1's rule and fixed in that
+order, a round only where a finding needs one. Then everything is read
 again, until a read finds nothing that breaks a rule. §2.4's rule
 for a finding is what makes this end.
 
@@ -256,7 +262,10 @@ commit, so the file can be read from git.
   new rule, or a count of rules since the last.
 - **Whether the refinement's file needs a shape.** It borrows the
   eval's form, which borrowed a reading's.
-- **How big a group is.**
+- **Whether one layer's findings fit one commit plan.**
+- **"Stage" in `ARCHITECTURE.md`'s *The words*** is one phase of a
+  skill. This page uses it for its own phases. The close widens
+  that definition, or this page takes another word.
 - **Whether the full reads again paid.** The counts of findings in
   unchanged text decide whether a narrower read would have done.
 
