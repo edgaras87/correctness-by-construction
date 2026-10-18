@@ -32,7 +32,10 @@ there.
    reading can gate an item too; the item says so rather than being
    reordered in silence. The order is preliminary, and the reviewer
    reorders it. A decision may be answered by a question the list
-   never asked: the options written down are not the space.
+   never asked: the options written down are not the space. When a
+   decision sorts items into groups, the groups are counted against
+   the list as they are made: an item in no group is lost without a
+   sign.
 
 3. **A decision that needs an ADR is a proposed one**, built and
    corrected while building — not a list of questions. It opens
@@ -44,7 +47,9 @@ there.
    at every boundary. An item taken into a master is checked against
    its foundation (`.claude/rules/foundation-check.md`), and the
    file it lands in is read whole before the commit: a run's edit
-   shows one file, never what that file stands on.
+   shows one file, never what that file stands on. It is checked
+   against what the runs did, too: where a run's decision says it
+   lands names a place, never how the runs lived it.
 
 5. **Every close is followed by one pass over every open item.**
    The item is marked the moment it closes, with its commit; then

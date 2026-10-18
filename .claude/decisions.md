@@ -1118,3 +1118,16 @@
   Rejected: the hash check in exchange §6.1 (it is how to check,
   not what a read is); the tree's work read as items (the run has
   not committed it).
+
+- 2026-10-18 Working a reading gains two checks: a taken item
+  against what the runs did, and a decision's groups counted
+  against the list.
+  Why: run 3's RETRO D1 sent its rules-in-force list to the kit's
+  recording convention, yet run 3 and run 4 each wrote theirs at
+  the retrospective; only the foundation walk caught it. The
+  reading's D1 grouped RETRO's 29 decisions, and D15 was in none
+  until the note answered them one by one. The reading of run 3,
+  §7, lessons 4 and 6.
+  Rejected: the count in `exchange-reading.md` (it is how a list
+  is worked, not its form); the runs check left to the foundation
+  check (that reads the foundation, not what the runs did).
