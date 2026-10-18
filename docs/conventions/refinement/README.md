@@ -99,10 +99,15 @@ The reviewer's time is what the extra reads save.
 
 The kinds are collected from the TODO items that asked for the
 refinement. The agent sorts each by what its fix does, and writes
-the sort into §1's table. The reviewer confirms the kinds, their
-rounds and the areas before the first round reads. The agent lists
-each area's files with their counts, so each round can show it
-covered them.
+the sort into §1's table.
+
+The agent lists the living files (§1) by §2.4's layers, with their
+counts. Every living file falls in exactly one layer. A file that
+falls in none widens a layer or adds one, so no file goes unread.
+Each round shows from this list that it covered every file.
+
+The reviewer confirms the kinds, their rounds and the layers
+before the first round reads.
 
 ### 2.2 Check the rules
 
