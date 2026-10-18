@@ -46,7 +46,9 @@ others are not.
    the manual; emphasis in prose is not a part
    (`docs/conventions/conventions/` §3.2).
 6. **Lessons as dated italics**, where they happened: *what was
-   measured, when, and what changed*.
+   measured, when, and what changed*. The italic holds the case;
+   the body holds what it teaches, in general
+   (`docs/conventions/conventions/` §3.7).
 7. **Why it arrives this way.** The channel — a skill, a rule, a
    stub or a file — and why that one: the moment it serves, and
    what would or would not put it in front of its reader then.
