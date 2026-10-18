@@ -112,6 +112,12 @@ read side by side. Most kinds read each file whole. One home and
 words also need a sweep across files, since one file alone cannot
 show them.
 
+A finding names the rule the text breaks. Text that meets its
+rules stays, even when it could be said better. A reader asked to
+look always finds something to change. A broken rule makes it a
+finding; taste does not. This matters most where the kind is about
+how text reads.
+
 A rule stays as it is while a round reads against it. Changed
 halfway, everything read before the change would be read again. A
 finding against a rule itself waits in the list like any other.
@@ -180,8 +186,17 @@ deletion, not a rewrite, so the order holds.
 
 ### 2.6 A round's close
 
-Every finding of the round has its ending. Then the next round
-reads.
+Every finding of the round has its ending. Then the text the
+round changed, and only that, is read once more against the
+round's kinds, held to §2.2's rule for a finding. It catches a fix that broke
+something: a pointer to the wrong place, a reworded line no longer
+true. What it finds is listed and decided like any finding, and
+the check counts:
+
+- how many findings it made;
+- how many the reviewer took, and how many were declined as taste.
+
+Then the next round reads.
 
 ### 2.7 The close
 
@@ -201,6 +216,9 @@ devlog names that commit, so the file can be read from git.
 - **Whether the findings file needs a shape.** It borrows the
   eval's form, which borrowed a reading's.
 - **How big a group is.**
+- **Whether a round needs a second full read.** Only the check of
+  changed text is done. Round 1's counts decide whether a full
+  read again would find real misses, and in which round.
 
 ## Why it arrives this way
 
