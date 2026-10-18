@@ -133,6 +133,27 @@
       Trigger: the reading of run 3 closes.
       See: devlog 2026-10-17, the refinement.
 
+- [ ] Try a readability pass, the reviewer marking where text is
+      hard to read (2026-10-18, the reviewer).
+      Context: a refinement's finding names a broken rule, so text
+      that meets the rules stays, even when it could read better
+      (`docs/conventions/refinement/` §2.2). Polish with no rule has
+      no end: a reader asked to look always finds something. The
+      reviewer is the reader the text fails, and asks "explain
+      simpler" after most answers with parts.
+      Ideas:
+      - each mark is a finding; a file is done when the reviewer
+        reads it without a stumble.
+      - a pattern in the marks becomes a rule in
+        `.claude/rules/writing.md`, so a refinement's writing kind
+        catches it after.
+      - what is read most first: the front door, our skills and
+        rules, what ships.
+      - the agent polishing alone, only where a rewrite cuts words;
+        the reviewer checks each one for drift in meaning.
+      Trigger: the refinement of this repo closes.
+      See: devlog 2026-10-18, readability.
+
 - [ ] Write a rule that writes a skill or rule from its convention
       (2026-10-17, the reviewer).
       Context: conventions §2 says how a skill or rule is written,
