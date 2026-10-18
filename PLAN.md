@@ -179,7 +179,7 @@ Notes:
   Ideas, are in `TODO.md` at `b3b2018`.
 - Stages, from `docs/conventions/refinement/` §2:
   1. sort the kinds into rounds; the reviewer confirms them, the
-     areas, whether the method's texts are read here (§3), and
+     layers, whether the method's texts are read here (§3), and
      that no rule is in doubt, or a doubted rule is tried and
      fixed first (§2.2);
   2. each round: read, list, decide, work, then its close read;
