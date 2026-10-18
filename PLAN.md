@@ -111,6 +111,5 @@ corner.
 
 ---
 
-No step is open. The reading of run 3 finishes as it began, outside
-this form (`temp/reading-run-3-2026-10-15.md`, ADR-0057). The
-reading of run 4 is the first step opened here.
+No step is open. The reading of run 4 is the first step opened
+here (ADR-0057).
