@@ -622,6 +622,19 @@
       Trigger: a run first reaching the milestone that fires it.
       See: devlog 2026-08-30 (doc projection checked).
 
+- [ ] Decide how a run learns that the rule for taking deliveries
+      changed (2026-10-18, the reviewer).
+      Context: a run takes a delivery under the `delivered-copies.md`
+      it holds, so a delivery that changes that rule is taken under
+      the old one. The rule cannot travel alone: one pin covers every
+      copy (`docs/conventions/exchange/` §2.3). Run 3's copy lacked
+      `4de6ba2`'s shapes; no files went, so it never acted.
+      Ideas: the note's "why it matters" names a change to the rule
+             first, so the run takes it knowingly.
+      Trigger: the first files delivered to a run still building,
+               with `delivered-copies.md` changed since its pin.
+      See: devlog 2026-10-18.
+
 ## Known issues (deferred deliberately — each entry: what, why accepted, when to revisit)
 
 - The postgres image tag floats (2026-08-28). The ground template
