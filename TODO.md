@@ -76,6 +76,9 @@
       - `temp/RUN-4.md`, run 3's hand-off that started run 4, never
         committed there: what run 4 was told, read for lessons, and
         deleted once read.
+      - how run 4 closed its step branches (`run4/step-9` to 11):
+        the playbook still ticks "reached main by fast-forward" in
+        the gate, which ours dropped (`49d06e6`).
       Trigger: the refinement of this repo closes; in a new session.
       See: `f097695`, the kickoff and the message it took.
 
