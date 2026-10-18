@@ -100,7 +100,7 @@
       lesson written in general (conventions §3.7, 2026-10-18). The
       rules guard new and changed text; older text is rewritten in
       work of its own, and this is that work. W8 of the reading of
-      run 3 joins it when that reading closes.
+      run 3 joined it at that reading's close (2026-10-18).
       Ideas:
       - dependencies: a retelling becomes a pointer, and a pointer
         stays only if needed (conventions §3.1).
