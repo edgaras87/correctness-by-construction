@@ -193,7 +193,7 @@ marked on trial, or as adopted, never intent dressed as evidence;
 this is made usable as* — the list a change to the page walks,
 each item marked shipped or the deliverer's, with the moment it
 opens at, placed as the answer to the need; the seats (§3.4);
-lessons as dated italics; *why it arrives this way* — the
+lessons as dated italics (§3.7); *why it arrives this way* — the
 channel, a skill, a rule, a stub or a file, and why that one; and
 *what this does not cover*, the
 boundary against its neighbours by path.
@@ -209,7 +209,7 @@ the list is the floor, and content that fits none of it takes its
 own heading in the body, where a section two
 manuals need becomes the next candidate. A rule, a term or a
 mechanism that other text will point at gets its own numbered
-subsection, as this section's six do, so the pointer lands on it.
+subsection, as this section's seven do, so the pointer lands on it.
 
 ### 3.4 The seats
 
@@ -300,6 +300,22 @@ an editorial fix that left it at v1. Nothing else from three runs
 has reached a chapter — either evidence it is right or evidence
 nothing has been read against it hard enough, and this page does
 not know which.*
+
+### 3.7 A lesson taken
+
+A finding taken into a manual is written as what it teaches, not as
+the case that taught it. The body states the lesson in general, in
+the convention's own terms, as a new section or a change to one.
+The case goes beside it as a dated italic: what happened, when, and
+what changed. Another convention, or one project's detail, may
+appear as an example. The statement never stands on it, so it still
+holds when the example is gone.
+
+*Learned 2026-10-18, at `docs/conventions/agent-arrangement/` §3.7.
+Its first draft said what `CLAUDE.local.md` holds through
+`commit-plan`'s grant of small commits. The reviewer asked for it
+without that dependency and beyond commits. It became a test any
+line can be sorted by, with the commit grant as one example.*
 
 ## 4. Adding a convention
 
