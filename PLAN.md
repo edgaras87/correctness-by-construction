@@ -43,12 +43,7 @@ Notes: <opened <date>; its stages, and what each uses; what the
 
 **The Now line names the stage the step is in, and changes when the
 step enters a new one, not at every commit.** A step whose way is
-known lists its stages in its Notes. Two examples:
-
-- a reading, its Notes listing read, decide and work, note and
-  close: "Now: the work. D1 to D6 settled 2026-10-20."
-- `exchange-birth`, opened as first-time work: "Now: the birth.
-  Provisional manual written 2026-10-25."
+known lists its stages in its Notes.
 
 Inside a commit plan, the plan and the branch's log show where the
 work is.
