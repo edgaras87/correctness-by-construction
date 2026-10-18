@@ -260,6 +260,8 @@ deliverer*. Release opens after it.
   *The facility stays held, the clause F4 wrote declined with it
   (`9046a2f`); the absence rung stays held. Both on their triggers;
   the note says so.*
+  *Since W6 (`769123e`): both triggers name run 5, since run 4
+  rebuilt run 3's problem from run 3's copies.*
 - **F16** — Four held asks answered in RETRO.md: the arrangement
   pieces on trial and ticking as items come true (D4, all kept); a rule
   deliverable on trial (D4: a trial names the close that judges it);
@@ -267,6 +269,9 @@ deliverer*. Release opens after it.
   `docs/glossary.md`). Each matches a Later or Next item of ours.
   *The glossary taken 2026-10-17 by W16 (`fbd1c5e`): born at
   framing, from a template in `cbc-framing`.*
+  *Ended 2026-10-18 by W6 (`769123e`): the rule-on-trial item
+  gains D4's answer; the glossary item says the method still has
+  none.*
 - **F17** — Our Next item "fold run 3's three arrangement pieces into
   the run playbook" has fired: its trigger, run 3's retrospective,
   closed on 2026-10-12. D4 judged all three kept, and adds to the step
@@ -291,6 +296,8 @@ deliverer*. Release opens after it.
   *Since `2674c03` our skill says so too. The Later item's question,
   whether the red removes the backstop as well, stays open on its
   trigger; W6 rewrites its context.*
+  *Ended 2026-10-18 by W6 (`769123e`): the item's context says
+  what `2674c03` asks.*
 - **F21** — Run 4 is a birth in view: RETRO.md's goal is "run 4: the
   same project, rebuilt from the start". Our PLAN's Step 10 gate waits
   on a birth with `exchange-birth` written while it runs; three of our
@@ -299,9 +306,13 @@ deliverer*. Release opens after it.
   ours; Step 10's birth is run 5.*
 - **F22** — Our Release-triggered items, the stance bullets and the
   baselines sort, still wait: run 3's Release opens after our note.
+  *Ended 2026-10-18 by W6: both kept on run 3's Release, on the
+  reviewer's word, though run 4 may answer them first.*
 - **F23** — Our Later item "name when a run is read": D24 names it
   for this run — after the apply step, so the decisions arrive tried —
   and the run's TODO *Now* waits on our re-check.
+  *Ended 2026-10-18 by W6 (`769123e`): the Later item's context
+  names D24's moment; its trigger stands.*
 
 ## 4. What the run taught us that we had not thought of
 
@@ -621,6 +632,9 @@ deliverer*. Release opens after it.
   (`d1922c4`); a new item, the records map (`0a75d2d`).*
   *Since W15 and W16: two new items, shapes at birth (`8ec1381`)
   and the plain method (`658d0bc`), both before run 5's birth.*
+  *Done 2026-10-18: TODO brought true (`769123e`), conventions §4
+  names the last seven (`1bafec0`). The story-at-add trial is due
+  and moves to Now. The evidence-test measurement names run 5 too.*
 - **W7** — `CLAUDE.local.md` from the reviewer's hand (F12): where it
   lands here, if anywhere. *RETRO D25 is D8's since 2026-10-16.*
   *Since W11, the file's "New kinds of work" can point at the
@@ -764,6 +778,10 @@ deliverer*. Release opens after it.
   *Done 2026-10-17: by the commit plan for stages (`d6361f2` to the
   close), its commits `d7a8afe`, `f169d4a`. "Step" stays where it
   meant PLAN's Step 3, twice in `infra-establish`.*
+  *The word's home, after W17 (`1648d2d` to `b18eb06`): conventions
+  §2 says a skill's phases are stages, and the words define step
+  and stage (`950fab3`). Our `first-time-work` points at §2
+  (`315fad7`).*
 
 ## 7. What this reading taught
 
