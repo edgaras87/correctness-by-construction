@@ -131,11 +131,11 @@ Gate:
 
 **The step's own items.**
 
-- [ ] Before round 1, no rule in the manual's §1 table was in
+- [ ] Before round 1, no rule among the refinement's kinds was in
       doubt, or each doubt was tried on a sample and ended; the
-      findings file says which (`docs/conventions/refinement/`
-      §2.2).
-- [ ] Every kind in the manual's §1 table was read in its round
+      refinement's file says which
+      (`docs/conventions/refinement/` §2.2).
+- [ ] Every kind in the refinement's file was read in its round
       across all living text, and each read names the files it
       covered.
 - [ ] Every finding has the reviewer's ending: fixed, declined
@@ -184,7 +184,7 @@ Notes:
      fixed first (§2.2);
   2. each round: read, list, decide, work, then its close read;
   3. the last read, repeated until it finds nothing;
-  4. the close: the findings file goes, then `first-time-work` §3
+  4. the close: the refinement's file goes, then `first-time-work` §3
      chooses the manual's lasting form.
 - The records map is round 2's, in project-recording's group, its
   form chosen by `visual-comparison`.

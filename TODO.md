@@ -104,7 +104,7 @@
       hard to read (2026-10-18, the reviewer).
       Context: a refinement's finding names a broken rule, so text
       that meets the rules stays, even when it could read better
-      (`docs/conventions/refinement/` §2.2). Polish with no rule has
+      (`docs/conventions/refinement/` §2.3). Polish with no rule has
       no end: a reader asked to look always finds something. The
       reviewer is the reader the text fails, and asks "explain
       simpler" after most answers with parts.
