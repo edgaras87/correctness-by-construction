@@ -131,6 +131,9 @@ Gate:
 
 **The step's own items.**
 
+- [ ] Before round 1, no rule in the manual's §1 table was in
+      doubt, or each doubt was tried on a sample and ended; the
+      findings file says which.
 - [ ] Every kind in the manual's §1 table was read in its round
       across all living text, and each read names the files it
       covered.
