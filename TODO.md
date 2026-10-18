@@ -36,6 +36,19 @@
       Trigger: due — the pair it waited on was made on 2026-09-30.
       See: devlog 2026-09-30, local maps.
 
+- [ ] Decide whether a TODO item's story is written when the item
+      is added (2026-10-17, the reviewer).
+      Context: TODO's header sends an item's story to that
+      session's devlog entry, written at the session's end. By
+      then the reasons are cut to a line, and an item added
+      mid-session has no See until then. Tried on five items on
+      2026-10-17, the refinement first.
+      Ideas: TODO's header gains "when the item is added", and
+             project-recording says it for both seats.
+      Trigger: due — the third item was written this way on
+               2026-10-17.
+      See: devlog 2026-10-17, the refinement.
+
 ## Next (upcoming steps — assign each to a step when triaged)
 
 - [ ] Read run 4 against `dac4dd1`, the run 3 commit it was born
@@ -249,16 +262,17 @@
       reference opens.
       See: devlog 2026-09-24.
 
-- [ ] Read what the next birth's first slice gate found against
-      the evidence-test shape (2026-10-08, the reading of run 3).
+- [ ] Read what run 5's first slice gate found against the
+      evidence-test shape (2026-10-08, the reading of run 3).
       Context: the shape ships with the method since ADR-0052, read
-      only at the gate. A newborn's first tests are written without
-      it in view, and its first slice's close reads them against it:
-      the differences it records are the measurement this item had
-      held the shape back for. Most of its lessons are in
-      `cbc-slice` already, so a test written from the skill alone
-      may meet it.
-      Trigger: the next birth's first slice closing.
+      only at the gate. A newborn writes its first tests without it,
+      and its first slice's close reads them against it: the
+      differences are the measurement. Run 4 held run 3's shape from
+      birth, so run 5 is the first clean one, unless it reads the
+      shapes at birth (the item on `.claude/shapes/`). `cbc-slice`
+      holds most of its lessons, so tests from the skill alone may
+      meet it.
+      Trigger: run 5's first slice closing.
       See: devlog 2026-10-08; and 2026-10-10.
 
 - [ ] Watch whether the next newborn adds the ground-must-be-up
@@ -285,19 +299,6 @@
                5's birth closes.
       See: ADR-0057, decision 4.
 
-- [ ] Decide whether a TODO item's story is written when the item
-      is added (2026-10-17, the reviewer).
-      Context: TODO's header sends an item's story to that
-      session's devlog entry, written at the session's end. By
-      then the reasons are cut to a line, and an item added
-      mid-session has no See until then. Tried first on the
-      refinement item.
-      Ideas: TODO's header gains "when the item is added", and
-             project-recording says it for both seats.
-      Trigger: three items written this way, or the first new
-               session that resumes from one.
-      See: devlog 2026-10-17, the refinement.
-
 - [ ] Decide whether a check compares the worked example's two
       copies (2026-10-15, the commit plan for writing rules).
       Context: one-home's rule 5 asks a check where two copies
@@ -316,7 +317,9 @@
       two writers disagree — because the skill is silent on it. We
       held it rather than declined: one instance is not a shape.
       Run 3 says SL-2 did not lean on it; SL-2 faces no race.
-      Trigger: a second run reaching the same gap unprompted.
+      Run 4 rebuilt run 3's problem from run 3's copies, so it
+      cannot be the second run.
+      Trigger: run 5 reaching the same gap unprompted.
       See: devlog 2026-09-17, later still.
 
 - [ ] Move the skills' `foundation` to concept v2 at the release
@@ -333,6 +336,8 @@
       force in the next from its first step. Run 3 asked after
       offering its evidence-test shape as a rule. Held: the question
       is real only once there is a rule we would deliver that way.
+      Run 3's RETRO D4 says a trial names the close that judges it,
+      and the step form says so since `0cdc50c`.
       Trigger: a rule we would ship that one run alone has lived.
       See: devlog 2026-10-08.
 
@@ -341,7 +346,8 @@
       tripwire, witness, fold, fence and possession appear only in
       the skills, never in the chapters a reader starts from, and
       the wall's own check joins them. Whether a list beside the
-      chapters, or a chapter's, is open.
+      chapters, or a chapter's, is open. Since `fbd1c5e` each run
+      starts its own glossary at framing; the method has none.
       Trigger: Release's README item, where a stranger first needs
       the words.
 
@@ -467,7 +473,9 @@
       Context: a reading happens when the reviewer says. A hand-off
       arriving, a step closing at the run, a calendar — none is
       named, so a reading happens when someone remembers, and both
-      sides drift further from the pin while it waits.
+      sides drift further from the pin while it waits. Run 3's RETRO
+      D24 names one moment: after a run's apply step, so its
+      decisions arrive tried.
       Trigger: a hand-off found waiting for a reading nobody called.
       See: devlog 2026-10-01.
 
@@ -522,13 +530,12 @@
       Context: no process clock, no state outside the store —
       nothing to observe at runtime; its wall is a rule on the
       compiled classes. Run 3 asks for a rung between "single
-      validated entry path" and "code review", and met it again in
-      SL-2's G5 and G6 and SL-4's one split the store cannot see,
-      each guarded by a test that reads the source — the same run,
-      so not the trigger. The hierarchy lives in `concept/02` and
-      both cbc-slice files, so this is a concept change: an ADR and
-      the version question (ADR-0003).
-      Trigger: a second run meeting an absence guarantee.
+      validated entry path" and "code review". It met it again in
+      SL-2 and SL-4, and run 4 rebuilt the same problem from run 3's
+      copies, so neither is a second run. The hierarchy lives in
+      `concept/02` and both cbc-slice files: a concept change, with
+      an ADR and the version question (ADR-0003).
+      Trigger: run 5 meeting an absence guarantee.
       See: devlog 2026-09-15; and 2026-10-10.
 
 - [ ] Decide whether the worked example shows a slice that
@@ -548,6 +555,8 @@
       the store's check on the units held caught both orders, and the
       evidence went red only with the one transaction and that check
       both gone. Run 3 revised its plan for it and proposed no edit.
+      Since `2674c03` the skill asks the red run to note whether each
+      backstop was seen or is unproven; removing it is not asked.
       Trigger: a second slice whose red a backstop holds green.
       See: devlog 2026-10-10.
 
