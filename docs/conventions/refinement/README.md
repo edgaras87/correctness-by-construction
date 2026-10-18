@@ -82,11 +82,20 @@ The reviewer confirms the kinds and the areas. The agent lists
 each area's files with their counts, so the read can show it
 covered them.
 
+The rules read against stay as they are until the read ends. A
+rule changed halfway would make everything read before it be read
+again. A finding against a rule itself waits in the list like any
+other.
+
 ### 2.2 Read
 
 Each file is read whole, against every kind. One home and words
 also need a sweep across files, since one file alone cannot show
 them.
+
+Nothing is fixed during the read. One fix in a manual can change
+what is right in every file derived from it. The whole list shows
+those chains before any work is spent on them.
 
 A reader's finding is checked against the tree before it is
 listed. Each finding says how it stands: checked, resting on the
@@ -109,8 +118,17 @@ A finding that needs the reviewer's choice beyond "fix it" gets a
 DECISION-n: the options, a recommendation, and the findings that
 rest on it.
 
-Findings are grouped by the files they edit, so one group's work
-touches one set of files.
+Findings are grouped by the files they edit, one group to a
+layer, in the order the work takes them:
+
+1. the conventions manual, `docs/conventions/conventions/`, which
+   every other manual is read against;
+2. project-recording, with the map of the records, which other
+   text points to;
+3. the other manuals, and the concept chapters;
+4. `ARCHITECTURE.md`, `README.md` and the records;
+5. our skills and rules, under `.claude/`;
+6. `delivery/`, what ships.
 
 ### 2.4 Decide
 
@@ -126,9 +144,24 @@ A finding is never deleted or renumbered while the file lives.
 
 ### 2.5 Work
 
-One group at a time, each a commit plan
-(`docs/conventions/commit-plan/`). A commit
-that touches a description goes through the foundation check.
+One group at a time, in §2.3's order, each a commit plan
+(`docs/conventions/commit-plan/`). A source comes before what
+derives from it, so a fix is carried down once and never redone.
+A commit that touches a description goes through the foundation
+check.
+
+Inside a group, the kinds go in three passes:
+
+1. **What is true:** stale lines, foundations. A wrong line is not
+   worth polishing.
+2. **Where it lives:** one home, dependencies, seats, lessons. A
+   retelling that becomes a pointer goes, so it is not rewritten
+   first.
+3. **How it reads:** writing, words, on the text that is left.
+
+A fact told in several groups is fixed in the group of its home.
+Its other copies become pointers in the same commit plan: a
+deletion, not a rewrite, so the order holds.
 
 ### 2.6 Close
 
@@ -138,8 +171,8 @@ from git.
 
 ## 3. Not known yet
 
-- **The order of the read:** file by file against every kind, or
-  kind by kind across all files.
+- **Whether the order holds:** §2.3's layers and §2.5's passes
+  are a guess the first group tests.
 - **The method's texts:** `delivery/method/`,
   `delivery/spring-postgres/` and `concept/` have a plain rewrite
   of their own in TODO, due before run 5's birth. Whether the
