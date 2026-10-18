@@ -660,6 +660,11 @@ deliverer*. Release opens after it.
   the reviewer raises them again if one appears. What the file
   is for now: settings for one checkout, the rules being the
   bundle's, as run 4's file shows.*
+  *Two lessons came of it, on the reviewer's word. Agent-arrangement
+  §3.7 says the file holds settings, not rules, with a test for a
+  line (`f8dde14`). Conventions §3.7 says a lesson taken from one
+  case is written in general, the case as its dated italic
+  (`22f7623`, `05cd169`).*
 - **W8** — After the list closes: RETRO's lessons applied to this
   repo's own living records (plain writing, full-name tags, a
   glossary, one home per fact), as Step 10's "lessons folded back"
