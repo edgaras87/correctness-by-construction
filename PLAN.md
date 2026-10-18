@@ -112,4 +112,80 @@ corner.
 
 ---
 
-No step is open.
+## Step: Refine this repo against its own rules  (`docs/conventions/refinement/`, `first-time-work`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
+
+Goal: Living text written before a rule now meets that rule, and
+project-recording §1 is a map of the records in both seats.
+Now: sorting the kinds (`docs/conventions/refinement/` §2.1).
+Gate:
+
+**At the opening.**
+
+- [x] The step's branch `refinement-2026-10-18` is cut from main,
+      and nothing of the step was done on main (2026-10-18).
+- [x] This gate was written before the work started (2026-10-18).
+- [x] No skill, rule or earlier work says how to refine, so the
+      step opened a provisional manual,
+      `docs/conventions/refinement/README.md`, marked *on trial*
+      (`first-time-work`; 2026-10-18, `2e9c26b`).
+
+**The step's own items.**
+
+- [ ] Every kind in the manual's §1 table was read in its round
+      across all living text, and each read names the files it
+      covered.
+- [ ] Every finding has the reviewer's ending: fixed, declined
+      with its reason, or a TODO item.
+- [ ] The last read found nothing that breaks a rule
+      (`docs/conventions/refinement/` §2.7).
+- [ ] project-recording §1 shows in one view which record answers
+      what, in both seats. It includes `RETRO.md`, `COMMIT-PLAN.md`,
+      `docs/system/`, and records another convention owns.
+- [ ] The records map's form was chosen by `visual-comparison`,
+      and that skill's gates hold for it.
+- [ ] Each round's close read has its counts
+      (`docs/conventions/refinement/` §2.6).
+- [ ] The reviewer chose the manual's lasting form, and an ADR
+      records it with the ways rejected at the opening
+      (`first-time-work` §3).
+- [ ] `first-time-work`'s trial on our seat has its verdict, in one
+      line: kept, changed or dropped.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves; every ADR a
+      record cites exists; each pair of copies agrees, such as the
+      worked example in `cbc-framing` and in `cbc-slice`.
+- [ ] No living line in a record the step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the step changed.
+- [ ] New and changed text reads to `.claude/rules/writing.md`.
+- [ ] Every commit on `refinement-2026-10-18` follows
+      commit-messages.
+- [ ] No commit straddles agent and project paths.
+- [ ] The step's lessons are folded back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4).
+
+Notes:
+- Opened 2026-10-18 from TODO's refinement item. The records map
+  item joined it, as its trigger asked. Both items, with their
+  Ideas, are in `TODO.md` at `b3b2018`.
+- Stages, from `docs/conventions/refinement/` §2:
+  1. sort the kinds into rounds; the reviewer confirms them, the
+     areas, and whether the method's texts are read here (§3);
+  2. each round: read, list, decide, work, then its close read;
+  3. the last read, repeated until it finds nothing;
+  4. the close: the findings file goes, then `first-time-work` §3
+     chooses the manual's lasting form.
+- The records map is round 2's, in project-recording's group, its
+  form chosen by `visual-comparison`.
+- When the work shows the manual wrong, the manual changes first,
+  in a commit of its own (`first-time-work` §2).
+- The first use of `first-time-work` on our seat. This step's
+  close judges it.
+- The reviewer signs: the kinds and their rounds, before round 1;
+  each finding's ending; every commit, at its boundary; the
+  manual's lasting form; main taking the branch.

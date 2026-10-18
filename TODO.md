@@ -23,6 +23,8 @@
 
 ## Now (current plan step)
 
+## Next (upcoming steps — assign each to a step when triaged)
+
 - [ ] Make the conventions index a full local map (2026-09-30, the
       reviewer).
       Context: its chain shows only the conventions that act in
@@ -58,8 +60,6 @@
       Trigger: due — the third item was written this way on
                2026-10-17.
       See: devlog 2026-10-17, the refinement.
-
-## Next (upcoming steps — assign each to a step when triaged)
 
 - [ ] Read run 4 against `dac4dd1`, the run 3 commit it was born
       from (2026-10-15, the reviewer).
@@ -99,39 +99,6 @@
       Trigger: run 4's reading, which reads how run 4 lived run 3's
                shapes.
       See: devlog 2026-10-17, our forms as shapes.
-
-- [ ] Refine this repo against its own rules (2026-10-17, the
-      reviewer).
-      Context: most of the text predates its rules: writing and
-      one-home (ADR-0053), the foundation check (2026-10-17), a
-      lesson written in general (conventions §3.7, 2026-10-18). The
-      rules guard new and changed text; older text is rewritten in
-      work of its own, and this is that work. W8 of the reading of
-      run 3 joined it at that reading's close (2026-10-18).
-      Ideas:
-      - dependencies: a retelling becomes a pointer, and a pointer
-        stays only if needed (conventions §3.1).
-      - seats: a deliverer seat says how its convention works here,
-        nothing more; project-recording's first (the playbook, why
-        runs keep steps).
-      - writing: living text older than ADR-0053, against the whole
-        writing rule: plain words, and rule 6's labels, each local
-        number with its owner.
-      - stale lines: each one noticed and not fixed where found.
-      - one home: facts told in several places, such as how the
-        seats differ, told in five (W8).
-      - foundations: every `foundation` line read once against its
-        manual; the check reads only what changes.
-      - lessons: each manual's body read against conventions §3.7;
-        a case written as the rule becomes a general statement,
-        the case its dated italic. *What it is for* keeps its
-        case, since its evidence is one by design.
-      - words: "run" as a verb for skills and steps, beside "run"
-        the project; say "uses".
-      - words: "small steps" in `commit-plan` (ADR-0050), a third
-        "step" beside PLAN's and a numbered list's.
-      Trigger: the reading of run 3 closes.
-      See: devlog 2026-10-17, the refinement.
 
 - [ ] Try a readability pass, the reviewer marking where text is
       hard to read (2026-10-18, the reviewer).
@@ -196,24 +163,6 @@
       - chapter 02's "scope creep wearing a safety costume".
       Trigger: before run 5's birth, as a step of its own.
       See: devlog 2026-10-17, later, the plain method.
-
-- [ ] Rebuild project-recording §1 as a map of the records, in both
-      seats (2026-10-17, the reviewer).
-      Context: no one view says which record answers what. §1 draws
-      a run's records only, and leaves out RETRO.md, COMMIT-PLAN,
-      `docs/system/`, the one-home rule, and records another
-      convention owns, such as the decisions log (agent-arrangement
-      §3.4). The deliverer's differences are prose under its seat.
-      W14 of the reading of run 3 met this three times.
-      Ideas:
-      - a section of the manual, §1 rebuilt; a file beside it was
-        weighed against conventions §3.1.
-      - the form chosen by `visual-comparison`: a picture, a table,
-        or both.
-      - per record: the question it answers, the convention that
-        owns it, and how each seat differs.
-      Trigger: the refinement item opens; built with it.
-      See: devlog 2026-10-17, later, the records map.
 
 - [ ] Decide whether a newborn reads `.claude/shapes/` at birth
       (2026-10-17, the reviewer).
