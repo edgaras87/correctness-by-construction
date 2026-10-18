@@ -1,9 +1,10 @@
 # Refinement
 
 **A refinement brings text written before a rule up to that rule.
-It reads first and lists what it finds. Nothing changes until the
-reviewer has ended each finding, and then the text is fixed one
-group at a time.**
+It goes in rounds: what is true, then where it lives, then how it
+reads. Each round reads first and lists what it finds. Nothing
+changes until the reviewer has ended each finding, and then the
+text is fixed one group at a time.**
 
 ## What it is for
 
@@ -31,8 +32,8 @@ groups, and ended every one. Its file is in git at
 
 *On trial.* What would make it evidence: the refinement step in
 `PLAN.md` closes with every finding ended, and the reviewer judges
-whether reading first, then fixing in groups, held. Look again at
-that step's close.
+whether rounds, each read first and fixed in groups, held.
+Look again at that step's close.
 
 ## What this is made usable as
 
@@ -61,37 +62,59 @@ out:
 - a run's own text in `temp/`, which its reading reads.
 
 Each refinement names the rules it reads against. Each rule is one
-kind of finding. This one's eight kinds:
+kind of finding. This one's eight kinds, each with its round
+(§2):
 
-| Kind | What a finding is | The rule |
-|---|---|---|
-| Dependencies | a retelling where a pointer would do | `docs/conventions/conventions/` §3.1 |
-| Seats | a deliverer seat that says more than how its convention works here | `docs/conventions/conventions/` §3.4 |
-| Writing | text older than ADR-0053, against the whole rule | `.claude/rules/writing.md` |
-| Stale lines | a line no longer true | `PLAN.md`, the step form's close |
-| One home | a fact told in more than one place | `.claude/rules/one-home.md` |
-| Foundations | a `foundation` line that disagrees with its manual | `.claude/rules/foundation-check.md` |
-| Lessons | a case written as the rule | `docs/conventions/conventions/` §3.7 |
-| Words | "run" as a verb for a skill or a step; "small steps" in `commit-plan` | `.claude/rules/writing.md`, rule 6 |
+| Round | Kind | What a finding is | The rule |
+|---|---|---|---|
+| 1 | Stale lines | a line no longer true | `PLAN.md`, the step form's close |
+| 1 | Foundations | a `foundation` line that disagrees with its manual | `.claude/rules/foundation-check.md` |
+| 2 | One home | a fact told in more than one place | `.claude/rules/one-home.md` |
+| 2 | Dependencies | a retelling where a pointer would do | `docs/conventions/conventions/` §3.1 |
+| 2 | Seats | a deliverer seat that says more than how its convention works here | `docs/conventions/conventions/` §3.4 |
+| 2 | Lessons | a case written as the rule | `docs/conventions/conventions/` §3.7 |
+| 3 | Writing | text older than ADR-0053, against the whole rule | `.claude/rules/writing.md` |
+| 3 | Words | "run" as a verb for a skill or a step; "small steps" in `commit-plan` | `.claude/rules/writing.md`, rule 6 |
 
-## 2. The stages
+## 2. The rounds
 
-### 2.1 Scope
+A kind goes into a round by what its fix does to the text:
 
-The reviewer confirms the kinds and the areas. The agent lists
-each area's files with their counts, so the read can show it
+1. **Makes a line true.** A wrong line is not worth moving or
+   rewording.
+2. **Moves or removes text.** A retelling that becomes a pointer
+   goes, so it is not reworded first.
+3. **Rewords what stays.**
+
+Each sort with a kind in it is a round, in that order. A sort with
+none is no round. Kinds whose fixes do the same to the text do not
+undo each other, so they share a round.
+
+Each round reads, lists, decides and fixes before the next one
+reads, so it reads the text as the round before left it. The
+reviewer never decides a finding on text a later round deletes.
+The reviewer's time is what the extra reads save.
+
+### 2.1 Sort the kinds
+
+The kinds are collected from the TODO items that asked for the
+refinement. The agent sorts each by what its fix does, and writes
+the sort into §1's table. The reviewer confirms the kinds, their
+rounds and the areas before the first round reads. The agent lists
+each area's files with their counts, so each round can show it
 covered them.
-
-The rules read against stay as they are until the read ends. A
-rule changed halfway would make everything read before it be read
-again. A finding against a rule itself waits in the list like any
-other.
 
 ### 2.2 Read
 
-Each file is read whole, against every kind. One home and words
-also need a sweep across files, since one file alone cannot show
-them.
+Each kind is read on its own: a reader looks for one kind only,
+so nothing else takes its attention. The kinds of one round can be
+read side by side. Most kinds read each file whole. One home and
+words also need a sweep across files, since one file alone cannot
+show them.
+
+A rule stays as it is while a round reads against it. Changed
+halfway, everything read before the change would be read again. A
+finding against a rule itself waits in the list like any other.
 
 Nothing is fixed during the read. One fix in a manual can change
 what is right in every file derived from it. The whole list shows
@@ -107,8 +130,9 @@ section two readers called wrong and right became one finding.*
 
 ### 2.3 List
 
-The findings go into one file, `temp/refinement-<date>.md`. Each
-finding is FINDING-n, and says:
+The findings go into one file, `temp/refinement-<date>.md`, a
+section per round. Each finding is FINDING-n, numbered on across
+the rounds, and says:
 
 - where: the path, and lines;
 - what the rule says, and what the text says;
@@ -118,8 +142,8 @@ A finding that needs the reviewer's choice beyond "fix it" gets a
 DECISION-n: the options, a recommendation, and the findings that
 rest on it.
 
-Findings are grouped by the files they edit, one group to a
-layer, in the order the work takes them:
+A round's findings are grouped by the files they edit, one group
+to a layer, in the order the work takes them:
 
 1. the conventions manual, `docs/conventions/conventions/`, which
    every other manual is read against;
@@ -132,9 +156,9 @@ layer, in the order the work takes them:
 
 ### 2.4 Decide
 
-The reviewer sees the whole list before any finding is decided
-(`.claude/rules/foundation-check.md`, step 4). Each finding then
-gets one ending:
+The reviewer sees the round's whole list before any finding is
+decided (`.claude/rules/foundation-check.md`, step 4). Each finding
+then gets one ending:
 
 - **fixed**, and its line names the commit;
 - **declined**, with the reason;
@@ -150,29 +174,24 @@ derives from it, so a fix is carried down once and never redone.
 A commit that touches a description goes through the foundation
 check.
 
-Inside a group, the kinds go in three passes:
-
-1. **What is true:** stale lines, foundations. A wrong line is not
-   worth polishing.
-2. **Where it lives:** one home, dependencies, seats, lessons. A
-   retelling that becomes a pointer goes, so it is not rewritten
-   first.
-3. **How it reads:** writing, words, on the text that is left.
-
 A fact told in several groups is fixed in the group of its home.
 Its other copies become pointers in the same commit plan: a
 deletion, not a rewrite, so the order holds.
 
-### 2.6 Close
+### 2.6 A round's close
 
-Every finding has its ending. The file goes in a commit of its
-own, and the devlog names that commit, so the file can be read
-from git.
+Every finding of the round has its ending. Then the next round
+reads.
+
+### 2.7 The close
+
+After round 3, the file goes in a commit of its own, and the
+devlog names that commit, so the file can be read from git.
 
 ## 3. Not known yet
 
-- **Whether the order holds:** §2.3's layers and §2.5's passes
-  are a guess the first group tests.
+- **Whether the order holds:** the first round tests §2.3's
+  layers; the last, whether the rounds were worth their reads.
 - **The method's texts:** `delivery/method/`,
   `delivery/spring-postgres/` and `concept/` have a plain rewrite
   of their own in TODO, due before run 5's birth. Whether the
