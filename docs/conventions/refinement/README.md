@@ -104,6 +104,14 @@ rounds and the areas before the first round reads. The agent lists
 each area's files with their counts, so each round can show it
 covered them.
 
+A wrong rule makes every finding against it wrong. So the reviewer
+also confirms that no rule in §1's table is in doubt. A doubt
+comes from the reviewer, or from a TODO item that names the rule;
+the agent searches TODO for each rule's name. A doubted rule is
+tried on a sample of the text it governs, and the reviewer judges
+the result. A rule that fails is fixed before the first round
+reads, in a commit of its own, through the foundation check.
+
 ### 2.2 Read
 
 Each kind is read on its own: a reader looks for one kind only,
