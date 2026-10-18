@@ -186,22 +186,38 @@ deletion, not a rewrite, so the order holds.
 
 ### 2.6 A round's close
 
-Every finding of the round has its ending. Then the text the
-round changed, and only that, is read once more against the
-round's kinds, held to §2.2's rule for a finding. It catches a fix that broke
-something: a pointer to the wrong place, a reworded line no longer
-true. What it finds is listed and decided like any finding, and
-the check counts:
+Every finding of the round has its ending. Then all the text the
+round covers is read again against the round's kinds, held to
+§2.2's rule for a finding. Reading only the changed text is not
+enough: a fix in one file can make an unchanged line in another
+wrong. What the read finds is listed and decided like any finding,
+and it counts:
 
-- how many findings it made;
+- findings in text the round changed, and in text it did not;
 - how many the reviewer took, and how many were declined as taste.
 
 Then the next round reads.
 
-### 2.7 The close
+### 2.7 The last read
 
-After round 3, the file goes in a commit of its own, and the
-devlog names that commit, so the file can be read from git.
+After the last round, everything is read against every kind of
+the refinement. It catches a later round breaking an earlier one's
+work: a reworded line no longer true, a pointer reworded wrong.
+
+The kinds are read on their own, as in §2.2, but in one read, with
+no fixes between them. The order of the rounds is for fixes, not
+for reads: with nothing changing, a read gives the same result in
+any order.
+
+What it finds is sorted by §2's rule, and fixed in that order, a
+round only for each sort with a finding. Then everything is read
+again, until a read finds nothing that breaks a rule. §2.2's rule
+for a finding is what makes this end.
+
+### 2.8 The close
+
+The file goes in a commit of its own, and the devlog names that
+commit, so the file can be read from git.
 
 ## 3. Not known yet
 
@@ -216,9 +232,8 @@ devlog names that commit, so the file can be read from git.
 - **Whether the findings file needs a shape.** It borrows the
   eval's form, which borrowed a reading's.
 - **How big a group is.**
-- **Whether a round needs a second full read.** Only the check of
-  changed text is done. Round 1's counts decide whether a full
-  read again would find real misses, and in which round.
+- **Whether the full reads again paid.** The counts of findings in
+  unchanged text decide whether a narrower read would have done.
 
 ## Why it arrives this way
 
