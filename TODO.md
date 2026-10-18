@@ -107,7 +107,9 @@
       - seats: a deliverer seat says how its convention works here,
         nothing more; project-recording's first (the playbook, why
         runs keep steps).
-      - plain language: living text older than ADR-0053.
+      - writing: living text older than ADR-0053, against the whole
+        writing rule: plain words, and rule 6's labels, each local
+        number with its owner.
       - stale lines: each one noticed and not fixed where found.
       - one home: facts told in several places, such as how the
         seats differ, told in five (W8).
