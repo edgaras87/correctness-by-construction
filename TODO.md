@@ -493,7 +493,8 @@
       named, so a reading happens when someone remembers, and both
       sides drift further from the pin while it waits. Run 3's RETRO
       D24 names one moment: after a run's apply step, so its
-      decisions arrive tried.
+      decisions arrive tried. Run 3's next step waited on our note:
+      recording the read-through was on its path (2026-10-18).
       Trigger: a hand-off found waiting for a reading nobody called.
       See: devlog 2026-10-01.
 
