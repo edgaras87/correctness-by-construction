@@ -88,44 +88,46 @@ The reviewer's time is what the extra reads save.
 Everything a refinement makes goes into one file,
 `temp/refinement-<date>.md`, in three parts:
 
-1. **Before round 1:** the kinds and their rounds, how each rule's
-   check ended, and the living files by layer, with their counts
-   (§2.1, §2.2).
+1. **Before round 1:** the kinds and their rounds, the living
+   files by layer with their counts, and how each rule's check
+   ended (§2.1 to §2.3).
 2. **A section per round:** its findings, decisions and counts
-   (§2.4 to §2.7).
-3. **The last read** (§2.8).
+   (§2.5 to §2.8).
+3. **The last read** (§2.9).
 
 The file holds data; this page says how it is made. At the close
-the file goes (§2.9).
+the file goes (§2.10).
 
-### 2.1 Sort the kinds
+### 2.1 Group the kinds
 
 The kinds are collected from the TODO items that asked for the
-refinement. The agent sorts each by what its fix does, and writes
-the sort into the file.
+refinement. The agent puts each in its round, by what its fix
+does, and writes them into a new file, the refinement's file. The
+reviewer confirms the kinds and their rounds.
 
-The agent lists the living files (§1) in the file, by §2.4's
+### 2.2 List the files
+
+The agent lists the living files (§1) in the file, by §2.5's
 layers, with their counts. Every living file falls in exactly one
 layer. When the list finds a file that fits none, a layer is
 widened to hold it, or a new layer is added. Each round shows from
-this list that it covered every file.
+this list that it covered every file. The reviewer confirms the
+layers.
 
-The reviewer confirms the kinds, their rounds and the layers
-before the first round reads.
-
-### 2.2 Check the rules
+### 2.3 Check the rules
 
 A wrong rule makes every finding against it wrong. So, before the
 first round reads, the reviewer confirms that no rule among the
 file's kinds is in doubt. A doubt comes from the reviewer, or from
 a TODO item that names the rule; the agent searches TODO for each
 rule's name. A doubted rule is tried on a sample of the text it
-governs, and the reviewer judges the result. A rule that fails is fixed
-before the first round reads, in a commit of its own, through the
-foundation check. The file says, for each rule, whether it was in
-doubt and how its check ended.
+governs, taken from §2.2's list, and the reviewer judges the
+result. A rule that fails is fixed before the first round reads,
+in a commit of its own, through the foundation check. The file
+says, for each rule, whether it was in doubt and how its check
+ended.
 
-### 2.3 Read
+### 2.4 Read
 
 Each kind is read on its own: a reader looks for one kind only,
 so nothing else takes its attention. The kinds of one round can be
@@ -155,14 +157,14 @@ reader, or uncertain.
 every finding checked against the tree before it was listed. A
 section two readers called wrong and right became one finding.*
 
-### 2.4 List
+### 2.5 List the findings
 
 The findings go into the round's section of the file. Each
 finding is FINDING-n, numbered on across the rounds, and says:
 
 - where: the path, and lines;
 - what the rule says, and what the text says;
-- how it stands, as in §2.3.
+- how it stands, as in §2.4.
 
 A finding that needs the reviewer's choice beyond "fix it" gets a
 DECISION-n: the options, a recommendation, and the findings that
@@ -171,7 +173,7 @@ rest on it.
 A round's findings are grouped by the files they edit, one group
 to a layer, in the order the work takes them. Every refinement
 starts from these six; the file records a layer widened or added
-(§2.1):
+(§2.2):
 
 1. the conventions manual, `docs/conventions/conventions/`, which
    every other manual is read against;
@@ -182,7 +184,7 @@ starts from these six; the file records a layer widened or added
 5. our skills and rules, under `.claude/`;
 6. `delivery/`, what ships.
 
-### 2.5 Decide
+### 2.6 Decide
 
 The reviewer sees the round's whole list before any finding is
 decided (`.claude/rules/foundation-check.md`, step 4). Each finding
@@ -194,9 +196,9 @@ then gets one ending:
 
 A finding is never deleted or renumbered while the file lives.
 
-### 2.6 Work
+### 2.7 Work
 
-One group at a time, in §2.4's order, each a commit plan
+One group at a time, in §2.5's order, each a commit plan
 (`docs/conventions/commit-plan/`). A source comes before what
 derives from it, so a fix is carried down once and never redone.
 A commit that touches a description goes through the foundation
@@ -206,11 +208,11 @@ A fact told in several groups is fixed in the group of its home.
 Its other copies become pointers in the same commit plan: a
 deletion, not a rewrite, so the order holds.
 
-### 2.7 A round's close
+### 2.8 A round's close
 
 Every finding of the round has its ending. Then all the text the
 round covers is read again against the round's kinds, held to
-§2.3's rule for a finding. Reading only the changed text is not
+§2.4's rule for a finding. Reading only the changed text is not
 enough: a fix in one file can make an unchanged line in another
 wrong. What the read finds is listed and decided like any finding,
 and the round's section counts:
@@ -220,30 +222,30 @@ and the round's section counts:
 
 Then the next round reads.
 
-### 2.8 The last read
+### 2.9 The last read
 
 After the last round, everything is read against every kind of
 the refinement. It catches a later round breaking an earlier one's
 work: a reworded line no longer true, a pointer reworded wrong.
 
-The kinds are read on their own, as in §2.3, but in one read, with
+The kinds are read on their own, as in §2.4, but in one read, with
 no fixes between them. The order of the rounds is for fixes, not
 for reads: with nothing changing, a read gives the same result in
 any order.
 
 What it finds is sorted by §2's rule, and fixed in that order, a
 round only for each sort with a finding. Then everything is read
-again, until a read finds nothing that breaks a rule. §2.3's rule
+again, until a read finds nothing that breaks a rule. §2.4's rule
 for a finding is what makes this end.
 
-### 2.9 The close
+### 2.10 The close
 
 The file goes in a commit of its own, and the devlog names that
 commit, so the file can be read from git.
 
 ## 3. Not known yet
 
-- **Whether the order holds:** the first round tests §2.4's
+- **Whether the order holds:** the first round tests §2.5's
   layers; the last, whether the rounds were worth their reads.
 - **The method's texts:** `delivery/method/`,
   `delivery/spring-postgres/` and `concept/` have a plain rewrite
