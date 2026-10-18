@@ -175,7 +175,9 @@ Notes:
   Ideas, are in `TODO.md` at `b3b2018`.
 - Stages, from `docs/conventions/refinement/` §2:
   1. sort the kinds into rounds; the reviewer confirms them, the
-     areas, and whether the method's texts are read here (§3);
+     areas, whether the method's texts are read here (§3), and
+     that no rule is in doubt, or a doubted rule is tried and
+     fixed first (§2.1);
   2. each round: read, list, decide, work, then its close read;
   3. the last read, repeated until it finds nothing;
   4. the close: the findings file goes, then `first-time-work` §3
@@ -186,6 +188,7 @@ Notes:
   in a commit of its own (`first-time-work` §2).
 - The first use of `first-time-work` on our seat. This step's
   close judges it.
-- The reviewer signs: the kinds and their rounds, before round 1;
+- The reviewer signs: the kinds, their rounds and the rules,
+  before round 1;
   each finding's ending; every commit, at its boundary; the
   manual's lasting form; main taking the branch.
