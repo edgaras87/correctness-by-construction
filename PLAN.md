@@ -116,7 +116,7 @@ corner.
 
 Goal: Living text written before a rule now meets that rule, and
 project-recording §1 is a map of the records in both seats.
-Now: sorting the kinds (`docs/conventions/refinement/` §2.1).
+Now: grouping the kinds (`docs/conventions/refinement/` §2.1).
 Gate:
 
 **At the opening.**
@@ -131,24 +131,29 @@ Gate:
 
 **The step's own items.**
 
+- [ ] The refinement's file holds every kind the TODO item asked
+      for, each in its round, and the reviewer confirmed them
+      (`docs/conventions/refinement/` §2.1).
+- [ ] The refinement's file lists every living file in exactly one
+      layer (`docs/conventions/refinement/` §2.2).
 - [ ] Before round 1, no rule among the refinement's kinds was in
       doubt, or each doubt was tried on a sample and ended; the
       refinement's file says which
-      (`docs/conventions/refinement/` §2.2).
+      (`docs/conventions/refinement/` §2.3).
 - [ ] Every kind in the refinement's file was read in its round
       across all living text, and each read names the files it
       covered.
 - [ ] Every finding has the reviewer's ending: fixed, declined
       with its reason, or a TODO item.
 - [ ] The last read found nothing that breaks a rule
-      (`docs/conventions/refinement/` §2.8).
+      (`docs/conventions/refinement/` §2.9).
 - [ ] project-recording §1 shows in one view which record answers
       what, in both seats. It includes `RETRO.md`, `COMMIT-PLAN.md`,
       `docs/system/`, and records another convention owns.
 - [ ] The records map's form was chosen by `visual-comparison`,
       and that skill's gates hold for it.
 - [ ] Each round's close read has its counts
-      (`docs/conventions/refinement/` §2.7).
+      (`docs/conventions/refinement/` §2.8).
 - [ ] The reviewer chose the manual's lasting form, and an ADR
       records it with the ways rejected at the opening
       (`first-time-work` §3).
@@ -178,21 +183,22 @@ Notes:
   item joined it, as its trigger asked. Both items, with their
   Ideas, are in `TODO.md` at `b3b2018`.
 - Stages, from `docs/conventions/refinement/` §2:
-  1. sort the kinds into rounds; the reviewer confirms them, the
-     layers, whether the method's texts are read here (§3), and
-     that no rule is in doubt, or a doubted rule is tried and
-     fixed first (§2.2);
+  1. before round 1: group the kinds into rounds, which creates
+     the refinement's file; list the files by layer; check the
+     rules (§2.1 to §2.3). The reviewer confirms the kinds, their
+     rounds, the layers, whether the method's texts are read here
+     (§3), and that no rule is in doubt;
   2. each round: read, list, decide, work, then its close read;
   3. the last read, repeated until it finds nothing;
   4. the close: the refinement's file goes, then `first-time-work` §3
      chooses the manual's lasting form.
-- The records map is round 2's, in project-recording's group, its
+- The records map is round 2's, in project-recording's layer, its
   form chosen by `visual-comparison`.
 - When the work shows the manual wrong, the manual changes first,
   in a commit of its own (`first-time-work` §2).
 - The first use of `first-time-work` on our seat. This step's
   close judges it.
-- The reviewer signs: the kinds, their rounds and the rules,
-  before round 1;
+- The reviewer signs: the kinds, their rounds, the layers and the
+  rules, before round 1;
   each finding's ending; every commit, at its boundary; the
   manual's lasting form; main taking the branch.
