@@ -1143,3 +1143,8 @@
   and commits cite its numbers); short tags kept, with the owner
   named each time (the rule already asked that, and the clash came
   anyway).
+
+- 2026-10-18 The entry above, corrected: the reading of run 3
+  numbered its decisions D1 to D10, not D1 to D14.
+  Why: the count was written from memory, not from the reading.
+  Rejected: editing the entry above (the log is append-only).
