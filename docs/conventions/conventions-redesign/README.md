@@ -1,4 +1,4 @@
-# Redesign
+# Conventions redesign
 
 **A redesign changes how the conventions are built, not only how
 their text reads. It starts from the pains of keeping them up,
@@ -30,7 +30,8 @@ Nothing yet: the close decides (`docs/conventions/first-time-work/`
 §3). While a redesign is open, a repo holds:
 
 - **its step in `PLAN.md`**, whose Notes list this page's stages;
-- **its file, `temp/redesign-<date>.md`**, deleted at the close.
+- **its file, `temp/conventions-redesign-<date>.md`**, deleted at
+  the close.
 
 What derives from this page is that list. A change here walks it.
 
