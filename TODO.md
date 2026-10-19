@@ -42,24 +42,6 @@
                (`docs/conventions/refinement/` §2.3).
       See: devlog 2026-10-19, the manuals rechecked.
 
-- [ ] Decide whether the foundation check catches a moved section
-      outside the descriptions (2026-10-19, the reviewer).
-      Context: the check's walk greps a changed description's path,
-      so a pointer into a manual is found when the manual changes
-      (`docs/conventions/conventions/` §3.5, step 3). A skill, a
-      rule or a record has no such walk. When one of its sections
-      moves or is renumbered, a pointer to it breaks, and only a
-      later read finds it. The refinement's Wiring kind finds the
-      broken ones today; this is about keeping them whole after.
-      Ideas:
-      - when any section moves or is renumbered, grep all living
-        text for its path, in the same commit.
-      - the conventions' full local map, whose points link has no
-        upkeep yet.
-      Trigger: the refinement's rule check
-               (`docs/conventions/refinement/` §2.3).
-      See: devlog 2026-10-19, pointers.
-
 - [ ] Make the conventions index a full local map (2026-09-30, the
       reviewer).
       Context: its chain shows only the conventions that act in
@@ -72,10 +54,10 @@
       - all twelve and how each touches the others, derived from
         those pointers, built by `visual-comparison`.
       - three links, each with its upkeep: derives (conventions
-        §3.5, the foundation check), points (one home, a step's
-        close), governs (none: a change to a rule that governs
-        other text could sweep that text or file the sweep, a rule
-        beside §3.5).
+        §3.5, the foundation check), points (one home, the grep
+        at a commit that moves a section, a step's close), governs
+        (none: a change to a rule that governs other text could
+        sweep that text or file the sweep, a rule beside §3.5).
       - scenarios as entries into one procedure, the foundation
         check: a manual, a skill or rule, a run's finding. Two
         exits it lacks: the governs sweep, and what must run again
