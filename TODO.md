@@ -14,12 +14,13 @@
            Trigger: <the moment it is due>.
            See: <the devlog entry, ADR or commit with its story>.
 
-     The story goes in that session's devlog entry, and See points
-     at it; an item that is its story's only home keeps it and has
-     no See. Ideas are noted as they come and weighed only when the
-     item is due — each is then taken, extended or declined. When an
-     item changes, rewrite it true for today — never stack a dated
-     update on it; the change's story is the devlog's. -->
+     The story goes in that session's devlog entry when the item is
+     added, and See points at it; an item that is its story's only
+     home keeps it and has no See. Ideas are noted as they come and
+     weighed only when the item is due — each is then taken,
+     extended or declined. When an item changes, rewrite it true for
+     today — never stack a dated update on it; the change's story is
+     the devlog's. -->
 
 ## Now (current plan step)
 
@@ -64,19 +65,6 @@
         after.
       Trigger: due — the pair it waited on was made on 2026-09-30.
       See: devlog 2026-09-30, local maps.
-
-- [ ] Decide whether a TODO item's story is written when the item
-      is added (2026-10-17, the reviewer).
-      Context: TODO's header sends an item's story to that
-      session's devlog entry, written at the session's end. By
-      then the reasons are cut to a line, and an item added
-      mid-session has no See until then. Tried on five items on
-      2026-10-17, the refinement first.
-      Ideas: TODO's header gains "when the item is added", and
-             project-recording says it for both seats.
-      Trigger: due — the third item was written this way on
-               2026-10-17.
-      See: devlog 2026-10-17, the refinement.
 
 - [ ] Read run 4 against `dac4dd1`, the run 3 commit it was born
       from (2026-10-15, the reviewer).
