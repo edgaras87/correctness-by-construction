@@ -196,7 +196,9 @@
       - "invariant-shaped", "contract-shaped": "shape" is a defined
         word now.
       - chapter 02's "scope creep wearing a safety costume".
-      Trigger: before run 5's birth, as a step of its own.
+      Trigger: the refinement of this repo closes. Its writing kind
+               reads these texts; what round 3 did leaves this
+               item, and what is left stays or goes.
       See: devlog 2026-10-17, later, the plain method.
 
 - [ ] Decide whether a newborn reads `.claude/shapes/` at birth

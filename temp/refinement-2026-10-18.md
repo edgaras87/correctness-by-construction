@@ -69,8 +69,10 @@ Three layers widened, each to hold files that fit none:
 - **Layer 5 takes `CLAUDE.md`:** the agent's entry file, beside
   `.claude/`.
 
-Open: whether the writing kind reads the method's texts here, or
-leaves them to their plain rewrite in TODO: `delivery/method/`
-(14), `delivery/spring-postgres/` (19), `concept/` (5).
+The writing kind reads the method's texts here too:
+`delivery/method/` (14), `delivery/spring-postgres/` (19),
+`concept/` (5). One pass, on text rounds 1 and 2 have made true,
+against a writing rule just rechecked. TODO's plain-rewrite item
+is weighed at the close against what round 3 did.
 
-Confirmed by the reviewer: not yet.
+Confirmed by the reviewer, 2026-10-19.
