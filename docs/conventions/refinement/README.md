@@ -132,13 +132,20 @@ layers.
 A wrong rule makes every finding against it wrong. So, before the
 first round reads, the reviewer confirms that no rule among the
 file's kinds is in doubt. A doubt comes from the reviewer, or from
-a TODO item that names the rule; the agent searches TODO for each
-rule's name. A doubted rule is tried on a sample of the text it
-governs, taken from §2.2's list, and the reviewer judges the
-result. A rule that fails is fixed before the first round reads,
-in a commit of its own, through the foundation check. The file
-says, for each rule, whether it was in doubt and how its check
-ended.
+a TODO item that names the rule or its manual; the agent searches
+TODO for each rule's name and its manual's path. A doubt that
+names a manual covers every rule that stands on it.
+
+A doubted rule is first read whole, with the manual it stands on.
+A gap, or a line nobody means any more, is fixed in the manual,
+and the foundation check carries the fix to the rules and skills
+that derive from it. Where the doubt is about what a rule does to
+text, the rule is also tried on a sample of the text it governs,
+taken from §2.2's list, and the reviewer judges the result.
+
+Every fix lands before the first round reads, each in a commit of
+its own. The file says, for each rule, whether it was in doubt and
+how its check ended.
 
 ### 2.4 Read
 
