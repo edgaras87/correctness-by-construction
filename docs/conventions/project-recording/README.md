@@ -418,10 +418,11 @@ only with an issue/TODO reference attached, otherwise they rot.
   is due, each idea is taken, extended or declined, and the verdict
   is recorded with the work. An idea parked here is not lost to the
   session that had it, and not mistaken for a decision.
-- The story is written where it happens. When something is noticed,
-  that session's devlog entry says so and the item points at it.
-  An item that is its story's only home keeps the story and has no
-  See.
+- The story is written where it happens, when the item is added.
+  That session's devlog entry says so then, not at the session's
+  end, so the item's See resolves at once and the reasons are
+  written while they are fresh. An item that is its story's only
+  home keeps the story and has no See.
 - An item that changes is rewritten true for today. A dated update
   stacked on it is history, and history is the devlog's.
 
@@ -432,6 +433,11 @@ its answers the same way, its longest items at 38 and 36 lines.
 The deliverer's was pruned and reshaped to this form, and the cap
 found on it: three lines cut meaning and lost a fact
 (ADR-0040).*
+
+*Found 2026-10-19: the deliverer added four items in one session,
+each pointing at a devlog entry written only at its end, so every
+See led nowhere until then. Tried first on five items on
+2026-10-17, the story moved to the moment the item is added.*
 
 ### 5.5 When
 
