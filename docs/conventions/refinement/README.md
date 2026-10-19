@@ -143,9 +143,31 @@ that derive from it. Where the doubt is about what a rule does to
 text, the rule is also tried on a sample of the text it governs,
 taken from §2.2's list, and the reviewer judges the result.
 
+A manual in doubt may be gone through section by section, top to
+bottom. Before a fix adds anything, it looks for the place that
+should already do the job: a section to fix, or a retelling to
+remove. A fix in place comes before a new part. Each fix is judged
+before the next, on four questions:
+
+1. **Maintenance:** does a change to this subject now touch fewer
+   places?
+2. **Readability:** does a reader find what they came for faster?
+3. **Future-proofing:** does it make the next change easier?
+4. **Complexity:** does it add more than it removes?
+
+The verdict is kept, changed or reverted, with numbers before and
+after where they exist: the lines, and how many places a subject is
+told.
+
 Every fix lands before the first round reads, each in a commit of
 its own. The file says, for each rule, whether it was in doubt and
 how its check ended.
+
+*Found 2026-10-19, in the redesign of the conventions that this
+refinement stopped for: its two iterations on the conventions
+manual were fixes of this kind. The first try added a section that
+repeated what the opening statement and "What it is for" are for.
+The redesign closed, and its way of judging each fix came here.*
 
 ### 2.4 Read
 
