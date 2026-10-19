@@ -20,7 +20,8 @@ config. Where it lives, never how it reads.
 3. **Make a summary say it is one.** It names its owner, and nobody
    reads it in the owner's place. A registry entry does this: it
    links the slice record it sums up.
-4. **Change a fact at its home.** The links don't change.
+4. **Change a fact at its home.** The links don't change, unless
+   the home itself moves.
 5. **When two copies are unavoidable,** make one the owner and the
    other its follower, and let a check compare them. Example: the
    version lives in the build file; the CHANGELOG follows it.

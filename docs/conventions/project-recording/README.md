@@ -750,7 +750,8 @@ The rules that make the pipeline work:
    records stop being trusted. In practice:
    - **A summary says it is one.** It names its owner, and nobody
      reads it in the owner's place.
-   - **A fact changes at its home.** The links to it do not change.
+   - **A fact changes at its home.** The links to it do not
+     change, unless the home itself moves.
    - **When two copies cannot be avoided,** one is the owner and the
      other follows it, and a check compares them: the version in the
      build file, followed by the CHANGELOG.
