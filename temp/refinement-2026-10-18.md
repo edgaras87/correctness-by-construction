@@ -21,6 +21,7 @@ kind.
 | 2 | One home | a fact told in more than one place | `.claude/rules/one-home.md` |
 | 2 | Dependencies | a retelling where a pointer would do, or a pointer not needed | `docs/conventions/conventions/` §3.1 |
 | 2 | Lessons | a case written as the rule | `docs/conventions/conventions/` §3.7 |
+| 2 | Layout | a section that holds two subjects, or one subject spread over several sections | `docs/conventions/conventions/` §3.3, once it says one subject to a section (§2.3) |
 | 3 | Writing | text older than ADR-0053, against the whole rule | `.claude/rules/writing.md` |
 
 Not a kind: the item's two "words" ideas, "run" as a verb for a
@@ -39,11 +40,16 @@ Wiring was added by the reviewer on 2026-10-19, after the first
 confirmation: the links the foundation check walks are checked
 first, before round 2 moves text along them.
 
+Layout was added by the reviewer on 2026-10-19, after the rule
+check's walk: its problems sit between sections and files, where a
+walk one section at a time does not see them.
+
 Also in round 2, joined from its own TODO item: the map of the
 records, project-recording §1, in project-recording's layer.
 
 Confirmed by the reviewer, 2026-10-19, before Wiring was added,
-and again with it the same day, and with Agreement.
+and again with it the same day, with Agreement, and with
+Layout.
 
 ### Files by layer (§2.2)
 
@@ -127,12 +133,20 @@ section by section, top to bottom, fixing in place.
   the two details only that sentence held: "the work it makes
   possible", and "after which the need is rewritten from what was
   seen or the convention goes".
-- **§3.3, when the walk reaches it:** each part of a manual gets a
-  numbered part of its own, so a pointer lands on one;
-  `convention-manual.md` then follows part by part, and gains "or
-  the convention goes".
-- **For the walk to weigh, from the redesign's reading:** §3 holds
-  two subjects, how a manual is written (§3.3, §3.4, §3.7) and how
+- **§3.3's parts, a Layout finding for round 2:** each part of a
+  manual gets a numbered part of its own, so a pointer lands on
+  one, and `convention-manual.md` then follows part by part.
+- **The walk's verdicts,** by the reviewer on 2026-10-19: the top
+  line, `ac796df`, kept; "What it is for", `4a8c0c3`, kept.
+- **The walk stops after these two.** A walk one section at a time
+  mixes the kinds and misses what sits between sections, so the
+  rounds take the rest. Three rule fixes come first, in §3.3, the
+  form every manual is read against: the opening statement is the
+  manual's subject, in one sentence; a numbered section holds one
+  subject, and a subject has one section; and
+  `convention-manual.md` follows, with "or the convention goes".
+- **For round 2, as Layout findings, from the redesign's
+  reading:** §3 holds two subjects, how a manual is written (§3.3, §3.4, §3.7) and how
   everything stays in step (§3.1, §3.2, §3.5, §3.6); the seats are
   told in "The seats" and again in §3.4; the links between a
   manual, its rules and other manuals are spread over many
