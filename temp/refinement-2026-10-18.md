@@ -96,6 +96,8 @@ path. Each manual is read whole, then its rules.
 | `docs/conventions/project-recording/` | One home | the reviewer; TODO: the manuals' recheck | fixed: a link moves when its home moves, `5f3a601`, `c74516b`; a TODO item's story is written when it is added, `06de359`, `2de55db`, `2200e81`. Two findings left to round 1's Agreement: where `PLAN.md`'s step form is described, and what TODO's Now holds, told three ways. |
 | `docs/conventions/writing/` | Writing | the reviewer; TODO: the manuals' recheck | fixed: rule 8, start from what the reader holds, tried on a sample the reviewer judged clearer, `8e86560`, `6e56e72`. One finding left to round 1's Agreement: the manual says coined words go in the project's glossary, our rule says `ARCHITECTURE.md`'s *The words*, and the seats do not name the difference. |
 
+Confirmed by the reviewer, 2026-10-19: no rule is in doubt.
+
 Met in the search, not doubts, each with its own trigger: a TODO
 item's story written when it is added (project-recording, due); a
 rule that writes a skill or rule from its convention (conventions

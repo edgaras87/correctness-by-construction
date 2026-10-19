@@ -126,8 +126,8 @@ corner.
 
 Goal: Living text written before a rule now meets that rule, and
 project-recording §1 is a map of the records in both seats.
-Now: checking the rules (`docs/conventions/refinement/` §2.3): the
-conventions manual again, section by section.
+Now: round 1, what is true: stale lines, wiring, agreement
+(`docs/conventions/refinement/` §2.4).
 Gate:
 
 **At the opening.**
@@ -148,10 +148,10 @@ Gate:
       with Wiring).
 - [x] The refinement's file lists every living file in exactly one
       layer (`docs/conventions/refinement/` §2.2; 2026-10-19).
-- [ ] Before round 1, no rule among the refinement's kinds was in
+- [x] Before round 1, no rule among the refinement's kinds was in
       doubt, or each doubt was tried on a sample and ended; the
       refinement's file says which
-      (`docs/conventions/refinement/` §2.3).
+      (`docs/conventions/refinement/` §2.3; 2026-10-19).
 - [ ] Every kind in the refinement's file was read in its round
       across all living text, and each read names the files it
       covered.
