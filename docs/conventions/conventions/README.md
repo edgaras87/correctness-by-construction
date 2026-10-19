@@ -190,7 +190,11 @@ moved from a plan's close to the commit that renumbers.*
 The form is a rule under `.claude/rules/`, loading when a manual
 is opened (how a rule loads is `docs/conventions/agent-arrangement/`
 §3.2), and lists the sections one has, each a heading after the
-opening: an opening statement; *what it is for* — the need: the
+opening: an opening statement — the manual's subject, in one
+sentence, so a reader can tell from one line whether this is the
+page they need; not a summary of how it works, nor its boundary or
+its channel, which have sections of their own; *what it is for* —
+the need: the
 work it makes possible, the failure lived without it, and the
 trigger, as evidence; as intent marked on trial, with what would
 make it evidence and when to look again, after which the need is
@@ -217,6 +221,12 @@ own heading in the body, where a section two
 manuals need becomes the next candidate. A rule, a term or a
 mechanism that other text will point at gets its own numbered
 subsection, as this section's seven do, so the pointer lands on it.
+
+*Found 2026-10-19: of the fourteen manuals' opening statements,
+five said the subject in one sentence, five added claims that have
+other homes, and four summed up how the work goes. "What the
+convention is" allowed all three. The conventions manual's own
+said what a convention claims, not its subject.*
 
 ### 3.4 The seats
 
