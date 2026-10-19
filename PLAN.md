@@ -122,6 +122,80 @@ corner.
 
 ---
 
+## Step: Redesign the conventions  (`first-time-work`, the foundation check, `commit-plan`)    [~]
+
+Goal: The conventions convention is rethought from this repo's
+maintenance pains, and each other manual follows a pattern drawn
+from it, or the step records why it cannot.
+Now: opening: the way, by `first-time-work` §1.
+Gate:
+
+**At the opening.**
+
+- [x] The step's branch `redesign-2026-10-19` is cut from main, and
+      nothing of the step was done on main (2026-10-19).
+- [x] This gate was written before the work started (2026-10-19).
+- [ ] No skill, rule or earlier work says how to redesign the
+      conventions, so the step opened a provisional manual, marked
+      *on trial* (`first-time-work`).
+
+**The step's own items.**
+
+- [ ] Each maintenance pain has an answer in the conventions
+      convention: a rule that prevents it, or a reason it stays.
+      The six of 2026-10-19 are the first: a renumbering that
+      broke pointers; a seat that retold another home; records
+      not linked to their manual; one case's data in a manual;
+      words with no one definition; one fact told in five places.
+- [ ] The conventions convention's manual says the new design, and
+      what derives from it follows: its two rules and the index.
+- [ ] Every other manual was read against it, and each follows the
+      pattern or says why it is too much its own.
+- [ ] Every manual changed walked to what derives from it, in both
+      seats.
+- [ ] The stopped refinement's file names each manual this step
+      changed, so its rule check knows what to read again.
+- [ ] An ADR records the redesign: the pains, the ways weighed, and
+      the one chosen.
+- [ ] The reviewer chose the provisional manual's lasting form, and
+      `first-time-work`'s second trial on our seat has its verdict.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves; every ADR a
+      record cites exists; each pair of copies agrees, such as the
+      worked example in `cbc-framing` and in `cbc-slice`.
+- [ ] No living line in a record the step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the step changed.
+- [ ] New and changed text reads to `.claude/rules/writing.md`.
+- [ ] Every commit on `redesign-2026-10-19` follows
+      commit-messages.
+- [ ] No commit straddles agent and project paths.
+- [ ] The step's lessons are folded back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4).
+
+Notes:
+- Opened 2026-10-19 on the reviewer's word, above the refinement it
+  stopped (devlog 2026-10-19, the refinement stops).
+- Stages, the reviewer's, until the manual holds them: the pains
+  listed with their evidence; the conventions convention rethought
+  and its manual changed; a pattern sought across the manuals;
+  each manual rewritten to it, or let be.
+- Due here from TODO: how cited commits can regroup. Near it, each
+  with its own trigger: our forms as shapes; a rule that writes a
+  skill or rule from its convention; the conventions' full local
+  map.
+- The reviewer signs: the way, at the opening; the pains list; the
+  new conventions convention, before any manual follows it; each
+  manual's change; every commit, at its boundary; main taking the
+  branch.
+
+---
+
 ## Step: Refine this repo against its own rules  (`docs/conventions/refinement/`, `first-time-work`, `commit-plan`, the foundation check, `visual-comparison`)    [!]
 
 Stopped: the conventions' redesign comes first (devlog 2026-10-19,
