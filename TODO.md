@@ -25,6 +25,23 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Recheck the manuals the refinement's kinds stand on, before
+      its round 1 (2026-10-19, the reviewer).
+      Context: not known to be wrong. Every finding stands on
+      `docs/conventions/conventions/`,
+      `docs/conventions/project-recording/` and
+      `docs/conventions/writing/`, so a gap in one is copied into
+      every fix. Two worries: the writing rule, as the reviewer
+      still asks "explain simpler"; and the wiring, as the agent
+      misread §3.5 on 2026-10-19 as walking derived files only.
+      Ideas:
+      - each manual read whole; a fix lands there first, and the
+        foundation check carries it to its rules.
+      - the writing rule tried on a sample the reviewer judges.
+      Trigger: the refinement's rule check
+               (`docs/conventions/refinement/` §2.3).
+      See: devlog 2026-10-19, the manuals rechecked.
+
 - [ ] Decide whether the foundation check catches a moved section
       outside the descriptions (2026-10-19, the reviewer).
       Context: the check's walk greps a changed description's path,
