@@ -35,4 +35,4 @@ reads.
 Also in round 2, joined from its own TODO item: the map of the
 records, project-recording §1, in project-recording's layer.
 
-Confirmed by the reviewer: not yet.
+Confirmed by the reviewer, 2026-10-19.

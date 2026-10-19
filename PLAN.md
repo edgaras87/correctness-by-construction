@@ -116,7 +116,7 @@ corner.
 
 Goal: Living text written before a rule now meets that rule, and
 project-recording §1 is a map of the records in both seats.
-Now: grouping the kinds (`docs/conventions/refinement/` §2.1).
+Now: listing the files (`docs/conventions/refinement/` §2.2).
 Gate:
 
 **At the opening.**
@@ -131,9 +131,9 @@ Gate:
 
 **The step's own items.**
 
-- [ ] The refinement's file holds every kind the TODO item asked
+- [x] The refinement's file holds every kind the TODO item asked
       for, each in its round, and the reviewer confirmed them
-      (`docs/conventions/refinement/` §2.1).
+      (`docs/conventions/refinement/` §2.1; 2026-10-19).
 - [ ] The refinement's file lists every living file in exactly one
       layer (`docs/conventions/refinement/` §2.2).
 - [ ] Before round 1, no rule among the refinement's kinds was in
