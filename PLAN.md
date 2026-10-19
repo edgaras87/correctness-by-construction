@@ -124,11 +124,11 @@ corner.
 
 ## Step: Redesign the conventions  (`docs/conventions/conventions-redesign/`, `first-time-work`, the foundation check, `commit-plan`)    [~]
 
-Goal: The conventions convention is rethought from this repo's
-maintenance pains, and each other manual follows a pattern drawn
-from it, or the step records why it cannot.
-Now: listing the pains (`docs/conventions/conventions-redesign/`
-§2.1).
+Goal: The conventions convention, then the manuals after it, are
+changed in iterations toward recorded targets, each iteration kept,
+changed or reverted on the reviewer's judgement.
+Now: recording the targets and the iterations
+(`docs/conventions/conventions-redesign/` §2.1 and §2.2).
 Gate:
 
 **At the opening.**
@@ -143,22 +143,21 @@ Gate:
 
 **The step's own items.**
 
-- [ ] Each maintenance pain has an answer in the conventions
-      convention: a rule that prevents it, or a reason it stays.
-      The six of 2026-10-19 are the first: a renumbering that
-      broke pointers; a seat that retold another home; records
-      not linked to their manual; one case's data in a manual;
-      words with no one definition; one fact told in five places.
-- [ ] The conventions convention's manual says the new design, and
-      what derives from it follows: its two rules and the index.
-- [ ] Every other manual was read against it, and each follows the
-      pattern or says why it is too much its own.
+- [ ] The redesign's file records the targets, each possible, not
+      promised, and the pains as tests.
+- [ ] Every iteration has a verdict: kept, changed or reverted,
+      judged on maintenance, readability and future-proofing.
+- [ ] Each target ends reached, changed, or dropped with its
+      reason, and each pain answered, or kept with its reason.
+- [ ] A form that held across manuals is written once in the
+      conventions convention, with its rule; or the file says why
+      none held.
 - [ ] Every manual changed walked to what derives from it, in both
       seats.
 - [ ] The stopped refinement's file names each manual this step
       changed, so its rule check knows what to read again.
-- [ ] An ADR records the redesign: the pains, the ways weighed, and
-      the one chosen.
+- [ ] An ADR records the redesign: the targets, what the
+      iterations showed, and the design that held.
 - [ ] The reviewer chose the provisional manual's lasting form, and
       `first-time-work`'s second trial on our seat has its verdict.
 
@@ -183,20 +182,19 @@ Gate:
 Notes:
 - Opened 2026-10-19 on the reviewer's word, above the refinement it
   stopped (devlog 2026-10-19, the refinement stops).
-- Stages, from `docs/conventions/conventions-redesign/` §2: list
-  the pains; rethink the conventions convention; seek the pattern
-  across the manuals; carry it to each; the close names the
-  manuals changed for the stopped refinement.
+- Stages, from `docs/conventions/conventions-redesign/` §2: record
+  the targets; plan the iterations; one iteration at a time, each
+  judged; spread what held; the pattern; the words; the close
+  names the manuals changed for the stopped refinement.
 - When the work shows the manual wrong, the manual changes first,
   in a commit of its own (`first-time-work` §2).
 - Due here from TODO: how cited commits can regroup. Near it, each
   with its own trigger: our forms as shapes; a rule that writes a
   skill or rule from its convention; the conventions' full local
   map.
-- The reviewer signs: the way, at the opening; the pains list; the
-  new conventions convention, before any manual follows it; each
-  manual's change; every commit, at its boundary; main taking the
-  branch.
+- The reviewer signs: the way, at the opening; the targets and the
+  list of iterations; each iteration's verdict; the pattern; the
+  words; every commit, at its boundary; main taking the branch.
 
 ---
 
