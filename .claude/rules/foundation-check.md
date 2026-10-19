@@ -2,17 +2,18 @@
 foundation: the conventions convention
 ---
 
-<!-- Makes docs/conventions/conventions/ §3.5 and §3.6 fire at the
-     commit, where they waited to be remembered. Loaded in every
-     session, with no paths: a paths rule loads only when a file is
-     opened with the Read tool, and an edit made by script never
-     opens it. Ours, shipped nowhere: a run holds no manuals. -->
+<!-- Makes docs/conventions/conventions/ §3.5 and §3.6, and §3.2's
+     grep for a moved section, fire at the commit, where they waited
+     to be remembered. Loaded in every session, with no paths: a
+     paths rule loads only when a file is opened with the Read tool,
+     and an edit made by script never opens it. Ours, shipped
+     nowhere: a run holds no manuals. -->
 
 # The foundation check
 
 **Governs:** the moment before a commit is staged, when the commit
-changes a file that stands on a foundation, or a foundation itself.
-Which side is right, never how either reads.
+changes a file that stands on a foundation, or a foundation itself,
+or moves a section. Which side is right, never how either reads.
 
 ## The check
 
@@ -46,6 +47,13 @@ Which side is right, never how either reads.
    runs on it again, and what it finds goes through steps 4 and 5.
    The check ends when a walk finds nothing new. When the changes
    need more than one commit, they are a commit plan.
+
+## A moved section
+
+When the commit renames a file or renumbers a section, in any
+file, grep all living text for each old path and number, and fix
+what points at them in this commit
+(`docs/conventions/conventions/` §3.2).
 
 ## What this does not cover
 
