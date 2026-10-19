@@ -86,7 +86,7 @@ path. Each manual is read whole, then its rules.
 
 | Manual | Kinds that stand on it | Doubt from | Result |
 |---|---|---|---|
-| `docs/conventions/conventions/` | Wiring, Agreement, Dependencies, Lessons | the reviewer; TODO: the manuals' recheck; a moved section outside the descriptions | |
+| `docs/conventions/conventions/` | Wiring, Agreement, Dependencies, Lessons | the reviewer; TODO: the manuals' recheck; a moved section outside the descriptions | fixed: a moved section is grepped at its commit, `7061c89`, `d1fb072`, and its TODO item ended, `8defb6c`; a record's form names its description, `c06943d`, `242d248`; Seats read as Agreement, `83347b8`. One stale line left to round 1: §1's "holds ten". |
 | `docs/conventions/project-recording/` | One home | the reviewer; TODO: the manuals' recheck | |
 | `docs/conventions/writing/` | Writing | the reviewer; TODO: the manuals' recheck | |
 
