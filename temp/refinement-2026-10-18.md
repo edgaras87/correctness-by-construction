@@ -36,3 +36,35 @@ Also in round 2, joined from its own TODO item: the map of the
 records, project-recording §1, in project-recording's layer.
 
 Confirmed by the reviewer, 2026-10-19.
+
+### Files by layer (§2.2)
+
+Living text at `c4c6bc0`: 106 files, each in exactly one layer.
+Left out: the devlog's months, the 57 ADRs, all closed, and
+`docs/baselines/` (§1); `temp/RUN-4.md`, run 3's text, kept for
+run 4's reading; and this file.
+
+| Layer | Files | Count |
+|---|---|---|
+| 1. The conventions manual | `docs/conventions/conventions/README.md` | 1 |
+| 2. Project-recording | `docs/conventions/project-recording/README.md` | 1 |
+| 3. The other manuals, the models, the concept | `docs/conventions/README.md`; the 11 other manuals; `docs/conventions/repo-hygiene/templates/` (3); `docs/models/` (2); `concept/` (5) | 22 |
+| 4. `ARCHITECTURE.md`, `README.md`, the records | `ARCHITECTURE.md`, `README.md`, `CHANGELOG.md`, `PLAN.md`, `TODO.md`, `devlog/README.md`, `temp/README.md`, `.editorconfig`, `.gitattributes`, `.gitignore` | 10 |
+| 5. Our agent setup | `CLAUDE.md`; `.claude/` (13) | 14 |
+| 6. `delivery/`, what ships | `delivery/README.md`; `container/` (22); `fills/` (1); `installs/` (1); `method/` (14); `spring-postgres/` (19) | 58 |
+
+Three layers widened, each to hold files that fit none:
+
+- **Layer 3 takes `docs/models/`:** two descriptions of how this
+  repo's work is shaped, read like manuals.
+- **Layer 4 takes `devlog/README.md`, `temp/README.md` and the
+  root's three dotfiles:** each says how a record, a folder or the
+  repo is kept.
+- **Layer 5 takes `CLAUDE.md`:** the agent's entry file, beside
+  `.claude/`.
+
+Open: whether the writing kind reads the method's texts here, or
+leaves them to their plain rewrite in TODO: `delivery/method/`
+(14), `delivery/spring-postgres/` (19), `concept/` (5).
+
+Confirmed by the reviewer: not yet.
