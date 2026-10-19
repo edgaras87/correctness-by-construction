@@ -221,12 +221,21 @@ own heading in the body, where a section two
 manuals need becomes the next candidate. A rule, a term or a
 mechanism that other text will point at gets its own numbered
 subsection, as this section's seven do, so the pointer lands on it.
+Each numbered section holds one subject, and a subject has one
+section: other sections point at it, and do not tell it again.
+§3.1 asks the same of a convention's subject across the manuals;
+this asks it inside one.
 
 *Found 2026-10-19: of the fourteen manuals' opening statements,
 five said the subject in one sentence, five added claims that have
 other homes, and four summed up how the work goes. "What the
 convention is" allowed all three. The conventions manual's own
 said what a convention claims, not its subject.*
+
+*Found 2026-10-19: in this manual, §3 held two subjects, how a
+manual is written and how everything stays in step. Nothing said a
+section holds one subject, so a walk through the manual had no
+rule to name.*
 
 ### 3.4 The seats
 
