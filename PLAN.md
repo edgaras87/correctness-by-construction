@@ -122,92 +122,12 @@ corner.
 
 ---
 
-## Step: Redesign the conventions  (`docs/conventions/conventions-redesign/`, `first-time-work`, the foundation check, `commit-plan`)    [~]
-
-Goal: The conventions convention, then the manuals after it, are
-changed in iterations toward recorded targets, each iteration kept,
-changed or reverted on the reviewer's judgement.
-Now: recording the targets and the iterations
-(`docs/conventions/conventions-redesign/` §2.1 and §2.2).
-Gate:
-
-**At the opening.**
-
-- [x] The step's branch `redesign-2026-10-19` is cut from main, and
-      nothing of the step was done on main (2026-10-19).
-- [x] This gate was written before the work started (2026-10-19).
-- [x] No skill, rule or earlier work says how to redesign the
-      conventions, so the step opened a provisional manual,
-      `docs/conventions/conventions-redesign/README.md`, marked
-      *on trial* (`first-time-work`; 2026-10-19, `9d8485e`).
-
-**The step's own items.**
-
-- [ ] The redesign's file records the targets, each possible, not
-      promised, and the pains as tests.
-- [ ] Every iteration has a verdict: kept, changed or reverted,
-      judged on maintenance, readability, future-proofing and
-      complexity, with numbers before and after where they exist.
-- [ ] Each target ends reached, changed, or dropped with its
-      reason, and each pain answered, or kept with its reason.
-- [ ] A form that held across manuals is written once in the
-      conventions convention, with its rule; or the file says why
-      none held.
-- [ ] Every manual changed walked to what derives from it, in both
-      seats.
-- [ ] The stopped refinement's file names each manual this step
-      changed, so its rule check knows what to read again.
-- [ ] An ADR records the redesign: the targets, what the
-      iterations showed, and the design that held.
-- [ ] The reviewer chose the provisional manual's lasting form, and
-      `first-time-work`'s second trial on our seat has its verdict.
-
-**At the close.**
-
-- [ ] Every link and path in the records resolves; every ADR a
-      record cites exists; each pair of copies agrees, such as the
-      worked example in `cbc-framing` and in `cbc-slice`.
-- [ ] No living line in a record the step touched, or one that
-      mentions its subject, still says "now", "today" or "not yet"
-      about something the step changed.
-- [ ] New and changed text reads to `.claude/rules/writing.md`.
-- [ ] Every commit on `redesign-2026-10-19` follows
-      commit-messages.
-- [ ] No commit straddles agent and project paths.
-- [ ] The step's lessons are folded back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
-      three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4).
-
-Notes:
-- Opened 2026-10-19 on the reviewer's word, above the refinement it
-  stopped (devlog 2026-10-19, the refinement stops).
-- Stages, from `docs/conventions/conventions-redesign/` §2: record
-  the targets; plan the iterations; one iteration at a time, each
-  judged; spread what held; the pattern; the words; the close
-  names the manuals changed for the stopped refinement.
-- When the work shows the manual wrong, the manual changes first,
-  in a commit of its own (`first-time-work` §2).
-- Due here from TODO: how cited commits can regroup. Near it, each
-  with its own trigger: our forms as shapes; a rule that writes a
-  skill or rule from its convention; the conventions' full local
-  map.
-- The reviewer signs: the way, at the opening; the targets and the
-  list of iterations; each iteration's verdict; the pattern; the
-  words; every commit, at its boundary; main taking the branch.
-
----
-
-## Step: Refine this repo against its own rules  (`docs/conventions/refinement/`, `first-time-work`, `commit-plan`, the foundation check, `visual-comparison`)    [!]
-
-Stopped: the conventions' redesign comes first (devlog 2026-10-19,
-the refinement stops).
+## Step: Refine this repo against its own rules  (`docs/conventions/refinement/`, `first-time-work`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
 
 Goal: Living text written before a rule now meets that rule, and
 project-recording §1 is a map of the records in both seats.
-Now: checking the rules (`docs/conventions/refinement/` §2.3):
-three manuals read; it runs again on what the redesign changes.
+Now: checking the rules (`docs/conventions/refinement/` §2.3): the
+conventions manual again, section by section.
 Gate:
 
 **At the opening.**
