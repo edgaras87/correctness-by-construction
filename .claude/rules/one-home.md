@@ -21,7 +21,8 @@ rules, comments and config. Where it lives, never how it reads.
 3. **Make a summary say it is one.** It names its owner, and nobody
    reads it in the owner's place. `ARCHITECTURE.md` §1.2 does this:
    a phrase for each convention, and the manual for the rest.
-4. **Change a fact at its home.** The links don't change.
+4. **Change a fact at its home.** The links don't change, unless
+   the home itself moves (`docs/conventions/conventions/` §3.2).
 5. **When two copies are unavoidable,** make one the owner and the
    other its follower, and let a check compare them. Example: the
    worked example sits in `cbc-framing` and in `cbc-slice`, and the
