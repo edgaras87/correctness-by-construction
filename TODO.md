@@ -46,23 +46,6 @@
                `commit-plan` and conventions §3.2's pointers.
       See: devlog 2026-10-19, regrouping.
 
-- [ ] Recheck the manuals the refinement's kinds stand on, before
-      its round 1 (2026-10-19, the reviewer).
-      Context: not known to be wrong. Every finding stands on
-      `docs/conventions/conventions/`,
-      `docs/conventions/project-recording/` and
-      `docs/conventions/writing/`, so a gap in one is copied into
-      every fix. Two worries: the writing rule, as the reviewer
-      still asks "explain simpler"; and the wiring, as the agent
-      misread §3.5 on 2026-10-19 as walking derived files only.
-      Ideas:
-      - each manual read whole; a fix lands there first, and the
-        foundation check carries it to its rules.
-      - the writing rule tried on a sample the reviewer judges.
-      Trigger: the refinement's rule check
-               (`docs/conventions/refinement/` §2.3).
-      See: devlog 2026-10-19, the manuals rechecked.
-
 - [ ] Make the conventions index a full local map (2026-09-30, the
       reviewer).
       Context: its chain shows only the conventions that act in

@@ -122,11 +122,15 @@ corner.
 
 ---
 
-## Step: Refine this repo against its own rules  (`docs/conventions/refinement/`, `first-time-work`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
+## Step: Refine this repo against its own rules  (`docs/conventions/refinement/`, `first-time-work`, `commit-plan`, the foundation check, `visual-comparison`)    [!]
+
+Stopped: the conventions' redesign comes first (devlog 2026-10-19,
+the refinement stops).
 
 Goal: Living text written before a rule now meets that rule, and
 project-recording §1 is a map of the records in both seats.
-Now: checking the rules (`docs/conventions/refinement/` §2.3).
+Now: checking the rules (`docs/conventions/refinement/` §2.3):
+three manuals read; it runs again on what the redesign changes.
 Gate:
 
 **At the opening.**
