@@ -122,12 +122,13 @@ corner.
 
 ---
 
-## Step: Redesign the conventions  (`first-time-work`, the foundation check, `commit-plan`)    [~]
+## Step: Redesign the conventions  (`docs/conventions/conventions-redesign/`, `first-time-work`, the foundation check, `commit-plan`)    [~]
 
 Goal: The conventions convention is rethought from this repo's
 maintenance pains, and each other manual follows a pattern drawn
 from it, or the step records why it cannot.
-Now: opening: the way, by `first-time-work` §1.
+Now: listing the pains (`docs/conventions/conventions-redesign/`
+§2.1).
 Gate:
 
 **At the opening.**
@@ -135,9 +136,10 @@ Gate:
 - [x] The step's branch `redesign-2026-10-19` is cut from main, and
       nothing of the step was done on main (2026-10-19).
 - [x] This gate was written before the work started (2026-10-19).
-- [ ] No skill, rule or earlier work says how to redesign the
-      conventions, so the step opened a provisional manual, marked
-      *on trial* (`first-time-work`).
+- [x] No skill, rule or earlier work says how to redesign the
+      conventions, so the step opened a provisional manual,
+      `docs/conventions/conventions-redesign/README.md`, marked
+      *on trial* (`first-time-work`; 2026-10-19, `9d8485e`).
 
 **The step's own items.**
 
@@ -181,10 +183,12 @@ Gate:
 Notes:
 - Opened 2026-10-19 on the reviewer's word, above the refinement it
   stopped (devlog 2026-10-19, the refinement stops).
-- Stages, the reviewer's, until the manual holds them: the pains
-  listed with their evidence; the conventions convention rethought
-  and its manual changed; a pattern sought across the manuals;
-  each manual rewritten to it, or let be.
+- Stages, from `docs/conventions/conventions-redesign/` §2: list
+  the pains; rethink the conventions convention; seek the pattern
+  across the manuals; carry it to each; the close names the
+  manuals changed for the stopped refinement.
+- When the work shows the manual wrong, the manual changes first,
+  in a commit of its own (`first-time-work` §2).
 - Due here from TODO: how cited commits can regroup. Near it, each
   with its own trigger: our forms as shapes; a rule that writes a
   skill or rule from its convention; the conventions' full local
