@@ -34,6 +34,10 @@ commit messages, comments. How it reads, never what it says.
    it: "SLICE-1 GUARANTEE-3", never a bare "GUARANTEE-3".
 7. **Cut what adds nothing.** If a sentence can go without losing
    meaning, it goes.
+8. **Start from what the reader holds.** Before a label, a section
+   number or a coined word, ask whether this reader knows it. If
+   not, say first, in plain words, what it is. Not "KILL-2 fails",
+   but "KILL-2, the second charge for one order, fails".
 
 ## Before and after
 

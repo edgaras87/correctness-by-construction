@@ -91,10 +91,20 @@ chat answers, records, commit messages, code comments.
    slice record.
 7. **Cut what adds nothing.** Every extra sentence is one more
    thing to read before the point.
+8. **Start from what the reader holds.** A label the reader does
+   not hold stops them, however plain the sentence around it. Rule
+   6 keeps a label exact; this rule makes sure it is understood.
+   So a label, a section number or a coined word the reader may not
+   know is said first in plain words.
 
 *Measured in run 3, 2026-10-11 to 10-15: the rule written at the
 retrospective, kept at its close, and used for three rewrites of
 the records in Step 10.*
+
+*Found 2026-10-19: in one session the reviewer asked "explain
+simpler" about eight times, after answers that kept rules 1 to 7.
+Each simpler version first said what a thing was, as in "the
+kind: find lines that are no longer true". Rule 8 came from it.*
 
 ## Why it arrives this way
 
