@@ -5,20 +5,16 @@ into the rules and skills a project acts on.**
 
 ## What it is for
 
-A convention is written when something made
-usable is needed, and the need is written down first: what work
-it makes possible, what went wrong without it, and the event that
-made it — as evidence, with the run or the date; or as intent,
-marked *on trial* with what would make it evidence and when to
-look again, after which the need is rewritten from what was seen
-or the convention goes; or, for a convention taken whole from
-elsewhere, as adopted: where it came from, and what has been lived
-under it since. What went wrong without this one: the rules for
-conventions lived in the index, against its scope, and two of them
-were dead letters nobody had followed (ADR-0039). The trigger:
-the descriptions item filed on 2026-09-27, and the index read
-against it the next day. Every other manual is written to this
-one, and every rule and skill is made by it.
+So that a way of working has one place that says why it is so, and
+everything an agent acts on can be traced back to it. A rule can
+then be questioned against its reason. A change to a reason reaches
+every rule made from it.
+
+What went wrong without it: the rules for conventions lived in the
+conventions index, against that index's scope, and two of them
+were rules nobody had followed (ADR-0039). The trigger: the
+descriptions item filed on 2026-09-27, and the index read against
+it the next day.
 
 ## What this is made usable as
 
@@ -194,9 +190,12 @@ moved from a plan's close to the commit that renumbers.*
 The form is a rule under `.claude/rules/`, loading when a manual
 is opened (how a rule loads is `docs/conventions/agent-arrangement/`
 §3.2), and lists the sections one has, each a heading after the
-opening: an opening statement; *what it is for* — the need, the
-failure lived without it, and the trigger, as evidence, as intent
-marked on trial, or as adopted, never intent dressed as evidence;
+opening: an opening statement; *what it is for* — the need: the
+work it makes possible, the failure lived without it, and the
+trigger, as evidence; as intent marked on trial, with what would
+make it evidence and when to look again, after which the need is
+rewritten from what was seen or the convention goes; or as
+adopted; never intent dressed as evidence;
 *what
 this is made usable as* — the list a change to the page walks,
 each item marked shipped or the deliverer's, with the moment it
