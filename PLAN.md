@@ -146,7 +146,8 @@ Gate:
 - [ ] The redesign's file records the targets, each possible, not
       promised, and the pains as tests.
 - [ ] Every iteration has a verdict: kept, changed or reverted,
-      judged on maintenance, readability and future-proofing.
+      judged on maintenance, readability, future-proofing and
+      complexity, with numbers before and after where they exist.
 - [ ] Each target ends reached, changed, or dropped with its
       reason, and each pain answered, or kept with its reason.
 - [ ] A form that held across manuals is written once in the

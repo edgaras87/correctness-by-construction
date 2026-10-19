@@ -51,6 +51,8 @@ is the deliverer's.
 - **target** — a design the redesign may move toward, written as
   possible, never promised. An iteration moves toward a target, or
   shows it wrong.
+- **target sketch** — a short outline of a manual as all the
+  targets would make it, so the targets are seen as one design.
 - **iteration** — one change to one manual, judged before the next.
   Not a step, which is `PLAN.md`'s, nor `commit-plan`'s small steps
   inside a commit.
@@ -64,7 +66,7 @@ A map of the stages. Each section holds its rule.
 
 | Stage | Does | The redesign's file |
 |---|---|---|
-| 2.1 Record the targets | each design discussed, as possible | the targets, and the pains as tests |
+| 2.1 Record the targets | each design discussed, as possible, and a sketch of the whole | the targets, the sketch, and the pains as tests |
 | 2.2 Plan the iterations | a rolling list: the next firm, later ones provisional | the iterations |
 | 2.3 One iteration | one change to one manual, then judged | its verdict; the list updated |
 | 2.4 Spread | a form that held, to the other manuals | each manual's iterations |
@@ -79,7 +81,9 @@ The file is data; this page says how it is made.
 Each design idea discussed is written in the file as a target: what
 it would change, and why it might help. A target is not a
 commitment. It can be changed or dropped when an iteration shows it
-wrong. The pains are kept beside the targets, each with its case,
+wrong. A target sketch outlines a manual as all the targets would
+make it, each part naming its target, so they are seen as one
+design. The pains are kept beside the targets, each with its case,
 as tests an iteration can be held to.
 
 ### 2.2 Plan the iterations
@@ -90,11 +94,15 @@ firm; later ones are provisional, and each names the target it
 moves toward. The list is updated after each iteration, from what
 that iteration showed.
 
+The iterations end when every target is reached, changed or
+dropped, or when the reviewer stops them. Either way, the file says
+which.
+
 ### 2.3 One iteration
 
 One change to one manual, in a commit, or a commit plan when it
 needs more than one, through the foundation check. Then the
-reviewer judges it on three questions:
+reviewer judges it on four questions:
 
 1. **Maintenance:** does a change to this subject now touch fewer
    places?
@@ -102,10 +110,18 @@ reviewer judges it on three questions:
    sub-ideas faster?
 3. **Future-proofing:** does it move toward a target, or make one
    easier to reach later?
+4. **Complexity:** does it add more than it removes? A new section,
+   word or link earns its place by what it saves.
 
 The pains it touches are checked too. The verdict is one of three:
 kept, changed, or reverted with `git revert` on the branch. The
-file records it, and the list is updated.
+file records it with numbers, before and after, where they exist:
+the manual's lines, how many places its subject is told, and how
+many links it has, with how many lack upkeep.
+
+After each verdict, the targets and the sketch are read again, not
+only the list: what an iteration showed can change a target that
+did not fail.
 
 ### 2.4 Spread
 

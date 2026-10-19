@@ -20,6 +20,25 @@ wrong.
 | TARGET-E | what a thing is, apart from what we do about it: a model that binds nothing beside the manual that binds | the agent model and agent-arrangement already work this way; on 2026-10-19 "what a concept is" and "how one is written" were mixed |
 | TARGET-F | a manual is called a concept, and its rules and skills the convention | one word for one idea (PAIN-5); "concept" already names the CbC concept and the tiers model's concepts tier |
 
+## The target sketch (§2.1)
+
+A manual as all six targets would make it. Possible, not promised,
+and read again after each verdict.
+
+```
+# <name>
+main subject                          ← TARGET-A
+sub-ideas, each in its own section;   ← TARGET-B
+  one grows into a manual when …
+picture of how they relate            ← TARGET-C
+links, each with what keeps it up     ← TARGET-D
+the model it reasons from             ← TARGET-E
+seats; why it arrives this way;
+  what it does not cover
+```
+
+Its name, a concept or a manual, waits for TARGET-F.
+
 ## The pains, as tests (§2.1)
 
 Listed and confirmed by the reviewer on 2026-10-19. Each is a way
