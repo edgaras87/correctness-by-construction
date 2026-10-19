@@ -16,6 +16,7 @@ kind.
 | Round | Kind | What a finding is | The rule |
 |---|---|---|---|
 | 1 | Stale lines | a line no longer true | none needed: a false line is wrong |
+| 1 | Wiring | a link the rules require that is missing or does not resolve: a manual's list of what derives from it, a `foundation` line, a pointer's path or section | `docs/conventions/conventions/` §3.5, steps 1 and 2; §3.2 |
 | 1 | Foundations | a `foundation` line that disagrees with its manual | `.claude/rules/foundation-check.md` |
 | 2 | One home | a fact told in more than one place | `.claude/rules/one-home.md` |
 | 2 | Dependencies | a retelling where a pointer would do, or a pointer not needed | `docs/conventions/conventions/` §3.1 |
@@ -32,10 +33,15 @@ Seats is in doubt: §3.4 says what a seats section holds, not that
 it holds no more. The rule check (§2.3) settles it before round 1
 reads.
 
+Wiring was added by the reviewer on 2026-10-19, after the first
+confirmation: the links the foundation check walks are checked
+first, before round 2 moves text along them.
+
 Also in round 2, joined from its own TODO item: the map of the
 records, project-recording §1, in project-recording's layer.
 
-Confirmed by the reviewer, 2026-10-19.
+Confirmed by the reviewer, 2026-10-19, before Wiring was added,
+and again with it the same day.
 
 ### Files by layer (§2.2)
 

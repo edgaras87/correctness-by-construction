@@ -25,18 +25,18 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Decide whether the foundation check follows pointers to a
-      section that moved (2026-10-19, the reviewer).
-      Context: the check's walk follows what derives from a changed
-      description (`docs/conventions/conventions/` §3.5). A pointer
-      that only names a section stays true whatever the section
-      says, but breaks when the section moves or is renumbered.
-      Only the step's close checks links, and in the records only.
-      The refinement's manual renumbered three times on 2026-10-18;
-      one stale pointer, in TODO, stood for five commits.
+- [ ] Decide whether the foundation check catches a moved section
+      outside the descriptions (2026-10-19, the reviewer).
+      Context: the check's walk greps a changed description's path,
+      so a pointer into a manual is found when the manual changes
+      (`docs/conventions/conventions/` §3.5, step 3). A skill, a
+      rule or a record has no such walk. When one of its sections
+      moves or is renumbered, a pointer to it breaks, and only a
+      later read finds it. The refinement's Wiring kind finds the
+      broken ones today; this is about keeping them whole after.
       Ideas:
-      - when a section moves or is renumbered, search all living
-        text for its path and number, in the same commit.
+      - when any section moves or is renumbered, grep all living
+        text for its path, in the same commit.
       - the conventions' full local map, whose points link has no
         upkeep yet.
       Trigger: the refinement's rule check

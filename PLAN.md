@@ -133,7 +133,8 @@ Gate:
 
 - [x] The refinement's file holds every kind the TODO item asked
       for, each in its round, and the reviewer confirmed them
-      (`docs/conventions/refinement/` §2.1; 2026-10-19).
+      (`docs/conventions/refinement/` §2.1; 2026-10-19, again
+      with Wiring).
 - [ ] The refinement's file lists every living file in exactly one
       layer (`docs/conventions/refinement/` §2.2).
 - [ ] Before round 1, no rule among the refinement's kinds was in
