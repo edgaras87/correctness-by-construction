@@ -76,3 +76,23 @@ against a writing rule just rechecked. TODO's plain-rewrite item
 is weighed at the close against what round 3 did.
 
 Confirmed by the reviewer, 2026-10-19.
+
+### The rules' check (§2.3)
+
+TODO searched on 2026-10-19 for each rule's name and its manual's
+path. Each manual is read whole, then its rules.
+
+| Manual | Kinds that stand on it | Doubt from | Result |
+|---|---|---|---|
+| `docs/conventions/conventions/` | Wiring, Foundations, Dependencies, Seats, Lessons | the reviewer; TODO: the manuals' recheck; a moved section outside the descriptions; Seats, in doubt since §2.1 | |
+| `docs/conventions/project-recording/` | One home | the reviewer; TODO: the manuals' recheck | |
+| `docs/conventions/writing/` | Writing | the reviewer; TODO: the manuals' recheck | |
+
+Met in the search, not doubts, each with its own trigger: a TODO
+item's story written when it is added (project-recording, due); a
+rule that writes a skill or rule from its convention (conventions
+§2, at this step's close); a check on the worked example's two
+copies (one home, rule 5); numbering the concept's sections
+(conventions §3.2); a playbook convention (project-recording §9);
+the readability pass (the writing rule, at this step's close); the
+conventions' full local map.
