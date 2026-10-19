@@ -17,17 +17,20 @@ is written. Its form, never its content.
 ## The sections, in this order
 
 Each a `##` heading, except the opening statement, which is a bold
-paragraph under the title. The body's sections are numbered; the
+sentence under the title. The body's sections are numbered; the
 others are not.
 
-1. **The opening statement.** One bold paragraph: what the
-   convention is, in a sentence a reader can hold.
+1. **The opening statement.** One bold sentence: the manual's
+   subject, so a reader can tell from one line whether this is the
+   page they need. Not a summary of how it works, nor its boundary
+   or its channel: sections 5, 8 and 7 hold those.
 2. **What it is for.** The need: what work the convention makes
    possible, what went wrong without it — with the run or the date
    — and the event that made it. Evidence; or intent marked *on
-   trial* with what would make it evidence and when to look again;
-   or, taken whole from elsewhere, adopted — where it came from and
-   what has been lived under it since. Never intent dressed as
+   trial* with what would make it evidence and when to look again,
+   after which the need is rewritten from what was seen or the
+   convention goes; or, taken whole from elsewhere, adopted —
+   where it came from and what has been lived under it since. Never intent dressed as
    evidence: a wish ("so that X is easier") is not a need.
 3. **What this is made usable as.** The answer to the need: every
    derived artifact, each by path from the repo root, marked
@@ -44,7 +47,9 @@ others are not.
    of their subject. A section divided into labelled parts numbers
    them, `### N.M`, and so does every section of the same form in
    the manual; emphasis in prose is not a part
-   (`docs/conventions/conventions/` §3.2).
+   (`docs/conventions/conventions/` §3.2). Each numbered section
+   holds one subject, and a subject has one section; other
+   sections point at it (`docs/conventions/conventions/` §3.3).
 6. **Lessons as dated italics**, where they happened: *what was
    measured, when, and what changed*. The italic holds the case;
    the body holds what it teaches, in general
