@@ -1,8 +1,7 @@
 # Conventions
 
-**A convention is a rule the work may break only with a reason —
-stated once, in a manual that never ships, and made usable as
-artifacts a project holds.**
+**How a way of working is written down once, in a manual, and made
+into the rules and skills a project acts on.**
 
 ## What it is for
 
@@ -18,7 +17,8 @@ under it since. What went wrong without this one: the rules for
 conventions lived in the index, against its scope, and two of them
 were dead letters nobody had followed (ADR-0039). The trigger:
 the descriptions item filed on 2026-09-27, and the index read
-against it the next day.
+against it the next day. Every other manual is written to this
+one, and every rule and skill is made by it.
 
 ## What this is made usable as
 
