@@ -98,3 +98,42 @@ copies (one home, rule 5); numbering the concept's sections
 (conventions §3.2); a playbook convention (project-recording §9);
 the readability pass (the writing rule, at this step's close); the
 conventions' full local map.
+
+### Handed over from the redesign (2026-10-19)
+
+The redesign of the conventions ran two iterations on the
+conventions manual. Both were refinement work, so the conventions
+manual is in doubt again, and the rule check goes through it
+section by section, top to bottom, fixing in place.
+
+- **The top line: done,** at `ac796df`. It states the manual's
+  subject; "may break only with a reason" stays in §1, its one
+  place.
+- **"What it is for": agreed, to apply first.** The section keeps
+  only this manual's need, then its failure and trigger:
+
+  > So that a way of working has one place that says why it is so,
+  > and everything an agent acts on can be traced back to it. A
+  > rule can then be questioned against its reason. A change to a
+  > reason reaches every rule made from it.
+  >
+  > What went wrong without it: the rules for conventions lived in
+  > the conventions index, against that index's scope, and two of
+  > them were rules nobody had followed (ADR-0039). The trigger:
+  > the descriptions item filed on 2026-09-27, and the index read
+  > against it the next day.
+
+  The general rule it opened with goes: §3.3 holds it. §3.3 gains
+  the two details only that sentence held: "the work it makes
+  possible", and "after which the need is rewritten from what was
+  seen or the convention goes".
+- **§3.3, when the walk reaches it:** each part of a manual gets a
+  numbered part of its own, so a pointer lands on one;
+  `convention-manual.md` then follows part by part, and gains "or
+  the convention goes".
+- **For the walk to weigh, from the redesign's reading:** §3 holds
+  two subjects, how a manual is written (§3.3, §3.4, §3.7) and how
+  everything stays in step (§3.1, §3.2, §3.5, §3.6); the seats are
+  told in "The seats" and again in §3.4; the links between a
+  manual, its rules and other manuals are spread over many
+  sections, with no one place.
