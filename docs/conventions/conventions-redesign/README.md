@@ -100,6 +100,10 @@ which.
 
 ### 2.3 One iteration
 
+Before a change adds anything, it looks at what the manual already
+has for the job: a section that should do it, or a retelling to
+remove. A fix in place comes before a new part.
+
 One change to one manual, in a commit, or a commit plan when it
 needs more than one, through the foundation check. Then the
 reviewer judges it on four questions:
@@ -122,6 +126,11 @@ many links it has, with how many lack upkeep.
 After each verdict, the targets and the sketch are read again, not
 only the list: what an iteration showed can change a target that
 did not fail.
+
+*Found 2026-10-19, in iteration 1: a new section for the
+conventions convention's subject repeated "What it is for" and the
+opening statement. The opening statement was already the place for
+a subject; it held the wrong thing.*
 
 ### 2.4 Spread
 
