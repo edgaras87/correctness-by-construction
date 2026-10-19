@@ -26,6 +26,36 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Decide whether what a thing is stands apart from the manual
+      that binds it (2026-10-19, the reviewer).
+      Context: a model says what something is and binds nothing; a
+      manual says what we do, and its rules bind. The agent model
+      and agent-arrangement already stand apart this way. On
+      2026-10-19, "what a concept is" and "how one is written" were
+      mixed in one draft, and had to be pulled apart.
+      Ideas:
+      - a model of what a convention is, beside the conventions
+        manual, as the agent model stands beside agent-arrangement.
+      - the link "reasons from", model to manual, with what keeps
+        it up when the model changes.
+      - the item on folding the agent model into agent-arrangement
+        is the same question the other way round.
+      Trigger: the refinement of this repo closes.
+      See: devlog 2026-10-19, the redesign's ideas.
+
+- [ ] Choose whether a manual is called a concept (2026-10-19, the
+      reviewer).
+      Context: one idea should have one word. The reviewer saw a
+      manual as a concept: an idea written down, with sub-ideas,
+      and its rules and skills as the convention. "Concept" already
+      names the CbC concept and the tiers model's concepts tier.
+      Conventions §3.5 calls both a description.
+      Ideas:
+      - a manual is a concept; its rules and skills, the convention.
+      - "description" stays the general word, as §3.5 has it.
+      Trigger: the item on what a thing is, decided.
+      See: devlog 2026-10-19, the redesign's ideas.
+
 - [ ] Decide how commits cited by hash can still be regrouped
       (2026-10-19, the reviewer).
       Context: `commit-plan` §4 regroups a set's commits before its
@@ -42,8 +72,8 @@
       - rewrite the citations with the regroup: a map of old hash
         to new, grepped and replaced in the same rewrite.
       - regroup only on the branch, before main takes it.
-      Trigger: the conventions' redesign, which rethinks
-               `commit-plan` and conventions §3.2's pointers.
+      Trigger: the refinement of this repo closes; its rounds read
+               `commit-plan` and conventions §3.2.
       See: devlog 2026-10-19, regrouping.
 
 - [ ] Make the conventions index a full local map (2026-09-30, the
