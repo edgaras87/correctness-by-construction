@@ -73,7 +73,8 @@ seats). It owns the playbook,
 the steps filled into its plan (§9). Its `CHANGELOG.md` versions the
 concept, not a release (ADR-0003).
 
-And its `PLAN.md` holds one step: the piece of work being done now.
+And its `PLAN.md` holds one step being worked: the piece of work
+being done now, and below it any step stopped for it.
 What makes work a step, and the step's form, the run's adapted to
 this seat, are under `## The step form` at the top of the
 deliverer's own `PLAN.md`. TODO's Now holds what is due while the
@@ -199,6 +200,13 @@ Repo root, `PLAN.md`. One per project.
 - When a step closes, add a one-line note of what actually happened,
   especially if it diverged from the estimate — this is retro fuel.
 - Steps link outward: "Decisions: ADR-nnnn," "see devlog 2026-08-14."
+- **A step can stop when another must come first.** It is not done
+  and not dropped. It keeps its place, its ticked items and the
+  stage it stopped at, so it resumes where it was instead of
+  starting again or closing unfinished. Its mark is `[!]`, naming
+  the step that comes first and pointing at the devlog entry that
+  says why. How a step stops and resumes is the step form's: the
+  playbook's, and in the deliverer's seat its own `PLAN.md`'s.
 - Ends with a "Discovered along the way" holding pen. The look back
   is not the plan's: `RETRO.md`, by `docs/conventions/retrospective/`.
 

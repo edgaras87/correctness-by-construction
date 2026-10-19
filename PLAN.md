@@ -9,7 +9,7 @@
 
 ## Legend
 
-`[ ]` planned  ·  `[~]` in progress  ·  `[x]` done (+date)  ·  `[!]` blocked (+what unblocks)  ·  `[-]` skipped (+why)
+`[ ]` planned  ·  `[~]` in progress  ·  `[x]` done (+date)  ·  `[!]` blocked (+what unblocks) or stopped (+the step first)  ·  `[-]` skipped (+why)
 
 **Gate** = exit criteria: verifiable facts, not intentions. A step is done only when every gate item is true.
 
@@ -101,6 +101,16 @@ one commit on main closes the step: it removes the step from this
 file and adds the devlog entry, which names the step and the commit
 that holds the ticked gate. Nothing is recorded before the
 fast-forward that it would make untrue.
+
+**A step can stop when another must come first.** It stays in
+the plan, marked `[!]`: "stopped: <the step that comes first>",
+with a pointer to the devlog entry that says why. Its Now line
+keeps the stage it stopped at. Main takes its branch so far by
+fast-forward, on the reviewer's word, and the next step is cut
+from main. To resume, its branch is fast-forwarded to main, it
+restarts at that stage, and any stage whose input the other step
+changed runs again. A ticked item stays ticked unless the other
+step made it untrue.
 
 **A trial names the close that judges it.** A piece of the way of
 working put on trial says at which step's close it is judged. Its

@@ -14,7 +14,7 @@
 
 ## Legend
 
-`[ ]` planned  ·  `[~]` in progress  ·  `[x]` done (+date)  ·  `[!]` blocked (+what unblocks)  ·  `[-]` skipped (+why)
+`[ ]` planned  ·  `[~]` in progress  ·  `[x]` done (+date)  ·  `[!]` blocked (+what unblocks) or stopped (+the step first)  ·  `[-]` skipped (+why)
 
 **Gate** = exit criteria: verifiable facts, not intentions. A step is done only when every gate item is true.
 Detail only the next 1–2 steps finely; keep later steps coarse (rolling wave).
