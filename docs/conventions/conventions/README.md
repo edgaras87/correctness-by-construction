@@ -29,9 +29,10 @@ Nothing shipped of its own; what a repo holds is:
 - **`.claude/rules/convention-manual.md` — the form of a manual,
   the deliverer's**, loading whenever a manual is opened;
 - **`.claude/rules/foundation-check.md` — §3.5 and §3.6 at the
-  commit, the deliverer's**, loaded in every session and acting
-  before a commit is staged that touches a description or what
-  derives from it;
+  commit, and §3.2's grep for a renamed or renumbered section, the
+  deliverer's**, loaded in every session and acting before a commit
+  is staged that touches a description or what derives from it, or
+  moves a section;
 - **the index, `docs/conventions/README.md`** — a pointer: the
   chain, relations only (ADR-0032), and one line sending a
   reader here and to `ARCHITECTURE.md` §1.2.
@@ -168,10 +169,11 @@ throughout. Bold emphasis inside running prose is not a part. Never
 a relative link: a relative path means a different thing the moment
 a file is read from a different root, which is every copy and every
 shipped file. A name in prose is not a pointer, because names are
-words. A rename or a renumbering is the case the commit-plan skill's
-sweep covers,
-`delivery/container/.claude/skills/commit-plan/SKILL.md` §4: every
-old path and number, before the close.
+words. A commit that renames or renumbers greps all living text
+for each old path and number, and fixes what points at them in the
+same commit. The commit-plan skill's sweep,
+`delivery/container/.claude/skills/commit-plan/SKILL.md` §4, looks
+again before a plan's close.
 
 *Decided in the walk, 2026-09-29, when this manual's §3 held six
 rules as bold paragraphs and every pointer into it said "§3"; it
@@ -180,6 +182,11 @@ lived in the devlog alone until 2026-09-30. Written here first as
 of project-recording beside seven built the same way; the reviewer
 caught it at the boundary, and it was reworded the same day, by
 form.*
+
+*Found 2026-10-19: the refinement's manual was renumbered three
+times on 2026-10-18, outside any commit plan, so no close sweep
+ran. A pointer in TODO stood stale for five commits. The grep
+moved from a plan's close to the commit that renumbers.*
 
 ### 3.3 The form
 
