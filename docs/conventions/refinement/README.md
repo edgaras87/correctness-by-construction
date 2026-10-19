@@ -267,10 +267,11 @@ commit, so the file can be read from git.
 
 - **Whether the order holds:** the first round tests §2.5's
   layers; the last, whether the rounds were worth their reads.
-- **The method's texts:** `delivery/method/`,
-  `delivery/spring-postgres/` and `concept/` have a plain rewrite
-  of their own in TODO, due before run 5's birth. Whether the
-  writing kind reads them here, or leaves them to it.
+- **Text another TODO item already plans to rewrite:** read here,
+  or left to that item. On 2026-10-19 the reviewer had the writing
+  kind read the method's texts, which TODO's plain-rewrite item
+  covers. The refinement's close weighs what that item still
+  needs, and whether one pass was the better way.
 - **Whether a refinement comes again,** and what makes one due: a
   new rule, or a count of rules since the last.
 - **Whether the refinement's file needs a shape.** It borrows the
