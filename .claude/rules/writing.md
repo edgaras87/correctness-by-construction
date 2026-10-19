@@ -32,6 +32,11 @@ what it says.
    D22", never a bare "D22": every run's RETRO has one.
 7. **Cut what adds nothing.** If a sentence can go without losing
    meaning, it goes.
+8. **Start from what the reader holds.** Before a label, a section
+   number or a coined word, ask whether this reader knows it. If
+   not, say first, in plain words, what it is. Not "Stale lines has
+   a weak rule", but "Stale lines, the kind that finds lines no
+   longer true, has a weak rule".
 
 ## Before and after
 
