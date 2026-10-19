@@ -121,8 +121,9 @@ foundation: the <name> convention
   `practice, checked against concept v1`; for a convention's
   artifact, the convention by name, `the exchange convention`; for a
   shape, the convention it lives under, `practice, under the shapes
-  convention`. The value carries the relation where it is not
-  derivation. Concept chapters carry none; they are the top. That
+  convention`; for a record's form, the convention it comes from,
+  `the project-recording convention` (§3.5, step 2). The value
+  carries the relation where it is not derivation. Concept chapters carry none; they are the top. That
   the line travels with a copy is `docs/conventions/exchange/` §3.5.
 
 **A skill's phases are stages,** numbered from Stage 0, each under
@@ -245,8 +246,11 @@ explain. The rule is the same for all of them, and this is where it
 is stated:
 
 1. A description lists what derives from it.
-2. Each derived thing names its description — in a shipped file,
-   the `foundation` line.
+2. Each derived thing names its description. A skill, a rule or a
+   shape carries the `foundation` line in its frontmatter. A record
+   whose header holds its form, such as `PLAN.md`'s step form or
+   `TODO.md`'s item shape, carries a `foundation:` line in that
+   header's comment. Both seats, the run's stubs included.
 3. A change to the description walks the list in the same commit,
    or in the next when one side is an agent file and the other is
    not (`docs/conventions/commit-messages/`). It greps for the
@@ -272,6 +276,11 @@ manual and the concept are handled differently — versioning,
 shipping, the kind of derivative, the seats, what each asserts — is
 ADR-0039; the concept's edges are ADR-0003, the CHANGELOG's
 standing comment and `ARCHITECTURE.md` §1.1.
+
+*Found 2026-10-19: project-recording's deliverer seat retold
+`PLAN.md`'s step form, and nothing linked the two, so a change on
+either side never reached the other. The reviewer had a record's
+form name its description, as a skill does.*
 
 ### 3.6 A disagreement
 
