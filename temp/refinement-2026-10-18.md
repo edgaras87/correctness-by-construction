@@ -92,7 +92,7 @@ path. Each manual is read whole, then its rules.
 
 | Manual | Kinds that stand on it | Doubt from | Result |
 |---|---|---|---|
-| `docs/conventions/conventions/` | Wiring, Agreement, Dependencies, Lessons | the reviewer; TODO: the manuals' recheck; a moved section outside the descriptions | fixed: a moved section is grepped at its commit, `7061c89`, `d1fb072`, and its TODO item ended, `8defb6c`; a record's form names its description, `c06943d`, `242d248`; Seats read as Agreement, `83347b8`. One stale line left to round 1: §1's "holds ten". |
+| `docs/conventions/conventions/` | Wiring, Agreement, Dependencies, Lessons, Layout | the reviewer; TODO: the manuals' recheck; a moved section outside the descriptions; the reviewer again, after the redesign | fixed: a moved section is grepped at its commit, `7061c89`, `d1fb072`, and its TODO item ended, `8defb6c`; a record's form names its description, `c06943d`, `242d248`; Seats read as Agreement, `83347b8`. Read again after the redesign: the top line states the subject, `ac796df`; "What it is for" says its own need, `4a8c0c3`; the opening statement is the subject in one sentence, `5af7355`; a section holds one subject, `aba2897`; the manual form follows, `d0628b2`. Left to round 1: §1's "holds ten", and nine opening lines that do not fit `5af7355`. Left to round 2: the Layout findings in the note below. |
 | `docs/conventions/project-recording/` | One home | the reviewer; TODO: the manuals' recheck | fixed: a link moves when its home moves, `5f3a601`, `c74516b`; a TODO item's story is written when it is added, `06de359`, `2de55db`, `2200e81`. Two findings left to round 1's Agreement: where `PLAN.md`'s step form is described, and what TODO's Now holds, told three ways. |
 | `docs/conventions/writing/` | Writing | the reviewer; TODO: the manuals' recheck | fixed: rule 8, start from what the reader holds, tried on a sample the reviewer judged clearer, `8e86560`, `6e56e72`. One finding left to round 1's Agreement: the manual says coined words go in the project's glossary, our rule says `ARCHITECTURE.md`'s *The words*, and the seats do not name the difference. |
 
@@ -146,8 +146,9 @@ section by section, top to bottom, fixing in place.
   subject, and a subject has one section; and
   `convention-manual.md` follows, with "or the convention goes".
 - **For round 2, as Layout findings, from the redesign's
-  reading:** §3 holds two subjects, how a manual is written (§3.3, §3.4, §3.7) and how
-  everything stays in step (§3.1, §3.2, §3.5, §3.6); the seats are
-  told in "The seats" and again in §3.4; the links between a
-  manual, its rules and other manuals are spread over many
-  sections, with no one place.
+  reading:** §3 holds two subjects, how a manual is written (§3.3,
+  §3.4, §3.7) and how everything stays in step (§3.1, §3.2, §3.5,
+  §3.6); the links between a manual, its rules and other manuals
+  are spread over many sections, with no one place. Not a finding:
+  "The seats" is this manual's own seats and §3.4 the rule for
+  every manual's, two subjects, checked 2026-10-19.
