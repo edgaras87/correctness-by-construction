@@ -25,6 +25,24 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Decide whether the foundation check follows pointers to a
+      section that moved (2026-10-19, the reviewer).
+      Context: the check's walk follows what derives from a changed
+      description (`docs/conventions/conventions/` §3.5). A pointer
+      that only names a section stays true whatever the section
+      says, but breaks when the section moves or is renumbered.
+      Only the step's close checks links, and in the records only.
+      The refinement's manual renumbered three times on 2026-10-18;
+      one stale pointer, in TODO, stood for five commits.
+      Ideas:
+      - when a section moves or is renumbered, search all living
+        text for its path and number, in the same commit.
+      - the conventions' full local map, whose points link has no
+        upkeep yet.
+      Trigger: the refinement's rule check
+               (`docs/conventions/refinement/` §2.3).
+      See: devlog 2026-10-19, pointers.
+
 - [ ] Make the conventions index a full local map (2026-09-30, the
       reviewer).
       Context: its chain shows only the conventions that act in
