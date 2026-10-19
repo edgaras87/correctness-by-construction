@@ -26,6 +26,26 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
+- [ ] Decide how commits cited by hash can still be regrouped
+      (2026-10-19, the reviewer).
+      Context: `commit-plan` §4 regroups a set's commits before its
+      close, and a regroup gives them new hashes. This repo cites
+      hashes in living text: the refinement's file, TODO, other
+      commit bodies. So the refinement's commits up to `ccce6af`
+      were not regrouped, and the history keeps every small fix,
+      each reviewed as it landed.
+      Ideas:
+      - cite records, not commits: living text points at a devlog
+        entry or a section; hashes only in history.
+      - cite at the close: while a set is open nothing durable
+        cites its hashes; the close cites the final ones.
+      - rewrite the citations with the regroup: a map of old hash
+        to new, grepped and replaced in the same rewrite.
+      - regroup only on the branch, before main takes it.
+      Trigger: the conventions' redesign, which rethinks
+               `commit-plan` and conventions §3.2's pointers.
+      See: devlog 2026-10-19, regrouping.
+
 - [ ] Recheck the manuals the refinement's kinds stand on, before
       its round 1 (2026-10-19, the reviewer).
       Context: not known to be wrong. Every finding stands on
