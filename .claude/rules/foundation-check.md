@@ -20,6 +20,8 @@ or moves a section. Which side is right, never how either reads.
 1. **Look at the staged paths first.** Only these are checked:
    - files with a `foundation` line: `.claude/skills/`,
      `.claude/rules/`, and `.claude/` under `delivery/`;
+   - records whose header comment carries a `foundation:` line,
+     in either seat (`docs/conventions/conventions/` §3.5, step 2);
    - descriptions: `docs/conventions/*/README.md`, `concept/`,
      `ARCHITECTURE.md`.
 
