@@ -19,7 +19,7 @@ retrospective taken, ADR-0055)
      serve six steps. -->
 
 ```markdown
-## Step <n>: <title>  (<the skill it runs, if any>)    [ ]
+## Step <n>: <title>  (<the skill or approach it runs, if any>)    [ ]
 
 Goal: <one sentence: what is true when this step is done>
 Now: <where the step stands, one line>
@@ -34,8 +34,9 @@ Notes: <opened <date>; its stages, if it runs no skill; what the
 
 **The Now line names the stage the step is in, and changes when
 the step enters a new one, not at every commit.** A step that runs
-a skill uses the skill's stages. A step with no skill splits its
-work into a few stages when it opens, and lists them in its Notes.
+a skill, or an approach on trial, uses its stages. A step with
+neither splits its work into a few stages when it opens, and lists
+them in its Notes.
 Two examples:
 
 - the order service's first slice, which runs `cbc-slice`: "Now:
@@ -56,9 +57,11 @@ cannot be cut afterwards.
 - [ ] The step's branch `<branch>` is cut from main, and the step
       has not been worked anywhere else.
 - [ ] This gate was written before the work started.
-- [ ] The step's way is known: the skill it runs, or the stages its
-      Notes list from earlier runs. If neither, the step opened a
-      provisional manual (`first-time-work`).
+- [ ] The step's approach is known: the skill it runs; an approach
+      on trial in `.claude/approaches-on-trial/` that covers the
+      work; or the stages its Notes list from earlier runs. If none,
+      the step drafted one
+      (`.claude/approaches-on-trial/approach-drafting.md`).
 
 **The step's own items.** Ask of the goal: "how would I check that's
 true?" Each answer is one item: a fact, checkable by looking, what
@@ -95,6 +98,9 @@ keeps each.
       realizes: the log reads decision, then code.
 - [ ] The step reached main by fast-forward from `<branch>`, on the
       reviewer's word.
+- [ ] Each approach on trial the step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
 
 The records item asks for an outcome. A run may write a script
 that checks it and run it at every close. How a difference with a

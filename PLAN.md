@@ -28,7 +28,7 @@ delivery alone. TODO never repeats the open step; a TODO item that
 becomes a step leaves TODO.
 
 ```markdown
-## Step: <title>  (<the skills and rules it uses, if any>)    [~]
+## Step: <title>  (<the skills, rules and approaches it uses, if any>)    [~]
 
 Goal: <one sentence: what is true when this step is done>
 Now: <the stage the step is in, one line>
@@ -42,8 +42,9 @@ Notes: <opened <date>; its stages, and what each uses; what the
 ```
 
 **The Now line names the stage the step is in, and changes when the
-step enters a new one, not at every commit.** A step whose way is
-known lists its stages in its Notes.
+step enters a new one, not at every commit.** A step whose approach
+is known lists its stages in its Notes: a skill's, an approach on
+trial's, or those of earlier work.
 
 Inside a commit plan, the plan and the branch's log show where the
 work is.
@@ -59,9 +60,11 @@ does not set a standard the work was held to.
       read, which comes before the branch
       (`.claude/rules/working-a-reading.md`, step 1).
 - [ ] This gate was written before the work started.
-- [ ] The step's way is known: the skills and rules it uses, or
-      the stages its Notes list from earlier work. If neither, the
-      step opened a provisional manual (`first-time-work`).
+- [ ] The step's approach is known: the skills and rules it uses;
+      an approach on trial in `.claude/approaches-on-trial/` that
+      covers the work; or the stages its Notes list from earlier
+      work. If none, the step drafted one
+      (`.claude/approaches-on-trial/approach-drafting.md`).
 
 **The step's own items,** written first, from the goal alone. Ask of
 the goal: "how would I check that's true?" Each answer is one item:
@@ -94,6 +97,9 @@ step that uses none has only its own items.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
       §2.4).
+- [ ] Each approach on trial the step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
 
 **When every item is ticked and committed,** main takes the step's
 branch, if it has one, by fast-forward on the reviewer's word. Then
