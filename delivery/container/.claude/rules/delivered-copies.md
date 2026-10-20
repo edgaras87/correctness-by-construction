@@ -3,6 +3,7 @@ paths:
   - ".claude/skills/**"
   - ".claude/rules/**"
   - ".claude/shapes/**"
+  - ".claude/approaches-on-trial/**"
   - "docs/concept/**"
   - "temp/**"
 foundation: the exchange convention
@@ -22,8 +23,8 @@ foundation: the exchange convention
    - the **read-through:** this run's own commit the deliverer last
      read up to, taken from the note.
 
-   One pin covers everything delivered: the skills, rules and shapes
-   under `.claude/`, and `docs/concept/`. The concept chapters are
+   One pin covers everything delivered: the skills, rules, shapes
+   and approaches on trial under `.claude/`, and `docs/concept/`. The concept chapters are
    copies too, edited like any copy, but only from a mistake lived
    here. Skills are written from them and readers learn the method
    from them, so lived work can show one wrong. A preference for
@@ -52,6 +53,11 @@ foundation: the exchange convention
    in an artifact says how to use it or what a part is, never what
    changed: that is history, and the diff against the pin and the
    log already hold it.
+
+   An approach on trial takes one more edit: a dated note of each
+   use under its *Uses*, in this project's own terms. It is how the
+   use reaches the deliverer, so the second condition does not hold
+   it; the other two do.
 
 3. **What this project needs that no copy should carry goes into
    the project's records,** where that kind of thing already lives:

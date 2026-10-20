@@ -180,7 +180,7 @@ container, a stack practice if the run is on that stack — and the
 concept. Nothing that explains them; the explanation stays home.
 
 At birth, every file of each group. After it, only the copies: the
-container's skills and rules; the method's and the stack practice's
+container's skills, rules and approaches on trial; the method's and the stack practice's
 skills, rules and shapes; the concept. The rest of the container —
 its records, the two entry files, the decisions log, the hygiene
 files — went once and is the run's (§2.4); a later delivery that
@@ -357,6 +357,12 @@ makes the read one section instead of a search.
 Nothing is written into the copy but the edit. No dated line, no
 comment saying what changed — a file says how to use it, never its
 own history.
+
+One kind of copy takes one more edit: an approach on trial gets a
+dated note of each use under its *Uses*, in the run's own terms.
+The note is what the approach is for, since it carries the use to
+the deliverer's evaluation. It is the run's own account, so the
+second condition does not hold it; the other two do.
 
 ### 5.2 A copy the run has finished with
 

@@ -25,8 +25,8 @@ into the run's `.claude/shapes/`; the rest is
 - **The run's own from birth.** The container's record stubs, its
   two entry files and its hygiene files are copied once and are the
   run's from then on. They never travel again.
-- **Pinned copies.** The convention skills and rules in the
-  container, and every skill in `method/` and `spring-postgres/`,
+- **Pinned copies.** The convention skills, rules and approach on
+  trial in the container, and every skill in `method/` and `spring-postgres/`,
   land where the container claims nothing. The run may edit one in
   place, under the exchange's rule (`docs/conventions/exchange/` §5);
   a newer one arrives by copying anew at a new pin.

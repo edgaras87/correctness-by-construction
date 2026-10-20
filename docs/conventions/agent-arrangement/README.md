@@ -51,7 +51,8 @@ run receives it. Its entry file says that `docs/concept/` and
 everything under `.claude/` are delivered copies, pinned, and that
 until the framing artifacts exist the only method work is running
 `cbc-framing` jointly with the human. It holds five convention
-skills, the retrospective's two among them,
+skills, the retrospective's two among them, one approach on trial,
+`approach-drafting`,
 and four rules: `shapes-lifecycle.md`, `delivered-copies.md`, the
 exchange's half for this side, and `writing.md` and `one-home.md`,
 loaded in every session. The work
@@ -368,7 +369,9 @@ is, how one is drafted and how one is evaluated are
 `.claude/approaches-on-trial/approach-drafting.md`'s and
 `.claude/approaches-on-trial/approach-evaluation.md`'s; this
 convention places the directory and states nothing else about it.
-*Added 2026-10-20 (ADR-0058). Numbered last, so the sections before
+In a run, an approach the deliverer ships is a pinned copy
+(`docs/conventions/exchange/` §3.2), and one the run drafts is its
+own. *Added 2026-10-20 (ADR-0058). Numbered last, so the sections before
 it keep the numbers history cites.*
 
 ## 4. Anti-patterns

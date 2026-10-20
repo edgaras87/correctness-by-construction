@@ -133,12 +133,13 @@ harvest, as a group beside this one (ADR-0029).
 **How a project is kept, not how it is thought.** The records
 (`README`, `PLAN`, `TODO`, `devlog`, `ARCHITECTURE`, `CHANGELOG`,
 the first ADR), the entry file, the agent decisions log, five
-convention skills, four rules, the hygiene files.
+convention skills, four rules, one approach on trial, the hygiene
+files.
 
 **This is the conventions made usable**, the way the method is the
-concept made usable. Every one of its twenty-one files is the
-artifact of one of ten of the eleven manuals in 1.2 — `conventions`
-ships nothing — the records and `.claude/rules/one-home.md`
+concept made usable. Every one of its twenty-two files but one is
+the artifact of one of ten of the eleven manuals in 1.2 —
+`conventions` ships nothing — the records and `.claude/rules/one-home.md`
 belong to `project-recording`, the entry file and the decisions log to
 `agent-arrangement`, the three dotfiles to `repo-hygiene`,
 `commit-messages`, `commit-plan` and `visual-comparison` to the
@@ -146,7 +147,9 @@ conventions named after them, `retrospective` and
 `apply-retrospective` to the retrospective,
 `.claude/rules/delivered-copies.md` to the exchange,
 `.claude/rules/shapes-lifecycle.md` to shapes, and
-`.claude/rules/writing.md` to writing.
+`.claude/rules/writing.md` to writing. The one is
+`.claude/approaches-on-trial/approach-drafting.md`, an approach on
+trial: a manual's artifact only once an evaluation places it.
 
 A project with no correctness-by-construction in it would still want
 most of this, which is why it is a group of its own and not part of

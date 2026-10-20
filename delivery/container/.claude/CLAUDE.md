@@ -24,10 +24,10 @@ Until the framing artifacts exist (cbc-framing creates them, under
 is running cbc-framing jointly with the human — never invent the
 artifacts to fill the gap.
 
-`docs/concept/`, and the skills and rules that arrived with a
-delivery, are copies, pinned; what may be done to them is
-`.claude/rules/delivered-copies.md`. A skill or rule this project
-writes is its own.
+`docs/concept/`, and the skills, rules and approaches on trial that
+arrived with a delivery, are copies, pinned; what may be done to them
+is `.claude/rules/delivered-copies.md`. A skill, rule or approach this
+project writes is its own.
 
 ## Records
 
