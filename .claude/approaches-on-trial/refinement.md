@@ -324,6 +324,10 @@ commit, so the file can be read from git.
   that definition, or this page takes another word.
 - **Whether the full reads again paid.** The counts of findings in
   unchanged text decide whether a narrower read would have done.
+- **Whether the design change in place belongs to every step.**
+  §2.7 holds it for a refinement alone (`8c9aadf`), the only work
+  that has lived it; a draft into both step forms was undone before
+  its commit.
 
 ## Why it arrives this way
 

@@ -101,6 +101,13 @@ evaluation closes on the agent's word.
 - **What a run does with a piece left as the project's own:** keeps
   it as its approach on trial, or writes it as a skill or rule of
   its own (`docs/conventions/agent-arrangement/` §3.1).
+- **Whether generalizing is work of its own.** Today it is stage 6.
+  Both are the deliverer's, so no seat splits them; a first use
+  that shows it big enough splits it.
+- **How a run's offered approach reaches this evaluation.** Only
+  *When it opens* says so. Weighed on 2026-10-20: a skill opening
+  when a reading meets the offer line; `working-a-reading.md`
+  pointing here; or nothing, the reading working it by hand.
 
 ## Ways rejected
 
