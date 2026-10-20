@@ -4,8 +4,9 @@ paths:
 foundation: the exchange convention
 ---
 
-<!-- The form of a reading, as a rule. Loads while one is being
-     written or worked; says its form, never its content. -->
+<!-- The form of a reading, as a rule. Loads when one is read,
+     so while it is worked, not while a new one is written; says
+     its form, never its content. -->
 
 # The reading
 

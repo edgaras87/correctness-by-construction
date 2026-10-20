@@ -4,9 +4,9 @@ paths:
 foundation: the conventions convention
 ---
 
-<!-- The form of a manual, as a rule. Loads while one is being
-     written or read; says its form, never its content. Ours, shipped
-     nowhere: a run writes no manuals. The why is
+<!-- The form of a manual, as a rule. Loads when one is read, not
+     while a new one is written; says its form, never its content.
+     Ours, shipped nowhere: a run writes no manuals. The why is
      docs/conventions/conventions/ §3. -->
 
 # A manual
