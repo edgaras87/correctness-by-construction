@@ -48,6 +48,16 @@ general from the manual and both skills by the stays/goes/changes
 list; the run's close marked inline. Our first-time-work skill
 goes. A `.claude/decisions.md` entry. Agent files only.
 
+**3b. `chore(agent): approach-drafting points, not retells`**
+Three lines of commit 3 retold what other files own: the step
+form's Notes and gate, what the pin covers, and the agent and
+project split. Each becomes a pointer, as one-home rule 2 asks.
+
+**3c. `docs: TODO holds tagged retelling for round 2`**
+The reviewer's idea, met in 3b: a retelling that names its source,
+kept true by a walk from it. A doubt on one-home rule 2, due before
+round 2 reads against it.
+
 **4. `chore(agent): approach-evaluation, on trial`**
 `.claude/approaches-on-trial/approach-evaluation.md`: its steps,
 its three situations, the stages, the split by seat, ideas living
