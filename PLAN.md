@@ -132,8 +132,8 @@ corner.
 
 Goal: Living text written before a rule now meets that rule, and
 project-recording §1 is a map of the records in both seats.
-Now: round 1, what is true: stale lines, wiring, agreement
-(`.claude/approaches-on-trial/refinement.md` §2.4).
+Now: round 1's work, layer by layer: layers 1 and 2 done, layer 3
+next (`.claude/approaches-on-trial/refinement.md` §2.7).
 Gate:
 
 **At the opening.**
