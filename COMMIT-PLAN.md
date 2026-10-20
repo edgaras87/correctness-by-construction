@@ -66,12 +66,17 @@ not known yet (whether a manual still goes on trial; retiring
 "stages from earlier work").
 
 **5. `docs: first-time-work leaves the conventions`**
-Its manual goes. What pointed at it follows: the index's chain and
-line; `ARCHITECTURE.md` §1.2's count and phrase, §2.3's line, the
-codemap, and *The words* gaining "approach" and "approach on
-trial"; conventions §4, where a convention now comes from an
-evaluation; agent-arrangement §3.1, its run seat, and a new §3.8
-for `approaches-on-trial/`. Foundation check on each description.
+Its manual goes, and the container's skill with it, since it stands
+on the manual and is a project file too. What pointed at either
+follows: the index's chain and line; `ARCHITECTURE.md` §1.2's count
+and phrase, §2.3's files and owners, the codemap, and *The words*
+gaining "approach" and "approach on trial"; conventions §4, where a
+convention now comes from an evaluation; agent-arrangement §3.1,
+its run seat, and a new §3.8 for `approaches-on-trial/`; the
+container's birth entry; every pointer to the manual's path or
+sections, `PLAN.md`'s and the refinement manual's included
+(`docs/conventions/conventions/` §3.2). Foundation check on each
+description.
 
 **6. `docs: a step's approach may be on trial`**
 Both step forms, ours and the playbook's: the opening item checks
@@ -81,10 +86,9 @@ item when an approach on trial was used.
 
 **7. `feat(delivery): approaches on trial ship to runs`**
 The container gains `.claude/approaches-on-trial/approach-drafting.md`,
-identical to ours, and loses its first-time-work skill. The pin
-covers approaches: exchange §3.2 and §5, `delivered-copies.md`
-rules 1 and 2, the entry file's pinned list, the decisions stub's
-birth entry, `delivery/README.md`.
+identical to ours. The pin covers approaches: exchange §3.2 and §5,
+`delivered-copies.md` rules 1 and 2, the entry file's pinned list,
+`delivery/README.md`.
 
 **8. `chore(agent): the exchange skills carry approaches`**
 `exchange-deliver` step 2.2 and `exchange-read`'s held copies take
@@ -103,7 +107,9 @@ changed. Its reshaping waits for its evaluation.
 **11. `docs: the refinement step names its approach`**
 *Provisional.* The step's heading, its opening and closing gate
 items and Notes name `approach-drafting`, the refinement's
-approach and its evaluation, in place of first-time-work.
+approach and its evaluation, in place of first-time-work. The
+pointers to the manual's sections went in commit 5; this rewords
+what they left.
 
 **12. `docs: TODO follows the approaches`**
 *Provisional.* The items this answers or changes: the rule that
