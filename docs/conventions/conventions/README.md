@@ -150,7 +150,10 @@ context, an entry file. Text that makes the subject usable derives
 from the manual and names it in `foundation`. Two relations, two
 verbs — point and derive — and a reader who finds the subject stated
 twice has found a defect; the measured case is
-`docs/conventions/agent-arrangement/`'s.
+`docs/conventions/agent-arrangement/`'s. A retelling tagged to its
+section, where the reader acts on it in place, is a follower, not a
+second statement (`docs/conventions/project-recording/` §11;
+ADR-0059).
 
 ### 3.2 A pointer is a path
 
@@ -166,7 +169,10 @@ throughout. Bold emphasis inside running prose is not a part. Never
 a relative link: a relative path means a different thing the moment
 a file is read from a different root, which is every copy and every
 shipped file. A name in prose is not a pointer, because names are
-words. A commit that renames or renumbers greps all living text
+words. A pointer beside a retelling always names the section: the
+walk re-reads only the retellings of the section that changed
+(§3.5), and one with no section would be re-read at every change.
+A commit that renames or renumbers greps all living text
 for each old path and number, and fixes what points at them in the
 same commit. The commit-plan skill's sweep,
 `delivery/container/.claude/skills/commit-plan/SKILL.md` §4, looks
@@ -274,7 +280,9 @@ is stated:
    not (`docs/conventions/commit-messages/`). It greps for the
    description's path, to find what points at it, and for its name
    in `foundation` lines, to find what stands on it: `the <name>
-   convention`, or `concept v1`.
+   convention`, or `concept v1`. Each retelling tagged to a changed
+   section is re-read with the paragraph around it; a host that
+   changes for it is walked in turn (step 5).
 4. A change forced in a derived thing is checked back against the
    description.
 5. A disagreement is raised and decided (§3.6); if the description
