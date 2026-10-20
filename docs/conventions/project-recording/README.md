@@ -47,7 +47,7 @@ checked back against this page.
 ## The seats
 
 The same records in both seats, each derived from this page — the
-run's through the stubs, the deliverer's directly — with five
+run's through the stubs, the deliverer's directly — with six
 differences of rule or ownership, so a section each
 (`docs/conventions/conventions/` §3.4).
 
@@ -58,12 +58,15 @@ steps arrive whole from a playbook it does not hold, filled in at
 birth. Its retrospective runs before Release
 (`docs/conventions/retrospective/`), and its lessons reach the
 playbook when the deliverer reads the run. Its
-`CHANGELOG.md` logs releases.
+`CHANGELOG.md` logs releases. It retells a fact only where two
+copies cannot be avoided: its case of a tagged retelling, which ids
+are tags and when they are re-read, is not designed yet (§11;
+ADR-0059).
 
 ### The deliverer's seat
 
 The deliverer keeps the same records, derived from this page rather
-than from the stubs (ADR-0042), and differs in five things. It
+than from the stubs (ADR-0042), and differs in six things. It
 has no project end, so lessons fold back at each step's close
 rather than at a retrospective, as its first devlog entry agreed on
 2026-08-27; whether a retrospective serves it too is on trial at
@@ -99,6 +102,11 @@ words and the list of what it knows is wrong — a map of a
 vocabulary needs the vocabulary, and a map that names its errors is
 believed less blindly — and runs past §8's two pages for them
 (ADR-0044).
+
+And it may retell a fact where the reader acts on it in place
+(§11). Its tag is a manual's path and section
+(`docs/conventions/conventions/` §3.2), and the walk before every
+commit re-reads it (`docs/conventions/conventions/` §3.5).
 
 *Found 2026-09-29: from 2026-09-20, with Step 10 in progress, 203
 commits, two of them touching `PLAN.md`; one step written after its
@@ -760,15 +768,20 @@ devlog (raw, daily)
 The rules that make the pipeline work:
 
 1. **Write once, at the source.** Each fact has one home; other records
-   *link* to it, never copy it. Duplicated facts diverge, and diverged
-   records stop being trusted. In practice:
+   *link* to it, and copy it only as a follower. Duplicated facts
+   diverge, and diverged records stop being trusted. In practice:
    - **A summary says it is one.** It names its owner, and nobody
      reads it in the owner's place.
    - **A fact changes at its home.** The links to it do not
-     change, unless the home itself moves.
-   - **When two copies cannot be avoided,** one is the owner and the
-     other follows it, and a check compares them: the version in the
-     build file, followed by the CHANGELOG.
+     change, unless the home itself moves. Each retelling tagged to
+     it is found and re-read, with the paragraph around it; a
+     retelling whose host is itself a source walks on.
+   - **A copy is a follower.** One is the owner and the other
+     follows it: where two copies cannot be avoided, as the version
+     in the build file is followed by the CHANGELOG, or where the
+     reader acts on the fact in place, retold beside its pointer. A
+     follower carries a tag, a label grep finds, defined at the
+     fact's home. Without one it is a second home.
    - **History is not a second home.** The devlog, closed ADRs and
      commit bodies record what was true then. They are never
      updated, so they cannot drift.
@@ -776,6 +789,11 @@ The rules that make the pipeline work:
 
    *Added 2026-10-15, from run 3: its loaded one-home rule said these
    five things, and this rule did not (ADR-0053).*
+
+   *Widened 2026-10-20: a line cut to a pointer left its reader
+   without the picture at the moment of use. The reviewer judged
+   three cases, each retold and pointed, and the retellings read
+   better (ADR-0059).*
 2. **Promote, don't rely on memory.** A dead end noted in the devlog is
    safe; one merely remembered will be repeated. Same for decisions
    (→ADR) and lessons (→playbook).
