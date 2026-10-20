@@ -26,22 +26,74 @@
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
-- [ ] Decide whether what a thing is stands apart from the manual
-      that binds it (2026-10-19, the reviewer).
-      Context: a model says what something is and binds nothing; a
-      manual says what we do, and its rules bind. The agent model
-      and agent-arrangement already stand apart this way. On
-      2026-10-19, "what a concept is" and "how one is written" were
-      mixed in one draft, and had to be pulled apart.
+- [ ] Decide how this repo's text is divided: by kind, a model, a
+      convention or an approach, and by subject (2026-10-20, the
+      reviewer).
+      Context: the deliverer's role is spread over `ARCHITECTURE.md`
+      §2 and §3, `docs/models/tiers.md`, the exchange, eleven seats
+      sections and project-recording §9; staying in step over
+      project-recording §11 and conventions §3.1 to §3.6.
+      Project-recording §1 is a model of the records inside a manual.
+      Only the agent has all three kinds: `docs/models/agent.md`,
+      `docs/conventions/agent-arrangement/`, `.claude/`. Round 2's
+      Layout fixes will make homes.
       Ideas:
-      - a model of what a convention is, beside the conventions
-        manual, as the agent model stands beside agent-arrangement.
-      - the link "reasons from", model to manual, with what keeps
-        it up when the model changes.
-      - the item on folding the agent model into agent-arrangement
-        is the same question the other way round.
-      Trigger: the refinement of this repo closes.
-      See: devlog 2026-10-19, the redesign's ideas.
+      - a convention per subject with rules and a moment; a model
+        for what a thing is; a section for a single rule.
+      - a model only where several manuals share an idea, or where
+        what it is and what we do got mixed.
+      - one manual per subject, a rule per case; a case is often a
+        seat.
+      - candidate models: one home; what a convention is; the
+        deliverer and the run, with seats; a shape, whose manual's
+        §1 and §2 say what one is.
+      - the layers themselves as a model: model → description (a
+        convention or the concept) → approach → output.
+      - a shape is not a layer after the approach: it is written
+        from outputs and governs the next at the gate; "governs" is
+        named in `9fd905b`, with no upkeep yet.
+      - the link "reasons from", model to convention, and what keeps
+        it up; beside derives, points and governs (`9fd905b`).
+      - the agent's chain rechecked against the layers before it is
+        the template, so its errors are not copied.
+      - project-recording §9's flow joins the deliverer → run
+        relation, beside the exchange and the retrospective; its §1
+        may be a model.
+      - folding the agent model into agent-arrangement is the same
+        question the other way round (its own item).
+      - weigh each split by maintenance, readability,
+        future-proofing and complexity.
+      Trigger: before round 2 reads, beside its Layout kind.
+      See: devlog 2026-10-20, later; 2026-10-19, the redesign's
+      ideas.
+
+- [ ] Decide how an approach and a shape divide an output: the
+      approach says what is done, the shape how its output looks
+      (2026-10-20, the reviewer).
+      Context: a shape is read at the gate only, so work written
+      without it can show it wrong (`docs/conventions/shapes/` §3).
+      A skill that carries the output's form undoes that.
+      `cbc-framing` hands over `templates/registry.md` to fill in,
+      for the output the `registry-entry` shape governs.
+      `approach-drafting`'s stage 1 lists the parts an approach
+      file holds, the form of its own output.
+      Ideas:
+      - a shape adapts: divergence is how it learns (shapes §2), and
+        a shape that never changes is finished or unread (§5.2).
+      - an approach is written without the output's form; a part a
+        shape needs is asked for as content, in the approach's own
+        words.
+      - such an ask is tagged to the shape only for the walk; the
+        shape says it is read at the gate.
+      - a part may be optional, and the shape marks it so.
+      - a part considered and empty says "none, because…", so it
+        reads differently from one left out.
+      - a part never asked for is a fifth kind of difference at the
+        gate: the fix goes to the approach, and the output records
+        the gap.
+      Trigger: `approach-drafting`'s first evaluation, at the
+               refinement's close.
+      See: devlog 2026-10-20, later.
 
 - [ ] Choose whether a manual is called a concept (2026-10-19, the
       reviewer).
@@ -134,9 +186,17 @@
         not always produce it.
       - Known already as questions, a skill's Gates and the
         playbook's lists, answered in a step's own words.
+      - our documents' layouts are shapes too, a case of the shapes
+        convention: a manual's, an approach's, a reading's, a
+        record's. Five mechanisms hold them today.
+      - read at the gate and adaptable like any shape; the approach
+        or rule that writes the document carries no layout.
+      - what must hold while writing stays a rule (shapes §3): a
+        manual's section order may; how each part is written may not.
       Trigger: run 4's reading, which reads how run 4 lived run 3's
                shapes.
-      See: devlog 2026-10-17, our forms as shapes.
+      See: devlog 2026-10-17, our forms as shapes; 2026-10-20,
+      later, layouts.
 
 - [ ] Try a readability pass, the reviewer marking where text is
       hard to read (2026-10-18, the reviewer).
