@@ -207,6 +207,7 @@ the reader, or uncertain.
 - True: our `.claude/` holds 12 artifacts, 6 skills and 6 rules,
   and the decisions log.
 - Text: "this repo, whose own `.claude/` holds ten".
+- Ending: fixed, `2bfe201`: no count.
 
 **FINDING-2.** Agreement. Resting on the reader. DECISION-1.
 - Where: `docs/conventions/conventions/README.md`:41;
@@ -227,6 +228,7 @@ the reader, or uncertain.
   holds.
 - Text: "the deliverer's own `.claude/skills/` included — is the
   exchange's, `docs/conventions/exchange/` §1 and §4."
+- Ending: fixed, `2bfe201`: ours are written here, not copies.
 
 **FINDING-4.** Agreement. Checked. Five places.
 - Where: `docs/conventions/conventions/README.md`:216;
@@ -241,6 +243,8 @@ the reader, or uncertain.
 - Text: "loading while a manual is written"; "loading while a
   reading in `temp/` is written"; "loaded while the file is
   written"; "Loads while one is being written".
+- Ending: fixed, `162bfb0` and `98035cd`: all six places say a
+  `paths:` rule loads when its file is read.
 
 **FINDING-5.** Stale lines. Uncertain.
 - Where: `docs/conventions/conventions/README.md`:229-233.
@@ -249,6 +253,9 @@ the reader, or uncertain.
 - Text: "of the fourteen manuals' opening statements".
 - Why uncertain: a dated italic is stale only if it misstates what
   happened, and the count may have been taken before `c6a7bcc`.
+- Ending: declined. A dated lesson is wrong only if it misstates
+  what happened, and it cannot be shown that the count was taken
+  after the redesign's manual went.
 
 **FINDING-6.** Stale lines. Checked.
 - Where: `docs/conventions/conventions/README.md`:283-286.
@@ -256,6 +263,7 @@ the reader, or uncertain.
   the top, not at the close.
 - Text: "`docs/conventions/exchange/` and `docs/conventions/shapes/`
   close with their lists".
+- Ending: fixed, `2bfe201`.
 
 **FINDING-7.** Wiring. Uncertain.
 - Where: `docs/conventions/conventions/README.md`:287-289.
@@ -266,6 +274,7 @@ the reader, or uncertain.
 - Why uncertain: the sentence tells a past event. The path may be
   a name in a story, or a pointer that should read
   `a337674^:docs/master.md`.
+- Ending: fixed, `2bfe201`: cited where git keeps it.
 
 **FINDING-8.** Stale lines. Checked.
 - Where: `docs/conventions/conventions/README.md`:331-336.
@@ -273,6 +282,8 @@ the reader, or uncertain.
   (chapter 02) and `41d4fc3` (chapter 01). There are four runs.
 - Text: "the concept has bent once … Nothing else from three runs
   has reached a chapter".
+- Ending: fixed, `2bfe201`: three bends from four runs, one of
+  them making the concept v2 when released.
 
 #### Layer 2: project-recording
 
@@ -705,6 +716,8 @@ resting on the reader for the rest. Known.
   (`docs/conventions/conventions/` §2). The three manuals say ours
   is identical to the container's.
 - Text: 22 `CBC ADR` citations in files that stay here.
+- Ending: fixed, `2bfe201`, by DECISION-6's line in conventions
+  §2; the three skills are right as they are.
 
 **FINDING-61.** Agreement. Resting on the reader.
 - Where: `.claude/skills/first-time-work/SKILL.md`:16, 24, 37, 45;
@@ -1017,3 +1030,6 @@ narrowed. 81 findings and four decisions remain.
 
 The four decisions chosen by the reviewer, 2026-10-20: DECISION-2,
 3 and 5 as recommended, (a); DECISION-6 as recommended, (b).
+
+Layer 1 worked, 2026-10-20: FINDING-1, 3, 4, 6, 7, 8 and 60 fixed;
+FINDING-5 declined.
