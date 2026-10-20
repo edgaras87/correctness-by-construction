@@ -1,8 +1,9 @@
 # 0059. A retelling may stand, tagged to its source
 
 Date: 2026-10-20
-Status: Proposed (under the commit plan for tagged retelling,
-inside the refinement's round 1).
+Status: Accepted (2026-10-20, at the set's records commit; opened
+Proposed under the commit plan for tagged retelling, inside the
+refinement's round 1).
 
 ## Context
 

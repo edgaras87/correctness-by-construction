@@ -24,26 +24,6 @@
 
 ## Now (current plan step)
 
-- [ ] Decide whether a retelling may stand beside its pointer,
-      kept true by a walk from its source (2026-10-20, the
-      reviewer).
-      Context: `.claude/rules/one-home.md` rule 2 allows a pointer
-      only, and a pointer alone can leave the reader without the
-      picture. A tagged retelling names its source by path and
-      section; a change to the source greps the tags and re-reads
-      each one. Rule 3's summary and `docs/conventions/conventions/`
-      §3.5's walk already do part of this. Round 1's DECISION-3 and
-      its findings on retellings rest on it; FINDING-40 and 41 are
-      tagged retellings that drifted.
-      Ideas:
-      - re-read the paragraph around a changed retelling too; a
-        host that is a source walks on (§3.5, step 5).
-      - count the pointers into a busy source, to price a walk.
-      - retell only where the reader acts on it; point elsewhere.
-      Trigger: the approaches commit plan closes; before round 1's
-      other decisions, as a design change
-      (`.claude/approaches-on-trial/refinement.md` §2.7).
-
 ## Next (upcoming steps — assign each to a step when triaged)
 
 - [ ] Decide whether what a thing is stands apart from the manual
