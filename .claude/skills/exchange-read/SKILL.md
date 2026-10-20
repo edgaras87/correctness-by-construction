@@ -36,7 +36,7 @@ document afterwards is work, not this skill; when the work is done,
 
      ```sh
      git -C "$run" diff <base> -- .claude/skills .claude/rules \
-       .claude/shapes docs/concept
+       .claude/shapes .claude/approaches-on-trial docs/concept
      ```
 
      `<base>` is the run's receipt branch for `P` when it cut one;
