@@ -943,6 +943,9 @@ exchange? Rests: FINDING-22, FINDING-23.
   project-recording.
 - Recommended: (a). The rule's line already says so, and
   agent-arrangement and first-time-work point at it.
+- Chosen: (a), by the reviewer, 2026-10-20. The exchange lists the
+  rule as practice under it, and points at it for how a reading is
+  worked. Fixed in round 1's work, layer 3.
 
 **DECISION-3.** Must every section pointer carry the path?
 Rests: FINDING-36.
@@ -956,6 +959,9 @@ Rests: FINDING-36.
   always names its path and section
   (`docs/conventions/conventions/` §3.2). Still open: whether every
   plain pointer must carry its path.
+- Chosen: (a), by the reviewer, 2026-10-20: every pointer carries
+  its path, but the container's `one-home.md`, which names a manual
+  a run cannot open. Fixed in each layer's work.
 
 **DECISION-4.** Does a manual on trial count among the manuals?
 Rests: FINDING-37.
@@ -974,6 +980,9 @@ Rests: FINDING-37.
 - (b) They fired: each is worked or ended now.
 - Recommended: (a). Run 4 was born by hand, outside our steps,
   and its reading is where its birth is read.
+- Chosen: (a), by the reviewer, 2026-10-20. The three triggers join
+  run 4's reading's TODO item, to be checked there. Moved in round
+  1's work, layer 4.
 
 **DECISION-6.** Our three skills identical to the container's:
 which tag? Rests: FINDING-60.
@@ -983,6 +992,10 @@ which tag? Rests: FINDING-60.
   keeps `CBC ADR`.
 - Recommended: (b). The numbers name the same ADRs, and a diff
   that comes back empty is the cheapest agreement check there is.
+- Chosen: (b), by the reviewer, 2026-10-20. Conventions §2 gains
+  the line; "identical" stays where copies are byte for byte, and a
+  copy that differs names each difference. Fixed in round 1's work,
+  layer 1.
 
 ### Counts
 
@@ -1001,3 +1014,6 @@ Ended by the approaches design change, 2026-10-20
 (`.claude/approaches-on-trial/refinement.md` §2.7): DECISION-1 and
 DECISION-4; FINDING-2, 25, 26, 27, 49, 50 and 62 fixed; FINDING-37
 narrowed. 81 findings and four decisions remain.
+
+The four decisions chosen by the reviewer, 2026-10-20: DECISION-2,
+3 and 5 as recommended, (a); DECISION-6 as recommended, (b).
