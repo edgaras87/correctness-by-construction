@@ -42,7 +42,7 @@
       - retell only where the reader acts on it; point elsewhere.
       Trigger: the approaches commit plan closes; before round 1's
       other decisions, as a design change
-      (`docs/conventions/refinement/` §2.7).
+      (`.claude/approaches-on-trial/refinement.md` §2.7).
 
 ## Next (upcoming steps — assign each to a step when triaged)
 
@@ -162,10 +162,10 @@
       hard to read (2026-10-18, the reviewer).
       Context: a refinement's finding names a broken rule, so text
       that meets the rules stays, even when it could read better
-      (`docs/conventions/refinement/` §2.4). Polish with no rule has
-      no end: a reader asked to look always finds something. The
-      reviewer is the reader the text fails, and asks "explain
-      simpler" after most answers with parts.
+      (`.claude/approaches-on-trial/refinement.md` §2.4). Polish
+      with no rule has no end: a reader asked to look always finds
+      something. The reviewer is the reader the text fails, and asks
+      "explain simpler" after most answers with parts.
       Ideas:
       - each mark is a finding; a file is done when the reviewer
         reads it without a stumble.

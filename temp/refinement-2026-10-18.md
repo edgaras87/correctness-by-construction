@@ -1,7 +1,7 @@
 <!-- The refinement of this repo, opened 2026-10-18 on
      refinement-2026-10-18. Data only: how this file is made is
-     docs/conventions/refinement/ §2. It grows a part at each
-     stage, and goes at the close. -->
+     .claude/approaches-on-trial/refinement.md §2. It grows a part
+     at each stage, and goes at the close. -->
 
 # Refinement, 2026-10-18
 
@@ -574,8 +574,8 @@ reader for the back-link.
 - Where: `ARCHITECTURE.md`:398-401.
 - Text: "**stage** — one phase of a skill". `PLAN.md`'s step form,
   `working-a-reading.md` and this refinement use it wider.
-  `docs/conventions/refinement/` §3 already names this for the
-  refinement's close.
+  `.claude/approaches-on-trial/refinement.md` §3 already names this
+  for the refinement's close.
 
 **FINDING-47.** Wiring. Checked.
 - Where: `TODO.md`:61.

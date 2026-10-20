@@ -128,12 +128,12 @@ corner.
 
 ---
 
-## Step: Refine this repo against its own rules  (`docs/conventions/refinement/`, `first-time-work`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
+## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `first-time-work`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
 
 Goal: Living text written before a rule now meets that rule, and
 project-recording §1 is a map of the records in both seats.
 Now: round 1, what is true: stale lines, wiring, agreement
-(`docs/conventions/refinement/` §2.4).
+(`.claude/approaches-on-trial/refinement.md` §2.4).
 Gate:
 
 **At the opening.**
@@ -143,35 +143,36 @@ Gate:
 - [x] This gate was written before the work started (2026-10-18).
 - [x] No skill, rule or earlier work says how to refine, so the
       step opened a provisional manual,
-      `docs/conventions/refinement/README.md`, marked *on trial*
+      `2e9c26b:docs/conventions/refinement/README.md`, marked *on trial*
       (`first-time-work`; 2026-10-18, `2e9c26b`).
 
 **The step's own items.**
 
 - [x] The refinement's file holds every kind the TODO item asked
       for, each in its round, and the reviewer confirmed them
-      (`docs/conventions/refinement/` §2.1; 2026-10-19, again
-      with Wiring).
+      (`.claude/approaches-on-trial/refinement.md` §2.1; 2026-10-19,
+      again with Wiring).
 - [x] The refinement's file lists every living file in exactly one
-      layer (`docs/conventions/refinement/` §2.2; 2026-10-19).
+      layer (`.claude/approaches-on-trial/refinement.md` §2.2;
+      2026-10-19).
 - [x] Before round 1, no rule among the refinement's kinds was in
       doubt, or each doubt was tried on a sample and ended; the
       refinement's file says which
-      (`docs/conventions/refinement/` §2.3; 2026-10-19).
+      (`.claude/approaches-on-trial/refinement.md` §2.3; 2026-10-19).
 - [ ] Every kind in the refinement's file was read in its round
       across all living text, and each read names the files it
       covered.
 - [ ] Every finding has the reviewer's ending: fixed, declined
       with its reason, or a TODO item.
 - [ ] The last read found nothing that breaks a rule
-      (`docs/conventions/refinement/` §2.9).
+      (`.claude/approaches-on-trial/refinement.md` §2.9).
 - [ ] project-recording §1 shows in one view which record answers
       what, in both seats. It includes `RETRO.md`, `COMMIT-PLAN.md`,
       `docs/system/`, and records another convention owns.
 - [ ] The records map's form was chosen by `visual-comparison`,
       and that skill's gates hold for it.
 - [ ] Each round's close read has its counts
-      (`docs/conventions/refinement/` §2.8).
+      (`.claude/approaches-on-trial/refinement.md` §2.8).
 - [ ] The reviewer chose the manual's lasting form, and an ADR
       records it with the ways rejected at the opening
       (`.claude/approaches-on-trial/approach-evaluation.md`).
@@ -200,7 +201,7 @@ Notes:
 - Opened 2026-10-18 from TODO's refinement item. The records map
   item joined it, as its trigger asked. Both items, with their
   Ideas, are in `TODO.md` at `b3b2018`.
-- Stages, from `docs/conventions/refinement/` §2:
+- Stages, from `.claude/approaches-on-trial/refinement.md` §2:
   1. before round 1: group the kinds into rounds, which creates
      the refinement's file; list the files by layer; check the
      rules (§2.1 to §2.3). The reviewer confirms the kinds, their
