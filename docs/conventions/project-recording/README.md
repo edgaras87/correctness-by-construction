@@ -12,18 +12,21 @@ newcomer, future-you, or the deliverer, which reads a run through
 its records and nothing else (`docs/conventions/exchange/` §6.1).
 Adopted with the container (ADR-0038, 1d for the README's
 moment); no failure of the deliverer's is recorded before it. Lived
-since: three runs kept their records under these stubs, and every
+since: four runs kept their records under these stubs, and every
 reading of run 3 has been a reading of its decisions log, its
 backlog and its devlog — the need proved by being the only channel
 there is.
 
 ## What this is made usable as
 
-- **The record stubs, shipped**, in `delivery/container/`:
-  `README.md`, `PLAN.md`, `TODO.md`, `CHANGELOG.md`,
-  `ARCHITECTURE.md`, `docs/adr/0001-record-architecture-decisions.md`
-  and `devlog/devlog.md`. Each carries its own rules as comments,
-  met when the file is opened; each is the run's own from birth.
+- **The record stubs, shipped**: `delivery/container/README.md`,
+  `delivery/container/PLAN.md`, `delivery/container/TODO.md`,
+  `delivery/container/CHANGELOG.md`,
+  `delivery/container/ARCHITECTURE.md`,
+  `delivery/container/docs/adr/0001-record-architecture-decisions.md`
+  and `delivery/container/devlog/devlog.md`. Each carries its own
+  rules as comments, met when the file is opened; each is the run's
+  own from birth.
 - **The records table in the entry file,
   `delivery/container/.claude/CLAUDE.md`** — this convention's one
   stake in a file `docs/conventions/agent-arrangement/` owns (§13):
@@ -34,9 +37,14 @@ there is.
   shipped**, held at `.claude/rules/one-home.md` with no `paths:`,
   so it loads at the start of every session: §11, rule 1.
 - **`.claude/rules/one-home.md` — the deliverer's**, derived from
-  §11 like the container's, its examples this repo's.
-- **The deliverer's own records**, derived from this page as the
-  stubs are, and never copied from them (ADR-0042).
+  §11 like the container's. It differs in four things: its scope
+  takes in manuals, skills and rules; its rule 1 points at
+  `docs/conventions/conventions/` §3.1; it allows a tagged
+  retelling (ADR-0059); and its examples are this repo's.
+- **The deliverer's own records**: `README.md`, `PLAN.md`,
+  `TODO.md`, `CHANGELOG.md`, `ARCHITECTURE.md`, `docs/adr/` and
+  `devlog/`, derived from this page as the stubs are, and never
+  copied from them (ADR-0042).
 
 This page explains the records; the stubs state the rules. Only the
 one-home rule, on each side, is loaded into an agent, in every
@@ -81,12 +89,13 @@ being done now, and below it any step stopped for it.
 What makes work a step, and the step's form, the run's adapted to
 this seat, are under `## The step form` at the top of the
 deliverer's own `PLAN.md`. TODO's Now holds what is due while the
-step is open, never the step itself. A step's gate takes the gates
-of the skills and rules it uses, as a run's does, and the rest is
-written from the form when the step opens. A finished step leaves
-the plan, and the devlog entry that closes it names the step and the
-commit of its ticked gate. A run keeps its finished steps whole,
-because they are the evidence its playbook is folded from; no
+step is open, never the step itself. A step's own gate items are
+written first, from its goal; the gates of the skills and rules it
+uses are then checked against them (ADR-0057). A finished step
+leaves the plan, and the devlog entry that closes it names the step
+and the commit of its ticked gate. A run keeps its finished steps
+in its plan, each closed to one line, because they are the evidence
+its playbook is folded from; no
 playbook is folded from the deliverer's own plan, so its finished
 steps are only history, which is the devlog's. For the same reasons,
 folding lessons back and re-reading the entry file close every
@@ -158,7 +167,7 @@ read them cover to cover.
 repo/
 ├── README.md
 ├── .claude/
-│   └── CLAUDE.md             (the entry file: agent-arrangement §2)
+│   └── CLAUDE.md             (the entry file)
 ├── PLAN.md
 ├── CHANGELOG.md
 ├── TODO.md
@@ -172,7 +181,8 @@ repo/
     └── 2026-08.md            (one file per month, or devlog.md if small)
 ```
 
-The playbook is absent on purpose: it lives in the repo that owns the
+The entry file is `docs/conventions/agent-arrangement/` §2's. The
+playbook is absent on purpose: it lives in the repo that owns the
 project type, never in a project born from it (§9).
 
 Everything is Markdown, in the repo, versioned with git. That is itself a
@@ -202,16 +212,20 @@ Repo root, `PLAN.md`. One per project.
 ### 2.4 How
 
 - Statuses: `[ ]` planned, `[~]` in progress, `[x]` done (+date), `[!]`
-  blocked (+what unblocks it), `[-]` skipped (+why).
+  blocked (+what unblocks it) or stopped (+the step first), `[-]`
+  skipped (+why).
 - A gate is a checklist of verifiable facts, not intentions: "tests pass on
   a clean clone," not "code is good."
-- When a step closes, add a one-line note of what actually happened,
-  especially if it diverged from the estimate — this is retro fuel.
+- When a step closes, its gate is replaced by one line: the date,
+  what the step delivered, and the commit that holds the ticked
+  gate. Say there what diverged from the estimate — this is retro
+  fuel.
 - Steps link outward: "Decisions: ADR-nnnn," "see devlog 2026-08-14."
 - **A step can stop when another must come first.** It is not done
-  and not dropped. It keeps its place, its ticked items and the
-  stage it stopped at, so it resumes where it was instead of
-  starting again or closing unfinished. Its mark is `[!]`, naming
+  and not dropped. It keeps its place and the stage it stopped at,
+  and resumes there, not from the start: a stage whose input the
+  other step changed runs again, and a ticked item stays ticked
+  unless the other step made it untrue. Its mark is `[!]`, naming
   the step that comes first and pointing at the devlog entry that
   says why. How a step stops and resumes is the step form's: the
   playbook's, and in the deliverer's seat its own `PLAN.md`'s.
@@ -221,9 +235,10 @@ Repo root, `PLAN.md`. One per project.
 ### 2.5 When
 
 Created at project start; its steps arrive whole from a playbook at
-birth and are confirmed at Framing — the middles written fresh there
-when the project was born without one (§9); touched every working
-session — updating it *is* part of the work, not paperwork after it.
+birth and are confirmed once the problem is framed — the middles
+written fresh then when the project was born without one (§9);
+touched every working session — updating it *is* part of the work,
+not paperwork after it.
 
 ### 2.6 Anti-patterns
 
@@ -663,8 +678,8 @@ else did.*
 ### 9.1 What
 
 The reusable, versioned template distilled from completed plans of
-the same project type: the full step sequence, gates, and
-accumulated "warnings from past runs."
+the same project type: the full step sequence, gates, and what
+past runs taught each step.
 
 ### 9.2 Why
 
@@ -685,15 +700,16 @@ with a note of which project last updated it.
 
 The full sequence, first step to last. The plan's stub prescribes no
 step; a playbook prescribes them all. Each step keeps the plan's
-form — a goal, a gate of verifiable facts, the records expected —
-plus its own "Warnings from past runs"; its Release step carries the
-type's own release facts. The lifecycle:
+form — a goal, a gate of verifiable facts — and what past runs
+taught it, as its *Known already*: items its gate takes when the
+step opens. Its Release step carries the type's own release facts.
+The lifecycle:
 
 1. **Birth:** whoever births the project copies the chosen playbook
    whole into PLAN.md; the plan's "Steps from" line records which
    and at what version. Born without one, the stub's placeholders
    are filled in place.
-2. **Framing:** confirm the steps against the framed problem — fill
+2. **Once the problem is framed:** confirm the steps against it — fill
    specifics, delete what this project has no use for, add what it
    needs, renumber; author the steps if the project was born
    without one.
@@ -701,7 +717,8 @@ type's own release facts. The lifecycle:
    `RETRO.md`, each decision naming where its lesson lands
    (`docs/conventions/retrospective/`).
 4. **Fold back:** each surviving lesson becomes a changed gate, a new
-   step, or a warning line in the playbook where it lives — the plan's
+   step, or a line under a step's *Known already* in the playbook
+   where it lives — the plan's
    "Steps from" line names it; bump its version there. Framing
    and Release lessons fold into the playbook's own copies of those
    steps — they have a home now.
