@@ -22,7 +22,7 @@
      today — never stack a dated update on it; the change's story is
      the devlog's. -->
 
-## Now (current plan step)
+## Now (due while the open step runs)
 
 ## Next (upcoming steps — assign each to a step when triaged)
 

@@ -95,9 +95,10 @@ different things because of it: the run holds the receiver's rule,
 own edits, and what it may do to one meanwhile; the deliverer holds
 the deliverer's skills and the form of the reading they produce.
 Neither holds the other's half, because neither could run it. The
-two rules every session loads differ by the job too: the
-deliverer's writing rule covers what runs read, since it writes
-it, and both take their examples from their own side.
+two rules every session loads differ by the job too, and each
+manual names how in its list of what derives from it:
+`docs/conventions/writing/` and
+`docs/conventions/project-recording/`.
 
 *Until 2026-09-26 the deliverer held the receiver's protocol,
 `convention-lifecycle`, and had never once run it — its registry

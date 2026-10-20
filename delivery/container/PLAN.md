@@ -1,12 +1,12 @@
 # Plan: <project name>
 
 <!-- The stub ships the pure shape: the steps below are placeholders
-     showing the form — a goal, a gate of verifiable facts, the records
-     expected. At birth the seed replaces the region between
-     the STEPS markers with a playbook's full sequence — a concept's;
-     the playbook itself stays where it came from. Born
-     without one, fill the placeholders in place. Either way the two
-     STEPS markers stay: they are what makes the swap re-runnable. -->
+     showing the form — a goal, a gate of verifiable facts. At birth
+     the seed replaces the region between the STEPS markers with a
+     playbook's full sequence — a concept's; the playbook itself
+     stays where it came from. Born without one, fill the
+     placeholders in place. Either way the two STEPS markers stay:
+     they are what makes the swap re-runnable. -->
 
 <!-- Steps from: <playbook> v<N> at <concept commit>,
      copied at birth. Filled in place at birth; this comment stays —
@@ -29,8 +29,6 @@ Goal: <one sentence>.
 Gate:
 - [ ] <verifiable fact, not an intention>
 - [ ] <verifiable fact>
-Records: <records this step is expected to produce: ADRs, README
-sections, …>.
 Notes:
 
 ## Step: <next step>
@@ -39,7 +37,6 @@ Goal: <one sentence>.
 Gate:
 - [ ] <criterion>
 - [ ] <criterion>
-Records: <ADRs expected here, if any>.
 Notes:
 
 ## Step: <coarse placeholder — detail when a project reaches it>
