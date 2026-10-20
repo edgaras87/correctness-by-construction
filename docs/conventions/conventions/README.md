@@ -222,9 +222,10 @@ The form was not designed. `docs/conventions/exchange/` and
 `docs/conventions/shapes/` grew the same sections with nothing
 telling either writer to: a pair recurred, the test a shape is
 written by (`docs/conventions/shapes/` §1). It is held as a rule
-today, loading while a manual is written (ADR-0052); whether it
-becomes a shape read at a step's gate, now that this repo has steps
-(ADR-0057), is open (TODO). It grows the same way and no other:
+today, loading when a manual is read, not while a new one is
+written (`docs/conventions/agent-arrangement/` §3.2; ADR-0052);
+whether it becomes a shape read at a step's gate, now that this
+repo has steps (ADR-0057), is open (TODO). It grows the same way and no other:
 the list is the floor, and content that fits none of it takes its
 own heading in the body, where a section two
 manuals need becomes the next candidate. A rule, a term or a

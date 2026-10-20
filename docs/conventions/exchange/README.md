@@ -36,9 +36,9 @@ arrangements, each side holding only what it runs
   preceded it or not. Birth is a delivery into the root plus the
   fills, and `delivery/installs/pure-seed.md` keeps that.
 - **`.claude/rules/exchange-reading.md` — the reading's form, the
-  deliverer's**, loading while a reading in `temp/` is written. What
-  `exchange-read` writes, and what the work then fills, to one
-  form.
+  deliverer's**, loading when a reading in `temp/` is read, not
+  while a new one is written. What `exchange-read` writes, and what
+  the work then fills, to one form.
 
 No artifact explains anything. What derives from this page is that
 list. A change here walks it; a change forced in one of them is
@@ -522,8 +522,10 @@ when the moment arrives instead of waiting to be opened by name:
 the failure the receiver's protocol had since the day it shipped.
 The deliverer's two skills open on the reviewer's word, "read" or
 "deliver", which is a moment the agent is told rather than one it
-must notice. The reading's form loads by path while a reading is
-written.
+must notice. The reading's form loads by path when a reading is
+read, so it is in view while the list is worked; a reading written
+new is written without it (`docs/conventions/agent-arrangement/`
+§3.2).
 
 ## What this does not cover
 

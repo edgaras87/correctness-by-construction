@@ -57,8 +57,9 @@ it arrived at by keeping it and pointing at it from its backlog.
 
 The deliverer makes outputs too — a reading is one — and its steps
 have gates since ADR-0057. Its own forms are rules today, with a
-Governs line, loaded while the file is written; whether they become
-shapes read at a step's gate is open (TODO). It holds the shapes it
+Governs line, loaded when the file is read, not while a new one is
+written; whether they become shapes read at a step's gate is open
+(TODO). It holds the shapes it
 ships, each in the group of what it shapes (§4), and reads a run's
 shapes when it reads the run.
 
