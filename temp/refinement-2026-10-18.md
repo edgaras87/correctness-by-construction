@@ -291,6 +291,7 @@ the reader, or uncertain.
 - Where: `docs/conventions/project-recording/README.md`:14-16.
 - True: four runs kept their records under the stubs.
 - Text: "three runs kept their records under these stubs".
+- Ending: fixed, `f1c02a7`.
 
 **FINDING-10.** Wiring. Checked for the records; resting on the
 reader for the stubs.
@@ -301,6 +302,7 @@ reader for the stubs.
 - Text: "**The deliverer's own records**, derived from this page
   as the stubs are" names no record. The stubs are bare names
   after "in `delivery/container/`:".
+- Ending: fixed, `f1c02a7`: the stubs and our records by path.
 
 **FINDING-11.** Agreement. Checked. Known.
 - Where: `docs/conventions/project-recording/README.md`:80-81,
@@ -314,6 +316,8 @@ reader for the stubs.
     should mirror the current plan step's remaining work";
   - `PLAN.md`: "TODO never repeats the open step", and nothing on
     what Now holds.
+- Ending: fixed, `a794f32`: TODO's Now heading says what our seat
+  does; §5.4's form stays the run's.
 
 **FINDING-12.** Agreement. Checked. Known.
 - Where: `docs/conventions/project-recording/README.md`:203-209;
@@ -324,6 +328,8 @@ reader for the stubs.
   and keeps its ticked items. `PLAN.md`: "any stage whose input the
   other step changed runs again", and a ticked item stays "unless
   the other step made it untrue".
+- Ending: fixed, `f1c02a7`, to the step form, as lived when the
+  refinement resumed.
 
 **FINDING-13.** Agreement. Resting on the reader.
 - Where: `docs/conventions/project-recording/README.md`:81-83;
@@ -332,12 +338,14 @@ reader for the stubs.
   the skills' gates against them; one already met adds nothing.
 - Text: the seat, "A step's gate takes the gates of the skills and
   rules it uses … and the rest is written from the form".
+- Ending: fixed, `f1c02a7`, to ADR-0057.
 
 **FINDING-14.** Stale lines. Checked.
 - Where: `docs/conventions/project-recording/README.md`:196-197.
 - True: since `5dbe71f` both legends read "`[!]` blocked (+what
   unblocks) or stopped (+the step first)".
 - Text: "`[!]` blocked (+what unblocks it)".
+- Ending: fixed, `f1c02a7`.
 
 **FINDING-15.** Agreement. Checked.
 - Where: `docs/conventions/project-recording/README.md`:36-37;
@@ -347,6 +355,8 @@ reader for the stubs.
   and in a clause of rule 1 (a convention's subject lives in its
   manual).
 - Text: "its examples this repo's", as the only difference.
+- Ending: fixed, `f1c02a7` and `a794f32`: four differences named in
+  project-recording, agent-arrangement pointing there.
 
 **FINDING-16.** Agreement. Resting on the reader.
 - Where: `docs/conventions/project-recording/README.md`:85-87,
@@ -354,6 +364,7 @@ reader for the stubs.
 - Text: the seat, "A run keeps its finished steps whole"; §2.4,
   "add a one-line note". The playbook: "the next commit replaces
   the gate with one line".
+- Ending: fixed, `f1c02a7`, to the playbook's one closing line.
 
 **FINDING-17.** Agreement. Checked.
 - Where: `docs/conventions/project-recording/README.md`:215-217;
@@ -361,6 +372,7 @@ reader for the stubs.
 - Text: §2.5, the steps "are confirmed at Framing". The playbook
   reads the plan against the framing at Step 2, Identity. Step 1
   has no such item.
+- Ending: fixed, `f1c02a7`: confirmed once the problem is framed.
 
 **FINDING-18.** Agreement. Checked.
 - Where: `docs/conventions/project-recording/README.md`:678-682;
@@ -369,6 +381,8 @@ reader for the stubs.
 - Text: §9.4, each step keeps "the records expected" and its own
   "Warnings from past runs". The playbook's form has neither: its
   lessons come as "Known already". The PLAN stub keeps `Records:`.
+- Ending: fixed, `f1c02a7` and `a794f32`: a playbook step's lessons
+  as *Known already*; the stub's form a goal and a gate.
 
 #### Layer 3: the other manuals, the models, the concept
 
@@ -525,6 +539,8 @@ reader for the back-link.
 - Text: "project-recording §1", "conventions §3.2", "model
   §10.6". Every number lands on a fitting heading; most name the
   path earlier in the paragraph.
+- Narrowed, `f1c02a7`: project-recording's tree pointer moved out of
+  the diagram, by path. The rest waits for layers 3, 4 and 6.
 
 #### Layer 4: `ARCHITECTURE.md`, `README.md`, the records
 
@@ -1033,3 +1049,6 @@ The four decisions chosen by the reviewer, 2026-10-20: DECISION-2,
 
 Layer 1 worked, 2026-10-20: FINDING-1, 3, 4, 6, 7, 8 and 60 fixed;
 FINDING-5 declined.
+
+Layer 2 worked, 2026-10-20: FINDING-9 to 18 fixed; FINDING-36's
+project-recording part fixed.
