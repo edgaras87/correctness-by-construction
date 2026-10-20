@@ -184,23 +184,20 @@
       Context: conventions §2 says how a skill or rule is written,
       and nothing puts it in front of the writer: a manual has
       `convention-manual.md`, a skill or rule has no such rule.
-      First-time work writes freely, and its output is input: what
-      the work needed. The lasting form comes from the conventions
-      convention, the manual by §3 and each skill or rule from it
-      by §2.
+      An approach on trial writes freely, and its pieces are input:
+      what the work needed. When an evaluation places one, the
+      lasting form comes from the conventions convention, the
+      manual by §3 and each skill or rule from it by §2.
       Ideas:
       - a rule derived from §2, as `convention-manual.md` is from
         §3, on `.claude/skills/`, `.claude/rules/` and `delivery/`.
       - a `paths:` rule loads only on a Read; the commit is the
         other moment (`.claude/decisions.md`, 2026-10-17).
-      - first-time work's close hands its output to the rule, in
-        both seats.
-      - our draft moves out of `docs/conventions/` to be free;
-        ADR-0056 put it there, on trial.
-      - shipped or ours only: a run writes no conventions, so its
-        draft may stay free until a reading rewrites it.
-      Trigger: the next first-time work's close, here or offered by
-               a run.
+      - `approach-evaluation`'s placing hands each piece to the
+        rule, for an approach of ours and of a run's alike.
+      Trigger: the first evaluation that places a piece as a skill
+               or rule, at stage 5 of
+               `.claude/approaches-on-trial/approach-evaluation.md`.
       See: devlog 2026-10-17, later, the skill rewrite.
 
 - [ ] Rewrite the method's texts plain (2026-10-17, run 3's RETRO
@@ -250,8 +247,8 @@
       (Variant B, ADR-0018): nothing forces the newborn to read
       what it was given, and the first commit on main is the only
       evidence the reading took.
-      Ideas: first-time work on our seat, so a provisional manual,
-             `first-time-work`'s first trial here (ADR-0056).
+      Ideas: first-time work on our seat, so an approach on trial
+             drafted by `approach-drafting` (ADR-0058).
       Trigger: the reviewer names run 5's birth; it opens as a step.
       See: devlog 2026-09-26, evening; and 2026-09-30, night,
       later, where `pure-seed.md` was brought up to date for it.
@@ -395,6 +392,10 @@
       is real only once there is a rule we would deliver that way.
       Run 3's RETRO D4 says a trial names the close that judges it,
       and the step form says so since `0cdc50c`.
+      Ideas:
+      - ship it as an approach on trial: in force only when a step
+        takes it as its approach, and each use comes back as a note
+        (ADR-0058).
       Trigger: a rule we would ship that one run alone has lived.
       See: devlog 2026-10-08.
 
