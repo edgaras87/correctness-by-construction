@@ -3,7 +3,9 @@
 Date: 2026-10-16
 Status: Accepted (2026-10-16, at the set's records commit; opened
 Proposed under the commit plan for first-time work). Decision 6
-amended 2026-10-17 by ADR-0057: ours opens at a step too.
+amended 2026-10-17 by ADR-0057: ours opens at a step too. Decisions
+1, 2, 3, 5 and 6 superseded, and 7 amended, 2026-10-20 by ADR-0058:
+work never done starts from an approach on trial.
 
 ## Context
 

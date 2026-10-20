@@ -1,9 +1,11 @@
 # 0058. New work starts from an approach on trial
 
 Date: 2026-10-20
-Status: Proposed (under the commit plan for approaches, inside the
+Status: Accepted (2026-10-20, at the set's records commit; opened
+Proposed under the commit plan for approaches, inside the
 refinement's round 1). Supersedes ADR-0056 decisions 1, 2, 3, 5 and
-6; amends its decision 7, as ADR-0057 carried it into our step form.
+6, and ADR-0057 decision 5; amends ADR-0056 decision 7, as ADR-0057
+carried it into our step form.
 
 ## Context
 

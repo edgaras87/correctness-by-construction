@@ -5,7 +5,10 @@ Status: Accepted (2026-10-17, at the set's records commit; opened
 Proposed under the commit plan for plan steps, and revised at two
 boundaries on the reviewer's questions — a step takes the gates of
 the skills and rules it uses, so a reading's live in its rule, and
-its own items are written first, the gates checked after)
+its own items are written first, the gates checked after). Decision
+5 superseded 2026-10-20 by ADR-0058: our `first-time-work` skill
+went, and a step's opening item sends the agent to
+`approach-drafting`.
 
 ## Context
 
