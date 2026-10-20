@@ -128,7 +128,7 @@ corner.
 
 ---
 
-## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `first-time-work`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
+## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
 
 Goal: Living text written before a rule now meets that rule, and
 project-recording §1 is a map of the records in both seats.
@@ -141,10 +141,11 @@ Gate:
 - [x] The step's branch `refinement-2026-10-18` is cut from main,
       and nothing of the step was done on main (2026-10-18).
 - [x] This gate was written before the work started (2026-10-18).
-- [x] No skill, rule or earlier work says how to refine, so the
-      step opened a provisional manual,
-      `2e9c26b:docs/conventions/refinement/README.md`, marked *on trial*
-      (`first-time-work`; 2026-10-18, `2e9c26b`).
+- [x] No skill, rule or earlier work said how to refine, so the
+      step opened a provisional manual by first-time work,
+      `2e9c26b:docs/conventions/refinement/README.md`, marked *on
+      trial* (2026-10-18). Since ADR-0058 it is the approach on
+      trial `.claude/approaches-on-trial/refinement.md`.
 
 **The step's own items.**
 
@@ -173,11 +174,13 @@ Gate:
       and that skill's gates hold for it.
 - [ ] Each round's close read has its counts
       (`.claude/approaches-on-trial/refinement.md` §2.8).
-- [ ] The reviewer chose the manual's lasting form, and an ADR
-      records it with the ways rejected at the opening
+- [ ] The refinement's approach is evaluated: each piece has the
+      reviewer's ending, and an ADR records them with the ways
+      rejected at the opening
       (`.claude/approaches-on-trial/approach-evaluation.md`).
-- [ ] `first-time-work`'s trial on our seat has its verdict, in one
-      line: kept, changed or dropped.
+- [ ] The trials of `approach-drafting` and `approach-evaluation`
+      on our seat have their verdicts, one line each: kept, changed
+      or dropped.
 
 **At the close.**
 
@@ -211,15 +214,16 @@ Notes:
   3. the last read, repeated until it finds nothing;
   4. the close: the refinement's file goes, then
      `.claude/approaches-on-trial/approach-evaluation.md` evaluates
-     the manual.
+     the refinement's approach.
 - The records map is round 2's, in project-recording's layer, its
   form chosen by `visual-comparison`.
-- When the work shows the manual wrong, the manual changes first,
-  in a commit of its own
+- When the work shows the approach wrong, it changes first, in a
+  commit of its own
   (`.claude/approaches-on-trial/approach-drafting.md`, stage 2).
-- The first use of `first-time-work` on our seat. This step's
-  close judges it.
+- The first use of first-time work on our seat, which ADR-0058
+  made `approach-drafting`, and the first of `approach-evaluation`.
+  This step's close judges both.
 - The reviewer signs: the kinds, their rounds, the layers and the
   rules, before round 1;
-  each finding's ending; every commit, at its boundary; the
-  manual's lasting form; main taking the branch.
+  each finding's ending; every commit, at its boundary; each
+  ending of the approach's evaluation; main taking the branch.
