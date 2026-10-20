@@ -52,7 +52,7 @@ only pointers (§3.1):
   person and for the maintainer. Never shipped, never loaded into an
   agent by default.
 - **Its artifacts**: what a project actually holds — a run, or this
-  repo, whose own `.claude/` holds ten. A skill file for
+  repo, which keeps its own under `.claude/`. A skill file for
   a rule bound to a moment; a rule file for a rule bound to a path,
   or, with no path, to every task;
   stubs and templates for rules that ride in the files a project is
@@ -60,8 +60,9 @@ only pointers (§3.1):
   are real files in the container, `delivery/container/`.
 
 Which copy of an artifact is the master, and how every other copy
-changes — the deliverer's own `.claude/skills/` included — is the
-exchange's, `docs/conventions/exchange/` §1 and §4.
+changes, is the exchange's, `docs/conventions/exchange/` §1 and §4.
+The deliverer's own skills and rules are not copies: it writes its
+own (`docs/conventions/agent-arrangement/` §3.1).
 
 **What a convention asserts**, and what falsifies it
 (ADR-0031): that this is a rule and not a method — *the work may
@@ -87,7 +88,9 @@ opening it at the moment of use.
   here — the tag is project-recording's rule,
   `docs/conventions/project-recording/` §3.5 — and a decision this
   repo inherited is adopted before a shipped file cites it
-  (ADR-0038). A stub cites nothing.
+  (ADR-0038). A file of ours byte-identical to its shipped master
+  keeps `CBC ADR-nnnn`, so one diff still checks the pair; the tag
+  names this repo either way. A stub cites nothing.
 - Say what a rule is not only when a consumer lived the misreading,
   and then name the run.
 - A worked example in a code block is exempt from all of this.
@@ -289,13 +292,13 @@ is stated:
    changes, the walk runs again.
 
 Steps 1, 2 and the greps in 3 are checkable today: every shipped
-skill and rule carries `foundation`, `docs/conventions/exchange/` and
-`docs/conventions/shapes/` close with their lists, and a path and
+skill and rule carries `foundation`, every manual names what
+derives from it in *What this is made usable as*, and a path and
 a `foundation` value are tokens (§2). The rest ran twice by hand
 before this was a rule — the correspondence check of 2026-09-25,
-and the walk of
-`docs/master.md` at the exchange plan's close — both because the
-reviewer asked, not because anything made anyone look. Since
+and the walk of `a337674^:docs/master.md` at the exchange plan's
+close — both because the reviewer asked, not because anything made
+anyone look. Since
 2026-10-17, `.claude/rules/foundation-check.md` makes this repo
 look before every such commit. Where a
 manual and the concept are handled differently — versioning,
@@ -336,12 +339,15 @@ against the text as shipped. ADR-0035: run 3 made a thing the
 vocabulary had no word for; the vocabulary gained one, and the
 next day went, on the same evidence read further. `cbc-slice`,
 three times: every in-place edit run 3 made to the method was
-taken whole. And the concept has bent once: chapter 03's sentence
-on when technology enters was corrected from the runs (`211bd0f`),
-an editorial fix that left it at v1. Nothing else from three runs
-has reached a chapter — either evidence it is right or evidence
-nothing has been read against it hard enough, and this page does
-not know which.*
+taken whole. And the concept has bent from the runs three times.
+Twice editorially, leaving it at v1: chapter 03's sentence on when
+technology enters (`211bd0f`), and chapter 01's layer tags in full
+words, from run 3's RETRO D6 (`41d4fc3`). Once in substance:
+chapter 02's top rung of the walls, which run 3 met at SL-3, makes
+the concept v2 when it is released (`86ed0c4`, ADR-0048). Nothing
+else from four runs has reached a chapter — either evidence it is
+right or evidence nothing has been read against it hard enough, and
+this page does not know which.*
 
 ### 3.7 A lesson taken
 
