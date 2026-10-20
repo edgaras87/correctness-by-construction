@@ -44,9 +44,12 @@ others are not.
    outright when one side has none.
 5. **The body**, numbered sections, free prose. Pointers to other
    conventions as paths from the repo root, never a restatement
-   of their subject. A section divided into labelled parts numbers
-   them, `### N.M`, and so does every section of the same form in
-   the manual; emphasis in prose is not a part
+   of their subject, but for a retelling tagged to its section
+   where the reader acts on it in place
+   (`docs/conventions/conventions/` §3.1). A section divided into
+   labelled parts numbers them, `### N.M`, and so does every
+   section of the same form in the manual; emphasis in prose is
+   not a part
    (`docs/conventions/conventions/` §3.2). Each numbered section
    holds one subject, and a subject has one section; other
    sections point at it (`docs/conventions/conventions/` §3.3).
