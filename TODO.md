@@ -65,7 +65,7 @@
         future-proofing and complexity.
       Trigger: before round 2 reads, beside its Layout kind.
       See: devlog 2026-10-20, later; 2026-10-19, the redesign's
-      ideas.
+      ideas; `temp/ideas-2026-10-20.md` §1.
 
 - [ ] Decide how an approach and a shape divide an output: the
       approach says what is done, the shape how its output looks
@@ -93,7 +93,7 @@
         the gap.
       Trigger: `approach-drafting`'s first evaluation, at the
                refinement's close.
-      See: devlog 2026-10-20, later.
+      See: devlog 2026-10-20, later; `temp/ideas-2026-10-20.md` §2.
 
 - [ ] Choose whether a manual is called a concept (2026-10-19, the
       reviewer).
@@ -196,7 +196,7 @@
       Trigger: run 4's reading, which reads how run 4 lived run 3's
                shapes.
       See: devlog 2026-10-17, our forms as shapes; 2026-10-20,
-      later, layouts.
+      later, layouts; `temp/ideas-2026-10-20.md` §3.
 
 - [ ] Try a readability pass, the reviewer marking where text is
       hard to read (2026-10-18, the reviewer).
