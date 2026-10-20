@@ -1156,3 +1156,13 @@
   PLAN's step form closes a step the same way (`49d06e6`).
   Rejected: the devlog on the branch, its Resume written ahead of
   the fast-forward (a record of what has not happened yet).
+
+- 2026-10-20 Work never done before starts from an approach on
+  trial, `.claude/approaches-on-trial/<work>.md`. This repo holds
+  `approach-drafting.md` in place of its `first-time-work` skill.
+  Why: ADR-0058. The approach is one file, read when a step's
+  opening item finds no skill or rule for the work; no skill
+  description is needed for that moment.
+  Rejected: keeping the skill beside the approach, to catch a small
+  TODO item outside a step (two texts for one way; the approach
+  notes the gap as not known yet).
