@@ -154,6 +154,15 @@ section by section, top to bottom, fixing in place.
   are spread over many sections, with no one place. Not a finding:
   "The seats" is this manual's own seats and §3.4 the rule for
   every manual's, two subjects, checked 2026-10-19.
+- **Its candidate fix, named 2026-10-20 (ADR-0059):** staying in
+  step becomes a convention of its own. Its manual holds the
+  general idea: one home, followers and their tags, the re-read on
+  change, the walk, a disagreement. Today these sit in
+  project-recording §11 and conventions §3.1, §3.2, §3.5 and §3.6.
+  Then a rule for each case: ours, manuals tagged by path and
+  section and re-read by the walk before every commit; a run's,
+  its invariants, kills and slices tagged by id; and records
+  linking records.
 
 ## Round 1: what is true
 
@@ -943,6 +952,10 @@ Rests: FINDING-36.
 - Recommended: (a), but for a shipped file that names a deliverer
   manual a run cannot open (`one-home.md`), which is declined.
   §3.2's reason is the grep, and a name escapes it.
+- Narrowed by ADR-0059 (`e9109a6`): a pointer beside a retelling
+  always names its path and section
+  (`docs/conventions/conventions/` §3.2). Still open: whether every
+  plain pointer must carry its path.
 
 **DECISION-4.** Does a manual on trial count among the manuals?
 Rests: FINDING-37.
