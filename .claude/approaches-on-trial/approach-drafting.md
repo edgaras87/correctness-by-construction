@@ -23,8 +23,8 @@ A step's opening items ask this.
 
 First ask: **is it new, or a gap in a skill, rule or approach this
 project holds?** A gap is an edit to that file, and this approach
-stops here. In a run, a skill or rule is a delivered copy, edited
-under `.claude/rules/delivered-copies.md` rule 2.
+stops here. In a run, how a delivered copy is edited is
+`.claude/rules/delivered-copies.md`'s.
 
 ## Stages
 
@@ -45,8 +45,8 @@ under `.claude/rules/delivered-copies.md` rule 2.
 
    Write it for this work, in its own terms. Nothing is made general
    yet: what is general shows only once the work is done.
-4. **If the work is a step,** its Notes list the same stages, and
-   its gate is written now, as the step form says.
+4. **If the work is a step,** what its Notes and gate take from
+   the approach is `PLAN.md`'s step form's.
 
 ### 2. Work
 
@@ -56,7 +56,7 @@ under `.claude/rules/delivered-copies.md` rule 2.
 - **Each change is a commit of its own.** Its body says what the
   work taught, and names the commit where the work showed it. The
   approach is an agent file and the work a project file, so the two
-  never share a commit.
+  never share a commit (`commit-messages`).
 
 ### 3. Close
 
