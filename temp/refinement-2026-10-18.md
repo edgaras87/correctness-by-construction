@@ -207,6 +207,8 @@ the reader, or uncertain.
   the run's seat; the container's skill, step 1.3).
 - Text: "A run holds artifacts and writes no manuals." / "a run
   writes no manuals."
+- Ending: fixed by ADR-0058 (`a345760`). A run drafts an approach
+  on trial, not a manual, so both lines are true; no text changed.
 
 **FINDING-3.** Agreement. Checked.
 - Where: `docs/conventions/conventions/README.md`:62-64.
@@ -407,6 +409,8 @@ reader for the stubs.
   refinement's manual and the redesign's.
 - Text: "Lived three times:". True if it counts only the evidence
   from before the convention.
+- Ending: fixed, `a9e8b96`: the manual went. Its uses are
+  `approach-drafting`'s now, all four counted (`a0087c5`).
 
 **FINDING-26.** Agreement. Resting on the reader.
 - Where: `docs/conventions/first-time-work/README.md`:111-117;
@@ -416,6 +420,8 @@ reader for the stubs.
 - Text: §1 asks the run's second question ("Is it general, or only
   this project's?"). Our skill asks another ("Will a run do it
   too, or only this repo?"), a fourth difference no seat names.
+- Ending: fixed, `a0087c5` and `a9e8b96`: one approach serves both
+  seats, its one difference marked inline.
 
 **FINDING-27.** Agreement. Checked.
 - Where: `docs/conventions/first-time-work/README.md`:140-147;
@@ -423,6 +429,8 @@ reader for the stubs.
   `.claude/skills/first-time-work/SKILL.md`, its close.
 - Text: the manual's table has six lasting forms, "A step"
   among them. Both skills offer five, without the step.
+- Ending: fixed, `a0087c5` and `a9e8b96`: both skills went. The
+  close's forms gave way to the evaluation's endings.
 
 **FINDING-28.** Stale lines. Checked.
 - Where: `docs/conventions/refinement/README.md`:176-178.
@@ -508,6 +516,10 @@ reader for the back-link.
 - Text: "Twelve manuals"; "eleven of the twelve"; "twelve manuals
   and their index"; TODO's "the other eight" and "all twelve";
   one-home's "a phrase for each convention".
+- Narrowed by the design change, not ended: `ARCHITECTURE.md`'s
+  "eleven" and one-home rule 3 are true again (`a9e8b96`,
+  `8e5f093`), and TODO's "the other eight" with them. Left for
+  round 1's work: TODO's "all twelve".
 
 **FINDING-38.** Stale lines. Checked.
 - Where: `ARCHITECTURE.md`:170-178.
@@ -592,6 +604,7 @@ reader for the back-link.
 - True: the refinement was `first-time-work`'s first trial here
   (`PLAN.md`), the redesign its second.
 - Text: "`first-time-work`'s first trial here".
+- Ending: fixed, `0dccf94`.
 
 **FINDING-50.** Stale lines. Checked.
 - Where: `TODO.md`:162-184.
@@ -599,6 +612,8 @@ reader for the back-link.
   2026-10-19 with its manual dropped (`c6a7bcc`).
 - Text: "Trigger: the next first-time work's close". Whether a
   close that kept nothing fires it is the reviewer's.
+- Ending: fixed, `0dccf94`: the item now waits for the first
+  evaluation that places a skill or rule.
 
 **FINDING-51.** Stale lines. Checked.
 - Where: `TODO.md`:500-507.
@@ -694,6 +709,7 @@ resting on the reader for the rest. Known.
 - Where: `.claude/skills/first-time-work/SKILL.md`:54-55.
 - Text: "each in §2's form", bare. It lands on the skill's own §2,
   Work; it means `docs/conventions/conventions/` §2.
+- Ending: fixed, `a0087c5`: the skill went.
 
 **FINDING-63.** Wiring. Checked.
 - Where: `.claude/rules/foundation-check.md`:37-38.
@@ -907,6 +923,8 @@ it is stale, not only unclear.
 - (b) The run's provisional manual gets another name.
 - Recommended: (a). The provisional manual is a manual in the
   same sense, only on trial.
+- Ending: neither option, by ADR-0058 (`a345760`): the draft is an
+  approach on trial, and "manual" keeps one meaning.
 
 **DECISION-2.** Does `working-a-reading.md` stand under the
 exchange? Rests: FINDING-22, FINDING-23.
@@ -932,6 +950,9 @@ Rests: FINDING-37.
   `ARCHITECTURE.md`'s count, at first-time work's close. Declined.
 - (b) Yes: count it now, and the close uncounts it if dropped.
 - Recommended: (a). The count then agrees with the rule today.
+- Ending: settled by ADR-0058. The refinement's manual is an
+  approach on trial (`1790d09`, `8e5f093`), and `docs/conventions/`
+  holds eleven manuals.
 
 **DECISION-5.** Did run 4's birth fire the "next birth" and
 "fourth run" triggers? Rests: FINDING-54.
@@ -962,3 +983,8 @@ which tag? Rests: FINDING-60.
   FINDING-12.
 
 Six decisions.
+
+Ended by the approaches design change, 2026-10-20
+(`.claude/approaches-on-trial/refinement.md` §2.7): DECISION-1 and
+DECISION-4; FINDING-2, 25, 26, 27, 49, 50 and 62 fixed; FINDING-37
+narrowed. 81 findings and four decisions remain.
