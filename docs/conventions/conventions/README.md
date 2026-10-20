@@ -353,11 +353,10 @@ line can be sorted by, with the commit grant as one example.*
 
 ## 4. Adding a convention
 
-A new convention can come from first-time work
-(`docs/conventions/first-time-work/`). Ours writes its manual here
-from the start, marked *on trial*, and its close runs the rest of
-these steps. A run's is offered under its *To the deliverer*, and a
-reading takes it by these steps.
+A new convention can come from an approach on trial, ours or a
+run's, when its evaluation places a piece as a convention of its
+own (`.claude/approaches-on-trial/approach-evaluation.md`). The
+placing takes these steps.
 
 As the last seven were added — `visual-comparison`, the exchange,
 shapes, this one, writing, the retrospective and first-time work —

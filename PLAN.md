@@ -168,7 +168,7 @@ Gate:
       (`docs/conventions/refinement/` §2.8).
 - [ ] The reviewer chose the manual's lasting form, and an ADR
       records it with the ways rejected at the opening
-      (`first-time-work` §3).
+      (`.claude/approaches-on-trial/approach-evaluation.md`).
 - [ ] `first-time-work`'s trial on our seat has its verdict, in one
       line: kept, changed or dropped.
 
@@ -202,12 +202,14 @@ Notes:
      (§3), and that no rule is in doubt;
   2. each round: read, list, decide, work, then its close read;
   3. the last read, repeated until it finds nothing;
-  4. the close: the refinement's file goes, then `first-time-work` §3
-     chooses the manual's lasting form.
+  4. the close: the refinement's file goes, then
+     `.claude/approaches-on-trial/approach-evaluation.md` evaluates
+     the manual.
 - The records map is round 2's, in project-recording's layer, its
   form chosen by `visual-comparison`.
 - When the work shows the manual wrong, the manual changes first,
-  in a commit of its own (`first-time-work` §2).
+  in a commit of its own
+  (`.claude/approaches-on-trial/approach-drafting.md`, stage 2).
 - The first use of `first-time-work` on our seat. This step's
   close judges it.
 - The reviewer signs: the kinds, their rounds, the layers and the

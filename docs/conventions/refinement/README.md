@@ -37,8 +37,8 @@ Look again at that step's close.
 
 ## What this is made usable as
 
-Nothing yet: the close decides (`docs/conventions/first-time-work/`
-§3). While a refinement is open, a repo holds:
+Nothing yet: the close decides
+(`.claude/approaches-on-trial/approach-evaluation.md`). While a refinement is open, a repo holds:
 
 - **its step in `PLAN.md`**, whose Notes list this page's stages;
 - **its file, `temp/refinement-<date>.md`**, deleted at the close.
@@ -327,7 +327,8 @@ commit, so the file can be read from git.
 
 ## Why it arrives this way
 
-A manual on trial, by `docs/conventions/first-time-work/`. A skill
+A manual on trial, by first-time work as ADR-0056 had it; ADR-0058
+makes it an approach on trial. A skill
 written before the work would describe a guess. The work corrects
 this page as it goes, and the close chooses its lasting form.
 
@@ -344,5 +345,5 @@ this page as it goes, and the close chooses its lasting form.
 
 ## Where to look
 
-- `docs/conventions/first-time-work/`
+- `.claude/approaches-on-trial/approach-drafting.md`
 - `19f1d7b^:temp/eval-2026-09-30.md`, the eval, in git

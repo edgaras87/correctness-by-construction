@@ -50,8 +50,8 @@ Shipped in `delivery/container/`: the deliverer writes it and the
 run receives it. Its entry file says that `docs/concept/` and
 everything under `.claude/` are delivered copies, pinned, and that
 until the framing artifacts exist the only method work is running
-`cbc-framing` jointly with the human. It holds six convention
-skills, the retrospective's two and `first-time-work` among them,
+`cbc-framing` jointly with the human. It holds five convention
+skills, the retrospective's two among them,
 and four rules: `shapes-lifecycle.md`, `delivered-copies.md`, the
 exchange's half for this side, and `writing.md` and `one-home.md`,
 loaded in every session. The work
@@ -74,7 +74,9 @@ and `exchange-deliver`; the two rules every session loads,
 `writing.md` and `one-home.md`; and three rules of its own,
 `exchange-reading.md`, the form of a reading,
 `working-a-reading.md`, how a reading's list is worked, and
-`convention-manual.md`, the form of a manual. Its decisions log
+`convention-manual.md`, the form of a manual; and two approaches
+on trial, `approach-drafting` and `approach-evaluation` (§3.8). Its
+decisions log
 holds arrangement decisions only, and no registry: it receives no
 conventions, and no one reads it but itself, so an entry that
 follows from an ADR is a line pointing at it (ADR-0042). A
@@ -249,10 +251,11 @@ run, a delivered copy, verbatim (the update is
 derivation from the manual (ADR-0042). This convention owns the
 place. A project may add a skill of its own, for a moment-bound
 local rule the entry file must not hold (§2). How one comes to be
-is `docs/conventions/first-time-work/`'s: from a provisional manual,
-at the close of the work that needed it, with an entry in the
-project's decisions log. *Defined 2026-10-16: run 3 wrote two this
-way (ADR-0056).*
+is `.claude/approaches-on-trial/approach-drafting.md`'s and its
+evaluation's: work no skill covers starts from an approach on trial
+(§3.8), and a skill is written only when an evaluation places one.
+*Defined 2026-10-16: run 3 wrote two this way (ADR-0056). Since
+2026-10-20, through an approach on trial (ADR-0058).*
 
 ### 3.2 `rules/`
 
@@ -354,6 +357,19 @@ hand.
 were rules, and by 2026-10-18 the bundle held them. Run 4's file
 held only settings. The reading of run 3 declined to ship the
 file, and the paragraph above came of it.*
+
+
+### 3.8 `approaches-on-trial/`
+
+Where a project keeps its approaches on trial: one file per kind of
+work, not yet proven. Nothing loads the directory. A step's opening
+item sends the agent to it (`PLAN.md`'s step form). What an approach
+is, how one is drafted and how one is evaluated are
+`.claude/approaches-on-trial/approach-drafting.md`'s and
+`.claude/approaches-on-trial/approach-evaluation.md`'s; this
+convention places the directory and states nothing else about it.
+*Added 2026-10-20 (ADR-0058). Numbered last, so the sections before
+it keep the numbers history cites.*
 
 ## 4. Anti-patterns
 
