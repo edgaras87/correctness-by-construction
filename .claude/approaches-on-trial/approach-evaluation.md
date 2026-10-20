@@ -98,6 +98,9 @@ evaluation closes on the agent's word.
   needs a floor of uses.
 - **Whether this and `approach-drafting` become one convention**
   when placed: one manual, a skill for each seat.
+- **What a run does with a piece left as the project's own:** keeps
+  it as its approach on trial, or writes it as a skill or rule of
+  its own (`docs/conventions/agent-arrangement/` §3.1).
 
 ## Ways rejected
 
@@ -110,6 +113,9 @@ piece into a convention, and those evaluations changed nothing in
 it.
 
 ## Uses
+
+*As written, not yet used.* Its first use is the refinement's close.
+The two notes below are from before it was written.
 
 *The deliverer, the redesign's close, 2026-10-19.* Before this was
 written: the redesign's manual was read, and its pieces went to
