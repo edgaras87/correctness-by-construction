@@ -250,6 +250,23 @@ A fact told in several layers is fixed with its home's layer.
 Its other copies become pointers in the same commit plan: a
 deletion, not a rewrite, so the order holds.
 
+A finding whose fix changes how a convention works, not only what
+its text says, is a design change. It is made inside the
+refinement, as a commit plan of its own on its branch; the
+refinement does not stop for it. It goes as soon as the reviewer
+has decided it, before the round's other decisions, since other
+findings may rest on it. The foundation check carries it to what
+derives from the convention. It never changes a rule the round
+reads against (§2.4). A change with a goal of its own, too big for
+one commit plan, is a step of its own, in `PLAN.md`.
+
+*Found 2026-10-20: round 1's DECISION-1 asked what "manual" means
+in a run, and the answer was a change to how first-time work is
+done, not to two sentences. The day before, the refinement had
+stopped for a redesign of the conventions that proved to be its
+own rule check. The reviewer had this one made inside the
+refinement.*
+
 ### 2.8 A round's close
 
 Every finding of the round has its ending. Then all the text the
