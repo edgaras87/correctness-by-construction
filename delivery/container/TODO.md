@@ -37,3 +37,9 @@
 ## Known issues (deferred deliberately — each entry: what, why accepted, when to revisit)
 
 - <issue>. Accepted because <reason>. Revisit at <step / condition>.
+
+## To the deliverer
+
+<!-- Lines this project addresses to its deliverer: an edit made to
+     a delivered copy, an ask, an offer. Each goes when the pin that
+     answers it arrives. How: .claude/rules/delivered-copies.md. -->
