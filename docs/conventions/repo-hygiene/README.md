@@ -1,8 +1,7 @@
 # Repo hygiene
 
-**Three files every repo carries from its first commit,
-`.gitignore`, `.gitattributes` and `.editorconfig`, maintained as
-layered templates instead of being re-derived per project.**
+**The three files every repo carries from its first commit:
+`.gitignore`, `.gitattributes` and `.editorconfig`.**
 
 ## What it is for
 

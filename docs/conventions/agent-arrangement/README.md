@@ -2,10 +2,7 @@
 
 **The agent side of a project: the files that make an agent work
 here a particular way, and that a copy of the project can drop
-while keeping the work. The line is detachability (ADR-0038,
-1c): a file is agent-side when removing it breaks nothing about the
-project. This page says what sits on its far side and what each
-file may hold.**
+while keeping the work.**
 
 ## What it is for
 
@@ -121,7 +118,9 @@ A closed list of paths (ADR-0038, 1c):
   shapes directory, the decisions log, and the tool's settings,
   tracked and machine-local, §3.
 
-**Detachable, and kept so.** How a commit that touches these paths
+**Detachable, and kept so.** A file is agent-side when removing it
+breaks nothing about the project (ADR-0038, 1c). How a commit that
+touches these paths
 is made is `docs/conventions/commit-messages/` §2. `COMMIT-PLAN.md`
 is `docs/conventions/commit-plan/`'s artifact, not this
 convention's.

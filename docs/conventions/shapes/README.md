@@ -1,8 +1,7 @@
 # Shapes
 
 **What a kind of output looks like, in whichever repository makes
-it — its form, never its content — written from work that exists,
-and read at a step's closing gate and nowhere else.**
+it: its form, never its content.**
 
 ## What it is for
 

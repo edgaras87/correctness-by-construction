@@ -1,9 +1,7 @@
 # Commit plan
 
-**How work larger than one commit is sequenced into commits before
-it starts, reviewed at every commit boundary, and closed with a
-note of what diverged. The unit is the change set: the scope
-between one commit and a whole project.**
+**How work larger than one commit is planned as commits, reviewed
+as they land, and closed.**
 
 ## What it is for
 
@@ -41,6 +39,9 @@ root its own. The deliverer runs its change sets under the same
 skill, the plan file at its root its own.
 
 ## 1. What it is
+
+The unit is the change set: the scope between one commit and a
+whole project.
 
 A patch series, carried into a repo where work is committed
 directly instead of mailed: one logical change per commit, ordered

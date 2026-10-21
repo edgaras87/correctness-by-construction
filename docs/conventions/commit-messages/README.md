@@ -1,8 +1,7 @@
 # Commit messages
 
-**How a commit is written: Conventional Commits on top of the
-classic 50/72 rules, with two rules of our own about who commits
-and what may share a commit.**
+**How a commit is written: its message, who commits it, and what
+may share one.**
 
 ## What it is for
 

@@ -1,8 +1,6 @@
 # Writing
 
-**How a text reads: the answer first, short sentences, plain words,
-real numbers. One page of rules, loaded in every session, for chat
-and records alike. What a text says is never this convention's.**
+**How a text reads, never what it says.**
 
 ## What it is for
 

@@ -1,9 +1,7 @@
 # Visual comparison
 
-**How a structure is shown — a picture, a table, a plain list — is
-settled by building every candidate and rendering it, judged
-against what the reader must get. The unit is the thing being
-shown.**
+**How the way a structure is shown is chosen: a picture, a table,
+or a plain list.**
 
 ## What it is for
 
@@ -39,6 +37,9 @@ A run runs it on its own pictures. The deliverer runs it the same
 way on its own.
 
 ## 1. What it is
+
+Every candidate is built and rendered, and judged against what the
+reader must get. The unit is the thing being shown.
 
 The general method, plus the one failure mode only a picture has: a
 notation that asserts something you did not mean. A table can be

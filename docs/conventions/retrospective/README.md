@@ -1,9 +1,7 @@
 # Retrospective
 
-**A finished run looks back in two steps: first it decides what the
-next run does differently, changing nothing; then it applies those
-lessons to its own records, before Release, without changing what
-it proved.**
+**How a run that has finished building looks back, and what it
+changes because of it.**
 
 ## What it is for
 
