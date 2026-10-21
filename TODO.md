@@ -210,6 +210,25 @@
       Trigger: the item on what a thing is, decided.
       See: devlog 2026-10-19, the redesign's ideas.
 
+- [ ] Decide whether a sweep checks one home after work lands, and
+      when (2026-10-22, the reviewer).
+      Context: the foundation check walks what derives from a
+      changed description at each commit, and `commit-plan`'s close
+      sweeps for names a set moved. Nothing looks back over finished
+      work to see whether its facts still have one home. Round 2's
+      One home kind does it once, for the refinement.
+      Ideas:
+      - a one-home sweep of its own, or one part of a sweep
+        defined as a convention or an approach.
+      - other parts such a sweep might hold: regrouping commits,
+        if a way is found that breaks no reference (its own item,
+        on commits cited by hash).
+      - when: after a branch is fast-forwarded; when a branch is
+        cut; at a commit plan's close.
+      Trigger: the refinement's close, once round 2 has swept one
+               home and shown what a sweep finds.
+      See: devlog 2026-10-21, evening.
+
 - [ ] Decide how commits cited by hash can still be regrouped
       (2026-10-19, the reviewer).
       Context: `.claude/skills/commit-plan/SKILL.md` §4 regroups a
