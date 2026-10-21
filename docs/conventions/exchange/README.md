@@ -291,12 +291,12 @@ copy.
    the diff says how many. A mismatch is reported before anything
    moves.
 2. **Find your own edits.** The diff of each held copy against the
-   pin. Empty: nothing to protect. Not empty: each edit is either
+   pin, which the run holds as the commit of its last delivery entry
+   (§2.2). Empty: nothing to protect. Not empty: each edit is either
    answered in the note (taken — the new copy carries it; declined
    — it goes, and the need it served goes to the run's records) or
-   unanswered, which means it was made after the deliverer last read,
-and it
-   is re-applied on top.
+   unanswered, which means it was made after the deliverer last
+   read, and it is re-applied on top.
 3. **Place.** The delivered files overwrite the copies whole. The
    take's commits follow `docs/conventions/commit-messages/`; when
    they are more than one, the chapters' commit comes first, so

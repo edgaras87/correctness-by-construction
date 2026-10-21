@@ -88,8 +88,9 @@ produce, and the work must be redone.
 
 ## 5. Offering a shape back
 
-The deliverer reads this project's shapes when it reads the
-repository. A shape marks what any project would want (its
+A shape this project wrote reaches the deliverer when a line under
+TODO's *To the deliverer* offers it; the deliverer reads it at its
+next reading. A shape marks what any project would want (its
 skeleton) apart from this project's example (its illustration), so
 the deliverer can take one and leave the other. How an edit reaches
 the deliverer is `delivered-copies.md`'s.

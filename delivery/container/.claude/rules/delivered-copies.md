@@ -80,9 +80,9 @@ foundation: the exchange convention
    The deliverer reads this repo read-only when it reads it: at a
    hand-off, or at the retrospective, not at every step's close. A
    faster answer needs a hand-off document. The deliverer diffs the
-   copy against its own tree at the pin, takes, reshapes or declines
-   each hunk in its own words, and writes its reply. The line is done
-   at the re-pin.
+   copy against its own tree at the pin, gives each hunk its verdict,
+   taken, declined or held, writes what it takes in its own words,
+   and writes its reply. The line is done at the re-pin.
 
 5. **After the reply, the re-pin: the take.** The deliverer's new
    version arrives staged in this repo's own `temp/`, in a directory
@@ -111,12 +111,12 @@ foundation: the exchange convention
       deleted is deleted, and each it names as renamed is moved. A
       copy cannot carry an absence, so the note carries it and this
       step does it.
-   6. **Remove the staging,** the directory named for the hash and
-      its note, and nothing else. `temp/` may hold the project's own
-      drafts, which are not the delivery's to clear.
-   7. **Write one decisions entry** carrying both numbers: the new
+   6. **Write one decisions entry** carrying both numbers: the new
       pin, and the read-through the note names. The copy is pristine
       again, and the TODO line leaves with the pin.
+   7. **Remove the staging,** the directory named for the hash and
+      its note, and nothing else. `temp/` may hold the project's own
+      drafts, which are not the delivery's to clear.
 
    The take's commits follow `.claude/skills/commit-messages/`. When
    there is more than one, the chapters' commit comes first, and the
