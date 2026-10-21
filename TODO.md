@@ -52,6 +52,12 @@
       - a shape is not a layer after the approach: it is written
         from outputs and governs the next at the gate; "governs" is
         named in `9fd905b`, with no upkeep yet.
+      - tiers §2.2 already holds two of the chain's kinds, the
+        mental layer and its executions; the chain as a model of
+        its own, tiers pointing at it.
+      - "layer" names three things already: the concept's LAYER-1
+        to 5, the refinement's file layers, tiers' two; the chain
+        takes another word.
       - the link "reasons from", model to convention, and what keeps
         it up; beside derives, points and governs (`9fd905b`).
       - the agent's chain rechecked against the layers before it is
