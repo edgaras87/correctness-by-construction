@@ -165,7 +165,9 @@ the branch is a receipt, never merged. Your
 task is to finish the birth: assemble what was delivered into a
 working project — your own arrangement, the records, PLAN's
 Step 0 closed on its gates. Read the whole repository first,
-every file and every seed commit. Then plan the work as the
+every file and every seed commit, but for .claude/shapes/: a
+shape is read at a step's closing gate, never before the work it
+judges. Then plan the work as the
 conventions you were given direct — your own commit sequence,
 your own order of artifacts, split by the commit scopes the
 skills define, each choice one you can justify in the plan.

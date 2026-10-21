@@ -29,21 +29,6 @@
 
 ## Now (due while the open step runs)
 
-- [ ] Decide whether a newborn reads `.claude/shapes/` at birth
-      (2026-10-17, the reviewer).
-      Context: the seed's prompt says "Read the whole repository
-      first, every file", and the method's four shapes are among
-      them (ADR-0052; named since `141fa74`). A shape is read at a
-      step's gate only, so run 5 would see every shape before its
-      first output. Run 5's second slice judges gate-only, and that
-      judgement would not be clean.
-      Ideas:
-      - the prompt leaves `.claude/shapes/` out of its read.
-      - left as is, and run 5's gate item says the shapes were read
-        at birth.
-      Trigger: before run 5's birth, with its item.
-      See: devlog 2026-10-17, later, shapes at birth.
-
 - [ ] Ship `temp/` in the container, or stop telling runs to use
       it (2026-09-23).
       Context: `visual-comparison` and `delivered-copies` send a
