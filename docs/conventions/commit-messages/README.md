@@ -88,22 +88,24 @@ everything. One answer is to make the type carry the signal —
 `feat(<convention>)` for the product, `docs` for the records.
 **The deliverer did not take it**, and the practice that grew
 instead is worth stating rather than leaving to be inferred from
-480 commits:
+the log:
 
-- `docs(<area>)` for almost everything, the scope naming the area
-  touched: `adr`, `delivery`, `conventions`, `temp`, `devlog`,
-  `agent`. Bare `docs` where a commit spans the records generally.
-- `chore(agent)` for the deliverer's own skills and rules, each
-  derived from its manual.
-- `feat`/`fix` only where the delivery gained or lost something a
-  run would notice — rare, and all on the delivery so far.
+- Bare `docs` for most: the manuals, the records, `ARCHITECTURE.md`.
+- `docs(<area>)` where one area is the whole commit: `temp` for a
+  draft or the refinement's file, `agent` for the agent's records
+  such as a commit plan, `adr` for an ADR.
+- `chore(agent)` for the deliverer's own skills, rules and
+  approaches.
+- `feat`/`fix` where something a run would notice was gained or
+  lost: `fix(delivery)` most often, `fix(concept)` and
+  `fix(agent)` rarely.
 
-So the type is nearly always `docs` and the **scope** carries the
-signal here, which is the mirror of the other answer, not a weaker
-version of it. Either works; what does not work is following
-neither and discovering the shape afterwards. *Until 2026-09-19
-this section described a practice the deliverer does not have, and
-its own was written nowhere.*
+So the type is nearly always `docs`, and the **scope**, where one is
+given, carries the signal here, which is the mirror of the other
+answer, not a weaker version of it. Either works; what does not work
+is following neither and discovering the shape afterwards. *Until
+2026-09-19 this section described a practice the deliverer does not
+have, and its own was written nowhere.*
 
 This section is the deliverer's and does not ship.
 

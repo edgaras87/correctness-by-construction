@@ -17,14 +17,17 @@ appended its stack's ignores at its skeleton step (its `5336563`).
 
 ## What this is made usable as
 
-- **The three dotfiles at the root of `delivery/container/` — the
-  base, shipped**, copied into a repo at its creation and the run's
-  own from then on; they never travel again.
+- **`delivery/container/.gitignore`,
+  `delivery/container/.gitattributes` and
+  `delivery/container/.editorconfig` — the base, shipped**, copied
+  into a repo at its creation and the run's own from then on; they
+  never travel again.
 - **`docs/conventions/repo-hygiene/templates/java-spring/` — a
   stack overlay, the deliverer's**, three `.part` files for Maven
   build output, wrapper line-ending exceptions and SQL/conf
   indents. Not shipped.
-- **The deliverer's own three dotfiles**, the same base.
+- **`.gitignore`, `.gitattributes` and `.editorconfig` at this
+  repo's root — the deliverer's own**, the same base.
 
 They carry no rules to read; they shape the repo by existing. What
 derives from this page is that list. A change here walks it; a

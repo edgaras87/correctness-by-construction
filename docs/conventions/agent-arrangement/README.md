@@ -47,13 +47,13 @@ section each (`docs/conventions/conventions/` §3.4).
 ### The run's seat — a builder's
 
 Shipped in `delivery/container/`: the deliverer writes it and the
-run receives it. Its entry file says that `docs/concept/` and
-everything under `.claude/` are delivered copies, pinned, and that
-until the framing artifacts exist the only method work is running
-`cbc-framing` jointly with the human. It holds five convention
-skills, the retrospective's two among them, one approach on trial,
-`approach-drafting`,
-and four rules: `shapes-lifecycle.md`, `delivered-copies.md`, the
+run receives it. Its entry file says that `docs/concept/` and the
+skills, rules, shapes and approaches on trial under `.claude/` are
+delivered copies, pinned, and that until the framing artifacts
+exist the only method work is running `cbc-framing` jointly with
+the human. It holds five convention skills, the retrospective's two
+among them, one approach on trial, `approach-drafting`, and four
+rules: `shapes-lifecycle.md`, `delivered-copies.md`, the
 exchange's half for this side, and `writing.md` and `one-home.md`,
 loaded in every session. The work
 it arranges is building a real system, keeping its records and
@@ -68,15 +68,16 @@ method from it, holds the master of every file a run receives,
 delivers to runs, and reads them back to learn what to change. It
 is not a builder; there is nothing to build. Its entry file sits at
 the repo root, the address the arrangement is described from: *"A
-concept repo… Documents only — no code, no runs."* It holds three
-of the same convention skills, not the retrospective's, whose seat
-here is on trial; the exchange's two, `exchange-read`
-and `exchange-deliver`; the two rules every session loads,
-`writing.md` and `one-home.md`; and three rules of its own,
-`exchange-reading.md`, the form of a reading,
-`working-a-reading.md`, how a reading's list is worked, and
-`convention-manual.md`, the form of a manual; and two approaches
-on trial, `approach-drafting` and `approach-evaluation` (§3.8). Its
+concept repo… Documents only — no code, no runs."* It holds the
+convention skills `commit-messages`, `commit-plan` and
+`visual-comparison`, not the retrospective's, whose seat here is on
+trial; the exchange's skills, `exchange-read` and
+`exchange-deliver`; the rules every session loads, `writing.md`,
+`one-home.md` and `foundation-check.md`, the check before a commit;
+the rules loaded by path, `exchange-reading.md`, the form of a
+reading, `working-a-reading.md`, how a reading's list is worked,
+and `convention-manual.md`, the form of a manual; and its
+approaches on trial (§3.8). Its
 decisions log
 holds arrangement decisions only, and no registry: it receives no
 conventions, and no one reads it but itself, so an entry that
@@ -157,12 +158,12 @@ a rulebook.
 ### 2.3 Where
 
 Repo root, or under `.claude/` — Claude Code reads `CLAUDE.md` at
-either address as one file (model §10.1). The container ships it under
-`.claude/`, so that every agent-side path sits in one directory; a
-project that wants it at the root moves it, which one run showed to
-be a pure rename — content untouched, the tool reading the file at
-the new address from the next session. The deliverer's sits at the
-root.
+either address as one file (`docs/models/agent.md` §10.1). The
+container ships it under `.claude/`, so that every agent-side path
+sits in one directory; a project that wants it at the root moves it,
+which one run showed to be a pure rename — content untouched, the tool
+reading the file at the new address from the next session. The
+deliverer's sits at the root.
 
 ### 2.4 How
 
@@ -200,7 +201,7 @@ two born repos spell them the same way.
 *The records table* is the slot this convention provides and
 `docs/conventions/project-recording/` fills: its rows, and the
 requirement that every row names a moment, belong to that
-convention (its §13).
+convention (`docs/conventions/project-recording/` §13).
 
 *How to work here* is the stance a project expects where it is not
 the obvious one — "decide before building", "prefer exploring over
@@ -227,21 +228,21 @@ the re-reading §2.6 names — not otherwise.
 
 ### 2.6 Size
 
-The entry file is the ambient channel (model §4.1): paid on every
-task, including the tasks it is irrelevant to, and each line added
-lowers compliance with every other (model claim A2, assumed). So its
-size is a running concern, not a one-time one. The cost is what the
-harness delivers, not the file: HTML comments are dropped on load
-(model §10.3), so the guard and the records comment cost nothing per
-task and are read when the file is opened to edit it — the moment
-they govern. If what remains is longer than a screen, something in
-it belongs in a convention, a record or a skill; shrinking it is
-maintenance, not tidying. Noticing that has no moment of its own, so
-a run re-reads the file at its retrospective: the skill's close
-asks it, and every line passes the three tests again
-or leaves — the same move a run's decisions log makes for its
-entries. The deliverer has no project end, and re-reads it at each
-step's close instead, as a closing item of its gate (ADR-0057).
+The entry file is the ambient channel (`docs/models/agent.md` §4.1):
+paid on every task, including the tasks it is irrelevant to, and each
+line added lowers compliance with every other (model claim A2,
+assumed). So its size is a running concern, not a one-time one. The
+cost is what the harness delivers, not the file: HTML comments are
+dropped on load (`docs/models/agent.md` §10.3), so the guard and the
+records comment cost nothing per task and are read when the file is
+opened to edit it — the moment they govern. If what remains is longer
+than a screen, something in it belongs in a convention, a record or a
+skill; shrinking it is maintenance, not tidying. Noticing that has no
+moment of its own, so a run re-reads the file at its retrospective:
+the skill's close asks it, and every line passes the three tests again
+or leaves — the same move a run's decisions log makes for its entries.
+The deliverer has no project end, and re-reads it at each step's close
+instead, as a closing item of its gate (ADR-0057).
 
 ## 3. `.claude/`
 
@@ -261,10 +262,11 @@ evaluation's: work no skill covers starts from an approach on trial
 
 ### 3.2 `rules/`
 
-Instruction files read like the entry file, with one extra: a
-`paths:` list at the top makes the file load only when the agent
-reads a file under one of those paths with the Read tool — not when
-it writes a new one there — the tool deciding, not the agent (model §10.6). The home for a rule true only in one part of the tree, which a
+Instruction files read like the entry file, with one extra: a `paths:`
+list at the top makes the file load only when the agent reads a file
+under one of those paths with the Read tool — not when it writes a new
+one there — the tool deciding, not the agent (`docs/models/agent.md`
+§10.6). The home for a rule true only in one part of the tree, which a
 skill would carry only if the agent noticed the moment. Without the
 list, the file is the entry file by another name and fails §2.4's
 tests the same way, with one exception.
@@ -335,12 +337,12 @@ base ignores it (`docs/conventions/repo-hygiene/`).
 
 ### 3.7 `CLAUDE.local.md`
 
-Not under `.claude/`, but the arrangement's neighbour: the
-operator's standing instructions, loaded beside the entry file and
-read the same way (model §4.1, ownership). One person, one checkout;
-the hygiene base ignores it, and its words never enter a record — a
-record that quotes it has let one operator's preference into the
-project's truth. The container ships none.
+Not under `.claude/`, but the arrangement's neighbour: the operator's
+standing instructions, loaded beside the entry file and read the same
+way (`docs/models/agent.md` §4.1, ownership). One person, one
+checkout; the hygiene base ignores it, and its words never enter a
+record — a record that quotes it has let one operator's preference
+into the project's truth. The container ships none.
 
 It holds the operator's settings, never rules. A setting is a
 choice one operator makes where the project leaves it open: how

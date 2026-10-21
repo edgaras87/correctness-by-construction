@@ -257,7 +257,7 @@ documentation and by what could be observed here:
 
 | Layer 1 | Claude Code mechanism |
 |---|---|
-| ambient | memory files — `CLAUDE.md` (root or under `.claude/`), `~/.claude/CLAUDE.md`, `@` imports; `.claude/rules/*.md` without frontmatter; `CLAUDE.local.md`, the operator's; a skill's `name` and `description` |
+| ambient | memory files — `CLAUDE.md` (root or under `.claude/`), `~/.claude/CLAUDE.md`, `@` imports; `.claude/rules/*.md` without a `paths:` list; `CLAUDE.local.md`, the operator's; a skill's `name` and `description` |
 | pulled | `Read`, `Grep`, `Glob`; a skill's body, once the agent invokes it |
 | pushed | context-injecting hooks, slash commands, subagents; `.claude/rules/*.md` with a `paths:` list — loaded when the agent reads a matching file with the Read tool; not on a write, a new file, or a shell command |
 | told | the prompt |

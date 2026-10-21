@@ -33,7 +33,9 @@ on 2026-10-15 (ADR-0053).
   this page like the container's, not copied from it, and loaded
   the same way. It differs where the seat does: it covers the
   skills, rules, shapes, manuals, concept chapters and notes the
-  deliverer writes, and its examples are this repo's.
+  deliverer writes; it defines a coined word in `ARCHITECTURE.md`'s
+  *The words*, this repo's glossary; and its examples are this
+  repo's.
 
 This page explains; the rule states. What derives from this page is
 that list. A change here walks it; a change forced in it is checked

@@ -83,14 +83,14 @@ meet, both input to Framing rather than agreement.
 
 ### 3.2 Told is not delivery
 
-A tier above may hand a run something as session input — a warning
-the run's own derivation missed, given after that derivation is on
-record, as an experiment's instrument. That is the told channel,
-unpinned by design (agent model §4.4), and the run's records say it
-was told; it is not a third form of delivery, and a run that leans
-on it has the diagnostic told carries. Nor is a copy the run has
-edited between two pins (`docs/conventions/exchange/` §5): delivery
-comes down, and an edit goes up.
+A tier above may hand a run something as session input — a warning the
+run's own derivation missed, given after that derivation is on record,
+as an experiment's instrument. That is the told channel, unpinned by
+design (`docs/models/agent.md` §4.4), and the run's records say it was
+told; it is not a third form of delivery, and a run that leans on it
+has the diagnostic told carries. Nor is a copy the run has edited
+between two pins (`docs/conventions/exchange/` §5): delivery comes
+down, and an edit goes up.
 
 ### 3.3 Up is harvest, through records
 

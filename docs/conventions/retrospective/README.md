@@ -70,14 +70,15 @@ run 4's reading shows the missing guide cost something.*
 
 ### The deliverer's seat
 
-On trial. This repo has no project end; its steps close on
-"lessons folded back where they came from", which names no place
-and no method. At the close of the step that runs the next birth,
-it runs both skills on itself, from `delivery/container/`, in place
-of that item: the parts are its own (the concept, the conventions,
-the delivery, the exchange, its records), and the next step stands
-where a run has its next run. The trial's verdict says whether this
-repo holds its own copies, and what this seat is.
+On trial. This repo has no project end; its steps close on "lessons
+folded back where they came from: conventions, the playbook, the
+concept", which names the places but no method. At the close of the
+step that runs the next birth, it runs both skills on itself, from
+`delivery/container/`, in place of that item: the parts are its own
+(the concept, the conventions, the delivery, the exchange, its
+records), and the next step stands where a run has its next run. The
+trial's verdict says whether this repo holds its own copies, and what
+this seat is.
 
 ## 1. Two steps, not one
 
