@@ -37,4 +37,5 @@ Bad: small ongoing discipline cost; requires honesty about downsides at
 decision time.
 
 <!-- Template for the next ADR: copy this file, bump the number,
-     replace every section. Keep it under one page. -->
+     replace every section. Keep it under one page.
+     foundation: the project-recording convention -->

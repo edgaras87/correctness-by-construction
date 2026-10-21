@@ -20,7 +20,8 @@
      weighed only when the item is due — each is then taken,
      extended or declined. When an item changes, rewrite it true for
      today — never stack a dated update on it; the change's story is
-     the devlog's. -->
+     the devlog's.
+     foundation: the project-recording convention -->
 
 ## Now (current plan step)
 

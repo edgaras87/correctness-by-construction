@@ -13,7 +13,8 @@ Framing decides. The answer replaces this placeholder.>
      Added · Changed · Deprecated · Removed · Fixed · Security —
      use the ones this repo's versions can need.
      Releasing = rename [Unreleased] to a version + date, open a
-     fresh one. -->
+     fresh one.
+     foundation: the project-recording convention -->
 
 ## [Unreleased]
 

@@ -24,7 +24,8 @@
      nothing has been read, and the first note sets it. Every later
      delivery entry carries both (.claude/rules/delivered-copies.md,
      rule 1). If the placeholder still shows, the seed was not run;
-     fix it before the bootstrap commit. -->
+     fix it before the bootstrap commit.
+     foundation: the agent-arrangement convention -->
 
 - <YYYY-MM-DD> Born from the correctness-by-construction delivery,
   pin <bundle-commit>; read-through none — nothing read before the

@@ -7,7 +7,8 @@
      don't copy them.
      Mark dead ends loudly with "DEAD END:" so they're greppable.
      End every session with a "Resume:" line — cheapest save-point there is.
-     When this file gets long, split into devlog/<YYYY-MM>.md per month. -->
+     When this file gets long, split into devlog/<YYYY-MM>.md per month.
+     foundation: the project-recording convention -->
 
 ## <YYYY-MM-DD>  (Step 0: bootstrap)
 

@@ -6,7 +6,8 @@
      playbook's full sequence — a concept's; the playbook itself
      stays where it came from. Born without one, fill the
      placeholders in place. Either way the two STEPS markers stay:
-     they are what makes the swap re-runnable. -->
+     they are what makes the swap re-runnable.
+     foundation: the project-recording convention -->
 
 <!-- Steps from: <playbook> v<N> at <concept commit>,
      copied at birth. Filled in place at birth; this comment stays —

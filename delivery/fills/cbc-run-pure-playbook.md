@@ -16,7 +16,8 @@ retrospective taken, ADR-0055)
 
 <!-- Copied into a step when it opens, and filled in. Copied, never
      shared: each step ticks its own items, so one checkbox cannot
-     serve six steps. -->
+     serve six steps.
+     foundation: the project-recording convention -->
 
 ```markdown
 ## Step <n>: <title>  (<the skill or approach it runs, if any>)    [ ]

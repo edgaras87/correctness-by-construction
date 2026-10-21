@@ -35,7 +35,8 @@ this project writes is its own.
      once opened, and nothing else says when. Three things per row —
      the moment, what it holds, the path — never the rule itself: what
      an ADR contains is inside the ADR. Adding a record means adding
-     its row. -->
+     its row.
+     foundation: the project-recording convention -->
 
 | When | What's in it | Record |
 |---|---|---|
