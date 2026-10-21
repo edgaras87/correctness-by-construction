@@ -17,7 +17,8 @@ concept versions — whole numbers, not SemVer (ADR-0003).
      never adds a second. An entry is the concept, or an execution
      derived from it or checked against it; a convention's change,
      or the delivery's, is none — a manual has no version
-     (ADR-0039). -->
+     (ADR-0039).
+     foundation: the project-recording convention -->
 
 ## [Unreleased]
 

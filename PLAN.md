@@ -19,7 +19,8 @@
 
 <!-- Copied into a step when it opens, and filled in. The run's
      form, delivery/fills/cbc-run-pure-playbook.md, adapted to this
-     seat (ADR-0057). -->
+     seat (ADR-0057).
+     foundation: the project-recording convention -->
 
 **A step is the one piece of work being done now:** a reading of a
 run, or a TODO item big enough for a branch. A change set inside it
@@ -131,9 +132,10 @@ corner.
 ## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
 
 Goal: Living text written before a rule now meets that rule, and
-project-recording §1 is a map of the records in both seats.
-Now: round 1's work, layer by layer: layers 1 and 2 done, layer 3
-next (`.claude/approaches-on-trial/refinement.md` §2.7).
+`docs/conventions/project-recording/` §1 is a map of the records
+in both seats.
+Now: round 1's work, layer by layer
+(`.claude/approaches-on-trial/refinement.md` §2.7).
 Gate:
 
 **At the opening.**
@@ -167,9 +169,10 @@ Gate:
       with its reason, or a TODO item.
 - [ ] The last read found nothing that breaks a rule
       (`.claude/approaches-on-trial/refinement.md` §2.9).
-- [ ] project-recording §1 shows in one view which record answers
-      what, in both seats. It includes `RETRO.md`, `COMMIT-PLAN.md`,
-      `docs/system/`, and records another convention owns.
+- [ ] `docs/conventions/project-recording/` §1 shows in one view
+      which record answers what, in both seats. It includes
+      `RETRO.md`, `COMMIT-PLAN.md`, `docs/system/`, and records
+      another convention owns.
 - [ ] The records map's form was chosen by `visual-comparison`,
       and that skill's gates hold for it.
 - [ ] Each round's close read has its counts
