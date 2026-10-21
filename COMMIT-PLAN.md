@@ -27,6 +27,11 @@ FINDING-56's and 58's layer 5 parts, and FINDING-59: two rows of
 `CLAUDE.md`'s records table, and a `foundation:` line in its table
 comment and in `.claude/decisions.md`'s header.
 
+**2b. `docs: project-recording lists our records table`**
+The foundation check at commit 2: our `CLAUDE.md`'s table comment
+now names project-recording, whose list names the container's
+table but not ours. One line in that list.
+
 **3. `chore(agent): our rules and skills made true`**
 FINDING-63, 64 and 65, and our seat of FINDING-66 and 67.
 
