@@ -1,32 +1,35 @@
-<!-- Context for three TODO items, from the conversation of
-     2026-10-20 that raised them: what was asked, what exists, the
-     options weighed, and what was said for and against. Not a
-     record and not a decision: each item asks its question, and the
-     ADR that answers it decides. Written once and never updated; it
-     says what was thought that day. Each section names the item it
-     serves. When that item is worked, its section goes in the same
-     commit; the file goes with its last section. -->
+<!-- The talk behind TODO items, kept beside TODO.md: what was
+     asked, what exists, the options weighed, what was said for and
+     against, the reviewer's own words. A record that decides
+     nothing and tells no story: the item's ADR decides, and the
+     devlog tells. Our seat only, on trial
+     (docs/conventions/project-recording/ §5.5; ADR-0060).
 
-# The reviewer's ideas, 2026-10-20: context
+     One section per item, numbered as added; a number is never
+     reused. Under it the item's words, then one part per talk,
+     headed by its date; a part is never rewritten. The item's See
+     names the section.
 
-Three TODO items rest on this file, each with a section:
+     The agent asks the reviewer before saving a talk: a new
+     section, a part added to one, or nothing, with its
+     recommendation. A section is read when its item is worked,
+     before its Ideas are weighed, and the devlog says whether it
+     changed the work. It goes in the commit that works its item;
+     the file stays, empty or not.
 
-1. **How this repo's text is divided** — TODO, Next: "Decide how
-   this repo's text is divided: by kind, a model, a convention or
-   an approach, and by subject". Due before round 2 reads.
-2. **How an approach and a shape divide an output** — TODO, Next.
-   Due at `approach-drafting`'s first evaluation.
-3. **Layouts as shapes** — TODO, Next: "Decide whether our own
-   forms become shapes", its layout ideas. Due at run 4's reading.
+     Last touched: 2026-10-21.
+     foundation: the project-recording convention -->
 
-Section 4 lists other open threads met that day. Each already has
-its home elsewhere, and none keeps this file alive. Section 5
-gathers the candidate models one by one; it serves item 1, and goes
-with it.
+# TODO's conversation-memory
 
 ## 1. How this repo's text is divided
 
-### What the reviewer asked
+Item: "Decide how this repo's text is divided: by kind, a model, a
+convention or an approach, and by subject".
+
+### 2026-10-20
+
+#### What the reviewer asked
 
 - This repo maintains the delivery: the container, the method, the
   stack practice. Is that an idea of its own, a convention? Where is
@@ -53,7 +56,7 @@ it before copying its shape. Describe `model → convention →
 approach` as a model itself. Maybe the whole repo is chains of
 dependencies.
 
-### What exists today
+#### What exists today
 
 | Idea | Where it is written | Kind of text |
 |---|---|---|
@@ -66,7 +69,7 @@ dependencies.
 | what the records are | project-recording §1, "The model at a glance" | a model inside a manual |
 | the agent | `docs/models/agent.md` → `docs/conventions/agent-arrangement/` → `.claude/` | the only full chain of three kinds |
 
-### Options weighed
+#### Options weighed
 
 | Question | One big convention | A convention per idea | The rule of thumb |
 |---|---|---|---|
@@ -82,7 +85,7 @@ maintaining the delivery stays a description and a model, with no
 rules beyond the exchange's; seats stay one rule; one home is a
 convention of its own.
 
-### The layers, as discussed
+#### The layers, as discussed
 
 ```
 model → description → approach → output
@@ -116,7 +119,7 @@ model → description → approach → output
 - **The agent's chain first:** recheck it against the layers before
   it serves as the template, so its errors are not copied.
 
-### Related, already placed
+#### Related, already placed
 
 - Round 2's Layout finding names staying in step as a convention of
   its own, with a rule for each case: ours, manuals by path and
@@ -126,118 +129,9 @@ model → description → approach → output
 - Folding the agent model into agent-arrangement is the same
   question the other way round (its own TODO item).
 
-## 2. How an approach and a shape divide an output
+#### Other threads met in this talk
 
-### What the reviewer said
-
-It opened with a question: should the shape idea be a model, with
-one convention holding both seats, or separate conventions?
-
-A shape is a presumed output, from practice: an output we want to
-look the same next time. Why a shape at the gate and not a
-template: with a template, or a shape written into the approach,
-the agent does the work to it and stops trying other ways. We may
-miss a better version, or a case that needs a second shape for the
-same approach. We want adaptation. So the shape is kept in
-`shapes/`, shown at the gate, and a difference ends one of the
-known ways.
-
-So approaches should be written without the output's form: they say
-fully what must be done, by their manual, and avoid how the output
-looks. Where an approach does not give what a shape needs, the
-reviewer listed: the part is optional, and the shape marks it so;
-the part was considered and is empty in this case, so it says none;
-the part was never considered, by the approach being older than the
-shape or touched since, which one home's re-read should make rare.
-
-### What exists today
-
-- The shapes manual already holds most of the model: written from
-  work that exists (§1); "Not a template… Filling a shape in is the
-  failure mode it warns about" (§2); read at the gate only, since
-  "work written to the shape can only conform" (§3), lived by run 3
-  when a shape loaded early (ADR-0052); four endings, decided per
-  difference (§5.2). Adaptation is its core: "A shape *wants*
-  divergence" (§2); "A shape record that never changes is either
-  finished or unread" (§5.2).
-- The fourth ending, "the output is a different kind: both stand,
-  and a new shape starts", is the reviewer's several shapes for one
-  approach.
-- §3 holds half of the approach's side: "What must hold while the
-  work is written is not a shape. It belongs to the skill… where a
-  shape names a part only the work can produce… the skill asks for
-  it too." It does not say the other half: a skill carries no form.
-
-### The live cases
-
-- `cbc-framing` hands over `templates/registry.md`, "Copy-and-fill…
-  Fill every slot", for the output the `registry-entry` shape
-  governs. Older than shapes (ADR-0008).
-- `approach-drafting`'s stage 1 lists what an approach file holds:
-  what for, stages, not known, ways rejected, uses. The form of its
-  own output, written into the approach.
-
-### Points made
-
-- The three cases sharpened: a part considered and empty says "none,
-  because…", so it reads differently from one left out, as §5.2's "a
-  tick with no note is what would be wrong". A part never asked for
-  is too late to produce at the gate: a fifth kind of difference,
-  whose fix goes upstream to the approach, the output recording the
-  gap.
-- **The tension:** an approach that asks for a part a shape needs is
-  retelling the shape's need, and under ADR-0059 it would carry a
-  tag to the shape. A tag invites opening the shape before the gate.
-  So the ask is written in the approach's own words, as what to
-  capture; the tag serves the walk only; the shape says it is read
-  at the gate.
-
-## 3. Layouts as shapes
-
-### What the reviewer asked
-
-Is there such a thing as a document layout design, chosen by kind:
-one layout for a convention's manual, another for an approach,
-another for a shape? Would it help maintenance, readability,
-future-proofing, complexity? Then: mark the layout as a shape thing,
-a layout shape under the shape model, so layouts adapt, compared at
-the gate, with the writing approach carrying none.
-
-### What exists today
-
-| Kind of document | Its layout | Where | Seen by the writer |
-|---|---|---|---|
-| a manual | nine sections, in order | `.claude/rules/convention-manual.md` | when a manual is read (a `paths:` rule) |
-| a reading | its parts | `.claude/rules/exchange-reading.md` | when a reading is read |
-| a skill or rule file | frontmatter, stages, a *Decisions* footer | `docs/conventions/conventions/` §2 | never loaded |
-| a record | the form in its header comment | the record | when it is opened |
-| an approach on trial | its parts | `approach-drafting`, stage 1 | while drafting |
-| a run's outputs | shapes | `.claude/shapes/` | at the gate only |
-
-The writing rule is not one of these: it sets the voice, not where
-parts go. Its *Other styles* is where a kind of text would get a
-style of its own.
-
-### Points made
-
-- Under the shape model, a layout is a shape whose output is one of
-  our documents: a case of the shapes convention, not a system of
-  its own.
-- The four questions: one family with one mechanism helps
-  maintenance and future-proofing; readability holds either way;
-  complexity stays low only if it is shapes extended, not a new
-  system beside them.
-- **The test is shapes §3's:** what must hold while writing stays a
-  rule. A manual's section order may: readers find things in the
-  same place across eleven manuals, and a writer who meets the
-  sections only at the gate may rework every new manual. How each
-  part is written may not.
-- A new reading is written without its form in view today, since
-  the form loads only when a reading is read (FINDING-4, `162bfb0`).
-
-## 4. Other open threads met that day
-
-Each has its home; none keeps this file alive.
+Each has its home, named in it.
 
 - **Does a manual still go on trial,** now that unproven work stays
   in approaches? `.claude/approaches-on-trial/approach-evaluation.md`,
@@ -272,14 +166,15 @@ Each has its home; none keeps this file alive.
   refinement's evaluation at its close decides.
   `.claude/approaches-on-trial/refinement.md` §3, *Not known yet*.
 
-## 5. The candidate models, one by one
+#### The candidate models, one by one
 
-Each is a model that §1's gate would allow: an idea several manuals
-share, or one where what it is and what we do were mixed. For each:
-what it would say, the cases that would be its conventions or rules,
-where its pieces sit today, and what stayed open. Serves item 1.
+Each is a model that the gate proposed above would allow: an idea
+several manuals share, or one where what it is and what we do were
+mixed. For each: what it would say, the cases that would be its
+conventions or rules, where its pieces sit today, and what stayed
+open.
 
-### 5.1 One home
+##### One home
 
 - **What it would say:** each fact has one home; elsewhere a
   pointer; a copy is a follower, tagged by a label grep finds,
@@ -296,7 +191,7 @@ where its pieces sit today, and what stayed open. Serves item 1.
 - **Open:** round 2's Layout finding names it a convention of its
   own; the run's case is designed with it.
 
-### 5.2 A shape
+##### A shape
 
 - **What it would say:** a presumed output, written from outputs
   that exist; read only at the gate, so the work can show it wrong;
@@ -314,9 +209,9 @@ where its pieces sit today, and what stayed open. Serves item 1.
   and `exchange-reading.md`.
 - **Open:** the reviewer's question, one convention with both seats
   or separate conventions; whether our forms become shapes (TODO);
-  how an approach and a shape divide an output (item 2).
+  how an approach and a shape divide an output (§2).
 
-### 5.3 The deliverer and the run
+##### The deliverer and the run
 
 - **What it would say:** a deliverer holds the masters and makes the
   delivery; a run builds blind, from pinned copies; files go down
@@ -332,7 +227,7 @@ where its pieces sit today, and what stayed open. Serves item 1.
 - **Open:** the tiers model plans the delivery's move to a repo of
   its own; this model would move with it.
 
-### 5.4 What a convention is
+##### What a convention is
 
 - **What it would say:** a way of working written down once, in a
   manual, and made into the rules and skills a project acts on; a
@@ -342,11 +237,11 @@ where its pieces sit today, and what stayed open. Serves item 1.
   its artifacts, §2; how one is added, §4.
 - **Where it sits today:** the conventions manual, §1 holding the
   model, §2 to §4 the rules, and §3.1 to §3.6 also holding staying
-  in step, which belongs to 5.1.
+  in step, which belongs to *One home* above.
 - **Open:** whether a manual still goes on trial now that approaches
   exist.
 
-### 5.5 The layers
+##### The layers
 
 - **What it would say:** model → description (a convention or the
   concept) → approach → output, with a shape governing the output
@@ -358,3 +253,121 @@ where its pieces sit today, and what stayed open. Serves item 1.
   links are in `9fd905b`; "reasons from" has no home.
 - **Open:** the reviewer's guess that the whole repo is chains of
   dependencies; the agent's chain to be rechecked first.
+
+## 2. How an approach and a shape divide an output
+
+Item: "Decide how an approach and a shape divide an output".
+
+### 2026-10-20
+
+#### What the reviewer said
+
+It opened with a question: should the shape idea be a model, with
+one convention holding both seats, or separate conventions?
+
+A shape is a presumed output, from practice: an output we want to
+look the same next time. Why a shape at the gate and not a
+template: with a template, or a shape written into the approach,
+the agent does the work to it and stops trying other ways. We may
+miss a better version, or a case that needs a second shape for the
+same approach. We want adaptation. So the shape is kept in
+`shapes/`, shown at the gate, and a difference ends one of the
+known ways.
+
+So approaches should be written without the output's form: they say
+fully what must be done, by their manual, and avoid how the output
+looks. Where an approach does not give what a shape needs, the
+reviewer listed: the part is optional, and the shape marks it so;
+the part was considered and is empty in this case, so it says none;
+the part was never considered, by the approach being older than the
+shape or touched since, which one home's re-read should make rare.
+
+#### What exists today
+
+- The shapes manual already holds most of the model: written from
+  work that exists (§1); "Not a template… Filling a shape in is the
+  failure mode it warns about" (§2); read at the gate only, since
+  "work written to the shape can only conform" (§3), lived by run 3
+  when a shape loaded early (ADR-0052); four endings, decided per
+  difference (§5.2). Adaptation is its core: "A shape *wants*
+  divergence" (§2); "A shape record that never changes is either
+  finished or unread" (§5.2).
+- The fourth ending, "the output is a different kind: both stand,
+  and a new shape starts", is the reviewer's several shapes for one
+  approach.
+- §3 holds half of the approach's side: "What must hold while the
+  work is written is not a shape. It belongs to the skill… where a
+  shape names a part only the work can produce… the skill asks for
+  it too." It does not say the other half: a skill carries no form.
+
+#### The live cases
+
+- `cbc-framing` hands over `templates/registry.md`, "Copy-and-fill…
+  Fill every slot", for the output the `registry-entry` shape
+  governs. Older than shapes (ADR-0008).
+- `approach-drafting`'s stage 1 lists what an approach file holds:
+  what for, stages, not known, ways rejected, uses. The form of its
+  own output, written into the approach.
+
+#### Points made
+
+- The three cases sharpened: a part considered and empty says "none,
+  because…", so it reads differently from one left out, as §5.2's "a
+  tick with no note is what would be wrong". A part never asked for
+  is too late to produce at the gate: a fifth kind of difference,
+  whose fix goes upstream to the approach, the output recording the
+  gap.
+- **The tension:** an approach that asks for a part a shape needs is
+  retelling the shape's need, and under ADR-0059 it would carry a
+  tag to the shape. A tag invites opening the shape before the gate.
+  So the ask is written in the approach's own words, as what to
+  capture; the tag serves the walk only; the shape says it is read
+  at the gate.
+
+## 3. Layouts as shapes
+
+Item: "Decide whether our own forms become shapes, and whether a
+shape's part can be optional", its layout ideas.
+
+### 2026-10-20
+
+#### What the reviewer asked
+
+Is there such a thing as a document layout design, chosen by kind:
+one layout for a convention's manual, another for an approach,
+another for a shape? Would it help maintenance, readability,
+future-proofing, complexity? Then: mark the layout as a shape thing,
+a layout shape under the shape model, so layouts adapt, compared at
+the gate, with the writing approach carrying none.
+
+#### What exists today
+
+| Kind of document | Its layout | Where | Seen by the writer |
+|---|---|---|---|
+| a manual | nine sections, in order | `.claude/rules/convention-manual.md` | when a manual is read (a `paths:` rule) |
+| a reading | its parts | `.claude/rules/exchange-reading.md` | when a reading is read |
+| a skill or rule file | frontmatter, stages, a *Decisions* footer | `docs/conventions/conventions/` §2 | never loaded |
+| a record | the form in its header comment | the record | when it is opened |
+| an approach on trial | its parts | `approach-drafting`, stage 1 | while drafting |
+| a run's outputs | shapes | `.claude/shapes/` | at the gate only |
+
+The writing rule is not one of these: it sets the voice, not where
+parts go. Its *Other styles* is where a kind of text would get a
+style of its own.
+
+#### Points made
+
+- Under the shape model, a layout is a shape whose output is one of
+  our documents: a case of the shapes convention, not a system of
+  its own.
+- The four questions: one family with one mechanism helps
+  maintenance and future-proofing; readability holds either way;
+  complexity stays low only if it is shapes extended, not a new
+  system beside them.
+- **The test is shapes §3's:** what must hold while writing stays a
+  rule. A manual's section order may: readers find things in the
+  same place across eleven manuals, and a writer who meets the
+  sections only at the gate may rework every new manual. How each
+  part is written may not.
+- A new reading is written without its form in view today, since
+  the form loads only when a reading is read (FINDING-4, `162bfb0`).

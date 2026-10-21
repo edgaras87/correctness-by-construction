@@ -347,6 +347,8 @@ README.md            the front door: what this is, how to use it
 ARCHITECTURE.md      this map
 PLAN.md              the step form, and the step being worked
 TODO.md              what's next, and the backlog
+TODO-CONVERSATION-MEMORY.md
+                     the talk behind TODO items, on trial (ADR-0060)
 CHANGELOG.md         the concept-version log (ADR-0003)
 devlog/              work history, one file per month
 concept/             the concept: five chapters, 00-cbc.md first (§1.1)
@@ -362,7 +364,7 @@ delivery/
 ├── fills/           text written into a newborn's own files (§2.4)
 ├── installs/        how a run is seeded (§2.4)
 └── README.md        the delivery's local map (§2.4)
-temp/                working drafts, tracked, deleted when served
+temp/                drafts and kept files, tracked, deleted when served
 CLAUDE.md, .claude/  this repo's work arrangement (§4)
 .editorconfig        hygiene: editor settings
 .gitattributes       hygiene: line endings and diffs
@@ -443,6 +445,11 @@ manual owns the thing a word names, pointed at there.
   is not ours.
 - **step** — one piece of PLAN's work, a run's or ours. What makes
   work a step here is our `PLAN.md`'s step form (ADR-0057).
+- **conversation-memory** — the talk that shaped a TODO item,
+  kept beside it in `TODO-CONVERSATION-MEMORY.md`: what was asked,
+  the options weighed, what was said for and against. It decides
+  nothing; it is read when the item is worked
+  (`docs/conventions/project-recording/` §5.5).
 - **stage** — one phase of a skill, numbered from Stage 0:
   `cbc-slice`'s Stage 3, `cbc-framing`'s Stage 2. A step's Now line
   names the stage it is in. How a skill names them:

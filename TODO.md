@@ -13,15 +13,18 @@
            Context: <why it holds, true today — eight lines at most>.
            Ideas: <optional — how it might be handled, a line each>.
            Trigger: <the moment it is due>.
-           See: <the devlog entry, ADR or commit with its story>.
+           See: <the devlog entry, ADR or commit with its story;
+                its section in TODO-CONVERSATION-MEMORY.md, if any>.
 
      The story goes in that session's devlog entry when the item is
      added, and See points at it; an item that is its story's only
      home keeps it and has no See. Ideas are noted as they come and
      weighed only when the item is due — each is then taken,
-     extended or declined. When an item changes, rewrite it true for
-     today — never stack a dated update on it; the change's story is
-     the devlog's.
+     extended or declined. The talk that shaped an item may sit in
+     TODO-CONVERSATION-MEMORY.md; when See names its section, it is
+     read before the Ideas are weighed. When an item changes, rewrite
+     it true for today — never stack a dated update on it; the
+     change's story is the devlog's.
      foundation: the project-recording convention -->
 
 ## Now (due while the open step runs)
@@ -72,7 +75,7 @@
         future-proofing and complexity.
       Trigger: before round 2 reads, beside its Layout kind.
       See: devlog 2026-10-20, later; 2026-10-19, the redesign's
-      ideas; `temp/ideas-2026-10-20.md` §1.
+      ideas; `TODO-CONVERSATION-MEMORY.md` §1.
 
 ## Next (each due at its trigger)
 
@@ -104,7 +107,7 @@
         the gap.
       Trigger: `approach-drafting`'s first evaluation, at the
                refinement's close.
-      See: devlog 2026-10-20, later; `temp/ideas-2026-10-20.md` §2.
+      See: devlog 2026-10-20, later; `TODO-CONVERSATION-MEMORY.md` §2.
 
 - [ ] Choose whether a manual is called a concept (2026-10-19, the
       reviewer).
@@ -222,7 +225,7 @@
       Trigger: run 4's reading, which reads how run 4 lived run 3's
                shapes.
       See: devlog 2026-10-17, our forms as shapes; 2026-10-20,
-      later, layouts; `temp/ideas-2026-10-20.md` §3.
+      later, layouts; `TODO-CONVERSATION-MEMORY.md` §3.
 
 - [ ] Try a readability pass, the reviewer marking where text is
       hard to read (2026-10-18, the reviewer).

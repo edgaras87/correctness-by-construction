@@ -8,8 +8,8 @@ kept for work still to come.
   evaluation of this repo while the sets that fix it work through
   it.
 - **A kept file:** context that work not yet due rests on, such as
-  a hand-off a coming reading starts from, or the context of a TODO
-  item's ideas. The TODO item or the open step names it.
+  a hand-off a coming reading starts from. A TODO item or the open
+  step names it.
 
 Both are tracked, so the shaping shows as diffs. Each is deleted
 once it has served, and git history keeps every version.
