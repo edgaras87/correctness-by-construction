@@ -817,3 +817,49 @@ Where examples live, counted that day:
   (ADR-0061), and run 5's hand-off asks its analysis to show: each
   probe committed before its verdict.
 
+## 11. How work is run by agents
+
+Item: "Decide how work is run by agents: delegation, model and
+effort by kind of work, forks or fresh agents, new challenges and
+look-backs".
+
+### 2026-10-22
+
+#### What the reviewer asked
+
+With run 5 already started, so nothing in it changes: should there
+be a convention on how to use models and efforts, and on how work
+is managed, mostly on full auto but in ordinary work too? Say a main
+agent hands readers something to read and collect, at low effort;
+when a problem needs deciding, finding the options takes the
+highest effort, in one agent; once the options are found, several
+agents at medium or high effort implement and report back as a
+summary. None of this, efforts, forks, delegation, is defined
+anywhere. Nor how new challenges are met, or looking back, as just
+decided for run 5.
+
+#### What exists today
+
+- **Delegation by judgement:** on 2026-10-21 the agent sent 3
+  readers to run 4 and 8 to round 1's close read, each a fresh
+  agent with a written brief, at the default effort.
+- **No record of models:** run 4 changed from Fable 5.1 to Opus 5.5
+  mid-run, and only the reviewer's own memory says why.
+- **New challenges:** `approach-drafting`, shipped.
+- **Looking back:** a commit plan's look-back, on trial in run 5,
+  with a brake.
+- **The agent's own tool** sets another agent's effort only when the
+  reviewer has asked for a level; otherwise the default holds.
+
+#### Points made
+
+- A real gap, but a convention now would be rules nobody has lived,
+  the fault the light read found in run 4's hand-off. New work
+  starts as an approach on trial (ADR-0058).
+- Where it lives is the text-division item's question:
+  agent-arrangement says what an agent holds; how an agent works
+  may be a convention of its own or a section of that one.
+- Evidence first: from the next session, each delegation leaves one
+  devlog line, its kind of work, model, effort and whether it paid;
+  run 5's reading adds how a run on full auto delegated by itself.
+

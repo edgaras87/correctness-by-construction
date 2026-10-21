@@ -145,6 +145,27 @@
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §10.
 
+- [ ] Decide how work is run by agents: delegation, model and
+      effort by kind of work, forks or fresh agents, new challenges
+      and look-backs (2026-10-22, the reviewer).
+      Context: nothing here says when a lead agent hands work to
+      others, with which model and effort, or whether a fork or a
+      fresh agent takes it. On 2026-10-21 the agent sent 3 readers
+      to run 4 and 8 to the close read on its own judgement; run 4
+      changed model mid-run with no record of why. New challenges
+      have `approach-drafting`; looking back has a trial in run 5.
+      Ideas:
+      - low effort to read and collect; the highest to find the
+        options; medium or high to implement and summarise.
+      - a lead agent fans out readers and keeps the decisions.
+      - each delegation leaves one line: the kind of work, the
+        model, the effort, whether it paid.
+      - an approach on trial before any convention (ADR-0058); a
+        convention of its own, or a section of agent-arrangement.
+      Trigger: run 5's reading, with the lines gathered by then.
+      See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
+      §11.
+
 - [ ] Decide how an approach and a shape divide an output: the
       approach says what is done, the shape how its output looks
       (2026-10-20, the reviewer).
