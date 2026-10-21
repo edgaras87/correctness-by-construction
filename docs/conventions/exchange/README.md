@@ -39,6 +39,10 @@ arrangements, each side holding only what it runs
   deliverer's**, loading when a reading in `temp/` is read, not
   while a new one is written. What `exchange-read` writes, and what
   the work then fills, to one form.
+- **`.claude/rules/working-a-reading.md` — how a reading's list is
+  worked, the deliverer's**, practice under this page, loading when
+  a reading in `temp/` is read. It works each item to the ending
+  §6.5 names.
 
 No artifact explains anything. What derives from this page is that
 list. A change here walks it; a change forced in one of them is
@@ -457,8 +461,9 @@ every finding, one line each, revised as items close and deleted
 when the work does. One per run at a time. The reading is the
 list; working it is ordinary work here — a commit plan when it
 takes more than one commit, an ADR when a decision has rejected
-options — and the exchange says nothing about how, only what each
-item must end as, and where.
+options. This page says only what each item must end as, and
+where; how the list is worked is
+`.claude/rules/working-a-reading.md`'s, practice under it.
 
 *Learned by 2026-09-17: a reading asks what the run teaches the
 worked example, `references/worked-example.md` in cbc-framing and
@@ -535,7 +540,7 @@ new is written without it (`docs/conventions/agent-arrangement/`
 - **What `foundation` holds for each kind of file** —
   `docs/conventions/conventions/` §2.
 - **How a shape reaches a run** — `docs/conventions/shapes/` §4.
-- **How the deliverer works a reading** — ordinary work: a commit
+- **The commits and decisions of working a reading** — a commit
   plan when it takes more than one commit,
   `docs/conventions/commit-plan/`, and an ADR when a decision has
   rejected options, `docs/conventions/project-recording/`.
