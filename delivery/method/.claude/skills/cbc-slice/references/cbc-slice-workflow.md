@@ -72,9 +72,9 @@ that block. It does not open a section of its own.
 like?*
 
 **Taken as written, from the framing.** The kill arrived shaped as an
-invariant from the framing's stage 3. Using it is the handoff. The seed
-example's invariant: "N identical requests → exactly one persisted
-order." The adversity is pulled from the LAYER-1-ENVIRONMENT census,
+invariant from the framing's stage 3. Using it is the handoff. The worked
+example's invariant: "N arrivals of one submission → exactly one
+recorded order." The adversity is pulled from the LAYER-1-ENVIRONMENT census,
 not invented: contention, duplicate delivery, crashes and partial
 failure, reordering. "Correct" means nothing until it says correct
 *against what*.

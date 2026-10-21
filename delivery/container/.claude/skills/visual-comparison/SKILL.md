@@ -1,8 +1,8 @@
----
-name: visual-comparison
-description: Settle how a structure is shown — a picture, a table, a plain list — by writing down what the reader must get and rendering every candidate against it. Use when a diagram might be the answer, including deciding it should not be.
-foundation: the visual-comparison convention
----
+--- name: visual-comparison description: Settle how a structure is
+shown — a picture, a table, a plain list — by writing down what the
+reader must get and rendering every candidate against it. Use when a
+diagram might be the answer, including deciding it should not be.
+foundation: the visual-comparison convention ---
 
 # Visual Comparison
 
@@ -27,8 +27,8 @@ picture, a numbered list against both.
 **The candidate set must contain at least one thing that is not a
 picture** — a table, a numbered list, the prose you already have.
 Otherwise a picture wins by construction and the comparison cannot
-return *no picture*, which is a real answer. In CBC ADR-0028 the table
-was the best answer to one requirement and lost on another; a set
+return *no picture*, which is a real answer. Once, the table was
+the best answer to one requirement and lost on another; a set
 without it would have hidden that.
 
 Where a project holds to plain text that renders on GitHub and in
@@ -98,17 +98,16 @@ name the case, it is not an entry yet.
   meant for handoffs between actors and had to draw a read-only
   reading as an arrow into the other repo — asserting the opposite
   of the rule the procedure existed to keep. A picture that states
-  the opposite of the truth is worse than no picture (CBC ADR-0027,
-  CBC ADR-0028).
+  the opposite of the truth is worse than no picture.
 
 - **A requirement no candidate can hold is evidence about the
   requirement.** Struck, not failed — and say so in the record, so
-  the next comparison starts from a corrected spec (CBC ADR-0028).
+  the next comparison starts from a corrected spec.
 
 - **Building is what finds the modelling error.** The two-subgraph
   flowchart could not place the operator, who works in both repos.
   The fix was not a third box but the recognition that the
-  operator is transport, not a place (CBC ADR-0028).
+  operator is transport, not a place.
 
 - **Asked for a picture, this method is not always what is wanted.**
   A model written in prose was asked for a diagram of it. The method
@@ -126,13 +125,13 @@ name the case, it is not an entry yet.
 - **Using a dialect is not fighting it.** Ordinary syntax is
   ordinary. Invisible links, spacer nodes and nodes declared out
   of meaning order are the fight, and a candidate needing them has
-  lost (CBC ADR-0027 decision 2).
+  lost.
 
 ## 5. What this does not do
 
 - It does not choose a format for another repo. The deliverer's
-  Mermaid trial is provisional and does not travel (CBC ADR-0027
-  decision 3); a run decides its own forms.
+  Mermaid trial is provisional and does not travel; a run decides its
+  own forms.
 - It does not run on a schedule, and it is not a review of forms
   already settled.
 

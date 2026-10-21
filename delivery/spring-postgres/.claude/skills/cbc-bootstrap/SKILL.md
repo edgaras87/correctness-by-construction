@@ -71,7 +71,7 @@ Reason out and present for confirmation, each with its why:
   definition's runtime ground says whether the system runs as more than
   one instance, and if it does, a single-process pass proves a shape
   nobody runs — the proof must cross the process boundary (the stack
-  walkthrough's stage 5). Decide it here, by name, with its why.
+  walkthrough's step 5). Decide it here, by name, with its why.
   Decide, too, **the form the harness starts the system in: the form
   it ships.** A plain process ships, so the evidence forks plain
   processes of the build's output, with the environment a real
@@ -159,8 +159,10 @@ here — under the stack conventions:
 - Write the build file per `references/spring-pom-convention.md` — every
   dependency enters at the step that earns it, with its earning reason as a
   comment, grouped by capability.
-- The repo already exists: **extract into it, merge plumbing files, never
-  overwrite** (.gitignore grown, .gitattributes merged, README kept).
+- The repo already exists: **extract into it, never overwrite.** Each
+  hygiene file, `.gitignore`, `.gitattributes` and `.editorconfig`,
+  takes its stack overlay below the marked line it carries; the README
+  is kept.
 - Widen the build's test includes so integration tests run under the one
   standard test command — no second command, no test that quietly never runs.
 
@@ -207,7 +209,7 @@ The certified facts also project into the README (CBC ADR-0013): the
 Prerequisites section the establishment opened — merged and filled
 from `templates/readme-run-test.md`. Run ends in the lived proof of
 life; Test is the one standard test command, verified structurally at
-certification. The kit's README stub ships without these sections —
+certification. The container's README stub ships without these sections —
 container stays, direction goes — and they arrive now because the
 harness is real.
 

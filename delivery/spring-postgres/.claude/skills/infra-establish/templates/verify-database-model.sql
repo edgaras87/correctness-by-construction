@@ -4,7 +4,7 @@
 
 -- infrastructure/postgres/verify-database-model.sql
 --
--- The catalog half of the two-way verification (walk step 5): the ground's
+-- The catalog half of the two-way verification (walk stage 5): the ground's
 -- real state queried against the role-split model's claims. Run on demand,
 -- never at container start:
 --

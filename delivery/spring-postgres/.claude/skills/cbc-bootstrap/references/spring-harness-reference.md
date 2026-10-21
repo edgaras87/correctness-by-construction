@@ -8,7 +8,7 @@ PostgreSQL. Lived three times; the shape below is the third pass's,
 the most corrected.
 
 **Masters nothing.** The *outcomes* these files satisfy are
-`spring-boot-walkthrough.md`'s, stages 4 and 5; what enters the build
+`spring-boot-walkthrough.md`'s, steps 4 and 5; what enters the build
 and how each entry is written is `spring-pom-convention.md`'s; the
 machine setup that makes containers reachable is the project's
 operator manual's. **The run's requirements document wins over all of
@@ -44,7 +44,7 @@ major version.
 
 ## 1 · The database base — a faithful miniature of the ground
 
-**Outcomes it realizes** (walkthrough, stage 4): one PostgreSQL
+**Outcomes it realizes** (walkthrough, step 4): one PostgreSQL
 container of the ground's major version per test JVM, started once
 and shared, its lifecycle explicitly the harness's own; migration run
 **harness-side, immediately after the container starts and before any
@@ -160,7 +160,7 @@ public abstract class DatabaseIT {
 
 ## 2 · The evidence tier
 
-**Outcome** (stage 4): a small, **layered** test-support base — the
+**Outcome** (step 4): a small, **layered** test-support base — the
 database base above, and a web-plus-database base over it — so a test
 declares what it needs and inherits the rest.
 
@@ -206,7 +206,7 @@ public abstract class WebDatabaseIT extends DatabaseIT {
 
 ## 3 · The migration-path test
 
-**Outcome** (stage 4): the migration path **proven, not assumed** —
+**Outcome** (step 4): the migration path **proven, not assumed** —
 and, riding on it, the connection identity asserted and the
 authority split witnessed: the runtime identity cannot change
 structure in the miniature, refused with the ground's own message.
@@ -292,7 +292,7 @@ class MigrationPathIT extends DatabaseIT {
 
 ## 4 · The probe pair
 
-**Outcomes** (stage 5): one **probe endpoint** in the main source
+**Outcomes** (step 5): one **probe endpoint** in the main source
 doing a real round-trip as the runtime identity, documented as
 scaffolding that dies when the first real slice lands; and a
 **contention probe test** — many requests held at a barrier and
@@ -441,7 +441,7 @@ class ContentionProbeIT extends WebDatabaseIT {
   `spring-boot-restclient`, `flyway-database-postgresql`).
 - **The machine setup.** The container-runtime socket, the properties
   file that binds only from `$HOME`, Ryuk under rootless podman — the
-  walkthrough's stage 4 and the project's operator manual.
+  walkthrough's step 4 and the project's operator manual.
 - **The test-command wiring.** Widening the build's test includes to
   cover the integration naming is a build decision, stated as an
   outcome in the walkthrough.
@@ -481,7 +481,7 @@ class ContentionProbeIT extends WebDatabaseIT {
    above stages the race inside one test process. If the framing's
    runtime ground says the system runs as more than one instance,
    the machinery proof must cross the process boundary (walkthrough,
-   stage 5): a single-process pass proves a shape nobody runs, and a
+   step 5): a single-process pass proves a shape nobody runs, and a
    lock inside the process could make it pass. Lived once, carried
    here as prose until a second run lives
    it: the container and the migration lifted out of the database

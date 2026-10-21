@@ -58,7 +58,7 @@ A collision that breaks nothing:
   their tags, then what happens when they meet.
 - **Every kill states its own death, in bold, in its own words.** A
   kill whose death is another kill's says so after its own:
-  "KILL-1's death, the racers our own instances". A reader landing
+  "KILL-1's death, the answer lost rather than late". A reader landing
   on any kill sees what breaks without reading another.
 - **A kill may have cases,** labelled (a), (b), when one fact meets
   one possession in more than one way. Each case ends in its death,

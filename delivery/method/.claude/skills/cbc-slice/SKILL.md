@@ -66,10 +66,7 @@ per guarantee. Which stage writes which part:
 
 1. **Take the invariant from the registry entry, and the adversity
    from the LAYER-1-ENVIRONMENT census, as written.** Never
-   re-invent them. Only when no framing exists (the seed-example
-   case) are both named here: the invariant as one falsifiable
-   sentence about state that must never be violated, and the
-   adversity it must survive.
+   re-invent them.
 2. **Name what the framing does not carry.** A slice may meet
    questions the framing never answered: how the thing the invariant
    is about comes to exist, the conventions of the door the adversity

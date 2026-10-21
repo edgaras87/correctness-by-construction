@@ -34,11 +34,12 @@ structure. No JPA, no in-app Flyway, no `-data-` starters.
 ## 2. Stand the skeleton in the live repo
 
 - Initialize to the identity fields and **extract into the existing repo
-  root** — beside the infrastructure dirs. Merge, never overwrite:
-  `.gitignore` (gaining build output, IDE, OS, log sets), `README.md`,
-  `.gitattributes` (wrapper line-ending lines merged in: shell wrapper LF,
-  cmd wrapper CRLF).
-- Capabilities at this stage and no more: an HTTP surface and operational
+  root** — beside the infrastructure dirs. Never overwrite: each
+  hygiene file takes its stack overlay below the marked line it
+  carries — `.gitignore` (build output, IDE, OS, log sets),
+  `.gitattributes` (wrapper line endings: shell wrapper LF, cmd
+  wrapper CRLF), `.editorconfig` — and `README.md` is kept.
+- Capabilities at this step and no more: an HTTP surface and operational
   health.
 - Generated cruft removed: help files, empty static/template dirs;
   properties file replaced by a YAML carrying the application name only;

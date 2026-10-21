@@ -110,7 +110,7 @@ but a silent deviation poisons the record.
 Where the ground's record lives depends on what the repo keeps —
 lived by two runs, and the shape below is theirs:
 
-- **A repo with records** (a plan, ADRs, a devlog — every kit-born
+- **A repo with records** (a plan, ADRs, a devlog — every container-born
   project): **no establishment log.** Decisions are ADRs — the
   environment; the service set with its not-provisioned list; the
   constraints, each with its enforcement. The walk as lived is the

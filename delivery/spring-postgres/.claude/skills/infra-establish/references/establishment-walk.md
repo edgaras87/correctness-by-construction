@@ -150,7 +150,7 @@ needs in hand and linking the manual for the rest. Skeleton:
 `templates/readme-prerequisites.md` in this skill — merge, fill,
 and the section is the run's own (CBC ADR-0008). The stack's own
 prerequisite line is **not** written here: its fact is born at
-bootstrap, whose skill carries it (CBC ADR-0013). The kit's README stub
+bootstrap, whose skill carries it (CBC ADR-0013). The container's README stub
 ships without the section — container stays, direction goes — and
 the section arrives now because this gate made it true.
 
