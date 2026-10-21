@@ -129,7 +129,7 @@ corner.
 
 ---
 
-## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
+## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the foundation check, `visual-comparison`)    [!] stopped: Birth run 5, on full auto (devlog 2026-10-21, later)
 
 Goal: Living text written before a rule now meets that rule, and
 `docs/conventions/project-recording/` §1 is a map of the records
