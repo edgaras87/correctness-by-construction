@@ -52,6 +52,11 @@ either.
    - **the project's own:** it stays with the project that drafted
      it, and goes no further;
    - **dropped:** nothing in it is worth keeping.
+
+   For a run's approach, each ending is also one of the exchange's
+   three verdicts (`docs/conventions/exchange/` §6.5): placed is
+   taken, on trial is held, the project's own and dropped are
+   declined.
 5. **Place what is placed,** as a commit plan. A new convention is
    added by `docs/conventions/conventions/` §4. A section of an
    existing one goes into its manual first, and the foundation

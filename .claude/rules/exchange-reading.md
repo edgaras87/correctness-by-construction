@@ -70,4 +70,4 @@ How the list is worked is `.claude/rules/working-a-reading.md`'s.
 ## Decisions
 
 - ADR-0036 — the exchange: what a reading is, and that its form
-  is held here as a rule, because its moment is a file being written
+  is held here as a rule, loading when a reading is read

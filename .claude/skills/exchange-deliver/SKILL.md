@@ -6,11 +6,11 @@ foundation: the exchange convention
 
 # Deliver
 
-Two acts: the note, then the staging on the word. The same whether
+Two stages: the note, then the staging on the word. The same whether
 a reading preceded it or we changed something on our own; the
 verdicts and the read-through ride only when one did.
 
-## 1. Write the note
+## Stage 1 — write the note
 
 In `temp/note-to-<run>-<date>.md`, told not delivered.
 
@@ -74,10 +74,10 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
 9. **Commit the note last.** The commit after this one is `H`, and
    the staging is named by it.
 
-## 2. Stage
+## Stage 2 — stage and copy across
 
-On the reviewer's word. If the agent stages, it runs 2.1 and 2.2,
-reports, and waits for the word before 2.3.
+On the reviewer's word. If the agent stages, it runs steps 1 and
+2, reports, and waits for the word before step 3.
 
 1. **The run's tree is quiet, and nothing of ours is in its
    `temp/`:**
@@ -116,7 +116,7 @@ reports, and waits for the word before 2.3.
    `concept/` is the one path that is not a mirror, and this is the
    one line that says so.
 
-   `mktemp -d` makes the folder owner-only, and the copy in 2.3
+   `mktemp -d` makes the folder owner-only, and the copy in step 3
    carries its mode: a run that takes the staging's `.` onto its
    root gets 700 there, which git does not show. The `chmod` is why.
 
@@ -130,16 +130,16 @@ reports, and waits for the word before 2.3.
    The run's rule takes it from there. The staging and the note
    leave `temp/` when it has; whatever else is there is the run's.
 
-## 3. A note without files
+## A note without files
 
 A reading that found nothing addressed to us: the note is one line —
-`read through <run HEAD>, nothing to answer, no files` — and step 2
-copies only the note. One that found something and took none of it
-is not this case: a declined item still owes its verdict, so its
-note carries the verdicts and no files. The run records the
-read-through; the pin does not move.
+`read through <run HEAD>, nothing to answer, no files` — and
+Stage 2 copies only the note. One that found something and took
+none of it is not this case: a declined item still owes its
+verdict, so its note carries the verdicts and no files. The run
+records the read-through; the pin does not move.
 
-## 4. Gates
+## Gates
 
 - The note is committed, and the staging is named by that commit.
 - The run's tree was quiet and its `temp/` held nothing of ours
@@ -148,14 +148,14 @@ read-through; the pin does not move.
 - The run's `temp/` gained exactly the bundle and the note, and
   nothing tracked in the run changed.
 
-## 5. What this does not do
+## What this does not do
 
 - It does not decide verdicts. They come from the reading, as its
   items ended.
 - It does not take. The run's rule does, from `temp/`, in its own
   time.
 - Birth: every file of each group into the newborn's root, not
-  only the copies 2.2 takes, followed by the fills —
+  only the copies Stage 2's step 2 takes, followed by the fills —
   `delivery/installs/pure-seed.md` has the rest.
 
 ---

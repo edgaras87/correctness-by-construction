@@ -71,7 +71,8 @@ there.
 
 8. **Records as they fall.** An ADR for a decision with rejected
    options; the decisions log for a change to the arrangement; the
-   devlog at a session's end and at a pause.
+   devlog at a session's end, at a pause, and when a TODO item is
+   added, for its story.
 
 9. **When the list is closed, `exchange-deliver`.** Closed means the
    first gate below holds: a finding with no item reaches no
@@ -97,7 +98,6 @@ against them (`PLAN.md`, the step form's Known already).
 - The note, written from the reading's final state, is in the run,
   and names the commit read through.
 - The reading's lessons sit where they act, or in TODO.
-- The reading is deleted, and the devlog says so.
 
 ## Stages
 
@@ -105,14 +105,15 @@ For a reading's step, its Notes and its Now line: read
 (`exchange-read`); decide and work (steps 1 to 8 here); note
 (`exchange-deliver`); close (step 9). When the run moves and the
 reading is extended, by `exchange-read` again or by
-`exchange-deliver`'s step 0, Now returns to read.
+`exchange-deliver`'s Stage 1, step 0, Now returns to read.
 
 ## What this does not cover
 
 - **What a reading looks like** — `.claude/rules/exchange-reading.md`.
 - **When a reading opens, extends, closes, or is overtaken** —
   `docs/conventions/exchange/` §6.3 and §6.4.
-- **The run moving before the note** — `exchange-deliver`, step 0.
+- **The run moving before the note** — `exchange-deliver`, Stage 1,
+  step 0.
 - **How a commit plan runs** — `commit-plan`.
 
 ---

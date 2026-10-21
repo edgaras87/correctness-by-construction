@@ -9,8 +9,8 @@ rules, comments and config. Where it lives, never how it reads.
 
 <!-- No paths: line, so this loads at the start of every session.
      Ours, derived from docs/conventions/project-recording/ §11,
-     rule 1, like the container's; ours also allows a tagged
-     retelling, and its examples are this repo's. -->
+     rule 1, like the container's; how the two differ, that
+     manual's *What this is made usable as* lists. -->
 
 ## The rules
 

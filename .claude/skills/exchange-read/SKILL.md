@@ -71,7 +71,7 @@ document afterwards is work, not this skill; when the work is done,
 
 ## 2. Gates
 
-- The reading exists, to its shape, and its first line names the
+- The reading exists, to its form, and its first line names the
   run's `HEAD`.
 - Every edit, ask and finding in the span has one line, and none of
   them is decided.

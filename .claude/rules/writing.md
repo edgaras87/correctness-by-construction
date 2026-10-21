@@ -10,8 +10,8 @@ what it says.
 
 <!-- No paths: line, so this loads at the start of every session.
      Ours, derived from docs/conventions/writing/ like the
-     container's; it differs where the seat does: runs read what we
-     write. -->
+     container's; how the two differ, that manual's *What this is
+     made usable as* lists. -->
 
 ## The rules
 
@@ -58,9 +58,10 @@ Same meaning. It can be read once.
 
 - **Chat:** every answer.
 - **Records:** every new or changed line. History keeps its words.
-- **What runs read:** the skills, rules, shapes, manuals, concept
-  chapters and notes we write, every new or changed line. Older
-  text is rewritten in work of its own.
+- **What runs read:** the skills, rules, shapes, approaches,
+  concept chapters and notes we write, and the manuals they come
+  from, every new or changed line. Older text is rewritten in work
+  of its own.
 - **Reading a dense text:** follow what it says, not how it says
   it. This rule sets the voice.
 
