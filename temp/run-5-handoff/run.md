@@ -36,6 +36,13 @@ closing gate, never before the work it judges.
   meeting.
 - **Before Release,** the registry is checked against the briefing's
   In: each item is covered by a slice, or refused with a reason.
+- **The stack is the delivered one,** as the stack skills say.
+  Choosing another is out.
+- **The name is the briefing's,** `event-tickets`: the database,
+  its roles and every other place a name goes use it. Step 2,
+  Identity, keeps it and decides the description. No remote is
+  created, and nothing leaves this machine: the remote is the
+  reviewer's, after Release.
 
 ## 3. Analysis that shows
 
@@ -227,13 +234,16 @@ logged, then the stopped step resumed where it was.
 
 ## 13. Where the run may work
 
-Only inside this directory, and the containers it starts. Nothing
-outside it is read or changed: no other repository, no other
-project. `temp/` is the run's scratch space; its README says how
-it is used.
+Only inside this directory, and the containers and volumes it
+creates. Nothing outside it is read or changed: no other
+repository, no other project. Other containers and volumes on this
+machine belong to other projects; they are not listed, started,
+mounted or looked into. `temp/` is the run's scratch space; its
+README says how it is used.
 
 ## 14. When auto ends
 
 When Release's gate closes. Release is local: nothing leaves the
 machine. What waits for the reviewer then: reading the decision log,
-pushing, deleting the `try/` and `red/` branches.
+creating the remote and pushing, deleting the `try/` and `red/`
+branches.

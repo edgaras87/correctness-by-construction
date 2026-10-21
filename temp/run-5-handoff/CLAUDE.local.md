@@ -4,7 +4,7 @@
 - Commit freely: small commits on each step's branch.
 - At a step's close: fast-forward main to the branch as it is, and
   tag `run5/step-<n>`. Agent files apart from project files.
-- Never push. Never delete a branch.
+- Never create a remote. Never push. Never delete a branch.
 
 ## Explaining
 - Write so I can read it once, in chat and in records:
@@ -20,5 +20,6 @@
   approach on trial: `.claude/approaches-on-trial/approach-drafting.md`.
 
 ## Where you work
-- Only inside this directory. Never read or change another
-  repository.
+- Only inside this directory, and the containers and volumes you
+  create. Never read or change another repository, or another
+  project's containers.

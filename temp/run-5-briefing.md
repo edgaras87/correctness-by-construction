@@ -11,6 +11,8 @@ is released, and the seat goes back on sale.
 On busy sales two complaints come in: a seat sold to two people, and
 a buyer charged with no ticket to show for it.
 
+The service to build is called `event-tickets`.
+
 ## The audience
 
 The promoter's staff, who answer those complaints and need to say
