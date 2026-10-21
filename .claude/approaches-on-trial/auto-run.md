@@ -53,8 +53,9 @@ started run 4 (`temp/RUN-4.md`). Never on our seat.
    holds.
 6. **Birth by `delivery/installs/pure-seed.md`,** from a clean
    tree. The intent and the hand-off go into the newborn's `temp/`.
-   The reviewer starts the run with the hand-back line only: the
-   run composes its own opening.
+   The reviewer starts the run with the seed's own prompt, its
+   review lines replaced by full auto, so the birth stays
+   comparable with every other; nothing else is composed for it.
 
 ## Not known yet
 
@@ -67,6 +68,10 @@ started run 4 (`temp/RUN-4.md`). Never on our seat.
   this run is done.
 - **How the reviewer checks a run while it runs,** without
   stopping it.
+- **How a run is kept from reading what it should not.** A `Read`
+  deny rule does not stop a shell; for run 5 the other
+  repositories were made unreadable on disk, and the deliverer's
+  stayed readable, on trust.
 - **Whether the light read is enough,** or a run should not be born
   on full auto before the last one has been read in full.
 
