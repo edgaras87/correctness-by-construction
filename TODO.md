@@ -24,17 +24,17 @@
 
 ## Now (due while the open step runs)
 
-## Next (upcoming steps — assign each to a step when triaged)
+## Next (each due at its trigger)
 
 - [ ] Decide how this repo's text is divided: by kind, a model, a
       convention or an approach, and by subject (2026-10-20, the
       reviewer).
       Context: the deliverer's role is spread over `ARCHITECTURE.md`
       §2 and §3, `docs/models/tiers.md`, the exchange, eleven seats
-      sections and project-recording §9; staying in step over
-      project-recording §11 and conventions §3.1 to §3.6.
-      Project-recording §1 is a model of the records inside a manual.
-      Only the agent has all three kinds: `docs/models/agent.md`,
+      sections and `docs/conventions/project-recording/` §9; staying
+      in step over `docs/conventions/project-recording/` §11 and
+      `docs/conventions/conventions/` §3.1 to §3.6. Only the agent has
+      all three kinds: `docs/models/agent.md`,
       `docs/conventions/agent-arrangement/`, `.claude/`. Round 2's
       Layout fixes will make homes.
       Ideas:
@@ -62,9 +62,10 @@
         it up; beside derives, points and governs (`9fd905b`).
       - the agent's chain rechecked against the layers before it is
         the template, so its errors are not copied.
-      - project-recording §9's flow joins the deliverer → run
-        relation, beside the exchange and the retrospective; its §1
-        may be a model.
+      - `docs/conventions/project-recording/` §9's flow joins the
+        deliverer → run relation, beside the exchange and the
+        retrospective; `docs/conventions/project-recording/` §1 may be a
+        model.
       - folding the agent model into agent-arrangement is the same
         question the other way round (its own item).
       - weigh each split by maintenance, readability,
@@ -84,8 +85,10 @@
       `approach-drafting`'s stage 1 lists the parts an approach
       file holds, the form of its own output.
       Ideas:
-      - a shape adapts: divergence is how it learns (shapes §2), and
-        a shape that never changes is finished or unread (§5.2).
+      - a shape adapts: divergence is how it learns
+        (`docs/conventions/shapes/` §2), and a shape that never
+        changes is finished or unread (`docs/conventions/shapes/`
+        §5.2).
       - an approach is written without the output's form; a part a
         shape needs is asked for as content, in the approach's own
         words.
@@ -107,16 +110,18 @@
       manual as a concept: an idea written down, with sub-ideas,
       and its rules and skills as the convention. "Concept" already
       names the CbC concept and the tiers model's concepts tier.
-      Conventions §3.5 calls both a description.
+      `docs/conventions/conventions/` §3.5 calls both a description.
       Ideas:
       - a manual is a concept; its rules and skills, the convention.
-      - "description" stays the general word, as §3.5 has it.
+      - "description" stays the general word, as
+        `docs/conventions/conventions/` §3.5 has it.
       Trigger: the item on what a thing is, decided.
       See: devlog 2026-10-19, the redesign's ideas.
 
 - [ ] Decide how commits cited by hash can still be regrouped
       (2026-10-19, the reviewer).
-      Context: `commit-plan` §4 regroups a set's commits before its
+      Context: `.claude/skills/commit-plan/SKILL.md` §4 regroups a
+      set's commits before its
       close, and a regroup gives them new hashes. This repo cites
       hashes in living text: the refinement's file, TODO, other
       commit bodies. So the refinement's commits up to `ccce6af`
@@ -131,7 +136,7 @@
         to new, grepped and replaced in the same rewrite.
       - regroup only on the branch, before main takes it.
       Trigger: the refinement of this repo closes; its rounds read
-               `commit-plan` and conventions §3.2.
+               `commit-plan` and `docs/conventions/conventions/` §3.2.
       See: devlog 2026-10-19, regrouping.
 
 - [ ] Make the conventions index a full local map (2026-09-30, the
@@ -141,15 +146,17 @@
       they govern, read or describe, stated as about thirty pointers
       across the manuals' *What this does not cover*, and seen
       together nowhere. The local-map rule now exists
-      (project-recording §8.6, ADR-0045).
+      (`docs/conventions/project-recording/` §8.6, ADR-0045).
       Ideas:
-      - all twelve and how each touches the others, derived from
+      - all eleven and how each touches the others, derived from
         those pointers, built by `visual-comparison`.
-      - three links, each with its upkeep: derives (conventions
-        §3.5, the foundation check), points (one home, the grep
-        at a commit that moves a section, a step's close), governs
+      - three links, each with its upkeep: derives
+        (`docs/conventions/conventions/` §3.5, the foundation
+        check), points (one home, the grep at a commit that moves a
+        section, a step's close), governs
         (none: a change to a rule that governs other text could
-        sweep that text or file the sweep, a rule beside §3.5).
+        sweep that text or file the sweep, a rule beside
+        `docs/conventions/conventions/` §3.5).
       - scenarios as entries into one procedure, the foundation
         check: a manual, a skill or rule, a run's finding. Two
         exits it lacks: the governs sweep, and what must run again
@@ -175,6 +182,10 @@
       - how run 4 closed its step branches (`run4/step-9` to 11):
         the playbook still ticks "reached main by fast-forward" in
         the gate, which ours dropped (`49d06e6`).
+      - whether run 4's birth fired three triggers: "before the next
+        birth", shipping `temp/`; "the next birth's Step 3 close",
+        the ground-must-be-up rule; "a fourth run deriving
+        `.gitignore` by hand", cbc-bootstrap's hygiene.
       Trigger: the refinement of this repo closes; in a new session.
       See: `f097695`, the kickoff and the message it took.
 
@@ -197,7 +208,8 @@
         record's. Five mechanisms hold them today.
       - read at the gate and adaptable like any shape; the approach
         or rule that writes the document carries no layout.
-      - what must hold while writing stays a rule (shapes §3): a
+      - what must hold while writing stays a rule
+        (`docs/conventions/shapes/` §3): a
         manual's section order may; how each part is written may not.
       Trigger: run 4's reading, which reads how run 4 lived run 3's
                shapes.
@@ -227,8 +239,9 @@
 
 - [ ] Write a rule that writes a skill or rule from its convention
       (2026-10-17, the reviewer).
-      Context: conventions §2 says how a skill or rule is written,
-      and nothing puts it in front of the writer: a manual has
+      Context: `docs/conventions/conventions/` §2 says how a skill
+      or rule is written, and nothing puts it in front of the
+      writer: a manual has
       `convention-manual.md`, a skill or rule has no such rule.
       An approach on trial writes freely, and its pieces are input:
       what the work needed. When an evaluation places one, the
@@ -285,14 +298,14 @@
 - [ ] Birth run 5 from this repo alone, holding one pin, and write
       `exchange-birth` while it runs (2026-09-26, the reviewer; the
       birth itself from Step 10, ADR-0057).
-      Context: written from the exchange's manual, as
-      `exchange-read` and `exchange-deliver` were, keeping the
-      seed's intent — it delivers everything and decides nothing.
-      Then deliver §5 points at it, `pure-seed.md` goes, and
-      ADR-0016's procedure of record moves. One risk to carry in
-      (Variant B, ADR-0018): nothing forces the newborn to read
-      what it was given, and the first commit on main is the only
-      evidence the reading took.
+      Context: written from the exchange's manual, as `exchange-read`
+      and `exchange-deliver` were, keeping the seed's intent — it
+      delivers everything and decides nothing. Then
+      `.claude/skills/exchange-deliver/SKILL.md` §5 points at it,
+      `pure-seed.md` goes, and ADR-0016's procedure of record moves.
+      One risk to carry in (Variant B, ADR-0018): nothing forces the
+      newborn to read what it was given, and the first commit on main
+      is the only evidence the reading took.
       Ideas: first-time work on our seat, so an approach on trial
              drafted by `approach-drafting` (ADR-0058).
       Trigger: the reviewer names run 5's birth; it opens as a step.
@@ -329,9 +342,8 @@
       no path is claimed by two of our groups, and the take's diff
       (§4) sees that a file differs, not whose it is. Once so far;
       checked by hand at `e6538f6`, where no staged path was new.
-      The method's four shapes now sit at run 3's own
-      `.claude/shapes/` paths (ADR-0052): the next delivery to run 3
-      is this trigger.
+      The method's four shapes sit at run 3's own `.claude/shapes/`
+      paths (ADR-0052); the next birth is where they first land.
       Ideas: in `exchange-deliver`, the staged paths against the
              run's files that are not at its pin.
       Trigger: the next delivery that ships a path new to the run.
@@ -466,10 +478,11 @@
 
 - [ ] Does the playbook need a convention of its own? (2026-09-29,
       the reviewer)
-      Context: project-recording §9 describes it, and one playbook
-      exists, the CbC run's. It is not a shape: shapes §1–2 say a
-      shape is form, never content, and a filled-in template is not
-      one; a playbook is content, copied and filled at birth.
+      Context: `docs/conventions/project-recording/` §9 describes
+      it, and one playbook exists, the CbC run's. It is not a
+      shape: `docs/conventions/shapes/` §1–2 say a shape is form,
+      never content, and a filled-in template is not one; a
+      playbook is content, copied and filled at birth.
       Ideas: a convention of its own, split from §9.
       Trigger: a second typed playbook.
       See: devlog 2026-09-29, the PLAN pass.
@@ -497,8 +510,8 @@
       the reviewer)
       Context: agent-arrangement reasons from `docs/models/agent.md`
       and states a few of its facts itself, each beside a pointer.
-      A fold would grow the manual from about 350 lines to about
-      600; keeping them apart costs a second file to open. On
+      A fold would grow the manual from about 420 lines to about
+      890; keeping them apart costs a second file to open. On
       2026-09-30 neither had drifted from the other.
       Ideas: the model as the manual's theory section, its binding
              and claims with it.
@@ -558,20 +571,12 @@
       again — three edits to copies, ten asks and offers.
       `docs/conventions/exchange/` §6.4 closes an overtaken reading
       "the same way", one pass over its items, and is silent on the
-      note §6.6 says every read ends with. Once so far.
+      note `docs/conventions/exchange/` §6.6 says every read ends
+      with. Once so far.
       Ideas: the overtaken reading sends a note: read, asks open.
              the next read goes back to the last note's read-through.
       Trigger: the next reading overtaken.
       See: devlog 2026-09-30, the delivery to run 3.
-
-- [ ] Say where each run's repository lives (2026-10-08, the
-      reading of run 3).
-      Context: `exchange-read` and `exchange-deliver` both work on
-      `"$run"`, and nothing here names it; finding run 3, at
-      `~/IdeaProjects/cbc-pure-run-3`, took a search of the disk.
-      One run so far, so the devlog's line is enough.
-      Trigger: a second live run, or a run moved.
-      See: devlog 2026-10-08.
 
 - [ ] Name when a run is read (2026-10-01, the working draft).
       Context: a reading happens when the reviewer says. A hand-off
@@ -632,14 +637,14 @@
 
 - [ ] Add a rung for guarantees held by absence to the enforcement
       hierarchy (2026-09-14, run 3's SL-1).
-      Context: no process clock, no state outside the store —
-      nothing to observe at runtime; its wall is a rule on the
-      compiled classes. Run 3 asks for a rung between "single
-      validated entry path" and "code review". It met it again in
-      SL-2 and SL-4, and run 4 rebuilt the same problem from run 3's
-      copies, so neither is a second run. The hierarchy lives in
-      `concept/02` and both cbc-slice files: a concept change, with
-      an ADR and the version question (ADR-0003).
+      Context: no process clock, no state outside the store — nothing
+      to observe at runtime; its wall is a rule on the compiled
+      classes. Run 3 asks for a rung between "single validated entry
+      path" and "code review". It met it again in SL-2 and SL-4, and
+      run 4 rebuilt the same problem from run 3's copies, so neither
+      is a second run. The hierarchy lives in
+      `concept/02-guarantees-and-walls.md` and both cbc-slice files: a
+      concept change, with an ADR and the version question (ADR-0003).
       Trigger: run 5 meeting an absence guarantee.
       See: devlog 2026-09-15; and 2026-10-10.
 
