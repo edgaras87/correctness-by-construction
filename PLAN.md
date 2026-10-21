@@ -129,6 +129,86 @@ corner.
 
 ---
 
+## Step: Birth run 5, on full auto  (`approach-drafting`, `.claude/approaches-on-trial/auto-run.md`, `delivery/installs/pure-seed.md`, `commit-plan`, the foundation check)    [~]
+
+Goal: Run 5 is born from this repo at one pin on main, with an
+intent of the reviewer's and a hand-off for full auto, ready for
+the reviewer to start.
+Now: drafting the approach
+(`.claude/approaches-on-trial/approach-drafting.md`, stage 1).
+Gate:
+
+**At the opening.**
+
+- [x] The step's branch `run-5-birth-2026-10-21` is cut from main
+      at `e849b6a`, and nothing of the step was done on main
+      (2026-10-21).
+- [x] This gate was written before the work started (2026-10-21).
+- [ ] The step's approach is known: no skill, rule or approach on
+      trial covers preparing a full-auto run on our seat, so the
+      step drafts `.claude/approaches-on-trial/auto-run.md`
+      (`.claude/approaches-on-trial/approach-drafting.md`).
+
+**The step's own items.**
+
+- [ ] Run 3's hand-off to run 4 (`temp/RUN-4.md`), run 4's
+      decisions log and its `RETRO.md` were read for how full auto
+      went, and for what run 4 skipped, deferred or did by hand for
+      want of a way; each finding says keep, change or add, for
+      run 5.
+- [ ] Run 5's intent is the reviewer's: event tickets, at least two
+      areas whose meeting is a LAYER-5-INTERACTION question, of
+      moderate size.
+- [ ] Run 5's hand-off says what full auto means for it: it decides
+      everything; it edits its copies under
+      `delivery/container/.claude/rules/delivered-copies.md`; it
+      drafts an approach on trial for any work with no way written;
+      when it stops; its `CLAUDE.local.md`; its limits on the
+      records.
+- [ ] The two TODO items due before a birth are decided: whether a
+      newborn reads `.claude/shapes/` at birth, and whether the
+      container ships `temp/`.
+- [ ] Run 5 is born by `delivery/installs/pure-seed.md` at
+      `~/IdeaProjects/cbc-pure-run-5`, its pin a commit on main, its
+      checks in the seed's own list all passing.
+- [ ] Run 5's intent and hand-off sit in its `temp/`, and what the
+      reviewer starts it with is the hand-back line only.
+- [ ] `ARCHITECTURE.md` §2.5 lists run 5.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves; every ADR a
+      record cites exists; each pair of copies agrees, such as the
+      worked example in `cbc-framing` and in `cbc-slice`.
+- [ ] No living line in a record the step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the step changed.
+- [ ] New and changed text reads to `.claude/rules/writing.md`.
+- [ ] Every commit on `run-5-birth-2026-10-21` follows
+      commit-messages.
+- [ ] No commit straddles agent and project paths.
+- [ ] The step's lessons are folded back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4).
+- [ ] Each approach on trial the step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
+
+Notes:
+- Opened 2026-10-21 from TODO's run 5 birth item, when the
+  reviewer named run 5's birth; the item leaves TODO. Born by
+  `pure-seed.md` today; drafting `exchange-birth` waits for the
+  next birth. The refinement resumes after this step closes. The
+  talk is `TODO-CONVERSATION-MEMORY.md` §8.
+- Stages: draft the approach; the light read of run 4; the
+  reviewer's intent; the two items due before a birth; the
+  hand-off; main takes the branch; the birth. The approach's own
+  stages replace these once drafted.
+
+---
+
 ## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the foundation check, `visual-comparison`)    [!] stopped: Birth run 5, on full auto (devlog 2026-10-21, later)
 
 Goal: Living text written before a rule now meets that rule, and

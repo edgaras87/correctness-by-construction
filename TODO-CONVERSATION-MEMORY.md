@@ -594,3 +594,73 @@ list came of it.
   they are for.
 
 All five went into the round 2 list as written there.
+
+## 8. Run 5's full-auto birth
+
+Item: the step "Birth run 5, on full auto" in `PLAN.md`, opened
+from TODO's run 5 birth item.
+
+### 2026-10-21
+
+#### What the reviewer asked
+
+Between the refinement's rounds: can it stop for another step? The
+reviewer wants another run on full auto: the agent decides
+everything, updates itself where needed, its approaches included,
+and writes an approach on trial wherever it finds work with no way
+written down, a plan step among them. Run 4's full-auto setup is to
+be read again, for what to repeat and what to change. Prepare it,
+but not start it; go back to the refinement; start the run before
+stopping for the day.
+
+Then: a new problem, its intent reaching "LAYER-5-INTERACTION …
+what emerges when areas interact; correctness across them",
+moderate in size, "not too small, but also not to blow". Should
+preparing an auto run start an approach on trial of its own? And
+what might be missed?
+
+#### What was answered
+
+- **A step can stop for another** (`PLAN.md`'s step form): marked
+  `[!]`, its stage kept; main takes its branch by fast-forward; the
+  next step is cut from main. Done at `e849b6a`. Run 5's pin then
+  sits on main.
+- **The birth:** `delivery/installs/pure-seed.md` exists and has
+  born every run; it copies this repo's tree, pinned at `HEAD`, so
+  run 5 gets the latest delivery, round 1's fixes in, rounds 2 and 3
+  not. The tree must be clean when it runs. `exchange-birth`, the
+  birth as the exchange's third act, does not exist yet; drafting
+  it during this birth would close half a TODO item for about an
+  extra hour. The reviewer chose the seed alone.
+- **An approach on trial, yes, for preparing a full-auto run:** it
+  was done once, inside run 3, never on our seat (ADR-0058). It
+  is `auto-run`.
+- **Run 4: a light read,** not its full reading, which waits for
+  the refinement's close: run 3's hand-off (`temp/RUN-4.md`), run
+  4's decisions log and `RETRO.md`, for how full auto went. The
+  reviewer added: what run 4 skipped for want of a way, since those
+  are the gaps run 5's approaches on trial may fill. The cost: run
+  4's method lessons and its edited copies do not reach run 5.
+- **The problem:** LAYER-5 is empty by construction with one area,
+  so at least two areas, each owning its facts, whose meeting can
+  go wrong. Weighed: event tickets (seat holds, payments, orders: a
+  hold expiring as its payment succeeds); equipment rental
+  (reservations, check-out and return, deposits); a shared wallet
+  (accounts, transfers, limits: two transfers each passing a limit
+  check, together breaking it), which may prove one area under
+  concurrency, too small. The reviewer chose event tickets, the
+  intent theirs to write. The container's rule holds: nothing
+  before the briefing names the problem, and this repo hands over
+  the hand-back line only, never an opening prompt.
+- **What might be missed:** the two TODO items due before a birth
+  (shapes read at birth; shipping `temp/`); the run's own settings,
+  as run 4's hand-off had them; when the run stops and how the
+  reviewer checks on it; its directory,
+  `~/IdeaProjects/cbc-pure-run-5`, and its row in
+  `ARCHITECTURE.md` §2.5; that a full-auto run takes hours.
+- **The order:** first staged as a step that only prepares, the
+  birth waiting in TODO while the refinement resumed. The reviewer
+  then chose to birth right away and stop for the day, so the step
+  takes the birth, and the refinement resumes the next day. The
+  retrospective item's trigger, "the close of the step that runs
+  run 5's birth", holds again.

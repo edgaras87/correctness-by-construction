@@ -29,6 +29,36 @@
 
 ## Now (due while the open step runs)
 
+- [ ] Decide whether a newborn reads `.claude/shapes/` at birth
+      (2026-10-17, the reviewer).
+      Context: the seed's prompt says "Read the whole repository
+      first, every file", and the method's four shapes are among
+      them (ADR-0052; named since `141fa74`). A shape is read at a
+      step's gate only, so run 5 would see every shape before its
+      first output. Run 5's second slice judges gate-only, and that
+      judgement would not be clean.
+      Ideas:
+      - the prompt leaves `.claude/shapes/` out of its read.
+      - left as is, and run 5's gate item says the shapes were read
+        at birth.
+      Trigger: before run 5's birth, with its item.
+      See: devlog 2026-10-17, later, shapes at birth.
+
+- [ ] Ship `temp/` in the container, or stop telling runs to use
+      it (2026-09-23).
+      Context: `visual-comparison` and `delivered-copies` send a
+      newborn to `temp/`, and `exchange-deliver` stages into it; the
+      container ships none.
+      The exchange manual calls a run's `temp/` untracked, and since
+      2026-10-08 a take removes only its staging, because run 3
+      keeps its own drafts there; ours is tracked. No shipped text
+      says what the folder is for. Ours, `temp/README.md`, is the
+      seed.
+      Trigger: before the next birth.
+      See: devlog 2026-10-08.
+
+## Next (each due at its trigger)
+
 - [ ] Decide how this repo's text is divided: by kind, a model, a
       convention or an approach, and by subject (2026-10-20, the
       reviewer).
@@ -77,7 +107,19 @@
       See: devlog 2026-10-20, later; 2026-10-19, the redesign's
       ideas; `TODO-CONVERSATION-MEMORY.md` §1.
 
-## Next (each due at its trigger)
+- [ ] Write `exchange-birth` while a birth runs (2026-09-26, the
+      reviewer).
+      Context: written from the exchange's manual, as `exchange-read`
+      and `exchange-deliver` were, keeping the seed's intent — it
+      delivers everything and decides nothing. Then *What this does
+      not do* in `.claude/skills/exchange-deliver/SKILL.md` points at
+      it, `pure-seed.md` goes, and ADR-0016's procedure of record
+      moves. Run 5 is born by the seed, to keep its birth small.
+      Ideas: first-time work on our seat, so an approach on trial
+             drafted by `approach-drafting` (ADR-0058).
+      Trigger: the birth after run 5's.
+      See: devlog 2026-09-26, evening; and 2026-09-30, night,
+      later, where `pure-seed.md` was brought up to date for it.
 
 - [ ] Decide how an approach and a shape divide an output: the
       approach says what is done, the shape how its output looks
@@ -297,38 +339,6 @@
       See: devlog 2026-10-17, later, the plain method;
       `TODO-CONVERSATION-MEMORY.md` §6.
 
-- [ ] Decide whether a newborn reads `.claude/shapes/` at birth
-      (2026-10-17, the reviewer).
-      Context: the seed's prompt says "Read the whole repository
-      first, every file", and the method's four shapes are among
-      them (ADR-0052; named since `141fa74`). A shape is read at a
-      step's gate only, so run 5 would see every shape before its
-      first output. Run 5's second slice judges gate-only, and that
-      judgement would not be clean.
-      Ideas:
-      - the prompt leaves `.claude/shapes/` out of its read.
-      - left as is, and run 5's gate item says the shapes were read
-        at birth.
-      Trigger: before run 5's birth, with its item.
-      See: devlog 2026-10-17, later, shapes at birth.
-
-- [ ] Birth run 5 from this repo alone, holding one pin, and write
-      `exchange-birth` while it runs (2026-09-26, the reviewer; the
-      birth itself from Step 10, ADR-0057).
-      Context: written from the exchange's manual, as `exchange-read`
-      and `exchange-deliver` were, keeping the seed's intent — it
-      delivers everything and decides nothing. Then *What this does
-      not do* in `.claude/skills/exchange-deliver/SKILL.md` points at
-      it, `pure-seed.md` goes, and ADR-0016's procedure of record
-      moves. One risk to carry in (Variant B, ADR-0018): nothing
-      forces the newborn to read what it was given; the first commit
-      on main is the only evidence the reading took.
-      Ideas: first-time work on our seat, so an approach on trial
-             drafted by `approach-drafting` (ADR-0058).
-      Trigger: the reviewer names run 5's birth; it opens as a step.
-      See: devlog 2026-09-26, evening; and 2026-09-30, night,
-      later, where `pure-seed.md` was brought up to date for it.
-
 - [ ] Run this repo's retrospective, on trial (2026-10-17, from
       Step 10's gate).
       Context: `docs/conventions/retrospective/`, the deliverer's
@@ -337,19 +347,6 @@
       Step 10's gate held it until ADR-0057.
       Trigger: the close of the step that runs run 5's birth.
       See: ADR-0057, decision 4.
-
-- [ ] Ship `temp/` in the container, or stop telling runs to use
-      it (2026-09-23).
-      Context: `visual-comparison` and `delivered-copies` send a
-      newborn to `temp/`, and `exchange-deliver` stages into it; the
-      container ships none.
-      The exchange manual calls a run's `temp/` untracked, and since
-      2026-10-08 a take removes only its staging, because run 3
-      keeps its own drafts there; ours is tracked. No shipped text
-      says what the folder is for. Ours, `temp/README.md`, is the
-      seed.
-      Trigger: before the next birth.
-      See: devlog 2026-10-08.
 
 - [ ] Decide whether a delivery checks its paths against the run's
       own files (2026-09-30, the reading of run 3).
