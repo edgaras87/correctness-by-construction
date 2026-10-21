@@ -100,11 +100,11 @@ refresh. Re-land after #58.
 
 ## The agent's own files
 
-`CLAUDE.md`, `.claude/` and `COMMIT-PLAN.md` are the working
-arrangement, not project records. A commit that touches them is
-scoped `agent` — `chore(agent)` to add, install or update a skill
-or rule, `docs(agent)` for a commit plan's lifecycle — and touches
-nothing else.
+`CLAUDE.md` and `.claude/` are the working arrangement, and
+`COMMIT-PLAN.md` is committed with them; none is a project record. A
+commit that touches them is scoped `agent` — `chore(agent)` to add,
+install or update a skill or rule, `docs(agent)` for a commit plan's
+lifecycle — and touches nothing else.
 
 ## Rules
 
