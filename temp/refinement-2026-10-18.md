@@ -570,6 +570,8 @@ reader for the back-link.
 - Narrowed, layer 5: the three pointers in `.claude/decisions.md`
   declined, dated entries of an append-only log. The rest waits
   for layer 6.
+- Ended, `37e4005`: the delivery map's pointer. The container's
+  `one-home.md` keeps its name, declined by DECISION-3.
 
 #### Layer 4: `ARCHITECTURE.md`, `README.md`, the records
 
@@ -774,6 +776,7 @@ resting on the reader for the rest. Known.
 - Narrowed, `7f7fc4b` and `57df143`: `CLAUDE.md`'s table comment names
   project-recording, which lists it back; the decisions log names
   agent-arrangement. The stubs and the playbook wait for layer 6.
+- Ended, `c3a737b`: every stub that holds a form, and the playbook.
 
 #### Layer 5: our agent setup
 
@@ -807,6 +810,8 @@ resting on the reader for the rest. Known.
 - Text: "## 0. Is it first-time work?", "## 1. Open".
 - Ending: our part fixed, `a0087c5`: the skill went. The
   container's retrospective skills wait for layer 6.
+- Ended, `3d7a6a8`: the container's two retrospective skills in
+  stages.
 
 **FINDING-62.** Wiring. Checked.
 - Where: `.claude/skills/first-time-work/SKILL.md`:54-55.
@@ -860,12 +865,14 @@ resting on the reader for the rest. Known.
 - Rule: register in the decisions log, "Then the staging goes"
   (`docs/conventions/exchange/` §4, step 5).
 - Text: step 6 removes the staging; step 7 writes the entry.
+- Ending: fixed, `644d768`: the entry before the staging goes.
 
 **FINDING-69.** Agreement. Checked.
 - Where: `delivery/container/.claude/rules/delivered-copies.md`:74-79.
 - Rule: verdicts are Taken, Declined, Held
   (`docs/conventions/exchange/` §6.5).
 - Text: "takes, reshapes or declines each hunk".
+- Ending: fixed, `644d768`.
 
 **FINDING-70.** Agreement. Resting on the reader.
 - Where: `delivery/container/.claude/rules/delivered-copies.md`:93-95.
@@ -874,6 +881,7 @@ resting on the reader for the rest. Known.
 - Text: "Diff each held copy against the last delivery entry's
   commit". A run commit, whose bytes equal the pin's; the rule's
   may be the better one.
+- Ending: fixed, `644d768`, in the exchange: the rule was right.
 
 **FINDING-71.** Agreement. Checked.
 - Where: `delivery/container/.claude/rules/shapes-lifecycle.md`:91-95.
@@ -883,6 +891,7 @@ resting on the reader for the rest. Known.
   `docs/conventions/exchange/` §6.2).
 - Text: "The deliverer reads this project's shapes when it reads
   the repository." No backlog line.
+- Ending: fixed, `644d768`.
 
 **FINDING-72.** Stale lines. Checked.
 - Where: `delivery/README.md`:82-86.
@@ -890,12 +899,14 @@ resting on the reader for the rest. Known.
   run `retrospective` and `apply-retrospective`.
 - Text: "whose middles are the pipeline, cbc-framing to
   infra-establish to cbc-bootstrap to cbc-slice".
+- Ending: fixed, `37e4005`.
 
 **FINDING-73.** Agreement. Checked.
 - Where: `delivery/README.md`:25-32.
 - Rule: the decisions log went once, at birth
   (`docs/conventions/exchange/` §3.2).
 - Text: the three ways a file lands leave out `decisions.md`.
+- Ending: fixed, `37e4005`.
 
 **FINDING-74.** Stale lines. Resting on the reader.
 - Where: `delivery/fills/cbc-run-pure-playbook.md`:12-13;
@@ -905,6 +916,7 @@ resting on the reader for the rest. Known.
 - Text: "Playbook version: v8 (2026-10-16, provisional; run 3's
   retrospective taken, ADR-0055)". No rule says when a version
   moves.
+- Ending: fixed, `0c63ef4`: v9, updated here; the seed follows.
 
 **FINDING-75.** Stale lines. Uncertain.
 - Where: `delivery/installs/pure-seed.md`:222-223.
@@ -913,6 +925,7 @@ resting on the reader for the rest. Known.
 - Text: "Every bundle copy byte-identical to its master at the
   subject's pin: the concept chapters, the five skills, the four
   shapes." "Bundle copy" is defined nowhere.
+- Ending: fixed, `0c63ef4`: every pinned copy checked.
 
 **FINDING-76.** Wiring. Checked.
 - Where: `delivery/container/.claude/skills/retrospective/SKILL.md`:95-97.
@@ -920,6 +933,7 @@ resting on the reader for the rest. Known.
   says "now". Wrong since the file was made, `fa7fd41`.
 - Text: "The exceptions are in section 4: … and lines that say
   'now' about something no longer true."
+- Ending: fixed, `3d7a6a8`.
 
 **FINDING-77.** Agreement. Resting on the reader.
 - Where: `delivery/container/.claude/skills/retrospective/SKILL.md`:113-116.
@@ -928,6 +942,8 @@ resting on the reader for the rest. Known.
   "Append-only, newest last").
 - Text: "The decisions log gets a 'rules in force now' list on
   top".
+- Ending: moved, `7db58ed`, to run 4's reading item: two runs lived
+  the list on top.
 
 **FINDING-78.** Agreement. Checked. Both seats.
 - Where: `delivery/container/.claude/skills/commit-messages/SKILL.md`:103-107;
@@ -937,6 +953,7 @@ resting on the reader for the rest. Known.
   (`docs/conventions/agent-arrangement/` §1).
 - Text: "`CLAUDE.md`, `.claude/` and `COMMIT-PLAN.md` are the
   working arrangement".
+- Ending: fixed, `b6ecf85` and `0ebac21`, both seats identical.
 
 **FINDING-79.** Agreement. Checked for `visual-comparison`;
 uncertain for the method and the stack.
@@ -950,6 +967,10 @@ uncertain for the method and the stack.
   binds a method or stack skill is not said.
 - Text: "In CBC ADR-0028 the table was …"; "(CBC ADR-0027
   decision 2)".
+- Ending: fixed for `visual-comparison`, `b6ecf85`, `0ebac21` and `bdeca06`,
+  its decisions in the footer, each naming the section it backs.
+  Declined for the method and the stack: conventions §2 binds a
+  convention's artifacts, and theirs stand on the concept.
 
 **FINDING-80.** Agreement. Resting on the reader.
 - Where: `delivery/container/.claude/CLAUDE.md`:14-30, 67-69.
@@ -958,6 +979,8 @@ uncertain for the method and the stack.
   (`docs/conventions/agent-arrangement/` §2.4).
 - Text: at birth, "## Correctness by construction", a stance, and
   "## Local rules" with one rule.
+- Ending: declined. Both lines are true at birth, and §2.4 brings
+  a line in when it becomes true.
 
 **FINDING-81.** Agreement. Resting on the reader.
 - Where: `delivery/method/.claude/skills/cbc-framing/SKILL.md`:202-224.
@@ -965,6 +988,7 @@ uncertain for the method and the stack.
   README (`docs/conventions/project-recording/` §7.4, §7.6).
 - Text: "an honest status line"; "a slice close moves the status
   line".
+- Ending: moved, `7db58ed`, to run 4's reading item.
 
 **FINDING-82.** Agreement. Resting on the reader.
 - Where: `delivery/container/README.md`:3-7;
@@ -975,6 +999,8 @@ uncertain for the method and the stack.
 - Text: "closed by a test that creates its adversity"; "the
   adversity-creating test exists and passes." The skill's gates
   agree; these two openings state the test alone.
+- Ending: fixed in the README stub, `37e4005`; `cbc-slice`'s opening
+  moved, `7db58ed`, to the method's plain rewrite.
 
 **FINDING-83.** Agreement. Resting on the reader.
 - Where: `delivery/spring-postgres/.claude/skills/cbc-bootstrap/SKILL.md`:162-163;
@@ -983,6 +1009,7 @@ uncertain for the method and the stack.
   file carries" (`docs/conventions/repo-hygiene/` §2, §3).
 - Text: "merge plumbing files … (.gitignore grown, .gitattributes
   merged …)". No marker named; `.editorconfig` not mentioned.
+- Ending: fixed, `b6ecf85`.
 
 **FINDING-84.** Agreement. Checked.
 - Where: `delivery/method/.claude/shapes/kill.md`:59-62.
@@ -991,6 +1018,7 @@ uncertain for the method and the stack.
   §4.2).
 - Text: "\"KILL-1's death, the racers our own instances\"", run
   3's words (`d7f1e23`), in neither worked example.
+- Ending: fixed, `b6ecf85`.
 
 **FINDING-85.** Stale lines. Checked.
 - Where: `delivery/spring-postgres/.claude/skills/infra-establish/SKILL.md`:113;
@@ -998,12 +1026,14 @@ uncertain for the method and the stack.
   `…/cbc-bootstrap/SKILL.md`:210.
 - True: the kit became the container on 2026-09-19 (`d148ccb`).
 - Text: "every kit-born project"; "The kit's README stub".
+- Ending: fixed, `b6ecf85`.
 
 **FINDING-86.** Stale lines. Checked.
 - Where: `delivery/spring-postgres/.claude/skills/infra-establish/templates/verify-database-model.sql`:7.
 - True: the walk's parts are stages since `f169d4a`, which missed
   this template.
 - Text: "(walk step 5)".
+- Ending: fixed, `b6ecf85`.
 
 **FINDING-87.** Stale lines. Checked.
 - Where: `delivery/method/.claude/skills/cbc-slice/SKILL.md`:68-72;
@@ -1012,6 +1042,7 @@ uncertain for the method and the stack.
   import (`edecd0e`). Stage 0 refuses to start with no framing.
 - Text: "(the seed-example case)"; "The seed example's
   invariant".
+- Ending: fixed, `b6ecf85`: a case Stage 0 refuses.
 
 **FINDING-88.** Stale lines. Checked; resting on the reader that
 it is stale, not only unclear.
@@ -1022,6 +1053,7 @@ it is stale, not only unclear.
   plan. The skill's Stage 4 is execute, its Stage 5 certify.
 - Text: "the stack walkthrough's stage 5"; "(walkthrough, stage
   4)".
+- Ending: fixed, `b6ecf85`: the walkthrough's steps, nine places.
 
 ### Decisions
 
@@ -1136,3 +1168,32 @@ narrowed to layers 5 and 6.
 Layer 5 worked, 2026-10-21: FINDING-56 and 59 to 67 ended, our part
 of FINDING-61 by the approaches change; FINDING-58 and 36 narrowed
 to layer 6, three log pointers declined.
+
+Layer 6 worked, 2026-10-21: FINDING-68 to 76, 78 and 82 to 88
+fixed, 79 in part; FINDING-77 and 81 moved to run 4's reading,
+82's other half to the method's plain rewrite; FINDING-80 and 79's
+other part declined; FINDING-36, 58 and 61 ended. A defect of the
+work's own, the container's `visual-comparison` frontmatter joined
+by a rewrap in `b6ecf85`, was repaired in `bdeca06`.
+
+### Met in round 1, for round 2
+
+Not findings: true lines, met while working, whose question is
+where a fact lives. Round 2 reads them first.
+
+1. **The playbook's version in four places:** its own line and the
+   seed's three. Tag the copies, or have the seed read the version
+   from the playbook at birth.
+2. **The seed's retold list of pinned copies,**
+   `docs/conventions/exchange/` §3.2. The seed does not ship, so it
+   can be tagged, or point instead.
+3. **Shipped files that retell a deliverer manual with no tag:**
+   `commit-messages`, agent-arrangement §1; `cbc-bootstrap` and its
+   walkthrough, repo-hygiene §2 and §3. A run cannot open our
+   paths: the run's case of ADR-0059, still to design.
+4. **A footer's decision line names the section it backs,** a
+   candidate line for `docs/conventions/conventions/` §2. ADR-0030's
+   line in `visual-comparison`, and the two added in `0ebac21`, do it.
+5. **Footers in shipped files:** their `CBC ADR` lines name ADRs a
+   run can never open. Kept as provenance, dropped at delivery, or
+   kept with a line saying what they are for.
