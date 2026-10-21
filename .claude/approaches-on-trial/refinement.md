@@ -173,9 +173,8 @@ The redesign closed, and its way of judging each fix came here.*
 
 Each kind is read on its own: a reader looks for one kind only,
 so nothing else takes its attention. The kinds of one round can be
-read side by side. Most kinds read each file whole. One home and
-words also need a sweep across files, since one file alone cannot
-show them.
+read side by side. Most kinds read each file whole. One home also
+needs a sweep across files, since one file alone cannot show it.
 
 A finding names the rule the text breaks. Text that meets its
 rules stays, even when it could be said better. A reader asked to
@@ -316,8 +315,8 @@ commit, so the file can be read from git.
 - **Whether the refinement's file needs a shape.** It borrows the
   eval's form, which borrowed a reading's.
 - **Whether the three rounds hold.** They were drawn from one
-  refinement's eight kinds. Adding missing text is the first that
-  may not fit.
+  refinement's eight kinds. Wiring, which adds missing links, fitted
+  round 1; whether other added text fits is still to see.
 - **Whether one layer's findings fit one commit plan.**
 - **"Stage" in `ARCHITECTURE.md`'s *The words*** is one phase of a
   skill. This page uses it for its own phases. The close widens
