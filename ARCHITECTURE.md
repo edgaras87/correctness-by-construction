@@ -193,6 +193,7 @@ Identity step, and until then has only ours:
 | run 2 | — | `~/IdeaProjects/cbc-pure-run-2` | idle since its Step 0 |
 | run 3 | `never-oversold` | `~/IdeaProjects/cbc-pure-run-3` | live |
 | run 4 | `safe-reservation-2` | `~/IdeaProjects/cbc-pure-run-4` | through Release, not yet read |
+| run 5 | `event-tickets` | `~/IdeaProjects/cbc-pure-run-5` | live, on full auto |
 
 **A run is blind to us.** It holds no address for this repo, no
 checkout, no remote. It cannot fetch, and nothing here reaches it

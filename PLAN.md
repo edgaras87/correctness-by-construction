@@ -134,8 +134,8 @@ corner.
 Goal: Run 5 is born from this repo at one pin on main, with an
 intent of the reviewer's and a hand-off for full auto, ready for
 the reviewer to start.
-Now: the birth
-(`.claude/approaches-on-trial/auto-run.md`, stages 5 and 6).
+Now: the step's close: run 5 born and started
+(`.claude/approaches-on-trial/approach-drafting.md`, its close).
 Gate:
 
 **At the opening.**
@@ -169,12 +169,15 @@ Gate:
 - [x] The two TODO items due before a birth are decided: whether a
       newborn reads `.claude/shapes/` at birth, and whether the
       container ships `temp/` (`0dac017`, `cd69ed7`).
-- [ ] Run 5 is born by `delivery/installs/pure-seed.md` at
+- [x] Run 5 is born by `delivery/installs/pure-seed.md` at
       `~/IdeaProjects/cbc-pure-run-5`, its pin a commit on main, its
-      checks in the seed's own list all passing.
-- [ ] Run 5's intent and hand-off sit in its `temp/`, and what the
-      reviewer starts it with is the hand-back line only.
-- [ ] `ARCHITECTURE.md` §2.5 lists run 5.
+      checks in the seed's own list all passing (pin `ae8a041`,
+      2026-10-22).
+- [x] Run 5's intent and hand-off sit in its `temp/`, and what the
+      reviewer starts it with is the seed's prompt, its review lines
+      replaced by full auto (`temp/run-5-handoff/start.md`;
+      2026-10-22).
+- [x] `ARCHITECTURE.md` §2.5 lists run 5 (2026-10-22).
 
 **At the close.**
 
