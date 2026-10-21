@@ -134,7 +134,8 @@ corner.
 Goal: Living text written before a rule now meets that rule, and
 `docs/conventions/project-recording/` §1 is a map of the records
 in both seats.
-Now: round 1's close read
+Now: between rounds: round 1 closed, and TODO's text-division
+item comes before round 2 reads
 (`.claude/approaches-on-trial/refinement.md` §2.8).
 Gate:
 
