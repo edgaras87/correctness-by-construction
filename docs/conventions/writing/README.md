@@ -30,10 +30,10 @@ on 2026-10-15 (ADR-0053).
 - **`.claude/rules/writing.md` — the deliverer's**, derived from
   this page like the container's, not copied from it, and loaded
   the same way. It differs where the seat does: it covers the
-  skills, rules, shapes, manuals, concept chapters and notes the
-  deliverer writes; it defines a coined word in `ARCHITECTURE.md`'s
-  *The words*, this repo's glossary; and its examples are this
-  repo's.
+  skills, rules, shapes, approaches, manuals, concept chapters and
+  notes the deliverer writes; it defines a coined word in
+  `ARCHITECTURE.md`'s *The words*, this repo's glossary; and its
+  examples are this repo's.
 
 This page explains; the rule states. What derives from this page is
 that list. A change here walks it; a change forced in it is checked
@@ -43,10 +43,10 @@ back against this page.
 
 A run writes under the rule from birth: its chat, its records, its
 commits. The deliverer writes under its own: its chat and records,
-and also what runs read, since an agent copies the voice it reads.
-Every new or changed line of a skill, rule, shape, manual, concept
-chapter or note follows it. The deliverer also writes this page and
-the rule's master.
+and also what runs read, since an agent copies the voice it reads:
+every new or changed line of a skill, rule, shape, approach,
+concept chapter or note follows it, and so do its manuals. The
+deliverer also writes this page and the rule's master.
 
 ## 1. What it governs
 

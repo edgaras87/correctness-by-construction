@@ -30,9 +30,9 @@ the repo that delivered them.
 
 That is the case worth getting right: the conventions are written for
 it, and it is the case nobody can watch. The delivering repo is not
-an instance of it: it receives no conventions, and derives its own
-arrangement from the same manuals (ADR-0042). Its agent meets the
-same channels all the same.
+an instance of it: it receives no conventions, and writes its own
+arrangement, most of it derived from the same manuals (ADR-0042).
+Its agent meets the same channels all the same.
 
 The practical question the model exists to answer: *given a convention
 sitting in a project, how does it reach the agent that is supposed to

@@ -29,9 +29,9 @@ there is.
   own from birth.
 - **The records table in the entry file,
   `delivery/container/.claude/CLAUDE.md`, and ours, in `CLAUDE.md`**
-  — this convention's one stake in a file
-  `docs/conventions/agent-arrangement/` owns (§13): the rule that
-  cannot live inside a record, when to open it.
+  — this convention's one stake, §13, in a file
+  `docs/conventions/agent-arrangement/` owns: the rule that cannot
+  live inside a record, when to open it.
 - **`delivery/fills/cbc-run-pure-playbook.md` — the playbook's
   steps, filled into a run's `PLAN.md` at birth** (§9).
 - **`delivery/container/.claude/rules/one-home.md` — a rule,

@@ -55,12 +55,14 @@ it arrived at by keeping it and pointing at it from its backlog.
 ### The deliverer's seat
 
 The deliverer makes outputs too — a reading is one — and its steps
-have gates since ADR-0057. Its own forms are rules today, with a
+have gates since ADR-0057. Two of its own forms, a reading's and a
+manual's, are rules today, with a
 Governs line, loaded when the file is read, not while a new one is
 written; whether they become shapes read at a step's gate is open
 (TODO). It holds the shapes it
 ships, each in the group of what it shapes (§4), and reads a run's
-shapes when it reads the run.
+shapes when a line under its *To the deliverer* offers them
+(`docs/conventions/exchange/` §6.2).
 
 ## 1. What a shape is
 
@@ -170,7 +172,7 @@ first and never the second, and that falls out of the groups rather
 than being enforced on top of them.
 
 A shape travels as a copy, at birth and at every delivery, under the
-one pin that covers the skills and rules
+one pin that covers every delivered copy
 (`docs/conventions/exchange/` §3.2). A run edits a delivered shape
 as it edits any copy, and offers its own as it offers any file it
 wrote.
@@ -178,7 +180,8 @@ wrote.
 ### 4.1 A project fetches nothing
 
 Nothing is fetched (`docs/conventions/exchange/` §1): what arrives,
-arrives because a person staged it with a delivery. Nothing is
+arrives because it was staged with a delivery, by the reviewer or
+by the agent when told (`docs/conventions/exchange/` §3.1). Nothing is
 staged for a gate on its own. *Named in ADR-0037 as a third act of
 the exchange, and never built: run 3 looked in `temp/` at two
 closes and found nothing either time. With shapes in the delivery,
@@ -201,7 +204,8 @@ and a run's illustration is its answer.
 ### 4.3 Birth and delivery, drawn
 
 Where a shape sits at the deliverer, and how it reaches a run. Every
-arrow that crosses is carried by a person.
+arrow that crosses is a delivery, staged by the reviewer or by the
+agent when told.
 
 *This page's pictures illustrate its prose and never carry a fact
 alone. Measured 2026-09-27 and found false: five claims lived only
@@ -221,7 +225,7 @@ flowchart LR
     SHP[".claude/shapes/<br/>nothing loads it"]
   end
 
-  SH -->|"an operator copies it,<br/>at a birth or a delivery"| SHP
+  SH -->|"staged with it,<br/>at a birth or a delivery"| SHP
   MADE -->|"read against it, at the close"| SHP
   SHP -.->|"read at a reading: the copy against its pin,<br/>and the run's own shapes it offers"| SH
 ```

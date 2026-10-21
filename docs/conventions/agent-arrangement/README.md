@@ -93,7 +93,8 @@ different things because of it: the run holds the receiver's rule,
 own edits, and what it may do to one meanwhile; the deliverer holds
 the deliverer's skills and the form of the reading they produce.
 Neither holds the other's half, because neither could run it. The
-two rules every session loads differ by the job too, and each
+two rules both seats load in every session differ by the job too,
+and each
 manual names how in its list of what derives from it:
 `docs/conventions/writing/` and
 `docs/conventions/project-recording/`.
@@ -107,16 +108,17 @@ the repo that cannot apply it.*
 ## 1. What the arrangement is
 
 The theory this leans on is `docs/models/agent.md`: the ambient
-channel (§4.1), the choosing table (§8), the claims (§12). The model
-describes; this page explains against it.
+channel (`docs/models/agent.md` §4.1), the choosing table
+(`docs/models/agent.md` §8), the claims (`docs/models/agent.md`
+§12). The model describes; this page explains against it.
 
 A closed list of paths (ADR-0038, 1c):
 
 - **`CLAUDE.md`** — the entry file, §2. The name is the tool's;
   what goes in it is this convention's.
 - **`.claude/`** — the skills directory, the rules directory, the
-  shapes directory, the decisions log, and the tool's settings,
-  tracked and machine-local, §3.
+  shapes directory, the approaches on trial, the decisions log, and
+  the tool's settings, tracked and machine-local, §3.
 
 **Detachable, and kept so.** A file is agent-side when removing it
 breaks nothing about the project (ADR-0038, 1c). How a commit that
@@ -247,7 +249,7 @@ instead, as a closing item of its gate (ADR-0057).
 
 ### 3.1 `skills/`
 
-Where a convention's skill lives, one directory per convention: in a
+Where a convention's skills live, one directory per skill: in a
 run, a delivered copy, verbatim (the update is
 `docs/conventions/exchange/`'s); at the deliverer, its own
 derivation from the manual (ADR-0042). This convention owns the
@@ -398,7 +400,8 @@ it keep the numbers history cites.*
 - **Growth by accretion** — every line added dilutes every other line,
   so removing one is maintenance, not tidying.
 - **Parking a repeated rule in the operator's file** — a rule the
-  human keeps saying is the model's told diagnostic (§8): a convention
+  human keeps saying is the model's told diagnostic
+  (`docs/models/agent.md` §8): a convention
   is missing, or its channel is not firing. `CLAUDE.local.md` makes
   the saying persistent and the diagnosis invisible.
 
@@ -419,8 +422,8 @@ records table is not.
 
 A rule for an arrangement file goes in that file's stub comment,
 not here and not in the entry file's prose. A project meets this
-convention only as its files at birth and as their changed comment
-text at an update, through `docs/conventions/exchange/`.
+convention only as its files at birth, which are its own from then
+on (`docs/conventions/exchange/` §2.4).
 
 ## What this does not cover
 

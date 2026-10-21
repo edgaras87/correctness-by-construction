@@ -100,7 +100,7 @@ loader reads:
 
 ```yaml
 ---
-name: <the convention's name>
+name: <the convention's name, or with its act: exchange-read>
 description: <when to read this file — the trigger>
 requires: <conventions this one delegates to; omit if none>
 foundation: the <name> convention
@@ -108,8 +108,8 @@ foundation: the <name> convention
 ```
 
 - `description` says when to read the file, never what the rule is.
-- `name` equals the directory name; registry entries and `requires`
-  lines refer to the convention by it.
+- `name` equals the directory name; `requires` lines refer to a
+  skill by it.
 - `requires` names the conventions this one delegates rules to; a
   receiver lands a convention together with its chain.
 - `foundation` says what the file stands on *now* — a live claim,
@@ -406,9 +406,9 @@ conventions took neither — a rule kept where nobody reads it
 ## Why it arrives this way
 
 The manual reaches no agent: a maintainer reads it. The form of a
-manual is a rule, loading when a manual is opened, because the
-moment a manual's form matters is while it is written, and nothing
-else would put the list in front of the writer then. The
+manual is a rule, loading when a manual is read, so it is in view
+while one is worked; a manual written new is written without it
+(`docs/conventions/agent-arrangement/` §3.2). The
 `foundation` line rides in the frontmatter of every shipped skill
 and rule, read by whoever opens the file, because a claim about
 what a file stands on has to travel with the file. The check is a
