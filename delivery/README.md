@@ -23,8 +23,9 @@ into the run's `.claude/shapes/`; the rest is
 ## 2. Three ways a file lands
 
 - **The run's own from birth.** The container's record stubs, its
-  two entry files and its hygiene files are copied once and are the
-  run's from then on. They never travel again.
+  two entry files, its decisions log and its hygiene files are
+  copied once and are the run's from then on. They never travel
+  again.
 - **Pinned copies.** The container's convention skills, rules and
   approach on trial; the method's and the stack practice's skills,
   rules and shapes; and the concept, at `docs/concept/`
@@ -74,7 +75,7 @@ repo's, taken from what the runs derived.
 Its own decisions, its own run files and its own versioning, which
 are the run's to make; and the archive's agent definitions, since
 the skills carry the method whole (ADR-0006). A run on another stack
-also takes no `spring-postgres/` (ARCHITECTURE §2.2).
+also takes no `spring-postgres/` (`ARCHITECTURE.md` §2.2).
 
 ## 6. When it lands
 
@@ -83,6 +84,7 @@ run much later. Each practice skill's readiness gate refuses to start
 before its inputs exist, so an early copy is inert, and one moment
 keeps the whole set at one pin. The run's plan steps come from the
 playbook, whose middles are the pipeline, cbc-framing to
-infra-establish to cbc-bootstrap to cbc-slice. Each step's gate is
+infra-establish to cbc-bootstrap to cbc-slice, then the
+retrospective and its applying, before Release. Each step's gate is
 derived when the step opens. Only infra-serve, re-entry, arrives
 unplanned, and its own trigger covers that.

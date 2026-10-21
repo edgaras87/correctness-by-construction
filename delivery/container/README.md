@@ -3,8 +3,8 @@
 A backend built by [correctness-by-construction](docs/concept/):
 a system whose design is derived from one falsifiable promise —
 asking what must never happen before what it should do — and
-whose every invariant is closed by a test that creates its
-adversity. The problem is not yet chosen. It arrives with the
+whose every invariant is held by a wall that a test creating its
+adversity proves. The problem is not yet chosen. It arrives with the
 briefing that opens framing, and this paragraph is then
 re-derived from the framed intent ([PLAN.md](PLAN.md), Step 1).
 Until then the repository holds the method, the plan, and the
