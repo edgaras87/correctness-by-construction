@@ -49,6 +49,11 @@ FINDING-83 to 88; FINDING-78 and 79 in the container's
 **7. `chore(agent): our two shared skills follow`**
 FINDING-78 and 79 in ours, byte-identical to the container's again.
 
+**7b. `fix(delivery): visual-comparison's footer follows`**
+At commit 7, ADR-0027's decisions 2 and 3 joined our footer, each
+naming the section it backs, where the citations removed in commit
+6 had named them. The container's copy takes the same two lines.
+
 **8. `fix(delivery): the delivery map and README stub`**
 FINDING-72, 73 and 82 (the stub), and FINDING-36's pointer in
 `delivery/README.md`.
