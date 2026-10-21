@@ -312,12 +312,12 @@
       birth itself from Step 10, ADR-0057).
       Context: written from the exchange's manual, as `exchange-read`
       and `exchange-deliver` were, keeping the seed's intent — it
-      delivers everything and decides nothing. Then
-      `.claude/skills/exchange-deliver/SKILL.md` §5 points at it,
-      `pure-seed.md` goes, and ADR-0016's procedure of record moves.
-      One risk to carry in (Variant B, ADR-0018): nothing forces the
-      newborn to read what it was given, and the first commit on main
-      is the only evidence the reading took.
+      delivers everything and decides nothing. Then *What this does
+      not do* in `.claude/skills/exchange-deliver/SKILL.md` points at
+      it, `pure-seed.md` goes, and ADR-0016's procedure of record
+      moves. One risk to carry in (Variant B, ADR-0018): nothing
+      forces the newborn to read what it was given; the first commit
+      on main is the only evidence the reading took.
       Ideas: first-time work on our seat, so an approach on trial
              drafted by `approach-drafting` (ADR-0058).
       Trigger: the reviewer names run 5's birth; it opens as a step.
@@ -422,6 +422,39 @@
       Trigger: the reviewer names it, after the step that runs run
                5's birth closes.
       See: ADR-0057, decision 4.
+
+- [ ] Decide what our CHANGELOG tracks, and how the stub asks it
+      (2026-10-21, the reviewer).
+      Context: ADR-0003 (2026-08) made it the concept's log, for
+      runs pinning a version; ADR-0039 decision 9 kept conventions
+      out. Since v1 (2026-08-28), about 1,350 commits added the
+      conventions, the container, the models and approaches on
+      trial, and none is logged. A run pins a commit and cannot read
+      our changelog: its readers are us and a stranger after a
+      release. `README.md`, `CLAUDE.md`'s records table and the
+      changelog's header comment still name the pinners.
+      Ideas:
+      - track by exclusion: all but the records, our agent setup and
+        `temp/`, so a new kind of thing is tracked from its first
+        commit.
+      - the concept version stays, for citation; the repo gets a
+        release number of its own, each naming the concept version
+        it holds (amends ADR-0003 and ADR-0039 decision 9).
+      - one baseline entry at v2: what each group holds now, pointing
+        at the ADRs, not rebuilt from commits.
+      - a check at each step's close: every change outside the
+        excluded paths has an entry, or is marked editorial.
+      - what is tracked is read again when the repo grows a new kind
+        of thing.
+      - the stub gains a `Tracks:` line beside `Versioning:`, decided
+        at Framing, with when to revisit it; the lesson goes in
+        `docs/conventions/project-recording/` §6.
+      - a fill sets a CbC run's two lines at birth, as the playbook
+        fills its plan; we fill ours in place
+        (`docs/conventions/project-recording/` §9.4, step 1).
+      Trigger: the release item above opens; its CHANGELOG entry
+               needs the answer.
+      See: devlog 2026-10-21.
 
 - [ ] Decide whether a check compares the worked example's two
       copies (2026-10-15, the commit plan for writing rules).
