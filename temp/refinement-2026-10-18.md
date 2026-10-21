@@ -1229,6 +1229,8 @@ byte-identical; the method agrees with the concept.
   "its moment is a file being written"; "rules that load while the
   file is written".
 - Round 1: unchanged. Proposed: fix, all five.
+- Ending: fixed, `64af2a5`, `2856421` and `8a7e554`: all five say
+  a rule loads on a read.
 
 **FINDING-90.** Stale lines. Checked.
 - Where: `docs/conventions/conventions/README.md`:103, 111-112.
@@ -1240,6 +1242,7 @@ byte-identical; the method agrees with the concept.
   convention by it".
 - Round 1: unchanged. Proposed: fix: the skill's name, the
   convention's or the convention's with its act.
+- Ending: fixed, `64af2a5`.
 
 **FINDING-91.** Stale lines. Uncertain.
 - Where: `docs/conventions/conventions/README.md`:376-378.
@@ -1247,6 +1250,7 @@ byte-identical; the method agrees with the concept.
   first-time work"; first-time work is no longer a convention.
 - Round 1: unchanged. Proposed: decline: it tells how seven were
   added, which stays true.
+- Ending: declined, as proposed.
 
 #### Layer 2
 
@@ -1255,6 +1259,7 @@ byte-identical; the method agrees with the concept.
 - Text: "a file `docs/conventions/agent-arrangement/` owns (§13)";
   the §13 is this page's, and reads as agent-arrangement's.
 - Round 1: changed (`57df143`). Proposed: fix by path.
+- Ending: fixed, `64af2a5`.
 
 #### Layer 3
 
@@ -1266,12 +1271,14 @@ byte-identical; the method agrees with the concept.
   directory, the shapes directory, the decisions log, and the
   tool's settings".
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `64af2a5`.
 
 **FINDING-94.** Stale lines. Checked.
 - Where: `docs/conventions/agent-arrangement/README.md`:250-251.
 - Text: "one directory per convention"; the exchange and the
   retrospective have two skills each.
 - Round 1: unchanged. Proposed: fix: one directory per skill.
+- Ending: fixed, `64af2a5`.
 
 **FINDING-95.** Agreement. Checked.
 - Where: `docs/conventions/agent-arrangement/README.md`:420-423.
@@ -1279,6 +1286,7 @@ byte-identical; the method agrees with the concept.
   (`docs/conventions/exchange/` §2.4, §3.2).
 - Text: "as their changed comment text at an update".
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `64af2a5`.
 
 **FINDING-96.** Stale lines. Uncertain.
 - Where: `docs/conventions/agent-arrangement/README.md`:95-96.
@@ -1286,6 +1294,7 @@ byte-identical; the method agrees with the concept.
   mean the two both seats load.
 - Round 1: changed (`a794f32`). Proposed: fix: "the two rules both
   seats load in every session".
+- Ending: fixed, `64af2a5`.
 
 **FINDING-97.** Wiring. Checked. Reopens FINDING-36.
 - Where: `docs/conventions/agent-arrangement/README.md`:110
@@ -1297,12 +1306,15 @@ byte-identical; the method agrees with the concept.
 - Round 1: TODO 49-50, 56 and 256 changed, the rest unchanged.
   TODO 49-50 and 56 are the agent's own lines of 2026-10-20.
   Proposed: fix all.
+- Ending: fixed, `64af2a5`, `2856421` and `76ec7ef`: every pointer
+  named carries its path.
 
 **FINDING-98.** Stale lines. Resting on the reader.
 - Where: `docs/conventions/exchange/README.md`:324.
 - Text: "One rule for every shipped skill and rule"; the rule now
   covers every delivered copy: shapes, approaches, the chapters.
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `64af2a5`.
 
 **FINDING-99.** Stale lines. Checked.
 - Where: `docs/conventions/shapes/README.md`:57-61.
@@ -1310,6 +1322,7 @@ byte-identical; the method agrees with the concept.
 - Text: "Its own forms are rules today".
 - Round 1: changed (`162bfb0` kept it). Proposed: fix: "two of its
   own forms, a reading's and a manual's".
+- Ending: fixed, `64af2a5`.
 
 **FINDING-100.** Agreement. Resting on the reader.
 - Where: `docs/conventions/shapes/README.md`:62-63.
@@ -1317,12 +1330,14 @@ byte-identical; the method agrees with the concept.
   (`docs/conventions/exchange/` §6.2).
 - Text: "reads a run's shapes when it reads the run".
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `64af2a5`.
 
 **FINDING-101.** Stale lines. Uncertain.
 - Where: `docs/conventions/shapes/README.md`:172-174.
 - Text: "the one pin that covers the skills and rules"; the pin
   covers every delivered copy. Wrong only if read as the list.
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `64af2a5`.
 
 **FINDING-102.** Agreement. Checked. Reopens FINDING-44.
 - Where: `ARCHITECTURE.md`:197-210, the diagram;
@@ -1333,6 +1348,7 @@ byte-identical; the method agrees with the concept.
 - Text: "a person copies"; "src/ ← the only thing that is its
   own"; "a person carries it".
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `64af2a5` and `2856421`.
 
 **FINDING-103.** Stale lines. Resting on the reader.
 - Where: `docs/models/agent.md`:32-35.
@@ -1340,6 +1356,7 @@ byte-identical; the method agrees with the concept.
   manuals"; the approaches and `working-a-reading.md` come from no
   manual (as FINDING-3).
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `64af2a5`.
 
 **FINDING-104.** Stale lines. Resting on the reader.
 - Where: `docs/conventions/writing/README.md`, its seats' list of
@@ -1347,6 +1364,7 @@ byte-identical; the method agrees with the concept.
 - Text: what runs read lists manuals, which never ship, and leaves
   out approaches on trial, which do since `cfbe031`.
 - Round 1: unchanged. Proposed: fix both.
+- Ending: fixed, `64af2a5` and `8a7e554`.
 
 #### Layer 4
 
@@ -1355,6 +1373,7 @@ byte-identical; the method agrees with the concept.
 - Text: "Now: round 1's work, layer by layer"; the step is in the
   round's close read.
 - Round 1: changed. Proposed: fix.
+- Ending: fixed, `2856421`.
 
 **FINDING-106.** Stale lines. Checked.
 - Where: `TODO.md`:413.
@@ -1362,6 +1381,7 @@ byte-identical; the method agrees with the concept.
   (ADR-0048).
 - Text: "Release concept v1".
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `2856421`.
 
 **FINDING-107.** Stale lines. Checked. Reopens FINDING-53.
 - Where: `TODO.md`:523-524.
@@ -1369,6 +1389,7 @@ byte-identical; the method agrees with the concept.
   day.
 - Round 1: changed. Proposed: fix without counts: "more than
   double the manual".
+- Ending: fixed, `2856421`.
 
 **FINDING-108.** Agreement. Resting on the reader.
 - Where: `TODO.md`:26-30, the item on how the text is divided.
@@ -1377,6 +1398,7 @@ byte-identical; the method agrees with the concept.
 - Text: due "before round 2 reads", inside the open step, yet in
   Next.
 - Round 1: changed. Proposed: fix: move it to Now.
+- Ending: fixed, `2856421`.
 
 **FINDING-109.** Agreement. Uncertain.
 - Where: `TODO.md`:9 and its Known issues.
@@ -1384,6 +1406,7 @@ byte-identical; the method agrees with the concept.
   another, as project-recording §5.4's example does.
 - Round 1: unchanged. Proposed: fix: the header names the Known
   issues shape.
+- Ending: fixed, `2856421`.
 
 **FINDING-110.** Stale lines. Checked.
 - Where: `ARCHITECTURE.md`:170, 226-228.
@@ -1391,6 +1414,7 @@ byte-identical; the method agrees with the concept.
   (`docs/conventions/exchange/`, its list).
 - Text: "held as two skills of ours".
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `2856421`.
 
 **FINDING-111.** Wiring. Checked.
 - Where: `ARCHITECTURE.md`:146-158, §2.3.
@@ -1399,6 +1423,7 @@ byte-identical; the method agrees with the concept.
   which differ; `delivered-copies.md` and `shapes-lifecycle.md`
   land nowhere.
 - Round 1: changed. Proposed: fix with `delivery/container/`.
+- Ending: fixed, `2856421`.
 
 **FINDING-112.** Agreement. Checked. Reopens FINDING-34.
 - Where: `ARCHITECTURE.md`:113-119, §2.1.
@@ -1407,17 +1432,22 @@ byte-identical; the method agrees with the concept.
 - Text: under "Derived from the concept … `concept v1`", the list
   includes `delivery/method/.claude/shapes/`.
 - Round 1: changed (`53fda69`). Proposed: fix.
+- Ending: fixed, `2856421`.
 
 **FINDING-113.** Stale lines. Checked.
 - Where: `ARCHITECTURE.md` §5.
 - Text: "each entry names which" holds its rule; six entries name a
   pointer and no holder.
 - Round 1: unchanged. Proposed: fix: name each holder.
+- Ending: fixed, `2856421`.
 
 **FINDING-114.** Agreement. Checked. Reopens FINDING-59.
 - Where: `README.md`:55.
 - Text: the changelog "(for users)"; it versions the concept.
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `2856421`. The line it wrote names a reader who
+  cannot read the changelog; TODO's item on what it tracks holds
+  the question (`8042a18`).
 
 **FINDING-115.** Stale lines. Resting on the reader.
 - Where: `temp/README.md`.
@@ -1426,6 +1456,7 @@ byte-identical; the method agrees with the concept.
   4's reading and the frozen ideas' context.
 - Round 1: unchanged. Proposed: fix: what is kept there for work
   still to come.
+- Ending: fixed, `2856421`.
 
 **FINDING-116.** Agreement. Checked.
 - Where: `PLAN.md`:188-204, the refinement step's close.
@@ -1433,6 +1464,7 @@ byte-identical; the method agrees with the concept.
   the step form gained on 2026-10-20.
 - Round 1: changed. Proposed: decline: the step's own items ask for
   the approaches' evaluation and trial verdicts, which carry it.
+- Ending: declined, as proposed.
 
 **FINDING-117.** Wiring. Uncertain.
 - Where: `devlog/README.md`.
@@ -1440,6 +1472,7 @@ byte-identical; the method agrees with the concept.
   line; it has no header comment.
 - Round 1: changed. Proposed: decline: §3.5 step 2 asks it of a
   header comment that holds the form.
+- Ending: declined, as proposed.
 
 #### Layer 5
 
@@ -1453,6 +1486,7 @@ byte-identical; the method agrees with the concept.
   minutes at the end of each session"; "Session ending, or a dead
   end hit".
 - Round 1: unchanged. Proposed: fix all three.
+- Ending: fixed, `8a7e554` and `76ec7ef`.
 
 **FINDING-119.** Agreement. Checked.
 - Where: `.claude/rules/working-a-reading.md`:100.
@@ -1460,12 +1494,14 @@ byte-identical; the method agrees with the concept.
   reading is deleted after it (`PLAN.md`'s step form; `49d06e6`).
 - Text: gate item "The reading is deleted, and the devlog says so".
 - Round 1: unchanged. Proposed: fix: the item leaves the gate.
+- Ending: fixed, `8a7e554`.
 
 **FINDING-120.** Stale lines. Checked.
 - Where: `.claude/skills/exchange-read/SKILL.md`:74.
 - Text: "The reading exists, to its shape"; the reading's form is
   a rule, not a shape.
 - Round 1: unchanged. Proposed: fix: "to its form".
+- Ending: fixed, `8a7e554`.
 
 **FINDING-121.** Agreement. Resting on the reader.
 - Where: `.claude/skills/exchange-deliver/SKILL.md`, its "## 1."
@@ -1473,6 +1509,7 @@ byte-identical; the method agrees with the concept.
 - Rule: a skill's phases are stages (conventions §2), as
   FINDING-61 did for the retrospective skills.
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `8a7e554`; TODO's pointer to the old §5 in `8042a18`.
 
 **FINDING-122.** Agreement. Resting on the reader.
 - Where: `.claude/approaches-on-trial/approach-evaluation.md`:49-54.
@@ -1480,6 +1517,7 @@ byte-identical; the method agrees with the concept.
   three, and nothing maps one onto the other.
 - Round 1: changed (new). Proposed: fix: placed is taken, on trial
   is held, the project's own and dropped are declined.
+- Ending: fixed, `8a7e554`.
 
 **FINDING-123.** Agreement. Resting on the reader.
 - Where: `.claude/rules/one-home.md`:10-13; `.claude/rules/writing.md`,
@@ -1488,6 +1526,7 @@ byte-identical; the method agrees with the concept.
   than its manual lists.
 - Round 1: changed in part. Proposed: fix: each comment points at
   its manual's list instead.
+- Ending: fixed, `8a7e554`.
 
 **FINDING-124.** Agreement. Resting on the reader.
 - Where: `.claude/approaches-on-trial/approach-drafting.md`.
@@ -1496,6 +1535,7 @@ byte-identical; the method agrees with the concept.
 - Round 1: changed (new). Proposed: decline: decision 9 is
   `approach-evaluation`'s; the ways rejected were left to its first
   evaluation on 2026-10-20.
+- Ending: declined, as proposed.
 
 **FINDING-125.** Stale lines. Uncertain.
 - Where: `.claude/skills/visual-comparison/SKILL.md`:18, both seats.
@@ -1503,12 +1543,14 @@ byte-identical; the method agrees with the concept.
   in project-recording §9.
 - Round 1: unchanged. Proposed: move to round 3: one word, two
   things (`.claude/rules/writing.md`, rule 6).
+- Ending: moved to round 3, as proposed.
 
 **FINDING-126.** Stale lines. Uncertain.
 - Where: `.claude/rules/one-home.md`, rule 3.
 - Text: §1.2 has "a phrase for each convention"; ten phrases for
   eleven manuals, if "committing" counts once.
 - Round 1: unchanged. Proposed: decline: "committing" names both.
+- Ending: declined, as proposed.
 
 #### Layer 6
 
@@ -1516,17 +1558,20 @@ byte-identical; the method agrees with the concept.
 - Where: `delivery/installs/pure-seed.md`:21, 40, 66, 68, 126, 237.
 - Text: "kit", for our container (`d148ccb`).
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `76ec7ef`.
 
 **FINDING-128.** Stale lines. Checked.
 - Where: `delivery/container/.claude/decisions.md`:19-20.
 - Text: the comment names "the '@' hash"; the entry reads "pin
   <bundle-commit>" since `6944581`.
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `76ec7ef`.
 
 **FINDING-129.** Stale lines. Uncertain.
 - Where: `delivery/fills/cbc-run-pure-playbook.md`:19-21.
 - Text: "one checkbox cannot serve six steps"; eight follow Step 0.
 - Round 1: changed (`c3a737b`). Proposed: fix: "every step".
+- Ending: fixed, `76ec7ef`.
 
 **FINDING-130.** Stale lines. Uncertain.
 - Where: `delivery/method/.claude/skills/cbc-framing/references/cbc-framing-workflow.md`:3-5.
@@ -1534,12 +1579,14 @@ byte-identical; the method agrees with the concept.
   begins"; the ground and the bootstrap come between.
 - Round 1: unchanged. Proposed: decline: true of the method, where
   the bootstrap is project work (`system-readiness.md`).
+- Ending: declined, as proposed.
 
 **FINDING-131.** Stale lines. Resting on the reader.
 - Where: the same workflow, 118-119.
 - Text: rejected candidates "banked in the log"; they are banked in
   `intent.md`.
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `76ec7ef`.
 
 **FINDING-132.** Agreement. Checked for the channel.
 - Where: `delivery/container/.claude/rules/delivered-copies.md`:80-82.
@@ -1548,6 +1595,7 @@ byte-identical; the method agrees with the concept.
 - Text: "at a hand-off, or at the retrospective … A faster answer
   needs a hand-off document."
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `76ec7ef`.
 
 **FINDING-133.** Agreement. Resting on the reader.
 - Where: `delivery/container/.claude/skills/retrospective/SKILL.md`:130-132.
@@ -1556,12 +1604,14 @@ byte-identical; the method agrees with the concept.
 - Text: "TODO's Now and the devlog's last 'Resume:' line say where
   the retro stands".
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `76ec7ef`.
 
 **FINDING-134.** Wiring. Uncertain.
 - Where: `delivery/container/ARCHITECTURE.md`:3-7, 28-34.
 - Text: its comments hold a form, and carry no `foundation:` line,
   unlike every other stub.
 - Round 1: unchanged. Proposed: fix.
+- Ending: fixed, `76ec7ef`.
 
 ### The close read's counts
 
@@ -1575,3 +1625,14 @@ here, also Agreement), 5 Wiring, 16 Agreement.
 - By how they stand: 24 checked, 12 resting on the reader, 10
   uncertain.
 - Proposed: 39 fixed, 6 declined, 1 moved to round 3.
+
+The reviewer took all 46 proposed endings, 2026-10-21. None of the
+six declines is taste: each line is true, or another item carries
+it. The plan worked them by layer: the manuals in `64af2a5`, the records in
+`2856421`, ours in `8a7e554`, what ships in `76ec7ef`. One commit
+was inserted, `8042a18`: the reviewer's question on FINDING-114's
+line became a TODO item.
+
+Round 1 is closed. Round 2 is next: its kinds are in *Kinds and
+rounds*. Before it reads, TODO's item on how this repo's text is
+divided (Now); when it reads, *Met in round 1, for round 2* first.
