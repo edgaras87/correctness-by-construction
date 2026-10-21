@@ -187,6 +187,12 @@
         birth", shipping `temp/`; "the next birth's Step 3 close",
         the ground-must-be-up rule; "a fourth run deriving
         `.gitignore` by hand", cbc-bootstrap's hygiene.
+      - the retrospective puts a "rules in force now" list on top of
+        a decisions log kept append-only; run 3 and run 4 both did:
+        which side changes.
+      - `cbc-framing` writes a status line into the README, where
+        `docs/conventions/project-recording/` §7.4 keeps changing
+        status in PLAN: how that line lived in run 4.
       Trigger: the refinement of this repo closes; in a new session.
       See: `f097695`, the kickoff and the message it took.
 
@@ -276,6 +282,9 @@
       - "invariant-shaped", "contract-shaped": "shape" is a defined
         word now.
       - chapter 02's "scope creep wearing a safety costume".
+      - `cbc-slice`'s opening states the completion test alone;
+        `concept/04-cbc-slice.md` says the test proves a wall, and
+        the wall closes the slice.
       Trigger: the refinement of this repo closes. Its writing kind
                reads these texts; what round 3 did leaves this
                item, and what is left stays or goes.
