@@ -18,7 +18,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-10-21.
+     Last touched: 2026-10-22.
      foundation: the project-recording convention -->
 
 # TODO's conversation-memory
@@ -664,6 +664,32 @@ what might be missed?
   takes the birth, and the refinement resumes the next day. The
   retrospective item's trigger, "the close of the step that runs
   run 5's birth", holds again.
+
+### 2026-10-22
+
+#### The briefing
+
+The reviewer asked for help writing run 5's intent, which framing
+commits unchanged as its briefing. The agent drafted it on the five
+headings runs 3 and 4 used; the reviewer chose each open point.
+
+- **One event, not several.** Several events add bookkeeping,
+  keeping each show's seats apart, and almost no new trouble;
+  concurrency, many buyers on one seat at once, is there with one.
+- **Refunds out.** Weighed as a third area, refunds, beside holds
+  and orders: new meeting points (never refund someone who got a
+  ticket, never refund twice, a refund racing a late second
+  confirmation), about a third more work, perhaps 6–7 slices
+  against 4–5. Bounded, it would read: "In: asking the provider to
+  return a payment when its confirmation arrives for a seat no
+  longer held, and only then. Out: any other refund — a buyer
+  cancelling, part of a payment, a ticket already issued." Left
+  out to keep the run moderate; a good next run, the same system
+  and one more area. The service records who is owed, so a paid,
+  unheld seat is still the run's question.
+- **The two complaints kept,** though they point at the two
+  promises: an owner would say them, and the open decision still
+  leaves the promise to framing.
 
 ## 9. A commit plan's look-back at the way
 
