@@ -567,6 +567,9 @@ reader for the back-link.
   stood. The rest waits for layers 4 and 6.
 - Narrowed, `53fda69`, `4d2c821` and `c38591c`: layer 4's pointers by path.
   The rest waits for layer 6.
+- Narrowed, layer 5: the three pointers in `.claude/decisions.md`
+  declined, dated entries of an append-only log. The rest waits
+  for layer 6.
 
 #### Layer 4: `ARCHITECTURE.md`, `README.md`, the records
 
@@ -737,6 +740,8 @@ reader for the back-link.
   ending, or a dead end hit".
 - Narrowed, `4d2c821`: the devlog guide names both moments.
   `CLAUDE.md`'s line waits for layer 5.
+- Ended, `7f7fc4b`: `CLAUDE.md`'s devlog row names a TODO item's
+  story.
 
 **FINDING-57.** Wiring. Uncertain.
 - Where: `README.md`:51-56; `delivery/container/README.md`:3, 9,
@@ -766,6 +771,9 @@ resting on the reader for the rest. Known.
 - Narrowed, `c38591c`: our `PLAN.md`, `TODO.md` and `CHANGELOG.md`.
   `.claude/decisions.md` and `CLAUDE.md` wait for layer 5; the stubs
   and the playbook for layer 6.
+- Narrowed, `7f7fc4b` and `57df143`: `CLAUDE.md`'s table comment names
+  project-recording, which lists it back; the decisions log names
+  agent-arrangement. The stubs and the playbook wait for layer 6.
 
 #### Layer 5: our agent setup
 
@@ -776,6 +784,7 @@ resting on the reader for the rest. Known.
   project-recording, the deliverer's seat).
 - Text: "| Shipped something users can see | What changed, for
   users | CHANGELOG.md |".
+- Ending: fixed, `7f7fc4b`: the CHANGELOG row names a concept change.
 
 **FINDING-60.** Agreement. Checked. DECISION-6.
 - Where: `.claude/skills/commit-messages/SKILL.md`:129-134;
@@ -796,6 +805,8 @@ resting on the reader for the rest. Known.
 - Rule: "A skill's phases are stages … `## Stage 1 — …`"
   (`docs/conventions/conventions/` §2).
 - Text: "## 0. Is it first-time work?", "## 1. Open".
+- Ending: our part fixed, `a0087c5`: the skill went. The
+  container's retrospective skills wait for layer 6.
 
 **FINDING-62.** Wiring. Checked.
 - Where: `.claude/skills/first-time-work/SKILL.md`:54-55.
@@ -807,12 +818,14 @@ resting on the reader for the rest. Known.
 - Where: `.claude/rules/foundation-check.md`:37-38.
 - Text: "The reviewer decides each (§3.6)", bare. The rule has no
   §3.6; it means `docs/conventions/conventions/` §3.6.
+- Ending: fixed, `f8a4bb2`.
 
 **FINDING-64.** Agreement. Resting on the reader.
 - Where: `.claude/rules/convention-manual.md`:66-68.
 - Rule: its own section 5, since `d0628b2`: each numbered section
   holds one subject.
 - Text: *What this does not fix*: "how the body is divided".
+- Ending: fixed, `f8a4bb2`: the number of sections left free.
 
 **FINDING-65.** Agreement. Checked.
 - Where: `.claude/skills/exchange-deliver/SKILL.md`:154-155.
@@ -820,6 +833,7 @@ resting on the reader for the rest. Known.
   (`docs/conventions/exchange/` §3.2). Step 2.2 copies only
   `.claude/` skills, rules and shapes.
 - Text: "Birth: the same overlay as 2.2 into the newborn's root".
+- Ending: fixed, `f8a4bb2`.
 
 **FINDING-66.** Stale lines. Checked. Both seats.
 - Where: `.claude/skills/visual-comparison/SKILL.md`:67-68; the
@@ -828,6 +842,8 @@ resting on the reader for the rest. Known.
   codemap, and there the render changed no verdict.
 - Text: "Both times this method has run, the render changed a
   verdict".
+- Ending: fixed, `f8a4bb2` and `771fbe9`: "in its first two runs", both
+  seats identical.
 
 **FINDING-67.** Stale lines. Resting on the reader. Both seats.
 - Where: `.claude/skills/commit-plan/SKILL.md`:91-93; the
@@ -835,6 +851,7 @@ resting on the reader for the rest. Known.
 - True: ADR-0052 decision 5 ended the exposed split; no living
   text uses the word but this.
 - Text: "a skill or rule corrected, a convention exposed".
+- Ending: fixed, `f8a4bb2` and `771fbe9`, both seats identical.
 
 #### Layer 6: `delivery/`, what ships
 
@@ -1115,3 +1132,7 @@ Layer 4 worked, 2026-10-21: FINDING-34, 37 to 45, 47, 48 and 51 to
 55 ended, DECISION-5 among them; FINDING-46 moved to the
 refinement's close; FINDING-57 declined; FINDING-36, 56 and 58
 narrowed to layers 5 and 6.
+
+Layer 5 worked, 2026-10-21: FINDING-56 and 59 to 67 ended, our part
+of FINDING-61 by the approaches change; FINDING-58 and 36 narrowed
+to layer 6, three log pointers declined.
