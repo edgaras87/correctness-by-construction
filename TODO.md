@@ -29,6 +29,21 @@
 
 ## Now (due while the open step runs)
 
+- [ ] Unlock the folders locked for run 5 (2026-10-22, the
+      reviewer).
+      Context: run 5 must not read another repository, and a
+      `Read` deny rule does not stop a shell. So, before its birth,
+      eleven entries in `~/IdeaProjects` were made unreadable,
+      `chmod 000`: `archive`, `cbc-pure-run`, `cbc-pure-run-2`,
+      `cbc-pure-run-3`, `cbc-pure-run-4`, `checkout-system`,
+      `idempotent-orders`, `order-placement`,
+      `safe-reservations-v1`, each 755 before; and
+      `checkout-system-first-prompt.md`,
+      `safe-reservation-briefing.md`, each 644 before.
+      Trigger: run 5's Release, or before run 4's reading, whichever
+               comes first.
+      See: devlog 2026-10-21, evening.
+
 ## Next (each due at its trigger)
 
 - [ ] Decide how this repo's text is divided: by kind, a model, a

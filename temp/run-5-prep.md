@@ -93,3 +93,17 @@ problem is new.
 - **Examples in the method:** kept for run 5; whether they stay is
   TODO's.
 - **`temp/`:** shipped, tracked (`cd69ed7`).
+
+Decided 2026-10-22, on the hand-off:
+
+- **Weights:** the decision log under 400 lines, a slice record
+  under 400, a devlog entry under 30.
+- **Isolation by the file system:** eleven entries in
+  `~/IdeaProjects` locked with `chmod 000` until run 5's Release
+  (TODO). No path to another repository anywhere in what run 5
+  gets, its settings included; this repo stays readable, on trust.
+- **The start prompt:** the seed's own, its review lines replaced by
+  full auto, so the birth stays comparable with every other.
+- **The look-back, braked:** once per plan; one try at most, in the
+  one-hour box; a log line every time; three empty in a row and it
+  drops to the line alone.

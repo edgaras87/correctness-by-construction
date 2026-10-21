@@ -134,8 +134,8 @@ corner.
 Goal: Run 5 is born from this repo at one pin on main, with an
 intent of the reviewer's and a hand-off for full auto, ready for
 the reviewer to start.
-Now: the hand-off
-(`.claude/approaches-on-trial/auto-run.md`, stage 4).
+Now: the birth
+(`.claude/approaches-on-trial/auto-run.md`, stages 5 and 6).
 Gate:
 
 **At the opening.**
@@ -160,12 +160,12 @@ Gate:
 - [x] Run 5's intent is the reviewer's: event tickets, at least two
       areas whose meeting is a LAYER-5-INTERACTION question, of
       moderate size (`temp/run-5-briefing.md`, 2026-10-22).
-- [ ] Run 5's hand-off says what full auto means for it: it decides
+- [x] Run 5's hand-off says what full auto means for it: it decides
       everything; it edits its copies under
       `delivery/container/.claude/rules/delivered-copies.md`; it
       drafts an approach on trial for any work with no way written;
       when it stops; its `CLAUDE.local.md`; its limits on the
-      records.
+      records (`temp/run-5-handoff/`, `e2dbd75`).
 - [x] The two TODO items due before a birth are decided: whether a
       newborn reads `.claude/shapes/` at birth, and whether the
       container ships `temp/` (`0dac017`, `cd69ed7`).
