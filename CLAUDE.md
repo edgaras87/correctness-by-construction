@@ -10,15 +10,16 @@ it. Documents only — no code, no runs.
      once opened, and nothing else says when. Three things per row —
      the moment, what it holds, the path — never the rule itself: what
      an ADR contains is inside the ADR. Adding a record means adding
-     its row. -->
+     its row.
+     foundation: the project-recording convention -->
 
 | When | What's in it | Record |
 |---|---|---|
 | Opening a step, or closing its gate | The step form, and the open step | PLAN.md |
 | A decision taken, options rejected | Decisions and why | docs/adr/ |
 | Starting work, or noticed something not doing it now | What's next; the backlog | TODO.md |
-| Session ending, or a dead end hit | Work history, dead ends | devlog/<YYYY-MM>.md |
-| Shipped something users can see | What changed, for users | CHANGELOG.md |
+| Session ending, a dead end hit, or a TODO item added | Work history, dead ends, a TODO item's story | devlog/<YYYY-MM>.md |
+| The concept changed, or an execution derived from or checked against it | What changed, for those who pin a concept version | CHANGELOG.md |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |
 | The system's shape changed | Shape of the system | ARCHITECTURE.md |
 | Agent setup changed | Decision, why, rejected options | .claude/decisions.md |
