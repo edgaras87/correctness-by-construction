@@ -134,8 +134,8 @@ corner.
 Goal: Run 5 is born from this repo at one pin on main, with an
 intent of the reviewer's and a hand-off for full auto, ready for
 the reviewer to start.
-Now: drafting the approach
-(`.claude/approaches-on-trial/approach-drafting.md`, stage 1).
+Now: the reviewer's intent
+(`.claude/approaches-on-trial/auto-run.md`, stage 2).
 Gate:
 
 **At the opening.**
@@ -144,18 +144,19 @@ Gate:
       at `e849b6a`, and nothing of the step was done on main
       (2026-10-21).
 - [x] This gate was written before the work started (2026-10-21).
-- [ ] The step's approach is known: no skill, rule or approach on
+- [x] The step's approach is known: no skill, rule or approach on
       trial covers preparing a full-auto run on our seat, so the
       step drafts `.claude/approaches-on-trial/auto-run.md`
-      (`.claude/approaches-on-trial/approach-drafting.md`).
+      (`.claude/approaches-on-trial/approach-drafting.md`;
+      `b1efa42`).
 
 **The step's own items.**
 
-- [ ] Run 3's hand-off to run 4 (`temp/RUN-4.md`), run 4's
+- [x] Run 3's hand-off to run 4 (`temp/RUN-4.md`), run 4's
       decisions log and its `RETRO.md` were read for how full auto
       went, and for what run 4 skipped, deferred or did by hand for
       want of a way; each finding says keep, change or add, for
-      run 5.
+      run 5 (`temp/run-5-prep.md`, 2026-10-21).
 - [ ] Run 5's intent is the reviewer's: event tickets, at least two
       areas whose meeting is a LAYER-5-INTERACTION question, of
       moderate size.
@@ -165,9 +166,9 @@ Gate:
       drafts an approach on trial for any work with no way written;
       when it stops; its `CLAUDE.local.md`; its limits on the
       records.
-- [ ] The two TODO items due before a birth are decided: whether a
+- [x] The two TODO items due before a birth are decided: whether a
       newborn reads `.claude/shapes/` at birth, and whether the
-      container ships `temp/`.
+      container ships `temp/` (`0dac017`, `cd69ed7`).
 - [ ] Run 5 is born by `delivery/installs/pure-seed.md` at
       `~/IdeaProjects/cbc-pure-run-5`, its pin a commit on main, its
       checks in the seed's own list all passing.
