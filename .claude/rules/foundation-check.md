@@ -35,7 +35,7 @@ or moves a section. Which side is right, never how either reads.
 4. **List every disagreement before deciding any.** For each, show
    the reviewer what the foundation says, what the change says, and
    which side the agent thinks is wrong, and why. The reviewer
-   decides each (§3.6).
+   decides each (`docs/conventions/conventions/` §3.6).
 5. **The commit body names each ending,** one of four:
    - **the change is wrong:** it is brought back to the foundation;
    - **the foundation is wrong:** it changes;

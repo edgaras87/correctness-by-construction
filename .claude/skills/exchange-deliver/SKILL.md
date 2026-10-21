@@ -154,8 +154,9 @@ read-through; the pin does not move.
   items ended.
 - It does not take. The run's rule does, from `temp/`, in its own
   time.
-- Birth: the same overlay as 2.2 into the newborn's root, followed
-  by the fills — `delivery/installs/pure-seed.md` has the rest.
+- Birth: every file of each group into the newborn's root, not
+  only the copies 2.2 takes, followed by the fills —
+  `delivery/installs/pure-seed.md` has the rest.
 
 ---
 

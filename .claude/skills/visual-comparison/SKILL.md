@@ -64,8 +64,8 @@ is the answer.
 5. **Render them where they will actually be read**, and judge
    pass or fail per requirement with the reason. A verdict reached
    by reasoning is a *prediction*; mark it as one until the render
-   confirms it. Both times this method has run, the render changed
-   a verdict that reasoning had got wrong.
+   confirms it. In its first two runs, the render changed a
+   verdict that reasoning had got wrong.
 
 6. **Decide, and record it** where the entry file's records table
    puts a decision of its kind — the requirements, the candidates,

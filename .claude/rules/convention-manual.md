@@ -66,9 +66,9 @@ others are not.
 
 ## What this does not fix
 
-Length, tone, and how the body is divided. Whether a section is
-needed is the manual's to decide; that a reader finds the nine
-where they expect them is this file's.
+Length, tone, and how many sections the body has. Whether a
+section is needed is the manual's to decide; that a reader finds
+the nine where they expect them is this file's.
 
 ## The list is the floor, not the ceiling
 

@@ -89,8 +89,8 @@ section.>
   table: every record whose moment this set will create gets a
   commit, at the boundary where its truth exists. A set that closes
   a `PLAN.md` gate item names the commit that closes it. A change to
-  the agent's own files — a skill or rule corrected, a convention
-  exposed, its decisions entry — is a commit of its own, never
+  the agent's own files — a skill or rule corrected or added, its
+  decisions entry — is a commit of its own, never
   folded into a records commit: commit-messages keeps the two
   apart, and a records commit planned to carry one has to be split
   when it opens.
