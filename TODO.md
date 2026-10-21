@@ -125,6 +125,24 @@
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §9.
 
+- [ ] Decide whether the concept, the conventions and the
+      approaches keep examples (2026-10-21, the reviewer).
+      Context: run 4 read run 3's real kills in the shapes' examples
+      at birth, and its framing copied them in places (ADR-0061).
+      The method's worked example, 271 lines in both `cbc-framing`
+      and `cbc-slice`, is an order service that weighs "Orders are
+      never lost AND payment always completes"; the concept's
+      chapters, the slice workflow, the playbook, `writing.md` and
+      the stack's references hold smaller ones. Run 5, event
+      tickets, is born with all of them.
+      Ideas:
+      - examples stripped to a description of what must be done.
+      - examples kept, drawn from a domain no run will build.
+      - examples kept where a reader learns, gone where a run acts.
+      Trigger: run 5's reading.
+      See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
+      §10.
+
 - [ ] Decide how an approach and a shape divide an output: the
       approach says what is done, the shape how its output looks
       (2026-10-20, the reviewer).

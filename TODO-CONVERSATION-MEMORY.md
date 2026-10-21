@@ -713,3 +713,53 @@ marked to check?
   now, it would decide for every run before one has tried it. The
   reviewer agreed to mark it.
 
+## 10. Examples in the concept, the conventions and the approaches
+
+Item: "Decide whether the concept, the conventions and the
+approaches keep examples".
+
+### 2026-10-21
+
+#### What the reviewer asked
+
+After the light read showed run 4 copying run 3's kills from the
+shapes' examples: the examples reach further than the shapes, into
+the concept's method too. Could run 5 be born with the delivery as
+it is, and its copies then changed, before any commit, so that
+every example or clue becomes a plain description of what must be
+done, with nothing to follow? Checked several times, so nothing is
+missed and nothing contradicts. Then, seeing the size: too much
+work; "it is for consider that later if we should be keeping
+examples in concepts, conventions and approaches". The shapes stay,
+read at the gates only.
+
+#### What exists today
+
+Where examples live, counted that day:
+
+| Where | What it holds |
+|---|---|
+| `cbc-framing` and `cbc-slice`, `references/worked-example.md` | 271 lines each, a whole order service with payments; it weighs "Orders are never lost AND payment always completes" |
+| `concept/`, five chapters | 24 lines naming orders, bookings, inventory, payments and the like |
+| the slice workflow, `cbc-framing`'s SKILL, the playbook | smaller examples |
+| the container's `writing.md` | "Three submissions with key k-42 … one order exists" |
+| the stack | `cbc-bootstrap` and the establishment walk |
+| the method's four shapes | a tiny order service, its tags and its numbers |
+
+#### Points made
+
+- **Where to strip, had it been done:** not in the newborn's copies
+  after the seed. Its pin would claim copies equal to a commit they
+  do not equal, and every stripped line would read later as an
+  edit the run made and never logged. The honest way was a branch
+  here with the stripped delivery, seeded from, kept forever, never
+  merged.
+- **The cost:** a few hours, with several checks, which would have
+  moved the birth to the next day.
+- **The concept:** stripping its examples changes what `concept v1`
+  says, even in one run's copy; each such edit would have needed a
+  mark that the concept had not changed.
+- **What stands instead:** the shapes are read at the gates only
+  (ADR-0061), and run 5's hand-off asks its analysis to show: each
+  probe committed before its verdict.
+
