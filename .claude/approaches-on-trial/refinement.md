@@ -81,7 +81,7 @@ A map of the stages. Each section holds its rule.
 | 2.1 Group the kinds | kinds from TODO, each in its round | created, with the kinds |
 | 2.2 List the files | every living file into a layer, with counts | the layer list |
 | 2.3 Check the rules | doubts found, and tried on a sample | each rule's result |
-| 2.4–2.8 Each round | read, list the findings, decide, work, close | the round's section |
+| 2.4–2.8 Each round | read, list the findings, decide, work, close | the round's section; its findings collapse at its close |
 | 2.9 The last read | every kind, read until nothing is found | its section |
 | 2.10 The close | the file goes; git keeps it | deleted |
 
@@ -277,6 +277,16 @@ and the round's section counts:
 
 - findings in text the round changed, and in text it did not;
 - how many the reviewer took, and how many were declined as taste.
+
+Then the round's findings collapse: each list becomes one line
+naming the commit that last holds it whole. The next round reads
+the text, not the findings, and every commit cites their numbers.
+The setup, the decisions, the counts and anything left for a later
+round stay.
+
+*Found 2026-10-21: after round 1, the file held 1,639 lines, 1,450
+of them closed findings that round 2 would not read. Collapsed in
+`a629f52`, it held 390.*
 
 Then the next round reads.
 
