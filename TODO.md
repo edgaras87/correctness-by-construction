@@ -198,7 +198,8 @@
         `docs/conventions/project-recording/` §7.4 keeps changing
         status in PLAN: how that line lived in run 4.
       Trigger: the refinement of this repo closes; in a new session.
-      See: `f097695`, the kickoff and the message it took.
+      See: `f097695`, the kickoff and the message it took;
+      `TODO-CONVERSATION-MEMORY.md` §5.
 
 - [ ] Decide whether our own forms become shapes, and whether a
       shape's part can be optional (2026-10-17, the reviewer).
@@ -293,7 +294,8 @@
       Trigger: the refinement of this repo closes. Its writing kind
                reads these texts; what round 3 did leaves this
                item, and what is left stays or goes.
-      See: devlog 2026-10-17, later, the plain method.
+      See: devlog 2026-10-17, later, the plain method;
+      `TODO-CONVERSATION-MEMORY.md` §6.
 
 - [ ] Decide whether a newborn reads `.claude/shapes/` at birth
       (2026-10-17, the reviewer).
@@ -457,7 +459,7 @@
         (`docs/conventions/project-recording/` §9.4, step 1).
       Trigger: the release item above opens; its CHANGELOG entry
                needs the answer.
-      See: devlog 2026-10-21.
+      See: devlog 2026-10-21; `TODO-CONVERSATION-MEMORY.md` §4.
 
 - [ ] Decide whether a check compares the worked example's two
       copies (2026-10-15, the commit plan for writing rules).

@@ -1179,7 +1179,8 @@ by a rewrap in `b6ecf85`, was repaired in `bdeca06`.
 ### Met in round 1, for round 2
 
 Not findings: true lines, met while working, whose question is
-where a fact lives. Round 2 reads them first.
+where a fact lives. Round 2 reads them first. The talk behind them
+is `TODO-CONVERSATION-MEMORY.md` §7.
 
 1. **The playbook's version in four places:** its own line and the
    seed's three. Tag the copies, or have the seed read the version

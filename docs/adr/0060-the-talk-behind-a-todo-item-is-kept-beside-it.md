@@ -62,10 +62,13 @@ use, not a draft on its way somewhere.
    what was asked, what exists, the options weighed, what was said
    for and against. It is a record that decides nothing and tells
    no story: the item's ADR decides, and the devlog tells.
-2. **One file, a section per item.** The section names its item.
-   Each talk adds a dated part to it, and a part is never
-   rewritten. The file's header comment holds its form, its
-   `foundation:` line and the date of its last touch.
+2. **One file, a section per item.** An item is a TODO item, or
+   an open question another record holds, such as a step's list for
+   a later round; that record names the section, as an item's See
+   does. The section names its item. Each talk adds a dated part to
+   it, and a part is never rewritten. The file's header comment
+   holds its form, its `foundation:` line and the date of its last
+   touch.
 3. **The item stands alone.** Its Context is enough for triage, and
    its See names the section. A lost section breaks no record.
 4. **A section goes in the commit that works its item.** The file
@@ -94,8 +97,12 @@ use, not a draft on its way somewhere.
   records table.
 - `CLAUDE.md`'s records table gains a row for both moments, saving
   and reading, so they are in front of the agent in every session.
-- Today's talk gets four sections: the changelog, the footers in
-  shipped files, the tiers and chain models, and layer 6's moves.
+- Today's talk is kept: a part on the tiers and chain models in the
+  text-division item's section, and sections for the changelog,
+  run 4's reading, the method's plain rewrite, and the footers in
+  shipped files. The last serves the refinement's list for round 2,
+  not a TODO item, which is why an item may be another record's
+  open question.
 - The cost is one more record kept in step with TODO. A dated part
   says what was thought that day, so an old part is not wrong, only
   old.

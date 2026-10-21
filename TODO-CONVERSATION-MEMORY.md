@@ -5,10 +5,11 @@
      devlog tells. Our seat only, on trial
      (docs/conventions/project-recording/ §5.5; ADR-0060).
 
-     One section per item, numbered as added; a number is never
-     reused. Under it the item's words, then one part per talk,
-     headed by its date; a part is never rewritten. The item's See
-     names the section.
+     One section per item: a TODO item, or an open question another
+     record holds. Numbered as added; a number is never reused.
+     Under it the item's words, then one part per talk, headed by
+     its date; a part is never rewritten. The item's See, or the
+     record holding the question, names the section.
 
      The agent asks the reviewer before saving a talk: a new
      section, a part added to one, or nothing, with its
@@ -254,6 +255,39 @@ open.
 - **Open:** the reviewer's guess that the whole repo is chains of
   dependencies; the agent's chain to be rechecked first.
 
+### 2026-10-21
+
+#### What the reviewer asked
+
+Between layer 3's commits: is it true that the tiers model will
+most likely be updated, and that the chain discussed the day
+before, `model (idea) -> idea description for specific case
+(convention or concept) -> approach -> output -> shape`, "most
+likely should live here with changes"?
+
+#### What was answered
+
+- **The tiers model will change, yes,** whatever is decided.
+  `docs/models/tiers.md` §2.2 already holds a small version of the
+  chain: a concept repo holds "the **mental** layer" and "the
+  **executions** derived from it", which is description, then
+  approach, for concepts only. Its §1 and §2.1 list what "how you
+  work" holds; approaches and shapes would join that list.
+- **The chain living in tiers: no, a model of its own,** which
+  tiers points at. Tiers answers *which repo* a thing belongs to;
+  the chain answers *what kind of text* a thing is and how it links
+  to the others. Every repo holds several kinds, so the two cross,
+  and one model holding both would be the very mix this item is
+  about.
+- **"Layer" is taken three times already:** the concept's
+  LAYER-1-ENVIRONMENT to LAYER-5-INTERACTION, the refinement's
+  file layers 1 to 6, and tiers' mental and executions layers. A
+  "layers model" would be a fourth meaning; the chain needs another
+  name, such as "the chain of kinds".
+
+Two Ideas lines came of it, held while layer 3's plan was open and
+added in `abae9c4`.
+
 ## 2. How an approach and a shape divide an output
 
 Item: "Decide how an approach and a shape divide an output".
@@ -371,3 +405,192 @@ style of its own.
   part is written may not.
 - A new reading is written without its form in view today, since
   the form loads only when a reading is read (FINDING-4, `162bfb0`).
+
+## 4. What our changelog tracks
+
+Item: "Decide what our CHANGELOG tracks, and how the stub asks it".
+
+### 2026-10-21
+
+#### What the reviewer asked
+
+At the close read's commit 3, which had written `README.md`'s line
+"What changed per concept version, for those who pin one": is that
+true? Do we have two seats for the changelog? What is a changelog
+for, as an idea; what is ours; what is a run's?
+
+Then the reviewer's view, roughly: the changelog a run gets will
+serve the system it builds from the delivery, so it could be
+prefilled for that. As a stub, it should make the first user decide
+what is tracked. That is like the plan and the playbook: a general
+plan, and a playbook for the system type we know, which a project
+of another kind does without. Our decision to track the concept was
+taken long ago; the repo evolved and its responsibilities changed
+with no changelog entry. The reviewer asked for every consideration:
+update the stub? a playbook analog? how to update ours, what to
+track beside the concept, and how not to miss what comes next, such
+as the new models in TODO?
+
+#### What exists today
+
+- **The idea** (`docs/conventions/project-recording/` §6): a
+  curated record of notable changes per released version, for the
+  project's users, answering "what changed between 1.3 and 1.5, and
+  will it break me?" without reading commits.
+- **The run's seat:** "Its `CHANGELOG.md` logs releases". The stub,
+  `delivery/container/CHANGELOG.md`, leaves "what is a version here"
+  as a placeholder Framing fills.
+- **Ours:** it versions the concept, not a release (ADR-0003). An
+  entry is the concept, or an execution derived from or checked
+  against it; a convention's or the delivery's change is none
+  (ADR-0039, decision 9).
+- **The reader it names cannot read it.** ADR-0003, of 2026-08,
+  saw runs taking copies pinned to a concept version. Today a run's
+  pin is a commit of ours (`ARCHITECTURE.md` §2.5), a run is blind
+  to us, and the changelog is never delivered. Its real readers are
+  us, and a stranger after a release. `README.md`, `CLAUDE.md`'s
+  records table and the changelog's header comment all still name
+  the pinners.
+- **What was missed:** since v1 (2026-08-28), about 1,350 commits
+  added eleven conventions, the container, the models, approaches
+  on trial and shapes, and none is logged. Nothing asks again
+  whether the changelog still covers what the repo is.
+
+#### Options weighed, with the agent's suggestions
+
+1. **Who reads it:** a stranger who will copy or cite this repo,
+   and us. Runs cannot.
+2. **What it tracks:** everything that is the product, written as
+   what it leaves out: the records, our agent setup, `temp/`. A new
+   kind of thing, such as a model, is then tracked from its first
+   commit, with no list to update.
+3. **What a version is:** the concept version must stay, for
+   executions cite it and its bump rule asks whether a derived
+   thing could break. A release of the repo is another thing: v2
+   carries the concept change and a whole container. Either concept
+   versions with the groups logged under them, or a release number
+   of the repo's own, each naming the concept version it holds. The
+   agent suggested the second; it needs an ADR amending ADR-0003
+   and ADR-0039's decision 9.
+4. **The gap:** not 1,350 commits rebuilt, which is the "git log
+   dump" anti-pattern, but one baseline entry at v2: what each
+   group holds now, pointing at the ADRs.
+5. **Not missing things again:** a check at each step's close, each
+   change outside the left-out paths having an entry or marked
+   editorial; and what is tracked read again when the repo grows a
+   new kind of thing.
+6. **The stub:** it asks only what a version is; our failure shows
+   a second question, what is tracked. A `Tracks:` line beside
+   `Versioning:`, decided at Framing, with when to revisit it; the
+   lesson as a dated italic in project-recording §6.
+7. **A playbook analog:** no new file. A fill sets a CbC run's two
+   lines at birth, as the playbook fills its plan; we, with no
+   playbook, fill ours in place, as §9.4 step 1 already says.
+8. **Where each part lives:** the ADR; project-recording §6 and its
+   seats; `CLAUDE.md`'s trigger row; the changelog's header; the
+   README line.
+9. **When:** not inside the close read's plan, being design. A TODO
+   item, due when the release item opens, since that item needs a
+   changelog entry.
+
+The reviewer said to write the item. Its Ideas are 2 to 7, unweighed;
+1, 8 and 9 went into its Context and Trigger.
+
+## 5. Run 4's reading: two moves from layer 6
+
+Item: "Read run 4 against `dac4dd1`, the run 3 commit it was born
+from", its two Ideas lines added in `7db58ed`.
+
+### 2026-10-21
+
+The agent proposed, and the reviewer took, moving two of round 1's
+layer 6 findings into this item rather than fixing either side:
+
+- **FINDING-77:** the container's `retrospective` skill puts a
+  "rules in force now" list on top of the decisions log, which is
+  append-only. Run 3 and run 4 both did it. The practice was lived
+  twice, so its evidence should decide which side changes: the
+  skill, or the log's rule.
+- **FINDING-81:** `cbc-framing` writes a status line into the
+  run's README, where `docs/conventions/project-recording/` §7.4
+  keeps changing status in PLAN. How that line lived in a run
+  decides, and run 4 is the next run read.
+
+Nothing more was said of either; the reviewer said "go, write the
+plan".
+
+## 6. The method's plain rewrite: `cbc-slice`'s opening
+
+Item: "Rewrite the method's texts plain", its Ideas line on
+`cbc-slice`'s opening, added in `7db58ed`.
+
+### 2026-10-21
+
+FINDING-82 found the container's README stub saying an invariant
+is "closed by a test", where the concept says the test proves a
+wall, and the wall closes it. The stub was fixed in round 1.
+`cbc-slice`'s own opening line says the same, stating the
+completion test alone; it was moved here, not fixed, because it is
+method text, and round 1's rule for the method was to change a line
+only where it is untrue. Wording that is true but could be plainer
+waits for this rewrite.
+
+## 7. Footers and retellings in shipped files
+
+Item: none in TODO. These are the five of *Met in round 1, for
+round 2* in `temp/refinement-2026-10-18.md`, which round 2 reads
+first.
+
+### 2026-10-21
+
+#### What the reviewer asked
+
+During layer 6, after `visual-comparison`'s mid-text ADR citations
+were cut (FINDING-79): why remove the references, how is the trail
+kept now, and why were the ADRs there at all? And of a line in
+`commit-messages`, "`CLAUDE.md` and `.claude/` are the working
+arrangement…": when agent-arrangement changes, what finds this
+line? It carries no tag, so a grep would miss it.
+
+Then: how do we know which place in the text a footer line backs,
+now that the ADR no longer sits next to the text? Is it decided
+anywhere, and should it be? And: what happens to a footer when a
+delivery goes to a run? Is it dropped?
+
+Earlier the same morning the reviewer had asked whether the seed's
+playbook version, which lags behind in other places too, should
+carry tags, and whether some of it should not live in the seed at
+all, taking it that deciding is not round 1's. Items 1 and 2 of the
+list came of it.
+
+#### What was answered
+
+- **Why ADRs were cited:** so anyone who doubts a rule can follow
+  it to its reason. Conventions §2 moves them to a *Decisions*
+  footer, cited once, since mid-sentence citations are noise to an
+  agent reading at the moment of use. A grep for an ADR number
+  still finds the skill.
+- **What the cut lost:** two citations named decisions 2 and 3 of
+  ADR-0027, and the footer named the ADR only. Two footer lines
+  were added, each naming its decision, then each naming the
+  section it backs (§4 and §5 of `visual-comparison`), so either
+  side finds the other. ADR-0030's footer line already did this.
+- **The `commit-messages` line:** the reviewer was right. The walk
+  greps for the changed manual's path; the skill's line retells
+  agent-arrangement §1 with no path, and its `foundation` names
+  commit-messages, so nothing reaches it. Under ADR-0059 that is a
+  second home. It cannot simply be tagged: the skill ships, and a
+  run cannot open our paths. That is ADR-0059's run case, left to
+  round 2.
+- **A look back** found one more of the same kind: `cbc-bootstrap`
+  and its walkthrough retell repo-hygiene §2 and §3, with no path.
+  Lines that retell the manual their own `foundation` names are
+  reached by the `foundation` grep, and are fine.
+- **A footer in a run:** its `CBC ADR` lines name ADRs a run can
+  never open. Weighed, none decided: keep them as provenance, so a
+  run can quote "CBC ADR-0027" when it asks why; drop them at
+  delivery, lighter, but no longer byte-identical, which breaks the
+  one-diff check; or keep them, with a line in the file saying what
+  they are for.
+
+All five went into the round 2 list as written there.

@@ -485,10 +485,12 @@ On the deliverer's seat that talk is kept beside the item, in
 `TODO-CONVERSATION-MEMORY.md` at the root, next to `TODO.md`
 (ADR-0060).
 
-- **One file, a section per item.** The section names its item.
-  Each talk adds a dated part to it, and a part is never
-  rewritten. The file's header comment holds its form and the date
-  of its last touch.
+- **One file, a section per item.** An item is a TODO item, or an
+  open question another record holds, such as a step's list for a
+  later round; that record names the section, as an item's See
+  does. The section names its item. Each talk adds a dated part to
+  it, and a part is never rewritten. The file's header comment holds
+  its form and the date of its last touch.
 - **A record that decides nothing and tells no story:** the item's
   ADR decides, and the devlog tells.
 - **The item stands alone.** Its Context is enough for triage, and
