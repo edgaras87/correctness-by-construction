@@ -78,8 +78,8 @@ foundation: the exchange convention
    diff and the log.
 
    The deliverer reads this repo read-only when it reads it: at a
-   hand-off, or at the retrospective, not at every step's close. A
-   faster answer needs a hand-off document. The deliverer diffs the
+   hand-off, a line under `## To the deliverer`, or at the
+   retrospective, not at every step's close. The deliverer diffs the
    copy against its own tree at the pin, gives each hunk its verdict,
    taken, declined or held, writes what it takes in its own words,
    and writes its reply. The line is done at the re-pin.

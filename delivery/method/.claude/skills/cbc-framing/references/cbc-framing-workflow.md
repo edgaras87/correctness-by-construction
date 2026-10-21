@@ -116,7 +116,7 @@ Three sharpenings, each written into the intent:
 
 **Exit:** one promise, one sentence, falsifiable, worth proving.
 **Hands down:** the promise. **Residue (written):** rejected candidates and
-un-chosen purposes, banked in the log.
+un-chosen purposes, banked in `intent.md`.
 
 ## Stage 1 — What must be ours? (LAYER-2-SYSTEM)
 

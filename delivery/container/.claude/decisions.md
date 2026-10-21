@@ -17,13 +17,13 @@
      graduates to the deliverer, stays local, or dies.
 
      The two placeholders in the birth entry below — the date and
-     the "@" hash — are replaced at copy time by the deliverer's
-     seed. The hash is the pin: the deliverer's commit every copy
-     here equals. Beside it the entry carries the read-through, the
+     the pin's commit — are replaced at copy time by the deliverer's
+     seed. The pin is the deliverer's commit every copy here
+     equals. Beside it the entry carries the read-through, the
      commit of this project the deliverer last read up to; at birth
      nothing has been read, and the first note sets it. Every later
      delivery entry carries both (.claude/rules/delivered-copies.md,
-     rule 1). If the placeholder still shows, the seed was not run;
+     rule 1). If a placeholder still shows, the seed was not run;
      fix it before the bootstrap commit.
      foundation: the agent-arrangement convention -->
 

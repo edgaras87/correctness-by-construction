@@ -18,7 +18,7 @@ trial)
 
 <!-- Copied into a step when it opens, and filled in. Copied, never
      shared: each step ticks its own items, so one checkbox cannot
-     serve six steps.
+     serve every step.
      foundation: the project-recording convention -->
 
 ```markdown

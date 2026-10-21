@@ -129,9 +129,9 @@ note's commits move back). The note's Experiments line records which.
 
 ## Between sessions
 
-TODO's Now and the devlog's last "Resume:" line say where the retro
-stands. The note holds every decision, so a new session reads those
-two, then the note.
+PLAN's "Now:" line and the devlog's last "Resume:" line say where
+the retro stands. The note holds every decision, so a new session
+reads those two, then the note.
 
 ---
 

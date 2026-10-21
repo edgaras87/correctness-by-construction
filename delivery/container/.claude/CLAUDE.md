@@ -43,7 +43,7 @@ this project writes is its own.
 | Starting work, or closing a step's gate | Current state, next steps, gates | PLAN.md |
 | A decision taken, options rejected | Decisions and why | docs/adr/ |
 | Noticed something, not doing it now | Backlog | TODO.md |
-| Session ending, or a dead end hit | Work history, dead ends | devlog/devlog.md |
+| Session ending, a dead end hit, or a TODO item added | Work history, dead ends, a TODO item's story | devlog/devlog.md |
 | Shipped something users can see | What changed, for users | CHANGELOG.md |
 | The system's structure changed, or asking what a slice may rely on | The system as it stands: its components, what a slice may rely on, one row per rule | ARCHITECTURE.md |
 | The promise, the layers, or the slices are in question | Intent, system definition, slice registry | docs/system/ |

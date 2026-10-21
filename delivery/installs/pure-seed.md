@@ -18,7 +18,7 @@ seed commits' subjects; everything else it can.
 Deliberately not delivered: nothing that encodes a prior run's
 conclusions, and no playbook file — its steps ride in PLAN. The
 agent meets the container and the method raw. One exception: the
-two entry files arrive composed, in the kit itself, because runs
+two entry files arrive composed, in the container itself, because runs
 that derived their own produced neither the pre-framing guard nor
 the pin stance (ADR-0019, ADR-0024).
 
@@ -37,7 +37,7 @@ under `$bundle_dir`, and a run is born from this repo alone.
 The name is a placeholder — everything before the briefing is
 problem-agnostic, and the briefing brings the real name.
 
-**2. Copy the kit.**
+**2. Copy the container.**
 
 ```bash
 mkdir -p "$new_project_dir"
@@ -62,14 +62,14 @@ The birth entry takes two placeholders: the pin, for what was
 delivered, and the date. Its read-through is written as *none* in
 the template — nothing has been read before the first note — and
 the seed leaves it. One pin, because the run holds one delivery
-(ADR-0025, ADR-0036). The next two `sed`s fill the
-other birth dates the kit carries, the first ADR's and the devlog's
-first heading: three records, one moment. The last fills the working
-name into the two entry files, which arrive inside the kit rather
-than being written over stubs. Every `sed` targets a placeholder and
-not a line number, so re-running the block is harmless. Installing
-by hand, fill the five placeholders yourself before the agent's
-first session.
+(ADR-0025, ADR-0036). The next two `sed`s fill the other birth
+dates the container carries, the first ADR's and the devlog's
+first heading: three records, one moment. The last fills the
+working name into the two entry files, which arrive inside the
+container rather than being written over stubs. Every `sed`
+targets a placeholder and not a line number, so re-running the
+block is harmless. Installing by hand, fill the five placeholders
+yourself before the agent's first session.
 
 **3. Create the repo and land the hygiene commit** — verbatim, the
 same in every project, because the hygiene base carries no
@@ -123,10 +123,10 @@ One pin in every subject, ours: the container arrives inside the
 delivery rather than beside it, and where it began is ADR-0025's,
 not a number the newborn holds.
 
-The first sed is the kit's marker-keeping swap — the steps land
-between the STEPS markers and the markers stay; the second fills
-the "Steps from:" comment's placeholder in place, as its own text
-sanctions. Both are re-runnable.
+The first sed is the swap the container's markers ask for — the
+steps land between the STEPS markers and the markers stay; the
+second fills the "Steps from:" comment's placeholder in place, as
+its own text sanctions. Both are re-runnable.
 
 The source is `delivery/fills/cbc-run-pure-playbook.md`, read
 verbatim — no filter rides the insert; this manual delivers what the
@@ -234,7 +234,7 @@ item is a verifiable fact:
   and the working name in the two entry files. Every other stub
   still reads as a stub, and no bundle birth entry exists.
   `.claude/CLAUDE.md` and `README.md` are byte-identical to the
-  kit's with the name filled, neither carries a provenance
+  container's with the name filled, neither carries a provenance
   header, and no `CLAUDE.md` sits at the root.
 - No provenance header from this repo anywhere in the newborn.
 

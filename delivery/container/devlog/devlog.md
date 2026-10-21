@@ -1,6 +1,7 @@
 # Devlog
 
-<!-- Newest entries on top. 2–5 minutes at the end of each session.
+<!-- Newest entries on top. 2–5 minutes at the end of each session,
+     and a TODO item's story when the item is added.
      For future-you: fragments fine, honesty mandatory. Never clean up.
      An entry is what happened, the dead ends, where to resume. Test
      output and a gate's facts live in their own records: link them,

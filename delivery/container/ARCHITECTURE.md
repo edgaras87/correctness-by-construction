@@ -4,7 +4,8 @@
      Update trigger: a plan step's gate closes and this no longer matches
      reality. For the WHY behind any shape, link the ADR. By rule, not
      by slice: a slice's close adds or changes rows in Invariants, never
-     a paragraph; how the slice got there is its record's. -->
+     a paragraph; how the slice got there is its record's.
+     foundation: the project-recording convention -->
 
 ## Overview
 
