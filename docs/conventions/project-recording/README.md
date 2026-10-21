@@ -46,6 +46,9 @@ there is.
   `TODO.md`, `CHANGELOG.md`, `ARCHITECTURE.md`, `docs/adr/` and
   `devlog/`, derived from this page as the stubs are, and never
   copied from them (ADR-0042).
+- **`temp/conversation-memory.md` — the deliverer's, on trial**:
+  the talk behind TODO items, beside them (§5.5, ADR-0060). Not a
+  record.
 
 This page explains the records; the stubs state the rules. Only the
 one-home rule, on each side, is loaded into an agent, in every
@@ -56,7 +59,7 @@ checked back against this page.
 ## The seats
 
 The same records in both seats, each derived from this page — the
-run's through the stubs, the deliverer's directly — with six
+run's through the stubs, the deliverer's directly — with seven
 differences of rule or ownership, so a section each
 (`docs/conventions/conventions/` §3.4).
 
@@ -75,7 +78,7 @@ ADR-0059).
 ### The deliverer's seat
 
 The deliverer keeps the same records, derived from this page rather
-than from the stubs (ADR-0042), and differs in six things. It
+than from the stubs (ADR-0042), and differs in seven things. It
 has no project end, so lessons fold back at each step's close
 rather than at a retrospective, as its first devlog entry agreed on
 2026-08-27; whether a retrospective serves it too is on trial at
@@ -117,6 +120,10 @@ And it may retell a fact where the reader acts on it in place
 (§11). Its tag is a manual's path and section
 (`docs/conventions/conventions/` §3.2), and the walk before every
 commit re-reads it (`docs/conventions/conventions/` §3.5).
+
+And it may keep the talk behind a TODO item beside the item, in
+`temp/conversation-memory.md`, on trial (§5.5; ADR-0060). A run
+gets it only if it holds here.
 
 *Found 2026-09-29: from 2026-09-20, with Step 10 in progress, 203
 commits, two of them touching `PLAN.md`; one step written after its
@@ -471,13 +478,42 @@ each pointing at a devlog entry written only at its end, so every
 See led nowhere until then. Tried first on five items on
 2026-10-17, the story moved to the moment the item is added.*
 
-### 5.5 When
+### 5.5 Conversation-memory — the deliverer's, on trial
+
+An item keeps what triage needs, and its story is the devlog's.
+The talk that shaped it is neither: what was asked, the options
+weighed, what was said for and against, the reviewer's own words.
+On the deliverer's seat that talk may be kept beside the item, in
+`temp/conversation-memory.md` (ADR-0060).
+
+- **One file, a section per item.** The section names its item.
+  Each talk adds a dated part to it, and a part is never
+  rewritten. The header carries the date of the file's last touch.
+- **Not a record.** It decides nothing and tells no story: the
+  item's ADR decides, and the devlog tells. It is kept for work
+  still to come, which is why it lives in `temp/`.
+- **The item stands alone.** Its Context is enough for triage, and
+  its See names the section. A lost file breaks no record.
+- **The agent asks each time** a talk raises or shapes an item: a
+  new section, a part added to one, or nothing, with its
+  recommendation. The reviewer decides. Most items need none.
+- **A section goes in the commit that works its item.** The file
+  goes with its last section, and the next talk worth keeping
+  starts it again.
+
+*On trial since 2026-10-21. The evidence would be an item worked
+with its section in hand, and the section changing the work. It is
+looked at when the third such item is worked, or at the refinement
+step's close, whichever comes first. If it holds, it reaches runs
+through the container; if not, it goes.*
+
+### 5.6 When
 
 Item added the moment it's discovered (so it stops occupying your
 head); triaged when closing a step (§11, rule 3: moments, not
 schedules).
 
-### 5.6 Anti-patterns
+### 5.7 Anti-patterns
 
 Using it as the plan (it has no gates or sequence); never deleting;
 closed entries kept whole; dated updates stacked on an open item;
