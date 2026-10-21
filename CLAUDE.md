@@ -18,6 +18,7 @@ it. Documents only — no code, no runs.
 | Opening a step, or closing its gate | The step form, and the open step | PLAN.md |
 | A decision taken, options rejected | Decisions and why | docs/adr/ |
 | Starting work, or noticed something not doing it now | What's next; the backlog | TODO.md |
+| A talk shaped a TODO item or an open question, or one is being worked | The talk behind each item, on trial | TODO-CONVERSATION-MEMORY.md |
 | Session ending, a dead end hit, or a TODO item added | Work history, dead ends, a TODO item's story | devlog/<YYYY-MM>.md |
 | The concept changed, or an execution derived from or checked against it | What changed, for those who pin a concept version | CHANGELOG.md |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |

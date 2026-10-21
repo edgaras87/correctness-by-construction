@@ -1167,3 +1167,13 @@
   Rejected: keeping the skill beside the approach, to catch a small
   TODO item outside a step (two texts for one way; the approach
   notes the gap as not known yet).
+
+- 2026-10-21 The records table in `CLAUDE.md` gains
+  `TODO-CONVERSATION-MEMORY.md`, opened when a talk shapes a TODO
+  item or an open question, and when one is worked.
+  Why: ADR-0060. The file's header holds the ask and the reading;
+  the row puts both moments in front of the agent in every session.
+  Rejected: the ask written into the row (the table gives the
+  moment, never the rule, as its own comment says); a `paths:` rule
+  on the file (it loads when the file is read, after the moment it
+  should prompt); a skill (one moment, and no procedure).
