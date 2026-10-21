@@ -112,7 +112,11 @@ close and never while it is written (`docs/conventions/shapes/`).
 
 **Derived from the concept**, and each says so in its `foundation`
 field: `concept v1`. A change to the concept asks whether these are
-still right.
+still right. They live at `delivery/method/.claude/skills/cbc-framing/`,
+`delivery/method/.claude/skills/cbc-slice/` and
+`delivery/method/.claude/shapes/`. With 2.2 and 2.4, this is the
+concept's list of what derives from it; the chapters carry none
+(`docs/conventions/conventions/` §3.5, step 1).
 
 ### 2.2 The stack practice — `delivery/spring-postgres/`
 
@@ -121,11 +125,14 @@ What one real Spring and Postgres project taught:
 copy-and-fill templates beside their references, which a run fills
 and then owns (ADR-0008).
 
-**Not derived from the concept — checked against it.** These came
-from practice, not from the idea, and their `foundation` field says
-so: `practice, checked against concept v1`. A project on another
-stack drops this group whole and keeps the rest; it then has no
-ground or bootstrap skill, and another stack's are that stack's to
+**Not derived from the concept — checked against it.** These came from
+practice, not from the idea, and their `foundation` field says so:
+`practice, checked against concept v1`. They live at
+`delivery/spring-postgres/.claude/skills/infra-establish/`,
+`delivery/spring-postgres/.claude/skills/infra-serve/` and
+`delivery/spring-postgres/.claude/skills/cbc-bootstrap/`. A project on
+another stack drops this group whole and keeps the rest; it then has
+no ground or bootstrap skill, and another stack's are that stack's to
 harvest, as a group beside this one (ADR-0029).
 
 ### 2.3 The container — `delivery/container/`
@@ -137,10 +144,10 @@ convention skills, four rules, one approach on trial, the hygiene
 files.
 
 **This is the conventions made usable**, the way the method is the
-concept made usable. Every one of its twenty-two files but one is
-the artifact of one of ten of the eleven manuals in 1.2 —
-`conventions` ships nothing — the records and `.claude/rules/one-home.md`
-belong to `project-recording`, the entry file and the decisions log to
+concept made usable. Every one of its twenty-two files but one is the
+artifact of one of ten of the eleven manuals in 1.2 — `conventions`
+ships nothing — the records and `.claude/rules/one-home.md` belong to
+`project-recording`, the entry file and the decisions log to
 `agent-arrangement`, the three dotfiles to `repo-hygiene`,
 `commit-messages`, `commit-plan` and `visual-comparison` to the
 conventions named after them, `retrospective` and
@@ -163,6 +170,8 @@ the run's own agent — section 4.
   (2.5), held as two skills of ours. A run never sees this.
 - **`fills/`** — text written *into* a newborn's own files rather
   than copied as files: the playbook's steps, into its `PLAN.md`.
+  The playbook, `delivery/fills/cbc-run-pure-playbook.md`, is
+  checked against concept v1, as the stack practice is.
 - **`README.md`** — the delivery's local map: how its parts land in
   a run.
 
@@ -177,11 +186,13 @@ Identity step, and until then has only ours:
 | run 1 | — | `~/IdeaProjects/cbc-pure-run` | frozen |
 | run 2 | — | `~/IdeaProjects/cbc-pure-run-2` | idle since its Step 0 |
 | run 3 | `never-oversold` | `~/IdeaProjects/cbc-pure-run-3` | live |
+| run 4 | `safe-reservation-2` | `~/IdeaProjects/cbc-pure-run-4` | through Release, not yet read |
 
 **A run is blind to us.** It holds no address for this repo, no
 checkout, no remote. It cannot fetch, and nothing here reaches it
-by itself. Every delivery is a person copying files into the run's
-`temp/`, and the run's own agent taking them from there.
+by itself. Every delivery is copied into the run's `temp/`, by the
+reviewer or by the agent when told to, and the run's own agent
+takes it from there (`docs/conventions/exchange/` §3.1).
 
 ```
           this repo                              a run
@@ -232,7 +243,8 @@ The loop, as it actually runs:
 4. We read the run and find the edit.
 5. **Taken:** our master changes, so the next project never meets
    the same failure. **Declined:** we judge it project-specific, an
-   exception, or not worth the change — and the run keeps its edit.
+   exception, or not worth the change — and the edit goes, its need
+   to the run's own records (`docs/conventions/exchange/` §4).
 
 **The rule that holds all of this** — a description lists what
 derives from it, each derivative names it, a change walks the list,
@@ -241,7 +253,8 @@ practice as the evidence — is stated once, in the conventions
 manual, `docs/conventions/conventions/` §3.5, for every description
 this page names: the concept, each manual, and this page. Why step
 5 declines a finding only for not being general, and where practice
-has already bent a description, is its §3.6. This page is a map and
+has already bent a description, is `docs/conventions/conventions/`
+§3.6. This page is a map and
 states no rule of its own. Where a manual and the
 concept are handled differently is that manual's *What this does
 not cover* and ADR-0039.
@@ -278,18 +291,21 @@ review, and each entry names which.
 - **An execution never lands without stating which concept version
   it derives from** — each skill's `foundation` field, which travels
   with every copy (ADR-0004, ADR-0036).
-- **The container is the master of every file a run receives** —
-  `docs/conventions/exchange/` §1 and §2.
+- **Every file a run receives has its master here,** in the group
+  that ships it: the method, the container, a stack practice, the
+  concept — `docs/conventions/exchange/` §1 and §3.2.
 - **A manual never ships** — `docs/conventions/conventions/` §1.
 - **A manual never outlives the rule it explains**: a rule changed
-  in `delivery/container/` moves its manual in the same commit —
-  `docs/conventions/conventions/` §3.5 (ADR-0025).
+  in `delivery/container/` is checked back against its manual, and
+  whichever side is wrong changes —
+  `docs/conventions/conventions/` §3.5 and §3.6 (ADR-0025).
 - **Agent side and project side never share a commit** —
   `docs/conventions/commit-messages/` §2.
-- **A pin never claims more than was checked**: reading a run is a
-  reading over two diffs, and its verdict is written every time,
-  including "taught nothing" — `docs/conventions/exchange/` §6.3
-  and §6.5 (ADR-0023).
+- **A pin never claims more than was checked**: a read takes the
+  run's decisions log, its backlog and the diff of every copy it
+  holds, and every read ends with a note, even one that says
+  nothing was learned — `docs/conventions/exchange/` §6.1 and §6.6
+  (ADR-0023).
 - **A skill never spans two groups, and nothing that needs Spring,
   PostgreSQL, Maven or podman sits under `method/`** — held by the
   shape of the tree, since a group is a directory and a misfiled
@@ -351,10 +367,12 @@ manual owns the thing a word names, pointed at there.
   included, and no earlier state.
 - **project** — whichever repository is doing the work under a
   convention or making an output: a run, or this one.
-- **delivery** — files copied whole into a run, with a note. At
-  birth, and after.
-- **staging** — a person copying the delivery and its note into a
-  run's `temp/`. The operator's act; the run does nothing until it
+- **delivery** — files copied whole into a run with a note, or a
+  note alone. At birth, and after (`docs/conventions/exchange/`
+  §3.2, §6.7).
+- **staging** — copying the delivery and its note into a run's
+  `temp/`, by the reviewer or by the agent when told to
+  (`docs/conventions/exchange/` §3.1). The run does nothing until it
   has happened.
 - **take** — the run's act: moving delivered files from `temp/`
   into place and recording the pin.
@@ -399,9 +417,11 @@ manual owns the thing a word names, pointed at there.
   `.claude/approaches-on-trial/approach-evaluation.md`.
 - **seats** — the sides a convention has, this repo's and a run's.
   A manual says whether the two use it the same way.
-- **foundation** — the frontmatter line by which a shipped file
-  names the description it derives from. Not *source*: that was a
-  run's word for the deliverer, and is not ours.
+- **foundation** — the line by which a skill, a rule, a shape or a
+  record's form names what it stands on: its description, or the
+  practice it was written under (`docs/conventions/conventions/` §2,
+  §3.5). Not *source*: that was a run's word for the deliverer, and
+  is not ours.
 - **step** — one piece of PLAN's work, a run's or ours. What makes
   work a step here is our `PLAN.md`'s step form (ADR-0057).
 - **stage** — one phase of a skill, numbered from Stage 0:
