@@ -37,6 +37,12 @@ Layer 5: FINDING-89 in `exchange-reading.md`; FINDING-104 in our
 `writing.md`; FINDING-118 in `working-a-reading.md`; FINDING-119 to
 123.
 
+**4a. `docs: TODO holds what our changelog tracks`**
+The reviewer's question at commit 3: the changelog's reader and
+what it tracks. A TODO item in Later, its story in today's devlog
+entry. With it, `TODO.md`'s pointer to `exchange-deliver`'s old §5,
+which commit 4 renamed.
+
 **5. `fix(delivery): the close read's fixes, shipped`**
 Layer 6: FINDING-97 in the stack walkthrough; FINDING-118 in the
 container's devlog stub and entry file; FINDING-127 to 129 and 131
