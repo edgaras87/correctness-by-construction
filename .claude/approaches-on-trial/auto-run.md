@@ -25,9 +25,12 @@ started run 4 (`temp/RUN-4.md`). Never on our seat.
    the run's reading (`exchange-read`), which harvests its lessons;
    the cost, that those lessons do not reach this run, is said to
    the reviewer.
-2. **The intent is the reviewer's.** The agent checks it against
-   the concept, and says what it finds, without writing it: the
-   layers it must reach, and whether its size fits a run.
+2. **The intent is the reviewer's.** The agent may draft it when
+   the reviewer asks, and the reviewer's version is what goes. The
+   agent checks it against the concept: the layers it must reach,
+   and whether its size fits a run. It is written as the method's
+   briefing, which framing commits unchanged, so it brings the
+   problem and leaves the promise open.
 3. **Settle what TODO says is due before a birth.**
 4. **Write the hand-off,** in this repo's `temp/`, from stage 1's
    findings. It says what full auto means for this run:
@@ -38,6 +41,10 @@ started run 4 (`temp/RUN-4.md`). Never on our seat.
      `delivered-copies.md` rule;
    - work with no way written down gets an approach on trial,
      drafted by the shipped `approach-drafting`;
+   - how far it may grow or shrink: the briefing's Out is closed,
+     and what framing finds there is refused in writing; a bound on
+     areas and slices, past which is a Real question; every trouble
+     the briefing names staged by a test;
    - how a skill's sign-off is given on full auto;
    - its commits and branches; never a push;
    - when auto ends, and what waits for the reviewer then;
