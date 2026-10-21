@@ -142,10 +142,10 @@ harvest, as a group beside this one (ADR-0029).
 (`README`, `PLAN`, `TODO`, `devlog`, `ARCHITECTURE`, `CHANGELOG`,
 the first ADR), the entry file, the agent decisions log, five
 convention skills, four rules, one approach on trial, the hygiene
-files.
+files, and the README of its scratch space, `temp/`.
 
 **This is the conventions made usable**, the way the method is the
-concept made usable. Every one of its twenty-two files but one is the
+concept made usable. Every one of its twenty-three files but one is the
 artifact of one of ten of the eleven manuals in 1.2 — `conventions`
 ships nothing — the records and
 `delivery/container/.claude/rules/one-home.md` belong to
@@ -154,8 +154,9 @@ ships nothing — the records and
 `commit-messages`, `commit-plan` and `visual-comparison` to the
 conventions named after them, `retrospective` and
 `apply-retrospective` to the retrospective,
-`delivery/container/.claude/rules/delivered-copies.md` to the
-exchange, `delivery/container/.claude/rules/shapes-lifecycle.md` to
+`delivery/container/.claude/rules/delivered-copies.md` and
+`delivery/container/temp/README.md` to the exchange,
+`delivery/container/.claude/rules/shapes-lifecycle.md` to
 shapes, and `delivery/container/.claude/rules/writing.md` to
 writing. The one is
 `delivery/container/.claude/approaches-on-trial/approach-drafting.md`,

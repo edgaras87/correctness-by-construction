@@ -23,9 +23,9 @@ into the run's `.claude/shapes/`; the rest is
 ## 2. Three ways a file lands
 
 - **The run's own from birth.** The container's record stubs, its
-  two entry files, its decisions log and its hygiene files are
-  copied once and are the run's from then on. They never travel
-  again.
+  two entry files, its decisions log, its hygiene files and its
+  `temp/README.md` are copied once and are the run's from then on.
+  They never travel again.
 - **Pinned copies.** The container's convention skills, rules and
   approach on trial; the method's and the stack practice's skills,
   rules and shapes; and the concept, at `docs/concept/`

@@ -29,19 +29,6 @@
 
 ## Now (due while the open step runs)
 
-- [ ] Ship `temp/` in the container, or stop telling runs to use
-      it (2026-09-23).
-      Context: `visual-comparison` and `delivered-copies` send a
-      newborn to `temp/`, and `exchange-deliver` stages into it; the
-      container ships none.
-      The exchange manual calls a run's `temp/` untracked, and since
-      2026-10-08 a take removes only its staging, because run 3
-      keeps its own drafts there; ours is tracked. No shipped text
-      says what the folder is for. Ours, `temp/README.md`, is the
-      seed.
-      Trigger: before the next birth.
-      See: devlog 2026-10-08.
-
 ## Next (each due at its trigger)
 
 - [ ] Decide how this repo's text is divided: by kind, a model, a

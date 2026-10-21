@@ -23,6 +23,9 @@ The first convention whose artifacts split between the two
 arrangements, each side holding only what it runs
 (`docs/conventions/agent-arrangement/`, its seats).
 
+- **`delivery/container/temp/README.md` — shipped at birth**, the
+  run's own from then on: what its `temp/` is for, where a delivery
+  arrives and the run keeps its own scratch. §3.1 and §4.
 - **`delivery/container/.claude/rules/delivered-copies.md` — a
   rule, shipped**, held at `.claude/rules/delivered-copies.md` and
   loading when a copy or a file in `temp/` is read. §4 and §5.
@@ -352,11 +355,11 @@ The backlog lines live under one heading kept for them, *To the
 deliverer*. The backlog is the channel — a hand-off is the run's
 own open item, waiting on an answer, with a lifecycle git can see:
 filed at a step's close, gone with the pin that answers it. `temp/`
-is not the channel the other way: it is untracked, its staging
-removed at the take, and a line left there would vanish without a
-record. One heading keeps the lines from being swept with a rewrite
-elsewhere — which has happened, five items in one commit — and
-makes the read one section instead of a search.
+is not the channel the other way: it holds drafts, not records,
+its files go once they have served, and a line left there would
+go with them. One heading keeps the lines from being swept with a
+rewrite elsewhere — which has happened, five items in one commit —
+and makes the read one section instead of a search.
 
 Nothing is written into the copy but the edit. No dated line, no
 comment saying what changed — a file says how to use it, never its
