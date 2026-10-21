@@ -1,8 +1,8 @@
---- name: visual-comparison description: Settle how a structure is
-shown — a picture, a table, a plain list — by writing down what the
-reader must get and rendering every candidate against it. Use when a
-diagram might be the answer, including deciding it should not be.
-foundation: the visual-comparison convention ---
+---
+name: visual-comparison
+description: Settle how a structure is shown — a picture, a table, a plain list — by writing down what the reader must get and rendering every candidate against it. Use when a diagram might be the answer, including deciding it should not be.
+foundation: the visual-comparison convention
+---
 
 # Visual Comparison
 
@@ -142,6 +142,10 @@ name the case, it is not an entry yet.
 - CBC ADR-0027 — the comparison is a method that worked once;
   recorded, not adopted, with the second format question as the
   trigger for asking whether it becomes a rule
+- CBC ADR-0027, decision 2 — §4's "using a dialect is not fighting
+  it": a candidate that needs the layout fought has lost
+- CBC ADR-0027, decision 3 — §5's Mermaid trial, provisional and not
+  travelling
 - CBC ADR-0028 — the trigger fired and was answered here. The
   recommendation was to wait for a third instance: two uses by one
   author in one week is thin evidence. If that objection was
