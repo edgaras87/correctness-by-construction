@@ -121,6 +121,25 @@
       See: devlog 2026-09-26, evening; and 2026-09-30, night,
       later, where `pure-seed.md` was brought up to date for it.
 
+- [ ] Decide whether a commit plan's look-back also asks if the
+      work could have been done better (2026-10-21, the reviewer).
+      Context: before its close, `commit-plan` looks back at the
+      landed commits for their grouping only. Work shows what a plan
+      missed; the reviewer would have the look-back ask whether the
+      work itself could be meaningfully better, and if so try that
+      way and compare it with the first try before keeping one. Run
+      4 tried each Real question's options on `try/` branches: 14
+      of them, and 2 changed the answer. Run 5 tries it first, from
+      its hand-off.
+      Ideas:
+      - a bar for "meaningful": it changes a wall, a test's
+        adversity, or removes a part; rewording is not enough.
+      - the better way on a `try/` branch, compared, the loser kept.
+      - a cap on its cost, so no plan doubles by habit.
+      Trigger: run 5's reading.
+      See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
+      §9.
+
 - [ ] Decide how an approach and a shape divide an output: the
       approach says what is done, the shape how its output looks
       (2026-10-20, the reviewer).
