@@ -532,6 +532,8 @@ reader for the back-link.
   against concept v1" and is in neither list.
 - Ending: moved to layer 4's work: the list lives in
   `ARCHITECTURE.md`.
+- Ending: fixed, `53fda69`: the files by path, the playbook checked
+  against the concept.
 
 **FINDING-35.** Agreement. Resting on the reader. Known.
 - Where: the opening statement of each manual.
@@ -563,6 +565,8 @@ reader for the back-link.
 - Narrowed, `da7499c`: layer 3's seven pointers by path. Declined:
   commit-plan's "(model §10)", which a dated lesson quotes as it
   stood. The rest waits for layers 4 and 6.
+- Narrowed, `53fda69`, `4d2c821` and `c38591c`: layer 4's pointers by path.
+  The rest waits for layer 6.
 
 #### Layer 4: `ARCHITECTURE.md`, `README.md`, the records
 
@@ -578,6 +582,7 @@ reader for the back-link.
   "eleven" and one-home rule 3 are true again (`a9e8b96`,
   `8e5f093`), and TODO's "the other eight" with them. Left for
   round 1's work: TODO's "all twelve".
+- Ended, `4d2c821`: TODO's "all eleven".
 
 **FINDING-38.** Stale lines. Checked.
 - Where: `ARCHITECTURE.md`:170-178.
@@ -585,12 +590,14 @@ reader for the back-link.
   `~/IdeaProjects/cbc-pure-run-4`, born 2026-10-15, through
   Release.
 - Text: the runs table ends at run 3.
+- Ending: fixed, `53fda69`.
 
 **FINDING-39.** Agreement. Checked.
 - Where: `ARCHITECTURE.md`:233-234.
 - Rule: a declined edit "goes, and the need it served goes to the
   run's records" (`docs/conventions/exchange/` §4, step 2).
 - Text: "**Declined:** … and the run keeps its edit."
+- Ending: fixed, `53fda69`.
 
 **FINDING-40.** Agreement. Checked.
 - Where: `ARCHITECTURE.md`:280-281.
@@ -599,6 +606,7 @@ reader for the back-link.
   (`docs/conventions/exchange/` §3.2, §3.3).
 - Text: "**The container is the master of every file a run
   receives**".
+- Ending: fixed, `53fda69`.
 
 **FINDING-41.** Agreement. Resting on the reader.
 - Where: `ARCHITECTURE.md`:283-285.
@@ -607,6 +615,7 @@ reader for the back-link.
   step 4, §3.6).
 - Text: "a rule changed in `delivery/container/` moves its manual
   in the same commit".
+- Ending: fixed, `53fda69`.
 
 **FINDING-42.** Agreement. Resting on the reader.
 - Where: `ARCHITECTURE.md`:288-291.
@@ -616,6 +625,7 @@ reader for the back-link.
   is §6.6.
 - Text: "a reading over two diffs … `docs/conventions/exchange/`
   §6.3 and §6.5".
+- Ending: fixed, `53fda69`.
 
 **FINDING-43.** Agreement. Checked.
 - Where: `ARCHITECTURE.md`:353-354.
@@ -623,6 +633,7 @@ reader for the back-link.
   (`docs/conventions/exchange/` §6.7).
 - Text: "**delivery** — files copied whole into a run, with a
   note."
+- Ending: fixed, `53fda69`.
 
 **FINDING-44.** Agreement. Checked.
 - Where: `ARCHITECTURE.md`:182-183, 355-357.
@@ -630,6 +641,7 @@ reader for the back-link.
   told to" (`docs/conventions/exchange/` §3.1).
 - Text: "**staging** — a person copying the delivery"; "Every
   delivery is a person copying files".
+- Ending: fixed, `53fda69`, in §2.5 and *The words*.
 
 **FINDING-45.** Agreement. Checked.
 - Where: `ARCHITECTURE.md`:393-395.
@@ -639,6 +651,7 @@ reader for the back-link.
   §2, §3.5 step 2).
 - Text: "**foundation** — the frontmatter line by which a shipped
   file names the description it derives from."
+- Ending: fixed, `53fda69`.
 
 **FINDING-46.** Agreement. Resting on the reader.
 - Where: `ARCHITECTURE.md`:398-401.
@@ -646,16 +659,20 @@ reader for the back-link.
   `working-a-reading.md` and this refinement use it wider.
   `.claude/approaches-on-trial/refinement.md` §3 already names this
   for the refinement's close.
+- Ending: moved to the refinement's close:
+  `.claude/approaches-on-trial/refinement.md` §3 holds it.
 
 **FINDING-47.** Wiring. Checked.
 - Where: `TODO.md`:61.
 - True: `docs/conventions/commit-plan/README.md` has §1 and §2.
   §4 is the skill's, `.claude/skills/commit-plan/SKILL.md`.
 - Text: "`commit-plan` §4 regroups a set's commits".
+- Ending: fixed, `4d2c821`.
 
 **FINDING-48.** Wiring. Uncertain.
 - Where: `TODO.md`:574.
 - Text: "`concept/02`", for `concept/02-guarantees-and-walls.md`.
+- Ending: fixed, `4d2c821`.
 
 **FINDING-49.** Stale lines. Checked.
 - Where: `TODO.md`:233-234.
@@ -678,17 +695,21 @@ reader for the back-link.
 - True: `ARCHITECTURE.md` §2.5 names each run's path, since
   `4b9b277`. There are four runs.
 - Text: "nothing here names it"; "One run so far".
+- Ending: fixed, `4d2c821`: the item closed, answered by
+  `ARCHITECTURE.md` §2.5.
 
 **FINDING-52.** Stale lines. Checked.
 - Where: `TODO.md`:269-271.
 - True: the next delivery to run 3 came on 2026-10-18, a note
   alone; the next birth takes the shapes.
 - Text: "the next delivery to run 3 is this trigger."
+- Ending: fixed, `4d2c821`.
 
 **FINDING-53.** Stale lines. Checked.
 - Where: `TODO.md`:433-434.
 - True: the manual is 421 lines, the model 466.
 - Text: "from about 350 lines to about 600".
+- Ending: fixed, `4d2c821`.
 
 **FINDING-54.** Stale lines. Uncertain. DECISION-5.
 - Where: `TODO.md`:258, 323, 472-473.
@@ -696,6 +717,8 @@ reader for the back-link.
   and our container.
 - Text: "Trigger: before the next birth."; "the next birth's
   Step 3 close."; "a fourth run deriving `.gitignore` by hand."
+- Ending: moved, `4d2c821`, by DECISION-5: run 4's reading item
+  weighs the three triggers.
 
 **FINDING-55.** Agreement. Checked.
 - Where: `TODO.md`:27.
@@ -703,6 +726,7 @@ reader for the back-link.
   (project-recording, the deliverer's seat).
 - Text: "## Next (upcoming steps — assign each to a step when
   triaged)".
+- Ending: fixed, `4d2c821`.
 
 **FINDING-56.** Agreement. Checked.
 - Where: `devlog/README.md`:7; `CLAUDE.md`:20.
@@ -711,6 +735,8 @@ reader for the back-link.
   (`docs/conventions/project-recording/` §5.4).
 - Text: "2–5 minutes at the end of each session."; "Session
   ending, or a dead end hit".
+- Narrowed, `4d2c821`: the devlog guide names both moments.
+  `CLAUDE.md`'s line waits for layer 5.
 
 **FINDING-57.** Wiring. Uncertain.
 - Where: `README.md`:51-56; `delivery/container/README.md`:3, 9,
@@ -719,6 +745,9 @@ reader for the back-link.
 - Text: "[PLAN.md](PLAN.md)", "[docs/concept/](docs/concept/)".
   Each file sits at its repo's root, so each target is the root
   path, once the stub is in a run.
+- Ending: declined. Both files sit at their repo's root, so each
+  link is already the root path; conventions §3.2's reason, a
+  different root, does not arise.
 
 **FINDING-58.** Wiring. Checked for `PLAN.md` and `TODO.md`;
 resting on the reader for the rest. Known.
@@ -734,6 +763,9 @@ resting on the reader for the rest. Known.
 - Rule: §3.5 step 2. Some forms are listed by two manuals:
   first-time-work lists the step form's opening item,
   agent-arrangement both entry files and both logs.
+- Narrowed, `c38591c`: our `PLAN.md`, `TODO.md` and `CHANGELOG.md`.
+  `.claude/decisions.md` and `CLAUDE.md` wait for layer 5; the stubs
+  and the playbook for layer 6.
 
 #### Layer 5: our agent setup
 
@@ -1078,3 +1110,8 @@ project-recording part fixed.
 Layer 3 worked, 2026-10-21: FINDING-19 to 24 and 28 to 35 fixed,
 FINDING-33's back-link declined, FINDING-34 moved to layer 4;
 FINDING-36's layer 3 part fixed, one quoted pointer declined.
+
+Layer 4 worked, 2026-10-21: FINDING-34, 37 to 45, 47, 48 and 51 to
+55 ended, DECISION-5 among them; FINDING-46 moved to the
+refinement's close; FINDING-57 declined; FINDING-36, 56 and 58
+narrowed to layers 5 and 6.
