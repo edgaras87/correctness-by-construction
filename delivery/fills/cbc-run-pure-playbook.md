@@ -9,8 +9,10 @@
 
 # Playbook: CbC run — pure
 
-Playbook version: v8 (2026-10-16, provisional; run 3's
-retrospective taken, ADR-0055)
+Playbook version: v9 (2026-10-21, provisional; updated here since
+v8, which took run 3's retrospective, ADR-0055: framing commits the
+briefing first, a step may stop, and a step's approach may be on
+trial)
 
 ## The step form
 
