@@ -87,8 +87,9 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
    ls -d "$run"/temp/{bundle-,note-to-}* 2>/dev/null  # must print nothing
    ```
 
-   `temp/` is the run's, untracked, and may hold its own drafts; only
-   a staging or note of ours there means a take has not happened.
+   `temp/` is the run's, tracked, and may hold its own drafts, so the
+   status check leaves it out; only a staging or note of ours there
+   means a take has not happened.
 
 2. **Overlay the copies of the groups the run takes**, after checking
    that no path is claimed twice:
