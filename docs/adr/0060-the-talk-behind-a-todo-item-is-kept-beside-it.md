@@ -1,8 +1,11 @@
 # 0060. The talk behind a TODO item is kept beside it
 
 Date: 2026-10-21
-Status: Proposed (2026-10-21, under the commit plan for the memory
-file).
+Status: Accepted (2026-10-21, at the set's records commit; opened
+Proposed under the commit plan for the memory file, and changed
+twice before acceptance on the reviewer's questions: the file moved
+to the root and is read when its item is worked; an item may be an
+open question another record holds).
 
 ## Context
 
