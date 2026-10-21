@@ -106,17 +106,18 @@ The concept made usable: `cbc-framing` (turn an idea into one
 falsifiable promise, a layered definition, a registry of slices)
 and `cbc-slice` (take one invariant through specify, plan, build,
 document until a test that creates the adversity proves it holds).
-Beside them, under `.claude/shapes/`, the shapes their gates read:
-what a record or a test of the method looks like, read at a step's
-close and never while it is written (`docs/conventions/shapes/`).
+Beside them, at `delivery/method/.claude/shapes/`, the shapes their
+gates read: what a record or a test of the method looks like, read
+at a step's close and never while it is written. They come from
+practice, under the shapes convention, and their `foundation` line
+says so (`docs/conventions/shapes/`).
 
 **Derived from the concept**, and each says so in its `foundation`
 field: `concept v1`. A change to the concept asks whether these are
-still right. They live at `delivery/method/.claude/skills/cbc-framing/`,
-`delivery/method/.claude/skills/cbc-slice/` and
-`delivery/method/.claude/shapes/`. With 2.2 and 2.4, this is the
-concept's list of what derives from it; the chapters carry none
-(`docs/conventions/conventions/` §3.5, step 1).
+still right. They live at `delivery/method/.claude/skills/cbc-framing/`
+and `delivery/method/.claude/skills/cbc-slice/`. With 2.2 and 2.4,
+this is the concept's list of what derives from it; the chapters
+carry none (`docs/conventions/conventions/` §3.5, step 1).
 
 ### 2.2 The stack practice — `delivery/spring-postgres/`
 
@@ -146,17 +147,20 @@ files.
 **This is the conventions made usable**, the way the method is the
 concept made usable. Every one of its twenty-two files but one is the
 artifact of one of ten of the eleven manuals in 1.2 — `conventions`
-ships nothing — the records and `.claude/rules/one-home.md` belong to
+ships nothing — the records and
+`delivery/container/.claude/rules/one-home.md` belong to
 `project-recording`, the entry file and the decisions log to
 `agent-arrangement`, the three dotfiles to `repo-hygiene`,
 `commit-messages`, `commit-plan` and `visual-comparison` to the
 conventions named after them, `retrospective` and
 `apply-retrospective` to the retrospective,
-`.claude/rules/delivered-copies.md` to the exchange,
-`.claude/rules/shapes-lifecycle.md` to shapes, and
-`.claude/rules/writing.md` to writing. The one is
-`.claude/approaches-on-trial/approach-drafting.md`, an approach on
-trial: a manual's artifact only once an evaluation places it.
+`delivery/container/.claude/rules/delivered-copies.md` to the
+exchange, `delivery/container/.claude/rules/shapes-lifecycle.md` to
+shapes, and `delivery/container/.claude/rules/writing.md` to
+writing. The one is
+`delivery/container/.claude/approaches-on-trial/approach-drafting.md`,
+an approach on trial: a manual's artifact only once an evaluation
+places it.
 
 A project with no correctness-by-construction in it would still want
 most of this, which is why it is a group of its own and not part of
@@ -167,7 +171,8 @@ the run's own agent — section 4.
 
 - **`installs/`** — our procedure for the person operating a birth:
   how a run is seeded (`pure-seed.md`). An update is the exchange
-  (2.5), held as two skills of ours. A run never sees this.
+  (2.5), held as two skills and two rules of ours. A run never sees
+  this.
 - **`fills/`** — text written *into* a newborn's own files rather
   than copied as files: the playbook's steps, into its `PLAN.md`.
   The playbook, `delivery/fills/cbc-run-pure-playbook.md`, is
@@ -198,12 +203,13 @@ takes it from there (`docs/conventions/exchange/` §3.1).
           this repo                              a run
    ┌────────────────────────┐            ┌────────────────────────┐
    │ concept/               │            │ docs/concept/   copy   │
-   │ delivery/method/       │  ── a  ──▶ │ .claude/skills/ copies │
-   │ delivery/spring-…/     │   person   │ .claude/rules/  copies │
-   │ delivery/container/    │   copies   │ .claude/shapes/ copies │
-   │                        │            │ PLAN, TODO, devlog     │
-   │                        │            │ src/  ← the only thing │
-   │  masters               │            │        that is its own │
+   │ delivery/method/       │  staged ─▶ │ .claude/skills/ copies │
+   │ delivery/spring-…/     │  into its  │ .claude/rules/  copies │
+   │ delivery/container/    │   temp/    │ .claude/shapes/ copies │
+   │                        │            │ .claude/approaches-on- │
+   │                        │            │  trial/         copies │
+   │                        │            │ PLAN, TODO, devlog,    │
+   │  masters               │            │ src/ … its own         │
    └────────────────────────┘            └────────────────────────┘
               ▲                                       │
               └───────── we read its repo ────────────┘
@@ -223,9 +229,11 @@ the next note down.
 
 The mechanism — the take, what a copy may become between pins, what
 a copy cannot carry, what a note holds — is the exchange,
-`docs/conventions/exchange/`; the run's half of it ships as
-`delivered-copies.md`, ours is `exchange-read` and
-`exchange-deliver`.
+`docs/conventions/exchange/`. The run's half of it ships as
+`delivery/container/.claude/rules/delivered-copies.md`. Ours is two
+skills, `exchange-read` and `exchange-deliver`, and two rules,
+`.claude/rules/exchange-reading.md` and
+`.claude/rules/working-a-reading.md`.
 
 ## 3. How anything here changes
 
@@ -293,19 +301,27 @@ review, and each entry names which.
   with every copy (ADR-0004, ADR-0036).
 - **Every file a run receives has its master here,** in the group
   that ships it: the method, the container, a stack practice, the
-  concept — `docs/conventions/exchange/` §1 and §3.2.
-- **A manual never ships** — `docs/conventions/conventions/` §1.
+  concept — `docs/conventions/exchange/` §1 and §3.2; held by a
+  procedure, `exchange-deliver`, which stages only from these
+  masters.
+- **A manual never ships** — `docs/conventions/conventions/` §1;
+  held by the shape of the tree: the manuals sit under `docs/`, and
+  a delivery stages only from `delivery/` and `concept/`.
 - **A manual never outlives the rule it explains**: a rule changed
   in `delivery/container/` is checked back against its manual, and
   whichever side is wrong changes —
-  `docs/conventions/conventions/` §3.5 and §3.6 (ADR-0025).
+  `docs/conventions/conventions/` §3.5 and §3.6 (ADR-0025); checked
+  at commit review by the foundation check,
+  `.claude/rules/foundation-check.md`.
 - **Agent side and project side never share a commit** —
-  `docs/conventions/commit-messages/` §2.
+  `docs/conventions/commit-messages/` §2; held by a procedure, the
+  `commit-messages` skill, and checked at commit review.
 - **A pin never claims more than was checked**: a read takes the
   run's decisions log, its backlog and the diff of every copy it
   holds, and every read ends with a note, even one that says
   nothing was learned — `docs/conventions/exchange/` §6.1 and §6.6
-  (ADR-0023).
+  (ADR-0023); held by procedures, `exchange-read` and
+  `exchange-deliver`.
 - **A skill never spans two groups, and nothing that needs Spring,
   PostgreSQL, Maven or podman sits under `method/`** — held by the
   shape of the tree, since a group is a directory and a misfiled
@@ -315,7 +331,10 @@ review, and each entry names which.
   `delivered-copies.md` rule 1 and `docs/conventions/exchange/`
   §2.4 (ADR-0036).
 - **The exchange's five facts, and what follows from them** —
-  `docs/conventions/exchange/` §1 to §3.
+  `docs/conventions/exchange/` §1 to §3; held by procedures,
+  `exchange-read` and `exchange-deliver` on our side, and the rule
+  shipped from `delivery/container/.claude/rules/delivered-copies.md`
+  on the run's.
 
 ## 6. Codemap
 

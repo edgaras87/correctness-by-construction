@@ -6,7 +6,8 @@
      Rule: an inline TODO:/FIXME: anywhere in the work must reference an
      item here.
      Open work only: a closed item goes, since the devlog, the ADRs
-     and git already say what closed. Every item takes one shape:
+     and git already say what closed. Known issues take the shape
+     their heading names. Every other item takes one shape:
 
      - [ ] <What to do or decide.> (<date>, <who raised it>)
            Context: <why it holds, true today — eight lines at most>.
@@ -24,8 +25,6 @@
      foundation: the project-recording convention -->
 
 ## Now (due while the open step runs)
-
-## Next (each due at its trigger)
 
 - [ ] Decide how this repo's text is divided: by kind, a model, a
       convention or an approach, and by subject (2026-10-20, the
@@ -46,16 +45,16 @@
       - one manual per subject, a rule per case; a case is often a
         seat.
       - candidate models: one home; what a convention is; the
-        deliverer and the run, with seats; a shape, whose manual's
-        §1 and §2 say what one is.
+        deliverer and the run, with seats; a shape, whose
+        `docs/conventions/shapes/` §1 and §2 say what one is.
       - the layers themselves as a model: model → description (a
         convention or the concept) → approach → output.
       - a shape is not a layer after the approach: it is written
         from outputs and governs the next at the gate; "governs" is
         named in `9fd905b`, with no upkeep yet.
-      - tiers §2.2 already holds two of the chain's kinds, the
-        mental layer and its executions; the chain as a model of
-        its own, tiers pointing at it.
+      - `docs/models/tiers.md` §2.2 already holds two of the
+        chain's kinds, the mental layer and its executions; the
+        chain as a model of its own, tiers pointing at it.
       - "layer" names three things already: the concept's LAYER-1
         to 5, the refinement's file layers, tiers' two; the chain
         takes another word.
@@ -74,6 +73,8 @@
       Trigger: before round 2 reads, beside its Layout kind.
       See: devlog 2026-10-20, later; 2026-10-19, the redesign's
       ideas; `temp/ideas-2026-10-20.md` §1.
+
+## Next (each due at its trigger)
 
 - [ ] Decide how an approach and a shape divide an output: the
       approach says what is done, the shape how its output looks
@@ -200,8 +201,8 @@
       shape's part can be optional (2026-10-17, the reviewer).
       Context: a shape is read at a step's gate only, so the work
       is not shaped by it (`docs/conventions/shapes/` §1). Our own
-      forms, a reading's and a manual's, are rules that load while
-      the file is written. They kept that place because this repo
+      forms, a reading's and a manual's, are rules that load when
+      such a file is read. They kept that place because this repo
       had no steps; since ADR-0057 it has.
       Ideas:
       - the work's rules keep what must hold while working, such as
@@ -248,15 +249,16 @@
       (2026-10-17, the reviewer).
       Context: `docs/conventions/conventions/` §2 says how a skill
       or rule is written, and nothing puts it in front of the
-      writer: a manual has
-      `convention-manual.md`, a skill or rule has no such rule.
-      An approach on trial writes freely, and its pieces are input:
-      what the work needed. When an evaluation places one, the
-      lasting form comes from the conventions convention, the
-      manual by §3 and each skill or rule from it by §2.
+      writer: a manual has `convention-manual.md`, a skill or rule
+      has no such rule. An approach on trial writes freely, and its
+      pieces are input: what the work needed. When an evaluation
+      places one, the lasting form comes from
+      `docs/conventions/conventions/`: the manual by §3, each skill
+      or rule from it by §2.
       Ideas:
-      - a rule derived from §2, as `convention-manual.md` is from
-        §3, on `.claude/skills/`, `.claude/rules/` and `delivery/`.
+      - a rule derived from `docs/conventions/conventions/` §2, as
+        `convention-manual.md` is from §3, on `.claude/skills/`,
+        `.claude/rules/` and `delivery/`.
       - a `paths:` rule loads only on a Read; the commit is the
         other moment (`.claude/decisions.md`, 2026-10-17).
       - `approach-evaluation`'s placing hands each piece to the
@@ -347,11 +349,11 @@
 - [ ] Decide whether a delivery checks its paths against the run's
       own files (2026-09-30, the reading of run 3).
       Context: our shipped `.claude/rules/shapes-lifecycle.md` sat
-      at the path of run 3's own rule, so the take landed ours over
-      the run's. `docs/conventions/exchange/` §3.4 checks only that
-      no path is claimed by two of our groups, and the take's diff
-      (§4) sees that a file differs, not whose it is. Once so far;
-      checked by hand at `e6538f6`, where no staged path was new.
+      at run 3's own rule's path, so the take landed ours over the
+      run's. Two checks in `docs/conventions/exchange/` miss it:
+      §3.4 checks only that no path is claimed by two of our groups;
+      the take's diff, §4, sees that a file differs, not whose it is.
+      Once so far; checked by hand at `e6538f6`: no staged path was new.
       The method's four shapes sit at run 3's own `.claude/shapes/`
       paths (ADR-0052); the next birth is where they first land.
       Ideas: in `exchange-deliver`, the staged paths against the
@@ -410,7 +412,7 @@
 
 ## Later / someday
 
-- [ ] Release concept v1 (2026-10-17, from PLAN's Step N).
+- [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
       Context: so a stranger, or future-you, can read, cite and copy
       from this repo without the archive. Four items of its own:
       a CHANGELOG entry for the release; README true for a
@@ -493,7 +495,8 @@
       shape: `docs/conventions/shapes/` §1–2 say a shape is form,
       never content, and a filled-in template is not one; a
       playbook is content, copied and filled at birth.
-      Ideas: a convention of its own, split from §9.
+      Ideas: a convention of its own, split from
+             `docs/conventions/project-recording/` §9.
       Trigger: a second typed playbook.
       See: devlog 2026-09-29, the PLAN pass.
 
@@ -510,9 +513,9 @@
 
 - [ ] Move the tiers model to the garden (2026-09-30).
       Context: it maps the workspace, and the workspace has no home:
-      by its own §2.2 the garden stays a plain folder until a second
-      concept repo exists. Until then it lives here, beside the
-      agent model; `docs/models/` stays.
+      by `docs/models/tiers.md` §2.2 the garden stays a plain folder
+      until a second concept repo exists. Until then it lives here,
+      beside the agent model; `docs/models/` stays.
       Trigger: a second concept repo.
       See: devlog 2026-09-30, the tiers model.
 
@@ -520,9 +523,9 @@
       the reviewer)
       Context: agent-arrangement reasons from `docs/models/agent.md`
       and states a few of its facts itself, each beside a pointer.
-      A fold would grow the manual from about 420 lines to about
-      890; keeping them apart costs a second file to open. On
-      2026-09-30 neither had drifted from the other.
+      A fold would more than double the manual; keeping them apart
+      costs a second file to open. On 2026-09-30 neither had drifted
+      from the other.
       Ideas: the model as the manual's theory section, its binding
              and claims with it.
       Trigger: a change to the arrangement that has to edit both

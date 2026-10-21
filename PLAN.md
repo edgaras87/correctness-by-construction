@@ -134,8 +134,8 @@ corner.
 Goal: Living text written before a rule now meets that rule, and
 `docs/conventions/project-recording/` §1 is a map of the records
 in both seats.
-Now: round 1's work, layer by layer
-(`.claude/approaches-on-trial/refinement.md` §2.7).
+Now: round 1's close read
+(`.claude/approaches-on-trial/refinement.md` §2.8).
 Gate:
 
 **At the opening.**
@@ -210,9 +210,11 @@ Notes:
 - Stages, from `.claude/approaches-on-trial/refinement.md` §2:
   1. before round 1: group the kinds into rounds, which creates
      the refinement's file; list the files by layer; check the
-     rules (§2.1 to §2.3). The reviewer confirms the kinds, their
-     rounds, the layers, whether the method's texts are read here
-     (§3), and that no rule is in doubt;
+     rules (`.claude/approaches-on-trial/refinement.md` §2.1 to
+     §2.3). The reviewer confirms the kinds, their rounds, the
+     layers, whether the method's texts are read here
+     (`.claude/approaches-on-trial/refinement.md` §3), and that no
+     rule is in doubt;
   2. each round: read, list, decide, work, then its close read;
   3. the last read, repeated until it finds nothing;
   4. the close: the refinement's file goes, then

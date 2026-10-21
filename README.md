@@ -52,7 +52,7 @@ recorded way instead of living in a head and scattered notes.
 | Decisions | [docs/adr/](docs/adr/) — cited from other repos as `CBC ADR-nnnn` | Why is it built this way |
 | Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | The map: what is here, what ships, and what must stay true |
 | Backlog | [TODO.md](TODO.md) | What's next, and what's known but not done |
-| Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per version (for users) |
+| Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per concept version, for those who pin one |
 | Devlog | [devlog/](devlog/) | Day-to-day work, dead ends, open questions |
 
 <!-- A line here is true now, and meant for someone arriving from
