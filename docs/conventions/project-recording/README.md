@@ -45,10 +45,8 @@ there is.
 - **The deliverer's own records**: `README.md`, `PLAN.md`,
   `TODO.md`, `CHANGELOG.md`, `ARCHITECTURE.md`, `docs/adr/` and
   `devlog/`, derived from this page as the stubs are, and never
-  copied from them (ADR-0042).
-- **`temp/conversation-memory.md` — the deliverer's, on trial**:
-  the talk behind TODO items, beside them (§5.5, ADR-0060). Not a
-  record.
+  copied from them (ADR-0042); and `TODO-CONVERSATION-MEMORY.md`,
+  on trial, which has no stub (§5.5, ADR-0060).
 
 This page explains the records; the stubs state the rules. Only the
 one-home rule, on each side, is loaded into an agent, in every
@@ -121,8 +119,8 @@ And it may retell a fact where the reader acts on it in place
 (`docs/conventions/conventions/` §3.2), and the walk before every
 commit re-reads it (`docs/conventions/conventions/` §3.5).
 
-And it may keep the talk behind a TODO item beside the item, in
-`temp/conversation-memory.md`, on trial (§5.5; ADR-0060). A run
+And it keeps the talk behind a TODO item beside the item, in
+`TODO-CONVERSATION-MEMORY.md`, on trial (§5.5; ADR-0060). A run
 gets it only if it holds here.
 
 *Found 2026-09-29: from 2026-09-20, with Step 10 in progress, 203
@@ -483,29 +481,33 @@ See led nowhere until then. Tried first on five items on
 An item keeps what triage needs, and its story is the devlog's.
 The talk that shaped it is neither: what was asked, the options
 weighed, what was said for and against, the reviewer's own words.
-On the deliverer's seat that talk may be kept beside the item, in
-`temp/conversation-memory.md` (ADR-0060).
+On the deliverer's seat that talk is kept beside the item, in
+`TODO-CONVERSATION-MEMORY.md` at the root, next to `TODO.md`
+(ADR-0060).
 
 - **One file, a section per item.** The section names its item.
   Each talk adds a dated part to it, and a part is never
-  rewritten. The header carries the date of the file's last touch.
-- **Not a record.** It decides nothing and tells no story: the
-  item's ADR decides, and the devlog tells. It is kept for work
-  still to come, which is why it lives in `temp/`.
+  rewritten. The file's header comment holds its form and the date
+  of its last touch.
+- **A record that decides nothing and tells no story:** the item's
+  ADR decides, and the devlog tells.
 - **The item stands alone.** Its Context is enough for triage, and
-  its See names the section. A lost file breaks no record.
+  its See names the section. A lost section breaks no record.
 - **The agent asks each time** a talk raises or shapes an item: a
   new section, a part added to one, or nothing, with its
-  recommendation. The reviewer decides. Most items need none.
+  recommendation. The reviewer decides.
+- **The section is read when its item is worked,** before the
+  item's Ideas are weighed. The devlog entry that works the item
+  says whether the section changed the work.
 - **A section goes in the commit that works its item.** The file
-  goes with its last section, and the next talk worth keeping
-  starts it again.
+  stays, empty or not, as `TODO.md` does.
 
-*On trial since 2026-10-21. The evidence would be an item worked
-with its section in hand, and the section changing the work. It is
-looked at when the third such item is worked, or at the refinement
-step's close, whichever comes first. If it holds, it reaches runs
-through the container; if not, it goes.*
+*On trial since 2026-10-21. The evidence is in the devlog: each
+item worked with its section in hand, and whether the section
+changed the work. It is looked at when the third such item is
+worked, or at the refinement step's close, whichever comes first.
+If it holds, it reaches runs through the container; if not, it
+goes.*
 
 ### 5.6 When
 
