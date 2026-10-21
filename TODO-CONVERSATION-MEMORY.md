@@ -691,6 +691,34 @@ headings runs 3 and 4 used; the reviewer chose each open point.
   promises: an owner would say them, and the open decision still
   leaves the promise to framing.
 
+#### The stack, the name, the remote
+
+The reviewer asked whether the bootstrap repeats run 3's stack,
+whether the run names itself after framing, whether it might
+create a remote, and whether run 4 had trouble with any of it.
+
+- **The stack** is delivered: the seed copies the `spring-postgres`
+  group, so the ground is PostgreSQL in podman with the migrator
+  and runtime roles, and the skeleton Spring Boot 4, Java 21 and
+  Maven, in our edited versions no run has used. Nothing said the
+  stack is given; the hand-off now does.
+- **The name:** the playbook's Step 2 decides it after framing, but
+  the ground's database and roles are named from it. The seed
+  expects the briefing to bring the name, so the briefing names the
+  service `event-tickets`, and Step 2 keeps it. The folder stays
+  `cbc-pure-run-5`.
+- **The remote:** Step 2's title says "remote", and on full auto
+  nothing stopped a `gh repo create`. Banned; the remote is the
+  reviewer's after Release. Run 4, its name settled in advance, had
+  a one-line Identity step, no remote and no push, as the light
+  read found; it could not be read again, being locked.
+- **Podman:** every container and volume on the machine is visible
+  to any process, among them run 3's and run 4's databases; a lock
+  on folders does not reach them. Weighed: a rule and trust, or
+  exporting and removing other projects' containers and volumes
+  until run 5 is done. The reviewer chose the rule: run 5 uses only
+  what it creates.
+
 ## 9. A commit plan's look-back at the way
 
 Item: "Decide whether a commit plan's look-back also asks if the
