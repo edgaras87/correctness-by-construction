@@ -394,6 +394,7 @@ reader for the stubs.
   its own.
 - Text: "three of the same convention skills"; "the two rules
   every session loads"; "three rules of its own".
+- Ending: fixed, `da7499c`: our `.claude/` named without counts.
 
 **FINDING-20.** Agreement. Checked. Three places.
 - Where: `docs/conventions/agent-arrangement/README.md`:49-52;
@@ -405,6 +406,8 @@ reader for the stubs.
   entry file are the run's own.
 - Text: the seat, "everything under `.claude/`"; the entry file
   and the delivery map name skills and rules, not shapes.
+- Ending: fixed, `da7499c` and `be2c181`: the run's seat, entry file
+  and delivery map name every pinned copy, shapes included.
 
 **FINDING-21.** Agreement and Stale lines. Checked.
 - Where: `docs/conventions/commit-messages/README.md`:89-99.
@@ -415,6 +418,7 @@ reader for the stubs.
 - Text: "`docs(<area>)` for almost everything … Bare `docs` where
   a commit spans the records generally"; "`feat`/`fix` … all on the
   delivery so far"; "480 commits".
+- Ending: fixed, `da7499c`: the habit as the log shows it.
 
 **FINDING-22.** Wiring. Checked. DECISION-2.
 - Where: `docs/conventions/exchange/README.md`:20-45.
@@ -422,6 +426,7 @@ reader for the stubs.
   `.claude/rules/working-a-reading.md` carries "practice, under
   the exchange convention".
 - Text: the list names four artifacts, not that rule.
+- Ending: fixed, `517fc52`, by DECISION-2.
 
 **FINDING-23.** Agreement. Resting on the reader. DECISION-2.
 - Where: `docs/conventions/exchange/README.md`:452-455, 530-533.
@@ -429,6 +434,7 @@ reader for the stubs.
   commit-plan and project-recording, and §6.3 says "the exchange
   says nothing about how". The rule for exactly that stands under
   the exchange.
+- Ending: fixed, `517fc52`, by DECISION-2.
 
 **FINDING-24.** Agreement. Resting on the reader.
 - Where: `docs/conventions/exchange/README.md`:347-355;
@@ -436,6 +442,7 @@ reader for the stubs.
 - Text: §5.1, the lines live "under one heading kept for them,
   *To the deliverer*". The stub has Now, Next, Later, Known issues,
   and no such heading.
+- Ending: fixed, `be2c181`: the stub carries the heading.
 
 **FINDING-25.** Stale lines. Resting on the reader.
 - Where: `docs/conventions/first-time-work/README.md`:14.
@@ -471,12 +478,14 @@ reader for the stubs.
 - True: no kind is called words. Both "words" ideas are Writing
   findings (this file, *Kinds and rounds*).
 - Text: "One home and words also need a sweep across files".
+- Ending: fixed, `f3060fb`.
 
 **FINDING-29.** Stale lines. Resting on the reader.
 - Where: `docs/conventions/refinement/README.md`:301-303.
 - True: Wiring adds missing links, and this file fitted it in
   round 1.
 - Text: "Adding missing text is the first that may not fit."
+- Ending: fixed, `f3060fb`: the known part said, the question kept.
 
 **FINDING-30.** Agreement. Checked.
 - Where: `docs/conventions/retrospective/README.md`:73-75.
@@ -484,6 +493,7 @@ reader for the stubs.
   "conventions, the playbook, the concept".
 - Text: "'lessons folded back where they came from', which names
   no place and no method."
+- Ending: fixed, `da7499c`.
 
 **FINDING-31.** Agreement. Checked. Known.
 - Where: `docs/conventions/writing/README.md`:143-147, 153-160,
@@ -491,12 +501,14 @@ reader for the stubs.
 - Text: the manual defines a coined word "in the project's
   glossary"; our rule, in `ARCHITECTURE.md`'s *The words*. The
   seats name other differences, not this one.
+- Ending: fixed, `da7499c`: the writing manual's list names it.
 
 **FINDING-32.** Stale lines. Checked.
 - Where: `docs/models/agent.md`:260.
 - True: every rule opens with frontmatter since `d5e7e17`. A rule
   is ambient for lack of `paths:` (§10.6 of the same file).
 - Text: "`.claude/rules/*.md` without frontmatter".
+- Ending: fixed, `da7499c`.
 
 **FINDING-33.** Wiring. Checked for the paths; resting on the
 reader for the back-link.
@@ -507,6 +519,9 @@ reader for the back-link.
   thing names its description (§3.5 step 2).
 - Text: "The three dotfiles at the root of `delivery/container/`".
   No dotfile names the manual.
+- Ending: paths fixed, `da7499c`. The back-link declined:
+  conventions §3.5 step 2 names how a skill, rule, shape or record
+  names its description, and no way for a dotfile.
 
 **FINDING-34.** Wiring. Resting on the reader.
 - Where: `concept/` (no list); `ARCHITECTURE.md`:104-131;
@@ -515,6 +530,8 @@ reader for the back-link.
 - Text: the five skills on `concept v1` are listed by name in
   `ARCHITECTURE.md` §2.1 and §2.2. The playbook says "Checked
   against concept v1" and is in neither list.
+- Ending: moved to layer 4's work: the list lives in
+  `ARCHITECTURE.md`.
 
 **FINDING-35.** Agreement. Resting on the reader. Known.
 - Where: the opening statement of each manual.
@@ -525,6 +542,8 @@ reader for the back-link.
   visual-comparison, writing. One sentence that adds how it works:
   commit-messages, repo-hygiene, retrospective, shapes.
   Project-recording is borderline. The known finding counted nine.
+- Ending: fixed, `22b2dca`: eight openings, each the subject in
+  one sentence.
 
 **FINDING-36.** Wiring. Checked. DECISION-3.
 - Where: about 30 pointers in layers 3, 4 and 6. Among them:
@@ -541,6 +560,9 @@ reader for the back-link.
   path earlier in the paragraph.
 - Narrowed, `f1c02a7`: project-recording's tree pointer moved out of
   the diagram, by path. The rest waits for layers 3, 4 and 6.
+- Narrowed, `da7499c`: layer 3's seven pointers by path. Declined:
+  commit-plan's "(model §10)", which a dated lesson quotes as it
+  stood. The rest waits for layers 4 and 6.
 
 #### Layer 4: `ARCHITECTURE.md`, `README.md`, the records
 
@@ -1052,3 +1074,7 @@ FINDING-5 declined.
 
 Layer 2 worked, 2026-10-20: FINDING-9 to 18 fixed; FINDING-36's
 project-recording part fixed.
+
+Layer 3 worked, 2026-10-21: FINDING-19 to 24 and 28 to 35 fixed,
+FINDING-33's back-link declined, FINDING-34 moved to layer 4;
+FINDING-36's layer 3 part fixed, one quoted pointer declined.
