@@ -134,8 +134,8 @@ corner.
 Goal: Run 5 is born from this repo at one pin on main, with an
 intent of the reviewer's and a hand-off for full auto, ready for
 the reviewer to start.
-Now: the reviewer's intent
-(`.claude/approaches-on-trial/auto-run.md`, stage 2).
+Now: the hand-off
+(`.claude/approaches-on-trial/auto-run.md`, stage 4).
 Gate:
 
 **At the opening.**
@@ -157,9 +157,9 @@ Gate:
       went, and for what run 4 skipped, deferred or did by hand for
       want of a way; each finding says keep, change or add, for
       run 5 (`temp/run-5-prep.md`, 2026-10-21).
-- [ ] Run 5's intent is the reviewer's: event tickets, at least two
+- [x] Run 5's intent is the reviewer's: event tickets, at least two
       areas whose meeting is a LAYER-5-INTERACTION question, of
-      moderate size.
+      moderate size (`temp/run-5-briefing.md`, 2026-10-22).
 - [ ] Run 5's hand-off says what full auto means for it: it decides
       everything; it edits its copies under
       `delivery/container/.claude/rules/delivered-copies.md`; it
