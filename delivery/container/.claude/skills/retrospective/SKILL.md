@@ -15,7 +15,7 @@ repeated.
 The reviewer decides everything. The agent reads, measures, finds,
 proposes and writes.
 
-## 0. Open
+## Stage 0 — open
 
 1. **Cut a branch,** `retrospective`, from main. Main is not touched
    until the retro lands. Ask the reviewer whether small commits are
@@ -37,7 +37,7 @@ proposes and writes.
    numbers: words of records against lines of code, commits by kind.
    The first candidates for decisions come from this.
 
-## 1. Walk each part, in order
+## Stage 1 — walk each part, in order
 
 1. **Read the part's files in full.** Then measure: sizes, counts,
    how often a thing appears, where one fact is written twice.
@@ -53,10 +53,10 @@ proposes and writes.
    example is dropped.
 3. **Say what worked.** "Kept as it is", with the reason, is a valid
    result for a part.
-4. **Group the findings into a few decisions.** Then go to section 2.
+4. **Group the findings into a few decisions.** Then go to Stage 2.
 5. **Mark the part done** in the table when its last decision is in.
 
-## 2. One decision at a time
+## Stage 2 — one decision at a time
 
 1. **Show the reviewer one decision:**
    - the problem, with its example;
@@ -92,11 +92,10 @@ proposes and writes.
 - **Judge on real text, never before it exists.** A question that
   needs text the run has not written yet is parked to the moment it
   will exist.
-- **Do not fix the run's records.** The exceptions are in section 4:
-  the run's own hand-off lists, and lines that say "now" about
-  something no longer true.
+- **Do not fix the run's records.** The one exception is Stage 4,
+  item 3: the run's own hand-off lists.
 
-## 3. Try a change on a branch
+## Stage 3 — try a change on a branch
 
 A change worth testing during the retro, such as a new rule, goes on
 `try/<what>`, cut from `retrospective`, and is used for the rest of
@@ -104,7 +103,7 @@ the retro. At the close the reviewer keeps it (`retrospective`
 fast-forwards to it) or drops it (the branch is deleted, and the
 note's commits move back). The note's Experiments line records which.
 
-## 4. Close
+## Stage 4 — close
 
 1. **Every part is done,** and every Parked item is judged or still
    names its part.

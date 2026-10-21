@@ -15,7 +15,7 @@ not change.
 The reviewer decides everything. The agent reads, proposes, builds
 and checks.
 
-## 0. Open
+## Stage 0 — open
 
 1. **Cut a branch** from main, and ask the reviewer whether small
    commits are free on it.
@@ -28,7 +28,7 @@ and checks.
    its log entry and its hand-off line; what trying taught is
    written back.
 
-## 1. Triage
+## Stage 1 — triage
 
 1. **One decision at a time.** For each, propose: **applied**,
    **partly** (and which part), or **next run only**, with a reason
@@ -59,7 +59,7 @@ and checks.
 - **Delivered copies** may be edited under the delivered-copies rule;
   a copy this run has finished with is marked untried.
 
-## 2. Commit plan
+## Stage 2 — commit plan
 
 Built from the applied rows and their sizes, under `commit-plan`.
 The reviewer approves it before any change. Order the commits by
@@ -72,7 +72,7 @@ influence:
   after them, README last;
 - plain words last.
 
-## 3. Build
+## Stage 3 — build
 
 One planned commit at a time, staged and shown, committed on the
 reviewer's word. Small fix-ups to a commit already made are their
@@ -108,7 +108,7 @@ own small commits.
 it must not touch: front matter, code blocks, headings, dated
 history lines.
 
-## 4. Close
+## Stage 4 — close
 
 1. **The checks:** the records check; history untouched on the
    branch; `temp/` checked; where the project has tests, the full
