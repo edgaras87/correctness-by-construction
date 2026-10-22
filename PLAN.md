@@ -129,6 +129,77 @@ corner.
 
 ---
 
+## Step: Read run 5  (`exchange-read`, `.claude/rules/exchange-reading.md`)    [~]
+
+Goal: Run 5's reading is written, read only: every edit, ask and
+finding of its whole span has one line, and none is decided.
+Now: the read (`exchange-read`, step 1).
+Gate:
+
+**At the opening.**
+
+- [x] The step has no branch: a reading's read comes before any
+      branch, on main (`.claude/rules/working-a-reading.md`, step
+      1), and this step stops after the read. Nothing else of it is
+      done on main (2026-10-22).
+- [x] This gate was written before the work started (2026-10-22).
+- [x] The step's approach is known: `exchange-read`, the reading
+      to `.claude/rules/exchange-reading.md` (2026-10-22).
+
+**The step's own items.**
+
+- [ ] The reading exists at `temp/reading-run-5-2026-10-22.md`, to
+      its form, and its first line names run 5's `HEAD`, `2cab15d`.
+- [ ] Every edit to a delivered copy (14 files against
+      `birth-seed`), every ask under run 5's *To the deliverer* (13
+      lines) and every finding in the span has one line, and none
+      is decided.
+- [ ] Run 5's uncommitted work, if any, is named in the reading.
+- [ ] Nothing in run 5 was written to.
+- [ ] The reading says what run 5 teaches the worked example
+      (`docs/conventions/exchange/` §6.3).
+- [ ] The reading counts its work items and the ones marked plan
+      (`.claude/rules/working-a-reading.md`, step 1), so the step
+      that works it knows whether it needs a branch.
+
+**Known already.** `exchange-read`'s four gates are the first four
+own items.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves; every ADR a
+      record cites exists; each pair of copies agrees, such as the
+      worked example in `cbc-framing` and in `cbc-slice`.
+- [ ] No living line in a record the step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the step changed.
+- [ ] New and changed text reads to `.claude/rules/writing.md`.
+- [ ] Every commit on main since `43aaf30` follows commit-messages.
+- [ ] No commit straddles agent and project paths.
+- [ ] The step's lessons are folded back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4).
+- [ ] Each approach on trial the step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
+
+Notes:
+- Opened 2026-10-22 on main, from the devlog's Resume: the
+  reviewer chose to read run 5 now and work it after the
+  refinement. The reading diffs against pin `ae8a041`, which does
+  not move, so it keeps while it waits.
+- Stages: `exchange-read` steps 1 to 4, read; then this step
+  closes. The work, the note (`exchange-deliver`) and any branch are
+  a later step's, so run 5's read-through stays "none" until that
+  note.
+- Run 5's `docs/decision-log.md`, its devlog and `RETRO.md` are
+  context; the items come from its decisions log, its asks and
+  the diff.
+
+---
+
 ## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the foundation check, `visual-comparison`)    [!] stopped: run 5's reading, read only (devlog 2026-10-22)
 
 Goal: Living text written before a rule now meets that rule, and
