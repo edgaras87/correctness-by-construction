@@ -821,7 +821,8 @@ Where examples live, counted that day:
 
 Item: "Decide how work is run by agents: delegation, model and
 effort by kind of work, forks or fresh agents, new challenges and
-look-backs".
+look-backs; and what the agent's setup holds, and where that is
+recorded".
 
 ### 2026-10-22
 
@@ -862,4 +863,67 @@ decided for run 5.
 - Evidence first: from the next session, each delegation leaves one
   devlog line, its kind of work, model, effort and whether it paid;
   run 5's reading adds how a run on full auto delegated by itself.
+
+### 2026-10-22, at `/doctor`
+
+#### What the reviewer asked
+
+`/doctor` offered to run every general-purpose agent on Sonnet. The
+reviewer kept them as they are, and held the question for this
+item: model and effort by kind of work, not one default. Then:
+
+- Why was so much never used? Not found, not asked for, or else?
+  Could any of it help our work?
+- What is Claude Docs? Is it what `one-home` tried for in Markdown?
+- Which skills come from Claude, are there more, and is there a
+  skill that finds skills before one is built?
+- Is leaving the account skills on better or worse, if a convention
+  may later record what is on or off?
+- Grade the 13 account skills by chance of need, in a table: the
+  grade, what each does, where it could apply in our work.
+- Is what was turned off, and what was left, recorded with its why?
+  Where? Is moving it elsewhere an open question, once we decide how
+  skills that are not ours are maintained?
+
+#### What exists today
+
+- **Subagents:** 69 general-purpose agents in 29 days, none given a
+  model, so all on Opus; `/usage` puts them at 11% of a week's
+  usage. The 11 Explore agents ran on Sonnet, set by their own
+  definition.
+- **Account skills:** 15 synced from claude.ai. None of the 13 still
+  on was used since install; together about 2.3k est. tokens in
+  every session.
+- **The marketplace:** Claude Code holds the official catalog, 315
+  plugins, none installed. `/plugin` browses it; no skill searches
+  it.
+- **Claude Docs:** a claude.ai editor with comments, sharing, charts
+  and export. Its connector loads in every session; no call in 29
+  days.
+- **A record exists:** the records table sends agent setup changes
+  to `.claude/decisions.md`. Its 2026-10-22 entries hold every
+  switch-off so far, user-wide ones among them.
+
+#### Points made
+
+- Unused because the work never called for them: Office files,
+  browsers, Google files. Nothing was missed, and no ask left them
+  out.
+- Claude Docs is a place; `one-home` is a rule about places. Records
+  belong in git: history, reviewed commits, runs that read the repo.
+  Docs fits a page for a reader outside git.
+- Chance of need is a guess no one can measure. The grades went by
+  evidence instead: can't run here, no trigger, named trigger,
+  regular work. Each middle grade carries its trigger.
+- By that table 12 were turned off and `skill-creator` kept; the
+  table is in `.claude/decisions.md`, 2026-10-22.
+- A skill to find skills would be building ahead. The trigger is a
+  habit: search before a new skill is proposed.
+- `session-report` would show what each delegation cost. `/usage`
+  first; the plugin only if it falls short.
+- User-wide switches act in every project, yet only this repo's log
+  records them. Where they belong is open.
+- Skills that are not ours arrive and change without us: claude.ai
+  syncs new ones, plugins update. When the table is graded again is
+  not yet asked by the item.
 
