@@ -252,10 +252,33 @@
         that session's devlog entry, from 2026-10-22. The sweep
         reads the findings since the last one and ends each: entry
         file, rule, skill, record, or nothing.
+      - how the sweep stands to `retrospective`, a run's look-back
+        at its end.
       Trigger: the refinement's close, once round 2 has swept one
                home and shown what a sweep finds.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, the `claude-md-management` part.
+
+- [ ] Decide whether a session's end has a home of its own, and
+      what it holds (2026-10-22, the reviewer).
+      Context: a session's end is spread out. project-recording
+      §4 asks for a devlog entry and a Resume line. Two habits
+      live only in the agent's own memory: a line per
+      delegation, and, from 2026-10-22, one missing-context
+      finding. A reader of the repo sees neither.
+      Ideas:
+      - a convention of its own, by its moment; the sweep its
+        twin for work that has landed.
+      - a section of project-recording §4, since most of it is
+        devlog writes.
+      - an approach on trial first (ADR-0058).
+      - a rule loaded every session, naming each duty and its
+        home.
+      - its twin, a session's start: what is read first.
+      Trigger: the text-division item, which decides how such a
+               subject is placed.
+      See: devlog 2026-10-22, later; `TODO-CONVERSATION-MEMORY.md`
+      §12.
 
 - [ ] Decide how commits cited by hash can still be regrouped
       (2026-10-19, the reviewer).
