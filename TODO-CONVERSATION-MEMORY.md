@@ -927,3 +927,47 @@ item: model and effort by kind of work, not one default. Then:
   syncs new ones, plugins update. When the table is graded again is
   not yet asked by the item.
 
+### 2026-10-22, `claude-md-management`
+
+#### What the reviewer asked
+
+- How does `claude-md-management` work? Do we use it when we touch
+  `CLAUDE.md`? Should we, how often, and should it keep that file?
+  What else are we missing?
+- Should its end-of-session question be an idea, checked against
+  how we already keep the entry file? Should the pass over the
+  nearest plugins go in TODO too?
+- Does that idea mean rechecking the convention? Should it come
+  next, after this TODO work?
+
+#### What exists today
+
+- **The plugin:** Anthropic's, not installed. A skill scores each
+  CLAUDE.md from A to F on commands, architecture, gotchas, length,
+  currency and actionability, then adds what it finds. A command,
+  `/revise-claude-md`, asks at a session's end what context was
+  missing, and adds one-line learnings to CLAUDE.md.
+- **Our way:** agent-arrangement §2 says what the entry file may
+  hold; the foundation check runs at every commit that touches it;
+  `.claude/decisions.md` keeps the why.
+
+#### Points made
+
+- It assumes a code repo. It would score our records table low and
+  ask for commands and a directory map, which `/doctor` cuts as
+  derivable.
+- It writes learnings into CLAUDE.md. Here a learning goes to the
+  record that owns it (`one-home` rule 1).
+- It looks for `.claude.local.md`; Claude Code reads
+  `CLAUDE.local.md`, so ours would never be found.
+- Graded no trigger. Worth taking: its end-of-session question,
+  with each answer routed through our own path.
+- "What else are we missing" is answered by search, then grading:
+  the pass over `session-report`, `hookify`, `claude-code-setup`,
+  `superpowers` and `mattpocock-skills`.
+- The idea uses the convention as it stands; it does not recheck
+  it. A recheck would follow only if answers keep landing where the
+  convention has no rule.
+- Not next: the open step takes the text-division item first, and
+  that item decides where how agents work is written.
+
