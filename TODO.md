@@ -132,12 +132,15 @@
 
 - [ ] Decide how work is run by agents: delegation, model and
       effort by kind of work, forks or fresh agents, new challenges
-      and look-backs (2026-10-22, the reviewer).
+      and look-backs; and what the agent's setup holds, and where
+      that is recorded (2026-10-22, the reviewer).
       Context: nothing here says when a lead agent hands work to
       others, with which model and effort, or whether a fork or a
       fresh agent takes it. On 2026-10-21 the agent sent 3 readers
       to run 4 and 8 to the close read on its own judgement; run 4
-      changed model mid-run with no record of why. New challenges
+      changed model mid-run with no record of why. `/doctor`,
+      2026-10-22: 69 general-purpose agents in 29 days, none given
+      a model, so all on Opus: 11% of a week's usage. New challenges
       have `approach-drafting`; looking back has a trial in run 5.
       Ideas:
       - low effort to read and collect; the highest to find the
@@ -147,9 +150,24 @@
         model, the effort, whether it paid.
       - an approach on trial before any convention (ADR-0058); a
         convention of its own, or a section of agent-arrangement.
+      - one default model for every subagent, offered by `/doctor`
+        and held for this item.
+      - before a new skill is proposed, search what exists: the
+        plugin marketplace (`/plugin`, 315 plugins) and the account
+        skills.
+      - setup records stay in `.claude/decisions.md`, or user-wide
+        switches (`~/.claude/settings.json`, every project) go
+        elsewhere.
+      - a table of what is on or off, each graded by its evidence
+        (can't run here, no trigger, named trigger, regular work),
+        what it does, where it applies; the first is in
+        `.claude/decisions.md`, 2026-10-22, the account skills.
+      - the `session-report` plugin, for what each delegation cost,
+        only if `/usage` cannot answer it; not run, known from its
+        catalog listing.
       Trigger: run 5's reading, with the lines gathered by then.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
-      §11.
+      §11; `.claude/decisions.md`, 2026-10-22, the account skills.
 
 - [ ] Evaluate `auto-run`, the approach on trial for preparing a
       full-auto run (2026-10-22, the step that birthed run 5).
