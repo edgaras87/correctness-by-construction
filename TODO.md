@@ -162,6 +162,9 @@
         (can't run here, no trigger, named trigger, regular work),
         what it does, where it applies; the first is in
         `.claude/decisions.md`, 2026-10-22, the account skills.
+      - skills not ours (account, built-in, plugins) arrive and
+        change without us: when the table is graded again, and by
+        whom.
       - the `session-report` plugin, for what each delegation cost,
         only if `/usage` cannot answer it; not run, known from its
         catalog listing.
