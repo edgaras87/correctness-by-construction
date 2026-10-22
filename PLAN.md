@@ -134,8 +134,7 @@ corner.
 Goal: Run 5 is born from this repo at one pin on main, with an
 intent of the reviewer's and a hand-off for full auto, ready for
 the reviewer to start.
-Now: the step's close: run 5 born and started
-(`.claude/approaches-on-trial/approach-drafting.md`, its close).
+Now: closed; main takes the branch on the reviewer's word.
 Gate:
 
 **At the opening.**
@@ -181,24 +180,38 @@ Gate:
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves; every ADR a
+- [x] Every link and path in the records resolves; every ADR a
       record cites exists; each pair of copies agrees, such as the
-      worked example in `cbc-framing` and in `cbc-slice`.
-- [ ] No living line in a record the step touched, or one that
+      worked example in `cbc-framing` and in `cbc-slice`
+      (2026-10-22; the step's files in `temp/` go with it).
+- [x] No living line in a record the step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the step changed.
-- [ ] New and changed text reads to `.claude/rules/writing.md`.
-- [ ] Every commit on `run-5-birth-2026-10-21` follows
-      commit-messages.
-- [ ] No commit straddles agent and project paths.
-- [ ] The step's lessons are folded back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      about something the step changed (2026-10-22;
+      `ARCHITECTURE.md`'s row for run 5 made true here).
+- [x] New and changed text reads to `.claude/rules/writing.md`
+      (2026-10-22).
+- [-] Every commit on `run-5-birth-2026-10-21` follows
+      commit-messages: not made true. Three subjects of the agent's
+      run 51, 56 and 53 characters (`7a57b25`, `9a53957`,
+      `2019be2`); all sit below run 5's pin `ae8a041`, which main
+      holds, so they stay. The other 19 commits and every body hold
+      (2026-10-22).
+- [x] No commit straddles agent and project paths (2026-10-22,
+      22 commits checked).
+- [x] The step's lessons are folded back where they came from:
+      into `.claude/approaches-on-trial/auto-run.md`, its use note
+      (`ef65012`); the seed's prompt under ADR-0061. The playbook's
+      "for run 5 only" lines are run 5's, for its reading
+      (2026-10-22).
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4).
-- [ ] Each approach on trial the step drafted or used has this
+      §2.4) (2026-10-22).
+- [x] Each approach on trial the step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
+      (`.claude/approaches-on-trial/approach-drafting.md`, its
+      close): `auto-run.md`'s note in `ef65012`; its evaluation is
+      TODO's item, due at run 5's reading, which holds its evidence
+      (2026-10-22).
 
 Notes:
 - Opened 2026-10-21 from TODO's run 5 birth item, when the

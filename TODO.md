@@ -29,21 +29,6 @@
 
 ## Now (due while the open step runs)
 
-- [ ] Unlock the folders locked for run 5 (2026-10-22, the
-      reviewer).
-      Context: run 5 must not read another repository, and a
-      `Read` deny rule does not stop a shell. So, before its birth,
-      eleven entries in `~/IdeaProjects` were made unreadable,
-      `chmod 000`: `archive`, `cbc-pure-run`, `cbc-pure-run-2`,
-      `cbc-pure-run-3`, `cbc-pure-run-4`, `checkout-system`,
-      `idempotent-orders`, `order-placement`,
-      `safe-reservations-v1`, each 755 before; and
-      `checkout-system-first-prompt.md`,
-      `safe-reservation-briefing.md`, each 644 before.
-      Trigger: run 5's Release, or before run 4's reading, whichever
-               comes first.
-      See: devlog 2026-10-21, evening.
-
 ## Next (each due at its trigger)
 
 - [ ] Decide how this repo's text is divided: by kind, a model, a
@@ -165,6 +150,18 @@
       Trigger: run 5's reading, with the lines gathered by then.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11.
+
+- [ ] Evaluate `auto-run`, the approach on trial for preparing a
+      full-auto run (2026-10-22, the step that birthed run 5).
+      Context: drafted and used once, for run 5
+      (`.claude/approaches-on-trial/auto-run.md`, its use note). Its
+      open questions are run 5's reading's to answer: what in the
+      hand-off is general enough for the container, and whether the
+      light read of the last run cost run 5 anything. Evaluated
+      before that, every piece would end on trial and be judged
+      again.
+      Trigger: run 5's reading, with its lessons in hand.
+      See: devlog 2026-10-22.
 
 - [ ] Decide how an approach and a shape divide an output: the
       approach says what is done, the shape how its output looks
