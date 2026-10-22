@@ -133,7 +133,7 @@ corner.
 
 Goal: Run 5's reading is written, read only: every edit, ask and
 finding of its whole span has one line, and none is decided.
-Now: the read is written; the step's close.
+Now: closed.
 Gate:
 
 **At the opening.**
@@ -177,23 +177,32 @@ own items.
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves; every ADR a
+- [x] Every link and path in the records resolves; every ADR a
       record cites exists; each pair of copies agrees, such as the
-      worked example in `cbc-framing` and in `cbc-slice`.
-- [ ] No living line in a record the step touched, or one that
+      worked example in `cbc-framing` and in `cbc-slice`
+      (2026-10-22; the reading cites run 5's paths as run 5's).
+- [x] No living line in a record the step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the step changed.
-- [ ] New and changed text reads to `.claude/rules/writing.md`.
-- [ ] Every commit on main since `43aaf30` follows commit-messages.
-- [ ] No commit straddles agent and project paths.
-- [ ] The step's lessons are folded back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      about something the step changed (2026-10-22;
+      `ARCHITECTURE.md`'s row for run 5 made true here).
+- [x] New and changed text reads to `.claude/rules/writing.md`
+      (2026-10-22).
+- [x] Every commit on main since `43aaf30` follows commit-messages
+      (2026-10-22, 2 commits, subjects 36 and 32).
+- [x] No commit straddles agent and project paths (2026-10-22).
+- [x] The step's lessons are folded back where they came from: the
+      lessons about reading are in the reading's §7, where its form
+      puts them; they fold into `exchange-read` when the reading is
+      worked (2026-10-22).
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4).
-- [ ] Each approach on trial the step drafted or used has this
+      §2.4) (2026-10-22, at the birth step's close; unchanged
+      since).
+- [x] Each approach on trial the step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
+      (`.claude/approaches-on-trial/approach-drafting.md`, its
+      close): none drafted or used; the step ran `exchange-read`
+      (2026-10-22).
 
 Notes:
 - Opened 2026-10-22 on main, from the devlog's Resume: the

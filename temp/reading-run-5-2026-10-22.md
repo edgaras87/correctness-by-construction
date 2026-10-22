@@ -570,6 +570,11 @@ reading cuts a branch from main.
   the reviewer's, as its hand-off says.
 - **Run 5's tree:** quiet, nothing staged or changed; its session
   idle since 09:11.
+- **Verified, 2026-10-22 09:42, on a clone of `80099b1` outside run
+  5:** `./mvnw test` 34 tests in 17 classes, 0 failures, 0 errors,
+  0 skipped, 2 minutes 40 seconds; the jar packaged and started
+  against run 5's standing ground, health UP, db UP. The records'
+  numbers hold.
 - **Delegations, three readers, Fable 5.1, effort as the session's:**
   what the run did (40 tool uses, 10 min), the edits and asks (40,
   11 min), findings and lessons (48, 16 min). All three paid.
