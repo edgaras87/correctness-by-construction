@@ -168,11 +168,6 @@
       - read and grade into the table the plugins nearest this
         work: `session-report`, `hookify`, `claude-code-setup`,
         `superpowers`, `mattpocock-skills`.
-      - at a session's end, ask "what context was missing that would
-        have helped?", as `claude-md-management` does. An answer
-        that changes the entry file goes the way such changes go:
-        agent-arrangement §2, the foundation check at its commit,
-        an entry in `.claude/decisions.md`.
       - the `session-report` plugin, for what each delegation cost,
         only if `/usage` cannot answer it; not run, known from its
         catalog listing.
@@ -251,9 +246,16 @@
         on commits cited by hash).
       - when: after a branch is fast-forwarded; when a branch is
         cut; at a commit plan's close.
+      - a missing-context part: each session ends by asking "what
+        context was missing that would have helped?", as
+        `claude-md-management` does; the answer is one finding in
+        that session's devlog entry, from 2026-10-22. The sweep
+        reads the findings since the last one and ends each: entry
+        file, rule, skill, record, or nothing.
       Trigger: the refinement's close, once round 2 has swept one
                home and shown what a sweep finds.
-      See: devlog 2026-10-21, evening.
+      See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
+      §11, the `claude-md-management` part.
 
 - [ ] Decide how commits cited by hash can still be regrouped
       (2026-10-19, the reviewer).
