@@ -971,3 +971,60 @@ item: model and effort by kind of work, not one default. Then:
 - Not next: the open step takes the text-division item first, and
   that item decides where how agents work is written.
 
+## 12. A session's end
+
+Item: "Decide whether a session's end has a home of its own, and
+what it holds".
+
+### 2026-10-22
+
+#### What the reviewer asked
+
+- Should the session-end question be used as findings, and decided
+  only once they are gathered? Should we then change what
+  `CLAUDE.md` holds, or improve something else?
+- Does all this belong in the sweep idea, parked for look-backs and
+  regrouping, with this question added to it?
+- Should a session's end be a convention of its own, put in TODO
+  with its options recorded as they come? Is there such an item
+  already?
+- Is it true we may want two conventions, one for sweeps and one
+  for session ends, to control better what each does? What else is
+  there?
+- Should the missing-context question be an option in the
+  session-end item too?
+
+#### What exists today
+
+- **A session's end:** project-recording §4.4 asks for a devlog
+  entry and a Resume line; the records table names the moment. Two
+  habits live only in the agent's private memory: a line per
+  delegation, and from 2026-10-22 one missing-context finding.
+- **The sweep:** a TODO item, its parts one home and regrouping,
+  now a missing-context part too.
+- **Look-backs:** a commit plan's, inside the plan; `retrospective`,
+  a run's at its end, shipped to runs; our seat has none of its own.
+
+#### Points made
+
+- The asking and the deciding split. Asking needs the session's
+  memory, so it stays at the session's end, one devlog line. The
+  deciding needs many findings, so it goes to the sweep. One gap
+  may be a one-off; a batch shows which repeat.
+- A finding's ending is wider than `CLAUDE.md`: the entry file, a
+  rule, a skill, a record, or nothing.
+- A convention here is tied to a moment. A session's end and a
+  sweep are different moments, read different things and write
+  different things, so each may want its own home.
+- The form, convention, section, approach on trial or rule, is the
+  text-division item's to decide; the item's title stays neutral
+  so as not to assume it.
+- Four look-back moments: inside a commit plan, a session's end,
+  after work lands, a run's end. One subject or four is a
+  text-division question.
+- Two session-end habits are invisible in the repo, and runs never
+  get them: a reason to give them a written home soon.
+- A session's start is the twin: what is read first.
+- The missing-context question is already in the item, as a habit
+  it must place; an idea for it would be a second home.
+
