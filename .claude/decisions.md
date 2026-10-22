@@ -1177,3 +1177,53 @@
   moment, never the rule, as its own comment says); a `paths:` rule
   on the file (it loads when the file is read, after the moment it
   should prompt); a skill (one moment, and no procedure).
+
+- 2026-10-22 The five skills under `delivery/container/.claude/skills/`
+  are turned off in this repo, by `skillOverrides` in the ignored
+  `.claude/settings.local.json`: `apply-retrospective`,
+  `retrospective`, and the container's `commit-messages`,
+  `commit-plan` and `visual-comparison`.
+  Why: they are the runs' masters, found as nested skills, and
+  offered here beside our own; this repo works by its own copies in
+  `.claude/skills/`. Zero uses in 30 sessions. The masters are
+  untouched and still delivered. Found by `/doctor`, on the
+  reviewer's word; at user scope it also turned off the claude.ai
+  synced copies of `cbc-framing` and `cbc-slice` and `cut-a-kata`.
+  Rejected: leaving them listed (two skills of one name, and the
+  run's version could be taken for ours); moving the masters out of
+  `.claude/skills/` paths (the delivery's layout is what a run
+  receives).
+
+- 2026-10-22 Twelve of the 13 claude.ai account skills still on are
+  turned off at user scope, by `skillOverrides` in
+  `~/.claude/settings.json`. `skill-creator` stays on. The claude.ai
+  Claude Docs connector is turned off in this repo only, by `/mcp`.
+  Why: no skill was used since install, and the connector made no
+  call in 29 days. Together they put about 3.1k est. tokens in every
+  session. Each is graded by the evidence that places it, at
+  `/doctor`, on the reviewer's word:
+
+  | Skill or connector | Grade | What it does | Where it could apply here |
+  |---|---|---|---|
+  | `built-in-browser` | can't run here | a browser pane in the desktop app | nowhere: no desktop app on Linux |
+  | `computer-use` | can't run here | clicks and types in desktop apps | nowhere, the same reason |
+  | `chrome-browser` | no trigger | drives your Chrome, with your logins | none: web tools read public pages |
+  | `docx` | no trigger | Word files | none: our text is Markdown |
+  | `pptx` | no trigger | PowerPoint slides | only if the concept is ever presented |
+  | `xlsx` | no trigger | spreadsheets | none: Markdown tables do |
+  | `google-workspace` | no trigger | Google Docs, Sheets, Slides | none |
+  | `import-memory` | no trigger | moves memory in from another assistant | none |
+  | `morning` | no trigger | a daily brief from calendar and mail | personal, not repo work |
+  | `pdf` | no trigger | merges, splits, fills and OCRs PDFs | a scanned paper only; Read reads PDFs |
+  | `docs` | named trigger | Claude Docs pages: shared, commented | Release's page for a stranger, if it leaves git |
+  | Claude Docs connector | named trigger | 8 tools that make, edit, comment on and export claude.ai docs | the same page as `docs`; a review commented outside git |
+  | `deep-research` | named trigger | agents research the web, a sourced report | a question needing outside sources |
+  | `skill-creator` | regular work | builds skills, tests they are picked | each skill we write or change |
+
+  The grades: can't run here, and no trigger, go off; named
+  trigger goes off until its moment; regular work stays. Whether
+  user-wide switches belong in this log is open: TODO, the
+  agent-work item.
+  Rejected: all 13 off (`skill-creator` fits work done here often);
+  all left on (the cost above, and a longer list to choose skills
+  from); grading by chance of need (a guess no one can measure).
