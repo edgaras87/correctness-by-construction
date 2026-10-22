@@ -133,7 +133,7 @@ corner.
 
 Goal: Run 5's reading is written, read only: every edit, ask and
 finding of its whole span has one line, and none is decided.
-Now: the read (`exchange-read`, step 1).
+Now: the read is written; the step's close.
 Gate:
 
 **At the opening.**
@@ -148,19 +148,29 @@ Gate:
 
 **The step's own items.**
 
-- [ ] The reading exists at `temp/reading-run-5-2026-10-22.md`, to
-      its form, and its first line names run 5's `HEAD`, `2cab15d`.
-- [ ] Every edit to a delivered copy (14 files against
+- [x] The reading exists at `temp/reading-run-5-2026-10-22.md`, to
+      its form, and its first line names run 5's `HEAD`: `80099b1`,
+      not `2cab15d` as written here at the opening; run 5 committed
+      twice to its `TODO.md` after Release, before the read began,
+      and the line moved as `exchange-read` step 2 allows
+      (2026-10-22).
+- [x] Every edit to a delivered copy (14 files against
       `birth-seed`), every ask under run 5's *To the deliverer* (13
       lines) and every finding in the span has one line, and none
-      is decided.
-- [ ] Run 5's uncommitted work, if any, is named in the reading.
-- [ ] Nothing in run 5 was written to.
-- [ ] The reading says what run 5 teaches the worked example
-      (`docs/conventions/exchange/` §6.3).
-- [ ] The reading counts its work items and the ones marked plan
+      is decided: 13 hunks in 10 files, the other 4 files the run's
+      own approaches, offered as asks A3 to A5 and A13; 13 asks; 31
+      findings (2026-10-22).
+- [x] Run 5's uncommitted work, if any, is named in the reading:
+      none; its tree is quiet (§8, 2026-10-22).
+- [x] Nothing in run 5 was written to: three readers and the agent
+      read only, by brief and by check (2026-10-22).
+- [x] The reading says what run 5 teaches the worked example
+      (`docs/conventions/exchange/` §6.3): §4, twelve facts and the
+      shape's divergences (2026-10-22).
+- [x] The reading counts its work items and the ones marked plan
       (`.claude/rules/working-a-reading.md`, step 1), so the step
-      that works it knows whether it needs a branch.
+      that works it knows whether it needs a branch: 20 items, 8
+      plans, a branch (2026-10-22).
 
 **Known already.** `exchange-read`'s four gates are the first four
 own items.
