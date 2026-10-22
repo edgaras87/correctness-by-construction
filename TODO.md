@@ -165,6 +165,14 @@
       - skills not ours (account, built-in, plugins) arrive and
         change without us: when the table is graded again, and by
         whom.
+      - read and grade into the table the plugins nearest this
+        work: `session-report`, `hookify`, `claude-code-setup`,
+        `superpowers`, `mattpocock-skills`.
+      - at a session's end, ask "what context was missing that would
+        have helped?", as `claude-md-management` does. An answer
+        that changes the entry file goes the way such changes go:
+        agent-arrangement §2, the foundation check at its commit,
+        an entry in `.claude/decisions.md`.
       - the `session-report` plugin, for what each delegation cost,
         only if `/usage` cannot answer it; not run, known from its
         catalog listing.
