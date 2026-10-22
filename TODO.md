@@ -29,8 +29,6 @@
 
 ## Now (due while the open step runs)
 
-## Next (each due at its trigger)
-
 - [ ] Decide how this repo's text is divided: by kind, a model, a
       convention or an approach, and by subject (2026-10-20, the
       reviewer).
@@ -78,6 +76,8 @@
       Trigger: before round 2 reads, beside its Layout kind.
       See: devlog 2026-10-20, later; 2026-10-19, the redesign's
       ideas; `TODO-CONVERSATION-MEMORY.md` §1.
+
+## Next (each due at its trigger)
 
 - [ ] Write `exchange-birth` while a birth runs (2026-09-26, the
       reviewer).
