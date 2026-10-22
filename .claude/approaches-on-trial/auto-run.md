@@ -59,9 +59,6 @@ started run 4 (`temp/RUN-4.md`). Never on our seat.
 
 ## Not known yet
 
-- **Whether the newborn reads a hand-off in `temp/`.** Nothing
-  forces a newborn to read what it was given (ADR-0018, Variant B);
-  the first commit on its main is the only evidence.
 - **What in the hand-off is general.** Parts every full-auto run
   needs may belong in the container, as a rule or a stance, rather
   than retold in each hand-off. What is general shows only once
@@ -74,6 +71,11 @@ started run 4 (`temp/RUN-4.md`). Never on our seat.
   stayed readable, on trust.
 - **Whether the light read is enough,** or a run should not be born
   on full auto before the last one has been read in full.
+- **Whether a record budget holds as a number alone.** Run 5's
+  decision log ended at 723 lines against the 400 the hand-off set;
+  a check at each step's close may be what a budget needs.
+- **What a machine power-off does to a full-auto run.** The stop
+  hook cannot see it, and nothing watched run 5 while it ran.
 
 ## Ways rejected
 
@@ -87,3 +89,29 @@ started run 4 (`temp/RUN-4.md`). Never on our seat.
   alone ask the reviewer at each sign-off.
 
 ## Uses
+
+*The deliverer, run 5's birth, 2026-10-21 to 2026-10-22.* Prepared
+and born in one evening, 19 commits: three readers on run 4 at the
+default effort, all three paid; the briefing drafted on the
+reviewer's ask and decided line by line; two items due before a
+birth settled (ADR-0061, `cd69ed7`); a hand-off of five files; the
+birth from main at `ae8a041`, started on Fable 5.1 with the seed's
+prompt. Run 5 ran from 00:54 to 04:54 and from 08:28 to 08:45,
+through Release: 13 steps, 6 slices, 254 commits, 11 `red/` and 13
+`try/` branches, no remote, no push, the model unchanged. Taught:
+- **the newborn reads its hand-off:** within 13 minutes it drafted
+  an approach on trial for the birth, delegated every sign-off and
+  adopted `run.md` as `docs/run.md`; by Release it had drafted four
+  approaches of its own and noted its use of `approach-drafting`;
+- **the machine stopped it, not the agent:** a power-off at 04:54
+  cost 3 hours 31 minutes and a restart; the run picked up on one
+  question from the reviewer, and dated its last two steps a day
+  ahead after it;
+- **a budget without a check does not hold:** the decision log
+  ended at 723 lines, 102 entries open, against 400;
+- **the intent is drafted on the reviewer's ask,** and the hand-off
+  bounds how far the run may grow or shrink: both corrected in the
+  approach as the work went (`2019be2`).
+Not known still: what in the hand-off is general; how the reviewer
+checks a running run; whether the light read cost run 5 anything,
+which its reading will say.
