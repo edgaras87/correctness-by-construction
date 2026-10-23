@@ -180,6 +180,8 @@
         so `CLAUDE.local.md` holds only those
         (`docs/conventions/agent-arrangement/` §3.7: settings,
         never rules).
+      - or that section splits in two: the approaches, and what
+        reaches the agent's setup.
       - `CLAUDE.local.md` repeats two rules: commit on the word
         (`commit-messages`) and a stop at each boundary
         (`commit-plan`). Yet `docs/conventions/agent-arrangement/`
@@ -270,6 +272,9 @@
       - `.claude/rules/foundation-check.md`, weighed with this item:
         what is checked at each commit, and what is left to the
         sweep.
+      - compare `CLAUDE.local.md` with the settings the manuals
+        leave to the operator. A missing setting is not wrong, so a
+        sweep reports it; nothing checks it at a session's start.
       Trigger: the refinement's close, once round 2 has swept one
                home and shown what a sweep finds.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
@@ -703,6 +708,25 @@
       Trigger: a change to the arrangement that has to edit both
       files for one fact.
       See: devlog 2026-09-29, the agent model.
+
+- [ ] Check the agent model and agent-arrangement against Claude
+      Code's documentation and community practice (2026-10-23, the
+      reviewer).
+      Context: other work stands on both: `CLAUDE.md`, `.claude/`,
+      and the chain the text-division item is shaping. If either
+      is wrong, what stands on it is built wrong. One doubt so
+      far: agent-arrangement §2.1 calls the entry file "a map, not
+      a rulebook", while, as the agent recalls them unchecked,
+      Anthropic's docs put standing rules in it.
+      Ideas:
+      - first, what each file is for, in the documentation and in
+        community practice; then each claim of the model and the
+        manual against that, not only against each other.
+      - the model's §12 claims carry refutation conditions; a
+        finding lands there.
+      - the `claude-code-guide` agent reads the documentation.
+      Trigger: before the agent's chain is the example the
+               text-division item checks (its question 6).
 
 - [ ] Name the discipline "lived is evidence, not master text"
       (2026-09-04, the user).
