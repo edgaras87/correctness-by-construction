@@ -10,3 +10,5 @@ For future-you: fragments
 fine, honesty mandatory. Never clean up. Mark dead ends loudly with
 "DEAD END:" so they're greppable. End every session with a "Resume:"
 line — cheapest save-point there is.
+
+<!-- foundation: the project-recording convention -->

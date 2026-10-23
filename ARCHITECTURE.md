@@ -10,7 +10,8 @@
      Written under one rule: state only what is checkable in this
      repo and in the live run, and mark anything merely intended as
      intended. Where it contradicts itself, say so in the list at
-     the end rather than pick a side. -->
+     the end rather than pick a side.
+     foundation: the project-recording convention -->
 
 **One concept, the delivery a project is born from, and the agent
 that keeps both true.**
