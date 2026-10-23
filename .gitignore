@@ -29,6 +29,9 @@ CLAUDE.local.md
 # this repo
 # ======================================================================
 
+# The operator's file is tracked here, one operator (ADR-0062)
+!CLAUDE.local.md
+
 # temp/ is tracked: see temp/README.md
 
 # ======================================================================

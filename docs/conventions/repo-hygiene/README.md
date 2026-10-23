@@ -37,7 +37,9 @@ change forced in one of them is checked back against this page.
 A run owns its three files from birth: it edits them when it needs
 to, and adds its stack's lines at the step that makes the stack
 true. The deliverer holds the base's master and the overlays, and
-applies no overlay, having no stack.
+applies no overlay, having no stack. Its own `.gitignore` keeps the
+base as shipped, and un-ignores `CLAUDE.local.md` in its "this
+repo" section (`docs/conventions/agent-arrangement/` §3.7).
 
 ## 1. The three files
 

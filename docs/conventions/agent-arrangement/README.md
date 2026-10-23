@@ -343,7 +343,10 @@ standing instructions, loaded beside the entry file and read the same
 way (`docs/models/agent.md` §4.1, ownership). One person, one
 checkout; the hygiene base ignores it, and its words never enter a
 record — a record that quotes it has let one operator's preference
-into the project's truth. The container ships none.
+into the project's truth. The container ships none, and a run's
+stays ignored. The deliverer tracks its own: it has one operator,
+and a setting kept out of git is one no reader of the repo can see
+(ADR-0062).
 
 It holds the operator's settings, never rules. A setting is a
 choice one operator makes where the project leaves it open: how
