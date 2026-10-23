@@ -1227,3 +1227,8 @@
   Rejected: all 13 off (`skill-creator` fits work done here often);
   all left on (the cost above, and a longer list to choose skills
   from); grading by chance of need (a guess no one can measure).
+
+- 2026-10-23 `CLAUDE.local.md` is tracked in this repo, un-ignored
+  in `.gitignore`'s own section; it still holds settings only.
+  Why: ADR-0062.
+  Rejected: see ADR-0062.
