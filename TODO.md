@@ -407,6 +407,12 @@
       - `.claude/rules/convention-manual.md` is the manual's form. It
         stands on the conventions convention until this item
         decides; as a shape, it would stand on the shapes convention.
+      - a record's form, in its header comment, stays
+        project-recording's: it is read when the record is opened,
+        while an entry is written, which shapes §3 keeps for rules.
+        Only `.claude/decisions.md` holds one under another
+        convention, agent-arrangement. The open forms are those in
+        rules: a manual's, a reading's.
       Trigger: run 4's reading, which reads how run 4 lived run 3's
                shapes.
       See: devlog 2026-10-17, our forms as shapes; 2026-10-20,
