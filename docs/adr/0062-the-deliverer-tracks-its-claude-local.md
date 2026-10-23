@@ -1,8 +1,8 @@
 # 0062. The deliverer tracks its CLAUDE.local.md
 
 Date: 2026-10-23
-Status: Proposed (2026-10-23, under the commit plan for
-CLAUDE.local.md).
+Status: Accepted (2026-10-23, at the set's records commit; opened
+Proposed under the commit plan for CLAUDE.local.md, unchanged since).
 
 ## Context
 
