@@ -19,14 +19,15 @@ Opens the set.
 **1. `docs: the deliverer tracks its CLAUDE.local.md`**
 ADR-0062, Proposed. agent-arrangement §3.7 gains a line for each
 side: ours is tracked, a run's stays ignored. repo-hygiene's seats
-say the deliverer un-ignores it in its own section. The manuals
-come first: the commits after this one apply them.
+say the deliverer un-ignores it in its own section. With them, what
+derives: `.gitignore` gains `!CLAUDE.local.md` in the "this repo"
+section, the base section untouched, and the file itself is added
+as it stands today.
 
-**2. `chore: track CLAUDE.local.md in this repo`**
-`.gitignore`: `!CLAUDE.local.md` in the "this repo" section; the
-base section is untouched. The file itself, as it stands today.
-Its own commit, since it is hygiene, not a record and not the
-agent's own files.
+**2.** Merged into 1. Our `.gitignore` derives from repo-hygiene,
+and the foundation check puts a derived change in the same commit
+as its manual's, unless one side is the agent's own files. Apart,
+commit 1 would say the file is tracked while git still ignored it.
 
 **3. `chore(agent): log tracking CLAUDE.local.md`**
 `.claude/decisions.md`: a two-line entry pointing at ADR-0062.
