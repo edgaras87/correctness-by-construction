@@ -254,6 +254,9 @@
         file, rule, skill, record, or nothing.
       - how the sweep stands to `retrospective`, a run's look-back
         at its end.
+      - `.claude/rules/foundation-check.md`, weighed with this item:
+        what is checked at each commit, and what is left to the
+        sweep.
       Trigger: the refinement's close, once round 2 has swept one
                home and shown what a sweep finds.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
@@ -275,6 +278,9 @@
       - a rule loaded every session, naming each duty and its
         home.
       - its twin, a session's start: what is read first.
+      - a session's end runs the sweep first, then writes its
+        devlog entry. Weigh against the missing-context findings,
+        which a sweep was to decide in a batch.
       Trigger: the text-division item, which decides how such a
                subject is placed.
       See: devlog 2026-10-22, later; `TODO-CONVERSATION-MEMORY.md`
@@ -380,6 +386,9 @@
       - what must hold while writing stays a rule
         (`docs/conventions/shapes/` §3): a
         manual's section order may; how each part is written may not.
+      - `.claude/rules/convention-manual.md` is the manual's form. It
+        stands on the conventions convention until this item
+        decides; as a shape, it would stand on the shapes convention.
       Trigger: run 4's reading, which reads how run 4 lived run 3's
                shapes.
       See: devlog 2026-10-17, our forms as shapes; 2026-10-20,
