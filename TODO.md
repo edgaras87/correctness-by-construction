@@ -171,6 +171,19 @@
       - the `session-report` plugin, for what each delegation cost,
         only if `/usage` cannot answer it; not run, known from its
         catalog listing.
+      - where a habit of working with the reviewer lives:
+        `CLAUDE.local.md`, the agent's memory, or a rule. On
+        2026-10-23, staging a TODO line at once went to
+        `CLAUDE.local.md`; memory loads only when recalled.
+      - a manual's "What this is made usable as" also names any
+        `CLAUDE.md` line and the settings it leaves to the operator,
+        so `CLAUDE.local.md` holds only those
+        (`docs/conventions/agent-arrangement/` §3.7: settings,
+        never rules).
+      - `CLAUDE.local.md` repeats two rules: commit on the word
+        (`commit-messages`) and a stop at each boundary
+        (`commit-plan`). Yet `docs/conventions/agent-arrangement/`
+        §3.7 counts how often the agent stops as a setting.
       Trigger: run 5's reading, with the lines gathered by then.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11; `.claude/decisions.md`, 2026-10-22, the account skills.
