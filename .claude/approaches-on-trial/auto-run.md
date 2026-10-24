@@ -67,9 +67,9 @@ started run 4 (`temp/RUN-4.md`). Never on our seat.
   stopping it.
 - **How a run is kept from reading what it should not.** A `Read`
   deny rule stops `cat` and `sed` on a path, but not `grep -r` or a
-  script (`docs/models/agent.md` §10.4); for run 5 the other
-  repositories were made unreadable on disk, and the deliverer's
-  stayed readable, on trust.
+  script (`docs/conventions/agent-arrangement/` §5.4); for run 5 the
+  other repositories were made unreadable on disk, and the
+  deliverer's stayed readable, on trust.
 - **Whether the light read is enough,** or a run should not be born
   on full auto before the last one has been read in full.
 - **Whether a record budget holds as a number alone.** Run 5's
