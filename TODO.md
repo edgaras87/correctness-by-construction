@@ -309,6 +309,13 @@
         widening `docs/conventions/conventions/` §3.2's grep for a
         moved section.
       - the repo prefix keeps its own name.
+      - a fact reference serves two readers: the agent, which may
+        follow it (pulled, `docs/models/agent.md` §4.2, with no
+        guarantee, claim P1), and the walk, which re-reads the line
+        when the home changes. "Pointer" names the first in the
+        agent model and the second in
+        `docs/conventions/conventions/` §3.2; with the fact
+        reference defined, "pointer" stays the agent model's.
       - a fact reference in a shipped file names its repo, as a
         shipped decision does with `CBC ADR-nnnn`: `(<repo>,
         <path>, §<number>, <title>)`. A run holds no manuals, so a
