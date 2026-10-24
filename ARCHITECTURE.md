@@ -359,7 +359,7 @@ concept/             the concept: five chapters, 00-cbc.md first (§1.1)
 docs/
 ├── adr/             decisions and why
 ├── conventions/     eleven manuals and their index (§1.2)
-├── models/          the agent model and the tiers model; neither ships
+├── models/          agent, tiers, idea-to-output; none ships
 └── baselines/       trial evidence withheld from runs (ADR-0035)
 delivery/
 ├── container/       what a run is born into (§2.3)
