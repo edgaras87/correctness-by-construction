@@ -75,6 +75,14 @@ choice (§8), or a claim (§12). A tag to agent-arrangement §3.2
 already reaches the model through that host, and stays. One change
 over 11 files, so one commit.
 
+**5c. `docs: TODO asks to move the agent model's binding`**
+The fold item is rewritten whole, not only its trigger: its
+question becomes moving the agent model's §10, the binding, into
+agent-arrangement, with §9 and §8's pointer down at the manuals
+leaving the model. Its talk lands beside it as
+`TODO-CONVERSATION-MEMORY.md` §14. Inserted after 5 landed; the
+move itself is work after this plan.
+
 **6. `chore(agent): the records table tags its rules`**
 Our `CLAUDE.md`: the records table's comment drops its
 `foundation:` line for a tag to project-recording §13. The guard's
@@ -112,8 +120,7 @@ closing item would lose:
   cases of the model's §3, and may point at it once written.
 
 The fact-reference item's trigger quotes the staying-in-step item.
-The fold item's trigger line is rewritten true for today, not
-stacked with a date. TODO is grepped for items waiting on the
+TODO is grepped for items waiting on the
 text-division item: "Choose whether a manual is called a concept",
 whose trigger names an item that does not exist and meant this one,
 and "Decide whether a session's end has a home of its own". Each
