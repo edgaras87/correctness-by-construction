@@ -5,8 +5,8 @@ foundation: the conventions convention
 <!-- Makes docs/conventions/conventions/ §3.5 and §3.6, and §3.2's
      grep for a moved section, fire at the commit, where they waited
      to be remembered. Loaded in every session, with no paths: a
-     paths rule loads only when a file is opened with the Read tool,
-     and an edit made by script never opens it. Ours, shipped
+     paths rule loads only when a file is touched with the agent's
+     tools, and an edit made by script never loads it. Ours, shipped
      nowhere: a run holds no manuals. -->
 
 # The foundation check

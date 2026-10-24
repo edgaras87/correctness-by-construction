@@ -66,7 +66,8 @@ started run 4 (`temp/RUN-4.md`). Never on our seat.
 - **How the reviewer checks a run while it runs,** without
   stopping it.
 - **How a run is kept from reading what it should not.** A `Read`
-  deny rule does not stop a shell; for run 5 the other
+  deny rule stops `cat` and `sed` on a path, but not `grep -r` or a
+  script (`docs/models/agent.md` §10.4); for run 5 the other
   repositories were made unreadable on disk, and the deliverer's
   stayed readable, on trust.
 - **Whether the light read is enough,** or a run should not be born
