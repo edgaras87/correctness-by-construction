@@ -26,14 +26,12 @@ Layer 1 — vendor-neutral. One tool's mechanisms are a **binding**;
 ## 1. Who this is about
 
 An agent working in **a project that follows the conventions it was
-born with**, where those conventions arrive as pinned copies from
-the repo that delivered them.
+born with**: a run, pinned to the copies it took. How the repos
+relate is `docs/models/tiers.md` §2.3.
 
 That is the case worth getting right: the conventions are written for
-it, and it is the case nobody can watch. The delivering repo is not
-an instance of it: it receives no conventions, and writes its own
-arrangement, most of it derived from the same manuals (ADR-0042).
-Its agent meets the same channels all the same.
+it, and it is the case nobody can watch. An agent in the repo that
+delivers them meets the same channels all the same.
 
 The practical question the model exists to answer: *given a convention
 sitting in a project, how does it reach the agent that is supposed to
