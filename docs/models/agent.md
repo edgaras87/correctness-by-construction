@@ -212,9 +212,8 @@ the outcome (§12 G1).
 
 ## 8. Choosing a channel
 
-The design decision a convention author makes, and until now made
-implicitly. Recorded per convention, in its manual's *why it
-arrives this way*.
+The design decision a convention author makes, once for each
+convention.
 
 | The rule is… | Channel | Because |
 |---|---|---|
@@ -233,13 +232,11 @@ with two texts that can disagree (§5).
 
 Shown by each convention's artifacts: a skill file for a rule bound to
 a moment, stubs and templates for a rule that rides in the files a
-project is born with. What a convention ships is what its manual lists
-under *what this is made usable as*, and the choice rests on §8. A
-skill's frontmatter names its trigger; no field anywhere names a
-channel — the manual's *why it arrives this way* does, in prose.
+project is born with. The choice rests on §8. No field in a file
+names a channel.
 
-No table here: each manual states its own channel, and a list here
-would be a second home for one fact — the one nothing edits.
+No table here: a list of each convention's channel would be a second
+home for facts this model does not own.
 
 ## 10. Bindings (Layer 2)
 
