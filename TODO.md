@@ -1012,6 +1012,27 @@
                with `delivered-copies.md` changed since its pin.
       See: devlog 2026-10-18.
 
+- [ ] Decide how an edit or a new text is shaped, line width
+      included (2026-10-25, the reviewer).
+      Context: 72 characters is written only for a commit body
+      (`commit-messages`). The agent applied it to Markdown, and
+      rewrapped paragraphs to fit: diffs grew, and a scripted rewrap
+      broke structure twice. 685 lines in 70 of the 171 Markdown
+      files run past 72, tables aside. Nothing says how an edit
+      keeps or changes the shape of the text it touches.
+      Ideas:
+      - an edit keeps the logic of the part it changes, and improves
+        it where a better logic exists.
+      - no width at all; a width for `*.md` in `.editorconfig`,
+        shown as a guide; or a change about as long as what it
+        replaces. A limit only if nothing better is found.
+      - a home: the writing convention, if shape is how a text
+        reads; repo-hygiene's `.editorconfig`, if it is a width; or
+        a convention of its own for editing.
+      Trigger: a diff the reviewer finds bigger than its change, or
+               the writing convention's next change.
+      See: devlog 2026-10-25, the agent binding.
+
 ## Known issues (deferred deliberately — each entry: what, why accepted, when to revisit)
 
 - The postgres image tag floats (2026-08-28). The ground template
