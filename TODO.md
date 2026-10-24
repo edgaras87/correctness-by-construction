@@ -310,6 +310,17 @@
         widening `docs/conventions/conventions/` §3.2's grep for a
         moved section.
       - the repo prefix keeps its own name.
+      - a fact reference in a shipped file names its repo, as a
+        shipped decision does with `CBC ADR-nnnn`: `(<repo>,
+        <path>, §<number>, <title>)`. A run holds no manuals, so a
+        bare path points at nothing there; the deliverer's walk
+        still needs it. Until the form is settled the container's
+        entry file carries today's form. Dropping references at
+        birth was weighed: a delivery is copied whole.
+      - the container's other stubs, 7 with a `foundation:` line,
+        and its entry file's guard retell project-recording or
+        agent-arrangement with no reference to a section; each gets
+        them in the settled form.
       - a fact reference that jumps a level, an approach citing a
         model, may mean a convention, or a part of one, is missing
         between them; or none is needed, since the walk finds the
