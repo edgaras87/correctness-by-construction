@@ -1,8 +1,9 @@
 # 0064. The agent binding lives in agent-arrangement
 
 Date: 2026-10-25
-Status: Proposed (2026-10-25, under the commit plan for the agent
-binding).
+Status: Accepted (2026-10-25, at the set's records commit; opened
+Proposed under the commit plan for the agent binding, unchanged
+since).
 
 ## Context
 
@@ -25,7 +26,7 @@ every link pointing up. Two things in the agent model broke that:
 - `auto-run.md`, an approach on trial, cited the model's §10.4, a
   reference that jumps a level (TODO, the fact-reference item).
 
-The talk is `TODO-CONVERSATION-MEMORY.md` §14.
+The talk is `dbe5e30:TODO-CONVERSATION-MEMORY.md` §14.
 
 ## Options considered
 

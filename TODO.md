@@ -46,35 +46,6 @@
       Trigger: round 2 reads.
       See: ADR-0063; devlog 2026-10-24, the text-division item.
 
-- [ ] Move the agent model's binding into agent-arrangement
-      (2026-10-24, the reviewer).
-      Context: `docs/models/agent.md` holds an idea any tool fits,
-      its §2 to §8 and §12, beside one tool's mechanisms, §10,
-      checked against Claude Code 2.1.310. agent-arrangement §3.2
-      retells §10.6, and on 2026-10-24 one fact changed in both
-      (`36eb0c1`). §9, and §8's second sentence, say where a manual
-      records its channel: a rule about manuals that points down,
-      held now by `docs/conventions/conventions/` §3.3. Asked first
-      on 2026-09-29 as folding the whole model into the manual.
-      Ideas:
-      - the binding as a section of agent-arrangement, which holds
-        this repo's Claude Code files already; §3.2 becomes the home,
-        not a retelling. About 120 lines; the manual near 580.
-      - a page of its own for the binding: a new kind of text.
-      - `auto-run.md`'s fact reference to the model's §10.4 would
-        then point at a convention, and the level jump closes. Five
-        lines point into §10 today.
-      - a full fold would put the vendor-neutral idea inside a
-        Claude Code page.
-      - not a concept: a concept is copied whole and built by; the
-        agent model is adapted by a repo's arrangement.
-      - the header's provenance comment, like the one cut from the
-        idea-to-output model.
-      - the tiers model has had no such pass.
-      Trigger: before round 2 reads, beside its Layout kind.
-      See: devlog 2026-09-29, the agent model;
-      `TODO-CONVERSATION-MEMORY.md` §14.
-
 ## Next (each due at its trigger)
 
 - [ ] Write `exchange-birth` while a birth runs (2026-09-26, the
@@ -331,9 +302,11 @@
         model, may mean a convention, or a part of one, is missing
         between them; or none is needed, since the walk finds the
         jump when the model changes. Noted, not solved, until a case
-        forces it. One today: `auto-run.md` → the agent model's
-        §10.4. When a piece is placed (`approach-evaluation` stage
-        5), or a run's approach rewritten here (stage 6), its
+        forces it. The one case, `auto-run.md` citing the agent
+        model's §10.4, closed when the binding moved into
+        agent-arrangement (ADR-0064): the missing part was a
+        convention's. When a piece is placed (`approach-evaluation`
+        stage 5), or a run's approach rewritten here (stage 6), its
         references move to their new homes; nothing says so yet.
       - a missing fact reference is found by nothing: the walk sees
         only lines that carry one. At each commit, each new or
