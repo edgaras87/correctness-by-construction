@@ -113,9 +113,9 @@ A rule with no `paths:`, loaded in every session
 answer and every record written, and nothing else fires at all of
 them:
 
-- **A `paths:` list** loads when a file is read, not when one is
-  written, and chat has no path. Run 3's first draft loaded on
-  Markdown files, and was dropped for this.
+- **A `paths:` list** loads when a file is touched, after a new
+  one's first draft is written, and chat has no path. Run 3's first
+  draft loaded on Markdown files, and was dropped for this.
 - **A skill** fires when the agent notices the moment. The failure
   here is not noticing: the agent writes in the voice it last read.
 - **Memory or `CLAUDE.local.md`** held the lesson in run 3 and did

@@ -264,11 +264,13 @@ evaluation's: work no skill covers starts from an approach on trial
 ### 3.2 `rules/`
 
 Instruction files read like the entry file, with one extra: a `paths:`
-list at the top makes the file load only when the agent reads a file
-under one of those paths with the Read tool — not when it writes a new
-one there — the tool deciding, not the agent (`docs/models/agent.md`
-§10.6). The home for a rule true only in one part of the tree, which a
-skill would carry only if the agent noticed the moment. Without the
+list at the top makes the file load only when the agent touches a
+file under one of those paths: reads, writes or edits it, or reads it
+from the shell. A new file's first draft is written before the rule
+arrives, and a script's edit loads nothing. The tool decides, not the
+agent (`docs/models/agent.md` §10.6). The home for a rule true only
+in one part of the tree, which a skill would carry only if the agent
+noticed the moment. Without the
 list, the file is the entry file by another name and fails §2.4's
 tests the same way, with one exception.
 

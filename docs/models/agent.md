@@ -252,14 +252,15 @@ been needed.
 
 ### 10.1 The mapping
 
-Sketch, Claude Code — checked against 2.1.284 on 2026-09-29, by its
-documentation and by what could be observed here:
+Sketch, Claude Code — checked against 2.1.310 on 2026-10-24, by its
+documentation, by what could be observed here, and by bug reports
+(first checked against 2.1.284 on 2026-09-29):
 
 | Layer 1 | Claude Code mechanism |
 |---|---|
-| ambient | memory files — `CLAUDE.md` (root or under `.claude/`), `~/.claude/CLAUDE.md`, `@` imports; `.claude/rules/*.md` without a `paths:` list; `CLAUDE.local.md`, the operator's; a skill's `name` and `description` |
+| ambient | memory files — `CLAUDE.md` (root or under `.claude/`), `~/.claude/CLAUDE.md`, `@` imports; `AGENTS.md`, read when no `CLAUDE.md` is found; `.claude/rules/*.md` without a `paths:` list; `CLAUDE.local.md`, the operator's; the first 200 lines of auto memory's `MEMORY.md`; a skill's `name` and `description` |
 | pulled | `Read`, `Grep`, `Glob`; a skill's body, once the agent invokes it |
-| pushed | context-injecting hooks, slash commands, subagents; `.claude/rules/*.md` with a `paths:` list — loaded when the agent reads a matching file with the Read tool; not on a write, a new file, or a shell command |
+| pushed | context-injecting hooks, slash commands, subagents; `.claude/rules/*.md` with a `paths:` list, and a `CLAUDE.md` in a subdirectory — loaded when the agent reads, writes or edits a matching file, or reads one from the shell with a command such as `cat`; not on a script's edit (§10.6) |
 | told | the prompt |
 | observed | tool results |
 | installed | files in the repo; the container that puts them there at birth |
@@ -285,11 +286,17 @@ template entry file kept inside a repo stays out of its sessions.
 
 ### 10.4 Permission rules
 
-A permission rule is a gate only in a mode that honours it. In a mode
-that does not prompt, `ask` stops nothing: auto mode has a classifier
-decide in the background, and a mode that bypasses permissions skips
-the prompt. `deny` still refuses in both. The gate is the tool's, not
-the repo's.
+A permission rule is a gate only in a mode that honours it. `deny`
+refuses in every mode. `ask` still prompts in auto mode and in the
+mode that bypasses permissions; the mode that never asks turns it
+into a refusal. What no rule matches, auto mode has a classifier
+decide in the background. The gate is the tool's, not the repo's.
+
+A rule reaches only what the tool can name. A `Read` deny covers the
+file tools and the shell commands the tool knows as file commands,
+such as `cat`, `head` and `sed`. It does not cover `grep -r` across a
+tree, or a script that opens files itself; the documentation sends
+that to the sandbox.
 
 ### 10.5 Skills
 
@@ -300,23 +307,57 @@ pulled body. The agent still decides, and pushed promises it does
 not (§4). A skill is still the closest this tool gets to pushed for a
 rule about an action; a hook closes the remainder.
 
+The tool ignores a frontmatter field it does not know, without an
+error, in a skill as in a rule. Our `foundation` and `requires` lines
+are for a reader of the file, never for the tool. A skill may also
+carry a `paths:` list; what it does to a skill this repo has not
+checked.
+
 ### 10.6 Rules files
 
 `.claude/rules/` holds instruction files like `CLAUDE.md`, with one
 extra: a `paths:` list at the top. Without it, the file is read every
-session — ambient, no different from `CLAUDE.md`. With it, the file is
-read only when the agent reads a file under one of those paths with
-the Read tool, and the tool decides that, not the agent. That is
-pushed with no hook to write. The documentation says the rule loads
-when a matching file is read; that the Read tool alone fires it rests
-on observation. Two limits, both observed: the trigger
-is the Read tool alone — writing a new file under the path, or
-listing it from the shell, loads nothing, so a record written from
-scratch gets the rule no earlier than a comment in a template would
-have given it; and the condition it can check is a place, never an
-action — "when work is under `generated/`", not "when committing" —
-so it does not replace a skill. A skill is the agent's judgment
-about an action; a rules file is the tool's check on a read.
+session — ambient, no different from `CLAUDE.md`. With it, the file
+loads when the agent reads, writes or edits a file under one of
+those paths, or reads one from the shell with a command such as
+`cat` or `head`. The tool decides that, not the agent. That is pushed
+with no hook to write. A `CLAUDE.md` in a subdirectory loads the
+same way.
+
+Three limits:
+
+- **It arrives after the first draft.** A new file's content is
+  written in the call that loads the rule, so a record written from
+  scratch gets the rule no earlier than a comment in a template would
+  have given it.
+- **A script's edit loads nothing,** and nor does listing the
+  directory.
+- **Its condition is a place, never an action** — "when work is under
+  `generated/`", not "when committing" — so it does not replace a
+  skill. A skill is the agent's judgment about an action; a rules
+  file is the tool's check on a touched file.
+
+What is documented and what is seen have differed. On 2.1.284 this
+repo saw the Read tool alone load a rule; on 2.1.310 a `sed` read
+loaded one, as the documentation now says. Bug reports, checked
+2026-10-24, show `paths:` failing silently in some formats and seats
+(Claude Code issues #17204, #33581, #87217). A rule that must arrive
+does not rest on a path alone (§7).
+
+### 10.7 What a session keeps, and what a helper gets
+
+- **Compaction** restores the root `CLAUDE.md`, the rules without
+  `paths:` and auto memory from disk. A path rule and a subdirectory's
+  `CLAUDE.md` come back only when a matching file is touched again.
+  An invoked skill's body comes back cut to 5,000 tokens.
+- **A subagent** loads the `CLAUDE.md` files, the rules and
+  `CLAUDE.local.md`, but not auto memory, and no skill body unless
+  its definition names the skill. The built-in Explore and Plan
+  agents skip `CLAUDE.md`. A fork inherits the whole conversation.
+
+So what a delegated task must know goes in its prompt, which is told
+(§4.4). An Explore or Plan agent gets none of the rules loaded every
+session, only the path rules of the files it touches.
 
 ## 11. Out of scope
 

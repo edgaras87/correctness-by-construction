@@ -414,8 +414,8 @@ and rule, read by whoever opens the file, because a claim about
 what a file stands on has to travel with the file. The check is a
 rule loaded in every session, because its moment is every commit
 that touches either side, and a rule with `paths:` loads only when a
-file is opened with the Read tool: an edit made by script never
-opens it.
+file is touched with the agent's tools: an edit made by script never
+loads it (`docs/models/agent.md` §10.6).
 
 ## What this does not cover
 
