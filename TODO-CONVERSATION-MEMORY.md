@@ -18,7 +18,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-10-22.
+     Last touched: 2026-10-24.
      foundation: the project-recording convention -->
 
 # TODO's conversation-memory
@@ -287,6 +287,124 @@ likely should live here with changes"?
 
 Two Ideas lines came of it, held while layer 3's plan was open and
 added in `abae9c4`.
+
+### 2026-10-23
+
+The item worked, before round 2 reads. The talk ran into 2026-10-24.
+
+#### What the reviewer asked
+
+- What the item is about, what was being dealt with when it was
+  raised, and what "kind of text" means. Then: the chain comes
+  first, "and this will answer itself".
+- Where the concept fits. Does correctness by construction need a
+  more abstract model above it?
+- Conventions could carry a `foundation` line naming the model
+  they stand on. Does the word clash with the approaches'
+  `foundation`, and where is it described: in the model that holds
+  the layers?
+- Records are not outside the chain: they all stand on
+  project-recording. A record's form is the approach, its entries
+  the output, maybe with shapes.
+- How new things are born, a chain the other way: "unfamiliar-work
+  -> approach-on-trail -(approving and locking as convention)->
+  convention -(writing idea in general which can be use else where
+  too)-> model".
+- A model is an idea any repo can adapt, "like interface"; a
+  concept has one form, is defined in one repo, and is only copied.
+  Can the line be drawn there?
+- Weaken "only when two or more manuals share an idea": a model may
+  be written for one convention, "to see general idea behind that
+  convention". To consider, not decided.
+- Is `foundation` the model's connector, its rules in the
+  conventions convention? If a model holds the chain, what is the
+  conventions convention, and is model → approach a link?
+- Names: "chain" is taken, so a `-chain` suffix for each chain. Is
+  requires the same thing as the hand-off? "Text chain" says too
+  little, and "hand-off" alone could mean anything.
+- Does the one-home walk use `requires`? If not, what is it for?
+
+#### What exists today
+
+- **The kinds in use:** models (`docs/models/`: agent, tiers),
+  manuals, the concept, approaches (skills, rules, approaches on
+  trial), outputs (records, slices, code), shapes.
+- **`foundation`** is described in conventions §2, §3.5 and §3.6
+  and `.claude/rules/foundation-check.md`, defined in
+  `ARCHITECTURE.md`'s *The words*; no manual of its own. Values in
+  use: a convention, most; `concept v1`, 2; practice, 8; a model,
+  none. agent-arrangement names its model only in *Where to look*.
+- **The concept** carries no `foundation`: "they are the top"
+  (conventions §2). A run edits its copy only from a mistake lived,
+  and the edit goes home
+  (`delivery/container/.claude/rules/delivered-copies.md`).
+- **Record forms:** five carried a `foundation:` line;
+  `ARCHITECTURE.md` and `devlog/README.md` held a form without one;
+  `README.md` and our ADRs hold no form.
+- **What ships:** no manual and no model
+  (`docs/conventions/exchange/` §3.2).
+- **The up direction:** drafting, evaluation and outputs → shape
+  are lived; convention → model never was, both models coming from
+  the handbook (ADR-0038).
+- **`requires`:** on three skills. Its stated use, "a receiver
+  lands a convention together with its chain" (conventions §2), was
+  convention-lifecycle's step, gone with ADR-0036. The walk greps a
+  manual's path and its name in `foundation` lines, never
+  `requires`. The three skills name `commit-messages` by skill
+  name, never by path, so a change to its manual reaches none of
+  them.
+- **Names taken:** "layer" three times; "chain" for the index's
+  picture and for `requires`; "kind" in the refinement. *The words*
+  has no "model".
+
+#### The questions, in the order worked, and what the reviewer took
+
+1. **The kinds:** model, description (a manual or the concept),
+   approach, output, shape. "Looks how i picture."
+2. **Does a model bind once a manual stands on it?** Taken: yes, it
+   is the top description of its chain. "Binds nothing" leaves the
+   models' headers; the foundation check's four endings let either
+   side be wrong. Rejected: the model stays free, and drifts.
+3. **The concept and the model:** the concept is the top of its own
+   chain, beside a manual. They differ by where the variation
+   happens: a model's rules vary by repo, a concept's only its
+   outputs. No model above correctness by construction; "what a
+   concept is" waits for a second concept repo.
+4. **`foundation`:** the link is in the model; the rules stay in
+   conventions §2 and go to staying in step. The conventions
+   convention stays, smaller, as this repo's implementation: §1 to
+   the model, §3.1, §3.2, §3.5 and §3.6 to staying in step. No
+   model → approach link now; trigger, an approach whose rules no
+   convention could hold.
+5. **The up direction** is in the model, the steps between repos
+   staying tiers §3. **What each side holds:** a summary tagged to
+   exchange §3.2; a run edits its copies, and a reading decides each.
+6. **Record forms:** the two missing lines were added
+   (`9e75f12`); a record's form stays project-recording's, no shape
+   (`026640d`).
+7. **Where and what name:** a model in `docs/models/`, written at
+   the item's close; `foundation` defined in *The words*, its link
+   in the model, its rules in the conventions; questions held with
+   a trigger as TODO items. Names: **the idea-to-output chain**,
+   the model; **the approach hand-off chain**, the index's picture;
+   **the requires link**, inside the model, kept, with a third grep
+   in the walk. "Output is something like product of that all
+   model" was the reviewer's doubt; output stays, as the end the
+   records, the shapes and the up direction need.
+
+Left open: the agent's chain (question 6 of the item's plan), after
+the agent's texts are checked against outside sources.
+
+#### Other threads met in this talk
+
+Each has its home, named in it.
+
+- **Marks for other items,** each staged the moment it was decided:
+  `d897697`, `6d5bc5a`, `22e950f`, `026640d`.
+- **A TODO line decided while talking is staged at once:**
+  `CLAUDE.local.md`, tracked since ADR-0062.
+- **Checking the agent model and agent-arrangement against Claude
+  Code's documentation and community practice:** its own TODO item.
 
 ## 2. How an approach and a shape divide an output
 
