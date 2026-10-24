@@ -309,6 +309,27 @@
       See: devlog 2026-10-24, the text-division item;
       `TODO-CONVERSATION-MEMORY.md` §13.
 
+- [ ] Decide how an item names the items it waits on, and what
+      happens when one closes (2026-10-24, the reviewer).
+      Context: TODO sorts by horizon and trigger; within a horizon,
+      by when added. Some triggers name another item in free prose.
+      One names an item that does not exist ("the item on what a
+      thing is"), and two wait on the text-division item, with
+      nothing to find them when it closes. Order mattered twice in
+      the text-division item's own work. Now holds 1 item, Next 24,
+      Later 33.
+      Ideas:
+      - a trigger names each item it waits on by quoting its first
+        words, a fact reference; several are allowed.
+      - at an item's close, grep TODO for its first words; an item
+        whose waits are all closed moves up in the same commit.
+      - at step-close triage, Next is ordered: ready items first,
+        and among them those others wait on; a cycle is split,
+        merged or decided provisionally.
+      - no re-sort when an item is added.
+      Trigger: the next step's close, at its triage.
+      See: devlog 2026-10-24, the text-division item.
+
 - [ ] Decide whether a session's end has a home of its own, and
       what it holds (2026-10-22, the reviewer).
       Context: a session's end is spread out. project-recording
