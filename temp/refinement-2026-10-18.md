@@ -386,5 +386,5 @@ was inserted, `8042a18`: the reviewer's question on FINDING-114's
 line became a TODO item.
 
 Round 1 is closed. Round 2 is next: its kinds are in *Kinds and
-rounds*. Before it reads, TODO's Now items; when it reads, *Met in
-round 1, for round 2* first.
+rounds*. When it reads, *Met in round 1, for round 2* first, and
+TODO's Now item, the staying-in-step convention.
