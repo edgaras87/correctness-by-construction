@@ -38,6 +38,20 @@ The ADR, Proposed. Every later commit stands on it.
 The model, new in `docs/models/`. Nothing stands on it yet, so it
 lands alone.
 
+**2b. `docs: the model keeps to what things are`**
+The model states what things are and how they relate; how this repo
+writes and checks a link is its conventions'. §3 drops its "Written
+as" and "Upkeep" columns; "one root, tags for parts" shrinks to one
+line; the trigger for a model to approach link goes to commit 10's
+TODO item; §4's step details become pointers; §6 keeps the agent's
+chain as its one example, since each file's `foundation` line
+already holds its chain. The header and §7 stop pointing down at a
+rule: a model points only at its own sections, at other models, or
+at nothing. §3 gains that every link points up, an upper text at
+most listing what stands on it; §4, that after a birth the lower
+text is rewritten to stand on the new one. Inserted after 2
+landed.
+
 **3. `docs: one foundation per file, tags for parts`**
 Conventions §2: a model is a value of `foundation`. §3.5 step 2:
 one `foundation` per file, the root; a line using a part of any
