@@ -280,6 +280,11 @@
       - compare `CLAUDE.local.md` with the settings the manuals
         leave to the operator. A missing setting is not wrong, so a
         sweep reports it; nothing checks it at a session's start.
+      - a reference sweep, two kinds: missing, a line relying on a
+        fact elsewhere with no reference, found only by reading;
+        broken, a reference whose path, number or title no longer
+        matches, which a script can check in the form `(<path>,
+        §<number>, <title>)`.
       Trigger: the refinement's close, once round 2 has swept one
                home and shown what a sweep finds.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
@@ -310,7 +315,15 @@
         between them; or none is needed, since the walk finds the
         jump when the model changes. Noted, not solved, until a case
         forces it. One today: `auto-run.md` → the agent model's
-        §10.4.
+        §10.4. When a piece is placed (`approach-evaluation` stage
+        5), or a run's approach rewritten here (stage 6), its
+        references move to their new homes; nothing says so yet.
+      - a missing fact reference is found by nothing: the walk sees
+        only lines that carry one. At each commit, each new or
+        changed line is asked whether it relies on a fact written
+        elsewhere and, if so, whether it says where. Lived: the 11
+        manuals' channel sections reasoned from the agent model
+        untagged until 2026-10-24.
       Trigger: round 2's staying-in-step convention.
       See: devlog 2026-10-24, the text-division item;
       `TODO-CONVERSATION-MEMORY.md` §13.
