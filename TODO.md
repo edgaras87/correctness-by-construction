@@ -29,53 +29,51 @@
 
 ## Now (due while the open step runs)
 
-- [ ] Decide how this repo's text is divided: by kind, a model, a
-      convention or an approach, and by subject (2026-10-20, the
-      reviewer).
-      Context: the deliverer's role is spread over `ARCHITECTURE.md`
-      §2 and §3, `docs/models/tiers.md`, the exchange, eleven seats
-      sections and `docs/conventions/project-recording/` §9; staying
-      in step over `docs/conventions/project-recording/` §11 and
-      `docs/conventions/conventions/` §3.1 to §3.6. Only the agent has
-      all three kinds: `docs/models/agent.md`,
-      `docs/conventions/agent-arrangement/`, `.claude/`. Round 2's
-      Layout fixes will make homes.
+- [ ] Write the staying-in-step convention (2026-10-24, ADR-0063).
+      Context: keeping a copy in step with its home is spread over
+      project-recording §11 and `docs/conventions/conventions/`
+      §3.1, §3.2, §3.5 and §3.6; `one-home` and the foundation check
+      act on them. ADR-0063 decision 7 moves them to a convention of
+      their own, in round 2.
       Ideas:
-      - a convention per subject with rules and a moment; a model
-        for what a thing is; a section for a single rule.
-      - a model only where several manuals share an idea, or where
-        what it is and what we do got mixed.
-      - one manual per subject, a rule per case; a case is often a
-        seat.
-      - candidate models: one home; what a convention is; the
-        deliverer and the run, with seats; a shape, whose
-        `docs/conventions/shapes/` §1 and §2 say what one is.
-      - the layers themselves as a model: model → description (a
-        convention or the concept) → approach → output.
-      - a shape is not a layer after the approach: it is written
-        from outputs and governs the next at the gate; "governs" is
-        named in `9fd905b`, with no upkeep yet.
-      - `docs/models/tiers.md` §2.2 already holds two of the
-        chain's kinds, the mental layer and its executions; the
-        chain as a model of its own, tiers pointing at it.
-      - "layer" names three things already: the concept's LAYER-1
-        to 5, the refinement's file layers, tiers' two; the chain
-        takes another word.
-      - the link "reasons from", model to convention, and what keeps
-        it up; beside derives, points and governs (`9fd905b`).
-      - the agent's chain rechecked against the layers before it is
-        the template, so its errors are not copied.
-      - `docs/conventions/project-recording/` §9's flow joins the
-        deliverer → run relation, beside the exchange and the
-        retrospective; `docs/conventions/project-recording/` §1 may be a
-        model.
-      - folding the agent model into agent-arrangement is the same
-        question the other way round (its own item).
-      - weigh each split by maintenance, readability,
-        future-proofing and complexity.
+      - with it, ADR-0063's other parts for round 2: conventions §1
+        to the idea-to-output model; *The words*' "model" entry; the
+        approach hand-off chain's rename; a grep for `requires` in
+        the walk.
+      - shapes §5.2 and conventions §3.6 each settle a difference
+        their own way, both cases of `docs/models/idea-to-output.md`
+        §3, and may point at it once written.
+      Trigger: round 2 reads.
+      See: ADR-0063; devlog 2026-10-24, the text-division item.
+
+- [ ] Move the agent model's binding into agent-arrangement
+      (2026-10-24, the reviewer).
+      Context: `docs/models/agent.md` holds an idea any tool fits,
+      its §2 to §8 and §12, beside one tool's mechanisms, §10,
+      checked against Claude Code 2.1.310. agent-arrangement §3.2
+      retells §10.6, and on 2026-10-24 one fact changed in both
+      (`36eb0c1`). §9, and §8's second sentence, say where a manual
+      records its channel: a rule about manuals that points down,
+      held now by `docs/conventions/conventions/` §3.3. Asked first
+      on 2026-09-29 as folding the whole model into the manual.
+      Ideas:
+      - the binding as a section of agent-arrangement, which holds
+        this repo's Claude Code files already; §3.2 becomes the home,
+        not a retelling. About 120 lines; the manual near 580.
+      - a page of its own for the binding: a new kind of text.
+      - `auto-run.md`'s fact reference to the model's §10.4 would
+        then point at a convention, and the level jump closes. Five
+        lines point into §10 today.
+      - a full fold would put the vendor-neutral idea inside a
+        Claude Code page.
+      - not a concept: a concept is copied whole and built by; the
+        agent model is adapted by a repo's arrangement.
+      - the header's provenance comment, like the one cut from the
+        idea-to-output model.
+      - the tiers model has had no such pass.
       Trigger: before round 2 reads, beside its Layout kind.
-      See: devlog 2026-10-20, later; 2026-10-19, the redesign's
-      ideas; `TODO-CONVERSATION-MEMORY.md` §1.
+      See: devlog 2026-09-29, the agent model;
+      `TODO-CONVERSATION-MEMORY.md` §14.
 
 ## Next (each due at its trigger)
 
@@ -248,7 +246,8 @@
       - a manual is a concept; its rules and skills, the convention.
       - "description" stays the general word, as
         `docs/conventions/conventions/` §3.5 has it.
-      Trigger: the item on what a thing is, decided.
+      Trigger: a second concept repo, when what a concept is gets
+               decided (`docs/models/idea-to-output.md` §5).
       See: devlog 2026-10-19, the redesign's ideas.
 
 - [ ] Decide whether a sweep checks one home after work lands, and
@@ -335,7 +334,7 @@
         elsewhere and, if so, whether it says where. Lived: the 11
         manuals' channel sections reasoned from the agent model
         untagged until 2026-10-24.
-      Trigger: round 2's staying-in-step convention.
+      Trigger: with "Write the staying-in-step convention".
       See: devlog 2026-10-24, the text-division item;
       `TODO-CONVERSATION-MEMORY.md` §13.
 
@@ -343,11 +342,11 @@
       happens when one closes (2026-10-24, the reviewer).
       Context: TODO sorts by horizon and trigger; within a horizon,
       by when added. Some triggers name another item in free prose.
-      One names an item that does not exist ("the item on what a
-      thing is"), and two wait on the text-division item, with
-      nothing to find them when it closes. Order mattered twice in
-      the text-division item's own work. Now holds 1 item, Next 24,
-      Later 33.
+      One named an item that did not exist ("the item on what a
+      thing is"), and two waited on the text-division item, with
+      nothing to find them when it closed on 2026-10-24. Order
+      mattered twice in that item's own work. That day Now held 1
+      item, Next 24, Later 33.
       Ideas:
       - a trigger names each item it waits on by quoting its first
         words, a fact reference; several are allowed.
@@ -379,8 +378,9 @@
       - a session's end runs the sweep first, then writes its
         devlog entry. Weigh against the missing-context findings,
         which a sweep was to decide in a batch.
-      Trigger: the text-division item, which decides how such a
-               subject is placed.
+      Trigger: with "Decide whether a sweep checks one home after
+               work lands", its twin; ADR-0063's kinds now place
+               either.
       See: devlog 2026-10-22, later; `TODO-CONVERSATION-MEMORY.md`
       §12.
 
@@ -640,34 +640,54 @@
       Trigger: the next birth's Step 3 close.
       See: devlog 2026-09-12, later.
 
-- [ ] Move the agent model's binding into agent-arrangement
-      (2026-10-24, the reviewer).
-      Context: `docs/models/agent.md` holds an idea any tool fits,
-      its §2 to §8 and §12, beside one tool's mechanisms, §10,
-      checked against Claude Code 2.1.310. agent-arrangement §3.2
-      retells §10.6, and on 2026-10-24 one fact changed in both
-      (`36eb0c1`). §9, and §8's second sentence, say where a manual
-      records its channel: a rule about manuals that points down,
-      held now by `docs/conventions/conventions/` §3.3. Asked first
-      on 2026-09-29 as folding the whole model into the manual.
+- [ ] Decide which ideas here are models (2026-10-24, the
+      reviewer).
+      Context: three models exist: agent, tiers, idea-to-output. A
+      model comes from a convention whose idea is general enough to
+      be used elsewhere (`docs/models/idea-to-output.md` §4). The
+      text-division item held candidates, left open by ADR-0063.
       Ideas:
-      - the binding as a section of agent-arrangement, which holds
-        this repo's Claude Code files already; §3.2 becomes the home,
-        not a retelling. About 120 lines; the manual near 580.
-      - a page of its own for the binding: a new kind of text.
-      - `auto-run.md`'s fact reference to the model's §10.4 would
-        then point at a convention, and the level jump closes. Five
-        lines point into §10 today.
-      - a full fold would put the vendor-neutral idea inside a
-        Claude Code page.
-      - not a concept: a concept is copied whole and built by; the
-        agent model is adapted by a repo's arrangement.
-      - the header's provenance comment, like the one cut from the
-        idea-to-output model.
-      - the tiers model has had no such pass.
-      Trigger: before round 2 reads, beside its Layout kind.
-      See: devlog 2026-09-29, the agent model;
-      `TODO-CONVERSATION-MEMORY.md` §14.
+      - one home: facts, their home, fact references, and how a
+        disagreement between linked texts is settled.
+      - the deliverer and the run, with seats.
+      - a shape, whose `docs/conventions/shapes/` §1 and §2 say what
+        one is.
+      Trigger: "Write the staying-in-step convention", done: a model
+               is born from a convention.
+      See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
+
+- [ ] Decide whether a model ships to a run (2026-10-24, the
+      reviewer).
+      Context: no manual and no model ships
+      (`docs/conventions/exchange/` §3.2). A manual may now stand on
+      a model, as agent-arrangement does; a run gets the files made
+      from it, never the reasoning above them.
+      Ideas:
+      - the tiers model's method layer holds the models in the
+        concept repo "until three repos have lived".
+      Trigger: a run's reading finds a convention misread for want
+               of the model behind it.
+      See: ADR-0063.
+
+- [ ] Decide whether a model may link straight to an approach
+      (2026-10-23, the reviewer).
+      Context: an approach stands on a description, never on a model
+      directly (`docs/models/idea-to-output.md` §3; ADR-0063
+      decision 4). A fact reference may still jump the level:
+      `auto-run.md` cites the agent model's §10.4.
+      Trigger: an approach whose rules no convention could hold.
+      See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
+
+- [ ] Decide whether a model may be written for one convention
+      (2026-10-23, the reviewer).
+      Context: the text-division item had a model only where several
+      manuals share an idea. The reviewer asked to weaken that: a
+      model for one convention, "to see general idea behind that
+      convention". `docs/models/idea-to-output.md` §4 has a model
+      come from a convention whose idea is general enough.
+      Trigger: a convention whose idea another repo could use, with
+               no second manual sharing it.
+      See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
 
 ## Later / someday
 
@@ -810,26 +830,6 @@
       beside the agent model; `docs/models/` stays.
       Trigger: a second concept repo.
       See: devlog 2026-09-30, the tiers model.
-
-- [ ] Move the records table into a rule of its own, so every file
-      has one `foundation`? (2026-10-24, the reviewer)
-      Context: both entry files carry two `foundation` lines, the
-      only files that do: the records table's comment names
-      project-recording, the guard agent-arrangement. A skill
-      points at another convention with `requires`; the table
-      cannot point, since it must be present every session. A rule
-      with no `paths:` loads every session too.
-      Ideas:
-      - `.claude/rules/records.md`, standing on project-recording;
-        costs agent-arrangement §2.4, project-recording §13 and the
-        container, and a reader of `CLAUDE.md` no longer sees where
-        the records are.
-      - at our seat the table is most of the entry file, which would
-        keep three lines: the seats differ, or ours first gains what
-        it lacks.
-      Trigger: a third file that needs two `foundation` lines, or
-      the entry file's next redesign.
-      See: devlog 2026-10-24, the text-division item.
 
 - [ ] Name the discipline "lived is evidence, not master text"
       (2026-09-04, the user).

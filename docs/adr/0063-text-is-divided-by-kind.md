@@ -1,8 +1,9 @@
 # 0063. Text is divided by kind
 
 Date: 2026-10-24
-Status: Proposed (2026-10-24, under the commit plan for text
-division).
+Status: Accepted (2026-10-24, at the set's records commit; opened
+Proposed under the commit plan for text division, decision 10
+widened and decision 11 added since).
 
 ## Context
 
@@ -15,8 +16,8 @@ had a model, a manual and the files made from it: the agent model,
 agent-arrangement and `.claude/`.
 
 The talk ran on 2026-10-20, 10-21, 10-23 and 10-24
-(`TODO-CONVERSATION-MEMORY.md` §1). The reviewer asked to settle
-the chain of kinds first, "and this will answer itself". Seven
+(`30eb42e:TODO-CONVERSATION-MEMORY.md` §1). The reviewer asked to
+settle the chain of kinds first, "and this will answer itself". Seven
 questions were worked in order. The sixth, the agent's chain, waited
 for the agent model and agent-arrangement to be checked against
 Claude Code's documentation and community practice, done in
@@ -97,7 +98,18 @@ from, with no link back; and both entry files carried two
    way* tags the part of the agent model it reasons from.
 10. **Questions held with a trigger are TODO items:** whether a
     model ships; a link from a model to an approach; a model for a
-    single convention.
+    single convention; which ideas here are models; and the
+    staying-in-step convention, which only this ADR named.
+11. **Decided while the plan ran:**
+    - every link points up: a lower text relies on an upper one,
+      which at most lists what stands on it. A model points only at
+      its own sections, at other models, or at nothing;
+    - when two linked texts disagree, the disagreement is settled,
+      by changing the lower, the upper, or both;
+    - after a birth, the lower text is rewritten to stand on the
+      new one;
+    - a model is a description; the grep for its name in
+      `foundation` lines is its list of what stands on it.
 
 ## Consequences
 
