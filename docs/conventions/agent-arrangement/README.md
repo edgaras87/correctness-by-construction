@@ -424,7 +424,7 @@ it keep the numbers history cites.*
 Every rule here governs a file the container ships and rides in it
 as a comment: the entry file's comments carry points-never-restates,
 the guard and the size rule; the decisions log's carry its own.
-Acting on the file is the trigger.
+Acting on the file is the trigger (`docs/models/agent.md` §4.6).
 
 Not a skill, because the failure guarded against is a noticing
 failure: told "remember X", an agent writes X into the entry file

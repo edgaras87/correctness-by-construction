@@ -218,8 +218,8 @@ this is made usable as* — the list a change to the page walks,
 each item marked shipped or the deliverer's, with the moment it
 opens at, placed as the answer to the need; the seats (§3.4);
 lessons as dated italics (§3.7); *why it arrives this way* — the
-channel, a skill, a rule, a stub or a file, and why that one,
-tagged to the part of the agent model it reasons from
+channel, a skill, a rule, a stub or a file, and why that one;
+where it reasons from the agent model, tagged to that part
 (`docs/models/agent.md`); and *what this does not cover*, the
 boundary against its neighbours by path.
 

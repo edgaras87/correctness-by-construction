@@ -88,10 +88,11 @@ This is the method now, not a specialisation of one.*
 
 ## Why it arrives this way
 
-A skill, opened when a structure is hard to see and more than one
-way of showing it could work. The agent recognises the moment by
-the question it is facing; no path is touched that a rule could
-load on, and nothing in a record would bring the method up then.
+A skill, opened when a structure is hard to see and more than one way
+of showing it could work (`docs/models/agent.md` §4.2). The agent
+recognises the moment by the question it is facing; no path is touched
+that a rule could load on, and nothing in a record would bring the
+method up then.
 
 ## What this does not cover
 

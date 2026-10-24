@@ -96,11 +96,11 @@ append. How an overlay reaches a run is open.*
 
 ## Why it arrives this way
 
-This convention never reaches an agent as text. Its product is
-three files that shape the repo by existing: nobody complies with
-`.gitignore`, git simply hides what it names. A rule here that
-cannot become a line in one of the three files has no delivery at
-all.
+This convention never reaches an agent as text. Its product is three
+files that shape the repo by existing (`docs/models/agent.md` §4.6):
+nobody complies with `.gitignore`, git simply hides what it names. A
+rule here that cannot become a line in one of the three files has no
+delivery at all.
 
 *Until 2026-09-28 this page asked for a changelog entry with every
 base or overlay change, and none was ever written: the CHANGELOG is

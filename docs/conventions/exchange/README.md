@@ -526,7 +526,7 @@ the pin does not.
 
 The run's half is a rule rather than a skill because its moment is
 a copy, or a file in `temp/`, being read, and it loads then instead
-of waiting to be opened by name:
+of waiting to be opened by name (`docs/models/agent.md` §4.3):
 the failure the receiver's protocol had since the day it shipped.
 The deliverer's two skills open on the reviewer's word, "read" or
 "deliver", which is a moment the agent is told rather than one it

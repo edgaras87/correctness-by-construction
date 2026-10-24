@@ -154,8 +154,9 @@ from the note.
 ## Why it arrives this way
 
 Two skills, because each step is bound to a moment the agent would
-otherwise have to notice: the run finishing its building, and the
-note closing. A plan step opens each, and names the skill.
+otherwise have to notice: the run finishing its building, and the note
+closing. A plan step opens each, and names the skill: where a pointer
+is placed decides whether it fires (`docs/models/agent.md` §12.2).
 
 A section in the plan did not work: its moment was the project's
 end, which a run that stops early never reaches, and a section can

@@ -111,7 +111,7 @@ kind: find lines that are no longer true". Rule 8 came from it.*
 A rule with no `paths:`, loaded in every session
 (`docs/conventions/agent-arrangement/` §3.2). Its moment is every
 answer and every record written, and nothing else fires at all of
-them:
+them (`docs/models/agent.md` §8):
 
 - **A `paths:` list** loads when a file is touched, after a new
   one's first draft is written, and chat has no path. Run 3's first

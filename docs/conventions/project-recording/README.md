@@ -914,15 +914,15 @@ PLAN.md is where the entry file says so.
 ## Why it arrives this way
 
 A rule for filling in `PLAN.md` sits inside `PLAN.md`, so acting on
-the record is what puts the rule in front of you; there is no
-trigger to fire and nothing to remember. Timing is the
-one exception: a rule saying when to open a record cannot live
-inside it, so the entry file's records table carries a moment per
-row (§13). A skill would not do: it fires when the agent
-recognises the moment, and failing to recognise the moment is the
-failure being fixed. Restating a record's rules in the entry file
-"so they are always available" is the failure
-`docs/conventions/agent-arrangement/` measured.
+the record is what puts the rule in front of you; there is no trigger
+to fire and nothing to remember (`docs/models/agent.md` §4.6). Timing
+is the one exception: a rule saying when to open a record cannot live
+inside it, so the entry file's records table carries a moment per row
+(§13). A skill would not do: it fires when the agent recognises the
+moment, and failing to recognise the moment is the failure being
+fixed. Restating a record's rules in the entry file "so they are
+always available" is the failure `docs/conventions/agent-arrangement/`
+measured.
 
 One rule is loaded, in every session: §11's rule 1, as
 `one-home.md` with no `paths:` (`docs/conventions/agent-arrangement/`

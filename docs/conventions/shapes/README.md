@@ -297,10 +297,10 @@ between them records when the shape changed.
 ## Why it arrives this way
 
 The first convention with no skill: its artifact is a rule, because
-the moment it serves is a shape being touched, and a rule loads on
-the path. The shapes themselves reach no agent while work is
-written, by design — nothing loads `.claude/shapes/`, and that is
-their force (§3).
+the moment it serves is a shape being touched, and a rule loads on the
+path (`docs/models/agent.md` §4.3). The shapes themselves reach no
+agent while work is written, by design — nothing loads
+`.claude/shapes/`, and that is their force (§3).
 
 ## What this does not cover
 
