@@ -19,17 +19,21 @@ or moves a section. Which side is right, never how either reads.
 
 1. **Look at the staged paths first.** Only these are checked:
    - files with a `foundation` line: `.claude/skills/`,
-     `.claude/rules/`, and `.claude/` under `delivery/`;
+     `.claude/rules/`, `.claude/` under `delivery/`, and a manual
+     that names its model;
    - records whose header comment carries a `foundation:` line,
      in either seat (`docs/conventions/conventions/` §3.5, step 2);
-   - descriptions: `docs/conventions/*/README.md`, `concept/`,
-     `ARCHITECTURE.md`.
+   - descriptions: `docs/models/`, `docs/conventions/*/README.md`,
+     `concept/`, `ARCHITECTURE.md`.
 
    If none is staged, the check is done.
 2. **A file with a `foundation` line changed:** open what the line
    names beside the change. For a convention, its manual,
-   `docs/conventions/<name>/README.md`. For `concept v1`, the
-   chapters under `concept/`. Read the parts the change touches.
+   `docs/conventions/<name>/README.md`. For a model,
+   `docs/models/<name>.md`. For `concept v1`, the chapters under
+   `concept/`. Read the parts the change touches. A file names one
+   `foundation`; a second is a tag to a part
+   (`docs/conventions/conventions/` §3.5, step 2).
 3. **A description changed:** walk what derives from it, as
    `docs/conventions/conventions/` §3.5 step 3 says.
 4. **List every disagreement before deciding any.** For each, show

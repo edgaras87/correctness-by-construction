@@ -18,7 +18,9 @@ is written. Its form, never its content.
 
 Each a `##` heading, except the opening statement, which is a bold
 sentence under the title. The body's sections are numbered; the
-others are not.
+others are not. A manual whose idea a model states opens with
+frontmatter naming it, `foundation: the agent model`
+(`docs/conventions/conventions/` §2).
 
 1. **The opening statement.** One bold sentence: the manual's
    subject, so a reader can tell from one line whether this is the
@@ -60,6 +62,9 @@ others are not.
 7. **Why it arrives this way.** The channel — a skill, a rule, a
    stub or a file — and why that one: the moment it serves, and
    what would or would not put it in front of its reader then.
+   Where the reasoning rests on the agent model, a tag to the part
+   it rests on, `docs/models/agent.md` §8
+   (`docs/conventions/conventions/` §3.3).
 8. **What this does not cover.** A list: each neighbouring subject
    in bold, then the path it belongs to.
 9. **Where to look**, optional: pointers only, as root paths.
