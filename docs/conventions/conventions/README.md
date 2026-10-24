@@ -429,7 +429,7 @@ what a file stands on has to travel with the file. The check is a
 rule loaded in every session, because its moment is every commit
 that touches either side, and a rule with `paths:` loads only when a
 file is touched with the agent's tools: an edit made by script never
-loads it (`docs/models/agent.md` §10.6).
+loads it (`docs/conventions/agent-arrangement/` §5.6).
 
 ## What this does not cover
 

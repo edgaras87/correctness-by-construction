@@ -114,7 +114,8 @@ the repo that cannot apply it.*
 The theory this leans on is `docs/models/agent.md`: the ambient
 channel (`docs/models/agent.md` §4.1), the choosing table
 (`docs/models/agent.md` §8), the claims (`docs/models/agent.md`
-§12). The model describes; this page explains against it.
+§12). The model describes; this page explains against it, and its
+§5 is the binding: what Claude Code gives each channel.
 
 A closed list of paths (ADR-0038, 1c):
 
@@ -167,7 +168,7 @@ every session needs, never a convention's rules.
 ### 2.3 Where
 
 Repo root, or under `.claude/` — Claude Code reads `CLAUDE.md` at
-either address as one file (`docs/models/agent.md` §10.1). The
+either address as one file (§5.1). The
 container ships it under `.claude/`, so that every agent-side path
 sits in one directory; a project that wants it at the root moves it,
 which one run showed to be a pure rename — content untouched, the tool
@@ -243,7 +244,7 @@ paid on every task, including the tasks it is irrelevant to, and each
 line added lowers compliance with every other (model claim A2,
 assumed). So its size is a running concern, not a one-time one. The
 cost is what the harness delivers, not the file: HTML comments are
-dropped on load (`docs/models/agent.md` §10.3), so the guard and the
+dropped on load (§5.3), so the guard and the
 records comment cost nothing per task and are read when the file is
 opened to edit it — the moment they govern. If what remains is longer
 than a screen, something in it belongs in a convention, a record or a
@@ -275,15 +276,12 @@ evaluation's: work no skill covers starts from an approach on trial
 ### 3.2 `rules/`
 
 Instruction files read like the entry file, with one extra: a `paths:`
-list at the top makes the file load only when the agent touches a
-file under one of those paths: reads, writes or edits it, or reads it
-from the shell. A new file's first draft is written before the rule
-arrives, and a script's edit loads nothing. The tool decides, not the
-agent (`docs/models/agent.md` §10.6). The home for a rule true only
-in one part of the tree, which a skill would carry only if the agent
-noticed the moment. Without the
-list, the file is the entry file by another name and fails §2.4's
-tests the same way, with one exception.
+list at the top, which loads the file when the agent touches a file
+under one of those paths. When it loads, and its limits, are §5.6. The
+home for a rule true only in one part of the tree, which a skill would
+carry only if the agent noticed the moment. Without the list, the file
+is the entry file by another name and fails §2.4's tests the same way,
+with one exception.
 
 A convention whose moment is every task ships its rule with no
 `paths:`, so it loads in every session. Its moment is every answer
@@ -422,6 +420,128 @@ it keep the numbers history cites.*
   (`docs/models/agent.md` §8): a convention
   is missing, or its channel is not firing. `CLAUDE.local.md` makes
   the saying persistent and the diagnosis invisible.
+
+## 5. The binding: Claude Code
+
+The agent model names the channels and the gate
+(`docs/models/agent.md` §4, §7); a binding names the mechanisms one
+tool gives each (`docs/models/agent.md` §10). This is Claude Code's,
+the tool both seats use. It changes with the tool's releases, so
+each fact says which release it was checked against, and a change
+is made here alone. A second tool's binding would be written beside
+this one, and writing it is the test for tool-shaped assumptions
+hiding in the model. None has been needed.
+
+### 5.1 The mapping
+
+Sketch, Claude Code — checked against 2.1.310 on 2026-10-24, by its
+documentation, by what could be observed here, and by bug reports
+(first checked against 2.1.284 on 2026-09-29):
+
+| Layer 1 | Claude Code mechanism |
+|---|---|
+| ambient | memory files — `CLAUDE.md` (root or under `.claude/`), `~/.claude/CLAUDE.md`, `@` imports; `AGENTS.md`, read when no `CLAUDE.md` is found; `.claude/rules/*.md` without a `paths:` list; `CLAUDE.local.md`, the operator's; the first 200 lines of auto memory's `MEMORY.md`; a skill's `name` and `description` |
+| pulled | `Read`, `Grep`, `Glob`; a skill's body, once the agent invokes it |
+| pushed | context-injecting hooks, slash commands, subagents; `.claude/rules/*.md` with a `paths:` list, and a `CLAUDE.md` in a subdirectory — loaded when the agent reads, writes or edits a matching file, or reads one from the shell with a command such as `cat`; not on a script's edit (§5.6) |
+| told | the prompt |
+| observed | tool results |
+| installed | files in the repo; the container that puts them there at birth |
+| gate | blocking hooks (`PreToolUse`), CI; permission rules in `settings.json` — `ask` stops at a prompt, `deny` refuses |
+
+### 5.2 Hooks
+
+Hooks appear twice: some inject context (pushed), others block (gate).
+One mechanism, two roles — a binding has to say which.
+
+### 5.3 Memory files and their comments
+
+Memory files arrive without their HTML comments. The loader drops every
+block-level `<!-- … -->` comment before the text enters context — one
+inside a code block is kept — so a comment in an entry file is never
+ambient: it reaches the agent only when the file is opened with a tool,
+which for the entry file is edit time. Observed on 2.1.260 through
+2.1.263, documented since, and observed again on 2.1.284: this repo's
+`CLAUDE.md` holds two comment blocks, and the text a session loads
+holds neither. The same loader honours `claudeMdExcludes` in
+`settings.json`, globs against the absolute path, which is how a
+template entry file kept inside a repo stays out of its sessions.
+
+### 5.4 Permission rules
+
+A permission rule is a gate only in a mode that honours it. `deny`
+refuses in every mode. `ask` still prompts in auto mode and in the
+mode that bypasses permissions; the mode that never asks turns it
+into a refusal. What no rule matches, auto mode has a classifier
+decide in the background. The gate is the tool's, not the repo's.
+
+A rule reaches only what the tool can name. A `Read` deny covers the
+file tools and the shell commands the tool knows as file commands,
+such as `cat`, `head` and `sed`. It does not cover `grep -r` across a
+tree, or a script that opens files itself; the documentation sends
+that to the sandbox.
+
+### 5.5 Skills
+
+Skills appear twice as well, and neither time under pushed. Claude
+Code loads a skill's `name` and `description` at session start and its
+body only when the agent invokes it: an ambient trigger over a pulled
+body. The agent still decides, and pushed promises it does not
+(`docs/models/agent.md` §4). A skill is still the closest this tool
+gets to pushed for a rule about an action; a hook closes the
+remainder.
+
+The tool ignores a frontmatter field it does not know, without an
+error, in a skill as in a rule. Our `foundation` and `requires` lines
+are for a reader of the file, never for the tool. A skill may also
+carry a `paths:` list; what it does to a skill this repo has not
+checked.
+
+### 5.6 Rules files
+
+`.claude/rules/` holds instruction files like `CLAUDE.md`, with one
+extra: a `paths:` list at the top. Without it, the file is read every
+session — ambient, no different from `CLAUDE.md`. With it, the file
+loads when the agent reads, writes or edits a file under one of
+those paths, or reads one from the shell with a command such as
+`cat` or `head`. The tool decides that, not the agent. That is pushed
+with no hook to write. A `CLAUDE.md` in a subdirectory loads the
+same way.
+
+Three limits:
+
+- **It arrives after the first draft.** A new file's content is
+  written in the call that loads the rule, so a record written from
+  scratch gets the rule no earlier than a comment in a template would
+  have given it.
+- **A script's edit loads nothing,** and nor does listing the
+  directory.
+- **Its condition is a place, never an action** — "when work is under
+  `generated/`", not "when committing" — so it does not replace a
+  skill. A skill is the agent's judgment about an action; a rules
+  file is the tool's check on a touched file.
+
+What is documented and what is seen have differed. On 2.1.284 this
+repo saw the Read tool alone load a rule; on 2.1.310 a `sed` read
+loaded one, as the documentation now says. Bug reports, checked
+2026-10-24, show `paths:` failing silently in some formats and seats
+(Claude Code issues #17204, #33581, #87217). A rule that must arrive
+does not rest on a path alone (`docs/models/agent.md` §7).
+
+### 5.7 What a session keeps, and what a helper gets
+
+- **Compaction** restores the root `CLAUDE.md`, the rules without
+  `paths:` and auto memory from disk. A path rule and a subdirectory's
+  `CLAUDE.md` come back only when a matching file is touched again.
+  An invoked skill's body comes back cut to 5,000 tokens.
+- **A subagent** loads the `CLAUDE.md` files, the rules and
+  `CLAUDE.local.md`, but not auto memory, and no skill body unless
+  its definition names the skill. The built-in Explore and Plan
+  agents skip `CLAUDE.md`. A fork inherits the whole conversation.
+
+So what a delegated task must know goes in its prompt, which is told
+(`docs/models/agent.md` §4.4). An Explore or Plan agent gets none of
+the rules loaded every session, only the path rules of the files it
+touches.
 
 ## Why it arrives this way
 

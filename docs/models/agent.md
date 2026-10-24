@@ -18,8 +18,8 @@ the wrong one (`docs/models/idea-to-output.md` §3). Its job is to
 let conventions be written against something stated, instead of
 each author reasoning from a private picture of "the agent".
 
-Layer 1 — vendor-neutral. One tool's mechanisms are a **binding**;
-§10 sketches the one in use.
+Layer 1 — vendor-neutral. One tool's mechanisms are a **binding**
+(§10).
 
 ---
 
@@ -85,8 +85,7 @@ Entry files loaded at session start, before the first task.
   without bound if used as a rulebook; each addition dilutes the rest.
 - **Fidelity:** space is scarce here, so rules arrive compressed — and
   compression loses parts (§12 M1). The binding can lose parts too:
-  what the tool loads is not always the file on disk (§10.3 says what
-  one tool drops).
+  what the tool loads is not always the file on disk (§10).
 - **Ownership:** the project's text, or one operator's. An operator's
   standing file fires and costs like the entry file but belongs to one
   person and one checkout, stays out of the repo's history, and its
@@ -244,119 +243,18 @@ would be a second home for one fact — the one nothing edits.
 
 ## 10. Bindings (Layer 2)
 
-Layer 1 names capabilities; a binding names the mechanisms in one tool.
-A second tool's binding would be written beside this one, and writing
-it is the test for tool-shaped assumptions hiding in Layer 1. None has
-been needed.
+Layer 1 names capabilities; a binding names the mechanisms one tool
+gives each of them: which file is ambient, what pushes, what gates.
+It changes with the tool's releases, so the repo that uses the tool
+writes it, beside its arrangement, and this model changes only when
+an idea does. Two things every binding has to say, from what one
+tool has shown:
 
-### 10.1 The mapping
-
-Sketch, Claude Code — checked against 2.1.310 on 2026-10-24, by its
-documentation, by what could be observed here, and by bug reports
-(first checked against 2.1.284 on 2026-09-29):
-
-| Layer 1 | Claude Code mechanism |
-|---|---|
-| ambient | memory files — `CLAUDE.md` (root or under `.claude/`), `~/.claude/CLAUDE.md`, `@` imports; `AGENTS.md`, read when no `CLAUDE.md` is found; `.claude/rules/*.md` without a `paths:` list; `CLAUDE.local.md`, the operator's; the first 200 lines of auto memory's `MEMORY.md`; a skill's `name` and `description` |
-| pulled | `Read`, `Grep`, `Glob`; a skill's body, once the agent invokes it |
-| pushed | context-injecting hooks, slash commands, subagents; `.claude/rules/*.md` with a `paths:` list, and a `CLAUDE.md` in a subdirectory — loaded when the agent reads, writes or edits a matching file, or reads one from the shell with a command such as `cat`; not on a script's edit (§10.6) |
-| told | the prompt |
-| observed | tool results |
-| installed | files in the repo; the container that puts them there at birth |
-| gate | blocking hooks (`PreToolUse`), CI; permission rules in `settings.json` — `ask` stops at a prompt, `deny` refuses |
-
-### 10.2 Hooks
-
-Hooks appear twice: some inject context (pushed), others block (gate).
-One mechanism, two roles — a binding has to say which.
-
-### 10.3 Memory files and their comments
-
-Memory files arrive without their HTML comments. The loader drops every
-block-level `<!-- … -->` comment before the text enters context — one
-inside a code block is kept — so a comment in an entry file is never
-ambient: it reaches the agent only when the file is opened with a tool,
-which for the entry file is edit time. Observed on 2.1.260 through
-2.1.263, documented since, and observed again on 2.1.284: this repo's
-`CLAUDE.md` holds two comment blocks, and the text a session loads
-holds neither. The same loader honours `claudeMdExcludes` in
-`settings.json`, globs against the absolute path, which is how a
-template entry file kept inside a repo stays out of its sessions.
-
-### 10.4 Permission rules
-
-A permission rule is a gate only in a mode that honours it. `deny`
-refuses in every mode. `ask` still prompts in auto mode and in the
-mode that bypasses permissions; the mode that never asks turns it
-into a refusal. What no rule matches, auto mode has a classifier
-decide in the background. The gate is the tool's, not the repo's.
-
-A rule reaches only what the tool can name. A `Read` deny covers the
-file tools and the shell commands the tool knows as file commands,
-such as `cat`, `head` and `sed`. It does not cover `grep -r` across a
-tree, or a script that opens files itself; the documentation sends
-that to the sandbox.
-
-### 10.5 Skills
-
-Skills appear twice as well, and neither time under pushed. Claude
-Code loads a skill's `name` and `description` at session start and
-its body only when the agent invokes it: an ambient trigger over a
-pulled body. The agent still decides, and pushed promises it does
-not (§4). A skill is still the closest this tool gets to pushed for a
-rule about an action; a hook closes the remainder.
-
-The tool ignores a frontmatter field it does not know, without an
-error, in a skill as in a rule. Our `foundation` and `requires` lines
-are for a reader of the file, never for the tool. A skill may also
-carry a `paths:` list; what it does to a skill this repo has not
-checked.
-
-### 10.6 Rules files
-
-`.claude/rules/` holds instruction files like `CLAUDE.md`, with one
-extra: a `paths:` list at the top. Without it, the file is read every
-session — ambient, no different from `CLAUDE.md`. With it, the file
-loads when the agent reads, writes or edits a file under one of
-those paths, or reads one from the shell with a command such as
-`cat` or `head`. The tool decides that, not the agent. That is pushed
-with no hook to write. A `CLAUDE.md` in a subdirectory loads the
-same way.
-
-Three limits:
-
-- **It arrives after the first draft.** A new file's content is
-  written in the call that loads the rule, so a record written from
-  scratch gets the rule no earlier than a comment in a template would
-  have given it.
-- **A script's edit loads nothing,** and nor does listing the
-  directory.
-- **Its condition is a place, never an action** — "when work is under
-  `generated/`", not "when committing" — so it does not replace a
-  skill. A skill is the agent's judgment about an action; a rules
-  file is the tool's check on a touched file.
-
-What is documented and what is seen have differed. On 2.1.284 this
-repo saw the Read tool alone load a rule; on 2.1.310 a `sed` read
-loaded one, as the documentation now says. Bug reports, checked
-2026-10-24, show `paths:` failing silently in some formats and seats
-(Claude Code issues #17204, #33581, #87217). A rule that must arrive
-does not rest on a path alone (§7).
-
-### 10.7 What a session keeps, and what a helper gets
-
-- **Compaction** restores the root `CLAUDE.md`, the rules without
-  `paths:` and auto memory from disk. A path rule and a subdirectory's
-  `CLAUDE.md` come back only when a matching file is touched again.
-  An invoked skill's body comes back cut to 5,000 tokens.
-- **A subagent** loads the `CLAUDE.md` files, the rules and
-  `CLAUDE.local.md`, but not auto memory, and no skill body unless
-  its definition names the skill. The built-in Explore and Plan
-  agents skip `CLAUDE.md`. A fork inherits the whole conversation.
-
-So what a delegated task must know goes in its prompt, which is told
-(§4.4). An Explore or Plan agent gets none of the rules loaded every
-session, only the path rules of the files it touches.
+- **One mechanism may serve two channels.** A hook that injects
+  context is pushed; one that blocks is a gate.
+- **What the tool loads is not always the file on disk.** A tool may
+  drop part of a file, a comment for one, before it reaches the
+  window.
 
 ## 11. Out of scope
 
@@ -431,8 +329,9 @@ list at session start.
 - `measured` elsewhere, against it, though not on P2 itself — the
   same Vercel evals passed 100% with an index of the docs in the
   entry file, 79% with a skill the prompt named, and 53% with a
-  skill alone. A skill's trigger is ambient too (§10.5), so this
-  compares two pointers read at session start. One framework, the
+  skill alone. A skill's trigger is ambient too, its name and
+  description loaded at session start, so this compares two pointers
+  read then. One framework, the
   vendor's own suite. Khatri (arXiv 2607.27250, 2026) found no
   difference between a guide always loaded and topic files read by
   choice, in a study too small to see less than 30 points.
