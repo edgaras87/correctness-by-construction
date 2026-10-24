@@ -285,6 +285,30 @@
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, the `claude-md-management` part.
 
+- [ ] Define the fact reference, and stop calling it a tag
+      (2026-10-24, the reviewer).
+      Context: a line that relies on a fact written elsewhere carries
+      the address of its home, today called a tag (`one-home` rule 2,
+      project-recording §11), defined nowhere in *The words*. "Tag"
+      also names git tags, image tags and the repo prefix "CBC
+      ADR-0053" (ADR-0020). Like a Java object reference: one fact,
+      many lines pointing at it. Unlike one, a retelling holds a
+      copy, so the walk re-reads it when the home changes.
+      Ideas:
+      - *The words*: "fact reference", with "home" defined as the
+        fact's single source of truth.
+      - written `(<path>, §<number>, <title>)`, no prefix word, no
+        ids; a long title may be cut to its first words. The 137
+        numbered titles average 13 characters, and 13 are over 30.
+      - when a section is touched, every fact reference to its path,
+        number or title is grepped and updated in the same commit,
+        widening `docs/conventions/conventions/` §3.2's grep for a
+        moved section.
+      - the repo prefix keeps its own name.
+      Trigger: round 2's staying-in-step convention.
+      See: devlog 2026-10-24, the text-division item;
+      `TODO-CONVERSATION-MEMORY.md` §13.
+
 - [ ] Decide whether a session's end has a home of its own, and
       what it holds (2026-10-22, the reviewer).
       Context: a session's end is spread out. project-recording

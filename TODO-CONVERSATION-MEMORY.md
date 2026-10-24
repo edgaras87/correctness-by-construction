@@ -1146,3 +1146,85 @@ what it holds".
 - The missing-context question is already in the item, as a habit
   it must place; an idea for it would be a second home.
 
+
+## 13. What the reference to a fact's home is called
+
+Item: "Define the fact reference, and stop calling it a tag".
+
+### 2026-10-24
+
+Met while the text-division item's close was planned: one
+`foundation` per file, the root, and a tag on every line that uses
+a part of any document, the root included.
+
+#### What the reviewer asked
+
+- Channels, pointers and tags: how is each defined, and does what
+  was just decided need them fixed? Should "tag" go back to
+  "pointer"? What do Claude Code and the community call it?
+- Ids beside each section, or the section's number and title? Ids
+  would demand an id near each section. When a section is touched,
+  every reference is checked and updated.
+- The form "(<path>, §<number>, <title>)": is the title worth the
+  length, for knowing what a section is without opening it?
+- "Citation" may be the text quoted, not the label. In Java one
+  object has many references pointing at it: is this the same?
+- Is the label just how a reference looks? Keep "tag" as its
+  synonym, or write `reference(...)` or `refer(...)`?
+- "Source of truth" instead, used in descriptions and talk, since
+  "reference" will mean other things later and needs saying whose
+  it is? Should one-home itself become "source of truth"?
+- Then "fact reference"?
+
+#### What exists today
+
+- **channel:** defined, `docs/models/agent.md` §4: how text reaches
+  the agent.
+- **pointer:** only used, in the agent model's claims P1 and P2:
+  text that sends the agent to a file it may not open.
+- **tag:** only used, `one-home` rule 2 and project-recording §11:
+  a path and section on a line, for the walk's grep. Also the repo
+  prefix "CBC ADR-0053" (ADR-0020); git tags and image tags beside.
+- **Near words:** home, master, canonical, follower (`one-home`
+  rule 5), retelling.
+- **Measured:** 137 numbered section titles in the manuals and
+  models, a mean of 13 characters, the longest 56, 13 over 30;
+  about 115 references in the form `path §n`.
+- **Outside:** traceability calls the link a trace link, and tools
+  mark it suspect when its source changes; Anthropic's skill docs
+  call a pointer to files loaded when needed progressive
+  disclosure; docs-as-code says single source and cross-reference.
+  None calls it a tag.
+
+#### Options weighed, and what the reviewer took
+
+| Name | For | Against | Taken |
+|---|---|---|---|
+| pointer | already in the model | names whether an agent follows it, P1 and P2 | no |
+| tag | in use | git, image and repo-prefix tags; defined nowhere | no |
+| citation | plain; "the tag a citation carries" half in use | names the quoting, not the label | no |
+| reference | the Java word; plain | too general once used for other things | no |
+| home reference | says where it points | names the address, not what is relied on | no |
+| source of truth | the industry's word | names the home, not the link | as the definition of home |
+| fact reference | named after its target, as Java's object reference | what is written is the home's address | yes |
+
+- **One-home stays one-home.** "Source of truth" names a place, not
+  the rule; "truth" is busy here ("project truth", canonical); a
+  fourth word beside home, master and canonical; a rename in both
+  seats and a note to runs.
+- **No ids:** the number says where, the title what, and either
+  finds the section if the other changes; nothing new beside each
+  section. The title is taken, cut to its first words when long.
+- **No prefix word:** the walk finds a reference by its path, and
+  `reference(...)` reads as code in prose.
+- **The Java parallel, and where it breaks:** one fact, many lines
+  pointing at it; but a retelling holds a copy, so the walk re-reads
+  it when the home changes.
+
+The reviewer's draft for *The words*, kept as said:
+
+> **fact reference** — what a line carries when it relies on a
+> fact written elsewhere: the address of the fact's home, written
+> `(<path>, §<number>, <title>)`. The home is the one place the
+> fact is written, its single source of truth (`one-home`). When
+> the home changes, the walk greps for every fact reference to it.
