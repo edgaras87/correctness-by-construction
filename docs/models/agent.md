@@ -1,6 +1,3 @@
-<!-- This repo's, edited as ours (ADR-0026, ADR-0043); where it
-     came from is ADR-0038's record. Its evidence names its source. -->
-
 # Agent Model
 
 Deliberately incomplete — a structure to test, not a finished
