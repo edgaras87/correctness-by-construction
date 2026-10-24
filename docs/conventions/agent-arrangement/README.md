@@ -139,9 +139,13 @@ and this one holds the container.
 ### 2.1 What
 
 One file, loaded into an agent's context at the start of every
-session before it is given any task. It is a map — what the project
-is, where the records are — and the little that has to be present on
-every task because no moment would deliver it. Which conventions
+session before it is given any task. It holds what every session
+needs: what the project is, where the records are, and the little
+that has to be present on every task because no moment would
+deliver it. It is not a map of the code. An overview of a repository
+did not help agents find the right file (Gloaguen et al., arXiv
+2602.11988, 2026, measured), and the tool's documentation leaves
+file-by-file descriptions out. Which conventions
 apply is not in it: in a run, the birth entry in
 `.claude/decisions.md` is that list (§3.4); at the deliverer, it is
 the `foundation` each of its skills and rules names. Each
@@ -153,8 +157,8 @@ The records teach their own use, and so does every stub in the
 arrangement — each carries its rules in embedded comments, met at
 the moment the file is opened. That only works if the agent knows
 the files exist. The entry file is the one piece of text present
-before anything is looked up, and it earns that by being a map, not
-a rulebook.
+before anything is looked up. It earns that by holding only what
+every session needs, never a convention's rules.
 
 ### 2.3 Where
 
@@ -186,7 +190,8 @@ three the stub's guard comment states:
   there, at the moment it is about, instead of on every task it is
   not.
 - **Nothing else would deliver it.** What stays is what no channel fires
-  for: a map, a stance, a fact whose failure is not noticing it. A
+  for: what the project is, where its records are, a stance, a fact
+  whose failure is not noticing it. A
   rule that acts somewhere lives there; the entry file says where.
 
 What passes, in practice, is five kinds of content: what the project is
@@ -238,7 +243,9 @@ dropped on load (`docs/models/agent.md` §10.3), so the guard and the
 records comment cost nothing per task and are read when the file is
 opened to edit it — the moment they govern. If what remains is longer
 than a screen, something in it belongs in a convention, a record or a
-skill; shrinking it is maintenance, not tidying. Noticing that has no
+skill; shrinking it is maintenance, not tidying. The tool's
+documentation sets a looser bound, under 200 lines; a screen is
+ours. Noticing that has no
 moment of its own, so a run re-reads the file at its retrospective:
 the skill's close asks it, and every line passes the three tests again
 or leaves — the same move a run's decisions log makes for its entries.
@@ -348,7 +355,9 @@ record — a record that quotes it has let one operator's preference
 into the project's truth. The container ships none, and a run's
 stays ignored. The deliverer tracks its own: it has one operator,
 and a setting kept out of git is one no reader of the repo can see
-(ADR-0062).
+(ADR-0062). Outside practice ignores the file, as the tool's
+documentation advises. Ours differs only because this repo has one
+operator.
 
 It holds the operator's settings, never rules. A setting is a
 choice one operator makes where the project leaves it open: how
