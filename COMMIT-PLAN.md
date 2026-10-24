@@ -87,7 +87,12 @@ and so does the records-table item (`df1540b`), answered by
 commits 6 and 7; three held questions become items (ship the
 model?, a model to approach link, a model for one convention); the
 fold item's trigger line is rewritten true for today, not stacked
-with a date. `TODO-CONVERSATION-MEMORY.md` §1 goes, the file stays.
+with a date. TODO is grepped for items waiting on the text-division
+item: "Choose whether a manual is called a concept", whose trigger
+names an item that does not exist and meant this one, and "Decide
+whether a session's end has a home of its own". Each one's trigger
+is rewritten true for today. `TODO-CONVERSATION-MEMORY.md` §1 goes,
+the file stays.
 
 **11. `docs(agent): close commit plan for text division`**
 Deletes this file; the body says what diverged.
