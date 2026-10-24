@@ -11,8 +11,9 @@ with delivery flowing down and learning flowing up. Its job is to
 answer, for any lesson or artifact, *which repo does this belong
 to* — instead of each session re-deriving the picture.
 
-This is a **model**: you could disagree with all of it and violate
-nothing. It binds nothing.
+This is a **model**: the top description of its chain. It binds
+what stands on it, and when the two disagree, either side may be
+the wrong one (`docs/models/idea-to-output.md` §3).
 
 ---
 

@@ -1,3 +1,7 @@
+---
+foundation: the agent model
+---
+
 # Agent arrangement
 
 **The agent side of a project: the files that make an agent work
