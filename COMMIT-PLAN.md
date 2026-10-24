@@ -96,17 +96,29 @@ stand on a model, and the models that now bind it.
 commit: a retelling removed, not a decision.
 
 **10. `docs: the text-division item closes`**
-The final records commit. ADR-0063 Accepted. TODO: the item goes,
-and so does the records-table item (`df1540b`), answered by
-commits 6 and 7; three held questions become items (ship the
-model?, a model to approach link, a model for one convention); the
-fold item's trigger line is rewritten true for today, not stacked
-with a date. TODO is grepped for items waiting on the text-division
-item: "Choose whether a manual is called a concept", whose trigger
-names an item that does not exist and meant this one, and "Decide
-whether a session's end has a home of its own". Each one's trigger
-is rewritten true for today. `TODO-CONVERSATION-MEMORY.md` §1 goes,
-the file stays.
+The final records commit. ADR-0063 Accepted, its decision 10
+naming all five items below. TODO: the item goes, and so does the
+records-table item (`df1540b`), answered by commits 6 and 7; three
+held questions become items (ship the model?, a model to approach
+link, a model for one convention). Two more items keep what the
+closing item would lose:
+- **which ideas here are models,** from its candidate list: one
+  home, with facts, their home, fact references and disagreements;
+  what a convention is; the deliverer and the run, with seats; a
+  shape. Trigger: the staying-in-step item.
+- **write the staying-in-step convention,** trigger "round 2
+  reads". Today only ADR-0063 names it. One Idea: shapes §5.2 and
+  conventions §3.6 each settle a difference their own way, both
+  cases of the model's §3, and may point at it once written.
+
+The fact-reference item's trigger quotes the staying-in-step item.
+The fold item's trigger line is rewritten true for today, not
+stacked with a date. TODO is grepped for items waiting on the
+text-division item: "Choose whether a manual is called a concept",
+whose trigger names an item that does not exist and meant this one,
+and "Decide whether a session's end has a home of its own". Each
+one's trigger is rewritten true for today.
+`TODO-CONVERSATION-MEMORY.md` §1 goes, the file stays.
 
 **11. `docs(agent): close commit plan for text division`**
 Deletes this file; the body says what diverged.
