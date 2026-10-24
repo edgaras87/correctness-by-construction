@@ -629,6 +629,35 @@
       Trigger: the next birth's Step 3 close.
       See: devlog 2026-09-12, later.
 
+- [ ] Move the agent model's binding into agent-arrangement
+      (2026-10-24, the reviewer).
+      Context: `docs/models/agent.md` holds an idea any tool fits,
+      its §2 to §8 and §12, beside one tool's mechanisms, §10,
+      checked against Claude Code 2.1.310. agent-arrangement §3.2
+      retells §10.6, and on 2026-10-24 one fact changed in both
+      (`36eb0c1`). §9, and §8's second sentence, say where a manual
+      records its channel: a rule about manuals that points down,
+      held now by `docs/conventions/conventions/` §3.3. Asked first
+      on 2026-09-29 as folding the whole model into the manual.
+      Ideas:
+      - the binding as a section of agent-arrangement, which holds
+        this repo's Claude Code files already; §3.2 becomes the home,
+        not a retelling. About 120 lines; the manual near 580.
+      - a page of its own for the binding: a new kind of text.
+      - `auto-run.md`'s fact reference to the model's §10.4 would
+        then point at a convention, and the level jump closes. Five
+        lines point into §10 today.
+      - a full fold would put the vendor-neutral idea inside a
+        Claude Code page.
+      - not a concept: a concept is copied whole and built by; the
+        agent model is adapted by a repo's arrangement.
+      - the header's provenance comment, like the one cut from the
+        idea-to-output model.
+      - the tiers model has had no such pass.
+      Trigger: before round 2 reads, beside its Layout kind.
+      See: devlog 2026-09-29, the agent model;
+      `TODO-CONVERSATION-MEMORY.md` §14.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
@@ -770,21 +799,6 @@
       beside the agent model; `docs/models/` stays.
       Trigger: a second concept repo.
       See: devlog 2026-09-30, the tiers model.
-
-- [ ] Fold the agent model into agent-arrangement? (2026-09-29,
-      the reviewer)
-      Context: agent-arrangement reasons from `docs/models/agent.md`
-      and states a few of its facts itself, each beside a pointer.
-      A fold would more than double the manual; keeping them apart
-      costs a second file to open. On 2026-09-30 neither had drifted
-      from the other.
-      Ideas: the model as the manual's theory section, its binding
-             and claims with it.
-      Trigger: a change to the arrangement that has to edit both
-      files for one fact. Met 2026-10-24: when a path rule loads
-      changed in the model's §10.6 and in agent-arrangement §3.2
-      (`36eb0c1`).
-      See: devlog 2026-09-29, the agent model.
 
 - [ ] Move the records table into a rule of its own, so every file
       has one `foundation`? (2026-10-24, the reviewer)
