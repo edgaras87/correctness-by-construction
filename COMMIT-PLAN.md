@@ -31,25 +31,26 @@ first draft is still written without its rule, since the rule can
 load only once the file is touched; those lines keep that effect.
 One fact and its retellings, so one commit.
 
-**2. `docs: agent model claims gain outside evidence`**
+**2. `chore(agent): the check and auto-run on loads`**
+`.claude/rules/foundation-check.md`'s comment: a path rule loads on
+the file tools and simple shell reads, never on a script's edit.
+`.claude/approaches-on-trial/auto-run.md`: a `Read` deny stops
+simple shell reads, not `grep -r` or a script. The agent's own
+files, so a commit of their own; next after commit 1, since the
+check derives from the conventions manual that commit changes.
+
+**3. `docs: agent model claims gain outside evidence`**
 §12: A2, P1, P2 and G1 gain the docs and the studies, each marked
 measured or reported; A2, P1 and P2 stay assumed for this repo,
 since none was measured here. Its own commit: evidence, not
 mechanism.
 
-**3. `docs: the entry file holds what each session needs`**
+**4. `docs: the entry file holds what each session needs`**
 agent-arrangement §2.1 and §2.2: "a map, not a rulebook" goes; what
 the three tests of §2.4 already leave is said in the docs' terms.
 §2.6 names the docs' 200 lines beside "a screen". §3.7 says outside
 practice ignores the file, and why ours is tracked. A change of
 stance, so its own commit.
-
-**4. `chore(agent): the check and auto-run on loads`**
-`.claude/rules/foundation-check.md`'s comment: a path rule loads on
-the file tools and simple shell reads, never on a script's edit.
-`.claude/approaches-on-trial/auto-run.md`: a `Read` deny stops
-simple shell reads, not `grep -r` or a script. The agent's own
-files, so a commit of their own.
 
 **5. `docs: TODO's outside check of the agent closes`**
 The item goes from `TODO.md`. The final records commit.
@@ -70,7 +71,7 @@ Deletes this file; the body says what diverged.
   The model states the documented trigger and that it is
   unreliable.
 - **No ADR.** No ADR decided "a map, not a rulebook"; the change of
-  stance is recorded in commit 3's body, as commit-messages allows
+  stance is recorded in commit 4's body, as commit-messages allows
   for a decision too small for one.
 - **History stays:** the devlog, closed ADRs and
   `.claude/decisions.md`'s entries keep their words.
