@@ -1,7 +1,7 @@
 # Idea-to-Output Model
 
 A draft: written from one full chain, the agent's, and checked
-against the others named in §6.
+against the concept's and a record's.
 
 A structured description of the kinds of text this repo holds, how
 each links to the others, and the two directions text moves: down
@@ -11,7 +11,7 @@ does it stand on* — instead of each session re-deriving the picture.
 
 This is a **model**: the top description of its chain. It binds
 what stands on it, and when the two disagree, either side may be
-the wrong one (`.claude/rules/foundation-check.md`, step 5).
+the wrong one (§3).
 
 ---
 
@@ -44,30 +44,32 @@ would describe intent, as a template does.
 
 ## 3. The links
 
-| Link | From, to | Written as | Upkeep |
-|---|---|---|---|
-| stands on | a file, to what the whole of it was written from | its one `foundation` line | the foundation check, at each commit |
-| points | a line, to a part of any document | a path and section, a tag | the walk re-reads the line when the part changes |
-| governs | a shape, to an output | the shape's path, read at the gate | a difference ends one of four ways |
-| written from | an output or approach, to the kind above it | the evaluation or reading that moved it | the up direction, §4 |
-| requires | a skill, to another convention it delegates to | the skill's `requires` line | none yet |
+| Link | From, the lower text | To, the upper text |
+|---|---|---|
+| stands on | a file | what the whole of it was written from |
+| points | a line | the home of a fact it relies on: the one place that fact is written |
+| governs | an output | the shape it is checked against, at the gate |
+| written from | an output or approach | the kind written from it, §4 |
+| requires | a skill | another convention it delegates to |
 
-**One root, tags for parts.** A file names one `foundation`: in
-frontmatter, or in a record's header comment. Every line that uses
-a part of any document, its root included, carries a tag. The root
-tells the foundation check which document to open; a tag tells the
-walk which line to re-read. A second root in one file is a tag.
+**Every link points up.** A lower text relies on an upper one; an
+upper text at most lists what stands on it.
 
-No link runs from a model straight to an approach. An approach
-stands on a description. The trigger for such a link: an approach
-whose rules no convention could hold.
+**When two linked texts disagree, the disagreement is settled, never
+left standing.** Either may be the wrong one: the upper binds the
+lower, but being upper doesn't make it right. It ends when the two
+agree again, by changing the lower, the upper, or both.
+
+A file stands on one thing; a line may point at a fact's home in
+any document.
+
+An approach stands on a description, never on a model directly.
 
 ## 4. The two directions
 
 **Down, an idea to an output.** A model is adapted by a manual;
 the manual is made usable as skills, rules and forms; work done
-with them leaves outputs. Each step names the one above in its
-`foundation`.
+with them leaves outputs. Each stands on the one above.
 
 **Up, work to an idea.** New things are born the other way:
 
@@ -76,15 +78,19 @@ unfamiliar work ──► approach on trial ──► convention ──► model
 outputs ──► shape
 ```
 
-- **An approach on trial** is drafted for work no approach covers,
-  and evaluated after use.
-- **A convention** is written when an evaluation finds its rules
-  hold across projects.
-- **A model** is written when the idea behind a convention is
-  general enough to be used elsewhere. Not yet lived: both models
-  before this one came from the handbook (ADR-0038).
-- **A shape** is written from outputs that exist, and changes when
-  they show it wrong.
+- **An approach on trial** comes from work no approach covers.
+- **A convention** comes from approaches whose rules hold across
+  projects.
+- **A model** comes from a convention whose idea is general enough
+  to be used elsewhere. Not yet lived here: both models before this
+  one came from the handbook.
+- **A shape** comes from outputs that exist.
+
+**After a birth, the lower text is rewritten to stand on the new
+one.** A skill drafted as an approach on trial is rewritten from
+the convention written out of it. A manual whose idea became a
+model stands on that model. Birth goes up; afterwards, reliance
+goes up too.
 
 The steps between repos, a run's lesson reaching the deliverer, are
 `docs/models/tiers.md` §3.
@@ -102,24 +108,18 @@ Both sit at the top of a chain. They differ in where things vary:
 No model sits above correctness by construction. What a concept is
 waits for a second concept repo.
 
-## 6. The chains here
+## 6. One chain here
 
-- **The agent's.** The agent model stands above agent-arrangement,
-  which stands above the entry file's guard and the decisions log's
-  header; their content is the output. Each manual's *Why it
-  arrives this way* tags the part of the agent model it reasons
-  from.
-- **The concept's.** The chapters under `concept/` stand on
-  nothing. The method's skills stand on `concept v1`, and the
-  method's shapes on `practice, under the shapes convention`. A
-  run's slices and code are the output, and the shapes govern them.
-- **A record's.** project-recording stands above a record's form in
-  its header comment, named by its `foundation:` line. The entries
-  are the output.
+Each file names what it stands on, so the chains are not listed
+here. The agent's is the worked example. The agent model stands
+above agent-arrangement, which stands above the entry file's guard
+and the decisions log's header; their content is the output. Each
+manual's *Why it arrives this way* points at the part of the agent
+model it reasons from.
 
 ## 7. What it does not answer
 
 - **Which repo a text belongs to** — `docs/models/tiers.md`.
 - **How a text reaches an agent** — `docs/models/agent.md`.
-- **The rules for writing a `foundation` line or a tag** —
-  `docs/conventions/conventions/` §2 and §3.5.
+- **How a link is written and checked, and a disagreement found
+  and decided** — this repo's conventions, not this model.
