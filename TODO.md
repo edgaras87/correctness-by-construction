@@ -186,6 +186,11 @@
         (`commit-messages`) and a stop at each boundary
         (`commit-plan`). Yet `docs/conventions/agent-arrangement/`
         §3.7 counts how often the agent stops as a setting.
+      - "never rewrite main across 35edd3f" lives only in the
+        agent's memory, unseen by any reader of the repo. Its
+        failure is not noticing the moment, a rebase: a local rule
+        for our `CLAUDE.md` (`docs/conventions/agent-arrangement/`
+        §2.4)?
       Trigger: run 5's reading, with the lines gathered by then.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11; `.claude/decisions.md`, 2026-10-22, the account skills.
@@ -725,10 +730,14 @@
       points at another convention with `requires`; the table
       cannot point, since it must be present every session. A rule
       with no `paths:` loads every session too.
-      Ideas: `.claude/rules/records.md`, standing on project-recording;
-             costs agent-arrangement §2.4, project-recording §13 and
-             the container, and a reader of `CLAUDE.md` no longer
-             sees where the records are.
+      Ideas:
+      - `.claude/rules/records.md`, standing on project-recording;
+        costs agent-arrangement §2.4, project-recording §13 and the
+        container, and a reader of `CLAUDE.md` no longer sees where
+        the records are.
+      - at our seat the table is most of the entry file, which would
+        keep three lines: the seats differ, or ours first gains what
+        it lacks.
       Trigger: a third file that needs two `foundation` lines, or
       the entry file's next redesign.
       See: devlog 2026-10-24, the text-division item.
