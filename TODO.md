@@ -712,7 +712,9 @@
       Ideas: the model as the manual's theory section, its binding
              and claims with it.
       Trigger: a change to the arrangement that has to edit both
-      files for one fact.
+      files for one fact. Met 2026-10-24: when a path rule loads
+      changed in the model's §10.6 and in agent-arrangement §3.2
+      (`36eb0c1`).
       See: devlog 2026-09-29, the agent model.
 
 - [ ] Name the discipline "lived is evidence, not master text"
