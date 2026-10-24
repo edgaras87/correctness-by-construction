@@ -262,7 +262,8 @@ derives from it, each derivative names it, a change walks the list,
 a forced change is checked back, a disagreement is decided with
 practice as the evidence — is stated once, in the conventions
 manual, `docs/conventions/conventions/` §3.5, for every description
-this page names: the concept, each manual, and this page. Why step
+this page names: the concept, each model, each manual, and this
+page. Why step
 5 declines a finding only for not being general, and where practice
 has already bent a description, is `docs/conventions/conventions/`
 §3.6. This page is a map and
@@ -413,9 +414,9 @@ manual owns the thing a word names, pointed at there.
 - **made usable** — what a stated body becomes in the delivery:
   the concept as the method, the conventions as the container.
 - **description** — how we understand a thing today, written down:
-  the concept, a manual, this page. It may be wrong or incomplete
-  and is canonical regardless; what derives from it applies it and
-  does not explain. One rule for all of them,
+  the concept, a model, a manual, this page. It may be wrong or
+  incomplete and is canonical regardless; what derives from it
+  applies it and does not explain. One rule for all of them,
   `docs/conventions/conventions/` §3.5; they differ at the edges
   (ADR-0039).
 - **canonical** — of a description or a copy: the one that counts,
@@ -441,11 +442,13 @@ manual owns the thing a word names, pointed at there.
   `.claude/approaches-on-trial/approach-evaluation.md`.
 - **seats** — the sides a convention has, this repo's and a run's.
   A manual says whether the two use it the same way.
-- **foundation** — the line by which a skill, a rule, a shape or a
-  record's form names what it stands on: its description, or the
-  practice it was written under (`docs/conventions/conventions/` §2,
-  §3.5). Not *source*: that was a run's word for the deliverer, and
-  is not ours.
+- **foundation** — the line by which a file names the one thing the
+  whole of it stands on: its description, or the practice it was
+  written under. A skill, a rule, a shape, a record's form and a
+  manual standing on a model carry one; a line that uses a part of a
+  document carries a tag to that part instead
+  (`docs/conventions/conventions/` §2, §3.5). Not *source*: that
+  was a run's word for the deliverer, and is not ours.
 - **step** — one piece of PLAN's work, a run's or ours. What makes
   work a step here is our `PLAN.md`'s step form (ADR-0057).
 - **conversation-memory** — the talk that shaped a TODO item,

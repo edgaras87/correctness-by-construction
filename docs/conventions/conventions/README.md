@@ -112,18 +112,22 @@ foundation: the <name> convention
   skill by it.
 - `requires` names the conventions this one delegates rules to; a
   receiver lands a convention together with its chain.
-- `foundation` says what the file stands on *now* — a live claim,
-  never history. Every skill and rule carries one, shipped or this
-  repo's own, and so does every shipped shape, in frontmatter of its
-  own: for the method, the concept and its version, `concept v1`;
-  for the stack practice, the concept it was checked against,
-  `practice, checked against concept v1`; for a convention's
-  artifact, the convention by name, `the exchange convention`; for a
-  shape, the convention it lives under, `practice, under the shapes
-  convention`; for a record's form, the convention it comes from,
-  `the project-recording convention` (§3.5, step 2). The value
-  carries the relation where it is not derivation. Concept chapters carry none; they are the top. That
-  the line travels with a copy is `docs/conventions/exchange/` §3.5.
+- `foundation` says what the whole file stands on *now* — a live
+  claim, never history — and a file has one (§3.5, step 2). Every
+  skill and rule carries one, shipped or this repo's own, and so
+  does every shipped shape, in frontmatter of its own: for the
+  method, the concept and its version, `concept v1`; for the stack
+  practice, the concept it was checked against, `practice, checked
+  against concept v1`; for a convention's artifact, the convention
+  by name, `the exchange convention`; for a shape, the convention it
+  lives under, `practice, under the shapes convention`; for a
+  record's form, the convention it comes from, `the
+  project-recording convention` (§3.5, step 2); for a manual whose
+  idea a model states, in frontmatter of its own, the model by name,
+  `the agent model`. The value carries the relation where it is not
+  derivation. Concept chapters and models carry none; they are the
+  top. That the line travels with a copy is
+  `docs/conventions/exchange/` §3.5.
 
 **A skill's phases are stages,** numbered from Stage 0, each under
 its own heading: `## Stage 1 — specify-correctness`. "Step" is
@@ -214,8 +218,9 @@ this is made usable as* — the list a change to the page walks,
 each item marked shipped or the deliverer's, with the moment it
 opens at, placed as the answer to the need; the seats (§3.4);
 lessons as dated italics (§3.7); *why it arrives this way* — the
-channel, a skill, a rule, a stub or a file, and why that one; and
-*what this does not cover*, the
+channel, a skill, a rule, a stub or a file, and why that one,
+tagged to the part of the agent model it reasons from
+(`docs/models/agent.md`); and *what this does not cover*, the
 boundary against its neighbours by path.
 
 The form was not designed. `docs/conventions/exchange/` and
@@ -265,7 +270,8 @@ now built in.
 ### 3.5 The rule for every description
 
 This page included. A description is how we understand a thing
-today, written down: the concept, each manual, `ARCHITECTURE.md`. It
+today, written down: the concept, each model, each manual,
+`ARCHITECTURE.md`. It
 may be wrong or incomplete, and it is canonical regardless —
 everything derived from it agrees with it until it changes, and it
 changes only for a reason recorded, practice being the evidence.
@@ -273,20 +279,28 @@ What derives from it is not a description: it applies, it does not
 explain. The rule is the same for all of them, and this is where it
 is stated:
 
-1. A description lists what derives from it.
-2. Each derived thing names its description. A skill, a rule or a
-   shape carries the `foundation` line in its frontmatter. A record
-   whose header holds its form, such as `PLAN.md`'s step form or
-   `TODO.md`'s item shape, carries a `foundation:` line in that
-   header's comment. Both seats, the run's stubs included.
+1. A description lists what derives from it. A model leaves its
+   list to the grep in step 3: repos it never sees stand on it too.
+2. Each derived thing names its description, once: one
+   `foundation` per file, its root, what the whole of it stands on.
+   A skill, a rule, a shape, or a manual standing on a model
+   carries it in its frontmatter. A record whose header holds its
+   form, such as `PLAN.md`'s step form or `TODO.md`'s item shape,
+   carries a `foundation:` line in that header's comment. Both
+   seats, the run's stubs included. Every line that uses a part of
+   a document, its root included, carries a tag to that part, its
+   path and section (§3.2). The root says which document to open
+   when the file changes; a tag says which line to re-read when the
+   part changes.
 3. A change to the description walks the list in the same commit,
    or in the next when one side is an agent file and the other is
    not (`docs/conventions/commit-messages/`). It greps for the
    description's path, to find what points at it, and for its name
    in `foundation` lines, to find what stands on it: `the <name>
-   convention`, or `concept v1`. Each retelling tagged to a changed
-   section is re-read with the paragraph around it; a host that
-   changes for it is walked in turn (step 5).
+   convention`, `the <name> model`, or `concept v1`. Each
+   retelling tagged to a changed section is re-read with the
+   paragraph around it; a host that changes for it is walked in
+   turn (step 5).
 4. A change forced in a derived thing is checked back against the
    description.
 5. A disagreement is raised and decided (§3.6); if the description
