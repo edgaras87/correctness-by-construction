@@ -717,6 +717,22 @@
       (`36eb0c1`).
       See: devlog 2026-09-29, the agent model.
 
+- [ ] Move the records table into a rule of its own, so every file
+      has one `foundation`? (2026-10-24, the reviewer)
+      Context: both entry files carry two `foundation` lines, the
+      only files that do: the records table's comment names
+      project-recording, the guard agent-arrangement. A skill
+      points at another convention with `requires`; the table
+      cannot point, since it must be present every session. A rule
+      with no `paths:` loads every session too.
+      Ideas: `.claude/rules/records.md`, standing on project-recording;
+             costs agent-arrangement §2.4, project-recording §13 and
+             the container, and a reader of `CLAUDE.md` no longer
+             sees where the records are.
+      Trigger: a third file that needs two `foundation` lines, or
+      the entry file's next redesign.
+      See: devlog 2026-10-24, the text-division item.
+
 - [ ] Name the discipline "lived is evidence, not master text"
       (2026-09-04, the user).
       Context: the records table says what goes in a README, the
