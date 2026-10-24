@@ -305,6 +305,12 @@
         widening `docs/conventions/conventions/` §3.2's grep for a
         moved section.
       - the repo prefix keeps its own name.
+      - a fact reference that jumps a level, an approach citing a
+        model, may mean a convention, or a part of one, is missing
+        between them; or none is needed, since the walk finds the
+        jump when the model changes. Noted, not solved, until a case
+        forces it. One today: `auto-run.md` → the agent model's
+        §10.4.
       Trigger: round 2's staying-in-step convention.
       See: devlog 2026-10-24, the text-division item;
       `TODO-CONVERSATION-MEMORY.md` §13.
