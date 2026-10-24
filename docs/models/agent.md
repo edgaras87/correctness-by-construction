@@ -379,6 +379,11 @@ proven wrong.
 including assertions already acted on. Each piece of evidence says
 where it was seen: the handbook's history, this repo's, or a run's.
 
+Evidence from outside is listed under its claim too, marked
+`measured` for a controlled study with numbers, `reported` for a
+first-hand or bug report. It leaves the status alone: a claim is
+evidenced only when it was seen in this work. Added 2026-10-24.
+
 ### 12.1 On ambient
 
 **A1 — Presence is not compliance.** A rule being in context does not
@@ -401,6 +406,10 @@ mean it is followed.
 **A2 — Instructions have a per-rule cost.** The longer the ambient set,
 the lower compliance with any single rule in it.
 - `assumed` · *Refuted by:* compliance staying flat as ambient grows.
+- `measured` elsewhere — the best models followed about 68% of 500
+  instructions given at once, and favoured the earlier ones
+  (Jaroslawicz et al., arXiv 2507.11538, 2025). The task was writing
+  with keywords, not working from an entry file.
 
 ### 12.2 On pulled
 
@@ -408,6 +417,10 @@ the lower compliance with any single rule in it.
 without opening the file that states it.
 - `assumed` · *Refuted by:* opening a linked skill file unprompted,
   before doing the thing it governs.
+- `measured` elsewhere — a skill holding the docs an eval needed was
+  never invoked in 56% of cases (Vercel, 2026-01-27). With no hook,
+  a skill fired on 50–55% of 22 prompts (Spence, 2026-02-08). Both
+  are small, and each has one source.
 
 **P2 — Placement decides whether a pointer fires.** A pointer at the
 moment of need fires more reliably than the same pointer in a reading
@@ -416,6 +429,14 @@ list at session start.
 - *Refuted by:* both placements performing the same. The test that
   can run: a reading of a run that holds one rule both ways, pointed
   at from a skill at its moment and from the entry file alone.
+- `measured` elsewhere, against it, though not on P2 itself — the
+  same Vercel evals passed 100% with an index of the docs in the
+  entry file, 79% with a skill the prompt named, and 53% with a
+  skill alone. A skill's trigger is ambient too (§10.5), so this
+  compares two pointers read at session start. One framework, the
+  vendor's own suite. Khatri (arXiv 2607.27250, 2026) found no
+  difference between a guide always loaded and topic files read by
+  choice, in a study too small to see less than 30 points.
 
 ### 12.3 On pushed
 
@@ -492,6 +513,9 @@ check outside the text can.
   channels for the whole life of the handbook, no gate existed, and
   it was broken 15 times. Here too: nothing gates a subject's
   length, and A1's count is 125 of 233.
+- The tool's documentation says the same: an instruction in
+  `CLAUDE.md` or a skill "is a request, not a guarantee", and
+  guardrails go in hooks (checked 2026-10-24).
 
 ### 12.9 Scorecard
 
