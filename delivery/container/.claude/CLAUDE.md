@@ -63,7 +63,8 @@ this project writes is its own.
      3. Nothing else would deliver it — a stance, or a fact whose
         failure is not noticing it.
      Longer than a screen means a line is failing. Shrinking it is
-     maintenance, not tidying. -->
+     maintenance, not tidying.
+     foundation: the agent-arrangement convention -->
 
 ## Local rules
 
