@@ -477,3 +477,36 @@ changes a rule:
 
 Confirmed by the reviewer, 2026-10-25: no rule of round 2's kinds
 is in doubt, and round 2 reads.
+
+### Files by layer (§2.2)
+
+Living text at `620fe22`: 112 files, each in exactly one layer.
+Left out, as before round 1: the devlog's months, the 65 ADRs, all
+closed, `docs/baselines/`, `temp/RUN-4.md` and this file. Also left
+out: `temp/reading-run-5-2026-10-22.md`, the reading of run 5, a
+draft its own step works after the refinement.
+
+| Layer | Files | Count |
+|---|---|---|
+| 1. The conventions manual | `docs/conventions/conventions/README.md` | 1 |
+| 2. Project-recording | `docs/conventions/project-recording/README.md` | 1 |
+| 3. The other manuals, the models, the concept | `docs/conventions/README.md`; the 10 other manuals; `docs/conventions/repo-hygiene/templates/` (3); `docs/models/` (3); `concept/` (5) | 22 |
+| 4. `ARCHITECTURE.md`, `README.md`, the records | as before round 1, and `TODO-CONVERSATION-MEMORY.md` | 11 |
+| 5. Our agent setup | `CLAUDE.md`, `CLAUDE.local.md`; `.claude/` (16) | 18 |
+| 6. `delivery/`, what ships | `delivery/README.md`; `container/` (23); `fills/` (1); `installs/` (1); `method/` (14); `spring-postgres/` (19) | 59 |
+
+What changed since round 1's list, at `c4c6bc0`:
+
+- **Came in, 9:** the facts-in-sync manual and
+  `docs/models/idea-to-output.md` (layer 3);
+  `TODO-CONVERSATION-MEMORY.md` (layer 4); `CLAUDE.local.md`
+  (ADR-0062) and three approaches on trial,
+  `approach-drafting.md`, `approach-evaluation.md` and
+  `auto-run.md` (layer 5); the container's `approach-drafting.md`
+  and `temp/README.md` (layer 6).
+- **Moved, 1:** the refinement's manual, from layer 3 to layer 5,
+  as `.claude/approaches-on-trial/refinement.md` (ADR-0058).
+- **Went, 3:** the first-time-work manual and its two skills, ours
+  and the container's (ADR-0058).
+
+No layer widened: each new file fits one as it stands.
