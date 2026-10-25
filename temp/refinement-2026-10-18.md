@@ -1273,6 +1273,14 @@ and the round's coverage of the two files. The one-home rule's
 - (b) No: One home and Dependencies read them whole before the
   round's work.
 - Recommended: (a).
+- Chosen: (a), by the reviewer, 2026-10-25. Their entries and parts
+  are history, each header living. FINDING-192 is declined, and the
+  round's coverage of both files stands as read. The one-home rule's
+  *Not a second home* names neither: that rule is round 2's, so it
+  changes at round 2's close, in both seats, in
+  `docs/conventions/facts-in-sync/` §1 and both `one-home.md`. A
+  living line never takes an entry as a fact's home: FINDING-154's
+  fix already moves `TODO.md`'s off one.
 
 **DECISION-14.** Where does the concept's bump rule live? Rests:
 FINDING-176.
