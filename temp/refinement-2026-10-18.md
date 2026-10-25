@@ -453,4 +453,27 @@ from 456 lines to 309, project-recording from 954 to 906.
    two manuals and 281 came in, the difference mostly its own frame: the
    opening, the seats, the channel and the boundary.
 
-Not yet confirmed by the reviewer.
+Two rules also gained a line in the same plan, before round 2
+reads. One home: a description states what is true today, so a
+history sentence in one retells its ADR (facts-in-sync §4).
+Dependencies: a fact reference has one target, the home of the fact
+its line relies on (facts-in-sync §3).
+
+Searched again after the plan closed, at `f2a0221`: no TODO item
+doubts a rule of round 2's kinds. Four name a rule or its manual
+and are due during round 2, its reading their evidence; none
+changes a rule:
+
+- "Decide which way a fact reference may point": Dependencies asks
+  whether a reference is needed, not which way it points.
+- "Decide whether each seat's copy is written for its seat": it
+  asks whether the claims that two copies are the same stay, not
+  what a second home is.
+- "Decide what kind of text our ARCHITECTURE is, and its size":
+  facts-in-sync §2 has ARCHITECTURE point, not restate, whatever its
+  kind.
+- "Move conventions §1 to the idea-to-output model": §3.3 and §3.7
+  stay.
+
+Confirmed by the reviewer, 2026-10-25: no rule of round 2's kinds
+is in doubt, and round 2 reads.
