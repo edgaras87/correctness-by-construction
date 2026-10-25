@@ -292,8 +292,15 @@
         elsewhere and, if so, whether it says where. Lived: the 11
         manuals' channel sections reasoned from the agent model
         without one until 2026-10-24.
-      Trigger: the refinement's close, once round 2's Dependencies
-               reading has met every reference.
+      - whether a file's `foundation` line covers its lines about
+        its own manual, or each names its section, as
+        `docs/conventions/facts-in-sync/` §4 step 2 says: the
+        refinement's DECISION-10, resting FINDING-191, our record
+        headers, and 196, our rules and skills with 0 to 7 section
+        references each.
+      Trigger: round 2 of the refinement closes, before round 3's
+               rule check, with "Decide which way a fact reference
+               may point".
       See: devlog 2026-10-24, the text-division item; ADR-0065;
       `TODO-CONVERSATION-MEMORY.md` §13.
 
@@ -665,8 +672,10 @@
         to other conventions": narrower than practice, since
         manuals point at models too, and "pointer" names what
         facts-in-sync calls a fact reference.
-      Trigger: round 2's Dependencies reading, which reads every
-               pointer.
+      Trigger: round 2 of the refinement closes, before round 3's
+               rule check, with "Decide how a fact reference is
+               written". Round 2's Dependencies reading is its
+               evidence.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1;
       devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §16.
 
