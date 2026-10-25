@@ -18,7 +18,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-10-24.
+     Last touched: 2026-10-25.
      foundation: the project-recording convention -->
 
 # TODO's conversation-memory
@@ -845,3 +845,89 @@ The reviewer's draft for *The words*, kept as said:
 > `(<path>, §<number>, <title>)`. The home is the one place the
 > fact is written, its single source of truth (`one-home`). When
 > the home changes, the walk greps for every fact reference to it.
+
+## 14. A sweep, and what looking back is
+
+Item: "Decide whether a sweep checks one home after work lands, and
+when".
+
+### 2026-10-25
+
+#### What the reviewer asked
+
+- facts-in-sync was to say that a description states what is true
+  today. Should other texts be checked for history sentences: now,
+  in round 2, or later; in the sweep, or at a session's end?
+- In their words: "i may want convention and model (or part like
+  section or what of model) for sweap and session end checks. It is
+  idea that has to have definition, which sounds something like: we
+  look back and check agains rules, source of truths, correctness
+  and something like that to find what is out of date or no more
+  incorrect or has a conflict, disagrement or any possible
+  incorrectness. it should be define in as one-home and reference
+  where needed."
+
+#### What exists today
+
+- Five acts read a text against what it rests on: the foundation
+  check, at each commit; `commit-plan`'s sweep, at a plan's close;
+  a refinement round; an exchange reading; and the missing-context
+  finding, at a session's end.
+- facts-in-sync §4 holds the walk, and §5 a disagreement. Nothing
+  names the act they share, or lists when it runs.
+
+#### Points made
+
+- History sentences: round 2's One home kind finds them once
+  facts-in-sync says it, since such a sentence retells its ADR. The
+  sweep greps for names a plan moved, and a history sentence has no
+  fixed word to grep for. A check every session for something
+  written rarely costs more than it finds.
+- What a check is fits the idea-to-output model, beside §3's links,
+  where either side may be wrong. When each check runs stays in its
+  own convention, pointing at the model.
+- Not built now: round 2 does not need it. Its moment is this
+  item's trigger, the refinement's close, when the refinement's
+  approach is judged: the largest check this repo runs.
+
+## 15. Each seat's copy, written for its seat
+
+Item: "Decide whether each seat's copy is written for its seat".
+
+### 2026-10-25
+
+#### What the reviewer asked
+
+It began with commit 2's fact reference to the sweep, which named
+only the container's skill: does our commit-plan sweep too? It
+does, since the two skills are the same file today. In their words:
+"i dont like that thing "byte-identical to the shipped one"
+anymore. because it should be all as "byte-identical to the shipped
+one" or non. now i need to track which are and which not. it would
+be simple to repeat things and alter each part according to seat."
+
+#### What exists today
+
+- ADR-0042: both seats derive from the manuals, neither copied from
+  the other; a file identical in both is an outcome, not a
+  dependency. It rejected diverging the identical files as "a
+  change nobody needs".
+- Five lines say which are the same: commit-plan, commit-messages
+  and visual-comparison, each "identical to it today";
+  agent-arrangement's "Three skills are identical files"; and the
+  conventions manual's rule that a file of ours byte-identical to
+  its shipped master keeps `CBC ADR-nnnn`, so one diff checks the
+  pair.
+- The commit-plan manual names the sweep only in §2, "The sweep
+  reads the text unwrapped". Only the skills say it runs before a
+  close.
+
+#### Points made
+
+- Stating an outcome makes each manual keep it true by hand: the
+  tracking the reviewer would drop.
+- Each seat written for itself leaves nothing to track, and each
+  copy reads for its own reader. It reverses ADR-0042's rejected
+  option, so it needs a new ADR, and the one-diff check goes.
+- Not the facts-in-sync plan's: its commit 2b points at the
+  commit-plan manual instead of the container's file.

@@ -256,10 +256,17 @@
         broken, a reference whose path, number or title no longer
         matches, which a script can check in the form `(<path>,
         §<number>, <title>)`.
+      - looking back, defined once: reading a text against what it
+        rests on, to find what is out of date, wrong or in
+        disagreement. Five acts do it today: the foundation check,
+        `commit-plan`'s sweep, a refinement round, an exchange
+        reading and the missing-context finding. What a check is
+        in the idea-to-output model; when each runs, in its own
+        convention.
       Trigger: the refinement's close, once round 2 has swept one
                home and shown what a sweep finds.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
-      §11, the `claude-md-management` part.
+      §11, the `claude-md-management` part, and §14.
 
 - [ ] Define the fact reference, and stop calling it a tag
       (2026-10-24, the reviewer).
@@ -669,6 +676,25 @@
       Trigger: a convention whose idea another repo could use, with
                no second manual sharing it.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
+
+- [ ] Decide whether each seat's copy is written for its seat
+      (2026-10-25, the reviewer).
+      Context: both seats derive from the manuals, and a file the
+      same in both is an outcome (ADR-0042). Five lines still say
+      which are the same: three manuals' made-usable lists,
+      agent-arrangement's *What the difference is*, and the
+      conventions manual's `CBC ADR` rule for a file identical to
+      its shipped master. Each is kept true by hand.
+      Ideas:
+      - each seat's copy written for its seat, never claimed the
+        same; it reverses an option ADR-0042 rejected.
+      - drop the five lines and keep the files as they are.
+      - the commit-plan manual names the sweep only in §2, "reads
+        the text unwrapped"; only the skills say it runs before a
+        close.
+      Trigger: round 2's One home reading, which meets the five
+               lines.
+      See: devlog 2026-10-25; `TODO-CONVERSATION-MEMORY.md` §15.
 
 ## Later / someday
 
