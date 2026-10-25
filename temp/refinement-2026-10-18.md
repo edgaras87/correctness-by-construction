@@ -1289,6 +1289,13 @@ FINDING-176.
 - (b) `CHANGELOG.md`'s comment. §1.1 points, and four pointers
   change.
 - Recommended: (a). Three manuals already point at §1.1.
+- Chosen: (b), by the reviewer, 2026-10-25, on the agent's changed
+  recommendation: DECISION-11 makes a record's form the home of how
+  it is kept, and the bump rule is when the CHANGELOG's version
+  moves. Project-recording's deliverer seat already says what the
+  CHANGELOG is and why. `ARCHITECTURE.md` §1.1 keeps "versioned as a
+  whole" and points at the comment; the three manuals and
+  facts-in-sync §4 point at it, each keeping ADR-0003 as the why.
 
 ### Met in round 2, of other kinds
 
