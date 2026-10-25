@@ -134,9 +134,9 @@ corner.
 Goal: Living text written before a rule now meets that rule, and
 `docs/conventions/project-recording/` §1 is a map of the records
 in both seats.
-Now: between rounds: round 1 closed; round 2 reads next, with
-TODO's Now item, the staying-in-step convention
-(`.claude/approaches-on-trial/refinement.md` §2.8).
+Now: between rounds: round 1 closed; round 2's rule check comes
+next, and TODO's Now item, the staying-in-step convention, is its
+fix (`.claude/approaches-on-trial/refinement.md` §2.3).
 Gate:
 
 **At the opening.**
@@ -163,6 +163,9 @@ Gate:
       doubt, or each doubt was tried on a sample and ended; the
       refinement's file says which
       (`.claude/approaches-on-trial/refinement.md` §2.3; 2026-10-19).
+- [ ] Before each later round, its rule check read what changed
+      since the last, and each doubt ended; the refinement's file
+      says which (`.claude/approaches-on-trial/refinement.md` §2.3).
 - [ ] Every kind in the refinement's file was read in its round
       across all living text, and each read names the files it
       covered.

@@ -43,7 +43,8 @@
       - shapes §5.2 and conventions §3.6 each settle a difference
         their own way, both cases of `docs/models/idea-to-output.md`
         §3, and may point at it once written.
-      Trigger: round 2 reads.
+      Trigger: round 2's rule check, before it reads
+               (`.claude/approaches-on-trial/refinement.md` §2.3).
       See: ADR-0063; devlog 2026-10-24, the text-division item.
 
 ## Next (each due at its trigger)
