@@ -654,6 +654,10 @@
       - the deliverer and the run, with seats.
       - a shape, whose `docs/conventions/shapes/` §1 and §2 say what
         one is.
+      - records: what a record is, a form and its entries; what a
+        set of records answers; how each seat adapts it, as the
+        refinement's DECISION-12 map shows. Weighed against
+        `docs/models/idea-to-output.md` §2, which holds part of it.
       Trigger: the refinement's close, once facts-in-sync, whose
                subject is the first idea, has lived through round 2.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
