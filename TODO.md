@@ -44,7 +44,8 @@
         the two seats share goes to "Decide whether each seat's copy
         is written for its seat".
       Trigger: round 2's work on layer 2, project-recording.
-      See: devlog 2026-10-25, evening; the refinement's DECISION-11.
+      See: devlog 2026-10-25, evening; the refinement's DECISION-11;
+      `TODO-CONVERSATION-MEMORY.md` §20.
 
 ## Next (each due at its trigger)
 
