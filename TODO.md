@@ -29,6 +29,23 @@
 
 ## Now (due while the open step runs)
 
+- [ ] Read each record's *How* in project-recording against that
+      record's form (2026-10-25, the reviewer).
+      Context: the refinement's DECISION-11 made a record's form
+      the home of how the record is kept: its header comment, or
+      `PLAN.md`'s step form. Project-recording is the home of what
+      it is and why. Round 2's read found the plan's case,
+      FINDING-144. §3.4, §4.4, §5.4, §6.4, §7.4, §8.4 and §9.4 were
+      not read against their records' forms.
+      Ideas:
+      - a *How* keeps what the form is for and why; the form keeps
+        the steps.
+      - both seats' forms are read, ours and the run's stubs; text
+        the two seats share goes to "Decide whether each seat's copy
+        is written for its seat".
+      Trigger: round 2's work on layer 2, project-recording.
+      See: devlog 2026-10-25, evening; the refinement's DECISION-11.
+
 ## Next (each due at its trigger)
 
 - [ ] Write `exchange-birth` while a birth runs (2026-09-26, the
