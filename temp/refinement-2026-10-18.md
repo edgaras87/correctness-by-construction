@@ -510,3 +510,780 @@ What changed since round 1's list, at `c4c6bc0`:
   and the container's (ADR-0058).
 
 No layer widened: each new file fits one as it stands.
+
+### The read (§2.4)
+
+Read at `8acc4d4`, 2026-10-25. Seven readers, one kind and one
+side each, side by side. Each checked its findings in the tree. The
+agent then checked 25 of them again before listing: every quoted
+text held, but one line number of the 25 was wrong. So a finding
+below names its path and section, and gives a line only where the
+agent checked it.
+
+| Kind | Side | Files covered | How |
+|---|---|---|---|
+| One home | ours, layers 1–5 | 53 | each whole, then a sweep by grep; `TODO.md` in part, `TODO-CONVERSATION-MEMORY.md` and `.claude/decisions.md` by header and grep (DECISION-13) |
+| One home | what ships, layer 6 | 59 | each whole; the pairs of copies diffed |
+| Dependencies | ours | 53 | each whole; `TODO-CONVERSATION-MEMORY.md` and `.claude/decisions.md` in part (DECISION-13) |
+| Dependencies | what ships | 59 | each whole |
+| Lessons | ours | 53 | each whole |
+| Lessons | what ships | 59 | each whole |
+| Layout | all | 112 | the manuals, models, concept, `ARCHITECTURE.md`, `README.md`, `.claude/` and layer 6's skills, rules, shapes and references whole; `PLAN.md`, `TODO.md`, `TODO-CONVERSATION-MEMORY.md`, `CHANGELOG.md`, `.claude/decisions.md`, the templates, the container's records and the dotfiles by headings |
+
+The Layout reader read layer 6 through a fork of its own.
+
+Found true, so not listed:
+- every pair of copies that must agree is byte-identical: the
+  worked example in `cbc-framing` and `cbc-slice`; our
+  `commit-messages`, `commit-plan`, `visual-comparison` and
+  `approach-drafting.md` against their masters;
+- the two `one-home.md` and the two `writing.md` differ as their
+  manuals say;
+- all 12 manuals have the nine sections of
+  `.claude/rules/convention-manual.md`, in order;
+- the concept chapters, the tiers model and the agent model hold no
+  case written as a rule and no section with two subjects.
+
+### Findings (§2.5)
+
+By layer, in the order the work takes them. Each says its kind,
+how it stands, and the agent's proposed ending.
+
+#### Layer 1: the conventions manual
+
+**FINDING-135.** One home; checked. Two rules say when a section
+gets a number. `docs/conventions/conventions/` §3.3 (line 187):
+a section "that other text will point at". `docs/conventions/facts-in-sync/`
+§3: by form, "whether anything points there yet or not".
+`.claude/rules/convention-manual.md` follows facts-in-sync.
+Proposed: fix. §3.3 cuts the sentence and points at facts-in-sync §3.
+
+**FINDING-136.** Layout; checked. §3.3 lists a manual's parts in one
+paragraph of 22 lines. Two parts have numbered subsections (§3.4,
+§3.7); five do not. The body and *Where to look*, two of the rule's
+nine, are missing. Rests on DECISION-9. Proposed: fix, one numbered
+part per section of the form.
+
+**FINDING-137.** Layout; checked. §3.3 holds four more subjects:
+- the channel, told again in *Why it arrives this way*;
+- the open question of a shape, told again in
+  `docs/conventions/shapes/`, the deliverer's seat;
+- how the form grows;
+- two layout rules.
+
+Proposed: fix. The channel stays in *Why it arrives this way*. The
+open question keeps one home. The layout rules get a part of their
+own.
+
+**FINDING-138.** Layout; checked. §2 holds three subjects in
+unnumbered parts: how a rule is written, the frontmatter with every
+kind of file's `foundation` value, and stages. Nine pointers land
+on §2, for different parts. Proposed: fix, number them 2.1 to 2.4.
+§1's labelled part is left to TODO's "Move conventions §1 to the
+idea-to-output model".
+
+**FINDING-139.** Lessons; resting on the reader. Three cases sit
+undated in the body of the manual that holds §3.7: "The form was
+not designed…" (§3.3), "Twice a manual grew seat sections…" (§3.4),
+"As the last seven were added…" (§4). Proposed: fix, each a dated
+italic or cut.
+
+**FINDING-140.** Lessons; checked. §3 keeps history in its body:
+"the sections once numbered 3.1, 3.2, 3.5 and 3.6 moved there".
+`docs/conventions/facts-in-sync/` §4: a description states what is
+true today. agent-arrangement §3.8 and project-recording §13 put a
+kept number in an italic. Proposed: fix, a dated italic. The gap
+itself stays (ADR-0065).
+
+**FINDING-141.** One home; checked. The `foundation` line is told in
+four texts: conventions §2 (each kind's value), facts-in-sync §4
+step 2 (which files carry it), exchange §3.5 (it travels with a
+copy), and `.claude/rules/convention-manual.md`. Exchange §3.5 says
+conventions §2 holds the list; *The words* in `ARCHITECTURE.md`
+cites both. Proposed: fix. One numbered home for which files carry
+it; the others keep their own part and point.
+
+**FINDING-142.** Dependencies; checked. No rule says whether a
+footer's decision line names the section it backs (met in round 1,
+item 4). Of our 30 lines in layer 5, 4 do, all in
+`visual-comparison`. Proposed: fix, one line in conventions §2: "A
+footer line names the section it backs, unless it backs the whole
+file." Then edit only the lines that back one section, both copies
+alike. Against: a grep for the ADR's number already finds the file.
+
+**FINDING-143.** Dependencies; resting on the reader. "is open
+(TODO)" in conventions §3.3 and "(TODO)" in
+`docs/conventions/shapes/`, the deliverer's seat, name no item.
+Proposed: fix, name it by its first words, "Decide whether our own
+forms become shapes".
+
+#### Layer 2: project-recording
+
+**FINDING-144.** One home; resting on the reader. How a step opens,
+stops and closes is told in project-recording (§2.4 and the
+deliverer's seat) and again in `PLAN.md` (its header comment, *The
+step form*, and the close). Re-reading the entry file at a close is
+also agent-arrangement §2.6. Project-recording §2.4 calls the form
+"the playbook's" with no path. Rests on DECISION-11.
+
+**FINDING-145.** One home; resting on the reader. What each record
+holds is told in `CLAUDE.md`'s records table, `README.md`'s "What
+it answers" column, `ARCHITECTURE.md`'s codemap and
+`temp/README.md`. They differ already. For the devlog, README says
+"open questions" and `CLAUDE.md` "a TODO item's story". For the
+plan, README says "what *done* means" and `CLAUDE.md` "The step
+form, and the open step". README and `CLAUDE.md` also share an
+opening phrase, where project-recording §7.6 says "no shared text".
+The records map would be a fifth. Rests on DECISION-12.
+
+**FINDING-146.** Layout; checked. §5.5, conversation-memory, is a
+record of its own inside TODO's run of sections. TODO's *When* and
+*Anti-patterns* become §5.6 and §5.7. §3.5 does the same inside the
+ADRs' run. Proposed: §5.5 fixed, a numbered section of its own,
+placed last. Or declined while it is on trial. §3.5 declined: small,
+and cited twice.
+
+**FINDING-147.** Layout; resting on the reader. §7.6, the
+anti-patterns, holds "README is the front door for people; the
+entry file is the one for agents", which is §7.1's subject.
+Proposed: fix, move it.
+
+**FINDING-148.** Dependencies; resting on the reader. The `CBC
+ADR-nnnn` tag is retold in exchange §3.7 and in `exchange-deliver`
+with no fact reference. Its home is project-recording §3.5.
+Proposed: fix, add the reference, or cut the clause in the skill.
+
+#### Layer 3: the other manuals, the models, the concept
+
+**FINDING-149.** Dependencies; checked. agent-arrangement names
+project-recording as `one-home.md`'s convention, in §3.2 (line 303),
+and in *What the difference is* (line 104). Both `one-home.md` name
+facts-in-sync in their `foundation` line, and facts-in-sync lists
+them. Proposed: fix, name `docs/conventions/facts-in-sync/`.
+
+**FINDING-150.** Layout; checked. agent-arrangement §3.2 holds three
+subjects: the `rules/` directory, the every-session rule, and the
+container's four rules. The run's seat lists those four rules too,
+and `ARCHITECTURE.md` §2.3 a third time. §3.2's first sentence
+retells §5.6. Proposed: fix. The every-session rule takes a
+numbered part of its own, placed last. The list stays in the seats.
+The first sentence points at §5.6. `ARCHITECTURE.md` §2.3 goes to
+TODO's ARCHITECTURE item.
+
+**FINDING-151.** Layout; checked. agent-arrangement §1 has two
+labelled parts with no numbers, "Detachable, and kept so." and "Not
+records.", where §2, §3 and §5 number theirs. Proposed: fix, 1.1 to
+1.3. Or declined, if two bold leads are emphasis.
+
+**FINDING-152.** Lessons; checked. agent-arrangement §2.3 retells
+*What it is for*'s case, "one run showed to be a pure rename".
+Proposed: fix, cut the clause and point at §5.1.
+
+**FINDING-153.** Dependencies; checked. agent-arrangement cites
+"(model claim M1)" and "(model claim A2, assumed)" with no path.
+Their home is `docs/models/agent.md` §12. Proposed: fix.
+
+**FINDING-154.** Dependencies; checked. A rule's load limit, that
+it arrives after the first draft, is agent-arrangement §5.6. Three
+lines point at §3.2 for it: conventions §3.3 and *Why it arrives
+this way*, and the exchange. Six state it with no reference: the
+exchange, shapes and writing manuals, and the comments of three
+rules (`convention-manual.md`, `exchange-reading.md`,
+`foundation-check.md`). `TODO.md` points at `.claude/decisions.md`
+for it. Proposed: fix, all to §5.6.
+
+**FINDING-155.** Lessons; checked. Exchange §3.7 holds three rules
+only in its dated italic: a verdict is the decision and what the
+run owes, nothing else; never describe our own practice; never say
+"accepted" for something not decided. `exchange-deliver` states
+them, standing on this manual. Proposed: fix. The body states the
+three, and the italic keeps the 2026-09-20 case.
+
+**FINDING-156.** Lessons; checked. Exchange §6.3's rule, that a
+reading asks what the run teaches the worked example, is only in
+its italic. `exchange-read` points at §6.3 for it. Proposed: fix,
+one sentence in the body.
+
+**FINDING-157.** Lessons; resting on the reader. Cases in the
+exchange's body, undated: §3.1 "this repo did once, into a run
+mid-step", and "*The last delivery was named one commit before its
+note was finished.*", whose "last" goes stale; §4 step 4, "a rename
+once left the old file standing"; §5.1, "which has happened";
+§5.4, "Run 3's text says *source*". Proposed: fix, each a dated
+italic or cut. §5.4 may be declined as an example.
+
+**FINDING-158.** Lessons; uncertain. Three italics hold a live
+claim, not a case: exchange §3.4 "*One exists. One is owed…*";
+repo-hygiene "*How an overlay reaches a run is open.*";
+retrospective "*Reopened if…*". An italic reads as history and goes
+stale. Proposed: move each live claim into the body, or decline.
+
+**FINDING-159.** Layout; checked. Exchange §3.5, the `foundation`
+line, holds "**One pin** for all of it", whose home is §2.2.
+Proposed: fix, move it.
+
+**FINDING-160.** Layout; checked. The note is told in five sections
+of the exchange: §2.5, §3.7, §6.5, §6.6 and §6.7. "A note without
+files" is told three times (§2.5, §6.6, §6.7), and "the verdicts go
+in the note" twice (§6.5, §6.7). Proposed: fix. §3.7 stays the
+note's home. §6.6 holds a note without files, and §2.5 points at
+it. §6.7 merges into §6.5.
+
+**FINDING-161.** One home; checked. Where `concept/` lands in a run
+is told in exchange §3.3, "stated here once"; in `exchange-deliver`,
+"this is the one line that says so"; and in `delivery/README.md`
+§1 and §3. `delivery/installs/pure-seed.md` cites ADR-0036 for it.
+`delivery/README.md` and the seed also name two files by bare name.
+Proposed: fix. Exchange §3.3 is the home. The skill keeps its
+command and cites §3.3. `delivery/README.md` and the seed point at
+§3.3 and §3.2, with root paths.
+
+**FINDING-162.** Dependencies; checked but for the last part.
+Sections missing or wrong:
+- facts-in-sync's run seat points at the exchange with no section
+  (§6);
+- `CLAUDE.md`'s comment cites agent-arrangement §2.4 for a §2.6
+  fact;
+- the visual-comparison manual says shapes "states its own rule"
+  (§4.3);
+- uncertain: shapes and `TODO.md` cite exchange §3.2 and §2.3 for
+  "one pin", which is §3.5.
+
+Proposed: fix each.
+
+**FINDING-163.** Lessons; checked. Shapes §1 states only in an
+italic that when an output opens, extends and closes is its owning
+convention's. *What this does not cover* points at §1 for it, and
+the shipped `shapes-lifecycle.md` states it. Proposed: fix, move the
+rule into the body.
+
+**FINDING-164.** Lessons; checked. Shapes §1's italic ends "a shape
+catches a part missing, not a part that lost half its meaning". The
+body does not say it. Proposed: fix, one sentence.
+
+**FINDING-165.** Lessons; checked. Shapes §4.3 states only in an
+italic that the page's pictures never carry a fact alone. The
+visual-comparison manual sends readers here for it. Proposed: fix,
+a body sentence.
+
+**FINDING-166.** Layout; checked. Shapes §1 holds two subjects:
+what a shape is, and how one is born and written, with a labelled
+part, "Before a shape is written…", unnumbered. §4 and §5 number
+theirs. Proposed: fix, 1.1 to 1.3.
+
+**FINDING-167.** Lessons; checked. Retrospective §3's italic holds
+two rules the bullets lack: tests are counted from this run's
+reports only; a tool that edits text is checked on what it must not
+touch. The shipped `apply-retrospective` states both. Proposed: fix,
+two bullets.
+
+**FINDING-168.** Lessons; checked. Retrospective §1 gives the
+reason for the apply step only through run 3. Proposed: fix, state
+it in general, and move run 3 to a dated italic.
+
+**FINDING-169.** One home; checked. Retrospective's run seat says
+of the manual's summary "the skills are the source" (line 48). A
+manual is what its skills derive from. Proposed: fix, the skills
+stand on this manual, and the summary says it is one.
+
+**FINDING-170.** Layout; resting on the reader. Retrospective's
+*Why it arrives this way* retells §1's two-steps reason. Proposed:
+fix, point at §1.
+
+**FINDING-171.** Lessons; checked. Commit-plan §2: "Material-first
+is a first-class mode" has one reason only, the seed's third run;
+and "a session inside PLAN's Step 10…" sits in the body. The other
+bullets put their cases in dated italics. Proposed: fix.
+
+**FINDING-172.** Layout; checked. The sweep for moved names is split:
+facts-in-sync §3 says a commit plan's sweep looks again before its
+close and points at commit-plan §2, which states the sweep only in
+part; the skill says "before the close"; `foundation-check.md` *A
+moved section* is a third telling. TODO's "Decide whether each
+seat's copy is written for its seat" notes part of it. Proposed:
+fix, the sweep takes a numbered part in commit-plan §2, and the
+others point at it.
+
+**FINDING-173.** Dependencies; checked. Commit-messages §2's rules,
+an agent file never shares a commit and a commit waits for the word,
+are named by name and not by path: in `foundation-check.md` step 5,
+`PLAN.md` (twice), the commit-plan manual, `TODO.md` and
+`working-a-reading.md`. `PLAN.md` and `working-a-reading.md` rely on
+them with no reference. Facts-in-sync and the commit-plan manual
+give the path with no section. Proposed: fix,
+`docs/conventions/commit-messages/` §2.
+
+**FINDING-174.** Lessons; checked. Facts-in-sync §4 tells history in
+its body: "The rest ran twice by hand before this was a rule…".
+Proposed: fix. The body names what enforces steps 3 to 5 today, and
+the history goes to a dated italic.
+
+**FINDING-175.** Layout; checked. Facts-in-sync §3 holds three
+subjects: the fact reference, the numbering of parts, and the grep
+when a commit renames. Eight pointers land on §3, for different
+parts. The numbering rule's sibling, one subject to a section, is
+conventions §3.3. Proposed: fix, number the three. The reviewer
+decides whether the numbering rule moves beside conventions §3.3
+(FINDING-135).
+
+**FINDING-176.** One home; checked. The concept's bump rule is told
+in `ARCHITECTURE.md` §1.1 and in `CHANGELOG.md`'s header comment,
+neither citing the other. Three manuals point at ADR-0003 and §1.1.
+Facts-in-sync §4 names three targets. Rests on DECISION-14.
+
+**FINDING-177.** Lessons; resting on the reader. The
+visual-comparison manual §2, "The render decides", gives as its
+reason only the Mermaid case. Proposed: fix, one general reason, or
+decline, since the case points back at *What it is for*.
+
+**FINDING-178.** One home; resting on the reader. The conventions
+index says "nothing here restates one", yet it restates
+`commit-plan`'s "plans the commits, not the change",
+visual-comparison's boundary, each convention's moment ("fires
+when…"), and each domain skill's order. TODO's "Make the
+conventions index a full local map" is related. Proposed: fix, keep
+who hands to whom. Or TODO, into that item.
+
+**FINDING-179.** One home; resting on the reader. Two coined words
+are defined in more than one place. "Description": *The words*,
+facts-in-sync §4 and `docs/models/idea-to-output.md` §2, which
+disagree on which texts are descriptions. "Approach": *The words*,
+idea-to-output, and `approach-drafting.md`, which ships, so it keeps
+its own. Proposed: "description" to TODO, the ARCHITECTURE item;
+"approach" fixed, idea-to-output points at *The words*.
+
+**FINDING-180.** Layout; checked. `docs/models/idea-to-output.md` §3
+holds two subjects other text points at, a link and a
+disagreement's rule, in bold parts. §4's parts, Down and Up, are
+unnumbered, where the tiers model numbers the same pair. Rests on
+DECISION-8. Proposed: fix when TODO's "Move conventions §1 to the
+idea-to-output model" moves text here.
+
+**FINDING-181.** Layout; uncertain. The concept tells "tests sample;
+structure forbids" in three chapters (00, 02, 04), and the registry's
+reordering in two. Its labelled parts are unnumbered. Proposed:
+decline. Chapter 00 is the declared overview, each chapter states
+the claim for its own subject, and numbering is TODO's "Number the
+concept chapters' sections".
+
+**FINDING-182.** Lessons; checked. `docs/models/agent.md` ends a
+paragraph "Added 2026-10-24." (line 276), history in a description.
+Proposed: fix, cut it.
+
+**FINDING-183.** Dependencies; resting on the reader. In 8 of the 10
+manuals with *Where to look*, every entry repeats a pointer the page
+already made. Proposed: decline. The form asks for a list of
+landings, and the rule allows "pointers only".
+
+#### Layer 4: `ARCHITECTURE.md`, `README.md`, the records
+
+**FINDING-184.** One home; checked. `ARCHITECTURE.md` §2.5 retells
+exchange §1 (a run is blind, nothing moves up) and §2.2 (the pin and
+the read-through) with a pointer that names no section. The pin is
+defined again in *The words*. "Two skills and two rules of ours" is
+told in §2.4 and §2.5. *The words* gives "take" and "note" no
+pointer. TODO's ARCHITECTURE item carries §2.3 and the counts.
+Proposed: fix §2.5's pointers with sections, drop the second pin
+and the second "two skills", and point the two words at exchange §4
+and §3.7.
+
+**FINDING-185.** Dependencies; checked. `ARCHITECTURE.md` (line 270)
+says where a manual and the concept are handled differently is "that
+manual's *What this does not cover* and ADR-0039". It is
+facts-in-sync §4, which the paragraph already names. Proposed: fix,
+cut the sentence.
+
+**FINDING-186.** Dependencies; checked. `ARCHITECTURE.md`'s header
+comment cites "(project-recording, the deliverer's seat; ADR-0044)"
+by name. Proposed: fix, a root path.
+
+**FINDING-187.** One home; resting on the reader. `README.md`
+retells the tiers model's triggers, "anything general waits on
+three" and the garden rule, citing only ADRs. Their home is
+`docs/models/tiers.md` §2.1 and §2.2. Proposed: fix, add the fact
+reference.
+
+**FINDING-188.** Dependencies; checked. `TODO.md` cites sections by
+bare name in seven Context lines ("project-recording §4", "shapes
+§3", "one-home's rule 5"…). Proposed: fix, root paths.
+
+**FINDING-189.** Dependencies; checked. `TODO.md` points at shapes
+§1 for "read at a step's gate only", which is shapes §3. Proposed:
+fix.
+
+**FINDING-190.** Layout; resting on the reader. `TODO.md` holds the
+worked example's two copies as two items: "Decide whether a check
+compares the worked example's two copies" and "Deduplicate the
+worked example". Proposed: fix, merge with both triggers. Or decline:
+two decisions, two triggers.
+
+**FINDING-191.** Dependencies; checked. Record headers retell their
+manual with no section reference: `CHANGELOG.md`, `TODO.md`,
+`PLAN.md`, `.claude/decisions.md`, and `ARCHITECTURE.md` by name.
+Facts-in-sync §4 step 2: "Every line that uses a part of a
+document, its root included, carries a fact reference to that
+part." Rests on DECISION-10.
+
+**FINDING-192.** Dependencies; checked. `TODO-CONVERSATION-MEMORY.md`
+cites sections by bare name in about ten places. Proposed: decline.
+A part is never rewritten (project-recording §5.5). Rests on
+DECISION-13.
+
+#### Layer 5: our agent setup
+
+**FINDING-193.** One home; checked. `working-a-reading.md` step 8
+(line 74) keeps its own list of when the devlog is written: "at a
+session's end, at a pause, and when a TODO item is added".
+`CLAUDE.md`'s table says "Session ending, a dead end hit, or a TODO
+item added". Proposed: fix, point at the records table.
+
+**FINDING-194.** One home; checked. `CLAUDE.local.md` restates
+commit-messages' "commit on the word" and commit-plan's stop at
+every boundary. agent-arrangement §3.7: it holds settings, never
+rules. TODO's "Decide how work is run by agents" carries it.
+Proposed: TODO, that item.
+
+**FINDING-195.** One home; checked. Five lines say the seats' copies
+are identical, kept true by hand. `approach-drafting.md` is
+identical too and has no such line. TODO's "Decide whether each
+seat's copy is written for its seat" carries the question.
+Proposed: TODO, add `approach-drafting.md` to its list.
+
+**FINDING-196.** Dependencies; resting on the reader. Our derived
+rules and skills use their own manual with few section references:
+`writing.md` 0, `exchange-reading.md` 0, `exchange-deliver` 1,
+`exchange-read` 2, `working-a-reading.md` 3, `one-home.md` 4,
+`convention-manual.md` 5, `foundation-check.md` 7. Rests on
+DECISION-10.
+
+**FINDING-197.** Dependencies; checked. `exchange-reading.md` says
+"When it opens, extends and closes is the exchange's" by name. Its
+home is exchange §6.3 and §6.4. Proposed: fix.
+
+**FINDING-198.** Layout; uncertain. The refinement's §2.5 holds the
+order of the layers, which §1, §2.2 and §2.7 point at. Its §2.3
+also holds how a fix is judged. Proposed: fix, the layers move to
+§2.2, in a commit of its own (approach-drafting, stage 2). The §2.3
+part declined.
+
+#### Layer 6: `delivery/`, what ships
+
+**FINDING-199.** Dependencies; checked. The footers of shipped files
+(met in round 1, item 5): 9 footers, 27 lines, 14 distinct ADRs,
+all in the container. A run can never open one. Shipped text says
+only "the deliverer's to explain". Some name "never-oversold", a
+project a run cannot know. Dropping them would change the bytes of
+4 identical copies. Proposed: fix, keep them, and add one sentence
+to `delivered-copies.md` rule 1: a footer names the decisions a
+copy rests on; to go against one, quote it under *To the
+deliverer*.
+
+**FINDING-200.** One home; checked. The playbook's version is told
+in four places (met in round 1, item 1): the playbook's line and
+three in `pure-seed.md`, none tagged. Proposed: fix, the seed reads
+the version from the playbook's line at birth.
+
+**FINDING-201.** One home; checked. The seed retells exchange §3.2's
+list of pinned copies with counts, untagged (met in round 1, item
+2). It agrees today. Proposed: fix, "every pinned copy
+(`docs/conventions/exchange/` §3.2)", with no counts. The prompt to
+the newborn keeps its counts, and the seed's check compares them
+with the tree.
+
+**FINDING-202.** One home; checked. Shipped files retell a deliverer
+manual with no fact reference (met in round 1, item 3):
+`commit-messages` retells agent-arrangement §1, in both copies;
+`commit-plan` says "commit-messages keeps…"; `approach-drafting.md`
+says "(`commit-messages`)". Proposed: waits on the run's case
+(ADR-0059).
+
+**FINDING-203.** One home; checked. `cbc-bootstrap` and its
+walkthrough both say a hygiene file takes its stack overlay below
+the marker (met in round 1, item 3). Repo-hygiene §2 says nothing
+ships an overlay. TODO's "Decide whether cbc-bootstrap points at the
+Spring hygiene parts" carries it. Proposed: TODO, that item.
+
+**FINDING-204.** One home; checked. The container's entry file
+cites `docs/conventions/project-recording/` §13, which a run cannot
+open. It retells agent-arrangement §2.4's three tests, and seven
+stubs with a `foundation:` line retell project-recording. TODO's
+"Decide how a fact reference is written" names them. Proposed:
+waits on the run's case, through that item.
+
+**FINDING-205.** Dependencies; checked. The shipped `writing.md`
+names "the deliverer's writing manual", which a run cannot open.
+Round 1's DECISION-3 excepted only `one-home.md`. Proposed: decline
+on the same grounds, and name both rules in the exception.
+
+**FINDING-206.** Dependencies; checked. The playbook cites "run 3's
+RETRO Dn" in 12 lines, copied into a run's PLAN at birth. A run
+cannot open run 3's RETRO. Its *For run 5 only* rule is stated only
+for run 5, and run 5 is born. Proposed: fix in the next playbook
+version: the rule in general, "For run <n> only", and the
+citations into the playbook's header comment.
+
+**FINDING-207.** Dependencies; checked. Three template comments
+point at files by a name that stops resolving once the template is
+copied out (`bootstrap.sql`, `testcontainers.properties`,
+`verify-database-model.sql`). Ten template headers tell one fact,
+"the filled file is the run's own (CBC ADR-0008)", which no shipped
+rule holds. Proposed: fix the three with root paths. The headers:
+state the fact once in `delivered-copies.md` rule 1 and point, or
+decline as text read at copy time.
+
+**FINDING-208.** One home; checked. The off-template rule is told in
+four shipped files, and its only home is ADR-0008, which is history.
+Proposed: waits on the run's case. That design must say what a
+retelling points at when its only source is history.
+
+**FINDING-209.** One home; checked. `cbc-bootstrap` tells its traps
+in two or three files each, with no pointers between them: the
+Boot 4 and Testcontainers traps, the missing secret, the
+notation-neutral environment, plural instances. The harness
+reference says "**Masters nothing.**" (line 10) and "the lived
+traps live here" (line 186). Proposed: fix, the walkthrough owns
+each trap, and the others point.
+
+**FINDING-210.** One home; checked. The harness reference holds an
+outcome that its stated home, the walkthrough, lacks: the ground's
+authority split held in evidence runs. Proposed: fix, the outcome
+moves to the walkthrough's step 4.
+
+**FINDING-211.** One home; resting on the reader. Skills, shapes and
+templates state the same form: the slice record's outline, the
+backstop at the red run, a cost's size, the registry entry's
+fields, a body asserted by path. TODO's "Decide how an approach and
+a shape divide an output" carries the question. Proposed: TODO,
+these instances into that item.
+
+**FINDING-212.** One home; checked. The worked example's two copies
+have no owner. Only `cbc-framing-workflow.md` says they are a pair,
+and a run editing `cbc-slice`'s copy meets no line saying the other
+follows. Proposed: fix, `cbc-framing`'s copy owns, and
+`cbc-slice-workflow.md`'s header says its copy follows.
+
+**FINDING-213.** One home; checked. `delivery/README.md` retells the
+playbook's steps with no fact reference. Proposed: fix, point at
+the playbook.
+
+**FINDING-214.** One home; checked. The container's entry file says
+the order of questions "is not restated here", then restates it
+without "world" (`concept/00-cbc.md` line 31). Proposed: fix, drop
+the parenthesis.
+
+**FINDING-215.** One home; checked. `delivered-copies.md` says the
+deliverer's side "is not here; the run never needs it", then rule 4
+tells the deliverer's read and verdicts (exchange §6.1, §6.5). Rule 1
+also holds part of rule 2's subject. Proposed: fix, rule 4 keeps
+what the run acts on, the three verdicts.
+
+**FINDING-216.** One home; checked. Shipped retellings that name
+their source in prose: 7 places, among them the container's entry
+file, decisions log and `temp/README.md`, `infra-serve`'s "Hard
+lines (same as establishment)". Proposed: waits on the run's case;
+the list is that design's evidence.
+
+**FINDING-217.** One home; resting on the reader. Shipped retellings
+that do not name their source, whose source a run holds:
+`infra-establish` lists five of the framing workflow's six runtime
+ground lines; `cbc-slice-workflow.md` retells the run's
+`ARCHITECTURE.md` Invariants columns; the container's README counts
+"five chapters". Proposed: fix, each points.
+
+**FINDING-218.** One home; resting on the reader. *The whole system
+in plain words* says it is a summary, but names its owners only as
+"the detailed docs". Proposed: fix, name them by path.
+
+**FINDING-219.** Dependencies; checked. Pointers into another skill
+by bare file name: four in `cbc-framing` and `infra-serve`. Within a
+skill, 32 `references/…` paths and about 13 bare sibling names.
+Proposed: fix the four with root paths. The rest to TODO's "Decide
+how a fact reference is written", a form choice over about 45
+lines.
+
+**FINDING-220.** Dependencies; checked. Shipped rules named in prose:
+"the shapes rule" 8 times, "the delivered-copies rule" 5 times, and
+two paths to `shapes-lifecycle.md` without the section they rely on.
+Proposed: TODO, the fact-reference item.
+
+**FINDING-221.** Dependencies; checked. `approach-drafting.md` tells
+the run "**At the deliverer:** open `approach-evaluation`". The
+line is labelled for the deliverer, and TODO's seat-copy item
+carries it. Proposed: decline.
+
+**FINDING-222.** Lessons; checked. The `visual-comparison` skill
+states "one obvious answer means a clear answer" only inside a case,
+the deliverer's own, and no run is named. Two more cases sit in its
+body, and its §4 is a list of cases by design. Rests on
+DECISION-7.
+
+**FINDING-223.** Lessons; checked. The harness reference states
+rules through "passes" a run cannot place: "the third pass evolved
+this to…", "the second pass closed it… the third relied on…", and
+six more pass names. Variation point 9 tells its own history.
+Rests on DECISION-7.
+
+**FINDING-224.** Lessons; resting on the reader. "Lived" markers in
+the stack and method texts, about 18. Some carry a fact the reader
+acts on, the version tested on or a trial status. Others tell a
+case a fresh run cannot know: "both lived runs", "distilled from a
+two-seat discipline". The walkthrough's "Lived realization (once)"
+ends in a case line. Rests on DECISION-7.
+
+**FINDING-225.** Layout; checked. `cbc-slice`'s stages sit at two
+heading levels: `## Stage 0`, then `### Stage 1` to `### Stage 4`.
+Conventions §2, whose example this skill is, binds it. Proposed:
+fix, all at `##`.
+
+**FINDING-226.** Layout; checked. Two shapes, `evidence-test.md` and
+`kill.md`, say what they leave out in two sections each. Proposed:
+fix, under *What is exempt* only.
+
+**FINDING-227.** Layout; resting on the reader. `cbc-framing`'s
+"Export and handoff" holds four subjects; `infra-establish`
+describes its two manuals in three places; the worked example lays
+out Part 1 by headings and Part 2 by bold leads. Rests on DECISION-8.
+Proposed: TODO, the plain rewrite of the method's texts.
+
+**FINDING-228.** Layout; checked. The walkthrough's §4 has two
+labelled parts with no numbers, where §1 to §5 are numbered. The
+harness reference's variation point 9 is a decided rule among open
+points. Rests on DECISION-8. Proposed: fix, 4.1 and 4.2; point 9
+declined.
+
+### Decisions
+
+**DECISION-7.** Does a lesson taken (conventions §3.7) reach text
+other than manuals? Rests: FINDING-222, 223, 224, 206.
+- (a) Yes, every text: a derived file states a rule in general, and
+  a case goes or becomes a dated italic.
+- (b) Manuals only: the rest is declined.
+- (c) Manuals, and the files derived from a convention in both
+  seats. The method's and the stack's texts go to TODO's "Rewrite
+  the method's texts plain".
+- Recommended: (c). The method's texts are rewritten anyway, and a
+  second pass now would be undone there. Facts-in-sync §4 already
+  says a derived file "applies, it does not explain".
+
+**DECISION-8.** Does Layout reach text other than manuals? Rests:
+FINDING-180, 227, 228; the reach of 198, 225, 226.
+- (a) Manuals only.
+- (b) Every description: the manuals, the models, `ARCHITECTURE.md`,
+  the concept. Facts-in-sync §3's numbering speaks of any
+  "document".
+- (c) Every text, skills and approaches too.
+- Recommended: (b), with the method's texts left to the plain
+  rewrite, as in DECISION-7.
+
+**DECISION-9.** How are §3.3's parts numbered? Rests: FINDING-136.
+ADR-0065 kept §3.3, §3.4 and §3.7 and left the gap.
+- (a) `#### 3.3.1` and on, under §3.3. Every pointer to §3.3 still
+  lands.
+- (b) Renumber §3: the option ADR-0065 rejected, now for a change
+  of form.
+- (c) New numbers after §3.7, out of order.
+- Recommended: (a).
+
+**DECISION-10.** Does facts-in-sync §4 step 2, "every line that uses
+a part of a document, its root included, carries a fact reference",
+reach a derived file's lines about its own manual, and our record
+headers? Rests: FINDING-191, 196. On 2026-10-21 the reviewer held
+that the `foundation` grep reaches such a line
+(`TODO-CONVERSATION-MEMORY.md` §7); §4 step 2 was written later.
+- (a) Yes: each such line gains a section reference now.
+- (b) No: the `foundation` line covers lines about its own root,
+  and §4 step 2 says so.
+- (c) Decided in TODO's "Decide how a fact reference is written",
+  with the form.
+- Recommended: (c). Fixing now, in a form that item may change,
+  does the work twice.
+
+**DECISION-11.** Where do the rules of a step live? Rests:
+FINDING-144.
+- (a) Project-recording. `PLAN.md`'s step form keeps the form, and
+  each retelling carries a fact reference.
+- (b) `PLAN.md`'s step form. Project-recording points at it.
+- Recommended: (a). A description states, and a record's form
+  applies (facts-in-sync §4).
+
+**DECISION-12.** Where does "which record answers what" live?
+Rests: FINDING-145, and the records map.
+- (a) Project-recording §1, the map this step builds. `CLAUDE.md`'s
+  table derives from it. README and the codemap point.
+- (b) `CLAUDE.md`'s table, as one-home rule 1 says today. The map
+  is a summary that names it.
+- Recommended: (a), decided with the map's form by
+  `visual-comparison`. The map covers both seats; the table, one.
+
+**DECISION-13.** Are `.claude/decisions.md`'s entries and
+`TODO-CONVERSATION-MEMORY.md`'s parts history? Rests: FINDING-192,
+and the round's coverage of the two files. The one-home rule's
+*Not a second home* names neither.
+- (a) Yes: both are dated and never rewritten. Their headers are
+  living. The rule's list gains them after the round.
+- (b) No: One home and Dependencies read them whole before the
+  round's work.
+- Recommended: (a).
+
+**DECISION-14.** Where does the concept's bump rule live? Rests:
+FINDING-176.
+- (a) `ARCHITECTURE.md` §1.1. `CHANGELOG.md`'s comment carries a
+  fact reference, and facts-in-sync §4 names one target. Two edits.
+- (b) `CHANGELOG.md`'s comment. §1.1 points, and four pointers
+  change.
+- Recommended: (a). Three manuals already point at §1.1.
+
+### Met in round 2, of other kinds
+
+Not round 2's kinds. Listed so the work can fix them where it
+touches the same file, or the last read (§2.9) takes them.
+
+- `TODO.md`: "a `paths:` rule loads only on a Read". Since
+  agent-arrangement §5.6, a shell read loads one too.
+- `.claude/approaches-on-trial/approach-drafting.md`, both copies:
+  "The refinement is open." goes stale at the close.
+- `docs/conventions/shapes/`: "a trial for run 4's second slice",
+  where TODO's item names run 5's first.
+- The container's `.gitignore` names `.claude/settings.json` as "the
+  committed shape"; the container ships none.
+- `ARCHITECTURE.md` §2.2: two stack skills carry templates;
+  `cbc-framing` does too.
+- `cbc-bootstrap` and `establishment-walk.md` call the container's
+  README a stub; `delivery/README.md` §4 says it carries a composed
+  body.
+- `commit-plan`'s frontmatter `requires: project-recording`, a skill
+  that does not exist.
+- 29 mid-sentence `CBC ADR` citations in the method's and stack's
+  texts, against conventions §2.
+- `one-home.md` rule 3 says `ARCHITECTURE.md` §1.2 gives "the manual
+  for the rest"; §1.2 gives no paths.
+- `apply-retrospective`: "Links point at labels, never section
+  numbers", against facts-in-sync §3, for the run's seat.
+- `system-readiness.md` breaks READINESS-5 "on a branch";
+  `cbc-slice` takes the red "in a state that never lands in
+  history".
+- `cbc-framing-workflow.md`'s "so far" claims, from before runs 4
+  and 5.
+- `exchange-read` names its phases as steps, not stages
+  (conventions §2).
+- The refinement's §1 defines its own words outside *The words*;
+  round 3's, and its §3 already names "stage".
+
+### The read's counts
+
+94 findings, FINDING-135 to 228, from 114 before duplicates were
+merged:
+- by kind: 30 One home, 24 Dependencies, 19 Lessons, 21 Layout;
+- by how they stand: 71 checked, 20 resting on the reader, 3
+  uncertain;
+- known before the read: all 5 of *Met in round 1, for round 2*,
+  items 1 to 5 as FINDING-200, 201, 202 with 203, 142 and 199; and
+  the 3 Layout items from the redesign. Of those, §3 now holds one
+  subject, and its stale count goes with FINDING-135. The links are
+  still split in two places, FINDING-141 and 175. §3.3's parts are
+  FINDING-136;
+- proposed: 67 fixed, 4 declined, 5 to TODO, 1 split between a fix
+  and TODO (FINDING-179), 4 waiting on the run's case, and 13
+  resting on a decision.
+
+Eight decisions, DECISION-7 to 14.
