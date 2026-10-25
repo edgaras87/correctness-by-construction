@@ -1193,6 +1193,19 @@ ADR-0065 kept §3.3, §3.4 and §3.7 and left the gap.
   of form.
 - (c) New numbers after §3.7, out of order.
 - Recommended: (a).
+- Chosen: (d), raised by the reviewer, 2026-10-25: no gap and no
+  third level. TODO's "Move conventions §1 to the idea-to-output
+  model" is due, its trigger round 2's read of layer 1, and moving
+  §1 shifts every number anyway. So layer 1's work moves §1 first,
+  then renumbers the manual once: §1 the artifact, its parts 1.1 to
+  1.4 (FINDING-138); §2 the manual, its parts 2.1 to 2.9, one for
+  each section of the form (FINDING-136); §3 adding a convention.
+  The 28 living pointers into the manual are fixed in that commit
+  (`docs/conventions/facts-in-sync/` §3). ADR-0065 rejected a
+  renumbering that changed no meaning; this one gives each part of
+  the form a home. Splitting the convention in two was weighed and
+  not taken: the `foundation` line ties its two halves, and a second
+  manual adds its own frame.
 
 **DECISION-10.** Does facts-in-sync §4 step 2, "every line that uses
 a part of a document, its root included, carries a fact reference",
