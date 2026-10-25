@@ -1,8 +1,9 @@
 # 0065. The facts-in-sync convention
 
 Date: 2026-10-25
-Status: Proposed (2026-10-25, under the commit plan for
-facts-in-sync).
+Status: Accepted (2026-10-25, at the set's records commit; opened
+Proposed under the commit plan for facts-in-sync, decision 6 added
+since).
 
 ## Context
 
@@ -76,6 +77,14 @@ text defines (TODO, the fact-reference item;
    its numbers, with one line where §3.1, §3.2, §3.5 and §3.6 were;
    project-recording §11 keeps its pipeline, its rule 1 pointing at
    the new manual.
+6. **Decided while the plan ran:**
+   - a fact reference has one target: the home of the fact its line
+     relies on. Which way a reference may point stays open (TODO);
+   - a description states what is true today; how it came to be is
+     history's: the ADRs, the devlog, commit bodies and a lesson's
+     dated italic;
+   - the walk is named: the greps for a changed description's path
+     and name, and the re-read of each line they find.
 
 ## Consequences
 
@@ -86,4 +95,4 @@ text defines (TODO, the fact-reference item;
 - The shipped `one-home.md` changes its `foundation` now, and again
   when a run's case is designed.
 - The staying-in-step item closes. The fact-reference item keeps
-  the written form and a run's case.
+  the written form, its one name and a run's case.

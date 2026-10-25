@@ -19,7 +19,7 @@ kind.
 | 1 | Wiring | a link the rules require that is missing or does not resolve: a manual's list of what derives from it, a `foundation` line, a pointer's path or section | `docs/conventions/conventions/` §3.5, steps 1 and 2; §3.2 |
 | 1 | Agreement | a manual and what derives from it say different things, read from both sides: each derived file against its manual, and each seat against the files its side holds | `docs/conventions/conventions/` §3.4, §3.5 |
 | 2 | One home | a fact told in more than one place | `.claude/rules/one-home.md` |
-| 2 | Dependencies | a retelling where a pointer would do, or a pointer not needed | `docs/conventions/conventions/` §3.1 |
+| 2 | Dependencies | a retelling where a pointer would do, or a pointer not needed | `docs/conventions/facts-in-sync/` §2 |
 | 2 | Lessons | a case written as the rule | `docs/conventions/conventions/` §3.7 |
 | 2 | Layout | a section that holds two subjects, or one subject spread over several sections | `docs/conventions/conventions/` §3.3, once it says one subject to a section (§2.3) |
 | 3 | Writing | text older than ADR-0053, against the whole rule | `.claude/rules/writing.md` |
@@ -425,5 +425,32 @@ worked example's two copies.
 The fix proposed: the staying-in-step convention, with the fact
 reference defined in it, landed before round 2 reads, as a commit
 plan, each fix judged on §2.3's four questions.
+
+How each check ended, 2026-10-25, under the commit plan for
+facts-in-sync (ADR-0065):
+
+- **One home:** in doubt, fixed. Its rule's home moved:
+  project-recording §11 rule 1 is now
+  `docs/conventions/facts-in-sync/` §1, and both `one-home.md`
+  rules stand on it. The tag is named the fact reference, with two
+  readers, the agent and the walk (§3). Its form with a title, and
+  one name for it, stay open (TODO, the fact-reference item).
+- **Dependencies:** in doubt, fixed. Its rule moved whole, from
+  conventions §3.1 to facts-in-sync §2.
+- **Lessons and Layout:** not in doubt.
+
+The verdict, kept. Before, the rules were told in 5 sections of 2
+manuals; now in 1 manual, of 281 lines. The conventions manual went
+from 456 lines to 309, project-recording from 954 to 906.
+
+1. **Maintenance:** a change to how facts are kept in sync touches
+   one manual, not two.
+2. **Readability:** the rules sit in one manual, under one
+   statement, not among two manuals' other subjects.
+3. **Future-proofing:** the fact reference's written form, when
+   settled, changes at §3 alone.
+4. **Complexity:** one manual more, twelve in all; 195 lines left
+   two manuals and 281 came in, the difference mostly its own frame: the
+   opening, the seats, the channel and the boundary.
 
 Not yet confirmed by the reviewer.

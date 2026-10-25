@@ -29,24 +29,6 @@
 
 ## Now (due while the open step runs)
 
-- [ ] Write the staying-in-step convention (2026-10-24, ADR-0063).
-      Context: keeping a copy in step with its home is spread over
-      project-recording §11 and `docs/conventions/conventions/`
-      §3.1, §3.2, §3.5 and §3.6; `one-home` and the foundation check
-      act on them. ADR-0063 decision 7 moves them to a convention of
-      their own, in round 2.
-      Ideas:
-      - with it, ADR-0063's other parts for round 2: conventions §1
-        to the idea-to-output model; *The words*' "model" entry; the
-        approach hand-off chain's rename; a grep for `requires` in
-        the walk.
-      - shapes §5.2 and conventions §3.6 each settle a difference
-        their own way, both cases of `docs/models/idea-to-output.md`
-        §3, and may point at it once written.
-      Trigger: round 2's rule check, before it reads
-               (`.claude/approaches-on-trial/refinement.md` §2.3).
-      See: ADR-0063; devlog 2026-10-24, the text-division item.
-
 ## Next (each due at its trigger)
 
 - [ ] Write `exchange-birth` while a birth runs (2026-09-26, the
@@ -195,7 +177,8 @@
       - an approach is written without the output's form; a part a
         shape needs is asked for as content, in the approach's own
         words.
-      - such an ask is tagged to the shape only for the walk; the
+      - such an ask carries a fact reference to the shape only for
+        the walk; the
         shape says it is read at the gate.
       - a part may be optional, and the shape marks it so.
       - a part considered and empty says "none, because…", so it
@@ -268,18 +251,16 @@
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, the `claude-md-management` part, and §14.
 
-- [ ] Define the fact reference, and stop calling it a tag
+- [ ] Decide how a fact reference is written, and give it one name
       (2026-10-24, the reviewer).
-      Context: a line that relies on a fact written elsewhere carries
-      the address of its home, today called a tag (`one-home` rule 2,
-      project-recording §11), defined nowhere in *The words*. "Tag"
-      also names git tags, image tags and the repo prefix "CBC
-      ADR-0053" (ADR-0020). Like a Java object reference: one fact,
-      many lines pointing at it. Unlike one, a retelling holds a
-      copy, so the walk re-reads it when the home changes.
+      Context: `docs/conventions/facts-in-sync/` §3 defines the fact
+      reference: the address of a fact's home, read by the agent and
+      by the walk, written today as a path and a section (ADR-0065).
+      A title in it was deferred: about 200 references would be
+      rewritten. "Pointer" names it too, as a noun, in 50 uses across
+      19 files; "tag" now names only git tags, image tags, the repo
+      prefix and ids.
       Ideas:
-      - *The words*: "fact reference", with "home" defined as the
-        fact's single source of truth.
       - written `(<path>, §<number>, <title>)`, no prefix word, no
         ids; a long title may be cut to its first words. The 137
         numbered titles average 13 characters, and 13 are over 30.
@@ -288,13 +269,9 @@
         widening `docs/conventions/facts-in-sync/` §3's grep for a
         moved section.
       - the repo prefix keeps its own name.
-      - a fact reference serves two readers: the agent, which may
-        follow it (pulled, `docs/models/agent.md` §4.2, with no
-        guarantee, claim P1), and the walk, which re-reads the line
-        when the home changes. "Pointer" names the first in the
-        agent model and the second in
-        `docs/conventions/facts-in-sync/` §3; with the fact
-        reference defined, "pointer" stays the agent model's.
+      - "pointer" goes as a noun; "link" and "points" stay, the
+        model's words. Or it stays the agent model's word for what
+        an agent may follow (`docs/models/agent.md` §4.2).
       - a fact reference in a shipped file names its repo, as a
         shipped decision does with `CBC ADR-nnnn`: `(<repo>,
         <path>, §<number>, <title>)`. A run holds no manuals, so a
@@ -306,24 +283,18 @@
         and its entry file's guard retell project-recording or
         agent-arrangement with no reference to a section; each gets
         them in the settled form.
-      - a fact reference that jumps a level, an approach citing a
-        model, may mean a convention, or a part of one, is missing
-        between them; or none is needed, since the walk finds the
-        jump when the model changes. Noted, not solved, until a case
-        forces it. The one case, `auto-run.md` citing the agent
-        model's §10.4, closed when the binding moved into
-        agent-arrangement (ADR-0064): the missing part was a
-        convention's. When a piece is placed (`approach-evaluation`
-        stage 5), or a run's approach rewritten here (stage 6), its
-        references move to their new homes; nothing says so yet.
+      - when a piece is placed (`approach-evaluation` stage 5), or a
+        run's approach rewritten here (stage 6), its references move
+        to their new homes; nothing says so yet.
       - a missing fact reference is found by nothing: the walk sees
         only lines that carry one. At each commit, each new or
         changed line is asked whether it relies on a fact written
         elsewhere and, if so, whether it says where. Lived: the 11
         manuals' channel sections reasoned from the agent model
-        untagged until 2026-10-24.
-      Trigger: with "Write the staying-in-step convention".
-      See: devlog 2026-10-24, the text-division item;
+        without one until 2026-10-24.
+      Trigger: the refinement's close, once round 2's Dependencies
+               reading has met every reference.
+      See: devlog 2026-10-24, the text-division item; ADR-0065;
       `TODO-CONVERSATION-MEMORY.md` §13.
 
 - [ ] Decide how an item names the items it waits on, and what
@@ -396,13 +367,13 @@
 - [ ] Make the conventions index a full local map (2026-09-30, the
       reviewer).
       Context: its chain shows only the conventions that act in
-      sequence during a piece of work. The other eight relate by what
+      sequence during a piece of work. The other nine relate by what
       they govern, read or describe, stated as about thirty pointers
       across the manuals' *What this does not cover*, and seen
       together nowhere. The local-map rule now exists
       (`docs/conventions/project-recording/` §8.6, ADR-0045).
       Ideas:
-      - all eleven and how each touches the others, derived from
+      - all twelve and how each touches the others, derived from
         those pointers, built by `visual-comparison`.
       - three links, each with its upkeep: derives
         (`docs/conventions/facts-in-sync/` §4, the foundation
@@ -628,6 +599,24 @@
       Trigger: the next birth's Step 3 close.
       See: devlog 2026-09-12, later.
 
+- [ ] Move conventions §1 to the idea-to-output model, as ADR-0063
+      left for round 2 (2026-10-24, ADR-0063).
+      Context: ADR-0063 decision 7 gave round 2 two moves. The rules
+      for keeping facts in sync went to their own convention before
+      round 2 read (ADR-0065). The other, what a convention is,
+      `docs/conventions/conventions/` §1, to
+      `docs/models/idea-to-output.md`, has not moved.
+      Ideas:
+      - with it: *The words*' "model" entry; the approach hand-off
+        chain's rename; a grep for `requires` in the walk
+        (`docs/conventions/facts-in-sync/` §4, step 3).
+      - shapes §5.2 and `docs/conventions/facts-in-sync/` §5 each
+        settle a difference their own way, both cases of
+        `docs/models/idea-to-output.md` §3, and may point at it.
+      Trigger: round 2's reading of the conventions manual, its
+               layer 1.
+      See: ADR-0063; devlog 2026-10-24, the text-division item.
+
 - [ ] Decide which ideas here are models (2026-10-24, the
       reviewer).
       Context: three models exist: agent, tiers, idea-to-output. A
@@ -640,8 +629,8 @@
       - the deliverer and the run, with seats.
       - a shape, whose `docs/conventions/shapes/` §1 and §2 say what
         one is.
-      Trigger: "Write the staying-in-step convention", done: a model
-               is born from a convention.
+      Trigger: the refinement's close, once facts-in-sync, whose
+               subject is the first idea, has lived through round 2.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
 
 - [ ] Decide whether a model ships to a run (2026-10-24, the
