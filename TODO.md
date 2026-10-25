@@ -729,6 +729,9 @@
       - kept at one or two pages: the pairing, where things go, and
         pointers into the local maps.
       - run-only, our map moved into the README.
+      - project-recording §8 lists each seat's parts, each marked
+        as owned (its home) or summarized (points at its owner),
+        with the reader of each; a part no one reads goes.
       Trigger: round 2's reading of layer 4.
       See: devlog 2026-10-25; `TODO-CONVERSATION-MEMORY.md` §17.
 

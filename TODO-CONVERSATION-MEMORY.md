@@ -1087,3 +1087,50 @@ it be a run's thing only?
   file of its own.
 - Not in the facts-in-sync plan: round 2 reads layer 4 next, and
   what falls outside its kinds is this item.
+
+### 2026-10-25, later
+
+#### What the reviewer asked
+
+Should project-recording's ARCHITECTURE part say what each seat's
+ARCHITECTURE holds: ours the pairing, where each thing goes, and
+pointers into the local maps; a run's what `cbc-bootstrap`,
+`cbc-slice` and the entry file do with it? Should that list stay
+open to grow, shrink or change? And in their words: "how I
+understand it is still mostly referering to things and is not as
+one-home thing? so it should obey for referencing stuff and not
+claim them. if we decide glosary as where we put it , that it could
+be one-home for it. but maybe we should consider option that its
+not one-home thing? i know sure about any of that. in runs, it also
+not one-home thing too? or is it? should it be?"
+
+#### Points made
+
+- project-recording already lists both seats' parts: §8.4 a run's,
+  its deliverer's seat ours. What it lacks is a reader for each
+  part. The reviewer's two lists differ in kind: ours says what it
+  holds, the run's says who reads or writes it. Each part needs
+  both, and a part no one reads goes.
+- The list changes on evidence like any description
+  (`docs/conventions/facts-in-sync/` §5); nothing special is
+  needed.
+- Two kinds of content. Summaries are not a home: they name their
+  owner (`one-home` rule 3) and must point, never claim; most of
+  ours is this kind, and §2.3's list of which convention owns each
+  container file claims what the `foundation` lines say. Facts it
+  owns are a home: the records table gives it the shape of the
+  system.
+- In a run it is a home: each Invariants row is the current home of
+  a rule the system keeps, the slice record being history (run 3's
+  RETRO D10) and the code what the row points into.
+- In ours it barely is: the pairing, which *The words*' "made
+  usable" repeats; the known-wrong list; and *The words*, home of
+  each coined word by writing rule 6. Moved to its own file, the
+  glossary is that home and ARCHITECTURE points at it.
+- It should be a home for the shape and nothing else. With
+  pointers only it would be a local map, relations only
+  (project-recording §8.6); without the shape to own, the run-only
+  idea wins for our seat.
+- Read this way it is a record, its owned parts output and its
+  header the approach, not a description: facts-in-sync §4's list
+  would be the side that is wrong. The item decides.
