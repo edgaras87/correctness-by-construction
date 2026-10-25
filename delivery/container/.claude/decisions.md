@@ -32,7 +32,7 @@
   first note.
   Conventions: project-recording, commit-messages, repo-hygiene,
   commit-plan, exchange, agent-arrangement, visual-comparison,
-  shapes, writing, retrospective.
+  shapes, writing, retrospective, facts-in-sync.
   Approaches on trial: approach-drafting.
   Why: the deliverer's defaults. Their decisions are cited
   CBC ADR-nnnn and are the deliverer's to explain.

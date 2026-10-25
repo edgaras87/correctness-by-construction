@@ -1,5 +1,5 @@
 ---
-foundation: the project-recording convention
+foundation: the facts-in-sync convention
 ---
 
 # One home per fact
@@ -9,7 +9,7 @@ config. Where it lives, never how it reads.
 
 <!-- No paths: line, so this loads at the start of every session:
      a fact can be retold in any line written. The why is the
-     deliverer's project-recording manual, §11, rule 1. -->
+     deliverer's facts-in-sync manual, §1. -->
 
 ## The rules
 
@@ -35,5 +35,5 @@ was true then. They are never updated, so they cannot drift.
 
 ## Decisions
 
-- CBC ADR-0053 — one home per fact is project-recording's, and its
-  rule loads in every session
+- CBC ADR-0053 — the one-home rule loads in every session
+- CBC ADR-0065 — one home is facts-in-sync's
