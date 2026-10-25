@@ -77,15 +77,16 @@ and is either derived from it or checked against it.
 
 ### 1.2 The conventions — `docs/conventions/`
 
-**Eleven manuals: how work is done here, and why each rule is the
+**Twelve manuals: how work is done here, and why each rule is the
 shape it is.** Recording, committing, hygiene, how an agent is
 arranged, how a choice between things you look at is settled, the
 exchange — how a delivery goes down to a run and how what the run
 learned comes back — shapes, what a kind of output looks like and
 where that description sits — writing, how a text reads — the
 retrospective, how a finished run looks back and applies what it
-found — and conventions themselves, what one is and how it is
-made.
+found — facts in sync, how each fact keeps one home and every text
+relying on it stays in agreement with it — and conventions
+themselves, what one is and how it is made.
 
 None of it is CbC. The concept is about how a system is built; the
 conventions are about how a repo is kept.
@@ -147,10 +148,10 @@ files, and the README of its scratch space, `temp/`.
 
 **This is the conventions made usable**, the way the method is the
 concept made usable. Every one of its twenty-three files but one is the
-artifact of one of ten of the eleven manuals in 1.2 — `conventions`
-ships nothing — the records and
-`delivery/container/.claude/rules/one-home.md` belong to
-`project-recording`, the entry file and the decisions log to
+artifact of one of eleven of the twelve manuals in 1.2 — `conventions`
+ships nothing — the records belong to `project-recording`,
+`delivery/container/.claude/rules/one-home.md` to facts-in-sync,
+the entry file and the decisions log to
 `agent-arrangement`, the three dotfiles to `repo-hygiene`,
 `commit-messages`, `commit-plan` and `visual-comparison` to the
 conventions named after them, `retrospective` and
@@ -357,7 +358,7 @@ devlog/              work history, one file per month
 concept/             the concept: five chapters, 00-cbc.md first (§1.1)
 docs/
 ├── adr/             decisions and why
-├── conventions/     eleven manuals and their index (§1.2)
+├── conventions/     twelve manuals and their index (§1.2)
 ├── models/          agent, tiers, idea-to-output; none ships
 └── baselines/       trial evidence withheld from runs (ADR-0035)
 delivery/
@@ -445,9 +446,20 @@ manual owns the thing a word names, pointed at there.
   whole of it stands on: its description, or the practice it was
   written under. A skill, a rule, a shape, a record's form and a
   manual standing on a model carry one; a line that uses a part of a
-  document carries a tag to that part instead
-  (`docs/conventions/conventions/` §2, §3.5). Not *source*: that
+  document carries a fact reference to that part instead
+  (`docs/conventions/conventions/` §2;
+  `docs/conventions/facts-in-sync/` §4). Not *source*: that
   was a run's word for the deliverer, and is not ours.
+- **link** — a relation from a lower text to the upper one it
+  relies on: stands on, points, governs, written from, requires
+  (`docs/models/idea-to-output.md` §3). Wider than a fact
+  reference, which is what one kind of link, points, writes down.
+- **fact reference** — what a line carries when it relies on a fact
+  written elsewhere: the address of the fact's home, today a path
+  and a section (`docs/conventions/facts-in-sync/` §3).
+- **walk** — what a change to a description sets off: the greps for
+  its path and its name, and the re-read of each line they find
+  (`docs/conventions/facts-in-sync/` §4, step 3).
 - **step** — one piece of PLAN's work, a run's or ours. What makes
   work a step here is our `PLAN.md`'s step form (ADR-0057).
 - **conversation-memory** — the talk that shaped a TODO item,
