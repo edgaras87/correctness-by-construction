@@ -668,7 +668,7 @@
       Trigger: round 2's Dependencies reading, which reads every
                pointer.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1;
-      devlog 2026-10-25; `TODO-CONVERSATION-MEMORY.md` §16.
+      devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §16.
 
 - [ ] Decide whether a model may be written for one convention
       (2026-10-23, the reviewer).
@@ -698,7 +698,7 @@
         close.
       Trigger: round 2's One home reading, which meets the five
                lines.
-      See: devlog 2026-10-25; `TODO-CONVERSATION-MEMORY.md` §15.
+      See: devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §15.
 
 - [ ] Decide what kind of text our ARCHITECTURE is, and its size
       (2026-10-25, the reviewer).
@@ -722,7 +722,7 @@
         as owned (its home) or summarized (points at its owner),
         with the reader of each; a part no one reads goes.
       Trigger: round 2's reading of layer 4.
-      See: devlog 2026-10-25; `TODO-CONVERSATION-MEMORY.md` §17.
+      See: devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §17.
 
 ## Later / someday
 
