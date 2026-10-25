@@ -751,8 +751,9 @@
       - `.claude/approaches-on-trial/approach-drafting.md` is
         identical in both seats too, and no line says so (round 2's
         FINDING-195).
-      Trigger: round 2's One home reading, which meets the five
-               lines.
+      Trigger: round 2's work on layer 5, before its fixes. Round
+               2's One home reading met the five lines, and
+               FINDING-142 and 202 edit identical copies.
       See: devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §15.
 
 - [ ] Decide what kind of text our ARCHITECTURE is, and its size
@@ -780,7 +781,8 @@
         `docs/conventions/facts-in-sync/` §4 and in
         `docs/models/idea-to-output.md` §2, and the three disagree
         on which texts are descriptions (round 2's FINDING-179).
-      Trigger: round 2's reading of layer 4.
+      Trigger: round 2's work on layer 4, before its fixes, which
+               rest on it: FINDING-145, 179 and 184.
       See: devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §17.
 
 - [ ] Decide whether a manual keeps the story behind a lesson
