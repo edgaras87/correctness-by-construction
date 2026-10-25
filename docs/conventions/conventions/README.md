@@ -24,11 +24,6 @@ Nothing shipped of its own; what a repo holds is:
   — a run's, and this convention's artifact there (§2);
 - **`.claude/rules/convention-manual.md` — the form of a manual,
   the deliverer's**, loading whenever a manual is opened;
-- **`.claude/rules/foundation-check.md` — §3.5 and §3.6 at the
-  commit, and §3.2's grep for a renamed or renumbered section, the
-  deliverer's**, loaded in every session and acting before a commit
-  is staged that touches a description or what derives from it, or
-  moves a section;
 - **the index, `docs/conventions/README.md`** — a pointer: the
   chain, relations only (ADR-0032), and one line sending a
   reader here and to `ARCHITECTURE.md` §1.2.
@@ -45,7 +40,7 @@ written from the deliverer's seat.
 ## 1. What a convention is
 
 Each one is two things, kept apart — and from everywhere else,
-only pointers (§3.1):
+only pointers (`docs/conventions/facts-in-sync/` §2):
 
 - **A manual**, `docs/conventions/<name>/README.md`. What this is,
   how it works, why, with pointers to the decisions. Written for a
@@ -69,7 +64,8 @@ own (`docs/conventions/agent-arrangement/` §3.1).
 ignore this, with a reason it can give*. That freedom is the
 worker's, in one case, with the reason where that repo's records
 live; an artifact derived from the manual says what the manual
-says, and a pointer says nothing of its own (§3.1). A run that
+says, and a pointer says nothing of its own (`docs/conventions/facts-in-sync/`
+§2). A run that
 ignores a convention, gives no reason and comes to no harm has
 found one nobody owes anything to, which is a method filed in the
 wrong place. The manual is where that is recorded when it happens;
@@ -113,7 +109,8 @@ foundation: the <name> convention
 - `requires` names the conventions this one delegates rules to; a
   receiver lands a convention together with its chain.
 - `foundation` says what the whole file stands on *now* — a live
-  claim, never history — and a file has one (§3.5, step 2). Every
+  claim, never history — and a file has one (`docs/conventions/facts-in-sync/`
+  §4, step 2). Every
   skill and rule carries one, shipped or this repo's own, and so
   does every shipped shape, in frontmatter of its own: for the
   method, the concept and its version, `concept v1`; for the stack
@@ -122,7 +119,8 @@ foundation: the <name> convention
   by name, `the exchange convention`; for a shape, the convention it
   lives under, `practice, under the shapes convention`; for a
   record's form, the convention it comes from, `the
-  project-recording convention` (§3.5, step 2); for a manual whose
+  project-recording convention` (`docs/conventions/facts-in-sync/` §4,
+  step 2); for a manual whose
   idea a model states, in frontmatter of its own, the model by name,
   `the agent model`. The value carries the relation where it is not
   derivation. Concept chapters and models carry none; they are the
@@ -146,57 +144,10 @@ since 2026-10-17, as the other skills did.*
 The manual is free prose: the convention stated, from which the
 artifact is made usable (`ARCHITECTURE.md` §1). It explains and
 points at the ADRs; the artifact says what a project does, and its
-`foundation` line names the manual it derives from.
-
-### 3.1 One place
-
-A convention's subject is stated in its manual and nowhere else.
-Text that touches the subject points at the manual and does not
-restate it: another manual, the index, `ARCHITECTURE.md`, an ADR's
-context, an entry file. Text that makes the subject usable derives
-from the manual and names it in `foundation`. Two relations, two
-verbs — point and derive — and a reader who finds the subject stated
-twice has found a defect; the measured case is
-`docs/conventions/agent-arrangement/`'s. A retelling tagged to its
-section, where the reader acts on it in place, is a follower, not a
-second statement (`docs/conventions/project-recording/` §11;
-ADR-0059).
-
-### 3.2 A pointer is a path
-
-Text that points names the manual by its path from the repo root,
-`docs/conventions/<name>/`, with the section number when it means
-one — `docs/conventions/conventions/` §3.4 — so that the manual can
-find everything pointing at it with one grep, and a reader lands on
-a paragraph rather than a wall. So a section divided into labelled
-parts numbers them, `### N.M`, and so does every section of the same
-form in the document, whether anything points there yet or not: the
-pointer names the number, and a reader meets one structure
-throughout. Bold emphasis inside running prose is not a part. Never
-a relative link: a relative path means a different thing the moment
-a file is read from a different root, which is every copy and every
-shipped file. A name in prose is not a pointer, because names are
-words. A pointer beside a retelling always names the section: the
-walk re-reads only the retellings of the section that changed
-(§3.5), and one with no section would be re-read at every change.
-A commit that renames or renumbers greps all living text
-for each old path and number, and fixes what points at them in the
-same commit. The commit-plan skill's sweep,
-`delivery/container/.claude/skills/commit-plan/SKILL.md` §4, looks
-again before a plan's close.
-
-*Decided in the walk, 2026-09-29, when this manual's §3 held six
-rules as bold paragraphs and every pointer into it said "§3"; it
-lived in the devlog alone until 2026-09-30. Written here first as
-"a part other text points at", it would have numbered one section
-of project-recording beside seven built the same way; the reviewer
-caught it at the boundary, and it was reworded the same day, by
-form.*
-
-*Found 2026-10-19: the refinement's manual was renumbered three
-times on 2026-10-18, outside any commit plan, so no close sweep
-ran. A pointer in TODO stood stale for five commits. The grep
-moved from a plan's close to the commit that renumbers.*
+`foundation` line names the manual it derives from. How a manual
+and what points at it or derives from it stay in agreement is
+`docs/conventions/facts-in-sync/`; the sections once numbered 3.1, 3.2, 3.5
+and 3.6 moved there (ADR-0065).
 
 ### 3.3 The form
 
@@ -219,7 +170,7 @@ each item marked shipped or the deliverer's, with the moment it
 opens at, placed as the answer to the need; the seats (§3.4);
 lessons as dated italics (§3.7); *why it arrives this way* — the
 channel, a skill, a rule, a stub or a file, and why that one;
-where it reasons from the agent model, tagged to that part
+where it reasons from the agent model, with a fact reference to that part
 (`docs/models/agent.md`); and *what this does not cover*, the
 boundary against its neighbours by path.
 
@@ -238,7 +189,8 @@ mechanism that other text will point at gets its own numbered
 subsection, as this section's seven do, so the pointer lands on it.
 Each numbered section holds one subject, and a subject has one
 section: other sections point at it, and do not tell it again.
-§3.1 asks the same of a convention's subject across the manuals;
+`docs/conventions/facts-in-sync/` §2 asks the same of a convention's subject
+across the manuals;
 this asks it inside one.
 
 *Found 2026-10-19: of the fourteen manuals' opening statements,
@@ -266,103 +218,6 @@ this is made usable as*. Twice a manual grew seat sections
 because the two sides do different things, and nothing told the
 writer of the next one to ask; the section is where the asking is
 now built in.
-
-### 3.5 The rule for every description
-
-This page included. A description is how we understand a thing
-today, written down: the concept, each model, each manual,
-`ARCHITECTURE.md`. It
-may be wrong or incomplete, and it is canonical regardless —
-everything derived from it agrees with it until it changes, and it
-changes only for a reason recorded, practice being the evidence.
-What derives from it is not a description: it applies, it does not
-explain. The rule is the same for all of them, and this is where it
-is stated:
-
-1. A description lists what derives from it. A model leaves its
-   list to the grep in step 3: repos it never sees stand on it too.
-2. Each derived thing names its description, once: one
-   `foundation` per file, its root, what the whole of it stands on.
-   A skill, a rule, a shape, or a manual standing on a model
-   carries it in its frontmatter. A record whose header holds its
-   form, such as `PLAN.md`'s step form or `TODO.md`'s item shape,
-   carries a `foundation:` line in that header's comment. Both
-   seats, the run's stubs included. Every line that uses a part of
-   a document, its root included, carries a tag to that part, its
-   path and section (§3.2). The root says which document to open
-   when the file changes; a tag says which line to re-read when the
-   part changes.
-3. A change to the description walks the list in the same commit,
-   or in the next when one side is an agent file and the other is
-   not (`docs/conventions/commit-messages/`). It greps for the
-   description's path, to find what points at it, and for its name
-   in `foundation` lines, to find what stands on it: `the <name>
-   convention`, `the <name> model`, or `concept v1`. Each
-   retelling tagged to a changed section is re-read with the
-   paragraph around it; a host that changes for it is walked in
-   turn (step 5).
-4. A change forced in a derived thing is checked back against the
-   description.
-5. A disagreement is raised and decided (§3.6); if the description
-   changes, the walk runs again.
-
-Steps 1, 2 and the greps in 3 are checkable today: every shipped
-skill and rule carries `foundation`, every manual names what
-derives from it in *What this is made usable as*, and a path and
-a `foundation` value are tokens (§2). The rest ran twice by hand
-before this was a rule — the correspondence check of 2026-09-25,
-and the walk of `a337674^:docs/master.md` at the exchange plan's
-close — both because the reviewer asked, not because anything made
-anyone look. Since
-2026-10-17, `.claude/rules/foundation-check.md` makes this repo
-look before every such commit. Where a
-manual and the concept are handled differently — versioning,
-shipping, the kind of derivative, the seats, what each asserts — is
-ADR-0039; the concept's edges are ADR-0003, the CHANGELOG's
-standing comment and `ARCHITECTURE.md` §1.1.
-
-*Found 2026-10-19: project-recording's deliverer seat retold
-`PLAN.md`'s step form, and nothing linked the two, so a change on
-either side never reached the other. The reviewer had a record's
-form name its description, as a skill does.*
-
-### 3.6 A disagreement
-
-A derived thing, a pointer or practice saying other than its
-description. It is raised where it is found — a finding in a
-reading, an edit a run made to its copy, a question at a boundary,
-the foundation check at a commit — and decided, never defaulted:
-neither side is right for being the description, nor for being
-newer. Practice is the evidence.
-When the description changes, the walk in §3.5 runs again; when the
-derived thing changes, it follows in the same commit, or in the next
-under §3.5's step 3. The decision is recorded where the repo records
-decisions: a commit body, or an ADR when options were weighed.
-
-**A finding is declined only for not being general** — this run's
-alone, an exception, or not worth the change. It is never declined
-because the description says otherwise: a description is
-downstream of practice like everything else, and a run that
-contradicts one may have found the description's flaw rather than
-its own. When practice and a statement disagree, the statement is
-a candidate for change, not the judge. That includes this page.
-
-*Where it has already happened, so the rule reads as a record and
-not a wish. ADR-0034: run 3 argued down a clause of
-`convention-lifecycle` on the day it first ran under it — taken,
-against the text as shipped. ADR-0035: run 3 made a thing the
-vocabulary had no word for; the vocabulary gained one, and the
-next day went, on the same evidence read further. `cbc-slice`,
-three times: every in-place edit run 3 made to the method was
-taken whole. And the concept has bent from the runs three times.
-Twice editorially, leaving it at v1: chapter 03's sentence on when
-technology enters (`211bd0f`), and chapter 01's layer tags in full
-words, from run 3's RETRO D6 (`41d4fc3`). Once in substance:
-chapter 02's top rung of the walls, which run 3 met at SL-3, makes
-the concept v2 when it is released (`86ed0c4`, ADR-0048). Nothing
-else from four runs has reached a chapter — either evidence it is
-right or evidence nothing has been read against it hard enough, and
-this page does not know which.*
 
 ### 3.7 A lesson taken
 
@@ -425,16 +280,14 @@ while one is worked; a manual written new is written without it
 (`docs/conventions/agent-arrangement/` §3.2). The
 `foundation` line rides in the frontmatter of every shipped skill
 and rule, read by whoever opens the file, because a claim about
-what a file stands on has to travel with the file. The check is a
-rule loaded in every session, because its moment is every commit
-that touches either side, and a rule with `paths:` loads only when a
-file is touched with the agent's tools: an edit made by script never
-loads it (`docs/conventions/agent-arrangement/` §5.6).
+what a file stands on has to travel with the file.
 
 ## What this does not cover
 
 - **Which copy is the master, how a copy changes, and what
   ships** — `docs/conventions/exchange/`.
+- **How a fact keeps one home, and how what points at it or derives
+  from it stays in agreement** — `docs/conventions/facts-in-sync/`.
 - **The tag a citation carries, and the records a project keeps** —
   `docs/conventions/project-recording/`.
 - **How a rule or a skill reaches an agent, and which paths are the
@@ -449,7 +302,7 @@ loads it (`docs/conventions/agent-arrangement/` §5.6).
 ## Where to look
 
 - The chain: `docs/conventions/README.md`.
-- The rule for every description: §3.5, above.
+- The rule for every description: `docs/conventions/facts-in-sync/` §4.
 - What `foundation` holds for each kind of file: §2, above; that it
   travels with a copy, `docs/conventions/exchange/` §3.5.
 - A convention whose artifact is a rule, not a skill:

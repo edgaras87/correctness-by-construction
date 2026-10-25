@@ -213,11 +213,11 @@
       manual as a concept: an idea written down, with sub-ideas,
       and its rules and skills as the convention. "Concept" already
       names the CbC concept and the tiers model's concepts tier.
-      `docs/conventions/conventions/` §3.5 calls both a description.
+      `docs/conventions/facts-in-sync/` §4 calls both a description.
       Ideas:
       - a manual is a concept; its rules and skills, the convention.
       - "description" stays the general word, as
-        `docs/conventions/conventions/` §3.5 has it.
+        `docs/conventions/facts-in-sync/` §4 has it.
       Trigger: a second concept repo, when what a concept is gets
                decided (`docs/models/idea-to-output.md` §5).
       See: devlog 2026-10-19, the redesign's ideas.
@@ -278,7 +278,7 @@
         numbered titles average 13 characters, and 13 are over 30.
       - when a section is touched, every fact reference to its path,
         number or title is grepped and updated in the same commit,
-        widening `docs/conventions/conventions/` §3.2's grep for a
+        widening `docs/conventions/facts-in-sync/` §3's grep for a
         moved section.
       - the repo prefix keeps its own name.
       - a fact reference serves two readers: the agent, which may
@@ -286,7 +286,7 @@
         guarantee, claim P1), and the walk, which re-reads the line
         when the home changes. "Pointer" names the first in the
         agent model and the second in
-        `docs/conventions/conventions/` §3.2; with the fact
+        `docs/conventions/facts-in-sync/` §3; with the fact
         reference defined, "pointer" stays the agent model's.
       - a fact reference in a shipped file names its repo, as a
         shipped decision does with `CBC ADR-nnnn`: `(<repo>,
@@ -383,7 +383,7 @@
         to new, grepped and replaced in the same rewrite.
       - regroup only on the branch, before main takes it.
       Trigger: the refinement of this repo closes; its rounds read
-               `commit-plan` and `docs/conventions/conventions/` §3.2.
+               `commit-plan` and `docs/conventions/facts-in-sync/` §3.
       See: devlog 2026-10-19, regrouping.
 
 - [ ] Make the conventions index a full local map (2026-09-30, the
@@ -398,12 +398,12 @@
       - all eleven and how each touches the others, derived from
         those pointers, built by `visual-comparison`.
       - three links, each with its upkeep: derives
-        (`docs/conventions/conventions/` §3.5, the foundation
+        (`docs/conventions/facts-in-sync/` §4, the foundation
         check), points (one home, the grep at a commit that moves a
         section, a step's close), governs
         (none: a change to a rule that governs other text could
         sweep that text or file the sweep, a rule beside
-        `docs/conventions/conventions/` §3.5).
+        `docs/conventions/facts-in-sync/` §4).
       - scenarios as entries into one procedure, the foundation
         check: a manual, a skill or rule, a run's finding. Two
         exits it lacks: the governs sweep, and what must run again
@@ -777,7 +777,7 @@
       into a chapter's section today. The chapters are the canonical
       text every run holds a copy of, so numbering them would change
       every copy for no reader yet
-      (`docs/conventions/conventions/` §3.2 numbers by form).
+      (`docs/conventions/facts-in-sync/` §3 numbers by form).
       Trigger: the first pointer that needs a section of a chapter.
       See: devlog 2026-09-30, numbered parts.
 

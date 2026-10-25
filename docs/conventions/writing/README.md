@@ -126,8 +126,9 @@ one page.
 
 ## What this does not cover
 
-- **Where a fact lives, and which record owns it** —
-  `docs/conventions/project-recording/` §11.
+- **Where a fact lives** — `docs/conventions/facts-in-sync/` §1.
+- **Which record owns which kind of fact** —
+  `docs/conventions/project-recording/` §13.
 - **The form of a commit message** —
   `docs/conventions/commit-messages/`.
 - **The form of a manual** — `docs/conventions/conventions/` §3.3.

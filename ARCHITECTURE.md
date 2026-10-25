@@ -118,7 +118,7 @@ field: `concept v1`. A change to the concept asks whether these are
 still right. They live at `delivery/method/.claude/skills/cbc-framing/`
 and `delivery/method/.claude/skills/cbc-slice/`. With 2.2 and 2.4,
 this is the concept's list of what derives from it; the chapters
-carry none (`docs/conventions/conventions/` §3.5, step 1).
+carry none (`docs/conventions/facts-in-sync/` §4, step 1).
 
 ### 2.2 The stack practice — `delivery/spring-postgres/`
 
@@ -260,13 +260,12 @@ The loop, as it actually runs:
 **The rule that holds all of this** — a description lists what
 derives from it, each derivative names it, a change walks the list,
 a forced change is checked back, a disagreement is decided with
-practice as the evidence — is stated once, in the conventions
-manual, `docs/conventions/conventions/` §3.5, for every description
-this page names: the concept, each model, each manual, and this
-page. Why step
-5 declines a finding only for not being general, and where practice
-has already bent a description, is `docs/conventions/conventions/`
-§3.6. This page is a map and
+practice as the evidence — is stated once, in
+`docs/conventions/facts-in-sync/` §4, for every description this
+page names: the concept, each model, each manual, and this page.
+Why step 5 declines a finding only for not being general, and where
+practice has already bent a description, is
+`docs/conventions/facts-in-sync/` §5. This page is a map and
 states no rule of its own. Where a manual and the
 concept are handled differently is that manual's *What this does
 not cover* and ADR-0039.
@@ -294,7 +293,7 @@ review, and each entry names which.
 
 - **The concept is canonical here**, and the archive it came from
   is a frozen snapshot, never consulted as a source — §1.1 and
-  `docs/conventions/conventions/` §3.5; held by CHANGELOG's `[v1]`
+  `docs/conventions/facts-in-sync/` §4; held by CHANGELOG's `[v1]`
   entry, which names the archive copy a snapshot, and checked at
   commit review.
 - **A substantive concept change never lands without a version
@@ -314,7 +313,7 @@ review, and each entry names which.
 - **A manual never outlives the rule it explains**: a rule changed
   in `delivery/container/` is checked back against its manual, and
   whichever side is wrong changes —
-  `docs/conventions/conventions/` §3.5 and §3.6 (ADR-0025); checked
+  `docs/conventions/facts-in-sync/` §4 and §5 (ADR-0025); checked
   at commit review by the foundation check,
   `.claude/rules/foundation-check.md`.
 - **Agent side and project side never share a commit** —
@@ -417,7 +416,7 @@ manual owns the thing a word names, pointed at there.
   the concept, a model, a manual, this page. It may be wrong or
   incomplete and is canonical regardless; what derives from it
   applies it and does not explain. One rule for all of them,
-  `docs/conventions/conventions/` §3.5; they differ at the edges
+  `docs/conventions/facts-in-sync/` §4; they differ at the edges
   (ADR-0039).
 - **canonical** — of a description or a copy: the one that counts,
   from which every other is derived or copied. Says reference,

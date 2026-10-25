@@ -34,30 +34,21 @@ there is.
   live inside a record, when to open it.
 - **`delivery/fills/cbc-run-pure-playbook.md` — the playbook's
   steps, filled into a run's `PLAN.md` at birth** (§9).
-- **`delivery/container/.claude/rules/one-home.md` — a rule,
-  shipped**, held at `.claude/rules/one-home.md` with no `paths:`,
-  so it loads at the start of every session: §11, rule 1.
-- **`.claude/rules/one-home.md` — the deliverer's**, derived from
-  §11 like the container's. It differs in four things: its scope
-  takes in manuals, skills and rules; its rule 1 points at
-  `docs/conventions/conventions/` §3.1; it allows a tagged
-  retelling (ADR-0059); and its examples are this repo's.
 - **The deliverer's own records**: `README.md`, `PLAN.md`,
   `TODO.md`, `CHANGELOG.md`, `ARCHITECTURE.md`, `docs/adr/` and
   `devlog/`, derived from this page as the stubs are, and never
   copied from them (ADR-0042); and `TODO-CONVERSATION-MEMORY.md`,
   on trial, which has no stub (§5.5, ADR-0060).
 
-This page explains the records; the stubs state the rules. Only the
-one-home rule, on each side, is loaded into an agent, in every
-session. What derives from this page is that
+This page explains the records; the stubs state the rules. What
+derives from this page is that
 list. A change here walks it; a change forced in one of them is
 checked back against this page.
 
 ## The seats
 
 The same records in both seats, each derived from this page — the
-run's through the stubs, the deliverer's directly — with seven
+run's through the stubs, the deliverer's directly — with six
 differences of rule or ownership, so a section each
 (`docs/conventions/conventions/` §3.4).
 
@@ -68,15 +59,12 @@ steps arrive whole from a playbook it does not hold, filled in at
 birth. Its retrospective runs before Release
 (`docs/conventions/retrospective/`), and its lessons reach the
 playbook when the deliverer reads the run. Its
-`CHANGELOG.md` logs releases. It retells a fact only where two
-copies cannot be avoided: its case of a tagged retelling, which ids
-are tags and when they are re-read, is not designed yet (§11;
-ADR-0059).
+`CHANGELOG.md` logs releases.
 
 ### The deliverer's seat
 
 The deliverer keeps the same records, derived from this page rather
-than from the stubs (ADR-0042), and differs in seven things. It
+than from the stubs (ADR-0042), and differs in six things. It
 has no project end, so lessons fold back at each step's close
 rather than at a retrospective, as its first devlog entry agreed on
 2026-08-27; whether a retrospective serves it too is on trial at
@@ -113,11 +101,6 @@ words and the list of what it knows is wrong — a map of a
 vocabulary needs the vocabulary, and a map that names its errors is
 believed less blindly — and runs past §8's two pages for them
 (ADR-0044).
-
-And it may retell a fact where the reader acts on it in place
-(§11). Its tag is a manual's path and section
-(`docs/conventions/conventions/` §3.2), and the walk before every
-commit re-reads it (`docs/conventions/conventions/` §3.5).
 
 And it keeps the talk behind a TODO item beside the item, in
 `TODO-CONVERSATION-MEMORY.md`, on trial (§5.5; ADR-0060). A run
@@ -825,33 +808,8 @@ devlog (raw, daily)
 
 The rules that make the pipeline work:
 
-1. **Write once, at the source.** Each fact has one home; other records
-   *link* to it, and copy it only as a follower. Duplicated facts
-   diverge, and diverged records stop being trusted. In practice:
-   - **A summary says it is one.** It names its owner, and nobody
-     reads it in the owner's place.
-   - **A fact changes at its home.** The links to it do not
-     change, unless the home itself moves. Each retelling tagged to
-     it is found and re-read, with the paragraph around it; a
-     retelling whose host is itself a source walks on.
-   - **A copy is a follower.** One is the owner and the other
-     follows it: where two copies cannot be avoided, as the version
-     in the build file is followed by the CHANGELOG, or where the
-     reader acts on the fact in place, retold beside its pointer. A
-     follower carries a tag, a label grep finds, defined at the
-     fact's home. Without one it is a second home.
-   - **History is not a second home.** The devlog, closed ADRs and
-     commit bodies record what was true then. They are never
-     updated, so they cannot drift.
-   - **Comments and config count too,** not only records.
-
-   *Added 2026-10-15, from run 3: its loaded one-home rule said these
-   five things, and this rule did not (ADR-0053).*
-
-   *Widened 2026-10-20: a line cut to a pointer left its reader
-   without the picture at the moment of use. The reviewer judged
-   three cases, each retold and pointed, and the retellings read
-   better (ADR-0059).*
+1. **Write once, at the source:** each fact has one home, and the
+   other records link to it (`docs/conventions/facts-in-sync/` §1).
 2. **Promote, don't rely on memory.** A dead end noted in the devlog is
    safe; one merely remembered will be repeated. Same for decisions
    (→ADR) and lessons (→playbook).
@@ -924,14 +882,6 @@ fixed. Restating a record's rules in the entry file "so they are
 always available" is the failure `docs/conventions/agent-arrangement/`
 measured.
 
-One rule is loaded, in every session: §11's rule 1, as
-`one-home.md` with no `paths:` (`docs/conventions/agent-arrangement/`
-§3.2). A fact is retold in the record being written, and that
-record's stub says nothing of the record the fact was taken from,
-so no stub is open at the moment. This page held the rule from the
-start, and run 3 still told one step's story in four records: PLAN,
-the devlog, the slice record and the commits (its RETRO.md, D1).
-
 ## What this does not cover
 
 - **The entry file as a whole: what it may hold, and how it stays
@@ -940,6 +890,8 @@ the devlog, the slice record and the commits (its RETRO.md, D1).
   `docs/conventions/commit-messages/`.
 - **How work larger than one commit is sequenced** —
   `docs/conventions/commit-plan/`.
+- **Where a fact lives, and how what relies on it stays in
+  agreement** — `docs/conventions/facts-in-sync/`.
 - **Why the records are never re-delivered to a run** —
   `docs/conventions/exchange/` §2.4.
 - **What the deliverer's CHANGELOG versions** — the concept,

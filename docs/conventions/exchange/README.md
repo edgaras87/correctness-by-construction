@@ -496,7 +496,7 @@ Each item leaves the list with one of three:
   carries it, and the run's edit is absorbed rather than
   overwritten.
 - **Declined** — with why, and the why is never "the description
-  says otherwise" (`docs/conventions/conventions/` §3.6 owns that
+  says otherwise" (`docs/conventions/facts-in-sync/` §5 owns that
   rule; it is about every description, not only this one). A
   description can be what the run has found wrong. Declined means:
   not general, or not worth the change. The why goes in the note
