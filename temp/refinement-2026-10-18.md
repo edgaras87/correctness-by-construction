@@ -1177,6 +1177,13 @@ FINDING-180, 227, 228; the reach of 198, 225, 226.
 - (c) Every text, skills and approaches too.
 - Recommended: (b), with the method's texts left to the plain
   rewrite, as in DECISION-7.
+- Chosen: (b), by the reviewer, 2026-10-25, with DECISION-7's line:
+  the descriptions, and the files derived from a convention.
+  FINDING-198 and 226 are fixed in this round; FINDING-180 when
+  TODO's "Move conventions §1 to the idea-to-output model" moves
+  text there; FINDING-227 and 228 move to TODO's "Rewrite the
+  method's texts plain". FINDING-225 is bound by conventions §2
+  either way.
 
 **DECISION-9.** How are §3.3's parts numbered? Rests: FINDING-136.
 ADR-0065 kept §3.3, §3.4 and §3.7 and left the gap.
