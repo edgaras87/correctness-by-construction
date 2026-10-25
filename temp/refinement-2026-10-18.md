@@ -1232,6 +1232,16 @@ FINDING-144.
 - (b) `PLAN.md`'s step form. Project-recording points at it.
 - Recommended: (a). A description states, and a record's form
   applies (facts-in-sync §4).
+- Chosen: (c), raised by the reviewer, 2026-10-25: each holds its
+  own fact. `PLAN.md`'s step form, and the playbook's in a run's
+  seat, is the home of how a step is worked. Project-recording
+  describes what a step is and why, and its seats say where each
+  seat's form lives. An agent rule per record was weighed and not
+  taken: it hides the rules from a person opening the record, loads
+  only after a read, and adds 14 files. It is what the
+  idea-to-output model §2 and project-recording's own "the stubs
+  state the rules" already say. FINDING-144 is fixed this way; the
+  other records' *How* sections go to a TODO item.
 
 **DECISION-12.** Where does "which record answers what" live?
 Rests: FINDING-145, and the records map.
