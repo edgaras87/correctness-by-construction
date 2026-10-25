@@ -1164,6 +1164,9 @@ other than manuals? Rests: FINDING-222, 223, 224, 206.
 - Recommended: (c). The method's texts are rewritten anyway, and a
   second pass now would be undone there. Facts-in-sync §4 already
   says a derived file "applies, it does not explain".
+- Chosen: (c), by the reviewer, 2026-10-25. FINDING-222 is fixed
+  in this round. FINDING-223, 224 and 206's citations of run 3's
+  RETRO move to TODO's "Rewrite the method's texts plain".
 
 **DECISION-8.** Does Layout reach text other than manuals? Rests:
 FINDING-180, 227, 228; the reach of 198, 225, 226.
