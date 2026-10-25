@@ -19,9 +19,11 @@ It is round 2's rule fix (`temp/refinement-2026-10-18.md`,
   - **the fact reference:** what a line carries when it relies on
     a fact written elsewhere, its two readers, the agent and the
     walk; written today as a path and a section (from conventions
-    §3.2). "Tag" is no longer used for it;
+    §3.2);
   - **the rule for every description:** the list, the
-    `foundation` line, the walk (from conventions §3.5);
+    `foundation` line, the walk, named there (from conventions
+    §3.5); and a description states what is true today, its history
+    kept in the ADRs, the devlog and commit bodies;
   - **a disagreement:** raised and decided, either side free to be
     wrong (from conventions §3.6).
 - The conventions manual keeps §2, §3.3, §3.4, §3.7 and §4, its
@@ -31,7 +33,7 @@ It is round 2's rule fix (`temp/refinement-2026-10-18.md`,
 - `one-home.md`, ours and the shipped one, and
   `foundation-check.md` stand on the facts-in-sync convention.
 - `ARCHITECTURE.md` counts twelve manuals; *The words* defines the
-  fact reference.
+  fact reference and the walk.
 - The staying-in-step item closes. The fact-reference item stays,
   narrowed to writing a reference with its title.
 
@@ -51,6 +53,20 @@ Every living reference to those sections moves to the new manual's,
 and "tag" becomes "fact reference" in the docs. One move: no
 commit holds the rules in two homes.
 
+**2b. `docs: facts-in-sync trims its list, names the walk`**
+The reviewer's questions on commit 2. In the new manual:
+- *What this is made usable as* names each rule's path, seat,
+  moment and the sections it makes usable, and no longer retells
+  the rules' content;
+- §4 step 3 names the walk: the greps and the re-read of each line
+  they find;
+- §3 drops "'Tag' is no longer used for it", and §4 says a
+  description states what is true today, how it came to be being
+  history's;
+- §3's sweep reference points at the commit-plan convention's
+  manual, `docs/conventions/commit-plan/` §2, not the container's
+  skill.
+
 **3. `chore(agent): our rules stand on facts-in-sync`**
 `one-home.md` and `foundation-check.md`: their `foundation`, their
 references, "tag" renamed. `convention-manual.md`'s references to
@@ -64,7 +80,7 @@ holds (conventions §4, step 3).
 **5. `docs: ARCHITECTURE names facts-in-sync`**
 §1.2's count and what the manuals cover; §2.3's line on which
 convention owns `one-home.md`; the codemap's count; *The words*:
-the fact reference, and the foundation entry's pointer.
+the fact reference, the walk, and the foundation entry's pointer.
 
 **6. `docs: round 2's rule check ends`**
 The records commit. ADR-0065 Accepted. TODO: the staying-in-step
