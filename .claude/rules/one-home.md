@@ -1,5 +1,5 @@
 ---
-foundation: the project-recording convention
+foundation: the facts-in-sync convention
 ---
 
 # One home per fact
@@ -8,30 +8,30 @@ foundation: the project-recording convention
 rules, comments and config. Where it lives, never how it reads.
 
 <!-- No paths: line, so this loads at the start of every session.
-     Ours, derived from docs/conventions/project-recording/ §11,
-     rule 1, like the container's; how the two differ, that
-     manual's *What this is made usable as* lists. -->
+     Ours, derived from docs/conventions/facts-in-sync/ §1 and §2,
+     like the container's from §1; how the two seats differ, that
+     manual's *The seats* says. -->
 
 ## The rules
 
 1. **Give each fact one home.** The records table in `CLAUDE.md`
    says which record owns which kind of fact. A convention's subject
-   lives in its manual (`docs/conventions/conventions/` §3.1).
+   lives in its manual (`docs/conventions/facts-in-sync/` §2).
 2. **Elsewhere, link; retell only where the reader acts on it
    there.** A retelling carries its source's path and section as a
-   tag: "after birth, only the copies go: skills, rules, shapes,
+   fact reference: "after birth, only the copies go: skills, rules, shapes,
    approaches on trial and the concept
-   (`docs/conventions/exchange/` §3.2)". Without the tag it is a
+   (`docs/conventions/exchange/` §3.2)". Without the fact reference it is a
    second home.
 3. **Make a summary say it is one.** It names its owner, and nobody
    reads it in the owner's place. `ARCHITECTURE.md` §1.2 does this:
    a phrase for each convention, and the manual for the rest.
 4. **Change a fact at its home.** The links don't change, unless
-   the home itself moves (`docs/conventions/conventions/` §3.2).
-   Each retelling tagged to it is re-read, with its paragraph
-   (`docs/conventions/conventions/` §3.5).
+   the home itself moves (`docs/conventions/facts-in-sync/` §3).
+   Each retelling whose fact reference names it is re-read, with its
+   paragraph (`docs/conventions/facts-in-sync/` §4).
 5. **Make every copy a follower:** one is the owner, the other
-   follows it and is checked against it. A tagged retelling is one;
+   follows it and is checked against it. A retelling with a fact reference is one;
    two copies that cannot be avoided are another: the worked example
    sits in `cbc-framing` and in `cbc-slice`, and the two must stay
    identical.
@@ -45,7 +45,9 @@ was true then. They are never updated, so they cannot drift.
 
 ## Decisions
 
-- ADR-0053 — one home per fact is project-recording's, and its rule
-  loads in every session, here as in every run
+- ADR-0053 — the one-home rule loads in every session, here as in
+  every run
 - ADR-0059 — a retelling may stand where the reader acts on it,
-  tagged to its source; ours now, a run's when its case is designed
+  with a fact reference to its source; ours now, a run's when its
+  case is designed
+- ADR-0065 — one home is facts-in-sync's, with the fact reference

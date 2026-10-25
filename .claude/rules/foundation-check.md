@@ -1,8 +1,8 @@
 ---
-foundation: the conventions convention
+foundation: the facts-in-sync convention
 ---
 
-<!-- Makes docs/conventions/conventions/ §3.5 and §3.6, and §3.2's
+<!-- Makes docs/conventions/facts-in-sync/ §4 and §5, and §3's
      grep for a moved section, fire at the commit, where they waited
      to be remembered. Loaded in every session, with no paths: a
      paths rule loads only when a file is touched with the agent's
@@ -22,7 +22,7 @@ or moves a section. Which side is right, never how either reads.
      `.claude/rules/`, `.claude/` under `delivery/`, and a manual
      that names its model;
    - records whose header comment carries a `foundation:` line,
-     in either seat (`docs/conventions/conventions/` §3.5, step 2);
+     in either seat (`docs/conventions/facts-in-sync/` §4, step 2);
    - descriptions: `docs/models/`, `docs/conventions/*/README.md`,
      `concept/`, `ARCHITECTURE.md`.
 
@@ -32,14 +32,14 @@ or moves a section. Which side is right, never how either reads.
    `docs/conventions/<name>/README.md`. For a model,
    `docs/models/<name>.md`. For `concept v1`, the chapters under
    `concept/`. Read the parts the change touches. A file names one
-   `foundation`; a second is a tag to a part
-   (`docs/conventions/conventions/` §3.5, step 2).
+   `foundation`; a second is a fact reference to a part
+   (`docs/conventions/facts-in-sync/` §4, step 2).
 3. **A description changed:** walk what derives from it, as
-   `docs/conventions/conventions/` §3.5 step 3 says.
+   `docs/conventions/facts-in-sync/` §4 step 3 says.
 4. **List every disagreement before deciding any.** For each, show
    the reviewer what the foundation says, what the change says, and
    which side the agent thinks is wrong, and why. The reviewer
-   decides each (`docs/conventions/conventions/` §3.6).
+   decides each (`docs/conventions/facts-in-sync/` §5).
 5. **The commit body names each ending,** one of four:
    - **the change is wrong:** it is brought back to the foundation;
    - **the foundation is wrong:** it changes;
@@ -59,12 +59,12 @@ or moves a section. Which side is right, never how either reads.
 When the commit renames a file or renumbers a section, in any
 file, grep all living text for each old path and number, and fix
 what points at them in this commit
-(`docs/conventions/conventions/` §3.2).
+(`docs/conventions/facts-in-sync/` §3).
 
 ## What this does not cover
 
 - **What a description and its derived things are** —
-  `docs/conventions/conventions/` §3.5.
+  `docs/conventions/facts-in-sync/` §4.
 - **How a run's edit to its copy is taken** —
   `.claude/rules/working-a-reading.md`, step 4.
 - **How a run edits a copy it holds** —
@@ -77,3 +77,4 @@ what points at them in this commit
 - `.claude/decisions.md`, 2026-10-17 — the check at the commit,
   loaded in every session; why not a paths rule, a `CLAUDE.md`
   line, or a hook now
+- ADR-0065 — the check stands on facts-in-sync

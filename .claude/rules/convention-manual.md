@@ -46,13 +46,13 @@ frontmatter naming it, `foundation: the agent model`
    outright when one side has none.
 5. **The body**, numbered sections, free prose. Pointers to other
    conventions as paths from the repo root, never a restatement
-   of their subject, but for a retelling tagged to its section
-   where the reader acts on it in place
-   (`docs/conventions/conventions/` §3.1). A section divided into
+   of their subject, but for a retelling with a fact reference to
+   its section, where the reader acts on it in place
+   (`docs/conventions/facts-in-sync/` §2). A section divided into
    labelled parts numbers them, `### N.M`, and so does every
    section of the same form in the manual; emphasis in prose is
    not a part
-   (`docs/conventions/conventions/` §3.2). Each numbered section
+   (`docs/conventions/facts-in-sync/` §3). Each numbered section
    holds one subject, and a subject has one section; other
    sections point at it (`docs/conventions/conventions/` §3.3).
 6. **Lessons as dated italics**, where they happened: *what was
@@ -62,7 +62,7 @@ frontmatter naming it, `foundation: the agent model`
 7. **Why it arrives this way.** The channel — a skill, a rule, a
    stub or a file — and why that one: the moment it serves, and
    what would or would not put it in front of its reader then.
-   Where the reasoning rests on the agent model, a tag to the part
+   Where the reasoning rests on the agent model, a fact reference to the part
    it rests on, `docs/models/agent.md` §8
    (`docs/conventions/conventions/` §3.3).
 8. **What this does not cover.** A list: each neighbouring subject
