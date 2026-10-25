@@ -672,6 +672,10 @@
       - sideways allowed for a fact another convention owns.
       - an approach pointing at a model when no convention holds the
         fact (ADR-0063 decision 4 has it stand on a description).
+      - `.claude/rules/convention-manual.md` item 5 says "Pointers
+        to other conventions": narrower than practice, since
+        manuals point at models too, and "pointer" names what
+        facts-in-sync calls a fact reference.
       Trigger: round 2's Dependencies reading, which reads every
                pointer.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1;

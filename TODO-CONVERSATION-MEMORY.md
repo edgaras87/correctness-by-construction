@@ -995,3 +995,24 @@ missing?
 - The one-target sentence follows from one home and goes in
   facts-in-sync §3, in the plan's commit 2b. The direction waits for
   round 2's Dependencies kind, which reads every pointer.
+
+### 2026-10-25, later
+
+#### What the reviewer asked
+
+On `.claude/rules/convention-manual.md` item 5, "Pointers to other
+conventions as paths from the repo root": "should here be pointers
+as references and conventions as levels of chain, where in this
+case models and conventions? is this fix for later when we have
+this idea which we just include in todo about reference level
+references and where and what it should refere?"
+
+#### Points made
+
+- The line is wrong twice. "Pointers" names the written address,
+  which facts-in-sync §3 calls a fact reference. "Other
+  conventions" is narrower than practice: 11 of 12 manuals point at
+  the agent model, as item 7 of the same file asks.
+- Both wait on this item. What replaces "other conventions" is the
+  direction it decides. Retiring "pointer" as a noun is a decision
+  ADR-0065 did not take; it retired only "tag".
