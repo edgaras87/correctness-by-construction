@@ -1220,6 +1220,10 @@ that the `foundation` grep reaches such a line
   with the form.
 - Recommended: (c). Fixing now, in a form that item may change,
   does the work twice.
+- Chosen: (c), by the reviewer, 2026-10-25. FINDING-191 and 196
+  move to that item. It is done between round 2 and round 3, with
+  "Decide which way a fact reference may point", so round 3 and the
+  last read meet the settled form.
 
 **DECISION-11.** Where do the rules of a step live? Rests:
 FINDING-144.
