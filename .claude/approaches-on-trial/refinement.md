@@ -80,7 +80,7 @@ A map of the stages. Each section holds its rule.
 |---|---|---|
 | 2.1 Group the kinds | kinds from TODO, each in its round | created, with the kinds |
 | 2.2 List the files | every living file into a layer, with counts | the layer list |
-| 2.3 Check the rules | doubts found, and tried on a sample | each rule's result |
+| 2.3 Check the rules | before each round: doubts found, and tried on a sample | each rule's result |
 | 2.4–2.8 Each round | read, list the findings, decide, work, close | the round's section; its findings collapse at its close |
 | 2.9 The last read | every kind, read until nothing is found | its section |
 | 2.10 The close | the file goes; git keeps it | deleted |
@@ -129,9 +129,11 @@ layers.
 
 ### 2.3 Check the rules
 
-A wrong rule makes every finding against it wrong. So, before the
-first round reads, the reviewer confirms that no rule among the
-file's kinds is in doubt. A doubt comes from the reviewer, or from
+A wrong rule makes every finding against it wrong. So, before each
+round reads, the reviewer confirms that no rule among its kinds is
+in doubt. Before a later round, the check reads only what changed
+since the last one: a rule moved or rewritten, or a TODO item that
+now names it. A doubt comes from the reviewer, or from
 a TODO item that names the rule or its manual; the agent searches
 TODO for each rule's name and its manual's path. A doubt that
 names a manual covers every rule that stands on it.
@@ -159,15 +161,20 @@ The verdict is kept, changed or reverted, with numbers before and
 after where they exist: the lines, and how many places a subject is
 told.
 
-Every fix lands before the first round reads, each in a commit of
-its own. The file says, for each rule, whether it was in doubt and
-how its check ended.
+Every fix lands before its round reads, each in a commit of its
+own. The file says, for each rule, whether it was in doubt and how
+its check ended.
 
 *Found 2026-10-19, in the redesign of the conventions that this
 refinement stopped for: its two iterations on the conventions
 manual were fixes of this kind. The first try added a section that
 repeated what the opening statement and "What it is for" are for.
 The redesign closed, and its way of judging each fix came here.*
+
+*Found 2026-10-25, before round 2: a convention TODO had due when
+round 2 reads would move the rules its One home and Dependencies
+kinds stand on, mid-read. The check moved from the first round to
+each round.*
 
 ### 2.4 Read
 
