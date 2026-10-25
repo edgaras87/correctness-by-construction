@@ -1251,6 +1251,18 @@ Rests: FINDING-145, and the records map.
   is a summary that names it.
 - Recommended: (a), decided with the map's form by
   `visual-comparison`. The map covers both seats; the table, one.
+- Chosen: (a), by the reviewer, 2026-10-25, done for both seats,
+  as DECISION-11 divides them: each holds its own fact. The map in
+  project-recording §1 is the home of what each record is and why,
+  one row per record, marked as held by both seats, ours only or
+  the run's only, with each difference between the seats said once.
+  Each seat's records table derives from it, ours in `CLAUDE.md`
+  and the run's in `delivery/container/.claude/CLAUDE.md`: its
+  *When* is its own, and its *What's in it* is a summary naming the
+  map. README's column, the codemap's descriptions and
+  `temp/README.md`'s line point at the map. §13 keeps the when. The
+  run's table carries today's fact reference until the shipped form
+  is settled, with FINDING-204.
 
 **DECISION-13.** Are `.claude/decisions.md`'s entries and
 `TODO-CONVERSATION-MEMORY.md`'s parts history? Rests: FINDING-192,
