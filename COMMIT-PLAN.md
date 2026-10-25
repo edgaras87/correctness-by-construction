@@ -96,8 +96,20 @@ for it, with the idea that "pointer" goes as a noun, 50 uses in
 item's idea that an ask "is tagged to the shape" says "carries a
 fact reference". The item on the conventions index counts the
 manuals outside the chain as nine, and all of them as twelve. The
-refinement file's rule check says how each doubt ended.
+refinement file's rule check says how each doubt ended, and its
+kinds table gives Dependencies its new rule, facts-in-sync §2.
 `TODO-CONVERSATION-MEMORY.md` §13 stays with its item.
+- ADR-0065 gains what was decided while the plan ran, as ADR-0063
+  did: a fact reference has one target, a description states what
+  is true today, and the walk is named.
+- The staying-in-step item's other ideas go to an item of their
+  own, on ADR-0063's moves left for round 2, its trigger round 2's
+  reading of the conventions manual.
+- "Decide which ideas here are models" fires: its trigger was the
+  staying-in-step convention. It stays in Next, its trigger now the
+  refinement's close, once facts-in-sync has lived through round 2.
+- PLAN's Now line: round 2's rule check has ended, and round 2
+  reads next.
 
 **7. `docs(agent): close commit plan for facts-in-sync`**
 Deletes this file; the body says what diverged.
