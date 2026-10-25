@@ -931,3 +931,67 @@ be simple to repeat things and alter each part according to seat."
   option, so it needs a new ADR, and the one-diff check goes.
 - Not the facts-in-sync plan's: its commit 2b points at the
   commit-plan manual instead of the container's file.
+
+## 16. Which way a fact reference points
+
+Item: "Decide which way a fact reference may point: up, sideways,
+across chains".
+
+### 2026-10-25
+
+#### What the reviewer asked
+
+It began at facts-in-sync §3's line "The agent may follow it to
+read the fact whole, with no guarantee that it will
+(`docs/models/agent.md` §4.2, claim P1)". In their words: "it may
+be that this fact now lives only in model. but what if that fact
+also was in convention, then which we should refer? model or
+convention? why? do we need to define that choose how to choose?
+how much combination there could be and how much we should
+bother?" And: "should we refer to convention because it is more
+specific to what we are on, as model is more general case of that
+fact?" And: "the more deeper levels in idea-to-output chain is the
+more specific it is … and when we need reference, it is more
+specific the more deeper we refer to. and also it hold idea that
+top levels does not refer to lower levels. also it kind of suggest
+that if we refer to fact we always look for our level of that fact
+reference and check upwords to top level first. we should never
+check in reverse". Does the same apply to approaches? What is
+missing?
+
+#### What exists today
+
+- `docs/models/idea-to-output.md` §3: every link points up; a line
+  may point at a fact's home in any document; an approach stands on
+  a description, never on a model directly.
+- 11 of 12 manuals point at the agent model without standing on
+  it, mostly in *Why it arrives this way*, as the manual form asks.
+  Each manual's *What this does not cover* points at its
+  neighbours, sideways.
+- No approach points at a model today. `auto-run.md` did, at the
+  agent model's §10.4, until that section moved to
+  agent-arrangement §5.4.
+
+#### Points made
+
+- No choice between levels: a fact has one home, so a reference
+  has one target, the home of the fact its line relies on. The same
+  fact in a model and a convention is a second home, a One home
+  finding.
+- What looks like one fact at two levels is usually two: the
+  general one in the model (an agent may not follow a pointer, P1),
+  the specific one in the convention (so we retell where the reader
+  acts, facts-in-sync §1). The line relies on one of them.
+- "Deeper is more specific" describes the chain, but choosing by it
+  goes wrong both ways: a convention pointed at for a model's claim
+  costs the reader two hops; a model pointed at for a convention's
+  choice loses the repo's decision.
+- Looking at one's own level first, then up, is a way to find the
+  home; the rule stays the fact relied on.
+- The real gap is direction: what "up" means between two texts of
+  one level, or of two chains. The model's "every link points up"
+  is stated more strongly than practice, which points sideways in
+  every manual.
+- The one-target sentence follows from one home and goes in
+  facts-in-sync §3, in the plan's commit 2b. The direction waits for
+  round 2's Dependencies kind, which reads every pointer.

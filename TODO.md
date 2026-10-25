@@ -657,14 +657,25 @@
                of the model behind it.
       See: ADR-0063.
 
-- [ ] Decide whether a model may link straight to an approach
-      (2026-10-23, the reviewer).
-      Context: an approach stands on a description, never on a model
-      directly (`docs/models/idea-to-output.md` §3; ADR-0063
-      decision 4). A fact reference may still jump the level:
-      `auto-run.md` cites the agent model's §10.4.
-      Trigger: an approach whose rules no convention could hold.
-      See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
+- [ ] Decide which way a fact reference may point: up, sideways,
+      across chains (2026-10-23, the reviewer).
+      Context: `docs/models/idea-to-output.md` §3 says every link
+      points up, and a line may point at a fact's home in any
+      document. Practice points sideways too: each manual's *What
+      this does not cover* points at its neighbours, and a skill
+      `requires` another convention. 11 of 12 manuals point at the
+      agent model without standing on it, as the manual form asks.
+      No approach points at a model today. Nothing says what "up"
+      means between two texts of one level, or of two chains.
+      Ideas:
+      - "up" as toward the fact the line relies on, at any level.
+      - sideways allowed for a fact another convention owns.
+      - an approach pointing at a model when no convention holds the
+        fact (ADR-0063 decision 4 has it stand on a description).
+      Trigger: round 2's Dependencies reading, which reads every
+               pointer.
+      See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1;
+      devlog 2026-10-25; `TODO-CONVERSATION-MEMORY.md` §16.
 
 - [ ] Decide whether a model may be written for one convention
       (2026-10-23, the reviewer).
