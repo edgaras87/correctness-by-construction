@@ -27,16 +27,11 @@ rules split that way, and the rules came here before it read
 - **`delivery/container/.claude/rules/one-home.md` — a rule,
   shipped**, held at `.claude/rules/one-home.md` with no `paths:`,
   so it loads at the start of every session: §1.
-- **`.claude/rules/one-home.md` — the deliverer's**, derived from
-  §1 like the container's. It differs in four things: its scope
-  takes in manuals, skills and rules; its rule 1 points at §2; it
-  allows a retelling with a fact reference (ADR-0059); and its
-  examples are this repo's.
-- **`.claude/rules/foundation-check.md` — §4 and §5 at the commit,
-  and §3's grep for a renamed or renumbered section, the
-  deliverer's**, loaded in every session and acting before a
-  commit is staged that touches a description or what derives from
-  it, or moves a section.
+- **`.claude/rules/one-home.md` — the deliverer's**, loaded in
+  every session: §1 and §2.
+- **`.claude/rules/foundation-check.md` — the deliverer's**, loaded
+  in every session and acting before a commit is staged: §3's grep
+  for a moved section, §4 and §5.
 
 What derives from this page is that list. A change here walks it;
 a change forced in one of them is checked back against this page.
@@ -110,8 +105,10 @@ A line that relies on a fact written elsewhere carries a **fact
 reference**: the address of the fact's home. It has two readers.
 The agent may follow it to read the fact whole, with no guarantee
 that it will (`docs/models/agent.md` §4.2, claim P1). The walk
-re-reads the line when the home changes (§4). "Tag" is no longer
-used for it.
+re-reads the line when the home changes (§4). A fact has one home,
+so a fact reference has one target: the home of the fact its line
+relies on. The line above relies on a claim about agents, so it
+names the agent model, not a convention that applies the claim.
 
 A fact reference names the document by its path from the repo
 root, `docs/conventions/<name>/`, with the section number when it
@@ -130,9 +127,9 @@ a retelling always names the section: the walk re-reads only the
 retellings of the section that changed (§4), and one with no
 section would be re-read at every change. A commit that renames or
 renumbers greps all living text for each old path and number, and
-fixes what points at them in the same commit. The commit-plan
-skill's sweep, `delivery/container/.claude/skills/commit-plan/SKILL.md`
-§4, looks again before a plan's close.
+fixes what points at them in the same commit. A commit plan's
+sweep looks again before its close
+(`docs/conventions/commit-plan/` §2).
 
 *Decided in the walk, 2026-09-29, when the conventions manual's §3
 held six rules as bold paragraphs and every pointer into it said
@@ -151,7 +148,10 @@ moved from a plan's close to the commit that renumbers.*
 
 This page included. A description is how we understand a thing
 today, written down: the concept, each model, each manual,
-`ARCHITECTURE.md`. It may be wrong or incomplete, and it is
+`ARCHITECTURE.md`. It states what is true today; how it came to be
+is history's: the ADRs, the devlog, commit bodies, and a lesson's
+dated italic (`docs/conventions/conventions/` §3.7). It may be
+wrong or incomplete, and it is
 canonical regardless — everything derived from it agrees with it
 until it changes, and it changes only for a reason recorded,
 practice being the evidence. What derives from it is not a
@@ -179,7 +179,7 @@ for all of them, and this is where it is stated:
    convention`, `the <name> model`, or `concept v1`. Each retelling
    whose fact reference names a changed section is re-read with the
    paragraph around it; a host that changes for it is walked in
-   turn (step 5).
+   turn (step 5). The greps and these re-reads are **the walk**.
 4. A change forced in a derived thing is checked back against the
    description.
 5. A disagreement is raised and decided (§5); if the description
