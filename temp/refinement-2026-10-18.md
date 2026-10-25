@@ -386,5 +386,44 @@ was inserted, `8042a18`: the reviewer's question on FINDING-114's
 line became a TODO item.
 
 Round 1 is closed. Round 2 is next: its kinds are in *Kinds and
-rounds*. When it reads, *Met in round 1, for round 2* first, and
-TODO's Now item, the staying-in-step convention.
+rounds*. Before it reads, its rule check (*Round 2*, below); when
+it reads, *Met in round 1, for round 2* first.
+
+## Round 2: where it lives
+
+Its kinds are One home, Dependencies, Lessons and Layout
+(*Kinds and rounds*), with the map of the records,
+project-recording §1. It reads *Met in round 1, for round 2*
+first.
+
+### The rules' check (§2.3)
+
+What changed since round 1's check, at `775fc16`, and the TODO
+items that name each rule, searched 2026-10-25.
+
+| Kind | Rule | Changed since | TODO items naming it | Doubt |
+|---|---|---|---|---|
+| One home | `.claude/rules/one-home.md`; `docs/conventions/project-recording/` §11 | a retelling may stand where the reader acts on it, tagged to its source (ADR-0059, `0c2149b`, `0148ce1`) | 8 | yes: where the rule lives, and what its tag is |
+| Dependencies | `docs/conventions/conventions/` §3.1 | a tagged retelling is a follower, not a second statement (`e9109a6`) | 1 | yes: where the rule lives |
+| Lessons | `docs/conventions/conventions/` §3.7 | nothing | 0 | no |
+| Layout | `docs/conventions/conventions/` §3.3 | the channel section's tag (`f473d31`, `89e2290`); "a section holds one subject" unchanged | 0 | no |
+
+Two items doubt a rule:
+
+- **"Write the staying-in-step convention"** moves project-recording
+  §11 and conventions §3.1, §3.2, §3.5 and §3.6 into a convention
+  of their own: both doubted rules change their home.
+- **"Define the fact reference"** settles what a tag is, and asks
+  that a missing one be found. One home's findings rest on it: a
+  retelling without its tag is a second home.
+
+The other six that name one home ask when it is checked, or name it
+in passing: the sweep, a session's end, the index as a full local
+map, how work is run by agents, which ideas are models, and the
+worked example's two copies.
+
+The fix proposed: the staying-in-step convention, with the fact
+reference defined in it, landed before round 2 reads, as a commit
+plan, each fix judged on §2.3's four questions.
+
+Not yet confirmed by the reviewer.
