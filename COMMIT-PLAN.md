@@ -94,8 +94,9 @@ its remaining questions the title in the written form and one name
 for it, with the idea that "pointer" goes as a noun, 50 uses in
 19 files. The shape
 item's idea that an ask "is tagged to the shape" says "carries a
-fact reference". The refinement file's rule check says how each
-doubt ended.
+fact reference". The item on the conventions index counts the
+manuals outside the chain as nine, and all of them as twelve. The
+refinement file's rule check says how each doubt ended.
 `TODO-CONVERSATION-MEMORY.md` §13 stays with its item.
 
 **7. `docs(agent): close commit plan for facts-in-sync`**
