@@ -1351,3 +1351,44 @@ merged:
   resting on a decision.
 
 Eight decisions, DECISION-7 to 14.
+
+### Endings (§2.6)
+
+The reviewer took the proposed endings, 2026-10-25, as the eight
+decisions left them and with one side of each "or" chosen. The
+work names each fixed finding's commit.
+
+- **Fixed, 73:** FINDING-135 to 178, 180, 182, 184 to 190, 193,
+  197 to 201, 206, 207, 209, 210, 212 to 215, 217 to 219, 222, 225,
+  226. 206 and 219 are fixed in part, their rest moved below. Where
+  a proposal held an "or", the fix was taken: 151, 158, 172, 177,
+  178, 190. FINDING-140 is fixed
+  whole, the gap going by DECISION-9. FINDING-135, 137, 138 and 140
+  are worked in DECISION-9's renumbering of the conventions manual.
+- **Declined, 5:** FINDING-181, the concept's repeated claim, its
+  chapter 00 the declared overview; 183, *Where to look* repeating a
+  page's pointers, which the form allows; 192, conversation-memory
+  being history (DECISION-13); 205, the shipped `writing.md` naming
+  the deliverer's manual, round 1's DECISION-3 exception widened to
+  name both rules; 221, `approach-drafting.md`'s line labelled for
+  the deliverer.
+- **Declined in part:** 146's ADR §3.5, small and cited twice; 157's
+  exchange §5.4, an example; 198's §2.3 and its four questions;
+  207's ten template headers, read when a template is copied.
+- **Moved to TODO, 15:**
+  - "Decide how a fact reference is written": 191, 196
+    (DECISION-10); 202, 204, 208, 216, the run's case of a retelling
+    (ADR-0059), which no item tracked; 219's paths within a skill;
+    220.
+  - "Rewrite the method's texts plain": 223, 224, 227, 228
+    (DECISION-7 and 8), and 206's citations of run 3's RETRO.
+  - "Decide how work is run by agents": 194.
+  - "Decide whether each seat's copy is written for its seat": 195.
+  - "Decide whether cbc-bootstrap points at the Spring hygiene
+    parts": 203.
+  - "Decide how an approach and a shape divide an output": 211.
+- **Split, 1:** FINDING-179. "Approach" is fixed; "description"
+  moves to "Decide what kind of text our ARCHITECTURE is".
+
+None of the five declines is taste alone: each line is true, or
+history, or another item carries it.
