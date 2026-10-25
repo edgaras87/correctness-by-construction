@@ -155,7 +155,8 @@
       - `CLAUDE.local.md` repeats two rules: commit on the word
         (`commit-messages`) and a stop at each boundary
         (`commit-plan`). Yet `docs/conventions/agent-arrangement/`
-        §3.7 counts how often the agent stops as a setting.
+        §3.7 counts how often the agent stops as a setting. Round
+        2's FINDING-194 found it again.
       - "never rewrite main across 35edd3f" lives only in the
         agent's memory, unseen by any reader of the repo. Its
         failure is not noticing the moment, a rebase: a local rule
@@ -204,6 +205,10 @@
       - a part never asked for is a fifth kind of difference at the
         gate: the fix goes to the approach, and the output records
         the gap.
+      - round 2's FINDING-211: one form told in a skill, a shape
+        and a template: the slice record's outline, the backstop at
+        the red run, a cost's size, the registry entry's fields, a
+        body asserted by path.
       Trigger: `approach-drafting`'s first evaluation, at the
                refinement's close.
       See: devlog 2026-10-20, later; `TODO-CONVERSATION-MEMORY.md` §2.
@@ -316,6 +321,15 @@
         refinement's DECISION-10, resting FINDING-191, our record
         headers, and 196, our rules and skills with 0 to 7 section
         references each.
+      - the run's case of a retelling with a fact reference
+        (ADR-0059), tracked nowhere else: which ids are fact
+        references, and when they are re-read. Round 2's
+        FINDING-202, 204, 208 and 216 list shipped retellings that
+        wait on it; 208's only source is a closed ADR.
+      - round 2's FINDING-219, 32 `references/…` paths and about 13
+        bare file names inside one skill; and 220, shipped rules
+        named in prose 13 times, and two paths without the section
+        they rely on.
       Trigger: round 2 of the refinement closes, before round 3's
                rule check, with "Decide which way a fact reference
                may point".
@@ -545,6 +559,13 @@
       - `cbc-slice`'s opening states the completion test alone;
         `concept/04-cbc-slice.md` says the test proves a wall, and
         the wall closes the slice.
+      - round 2's lessons and layout in these texts, left here by
+        the refinement's DECISION-7 and 8: FINDING-223, the harness
+        reference's "passes"; 224, the "lived" markers; 227,
+        `cbc-framing`'s export section, `infra-establish`'s manuals
+        told three times, the worked example's two layouts; 228,
+        the walkthrough's §4 parts; and 206, the playbook's 12
+        citations of run 3's RETRO.
       Trigger: the refinement of this repo closes. Its writing kind
                reads these texts; what round 3 did leaves this
                item, and what is left stays or goes.
@@ -727,6 +748,9 @@
       - the commit-plan manual names the sweep only in §2, "reads
         the text unwrapped"; only the skills say it runs before a
         close.
+      - `.claude/approaches-on-trial/approach-drafting.md` is
+        identical in both seats too, and no line says so (round 2's
+        FINDING-195).
       Trigger: round 2's One home reading, which meets the five
                lines.
       See: devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §15.
@@ -752,6 +776,10 @@
       - project-recording §8 lists each seat's parts, each marked
         as owned (its home) or summarized (points at its owner),
         with the reader of each; a part no one reads goes.
+      - "description" is defined in *The words*, in
+        `docs/conventions/facts-in-sync/` §4 and in
+        `docs/models/idea-to-output.md` §2, and the three disagree
+        on which texts are descriptions (round 2's FINDING-179).
       Trigger: round 2's reading of layer 4.
       See: devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §17.
 
@@ -977,6 +1005,11 @@
       rule, an exception the ADR records. The walk named the wider
       gap: nothing ships a stack overlay, and a blind run cannot
       fetch one.
+      Ideas:
+      - round 2's FINDING-203: `cbc-bootstrap`'s skill and its
+        walkthrough both tell a run to add a stack overlay below
+        each hygiene file's marker, and no file ships one. The
+        skill could point at the walkthrough's step 2 instead.
       Trigger: cbc-bootstrap's hygiene step next opened, or a
       fourth run deriving `.gitignore` by hand.
       See: devlog 2026-09-18.
