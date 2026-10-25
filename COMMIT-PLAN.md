@@ -65,7 +65,10 @@ The reviewer's questions on commit 2. In the new manual:
   history's;
 - §3's sweep reference points at the commit-plan convention's
   manual, `docs/conventions/commit-plan/` §2, not the container's
-  skill.
+  skill;
+- §3 says a fact reference names the home of the fact its line
+  relies on: a fact has one home, so a reference has one target,
+  at whatever level of the chain it lives.
 
 **3. `chore(agent): our rules stand on facts-in-sync`**
 `one-home.md` and `foundation-check.md`: their `foundation`, their
