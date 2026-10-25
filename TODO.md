@@ -711,6 +711,27 @@
                lines.
       See: devlog 2026-10-25; `TODO-CONVERSATION-MEMORY.md` §15.
 
+- [ ] Decide what kind of text our ARCHITECTURE is, and its size
+      (2026-10-25, the reviewer).
+      Context: facts-in-sync §4 calls `ARCHITECTURE.md` a
+      description; idea-to-output §2 does not list it as one;
+      project-recording §8 calls it a record. Ours runs to 3,608
+      words against §8.4's one or two pages, and holds a map, a
+      glossary (*The words*) and a known-wrong list. A run's is
+      load-bearing: `cbc-bootstrap` and `cbc-slice` write what a
+      slice may rely on. Ours has no build to map.
+      Ideas:
+      - *The words* as its own file, as a run's glossary is.
+      - counts replaced by pointers; §2.3's list of which
+        convention owns each container file dropped, since each
+        file's `foundation` says it.
+      - §1 adds the models, missing since they arrived.
+      - kept at one or two pages: the pairing, where things go, and
+        pointers into the local maps.
+      - run-only, our map moved into the README.
+      Trigger: round 2's reading of layer 4.
+      See: devlog 2026-10-25; `TODO-CONVERSATION-MEMORY.md` §17.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).

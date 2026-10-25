@@ -1016,3 +1016,74 @@ references and where and what it should refere?"
 - Both wait on this item. What replaces "other conventions" is the
   direction it decides. Retiring "pointer" as a noun is a decision
   ADR-0065 did not take; it retired only "tag".
+
+## 17. What kind of text our ARCHITECTURE is
+
+Item: "Decide what kind of text our ARCHITECTURE is, and its size".
+
+### 2026-10-25
+
+#### What the reviewer asked
+
+After commit 5 of the facts-in-sync plan edited it: do we have both
+seats of it, what is each, and how do they differ? How does it
+differ from a model? Does it hold redundancy, or miss something?
+Should anything move out of it, or into it as its home? Is it part
+of the idea-to-output chain? Does it hold on maintenance,
+readability, future-proofing and complexity? Then: how would it be
+useful if done correctly; what does project-recording say it is
+for; how useful is it in runs; should we keep it at all, and should
+it be a run's thing only?
+
+#### What exists today
+
+- project-recording §8 holds both seats. A run's maps a built
+  system in one or two pages: a diagram, components, an invariants
+  table, a `src/` codemap. Ours maps documents and the delivery:
+  3,608 words, with *The words* and a known-wrong list inside. A
+  run's glossary is its own file, `docs/glossary.md`.
+- §8.2: ADRs are a history of choices; ARCHITECTURE is the
+  synthesized present, read second, after the README. §8.1: what a
+  later slice may rely on.
+- In a run it is load-bearing. `cbc-bootstrap` writes what a slice
+  may rely on; `cbc-slice` adds one Invariants row per rule at a
+  slice's close, and its gate checks the rows against the build;
+  the entry file sends "asking what a slice may rely on" there. Run
+  3's RETRO D10 made it that home, after certified history was read
+  as current; D16 cut its 2,031 words to the table.
+- In ours no skill writes or reads it. Writing rule 6 makes *The
+  words* the home of each coined word.
+- Three texts name its kind differently: facts-in-sync §4 a
+  description; idea-to-output §2 lists only manuals and the concept
+  as descriptions; project-recording a record. It carries no list
+  of what derives from it, which a description must.
+
+#### Points made
+
+- A model is an idea any repo can adapt; ARCHITECTURE maps one repo
+  today. Not a model.
+- §2.3 says which convention owns each of the 23 container files;
+  each file's `foundation` already does, and the walk greps it.
+  Commit 5 edited that sentence for one convention, as every new one
+  will.
+- §2.5, §3 and §4 may retell exchange, facts-in-sync and
+  agent-arrangement: round 2's One home kind reads them.
+- §1 says "two bodies of writing" and leaves out the models.
+- Counts ("twelve manuals", "twenty-three files") go stale with
+  every addition; a pointer does not. "Three movements… the
+  material, the motion, the actor" is metaphor.
+- Maintenance, future-proofing and complexity do not hold;
+  readability is weak.
+- Done right, ours would answer in one or two pages what nothing
+  else does: how the stated and the made usable pair, where each
+  thing goes, and where each local map is. The foundation lines
+  and the walk now record what depends on what, file by file, so
+  the map need not.
+- The run's is plainly worth keeping: the method writes and checks
+  it. Ours has thin evidence of being read; its live use is *The
+  words*. Kept short, it is the newcomer's forest and what a
+  maintainer's container would be filtered from (ADR-0042). Made
+  run-only, our map would move into the README and *The words* to a
+  file of its own.
+- Not in the facts-in-sync plan: round 2 reads layer 4 next, and
+  what falls outside its kinds is this item.
