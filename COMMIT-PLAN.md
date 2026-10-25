@@ -33,9 +33,10 @@ It is round 2's rule fix (`temp/refinement-2026-10-18.md`,
 - `one-home.md`, ours and the shipped one, and
   `foundation-check.md` stand on the facts-in-sync convention.
 - `ARCHITECTURE.md` counts twelve manuals; *The words* defines the
-  fact reference and the walk.
+  link, the fact reference and the walk.
 - The staying-in-step item closes. The fact-reference item stays,
-  narrowed to writing a reference with its title.
+  narrowed to writing a reference with its title, and to one name
+  for it.
 
 ## Commits
 
@@ -83,13 +84,18 @@ holds (conventions §4, step 3).
 **5. `docs: ARCHITECTURE names facts-in-sync`**
 §1.2's count and what the manuals cover; §2.3's line on which
 convention owns `one-home.md`; the codemap's count; *The words*:
-the fact reference, the walk, and the foundation entry's pointer.
+the link, from the idea-to-output model §3; the fact reference; the
+walk; and the foundation entry's pointer.
 
 **6. `docs: round 2's rule check ends`**
 The records commit. ADR-0065 Accepted. TODO: the staying-in-step
 item goes; the fact-reference item is rewritten true for today,
-its remaining question the title in the written form. The
-refinement file's rule check says how each doubt ended.
+its remaining questions the title in the written form and one name
+for it, with the idea that "pointer" goes as a noun, 50 uses in
+19 files. The shape
+item's idea that an ask "is tagged to the shape" says "carries a
+fact reference". The refinement file's rule check says how each
+doubt ended.
 `TODO-CONVERSATION-MEMORY.md` §13 stays with its item.
 
 **7. `docs(agent): close commit plan for facts-in-sync`**
