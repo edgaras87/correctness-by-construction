@@ -724,6 +724,56 @@
       Trigger: round 2's reading of layer 4.
       See: devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §17.
 
+- [ ] Decide whether a manual keeps the story behind a lesson
+      (2026-10-25, the reviewer).
+      Context: a lesson's dated italic does two jobs. An example
+      helps a reader use the lesson, each time it is read. An origin
+      serves only when the lesson is changed or questioned. The 12
+      manuals hold 56 such notes, 286 of 3,817 lines (7%); our
+      `.claude/`, 17 and 115 lines (3%). Each loads with its file.
+      Round 2's read found 6 rules standing only in a note. Round 2
+      reads against `docs/conventions/conventions/` §3.7, so the
+      rule stays until the round closes.
+      Ideas:
+      - examples stay; each origin becomes one line pointing at its
+        history, an ADR, a devlog entry or a commit, and the story
+        lives there.
+      - an origin with no other home gets one: a devlog entry
+        written the day it moves.
+      - weighed on maintenance, readability, future-proofing and
+        complexity, the pointer held best; the full note held only
+        on future-proofing.
+      - "Decide whether the concept, the conventions and the
+        approaches keep examples" weighs the examples; this item,
+        the origins.
+      Trigger: round 2 of the refinement closes, before round 3's
+               rule check.
+      See: devlog 2026-10-25, evening; `TODO-CONVERSATION-MEMORY.md`
+      §18.
+
+- [ ] Decide what "rule" names, and give the agent's rule files a
+      name of their own (2026-10-25, the reviewer).
+      Context: "rule" has four senses in 779 uses across living
+      text. A file under `.claude/rules/` that loads into the agent:
+      91 mentions of the path, 54 of "skills and rules". A numbered
+      line inside one, "one-home rule 3": 17. What a text says must
+      be done, "the bump rule". In a run, a rule the built system
+      keeps, "one row per rule": 5. *The words* defines none.
+      `docs/conventions/conventions/` §2 is about the files, yet its
+      "A rule is one sentence in the imperative" means a line.
+      Ideas:
+      - "agent rule" for the file, plain "rule" for what must be
+        done; an agent rule holds rules, numbered.
+      - the run's sense says "invariant", the method's own word.
+      - the same check for other words with several senses: "model"
+        (ours, and the Claude model a delegation names), "step"
+        (PLAN's, and a numbered step inside a section), "run" (the
+        repository, and the verb round 3 already lists).
+      Trigger: round 3's rule check, so its Writing kind reads
+               against the chosen words.
+      See: devlog 2026-10-25, evening; `TODO-CONVERSATION-MEMORY.md`
+      §19.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).

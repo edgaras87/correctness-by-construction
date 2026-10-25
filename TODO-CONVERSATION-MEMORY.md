@@ -1134,3 +1134,100 @@ not one-home thing too? or is it? should it be?"
 - Read this way it is a record, its owned parts output and its
   header the approach, not a description: facts-in-sync §4's list
   would be the side that is wrong. The item decides.
+
+## 18. The story behind a lesson
+
+Item: "Decide whether a manual keeps the story behind a lesson".
+
+### 2026-10-25, evening
+
+#### What the reviewer asked
+
+While round 2's DECISION-7 was decided, on whether the lessons rule
+reaches beyond manuals: "should we keep those "written stories"?
+isnt it a noise? do we need them at all and if do, should we move
+them to some kind of record file to which we refer and not keeping
+them in texts? doesnt that thing is for maintenance and not for
+usage? even for maintenance it is for remembering where it came,
+but how much it is usefull? cost is that we have text and it loads
+to context together with text. but it is used only at specific case
+when we need to remember store why we brought it in." And which way
+holds best on maintenance, readability, future-proofing and
+complexity.
+
+#### What exists today
+
+- `docs/conventions/conventions/` §3.7: the body states a lesson in
+  general; the case goes beside it as a dated italic, what
+  happened, when, what changed. *What it is for* holds the need's
+  evidence by design, and is not in question.
+- Counted 2026-10-25: 56 notes in the 12 manuals, 286 of 3,817
+  lines (7%); 17 in our `.claude/`, 115 of 3,245 (3%).
+- Round 2's read: 6 rules stood only in a note (FINDING-155, 156,
+  163, 164, 165, 167).
+- Many notes have their story in an ADR or the devlog too; not all.
+
+#### Points made
+
+- A note does two jobs. An example shows the rule in use ("a
+  substring cannot tell `3` from `30`"), read every time. An origin
+  says where it came from, read only at a change.
+- An origin is needed when a rule is changed or dropped (what
+  failure did it stop), when its strength is judged (lived or
+  guessed, once or twice), and when the reviewer asks "why did we do
+  X?". Each comes at a change, when the foundation check opens the
+  manual anyway, so one pointer costs one hop.
+- A run can never use our origins: it cannot open our ADRs or
+  devlog.
+- Three ways: keep the full note; a one-line pointer with the story
+  in history; drop it and rely on git. The pointer held best on
+  maintenance and readability, and held on future-proofing; the full
+  note held only on future-proofing; dropping it loses the evidence
+  the manuals ask for.
+- Not now: it changes §3.7, the rule round 2's Lessons kind reads
+  against, which stays while the round reads (the refinement's
+  §2.4).
+
+## 19. What "rule" names
+
+Item: "Decide what "rule" names, and give the agent's rule files a
+name of their own".
+
+### 2026-10-25, evening
+
+#### What the reviewer asked
+
+On the draft of §18's item, "Decide whether a manual keeps the
+story behind a rule": "u mean rule of what? text writing? because
+we use rule also for agent rules. i thinking maybe we should
+subject next to glossary words as rule (meaning not agent rule
+here). so for example when we want to say agent rule we should have
+agent-rule? do we need to decide different word when we talk in
+general as a rule of something?"
+
+#### What exists today
+
+- Counted 2026-10-25 over the living Markdown: "rule" or "rules"
+  779 times. `.claude/rules/` 91; "skills and rules" and its
+  variants 54; "rule N" 17; "per rule" 5.
+- Four senses: an agent's rule file; a numbered line inside one; what
+  a text says must be done; in a run, a rule the built system keeps.
+- *The words* in `ARCHITECTURE.md` defines none of them; writing
+  rule 6 asks each coined word to be defined there once.
+- `docs/conventions/conventions/` §2 is about rule files and says
+  "A rule is one sentence in the imperative", a line's sense.
+- §18's item was renamed "behind a lesson" before it was staged.
+
+#### Points made
+
+- "Agent rule" for the file is two plain words, not a coined one,
+  and a grep can tell it from the general sense.
+- A numbered line needs no word of its own: an agent rule holds
+  rules.
+- The run's sense has the method's word, invariant.
+- Other words carry several senses: "model", "step", "run". The
+  check should cover them all.
+- Round 3 rewords what stays; its Writing kind reads against
+  writing rule 6. Chosen before round 3's rule check, the words let
+  one read find every misuse. Chosen inside round 2, text would be
+  reworded that round 2 may still move.
