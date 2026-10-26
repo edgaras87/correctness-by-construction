@@ -176,10 +176,8 @@ every session needs, never a convention's rules.
 Repo root, or under `.claude/` — Claude Code reads `CLAUDE.md` at
 either address as one file (§5.1). The
 container ships it under `.claude/`, so that every agent-side path
-sits in one directory; a project that wants it at the root moves it,
-which one run showed to be a pure rename — content untouched, the tool
-reading the file at the new address from the next session. The
-deliverer's sits at the root.
+sits in one directory; a project that wants it at the root moves it.
+The deliverer's sits at the root.
 
 ### 2.4 How
 
