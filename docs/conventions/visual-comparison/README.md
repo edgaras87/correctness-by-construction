@@ -61,9 +61,11 @@ came from.
   is the rule the naming mistake would have broken, written down so
   the mistake is not available again.
 
-- **The render decides, not the reasoning about the render.** Both
-  Mermaid failures were dialects built for the job in hand, and
-  neither was predictable from the documentation.
+- **The render decides, not the reasoning about the render.** What
+  a notation drops, or asserts by accident, shows only once it is
+  drawn; its documentation does not say it ahead. *Both Mermaid
+  failures of 2026-09-18 were dialects built for the job in hand,
+  and neither was predictable from the documentation.*
 
 - **Fighting a notation is losing.** Invisible links, spacer nodes,
   nodes declared out of meaning order — a candidate needing them
