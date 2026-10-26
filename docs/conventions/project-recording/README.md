@@ -249,35 +249,19 @@ renumbered. Indexed with one line each in PLAN.md's Decision index.
 
 ### 3.4 How
 
-The Nygard template:
+How an ADR is written is its form. In a run, the stub
+`docs/adr/0001-record-architecture-decisions.md`, the template
+copied for each new one; in the deliverer's seat, the header of
+`docs/adr/README.md`. Why the form is as it is:
 
-```markdown
-# 0004. Use PostgreSQL for primary storage
-Date: 2026-08-15
-Status: Accepted        <!-- Proposed | Accepted | Deprecated | Superseded by 0009 -->
-
-## Context
-What situation forces a decision. Facts and constraints, not opinions.
-
-## Options considered
-1. PostgreSQL — mature, relational fits our invariants; ops burden.
-2. MongoDB — flexible schema; weak fit for our transactional needs.
-
-## Decision
-We will use PostgreSQL.
-
-## Consequences
-Good: transactions, constraints enforce invariants at the DB level.
-Bad: schema migrations become a discipline we must maintain.
-```
-
-- **Immutable.** Changed your mind? Write a new ADR marked "Supersedes
-  0004," set the old one's status to "Superseded by 00NN." History of why
-  is the whole point.
-- Threshold for "significant": would a future developer ask "why on earth
-  is it done this way?" If yes, ADR. Choice of variable names: no. Choice
-  of database, framework, sync-vs-async, build-vs-buy: yes.
-- Keep it under a page. An ADR you won't write because it's heavy is worse
+- Context, options, decision, consequences: the options rejected
+  are kept, so "we already considered that" ends a debate.
+- Immutable: the history of why is the whole point, so a changed
+  mind is a new ADR, never an edit.
+- The threshold is a question a future reader would ask, not a
+  size: a variable's name, no; a database, a framework, sync or
+  async, build or buy, yes.
+- Under a page: an ADR you won't write because it's heavy is worse
   than a terse one.
 
 ### 3.5 A number is local to one repo
