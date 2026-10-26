@@ -161,5 +161,5 @@ and that is what the deliverer reads.
   built from the seven rules never-oversold wrote for its own method
   skills and widened to every delivered copy; the pin and the
   read-through; what a copy cannot carry; the check at the take
-- CBC ADR-0046 — the take's commits: the chapters first, the entry
-  in the last
+- CBC ADR-0046 — item 5: the take's commits, the chapters first and
+  the entry in the last
