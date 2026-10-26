@@ -732,9 +732,6 @@
       - each seat's copy written for its seat, never claimed the
         same; it reverses an option ADR-0042 rejected.
       - drop the five lines and keep the files as they are.
-      - the commit-plan manual names the sweep only in §2, "reads
-        the text unwrapped"; only the skills say it runs before a
-        close.
       - `.claude/approaches-on-trial/approach-drafting.md` is
         identical in both seats too, and no line says so (round 2's
         FINDING-195).

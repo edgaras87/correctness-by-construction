@@ -64,79 +64,110 @@ plan says so.
 
 ## 2. Why it is shaped this way
 
-- **Its own convention, and not a record.** It is a scaffold, not a
-  record: nothing about it is meant to be read a year later except
-  through `git log`, so it sits outside
-  `docs/conventions/project-recording/`, whose records are all
-  append-or-evolve (ADR-0038, 1b).
-- **Root placement.** An in-flight change set is visible from a
-  clean clone, so "is work half-landed, and where did it stop?" is
-  answerable without the working tree.
-- **No status in the file.** Tracking status there couples every
-  work commit to a plan edit and reintroduces the staleness that
-  makes a neglected plan lie. Git history is the status.
-- **Material-first is a first-class mode, not a failure.** The CbC
-  seed's third run found four shapes in staged material that no
-  conversation could have settled first, which made the
-  provisional tail, the revision commit and the Proposed-then-
-  Accepted ADR the normal road for it (ADR-0038, 1e).
-- **The records commits are planned.** A change set batches record
-  moments, and a record's trigger can fire mid-set before its truth
-  exists. Walking the entry file's records table while drafting the
-  commit list is what catches it (ADR-0038, 1d).
-- **A plan counts commits.** "Step" is `PLAN.md`'s word; a plan
-  that called its commits steps gave one word two meanings, and a
-  session inside PLAN's Step 10 worked plan steps 1 to 13
-  (ADR-0049, 1).
-- **An inserted commit takes a letter; a commit may repeat.** A
-  plan's numbers are cited, in its notes, its revisions and its
-  commit bodies, so a commit inserted later takes a letter rather
-  than renumbering the rest. Where one change reaches many records,
-  one planned commit repeats over them, naming its order and the
-  rule that stops it. *Run 3's Step 10 inserted 8b, 22b and E2.1 to
-  E2.12 after its plan was written, and ran one plain pass three
-  times over its records, the third only over what the second
-  changed (ADR-0050, 4 and 5).*
-- **Subjects are counted where they are first written.** A plan
-  writes every subject before any lands; counted only at each
-  boundary, a long one lands long, or is rewritten there with
-  nothing in the plan saying why. *Run 3's SL-3 plan, 2026-10-08:
-  three planned subjects over the limit, each caught only at its
-  boundary, and one revision's own subject landed long uncounted.*
-- **The agent's files are a commit of their own.** commit-messages
-  keeps a commit that touches them apart from everything else, so
-  a records commit planned to carry a skill's correction has to be
-  split when it opens. *The same plan put two changes under
-  `.claude/` inside its records step, and split it by revision.*
-- **The sweep reads the text unwrapped.** A grep matches line by
-  line, and a manual wraps its prose, so a name broken across two
-  lines is never found. *Four misses before it was written down: a
-  `§8` hunt that missed a `§7`, a renumbering described without
-  reading its range, a phrase wrapped across two lines, and on
-  2026-09-30 a "(model §10)" pointer the same way (ADR-0049, 3).*
-- **Small steps inside a planned commit, on the reviewer's grant.**
-  Each planned commit landing as one leaves no room to try: two
-  ways meant reworking a commit in place. Small commits give the
-  room, and are folded into the planned commit before its boundary,
-  so the reviewer still sees one commit there. The grant is the
-  reviewer's because a small commit is still a commit, and the stop
-  is `docs/conventions/commit-messages/`' rule (below); without the
-  grant, every commit is a boundary. Each small commit is counted
-  when it is written, as a planned subject is. *Run 3's Step 10,
-  2026-10-13 to 15, under its reviewer's grant: about 180 small
-  commits on a `-detail` branch, landed as 16; sixteen subjects over
-  the limit were found only at the regroup (ADR-0050, 1 and 2).*
-- **A look back before the close.** Each boundary shows one commit;
-  nothing showed the set. Looked at whole, two commits can turn out
-  one change, or one two, and are regrouped on the reviewer's word.
-  *Run 3's polish regrouped 36 small commits into 7, after the fact
-  (ADR-0050, 3).*
-- **The stop at every boundary is commit-messages' rule**,
-  `docs/conventions/commit-messages/`; this convention points at
-  it. *Until 2026-09-08 the sentence was stated here, in §6, a file
-  that opens only for multi-commit work, and the reviewer's pace
-  had to be said every session; it moved to where every commit
-  opens (ADR-0038, 1f).*
+### 2.1 Its own convention, and not a record
+
+It is a scaffold, not a record: nothing about it is meant to be read a year later except
+through `git log`, so it sits outside
+`docs/conventions/project-recording/`, whose records are all
+append-or-evolve (ADR-0038, 1b).
+
+### 2.2 Root placement
+
+An in-flight change set is visible from a
+clean clone, so "is work half-landed, and where did it stop?" is
+answerable without the working tree.
+
+### 2.3 No status in the file
+
+Tracking status there couples every work commit to a plan edit and reintroduces the staleness that
+makes a neglected plan lie. Git history is the status.
+
+### 2.4 Material-first is a first-class mode, not a failure
+
+The CbC seed's third run found four shapes in staged material that no
+conversation could have settled first, which made the
+provisional tail, the revision commit and the Proposed-then-
+Accepted ADR the normal road for it (ADR-0038, 1e).
+
+### 2.5 The records commits are planned
+
+A change set batches record moments, and a record's trigger can fire mid-set before its truth
+exists. Walking the entry file's records table while drafting the
+commit list is what catches it (ADR-0038, 1d).
+
+### 2.6 A plan counts commits
+
+"Step" is `PLAN.md`'s word; a plan that called its commits steps gave one word two meanings, and a
+session inside PLAN's Step 10 worked plan steps 1 to 13
+(ADR-0049, 1).
+
+### 2.7 An inserted commit takes a letter; a commit may repeat
+
+A plan's numbers are cited, in its notes, its revisions and its
+commit bodies, so a commit inserted later takes a letter rather
+than renumbering the rest. Where one change reaches many records,
+one planned commit repeats over them, naming its order and the
+rule that stops it. *Run 3's Step 10 inserted 8b, 22b and E2.1 to
+E2.12 after its plan was written, and ran one plain pass three
+times over its records, the third only over what the second
+changed (ADR-0050, 4 and 5).*
+
+### 2.8 Subjects are counted where they are first written
+
+A plan writes every subject before any lands; counted only at each
+boundary, a long one lands long, or is rewritten there with
+nothing in the plan saying why. *Run 3's SL-3 plan, 2026-10-08:
+three planned subjects over the limit, each caught only at its
+boundary, and one revision's own subject landed long uncounted.*
+
+### 2.9 The agent's files are a commit of their own
+
+commit-messages keeps a commit that touches them apart from everything else, so
+a records commit planned to carry a skill's correction has to be
+split when it opens. *The same plan put two changes under
+`.claude/` inside its records step, and split it by revision.*
+
+### 2.10 The sweep, before the close and unwrapped
+
+A commit that renames or renumbers greps for the old names in that
+commit (`docs/conventions/facts-in-sync/` §3.3). Before the close,
+the sweep looks again for every name the set moved, all at once: a
+commit's own grep looks for the names it meant to move, and misses
+the rest. It reads the text unwrapped. A grep matches line by
+line, and a manual wraps its prose, so a name broken across two
+lines is never found. *Four misses before it was written down: a
+`§8` hunt that missed a `§7`, a renumbering described without
+reading its range, a phrase wrapped across two lines, and on
+2026-09-30 a "(model §10)" pointer the same way (ADR-0049, 3).*
+
+### 2.11 Small steps inside a planned commit, on the reviewer's grant
+
+Each planned commit landing as one leaves no room to try: two
+ways meant reworking a commit in place. Small commits give the
+room, and are folded into the planned commit before its boundary,
+so the reviewer still sees one commit there. The grant is the
+reviewer's because a small commit is still a commit, and the stop
+is `docs/conventions/commit-messages/`' rule (below); without the
+grant, every commit is a boundary. Each small commit is counted
+when it is written, as a planned subject is. *Run 3's Step 10,
+2026-10-13 to 15, under its reviewer's grant: about 180 small
+commits on a `-detail` branch, landed as 16; sixteen subjects over
+the limit were found only at the regroup (ADR-0050, 1 and 2).*
+
+### 2.12 A look back before the close
+
+Each boundary shows one commit; nothing showed the set. Looked at whole, two commits can turn out
+one change, or one two, and are regrouped on the reviewer's word.
+*Run 3's polish regrouped 36 small commits into 7, after the fact
+(ADR-0050, 3).*
+
+### 2.13 The stop at every boundary is commit-messages' rule
+
+It is `docs/conventions/commit-messages/`'s; this convention points at
+it. *Until 2026-09-08 the sentence was stated here, in §6, a file
+that opens only for multi-commit work, and the reviewer's pace
+had to be said every session; it moved to where every commit
+opens (ADR-0038, 1f).*
 
 ## Why it arrives this way
 
@@ -145,7 +176,7 @@ out to need several commits — and nothing in a record would put the
 plan in front of it then (`docs/models/agent.md` §4.2). The one rule
 that must fire at every commit, the stop, is not here: a skill that
 opens only for multi-commit work cannot carry it, and it moved to
-`docs/conventions/commit-messages/` for that reason (§2).
+`docs/conventions/commit-messages/` for that reason (§2.13).
 
 ## What this does not cover
 

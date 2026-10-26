@@ -146,7 +146,7 @@ day, by form.*
 A commit that renames or renumbers greps all living text for each
 old path and number, and fixes what points at them in the same
 commit. A commit plan's sweep looks again before its close
-(`docs/conventions/commit-plan/` §2).
+(`docs/conventions/commit-plan/` §2.10).
 
 *Found 2026-10-19: the refinement's manual was renumbered three
 times on 2026-10-18, outside any commit plan, so no close sweep
