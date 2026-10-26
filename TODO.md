@@ -772,6 +772,10 @@
         `docs/conventions/facts-in-sync/` §4 and in
         `docs/models/idea-to-output.md` §2, and the three disagree
         on which texts are descriptions (round 2's FINDING-179).
+      - the README, `CLAUDE.md`, the CHANGELOG's header and the tiers
+        model each say what this repo is, in their own words; since
+        `0a40aea`, `CLAUDE.md` names it the deliverer, and the tiers
+        model calls it the concepts tier.
       Trigger: round 2's work on layer 4, before its fixes, which
                rest on it: FINDING-145, 179 and 184.
       See: devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §17.
