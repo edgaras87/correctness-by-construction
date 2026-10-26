@@ -419,6 +419,10 @@ manual owns the thing a word names, pointed at there.
   applies it and does not explain. One rule for all of them,
   `docs/conventions/facts-in-sync/` §4; they differ at the edges
   (ADR-0039).
+- **model** — the top description of a chain of texts: an idea any
+  repo can adapt, its rules varying by repo, like an interface. A
+  repo adapts it in a manual (`docs/models/idea-to-output.md` §2
+  and §5).
 - **canonical** — of a description or a copy: the one that counts,
   from which every other is derived or copied. Says reference,
   never correctness — a canonical description is today's
@@ -430,6 +434,9 @@ manual owns the thing a word names, pointed at there.
 - **local map** — a directory's `README.md` that says how the parts
   of that area relate, which this page points into. Relations only;
   not every README is one (ADR-0045).
+- **convention** — a way of working written down once, as two texts
+  kept apart: its manual, and the artifacts a project acts on
+  (`docs/models/idea-to-output.md` §6).
 - **manual** — a convention's description, at
   `docs/conventions/<name>/README.md`. Never shipped.
 - **approach** — how a piece of work is done. A skill or a rule is
