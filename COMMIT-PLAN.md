@@ -42,9 +42,9 @@ decision 7 left for round 2.
 - Every living pointer into either text lands where its fact now
   is: the manual's 28, as DECISION-9 counted them, and the model's
   13, 7 of them in TODO.
-- `docs/conventions/README.md`'s "The chain" is "The hand-off", so
-  "chain" means one thing, the model's. *The words* defines
-  "model" and "convention".
+- Conventions §1.2 says what a convention lands with: what it
+  requires, not "its chain". *The words* defines "model" and
+  "convention".
 - ADR-0066 records the move and the renumbering ADR-0065 rejected,
   taken now for a change of form.
 - The refinement's file names each fixed finding's commit. TODO's
@@ -133,11 +133,18 @@ the master first. Only lines that back one section change. A skill
 both seats hold is two commits. Their count and wording are known
 only once read.
 
-**10. `docs: rename the index's chain to the hand-off`**
-`docs/conventions/README.md`'s heading and its two uses; the
-pointers in the conventions and commit-plan manuals and TODO's
-local-map item. Conventions §1.2's "lands a convention together
-with its chain" says what it means: what it requires.
+**10. `docs: say what a convention lands with`**
+Conventions §1.2's "lands a convention together with its chain"
+says what it means: what it requires. The index's heading keeps
+"The chain": "hand-off" already names two other things, the
+full-auto hand-off and a run's hand-off of edited copies, and the
+index's heading is TODO's "Make the conventions index a full local
+map", due, which redraws it.
+
+**10b. `docs: the model's opening points at §3.3`**
+The idea-to-output model's opening says either side may be wrong,
+"(§3)". Commit 3 missed it: its sweep grepped pointers with a path,
+and this one has none. It points at §3.3.
 
 **11. `docs: The words define model and convention`**
 `ARCHITECTURE.md`'s *The words*: two entries, each pointing at the
@@ -151,7 +158,9 @@ reference may point", with conventions §3's pointer at
 `approach-evaluation.md` as its evidence of a manual pointing down.
 "Decide what "rule" names" gains its first
 case: `convention-manual.md` reads as a manual, not as the rule for
-a manual's form.
+a manual's form. "Make the conventions index a full local map"
+gains two Ideas: rename "The chain", not to "hand-off"; its
+bullets retell each skill's trigger with no fact reference.
 
 **13. `docs(agent): close commit plan for layer 1's work`**
 Deletes this file; the body says what diverged.
@@ -181,6 +190,5 @@ Deletes this file; the body says what diverged.
   grep to facts-in-sync's walk, a rule round 2 reads against. The
   direction item already weighs `requires` as a sideways link, and
   is due between rounds 2 and 3.
-- **"The hand-off" for the index's heading.** The index says the
-  conventions "hand to each other". A plainer name, with no second
-  meaning.
+- **The index keeps "The chain" for now.** Its rename goes to the
+  local-map item, which redraws the index and its heading.
