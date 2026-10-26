@@ -651,16 +651,19 @@ record of its own inside TODO's run of sections. TODO's *When* and
 ADRs' run. Proposed: §5.5 fixed, a numbered section of its own,
 placed last. Or declined while it is on trial. §3.5 declined: small,
 and cited twice.
+Ending: fixed, `fa57042`: §14, placed last. §3.5 declined, as the endings say.
 
 **FINDING-147.** Layout; resting on the reader. §7.6, the
 anti-patterns, holds "README is the front door for people; the
 entry file is the one for agents", which is §7.1's subject.
 Proposed: fix, move it.
+Ending: fixed, `f6c5153`.
 
 **FINDING-148.** Dependencies; resting on the reader. The `CBC
 ADR-nnnn` tag is retold in exchange §3.7 and in `exchange-deliver`
 with no fact reference. Its home is project-recording §3.5.
 Proposed: fix, add the reference, or cut the clause in the skill.
+Ending: fixed, `5f454a1` and `797bb8b`: exchange §3.7 points at §3.5; `exchange-deliver` drops the clause.
 
 #### Layer 3: the other manuals, the models, the concept
 
