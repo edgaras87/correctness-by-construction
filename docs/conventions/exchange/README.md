@@ -265,8 +265,9 @@ tree — the note says so, in a clause.
 No ADR number, no path in this repo and no word of this repo's own
 vocabulary, in a note or in a prompt: the run cannot see this repo,
 and a citation it cannot follow reads as its own. That is told text.
-A shipped file carries the tag instead, `CBC ADR-nnnn`, because a
-file stays in the run and a note is read once (ADR-0020).
+A shipped file carries the tag instead, `CBC ADR-nnnn`
+(`docs/conventions/project-recording/` §3.5), because a file stays
+in the run and a note is read once (ADR-0020).
 
 A note that names a third repository gives both names: ours, by
 ordinal, and the one it gave itself at its Identity step. A run's
