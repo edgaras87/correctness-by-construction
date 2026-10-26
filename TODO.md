@@ -425,8 +425,13 @@
         check: a manual, a skill or rule, a run's finding. Two
         exits it lacks: the governs sweep, and what must run again
         after.
+      - rename "The chain": the idea-to-output model's chain is
+        another thing. Not "hand-off", which names the full-auto
+        hand-off and a run's hand-off of edited copies.
+      - its bullets retell each skill's trigger, whose home is the
+        skill's `description` line, with no fact reference.
       Trigger: due — the pair it waited on was made on 2026-09-30.
-      See: devlog 2026-09-30, local maps.
+      See: devlog 2026-09-30, local maps; `cb41ade`.
 
 - [ ] Read run 4 against `dac4dd1`, the run 3 commit it was born
       from (2026-10-15, the reviewer).
@@ -645,24 +650,6 @@
       Trigger: the next birth's Step 3 close.
       See: devlog 2026-09-12, later.
 
-- [ ] Move conventions §1 to the idea-to-output model, as ADR-0063
-      left for round 2 (2026-10-24, ADR-0063).
-      Context: ADR-0063 decision 7 gave round 2 two moves. The rules
-      for keeping facts in sync went to their own convention before
-      round 2 read (ADR-0065). The other, what a convention is,
-      `docs/conventions/conventions/` §1, to
-      `docs/models/idea-to-output.md`, has not moved.
-      Ideas:
-      - with it: *The words*' "model" entry; the approach hand-off
-        chain's rename; a grep for `requires` in the walk
-        (`docs/conventions/facts-in-sync/` §4, step 3).
-      - shapes §5.2 and `docs/conventions/facts-in-sync/` §5 each
-        settle a difference their own way, both cases of
-        `docs/models/idea-to-output.md` §3.3, and may point at it.
-      Trigger: round 2's reading of the conventions manual, its
-               layer 1.
-      See: ADR-0063; devlog 2026-10-24, the text-division item.
-
 - [ ] Decide which ideas here are models (2026-10-24, the
       reviewer).
       Context: three models exist: agent, tiers, idea-to-output. A
@@ -699,13 +686,13 @@
 - [ ] Decide which way a fact reference may point: up, sideways,
       across chains (2026-10-23, the reviewer).
       Context: `docs/models/idea-to-output.md` §3.2 says every link
-      points up, and §3.1 that a line may point at a fact's home in
-      any document. Practice points sideways too: each manual's *What
-      this does not cover* points at its neighbours, and a skill
-      `requires` another convention. 11 of 12 manuals point at the
-      agent model without standing on it, as the manual form asks.
-      No approach points at a model today. Nothing says what "up"
-      means between two texts of one level, or of two chains.
+      points up; §3.1, that a line may point at a fact's home in any
+      document. Practice points sideways: each manual's *What this
+      does not cover*, and a skill's `requires`. 11 of 12 manuals
+      point at the agent model without standing on it, as the manual
+      form asks. One points down: conventions §3, at
+      `approach-evaluation.md`. No approach points at a model. Nothing
+      says what "up" means within one level, or across two chains.
       Ideas:
       - "up" as toward the fact the line relies on, at any level.
       - sideways allowed for a fact another convention owns.
@@ -715,12 +702,20 @@
         to other conventions": narrower than practice, since
         manuals point at models too, and "pointer" names what
         facts-in-sync calls a fact reference.
+      - a grep for `requires` in the walk
+        (`docs/conventions/facts-in-sync/` §4, step 3): `requires`
+        is a link (`docs/models/idea-to-output.md` §3.1), and the
+        walk greps only paths and `foundation` names.
+      - shapes §5.2's four endings are a case of
+        `docs/models/idea-to-output.md` §3.3 and do not point at it;
+        `docs/conventions/facts-in-sync/` §5 does.
       Trigger: round 2 of the refinement closes, before round 3's
                rule check, with "Decide how a fact reference is
                written". Round 2's Dependencies reading is its
                evidence.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1;
-      devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §16.
+      devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §16;
+      `163767f`.
 
 - [ ] Decide whether a model may be written for one convention
       (2026-10-23, the reviewer).
@@ -830,10 +825,13 @@
         (ours, and the Claude model a delegation names), "step"
         (PLAN's, and a numbered step inside a section), "run" (the
         repository, and the verb round 3 already lists).
+      - `.claude/rules/convention-manual.md` reads as a convention's
+        manual; it is the rule for a manual's form. About 5 living
+        references would move.
       Trigger: round 3's rule check, so its Writing kind reads
                against the chosen words.
       See: devlog 2026-10-25, evening; `TODO-CONVERSATION-MEMORY.md`
-      §19.
+      §19; `163767f`.
 
 ## Later / someday
 

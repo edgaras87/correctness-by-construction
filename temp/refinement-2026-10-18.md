@@ -557,12 +557,14 @@ a section "that other text will point at". `docs/conventions/facts-in-sync/`
 §3: by form, "whether anything points there yet or not".
 `.claude/rules/convention-manual.md` follows facts-in-sync.
 Proposed: fix. §3.3 cuts the sentence and points at facts-in-sync §3.
+Ending: fixed, `a6a9e03`: §2.5 points at facts-in-sync §3.
 
 **FINDING-136.** Layout; checked. §3.3 lists a manual's parts in one
 paragraph of 22 lines. Two parts have numbered subsections (§3.4,
 §3.7); five do not. The body and *Where to look*, two of the rule's
 nine, are missing. Rests on DECISION-9. Proposed: fix, one numbered
 part per section of the form.
+Ending: fixed, `a6a9e03` and `2e0caac`: §2.1 to §2.9, the second bringing in what only the rule said.
 
 **FINDING-137.** Layout; checked. §3.3 holds four more subjects:
 - the channel, told again in *Why it arrives this way*;
@@ -570,6 +572,7 @@ part per section of the form.
   `docs/conventions/shapes/`, the deliverer's seat;
 - how the form grows;
 - two layout rules.
+Ending: fixed, `a6a9e03`: the channel and the shape's question point; the layout rule is §2.5.
 
 Proposed: fix. The channel stays in *Why it arrives this way*. The
 open question keeps one home. The layout rules get a part of their
@@ -581,12 +584,14 @@ kind of file's `foundation` value, and stages. Nine pointers land
 on §2, for different parts. Proposed: fix, number them 2.1 to 2.4.
 §1's labelled part is left to TODO's "Move conventions §1 to the
 idea-to-output model".
+Ending: fixed, `a6a9e03`: §1.1 to §1.4.
 
 **FINDING-139.** Lessons; resting on the reader. Three cases sit
 undated in the body of the manual that holds §3.7: "The form was
 not designed…" (§3.3), "Twice a manual grew seat sections…" (§3.4),
 "As the last seven were added…" (§4). Proposed: fix, each a dated
 italic or cut.
+Ending: fixed, `4252509`: three dated italics.
 
 **FINDING-140.** Lessons; checked. §3 keeps history in its body:
 "the sections once numbered 3.1, 3.2, 3.5 and 3.6 moved there".
@@ -594,6 +599,7 @@ italic or cut.
 true today. agent-arrangement §3.8 and project-recording §13 put a
 kept number in an italic. Proposed: fix, a dated italic. The gap
 itself stays (ADR-0065).
+Ending: fixed, `a6a9e03`: the sentence cut, with no italic, since DECISION-9 left no gap to explain.
 
 **FINDING-141.** One home; checked. The `foundation` line is told in
 four texts: conventions §2 (each kind's value), facts-in-sync §4
@@ -602,6 +608,7 @@ copy), and `.claude/rules/convention-manual.md`. Exchange §3.5 says
 conventions §2 holds the list; *The words* in `ARCHITECTURE.md`
 cites both. Proposed: fix. One numbered home for which files carry
 it; the others keep their own part and point.
+Ending: fixed, `c0a3849` and `5709dc7`: conventions §1.3 is the home.
 
 **FINDING-142.** Dependencies; checked. No rule says whether a
 footer's decision line names the section it backs (met in round 1,
@@ -610,12 +617,14 @@ item 4). Of our 30 lines in layer 5, 4 do, all in
 footer line names the section it backs, unless it backs the whole
 file." Then edit only the lines that back one section, both copies
 alike. Against: a grep for the ADR's number already finds the file.
+Ending: fixed, `42fb270`, `5611f5f` and `ab80964`: 57 lines in both seats read; 22 changed.
 
 **FINDING-143.** Dependencies; resting on the reader. "is open
 (TODO)" in conventions §3.3 and "(TODO)" in
 `docs/conventions/shapes/`, the deliverer's seat, name no item.
 Proposed: fix, name it by its first words, "Decide whether our own
 forms become shapes".
+Ending: fixed, `a6a9e03`: both name the item.
 
 #### Layer 2: project-recording
 
@@ -858,6 +867,7 @@ disagreement's rule, in bold parts. §4's parts, Down and Up, are
 unnumbered, where the tiers model numbers the same pair. Rests on
 DECISION-8. Proposed: fix when TODO's "Move conventions §1 to the
 idea-to-output model" moves text here.
+Ending: fixed, `68e5037` and `c6907c7`: §3.1 to §3.3 and §4.1 to §4.3.
 
 **FINDING-181.** Layout; uncertain. The concept tells "tests sample;
 structure forbids" in three chapters (00, 02, 04), and the registry's

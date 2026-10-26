@@ -1,7 +1,9 @@
 # 0066. The conventions manual renumbered
 
 Date: 2026-10-26
-Status: Proposed (opened under the commit plan for layer 1's work).
+Status: Accepted (2026-10-26, at the set's records commit; opened
+Proposed under the commit plan for layer 1's work, unchanged
+since).
 
 ## Context
 
