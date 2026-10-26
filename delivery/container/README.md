@@ -29,4 +29,7 @@ concept in five chapters; start with [00-cbc.md](docs/concept/00-cbc.md).
      outside. What changes weekly is PLAN.md's; why is the ADRs'; how
      it went is the devlog's. A missing section is not an omission: it
      arrives when a step's gate makes it true — projection follows
-     truth. -->
+     truth. Once the project runs: its prerequisites, the one command
+     that builds and runs it from a clean clone, and how to run its
+     tests, each when it becomes true.
+     foundation: the project-recording convention -->
