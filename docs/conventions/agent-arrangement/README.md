@@ -101,7 +101,7 @@ two rules both seats load in every session differ by the job too,
 and each
 manual names how in its list of what derives from it:
 `docs/conventions/writing/` and
-`docs/conventions/project-recording/`.
+`docs/conventions/facts-in-sync/`.
 
 *Until 2026-09-26 the deliverer held the receiver's protocol,
 `convention-lifecycle`, and had never once run it — its registry
@@ -193,8 +193,8 @@ three the stub's guard comment states:
   the convention's moment is every task, its rule loads with no
   `paths:` (§3.9): the convention's channel, not a line here.
   **It points; it never restates**: a summary is lossy on arrival,
-  and then two files disagree while both look current (model claim
-  M1).
+  and then two files disagree while both look current
+  (`docs/models/agent.md` §12.7, claim M1).
 - **No moment.** A line with a moment goes where the moment is — the
   record's stub, README, a skill, or, for a rule true only under one
   directory, a rules file with a `paths:` list (§3.2) — and is read
@@ -247,7 +247,8 @@ the re-reading §2.6 names — not otherwise.
 
 The entry file is the ambient channel (`docs/models/agent.md` §4.1):
 paid on every task, including the tasks it is irrelevant to, and each
-line added lowers compliance with every other (model claim A2,
+line added lowers compliance with every other
+(`docs/models/agent.md` §12.1, claim A2,
 assumed). So its size is a running concern, not a one-time one. The
 cost is what the harness delivers, not the file: HTML comments are
 dropped on load (§5.3), so the guard and the
