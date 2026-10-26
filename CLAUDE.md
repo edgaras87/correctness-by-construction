@@ -9,8 +9,10 @@ it. Documents only — no code, no runs.
 <!-- When to open which record. The record teaches the rest, but only
      once opened, and nothing else says when. Three things per row —
      the moment, what it holds, the path — never the rule itself: what
-     an ADR contains is inside the ADR. Adding a record means adding
-     its row (`docs/conventions/project-recording/` §13). -->
+     an ADR contains is inside the ADR. What it holds summarizes the
+     record's item in the records map,
+     `docs/conventions/project-recording/` §1. Adding a record means
+     adding its row (`docs/conventions/project-recording/` §13). -->
 
 | When | What's in it | Record |
 |---|---|---|
@@ -21,7 +23,7 @@ it. Documents only — no code, no runs.
 | Session ending, a dead end hit, or a TODO item added | Work history, dead ends, a TODO item's story | devlog/<YYYY-MM>.md |
 | The concept changed, or an execution derived from or checked against it | What changed, for those who pin a concept version | CHANGELOG.md |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |
-| The system's shape changed | Shape of the system | ARCHITECTURE.md |
+| How the repo's parts tie together changed | What stands now, and how its parts tie | ARCHITECTURE.md |
 | Agent setup changed | Decision, why, rejected options | .claude/decisions.md |
 | Work needs more than one commit | In-flight change set | COMMIT-PLAN.md (when present) |
 
