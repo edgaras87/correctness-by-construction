@@ -674,6 +674,7 @@ project-recording as `one-home.md`'s convention, in §3.2 (line 303),
 and in *What the difference is* (line 104). Both `one-home.md` name
 facts-in-sync in their `foundation` line, and facts-in-sync lists
 them. Proposed: fix, name `docs/conventions/facts-in-sync/`.
+Ending: fixed, `d2df7ff` and `c79db64`: §3.2's line went with the container's list; *What the difference is* names facts-in-sync.
 
 **FINDING-150.** Layout; checked. agent-arrangement §3.2 holds three
 subjects: the `rules/` directory, the every-session rule, and the
@@ -683,19 +684,23 @@ retells §5.6. Proposed: fix. The every-session rule takes a
 numbered part of its own, placed last. The list stays in the seats.
 The first sentence points at §5.6. `ARCHITECTURE.md` §2.3 goes to
 TODO's ARCHITECTURE item.
+Ending: fixed, `d2df7ff`: the every-session rule is §3.9; §3.2 points at §5.6; the list stays in the seats. `ARCHITECTURE.md` §2.3's list was already an Idea of TODO's ARCHITECTURE item.
 
 **FINDING-151.** Layout; checked. agent-arrangement §1 has two
 labelled parts with no numbers, "Detachable, and kept so." and "Not
 records.", where §2, §3 and §5 number theirs. Proposed: fix, 1.1 to
 1.3. Or declined, if two bold leads are emphasis.
+Ending: fixed, `6c5003d`: §1.1 to §1.3.
 
 **FINDING-152.** Lessons; checked. agent-arrangement §2.3 retells
 *What it is for*'s case, "one run showed to be a pure rename".
 Proposed: fix, cut the clause and point at §5.1.
+Ending: fixed, `e2a0d1f`.
 
 **FINDING-153.** Dependencies; checked. agent-arrangement cites
 "(model claim M1)" and "(model claim A2, assumed)" with no path.
 Their home is `docs/models/agent.md` §12. Proposed: fix.
+Ending: fixed, `c79db64`: `docs/models/agent.md` §12.7 and §12.1.
 
 **FINDING-154.** Dependencies; checked. A rule's load limit, that
 it arrives after the first draft, is agent-arrangement §5.6. Three
@@ -705,6 +710,7 @@ exchange, shapes and writing manuals, and the comments of three
 rules (`convention-manual.md`, `exchange-reading.md`,
 `foundation-check.md`). `TODO.md` points at `.claude/decisions.md`
 for it. Proposed: fix, all to §5.6.
+Ending: fixed, `3d70b55` and `4fd5673`: every such line names §5.6.
 
 **FINDING-155.** Lessons; checked. Exchange §3.7 holds three rules
 only in its dated italic: a verdict is the decision and what the
@@ -712,11 +718,13 @@ run owes, nothing else; never describe our own practice; never say
 "accepted" for something not decided. `exchange-deliver` states
 them, standing on this manual. Proposed: fix. The body states the
 three, and the italic keeps the 2026-09-20 case.
+Ending: fixed, `c244e6c`.
 
 **FINDING-156.** Lessons; checked. Exchange §6.3's rule, that a
 reading asks what the run teaches the worked example, is only in
 its italic. `exchange-read` points at §6.3 for it. Proposed: fix,
 one sentence in the body.
+Ending: fixed, `c244e6c`.
 
 **FINDING-157.** Lessons; resting on the reader. Cases in the
 exchange's body, undated: §3.1 "this repo did once, into a run
@@ -725,16 +733,19 @@ note was finished.*", whose "last" goes stale; §4 step 4, "a rename
 once left the old file standing"; §5.1, "which has happened";
 §5.4, "Run 3's text says *source*". Proposed: fix, each a dated
 italic or cut. §5.4 may be declined as an example.
+Ending: fixed, `c244e6c`: four cases dated by 2026-09-25. §5.4 declined, as the endings say.
 
 **FINDING-158.** Lessons; uncertain. Three italics hold a live
 claim, not a case: exchange §3.4 "*One exists. One is owed…*";
 repo-hygiene "*How an overlay reaches a run is open.*";
 retrospective "*Reopened if…*". An italic reads as history and goes
 stale. Proposed: move each live claim into the body, or decline.
+Ending: fixed, `dd88bf6`: each claim stands in its body.
 
 **FINDING-159.** Layout; checked. Exchange §3.5, the `foundation`
 line, holds "**One pin** for all of it", whose home is §2.2.
 Proposed: fix, move it.
+Ending: fixed, `ac6db0c`: §2.2.
 
 **FINDING-160.** Layout; checked. The note is told in five sections
 of the exchange: §2.5, §3.7, §6.5, §6.6 and §6.7. "A note without
@@ -742,6 +753,7 @@ files" is told three times (§2.5, §6.6, §6.7), and "the verdicts go
 in the note" twice (§6.5, §6.7). Proposed: fix. §3.7 stays the
 note's home. §6.6 holds a note without files, and §2.5 points at
 it. §6.7 merges into §6.5.
+Ending: fixed, `ac6db0c`: §6.7 merged into §6.5 and §6.6.
 
 **FINDING-161.** One home; checked. Where `concept/` lands in a run
 is told in exchange §3.3, "stated here once"; in `exchange-deliver`,
@@ -751,6 +763,7 @@ is told in exchange §3.3, "stated here once"; in `exchange-deliver`,
 Proposed: fix. Exchange §3.3 is the home. The skill keeps its
 command and cites §3.3. `delivery/README.md` and the seed point at
 §3.3 and §3.2, with root paths.
+Ending: fixed, `32d28f3` and `1347134`: the map, the seed and the skill point at exchange §3.3. One bare name found and fixed, `00-cbc.md`.
 
 **FINDING-162.** Dependencies; checked but for the last part.
 Sections missing or wrong:
@@ -764,50 +777,60 @@ Sections missing or wrong:
   "one pin", which is §3.5.
 
 Proposed: fix each.
+Ending: fixed, `f7d32ca`, `8c37759` and `ac6db0c`. The visual-comparison line then lost its shapes example in `3907dc0`.
 
 **FINDING-163.** Lessons; checked. Shapes §1 states only in an
 italic that when an output opens, extends and closes is its owning
 convention's. *What this does not cover* points at §1 for it, and
 the shipped `shapes-lifecycle.md` states it. Proposed: fix, move the
 rule into the body.
+Ending: fixed, `1d03c6d`.
 
 **FINDING-164.** Lessons; checked. Shapes §1's italic ends "a shape
 catches a part missing, not a part that lost half its meaning". The
 body does not say it. Proposed: fix, one sentence.
+Ending: fixed, `1d03c6d`.
 
 **FINDING-165.** Lessons; checked. Shapes §4.3 states only in an
 italic that the page's pictures never carry a fact alone. The
 visual-comparison manual sends readers here for it. Proposed: fix,
 a body sentence.
+Ending: fixed, `1d03c6d`.
 
 **FINDING-166.** Layout; checked. Shapes §1 holds two subjects:
 what a shape is, and how one is born and written, with a labelled
 part, "Before a shape is written…", unnumbered. §4 and §5 number
 theirs. Proposed: fix, 1.1 to 1.3.
+Ending: fixed, `4eb8a57`: §1.1 to §1.3.
 
 **FINDING-167.** Lessons; checked. Retrospective §3's italic holds
 two rules the bullets lack: tests are counted from this run's
 reports only; a tool that edits text is checked on what it must not
 touch. The shipped `apply-retrospective` states both. Proposed: fix,
 two bullets.
+Ending: fixed, `01e8715`.
 
 **FINDING-168.** Lessons; checked. Retrospective §1 gives the
 reason for the apply step only through run 3. Proposed: fix, state
 it in general, and move run 3 to a dated italic.
+Ending: fixed, `01e8715`.
 
 **FINDING-169.** One home; checked. Retrospective's run seat says
 of the manual's summary "the skills are the source" (line 48). A
 manual is what its skills derive from. Proposed: fix, the skills
 stand on this manual, and the summary says it is one.
+Ending: fixed, `da1049a`.
 
 **FINDING-170.** Layout; resting on the reader. Retrospective's
 *Why it arrives this way* retells §1's two-steps reason. Proposed:
 fix, point at §1.
+Ending: fixed, `da1049a`.
 
 **FINDING-171.** Lessons; checked. Commit-plan §2: "Material-first
 is a first-class mode" has one reason only, the seed's third run;
 and "a session inside PLAN's Step 10…" sits in the body. The other
 bullets put their cases in dated italics. Proposed: fix.
+Ending: fixed, `efa463e`.
 
 **FINDING-172.** Layout; checked. The sweep for moved names is split:
 facts-in-sync §3 says a commit plan's sweep looks again before its
@@ -817,6 +840,7 @@ moved section* is a third telling. TODO's "Decide whether each
 seat's copy is written for its seat" notes part of it. Proposed:
 fix, the sweep takes a numbered part in commit-plan §2, and the
 others point at it.
+Ending: fixed, `79bc4a2`: §2.1 to §2.13, the sweep §2.10.
 
 **FINDING-173.** Dependencies; checked. Commit-messages §2's rules,
 an agent file never shares a commit and a commit waits for the word,
@@ -826,11 +850,13 @@ are named by name and not by path: in `foundation-check.md` step 5,
 them with no reference. Facts-in-sync and the commit-plan manual
 give the path with no section. Proposed: fix,
 `docs/conventions/commit-messages/` §2.
+Ending: fixed, `3b2782b` and `a718c58`.
 
 **FINDING-174.** Lessons; checked. Facts-in-sync §4 tells history in
 its body: "The rest ran twice by hand before this was a rule…".
 Proposed: fix. The body names what enforces steps 3 to 5 today, and
 the history goes to a dated italic.
+Ending: fixed, `9a0fe5a`.
 
 **FINDING-175.** Layout; checked. Facts-in-sync §3 holds three
 subjects: the fact reference, the numbering of parts, and the grep
@@ -839,16 +865,19 @@ parts. The numbering rule's sibling, one subject to a section, is
 conventions §3.3. Proposed: fix, number the three. The reviewer
 decides whether the numbering rule moves beside conventions §3.3
 (FINDING-135).
+Ending: fixed, `7fbeccb` and `a9e54e2`: §3.1 to §3.3; the numbering rule stays here.
 
 **FINDING-176.** One home; checked. The concept's bump rule is told
 in `ARCHITECTURE.md` §1.1 and in `CHANGELOG.md`'s header comment,
 neither citing the other. Three manuals point at ADR-0003 and §1.1.
 Facts-in-sync §4 names three targets. Rests on DECISION-14.
+Ending: moved to layer 4, its home's layer, since DECISION-14 put the rule in the CHANGELOG's comment (`.claude/approaches-on-trial/refinement.md` §2.7). Decided with layer 3's plan, `cc00ca0`.
 
 **FINDING-177.** Lessons; resting on the reader. The
 visual-comparison manual §2, "The render decides", gives as its
 reason only the Mermaid case. Proposed: fix, one general reason, or
 decline, since the case points back at *What it is for*.
+Ending: fixed, `2b9b364`.
 
 **FINDING-178.** One home; resting on the reader. The conventions
 index says "nothing here restates one", yet it restates
@@ -857,6 +886,7 @@ visual-comparison's boundary, each convention's moment ("fires
 when…"), and each domain skill's order. TODO's "Make the
 conventions index a full local map" is related. Proposed: fix, keep
 who hands to whom. Or TODO, into that item.
+Ending: fixed, `dbfe842`.
 
 **FINDING-179.** One home; resting on the reader. Two coined words
 are defined in more than one place. "Description": *The words*,
@@ -865,6 +895,7 @@ disagree on which texts are descriptions. "Approach": *The words*,
 idea-to-output, and `approach-drafting.md`, which ships, so it keeps
 its own. Proposed: "description" to TODO, the ARCHITECTURE item;
 "approach" fixed, idea-to-output points at *The words*.
+Ending: split. "Approach" fixed, `be9b3a4`: *The words* points at the model §2, the reverse of the proposal, decided with layer 3's plan, `cc00ca0`. "Description" is with TODO's ARCHITECTURE item.
 
 **FINDING-180.** Layout; checked. `docs/models/idea-to-output.md` §3
 holds two subjects other text points at, a link and a
@@ -880,15 +911,18 @@ reordering in two. Its labelled parts are unnumbered. Proposed:
 decline. Chapter 00 is the declared overview, each chapter states
 the claim for its own subject, and numbering is TODO's "Number the
 concept chapters' sections".
+Ending: declined, as the endings say.
 
 **FINDING-182.** Lessons; checked. `docs/models/agent.md` ends a
 paragraph "Added 2026-10-24." (line 276), history in a description.
 Proposed: fix, cut it.
+Ending: fixed, `af2579f`.
 
 **FINDING-183.** Dependencies; resting on the reader. In 8 of the 10
 manuals with *Where to look*, every entry repeats a pointer the page
 already made. Proposed: decline. The form asks for a list of
 landings, and the rule allows "pointers only".
+Ending: declined, as the endings say.
 
 #### Layer 4: `ARCHITECTURE.md`, `README.md`, the records
 
