@@ -195,16 +195,18 @@ Steps 1, 2 and the greps in 3 are checkable today: every shipped
 skill and rule carries `foundation`, every manual names what
 derives from it in *What this is made usable as*, and a path and a
 `foundation` value are tokens (`docs/conventions/conventions/` §1.3).
-The rest ran twice by hand before this was a rule — the
-correspondence check of 2026-09-25, and the walk of
-`a337674^:docs/master.md` at the exchange plan's close — both
-because the reviewer asked, not because anything made anyone look.
-Since 2026-10-17, `.claude/rules/foundation-check.md` makes this
-repo look before every such commit. Where a manual and the concept
+The foundation check makes this repo do the rest, the re-reads in
+step 3 and steps 4 and 5, before every such commit
+(`.claude/rules/foundation-check.md`). Where a manual and the concept
 are handled differently — versioning, shipping, the kind of
 derivative, the seats, what each asserts — is ADR-0039; the
 concept's edges are ADR-0003, the CHANGELOG's standing comment and
 `ARCHITECTURE.md` §1.1.
+
+*Before 2026-10-17 the rest ran twice by hand: the correspondence
+check of 2026-09-25, and the walk of `a337674^:docs/master.md` at
+the exchange plan's close, both because the reviewer asked, not
+because anything made anyone look.*
 
 *Found 2026-10-19: project-recording's deliverer seat retold
 `PLAN.md`'s step form, and nothing linked the two, so a change on
