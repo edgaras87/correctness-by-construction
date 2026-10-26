@@ -645,6 +645,7 @@ plan, README says "what *done* means" and `CLAUDE.md` "The step
 form, and the open step". README and `CLAUDE.md` also share an
 opening phrase, where project-recording §7.6 says "no shared text".
 The records map would be a fifth. Rests on DECISION-12.
+Ending: fixed, `4f7ad15`, `b20d992`, `6241ff2`, `0a40aea` and `e64c51f`, all but the codemap's part, which waits for layer 4 and TODO's "Decide what kind of text our ARCHITECTURE is".
 
 **FINDING-146.** Layout; checked. §5.5, conversation-memory, is a
 record of its own inside TODO's run of sections. TODO's *When* and
@@ -1277,6 +1278,10 @@ Rests: FINDING-145, and the records map.
   `temp/README.md`'s line point at the map. §13 keeps the when. The
   run's table carries today's fact reference until the shipped form
   is settled, with FINDING-204.
+- Refined by the reviewer, 2026-10-26 (ADR-0067): the map is a
+  summary that answers which record answers what, home to nothing;
+  each item points at its fact's home, and *The seats* keeps the
+  differences. The run's table follows the map without naming it.
 
 **DECISION-13.** Are `.claude/decisions.md`'s entries and
 `TODO-CONVERSATION-MEMORY.md`'s parts history? Rests: FINDING-192,

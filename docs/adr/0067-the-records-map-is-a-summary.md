@@ -1,7 +1,9 @@
 # 0067. The records map is a summary: a list, and a picture per seat
 
 Date: 2026-10-26
-Status: Proposed, opened under the commit plan for the records map.
+Status: Accepted (2026-10-26, at the set's records commit; opened
+Proposed under the commit plan for the records map, the render added
+since).
 
 ## Context
 
@@ -26,7 +28,9 @@ where they differ; all thirteen records, with their owners; a record
 found from a question; how the records feed each other; no moment
 and no how; one view of about 40 lines; plain text that renders and
 diffs; and saying it is a summary. The verdicts were predictions,
-marked so; the reviewer chose by reading the draft.
+marked so; the reviewer chose by reading the draft, then rendered
+every candidate in the IDE before acceptance: all render, and the
+choice stands.
 
 ## Options considered
 

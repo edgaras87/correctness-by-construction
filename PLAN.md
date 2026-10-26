@@ -173,12 +173,14 @@ Gate:
       with its reason, or a TODO item.
 - [ ] The last read found nothing that breaks a rule
       (`.claude/approaches-on-trial/refinement.md` §2.9).
-- [ ] `docs/conventions/project-recording/` §1 shows in one view
+- [x] `docs/conventions/project-recording/` §1 shows in one view
       which record answers what, in both seats. It includes
       `RETRO.md`, `COMMIT-PLAN.md`, `docs/system/`, and records
-      another convention owns.
-- [ ] The records map's form was chosen by `visual-comparison`,
-      and that skill's gates hold for it.
+      another convention owns (2026-10-26; one view read as one
+      section for both seats, not one screen, ADR-0067 decision 4).
+- [x] The records map's form was chosen by `visual-comparison`,
+      and that skill's gates hold for it (2026-10-26, ADR-0067;
+      rendered by the reviewer before acceptance).
 - [ ] Each round's close read has its counts
       (`.claude/approaches-on-trial/refinement.md` §2.8).
 - [ ] The refinement's approach is evaluated: each piece has the
