@@ -10,7 +10,7 @@ to* — instead of each session re-deriving the picture.
 
 This is a **model**: the top description of its chain. It binds
 what stands on it, and when the two disagree, either side may be
-the wrong one (`docs/models/idea-to-output.md` §3).
+the wrong one (`docs/models/idea-to-output.md` §3.3).
 
 ---
 

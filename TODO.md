@@ -658,7 +658,7 @@
         (`docs/conventions/facts-in-sync/` §4, step 3).
       - shapes §5.2 and `docs/conventions/facts-in-sync/` §5 each
         settle a difference their own way, both cases of
-        `docs/models/idea-to-output.md` §3, and may point at it.
+        `docs/models/idea-to-output.md` §3.3, and may point at it.
       Trigger: round 2's reading of the conventions manual, its
                layer 1.
       See: ADR-0063; devlog 2026-10-24, the text-division item.
@@ -667,7 +667,7 @@
       reviewer).
       Context: three models exist: agent, tiers, idea-to-output. A
       model comes from a convention whose idea is general enough to
-      be used elsewhere (`docs/models/idea-to-output.md` §4). The
+      be used elsewhere (`docs/models/idea-to-output.md` §4.2). The
       text-division item held candidates, left open by ADR-0063.
       Ideas:
       - one home: facts, their home, fact references, and how a
@@ -698,9 +698,9 @@
 
 - [ ] Decide which way a fact reference may point: up, sideways,
       across chains (2026-10-23, the reviewer).
-      Context: `docs/models/idea-to-output.md` §3 says every link
-      points up, and a line may point at a fact's home in any
-      document. Practice points sideways too: each manual's *What
+      Context: `docs/models/idea-to-output.md` §3.2 says every link
+      points up, and §3.1 that a line may point at a fact's home in
+      any document. Practice points sideways too: each manual's *What
       this does not cover* points at its neighbours, and a skill
       `requires` another convention. 11 of 12 manuals point at the
       agent model without standing on it, as the manual form asks.
@@ -727,7 +727,7 @@
       Context: the text-division item had a model only where several
       manuals share an idea. The reviewer asked to weaken that: a
       model for one convention, "to see general idea behind that
-      convention". `docs/models/idea-to-output.md` §4 has a model
+      convention". `docs/models/idea-to-output.md` §4.2 has a model
       come from a convention whose idea is general enough.
       Trigger: a convention whose idea another repo could use, with
                no second manual sharing it.

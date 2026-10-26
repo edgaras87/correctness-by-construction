@@ -11,7 +11,7 @@ what each channel can and cannot guarantee.
 
 This is a **model**: the top description of its chain. It binds
 what stands on it, and when the two disagree, either side may be
-the wrong one (`docs/models/idea-to-output.md` §3). Its job is to
+the wrong one (`docs/models/idea-to-output.md` §3.3). Its job is to
 let conventions be written against something stated, instead of
 each author reasoning from a private picture of "the agent".
 

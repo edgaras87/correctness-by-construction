@@ -452,7 +452,7 @@ manual owns the thing a word names, pointed at there.
   was a run's word for the deliverer, and is not ours.
 - **link** — a relation from a lower text to the upper one it
   relies on: stands on, points, governs, written from, requires
-  (`docs/models/idea-to-output.md` §3). Wider than a fact
+  (`docs/models/idea-to-output.md` §3.1). Wider than a fact
   reference, which is what one kind of link, points, writes down.
 - **fact reference** — what a line carries when it relies on a fact
   written elsewhere: the address of the fact's home, today a path

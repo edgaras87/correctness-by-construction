@@ -44,34 +44,44 @@ would describe intent, as a template does.
 
 ## 3. The links
 
+### 3.1 The five links
+
 | Link | From, the lower text | To, the upper text |
 |---|---|---|
 | stands on | a file | what the whole of it was written from |
 | points | a line | the home of a fact it relies on: the one place that fact is written |
 | governs | an output | the shape it is checked against, at the gate |
-| written from | an output or approach | the kind written from it, §4 |
+| written from | an output or approach | the kind written from it, §4.2 |
 | requires | a skill | another convention it delegates to |
-
-**Every link points up.** A lower text relies on an upper one; an
-upper text at most lists what stands on it.
-
-**When two linked texts disagree, the disagreement is settled, never
-left standing.** Either may be the wrong one: the upper binds the
-lower, but being upper doesn't make it right. It ends when the two
-agree again, by changing the lower, the upper, or both.
 
 A file stands on one thing; a line may point at a fact's home in
 any document.
 
 An approach stands on a description, never on a model directly.
 
+### 3.2 Every link points up
+
+A lower text relies on an upper one; an upper text at most lists
+what stands on it.
+
+### 3.3 A disagreement is settled
+
+When two linked texts disagree, the disagreement is settled, never
+left standing. Either may be the wrong one: the upper binds the
+lower, but being upper doesn't make it right. It ends when the two
+agree again, by changing the lower, the upper, or both.
+
 ## 4. The two directions
 
-**Down, an idea to an output.** A model is adapted by a manual;
-the manual is made usable as skills, rules and forms; work done
-with them leaves outputs. Each stands on the one above.
+### 4.1 Down, an idea to an output
 
-**Up, work to an idea.** New things are born the other way:
+A model is adapted by a manual; the manual is made usable as
+skills, rules and forms; work done with them leaves outputs. Each
+stands on the one above.
+
+### 4.2 Up, work to an idea
+
+New things are born the other way:
 
 ```
 unfamiliar work ──► approach on trial ──► convention ──► model
@@ -86,14 +96,15 @@ outputs ──► shape
   one came from the handbook.
 - **A shape** comes from outputs that exist.
 
-**After a birth, the lower text is rewritten to stand on the new
-one.** A skill drafted as an approach on trial is rewritten from
-the convention written out of it. A manual whose idea became a
-model stands on that model. Birth goes up; afterwards, reliance
-goes up too.
-
 The steps between repos, a run's lesson reaching the deliverer, are
 `docs/models/tiers.md` §3.
+
+### 4.3 After a birth
+
+The lower text is rewritten to stand on the new one. A skill
+drafted as an approach on trial is rewritten from the convention
+written out of it. A manual whose idea became a model stands on
+that model. Birth goes up; afterwards, reliance goes up too.
 
 ## 5. A model and a concept
 

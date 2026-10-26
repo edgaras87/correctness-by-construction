@@ -209,7 +209,7 @@ form name its description, as a skill does.*
 
 A derived thing, a pointer or practice saying other than its
 description: two linked texts that disagree, either of which may be
-the wrong one (`docs/models/idea-to-output.md` §3). It is raised
+the wrong one (`docs/models/idea-to-output.md` §3.3). It is raised
 where it is found — a finding in a reading, an edit a run made to
 its copy, a question at a boundary, the foundation check at a
 commit — and decided, never defaulted: neither side is right for
@@ -272,10 +272,10 @@ Both moments are every task, so both rules are ambient
 - **The repo prefix a citation carries, `CBC ADR-nnnn`** —
   `docs/conventions/project-recording/` §3.5.
 - **What a link is, and that either side may be wrong** —
-  `docs/models/idea-to-output.md` §3.
+  `docs/models/idea-to-output.md` §3.1 and §3.3.
 
 ## Where to look
 
-- The links this keeps: `docs/models/idea-to-output.md` §3.
+- The links this keeps: `docs/models/idea-to-output.md` §3.1.
 - The two rules: `.claude/rules/one-home.md` and
   `.claude/rules/foundation-check.md`.
