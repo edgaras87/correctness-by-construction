@@ -60,4 +60,5 @@ recorded way instead of living in a head and scattered notes.
      outside. What changes weekly is TODO.md's; why is the ADRs'; how
      it went is the devlog's. A missing section is not an omission: it
      arrives when a step's gate makes it true — projection follows
-     truth. -->
+     truth.
+     foundation: the project-recording convention -->

@@ -459,8 +459,8 @@
         a decisions log kept append-only; run 3 and run 4 both did:
         which side changes.
       - `cbc-framing` writes a status line into the README, where
-        `docs/conventions/project-recording/` §7.4 keeps changing
-        status in PLAN: how that line lived in run 4.
+        the README's form, its header comment, keeps changing status
+        in PLAN: how that line lived in run 4.
       Trigger: the refinement of this repo closes; in a new session.
       See: `f097695`, the kickoff and the message it took;
       `TODO-CONVERSATION-MEMORY.md` §5.

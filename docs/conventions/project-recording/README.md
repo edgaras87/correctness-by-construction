@@ -479,16 +479,16 @@ Repo root, mandatory.
 
 ### 7.4 How
 
-Minimum sections, true for every project type: one-paragraph
-purpose; a "Project records" section linking PLAN, ARCHITECTURE,
-ADRs, CHANGELOG — the decisions row also declares the repo's tag,
-the name its decisions are cited by from another repo (§3.5). A
-project that runs adds: prerequisites; the *one command* to
-build/run from a clean clone; how to run tests — each arriving at
-the moment it becomes true (see When), not at birth. Keep it short
-and current — a wrong README is worse than a sparse one, so anything
-that changes often (detailed status) belongs in PLAN.md and is only
-*linked* from here.
+Which sections a README has, and when each arrives, is its form:
+the header comment and the sections of `README.md`, the stub in a
+run and the deliverer's own. Why the form is as it is:
+
+- The "Project records" table is how a newcomer finds the rest. Its
+  decisions row declares the repo's tag, the name its decisions are
+  cited by from another repo (§3.5).
+- A section arrives when it becomes true, not at birth (§7.5).
+- A wrong README is worse than a sparse one, so what changes often
+  lives elsewhere and is only linked from here.
 
 ### 7.5 When
 
