@@ -32,7 +32,7 @@ Gate:
 <the closing items below, filled in>
 Notes: <opened <date>; its stages, if it runs no skill; what the
  reviewer signs and when; what the step takes from the steps before
- it>
+ it; the ADRs and devlog entries behind it>
 ```
 
 **The Now line names the stage the step is in, and changes when
@@ -111,9 +111,11 @@ shape is settled is `.claude/rules/shapes-lifecycle.md`'s.
 
 **When every item is ticked and committed,** the next commit
 replaces the gate with one line: the date, what the step
-delivered, and the commit that holds the ticked gate. Example:
+delivered, what diverged from the plan, and the commit that holds
+the ticked gate. Example:
 "Closed 2026-11-02: SLICE-1 closed, a retried order makes one
-order; ticked gate at `a1b2c3d`."
+order; the key's expiry moved to SLICE-2; ticked gate at
+`a1b2c3d`."
 
 **A step can stop when another must come first.** It stays in
 the plan, marked `[!]`: "stopped: <the step that comes first>",
