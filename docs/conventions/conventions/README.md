@@ -111,7 +111,7 @@ Which files carry it, and where:
 - every shipped shape, in frontmatter of its own;
 - a manual whose idea a model states, in frontmatter of its own;
 - a record whose header holds its form, such as `PLAN.md`'s step
-  form or `TODO.md`'s item shape, as a `foundation:` line in that
+  form or `TODO.md`'s item form, as a `foundation:` line in that
   header's comment. Both seats, the run's stubs included.
 
 What it holds:
