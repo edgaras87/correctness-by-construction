@@ -54,7 +54,11 @@ recorded way instead of living in a head and scattered notes.
 | Backlog | [TODO.md](TODO.md) | What's next, and what's known but not done |
 | Backlog's talk | [TODO-CONVERSATION-MEMORY.md](TODO-CONVERSATION-MEMORY.md) | The talk that shaped each TODO item, on trial |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per concept version, for those who pin one |
-| Devlog | [devlog/](devlog/) | Day-to-day work, dead ends, open questions |
+| Devlog | [devlog/](devlog/) | What happened, the dead ends, where to resume |
+
+A summary. Every record in both seats, the run's and this repo's,
+and where each is explained, is the records map:
+[project-recording §1](docs/conventions/project-recording/README.md).
 
 <!-- A line here is true now, and meant for someone arriving from
      outside. What changes weekly is TODO.md's; why is the ADRs'; how
