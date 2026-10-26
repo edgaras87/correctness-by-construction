@@ -24,7 +24,7 @@ there.
    after the reading is written; the count is what says whether one is
    needed. The count undercounts: one item's set can run to twenty
    commits, and an item that edits a skill both seats hold is two
-   commits, the agent's own files apart. It is a number of items,
+   commits, the agent's own files apart (`docs/conventions/commit-messages/` §2). It is a number of items,
    never a size.
 
 2. **Decisions first.** A decision gates the work that rests on it,
@@ -44,7 +44,7 @@ there.
    needs none is settled on its proposal, and marked so in place.
 
 4. **A work item is a commit or a commit plan**, with the reviewer
-   at every boundary. An item taken into a master is checked against
+   at every boundary (`docs/conventions/commit-messages/` §2). An item taken into a master is checked against
    its foundation (`.claude/rules/foundation-check.md`), and the
    file it lands in is read whole before the commit: a run's edit
    shows one file, never what that file stands on. It is checked
