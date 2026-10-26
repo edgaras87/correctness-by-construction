@@ -39,7 +39,7 @@ Gate:
  its Known already>
 <the closing items below, filled in>
 Notes: <opened <date>; its stages, and what each uses; what the
- reviewer signs and when>
+ reviewer signs and when; the ADRs and devlog entries behind it>
 ```
 
 **The Now line names the stage the step is in, and changes when the
@@ -105,8 +105,8 @@ step that uses none has only its own items.
 **When every item is ticked and committed,** main takes the step's
 branch, if it has one, by fast-forward on the reviewer's word. Then
 one commit on main closes the step: it removes the step from this
-file and adds the devlog entry, which names the step and the commit
-that holds the ticked gate. Nothing is recorded before the
+file and adds the devlog entry, which names the step, what diverged
+from the plan, and the commit that holds the ticked gate. Nothing is recorded before the
 fast-forward that it would make untrue.
 
 **A step can stop when another must come first.** It stays in

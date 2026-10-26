@@ -78,20 +78,13 @@ And its `PLAN.md` holds one step being worked: the piece of work
 being done now, and below it any step stopped for it.
 What makes work a step, and the step's form, the run's adapted to
 this seat, are under `## The step form` at the top of the
-deliverer's own `PLAN.md`. TODO's Now holds what is due while the
-step is open, never the step itself. A step's own gate items are
-written first, from its goal; the gates of the skills and rules it
-uses are then checked against them (ADR-0057). A finished step
-leaves the plan, and the devlog entry that closes it names the step
-and the commit of its ticked gate. A run keeps its finished steps
-in its plan, each closed to one line, because they are the evidence
-its playbook is folded from; no
-playbook is folded from the deliverer's own plan, so its finished
-steps are only history, which is the devlog's. For the same reasons,
-folding lessons back and re-reading the entry file close every
-step's gate; its plan has no "Discovered along the way", since TODO
-takes a finding at once; and no decision index, since `docs/adr/`
-lists itself (§3.3's index is the run's).
+deliverer's own `PLAN.md` (ADR-0057). A run keeps its finished
+steps in its plan, each closed to one line, because they are the
+evidence its playbook is folded from; no playbook is folded from
+the deliverer's own plan, so its finished steps are only history,
+which is the devlog's. Its plan has no "Discovered along the way",
+since TODO takes a finding at once; and no decision index, since
+`docs/adr/` lists itself (§3.3's index is the run's).
 
 And its `ARCHITECTURE.md` maps documents and delivery rather than a
 built system: what is stated here, what ships, how it changes, the
@@ -200,26 +193,24 @@ Repo root, `PLAN.md`. One per project.
 
 ### 2.4 How
 
-- Statuses: `[ ]` planned, `[~]` in progress, `[x]` done (+date), `[!]`
-  blocked (+what unblocks it) or stopped (+the step first), `[-]`
-  skipped (+why).
-- A gate is a checklist of verifiable facts, not intentions: "tests pass on
-  a clean clone," not "code is good."
-- When a step closes, its gate is replaced by one line: the date,
-  what the step delivered, and the commit that holds the ticked
-  gate. Say there what diverged from the estimate — this is retro
-  fuel.
-- Steps link outward: "Decisions: ADR-nnnn," "see devlog 2026-08-14."
-- **A step can stop when another must come first.** It is not done
-  and not dropped. It keeps its place and the stage it stopped at,
-  and resumes there, not from the start: a stage whose input the
-  other step changed runs again, and a ticked item stays ticked
-  unless the other step made it untrue. Its mark is `[!]`, naming
-  the step that comes first and pointing at the devlog entry that
-  says why. How a step stops and resumes is the step form's: the
-  playbook's, and in the deliverer's seat its own `PLAN.md`'s.
-- Ends with a "Discovered along the way" holding pen. The look back
-  is not the plan's: `RETRO.md`, by `docs/conventions/retrospective/`.
+How a step is written, closed and stopped is the plan's form. In a
+run, the stub's legend and the step form copied from the playbook
+at birth, `delivery/fills/cbc-run-pure-playbook.md` (§9); in the
+deliverer's seat, `PLAN.md`'s legend and its step form. Why the form
+is as it is:
+
+- A gate holds facts, not intentions: "tests pass on a clean clone",
+  not "code is good". A step is then not declared finished by
+  fatigue.
+- A closed step's line says what diverged from the plan: that is
+  retro fuel.
+- A step links outward to its decisions and its devlog, so the plan
+  stays the spine the other records hang off (§1).
+- A step that stops is not done and not dropped: it keeps its place
+  and the work it did, and resumes where it stopped.
+- "Discovered along the way" holds what a step finds and does not
+  do. The look back is not the plan's: `RETRO.md`, by
+  `docs/conventions/retrospective/`.
 
 ### 2.5 When
 
