@@ -3,7 +3,7 @@
      against, the reviewer's own words. A record that decides
      nothing and tells no story: the item's ADR decides, and the
      devlog tells. Our seat only, on trial
-     (docs/conventions/project-recording/ §5.5; ADR-0060).
+     (docs/conventions/project-recording/ §14; ADR-0060).
 
      One section per item: a TODO item, or an open question another
      record holds. Numbered as added; a number is never reused.

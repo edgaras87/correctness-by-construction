@@ -473,7 +473,7 @@ manual owns the thing a word names, pointed at there.
   kept beside it in `TODO-CONVERSATION-MEMORY.md`: what was asked,
   the options weighed, what was said for and against. It decides
   nothing; it is read when the item is worked
-  (`docs/conventions/project-recording/` §5.5).
+  (`docs/conventions/project-recording/` §14).
 - **stage** — one phase of a skill, numbered from Stage 0:
   `cbc-slice`'s Stage 3, `cbc-framing`'s Stage 2. A step's Now line
   names the stage it is in. How a skill names them:

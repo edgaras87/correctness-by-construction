@@ -38,7 +38,7 @@ there is.
   `TODO.md`, `CHANGELOG.md`, `ARCHITECTURE.md`, `docs/adr/` and
   `devlog/`, derived from this page as the stubs are, and never
   copied from them (ADR-0042); and `TODO-CONVERSATION-MEMORY.md`,
-  on trial, which has no stub (§5.5, ADR-0060).
+  on trial, which has no stub (§14, ADR-0060).
 
 This page explains the records; the stubs state the rules. What
 derives from this page is that
@@ -103,7 +103,7 @@ believed less blindly — and runs past §8's two pages for them
 (ADR-0044).
 
 And it keeps the talk behind a TODO item beside the item, in
-`TODO-CONVERSATION-MEMORY.md`, on trial (§5.5; ADR-0060). A run
+`TODO-CONVERSATION-MEMORY.md`, on trial (§14; ADR-0060). A run
 gets it only if it holds here.
 
 *Found 2026-09-29: from 2026-09-20, with Step 10 in progress, 203
@@ -459,48 +459,13 @@ each pointing at a devlog entry written only at its end, so every
 See led nowhere until then. Tried first on five items on
 2026-10-17, the story moved to the moment the item is added.*
 
-### 5.5 Conversation-memory — the deliverer's, on trial
-
-An item keeps what triage needs, and its story is the devlog's.
-The talk that shaped it is neither: what was asked, the options
-weighed, what was said for and against, the reviewer's own words.
-On the deliverer's seat that talk is kept beside the item, in
-`TODO-CONVERSATION-MEMORY.md` at the root, next to `TODO.md`
-(ADR-0060).
-
-- **One file, a section per item.** An item is a TODO item, or an
-  open question another record holds, such as a step's list for a
-  later round; that record names the section, as an item's See
-  does. The section names its item. Each talk adds a dated part to
-  it, and a part is never rewritten. The file's header comment holds
-  its form and the date of its last touch.
-- **A record that decides nothing and tells no story:** the item's
-  ADR decides, and the devlog tells.
-- **The item stands alone.** Its Context is enough for triage, and
-  its See names the section. A lost section breaks no record.
-- **The agent asks each time** a talk raises or shapes an item: a
-  new section, a part added to one, or nothing, with its
-  recommendation. The reviewer decides.
-- **The section is read when its item is worked,** before the
-  item's Ideas are weighed. The devlog entry that works the item
-  says whether the section changed the work.
-- **A section goes in the commit that works its item.** The file
-  stays, empty or not, as `TODO.md` does.
-
-*On trial since 2026-10-21. The evidence is in the devlog: each
-item worked with its section in hand, and whether the section
-changed the work. It is looked at when the third such item is
-worked, or at the refinement step's close, whichever comes first.
-If it holds, it reaches runs through the container; if not, it
-goes.*
-
-### 5.6 When
+### 5.5 When
 
 Item added the moment it's discovered (so it stops occupying your
 head); triaged when closing a step (§11, rule 3: moments, not
 schedules).
 
-### 5.7 Anti-patterns
+### 5.6 Anti-patterns
 
 Using it as the plan (it has no gates or sequence); never deleting;
 closed entries kept whole; dated updates stacked on an open item;
@@ -868,6 +833,43 @@ contains nothing about what to write.
 **Anti-pattern.** Local status in the entry file — where the work
 stands, what is next. It belongs in PLAN.md; the table's row for
 PLAN.md is where the entry file says so.
+
+---
+
+## 14. Conversation-memory — the deliverer's, on trial
+
+A TODO item keeps what triage needs, and its story is the devlog's.
+The talk that shaped it is neither: what was asked, the options
+weighed, what was said for and against, the reviewer's own words.
+On the deliverer's seat that talk is kept beside the item, in
+`TODO-CONVERSATION-MEMORY.md` at the root, next to `TODO.md`
+(ADR-0060).
+
+- **One file, a section per item.** An item is a TODO item, or an
+  open question another record holds, such as a step's list for a
+  later round; that record names the section, as an item's See
+  does. The section names its item. Each talk adds a dated part to
+  it, and a part is never rewritten. The file's header comment holds
+  its form and the date of its last touch.
+- **A record that decides nothing and tells no story:** the item's
+  ADR decides, and the devlog tells.
+- **The item stands alone.** Its Context is enough for triage, and
+  its See names the section. A lost section breaks no record.
+- **The agent asks each time** a talk raises or shapes an item: a
+  new section, a part added to one, or nothing, with its
+  recommendation. The reviewer decides.
+- **The section is read when its item is worked,** before the
+  item's Ideas are weighed. The devlog entry that works the item
+  says whether the section changed the work.
+- **A section goes in the commit that works its item.** The file
+  stays, empty or not, as `TODO.md` does.
+
+*On trial since 2026-10-21. The evidence is in the devlog: each
+item worked with its section in hand, and whether the section
+changed the work. It is looked at when the third such item is
+worked, or at the refinement step's close, whichever comes first.
+If it holds, it reaches runs through the container; if not, it
+goes.*
 
 ## Why it arrives this way
 
