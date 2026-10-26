@@ -410,8 +410,6 @@
       - rename "The chain": the idea-to-output model's chain is
         another thing. Not "hand-off", which names the full-auto
         hand-off and a run's hand-off of edited copies.
-      - its bullets retell each skill's trigger, whose home is the
-        skill's `description` line, with no fact reference.
       Trigger: due — the pair it waited on was made on 2026-09-30.
       See: devlog 2026-09-30, local maps; `cb41ade`.
 

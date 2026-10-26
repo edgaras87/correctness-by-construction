@@ -31,27 +31,15 @@ flowchart TB
 **Each fires at its own moment; the arrows say what hands to what,
 not what you must pass through.** A typo fix reaches only
 `commit-messages`. A settled decision needing four commits reaches
-only `commit-plan`. A question about a diagram's shape reaches
+only `commit-plan`. A question about how a diagram is drawn reaches
 `visual-comparison` from wherever it arose.
-
-- **`visual-comparison`** fires when what is being chosen is how a
-  structure is shown and the candidates can be rendered cheaply
-  enough to look at. A choice that is not about showing something
-  has no convention of its own: it is worked inside a commit plan,
-  `docs/conventions/commit-plan/`.
-- **`commit-plan`** fires when the work needs more than one commit.
-  It plans the commits, not the change.
-- **`commit-messages`** fires when you are writing any commit, in a
-  plan or alone.
 
 **Work no skill or rule covers** starts from an approach on trial,
 not from this chain: `.claude/approaches-on-trial/approach-drafting.md`.
 Its work is planned like any other.
 
 **The order *inside* a plan does not come from here.** It comes
-from the domain skill that knows the work — `cbc-bootstrap` names a
-five-step shape, `cbc-slice` runs specify → plan → build →
-document, `infra-establish` has its walk. That division is why
+from the domain skill that knows the work. That division is why
 `commit-plan` stays generic and a project on another stack can use
 it unchanged.
 
