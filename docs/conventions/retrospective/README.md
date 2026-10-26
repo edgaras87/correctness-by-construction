@@ -63,8 +63,8 @@ are the source:
 
 No guide ships beside the skills: it would repeat them, and the two
 would drift. Run 3's apply guide restated nearly every rule of its
-skill. *Reopened if a reviewer works without reading this repo, or
-run 4's reading shows the missing guide cost something.*
+skill. The choice is reopened if a reviewer works without reading
+this repo, or run 4's reading shows the missing guide cost something.
 
 ### The deliverer's seat
 

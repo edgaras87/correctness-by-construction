@@ -222,12 +222,11 @@ group's words must sit in another group's file — the method's
 playbook inside the container's `PLAN.md` — that is a **fill**: the
 owning group's file has a marked place, the other group provides
 the text, the staging writes it in. Fills are the only step that is
-not a copy; they are listed in one place and there are few. *One
+not a copy; they are listed in one place and there are few. One
 exists. One is owed: the container's entry file names the method
 skills and `docs/concept/`, so a run taking container without
 method would be born with an entry file about files it does not
-hold. No such run exists; when one does, those lines become a
-fill.*
+hold. When such a run exists, those lines become a fill.
 
 ### 3.5 Every shipped skill, rule and shape carries `foundation`
 

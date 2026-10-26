@@ -72,11 +72,13 @@ cat "$t"/gitattributes.part  >> .gitattributes
 cat "$t"/editorconfig.part   >> .editorconfig
 ```
 
+How an overlay reaches a run is open: nothing ships one, and no
+step, skill or playbook names the append.
+
 *Found 2026-09-28: nothing ships an overlay, and a run is blind to
 the deliverer and cannot fetch one. Run 3 wrote its stack's lines
 itself at its skeleton step; the overlay here and the run's are two
-sources for one thing, and no step, skill or playbook names the
-append. How an overlay reaches a run is open.*
+sources for one thing.*
 
 ## 3. Rules
 
