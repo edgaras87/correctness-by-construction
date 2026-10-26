@@ -58,13 +58,13 @@ either.
    taken, on trial is held, the project's own and dropped are
    declined.
 5. **Place what is placed,** as a commit plan. A new convention is
-   added by `docs/conventions/conventions/` §4. A section of an
+   added by `docs/conventions/conventions/` §3. A section of an
    existing one goes into its manual first, and the foundation
    check carries it to what derives from it.
 6. **Rewrite what stays on trial, in general.** The general
    statement comes first, in its own terms. Each use stands beside
    it as a dated note, as a lesson does in a manual
-   (`docs/conventions/conventions/` §3.7). The approach names what
+   (`docs/conventions/conventions/` §2.6). The approach names what
    would settle it. If a whole part is used by one seat alone, it
    splits (below).
 7. **Record the endings.** For our own approach, an ADR when a

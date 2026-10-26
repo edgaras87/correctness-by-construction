@@ -23,7 +23,7 @@ then predated four rules:
 - writing, and one home per fact (ADR-0053);
 - the foundation check (2026-10-17);
 - a lesson written in general (`docs/conventions/conventions/`
-  §3.7, 2026-10-18).
+  §2.6, 2026-10-18).
 
 Done once before, unnamed: the eval of 2026-09-30 to 2026-10-02
 read the whole repo, listed 68 findings and 10 decisions in six
