@@ -46,7 +46,7 @@ retells a fact only where two copies cannot be avoided: its case of
 a retelling with a fact reference, which ids are fact references
 and when they are re-read, is not designed yet (ADR-0059,
 ADR-0065). §4 and §5 reach a run as the exchange's reading of what
-it sends back (`docs/conventions/exchange/`).
+it sends back (`docs/conventions/exchange/` §6).
 
 ### The deliverer's seat
 

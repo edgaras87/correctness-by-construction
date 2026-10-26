@@ -105,7 +105,7 @@ method up then.
   boundary, `docs/conventions/commit-plan/`.
 - **Whether a picture may carry a fact the prose does not** — the
   manual that holds the picture decides;
-  `docs/conventions/shapes/` states its own rule for itself.
+  `docs/conventions/shapes/` §4.3 states its own rule for itself.
 
 ## Where to look
 
