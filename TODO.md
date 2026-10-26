@@ -6,7 +6,7 @@
      Rule: an inline TODO:/FIXME: anywhere in the work must reference an
      item here.
      Open work only: a closed item goes, since the devlog, the ADRs
-     and git already say what closed. Known issues take the shape
+     and git already say what closed. Known issues take the form
      their heading names. Every other item takes one form:
 
      - [ ] <What to do or decide.> (<date>, <who raised it>)
