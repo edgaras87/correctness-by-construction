@@ -447,6 +447,17 @@ manual owns the thing a word names, pointed at there.
   drafted during its first use, used again, and in the end placed
   into conventions or dropped:
   `.claude/approaches-on-trial/approach-evaluation.md`.
+- **form** — how an output is written, read while it is written:
+  rules for the writing and the output's layout, together. An
+  approach (`docs/models/idea-to-output.md` §2). A record's form
+  sits in the record itself: its header comment, `PLAN.md`'s step
+  form, a stub's headings. A manual's and a reading's are agent
+  rules today; whether they become shapes is TODO's "Decide whether
+  our own forms become shapes".
+- **shape** — a presumed output, written from outputs that exist,
+  and read only at the gate to check what was made
+  (`docs/models/idea-to-output.md` §2; `docs/conventions/shapes/`).
+  Not a form, which is read while writing.
 - **seats** — the sides a convention has, this repo's and a run's.
   A manual says whether the two use it the same way.
 - **foundation** — the line by which a file names the one thing the
