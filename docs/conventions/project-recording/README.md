@@ -48,7 +48,7 @@ checked back against this page.
 ## The seats
 
 The same records in both seats, each derived from this page — the
-run's through the stubs, the deliverer's directly — with six
+run's through the stubs, the deliverer's directly — with seven
 differences of rule or ownership, so a section each
 (`docs/conventions/conventions/` §2.4).
 
@@ -64,7 +64,7 @@ playbook when the deliverer reads the run. Its
 ### The deliverer's seat
 
 The deliverer keeps the same records, derived from this page rather
-than from the stubs (ADR-0042), and differs in six things. It
+than from the stubs (ADR-0042), and differs in seven things. It
 has no project end, so lessons fold back at each step's close
 rather than at a retrospective, as its first devlog entry agreed on
 2026-08-27; whether a retrospective serves it too is on trial at
@@ -94,6 +94,12 @@ words and the list of what it knows is wrong — a map of a
 vocabulary needs the vocabulary, and a map that names its errors is
 believed less blindly — and runs past §8's two pages for them
 (ADR-0044).
+
+And its ADRs have no page limit. A run's ADR records one choice in
+its code; the deliverer's record the design of a method and its
+conventions, several numbered decisions each, and run to a median
+of 101 lines. Their length is governed by "cut what adds nothing"
+(`docs/conventions/writing/` §2, rule 7).
 
 And it keeps the talk behind a TODO item beside the item, in
 `TODO-CONVERSATION-MEMORY.md`, on trial (§14; ADR-0060). A run
@@ -261,8 +267,9 @@ copied for each new one; in the deliverer's seat, the header of
 - The threshold is a question a future reader would ask, not a
   size: a variable's name, no; a database, a framework, sync or
   async, build or buy, yes.
-- Under a page: an ADR you won't write because it's heavy is worse
-  than a terse one.
+- Under a page, in a run: an ADR you won't write because it's heavy
+  is worse than a terse one. The deliverer's have no page limit
+  (*The seats*).
 
 ### 3.5 A number is local to one repo
 
