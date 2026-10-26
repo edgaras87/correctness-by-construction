@@ -1022,7 +1022,8 @@
       convention" removed a pressure we did not have to name; all
       four additions were usable with no follow-up question. None
       of the three is in the exchange manual.
-      Trigger: the next revision of `docs/conventions/exchange/`.
+      Trigger: the note that answers run 5's reading, before it is
+               written.
 
 - [ ] Decide whether an overtaken reading still owes the run a note
       (2026-09-30, the reading of run 3).
@@ -1063,7 +1064,7 @@
       Context: the agent proposes and builds, the reviewer settles —
       every reading has gone so, and nothing says it. Probably the
       arrangement's to say, not the reading's.
-      Trigger: the next change to `docs/conventions/agent-arrangement/`.
+      Trigger: an agent found settling what was the reviewer's.
       See: devlog 2026-10-01.
 
 - [ ] Watch whether the worked example anchors a run's framing
@@ -1199,7 +1200,7 @@
         reads; repo-hygiene's `.editorconfig`, if it is a width; or
         a convention of its own for editing.
       Trigger: a diff the reviewer finds bigger than its change, or
-               the writing convention's next change.
+               round 3's rule check, which reads the writing rules.
       See: devlog 2026-10-25, the agent binding.
 
 ## Known issues (deferred deliberately — each entry: what, why accepted, when to revisit)
