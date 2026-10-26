@@ -95,7 +95,7 @@ foundation: the <name> convention
 - `name` equals the directory name; `requires` lines refer to a
   skill by it.
 - `requires` names the conventions this one delegates rules to; a
-  receiver lands a convention together with its chain.
+  receiver lands a convention together with what it requires.
 - `foundation` is §1.3's.
 
 ### 1.3 The `foundation` line
