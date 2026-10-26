@@ -30,8 +30,8 @@ rules split that way, and the rules came here before it read
 - **`.claude/rules/one-home.md` — the deliverer's**, loaded in
   every session: §1 and §2.
 - **`.claude/rules/foundation-check.md` — the deliverer's**, loaded
-  in every session and acting before a commit is staged: §3's grep
-  for a moved section, §4 and §5.
+  in every session and acting before a commit is staged: §3.3's
+  grep for a moved section, §4 and §5.
 
 What derives from this page is that list. A change here walks it;
 a change forced in one of them is checked back against this page.
@@ -52,7 +52,7 @@ it sends back (`docs/conventions/exchange/`).
 
 The deliverer holds its own, wider one-home rule and the foundation
 check. It may retell a fact where the reader acts on it in place
-(§1). Its fact reference is a document's path and section (§3), and
+(§1). Its fact reference is a document's path and section (§3.1), and
 the walk before every commit re-reads it (§4).
 
 ## 1. One home
@@ -71,7 +71,7 @@ being trusted. In practice:
   it: where two copies cannot be avoided, as the version in the
   build file is followed by the CHANGELOG, or where the reader acts
   on the fact in place, retold beside its pointer. A follower
-  carries a fact reference to the home (§3). Without one it is a
+  carries a fact reference to the home (§3.1). Without one it is a
   second home.
 - **History is not a second home.** The devlog, closed ADRs and
   commit bodies record what was true then. They are never updated,
@@ -101,6 +101,8 @@ a follower, not a second statement (§1; ADR-0059).
 
 ## 3. The fact reference
 
+### 3.1 What it is
+
 A line that relies on a fact written elsewhere carries a **fact
 reference**: the address of the fact's home. It has two readers.
 The agent may follow it to read the fact whole, with no guarantee
@@ -114,22 +116,22 @@ A fact reference names the document by its path from the repo
 root, `docs/conventions/<name>/`, with the section number when it
 means one — `docs/conventions/conventions/` §2.4 — so that the
 document can find everything pointing at it with one grep, and a
-reader lands on a paragraph rather than a wall. So a section
-divided into labelled parts numbers them, `### N.M`, and so does
-every section of the same form in the document, whether anything
-points there yet or not: the reference names the number, and a
-reader meets one structure throughout. Bold emphasis inside running
-prose is not a part. Never a relative link: a relative path means a
-different thing the moment a file is read from a different root,
-which is every copy and every shipped file. A name in prose is not
-a fact reference, because names are words. A fact reference beside
-a retelling always names the section: the walk re-reads only the
-retellings of the section that changed (§4), and one with no
-section would be re-read at every change. A commit that renames or
-renumbers greps all living text for each old path and number, and
-fixes what points at them in the same commit. A commit plan's
-sweep looks again before its close
-(`docs/conventions/commit-plan/` §2).
+reader lands on a paragraph rather than a wall. Never a relative
+link: a relative path means a different thing the moment a file is
+read from a different root, which is every copy and every shipped
+file. A name in prose is not a fact reference, because names are
+words. A fact reference beside a retelling always names the
+section: the walk re-reads only the retellings of the section that
+changed (§4), and one with no section would be re-read at every
+change.
+
+### 3.2 A section's parts are numbered
+
+A section divided into labelled parts numbers them, `### N.M`, and
+so does every section of the same form in the document, whether
+anything points there yet or not: a fact reference names the
+number, and a reader meets one structure throughout. Bold emphasis
+inside running prose is not a part.
 
 *Decided in the walk, 2026-09-29, when the conventions manual's §3
 held six rules as bold paragraphs and every pointer into it said
@@ -138,6 +140,13 @@ first as "a part other text points at", it would have numbered one
 section of project-recording beside seven built the same way; the
 reviewer caught it at the boundary, and it was reworded the same
 day, by form.*
+
+### 3.3 A rename is grepped at its commit
+
+A commit that renames or renumbers greps all living text for each
+old path and number, and fixes what points at them in the same
+commit. A commit plan's sweep looks again before its close
+(`docs/conventions/commit-plan/` §2).
 
 *Found 2026-10-19: the refinement's manual was renumbered three
 times on 2026-10-18, outside any commit plan, so no close sweep
@@ -165,7 +174,7 @@ for all of them, and this is where it is stated:
    Which files carry it, where, and what each holds is
    `docs/conventions/conventions/` §1.3. Every line that uses a part of
    a document, its root included, carries a fact reference to that
-   part (§3). The root says which document to open when the file
+   part (§3.1). The root says which document to open when the file
    changes; a fact reference says which line to re-read when the
    part changes.
 3. A change to the description walks the list in the same commit,

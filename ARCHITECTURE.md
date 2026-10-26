@@ -474,7 +474,7 @@ manual owns the thing a word names, pointed at there.
   reference, which is what one kind of link, points, writes down.
 - **fact reference** — what a line carries when it relies on a fact
   written elsewhere: the address of the fact's home, today a path
-  and a section (`docs/conventions/facts-in-sync/` §3).
+  and a section (`docs/conventions/facts-in-sync/` §3.1).
 - **walk** — what a change to a description sets off: the greps for
   its path and its name, and the re-read of each line they find
   (`docs/conventions/facts-in-sync/` §4, step 3).

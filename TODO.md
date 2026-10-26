@@ -258,7 +258,7 @@
 
 - [ ] Decide how a fact reference is written, and give it one name
       (2026-10-24, the reviewer).
-      Context: `docs/conventions/facts-in-sync/` §3 defines the fact
+      Context: `docs/conventions/facts-in-sync/` §3.1 defines the fact
       reference: the address of a fact's home, read by the agent and
       by the walk, written today as a path and a section (ADR-0065).
       A title in it was deferred: about 200 references would be
@@ -271,7 +271,7 @@
         numbered titles average 13 characters, and 13 are over 30.
       - when a section is touched, every fact reference to its path,
         number or title is grepped and updated in the same commit,
-        widening `docs/conventions/facts-in-sync/` §3's grep for a
+        widening `docs/conventions/facts-in-sync/` §3.3's grep for a
         moved section.
       - the repo prefix keeps its own name.
       - "pointer" goes as a noun; "link" and "points" stay, the
@@ -940,7 +940,7 @@
       into a chapter's section today. The chapters are the canonical
       text every run holds a copy of, so numbering them would change
       every copy for no reader yet
-      (`docs/conventions/facts-in-sync/` §3 numbers by form).
+      (`docs/conventions/facts-in-sync/` §3.2 numbers by form).
       Trigger: the first pointer that needs a section of a chapter.
       See: devlog 2026-09-30, numbered parts.
 

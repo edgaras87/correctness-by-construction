@@ -235,7 +235,7 @@ subject, and a subject has one section: other sections point at
 it, and do not tell it again. `docs/conventions/facts-in-sync/` §2
 asks the same of a convention's subject across the manuals; this
 asks it inside one. When a section gets a number, and its parts
-too, is `docs/conventions/facts-in-sync/` §3.
+too, is `docs/conventions/facts-in-sync/` §3.2.
 
 *Found 2026-10-19: in this manual, §3 held two subjects, how a
 manual is written and how everything stays in step. Nothing said a
