@@ -254,7 +254,7 @@ this page does not know which.*
 ## Why it arrives this way
 
 Two rules, each loaded in every session, with no `paths:`
-(`docs/conventions/agent-arrangement/` §3.2). One home's moment is
+(`docs/conventions/agent-arrangement/` §3.9). One home's moment is
 every text written: a fact is retold in the record being written,
 and that record's stub says nothing of the record the fact was taken
 from, so no stub is open at the moment. project-recording held the

@@ -191,7 +191,7 @@ three the stub's guard comment states:
   true in another project is a convention, and lives there — once. If
   the rule rides in a skill or a stub, it is not repeated here. If
   the convention's moment is every task, its rule loads with no
-  `paths:` (§3.2): the convention's channel, not a line here.
+  `paths:` (§3.9): the convention's channel, not a line here.
   **It points; it never restates**: a summary is lossy on arrival,
   and then two files disagree while both look current (model claim
   M1).
@@ -282,33 +282,11 @@ evaluation's: work no skill covers starts from an approach on trial
 ### 3.2 `rules/`
 
 Instruction files read like the entry file, with one extra: a `paths:`
-list at the top, which loads the file when the agent touches a file
-under one of those paths. When it loads, and its limits, are §5.6. The
+list at the top. When a file loads, and its limits, are §5.6. The
 home for a rule true only in one part of the tree, which a skill would
 carry only if the agent noticed the moment. Without the list, the file
 is the entry file by another name and fails §2.4's tests the same way,
-with one exception.
-
-A convention whose moment is every task ships its rule with no
-`paths:`, so it loads in every session. Its moment is every answer
-and every record written, and no path, skill or stub fires at all
-of them. Such a rule fails §2.4's first test, since it is true in
-any project. It passes as the convention's own channel: derived
-from its manual, and naming the manual in `foundation`. That keeps
-it from being the rulebook of §4: one file per convention, never a
-restatement. It is paid for in every session (§2.6), so few
-qualify. *Added 2026-10-15, from run 3: its writing and one-home
-rules, loaded this way, changed its records where a manual and the
-agent's memory had not (ADR-0053).*
-
-The container ships four — `shapes-lifecycle.md`,
-whose convention is `docs/conventions/shapes/`,
-`delivered-copies.md`, whose convention is
-`docs/conventions/exchange/`, and two with no `paths:`:
-`writing.md`, whose convention is `docs/conventions/writing/`, and
-`one-home.md`, whose convention is
-`docs/conventions/project-recording/` — and the deliverer holds its
-own.
+with one exception, §3.9.
 *Empty at birth until 2026-09-23.*
 
 ### 3.3 `shapes/`
@@ -399,6 +377,20 @@ In a run, an approach the deliverer ships is a pinned copy
 (`docs/conventions/exchange/` §3.2), and one the run drafts is its
 own. *Added 2026-10-20 (ADR-0058). Numbered last, so the sections before
 it keep the numbers history cites.*
+
+### 3.9 A rule loaded in every session
+
+A convention whose moment is every task ships its rule with no
+`paths:`, so it loads in every session. Its moment is every answer
+and every record written, and no path, skill or stub fires at all
+of them. Such a rule fails §2.4's first test, since it is true in
+any project. It passes as the convention's own channel: derived
+from its manual, and naming the manual in `foundation`. That keeps
+it from being the rulebook of §4: one file per convention, never a
+restatement. It is paid for in every session (§2.6), so few
+qualify. *Added 2026-10-15, from run 3: its writing and one-home
+rules, loaded this way, changed its records where a manual and the
+agent's memory had not (ADR-0053).*
 
 ## 4. Anti-patterns
 

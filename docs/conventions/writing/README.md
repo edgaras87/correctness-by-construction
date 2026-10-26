@@ -109,7 +109,7 @@ kind: find lines that are no longer true". Rule 8 came from it.*
 ## Why it arrives this way
 
 A rule with no `paths:`, loaded in every session
-(`docs/conventions/agent-arrangement/` §3.2). Its moment is every
+(`docs/conventions/agent-arrangement/` §3.9). Its moment is every
 answer and every record written, and nothing else fires at all of
 them (`docs/models/agent.md` §8):
 
