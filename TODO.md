@@ -829,20 +829,6 @@
       See: devlog 2026-10-25, evening; `TODO-CONVERSATION-MEMORY.md`
       §19; `163767f`.
 
-- [ ] Decide what our ADR form keeps: the one-page rule, the status
-      words, and what other templates add (2026-10-26, the reviewer).
-      Context: our 66 ADRs run to a median of 101 lines, 58 past 60,
-      the longest 276, against "under one page" in
-      `docs/conventions/project-recording/` §3.4 and
-      `docs/adr/README.md`. Status lines grew a pattern no form
-      states; 4 ADRs add "Decided while the plan ran". The run's stub
-      and our form also differ on status words.
-      Ideas:
-      - a page as the decision's part only, context and options apart.
-      - compare with Nygard's and MADR's templates.
-      Trigger: the next ADR this repo writes.
-      See: `ba06f69`, which wrote our ADR form.
-
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
