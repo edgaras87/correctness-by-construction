@@ -167,13 +167,16 @@ sections its body has. Whether a section is needed is each
 manual's to decide. Whether the form becomes a shape is the TODO
 item "Decide whether our own forms become shapes".
 
-The form was not designed. `docs/conventions/exchange/` and
-`docs/conventions/shapes/` grew the same sections with nothing
-telling either writer to: a pair recurred, the test a shape is
-written by (`docs/conventions/shapes/` §1). It grows the same way
-and no other: the list is the floor, and content that fits none of
-it takes its own heading in the body, where a section two manuals
-need becomes the next candidate.
+The form grows from what manuals already hold. The list is the
+floor, and content that fits none of it takes its own heading in
+the body. A section two manuals need becomes the next candidate:
+a pair recurred, the test a shape is written by
+(`docs/conventions/shapes/` §1). The list grows no other way.
+
+*Found 2026-09-28, when the form was first written:
+`docs/conventions/exchange/` and `docs/conventions/shapes/` had
+grown the same sections with nothing telling either writer to. The
+form was not designed; it was read off the two (ADR-0039).*
 
 ### 2.1 The opening statement
 
@@ -216,10 +219,13 @@ not, and "no seat" said outright when one side has none, so a
 reader does not hunt for it. When the body is already written per
 seat, the section is a paragraph naming which body sections are
 whose, as `docs/conventions/exchange/` does. Placed after *what
-this is made usable as*. Twice a manual grew seat sections
-because the two sides do different things, and nothing told the
-writer of the next one to ask; the section is where the asking is
-now built in.
+this is made usable as*.
+
+*Found 2026-09-28: twice a manual had grown seat sections because
+the two sides do different things, and nothing told the writer of
+the next one to ask. Six manuals had never said. Every manual
+gained the section, so the asking is built in (ADR-0039,
+decision 3).*
 
 ### 2.5 The body
 
@@ -271,11 +277,7 @@ Optional: pointers only, as root paths.
 A new convention can come from an approach on trial, ours or a
 run's, when its evaluation places a piece as a convention of its
 own (`.claude/approaches-on-trial/approach-evaluation.md`). The
-placing takes these steps.
-
-As the last seven were added — `visual-comparison`, the exchange,
-shapes, this one, writing, the retrospective and first-time work —
-and not as the index once said:
+placing takes these steps:
 
 1. An ADR for the decisions behind it, opened Proposed when it lands
    inside a change set.
@@ -295,6 +297,11 @@ and not as the index once said:
    commit, with an entry in `.claude/decisions.md` when it changes
    how this repo's agent works. No registry entry: the deliverer
    receives no conventions (ADR-0042).
+
+*Written 2026-09-28 from how the last three conventions had been
+added, not from what the index said. By 2026-10-18 seven had come
+this way: `visual-comparison`, the exchange, shapes, this one,
+writing, the retrospective and first-time work.*
 
 No CHANGELOG line and no PLAN step. The CHANGELOG is the
 concept-version log (ADR-0003) and has no place for a
