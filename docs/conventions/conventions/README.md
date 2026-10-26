@@ -147,9 +147,11 @@ and what points at it or derives from it stay in agreement is
 `docs/conventions/facts-in-sync/`.
 
 **The form** is the sections a manual has, each a heading after
-the opening, in the order of §2.1 to §2.9. Whether it becomes a
-shape is the TODO item "Decide whether our own forms become
-shapes".
+the opening, in the order of §2.1 to §2.9. It fixes where a reader
+finds each section, not a manual's length, its tone, or how many
+sections its body has. Whether a section is needed is each
+manual's to decide. Whether the form becomes a shape is the TODO
+item "Decide whether our own forms become shapes".
 
 The form was not designed. `docs/conventions/exchange/` and
 `docs/conventions/shapes/` grew the same sections with nothing
@@ -178,13 +180,17 @@ The need: the work it makes possible, the failure lived without
 it, and the trigger, as evidence. Or as intent marked on trial,
 with what would make it evidence and when to look again, after
 which the need is rewritten from what was seen or the convention
-goes. Or as adopted. Never intent dressed as evidence.
+goes. Or as adopted, taken whole from elsewhere: where it came
+from, and what has been lived under it since. Never intent dressed
+as evidence.
 
 ### 2.3 What this is made usable as
 
-The list a change to the page walks, each item marked shipped or
-the deliverer's, with the moment it opens at, placed as the answer
-to the need.
+The list a change to the page walks: every derived artifact, by
+path from the repo root, each marked shipped or the deliverer's,
+with the moment it opens at, placed as the answer to the need. When
+nothing ships, it says so, and lists what a repo holds. It ends
+with the sentence that a change here walks that list.
 
 ### 2.4 The seats
 
@@ -239,7 +245,8 @@ part (`docs/models/agent.md`).
 
 ### 2.8 What this does not cover
 
-The boundary against its neighbours, each by path.
+The boundary against its neighbours: a list, each neighbour's
+subject in bold, then the path it belongs to.
 
 ### 2.9 Where to look
 
