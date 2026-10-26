@@ -432,27 +432,16 @@ carries unchanged.
 
 ### 6.4 How
 
-```markdown
-# Changelog
+How an entry is written, and how a release closes, is the
+changelog's form: the header comment of `CHANGELOG.md`, the stub in
+a run and the deliverer's own, which versions the concept (*The
+seats*). Why the form is as it is:
 
-## [Unreleased]
-### Added
-- Order soft-deletion with 30-day recovery.
-
-## [1.2.0] - 2026-08-20
-### Added
-- Login/logout with token expiry.
-### Fixed
-- Duplicate order creation under concurrent requests.
-### Security
-- Tokens no longer logged on auth failure.
-```
-
-- Categories: Added, Changed, Deprecated, Removed, Fixed, Security.
-- The `[Unreleased]` section accumulates during work; releasing = renaming
-  it to a version + date and opening a fresh Unreleased. Entries are
-  written *when the change is made*, not reconstructed at release time.
-- Breaking changes get called out explicitly and drive the major version.
+- Entries are written when the change is made, not reconstructed at
+  release time; `[Unreleased]` gathers them, so a release is a
+  rename.
+- A breaking change is called out, because whoever pins this repo
+  must see it before taking the version.
 
 ### 6.5 When
 
