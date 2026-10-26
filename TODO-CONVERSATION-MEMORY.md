@@ -18,7 +18,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-10-25.
+     Last touched: 2026-10-26.
      foundation: the project-recording convention -->
 
 # TODO's conversation-memory
@@ -140,6 +140,44 @@ style of its own.
   part is written may not.
 - A new reading is written without its form in view today, since
   the form loads only when a reading is read (FINDING-4, `162bfb0`).
+
+### 2026-10-26
+
+#### What the reviewer asked
+
+Is a form the same as a shape, the one read before the output and
+the other after? Should the two share a name, such as a
+pre-output shape? Rules and skills already carry no shape: the
+shape is checked at the output, and an eval improves it. Then:
+what of manuals, models, the concept and the method? And does the
+form hold on maintenance, readability, future-proofing and
+complexity?
+
+#### Points made
+
+- A form is not only a layout. It also holds rules for the moment
+  of writing, such as "add an item the moment it is discovered",
+  which a shape cannot hold (`docs/conventions/shapes/` §3). A
+  record's form is both, in one place.
+- No new name: "pre-output shape" would name a thing this item may
+  remove. If layouts become shapes, "form" keeps only the writing
+  rules.
+- The test for a shape: many of a kind, and a moment to check
+  them. Manuals, readings, skills and rules pass. A record's
+  entries have no gate of their own, so the record keeps its form.
+  Models, three with no shared parts, and the one concept do not.
+- The reviewer agreed the record's form stays, and the manual's and
+  the reading's forms stay rules until this item decides.
+- The four questions, for the record's form:
+  - maintenance: one home per rule after the refinement's plan 2
+    for layer 2, but two seats each hold a copy, and nothing checks
+    they agree;
+  - readability: the rule is where the writer looks, and hidden
+    from a person reading the page; the header grows;
+  - future-proofing: a live run never takes a form's change, since
+    records go once, at birth (`docs/conventions/exchange/` §2.4);
+  - complexity: no new mechanism, but writing rules and layout
+    share one comment.
 
 ## 4. What our changelog tracks
 

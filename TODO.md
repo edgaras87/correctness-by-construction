@@ -496,6 +496,12 @@
         Only `.claude/decisions.md` holds one under another
         convention, agent-arrangement. The open forms are those in
         rules: a manual's, a reading's.
+      - a text gets a shape when there are many of its kind and a
+        moment to check them: manuals, readings, skills and rules
+        may; a record's entries are checked only as they are written.
+      - models and the concept get none while nothing of their kind
+        recurs: three models share no parts yet, and the concept has
+        one form and one home (`docs/models/idea-to-output.md` §5).
       Trigger: run 4's reading, which reads how run 4 lived run 3's
                shapes.
       See: devlog 2026-10-17, our forms as shapes; 2026-10-20,
