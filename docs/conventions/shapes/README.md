@@ -173,7 +173,7 @@ than being enforced on top of them.
 
 A shape travels as a copy, at birth and at every delivery, under the
 one pin that covers every delivered copy
-(`docs/conventions/exchange/` §3.2). A run edits a delivered shape
+(`docs/conventions/exchange/` §2.2). A run edits a delivered shape
 as it edits any copy, and offers its own as it offers any file it
 wrote.
 

@@ -1171,7 +1171,7 @@
       Context: a run takes a delivery under the `delivered-copies.md`
       it holds, so a delivery that changes that rule is taken under
       the old one. The rule cannot travel alone: one pin covers every
-      copy (`docs/conventions/exchange/` §2.3). Run 3's copy lacked
+      copy (`docs/conventions/exchange/` §2.2). Run 3's copy lacked
       `4de6ba2`'s shapes; no files went, so it never acted.
       Ideas: the note's "why it matters" names a change to the rule
              first, so the run takes it knowingly.

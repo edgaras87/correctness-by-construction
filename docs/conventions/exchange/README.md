@@ -109,6 +109,10 @@ The pin is a commit of the deliverer's. The run stores it and
 cannot resolve it, so everything the run needs to check must be
 checkable against its own tree.
 
+**One pin** for everything delivered. Not one per group, not one
+per convention. A run that holds two pins for one delivery has been
+given a way to be inconsistent.
+
 ### 2.3 At the pin, the bytes match
 
 The moment a run takes a delivery,
@@ -161,8 +165,8 @@ Two repos, two numbers, and only a note moves either.
 ```
 
 Read from the read-through, forward in their tree. Deliver from the
-pin, forward in ours. A note without files is a `t` that writes the
-read-through and leaves the pin where it was.
+pin, forward in ours. A note without files (§6.6) is a `t` that
+writes the read-through and leaves the pin where it was.
 
 ## 3. Down
 
@@ -234,10 +238,6 @@ can say otherwise. *Until 2026-09-26 the five method and stack
 skills carried this as a comment on line 6, in two different
 verbs, nine templates repeated it, and the container's files
 carried nothing.*
-
-**One pin** for all of it. Not one per group, not one per
-convention. A run that holds two pins for one delivery has been
-given a way to be inconsistent.
 
 ### 3.6 A copy carries presence and content, never absence
 
@@ -506,7 +506,7 @@ Each item leaves the list with one of three:
   our own backlog so it is not lost between readings.
 
 An unverifiable promise is worse than any of the three. The note
-carries all of them, in the run's order.
+carries all of them, in the run's order; there is no other channel.
 
 ### 6.6 Every read ends with a note
 
@@ -515,11 +515,7 @@ the run's commit we read through; the run records it beside the pin
 (§2). A read that finds nothing addressed to us still sends *read
 through `<commit>`, nothing to answer, no files* — one line each
 side — so the run always holds the latest read-through, and can see
-for itself when a hand-off was seen and not yet answered.
-
-### 6.7 Verdicts travel in the note
-
-There is no other channel. A note
+for itself when a hand-off was seen and not yet answered. A note
 alone, with no files, is still a delivery: the read-through moves,
 the pin does not.
 
