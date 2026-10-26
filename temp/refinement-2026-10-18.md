@@ -634,6 +634,7 @@ deliverer's seat) and again in `PLAN.md` (its header comment, *The
 step form*, and the close). Re-reading the entry file at a close is
 also agent-arrangement §2.6. Project-recording §2.4 calls the form
 "the playbook's" with no path. Rests on DECISION-11.
+Ending: fixed, `cce8e9d` and `583bf8f`: the step form holds how, project-recording what and why; the other records followed in the same plan.
 
 **FINDING-145.** One home; resting on the reader. What each record
 holds is told in `CLAUDE.md`'s records table, `README.md`'s "What
