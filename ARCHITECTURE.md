@@ -441,7 +441,7 @@ manual owns the thing a word names, pointed at there.
   `docs/conventions/<name>/README.md`. Never shipped.
 - **approach** — how a piece of work is done. A skill or a rule is
   an approach proven and placed; an approach on trial is not yet
-  proven.
+  proven (`docs/models/idea-to-output.md` §2).
 - **approach on trial** — the written approach to one kind of work,
   not yet proven, at `.claude/approaches-on-trial/<work>.md`. It is
   drafted during its first use, used again, and in the end placed
