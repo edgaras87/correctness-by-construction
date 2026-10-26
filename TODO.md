@@ -519,17 +519,17 @@
 
 - [ ] Write a rule that writes a skill or rule from its convention
       (2026-10-17, the reviewer).
-      Context: `docs/conventions/conventions/` §2 says how a skill
+      Context: `docs/conventions/conventions/` §1 says how a skill
       or rule is written, and nothing puts it in front of the
       writer: a manual has `convention-manual.md`, a skill or rule
       has no such rule. An approach on trial writes freely, and its
       pieces are input: what the work needed. When an evaluation
       places one, the lasting form comes from
-      `docs/conventions/conventions/`: the manual by §3, each skill
-      or rule from it by §2.
+      `docs/conventions/conventions/`: the manual by §2, each skill
+      or rule from it by §1.
       Ideas:
-      - a rule derived from `docs/conventions/conventions/` §2, as
-        `convention-manual.md` is from §3, on `.claude/skills/`,
+      - a rule derived from `docs/conventions/conventions/` §1, as
+        `convention-manual.md` is from §2, on `.claude/skills/`,
         `.claude/rules/` and `delivery/`.
       - a `paths:` rule loads only on a Read; the commit is the
         other moment (`.claude/decisions.md`, 2026-10-17).
@@ -793,7 +793,7 @@
       manuals hold 56 such notes, 286 of 3,817 lines (7%); our
       `.claude/`, 17 and 115 lines (3%). Each loads with its file.
       Round 2's read found 6 rules standing only in a note. Round 2
-      reads against `docs/conventions/conventions/` §3.7, so the
+      reads against `docs/conventions/conventions/` §2.6, so the
       rule stays until the round closes.
       Ideas:
       - examples stay; each origin becomes one line pointing at its
@@ -820,7 +820,7 @@
       line inside one, "one-home rule 3": 17. What a text says must
       be done, "the bump rule". In a run, a rule the built system
       keeps, "one row per rule": 5. *The words* defines none.
-      `docs/conventions/conventions/` §2 is about the files, yet its
+      `docs/conventions/conventions/` §1 is about the files, yet its
       "A rule is one sentence in the imperative" means a line.
       Ideas:
       - "agent rule" for the file, plain "rule" for what must be

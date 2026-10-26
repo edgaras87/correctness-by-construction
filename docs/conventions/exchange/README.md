@@ -227,7 +227,7 @@ fill.*
 
 The field — its name, that every skill, rule and shape has one,
 and what it holds for each kind — is the conventions convention's,
-`docs/conventions/conventions/` §2. What is the exchange's: the
+`docs/conventions/conventions/` §1.3. What is the exchange's: the
 line travels with the copy as a live claim, what this file comes
 from *now* and not when or from which run, and nothing in a copy
 can say otherwise. *Until 2026-09-26 the five method and stack
@@ -541,7 +541,7 @@ new is written without it (`docs/conventions/agent-arrangement/`
   arrangement's** — `docs/conventions/agent-arrangement/`, its
   seats.
 - **What `foundation` holds for each kind of file** —
-  `docs/conventions/conventions/` §2.
+  `docs/conventions/conventions/` §1.3.
 - **How a shape reaches a run** — `docs/conventions/shapes/` §4.
 - **The commits and decisions of working a reading** — a commit
   plan when it takes more than one commit,

@@ -43,7 +43,7 @@ this page.
 
 Two derivations of this page, neither copied from the other: nearly
 the same files, and different by design in their job — so a
-section each (`docs/conventions/conventions/` §3.4).
+section each (`docs/conventions/conventions/` §2.4).
 
 ### The run's seat — a builder's
 

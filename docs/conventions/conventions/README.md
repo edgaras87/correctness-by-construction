@@ -25,7 +25,7 @@ it the next day.
 Nothing shipped of its own; what a repo holds is:
 
 - **the `foundation` line in every shipped skill, rule and shape**
-  — a run's, and this convention's artifact there (§2);
+  — a run's, and this convention's artifact there (§1.3);
 - **`.claude/rules/convention-manual.md` — the form of a manual,
   the deliverer's**, loading whenever a manual is opened;
 - **the index, `docs/conventions/README.md`** — a pointer: the
@@ -41,7 +41,7 @@ A run holds artifacts and writes no manuals. The deliverer writes
 the manuals and holds the master of every artifact. This page is
 written from the deliverer's seat.
 
-## 2. The artifact
+## 1. The artifact
 
 What a convention is, a manual and its artifacts, is
 `docs/models/idea-to-output.md` §6. Here, a convention's artifacts
@@ -59,6 +59,8 @@ and rules are not copies: it writes its own
 The reader is an agent in a project, holding a pinned copy and
 opening it at the moment of use.
 
+### 1.1 How a rule is written
+
 - A rule is one sentence in the imperative. Its why is the manual's
   or the ADR's.
 - Cite no decision mid-sentence. A skill or rule lists the decisions
@@ -74,7 +76,9 @@ opening it at the moment of use.
   and then name the run.
 - A worked example in a code block is exempt from all of this.
 
-**A skill file** opens with YAML frontmatter, which is what a skill
+### 1.2 A skill's frontmatter
+
+A skill file opens with YAML frontmatter, which is what a skill
 loader reads:
 
 ```yaml
@@ -91,38 +95,42 @@ foundation: the <name> convention
   skill by it.
 - `requires` names the conventions this one delegates rules to; a
   receiver lands a convention together with its chain.
-- `foundation` says what the whole file stands on *now* — a live
-  claim, never history — and a file has one (`docs/conventions/facts-in-sync/`
-  §4, step 2). Every
-  skill and rule carries one, shipped or this repo's own, and so
-  does every shipped shape, in frontmatter of its own: for the
-  method, the concept and its version, `concept v1`; for the stack
-  practice, the concept it was checked against, `practice, checked
-  against concept v1`; for a convention's artifact, the convention
-  by name, `the exchange convention`; for a shape, the convention it
-  lives under, `practice, under the shapes convention`; for a
-  record's form, the convention it comes from, `the
-  project-recording convention` (`docs/conventions/facts-in-sync/` §4,
-  step 2); for a manual whose
-  idea a model states, in frontmatter of its own, the model by name,
-  `the agent model`. The value carries the relation where it is not
-  derivation. Concept chapters and models carry none; they are the
-  top. That the line travels with a copy is
-  `docs/conventions/exchange/` §3.5.
+- `foundation` is §1.3's.
 
-**A skill's phases are stages,** numbered from Stage 0, each under
-its own heading: `## Stage 1 — specify-correctness`. "Step" is
-PLAN's: a step's Now line names the stage it is in, and one word
-for both would read "Now: Step 3" inside Step 1. A numbered
-instruction inside a stage is not a phase, and its list may call
-it a step.
+### 1.3 The `foundation` line
+
+`foundation` says what the whole file stands on *now* — a live
+claim, never history — and a file has one
+(`docs/conventions/facts-in-sync/` §4, step 2). Every skill and
+rule carries one, shipped or this repo's own, and so does every
+shipped shape, in frontmatter of its own: for the method, the
+concept and its version, `concept v1`; for the stack practice, the
+concept it was checked against, `practice, checked against concept
+v1`; for a convention's artifact, the convention by name, `the
+exchange convention`; for a shape, the convention it lives under,
+`practice, under the shapes convention`; for a record's form, the
+convention it comes from, `the project-recording convention`
+(`docs/conventions/facts-in-sync/` §4, step 2); for a manual whose
+idea a model states, in frontmatter of its own, the model by name,
+`the agent model`. The value carries the relation where it is not
+derivation. Concept chapters and models carry none; they are the
+top. That the line travels with a copy is
+`docs/conventions/exchange/` §3.5.
+
+### 1.4 Stages
+
+A skill's phases are stages, numbered from Stage 0, each under its
+own heading: `## Stage 1 — specify-correctness`. "Step" is PLAN's:
+a step's Now line names the stage it is in, and one word for both
+would read "Now: Step 3" inside Step 1. A numbered instruction
+inside a stage is not a phase, and its list may call it a step.
 
 *Found 2026-10-15: `cbc-framing` called its phases steps, inside
 PLAN's Step 1, and run 3 asked for a word of their own;
 `infra-establish`'s walk did the same inside Step 3. Both say stage
 since 2026-10-17, as the other skills did.*
 
-## 3. The manual
+## 2. The manual
 
 A convention's manual is `docs/conventions/<name>/README.md`,
 written for a person and for the maintainer. It never ships
@@ -136,52 +144,27 @@ artifact is made usable (`ARCHITECTURE.md` §1). It explains and
 points at the ADRs; the artifact says what a project does, and its
 `foundation` line names the manual it derives from. How a manual
 and what points at it or derives from it stay in agreement is
-`docs/conventions/facts-in-sync/`; the sections once numbered 3.1, 3.2, 3.5
-and 3.6 moved there (ADR-0065).
+`docs/conventions/facts-in-sync/`.
 
-### 3.3 The form
-
-The form is a rule under `.claude/rules/`, loading when a manual
-is opened (how a rule loads is `docs/conventions/agent-arrangement/`
-§3.2), and lists the sections one has, each a heading after the
-opening: an opening statement — the manual's subject, in one
-sentence, so a reader can tell from one line whether this is the
-page they need; not a summary of how it works, nor its boundary or
-its channel, which have sections of their own; *what it is for* —
-the need: the
-work it makes possible, the failure lived without it, and the
-trigger, as evidence; as intent marked on trial, with what would
-make it evidence and when to look again, after which the need is
-rewritten from what was seen or the convention goes; or as
-adopted; never intent dressed as evidence;
-*what
-this is made usable as* — the list a change to the page walks,
-each item marked shipped or the deliverer's, with the moment it
-opens at, placed as the answer to the need; the seats (§3.4);
-lessons as dated italics (§3.7); *why it arrives this way* — the
-channel, a skill, a rule, a stub or a file, and why that one;
-where it reasons from the agent model, with a fact reference to that part
-(`docs/models/agent.md`); and *what this does not cover*, the
-boundary against its neighbours by path.
+**The form** is the sections a manual has, each a heading after
+the opening, in the order of §2.1 to §2.9. Whether it becomes a
+shape is the TODO item "Decide whether our own forms become
+shapes".
 
 The form was not designed. `docs/conventions/exchange/` and
 `docs/conventions/shapes/` grew the same sections with nothing
 telling either writer to: a pair recurred, the test a shape is
-written by (`docs/conventions/shapes/` §1). It is held as a rule
-today, loading when a manual is read, not while a new one is
-written (`docs/conventions/agent-arrangement/` §3.2; ADR-0052);
-whether it becomes a shape read at a step's gate, now that this
-repo has steps (ADR-0057), is open (TODO). It grows the same way and no other:
-the list is the floor, and content that fits none of it takes its
-own heading in the body, where a section two
-manuals need becomes the next candidate. A rule, a term or a
-mechanism that other text will point at gets its own numbered
-subsection, as this section's seven do, so the pointer lands on it.
-Each numbered section holds one subject, and a subject has one
-section: other sections point at it, and do not tell it again.
-`docs/conventions/facts-in-sync/` §2 asks the same of a convention's subject
-across the manuals;
-this asks it inside one.
+written by (`docs/conventions/shapes/` §1). It grows the same way
+and no other: the list is the floor, and content that fits none of
+it takes its own heading in the body, where a section two manuals
+need becomes the next candidate.
+
+### 2.1 The opening statement
+
+The manual's subject, in one sentence, so a reader can tell from
+one line whether this is the page they need. Not a summary of how
+it works, nor its boundary or its channel, which have sections of
+their own.
 
 *Found 2026-10-19: of the fourteen manuals' opening statements,
 five said the subject in one sentence, five added claims that have
@@ -189,12 +172,21 @@ other homes, and four summed up how the work goes. "What the
 convention is" allowed all three. The conventions manual's own
 said what a convention claims, not its subject.*
 
-*Found 2026-10-19: in this manual, §3 held two subjects, how a
-manual is written and how everything stays in step. Nothing said a
-section holds one subject, so a walk through the manual had no
-rule to name.*
+### 2.2 What it is for
 
-### 3.4 The seats
+The need: the work it makes possible, the failure lived without
+it, and the trigger, as evidence. Or as intent marked on trial,
+with what would make it evidence and when to look again, after
+which the need is rewritten from what was seen or the convention
+goes. Or as adopted. Never intent dressed as evidence.
+
+### 2.3 What this is made usable as
+
+The list a change to the page walks, each item marked shipped or
+the deliverer's, with the moment it opens at, placed as the answer
+to the need.
+
+### 2.4 The seats
 
 A convention has two seats, the run's and the deliverer's, and a
 manual names both: what each does under it, the run first — what
@@ -209,7 +201,21 @@ because the two sides do different things, and nothing told the
 writer of the next one to ask; the section is where the asking is
 now built in.
 
-### 3.7 A lesson taken
+### 2.5 The body
+
+Numbered sections, free prose. Each numbered section holds one
+subject, and a subject has one section: other sections point at
+it, and do not tell it again. `docs/conventions/facts-in-sync/` §2
+asks the same of a convention's subject across the manuals; this
+asks it inside one. When a section gets a number, and its parts
+too, is `docs/conventions/facts-in-sync/` §3.
+
+*Found 2026-10-19: in this manual, §3 held two subjects, how a
+manual is written and how everything stays in step. Nothing said a
+section holds one subject, so a walk through the manual had no
+rule to name.*
+
+### 2.6 A lesson taken
 
 A finding taken into a manual is written as what it teaches, not as
 the case that taught it. The body states the lesson in general, in
@@ -225,7 +231,21 @@ Its first draft said what `CLAUDE.local.md` holds through
 without that dependency and beyond commits. It became a test any
 line can be sorted by, with the commit grant as one example.*
 
-## 4. Adding a convention
+### 2.7 Why it arrives this way
+
+The channel, a skill, a rule, a stub or a file, and why that one.
+Where it reasons from the agent model, a fact reference to that
+part (`docs/models/agent.md`).
+
+### 2.8 What this does not cover
+
+The boundary against its neighbours, each by path.
+
+### 2.9 Where to look
+
+Optional: pointers only, as root paths.
+
+## 3. Adding a convention
 
 A new convention can come from an approach on trial, ours or a
 run's, when its evaluation places a piece as a convention of its
@@ -239,7 +259,7 @@ and not as the index once said:
 1. An ADR for the decisions behind it, opened Proposed when it lands
    inside a change set.
 2. The manual at `docs/conventions/<name>/README.md`, in the form
-   (§3.3).
+   (§2).
 3. Its artifacts in the container, if it ships any. A convention
    entering or leaving the container updates the birth entry in the
    container's decisions-log stub, in the same commit: a run holds
@@ -293,7 +313,7 @@ what a file stands on has to travel with the file.
 
 - The chain: `docs/conventions/README.md`.
 - The rule for every description: `docs/conventions/facts-in-sync/` §4.
-- What `foundation` holds for each kind of file: §2, above; that it
-  travels with a copy, `docs/conventions/exchange/` §3.5.
+- What `foundation` holds for each kind of file: §1.3, above; that
+  it travels with a copy, `docs/conventions/exchange/` §3.5.
 - A convention whose artifact is a rule, not a skill:
   `docs/conventions/shapes/`.

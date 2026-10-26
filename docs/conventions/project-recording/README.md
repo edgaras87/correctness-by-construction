@@ -50,7 +50,7 @@ checked back against this page.
 The same records in both seats, each derived from this page — the
 run's through the stubs, the deliverer's directly — with six
 differences of rule or ownership, so a section each
-(`docs/conventions/conventions/` §3.4).
+(`docs/conventions/conventions/` §2.4).
 
 ### The run's seat
 

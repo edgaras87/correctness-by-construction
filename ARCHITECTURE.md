@@ -447,7 +447,7 @@ manual owns the thing a word names, pointed at there.
   written under. A skill, a rule, a shape, a record's form and a
   manual standing on a model carry one; a line that uses a part of a
   document carries a fact reference to that part instead
-  (`docs/conventions/conventions/` §2;
+  (`docs/conventions/conventions/` §1.3;
   `docs/conventions/facts-in-sync/` §4). Not *source*: that
   was a run's word for the deliverer, and is not ours.
 - **link** — a relation from a lower text to the upper one it
@@ -470,7 +470,7 @@ manual owns the thing a word names, pointed at there.
 - **stage** — one phase of a skill, numbered from Stage 0:
   `cbc-slice`'s Stage 3, `cbc-framing`'s Stage 2. A step's Now line
   names the stage it is in. How a skill names them:
-  `docs/conventions/conventions/` §2.
+  `docs/conventions/conventions/` §1.4.
 
 ## What this page knows is wrong
 

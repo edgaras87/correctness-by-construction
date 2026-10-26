@@ -112,7 +112,7 @@ names the agent model, not a convention that applies the claim.
 
 A fact reference names the document by its path from the repo
 root, `docs/conventions/<name>/`, with the section number when it
-means one — `docs/conventions/conventions/` §3.4 — so that the
+means one — `docs/conventions/conventions/` §2.4 — so that the
 document can find everything pointing at it with one grep, and a
 reader lands on a paragraph rather than a wall. So a section
 divided into labelled parts numbers them, `### N.M`, and so does
@@ -150,7 +150,7 @@ This page included. A description is how we understand a thing
 today, written down: the concept, each model, each manual,
 `ARCHITECTURE.md`. It states what is true today; how it came to be
 is history's: the ADRs, the devlog, commit bodies, and a lesson's
-dated italic (`docs/conventions/conventions/` §3.7). It may be
+dated italic (`docs/conventions/conventions/` §2.6). It may be
 wrong or incomplete, and it is
 canonical regardless — everything derived from it agrees with it
 until it changes, and it changes only for a reason recorded,
@@ -188,7 +188,7 @@ for all of them, and this is where it is stated:
 Steps 1, 2 and the greps in 3 are checkable today: every shipped
 skill and rule carries `foundation`, every manual names what
 derives from it in *What this is made usable as*, and a path and a
-`foundation` value are tokens (`docs/conventions/conventions/` §2).
+`foundation` value are tokens (`docs/conventions/conventions/` §1.3).
 The rest ran twice by hand before this was a rule — the
 correspondence check of 2026-09-25, and the walk of
 `a337674^:docs/master.md` at the exchange plan's close — both
