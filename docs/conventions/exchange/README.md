@@ -174,15 +174,17 @@ writes the read-through and leaves the pin where it was.
 
 On the reviewer's word, the delivery and its note are
 copied into the run's `temp/` — by the reviewer, or by the agent
-when told to. The agent never stages unasked: this repo did once,
-into a run mid-step, and it cost that run a commit plan. Whoever
+when told to. The agent never stages unasked. Whoever
 copies, the run's tree is checked quiet first — `git status` there,
 nothing in flight — and when it is the agent, it reports what it
 found and waits for the word before anything lands. The
 staging is named by the commit at which the files and the note are
 both final — commit the note last, then name the bundle — so the
-pin the run records points at exactly the note it read. *The last
-delivery was named one commit before its note was finished.*
+pin the run records points at exactly the note it read. *Found by
+2026-09-25, when this section was drafted: the agent had staged
+once unasked, into a run mid-step, and it cost that run a commit
+plan; and a delivery was named one commit before its note was
+finished.*
 
 ### 3.2 What goes
 
@@ -255,7 +257,10 @@ and the note says both halves.
 What changed since the run's pin, stated so the run
 can diff the staging against what it holds and find the note wrong.
 Why it matters to this run — the part a diff cannot carry. A verdict
-on everything the run addressed to us since we last read it.
+on everything the run addressed to us since we last read it. A
+verdict says the decision and what the run owes now, nothing else.
+It never describes our own practice, which the run cannot check. It
+never says "accepted" for something not decided.
 Nothing that needs our repo to verify: a note that reports facts
 about our tree gives the run a hedge it cannot close. Where a claim
 cannot avoid it — a thin note, which ships no copy; material
@@ -274,10 +279,8 @@ ordinal, and the one it gave itself at its Identity step. A run's
 records do not say which is which; ours do, in `ARCHITECTURE.md`
 §2.5.
 
-*Three rules about verdicts, each a defect first: a verdict is the
-decision and what the run owes now, nothing else; never describe our
-own practice, which the run cannot check; never say "accepted" for
-something not decided. And four ways a note fails to reach: it was
+*The three rules about verdicts were each a defect first. And four
+ways a note fails to reach: it was
 thin; the thing it names does not exist; the relationship changed
 under it; or it carried the right content in a shape the run could
 not act on — the last found on 2026-09-20, when a note of reports
@@ -310,9 +313,8 @@ copy.
    diff exact next time. Optional.
 4. **Remove what the note says is gone.** Each path the note names
    as deleted is deleted; each it names as renamed is moved. The
-   only step a copy cannot do, and the one that has been missed
-   before — a rename once left the old file standing in a run for
-   four days.
+   only step a copy cannot do. *Missed once, found by 2026-09-25:
+   a rename left the old file standing in a run for four days.*
 5. **Register.** One line in the run's decisions log: the date, the
    pin, what came, what was declined and where its need went. Agent
    side only, and in the last commit, where every copy equals the
@@ -359,8 +361,9 @@ filed at a step's close, gone with the pin that answers it. `temp/`
 is not the channel the other way: it holds drafts, not records,
 its files go once they have served, and a line left there would
 go with them. One heading keeps the lines from being swept with a
-rewrite elsewhere — which has happened, five items in one commit —
-and makes the read one section instead of a search.
+rewrite elsewhere, and makes the read one section instead of a
+search. *By 2026-09-25 a rewrite had swept five items in one
+commit.*
 
 Nothing is written into the copy but the edit. No dated line, no
 comment saying what changed — a file says how to use it, never its
@@ -469,10 +472,12 @@ options. This page says only what each item must end as, and
 where; how the list is worked is
 `.claude/rules/working-a-reading.md`'s, practice under it.
 
-*Learned by 2026-09-17: a reading asks what the run teaches the
-worked example, `references/worked-example.md` in cbc-framing and
-cbc-slice. It ships like everything else, and it sat untouched
-through three runs because no reading asked. Moved here on
+A reading also asks what the run teaches the worked example,
+`references/worked-example.md` in cbc-framing and cbc-slice.
+
+*Learned by 2026-09-17: the worked example ships like everything
+else, and it sat untouched through three runs because no reading
+asked. Moved here on
 2026-09-30 from `delivery/README.md`, where it had no rule beside
 it.*
 
