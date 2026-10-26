@@ -44,8 +44,8 @@ reader must get. The unit is the thing being shown.
 The general method, plus the one failure mode only a picture has: a
 notation that asserts something you did not mean. A table can be
 unhelpful; a diagram can be *wrong* in a way the reader will
-believe, because a drawing makes a claim by its shape before anyone
-reads a label.
+believe, because a drawing makes a claim by how it is drawn before
+anyone reads a label.
 
 Its name is the question, not a candidate: *how is this shown*,
 and "not a picture" is one of its answers. A name that named a
@@ -106,8 +106,7 @@ method up then.
   convention: it is decided while building, and corrected at a
   boundary, `docs/conventions/commit-plan/`.
 - **Whether a picture may carry a fact the prose does not** — the
-  manual that holds the picture decides;
-  `docs/conventions/shapes/` §4.3 states its own rule for itself.
+  manual that holds the picture decides.
 
 ## Where to look
 
