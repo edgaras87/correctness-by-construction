@@ -96,6 +96,19 @@ every old number at once, the text unwrapped.
 `refinement.md`: their pointers. The rule's comment and items 5 to
 7 checked against §2's new parts. Agent files, next after 5.
 
+**6b. `docs: the manual's form parts hold the rule's`**
+Commit 6's foundation check found `convention-manual.md` holding
+rules its manual does not: an adopted need's origin (item 2),
+"nothing shipped" and the closing sentence (item 3), the
+neighbour in bold (item 8). §2.2, §2.3 and §2.8 take them. §2's
+opening takes what the form does not fix, from the rule's section
+of that name. The rule's wording is right; only the manual changes.
+
+**6c. `chore(agent): the manual form rule drops its why`**
+`convention-manual.md`'s "The list is the floor" says why the list
+grows as it does, which the manual's §2 already says. A rule's why
+is its manual's (§1.1). The clause goes. Agent file, next after 6b.
+
 **7. `docs: give the foundation line one home`**
 FINDING-141. §1.3 says which files carry the line and what each
 holds. Facts-in-sync §4 step 2 keeps what the line is for, the
@@ -134,7 +147,11 @@ model.
 The records commit. ADR-0066 Accepted. The refinement's file:
 FINDING-135 to 143 and 180 name their commits. TODO: the §1-move
 item goes; its `requires` idea moves to "Decide which way a fact
-reference may point".
+reference may point", with conventions §3's pointer at
+`approach-evaluation.md` as its evidence of a manual pointing down.
+"Decide what "rule" names" gains its first
+case: `convention-manual.md` reads as a manual, not as the rule for
+a manual's form.
 
 **13. `docs(agent): close commit plan for layer 1's work`**
 Deletes this file; the body says what diverged.
