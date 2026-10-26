@@ -79,14 +79,16 @@ the work: a shape can say a guarantee needs an example with real
 numbers, and cannot say which numbers, or whether the guarantee is
 any good.
 
-*Found twice on 2026-09-26. A shape says what an output looks like
-while it exists; when the output opens, extends and closes is the
-owning convention's, and a shape that restates it is a copy of that
-convention, and a copy that repeats is what drifts. The reading's
+A shape says what an output looks like while it exists. When the
+output opens, extends and closes is the owning convention's. A shape
+that restates it is a copy of that convention, and a copy that
+repeats is what drifts.
+
+*Found twice on 2026-09-26. The reading's
 shape here restated the reading's lifecycle in its first section and
 lost the sentences rather than gaining a clause; run 3's
 `slice-record.md` opens with a section on how it is used that says
-the same thing from its side. The rule now says it in one sentence.*
+the same thing from its side.*
 
 ### 1.2 How one is born
 
@@ -105,13 +107,15 @@ for where they differ and for what they could all do better. A
 difference ends as one form for all, a variant the shape names, or a
 better form none had. A weakness every example shares never shows
 by comparing them; it shows only when they are read against what
-went wrong. The shape is then tried on the examples it came from.
+went wrong. The shape is then tried on the examples it came from. A
+shape catches a part missing, not a part that lost half its meaning
+(ADR-0052).
+
 *Run 3, 2026-10-13: none of the twenty kills in its definition had a
 worked example with numbers, so a kill shape copied from them would
 never have asked for one. Tried on the definition before a fix, the
 shape found the two kills that had lost their whole death, and not
-the two that had kept a weaker one: a shape catches a part missing,
-not a part that lost half its meaning (ADR-0052).*
+the two that had kept a weaker one.*
 
 ## 2. What a shape is not
 
@@ -213,10 +217,12 @@ Where a shape sits at the deliverer, and how it reaches a run. Every
 arrow that crosses is a delivery, staged by the reviewer or by the
 agent when told.
 
-*This page's pictures illustrate its prose and never carry a fact
-alone. Measured 2026-09-27 and found false: five claims lived only
-in a chart. The prose grew to cover them; read where Mermaid does not
-render, this page loses the pictures and no facts.*
+This page's pictures illustrate its prose and never carry a fact
+alone: read where Mermaid does not render, the page loses the
+pictures and no facts.
+
+*Measured 2026-09-27 and found false: five claims lived only in a
+chart. The prose grew to cover them.*
 
 ```mermaid
 flowchart LR
