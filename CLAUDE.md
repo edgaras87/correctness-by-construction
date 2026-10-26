@@ -1,8 +1,10 @@
 # correctness-by-construction
 
-A concept repo (concepts tier, see docs/models/tiers.md): the
-plain-words statement of one concept and the executions derived from
-it. Documents only — no code, no runs.
+A concept repo (concepts tier, see docs/models/tiers.md): one
+concept in plain words, and what is made from it. It is the
+deliverer: each run, a separate repository that builds a real
+system by the concept, is born from what this repo ships and is
+read back from here. Documents only — no code, no runs.
 
 ## Records
 
