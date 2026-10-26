@@ -41,7 +41,9 @@ Why shaped this way: ADR-000N.
 
 ## Codemap
 
-<!-- Where to find things. Directory → what lives there. -->
+<!-- Where to find things. Directory → what lives there. An area
+     whose directory README says how its parts relate is pointed at
+     here, not retold. -->
 | Path | What lives there |
 |---|---|
 | `src/...` | |
