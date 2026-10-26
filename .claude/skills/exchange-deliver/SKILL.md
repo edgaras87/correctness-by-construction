@@ -65,8 +65,7 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
 
 7. **No ADR number, no path in this repo, no word of our own
    vocabulary.** The note is told text, and a citation the run cannot
-   follow reads as its own. A shipped file carries `CBC ADR-nnnn`
-   instead.
+   follow reads as its own.
 
 8. **A third repository gets both names**: ours, by ordinal, and the
    one it gave itself.
