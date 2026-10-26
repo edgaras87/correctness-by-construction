@@ -11,7 +11,7 @@ does it stand on* — instead of each session re-deriving the picture.
 
 This is a **model**: the top description of its chain. It binds
 what stands on it, and when the two disagree, either side may be
-the wrong one (§3).
+the wrong one (§3.3).
 
 ---
 
