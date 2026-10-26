@@ -82,10 +82,14 @@ this seat is.
 
 Looking and changing are kept apart on purpose. A retrospective that
 may fix what it finds starts fixing the first thing, and stops
-looking. Run 3's reviewer kept the two apart, and the look stayed
-clear. But run 3 would then have been released while its records
-still read in ways the retrospective had shown could be better. So
-a second step applies the lessons, before Release (run 3's D24).
+looking. But a look that changes nothing leaves a run released with
+records it has shown could read better. So a second step applies
+the lessons, before Release.
+
+*Lived in run 3, by 2026-10-15: its reviewer kept the two apart, and
+the look stayed clear. But run 3 would then have been released while
+its records still read in ways the retrospective had shown could be
+better, and its D24 added the second step.*
 
 Both come before Release, so they happen even when Release is
 skipped. That is the failure of a section filled at the project's
@@ -131,16 +135,18 @@ end.
   last.
 - **A fresh reader checks each rewrite** against the old text. The
   writer reads what they meant, not what is on the page.
+- **Tests are counted from this run's reports only.** A report
+  folder can keep files from earlier runs.
+- **A tool that edits text is checked on what it must not touch,**
+  not only on what it changed.
 
 *Measured in run 3, 2026-10-12 to 10-15: 27 triage rows, 11
 applied, 14 partly, 2 next run only. Three new decisions came up in
 the triage, not the retrospective. A fresh reader caught a rewrite
 of README that had dropped "and only" from "first and only". A
 first count of the tests said 195 where the run had 100: the report
-folder kept old files, so tests are counted from this run's reports
-only. Sixteen commit subjects over 50 characters were found only at
-the close. A rewrap joined a heading to its paragraph, so a tool
-that edits text is checked on what it must not touch.*
+folder kept old files. Sixteen commit subjects over 50 characters were found only at
+the close. A rewrap joined a heading to its paragraph.*
 
 ## 4. `RETRO.md`
 
