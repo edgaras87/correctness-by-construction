@@ -1173,6 +1173,58 @@ not one-home thing too? or is it? should it be?"
   header the approach, not a description: facts-in-sync §4's list
   would be the side that is wrong. The item decides.
 
+### 2026-10-26
+
+#### What the reviewer asked
+
+While the records map's plan rewrote `CLAUDE.md`'s opening, whose
+words the README shared: shouldn't it say more, that this repo is
+the deliverer and the stub a run is born into, its domain this
+concept? Then: was this the time, or a TODO item, since the
+CHANGELOG and the README would have to change too? Should this repo
+keep a directory of stubs for its own seat, and how is a stub
+maintained? And would the extras hold on maintenance, readability,
+future-proofing and complexity?
+
+#### What exists today
+
+- `CLAUDE.md` (since `0a40aea`): one concept in plain words, and
+  what is made from it; the deliverer, each run born from what this
+  repo ships and read back from here.
+- `README.md`: the concept's one canonical home, holding the
+  container a run is born into, the concepts tier.
+- The CHANGELOG's header: the concept's log, for those who pin a
+  version; "Decide what our CHANGELOG tracks" holds that.
+- `docs/models/tiers.md`: this repo as the concepts tier.
+- Our records are derived from the manuals, not from stubs
+  (ADR-0042); the run's stubs are masters under
+  `delivery/container/`, kept by the exchange.
+
+#### Points made
+
+- The shared phrase was FINDING-145's, due now. The deliverer
+  sentence states what is true today, and agrees with the README
+  and *The words*; it stays.
+- Making the four texts say the same thing is a decision of its
+  own, layer 4's, where the README and the CHANGELOG are worked.
+  This item took it as an Idea.
+- A stub directory for our seat is "Filter a maintainer's
+  container out of this repo, when one is needed", waiting for a
+  second maintainer repo. Drift between our forms and the stubs is
+  "Decide whether each seat's copy is written for its seat".
+- The four questions:
+  - the deliverer sentence: maintenance, a third telling of a fact
+    in its own words; readability, the agent gets the frame of most
+    tasks; future-proofing, one line changes if delivery moves out;
+    complexity, none. It holds.
+  - a stub directory now: maintenance, a third copy of every form;
+    readability, nothing to read until a second repo; future-
+    proofing, built for a repo that does not exist; complexity, a
+    folder and its upkeep. It does not hold yet.
+- Met, not fixed: the run's seat shares text too. The container's
+  entry file and the README stub both say "derived from one
+  falsifiable promise"; round 2's close read reads it.
+
 ## 18. The story behind a lesson
 
 Item: "Decide whether a manual keeps the story behind a lesson".
