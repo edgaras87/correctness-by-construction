@@ -172,7 +172,7 @@ The form grows from what manuals already hold. The list is the
 floor, and content that fits none of it takes its own heading in
 the body. A section two manuals need becomes the next candidate:
 a pair recurred, the test a shape is written by
-(`docs/conventions/shapes/` §1). The list grows no other way.
+(`docs/conventions/shapes/` §1.2). The list grows no other way.
 
 *Found 2026-09-28, when the form was first written:
 `docs/conventions/exchange/` and `docs/conventions/shapes/` had

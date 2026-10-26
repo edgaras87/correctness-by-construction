@@ -454,7 +454,7 @@
 - [ ] Decide whether our own forms become shapes, and whether a
       shape's part can be optional (2026-10-17, the reviewer).
       Context: a shape is read at a step's gate only, so the work
-      is not shaped by it (`docs/conventions/shapes/` §1). Our own
+      is not shaped by it (`docs/conventions/shapes/` §3). Our own
       forms, a reading's and a manual's, are rules that load when
       such a file is read. They kept that place because this repo
       had no steps; since ADR-0057 it has.
@@ -652,7 +652,7 @@
       - one home: facts, their home, fact references, and how a
         disagreement between linked texts is settled.
       - the deliverer and the run, with seats.
-      - a shape, whose `docs/conventions/shapes/` §1 and §2 say what
+      - a shape, whose `docs/conventions/shapes/` §1.1 and §2 say what
         one is.
       - records: what a record is, a form and its entries; what a
         set of records answers; how each seat adapts it, as the
@@ -945,7 +945,7 @@
       the reviewer)
       Context: `docs/conventions/project-recording/` §9 describes
       it, and one playbook exists, the CbC run's. It is not a
-      shape: `docs/conventions/shapes/` §1–2 say a shape is form,
+      shape: `docs/conventions/shapes/` §1.1 and §2 say a shape is form,
       never content, and a filled-in template is not one; a
       playbook is content, copied and filled at birth.
       Ideas: a convention of its own, split from

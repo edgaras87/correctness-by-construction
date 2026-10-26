@@ -66,6 +66,8 @@ shapes when a line under its *To the deliverer* offers them
 
 ## 1. What a shape is
 
+### 1.1 What it says
+
 A **shape** says what a kind of output looks like: its form, never
 its content. *Project*, below, is the master's word: whichever
 repository makes the output — a run, or the deliverer.
@@ -86,6 +88,8 @@ lost the sentences rather than gaining a clause; run 3's
 `slice-record.md` opens with a section on how it is used that says
 the same thing from its side. The rule now says it in one sentence.*
 
+### 1.2 How one is born
+
 A shape is written from work that exists. Two ways one is born, and
 neither ranks above the other: **it recurred**, so a pair is the
 evidence and what they share is the shape; or **it was judged worth
@@ -94,7 +98,9 @@ decided that should hold beyond here. What is ruled out is a shape
 designed in advance from an idea of how work should go — everything
 measured against it afterwards would be measuring the guess.
 
-**Before a shape is written, its examples are read side by side**,
+### 1.3 Before one is written
+
+A shape's examples are read side by side,
 for where they differ and for what they could all do better. A
 difference ends as one form for all, a variant the shape names, or a
 better form none had. A weakness every example shares never shows
@@ -285,7 +291,7 @@ one of four ways, decided per difference and never by a policy of
 preferring one side: **the output drifted**, so it is brought to the
 shape; **the shape was wrong here**, so it changes and the output
 stands; **each had something**, and both move; or **the output is a
-different kind**, so both stand and a new shape starts from it (§1).
+different kind**, so both stand and a new shape starts from it (§1.2).
 Any change is shown before it is made.
 
 Outputs closed before a change are not reopened — each looks like
@@ -306,7 +312,7 @@ agent while work is written, by design — nothing loads
 
 - **When an output opens, extends and closes** — the convention
   that owns the output; a shape that restates it is a copy of that
-  convention (§1).
+  convention (§1.1).
 - **How a rule loads** — `docs/conventions/agent-arrangement/` §3.2.
 - **What passes between repositories, and how** —
   `docs/conventions/exchange/`.
