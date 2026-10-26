@@ -91,8 +91,8 @@ themselves, what one is and how it is made.
 None of it is CbC. The concept is about how a system is built; the
 conventions are about how a repo is kept.
 
-- **What a convention is, its two parts, and that a manual never
-  ships** — `docs/conventions/conventions/` §1.
+- **What a convention is, and its two parts** —
+  `docs/models/idea-to-output.md` §6.
 - **How they hand work to each other** —
   `docs/conventions/README.md`, the index, a local map.
 
@@ -308,7 +308,7 @@ review, and each entry names which.
   concept — `docs/conventions/exchange/` §1 and §3.2; held by a
   procedure, `exchange-deliver`, which stages only from these
   masters.
-- **A manual never ships** — `docs/conventions/conventions/` §1;
+- **A manual never ships** — `docs/conventions/exchange/` §3.2;
   held by the shape of the tree: the manuals sit under `docs/`, and
   a delivery stages only from `delivery/` and `concept/`.
 - **A manual never outlives the rule it explains**: a rule changed

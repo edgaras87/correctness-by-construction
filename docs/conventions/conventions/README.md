@@ -1,3 +1,7 @@
+---
+foundation: the idea-to-output model
+---
+
 # Conventions
 
 **How a way of working is written down once, in a manual, and made
@@ -37,41 +41,20 @@ A run holds artifacts and writes no manuals. The deliverer writes
 the manuals and holds the master of every artifact. This page is
 written from the deliverer's seat.
 
-## 1. What a convention is
-
-Each one is two things, kept apart — and from everywhere else,
-only pointers (`docs/conventions/facts-in-sync/` §2):
-
-- **A manual**, `docs/conventions/<name>/README.md`. What this is,
-  how it works, why, with pointers to the decisions. Written for a
-  person and for the maintainer. Never shipped, never loaded into an
-  agent by default.
-- **Its artifacts**: what a project actually holds — a run, or this
-  repo, which keeps its own under `.claude/`. A skill file for
-  a rule bound to a moment; a rule file for a rule bound to a path,
-  or, with no path, to every task;
-  stubs and templates for rules that ride in the files a project is
-  born with. The rules live there, one sentence each. The artifacts
-  are real files in the container, `delivery/container/`.
-
-Which copy of an artifact is the master, and how every other copy
-changes, is the exchange's, `docs/conventions/exchange/` §1 and §4.
-The deliverer's own skills and rules are not copies: it writes its
-own (`docs/conventions/agent-arrangement/` §3.1).
-
-**What a convention asserts**, and what falsifies it
-(ADR-0031): that this is a rule and not a method — *the work may
-ignore this, with a reason it can give*. That freedom is the
-worker's, in one case, with the reason where that repo's records
-live; an artifact derived from the manual says what the manual
-says, and a pointer says nothing of its own (`docs/conventions/facts-in-sync/`
-§2). A run that
-ignores a convention, gives no reason and comes to no harm has
-found one nobody owes anything to, which is a method filed in the
-wrong place. The manual is where that is recorded when it happens;
-none has failed the test yet.
-
 ## 2. The artifact
+
+What a convention is, a manual and its artifacts, is
+`docs/models/idea-to-output.md` §6. Here, a convention's artifacts
+are what a project holds: a run, or this repo, which keeps its own
+under `.claude/`. A skill file for a rule bound to a moment; a rule
+file for a rule bound to a path, or, with no path, to every task;
+stubs and templates for rules that ride in the files a project is
+born with. The masters are real files in the container,
+`delivery/container/`. Which copy of an artifact is the master, and
+how every other copy changes, is the exchange's,
+`docs/conventions/exchange/` §1 and §4. The deliverer's own skills
+and rules are not copies: it writes its own
+(`docs/conventions/agent-arrangement/` §3.1).
 
 The reader is an agent in a project, holding a pinned copy and
 opening it at the moment of use.
@@ -140,6 +123,13 @@ PLAN's Step 1, and run 3 asked for a word of their own;
 since 2026-10-17, as the other skills did.*
 
 ## 3. The manual
+
+A convention's manual is `docs/conventions/<name>/README.md`,
+written for a person and for the maintainer. It never ships
+(`docs/conventions/exchange/` §3.2) and is never loaded into an
+agent by default. When a run ignores a convention with no reason
+and comes to no harm (`docs/models/idea-to-output.md` §6.2), its
+manual records it. None has yet.
 
 The manual is free prose: the convention stated, from which the
 artifact is made usable (`ARCHITECTURE.md` §1). It explains and

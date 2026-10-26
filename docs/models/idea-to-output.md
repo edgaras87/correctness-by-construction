@@ -119,7 +119,35 @@ Both sit at the top of a chain. They differ in where things vary:
 No model sits above correctness by construction. What a concept is
 waits for a second concept repo.
 
-## 6. One chain here
+## 6. A convention
+
+### 6.1 Two texts
+
+A convention is a way of working written down once, as two texts
+kept apart:
+
+- **its manual,** a description: what the way of working is, how
+  it works and why, with the decisions behind it. Written for a
+  person, and for whoever keeps the convention.
+- **its artifacts,** the approaches made from the manual: the
+  skills, rules and forms a project acts on. They state the rules,
+  one sentence each, and explain nothing.
+
+A project holds the artifacts. The manual stays with whoever keeps
+the convention.
+
+### 6.2 What a convention asserts
+
+That its rules are rules, not a method the work must follow: the
+work may ignore one, with a reason it can give. That freedom is the
+worker's, in one case, and the reason is written where that
+project's records live.
+
+What falsifies it: a project ignores a convention, gives no reason,
+and comes to no harm. That convention is one nobody owes anything
+to: a method filed in the wrong place.
+
+## 7. One chain here
 
 Each file names what it stands on, so the chains are not listed
 here. The agent's is the worked example. The agent model stands
@@ -128,7 +156,7 @@ and the decisions log's header; their content is the output. Each
 manual's *Why it arrives this way* points at the part of the agent
 model it reasons from.
 
-## 7. What it does not answer
+## 8. What it does not answer
 
 - **Which repo a text belongs to** — `docs/models/tiers.md`.
 - **How a text reaches an agent** — `docs/models/agent.md`.
