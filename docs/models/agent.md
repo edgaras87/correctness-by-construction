@@ -273,7 +273,7 @@ where it was seen: the handbook's history, this repo's, or a run's.
 Evidence from outside is listed under its claim too, marked
 `measured` for a controlled study with numbers, `reported` for a
 first-hand or bug report. It leaves the status alone: a claim is
-evidenced only when it was seen in this work. Added 2026-10-24.
+evidenced only when it was seen in this work.
 
 ### 12.1 On ambient
 
