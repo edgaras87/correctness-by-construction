@@ -84,10 +84,12 @@ makes a neglected plan lie. Git history is the status.
 
 ### 2.4 Material-first is a first-class mode, not a failure
 
-The CbC seed's third run found four shapes in staged material that no
-conversation could have settled first, which made the
-provisional tail, the revision commit and the Proposed-then-
-Accepted ADR the normal road for it (ADR-0038, 1e).
+Some decisions show only in the material: no conversation can
+settle them before the work is touched. For them, the provisional
+tail, the revision commit and the Proposed-then-Accepted ADR are the
+normal road, not a sign the plan failed (ADR-0038, 1e). *Lived in
+the CbC seed's third run, before 2026-09-27: it found four shapes in
+staged material that no conversation could have settled first.*
 
 ### 2.5 The records commits are planned
 
@@ -97,9 +99,10 @@ commit list is what catches it (ADR-0038, 1d).
 
 ### 2.6 A plan counts commits
 
-"Step" is `PLAN.md`'s word; a plan that called its commits steps gave one word two meanings, and a
-session inside PLAN's Step 10 worked plan steps 1 to 13
-(ADR-0049, 1).
+"Step" is `PLAN.md`'s word; a plan that called its commits steps
+would give one word two meanings (ADR-0049, 1). *On 2026-10-08 a
+session sat inside PLAN's Step 10 while working commit plan steps 1
+to 13.*
 
 ### 2.7 An inserted commit takes a letter; a commit may repeat
 
