@@ -162,11 +162,8 @@ for all of them, and this is where it is stated:
    list to the grep in step 3: repos it never sees stand on it too.
 2. Each derived thing names its description, once: one
    `foundation` per file, its root, what the whole of it stands on.
-   A skill, a rule, a shape, or a manual standing on a model
-   carries it in its frontmatter. A record whose header holds its
-   form, such as `PLAN.md`'s step form or `TODO.md`'s item shape,
-   carries a `foundation:` line in that header's comment. Both
-   seats, the run's stubs included. Every line that uses a part of
+   Which files carry it, where, and what each holds is
+   `docs/conventions/conventions/` §1.3. Every line that uses a part of
    a document, its root included, carries a fact reference to that
    part (§3). The root says which document to open when the file
    changes; a fact reference says which line to re-read when the

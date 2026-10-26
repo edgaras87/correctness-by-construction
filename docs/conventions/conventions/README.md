@@ -101,21 +101,35 @@ foundation: the <name> convention
 
 `foundation` says what the whole file stands on *now* — a live
 claim, never history — and a file has one
-(`docs/conventions/facts-in-sync/` §4, step 2). Every skill and
-rule carries one, shipped or this repo's own, and so does every
-shipped shape, in frontmatter of its own: for the method, the
-concept and its version, `concept v1`; for the stack practice, the
-concept it was checked against, `practice, checked against concept
-v1`; for a convention's artifact, the convention by name, `the
-exchange convention`; for a shape, the convention it lives under,
-`practice, under the shapes convention`; for a record's form, the
-convention it comes from, `the project-recording convention`
-(`docs/conventions/facts-in-sync/` §4, step 2); for a manual whose
-idea a model states, in frontmatter of its own, the model by name,
-`the agent model`. The value carries the relation where it is not
-derivation. Concept chapters and models carry none; they are the
-top. That the line travels with a copy is
-`docs/conventions/exchange/` §3.5.
+(`docs/conventions/facts-in-sync/` §4, step 2).
+
+Which files carry it, and where:
+
+- every skill and rule, shipped or this repo's own, in its
+  frontmatter;
+- every shipped shape, in frontmatter of its own;
+- a manual whose idea a model states, in frontmatter of its own;
+- a record whose header holds its form, such as `PLAN.md`'s step
+  form or `TODO.md`'s item shape, as a `foundation:` line in that
+  header's comment. Both seats, the run's stubs included.
+
+What it holds:
+
+- for the method, the concept and its version, `concept v1`;
+- for the stack practice, the concept it was checked against,
+  `practice, checked against concept v1`;
+- for a convention's artifact, the convention by name, `the
+  exchange convention`;
+- for a shape, the convention it lives under, `practice, under the
+  shapes convention`;
+- for a record's form, the convention it comes from, `the
+  project-recording convention`;
+- for a manual, the model that states its idea, by name, `the agent
+  model`.
+
+The value carries the relation where it is not derivation. Concept
+chapters and models carry none; they are the top. That the line
+travels with a copy is `docs/conventions/exchange/` §3.5.
 
 ### 1.4 Stages
 
