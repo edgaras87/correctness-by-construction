@@ -122,7 +122,7 @@ boundary, and one revision's own subject landed long uncounted.*
 
 ### 2.9 The agent's files are a commit of their own
 
-commit-messages keeps a commit that touches them apart from everything else, so
+`docs/conventions/commit-messages/` §2 keeps a commit that touches them apart from everything else, so
 a records commit planned to carry a skill's correction has to be
 split when it opens. *The same plan put two changes under
 `.claude/` inside its records step, and split it by revision.*
@@ -147,7 +147,7 @@ ways meant reworking a commit in place. Small commits give the
 room, and are folded into the planned commit before its boundary,
 so the reviewer still sees one commit there. The grant is the
 reviewer's because a small commit is still a commit, and the stop
-is `docs/conventions/commit-messages/`' rule (below); without the
+is `docs/conventions/commit-messages/` §2's rule (below); without the
 grant, every commit is a boundary. Each small commit is counted
 when it is written, as a planned subject is. *Run 3's Step 10,
 2026-10-13 to 15, under its reviewer's grant: about 180 small
@@ -163,7 +163,7 @@ one change, or one two, and are regrouped on the reviewer's word.
 
 ### 2.13 The stop at every boundary is commit-messages' rule
 
-It is `docs/conventions/commit-messages/`'s; this convention points at
+It is `docs/conventions/commit-messages/` §2's; this convention points at
 it. *Until 2026-09-08 the sentence was stated here, in §6, a file
 that opens only for multi-commit work, and the reviewer's pace
 had to be said every session; it moved to where every commit
@@ -176,7 +176,7 @@ out to need several commits — and nothing in a record would put the
 plan in front of it then (`docs/models/agent.md` §4.2). The one rule
 that must fire at every commit, the stop, is not here: a skill that
 opens only for multi-commit work cannot carry it, and it moved to
-`docs/conventions/commit-messages/` for that reason (§2.13).
+`docs/conventions/commit-messages/` §2 for that reason (§2.13).
 
 ## What this does not cover
 

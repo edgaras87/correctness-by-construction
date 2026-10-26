@@ -135,7 +135,7 @@
       - or that section splits in two: the approaches, and what
         reaches the agent's setup.
       - `CLAUDE.local.md` repeats two rules: commit on the word
-        (`commit-messages`) and a stop at each boundary
+        (`docs/conventions/commit-messages/` §2) and a stop at each boundary
         (`commit-plan`). Yet `docs/conventions/agent-arrangement/`
         §3.7 counts how often the agent stops as a setting. Round
         2's FINDING-194 found it again.
