@@ -530,7 +530,7 @@ The deliverer's two skills open on the reviewer's word, "read" or
 must notice. The reading's form loads by path when a reading is
 read, so it is in view while the list is worked; a reading written
 new is written without it (`docs/conventions/agent-arrangement/`
-§3.2).
+§5.6).
 
 ## What this does not cover
 

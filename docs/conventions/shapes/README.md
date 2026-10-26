@@ -313,7 +313,7 @@ agent while work is written, by design — nothing loads
 - **When an output opens, extends and closes** — the convention
   that owns the output; a shape that restates it is a copy of that
   convention (§1.1).
-- **How a rule loads** — `docs/conventions/agent-arrangement/` §3.2.
+- **How a rule loads** — `docs/conventions/agent-arrangement/` §5.6.
 - **What passes between repositories, and how** —
   `docs/conventions/exchange/`.
 - **The gate items that make a project meet a shape at a step's

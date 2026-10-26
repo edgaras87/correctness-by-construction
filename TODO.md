@@ -528,8 +528,9 @@
       - a rule derived from `docs/conventions/conventions/` §1, as
         `convention-manual.md` is from §2, on `.claude/skills/`,
         `.claude/rules/` and `delivery/`.
-      - a `paths:` rule loads only on a Read; the commit is the
-        other moment (`.claude/decisions.md`, 2026-10-17).
+      - a `paths:` rule loads only when a file is touched, and the
+        commit is the other moment
+        (`docs/conventions/agent-arrangement/` §5.6).
       - `approach-evaluation`'s placing hands each piece to the
         rule, for an approach of ours and of a run's alike.
       Trigger: the first evaluation that places a piece as a skill

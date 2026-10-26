@@ -114,7 +114,8 @@ answer and every record written, and nothing else fires at all of
 them (`docs/models/agent.md` §8):
 
 - **A `paths:` list** loads when a file is touched, after a new
-  one's first draft is written, and chat has no path. Run 3's first
+  one's first draft is written, and chat has no path
+  (`docs/conventions/agent-arrangement/` §5.6). Run 3's first
   draft loaded on Markdown files, and was dropped for this.
 - **A skill** fires when the agent notices the moment. The failure
   here is not noticing: the agent writes in the voice it last read.
@@ -135,7 +136,7 @@ one page.
 - **What a kind of output looks like** —
   `docs/conventions/shapes/`.
 - **How a rule reaches an agent** —
-  `docs/conventions/agent-arrangement/` §3.2.
+  `docs/conventions/agent-arrangement/` §5.6.
 
 ## Where to look
 

@@ -316,7 +316,7 @@ conventions took neither — a rule kept where nobody reads it
 The manual reaches no agent: a maintainer reads it. The form of a
 manual is a rule, loading when a manual is read, so it is in view
 while one is worked; a manual written new is written without it
-(`docs/conventions/agent-arrangement/` §3.2). The
+(`docs/conventions/agent-arrangement/` §5.6). The
 `foundation` line rides in the frontmatter of every shipped skill
 and rule, read by whoever opens the file, because a claim about
 what a file stands on has to travel with the file.
