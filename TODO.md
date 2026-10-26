@@ -461,6 +461,10 @@
       - `cbc-framing` writes a status line into the README, where
         the README's form, its header comment, keeps changing status
         in PLAN: how that line lived in run 4.
+      - whether run 4 confirmed its plan's steps once framed, as
+        `docs/conventions/project-recording/` §9.4 says a run does,
+        though no skill or step asks it: if not, whether the playbook's
+        Framing step should.
       Trigger: the refinement of this repo closes; in a new session.
       See: `f097695`, the kickoff and the message it took;
       `TODO-CONVERSATION-MEMORY.md` §5.
