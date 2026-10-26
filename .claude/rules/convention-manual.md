@@ -52,7 +52,7 @@ frontmatter naming it, `foundation: the agent model`
    labelled parts numbers them, `### N.M`, and so does every
    section of the same form in the manual; emphasis in prose is
    not a part
-   (`docs/conventions/facts-in-sync/` §3). Each numbered section
+   (`docs/conventions/facts-in-sync/` §3.2). Each numbered section
    holds one subject, and a subject has one section; other
    sections point at it (`docs/conventions/conventions/` §2.5).
 6. **Lessons as dated italics**, where they happened: *what was

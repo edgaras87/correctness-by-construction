@@ -2,7 +2,7 @@
 foundation: the facts-in-sync convention
 ---
 
-<!-- Makes docs/conventions/facts-in-sync/ §4 and §5, and §3's
+<!-- Makes docs/conventions/facts-in-sync/ §4 and §5, and §3.3's
      grep for a moved section, fire at the commit, where they waited
      to be remembered. Loaded in every session, with no paths: a
      paths rule loads only when a file is touched with the agent's
@@ -59,7 +59,7 @@ or moves a section. Which side is right, never how either reads.
 When the commit renames a file or renumbers a section, in any
 file, grep all living text for each old path and number, and fix
 what points at them in this commit
-(`docs/conventions/facts-in-sync/` §3).
+(`docs/conventions/facts-in-sync/` §3.3).
 
 ## What this does not cover
 

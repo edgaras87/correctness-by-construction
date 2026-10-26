@@ -27,7 +27,7 @@ rules, comments and config. Where it lives, never how it reads.
    reads it in the owner's place. `ARCHITECTURE.md` §1.2 does this:
    a phrase for each convention, and the manual for the rest.
 4. **Change a fact at its home.** The links don't change, unless
-   the home itself moves (`docs/conventions/facts-in-sync/` §3).
+   the home itself moves (`docs/conventions/facts-in-sync/` §3.3).
    Each retelling whose fact reference names it is re-read, with its
    paragraph (`docs/conventions/facts-in-sync/` §4).
 5. **Make every copy a follower:** one is the owner, the other
