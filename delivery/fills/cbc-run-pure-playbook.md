@@ -2,7 +2,10 @@
      down replaces the steps in a newborn's PLAN.md; this comment
      and the version line stay here. Checked against concept v1
      (ADR-0003, ADR-0005). Harvest lands here, the one copy
-     (ADR-0007). Its history — the parent it replaced (ADR-0016),
+     (ADR-0007): each lesson as a changed gate, a new step, or a line
+     under a step's Known already, Framing's and Release's in this
+     playbook's own copies of those steps; each fold bumps the
+     version line. Its history — the parent it replaced (ADR-0016),
      the runs its steps were harvested from (ADR-0009, ADR-0011),
      and each version's change and reason — is in the devlog and in
      this file's git log. -->
