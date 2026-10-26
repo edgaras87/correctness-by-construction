@@ -1,7 +1,7 @@
 # Plan: <project name>
 
-<!-- The stub ships the pure shape: the steps below are placeholders
-     showing the form — a goal, a gate of verifiable facts. At birth
+<!-- The stub ships the pure form: the steps below are placeholders
+     showing it — a goal, a gate of verifiable facts. At birth
      the seed replaces the region between the STEPS markers with a
      playbook's full sequence — a concept's; the playbook itself
      stays where it came from. Born without one, fill the
