@@ -29,8 +29,9 @@ read back from here. Documents only — no code, no runs.
 | Agent setup changed | Decision, why, rejected options | .claude/decisions.md |
 | Work needs more than one commit | In-flight change set | COMMIT-PLAN.md (when present) |
 
-<!-- This file is loaded in full on every task, relevant or not, so
-     every line below passes three tests or leaves
+<!-- This file is loaded in full on every task, relevant or not
+     (`docs/conventions/agent-arrangement/` §2.6), so every line
+     below passes three tests or leaves
      (`docs/conventions/agent-arrangement/` §2.4):
      1. True of this project and nowhere else — else it is a
         convention, stated once, there.
