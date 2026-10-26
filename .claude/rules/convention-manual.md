@@ -80,6 +80,5 @@ the nine where they expect them is this file's.
 Content that fits none of the nine gets its own heading in the
 body, and the writer looks for such content rather than forcing it
 into a section it does not belong to. A section two manuals grow
-without this file asking for it is a candidate for the list — that
-is how the list's sections were born (`docs/conventions/shapes/` §1: a
-pair recurred) and the only way the list grows.
+without this file asking for it is a candidate for the list. The
+list grows no other way.
