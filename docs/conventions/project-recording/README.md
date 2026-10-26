@@ -612,28 +612,29 @@ with a note of which project last updated it.
 
 The full sequence, first step to last. The plan's stub prescribes no
 step; a playbook prescribes them all. Each step keeps the plan's
-form — a goal, a gate of verifiable facts — and what past runs
-taught it, as its *Known already*: items its gate takes when the
-step opens. Its Release step carries the type's own release facts.
-The lifecycle:
+form, and what past runs taught it, as its *Known already*. Its
+Release step carries the type's own release facts. Its lifecycle
+has four acts, each with its how where its doer reads it:
 
-1. **Birth:** whoever births the project copies the chosen playbook
-   whole into PLAN.md; the plan's "Steps from" line records which
-   and at what version. Born without one, the stub's placeholders
-   are filled in place.
-2. **Once the problem is framed:** confirm the steps against it — fill
-   specifics, delete what this project has no use for, add what it
-   needs, renumber; author the steps if the project was born
-   without one.
-3. **Before Release:** the retrospective walks the run and writes
-   `RETRO.md`, each decision naming where its lesson lands
+1. **Birth:** the playbook's steps fill the plan, and its "Steps
+   from" line records which playbook, at what version. Born without
+   one, the stub's placeholders are filled in place. How is the
+   run's PLAN stub.
+2. **Once the problem is framed:** the run confirms the steps
+   against it, filling specifics, deleting what it has no use for,
+   adding what it needs, renumbering; born without a playbook, it
+   authors them. No skill or step asks this of a run yet: the TODO
+   item "Read run 4 against `dac4dd1`" asks whether run 4 did it.
+3. **Before Release:** the retrospective writes `RETRO.md`, each
+   decision naming where its lesson lands
    (`docs/conventions/retrospective/`).
-4. **Fold back:** each surviving lesson becomes a changed gate, a new
-   step, or a line under a step's *Known already* in the playbook
-   where it lives — the plan's
-   "Steps from" line names it; bump its version there. Framing
-   and Release lessons fold into the playbook's own copies of those
-   steps — they have a home now.
+4. **Fold back:** each surviving lesson lands in the playbook the
+   plan's "Steps from" line names. How is the playbook's own header
+   comment, `delivery/fills/cbc-run-pure-playbook.md`.
+
+The lessons fold into the playbook because it is what the next run
+starts from. Framing and Release have their own copies of those
+steps there, so their lessons have a home.
 
 ### 9.5 When
 
