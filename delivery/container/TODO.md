@@ -6,7 +6,7 @@
      Rule: an inline TODO:/FIXME: anywhere in the work must reference an
      item here.
      Open work only: a closed item goes, since the devlog, the ADRs
-     and git already say what closed. Every item takes one shape:
+     and git already say what closed. Every item takes one form:
 
      - [ ] <What to do or decide.> (<date>, <who raised it>)
            Context: <why it holds, true today — eight lines at most>.
@@ -18,7 +18,8 @@
      added, and See points at it; an item that is its story's only
      home keeps it and has no See. Ideas are noted as they come and
      weighed only when the item is due — each is then taken,
-     extended or declined. When an item changes, rewrite it true for
+     extended or declined, and the verdict goes with the work. When
+     an item changes, rewrite it true for
      today — never stack a dated update on it; the change's story is
      the devlog's.
      foundation: the project-recording convention -->
