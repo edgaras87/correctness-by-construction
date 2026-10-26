@@ -541,6 +541,10 @@ developer-speak ("refactored OrderService") instead of user-speak
 What this project is, who it's for, how to run it, and where
 everything else is.
 
+README is the front door for people; the entry file is the one for
+agents, `docs/conventions/agent-arrangement/` §2. Two audiences, two
+files, no shared text.
+
 ### 7.2 Why
 
 It's the entry point for every newcomer including future-you. Its
@@ -581,10 +585,6 @@ clean machine."
 
 Duplicating live status into it; setup instructions that only work
 on the author's machine.
-
-README is the front door for people; the entry file is the one for
-agents, `docs/conventions/agent-arrangement/` §2. Two audiences, two
-files, no shared text.
 
 ---
 
