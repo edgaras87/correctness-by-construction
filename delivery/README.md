@@ -29,7 +29,7 @@ into the run's `.claude/shapes/`; the rest is
 - **Pinned copies.** The container's convention skills, rules and
   approach on trial; the method's and the stack practice's skills,
   rules and shapes; and the concept, at `docs/concept/`
-  (`docs/conventions/exchange/` §3.2). They land where the container
+  (`docs/conventions/exchange/` §3.2 and §3.3). They land where the container
   claims nothing. The run may edit one in place, under the
   exchange's rule (`docs/conventions/exchange/` §5); a newer one
   arrives by copying anew at a new pin.
@@ -53,10 +53,11 @@ of them. CbC events are recorded under the container's record rules.
 
 | From here | Into the run |
 |---|---|
-| `concept/` | `docs/concept/`, read `00-cbc.md` first |
+| `concept/` | `docs/concept/`, read `docs/concept/00-cbc.md` first |
 
 Here the concept is the repo's subject, so it sits at the root. In a
-run it is a pinned reference beside the run's own work.
+run it is a pinned reference beside the run's own work
+(`docs/conventions/exchange/` §3.3).
 
 ## 4. What the container holds that its tree does not show
 

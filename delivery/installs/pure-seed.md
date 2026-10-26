@@ -93,6 +93,8 @@ git switch -c birth-seed
 git add -A
 git commit -m "chore: seed — records and conventions, pin @ $bundle_pin"
 
+# concept/ lands at docs/concept/, the mapping's one exception
+# (docs/conventions/exchange/ §3.3).
 mkdir -p docs/concept
 cp "$bundle_dir"/concept/*.md docs/concept/
 git add docs/concept
@@ -100,7 +102,8 @@ git commit -m "chore: seed — the concept, pin @ $bundle_pin"
 
 # The groups this run takes, on top of the container that step 2
 # copied. Each group is a piece of the run's tree, so copying it in
-# place is the whole of the mapping (ADR-0036). This run is
+# place is the whole of the mapping (docs/conventions/exchange/
+# §3.3). This run is
 # Spring and PostgreSQL; a run on another stack names method alone
 # and is born with two method skills, not five (ADR-0029).
 for g in method spring-postgres; do
