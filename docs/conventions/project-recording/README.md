@@ -360,58 +360,23 @@ only with an issue/TODO reference attached, otherwise they rot.
 
 ### 5.4 How
 
-```markdown
-# TODO
+How an item is written, and when it goes, is TODO's form: the
+header comment and the headings of `TODO.md`, the stub in a run and
+the deliverer's own. Why the form is as it is:
 
-## Now (this plan step)
-- [ ] Add CRUD tests for the Order entity (08-18, the plan).
-      Context: Step 2's gate names them; none exist yet.
-      Trigger: Step 2's close.
-
-## Next (upcoming steps — assign to a step when triaged)
-- [ ] Rate-limit the public endpoints (08-19, load test).
-      Context: one client held the pool for 40 s at 200 rps.
-      Trigger: Step 3 opens.
-      See: devlog 08-19.
-
-## Later / someday
-- [ ] Consider an admin dashboard (08-20, the owner).
-      Context: no committed step wants it; support reads the DB.
-      Ideas: a read-only view over the orders table first.
-      Trigger: a second support person.
-
-## Known issues (deferred deliberately)
-- Slow query on /orders list past 10k rows. Accepted for now: real data
-  won't hit that before Step 6. Revisit at Step 6 gate.
-```
-
-- Three-horizon structure (now / next / later) plus known-issues. "Now"
-  should mirror the current plan step's remaining work.
-- Each "Discovered along the way" item in PLAN.md gets triaged here:
-  assigned to a step, parked in later, or deleted.
-- Prune ruthlessly. A 200-item "later" list is a graveyard, not a plan;
-  deleting an idea you'd re-derive anyway if it mattered costs nothing.
-- Open work only. A closed item goes: what closed is the devlog's,
-  the ADRs' and git's to tell, and a closed entry kept here is a
-  second copy of it.
-- One shape per item: what to do or decide, with the date and who
-  raised it; a **Context** of at most eight lines, saying why it
-  holds today; **Ideas**, optional; a **Trigger**, the moment it is
-  due; and **See**, the devlog entry, ADR or commit that tells its
-  story. The context is there so triage reads an item without
-  opening its pointer; the story is not, because the devlog already
-  holds it.
-- Ideas are how the item might be handled, noted when they come, a
-  line each and none weighed. Weighing is the work's: when the item
-  is due, each idea is taken, extended or declined, and the verdict
-  is recorded with the work. An idea parked here is not lost to the
-  session that had it, and not mistaken for a decision.
-- The story is written where it happens, when the item is added.
-  That session's devlog entry says so then, not at the session's
-  end, so the item's See resolves at once and the reasons are
-  written while they are fresh. An item that is its story's only
-  home keeps the story and has no See.
-- An item that changes is rewritten true for today. A dated update
+- Prune ruthlessly. A 200-item "later" list is a graveyard, not a
+  plan; deleting an idea you'd re-derive anyway if it mattered
+  costs nothing.
+- Open work only: what closed is the devlog's, the ADRs' and git's
+  to tell, and a closed entry kept here is a second copy of it.
+- An item's Context is there so triage reads it without opening its
+  pointer. The story is not, because the devlog already holds it.
+- Ideas are noted, never weighed, until the item is due: an idea
+  parked here is not lost to the session that had it, and not
+  mistaken for a decision.
+- The story is written when the item is added, so its See resolves
+  at once and the reasons are written while they are fresh.
+- An item that changes is rewritten true for today: a dated update
   stacked on it is history, and history is the devlog's.
 
 *Found 2026-09-29: the deliverer's TODO kept closed entries whole

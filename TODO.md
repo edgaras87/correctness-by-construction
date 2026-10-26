@@ -7,7 +7,7 @@
      item here.
      Open work only: a closed item goes, since the devlog, the ADRs
      and git already say what closed. Known issues take the shape
-     their heading names. Every other item takes one shape:
+     their heading names. Every other item takes one form:
 
      - [ ] <What to do or decide.> (<date>, <who raised it>)
            Context: <why it holds, true today — eight lines at most>.
@@ -20,7 +20,7 @@
      added, and See points at it; an item that is its story's only
      home keeps it and has no See. Ideas are noted as they come and
      weighed only when the item is due — each is then taken,
-     extended or declined. The talk that shaped an item may sit in
+     extended or declined, and the verdict goes with the work. The talk that shaped an item may sit in
      TODO-CONVERSATION-MEMORY.md; when See names its section, it is
      read before the Ideas are weighed. When an item changes, rewrite
      it true for today — never stack a dated update on it; the
