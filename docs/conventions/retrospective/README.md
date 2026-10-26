@@ -44,9 +44,9 @@ checked back against this page.
 ### The run's seat
 
 Two people work it: the agent and the reviewer. The agent reads,
-measures, proposes and writes; the reviewer decides. The skills
-stop at each of the reviewer's decisions. In summary, and the skills
-are the source:
+measures, proposes and writes; the reviewer decides. The skills,
+which stand on this manual, stop at each of the reviewer's
+decisions. In summary of them:
 
 - **In the look back, the reviewer decides** whether small commits
   are free on the branch; each decision: agree, correct, or drop;
@@ -167,8 +167,7 @@ is placed decides whether it fires (`docs/models/agent.md` §12.2).
 A section in the plan did not work: its moment was the project's
 end, which a run that stops early never reaches, and a section can
 hold questions but not a way of working. Two skills, not one,
-because one step must change nothing in the run and the other
-exists to change its records.
+because the two steps are kept apart (§1).
 
 ## What this does not cover
 
