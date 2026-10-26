@@ -22,7 +22,7 @@ or moves a section. Which side is right, never how either reads.
      `.claude/rules/`, `.claude/` under `delivery/`, and a manual
      that names its model;
    - records whose header comment carries a `foundation:` line,
-     in either seat (`docs/conventions/facts-in-sync/` §4, step 2);
+     in either seat (`docs/conventions/conventions/` §1.3);
    - descriptions: `docs/models/`, `docs/conventions/*/README.md`,
      `concept/`, `ARCHITECTURE.md`.
 
