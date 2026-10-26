@@ -311,25 +311,18 @@ small projects. Newest entries on top.
 
 ### 4.4 How
 
-```markdown
-## 2026-08-21  (Step 2: data model)
-- Migrations up/down now clean. Down-migration for soft deletes was the
-  hard part; note in ADR-0004 consequences.
-- DEAD END: tried enforcing the "one active order per user" invariant in
-  application code — race condition under two concurrent requests.
-  Moving it to a partial unique index instead.
-- Open: do we need audit history on orders now or can it wait to Step 5?
-- Resume: finish CRUD tests, close Step 2 gate.
-```
+How an entry is written is the devlog's form. In a run, the header
+comment and the first entry of the stub, `devlog/devlog.md`; in the
+deliverer's seat, `devlog/README.md`. Why the form is as it is:
 
 - Written for future-you, not an audience: fragments fine, spelling
-  irrelevant, honesty mandatory. "I don't understand why this works" is a
-  legitimate and valuable entry.
-- Tag entries with the current plan step; mark dead ends loudly
-  (`DEAD END:`) so they're greppable.
-- End sessions with a "Resume:" line — the cheapest save-point that
-  exists. It marks a place in the work, not a time: sessions resume
-  after walks, days or weeks.
+  irrelevant, honesty mandatory. "I don't understand why this
+  works" is a legitimate and valuable entry.
+- An entry names the step or the work it was part of, and a dead
+  end is marked loudly: both are then greppable.
+- A session ends with a "Resume:" line, the cheapest save-point
+  that exists. It marks a place in the work, not a time: sessions
+  resume after walks, days or weeks.
 
 ### 4.5 When
 
