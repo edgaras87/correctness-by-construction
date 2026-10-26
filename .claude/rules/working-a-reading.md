@@ -123,9 +123,9 @@ reading is extended, by `exchange-read` again or by
 - `.claude/decisions.md`, 2026-10-01 — placed from the draft that
   ran three readings of run 3; why a rule beside the reading's form,
   and not that form, a skill, or the draft left standing
-- `.claude/decisions.md`, 2026-10-08 — a taken item checked against
-  its source, and its file read whole
-- `.claude/decisions.md`, 2026-10-10 — the list closes only when
-  every finding has ended in an item
-- `.claude/decisions.md`, 2026-10-17 — a reading's gates and
-  stages, for its step in PLAN (ADR-0057)
+- `.claude/decisions.md`, 2026-10-08 — step 4: a taken item checked
+  against its source, and its file read whole
+- `.claude/decisions.md`, 2026-10-10 — step 9 and *Gates*: the list
+  closes only when every finding has ended in an item
+- `.claude/decisions.md`, 2026-10-17 — *Gates* and *Stages*: a
+  reading's gates and stages, for its step in PLAN (ADR-0057)
