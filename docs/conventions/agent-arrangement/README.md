@@ -117,7 +117,9 @@ channel (`docs/models/agent.md` §4.1), the choosing table
 §12). The model describes; this page explains against it, and its
 §5 is the binding: what Claude Code gives each channel.
 
-A closed list of paths (ADR-0038, 1c):
+### 1.1 A closed list of paths
+
+The arrangement's paths are a closed list (ADR-0038, 1c):
 
 - **`CLAUDE.md`** — the entry file, §2. The name is the tool's;
   what goes in it is this convention's.
@@ -125,14 +127,18 @@ A closed list of paths (ADR-0038, 1c):
   shapes directory, the approaches on trial, the decisions log, and
   the tool's settings, tracked and machine-local, §3.
 
-**Detachable, and kept so.** A file is agent-side when removing it
+### 1.2 Detachable, and kept so
+
+A file is agent-side when removing it
 breaks nothing about the project (ADR-0038, 1c). How a commit that
 touches these paths
 is made is `docs/conventions/commit-messages/` §2. `COMMIT-PLAN.md`
 is `docs/conventions/commit-plan/`'s artifact, not this
 convention's.
 
-**Not records.** The arrangement holds no project truth: nothing
+### 1.3 Not records
+
+The arrangement holds no project truth: nothing
 here says what the project is deciding, planning or shipping. It
 says how an agent is to work in it. Where the two sides touch — the
 records table in the entry file, a run's decisions log's promotion

@@ -70,7 +70,7 @@ change too small to deserve a real one.
   portfolio copy that drops the arrangement, only if no commit ever
   straddles them. Hence the `agent` scope (ADR-0038, 1c); which
   paths are the arrangement's is
-  `docs/conventions/agent-arrangement/` §1.
+  `docs/conventions/agent-arrangement/` §1.1.
 - **Commit on the word.** The commit boundary is the one place a
   wrong assumption is cheap to catch when an agent is doing the
   committing, so the agent stages, shows the diff, and waits. The
