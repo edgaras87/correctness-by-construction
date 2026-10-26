@@ -189,6 +189,15 @@ foundation check. The two checks run by hand go to a dated italic.
 FINDING-177. Visual-comparison §2 gives one general reason. The
 Mermaid case stays as its example.
 
+**23b. `docs: visual-comparison leaves shapes alone`**
+Inserted at 23's boundary. The reviewer asked whether
+visual-comparison was being made a kind of shape; two places invite
+that reading. *What this does not cover*
+named shapes §4.3 as an example of a manual that rules on its own
+pictures; the example adds nothing, and goes. §1's "a claim by its
+shape" uses the defined word in its plain sense, and becomes "by
+how it is drawn" (`.claude/rules/writing.md`, rule 6).
+
 **24. `docs: agent-arrangement tells its rename once`**
 FINDING-152. §2.3 drops "which one run showed to be a pure rename".
 *What it is for* keeps the case.
@@ -213,7 +222,8 @@ the one line that says so".
 FINDING-178. The index keeps who hands to whom. Its retellings go:
 commit-plan's "plans the commits, not the change",
 visual-comparison's boundary, each convention's "fires when", each
-domain skill's order. TODO's "Make the conventions index a full
+domain skill's order. "A diagram's shape" becomes "how a diagram
+is drawn", as in 23b. TODO's "Make the conventions index a full
 local map" drops its Idea about the retold triggers, which this
 takes.
 
