@@ -134,9 +134,9 @@ corner.
 Goal: Living text written before a rule now meets that rule, and
 `docs/conventions/project-recording/` §1 is a map of the records
 in both seats.
-Now: between rounds: round 1 closed; round 2's rule check has
-ended, its fix the facts-in-sync convention (ADR-0065), and round 2
-reads next (`.claude/approaches-on-trial/refinement.md` §2.4).
+Now: round 2's work: every finding has its ending, and layer 1,
+the conventions manual, is worked first
+(`.claude/approaches-on-trial/refinement.md` §2.7).
 Gate:
 
 **At the opening.**
