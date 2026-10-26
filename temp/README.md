@@ -15,7 +15,8 @@ Both are tracked, so the shaping shows as diffs. Each is deleted
 once it has served, and git history keeps every version.
 
 Not records. Nothing here is the record of anything: what a draft
-said and why lives in the records — the devlog logs a draft made,
+said and why lives in the records, which the records map lists
+(`docs/conventions/project-recording/` §1) — the devlog logs a draft made,
 passed, or deleted; decisions go to the ADRs; the backlog to TODO.
 
 What a note to a run may say is the exchange's,
