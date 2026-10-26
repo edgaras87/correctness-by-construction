@@ -5,8 +5,9 @@ foundation: the exchange convention
 ---
 
 <!-- The form of a reading, as a rule. Loads when one is read,
-     so while it is worked, not while a new one is written; says
-     its form, never its content. -->
+     so while it is worked, not while a new one is written
+     (docs/conventions/agent-arrangement/ §5.6); says its form,
+     never its content. -->
 
 # The reading
 

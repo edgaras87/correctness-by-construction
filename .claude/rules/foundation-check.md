@@ -6,7 +6,8 @@ foundation: the facts-in-sync convention
      grep for a moved section, fire at the commit, where they waited
      to be remembered. Loaded in every session, with no paths: a
      paths rule loads only when a file is touched with the agent's
-     tools, and an edit made by script never loads it. Ours, shipped
+     tools, and an edit made by script never loads it
+     (docs/conventions/agent-arrangement/ §5.6). Ours, shipped
      nowhere: a run holds no manuals. -->
 
 # The foundation check

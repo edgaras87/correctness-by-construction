@@ -5,7 +5,8 @@ foundation: the conventions convention
 ---
 
 <!-- The form of a manual, as a rule. Loads when one is read, not
-     while a new one is written; says its form, never its content.
+     while a new one is written (docs/conventions/agent-arrangement/
+     §5.6); says its form, never its content.
      Ours, shipped nowhere: a run writes no manuals. The why is
      docs/conventions/conventions/ §2. -->
 
