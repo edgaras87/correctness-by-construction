@@ -115,63 +115,97 @@ by TODO and the devlog's Resume all along (ADR-0041).*
 worked; the reading of run 3 kept its gate outside the plan. A step
 is now the work being done (ADR-0057).*
 
-## 1. The model at a glance
+## 1. The records at a glance
 
-The **Plan** is the spine. Every other record either feeds it, hangs off one
-of its steps, or is produced when a step closes. The **Playbook** sits outside
-any single project: it hands the Plan its step sequence at birth and
-absorbs its lessons at the end.
+A summary of which record answers what, in both seats (ADR-0067).
+Each item's home holds the record's full what and why. Where the
+seats keep a record differently, *The seats* says how.
+
+**Both seats**
+
+1. `README.md`: what this is, how to use it, where the rest is (§7).
+2. `PLAN.md`: where the work stands, what is next, what *done*
+   means (§2). The seats differ.
+3. `TODO.md`: what is known and not yet done (§5).
+4. `docs/adr/`: why it is built this way (§3). The seats differ.
+5. `devlog/`: what happened, the dead ends, where to resume (§4).
+6. `ARCHITECTURE.md`: what stands now, and how its parts tie (§8).
+   The seats differ.
+7. `CHANGELOG.md`: what changed in each version, for whoever pins
+   it (§6). The seats differ.
+8. `.claude/decisions.md`: how the agent's setup was decided
+   (`docs/conventions/agent-arrangement/` §3.4).
+9. `COMMIT-PLAN.md`: the commits of a change set in flight, when
+   present (`docs/conventions/commit-plan/` §1).
+
+**The run's only**
+
+10. `docs/system/`: what is promised, what must never happen, the
+    slices (`concept/03-cbc-framing.md`).
+11. `docs/glossary.md`: what each coined word means
+    (`docs/conventions/writing/` §2, rule 6). Ours is
+    `ARCHITECTURE.md`'s *The words*.
+12. `RETRO.md`: what the next run does differently, when present
+    (`docs/conventions/retrospective/` §4). Ours has none: lessons
+    fold back at each step's close.
+
+**Ours only**
+
+13. `TODO-CONVERSATION-MEMORY.md`: the talk behind a TODO item, on
+    trial (§14).
+
+How the records feed each other, a picture for each seat. An arrow
+says what a record holds for the plan; when a record is opened is
+each seat's records table's (§13).
+
+*The run's seat:*
 
 ```
-                    PLAYBOOK  (reusable, lives across projects)
-                       │  steps at birth         ▲  fold lessons back
-                       ▼                         │
-   ┌────────────────  PLAN.md  (the spine) ──────┴─────────────┐
-   │  Step 1 [x] ── Step 2 [~] ── Step 3 [ ] ── ... ── Retro   │
+                    PLAYBOOK  (the deliverer's; a run holds none)
+                       │  steps, at birth         ▲  lessons fold back,
+                       ▼                          │  through RETRO.md
+   ┌────────────────  PLAN.md  (the spine) ───────┴────────────┐
+   │  Step 0 [x] ── Step 1 [~] ── Step 2 [ ] ── ... ── Retro   │
    └───┬──────────────┬────────────────┬────────────────┬──────┘
        │              │                │                │
-   forced a       daily work      found new        step shipped
-   decision       inside step     non-blocking     something
-       │              │           work │               │
-       ▼              ▼                ▼               ▼
-     ADR           DEVLOG           TODO          CHANGELOG
-  (why we        (what we        (what's not     (what changed,
-   chose X)       tried, what     done yet)       for users)
-                  failed)
-       │
-       └──► summarized into ARCHITECTURE.md (current state of the system)
+      why       what happened     not yet done     what changed
+       │              │                │                │
+       ▼              ▼                ▼                ▼
+      ADR          DEVLOG             TODO          CHANGELOG
+       │                                           (for users)
+       └──► summed into ARCHITECTURE.md (the system as it stands)
 
-   README.md = the front door: what this is, how to run it, where the
-               other records are.
+   docs/system/ = what is promised, the slices
+   README.md    = the front door: what this is, where the rest is
 ```
 
-Reading order for a newcomer: README → ARCHITECTURE → PLAN → (ADRs as
-needed). The devlog and TODO are working documents; nobody is expected to
-read them cover to cover.
-
-**Repository layout:**
+*Our seat:*
 
 ```
-repo/
-├── README.md
-├── .claude/
-│   └── CLAUDE.md             (the entry file)
-├── PLAN.md
-├── CHANGELOG.md
-├── TODO.md
-├── ARCHITECTURE.md
-├── docs/
-│   ├── adr/
-│   │   ├── 0001-record-architecture-decisions.md
-│   │   └── 0002-....md
-│   └── rfc/                  (only if the team uses design docs)
-└── devlog/
-    └── 2026-08.md            (one file per month, or devlog.md if small)
+   ┌───────────────  PLAN.md  (the spine) ───────────────┐
+   │  the one step being worked, and any step it stopped │
+   └───┬──────────────┬────────────────┬────────────┬────┘
+       │              │                │            │
+      why       what happened     not yet done  what changed
+       │              │                │            │
+       ▼              ▼                ▼            ▼
+      ADR          DEVLOG             TODO      CHANGELOG
+       │                               ┊      (the concept's versions)
+       │              TODO-CONVERSATION-MEMORY.md (the talk behind an item)
+       └──► summed into ARCHITECTURE.md (documents and delivery)
+
+   Lessons fold back at each step's close: into the conventions,
+   the playbook, the concept.
+   README.md = the front door: what this is, where the rest is
 ```
+
+Reading order for a newcomer: README, then ARCHITECTURE, then PLAN,
+then the ADRs as needed. The devlog and TODO are working documents;
+nobody is expected to read them cover to cover.
 
 The entry file is `docs/conventions/agent-arrangement/` §2's. The
-playbook is absent on purpose: it lives in the repo that owns the
-project type, never in a project born from it (§9).
+playbook is absent from a run on purpose: it lives in the repo that
+owns the project type, never in a project born from it (§9).
 
 Everything is Markdown, in the repo, versioned with git. That is itself a
 rule of the convention: records live next to the code they describe, so
@@ -748,7 +782,8 @@ project-recording (*Why it arrives this way*).
 
 **Every row of the records table names three things: the moment, what
 the record holds, and its path** — and adding a record means adding
-its row. This is a requirement, not a convenience.
+its row. What the record holds is a short summary of its item in
+§1. This is a requirement, not a convenience.
 
 The moment is the half that is new and the half that is load-bearing.
 The table is then readable in both directions: *I just did X, where
