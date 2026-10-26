@@ -540,19 +540,20 @@ popularized by matklad's "ARCHITECTURE.md" essay.)
 
 ### 8.4 How
 
-One or two pages: a component diagram (ASCII is fine), a paragraph
-per component ("the `orders` module owns all order state
-transitions; nothing else writes to the orders table"), the system's
-invariants, a "where to find things" codemap, and pointers into
-the local maps of the areas that have one (§8.6). Link ADRs for the
-*why* behind each shape. Update it when structure changes —
-practical trigger: whenever a step gate closes and the diagram it
-implies no longer matches reality.
+What the map holds, and when it changes, is its form: the header
+comment and the sections of `ARCHITECTURE.md`. In a run, the stub:
+an overview, the components, the invariants and the codemap. The
+deliverer's maps documents and delivery instead (*The seats*). Why
+the form is as it is:
 
-The invariants are a table, one row per rule: what computes it, what
-refuses a wrong result, the test that goes red, and the slice that
-proved it. A slice's close adds or changes rows. It never adds a
-paragraph: how the slice got there is its record's.
+- One or two pages, the system as it is now: a newcomer reads it
+  second, after the README (§1).
+- The why behind a shape is the ADR's, linked, so the map states
+  and never argues.
+- A step's close is when the structure it describes can have moved,
+  so that is when the map is checked.
+- The invariants are a table, one row per rule, never a paragraph:
+  how a slice got there is its record's.
 
 *Found 2026-10-11, by run 3's RETRO D16: run 3's ARCHITECTURE ran
 to 2,031 words. Its invariants section, 634 of them, told each
