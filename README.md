@@ -41,9 +41,9 @@ recorded way instead of living in a head and scattered notes.
   shipped here are this repo's, held for CbC runs and changed by
   what runs live (ADR-0025, ADR-0031). A second repo that needs
   them copies parts, and anything general waits on three
-  (ADR-0038).
+  (ADR-0038; `docs/models/tiers.md` §2.1).
 - Garden machinery — none until the garden rule triggers: a second
-  concept repo, a rule written twice.
+  concept repo, a rule written twice (`docs/models/tiers.md` §2.2).
 - Graduating an execution to its own concept repo — same trigger,
   not now.
 - Everything in the archive repo outside the two directories named
