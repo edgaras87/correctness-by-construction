@@ -26,8 +26,8 @@ models in `docs/models/`. Each is made usable as something that
 does ship: the concept as the method, the conventions as the
 container (§1). A run is born from that delivery, takes newer copies
 at each pin, and is read back here; what it learned changes our
-masters (§2). A few rules must hold across all of it (§5), and the
-codemap says where each thing lives (§6). What this repo is for, and
+masters (§2). A few rules must hold across all of it (§3), and the
+codemap says where each thing lives (§4). What this repo is for, and
 how to use it, is `README.md`.
 
 ```
@@ -179,53 +179,7 @@ records a pin and a read-through (§2.2), takes each delivery (§4),
 and is read back here (§6). What each side holds for it is the
 exchange's *What this is made usable as*.
 
-## 3. How anything here changes
-
-**Stated first, made usable second, and both bent by practice.** The
-pairing in section 1 reads top-down — a description, then the thing
-made from it. That is the order of writing, not the order of truth.
-
-The loop, as it actually runs:
-
-1. We state (concept, conventions) and make usable (method,
-   container).
-2. We deliver — files copied whole into a run.
-3. The run uses them, and where one fails it, **edits its copy** and
-   records why.
-4. We read the run and find the edit.
-5. **Taken:** our master changes, so the next project never meets
-   the same failure. **Declined:** we judge it project-specific, an
-   exception, or not worth the change — and the edit goes, its need
-   to the run's own records (`docs/conventions/exchange/` §4).
-
-**The rule that holds all of this** — a description lists what
-derives from it, each derivative names it, a change walks the list,
-a forced change is checked back, a disagreement is decided with
-practice as the evidence — is stated once, in
-`docs/conventions/facts-in-sync/` §4, for every description this
-page names: the concept, each model, each manual.
-Why step 5 declines a finding only for not being general, and where
-practice has already bent a description, is
-`docs/conventions/facts-in-sync/` §5. This page is a map and
-states no rule of its own. Where a manual and the
-concept are handled differently is that manual's *What this does
-not cover* and ADR-0039.
-
-## 4. The work arrangement
-
-**What tells an agent how to work in a repo — not the work, and not
-a record of it.** Two exist here, derived from the same manuals and
-neither from the other (ADR-0042): the one this repo runs under as
-the deliverer, a maintainer's, and the one it ships in the
-container for a run to work under, a builder's. They are nearly the
-same files and differ by design in their job, each side holding
-only the half it can run. What the files are, how
-each reaches an agent, and what each seat holds is
-`docs/conventions/agent-arrangement/`, its seats.
-
----
-
-## 5. What must stay true
+## 3. What must stay true
 
 Each rule, and where it is held. This repo has no runtime, so a
 rule is held by a header that travels with a file, a standing
@@ -280,7 +234,7 @@ review, and each entry names which.
   shipped from `delivery/container/.claude/rules/delivered-copies.md`
   on the run's.
 
-## 6. Codemap
+## 4. Codemap
 
 <!-- Where to find things. Descriptions start at column 22; a path
      too long for that column moves every line, so a new one is
@@ -310,7 +264,7 @@ delivery/
 ├── installs/        how a run is seeded (§2.4)
 └── README.md        the delivery's local map (§2.4)
 temp/                drafts and kept files, tracked, deleted when served
-CLAUDE.md, .claude/  this repo's work arrangement (§4)
+CLAUDE.md, .claude/  this repo's work arrangement
 .editorconfig        hygiene: editor settings
 .gitattributes       hygiene: line endings and diffs
 .gitignore           hygiene: what git leaves untracked
