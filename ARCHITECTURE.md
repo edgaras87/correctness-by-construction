@@ -263,7 +263,7 @@ derives from it, each derivative names it, a change walks the list,
 a forced change is checked back, a disagreement is decided with
 practice as the evidence — is stated once, in
 `docs/conventions/facts-in-sync/` §4, for every description this
-page names: the concept, each model, each manual, and this page.
+page names: the concept, each model, each manual.
 Why step 5 declines a finding only for not being general, and where
 practice has already bent a description, is
 `docs/conventions/facts-in-sync/` §5. This page is a map and
@@ -414,7 +414,7 @@ manual owns the thing a word names, pointed at there.
 - **made usable** — what a stated body becomes in the delivery:
   the concept as the method, the conventions as the container.
 - **description** — how we understand a thing today, written down:
-  the concept, a model, a manual, this page. It may be wrong or
+  the concept, a model, a manual. It may be wrong or
   incomplete and is canonical regardless; what derives from it
   applies it and does not explain. One rule for all of them,
   `docs/conventions/facts-in-sync/` §4; they differ at the edges

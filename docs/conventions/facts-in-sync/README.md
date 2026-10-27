@@ -156,8 +156,7 @@ moved from a plan's close to the commit that renumbers.*
 ## 4. The rule for every description
 
 This page included. A description is how we understand a thing
-today, written down: the concept, each model, each manual,
-`ARCHITECTURE.md`. It states what is true today; how it came to be
+today, written down: the concept, each model, each manual. It states what is true today; how it came to be
 is history's: the ADRs, the devlog, commit bodies, and a lesson's
 dated italic (`docs/conventions/conventions/` §2.6). It may be
 wrong or incomplete, and it is
