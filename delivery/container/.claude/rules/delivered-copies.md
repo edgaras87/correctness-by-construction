@@ -25,10 +25,7 @@ foundation: the exchange convention
 
    One pin covers everything delivered: the skills, rules, shapes
    and approaches on trial under `.claude/`, and `docs/concept/`. The concept chapters are
-   copies too, edited like any copy, but only from a mistake lived
-   here. Skills are written from them and readers learn the method
-   from them, so lived work can show one wrong. A preference for
-   other wording is never the reason. The records (`PLAN`, `TODO`,
+   copies too. The records (`PLAN`, `TODO`,
    the devlog) were delivered once as stubs, and the entry file was
    composed once. All of them are this run's own, not copies, and
    this file does not govern them.
@@ -58,6 +55,11 @@ foundation: the exchange convention
    changed: that is history, and the diff against the pin and the
    log already hold it.
 
+   A concept chapter is edited only from a mistake lived here:
+   skills are written from the chapters and readers learn the method
+   from them, so lived work can show one wrong. A preference for
+   other wording is never the reason.
+
    An approach on trial takes one more edit: a dated note of each
    use under its *Uses*, in this project's own terms. It is how the
    use reaches the deliverer, so the second condition does not hold
@@ -81,12 +83,8 @@ foundation: the exchange convention
    changed file and must guess. The edits describe themselves in the
    diff and the log.
 
-   The deliverer reads this repo read-only when it reads it: at a
-   hand-off, a line under `## To the deliverer`, or at the
-   retrospective, not at every step's close. The deliverer diffs the
-   copy against its own tree at the pin, gives each hunk its verdict,
-   taken, declined or held, writes what it takes in its own words,
-   and writes its reply. The line is done at the re-pin.
+   The deliverer's reply gives each hunk one verdict: taken,
+   declined or held. The line is done at the re-pin.
 
 5. **After the reply, the re-pin: the take.** The deliverer's new
    version arrives staged in this repo's own `temp/`, in a directory
