@@ -269,68 +269,49 @@
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, the `claude-md-management` part, and §14.
 
-- [ ] Decide how a fact reference is written, and give it one name
-      (2026-10-24, the reviewer).
-      Context: `docs/conventions/facts-in-sync/` §3.1 defines the fact
-      reference: the address of a fact's home, read by the agent and
-      by the walk, written today as a path and a section (ADR-0065).
-      A title in it was deferred: about 200 references would be
-      rewritten. "Pointer" names it too, as a noun, in 50 uses across
-      19 files; "tag" now names only git tags, image tags, the repo
-      prefix and ids.
-      Ideas:
-      - written `(<path>, §<number>, <title>)`, no prefix word, no
-        ids; a long title may be cut to its first words. The 137
-        numbered titles average 13 characters, and 13 are over 30.
-      - when a section is touched, every fact reference to its path,
-        number or title is grepped and updated in the same commit,
-        widening `docs/conventions/facts-in-sync/` §3.3's grep for a
-        moved section.
-      - the repo prefix keeps its own name.
-      - "pointer" goes as a noun; "link" and "points" stay, the
-        model's words. Or it stays the agent model's word for what
-        an agent may follow (`docs/models/agent.md` §4.2).
-      - a fact reference in a shipped file names its repo, as a
-        shipped decision does with `CBC ADR-nnnn`: `(<repo>,
-        <path>, §<number>, <title>)`. A run holds no manuals, so a
-        bare path points at nothing there; the deliverer's walk
-        still needs it. Until the form is settled the container's
-        entry file carries today's form. Dropping references at
-        birth was weighed: a delivery is copied whole.
-      - the container's other stubs, 7 with a `foundation:` line,
-        and its entry file's guard retell project-recording or
-        agent-arrangement with no reference to a section; each gets
-        them in the settled form.
-      - when a piece is placed (`approach-evaluation` stage 5), or a
-        run's approach rewritten here (stage 6), its references move
-        to their new homes; nothing says so yet.
-      - a missing fact reference is found by nothing: the walk sees
-        only lines that carry one. At each commit, each new or
-        changed line is asked whether it relies on a fact written
-        elsewhere and, if so, whether it says where. Lived: the 11
-        manuals' channel sections reasoned from the agent model
-        without one until 2026-10-24.
-      - whether a file's `foundation` line covers its lines about
-        its own manual, or each names its section, as
-        `docs/conventions/facts-in-sync/` §4 step 2 says: the
-        refinement's DECISION-10, resting FINDING-191, our record
-        headers, and 196, our rules and skills with 0 to 7 section
-        references each.
-      - the run's case of a retelling with a fact reference
-        (ADR-0059), tracked nowhere else: which ids are fact
-        references, and when they are re-read. Round 2's
-        FINDING-202, 204, 208 and 216 list shipped retellings that
-        wait on it; 208's only source is a closed ADR, and so is the
-        second half of `ARCHITECTURE.md` §3's group rule, "nothing
-        that needs Spring… sits under `method/`" (the close read's
-        FINDING-256).
-      - round 2's FINDING-219, 32 `references/…` paths and about 13
-        bare file names inside one skill; and 220, shipped rules
-        named in prose 13 times, and two paths without the section
-        they rely on.
-      Trigger: round 2 of the refinement closes, before round 3's
-               rule check, with "Decide which way a fact reference
-               may point".
+- [ ] Write down how a fact reference is written, then rewrite each
+      one to it (2026-10-24, the reviewer).
+      Context: seven decisions of 2026-10-27 settled the form, listed
+      in Ideas; no manual holds them yet. First their homes, with an
+      ADR: facts-in-sync §3.1, §3.3, §4 step 2 and the run's seat,
+      both `one-home.md`, exchange §3.4, and one skill. Then the
+      rewrite: 329 references gain a title, 129 sentences are
+      reworded, 34 uses of "pointer" change, 41 paths inside skills
+      run from the root.
+      Ideas, taken 2026-10-27:
+      - the form: (`<path>` §<number>, *<title>*), always in
+        parentheses. The same document drops the path; another repo
+        leads with its tag, CBC; a section with no number gives its
+        title alone; a long title is cut to its first words.
+      - "pointer" stays only as the agent model's wider word; where
+        it means a fact reference, it becomes one.
+      - a skill names its own files by a path from the root: two
+        skills hold `references/worked-example.md`.
+      - a run may retell beside an id where the reader acts on it;
+        an id is a run's fact reference, and a change at its home
+        greps it in the same commit. The run's `writing.md` rule 8
+        already asks for it, and its `one-home.md` rule 2 forbids it.
+      - a shipped line never sends a run into our manual: a CBC
+        reference is for our walk, and the line stands alone.
+        FINDING-202, 204 and 216 take this form.
+      - a fact stated only in history gets a living home first: the
+        off-template rule in one skill, stated whole, the other
+        three pointing (FINDING-208); the method's no-stack rule in
+        exchange §3.4 (FINDING-256).
+      - a derived file's lines carry fact references to its
+        foundation too, as §4 step 2 says (FINDING-191, 196); the
+        `foundation` line re-reads the whole file when its root
+        changes. Trigger to weigh one reference per section: a file
+        where references sit on most lines and add nothing.
+      - at each commit, each new or changed line is asked whether it
+        relies on a fact written elsewhere and says where; our seat
+        only, until a run's retelling is found with no id.
+      - §3.3's grep also covers a retitled section and a fact moved
+        to a new home, a placed approach among them.
+      - the rewrite also fixes FINDING-219's paths and FINDING-220's
+        rules named in prose.
+      Trigger: now: round 2 has closed, and round 3's rule check
+               reads the settled form.
       See: devlog 2026-10-24, the text-division item; ADR-0065;
       `TODO-CONVERSATION-MEMORY.md` §13.
 
