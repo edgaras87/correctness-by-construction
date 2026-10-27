@@ -1892,6 +1892,8 @@ labels on their own line are the same question: project-recording
   A rule round 2 reads against does not change mid-round (§2.4), so
   the line lands after round 2 closes, before round 3's rule check,
   and FINDING-252 is worked with it.
+- Chosen: (b), by the reviewer, 2026-10-27. The line, and
+  FINDING-252, are TODO's "Write when a bold lead is a part".
 
 ### The close read's counts
 
@@ -1909,3 +1911,16 @@ split, three raised from what they met in passing:
   TODO.
 
 One decision, DECISION-15.
+
+### Endings (§2.6)
+
+The reviewer took the proposed endings, 2026-10-27:
+- **Fixed, 50:** FINDING-229 to 281 but those below. The work names
+  each commit.
+- **Declined, 2:** FINDING-234, the map's pictures being ADR-0067's
+  form; 268, a step applying §1's rule where it is acted on.
+- **Declined in part:** 249's project-recording §13 italic, true and
+  about its own number.
+- **Moved to TODO:** 252, with DECISION-15's line, to "Write when a
+  bold lead is a part"; 256's second half to "Decide how a fact
+  reference is written".

@@ -319,7 +319,10 @@
         (ADR-0059), tracked nowhere else: which ids are fact
         references, and when they are re-read. Round 2's
         FINDING-202, 204, 208 and 216 list shipped retellings that
-        wait on it; 208's only source is a closed ADR.
+        wait on it; 208's only source is a closed ADR, and so is the
+        second half of `ARCHITECTURE.md` §3's group rule, "nothing
+        that needs Spring… sits under `method/`" (the close read's
+        FINDING-256).
       - round 2's FINDING-219, 32 `references/…` paths and about 13
         bare file names inside one skill; and 220, shipped rules
         named in prose 13 times, and two paths without the section
@@ -329,6 +332,22 @@
                may point".
       See: devlog 2026-10-24, the text-division item; ADR-0065;
       `TODO-CONVERSATION-MEMORY.md` §13.
+
+- [ ] Write when a bold lead is a part into
+      `docs/conventions/facts-in-sync/` §3.2 (2026-10-27, the
+      reviewer).
+      Context: the rule says bold emphasis in running prose is not a
+      part, and nothing of a bold-led bullet. The refinement's
+      DECISION-15 chose: a bold-led bullet is a part when it holds a
+      paragraph of its own, with its own reason or dated case; a
+      short list item is not. Round 2's close read's FINDING-252
+      waits on it: commit-messages §2 and visual-comparison §2 are
+      numbered with it, and 16 more sections are judged against it
+      at the last read.
+      Trigger: round 2 of the refinement closes, before round 3's
+               rule check, with "Decide how a fact reference is
+               written".
+      See: the refinement's DECISION-15, `5560baf`.
 
 - [ ] Decide how an item names the items it waits on, and what
       happens when one closes (2026-10-24, the reviewer).
