@@ -1,7 +1,9 @@
 # The whole system in plain words
 
-*One page. No jargon. If this page and the detailed docs ever disagree, one
-of them is wrong — find out which.*
+*One page. No jargon. A summary of the concept, `docs/concept/`, and of
+the two workflows, `.claude/skills/cbc-framing/references/cbc-framing-workflow.md`
+and `.claude/skills/cbc-slice/references/cbc-slice-workflow.md`. If this
+page and they ever disagree, one of them is wrong — find out which.*
 
 **What this is, in one sentence:** a design discipline that derives a
 backend from one falsifiable promise — asking *"what must never happen?"*
