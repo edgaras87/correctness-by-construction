@@ -1218,3 +1218,59 @@ general as a rule of something?"
   writing rule 6. Chosen before round 3's rule check, the words let
   one read find every misuse. Chosen inside round 2, text would be
   reworded that round 2 may still move.
+
+## 21. A full read for missing fact references
+
+Item: "Decide whether a standing full read looks for missing fact
+references".
+
+### 2026-10-27
+
+#### What the reviewer asked
+
+After the fact reference item's seven decisions: "let say we still
+miss to add fact-reference somewhere from time to time for some
+reason, maybe we miss to consider. i thinking about this reread all
+repo and check where we miss fact-reference. now i would should it
+go together with a planed sweap or session-end? should it be as
+sep? should it be only about fact-reference check or together with
+something else that needs full read of repo? but we should be aware
+that this should comply with fact-reference checking??? or we
+should think on this as some multi agent task where one agent or
+group of agent has this fact-reference check task?" Weighed by
+maintenance, readability, future-proofing and complexity.
+
+#### What exists today
+
+- **The sweep:** a grep for moved names at a commit plan's close
+  (`docs/conventions/commit-plan/` §2.10).
+- **Session end:** records only; the devlog entry and its
+  missing-context line.
+- **The refinement's rounds:** their Dependencies kind reads every
+  file for a line missing its fact reference. Round 2's close read
+  ran seven agents, one kind and one seat each: 52 findings, 32 of
+  them places a round 2 fix had missed.
+- **Coming:** the rewrite touches all 329 references; round 3 and
+  the refinement's last read cover every file.
+
+#### Options weighed
+
+| | In the sweep | At session end | A separate read, by foundation, by agents |
+|---|---|---|---|
+| Maintenance | runs too often, finds little | runs too often, finds little | runs when its trigger fires |
+| Readability | none | none | one report per foundation |
+| Future-proofing | grows heavier with the repo | grows heavier with the repo | a reader per foundation |
+| Complexity | mixes a grep with a read | mixes recording with reading | one piece of work, one job |
+
+- A missing reference is the hardest kind to find: the reader must
+  know the fact lives elsewhere. So the unit is a foundation, a
+  description read beside every file built on it.
+- The read needs its rule first: the settled form in facts-in-sync
+  §3.1.
+
+#### What the reviewer took
+
+A separate read, by agents and by foundation, with no machinery
+built now. It waits on its trigger: a read that finds a missing
+fact reference in text written after the per-commit check is in
+force.

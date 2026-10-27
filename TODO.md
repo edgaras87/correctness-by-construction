@@ -797,6 +797,28 @@
       See: devlog 2026-10-25, evening; `TODO-CONVERSATION-MEMORY.md`
       §19; `163767f`.
 
+- [ ] Decide whether a standing full read looks for missing fact
+      references (2026-10-27, the reviewer).
+      Context: a line that relies on a fact written elsewhere and
+      carries no fact reference is found by no grep and no walk. The
+      fact reference item's check asks it of each new or changed
+      line at the commit. Only the refinement's rounds read the whole
+      repo for it today: their Dependencies kind, which round 2's
+      close read ran with seven agents and 52 findings.
+      Ideas:
+      - its own piece of work: not the sweep, a grep at a plan's
+        close, and not session end, which only records.
+      - read by foundation: one agent reads a description beside
+        every file built on it, and asks of each line whether it
+        relies on a fact and says where.
+      - one kind per agent; other kinds may share the read, each
+        with its own agent.
+      - it reads against facts-in-sync §3.1 once the settled form is
+        written there.
+      Trigger: a read finds a missing fact reference in text written
+               after the per-commit check is in force.
+      See: devlog 2026-10-27; `TODO-CONVERSATION-MEMORY.md` §21.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
