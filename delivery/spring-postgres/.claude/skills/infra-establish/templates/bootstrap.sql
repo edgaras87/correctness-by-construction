@@ -7,8 +7,8 @@
 -- Purpose:
 --   Instantiate the postgres role model for this project: the two working
 --   identities, the application schema, and the privilege boundaries.
---   Model: postgres-role-split.md beside this skill's walkthrough —
---   this file instantiates, never re-derives.
+--   Model: .claude/skills/infra-establish/references/postgres-role-split.md
+--   — this file instantiates, never re-derives.
 --
 -- Run as:
 --   the bootstrap identity (postgres) — runs automatically, ONCE, at the
