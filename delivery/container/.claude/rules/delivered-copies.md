@@ -33,6 +33,10 @@ foundation: the exchange convention
    composed once. All of them are this run's own, not copies, and
    this file does not govern them.
 
+   A copy's *Decisions* footer names the deliverer's decisions it
+   rests on, as `CBC ADR-nnnn`; this run cannot open them. To go
+   against one, quote its line under *To the deliverer*.
+
    **A copy is never renamed or deleted here.** Its delivered path
    is its identity for the take. A renamed copy becomes two files at
    the next delivery, and a deleted one comes back. A copy this run
