@@ -98,7 +98,17 @@ it. The pointers move: the writing manual §2, project-recording
 FINDING-184's part. "Take" points at exchange §4, "note" at §3.7.
 "Pin" keeps its definition with exchange §2.2, and ARCHITECTURE's
 second telling goes in commit 9. Moved first and fixed second, so
-each commit reverts alone.
+each commit reverts alone. "Delivery" pointed at exchange §6.7,
+which layer 3's commit 7 merged away and its sweep missed; it names
+§6.6.
+
+**6b. `docs: the glossary groups its words`**
+Inserted at commit 4's boundary, on the reviewer's question. The 30
+entries sit in five groups by what they name: the repositories,
+between them, kinds of text, how texts tie, the work. Inside a
+group a word follows the words it uses. Plain `##` headings, as
+TODO's are; a word is found by its name. The header comment gains
+the rule: a new word goes in its group.
 
 ### Decision 3: a map of two pages, part by part
 
@@ -179,7 +189,8 @@ The records commit. ADR-0068 Accepted. The refinement's file: each
 of FINDING-184 to 192, and 145's last part, 176 and 179's
 "description", names its ending; 189 names `4eb8a57`. TODO's
 ARCHITECTURE item goes, each Idea's verdict in the body, and
-conversation-memory §17 with it.
+conversation-memory §17 with it. ADR-0044's status names ADR-0068,
+as the ADR form asks of a superseded record.
 
 **21. `docs(agent): close commit plan for layer 4's work`**
 Deletes this file; the body says what diverged.
