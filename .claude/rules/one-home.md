@@ -38,8 +38,11 @@ rules, comments and config. Where it lives, never how it reads.
 
 ## Not a second home
 
-History: the devlog, closed ADRs, commit bodies. They record what
-was true then. They are never updated, so they cannot drift.
+History: the devlog, closed ADRs, commit bodies, the entries of
+`.claude/decisions.md` and the parts of
+`TODO-CONVERSATION-MEMORY.md`. They record what was true then. They
+are never updated, so they cannot drift. Each file's header comment
+is living text.
 
 ---
 

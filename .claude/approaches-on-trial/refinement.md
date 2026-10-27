@@ -60,7 +60,10 @@ kinds are its own, so they are written in its file, not here.
 The words of this page, each defined once:
 
 - **living text** — every file but history. History is the
-  devlog, closed ADRs and commit bodies
+  devlog, closed ADRs, commit bodies, the entries of
+  `.claude/decisions.md` and the parts of
+  `TODO-CONVERSATION-MEMORY.md`, but not those two files' header
+  comments
   (`docs/conventions/facts-in-sync/` §1). Also left out: `docs/baselines/`,
   frozen on purpose, and a run's own text in `temp/`, which its
   reading reads.
