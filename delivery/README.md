@@ -38,7 +38,7 @@ into the run's `.claude/shapes/`; the rest is
 
 | From here | Into the run |
 |---|---|
-| `delivery/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers, and the "Steps from:" line names it at the pin (`pure-seed.md` step 4); the run holds no copy of the playbook |
+| `delivery/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers, and the "Steps from:" line names it at the pin (`delivery/installs/pure-seed.md` step 4); the run holds no copy of the playbook |
 
 A skill's `templates/` travels with the skill as a pinned copy. At
 use, the run copies a template to the path its walkthrough names and
@@ -64,12 +64,11 @@ run it is a pinned reference beside the run's own work
 | What | Why |
 |---|---|
 | `CLAUDE.md` is at `.claude/CLAUDE.md`, not at the root | a run builds an app, and the root is the app's |
-| `.claude/CLAUDE.md` and `README.md` carry bodies composed here, not stubs | runs did not derive the pre-framing guard or the pin stance unaided (ADR-0019); each is a whole file, copied, never merged (ADR-0015) |
+| `.claude/CLAUDE.md` and `README.md` carry bodies composed here, not stubs | they hold two stances a run can only receive, the pre-framing guard and the pin stance: nothing before the briefing produces them (ADR-0019); each is a whole file, copied, never merged (ADR-0015) |
 | `.claude/decisions.md`'s birth entry carries one pin and a read-through | the pin is ours (ADR-0025); the read-through is the exchange's second number (ADR-0036) |
 
 In the two composed entry files, the title line, the records table
-and the standing comments are the stubs' own shape. The rest is this
-repo's, taken from what the runs derived.
+and the standing comments are the stubs' own shape.
 
 ## 5. What a run does not get
 

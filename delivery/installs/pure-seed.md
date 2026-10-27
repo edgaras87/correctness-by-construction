@@ -18,9 +18,10 @@ seed commits' subjects; everything else it can.
 Deliberately not delivered: nothing that encodes a prior run's
 conclusions, and no playbook file — its steps ride in PLAN. The
 agent meets the container and the method raw. One exception: the
-two entry files arrive composed, in the container itself, because runs
-that derived their own produced neither the pre-framing guard nor
-the pin stance (ADR-0019, ADR-0024).
+two entry files arrive composed, in the container itself, because
+they hold two stances a run can only receive, the pre-framing guard
+and the pin stance: nothing it does before the briefing produces
+them (ADR-0019, ADR-0024).
 
 **1. Set the paths and capture the pin.**
 
@@ -230,7 +231,7 @@ item is a verifiable fact:
   byte-identical to its master at the subject's pin, and as many
   method and stack skills and shapes as step 6's prompt counts.
 - PLAN's STEPS region holds the pure playbook's sequence —
-  identical to cbc-run-pure-playbook.md from the step form down
+  identical to `delivery/fills/cbc-run-pure-playbook.md` from the step form down
   at the subject's pin — both markers in place, and the "Steps
   from:" comment names cbc-run-pure at the version the playbook's
   version line gives, at the bundle pin. No

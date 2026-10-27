@@ -1,5 +1,6 @@
 <!-- The CbC run playbook. At birth, everything from the step form
-     down replaces the steps in a newborn's PLAN.md; this comment
+     down replaces the steps in a newborn's PLAN.md
+     (delivery/installs/pure-seed.md step 4); this comment
      and the version line stay here. Checked against concept v1
      (ADR-0003, ADR-0005). Harvest lands here, the one copy
      (ADR-0007): each lesson as a changed gate, a new step, or a line
@@ -268,8 +269,8 @@ Known already:
 - README true for a stranger, its commands verified on a clean
   machine;
 - known issues filed in TODO.md;
-- Release's own lessons added to RETRO.md, as decisions in the
-  `retrospective` skill's form.
+- Release's own lessons added to RETRO.md, as decision blocks
+  (`.claude/skills/retrospective/SKILL.md`, Stage 2, item 4).
 
 Checked here, each unless this run's own recorded exclusion:
 - monitoring and alerts in place;
