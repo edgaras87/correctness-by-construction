@@ -82,8 +82,6 @@ sources for one thing.*
 
 ## 3. Rules
 
-- Overlay content goes below the marker; base content above it is
-  the base.
 - A run's files are its own. A fix that would be true of any
   project comes back the way every lesson does — the deliverer
   reads the run, `docs/conventions/exchange/` §6 — and changes the

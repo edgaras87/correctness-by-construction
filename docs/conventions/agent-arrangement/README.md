@@ -287,7 +287,6 @@ home for a rule true only in one part of the tree, which a skill would
 carry only if the agent noticed the moment. Without the list, the file
 is the entry file by another name and fails §2.4's tests the same way,
 with one exception, §3.9.
-*Empty at birth until 2026-09-23.*
 
 ### 3.3 `shapes/`
 
@@ -375,8 +374,7 @@ is, how one is drafted and how one is evaluated are
 convention places the directory and states nothing else about it.
 In a run, an approach the deliverer ships is a pinned copy
 (`docs/conventions/exchange/` §3.2), and one the run drafts is its
-own. *Added 2026-10-20 (ADR-0058). Numbered last, so the sections before
-it keep the numbers history cites.*
+own. *Added 2026-10-20 (ADR-0058).*
 
 ### 3.9 A rule loaded in every session
 
@@ -484,7 +482,7 @@ Skills appear twice as well, and neither time under pushed. Claude
 Code loads a skill's `name` and `description` at session start and its
 body only when the agent invokes it: an ambient trigger over a pulled
 body. The agent still decides, and pushed promises it does not
-(`docs/models/agent.md` §4). A skill is still the closest this tool
+(`docs/models/agent.md` §4.3). A skill is still the closest this tool
 gets to pushed for a rule about an action; a hook closes the
 remainder.
 
@@ -552,7 +550,7 @@ Not a skill, because the failure guarded against is a noticing
 failure: told "remember X", an agent writes X into the entry file
 where it stands, and a skill fires only on recognising the moment.
 Not paid at ambient cost either: the comments are dropped on load
-(§2.6), so they are read when the file is opened to edit it
+(§5.3), so they are read when the file is opened to edit it
 and cost nothing on any other task. A long guard is free; a long
 records table is not.
 

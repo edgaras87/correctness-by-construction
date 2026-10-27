@@ -854,8 +854,8 @@ inside it, so the entry file's records table carries a moment per row
 (§13). A skill would not do: it fires when the agent recognises the
 moment, and failing to recognise the moment is the failure being
 fixed. Restating a record's rules in the entry file "so they are
-always available" is the failure `docs/conventions/agent-arrangement/`
-measured.
+always available" is the failure `docs/conventions/agent-arrangement/` measured, in
+its *What it is for*.
 
 ## What this does not cover
 

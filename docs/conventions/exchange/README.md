@@ -40,7 +40,8 @@ arrangements, each side holding only what it runs
   fills, and `delivery/installs/pure-seed.md` keeps that.
 - **`.claude/rules/exchange-reading.md` — the reading's form, the
   deliverer's**, loading when a reading in `temp/` is read, not
-  while a new one is written. What `exchange-read` writes, and what
+  while a new one is written (`docs/conventions/agent-arrangement/`
+  §5.6). What `exchange-read` writes, and what
   the work then fills, to one form.
 - **`.claude/rules/working-a-reading.md` — how a reading's list is
   worked, the deliverer's**, practice under this page, loading when

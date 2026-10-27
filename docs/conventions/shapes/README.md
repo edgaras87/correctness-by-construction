@@ -58,7 +58,7 @@ The deliverer makes outputs too — a reading is one — and its steps
 have gates (ADR-0057). Two of its own forms, a reading's and a
 manual's, are rules today, with a
 Governs line, loaded when the file is read, not while a new one is
-written; whether they become shapes read at a step's gate is the
+written (`docs/conventions/agent-arrangement/` §5.6); whether they become shapes read at a step's gate is the
 TODO item "Decide whether our own forms become shapes". It holds the shapes it
 ships, each in the group of what it shapes (§4), and reads a run's
 shapes when a line under its *To the deliverer* offers them
