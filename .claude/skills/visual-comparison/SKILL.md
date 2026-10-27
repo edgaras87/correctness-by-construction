@@ -129,9 +129,8 @@ name the case, it is not an entry yet.
 
 ## 5. What this does not do
 
-- It does not choose a format for another repo. The deliverer's
-  Mermaid trial is provisional and does not travel; a run decides its
-  own forms.
+- It does not choose a format for another repo. Our Mermaid trial
+  is provisional and does not travel; a run decides its own forms.
 - It does not run on a schedule, and it is not a review of forms
   already settled.
 
@@ -139,18 +138,18 @@ name the case, it is not an entry yet.
 
 ## Decisions
 
-- CBC ADR-0027 — the comparison is a method that worked once;
+- ADR-0027 — the comparison is a method that worked once;
   recorded, not adopted, with the second format question as the
   trigger for asking whether it becomes a rule
-- CBC ADR-0027, decision 2 — §4's "using a dialect is not fighting
+- ADR-0027, decision 2 — §4's "using a dialect is not fighting
   it": a candidate that needs the layout fought has lost
-- CBC ADR-0027, decision 3 — §5's Mermaid trial, provisional and not
+- ADR-0027, decision 3 — §5's Mermaid trial, provisional and not
   travelling
-- CBC ADR-0028 — the trigger fired and was answered here. The
+- ADR-0028 — the trigger fired and was answered here. The
   recommendation was to wait for a third instance: two uses by one
   author in one week is thin evidence. If that objection was
   right, §4 is where it shows, by not growing
-- CBC ADR-0030 — the third run was not about showing anything,
+- ADR-0030 — the third run was not about showing anything,
   which separated a general method out and left this one
   specialised. That general half was discarded 2026-09-24; §4's
   discipline line is from there, and so is §1's rule that the set

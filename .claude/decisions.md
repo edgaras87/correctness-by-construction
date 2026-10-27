@@ -1232,3 +1232,11 @@
   in `.gitignore`'s own section; it still holds settings only.
   Why: ADR-0062.
   Rejected: see ADR-0062.
+
+- 2026-10-27 Our `commit-messages`, `commit-plan` and
+  `visual-comparison` skills are written for our seat: their footers
+  cite `ADR-nnnn`, and `visual-comparison` speaks of our Mermaid
+  trial as ours. `approach-drafting.md` stays one text with the
+  run's copy until its evaluation.
+  Why: ADR-0069.
+  Rejected: see ADR-0069.

@@ -126,9 +126,9 @@ lifecycle — and touches nothing else.
 
 ## Decisions
 
-- CBC ADR-0038, 1a — Conventional Commits over plain 50/72
-- CBC ADR-0038, 1c — *The agent's own files*: the agent's files and
+- ADR-0038, 1a — Conventional Commits over plain 50/72
+- ADR-0038, 1c — *The agent's own files*: the agent's files and
   the project's records never share a commit
-- CBC ADR-0038, 1f — *Rules*: the stop is this file's sentence,
+- ADR-0038, 1f — *Rules*: the stop is this file's sentence,
   gated nowhere
-- CBC ADR-0049, 5 — *Format*: either mood, present tense
+- ADR-0049, 5 — *Format*: either mood, present tense
