@@ -18,7 +18,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-10-26.
+     Last touched: 2026-10-27.
      foundation: the project-recording convention -->
 
 # TODO's conversation-memory
@@ -1054,6 +1054,37 @@ references and where and what it should refere?"
 - Both wait on this item. What replaces "other conventions" is the
   direction it decides. Retiring "pointer" as a noun is a decision
   ADR-0065 did not take; it retired only "tag".
+
+### 2026-10-27
+
+#### What the reviewer asked
+
+While layer 4's decisions made the README the home of what this
+repo is: "model should not refer to manual so tier should talk
+about concept in general. if thats not the case so we need to check
+for fix our tier model, doesnt it?"
+
+#### What exists today
+
+- `docs/models/tiers.md` points down four times: at
+  `docs/conventions/exchange/` three times, at `delivery/README.md`
+  §2 once. It cites three ADRs, and says what this repo holds
+  "today".
+- `docs/models/idea-to-output.md` §2's table names
+  `.claude/shapes/` in its "Here" column. The agent model points at
+  no manual.
+- This item's Context counted one pointer down, conventions §3's.
+
+#### Points made
+
+- A model is written for any repo, so a pointer from it into one
+  repo's manual points down, against `docs/models/idea-to-output.md`
+  §3.2.
+- Round 2 read against facts-in-sync, where direction is not yet a
+  rule, so its Dependencies kind did not list these.
+- The fix waits for this item: the tiers model speaks of tiers in
+  general, and this repo's instance, which tier it is and what it
+  holds, moves to the README, home of what this repo is.
 
 ## 17. What kind of text our ARCHITECTURE is
 
