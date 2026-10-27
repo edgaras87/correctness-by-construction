@@ -87,13 +87,24 @@ since TODO takes a finding at once; and no decision index, since
 `docs/adr/` lists itself (§3.3's index is the run's).
 
 And its `ARCHITECTURE.md` maps documents and delivery rather than a
-built system: what is stated here, what ships, how it changes, the
-arrangement, and what must stay true, where a run's maps modules,
-runtime invariants and a `src/` codemap. It also carries its own
-words and the list of what it knows is wrong — a map of a
-vocabulary needs the vocabulary, and a map that names its errors is
-believed less blindly — and runs past §8's two pages for them
-(ADR-0044).
+built system, where a run's maps modules, runtime invariants and a
+`src/` codemap. It keeps to about §8's two pages (ADR-0068). Its parts,
+each with what it holds and who reads it:
+
+- **the overview** — the repo in one view, for a newcomer after the
+  README;
+- **what is stated, and what ships from it** — the pairing, the
+  models, and the delivery by group, for whoever changes a
+  description and needs what is made from it;
+- **the table of runs** — each run by both its names, for the agent
+  writing a note (`docs/conventions/exchange/` §3.7);
+- **what must stay true** — each rule, where it is stated and what
+  holds it, for the reviewer at commit review;
+- **the codemap** — where each thing lives, for anyone looking.
+
+A part no one reads goes. Its words are a record of their own,
+`docs/glossary.md`, as a run's are, and a line known wrong is a
+TODO known issue (§5).
 
 And its ADRs have no page limit. A run's ADR records one choice in
 its code; the deliverer's record the design of a method and its
