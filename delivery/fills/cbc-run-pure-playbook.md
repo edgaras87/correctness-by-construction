@@ -81,9 +81,10 @@ gate. An item is ticked when it comes true, whenever that is.
 **Lists written ahead.** Items the playbook already knows a step
 needs, whatever its goal, are listed under the step's Known already,
 and join its own items when the gate is written. A list under *For
-run 5 only* joins them the same way: questions only run 5 can
-answer, from run 3's `RETRO.md`, D22. Run 5's reading removes or
-keeps each.
+run <n> only* joins them the same way: questions only that run can
+answer, from an earlier run's retrospective. That run's reading
+removes or keeps each. The lists below are *For run 5 only*, from
+run 3's `RETRO.md`, D22.
 
 **At the close.**
 
