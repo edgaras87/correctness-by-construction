@@ -883,17 +883,23 @@
                needs the answer.
       See: devlog 2026-10-21; `TODO-CONVERSATION-MEMORY.md` §4.
 
-- [ ] Decide whether a check compares the worked example's two
-      copies (2026-10-15, the commit plan for writing rules).
-      Context: `.claude/rules/one-home.md` rule 5 asks a check where two copies
-      cannot be avoided (ADR-0053). The worked example sits in
-      `cbc-framing` and `cbc-slice` and must stay identical; it is
-      compared by hand at each edit, and was identical on
-      2026-10-15.
-      Ideas: a diff of the two in `exchange-deliver`'s gates, since
-             a delivery is when the copies leave.
-      Trigger: the two found different, or the worked example's
-               next edit.
+- [ ] Decide how the worked example's two copies are kept: checked
+      by a diff, or made one (2026-09-17, and 2026-10-15 for the
+      check).
+      Context: one document, byte-identical in `cbc-framing`'s and
+      `cbc-slice`'s `references/`. `.claude/rules/one-home.md` rule 5
+      asks a check where two copies cannot be avoided (ADR-0053);
+      today they are compared by hand at each edit, and were
+      identical on 2026-10-15. Made one, `cbc-slice` could not be
+      installed without `cbc-framing`.
+      Ideas:
+      - a diff of the two in `exchange-deliver`'s gates, since a
+        delivery is when the copies leave.
+      - one document, once one skill is wanted without the other.
+      Trigger: the two found different, the worked example's next
+               edit, or a reason to install one skill without the
+               other.
+      See: devlog 2026-09-17, later.
 
 - [ ] Decide whether `infra-establish`'s contract carries a paragraph
       on the store's facility (2026-09-17, never-oversold).
@@ -1080,14 +1086,6 @@
       Ideas: a second example on another shape, keeping this one.
       Trigger: the next framing read on a differently shaped
       problem.
-      See: devlog 2026-09-17, later.
-
-- [ ] Deduplicate the worked example (2026-09-17).
-      Context: one document shipped twice, byte-identical in both
-      skills' `references/`. Merging would make
-      cbc-slice uninstallable without cbc-framing; diff polices
-      the copies.
-      Trigger: a reason to install one skill without the other.
       See: devlog 2026-09-17, later.
 
 - [ ] Could a project need its own mould of a shipped skill?
