@@ -22,19 +22,21 @@ manual owns the thing a word names, pointed at there.
   convention or making an output: a run, or this one.
 - **delivery** — files copied whole into a run with a note, or a
   note alone. At birth, and after (`docs/conventions/exchange/`
-  §3.2, §6.7).
+  §3.2, §6.6).
 - **staging** — copying the delivery and its note into a run's
   `temp/`, by the reviewer or by the agent when told to
   (`docs/conventions/exchange/` §3.1). The run does nothing until it
   has happened.
 - **take** — the run's act: moving delivered files from `temp/`
-  into place and recording the pin.
+  into place and recording the pin (`docs/conventions/exchange/`
+  §4).
 - **read-through**, **pin** — the two numbers a run records for a
   delivery: its own commit the deliverer last read up to, and the
   deliverer's commit its copies equal. The exchange's,
   `docs/conventions/exchange/` §2.2.
 - **note** — the text beside a delivery: what changed since the
-  run's pin, and a verdict on everything the run asked.
+  run's pin, and a verdict on everything the run asked
+  (`docs/conventions/exchange/` §3.7).
 - **harvest** — us reading a run's repository and changing our
   masters from what it learned. No files move.
 - **master** — the one copy of a file that is edited. Every other
