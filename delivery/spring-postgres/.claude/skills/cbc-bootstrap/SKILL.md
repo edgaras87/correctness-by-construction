@@ -98,9 +98,9 @@ Reason out and present for confirmation, each with its why:
   scaffolding, marked to die at the first slice); no persistence schema (no
   table before its invariant); no other adversity classes; no auth unless a
   slice demands identity at the door; no delivery machinery beyond locally
-  runnable and testable; **no fail-fast on a missing secret** — lived: the
-  app starts with the unresolved placeholder as its password and only
-  health tells; the only operator at bootstrap is the reviewer, the
+  runnable and testable; **no fail-fast on a missing secret** (the trap:
+  `references/spring-boot-walkthrough.md`, step 3) — the only operator at
+  bootstrap is the reviewer, the
   harness accepts an instance only on health with the store UP, and the
   release gate's clean-machine test is where a forgotten export becomes
   a real need — decided there, unless this run decides otherwise by name.
@@ -120,10 +120,9 @@ choose — beside the builder's other manuals; both lived runs put it at
 - §4 the ground's facts **by pointer** — cite the operator manual and
   contract, never restate them; carry only what the code needs in hand: the
   identity the application connects as, and the endpoint facts.
-  **Lived rule: state environment facts notation-neutrally** — "env var X,
-  default Y" — never in any tool's placeholder syntax. (A compose-style
-  `${VAR:-default}` carried into an application config silently resolves to
-  a wrong literal.)
+  **State environment facts notation-neutrally** — "env var X, default
+  Y" — never in any tool's placeholder syntax (the trap:
+  `references/spring-boot-walkthrough.md`, step 3).
 - §5 the evidence owed at the end: the step plan as executed with
   deviations, the run proof (app up, health UP with the database component
   UP, the one standard test command green), and the commits standing.

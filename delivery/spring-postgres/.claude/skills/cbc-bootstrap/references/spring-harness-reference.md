@@ -183,21 +183,13 @@ public abstract class WebDatabaseIT extends DatabaseIT {
 }
 ```
 
-**Bound facts — the lived traps live here.**
+**Bound facts.**
 
-1. **`spring-boot-restclient` must be present at test scope**, or
-   this context dies with `NoClassDefFoundError: RestTemplateBuilder`
-   — the test REST client module's auto-configuration introspects a
-   builder from that *separate* module. The failure names something
-   else entirely, which is why the pom convention requires the
-   dependency's comment to say plainly that it exists only to satisfy
-   another module's auto-configuration.
-2. **Boot 4 moved the test REST client** to
-   `org.springframework.boot.resttestclient.*` — and `RANDOM_PORT`
-   alone **no longer provides the `TestRestTemplate` bean**:
-   `@AutoConfigureTestRestTemplate` is required, or the autowire
-   fails with "No qualifying bean".
-3. The bases stay lean — no shared protected fields; a test autowires
+1. The Boot 4 test-client traps, `spring-boot-restclient` at test
+   scope and `@AutoConfigureTestRestTemplate`, are the walkthrough's
+   (`spring-boot-walkthrough.md`, step 4, *Traps, exact*, items 1 and
+   2).
+2. The bases stay lean — no shared protected fields; a test autowires
    what it uses (`JdbcClient`, `TestRestTemplate`), so attacking
    through the door and inspecting persisted state directly are both
    one line away. The bases grow only what every extending test needs
