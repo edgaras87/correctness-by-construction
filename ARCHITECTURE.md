@@ -36,53 +36,66 @@ how to use it, is `README.md`.
 
 Two bodies of writing, neither of which ships. Each has something
 in the delivery that is it *made usable*, and the pairing is the
-spine of this repo:
+spine of this repo. The models ship nothing either:
 
 | stated | made usable |
 |---|---|
-| the concept (1.1) | the method (2.1) |
-| the conventions (1.2) | the container (2.3) |
+| the concept (§1.1) | the method (§2.1) |
+| the conventions (§1.2) | the container (§2.3) |
+| the models (§1.3) | nothing: a manual may stand on one |
 
 ### 1.1 The concept — `concept/`
 
-**Five chapters in plain words: correctness is built into the
-structure of a thing rather than tested in afterwards.**
+Five chapters, `concept/00-cbc.md` first.
 
-This is the repo's purpose. Everything else exists because of it,
-and is either derived from it or checked against it.
-
-- **Canonical here.** This is where the concept is true. Every
-  copy elsewhere — a run's `docs/concept/` — is a copy; what a run
-  may do to it is `docs/conventions/exchange/` §5.6. The concept
-  changes only here.
+- **Canonical here.** Every copy elsewhere, a run's `docs/concept/`,
+  is a copy; what a run may do to it is
+  `docs/conventions/exchange/` §5.6. The concept changes only here.
 - **Versioned as a whole**, not per chapter. It is at **v1**, and
   CHANGELOG's [Unreleased] holds a change that makes the next
-  release v2 (ADR-0048). The bump rule is one question: could this
-  change invalidate something derived from it.
-- **It demands nothing by itself.** A chapter cannot be run. What
-  can be run is the method below, which is where the concept
-  becomes work.
+  release v2 (ADR-0048). When its version moves is `CHANGELOG.md`'s
+  standing comment.
+- **It demands nothing by itself.** A chapter cannot be run; the
+  method can (§2.1).
 
 ### 1.2 The conventions — `docs/conventions/`
 
-**Twelve manuals: how work is done here, and why each rule is the
-shape it is.** Recording, committing, hygiene, how an agent is
-arranged, how a choice between things you look at is settled, the
-exchange — how a delivery goes down to a run and how what the run
-learned comes back — shapes, what a kind of output looks like and
-where that description sits — writing, how a text reads — the
-retrospective, how a finished run looks back and applies what it
-found — facts in sync, how each fact keeps one home and every text
-relying on it stays in agreement with it — and conventions
-themselves, what one is and how it is made.
+How work is done here, and why each rule is as it is. None of it is
+CbC: the concept is about how a system is built, the conventions
+about how a repo is kept. What a convention is, and its two parts,
+is `docs/models/idea-to-output.md` §6; how they hand work to each
+other is the index, `docs/conventions/README.md`.
 
-None of it is CbC. The concept is about how a system is built; the
-conventions are about how a repo is kept.
+- **agent-arrangement** — the files that make an agent work in a
+  repo: `docs/conventions/agent-arrangement/`.
+- **commit-messages** — how a commit is written:
+  `docs/conventions/commit-messages/`.
+- **commit-plan** — how work larger than one commit is planned:
+  `docs/conventions/commit-plan/`.
+- **conventions** — how a way of working is written down and made
+  usable: `docs/conventions/conventions/`.
+- **exchange** — what passes between a deliverer and a run:
+  `docs/conventions/exchange/`.
+- **facts-in-sync** — how each fact keeps one home, and what relies
+  on it agrees: `docs/conventions/facts-in-sync/`.
+- **project-recording** — the records, and how each is kept:
+  `docs/conventions/project-recording/`.
+- **repo-hygiene** — the three files every repo carries:
+  `docs/conventions/repo-hygiene/`.
+- **retrospective** — how a finished run looks back:
+  `docs/conventions/retrospective/`.
+- **shapes** — what a kind of output looks like:
+  `docs/conventions/shapes/`.
+- **visual-comparison** — how the way a structure is shown is
+  chosen: `docs/conventions/visual-comparison/`.
+- **writing** — how a text reads: `docs/conventions/writing/`.
 
-- **What a convention is, and its two parts** —
-  `docs/models/idea-to-output.md` §6.
-- **How they hand work to each other** —
-  `docs/conventions/README.md`, the index, a local map.
+### 1.3 The models — `docs/models/`
+
+Ideas any repo can adapt, their rules varying by repo
+(`docs/models/idea-to-output.md` §2): the agent, the tiers, and idea
+to output. A manual that stands on one names it in its `foundation`
+line.
 
 ## 2. The delivery — what a project gets, and where it goes
 
