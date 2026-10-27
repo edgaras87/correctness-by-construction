@@ -23,7 +23,9 @@ size" (2026-10-27). ADR-0068 records them.
   it for:
   - its header comment, its form, naming project-recording by path
     (FINDING-186);
-  - an opening that says what it maps and points at the README;
+  - an overview: what is stated, what ships, how runs are born and
+    read back, what must hold, where things are; pointing at the
+    README for what this repo is;
   - §1, the pairing, with the models added. §1.1 points at the
     CHANGELOG's comment for the version rule (FINDING-176). §1.2
     gives a phrase and a path for each convention;
@@ -33,10 +35,10 @@ size" (2026-10-27). ADR-0068 records them.
   - §3, what must stay true, as a table: rule, home, how it is
     held;
   - §4, the codemap, its records pointing at project-recording's
-    map (FINDING-145's last part);
-  - what it knows is wrong.
+    map (FINDING-145's last part).
 
-  Gone: *How to read it*, the old §3 and §4 (FINDING-185 with
+  Gone: *How to read it*, the list of what it knows is wrong, whose
+  entries are TODO known issues, the old §3 and §4 (FINDING-185 with
   them), §2.3's list of which convention owns each container file,
   the counts, and §2.5's diagram and retellings.
 - **Project-recording's deliverer seat** lists our map's parts,
@@ -112,11 +114,24 @@ the rule: a new word goes in its group.
 
 ### Decision 3: a map of two pages, part by part
 
-**7. `docs: ARCHITECTURE's opening points at the README`**
-The header comment says what the map holds, naming project-recording
-by root path (FINDING-186). The opening says what the page maps and
-points at `README.md` for what this repo is. *What this is* and
-*How to read it* go.
+**6c. `docs: ADR-0068 sends the known-wrong list to TODO`**
+Inserted at commit 7's boundary. The reviewer asked why the map
+says what is wrong instead of telling the architecture. Of the
+page's 104 versions, 102 had the list empty, and TODO's *Known
+issues* already holds what is known and deferred. Decision 3 and
+the Consequences change: the list goes, and a line known wrong is a
+known issue. ADR-0044's list is superseded with its length.
+
+**7. `docs: ARCHITECTURE opens with an overview`**
+Reworked at its boundary, on the reviewer's questions. The header
+comment says what the map holds, naming project-recording by root
+path (FINDING-186), and that a line known wrong is a TODO known
+issue. The opening is an overview of the repo, as a run's map opens
+(project-recording §8.4): what is stated, what ships, how runs are
+born and read back, what must hold, where things are, each with its
+section; it points at `README.md` for what this repo is, and
+argues nothing. *What this is*, *How to read it* and the list of
+what it knows is wrong go.
 
 **8. `docs: ARCHITECTURE §1 is the pairing`**
 The models join the table. §1.1: canonical here, versioned as a
@@ -160,8 +175,9 @@ ADR-0003 as the why.
 ### Decision 4: the README
 
 **15. `docs: the README says what this repo is`**
-It gains what only `CLAUDE.md` said: the deliverer, and runs read
-back here. "Harvested concept changes" becomes changes to our
+It gains what only `CLAUDE.md` and ARCHITECTURE's old opening
+said: the deliverer, runs read back here, documents only and nothing
+built. "Harvested concept changes" becomes changes to our
 masters.
 
 **16. `chore(agent): the entry file follows the README`**
