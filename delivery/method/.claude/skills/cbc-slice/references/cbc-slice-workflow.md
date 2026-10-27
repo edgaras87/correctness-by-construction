@@ -5,6 +5,10 @@ holds only what SKILL.md does not: the record's outline, why each
 stage runs as it does, and worked examples. Each section names the
 stage it serves.*
 
+*`worked-example.md` beside this file follows the one in the
+cbc-framing skill, which owns it: an edit lands there first, then
+here, word for word.*
+
 ---
 
 ## The unit
