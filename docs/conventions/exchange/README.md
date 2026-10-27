@@ -257,7 +257,8 @@ and the note says both halves.
 What changed since the run's pin, stated so the run
 can diff the staging against what it holds and find the note wrong.
 Why it matters to this run — the part a diff cannot carry. A verdict
-on everything the run addressed to us since we last read it. A
+on everything the run addressed to us since we last read it, in the
+run's order: the note is the verdicts' only channel. A
 verdict says the decision and what the run owes now, nothing else.
 It never describes our own practice, which the run cannot check. It
 never says "accepted" for something not decided.
@@ -265,7 +266,10 @@ Nothing that needs our repo to verify: a note that reports facts
 about our tree gives the run a hedge it cannot close. Where a claim
 cannot avoid it — a thin note, which ships no copy; material
 outside the delivery; a negative claim, which is about our whole
-tree — the note says so, in a clause.
+tree — the note says so, in a clause. A note fails to reach when it
+is thin, when what it names does not exist, when the relationship
+changed under it, or when the right content comes in a shape the run
+cannot act on.
 
 No ADR number, no path in this repo and no word of this repo's own
 vocabulary, in a note or in a prompt: the run cannot see this repo,
@@ -279,12 +283,9 @@ ordinal, and the one it gave itself at its Identity step. A run's
 records do not say which is which; ours do, in `ARCHITECTURE.md`
 §2.5.
 
-*The three rules about verdicts were each a defect first. And four
-ways a note fails to reach: it was
-thin; the thing it names does not exist; the relationship changed
-under it; or it carried the right content in a shape the run could
-not act on — the last found on 2026-09-20, when a note of reports
-was sent back and rewritten as verdicts.*
+*The three rules about verdicts were each a defect first. The last
+way a note fails was found on 2026-09-20, when a note of reports was
+sent back and rewritten as verdicts.*
 
 ## 4. The take
 
@@ -399,8 +400,8 @@ acceptable; behind the run's own lessons is not.
 ### 5.4 One word for the other side
 
 In the rule and in the backlog line:
-*deliverer*. Run 3's text says *source*; `ARCHITECTURE.md`'s words
-say deliverer, and the shipped rule says one thing.
+*deliverer*. Run 3's text says *source*; `docs/glossary.md` says
+deliverer, and the shipped rule says one thing.
 
 ### 5.5 A run does not rename or delete a copy
 
@@ -457,8 +458,7 @@ It is the run's own until the run offers it. It appears in the
 diff against the pin as an addition, and it is read only if a
 backlog line points at it — a shape, a rule, a
 reference the run thinks any project would want. Then it gets a
-verdict like an edit does. That is how a run's rule for editing
-copies reached this document.
+verdict like an edit does.
 
 ### 6.3 The reading
 
@@ -473,7 +473,8 @@ where; how the list is worked is
 `.claude/rules/working-a-reading.md`'s, practice under it.
 
 A reading also asks what the run teaches the worked example,
-`references/worked-example.md` in cbc-framing and cbc-slice.
+`delivery/method/.claude/skills/cbc-framing/references/worked-example.md`,
+which its copy in `cbc-slice` follows.
 
 *Learned by 2026-09-17: the worked example ships like everything
 else, and it sat untouched through three runs because no reading
@@ -510,14 +511,14 @@ Each item leaves the list with one of three:
 - **Held** — with the trigger that would settle it, and a line in
   our own backlog so it is not lost between readings.
 
-An unverifiable promise is worse than any of the three. The note
-carries all of them, in the run's order; there is no other channel.
+An unverifiable promise is worse than any of the three. The
+verdicts go down in the note (§3.7).
 
 ### 6.6 Every read ends with a note
 
 Even an empty one. The note names
 the run's commit we read through; the run records it beside the pin
-(§2). A read that finds nothing addressed to us still sends *read
+(§2.2). A read that finds nothing addressed to us still sends *read
 through `<commit>`, nothing to answer, no files* — one line each
 side — so the run always holds the latest read-through, and can see
 for itself when a hand-off was seen and not yet answered. A note
