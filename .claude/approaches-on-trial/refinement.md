@@ -335,7 +335,7 @@ commit, so the file can be read from git.
   refinement's eight kinds. Wiring, which adds missing links, fitted
   round 1; whether other added text fits is still to see.
 - **Whether one layer's findings fit one commit plan.**
-- **"Stage" in `ARCHITECTURE.md`'s *The words*** is one phase of a
+- **"Stage" in `docs/glossary.md`** is one phase of a
   skill. This page uses it for its own phases. The close widens
   that definition, or this page takes another word.
 - **Whether the full reads again paid.** The counts of findings in

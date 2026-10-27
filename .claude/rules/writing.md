@@ -26,8 +26,8 @@ what it says.
    act of the exchange", but "a third step of the exchange."
 6. **Keep names as labels.** Write defined names and references
    exactly: ADR-0052, FINDING-7, WORK-9, `exchange-read`. Define each
-   coined word once, in plain words, in `ARCHITECTURE.md`'s *The
-   words*. Coin a word only when plain English cannot say it. A number
+   coined word once, in plain words, in `docs/glossary.md`. Coin a
+   word only when plain English cannot say it. A number
    local to one document carries its owner outside it: "run 3's RETRO
    D22", never a bare "D22": every run's RETRO has one.
 7. **Cut what adds nothing.** If a sentence can go without losing
