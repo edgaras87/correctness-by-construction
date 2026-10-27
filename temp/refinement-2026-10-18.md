@@ -1492,3 +1492,420 @@ work names each fixed finding's commit.
 
 None of the five declines is taste alone: each line is true, or
 history, or another item carries it.
+
+## Round 2's close read
+
+All 114 living files read again at `d37a08f`, 2026-10-27, against
+round 2's four kinds (§2.8), by seven readers as in round 2's read:
+One home, Dependencies and Lessons in each seat, Layout across both.
+Each reader checked its findings in the tree, and the agent checked
+25 of them again before listing, with lines joined; every quote
+held. Each finding says whether its text changed in round 2
+(`8acc4d4..d37a08f`), and "reopens" where a round 2 fix missed a
+place. Each carries the agent's proposed ending. Three findings two
+readers made are merged, one is split by seat, and three come from
+what readers met in passing (FINDING-250, 257, 264).
+
+Found true, so not listed:
+- every `§` pointer in our 53 files read whole lands on a heading
+  (532), and every root path in what ships resolves in the run's
+  tree;
+- every section renumbered or split in round 2 holds one subject,
+  its parts numbered, and no living pointer names an old number;
+- the pin, the sweep, the `foundation` line, the fact reference,
+  where the concept lands, the bump rule and what this repo is each
+  have one home, the other tellings pointing;
+- the worked example's two copies are byte-identical; our three
+  convention skills differ from the container's only as ADR-0069
+  allows; `approach-drafting.md` is one text in both seats;
+- round 2's other fixes hold.
+
+### Findings
+
+#### Layer 1: the conventions manual
+
+**FINDING-229.** One home; checked. Conventions §3: "The CHANGELOG
+is the concept-version log (ADR-0003) and has no place for a
+convention's entry" cites the ADR; the home is `CHANGELOG.md`'s
+standing comment (DECISION-14). Not changed. Reopens FINDING-176.
+Proposed: fix, point at the comment.
+
+**FINDING-230.** Dependencies; checked. Conventions §3 step 5 asks
+to update `ARCHITECTURE.md` §1.2's count, §2.3's ownership line and
+the codemap's count; all three went in layer 4 (`f18f280`,
+`1e6870f`, `45e1028`). Not changed; its targets were. Reopens layer
+4's rewrite. Proposed: fix, step 5 asks for §1.2's line only.
+
+#### Layer 2: project-recording
+
+**FINDING-231.** One home; checked. Each record's moment is told in
+its *When* (§2.5, §3.6, §4.5, §5.5, §6.5, §7.5) and in the records
+table, which §11 rule 3 makes the one place ("a second list here
+would be a copy that drifts"). They have drifted: §4.5 "Every
+working session, 2–5 minutes", the table "Session ending, a dead
+end hit, or a TODO item added". Not changed. Proposed: fix, each
+*When* keeps its why and points at §13.
+
+**FINDING-232.** One home; resting on the reader. How
+conversation-memory is read is told in §14, in the file's header
+comment, and in `TODO.md`'s header. §14 has no *How*; layer 2's
+forms plan skipped it. Changed (moved, `fa57042`). Reopens
+FINDING-144. Proposed: fix, §14 keeps what and why and points at
+the header.
+
+**FINDING-233.** One home; uncertain. §1, the map, holds two lines
+no summary holds: the newcomer's reading order (told again in §8.2
+and §8.4), and "Everything is Markdown, in the repo, versioned with
+git. That is itself a rule of the convention". ADR-0067: the map is
+home to nothing. Changed (§1 rebuilt). Proposed: fix, each line
+gets its home outside the map.
+
+**FINDING-234.** Layout; resting on the reader. §1 holds the map
+and a picture per seat of how the records feed each other; §11 is
+"How information flows between records". Changed (§1 rebuilt).
+Reopens FINDING-145. Proposed: decline: ADR-0067 decision 2 made
+the pictures part of the map's form, and §11 holds the flow's
+rules, not a picture.
+
+**FINDING-235.** Layout; checked. §13's "**Anti-pattern.**" is an
+unnumbered bold part, where the manual numbers its anti-patterns as
+parts eight times (§2.6 to §9.6). Not changed. Proposed: fix, §13.1
+and §13.2.
+
+**FINDING-236.** Lessons; checked. Three live claims sit in dated
+italics: §14's "It is looked at when the third such item is worked,
+or at the refinement step's close… If it holds, it reaches runs
+through the container; if not, it goes."; exchange §2.4's "The
+trigger that would reopen it… It has not happened."; facts-in-sync
+§5's "Nothing else from four runs has reached a chapter…", stale
+since run 5. Not changed. Reopens FINDING-158. Proposed: fix, each
+live part stands in its body; the italic keeps its case.
+
+**FINDING-237.** Lessons; resting on the reader. §5.4 gives the cap
+on a TODO item's Context a reason only in an italic case: "three
+lines cut meaning and lost a fact (ADR-0040)". Not changed.
+Proposed: fix, §5.4 states the cap's reason in general.
+
+**FINDING-238.** Lessons; checked, but (e) and (f) resting on the
+reader. History in descriptions' bodies (`docs/conventions/facts-in-sync/`
+§4): (a) project-recording's deliverer seat, "as its first devlog
+entry agreed on 2026-08-27"; (b) retrospective §2, "They came from
+the plan's old Retrospective section, which the skill replaced";
+(c) shapes §2, "a shape was called each of them at some point
+before it got its own word"; (d) commit-plan's *Why it arrives this
+way*, "it moved to `docs/conventions/commit-messages/` §2 for that
+reason"; (e) agent-arrangement, "since ADR-0036"; (f) shapes'
+deliverer seat, "since ADR-0057". Not changed. Proposed: fix, each
+states today's fact or goes; (e) and (f) become citations.
+
+#### Layer 3: the other manuals, the models, the concept
+
+**FINDING-239.** One home; checked. Exchange's *What this is made
+usable as* ("loading when a reading in `temp/` is read, not while a
+new one is written") and shapes' deliverer seat ("loaded when the
+file is read, not while a new one is written") tell when a rule
+loads with no fact reference; its home is agent-arrangement §5.6.
+Not changed. Reopens FINDING-154. Proposed: fix, each names §5.6.
+
+**FINDING-240.** One home; resting on the reader. "Description" is
+defined in facts-in-sync §4 and in `docs/models/idea-to-output.md`
+§2, neither citing the other. Changed (`b71b437`). Reopens
+FINDING-179. Proposed: fix, facts-in-sync §4 cites the model §2.
+
+**FINDING-241.** Layout; resting on the reader. Exchange §3.7, the
+note's home, now holds the verdicts' wording rules, while §6.5,
+*Verdicts*, says "The note carries all of them, in the run's order;
+there is no other channel". Changed (`c244e6c`, `ac6db0c`). Reopens
+FINDING-155 and 160. Proposed: fix, §3.7 says the note carries
+every verdict, in the run's order; §6.5 keeps the three endings and
+points at §3.7.
+
+**FINDING-242.** Lessons; checked. Exchange §3.7's italic holds four
+general ways a note fails to reach; only the last is a dated case,
+and "the relationship changed under it" stands in no body line.
+Changed (`c244e6c`). Reopens FINDING-155. Proposed: fix, the body
+names the ways no rule there guards; the italic keeps the
+2026-09-20 case.
+
+**FINDING-243.** Lessons; checked. Exchange §6.2: "That is how a
+run's rule for editing copies reached this document." History in
+the body; §5.1's italic tells the case. Not changed. Reopens
+FINDING-157. Proposed: fix, the sentence goes.
+
+**FINDING-244.** Dependencies; checked. Exchange §5.4:
+"`ARCHITECTURE.md`'s words say deliverer"; the words are
+`docs/glossary.md` since `8919dac`. Not changed. Reopens layer 4's
+move. Proposed: fix.
+
+**FINDING-245.** Dependencies; checked. Exchange §6.3:
+"`references/worked-example.md` in cbc-framing and cbc-slice", a
+path relative to a skill. Changed (`c244e6c`). Reopens FINDING-156.
+Proposed: fix, the owner's path,
+`delivery/method/.claude/skills/cbc-framing/references/worked-example.md`.
+
+**FINDING-246.** Dependencies; uncertain. Exchange §6.6's "(§2)"
+means §2.2; agent-arrangement §5.5's "`docs/models/agent.md` §4"
+means §4.3. Each names the part's parent. Not changed. Proposed:
+fix, each names the part.
+
+**FINDING-247.** Dependencies; checked. Facts-in-sync §2's "the
+measured case is `docs/conventions/agent-arrangement/`'s" and
+project-recording's *Why it arrives this way*, "the failure
+`docs/conventions/agent-arrangement/` measured", mean its *What it
+is for* and do not say so. Not changed. Proposed: fix.
+
+**FINDING-248.** Lessons; checked. Agent-arrangement §3.2's
+"*Empty at birth until 2026-09-23.*" ended the list of the
+container's rules, which `d2df7ff` moved out; it now follows "with
+one exception, §3.9." Changed. Reopens FINDING-150. Proposed: fix,
+it goes.
+
+**FINDING-249.** Lessons; checked, the second part resting on the
+reader. Agent-arrangement §3.8's italic "Numbered last, so the
+sections before it keep the numbers history cites" is false since
+§3.9 (`d2df7ff`). Project-recording §13's italic explains its own
+number the same way. Changed. Reopens FINDING-150. Proposed: fix,
+§3.8's italic goes; §13's declined, true and about its own number.
+
+**FINDING-250.** Dependencies; checked. Agent-arrangement's *Why it
+arrives this way*: "the comments are dropped on load (§2.6)"; §2.6
+tells it again and points at §5.3, its home. Not changed.
+Proposed: fix, §5.3.
+
+**FINDING-251.** Layout; checked. Repo-hygiene says where an overlay
+sits twice: §2, "below the marked line each base file carries", and
+§3's first rule, "Overlay content goes below the marker". Changed
+in part (`dd88bf6`, §2). Proposed: fix, §3's line goes.
+
+**FINDING-252.** Layout; checked. Commit-messages §2 and
+visual-comparison §2 are bold-led bullets, the form commit-plan §2
+had before `79bc4a2` numbered it; 14 pointers name commit-messages
+§2, 8 meaning one bullet and 6 another. Not changed. Reopens
+FINDING-172. Rests on DECISION-15.
+
+#### Layer 4: `ARCHITECTURE.md`, `README.md`, the records
+
+**FINDING-253.** One home; checked. `PLAN.md`'s header comment
+retells the step's gate and close ("the devlog entry that closes it
+names the step and the commit of its ticked gate"), which *The step
+form* holds, and has drifted from it ("what diverged from the
+plan"). Not changed. Reopens FINDING-144. Proposed: fix, the header
+says what the file holds and points at *The step form*.
+
+**FINDING-254.** One home; checked. The glossary's "master",
+"harvest", "local map", "seats" and "manual" restate their homes
+with no fact reference, against the glossary's own header; "master"
+has drifted from exchange §1, fact 3 ("— or by the run editing
+it"). The index's "A local map (ADR-0045)" cites only the ADR.
+Changed (moved, `8919dac`). Reopens FINDING-184. Proposed: fix,
+each entry points at its home; the index cites project-recording
+§8.6.
+
+**FINDING-255.** One home; checked. `ARCHITECTURE.md` §2.1 and §2.2
+give the `foundation` values word for word; their home is
+conventions §1.3. Changed (`1e6870f`). Reopens FINDING-141.
+Proposed: fix, keep "derived from" and "checked against", and cite
+§1.3.
+
+**FINDING-256.** One home; checked. `ARCHITECTURE.md` §3's row "A
+skill never spans two groups, and nothing that needs Spring…" names
+ADR-0029 as where it is stated; a closed ADR is history. The first
+half lives in exchange §3.4; the second has no living home.
+Changed (`dcf7530`). Proposed: fix, cite exchange §3.4; the second
+half to TODO's "Decide how a fact reference is written", as
+FINDING-208's question.
+
+**FINDING-257.** Dependencies; checked. `ARCHITECTURE.md` §2.5 cites
+the exchange's "(§1)", "(§2.2)", "(§4)" and "(§6)" bare, in a page
+with its own §1, §2.2 and §4. Changed (`1e6870f`). Proposed: fix,
+each with the exchange's path.
+
+**FINDING-258.** Dependencies; checked. `README.md` ("see
+docs/models/tiers.md") and `CLAUDE.md` ("see docs/models/tiers.md")
+name no section. Changed in part (`cf61def`, `0a40aea`). Reopens
+FINDING-187. Proposed: fix, §2.1 and §2.2.
+
+**FINDING-259.** Dependencies; checked. `TODO.md`'s direction item:
+"Idea-to-output §2's table names `.claude/shapes/`", by bare name.
+Changed (`b2c843b`). Reopens FINDING-188. Proposed: fix.
+
+**FINDING-260.** Dependencies; checked. `TODO.md`'s hygiene item
+splits a path into two code spans, "`docs/conventions/`
+`repo-hygiene/templates/java-spring/`", which no grep finds. Not
+changed. Proposed: fix, one span.
+
+**FINDING-261.** Dependencies; checked. `TODO.md`: the agents item's
+"a stop at each boundary (`commit-plan`)", which is commit-messages
+§2's stop (commit-plan §2.13), and the line-width item's
+"(`commit-messages`)". Changed in part (`3b2782b`). Reopens
+FINDING-173. Proposed: fix, root paths.
+
+#### Layer 5: our agent setup
+
+**FINDING-262.** Dependencies; checked. The refinement's §1:
+"History is the devlog, closed ADRs and commit bodies
+(`.claude/rules/one-home.md`)"; the home is
+`docs/conventions/facts-in-sync/` §1. Not changed. Proposed: fix.
+
+**FINDING-263.** Dependencies; checked. Our `commit-plan` skill, §3
+"commit-messages keeps the two apart" and §6 "The rule is
+commit-messages'", name the convention by name. Written for our
+seat (ADR-0069). Not changed. Reopens FINDING-173. Proposed: fix,
+`docs/conventions/commit-messages/` §2.
+
+**FINDING-264.** Of another kind, Agreement; checked. `CLAUDE.md`'s
+records table has no row for `docs/glossary.md`, a record of both
+seats since layer 4 (project-recording §1, item 10; §13: adding a
+record adds its row). Not changed. Reopens layer 4's `8919dac`.
+Proposed: fix.
+
+#### Layer 6: `delivery/`, what ships
+
+**FINDING-265.** Lessons; checked. `visual-comparison`, both seats:
+two undated cases in the body, §1's "Once, the table was the best
+answer to one requirement and lost on another" and §2 step 5's "In
+its first two runs, the render changed a verdict that reasoning had
+got wrong". Not changed. Reopens FINDING-222, whose fix stated only
+§1's rule. Proposed: fix, each becomes a dated italic or goes, in
+both seats.
+
+**FINDING-266.** Lessons; checked. `pure-seed.md`'s opening and
+`delivery/README.md` §4's row give the reason the entry files arrive
+composed only through a case: "runs that derived their own produced
+neither the pre-framing guard nor the pin stance". Not changed.
+Proposed: fix, the reason stated in general; ADR-0019 keeps the
+case.
+
+**FINDING-267.** Lessons; uncertain. `delivery/README.md` §4: "The
+rest is this repo's, taken from what the runs derived." History in
+a local map, which holds relations only (project-recording §8.6).
+Not changed. Proposed: fix, the clause goes.
+
+**FINDING-268.** Layout; resting on the reader. `visual-comparison`,
+both seats: the rule that a candidate set holds a non-picture is
+told in §1 and again in §2 step 3. Not changed. Proposed: decline:
+step 3 applies §1's rule where it is acted on.
+
+**FINDING-269.** Dependencies; checked. The run's entry file: "read
+`00-cbc.md` first", by bare name; `delivery/README.md`'s same clause
+got its path in `32d28f3`. Not changed. Reopens FINDING-161.
+Proposed: fix, `docs/concept/00-cbc.md`.
+
+**FINDING-270.** Dependencies; checked. `delivery/README.md` §2's
+"(`pure-seed.md` step 4)" and the seed's check, "identical to
+cbc-run-pure-playbook.md", name files bare: the second of
+FINDING-161's two names. Changed in part (`4806dd6`). Reopens
+FINDING-161. Proposed: fix, root paths.
+
+**FINDING-271.** Dependencies; checked. The two workflows' headers,
+written by `cd79ba3`, name the other skill's worked example without
+a path. Changed. Reopens FINDING-219. Proposed: fix, the run's
+paths.
+
+**FINDING-272.** Dependencies; resting on the reader. Pointers into
+another skill by name: `infra-serve`'s "(infra-establish's Records
+and outputs)", `evidence-test.md`'s "cbc-slice's build gate", the
+playbook's Release "in the `retrospective` skill's form". Not
+changed. Reopens FINDING-219. Proposed: fix, paths.
+
+**FINDING-273.** Dependencies; checked. The harness reference's
+pointer, "(`spring-boot-walkthrough.md`, step 4, *Traps, exact*,
+items 1 and 2)", is ambiguous: step 4 holds two such lists, and the
+facts are the second's, under *The harness in the codebase*.
+Changed (`d0445c3`). Reopens FINDING-209. Proposed: fix.
+
+**FINDING-274.** One home; checked. The harness reference §1's
+bound facts still tell the Testcontainers 2.x names, the
+walkthrough's trap, and hold a fact the walkthrough lacks:
+"`flyway-core` alone is not enough on Flyway ≥ 10". The
+walkthrough's step 4 points back at the reference's §1 for the Boot
+4 engine fact. Not changed. Reopens FINDING-209. Proposed: fix, §1
+points as §2 does; the Flyway fact moves to the walkthrough's
+traps; the pointer back is re-read.
+
+**FINDING-275.** Dependencies; checked, `bootstrap.sql` resting on
+the reader. `verify-database-model.sql`'s "the role-split model's
+claims" and `bootstrap.sql`'s "the role-split reference" name it in
+prose. Changed in part (`2ccaa58`). Reopens FINDING-207. Proposed:
+fix, its path.
+
+**FINDING-276.** One home; checked. `cbc-framing-workflow.md`'s
+*Tags* and `cbc-slice` Stage 1, item 5, retell writing rule 6's "a
+number local to one record carries its owner"; the home is the
+run's `writing.md`, rule 6, which the glossary template already
+points at. Not changed. Proposed: fix, both point there.
+
+**FINDING-277.** One home; checked. `cbc-slice` Stage 4, item 3, "one
+row per rule, never a paragraph", retells the ARCHITECTURE stub's
+header comment; FINDING-217's fix pointed the workflow's telling,
+not this one. Not changed. Proposed: fix, point.
+
+**FINDING-278.** One home; resting on the reader. Readiness lists
+retell what another skill makes: `system-readiness.md` READINESS-1
+against `cbc-framing`'s export list; `cbc-bootstrap` Stage 0 and
+`infra-serve` against `infra-establish`'s contract. Not changed.
+Proposed: fix, each names what it checks and points at the section
+that makes it.
+
+**FINDING-279.** One home; checked. The playbook's header comment
+retells the seed's swap ("At birth, everything from the step form
+down replaces the steps…") with no fact reference; the comment stays
+here, so our rule applies. Changed in part. Proposed: fix, cite
+`delivery/installs/pure-seed.md` step 4.
+
+**FINDING-280.** One home; checked. The two retrospective skills'
+closes, item 7, retell commit-plan's look back and `-detail` branch,
+and disagree: "Merge on the reviewer's word" against "land by
+fast-forward", which the playbook's close asks. Not changed.
+Proposed: fix, each points at the run's `commit-plan` §4 and §6 and
+keeps only its own step; fast-forward.
+
+**FINDING-281.** One home; resting on the reader.
+`apply-retrospective` Stage 3's records check retells the step
+form's closing items, and checks less: not the pairs of copies. Not
+changed. Proposed: fix, the skill keeps when the checks run and
+points at the step form's closing items.
+
+### Decisions
+
+**DECISION-15.** When is a bold lead a part
+(`docs/conventions/facts-in-sync/` §3.2)? Rests: FINDING-252. The
+rule says bold emphasis inside running prose is not a part, and
+says nothing of a bold-led bullet. `79bc4a2` read commit-plan §2's
+bullets as parts. Read that way, 16 more sections in 10 documents
+are unnumbered parts: facts-in-sync §1; writing §1;
+agent-arrangement §4; project-recording §12 and §14; retrospective
+§2 and §3; shapes §2; repo-hygiene §2; idea-to-output §5 and §8;
+the agent model §5, §10 and §11; the refinement's §1 and §3. Bold
+labels on their own line are the same question: project-recording
+§1's group labels, the commit-plan skill's §6, two in
+`apply-retrospective`.
+- (a) Every bold-led bullet is a part: number all of them.
+- (b) A bold-led bullet is a part when it holds a paragraph of its
+  own, with its own reason or dated case; a short list item is not.
+  Commit-plan §2 stays; FINDING-252's two sections are numbered;
+  the rest are judged against the line at the last read.
+- (c) A bullet is never a part, only a heading is; commit-plan §2
+  goes back to bullets.
+- Recommended: (b). It keeps `79bc4a2` and the pointers into
+  commit-plan §2.10 and §2.13, and gives the rule the line it lacks.
+  A rule round 2 reads against does not change mid-round (§2.4), so
+  the line lands after round 2 closes, before round 3's rule check,
+  and FINDING-252 is worked with it.
+
+### The close read's counts
+
+53 findings, FINDING-229 to 281: the readers' 52, three merged, one
+split, three raised from what they met in passing:
+- by kind: 17 One home, 19 Dependencies, 10 Lessons, 6 Layout, and
+  1 of another kind, Agreement;
+- in text round 2 changed, in whole or in part: 22; in text it did
+  not: 31;
+- reopening a round 2 fix that missed a place: 32;
+- by how they stand: 41 checked, 9 resting on the reader, 3
+  uncertain;
+- proposed: 50 fixed, 2 declined, 1 resting on DECISION-15;
+  FINDING-249 declined in part, and FINDING-256's second half to
+  TODO.
+
+One decision, DECISION-15.
