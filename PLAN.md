@@ -1,10 +1,8 @@
 # Plan: correctness-by-construction
 
 <!-- One step at a time: the piece of work being done now, in the
-     form below. Its gate is written when it opens. When it closes
-     it leaves this file, and the devlog entry that closes it names
-     the step and the commit of its ticked gate. Findings go to
-     TODO.md the moment they appear, and docs/adr/ lists the ADRs
+     form below. How a step opens and closes is The step form's.
+     Findings go to TODO.md the moment they appear, and docs/adr/ lists the ADRs
      itself (ADR-0041, ADR-0057). -->
 
 ## Legend

@@ -129,14 +129,15 @@ chapters carry none (`docs/conventions/facts-in-sync/` §4, step 1).
 
 The concept made usable: `cbc-framing` and `cbc-slice`, under
 `.claude/skills/`, and the shapes their gates read, under
-`.claude/shapes/`. Each skill is derived from the concept, and its
-`foundation` line says `concept v1`.
+`.claude/shapes/`. Each skill is derived from the concept, as its
+`foundation` line says (`docs/conventions/conventions/` §1.3).
 
 ### 2.2 The stack practice — `delivery/spring-postgres/`
 
 What one real Spring and Postgres project taught: `infra-establish`,
 `infra-serve` and `cbc-bootstrap`. Not derived from the concept but
-checked against it: `practice, checked against concept v1`. A run on
+checked against it, as their `foundation` lines say
+(`docs/conventions/conventions/` §1.3). A run on
 another stack takes no `spring-postgres/`; another stack's practice
 would be a group beside this one (ADR-0029).
 
@@ -174,9 +175,11 @@ has only ours:
 | run 5 | `event-tickets` | `~/IdeaProjects/cbc-pure-run-5` | through Release, read, not yet answered |
 
 How a delivery goes down and what a run learned comes back is the
-exchange, `docs/conventions/exchange/`: a run is blind to us (§1),
-records a pin and a read-through (§2.2), takes each delivery (§4),
-and is read back here (§6). What each side holds for it is the
+exchange, `docs/conventions/exchange/`: a run is blind to us
+(`docs/conventions/exchange/` §1), records a pin and a read-through
+(`docs/conventions/exchange/` §2.2), takes each delivery
+(`docs/conventions/exchange/` §4), and is read back here
+(`docs/conventions/exchange/` §6). What each side holds for it is the
 exchange's *What this is made usable as*.
 
 ## 3. What must stay true
@@ -196,7 +199,7 @@ of the tree, or a check at commit review.
 | A manual never outlives the rule it explains | `docs/conventions/facts-in-sync/` §4 and §5 (ADR-0025) | the foundation check, `.claude/rules/foundation-check.md`, at each commit |
 | Agent side and project side never share a commit | `docs/conventions/commit-messages/` §2 | the `commit-messages` skill, and commit review |
 | A pin never claims more than was checked | `docs/conventions/exchange/` §6.1 and §6.6 (ADR-0023) | `exchange-read` and `exchange-deliver` |
-| A skill never spans two groups, and nothing that needs Spring, PostgreSQL, Maven or podman sits under `method/` | ADR-0029 | the tree: a group is a directory, so a misfiled file shows as a path |
+| A skill never spans two groups, and nothing that needs Spring, PostgreSQL, Maven or podman sits under `method/` | `docs/conventions/exchange/` §3.4 | the tree: a group is a directory, so a misfiled file shows as a path |
 | A record stub is never re-delivered to a live run | `docs/conventions/exchange/` §2.4 (ADR-0036) | the run's `delivered-copies.md`, rule 1 |
 | The exchange's five facts hold | `docs/conventions/exchange/` §1 | `exchange-read` and `exchange-deliver`; the run's `delivered-copies.md` |
 

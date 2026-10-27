@@ -13,7 +13,7 @@ one upstream and one pin. It is the deliverer: each run is born from
 what this repo ships, and is read back from here. Documents only:
 nothing is built here, no application, no service, no run.
 It is the concepts tier of the workspace
-(concepts → runs, the tier above empty; see docs/models/tiers.md):
+(concepts → runs, the tier above empty; see `docs/models/tiers.md` §2.1, §2.2):
 runs happen in other repos pinned to
 a concept version, and their surprises come back here as changes to
 what we hold: the concept, the models, the conventions, and the

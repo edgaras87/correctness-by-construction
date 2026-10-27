@@ -24,13 +24,13 @@ manual owns the thing a word names, pointed at there.
   included, and no earlier state.
 - **project** — whichever repository is doing the work under a
   convention or making an output: a run, or this one.
-- **seats** — the sides a convention has, this repo's and a run's.
-  A manual says whether the two use it the same way.
+- **seats** — the sides a convention has, this repo's and a run's
+  (`docs/conventions/conventions/` §2.4).
 
 ## Between them
 
-- **master** — the one copy of a file that is edited. Every other
-  copy changes only by being copied anew.
+- **master** — the deliverer's copy of a file; a run holds copies
+  of it (`docs/conventions/exchange/` §1, fact 3).
 - **read-through**, **pin** — the two numbers a run records for a
   delivery: its own commit the deliverer last read up to, and the
   deliverer's commit its copies equal. The exchange's,
@@ -49,7 +49,7 @@ manual owns the thing a word names, pointed at there.
   into place and recording the pin (`docs/conventions/exchange/`
   §4).
 - **harvest** — us reading a run's repository and changing our
-  masters from what it learned. No files move.
+  masters from what it learned (`docs/models/tiers.md` §3.3).
 
 ## Kinds of text
 
@@ -75,7 +75,8 @@ manual owns the thing a word names, pointed at there.
   kept apart: its manual, and the artifacts a project acts on
   (`docs/models/idea-to-output.md` §6).
 - **manual** — a convention's description, at
-  `docs/conventions/<name>/README.md`. Never shipped.
+  `docs/conventions/<name>/README.md` (`docs/conventions/conventions/`
+  §2).
 - **made usable** — what a stated body becomes in the delivery:
   the concept as the method, the conventions as the container.
 - **approach** — how a piece of work is done. A skill or a rule is
@@ -98,8 +99,7 @@ manual owns the thing a word names, pointed at there.
   (`docs/models/idea-to-output.md` §2; `docs/conventions/shapes/`).
   Not a form, which is read while writing.
 - **local map** — a directory's `README.md` that says how the parts
-  of that area relate, which `ARCHITECTURE.md` points into. Relations only;
-  not every README is one (ADR-0045).
+  of that area relate (`docs/conventions/project-recording/` §8.6).
 
 ## How texts tie
 

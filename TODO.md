@@ -134,9 +134,10 @@
         never rules).
       - or that section splits in two: the approaches, and what
         reaches the agent's setup.
-      - `CLAUDE.local.md` repeats two rules: commit on the word
-        (`docs/conventions/commit-messages/` §2) and a stop at each boundary
-        (`commit-plan`). Yet `docs/conventions/agent-arrangement/`
+      - `CLAUDE.local.md` repeats two rules of
+        `docs/conventions/commit-messages/` §2: commit on the word,
+        and a stop at each boundary
+        (`docs/conventions/commit-plan/` §2.13). Yet `docs/conventions/agent-arrangement/`
         §3.7 counts how often the agent stops as a setting. Round
         2's FINDING-194 found it again.
       - "never rewrite main across 35edd3f" lives only in the
@@ -723,7 +724,7 @@
         §2 once, and holds this repo's instance: "today" facts and
         three ADRs. It would speak of tiers in general, the instance
         moving to the README, home of what this repo is (round 2's
-        layer 4). Idea-to-output §2's table names `.claude/shapes/`.
+        layer 4). `docs/models/idea-to-output.md` §2's table names `.claude/shapes/`.
       - "up" as toward the fact the line relies on, at any level.
       - sideways allowed for a fact another convention owns.
       - an approach pointing at a model when no convention holds the
@@ -985,8 +986,8 @@
 
 - [ ] Decide whether cbc-bootstrap points at the Spring hygiene
       parts, or "grow, never overwrite" stands (2026-09-18).
-      Context: the `.part` files under `docs/conventions/`
-      `repo-hygiene/templates/java-spring/` are pointed at by
+      Context: the `.part` files under
+      `docs/conventions/repo-hygiene/templates/java-spring/` are pointed at by
       nothing, and three runs derived `.gitignore` by hand. They
       are spring-postgres (ADR-0029 decision 7) and move with the
       answer; until then they sit against decision 5's beside-it
@@ -1165,7 +1166,7 @@
 - [ ] Decide how an edit or a new text is shaped, line width
       included (2026-10-25, the reviewer).
       Context: 72 characters is written only for a commit body
-      (`commit-messages`). The agent applied it to Markdown, and
+      (`.claude/skills/commit-messages/SKILL.md`). The agent applied it to Markdown, and
       rewrapped paragraphs to fit: diffs grew, and a scripted rewrap
       broke structure twice. 685 lines in 70 of the 171 Markdown
       files run past 72, tables aside. Nothing says how an edit
