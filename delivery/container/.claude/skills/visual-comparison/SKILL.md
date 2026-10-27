@@ -39,7 +39,9 @@ not text anyone can read in a diff.
 
 It does not fire for a form with one obvious answer, and it does
 not fire twice for the same question — the record from last time
-is the answer.
+is the answer. An obvious answer means a clear one, not a simple
+form: when what the work needs is already clear, the method does not
+fire, however large the form.
 
 ## 2. The method
 
