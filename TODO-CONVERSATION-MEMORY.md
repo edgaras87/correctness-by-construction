@@ -804,7 +804,8 @@ what it holds".
 
 ## 13. What the reference to a fact's home is called
 
-Item: "Define the fact reference, and stop calling it a tag".
+Item: "Write down how a fact reference is written, then rewrite each
+one to it".
 
 ### 2026-10-24
 
@@ -883,6 +884,83 @@ The reviewer's draft for *The words*, kept as said:
 > `(<path>, §<number>, <title>)`. The home is the one place the
 > fact is written, its single source of truth (`one-home`). When
 > the home changes, the walk greps for every fact reference to it.
+
+### 2026-10-27
+
+Worked after round 2's close, in seven decisions, one at a time.
+
+#### What exists today
+
+- **References:** 329 carry a path and a section, in 73 files, 16
+  of them shipped. 200 sit in parentheses and 129 are part of their
+  sentence; 136 same-document references, "(§3.1)", are in
+  parentheses.
+- **Titles:** 252 numbered sections, a mean of 17 characters, the
+  longest 60, 32 over 30.
+- **"Pointer":** 39 uses in 17 files, 7 shipped. The agent model's
+  claims P1 and P2 use it for any text that sends an agent to a
+  file; most other uses mean a fact reference.
+- **Paths inside a skill:** 28 relative to the skill, in 7 files;
+  about 13 bare sibling names; 17 from the root. Two skills hold
+  `references/worked-example.md`.
+- **The run's two rules:** its `writing.md` rule 8 asks "KILL-2, the
+  second charge for one order, fails"; its `one-home.md` rule 2
+  says "Elsewhere, link; don't retell".
+- **The off-template rule:** told in four shipped files, which
+  disagree on "expect a harvest" and "never bend a decided
+  constraint". Only the devlog of 2026-08 states it whole; ADR-0008
+  does not.
+
+#### What the reviewer asked, and what turned a decision
+
+- **Decision 1, the title:** the agent recommended no title, with a
+  writing rule deciding when a line says more. The reviewer: "but
+  what if we have title and we dont need that rule or deciding when
+  is worth and when is not? also, i think we should have cases
+  mention where we gonna define that reference form or shape. i
+  thin we should say that when we referencing in same repo, we dont
+  include repo's tag, but when we referencing in deliverer we should
+  have repo tag too. also when we referencing in same doc we drop
+  path, as we already doing. should we have this thing that all
+  references should be surounded `()`?"
+- **Decision 4, a run's retelling:** the agent recommended waiting
+  for a run to show the need. The reviewer: "but by you given
+  example under (a) it reads much better. reader does not have to
+  remember what SLICE-4 is and see it without lookup." The agent
+  then found the run's two rules already disagree.
+- **Decision 6, the foundation:** the agent recommended that a line
+  applying its own foundation carry no reference, then a split by
+  whether the line sends the reader. The reviewer: "today
+  project-recording, which describes multi records i would need to
+  find where fact lives. also after change to file we would need
+  each time scan rule if find where each fact lives in the rule???
+  no, think we should have fact references in faundation text too
+  as in any other. i think, why foundation is useful is that when we
+  make changes in faundation, we recheck all based on it text if
+  everything holds as whole."
+- The reviewer also asked for the simple version of decision 4, and
+  weighed decision 6 by maintenance, readability, future-proofing
+  and complexity.
+
+#### What the reviewer took
+
+| # | Question | Taken |
+|---|---|---|
+| 1 | Does a reference carry the title? | always: (`<path>` §<n>, *<title>*), in parentheses; same document drops the path; another repo leads with its tag; no number, title alone; a long title cut |
+| 2 | Does "pointer" go as a noun? | it stays the agent model's wider word only |
+| 3 | How does a skill name its own files? | by a path from the root |
+| 4 | May a run retell beside an id? | yes; an id is its fact reference, re-read by grep in the commit that changes the home |
+| 5 | What does a retelling of history point at? | a living home, written first |
+| 6 | Does the foundation cover lines about itself? | no: they carry references too; the foundation re-reads the whole file; trigger to weigh one per section |
+| 7 | What catches a missing or moved reference? | a check of each new or changed line at the commit, ours only; §3.3's grep widened to titles and moved facts |
+
+- **Rejected, with why:** no title, as a rule that needs judgment;
+  history as a fact's only home, since nothing re-reads it; a
+  "same skill" relative path, since two skills share a file name;
+  the split of decision 6, since a large foundation leaves a line's
+  fact unfound.
+- **Said along the way:** a shipped line never sends a run into our
+  manual; a CBC reference there is for our walk alone.
 
 ## 14. A sweep, and what looking back is
 
