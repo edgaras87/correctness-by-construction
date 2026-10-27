@@ -186,9 +186,9 @@ registry that reads `chosen-next` through a whole build is not the
 source of truth for what is being worked.
 
 **Why ARCHITECTURE gains rows, not paragraphs.** It answers what a
-later slice may rely on now, so it stays short and current. Each row
-names what computes the rule, what refuses a wrong result, the test
-that goes red, and the slice that proved it.
+later slice may rely on now, so it stays short and current. What a
+row holds is the Invariants section's own comment, in
+`ARCHITECTURE.md`.
 
 **Why the shapes are not in this skill.** They arrive with the
 method as copies in `.claude/shapes/`: the slice record, the evidence

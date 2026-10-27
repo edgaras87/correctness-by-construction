@@ -30,9 +30,9 @@ in. Verify against the actual repo:
    constraints). With cbc-framing these live under `docs/system/`:
    `intent.md`, `definition.md`, `registry.md`.
 2. **The environment facts are readable** — the definition states what
-   runtime ground the system assumes: the machine, a stranger's clean
-   machine, whether more than one instance runs on it, the store as a
-   service outliving the instances, the clock. If the definition has
+   runtime ground the system assumes, the lines of "The runtime
+   ground" in `.claude/skills/cbc-framing/references/cbc-framing-workflow.md`.
+   If the definition has
    no runtime-ground facts, this is not "stop": it is the downstream
    trigger the definition's own revision rule names. The facts are
    added by a dated revision entry in LAYER-1-ENVIRONMENT — what

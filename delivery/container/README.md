@@ -11,7 +11,7 @@ Until then the repository holds the method, the plan, and the
 records — no code.
 
 The method: [docs/concept/](docs/concept/), a pinned copy of the
-concept in five chapters; start with [00-cbc.md](docs/concept/00-cbc.md).
+concept; start with [00-cbc.md](docs/concept/00-cbc.md).
 
 ## Project records
 
