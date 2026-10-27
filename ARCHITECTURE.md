@@ -206,21 +206,24 @@ of the tree, or a check at commit review.
      too long for that column moves every line, so a new one is
      fitted to it (ADR-0044). -->
 
+A line marked *record* is one of the records; what each answers is
+`docs/conventions/project-recording/` §1.
+
 ```
-README.md            the front door: what this is, how to use it
-ARCHITECTURE.md      this map
-PLAN.md              the step form, and the step being worked
-TODO.md              what's next, and the backlog
+README.md            record
+ARCHITECTURE.md      record: this map
+PLAN.md              record
+TODO.md              record
 TODO-CONVERSATION-MEMORY.md
-                     the talk behind TODO items, on trial (ADR-0060)
-CHANGELOG.md         the concept-version log (ADR-0003)
-devlog/              work history, one file per month
+                     record
+CHANGELOG.md         record
+devlog/              record
 concept/             the concept: five chapters, 00-cbc.md first (§1.1)
 docs/
-├── adr/             decisions and why
-├── conventions/     twelve manuals and their index (§1.2)
-├── glossary.md      what each coined word means
-├── models/          agent, tiers, idea-to-output; none ships
+├── adr/             record
+├── conventions/     the manuals and their index (§1.2)
+├── glossary.md      record
+├── models/          the models (§1.3)
 └── baselines/       trial evidence withheld from runs (ADR-0035)
 delivery/
 ├── container/       what a run is born into (§2.3)
@@ -230,11 +233,12 @@ delivery/
 ├── installs/        how a run is seeded (§2.4)
 └── README.md        the delivery's local map (§2.4)
 temp/                drafts and kept files, tracked, deleted when served
-CLAUDE.md, .claude/  this repo's work arrangement
+CLAUDE.md, .claude/  this repo's work arrangement; .claude/decisions.md
+                     is a record
 .editorconfig        hygiene: editor settings
 .gitattributes       hygiene: line endings and diffs
 .gitignore           hygiene: what git leaves untracked
-COMMIT-PLAN.md       an in-flight change set, when present
+COMMIT-PLAN.md       record, when present
 ```
 
 ---
