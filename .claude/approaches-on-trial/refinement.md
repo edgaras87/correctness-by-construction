@@ -70,7 +70,7 @@ The words of this page, each defined once:
 - **round** — the kinds whose fixes do the same to the text, read
   and fixed together before the next round reads (§2.1).
 - **layer** — a set of files fixed together. Layers go in an order
-  that puts a source before what derives from it (§2.5).
+  that puts a source before what derives from it (§2.2).
 
 ## 2. The stages
 
@@ -120,10 +120,22 @@ and their rounds.
 
 ### 2.2 List the files
 
-The agent lists the living files (§1) in the file, by §2.5's
-layers, with their counts. Every living file falls in exactly one
-layer. When the list finds a file that fits none, a layer is
-widened to hold it, or a new layer is added. Each round shows from
+The agent lists the living files (§1) in the file, by layer, with
+their counts. Every refinement starts from these six layers, in an
+order that puts a source before what derives from it:
+
+1. the conventions manual, `docs/conventions/conventions/`, which
+   every other manual is read against;
+2. project-recording, with the map of the records, which other
+   text points to;
+3. the other manuals, and the concept chapters;
+4. `ARCHITECTURE.md`, `README.md` and the records;
+5. our skills and rules, under `.claude/`;
+6. `delivery/`, what ships.
+
+Every living file falls in exactly one layer. When the list finds a
+file that fits none, a layer is widened to hold it, or a new layer
+is added, and the file records it. Each round shows from
 this list that it covered every file. The reviewer confirms the
 layers.
 
@@ -219,18 +231,7 @@ DECISION-n: the options, a recommendation, and the findings that
 rest on it.
 
 A round's findings are listed by layer, in the order the work
-takes them. Every refinement
-starts from these six; the file records a layer widened or added
-(§2.2):
-
-1. the conventions manual, `docs/conventions/conventions/`, which
-   every other manual is read against;
-2. project-recording, with the map of the records, which other
-   text points to;
-3. the other manuals, and the concept chapters;
-4. `ARCHITECTURE.md`, `README.md` and the records;
-5. our skills and rules, under `.claude/`;
-6. `delivery/`, what ships.
+takes them (§2.2).
 
 ### 2.6 Decide
 
@@ -246,7 +247,7 @@ A finding is never deleted or renumbered while the file lives.
 
 ### 2.7 Work
 
-One layer's findings at a time, in §2.5's order, each a commit plan
+One layer's findings at a time, in §2.2's order, each a commit plan
 (`docs/conventions/commit-plan/`). A source comes before what
 derives from it, so a fix is carried down once and never redone.
 A commit that touches a description goes through the foundation
@@ -320,7 +321,7 @@ commit, so the file can be read from git.
 
 ## 3. Not known yet
 
-- **Whether the order holds:** the first round tests §2.5's
+- **Whether the order holds:** the first round tests §2.2's
   layers; the last, whether the rounds were worth their reads.
 - **Text another TODO item already plans to rewrite:** read here,
   or left to that item. On 2026-10-19 the reviewer had the writing
