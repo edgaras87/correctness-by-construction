@@ -687,6 +687,10 @@ and the round's coverage of the two files. The one-home rule's
   `docs/conventions/facts-in-sync/` §1 and both `one-home.md`. A
   living line never takes an entry as a fact's home: FINDING-154's
   fix already moves `TODO.md`'s off one.
+- Made at round 2's close, 2026-10-27: facts-in-sync §1 and both
+  `one-home.md` name the two logs. The line on taking an entry as a
+  home was left out: a run reads its pin from its log's last
+  delivery entry (`delivered-copies.md`, rule 1).
 
 **DECISION-14.** Where does the concept's bump rule live? Rests:
 FINDING-176.

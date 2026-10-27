@@ -73,9 +73,11 @@ being trusted. In practice:
   on the fact in place, retold beside its pointer. A follower
   carries a fact reference to the home (§3.1). Without one it is a
   second home.
-- **History is not a second home.** The devlog, closed ADRs and
-  commit bodies record what was true then. They are never updated,
-  so they cannot drift.
+- **History is not a second home.** The devlog, closed ADRs, commit
+  bodies and the entries of `.claude/decisions.md` record what was
+  true then. So do the parts of `TODO-CONVERSATION-MEMORY.md`, which
+  only the deliverer keeps. They are never updated, so they cannot
+  drift. Each file's header comment is living text.
 - **Comments and config count too,** not only records.
 
 *Added 2026-10-15, from run 3: its loaded one-home rule said these
@@ -85,6 +87,10 @@ five things, and project-recording's rule did not (ADR-0053).*
 without the picture at the moment of use. The reviewer judged
 three cases, each retold and pointed, and the retellings read
 better (ADR-0059).*
+
+*Widened 2026-10-27: round 2 of this repo's refinement had to say
+whether the decisions log and the conversation memory were history.
+Both are dated and never rewritten, and the list named neither.*
 
 ## 2. Point and derive
 
