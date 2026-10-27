@@ -181,58 +181,24 @@ exchange's *What this is made usable as*.
 
 ## 3. What must stay true
 
-Each rule, and where it is held. This repo has no runtime, so a
-rule is held by a header that travels with a file, a standing
-comment, a procedure, the shape of the tree, or a check at commit
-review, and each entry names which.
+Each rule that must hold across this repo, where it is stated, and
+what holds it. This repo has no runtime, so a rule is held by a line
+that travels with a file, a standing comment, a procedure, the shape
+of the tree, or a check at commit review.
 
-- **The concept is canonical here**, and the archive it came from
-  is a frozen snapshot, never consulted as a source — §1.1 and
-  `docs/conventions/facts-in-sync/` §4; held by CHANGELOG's `[v1]`
-  entry, which names the archive copy a snapshot, and checked at
-  commit review.
-- **A substantive concept change never lands without a version
-  entry** — CHANGELOG's standing comment and ADR-0003; checked at
-  commit review, a review-grade wall, named as such.
-- **An execution never lands without stating which concept version
-  it derives from** — each skill's `foundation` field, which travels
-  with every copy (ADR-0004, ADR-0036).
-- **Every file a run receives has its master here,** in the group
-  that ships it: the method, the container, a stack practice, the
-  concept — `docs/conventions/exchange/` §1 and §3.2; held by a
-  procedure, `exchange-deliver`, which stages only from these
-  masters.
-- **A manual never ships** — `docs/conventions/exchange/` §3.2;
-  held by the shape of the tree: the manuals sit under `docs/`, and
-  a delivery stages only from `delivery/` and `concept/`.
-- **A manual never outlives the rule it explains**: a rule changed
-  in `delivery/container/` is checked back against its manual, and
-  whichever side is wrong changes —
-  `docs/conventions/facts-in-sync/` §4 and §5 (ADR-0025); checked
-  at commit review by the foundation check,
-  `.claude/rules/foundation-check.md`.
-- **Agent side and project side never share a commit** —
-  `docs/conventions/commit-messages/` §2; held by a procedure, the
-  `commit-messages` skill, and checked at commit review.
-- **A pin never claims more than was checked**: a read takes the
-  run's decisions log, its backlog and the diff of every copy it
-  holds, and every read ends with a note, even one that says
-  nothing was learned — `docs/conventions/exchange/` §6.1 and §6.6
-  (ADR-0023); held by procedures, `exchange-read` and
-  `exchange-deliver`.
-- **A skill never spans two groups, and nothing that needs Spring,
-  PostgreSQL, Maven or podman sits under `method/`** — held by the
-  shape of the tree, since a group is a directory and a misfiled
-  file shows as a path (ADR-0029). The test is what the skill
-  assumes, not what a sentence mentions.
-- **A record stub is never re-delivered to a live run** — the run's
-  `delivered-copies.md` rule 1 and `docs/conventions/exchange/`
-  §2.4 (ADR-0036).
-- **The exchange's five facts, and what follows from them** —
-  `docs/conventions/exchange/` §1 to §3; held by procedures,
-  `exchange-read` and `exchange-deliver` on our side, and the rule
-  shipped from `delivery/container/.claude/rules/delivered-copies.md`
-  on the run's.
+| Rule | Stated in | Held by |
+|---|---|---|
+| The concept is canonical here; the archive it came from is a frozen snapshot, never a source | §1.1; `CHANGELOG.md`'s `[v1]` entry | commit review |
+| A concept change that could invalidate what derives from it lands with a version entry | `CHANGELOG.md`'s standing comment (ADR-0003) | commit review |
+| Every execution states the concept version it derives from | `docs/conventions/conventions/` §1.3 (ADR-0004, ADR-0036) | its `foundation` line, which travels with every copy |
+| Every file a run receives has its master here, in the group that ships it | `docs/conventions/exchange/` §1 and §3.2 | `exchange-deliver`, which stages only from the masters |
+| A manual never ships | `docs/conventions/exchange/` §3.2 | the tree: manuals sit under `docs/`, and a delivery stages only from `delivery/` and `concept/` |
+| A manual never outlives the rule it explains | `docs/conventions/facts-in-sync/` §4 and §5 (ADR-0025) | the foundation check, `.claude/rules/foundation-check.md`, at each commit |
+| Agent side and project side never share a commit | `docs/conventions/commit-messages/` §2 | the `commit-messages` skill, and commit review |
+| A pin never claims more than was checked | `docs/conventions/exchange/` §6.1 and §6.6 (ADR-0023) | `exchange-read` and `exchange-deliver` |
+| A skill never spans two groups, and nothing that needs Spring, PostgreSQL, Maven or podman sits under `method/` | ADR-0029 | the tree: a group is a directory, so a misfiled file shows as a path |
+| A record stub is never re-delivered to a live run | `docs/conventions/exchange/` §2.4 (ADR-0036) | the run's `delivered-copies.md`, rule 1 |
+| The exchange's five facts hold | `docs/conventions/exchange/` §1 | `exchange-read` and `exchange-deliver`; the run's `delivered-copies.md` |
 
 ## 4. Codemap
 
