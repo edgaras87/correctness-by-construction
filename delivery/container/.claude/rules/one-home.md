@@ -28,8 +28,10 @@ config. Where it lives, never how it reads.
 
 ## Not a second home
 
-History: the devlog, closed ADRs, commit bodies. They record what
-was true then. They are never updated, so they cannot drift.
+History: the devlog, closed ADRs, commit bodies and the entries of
+`.claude/decisions.md`. They record what was true then. They are
+never updated, so they cannot drift. The decisions log's header
+comment is living text.
 
 ---
 
