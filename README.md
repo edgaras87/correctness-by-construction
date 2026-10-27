@@ -9,11 +9,16 @@ executions derived from it — agent skills, checklists, templates —
 each pinned to the concept version it derives from. It also holds
 the container a run is born into — its own (ADR-0024,
 ADR-0025; where it came from is ADR-0038's record) — so a run has
-one upstream and one pin. It is the concepts tier of the workspace
+one upstream and one pin. It is the deliverer: each run is born from
+what this repo ships, and is read back from here. Documents only:
+nothing is built here, no application, no service, no run.
+It is the concepts tier of the workspace
 (concepts → runs, the tier above empty; see docs/models/tiers.md):
 runs happen in other repos pinned to
-a concept version, and their surprises come back here as harvested
-concept changes. It exists so its author's understanding improves in a
+a concept version, and their surprises come back here as changes to
+what we hold: the concept, the models, the conventions, and the
+masters made from them.
+It exists so its author's understanding improves in a
 recorded way instead of living in a head and scattered notes.
 
 ## Success criteria
