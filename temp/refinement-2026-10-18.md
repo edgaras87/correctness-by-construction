@@ -239,6 +239,8 @@ Rests: FINDING-36.
 - Chosen: (a), by the reviewer, 2026-10-20: every pointer carries
   its path, but the container's `one-home.md`, which names a manual
   a run cannot open. Fixed in each layer's work.
+- Widened at round 2's layer 6 (FINDING-205): the container's
+  `writing.md` too, which names the deliverer's writing manual.
 
 **DECISION-4.** Does a manual on trial count among the manuals?
 Rests: FINDING-37.
@@ -1008,7 +1010,7 @@ are identical, kept true by hand. `approach-drafting.md` is
 identical too and has no such line. TODO's "Decide whether each
 seat's copy is written for its seat" carries the question.
 Proposed: TODO, add `approach-drafting.md` to its list.
-Ending: worked by ADR-0069: no text claims a copy the same (`3e61b28`, `e0fd201`); `approach-drafting.md` stays one text until its evaluation (decision 2).
+Ending: worked by ADR-0069: no text claims a copy the same (`3e61b28`, `e0fd201`), and the run's copy speaks to a run (`fe98cd3`); `approach-drafting.md` stays one text until its evaluation (decision 2).
 
 **FINDING-196.** Dependencies; resting on the reader. Our derived
 rules and skills use their own manual with few section references:
@@ -1041,11 +1043,13 @@ project a run cannot know. Dropping them would change the bytes of
 to `delivered-copies.md` rule 1: a footer names the decisions a
 copy rests on; to go against one, quote it under *To the
 deliverer*.
+Ending: fixed, `bc1e236`: rule 1 says what a footer is and how a run goes against one; the footers stay.
 
 **FINDING-200.** One home; checked. The playbook's version is told
 in four places (met in round 1, item 1): the playbook's line and
 three in `pure-seed.md`, none tagged. Proposed: fix, the seed reads
 the version from the playbook's line at birth.
+Ending: fixed, `4806dd6`: the seed reads the version from the playbook's line.
 
 **FINDING-201.** One home; checked. The seed retells exchange §3.2's
 list of pinned copies with counts, untagged (met in round 1, item
@@ -1053,6 +1057,7 @@ list of pinned copies with counts, untagged (met in round 1, item
 (`docs/conventions/exchange/` §3.2)", with no counts. The prompt to
 the newborn keeps its counts, and the seed's check compares them
 with the tree.
+Ending: fixed, `b25d0ef`.
 
 **FINDING-202.** One home; checked. Shipped files retell a deliverer
 manual with no fact reference (met in round 1, item 3):
@@ -1060,12 +1065,14 @@ manual with no fact reference (met in round 1, item 3):
 `commit-plan` says "commit-messages keeps…"; `approach-drafting.md`
 says "(`commit-messages`)". Proposed: waits on the run's case
 (ADR-0059).
+Ending: moved to TODO's "Decide how a fact reference is written", the run's case.
 
 **FINDING-203.** One home; checked. `cbc-bootstrap` and its
 walkthrough both say a hygiene file takes its stack overlay below
 the marker (met in round 1, item 3). Repo-hygiene §2 says nothing
 ships an overlay. TODO's "Decide whether cbc-bootstrap points at the
 Spring hygiene parts" carries it. Proposed: TODO, that item.
+Ending: moved to TODO's "Decide whether cbc-bootstrap points at the Spring hygiene parts".
 
 **FINDING-204.** One home; checked. The container's entry file
 cites `docs/conventions/project-recording/` §13, which a run cannot
@@ -1073,11 +1080,13 @@ open. It retells agent-arrangement §2.4's three tests, and seven
 stubs with a `foundation:` line retell project-recording. TODO's
 "Decide how a fact reference is written" names them. Proposed:
 waits on the run's case, through that item.
+Ending: moved to TODO's "Decide how a fact reference is written", the run's case.
 
 **FINDING-205.** Dependencies; checked. The shipped `writing.md`
 names "the deliverer's writing manual", which a run cannot open.
 Round 1's DECISION-3 excepted only `one-home.md`. Proposed: decline
 on the same grounds, and name both rules in the exception.
+Ending: declined: round 1's DECISION-3 exception names the shipped `writing.md` beside `one-home.md`.
 
 **FINDING-206.** Dependencies; checked. The playbook cites "run 3's
 RETRO Dn" in 12 lines, copied into a run's PLAN at birth. A run
@@ -1085,6 +1094,7 @@ cannot open run 3's RETRO. Its *For run 5 only* rule is stated only
 for run 5, and run 5 is born. Proposed: fix in the next playbook
 version: the rule in general, "For run <n> only", and the
 citations into the playbook's header comment.
+Ending: fixed in part, `60efe4a`: the rule for a run-only list stated in general, the version unmoved, a fix being no fold. The RETRO citations moved to TODO's "Rewrite the method's texts plain".
 
 **FINDING-207.** Dependencies; checked. Three template comments
 point at files by a name that stops resolving once the template is
@@ -1094,11 +1104,13 @@ copied out (`bootstrap.sql`, `testcontainers.properties`,
 rule holds. Proposed: fix the three with root paths. The headers:
 state the fact once in `delivered-copies.md` rule 1 and point, or
 decline as text read at copy time.
+Ending: fixed in part, `2ccaa58`: the three comments give full paths. The ten headers declined, read when a template is copied.
 
 **FINDING-208.** One home; checked. The off-template rule is told in
 four shipped files, and its only home is ADR-0008, which is history.
 Proposed: waits on the run's case. That design must say what a
 retelling points at when its only source is history.
+Ending: moved to TODO's "Decide how a fact reference is written", the run's case.
 
 **FINDING-209.** One home; checked. `cbc-bootstrap` tells its traps
 in two or three files each, with no pointers between them: the
@@ -1107,11 +1119,13 @@ notation-neutral environment, plural instances. The harness
 reference says "**Masters nothing.**" (line 10) and "the lived
 traps live here" (line 186). Proposed: fix, the walkthrough owns
 each trap, and the others point.
+Ending: fixed, `d0445c3`: the walkthrough owns each trap, its step 4 and §3.
 
 **FINDING-210.** One home; checked. The harness reference holds an
 outcome that its stated home, the walkthrough, lacks: the ground's
 authority split held in evidence runs. Proposed: fix, the outcome
 moves to the walkthrough's step 4.
+Ending: fixed, `944f87d`.
 
 **FINDING-211.** One home; resting on the reader. Skills, shapes and
 templates state the same form: the slice record's outline, the
@@ -1119,33 +1133,39 @@ backstop at the red run, a cost's size, the registry entry's
 fields, a body asserted by path. TODO's "Decide how an approach and
 a shape divide an output" carries the question. Proposed: TODO,
 these instances into that item.
+Ending: moved to TODO's "Decide how an approach and a shape divide an output".
 
 **FINDING-212.** One home; checked. The worked example's two copies
 have no owner. Only `cbc-framing-workflow.md` says they are a pair,
 and a run editing `cbc-slice`'s copy meets no line saying the other
 follows. Proposed: fix, `cbc-framing`'s copy owns, and
 `cbc-slice-workflow.md`'s header says its copy follows.
+Ending: fixed, `cd79ba3`: cbc-framing's copy owns.
 
 **FINDING-213.** One home; checked. `delivery/README.md` retells the
 playbook's steps with no fact reference. Proposed: fix, point at
 the playbook.
+Ending: fixed, `8a6a1f7`.
 
 **FINDING-214.** One home; checked. The container's entry file says
 the order of questions "is not restated here", then restates it
 without "world" (`concept/00-cbc.md` line 31). Proposed: fix, drop
 the parenthesis.
+Ending: fixed, `c05ae65`.
 
 **FINDING-215.** One home; checked. `delivered-copies.md` says the
 deliverer's side "is not here; the run never needs it", then rule 4
 tells the deliverer's read and verdicts (exchange §6.1, §6.5). Rule 1
 also holds part of rule 2's subject. Proposed: fix, rule 4 keeps
 what the run acts on, the three verdicts.
+Ending: fixed, `de7b19f`.
 
 **FINDING-216.** One home; checked. Shipped retellings that name
 their source in prose: 7 places, among them the container's entry
 file, decisions log and `temp/README.md`, `infra-serve`'s "Hard
 lines (same as establishment)". Proposed: waits on the run's case;
 the list is that design's evidence.
+Ending: moved to TODO's "Decide how a fact reference is written", the run's case.
 
 **FINDING-217.** One home; resting on the reader. Shipped retellings
 that do not name their source, whose source a run holds:
@@ -1153,10 +1173,12 @@ that do not name their source, whose source a run holds:
 ground lines; `cbc-slice-workflow.md` retells the run's
 `ARCHITECTURE.md` Invariants columns; the container's README counts
 "five chapters". Proposed: fix, each points.
+Ending: fixed, `fcf9622`.
 
 **FINDING-218.** One home; resting on the reader. *The whole system
 in plain words* says it is a summary, but names its owners only as
 "the detailed docs". Proposed: fix, name them by path.
+Ending: fixed, `d9a8595`.
 
 **FINDING-219.** Dependencies; checked. Pointers into another skill
 by bare file name: four in `cbc-framing` and `infra-serve`. Within a
@@ -1164,11 +1186,13 @@ skill, 32 `references/…` paths and about 13 bare sibling names.
 Proposed: fix the four with root paths. The rest to TODO's "Decide
 how a fact reference is written", a form choice over about 45
 lines.
+Ending: fixed in part, `7583446`: five cross-skill pointers, not four. The paths within a skill moved to TODO's "Decide how a fact reference is written".
 
 **FINDING-220.** Dependencies; checked. Shipped rules named in prose:
 "the shapes rule" 8 times, "the delivered-copies rule" 5 times, and
 two paths to `shapes-lifecycle.md` without the section they rely on.
 Proposed: TODO, the fact-reference item.
+Ending: moved to TODO's "Decide how a fact reference is written".
 
 **FINDING-221.** Dependencies; checked. `approach-drafting.md` tells
 the run "**At the deliverer:** open `approach-evaluation`". The
@@ -1181,12 +1205,14 @@ states "one obvious answer means a clear answer" only inside a case,
 the deliverer's own, and no run is named. Two more cases sit in its
 body, and its §4 is a list of cases by design. Rests on
 DECISION-7.
+Ending: fixed, `206c1e0` and `19142f7`, in both seats.
 
 **FINDING-223.** Lessons; checked. The harness reference states
 rules through "passes" a run cannot place: "the third pass evolved
 this to…", "the second pass closed it… the third relied on…", and
 six more pass names. Variation point 9 tells its own history.
 Rests on DECISION-7.
+Ending: moved to TODO's "Rewrite the method's texts plain" (DECISION-7).
 
 **FINDING-224.** Lessons; resting on the reader. "Lived" markers in
 the stack and method texts, about 18. Some carry a fact the reader
@@ -1194,27 +1220,32 @@ acts on, the version tested on or a trial status. Others tell a
 case a fresh run cannot know: "both lived runs", "distilled from a
 two-seat discipline". The walkthrough's "Lived realization (once)"
 ends in a case line. Rests on DECISION-7.
+Ending: moved to TODO's "Rewrite the method's texts plain" (DECISION-7).
 
 **FINDING-225.** Layout; checked. `cbc-slice`'s stages sit at two
 heading levels: `## Stage 0`, then `### Stage 1` to `### Stage 4`.
 Conventions §2, whose example this skill is, binds it. Proposed:
 fix, all at `##`.
+Ending: fixed, `4f19dad`: all five stages at `##`, the overview above Stage 0.
 
 **FINDING-226.** Layout; checked. Two shapes, `evidence-test.md` and
 `kill.md`, say what they leave out in two sections each. Proposed:
 fix, under *What is exempt* only.
+Ending: fixed, `494b892`.
 
 **FINDING-227.** Layout; resting on the reader. `cbc-framing`'s
 "Export and handoff" holds four subjects; `infra-establish`
 describes its two manuals in three places; the worked example lays
 out Part 1 by headings and Part 2 by bold leads. Rests on DECISION-8.
 Proposed: TODO, the plain rewrite of the method's texts.
+Ending: moved to TODO's "Rewrite the method's texts plain" (DECISION-8).
 
 **FINDING-228.** Layout; checked. The walkthrough's §4 has two
 labelled parts with no numbers, where §1 to §5 are numbered. The
 harness reference's variation point 9 is a decided rule among open
 points. Rests on DECISION-8. Proposed: fix, 4.1 and 4.2; point 9
 declined.
+Ending: moved to TODO's "Rewrite the method's texts plain" (DECISION-8).
 
 ### Decisions
 
@@ -1383,7 +1414,7 @@ touches the same file, or the last read (§2.9) takes them.
   `cbc-framing` does too.
 - `cbc-bootstrap` and `establishment-walk.md` call the container's
   README a stub; `delivery/README.md` §4 says it carries a composed
-  body.
+  body. Fixed in layer 6, `003407e`.
 - `commit-plan`'s frontmatter `requires: project-recording`, a skill
   that does not exist.
 - 29 mid-sentence `CBC ADR` citations in the method's and stack's
