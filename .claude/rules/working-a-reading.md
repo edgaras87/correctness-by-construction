@@ -69,10 +69,8 @@ there.
 7. **Each item ends as one of three** — taken, declined, held — and
    lands where the exchange says.
 
-8. **Records as they fall.** An ADR for a decision with rejected
-   options; the decisions log for a change to the arrangement; the
-   devlog at a session's end, at a pause, and when a TODO item is
-   added, for its story.
+8. **Records as they fall,** each at its moment in `CLAUDE.md`'s
+   records table: an ADR, the decisions log, the devlog.
 
 9. **When the list is closed, `exchange-deliver`.** Closed means the
    first gate below holds: a finding with no item reaches no
