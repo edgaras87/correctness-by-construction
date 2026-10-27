@@ -27,13 +27,14 @@ on 2026-10-15 (ADR-0053).
 - **`delivery/container/.claude/rules/writing.md` — the rule,
   shipped**, held at `.claude/rules/writing.md` with no `paths:`, so
   it loads at the start of every session.
+- **`docs/glossary.md` — the deliverer's glossary**, the home rule
+  6 names for each coined word; its header comment holds the form of
+  an entry. A run starts its own at the same path.
 - **`.claude/rules/writing.md` — the deliverer's**, derived from
   this page like the container's, not copied from it, and loaded
   the same way. It differs where the seat does: it covers the
   skills, rules, shapes, approaches, manuals, concept chapters and
-  notes the deliverer writes; it defines a coined word in
-  `ARCHITECTURE.md`'s *The words*, this repo's glossary; and its
-  examples are this repo's.
+  notes the deliverer writes; and its examples are this repo's.
 
 This page explains; the rule states. What derives from this page is
 that list. A change here walks it; a change forced in it is checked

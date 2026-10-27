@@ -816,7 +816,7 @@
       91 mentions of the path, 54 of "skills and rules". A numbered
       line inside one, "one-home rule 3": 17. What a text says must
       be done, "the bump rule". In a run, a rule the built system
-      keeps, "one row per rule": 5. *The words* defines none.
+      keeps, "one row per rule": 5. `docs/glossary.md` defines none.
       `docs/conventions/conventions/` §1 is about the files, yet its
       "A rule is one sentence in the imperative" means a line.
       Ideas:

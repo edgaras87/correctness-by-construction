@@ -137,14 +137,13 @@ seats keep a record differently, *The seats* says how.
    (`docs/conventions/agent-arrangement/` §3.4).
 9. `COMMIT-PLAN.md`: the commits of a change set in flight, when
    present (`docs/conventions/commit-plan/` §1).
+10. `docs/glossary.md`: what each coined word means
+    (`docs/conventions/writing/` §2, rule 6).
 
 **The run's only**
 
-10. `docs/system/`: what is promised, what must never happen, the
+11. `docs/system/`: what is promised, what must never happen, the
     slices (`concept/03-cbc-framing.md`).
-11. `docs/glossary.md`: what each coined word means
-    (`docs/conventions/writing/` §2, rule 6). Ours is
-    `ARCHITECTURE.md`'s *The words*.
 12. `RETRO.md`: what the next run does differently, when present
     (`docs/conventions/retrospective/` §4). Ours has none: lessons
     fold back at each step's close.
