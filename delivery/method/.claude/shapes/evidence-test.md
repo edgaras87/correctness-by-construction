@@ -12,8 +12,9 @@ answers, come from the slice record.
 <!-- A shape: what a kind of output looks like, its form and never
      its content. Read at a slice's closing gate, never while a test
      is written. How shapes live is .claude/rules/shapes-lifecycle.md,
-     and not repeated here. When a red run counts is cbc-slice's
-     build gate, not this shape's. -->
+     and not repeated here. When a red run counts is the build
+     gate of .claude/skills/cbc-slice/SKILL.md, Stage 3, not this
+     shape's. -->
 
 ## What this document controls
 

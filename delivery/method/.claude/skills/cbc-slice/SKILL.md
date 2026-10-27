@@ -84,8 +84,8 @@ it is not already recorded.
    *create* its adversity and show the invariant surviving. Named
    now, built in Stage 3.
 5. **Tag them** GUARANTEE-n and EVIDENCE-n, numbered once through the
-   record. Outside the record, each carries its slice, owner first:
-   "SLICE-4 GUARANTEE-1", "SLICE-4 EVIDENCE-3 · GUARANTEE-2 ·
+   record. Outside the record, each carries its slice
+   (`.claude/rules/writing.md`, rule 6): "SLICE-4 GUARANTEE-1", "SLICE-4 EVIDENCE-3 · GUARANTEE-2 ·
    KILL-12". The framing's tags (KILL, FOLD, FACT, NOT-OURS, …) are
    used as the framing wrote them.
 
@@ -195,8 +195,8 @@ never seen red is not known to be watching.
    stay in the record. Then the ordering is re-decided, with its
    reason written.
 3. **Where this slice changed how the system is built, add or change
-   rows in ARCHITECTURE's Invariants table:** one row per rule, never a
-   paragraph. How the slice got there stays in its record.
+   rows in ARCHITECTURE's Invariants table,** as its header comment
+   says.
 4. **Last, read what the slice made against the shapes in
    `.claude/shapes/`,** the method's copies and any the project
    wrote; this skill carries none. Where no shape governs what the

@@ -8,12 +8,10 @@ work, not method work.*
 
 ## READINESS-1 — The framing artifacts are in the repo
 
-- `docs/system/intent.md` — the one promise, with banked rejections.
-- `docs/system/definition.md` — the five layers, each filled or
-  empty-with-reasons.
-- `docs/system/registry.md` — slices + folds, the fold-reconciliation line
-  (concerns ↔ slices + folds, nothing silently dropped), and a
-  **chosen-next slice**.
+The three artifacts `.claude/skills/cbc-framing/SKILL.md` exports
+(*Export and handoff*): `docs/system/intent.md`,
+`docs/system/definition.md` and `docs/system/registry.md`, the
+registry with a **chosen-next slice**.
 
 Why: the slice workflow's Stage 1 consumes the registry entry *as written*
 — no artifacts, nothing to consume.

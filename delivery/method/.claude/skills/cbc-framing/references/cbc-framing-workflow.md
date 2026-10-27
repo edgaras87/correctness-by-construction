@@ -7,8 +7,8 @@ workflow's input.*
 
 *When a stage's required output changes here, `worked-example.md` beside
 this file changes in the same commit: a framer is sent to it to see what
-a stage's output looks like. It owns the worked example; the copy in the
-cbc-slice skill follows it.*
+a stage's output looks like. It owns the worked example; the copy,
+`.claude/skills/cbc-slice/references/worked-example.md`, follows it.*
 
 ---
 
@@ -89,8 +89,8 @@ section.
 
 A concern that becomes exactly one slice is called by that slice's
 tag from stage 6 on; a letter only for a concern that does not. A
-number local to one record carries its owner outside it, owner
-first: "SLICE-4 GUARANTEE-1".
+number local to one record carries its owner outside it
+(`.claude/rules/writing.md`, rule 6): "SLICE-4 GUARANTEE-1".
 
 ## Stage 0 — Choose the promise (intent)
 
