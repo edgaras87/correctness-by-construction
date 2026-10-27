@@ -24,11 +24,8 @@ answers, come from the slice record.
 - a tripwire, which pins a decision and is not evidence.
 
 A test this shape accepts can still create the wrong adversity.
-That is the slice record's business.
-
-**Not covered: a test of one wall on its own,** such as a catalog
-check, or the store refusing a statement sent to it directly. It
-says so at its class, and its form is its own.
+That is the slice record's business. What it leaves out is *What is
+exempt, and why*.
 
 **Two layers, marked apart.**
 - *Skeleton:* what any project proving an invariant by tests would

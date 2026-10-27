@@ -18,8 +18,8 @@ meets which possession, and what dies, come from the collision.
 
 **The form of one kill in the numbered list of kills,** and nothing
 else. A kill this shape accepts can still be the wrong kill; that
-is the collision's business. The concerns the kills are grouped
-into, the folds, and what the fences stopped are their own.
+is the collision's business. What it leaves out is *What is exempt,
+and why*.
 
 **Two layers, marked apart.** *Skeleton:* what any project's kills
 would want. *Illustration:* one form of it, from the method's worked
