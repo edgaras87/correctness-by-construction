@@ -92,8 +92,8 @@ Each seat's skills and rules are derived from their manuals and
 written for their seat, never copied across (ADR-0042, ADR-0069);
 the records
 table has the same shape; the agent and project split is the same
-rule. What differs is the job, and since ADR-0036 the two hold
-different things because of it: the run holds the receiver's rule,
+rule. What differs is the job, and the two hold different things
+because of it (ADR-0036): the run holds the receiver's rule,
 `delivered-copies.md` — how to take a newer copy without losing its
 own edits, and what it may do to one meanwhile; the deliverer holds
 the deliverer's skills and the form of the reading they produce.

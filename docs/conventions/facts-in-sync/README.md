@@ -247,10 +247,10 @@ Twice editorially, leaving it at v1: chapter 03's sentence on when
 technology enters (`211bd0f`), and chapter 01's layer tags in full
 words, from run 3's RETRO D6 (`41d4fc3`). Once in substance:
 chapter 02's top rung of the walls, which run 3 met at SL-3, makes
-the concept v2 when it is released (`86ed0c4`, ADR-0048). Nothing
-else from four runs has reached a chapter — either evidence it is
-right or evidence nothing has been read against it hard enough, and
-this page does not know which.*
+the concept v2 when it is released (`86ed0c4`, ADR-0048).*
+
+Whether the concept bends this rarely because it is right, or
+because nothing has been read against it hard enough, is not known.
 
 ## Why it arrives this way
 

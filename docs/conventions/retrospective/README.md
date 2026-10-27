@@ -114,9 +114,8 @@ end.
   shorter, what needed to happen earlier, what was tried and
   dropped, what had no home, which gate items caught nothing; and
   the entry file read top to bottom, its only re-reading
-  (`docs/conventions/agent-arrangement/` §2.6). They came from the
-  plan's old Retrospective section, which the skill replaced, and
-  are prompts now, inside the walk.
+  (`docs/conventions/agent-arrangement/` §2.6). They are prompts,
+  inside the walk.
 
 ## 3. How the apply step decides
 

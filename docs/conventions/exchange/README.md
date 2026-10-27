@@ -136,9 +136,10 @@ local, for every copy. It would make the compare a judgement where
 it is now a `diff` — the miscount problem made permanent; it would
 let a run's edit stay in the local part and never reach the next
 run, which is the one thing the loop exists to prevent; and the
-need it serves already has a home, the run's own records (§5). The
-trigger that would reopen it: a run re-applying the same declined
-edit after two re-pins. It has not happened.*
+need it serves already has a home, the run's own records (§5).*
+
+Skeleton sync is reopened if a run re-applies the same declined edit
+after two re-pins.
 
 ### 2.5 One cycle, drawn
 

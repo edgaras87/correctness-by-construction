@@ -66,8 +66,7 @@ playbook when the deliverer reads the run. Its
 The deliverer keeps the same records, derived from this page rather
 than from the stubs (ADR-0042), and differs in seven things. It
 has no project end, so lessons fold back at each step's close
-rather than at a retrospective, as its first devlog entry agreed on
-2026-08-27; whether a retrospective serves it too is on trial at
+rather than at a retrospective; whether a retrospective serves it too is on trial at
 the close of the birth step (`docs/conventions/retrospective/`, its
 seats). It owns the playbook,
 `delivery/fills/cbc-run-pure-playbook.md`, where a run holds only
@@ -209,17 +208,9 @@ each seat's records table's (§13).
    README.md = the front door: what this is, where the rest is
 ```
 
-Reading order for a newcomer: README, then ARCHITECTURE, then PLAN,
-then the ADRs as needed. The devlog and TODO are working documents;
-nobody is expected to read them cover to cover.
-
 The entry file is `docs/conventions/agent-arrangement/` §2's. The
 playbook is absent from a run on purpose: it lives in the repo that
 owns the project type, never in a project born from it (§9).
-
-Everything is Markdown, in the repo, versioned with git. That is itself a
-rule of the convention: records live next to the code they describe, so
-they branch, review, and roll back together with it.
 
 ## 2. PLAN.md — the spine
 
@@ -264,11 +255,9 @@ is as it is:
 
 ### 2.5 When
 
-Created at project start; its steps arrive whole from a playbook at
-birth and are confirmed once the problem is framed — the middles
-written fresh then when the project was born without one (§9);
-touched every working session — updating it *is* part of the work,
-not paperwork after it.
+Its moments are the records table's (§13). Its steps arrive from a
+playbook at birth (§9), and updating it *is* part of the work, not
+paperwork after it.
 
 ### 2.6 Anti-patterns
 
@@ -326,9 +315,9 @@ carries the tag on every citation (ADR-0020).
 
 ### 3.6 When
 
-At the moment the decision is made — typically when a gate in the
-plan forces it. Writing it *before* deciding (status: Proposed) is
-even better; the writing often changes the decision.
+Its moment is the records table's (§13). Written *before* the
+decision is made (status: Proposed), it is better still: the writing
+often changes the decision.
 
 ### 3.7 Anti-patterns
 
@@ -377,8 +366,8 @@ deliverer's seat, `devlog/README.md`. Why the form is as it is:
 
 ### 4.5 When
 
-Every working session, 2–5 minutes, ideally as you go or at session
-end. Never retroactively "cleaned up."
+Its moments are the records table's (§13). An entry is never
+cleaned up afterwards.
 
 ### 4.6 Anti-patterns
 
@@ -429,6 +418,8 @@ the deliverer's own. Why the form is as it is:
   at once and the reasons are written while they are fresh.
 - An item that changes is rewritten true for today: a dated update
   stacked on it is history, and history is the devlog's.
+- An item's Context is capped at what triage needs: tighter, it cut
+  meaning; looser, an item grows back into its story.
 
 *Found 2026-09-29: the deliverer's TODO kept closed entries whole
 and stacked dated updates on open ones — 2,120 lines, half of them
@@ -445,9 +436,9 @@ See led nowhere until then. Tried first on five items on
 
 ### 5.5 When
 
-Item added the moment it's discovered (so it stops occupying your
-head); triaged when closing a step (§11, rule 3: moments, not
-schedules).
+Its moments are the records table's (§13). An item goes in when it
+is found, so it stops occupying your head (§11, rule 3: moments,
+not schedules).
 
 ### 5.6 Anti-patterns
 
@@ -496,8 +487,7 @@ seats*). Why the form is as it is:
 
 ### 6.5 When
 
-A line whenever a user-visible change merges — natural moment is
-when a plan step's gate closes.
+Its moment is each seat's records table's (§13).
 
 ### 6.6 Anti-patterns
 
@@ -522,7 +512,9 @@ files, no shared text.
 
 It's the entry point for every newcomer including future-you. Its
 quality determines whether the rest of the record system gets found
-at all.
+at all. A newcomer reads it first, then ARCHITECTURE, then PLAN,
+then the ADRs as needed; the devlog and TODO are working documents,
+read by no one cover to cover.
 
 ### 7.3 Where
 
@@ -543,9 +535,9 @@ run and the deliverer's own. Why the form is as it is:
 
 ### 7.5 When
 
-Stubbed at project start; thereafter, when something became true
-that the outside should see — projection follows truth, so the
-README never claims what is not yet true (ADR-0038, 1d). The
+Stubbed at birth; after that, its moment is the records table's
+(§13). Projection follows truth, so the README never claims what is
+not yet true (ADR-0038, 1d). The
 mechanism is a gate item where relevant: a step whose gate makes
 something projectable true includes updating its projection, exactly
 as record upkeep is already expressed in lived gates ("ARCHITECTURE
@@ -582,7 +574,8 @@ the migrations home "honestly empty" while it held V1 to V4.*
 
 ADRs are a history of individual choices; this is the synthesized
 present. It's the difference between a stack of route decisions and
-a map. Newcomers read it second, right after the README. (Convention
+a map. Newcomers read it second, right after the README (§7.2).
+(Convention
 popularized by matklad's "ARCHITECTURE.md" essay.)
 
 ### 8.3 Where
@@ -598,7 +591,7 @@ deliverer's maps documents and delivery instead (*The seats*). Why
 the form is as it is:
 
 - One or two pages, the system as it is now: a newcomer reads it
-  second, after the README (§1).
+  second, after the README (§7.2).
 - The why behind a shape is the ADR's, linked, so the map states
   and never argues.
 - A step's close is when the structure it describes can have moved,
@@ -761,6 +754,9 @@ The rules that make the pipeline work:
 4. **Cheap at the bottom, durable at the top.** The devlog may be messy;
    ADRs and the playbook must be clean. Effort belongs where the record
    will be re-read.
+5. **Markdown, in the repo, versioned with git.** Records live next to
+   the code they describe, so they branch, review and roll back with
+   it.
 
 ## 12. Minimum viable set
 
@@ -790,6 +786,8 @@ hold, how it stays small — is
 stake in it: the records table, the only ambient part of
 project-recording (*Why it arrives this way*).
 
+### 13.1 What a row holds
+
 **Every row of the records table names three things: the moment, what
 the record holds, and its path** — and adding a record means adding
 its row. What the record holds is a short summary of its item in
@@ -806,7 +804,9 @@ devlog entry at session end" sits in `devlog.md`, and opening
 moment is not a restatement — it says when to go, and
 contains nothing about what to write.
 
-**Anti-pattern.** Local status in the entry file — where the work
+### 13.2 Anti-patterns
+
+Local status in the entry file — where the work
 stands, what is next. It belongs in PLAN.md; the table's row for
 PLAN.md is where the entry file says so.
 
@@ -821,31 +821,28 @@ On the deliverer's seat that talk is kept beside the item, in
 `TODO-CONVERSATION-MEMORY.md` at the root, next to `TODO.md`
 (ADR-0060).
 
-- **One file, a section per item.** An item is a TODO item, or an
-  open question another record holds, such as a step's list for a
-  later round; that record names the section, as an item's See
-  does. The section names its item. Each talk adds a dated part to
-  it, and a part is never rewritten. The file's header comment holds
-  its form and the date of its last touch.
+- **One file, a section per item:** a TODO item, or an open
+  question another record holds. How a section and its parts are
+  kept, when one is read and when it goes, is the file's header
+  comment, its form.
 - **A record that decides nothing and tells no story:** the item's
   ADR decides, and the devlog tells.
 - **The item stands alone.** Its Context is enough for triage, and
   its See names the section. A lost section breaks no record.
-- **The agent asks each time** a talk raises or shapes an item: a
-  new section, a part added to one, or nothing, with its
-  recommendation. The reviewer decides.
-- **The section is read when its item is worked,** before the
-  item's Ideas are weighed. The devlog entry that works the item
-  says whether the section changed the work.
-- **A section goes in the commit that works its item.** The file
-  stays, empty or not, as `TODO.md` does.
+- **The reviewer decides what is kept,** each time a talk raises or
+  shapes an item, on the agent's recommendation: the talk is the
+  reviewer's.
+- **Read before the Ideas are weighed,** so the talk shapes the
+  weighing, and gone with its item, so nothing outlives what it was
+  about.
+
+The trial is judged when the third item is worked with its section
+in hand, or at the refinement step's close, whichever comes first.
+If it holds, it reaches runs through the container; if not, it goes.
 
 *On trial since 2026-10-21. The evidence is in the devlog: each
 item worked with its section in hand, and whether the section
-changed the work. It is looked at when the third such item is
-worked, or at the refinement step's close, whichever comes first.
-If it holds, it reaches runs through the container; if not, it
-goes.*
+changed the work.*
 
 ## Why it arrives this way
 

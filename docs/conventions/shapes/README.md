@@ -55,7 +55,7 @@ it arrived at by keeping it and pointing at it from its backlog.
 ### The deliverer's seat
 
 The deliverer makes outputs too — a reading is one — and its steps
-have gates since ADR-0057. Two of its own forms, a reading's and a
+have gates (ADR-0057). Two of its own forms, a reading's and a
 manual's, are rules today, with a
 Governs line, loaded when the file is read, not while a new one is
 written; whether they become shapes read at a step's gate is the
@@ -119,8 +119,7 @@ the two that had kept a weaker one.*
 
 ## 2. What a shape is not
 
-The vocabulary already had four near neighbours, and a shape was
-called each of them at some point before it got its own word. The
+A shape has four near neighbours, easily taken for it. The
 differences are the reason the entry exists.
 
 - **Not a template.** A template's content is holes awaiting

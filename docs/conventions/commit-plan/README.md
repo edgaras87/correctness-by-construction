@@ -178,8 +178,8 @@ A skill, because its moment is one the agent recognises — work turning
 out to need several commits — and nothing in a record would put the
 plan in front of it then (`docs/models/agent.md` §4.2). The one rule
 that must fire at every commit, the stop, is not here: a skill that
-opens only for multi-commit work cannot carry it, and it moved to
-`docs/conventions/commit-messages/` §2 for that reason (§2.13).
+opens only for multi-commit work cannot carry it, so it is
+`docs/conventions/commit-messages/` §2's (§2.13).
 
 ## What this does not cover
 
