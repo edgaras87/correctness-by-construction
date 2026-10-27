@@ -83,9 +83,7 @@ also takes no `spring-postgres/` (`ARCHITECTURE.md` §2.2).
 Everything copies at birth, including the skills for phases that
 run much later. Each practice skill's readiness gate refuses to start
 before its inputs exist, so an early copy is inert, and one moment
-keeps the whole set at one pin. The run's plan steps come from the
-playbook, whose middles are the pipeline, cbc-framing to
-infra-establish to cbc-bootstrap to cbc-slice, then the
-retrospective and its applying, before Release. Each step's gate is
-derived when the step opens. Only infra-serve, re-entry, arrives
-unplanned, and its own trigger covers that.
+keeps the whole set at one pin. The run's plan steps, and which skill
+each opens, come from the playbook,
+`delivery/fills/cbc-run-pure-playbook.md`. Only infra-serve, re-entry,
+arrives unplanned, and its own trigger covers that.
