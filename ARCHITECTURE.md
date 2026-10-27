@@ -30,6 +30,27 @@ masters (§2). A few rules must hold across all of it (§5), and the
 codemap says where each thing lives (§6). What this repo is for, and
 how to use it, is `README.md`.
 
+```
+          this repo                              a run
+   ┌────────────────────────┐            ┌────────────────────────┐
+   │ concept/               │            │ docs/concept/   copy   │
+   │ delivery/method/       │  staged ─▶ │ .claude/skills/ copies │
+   │ delivery/spring-…/     │  into its  │ .claude/rules/  copies │
+   │ delivery/container/    │   temp/    │ .claude/shapes/ copies │
+   │                        │            │ .claude/approaches-on- │
+   │                        │            │  trial/         copies │
+   │                        │            │ PLAN, TODO, devlog,    │
+   │  masters               │            │ src/ … its own         │
+   └────────────────────────┘            └────────────────────────┘
+              ▲                                       │
+              └───────── we read its repo ────────────┘
+                         and take what it learned
+```
+
+Where each group lands, and which files are copies, is
+`delivery/README.md` §1 and §2; the cycle of pins and readings is
+`docs/conventions/exchange/` §2.5.
+
 ---
 
 ## 1. What is stated here
@@ -97,98 +118,52 @@ Ideas any repo can adapt, their rules varying by repo
 to output. A manual that stands on one names it in its `foundation`
 line.
 
-## 2. The delivery — what a project gets, and where it goes
+## 2. The delivery, and the runs it reaches
 
-**The repeatable stub a project is born from, and updated with
-afterwards.** Four kinds of thing live here and only three of them
-travel; the last subsection is where they go and what comes back.
+What ships, by group. How each group lands in a run is the
+delivery's local map, `delivery/README.md`. The concept's list of
+what derives from it is §2.1, §2.2 and the playbook in §2.4; the
+chapters carry none (`docs/conventions/facts-in-sync/` §4, step 1).
 
 ### 2.1 The method — `delivery/method/`
 
-The concept made usable: `cbc-framing` (turn an idea into one
-falsifiable promise, a layered definition, a registry of slices)
-and `cbc-slice` (take one invariant through specify, plan, build,
-document until a test that creates the adversity proves it holds).
-Beside them, at `delivery/method/.claude/shapes/`, the shapes their
-gates read: what a record or a test of the method looks like, read
-at a step's close and never while it is written. They come from
-practice, under the shapes convention, and their `foundation` line
-says so (`docs/conventions/shapes/`).
-
-**Derived from the concept**, and each says so in its `foundation`
-field: `concept v1`. A change to the concept asks whether these are
-still right. They live at `delivery/method/.claude/skills/cbc-framing/`
-and `delivery/method/.claude/skills/cbc-slice/`. With 2.2 and 2.4,
-this is the concept's list of what derives from it; the chapters
-carry none (`docs/conventions/facts-in-sync/` §4, step 1).
+The concept made usable: `cbc-framing` and `cbc-slice`, under
+`.claude/skills/`, and the shapes their gates read, under
+`.claude/shapes/`. Each skill is derived from the concept, and its
+`foundation` line says `concept v1`.
 
 ### 2.2 The stack practice — `delivery/spring-postgres/`
 
-What one real Spring and Postgres project taught:
-`infra-establish`, `infra-serve`, `cbc-bootstrap`. Two of them carry
-copy-and-fill templates beside their references, which a run fills
-and then owns (ADR-0008).
-
-**Not derived from the concept — checked against it.** These came from
-practice, not from the idea, and their `foundation` field says so:
-`practice, checked against concept v1`. They live at
-`delivery/spring-postgres/.claude/skills/infra-establish/`,
-`delivery/spring-postgres/.claude/skills/infra-serve/` and
-`delivery/spring-postgres/.claude/skills/cbc-bootstrap/`. A project on
-another stack drops this group whole and keeps the rest; it then has
-no ground or bootstrap skill, and another stack's are that stack's to
-harvest, as a group beside this one (ADR-0029).
+What one real Spring and Postgres project taught: `infra-establish`,
+`infra-serve` and `cbc-bootstrap`. Not derived from the concept but
+checked against it: `practice, checked against concept v1`. A run on
+another stack takes no `spring-postgres/`; another stack's practice
+would be a group beside this one (ADR-0029).
 
 ### 2.3 The container — `delivery/container/`
 
-**How a project is kept, not how it is thought.** The records
-(`README`, `PLAN`, `TODO`, `devlog`, `ARCHITECTURE`, `CHANGELOG`,
-the first ADR), the entry file, the agent decisions log, five
-convention skills, four rules, one approach on trial, the hygiene
-files, and the README of its scratch space, `temp/`.
-
-**This is the conventions made usable**, the way the method is the
-concept made usable. Every one of its twenty-three files but one is the
-artifact of one of eleven of the twelve manuals in 1.2 — `conventions`
-ships nothing — the records belong to `project-recording`,
-`delivery/container/.claude/rules/one-home.md` to facts-in-sync,
-the entry file and the decisions log to
-`agent-arrangement`, the three dotfiles to `repo-hygiene`,
-`commit-messages`, `commit-plan` and `visual-comparison` to the
-conventions named after them, `retrospective` and
-`apply-retrospective` to the retrospective,
-`delivery/container/.claude/rules/delivered-copies.md` and
-`delivery/container/temp/README.md` to the exchange,
-`delivery/container/.claude/rules/shapes-lifecycle.md` to
-shapes, and `delivery/container/.claude/rules/writing.md` to
-writing. The one is
-`delivery/container/.claude/approaches-on-trial/approach-drafting.md`,
-an approach on trial: a manual's artifact only once an evaluation
-places it.
-
-A project with no correctness-by-construction in it would still want
-most of this, which is why it is a group of its own and not part of
-the method. Among what it ships is a whole **work arrangement** for
-the run's own agent — section 4.
+The conventions made usable: the record stubs, the entry file, the
+decisions log, the convention skills and rules, an approach on
+trial, the hygiene files, and `temp/README.md`. Which convention a
+file belongs to is its `foundation` line. A project with no
+correctness-by-construction in it would still want most of this,
+which is why it is a group of its own.
 
 ### 2.4 What does not travel — `installs/`, `fills/`, `README.md`
 
-- **`installs/`** — our procedure for the person operating a birth:
-  how a run is seeded (`pure-seed.md`). An update is the exchange
-  (2.5), held as two skills and two rules of ours. A run never sees
-  this.
-- **`fills/`** — text written *into* a newborn's own files rather
-  than copied as files: the playbook's steps, into its `PLAN.md`.
-  The playbook, `delivery/fills/cbc-run-pure-playbook.md`, is
-  checked against concept v1, as the stack practice is.
-- **`README.md`** — the delivery's local map: how its parts land in
-  a run.
+- **`installs/`** — how a run is seeded,
+  `delivery/installs/pure-seed.md`. A run never sees it.
+- **`fills/`** — text written into a newborn's own files: the
+  playbook's steps, into its `PLAN.md`. The playbook,
+  `delivery/fills/cbc-run-pure-playbook.md`, is checked against
+  concept v1.
+- **`README.md`** — the delivery's local map.
 
-### 2.5 Where it all goes, and what comes back
+### 2.5 The runs
 
-A **run** is a separate repository that builds a real system using
-what we gave it. We call a run by its ordinal. It names itself at its
-Identity step, and until then has only ours:
+A run builds a real system with what we gave it. We call a run by
+its ordinal. It names itself at its Identity step, and until then
+has only ours:
 
 | ours | its own | where | state |
 |---|---|---|---|
@@ -198,47 +173,11 @@ Identity step, and until then has only ours:
 | run 4 | `safe-reservation-2` | `~/IdeaProjects/cbc-pure-run-4` | through Release, not yet read |
 | run 5 | `event-tickets` | `~/IdeaProjects/cbc-pure-run-5` | through Release, read, not yet answered |
 
-**A run is blind to us.** It holds no address for this repo, no
-checkout, no remote. It cannot fetch, and nothing here reaches it
-by itself. Every delivery is copied into the run's `temp/`, by the
-reviewer or by the agent when told to, and the run's own agent
-takes it from there (`docs/conventions/exchange/` §3.1).
-
-```
-          this repo                              a run
-   ┌────────────────────────┐            ┌────────────────────────┐
-   │ concept/               │            │ docs/concept/   copy   │
-   │ delivery/method/       │  staged ─▶ │ .claude/skills/ copies │
-   │ delivery/spring-…/     │  into its  │ .claude/rules/  copies │
-   │ delivery/container/    │   temp/    │ .claude/shapes/ copies │
-   │                        │            │ .claude/approaches-on- │
-   │                        │            │  trial/         copies │
-   │                        │            │ PLAN, TODO, devlog,    │
-   │  masters               │            │ src/ … its own         │
-   └────────────────────────┘            └────────────────────────┘
-              ▲                                       │
-              └───────── we read its repo ────────────┘
-                         and take what it learned
-```
-
-**Down — delivery.** Files, copied whole, and a **note** beside
-them. The note is the only way our reasoning reaches a run; the
-files carry none of it. The run records two numbers in its own
-decisions log: the **pin**, a commit of ours it cannot resolve, and
-the **read-through**, its own commit we last read up to.
-
-**Up — harvest.** No files move. We read the run's repository
-directly and write what we learned into our own masters. A run
-never pushes anything here, and what it asked us gets its answer in
-the next note down.
-
-The mechanism — the take, what a copy may become between pins, what
-a copy cannot carry, what a note holds — is the exchange,
-`docs/conventions/exchange/`. The run's half of it ships as
-`delivery/container/.claude/rules/delivered-copies.md`. Ours is two
-skills, `exchange-read` and `exchange-deliver`, and two rules,
-`.claude/rules/exchange-reading.md` and
-`.claude/rules/working-a-reading.md`.
+How a delivery goes down and what a run learned comes back is the
+exchange, `docs/conventions/exchange/`: a run is blind to us (§1),
+records a pin and a read-through (§2.2), takes each delivery (§4),
+and is read back here (§6). What each side holds for it is the
+exchange's *What this is made usable as*.
 
 ## 3. How anything here changes
 
