@@ -873,7 +873,7 @@ measured.
 - **Why the records are never re-delivered to a run** —
   `docs/conventions/exchange/` §2.4.
 - **What the deliverer's CHANGELOG versions** — the concept,
-  ADR-0003 and `ARCHITECTURE.md` §1.1.
+  ADR-0003 and `CHANGELOG.md`'s standing comment.
 
 ## Where to look
 

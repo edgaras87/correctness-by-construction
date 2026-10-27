@@ -548,6 +548,6 @@ new is written without it (`docs/conventions/agent-arrangement/`
   plan when it takes more than one commit,
   `docs/conventions/commit-plan/`, and an ADR when a decision has
   rejected options, `docs/conventions/project-recording/`.
-- **The concept's version** — ADR-0003, and `ARCHITECTURE.md`
-  §1.1.
+- **The concept's version** — ADR-0003, and `CHANGELOG.md`'s
+  standing comment.
 - **The birth procedure** — `delivery/installs/pure-seed.md`.

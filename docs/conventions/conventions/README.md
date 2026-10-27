@@ -334,7 +334,7 @@ what a file stands on has to travel with the file.
 - **What a shape is and how one lives** — `docs/conventions/shapes/`.
   The form of a manual is a rule held here, not a shape.
 - **The concept's edges, its version and its changelog** —
-  ADR-0003 and `ARCHITECTURE.md` §1.1.
+  ADR-0003 and `CHANGELOG.md`'s standing comment.
 - **A run's own descriptions and what derives from them** — the
   run's, and not yet a rule of ours.
 

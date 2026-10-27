@@ -199,8 +199,8 @@ step 3 and steps 4 and 5, before every such commit
 (`.claude/rules/foundation-check.md`). Where a manual and the concept
 are handled differently — versioning, shipping, the kind of
 derivative, the seats, what each asserts — is ADR-0039; the
-concept's edges are ADR-0003, the CHANGELOG's standing comment and
-`ARCHITECTURE.md` §1.1.
+concept's edges are ADR-0003 and `CHANGELOG.md`'s standing
+comment.
 
 *Before 2026-10-17 the rest ran twice by hand: the correspondence
 check of 2026-09-25, and the walk of `a337674^:docs/master.md` at
