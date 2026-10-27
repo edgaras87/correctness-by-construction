@@ -341,16 +341,17 @@
 
 - [ ] Decide whether a session's end has a home of its own, and
       what it holds (2026-10-22, the reviewer).
-      Context: a session's end is spread out. project-recording
-      §4 asks for a devlog entry and a Resume line. Two habits
+      Context: a session's end is spread out.
+      `docs/conventions/project-recording/` §4 asks for a devlog
+      entry and a Resume line. Two habits
       live only in the agent's own memory: a line per
       delegation, and, from 2026-10-22, one missing-context
       finding. A reader of the repo sees neither.
       Ideas:
       - a convention of its own, by its moment; the sweep its
         twin for work that has landed.
-      - a section of project-recording §4, since most of it is
-        devlog writes.
+      - a section of `docs/conventions/project-recording/` §4,
+        since most of it is devlog writes.
       - an approach on trial first (ADR-0058).
       - a rule loaded every session, naming each duty and its
         home.
@@ -476,7 +477,8 @@
         decides; as a shape, it would stand on the shapes convention.
       - a record's form, in its header comment, stays
         project-recording's: it is read when the record is opened,
-        while an entry is written, which shapes §3 keeps for rules.
+        while an entry is written, which
+        `docs/conventions/shapes/` §3 keeps for rules.
         Only `.claude/decisions.md` holds one under another
         convention, agent-arrangement. The open forms are those in
         rules: a manual's, a reading's.
@@ -681,8 +683,8 @@
       document. Practice points sideways: each manual's *What this
       does not cover*, and a skill's `requires`. 11 of 12 manuals
       point at the agent model without standing on it, as the manual
-      form asks. One points down: conventions §3, at
-      `approach-evaluation.md`. No approach points at a model. Nothing
+      form asks. One points down: `docs/conventions/conventions/`
+      §3, at `approach-evaluation.md`. No approach points at a model. Nothing
       says what "up" means within one level, or across two chains.
       Ideas:
       - the tiers model points down four times, at
@@ -703,7 +705,7 @@
         (`docs/conventions/facts-in-sync/` §4, step 3): `requires`
         is a link (`docs/models/idea-to-output.md` §3.1), and the
         walk greps only paths and `foundation` names.
-      - shapes §5.2's four endings are a case of
+      - `docs/conventions/shapes/` §5.2's four endings are a case of
         `docs/models/idea-to-output.md` §3.3 and do not point at it;
         `docs/conventions/facts-in-sync/` §5 does.
       Trigger: round 2 of the refinement closes, before round 3's
@@ -883,7 +885,7 @@
 
 - [ ] Decide whether a check compares the worked example's two
       copies (2026-10-15, the commit plan for writing rules).
-      Context: one-home's rule 5 asks a check where two copies
+      Context: `.claude/rules/one-home.md` rule 5 asks a check where two copies
       cannot be avoided (ADR-0053). The worked example sits in
       `cbc-framing` and `cbc-slice` and must stay identical; it is
       compared by hand at each edit, and was identical on
