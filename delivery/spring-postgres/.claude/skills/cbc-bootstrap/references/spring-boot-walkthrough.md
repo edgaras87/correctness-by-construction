@@ -136,6 +136,10 @@ enable the user socket unit, point the library at it.
   context boots**, pointed at **the one migrations home on the
   filesystem** (`filesystem:infrastructure/flyway/migrations`), never a
   classpath copy.
+- **The ground's authority split held in evidence runs**: the
+  container is initialized by the same bootstrap SQL the ground uses,
+  migration runs as the migrator identity, and the application context
+  connects as the runtime identity alone.
 - A small **layered test-support base**: a database-only base, and a
   web-plus-database base extending it.
 - **Integration tests run under the one standard test command** — widen
