@@ -40,7 +40,8 @@ size" (2026-10-27). ADR-0068 records them.
   Gone: *How to read it*, the list of what it knows is wrong, whose
   entries are TODO known issues, the old §3 and §4 (FINDING-185 with
   them), §2.3's list of which convention owns each container file,
-  the counts, and §2.5's diagram and retellings.
+  the counts, and §2.5's retellings. §2.5's diagram moves to the
+  overview.
 - **Project-recording's deliverer seat** lists our map's parts,
   each with what it holds and who reads it, in place of ADR-0044's
   paragraph.
@@ -143,8 +144,11 @@ index and `one-home.md` rule 3 point at.
 One line a group, pointing at `delivery/README.md`. §2.3's list of
 which convention owns each file goes, and the counts. §2.5 keeps the
 table of runs and says the exchange in one sentence, with sections
-(FINDING-184). The tiers model's pointer at §2.5 for the note and
-the pin goes; it keeps the exchange's. `delivery/README.md`'s
+(FINDING-184). Its diagram moves to the overview, as a run's map
+opens with a picture of its parts, captioned with the homes of what
+it draws (revised at 9's boundary, on the reviewer's question). The
+tiers model's pointer at §2.5 for the note and the pin goes; it
+keeps the exchange's. `delivery/README.md`'s
 pointer at §2.2 is read at the boundary.
 
 **10. `docs: ARCHITECTURE drops its retold sections`**
