@@ -1,8 +1,9 @@
 # CbC framing workflow — layering the system
 
 *The first part of the method: how a raw idea becomes a layered system
-definition and a slice surface. Ends exactly where `cbc-slice-workflow.md`
-begins — its output is that workflow's input.*
+definition and a slice surface. Ends exactly where
+`.claude/skills/cbc-slice/references/cbc-slice-workflow.md` begins — its output is that
+workflow's input.*
 
 *When a stage's required output changes here, `worked-example.md` beside
 this file changes in the same commit: a framer is sent to it to see what
@@ -327,7 +328,7 @@ slice at each close. Stage 6's deliverable is the **shape**, not a sequence.
 
 **Exit:** the registry stands — first slice chosen-next.
 **Hands off to:** the ground and the bootstrap, then
-`cbc-slice-workflow.md`, one slice at a time.
+`.claude/skills/cbc-slice/references/cbc-slice-workflow.md`, one slice at a time.
 
 ---
 

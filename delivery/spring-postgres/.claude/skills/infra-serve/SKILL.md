@@ -42,16 +42,16 @@ stands and the request is refused with that reasoning.
    verdict.
 3. **Constraints.** The new service gets its constraints named with
    enforcement mechanisms, standing knowledge as the rebuttable
-   default where it exists (for a datastore: the role-split model in
-   infra-establish's references). A changed service gets its existing
+   default where it exists (for a datastore: the role-split model,
+   `.claude/skills/infra-establish/references/postgres-role-split.md`). A changed service gets its existing
    constraints re-checked against the change.
 4. **Stand up and verify both ways.** Ground files as complete files
    (never fragments); secrets split out; then the catalog check *and*
    the behavioral check for the new capability — expected result
    stated before running, outcome read from actual output. A reused
-   service family may have a lived walkthrough in infra-establish's
-   references — consult it; never force its shape on a different
-   service.
+   service family may have a lived walkthrough among
+   `.claude/skills/infra-establish/references/` — consult it; never
+   force its shape on a different service.
 5. **Grow the manuals.** The infrastructure contract gains (or
    amends) its section — identities, reachability, refusals as
    contract terms, how changes are made; the operator manual gains

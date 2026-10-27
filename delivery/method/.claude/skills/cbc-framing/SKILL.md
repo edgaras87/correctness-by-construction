@@ -229,6 +229,6 @@ Then say this explicitly to the user: **the handoff is to the ground and
 the bootstrap, not to slicing.** Between framing and the first slice sits
 real project work — the ground the system runs on, its store among it;
 then the skeleton and its adversity harness — defined by the readiness
-checklist (`system-readiness.md`, bundled with the cbc-slice skill). Slicing
+checklist (`.claude/skills/cbc-slice/references/system-readiness.md`). Slicing
 begins only when the human signs off readiness; the cbc-slice skill will
 check.
