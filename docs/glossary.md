@@ -6,10 +6,14 @@
      the thing a word names, the entry points at it with a fact
      reference and does not restate it. A word is coined only when
      plain English cannot say it; an entry goes when its word does.
+     Entries sit in groups by what they name; a new word goes in its
+     group, after the words it uses.
      foundation: the writing convention -->
 
 Used across both repos, each defined here once — or, where a
 manual owns the thing a word names, pointed at there.
+
+## The repositories
 
 - **deliverer** — the repository holding the master of every file a
   project receives. Here, this repo.
@@ -20,9 +24,23 @@ manual owns the thing a word names, pointed at there.
   included, and no earlier state.
 - **project** — whichever repository is doing the work under a
   convention or making an output: a run, or this one.
+- **seats** — the sides a convention has, this repo's and a run's.
+  A manual says whether the two use it the same way.
+
+## Between them
+
+- **master** — the one copy of a file that is edited. Every other
+  copy changes only by being copied anew.
+- **read-through**, **pin** — the two numbers a run records for a
+  delivery: its own commit the deliverer last read up to, and the
+  deliverer's commit its copies equal. The exchange's,
+  `docs/conventions/exchange/` §2.2.
 - **delivery** — files copied whole into a run with a note, or a
   note alone. At birth, and after (`docs/conventions/exchange/`
   §3.2, §6.6).
+- **note** — the text beside a delivery: what changed since the
+  run's pin, and a verdict on everything the run asked
+  (`docs/conventions/exchange/` §3.7).
 - **staging** — copying the delivery and its note into a run's
   `temp/`, by the reviewer or by the agent when told to
   (`docs/conventions/exchange/` §3.1). The run does nothing until it
@@ -30,19 +48,11 @@ manual owns the thing a word names, pointed at there.
 - **take** — the run's act: moving delivered files from `temp/`
   into place and recording the pin (`docs/conventions/exchange/`
   §4).
-- **read-through**, **pin** — the two numbers a run records for a
-  delivery: its own commit the deliverer last read up to, and the
-  deliverer's commit its copies equal. The exchange's,
-  `docs/conventions/exchange/` §2.2.
-- **note** — the text beside a delivery: what changed since the
-  run's pin, and a verdict on everything the run asked
-  (`docs/conventions/exchange/` §3.7).
 - **harvest** — us reading a run's repository and changing our
   masters from what it learned. No files move.
-- **master** — the one copy of a file that is edited. Every other
-  copy changes only by being copied anew.
-- **made usable** — what a stated body becomes in the delivery:
-  the concept as the method, the conventions as the container.
+
+## Kinds of text
+
 - **description** — how we understand a thing today, written down:
   the concept, a model, a manual. It may be wrong or
   incomplete and is canonical regardless; what derives from it
@@ -61,14 +71,13 @@ manual owns the thing a word names, pointed at there.
   today; that phrase is a gloss on this word, not a second term. If
   it reads as settled where the stance is today, *standing* is the
   runner-up, recorded here rather than decided.
-- **local map** — a directory's `README.md` that says how the parts
-  of that area relate, which `ARCHITECTURE.md` points into. Relations only;
-  not every README is one (ADR-0045).
 - **convention** — a way of working written down once, as two texts
   kept apart: its manual, and the artifacts a project acts on
   (`docs/models/idea-to-output.md` §6).
 - **manual** — a convention's description, at
   `docs/conventions/<name>/README.md`. Never shipped.
+- **made usable** — what a stated body becomes in the delivery:
+  the concept as the method, the conventions as the container.
 - **approach** — how a piece of work is done. A skill or a rule is
   an approach proven and placed; an approach on trial is not yet
   proven (`docs/models/idea-to-output.md` §2).
@@ -88,8 +97,19 @@ manual owns the thing a word names, pointed at there.
   and read only at the gate to check what was made
   (`docs/models/idea-to-output.md` §2; `docs/conventions/shapes/`).
   Not a form, which is read while writing.
-- **seats** — the sides a convention has, this repo's and a run's.
-  A manual says whether the two use it the same way.
+- **local map** — a directory's `README.md` that says how the parts
+  of that area relate, which `ARCHITECTURE.md` points into. Relations only;
+  not every README is one (ADR-0045).
+
+## How texts tie
+
+- **fact reference** — what a line carries when it relies on a fact
+  written elsewhere: the address of the fact's home, today a path
+  and a section (`docs/conventions/facts-in-sync/` §3.1).
+- **link** — a relation from a lower text to the upper one it
+  relies on: stands on, points, governs, written from, requires
+  (`docs/models/idea-to-output.md` §3.1). Wider than a fact
+  reference, which is what one kind of link, points, writes down.
 - **foundation** — the line by which a file names the one thing the
   whole of it stands on: its description, or the practice it was
   written under. A skill, a rule, a shape, a record's form and a
@@ -98,24 +118,20 @@ manual owns the thing a word names, pointed at there.
   (`docs/conventions/conventions/` §1.3;
   `docs/conventions/facts-in-sync/` §4). Not *source*: that
   was a run's word for the deliverer, and is not ours.
-- **link** — a relation from a lower text to the upper one it
-  relies on: stands on, points, governs, written from, requires
-  (`docs/models/idea-to-output.md` §3.1). Wider than a fact
-  reference, which is what one kind of link, points, writes down.
-- **fact reference** — what a line carries when it relies on a fact
-  written elsewhere: the address of the fact's home, today a path
-  and a section (`docs/conventions/facts-in-sync/` §3.1).
 - **walk** — what a change to a description sets off: the greps for
   its path and its name, and the re-read of each line they find
   (`docs/conventions/facts-in-sync/` §4, step 3).
+
+## The work
+
 - **step** — one piece of PLAN's work, a run's or ours. What makes
   work a step here is our `PLAN.md`'s step form (ADR-0057).
+- **stage** — one phase of a skill, numbered from Stage 0:
+  `cbc-slice`'s Stage 3, `cbc-framing`'s Stage 2. A step's Now line
+  names the stage it is in. How a skill names them:
+  `docs/conventions/conventions/` §1.4.
 - **conversation-memory** — the talk that shaped a TODO item,
   kept beside it in `TODO-CONVERSATION-MEMORY.md`: what was asked,
   the options weighed, what was said for and against. It decides
   nothing; it is read when the item is worked
   (`docs/conventions/project-recording/` §14).
-- **stage** — one phase of a skill, numbered from Stage 0:
-  `cbc-slice`'s Stage 3, `cbc-framing`'s Stage 2. A step's Now line
-  names the stage it is in. How a skill names them:
-  `docs/conventions/conventions/` §1.4.
