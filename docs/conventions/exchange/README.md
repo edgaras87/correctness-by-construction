@@ -219,7 +219,12 @@ mapping, stated here once.
 ### 3.4 Every shipped file is in exactly one group
 
 The staging checks:
-a path claimed by two groups is an error, not a merge. When one
+a path claimed by two groups is an error, not a merge. A skill
+belongs to one group and travels whole, never split across two. The
+method holds no stack: nothing that needs Spring, PostgreSQL, Maven
+or podman sits under `delivery/method/`, so a run on another stack
+takes the container and the method and leaves the stack's group
+(ADR-0029). When one
 group's words must sit in another group's file — the method's
 playbook inside the container's `PLAN.md` — that is a **fill**: the
 owning group's file has a marked place, the other group provides
