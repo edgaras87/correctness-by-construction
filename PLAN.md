@@ -135,9 +135,9 @@ corner.
 Goal: Living text written before a rule now meets that rule, and
 `docs/conventions/project-recording/` §1 is a map of the records
 in both seats.
-Now: round 2's work: every finding has its ending, and layer 1,
-the conventions manual, is worked first
-(`.claude/approaches-on-trial/refinement.md` §2.7).
+Now: round 2's close read: all the text round 2 covered, read again
+against its four kinds
+(`.claude/approaches-on-trial/refinement.md` §2.8).
 Gate:
 
 **At the opening.**
