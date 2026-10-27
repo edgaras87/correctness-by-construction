@@ -26,12 +26,14 @@ rules split that way, and the rules came here before it read
 
 - **`delivery/container/.claude/rules/one-home.md` — a rule,
   shipped**, held at `.claude/rules/one-home.md` with no `paths:`,
-  so it loads at the start of every session: §1.
+  so it loads at the start of every session: §1, and the run's
+  seat.
 - **`.claude/rules/one-home.md` — the deliverer's**, loaded in
-  every session: §1 and §2.
+  every session: §1, §2, §3.1, and the deliverer's seat's question
+  at each commit.
 - **`.claude/rules/foundation-check.md` — the deliverer's**, loaded
   in every session and acting before a commit is staged: §3.3's
-  grep for a moved section, §4 and §5.
+  grep for a moved name, §4 and §5.
 
 What derives from this page is that list. A change here walks it;
 a change forced in one of them is checked back against this page.
@@ -41,19 +43,30 @@ a change forced in one of them is checked back against this page.
 ### The run's seat
 
 A run holds the shipped one-home rule: one home per fact, a link
-elsewhere, and a copy that cannot be avoided made a follower. It
-retells a fact only where two copies cannot be avoided: its case of
-a retelling with a fact reference, which ids are fact references
-and when they are re-read, is not designed yet (ADR-0059,
-ADR-0065). §4 and §5 reach a run as the exchange's reading of what
-it sends back (`docs/conventions/exchange/` §6).
+elsewhere, and a copy that cannot be avoided made a follower. It may
+retell a fact beside its id where the reader acts on it in place. An
+id, such as SLICE-4 or KILL-12, is a run's fact reference, written
+bare. When the fact changes at its home, the run greps the id and
+re-reads each line that carries it, in the same commit (ADR-0070).
+A run cannot open this repo's manuals, so a shipped line that relies
+on one stands alone (§3.1, *What it is*). §4 and §5 reach a run as
+the exchange's reading of what it sends back
+(`docs/conventions/exchange/` §6, *Up*).
 
 ### The deliverer's seat
 
 The deliverer holds its own, wider one-home rule and the foundation
 check. It may retell a fact where the reader acts on it in place
-(§1). Its fact reference is a document's path and section (§3.1), and
-the walk before every commit re-reads it (§4).
+(§1). Its fact reference is a document's path, section and title
+(§3.1, *What it is*), and the walk before every commit re-reads it
+(§4, *The rule for every description*). The walk finds only lines
+that carry a fact reference, so at each commit each new or changed
+line is asked whether it relies on a fact written elsewhere, and
+whether it says where (ADR-0070).
+
+*Found 2026-10-24: the 11 manuals' channel sections reasoned from
+the agent model with no fact reference. No walk could see them, and
+a read found them.*
 
 ## 1. One home
 
@@ -78,6 +91,10 @@ being trusted. In practice:
   true then. So do the parts of `TODO-CONVERSATION-MEMORY.md`, which
   only the deliverer keeps. They are never updated, so they cannot
   drift. Each file's header comment is living text.
+- **History is not a first home either.** A fact stated only in
+  history gets a living home before anything retells it: nothing
+  changes at a history entry, so nothing would re-read what tells it
+  (ADR-0070).
 - **Comments and config count too,** not only records.
 
 *Added 2026-10-15, from run 3: its loaded one-home rule said these
@@ -118,12 +135,38 @@ so a fact reference has one target: the home of the fact its line
 relies on. The line above relies on a claim about agents, so it
 names the agent model, not a convention that applies the claim.
 
-A fact reference names the document by its path from the repo
-root, `docs/conventions/<name>/`, with the section number when it
-means one — `docs/conventions/conventions/` §2.4 — so that the
-document can find everything pointing at it with one grep, and a
-reader lands on a paragraph rather than a wall. Never a relative
-link: a relative path means a different thing the moment a file is
+A fact reference is written in one form, always in parentheses:
+
+- **in the same repo:** (`<path>` §<number>, *<title>*), such as
+  (`docs/conventions/conventions/` §2.4, *The seats*);
+- **in the same document:** (§<number>, *<title>*);
+- **to another repo:** that repo's tag first, such as (CBC
+  `docs/conventions/exchange/` §3.4, *Every shipped file is in
+  exactly one group*);
+- **a section with no number:** its title alone, such as
+  (`docs/conventions/exchange/`, *What it is for*);
+- **a whole document:** its path alone.
+
+The path runs from the repo root, so a document finds everything
+pointing at it with one grep. A skill names its own files the same
+way: two skills may hold a file of the same name. The number lands
+the reader on a paragraph rather than a wall. The title says what is
+there without opening it, and a number and title that no longer
+match show a stale reference. A long title is cut to its first
+words. The parentheses give the walk and the reader one shape to
+find; the sentence says its point in words, and the reference gives
+only the address.
+
+In a shipped file, a reference to this repo's text leads with CBC
+and serves this repo's walk alone. A run cannot open our manuals, so
+the line says what the run needs without it.
+
+The agent model calls any text that sends an agent to a file a
+pointer (`docs/models/agent.md` §12.2, *On pulled*, claim P1). A
+fact reference is one kind of pointer, and this page calls it only
+by its own name.
+
+Never a relative link: a relative path means a different thing the moment a file is
 read from a different root, which is every copy and every shipped
 file. A name in prose is not a fact reference, because names are
 words. A fact reference beside a retelling always names the
@@ -149,9 +192,11 @@ day, by form.*
 
 ### 3.3 A rename is grepped at its commit
 
-A commit that renames or renumbers greps all living text for each
-old path and number, and fixes what points at them in the same
-commit. A commit plan's sweep looks again before its close
+A commit that renames a file, renumbers or retitles a section, or
+moves a fact to a new home greps all living text for each old path,
+number and title, and fixes what points at them in the same commit.
+Placing an approach on trial into a convention is such a move
+(ADR-0070). A commit plan's sweep looks again before its close
 (`docs/conventions/commit-plan/` §2.10).
 
 *Found 2026-10-19: the refinement's manual was renumbered three
@@ -180,9 +225,11 @@ for all of them, and this is where it is stated:
    Which files carry it, where, and what each holds is
    `docs/conventions/conventions/` §1.3. Every line that uses a part of
    a document, its root included, carries a fact reference to that
-   part (§3.1). The root says which document to open when the file
-   changes; a fact reference says which line to re-read when the
-   part changes.
+   part (§3.1), the root's parts as much as any other's. The root
+   says which document to open when the file changes, and the whole
+   file is re-read: that finds what no single line shows, a fact
+   gone missing or a file that no longer holds together. A fact
+   reference says which line to re-read when the part changes.
 3. A change to the description walks the list in the same commit,
    or in the next when one side is an agent file and the other is
    not (`docs/conventions/commit-messages/` §2). It greps for the
