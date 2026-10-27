@@ -104,8 +104,9 @@ manual owns the thing a word names, pointed at there.
 ## How texts tie
 
 - **fact reference** — what a line carries when it relies on a fact
-  written elsewhere: the address of the fact's home, today a path
-  and a section (`docs/conventions/facts-in-sync/` §3.1).
+  written elsewhere: the address of the fact's home, its path,
+  section and title, in parentheses
+  (`docs/conventions/facts-in-sync/` §3.1, *What it is*).
 - **link** — a relation from a lower text to the upper one it
   relies on: stands on, points, governs, written from, requires
   (`docs/models/idea-to-output.md` §3.1). Wider than a fact

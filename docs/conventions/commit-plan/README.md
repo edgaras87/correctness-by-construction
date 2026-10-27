@@ -132,8 +132,10 @@ split when it opens. *The same plan put two changes under
 
 ### 2.10 The sweep, before the close and unwrapped
 
-A commit that renames or renumbers greps for the old names in that
-commit (`docs/conventions/facts-in-sync/` §3.3). Before the close,
+A commit that renames a file, renumbers or retitles a section, or
+moves a fact greps for the old names in that commit
+(`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped at its
+commit*). Before the close,
 the sweep looks again for every name the set moved, all at once: a
 commit's own grep looks for the names it meant to move, and misses
 the rest. It reads the text unwrapped. A grep matches line by
