@@ -208,7 +208,7 @@ The certified facts also project into the README (CBC ADR-0013): the
 Prerequisites section the establishment opened — merged and filled
 from `templates/readme-run-test.md`. Run ends in the lived proof of
 life; Test is the one standard test command, verified structurally at
-certification. The container's README stub ships without these sections —
+certification. The container's README ships without these sections —
 container stays, direction goes — and they arrive now because the
 harness is real.
 
