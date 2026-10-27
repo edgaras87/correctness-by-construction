@@ -994,18 +994,21 @@ Ending: declined (DECISION-13).
 session's end, at a pause, and when a TODO item is added".
 `CLAUDE.md`'s table says "Session ending, a dead end hit, or a TODO
 item added". Proposed: fix, point at the records table.
+Ending: fixed, `ae425c8`: step 8 points at the records table.
 
 **FINDING-194.** One home; checked. `CLAUDE.local.md` restates
 commit-messages' "commit on the word" and commit-plan's stop at
 every boundary. agent-arrangement §3.7: it holds settings, never
 rules. TODO's "Decide how work is run by agents" carries it.
 Proposed: TODO, that item.
+Ending: moved to TODO's "Decide how work is run by agents".
 
 **FINDING-195.** One home; checked. Five lines say the seats' copies
 are identical, kept true by hand. `approach-drafting.md` is
 identical too and has no such line. TODO's "Decide whether each
 seat's copy is written for its seat" carries the question.
 Proposed: TODO, add `approach-drafting.md` to its list.
+Ending: worked by ADR-0069: no text claims a copy the same (`3e61b28`, `e0fd201`); `approach-drafting.md` stays one text until its evaluation (decision 2).
 
 **FINDING-196.** Dependencies; resting on the reader. Our derived
 rules and skills use their own manual with few section references:
@@ -1013,16 +1016,19 @@ rules and skills use their own manual with few section references:
 `exchange-read` 2, `working-a-reading.md` 3, `one-home.md` 4,
 `convention-manual.md` 5, `foundation-check.md` 7. Rests on
 DECISION-10.
+Ending: moved to TODO's "Decide how a fact reference is written" (DECISION-10).
 
 **FINDING-197.** Dependencies; checked. `exchange-reading.md` says
 "When it opens, extends and closes is the exchange's" by name. Its
 home is exchange §6.3 and §6.4. Proposed: fix.
+Ending: fixed, `1fe01db`.
 
 **FINDING-198.** Layout; uncertain. The refinement's §2.5 holds the
 order of the layers, which §1, §2.2 and §2.7 point at. Its §2.3
 also holds how a fix is judged. Proposed: fix, the layers move to
 §2.2, in a commit of its own (approach-drafting, stage 2). The §2.3
 part declined.
+Ending: fixed, `cb2e5e3`: the layers sit in §2.2. The §2.3 part declined, as the endings say.
 
 #### Layer 6: `delivery/`, what ships
 
@@ -1168,6 +1174,7 @@ Proposed: TODO, the fact-reference item.
 the run "**At the deliverer:** open `approach-evaluation`". The
 line is labelled for the deliverer, and TODO's seat-copy item
 carries it. Proposed: decline.
+Ending: declined: ADR-0069 decision 2 keeps the file one text for both seats until its evaluation at the refinement's close.
 
 **FINDING-222.** Lessons; checked. The `visual-comparison` skill
 states "one obvious answer means a clear answer" only inside a case,

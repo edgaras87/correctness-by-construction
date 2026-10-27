@@ -1,7 +1,8 @@
 # 0069. Each seat's copy is written for its seat
 
 Date: 2026-10-27
-Status: Proposed, opened under the commit plan for layer 5's work.
+Status: Accepted (2026-10-27, at the set's records commit; opened
+Proposed under the commit plan for layer 5's work, unchanged since).
 
 ## Context
 

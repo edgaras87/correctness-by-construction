@@ -928,48 +928,6 @@ when".
   item's trigger, the refinement's close, when the refinement's
   approach is judged: the largest check this repo runs.
 
-## 15. Each seat's copy, written for its seat
-
-Item: "Decide whether each seat's copy is written for its seat".
-
-### 2026-10-25
-
-#### What the reviewer asked
-
-It began with commit 2's fact reference to the sweep, which named
-only the container's skill: does our commit-plan sweep too? It
-does, since the two skills are the same file today. In their words:
-"i dont like that thing "byte-identical to the shipped one"
-anymore. because it should be all as "byte-identical to the shipped
-one" or non. now i need to track which are and which not. it would
-be simple to repeat things and alter each part according to seat."
-
-#### What exists today
-
-- ADR-0042: both seats derive from the manuals, neither copied from
-  the other; a file identical in both is an outcome, not a
-  dependency. It rejected diverging the identical files as "a
-  change nobody needs".
-- Five lines say which are the same: commit-plan, commit-messages
-  and visual-comparison, each "identical to it today";
-  agent-arrangement's "Three skills are identical files"; and the
-  conventions manual's rule that a file of ours byte-identical to
-  its shipped master keeps `CBC ADR-nnnn`, so one diff checks the
-  pair.
-- The commit-plan manual names the sweep only in §2, "The sweep
-  reads the text unwrapped". Only the skills say it runs before a
-  close.
-
-#### Points made
-
-- Stating an outcome makes each manual keep it true by hand: the
-  tracking the reviewer would drop.
-- Each seat written for itself leaves nothing to track, and each
-  copy reads for its own reader. It reverses ADR-0042's rejected
-  option, so it needs a new ADR, and the one-diff check goes.
-- Not the facts-in-sync plan's: its commit 2b points at the
-  commit-plan manual instead of the container's file.
-
 ## 16. Which way a fact reference points
 
 Item: "Decide which way a fact reference may point: up, sideways,

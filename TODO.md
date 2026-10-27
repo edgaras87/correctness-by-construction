@@ -717,6 +717,10 @@
         (`docs/conventions/facts-in-sync/` §4, step 3): `requires`
         is a link (`docs/models/idea-to-output.md` §3.1), and the
         walk greps only paths and `foundation` names.
+      - `docs/conventions/conventions/` §1.2 says `requires` names
+        the conventions a skill delegates to, and also that it
+        refers to a skill by name; `commit-plan` requires
+        `project-recording`, a convention with no skill.
       - `docs/conventions/shapes/` §5.2's four endings are a case of
         `docs/models/idea-to-output.md` §3.3 and do not point at it;
         `docs/conventions/facts-in-sync/` §5 does.
@@ -738,30 +742,6 @@
       Trigger: a convention whose idea another repo could use, with
                no second manual sharing it.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
-
-- [ ] Decide whether each seat's copy is written for its seat
-      (2026-10-25, the reviewer).
-      Context: both seats derive from the manuals, and a file the
-      same in both is an outcome (ADR-0042). Five lines still say
-      which are the same: three manuals' made-usable lists,
-      agent-arrangement's *What the difference is*, and the
-      conventions manual's `CBC ADR` rule for a file identical to
-      its shipped master. Each is kept true by hand.
-      Ideas:
-      - each seat's copy written for its seat, never claimed the
-        same; it reverses an option ADR-0042 rejected.
-      - drop the five lines and keep the files as they are.
-      - `.claude/approaches-on-trial/approach-drafting.md` is
-        identical in both seats too, and no line says so (round 2's
-        FINDING-195).
-      - the record forms share text across the seats, and nothing
-        says which: TODO's header 16 of its 26 lines, the step
-        form's last three paragraphs 16 lines, the README's comment
-        4 of 6.
-      Trigger: round 2's work on layer 5, before its fixes. Round
-               2's One home reading met the five lines, and
-               FINDING-142 and 202 edit identical copies.
-      See: devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §15.
 
 - [ ] Decide whether a manual keeps the story behind a lesson
       (2026-10-25, the reviewer).
