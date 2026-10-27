@@ -3,44 +3,32 @@
 <!-- This repo AS IT IS NOW: what is tied to what, so that changing
      one part shows what else moves. How a part came to be is the
      ADRs' and the devlog's; this page points there and does not
-     retell it. The deliverer's map (project-recording, the
-     deliverer's seat; ADR-0044): documents and delivery, with its
-     words and the list of what it knows is wrong.
+     retell it. The deliverer's map
+     (docs/conventions/project-recording/, its deliverer's seat;
+     ADR-0044, ADR-0068): about two pages, owning the pairing, the
+     table of runs, how each rule is held and the codemap, and
+     pointing at the home of everything else.
 
      Written under one rule: state only what is checkable in this
      repo and in the live run, and mark anything merely intended as
-     intended. Where it contradicts itself, say so in the list at
-     the end rather than pick a side.
+     intended. A line found wrong, or two that contradict, and not
+     fixed at once, is a TODO known issue until it is.
      foundation: the project-recording convention -->
 
-**One concept, the delivery a project is born from, and the agent
-that keeps both true.**
+## Overview
 
-Nothing is built here. No application, no service, no run — this
-repo holds documents and hands them to projects that do build. It is
-the one concept repo on the concepts tier of the workspace
-(`docs/models/tiers.md` §2.2).
+**This repo states a concept and its conventions, ships each made
+usable to runs, and reads back what the runs learn.**
 
-## What this is
-
-A picture of what is tied to what in this repo, so that changing
-one part shows what else moves.
-
-It is only useful while it is current: a map wrong about what
-connects to what is worse than none, because it is believed. What
-it already knows is wrong is listed at the end.
-
-## How to read it
-
-Three movements. **The material** — what is stated here (1) and
-what ships from it (2), paired row by row. **The motion** — how any
-of it changes, and the rule for when a run disagrees with what we
-wrote (3). **The actor** — the work arrangement, which the agent
-here is made of and which the container ships a run's own
-derivation of (4).
-
-Then what must stay true (5), where things are (6), the words, and
-what this page knows is wrong.
+Two bodies of writing are stated here and never ship: the concept,
+`concept/`, and the conventions, `docs/conventions/`, under the
+models in `docs/models/`. Each is made usable as something that
+does ship: the concept as the method, the conventions as the
+container (§1). A run is born from that delivery, takes newer copies
+at each pin, and is read back here; what it learned changes our
+masters (§2). A few rules must hold across all of it (§5), and the
+codemap says where each thing lives (§6). What this repo is for, and
+how to use it, is `README.md`.
 
 ---
 
@@ -382,11 +370,3 @@ COMMIT-PLAN.md       an in-flight change set, when present
 ## The words
 
 What each coined word means is `docs/glossary.md`.
-
-## What this page knows is wrong
-
-Nothing is listed today.
-
-When one is fixed it leaves this list. When the list is empty, this
-page is claiming to be current — and that is the claim to distrust
-most.
