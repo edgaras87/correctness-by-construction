@@ -288,9 +288,8 @@ placing takes these steps:
    that list, and cannot open this repo's.
 4. The index's chain, only if the convention acts in sequence
    during a piece of work.
-5. `ARCHITECTURE.md`: §1.2's count and what the manuals cover, §2.3's
-   line on which convention owns which container file, and the
-   codemap's count.
+5. `ARCHITECTURE.md` §1.2: the convention's line, a phrase and its
+   manual's path.
 6. What the deliverer holds of it, derived from the manual: for a
    skill, its own under `.claude/skills/`, in its own agent-scoped
    commit, with an entry in `.claude/decisions.md` when it changes
@@ -302,9 +301,9 @@ added, not from what the index said. By 2026-10-18 seven had come
 this way: `visual-comparison`, the exchange, shapes, this one,
 writing, the retrospective and first-time work.*
 
-No CHANGELOG line and no PLAN step. The CHANGELOG is the
-concept-version log (ADR-0003) and has no place for a
-convention's entry; the PLAN has no per-convention steps. *The
+No CHANGELOG line and no PLAN step. The CHANGELOG logs the concept's
+versions and has no place for a convention's entry (`CHANGELOG.md`'s
+standing comment); the PLAN has no per-convention steps. *The
 index asked for both until 2026-09-28, and the last seven
 conventions took neither — a rule kept where nobody reads it
 (ADR-0039).*
