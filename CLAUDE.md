@@ -1,6 +1,6 @@
 # correctness-by-construction
 
-A concept repo (concepts tier, see docs/models/tiers.md): one
+A concept repo (concepts tier, see `docs/models/tiers.md` §2.1, §2.2): one
 concept in plain words, and what is made from it. It is the
 deliverer: each run, a separate repository that builds a real
 system by the concept, is born from what this repo ships and is
@@ -27,6 +27,7 @@ read back from here. Documents only — no code, no runs
 | The concept changed, or an execution derived from or checked against it | What changed, for those who pin a concept version | CHANGELOG.md |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |
 | How the repo's parts tie together changed | What stands now, and how its parts tie | ARCHITECTURE.md |
+| Meeting a word you do not know, or coining one | Each coined word, defined once in plain words | docs/glossary.md |
 | Agent setup changed | Decision, why, rejected options | .claude/decisions.md |
 | Work needs more than one commit | In-flight change set | COMMIT-PLAN.md (when present) |
 

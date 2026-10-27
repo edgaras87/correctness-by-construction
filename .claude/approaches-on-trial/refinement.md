@@ -61,7 +61,7 @@ The words of this page, each defined once:
 
 - **living text** — every file but history. History is the
   devlog, closed ADRs and commit bodies
-  (`.claude/rules/one-home.md`). Also left out: `docs/baselines/`,
+  (`docs/conventions/facts-in-sync/` §1). Also left out: `docs/baselines/`,
   frozen on purpose, and a run's own text in `temp/`, which its
   reading reads.
 - **kind** — one rule the refinement reads against, and the

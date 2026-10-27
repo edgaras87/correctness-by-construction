@@ -91,8 +91,8 @@ section.>
   a `PLAN.md` gate item names the commit that closes it. A change to
   the agent's own files — a skill or rule corrected or added, its
   decisions entry — is a commit of its own, never
-  folded into a records commit: commit-messages keeps the two
-  apart, and a records commit planned to carry one has to be split
+  folded into a records commit: `docs/conventions/commit-messages/`
+  §2 keeps the two apart, and a records commit planned to carry one has to be split
   when it opens.
 
 ## 4. Lifecycle
@@ -144,7 +144,7 @@ refinement, not divergence; the close body distinguishes the two.
 ## 6. Review protocol
 
 Work stops at every commit boundary: stage, show the diff, commit
-only on the reviewer's word. The rule is commit-messages' and binds
+only on the reviewer's word. The rule is `docs/conventions/commit-messages/` §2's and binds
 at every commit, not only inside a change set.
 
 **Small steps inside a planned commit, where the reviewer has
