@@ -685,6 +685,12 @@
       `approach-evaluation.md`. No approach points at a model. Nothing
       says what "up" means within one level, or across two chains.
       Ideas:
+      - the tiers model points down four times, at
+        `docs/conventions/exchange/` three and `delivery/README.md`
+        §2 once, and holds this repo's instance: "today" facts and
+        three ADRs. It would speak of tiers in general, the instance
+        moving to the README, home of what this repo is (round 2's
+        layer 4). Idea-to-output §2's table names `.claude/shapes/`.
       - "up" as toward the fact the line relies on, at any level.
       - sideways allowed for a fact another convention owns.
       - an approach pointing at a model when no convention holds the
