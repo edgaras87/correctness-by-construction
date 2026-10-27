@@ -29,6 +29,11 @@ it owned was the pairing of what is stated with what ships, the table
 of runs, how each rule that must stay true is held, the codemap, and
 the list.
 
+The list of what it knows is wrong was empty in 102 of the page's
+104 versions, and held one entry in the other two. TODO's *Known
+issues* already holds what is known and deferred: what, why
+accepted, when to revisit.
+
 A run keeps its glossary as a file of its own, `docs/glossary.md`.
 Writing rule 6 makes ours the one home of each coined word.
 
@@ -54,6 +59,9 @@ changes any master, and only `CLAUDE.md` said "the deliverer".
    - Run-only, our map moved into the README. Rejected: the table of
      runs, how each rule is held and the codemap each have a reader,
      and none of them is a front door's.
+   - The list of what it knows is wrong kept, as ADR-0044 had it.
+     Rejected: a second home for TODO's known issues, and almost
+     always empty.
 4. **What this repo is.**
    - One sentence, copied into all five. Rejected: five copies to
      keep in step by hand, where one-home rule 5 allows copies only
@@ -72,12 +80,13 @@ changes any master, and only `CLAUDE.md` said "the deliverer".
    path a run's has. Its header comment holds the form of an entry
    and `foundation: the writing convention`. It is a record both
    seats keep.
-3. **ARCHITECTURE is a map of about two pages.** It keeps: what it
-   is, pointing at the README for what this repo is; the pairing,
-   the models included; the delivery, one line a group, and the
-   table of runs; what must stay true, as a table of rule, home and
-   how it is held; the codemap; and what it knows is wrong. Every
-   other part points at its home. Project-recording's deliverer seat
+3. **ARCHITECTURE is a map of about two pages.** It keeps: an
+   overview of the repo, pointing at the README for what this repo
+   is; the pairing, the models included; the delivery, one line a
+   group, and the table of runs; what must stay true, as a table of
+   rule, home and how it is held; and the codemap. Every other part
+   points at its home. A line known to be wrong and not yet fixed
+   is a TODO known issue. Project-recording's deliverer seat
    lists these parts, each with what it holds and who reads it; a
    part no one reads goes.
 4. **The README is the home of what this repo is.** It holds every
@@ -98,8 +107,8 @@ changes any master, and only `CLAUDE.md` said "the deliverer".
   and §2 keep their numbers; its old §3 and §4 go, and §5 and §6
   become §3 and §4.
 - ADR-0044 decision 3 is superseded: our map no longer carries its
-  words, nor runs past two pages for them. Its list of what it knows
-  is wrong stays. ADR-0044's status names this ADR when this one is
+  words, nor its list of what it knows is wrong, nor runs past two
+  pages for them. ADR-0044's status names this ADR when this one is
   accepted.
 - The tiers model still holds this repo's instance. Where that goes
   waits for TODO's "Decide which way a fact reference may point".
