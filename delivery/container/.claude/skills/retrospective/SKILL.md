@@ -121,9 +121,10 @@ note's commits move back). The note's Experiments line records which.
    decisions.**
 6. **A devlog entry,** ending with a "Resume:" line, and TODO's Now
    updated.
-7. **Land it.** Regroup the commits by kind, agent files apart from
-   project files. Keep the small commits on a local
-   `retrospective-detail`. Merge on the reviewer's word.
+7. **Land it.** The look back and the `-detail` branch are
+   `.claude/skills/commit-plan/SKILL.md` §4 and §6. The branch,
+   `retrospective`, reaches main by fast-forward, on the reviewer's
+   word (`PLAN.md`'s step form, *At the close*).
 8. **Then apply it to this run,** before Release:
    `.claude/skills/apply-retrospective/`.
 

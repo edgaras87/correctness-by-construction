@@ -82,9 +82,9 @@ own small commits.
   before and after. A move commit changes no words.
 - **Links point at labels,** never section numbers: "SLICE-4
   GUARANTEE-2", not "§8".
-- **The records check,** every link, path and cited number exists,
-  runs before the build, after anything that moves files, and at
-  the close.
+- **The records check,** `PLAN.md`'s step form's closing item on
+  links, paths and pairs of copies, runs before the build, after
+  anything that moves files, and at the close.
 
 **The plain pass,** where the triage applies one:
 1. **Pass 1, one commit per record, owners first.** Rewrite only the
@@ -128,11 +128,10 @@ history lines.
    where the copy was finished; the step's triage of TODO's own
    items.
 6. **The devlog entry and PLAN's close,** the gate ticked.
-7. **The look back.** See the landed commits as a whole and propose
-   a regroup by kind, agent files apart from project files, every
-   commit following commit-messages. On the reviewer's word: keep
-   the small commits on `<branch>-detail`, land by fast-forward, and
-   close the commit plan.
+7. **Land it.** The look back and the `-detail` branch are
+   `.claude/skills/commit-plan/SKILL.md` §4 and §6. The branch
+   reaches main by fast-forward, on the reviewer's word (`PLAN.md`'s
+   step form, *At the close*), and the commit plan closes.
 
 ## Between sessions
 

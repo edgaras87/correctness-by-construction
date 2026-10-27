@@ -13,7 +13,7 @@ briefing.
 
 ## Correctness by construction
 
-The method is in `docs/concept/` — read `00-cbc.md` first; the
+The method is in `docs/concept/` — read `docs/concept/00-cbc.md` first; the
 other chapters deepen it. It is not restated here: the order of
 questions lives there, and the method's reading of each record
 lives in that record's own comments.

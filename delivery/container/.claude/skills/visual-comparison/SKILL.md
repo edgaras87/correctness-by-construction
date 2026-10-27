@@ -27,9 +27,7 @@ picture, a numbered list against both.
 **The candidate set must contain at least one thing that is not a
 picture** — a table, a numbered list, the prose you already have.
 Otherwise a picture wins by construction and the comparison cannot
-return *no picture*, which is a real answer. Once, the table was
-the best answer to one requirement and lost on another; a set
-without it would have hidden that.
+return *no picture*, which is a real answer.
 
 Where a project holds to plain text that renders on GitHub and in
 the IDE with no build step, the buildable notations are Mermaid and
@@ -66,8 +64,7 @@ fire, however large the form.
 5. **Render them where they will actually be read**, and judge
    pass or fail per requirement with the reason. A verdict reached
    by reasoning is a *prediction*; mark it as one until the render
-   confirms it. In its first two runs, the render changed a
-   verdict that reasoning had got wrong.
+   confirms it.
 
 6. **Decide, and record it** where the entry file's records table
    puts a decision of its kind — the requirements, the candidates,
