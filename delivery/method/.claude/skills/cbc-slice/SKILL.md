@@ -17,6 +17,17 @@ the record's outline, why each stage runs as it does, and examples.
 Read it before Stage 1. `references/worked-example.md` Part 2 shows
 one slice worked end to end.
 
+## The stages and their gates
+
+```
+Stage 0: ready?  →  1: specify-correctness  →  2: plan  →  3: build  →  4: document
+                        (what — no how)         (how)       (real)       (legible)
+```
+
+The record is written as the stages go, in one outline, one block
+per guarantee. Which stage writes which part:
+`references/cbc-slice-workflow.md`, "The slice's record".
+
 ## Stage 0 — readiness gate (before anything else)
 
 Read `references/system-readiness.md` and verify against the actual
@@ -51,18 +62,7 @@ ends with an unrunnable completion gate, and "done" cannot be checked.
 Readiness sign-off is the **human's** call. Ask for it explicitly if
 it is not already recorded.
 
-## The stages and their gates
-
-```
-Stage 0: ready?  →  1: specify-correctness  →  2: plan  →  3: build  →  4: document
-                        (what — no how)         (how)       (real)       (legible)
-```
-
-The record is written as the stages go, in one outline, one block
-per guarantee. Which stage writes which part:
-`references/cbc-slice-workflow.md`, "The slice's record".
-
-### Stage 1 — specify-correctness
+## Stage 1 — specify-correctness
 
 1. **Take the invariant from the registry entry, and the adversity
    from the LAYER-1-ENVIRONMENT census, as written.** Never
@@ -97,7 +97,7 @@ normal way. The spec says what its evidence is instead: staged as
 its own evidence, or removed by a definition the spec adopts, with
 the removal shown. **Human sign-off on the spec before Stage 2.**
 
-### Stage 2 — plan
+## Stage 2 — plan
 
 1. **One structural owner per guarantee,** the strongest wall
    available: the store's refusal (a constraint, a right withheld)
@@ -126,7 +126,7 @@ one-line reason it defeats the adversity, and the surface is named.
 "All the code being careful" is the absence of an owner. **Human
 sign-off on the plan before Stage 3.**
 
-### Stage 3 — build
+## Stage 3 — build
 
 1. **Implement the enforcement.** The code should be boring. A
    comment says, in a few lines, what the code relies on that the
@@ -181,7 +181,7 @@ state that never lands in history, recorded from actual output, then
 green unchanged.** A green happy-path suite closes nothing. A test
 never seen red is not known to be watching.
 
-### Stage 4 — document
+## Stage 4 — document
 
 1. **Complete the record in its outline:** each guarantee's block
    gains the tests that prove it, and the sections across
