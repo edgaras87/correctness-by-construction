@@ -129,9 +129,9 @@ name the case, it is not an entry yet.
 
 ## 5. What this does not do
 
-- It does not choose a format for another repo. The deliverer's
-  Mermaid trial is provisional and does not travel; a run decides its
-  own forms.
+- It does not choose a notation for this project. The Mermaid in
+  its cases is the deliverer's provisional trial, which does not
+  travel; this project decides its own forms.
 - It does not run on a schedule, and it is not a review of forms
   already settled.
 
