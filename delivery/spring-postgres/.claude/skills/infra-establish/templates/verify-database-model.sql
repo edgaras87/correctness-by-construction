@@ -7,7 +7,9 @@
 -- The catalog half of the two-way verification
 -- (.claude/skills/infra-establish/references/establishment-walk.md,
 -- stage 5): the ground's
--- real state queried against the role-split model's claims. Run on demand,
+-- real state queried against the claims of
+-- .claude/skills/infra-establish/references/postgres-role-split.md.
+-- Run on demand,
 -- never at container start:
 --
 --   podman exec -i <project>-postgres \

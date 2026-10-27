@@ -39,9 +39,9 @@ Verify, in the repo as it stands:
 
 1. **Framing outputs committed**: the project intent, the system definition,
    the slice registry. Missing → stop; that is cbc-framing's work.
-2. **Established ground, running and verified**: an infrastructure contract
-   (identity rule, reach facts, refusals, the one DDL path) and an operator
-   manual exist; the ground's stand-up verification is recorded. Missing →
+2. **Established ground, running and verified**: the infrastructure
+   contract and the operator manual exist
+   (`.claude/skills/infra-establish/SKILL.md`, *Records and outputs*); the ground's stand-up verification is recorded. Missing →
    stop; that is infrastructure work, done before this skill.
 3. **No skeleton yet**: if application code already exists, this skill does
    not apply — route to cbc-slice.

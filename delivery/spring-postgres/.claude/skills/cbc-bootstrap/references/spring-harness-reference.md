@@ -135,15 +135,16 @@ public abstract class DatabaseIT {
   as the container's superuser (the second pass's shape) proves the
   round-trip but not the authority — DDL attempted from application
   code would succeed in tests and fail on the ground.
-- **Testcontainers 2.x names**: artifact `testcontainers-postgresql`,
-  package `org.testcontainers.postgresql`. The 1.x names differ and
-  the failure is a missing class, not a helpful message.
+- **Testcontainers 2.x names** are the walkthrough's trap
+  (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 4,
+  *The harness in the codebase*, *Traps, exact*, item 3).
 - The migrate call plays the **compose one-shot's role** against the
   throwaway database. Flyway is a **test-scope harness tool**; at
   runtime scope it would undo the datasource's claim that the
-  application cannot migrate. `flyway-core` alone is not enough on
-  Flyway ≥ 10 — `flyway-database-postgresql` is required for
-  PostgreSQL.
+  application cannot migrate. Which Flyway artifacts it needs is the
+  walkthrough's trap
+  (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 4,
+  *The harness in the codebase*, *Traps, exact*, item 4).
 - **The harness's Flyway is the build's** (Boot-managed) and may be a
   different major than the ground's one-shot image — the third pass
   lived 12 against the ground's 11. They never meet: separate
@@ -187,8 +188,8 @@ public abstract class WebDatabaseIT extends DatabaseIT {
 
 1. The Boot 4 test-client traps, `spring-boot-restclient` at test
    scope and `@AutoConfigureTestRestTemplate`, are the walkthrough's
-   (`spring-boot-walkthrough.md`, step 4, *Traps, exact*, items 1 and
-   2).
+   (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 4,
+   *The harness in the codebase*, *Traps, exact*, items 1 and 2).
 2. The bases stay lean — no shared protected fields; a test autowires
    what it uses (`JdbcClient`, `TestRestTemplate`), so attacking
    through the door and inspecting persisted state directly are both

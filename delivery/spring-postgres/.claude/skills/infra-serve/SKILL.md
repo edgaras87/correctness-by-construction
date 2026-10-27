@@ -16,7 +16,7 @@ joins the ground because it was easy to add.
 Verify: the ground's record exists with the original service
 evaluation and its not-provisioned list — the establishment log, or
 the ADR that holds the evaluation in a repo with records
-(infra-establish's Records and outputs); the infrastructure contract
+(`.claude/skills/infra-establish/SKILL.md`, *Records and outputs*); the infrastructure contract
 and operator manual exist; the ground currently comes up
 (`podman compose ps` or the project's equivalent — read the actual
 output). Any missing → this is not a re-entry; run infra-establish,
@@ -53,8 +53,9 @@ stands and the request is refused with that reasoning.
    `.claude/skills/infra-establish/references/` — consult it; never
    force its shape on a different service.
 5. **Grow the manuals.** The infrastructure contract gains (or
-   amends) its section — identities, reachability, refusals as
-   contract terms, how changes are made; the operator manual gains
+   amends) the service's section, in the form
+   `.claude/skills/infra-establish/SKILL.md`, *Records and outputs*,
+   gives it; the operator manual gains
    the lived setup and any new reset path. If the project keeps a
    public setup guide, re-derive it from the operator manual — the
    manual stays the sole master.

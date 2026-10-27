@@ -168,8 +168,11 @@ never pasted**; read its variation points before writing a line.
    `org.springframework.boot.resttestclient.autoconfigure`, or the
    autowire fails with "No qualifying bean". (Lived on Boot 4.1.1.)
 3. Testcontainers 2.x renamed artifacts and packages:
-   `testcontainers-postgresql`, `org.testcontainers.postgresql`.
-4. **No dummy baseline migration** — keep the home honestly empty until a
+   `testcontainers-postgresql`, `org.testcontainers.postgresql`. The
+   1.x names fail as a missing class, not a helpful message.
+4. `flyway-core` alone is not enough on Flyway ≥ 10:
+   `flyway-database-postgresql` is required for PostgreSQL.
+5. **No dummy baseline migration** — keep the home honestly empty until a
    migration is earned. (Git cannot track an empty dir; a keep-file is the
    ground's own decision, not the app's.)
 
@@ -247,7 +250,7 @@ at the first slice.
 7. No dummy baseline migration; the history table is born by a
    zero-migration run.
 8. Flyway is harness-only; at runtime scope it undoes the ground's
-   constraint.
+   constraint. On Flyway ≥ 10 it needs `flyway-database-postgresql`.
 9. Boot version coordinate plain `4.x.y` — the `.RELEASE` suffix does not
    resolve.
 10. Environment facts notation-neutral — never compose placeholder syntax

@@ -31,7 +31,8 @@
 --   application objects; those arrive solely through the migration tool.
 
 -- the two identities of the authority split. Prefixed names are the
--- shared-cluster case the role-split reference describes (roles are
+-- shared-cluster case of postgres-role-split.md, Naming across a
+-- cluster, the model named above (roles are
 -- cluster-wide). One dedicated cluster in one container — the lived
 -- normal — takes the model's bare names, migrator and runtime; then
 -- the verify suite's role filter becomes an explicit IN list, and the
