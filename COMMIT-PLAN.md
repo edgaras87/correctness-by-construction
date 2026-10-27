@@ -212,6 +212,12 @@ ARCHITECTURE item goes, each Idea's verdict in the body, and
 conversation-memory §17 with it. ADR-0044's status names ADR-0068,
 as the ADR form asks of a superseded record.
 
+**20b. `docs: the writing manual names the glossary`**
+Inserted at the close's sweep. Writing §2's example of a stage, "a
+defined word (`ARCHITECTURE.md`, *The words*)", was missed by commit
+4's grep, which looked for "`ARCHITECTURE.md`'s *The words*". It
+names `docs/glossary.md`. The walk reads both `writing.md`.
+
 **21. `docs(agent): close commit plan for layer 4's work`**
 Deletes this file; the body says what diverged.
 
