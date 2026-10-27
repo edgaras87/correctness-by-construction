@@ -1,7 +1,10 @@
 # 0068. Our ARCHITECTURE is a map: a two-page record, its glossary apart
 
 Date: 2026-10-27
-Status: Proposed, opened under the commit plan for layer 4's work.
+Status: Accepted (2026-10-27, at the set's records commit; opened
+Proposed under the commit plan for layer 4's work, and changed at
+commit 6c: the known-wrong list goes to TODO, and the map opens
+with an overview).
 Supersedes ADR-0044 in part, decision 3.
 
 ## Context

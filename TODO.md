@@ -751,39 +751,6 @@
                FINDING-142 and 202 edit identical copies.
       See: devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §15.
 
-- [ ] Decide what kind of text our ARCHITECTURE is, and its size
-      (2026-10-25, the reviewer).
-      Context: facts-in-sync §4 calls `ARCHITECTURE.md` a
-      description; idea-to-output §2 does not list it as one;
-      project-recording §8 calls it a record. Ours runs to 3,608
-      words against §8.4's one or two pages, and holds a map, a
-      glossary (*The words*) and a known-wrong list. A run's is
-      load-bearing: `cbc-bootstrap` and `cbc-slice` write what a
-      slice may rely on. Ours has no build to map.
-      Ideas:
-      - *The words* as its own file, as a run's glossary is.
-      - counts replaced by pointers; §2.3's list of which
-        convention owns each container file dropped, since each
-        file's `foundation` says it.
-      - §1 adds the models, missing since they arrived.
-      - kept at one or two pages: the pairing, where things go, and
-        pointers into the local maps.
-      - run-only, our map moved into the README.
-      - project-recording §8 lists each seat's parts, each marked
-        as owned (its home) or summarized (points at its owner),
-        with the reader of each; a part no one reads goes.
-      - "description" is defined in *The words*, in
-        `docs/conventions/facts-in-sync/` §4 and in
-        `docs/models/idea-to-output.md` §2, and the three disagree
-        on which texts are descriptions (round 2's FINDING-179).
-      - the README, `CLAUDE.md`, the CHANGELOG's header and the tiers
-        model each say what this repo is, in their own words; since
-        `0a40aea`, `CLAUDE.md` names it the deliverer, and the tiers
-        model calls it the concepts tier.
-      Trigger: round 2's work on layer 4, before its fixes, which
-               rest on it: FINDING-145, 179 and 184.
-      See: devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §17.
-
 - [ ] Decide whether a manual keeps the story behind a lesson
       (2026-10-25, the reviewer).
       Context: a lesson's dated italic does two jobs. An example

@@ -645,7 +645,7 @@ plan, README says "what *done* means" and `CLAUDE.md` "The step
 form, and the open step". README and `CLAUDE.md` also share an
 opening phrase, where project-recording §7.6 says "no shared text".
 The records map would be a fifth. Rests on DECISION-12.
-Ending: fixed, `4f7ad15`, `b20d992`, `6241ff2`, `0a40aea` and `e64c51f`, all but the codemap's part, which waits for layer 4 and TODO's "Decide what kind of text our ARCHITECTURE is".
+Ending: fixed, `4f7ad15`, `b20d992`, `6241ff2`, `0a40aea` and `e64c51f`, all but the codemap's part, which waits for layer 4 and TODO's "Decide what kind of text our ARCHITECTURE is". The codemap's part fixed in layer 4, `45e1028`.
 
 **FINDING-146.** Layout; checked. §5.5, conversation-memory, is a
 record of its own inside TODO's run of sections. TODO's *When* and
@@ -871,7 +871,7 @@ Ending: fixed, `7fbeccb` and `a9e54e2`: §3.1 to §3.3; the numbering rule stays
 in `ARCHITECTURE.md` §1.1 and in `CHANGELOG.md`'s header comment,
 neither citing the other. Three manuals point at ADR-0003 and §1.1.
 Facts-in-sync §4 names three targets. Rests on DECISION-14.
-Ending: moved to layer 4, its home's layer, since DECISION-14 put the rule in the CHANGELOG's comment (`.claude/approaches-on-trial/refinement.md` §2.7). Decided with layer 3's plan, `cc00ca0`.
+Ending: moved to layer 4, its home's layer, since DECISION-14 put the rule in the CHANGELOG's comment (`.claude/approaches-on-trial/refinement.md` §2.7). Decided with layer 3's plan, `cc00ca0`. Fixed in layer 4, `f18f280` and `93fc788`.
 
 **FINDING-177.** Lessons; resting on the reader. The
 visual-comparison manual §2, "The render decides", gives as its
@@ -895,7 +895,7 @@ disagree on which texts are descriptions. "Approach": *The words*,
 idea-to-output, and `approach-drafting.md`, which ships, so it keeps
 its own. Proposed: "description" to TODO, the ARCHITECTURE item;
 "approach" fixed, idea-to-output points at *The words*.
-Ending: split. "Approach" fixed, `be9b3a4`: *The words* points at the model §2, the reverse of the proposal, decided with layer 3's plan, `cc00ca0`. "Description" is with TODO's ARCHITECTURE item.
+Ending: split. "Approach" fixed, `be9b3a4`: *The words* points at the model §2, the reverse of the proposal, decided with layer 3's plan, `cc00ca0`. "Description" is with TODO's ARCHITECTURE item. "Description" fixed in layer 4, `b71b437`, by ADR-0068 decision 1.
 
 **FINDING-180.** Layout; checked. `docs/models/idea-to-output.md` §3
 holds two subjects other text points at, a link and a
@@ -935,36 +935,43 @@ pointer. TODO's ARCHITECTURE item carries §2.3 and the counts.
 Proposed: fix §2.5's pointers with sections, drop the second pin
 and the second "two skills", and point the two words at exchange §4
 and §3.7.
+Ending: fixed, `06be504` and `1e6870f`: the glossary's take and note point at the exchange; §2.5 keeps the table of runs and points by section; the second pin and "two skills" go.
 
 **FINDING-185.** Dependencies; checked. `ARCHITECTURE.md` (line 270)
 says where a manual and the concept are handled differently is "that
 manual's *What this does not cover* and ADR-0039". It is
 facts-in-sync §4, which the paragraph already names. Proposed: fix,
 cut the sentence.
+Ending: fixed, `ad21148`: the sentence went with §3.
 
 **FINDING-186.** Dependencies; checked. `ARCHITECTURE.md`'s header
 comment cites "(project-recording, the deliverer's seat; ADR-0044)"
 by name. Proposed: fix, a root path.
+Ending: fixed, `60896d8`.
 
 **FINDING-187.** One home; resting on the reader. `README.md`
 retells the tiers model's triggers, "anything general waits on
 three" and the garden rule, citing only ADRs. Their home is
 `docs/models/tiers.md` §2.1 and §2.2. Proposed: fix, add the fact
 reference.
+Ending: fixed, `61d74d3`.
 
 **FINDING-188.** Dependencies; checked. `TODO.md` cites sections by
 bare name in seven Context lines ("project-recording §4", "shapes
 §3", "one-home's rule 5"…). Proposed: fix, root paths.
+Ending: fixed, `2e25a85`: six lines; the ARCHITECTURE item's three went with it in this commit.
 
 **FINDING-189.** Dependencies; checked. `TODO.md` points at shapes
 §1 for "read at a step's gate only", which is shapes §3. Proposed:
 fix.
+Ending: fixed in layer 3, `4eb8a57`.
 
 **FINDING-190.** Layout; resting on the reader. `TODO.md` holds the
 worked example's two copies as two items: "Decide whether a check
 compares the worked example's two copies" and "Deduplicate the
 worked example". Proposed: fix, merge with both triggers. Or decline:
 two decisions, two triggers.
+Ending: fixed, `0923263`.
 
 **FINDING-191.** Dependencies; checked. Record headers retell their
 manual with no section reference: `CHANGELOG.md`, `TODO.md`,
@@ -972,11 +979,13 @@ manual with no section reference: `CHANGELOG.md`, `TODO.md`,
 Facts-in-sync §4 step 2: "Every line that uses a part of a
 document, its root included, carries a fact reference to that
 part." Rests on DECISION-10.
+Ending: moved to TODO's "Decide how a fact reference is written" (DECISION-10).
 
 **FINDING-192.** Dependencies; checked. `TODO-CONVERSATION-MEMORY.md`
 cites sections by bare name in about ten places. Proposed: decline.
 A part is never rewritten (project-recording §5.5). Rests on
 DECISION-13.
+Ending: declined (DECISION-13).
 
 #### Layer 5: our agent setup
 

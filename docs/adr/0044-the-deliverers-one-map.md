@@ -3,7 +3,8 @@
 Date: 2026-09-30
 Status: Accepted (2026-09-30, at the set's records commit; opened
 Proposed under the commit plan for one map, and amended at step 6
-with decision 6, the codemap's form, the reviewer's choice)
+with decision 6, the codemap's form, the reviewer's choice);
+decision 3 superseded by ADR-0068 (2026-10-27)
 
 ## Context
 
