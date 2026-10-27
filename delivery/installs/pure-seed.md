@@ -226,10 +226,9 @@ item is a verifiable fact:
   worktree byte-identical to the branch tip, every delivered file
   listed untracked by `git status` (the check in step 5 lists
   nothing).
-- Every pinned copy byte-identical to its master at the subject's
-  pin: the concept chapters; the method's and the stack's five
-  skills and four shapes; the container's skills, rules and
-  approach on trial.
+- Every pinned copy (`docs/conventions/exchange/` §3.2)
+  byte-identical to its master at the subject's pin, and as many
+  method and stack skills and shapes as step 6's prompt counts.
 - PLAN's STEPS region holds the pure playbook's sequence —
   identical to cbc-run-pure-playbook.md from the step form down
   at the subject's pin — both markers in place, and the "Steps
