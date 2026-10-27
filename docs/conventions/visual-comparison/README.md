@@ -24,8 +24,8 @@ same day, made a convention on 2026-09-19 (ADR-0031).
   and opened when a structure is hard to see and more than one way
   of showing it could work.
 - **`.claude/skills/visual-comparison/SKILL.md` — the deliverer's**,
-  derived from this page like the container's and identical to it
-  today, neither copied from the other (ADR-0042).
+  derived from this page like the container's, neither copied from
+  the other, and written for this seat (ADR-0042, ADR-0069).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of

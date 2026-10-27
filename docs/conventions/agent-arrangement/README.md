@@ -88,8 +88,9 @@ run's log keeps its registry, and its entries run longer because
 
 ### What the difference is
 
-Three skills are identical files, each derived from its manual on
-both sides rather than copied across (ADR-0042); the records
+Each seat's skills and rules are derived from their manuals and
+written for their seat, never copied across (ADR-0042, ADR-0069);
+the records
 table has the same shape; the agent and project split is the same
 rule. What differs is the job, and since ADR-0036 the two hold
 different things because of it: the run holds the receiver's rule,

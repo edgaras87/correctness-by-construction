@@ -69,9 +69,7 @@ opening it at the moment of use.
   here — the tag is project-recording's rule,
   `docs/conventions/project-recording/` §3.5 — and a decision this
   repo inherited is adopted before a shipped file cites it
-  (ADR-0038). A file of ours byte-identical to its shipped master
-  keeps `CBC ADR-nnnn`, so one diff still checks the pair; the tag
-  names this repo either way. A footer line names the section it
+  (ADR-0038). A footer line names the section it
   backs, unless it backs the whole file. A stub cites nothing.
 - Say what a rule is not only when a consumer lived the misreading,
   and then name the run.

@@ -25,8 +25,8 @@ fixing it afterwards or not at all, has not happened here.
   when work turns out to need several commits. The rules, one
   sentence each, with the decisions it rests on in its footer.
 - **`.claude/skills/commit-plan/SKILL.md` — the deliverer's**,
-  derived from this page like the container's and identical to it
-  today, neither copied from the other (ADR-0042).
+  derived from this page like the container's, neither copied from
+  the other, and written for this seat (ADR-0042, ADR-0069).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of
