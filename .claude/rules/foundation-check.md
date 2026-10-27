@@ -25,7 +25,7 @@ or moves a section. Which side is right, never how either reads.
    - records whose header comment carries a `foundation:` line,
      in either seat (`docs/conventions/conventions/` §1.3);
    - descriptions: `docs/models/`, `docs/conventions/*/README.md`,
-     `concept/`, `ARCHITECTURE.md`.
+     `concept/`.
 
    If none is staged, the check is done.
 2. **A file with a `foundation` line changed:** open what the line
