@@ -195,6 +195,18 @@
                refinement's close.
       See: devlog 2026-10-20, later; `TODO-CONVERSATION-MEMORY.md` §2.
 
+- [ ] Decide whether approach drafting becomes a convention
+      (2026-10-27, the reviewer).
+      Context: `approach-drafting.md` is on trial (ADR-0058), held
+      word for word in both seats until its evaluation (ADR-0069,
+      decision 2). No manual lists it.
+      Ideas:
+      - one convention for approaches on trial, its artifacts
+        `approach-drafting` in both seats and `approach-evaluation`
+        in ours.
+      Trigger: `approach-drafting`'s evaluation at the refinement's
+               close, at its stage 5.
+
 - [ ] Choose whether a manual is called a concept (2026-10-19, the
       reviewer).
       Context: one idea should have one word. The reviewer saw a
