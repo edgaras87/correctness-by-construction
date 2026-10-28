@@ -56,7 +56,8 @@ stops here. In a run, how a delivered copy is edited is
 - **Each change is a commit of its own.** Its body says what the
   work taught, and names the commit where the work showed it. The
   approach is an agent file and the work a project file, so the two
-  never share a commit (`commit-messages`).
+  never share a commit
+  (`.claude/skills/commit-messages/SKILL.md`, *The agent's own files*).
 
 ### 3. Close
 
