@@ -8,8 +8,9 @@ foundation: the facts-in-sync convention
 rules, comments and config. Where it lives, never how it reads.
 
 <!-- No paths: line, so this loads at the start of every session.
-     Ours, derived from docs/conventions/facts-in-sync/ §1 and §2,
-     like the container's from §1; how the two seats differ, that
+     Ours, derived from docs/conventions/facts-in-sync/ §1, §2, §3.1
+     and its deliverer's seat, like the container's from §1 and its
+     run's seat; how the two seats differ, that
      manual's *The seats* says. -->
 
 ## The rules
@@ -18,16 +19,20 @@ rules, comments and config. Where it lives, never how it reads.
    says which record owns which kind of fact. A convention's subject
    lives in its manual (`docs/conventions/facts-in-sync/` §2).
 2. **Elsewhere, link; retell only where the reader acts on it
-   there.** A retelling carries its source's path and section as a
-   fact reference: "after birth, only the copies go: skills, rules, shapes,
-   approaches on trial and the concept
-   (`docs/conventions/exchange/` §3.2)". Without the fact reference it is a
-   second home.
+   there.** A retelling carries a fact reference to its source: its
+   path, section and title, in parentheses. "After birth, only the
+   copies go: skills, rules, shapes, approaches on trial and the
+   concept (`docs/conventions/exchange/` §3.2, *What goes*)."
+   Without the fact reference it is a second home
+   (`docs/conventions/facts-in-sync/` §3.1, *What it is*).
 3. **Make a summary say it is one.** It names its owner, and nobody
    reads it in the owner's place. `ARCHITECTURE.md` §1.2 does this:
    a phrase for each convention, and the manual for the rest.
 4. **Change a fact at its home.** The links don't change, unless
-   the home itself moves (`docs/conventions/facts-in-sync/` §3.3).
+   the home itself moves, or its section is renamed, renumbered or
+   retitled. Then every fact reference to it is grepped and fixed in
+   the same commit (`docs/conventions/facts-in-sync/` §3.3, *A
+   rename is grepped at its commit*).
    Each retelling whose fact reference names it is re-read, with its
    paragraph (`docs/conventions/facts-in-sync/` §4).
 5. **Make every copy a follower:** one is the owner, the other
@@ -35,6 +40,10 @@ rules, comments and config. Where it lives, never how it reads.
    two copies that cannot be avoided are another: the worked example
    sits in `cbc-framing` and in `cbc-slice`, and the two must stay
    identical.
+6. **Ask each new or changed line at the commit** whether it relies
+   on a fact written elsewhere, and whether it says where. Nothing
+   else finds a missing fact reference
+   (`docs/conventions/facts-in-sync/`, *The deliverer's seat*).
 
 ## Not a second home
 
@@ -42,7 +51,9 @@ History: the devlog, closed ADRs, commit bodies, the entries of
 `.claude/decisions.md` and the parts of
 `TODO-CONVERSATION-MEMORY.md`. They record what was true then. They
 are never updated, so they cannot drift. Each file's header comment
-is living text.
+is living text. A fact stated only in history gets a living home
+before anything retells it (`docs/conventions/facts-in-sync/` §1,
+*One home*).
 
 ---
 
@@ -54,3 +65,5 @@ is living text.
   with a fact reference to its source; ours now, a run's when its
   case is designed
 - ADR-0065 — one home is facts-in-sync's, with the fact reference
+- ADR-0070 — how a fact reference is written; each new line asked
+  at the commit

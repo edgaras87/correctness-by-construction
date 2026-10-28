@@ -57,10 +57,11 @@ or moves a section. Which side is right, never how either reads.
 
 ## A moved section
 
-When the commit renames a file or renumbers a section, in any
-file, grep all living text for each old path and number, and fix
-what points at them in this commit
-(`docs/conventions/facts-in-sync/` §3.3).
+When the commit renames a file, renumbers or retitles a section, in
+any file, or moves a fact to a new home, grep all living text for
+each old path, number and title, and fix what points at them in
+this commit (`docs/conventions/facts-in-sync/` §3.3, *A rename is
+grepped at its commit*).
 
 ## What this does not cover
 
