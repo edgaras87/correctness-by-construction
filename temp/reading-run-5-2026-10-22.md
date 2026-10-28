@@ -276,6 +276,9 @@ qualifies. The lines are spent. Whose: our playbook's.
 
 Thirteen hunks in ten delivered files, all against masters that
 have not moved since the pin; none decided.
+*Since the read, the refinement's reference rewrite moved lines in
+some masters, outside the hunks; each take checks its hunk still
+applies (2026-10-29, at E8).*
 
 - **E1** `approach-drafting.md:120-126`, `b38b10b`, Step 0: a use
   note. "The reviewer chooses" ran as the run's own choice; the
@@ -303,6 +306,7 @@ have not moved since the pin; none decided.
 - **E8** `cbc-framing/templates/registry.md:45-46`, `e0c03ba`, D3:
   the Record and Answered-at-close slots say "none" until filled,
   as the registry-entry shape says. Untried.
+  *Taken whole 2026-10-29 (`5e29435`).*
 - **E9** `cbc-slice/SKILL.md:92-97`, `d476ab1`, D14: Stage 1's gate
   adds "four guarantees at most"; more is more than one invariant,
   split at the registry. Untried; SLICE-4 kept its five.
@@ -338,6 +342,7 @@ Run 5's *To the deliverer*, 13 lines at `80099b1`; none decided.
   group id to the run file (an offer).
 - **A6** the registry template's Record slot against the
   registry-entry shape, D3 (a notice; answers Step 1's gap).
+  *E8 taken (`5e29435`); the note answers it (WORK-2).*
 - **A7** evidence on the workflow's open question "the multi-owner
   case end to end": `definition.md`'s LAYER-3 and LAYER-5 (an offer
   of evidence, no decision).
@@ -514,6 +519,7 @@ commit plan of its own.
   FINDING-26's name collision and FINDING-25's lines.
 - **WORK-6.** The registry template: E8 (D3), against the
   registry-entry shape and the framing skill.
+  *Done 2026-10-29: E8 taken whole (`5e29435`).*
 - **WORK-7.** The slice-record shape: E2, E3 (D10), under
   `docs/conventions/shapes/` §5.2's endings.
 - **WORK-8.** The `retrospective` skill: FINDING-24, the block on
