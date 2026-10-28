@@ -134,10 +134,9 @@
         never rules).
       - or that section splits in two: the approaches, and what
         reaches the agent's setup.
-      - `CLAUDE.local.md` repeats two rules of
-        `docs/conventions/commit-messages/` §2: commit on the word,
-        and a stop at each boundary
-        (`docs/conventions/commit-plan/` §2.13). Yet `docs/conventions/agent-arrangement/`
+      - `CLAUDE.local.md` repeats two rules, both commit-messages':
+        commit on the word, and a stop at each boundary
+        (`docs/conventions/commit-messages/` §2.4, *Commit on the word*). Yet `docs/conventions/agent-arrangement/`
         §3.7 counts how often the agent stops as a setting. Round
         2's FINDING-194 found it again.
       - "never rewrite main across 35edd3f" lives only in the

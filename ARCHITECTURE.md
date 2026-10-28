@@ -197,7 +197,7 @@ of the tree, or a check at commit review.
 | Every file a run receives has its master here, in the group that ships it | `docs/conventions/exchange/` §1 and §3.2 | `exchange-deliver`, which stages only from the masters |
 | A manual never ships | `docs/conventions/exchange/` §3.2 | the tree: manuals sit under `docs/`, and a delivery stages only from `delivery/` and `concept/` |
 | A manual never outlives the rule it explains | `docs/conventions/facts-in-sync/` §4 and §5 (ADR-0025) | the foundation check, `.claude/rules/foundation-check.md`, at each commit |
-| Agent side and project side never share a commit | `docs/conventions/commit-messages/` §2 | the `commit-messages` skill, and commit review |
+| Agent side and project side never share a commit | (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*) | the `commit-messages` skill, and commit review |
 | A pin never claims more than was checked | `docs/conventions/exchange/` §6.1 and §6.6 (ADR-0023) | `exchange-read` and `exchange-deliver` |
 | A skill never spans two groups, and nothing that needs Spring, PostgreSQL, Maven or podman sits under `method/` | `docs/conventions/exchange/` §3.4 | the tree: a group is a directory, so a misfiled file shows as a path |
 | A record stub is never re-delivered to a live run | `docs/conventions/exchange/` §2.4 (ADR-0036) | the run's `delivered-copies.md`, rule 1 |

@@ -55,30 +55,6 @@ came from.
 
 ## 2. Why it is shaped this way
 
-- **The candidate set must hold at least one thing that is not a
-  picture.** Otherwise a picture wins by construction and the
-  method cannot return *no picture*, which is a real result. This
-  is the rule the naming mistake would have broken, written down so
-  the mistake is not available again.
-
-- **The render decides, not the reasoning about the render.** What
-  a notation drops, or asserts by accident, shows only once it is
-  drawn; its documentation does not say it ahead. *Both Mermaid
-  failures of 2026-09-18 were dialects built for the job in hand,
-  and neither was predictable from the documentation.*
-
-- **Fighting a notation is losing.** Invisible links, spacer nodes,
-  nodes declared out of meaning order — a candidate needing them
-  has already failed, because the next person to edit it will not
-  know which parts are load-bearing.
-
-- **The buildable notations are few, and the constraint is not
-  aesthetic.** Plain text, rendering on GitHub and in the IDE with
-  no build step, leaves Mermaid and Unicode box drawing. PlantUML,
-  Graphviz and D2 need a render step or a plugin; a committed SVG
-  renders but is not text anyone can read in a diff. A diagram
-  nobody can read in review is a binary blob with extra steps.
-
 *Settled 2026-09-24, the other way round from how it was asked.
 ADR-0030 decision 10 asked whether this earned an artifact of its
 own beside a general comparison method: if its findings never
@@ -87,6 +63,36 @@ the split was decoration and the two should merge back. The
 trigger never fired, and the general half was discarded rather
 than merged into — it had run once, in the set that created it.
 This is the method now, not a specialisation of one.*
+
+### 2.1 The candidate set must hold at least one thing that is not a picture
+
+Otherwise a picture wins by construction and the
+method cannot return *no picture*, which is a real result. This
+is the rule the naming mistake would have broken, written down so
+the mistake is not available again.
+
+### 2.2 The render decides, not the reasoning about the render
+
+What
+a notation drops, or asserts by accident, shows only once it is
+drawn; its documentation does not say it ahead. *Both Mermaid
+failures of 2026-09-18 were dialects built for the job in hand,
+and neither was predictable from the documentation.*
+
+### 2.3 Fighting a notation is losing
+
+Invisible links, spacer nodes,
+nodes declared out of meaning order — a candidate needing them
+has already failed, because the next person to edit it will not
+know which parts are load-bearing.
+
+### 2.4 The buildable notations are few, and the constraint is not aesthetic
+
+Plain text, rendering on GitHub and in the IDE with
+no build step, leaves Mermaid and Unicode box drawing. PlantUML,
+Graphviz and D2 need a render step or a plugin; a committed SVG
+renders but is not text anyone can read in a diff. A diagram
+nobody can read in review is a binary blob with extra steps.
 
 ## Why it arrives this way
 

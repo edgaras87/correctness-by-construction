@@ -239,7 +239,7 @@ for all of them, and this is where it is stated:
    reference says which line to re-read when the part changes.
 3. A change to the description walks the list in the same commit,
    or in the next when one side is an agent file and the other is
-   not (`docs/conventions/commit-messages/` §2). It greps for the
+   not (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*). It greps for the
    description's path, to find what points at it, and for its name
    in `foundation` lines, to find what stands on it: `the <name>
    convention`, `the <name> model`, or `concept v1`. Each retelling

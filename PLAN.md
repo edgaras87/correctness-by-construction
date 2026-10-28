@@ -91,7 +91,7 @@ step that uses none has only its own items.
 - [ ] New and changed text reads to `.claude/rules/writing.md`.
 - [ ] Every commit on `<branch>` follows commit-messages.
 - [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2).
+      (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*).
 - [ ] The step's lessons are folded back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
@@ -202,7 +202,7 @@ Gate:
 - [ ] Every commit on `refinement-2026-10-18` follows
       commit-messages.
 - [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2).
+      (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*).
 - [ ] The step's lessons are folded back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its

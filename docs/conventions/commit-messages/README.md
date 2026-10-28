@@ -52,33 +52,43 @@ change too small to deserve a real one.
 
 ## 2. Why it is shaped this way
 
-- **Conventional Commits, not just 50/72.** The type prefix carries
-  information a plain subject does not, and it is enforceable later
-  by a commitlint hook (ADR-0038, 1a).
-- **Either mood, in the present tense.** A subject says what the
-  commit changes; a change to the work reads naturally as a
-  command, a record as what became true, and both read well in the
-  log. *Until 2026-10-09 the skill asked for the imperative, and
-  practice split by itself, here and in never-oversold alike: code
-  as commands, records as statements. Requiring either mood would
-  rewrite one of the two habits for nothing a reader gains
-  (ADR-0049, 5).*
-- **The agent's files never share a commit with the project's.**
-  A project that works with an agent has two histories in one repo:
-  the work, and the arrangement that made an agent do the work a
-  particular way. They stay separable, for a filtered log or a
-  portfolio copy that drops the arrangement, only if no commit ever
-  straddles them. Hence the `agent` scope (ADR-0038, 1c); which
-  paths are the arrangement's is
-  `docs/conventions/agent-arrangement/` §1.1.
-- **Commit on the word.** The commit boundary is the one place a
-  wrong assumption is cheap to catch when an agent is doing the
-  committing, so the agent stages, shows the diff, and waits. The
-  rule is text, in the skill, and gated nowhere (ADR-0038, 1f).
-  *A permission rule that stopped every commit at a prompt was
-  shipped once and withdrawn, 2026-09-10, after the one project
-  that could have used it declined it and held forty-four commits
-  on the sentence alone.*
+### 2.1 Conventional Commits, not just 50/72
+
+The type prefix carries
+information a plain subject does not, and it is enforceable later
+by a commitlint hook (ADR-0038, 1a).
+
+### 2.2 Either mood, in the present tense
+
+A subject says what the
+commit changes; a change to the work reads naturally as a
+command, a record as what became true, and both read well in the
+log. *Until 2026-10-09 the skill asked for the imperative, and
+practice split by itself, here and in never-oversold alike: code
+as commands, records as statements. Requiring either mood would
+rewrite one of the two habits for nothing a reader gains
+(ADR-0049, 5).*
+
+### 2.3 The agent's files never share a commit with the project's
+
+A project that works with an agent has two histories in one repo:
+the work, and the arrangement that made an agent do the work a
+particular way. They stay separable, for a filtered log or a
+portfolio copy that drops the arrangement, only if no commit ever
+straddles them. Hence the `agent` scope (ADR-0038, 1c); which
+paths are the arrangement's is
+`docs/conventions/agent-arrangement/` §1.1.
+
+### 2.4 Commit on the word
+
+The commit boundary is the one place a
+wrong assumption is cheap to catch when an agent is doing the
+committing, so the agent stages, shows the diff, and waits. The
+rule is text, in the skill, and gated nowhere (ADR-0038, 1f).
+*A permission rule that stopped every commit at a prompt was
+shipped once and withdrawn, 2026-09-10, after the one project
+that could have used it declined it and held forty-four commits
+on the sentence alone.*
 
 ## 3. The deliverer's habit
 

@@ -132,8 +132,8 @@ The arrangement's paths are a closed list (ADR-0038, 1c):
 
 A file is agent-side when removing it
 breaks nothing about the project (ADR-0038, 1c). How a commit that
-touches these paths
-is made is `docs/conventions/commit-messages/` §2. `COMMIT-PLAN.md`
+touches these paths is made is commit-messages'
+(`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*). `COMMIT-PLAN.md`
 is `docs/conventions/commit-plan/`'s artifact, not this
 convention's.
 
@@ -321,7 +321,7 @@ place the arrangement holds a gate as repo state. Not born with the
 project: a project adds it when it has a rule that must not depend
 on text — a permission rule that halts a command at a prompt the
 human answers — or an exclude to declare. The commit stop is not
-such a rule: `docs/conventions/commit-messages/` §2. JSON carries no
+such a rule (`docs/conventions/commit-messages/` §2.4, *Commit on the word*). JSON carries no
 comment, so the why lives in the decisions log, never in the file;
 later inserts are merges, not text edits.
 
