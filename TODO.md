@@ -910,7 +910,7 @@
         `writing.md` takes the rule.
       Trigger: round 3's rule check, so its Writing kind reads
                against the rule.
-      See: devlog 2026-10-28.
+      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §23.
 
 ## Later / someday
 

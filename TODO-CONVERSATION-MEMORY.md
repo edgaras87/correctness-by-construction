@@ -1316,3 +1316,71 @@ An item with options, not a choice: on paper, a drill on a
 throwaway branch, agents, or a kind in the refinement's last read.
 Due when the refinement closes. A diagnostic: what it finds becomes
 findings or TODO items, and it changes no rule itself.
+
+## 23. A word with more than one meaning here
+
+Item: "Write a rule that a word with more than one meaning here
+carries its subject at every use, and list those words".
+
+### 2026-10-28
+
+#### What the reviewer asked
+
+While the off-template rule's home was chosen: "what else is
+confusing is that we here use template word without subject. would
+adding subject would improve clarity? do we need another defintion
+or we have already word for this?"
+
+Then: "should we have a rule in writing rules, that when we use
+words that are commonly use for different purpose, domains, or
+stuff like that, we have to include always a subject before it, no
+matter what, if its used first time or we using multiple times. is
+there such thing that not commonly used ones? maybe rule should be
+applies for every such word? how we call those words? are they all
+nouns or what? in this particular example it is template, but can
+it be a verb too or other grammatic?"
+
+And on the list: "we should have in glossary some like one no
+subject word definition like `template - means ... . it changes by
+subject usage and ... ` and then we should have under it as some
+group of it with each subject we used. or maybe we have that thing
+about subject use of glossary word in rules and word which is "a
+word with more than one meaning here" is define in rules? maybe
+refer from glossary that rule to list all multimeaning words as
+group ? so this is unclear and we should consider all that in that
+todo how we deal with this that would not have these problems and
+had specific defien approach how we hadle that"
+
+#### What exists today
+
+- **"Template":** 97 uses in living text, in four senses: a skill's
+  template (11 files in three skills, also called "copy-and-fill
+  masters", 14 times); repo-hygiene's `.part` templates; a record
+  stub (called "stub" 125 times); the plain sense.
+- **The names for such words:** polysemous in linguistics,
+  overloaded terms in documentation.
+- **Verbs and phrases collide too:** fill, take, stage. Some collide
+  with git and Claude Code: stage, master, tag, skill.
+- **The writing rules:** rule 6, coin a word only when plain English
+  cannot say it; rule 8, say what a word is before using it, which
+  covers a first use only.
+- **Why first use is not enough:** a fact reference lands a reader
+  on one section, past the document's first use.
+
+#### Options weighed
+
+| | First use, rule 8 | Every use, judged | Every use, listed |
+|---|---|---|---|
+| Maintenance | nothing new | applied unevenly | one list, grown when a read finds a word |
+| Readability | fails a mid-file reader | uneven | every use clear |
+| Future-proofing | worse as files grow | rests on each writer | checkable by grep |
+| Complexity | none | one judgment rule | one rule and one list |
+
+#### What the reviewer took
+
+Every use, for the words a list names; for now, "a skill's
+template" in every line the open plan writes. How the list and the
+rule fit is left open, three ways: a glossary entry per word with
+its senses beneath; the rule holding the term and the list; or the
+rule holding the term, and a glossary group listing the words,
+each pointing at the rule.
