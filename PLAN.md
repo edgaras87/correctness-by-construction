@@ -130,6 +130,91 @@ corner.
 
 ---
 
+## Step: Take run 5's lessons for run 6  (`.claude/rules/working-a-reading.md`, `commit-plan`, the foundation check)    [~]
+
+Goal: Run 6 can be born from files that carry what run 5 learned
+for it: run 5's reading has DECISION-1, DECISION-2 and DECISION-5
+settled, and WORK-1 and WORK-3 to WORK-10 ended.
+Now: decide and work (`.claude/rules/working-a-reading.md`, steps 2
+to 8).
+Gate:
+
+**At the opening.**
+
+- [x] The step's branch `run-5-lessons-2026-10-29` is cut from main
+      at `3f20857`, and nothing of the step was done on main
+      (2026-10-29).
+- [x] This gate was written before the work started (2026-10-29).
+- [x] The step's approach is known: `.claude/rules/working-a-reading.md`
+      for the reading's items, `commit-plan` for the items marked
+      plan, the foundation check for each master changed
+      (2026-10-29).
+
+**The step's own items.**
+
+- [ ] Run 5's reading marks DECISION-1, DECISION-2 and DECISION-5
+      settled in place, each with how; one that needed an ADR has
+      it, Accepted.
+- [ ] The exchange's verdicts say how an edit the run never used is
+      judged (`docs/conventions/exchange/` §6.5, *Verdicts*), as
+      DECISION-1 settled it.
+- [ ] WORK-1 and WORK-3 to WORK-10 are each marked in the reading
+      with its ending, taken, declined or held, and its commit. A
+      held one names its trigger and has a TODO line.
+- [ ] Each taken edit is in our master, checked against its
+      foundation, its file read whole before the commit
+      (`.claude/rules/working-a-reading.md`, step 4). A file both
+      seats hold changed in both.
+- [ ] The playbook has no line meant for run 5 only.
+- [ ] The lessons run 5 left for the next hand-off sit where
+      DECISION-2 placed them.
+- [ ] The reading's two slips are fixed in place: 7 plans, and 12
+      unused fixes with E1 a use note (devlog 2026-10-29).
+- [ ] The reading's other items are untouched, left for the step
+      after the refinement, and the reading stays in `temp/`.
+
+**Known already.** The rule's *Gates* hold when a reading closes;
+this step does not close it. Its "every work item has ended" is the
+third own item, for this step's items only.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves; every ADR a
+      record cites exists; each pair of copies agrees, such as the
+      worked example in `cbc-framing` and in `cbc-slice`.
+- [ ] No living line in a record the step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the step changed.
+- [ ] New and changed text reads to `.claude/rules/writing.md`.
+- [ ] Every commit on `run-5-lessons-2026-10-29` follows
+      commit-messages.
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*).
+- [ ] The step's lessons are folded back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4, *How*).
+- [ ] Each approach on trial the step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
+
+Notes:
+- Opened 2026-10-29, from the devlog's entry of that day: the
+  reviewer chose to take what run 6 needs from run 5's reading
+  before run 6's birth. The rest of the reading waits for the
+  refinement's close. Run 5's DECISION-1 was taken in talk: each
+  fix judged on its own evidence, with the same three endings.
+- Stages: decide and work, by the rule's steps 2 to 8. WORK-3,
+  WORK-4 and WORK-10 are commit plans of their own. No note goes
+  to run 5: it waits for the rest of the reading
+  (`exchange-deliver`).
+- The reviewer decides each decision, and signs each commit at its
+  boundary. Main takes the branch by fast-forward on the reviewer's
+  word; then Birth run 6, on full auto, opens.
+
+---
+
 ## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the foundation check, `visual-comparison`)    [!] stopped: Take run 5's lessons for run 6, then Birth run 6, on full auto (devlog 2026-10-29)
 
 Goal: Living text written before a rule now meets that rule, and project-recording's list of the records maps them in both seats
