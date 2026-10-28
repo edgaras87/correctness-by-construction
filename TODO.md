@@ -271,33 +271,6 @@
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, *How work is run by agents*, the `claude-md-management` part, and §14.
 
-- [ ] Write down how a fact reference is written, then rewrite each
-      one to it (2026-10-24, the reviewer).
-      Context: the first half is done. ADR-0070 settled the form, and
-      its homes hold it (`docs/conventions/facts-in-sync/` §1, *One home*, §3.1, *What it is*,
-      §3.3, *A rename is grepped…*, §4, *The rule for every description* and both seats; both `one-home.md`;
-      `docs/conventions/exchange/` §3.4, *Every shipped file is…* and §5.8, *A skill's template is filled…*; the run's
-      `delivered-copies.md` rule 8) (`2033109`..`f97367b`). Left is
-      the rewrite: 329 references gain a title, 129 sentences are
-      reworded, 34 uses of "pointer" change, 41 paths inside skills
-      run from the root.
-      Ideas:
-      - the form and its cases are facts-in-sync's
-        (`docs/conventions/facts-in-sync/` §3.1, *What it is*); what each
-        decision rejected is ADR-0070's.
-      - a commit plan of its own, by layer as the refinement's work
-        ran, now `COMMIT-PLAN.md`; lines written since 2026-10-28
-        already take the form.
-      - it also fixes the refinement's FINDING-191 and 196, a derived
-        file's references to its foundation; 202, 204 and 216, the
-        shipped retellings; 219, paths inside a skill; 220, rules
-        named in prose.
-      - ADR-0070's trigger stands: a file where references sit on
-        most lines and add nothing.
-      Trigger: now, before round 3's rule check.
-      See: ADR-0070; devlog 2026-10-24, the text-division item;
-      `TODO-CONVERSATION-MEMORY.md` §13, *What the reference…*.
-
 - [ ] Decide how an item names the items it waits on, and what
       happens when one closes (2026-10-24, the reviewer).
       Context: TODO sorts by horizon and trigger; within a horizon,
@@ -737,7 +710,7 @@
       reviewer).
       Context: a line that relies on a fact written elsewhere and
       carries no fact reference is found by no grep and no walk. The
-      fact reference item's check asks it of each new or changed
+      check of ADR-0070 asks it of each new or changed
       line at the commit. Only the refinement's rounds read the whole
       repo for it today: their Dependencies kind, which round 2's
       close read ran with seven agents and 52 findings.

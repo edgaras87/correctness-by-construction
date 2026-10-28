@@ -1,8 +1,9 @@
 # 0072. One reference per section of a derived file
 
 Date: 2026-10-28
-Status: Proposed, opened under the commit plan for the reference
-rewrite.
+Status: Accepted (2026-10-28, at the set's records commit; opened
+Proposed under the commit plan for the reference rewrite, unchanged
+since).
 
 ## Context
 
