@@ -795,7 +795,7 @@
         written there.
       Trigger: a read finds a missing fact reference in text written
                after the per-commit check is in force.
-      See: devlog 2026-10-27; `TODO-CONVERSATION-MEMORY.md` §21.
+      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §21.
 
 - [ ] Test fact references and foundations as a whole: name every
       scenario a change brings, and check each still holds
