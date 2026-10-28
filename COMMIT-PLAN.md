@@ -81,6 +81,16 @@ Scripted.
 By hand, and FINDING-196: our rules and skills take references to
 the parts of their foundation they use.
 
+**7b. `docs: ADR-0072 one reference per section`**
+Inserted: ADR-0070's trigger fired in commit 7. In `writing.md` every
+rule comes from one part of its manual, so a reference per line would
+repeat one address eight times. The reviewer chose one reference per
+section of a derived file where its lines share a part. ADR-0072
+changes ADR-0070's decision 7.
+
+**7c. `docs: facts-in-sync says a section may carry it`**
+Inserted: facts-in-sync §4 step 2 says so.
+
 ### What ships
 
 **8. `fix(delivery): shipped references take the form`**
