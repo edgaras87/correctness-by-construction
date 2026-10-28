@@ -124,7 +124,7 @@ order; the key's expiry moved to SLICE-2; ticked gate at
 
 **A step can stop when another must come first.** It stays in
 the plan, marked `[!]`: "stopped: <the step that comes first>",
-with a pointer to the devlog entry that says why. Its Now line
+naming the devlog entry that says why. Its Now line
 keeps the stage it stopped at. Main takes its branch so far by
 fast-forward, on the reviewer's word, and the next step is cut
 from main. To resume, its branch is fast-forwarded to main, it

@@ -130,7 +130,7 @@ enable the user socket unit, point the library at it.
   module: the engine alone runs no auto-configuration, so the harness's
   own call is the only migration path
   (`.claude/skills/cbc-bootstrap/references/spring-harness-reference.md`
-  §1).
+  §1, *The database base…*).
 - **One container per test JVM**, same major version as the ground,
   started once and shared, lifecycle explicitly the harness's own.
 - **Migration runs immediately after container start, before any app

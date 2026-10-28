@@ -69,8 +69,8 @@ the shape, is shown before it is made, never applied silently:
 - **Each had something.** The shape takes what the output found,
   and the output is brought to the changed shape.
 - **The output is a different kind.** Both stand, and a new shape
-  starts from the output (§1). Either of the last three can name
-  new work (§4).
+  starts from the output (§1, *Written from work that exists*). Either of the last three can name
+  new work (§4, *When a shape names work*).
 
 Outputs closed before a change are not reopened.
 

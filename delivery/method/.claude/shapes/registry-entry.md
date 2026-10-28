@@ -59,7 +59,7 @@ method's worked example, a tiny order service.
 - **The record is linked** from the entry, so a reader of the
   registry reaches the slice in one step.
 - **At a close, one line per flag or judgment the slice settled,**
-  under *Answered at close*. One sentence and a pointer; how the
+  under *Answered at close*. One sentence and a reference to the record; how the
   slice got there is its record's. An entry with nothing to answer
   says "none".
 - **Framing's words stay as they were written.** A judgment the
@@ -102,7 +102,7 @@ Read the entry and ask:
 2. Does the heading carry the status, and a closed slice its date?
 3. Is the record linked?
 4. Does a closed slice's entry answer each flag and judgment it
-   settled, one line each, with a pointer?
+   settled, one line each, with a reference?
 5. Where the entry differs from this shape: did it drift, was the
    shape wrong, did each have something, or is it a different kind?
    The shapes rule says how each ends.

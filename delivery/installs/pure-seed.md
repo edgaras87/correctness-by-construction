@@ -212,7 +212,7 @@ outside read is the human's hard backstop behind it.
 
 Anything said to the newborn after this prompt, at a review stop or
 in an answer, is told text, held to the note's rules
-(`docs/conventions/exchange/` §3.7). One case is the birth's own: a
+(`docs/conventions/exchange/` §3.7, *The note*). One case is the birth's own: a
 newborn holds no earlier state, so it cannot check "this changed
 since" — the claim has nothing to land on. Such a claim says so, in
 a clause.
@@ -227,7 +227,7 @@ item is a verifiable fact:
   worktree byte-identical to the branch tip, every delivered file
   listed untracked by `git status` (the check in step 5 lists
   nothing).
-- Every pinned copy (`docs/conventions/exchange/` §3.2)
+- Every pinned copy (`docs/conventions/exchange/` §3.2, *What goes*)
   byte-identical to its master at the subject's pin, and as many
   method and stack skills and shapes as step 6's prompt counts.
 - PLAN's STEPS region holds the pure playbook's sequence —

@@ -213,7 +213,7 @@ What each piece derives from:
 | the intent | why this exists | one paragraph |
 | the definition's owned-and-refused | what this is | one paragraph, no parts named |
 | the registry | the planned invariants | one line per invariant |
-| the method | a pointer note | two lines, never a restatement |
+| the method | a note that points | two lines, never a restatement |
 | the repo's observable state | an honest status line | one line |
 
 Depth is a routing link into the exports, never more prose. At

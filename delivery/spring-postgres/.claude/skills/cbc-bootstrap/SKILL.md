@@ -115,9 +115,9 @@ choose — beside the builder's other manuals; both lived runs put it at
 
 - §1 the initialization identity
 - §2 the capabilities, each with its why
-- §3 the constraints, each **by pointer** to the ADR or contract that
+- §3 the constraints, each **by reference** to the ADR or contract that
   decided it; the why is stated here only where no record holds it
-- §4 the ground's facts **by pointer** — cite the operator manual and
+- §4 the ground's facts **by reference** — cite the operator manual and
   contract, never restate them; carry only what the code needs in hand: the
   identity the application connects as, and the endpoint facts.
   **State environment facts notation-neutrally** — "env var X, default

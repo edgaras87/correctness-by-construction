@@ -114,14 +114,14 @@ note's commits move back). The note's Experiments line records which.
    force now" list on top, with what each rule replaced.
 4. **What only the next run can check becomes its gate items.** List
    them in the note, each with the step that judges it. The
-   deliverer writes each into the next run's PLAN at that step, with
-   one line of reason and a pointer to the decision.
+   deliverer writes each into the next run's PLAN at that step, with one line of reason, naming the decision.
 5. **One TODO line asks the deliverer to apply the note's
    decisions.**
 6. **A devlog entry,** ending with a "Resume:" line, and TODO's Now
    updated.
-7. **Land it.** The look back and the `-detail` branch are
-   `.claude/skills/commit-plan/SKILL.md` §4 and §6. The branch,
+7. **Land it.** The look back and the `-detail` branch are commit-plan's
+   (`.claude/skills/commit-plan/SKILL.md` §4, *Lifecycle*, and §6, *Review
+   protocol*). The branch,
    `retrospective`, reaches main by fast-forward, on the reviewer's
    word (`PLAN.md`'s step form, *At the close*).
 8. **Then apply it to this run,** before Release:

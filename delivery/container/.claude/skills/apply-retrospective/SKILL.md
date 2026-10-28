@@ -127,8 +127,9 @@ history lines.
    where the copy was finished; the step's triage of TODO's own
    items.
 6. **The devlog entry and PLAN's close,** the gate ticked.
-7. **Land it.** The look back and the `-detail` branch are
-   `.claude/skills/commit-plan/SKILL.md` §4 and §6. The branch
+7. **Land it.** The look back and the `-detail` branch are commit-plan's
+   (`.claude/skills/commit-plan/SKILL.md` §4, *Lifecycle*, and §6, *Review
+   protocol*). The branch
    reaches main by fast-forward, on the reviewer's word (`PLAN.md`'s
    step form, *At the close*), and the commit plan closes.
 

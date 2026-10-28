@@ -157,8 +157,7 @@ foundation: the exchange convention
    template's header. The template stays a pinned copy: a change to
    its shape, such as a line every project needs, is an edit to the
    copy under rule 2. Filled values never go back to the deliverer
-   (CBC `docs/conventions/exchange/` §5.8, *A skill's template is
-   filled, not edited*).
+   (CBC `docs/conventions/exchange/` §5.8, *A skill's template is filled…*).
 
    When this project's decided constraints differ from what a
    skill's template assumes, it is **off-template**:

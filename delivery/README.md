@@ -1,8 +1,8 @@
 # Delivery — how its parts land in a run
 
 A local map (ADR-0045): how the parts of `delivery/` relate, and
-where each lands in a run. What each part is, is `ARCHITECTURE.md`
-§2. How a run is born is `delivery/installs/pure-seed.md`; how it is
+where each lands in a run. What each part is, is the map's
+(`ARCHITECTURE.md` §2, *The delivery, and the runs it…*). How a run is born is `delivery/installs/pure-seed.md`; how it is
 updated afterwards, and how what it learns comes back, is the
 exchange, `docs/conventions/exchange/`.
 
@@ -17,8 +17,8 @@ another *are* the run's tree. No mapping, and nothing to forget. A
 group is left out by not naming its directory (ADR-0029, ADR-0036).
 
 A shape travels with the group of the thing it shapes, as a copy
-into the run's `.claude/shapes/`; the rest is
-`docs/conventions/shapes/` §4.
+into the run's `.claude/shapes/`; the rest is the shapes manual's
+(`docs/conventions/shapes/` §4, *Where a shape lives, between…*).
 
 ## 2. Three ways a file lands
 
@@ -29,9 +29,9 @@ into the run's `.claude/shapes/`; the rest is
 - **Pinned copies.** The container's convention skills, rules and
   approach on trial; the method's and the stack practice's skills,
   rules and shapes; and the concept, at `docs/concept/`
-  (`docs/conventions/exchange/` §3.2 and §3.3). They land where the container
+  (`docs/conventions/exchange/` §3.2, *What goes* and §3.3, *Each group is a piece…*). They land where the container
   claims nothing. The run may edit one in place, under the
-  exchange's rule (`docs/conventions/exchange/` §5); a newer one
+  exchange's rule (`docs/conventions/exchange/` §5, *Editing a copy*); a newer one
   arrives by copying anew at a new pin.
 - **Fills.** Text the seed writes into a file the container already
   put there, which is the run's own from that moment. One exists:
@@ -42,8 +42,7 @@ into the run's `.claude/shapes/`; the rest is
 
 A skill's `templates/` travels with the skill as a pinned copy. How
 a run fills a skill's template, and what it does when it deviates
-from one, is the exchange's (`docs/conventions/exchange/` §5.8, *A
-skill's template is filled, not edited*).
+from one, is the exchange's (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*).
 
 The method's own artifacts, such as `docs/system/`, which
 cbc-framing writes, sit beside the records in the run, not in place
@@ -57,7 +56,7 @@ of them. CbC events are recorded under the container's record rules.
 
 Here the concept is the repo's subject, so it sits at the root. In a
 run it is a pinned reference beside the run's own work
-(`docs/conventions/exchange/` §3.3).
+(`docs/conventions/exchange/` §3.3, *Each group is a piece…*).
 
 ## 4. What the container holds that its tree does not show
 
@@ -75,7 +74,7 @@ and the standing comments are the stubs' own shape.
 Its own decisions, its own run files and its own versioning, which
 are the run's to make; and the archive's agent definitions, since
 the skills carry the method whole (ADR-0006). A run on another stack
-also takes no `spring-postgres/` (`ARCHITECTURE.md` §2.2).
+also takes no `spring-postgres/` (`ARCHITECTURE.md` §2.2, *The stack practice…*).
 
 ## 6. When it lands
 

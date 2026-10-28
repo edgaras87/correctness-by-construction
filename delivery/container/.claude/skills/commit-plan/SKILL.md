@@ -12,7 +12,8 @@ and the plan is closed.
 
 **It plans the commits, not the change.** What is being changed is
 settled before the plan is opened — in discussion, or in a record.
-When it turns out not to have been, §5 revises the plan and the
+When it turns out not to have been, the plan is revised
+(§5, *Divergence*) and the
 set's ADR is still Proposed.
 
 ## 1. When a commit plan is needed
@@ -100,7 +101,7 @@ section.>
 |---|---|---|
 | Open | `docs(agent): add commit plan for <X>` | the approved plan |
 | Work | the planned commits | as planned; stop at each boundary |
-| Small steps | tries, fixes, a way abandoned | inside a planned commit, on the reviewer's grant; folded into it at its boundary (§6) |
+| Small steps | tries, fixes, a way abandoned | inside a planned commit, on the reviewer's grant; folded into it at its boundary (§6, *Review protocol*) |
 | Diverge | `docs(agent): revise commit plan — <what changed>` | only when reality diverged; body says why |
 | Close | `docs(agent): close commit plan for <X>` | deletes the file; **body records what diverged** |
 
