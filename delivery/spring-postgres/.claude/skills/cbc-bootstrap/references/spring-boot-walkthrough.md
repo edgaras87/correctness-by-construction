@@ -10,10 +10,11 @@ This doc carries **required outcomes** (what must be true, the how is
 yours) and **lived traps** (exact facts about this stack and environment).
 It carries no code to copy. Its config files, though, are
 copy-and-fill masters in `templates/` beside this skill's
-`references/` (CBC ADR-0008); they implement the stack line above, and
-if the run's decided stack differs you are **off-template**: derive
-from the outcomes here, record the deviation in the run's log, and
-expect it to harvest. **The project's requirements document wins over
+`references/` (CBC ADR-0008); they implement the stack line above.
+If the run's decided stack differs you are **off-template**: derive
+from the outcomes here, and the rest is
+(`.claude/rules/delivered-copies.md`, rule 8, *A skill's template is
+copied and filled*). **The project's requirements document wins over
 this doc on any conflict.** Governing principle at every tier: *something
 outside the app migrates; the app runs.*
 

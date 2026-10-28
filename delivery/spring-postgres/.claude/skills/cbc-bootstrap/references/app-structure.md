@@ -69,10 +69,11 @@ This is the shape a run gets when its log says nothing else.
   deciding inputs are the run's own — fluency, audience, and a
   stated intent (*"this run practices pattern X"* is a legitimate
   deciding input when it is written down).
-- **Deviating from the default is off-default**, in the templates'
-  sense: derive from the chosen pattern's own logic, record the
-  decision in the run's log, and expect what you learn to harvest
-  back into this doc.
+- **Deviating from the default is off-default**, as deviating from
+  a skill's template is: derive from the chosen pattern's own logic,
+  and the rest is (`.claude/rules/delivered-copies.md`, rule 8, *A
+  skill's template is copied and filled*). What you learn comes back
+  into this doc.
 - **The first run to live an alternative makes it lived** — its
   entry below stops being vocabulary and gains a harvest line.
 

@@ -151,6 +151,24 @@ foundation: the exchange convention
    is first used by the deliverer. Say so in the log entry, and in its
    hand-off line (rule 4).
 
+8. **A skill's template is copied and filled, never edited in
+   place.** At use, copy it to the path its skill names and fill
+   it. The filled file is this project's own, and may drop the
+   template's header. The template stays a pinned copy: a change to
+   its shape, such as a line every project needs, is an edit to the
+   copy under rule 2. Filled values never go back to the deliverer
+   (CBC `docs/conventions/exchange/` §5.8, *A skill's template is
+   filled, not edited*).
+
+   When this project's decided constraints differ from what a
+   skill's template assumes, it is **off-template**:
+   - derive from what the template implements, which its skill
+     names;
+   - record the deviation where the records table puts a decision,
+     what was done instead and why (`.claude/CLAUDE.md`, *Records*);
+   - expect it to come back as a change to the skill;
+   - never bend a decided constraint to fit a skill's template.
+
 The pin is the truth of origin, and the log is the why. The diff
 between the pin and the copy is the whole of what this run changed,
 and that is what the deliverer reads.
@@ -159,6 +177,7 @@ and that is what the deliverer reads.
 
 ## Decisions
 
+- CBC ADR-0008 — rule 8: a skill's template is copied and filled
 - CBC ADR-0036 — the exchange. This rule is the run's half of it,
   built from the seven rules never-oversold wrote for its own method
   skills and widened to every delivered copy; the pin and the

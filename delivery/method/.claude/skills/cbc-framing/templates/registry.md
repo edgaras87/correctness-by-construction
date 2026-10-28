@@ -1,9 +1,10 @@
 <!-- Copy-and-fill master for the slice-registry export (CBC ADR-0008).
      Fill every <angle> slot; delete
      the guidance lines. Declining this template is off-template:
-     the outcomes in the skill's export section still bind — derive
-     your own layout from them and record the deviation in the run's
-     log. -->
+     derive your own layout from the outcomes in the skill's export
+     section (.claude/skills/cbc-framing/SKILL.md, Export and
+     handoff); the rest is (.claude/rules/delivered-copies.md, rule
+     8, A skill's template is copied and filled). -->
 
 # Slice registry — the work, cut and ready
 

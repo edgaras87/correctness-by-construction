@@ -186,8 +186,9 @@ absences (the written zero); exactly one slice is chosen-next
 while open work remains. The default layout is the
 copy-and-fill master `templates/registry.md` beside this
 skill's references (CBC ADR-0008). Declining it is **off-template**:
-derive your own layout from the outcomes above and record the
-deviation in the run's log.
+derive your own layout from the outcomes above, and the rest is
+(`.claude/rules/delivered-copies.md`, rule 8, *A skill's template is
+copied and filled*).
 
 **The exports are living records, not write-once.** The registry
 already lives (statuses change at every slice close); the other two

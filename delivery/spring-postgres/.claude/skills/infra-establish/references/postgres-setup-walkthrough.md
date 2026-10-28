@@ -15,11 +15,11 @@ The files themselves are copy-and-fill masters in `templates/`,
 beside this skill's `references/` (CBC ADR-0008) — this walk carries the
 whys and the order; the templates carry the bodies and their recall
 comments. Fill a template, and the filled file is the run's own.
-The templates implement the assumptions above; if the run's decided
+The templates implement the assumptions above. If the run's decided
 constraints differ, you are **off-template**: derive from the model
-(`postgres-role-split.md`), record the deviation in the run's log,
-and expect it to harvest — never bend a decided constraint to fit a
-template.
+(`.claude/skills/infra-establish/references/postgres-role-split.md`),
+and the rest is (`.claude/rules/delivered-copies.md`, rule 8, *A
+skill's template is copied and filled*).
 
 ## 0 · Preconditions
 
