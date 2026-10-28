@@ -26,8 +26,10 @@ the item's second part, and not this plan's.
   §2.10; our `one-home.md`, `foundation-check.md` and `commit-plan`
   skill; the run's `one-home.md` and `commit-plan` skill.
 - **Two facts stated only in history get a home:** the method's
-  no-stack rule in exchange §3.4; the off-template rule in one skill,
-  stated whole, the other three pointing.
+  no-stack rule in exchange §3.4; how a run fills a template, and
+  what it does when it deviates from one, in a new exchange §5.8,
+  made usable in the run's `delivered-copies.md`. The four shipped
+  tellings keep what to derive from, and point at the rule.
 - TODO's item keeps only the rewrite.
 
 New and changed lines take the settled form. Lines a commit does not
@@ -58,14 +60,31 @@ greps titles and moved facts too.
 check at the commit. `.claude/rules/foundation-check.md`, *A moved
 section*. Our `commit-plan` skill's sweep.
 
+**5b. `docs: TODO asks to test references as a whole`** and **5c.
+`docs: conversation-memory keeps the diagnostic talk`**
+Inserted: a TODO line decided in talk, and its talk.
+
 **6. `fix(delivery): a run may retell beside an id`**
 The run's `one-home.md`, rules 2 and 4; the container's
 `commit-plan` skill's sweep.
 
-**7. `fix(delivery): the off-template rule has one home`**
-One skill states it whole: derive from the outcomes or the model,
-record the deviation in the run's log, expect a harvest, never bend
-a decided constraint to fit a template. The other three point at it.
+**6b. `docs: TODO asks to look again at templates`**
+Inserted: a TODO line decided in talk. The home taken for the
+off-template rule is looked at again later, weighed against other
+options.
+
+**7. `docs: exchange §5.8 says how a template is filled`**
+A template is a delivered copy that is filled, not edited, and the
+filled file is the run's own. Deviating from one: derive from what
+it implements, record the deviation in the run's log, expect a
+harvest, never bend a decided constraint to fit it. From ADR-0008
+and the devlog of 2026-08. `delivery/README.md`'s paragraph on
+templates points at it.
+
+**7b. `fix(delivery): the off-template rule has one home`**
+The run's `delivered-copies.md` gains the rule. The four tellings,
+in `cbc-framing`, its registry template and the two walkthroughs,
+keep what to derive from and point at it.
 
 **8. `docs: ADR-0070 is accepted, TODO keeps the rewrite`**
 ADR-0070's status; TODO's item says its first part is done.
@@ -85,11 +104,12 @@ that then disagrees gets a lettered commit after it.
   their own, so each diff here stays readable.
 - **New lines in the new form now.** A line this plan writes takes
   the settled form; the lines around it wait for the rewrite.
-- **The off-template rule's home is chosen at commit 7's boundary,**
-  with the four files read whole. The likely home is `cbc-framing`'s
-  `SKILL.md`: the first skill a run uses, and in the method group, so
-  the stack's walkthroughs may point at it. The method never points
-  at the stack.
+- **The off-template rule lives with delivered copies,** not in a
+  skill. Chosen at commit 7's boundary with the four files read
+  whole: a template is a delivered copy, every run holds the
+  container whatever groups it takes, and the method and the stack
+  may both point at it. `cbc-framing`'s `SKILL.md` was the guess; it
+  holds the rule inside a paragraph about the registry.
 - **The check at the commit goes in our `one-home.md`,** not in
   `foundation-check.md`. The check asks of every staged line, while
   the foundation check runs only on files with a foundation.
