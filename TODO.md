@@ -292,22 +292,6 @@
       See: ADR-0070; devlog 2026-10-24, the text-division item;
       `TODO-CONVERSATION-MEMORY.md` §13.
 
-- [ ] Write when a bold lead is a part into
-      `docs/conventions/facts-in-sync/` §3.2 (2026-10-27, the
-      reviewer).
-      Context: the rule says bold emphasis in running prose is not a
-      part, and nothing of a bold-led bullet. The refinement's
-      DECISION-15 chose: a bold-led bullet is a part when it holds a
-      paragraph of its own, with its own reason or dated case; a
-      short list item is not. Round 2's close read's FINDING-252
-      waits on it: commit-messages §2 and visual-comparison §2 are
-      numbered with it, and 16 more sections are judged against it
-      at the last read.
-      Trigger: round 2 of the refinement closes, before round 3's
-               rule check, with "Decide how a fact reference is
-               written".
-      See: the refinement's DECISION-15, `5560baf`.
-
 - [ ] Decide how an item names the items it waits on, and what
       happens when one closes (2026-10-24, the reviewer).
       Context: TODO sorts by horizon and trigger; within a horizon,
