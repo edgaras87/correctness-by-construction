@@ -26,14 +26,16 @@ rules split that way, and the rules came here before it read
 
 - **`delivery/container/.claude/rules/one-home.md` — a rule,
   shipped**, held at `.claude/rules/one-home.md` with no `paths:`,
-  so it loads at the start of every session: §1, and the run's
-  seat.
+  so it loads at the start of every session: one home, and the run's
+  seat (§1, *One home*; *The run's seat*).
 - **`.claude/rules/one-home.md` — the deliverer's**, loaded in
-  every session: §1, §2, §3.1, and the deliverer's seat's question
-  at each commit.
+  every session: one home, point and derive, the fact reference, and
+  the deliverer's seat's question at each commit (§1, *One home*;
+  §2, *Point and derive*; §3.1, *What it is*; *The deliverer's seat*).
 - **`.claude/rules/foundation-check.md` — the deliverer's**, loaded
-  in every session and acting before a commit is staged: §3.3's
-  grep for a moved name, §4 and §5.
+  in every session and acting before a commit is staged: the grep for a moved name, the
+  walk and the disagreement (§3.3, *A rename is grepped…*; §4, *The
+  rule for every description*; §5, *A disagreement*).
 
 What derives from this page is that list. A change here walks it;
 a change forced in one of them is checked back against this page.
@@ -49,8 +51,8 @@ id, such as SLICE-4 or KILL-12, is a run's fact reference, written
 bare. When the fact changes at its home, the run greps the id and
 re-reads each line that carries it, in the same commit (ADR-0070).
 A run cannot open this repo's manuals, so a shipped line that relies
-on one stands alone (§3.1, *What it is*). §4 and §5 reach a run as
-the exchange's reading of what it sends back
+on one stands alone (§3.1, *What it is*). The walk and the disagreement (§4, *The rule
+for every description*; §5, *A disagreement*) reach a run as the exchange's reading of what it sends back
 (`docs/conventions/exchange/` §6, *Up*).
 
 ### The deliverer's seat
@@ -83,7 +85,7 @@ being trusted. In practice:
 - **A copy is a follower.** One is the owner and the other follows
   it: where two copies cannot be avoided, as the version in the
   build file is followed by the CHANGELOG, or where the reader acts
-  on the fact in place, retold beside its pointer. A follower
+  on the fact in place, retold beside its fact reference. A follower
   carries a fact reference to the home (§3.1, *What it is*). Without one it is a
   second home.
 - **History is not a second home.** The devlog, closed ADRs, commit
@@ -100,7 +102,7 @@ being trusted. In practice:
 *Added 2026-10-15, from run 3: its loaded one-home rule said these
 five things, and project-recording's rule did not (ADR-0053).*
 
-*Widened 2026-10-20: a line cut to a pointer left its reader
+*Widened 2026-10-20: a line cut to a fact reference left its reader
 without the picture at the moment of use. The reviewer judged
 three cases, each retold and pointed, and the retellings read
 better (ADR-0059).*
@@ -161,7 +163,10 @@ A fact reference is written in one form, always in parentheses:
   is copied…*).
 
 In a comment, an HTML one or a line of YAML or SQL, the title takes
-no asterisks: there they show as written.
+no asterisks: there they show as written. In a list whose items are
+only addresses, such as a manual's *What this does not cover* and
+*Where to look*, the address stands without parentheses; a section
+in it still carries its title.
 
 The path runs from the repo root, so a document finds everything
 pointing at it with one grep. A skill names its own files the same
@@ -201,7 +206,7 @@ it holds a paragraph of its own, with its own reason or dated case.
 A short list item, a phrase and a line, is not.
 
 *Decided in the walk, 2026-09-29, when the conventions manual's §3
-held six rules as bold paragraphs and every pointer into it said
+held six rules as bold paragraphs and every reference into it said
 "§3"; it lived in the devlog alone until 2026-09-30. Written there
 first as "a part other text points at", it would have numbered one
 section of project-recording beside seven built the same way; the
@@ -224,7 +229,7 @@ Placing an approach on trial into a convention is such a move
 
 *Found 2026-10-19: the refinement's manual was renumbered three
 times on 2026-10-18, outside any commit plan, so no close sweep
-ran. A pointer in TODO stood stale for five commits. The grep
+ran. A fact reference in TODO stood stale for five commits. The grep
 moved from a plan's close to the commit that renumbers.*
 
 ## 4. The rule for every description
@@ -245,8 +250,8 @@ for all of them, and this is where it is stated:
    list to the grep in step 3: repos it never sees stand on it too.
 2. Each derived thing names its description, once: one
    `foundation` per file, its root, what the whole of it stands on.
-   Which files carry it, where, and what each holds is
-   `docs/conventions/conventions/` §1.3, *The `foundation` line*. Every line that uses a part of
+   Which files carry it, where, and what each holds is the conventions manual's
+   (`docs/conventions/conventions/` §1.3, *The `foundation` line*). Every line that uses a part of
    a document, its root included, carries a fact reference to that
    part (§3.1, *What it is*), the root's parts as much as any other's. The root
    says which document to open when the file changes, and the whole
@@ -291,16 +296,16 @@ form name its description, as a skill does.*
 
 ## 5. A disagreement
 
-A derived thing, a pointer or practice saying other than its
+A derived thing, a fact reference or practice saying other than its
 description: two linked texts that disagree, either of which may be
 the wrong one (`docs/models/idea-to-output.md` §3.3, *A disagreement is settled*). It is raised
 where it is found — a finding in a reading, an edit a run made to
 its copy, a question at a boundary, the foundation check at a
 commit — and decided, never defaulted: neither side is right for
 being the description, nor for being newer. Practice is the
-evidence. When the description changes, the walk in §4 runs again;
-when the derived thing changes, it follows in the same commit, or
-in the next under §4's step 3. The decision is recorded where the
+evidence. When the description changes, the walk runs again (§4, *The rule for every description*);
+when the derived thing changes, it follows in the same commit, or in the next, as the walk's step 3 says (§4, *The rule for every
+description*, step 3). The decision is recorded where the
 repo records decisions: a commit body, or an ADR when options were
 weighed.
 

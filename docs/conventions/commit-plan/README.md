@@ -143,7 +143,7 @@ line, and a manual wraps its prose, so a name broken across two
 lines is never found. *Four misses before it was written down: a
 `§8` hunt that missed a `§7`, a renumbering described without
 reading its range, a phrase wrapped across two lines, and on
-2026-09-30 a "(model §10)" pointer the same way (ADR-0049, 3).*
+2026-09-30 a "(model §10)" reference the same way (ADR-0049, 3).*
 
 ### 2.11 Small steps inside a planned commit, on the reviewer's grant
 

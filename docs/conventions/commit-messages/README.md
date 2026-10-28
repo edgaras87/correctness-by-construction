@@ -37,7 +37,7 @@ them is checked back against this page.
 
 A run commits under the skill. The deliverer commits under the
 same skill, and has one local habit — which scope carries the
-signal — stated in §3 and not shipped.
+signal — stated in its own section, and not shipped (§3, *The deliverer's habit*).
 
 ## 1. What it is
 
@@ -76,8 +76,8 @@ the work, and the arrangement that made an agent do the work a
 particular way. They stay separable, for a filtered log or a
 portfolio copy that drops the arrangement, only if no commit ever
 straddles them. Hence the `agent` scope (ADR-0038, 1c); which
-paths are the arrangement's is
-`docs/conventions/agent-arrangement/` §1.1, *A closed list of paths*.
+paths are the arrangement's is agent-arrangement's
+(`docs/conventions/agent-arrangement/` §1.1, *A closed list of paths*).
 
 ### 2.4 Commit on the word
 

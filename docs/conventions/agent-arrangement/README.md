@@ -115,18 +115,18 @@ the repo that cannot apply it.*
 The theory this leans on is `docs/models/agent.md`: the ambient
 channel (`docs/models/agent.md` §4.1, *ambient*), the choosing table
 (`docs/models/agent.md` §8, *Choosing a channel*), the claims (`docs/models/agent.md`
-§12, *Claims*). The model describes; this page explains against it, and its
-§5 is the binding: what Claude Code gives each channel.
+§12, *Claims*). The model describes; this page explains against it, and its binding is what Claude Code gives each channel
+(§5, *The binding: Claude Code*).
 
 ### 1.1 A closed list of paths
 
 The arrangement's paths are a closed list (ADR-0038, 1c):
 
-- **`CLAUDE.md`** — the entry file, §2. The name is the tool's;
+- **`CLAUDE.md`** — the entry file (§2, *The entry file*). The name is the tool's;
   what goes in it is this convention's.
 - **`.claude/`** — the skills directory, the rules directory, the
   shapes directory, the approaches on trial, the decisions log, and
-  the tool's settings, tracked and machine-local, §3.
+  the tool's settings, tracked and machine-local (§3, *`.claude/`*).
 
 ### 1.2 Detachable, and kept so
 
@@ -239,8 +239,7 @@ short.
 
 Written at project start — a run's from the container's, the
 deliverer's from this page (ADR-0042). Revisited when a record
-moves, a convention is adopted, or the build command changes, and at
-the re-reading §2.6 names — not otherwise.
+moves, a convention is adopted, or the build command changes, and at the re-reading its size asks for (§2.6, *Size*), not otherwise.
 
 ### 2.6 Size
 
@@ -284,11 +283,12 @@ evaluation's.
 ### 3.2 `rules/`
 
 Instruction files read like the entry file, with one extra: a `paths:`
-list at the top. When a file loads, and its limits, are §5.6. The
+list at the top. When a file loads, and its limits, are this page's
+(§5.6, *Rules files*). The
 home for a rule true only in one part of the tree, which a skill would
 carry only if the agent noticed the moment. Without the list, the file
-is the entry file by another name and fails §2.4's tests the same way,
-with one exception, §3.9.
+is the entry file by another name and fails the entry file's tests the same way
+(§2.4, *How*), with one exception (§3.9, *A rule loaded in every session*).
 
 ### 3.3 `shapes/`
 
@@ -384,10 +384,10 @@ own. *Added 2026-10-20 (ADR-0058).*
 A convention whose moment is every task ships its rule with no
 `paths:`, so it loads in every session. Its moment is every answer
 and every record written, and no path, skill or stub fires at all
-of them. Such a rule fails §2.4's first test, since it is true in
+of them. Such a rule fails the entry file's first test (§2.4, *How*), since it is true in
 any project. It passes as the convention's own channel: derived
-from its manual, and naming the manual in `foundation`. That keeps
-it from being the rulebook of §4: one file per convention, never a
+from its manual, and naming the manual in `foundation`. That keeps it from being the rulebook the anti-patterns warn of
+(§4, *Anti-patterns*): one file per convention, never a
 restatement. It is paid for in every session (§2.6, *Size*), so few
 qualify. *Added 2026-10-15, from run 3: its writing and one-home
 rules, loaded this way, changed its records where a manual and the

@@ -29,16 +29,16 @@ arrangements, each side holding only what it runs
 
 - **`delivery/container/temp/README.md` — shipped at birth**, the
   run's own from then on: what its `temp/` is for, where a delivery
-  arrives and the run keeps its own scratch. §3.1 and §4.
+  arrives and the run keeps its own scratch (§3.1, *Staging*; §4, *The take*).
 - **`delivery/container/.claude/rules/delivered-copies.md` — a
   rule, shipped**, held at `.claude/rules/delivered-copies.md` and
-  loading when a copy or a file in `temp/` is read. §4 and §5.
+  loading when a copy or a file in `temp/` is read (§4, *The take*; §5, *Editing a copy*).
 - **`.claude/skills/exchange-read/SKILL.md` — the deliverer's**,
-  opened when the reviewer says to read a run. §6: find the span
+  opened when the reviewer says to read a run (§6, *Up*): find the span
   from the run's read-through, read the three things, write the
   reading. Ends where the work begins.
 - **`.claude/skills/exchange-deliver/SKILL.md` — the deliverer's**,
-  opened when the reviewer says to deliver. §3: the note committed
+  opened when the reviewer says to deliver (§3, *Down*): the note committed
   last, the staging on the word; the same whether a reading
   preceded it or not. Birth is a delivery into the root plus the
   fills, and `delivery/installs/pure-seed.md` keeps that.
@@ -49,8 +49,7 @@ arrangements, each side holding only what it runs
   the work then fills, to one form.
 - **`.claude/rules/working-a-reading.md` — how a reading's list is
   worked, the deliverer's**, practice under this page, loading when
-  a reading in `temp/` is read. It works each item to the ending
-  §6.5 names.
+  a reading in `temp/` is read. It works each item to its ending (§6.5, *Verdicts*).
 
 No artifact explains anything. What derives from this page is that
 list. A change here walks it; a change forced in one of them is
@@ -63,9 +62,11 @@ number. It held, 2026-09-26.*
 ## The seats
 
 The two seats do different things, and the body is written per
-seat. **The run's** is §4, the take, and §5, editing a copy. **The
-deliverer's** is §3, down, and §6, up, written in the first person
-because they are its own. §1 and §2 are both seats'.
+seat. **The run's** is the take and editing a copy (§4, *The take*;
+§5, *Editing a copy*). **The deliverer's** is down and up (§3, *Down*;
+§6, *Up*), written in the first person because they are its own. What
+cannot change and what each side keeps are both seats' (§1, *What
+cannot change*; §2, *What each side keeps*).
 
 ## 1. What cannot change
 
@@ -139,7 +140,7 @@ local, for every copy. It would make the compare a judgement where
 it is now a `diff` — the miscount problem made permanent; it would
 let a run's edit stay in the local part and never reach the next
 run, which is the one thing the loop exists to prevent; and the
-need it serves already has a home, the run's own records (§5, *Editing a copy*).*
+need it serves already has a home, the run's own records (§5, Editing a copy).*
 
 Skeleton sync is reopened if a run re-applies the same declined edit
 after two re-pins.
@@ -240,8 +241,8 @@ hold. When such a run exists, those lines become a fill.
 ### 3.5 Every shipped skill, rule and shape carries `foundation`
 
 The field — its name, that every skill, rule and shape has one,
-and what it holds for each kind — is the conventions convention's,
-`docs/conventions/conventions/` §1.3, *The `foundation` line*. What is the exchange's: the
+and what it holds for each kind — is the conventions convention's
+(`docs/conventions/conventions/` §1.3, *The `foundation` line*). What is the exchange's: the
 line travels with the copy as a live claim, what this file comes
 from *now* and not when or from which run, and nothing in a copy
 can say otherwise. *Until 2026-09-26 the five method and stack
@@ -288,8 +289,7 @@ in the run and a note is read once (ADR-0020).
 
 A note that names a third repository gives both names: ours, by
 ordinal, and the one it gave itself at its Identity step. A run's
-records do not say which is which; ours do, in `ARCHITECTURE.md`
-§2.5.
+records do not say which is which; ours do (`ARCHITECTURE.md` §2.5, *The runs*).
 
 *The three rules about verdicts were each a defect first. The last
 way a note fails was found on 2026-09-20, when a note of reports was
@@ -447,7 +447,7 @@ fills it. The filled file is the run's own, as a record is (§5.7,
 *The records*), and may drop the template's header. The skill's
 template stays the pinned copy. A change to its shape, such as a
 line every run needs or a comment that was wrong, is an edit to the
-copy under §5.1 (*One rule for every delivered copy*). The filled
+copy under its rule (§5.1, *One rule for every delivered…*). The filled
 values never come back: they are the run's decisions.
 
 A run whose decided constraints differ from what a skill's template

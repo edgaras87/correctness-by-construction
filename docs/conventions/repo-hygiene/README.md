@@ -83,8 +83,7 @@ sources for one thing.*
 ## 3. Rules
 
 - A run's files are its own. A fix that would be true of any
-  project comes back the way every lesson does — the deliverer
-  reads the run, `docs/conventions/exchange/` §6, *Up* — and changes the
+  project comes back the way every lesson does — the deliverer reads the run (`docs/conventions/exchange/` §6, *Up*) and changes the
   master here, so the next birth starts corrected.
 - A new stack is a new directory under `templates/` with the three
   `.part` files, and an ADR if any choice was non-obvious.

@@ -29,7 +29,7 @@ there is.
   own from birth.
 - **The records table in the entry file,
   `delivery/container/.claude/CLAUDE.md`, and ours, in `CLAUDE.md`**
-  — this convention's one stake, §13, in a file
+  — this convention's one stake (§13, *The records table…*), in a file
   `docs/conventions/agent-arrangement/` owns: the rule that cannot
   live inside a record, when to open it.
 - **`delivery/fills/cbc-run-pure-playbook.md` — the playbook's
@@ -87,7 +87,8 @@ since TODO takes a finding at once; and no decision index, since
 
 And its `ARCHITECTURE.md` maps documents and delivery rather than a
 built system, where a run's maps modules, runtime invariants and a
-`src/` codemap. It keeps to about §8's two pages (ADR-0068). Its parts,
+`src/` codemap. It keeps to about two pages, as the map's section asks
+(§8, *ARCHITECTURE.md — the map…*; ADR-0068). Its parts,
 each with what it holds and who reads it:
 
 - **the overview** — the repo in one view, for a newcomer after the
@@ -208,7 +209,8 @@ each seat's records table's (§13, *The records table…*).
    README.md = the front door: what this is, where the rest is
 ```
 
-The entry file is `docs/conventions/agent-arrangement/` §2, *The entry file*'s. The
+The entry file is agent-arrangement's
+(`docs/conventions/agent-arrangement/` §2, *The entry file*). The
 playbook is absent from a run on purpose: it lives in the repo that
 owns the project type, never in a project born from it (§9, *Playbook — the cross-project…*).
 
@@ -409,8 +411,7 @@ the deliverer's own. Why the form is as it is:
   costs nothing.
 - Open work only: what closed is the devlog's, the ADRs' and git's
   to tell, and a closed entry kept here is a second copy of it.
-- An item's Context is there so triage reads it without opening its
-  pointer. The story is not, because the devlog already holds it.
+- An item's Context is there so triage reads it without opening what its See names. The story is not, because the devlog already holds it.
 - Ideas are noted, never weighed, until the item is due: an idea
   parked here is not lost to the session that had it, and not
   mistaken for a decision.
@@ -504,8 +505,8 @@ developer-speak ("refactored OrderService") instead of user-speak
 What this project is, who it's for, how to run it, and where
 everything else is.
 
-README is the front door for people; the entry file is the one for
-agents, `docs/conventions/agent-arrangement/` §2, *The entry file*. Two audiences, two
+README is the front door for people; the entry file is the one for agents
+(`docs/conventions/agent-arrangement/` §2, *The entry file*). Two audiences, two
 files, no shared text.
 
 ### 7.2 Why
@@ -705,8 +706,8 @@ cross-cutting changes do.
 
 ### 10.2 Commit messages
 
-The finest-grained decision trail —
-`docs/conventions/commit-messages/` §1, *What it is*.
+The finest-grained decision trail
+(`docs/conventions/commit-messages/` §1, *What it is*).
 
 ### 10.3 PR descriptions
 
@@ -781,8 +782,8 @@ from other conventions, and renumbering would break those citations
 for a cosmetic gain.*
 
 The entry file — the one file loaded before any task, what it may
-hold, how it stays small — is
-`docs/conventions/agent-arrangement/` §2, *The entry file*. This convention keeps one
+hold, how it stays small — is agent-arrangement's
+(`docs/conventions/agent-arrangement/` §2, *The entry file*). This convention keeps one
 stake in it: the records table, the only ambient part of
 project-recording (*Why it arrives this way*).
 
@@ -790,8 +791,8 @@ project-recording (*Why it arrives this way*).
 
 **Every row of the records table names three things: the moment, what
 the record holds, and its path** — and adding a record means adding
-its row. What the record holds is a short summary of its item in
-§1. This is a requirement, not a convenience.
+its row. What the record holds is a short summary of its item in the list of records
+(§1, *The records at a glance*). This is a requirement, not a convenience.
 
 The moment is the half that is new and the half that is load-bearing.
 The table is then readable in both directions: *I just did X, where

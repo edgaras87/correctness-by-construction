@@ -26,15 +26,16 @@ staging was never used on either side.*
 
 - **`delivery/container/.claude/rules/shapes-lifecycle.md` — the
   rule, shipped**, held at `.claude/rules/shapes-lifecycle.md` and
-  loading when a file under `.claude/shapes/` is touched. §1, §3,
-  §4 and §5, from the run's seat, with the definition repeated because a
+  loading when a file under `.claude/shapes/` is touched (§1, *What a shape is*; §3, *One place, read
+  at the gate*; §4, *Where a shape lives, between…*; §5, *How a shape
+  is used, and…*), from the run's seat, with the definition repeated because a
   run cannot open this page.
 - **`delivery/method/.claude/shapes/` — the method's shapes,
   shipped**, held at `.claude/shapes/` and read at a step's closing
   gate: instances of this convention, each from a run's lived
   records, its illustration from the worked example (§4.2, *Two separable layers…*).
-- **`delivery/README.md` — a pointer**: one sentence on placement,
-  and §4 for the rest.
+- **`delivery/README.md` — it points**: one sentence on placement, and the rest here
+  (§4, *Where a shape lives, between…*).
 
 What derives from this page is that list. A change here walks it;
 a change forced in one of them is checked back against this page.
@@ -171,8 +172,8 @@ held that shape back for (ADR-0052).*
 
 ## 4. Where a shape lives, between repositories
 
-Stated here once; `delivery/README.md` points here. Inside a
-project, §3. Between repositories, a shape follows the group of the
+Stated here once; `delivery/README.md` points here. Inside a project, where a shape lives is said above (§3, *One place,
+read at the gate*). Between repositories, a shape follows the group of the
 thing it shapes — the same rule by which a skill belongs to exactly
 one group and travels whole. A slice record's shape is `method/`; a
 Spring harness file's is `spring-postgres/`; a devlog entry's or a
@@ -328,5 +329,6 @@ agent while work is written, by design — nothing loads
   close** — whatever defines the project's steps; for a run born
   from the deliverer, `delivery/fills/cbc-run-pure-playbook.md`.
 - **Whether `docs/baselines/` holds anything that is a shape
-  rather than trial evidence** — §2 draws the line; the sorting
+  rather than trial evidence** — this page draws the line (§2, *What a
+  shape is not*); the sorting
   against it is its own work, not yet done.
