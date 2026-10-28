@@ -281,7 +281,8 @@
       - the form and its cases are facts-in-sync §3.1's; what each
         decision rejected is ADR-0070's.
       - a commit plan of its own, by layer as the refinement's work
-        ran; lines written since 2026-10-28 already take the form.
+        ran, drafted at `temp/rewrite-plan-draft.md`; lines written
+        since 2026-10-28 already take the form.
       - it also fixes the refinement's FINDING-191 and 196, a derived
         file's references to its foundation; 202, 204 and 216, the
         shipped retellings; 219, paths inside a skill; 220, rules
