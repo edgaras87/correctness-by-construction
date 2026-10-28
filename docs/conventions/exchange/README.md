@@ -437,6 +437,26 @@ the chapters were blocked at all; it had edited none.*
 They are the run's own from birth, not copies (§2.4), and this
 section does not apply to them.
 
+### 5.8 A skill's template is filled, not edited
+
+A file in a skill's `templates/` arrives pinned, with the rest of the
+skill. At use, the run copies it to the path the skill names and
+fills it. The filled file is the run's own, as a record is (§5.7,
+*The records*), and may drop the template's header. The skill's
+template stays the pinned copy. A change to its shape, such as a
+line every run needs or a comment that was wrong, is an edit to the
+copy under §5.1 (*One rule for every delivered copy*). The filled
+values never come back: they are the run's decisions.
+
+A run whose decided constraints differ from what a skill's template
+assumes is off-template. It derives from what the template
+implements, which the skill names. It records the deviation where
+its records table puts a decision, what it did instead and why
+(`docs/conventions/project-recording/` §13, *The records table in
+the entry file*). It expects the
+deviation to come back as a change to the skill. It never bends a
+decided constraint to fit a skill's template (ADR-0008).
+
 ## 6. Up
 
 ### 6.1 The read

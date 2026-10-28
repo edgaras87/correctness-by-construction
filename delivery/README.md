@@ -40,10 +40,10 @@ into the run's `.claude/shapes/`; the rest is
 |---|---|
 | `delivery/fills/cbc-run-pure-playbook.md` | its steps replace everything between the PLAN stub's STEPS markers, and the "Steps from:" line names it at the pin (`delivery/installs/pure-seed.md` step 4); the run holds no copy of the playbook |
 
-A skill's `templates/` travels with the skill as a pinned copy. At
-use, the run copies a template to the path its walkthrough names and
-fills it, and the filled file is the run's own (ADR-0008). A change
-to a template's shape comes back like any other change to a skill.
+A skill's `templates/` travels with the skill as a pinned copy. How
+a run fills a skill's template, and what it does when it deviates
+from one, is the exchange's (`docs/conventions/exchange/` §5.8, *A
+skill's template is filled, not edited*).
 
 The method's own artifacts, such as `docs/system/`, which
 cbc-framing writes, sit beside the records in the run, not in place
