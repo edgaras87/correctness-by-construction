@@ -150,9 +150,9 @@ committed template.
   only one immune to every claim in §12.
 - **Self-enforcing:** the property that makes it strong. A rule is
   self-enforcing when acting on the artifact is what puts the rule in
-  front of you — the rule for filling in `PLAN.md` sits inside
-  `PLAN.md`, so it cannot be skipped without opening the file it
-  governs. No trigger is needed because the act is the trigger. This is
+  front of you. Here, for example, the rule for filling in `PLAN.md`
+  sits inside `PLAN.md`, so it cannot be skipped without opening the
+  file it governs. No trigger is needed because the act is the trigger. This is
   how a text convention can be installed at all: `.gitignore` is
   self-enforcing by mechanism; a stub with its rules in comments is
   self-enforcing by placement, and only while the comments stay in the
