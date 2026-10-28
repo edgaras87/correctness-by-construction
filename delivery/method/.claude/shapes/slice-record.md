@@ -81,8 +81,9 @@ with the test that guards it>
 *Why it beats this attack:* <against the named adversity, not
 adversity in general>
 *Say:* <real numbers>
-*If the wall were ever wrong:* <what stands behind it, or nothing,
-said so; and "seen at the red run" or "unproven">
+*If the wall were ever wrong:* <what stands behind it, named, or
+nothing, said so; and "seen catching at the red run", with the
+red taken again with it absent too, or "unproven">
 
 *Options weighed:*
 
@@ -185,7 +186,9 @@ named adversity, simultaneous duplicates.
   each test, since one criterion can serve two guarantees.
 - **A backstop says whether it was seen.** The red run removes the
   wall, and that is the one moment the backstop meets the attack. A
-  backstop never seen there is written "unproven".
+  backstop never seen there is written "unproven". A backstop that
+  caught the attack is named, and the block says the red was taken
+  again with it absent too.
 - **An option changed after the plan was signed keeps its dates.**
   The new choice comes first, marked `*chosen <date>*`. The one it
   replaced moves below, marked `*as signed on <date>*`, and answers
