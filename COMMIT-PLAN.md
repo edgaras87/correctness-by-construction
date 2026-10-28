@@ -1,9 +1,5 @@
 # Commit plan: the fact reference rewrite
 
-*A draft, kept until the rewrite opens, then moved to
-`COMMIT-PLAN.md` and deleted here. Measured 2026-10-28, before the
-bold-lead parts; measure again when it opens.*
-
 ## Summary — the state after all commits
 
 Every fact reference in living text takes the form ADR-0070 settled
@@ -12,19 +8,21 @@ the root, a section and its title, in parentheses. TODO's "Write
 down how a fact reference is written, then rewrite each one to it"
 is worked, and leaves TODO.
 
-Measured 2026-10-28, in living text:
+Measured 2026-10-28, at its opening, in living text:
 
 | Layer | Files | Path and section | Same document, (§n) | "Pointer" |
 |---|---|---|---|---|
-| The manuals | 12 | 113 | 72 | 13 |
-| The models and the concept | 8 | 8 | 13 | 5 |
-| The records | 9 | 121 | 19 | 8 |
-| Ours | 17 | 55 | 6 | 7 |
-| What ships | 56 | 14 | 3 | 7 |
+| The manuals | 12 | 119, 22 titled | 78, 7 titled | 13 |
+| The models and the concept | 8 | 6, 1 titled | 27, 6 titled | 5 |
+| The records | 9 | 110, 7 titled | 19 | 6 |
+| Ours | 18 | 63, 20 titled | 12 | 6 |
+| What ships | 56 | 14, 2 titled | 3 | 7 |
 
-15 references already carry a title. Besides these:
-- about 129 references are part of their sentence, and the sentence
-  is reworded so it says its point in words;
+So 260 references with a path and 126 in the same document gain a
+title; the 65 written since 2026-10-27 already carry one. Besides
+these:
+- references that are part of their sentence move into parentheses,
+  and the sentence is reworded so it says its point in words;
 - 41 paths inside skills run from the root (FINDING-219);
 - 13 shipped rules named in prose take a reference (FINDING-220);
 - a derived file's lines take references to its foundation:
@@ -37,18 +35,14 @@ History is not touched: the devlog, closed ADRs, `temp/`,
 of `TODO-CONVERSATION-MEMORY.md`, and `CHANGELOG.md`'s released
 entries.
 
-## Before it opens
-
-TODO's "Write down which way a fact reference may point, then lift
-what the models borrow from below" is worked
-first: it may remove references a model makes downward, which this
-plan would otherwise rewrite. "Write when a bold lead is a part" was
-worked first for the same reason (`e61d47b`).
-
 ## Commits
 
 **0. `docs(agent): add commit plan for ref rewrite`**
-Opens the set.
+Opens the set; the draft in `temp/` goes.
+
+**0b. `docs: facts-in-sync gives a step or rule its form`**
+§3.1 gains the case its five cases lack: a numbered step or rule
+stays after the title.
 
 **Two passes per layer.** The first adds titles by script, nothing
 else. The second is by hand: parentheses and the reworded sentences,
@@ -113,7 +107,7 @@ that then disagrees gets a lettered commit after it.
 
 ## Decisions for you to object to
 
-- **The direction item first,** as *Before it opens* says.
+- **Measured again at its opening,** 2026-10-28: the numbers above.
 - **A script adds the titles; a person does the rest.** The script
   runs from the scratchpad, never from the repo. For each reference
   it finds the heading the path and number name, and writes its
@@ -126,7 +120,9 @@ that then disagrees gets a lettered commit after it.
   (`docs/conventions/facts-in-sync/` §4, *The rule for every
   description*, step 3); (`.claude/rules/delivered-copies.md`, rule
   8, *A skill's template is copied and filled*). Facts-in-sync §3.1
-  gains the case, since its five do not list one.
+  gains the case first, in 0b.
+- **In a comment, a title carries no asterisks:** an HTML comment, a
+  YAML or SQL line shows them as written.
 - **A run's ids are not touched.** Decision 4 keeps them bare.
 - **By layer, two passes each,** so a scripted diff holds titles
   only and reads in one look, and the hand diff holds only what a
