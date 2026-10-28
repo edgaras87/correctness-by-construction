@@ -819,6 +819,39 @@
                after the per-commit check is in force.
       See: devlog 2026-10-27; `TODO-CONVERSATION-MEMORY.md` §21.
 
+- [ ] Test fact references and foundations as a whole: name every
+      scenario a change brings, and check each still holds
+      (2026-10-28, the reviewer).
+      Context: two means keep facts in place. A grep finds every line
+      that names a path, number, title or id. Only a read tells
+      whether that line, its paragraph or its whole file still holds
+      after the change. One home rests on both: the grep finds the
+      line, the read keeps its logic. ADR-0070 changed the reference
+      and the rename grep, and no one has walked every scenario
+      through both, end to end.
+      Ideas:
+      - the scenarios: a fact changed at its home; a section renamed,
+        renumbered or retitled; a file renamed; a fact moved to a new
+        home, a placed approach among them; a foundation changed; a
+        derived file changed against its foundation; a retelling
+        whose host is itself a source; a run's id whose home changes;
+        a shipped CBC line when our manual changes; a fact stated
+        only in history; a line with no fact reference.
+      - for each: what finds it, a grep or a read; which rule says
+        so, by fact reference; what is re-read, the line, its
+        paragraph or the whole file; what could still slip.
+      - (a) on paper: a table of the scenarios against the rules.
+      - (b) a drill on a throwaway branch: each scenario made for
+        real, the check run, and what it found compared with a full
+        read.
+      - (c) agents: one per scenario, or one trying to make a change
+        slip past the check.
+      - (d) a kind of its own in the refinement's last read.
+      - what a scenario finds missing becomes a finding or a TODO
+        item; the test changes no rule itself.
+      Trigger: the refinement closes.
+      See: devlog 2026-10-28; ADR-0070.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
