@@ -23,7 +23,7 @@ then predated four rules:
 - writing, and one home per fact (ADR-0053);
 - the foundation check (2026-10-17);
 - a lesson written in general (`docs/conventions/conventions/`
-  §2.6, 2026-10-18).
+  §2.6, *A lesson taken*, 2026-10-18).
 
 Done once before, unnamed: the eval of 2026-09-30 to 2026-10-02
 read the whole repo, listed 68 findings and 10 decisions in six
@@ -64,16 +64,16 @@ The words of this page, each defined once:
   `.claude/decisions.md` and the parts of
   `TODO-CONVERSATION-MEMORY.md`, but not those two files' header
   comments
-  (`docs/conventions/facts-in-sync/` §1). Also left out: `docs/baselines/`,
+  (`docs/conventions/facts-in-sync/` §1, One home). Also left out: `docs/baselines/`,
   frozen on purpose, and a run's own text in `temp/`, which its
   reading reads.
 - **kind** — one rule the refinement reads against, and the
   findings it makes. Written as what a finding of it is, the rule,
   and its round.
 - **round** — the kinds whose fixes do the same to the text, read
-  and fixed together before the next round reads (§2.1).
+  and fixed together before the next round reads (§2.1, Group the kinds).
 - **layer** — a set of files fixed together. Layers go in an order
-  that puts a source before what derives from it (§2.2).
+  that puts a source before what derives from it (§2.2, List the files).
 
 ## 2. The stages
 
@@ -123,7 +123,7 @@ and their rounds.
 
 ### 2.2 List the files
 
-The agent lists the living files (§1) in the file, by layer, with
+The agent lists the living files (§1, *What it reads, and its words*) in the file, by layer, with
 their counts. Every refinement starts from these six layers, in an
 order that puts a source before what derives from it:
 
@@ -234,7 +234,7 @@ DECISION-n: the options, a recommendation, and the findings that
 rest on it.
 
 A round's findings are listed by layer, in the order the work
-takes them (§2.2).
+takes them (§2.2, *List the files*).
 
 ### 2.6 Decide
 
@@ -267,7 +267,7 @@ refinement does not stop for it. It goes as soon as the reviewer
 has decided it, before the round's other decisions, since other
 findings may rest on it. The foundation check carries it to what
 derives from the convention. It never changes a rule the round
-reads against (§2.4). A change with a goal of its own, too big for
+reads against (§2.4, *Read*). A change with a goal of its own, too big for
 one commit plan, is a step of its own, in `PLAN.md`.
 
 *Found 2026-10-20: round 1's DECISION-1 asked what "manual" means
@@ -361,7 +361,7 @@ goes, and its evaluation at the close places its pieces
 
 - **Checking one change at its commit** —
   `.claude/rules/foundation-check.md`.
-- **Reading a run** — `docs/conventions/exchange/` §6, and
+- **Reading a run** — `docs/conventions/exchange/` §6, *Up*, and
   `.claude/rules/working-a-reading.md`.
 - **How text reads, and where a fact lives** —
   `.claude/rules/writing.md`, `.claude/rules/one-home.md`.

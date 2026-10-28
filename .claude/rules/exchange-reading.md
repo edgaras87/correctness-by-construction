@@ -18,7 +18,7 @@ the work then fills — is written. Its form, never its content.
 
 `temp/reading-<run>-<date>.md`, the date being the read that opened
 it. When it opens, extends and closes is the exchange's,
-`docs/conventions/exchange/` §6.3 and §6.4, not this file's.
+`docs/conventions/exchange/` §6.3, *The reading* and §6.4, *A reading closes two ways*, not this file's.
 
 ## The header comment
 

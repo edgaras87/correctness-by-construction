@@ -21,7 +21,7 @@ Each a `##` heading, except the opening statement, which is a bold
 sentence under the title. The body's sections are numbered; the
 others are not. A manual whose idea a model states opens with
 frontmatter naming it, `foundation: the agent model`
-(`docs/conventions/conventions/` §1.3).
+(`docs/conventions/conventions/` §1.3, *The `foundation` line*).
 
 1. **The opening statement.** One bold sentence: the manual's
    subject, so a reader can tell from one line whether this is the
@@ -59,17 +59,17 @@ frontmatter naming it, `foundation: the agent model`
    (`docs/conventions/facts-in-sync/` §3.2, *A section's parts are
    numbered*). Each numbered section
    holds one subject, and a subject has one section; other
-   sections point at it (`docs/conventions/conventions/` §2.5).
+   sections point at it (`docs/conventions/conventions/` §2.5, *The body*).
 6. **Lessons as dated italics**, where they happened: *what was
    measured, when, and what changed*. The italic holds the case;
    the body holds what it teaches, in general
-   (`docs/conventions/conventions/` §2.6).
+   (`docs/conventions/conventions/` §2.6, *A lesson taken*).
 7. **Why it arrives this way.** The channel — a skill, a rule, a
    stub or a file — and why that one: the moment it serves, and
    what would or would not put it in front of its reader then.
    Where the reasoning rests on the agent model, a fact reference to the part
-   it rests on, `docs/models/agent.md` §8
-   (`docs/conventions/conventions/` §2.7).
+   it rests on, `docs/models/agent.md` §8, *Choosing a channel*
+   (`docs/conventions/conventions/` §2.7, *Why it arrives this way*).
 8. **What this does not cover.** A list: each neighbouring subject
    in bold, then the path it belongs to.
 9. **Where to look**, optional: pointers only, as root paths.

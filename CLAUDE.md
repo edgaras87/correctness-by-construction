@@ -1,6 +1,6 @@
 # correctness-by-construction
 
-A concept repo (concepts tier, see `docs/models/tiers.md` §2.1, §2.2): one
+A concept repo (concepts tier, see `docs/models/tiers.md` §2.1, *The top tier is empty*, §2.2, *Concepts*): one
 concept in plain words, and what is made from it. It is the
 deliverer: each run, a separate repository that builds a real
 system by the concept, is born from what this repo ships and is
@@ -14,8 +14,8 @@ read back from here. Documents only — no code, no runs
      the moment, what it holds, the path — never the rule itself: what
      an ADR contains is inside the ADR. What it holds summarizes the
      record's item in the records map,
-     `docs/conventions/project-recording/` §1. Adding a record means
-     adding its row (`docs/conventions/project-recording/` §13). -->
+     `docs/conventions/project-recording/` §1, The records at a glance. Adding a record means
+     adding its row (`docs/conventions/project-recording/` §13, The records table…). -->
 
 | When | What's in it | Record |
 |---|---|---|
@@ -32,9 +32,9 @@ read back from here. Documents only — no code, no runs
 | Work needs more than one commit | In-flight change set | COMMIT-PLAN.md (when present) |
 
 <!-- This file is loaded in full on every task, relevant or not
-     (`docs/conventions/agent-arrangement/` §2.6), so every line
+     (`docs/conventions/agent-arrangement/` §2.6, Size), so every line
      below passes three tests or leaves
-     (`docs/conventions/agent-arrangement/` §2.4):
+     (`docs/conventions/agent-arrangement/` §2.4, How):
      1. True of this project and nowhere else — else it is a
         convention, stated once, there.
      2. No moment — else it goes where the moment is: the record's

@@ -67,7 +67,7 @@ started run 4 (`temp/RUN-4.md`). Never on our seat.
   stopping it.
 - **How a run is kept from reading what it should not.** A `Read`
   deny rule stops `cat` and `sed` on a path, but not `grep -r` or a
-  script (`docs/conventions/agent-arrangement/` §5.4); for run 5 the
+  script (`docs/conventions/agent-arrangement/` §5.4, *Permission rules*); for run 5 the
   other repositories were made unreadable on disk, and the
   deliverer's stayed readable, on trust.
 - **Whether the light read is enough,** or a run should not be born

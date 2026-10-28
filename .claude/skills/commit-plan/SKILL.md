@@ -100,7 +100,7 @@ section.>
 |---|---|---|
 | Open | `docs(agent): add commit plan for <X>` | the approved plan |
 | Work | the planned commits | as planned; stop at each boundary |
-| Small steps | tries, fixes, a way abandoned | inside a planned commit, on the reviewer's grant; folded into it at its boundary (§6) |
+| Small steps | tries, fixes, a way abandoned | inside a planned commit, on the reviewer's grant; folded into it at its boundary (§6, *Review protocol*) |
 | Diverge | `docs(agent): revise commit plan — <what changed>` | only when reality diverged; body says why |
 | Close | `docs(agent): close commit plan for <X>` | deletes the file; **body records what diverged** |
 

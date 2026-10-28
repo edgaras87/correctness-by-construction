@@ -54,17 +54,17 @@ either.
    - **dropped:** nothing in it is worth keeping.
 
    For a run's approach, each ending is also one of the exchange's
-   three verdicts (`docs/conventions/exchange/` §6.5): placed is
+   three verdicts (`docs/conventions/exchange/` §6.5, *Verdicts*): placed is
    taken, on trial is held, the project's own and dropped are
    declined.
 5. **Place what is placed,** as a commit plan. A new convention is
-   added by `docs/conventions/conventions/` §3. A section of an
+   added by `docs/conventions/conventions/` §3, *Adding a convention*. A section of an
    existing one goes into its manual first, and the foundation
    check carries it to what derives from it.
 6. **Rewrite what stays on trial, in general.** The general
    statement comes first, in its own terms. Each use stands beside
    it as a dated note, as a lesson does in a manual
-   (`docs/conventions/conventions/` §2.6). The approach names what
+   (`docs/conventions/conventions/` §2.6, *A lesson taken*). The approach names what
    would settle it. If a whole part is used by one seat alone, it
    splits (below).
 7. **Record the endings.** For our own approach, an ADR when a
@@ -85,7 +85,7 @@ either.
 - **Our part points at the shared one by its path.** The shared one
   says the deliverer holds a part that does not ship, and gives no
   path: a run cannot open it.
-- What ships to a run is `docs/conventions/exchange/` §3.2's.
+- What ships to a run is `docs/conventions/exchange/` §3.2, *What goes*'s.
 
 ## The reviewer's reading is the check
 
@@ -105,7 +105,7 @@ evaluation closes on the agent's word.
   when placed: one manual, a skill for each seat.
 - **What a run does with a piece left as the project's own:** keeps
   it as its approach on trial, or writes it as a skill or rule of
-  its own (`docs/conventions/agent-arrangement/` §3.1).
+  its own (`docs/conventions/agent-arrangement/` §3.1, *`skills/`*).
 - **Whether generalizing is work of its own.** Today it is stage 6.
   Both are the deliverer's, so no seat splits them; a first use
   that shows it big enough splits it.

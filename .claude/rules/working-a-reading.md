@@ -14,7 +14,7 @@ foundation: practice, under the exchange convention
 **Governs:** what happens between `exchange-read` and
 `exchange-deliver` — how a reading's list is worked until every
 item has ended. What each item ends as, and where, is the
-exchange's (`docs/conventions/exchange/` §6.5); this is how it gets
+exchange's (`docs/conventions/exchange/` §6.5, *Verdicts*); this is how it gets
 there.
 
 ## The steps
@@ -110,7 +110,7 @@ reading is extended, by `exchange-read` again or by
 
 - **What a reading looks like** — `.claude/rules/exchange-reading.md`.
 - **When a reading opens, extends, closes, or is overtaken** —
-  `docs/conventions/exchange/` §6.3 and §6.4.
+  `docs/conventions/exchange/` §6.3, *The reading* and §6.4, *A reading closes two ways*.
 - **The run moving before the note** — `exchange-deliver`, Stage 1,
   step 0.
 - **How a commit plan runs** — `commit-plan`.

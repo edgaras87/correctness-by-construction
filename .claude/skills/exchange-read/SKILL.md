@@ -47,7 +47,7 @@ document afterwards is work, not this skill; when the work is done,
 
    - **The run's tree.** Work staged or changed but not committed
      is named in the reading's Notes, and no verdict is written
-     against what it undoes (`docs/conventions/exchange/` §6.1):
+     against what it undoes (`docs/conventions/exchange/` §6.1, *The read*):
 
      ```sh
      git -C "$run" status --short
@@ -65,7 +65,7 @@ document afterwards is work, not this skill; when the work is done,
    to its form, `.claude/rules/exchange-reading.md`: one line per
    edit, per ask, per finding — what it is, where it is, and nothing
    decided yet. One question every reading asks: what does the run
-   teach the worked example (`docs/conventions/exchange/` §6.3)? The
+   teach the worked example (`docs/conventions/exchange/` §6.3, *The reading*)? The
    first line, written at step 2, is the read-through the next note
    will carry. One reading per run, open at a time.
 

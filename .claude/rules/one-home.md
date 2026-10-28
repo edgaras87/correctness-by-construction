@@ -17,7 +17,7 @@ rules, comments and config. Where it lives, never how it reads.
 
 1. **Give each fact one home.** The records table in `CLAUDE.md`
    says which record owns which kind of fact. A convention's subject
-   lives in its manual (`docs/conventions/facts-in-sync/` §2).
+   lives in its manual (`docs/conventions/facts-in-sync/` §2, *Point and derive*).
 2. **Elsewhere, link; retell only where the reader acts on it
    there.** A retelling carries a fact reference to its source: its
    path, section and title, in parentheses. "After birth, only the
@@ -26,15 +26,14 @@ rules, comments and config. Where it lives, never how it reads.
    Without the fact reference it is a second home
    (`docs/conventions/facts-in-sync/` §3.1, *What it is*).
 3. **Make a summary say it is one.** It names its owner, and nobody
-   reads it in the owner's place. `ARCHITECTURE.md` §1.2 does this:
+   reads it in the owner's place. `ARCHITECTURE.md` §1.2, *The conventions…* does this:
    a phrase for each convention, and the manual for the rest.
 4. **Change a fact at its home.** The links don't change, unless
    the home itself moves, or its section is renamed, renumbered or
    retitled. Then every fact reference to it is grepped and fixed in
-   the same commit (`docs/conventions/facts-in-sync/` §3.3, *A
-   rename is grepped at its commit*).
+   the same commit (`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped…*).
    Each retelling whose fact reference names it is re-read, with its
-   paragraph (`docs/conventions/facts-in-sync/` §4).
+   paragraph (`docs/conventions/facts-in-sync/` §4, *The rule for every description*).
 5. **Make every copy a follower:** one is the owner, the other
    follows it and is checked against it. A retelling with a fact reference is one;
    two copies that cannot be avoided are another: the worked example

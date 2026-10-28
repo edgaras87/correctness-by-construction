@@ -34,7 +34,7 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
    ```
 
    Those are the copies, and only they travel after birth
-   (`docs/conventions/exchange/` §3.2); the trailing `/*` is what
+   (`docs/conventions/exchange/` §3.2, *What goes*); the trailing `/*` is what
    makes git match inside them.
 
    Every path that differs, is new, is gone, or moved — deletions
@@ -114,7 +114,7 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
    birth and are the run's.
 
    `concept/` is the one path that is not a mirror
-   (`docs/conventions/exchange/` §3.3).
+   (`docs/conventions/exchange/` §3.3, *Each group is a piece…*).
 
    `mktemp -d` makes the folder owner-only, and the copy in step 3
    carries its mode: a run that takes the staging's `.` onto its

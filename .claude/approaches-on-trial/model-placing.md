@@ -40,8 +40,7 @@ points up*).
    `README.md` (ADR-0068); about how it works, to the manual.
 6. **Mark what stays as an example:** "here, for example".
 7. **Grep, then walk.** Grep every living reference to the facts' old
-   home (`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped
-   at its commit*); then walk what stands on the model and on the
+   home (`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped…*); then walk what stands on the model and on the
    lower text (`docs/conventions/facts-in-sync/` §4, *The rule for
    every description*).
 

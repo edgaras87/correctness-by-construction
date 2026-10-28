@@ -23,7 +23,7 @@ or moves a section. Which side is right, never how either reads.
      `.claude/rules/`, `.claude/` under `delivery/`, and a manual
      that names its model;
    - records whose header comment carries a `foundation:` line,
-     in either seat (`docs/conventions/conventions/` §1.3);
+     in either seat (`docs/conventions/conventions/` §1.3, *The `foundation` line*);
    - descriptions: `docs/models/`, `docs/conventions/*/README.md`,
      `concept/`.
 
@@ -34,13 +34,13 @@ or moves a section. Which side is right, never how either reads.
    `docs/models/<name>.md`. For `concept v1`, the chapters under
    `concept/`. Read the parts the change touches. A file names one
    `foundation`; a second is a fact reference to a part
-   (`docs/conventions/facts-in-sync/` §4, step 2).
+   (`docs/conventions/facts-in-sync/` §4, *The rule for every description*, step 2).
 3. **A description changed:** walk what derives from it, as
-   `docs/conventions/facts-in-sync/` §4 step 3 says.
+   `docs/conventions/facts-in-sync/` §4, *The rule for every description* step 3 says.
 4. **List every disagreement before deciding any.** For each, show
    the reviewer what the foundation says, what the change says, and
    which side the agent thinks is wrong, and why. The reviewer
-   decides each (`docs/conventions/facts-in-sync/` §5).
+   decides each (`docs/conventions/facts-in-sync/` §5, *A disagreement*).
 5. **The commit body names each ending,** one of four:
    - **the change is wrong:** it is brought back to the foundation;
    - **the foundation is wrong:** it changes;
@@ -60,13 +60,12 @@ or moves a section. Which side is right, never how either reads.
 When the commit renames a file, renumbers or retitles a section, in
 any file, or moves a fact to a new home, grep all living text for
 each old path, number and title, and fix what points at them in
-this commit (`docs/conventions/facts-in-sync/` §3.3, *A rename is
-grepped at its commit*).
+this commit (`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped…*).
 
 ## What this does not cover
 
 - **What a description and its derived things are** —
-  `docs/conventions/facts-in-sync/` §4.
+  `docs/conventions/facts-in-sync/` §4, *The rule for every description*.
 - **How a run's edit to its copy is taken** —
   `.claude/rules/working-a-reading.md`, step 4.
 - **How a run edits a copy it holds** —
