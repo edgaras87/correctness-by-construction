@@ -895,6 +895,32 @@
                against the rule.
       See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §23.
 
+- [ ] Decide how a section title is written (2026-10-28, the
+      reviewer).
+      Context: since ADR-0070 a fact reference carries its section's
+      title, so a title is read wherever a line points at it, not
+      only at its section. Nothing says how one is written. Of 253
+      numbered titles, some state a point (*A rename is grepped at
+      its commit*), some are labels (*The entry file*), some a lone
+      word (*What*, *Why*); 32 run past the 30 characters a
+      reference keeps, and are cut.
+      Ideas:
+      - its home: the writing convention, how a text reads, with
+        both `writing.md` following.
+      - a statement or a label: a statement says the point and
+        changes with it; a label is stable and says less.
+      - 30 characters at most, so no reference is cut.
+      - a title names its subject, as the rule for a word with more
+        than one meaning asks; a lone *What* tells a reference
+        nothing.
+      - the manual form's fixed headings, such as *What it is for*,
+        stay the form's.
+      - a retitle after the reference rewrite is a scripted replace:
+        facts-in-sync §3.3 greps titles.
+      Trigger: round 3's rule check, so its Writing kind reads the
+               titles against it.
+      See: devlog 2026-10-28; ADR-0070.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
