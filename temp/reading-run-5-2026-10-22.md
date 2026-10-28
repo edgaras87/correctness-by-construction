@@ -1,6 +1,7 @@
 <!-- The reading of run 5, event-tickets, opened 2026-10-22 by
-     exchange-read and worked in place by the step that takes it,
-     after the refinement. It stays here until the note that
+     exchange-read and worked in place. A step before run 6's birth
+     takes what run 6 needs, and the rest is taken after the
+     refinement. It stays here until the note that
      carries its verdicts goes (exchange-deliver); then it is
      deleted, and git keeps it. Its form is
      .claude/rules/exchange-reading.md; how it is worked,
