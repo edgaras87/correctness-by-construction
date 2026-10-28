@@ -51,9 +51,10 @@ frontmatter naming it, `foundation: the agent model`
    its section, where the reader acts on it in place
    (`docs/conventions/facts-in-sync/` §2). A section divided into
    labelled parts numbers them, `### N.M`, and so does every
-   section of the same form in the manual; emphasis in prose is
-   not a part
-   (`docs/conventions/facts-in-sync/` §3.2). Each numbered section
+   section of the same form in the manual. Emphasis in prose is
+   not a part; a bold-led bullet with a paragraph of its own is
+   (`docs/conventions/facts-in-sync/` §3.2, *A section's parts are
+   numbered*). Each numbered section
    holds one subject, and a subject has one section; other
    sections point at it (`docs/conventions/conventions/` §2.5).
 6. **Lessons as dated italics**, where they happened: *what was
