@@ -924,7 +924,7 @@
         TODO.
       Trigger: now: the hand pass, then the rule before the next
                commit plan closes.
-      See: devlog 2026-10-28.
+      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §24.
 
 ## Later / someday
 
