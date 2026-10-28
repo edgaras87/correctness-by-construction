@@ -738,7 +738,8 @@
       §19; `163767f`.
 
 - [ ] Decide whether a standing full read looks for missing fact
-      references (2026-10-27, the reviewer).
+      references, and for references pointing down (2026-10-27, the
+      reviewer).
       Context: a line that relies on a fact written elsewhere and
       carries no fact reference is found by no grep and no walk. The
       fact reference item's check asks it of each new or changed
@@ -755,8 +756,15 @@
         with its own agent.
       - it reads against facts-in-sync §3.1 once the settled form is
         written there.
+      - a second kind for the same read: direction (ADR-0071). A
+        line in a model or a manual that relies on a lower text is
+        found by no grep either: telling relying from naming takes
+        a read. Done by hand on 2026-10-28: the three models and 67
+        manual paragraphs, 6 found, 3 of them references left at a
+        fact's old home when it moved (`b7c17ae`).
       Trigger: a read finds a missing fact reference in text written
-               after the per-commit check is in force.
+               after the per-commit check is in force, or a reference
+               pointing down in text written after ADR-0071.
       See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §21.
 
 - [ ] Test fact references and foundations as a whole: name every

@@ -1289,7 +1289,7 @@ general as a rule of something?"
 ## 21. A full read for missing fact references
 
 Item: "Decide whether a standing full read looks for missing fact
-references".
+references, and for references pointing down".
 
 ### 2026-10-27
 
