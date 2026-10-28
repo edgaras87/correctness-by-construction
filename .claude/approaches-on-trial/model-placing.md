@@ -22,11 +22,15 @@ text (`docs/models/idea-to-output.md` §3.2, *Every link points up*).
 
 ## Stages
 
-1. **List the model's lines that rely on something below,** each
-   with the lower text's fact it borrows.
+1. **Read the model whole, then list its lines that rely on
+   something below,** each with the lower text's fact it borrows.
+   The model may already hold part of that fact, in other words,
+   and the lower text retell it without pointing up.
 2. **Sort each fact:** general, true for any repo of the model's
    kind; or this repo's, true only here. The question: would the
-   next concept repo, or a run, find it true?
+   next concept repo, or a run, find it true? A "today" does not
+   make a fact this repo's: it may be the model's own subject, such
+   as the workspace the model maps.
 3. **Write the general facts into the model,** in general words,
    where the model's own subject puts them, with a dated note of
    where they were learned.
