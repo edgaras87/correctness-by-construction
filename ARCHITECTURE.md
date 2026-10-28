@@ -201,7 +201,7 @@ of the tree, or a check at commit review.
 | A pin never claims more than was checked | `docs/conventions/exchange/` §6.1 and §6.6 (ADR-0023) | `exchange-read` and `exchange-deliver` |
 | A skill never spans two groups, and nothing that needs Spring, PostgreSQL, Maven or podman sits under `method/` | `docs/conventions/exchange/` §3.4 | the tree: a group is a directory, so a misfiled file shows as a path |
 | A record stub is never re-delivered to a live run | `docs/conventions/exchange/` §2.4 (ADR-0036) | the run's `delivered-copies.md`, rule 1 |
-| The exchange's five facts hold | `docs/conventions/exchange/` §1 | `exchange-read` and `exchange-deliver`; the run's `delivered-copies.md` |
+| The five facts of every flow hold between this repo and its runs | (`docs/models/tiers.md` §3.5, *What holds on every flow*); here, `docs/conventions/exchange/` §1 | `exchange-read` and `exchange-deliver`; the run's `delivered-copies.md` |
 
 ## 4. Codemap
 

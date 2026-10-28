@@ -272,10 +272,12 @@ run, a delivered copy, verbatim (the update is
 `docs/conventions/exchange/`'s); at the deliverer, its own
 derivation from the manual (ADR-0042). This convention owns the
 place. A project may add a skill of its own, for a moment-bound
-local rule the entry file must not hold (§2). How one comes to be
-is `.claude/approaches-on-trial/approach-drafting.md`'s and its
-evaluation's: work no skill covers starts from an approach on trial
-(§3.8), and a skill is written only when an evaluation places one.
+local rule the entry file must not hold (§2). Work no skill covers
+starts from an approach on trial (§3.8), and a skill is written only
+when an evaluation places one (`docs/models/idea-to-output.md` §4.2,
+*Up, work to an idea*). How that is done is
+`.claude/approaches-on-trial/approach-drafting.md`'s and its
+evaluation's.
 *Defined 2026-10-16: run 3 wrote two this way (ADR-0056). Since
 2026-10-20, through an approach on trial (ADR-0058).*
 
@@ -368,9 +370,10 @@ file, and the paragraph above came of it.*
 Where a project keeps its approaches on trial: one file per kind of
 work, not yet proven. Nothing loads the directory. A step's opening
 item sends the agent to it (`PLAN.md`'s step form). What an approach
-is, how one is drafted and how one is evaluated are
+is lives above (`docs/models/idea-to-output.md` §2, *The kinds*);
+how one is drafted and how one is evaluated are
 `.claude/approaches-on-trial/approach-drafting.md`'s and
-`.claude/approaches-on-trial/approach-evaluation.md`'s; this
+`.claude/approaches-on-trial/approach-evaluation.md`'s. This
 convention places the directory and states nothing else about it.
 In a run, an approach the deliverer ships is a pinned copy
 (`docs/conventions/exchange/` §3.2), and one the run drafts is its

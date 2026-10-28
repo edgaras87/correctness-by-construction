@@ -188,7 +188,8 @@ wrote.
 
 ### 4.1 A project fetches nothing
 
-Nothing is fetched (`docs/conventions/exchange/` §1): what arrives,
+Nothing is fetched (`docs/models/tiers.md` §3.5, *What holds on every flow*,
+fact 1): what arrives,
 arrives because it was staged with a delivery, by the reviewer or
 by the agent when told (`docs/conventions/exchange/` §3.1). Nothing is
 staged for a gate on its own. *Named in ADR-0037 as a third act of
@@ -243,8 +244,10 @@ flowchart LR
 
 **The dashed line back is a reading, and the difference in the line
 is the point.** The traffic model — nothing sent upward, nothing
-fetched, the deliverer reading a run and never the reverse — is
-`docs/conventions/exchange/` §1 and §6. What is this convention's is
+fetched, the deliverer reading a run and never the reverse — is the
+tiers model's (`docs/models/tiers.md` §3.5, *What holds on every flow*), and the reading is
+the exchange's (`docs/conventions/exchange/` §6, *Up*). What is this
+convention's is
 where the reading looks: at `.claude/shapes/`, for the delivered
 copies against their pin and for the run's own shapes, when a
 backlog line offers them.

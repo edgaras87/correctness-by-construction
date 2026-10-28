@@ -291,8 +291,9 @@ mean it is followed.
   (devlog, 2026-09-10 to 09-14).
 - **Open question it raises:** unenforced, or mis-set —
   `docs(handbook):` consumes 15 of the 50 characters before the verb,
-  and commit-plan's own revision form, `docs(agent): revise commit
-  plan — `, consumes 34 before saying what changed.
+  and here, for example, commit-plan's own revision form,
+  `docs(agent): revise commit plan — `, consumes 34 before saying
+  what changed.
 
 **A2 — Instructions have a per-rule cost.** The longer the ambient set,
 the lower compliance with any single rule in it.
