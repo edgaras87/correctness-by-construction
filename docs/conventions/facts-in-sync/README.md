@@ -180,7 +180,9 @@ A section divided into labelled parts numbers them, `### N.M`, and
 so does every section of the same form in the document, whether
 anything points there yet or not: a fact reference names the
 number, and a reader meets one structure throughout. Bold emphasis
-inside running prose is not a part.
+inside running prose is not a part. A bold-led bullet is a part when
+it holds a paragraph of its own, with its own reason or dated case.
+A short list item, a phrase and a line, is not.
 
 *Decided in the walk, 2026-09-29, when the conventions manual's §3
 held six rules as bold paragraphs and every pointer into it said
@@ -189,6 +191,11 @@ first as "a part other text points at", it would have numbered one
 section of project-recording beside seven built the same way; the
 reviewer caught it at the boundary, and it was reworded the same
 day, by form.*
+
+*Found 2026-10-27, at round 2's close read: commit-plan §2's
+bold-led bullets had been numbered in `79bc4a2`, and 16 more
+sections in 10 documents were built the same way. The rule said
+nothing of a bold-led bullet, so each could be read two ways.*
 
 ### 3.3 A rename is grepped at its commit
 
