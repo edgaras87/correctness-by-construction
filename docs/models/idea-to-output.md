@@ -44,7 +44,7 @@ would describe intent, as a template does.
 
 ## 3. The links
 
-### 3.1 The five links
+### 3.1 The four links
 
 | Link | From, the lower text | To, the upper text |
 |---|---|---|
@@ -52,10 +52,10 @@ would describe intent, as a template does.
 | points | a line | the home of a fact it relies on: the one place that fact is written |
 | governs | an output | the shape it is checked against, at the gate |
 | written from | an output or approach | the kind written from it, §4.2 |
-| requires | a skill | another convention it delegates to |
 
 A file stands on one thing; a line may point at a fact's home in
-any document.
+any document at its own level or above (§3.2, *Every link points
+up*).
 
 An approach stands on a description, never on a model directly.
 
@@ -63,6 +63,18 @@ An approach stands on a description, never on a model directly.
 
 A lower text relies on an upper one; an upper text at most lists
 what stands on it.
+
+A line that relies on a fact points at its home at its own level or
+above, never below. Sideways is a fact whose home sits beside the
+line. A line that only names or lists a text, such as the record a
+description is about or what stands on it, may name any level:
+naming is not a link.
+
+A reference down is placed upward. Where the lower text holds an
+idea general enough, the idea is written into the upper text in
+general words, and the lower text stands on it. Where it holds only
+one repo's specifics, the upper text says one general line. A marked
+example, which the claim does not rest on, may stay (ADR-0071).
 
 ### 3.3 A disagreement is settled
 
