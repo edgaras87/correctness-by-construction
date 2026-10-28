@@ -853,6 +853,34 @@
       See: devlog 2026-10-28; ADR-0070;
       `TODO-CONVERSATION-MEMORY.md` §22.
 
+- [ ] Look again at where a run learns how to treat a skill's
+      template (2026-10-28, the reviewer).
+      Context: four shipped files told the off-template rule in
+      their own words, and drifted: deviate from a skill's template,
+      derive from what it implements, log it, expect a harvest,
+      never bend a decided constraint to fit it. On 2026-10-28 it went to
+      exchange §5.8 and the run's `delivered-copies.md`, chosen on
+      one reading, with no run having lived it.
+      Ideas:
+      - (a) one skill states it; the others point.
+      - (b) delivered copies: exchange §5.8 and the run's
+        `delivered-copies.md`; today's choice.
+      - (c) each skill's template states it in its own header,
+        where a run meets the choice.
+      - (d) a shape for a skill's templates.
+      - weigh each by maintenance, readability, future-proofing and
+        complexity.
+      - check that every manual and shipped text that speaks of a
+        skill's templates agrees with §5.8 and `delivered-copies.md`,
+        and that `delivery/README.md` and ADR-0008 still match.
+      - check that each use says whose template it is: a skill's,
+        repo-hygiene's, or a record stub. Of 97 uses in living text,
+        only some say.
+      Trigger: a run reading that shows a run deviating from a
+               template, or a second stack's templates arriving,
+               whichever comes first.
+      See: devlog 2026-10-28; ADR-0070.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
