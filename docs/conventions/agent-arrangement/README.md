@@ -487,8 +487,8 @@ gets to pushed for a rule about an action; a hook closes the
 remainder.
 
 The tool ignores a frontmatter field it does not know, without an
-error, in a skill as in a rule. Our `foundation` and `requires` lines
-are for a reader of the file, never for the tool. A skill may also
+error, in a skill as in a rule. Our `foundation` lines are for a
+reader of the file, never for the tool. A skill may also
 carry a `paths:` list; what it does to a skill this repo has not
 checked.
 

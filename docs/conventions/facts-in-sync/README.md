@@ -135,6 +135,13 @@ so a fact reference has one target: the home of the fact its line
 relies on. The line above relies on a claim about agents, so it
 names the agent model, not a convention that applies the claim.
 
+That home sits at the line's own level or above: a description's
+line points at a description or a model, never at a skill or a
+record for a fact. A line that only names a text, such as the
+record a manual describes, is not a fact reference, and names any
+level (`docs/models/idea-to-output.md` §3.2, *Every link points
+up*).
+
 A fact reference is written in one form, always in parentheses:
 
 - **in the same repo:** (`<path>` §<number>, *<title>*), such as

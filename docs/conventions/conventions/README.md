@@ -84,16 +84,12 @@ loader reads:
 ---
 name: <the convention's name, or with its act: exchange-read>
 description: <when to read this file — the trigger>
-requires: <conventions this one delegates to; omit if none>
 foundation: the <name> convention
 ---
 ```
 
 - `description` says when to read the file, never what the rule is.
-- `name` equals the directory name; `requires` lines refer to a
-  skill by it.
-- `requires` names the conventions this one delegates rules to; a
-  receiver lands a convention together with what it requires.
+- `name` equals the directory name.
 - `foundation` is §1.3's.
 
 ### 1.3 The `foundation` line

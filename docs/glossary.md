@@ -108,8 +108,8 @@ manual owns the thing a word names, pointed at there.
   section and title, in parentheses
   (`docs/conventions/facts-in-sync/` §3.1, *What it is*).
 - **link** — a relation from a lower text to the upper one it
-  relies on: stands on, points, governs, written from, requires
-  (`docs/models/idea-to-output.md` §3.1). Wider than a fact
+  relies on: stands on, points, governs, written from
+  (`docs/models/idea-to-output.md` §3.1, *The four links*). Wider than a fact
   reference, which is what one kind of link, points, writes down.
 - **foundation** — the line by which a file names the one thing the
   whole of it stands on: its description, or the practice it was
