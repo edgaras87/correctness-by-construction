@@ -148,19 +148,28 @@ A fact reference is written in one form, always in parentheses:
   (`docs/conventions/conventions/` §2.4, *The seats*);
 - **in the same document:** (§<number>, *<title>*);
 - **to another repo:** that repo's tag first, such as (CBC
-  `docs/conventions/exchange/` §3.4, *Every shipped file is in
-  exactly one group*);
+  `docs/conventions/exchange/` §3.4, *Every shipped file is in…*);
 - **a section with no number:** its title alone, such as
   (`docs/conventions/exchange/`, *What it is for*);
-- **a whole document:** its path alone.
+- **a whole document:** its path alone;
+- **a numbered step inside a section:** the step after the title,
+  such as (`docs/conventions/facts-in-sync/` §4, *The rule for every
+  description*, step 3);
+- **a numbered rule in a file of rules:** the rule's number and its
+  bold lead as the title, such as
+  (`.claude/rules/delivered-copies.md`, rule 8, *A skill's template
+  is copied…*).
+
+In a comment, an HTML one or a line of YAML or SQL, the title takes
+no asterisks: there they show as written.
 
 The path runs from the repo root, so a document finds everything
 pointing at it with one grep. A skill names its own files the same
 way: two skills may hold a file of the same name. The number lands
 the reader on a paragraph rather than a wall. The title says what is
 there without opening it, and a number and title that no longer
-match show a stale reference. A long title is cut to its first
-words. The parentheses give the walk and the reader one shape to
+match show a stale reference. A title over 30 characters is cut at
+a word boundary to 30 or fewer, ending in "…". The parentheses give the walk and the reader one shape to
 find; the sentence says its point in words, and the reference gives
 only the address.
 
