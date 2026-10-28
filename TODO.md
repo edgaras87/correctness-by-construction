@@ -881,6 +881,37 @@
                whichever comes first.
       See: devlog 2026-10-28; ADR-0070.
 
+- [ ] Write a rule that a word with more than one meaning here
+      carries its subject at every use, and list those words
+      (2026-10-28, the reviewer).
+      Context: "template" names a skill's template, repo-hygiene's
+      templates, a record stub and the plain sense, in 97 uses that
+      only sometimes say whose. Verbs collide too: "fill", "take",
+      "stage". Writing rule 8 covers a word's first use; a fact
+      reference lands a reader mid-file, past it. Taken in talk: a
+      rule for every use, for the words a list names, so a grep for
+      a listed word without its subject finds the misses.
+      Ideas:
+      - how the list is built, still open:
+        - (a) one glossary entry per word, its bare sense first,
+          then a sense per subject beneath it;
+        - (b) the writing rule defines "a word with more than one
+          meaning here" and holds the list itself;
+        - (c) the rule defines the term, and a glossary group lists
+          the words, each pointing at the rule.
+      - candidates: template, stage, step, fill, master, rule, take,
+        tag, skill; measure each word's uses and senses before the
+        list is written.
+      - collisions with git and Claude Code count: stage, master,
+        tag, skill.
+      - "Decide what 'rule' names" may become one entry in the list.
+      - the run's seat: a run's own collisions, such as "fact"
+        against the `FACT-` tags, and whether the shipped
+        `writing.md` takes the rule.
+      Trigger: round 3's rule check, so its Writing kind reads
+               against the rule.
+      See: devlog 2026-10-28.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
