@@ -135,8 +135,8 @@ corner.
 Goal: Run 6 is born from this repo at one pin on main, with the
 reviewer's checkout briefing and a hand-off for full auto, ready for
 the reviewer to start.
-Now: the intent (`.claude/approaches-on-trial/auto-run.md`,
-stage 2).
+Now: the birth (`.claude/approaches-on-trial/auto-run.md`,
+stage 6).
 Gate:
 
 **At the opening.**
@@ -150,27 +150,30 @@ Gate:
 
 **The step's own items.**
 
-- [ ] The lessons run 5 left for the next run each say keep, change
+- [x] The lessons run 5 left for the next run each say keep, change
       or add for run 6, in its hand-off. Run 5 was read in full
       (`temp/reading-run-5-2026-10-22.md`), so this is stage 1's
-      light read.
-- [ ] Run 6's intent is the reviewer's: checkout, in
+      light read (2026-10-29, `657d372`).
+- [x] Run 6's intent is the reviewer's: checkout, in
       `temp/run-6-briefing.md`, its areas meeting at a
-      LAYER-5-INTERACTION question, of run 5's size.
-- [ ] The playbook has no line meant for run 5 only: run 5's
-      reading's WORK-1, taken here from the stopped step.
-- [ ] Run 6's hand-off says what full auto means for it, part by
-      part as `auto-run` stage 4 lists.
+      LAYER-5-INTERACTION question. Larger than run 5's, on the
+      reviewer's word: three areas, 6 to 12 slices (2026-10-29,
+      `aad9053`).
+- [x] The playbook has no line meant for run 5 only: run 5's
+      reading's WORK-1, taken here from the stopped step. It now
+      names no run at all (2026-10-29, `7f6e3a8`).
+- [x] Run 6's hand-off says what full auto means for it, part by
+      part as `auto-run` stage 4 lists (2026-10-29, `657d372`).
 - [x] What TODO says is due before a birth is settled:
       `exchange-birth` waits for the birth after run 6's (devlog
       2026-10-29, later; 2026-10-29).
-- [ ] Run 6 is born by `delivery/installs/pure-seed.md` at
+- [x] Run 6 is born by `delivery/installs/pure-seed.md` at
       `~/IdeaProjects/cbc-pure-run-6`, its pin a commit on main, the
-      seed's own checks all passing.
+      seed's own checks all passing (2026-10-29, at `657d372`).
 - [ ] Run 6's intent and hand-off sit in its `temp/`, and the
       reviewer starts it with the seed's prompt, its review lines
       replaced by full auto.
-- [ ] `ARCHITECTURE.md` §2.5 lists run 6.
+- [x] `ARCHITECTURE.md` §2.5 lists run 6 (2026-10-29).
 
 **At the close.**
 

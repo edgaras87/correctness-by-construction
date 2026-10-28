@@ -176,6 +176,7 @@ has only ours:
 | run 3 | `never-oversold` | `~/IdeaProjects/cbc-pure-run-3` | live |
 | run 4 | `safe-reservation-2` | `~/IdeaProjects/cbc-pure-run-4` | through Release, not yet read |
 | run 5 | `event-tickets` | `~/IdeaProjects/cbc-pure-run-5` | through Release, read, not yet answered |
+| run 6 | `checkout` | `~/IdeaProjects/cbc-pure-run-6` | born 2026-10-29 at `657d372`, on full auto |
 
 How a delivery goes down and what a run learned comes back is the
 exchange, `docs/conventions/exchange/`: a run is blind to us

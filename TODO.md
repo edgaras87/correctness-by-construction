@@ -33,6 +33,21 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Unlock the folders locked for run 6 (2026-10-29, the
+      reviewer).
+      Context: run 6 must not read another repository, and a
+      `Read` deny rule does not stop a shell. So, before its birth,
+      twelve entries in `~/IdeaProjects` were made unreadable,
+      `chmod 000`: `archive`, `cbc-pure-run`, `cbc-pure-run-2`,
+      `cbc-pure-run-3`, `cbc-pure-run-4`, `cbc-pure-run-5`,
+      `checkout-system`, `idempotent-orders`, `order-placement`,
+      `safe-reservations-v1`, each 755 before; and
+      `checkout-system-first-prompt.md`,
+      `safe-reservation-briefing.md`, each 644 before.
+      Trigger: run 6's Release, or before run 5's lessons step
+               resumes, since it reads run 5, whichever comes first.
+      See: devlog 2026-10-29, night.
+
 - [ ] Write `exchange-birth` while a birth runs (2026-09-26, the
       reviewer).
       Context: written from the exchange's manual, as `exchange-read`
