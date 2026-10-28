@@ -22,9 +22,10 @@ and the tiers model no longer leans on a manual.
   itself, copies below and masters above, a copy edited when it
   fails, nothing up as files, the pin. The exchange stands on the
   tiers model and keeps what is this repo's.
-- **This repo's place:** which tier it is and what it holds today
-  leave the tiers model for `README.md`. The agent model's `PLAN.md`
-  example is marked as one.
+- **This repo's place:** the tiers model's "today" facts stay: they
+  map the workspace, the model's own subject. The fill it names is
+  marked as this repo's example, and so is the agent model's
+  `PLAN.md` line.
 - **The placing is written down as it runs:** an approach on trial,
   `.claude/approaches-on-trial/model-placing.md`, drafted at its start,
   corrected as the work teaches, and handed to TODO's "Decide how a
@@ -62,19 +63,26 @@ container.
 as `approach-drafting.md` stage 1 asks: what it is for, its stages,
 what is not known, the ways rejected, uses empty.
 
+**6b. `chore(agent): model placing reads the model first`**
+The approach's first correction, from the sort shown before commit
+7.
+
+**6c. `docs(agent): revise plan, commit 9 dropped`**
+This revision.
+
 **7. `docs: the tiers model states the flows`**
 §3 gains the general facts, in general words, with where they were
 learned. Its four pointers down become general lines, or marked
-examples. Its "today" facts and ADRs leave.
+examples. Its "today" facts stay, and its ADRs, which only name.
 
 **8. `docs: the exchange stands on the tiers model`**
 `foundation: the tiers model`; §1 points up for the general facts
 and keeps what is this repo's. The walk reaches what stands on the
 exchange.
 
-**9. `docs: README holds this repo's place in the tiers`**
-Which tier this repo is, the top tier empty, and what it holds
-today, from the tiers model.
+**9. Dropped.** The sort before commit 7 found nothing in the tiers
+model that is this repo's alone: its "today" facts map the
+workspace, and `README.md` already says which tier this repo is.
 
 **10. `docs: the agent model marks its example`**
 "Here, for example": the `PLAN.md` line.
