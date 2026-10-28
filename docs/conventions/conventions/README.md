@@ -108,6 +108,10 @@ Which files carry it, and where:
   form or `TODO.md`'s item form, as a `foundation:` line in that
   header's comment. Both seats, the run's stubs included.
 
+An approach on trial carries none: it is first-time work, and stands
+on no description until an evaluation places it
+(`docs/models/idea-to-output.md` §4.2, *Up, work to an idea*).
+
 What it holds:
 
 - for the method, the concept and its version, `concept v1`;

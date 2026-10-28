@@ -105,9 +105,15 @@ outputs ──► shape
   projects.
 - **A model** comes from a convention whose idea is general enough
   to be used elsewhere. Here, for example, the tiers model took the
-  exchange's general facts on 2026-10-28; the models before this one
-  came from the handbook.
+  exchange's general facts on 2026-10-28, by an approach still on
+  trial, `.claude/approaches-on-trial/model-placing.md`; the models
+  before this one came from the handbook.
 - **A shape** comes from outputs that exist.
+
+So a new text finds its foundation by looking up this path for the
+description whose idea it applies. Where none states it, the text is
+first-time work, and the step up writes the description it will
+stand on.
 
 The steps between repos, a run's lesson reaching the deliverer, are
 `docs/models/tiers.md` §3.
