@@ -253,7 +253,9 @@ for all of them, and this is where it is stated:
    Which files carry it, where, and what each holds is the conventions manual's
    (`docs/conventions/conventions/` §1.3, *The `foundation` line*). Every line that uses a part of
    a document, its root included, carries a fact reference to that
-   part (§3.1, *What it is*), the root's parts as much as any other's. The root
+   part (§3.1, *What it is*), the root's parts as much as any other's.
+   Where all of a section's lines use one part of the root, the
+   section carries it once, not each line (ADR-0072). The root
    says which document to open when the file changes, and the whole
    file is re-read: that finds what no single line shows, a fact
    gone missing or a file that no longer holds together. A fact
