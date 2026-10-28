@@ -900,8 +900,13 @@
         - (c) the rule defines the term, and a glossary group lists
           the words, each pointing at the rule.
       - candidates: template, stage, step, fill, master, rule, take,
-        tag, skill; measure each word's uses and senses before the
-        list is written.
+        tag, skill, log; measure each word's uses and senses before
+        the list is written. "Log" in what ships means the decisions
+        log, git's log, "the run's log" with no record named, and a
+        verb.
+      - "a skill's template" reads as one a skill uses as much as one
+        it holds; the other name that fits all 11 is "copy-and-fill
+        template", as shipped text says "copy-and-fill master".
       - collisions with git and Claude Code count: stage, master,
         tag, skill.
       - "Decide what 'rule' names" may become one entry in the list.
