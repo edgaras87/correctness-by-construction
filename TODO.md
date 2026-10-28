@@ -651,34 +651,6 @@
                of the model behind it.
       See: ADR-0063.
 
-- [ ] Write down which way a fact reference may point, then lift
-      what the models borrow from below (2026-10-23, the reviewer).
-      Context: three decisions of 2026-10-28, in Ideas; no manual
-      holds them yet. Their homes: idea-to-output §3, facts-in-sync
-      §3.1, conventions §1.2, our `convention-manual.md`. Then the
-      lift: the tiers model takes the general flows from exchange §1,
-      the exchange stands on it, and this repo's instance goes to
-      `README.md`. Four skills lose `requires`. Before the reference
-      rewrite, which would otherwise rewrite these lines twice.
-      Ideas, taken 2026-10-28:
-      - a line that relies on a fact points at its home at its own
-        level or above, never below; a line that only names or lists
-        a text may name any level.
-      - a reference down becomes a lift: the general idea moves into
-        the model and the lower text stands on it, or the model says
-        one general line. Facts about this repo go to `README.md`; a
-        marked example may stay.
-      - `requires` goes: groups ship whole, the tool ignores it, and
-        the lines inside a skill say it with fact references.
-        ADR-0063's "kept" is reversed, and five links become four.
-      - the lift is drafted as an approach on trial while it runs
-        ("Decide how a text finds its foundation").
-      - `docs/conventions/shapes/` §5.2's four endings are a case of
-        `docs/models/idea-to-output.md` §3.3 and do not point at it.
-      Trigger: now, before the reference rewrite.
-      See: ADR-0063; devlog 2026-10-25, later;
-      `TODO-CONVERSATION-MEMORY.md` §16.
-
 - [ ] Decide whether a model may be written for one convention
       (2026-10-23, the reviewer).
       Context: the text-division item had a model only where several
@@ -696,20 +668,20 @@
       up: work, an approach on trial, a convention, a model. The
       first step is `approach-drafting.md`, the second
       `approach-evaluation.md` and conventions §3; the third, a
-      convention's idea lifted into a model, is "not yet lived here"
-      and nothing says how. The evaluation's stage 3 looks for a
+      convention's idea placed into a model, was lived once, on
+      2026-10-28, and only an approach on trial says how. The evaluation's stage 3 looks for a
       piece's home in a convention or a record, never a model.
       Ideas:
-      - the tiers model's lift from the exchange, decided 2026-10-28
-        with "Write down which way a fact reference may point", is the
-        first lived case: drafted as an approach on trial while it
-        runs.
+      - the tiers model's placing from the exchange, 2026-10-28, is
+        the first lived case: `.claude/approaches-on-trial/model-placing.md`,
+        its use noted.
+      - the step's writing half, an "Adding a model" as conventions §3
+        is for a convention, from what that use taught.
       - stage 3 asks whether a piece is general enough for a model.
       - an approach on trial has no `foundation` line until placed.
       - its neighbours: "Decide which ideas here are models" and
         "Decide whether a model may be written for one convention".
-      Trigger: the tiers lift closes, its drafted approach the
-               evidence.
+      Trigger: now: model placing's first use has closed.
       See: devlog 2026-10-28.
 
 - [ ] Decide whether a manual keeps the story behind a lesson

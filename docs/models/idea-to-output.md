@@ -104,8 +104,9 @@ outputs ──► shape
 - **A convention** comes from approaches whose rules hold across
   projects.
 - **A model** comes from a convention whose idea is general enough
-  to be used elsewhere. Not yet lived here: both models before this
-  one came from the handbook.
+  to be used elsewhere. Here, for example, the tiers model took the
+  exchange's general facts on 2026-10-28; the models before this one
+  came from the handbook.
 - **A shape** comes from outputs that exist.
 
 The steps between repos, a run's lesson reaching the deliverer, are

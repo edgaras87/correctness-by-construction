@@ -1,8 +1,10 @@
 # 0071. Which way a fact reference points
 
 Date: 2026-10-28
-Status: Proposed, opened under the commit plan for direction and
-placing.
+Status: Accepted (2026-10-28, at the set's records commit; opened
+Proposed under the commit plan for direction and placing. Since
+then, the placing found nothing in the tiers model that is this
+repo's alone, and its "today" facts stayed).
 
 ## Context
 
@@ -78,9 +80,9 @@ Measured on 2026-10-28, in living text:
   our `convention-manual.md` follow.
 - Four skills lose `requires`, one ours and three shipped.
 - The tiers model's §3 states the general flows learned from the
-  exchange, and the exchange stands on it. This repo's place in the
-  tiers goes to `README.md`. The agent model's `PLAN.md` example is
-  marked.
+  exchange, and the exchange stands on it. Its "today" facts stay:
+  they map the workspace, the model's own subject. Its fill and the
+  agent model's `PLAN.md` line are marked as examples.
 - Idea-to-output §2's "Here" column stays: it names, under a heading
   that marks it as this repo's.
 - How a missing foundation is written, the step to a model above
