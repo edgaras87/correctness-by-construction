@@ -66,3 +66,25 @@ text (`docs/models/idea-to-output.md` §3.2, *Every link points up*).
   is placed that the model does not need.
 
 ## Uses
+
+*The deliverer, the tiers model and the exchange, 2026-10-28,
+`c94438e`..`a22529d`.* The tiers model sent its reader down four
+times: three to the exchange, one to `delivery/README.md`. Sorted,
+three of the exchange's five facts and its pin were general, and
+went into a new tiers §3.5; the other two the model already held,
+and the exchange had retold them without pointing up. The fill was
+this repo's, and became a marked example. The exchange came to
+stand on the model, its §1 pointing up and keeping what each fact
+means here. The README step planned at the start was dropped: the
+model's "today" facts map the workspace, its own subject.
+
+Taught: read the model whole before sorting (`4fedbb3`); a "today"
+alone does not make a fact this repo's (`4fedbb3`); keeping the
+lower text's numbering keeps every reference to it landing.
+
+Still not known: whether stage 2's question holds for a second
+model; whether a dated note fits a model, with no form saying what
+a model holds; whether a model may list its own facts again, as
+§3.5 does facts 1 and 5, each with its reference. Handed over
+through TODO's "Decide how a text finds its foundation", which this
+use makes due.
