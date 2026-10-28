@@ -43,8 +43,8 @@ Status values: `open` · `chosen-next` · `in-progress` ·
 - **Judgment logged:** <why the slice is cut this way, when the cut
   could be questioned — e.g. why this and SLICE-n are two slices
   sharing one adversity class; or "none">
-- **Record:** <a link to the slice's record, once it has one>
-- **Answered at close:** <added by the slice's close: one line per
+- **Record:** <a link to the slice's record; "none" until it has one>
+- **Answered at close:** <"none" until the close; then one line per
   flag or judgment it settled — the answer in a sentence, and where
   in the record. How the slice got there is the record's, never
   told here. Framing's words above stay as written.>
