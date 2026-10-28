@@ -1122,6 +1122,73 @@ for fix our tier model, doesnt it?"
   general, and this repo's instance, which tier it is and what it
   holds, moves to the README, home of what this repo is.
 
+### 2026-10-28
+
+Worked in three decisions, one at a time.
+
+#### What exists today
+
+- **Downward mentions, counted:** a model names a manual or the
+  concept 4 times, a skill or shape 3, a record 2; a manual names a
+  skill, rule or approach 120 times, a record 89. Most name what a
+  manual describes or list what stands on it, and rely on nothing
+  below.
+- **The lines that rely downward:** the tiers model's four pointers,
+  three at the exchange and one at `delivery/README.md` §2, and its
+  "today" facts and ADRs. The agent model's `PLAN.md` example and
+  idea-to-output §2's "Here" column only name.
+- **`requires`:** 4 skills, 7 names. Conventions §1.2 says it names
+  conventions and also refers to a skill by name; `commit-plan`
+  names project-recording, which has no skill. Every name sits in
+  the skill's own group, and the tool ignores the field. ADR-0063
+  kept it and owed a grep in the walk that was never added.
+
+#### What the reviewer asked, and what turned a decision
+
+- **Decision 2, the model's references down:** the agent proposed a
+  general line in their place. The reviewer: "we will write in
+  general just as one line like "how it moves is each repo's own
+  convention", or we look what we reference, take that and write
+  that part as model from which same thing could be writen, and
+  that that part which we now referecing we reverse and that part
+  will reference us as something from which it is derived. u see
+  what i mean? i want to reverse referencing from model to manual
+  into manual to model, as if current manual was derived from what
+  is writen in model. so it may be that manual is too specific for
+  this repo idea and we just have to have one like as in example
+  "how it moves is each repo's own convention", but it maybe also
+  that there could be model part rewriten so that next project
+  could use it to derive similar manual with his specific but also
+  we experience from this project which we now generelize into
+  model."
+- **Then, on writing the lift down:** "what we will be doing is what
+  we need when we will need when we have to write new model or parts
+  of current after approach-on-trail goes to approach. so i think we
+  should use and write down experience of these changes we will do
+  here for later … or maybe its more upper level, after we have
+  approach which has no foundation, how we decide which foundation
+  this should be and if there is no such, how we write one?"
+
+#### What the reviewer took
+
+| # | Question | Taken |
+|---|---|---|
+| 1 | Which way may a reference point? | a line that relies on a fact points at its own level or above; a line that only names or lists may name any level |
+| 2 | What may a model say about this repo? | a reference down becomes a lift: the general idea into the model, the lower text standing on it; or one general line. Facts about this repo go to the README; a marked example may stay |
+| 3 | `requires`? | it goes; ADR-0063's "kept" reversed |
+
+- **Rejected:** every mention held to direction, which forbids a
+  manual naming its records; no direction at all, which lets a model
+  lean on one repo; a "This repo" section closing each model; a
+  model with no example at all; `requires` written as a fact
+  reference.
+- **Said along the way:** the exchange's five facts in §1 hold for
+  any tier that delivers to the one below, so they are the tiers
+  model's own subject. The lift is the path idea-to-output §4.2
+  calls "not yet lived here", and is drafted as an approach on
+  trial while it runs; TODO's "Decide how a text finds its
+  foundation" waits on it.
+
 ## 18. The story behind a lesson
 
 Item: "Decide whether a manual keeps the story behind a lesson".
