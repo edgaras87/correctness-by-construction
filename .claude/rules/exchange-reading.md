@@ -17,8 +17,8 @@ the work then fills — is written. Its form, never its content.
 ## Where it sits
 
 `temp/reading-<run>-<date>.md`, the date being the read that opened
-it. When it opens, extends and closes is the exchange's,
-`docs/conventions/exchange/` §6.3, *The reading* and §6.4, *A reading closes two ways*, not this file's.
+it. When it opens, extends and closes is the exchange's (`docs/conventions/exchange/` §6.3, *The reading*,
+and §6.4, *A reading closes two ways*), not this file's.
 
 ## The header comment
 
@@ -33,6 +33,8 @@ read-through the next note carries, and the point the next reading
 starts from. Written first, before anything is read.
 
 ## The sections, in this order
+
+What a reading holds, and why: (`docs/conventions/exchange/` §6.3, *The reading*).
 
 1. **Where we read to.** The commit read through, the previous
    read-through, and the span between.

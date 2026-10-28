@@ -107,8 +107,7 @@ does to the text:
 
 1. **Makes a line true.** A wrong line is not worth moving or
    rewording.
-2. **Moves or removes text.** A retelling that becomes a pointer
-   goes, so it is not reworded first.
+2. **Moves or removes text.** A retelling that becomes a fact reference goes, so it is not reworded first.
 3. **Rewords what stays.**
 
 A round with no kind in it is left out. A kind that fits none of
@@ -158,7 +157,7 @@ A gap, or a line nobody means any more, is fixed in the manual,
 and the foundation check carries the fix to the rules and skills
 that derive from it. Where the doubt is about what a rule does to
 text, the rule is also tried on a sample of the text it governs,
-taken from §2.2's list, and the reviewer judges the result.
+taken from the files' list (§2.2, *List the files*), and the reviewer judges the result.
 
 A manual in doubt may be gone through section by section, top to
 bottom. Before a fix adds anything, it looks for the place that
@@ -227,7 +226,7 @@ finding is FINDING-n, numbered on across the rounds, and says:
 
 - where: the path, and lines;
 - what the rule says, and what the text says;
-- how it stands, as in §2.4.
+- how it stands (§2.4, *Read*).
 
 A finding that needs the reviewer's choice beyond "fix it" gets a
 DECISION-n: the options, a recommendation, and the findings that
@@ -250,14 +249,15 @@ A finding is never deleted or renumbered while the file lives.
 
 ### 2.7 Work
 
-One layer's findings at a time, in §2.2's order, each a commit plan
+One layer's findings at a time, in the files' order
+(§2.2, *List the files*), each a commit plan
 (`docs/conventions/commit-plan/`). A source comes before what
 derives from it, so a fix is carried down once and never redone.
 A commit that touches a description goes through the foundation
 check.
 
 A fact told in several layers is fixed with its home's layer.
-Its other copies become pointers in the same commit plan: a
+Its other copies become fact references in the same commit plan: a
 deletion, not a rewrite, so the order holds.
 
 A finding whose fix changes how a convention works, not only what
@@ -280,8 +280,7 @@ refinement.*
 ### 2.8 A round's close
 
 Every finding of the round has its ending. Then all the text the
-round covers is read again against the round's kinds, held to
-§2.4's rule for a finding. Reading only the changed text is not
+round covers is read again against the round's kinds, held to the rule for a finding (§2.4, *Read*). Reading only the changed text is not
 enough: a fix in one file can make an unchanged line in another
 wrong. What the read finds is listed and decided like any finding,
 and the round's section counts:
@@ -305,17 +304,17 @@ Then the next round reads.
 
 After the last round, everything is read against every kind of
 the refinement. It catches a later round breaking an earlier one's
-work: a reworded line no longer true, a pointer reworded wrong.
+work: a reworded line no longer true, a fact reference reworded wrong.
 
-The kinds are read on their own, as in §2.4, but in one read, with
+The kinds are read on their own (§2.4, *Read*), but in one read, with
 no fixes between them. The order of the rounds is for fixes, not
 for reads: with nothing changing, a read gives the same result in
 any order.
 
-What it finds is put in rounds by §2.1's rule and fixed in that
+What it finds is put in rounds by the kinds' rule
+(§2.1, *Group the kinds*) and fixed in that
 order, a round only where a finding needs one. Then everything is read
-again, until a read finds nothing that breaks a rule. §2.4's rule
-for a finding is what makes this end.
+again, until a read finds nothing that breaks a rule. The rule for a finding (§2.4, *Read*) is what makes this end.
 
 ### 2.10 The close
 
@@ -324,8 +323,7 @@ commit, so the file can be read from git.
 
 ## 3. Not known yet
 
-- **Whether the order holds:** the first round tests §2.2's
-  layers; the last, whether the rounds were worth their reads.
+- **Whether the order holds:** the first round tests the layers (§2.2, *List the files*); the last, whether the rounds were worth their reads.
 - **Text another TODO item already plans to rewrite:** read here,
   or left to that item. On 2026-10-19 the reviewer had the writing
   kind read the method's texts, which TODO's plain-rewrite item
@@ -345,7 +343,7 @@ commit, so the file can be read from git.
 - **Whether the full reads again paid.** The counts of findings in
   unchanged text decide whether a narrower read would have done.
 - **Whether the design change in place belongs to every step.**
-  §2.7 holds it for a refinement alone (`8c9aadf`), the only work
+  The work holds it for a refinement alone (§2.7, *Work*) (`8c9aadf`), the only work
   that has lived it; a draft into both step forms was undone before
   its commit.
 

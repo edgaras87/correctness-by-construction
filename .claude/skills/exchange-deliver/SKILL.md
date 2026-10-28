@@ -12,6 +12,8 @@ verdicts and the read-through ride only when one did.
 
 ## Stage 1 — write the note
 
+What a note holds, and why: (`docs/conventions/exchange/` §3.7, *The note*).
+
 In `temp/note-to-<run>-<date>.md`, told not delivered.
 
 0. **If the run moved since the reading, run `exchange-read` on the new
@@ -75,6 +77,8 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
 
 ## Stage 2 — stage and copy across
 
+Why it is staged so: (`docs/conventions/exchange/` §3.1, *Staging*).
+
 On the reviewer's word. If the agent stages, it runs steps 1 and
 2, reports, and waits for the word before step 3.
 
@@ -131,6 +135,8 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
    leave `temp/` when it has; whatever else is there is the run's.
 
 ## A note without files
+
+Why every read ends with one: (`docs/conventions/exchange/` §6.6, *Every read ends with a note*).
 
 A reading that found nothing addressed to us: the note is one line —
 `read through <run HEAD>, nothing to answer, no files` — and

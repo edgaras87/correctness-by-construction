@@ -13,8 +13,8 @@ read back from here. Documents only — no code, no runs
      once opened, and nothing else says when. Three things per row —
      the moment, what it holds, the path — never the rule itself: what
      an ADR contains is inside the ADR. What it holds summarizes the
-     record's item in the records map,
-     `docs/conventions/project-recording/` §1, The records at a glance. Adding a record means
+     record's item in the records map
+     (docs/conventions/project-recording/ §1, The records at a glance). Adding a record means
      adding its row (`docs/conventions/project-recording/` §13, The records table…). -->
 
 | When | What's in it | Record |

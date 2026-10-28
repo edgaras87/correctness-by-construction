@@ -8,9 +8,10 @@ foundation: the facts-in-sync convention
 rules, comments and config. Where it lives, never how it reads.
 
 <!-- No paths: line, so this loads at the start of every session.
-     Ours, derived from docs/conventions/facts-in-sync/ §1, §2, §3.1
-     and its deliverer's seat, like the container's from §1 and its
-     run's seat; how the two seats differ, that
+     Ours, derived from docs/conventions/facts-in-sync/ (§1, One home;
+     §2, Point and derive; §3.1, What it is; The deliverer's seat),
+     like the container's from §1 and its run's seat (§1, One home;
+     The run's seat); how the two seats differ, that
      manual's *The seats* says. -->
 
 ## The rules
@@ -26,7 +27,7 @@ rules, comments and config. Where it lives, never how it reads.
    Without the fact reference it is a second home
    (`docs/conventions/facts-in-sync/` §3.1, *What it is*).
 3. **Make a summary say it is one.** It names its owner, and nobody
-   reads it in the owner's place. `ARCHITECTURE.md` §1.2, *The conventions…* does this:
+   reads it in the owner's place. The map does this (`ARCHITECTURE.md` §1.2, *The conventions…*):
    a phrase for each convention, and the manual for the rest.
 4. **Change a fact at its home.** The links don't change, unless
    the home itself moves, or its section is renamed, renumbered or

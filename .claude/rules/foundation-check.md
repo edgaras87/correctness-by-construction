@@ -2,8 +2,9 @@
 foundation: the facts-in-sync convention
 ---
 
-<!-- Makes docs/conventions/facts-in-sync/ §4 and §5, and §3.3's
-     grep for a moved section, fire at the commit, where they waited
+<!-- Makes the walk, the disagreement and the grep for a moved name
+     (docs/conventions/facts-in-sync/ §4, The rule for every description;
+     §5, A disagreement; §3.3, A rename is grepped…) fire at the commit, where they waited
      to be remembered. Loaded in every session, with no paths: a
      paths rule loads only when a file is touched with the agent's
      tools, and an edit made by script never loads it
@@ -35,8 +36,8 @@ or moves a section. Which side is right, never how either reads.
    `concept/`. Read the parts the change touches. A file names one
    `foundation`; a second is a fact reference to a part
    (`docs/conventions/facts-in-sync/` §4, *The rule for every description*, step 2).
-3. **A description changed:** walk what derives from it, as
-   `docs/conventions/facts-in-sync/` §4, *The rule for every description* step 3 says.
+3. **A description changed:** walk what derives from it, as the walk's step 3
+   says (`docs/conventions/facts-in-sync/` §4, *The rule for every description*, step 3).
 4. **List every disagreement before deciding any.** For each, show
    the reviewer what the foundation says, what the change says, and
    which side the agent thinks is wrong, and why. The reviewer

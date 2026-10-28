@@ -15,6 +15,8 @@ what it says.
 
 ## The rules
 
+Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
+
 1. **Lead with the answer.** The first line says the point. The
    reasons follow.
 2. **Write short sentences, one idea each.**
@@ -56,6 +58,8 @@ Same meaning. It can be read once.
 
 ## Where it applies
 
+What the rules govern: (`docs/conventions/writing/` §1, *What it governs*).
+
 - **Chat:** every answer.
 - **Records:** every new or changed line. History keeps its words.
 - **What runs read:** the skills, rules, shapes, approaches,
@@ -69,7 +73,8 @@ Same meaning. It can be read once.
 
 Plain is the default for every kind of text. A kind of text gets
 another style only when plain has shown it falls short there, and
-this rule then names that kind and its style.
+this rule then names that kind and its style
+(`docs/conventions/writing/` §1, *What it governs*).
 
 ---
 

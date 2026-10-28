@@ -12,7 +12,8 @@ and the plan is closed.
 
 **It plans the commits, not the change.** What is being changed is
 settled before the plan is opened — in discussion, or in a record.
-When it turns out not to have been, §5 revises the plan and the
+When it turns out not to have been, the plan is revised
+(§5, *Divergence*) and the
 set's ADR is still Proposed.
 
 ## 1. When a commit plan is needed

@@ -8,7 +8,7 @@ foundation: the conventions convention
      while a new one is written (docs/conventions/agent-arrangement/
      §5.6); says its form, never its content.
      Ours, shipped nowhere: a run writes no manuals. The why is
-     docs/conventions/conventions/ §2. -->
+     (docs/conventions/conventions/ §2, The manual). -->
 
 # A manual
 
@@ -67,12 +67,12 @@ frontmatter naming it, `foundation: the agent model`
 7. **Why it arrives this way.** The channel — a skill, a rule, a
    stub or a file — and why that one: the moment it serves, and
    what would or would not put it in front of its reader then.
-   Where the reasoning rests on the agent model, a fact reference to the part
-   it rests on, `docs/models/agent.md` §8, *Choosing a channel*
+   Where the reasoning rests on the agent model, a fact reference to the part it rests on, such as
+   (`docs/models/agent.md` §8, *Choosing a channel*)
    (`docs/conventions/conventions/` §2.7, *Why it arrives this way*).
 8. **What this does not cover.** A list: each neighbouring subject
    in bold, then the path it belongs to.
-9. **Where to look**, optional: pointers only, as root paths.
+9. **Where to look**, optional: fact references only, as root paths.
 
 ## What this does not fix
 

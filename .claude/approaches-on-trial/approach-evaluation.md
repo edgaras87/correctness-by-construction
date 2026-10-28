@@ -57,8 +57,8 @@ either.
    three verdicts (`docs/conventions/exchange/` §6.5, *Verdicts*): placed is
    taken, on trial is held, the project's own and dropped are
    declined.
-5. **Place what is placed,** as a commit plan. A new convention is
-   added by `docs/conventions/conventions/` §3, *Adding a convention*. A section of an
+5. **Place what is placed,** as a commit plan. A new convention is added as the conventions manual says
+   (`docs/conventions/conventions/` §3, *Adding a convention*). A section of an
    existing one goes into its manual first, and the foundation
    check carries it to what derives from it.
 6. **Rewrite what stays on trial, in general.** The general
@@ -85,7 +85,8 @@ either.
 - **Our part points at the shared one by its path.** The shared one
   says the deliverer holds a part that does not ship, and gives no
   path: a run cannot open it.
-- What ships to a run is `docs/conventions/exchange/` §3.2, *What goes*'s.
+- What ships to a run is the exchange's
+  (`docs/conventions/exchange/` §3.2, *What goes*).
 
 ## The reviewer's reading is the check
 

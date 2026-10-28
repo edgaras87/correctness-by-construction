@@ -12,6 +12,8 @@ document afterwards is work, not this skill; when the work is done,
 
 ## 1. The method
 
+Why the read is done so: (`docs/conventions/exchange/` §6.1, *The read*).
+
 1. **Find where to start.** Open the run's `.claude/decisions.md`.
    Its last delivery entry carries the **pin** `P` — our commit its
    copies equal — and the **read-through** `R` — its commit we last

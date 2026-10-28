@@ -55,8 +55,8 @@ points up*).
   reference, so a reader sees them together.
 - Where it is placed when settled. An approach never stands on a
   model (`docs/models/idea-to-output.md` §3.1, *The four links*), so
-  a manual: likely the conventions manual, beside its §3, *Adding a
-  convention*.
+  a manual: likely the conventions manual, beside its part on adding one
+  (`docs/conventions/conventions/` §3, *Adding a convention*).
 
 ## Ways rejected
 
