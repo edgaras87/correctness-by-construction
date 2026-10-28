@@ -91,8 +91,8 @@ section.>
   a `PLAN.md` gate item names the commit that closes it. A change to
   the agent's own files — a skill or rule corrected or added, its
   decisions entry — is a commit of its own, never
-  folded into a records commit: commit-messages keeps the two
-  apart, and a records commit planned to carry one has to be split
+  folded into a records commit, since the two are kept apart
+  (`.claude/skills/commit-messages/SKILL.md`, *The agent's own files*): and a records commit planned to carry one has to be split
   when it opens.
 
 ## 4. Lifecycle

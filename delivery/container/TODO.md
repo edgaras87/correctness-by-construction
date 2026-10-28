@@ -22,6 +22,8 @@
      an item changes, rewrite it true for
      today — never stack a dated update on it; the change's story is
      the devlog's.
+     Why the form is as it is: (CBC docs/conventions/project-recording/
+     §5.4, How).
      foundation: the project-recording convention -->
 
 ## Now (current plan step)

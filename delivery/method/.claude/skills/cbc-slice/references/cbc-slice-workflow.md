@@ -193,7 +193,8 @@ row holds is the Invariants section's own comment, in
 **Why the shapes are not in this skill.** They arrive with the
 method as copies in `.claude/shapes/`: the slice record, the evidence
 test, the kill and the registry entry. The project changes them, or
-writes its own, as the shapes rule says. A shape inside this skill
+writes its own, as the shapes rule says
+(`.claude/rules/shapes-lifecycle.md` §1, *Written from work that exists*). A shape inside this skill
 would be read while the record is written, and the record would
 follow it instead of showing where it is wrong. Whether an output is
 worth a new shape is a judgement the project makes when it makes it,

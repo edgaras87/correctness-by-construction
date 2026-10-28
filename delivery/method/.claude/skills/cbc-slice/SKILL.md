@@ -202,14 +202,16 @@ never seen red is not known to be watching.
    wrote; this skill carries none. Where no shape governs what the
    slice made, nothing is checked. Where one does, each difference
    is **proposed as a diff, never corrected**. How each ends is the
-   shapes rule's (`.claude/rules/shapes-lifecycle.md`), and the human
+   shapes rule's
+   (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*), and the human
    says which.
 
 **Gate:** the slice is closed in the registry with its answers,
 provisionals and hand-ons one line each and the ordering re-decided in
 writing; ARCHITECTURE's rows match what the slice built; and the
 record has been read against the project's shapes, each difference
-ended as the shapes rule says.
+ended as the shapes rule says
+(`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).
 
 ## Deviations — legal, never silent
 

@@ -60,7 +60,7 @@ stands and the request is refused with that reasoning.
    public setup guide, re-derive it from the operator manual — the
    manual stays the sole master.
 
-## Hard lines (same as establishment)
+## Hard lines
 
 Never re-frame the problem; never build the system (the ground ends
 where application code and schema content begin); destructive acts

@@ -55,7 +55,8 @@ and checks.
   text is.
 - **New proof is not this step's.** A gap found here is listed, and
   the reviewer decides whether it earns a step of its own.
-- **Delivered copies** may be edited under the delivered-copies rule;
+- **Delivered copies** may be edited under the delivered-copies rule
+  (`.claude/rules/delivered-copies.md`, rule 2, *A copy may be edited in place…*);
   a copy this run has finished with is marked untried.
 
 ## Stage 2 — commit plan
@@ -115,7 +116,8 @@ history lines.
    run's reports only.
 2. **The shape reading.** What the step produced is read against
    every shape that governs it. Each difference is shown with its
-   two lines and a recommended ending from the shapes rule, grouped
+   two lines and a recommended ending from the shapes rule
+   (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*), grouped
    into a few decisions for the reviewer. Records closed before a
    shape changed are named, not reopened.
 3. **The skills this step taught,** each edited under the

@@ -7,6 +7,8 @@
      stays where it came from. Born without one, fill the
      placeholders in place. Either way the two STEPS markers stay:
      they are what makes the swap re-runnable.
+     Why the form is as it is: (CBC docs/conventions/project-recording/
+     §2.4, How).
      foundation: the project-recording convention -->
 
 <!-- Steps from: <playbook> v<N> at <concept commit>,

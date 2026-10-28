@@ -53,7 +53,8 @@ this project writes is its own.
 | Work needs more than one commit | In-flight change set | COMMIT-PLAN.md (when present) |
 
 <!-- This file is loaded in full on every task, relevant or not, so
-     every line below passes three tests or leaves:
+     every line below passes three tests or leaves
+     (CBC docs/conventions/agent-arrangement/ §2.4, How):
      1. True of this project and nowhere else — else it is a
         convention, stated once, there.
      2. No moment — else it goes where the moment is: the record's

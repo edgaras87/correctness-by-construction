@@ -5,6 +5,8 @@
      reality. For the WHY behind any shape, link the ADR. By rule, not
      by slice: a slice's close adds or changes rows in Invariants, never
      a paragraph; how the slice got there is its record's.
+     Why the form is as it is: (CBC docs/conventions/project-recording/
+     §8.4, How).
      foundation: the project-recording convention -->
 
 ## Overview

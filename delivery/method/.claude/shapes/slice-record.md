@@ -216,4 +216,5 @@ Read the record and ask:
 5. Does every backstop say whether it was seen at the red run?
 6. Where the record differs from this shape: did it drift, was the
    shape wrong, did each have something, or is it a different kind?
-   The shapes rule says how each ends.
+   How each ends is the shapes rule's
+   (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).

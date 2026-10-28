@@ -181,4 +181,5 @@ Read the slice's tests and ask:
 3. Does every label print the reading?
 4. Where a test differs from this shape: did it drift, was the shape
    wrong, did each have something, or is it a different kind of
-   test? The shapes rule says how each ends.
+   test? How each ends is the shapes rule's
+   (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).

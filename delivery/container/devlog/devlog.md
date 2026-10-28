@@ -9,6 +9,8 @@
      Mark dead ends loudly with "DEAD END:" so they're greppable.
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month.
+     Why the form is as it is: (CBC docs/conventions/project-recording/
+     §4.4, How).
      foundation: the project-recording convention -->
 
 ## <YYYY-MM-DD>  (Step 0: bootstrap)

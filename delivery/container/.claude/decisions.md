@@ -25,6 +25,8 @@
      delivery entry carries both (.claude/rules/delivered-copies.md,
      rule 1). If a placeholder still shows, the seed was not run;
      fix it before the bootstrap commit.
+     Why the log is as it is: (CBC docs/conventions/agent-arrangement/
+     §3.4, `decisions.md`).
      foundation: the agent-arrangement convention -->
 
 - <YYYY-MM-DD> Born from the correctness-by-construction delivery,

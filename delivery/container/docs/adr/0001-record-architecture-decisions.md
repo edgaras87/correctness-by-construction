@@ -38,4 +38,6 @@ decision time.
 
 <!-- Template for the next ADR: copy this file, bump the number,
      replace every section. Keep it under one page.
+     Why the form is as it is: (CBC docs/conventions/project-recording/
+     §3.4, How).
      foundation: the project-recording convention -->

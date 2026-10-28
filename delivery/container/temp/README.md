@@ -9,6 +9,6 @@ history; a file is deleted once it has served, and git keeps it.
   must last moves out: a decision to its record, a tool the project
   keeps to `.claude/`, a fact to where its kind lives.
 - **Deliveries arrive here:** a directory named for the
-  deliverer's commit, its note beside it. They are taken as
-  `.claude/rules/delivered-copies.md` says, and a staging is never
+  deliverer's commit, its note beside it. They are taken as the delivered-copies rule says
+  (`.claude/rules/delivered-copies.md`, rule 5, *After the reply, the…*), and a staging is never
   committed: the take removes it, and only it.

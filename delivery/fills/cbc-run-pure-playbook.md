@@ -111,8 +111,8 @@ run 3's `RETRO.md`, D22.
       (`.claude/approaches-on-trial/approach-drafting.md`, its close).
 
 The records item asks for an outcome. A run may write a script
-that checks it and run it at every close. How a difference with a
-shape is settled is `.claude/rules/shapes-lifecycle.md`'s.
+that checks it and run it at every close. How a difference with a shape is settled is the shapes rule's
+(`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).
 
 **When every item is ticked and committed,** the next commit
 replaces the gate with one line: the date, what the step
