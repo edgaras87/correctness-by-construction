@@ -1,7 +1,6 @@
 ---
 name: apply-retrospective
 description: Apply a finished retrospective to the run it looked back on, before Release. Use when RETRO.md is closed and the reviewer asks to apply it to this run, or to "fix the records before Release". Do NOT use to decide what the next run does differently (that is retrospective), or to add new proof.
-requires: commit-messages, commit-plan
 foundation: the retrospective convention
 ---
 
