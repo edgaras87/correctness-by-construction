@@ -850,7 +850,8 @@
       - what a scenario finds missing becomes a finding or a TODO
         item; the test changes no rule itself.
       Trigger: the refinement closes.
-      See: devlog 2026-10-28; ADR-0070.
+      See: devlog 2026-10-28; ADR-0070;
+      `TODO-CONVERSATION-MEMORY.md` §22.
 
 ## Later / someday
 

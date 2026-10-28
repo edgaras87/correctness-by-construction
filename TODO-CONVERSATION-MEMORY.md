@@ -18,7 +18,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-10-27.
+     Last touched: 2026-10-28.
      foundation: the project-recording convention -->
 
 # TODO's conversation-memory
@@ -1274,3 +1274,45 @@ A separate read, by agents and by foundation, with no machinery
 built now. It waits on its trigger: a read that finds a missing
 fact reference in text written after the per-commit check is in
 force.
+
+## 22. Testing fact references and foundations as a whole
+
+Item: "Test fact references and foundations as a whole: name every
+scenario a change brings, and check each still holds".
+
+### 2026-10-28
+
+#### What the reviewer asked
+
+While ADR-0070's homes were written, at commit 5 of their plan:
+"i thinking to mark todo after we finish refinement or later to go
+again through current fact-reference (+foundation) and check if
+everything holds after we make change in one-home or when we need
+to change in fact-reference side. we should name all scenarios and
+look if everything works as expected. So its thing which i want not
+to forget to test and look again to see how it is define, how it
+works, is nothing is missing and other similar stuff. so its like
+diagnostic. because i already see 2 types of keeping everything in
+place, where one is used by grep and other needs text eval by
+reading and checking if logic is holding. and this one home needs
+second one, that logic would hold after we grep pointers to
+on-home facts."
+
+#### What exists today
+
+- **The grep:** the rename grep (`docs/conventions/facts-in-sync/`
+  §3.3, *A rename is grepped at its commit*) and the walk's greps
+  for a path and a `foundation` value (§4, *The rule for every
+  description*, step 3).
+- **The read:** the walk's re-read of each retelling with its
+  paragraph, the foundation check's read of a derived file against
+  its foundation, and the question asked of each new or changed line
+  at the commit (ADR-0070).
+- No one has walked every scenario through both.
+
+#### What the reviewer took
+
+An item with options, not a choice: on paper, a drill on a
+throwaway branch, agents, or a kind in the refinement's last read.
+Due when the refinement closes. A diagnostic: what it finds becomes
+findings or TODO items, and it changes no rule itself.
