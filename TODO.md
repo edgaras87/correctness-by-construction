@@ -337,8 +337,11 @@
       - when the devlog entry closes a piece of work, look back at
         what the new thing touches. Tried once by hand, 2026-10-28:
         all 67 TODO items read against ADR-0070 and ADR-0071, 17
-        touched, the pass too heavy for its yield and dropped. The
-        moment is worth a gate; its form is open.
+        touched, two of them real gaps (`e219401`, `8d5212d`), the
+        rest reminders; too heavy to run after every decision, and
+        dropped. The moment is worth a gate; lighter forms to weigh:
+        only the items in the decision's area, a fresh agent, or only
+        at a big piece of work's close.
       Trigger: with "Decide whether a sweep checks one home after
                work lands", its twin; ADR-0063's kinds now place
                either.
