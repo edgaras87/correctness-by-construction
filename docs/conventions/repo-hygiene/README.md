@@ -39,7 +39,7 @@ to, and adds its stack's lines at the step that makes the stack
 true. The deliverer holds the base's master and the overlays, and
 applies no overlay, having no stack. Its own `.gitignore` keeps the
 base as shipped, and un-ignores `CLAUDE.local.md` in its "this
-repo" section (`docs/conventions/agent-arrangement/` §3.7).
+repo" section (`docs/conventions/agent-arrangement/` §3.7, *`CLAUDE.local.md`*).
 
 ## 1. The three files
 
@@ -84,7 +84,7 @@ sources for one thing.*
 
 - A run's files are its own. A fix that would be true of any
   project comes back the way every lesson does — the deliverer
-  reads the run, `docs/conventions/exchange/` §6 — and changes the
+  reads the run, `docs/conventions/exchange/` §6, *Up* — and changes the
   master here, so the next birth starts corrected.
 - A new stack is a new directory under `templates/` with the three
   `.part` files, and an ADR if any choice was non-obvious.
@@ -97,7 +97,7 @@ sources for one thing.*
 ## Why it arrives this way
 
 This convention never reaches an agent as text. Its product is three
-files that shape the repo by existing (`docs/models/agent.md` §4.6):
+files that shape the repo by existing (`docs/models/agent.md` §4.6, *installed*):
 nobody complies with `.gitignore`, git simply hides what it names. A
 rule here that cannot become a line in one of the three files has no
 delivery at all.

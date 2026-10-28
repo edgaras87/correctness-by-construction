@@ -18,7 +18,7 @@ Until 2026-09-26 the receiver's protocol, `convention-lifecycle`,
 while run 3 ran it at every take; the deliverer's half was
 `bundle-update.md`, 527 lines; and the rule for editing a copy was
 written twice in two repos, six elements the same in different
-words (§5.1). Made one convention on 2026-09-26; what it replaced
+words (§5.1, *One rule for every delivered…*). Made one convention on 2026-09-26; what it replaced
 is ADR-0036's.
 
 ## What this is made usable as
@@ -45,7 +45,7 @@ arrangements, each side holding only what it runs
 - **`.claude/rules/exchange-reading.md` — the reading's form, the
   deliverer's**, loading when a reading in `temp/` is read, not
   while a new one is written (`docs/conventions/agent-arrangement/`
-  §5.6). What `exchange-read` writes, and what
+  §5.6, *Rules files*). What `exchange-read` writes, and what
   the work then fills, to one form.
 - **`.claude/rules/working-a-reading.md` — how a reading's list is
   worked, the deliverer's**, practice under this page, loading when
@@ -139,7 +139,7 @@ local, for every copy. It would make the compare a judgement where
 it is now a `diff` — the miscount problem made permanent; it would
 let a run's edit stay in the local part and never reach the next
 run, which is the one thing the loop exists to prevent; and the
-need it serves already has a home, the run's own records (§5).*
+need it serves already has a home, the run's own records (§5, *Editing a copy*).*
 
 Skeleton sync is reopened if a run re-applies the same declined edit
 after two re-pins.
@@ -169,7 +169,7 @@ Two repos, two numbers, and only a note moves either.
 ```
 
 Read from the read-through, forward in their tree. Deliver from the
-pin, forward in ours. A note without files (§6.6) is a `t` that
+pin, forward in ours. A note without files (§6.6, *Every read ends with a note*) is a `t` that
 writes the read-through and leaves the pin where it was.
 
 ## 3. Down
@@ -200,7 +200,7 @@ At birth, every file of each group. After it, only the copies: the
 container's skills, rules and approaches on trial; the method's and the stack practice's
 skills, rules and shapes; the concept. The rest of the container —
 its records, the two entry files, the decisions log, the hygiene
-files — went once and is the run's (§2.4); a later delivery that
+files — went once and is the run's (§2.4, *The records are the one…*); a later delivery that
 carried it would land stubs over what the run has written.
 
 ### 3.3 Each group is a piece of the run's tree
@@ -241,7 +241,7 @@ hold. When such a run exists, those lines become a fill.
 
 The field — its name, that every skill, rule and shape has one,
 and what it holds for each kind — is the conventions convention's,
-`docs/conventions/conventions/` §1.3. What is the exchange's: the
+`docs/conventions/conventions/` §1.3, *The `foundation` line*. What is the exchange's: the
 line travels with the copy as a live claim, what this file comes
 from *now* and not when or from which run, and nothing in a copy
 can say otherwise. *Until 2026-09-26 the five method and stack
@@ -283,7 +283,7 @@ No ADR number, no path in this repo and no word of this repo's own
 vocabulary, in a note or in a prompt: the run cannot see this repo,
 and a citation it cannot follow reads as its own. That is told text.
 A shipped file carries the tag instead, `CBC ADR-nnnn`
-(`docs/conventions/project-recording/` §3.5), because a file stays
+(`docs/conventions/project-recording/` §3.5, *A number is local to one repo*), because a file stays
 in the run and a note is read once (ADR-0020).
 
 A note that names a third repository gives both names: ours, by
@@ -308,7 +308,7 @@ copy.
    moves.
 2. **Find your own edits.** The diff of each held copy against the
    pin, which the run holds as the commit of its last delivery entry
-   (§2.2). Empty: nothing to protect. Not empty: each edit is either
+   (§2.2, *The run*). Empty: nothing to protect. Not empty: each edit is either
    answered in the note (taken — the new copy carries it; declined
    — it goes, and the need it served goes to the run's records) or
    unanswered, which means it was made after the deliverer last
@@ -421,7 +421,7 @@ deliverer decides.
 
 ### 5.6 A chapter only from a lived mistake
 
-A chapter is edited as any copy (§5.1), and only from a mistake
+A chapter is edited as any copy (§5.1, *One rule for every delivered…*), and only from a mistake
 lived in the run, never from a preference for other wording. Skills
 are written from the chapters and readers learn the method from
 them, so lived work can show one wrong; and the deliverer judges an
@@ -436,7 +436,7 @@ the chapters were blocked at all; it had edited none.*
 
 ### 5.7 The records
 
-They are the run's own from birth, not copies (§2.4), and this
+They are the run's own from birth, not copies (§2.4, *The records are the one…*), and this
 section does not apply to them.
 
 ### 5.8 A skill's template is filled, not edited
@@ -454,8 +454,7 @@ A run whose decided constraints differ from what a skill's template
 assumes is off-template. It derives from what the template
 implements, which the skill names. It records the deviation where
 its records table puts a decision, what it did instead and why
-(`docs/conventions/project-recording/` §13, *The records table in
-the entry file*). It expects the
+(`docs/conventions/project-recording/` §13, *The records table…*). It expects the
 deviation to come back as a change to the skill. It never bends a
 decided constraint to fit a skill's template (ADR-0008).
 
@@ -531,7 +530,7 @@ Each item leaves the list with one of three:
   carries it, and the run's edit is absorbed rather than
   overwritten.
 - **Declined** — with why, and the why is never "the description
-  says otherwise" (`docs/conventions/facts-in-sync/` §5 owns that
+  says otherwise" (`docs/conventions/facts-in-sync/` §5, *A disagreement* owns that
   rule; it is about every description, not only this one). A
   description can be what the run has found wrong. Declined means:
   not general, or not worth the change. The why goes in the note
@@ -540,13 +539,13 @@ Each item leaves the list with one of three:
   our own backlog so it is not lost between readings.
 
 An unverifiable promise is worse than any of the three. The
-verdicts go down in the note (§3.7).
+verdicts go down in the note (§3.7, *The note*).
 
 ### 6.6 Every read ends with a note
 
 Even an empty one. The note names
 the run's commit we read through; the run records it beside the pin
-(§2.2). A read that finds nothing addressed to us still sends *read
+(§2.2, *The run*). A read that finds nothing addressed to us still sends *read
 through `<commit>`, nothing to answer, no files* — one line each
 side — so the run always holds the latest read-through, and can see
 for itself when a hand-off was seen and not yet answered. A note
@@ -557,14 +556,14 @@ the pin does not.
 
 The run's half is a rule rather than a skill because its moment is
 a copy, or a file in `temp/`, being read, and it loads then instead
-of waiting to be opened by name (`docs/models/agent.md` §4.3):
+of waiting to be opened by name (`docs/models/agent.md` §4.3, *pushed*):
 the failure the receiver's protocol had since the day it shipped.
 The deliverer's two skills open on the reviewer's word, "read" or
 "deliver", which is a moment the agent is told rather than one it
 must notice. The reading's form loads by path when a reading is
 read, so it is in view while the list is worked; a reading written
 new is written without it (`docs/conventions/agent-arrangement/`
-§5.6).
+§5.6, *Rules files*).
 
 ## What this does not cover
 
@@ -572,8 +571,8 @@ new is written without it (`docs/conventions/agent-arrangement/`
   arrangement's** — `docs/conventions/agent-arrangement/`, its
   seats.
 - **What `foundation` holds for each kind of file** —
-  `docs/conventions/conventions/` §1.3.
-- **How a shape reaches a run** — `docs/conventions/shapes/` §4.
+  `docs/conventions/conventions/` §1.3, *The `foundation` line*.
+- **How a shape reaches a run** — `docs/conventions/shapes/` §4, *Where a shape lives, between…*.
 - **The commits and decisions of working a reading** — a commit
   plan when it takes more than one commit,
   `docs/conventions/commit-plan/`, and an ADR when a decision has

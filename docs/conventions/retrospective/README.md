@@ -114,7 +114,7 @@ end.
   shorter, what needed to happen earlier, what was tried and
   dropped, what had no home, which gate items caught nothing; and
   the entry file read top to bottom, its only re-reading
-  (`docs/conventions/agent-arrangement/` §2.6). They are prompts,
+  (`docs/conventions/agent-arrangement/` §2.6, *Size*). They are prompts,
   inside the walk.
 
 ## 3. How the apply step decides
@@ -161,12 +161,12 @@ from the note.
 Two skills, because each step is bound to a moment the agent would
 otherwise have to notice: the run finishing its building, and the note
 closing. A plan step opens each, and names the skill: where a pointer
-is placed decides whether it fires (`docs/models/agent.md` §12.2).
+is placed decides whether it fires (`docs/models/agent.md` §12.2, *On pulled*).
 
 A section in the plan did not work: its moment was the project's
 end, which a run that stops early never reaches, and a section can
 hold questions but not a way of working. Two skills, not one,
-because the two steps are kept apart (§1).
+because the two steps are kept apart (§1, *Two steps, not one*).
 
 ## What this does not cover
 
@@ -177,7 +177,7 @@ because the two steps are kept apart (§1).
 - **What a shape is, and how a gate reads it** —
   `docs/conventions/shapes/`.
 - **How a run edits a delivered copy, and hands it back** —
-  `docs/conventions/exchange/` §5.
+  `docs/conventions/exchange/` §5, *Editing a copy*.
 - **How a text reads** — `docs/conventions/writing/`.
 
 ## Where to look

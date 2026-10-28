@@ -13,7 +13,7 @@ rewriting it. Adopted with the container (ADR-0038, 1a, 1c,
 ambient in an entry file and the rule pulled in by a skill,
 fifteen of the first twenty commits of the repo it came from broke
 the limit — present, correct, unfollowed (`docs/models/agent.md`
-§12, A1) — which is why the rule is opened at the commit moment
+§12, *Claims*, A1) — which is why the rule is opened at the commit moment
 and not read once. Lived here since: 480 commits under it by
 2026-09-19, and run 3 held forty-four commits on the stop sentence
 alone with no gate.
@@ -77,7 +77,7 @@ particular way. They stay separable, for a filtered log or a
 portfolio copy that drops the arrangement, only if no commit ever
 straddles them. Hence the `agent` scope (ADR-0038, 1c); which
 paths are the arrangement's is
-`docs/conventions/agent-arrangement/` §1.1.
+`docs/conventions/agent-arrangement/` §1.1, *A closed list of paths*.
 
 ### 2.4 Commit on the word
 
@@ -121,9 +121,9 @@ This section is the deliverer's and does not ship.
 ## Why it arrives this way
 
 A skill, opened at the moment of writing a commit message
-(`docs/models/agent.md` §4.2), because the rule held ambient in an
+(`docs/models/agent.md` §4.2, *pulled*), because the rule held ambient in an
 entry file was present and unfollowed (*What it is for*;
-`docs/models/agent.md` §12.1). The commit is also the moment other
+`docs/models/agent.md` §12.1, *On ambient*). The commit is also the moment other
 conventions' discipline binds at — the `agent` scope, the stop — which
 is why those sentences live in this skill and nowhere else.
 

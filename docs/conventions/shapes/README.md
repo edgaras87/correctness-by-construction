@@ -11,7 +11,7 @@ instead of each output re-deriving the form, or a template being
 filled in. The failure is lived: run 3 made a thing this repo's
 vocabulary had no word for, and it was called a template, a
 specification, a convention and trial evidence before it got its
-own (§2; ADR-0035, 2026-09-23). Made a convention, with this page
+own (§2, *What a shape is not*; ADR-0035, 2026-09-23). Made a convention, with this page
 as its manual, on 2026-09-27 (ADR-0037): the rule binds, and this
 page is why the rule is the shape it is, so that "why is this a
 directory and not a rules file?" has an answer that is not
@@ -32,7 +32,7 @@ staging was never used on either side.*
 - **`delivery/method/.claude/shapes/` — the method's shapes,
   shipped**, held at `.claude/shapes/` and read at a step's closing
   gate: instances of this convention, each from a run's lived
-  records, its illustration from the worked example (§4.2).
+  records, its illustration from the worked example (§4.2, *Two separable layers…*).
 - **`delivery/README.md` — a pointer**: one sentence on placement,
   and §4 for the rest.
 
@@ -58,11 +58,11 @@ The deliverer makes outputs too — a reading is one — and its steps
 have gates (ADR-0057). Two of its own forms, a reading's and a
 manual's, are rules today, with a
 Governs line, loaded when the file is read, not while a new one is
-written (`docs/conventions/agent-arrangement/` §5.6); whether they become shapes read at a step's gate is the
+written (`docs/conventions/agent-arrangement/` §5.6, *Rules files*); whether they become shapes read at a step's gate is the
 TODO item "Decide whether our own forms become shapes". It holds the shapes it
-ships, each in the group of what it shapes (§4), and reads a run's
+ships, each in the group of what it shapes (§4, *Where a shape lives, between…*), and reads a run's
 shapes when a line under its *To the deliverer* offers them
-(`docs/conventions/exchange/` §6.2).
+(`docs/conventions/exchange/` §6.2, *A file the run wrote*).
 
 ## 1. What a shape is
 
@@ -182,7 +182,7 @@ than being enforced on top of them.
 
 A shape travels as a copy, at birth and at every delivery, under the
 one pin that covers every delivered copy
-(`docs/conventions/exchange/` §2.2). A run edits a delivered shape
+(`docs/conventions/exchange/` §2.2, *The run*). A run edits a delivered shape
 as it edits any copy, and offers its own as it offers any file it
 wrote.
 
@@ -191,7 +191,7 @@ wrote.
 Nothing is fetched (`docs/models/tiers.md` §3.5, *What holds on every flow*,
 fact 1): what arrives,
 arrives because it was staged with a delivery, by the reviewer or
-by the agent when told (`docs/conventions/exchange/` §3.1). Nothing is
+by the agent when told (`docs/conventions/exchange/` §3.1, *Staging*). Nothing is
 staged for a gate on its own. *Named in ADR-0037 as a third act of
 the exchange, and never built: run 3 looked in `temp/` at two
 closes and found nothing either time. With shapes in the delivery,
@@ -256,7 +256,7 @@ What travels upward is a **finding**, never a proposal: one project
 saying what it arrived at — and it travels by being *read*, not by
 being sent. What must not travel is a run's answer as the next
 run's standard: the skeleton travels, the illustration is the
-method's (§4.2).
+method's (§4.2, *Two separable layers…*).
 
 ## 5. How a shape is used, and what a difference means
 
@@ -299,7 +299,7 @@ one of four ways, decided per difference and never by a policy of
 preferring one side: **the output drifted**, so it is brought to the
 shape; **the shape was wrong here**, so it changes and the output
 stands; **each had something**, and both move; or **the output is a
-different kind**, so both stand and a new shape starts from it (§1.2).
+different kind**, so both stand and a new shape starts from it (§1.2, *How one is born*).
 Any change is shown before it is made.
 
 Outputs closed before a change are not reopened — each looks like
@@ -312,16 +312,16 @@ between them records when the shape changed.
 
 The first convention with no skill: its artifact is a rule, because
 the moment it serves is a shape being touched, and a rule loads on the
-path (`docs/models/agent.md` §4.3). The shapes themselves reach no
+path (`docs/models/agent.md` §4.3, *pushed*). The shapes themselves reach no
 agent while work is written, by design — nothing loads
-`.claude/shapes/`, and that is their force (§3).
+`.claude/shapes/`, and that is their force (§3, *One place, read at the gate*).
 
 ## What this does not cover
 
 - **When an output opens, extends and closes** — the convention
   that owns the output; a shape that restates it is a copy of that
-  convention (§1.1).
-- **How a rule loads** — `docs/conventions/agent-arrangement/` §5.6.
+  convention (§1.1, *What it says*).
+- **How a rule loads** — `docs/conventions/agent-arrangement/` §5.6, *Rules files*.
 - **What passes between repositories, and how** —
   `docs/conventions/exchange/`.
 - **The gate items that make a project meet a shape at a step's

@@ -135,8 +135,7 @@ split when it opens. *The same plan put two changes under
 
 A commit that renames a file, renumbers or retitles a section, or
 moves a fact greps for the old names in that commit
-(`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped at its
-commit*). Before the close,
+(`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped…*). Before the close,
 the sweep looks again for every name the set moved, all at once: a
 commit's own grep looks for the names it meant to move, and misses
 the rest. It reads the text unwrapped. A grep matches line by
@@ -153,8 +152,7 @@ ways meant reworking a commit in place. Small commits give the
 room, and are folded into the planned commit before its boundary,
 so the reviewer still sees one commit there. The grant is the
 reviewer's because a small commit is still a commit, and the stop
-at every commit is commit-messages' rule (§2.13, *The stop at every
-boundary…*);
+at every commit is commit-messages' rule (§2.13, *The stop at every boundary is…*);
 without the
 grant, every commit is a boundary. Each small commit is counted
 when it is written, as a planned subject is. *Run 3's Step 10,
@@ -181,7 +179,7 @@ opens (ADR-0038, 1f).*
 
 A skill, because its moment is one the agent recognises — work turning
 out to need several commits — and nothing in a record would put the
-plan in front of it then (`docs/models/agent.md` §4.2). The one rule
+plan in front of it then (`docs/models/agent.md` §4.2, *pulled*). The one rule
 that must fire at every commit, the stop, is not here: a skill that
 opens only for multi-commit work cannot carry it, so it is
 commit-messages' (`docs/conventions/commit-messages/` §2.4, *Commit on the word*).

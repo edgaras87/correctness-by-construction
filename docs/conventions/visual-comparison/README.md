@@ -97,7 +97,7 @@ nobody can read in review is a binary blob with extra steps.
 ## Why it arrives this way
 
 A skill, opened when a structure is hard to see and more than one way
-of showing it could work (`docs/models/agent.md` §4.2). The agent
+of showing it could work (`docs/models/agent.md` §4.2, *pulled*). The agent
 recognises the moment by the question it is facing; no path is touched
 that a rule could load on, and nothing in a record would bring the
 method up then.

@@ -43,7 +43,7 @@ this page.
 
 Two derivations of this page, neither copied from the other: nearly
 the same files, and different by design in their job — so a
-section each (`docs/conventions/conventions/` §2.4).
+section each (`docs/conventions/conventions/` §2.4, *The seats*).
 
 ### The run's seat — a builder's
 
@@ -78,7 +78,7 @@ trial; the exchange's skills, `exchange-read` and
 the rules loaded by path, `exchange-reading.md`, the form of a
 reading, `working-a-reading.md`, how a reading's list is worked,
 and `convention-manual.md`, the form of a manual; and its
-approaches on trial (§3.8). Its
+approaches on trial (§3.8, *`approaches-on-trial/`*). Its
 decisions log
 holds arrangement decisions only, and no registry: it receives no
 conventions, and no one reads it but itself, so an entry that
@@ -113,9 +113,9 @@ the repo that cannot apply it.*
 ## 1. What the arrangement is
 
 The theory this leans on is `docs/models/agent.md`: the ambient
-channel (`docs/models/agent.md` §4.1), the choosing table
-(`docs/models/agent.md` §8), the claims (`docs/models/agent.md`
-§12). The model describes; this page explains against it, and its
+channel (`docs/models/agent.md` §4.1, *ambient*), the choosing table
+(`docs/models/agent.md` §8, *Choosing a channel*), the claims (`docs/models/agent.md`
+§12, *Claims*). The model describes; this page explains against it, and its
 §5 is the binding: what Claude Code gives each channel.
 
 ### 1.1 A closed list of paths
@@ -159,7 +159,7 @@ did not help agents find the right file (Gloaguen et al., arXiv
 2602.11988, 2026, measured), and the tool's documentation leaves
 file-by-file descriptions out. Which conventions
 apply is not in it: in a run, the birth entry in
-`.claude/decisions.md` is that list (§3.4); at the deliverer, it is
+`.claude/decisions.md` is that list (§3.4, *`decisions.md`*); at the deliverer, it is
 the `foundation` each of its skills and rules names. Each
 convention reaches the agent through its own channel.
 
@@ -175,7 +175,7 @@ every session needs, never a convention's rules.
 ### 2.3 Where
 
 Repo root, or under `.claude/` — Claude Code reads `CLAUDE.md` at
-either address as one file (§5.1). The
+either address as one file (§5.1, *The mapping*). The
 container ships it under `.claude/`, so that every agent-side path
 sits in one directory; a project that wants it at the root moves it.
 The deliverer's sits at the root.
@@ -190,13 +190,13 @@ three the stub's guard comment states:
   true in another project is a convention, and lives there — once. If
   the rule rides in a skill or a stub, it is not repeated here. If
   the convention's moment is every task, its rule loads with no
-  `paths:` (§3.9): the convention's channel, not a line here.
+  `paths:` (§3.9, *A rule loaded in every session*): the convention's channel, not a line here.
   **It points; it never restates**: a summary is lossy on arrival,
   and then two files disagree while both look current
-  (`docs/models/agent.md` §12.7, claim M1).
+  (`docs/models/agent.md` §12.7, *On summaries*, claim M1).
 - **No moment.** A line with a moment goes where the moment is — the
   record's stub, README, a skill, or, for a rule true only under one
-  directory, a rules file with a `paths:` list (§3.2) — and is read
+  directory, a rules file with a `paths:` list (§3.2, *`rules/`*) — and is read
   there, at the moment it is about, instead of on every task it is
   not.
 - **Nothing else would deliver it.** What stays is what no channel fires
@@ -217,7 +217,7 @@ two born repos spell them the same way.
 *The records table* is the slot this convention provides and
 `docs/conventions/project-recording/` fills: its rows, and the
 requirement that every row names a moment, belong to that
-convention (`docs/conventions/project-recording/` §13).
+convention (`docs/conventions/project-recording/` §13, *The records table…*).
 
 *How to work here* is the stance a project expects where it is not
 the obvious one — "decide before building", "prefer exploring over
@@ -231,7 +231,7 @@ ambient space only when its failure is not noticing the moment**. A
 test prerequisite, a migration rule, a service that must be running
 fails: each has a moment, and goes where the moment is — the
 record's stub, README, a skill the project adds under
-`.claude/skills/`, a rules file under `.claude/rules/` (§3.2). Most
+`.claude/skills/`, a rules file under `.claude/rules/` (§3.2, *`rules/`*). Most
 facts that feel local have a moment, which is why this slot stays
 short.
 
@@ -244,13 +244,13 @@ the re-reading §2.6 names — not otherwise.
 
 ### 2.6 Size
 
-The entry file is the ambient channel (`docs/models/agent.md` §4.1):
+The entry file is the ambient channel (`docs/models/agent.md` §4.1, *ambient*):
 paid on every task, including the tasks it is irrelevant to, and each
 line added lowers compliance with every other
-(`docs/models/agent.md` §12.1, claim A2,
+(`docs/models/agent.md` §12.1, *On ambient*, claim A2,
 assumed). So its size is a running concern, not a one-time one. The
 cost is what the harness delivers, not the file: HTML comments are
-dropped on load (§5.3), so the guard and the
+dropped on load (§5.3, *Memory files and their…*), so the guard and the
 records comment cost nothing per task and are read when the file is
 opened to edit it — the moment they govern. If what remains is longer
 than a screen, something in it belongs in a convention, a record or a
@@ -272,8 +272,8 @@ run, a delivered copy, verbatim (the update is
 `docs/conventions/exchange/`'s); at the deliverer, its own
 derivation from the manual (ADR-0042). This convention owns the
 place. A project may add a skill of its own, for a moment-bound
-local rule the entry file must not hold (§2). Work no skill covers
-starts from an approach on trial (§3.8), and a skill is written only
+local rule the entry file must not hold (§2, *The entry file*). Work no skill covers
+starts from an approach on trial (§3.8, *`approaches-on-trial/`*), and a skill is written only
 when an evaluation places one (`docs/models/idea-to-output.md` §4.2,
 *Up, work to an idea*). How that is done is
 `.claude/approaches-on-trial/approach-drafting.md`'s and its
@@ -306,7 +306,7 @@ rides as a comment in the artifact it governs; the log keeps the why
 and the rejected options; neither repeats the other. A run's also
 holds what it was delivered: its birth entry lists the conventions
 it holds, and each delivery entry the pin and the read-through
-(`docs/conventions/exchange/` §2.2). The deliverer's holds neither,
+(`docs/conventions/exchange/` §2.2, *The run*). The deliverer's holds neither,
 since it receives no delivery (ADR-0042). Its rules ride in its
 own stub.
 
@@ -336,7 +336,7 @@ base ignores it (`docs/conventions/repo-hygiene/`).
 
 Not under `.claude/`, but the arrangement's neighbour: the operator's
 standing instructions, loaded beside the entry file and read the same
-way (`docs/models/agent.md` §4.1, ownership). One person, one
+way (`docs/models/agent.md` §4.1, *ambient*, ownership). One person, one
 checkout; the hygiene base ignores it, and its words never enter a
 record — a record that quotes it has let one operator's preference
 into the project's truth. The container ships none, and a run's
@@ -376,7 +376,7 @@ how one is drafted and how one is evaluated are
 `.claude/approaches-on-trial/approach-evaluation.md`'s. This
 convention places the directory and states nothing else about it.
 In a run, an approach the deliverer ships is a pinned copy
-(`docs/conventions/exchange/` §3.2), and one the run drafts is its
+(`docs/conventions/exchange/` §3.2, *What goes*), and one the run drafts is its
 own. *Added 2026-10-20 (ADR-0058).*
 
 ### 3.9 A rule loaded in every session
@@ -388,7 +388,7 @@ of them. Such a rule fails §2.4's first test, since it is true in
 any project. It passes as the convention's own channel: derived
 from its manual, and naming the manual in `foundation`. That keeps
 it from being the rulebook of §4: one file per convention, never a
-restatement. It is paid for in every session (§2.6), so few
+restatement. It is paid for in every session (§2.6, *Size*), so few
 qualify. *Added 2026-10-15, from run 3: its writing and one-home
 rules, loaded this way, changed its records where a manual and the
 agent's memory had not (ADR-0053).*
@@ -416,15 +416,15 @@ agent's memory had not (ADR-0053).*
   so removing one is maintenance, not tidying.
 - **Parking a repeated rule in the operator's file** — a rule the
   human keeps saying is the model's told diagnostic
-  (`docs/models/agent.md` §8): a convention
+  (`docs/models/agent.md` §8, *Choosing a channel*): a convention
   is missing, or its channel is not firing. `CLAUDE.local.md` makes
   the saying persistent and the diagnosis invisible.
 
 ## 5. The binding: Claude Code
 
 The agent model names the channels and the gate
-(`docs/models/agent.md` §4, §7); a binding names the mechanisms one
-tool gives each (`docs/models/agent.md` §10). This is Claude Code's,
+(`docs/models/agent.md` §4, *The channels*, §7, *The gate*); a binding names the mechanisms one
+tool gives each (`docs/models/agent.md` §10, *Bindings (Layer 2)*). This is Claude Code's,
 the tool both seats use. It changes with the tool's releases, so
 each fact says which release it was checked against, and a change
 is made here alone. A second tool's binding would be written beside
@@ -441,7 +441,7 @@ documentation, by what could be observed here, and by bug reports
 |---|---|
 | ambient | memory files — `CLAUDE.md` (root or under `.claude/`), `~/.claude/CLAUDE.md`, `@` imports; `AGENTS.md`, read when no `CLAUDE.md` is found; `.claude/rules/*.md` without a `paths:` list; `CLAUDE.local.md`, the operator's; the first 200 lines of auto memory's `MEMORY.md`; a skill's `name` and `description` |
 | pulled | `Read`, `Grep`, `Glob`; a skill's body, once the agent invokes it |
-| pushed | context-injecting hooks, slash commands, subagents; `.claude/rules/*.md` with a `paths:` list, and a `CLAUDE.md` in a subdirectory — loaded when the agent reads, writes or edits a matching file, or reads one from the shell with a command such as `cat`; not on a script's edit (§5.6) |
+| pushed | context-injecting hooks, slash commands, subagents; `.claude/rules/*.md` with a `paths:` list, and a `CLAUDE.md` in a subdirectory — loaded when the agent reads, writes or edits a matching file, or reads one from the shell with a command such as `cat`; not on a script's edit (§5.6, *Rules files*) |
 | told | the prompt |
 | observed | tool results |
 | installed | files in the repo; the container that puts them there at birth |
@@ -485,7 +485,7 @@ Skills appear twice as well, and neither time under pushed. Claude
 Code loads a skill's `name` and `description` at session start and its
 body only when the agent invokes it: an ambient trigger over a pulled
 body. The agent still decides, and pushed promises it does not
-(`docs/models/agent.md` §4.3). A skill is still the closest this tool
+(`docs/models/agent.md` §4.3, *pushed*). A skill is still the closest this tool
 gets to pushed for a rule about an action; a hook closes the
 remainder.
 
@@ -524,7 +524,7 @@ repo saw the Read tool alone load a rule; on 2.1.310 a `sed` read
 loaded one, as the documentation now says. Bug reports, checked
 2026-10-24, show `paths:` failing silently in some formats and seats
 (Claude Code issues #17204, #33581, #87217). A rule that must arrive
-does not rest on a path alone (`docs/models/agent.md` §7).
+does not rest on a path alone (`docs/models/agent.md` §7, *The gate*).
 
 ### 5.7 What a session keeps, and what a helper gets
 
@@ -538,7 +538,7 @@ does not rest on a path alone (`docs/models/agent.md` §7).
   agents skip `CLAUDE.md`. A fork inherits the whole conversation.
 
 So what a delegated task must know goes in its prompt, which is told
-(`docs/models/agent.md` §4.4). An Explore or Plan agent gets none of
+(`docs/models/agent.md` §4.4, *told*). An Explore or Plan agent gets none of
 the rules loaded every session, only the path rules of the files it
 touches.
 
@@ -547,27 +547,27 @@ touches.
 Every rule here governs a file the container ships and rides in it
 as a comment: the entry file's comments carry points-never-restates,
 the guard and the size rule; the decisions log's carry its own.
-Acting on the file is the trigger (`docs/models/agent.md` §4.6).
+Acting on the file is the trigger (`docs/models/agent.md` §4.6, *installed*).
 
 Not a skill, because the failure guarded against is a noticing
 failure: told "remember X", an agent writes X into the entry file
 where it stands, and a skill fires only on recognising the moment.
 Not paid at ambient cost either: the comments are dropped on load
-(§5.3), so they are read when the file is opened to edit it
+(§5.3, *Memory files and their…*), so they are read when the file is opened to edit it
 and cost nothing on any other task. A long guard is free; a long
 records table is not.
 
 A rule for an arrangement file goes in that file's stub comment,
 not here and not in the entry file's prose. A project meets this
 convention only as its files at birth, which are its own from then
-on (`docs/conventions/exchange/` §2.4).
+on (`docs/conventions/exchange/` §2.4, *The records are the one…*).
 
 ## What this does not cover
 
 - **The commit that touches these paths, and its scope** —
   `docs/conventions/commit-messages/`.
 - **The records the entry file's table lists, and when each is
-  touched** — `docs/conventions/project-recording/` §13.
+  touched** — `docs/conventions/project-recording/` §13, *The records table…*.
 - **What a shape is, and how one lives** —
   `docs/conventions/shapes/`.
 - **How a copy under `.claude/` is updated, and what a run may do

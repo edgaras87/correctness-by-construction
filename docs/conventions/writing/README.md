@@ -109,13 +109,13 @@ kind: find lines that are no longer true". Rule 8 came from it.*
 ## Why it arrives this way
 
 A rule with no `paths:`, loaded in every session
-(`docs/conventions/agent-arrangement/` §3.9). Its moment is every
+(`docs/conventions/agent-arrangement/` §3.9, *A rule loaded in every session*). Its moment is every
 answer and every record written, and nothing else fires at all of
-them (`docs/models/agent.md` §8):
+them (`docs/models/agent.md` §8, *Choosing a channel*):
 
 - **A `paths:` list** loads when a file is touched, after a new
   one's first draft is written, and chat has no path
-  (`docs/conventions/agent-arrangement/` §5.6). Run 3's first
+  (`docs/conventions/agent-arrangement/` §5.6, *Rules files*). Run 3's first
   draft loaded on Markdown files, and was dropped for this.
 - **A skill** fires when the agent notices the moment. The failure
   here is not noticing: the agent writes in the voice it last read.
@@ -127,16 +127,16 @@ one page.
 
 ## What this does not cover
 
-- **Where a fact lives** — `docs/conventions/facts-in-sync/` §1.
+- **Where a fact lives** — `docs/conventions/facts-in-sync/` §1, *One home*.
 - **Which record owns which kind of fact** —
-  `docs/conventions/project-recording/` §13.
+  `docs/conventions/project-recording/` §13, *The records table…*.
 - **The form of a commit message** —
   `docs/conventions/commit-messages/`.
-- **The form of a manual** — `docs/conventions/conventions/` §2.
+- **The form of a manual** — `docs/conventions/conventions/` §2, *The manual*.
 - **What a kind of output looks like** —
   `docs/conventions/shapes/`.
 - **How a rule reaches an agent** —
-  `docs/conventions/agent-arrangement/` §5.6.
+  `docs/conventions/agent-arrangement/` §5.6, *Rules files*.
 
 ## Where to look
 

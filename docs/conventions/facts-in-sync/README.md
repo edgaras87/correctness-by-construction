@@ -57,7 +57,7 @@ the exchange's reading of what it sends back
 
 The deliverer holds its own, wider one-home rule and the foundation
 check. It may retell a fact where the reader acts on it in place
-(§1). Its fact reference is a document's path, section and title
+(§1, *One home*). Its fact reference is a document's path, section and title
 (§3.1, *What it is*), and the walk before every commit re-reads it
 (§4, *The rule for every description*). The walk finds only lines
 that carry a fact reference, so at each commit each new or changed
@@ -84,7 +84,7 @@ being trusted. In practice:
   it: where two copies cannot be avoided, as the version in the
   build file is followed by the CHANGELOG, or where the reader acts
   on the fact in place, retold beside its pointer. A follower
-  carries a fact reference to the home (§3.1). Without one it is a
+  carries a fact reference to the home (§3.1, *What it is*). Without one it is a
   second home.
 - **History is not a second home.** The devlog, closed ADRs, commit
   bodies and the entries of `.claude/decisions.md` record what was
@@ -120,7 +120,7 @@ verbs — point and derive — and a reader who finds the subject stated
 twice has found a defect; the measured case is `docs/conventions/agent-arrangement/`'s, its
 *What it is for*. A retelling with a fact
 reference to its section, where the reader acts on it in place, is
-a follower, not a second statement (§1; ADR-0059).
+a follower, not a second statement (§1, *One home*; ADR-0059).
 
 ## 3. The fact reference
 
@@ -129,8 +129,8 @@ a follower, not a second statement (§1; ADR-0059).
 A line that relies on a fact written elsewhere carries a **fact
 reference**: the address of the fact's home. It has two readers.
 The agent may follow it to read the fact whole, with no guarantee
-that it will (`docs/models/agent.md` §4.2, claim P1). The walk
-re-reads the line when the home changes (§4). A fact has one home,
+that it will (`docs/models/agent.md` §4.2, *pulled*, claim P1). The walk
+re-reads the line when the home changes (§4, *The rule for every description*). A fact has one home,
 so a fact reference has one target: the home of the fact its line
 relies on. The line above relies on a claim about agents, so it
 names the agent model, not a convention that applies the claim.
@@ -148,7 +148,7 @@ A fact reference is written in one form, always in parentheses:
   (`docs/conventions/conventions/` §2.4, *The seats*);
 - **in the same document:** (§<number>, *<title>*);
 - **to another repo:** that repo's tag first, such as (CBC
-  `docs/conventions/exchange/` §3.4, *Every shipped file is in…*);
+  `docs/conventions/exchange/` §3.4, *Every shipped file is…*);
 - **a section with no number:** its title alone, such as
   (`docs/conventions/exchange/`, *What it is for*);
 - **a whole document:** its path alone;
@@ -187,7 +187,7 @@ read from a different root, which is every copy and every shipped
 file. A name in prose is not a fact reference, because names are
 words. A fact reference beside a retelling always names the
 section: the walk re-reads only the retellings of the section that
-changed (§4), and one with no section would be re-read at every
+changed (§4, *The rule for every description*), and one with no section would be re-read at every
 change.
 
 ### 3.2 A section's parts are numbered
@@ -220,7 +220,7 @@ moves a fact to a new home greps all living text for each old path,
 number and title, and fixes what points at them in the same commit.
 Placing an approach on trial into a convention is such a move
 (ADR-0070). A commit plan's sweep looks again before its close
-(`docs/conventions/commit-plan/` §2.10).
+(`docs/conventions/commit-plan/` §2.10, *The sweep, before the close…*).
 
 *Found 2026-10-19: the refinement's manual was renumbered three
 times on 2026-10-18, outside any commit plan, so no close sweep
@@ -230,10 +230,10 @@ moved from a plan's close to the commit that renumbers.*
 ## 4. The rule for every description
 
 This page included. A description is how we understand a thing
-today, written down (`docs/models/idea-to-output.md` §2): the
+today, written down (`docs/models/idea-to-output.md` §2, *The kinds*): the
 concept, each model, each manual. It states what is true today; how it came to be
 is history's: the ADRs, the devlog, commit bodies, and a lesson's
-dated italic (`docs/conventions/conventions/` §2.6). It may be
+dated italic (`docs/conventions/conventions/` §2.6, *A lesson taken*). It may be
 wrong or incomplete, and it is
 canonical regardless — everything derived from it agrees with it
 until it changes, and it changes only for a reason recorded,
@@ -246,9 +246,9 @@ for all of them, and this is where it is stated:
 2. Each derived thing names its description, once: one
    `foundation` per file, its root, what the whole of it stands on.
    Which files carry it, where, and what each holds is
-   `docs/conventions/conventions/` §1.3. Every line that uses a part of
+   `docs/conventions/conventions/` §1.3, *The `foundation` line*. Every line that uses a part of
    a document, its root included, carries a fact reference to that
-   part (§3.1), the root's parts as much as any other's. The root
+   part (§3.1, *What it is*), the root's parts as much as any other's. The root
    says which document to open when the file changes, and the whole
    file is re-read: that finds what no single line shows, a fact
    gone missing or a file that no longer holds together. A fact
@@ -264,13 +264,13 @@ for all of them, and this is where it is stated:
    turn (step 5). The greps and these re-reads are **the walk**.
 4. A change forced in a derived thing is checked back against the
    description.
-5. A disagreement is raised and decided (§5); if the description
+5. A disagreement is raised and decided (§5, *A disagreement*); if the description
    changes, the walk runs again.
 
 Steps 1, 2 and the greps in 3 are checkable today: every shipped
 skill and rule carries `foundation`, every manual names what
 derives from it in *What this is made usable as*, and a path and a
-`foundation` value are tokens (`docs/conventions/conventions/` §1.3).
+`foundation` value are tokens (`docs/conventions/conventions/` §1.3, *The `foundation` line*).
 The foundation check makes this repo do the rest, the re-reads in
 step 3 and steps 4 and 5, before every such commit
 (`.claude/rules/foundation-check.md`). Where a manual and the concept
@@ -293,7 +293,7 @@ form name its description, as a skill does.*
 
 A derived thing, a pointer or practice saying other than its
 description: two linked texts that disagree, either of which may be
-the wrong one (`docs/models/idea-to-output.md` §3.3). It is raised
+the wrong one (`docs/models/idea-to-output.md` §3.3, *A disagreement is settled*). It is raised
 where it is found — a finding in a reading, an edit a run made to
 its copy, a question at a boundary, the foundation check at a
 commit — and decided, never defaulted: neither side is right for
@@ -332,7 +332,7 @@ because nothing has been read against it hard enough, is not known.
 ## Why it arrives this way
 
 Two rules, each loaded in every session, with no `paths:`
-(`docs/conventions/agent-arrangement/` §3.9). One home's moment is
+(`docs/conventions/agent-arrangement/` §3.9, *A rule loaded in every session*). One home's moment is
 every text written: a fact is retold in the record being written,
 and that record's stub says nothing of the record the fact was taken
 from, so no stub is open at the moment. project-recording held the
@@ -341,25 +341,25 @@ records: PLAN, the devlog, the slice record and the commits (its
 RETRO.md, D1). The check's moment is every commit that touches a
 description or what derives from it, and a rule with `paths:` loads
 only when a file is touched with the agent's tools: an edit made by
-script never loads it (`docs/conventions/agent-arrangement/` §5.6).
+script never loads it (`docs/conventions/agent-arrangement/` §5.6, *Rules files*).
 Both moments are every task, so both rules are ambient
-(`docs/models/agent.md` §8).
+(`docs/models/agent.md` §8, *Choosing a channel*).
 
 ## What this does not cover
 
 - **Which record owns which kind of fact** —
-  `docs/conventions/project-recording/` §13, the records table.
+  `docs/conventions/project-recording/` §13, *The records table…*, the records table.
 - **Which copy is the master, and how a copy reaches a run** —
   `docs/conventions/exchange/`.
 - **What a convention is, and the form of a manual** —
   `docs/conventions/conventions/`.
 - **The repo prefix a citation carries, `CBC ADR-nnnn`** —
-  `docs/conventions/project-recording/` §3.5.
+  `docs/conventions/project-recording/` §3.5, *A number is local to one repo*.
 - **What a link is, and that either side may be wrong** —
-  `docs/models/idea-to-output.md` §3.1 and §3.3.
+  `docs/models/idea-to-output.md` §3.1, *The four links* and §3.3, *A disagreement is settled*.
 
 ## Where to look
 
-- The links this keeps: `docs/models/idea-to-output.md` §3.1.
+- The links this keeps: `docs/models/idea-to-output.md` §3.1, *The four links*.
 - The two rules: `.claude/rules/one-home.md` and
   `.claude/rules/foundation-check.md`.

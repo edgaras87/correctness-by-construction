@@ -25,7 +25,7 @@ it the next day.
 Nothing shipped of its own; what a repo holds is:
 
 - **the `foundation` line in every shipped skill, rule and shape**
-  — a run's, and this convention's artifact there (§1.3);
+  — a run's, and this convention's artifact there (§1.3, *The `foundation` line*);
 - **`.claude/rules/convention-manual.md` — the form of a manual,
   the deliverer's**, loading whenever a manual is opened;
 - **the index, `docs/conventions/README.md`** — a pointer: the
@@ -44,7 +44,7 @@ written from the deliverer's seat.
 ## 1. The artifact
 
 What a convention is, a manual and its artifacts, is
-`docs/models/idea-to-output.md` §6. Here, a convention's artifacts
+`docs/models/idea-to-output.md` §6, *A convention*. Here, a convention's artifacts
 are what a project holds: a run, or this repo, which keeps its own
 under `.claude/`. A skill file for a rule bound to a moment; a rule
 file for a rule bound to a path, or, with no path, to every task;
@@ -52,9 +52,9 @@ stubs and templates for rules that ride in the files a project is
 born with. The masters are real files in the container,
 `delivery/container/`. Which copy of an artifact is the master, and
 how every other copy changes, is the exchange's,
-`docs/conventions/exchange/` §1 and §4. The deliverer's own skills
+`docs/conventions/exchange/` §1, *What cannot change* and §4, *The take*. The deliverer's own skills
 and rules are not copies: it writes its own
-(`docs/conventions/agent-arrangement/` §3.1).
+(`docs/conventions/agent-arrangement/` §3.1, *`skills/`*).
 
 The reader is an agent in a project, holding a pinned copy and
 opening it at the moment of use.
@@ -67,7 +67,7 @@ opening it at the moment of use.
   it rests on once, in a footer headed *Decisions*: each as
   `CBC ADR-nnnn` in one that ships, `ADR-nnnn` in one that stays
   here — the tag is project-recording's rule,
-  `docs/conventions/project-recording/` §3.5 — and a decision this
+  `docs/conventions/project-recording/` §3.5, *A number is local to one repo* — and a decision this
   repo inherited is adopted before a shipped file cites it
   (ADR-0038). A footer line names the section it
   backs, unless it backs the whole file. A stub cites nothing.
@@ -96,7 +96,7 @@ foundation: the <name> convention
 
 `foundation` says what the whole file stands on *now* — a live
 claim, never history — and a file has one
-(`docs/conventions/facts-in-sync/` §4, step 2).
+(`docs/conventions/facts-in-sync/` §4, *The rule for every description*, step 2).
 
 Which files carry it, and where:
 
@@ -128,7 +128,7 @@ What it holds:
 
 The value carries the relation where it is not derivation. Concept
 chapters and models carry none; they are the top. That the line
-travels with a copy is `docs/conventions/exchange/` §3.5.
+travels with a copy is `docs/conventions/exchange/` §3.5, *Every shipped skill, rule…*.
 
 ### 1.4 Stages
 
@@ -147,9 +147,9 @@ since 2026-10-17, as the other skills did.*
 
 A convention's manual is `docs/conventions/<name>/README.md`,
 written for a person and for the maintainer. It never ships
-(`docs/conventions/exchange/` §3.2) and is never loaded into an
+(`docs/conventions/exchange/` §3.2, *What goes*) and is never loaded into an
 agent by default. When a run ignores a convention with no reason
-and comes to no harm (`docs/models/idea-to-output.md` §6.2), its
+and comes to no harm (`docs/models/idea-to-output.md` §6.2, *What a convention asserts*), its
 manual records it. None has yet.
 
 The manual is free prose: the convention stated, from which the
@@ -170,7 +170,7 @@ The form grows from what manuals already hold. The list is the
 floor, and content that fits none of it takes its own heading in
 the body. A section two manuals need becomes the next candidate:
 a pair recurred, the test a shape is written by
-(`docs/conventions/shapes/` §1.2). The list grows no other way.
+(`docs/conventions/shapes/` §1.2, *How one is born*). The list grows no other way.
 
 *Found 2026-09-28, when the form was first written:
 `docs/conventions/exchange/` and `docs/conventions/shapes/` had
@@ -230,10 +230,10 @@ decision 3).*
 
 Numbered sections, free prose. Each numbered section holds one
 subject, and a subject has one section: other sections point at
-it, and do not tell it again. `docs/conventions/facts-in-sync/` §2
+it, and do not tell it again. `docs/conventions/facts-in-sync/` §2, *Point and derive*
 asks the same of a convention's subject across the manuals; this
 asks it inside one. When a section gets a number, and its parts
-too, is `docs/conventions/facts-in-sync/` §3.2.
+too, is `docs/conventions/facts-in-sync/` §3.2, *A section's parts are numbered*.
 
 *Found 2026-10-19: in this manual, §3 held two subjects, how a
 manual is written and how everything stays in step. Nothing said a
@@ -250,7 +250,7 @@ what changed. Another convention, or one project's detail, may
 appear as an example. The statement never stands on it, so it still
 holds when the example is gone.
 
-*Learned 2026-10-18, at `docs/conventions/agent-arrangement/` §3.7.
+*Learned 2026-10-18, at `docs/conventions/agent-arrangement/` §3.7, *`CLAUDE.local.md`*.
 Its first draft said what `CLAUDE.local.md` holds through
 `commit-plan`'s grant of small commits. The reviewer asked for it
 without that dependency and beyond commits. It became a test any
@@ -281,7 +281,7 @@ placing takes these steps:
 1. An ADR for the decisions behind it, opened Proposed when it lands
    inside a change set.
 2. The manual at `docs/conventions/<name>/README.md`, in the form
-   (§2).
+   (§2, *The manual*).
 3. Its artifacts in the container, if it ships any. A convention
    entering or leaving the container updates the birth entry in the
    container's decisions-log stub, in the same commit: a run holds
@@ -313,7 +313,7 @@ conventions took neither — a rule kept where nobody reads it
 The manual reaches no agent: a maintainer reads it. The form of a
 manual is a rule, loading when a manual is read, so it is in view
 while one is worked; a manual written new is written without it
-(`docs/conventions/agent-arrangement/` §5.6). The
+(`docs/conventions/agent-arrangement/` §5.6, *Rules files*). The
 `foundation` line rides in the frontmatter of every shipped skill
 and rule, read by whoever opens the file, because a claim about
 what a file stands on has to travel with the file.
@@ -338,8 +338,8 @@ what a file stands on has to travel with the file.
 ## Where to look
 
 - The chain: `docs/conventions/README.md`.
-- The rule for every description: `docs/conventions/facts-in-sync/` §4.
+- The rule for every description: `docs/conventions/facts-in-sync/` §4, *The rule for every description*.
 - What `foundation` holds for each kind of file: §1.3, above; that
-  it travels with a copy, `docs/conventions/exchange/` §3.5.
+  it travels with a copy, `docs/conventions/exchange/` §3.5, *Every shipped skill, rule…*.
 - A convention whose artifact is a rule, not a skill:
   `docs/conventions/shapes/`.
