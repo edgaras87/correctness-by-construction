@@ -1,7 +1,7 @@
 # devlog/ — work history
 
 One file per month, `<YYYY-MM>.md`, newest entries on top; a new
-month opens its own file. A pointer to an entry names its date —
+month opens its own file. A fact reference to an entry names its date —
 "devlog 2026-09-19" — and the date names the file.
 
 2–5 minutes at the end of each session, and a TODO item's story
@@ -12,4 +12,6 @@ fine, honesty mandatory. Never clean up. Mark dead ends loudly with
 "DEAD END:" so they're greppable. End every session with a "Resume:"
 line — cheapest save-point there is.
 
-<!-- foundation: the project-recording convention -->
+<!-- Why the form is as it is: (docs/conventions/project-recording/
+     §4.4, How).
+     foundation: the project-recording convention -->

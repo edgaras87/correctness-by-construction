@@ -25,6 +25,8 @@
      read before the Ideas are weighed. When an item changes, rewrite
      it true for today — never stack a dated update on it; the
      change's story is the devlog's.
+     Why the form is as it is: (docs/conventions/project-recording/
+     §5.4, How).
      foundation: the project-recording convention -->
 
 ## Now (due while the open step runs)
@@ -62,7 +64,7 @@
       - a cap on its cost, so no plan doubles by habit.
       Trigger: run 5's reading.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
-      §9.
+      §9, *A commit plan's look-back…*.
 
 - [ ] Decide whether the concept, the conventions and the
       approaches keep examples (2026-10-21, the reviewer).
@@ -80,7 +82,7 @@
       - examples kept where a reader learns, gone where a run acts.
       Trigger: run 5's reading.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
-      §10.
+      §10, *Examples in the concept…*.
 
 - [ ] Decide how work is run by agents: delegation, model and
       effort by kind of work, forks or fresh agents, new challenges
@@ -136,8 +138,8 @@
         reaches the agent's setup.
       - `CLAUDE.local.md` repeats two rules, both commit-messages':
         commit on the word, and a stop at each boundary
-        (`docs/conventions/commit-messages/` §2.4, *Commit on the word*). Yet `docs/conventions/agent-arrangement/`
-        §3.7, *`CLAUDE.local.md`* counts how often the agent stops as a setting. Round
+        (`docs/conventions/commit-messages/` §2.4, *Commit on the word*). Yet agent-arrangement counts how often the agent stops as a
+        setting (`docs/conventions/agent-arrangement/` §3.7, *`CLAUDE.local.md`*). Round
         2's FINDING-194 found it again.
       - "never rewrite main across 35edd3f" lives only in the
         agent's memory, unseen by any reader of the repo. Its
@@ -146,7 +148,7 @@
         §2.4, *How*)?
       Trigger: run 5's reading, with the lines gathered by then.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
-      §11; `.claude/decisions.md`, 2026-10-22, the account skills.
+      §11, *How work is run by agents*; `.claude/decisions.md`, 2026-10-22, the account skills.
 
 - [ ] Evaluate `auto-run`, the approach on trial for preparing a
       full-auto run (2026-10-22, the step that birthed run 5).
@@ -193,7 +195,7 @@
         body asserted by path.
       Trigger: `approach-drafting`'s first evaluation, at the
                refinement's close.
-      See: devlog 2026-10-20, later; `TODO-CONVERSATION-MEMORY.md` §2.
+      See: devlog 2026-10-20, later; `TODO-CONVERSATION-MEMORY.md` §2, *How an approach and a shape…*.
 
 - [ ] Decide whether approach drafting becomes a convention
       (2026-10-27, the reviewer).
@@ -213,11 +215,12 @@
       manual as a concept: an idea written down, with sub-ideas,
       and its rules and skills as the convention. "Concept" already
       names the CbC concept and the tiers model's concepts tier.
-      `docs/conventions/facts-in-sync/` §4, *The rule for every description* calls both a description.
+      Facts-in-sync calls both a description
+      (`docs/conventions/facts-in-sync/` §4, *The rule for every description*).
       Ideas:
       - a manual is a concept; its rules and skills, the convention.
-      - "description" stays the general word, as
-        `docs/conventions/facts-in-sync/` §4, *The rule for every description* has it.
+      - "description" stays the general word, as facts-in-sync has it
+        (`docs/conventions/facts-in-sync/` §4, *The rule for every description*).
       Trigger: a second concept repo, when what a concept is gets
                decided (`docs/models/idea-to-output.md` §5, *A model and a concept*).
       See: devlog 2026-10-19, the redesign's ideas.
@@ -266,19 +269,21 @@
       Trigger: the refinement's close, once round 2 has swept one
                home and shown what a sweep finds.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
-      §11, the `claude-md-management` part, and §14.
+      §11, *How work is run by agents*, the `claude-md-management` part, and §14.
 
 - [ ] Write down how a fact reference is written, then rewrite each
       one to it (2026-10-24, the reviewer).
       Context: the first half is done. ADR-0070 settled the form, and
-      its homes hold it: facts-in-sync §1, §3.1, §3.3, §4 and both
-      seats; both `one-home.md`; exchange §3.4 and §5.8; the run's
-      `delivered-copies.md` rule 8 (`2033109`..`f97367b`). Left is
+      its homes hold it (`docs/conventions/facts-in-sync/` §1, *One home*, §3.1, *What it is*,
+      §3.3, *A rename is grepped…*, §4, *The rule for every description* and both seats; both `one-home.md`;
+      `docs/conventions/exchange/` §3.4, *Every shipped file is…* and §5.8, *A skill's template is filled…*; the run's
+      `delivered-copies.md` rule 8) (`2033109`..`f97367b`). Left is
       the rewrite: 329 references gain a title, 129 sentences are
       reworded, 34 uses of "pointer" change, 41 paths inside skills
       run from the root.
       Ideas:
-      - the form and its cases are facts-in-sync §3.1's; what each
+      - the form and its cases are facts-in-sync's
+        (`docs/conventions/facts-in-sync/` §3.1, *What it is*); what each
         decision rejected is ADR-0070's.
       - a commit plan of its own, by layer as the refinement's work
         ran, now `COMMIT-PLAN.md`; lines written since 2026-10-28
@@ -291,7 +296,7 @@
         most lines and add nothing.
       Trigger: now, before round 3's rule check.
       See: ADR-0070; devlog 2026-10-24, the text-division item;
-      `TODO-CONVERSATION-MEMORY.md` §13.
+      `TODO-CONVERSATION-MEMORY.md` §13, *What the reference…*.
 
 - [ ] Decide how an item names the items it waits on, and what
       happens when one closes (2026-10-24, the reviewer).
@@ -317,16 +322,16 @@
 - [ ] Decide whether a session's end has a home of its own, and
       what it holds (2026-10-22, the reviewer).
       Context: a session's end is spread out.
-      `docs/conventions/project-recording/` §4, *Devlog — the engineering…* asks for a devlog
-      entry and a Resume line. Two habits
+      Project-recording asks for a devlog entry and a Resume line
+      (`docs/conventions/project-recording/` §4, *Devlog — the engineering…*). Two habits
       live only in the agent's own memory: a line per
       delegation, and, from 2026-10-22, one missing-context
       finding. A reader of the repo sees neither.
       Ideas:
       - a convention of its own, by its moment; the sweep its
         twin for work that has landed.
-      - a section of `docs/conventions/project-recording/` §4, *Devlog — the engineering…*,
-        since most of it is devlog writes.
+      - a section of project-recording's devlog part
+        (`docs/conventions/project-recording/` §4, *Devlog — the engineering…*), since most of it is devlog writes.
       - an approach on trial first (ADR-0058).
       - a rule loaded every session, naming each duty and its
         home.
@@ -346,13 +351,12 @@
                work lands", its twin; ADR-0063's kinds now place
                either.
       See: devlog 2026-10-22, later; `TODO-CONVERSATION-MEMORY.md`
-      §12.
+      §12, *A session's end*.
 
 - [ ] Decide how commits cited by hash can still be regrouped
       (2026-10-19, the reviewer).
-      Context: `.claude/skills/commit-plan/SKILL.md` §4, *Lifecycle* regroups a
-      set's commits before its
-      close, and a regroup gives them new hashes. This repo cites
+      Context: our `commit-plan` skill regroups a set's commits before
+      its close (`.claude/skills/commit-plan/SKILL.md` §4, *Lifecycle*), and a regroup gives them new hashes. This repo cites
       hashes in living text: the refinement's file, TODO, other
       commit bodies. So the refinement's commits up to `ccce6af`
       were not regrouped, and the history keeps every small fix,
@@ -365,21 +369,19 @@
       - rewrite the citations with the regroup: a map of old hash
         to new, grepped and replaced in the same rewrite.
       - regroup only on the branch, before main takes it.
-      Trigger: the refinement of this repo closes; its rounds read
-               `commit-plan` and `docs/conventions/facts-in-sync/` §3, *The fact reference*.
+      Trigger: the refinement of this repo closes; its rounds read `commit-plan` and the fact reference's form
+        (`docs/conventions/facts-in-sync/` §3, *The fact reference*).
       See: devlog 2026-10-19, regrouping.
 
 - [ ] Make the conventions index a full local map (2026-09-30, the
       reviewer).
       Context: its chain shows only the conventions that act in
       sequence during a piece of work. The other nine relate by what
-      they govern, read or describe, stated as about thirty pointers
-      across the manuals' *What this does not cover*, and seen
+      they govern, read or describe, stated as about thirty fact references across the manuals' *What this does not cover*, and seen
       together nowhere. The local-map rule now exists
       (`docs/conventions/project-recording/` §8.6, *Local maps*, ADR-0045).
       Ideas:
-      - all twelve and how each touches the others, derived from
-        those pointers, built by `visual-comparison`.
+      - all twelve and how each touches the others, derived from those references, built by `visual-comparison`.
       - three links, each with its upkeep: derives
         (`docs/conventions/facts-in-sync/` §4, *The rule for every description*, the foundation
         check), points (one home, the grep at a commit that moves a
@@ -425,13 +427,13 @@
       - `cbc-framing` writes a status line into the README, where
         the README's form, its header comment, keeps changing status
         in PLAN: how that line lived in run 4.
-      - whether run 4 confirmed its plan's steps once framed, as
-        `docs/conventions/project-recording/` §9.4, *How* says a run does,
+      - whether run 4 confirmed its plan's steps once framed, as project-recording says a run does
+        (`docs/conventions/project-recording/` §9.4, *How*),
         though no skill or step asks it: if not, whether the playbook's
         Framing step should.
       Trigger: the refinement of this repo closes; in a new session.
       See: `f097695`, the kickoff and the message it took;
-      `TODO-CONVERSATION-MEMORY.md` §5.
+      `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's reading: two moves…*.
 
 - [ ] Decide whether our own forms become shapes, and whether a
       shape's part can be optional (2026-10-17, the reviewer).
@@ -460,8 +462,8 @@
         decides; as a shape, it would stand on the shapes convention.
       - a record's form, in its header comment, stays
         project-recording's: it is read when the record is opened,
-        while an entry is written, which
-        `docs/conventions/shapes/` §3, *One place, read at the gate* keeps for rules.
+        while an entry is written, which the shapes manual keeps for rules
+        (`docs/conventions/shapes/` §3, *One place, read at the gate*).
         Only `.claude/decisions.md` holds one under another
         convention, agent-arrangement. The open forms are those in
         rules: a manual's, a reading's.
@@ -474,7 +476,7 @@
       Trigger: run 4's reading, which reads how run 4 lived run 3's
                shapes.
       See: devlog 2026-10-17, our forms as shapes; 2026-10-20,
-      later, layouts; `TODO-CONVERSATION-MEMORY.md` §3.
+      later, layouts; `TODO-CONVERSATION-MEMORY.md` §3, *Layouts as shapes*.
 
 - [ ] Try a readability pass, the reviewer marking where text is
       hard to read (2026-10-18, the reviewer).
@@ -499,17 +501,19 @@
 
 - [ ] Write a rule that writes a skill or rule from its convention
       (2026-10-17, the reviewer).
-      Context: `docs/conventions/conventions/` §1, *The artifact* says how a skill
-      or rule is written, and nothing puts it in front of the
+      Context: the conventions manual says how a skill or rule is
+      written (`docs/conventions/conventions/` §1, *The artifact*), and nothing puts it in front of the
       writer: a manual has `convention-manual.md`, a skill or rule
       has no such rule. An approach on trial writes freely, and its
       pieces are input: what the work needed. When an evaluation
-      places one, the lasting form comes from
-      `docs/conventions/conventions/`: the manual by §2, each skill
-      or rule from it by §1.
+      places one, the lasting form comes from the conventions manual: the manual by
+      (`docs/conventions/conventions/` §2, *The manual*), each skill or
+      rule from it by (`docs/conventions/conventions/` §1, *The artifact*).
       Ideas:
-      - a rule derived from `docs/conventions/conventions/` §1, *The artifact*, as
-        `convention-manual.md` is from §2, on `.claude/skills/`,
+      - a rule derived from the conventions manual's artifact part
+        (`docs/conventions/conventions/` §1, *The artifact*), as
+        `convention-manual.md` is from its manual part
+        (`docs/conventions/conventions/` §2, *The manual*), on `.claude/skills/`,
         `.claude/rules/` and `delivery/`.
       - a `paths:` rule loads only when a file is touched, and the
         commit is the other moment
@@ -545,13 +549,14 @@
         reference's "passes"; 224, the "lived" markers; 227,
         `cbc-framing`'s export section, `infra-establish`'s manuals
         told three times, the worked example's two layouts; 228,
-        the walkthrough's §4 parts; and 206, the playbook's 12
+        the walkthrough's parts in its fourth section
+        (`delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md` §4, *Stand up the evidence harness*); and 206, the playbook's 12
         citations of run 3's RETRO.
       Trigger: the refinement of this repo closes. Its writing kind
                reads these texts; what round 3 did leaves this
                item, and what is left stays or goes.
       See: devlog 2026-10-17, later, the plain method;
-      `TODO-CONVERSATION-MEMORY.md` §6.
+      `TODO-CONVERSATION-MEMORY.md` §6, *The method's plain rewrite…*.
 
 - [ ] Run this repo's retrospective, on trial (2026-10-17, from
       Step 10's gate).
@@ -566,9 +571,10 @@
       own files (2026-09-30, the reading of run 3).
       Context: our shipped `.claude/rules/shapes-lifecycle.md` sat
       at run 3's own rule's path, so the take landed ours over the
-      run's. Two checks in `docs/conventions/exchange/` miss it:
-      §3.4 checks only that no path is claimed by two of our groups;
-      the take's diff, §4, sees that a file differs, not whose it is.
+      run's. Two checks in the exchange miss it: one checks only that no path
+      is claimed by two of our groups (`docs/conventions/exchange/` §3.4, *Every shipped file is…*);
+      the take's diff sees that a file differs, not whose it is
+      (`docs/conventions/exchange/` §4, *The take*).
       Once so far; checked by hand at `e6538f6`: no staged path was new.
       The method's four shapes sit at run 3's own `.claude/shapes/`
       paths (ADR-0052); the next birth is where they first land.
@@ -636,12 +642,13 @@
       - one home: facts, their home, fact references, and how a
         disagreement between linked texts is settled.
       - the deliverer and the run, with seats.
-      - a shape, whose `docs/conventions/shapes/` §1.1, *What it says* and §2, *What a shape is not* say what
-        one is.
+      - a shape: the shapes manual says what one is
+        (`docs/conventions/shapes/` §1.1, *What it says*, and §2, *What
+        a shape is not*).
       - records: what a record is, a form and its entries; what a
         set of records answers; how each seat adapts it, as the
-        refinement's DECISION-12 map shows. Weighed against
-        `docs/models/idea-to-output.md` §2, *The kinds*, which holds part of it.
+        refinement's DECISION-12 map shows. Weighed against the idea-to-output model, which holds part of
+        it (`docs/models/idea-to-output.md` §2, *The kinds*).
       Trigger: the refinement's close, once facts-in-sync, whose
                subject is the first idea, has lived through round 2.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
@@ -664,8 +671,9 @@
       Context: the text-division item had a model only where several
       manuals share an idea. The reviewer asked to weaken that: a
       model for one convention, "to see general idea behind that
-      convention". `docs/models/idea-to-output.md` §4.2, *Up, work to an idea* has a model
-      come from a convention whose idea is general enough.
+      convention". Idea-to-output has a model come from a convention whose idea is
+      general enough (`docs/models/idea-to-output.md` §4.2, *Up, work to
+      an idea*).
       Trigger: a convention whose idea another repo could use, with
                no second manual sharing it.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
@@ -677,8 +685,8 @@
       serves only when the lesson is changed or questioned. The 12
       manuals hold 56 such notes, 286 of 3,817 lines (7%); our
       `.claude/`, 17 and 115 lines (3%). Each loads with its file.
-      Round 2's read found 6 rules standing only in a note. Round 2
-      reads against `docs/conventions/conventions/` §2.6, *A lesson taken*, so the
+      Round 2's read found 6 rules standing only in a note. Round 2 reads against the conventions manual's lesson rule
+      (`docs/conventions/conventions/` §2.6, *A lesson taken*), so the
       rule stays until the round closes.
       Ideas:
       - examples stay; each origin becomes one line pointing at its
@@ -687,7 +695,7 @@
       - an origin with no other home gets one: a devlog entry
         written the day it moves.
       - weighed on maintenance, readability, future-proofing and
-        complexity, the pointer held best; the full note held only
+        complexity, the fact reference held best; the full note held only
         on future-proofing.
       - "Decide whether the concept, the conventions and the
         approaches keep examples" weighs the examples; this item,
@@ -695,7 +703,7 @@
       Trigger: round 2 of the refinement closes, before round 3's
                rule check.
       See: devlog 2026-10-25, evening; `TODO-CONVERSATION-MEMORY.md`
-      §18.
+      §18, *The story behind a lesson*.
 
 - [ ] Decide what "rule" names, and give the agent's rule files a
       name of their own (2026-10-25, the reviewer).
@@ -705,7 +713,8 @@
       line inside one, "one-home rule 3": 17. What a text says must
       be done, "the bump rule". In a run, a rule the built system
       keeps, "one row per rule": 5. `docs/glossary.md` defines none.
-      `docs/conventions/conventions/` §1, *The artifact* is about the files, yet its
+      The conventions manual's artifact part is about the files
+      (`docs/conventions/conventions/` §1, *The artifact*), yet its
       "A rule is one sentence in the imperative" means a line.
       Ideas:
       - "agent rule" for the file, plain "rule" for what must be
@@ -721,7 +730,7 @@
       Trigger: round 3's rule check, so its Writing kind reads
                against the chosen words.
       See: devlog 2026-10-25, evening; `TODO-CONVERSATION-MEMORY.md`
-      §19; `163767f`.
+      §19, *What "rule" names*; `163767f`.
 
 - [ ] Decide whether a standing full read looks for missing fact
       references, and for references pointing down (2026-10-27, the
@@ -740,7 +749,8 @@
         relies on a fact and says where.
       - one kind per agent; other kinds may share the read, each
         with its own agent.
-      - it reads against facts-in-sync §3.1 once the settled form is
+      - it reads against the reference's form
+        (`docs/conventions/facts-in-sync/` §3.1, *What it is*) once the settled form is
         written there.
       - a second kind for the same read: direction (ADR-0071). A
         line in a model or a manual that relies on a lower text is
@@ -751,7 +761,7 @@
       Trigger: a read finds a missing fact reference in text written
                after the per-commit check is in force, or a reference
                pointing down in text written after ADR-0071.
-      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §21.
+      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §21, *A full read for missing fact…*.
 
 - [ ] Test fact references and foundations as a whole: name every
       scenario a change brings, and check each still holds
@@ -785,19 +795,20 @@
         item; the test changes no rule itself.
       Trigger: the refinement closes.
       See: devlog 2026-10-28; ADR-0070;
-      `TODO-CONVERSATION-MEMORY.md` §22.
+      `TODO-CONVERSATION-MEMORY.md` §22, *Testing fact references…*.
 
 - [ ] Look again at where a run learns how to treat a skill's
       template (2026-10-28, the reviewer).
       Context: four shipped files told the off-template rule in
       their own words, and drifted: deviate from a skill's template,
       derive from what it implements, log it, expect a harvest,
-      never bend a decided constraint to fit it. On 2026-10-28 it went to
-      exchange §5.8 and the run's `delivered-copies.md`, chosen on
+      never bend a decided constraint to fit it. On 2026-10-28 it went to the exchange
+      (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*) and the run's `delivered-copies.md`, chosen on
       one reading, with no run having lived it.
       Ideas:
       - (a) one skill states it; the others point.
-      - (b) delivered copies: exchange §5.8 and the run's
+      - (b) delivered copies: the exchange
+        (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*) and the run's
         `delivered-copies.md`; today's choice.
       - (c) each skill's template states it in its own header,
         where a run meets the choice.
@@ -805,7 +816,8 @@
       - weigh each by maintenance, readability, future-proofing and
         complexity.
       - check that every manual and shipped text that speaks of a
-        skill's templates agrees with §5.8 and `delivered-copies.md`,
+        skill's templates agrees with the exchange (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*) and
+        `delivered-copies.md`,
         and that `delivery/README.md` and ADR-0008 still match.
       - check that each use says whose template it is: a skill's,
         repo-hygiene's, or a record stub. Of 97 uses in living text,
@@ -849,7 +861,7 @@
         `writing.md` takes the rule.
       Trigger: round 3's rule check, so its Writing kind reads
                against the rule.
-      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §23.
+      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §23, *A word with more than one…*.
 
 - [ ] Decide how a section title is written (2026-10-28, the
       reviewer).
@@ -871,8 +883,8 @@
         nothing.
       - the manual form's fixed headings, such as *What it is for*,
         stay the form's.
-      - a retitle after the reference rewrite is a scripted replace:
-        facts-in-sync §3.3 greps titles.
+      - a retitle after the reference rewrite is a scripted replace, since a rename's grep covers titles
+        (`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped…*).
       Trigger: round 3's rule check, so its Writing kind reads the
                titles against it.
       See: devlog 2026-10-28; ADR-0070.
@@ -914,14 +926,14 @@
       - what is tracked is read again when the repo grows a new kind
         of thing.
       - the stub gains a `Tracks:` line beside `Versioning:`, decided
-        at Framing, with when to revisit it; the lesson goes in
-        `docs/conventions/project-recording/` §6, *CHANGELOG.md*.
+        at Framing, with when to revisit it; the lesson goes in project-recording's changelog part
+        (`docs/conventions/project-recording/` §6, *CHANGELOG.md*).
       - a fill sets a CbC run's two lines at birth, as the playbook
         fills its plan; we fill ours in place
         (`docs/conventions/project-recording/` §9.4, *How*, step 1).
       Trigger: the release item above opens; its CHANGELOG entry
                needs the answer.
-      See: devlog 2026-10-21; `TODO-CONVERSATION-MEMORY.md` §4.
+      See: devlog 2026-10-21; `TODO-CONVERSATION-MEMORY.md` §4, *What our changelog tracks*.
 
 - [ ] Decide how the worked example's two copies are kept: checked
       by a diff, or made one (2026-09-17, and 2026-10-15 for the
@@ -991,18 +1003,19 @@
       text every run holds a copy of, so numbering them would change
       every copy for no reader yet
       (`docs/conventions/facts-in-sync/` §3.2, *A section's parts are numbered* numbers by form).
-      Trigger: the first pointer that needs a section of a chapter.
+      Trigger: the first fact reference that needs a section of a
+               chapter.
       See: devlog 2026-09-30, numbered parts.
 
 - [ ] Does the playbook need a convention of its own? (2026-09-29,
       the reviewer)
-      Context: `docs/conventions/project-recording/` §9, *Playbook — the cross-project…* describes
-      it, and one playbook exists, the CbC run's. It is not a
-      shape: `docs/conventions/shapes/` §1.1, *What it says* and §2, *What a shape is not* say a shape is form,
-      never content, and a filled-in template is not one; a
+      Context: project-recording describes it
+      (`docs/conventions/project-recording/` §9, *Playbook — the cross-project…*), and one playbook exists, the CbC run's. It is not a shape: a shape is form, never content
+      (`docs/conventions/shapes/` §1.1, *What it says*, and §2, *What a
+      shape is not*), and a filled-in template is not one; a
       playbook is content, copied and filled at birth.
-      Ideas: a convention of its own, split from
-             `docs/conventions/project-recording/` §9, *Playbook — the cross-project…*.
+      Ideas: a convention of its own, split from project-recording's playbook part
+        (`docs/conventions/project-recording/` §9, *Playbook — the cross-project…*).
       Trigger: a second typed playbook.
       See: devlog 2026-09-29, the PLAN pass.
 
@@ -1019,8 +1032,8 @@
 
 - [ ] Move the tiers model to the garden (2026-09-30).
       Context: it maps the workspace, and the workspace has no home:
-      by `docs/models/tiers.md` §2.2, *Concepts* the garden stays a plain folder
-      until a second concept repo exists. Until then it lives here,
+      the garden stays a plain folder until a second concept repo
+      exists (`docs/models/tiers.md` §2.2, *Concepts*). Until then it lives here,
       beside the agent model; `docs/models/` stays.
       Trigger: a second concept repo.
       See: devlog 2026-09-30, the tiers model.
@@ -1081,10 +1094,10 @@
       deleted without one, so what run 3 had addressed to us since
       its pin had no verdict until the reading of 2026-09-30 read it
       again — three edits to copies, ten asks and offers.
-      `docs/conventions/exchange/` §6.4, *A reading closes two ways* closes an overtaken reading
-      "the same way", one pass over its items, and is silent on the
-      note `docs/conventions/exchange/` §6.6, *Every read ends with a note* says every read ends
-      with. Once so far.
+      The exchange closes an overtaken reading
+      (`docs/conventions/exchange/` §6.4, *A reading closes two ways*)
+      "the same way", one pass over its items, and is silent on the note every read ends with
+      (`docs/conventions/exchange/` §6.6, *Every read ends with a note*). Once so far.
       Ideas: the overtaken reading sends a note: read, asks open.
              the next read goes back to the last note's read-through.
       Trigger: the next reading overtaken.

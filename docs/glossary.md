@@ -33,8 +33,8 @@ manual owns the thing a word names, pointed at there.
   of it (`docs/conventions/exchange/` §1, *What cannot change*, fact 3).
 - **read-through**, **pin** — the two numbers a run records for a
   delivery: its own commit the deliverer last read up to, and the
-  deliverer's commit its copies equal. The exchange's,
-  `docs/conventions/exchange/` §2.2, *The run*.
+  deliverer's commit its copies equal. The exchange's
+  (`docs/conventions/exchange/` §2.2, *The run*).
 - **delivery** — files copied whole into a run with a note, or a
   note alone. At birth, and after (`docs/conventions/exchange/`
   §3.2, *What goes*, §6.6, *Every read ends with a note*).
@@ -56,8 +56,8 @@ manual owns the thing a word names, pointed at there.
 - **description** — how we understand a thing today, written down:
   the concept, a model, a manual. It may be wrong or
   incomplete and is canonical regardless; what derives from it
-  applies it and does not explain. One rule for all of them,
-  `docs/conventions/facts-in-sync/` §4, *The rule for every description*; they differ at the edges
+  applies it and does not explain. One rule for all of them
+  (`docs/conventions/facts-in-sync/` §4, *The rule for every description*); they differ at the edges
   (ADR-0039).
 - **model** — the top description of a chain of texts: an idea any
   repo can adapt, its rules varying by repo, like an interface. A
@@ -129,8 +129,8 @@ manual owns the thing a word names, pointed at there.
   work a step here is our `PLAN.md`'s step form (ADR-0057).
 - **stage** — one phase of a skill, numbered from Stage 0:
   `cbc-slice`'s Stage 3, `cbc-framing`'s Stage 2. A step's Now line
-  names the stage it is in. How a skill names them:
-  `docs/conventions/conventions/` §1.4, *Stages*.
+  names the stage it is in. How a skill names them is the conventions manual's
+  (`docs/conventions/conventions/` §1.4, *Stages*).
 - **conversation-memory** — the talk that shaped a TODO item,
   kept beside it in `TODO-CONVERSATION-MEMORY.md`: what was asked,
   the options weighed, what was said for and against. It decides

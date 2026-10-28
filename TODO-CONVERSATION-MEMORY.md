@@ -19,6 +19,8 @@
      the file stays, empty or not.
 
      Last touched: 2026-10-28.
+     Why the form is as it is: (docs/conventions/project-recording/
+     §14, Conversation-memory…).
      foundation: the project-recording convention -->
 
 # TODO's conversation-memory

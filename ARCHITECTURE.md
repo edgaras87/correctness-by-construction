@@ -13,6 +13,8 @@
      repo and in the live run, and mark anything merely intended as
      intended. A line found wrong, or two that contradict, and not
      fixed at once, is a TODO known issue until it is.
+     Why the form is as it is: (docs/conventions/project-recording/
+     §8.4, How).
      foundation: the project-recording convention -->
 
 ## Overview
@@ -47,9 +49,10 @@ how to use it, is `README.md`.
                          and take what it learned
 ```
 
-Where each group lands, and which files are copies, is
-`delivery/README.md` §1, *The groups are pieces…* and §2, *Three ways a file lands*; the cycle of pins and readings is
-`docs/conventions/exchange/` §2.5, *One cycle, drawn*.
+Where each group lands, and which files are copies, is the delivery map's
+(`delivery/README.md` §1, *The groups are pieces…*, and §2, *Three ways a file lands*);
+the cycle of pins and readings is the exchange's
+(`docs/conventions/exchange/` §2.5, *One cycle, drawn*).
 
 ---
 
@@ -70,8 +73,8 @@ spine of this repo. The models ship nothing either:
 Five chapters, `concept/00-cbc.md` first.
 
 - **Canonical here.** Every copy elsewhere, a run's `docs/concept/`,
-  is a copy; what a run may do to it is
-  `docs/conventions/exchange/` §5.6, *A chapter only from a lived…*. The concept changes only here.
+  is a copy; what a run may do to it is the exchange's
+(`docs/conventions/exchange/` §5.6, *A chapter only from a lived…*). The concept changes only here.
 - **Versioned as a whole**, not per chapter. It is at **v1**, and
   CHANGELOG's [Unreleased] holds a change that makes the next
   release v2 (ADR-0048). When its version moves is `CHANGELOG.md`'s
@@ -83,8 +86,8 @@ Five chapters, `concept/00-cbc.md` first.
 
 How work is done here, and why each rule is as it is. None of it is
 CbC: the concept is about how a system is built, the conventions
-about how a repo is kept. What a convention is, and its two parts,
-is `docs/models/idea-to-output.md` §6, *A convention*; how they hand work to each
+about how a repo is kept. What a convention is, and its two parts, is the model's
+(`docs/models/idea-to-output.md` §6, *A convention*); how they hand work to each
 other is the index, `docs/conventions/README.md`.
 
 - **agent-arrangement** — the files that make an agent work in a
@@ -121,8 +124,8 @@ line.
 ## 2. The delivery, and the runs it reaches
 
 What ships, by group. How each group lands in a run is the
-delivery's local map, `delivery/README.md`. The concept's list of
-what derives from it is §2.1, §2.2 and the playbook in §2.4; the
+delivery's local map, `delivery/README.md`. The concept's list of what derives from it is the method, the stack
+practice and the playbook (§2.1, *The method…*, §2.2, *The stack practice…* and §2.4, *What does not travel…*); the
 chapters carry none (`docs/conventions/facts-in-sync/` §4, *The rule for every description*, step 1).
 
 ### 2.1 The method — `delivery/method/`
@@ -191,7 +194,7 @@ of the tree, or a check at commit review.
 
 | Rule | Stated in | Held by |
 |---|---|---|
-| The concept is canonical here; the archive it came from is a frozen snapshot, never a source | §1.1; `CHANGELOG.md`'s `[v1]` entry | commit review |
+| The concept is canonical here; the archive it came from is a frozen snapshot, never a source | §1.1, *The concept — `concept/`*; `CHANGELOG.md`'s `[v1]` entry | commit review |
 | A concept change that could invalidate what derives from it lands with a version entry | `CHANGELOG.md`'s standing comment (ADR-0003) | commit review |
 | Every execution states the concept version it derives from | `docs/conventions/conventions/` §1.3, *The `foundation` line* (ADR-0004, ADR-0036) | its `foundation` line, which travels with every copy |
 | Every file a run receives has its master here, in the group that ships it | `docs/conventions/exchange/` §1, *What cannot change* and §3.2, *What goes* | `exchange-deliver`, which stages only from the masters |
@@ -209,8 +212,8 @@ of the tree, or a check at commit review.
      too long for that column moves every line, so a new one is
      fitted to it (ADR-0044). -->
 
-A line marked *record* is one of the records; what each answers is
-`docs/conventions/project-recording/` §1, *The records at a glance*.
+A line marked *record* is one of the records; what each answers is project-recording's
+(`docs/conventions/project-recording/` §1, *The records at a glance*).
 
 ```
 README.md            record

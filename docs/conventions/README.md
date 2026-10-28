@@ -4,8 +4,8 @@ A local map (`docs/conventions/project-recording/` §8.6, *Local maps*): how the
 during a piece of work hand to each other, from an idea to committed
 work. The others relate through what they govern, read or describe,
 and each states those relations in its manual's *What this does not
-cover*. Which conventions there are and what each covers is
-`ARCHITECTURE.md` §1.2, *The conventions…*; what a convention is, how one is written and
+cover*. Which conventions there are and what each covers is the map's
+(`ARCHITECTURE.md` §1.2, *The conventions…*); what a convention is, how one is written and
 how one is added is `docs/conventions/conventions/`.
 
 ## The chain

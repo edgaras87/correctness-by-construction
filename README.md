@@ -70,4 +70,6 @@ and where each is explained, is the records map:
      it went is the devlog's. A missing section is not an omission: it
      arrives when a step's gate makes it true — projection follows
      truth.
+     Why the form is as it is: (docs/conventions/project-recording/
+     §7.4, How).
      foundation: the project-recording convention -->

@@ -18,6 +18,8 @@ concept versions — whole numbers, not SemVer (ADR-0003).
      derived from it or checked against it; a convention's change,
      or the delivery's, is none — a manual has no version
      (ADR-0039).
+     Why the form is as it is: (docs/conventions/project-recording/
+     §6.4, How).
      foundation: the project-recording convention -->
 
 ## [Unreleased]

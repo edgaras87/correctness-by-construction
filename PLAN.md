@@ -18,6 +18,8 @@
 <!-- Copied into a step when it opens, and filled in. The run's
      form, delivery/fills/cbc-run-pure-playbook.md, adapted to this
      seat (ADR-0057).
+     Why the form is as it is: (docs/conventions/project-recording/
+     §2.4, How).
      foundation: the project-recording convention -->
 
 **A step is the one piece of work being done now:** a reading of a
@@ -110,7 +112,7 @@ fast-forward that it would make untrue.
 
 **A step can stop when another must come first.** It stays in
 the plan, marked `[!]`: "stopped: <the step that comes first>",
-with a pointer to the devlog entry that says why. Its Now line
+naming the devlog entry that says why. Its Now line
 keeps the stage it stopped at. Main takes its branch so far by
 fast-forward, on the reviewer's word, and the next step is cut
 from main. To resume, its branch is fast-forwarded to main, it
@@ -130,9 +132,8 @@ corner.
 
 ## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
 
-Goal: Living text written before a rule now meets that rule, and
-`docs/conventions/project-recording/` §1, *The records at a glance* is a map of the records
-in both seats.
+Goal: Living text written before a rule now meets that rule, and project-recording's list of the records maps them in both seats
+(`docs/conventions/project-recording/` §1, *The records at a glance*).
 Now: round 2's close read: all the text round 2 covered, read again
 against its four kinds
 (`.claude/approaches-on-trial/refinement.md` §2.8, *A round's close*).
@@ -172,8 +173,9 @@ Gate:
       with its reason, or a TODO item.
 - [ ] The last read found nothing that breaks a rule
       (`.claude/approaches-on-trial/refinement.md` §2.9, *The last read*).
-- [x] `docs/conventions/project-recording/` §1, *The records at a glance* shows in one view
-      which record answers what, in both seats. It includes
+- [x] Project-recording's list of the records shows in one view which
+      record answers what, in both seats
+      (`docs/conventions/project-recording/` §1, *The records at a glance*). It includes
       `RETRO.md`, `COMMIT-PLAN.md`, `docs/system/`, and records
       another convention owns (2026-10-26; one view read as one
       section for both seats, not one screen, ADR-0067 decision 4).
@@ -213,7 +215,8 @@ Notes:
 - Opened 2026-10-18 from TODO's refinement item. The records map
   item joined it, as its trigger asked. Both items, with their
   Ideas, are in `TODO.md` at `b3b2018`.
-- Stages, from `.claude/approaches-on-trial/refinement.md` §2, *The stages*:
+- Stages, from the refinement
+  (`.claude/approaches-on-trial/refinement.md` §2, *The stages*):
   1. before round 1: group the kinds into rounds, which creates
      the refinement's file; list the files by layer; check the
      rules (`.claude/approaches-on-trial/refinement.md` §2.1, *Group the kinds* to
