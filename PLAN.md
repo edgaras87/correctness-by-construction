@@ -130,7 +130,7 @@ corner.
 
 ---
 
-## Step: Take run 5's lessons for run 6  (`.claude/rules/working-a-reading.md`, `commit-plan`, the foundation check)    [~]
+## Step: Take run 5's lessons for run 6  (`.claude/rules/working-a-reading.md`, `commit-plan`, the foundation check)    [!] stopped: Birth run 6, on full auto (devlog 2026-10-29, later)
 
 Goal: Run 6 can be born from files that carry what run 5 learned
 for it: run 5's reading has DECISION-1, DECISION-2 and DECISION-5

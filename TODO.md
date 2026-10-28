@@ -40,10 +40,11 @@
       delivers everything and decides nothing. Then *What this does
       not do* in `.claude/skills/exchange-deliver/SKILL.md` points at
       it, `pure-seed.md` goes, and ADR-0016's procedure of record
-      moves. Run 5 is born by the seed, to keep its birth small.
+      moves. Runs 5 and 6 are born by the seed, to keep their births
+      small.
       Ideas: first-time work on our seat, so an approach on trial
              drafted by `approach-drafting` (ADR-0058).
-      Trigger: the birth after run 5's.
+      Trigger: the birth after run 6's.
       See: devlog 2026-09-26, evening; and 2026-09-30, night,
       later, where `pure-seed.md` was brought up to date for it.
 
