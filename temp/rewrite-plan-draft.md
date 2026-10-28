@@ -39,7 +39,8 @@ entries.
 
 ## Before it opens
 
-TODO's "Decide which way a fact reference may point" is worked
+TODO's "Write down which way a fact reference may point, then lift
+what the models borrow from below" is worked
 first: it may remove references a model makes downward, which this
 plan would otherwise rewrite. "Write when a bold lead is a part" was
 worked first for the same reason (`e61d47b`).

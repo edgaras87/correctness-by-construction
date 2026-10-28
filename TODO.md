@@ -651,49 +651,33 @@
                of the model behind it.
       See: ADR-0063.
 
-- [ ] Decide which way a fact reference may point: up, sideways,
-      across chains (2026-10-23, the reviewer).
-      Context: `docs/models/idea-to-output.md` §3.2 says every link
-      points up; §3.1, that a line may point at a fact's home in any
-      document. Practice points sideways: each manual's *What this
-      does not cover*, and a skill's `requires`. 11 of 12 manuals
-      point at the agent model without standing on it, as the manual
-      form asks. One points down: `docs/conventions/conventions/`
-      §3, at `approach-evaluation.md`. No approach points at a model. Nothing
-      says what "up" means within one level, or across two chains.
-      Ideas:
-      - the tiers model points down four times, at
-        `docs/conventions/exchange/` three and `delivery/README.md`
-        §2 once, and holds this repo's instance: "today" facts and
-        three ADRs. It would speak of tiers in general, the instance
-        moving to the README, home of what this repo is (round 2's
-        layer 4). `docs/models/idea-to-output.md` §2's table names `.claude/shapes/`.
-      - "up" as toward the fact the line relies on, at any level.
-      - sideways allowed for a fact another convention owns.
-      - an approach pointing at a model when no convention holds the
-        fact (ADR-0063 decision 4 has it stand on a description).
-      - `.claude/rules/convention-manual.md` item 5 says "Pointers
-        to other conventions": narrower than practice, since
-        manuals point at models too, and "pointer" names what
-        facts-in-sync calls a fact reference.
-      - a grep for `requires` in the walk
-        (`docs/conventions/facts-in-sync/` §4, step 3): `requires`
-        is a link (`docs/models/idea-to-output.md` §3.1), and the
-        walk greps only paths and `foundation` names.
-      - `docs/conventions/conventions/` §1.2 says `requires` names
-        the conventions a skill delegates to, and also that it
-        refers to a skill by name; `commit-plan` requires
-        `project-recording`, a convention with no skill.
+- [ ] Write down which way a fact reference may point, then lift
+      what the models borrow from below (2026-10-23, the reviewer).
+      Context: three decisions of 2026-10-28, in Ideas; no manual
+      holds them yet. Their homes: idea-to-output §3, facts-in-sync
+      §3.1, conventions §1.2, our `convention-manual.md`. Then the
+      lift: the tiers model takes the general flows from exchange §1,
+      the exchange stands on it, and this repo's instance goes to
+      `README.md`. Four skills lose `requires`. Before the reference
+      rewrite, which would otherwise rewrite these lines twice.
+      Ideas, taken 2026-10-28:
+      - a line that relies on a fact points at its home at its own
+        level or above, never below; a line that only names or lists
+        a text may name any level.
+      - a reference down becomes a lift: the general idea moves into
+        the model and the lower text stands on it, or the model says
+        one general line. Facts about this repo go to `README.md`; a
+        marked example may stay.
+      - `requires` goes: groups ship whole, the tool ignores it, and
+        the lines inside a skill say it with fact references.
+        ADR-0063's "kept" is reversed, and five links become four.
+      - the lift is drafted as an approach on trial while it runs
+        ("Decide how a text finds its foundation").
       - `docs/conventions/shapes/` §5.2's four endings are a case of
-        `docs/models/idea-to-output.md` §3.3 and do not point at it;
-        `docs/conventions/facts-in-sync/` §5 does.
-      Trigger: round 2 of the refinement closes, before round 3's
-               rule check, with "Decide how a fact reference is
-               written". Round 2's Dependencies reading is its
-               evidence.
-      See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1;
-      devlog 2026-10-25, later; `TODO-CONVERSATION-MEMORY.md` §16;
-      `163767f`.
+        `docs/models/idea-to-output.md` §3.3 and do not point at it.
+      Trigger: now, before the reference rewrite.
+      See: ADR-0063; devlog 2026-10-25, later;
+      `TODO-CONVERSATION-MEMORY.md` §16.
 
 - [ ] Decide whether a model may be written for one convention
       (2026-10-23, the reviewer).
@@ -705,6 +689,28 @@
       Trigger: a convention whose idea another repo could use, with
                no second manual sharing it.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
+
+- [ ] Decide how a text finds its foundation, and how a missing one
+      is written (2026-10-28, the reviewer).
+      Context: `docs/models/idea-to-output.md` §4.2 names the path
+      up: work, an approach on trial, a convention, a model. The
+      first step is `approach-drafting.md`, the second
+      `approach-evaluation.md` and conventions §3; the third, a
+      convention's idea lifted into a model, is "not yet lived here"
+      and nothing says how. The evaluation's stage 3 looks for a
+      piece's home in a convention or a record, never a model.
+      Ideas:
+      - the tiers model's lift from the exchange, decided 2026-10-28
+        with "Write down which way a fact reference may point", is the
+        first lived case: drafted as an approach on trial while it
+        runs.
+      - stage 3 asks whether a piece is general enough for a model.
+      - an approach on trial has no `foundation` line until placed.
+      - its neighbours: "Decide which ideas here are models" and
+        "Decide whether a model may be written for one convention".
+      Trigger: the tiers lift closes, its drafted approach the
+               evidence.
+      See: devlog 2026-10-28.
 
 - [ ] Decide whether a manual keeps the story behind a lesson
       (2026-10-25, the reviewer).

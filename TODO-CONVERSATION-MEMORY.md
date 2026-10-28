@@ -1008,8 +1008,8 @@ when".
 
 ## 16. Which way a fact reference points
 
-Item: "Decide which way a fact reference may point: up, sideways,
-across chains".
+Item: "Write down which way a fact reference may point, then lift
+what the models borrow from below".
 
 ### 2026-10-25
 
