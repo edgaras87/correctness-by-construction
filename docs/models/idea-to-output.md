@@ -11,7 +11,7 @@ does it stand on* — instead of each session re-deriving the picture.
 
 This is a **model**: the top description of its chain. It binds
 what stands on it, and when the two disagree, either side may be
-the wrong one (§3.3).
+the wrong one (§3.3, *A disagreement is settled*).
 
 ---
 
@@ -51,7 +51,7 @@ would describe intent, as a template does.
 | stands on | a file | what the whole of it was written from |
 | points | a line | the home of a fact it relies on: the one place that fact is written |
 | governs | an output | the shape it is checked against, at the gate |
-| written from | an output or approach | the kind written from it, §4.2 |
+| written from | an output or approach | the kind written from it (§4.2, *Up, work to an idea*) |
 
 A file stands on one thing; a line may point at a fact's home in
 any document at its own level or above (§3.2, *Every link points
@@ -115,8 +115,8 @@ description whose idea it applies. Where none states it, the text is
 first-time work, and the step up writes the description it will
 stand on.
 
-The steps between repos, a run's lesson reaching the deliverer, are
-`docs/models/tiers.md` §3.
+The steps between repos, a run's lesson reaching the deliverer, are the tiers model's
+(`docs/models/tiers.md` §3, *The flows*).
 
 ### 4.3 After a birth
 

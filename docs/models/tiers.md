@@ -1,6 +1,6 @@
 # Tiers Model
 
-A draft: revised when the garden earns machinery (§2.2).
+A draft: revised when the garden earns machinery (§2.2, *Concepts*).
 
 A structured description of how the workspace's repos relate: three
 tiers, the top one empty today, each answering a different question,
@@ -10,7 +10,7 @@ to* — instead of each session re-deriving the picture.
 
 This is a **model**: the top description of its chain. It binds
 what stands on it, and when the two disagree, either side may be
-the wrong one (`docs/models/idea-to-output.md` §3.3).
+the wrong one (`docs/models/idea-to-output.md` §3.3, *A disagreement is settled*).
 
 ---
 
@@ -85,7 +85,7 @@ meet, both input to Framing rather than agreement.
 A tier above may hand a run something as session input — a warning the
 run's own derivation missed, given after that derivation is on record,
 as an experiment's instrument. That is the told channel, unpinned by
-design (`docs/models/agent.md` §4.4), and the run's records say it was
+design (`docs/models/agent.md` §4.4, *told*), and the run's records say it was
 told; it is not a third form of delivery, and a run that leans on it
 has the diagnostic told carries. Nor is a copy the run has edited
 between two pins (§3.5, *What holds on every flow*, fact 4):

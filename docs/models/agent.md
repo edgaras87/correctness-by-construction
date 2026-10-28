@@ -3,7 +3,7 @@
 Deliberately incomplete — a structure to test, not a finished
 description.
 Behavioural statements carry a status and a refutation condition
-(§12).
+(§12, *Claims*).
 
 A structured description of what an AI agent working inside a
 repository *is*: its parts, the channels that carry text into it, and
@@ -11,36 +11,36 @@ what each channel can and cannot guarantee.
 
 This is a **model**: the top description of its chain. It binds
 what stands on it, and when the two disagree, either side may be
-the wrong one (`docs/models/idea-to-output.md` §3.3). Its job is to
+the wrong one (`docs/models/idea-to-output.md` §3.3, *A disagreement is settled*). Its job is to
 let conventions be written against something stated, instead of
 each author reasoning from a private picture of "the agent".
 
 Layer 1 — vendor-neutral. One tool's mechanisms are a **binding**
-(§10).
+(§10, *Bindings (Layer 2)*).
 
 ---
 
 ## 1. Who this is about
 
 An agent working in **a project that follows the conventions it was
-born with**: a run, pinned to the copies it took. How the repos
-relate is `docs/models/tiers.md` §2.3.
+born with**: a run, pinned to the copies it took. How the repos relate is the tiers model's
+(`docs/models/tiers.md` §2.3, *Runs*).
 
 That is the case worth getting right: the conventions are written for
 it, and it is the case nobody can watch. An agent in the repo that
 delivers them meets the same channels all the same.
 
 The practical question the model exists to answer: *given a convention
-sitting in a project, how does it reach the agent that is supposed to
-follow it?* — §8 and §9.
+sitting in a project, how does it reach the agent that is supposed to follow it?* (§8, *Choosing a channel*; §9, *Where each
+convention lands*).
 
 ## 2. Components
 
 1. **The repo** — the only durable memory. Files, and their history.
-2. **The channels** — how text reaches the agent (§4).
-3. **The context window** — everything the agent knows now (§5).
-4. **The write-back** — what the agent leaves in the repo (§6).
-5. **The gate** — enforcement, which sits outside all of it (§7).
+2. **The channels** — how text reaches the agent (§4, *The channels*).
+3. **The context window** — everything the agent knows now (§5, *The context window*).
+4. **The write-back** — what the agent leaves in the repo (§6, *Write-back and persistence*).
+5. **The gate** — enforcement, which sits outside all of it (§7, *The gate*).
 
 ## 3. The shape
 
@@ -77,12 +77,12 @@ written. A sixth delivers nothing to the window at all.
 Entry files loaded at session start, before the first task.
 - **Fires:** always.
 - **Guarantees:** the text is present.
-- **Does not guarantee:** that it is followed (§12 A1).
+- **Does not guarantee:** that it is followed (§12, *Claims* A1).
 - **Costs:** paid every session, on every task, relevant or not. Grows
   without bound if used as a rulebook; each addition dilutes the rest.
 - **Fidelity:** space is scarce here, so rules arrive compressed — and
-  compression loses parts (§12 M1). The binding can lose parts too:
-  what the tool loads is not always the file on disk (§10).
+  compression loses parts (§12, *Claims* M1). The binding can lose parts too:
+  what the tool loads is not always the file on disk (§10, *Bindings (Layer 2)*).
 - **Ownership:** the project's text, or one operator's. An operator's
   standing file fires and costs like the entry file but belongs to one
   person and one checkout, stays out of the repo's history, and its
@@ -98,7 +98,7 @@ The agent reads a file because it decided to.
 - **Fires:** at the agent's initiative.
 - **Guarantees:** full fidelity when it fires — the whole rule, not a
   summary of it.
-- **Does not guarantee:** firing at all (§12 P1).
+- **Does not guarantee:** firing at all (§12, *Claims* P1).
 - **Costs:** nothing when not needed.
 - **Suits:** depth. Full conventions, reference material, anything long
   or precise.
@@ -111,7 +111,7 @@ particular moment: a task type matches, an event occurs.
 - **Guarantees:** presence at the moment of need, without depending on
   the agent going to look.
 - **Does not guarantee:** that the condition is right — it can fire
-  when it should not, or fail silently (§12 U1).
+  when it should not, or fail silently (§12, *Claims* U1).
 - **Costs:** machinery. Something defines and maintains the condition.
 - **Suits:** rules bound to an action. A commit format at commit time.
 
@@ -134,7 +134,7 @@ output, diffs.
 - **Distinct property:** **the only channel that can contradict the
   others.** A document claims; a diff shows. Noticing that two copies
   of a rule disagree requires this channel — no instruction substitutes
-  for a comparison actually being run (§12 O1).
+  for a comparison actually being run (§12, *Claims* O1).
 
 ### 4.6 installed
 
@@ -146,8 +146,7 @@ committed template.
   comply with `.gitignore`, it simply cannot see what git hides.
 - **Costs:** only what applies at bootstrap can be delivered this way.
 - **Suits:** anything expressible as repo state rather than as
-  instruction. **This is the strongest delivery available**, and the
-  only one immune to every claim in §12.
+  instruction. **This is the strongest delivery available**, and the only one immune to every claim (§12, *Claims*).
 - **Self-enforcing:** the property that makes it strong. A rule is
   self-enforcing when acting on the artifact is what puts the rule in
   front of you. Here, for example, the rule for filling in `PLAN.md`
@@ -176,11 +175,11 @@ committed template.
   its own wiring, the prompt, and what tools return — and an agent
   weighs them in that order: a rule in the prompt beats the same rule's
   contrary in a file, and a file's rule holds only until the prompt
-  says otherwise (§12 W2). Every file, ambient or pulled, sits in the
+  says otherwise (§12, *Claims* W2). Every file, ambient or pulled, sits in the
   lowest role. So a rule that rests on a fact of the session — a
   reviewer is present, a repo is out of bounds — cannot live in a file
   alone: the file cannot know the session, and the prompt outranks it.
-  It is told, every session, by design (§8).
+  It is told, every session, by design (§8, *Choosing a channel*).
 
 - **Ordered, not prioritised.** Position is not rank.
 
@@ -192,7 +191,7 @@ evaporate at session end.
 
 Consequences:
 - A record that assumes context from the session that produced it is
-  unreadable later — including by the same agent (§12 S1).
+  unreadable later — including by the same agent (§12, *Claims* S1).
 - The next session starts from the repo alone. It is not a
   continuation; it is a reconstruction.
 
@@ -205,7 +204,7 @@ permission prompt, which is a human review the tool forces — turns
 
 **No channel choice substitutes for a gate.** If a rule must never be
 violated, ambient/pulled/pushed changes the odds; only a gate changes
-the outcome (§12 G1).
+the outcome (§12, *Claims* G1).
 
 ## 8. Choosing a channel
 
@@ -218,18 +217,18 @@ convention.
 | needed to orient, every session | **ambient** | always present; that cost is unavoidable anyway |
 | long, precise, occasionally needed | **pulled** | fidelity matters more than presence |
 | bound to a specific action | **pushed** | present at the moment, without initiative |
-| must never be violated | + **gate** | §7 |
-| resting on a fact of this session | **told**, every session | a file cannot know the session, and the prompt outranks it (§5) |
+| must never be violated | + **gate** | §7, *The gate* |
+| resting on a fact of this session | **told**, every session | a file cannot know the session, and the prompt outranks it (§5, *The context window*) |
 | stated by a human repeatedly, and true of any project | — | a convention is missing, or its channel is not firing |
 
 A rule placed in two channels is not twice as reliable. It is one rule
-with two texts that can disagree (§5).
+with two texts that can disagree (§5, *The context window*).
 
 ## 9. Where each convention lands
 
 Shown by each convention's artifacts: a skill file for a rule bound to
 a moment, stubs and templates for a rule that rides in the files a
-project is born with. The choice rests on §8. No field in a file
+project is born with. The choice rests on the choosing table (§8, *Choosing a channel*). No field in a file
 names a channel.
 
 No table here: a list of each convention's channel would be a second
@@ -256,7 +255,7 @@ tool has shown:
   Type-specific guidance is a playbook.
 - **Model capability.** How capable, how current — changes per release.
   These are claims about the shape of the runtime, not its quality.
-- **Tool mechanisms.** §10.
+- **Tool mechanisms.** (§10, *Bindings (Layer 2)*)
 
 ## 12. Claims
 
@@ -361,7 +360,7 @@ compares them.
 agent resolves one and proceeds rather than reporting the ambiguity.
 - `assumed` · *Refuted by:* halting to ask which rule wins.
 - The *precedence* half of this is no longer a claim between files:
-  §5 makes it structural — channel of origin is not marked, so a
+  the context window makes it structural (§5, *The context window*) — channel of origin is not marked, so a
   stated precedence has nothing to run on. Between roles it is W2.
 
 **W2 — Roles rank.** Text in the harness's own wiring outranks the
