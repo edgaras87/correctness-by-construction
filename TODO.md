@@ -670,28 +670,6 @@
                no second manual sharing it.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
 
-- [ ] Decide how a text finds its foundation, and how a missing one
-      is written (2026-10-28, the reviewer).
-      Context: `docs/models/idea-to-output.md` §4.2 names the path
-      up: work, an approach on trial, a convention, a model. The
-      first step is `approach-drafting.md`, the second
-      `approach-evaluation.md` and conventions §3; the third, a
-      convention's idea placed into a model, was lived once, on
-      2026-10-28, and only an approach on trial says how. The evaluation's stage 3 looks for a
-      piece's home in a convention or a record, never a model.
-      Ideas:
-      - the tiers model's placing from the exchange, 2026-10-28, is
-        the first lived case: `.claude/approaches-on-trial/model-placing.md`,
-        its use noted.
-      - the step's writing half, an "Adding a model" as conventions §3
-        is for a convention, from what that use taught.
-      - stage 3 asks whether a piece is general enough for a model.
-      - an approach on trial has no `foundation` line until placed.
-      - its neighbours: "Decide which ideas here are models" and
-        "Decide whether a model may be written for one convention".
-      Trigger: now: model placing's first use has closed.
-      See: devlog 2026-10-28.
-
 - [ ] Decide whether a manual keeps the story behind a lesson
       (2026-10-25, the reviewer).
       Context: a lesson's dated italic does two jobs. An example
