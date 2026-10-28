@@ -89,6 +89,13 @@ keep what to derive from and point at it.
 **8. `docs: ADR-0070 is accepted, TODO keeps the rewrite`**
 ADR-0070's status; TODO's item says its first part is done.
 
+**8b. `fix(delivery): templates point at rule 8`**
+Inserted: the close sweep found ten shipped lines that say a filled
+file is the run's own and cite ADR-0008 for it: nine skill
+templates' headers and `establishment-walk.md`. The fact moved to
+the run's `delivered-copies.md` rule 8 in 7b, so by facts-in-sync
+§3.3 their references move with it.
+
 **9. `docs(agent): close commit plan for reference homes`**
 Deletes this file; the body says what diverged.
 
