@@ -1,3 +1,11 @@
+<!-- The commit plan for lesson stories, agreed 2026-10-28 and
+     opened as ed876b0. Parked 2026-10-29, before its first commit:
+     run 5's lessons that run 6 needs go first. It returns as
+     COMMIT-PLAN.md when the refinement resumes, before round 3's
+     rule check. Its counts are taken again then, and its ADR gets
+     the next free number. TODO's item on the story behind a lesson
+     names this file. -->
+
 # Commit plan: the story behind a lesson
 
 ## Summary — the state after all commits
@@ -34,7 +42,7 @@ Lessons kind asked.
 **0. `docs(agent): add commit plan for lesson stories`**
 Opens the set.
 
-**1. `docs: ADR-0073 a lesson's story lives in history`**
+**1. `docs: ADR-<n> a lesson's story lives in history`**
 Proposed. The three decisions, and what each rejected.
 
 **2. `docs: the lesson rule points at its story`**
@@ -71,7 +79,7 @@ In each of 5 to 8, every note is read beside its candidate home
 first; its line names the exact entry; a live claim moves into the
 body; the section is read again for the safeguard.
 
-**9. `docs: ADR-0073 accepted, the story item worked`**
+**9. `docs: ADR-<n> accepted, the story item worked`**
 The TODO item leaves, and conversation-memory §18 goes with it.
 
 **10. `docs(agent): close commit plan for lesson stories`**
