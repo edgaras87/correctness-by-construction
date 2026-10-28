@@ -45,11 +45,14 @@ frontmatter naming it, `foundation: the agent model`
    seat when not; a paragraph naming which body sections are whose
    when the body is already written per seat; "no seat" said
    outright when one side has none.
-5. **The body**, numbered sections, free prose. Pointers to other
-   conventions as paths from the repo root, never a restatement
-   of their subject, but for a retelling with a fact reference to
-   its section, where the reader acts on it in place
-   (`docs/conventions/facts-in-sync/` §2). A section divided into
+5. **The body**, numbered sections, free prose. Fact references to
+   a manual, the concept or a model, never to a skill or a record
+   for a fact
+   (`docs/models/idea-to-output.md` §3.2, *Every link points up*);
+   never a restatement of another convention's subject, but for a
+   retelling with a fact reference to its section, where the reader
+   acts on it in place (`docs/conventions/facts-in-sync/` §2,
+   *Point and derive*). A section divided into
    labelled parts numbers them, `### N.M`, and so does every
    section of the same form in the manual. Emphasis in prose is
    not a part; a bold-led bullet with a paragraph of its own is
