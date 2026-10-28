@@ -118,3 +118,10 @@ manual on trial in `docs/conventions/`, and then counted as a
 manual before anyone judged whether it is one. Taught: a draft is
 not a manual, and needs a home of its own. This approach came from
 that lesson. The refinement is open.
+
+*The deliverer, placing into a model, 2026-10-28.* The first step
+from a convention to a model, done for the tiers model and the
+exchange: `.claude/approaches-on-trial/model-placing.md`, written
+before the work and corrected once by it, in its own commit
+(`4fedbb3`). Taught: the work's first sort, shown before anything
+was written, is where the draft first met the work.
