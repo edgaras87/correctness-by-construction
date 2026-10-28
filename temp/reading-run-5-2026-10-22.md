@@ -455,11 +455,17 @@ counterpart in the example.
 ## 5. Decisions
 
 **DECISION-1. Can a copy's edit be taken on evidence alone?** Rests:
-E2 to E13, all thirteen untried, landed after the step that would
+E2 to E13, all twelve untried, landed after the step that would
 use them; A12 says so. Gates WORK-3 to WORK-9. The exchange's
 "taken" changes a master here (`docs/conventions/exchange/` §6.5);
 whether "untried" lowers the bar, raises it, or makes a fourth
 ending is not written anywhere.
+**Settled 2026-10-29, by ADR-0051,** which this question missed:
+an untried edit is taken when it is sound, and the next run is its
+trial. Each of E1 to E13 is judged on its own evidence, with the
+three endings, read hardest. The exchange now says so, where it
+already spoke of untried edits (`docs/conventions/exchange/` §5.2,
+*A copy the run has finished…*).
 
 **DECISION-2. Where do the nine "next run only" lessons live?**
 Rests: A1's D2, D4, D15, D18, D19, D20, D21 (the hand-off), D16,
@@ -540,7 +546,7 @@ commit plan of its own.
   changed since the pin.
 
 Counted (`.claude/rules/working-a-reading.md`, step 1): 20 work
-items, 8 marked plan. More than one plan: the step that works this
+items, 7 marked plan. More than one plan: the step that works this
 reading cuts a branch from main.
 
 ## 7. What this reading taught
@@ -559,6 +565,10 @@ reading cuts a branch from main.
   copy.
 - **A reader's "merged" needs a meaning:** five winner branches
   carried no commit of their own; the reading says so.
+- **Search the ADRs before writing that a question is unwritten.**
+  DECISION-1 called its question "not written anywhere". ADR-0051
+  had settled it, and the manual carried only half of it. Found
+  2026-10-29, when the question was worked.
 
 ## 8. Notes
 

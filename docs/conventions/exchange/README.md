@@ -394,7 +394,8 @@ The one difference is said in the log entry and in the backlog
 line: a running skill's fix is exercised by the next step here; a
 finished skill's fix is first used by the deliverer, so its line
 marks it *untried here*, and the deliverer reads those hunks
-hardest (ADR-0051).
+hardest. Such an edit is taken when it is sound, and the next run
+is its trial (ADR-0051).
 *Lived 2026-10-13 to 15: run 3's agent kept its finished skills'
 fixes as notes for the next run until its reviewer stopped it; four
 skills then arrived edited and marked, and the reading here took

@@ -155,9 +155,11 @@ Gate:
 - [ ] Run 5's reading marks DECISION-1, DECISION-2 and DECISION-5
       settled in place, each with how; one that needed an ADR has
       it, Accepted.
-- [ ] The exchange's verdicts say how an edit the run never used is
-      judged (`docs/conventions/exchange/` §6.5, *Verdicts*), as
-      DECISION-1 settled it.
+- [x] The exchange says how an edit the run never used is judged
+      (`docs/conventions/exchange/` §5.2, *A copy the run has finished…*),
+      as DECISION-1 settled it. The opening named §6.5. §5.2 is where
+      the exchange already speaks of such an edit, and the endings do
+      not change (2026-10-29).
 - [ ] WORK-1 and WORK-3 to WORK-10 are each marked in the reading
       with its ending, taken, declined or held, and its commit. A
       held one names its trigger and has a TODO line.
@@ -168,8 +170,9 @@ Gate:
 - [ ] The playbook has no line meant for run 5 only.
 - [ ] The lessons run 5 left for the next hand-off sit where
       DECISION-2 placed them.
-- [ ] The reading's two slips are fixed in place: 7 plans, and 12
-      unused fixes with E1 a use note (devlog 2026-10-29).
+- [x] The reading's two slips, named in devlog 2026-10-29, are
+      fixed in place: 7 plans, and 12 unused fixes with E1 a use
+      note (2026-10-29).
 - [ ] The reading's other items are untouched, left for the step
       after the refinement, and the reading stays in `temp/`.
 
