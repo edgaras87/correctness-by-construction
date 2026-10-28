@@ -103,6 +103,11 @@ FINDING-219: 41 paths inside skills.
 FINDING-220, rules named in prose; 202, 204 and 216, retellings of
 our manuals, each with a CBC reference and standing alone.
 
+**10b. `chore(agent): approach drafting points at commit-messages`**
+Inserted: `approach-drafting.md` is one text in both seats
+(ADR-0069), and commit 10 changed the container's copy; ours takes
+the same line.
+
 ### Records and close
 
 **11. `docs: TODO's fact reference item is worked`**
