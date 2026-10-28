@@ -122,8 +122,11 @@ that then disagrees gets a lettered commit after it.
   front matter and code fences in each file, which must not change.
 - **A long title is cut** at a word boundary to 30 characters or
   fewer, ending in "…". 32 of 252 numbered titles run longer.
-- **A step stays after its title:** (`docs/conventions/facts-in-sync/`
-  §4, *The rule for every description*, step 3).
+- **A step or a numbered rule stays after its title:**
+  (`docs/conventions/facts-in-sync/` §4, *The rule for every
+  description*, step 3); (`.claude/rules/delivered-copies.md`, rule
+  8, *A skill's template is copied and filled*). Facts-in-sync §3.1
+  gains the case, since its five do not list one.
 - **A run's ids are not touched.** Decision 4 keeps them bare.
 - **By layer, two passes each,** so a scripted diff holds titles
   only and reads in one look, and the hand diff holds only what a
