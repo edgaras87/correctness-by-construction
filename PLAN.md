@@ -130,6 +130,80 @@ corner.
 
 ---
 
+## Step: Birth run 6, on full auto  (`.claude/approaches-on-trial/auto-run.md`, `delivery/installs/pure-seed.md`, the foundation check)    [~]
+
+Goal: Run 6 is born from this repo at one pin on main, with the
+reviewer's checkout briefing and a hand-off for full auto, ready for
+the reviewer to start.
+Now: the intent (`.claude/approaches-on-trial/auto-run.md`,
+stage 2).
+Gate:
+
+**At the opening.**
+
+- [x] The step's branch `run-6-birth-2026-10-29` is cut from main
+      at `a002002`, and nothing of the step was done on main
+      (2026-10-29).
+- [x] This gate was written before the work started (2026-10-29).
+- [x] The step's approach is known: `auto-run`, on trial, in its
+      second use (2026-10-29).
+
+**The step's own items.**
+
+- [ ] The lessons run 5 left for the next run each say keep, change
+      or add for run 6, in its hand-off. Run 5 was read in full
+      (`temp/reading-run-5-2026-10-22.md`), so this is stage 1's
+      light read.
+- [ ] Run 6's intent is the reviewer's: checkout, in
+      `temp/run-6-briefing.md`, its areas meeting at a
+      LAYER-5-INTERACTION question, of run 5's size.
+- [ ] The playbook has no line meant for run 5 only: run 5's
+      reading's WORK-1, taken here from the stopped step.
+- [ ] Run 6's hand-off says what full auto means for it, part by
+      part as `auto-run` stage 4 lists.
+- [x] What TODO says is due before a birth is settled:
+      `exchange-birth` waits for the birth after run 6's (devlog
+      2026-10-29, later; 2026-10-29).
+- [ ] Run 6 is born by `delivery/installs/pure-seed.md` at
+      `~/IdeaProjects/cbc-pure-run-6`, its pin a commit on main, the
+      seed's own checks all passing.
+- [ ] Run 6's intent and hand-off sit in its `temp/`, and the
+      reviewer starts it with the seed's prompt, its review lines
+      replaced by full auto.
+- [ ] `ARCHITECTURE.md` §2.5 lists run 6.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves; every ADR a
+      record cites exists; each pair of copies agrees, such as the
+      worked example in `cbc-framing` and in `cbc-slice`.
+- [ ] No living line in a record the step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the step changed.
+- [ ] New and changed text reads to `.claude/rules/writing.md`.
+- [ ] Every commit on `run-6-birth-2026-10-29` follows
+      commit-messages.
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*).
+- [ ] The step's lessons are folded back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4, *How*).
+- [ ] Each approach on trial the step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
+
+Notes:
+- Opened 2026-10-29, from the devlog's entry 2026-10-29, later: the
+  reviewer wants run 6 born now, before run 5's lessons are all
+  taken. The step for those lessons and the refinement resume
+  after this one closes.
+- Stages: `auto-run`'s six. Stage 1 is answered by run 5's
+  reading; stage 3 is settled; the briefing is stage 2's.
+
+---
+
 ## Step: Take run 5's lessons for run 6  (`.claude/rules/working-a-reading.md`, `commit-plan`, the foundation check)    [!] stopped: Birth run 6, on full auto (devlog 2026-10-29, later)
 
 Goal: Run 6 can be born from files that carry what run 5 learned
