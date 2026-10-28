@@ -4,7 +4,8 @@ Date: 2026-10-27
 Status: Accepted (2026-10-28, at the set's records commit; opened
 Proposed under the commit plan for the reference's homes. Since then,
 the off-template rule's home moved from one skill to the exchange
-and the run's `delivered-copies.md`).
+and the run's `delivered-copies.md`). Decision 7 superseded in part
+by ADR-0072.
 
 ## Context
 
