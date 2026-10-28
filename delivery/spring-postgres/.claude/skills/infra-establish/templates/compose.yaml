@@ -1,6 +1,6 @@
 # Template — master copy in correctness-by-construction (CBC ADR-0008).
 # Copy into a run and
-# fill; the filled file is the run's own (CBC ADR-0008).
+# fill; the filled file is the run's own (.claude/rules/delivered-copies.md, rule 8, A skill's template is copied and filled).
 
 # The infrastructure ground, as the run's decisions established it.
 # Front door: podman compose. Secrets and machine variance live in .env

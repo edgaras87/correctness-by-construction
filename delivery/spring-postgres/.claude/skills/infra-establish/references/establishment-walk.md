@@ -148,7 +148,7 @@ lines a stranger's machine needs before this ground can stand,
 derived from the operator manual, carrying only what a stranger
 needs in hand and linking the manual for the rest. Skeleton:
 `templates/readme-prerequisites.md` in this skill — merge, fill,
-and the section is the run's own (CBC ADR-0008). The stack's own
+and the section is the run's own (`.claude/rules/delivered-copies.md`, rule 8, *A skill's template is copied and filled*). The stack's own
 prerequisite line is **not** written here: its fact is born at
 bootstrap, whose skill carries it (CBC ADR-0013). The container's README
 ships without the section — container stays, direction goes — and

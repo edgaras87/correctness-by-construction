@@ -1,6 +1,6 @@
 -- Template — master copy in correctness-by-construction (CBC ADR-0008).
 -- Copy into a run at the same path and fill; the filled
--- file is the run's own (CBC ADR-0008).
+-- file is the run's own (.claude/rules/delivered-copies.md, rule 8, A skill's template is copied and filled).
 
 -- infrastructure/postgres/init/bootstrap.sql
 --
