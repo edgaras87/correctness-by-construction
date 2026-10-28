@@ -25,31 +25,31 @@ manual owns the thing a word names, pointed at there.
 - **project** — whichever repository is doing the work under a
   convention or making an output: a run, or this one.
 - **seats** — the sides a convention has, this repo's and a run's
-  (`docs/conventions/conventions/` §2.4).
+  (`docs/conventions/conventions/` §2.4, *The seats*).
 
 ## Between them
 
 - **master** — the deliverer's copy of a file; a run holds copies
-  of it (`docs/conventions/exchange/` §1, fact 3).
+  of it (`docs/conventions/exchange/` §1, *What cannot change*, fact 3).
 - **read-through**, **pin** — the two numbers a run records for a
   delivery: its own commit the deliverer last read up to, and the
   deliverer's commit its copies equal. The exchange's,
-  `docs/conventions/exchange/` §2.2.
+  `docs/conventions/exchange/` §2.2, *The run*.
 - **delivery** — files copied whole into a run with a note, or a
   note alone. At birth, and after (`docs/conventions/exchange/`
-  §3.2, §6.6).
+  §3.2, *What goes*, §6.6, *Every read ends with a note*).
 - **note** — the text beside a delivery: what changed since the
   run's pin, and a verdict on everything the run asked
-  (`docs/conventions/exchange/` §3.7).
+  (`docs/conventions/exchange/` §3.7, *The note*).
 - **staging** — copying the delivery and its note into a run's
   `temp/`, by the reviewer or by the agent when told to
-  (`docs/conventions/exchange/` §3.1). The run does nothing until it
+  (`docs/conventions/exchange/` §3.1, *Staging*). The run does nothing until it
   has happened.
 - **take** — the run's act: moving delivered files from `temp/`
   into place and recording the pin (`docs/conventions/exchange/`
-  §4).
+  §4, *The take*).
 - **harvest** — us reading a run's repository and changing our
-  masters from what it learned (`docs/models/tiers.md` §3.3).
+  masters from what it learned (`docs/models/tiers.md` §3.3, *Up is harvest, through records*).
 
 ## Kinds of text
 
@@ -57,12 +57,12 @@ manual owns the thing a word names, pointed at there.
   the concept, a model, a manual. It may be wrong or
   incomplete and is canonical regardless; what derives from it
   applies it and does not explain. One rule for all of them,
-  `docs/conventions/facts-in-sync/` §4; they differ at the edges
+  `docs/conventions/facts-in-sync/` §4, *The rule for every description*; they differ at the edges
   (ADR-0039).
 - **model** — the top description of a chain of texts: an idea any
   repo can adapt, its rules varying by repo, like an interface. A
-  repo adapts it in a manual (`docs/models/idea-to-output.md` §2
-  and §5).
+  repo adapts it in a manual (`docs/models/idea-to-output.md` §2, *The kinds*
+  and §5, *A model and a concept*).
 - **canonical** — of a description or a copy: the one that counts,
   from which every other is derived or copied. Says reference,
   never correctness — a canonical description is today's
@@ -73,15 +73,15 @@ manual owns the thing a word names, pointed at there.
   runner-up, recorded here rather than decided.
 - **convention** — a way of working written down once, as two texts
   kept apart: its manual, and the artifacts a project acts on
-  (`docs/models/idea-to-output.md` §6).
+  (`docs/models/idea-to-output.md` §6, *A convention*).
 - **manual** — a convention's description, at
   `docs/conventions/<name>/README.md` (`docs/conventions/conventions/`
-  §2).
+  §2, *The manual*).
 - **made usable** — what a stated body becomes in the delivery:
   the concept as the method, the conventions as the container.
 - **approach** — how a piece of work is done. A skill or a rule is
   an approach proven and placed; an approach on trial is not yet
-  proven (`docs/models/idea-to-output.md` §2).
+  proven (`docs/models/idea-to-output.md` §2, *The kinds*).
 - **approach on trial** — the written approach to one kind of work,
   not yet proven, at `.claude/approaches-on-trial/<work>.md`. It is
   drafted during its first use, used again, and in the end placed
@@ -89,17 +89,17 @@ manual owns the thing a word names, pointed at there.
   `.claude/approaches-on-trial/approach-evaluation.md`.
 - **form** — how an output is written, read while it is written:
   rules for the writing and the output's layout, together. An
-  approach (`docs/models/idea-to-output.md` §2). A record's form
+  approach (`docs/models/idea-to-output.md` §2, *The kinds*). A record's form
   sits in the record itself: its header comment, `PLAN.md`'s step
   form, a stub's headings. A manual's and a reading's are agent
   rules today; whether they become shapes is TODO's "Decide whether
   our own forms become shapes".
 - **shape** — a presumed output, written from outputs that exist,
   and read only at the gate to check what was made
-  (`docs/models/idea-to-output.md` §2; `docs/conventions/shapes/`).
+  (`docs/models/idea-to-output.md` §2, *The kinds*; `docs/conventions/shapes/`).
   Not a form, which is read while writing.
 - **local map** — a directory's `README.md` that says how the parts
-  of that area relate (`docs/conventions/project-recording/` §8.6).
+  of that area relate (`docs/conventions/project-recording/` §8.6, *Local maps*).
 
 ## How texts tie
 
@@ -116,12 +116,12 @@ manual owns the thing a word names, pointed at there.
   written under. A skill, a rule, a shape, a record's form and a
   manual standing on a model carry one; a line that uses a part of a
   document carries a fact reference to that part instead
-  (`docs/conventions/conventions/` §1.3;
-  `docs/conventions/facts-in-sync/` §4). Not *source*: that
+  (`docs/conventions/conventions/` §1.3, *The `foundation` line*;
+  `docs/conventions/facts-in-sync/` §4, *The rule for every description*). Not *source*: that
   was a run's word for the deliverer, and is not ours.
 - **walk** — what a change to a description sets off: the greps for
   its path and its name, and the re-read of each line they find
-  (`docs/conventions/facts-in-sync/` §4, step 3).
+  (`docs/conventions/facts-in-sync/` §4, *The rule for every description*, step 3).
 
 ## The work
 
@@ -130,9 +130,9 @@ manual owns the thing a word names, pointed at there.
 - **stage** — one phase of a skill, numbered from Stage 0:
   `cbc-slice`'s Stage 3, `cbc-framing`'s Stage 2. A step's Now line
   names the stage it is in. How a skill names them:
-  `docs/conventions/conventions/` §1.4.
+  `docs/conventions/conventions/` §1.4, *Stages*.
 - **conversation-memory** — the talk that shaped a TODO item,
   kept beside it in `TODO-CONVERSATION-MEMORY.md`: what was asked,
   the options weighed, what was said for and against. It decides
   nothing; it is read when the item is worked
-  (`docs/conventions/project-recording/` §14).
+  (`docs/conventions/project-recording/` §14, *Conversation-memory…*).

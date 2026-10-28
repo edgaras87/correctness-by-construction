@@ -24,10 +24,10 @@ Two bodies of writing are stated here and never ship: the concept,
 `concept/`, and the conventions, `docs/conventions/`, under the
 models in `docs/models/`. Each is made usable as something that
 does ship: the concept as the method, the conventions as the
-container (§1). A run is born from that delivery, takes newer copies
+container (§1, *What is stated here*). A run is born from that delivery, takes newer copies
 at each pin, and is read back here; what it learned changes our
-masters (§2). A few rules must hold across all of it (§3), and the
-codemap says where each thing lives (§4). What this repo is for, and
+masters (§2, *The delivery, and the runs it…*). A few rules must hold across all of it (§3, *What must stay true*), and the
+codemap says where each thing lives (§4, *Codemap*). What this repo is for, and
 how to use it, is `README.md`.
 
 ```
@@ -48,8 +48,8 @@ how to use it, is `README.md`.
 ```
 
 Where each group lands, and which files are copies, is
-`delivery/README.md` §1 and §2; the cycle of pins and readings is
-`docs/conventions/exchange/` §2.5.
+`delivery/README.md` §1, *The groups are pieces…* and §2, *Three ways a file lands*; the cycle of pins and readings is
+`docs/conventions/exchange/` §2.5, *One cycle, drawn*.
 
 ---
 
@@ -61,9 +61,9 @@ spine of this repo. The models ship nothing either:
 
 | stated | made usable |
 |---|---|
-| the concept (§1.1) | the method (§2.1) |
-| the conventions (§1.2) | the container (§2.3) |
-| the models (§1.3) | nothing: a manual may stand on one |
+| the concept (§1.1, *The concept — `concept/`*) | the method (§2.1, *The method…*) |
+| the conventions (§1.2, *The conventions…*) | the container (§2.3, *The container…*) |
+| the models (§1.3, *The models — `docs/models/`*) | nothing: a manual may stand on one |
 
 ### 1.1 The concept — `concept/`
 
@@ -71,20 +71,20 @@ Five chapters, `concept/00-cbc.md` first.
 
 - **Canonical here.** Every copy elsewhere, a run's `docs/concept/`,
   is a copy; what a run may do to it is
-  `docs/conventions/exchange/` §5.6. The concept changes only here.
+  `docs/conventions/exchange/` §5.6, *A chapter only from a lived…*. The concept changes only here.
 - **Versioned as a whole**, not per chapter. It is at **v1**, and
   CHANGELOG's [Unreleased] holds a change that makes the next
   release v2 (ADR-0048). When its version moves is `CHANGELOG.md`'s
   standing comment.
 - **It demands nothing by itself.** A chapter cannot be run; the
-  method can (§2.1).
+  method can (§2.1, *The method…*).
 
 ### 1.2 The conventions — `docs/conventions/`
 
 How work is done here, and why each rule is as it is. None of it is
 CbC: the concept is about how a system is built, the conventions
 about how a repo is kept. What a convention is, and its two parts,
-is `docs/models/idea-to-output.md` §6; how they hand work to each
+is `docs/models/idea-to-output.md` §6, *A convention*; how they hand work to each
 other is the index, `docs/conventions/README.md`.
 
 - **agent-arrangement** — the files that make an agent work in a
@@ -114,7 +114,7 @@ other is the index, `docs/conventions/README.md`.
 ### 1.3 The models — `docs/models/`
 
 Ideas any repo can adapt, their rules varying by repo
-(`docs/models/idea-to-output.md` §2): the agent, the tiers, and idea
+(`docs/models/idea-to-output.md` §2, *The kinds*): the agent, the tiers, and idea
 to output. A manual that stands on one names it in its `foundation`
 line.
 
@@ -123,21 +123,21 @@ line.
 What ships, by group. How each group lands in a run is the
 delivery's local map, `delivery/README.md`. The concept's list of
 what derives from it is §2.1, §2.2 and the playbook in §2.4; the
-chapters carry none (`docs/conventions/facts-in-sync/` §4, step 1).
+chapters carry none (`docs/conventions/facts-in-sync/` §4, *The rule for every description*, step 1).
 
 ### 2.1 The method — `delivery/method/`
 
 The concept made usable: `cbc-framing` and `cbc-slice`, under
 `.claude/skills/`, and the shapes their gates read, under
 `.claude/shapes/`. Each skill is derived from the concept, as its
-`foundation` line says (`docs/conventions/conventions/` §1.3).
+`foundation` line says (`docs/conventions/conventions/` §1.3, *The `foundation` line*).
 
 ### 2.2 The stack practice — `delivery/spring-postgres/`
 
 What one real Spring and Postgres project taught: `infra-establish`,
 `infra-serve` and `cbc-bootstrap`. Not derived from the concept but
 checked against it, as their `foundation` lines say
-(`docs/conventions/conventions/` §1.3). A run on
+(`docs/conventions/conventions/` §1.3, *The `foundation` line*). A run on
 another stack takes no `spring-postgres/`; another stack's practice
 would be a group beside this one (ADR-0029).
 
@@ -176,10 +176,10 @@ has only ours:
 
 How a delivery goes down and what a run learned comes back is the
 exchange, `docs/conventions/exchange/`: a run is blind to us
-(`docs/conventions/exchange/` §1), records a pin and a read-through
-(`docs/conventions/exchange/` §2.2), takes each delivery
-(`docs/conventions/exchange/` §4), and is read back here
-(`docs/conventions/exchange/` §6). What each side holds for it is the
+(`docs/conventions/exchange/` §1, *What cannot change*), records a pin and a read-through
+(`docs/conventions/exchange/` §2.2, *The run*), takes each delivery
+(`docs/conventions/exchange/` §4, *The take*), and is read back here
+(`docs/conventions/exchange/` §6, *Up*). What each side holds for it is the
 exchange's *What this is made usable as*.
 
 ## 3. What must stay true
@@ -193,15 +193,15 @@ of the tree, or a check at commit review.
 |---|---|---|
 | The concept is canonical here; the archive it came from is a frozen snapshot, never a source | §1.1; `CHANGELOG.md`'s `[v1]` entry | commit review |
 | A concept change that could invalidate what derives from it lands with a version entry | `CHANGELOG.md`'s standing comment (ADR-0003) | commit review |
-| Every execution states the concept version it derives from | `docs/conventions/conventions/` §1.3 (ADR-0004, ADR-0036) | its `foundation` line, which travels with every copy |
-| Every file a run receives has its master here, in the group that ships it | `docs/conventions/exchange/` §1 and §3.2 | `exchange-deliver`, which stages only from the masters |
-| A manual never ships | `docs/conventions/exchange/` §3.2 | the tree: manuals sit under `docs/`, and a delivery stages only from `delivery/` and `concept/` |
-| A manual never outlives the rule it explains | `docs/conventions/facts-in-sync/` §4 and §5 (ADR-0025) | the foundation check, `.claude/rules/foundation-check.md`, at each commit |
+| Every execution states the concept version it derives from | `docs/conventions/conventions/` §1.3, *The `foundation` line* (ADR-0004, ADR-0036) | its `foundation` line, which travels with every copy |
+| Every file a run receives has its master here, in the group that ships it | `docs/conventions/exchange/` §1, *What cannot change* and §3.2, *What goes* | `exchange-deliver`, which stages only from the masters |
+| A manual never ships | `docs/conventions/exchange/` §3.2, *What goes* | the tree: manuals sit under `docs/`, and a delivery stages only from `delivery/` and `concept/` |
+| A manual never outlives the rule it explains | `docs/conventions/facts-in-sync/` §4, *The rule for every description* and §5, *A disagreement* (ADR-0025) | the foundation check, `.claude/rules/foundation-check.md`, at each commit |
 | Agent side and project side never share a commit | (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*) | the `commit-messages` skill, and commit review |
-| A pin never claims more than was checked | `docs/conventions/exchange/` §6.1 and §6.6 (ADR-0023) | `exchange-read` and `exchange-deliver` |
-| A skill never spans two groups, and nothing that needs Spring, PostgreSQL, Maven or podman sits under `method/` | `docs/conventions/exchange/` §3.4 | the tree: a group is a directory, so a misfiled file shows as a path |
-| A record stub is never re-delivered to a live run | `docs/conventions/exchange/` §2.4 (ADR-0036) | the run's `delivered-copies.md`, rule 1 |
-| The five facts of every flow hold between this repo and its runs | (`docs/models/tiers.md` §3.5, *What holds on every flow*); here, `docs/conventions/exchange/` §1 | `exchange-read` and `exchange-deliver`; the run's `delivered-copies.md` |
+| A pin never claims more than was checked | `docs/conventions/exchange/` §6.1, *The read* and §6.6, *Every read ends with a note* (ADR-0023) | `exchange-read` and `exchange-deliver` |
+| A skill never spans two groups, and nothing that needs Spring, PostgreSQL, Maven or podman sits under `method/` | `docs/conventions/exchange/` §3.4, *Every shipped file is…* | the tree: a group is a directory, so a misfiled file shows as a path |
+| A record stub is never re-delivered to a live run | `docs/conventions/exchange/` §2.4, *The records are the one…* (ADR-0036) | the run's `delivered-copies.md`, rule 1 |
+| The five facts of every flow hold between this repo and its runs | (`docs/models/tiers.md` §3.5, *What holds on every flow*); here, `docs/conventions/exchange/` §1, *What cannot change* | `exchange-read` and `exchange-deliver`; the run's `delivered-copies.md` |
 
 ## 4. Codemap
 
@@ -210,7 +210,7 @@ of the tree, or a check at commit review.
      fitted to it (ADR-0044). -->
 
 A line marked *record* is one of the records; what each answers is
-`docs/conventions/project-recording/` §1.
+`docs/conventions/project-recording/` §1, *The records at a glance*.
 
 ```
 README.md            record

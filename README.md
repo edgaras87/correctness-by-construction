@@ -13,7 +13,7 @@ one upstream and one pin. It is the deliverer: each run is born from
 what this repo ships, and is read back from here. Documents only:
 nothing is built here, no application, no service, no run.
 It is the concepts tier of the workspace
-(concepts → runs, the tier above empty; see `docs/models/tiers.md` §2.1, §2.2):
+(concepts → runs, the tier above empty; see `docs/models/tiers.md` §2.1, *The top tier is empty*, §2.2, *Concepts*):
 runs happen in other repos pinned to
 a concept version, and their surprises come back here as changes to
 what we hold: the concept, the models, the conventions, and the
@@ -41,9 +41,9 @@ recorded way instead of living in a head and scattered notes.
   shipped here are this repo's, held for CbC runs and changed by
   what runs live (ADR-0025, ADR-0031). A second repo that needs
   them copies parts, and anything general waits on three
-  (ADR-0038; `docs/models/tiers.md` §2.1).
+  (ADR-0038; `docs/models/tiers.md` §2.1, *The top tier is empty*).
 - Garden machinery — none until the garden rule triggers: a second
-  concept repo, a rule written twice (`docs/models/tiers.md` §2.2).
+  concept repo, a rule written twice (`docs/models/tiers.md` §2.2, *Concepts*).
 - Graduating an execution to its own concept repo — same trigger,
   not now.
 - Everything in the archive repo outside the two directories named

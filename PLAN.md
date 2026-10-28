@@ -96,7 +96,7 @@ step that uses none has only its own items.
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4).
+      §2.4, *How*).
 - [ ] Each approach on trial the step drafted or used has this
       use's dated note, and was handed over for evaluation
       (`.claude/approaches-on-trial/approach-drafting.md`, its close).
@@ -131,11 +131,11 @@ corner.
 ## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
 
 Goal: Living text written before a rule now meets that rule, and
-`docs/conventions/project-recording/` §1 is a map of the records
+`docs/conventions/project-recording/` §1, *The records at a glance* is a map of the records
 in both seats.
 Now: round 2's close read: all the text round 2 covered, read again
 against its four kinds
-(`.claude/approaches-on-trial/refinement.md` §2.8).
+(`.claude/approaches-on-trial/refinement.md` §2.8, *A round's close*).
 Gate:
 
 **At the opening.**
@@ -153,26 +153,26 @@ Gate:
 
 - [x] The refinement's file holds every kind the TODO item asked
       for, each in its round, and the reviewer confirmed them
-      (`.claude/approaches-on-trial/refinement.md` §2.1; 2026-10-19,
+      (`.claude/approaches-on-trial/refinement.md` §2.1, *Group the kinds*; 2026-10-19,
       again with Wiring).
 - [x] The refinement's file lists every living file in exactly one
-      layer (`.claude/approaches-on-trial/refinement.md` §2.2;
+      layer (`.claude/approaches-on-trial/refinement.md` §2.2, *List the files*;
       2026-10-19).
 - [x] Before round 1, no rule among the refinement's kinds was in
       doubt, or each doubt was tried on a sample and ended; the
       refinement's file says which
-      (`.claude/approaches-on-trial/refinement.md` §2.3; 2026-10-19).
+      (`.claude/approaches-on-trial/refinement.md` §2.3, *Check the rules*; 2026-10-19).
 - [ ] Before each later round, its rule check read what changed
       since the last, and each doubt ended; the refinement's file
-      says which (`.claude/approaches-on-trial/refinement.md` §2.3).
+      says which (`.claude/approaches-on-trial/refinement.md` §2.3, *Check the rules*).
 - [ ] Every kind in the refinement's file was read in its round
       across all living text, and each read names the files it
       covered.
 - [ ] Every finding has the reviewer's ending: fixed, declined
       with its reason, or a TODO item.
 - [ ] The last read found nothing that breaks a rule
-      (`.claude/approaches-on-trial/refinement.md` §2.9).
-- [x] `docs/conventions/project-recording/` §1 shows in one view
+      (`.claude/approaches-on-trial/refinement.md` §2.9, *The last read*).
+- [x] `docs/conventions/project-recording/` §1, *The records at a glance* shows in one view
       which record answers what, in both seats. It includes
       `RETRO.md`, `COMMIT-PLAN.md`, `docs/system/`, and records
       another convention owns (2026-10-26; one view read as one
@@ -181,7 +181,7 @@ Gate:
       and that skill's gates hold for it (2026-10-26, ADR-0067;
       rendered by the reviewer before acceptance).
 - [ ] Each round's close read has its counts
-      (`.claude/approaches-on-trial/refinement.md` §2.8).
+      (`.claude/approaches-on-trial/refinement.md` §2.8, *A round's close*).
 - [ ] The refinement's approach is evaluated: each piece has the
       reviewer's ending, and an ADR records them with the ways
       rejected at the opening
@@ -207,19 +207,19 @@ Gate:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4).
+      §2.4, *How*).
 
 Notes:
 - Opened 2026-10-18 from TODO's refinement item. The records map
   item joined it, as its trigger asked. Both items, with their
   Ideas, are in `TODO.md` at `b3b2018`.
-- Stages, from `.claude/approaches-on-trial/refinement.md` §2:
+- Stages, from `.claude/approaches-on-trial/refinement.md` §2, *The stages*:
   1. before round 1: group the kinds into rounds, which creates
      the refinement's file; list the files by layer; check the
-     rules (`.claude/approaches-on-trial/refinement.md` §2.1 to
+     rules (`.claude/approaches-on-trial/refinement.md` §2.1, *Group the kinds* to
      §2.3). The reviewer confirms the kinds, their rounds, the
      layers, whether the method's texts are read here
-     (`.claude/approaches-on-trial/refinement.md` §3), and that no
+     (`.claude/approaches-on-trial/refinement.md` §3, *Not known yet*), and that no
      rule is in doubt;
   2. each round: read, list, decide, work, then its close read;
   3. the last read, repeated until it finds nothing;
