@@ -49,7 +49,7 @@ or moves a section. Which side is right, never how either reads.
 
    A change on the other side goes in the same commit, or in the
    next when one side is an agent file and the other is not
-   (`docs/conventions/commit-messages/` §2).
+   (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*).
 6. **A foundation that changes is a description changed.** Step 3
    runs on it again, and what it finds goes through steps 4 and 5.
    The check ends when a walk finds nothing new. When the changes
