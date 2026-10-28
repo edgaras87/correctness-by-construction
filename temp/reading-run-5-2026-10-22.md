@@ -254,6 +254,8 @@ backstop, found only because the red was kept** (L-55; `3db4eea`;
 `ecf9e26`; `d914c97`). The delivered `cbc-slice` said only to note a
 backstop seen. Whose: the delivered skill's gap; fixed on the copy
 at `d476ab1` (D10), untried.
+*The shape's half taken (`4fc9037`); the skill's waits for E10
+(WORK-3).*
 
 **FINDING-30. Two evidence tests proved nothing on their first run,
 green on both trees:** SLICE-6's pairs released exactly at the
@@ -287,8 +289,12 @@ applies (2026-10-29, at E8).*
 - **E2** `shapes/slice-record.md:84-86`, `b27b5a2`, D10: the block's
   backstop line names the backstop and says "seen catching at the
   red run, with the red taken again with it absent". Untried.
+  *Taken whole 2026-10-29 (`4fc9037`).*
 - **E3** `shapes/slice-record.md:187-191`, same commit, D10: the
   rule: a test that stayed green is no red. Untried.
+  *Taken 2026-10-29 (`4fc9037`), with one change of ours: "a test
+  that stayed green is no red" goes. It rules the work, not the
+  record's form; its home is `cbc-slice` Stage 3, by E10.*
 - **E4** `cbc-bootstrap/references/app-structure.md:47-50`,
   `a2f1ddc`, D12: a read never runs inside another read's row
   mapper; lived as fifteen 500s. Untried.
@@ -522,6 +528,8 @@ commit plan of its own.
   *Done 2026-10-29: E8 taken whole (`5e29435`).*
 - **WORK-7.** The slice-record shape: E2, E3 (D10), under
   `docs/conventions/shapes/` §5.2's endings.
+  *Done 2026-10-29 (`4fc9037`): E2 taken whole, E3 taken with one
+  change of ours.*
 - **WORK-8.** The `retrospective` skill: FINDING-24, the block on
   top of an append-only log, lived twice, with run 4's FINDING-77.
 - **WORK-9.** The `approach-drafting` master: E1, who chooses when
