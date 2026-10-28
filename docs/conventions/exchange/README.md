@@ -1,3 +1,7 @@
+---
+foundation: the tiers model
+---
+
 # The exchange
 
 **Everything that passes between a deliverer and a run, in both
@@ -65,22 +69,20 @@ because they are its own. §1 and §2 are both seats'.
 
 ## 1. What cannot change
 
-Five facts. A design that ignores one of them is describing a
-different system.
+The five facts that hold on every flow between a tier and the one
+below hold between the deliverer and a run
+(`docs/models/tiers.md` §3.5, *What holds on every flow*). Here
+they mean:
 
-1. **A run is blind.** It holds no address for its deliverer, no
-   checkout, no remote. It cannot fetch.
-2. **Nothing arrives by itself.** Every delivery is decided on the
-   deliverer's side and carried across by hand — the reviewer's, or
-   the agent's on the reviewer's word. Never automatic, never
-   started by the run.
-3. **The run holds copies; the deliverer holds masters.** A copy
-   changes only by being copied anew — or by the run editing it,
-   which is the next fact.
-4. **A run edits a copy when it fails it.** That is where learning
-   starts, and it happens in the file, mid-work, not in a note.
-5. **Nothing moves upward as files.** The deliverer reads the run.
-   A run never pushes.
+1. **A run is blind.** No address for its deliverer, no checkout,
+   no remote.
+2. **Nothing arrives by itself.** The reviewer carries a delivery
+   across, or the agent does on the reviewer's word.
+3. **The run holds copies; the deliverer holds masters.**
+4. **A run edits a copy when it fails it,** in the file, mid-work,
+   not in a note (§5, *Editing a copy*).
+5. **Nothing moves upward as files.** The deliverer reads the run,
+   and a run never pushes (§6, *Up*).
 
 ## 2. What each side keeps
 
@@ -110,9 +112,9 @@ The pin is a commit of the deliverer's. The run stores it and
 cannot resolve it, so everything the run needs to check must be
 checkable against its own tree.
 
-**One pin** for everything delivered. Not one per group, not one
-per convention. A run that holds two pins for one delivery has been
-given a way to be inconsistent.
+**One pin** for everything delivered, as on every flow
+(`docs/models/tiers.md` §3.5, *What holds on every flow*): not one
+per group, not one per convention.
 
 ### 2.3 At the pin, the bytes match
 
