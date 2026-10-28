@@ -65,16 +65,18 @@ concept* does not stay in the run — it is harvested.
 
 ## 3. The flows
 
-What moves between tiers, and in which direction. How it moves —
-the note, the pin, the read — is `docs/conventions/exchange/`.
+What moves between tiers, and in which direction. Five facts hold
+on every flow (§3.5, *What holds on every flow*). How it moves is
+each repo's own convention:
+here, for example, the exchange (`docs/conventions/exchange/`).
 
 ### 3.1 Down is delivery
 
 Two forms. A copy, always pinned at a commit of the tier above,
 which is what "a concept version" is. And a fill: text written at
-birth into a file the run owns from then on — today one, the
-playbook's steps into its plan (`delivery/README.md` §2) — never
-re-copied, and folded back by name at the run's retrospective, into
+birth into a file the run owns from then on, never re-copied
+(here, for example, a playbook's steps written into a run's plan:
+`delivery/README.md` §2, *Three ways a file lands*), and folded back by name at the run's retrospective, into
 the playbook that seeded it. At a run's birth the two
 meet, both input to Framing rather than agreement.
 
@@ -86,8 +88,8 @@ as an experiment's instrument. That is the told channel, unpinned by
 design (`docs/models/agent.md` §4.4), and the run's records say it was
 told; it is not a third form of delivery, and a run that leans on it
 has the diagnostic told carries. Nor is a copy the run has edited
-between two pins (`docs/conventions/exchange/` §5): delivery comes
-down, and an edit goes up.
+between two pins (§3.5, *What holds on every flow*, fact 4):
+delivery comes down, and an edit goes up.
 
 ### 3.3 Up is harvest, through records
 
@@ -103,8 +105,35 @@ repo as a side effect of downstream work, in either direction.
 No tier's agent reads a tier above it, so every delivery is a
 document, and its pin moves with it. A document absorbed without
 its pin moving leaves the registry lying — lived once, and the
-reason the pin moves with every take (`docs/conventions/exchange/`
-§2).
+reason the pin moves with every take (§3.5, *What holds on every
+flow*).
+
+### 3.5 What holds on every flow
+
+Five facts hold between a tier and the one below it. A design that
+ignores one describes a different system.
+
+1. **The tier below is blind.** It holds no address for the tier
+   above, and cannot fetch (§3.4, *The pin follows the talk*).
+2. **Nothing arrives by itself.** Every delivery is decided above
+   and carried across by a person, or by an agent on a person's
+   word. Never automatic, never started below.
+3. **Below holds copies; above holds masters.** A copy changes only
+   by being copied anew, or by the tier below editing it.
+4. **A copy is edited when it fails.** The tier below edits its copy
+   where the copy did not foresee what happened. That is where
+   learning starts, and the edit is read from above as the diff.
+5. **Nothing moves up as files.** The tier above reads; the tier
+   below never sends (§3.3, *Up is harvest, through records*).
+
+And one number, **the pin**: the commit of the tier above that a
+delivery's copies equal, kept by the tier below. One pin for a
+delivery, never one per part, so the tier below cannot hold two
+answers to what it was given.
+
+*Learned at this repo's exchange with its runs, from 2026-09-26, and
+written here on 2026-10-28, when the exchange came to stand on this
+model (ADR-0071).*
 
 ## 4. What the model answers
 
