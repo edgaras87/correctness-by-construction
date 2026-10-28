@@ -334,6 +334,11 @@
       - a session's end runs the sweep first, then writes its
         devlog entry. Weigh against the missing-context findings,
         which a sweep was to decide in a batch.
+      - when the devlog entry closes a piece of work, look back at
+        what the new thing touches. Tried once by hand, 2026-10-28:
+        all 67 TODO items read against ADR-0070 and ADR-0071, 17
+        touched, the pass too heavy for its yield and dropped. The
+        moment is worth a gate; its form is open.
       Trigger: with "Decide whether a sweep checks one home after
                work lands", its twin; ADR-0063's kinds now place
                either.
@@ -890,41 +895,6 @@
       Trigger: round 3's rule check, so its Writing kind reads the
                titles against it.
       See: devlog 2026-10-28; ADR-0070.
-
-- [ ] Decide when TODO is read against what was just settled
-      (2026-10-28, the reviewer).
-      Context: a decision can bring an option, a fact or a reason to
-      an open item, and nothing asks. On 2026-10-28 ADR-0071's
-      direction check reached the standing full read only because
-      the reviewer saw it; that item says "missing fact references",
-      and a grep for "direction" would not find it. TODO holds 67
-      open items in 1,269 lines. Its header triages at a step's
-      close; the refinement has been one step for ten days.
-      Ideas, (a) taken in talk:
-      - (a) a pass when a decision lands: a commit plan's close, or a
-        TODO item decided in talk. Each open item's title and
-        Context is read against one question: what does what we
-        just settled bring to it, an option, a fact, a reason it is
-        due, or nothing? Each item it may touch is read whole, with
-        its conversation-memory section, and gains its line as an
-        inserted commit. The close body names what grew, or none.
-      - a read, not a grep: an item in other words is missed by a
-        grep.
-      - a fresh agent may read it, given only what was settled and
-        the question, not anchored on what the writer expects.
-      - the reverse at an item's birth: the same read for items it
-        overlaps or should name.
-      - its home: the commit-plan convention, beside the sweep; our
-        seat first. A run reading that shows a run missing such an
-        extension is the trigger for theirs.
-      - rejected: each ADR listing the items it touches, only ADR'd
-        work; labels on items, which find only what was labelled.
-        Labels are weighed again if a pass misses an item twice.
-      - first evidence: a hand pass of ADR-0070 and ADR-0071 over
-        TODO.
-      Trigger: now: the hand pass, then the rule before the next
-               commit plan closes.
-      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §24.
 
 ## Later / someday
 
