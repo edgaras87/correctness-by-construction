@@ -12,11 +12,11 @@ constrained to need, verified both ways, with the manuals that make the
 ground usable and reproducible. The exit is the walk's stage 7: **the
 ground runs, constrained to need, both manuals stand.**
 
-The full walk is `references/establishment-walk.md` — read it before
+The full walk is `.claude/skills/infra-establish/references/establishment-walk.md` — read it before
 Stage 1. When PostgreSQL is the decided datastore, two more references
-apply at their stages: `references/postgres-role-split.md` (the authority
+apply at their stages: `.claude/skills/infra-establish/references/postgres-role-split.md` (the authority
 model — the constraint's realization) and
-`references/postgres-setup-walkthrough.md` (the lived end-to-end
+`.claude/skills/infra-establish/references/postgres-setup-walkthrough.md` (the lived end-to-end
 sequence, confirmed by two projects).
 
 ## Stage 0 — readiness gate (before anything else)
@@ -59,7 +59,7 @@ and habit is exactly what the method exists to refuse.
           → 5: stand up + verify BOTH ways → 6: contract → 7: exit test
 ```
 
-Full detail per stage: `references/establishment-walk.md`. The
+Full detail per stage: `.claude/skills/infra-establish/references/establishment-walk.md`. The
 non-negotiables:
 
 - **Stage 1 gate:** the environment decision is logged with its why
@@ -149,7 +149,7 @@ The layout, both cases:
     never reconstructed later.
 - README `Prerequisites` section — projected at the exit, when the
   ground stands: the environment lines only, merged and filled from
-  `templates/readme-prerequisites.md` (CBC ADR-0013). The stack's
+  `.claude/skills/infra-establish/templates/readme-prerequisites.md` (CBC ADR-0013). The stack's
   line arrives at bootstrap, not here. Direction in the walk's stage
   7.
 - Optional, only if the project keeps public docs: a setup guide

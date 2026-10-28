@@ -12,9 +12,9 @@ adversity-creating test exists and passes.** No evidence, no closed
 slice.
 
 This file says what to do at each stage, and each gate.
-`references/cbc-slice-workflow.md` holds what this file does not:
+`.claude/skills/cbc-slice/references/cbc-slice-workflow.md` holds what this file does not:
 the record's outline, why each stage runs as it does, and examples.
-Read it before Stage 1. `references/worked-example.md` Part 2 shows
+Read it before Stage 1. `.claude/skills/cbc-slice/references/worked-example.md` Part 2 shows
 one slice worked end to end.
 
 ## The stages and their gates
@@ -26,11 +26,11 @@ Stage 0: ready?  →  1: specify-correctness  →  2: plan  →  3: build  →  
 
 The record is written as the stages go, in one outline, one block
 per guarantee. Which stage writes which part:
-`references/cbc-slice-workflow.md`, "The slice's record".
+`.claude/skills/cbc-slice/references/cbc-slice-workflow.md`, "The slice's record".
 
 ## Stage 0 — readiness gate (before anything else)
 
-Read `references/system-readiness.md` and verify against the actual
+Read `.claude/skills/cbc-slice/references/system-readiness.md` and verify against the actual
 repo:
 
 1. **READINESS-1:** the three framing artifacts exist under
@@ -221,4 +221,4 @@ project's own record scheme: where, what was done instead, and why.
 
 When closing a slice, remind the user of the three standing guards:
 guarantee erosion, testing theater, escape-hatch watch
-(`references/cbc-slice-workflow.md`, "Standing guards").
+(`.claude/skills/cbc-slice/references/cbc-slice-workflow.md`, "Standing guards").

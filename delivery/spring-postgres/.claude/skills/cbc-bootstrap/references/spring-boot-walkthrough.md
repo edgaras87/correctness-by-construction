@@ -22,7 +22,7 @@ outside the app migrates; the app runs.*
 
 Before any code, the project's log carries: the stack; the
 application structure, decided against the lived default —
-`app-structure.md` beside this walkthrough is the decision surface,
+`.claude/skills/cbc-bootstrap/references/app-structure.md` beside this walkthrough is the decision surface,
 and deviating from its default is a logged off-default decision;
 Flyway staying outside the app (no migrator credentials in any
 profile); the migrations home confirmed.
@@ -60,7 +60,7 @@ announces **Java 21** (align IDE and terminal JDK if not); health UP.
 
 ## 3. Wire the runtime datasource
 
-Config skeleton copy-and-fill: `templates/application.yaml` — the
+Config skeleton copy-and-fill: `.claude/skills/cbc-bootstrap/templates/application.yaml` — the
 absences below ride in it as comments; the run's business config
 grows under its own key, never in the template.
 
@@ -104,7 +104,7 @@ enable the user socket unit, point the library at it.
 **Traps, exact:**
 1. `~/.testcontainers.properties` binds **only from `$HOME`** — never the
    project root (lived as a long "no valid Docker environment" hunt).
-   Copy-and-fill: `templates/testcontainers.properties`.
+   Copy-and-fill: `.claude/skills/cbc-bootstrap/templates/testcontainers.properties`.
 2. Ryuk, the library's reaper, runs fine under rootless podman on the
    Testcontainers 2.x line (lived: podman 5.8, Testcontainers 2.0.5,
    both throwaways reaped within seconds of the JVM's exit) — keep it
@@ -154,7 +154,7 @@ enable the user socket unit, point the library at it.
 
 The recurring artifacts these outcomes converge on — the two bases and
 the migration-path test — live as confirmed code in
-`spring-harness-reference.md` beside this walkthrough: **imitated,
+`.claude/skills/cbc-bootstrap/references/spring-harness-reference.md` beside this walkthrough: **imitated,
 never pasted**; read its variation points before writing a line.
 
 **Traps, exact:**
@@ -191,7 +191,7 @@ never pasted**; read its variation points before writing a line.
   every response asserted. The release-at-one-instant pattern *is* the
   shape later race evidence takes — aimed at nothing yet.
 - The probe pair as lived code — endpoint, barrier test, and the
-  scheduled-death javadoc — is in `spring-harness-reference.md`, same
+  scheduled-death javadoc — is in `.claude/skills/cbc-bootstrap/references/spring-harness-reference.md`, same
   imitate-don't-paste rule.
 - **When the definition's runtime ground names plural instances**, the
   in-process burst is the cheap first check and does not close the

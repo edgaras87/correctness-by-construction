@@ -99,7 +99,7 @@ Reason out and present for confirmation, each with its why:
   table before its invariant); no other adversity classes; no auth unless a
   slice demands identity at the door; no delivery machinery beyond locally
   runnable and testable; **no fail-fast on a missing secret** (the trap:
-  `references/spring-boot-walkthrough.md`, step 3) — the only operator at
+  `.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 3) — the only operator at
   bootstrap is the reviewer, the
   harness accepts an instance only on health with the store UP, and the
   release gate's clean-machine test is where a forgotten export becomes
@@ -122,7 +122,7 @@ choose — beside the builder's other manuals; both lived runs put it at
   identity the application connects as, and the endpoint facts.
   **State environment facts notation-neutrally** — "env var X, default
   Y" — never in any tool's placeholder syntax (the trap:
-  `references/spring-boot-walkthrough.md`, step 3).
+  `.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 3).
 - §5 the evidence owed at the end: the step plan as executed with
   deviations, the run proof (app up, health UP with the database component
   UP, the one standard test command green), and the commits standing.
@@ -152,10 +152,10 @@ Per step: make the change, **verify it**, commit. A step whose verification
 fails is not committed; it is reported. Implementation decisions are yours
 here — under the stack conventions:
 
-- Read `references/spring-boot-walkthrough.md` for the outcomes and the
+- Read `.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md` for the outcomes and the
   lived traps (Boot 4 renames, test-scope companions, container-runtime
   setup, the zero-applied migration proof, the concurrency probe shape).
-- Write the build file per `references/spring-pom-convention.md` — every
+- Write the build file per `.claude/skills/cbc-bootstrap/references/spring-pom-convention.md` — every
   dependency enters at the step that earns it, with its earning reason as a
   comment, grouped by capability.
 - The repo already exists: **extract into it, never overwrite.** Each
@@ -206,7 +206,7 @@ may a slice rely on" there.
 The certified facts also project into the README (CBC ADR-0013): the
 **Run** and **Test** sections, plus the stack's line joining the
 Prerequisites section the establishment opened — merged and filled
-from `templates/readme-run-test.md`. Run ends in the lived proof of
+from `.claude/skills/cbc-bootstrap/templates/readme-run-test.md`. Run ends in the lived proof of
 life; Test is the one standard test command, verified structurally at
 certification. The container's README ships without these sections —
 container stays, direction goes — and they arrive now because the

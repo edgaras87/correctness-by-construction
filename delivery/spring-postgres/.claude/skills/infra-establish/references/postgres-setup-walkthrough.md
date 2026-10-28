@@ -2,7 +2,7 @@
 
 The end-to-end *do this* for one service, lived by two projects.
 **Masters nothing**: the authority shape — roles, grants, the why — is
-mastered in `postgres-role-split.md`; on any conflict the model wins.
+mastered in `.claude/skills/infra-establish/references/postgres-role-split.md`; on any conflict the model wins.
 Context it assumes (noted where it binds): the Execution Environment is
 **podman local containers** driven by a compose file, and **Flyway**
 runs as a compose one-shot as the only DDL path.
@@ -35,7 +35,7 @@ skill's template is copied and filled*).
 
 `compose.yaml` — a `postgres` service and the Flyway one-shot (a
 one-shot behind a profile: the only DDL path, hidden from plain
-`up`). Copy-and-fill: `templates/compose.yaml`.
+`up`). Copy-and-fill: `.claude/skills/infra-establish/templates/compose.yaml`.
 
 Podman notes: the `:Z` mount flag matters on SELinux hosts; volume and
 network names get the compose project prefix automatically — never
@@ -45,7 +45,7 @@ volume identity depends on the directory the file happens to run from.
 ## 2 · Split out credentials (`.env`)
 
 `.env` (git-ignored) + committed `.env.example`. Copy-and-fill:
-`templates/.env.example`. Keys: the bootstrap password, the migrator
+`.claude/skills/infra-establish/templates/.env.example`. Keys: the bootstrap password, the migrator
 password (**must equal** the literal in the bootstrap SQL), optional
 `POSTGRES_PORT`, and the runtime application password (**must
 equal** the runtime literal in the bootstrap SQL) — the app reads it
@@ -60,7 +60,7 @@ configuration.
 `infrastructure/postgres/init/bootstrap.sql` — runs **once**,
 automatically, at the container's first start against an empty volume,
 as the bootstrap identity, **connected to `POSTGRES_DB`**.
-Copy-and-fill: `templates/bootstrap.sql` — its comments are the
+Copy-and-fill: `.claude/skills/infra-establish/templates/bootstrap.sql` — its comments are the
 recall layer, carried in full; the load-bearing lines are the
 default privileges (every table and sequence a future migration
 creates arrives already granted to runtime, so the split needs no
@@ -74,7 +74,7 @@ owned by the bootstrap identity; migrator owns only the schema. No
 
 `infrastructure/postgres/verify-database-model.sql` — beside `init/`,
 **not in it** (run on demand, never at container start).
-Copy-and-fill: `templates/verify-database-model.sql`. It queries the
+Copy-and-fill: `.claude/skills/infra-establish/templates/verify-database-model.sql`. It queries the
 catalog against the model's claims — roles and capabilities,
 database and schema ownership, schema privileges, default privileges
 (the model's load-bearing mechanism, invisible to `\dn+`); expected
@@ -85,7 +85,7 @@ other doc open.
 
 `infrastructure/flyway/conf/flyway.conf` — no credentials (env-passed
 by compose); the url speaks the compose network's service name.
-Copy-and-fill: `templates/flyway.conf`.
+Copy-and-fill: `.claude/skills/infra-establish/templates/flyway.conf`.
 
 `infrastructure/flyway/migrations/` — empty (+`.gitkeep`) until work
 earns schema; naming, when it does: `V<n>__<description>.sql`. **No

@@ -12,11 +12,11 @@ and ready). All paper — no code, no tech choices; the run's stub-born repo
 is the paper's home. A framing may honestly end in "no project"; that is a
 valid exit.
 
-The full procedure is `references/cbc-framing-workflow.md` — read it before
+The full procedure is `.claude/skills/cbc-framing/references/cbc-framing-workflow.md` — read it before
 stage 0 and keep it open; this file is the operating rules, not a substitute.
-`references/worked-example.md` shows a complete framing of a tiny order
+`.claude/skills/cbc-framing/references/worked-example.md` shows a complete framing of a tiny order
 service — consult it whenever unsure what a stage's output looks like.
-`references/the-whole-system-in-plain.md` is the one-page orientation if the
+`.claude/skills/cbc-framing/references/the-whole-system-in-plain.md` is the one-page orientation if the
 user (or you) needs the whole method reloaded first.
 
 ## The mode — non-negotiable
@@ -105,7 +105,7 @@ the briefing is history, never edited. So a claim like "no
 divergence from the briefing" can be checked against it.
 
 **The glossary starts here too:** `docs/glossary.md`, from the
-copy-and-fill master `templates/glossary.md`. Each coined word and
+copy-and-fill master `.claude/skills/cbc-framing/templates/glossary.md`. Each coined word and
 each tag kind is defined there once, in one plain sentence, when
 framing first uses it. Every later record adds to it.
 
@@ -184,7 +184,7 @@ grouping is headings for the reader, never a boundary; the
 reconciliation line accounts for every kill and states even its
 absences (the written zero); exactly one slice is chosen-next
 while open work remains. The default layout is the
-copy-and-fill master `templates/registry.md` beside this
+copy-and-fill master `.claude/skills/cbc-framing/templates/registry.md` beside this
 skill's references (CBC ADR-0008). Declining it is **off-template**:
 derive your own layout from the outcomes above, and the rest is
 (`.claude/rules/delivered-copies.md`, rule 8, *A skill's template is

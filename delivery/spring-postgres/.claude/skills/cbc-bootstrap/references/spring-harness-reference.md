@@ -8,8 +8,8 @@ PostgreSQL. Lived three times; the shape below is the third pass's,
 the most corrected.
 
 **Masters nothing.** The *outcomes* these files satisfy are
-`spring-boot-walkthrough.md`'s, steps 4 and 5; what enters the build
-and how each entry is written is `spring-pom-convention.md`'s; the
+`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`'s, steps 4 and 5; what enters the build
+and how each entry is written is `.claude/skills/cbc-bootstrap/references/spring-pom-convention.md`'s; the
 machine setup that makes containers reachable is the project's
 operator manual's. **The run's requirements document wins over all of
 them** — where it forbids something this file shows, the file is
@@ -429,7 +429,7 @@ class ContentionProbeIT extends WebDatabaseIT {
   method deletes it.
 - **The pom entries.** Which artifacts realize these capabilities,
   when they enter, and how each comment is written is
-  `spring-pom-convention.md`'s. This file names artifacts only where
+  `.claude/skills/cbc-bootstrap/references/spring-pom-convention.md`'s. This file names artifacts only where
   a *name* is a trap (`testcontainers-postgresql`,
   `spring-boot-restclient`, `flyway-database-postgresql`).
 - **The machine setup.** The container-runtime socket, the properties
@@ -469,7 +469,7 @@ class ContentionProbeIT extends WebDatabaseIT {
    together.
 7. **Package layout** (`testsupport/`, `probe/`) is the executor's —
    the layering is the outcome, the names are not. The test packages
-   by kind are `app-structure.md`'s.
+   by kind are `.claude/skills/cbc-bootstrap/references/app-structure.md`'s.
 8. **Plural instances, when the definition names them.** The shape
    above stages the race inside one test process. If the framing's
    runtime ground says the system runs as more than one instance,

@@ -5,7 +5,7 @@ definition and a slice surface. Ends exactly where
 `.claude/skills/cbc-slice/references/cbc-slice-workflow.md` begins — its output is that
 workflow's input.*
 
-*When a stage's required output changes here, `worked-example.md` beside
+*When a stage's required output changes here, `.claude/skills/cbc-framing/references/worked-example.md` beside
 this file changes in the same commit: a framer is sent to it to see what
 a stage's output looks like. It owns the worked example; the copy,
 `.claude/skills/cbc-slice/references/worked-example.md`, follows it.*
