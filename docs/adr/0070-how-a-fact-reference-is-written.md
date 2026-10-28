@@ -1,8 +1,10 @@
 # 0070. How a fact reference is written
 
 Date: 2026-10-27
-Status: Proposed, opened under the commit plan for the reference's
-homes.
+Status: Accepted (2026-10-28, at the set's records commit; opened
+Proposed under the commit plan for the reference's homes. Since then,
+the off-template rule's home moved from one skill to the exchange
+and the run's `delivered-copies.md`).
 
 ## Context
 
@@ -83,8 +85,10 @@ Measured on 2026-10-27, in living text:
 - Facts-in-sync §1, §3.1, §3.3, §4 step 2 and both seats state the
   decisions; the glossary, commit-plan §2.10, both `one-home.md`,
   `foundation-check.md` and both `commit-plan` skills follow.
-- Exchange §3.4 states the no-stack rule. One skill states the
-  off-template rule whole, and the other three point at it.
+- Exchange §3.4 states the no-stack rule. Exchange §5.8 and the
+  run's `delivered-copies.md` rule 8 state how a skill's template is
+  filled, and the off-template rule; five shipped tellings point at
+  rule 8.
 - The rewrite follows as a plan of its own: 329 titles, 129
   sentences, 34 uses of "pointer", 41 skill paths, and the shipped
   retellings of the refinement's FINDING-202, 204, 216, 219 and 220.

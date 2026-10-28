@@ -271,48 +271,26 @@
 
 - [ ] Write down how a fact reference is written, then rewrite each
       one to it (2026-10-24, the reviewer).
-      Context: seven decisions of 2026-10-27 settled the form, listed
-      in Ideas; no manual holds them yet. First their homes, with an
-      ADR: facts-in-sync §3.1, §3.3, §4 step 2 and the run's seat,
-      both `one-home.md`, exchange §3.4, and one skill. Then the
-      rewrite: 329 references gain a title, 129 sentences are
+      Context: the first half is done. ADR-0070 settled the form, and
+      its homes hold it: facts-in-sync §1, §3.1, §3.3, §4 and both
+      seats; both `one-home.md`; exchange §3.4 and §5.8; the run's
+      `delivered-copies.md` rule 8 (`2033109`..`f97367b`). Left is
+      the rewrite: 329 references gain a title, 129 sentences are
       reworded, 34 uses of "pointer" change, 41 paths inside skills
       run from the root.
-      Ideas, taken 2026-10-27:
-      - the form: (`<path>` §<number>, *<title>*), always in
-        parentheses. The same document drops the path; another repo
-        leads with its tag, CBC; a section with no number gives its
-        title alone; a long title is cut to its first words.
-      - "pointer" stays only as the agent model's wider word; where
-        it means a fact reference, it becomes one.
-      - a skill names its own files by a path from the root: two
-        skills hold `references/worked-example.md`.
-      - a run may retell beside an id where the reader acts on it;
-        an id is a run's fact reference, and a change at its home
-        greps it in the same commit. The run's `writing.md` rule 8
-        already asks for it, and its `one-home.md` rule 2 forbids it.
-      - a shipped line never sends a run into our manual: a CBC
-        reference is for our walk, and the line stands alone.
-        FINDING-202, 204 and 216 take this form.
-      - a fact stated only in history gets a living home first: the
-        off-template rule in one skill, stated whole, the other
-        three pointing (FINDING-208); the method's no-stack rule in
-        exchange §3.4 (FINDING-256).
-      - a derived file's lines carry fact references to its
-        foundation too, as §4 step 2 says (FINDING-191, 196); the
-        `foundation` line re-reads the whole file when its root
-        changes. Trigger to weigh one reference per section: a file
-        where references sit on most lines and add nothing.
-      - at each commit, each new or changed line is asked whether it
-        relies on a fact written elsewhere and says where; our seat
-        only, until a run's retelling is found with no id.
-      - §3.3's grep also covers a retitled section and a fact moved
-        to a new home, a placed approach among them.
-      - the rewrite also fixes FINDING-219's paths and FINDING-220's
-        rules named in prose.
-      Trigger: now: round 2 has closed, and round 3's rule check
-               reads the settled form.
-      See: devlog 2026-10-24, the text-division item; ADR-0065;
+      Ideas:
+      - the form and its cases are facts-in-sync §3.1's; what each
+        decision rejected is ADR-0070's.
+      - a commit plan of its own, by layer as the refinement's work
+        ran; lines written since 2026-10-28 already take the form.
+      - it also fixes the refinement's FINDING-191 and 196, a derived
+        file's references to its foundation; 202, 204 and 216, the
+        shipped retellings; 219, paths inside a skill; 220, rules
+        named in prose.
+      - ADR-0070's trigger stands: a file where references sit on
+        most lines and add nothing.
+      Trigger: now, before round 3's rule check.
+      See: ADR-0070; devlog 2026-10-24, the text-division item;
       `TODO-CONVERSATION-MEMORY.md` §13.
 
 - [ ] Write when a bold lead is a part into
