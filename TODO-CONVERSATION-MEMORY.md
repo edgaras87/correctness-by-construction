@@ -892,6 +892,75 @@ general as a rule of something?"
   one read find every misuse. Chosen inside round 2, text would be
   reworded that round 2 may still move.
 
+### 2026-10-29
+
+#### What the reviewer asked
+
+On the agent's proposal, which gave the file sense a name and left
+the line sense and the plain sense to context: "should we have
+always perfix neat rule when we have something specific meaning of
+our defined ones, like agent rule and when there is no prefix then
+rule does not mean any of that? would handling this way not better?
+so when we have another meaning for rule we must to put in glossary
+that when next time it will be used it get catch and we are on same
+page. else rule will depend on context it is used. what u think?
+should deal with other multi meaning words same way?"
+
+Then: "should use of those word with prefix be marked somehow, like
+italic text or something, that we know when we read that its from
+glossary word?" And: "should we atleast surrend with \"\"?"
+
+#### What exists today
+
+- Counted 2026-10-29 over the living text outside history: "rule"
+  or "rules" about 970 times; the path `.claude/rules` 115; "skills
+  and rules" 25; "rule N" with its owner 41; "invariant" 120.
+- A fifth sense, found today: the `---` line between blocks in the
+  slice-record shape, "separated by a rule". A typesetter's word,
+  once.
+- Every mark Markdown has already has a job here: italic for a
+  section title in a fact reference and for the "*Its story:*"
+  lines; bold for a lead; backticks for a path or a command; quotes
+  for a word mentioned, not used.
+- Coined words are bare and unmarked: run, seat, deliverer and
+  newborn appear 154 times in the exchange manual alone.
+- Our glossary does not ship. A run starts its own from framing's
+  template, so a mark pointing at a glossary word points nowhere for
+  the run's agent.
+
+#### Points made
+
+- The reviewer's test is stricter than the agent's proposal and can
+  be checked by grep: a bare word means its plain English sense and
+  none of ours; each sense of ours carries its subject, "agent
+  rule"; a new sense gets its glossary line before its first use, or
+  a bare use is caught as a miss. Under the proposal, two senses
+  still depended on context.
+- The numbered line needs no new prefix: its owner is its subject,
+  "one-home rule 3".
+- What a built system keeps has the method's word, invariant; the
+  glossary entry says "rule" is never used for it.
+- No mark around a prefixed word: the subject explains itself in
+  plain words, with or without the glossary; each mark would take a
+  second meaning; a run cannot follow a mark to our glossary; and
+  marking the prefixed words while coined words stay bare would
+  single out the easier kind.
+- No quotes either: quotes mean a word spoken of, not used, and in
+  prose read as doubt. They keep that one job.
+- The same for every word with more than one meaning here: that is
+  §23's item, and this talk answers its open question. The two items
+  are one decision, worked together.
+- Renaming `convention-manual.md` was declined: every agent rule of
+  ours is named by what it governs.
+
+#### What the reviewer took
+
+Each of our senses carries its subject at every use; bare "rule" is
+plain English only; a new sense is listed in the glossary before it
+is used; no mark and no quotes around a prefixed word; the same way
+for every word with more than one meaning here. "Rule" is the first
+word on §23's list, and the two items share one ADR.
+
 ## 21. A full read for missing fact references
 
 Item: "Decide whether a standing full read looks for missing fact
@@ -1057,3 +1126,22 @@ rule fit is left open, three ways: a glossary entry per word with
 its senses beneath; the rule holding the term and the list; or the
 rule holding the term, and a glossary group listing the words,
 each pointing at the rule.
+
+### 2026-10-29
+
+#### What the reviewer asked
+
+While the "rule" item was worked, §19: whether every sense of ours
+takes a prefix and a bare word stays plain English, with the
+glossary catching a new sense, and whether to "deal with other multi
+meaning words same way".
+
+#### What the reviewer took
+
+The same way for every such word. Of the three ways left open on
+2026-10-28, the first: the list lives in the glossary, one entry per
+word, its bare sense first and each of our senses beneath it with
+its subject; the rule itself lives in the writing convention. No
+mark and no quotes around a prefixed word, for the reasons in §19.
+"Rule" is the first entry; "template" the second. The two items are
+worked together, under one ADR.
