@@ -166,6 +166,17 @@ The entry for the set, with the session-end lines.
   records' entries, which keep their words, their header comments
   being read; `docs/conventions/repo-hygiene/templates/`, which holds
   no Markdown.
+- **Three judgments from commit 3, held for every layer** (revision
+  of 2026-10-29, after commit 3). The manual form's fixed headings
+  keep their words, *The seats*, *What this is made usable as*; in
+  prose a seat is a Convention Seat. A convention is never the bare
+  word: a hyphenated name is a label in backticks,
+  "`project-recording`'s rule"; a single word takes its Name, "the
+  Exchange Convention's"; its manual is "the facts-in-sync manual".
+  "Form" stays lowercase where an owner names it or English means it,
+  "`PLAN.md`'s step form"; Output Form is the kind. Verbs stay
+  English: "a change here walks it". "Rule" is an Agent Rule only
+  where it means a file under `.claude/rules/`.
 - **No commit is provisional.** The layers and their files are known;
   a file that turns out to need no change still counts as read, and
   the commit body says so.
