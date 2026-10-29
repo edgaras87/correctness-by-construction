@@ -575,7 +575,7 @@ the form is as it is:
   and never argues.
 - A step's close is when the structure it describes can have moved,
   so that is when the map is checked.
-- The invariants are a table, one row per rule, never a paragraph:
+- The invariants are a table, one row per invariant, never a paragraph:
   how a slice got there is its record's.
 
 *Its story: devlog 2026-10-17, later; devlog 2026-10-29, the lessons' own stories: project-recording and agent-arrangement.*

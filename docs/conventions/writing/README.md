@@ -96,6 +96,15 @@ chat answers, records, commit messages, code comments.
    6 keeps a label exact; this rule makes sure it is understood.
    So a label, a section number or a coined word the reader may not
    know is said first in plain words.
+9. **A word with more than one meaning here carries its subject at
+   every use.** Rule 8 covers a first use, and a fact reference lands
+   a reader on one section, past it. So a bare word means only what
+   plain English says, and each sense of ours carries its subject:
+   "agent rule", never "rule", for a file under `.claude/rules/`. The
+   glossary lists the words and each sense's subject, so a grep for
+   a listed word without one finds the misses. Nothing marks the
+   prefixed word: every mark already has a job, and the subject
+   explains itself.
 
 *Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model; devlog 2026-10-19.*
 

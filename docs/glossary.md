@@ -1,9 +1,14 @@
 # Glossary
 
-<!-- What each coined word means, each defined once, in plain words
-     (docs/conventions/writing/ §2, rule 6). One entry per word: the
-     word in bold, then what it means. Where a manual or a model owns
-     the thing a word names, the entry points at it with a fact
+<!-- What each word of ours means, each defined once, in plain words
+     (docs/conventions/writing/ §2, rule 6 and rule 9). Two kinds of
+     entry. A word with one sense here: the word in bold, then what
+     it means; the word is used bare. A word with more than one
+     meaning here: the word in bold, its plain sense, then each sense
+     of ours beneath it with the subject it carries at every use; a
+     sense that has a word of its own names that word. A new sense
+     gets its line before its first use. Where a manual or a model
+     owns the thing a word names, the entry points at it with a fact
      reference and does not restate it. A word is coined only when
      plain English cannot say it; an entry goes when its word does.
      Entries sit in groups by what they name; a new word goes in its
@@ -100,6 +105,26 @@ manual owns the thing a word names, pointed at there.
   Not a form, which is read while writing.
 - **local map** — a directory's `README.md` that says how the parts
   of that area relate (`docs/conventions/project-recording/` §8.6, *Local maps*).
+- **rule** — plain English: what a text says must be done, "the
+  bump rule". Bare, it means only that. Each sense of ours carries
+  its subject (`docs/conventions/writing/` §2, rule 9):
+  - **agent rule** — a file under `.claude/rules/`, loaded into the
+    agent by path or in every session
+    (`docs/conventions/agent-arrangement/` §3.2, *`rules/`*).
+  - a numbered line inside one carries its owner: "one-home rule 3",
+    "writing rule 6".
+  - what a built system keeps is an invariant, the method's word,
+    never a rule.
+  - the line between the blocks of a record is a `---` line.
+- **template** — plain English: a text copied and filled in. Bare,
+  it means only that. Each sense of ours carries its subject:
+  - **a skill's template** — a file under a skill's `templates/`,
+    copied and filled by the project, never edited in place
+    (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*).
+  - **a stack overlay** — repo-hygiene's `.part` files under its
+    `templates/`, the deliverer's
+    (`docs/conventions/repo-hygiene/` §2, *Layering*).
+  - a record's stub is a stub, never a template.
 
 ## How texts tie
 
