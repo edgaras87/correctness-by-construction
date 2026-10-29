@@ -55,9 +55,7 @@ No artifact explains anything. What derives from this page is that
 list. A change here walks it; a change forced in one of them is
 checked back against this page.
 
-*Does the name hold? Every section is about something passing
-between two repos. Nothing in it is about versions except one
-number. It held, 2026-09-26.*
+*Its story: devlog 2026-09-25, later.*
 
 ## The seats
 
@@ -104,10 +102,7 @@ git holds it.
 Both numbers are in the run because the run is the only place the
 deliverer can look. To deliver, read the run's pin and diff forward
 in the deliverer's tree. To read, read the run's read-through and go
-forward in the run's. *Until 2026-10-01 the run recorded the pin
-and nobody recorded the read-through; a reading found its start by
-matching a devlog date against the run's log. Run 3's take of that
-day recorded the first.*
+forward in the run's. *Its story: devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 The pin is a commit of the deliverer's. The run stores it and
 cannot resolve it, so everything the run needs to check must be
@@ -135,12 +130,7 @@ composed file; the run fills them; no later delivery touches
 them. Their skeleton froze at birth, so no compare ever runs on
 them.
 
-*Rejected 2026-09-25: syncing a skeleton and letting the rest stay
-local, for every copy. It would make the compare a judgement where
-it is now a `diff` — the miscount problem made permanent; it would
-let a run's edit stay in the local part and never reach the next
-run, which is the one thing the loop exists to prevent; and the
-need it serves already has a home, the run's own records (§5, Editing a copy).*
+*Its story: devlog 2026-09-25, later.*
 
 Skeleton sync is reopened if a run re-applies the same declined edit
 after two re-pins.
@@ -185,11 +175,7 @@ nothing in flight — and when it is the agent, it reports what it
 found and waits for the word before anything lands. The
 staging is named by the commit at which the files and the note are
 both final — commit the note last, then name the bundle — so the
-pin the run records points at exactly the note it read. *Found by
-2026-09-25, when this section was drafted: the agent had staged
-once unasked, into a run mid-step, and it cost that run a commit
-plan; and a delivery was named one commit before its note was
-finished.*
+pin the run records points at exactly the note it read. *Its story: devlog 2026-09-25, later; and devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 ### 3.2 What goes
 
@@ -212,9 +198,7 @@ Inside
 `.claude/skills/cbc-framing/`. Staging is copying each group the
 run takes on top of the last; the result *is* the run's tree, and a
 group is left out by not naming its directory. No list of files, no
-mapping, nothing to forget. *Until 2026-09-26 `container/` mirrored
-and the other two did not — their skills sat flat and were re-homed
-by a script line each.* The one named exception is
+mapping, nothing to forget. *Its story: devlog 2026-09-26, evening.* The one named exception is
 `concept/`, which stays at this repo's root because the repo is the
 concept, and lands at `docs/concept/`; that is the whole of the
 mapping, stated here once.
@@ -245,10 +229,7 @@ and what it holds for each kind — is the conventions convention's
 (`docs/conventions/conventions/` §1.3, *The `foundation` line*). What is the exchange's: the
 line travels with the copy as a live claim, what this file comes
 from *now* and not when or from which run, and nothing in a copy
-can say otherwise. *Until 2026-09-26 the five method and stack
-skills carried this as a comment on line 6, in two different
-verbs, nine templates repeated it, and the container's files
-carried nothing.*
+can say otherwise. *Its story: devlog 2026-09-26, evening; and devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 ### 3.6 A copy carries presence and content, never absence
 
@@ -291,9 +272,7 @@ A note that names a third repository gives both names: ours, by
 ordinal, and the one it gave itself at its Identity step. A run's
 records do not say which is which; ours do (`ARCHITECTURE.md` §2.5, *The runs*).
 
-*The three rules about verdicts were each a defect first. The last
-way a note fails was found on 2026-09-20, when a note of reports was
-sent back and rewritten as verdicts.*
+*Its story: devlog 2026-09-20.*
 
 ## 4. The take
 
@@ -322,33 +301,20 @@ copy.
    diff exact next time. Optional.
 4. **Remove what the note says is gone.** Each path the note names
    as deleted is deleted; each it names as renamed is moved. The
-   only step a copy cannot do. *Missed once, found by 2026-09-25:
-   a rename left the old file standing in a run for four days.*
+   only step a copy cannot do. *Its story: devlog 2026-09-25, later.*
 5. **Register.** One line in the run's decisions log: the date, the
    pin, what came, what was declined and where its need went. Agent
    side only, and in the last commit, where every copy equals the
    pin. Then the staging goes — the directory named for the pin and
    its note — and nothing else: `temp/` may hold the run's own
-   drafts, which are not the delivery's to clear. *Until 2026-10-05
-   this said `temp/` is emptied; run 3 kept a draft there for a
-   review, and the next take would have deleted it, untracked and
-   past recovery.*
+   drafts, which are not the delivery's to clear. *Its story: devlog 2026-10-08.*
 
 ## 5. Editing a copy
 
 ### 5.1 One rule for every delivered copy
 
 There are not two.
-*Found, checked side by side 2026-09-25: it was written twice then
-— once for conventions inside the receiver's protocol, once for the
-method skills in a file run 3 wrote itself. Six elements are the
-same rule in different words. Run 3's is the superset: it alone
-puts the pin and the never-edited concept in one place, states a
-priority when edits stack — behind the source is acceptable, behind
-this run's own lessons is not — and covers a skill the run has
-finished with. The deliverer's alone carried a "provisional" clause that
-expired on 09-20, when the first edit went through a re-pin. The
-shipped rule is built from theirs.*
+*Its story: devlog 2026-09-25, later.*
 
 A copy may be edited in place when all three hold:
 
@@ -371,8 +337,7 @@ is not the channel the other way: it holds drafts, not records,
 its files go once they have served, and a line left there would
 go with them. One heading keeps the lines from being swept with a
 rewrite elsewhere, and makes the read one section instead of a
-search. *By 2026-09-25 a rewrite had swept five items in one
-commit.*
+search. *Its story: devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 Nothing is written into the copy but the edit. No dated line, no
 comment saying what changed — a file says how to use it, never its
@@ -396,10 +361,7 @@ finished skill's fix is first used by the deliverer, so its line
 marks it *untried here*, and the deliverer reads those hunks
 hardest. Such an edit is taken when it is sound, and the next run
 is its trial (ADR-0051).
-*Lived 2026-10-13 to 15: run 3's agent kept its finished skills'
-fixes as notes for the next run until its reviewer stopped it; four
-skills then arrived edited and marked, and the reading here took
-all four.*
+*Its story: ADR-0051.*
 
 ### 5.3 Edits made before a verdict
 
@@ -429,11 +391,7 @@ them, so lived work can show one wrong; and the deliverer judges an
 exact hunk where a prose line must first be translated. The edit is
 the run's copy's: the concept changes only when the deliverer takes
 it (ADR-0051).
-*Until 2026-10-15 the concept was never edited: a chapter is not
-run, so nothing in it can fail a step, and a lesson about one went
-as a prose line. Run 3 wrote that clause into its own first rule,
-and reversed it at its retrospective, when its reviewer asked why
-the chapters were blocked at all; it had edited none.*
+*Its story: ADR-0051.*
 
 ### 5.7 The records
 
@@ -474,11 +432,7 @@ changed there but not committed. That work is not yet the run's
 word. But a verdict may rest on it, so the reading names it, and no
 verdict is written against what that work undoes.
 
-*Learned 2026-10-18, at the reading of run 3. Run 3 had skipped its
-Release in five staged files it never committed. The reading read
-only its commits, and one verdict waited on that Release. `git
-status` found the skip when the note was written, and the verdict
-moved to run 4's reading.*
+*Its story: devlog 2026-10-18; and devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 ### 6.2 A file the run wrote
 
@@ -504,11 +458,7 @@ A reading also asks what the run teaches the worked example,
 `delivery/method/.claude/skills/cbc-framing/references/worked-example.md`,
 which its copy in `cbc-slice` follows.
 
-*Learned by 2026-09-17: the worked example ships like everything
-else, and it sat untouched through three runs because no reading
-asked. Moved here on
-2026-09-30 from `delivery/README.md`, where it had no rule beside
-it.*
+*Its story: devlog 2026-09-30, later still; and devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 ### 6.4 A reading closes two ways
 
@@ -519,9 +469,7 @@ its items no longer describe it, though the run's side may still be
 true. An overtaken reading is closed the same way — one pass over
 its open items saying where each went — and deleted; the next read
 starts fresh rather than extending a list written against a tree
-that no longer exists. *Found once: a reading paused on 09-24 while
-sixty commits changed the ground under it; every open item had been
-dissolved or moved by what was done instead.*
+that no longer exists. *Its story: devlog 2026-09-26.*
 
 ### 6.5 Verdicts
 
