@@ -53,7 +53,7 @@ entries for rule, shape, form, template and stub gain the named
 senses in use. One commit: the sentences and the entries are one
 rule as it now reads.
 
-**5d. `docs: TODO, history told inline in six texts`** ✓ 36cb881
+**5d. `docs: TODO, history told inline in six texts`**
 Inserted on 2026-10-29, before 5b landed. A sentence in rule 9's why
 told the repo's history where the manual form says a lesson stands
 in general and points at its story. A scan of all living text for
@@ -90,6 +90,10 @@ Our agent rule follows the manual, in a commit of its own
 
 **8. `fix(delivery): shipped writing.md takes 9 and 11`**
 The container's copy follows the manual, with the run's examples.
+Revised 2026-10-29, at 5c: the glossary Skill Template in
+`cbc-framing` comes too. Its header still carries the two kinds of
+entry from commit 5; it takes the Name form, so a CBC Run's agent
+reading rule 9 finds it.
 
 **9. `docs: the check's items close, two ADRs accepted`**
 ADR-0076 and ADR-0077 flip to Accepted. TODO: the remaining-words
