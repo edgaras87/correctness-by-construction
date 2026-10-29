@@ -945,3 +945,53 @@ An item with options, not a choice: on paper, a drill on a
 throwaway branch, agents, or a kind in the refinement's last read.
 Due when the refinement closes. A diagnostic: what it finds becomes
 findings or TODO items, and it changes no rule itself.
+
+## 26. History told inline in six living texts
+
+Item: "Move the history told inline in six living texts to its
+story's home".
+
+### 2026-10-29
+
+#### What the reviewer said
+
+Reading commit 5b's diff, the why of writing rule 9, which began
+"This repo had defined about thirty things and hung each on a single
+English word": "why text sounds like log? does this text under
+refinements for later?"
+
+After the sentence was rewritten in the present: "can u scan all
+text again to make sure this is not only place where that slip?"
+
+On the six places found: "ok take it, stage the TODO line". And on
+keeping this talk: "lets save it".
+
+#### What exists today
+
+- **The form:** a manual states a lesson in general and keeps one
+  italic line pointing at the case that taught it
+  (`docs/conventions/conventions/` §2.6, *A lesson taken*); its
+  opening alone tells the failure lived, with dates (§2.2, *What it
+  is for*). The agent model's evidence lines, the approaches' *Tried
+  on* parts, TODO, PLAN, a commit plan and the baselines hold history
+  by their own forms.
+- **The scan:** 834 lines in 98 living files carry a past tense, a
+  date or "once", "earlier", "no longer". Read against the form, six
+  places tell the case where the form says point: the shapes
+  manual's dated reshape note; facts-in-sync's italic "Where it has
+  already happened"; the visual-comparison skill's §4 lessons and
+  Decisions footer, ours and the container's; two run 3 cases in the
+  retrospective manual's lessons; writing rule 2's why; one clause in
+  the exchange manual's *Why it arrives this way*.
+- **The slip's cause,** as the agent read it: a why written as the
+  story that led to the rule, where the section's other ten whys
+  state a standing reason.
+
+#### What the reviewer took
+
+The sentence fixed in the staged commit, not left for round 3's
+read, since the writing rule applies to every new line at its
+commit. The six old places as one TODO item, due in the pass that
+takes words and titles by Refinement Layer, since it rewrites those
+files; not fixed in the plan for round 3's rule check, which would
+have widened it past rule 9.

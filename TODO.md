@@ -835,7 +835,8 @@
         the Master Copy first.
       Trigger: the pass that takes words and titles by layer, the
                item above, since it rewrites these files.
-      See: devlog 2026-10-29, round 3's rule check.
+      See: devlog 2026-10-29, round 3's rule check;
+      `TODO-CONVERSATION-MEMORY.md` §26.
 
 ## Later / someday
 
