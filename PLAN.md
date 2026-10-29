@@ -170,9 +170,9 @@ Gate:
 - [x] Run 6 is born by `delivery/installs/pure-seed.md` at
       `~/IdeaProjects/cbc-pure-run-6`, its pin a commit on main, the
       seed's own checks all passing (2026-10-29, at `657d372`).
-- [ ] Run 6's intent and hand-off sit in its `temp/`, and the
+- [x] Run 6's intent and hand-off sit in its `temp/`, and the
       reviewer starts it with the seed's prompt, its review lines
-      replaced by full auto.
+      replaced by full auto (2026-10-29, started by the reviewer).
 - [x] `ARCHITECTURE.md` §2.5 lists run 6 (2026-10-29).
 
 **At the close.**
