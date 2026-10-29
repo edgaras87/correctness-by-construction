@@ -7,8 +7,12 @@
      plain sense here. A word with more than one meaning here: the word in
      bold, a line saying that bare it is plain English, then each
      sense of ours beneath it with the subject it carries at every
-     use, written exactly as the entry writes it (rule 6). A thing
-     with a word of its own is not a sense. A new sense gets its
+     use, written exactly as the entry writes it (rule 6). The entry
+     is a contents page: one line per sense in use, ours and others'
+     alike, each with the address of the home that defines it; the
+     home defines, the entry points. A word of another part of
+     speech is another word. A thing with a word of its own is not a
+     sense. A new sense gets its
      line before its first use; a word of the first kind that needs
      a second sense, ours or the plain one, becomes an entry of the
      second kind, and its bare uses take their subject in the same
@@ -27,8 +31,12 @@ manual owns the thing a word names, pointed at there.
 
 - **deliverer** — the repository holding the master of every file a
   project receives. Here, this repo.
-- **run** — a separate repository that builds a real system with
-  what it was given. Blind to its deliverer.
+- **run** — bare, plain English, read as any word is: the verb,
+  "a script runs", is another word. Our sense carries its subject:
+  - **cbc run** — a separate repository that builds a real system
+    with what this repo gave it, blind to its deliverer
+    (`docs/models/tiers.md` §2.3, *Runs*). Named by its number: cbc
+    run 6.
 - **newborn** — a run at its birth, from its seed until its agent
   finishes the birth. It holds what the seed put there, one pin
   included, and no earlier state.
@@ -54,10 +62,13 @@ manual owns the thing a word names, pointed at there.
 - **staging** — copying the delivery and its note into a run's
   `temp/`, by the reviewer or by the agent when told to
   (`docs/conventions/exchange/` §3.1, *Staging*). The run does nothing until it
-  has happened.
-- **take** — the run's act: moving delivered files from `temp/`
-  into place and recording the pin (`docs/conventions/exchange/`
-  §4, *The take*).
+  has happened. The verb names its object, "stage a delivery", since
+  git's verb is the same word.
+- **take** — bare, plain English, read as any word is: the verb,
+  "take the diff", is another word. Our sense carries its subject:
+  - **a cbc run's take** — the cbc run's act: moving delivered files
+    from `temp/` into place and recording the pin
+    (`docs/conventions/exchange/` §4, *The take*).
 - **harvest** — us reading a run's repository and changing our
   masters from what it learned (`docs/models/tiers.md` §3.3, *Up is harvest, through records*).
 
@@ -69,10 +80,20 @@ manual owns the thing a word names, pointed at there.
   applies it and does not explain. One rule for all of them
   (`docs/conventions/facts-in-sync/` §4, *The rule for every description*); they differ at the edges
   (ADR-0039).
-- **model** — the top description of a chain of texts: an idea any
-  repo can adapt, its rules varying by repo, like an interface. A
-  repo adapts it in a manual (`docs/models/idea-to-output.md` §2, *The kinds*
-  and §5, *A model and a concept*).
+- **model** — bare, plain English, read as any word is. Each sense
+  in use carries its subject:
+  - **idea model** — the top description of a chain of texts: an
+    idea any repo can adapt, its rules varying by repo, like an
+    interface. A repo adapts it in a manual
+    (`docs/models/idea-to-output.md` §2, *The kinds*, and §5, *A
+    model and a concept*). A particular one is named by its name: the
+    agent model, the tiers model, the idea-to-output model.
+  - others': the adversity model, the method's
+    (`delivery/method/.claude/skills/cbc-slice/references/cbc-slice-workflow.md`);
+    the world model, the concept's (`concept/01-layered-system.md`);
+    the data model and the role model, the stack's
+    (`delivery/spring-postgres/.claude/skills/infra-establish/references/postgres-role-split.md`);
+    the Claude model a delegation names, "Opus 5.5".
 - **canonical** — of a description or a copy: the one that counts,
   from which every other is derived or copied. Says reference,
   never correctness — a canonical description is today's
@@ -119,6 +140,12 @@ manual owns the thing a word names, pointed at there.
     shape. Not an output form, which is read while writing.
 - **local map** — a directory's `README.md` that says how the parts
   of that area relate (`docs/conventions/project-recording/` §8.6, *Local maps*).
+- **log** — bare, plain English, read as any word is: git log, the
+  verb, a probe's log in the stack. Devlog and CHANGELOG are names of
+  records, not this word. Our sense carries its subject:
+  - **decisions log** — a cbc run's `.claude/decisions.md`, where its
+    agent records the decisions about its own setup
+    (`docs/conventions/agent-arrangement/` §3.4, *`decisions.md`*).
 - **rule** — bare, plain English, read as any word is; nothing of
   ours. Each sense of ours carries its subject
   (`docs/conventions/writing/` §2, rule 9):
@@ -127,16 +154,25 @@ manual owns the thing a word names, pointed at there.
     (`docs/conventions/agent-arrangement/` §3.2, *`rules/`*).
   - a numbered line inside one carries its owner: "one-home rule 3",
     "writing rule 6".
+  - the kinds in use: a local rule, the entry file's
+    (`docs/conventions/agent-arrangement/` §2.4, *How*); a paths rule,
+    an agent rule loaded by path (`docs/conventions/agent-arrangement/`
+    §3.2, *`rules/`*); a permission rule and a deny rule, Claude
+    Code's settings (`docs/conventions/agent-arrangement/` §3.5,
+    *`settings.json`*).
 - **template** — bare, plain English, read as any word is; nothing
   of ours. Our sense carries its subject:
   - **a skill's template** — a file under a skill's `templates/`,
     copied and filled by the project, never edited in place
     (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*).
+    A particular one is named by its file: the registry template,
+    the glossary template.
 - **stub** — bare, plain English, read as any word is; nothing of
   ours. Our sense carries its subject:
   - **record stub** — a record as it is born: the shipped file with
     its header comment and headings, which a project fills from its
-    first entry on. The container holds one per record
+    first entry on. The container holds one per record, each named
+    by it: the plan stub, the decisions-log stub
     (`docs/conventions/project-recording/`, *What this is made usable as*).
 - **overlay** — bare, plain English, read as any word is; nothing
   of ours. Our sense carries its subject:
@@ -150,6 +186,13 @@ manual owns the thing a word names, pointed at there.
   written elsewhere: the address of the fact's home, its path,
   section and title, in parentheses
   (`docs/conventions/facts-in-sync/` §3.1, *What it is*).
+- **tag** — bare, plain English, read as any word is: git's tag, a
+  container image's tag. Each sense in use carries its subject:
+  - **repo tag** — the letters a repo's decisions carry when cited
+    from another repo, CBC for this one
+    (`docs/conventions/project-recording/` §3.5, *A number is local to one repo*).
+  - the framing's tags, KILL-3, FACT-CALLER-5: the method's, each
+    tag kind defined in a cbc run's own glossary.
 - **link** — a relation from a lower text to the upper one it
   relies on: stands on, points, governs, written from
   (`docs/models/idea-to-output.md` §3.1, *The four links*). Wider than a fact
@@ -168,12 +211,25 @@ manual owns the thing a word names, pointed at there.
 
 ## The work
 
-- **step** — one piece of PLAN's work, a run's or ours. What makes
-  work a step here is our `PLAN.md`'s step form (ADR-0057).
-- **stage** — one phase of a skill, numbered from Stage 0:
-  `cbc-slice`'s Stage 3, `cbc-framing`'s Stage 2. A step's Now line
-  names the stage it is in. How a skill names them is the conventions manual's
-  (`docs/conventions/conventions/` §1.4, *Stages*).
+- **step** — bare, plain English, read as any word is: a numbered
+  step inside a text is named by its owner, "the walk's step 3",
+  "working-a-reading's step 4"; a casual phase stays bare. Our sense
+  carries its subject:
+  - **plan step** — one piece of PLAN's work, a cbc run's or ours. What
+    makes work a plan step here is our `PLAN.md`'s step form
+    (ADR-0057). Named by its number in its plan: Step 0.
+- **stage** — bare, plain English, read as any word is: git's
+  staged, and the verb, are other words. Each sense in use carries
+  its subject:
+  - **skill stage** — one phase of a skill, numbered from Stage 0,
+    and named by its skill outside it: `cbc-slice`'s Stage 3,
+    `cbc-framing`'s Stage 2. A plan step's Now line names the skill
+    stage it is in. How a skill names them is the conventions
+    manual's (`docs/conventions/conventions/` §1.4, *Stages*).
+  - **approach stage** — one phase of an approach on trial, numbered
+    the same way (`.claude/approaches-on-trial/approach-drafting.md`,
+    *Stages*).
+  - the exchange's staging has its own entry.
 - **conversation-memory** — the talk that shaped a TODO item,
   kept beside it in `TODO-CONVERSATION-MEMORY.md`: what was asked,
   the options weighed, what was said for and against. It decides

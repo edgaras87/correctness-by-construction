@@ -107,8 +107,14 @@ chat answers, records, commit messages, code comments.
    explains itself. A glossary word with one sense here owns the
    bare word, so that word is not used in its plain sense; a plain
    use of it is found only by reading, so a word whose plain sense
-   is often wanted is listed with its senses instead, and its bare
-   uses take their subject in the same change.
+    is often wanted is listed with its senses instead, and its bare
+   uses take their subject in the same change. A word of another
+   part of speech is another word: "a cbc run" is ours, "it runs"
+   is English. A listed word's entry names every sense in use, each
+   with its subject, ours and others' alike, and points at the home
+   that defines it, so a reader who meets "git log" or "the Claude
+   model" finds it under the word; a use stays bare only where it
+   is casual English and no subject would be true of it.
 10. **A section's title names its subject.** A title is read in every
     fact reference to its section, where the sentence already says
     the point; a title that states the point says it twice, and
