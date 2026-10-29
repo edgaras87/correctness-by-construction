@@ -124,8 +124,19 @@ chat answers, records, commit messages, code comments.
     and parts in both seats; the manual form's fixed headings, a
     stage heading and a numbered rule's bold lead are not titles under
     it.
+11. **An edit changes the lines its change needs.** The reviewer
+    reads a diff at every commit boundary, for its change; a line
+    rewrapped beside it hides the change among lines that did not
+    need to move. Markdown has no line width here: a reader meets the
+    text rendered, or in an editor that wraps, and 985 lines in 83 of
+    the 99 living files already run past 72. The 72 is
+    commit-messages' rule for a body and nothing else
+    (`docs/conventions/commit-messages/` §2.1, *Conventional Commits, not just 50/72*).
+    A scripted pass is held to the same rule: it counts headings,
+    references and code fences before and after, and changes nothing
+    on a second run.
 
-*Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model; devlog 2026-10-19.*
+*Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model; devlog 2026-10-19; ADR-0074 to ADR-0077, rules 9 to 11.*
 
 ## Why it arrives this way
 
