@@ -323,7 +323,7 @@
       what it holds (2026-10-22, the reviewer).
       Context: a session's end is spread out.
       Project-recording asks for a devlog entry and a Resume line
-      (`docs/conventions/project-recording/` §4, *Devlog — the engineering…*). Two habits
+      (`docs/conventions/project-recording/` §4, *The devlog*). Two habits
       live only in the agent's own memory: a line per
       delegation, and, from 2026-10-22, one missing-context
       finding. A reader of the repo sees neither.
@@ -331,7 +331,7 @@
       - a convention of its own, by its moment; the sweep its
         twin for work that has landed.
       - a section of project-recording's devlog part
-        (`docs/conventions/project-recording/` §4, *Devlog — the engineering…*), since most of it is devlog writes.
+        (`docs/conventions/project-recording/` §4, *The devlog*), since most of it is devlog writes.
       - an approach on trial first (ADR-0058).
       - a rule loaded every session, naming each duty and its
         home.
@@ -379,7 +379,7 @@
       sequence during a piece of work. The other nine relate by what
       they govern, read or describe, stated as about thirty fact references across the manuals' *What this does not cover*, and seen
       together nowhere. The local-map rule now exists
-      (`docs/conventions/project-recording/` §8.6, *Local maps*, ADR-0045).
+      (`docs/conventions/project-recording/` §8.6, *Local Maps*, ADR-0045).
       Ideas:
       - all twelve and how each touches the others, derived from those references, built by `visual-comparison`.
       - three links, each with its upkeep: derives
@@ -428,7 +428,7 @@
         the README's form, its header comment, keeps changing status
         in PLAN: how that line lived in run 4.
       - whether run 4 confirmed its plan's steps once framed, as project-recording says a run does
-        (`docs/conventions/project-recording/` §9.4, *How*),
+        (`docs/conventions/project-recording/` §9.4, *How a playbook is written*),
         though no skill or step asks it: if not, whether the playbook's
         Framing step should.
       Trigger: the refinement of this repo closes; in a new session.
@@ -879,7 +879,7 @@
         (`docs/conventions/project-recording/` §6, *CHANGELOG.md*).
       - a fill sets a CbC run's two lines at birth, as the playbook
         fills its plan; we fill ours in place
-        (`docs/conventions/project-recording/` §9.4, *How*, step 1).
+        (`docs/conventions/project-recording/` §9.4, *How a playbook is written*, step 1).
       Trigger: the release item above opens; its CHANGELOG entry
                needs the answer.
       See: devlog 2026-10-21; `TODO-CONVERSATION-MEMORY.md` §4, *What our changelog tracks*.
@@ -959,12 +959,12 @@
 - [ ] Does the playbook need a convention of its own? (2026-09-29,
       the reviewer)
       Context: project-recording describes it
-      (`docs/conventions/project-recording/` §9, *Playbook — the cross-project…*), and one playbook exists, the CbC run's. It is not a shape: a shape is form, never content
+      (`docs/conventions/project-recording/` §9, *The playbook*), and one playbook exists, the CbC run's. It is not a shape: a shape is form, never content
       (`docs/conventions/shapes/` §1.1, *What it says*, and §2, *What a
       shape is not*), and a filled-in template is not one; a
       playbook is content, copied and filled at birth.
       Ideas: a convention of its own, split from project-recording's playbook part
-        (`docs/conventions/project-recording/` §9, *Playbook — the cross-project…*).
+        (`docs/conventions/project-recording/` §9, *The playbook*).
       Trigger: a second typed playbook.
       See: devlog 2026-09-29, the PLAN pass.
 

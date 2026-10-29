@@ -67,7 +67,7 @@ opening it at the moment of use.
   it rests on once, in a footer headed *Decisions*: each as
   `CBC ADR-nnnn` in one that ships, `ADR-nnnn` in one that stays
   here, the Repo Tag being `project-recording`'s rule
-  (`docs/conventions/project-recording/` §3.5, *A number is local to one repo*), and a decision this
+  (`docs/conventions/project-recording/` §3.5, *Numbers across repos*), and a decision this
   repo inherited is adopted before a shipped file cites it
   (ADR-0038). A footer line names the section it
   backs, unless it backs the whole file. A Record Stub cites nothing.

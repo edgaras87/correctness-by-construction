@@ -314,13 +314,13 @@ Both moments are every task, so both rules are ambient
 ## What this does not cover
 
 - **Which record owns which kind of fact** —
-  `docs/conventions/project-recording/` §13, *The records table…*, the records table.
+  `docs/conventions/project-recording/` §13, *The records table*, the records table.
 - **Which copy is the master, and how a copy reaches a run** —
   `docs/conventions/exchange/`.
 - **What a convention is, and the form of a manual** —
   `docs/conventions/conventions/`.
 - **The repo prefix a citation carries, `CBC ADR-nnnn`** —
-  `docs/conventions/project-recording/` §3.5, *A number is local to one repo*.
+  `docs/conventions/project-recording/` §3.5, *Numbers across repos*.
 - **What a link is, and that either side may be wrong** —
   `docs/models/idea-to-output.md` §3.1, *The four links* and §3.3, *A disagreement is settled*.
 

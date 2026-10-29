@@ -160,7 +160,7 @@ one page.
 
 - **Where a fact lives** — `docs/conventions/facts-in-sync/` §1, *One home*.
 - **Which record owns which kind of fact** —
-  `docs/conventions/project-recording/` §13, *The records table…*.
+  `docs/conventions/project-recording/` §13, *The records table*.
 - **The form of a commit message** —
   `docs/conventions/commit-messages/`.
 - **The form of a manual** — `docs/conventions/conventions/` §2, *The Convention Manual*.

@@ -115,7 +115,7 @@ its thing. A CBC Run keeps a glossary of its own.
   output: the Kill Shape, the Slice-Record Shape. Not an Output
   Form, which is read while writing.
 - **Local Map** — a directory's `README.md` that says how the parts
-  of that area relate (`docs/conventions/project-recording/` §8.6, *Local maps*).
+  of that area relate (`docs/conventions/project-recording/` §8.6, *Local Maps*).
 - **Agent Rule** — a file under `.claude/rules/`, loaded into the
   agent by path or in every session
   (`docs/conventions/agent-arrangement/` §3.2, *`rules/`*). A
@@ -143,7 +143,7 @@ its thing. A CBC Run keeps a glossary of its own.
   file here (`docs/conventions/agent-arrangement/` §3.4, *`decisions.md`*).
 - **Repo Tag** — the letters a repo's decisions carry when cited from
   another repo, CBC for this one
-  (`docs/conventions/project-recording/` §3.5, *A number is local to one repo*).
+  (`docs/conventions/project-recording/` §3.5, *Numbers across repos*).
 
 ## How texts tie
 
@@ -197,7 +197,7 @@ its thing. A CBC Run keeps a glossary of its own.
   beside it in `TODO-CONVERSATION-MEMORY.md`: what was asked, the
   options weighed, what was said for and against. It decides
   nothing; it is read when the item is worked
-  (`docs/conventions/project-recording/` §14, *Conversation-memory…*).
+  (`docs/conventions/project-recording/` §14, *Conversation Memory*).
 
 ## The concept
 

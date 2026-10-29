@@ -213,7 +213,7 @@ two born repos spell them the same way.
 *The records table* is the slot this convention provides and
 `docs/conventions/project-recording/` fills: its rows, and the
 requirement that every row names a moment, belong to that
-convention (`docs/conventions/project-recording/` §13, *The records table…*).
+convention (`docs/conventions/project-recording/` §13, *The records table*).
 
 *How to work here* is the stance a project expects where it is not
 the obvious one — "decide before building", "prefer exploring over
@@ -552,7 +552,7 @@ on (`docs/conventions/exchange/` §2.4, *The records are the one…*).
 - **The commit that touches these paths, and its scope** —
   `docs/conventions/commit-messages/`.
 - **The records the entry file's table lists, and when each is
-  touched** — `docs/conventions/project-recording/` §13, *The records table…*.
+  touched** — `docs/conventions/project-recording/` §13, *The records table*.
 - **What a shape is, and how one lives** —
   `docs/conventions/shapes/`.
 - **How a copy under `.claude/` is updated, and what a run may do

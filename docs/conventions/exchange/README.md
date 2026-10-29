@@ -265,7 +265,7 @@ No ADR number, no path in this repo and no word of this repo's own
 vocabulary, in a note or in a prompt: the run cannot see this repo,
 and a citation it cannot follow reads as its own. That is told text.
 A shipped file carries the tag instead, `CBC ADR-nnnn`
-(`docs/conventions/project-recording/` §3.5, *A number is local to one repo*), because a file stays
+(`docs/conventions/project-recording/` §3.5, *Numbers across repos*), because a file stays
 in the run and a note is read once (ADR-0020).
 
 A note that names a third repository gives both names: ours, by
@@ -413,7 +413,7 @@ A run whose decided constraints differ from what a skill's template
 assumes is off-template. It derives from what the template
 implements, which the skill names. It records the deviation where
 its records table puts a decision, what it did instead and why
-(`docs/conventions/project-recording/` §13, *The records table…*). It expects the
+(`docs/conventions/project-recording/` §13, *The records table*). It expects the
 deviation to come back as a change to the skill. It never bends a
 decided constraint to fit a skill's template (ADR-0008).
 
