@@ -116,15 +116,7 @@ And it keeps the talk behind a TODO item beside the item, in
 `TODO-CONVERSATION-MEMORY.md`, on trial (§14, *Conversation-memory…*; ADR-0060). A run
 gets it only if it holds here.
 
-*Found 2026-09-29: from 2026-09-20, with Step 10 in progress, 203
-commits, two of them touching `PLAN.md`; one step written after its
-work was done; the decision index stale twice. The work had been led
-by TODO and the devlog's Resume all along (ADR-0041).*
-
-*Found 2026-10-17: milestones did not lead the work either. From
-2026-09-30, 364 commits, 3 touching `PLAN.md`, none a step being
-worked; the reading of run 3 kept its gate outside the plan. A step
-is now the work being done (ADR-0057).*
+*Its story: ADR-0041; ADR-0057.*
 
 ## 1. The records at a glance
 
@@ -422,18 +414,7 @@ the deliverer's own. Why the form is as it is:
 - An item's Context is capped at what triage needs: tighter, it cut
   meaning; looser, an item grows back into its story.
 
-*Found 2026-09-29: the deliverer's TODO kept closed entries whole
-and stacked dated updates on open ones — 2,120 lines, half of them
-finished work, one item at 248. Run 3's, read the same day, stacks
-its answers the same way, its longest items at 38 and 36 lines.
-The deliverer's was pruned and reshaped to this form, and the cap
-found on it: three lines cut meaning and lost a fact
-(ADR-0040).*
-
-*Found 2026-10-19: the deliverer added four items in one session,
-each pointing at a devlog entry written only at its end, so every
-See led nowhere until then. Tried first on five items on
-2026-10-17, the story moved to the moment the item is added.*
+*Its story: ADR-0040; devlog 2026-10-17, later; devlog 2026-10-29, the lessons' own stories: project-recording and agent-arrangement.*
 
 ### 5.5 When
 
@@ -566,10 +547,7 @@ contract, once certified, is history, and this map holds what stands
 now. The deliverer's maps documents and delivery instead, and its
 seat says how.
 
-*Found 2026-10-11, by run 3's RETRO D10: its records table sent a
-reader to the bootstrap requirements for what a slice may rely on.
-They were certified history, and read as current: their §3 called
-the migrations home "honestly empty" while it held V1 to V4.*
+*Its story: devlog 2026-10-17, later; devlog 2026-10-29, the lessons' own stories: project-recording and agent-arrangement.*
 
 ### 8.2 Why
 
@@ -600,11 +578,7 @@ the form is as it is:
 - The invariants are a table, one row per rule, never a paragraph:
   how a slice got there is its record's.
 
-*Found 2026-10-11, by run 3's RETRO D16: run 3's ARCHITECTURE ran
-to 2,031 words. Its invariants section, 634 of them, told each
-slice's story again. The table below it, 304 words, already said
-what was true. Run 3 made the table its invariants section; the
-stub now starts there.*
+*Its story: devlog 2026-10-17, later; devlog 2026-10-29, the lessons' own stories: project-recording and agent-arrangement.*
 
 ### 8.5 Anti-patterns
 
@@ -623,10 +597,7 @@ what it maps and point for the rest. The file keeps the tool's name,
 `README.md`, and not every README is one: a README holding a folder's
 rules is another kind (ADR-0045).
 
-*Found 2026-09-30: the conventions index and the delivery's README,
-read the same day, had both decayed by retelling the map, a manual
-and the exchange. Cut to their relations, each held what nothing
-else did.*
+*Its story: devlog 2026-09-30, later still.*
 
 ---
 

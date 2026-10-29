@@ -104,11 +104,7 @@ manual names how in its list of what derives from it:
 `docs/conventions/writing/` and
 `docs/conventions/facts-in-sync/`.
 
-*Until 2026-09-26 the deliverer held the receiver's protocol,
-`convention-lifecycle`, and had never once run it — its registry
-pinned it to itself — while run 3 ran it at every take. Reading a
-shared file and assuming a shared job is how a rule ends up held in
-the repo that cannot apply it.*
+*Its story: devlog 2026-09-26; devlog 2026-10-29, the lessons' own stories: project-recording and agent-arrangement.*
 
 ## 1. What the arrangement is
 
@@ -277,8 +273,7 @@ when an evaluation places one (`docs/models/idea-to-output.md` §4.2,
 *Up, work to an idea*). How that is done is
 `.claude/approaches-on-trial/approach-drafting.md`'s and its
 evaluation's.
-*Defined 2026-10-16: run 3 wrote two this way (ADR-0056). Since
-2026-10-20, through an approach on trial (ADR-0058).*
+*Its story: ADR-0056; ADR-0058.*
 
 ### 3.2 `rules/`
 
@@ -310,11 +305,7 @@ it holds, and each delivery entry the pin and the read-through
 since it receives no delivery (ADR-0042). Its rules ride in its
 own stub.
 
-*Found 2026-10-02, at the eval: the deliverer's 48 entries ran a
-median of 18 lines, the longest 51, under a header asking for three.
-Found again 2026-10-11, by run 3's RETRO D1: it kept three-line
-entries, and its entries still ran 5 to 25 lines. Both kept the
-three parts, so the header asks for those and no line count.*
+*Its story: devlog 2026-10-17, later; devlog 2026-10-29, the lessons' own stories: project-recording and agent-arrangement.*
 
 ### 3.5 `settings.json`
 
@@ -358,11 +349,7 @@ rule, and "on this branch, commit freely" is a setting. The
 operator writes the file for each project and carries it there by
 hand.
 
-*Run 3 wrote its file at its retrospective (its RETRO D3,
-2026-10-11): five ways of working, learned by correction. Four
-were rules, and by 2026-10-18 the bundle held them. Run 4's file
-held only settings. The reading of run 3 declined to ship the
-file, and the paragraph above came of it.*
+*Its story: devlog 2026-10-18; devlog 2026-10-29, the lessons' own stories: project-recording and agent-arrangement.*
 
 
 ### 3.8 `approaches-on-trial/`
@@ -377,7 +364,7 @@ how one is drafted and how one is evaluated are
 convention places the directory and states nothing else about it.
 In a run, an approach the deliverer ships is a pinned copy
 (`docs/conventions/exchange/` §3.2, *What goes*), and one the run drafts is its
-own. *Added 2026-10-20 (ADR-0058).*
+own. *Its story: ADR-0058.*
 
 ### 3.9 A rule loaded in every session
 
@@ -389,9 +376,7 @@ any project. It passes as the convention's own channel: derived
 from its manual, and naming the manual in `foundation`. That keeps it from being the rulebook the anti-patterns warn of
 (§4, *Anti-patterns*): one file per convention, never a
 restatement. It is paid for in every session (§2.6, *Size*), so few
-qualify. *Added 2026-10-15, from run 3: its writing and one-home
-rules, loaded this way, changed its records where a manual and the
-agent's memory had not (ADR-0053).*
+qualify. *Its story: ADR-0053.*
 
 ## 4. Anti-patterns
 
