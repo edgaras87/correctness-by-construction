@@ -96,33 +96,31 @@ chat answers, records, commit messages, code comments.
    6 keeps a label exact; this rule makes sure it is understood.
    So a label, a section number or a coined word the reader may not
    know is said first in plain words.
-9. **A word with more than one meaning here carries its subject at
-   every use.** Rule 8 covers a first use, and a fact reference lands
-   a reader on one section, past it. So a bare word means only what
-   plain English says, and each sense of ours carries its subject:
-   "agent rule", never "rule", for a file under `.claude/rules/`. The
-   glossary lists the words and each sense's subject, so a grep for
-   a listed word without one finds the misses. Nothing marks the
-   prefixed word: every mark already has a job, and the subject
-   explains itself. A glossary word with one sense here owns the
-   bare word, so that word is not used in its plain sense; a plain
-   use of it is found only by reading, so a word whose plain sense
-    is often wanted is listed with its senses instead, and its bare
-   uses take their subject in the same change. A word of another
-   part of speech is another word: "a cbc run" is ours, "it runs"
-   is English. A listed word's entry names every sense in use, each
-   with its subject, ours and others' alike, and points at the home
-   that defines it, so a reader who meets "git log" or "the Claude
-   model" finds it under the word; a use stays bare only where it
-   is casual English and no subject would be true of it.
+9. **A defined thing has a Glossary Name of two or more words.**
+   Owner or kind first, then the word, each word capitalized, written
+   exactly: CBC Run, Plan Step, Agent Rule, Delivery Staging. A
+   lowercase word is English and only English. A thing hung on one
+   English word makes the reader decide at every use which is meant,
+   "staging" the exchange's or git's; two words say what the thing is
+   and whose, and the capitals say it is defined before the words are
+   read, as a contract's "the Deliverer" or Kubernetes' "a Pod" do.
+   Every Markdown mark already has a job here, so none marks a Name. A
+   numbered one is named by its owner and number, "working-a-reading
+   rule 2", "the walk's step 3"; a label inside its owner keeps its
+   case, "Step 0" in a plan, "Stage 3" in a skill; a path is written
+   as it is. A thing is defined when a text gives it a meaning
+   English does not. Its Name goes into the glossary in the commit
+   that first uses it, pointing at the home that defines it, and a
+   word whose English meaning is ours has no Name (rule 6).
 10. **A section's title names its subject.** A title is read in every
     fact reference to its section, where the sentence already says
     the point; a title that states the point says it twice, and
     changes when the rule does. A subject is short, so a title of 30
     characters or fewer is carried whole, never cut. It stands alone,
     since a reference shows no parent: *How a plan is written*, never
-    *How*. One phrase in sentence case, with no gloss after a dash or
-    colon: the gloss opens the body. This holds for numbered sections
+    *How*. One phrase in sentence case, a Glossary Name inside it
+    keeping its capitals, with no gloss after a dash or colon: the
+    gloss opens the body. This holds for numbered sections
     and parts in both seats; the manual form's fixed headings, a
     stage heading and a numbered rule's bold lead are not titles under
     it.
