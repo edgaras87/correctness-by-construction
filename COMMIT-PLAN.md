@@ -11,10 +11,12 @@ English says. Both seats' `writing.md` carry it. The glossary says it
 holds two kinds of entry, a word with one sense here and a word with
 several, and lists the first two of the second kind: rule, with its
 senses agent rule and a numbered line with its owner; template, with
-a skill's template; stub, with record stub; and overlay, with stack
-overlay. An entry lists only the senses that keep the word; a thing
-with a word of its own, such as invariant, is not a sense. The four living lines that used "rule" for an invariant or a
-`---` line say what they mean. Round 3's Writing read then has the
+a skill's template; stub, with record stub; overlay, with stack
+overlay; shape, with output shape; and form, with its owner as the
+subject and output form for the kind. An entry lists only the senses
+that keep the word; a thing with a word of its own, such as
+invariant, is not a sense. The four living lines that used "rule"
+for an invariant or a `---` line say what they mean. Round 3's Writing read then has the
 words to read old text against; the rewording of about 150 bare uses
 of "rule" for a file is its work, not this set's. The remaining
 candidate words are measured at round 3's rule check, and the second
@@ -70,6 +72,26 @@ second-kind words; measured, they are ours in 96 percent of 651
 uses, so they stay first kind and the clause removes their 26 plain
 uses in round 3. ADR-0074 takes the clause as a decision.
 
+**3d. `docs: writing rule 9 keeps a glossary word from plain use`**
+Inserted on 2026-10-29, before commit 4 was staged. Commit 3c put the
+first-kind clause in the glossary's header and in ADR-0074, and
+nowhere in the writing manual. The clause is a rule for how text is
+written, so the manual's rule 9 is its home, and the header's line
+retells it. Commits 4 and 5 then carry the whole rule.
+
+**3e. `docs: shape and form become second-kind words`**
+Inserted on 2026-10-29, reversing 3c's choice. The clause for a
+first-kind word cannot be checked by grep: "shape" plain and "shape"
+ours are the same letters, and the agent broke the clause five times
+in one afternoon, in text about the clause. A prefix is checked by
+grep, and the cost that repeats, every new line by every writer,
+is what counts; round 3 reads the 650 old lines anyway. The entries:
+output shape, named by its output when it has one, "the kill shape";
+and form, whose subject is its owner, "a record's form", "the
+manual's form", with "output form" for the kind itself. The
+convention's name and the paths stay labels. ADR-0074 reverses its
+decision on the two words, with the reason.
+
 **4. `chore(agent): our writing.md takes rule 9`**
 Our agent rule follows the manual, in a commit of its own
 (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*).
@@ -111,7 +133,7 @@ The entry for the set, with the session-end lines.
 - **Two items, one ADR.** The reviewer's test for "rule", a bare
   word means plain English and each sense of ours carries its
   subject, is the second item's rule, and answers how its list is
-  kept. Deciding "rule" alone would decide the second item's shape
+  kept. Deciding "rule" alone would decide the second item's answer
   without saying so.
 - **The list starts with two words, not ten.** The second item
   names eight more candidates. Each needs its uses and senses
@@ -135,11 +157,14 @@ The entry for the set, with the session-end lines.
 - **The glossary defines none of the bare words** (revision of
   2026-10-29). The rule leaves a bare word to plain English; an entry
   that defined it would own what is not ours.
-- **Shape and form stay words of the first kind** (revision of
-  2026-10-29). A prefix at every use would touch about 650 lines for
-  26 plain ones; the clause touches the 26.
+- **Shape and form become words of the second kind** (revision of
+  2026-10-29, reversing the same day's first choice). The first
+  choice counted the one-time cost, 650 lines against 26. The cost
+  that repeats is the check: a plain use of a first-kind word is
+  found only by reading, a bare use of a second-kind word by grep.
+  The clause stays for words whose plain sense is rarely needed.
 - **The glossary's groups stay as they are** (2026-10-29). A
-  multi-sense entry is told apart by its shape, the plain sense first
+  multi-sense entry is told apart by its layout, the plain sense first
   and the senses beneath, not by a group of its own. A grep for the
   phrase every such entry opens with lists them; a second grouping
   would be a second home for the list.
