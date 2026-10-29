@@ -109,6 +109,17 @@ chat answers, records, commit messages, code comments.
    use of it is found only by reading, so a word whose plain sense
    is often wanted is listed with its senses instead, and its bare
    uses take their subject in the same change.
+10. **A section's title names its subject.** A title is read in every
+    fact reference to its section, where the sentence already says
+    the point; a title that states the point says it twice, and
+    changes when the rule does. A subject is short, so a title of 30
+    characters or fewer is carried whole, never cut. It stands alone,
+    since a reference shows no parent: *How a plan is written*, never
+    *How*. One phrase in sentence case, with no gloss after a dash or
+    colon: the gloss opens the body. This holds for numbered sections
+    and parts in both seats; the manual form's fixed headings, a
+    stage heading and a numbered rule's bold lead are not titles under
+    it.
 
 *Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model; devlog 2026-10-19.*
 

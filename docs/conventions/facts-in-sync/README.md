@@ -161,8 +161,10 @@ pointing at it with one grep. A skill names its own files the same
 way: two skills may hold a file of the same name. The number lands
 the reader on a paragraph rather than a wall. The title says what is
 there without opening it, and a number and title that no longer
-match show a stale reference. A title over 30 characters is cut at
-a word boundary to 30 or fewer, ending in "…". The parentheses give the walk and the reader one shape to
+match show a stale reference. A section's title is 30 characters or
+fewer and is carried whole (`docs/conventions/writing/` §2, *Why each
+rule*, rule 10); a numbered rule's bold lead over 30 characters is cut
+at a word boundary to 30 or fewer, ending in "…". The parentheses give the walk and the reader one shape to
 find; the sentence says its point in words, and the reference gives
 only the address.
 
