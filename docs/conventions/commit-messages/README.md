@@ -63,11 +63,7 @@ by a commitlint hook (ADR-0038, 1a).
 A subject says what the
 commit changes; a change to the work reads naturally as a
 command, a record as what became true, and both read well in the
-log. *Until 2026-10-09 the skill asked for the imperative, and
-practice split by itself, here and in never-oversold alike: code
-as commands, records as statements. Requiring either mood would
-rewrite one of the two habits for nothing a reader gains
-(ADR-0049, 5).*
+log. *Its story: ADR-0049.*
 
 ### 2.3 The agent's files never share a commit with the project's
 
@@ -85,10 +81,7 @@ The commit boundary is the one place a
 wrong assumption is cheap to catch when an agent is doing the
 committing, so the agent stages, shows the diff, and waits. The
 rule is text, in the skill, and gated nowhere (ADR-0038, 1f).
-*A permission rule that stopped every commit at a prompt was
-shipped once and withdrawn, 2026-09-10, after the one project
-that could have used it declined it and held forty-four commits
-on the sentence alone.*
+*Its story: devlog 2026-09-10, later; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ## 3. The deliverer's habit
 
@@ -112,9 +105,7 @@ the log:
 So the type is nearly always `docs`, and the **scope**, where one is
 given, carries the signal here, which is the mirror of the other
 answer, not a weaker version of it. Either works; what does not work
-is following neither and discovering the shape afterwards. *Until
-2026-09-19 this section described a practice the deliverer does not
-have, and its own was written nowhere.*
+is following neither and discovering the shape afterwards. *Its story: devlog 2026-09-19, after the close; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 This section is the deliverer's and does not ship.
 

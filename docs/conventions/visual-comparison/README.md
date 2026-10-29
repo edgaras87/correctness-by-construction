@@ -55,14 +55,7 @@ came from.
 
 ## 2. Why it is shaped this way
 
-*Settled 2026-09-24, the other way round from how it was asked.
-ADR-0030 decision 10 asked whether this earned an artifact of its
-own beside a general comparison method: if its findings never
-gained an entry from a comparison whose winner was not a picture,
-the split was decoration and the two should merge back. The
-trigger never fired, and the general half was discarded rather
-than merged into — it had run once, in the set that created it.
-This is the method now, not a specialisation of one.*
+*Its story: ADR-0030; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ### 2.1 The candidate set must hold at least one thing that is not a picture
 
@@ -75,9 +68,7 @@ the mistake is not available again.
 
 What
 a notation drops, or asserts by accident, shows only once it is
-drawn; its documentation does not say it ahead. *Both Mermaid
-failures of 2026-09-18 were dialects built for the job in hand,
-and neither was predictable from the documentation.*
+drawn; its documentation does not say it ahead. *Its story: devlog 2026-09-18; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ### 2.3 Fighting a notation is losing
 

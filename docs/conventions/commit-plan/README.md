@@ -87,9 +87,7 @@ makes a neglected plan lie. Git history is the status.
 Some decisions show only in the material: no conversation can
 settle them before the work is touched. For them, the provisional
 tail, the revision commit and the Proposed-then-Accepted ADR are the
-normal road, not a sign the plan failed (ADR-0038, 1e). *Lived in
-the CbC seed's third run, before 2026-09-27: it found four shapes in
-staged material that no conversation could have settled first.*
+normal road, not a sign the plan failed (ADR-0038, 1e). *Its story: devlog 2026-09-27, afternoon; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ### 2.5 The records commits are planned
 
@@ -100,9 +98,7 @@ commit list is what catches it (ADR-0038, 1d).
 ### 2.6 A plan counts commits
 
 "Step" is `PLAN.md`'s word; a plan that called its commits steps
-would give one word two meanings (ADR-0049, 1). *On 2026-10-08 a
-session sat inside PLAN's Step 10 while working commit plan steps 1
-to 13.*
+would give one word two meanings (ADR-0049, 1). *Its story: devlog 2026-10-08; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ### 2.7 An inserted commit takes a letter; a commit may repeat
 
@@ -119,9 +115,7 @@ changed (ADR-0050, 4 and 5).*
 
 A plan writes every subject before any lands; counted only at each
 boundary, a long one lands long, or is rewritten there with
-nothing in the plan saying why. *Run 3's SL-3 plan, 2026-10-08:
-three planned subjects over the limit, each caught only at its
-boundary, and one revision's own subject landed long uncounted.*
+nothing in the plan saying why. *Its story: devlog 2026-10-08; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ### 2.9 The agent's files are a commit of their own
 
@@ -140,10 +134,7 @@ the sweep looks again for every name the set moved, all at once: a
 commit's own grep looks for the names it meant to move, and misses
 the rest. It reads the text unwrapped. A grep matches line by
 line, and a manual wraps its prose, so a name broken across two
-lines is never found. *Four misses before it was written down: a
-`§8` hunt that missed a `§7`, a renumbering described without
-reading its range, a phrase wrapped across two lines, and on
-2026-09-30 a "(model §10)" reference the same way (ADR-0049, 3).*
+lines is never found. *Its story: ADR-0049; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ### 2.11 Small steps inside a planned commit, on the reviewer's grant
 
@@ -155,10 +146,7 @@ reviewer's because a small commit is still a commit, and the stop
 at every commit is commit-messages' rule (§2.13, *The stop at every boundary is…*);
 without the
 grant, every commit is a boundary. Each small commit is counted
-when it is written, as a planned subject is. *Run 3's Step 10,
-2026-10-13 to 15, under its reviewer's grant: about 180 small
-commits on a `-detail` branch, landed as 16; sixteen subjects over
-the limit were found only at the regroup (ADR-0050, 1 and 2).*
+when it is written, as a planned subject is. *Its story: ADR-0050.*
 
 ### 2.12 A look back before the close
 
@@ -170,10 +158,7 @@ one change, or one two, and are regrouped on the reviewer's word.
 ### 2.13 The stop at every boundary is commit-messages' rule
 
 It is commit-messages' rule, and this convention points at it
-(`docs/conventions/commit-messages/` §2.4, *Commit on the word*). *Until 2026-09-08 the sentence was stated here, in §6, a file
-that opens only for multi-commit work, and the reviewer's pace
-had to be said every session; it moved to where every commit
-opens (ADR-0038, 1f).*
+(`docs/conventions/commit-messages/` §2.4, *Commit on the word*). *Its story: ADR-0038; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ## Why it arrives this way
 

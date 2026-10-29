@@ -131,9 +131,7 @@ delivery's copies equal, kept by the tier below. One pin for a
 delivery, never one per part, so the tier below cannot hold two
 answers to what it was given.
 
-*Learned at this repo's exchange with its runs, from 2026-09-26, and
-written here on 2026-10-28, when the exchange came to stand on this
-model (ADR-0071).*
+*Its story: ADR-0071; devlog 2026-09-26; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ## 4. What the model answers
 

@@ -75,10 +75,7 @@ cat "$t"/editorconfig.part   >> .editorconfig
 How an overlay reaches a run is open: nothing ships one, and no
 step, skill or playbook names the append.
 
-*Found 2026-09-28: nothing ships an overlay, and a run is blind to
-the deliverer and cannot fetch one. Run 3 wrote its stack's lines
-itself at its skeleton step; the overlay here and the run's are two
-sources for one thing.*
+*Its story: devlog 2026-09-28; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ## 3. Rules
 
@@ -101,9 +98,7 @@ nobody complies with `.gitignore`, git simply hides what it names. A
 rule here that cannot become a line in one of the three files has no
 delivery at all.
 
-*Until 2026-09-28 this page asked for a changelog entry with every
-base or overlay change, and none was ever written: the CHANGELOG is
-the concept's version log (ADR-0003).*
+*Its story: devlog 2026-09-28; ADR-0003; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ## What this does not cover
 

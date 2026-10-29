@@ -86,10 +86,7 @@ looking. But a look that changes nothing leaves a run released with
 records it has shown could read better. So a second step applies
 the lessons, before Release.
 
-*Lived in run 3, by 2026-10-15: its reviewer kept the two apart, and
-the look stayed clear. But run 3 would then have been released while
-its records still read in ways the retrospective had shown could be
-better, and its D24 added the second step.*
+*Its story: devlog 2026-10-15; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 Both come before Release, so they happen even when Release is
 skipped. That is the failure of a section filled at the project's
@@ -139,13 +136,7 @@ end.
 - **A tool that edits text is checked on what it must not touch,**
   not only on what it changed.
 
-*Measured in run 3, 2026-10-12 to 10-15: 27 triage rows, 11
-applied, 14 partly, 2 next run only. Three new decisions came up in
-the triage, not the retrospective. A fresh reader caught a rewrite
-of README that had dropped "and only" from "first and only". A
-first count of the tests said 195 where the run had 100: the report
-folder kept old files. Sixteen commit subjects over 50 characters were found only at
-the close. A rewrap joined a heading to its paragraph.*
+*Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ## 4. `RETRO.md`
 

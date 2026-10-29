@@ -40,9 +40,7 @@ staging was never used on either side.*
 What derives from this page is that list. A change here walks it;
 a change forced in one of them is checked back against this page.
 
-*Does the name hold? Every section is about a shape — what one is,
-where it sits, how it travels, what a difference with one means. It
-held, 2026-09-27, and again 2026-10-15.*
+*Its story: devlog 2026-09-27, afternoon; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ## The seats
 
@@ -85,11 +83,7 @@ output opens, extends and closes is the owning convention's. A shape
 that restates it is a copy of that convention, and a copy that
 repeats is what drifts.
 
-*Found twice on 2026-09-26. The reading's
-shape here restated the reading's lifecycle in its first section and
-lost the sentences rather than gaining a clause; run 3's
-`slice-record.md` opens with a section on how it is used that says
-the same thing from its side.*
+*Its story: devlog 2026-09-26; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ### 1.2 How one is born
 
@@ -112,11 +106,7 @@ went wrong. The shape is then tried on the examples it came from. A
 shape catches a part missing, not a part that lost half its meaning
 (ADR-0052).
 
-*Run 3, 2026-10-13: none of the twenty kills in its definition had a
-worked example with numbers, so a kill shape copied from them would
-never have asked for one. Tried on the definition before a fix, the
-shape found the two kills that had lost their whole death, and not
-the two that had kept a weaker one.*
+*Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ## 2. What a shape is not
 
@@ -161,14 +151,7 @@ can only be known by looking during the red run — the skill that
 runs the work asks for it too. Otherwise the gate finds the part
 missing when it is too late to produce.
 
-*Until 2026-10-15 a shape had two places, and the place was its
-force: under `.claude/rules/` with `paths:` it loaded while the work
-was written. Run 3 lived both. Its evidence-test shape loaded from
-SL-3, and SL-4's tests followed it; at its retrospective its
-reviewer moved every shape to the gate, for the reason above, and
-named gate-only a trial for run 4's second slice to judge. A test
-written without the shape in view is the measurement this repo had
-held that shape back for (ADR-0052).*
+*Its story: ADR-0052.*
 
 ## 4. Where a shape lives, between repositories
 
@@ -222,8 +205,7 @@ This page's pictures illustrate its prose and never carry a fact
 alone: read where Mermaid does not render, the page loses the
 pictures and no facts.
 
-*Measured 2026-09-27 and found false: five claims lived only in a
-chart. The prose grew to cover them.*
+*Its story: devlog 2026-09-27, afternoon; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ```mermaid
 flowchart LR
