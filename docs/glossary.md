@@ -97,17 +97,26 @@ manual owns the thing a word names, pointed at there.
   drafted during its first use, used again, and in the end placed
   into conventions or dropped:
   `.claude/approaches-on-trial/approach-evaluation.md`.
-- **form** — how an output is written, read while it is written:
-  rules for the writing and the output's layout, together. An
-  approach (`docs/models/idea-to-output.md` §2, *The kinds*). A record's form
-  sits in the record itself: its header comment, `PLAN.md`'s step
-  form, a stub's headings. A manual's and a reading's are agent
-  rules today; whether they become shapes is TODO's "Decide whether
-  our own forms become shapes".
-- **shape** — a presumed output, written from outputs that exist,
-  and read only at the gate to check what was made
-  (`docs/models/idea-to-output.md` §2, *The kinds*; `docs/conventions/shapes/`).
-  Not a form, which is read while writing.
+- **form** — bare, plain English, read as any word is; nothing of
+  ours. Our sense carries its subject, "output" for the kind and the
+  owner for a particular one:
+  - **output form** — how an output is written, read while it is
+    written: rules for the writing and the output's layout, together.
+    An approach (`docs/models/idea-to-output.md` §2, *The kinds*). A
+    particular one is named by its owner: a record's form sits in the
+    record itself, its header comment, `PLAN.md`'s step form, a
+    record stub's headings. A manual's and a reading's are agent
+    rules today; whether they become output shapes is TODO's "Decide
+    whether our own forms become shapes".
+- **shape** — bare, plain English, read as any word is; nothing of
+  ours. Our sense carries its subject, "output" for the kind and the
+  output's name for a particular one:
+  - **output shape** — a presumed output, written from outputs that
+    exist, and read only at the gate to check what was made
+    (`docs/models/idea-to-output.md` §2, *The kinds*;
+    `docs/conventions/shapes/`). A particular one is named by its
+    output: the kill shape, the slice-record shape, the reading's
+    shape. Not an output form, which is read while writing.
 - **local map** — a directory's `README.md` that says how the parts
   of that area relate (`docs/conventions/project-recording/` §8.6, *Local maps*).
 - **rule** — bare, plain English, read as any word is; nothing of

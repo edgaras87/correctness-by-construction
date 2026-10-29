@@ -31,7 +31,7 @@ tell which is meant from the word alone. Counted 2026-10-25 and
   `.part` files for one stack; once a verb, in `exchange-deliver`.
 - **"shape"**, 437 uses, and **"form"**, 214: ours in all but about
   26, which are the verb, "shaped by a talk", and idioms, "takes one
-  form". Both are glossary words of the first kind already.
+  form". Both were glossary words of the first kind.
 
 The glossary defines none of these senses. Every entry it holds is a
 word with one sense here, written bare: run, master, take, step,
@@ -154,14 +154,22 @@ in the exchange manual alone, would single out the easier kind.
    English says".
 
 **Shape and form,** which the reviewer proposed as second-kind words:
-1. **A prefix at every use,** "output shape", "record form". Rejected:
-   about 650 lines for 26 plain ones, and "record form" does not
-   cover a manual's or a reading's form, so the prefix would be the
-   owner, which 62 lines already write by rule 8.
-2. **First kind, with the clause the rule was missing:** a word of
-   the first kind owns the bare word, which is not used in its plain
-   sense here. Taken. The 26 plain uses go in round 3. The same
-   clause settles "run" the verb against "run" the repository.
+1. **First kind, with the clause the rule was missing,** since the
+   two are ours in all but 26 of 651 uses. Taken first, on the
+   one-time cost, 26 lines against 650. Reversed the same day: a
+   plain use of a first-kind word is found only by reading, and the
+   agent broke the clause five times in one afternoon, in text about
+   the clause. The cost that repeats, every new line by every
+   writer, is the one that counts, and round 3 reads the 650 lines
+   anyway.
+2. **A prefix at every use,** checked by grep. Taken. "Record form"
+   was rejected as the prefix: it does not cover a manual's or a
+   reading's form. So form's subject is its owner, "a record's
+   form", "the manual's form", and "output form" names the kind.
+   Shape's is "output shape", and a particular one is named by its
+   output, "the kill shape", as 62 lines already write by rule 8.
+   The convention's name and the paths stay labels: `shapes`,
+   `shapes-lifecycle.md`.
 
 **Renaming `convention-manual.md`,** since it reads as a manual.
 Rejected: every agent rule of ours is named by what it governs,
@@ -210,18 +218,22 @@ clearly.
 6. **The words for "stub" and "overlay":** record stub, for the
    shipped file with its header and headings that a project fills;
    stack overlay, for repo-hygiene's `.part` files for one stack.
-   Bare, each is plain English. Shape and form stay words of the
-   first kind.
-7. **The rest of the list** is measured at round 3's rule check:
+   Bare, each is plain English.
+7. **The words for "shape" and "form":** output shape, a presumed
+   output read at the gate, a particular one named by its output;
+   output form, how an output is written, a particular one named by
+   its owner. Bare, each is plain English. Both leave the first kind:
+   the first words the glossary's move rule applies to.
+8. **The rest of the list** is measured at round 3's rule check:
    stage, step, fill, master, take, tag, skill, log, model and run,
    and any word the check meets, the glossary's own first-kind
    entries read first. Each that collides is listed before round 3
    reads.
-8. **Old text is reworded in round 3's Writing read,** against the
+9. **Old text is reworded in round 3's Writing read,** against the
    list. Four lines change now: project-recording §13's and the
    container's two "one row per rule", and the slice-record shape's
    "separated by a rule".
-9. **A prefixed word is a name,** written exactly as its entry
+10. **A prefixed word is a name,** written exactly as its entry
    writes it: "agent rule", never "the agent's rule file". Writing
    rule 6 already says so of a defined name; the glossary's header
    says it of these.
@@ -236,8 +248,9 @@ clearly.
   foundation check reads the two together.
 - Round 3's Writing read has words to read against: about 150 bare
   uses of "rule" for a file become "agent rule", "skills and rules"
-  among them; about 70 bare "stub" become "record stub"; about 26
-  plain uses of "shape" and "form" are reworded; and the
+  among them; about 70 bare "stub" become "record stub"; about 590
+  bare uses of "shape" and "form" take "output" or their owner, the
+  26 plain ones staying as they are; and the
   conventions manual's §1.1 reads as an agent rule's lines. That is
   round 3's work.
 - The run's glossary template, `cbc-framing`'s, takes the second
