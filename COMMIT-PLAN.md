@@ -10,10 +10,11 @@ carries its subject at every use, and bare means only what plain
 English says. Both seats' `writing.md` carry it. The glossary says it
 holds two kinds of entry, a word with one sense here and a word with
 several, and lists the first two of the second kind: rule, with its
-senses agent rule, a numbered line with its owner, invariant, and a
-`---` line; and template, with a skill's template and a stack
-overlay. The four living lines that used "rule" for an invariant or
-a `---` line say what they mean. Round 3's Writing read then has the
+senses agent rule and a numbered line with its owner; and template,
+with a skill's template. An entry lists only the senses that keep the
+word; a thing with a word of its own, invariant, stub, is not a
+sense. The four living lines that used "rule" for an invariant or a
+`---` line say what they mean. Round 3's Writing read then has the
 words to read old text against; the rewording of about 150 bare uses
 of "rule" for a file is its work, not this set's. The remaining
 candidate words are measured at round 3's rule check, and the second
@@ -37,6 +38,16 @@ says "one row per invariant", following the glossary. One commit: a
 rule without its list, or a list without its rule, is not a
 coherent state. Both files stand on the writing convention; the
 foundation check reads them together.
+
+**3b. `docs: the glossary lists senses that keep the word`**
+Inserted after commit 3 landed. The reviewer read the entries and
+asked why "rule" listed invariant and a `---` line, and "template" a
+stack overlay and a stub, when the rule asks for a prefix and none of
+these carries the word. They are things with a word of their own,
+not senses. The entries lose those lines, and ADR-0074's decision 2
+loses its sentence "a sense that has a word of its own names that
+word", decisions 4 and 5 their redirects. The ADR is Proposed; its
+Accepted status line names this change.
 
 **4. `chore(agent): our writing.md takes rule 9`**
 Our agent rule follows the manual, in a commit of its own
@@ -92,3 +103,10 @@ The entry for the set, with the session-end lines.
   did not change it.
 - **No commit is provisional.** The decision is settled in talk
   (`TODO-CONVERSATION-MEMORY.md` §19 and §23, 2026-10-29).
+- **A glossary entry lists only the senses that keep the word**
+  (revision of 2026-10-29). A redirect, "never a rule, an invariant",
+  seemed a catch at writing time. The rule catches it already: a bare
+  use that is not the plain sense must be listed, and an unlisted one
+  sends the writer to the right word. And two of the four redirects
+  were wrong: repo-hygiene's `.part` files are templates in the plain
+  sense, and a stub needs no line saying it is not a template.
