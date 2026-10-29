@@ -4,7 +4,7 @@
 
 ## What it is for
 
-So that a text can be read once. The failure is lived, in run 3,
+So that a text can be read once. The failure is lived, in CBC Run 3,
 never-oversold. It wrote about 150,000 words of Markdown for 768
 lines of production code, in long chained sentences, with coined
 words never defined. Its reviewer asked "explain simpler" again and
@@ -12,42 +12,42 @@ again, and the same request is common here.
 
 Knowing the lesson did not fix it:
 
-- **"Explain plainly" sat in run 3's agent memory from 2026-09-20.**
+- **"Explain plainly" sat in CBC Run 3's agent memory from 2026-09-20.**
   Its records still came out in the voice of the skills it read.
-- **A polish pass after the fact** cost run 3 a step, and the voice
+- **A polish pass after the fact** cost CBC Run 3 a Plan Step, and the voice
   was still not fixed.
 
-At its retrospective, on 2026-10-11, run 3 wrote a one-page rule
+At its retrospective, on 2026-10-11, CBC Run 3 wrote a one-page rule
 that loads in every session (its RETRO.md, D2). Its Step 10 then
-rewrote its records under the rule, three times. Taken from run 3
+rewrote its records under the rule, three times. Taken from CBC Run 3
 on 2026-10-15 (ADR-0053).
 
 ## What this is made usable as
 
-- **`delivery/container/.claude/rules/writing.md` — the rule,
+- **`delivery/container/.claude/rules/writing.md` — the Agent Rule,
   shipped**, held at `.claude/rules/writing.md` with no `paths:`, so
   it loads at the start of every session.
-- **`docs/glossary.md` — the deliverer's glossary**, the home rule
-  6 names for each coined word; its header comment holds the form of
-  an entry. A run starts its own at the same path.
-- **`.claude/rules/writing.md` — the deliverer's**, derived from
+- **`docs/glossary.md` — the Concept Deliverer's glossary**, the list of
+  Glossary Names rule 9 points at; its header comment holds the form of
+  an entry. A CBC Run starts its own at the same path.
+- **`.claude/rules/writing.md` — the Concept Deliverer's**, derived from
   this page like the container's, not copied from it, and loaded
-  the same way. It differs where the seat does: it covers the
-  skills, rules, shapes, approaches, manuals, concept chapters and
-  notes the deliverer writes; and its examples are this repo's.
+  the same way. It differs where the Convention Seat does: it covers the
+  skills, Agent Rules, Output Shapes, Approaches on Trial, manuals, concept chapters and
+  notes the Concept Deliverer writes; and its examples are this repo's.
 
-This page explains; the rule states. What derives from this page is
+This page explains; the Agent Rule states. What derives from this page is
 that list. A change here walks it; a change forced in it is checked
 back against this page.
 
 ## The seats
 
-A run writes under the rule from birth: its chat, its records, its
-commits. The deliverer writes under its own: its chat and records,
-and also what runs read, since an agent copies the voice it reads:
-every new or changed line of a skill, rule, shape, approach,
+A CBC Run writes under the Agent Rule from birth: its chat, its records, its
+commits. The Concept Deliverer writes under its own: its chat and records,
+and also what CBC Runs read, since an agent copies the voice it reads:
+every new or changed line of a skill, Agent Rule, Output Shape, Approach on Trial,
 concept chapter or note follows it, and so do its manuals. The
-deliverer also writes this page and the rule's master.
+Concept Deliverer also writes this page and the Agent Rule's Master Copy.
 
 ## 1. What it governs
 
@@ -57,13 +57,13 @@ chat answers, records, commit messages, code comments.
 - **History keeps its words.** A closed devlog entry, an ADR or a
   commit body is not rewritten for its voice. The rule applies to
   every new or changed line.
-- **A skill or a rule may be dense.** Its reader follows what it
+- **A skill or an Agent Rule may be dense.** Its reader follows what it
   says, not how it says it. An agent copies the voice it reads, so
   the rule says outright that it sets the voice.
 - **Plain is the default for every kind of text.** A kind of text
   gets another style only when plain has been shown to fall short
   there. The rule then names that kind and its style. None is named
-  yet: run 3 left a specification style for its claims to be judged
+  yet: CBC Run 3 left a specification style for its claims to be judged
   on plain text first (its RETRO.md, D14).
 
 ## 2. Why each rule
@@ -78,10 +78,10 @@ chat answers, records, commit messages, code comments.
    imagine the case. A worked example shows it, and shows a wrong
    rule as wrong.
 5. **Plain words, not metaphor.** A metaphor has to be translated,
-   and two readers translate it differently. Run 3's retrospective
+   and two readers translate it differently. CBC Run 3's retrospective
    names "costume", "weather" and "stage" as words to drop: the
    stage of a theatre, as in "the stage, not a victim". A skill's
-   phase is a stage, a defined word (`docs/glossary.md`).
+   phase is a Skill Stage (`docs/glossary.md`).
 6. **Names are labels.** A reference reworded points somewhere
    else. A coined word that is not defined is a word the reader
    cannot check, so each is defined once, in the project's
@@ -120,8 +120,8 @@ chat answers, records, commit messages, code comments.
     *How*. One phrase in sentence case, a Glossary Name inside it
     keeping its capitals, with no gloss after a dash or colon: the
     gloss opens the body. This holds for numbered sections
-    and parts in both seats; the manual form's fixed headings, a
-    stage heading and a numbered rule's bold lead are not titles under
+    and parts in both Convention Seats; the manual form's fixed headings, a
+    Skill Stage heading and a numbered rule's bold lead are not titles under
     it.
 11. **An edit changes the lines its change needs.** The reviewer
     reads a diff at every commit boundary, for its change; a line
@@ -139,19 +139,19 @@ chat answers, records, commit messages, code comments.
 
 ## Why it arrives this way
 
-A rule with no `paths:`, loaded in every session
+An Agent Rule with no `paths:`, loaded in every session
 (`docs/conventions/agent-arrangement/` §3.9, *A rule loaded in every session*). Its moment is every
 answer and every record written, and nothing else fires at all of
 them (`docs/models/agent.md` §8, *Choosing a channel*):
 
 - **A `paths:` list** loads when a file is touched, after a new
   one's first draft is written, and chat has no path
-  (`docs/conventions/agent-arrangement/` §5.6, *Rules files*). Run 3's first
+  (`docs/conventions/agent-arrangement/` §5.6, *Rules files*). CBC Run 3's first
   draft loaded on Markdown files, and was dropped for this.
 - **A skill** fires when the agent notices the moment. The failure
   here is not noticing: the agent writes in the voice it last read.
-- **Memory or `CLAUDE.local.md`** held the lesson in run 3 and did
-  not act. The local file is also one person's, and reaches no run.
+- **Memory or `CLAUDE.local.md`** held the lesson in CBC Run 3 and did
+  not act. The local file is also one person's, and reaches no CBC Run.
 
 The cost is one page in every session, which is why the rule stays
 one page.
@@ -166,10 +166,10 @@ one page.
 - **The form of a manual** — `docs/conventions/conventions/` §2, *The Convention Manual*.
 - **What a kind of output looks like** —
   `docs/conventions/shapes/`.
-- **How a rule reaches an agent** —
+- **How an Agent Rule reaches an agent** —
   `docs/conventions/agent-arrangement/` §5.6, *Rules files*.
 
 ## Where to look
 
 - The decision: ADR-0053.
-- The rule: `delivery/container/.claude/rules/writing.md`.
+- The Agent Rule: `delivery/container/.claude/rules/writing.md`.

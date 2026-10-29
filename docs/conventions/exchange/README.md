@@ -522,7 +522,7 @@ new is written without it (`docs/conventions/agent-arrangement/`
   seats*.
 - **What `foundation` holds for each kind of file** —
   `docs/conventions/conventions/` §1.3, *The Foundation Line*.
-- **How an Output Shape reaches a CBC Run** — `docs/conventions/shapes/` §4, *Where a shape lives, between…*.
+- **How an Output Shape reaches a CBC Run** — `docs/conventions/shapes/` §4, *An Output Shape between repos*.
 - **The commits and decisions of working a Run Reading** — a commit
   plan when it takes more than one commit,
   `docs/conventions/commit-plan/`, and an ADR when a decision has

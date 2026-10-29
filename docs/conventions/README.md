@@ -1,6 +1,6 @@
 # Conventions
 
-A local map (`docs/conventions/project-recording/` §8.6, *Local Maps*): how the conventions that act in sequence
+A Local Map (`docs/conventions/project-recording/` §8.6, *Local Maps*): how the conventions that act in sequence
 during a piece of work hand to each other, from an idea to committed
 work. The others relate through what they govern, read or describe,
 and each states those relations in its manual's *What this does not
@@ -34,7 +34,7 @@ not what you must pass through.** A typo fix reaches only
 only `commit-plan`. A question about how a diagram is drawn reaches
 `visual-comparison` from wherever it arose.
 
-**Work no skill or rule covers** starts from an approach on trial,
+**Work no skill or Agent Rule covers** starts from an Approach on Trial,
 not from this chain: `.claude/approaches-on-trial/approach-drafting.md`.
 Its work is planned like any other.
 

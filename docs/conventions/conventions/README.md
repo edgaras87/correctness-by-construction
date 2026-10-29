@@ -169,7 +169,7 @@ The form grows from what manuals already hold. The list is the
 floor, and content that fits none of it takes its own heading in
 the body. A section two manuals need becomes the next candidate:
 a pair recurred, the test an Output Shape is written by
-(`docs/conventions/shapes/` §1.2, *How one is born*). The list grows no other way.
+(`docs/conventions/shapes/` §1.2, *How an Output Shape is born*). The list grows no other way.
 
 *Its story: ADR-0039.*
 

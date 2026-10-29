@@ -201,7 +201,7 @@
       file holds, the form of its own output.
       Ideas:
       - a shape adapts: divergence is how it learns
-        (`docs/conventions/shapes/` §2, *What a shape is not*), and a shape that never
+        (`docs/conventions/shapes/` §2, *What an Output Shape is not*), and a shape that never
         changes is finished or unread (`docs/conventions/shapes/`
         §5.2, *A tick, and a difference*).
       - an approach is written without the output's form; a part a
@@ -643,7 +643,7 @@
         disagreement between linked texts is settled.
       - the deliverer and the run, with seats.
       - a shape: the shapes manual says what one is
-        (`docs/conventions/shapes/` §1.1, *What it says*, and §2, *What
+        (`docs/conventions/shapes/` §1.1, *What an Output Shape says*, and §2, *What
         a shape is not*).
       - records: what a record is, a form and its entries; what a
         set of records answers; how each seat adapts it, as the
@@ -960,7 +960,7 @@
       the reviewer)
       Context: project-recording describes it
       (`docs/conventions/project-recording/` §9, *The playbook*), and one playbook exists, the CbC run's. It is not a shape: a shape is form, never content
-      (`docs/conventions/shapes/` §1.1, *What it says*, and §2, *What a
+      (`docs/conventions/shapes/` §1.1, *What an Output Shape says*, and §2, *What a
       shape is not*), and a filled-in template is not one; a
       playbook is content, copied and filled at birth.
       Ideas: a convention of its own, split from project-recording's playbook part

@@ -1,47 +1,47 @@
 # Retrospective
 
-**How a run that has finished building looks back, and what it
+**How a CBC Run that has finished building looks back, and what it
 changes because of it.**
 
 ## What it is for
 
-So that what a run learned reaches the next run, written down with
-an example and a place to land. The failure is lived, in run 3,
+So that what a CBC Run learned reaches the next CBC Run, written down with
+an example and a place to land. The failure is lived, in CBC Run 3,
 never-oversold. Its plan ended on a section, "Retrospective (fill at
-project end)", with a few questions. Run 3 stopped before Release,
+project end)", with a few questions. CBC Run 3 stopped before Release,
 so the section's moment never came; the retrospective happened only
 because the reviewer asked for one. It then did far more than the
 section asked, and none of that was written down as a way of
 working (its RETRO.md, D23):
 
-- **It walked the run part by part,** in the order the run built
+- **It walked the CBC Run part by part,** in the order the CBC Run built
   them, and backed each finding with a quoted line or a count.
 - **It decided one thing at a time,** each decision with what was
   rejected and where it lands.
-- **It looked and changed nothing.** A step after it applied the
-  lessons to run 3's own records before Release, and left what run
+- **It looked and changed nothing.** A Plan Step after it applied the
+  lessons to CBC Run 3's own records before Release, and left what CBC Run
   3 had proved alone (D24).
 
-Run 3 kept both as skills, and offered them. Taken on 2026-10-15
+CBC Run 3 kept both as skills, and offered them. Taken on 2026-10-15
 (ADR-0054).
 
 ## What this is made usable as
 
 - **`delivery/container/.claude/skills/retrospective/SKILL.md` —
   the skill, shipped**, held at `.claude/skills/retrospective/` and
-  opened when the run has finished building, before Release.
+  opened when the CBC Run has finished building, before Release.
 - **`delivery/container/.claude/skills/apply-retrospective/SKILL.md`
   — the skill, shipped**, held at `.claude/skills/apply-retrospective/`
   and opened when `RETRO.md` is closed, before Release.
 
-The deliverer holds neither; its seat is on trial (below). This page
+The Concept Deliverer holds neither; its Convention Seat is on trial (below). This page
 explains; the skills state. What derives from this page is that
 list. A change here walks it; a change forced in one of them is
 checked back against this page.
 
 ## The seats
 
-### The run's seat
+### The CBC Run's seat
 
 Two people work it: the agent and the reviewer. The agent reads,
 measures, proposes and writes; the reviewer decides. The skills,
@@ -53,37 +53,37 @@ decisions. In summary of them:
   each experiment: keep or drop; when the branch lands. **They
   get** `RETRO.md`, with every decision, its example, what was
   rejected and where it lands; TODO's *To the deliverer* pointing at
-  it; and the next run's checks, listed for its plan.
-- **In the apply step, the reviewer decides** each triage row; each
+  it; and the next CBC Run's checks, listed for its plan.
+- **In the apply Plan Step, the reviewer decides** each triage row; each
   new decision the triage raises; the commit plan before any change;
   each planned commit at its boundary; each revision of the plan
   that changes what lands; when the branch lands. **They get** the
-  run's records improved where the triage said so, and `RETRO.md`'s
+  CBC Run's records improved where the triage said so, and `RETRO.md`'s
   *Applied to* section: what happened to each decision.
 
 No guide ships beside the skills: it would repeat them, and the two
-would drift. Run 3's apply guide restated nearly every rule of its
+would drift. CBC Run 3's apply guide restated nearly every rule of its
 skill. The choice is reopened if a reviewer works without reading
-this repo, or run 4's reading shows the missing guide cost something.
+this repo, or CBC Run 4's Run Reading shows the missing guide cost something.
 
-### The deliverer's seat
+### The Concept Deliverer's seat
 
-On trial. This repo has no project end; its steps close on "lessons
+On trial. This repo has no project end; its Plan Steps close on "lessons
 folded back where they came from: conventions, the playbook, the
 concept", which names the places but no method. At the close of the
-step that runs the next birth, it runs both skills on itself, from
+Plan Step that runs the next Run Birth, it runs both skills on itself, from
 `delivery/container/`, in place of that item: the parts are its own
 (the concept, the conventions, the delivery, the exchange, its
-records), and the next step stands where a run has its next run. The
+records), and the next Plan Step stands where a CBC Run has its next CBC Run. The
 trial's verdict says whether this repo holds its own copies, and what
-this seat is.
+this Convention Seat is.
 
-## 1. Two steps, not one
+## 1. Two Plan Steps, not one
 
 Looking and changing are kept apart on purpose. A retrospective that
 may fix what it finds starts fixing the first thing, and stops
-looking. But a look that changes nothing leaves a run released with
-records it has shown could read better. So a second step applies
+looking. But a look that changes nothing leaves a CBC Run released with
+records it has shown could read better. So a second Plan Step applies
 the lessons, before Release.
 
 *Its story: devlog 2026-10-15; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
@@ -94,10 +94,10 @@ end.
 
 ## 2. How the look back decides
 
-- **Every finding has an example from the run:** a quoted line, a
+- **Every finding has an example from the CBC Run:** a quoted line, a
   file and line number, a count. No example, no finding.
 - **Every decision says where it lands,** and the place is one the
-  next run starts from: a skill, a rule, the playbook, a template,
+  next CBC Run starts from: a skill, an Agent Rule, the playbook, a Skill Template,
   the reviewer's local file. "Remember to" is not a place, and a
   lesson that lands nowhere is repeated.
 - **No decision without something that went wrong.** A rule drafted
@@ -106,7 +106,7 @@ end.
   to real lines, not argued in the abstract.
 - **The reviewer's corrections are kept.** The agent's first
   version goes under "Considered and rejected", with the reason.
-- **The old questions still ask:** which steps took longer or
+- **The old questions still ask:** which Plan Steps took longer or
   shorter, what needed to happen earlier, what was tried and
   dropped, what had no home, which gate items caught nothing; and
   the entry file read top to bottom, its only re-reading
@@ -115,25 +115,25 @@ end.
 
 *Its story: devlog 2026-10-29, the lessons' own stories: six places.*
 
-## 3. How the apply step decides
+## 3. How the lessons are applied
 
-- **Apply what improves what the run hands over, without changing
+- **Apply what improves what the CBC Run hands over, without changing
   what it proved:** a plainer sentence, a fact kept once and linked.
-- **What changes how a step runs waits for the next run.** The
-  run's steps are closed.
-- **History is never touched,** and the records later steps were
+- **What changes how a Plan Step runs waits for the next CBC Run.** The
+  CBC Run's Plan Steps are closed.
+- **History is never touched,** and the records later Plan Steps were
   built on change only by a dated revision entry.
-- **New proof is not this step's.** A new test was never seen fail.
+- **New proof is not this Plan Step's.** A new test was never seen fail.
   A gap found here is listed, and the reviewer decides whether it
-  earns a step of its own.
+  earns a Plan Step of its own.
 - **The order of the commits follows influence.** Repeats go before
   rewriting, so no text is polished and then deleted. Owners go
   before the records that summarize them, README last. Plain words
   last.
 - **A fresh reader checks each rewrite** against the old text. The
   writer reads what they meant, not what is on the page.
-- **Tests are counted from this run's reports only.** A report
-  folder can keep files from earlier runs.
+- **Tests are counted from this CBC Run's reports only.** A report
+  folder can keep files from earlier CBC Runs.
 - **A tool that edits text is checked on what it must not touch,**
   not only on what it changed.
 
@@ -141,38 +141,38 @@ end.
 
 ## 4. `RETRO.md`
 
-The look back's record, at the run's root, one per run. It holds
+The look back's record, at the CBC Run's root, one per CBC Run. It holds
 every decision, the experiments, what was parked, and, after the
-apply step, a row per decision saying what happened to it. The
-records table names its moment. It is history once the run is
-released: the next run starts from where its decisions landed, not
+apply Plan Step, a row per decision saying what happened to it. The
+records table names its moment. It is history once the CBC Run is
+released: the next CBC Run starts from where its decisions landed, not
 from the note.
 
 ## Why it arrives this way
 
-Two skills, because each step is bound to a moment the agent would
-otherwise have to notice: the run finishing its building, and the note
-closing. A plan step opens each, and names the skill: where a pointer
+Two skills, because each Plan Step is bound to a moment the agent would
+otherwise have to notice: the CBC Run finishing its building, and the note
+closing. A Plan Step opens each, and names the skill: where a pointer
 is placed decides whether it fires (`docs/models/agent.md` §12.2, *On pulled*).
 
 A section in the plan did not work: its moment was the project's
-end, which a run that stops early never reaches, and a section can
+end, which a CBC Run that stops early never reaches, and a section can
 hold questions but not a way of working. Two skills, not one,
-because the two steps are kept apart (§1, *Two steps, not one*).
+because the two Plan Steps are kept apart (§1, *Two Plan Steps, not one*).
 
 ## What this does not cover
 
-- **The records a run keeps, and when each is opened** —
+- **The records a CBC Run keeps, and when each is opened** —
   `docs/conventions/project-recording/`.
-- **How the apply step's commits are planned** —
+- **How the apply Plan Step's commits are planned** —
   `docs/conventions/commit-plan/`.
-- **What a shape is, and how a gate reads it** —
+- **What an Output Shape is, and how a gate reads it** —
   `docs/conventions/shapes/`.
-- **How a run edits a delivered copy, and hands it back** —
+- **How a CBC Run edits a delivered copy, and hands it back** —
   `docs/conventions/exchange/` §5, *Editing a copy*.
 - **How a text reads** — `docs/conventions/writing/`.
 
 ## Where to look
 
 - The decision: ADR-0054.
-- Run 3's record of both steps: its `RETRO.md`, D23 and D24.
+- CBC Run 3's record of both Plan Steps: its `RETRO.md`, D23 and D24.

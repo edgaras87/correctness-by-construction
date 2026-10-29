@@ -137,7 +137,7 @@ its thing. A CBC Run keeps a glossary of its own.
   (`docs/conventions/project-recording/`, *What this is made usable as*).
 - **Stack Overlay** — the stack's part of the hygiene files, appended
   below the base's marked line: repo-hygiene's `.part` files for one
-  stack (`docs/conventions/repo-hygiene/` §2, *Layering*).
+  stack (`docs/conventions/repo-hygiene/` §2, *Base and Stack Overlays*).
 - **Decisions Log** — a CBC Run's `.claude/decisions.md`, where its
   agent records the decisions about its own setup; ours is the same
   file here (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).
