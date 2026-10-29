@@ -52,6 +52,24 @@ meets stubs in its tests; and overlay, with stack overlay, whose
 subject "stack" it carries already. The ADR lists four words. It is
 Proposed; its Accepted status line names this change.
 
+**3c. `docs: the glossary leaves the bare word to English`**
+Inserted on 2026-10-29. The four entries of the second kind each
+defined the bare word, "what a text says must be done", and the
+reviewer asked whether that harms us. It does: it narrows a plain
+English word to one of its senses, so "as a rule" would break the
+entry. The entry now says only that the bare word is plain English,
+read as any word is, with nothing of ours in it. The header and
+ADR-0074's decisions 2 and 4 to 6 say the same. Rule 9 in the
+writing manual already said "what plain English says" and holds.
+The header also gains the half of the rule that was missing: a word
+of the first kind owns its bare form, so it is not used in its plain
+sense here; one that needs a second sense, ours or the plain one,
+becomes an entry of the second kind, and its bare uses take their
+subject in the same change. The reviewer proposed shape and form as
+second-kind words; measured, they are ours in 96 percent of 651
+uses, so they stay first kind and the clause removes their 26 plain
+uses in round 3. ADR-0074 takes the clause as a decision.
+
 **4. `chore(agent): our writing.md takes rule 9`**
 Our agent rule follows the manual, in a commit of its own
 (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*).
@@ -114,6 +132,12 @@ The entry for the set, with the session-end lines.
   did not change it.
 - **No commit is provisional.** The decision is settled in talk
   (`TODO-CONVERSATION-MEMORY.md` §19 and §23, 2026-10-29).
+- **The glossary defines none of the bare words** (revision of
+  2026-10-29). The rule leaves a bare word to plain English; an entry
+  that defined it would own what is not ours.
+- **Shape and form stay words of the first kind** (revision of
+  2026-10-29). A prefix at every use would touch about 650 lines for
+  26 plain ones; the clause touches the 26.
 - **The glossary's groups stay as they are** (2026-10-29). A
   multi-sense entry is told apart by its shape, the plain sense first
   and the senses beneath, not by a group of its own. A grep for the
