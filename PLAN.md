@@ -299,9 +299,10 @@ Notes:
 
 Goal: Living text written before a rule now meets that rule, and project-recording's list of the records maps them in both seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
-Now: between rounds 2 and 3: the TODO items due before round 3's
-rule check, then that check
-(`.claude/approaches-on-trial/refinement.md` §2.3, *Check the rules*).
+Now: between rounds 2 and 3: round 3's rule check is done; the
+pass that gives old text its Glossary Names and its titles their
+labels runs as a commit plan of its own (TODO), then round 3 reads
+(`.claude/approaches-on-trial/refinement.md` §2.4, *Read*).
 Gate:
 
 **At the opening.**

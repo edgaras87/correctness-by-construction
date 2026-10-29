@@ -1,7 +1,8 @@
 # 0077. An edit changes only the lines it needs
 
 Date: 2026-10-29
-Status: Proposed, opened under the commit plan for round 3's check
+Status: Accepted (2026-10-29, at commit 9 of the commit plan for
+round 3's check; unchanged since)
 
 ## Context
 

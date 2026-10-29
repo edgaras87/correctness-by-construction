@@ -773,53 +773,26 @@
                whichever comes first.
       See: devlog 2026-10-28; ADR-0070.
 
-- [ ] List the remaining words with more than one meaning here
-      (2026-10-28, the reviewer).
-      Context: writing rule 9 says such a word carries its subject at
-      every use, bare meaning plain English only, and the glossary
-      lists the words: rule, template, stub, overlay, shape and form
-      so far (ADR-0074). A candidate's uses and senses are measured
-      before its entry is written. Shape and form showed the test: a
-      glossary word of the first kind whose plain sense is often
-      wanted moves to the second kind, since a plain use is found
-      only by reading and a bare use by grep.
+- [ ] Run the pass that gives old text its Glossary Names and its
+      titles their labels, by Refinement Layer, as a commit plan
+      (`docs/conventions/commit-plan/`) (2026-10-29, the reviewer).
+      Context: rule 9 says a defined thing is written by its Glossary
+      Name, capitalized, and a lowercase word is English (ADR-0076);
+      rule 10 says a title is a label of 30 characters or fewer,
+      standing alone (ADR-0075). Measured 2026-10-29: about 3,000
+      lines carry a bare word of ours or a phrase without its
+      capitals; about 230 of 375 titles break rule 10. Samples judged:
+      the thirteen labels for the commit-plan manual's §2 and the
+      glossary's entries (`temp/refinement-2026-10-18.md`, *Round 3: how it reads*).
       Ideas:
-      - candidates: stage, step, fill, master, take, tag, skill, log,
-        model, run. "Log" in what ships means the decisions log,
-        git's log, "the run's log" with no record named, and a verb.
-        "Run" the verb against "run" the repository.
-      - the glossary's own first-kind entries read first: "stage"
-        beside "staging" and git's staging; "step" beside a
-        section's numbered steps.
-      - "a skill's template" reads as one a skill uses as much as one
-        it holds; the other name that fits all 11 is "copy-and-fill
-        template", as shipped text says "copy-and-fill master".
-      - collisions with git and Claude Code count: stage, master,
-        tag, skill.
-      - the run's seat: a run's own collisions, such as "fact"
-        against the `FACT-` tags. The shipped `writing.md` carries
-        the rule and the run's glossary template the form; the list
-        is the run's own.
-      Trigger: round 3's rule check, so its Writing kind reads
-               against the whole list.
-      See: ADR-0074; devlog 2026-10-28; devlog 2026-10-29, the
-      words; `d3ebdff:TODO-CONVERSATION-MEMORY.md` §19 and §23.
-
-- [ ] Retitle the numbered sections to labels, by layer, as a
-      commit plan (2026-10-29, the reviewer).
-      Context: writing rule 10 says a numbered section's title is a
-      label naming its subject, 30 characters or fewer, standing
-      alone, one phrase without a gloss (ADR-0075). Measured
-      2026-10-29: of 375 titles in 96 living files, about 230 break
-      it: 71 past 30 characters, 60 one-word record titles, 40 with
-      a gloss, and the statements under 30. About 270 references
-      carry one of them, 112 of those cut; 9 lines in the
-      container's record stubs name a one-word title.
-      Ideas:
-      - by layer, as the reference rewrite was: each title chosen by
-        hand, its references replaced by script, the rename grep at
-        each commit
+      - by layer, as the reference rewrite was: a script lists every
+        bare use of a Name's word and capitalizes every phrase the
+        glossary lists; a hand chooses each title and each bare use's
+        Name or English; the script replaces the references; the
+        rename grep runs at each commit
         (`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped…*).
+      - one rewritten paragraph is shown to the reviewer before the
+        pass runs, so the capitals are judged on prose first.
       - the record sections keep their pattern across records: *What
         a plan is*, *Why a plan*, *Where a plan lives*, *How a plan
         is written*, *When a plan changes*, *A plan's anti-patterns*.
@@ -828,10 +801,15 @@
       - the stack references' "§1 ·" numbering becomes `N.M`
         (`docs/conventions/facts-in-sync/` §3.2, *A section's parts are numbered*).
       - the script counts headings, references and code fences
-        before and after, and changes nothing on a second run.
-      Trigger: round 3's rule check done, before round 3 reads.
-      See: ADR-0075; devlog 2026-10-29, section titles;
-      `25b3946:TODO-CONVERSATION-MEMORY.md` §25.
+        before and after, and changes nothing on a second run
+        (writing rule 11, ADR-0077).
+      - the item below, the history told inline, goes in the same
+        pass.
+      Trigger: now; round 3's rule check is done, and round 3 reads
+               after the pass.
+      See: ADR-0075; ADR-0076; ADR-0077; devlog 2026-10-29, section
+      titles; devlog 2026-10-29, the words; devlog 2026-10-29, round
+      3's rule check; `25b3946:TODO-CONVERSATION-MEMORY.md` §25.
 
 - [ ] Move the history told inline in six living texts to its
       story's home (2026-10-29, the reviewer).
@@ -1206,27 +1184,6 @@
       Trigger: the first files delivered to a run still building,
                with `delivered-copies.md` changed since its pin.
       See: devlog 2026-10-18.
-
-- [ ] Decide how an edit or a new text is shaped, line width
-      included (2026-10-25, the reviewer).
-      Context: 72 characters is written only for a commit body
-      (`.claude/skills/commit-messages/SKILL.md`). The agent applied it to Markdown, and
-      rewrapped paragraphs to fit: diffs grew, and a scripted rewrap
-      broke structure twice. 685 lines in 70 of the 171 Markdown
-      files run past 72, tables aside. Nothing says how an edit
-      keeps or changes the shape of the text it touches.
-      Ideas:
-      - an edit keeps the logic of the part it changes, and improves
-        it where a better logic exists.
-      - no width at all; a width for `*.md` in `.editorconfig`,
-        shown as a guide; or a change about as long as what it
-        replaces. A limit only if nothing better is found.
-      - a home: the writing convention, if shape is how a text
-        reads; repo-hygiene's `.editorconfig`, if it is a width; or
-        a convention of its own for editing.
-      Trigger: a diff the reviewer finds bigger than its change, or
-               round 3's rule check, which reads the writing rules.
-      See: devlog 2026-10-25, the agent binding.
 
 ## Known issues (deferred deliberately — each entry: what, why accepted, when to revisit)
 

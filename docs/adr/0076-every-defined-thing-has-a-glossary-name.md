@@ -1,10 +1,10 @@
 # 0076. Every defined thing has a Glossary Name
 
 Date: 2026-10-29
-Status: Proposed, opened under the commit plan for round 3's check;
-rewritten whole at its commit 5c, the same day, before acceptance.
-The first text, a catalogue of every sense of seven words, is at
-`e43894f`.
+Status: Accepted (2026-10-29, at commit 9 of the commit plan for
+round 3's check; rewritten whole at its commit 5c, the same day,
+from a catalogue of every sense of seven words, the first text at
+`e43894f`)
 
 ## Context
 
