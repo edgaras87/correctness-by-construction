@@ -5,9 +5,10 @@
      entry. A word with one sense here: the word in bold, then what
      it means; the word is used bare. A word with more than one
      meaning here: the word in bold, its plain sense, then each sense
-     of ours beneath it with the subject it carries at every use; a
-     sense that has a word of its own names that word. A new sense
-     gets its line before its first use. Where a manual or a model
+     of ours beneath it with the subject it carries at every use,
+     written exactly as the entry writes it (rule 6). A thing with a
+     word of its own is not a sense. A new sense gets its line before
+     its first use. Where a manual or a model
      owns the thing a word names, the entry points at it with a fact
      reference and does not restate it. A word is coined only when
      plain English cannot say it; an entry goes when its word does.
@@ -113,18 +114,23 @@ manual owns the thing a word names, pointed at there.
     (`docs/conventions/agent-arrangement/` §3.2, *`rules/`*).
   - a numbered line inside one carries its owner: "one-home rule 3",
     "writing rule 6".
-  - what a built system keeps is an invariant, the method's word,
-    never a rule.
-  - the line between the blocks of a record is a `---` line.
 - **template** — plain English: a text copied and filled in. Bare,
   it means only that. Each sense of ours carries its subject:
   - **a skill's template** — a file under a skill's `templates/`,
     copied and filled by the project, never edited in place
     (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*).
-  - **a stack overlay** — repo-hygiene's `.part` files under its
-    `templates/`, the deliverer's
-    (`docs/conventions/repo-hygiene/` §2, *Layering*).
-  - a record's stub is a stub, never a template.
+- **stub** — plain English: a placeholder, or in a test a stand-in
+  for a real part. Bare, it means only that. Our sense carries its
+  subject:
+  - **record stub** — a record as it is born: the shipped file with
+    its header comment and headings, which a project fills from its
+    first entry on. The container holds one per record
+    (`docs/conventions/project-recording/`, *What this is made usable as*).
+- **overlay** — plain English: a layer laid over another, or to lay
+  one. Bare, it means only that. Our sense carries its subject:
+  - **stack overlay** — the stack's part of the hygiene files,
+    appended below the base's marked line: repo-hygiene's `.part`
+    files for one stack (`docs/conventions/repo-hygiene/` §2, *Layering*).
 
 ## How texts tie
 

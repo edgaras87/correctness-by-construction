@@ -17,12 +17,18 @@ tell which is meant from the word alone. Counted 2026-10-25 and
   (3 lines, beside 120 uses of the method's word, invariant); and
   once, in the slice-record shape, the `---` line between blocks, a
   typesetter's word.
-- **"template"**, 135 uses, in three senses and the plain one: the
-  files under a skill's `templates/` that a run copies and fills
+- **"template"**, 135 uses: the files under a skill's `templates/`
+  that a run copies and fills
   (`delivery/container/.claude/rules/delivered-copies.md`, rule 8);
-  repo-hygiene's stack overlay, three `.part` files under its
-  `templates/`; and the plain sense, a text copied and filled in.
-  A record's stub is called "stub", 125 times.
+  and the plain sense, a text copied and filled in, which covers
+  repo-hygiene's `.part` files too. A record's stub is called
+  "stub", 125 times, and "template" for it is a slip.
+- **"stub"**, about 70 uses in living text outside history, all for
+  a record as it is born. One sense here; but a run writes tests,
+  where a stub is a stand-in for a real part, and a run's agent
+  reads what ships. Shipped text already says "record stub" twice.
+- **"overlay"**, 11 uses, all but one "stack overlay", repo-hygiene's
+  `.part` files for one stack; once a verb, in `exchange-deliver`.
 
 The glossary defines none of these senses. Every entry it holds is a
 word with one sense here, written bare: run, master, take, step,
@@ -96,6 +102,18 @@ own from framing's template.
 - The `---` line says what the reader types, "a `---` line".
 - Bare "rule" means what a text says must be done, the plain sense.
 
+**What a glossary entry lists:**
+1. **Every sense met,** a thing with a word of its own named under
+   the word it is not called: "never a rule, an invariant". Taken at
+   first, as a catch at writing time. Dropped when the reviewer
+   read the entries: the rule catches it already, since a bare use
+   that is not the plain sense must be listed, and an unlisted one
+   sends the writer to the right word. Two of the four such lines
+   were wrong besides: repo-hygiene's `.part` files are templates in
+   the plain sense, and a stub needs no line saying what it is not.
+2. **Only the senses that keep the word,** each with its subject.
+   Taken.
+
 **A mark on a prefixed word,** italic, bold, backticks, quotes or a
 link to the glossary. All rejected. The subject explains itself in
 plain words, with or without the glossary. Each mark would take a
@@ -111,6 +129,16 @@ in the exchange manual alone, would single out the easier kind.
 2. **"rule" and "template",** both measured already; the rest at
    round 3's rule check, each that collides listed before the read.
    Taken.
+
+**Stub and overlay:**
+1. **Bare,** as words with one sense here. Rejected for stub: the
+   reader of shipped text is a run, and in its tests the word has a
+   second meaning. Rejected for overlay: the word is used only with
+   its subject, "stack overlay", and the entry should say so.
+2. **Prefixed, as entries of the second kind:** record stub, stack
+   overlay. Taken. "Repo-hygiene stack" was weighed for the second
+   and rejected: a stack is the technology, not the convention, and
+   the word that carries the sense is "overlay".
 
 **Renaming `convention-manual.md`,** since it reads as a manual.
 Rejected: every agent rule of ours is named by what it governs,
@@ -137,27 +165,38 @@ clearly.
    so. A word with one sense here is defined bare, as every entry is
    today. A word with more than one sense here has one entry: the
    word, its plain sense, then each sense of ours beneath it with
-   the subject it carries. A sense that has a word of its own names
-   that word. A new sense gets its line before its first use.
+   the subject it carries. A thing with a word of its own is not a
+   sense and is not listed. A new sense gets its line before its
+   first use.
 3. **No mark around a prefixed word:** no italic, bold, backticks,
    quotes or link. Quotes keep their one job, a word spoken of.
 4. **The words for "rule":** agent rule, for a file under
    `.claude/rules/`; a numbered line carries its owner; bare "rule"
-   is what a text says must be done; what a built system keeps is
-   an invariant, never a rule; the line between blocks is a `---`
-   line.
+   is what a text says must be done. What a built system keeps is
+   an invariant, and the line between blocks is a `---` line: words
+   of their own, not senses of "rule".
 5. **The words for "template":** a skill's template, for the files
-   under a skill's `templates/` that a run copies and fills; a stack
-   overlay, for repo-hygiene's `.part` files; bare "template" is a
-   text copied and filled in. A record's stub stays "stub".
-6. **The rest of the list** is measured at round 3's rule check:
+   under a skill's `templates/` that a run copies and fills; bare
+   "template" is a text copied and filled in, repo-hygiene's `.part`
+   files among them. A record's stub is a stub.
+6. **The words for "stub" and "overlay":** record stub, for the
+   shipped file with its header and headings that a project fills;
+   stack overlay, for repo-hygiene's `.part` files for one stack.
+   Bare, each is plain English: a placeholder or a test's stand-in; a
+   layer laid over another.
+7. **The rest of the list** is measured at round 3's rule check:
    stage, step, fill, master, take, tag, skill, log, model and run,
-   and any word the check meets. Each that collides is listed before
-   round 3 reads.
-7. **Old text is reworded in round 3's Writing read,** against the
+   and any word the check meets, the glossary's own first-kind
+   entries read first. Each that collides is listed before round 3
+   reads.
+8. **Old text is reworded in round 3's Writing read,** against the
    list. Four lines change now: project-recording §13's and the
    container's two "one row per rule", and the slice-record shape's
    "separated by a rule".
+9. **A prefixed form is a name,** written exactly as its entry
+   writes it: "agent rule", never "the agent's rule file". Writing
+   rule 6 already says so of a defined name; the glossary's header
+   says it of these.
 
 ## Consequences
 
@@ -169,8 +208,15 @@ clearly.
   foundation check reads the two together.
 - Round 3's Writing read has words to read against: about 150 bare
   uses of "rule" for a file become "agent rule", "skills and rules"
-  among them; and the conventions manual's §1.1 reads as an agent
-  rule's lines. That is round 3's work.
+  among them; about 70 bare "stub" become "record stub"; and the
+  conventions manual's §1.1 reads as an agent rule's lines. That is
+  round 3's work.
+- The run's glossary template, `cbc-framing`'s, takes the second
+  kind of entry in its header, so a run's agent reading rule 9 finds
+  the form. The list is the run's own.
+- The glossary's groups stay by what a word names. A second-kind
+  entry is told apart by its shape; a grep for "plain English:"
+  lists them. A second grouping would be a second home for the list.
 - A shipped agent rule changes. Runs hold the older copy until a
   delivery; run 6's reading is pending.
 - Every new line asks one more question at the commit: is its word
