@@ -104,7 +104,11 @@ chat answers, records, commit messages, code comments.
    glossary lists the words and each sense's subject, so a grep for
    a listed word without one finds the misses. Nothing marks the
    prefixed word: every mark already has a job, and the subject
-   explains itself.
+   explains itself. A glossary word with one sense here owns the
+   bare word, so that word is not used in its plain sense; a plain
+   use of it is found only by reading, so a word whose plain sense
+   is often wanted is listed with its senses instead, and its bare
+   uses take their subject in the same change.
 
 *Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model; devlog 2026-10-19.*
 
