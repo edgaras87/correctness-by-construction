@@ -33,6 +33,15 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Read run 6, `checkout`, by `exchange-read` (2026-10-29, the
+      reviewer).
+      Context: run 6 ran on full auto through its Release, Step 14,
+      and closed a Step 15 after it: 254 commits, 7 slices, tag
+      `v0.1.0`. Its birth step stopped before its close, so its
+      reading waits.
+      Trigger: the refinement's close, or the reviewer's word.
+      See: devlog 2026-10-29, morning.
+
 - [ ] Unlock the folders locked for run 6 (2026-10-29, the
       reviewer).
       Context: run 6 must not read another repository, and a
@@ -44,8 +53,10 @@
       `safe-reservations-v1`, each 755 before; and
       `checkout-system-first-prompt.md`,
       `safe-reservation-briefing.md`, each 644 before.
-      Trigger: run 6's Release, or before run 5's lessons step
-               resumes, since it reads run 5, whichever comes first.
+      Trigger: the reviewer's word, or before run 5's lessons step
+               resumes, since it reads run 5. Run 6's Release,
+               the first trigger, has passed; the reviewer kept
+               the lock for now.
       See: devlog 2026-10-29, night.
 
 - [ ] Write `exchange-birth` while a birth runs (2026-09-26, the

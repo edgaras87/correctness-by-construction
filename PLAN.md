@@ -130,13 +130,13 @@ corner.
 
 ---
 
-## Step: Birth run 6, on full auto  (`.claude/approaches-on-trial/auto-run.md`, `delivery/installs/pure-seed.md`, the foundation check)    [~]
+## Step: Birth run 6, on full auto  (`.claude/approaches-on-trial/auto-run.md`, `delivery/installs/pure-seed.md`, the foundation check)    [!] stopped: Refine this repo against its own rules (devlog 2026-10-29, morning)
 
 Goal: Run 6 is born from this repo at one pin on main, with the
 reviewer's checkout briefing and a hand-off for full auto, ready for
 the reviewer to start.
-Now: the birth (`.claude/approaches-on-trial/auto-run.md`,
-stage 6).
+Now: the close: its checks, `auto-run`'s note of this use, main
+taking the branch.
 Gate:
 
 **At the opening.**
