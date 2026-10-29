@@ -38,6 +38,14 @@ commit messages, comments. How it reads, never what it says.
    number or a coined word, ask whether this reader knows it. If
    not, say first, in plain words, what it is. Not "KILL-2 fails",
    but "KILL-2, the second charge for one order, fails".
+9. **Give a word with more than one meaning here its subject at
+   every use.** Bare, it means only what plain English says. The
+   project's glossary, `docs/glossary.md`, lists the words and each
+   sense's subject: "agent rule", never "rule", for a file under
+   `.claude/rules/`; "record stub", never "stub", for a shipped
+   record, since a test has stubs too; "a skill's template"; "output
+   shape". Nothing marks the prefixed word. A glossary word with one
+   sense here owns the bare word: do not use it in its plain sense.
 
 ## Before and after
 
@@ -76,3 +84,5 @@ this rule then names that kind and its style.
 
 - CBC ADR-0053 — how a text reads is a convention of its own, and
   its rule loads in every session
+- CBC ADR-0074 — rule 9: a word with more than one meaning here
+  carries its subject at every use, and the glossary lists the words
