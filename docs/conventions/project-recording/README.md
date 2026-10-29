@@ -9,7 +9,7 @@ lives, and how to write it.**
 So that what a project decided, where it stands, what it tried and
 what it learned can be read by someone who was not there — a
 newcomer, future-you, or the Concept Deliverer, which reads a CBC Run through
-its records and nothing else (`docs/conventions/exchange/` §6.1, *The read*).
+its records and nothing else (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*).
 Adopted with the Container Group (ADR-0038, 1d for the README's
 moment); no failure of the Concept Deliverer's is recorded before it. Lived
 since: four CBC Runs kept their records under these Record Stubs, and every
@@ -97,7 +97,7 @@ each with what it holds and who reads it:
   Idea Models, and the delivery by group, for whoever changes a
   Canonical Description and needs what is made from it;
 - **the table of CBC Runs** — each by both its names, for the agent
-  writing a Delivery Note (`docs/conventions/exchange/` §3.7, *The note*);
+  writing a Delivery Note (`docs/conventions/exchange/` §3.7, *The Delivery Note*);
 - **what must stay true** — each rule, where it is stated and what
   holds it, for the reviewer at commit review;
 - **the codemap** — where each thing lives, for anyone looking.
@@ -137,9 +137,9 @@ Convention Seats keep a record differently, *The seats* says how.
 7. `CHANGELOG.md`: what changed in each version, for whoever pins
    it (§6, *CHANGELOG.md*). The Convention Seats differ.
 8. `.claude/decisions.md`: how the agent's setup was decided
-   (`docs/conventions/agent-arrangement/` §3.4, *`decisions.md`*).
+   (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).
 9. `COMMIT-PLAN.md`: the commits of a change set in flight, when
-   present (`docs/conventions/commit-plan/` §1, *What it is*).
+   present (`docs/conventions/commit-plan/` §1, *What a commit plan is*).
 10. `docs/glossary.md`: the Glossary Names, and what each means
     (`docs/conventions/writing/` §2, *Why each rule*, rule 9).
 
@@ -694,7 +694,7 @@ cross-cutting changes do.
 ### 10.2 Commit messages
 
 The finest-grained decision trail
-(`docs/conventions/commit-messages/` §1, *What it is*).
+(`docs/conventions/commit-messages/` §1, *What a commit message is*).
 
 ### 10.3 PR descriptions
 
@@ -859,7 +859,7 @@ its *What it is for*.
 - **Where a fact lives, and how what relies on it stays in
   agreement** — `docs/conventions/facts-in-sync/`.
 - **Why the records are never re-delivered to a CBC Run** —
-  `docs/conventions/exchange/` §2.4, *The records are the one…*.
+  `docs/conventions/exchange/` §2.4, *The records' exception*.
 - **What the Concept Deliverer's CHANGELOG versions** — the concept,
   ADR-0003 and `CHANGELOG.md`'s standing comment.
 

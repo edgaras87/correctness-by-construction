@@ -40,21 +40,21 @@ its thing. A CBC Run keeps a glossary of its own.
 - **Read-Through Commit**, **Delivery Pin** — the two numbers a CBC
   Run records for a delivery: its own commit the Concept Deliverer
   last read up to, and the deliverer's commit its copies equal
-  (`docs/conventions/exchange/` §2.2, *The run*).
+  (`docs/conventions/exchange/` §2.2, *The CBC Run*).
 - **Delivery Note** — the text beside a delivery: what changed since
   the CBC Run's Delivery Pin, and a verdict on everything the run
-  asked (`docs/conventions/exchange/` §3.7, *The note*).
+  asked (`docs/conventions/exchange/` §3.7, *The Delivery Note*).
 - **Delivery Staging** — copying the delivery and its Delivery Note
   into a CBC Run's `temp/`, by the reviewer or by the agent when told
-  to (`docs/conventions/exchange/` §3.1, *Staging*). The run does
+  to (`docs/conventions/exchange/` §3.1, *Delivery Staging*). The run does
   nothing until it has happened. The verb names its object, "stage a
   delivery", since git's verb is the same word.
 - **Delivery Take** — the CBC Run's act: moving delivered files from
   `temp/` into place and recording the Delivery Pin
-  (`docs/conventions/exchange/` §4, *The take*).
+  (`docs/conventions/exchange/` §4, *The Delivery Take*).
 - **Run Reading** — the Concept Deliverer reading a CBC Run since it
   last read it, and the text that records what it found
-  (`docs/conventions/exchange/` §6.3, *The reading*).
+  (`docs/conventions/exchange/` §6.3, *The Run Reading*).
 - **Record Harvest** — us reading a CBC Run's records and changing
   our Master Copies from what it learned
   (`docs/models/tiers.md` §3.3, *Up is harvest, through records*).
@@ -69,7 +69,7 @@ its thing. A CBC Run keeps a glossary of its own.
   groups of files a CBC Run receives, each a piece of its tree:
   `delivery/container/`, `delivery/method/`,
   `delivery/spring-postgres/`
-  (`docs/conventions/exchange/` §3.3, *Each group is a piece…*).
+  (`docs/conventions/exchange/` §3.3, *A group's place in the tree*).
 
 ## Kinds of text
 
@@ -77,7 +77,7 @@ its thing. A CBC Run keeps a glossary of its own.
   written down: the concept, an Idea Model, a Convention Manual. It
   may be wrong or incomplete and is the one that counts regardless;
   what derives from it applies it and does not explain. One rule for
-  all of them (`docs/conventions/facts-in-sync/` §4, *The rule for every description*);
+  all of them (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*);
   they differ at the edges (ADR-0039). Canonical says reference,
   never correctness: today's understanding, changed only for a
   reason recorded.
@@ -118,16 +118,16 @@ its thing. A CBC Run keeps a glossary of its own.
   of that area relate (`docs/conventions/project-recording/` §8.6, *Local Maps*).
 - **Agent Rule** — a file under `.claude/rules/`, loaded into the
   agent by path or in every session
-  (`docs/conventions/agent-arrangement/` §3.2, *`rules/`*). A
+  (`docs/conventions/agent-arrangement/` §3.2, *`.claude/rules/`*). A
   numbered line inside one is named by its owner and number:
   "one-home rule 3", "writing rule 6". The kinds in use: a Local
   Rule, the entry file's (`docs/conventions/agent-arrangement/`
-  §2.4, *How*); a Paths Rule, one loaded by path; and Claude Code's
+  §2.4, *How the entry file is written*); a Paths Rule, one loaded by path; and Claude Code's
   permission and deny rules, its own words
-  (`docs/conventions/agent-arrangement/` §3.5, *`settings.json`*).
+  (`docs/conventions/agent-arrangement/` §3.5, *`.claude/settings.json`*).
 - **Skill Template** — a file under a skill's `templates/`, copied
   and filled by the project, never edited in place
-  (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*).
+  (`docs/conventions/exchange/` §5.8, *Filling a Skill Template*).
   A particular one is named by its file: the Registry Template, the
   Glossary Template.
 - **Record Stub** — a record as it is born: the shipped file with its
@@ -140,7 +140,7 @@ its thing. A CBC Run keeps a glossary of its own.
   stack (`docs/conventions/repo-hygiene/` §2, *Layering*).
 - **Decisions Log** — a CBC Run's `.claude/decisions.md`, where its
   agent records the decisions about its own setup; ours is the same
-  file here (`docs/conventions/agent-arrangement/` §3.4, *`decisions.md`*).
+  file here (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).
 - **Repo Tag** — the letters a repo's decisions carry when cited from
   another repo, CBC for this one
   (`docs/conventions/project-recording/` §3.5, *Numbers across repos*).
@@ -154,7 +154,7 @@ its thing. A CBC Run keeps a glossary of its own.
 - **Fact Reference** — what a line carries when it relies on a fact
   written elsewhere: the address of the fact's home, its path,
   section and title, in parentheses
-  (`docs/conventions/facts-in-sync/` §3.1, *What it is*).
+  (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
 - **Chain Link** — a relation from a lower text to the upper one it
   relies on: stands on, points, governs, written from
   (`docs/models/idea-to-output.md` §3.1, *The four links*). Wider
@@ -167,13 +167,13 @@ its thing. A CBC Run keeps a glossary of its own.
   Model carry one; a line that uses a part of a document carries a
   Fact Reference to that part instead
   (`docs/conventions/conventions/` §1.3, *The Foundation Line*;
-  `docs/conventions/facts-in-sync/` §4, *The rule for every description*).
+  `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
   Not *source*: that was a run's word for the deliverer, and is not
   ours.
 - **Change Walk** — what a change to a Canonical Description sets
   off: the greps for its path and its name, and the re-read of each
   line they find
-  (`docs/conventions/facts-in-sync/` §4, *The rule for every description*, step 3).
+  (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 3).
 
 ## The work
 

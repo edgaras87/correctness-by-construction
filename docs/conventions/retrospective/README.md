@@ -110,7 +110,7 @@ end.
   shorter, what needed to happen earlier, what was tried and
   dropped, what had no home, which gate items caught nothing; and
   the entry file read top to bottom, its only re-reading
-  (`docs/conventions/agent-arrangement/` §2.6, *Size*). They are prompts,
+  (`docs/conventions/agent-arrangement/` §2.6, *The entry file's size*). They are prompts,
   inside the walk.
 
 *Its story: devlog 2026-10-29, the lessons' own stories: six places.*

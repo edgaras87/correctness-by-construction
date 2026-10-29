@@ -4,52 +4,52 @@ foundation: the tiers model
 
 # The exchange
 
-**Everything that passes between a deliverer and a run, in both
-directions, and what each side keeps so it can happen again.**
+**Everything that passes between the Concept Deliverer and a CBC Run,
+in both directions, and what each side keeps so it can happen again.**
 
 ## What it is for
 
-So that a deliverer and a blind run stay in step: files go down
-whole, what the run learned comes back as a reading, and a verdict
+So that the Concept Deliverer and a blind CBC Run stay in step: files go down
+whole, what the CBC Run learned comes back as a Run Reading, and a verdict
 returns — each side holding only the half it can run. Not version
-control: a pin is one part of it. The failure it answers is lived.
+control: a Delivery Pin is one part of it. The failure it answers is lived.
 Until 2026-09-26 the receiver's protocol, `convention-lifecycle`,
-154 lines, was held by the deliverer, which never once ran it,
-while run 3 ran it at every take; the deliverer's half was
+154 lines, was held by the Concept Deliverer, which never once ran it,
+while CBC Run 3 ran it at every Delivery Take; the Concept Deliverer's half was
 `bundle-update.md`, 527 lines; and the rule for editing a copy was
 written twice in two repos, six elements the same in different
-words (§5.1, *One rule for every delivered…*). Made one convention on 2026-09-26; what it replaced
+words (§5.1, *When a copy may be edited*). Made one convention on 2026-09-26; what it replaced
 is ADR-0036's.
 
 ## What this is made usable as
 
 The first convention whose artifacts split between the two
 arrangements, each side holding only what it runs
-(`docs/conventions/agent-arrangement/`, its seats).
+(`docs/conventions/agent-arrangement/`, *The seats*).
 
 - **`delivery/container/temp/README.md` — shipped at birth**, the
-  run's own from then on: what its `temp/` is for, where a delivery
-  arrives and the run keeps its own scratch (§3.1, *Staging*; §4, *The take*).
-- **`delivery/container/.claude/rules/delivered-copies.md` — a
-  rule, shipped**, held at `.claude/rules/delivered-copies.md` and
-  loading when a copy or a file in `temp/` is read (§4, *The take*; §5, *Editing a copy*).
-- **`.claude/skills/exchange-read/SKILL.md` — the deliverer's**,
-  opened when the reviewer says to read a run (§6, *Up*): find the span
-  from the run's read-through, read the three things, write the
-  reading. Ends where the work begins.
-- **`.claude/skills/exchange-deliver/SKILL.md` — the deliverer's**,
-  opened when the reviewer says to deliver (§3, *Down*): the note committed
-  last, the staging on the word; the same whether a reading
+  CBC Run's own from then on: what its `temp/` is for, where a delivery
+  arrives and the CBC Run keeps its own scratch (§3.1, *Delivery Staging*; §4, *The Delivery Take*).
+- **`delivery/container/.claude/rules/delivered-copies.md` — an
+  Agent Rule, shipped**, held at `.claude/rules/delivered-copies.md` and
+  loading when a copy or a file in `temp/` is read (§4, *The Delivery Take*; §5, *Editing a copy*).
+- **`.claude/skills/exchange-read/SKILL.md` — the Concept Deliverer's**,
+  opened when the reviewer says to read a CBC Run (§6, *Up from the CBC Run*): find the span
+  from the CBC Run's Read-Through Commit, read the three things, write the
+  Run Reading. Ends where the work begins.
+- **`.claude/skills/exchange-deliver/SKILL.md` — the Concept Deliverer's**,
+  opened when the reviewer says to deliver (§3, *Down to the CBC Run*): the Delivery Note committed
+  last, the Delivery Staging on the word; the same whether a Run Reading
   preceded it or not. Birth is a delivery into the root plus the
   fills, and `delivery/installs/pure-seed.md` keeps that.
-- **`.claude/rules/exchange-reading.md` — the reading's form, the
-  deliverer's**, loading when a reading in `temp/` is read, not
+- **`.claude/rules/exchange-reading.md` — the Run Reading's form, the
+  Concept Deliverer's**, loading when a Run Reading in `temp/` is read, not
   while a new one is written (`docs/conventions/agent-arrangement/`
   §5.6, *Rules files*). What `exchange-read` writes, and what
   the work then fills, to one form.
-- **`.claude/rules/working-a-reading.md` — how a reading's list is
-  worked, the deliverer's**, practice under this page, loading when
-  a reading in `temp/` is read. It works each item to its ending (§6.5, *Verdicts*).
+- **`.claude/rules/working-a-reading.md` — how a Run Reading's list is
+  worked, the Concept Deliverer's**, practice under this page, loading when
+  a Run Reading in `temp/` is read. It works each item to its ending (§6.5, *Verdicts*).
 
 No artifact explains anything. What derives from this page is that
 list. A change here walks it; a change forced in one of them is
@@ -59,85 +59,85 @@ checked back against this page.
 
 ## The seats
 
-The two seats do different things, and the body is written per
-seat. **The run's** is the take and editing a copy (§4, *The take*;
-§5, *Editing a copy*). **The deliverer's** is down and up (§3, *Down*;
-§6, *Up*), written in the first person because they are its own. What
-cannot change and what each side keeps are both seats' (§1, *What
+The two Convention Seats do different things, and the body is written per
+Convention Seat. **The CBC Run's** is the Delivery Take and editing a copy (§4, *The Delivery Take*;
+§5, *Editing a copy*). **The Concept Deliverer's** is down and up (§3, *Down to the CBC Run*;
+§6, *Up from the CBC Run*), written in the first person because they are its own. What
+cannot change and what each side keeps are both Convention Seats' (§1, *What
 cannot change*; §2, *What each side keeps*).
 
 ## 1. What cannot change
 
 The five facts that hold on every flow between a tier and the one
-below hold between the deliverer and a run
+below hold between the Concept Deliverer and a CBC Run
 (`docs/models/tiers.md` §3.5, *What holds on every flow*). Here
 they mean:
 
-1. **A run is blind.** No address for its deliverer, no checkout,
+1. **A CBC Run is blind.** No address for its Concept Deliverer, no checkout,
    no remote.
 2. **Nothing arrives by itself.** The reviewer carries a delivery
    across, or the agent does on the reviewer's word.
-3. **The run holds copies; the deliverer holds masters.**
-4. **A run edits a copy when it fails it,** in the file, mid-work,
+3. **The CBC Run holds copies; the Concept Deliverer holds Master Copies.**
+4. **A CBC Run edits a copy when it fails it,** in the file, mid-work,
    not in a note (§5, *Editing a copy*).
-5. **Nothing moves upward as files.** The deliverer reads the run,
-   and a run never pushes (§6, *Up*).
+5. **Nothing moves upward as files.** The Concept Deliverer reads the CBC Run,
+   and a CBC Run never pushes (§6, *Up from the CBC Run*).
 
 ## 2. What each side keeps
 
-### 2.1 The deliverer
+### 2.1 The Concept Deliverer
 
-The masters. Nothing per run.
+The Master Copies. Nothing per CBC Run.
 
-### 2.2 The run
+### 2.2 The CBC Run
 
-The copies, and one line per note in its own decisions
-log carrying two numbers — **the pin**, the deliverer's commit its
-copies equal, and **the read-through**, its own commit the
-deliverer last read up to. The first comes from the staging's name,
-the second from the note. Its edits since the pin need no record
+The copies, and one line per Delivery Note in its own Decisions
+Log carrying two numbers — **the Delivery Pin**, the Concept Deliverer's commit its
+copies equal, and **the Read-Through Commit**, its own commit the
+Concept Deliverer last read up to. The first comes from the Delivery Staging's name,
+the second from the Delivery Note. Its edits since the Delivery Pin need no record
 of their own — they are the diff against what was delivered, and
 git holds it.
 
-Both numbers are in the run because the run is the only place the
-deliverer can look. To deliver, read the run's pin and diff forward
-in the deliverer's tree. To read, read the run's read-through and go
-forward in the run's. *Its story: devlog 2026-10-29, the lessons' own stories: the exchange.*
+Both numbers are in the CBC Run because it is the only place the
+Concept Deliverer can look. To deliver, read the CBC Run's Delivery Pin and diff forward
+in the Concept Deliverer's tree. To read, read the CBC Run's Read-Through Commit and go
+forward in the CBC Run's. *Its story: devlog 2026-10-29, the lessons' own stories: the exchange.*
 
-The pin is a commit of the deliverer's. The run stores it and
-cannot resolve it, so everything the run needs to check must be
+The Delivery Pin is a commit of the Concept Deliverer's. The CBC Run stores it and
+cannot resolve it, so everything the CBC Run needs to check must be
 checkable against its own tree.
 
-**One pin** for everything delivered, as on every flow
+**One Delivery Pin** for everything delivered, as on every flow
 (`docs/models/tiers.md` §3.5, *What holds on every flow*): not one
 per group, not one per convention.
 
-### 2.3 At the pin, the bytes match
+### 2.3 The bytes at the Delivery Pin
 
-The moment a run takes a delivery,
-every copy equals the master exactly, and anyone can check it with
-`diff`. Between pins the copy is the master plus the run's edits,
-and that difference is the whole of what the deliverer reads. A
-take overwrites whole and the bytes match again. Same pin, same
-bytes; different bytes means the run has learned something not yet
+The moment a CBC Run takes a delivery,
+every copy equals the Master Copy exactly, and anyone can check it with
+`diff`. Between Delivery Pins the copy is the Master Copy plus the CBC Run's edits,
+and that difference is the whole of what the Concept Deliverer reads. A
+Delivery Take overwrites whole and the bytes match again. Same Delivery Pin, same
+bytes; different bytes means the CBC Run has learned something not yet
 read.
 
-### 2.4 The records are the one exception
+### 2.4 The records' exception
 
-The reason is that they never update. `PLAN`, `TODO` and the
-devlog are delivered once as stubs, the entry file once as a
-composed file; the run fills them; no later delivery touches
+The records are the one exception. They never update: `PLAN`, `TODO` and the
+devlog are delivered once as Record Stubs, the entry file once as a
+composed file; the CBC Run fills them; no later delivery touches
 them. Their skeleton froze at birth, so no compare ever runs on
 them.
 
 *Its story: devlog 2026-09-25, later.*
 
-Skeleton sync is reopened if a run re-applies the same declined edit
+Skeleton sync is reopened if a CBC Run re-applies the same declined edit
 after two re-pins.
 
 ### 2.5 One cycle, drawn
 
-Two repos, two numbers, and only a note moves either.
+Two repos, two numbers, and only a Delivery Note moves either.
 
 ```
    D      ───X───────────────────────────Y──────────▶
@@ -159,180 +159,180 @@ Two repos, two numbers, and only a note moves either.
    t   the run takes. It writes: pin Y, read-through r.
 ```
 
-Read from the read-through, forward in their tree. Deliver from the
-pin, forward in ours. A note without files (§6.6, *Every read ends with a note*) is a `t` that
-writes the read-through and leaves the pin where it was.
+Read from the Read-Through Commit, forward in their tree. Deliver from the
+Delivery Pin, forward in ours. A Delivery Note without files (§6.6, *The Delivery Note after a read*) is a `t` that
+writes the Read-Through Commit and leaves the Delivery Pin where it was.
 
-## 3. Down
+## 3. Down to the CBC Run
 
-### 3.1 Staging
+### 3.1 Delivery Staging
 
-On the reviewer's word, the delivery and its note are
-copied into the run's `temp/` — by the reviewer, or by the agent
-when told to. The agent never stages unasked. Whoever
-copies, the run's tree is checked quiet first — `git status` there,
+On the reviewer's word, the delivery and its Delivery Note are
+copied into the CBC Run's `temp/` — by the reviewer, or by the agent
+when told to. The agent never stages a delivery unasked. Whoever
+copies, the CBC Run's tree is checked quiet first — `git status` there,
 nothing in flight — and when it is the agent, it reports what it
 found and waits for the word before anything lands. The
-staging is named by the commit at which the files and the note are
-both final — commit the note last, then name the bundle — so the
-pin the run records points at exactly the note it read. *Its story: devlog 2026-09-25, later; devlog 2026-10-29, the lessons' own stories: the exchange.*
+Delivery Staging is named by the commit at which the files and the Delivery Note are
+both final — commit the Delivery Note last, then name the bundle — so the
+Delivery Pin the CBC Run records points at exactly the Delivery Note it read. *Its story: devlog 2026-09-25, later; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 ### 3.2 What goes
 
-Files, whole. The groups that ship — method,
-container, a stack practice if the run is on that stack — and the
+Files, whole. The groups that ship — the Method Group, the
+Container Group, the Stack Group if the CBC Run is on that stack — and the
 concept. Nothing that explains them; the explanation stays home.
 
 At birth, every file of each group. After it, only the copies: the
-container's skills, rules and approaches on trial; the method's and the stack practice's
-skills, rules and shapes; the concept. The rest of the container —
-its records, the two entry files, the decisions log, the hygiene
-files — went once and is the run's (§2.4, *The records are the one…*); a later delivery that
-carried it would land stubs over what the run has written.
+Container Group's skills, Agent Rules and Approaches on Trial; the Method Group's and the Stack Group's
+skills, Agent Rules and Output Shapes; the concept. The rest of the Container Group —
+its records, the two entry files, the Decisions Log, the hygiene
+files — went once and is the CBC Run's (§2.4, *The records' exception*); a later delivery that
+carried it would land Record Stubs over what the CBC Run has written.
 
-### 3.3 Each group is a piece of the run's tree
+### 3.3 A group's place in the tree
 
 Inside
 `delivery/<group>/`, every path is the path it lands at:
 `delivery/method/.claude/skills/cbc-framing/` lands at
-`.claude/skills/cbc-framing/`. Staging is copying each group the
-run takes on top of the last; the result *is* the run's tree, and a
+`.claude/skills/cbc-framing/`. Delivery Staging is copying each group the
+CBC Run takes on top of the last; the result *is* the CBC Run's tree, and a
 group is left out by not naming its directory. No list of files, no
 mapping, nothing to forget. *Its story: devlog 2026-09-26, evening.* The one named exception is
 `concept/`, which stays at this repo's root because the repo is the
 concept, and lands at `docs/concept/`; that is the whole of the
 mapping, stated here once.
 
-### 3.4 Every shipped file is in exactly one group
+### 3.4 One group per file
 
-The staging checks:
+Every shipped file is in exactly one group, and the Delivery Staging checks it:
 a path claimed by two groups is an error, not a merge. A skill
 belongs to one group and travels whole, never split across two. The
-method holds no stack: nothing that needs Spring, PostgreSQL, Maven
-or podman sits under `delivery/method/`, so a run on another stack
-takes the container and the method and leaves the stack's group
+Method Group holds no stack: nothing that needs Spring, PostgreSQL, Maven
+or podman sits under `delivery/method/`, so a CBC Run on another stack
+takes the Container Group and the Method Group and leaves the Stack Group
 (ADR-0029). When one
-group's words must sit in another group's file — the method's
-playbook inside the container's `PLAN.md` — that is a **fill**: the
+group's words must sit in another group's file — the Method Group's
+playbook inside the Container Group's `PLAN.md` — that is a **fill**: the
 owning group's file has a marked place, the other group provides
-the text, the staging writes it in. Fills are the only step that is
+the text, the Delivery Staging writes it in. Fills are the only step that is
 not a copy; they are listed in one place and there are few. One
-exists. One is owed: the container's entry file names the method
-skills and `docs/concept/`, so a run taking container without
-method would be born with an entry file about files it does not
-hold. When such a run exists, those lines become a fill.
+exists. One is owed: the Container Group's entry file names the Method Group's
+skills and `docs/concept/`, so a CBC Run taking the Container Group without
+the Method Group would be born with an entry file about files it does not
+hold. When such a CBC Run exists, those lines become a fill.
 
-### 3.5 Every shipped skill, rule and shape carries `foundation`
+### 3.5 The Foundation Line in a copy
 
-The field — its name, that every skill, rule and shape has one,
-and what it holds for each kind — is the conventions convention's
-(`docs/conventions/conventions/` §1.3, *The Foundation Line*). What is the exchange's: the
+Every shipped skill, Agent Rule and Output Shape carries a Foundation Line. The field — its name, that each has one,
+and what it holds for each kind — is the conventions manual's
+(`docs/conventions/conventions/` §1.3, *The Foundation Line*). What is the Exchange Convention's: the
 line travels with the copy as a live claim, what this file comes
-from *now* and not when or from which run, and nothing in a copy
+from *now* and not when or from which CBC Run, and nothing in a copy
 can say otherwise. *Its story: devlog 2026-09-26, evening; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
-### 3.6 A copy carries presence and content, never absence
+### 3.6 Absence in a delivery
 
-A file
-that was delivered before and is not in this staging is still in
-the run, and nothing copied can say otherwise. So the note names
+A copy carries presence and content, never absence. A file
+that was delivered before and is not in this Delivery Staging is still in
+the CBC Run, and nothing copied can say otherwise. So the Delivery Note names
 every deletion and every rename by path — this is gone, this is
-now that. The deliverer finds them with `git diff -M` between the
-run's pin and the staging; the run cannot, because it cannot
-resolve the pin. A rename in the delivery is a delete and an add,
-and the note says both halves.
+now that. The Concept Deliverer finds them with `git diff -M` between the
+CBC Run's Delivery Pin and the Delivery Staging; the CBC Run cannot, because it cannot
+resolve the Delivery Pin. A rename in the delivery is a delete and an add,
+and the Delivery Note says both halves.
 
-### 3.7 The note
+### 3.7 The Delivery Note
 
-What changed since the run's pin, stated so the run
-can diff the staging against what it holds and find the note wrong.
-Why it matters to this run — the part a diff cannot carry. A verdict
-on everything the run addressed to us since we last read it, in the
-run's order: the note is the verdicts' only channel. A
-verdict says the decision and what the run owes now, nothing else.
-It never describes our own practice, which the run cannot check. It
+What changed since the CBC Run's Delivery Pin, stated so the CBC Run
+can diff the Delivery Staging against what it holds and find the Delivery Note wrong.
+Why it matters to this CBC Run — the part a diff cannot carry. A verdict
+on everything the CBC Run addressed to us since we last read it, in the
+CBC Run's order: the Delivery Note is the verdicts' only channel. A
+verdict says the decision and what the CBC Run owes now, nothing else.
+It never describes our own practice, which the CBC Run cannot check. It
 never says "accepted" for something not decided.
-Nothing that needs our repo to verify: a note that reports facts
-about our tree gives the run a hedge it cannot close. Where a claim
-cannot avoid it — a thin note, which ships no copy; material
+Nothing that needs our repo to verify: a Delivery Note that reports facts
+about our tree gives the CBC Run a hedge it cannot close. Where a claim
+cannot avoid it — a thin Delivery Note, which ships no copy; material
 outside the delivery; a negative claim, which is about our whole
-tree — the note says so, in a clause. A note fails to reach when it
+tree — the Delivery Note says so, in a clause. A Delivery Note fails to reach when it
 is thin, when what it names does not exist, when the relationship
-changed under it, or when the right content comes in a shape the run
+changed under it, or when the right content comes in a form the CBC Run
 cannot act on.
 
 No ADR number, no path in this repo and no word of this repo's own
-vocabulary, in a note or in a prompt: the run cannot see this repo,
+vocabulary, in a Delivery Note or in a prompt: the CBC Run cannot see this repo,
 and a citation it cannot follow reads as its own. That is told text.
-A shipped file carries the tag instead, `CBC ADR-nnnn`
+A shipped file carries the Repo Tag instead, `CBC ADR-nnnn`
 (`docs/conventions/project-recording/` §3.5, *Numbers across repos*), because a file stays
-in the run and a note is read once (ADR-0020).
+in the CBC Run and a Delivery Note is read once (ADR-0020).
 
-A note that names a third repository gives both names: ours, by
-ordinal, and the one it gave itself at its Identity step. A run's
+A Delivery Note that names a third repository gives both names: ours, by
+ordinal, and the one it gave itself at its Identity Plan Step. A CBC Run's
 records do not say which is which; ours do (`ARCHITECTURE.md` §2.5, *The runs*).
 
 *Its story: devlog 2026-09-20.*
 
-## 4. The take
+## 4. The Delivery Take
 
-The run's agent, from `temp/`, in this order. Nothing in `temp/`
+The CBC Run's agent, from `temp/`, in this order. Nothing in `temp/`
 is in force until it is copied into place — a staged skill is a
-file, not a skill, and a step that opens meanwhile runs on the held
+file, not a skill, and a Plan Step that opens meanwhile runs on the held
 copy.
 
-1. **Check the note against the staging.** Diff every delivered
-   file against what the run holds. The note said N files differ;
+1. **Check the Delivery Note against the Delivery Staging.** Diff every delivered
+   file against what the CBC Run holds. The Delivery Note said N files differ;
    the diff says how many. A mismatch is reported before anything
    moves.
 2. **Find your own edits.** The diff of each held copy against the
-   pin, which the run holds as the commit of its last delivery entry
-   (§2.2, *The run*). Empty: nothing to protect. Not empty: each edit is either
-   answered in the note (taken — the new copy carries it; declined
-   — it goes, and the need it served goes to the run's records) or
-   unanswered, which means it was made after the deliverer last
+   Delivery Pin, which the CBC Run holds as the commit of its last delivery entry
+   (§2.2, *The CBC Run*). Empty: nothing to protect. Not empty: each edit is either
+   answered in the Delivery Note (taken — the new copy carries it; declined
+   — it goes, and the need it served goes to the CBC Run's records) or
+   unanswered, which means it was made after the Concept Deliverer last
    read, and it is re-applied on top.
 3. **Place.** The delivered files overwrite the copies whole. The
-   take's commits follow `docs/conventions/commit-messages/`; when
+   Delivery Take's commits follow `docs/conventions/commit-messages/`; when
    they are more than one, the chapters' commit comes first, so
    step 5's entry lands in the last (ADR-0046). A receipt
-   branch — the delivery as it arrived, named by the pin — is worth
-   cutting when the run expects to edit, because it makes step 2's
+   branch — the delivery as it arrived, named by the Delivery Pin — is worth
+   cutting when the CBC Run expects to edit, because it makes step 2's
    diff exact next time. Optional.
-4. **Remove what the note says is gone.** Each path the note names
+4. **Remove what the Delivery Note says is gone.** Each path the Delivery Note names
    as deleted is deleted; each it names as renamed is moved. The
    only step a copy cannot do. *Its story: devlog 2026-09-25, later.*
-5. **Register.** One line in the run's decisions log: the date, the
-   pin, what came, what was declined and where its need went. Agent
+5. **Register.** One line in the CBC Run's Decisions Log: the date, the
+   Delivery Pin, what came, what was declined and where its need went. Agent
    side only, and in the last commit, where every copy equals the
-   pin. Then the staging goes — the directory named for the pin and
-   its note — and nothing else: `temp/` may hold the run's own
+   Delivery Pin. Then the Delivery Staging goes — the directory named for the Delivery Pin and
+   its Delivery Note — and nothing else: `temp/` may hold the CBC Run's own
    drafts, which are not the delivery's to clear. *Its story: devlog 2026-10-08.*
 
 ## 5. Editing a copy
 
-### 5.1 One rule for every delivered copy
+### 5.1 When a copy may be edited
 
-There are not two.
+One rule holds for every delivered copy; there are not two.
 *Its story: devlog 2026-09-25, later.*
 
 A copy may be edited in place when all three hold:
 
-- **Something happened** in this run that the copy did not foresee.
+- **Something happened** in this CBC Run that the copy did not foresee.
   Never a speculation.
-- **The edit asks a question or demands an outcome any run would
-  want.** Never this run's own answer. What only this run needs goes
+- **The edit asks a question or demands an outcome any CBC Run would
+  want.** Never this CBC Run's own answer. What only this CBC Run needs goes
   in its own records, not in the copy.
 - **Three records, none of them in the file:** one entry in the
-  run's decisions log saying what changed and why; one line in its
-  backlog addressed to the deliverer, asking for a verdict since the
-  pin; and the diff against the pin, which exists whether anyone
+  CBC Run's Decisions Log saying what changed and why; one line in its
+  backlog addressed to the Concept Deliverer, asking for a verdict since the
+  Delivery Pin; and the diff against the Delivery Pin, which exists whether anyone
   writes anything.
 
 The backlog lines live under one heading kept for them, *To the
-deliverer*. The backlog is the channel — a hand-off is the run's
+deliverer*. The backlog is the channel — a hand-off is the CBC Run's
 own open item, waiting on an answer, with a lifecycle git can see:
-filed at a step's close, gone with the pin that answers it. `temp/`
+filed at a Plan Step's close, gone with the Delivery Pin that answers it. `temp/`
 is not the channel the other way: it holds drafts, not records,
 its files go once they have served, and a line left there would
 go with them. One heading keeps the lines from being swept with a
@@ -343,130 +343,130 @@ Nothing is written into the copy but the edit. No dated line, no
 comment saying what changed — a file says how to use it, never its
 own history.
 
-One kind of copy takes one more edit: an approach on trial gets a
-dated note of each use under its *Uses*, in the run's own terms.
-The note is what the approach is for, since it carries the use to
-the deliverer's evaluation. It is the run's own account, so the
+One kind of copy takes one more edit: an Approach on Trial gets a
+dated note of each use under its *Uses*, in the CBC Run's own terms.
+The note is what the Approach on Trial is for, since it carries the use to
+the Concept Deliverer's evaluation. It is the CBC Run's own account, so the
 second condition does not hold it; the other two do.
 
-### 5.2 A copy the run has finished with
+### 5.2 A finished copy
 
-It is edited the same way, whenever the evidence is in the run, and
-never kept as a note for a later run: the deliverer takes or
-declines an exact hunk rather than translating a note, and the run
+A copy the CBC Run has finished with is edited the same way, whenever the evidence is in the CBC Run, and
+never kept as a note for a later CBC Run: the Concept Deliverer takes or
+declines an exact hunk rather than translating a note, and the CBC Run
 that lived the mistake writes the fix. One process for every copy.
-The one difference is said in the log entry and in the backlog
-line: a running skill's fix is exercised by the next step here; a
-finished skill's fix is first used by the deliverer, so its line
-marks it *untried here*, and the deliverer reads those hunks
-hardest. Such an edit is taken when it is sound, and the next run
+The one difference is said in the Decisions Log entry and in the backlog
+line: a running skill's fix is exercised by the next Plan Step here; a
+finished skill's fix is first used by the Concept Deliverer, so its line
+marks it *untried here*, and the Concept Deliverer reads those hunks
+hardest. Such an edit is taken when it is sound, and the next CBC Run
 is its trial (ADR-0051).
 *Its story: ADR-0051.*
 
 ### 5.3 Edits made before a verdict
 
-They stack on the run's side only. Behind the deliverer is
-acceptable; behind the run's own lessons is not.
+They stack on the CBC Run's side only. Behind the Concept Deliverer is
+acceptable; behind the CBC Run's own lessons is not.
 
 ### 5.4 One word for the other side
 
 In the rule and in the backlog line:
-*deliverer*. Run 3's text says *source*; `docs/glossary.md` says
-deliverer, and the shipped rule says one thing.
+*the Concept Deliverer*. CBC Run 3's text says *source*; `docs/glossary.md` says
+Concept Deliverer, and the shipped Agent Rule says one thing.
 
-### 5.5 A run does not rename or delete a copy
+### 5.5 Renaming or deleting a copy
 
-The delivered path is
-the copy's identity for the take: a renamed copy becomes two files
-at the next delivery, a deleted one comes back. A copy the run has
+A CBC Run does not rename or delete a copy. The delivered path is
+the copy's identity for the Delivery Take: a renamed copy becomes two files
+at the next delivery, a deleted one comes back. A copy the CBC Run has
 no use for is a backlog line — *we do not use this* — and the
-deliverer decides.
+Concept Deliverer decides.
 
-### 5.6 A chapter only from a lived mistake
+### 5.6 Editing a chapter
 
-A chapter is edited as any copy (§5.1, *One rule for every delivered…*), and only from a mistake
-lived in the run, never from a preference for other wording. Skills
+A chapter is edited as any copy (§5.1, *When a copy may be edited*), and only from a mistake
+lived in the CBC Run, never from a preference for other wording. Skills
 are written from the chapters and readers learn the method from
-them, so lived work can show one wrong; and the deliverer judges an
+them, so lived work can show one wrong; and the Concept Deliverer judges an
 exact hunk where a prose line must first be translated. The edit is
-the run's copy's: the concept changes only when the deliverer takes
+the CBC Run's copy's: the concept changes only when the Concept Deliverer takes
 it (ADR-0051).
 *Its story: ADR-0051.*
 
 ### 5.7 The records
 
-They are the run's own from birth, not copies (§2.4, *The records are the one…*), and this
+They are the CBC Run's own from birth, not copies (§2.4, *The records' exception*), and this
 section does not apply to them.
 
-### 5.8 A skill's template is filled, not edited
+### 5.8 Filling a Skill Template
 
-A file in a skill's `templates/` arrives pinned, with the rest of the
-skill. At use, the run copies it to the path the skill names and
-fills it. The filled file is the run's own, as a record is (§5.7,
-*The records*), and may drop the template's header. The skill's
-template stays the pinned copy. A change to its shape, such as a
+A Skill Template, a file in a skill's `templates/`, arrives pinned, with the rest of the
+skill. At use, the CBC Run copies it to the path the skill names and
+fills it. The filled file is the CBC Run's own, as a record is (§5.7,
+*The records*), and may drop the Skill Template's header. The Skill
+Template stays the pinned copy. A change to it, such as a
 line every run needs or a comment that was wrong, is an edit to the
-copy under its rule (§5.1, *One rule for every delivered…*). The filled
-values never come back: they are the run's decisions.
+copy under its rule (§5.1, *When a copy may be edited*). The filled
+values never come back: they are the CBC Run's decisions.
 
-A run whose decided constraints differ from what a skill's template
-assumes is off-template. It derives from what the template
+A CBC Run whose decided constraints differ from what a Skill Template
+assumes is off-template. It derives from what the Skill Template
 implements, which the skill names. It records the deviation where
 its records table puts a decision, what it did instead and why
 (`docs/conventions/project-recording/` §13, *The records table*). It expects the
 deviation to come back as a change to the skill. It never bends a
-decided constraint to fit a skill's template (ADR-0008).
+decided constraint to fit a Skill Template (ADR-0008).
 
-## 6. Up
+## 6. Up from the CBC Run
 
-### 6.1 The read
+### 6.1 Reading a CBC Run
 
-We open the run's repository and read three things
-since the read point: its decisions log (every edit and why), its
+We open the CBC Run's repository and read three things
+since its Read-Through Commit: its Decisions Log (every edit and why), its
 backlog (every line addressed to us), and the diff of every held
-copy against its pin. Those three give every item; the devlog is
+copy against its Delivery Pin. Those three give every item; the devlog is
 context.
 
-One more look gives no item: the run's tree, the work staged or
-changed there but not committed. That work is not yet the run's
-word. But a verdict may rest on it, so the reading names it, and no
+One more look gives no item: the CBC Run's tree, the work staged or
+changed there but not committed. That work is not yet the CBC Run's
+word. But a verdict may rest on it, so the Run Reading names it, and no
 verdict is written against what that work undoes.
 
 *Its story: devlog 2026-10-18; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
-### 6.2 A file the run wrote
+### 6.2 A file the CBC Run wrote
 
-It is the run's own until the run offers it. It appears in the
-diff against the pin as an addition, and it is read only if a
-backlog line points at it — a shape, a rule, a
-reference the run thinks any project would want. Then it gets a
+It is the CBC Run's own until the CBC Run offers it. It appears in the
+diff against the Delivery Pin as an addition, and it is read only if a
+backlog line points at it — an Output Shape, an Agent Rule, a
+reference the CBC Run thinks any project would want. Then it gets a
 verdict like an edit does.
 
-### 6.3 The reading
+### 6.3 The Run Reading
 
-The read produces a reading, or extends the one open for that
-run — a document in `temp/` listing every edit, every ask and
+The read produces a Run Reading, or extends the one open for that
+CBC Run — a document in `temp/` listing every edit, every ask and
 every finding, one line each, revised as items close and deleted
-when the work does. One per run at a time. The reading is the
+when the work does. One per CBC Run at a time. The Run Reading is the
 list; working it is ordinary work here — a commit plan when it
 takes more than one commit, an ADR when a decision has rejected
 options. This page says only what each item must end as, and
 where; how the list is worked is
 `.claude/rules/working-a-reading.md`'s, practice under it.
 
-A reading also asks what the run teaches the worked example,
+A Run Reading also asks what the CBC Run teaches the worked example,
 `delivery/method/.claude/skills/cbc-framing/references/worked-example.md`,
 which its copy in `cbc-slice` follows.
 
 *Its story: devlog 2026-09-30, later still; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
-### 6.4 A reading closes two ways
+### 6.4 How a Run Reading closes
 
-Its work closes — every item taken,
-declined or held, the note gone down. Or it is **overtaken**: the
-deliverer's tree has moved so far while the reading was open that
-its items no longer describe it, though the run's side may still be
-true. An overtaken reading is closed the same way — one pass over
+A Run Reading closes two ways. Its work closes — every item taken,
+declined or held, the Delivery Note gone down. Or it is **overtaken**: the
+Concept Deliverer's tree has moved so far while the Run Reading was open that
+its items no longer describe it, though the CBC Run's side may still be
+true. An overtaken Run Reading is closed the same way — one pass over
 its open items saying where each went — and deleted; the next read
 starts fresh rather than extending a list written against a tree
 that no longer exists. *Its story: devlog 2026-09-26.*
@@ -475,41 +475,41 @@ that no longer exists. *Its story: devlog 2026-09-26.*
 
 Each item leaves the list with one of three:
 
-- **Taken** — a master changes here, committed. The next delivery
-  carries it, and the run's edit is absorbed rather than
+- **Taken** — a Master Copy changes here, committed. The next delivery
+  carries it, and the CBC Run's edit is absorbed rather than
   overwritten.
-- **Declined** — with why, and the why is never "the description
+- **Declined** — with why, and the why is never "the Canonical Description
   says otherwise" (`docs/conventions/facts-in-sync/` §5, *A disagreement* owns that
-  rule; it is about every description, not only this one). A
-  description can be what the run has found wrong. Declined means:
-  not general, or not worth the change. The why goes in the note
+  rule; it is about every Canonical Description, not only this one). A
+  Canonical Description can be what the CBC Run has found wrong. Declined means:
+  not general, or not worth the change. The why goes in the Delivery Note
   and nowhere else; nothing in our tree moves.
 - **Held** — with the trigger that would settle it, and a line in
-  our own backlog so it is not lost between readings.
+  our own backlog so it is not lost between Run Readings.
 
 An unverifiable promise is worse than any of the three. The
-verdicts go down in the note (§3.7, *The note*).
+verdicts go down in the Delivery Note (§3.7, *The Delivery Note*).
 
-### 6.6 Every read ends with a note
+### 6.6 The Delivery Note after a read
 
-Even an empty one. The note names
-the run's commit we read through; the run records it beside the pin
-(§2.2, *The run*). A read that finds nothing addressed to us still sends *read
+Every read ends with a Delivery Note, even an empty one. The Delivery Note names
+the CBC Run's commit we read through; the CBC Run records it beside the Delivery Pin
+(§2.2, *The CBC Run*). A read that finds nothing addressed to us still sends *read
 through `<commit>`, nothing to answer, no files* — one line each
-side — so the run always holds the latest read-through, and can see
-for itself when a hand-off was seen and not yet answered. A note
-alone, with no files, is still a delivery: the read-through moves,
-the pin does not.
+side — so the CBC Run always holds the latest Read-Through Commit, and can see
+for itself when a hand-off was seen and not yet answered. A Delivery Note
+alone, with no files, is still a delivery: the Read-Through Commit moves,
+the Delivery Pin does not.
 
 ## Why it arrives this way
 
-The run's half is a rule rather than a skill because its moment is
+The CBC Run's half is an Agent Rule rather than a skill because its moment is
 a copy, or a file in `temp/`, being read, and it loads then instead
 of waiting to be opened by name (`docs/models/agent.md` §4.3, *pushed*).
-The deliverer's two skills open on the reviewer's word, "read" or
+The Concept Deliverer's two skills open on the reviewer's word, "read" or
 "deliver", which is a moment the agent is told rather than one it
-must notice. The reading's form loads by path when a reading is
-read, so it is in view while the list is worked; a reading written
+must notice. The Run Reading's form loads by path when a Run Reading is
+read, so it is in view while the list is worked; a Run Reading written
 new is written without it (`docs/conventions/agent-arrangement/`
 §5.6, *Rules files*).
 
@@ -518,12 +518,12 @@ new is written without it (`docs/conventions/agent-arrangement/`
 ## What this does not cover
 
 - **Which files each side holds, and which paths are the
-  arrangement's** — `docs/conventions/agent-arrangement/`, its
-  seats.
+  arrangement's** — `docs/conventions/agent-arrangement/`, *The
+  seats*.
 - **What `foundation` holds for each kind of file** —
   `docs/conventions/conventions/` §1.3, *The Foundation Line*.
-- **How a shape reaches a run** — `docs/conventions/shapes/` §4, *Where a shape lives, between…*.
-- **The commits and decisions of working a reading** — a commit
+- **How an Output Shape reaches a CBC Run** — `docs/conventions/shapes/` §4, *Where a shape lives, between…*.
+- **The commits and decisions of working a Run Reading** — a commit
   plan when it takes more than one commit,
   `docs/conventions/commit-plan/`, and an ADR when a decision has
   rejected options, `docs/conventions/project-recording/`.

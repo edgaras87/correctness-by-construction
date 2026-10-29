@@ -130,7 +130,7 @@ chat answers, records, commit messages, code comments.
     text rendered, or in an editor that wraps, and 985 lines in 83 of
     the 99 living files already run past 72. The 72 is
     commit-messages' rule for a body and nothing else
-    (`docs/conventions/commit-messages/` §2.1, *Conventional Commits, not just 50/72*).
+    (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
     A scripted pass is held to the same rule: it counts headings,
     references and code fences before and after, and changes nothing
     on a second run.

@@ -24,9 +24,9 @@ fixing it afterwards or not at all, has not happened here.
   skill, shipped**, held at `.claude/skills/commit-plan/` and opened
   when work turns out to need several commits. The rules, one
   sentence each, with the decisions it rests on in its footer.
-- **`.claude/skills/commit-plan/SKILL.md` — the deliverer's**,
+- **`.claude/skills/commit-plan/SKILL.md` — the Concept Deliverer's**,
   derived from this page like the container's, neither copied from
-  the other, and written for this seat (ADR-0042, ADR-0069).
+  the other, and written for this Convention Seat (ADR-0042, ADR-0069).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of
@@ -34,11 +34,11 @@ them is checked back against this page.
 
 ## The seats
 
-A run runs its change sets under the skill, the plan file at its
-root its own. The deliverer runs its change sets under the same
+A CBC Run runs its change sets under the skill, the plan file at its
+root its own. The Concept Deliverer runs its change sets under the same
 skill, the plan file at its root its own.
 
-## 1. What it is
+## 1. What a commit plan is
 
 The unit is the change set: the scope between one commit and a
 whole project.
@@ -64,7 +64,7 @@ plan says so.
 
 ## 2. Why it is shaped this way
 
-### 2.1 Its own convention, and not a record
+### 2.1 A convention, not a record
 
 It is a scaffold, not a record: nothing about it is meant to be read a year later except
 through `git log`, so it sits outside
@@ -77,85 +77,85 @@ An in-flight change set is visible from a
 clean clone, so "is work half-landed, and where did it stop?" is
 answerable without the working tree.
 
-### 2.3 No status in the file
+### 2.3 Status in the file
 
 Tracking status there couples every work commit to a plan edit and reintroduces the staleness that
 makes a neglected plan lie. Git history is the status.
 
-### 2.4 Material-first is a first-class mode, not a failure
+### 2.4 Material-first
 
 Some decisions show only in the material: no conversation can
 settle them before the work is touched. For them, the provisional
 tail, the revision commit and the Proposed-then-Accepted ADR are the
 normal road, not a sign the plan failed (ADR-0038, 1e). *Its story: devlog 2026-09-27, afternoon; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
-### 2.5 The records commits are planned
+### 2.5 The records commits
 
 A change set batches record moments, and a record's trigger can fire mid-set before its truth
 exists. Walking the entry file's records table while drafting the
 commit list is what catches it (ADR-0038, 1d).
 
-### 2.6 A plan counts commits
+### 2.6 What a plan counts
 
 "Step" is `PLAN.md`'s word; a plan that called its commits steps
 would give one word two meanings (ADR-0049, 1). *Its story: devlog 2026-10-08; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
-### 2.7 An inserted commit takes a letter; a commit may repeat
+### 2.7 Inserted and repeated commits
 
 A plan's numbers are cited, in its notes, its revisions and its
 commit bodies, so a commit inserted later takes a letter rather
 than renumbering the rest. Where one change reaches many records,
 one planned commit repeats over them, naming its order and the
-rule that stops it. *Run 3's Step 10 inserted 8b, 22b and E2.1 to
+rule that stops it. *CBC Run 3's Step 10 inserted 8b, 22b and E2.1 to
 E2.12 after its plan was written, and ran one plain pass three
 times over its records, the third only over what the second
 changed (ADR-0050, 4 and 5).*
 
-### 2.8 Subjects are counted where they are first written
+### 2.8 Counting subjects
 
 A plan writes every subject before any lands; counted only at each
 boundary, a long one lands long, or is rewritten there with
 nothing in the plan saying why. *Its story: devlog 2026-10-08; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
-### 2.9 The agent's files are a commit of their own
+### 2.9 The agent's files
 
 A commit that touches them is kept apart from everything else
-(`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*), so
+(`docs/conventions/commit-messages/` §2.3, *The `agent` scope*), so
 a records commit planned to carry a skill's correction has to be
 split when it opens. *The same plan put two changes under
-`.claude/` inside its records step, and split it by revision.*
+`.claude/` inside its records Plan Step, and split it by revision.*
 
-### 2.10 The sweep, before the close and unwrapped
+### 2.10 The sweep
 
 A commit that renames a file, renumbers or retitles a section, or
 moves a fact greps for the old names in that commit
-(`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped…*). Before the close,
+(`docs/conventions/facts-in-sync/` §3.3, *The rename grep*). Before the close,
 the sweep looks again for every name the set moved, all at once: a
 commit's own grep looks for the names it meant to move, and misses
 the rest. It reads the text unwrapped. A grep matches line by
 line, and a manual wraps its prose, so a name broken across two
 lines is never found. *Its story: ADR-0049; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
-### 2.11 Small steps inside a planned commit, on the reviewer's grant
+### 2.11 Small commits
 
 Each planned commit landing as one leaves no room to try: two
 ways meant reworking a commit in place. Small commits give the
 room, and are folded into the planned commit before its boundary,
 so the reviewer still sees one commit there. The grant is the
 reviewer's because a small commit is still a commit, and the stop
-at every commit is commit-messages' rule (§2.13, *The stop at every boundary is…*);
+at every commit is commit-messages' rule (§2.13, *The stop at every boundary*);
 without the
 grant, every commit is a boundary. Each small commit is counted
 when it is written, as a planned subject is. *Its story: ADR-0050.*
 
-### 2.12 A look back before the close
+### 2.12 The look back
 
 Each boundary shows one commit; nothing showed the set. Looked at whole, two commits can turn out
 one change, or one two, and are regrouped on the reviewer's word.
-*Run 3's polish regrouped 36 small commits into 7, after the fact
+*CBC Run 3's polish regrouped 36 small commits into 7, after the fact
 (ADR-0050, 3).*
 
-### 2.13 The stop at every boundary is commit-messages' rule
+### 2.13 The stop at every boundary
 
 It is commit-messages' rule, and this convention points at it
 (`docs/conventions/commit-messages/` §2.4, *Commit on the word*). *Its story: ADR-0038; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*

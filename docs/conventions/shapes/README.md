@@ -58,7 +58,7 @@ written (`docs/conventions/agent-arrangement/` §5.6, *Rules files*); whether th
 TODO item "Decide whether our own forms become shapes". It holds the shapes it
 ships, each in the group of what it shapes (§4, *Where a shape lives, between…*), and reads a run's
 shapes when a line under its *To the deliverer* offers them
-(`docs/conventions/exchange/` §6.2, *A file the run wrote*).
+(`docs/conventions/exchange/` §6.2, *A file the CBC Run wrote*).
 
 ## 1. What a shape is
 
@@ -163,7 +163,7 @@ than being enforced on top of them.
 
 A shape travels as a copy, at birth and at every delivery, under the
 one pin that covers every delivered copy
-(`docs/conventions/exchange/` §2.2, *The run*). A run edits a delivered shape
+(`docs/conventions/exchange/` §2.2, *The CBC Run*). A run edits a delivered shape
 as it edits any copy, and offers its own as it offers any file it
 wrote.
 
@@ -172,7 +172,7 @@ wrote.
 Nothing is fetched (`docs/models/tiers.md` §3.5, *What holds on every flow*,
 fact 1): what arrives,
 arrives because it was staged with a delivery, by the reviewer or
-by the agent when told (`docs/conventions/exchange/` §3.1, *Staging*). Nothing is
+by the agent when told (`docs/conventions/exchange/` §3.1, *Delivery Staging*). Nothing is
 staged for a gate on its own. *Named in ADR-0037 as a third act of
 the exchange, and never built: run 3 looked in `temp/` at two
 closes and found nothing either time. With shapes in the delivery,
@@ -226,7 +226,7 @@ flowchart LR
 is the point.** The traffic model — nothing sent upward, nothing
 fetched, the deliverer reading a run and never the reverse — is the
 tiers model's (`docs/models/tiers.md` §3.5, *What holds on every flow*), and the reading is
-the exchange's (`docs/conventions/exchange/` §6, *Up*). What is this
+the exchange's (`docs/conventions/exchange/` §6, *Up from the CBC Run*). What is this
 convention's is
 where the reading looks: at `.claude/shapes/`, for the delivered
 copies against their pin and for the run's own shapes, when a

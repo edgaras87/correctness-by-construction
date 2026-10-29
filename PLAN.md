@@ -93,12 +93,12 @@ step that uses none has only its own items.
 - [ ] New and changed text reads to `.claude/rules/writing.md`.
 - [ ] Every commit on `<branch>` follows commit-messages.
 - [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*).
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
 - [ ] The step's lessons are folded back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How*).
+      §2.4, *How the entry file is written*).
 - [ ] Each approach on trial the step drafted or used has this
       use's dated note, and was handed over for evaluation
       (`.claude/approaches-on-trial/approach-drafting.md`, its close).
@@ -187,12 +187,12 @@ Gate:
 - [ ] Every commit on `run-6-birth-2026-10-29` follows
       commit-messages.
 - [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*).
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
 - [ ] The step's lessons are folded back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How*).
+      §2.4, *How the entry file is written*).
 - [ ] Each approach on trial the step drafted or used has this
       use's dated note, and was handed over for evaluation
       (`.claude/approaches-on-trial/approach-drafting.md`, its close).
@@ -233,7 +233,7 @@ Gate:
       settled in place, each with how; one that needed an ADR has
       it, Accepted.
 - [x] The exchange says how an edit the run never used is judged
-      (`docs/conventions/exchange/` §5.2, *A copy the run has finished…*),
+      (`docs/conventions/exchange/` §5.2, *A finished copy*),
       as DECISION-1 settled it. The opening named §6.5. §5.2 is where
       the exchange already speaks of such an edit, and the endings do
       not change (2026-10-29).
@@ -269,12 +269,12 @@ third own item, for this step's items only.
 - [ ] Every commit on `run-5-lessons-2026-10-29` follows
       commit-messages.
 - [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*).
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
 - [ ] The step's lessons are folded back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How*).
+      §2.4, *How the entry file is written*).
 - [ ] Each approach on trial the step drafted or used has this
       use's dated note, and was handed over for evaluation
       (`.claude/approaches-on-trial/approach-drafting.md`, its close).
@@ -370,12 +370,12 @@ Gate:
 - [ ] Every commit on `refinement-2026-10-18` follows
       commit-messages.
 - [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*).
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
 - [ ] The step's lessons are folded back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How*).
+      §2.4, *How the entry file is written*).
 
 Notes:
 - Opened 2026-10-18 from TODO's refinement item. The records map

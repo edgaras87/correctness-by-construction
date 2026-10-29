@@ -52,9 +52,9 @@ Record Stubs and templates for rules that ride in the files a project is
 born with. The Master Copies are real files in the Container Group,
 `delivery/container/`. Which copy of an artifact is the Master Copy, and
 how every other copy changes, is the Exchange Convention's
-(`docs/conventions/exchange/` §1, *What cannot change*, and §4, *The take*). The Concept Deliverer's own skills
+(`docs/conventions/exchange/` §1, *What cannot change*, and §4, *The Delivery Take*). The Concept Deliverer's own skills
 and Agent Rules are not copies: it writes its own
-(`docs/conventions/agent-arrangement/` §3.1, *`skills/`*).
+(`docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`*).
 
 The reader is an agent in a project, holding a pinned copy and
 opening it at the moment of use.
@@ -96,7 +96,7 @@ foundation: the <name> convention
 
 `foundation` says what the whole file stands on *now* — a live
 claim, never history — and a file has one
-(`docs/conventions/facts-in-sync/` §4, *The rule for every description*, step 2).
+(`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 2).
 
 Which files carry it, and where:
 
@@ -129,7 +129,7 @@ What it holds:
 The value carries the relation where it is not derivation. Concept
 chapters and Idea Models carry none; they are the top. That the line
 travels with a copy is the Exchange Convention's
-(`docs/conventions/exchange/` §3.5, *Every shipped skill, rule…*).
+(`docs/conventions/exchange/` §3.5, *The Foundation Line in a copy*).
 
 ### 1.4 Skill Stages
 
@@ -221,7 +221,7 @@ subject, and a subject has one section: other sections point at
 it, and do not tell it again. The facts-in-sync manual asks the same of a convention's subject across the manuals
 (`docs/conventions/facts-in-sync/` §2, *Point and derive*); this asks it inside
 one. When a section gets a number, and its parts too, is that manual's
-(`docs/conventions/facts-in-sync/` §3.2, *A section's parts are numbered*).
+(`docs/conventions/facts-in-sync/` §3.2, *Numbering a section's parts*).
 
 *Its story: devlog 2026-10-19; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
@@ -317,8 +317,8 @@ what a file stands on has to travel with the file.
 ## Where to look
 
 - The chain: `docs/conventions/README.md`.
-- The rule for every description: `docs/conventions/facts-in-sync/` §4, *The rule for every description*.
+- The rule for every description: `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*.
 - What `foundation` holds for each kind of file: §1.3, *The Foundation Line*, above; that
-  it travels with a copy, `docs/conventions/exchange/` §3.5, *Every shipped skill, rule…*.
+  it travels with a copy, `docs/conventions/exchange/` §3.5, *The Foundation Line in a copy*.
 - A convention whose artifact is an Agent Rule, not a skill:
   `docs/conventions/shapes/`.

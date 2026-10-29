@@ -15,7 +15,7 @@ fifteen of the first twenty commits of the repo it came from broke
 the limit — present, correct, unfollowed (`docs/models/agent.md`
 §12, *Claims*, A1) — which is why the rule is opened at the commit moment
 and not read once. Lived here since: 480 commits under it by
-2026-09-19, and run 3 held forty-four commits on the stop sentence
+2026-09-19, and CBC Run 3 held forty-four commits on the stop sentence
 alone with no gate.
 
 ## What this is made usable as
@@ -25,9 +25,9 @@ alone with no gate.
   and opened before writing a commit message. The format, the type
   table, the `agent` scope, the stop, with the decisions it rests
   on in its footer.
-- **`.claude/skills/commit-messages/SKILL.md` — the deliverer's**,
+- **`.claude/skills/commit-messages/SKILL.md` — the Concept Deliverer's**,
   derived from this page like the container's, neither copied from
-  the other, and written for this seat (ADR-0042, ADR-0069).
+  the other, and written for this Convention Seat (ADR-0042, ADR-0069).
 
 This page explains; the skill states. What derives from this page
 is that list. A change here walks it; a change forced in one of
@@ -35,11 +35,11 @@ them is checked back against this page.
 
 ## The seats
 
-A run commits under the skill. The deliverer commits under the
+A CBC Run commits under the skill. The Concept Deliverer commits under the
 same skill, and has one local habit — which scope carries the
-signal — stated in its own section, and not shipped (§3, *The deliverer's habit*).
+signal — stated in its own section, and not shipped (§3, *The Concept Deliverer's habit*).
 
-## 1. What it is
+## 1. What a commit message is
 
 A subject line that says what, a body that says why, footers that
 link the trail. The subject is typed, `feat`, `fix`, `docs` and so
@@ -52,22 +52,22 @@ change too small to deserve a real one.
 
 ## 2. Why it is shaped this way
 
-### 2.1 Conventional Commits, not just 50/72
+### 2.1 Conventional Commits
 
-The type prefix carries
+Conventional Commits, not just 50/72. The type prefix carries
 information a plain subject does not, and it is enforceable later
 by a commitlint hook (ADR-0038, 1a).
 
-### 2.2 Either mood, in the present tense
+### 2.2 Mood and tense
 
-A subject says what the
+Either mood, in the present tense. A subject says what the
 commit changes; a change to the work reads naturally as a
 command, a record as what became true, and both read well in the
 log. *Its story: ADR-0049.*
 
-### 2.3 The agent's files never share a commit with the project's
+### 2.3 The `agent` scope
 
-A project that works with an agent has two histories in one repo:
+The agent's files never share a commit with the project's. A project that works with an agent has two histories in one repo:
 the work, and the arrangement that made an agent do the work a
 particular way. They stay separable, for a filtered log or a
 portfolio copy that drops the arrangement, only if no commit ever
@@ -83,12 +83,12 @@ committing, so the agent stages, shows the diff, and waits. The
 rule is text, in the skill, and gated nowhere (ADR-0038, 1f).
 *Its story: devlog 2026-09-10, later; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
-## 3. The deliverer's habit
+## 3. The Concept Deliverer's habit
 
-The deliverer's product is documents, so `docs` could swallow
+The Concept Deliverer's product is documents, so `docs` could swallow
 everything. One answer is to make the type carry the signal —
 `feat(<convention>)` for the product, `docs` for the records.
-**The deliverer did not take it**, and the practice that grew
+**The Concept Deliverer did not take it**, and the practice that grew
 instead is worth stating rather than leaving to be inferred from
 the log:
 
@@ -96,9 +96,9 @@ the log:
 - `docs(<area>)` where one area is the whole commit: `temp` for a
   draft or the refinement's file, `agent` for the agent's records
   such as a commit plan, `adr` for an ADR.
-- `chore(agent)` for the deliverer's own skills, rules and
-  approaches.
-- `feat`/`fix` where something a run would notice was gained or
+- `chore(agent)` for the Concept Deliverer's own skills, Agent Rules and
+  Approaches on Trial.
+- `feat`/`fix` where something a CBC Run would notice was gained or
   lost: `fix(delivery)` most often, `fix(concept)` and
   `fix(agent)` rarely.
 
@@ -107,7 +107,7 @@ given, carries the signal here, which is the mirror of the other
 answer, not a weaker version of it. Either works; what does not work
 is following neither and discovering the shape afterwards. *Its story: devlog 2026-09-19, after the close; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
-This section is the deliverer's and does not ship.
+This section is the Concept Deliverer's and does not ship.
 
 ## Why it arrives this way
 

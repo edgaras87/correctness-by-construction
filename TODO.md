@@ -172,7 +172,7 @@
         agent's memory, unseen by any reader of the repo. Its
         failure is not noticing the moment, a rebase: a local rule
         for our `CLAUDE.md` (`docs/conventions/agent-arrangement/`
-        §2.4, *How*)?
+        §2.4, *How the entry file is written*)?
       Trigger: run 5's reading, with the lines gathered by then.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, *How work is run by agents*; `.claude/decisions.md`, 2026-10-22, the account skills.
@@ -243,11 +243,11 @@
       and its rules and skills as the convention. "Concept" already
       names the CbC concept and the tiers model's concepts tier.
       Facts-in-sync calls both a description
-      (`docs/conventions/facts-in-sync/` §4, *The rule for every description*).
+      (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
       Ideas:
       - a manual is a concept; its rules and skills, the convention.
       - "description" stays the general word, as facts-in-sync has it
-        (`docs/conventions/facts-in-sync/` §4, *The rule for every description*).
+        (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
       Trigger: a second concept repo, when what a concept is gets
                decided (`docs/models/idea-to-output.md` §5, *A model and a concept*).
       See: devlog 2026-10-19, the redesign's ideas.
@@ -370,7 +370,7 @@
         to new, grepped and replaced in the same rewrite.
       - regroup only on the branch, before main takes it.
       Trigger: the refinement of this repo closes; its rounds read `commit-plan` and the fact reference's form
-        (`docs/conventions/facts-in-sync/` §3, *The fact reference*).
+        (`docs/conventions/facts-in-sync/` §3, *The Fact Reference*).
       See: devlog 2026-10-19, regrouping.
 
 - [ ] Make the conventions index a full local map (2026-09-30, the
@@ -383,12 +383,12 @@
       Ideas:
       - all twelve and how each touches the others, derived from those references, built by `visual-comparison`.
       - three links, each with its upkeep: derives
-        (`docs/conventions/facts-in-sync/` §4, *The rule for every description*, the foundation
+        (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, the foundation
         check), points (one home, the grep at a commit that moves a
         section, a step's close), governs
         (none: a change to a rule that governs other text could
         sweep that text or file the sweep, a rule beside
-        `docs/conventions/facts-in-sync/` §4, *The rule for every description*).
+        `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
       - scenarios as entries into one procedure, the foundation
         check: a manual, a skill or rule, a run's finding. Two
         exits it lacks: the governs sweep, and what must run again
@@ -572,9 +572,9 @@
       Context: our shipped `.claude/rules/shapes-lifecycle.md` sat
       at run 3's own rule's path, so the take landed ours over the
       run's. Two checks in the exchange miss it: one checks only that no path
-      is claimed by two of our groups (`docs/conventions/exchange/` §3.4, *Every shipped file is…*);
+      is claimed by two of our groups (`docs/conventions/exchange/` §3.4, *One group per file*);
       the take's diff sees that a file differs, not whose it is
-      (`docs/conventions/exchange/` §4, *The take*).
+      (`docs/conventions/exchange/` §4, *The Delivery Take*).
       Once so far; checked by hand at `e6538f6`: no staged path was new.
       The method's four shapes sit at run 3's own `.claude/shapes/`
       paths (ADR-0052); the next birth is where they first land.
@@ -696,7 +696,7 @@
       - one kind per agent; other kinds may share the read, each
         with its own agent.
       - it reads against the reference's form
-        (`docs/conventions/facts-in-sync/` §3.1, *What it is*) once the settled form is
+        (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*) once the settled form is
         written there.
       - a second kind for the same read: direction (ADR-0071). A
         line in a model or a manual that relies on a lower text is
@@ -749,12 +749,12 @@
       their own words, and drifted: deviate from a skill's template,
       derive from what it implements, log it, expect a harvest,
       never bend a decided constraint to fit it. On 2026-10-28 it went to the exchange
-      (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*) and the run's `delivered-copies.md`, chosen on
+      (`docs/conventions/exchange/` §5.8, *Filling a Skill Template*) and the run's `delivered-copies.md`, chosen on
       one reading, with no run having lived it.
       Ideas:
       - (a) one skill states it; the others point.
       - (b) delivered copies: the exchange
-        (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*) and the run's
+        (`docs/conventions/exchange/` §5.8, *Filling a Skill Template*) and the run's
         `delivered-copies.md`; today's choice.
       - (c) each skill's template states it in its own header,
         where a run meets the choice.
@@ -762,7 +762,7 @@
       - weigh each by maintenance, readability, future-proofing and
         complexity.
       - check that every manual and shipped text that speaks of a
-        skill's templates agrees with the exchange (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*) and
+        skill's templates agrees with the exchange (`docs/conventions/exchange/` §5.8, *Filling a Skill Template*) and
         `delivered-copies.md`,
         and that `delivery/README.md` and ADR-0008 still match.
       - check that each use says whose template it is: a skill's,
@@ -790,7 +790,7 @@
         glossary lists; a hand chooses each title and each bare use's
         Name or English; the script replaces the references; the
         rename grep runs at each commit
-        (`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped…*).
+        (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
       - one rewritten paragraph is shown to the reviewer before the
         pass runs, so the capitals are judged on prose first.
       - the record sections keep their pattern across records: *What
@@ -799,7 +799,7 @@
       - a gloss moves into the body's first line; ARCHITECTURE.md's
         six area titles keep their paths there.
       - the stack references' "§1 ·" numbering becomes `N.M`
-        (`docs/conventions/facts-in-sync/` §3.2, *A section's parts are numbered*).
+        (`docs/conventions/facts-in-sync/` §3.2, *Numbering a section's parts*).
       - the script counts headings, references and code fences
         before and after, and changes nothing on a second run
         (writing rule 11, ADR-0077).
@@ -951,7 +951,7 @@
       into a chapter's section today. The chapters are the canonical
       text every run holds a copy of, so numbering them would change
       every copy for no reader yet
-      (`docs/conventions/facts-in-sync/` §3.2, *A section's parts are numbered* numbers by form).
+      (`docs/conventions/facts-in-sync/` §3.2, *Numbering a section's parts* numbers by form).
       Trigger: the first fact reference that needs a section of a
                chapter.
       See: devlog 2026-09-30, numbered parts.
@@ -1044,9 +1044,9 @@
       its pin had no verdict until the reading of 2026-09-30 read it
       again — three edits to copies, ten asks and offers.
       The exchange closes an overtaken reading
-      (`docs/conventions/exchange/` §6.4, *A reading closes two ways*)
+      (`docs/conventions/exchange/` §6.4, *How a Run Reading closes*)
       "the same way", one pass over its items, and is silent on the note every read ends with
-      (`docs/conventions/exchange/` §6.6, *Every read ends with a note*). Once so far.
+      (`docs/conventions/exchange/` §6.6, *The Delivery Note after a read*). Once so far.
       Ideas: the overtaken reading sends a note: read, asks open.
              the next read goes back to the last note's read-through.
       Trigger: the next reading overtaken.
@@ -1178,7 +1178,7 @@
       Context: a run takes a delivery under the `delivered-copies.md`
       it holds, so a delivery that changes that rule is taken under
       the old one. The rule cannot travel alone: one pin covers every
-      copy (`docs/conventions/exchange/` §2.2, *The run*). Run 3's copy lacked
+      copy (`docs/conventions/exchange/` §2.2, *The CBC Run*). Run 3's copy lacked
       `4de6ba2`'s shapes; no files went, so it never acted.
       Ideas: the note's "why it matters" names a change to the rule
              first, so the run takes it knowingly.
