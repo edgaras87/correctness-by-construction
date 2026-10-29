@@ -1,11 +1,3 @@
-<!-- The commit plan for lesson stories, agreed 2026-10-28 and
-     opened as ed876b0. Parked 2026-10-29, before its first commit:
-     run 5's lessons that run 6 needs go first. It returns as
-     COMMIT-PLAN.md when the refinement resumes, before round 3's
-     rule check. Its counts are taken again then, and its ADR gets
-     the next free number. TODO's item on the story behind a lesson
-     names this file. -->
-
 # Commit plan: the story behind a lesson
 
 ## Summary — the state after all commits
@@ -25,9 +17,10 @@ story behind a lesson" is worked, and leaves TODO. Decided
 3. **Now, before round 3's rule check,** so round 3 reads the
    manuals in the shape they keep.
 
-Measured 2026-10-28: 70 dated notes, about 290 lines, in the 12
-manuals (7% of them) and one model. About 50 are told already in an
-ADR or the devlog; about 20 are not.
+Measured 2026-10-28, and again 2026-10-29 when the plan returned:
+72 dated notes, about 310 lines, in the 12 manuals (8% of them) and
+one model. About 50 are told already in an ADR or the devlog; about
+21 are not.
 
 Out of scope, by design:
 - a manual's *What it is for*, whose evidence the need asks for
@@ -40,9 +33,10 @@ Lessons kind asked.
 ## Commits
 
 **0. `docs(agent): add commit plan for lesson stories`**
-Opens the set.
+Opens the set: first as `ed876b0`, parked as `b6d9e79` before any
+work, and opened again after run 6's birth.
 
-**1. `docs: ADR-<n> a lesson's story lives in history`**
+**1. `docs: ADR-0073 a lesson's story lives in history`**
 Proposed. The three decisions, and what each rejected.
 
 **2. `docs: the lesson rule points at its story`**
@@ -58,7 +52,7 @@ and its *Not known yet*, where a model's dated note becomes the same
 one line.
 
 **4. `docs: devlog keeps the lessons' own stories`**
-One entry, dated 2026-10-28, holding the ~20 notes told nowhere else,
+One entry, dated the day it is written, holding the ~21 notes told nowhere else,
 word for word, each under its manual and section. Written before the
 manuals move, so each pointer lands.
 
@@ -69,17 +63,17 @@ manuals move, so each pointer lands.
 Conventions and facts-in-sync: 17 notes.
 
 **7. `docs: records' manuals point at their stories`**
-Project-recording and agent-arrangement: 14 notes.
+Project-recording and agent-arrangement: 15 notes.
 
 **8. `docs: the other lessons point at stories`**
 Commit-messages, commit-plan, shapes, retrospective, repo-hygiene,
-visual-comparison, writing, and the tiers model: 23 notes.
+visual-comparison, writing, and the tiers model: 24 notes.
 
 In each of 5 to 8, every note is read beside its candidate home
 first; its line names the exact entry; a live claim moves into the
 body; the section is read again for the safeguard.
 
-**9. `docs: ADR-<n> accepted, the story item worked`**
+**9. `docs: ADR-0073 accepted, the story item worked`**
 The TODO item leaves, and conversation-memory §18 goes with it.
 
 **10. `docs(agent): close commit plan for lesson stories`**
@@ -96,7 +90,7 @@ that then disagrees gets a lettered commit after it.
   each. It stays in italics, set apart from the rule, as the note
   was.
 - **The orphans' entry first,** so no line points at nothing. Its
-  heading names what it is: "2026-10-28, the lessons' own stories".
+  heading names what it is: "<its date>, the lessons' own stories".
 - **A note an ADR tells only in part** points at the ADR, and what
   the ADR leaves out goes, word for word, into the orphans' entry.
 - **Examples are not decided here.** The safeguard adds one only

@@ -703,8 +703,7 @@
       Trigger: round 2 of the refinement closes, before round 3's
                rule check.
       See: devlog 2026-10-25, evening; `TODO-CONVERSATION-MEMORY.md`
-      §18, *The story behind a lesson*; the parked plan,
-      `temp/lesson-stories-plan.md` (devlog 2026-10-29).
+      §18, *The story behind a lesson*.
 
 - [ ] Decide what "rule" names, and give the agent's rule files a
       name of their own (2026-10-25, the reviewer).
