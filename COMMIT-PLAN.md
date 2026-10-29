@@ -70,6 +70,10 @@ visual-comparison, repo-hygiene and `docs/conventions/README.md`.
 Layer 3, third part: the three models, the five concept chapters and
 the glossary, whose references to retitled sections are fixed as
 each docs commit retitles, so it is read last for its own words.
+Revised 2026-10-29, at 5: the glossary gains three Names for things
+found defined without one, Delivery Fill, Run Ask and Foundation
+Check, and the lines in layers 1 to 3 that carry the bare words take
+them in this commit.
 
 **8. `docs: the root records, Names and labels`**
 Layer 4: `ARCHITECTURE.md`, whose six area titles keep their paths;
@@ -177,6 +181,12 @@ The entry for the set, with the session-end lines.
   "`PLAN.md`'s step form"; Output Form is the kind. Verbs stay
   English: "a change here walks it". "Rule" is an Agent Rule only
   where it means a file under `.claude/rules/`.
+- **A thing found defined without a Name gets one in the pass**
+  (revision of 2026-10-29, after commit 5). The hand meets them while
+  reading: fill, hand-off and the foundation check in the exchange
+  and facts-in-sync manuals. The reviewer names each at the boundary
+  where it is found; the glossary takes it in commit 7, and the sweep
+  at the close greps every layer for the bare word.
 - **No commit is provisional.** The layers and their files are known;
   a file that turns out to need no change still counts as read, and
   the commit body says so.
