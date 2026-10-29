@@ -187,6 +187,17 @@ The entry for the set, with the session-end lines.
   and facts-in-sync manuals. The reviewer names each at the boundary
   where it is found; the glossary takes it in commit 7, and the sweep
   at the close greps every layer for the bare word.
+- **The models speak in Names, the concept keeps its words**
+  (revision of 2026-10-30, after commit 7). The Tiers Model's
+  generic repos took Concept Repo, Run Repo and Concept Garden, CBC
+  Run and Concept Deliverer staying this repo's instances; the
+  Idea-to-Output Model's kinds take their Names, output staying
+  English; the Agent Model's channel names stay italic labels. The
+  five concept chapters leave the pass untouched: their words are the
+  method's, their headings unnumbered, and renaming them would be a
+  concept edit. A particular model is the Agent Model or the Tiers
+  Model, as the glossary already said, and a particular form the Plan
+  Step Form.
 - **No commit is provisional.** The layers and their files are known;
   a file that turns out to need no change still counts as read, and
   the commit body says so.
