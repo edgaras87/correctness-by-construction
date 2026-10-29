@@ -19,7 +19,8 @@ retitle item becomes the plan for the words-and-titles pass, which
 runs before round 3 reads: about 800 lines take their subject and
 about 230 titles become labels, by layer. ADR-0076 and ADR-0077 are
 Accepted; ADR-0074's decisions 2 and 8 are changed in part by the
-first, with no accepted ADR edited.
+first, with no accepted ADR edited. One TODO item is added: the
+history told inline in six living texts, due in the same pass.
 
 ## Commits
 
@@ -51,6 +52,13 @@ tag and run, each sense with its subject and its home's address; the
 entries for rule, shape, form, template and stub gain the named
 senses in use. One commit: the sentences and the entries are one
 rule as it now reads.
+
+**5d. `docs: TODO, history told inline in six texts`** ✓ 36cb881
+Inserted on 2026-10-29, before 5b landed. A sentence in rule 9's why
+told the repo's history where the manual form says a lesson stands
+in general and points at its story. A scan of all living text for
+the same slip found six places, none in 5b; one TODO item names
+them, due in the pass that takes words and titles by layer.
 
 **5b. `docs: a defined thing has a Name of two words`**
 Inserted on 2026-10-29, after commit 5 landed. The reviewer saw that
