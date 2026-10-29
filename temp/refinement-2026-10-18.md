@@ -1015,11 +1015,56 @@ The 72 stays commit-messages' alone. ADR-0077. Not taken: a width
 shown as a guide in `.editorconfig`, or a change about as long as
 what it replaces.
 
-The fixes land before round 3 reads, under the commit plan for
-round 3's rule check: rule 9's two sentences; the glossary's
-entries for step, stage, take, model, log, tag and run, and the
-named senses the listed entries gain; rule 11; both `writing.md`. How each ended is written below
-when the plan closes.
+The fixes landed before round 3 reads, under the commit plan for
+round 3's rule check, 2026-10-29. How each doubt ended:
+
+- **Doubt 1, rule 9:** in doubt, fixed twice. The catalogue above
+  landed first (`fc00f67`): seven words with a prefix, every sense
+  listed. At its boundary the reviewer read "staging" and saw that
+  the problem was not words but about thirty defined things, each
+  hung on one English word, so a reader decided at every use which
+  was meant. Rule 9 is now one sentence: every defined thing has a
+  Glossary Name of two or more words, owner or kind first, each word
+  capitalized; a lowercase word is English (`ec1f048`). The table's
+  *Taken* column is replaced: CBC Run, Plan Step, Skill Stage and
+  Approach Stage, Delivery Staging, Idea Model, Delivery Take,
+  Decisions Log, Repo Tag, Master Copy; "fill" the noun went; skill
+  is not a thing of ours. The glossary is the list of 41 Names, each
+  pointing at its home; the two kinds of entry, the first-kind
+  clause, the move rule and the catalogue went with it. Our
+  `writing.md` (`cb4dc61`), the container's and the glossary Skill
+  Template in `cbc-framing` (`3e4a7f5`) follow. ADR-0076 was
+  rewritten whole while Proposed (`5a9e6ac`) and is Accepted
+  (`c65d04e`); it changes six of ADR-0074's decisions in part.
+- **Doubt 2, rule 10:** not in doubt. The rule gained one clause, a
+  Glossary Name inside a title keeps its capitals (`ec1f048`); the
+  thirteen labels wait for the pass.
+- **Doubt 3, an edit's shape:** in doubt, fixed. Rule 11 is in the
+  manual with its why (`de3f171`) and in both `writing.md`; ADR-0077
+  is Accepted (`c65d04e`).
+
+The verdict on rule 9, kept:
+
+1. **Maintenance:** one sentence and no list of words to keep. A
+   Name is given at the commit that first uses the thing, by one
+   question: does the text give the word a meaning English does not.
+2. **Readability:** the capitals say a word is defined before it is
+   read, as a contract's "the Deliverer" does; two words say what the
+   thing is and whose.
+3. **Future-proofing:** a new thing gets a Name and nothing else
+   changes; no collision reopens the rule, since a lowercase word is
+   never ours.
+4. **Complexity:** the glossary lost its two kinds, its clause, its
+   move rule and the catalogue. The cost is the pass: about 3,000
+   lines, 964 of them "run", taken before round 3 reads so that the
+   read lists only what the pass missed.
+
+Searched again at the plan's close: no TODO item doubts the rule.
+Two are due now, before round 3 reads, and ride in one commit plan:
+the pass that gives old text its Names and its titles their labels,
+and the history told inline in six living texts, found when rule 9's
+why was first written as a story. The two items due at the close
+stand, the round's reading their evidence.
 
 ### Files by layer (§2.2)
 
