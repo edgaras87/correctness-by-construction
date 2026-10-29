@@ -55,7 +55,7 @@ have gates (ADR-0057). Two of its own forms, a Run Reading's and a
 manual's, are Agent Rules today, with a
 Governs line, loaded when the file is read, not while a new one is
 written (`docs/conventions/agent-arrangement/` §5.6, *Rules files*); whether they become Output Shapes read at a Plan Step's gate is the
-TODO item "Decide whether our own forms become shapes". It holds the Output Shapes it
+TODO item "Decide whether our own forms become Output Shapes". It holds the Output Shapes it
 ships, each in the group of what it shapes (§4, *An Output Shape between repos*), and reads a CBC Run's
 Output Shapes when a line under its *To the deliverer* offers them
 (`docs/conventions/exchange/` §6.2, *A file the CBC Run wrote*).

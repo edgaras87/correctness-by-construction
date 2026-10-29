@@ -270,7 +270,7 @@ in the CBC Run and a Delivery Note is read once (ADR-0020).
 
 A Delivery Note that names a third repository gives both names: ours, by
 ordinal, and the one it gave itself at its Identity Plan Step. A CBC Run's
-records do not say which is which; ours do (`ARCHITECTURE.md` §2.5, *The runs*).
+records do not say which is which; ours do (`ARCHITECTURE.md` §2.5, *The CBC Runs*).
 
 *Its story: devlog 2026-09-20.*
 

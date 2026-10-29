@@ -119,7 +119,7 @@ its thing. A CBC Run keeps a glossary of its own.
   the record itself, its header comment, the Plan Step Form, a Record
   Stub's headings. A Convention Manual's and a Run Reading's are
   Agent Rules today; whether they become Output Shapes is TODO's
-  "Decide whether our own forms become shapes".
+  "Decide whether our own forms become Output Shapes".
 - **Output Shape** — a presumed output, written from outputs that
   exist, and read only at the gate to check what was made
   (`docs/models/idea-to-output.md` §2, *The kinds*;

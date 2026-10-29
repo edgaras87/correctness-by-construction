@@ -76,7 +76,7 @@ concept, not a release (ADR-0003).
 And its `PLAN.md` holds one Plan Step being worked: the piece of work
 being done now, and below it any Plan Step stopped for it.
 What makes work a Plan Step, and the Plan Step Form, the CBC Run's adapted to
-this Convention Seat, are under `## The step form` at the top of the
+this Convention Seat, are under `## The Plan Step Form` at the top of the
 Concept Deliverer's own `PLAN.md` (ADR-0057). A CBC Run keeps its finished
 Plan Steps in its plan, each closed to one line, because they are the
 evidence its playbook is folded from; no playbook is folded from
@@ -654,7 +654,7 @@ has four acts, each with its how where its doer reads it:
    against it, filling specifics, deleting what it has no use for,
    adding what it needs, renumbering; born without a playbook, it
    authors them. No skill or Plan Step asks this of a CBC Run yet: the TODO
-   item "Read run 4 against `dac4dd1`" asks whether CBC Run 4 did it.
+   item "Read CBC Run 4 against `dac4dd1`" asks whether CBC Run 4 did it.
 3. **Before Release:** the retrospective writes `RETRO.md`, each
    decision naming where its lesson lands
    (`docs/conventions/retrospective/`).

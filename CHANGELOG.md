@@ -1,25 +1,25 @@
 # Changelog
 
 The concept-version log: each released entry is one concept version —
-what changed in the mental layer and why, with run provenance when the
-change was harvested, and which executions were reviewed or re-derived.
+what changed in the concept and why, with CBC Run provenance when the
+change was a Record Harvest, and which skills were reviewed or re-derived.
 Format: [Keep a Changelog](https://keepachangelog.com/) · Versions are
 concept versions — whole numbers, not SemVer (ADR-0003).
 
-<!-- Write entries WHEN the change lands, for the pinners: run repos
-     and executions citing a concept version. A version bump = a change
-     that could invalidate a derived execution; editorial fixes ride
+<!-- Write entries WHEN the change lands, for the pinners: CBC Runs
+     and skills citing a concept version. A version bump = a change
+     that could invalidate a derived skill; editorial fixes ride
      with the next version (ADR-0003). Categories:
      Added · Changed · Removed · Fixed.
      Releasing = rename [Unreleased] to [vN] - date, open a fresh one.
      [Unreleased] is the net change since the last release: a later
      change that undoes or reshapes an entry in it edits that entry,
-     never adds a second. An entry is the concept, or an execution
+     never adds a second. An entry is the concept, or a skill
      derived from it or checked against it; a convention's change,
      or the delivery's, is none — a manual has no version
      (ADR-0039).
      Why the form is as it is: (docs/conventions/project-recording/
-     §6.4, How).
+     §6.4, How the changelog is written).
      foundation: the project-recording convention -->
 
 ## [Unreleased]

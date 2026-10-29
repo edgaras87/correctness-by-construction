@@ -163,7 +163,7 @@ to (§2.9, *Where to look*). It fixes where a reader
 finds each section, not a manual's length, its tone, or how many
 sections its body has. Whether a section is needed is each
 manual's to decide. Whether the form becomes an Output Shape is the TODO
-item "Decide whether our own forms become shapes".
+item "Decide whether our own forms become Output Shapes".
 
 The form grows from what manuals already hold. The list is the
 floor, and content that fits none of it takes its own heading in

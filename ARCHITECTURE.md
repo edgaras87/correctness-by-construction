@@ -3,32 +3,32 @@
 <!-- This repo AS IT IS NOW: what is tied to what, so that changing
      one part shows what else moves. How a part came to be is the
      ADRs' and the devlog's; this page points there and does not
-     retell it. The deliverer's map
-     (docs/conventions/project-recording/, its deliverer's seat;
+     retell it. The Concept Deliverer's map
+     (docs/conventions/project-recording/, The Concept Deliverer's seat;
      ADR-0044, ADR-0068): about two pages, owning the pairing, the
-     table of runs, how each rule is held and the codemap, and
+     table of CBC Runs, how each rule is held and the codemap, and
      pointing at the home of everything else.
 
      Written under one rule: state only what is checkable in this
-     repo and in the live run, and mark anything merely intended as
+     repo and in the live CBC Run, and mark anything merely intended as
      intended. A line found wrong, or two that contradict, and not
      fixed at once, is a TODO known issue until it is.
      Why the form is as it is: (docs/conventions/project-recording/
-     §8.4, How).
+     §8.4, How the map is written).
      foundation: the project-recording convention -->
 
 ## Overview
 
 **This repo states a concept and its conventions, ships each made
-usable to runs, and reads back what the runs learn.**
+usable to CBC Runs, and reads back what the CBC Runs learn.**
 
 Two bodies of writing are stated here and never ship: the concept,
 `concept/`, and the conventions, `docs/conventions/`, under the
 models in `docs/models/`. Each is made usable as something that
 does ship: the concept as the method, the conventions as the
-container (§1, *What is stated here*). A run is born from that delivery, takes newer copies
-at each pin, and is read back here; what it learned changes our
-masters (§2, *The delivery, and the runs it…*). A few rules must hold across all of it (§3, *What must stay true*), and the
+container (§1, *What is stated here*). A CBC Run is born from that delivery, takes newer copies
+at each Delivery Pin, and is read back here; what it learned changes our
+masters (§2, *The delivery and the CBC Runs*). A few rules must hold across all of it (§3, *What must stay true*), and the
 codemap says where each thing lives (§4, *Codemap*). What this repo is for, and
 how to use it, is `README.md`.
 
@@ -51,7 +51,7 @@ how to use it, is `README.md`.
 
 Where each group lands, and which files are copies, is the delivery map's
 (`delivery/README.md` §1, *The groups are pieces…*, and §2, *Three ways a file lands*);
-the cycle of pins and readings is the exchange's
+the cycle of Delivery Pins and Run Readings is the Exchange Convention's
 (`docs/conventions/exchange/` §2.5, *One cycle, drawn*).
 
 ---
@@ -60,33 +60,33 @@ the cycle of pins and readings is the exchange's
 
 Two bodies of writing, neither of which ships. Each has something
 in the delivery that is it *made usable*, and the pairing is the
-spine of this repo. The models ship nothing either:
+spine of this repo. The Idea Models ship nothing either:
 
 | stated | made usable |
 |---|---|
-| the concept (§1.1, *The concept — `concept/`*) | the method (§2.1, *The method…*) |
-| the conventions (§1.2, *The conventions…*) | the container (§2.3, *The container…*) |
-| the models (§1.3, *The models — `docs/models/`*) | nothing: a manual may stand on one |
+| the concept (§1.1, *The concept — `concept/`*) | the Method Group (§2.1, *The Method Group…*) |
+| the conventions (§1.2, *The conventions…*) | the Container Group (§2.3, *The Container Group…*) |
+| the Idea Models (§1.3, *The Idea Models — `docs/models/`*) | nothing: a manual may stand on one |
 
 ### 1.1 The concept — `concept/`
 
 Five chapters, `concept/00-cbc.md` first.
 
-- **Canonical here.** Every copy elsewhere, a run's `docs/concept/`,
-  is a copy; what a run may do to it is the exchange's
+- **Canonical here.** Every copy elsewhere, a CBC Run's `docs/concept/`,
+  is a copy; what a CBC Run may do to it is the Exchange Convention's
 (`docs/conventions/exchange/` §5.6, *Editing a chapter*). The concept changes only here.
 - **Versioned as a whole**, not per chapter. It is at **v1**, and
   CHANGELOG's [Unreleased] holds a change that makes the next
   release v2 (ADR-0048). When its version moves is `CHANGELOG.md`'s
   standing comment.
 - **It demands nothing by itself.** A chapter cannot be run; the
-  method can (§2.1, *The method…*).
+  method can (§2.1, *The Method Group…*).
 
 ### 1.2 The conventions — `docs/conventions/`
 
 How work is done here, and why each rule is as it is. None of it is
 CbC: the concept is about how a system is built, the conventions
-about how a repo is kept. What a convention is, and its two parts, is the model's
+about how a repo is kept. What a convention is, and its two parts, is the Idea Model's
 (`docs/models/idea-to-output.md` §6, *A convention*); how they hand work to each
 other is the index, `docs/conventions/README.md`.
 
@@ -98,7 +98,7 @@ other is the index, `docs/conventions/README.md`.
   `docs/conventions/commit-plan/`.
 - **conventions** — how a way of working is written down and made
   usable: `docs/conventions/conventions/`.
-- **exchange** — what passes between a deliverer and a run:
+- **exchange** — what passes between a Concept Deliverer and a CBC Run:
   `docs/conventions/exchange/`.
 - **facts-in-sync** — how each fact keeps one home, and what relies
   on it agrees: `docs/conventions/facts-in-sync/`.
@@ -106,7 +106,7 @@ other is the index, `docs/conventions/README.md`.
   `docs/conventions/project-recording/`.
 - **repo-hygiene** — the three files every repo carries:
   `docs/conventions/repo-hygiene/`.
-- **retrospective** — how a finished run looks back:
+- **retrospective** — how a finished CBC Run looks back:
   `docs/conventions/retrospective/`.
 - **shapes** — what a kind of output looks like:
   `docs/conventions/shapes/`.
@@ -114,73 +114,73 @@ other is the index, `docs/conventions/README.md`.
   chosen: `docs/conventions/visual-comparison/`.
 - **writing** — how a text reads: `docs/conventions/writing/`.
 
-### 1.3 The models — `docs/models/`
+### 1.3 The Idea Models — `docs/models/`
 
 Ideas any repo can adapt, their rules varying by repo
 (`docs/models/idea-to-output.md` §2, *The kinds*): the agent, the tiers, and idea
 to output. A manual that stands on one names it in its `foundation`
 line.
 
-## 2. The delivery, and the runs it reaches
+## 2. The delivery and the CBC Runs
 
-What ships, by group. How each group lands in a run is the
-delivery's local map, `delivery/README.md`. The concept's list of what derives from it is the method, the stack
-practice and the playbook (§2.1, *The method…*, §2.2, *The stack practice…* and §2.4, *What does not travel…*); the
+What ships, by group. How each group lands in a CBC Run is the
+delivery's Local Map, `delivery/README.md`. The concept's list of what derives from it is the method, the stack
+practice and the playbook (§2.1, *The Method Group…*, §2.2, *The Stack Group…* and §2.4, *What does not travel…*); the
 chapters carry none (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 1).
 
-### 2.1 The method — `delivery/method/`
+### 2.1 The Method Group — `delivery/method/`
 
 The concept made usable: `cbc-framing` and `cbc-slice`, under
-`.claude/skills/`, and the shapes their gates read, under
+`.claude/skills/`, and the Output Shapes their gates read, under
 `.claude/shapes/`. Each skill is derived from the concept, as its
-`foundation` line says (`docs/conventions/conventions/` §1.3, *The Foundation Line*).
+Foundation Line says (`docs/conventions/conventions/` §1.3, *The Foundation Line*).
 
-### 2.2 The stack practice — `delivery/spring-postgres/`
+### 2.2 The Stack Group — `delivery/spring-postgres/`
 
 What one real Spring and Postgres project taught: `infra-establish`,
 `infra-serve` and `cbc-bootstrap`. Not derived from the concept but
-checked against it, as their `foundation` lines say
+checked against it, as their Foundation Lines say
 (`docs/conventions/conventions/` §1.3, *The Foundation Line*). A run on
 another stack takes no `spring-postgres/`; another stack's practice
 would be a group beside this one (ADR-0029).
 
-### 2.3 The container — `delivery/container/`
+### 2.3 The Container Group — `delivery/container/`
 
-The conventions made usable: the record stubs, the entry file, the
-decisions log, the convention skills and rules, an approach on
+The conventions made usable: the Record Stubs, the entry file, the
+Decisions Log, the convention skills and Agent Rules, a Work Approach on
 trial, the hygiene files, and `temp/README.md`. Which convention a
-file belongs to is its `foundation` line. A project with no
+file belongs to is its Foundation Line. A project with no
 correctness-by-construction in it would still want most of this,
 which is why it is a group of its own.
 
 ### 2.4 What does not travel — `installs/`, `fills/`, `README.md`
 
-- **`installs/`** — how a run is seeded,
-  `delivery/installs/pure-seed.md`. A run never sees it.
-- **`fills/`** — text written into a newborn's own files: the
-  playbook's steps, into its `PLAN.md`. The playbook,
+- **`installs/`** — how a CBC Run is seeded,
+  `delivery/installs/pure-seed.md`. A CBC Run never sees it.
+- **`fills/`** — the Delivery Fills, text written into a Newborn Run's own files: the
+  playbook's Plan Steps, into its `PLAN.md`. The playbook,
   `delivery/fills/cbc-run-pure-playbook.md`, is checked against
   concept v1.
-- **`README.md`** — the delivery's local map.
+- **`README.md`** — the delivery's Local Map.
 
-### 2.5 The runs
+### 2.5 The CBC Runs
 
-A run builds a real system with what we gave it. We call a run by
-its ordinal. It names itself at its Identity step, and until then
+A CBC Run builds a real system with what we gave it. We call a CBC Run by
+its ordinal. It names itself at its Identity Plan Step, and until then
 has only ours:
 
 | ours | its own | where | state |
 |---|---|---|---|
-| run 1 | — | `~/IdeaProjects/cbc-pure-run` | frozen |
-| run 2 | — | `~/IdeaProjects/cbc-pure-run-2` | idle since its Step 0 |
-| run 3 | `never-oversold` | `~/IdeaProjects/cbc-pure-run-3` | live |
-| run 4 | `safe-reservation-2` | `~/IdeaProjects/cbc-pure-run-4` | through Release, not yet read |
-| run 5 | `event-tickets` | `~/IdeaProjects/cbc-pure-run-5` | through Release, read, not yet answered |
-| run 6 | `checkout` | `~/IdeaProjects/cbc-pure-run-6` | born 2026-10-29 at `657d372`, on full auto |
+| CBC Run 1 | — | `~/IdeaProjects/cbc-pure-run` | frozen |
+| CBC Run 2 | — | `~/IdeaProjects/cbc-pure-run-2` | idle since its Step 0 |
+| CBC Run 3 | `never-oversold` | `~/IdeaProjects/cbc-pure-run-3` | live |
+| CBC Run 4 | `safe-reservation-2` | `~/IdeaProjects/cbc-pure-run-4` | through Release, not yet read |
+| CBC Run 5 | `event-tickets` | `~/IdeaProjects/cbc-pure-run-5` | through Release, read, not yet answered |
+| CBC Run 6 | `checkout` | `~/IdeaProjects/cbc-pure-run-6` | born 2026-10-29 at `657d372`, on full auto |
 
-How a delivery goes down and what a run learned comes back is the
-exchange, `docs/conventions/exchange/`: a run is blind to us
-(`docs/conventions/exchange/` §1, *What cannot change*), records a pin and a read-through
+How a delivery goes down and what a CBC Run learned comes back is the
+exchange, `docs/conventions/exchange/`: a CBC Run is blind to us
+(`docs/conventions/exchange/` §1, *What cannot change*), records a Delivery Pin and a Read-Through Commit
 (`docs/conventions/exchange/` §2.2, *The CBC Run*), takes each delivery
 (`docs/conventions/exchange/` §4, *The Delivery Take*), and is read back here
 (`docs/conventions/exchange/` §6, *Up from the CBC Run*). What each side holds for it is the
@@ -190,22 +190,22 @@ exchange's *What this is made usable as*.
 
 Each rule that must hold across this repo, where it is stated, and
 what holds it. This repo has no runtime, so a rule is held by a line
-that travels with a file, a standing comment, a procedure, the shape
+that travels with a file, a standing comment, a procedure, the Output Shape
 of the tree, or a check at commit review.
 
 | Rule | Stated in | Held by |
 |---|---|---|
 | The concept is canonical here; the archive it came from is a frozen snapshot, never a source | §1.1, *The concept — `concept/`*; `CHANGELOG.md`'s `[v1]` entry | commit review |
 | A concept change that could invalidate what derives from it lands with a version entry | `CHANGELOG.md`'s standing comment (ADR-0003) | commit review |
-| Every execution states the concept version it derives from | `docs/conventions/conventions/` §1.3, *The Foundation Line* (ADR-0004, ADR-0036) | its `foundation` line, which travels with every copy |
-| Every file a run receives has its master here, in the group that ships it | `docs/conventions/exchange/` §1, *What cannot change* and §3.2, *What goes* | `exchange-deliver`, which stages only from the masters |
+| Every execution states the concept version it derives from | `docs/conventions/conventions/` §1.3, *The Foundation Line* (ADR-0004, ADR-0036) | its Foundation Line, which travels with every copy |
+| Every file a CBC Run receives has its Master Copy here, in the group that ships it | `docs/conventions/exchange/` §1, *What cannot change* and §3.2, *What goes* | `exchange-deliver`, which stages only from the Master Copies |
 | A manual never ships | `docs/conventions/exchange/` §3.2, *What goes* | the tree: manuals sit under `docs/`, and a delivery stages only from `delivery/` and `concept/` |
-| A manual never outlives the rule it explains | `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule* and §5, *A disagreement* (ADR-0025) | the foundation check, `.claude/rules/foundation-check.md`, at each commit |
+| A manual never outlives the rule it explains | `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule* and §5, *A disagreement* (ADR-0025) | the Foundation Check, `.claude/rules/foundation-check.md`, at each commit |
 | Agent side and project side never share a commit | (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*) | the `commit-messages` skill, and commit review |
-| A pin never claims more than was checked | `docs/conventions/exchange/` §6.1, *Reading a CBC Run* and §6.6, *The Delivery Note after a read* (ADR-0023) | `exchange-read` and `exchange-deliver` |
+| A Delivery Pin never claims more than was checked | `docs/conventions/exchange/` §6.1, *Reading a CBC Run* and §6.6, *The Delivery Note after a read* (ADR-0023) | `exchange-read` and `exchange-deliver` |
 | A skill never spans two groups, and nothing that needs Spring, PostgreSQL, Maven or podman sits under `method/` | `docs/conventions/exchange/` §3.4, *One group per file* | the tree: a group is a directory, so a misfiled file shows as a path |
-| A record stub is never re-delivered to a live run | `docs/conventions/exchange/` §2.4, *The records' exception* (ADR-0036) | the run's `delivered-copies.md`, rule 1 |
-| The five facts of every flow hold between this repo and its runs | (`docs/models/tiers.md` §3.5, *What holds on every flow*); here, `docs/conventions/exchange/` §1, *What cannot change* | `exchange-read` and `exchange-deliver`; the run's `delivered-copies.md` |
+| A Record Stub is never re-delivered to a live CBC Run | `docs/conventions/exchange/` §2.4, *The records' exception* (ADR-0036) | the CBC Run's `delivered-copies.md`, rule 1 |
+| The five facts of every flow hold between this repo and its CBC Runs | (`docs/models/tiers.md` §3.5, *What holds on every flow*); here, `docs/conventions/exchange/` §1, *What cannot change* | `exchange-read` and `exchange-deliver`; the CBC Run's `delivered-copies.md` |
 
 ## 4. Codemap
 
@@ -252,4 +252,4 @@ COMMIT-PLAN.md       record, when present
 
 ## The words
 
-What each coined word means is `docs/glossary.md`.
+The Glossary Names, and what each means, are `docs/glossary.md`.

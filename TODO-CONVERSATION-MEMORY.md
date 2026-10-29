@@ -2,8 +2,8 @@
      asked, what exists, the options weighed, what was said for and
      against, the reviewer's own words. A record that decides
      nothing and tells no story: the item's ADR decides, and the
-     devlog tells. Our seat only, on trial
-     (docs/conventions/project-recording/ §14; ADR-0060).
+     devlog tells. Our Convention Seat only, on trial
+     (docs/conventions/project-recording/ §14, Conversation Memory; ADR-0060).
 
      One section per item: a TODO item, or an open question another
      record holds. Numbered as added; a number is never reused.
@@ -18,9 +18,9 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-10-29.
+     Last touched: 2026-10-30.
      Why the form is as it is: (docs/conventions/project-recording/
-     §14, Conversation-memory…).
+     §14, Conversation Memory).
      foundation: the project-recording convention -->
 
 # TODO's conversation-memory
