@@ -805,31 +805,33 @@
       See: ADR-0074; devlog 2026-10-28; devlog 2026-10-29, the
       words; `d3ebdff:TODO-CONVERSATION-MEMORY.md` §19 and §23.
 
-- [ ] Decide how a section title is written (2026-10-28, the
-      reviewer).
-      Context: since ADR-0070 a fact reference carries its section's
-      title, so a title is read wherever a line points at it, not
-      only at its section. Nothing says how one is written. Of 253
-      numbered titles, some state a point (*A rename is grepped at
-      its commit*), some are labels (*The entry file*), some a lone
-      word (*What*, *Why*); 32 run past the 30 characters a
-      reference keeps, and are cut.
+- [ ] Retitle the numbered sections to labels, by layer, as a
+      commit plan (2026-10-29, the reviewer).
+      Context: writing rule 10 says a numbered section's title is a
+      label naming its subject, 30 characters or fewer, standing
+      alone, one phrase without a gloss (ADR-0075). Measured
+      2026-10-29: of 375 titles in 96 living files, about 230 break
+      it: 71 past 30 characters, 60 one-word record titles, 40 with
+      a gloss, and the statements under 30. About 270 references
+      carry one of them, 112 of those cut; 9 lines in the
+      container's record stubs name a one-word title.
       Ideas:
-      - its home: the writing convention, how a text reads, with
-        both `writing.md` following.
-      - a statement or a label: a statement says the point and
-        changes with it; a label is stable and says less.
-      - 30 characters at most, so no reference is cut.
-      - a title names its subject, as the rule for a word with more
-        than one meaning asks; a lone *What* tells a reference
-        nothing.
-      - the manual form's fixed headings, such as *What it is for*,
-        stay the form's.
-      - a retitle after the reference rewrite is a scripted replace, since a rename's grep covers titles
+      - by layer, as the reference rewrite was: each title chosen by
+        hand, its references replaced by script, the rename grep at
+        each commit
         (`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped…*).
-      Trigger: round 3's rule check, so its Writing kind reads the
-               titles against it.
-      See: devlog 2026-10-28; ADR-0070.
+      - the record sections keep their pattern across records: *What
+        a plan is*, *Why a plan*, *Where a plan lives*, *How a plan
+        is written*, *When a plan changes*, *A plan's anti-patterns*.
+      - a gloss moves into the body's first line; ARCHITECTURE.md's
+        six area titles keep their paths there.
+      - the stack references' "§1 ·" numbering becomes `N.M`
+        (`docs/conventions/facts-in-sync/` §3.2, *A section's parts are numbered*).
+      - the script counts headings, references and code fences
+        before and after, and changes nothing on a second run.
+      Trigger: round 3's rule check done, before round 3 reads.
+      See: ADR-0075; devlog 2026-10-29, section titles;
+      `25b3946:TODO-CONVERSATION-MEMORY.md` §25.
 
 ## Later / someday
 

@@ -1,7 +1,8 @@
 # 0075. A section title names its subject
 
 Date: 2026-10-29
-Status: Proposed, opened under the commit plan for section titles
+Status: Accepted (2026-10-29, at the set's records commit; opened
+Proposed under the commit plan for section titles, unchanged since)
 
 ## Context
 
