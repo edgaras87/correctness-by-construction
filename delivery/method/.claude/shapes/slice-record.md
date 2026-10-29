@@ -193,7 +193,7 @@ named adversity, simultaneous duplicates.
   The new choice comes first, marked `*chosen <date>*`. The one it
   replaced moves below, marked `*as signed on <date>*`, and answers
   under `*Why not, on revision:*`.
-- **Blocks are separated by a rule** (`---`).
+- **Blocks are separated by a `---` line.**
 
 ## What is exempt, and why
 

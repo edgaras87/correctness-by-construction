@@ -30,7 +30,7 @@ Why shaped this way: ADR-000N.
 
 ## Invariants
 
-<!-- One row per rule the system keeps: where the arithmetic or the
+<!-- One row per invariant the system keeps: where the arithmetic or the
      decision is made, what refuses a wrong result, the test that goes
      red if either went, and the slice that proved it, linked. A "—"
      says a column holds nothing, on purpose. Example, from an order

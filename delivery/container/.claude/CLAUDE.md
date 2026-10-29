@@ -44,7 +44,7 @@ this project writes is its own.
 | Noticed something, not doing it now | Backlog | TODO.md |
 | Session ending, a dead end hit, or a TODO item added | Work history, dead ends, a TODO item's story | devlog/devlog.md |
 | Shipped something users can see | What changed, for users | CHANGELOG.md |
-| The system's structure changed, or asking what a slice may rely on | The system as it stands: its components, what a slice may rely on, one row per rule | ARCHITECTURE.md |
+| The system's structure changed, or asking what a slice may rely on | The system as it stands: its components, what a slice may rely on, one row per invariant | ARCHITECTURE.md |
 | The promise, the layers, or the slices are in question | Intent, system definition, slice registry | docs/system/ |
 | Meeting a word or a tag you do not know, or coining one | Each coined word and tag kind, one plain sentence | docs/glossary.md (from framing) |
 | Something became true the outside should see | The front door: what this is, how to use it | README.md |
