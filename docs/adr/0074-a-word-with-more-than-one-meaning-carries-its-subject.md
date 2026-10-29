@@ -1,7 +1,12 @@
 # 0074. A word with more than one meaning here carries its subject
 
 Date: 2026-10-29
-Status: Proposed, opened under the commit plan for word senses
+Status: Accepted (2026-10-29, at the set's records commit; opened
+Proposed under the commit plan for word senses, revised three times
+while Proposed: an entry lists only the senses that keep the word,
+with stub and overlay listed; the bare word is left to English and a
+first-kind word owns the bare word; shape and form moved to the
+second kind)
 
 ## Context
 
@@ -51,10 +56,10 @@ misuse.
 
 The reviewer asked, 2026-10-25, what "rule" means in an item's
 title, and proposed "agent rule" for the file
-(`TODO-CONVERSATION-MEMORY.md` §19, *What "rule" names*). On
+(`d3ebdff:TODO-CONVERSATION-MEMORY.md` §19, *What "rule" names*). On
 2026-10-28 the reviewer asked whether "template" should always carry
 its subject, and whether every such word should
-(`TODO-CONVERSATION-MEMORY.md` §23, *A word with more than one meaning here*).
+(`d3ebdff:TODO-CONVERSATION-MEMORY.md` §23, *A word with more than one meaning here*).
 On 2026-10-29 the reviewer set the test: a bare word means plain
 English only; each sense of ours carries its subject; a new sense
 is listed before it is used, or a bare use is caught.

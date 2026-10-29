@@ -678,33 +678,6 @@
                no second manual sharing it.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
 
-- [ ] Decide what "rule" names, and give the agent's rule files a
-      name of their own (2026-10-25, the reviewer).
-      Context: "rule" has four senses in 779 uses across living
-      text. A file under `.claude/rules/` that loads into the agent:
-      91 mentions of the path, 54 of "skills and rules". A numbered
-      line inside one, "one-home rule 3": 17. What a text says must
-      be done, "the bump rule". In a run, a rule the built system
-      keeps, "one row per rule": 5. `docs/glossary.md` defines none.
-      The conventions manual's artifact part is about the files
-      (`docs/conventions/conventions/` §1, *The artifact*), yet its
-      "A rule is one sentence in the imperative" means a line.
-      Ideas:
-      - "agent rule" for the file, plain "rule" for what must be
-        done; an agent rule holds rules, numbered.
-      - the run's sense says "invariant", the method's own word.
-      - the same check for other words with several senses: "model"
-        (ours, and the Claude model a delegation names), "step"
-        (PLAN's, and a numbered step inside a section), "run" (the
-        repository, and the verb round 3 already lists).
-      - `.claude/rules/convention-manual.md` reads as a convention's
-        manual; it is the rule for a manual's form. About 5 living
-        references would move.
-      Trigger: round 3's rule check, so its Writing kind reads
-               against the chosen words.
-      See: devlog 2026-10-25, evening; `TODO-CONVERSATION-MEMORY.md`
-      §19, *What "rule" names*; `163767f`.
-
 - [ ] Decide whether a standing full read looks for missing fact
       references, and for references pointing down (2026-10-27, the
       reviewer).
@@ -800,41 +773,37 @@
                whichever comes first.
       See: devlog 2026-10-28; ADR-0070.
 
-- [ ] Write a rule that a word with more than one meaning here
-      carries its subject at every use, and list those words
+- [ ] List the remaining words with more than one meaning here
       (2026-10-28, the reviewer).
-      Context: "template" names a skill's template, repo-hygiene's
-      templates, a record stub and the plain sense, in 97 uses that
-      only sometimes say whose. Verbs collide too: "fill", "take",
-      "stage". Writing rule 8 covers a word's first use; a fact
-      reference lands a reader mid-file, past it. Taken in talk: a
-      rule for every use, for the words a list names, so a grep for
-      a listed word without its subject finds the misses.
+      Context: writing rule 9 says such a word carries its subject at
+      every use, bare meaning plain English only, and the glossary
+      lists the words: rule, template, stub, overlay, shape and form
+      so far (ADR-0074). A candidate's uses and senses are measured
+      before its entry is written. Shape and form showed the test: a
+      glossary word of the first kind whose plain sense is often
+      wanted moves to the second kind, since a plain use is found
+      only by reading and a bare use by grep.
       Ideas:
-      - how the list is built, still open:
-        - (a) one glossary entry per word, its bare sense first,
-          then a sense per subject beneath it;
-        - (b) the writing rule defines "a word with more than one
-          meaning here" and holds the list itself;
-        - (c) the rule defines the term, and a glossary group lists
-          the words, each pointing at the rule.
-      - candidates: template, stage, step, fill, master, rule, take,
-        tag, skill, log; measure each word's uses and senses before
-        the list is written. "Log" in what ships means the decisions
-        log, git's log, "the run's log" with no record named, and a
-        verb.
+      - candidates: stage, step, fill, master, take, tag, skill, log,
+        model, run. "Log" in what ships means the decisions log,
+        git's log, "the run's log" with no record named, and a verb.
+        "Run" the verb against "run" the repository.
+      - the glossary's own first-kind entries read first: "stage"
+        beside "staging" and git's staging; "step" beside a
+        section's numbered steps.
       - "a skill's template" reads as one a skill uses as much as one
         it holds; the other name that fits all 11 is "copy-and-fill
         template", as shipped text says "copy-and-fill master".
       - collisions with git and Claude Code count: stage, master,
         tag, skill.
-      - "Decide what 'rule' names" may become one entry in the list.
       - the run's seat: a run's own collisions, such as "fact"
-        against the `FACT-` tags, and whether the shipped
-        `writing.md` takes the rule.
+        against the `FACT-` tags. The shipped `writing.md` carries
+        the rule and the run's glossary template the form; the list
+        is the run's own.
       Trigger: round 3's rule check, so its Writing kind reads
-               against the rule.
-      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §23, *A word with more than one…*.
+               against the whole list.
+      See: ADR-0074; devlog 2026-10-28; devlog 2026-10-29, the
+      words; `d3ebdff:TODO-CONVERSATION-MEMORY.md` §19 and §23.
 
 - [ ] Decide how a section title is written (2026-10-28, the
       reviewer).

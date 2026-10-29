@@ -299,9 +299,9 @@ Notes:
 
 Goal: Living text written before a rule now meets that rule, and project-recording's list of the records maps them in both seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
-Now: round 2's close read: all the text round 2 covered, read again
-against its four kinds
-(`.claude/approaches-on-trial/refinement.md` §2.8, *A round's close*).
+Now: between rounds 2 and 3: the TODO items due before round 3's
+rule check, then that check
+(`.claude/approaches-on-trial/refinement.md` §2.3, *Check the rules*).
 Gate:
 
 **At the opening.**
