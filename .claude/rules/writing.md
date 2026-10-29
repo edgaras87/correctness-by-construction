@@ -39,6 +39,14 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
    not, say first, in plain words, what it is. Not "Stale lines has
    a weak rule", but "Stale lines, the kind that finds lines no
    longer true, has a weak rule".
+9. **Give a word with more than one meaning here its subject at
+   every use.** Bare, it means only what plain English says. The
+   glossary, `docs/glossary.md`, lists the words and each sense's
+   subject: "agent rule", never "rule", for a file under
+   `.claude/rules/`; "output shape"; "a record's form"; "a skill's
+   template"; "record stub". Nothing marks the prefixed word. A
+   glossary word with one sense here owns the bare word: do not use
+   it in its plain sense.
 
 ## Before and after
 
@@ -82,3 +90,5 @@ this rule then names that kind and its style
 
 - ADR-0053 — how a text reads is a convention of its own, its rule
   loaded in every session, here as in every run
+- ADR-0074 — rule 9: a word with more than one meaning here carries
+  its subject at every use, and the glossary lists the words
