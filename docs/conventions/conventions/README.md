@@ -104,8 +104,8 @@ Which files carry it, and where:
   frontmatter;
 - every shipped Output Shape, in frontmatter of its own;
 - a manual whose idea an Idea Model states, in frontmatter of its own;
-- a record whose header holds its form, such as `PLAN.md`'s step
-  form or `TODO.md`'s item form, as a Foundation Line, `foundation:`, in that
+- a record whose header holds its form, such as the Plan Step
+  Form or `TODO.md`'s item form, as a Foundation Line, `foundation:`, in that
   header's comment. Both Convention Seats, the CBC Run's Record Stubs included.
 
 An Approach on Trial carries none: it is first-time work, and stands
@@ -244,7 +244,7 @@ stands on it, so it still holds when the example is gone.
 ### 2.7 Why it arrives this way
 
 The channel, a skill, an Agent Rule, a Record Stub or a file, and why that one.
-Where it reasons from the Idea Model of the agent, a Fact Reference to that
+Where it reasons from the Agent Model, a Fact Reference to that
 part (`docs/models/agent.md`).
 
 ### 2.8 What this does not cover

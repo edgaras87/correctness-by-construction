@@ -249,7 +249,7 @@
       - "description" stays the general word, as facts-in-sync has it
         (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
       Trigger: a second concept repo, when what a concept is gets
-               decided (`docs/models/idea-to-output.md` §5, *A model and a concept*).
+               decided (`docs/models/idea-to-output.md` §5, *An Idea Model and a concept*).
       See: devlog 2026-10-19, the redesign's ideas.
 
 - [ ] Decide whether a sweep checks one home after work lands, and
@@ -472,7 +472,7 @@
         may; a record's entries are checked only as they are written.
       - models and the concept get none while nothing of their kind
         recurs: three models share no parts yet, and the concept has
-        one form and one home (`docs/models/idea-to-output.md` §5, *A model and a concept*).
+        one form and one home (`docs/models/idea-to-output.md` §5, *An Idea Model and a concept*).
       Trigger: run 4's reading, which reads how run 4 lived run 3's
                shapes.
       See: devlog 2026-10-17, our forms as shapes; 2026-10-20,
@@ -982,7 +982,7 @@
 - [ ] Move the tiers model to the garden (2026-09-30).
       Context: it maps the workspace, and the workspace has no home:
       the garden stays a plain folder until a second concept repo
-      exists (`docs/models/tiers.md` §2.2, *Concepts*). Until then it lives here,
+      exists (`docs/models/tiers.md` §2.2, *Concept Repos*). Until then it lives here,
       beside the agent model; `docs/models/` stays.
       Trigger: a second concept repo.
       See: devlog 2026-09-30, the tiers model.

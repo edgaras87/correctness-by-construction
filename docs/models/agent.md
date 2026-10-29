@@ -9,28 +9,28 @@ A structured description of what an AI agent working inside a
 repository *is*: its parts, the channels that carry text into it, and
 what each channel can and cannot guarantee.
 
-This is a **model**: the top description of its chain. It binds
+This is an **Idea Model**: the top Canonical Description of its chain. It binds
 what stands on it, and when the two disagree, either side may be
-the wrong one (`docs/models/idea-to-output.md` §3.3, *A disagreement is settled*). Its job is to
+the wrong one (`docs/models/idea-to-output.md` §3.3, *Settling a disagreement*). Its job is to
 let conventions be written against something stated, instead of
 each author reasoning from a private picture of "the agent".
 
 Layer 1 — vendor-neutral. One tool's mechanisms are a **binding**
-(§10, *Bindings (Layer 2)*).
+(§10, *The bindings*).
 
 ---
 
 ## 1. Who this is about
 
 An agent working in **a project that follows the conventions it was
-born with**: a run, pinned to the copies it took. How the repos relate is the tiers model's
-(`docs/models/tiers.md` §2.3, *Runs*).
+born with**: a Run Repo, pinned to the copies it took. How the repos relate is the Tiers Model's
+(`docs/models/tiers.md` §2.3, *Run Repos*).
 
 That is the case worth getting right: the conventions are written for
 it, and it is the case nobody can watch. An agent in the repo that
 delivers them meets the same channels all the same.
 
-The practical question the model exists to answer: *given a convention
+The practical question the Idea Model exists to answer: *given a convention
 sitting in a project, how does it reach the agent that is supposed to follow it?* (§8, *Choosing a channel*; §9, *Where each
 convention lands*).
 
@@ -42,7 +42,7 @@ convention lands*).
 4. **The write-back** — what the agent leaves in the repo (§6, *Write-back and persistence*).
 5. **The gate** — enforcement, which sits outside all of it (§7, *The gate*).
 
-## 3. The shape
+## 3. The components, drawn
 
 ```
              ┌─────────── the repo ───────────┐
@@ -82,7 +82,7 @@ Entry files loaded at session start, before the first task.
   without bound if used as a rulebook; each addition dilutes the rest.
 - **Fidelity:** space is scarce here, so rules arrive compressed — and
   compression loses parts (§12, *Claims* M1). The binding can lose parts too:
-  what the tool loads is not always the file on disk (§10, *Bindings (Layer 2)*).
+  what the tool loads is not always the file on disk (§10, *The bindings*).
 - **Ownership:** the project's text, or one operator's. An operator's
   standing file fires and costs like the entry file but belongs to one
   person and one checkout, stays out of the repo's history, and its
@@ -153,7 +153,7 @@ committed template.
   sits inside `PLAN.md`, so it cannot be skipped without opening the
   file it governs. No trigger is needed because the act is the trigger. This is
   how a text convention can be installed at all: `.gitignore` is
-  self-enforcing by mechanism; a stub with its rules in comments is
+  self-enforcing by mechanism; a Record Stub with its rules in comments is
   self-enforcing by placement, and only while the comments stay in the
   file. It covers the act, not the decision to act: a record's format
   travels this way, its timing cannot.
@@ -227,19 +227,19 @@ with two texts that can disagree (§5, *The context window*).
 ## 9. Where each convention lands
 
 Shown by each convention's artifacts: a skill file for a rule bound to
-a moment, stubs and templates for a rule that rides in the files a
+a moment, Record Stubs and templates for a rule that rides in the files a
 project is born with. The choice rests on the choosing table (§8, *Choosing a channel*). No field in a file
 names a channel.
 
 No table here: a list of each convention's channel would be a second
-home for facts this model does not own.
+home for facts this Idea Model does not own.
 
-## 10. Bindings (Layer 2)
+## 10. The bindings
 
-Layer 1 names capabilities; a binding names the mechanisms one tool
+Bindings are Layer 2. Layer 1 names capabilities; a binding names the mechanisms one tool
 gives each of them: which file is ambient, what pushes, what gates.
 It changes with the tool's releases, so the repo that uses the tool
-writes it, beside its arrangement, and this model changes only when
+writes it, beside its arrangement, and this Idea Model changes only when
 an idea does. Two things every binding has to say, from what one
 tool has shown:
 
@@ -255,7 +255,7 @@ tool has shown:
   Type-specific guidance is a playbook.
 - **Model capability.** How capable, how current — changes per release.
   These are claims about the shape of the runtime, not its quality.
-- **Tool mechanisms.** (§10, *Bindings (Layer 2)*)
+- **Tool mechanisms.** (§10, *The bindings*)
 
 ## 12. Claims
 
@@ -267,7 +267,7 @@ proven wrong.
 
 `evidenced` = observed. `assumed` = asserted but never observed —
 including assertions already acted on. Each piece of evidence says
-where it was seen: the handbook's history, this repo's, or a run's.
+where it was seen: the handbook's history, this repo's, or a CBC Run's.
 
 Evidence from outside is listed under its claim too, marked
 `measured` for a controlled study with numbers, `reported` for a
@@ -286,7 +286,7 @@ mean it is followed.
   2026-09-20 to 09-29 run over 50 characters, in a repo whose
   commit-messages skill is opened at every commit; so did seven of
   the eight commit-plan revisions of 2026-09-29, the longest at 67.
-  Run 3's subjects crossed 50 at every step read, at 52 to 56
+  CBC Run 3's subjects crossed 50 at every Plan Step read, at 52 to 56
   (devlog, 2026-09-10 to 09-14).
 - **Open question it raises:** unenforced, or mis-set —
   `docs(handbook):` consumes 15 of the 50 characters before the verb,
@@ -318,7 +318,7 @@ moment of need fires more reliably than the same pointer in a reading
 list at session start.
 - `assumed` — **this is the claim that decides router vs rulebook.**
 - *Refuted by:* both placements performing the same. The test that
-  can run: a reading of a run that holds one rule both ways, pointed
+  can run: a Run Reading of a CBC Run that holds one rule both ways, pointed
   at from a skill at its moment and from the entry file alone.
 - `measured` elsewhere, against it, though not on P2 itself — the
   same Vercel evals passed 100% with an index of the docs in the
@@ -347,9 +347,9 @@ compares them.
   `fills/` retires, and it had kept a member since 2026-09-18; found
   on 2026-09-29 while PLAN's Step 8 was being shrunk. PLAN's
   decision index went stale twice, found each time while something
-  else was being written. project-recording said the deliverer kept
+  else was being written. project-recording said the Concept Deliverer kept
   its records "under the same stubs" after ADR-0041 had split its
-  PLAN from the stub; found at the reviewer's question. Earlier, the
+  PLAN from the Record Stub; found at the reviewer's question. Earlier, the
   handbook's three-place hygiene update (its devlog, k) was caught
   by hand.
 - *Refuted by:* an agent flagging a stale copy unprompted.
@@ -367,10 +367,10 @@ agent resolves one and proceeds rather than reporting the ambiguity.
 prompt, which outranks anything a tool returned — so a file's rule
 loses to a contrary rule in the prompt, and a told rule exists only
 in the session it was told to.
-- `evidenced` · three runs of the CbC pure seed, reported 2026-09-10:
+- `evidenced` · three CBC Runs of the Pure Seed, reported 2026-09-10:
   a change-plans stop skipped on an instruction the prompt never gave;
   a checkout opened because the prompt's "stay inside this repository"
-  had not fired yet while the run's own procedure named a checkout on
+  had not fired yet while the CBC Run's own procedure named a checkout on
   disk. *Refuted by:* an agent holding a file's rule against a prompt
   that contradicts it.
 
@@ -417,7 +417,7 @@ check outside the text can.
 | assumed | A2, P1, P2, U1, W1, S1 |
 
 Six of twelve remain assumed. **P2** decides router versus rulebook,
-and a reading of a run is what can resolve it.
+and a Run Reading of a CBC Run is what can resolve it.
 
 Note that **installed** carries no claims. It is the only delivery that
 does not depend on an agent doing anything.

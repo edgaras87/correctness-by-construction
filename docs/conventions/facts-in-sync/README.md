@@ -33,8 +33,8 @@ rules split that way, and the rules came here before it read
   the Concept Deliverer's Convention Seat's question at each commit (§1, *One home*;
   §2, *Point and derive*; §3.1, *What a Fact Reference is*; *The Concept Deliverer's seat*).
 - **`.claude/rules/foundation-check.md` — the Concept Deliverer's**, loaded
-  in every session and acting before a commit is staged: the grep for a moved name, the
-  walk and the disagreement (§3.3, *The rename grep*; §4, *A Canonical
+  in every session and acting before a commit is staged, the Foundation Check: the grep for a moved name, the
+  Change Walk and the disagreement (§3.3, *The rename grep*; §4, *A Canonical
   Description's rule*; §5, *A disagreement*).
 
 What derives from this page is that list. A change here walks it;
@@ -57,8 +57,8 @@ Description's rule*; §5, *A disagreement*) reach a CBC Run as the Exchange Conv
 
 ### The Concept Deliverer's seat
 
-The Concept Deliverer holds its own, wider one-home Agent Rule and the foundation
-check. It may retell a fact where the reader acts on it in place
+The Concept Deliverer holds its own, wider one-home Agent Rule and the Foundation
+Check. It may retell a fact where the reader acts on it in place
 (§1, *One home*). Its Fact Reference is a document's path, section and title
 (§3.1, *What a Fact Reference is*), and the Change Walk before every commit re-reads it
 (§4, *A Canonical Description's rule*). The Change Walk finds only lines
@@ -123,14 +123,13 @@ that it will (`docs/models/agent.md` §4.2, *pulled*, claim P1). The Change Walk
 re-reads the line when the home changes (§4, *A Canonical Description's rule*). A fact has one home,
 so a Fact Reference has one target: the home of the fact its line
 relies on. The line above relies on a claim about agents, so it
-names the Idea Model of the agent, not a convention that applies the claim.
+names the Agent Model, not a convention that applies the claim.
 
 That home sits at the line's own level or above: a Canonical Description's
 line points at a Canonical Description or an Idea Model, never at a skill or a
 record for a fact. A line that only names a text, such as the
 record a manual describes, is not a Fact Reference, and names any
-level (`docs/models/idea-to-output.md` §3.2, *Every link points
-up*).
+level (`docs/models/idea-to-output.md` §3.2, *The direction of a link*).
 
 A Fact Reference is written in one form, always in parentheses:
 
@@ -171,7 +170,7 @@ In a shipped file, a reference to this repo's text leads with CBC
 and serves this repo's Change Walk alone. A CBC Run cannot open our manuals, so
 the line says what the CBC Run needs without it.
 
-The Idea Model of the agent calls any text that sends an agent to a file a
+The Agent Model calls any text that sends an agent to a file a
 pointer (`docs/models/agent.md` §12.2, *On pulled*, claim P1). A
 Fact Reference is one kind of pointer, and this page calls it only
 by its own name.
@@ -252,7 +251,7 @@ Steps 1, 2 and the greps in 3 are checkable today: every shipped
 skill and Agent Rule carries `foundation`, every manual names what
 derives from it in *What this is made usable as*, and a path and a
 `foundation` value are tokens (`docs/conventions/conventions/` §1.3, *The Foundation Line*).
-The foundation check makes this repo do the rest, the re-reads in
+The Foundation Check makes this repo do the rest, the re-reads in
 step 3 and steps 4 and 5, before every such commit
 (`.claude/rules/foundation-check.md`). Where a manual and the concept
 are handled differently — versioning, shipping, the kind of
@@ -266,9 +265,9 @@ comment.
 
 A derived thing, a Fact Reference or practice saying other than its
 Canonical Description: two linked texts that disagree, either of which may be
-the wrong one (`docs/models/idea-to-output.md` §3.3, *A disagreement is settled*). It is raised
+the wrong one (`docs/models/idea-to-output.md` §3.3, *Settling a disagreement*). It is raised
 where it is found — a finding in a Run Reading, an edit a CBC Run made to
-its copy, a question at a boundary, the foundation check at a
+its copy, a question at a boundary, the Foundation Check at a
 commit — and decided, never defaulted: neither side is right for
 being the Canonical Description, nor for being newer. Practice is the
 evidence. When the Canonical Description changes, the Change Walk runs again (§4, *A Canonical Description's rule*);
@@ -321,10 +320,10 @@ Both moments are every task, so both Agent Rules are ambient
 - **The Repo Tag a citation carries, `CBC ADR-nnnn`** —
   `docs/conventions/project-recording/` §3.5, *Numbers across repos*.
 - **What a link is, and that either side may be wrong** —
-  `docs/models/idea-to-output.md` §3.1, *The four links* and §3.3, *A disagreement is settled*.
+  `docs/models/idea-to-output.md` §3.1, *The four Chain Links* and §3.3, *A disagreement is settled*.
 
 ## Where to look
 
-- The links this keeps: `docs/models/idea-to-output.md` §3.1, *The four links*.
+- The links this keeps: `docs/models/idea-to-output.md` §3.1, *The four Chain Links*.
 - The two Agent Rules: `.claude/rules/one-home.md` and
   `.claude/rules/foundation-check.md`.

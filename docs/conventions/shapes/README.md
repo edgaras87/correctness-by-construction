@@ -225,7 +225,7 @@ flowchart LR
 **The dashed line back is a Run Reading, and the difference in the line
 is the point.** The traffic model — nothing sent upward, nothing
 fetched, the Concept Deliverer reading a CBC Run and never the reverse — is the
-tiers Idea Model's (`docs/models/tiers.md` §3.5, *What holds on every flow*), and the Run Reading is
+Tiers Model's (`docs/models/tiers.md` §3.5, *What holds on every flow*), and the Run Reading is
 the Exchange Convention's (`docs/conventions/exchange/` §6, *Up from the CBC Run*). What is this
 convention's is
 where the Run Reading looks: at `.claude/shapes/`, for the delivered

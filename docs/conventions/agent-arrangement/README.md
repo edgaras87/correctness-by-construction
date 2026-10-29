@@ -74,7 +74,7 @@ convention skills `commit-messages`, `commit-plan` and
 `visual-comparison`, not the retrospective's, whose Convention Seat here is on
 trial; the Exchange Convention's skills, `exchange-read` and
 `exchange-deliver`; the Agent Rules every session loads, `writing.md`,
-`one-home.md` and `foundation-check.md`, the check before a commit;
+`one-home.md` and `foundation-check.md`, the Foundation Check;
 the Agent Rules loaded by path, `exchange-reading.md`, the form of a
 Run Reading, `working-a-reading.md`, how a Run Reading's list is worked,
 and `convention-manual.md`, the form of a manual; and its
@@ -111,7 +111,7 @@ manual names how in its list of what derives from it:
 The theory this leans on is `docs/models/agent.md`: the ambient
 channel (`docs/models/agent.md` §4.1, *ambient*), the choosing table
 (`docs/models/agent.md` §8, *Choosing a channel*), the claims (`docs/models/agent.md`
-§12, *Claims*). The Idea Model describes; this page explains against it, and its binding is what Claude Code gives each channel
+§12, *Claims*). The Agent Model describes; this page explains against it, and its binding is what Claude Code gives each channel
 (§5, *The Claude Code binding*).
 
 ### 1.1 A closed list of paths
@@ -356,7 +356,7 @@ hand.
 
 Where a project keeps its Approaches on Trial: one file per kind of
 work, not yet proven. Nothing loads the directory. A Plan Step's opening
-item sends the agent to it (`PLAN.md`'s step form). What an Approach on Trial
+item sends the agent to it (the Plan Step Form). What an Approach on Trial
 is lives above (`docs/models/idea-to-output.md` §2, *The kinds*);
 how one is drafted and how one is evaluated are
 `.claude/approaches-on-trial/approach-drafting.md`'s and
@@ -400,21 +400,21 @@ qualify. *Its story: ADR-0053.*
 - **Growth by accretion** — every line added dilutes every other line,
   so removing one is maintenance, not tidying.
 - **Parking a repeated rule in the operator's file** — a rule the
-  human keeps saying is the Idea Model's told diagnostic
+  human keeps saying is the Agent Model's told diagnostic
   (`docs/models/agent.md` §8, *Choosing a channel*): a convention
   is missing, or its channel is not firing. `CLAUDE.local.md` makes
   the saying persistent and the diagnosis invisible.
 
 ## 5. The Claude Code binding
 
-The Idea Model of the agent names the channels and the gate
+The Agent Model names the channels and the gate
 (`docs/models/agent.md` §4, *The channels*, §7, *The gate*); a binding names the mechanisms one
-tool gives each (`docs/models/agent.md` §10, *Bindings (Layer 2)*). This is Claude Code's,
+tool gives each (`docs/models/agent.md` §10, *The bindings*). This is Claude Code's,
 the tool both Convention Seats use. It changes with the tool's releases, so
 each fact says which release it was checked against, and a change
 is made here alone. A second tool's binding would be written beside
 this one, and writing it is the test for tool-shaped assumptions
-hiding in the Idea Model. None has been needed.
+hiding in the Agent Model. None has been needed.
 
 ### 5.1 The mapping
 
@@ -564,4 +564,4 @@ on (`docs/conventions/exchange/` §2.4, *The records' exception*).
 
 - The Record Stubs: `delivery/container/.claude/CLAUDE.md` and
   `delivery/container/.claude/decisions.md`.
-- The Idea Model it explains against: `docs/models/agent.md`.
+- The Agent Model it explains against: `docs/models/agent.md`.

@@ -75,7 +75,7 @@ concept, not a release (ADR-0003).
 
 And its `PLAN.md` holds one Plan Step being worked: the piece of work
 being done now, and below it any Plan Step stopped for it.
-What makes work a Plan Step, and its form, the CBC Run's adapted to
+What makes work a Plan Step, and the Plan Step Form, the CBC Run's adapted to
 this Convention Seat, are under `## The step form` at the top of the
 Concept Deliverer's own `PLAN.md` (ADR-0057). A CBC Run keeps its finished
 Plan Steps in its plan, each closed to one line, because they are the
@@ -231,9 +231,9 @@ Repo root, `PLAN.md`. One per project.
 ### 2.4 How a plan is written
 
 How a Plan Step is written, closed and stopped is the plan's form. In a
-CBC Run, the Record Stub's legend and the step form copied from the playbook
+CBC Run, the Record Stub's legend and the Plan Step Form copied from the playbook
 at birth, `delivery/fills/cbc-run-pure-playbook.md` (§9, *The playbook*); in the
-Concept Deliverer's Convention Seat, `PLAN.md`'s legend and its step form. Why the form
+Concept Deliverer's Convention Seat, `PLAN.md`'s legend and its Plan Step Form. Why the form
 is as it is:
 
 - A gate holds facts, not intentions: "tests pass on a clean clone",

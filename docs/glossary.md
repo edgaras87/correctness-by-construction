@@ -20,13 +20,17 @@ its thing. A CBC Run keeps a glossary of its own.
 
 ## The repositories
 
-- **Concept Deliverer** — the repository holding the Master Copy of
-  every file a CBC Run receives: this repo, in the tiers model's word
-  (`docs/models/tiers.md` §2.2, *Concepts*).
-- **CBC Run** — a separate repository that builds a real system with
-  what this repo gave it, blind to its deliverer
-  (`docs/models/tiers.md` §2.3, *Runs*). Named by its number: CBC
-  Run 6.
+- **Concept Repo**, **Run Repo**, **Concept Garden** — the Tiers Model's
+  words for any concept's repository, any repository born from one to
+  try it, and the folder that holds the Concept Repos
+  (`docs/models/tiers.md` §2.2, *Concept Repos*; §2.3, *Run Repos*).
+- **Concept Deliverer** — this repo: the Concept Repo of correctness
+  by construction, holding the Master Copy of every file a CBC Run
+  receives (`docs/models/tiers.md` §2.2, *Concept Repos*).
+- **CBC Run** — a Run Repo of this concept: a separate repository
+  that builds a real system with what this repo gave it, blind to
+  its Concept Deliverer (`docs/models/tiers.md` §2.3, *Run Repos*). Named by
+  its number: CBC Run 6.
 - **Newborn Run** — a CBC Run at its birth, from its Pure Seed until
   its agent finishes the Run Birth. It holds what the seed put
   there, one Delivery Pin included, and no earlier state.
@@ -39,27 +43,35 @@ its thing. A CBC Run keeps a glossary of its own.
   holds copies of it (`docs/conventions/exchange/` §1, *What cannot change*, fact 3).
 - **Read-Through Commit**, **Delivery Pin** — the two numbers a CBC
   Run records for a delivery: its own commit the Concept Deliverer
-  last read up to, and the deliverer's commit its copies equal
+  last read up to, and the Concept Deliverer's commit its copies equal
   (`docs/conventions/exchange/` §2.2, *The CBC Run*).
 - **Delivery Note** — the text beside a delivery: what changed since
-  the CBC Run's Delivery Pin, and a verdict on everything the run
+  the CBC Run's Delivery Pin, and a verdict on everything the CBC Run
   asked (`docs/conventions/exchange/` §3.7, *The Delivery Note*).
 - **Delivery Staging** — copying the delivery and its Delivery Note
   into a CBC Run's `temp/`, by the reviewer or by the agent when told
-  to (`docs/conventions/exchange/` §3.1, *Delivery Staging*). The run does
+  to (`docs/conventions/exchange/` §3.1, *Delivery Staging*). The CBC Run does
   nothing until it has happened. The verb names its object, "stage a
   delivery", since git's verb is the same word.
 - **Delivery Take** — the CBC Run's act: moving delivered files from
   `temp/` into place and recording the Delivery Pin
   (`docs/conventions/exchange/` §4, *The Delivery Take*).
+- **Delivery Fill** — text one group writes at Delivery Staging into
+  a marked place in another group's file, the playbook's Plan Steps
+  into `PLAN.md`; the only delivery that is not a copy
+  (`docs/conventions/exchange/` §3.4, *One group per file*).
+- **Run Ask** — a line in a CBC Run's backlog, under *To the
+  deliverer*, asking us for a verdict: on an edit to a copy, a file
+  it offers, or a question. Every Run Reading lists each
+  (`docs/conventions/exchange/` §5.1, *When a copy may be edited*).
 - **Run Reading** — the Concept Deliverer reading a CBC Run since it
   last read it, and the text that records what it found
   (`docs/conventions/exchange/` §6.3, *The Run Reading*).
 - **Record Harvest** — us reading a CBC Run's records and changing
   our Master Copies from what it learned
-  (`docs/models/tiers.md` §3.3, *Up is harvest, through records*).
+  (`docs/models/tiers.md` §3.3, *Upward harvest*).
 - **Run Birth** — a CBC Run's first state, made from this repo at one
-  Delivery Pin (`docs/models/tiers.md` §3.1, *Down is delivery*).
+  Delivery Pin (`docs/models/tiers.md` §3.1, *Downward delivery*).
 - **Pure Seed** — the procedure that gives a CBC Run its birth from
   this repo alone: `delivery/installs/pure-seed.md`.
 - **Run Briefing**, **Run Hand-off** — the two texts put in a Newborn
@@ -84,9 +96,9 @@ its thing. A CBC Run keeps a glossary of its own.
 - **Idea Model** — the top Canonical Description of a chain of
   texts: an idea any repo can adapt, its rules varying by repo, like
   an interface. A repo adapts it in a Convention Manual
-  (`docs/models/idea-to-output.md` §2, *The kinds*, and §5, *A model
-  and a concept*). A particular one is named by its name: the Agent
-  Model, the Tiers Model, the Idea-to-Output Model.
+  (`docs/models/idea-to-output.md` §2, *The kinds*, and §5, *An Idea
+  Model and a concept*). A particular one is named by its name: the
+  Agent Model, the Tiers Model, the Idea-to-Output Model.
 - **Convention Manual** — a convention's Canonical Description, at
   `docs/conventions/<name>/README.md` (`docs/conventions/conventions/`
   §2, *The Convention Manual*).
@@ -157,7 +169,7 @@ its thing. A CBC Run keeps a glossary of its own.
   (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
 - **Chain Link** — a relation from a lower text to the upper one it
   relies on: stands on, points, governs, written from
-  (`docs/models/idea-to-output.md` §3.1, *The four links*). Wider
+  (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*). Wider
   than a Fact Reference, which is what one kind of link, points,
   writes down.
 - **Foundation Line** — the line by which a file names the one thing
@@ -168,12 +180,16 @@ its thing. A CBC Run keeps a glossary of its own.
   Fact Reference to that part instead
   (`docs/conventions/conventions/` §1.3, *The Foundation Line*;
   `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
-  Not *source*: that was a run's word for the deliverer, and is not
+  Not *source*: that was a CBC Run's word for the Concept Deliverer, and is not
   ours.
 - **Change Walk** — what a change to a Canonical Description sets
   off: the greps for its path and its name, and the re-read of each
   line they find
   (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 3).
+- **Foundation Check** — the check before a commit is staged that
+  runs the Change Walk and settles each disagreement it finds, our
+  Agent Rule `.claude/rules/foundation-check.md`
+  (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
 
 ## The work
 

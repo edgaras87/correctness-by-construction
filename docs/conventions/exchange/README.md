@@ -41,7 +41,7 @@ arrangements, each side holding only what it runs
   opened when the reviewer says to deliver (§3, *Down to the CBC Run*): the Delivery Note committed
   last, the Delivery Staging on the word; the same whether a Run Reading
   preceded it or not. Birth is a delivery into the root plus the
-  fills, and `delivery/installs/pure-seed.md` keeps that.
+  Delivery Fills, and `delivery/installs/pure-seed.md` keeps that.
 - **`.claude/rules/exchange-reading.md` — the Run Reading's form, the
   Concept Deliverer's**, loading when a Run Reading in `temp/` is read, not
   while a new one is written (`docs/conventions/agent-arrangement/`
@@ -213,14 +213,14 @@ or podman sits under `delivery/method/`, so a CBC Run on another stack
 takes the Container Group and the Method Group and leaves the Stack Group
 (ADR-0029). When one
 group's words must sit in another group's file — the Method Group's
-playbook inside the Container Group's `PLAN.md` — that is a **fill**: the
+playbook inside the Container Group's `PLAN.md` — that is a **Delivery Fill**: the
 owning group's file has a marked place, the other group provides
-the text, the Delivery Staging writes it in. Fills are the only step that is
+the text, the Delivery Staging writes it in. Delivery Fills are the only step that is
 not a copy; they are listed in one place and there are few. One
 exists. One is owed: the Container Group's entry file names the Method Group's
 skills and `docs/concept/`, so a CBC Run taking the Container Group without
 the Method Group would be born with an entry file about files it does not
-hold. When such a CBC Run exists, those lines become a fill.
+hold. When such a CBC Run exists, those lines become a Delivery Fill.
 
 ### 3.5 The Foundation Line in a copy
 
@@ -330,7 +330,7 @@ A copy may be edited in place when all three hold:
   writes anything.
 
 The backlog lines live under one heading kept for them, *To the
-deliverer*. The backlog is the channel — a hand-off is the CBC Run's
+deliverer*. The backlog is the channel — a **Run Ask** is the CBC Run's
 own open item, waiting on an answer, with a lifecycle git can see:
 filed at a Plan Step's close, gone with the Delivery Pin that answers it. `temp/`
 is not the channel the other way: it holds drafts, not records,
@@ -445,7 +445,7 @@ verdict like an edit does.
 ### 6.3 The Run Reading
 
 The read produces a Run Reading, or extends the one open for that
-CBC Run — a document in `temp/` listing every edit, every ask and
+CBC Run — a document in `temp/` listing every edit, every Run Ask and
 every finding, one line each, revised as items close and deleted
 when the work does. One per CBC Run at a time. The Run Reading is the
 list; working it is ordinary work here — a commit plan when it
@@ -497,7 +497,7 @@ the CBC Run's commit we read through; the CBC Run records it beside the Delivery
 (§2.2, *The CBC Run*). A read that finds nothing addressed to us still sends *read
 through `<commit>`, nothing to answer, no files* — one line each
 side — so the CBC Run always holds the latest Read-Through Commit, and can see
-for itself when a hand-off was seen and not yet answered. A Delivery Note
+for itself when a Run Ask was seen and not yet answered. A Delivery Note
 alone, with no files, is still a delivery: the Read-Through Commit moves,
 the Delivery Pin does not.
 
