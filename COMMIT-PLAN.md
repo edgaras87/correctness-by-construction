@@ -10,10 +10,10 @@ carries its subject at every use, and bare means only what plain
 English says. Both seats' `writing.md` carry it. The glossary says it
 holds two kinds of entry, a word with one sense here and a word with
 several, and lists the first two of the second kind: rule, with its
-senses agent rule and a numbered line with its owner; and template,
-with a skill's template. An entry lists only the senses that keep the
-word; a thing with a word of its own, invariant, stub, is not a
-sense. The four living lines that used "rule" for an invariant or a
+senses agent rule and a numbered line with its owner; template, with
+a skill's template; stub, with record stub; and overlay, with stack
+overlay. An entry lists only the senses that keep the word; a thing
+with a word of its own, such as invariant, is not a sense. The four living lines that used "rule" for an invariant or a
 `---` line say what they mean. Round 3's Writing read then has the
 words to read old text against; the rewording of about 150 bare uses
 of "rule" for a file is its work, not this set's. The remaining
@@ -46,8 +46,11 @@ stack overlay and a stub, when the rule asks for a prefix and none of
 these carries the word. They are things with a word of their own,
 not senses. The entries lose those lines, and ADR-0074's decision 2
 loses its sentence "a sense that has a word of its own names that
-word", decisions 4 and 5 their redirects. The ADR is Proposed; its
-Accepted status line names this change.
+word", decisions 4 and 5 their redirects. Two of the trimmed things
+get entries of the second kind: stub, with record stub, since a run
+meets stubs in its tests; and overlay, with stack overlay, whose
+subject "stack" it carries already. The ADR lists four words. It is
+Proposed; its Accepted status line names this change.
 
 **4. `chore(agent): our writing.md takes rule 9`**
 Our agent rule follows the manual, in a commit of its own
