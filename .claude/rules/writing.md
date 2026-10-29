@@ -39,21 +39,29 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
    not, say first, in plain words, what it is. Not "Stale lines has
    a weak rule", but "Stale lines, the kind that finds lines no
    longer true, has a weak rule".
-9. **Give a word with more than one meaning here its subject at
-   every use.** Bare, it means only what plain English says. The
-   glossary, `docs/glossary.md`, lists the words and each sense's
-   subject: "agent rule", never "rule", for a file under
-   `.claude/rules/`; "output shape"; "a record's form"; "a skill's
-   template"; "record stub". Nothing marks the prefixed word. A
-   glossary word with one sense here owns the bare word: do not use
-   it in its plain sense.
+9. **Write a defined thing by its Glossary Name,** two or more
+   words, owner or kind first, each word capitalized, exactly as
+   `docs/glossary.md` lists it: CBC Run, Plan Step, Agent Rule,
+   Output Shape, Delivery Staging. A lowercase word is English and
+   only English; no Markdown mark marks a Name. A numbered thing
+   carries its owner and number, "working-a-reading rule 2", "the
+   walk's step 3"; a label inside its owner keeps its case, "Step 0";
+   a path is written as it is. A thing is defined when a text gives
+   a word a meaning English does not: its Name goes into the glossary
+   in the commit that first uses it, pointing at the home that
+   defines it.
 10. **Title a numbered section with its subject.** A label, a noun
     phrase of 30 characters or fewer, in sentence case, one phrase
-    with no gloss after a dash or colon; it stands alone without its
-    parent heading: *How a plan is written*, never *How*. The point
-    goes in the first sentence. The manual form's fixed headings, a
-    stage heading and a numbered rule's bold lead are not titles
-    under this rule.
+    with no gloss after a dash or colon, a Glossary Name inside it
+    keeping its capitals; it stands alone without its parent heading:
+    *How a plan is written*, never *How*. The point goes in the first
+    sentence. The manual form's fixed headings, a stage heading and a
+    numbered rule's bold lead are not titles under this rule.
+11. **Change only the lines the change needs.** The rest stand as
+    they are. Markdown has no line width here; 72 is a commit body's
+    rule and nothing else. A script that rewrites text counts
+    headings, references and code fences before and after, and
+    changes nothing on a second run.
 
 ## Before and after
 
@@ -97,7 +105,12 @@ this rule then names that kind and its style
 
 - ADR-0053 — how a text reads is a convention of its own, its rule
   loaded in every session, here as in every run
-- ADR-0074 — rule 9: a word with more than one meaning here carries
-  its subject at every use, and the glossary lists the words
+- ADR-0074 — rule 9's first form: a word with more than one meaning
+  here carried its subject; the words for rule, template, stub,
+  overlay, shape and form
 - ADR-0075 — rule 10: a numbered section's title names its subject,
   30 characters at most, standing alone
+- ADR-0076 — rule 9: every defined thing has a Glossary Name of two
+  or more words, capitalized; the glossary is the list of Names
+- ADR-0077 — rule 11: an edit changes only the lines its change
+  needs; Markdown has no line width
