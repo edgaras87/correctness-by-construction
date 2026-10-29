@@ -29,8 +29,9 @@ points up*).
    model maps find it true? A "today" alone does not make a fact
    this repo's: it may be the model's own subject.
 3. **Write the general facts into the model,** in general words,
-   where its own subject puts them, with a dated note of where they
-   were learned.
+   where its own subject puts them, with one line pointing at the
+   story of where they were learned, as a lesson does in a manual
+   (`docs/conventions/conventions/` §2.6, *A lesson taken*).
 4. **The lower text stands on the model.** A manual's `foundation`
    names the model (`docs/conventions/conventions/` §1.3, *The
    `foundation` line*). Its lines that told the general facts point
@@ -47,8 +48,8 @@ points up*).
 ## Not known yet
 
 - Whether stage 2's one question is enough to judge "general".
-- Whether a dated note fits a model: no form says what a model
-  holds.
+- Whether a story's pointer fits a model: no form says what a
+  model holds.
 - Whether the lower text's `foundation` always becomes the model, or
   only when its whole idea is the model's.
 - Whether a model may list its own facts again, each with its

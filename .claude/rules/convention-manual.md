@@ -60,9 +60,11 @@ frontmatter naming it, `foundation: the agent model`
    numbered*). Each numbered section
    holds one subject, and a subject has one section; other
    sections point at it (`docs/conventions/conventions/` §2.5, *The body*).
-6. **Lessons as dated italics**, where they happened: *what was
-   measured, when, and what changed*. The italic holds the case;
-   the body holds what it teaches, in general
+6. **A lesson points at its story.** The body holds what it
+   teaches, in general. One italic line, where it happened, points
+   at the ADR or devlog entry that tells the case: *Its story:
+   ADR-0059.* A case told nowhere is written into a devlog entry
+   first, and the section is read again once the case has left
    (`docs/conventions/conventions/` §2.6, *A lesson taken*).
 7. **Why it arrives this way.** The channel — a skill, a rule, a
    stub or a file — and why that one: the moment it serves, and

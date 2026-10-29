@@ -63,8 +63,7 @@ either.
    check carries it to what derives from it.
 6. **Rewrite what stays on trial, in general.** The general
    statement comes first, in its own terms. Each use stands beside
-   it as a dated note, as a lesson does in a manual
-   (`docs/conventions/conventions/` §2.6, *A lesson taken*). The approach names what
+   it as a dated note, the evidence its next evaluation reads. The approach names what
    would settle it. If a whole part is used by one seat alone, it
    splits (below).
 7. **Record the endings.** For our own approach, an ADR when a
