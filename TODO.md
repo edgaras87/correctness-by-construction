@@ -833,6 +833,32 @@
       See: ADR-0075; devlog 2026-10-29, section titles;
       `25b3946:TODO-CONVERSATION-MEMORY.md` §25.
 
+- [ ] Move the history told inline in six living texts to its
+      story's home (2026-10-29, the reviewer).
+      Context: a manual states a lesson in general and keeps one
+      italic line pointing at the case that taught it
+      (`docs/conventions/conventions/` §2.6, *A lesson taken*); only
+      its opening tells the failure lived (§2.2, *What it is for*).
+      Found 2026-10-29, when rule 9's why was first written as a
+      story: the shapes manual's dated reshape note under its
+      opening; facts-in-sync's italic paragraph "Where it has already
+      happened"; the visual-comparison skill's §4 lessons and its
+      Decisions footer, told as the Mermaid cases, ours and the
+      container's; two run 3 cases under the retrospective manual's
+      lessons; writing
+      rule 2's why; one clause in the exchange manual's *Why it
+      arrives this way*.
+      Ideas:
+      - each case goes to the ADR or devlog entry that holds it, or
+        to a devlog line when none does; the section keeps "*Its
+        story:*" and is read again, keeping a short plain example
+        where the lesson no longer reads without one (ADR-0073).
+      - the two visual-comparison skills change in one commit each,
+        the Master Copy first.
+      Trigger: the pass that takes words and titles by layer, the
+               item above, since it rewrites these files.
+      See: devlog 2026-10-29, round 3's rule check.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
