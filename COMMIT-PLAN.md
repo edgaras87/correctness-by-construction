@@ -60,6 +60,14 @@ Our agent rule follows the manual, in a commit of its own
 The container's copy follows the manual. A run's glossary lists the
 run's own words; the rule travels, the list does not.
 
+**5b. `fix(delivery): the run's glossary knows two kinds`**
+Inserted on 2026-10-29, after the reviewer asked how the list is
+kept. The shipped `writing.md` says the glossary lists the words, but
+a run's glossary is born from `cbc-framing`'s template, whose header
+knows one kind of entry. The template's header takes the second
+kind, so a run's agent reading rule 9 finds the form for it. The
+list itself stays the run's own.
+
 **6. `fix(delivery): three shipped lines take the words`**
 The container's `CLAUDE.md` and `ARCHITECTURE.md` say "one row per
 invariant"; the slice-record shape says "a `---` line". After this,
@@ -106,6 +114,11 @@ The entry for the set, with the session-end lines.
   did not change it.
 - **No commit is provisional.** The decision is settled in talk
   (`TODO-CONVERSATION-MEMORY.md` §19 and §23, 2026-10-29).
+- **The glossary's groups stay as they are** (2026-10-29). A
+  multi-sense entry is told apart by its shape, the plain sense first
+  and the senses beneath, not by a group of its own. A grep for the
+  phrase every such entry opens with lists them; a second grouping
+  would be a second home for the list.
 - **A glossary entry lists only the senses that keep the word**
   (revision of 2026-10-29). A redirect, "never a rule, an invariant",
   seemed a catch at writing time. The rule catches it already: a bare
