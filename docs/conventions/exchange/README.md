@@ -505,14 +505,15 @@ the pin does not.
 
 The run's half is a rule rather than a skill because its moment is
 a copy, or a file in `temp/`, being read, and it loads then instead
-of waiting to be opened by name (`docs/models/agent.md` §4.3, *pushed*):
-the failure the receiver's protocol had since the day it shipped.
+of waiting to be opened by name (`docs/models/agent.md` §4.3, *pushed*).
 The deliverer's two skills open on the reviewer's word, "read" or
 "deliver", which is a moment the agent is told rather than one it
 must notice. The reading's form loads by path when a reading is
 read, so it is in view while the list is worked; a reading written
 new is written without it (`docs/conventions/agent-arrangement/`
 §5.6, *Rules files*).
+
+*Its story: devlog 2026-10-29, the lessons' own stories: six places.*
 
 ## What this does not cover
 

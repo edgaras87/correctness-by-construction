@@ -100,11 +100,10 @@ end.
   next run starts from: a skill, a rule, the playbook, a template,
   the reviewer's local file. "Remember to" is not a place, and a
   lesson that lands nowhere is repeated.
-- **No decision without something that went wrong.** In run 3, "one
-  kind of text per document" was drafted and dropped: nothing had
-  gone wrong to fix.
-- **Choices are shown on real text.** In run 3 the tag names were
-  picked from tables of variants applied to real lines.
+- **No decision without something that went wrong.** A rule drafted
+  with nothing to fix is dropped.
+- **Choices are shown on real text:** the variants of a name applied
+  to real lines, not argued in the abstract.
 - **The reviewer's corrections are kept.** The agent's first
   version goes under "Considered and rejected", with the reason.
 - **The old questions still ask:** which steps took longer or
@@ -113,6 +112,8 @@ end.
   the entry file read top to bottom, its only re-reading
   (`docs/conventions/agent-arrangement/` §2.6, *Size*). They are prompts,
   inside the walk.
+
+*Its story: devlog 2026-10-29, the lessons' own stories: six places.*
 
 ## 3. How the apply step decides
 

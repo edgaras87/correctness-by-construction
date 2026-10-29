@@ -17,10 +17,7 @@ page is why the rule is the shape it is, so that "why is this a
 directory and not a rules file?" has an answer that is not
 archaeology.
 
-*Reshaped 2026-10-15 from run 3's retrospective (ADR-0052): the page
-had held two places, the place deciding the force, and a staging
-act for one of them. Run 3 lived both places and kept one; the
-staging was never used on either side.*
+*Its story: ADR-0052; devlog 2026-10-29, the lessons' own stories: six places.*
 
 ## What this is made usable as
 

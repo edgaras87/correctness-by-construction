@@ -71,8 +71,7 @@ chat answers, records, commit messages, code comments.
 1. **Lead with the answer.** A reader who stops after one line
    still has the point. The reasons are for the reader who asks.
 2. **Short sentences, one idea each.** A chained sentence has to be
-   held whole before any of it makes sense. Run 3's records were
-   full of them (its RETRO.md, D2).
+   held whole before any of it makes sense.
 3. **Label the parts.** Dashes and semicolons hide how many parts
    there are. A list shows the count.
 4. **Show it with numbers.** A definition asks the reader to
@@ -136,7 +135,7 @@ chat answers, records, commit messages, code comments.
     references and code fences before and after, and changes nothing
     on a second run.
 
-*Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model; devlog 2026-10-19; ADR-0074 to ADR-0077, rules 9 to 11.*
+*Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model; devlog 2026-10-19; ADR-0074 to ADR-0077, rules 9 to 11; devlog 2026-10-29, the lessons' own stories: six places.*
 
 ## Why it arrives this way
 

@@ -286,22 +286,14 @@ contradicts one may have found the description's flaw rather than
 its own. When practice and a statement disagree, the statement is
 a candidate for change, not the judge. That includes this page.
 
-*Where it has already happened, so the rule reads as a record and
-not a wish. ADR-0034: run 3 argued down a clause of
-`convention-lifecycle` on the day it first ran under it — taken,
-against the text as shipped. ADR-0035: run 3 made a thing the
-vocabulary had no word for; the vocabulary gained one, and the
-next day went, on the same evidence read further. `cbc-slice`,
-three times: every in-place edit run 3 made to the method was
-taken whole. And the concept has bent from the runs three times.
-Twice editorially, leaving it at v1: chapter 03's sentence on when
-technology enters (`211bd0f`), and chapter 01's layer tags in full
-words, from run 3's RETRO D6 (`41d4fc3`). Once in substance:
-chapter 02's top rung of the walls, which run 3 met at SL-3, makes
-the concept v2 when it is released (`86ed0c4`, ADR-0048).*
+It has happened: CBC Run 3 argued down a clause of
+`convention-lifecycle` on the day it first ran under it, and the
+clause changed (ADR-0034).
 
-Whether the concept bends this rarely because it is right, or
-because nothing has been read against it hard enough, is not known.
+Whether the concept bends rarely because it is right, or because
+nothing has been read against it hard enough, is not known.
+
+*Its story: ADR-0034; ADR-0035; ADR-0048; devlog 2026-10-29, the lessons' own stories: six places.*
 
 ## Why it arrives this way
 
