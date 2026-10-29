@@ -46,6 +46,12 @@ commit messages, comments. How it reads, never what it says.
    record, since a test has stubs too; "a skill's template"; "output
    shape". Nothing marks the prefixed word. A glossary word with one
    sense here owns the bare word: do not use it in its plain sense.
+10. **Title a numbered section with its subject.** A label, a noun
+    phrase of 30 characters or fewer, in sentence case, one phrase
+    with no gloss after a dash or colon; it stands alone without its
+    parent heading: *How a slice is cut*, never *How*. The point goes
+    in the first sentence. A record's fixed headings, a stage heading
+    and a numbered rule's bold lead are not titles under this rule.
 
 ## Before and after
 
@@ -86,3 +92,5 @@ this rule then names that kind and its style.
   its rule loads in every session
 - CBC ADR-0074 — rule 9: a word with more than one meaning here
   carries its subject at every use, and the glossary lists the words
+- CBC ADR-0075 — rule 10: a numbered section's title names its
+  subject, 30 characters at most, standing alone
