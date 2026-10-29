@@ -22,7 +22,7 @@ kind.
 | 2 | Dependencies | a retelling where a pointer would do, or a pointer not needed | `docs/conventions/facts-in-sync/` §2 |
 | 2 | Lessons | a case written as the rule | `docs/conventions/conventions/` §3.7 |
 | 2 | Layout | a section that holds two subjects, or one subject spread over several sections | `docs/conventions/conventions/` §3.3, once it says one subject to a section (§2.3) |
-| 3 | Writing | text older than ADR-0053, against the whole rule | `.claude/rules/writing.md` |
+| 3 | Writing | all living text, against the whole rule; "text older than ADR-0053" until 2026-10-29, when rules 9 and 10 made every text older than the rule (*Round 3*) | `.claude/rules/writing.md` |
 
 Not a kind: the item's two "words" ideas, "run" as a verb for a
 skill or a step, and "small steps" in `commit-plan`. Each is
@@ -915,3 +915,127 @@ close:
 - TODO's four items whose trigger is round 2's close.
 
 When round 3 reads, *Met in round 2, of other kinds* comes first.
+
+## Round 3: how it reads
+
+Its kind is Writing (*Kinds and rounds*), read against the whole of
+`.claude/rules/writing.md` and its manual. It reads *Met in round
+2, of other kinds* first. Rules 9 and 10 are newer than every text,
+so the row's "text older than ADR-0053" is widened on 2026-10-29:
+round 3 reads all living text against the whole rule.
+
+### The rules' check (§2.3)
+
+What changed since round 2's check, at `f2a0221`, and the TODO
+items that name the rule or its manual, searched 2026-10-29.
+
+| Kind | Rule | Changed since | TODO items naming it | Doubt |
+|---|---|---|---|---|
+| Writing | `.claude/rules/writing.md`, on `docs/conventions/writing/` | rule 6 names `docs/glossary.md`, a file of its own since `8919dac`, grouped and pointing at its homes (`38a7c2d`, `06be504`, `42abf12`); the rule's lines carry fact references (`ed96ed0`, ADR-0070); the manual's lesson notes point at their stories (`ae53ed7`, ADR-0073); rule 9, a word with more than one meaning here carries its subject, with the glossary's two kinds of entry (`fe8e7ef`..`793f675`, `4157c23`, ADR-0074); rule 10, a title names its subject (`0567e8d`, `5654381`, ADR-0075) | 6 | yes, three |
+
+The six items: "List the remaining words with more than one meaning
+here" and "Retitle the numbered sections to labels", due at this
+check; "Decide how an edit or a new text is shaped, line width
+included", due at this check; "Rewrite the method's texts plain" and
+"Try a readability pass", due at the close, the round's reading
+their evidence; and the examples item, which names `writing.md` in
+passing. The first and the third doubt the rule; the retitle item
+waits on rule 10 being tried.
+
+**Doubt 1: rule 9, tried on the ten candidate words.** The item's
+list, measured over the living text on 2026-10-29:
+
+| Word | Uses | Ours | Plain, or another sense | Taken |
+|---|---|---|---|---|
+| run | 1,382 | the repository, 964 | the verb, 238 | second kind: cbc run, so a bare "run" is English; the reviewer's choice over the test, which found one noun sense |
+| step | 635 | PLAN's step, about 420 | a numbered step in a text, "step 4", 131; a casual phase, "the first step from a convention to a model" | second kind: plan step; a text's step named by its owner, "the walk's step 3"; a casual use stays bare |
+| skill | 605 | a skill file | none | not listed |
+| stage | 401 | a skill's stage, 228; an approach on trial's stage; the exchange's staging, 37 | git's staged and the verb, 52 | second kind: skill stage, approach stage; delivery staging keeps its entry; the exchange's verb names its object, "stage a delivery", since git's verb is the same word |
+| model | 336 | our models, 270 | the Claude model, 29; the data and role model, the adversity model and the world model in what ships | second kind: idea model; the agent, tiers and idea-to-output models keep their names |
+| take | 229 | the run's take, 18 | the verb, 211 | second kind: a cbc run's take; the reviewer's choice, as for run |
+| log | 156 | the decisions log, 33 named and up to 82 bare | git log, 10; the verb, 31 | second kind: decisions log |
+| fill | 147 | the noun, a body written into a record stub, 7 | the verb, 115 | the noun goes: "composed body" |
+| master | 86 | the deliverer's copy | none here | first kind stays |
+| tag | 47 | the repo tag CBC, 19 | the method's tags; git's tag, 1 | second kind: repo tag |
+
+The trial found the clause for a first-kind word too strict in two
+ways, each fixed in the manual before the round reads:
+
+- a word of another part of speech is another word: "a run" is ours
+  and "it runs" is English; without this, 238 verbs "run" and 211
+  verbs "take" break the clause for no reader's gain;
+- a listed word's entry names every sense in use, each with its
+  subject, ours and others' alike: "git log" beside "decisions log",
+  "the Claude model" beside "idea model". The entry is a contents
+  page: one line per sense and the address of the home that defines
+  it. A use stays bare only where it is casual English and no subject
+  would be true of it. The agent first proposed a weaker form, a
+  mark on a first-kind word's plain use, with model and then step as
+  its case; the reviewer asked for the whole catalogue, and no
+  first-kind word needs the mark once those two are listed.
+
+Both change ADR-0074's decision 2 in part. The same trial moved
+where rule 9's old text is reworded: about 800 lines, which
+ADR-0074 put in round 3's read as findings, go instead to a
+scripted-and-hand pass by layer before the read, in one plan with
+the retitle, so the read lists only what the pass missed. That
+changes ADR-0074's decision 8 in part. Both are ADR-0076.
+
+**Doubt 2: rule 10, tried on commit-plan §2's thirteen titles,**
+all statements, eight past 30 characters. Labels proposed and judged
+by the reviewer, 2026-10-29:
+
+| Now | Label |
+|---|---|
+| Its own convention, and not a record | A convention, not a record |
+| Root placement | Root placement |
+| No status in the file | Status in the file |
+| Material-first is a first-class mode, not a failure | Material-first |
+| The records commits are planned | The records commits |
+| A plan counts commits | What a plan counts |
+| An inserted commit takes a letter; a commit may repeat | Inserted and repeated commits |
+| Subjects are counted where they are first written | Counting subjects |
+| The agent's files are a commit of their own | The agent's files |
+| The sweep, before the close and unwrapped | The sweep |
+| Small steps inside a planned commit, on the reviewer's grant | Small commits |
+| A look back before the close | The look back |
+| The stop at every boundary is commit-messages' rule | The stop at every boundary |
+
+The reviewer: they read right. Rule 10 holds as written; the
+thirteen land with the rest in the pass. One label shows rule 9 at
+work: "Small steps" used PLAN's word in its plain sense.
+
+**Doubt 3: the item on how an edit is shaped,** due at this check.
+Measured 2026-10-29: 985 lines over 72 characters in 83 of 99 living
+Markdown files, tables aside; a scripted rewrap has broken structure
+twice. The reviewer took one rule, writing rule 11: an edit changes
+the lines its change needs and leaves the rest as they stand;
+Markdown has no line width here, and nothing is rewrapped to one.
+The 72 stays commit-messages' alone. ADR-0077. Not taken: a width
+shown as a guide in `.editorconfig`, or a change about as long as
+what it replaces.
+
+The fixes land before round 3 reads, under the commit plan for
+round 3's rule check: rule 9's two sentences; the glossary's
+entries for step, stage, take, model, log, tag and run, and the
+named senses the listed entries gain; rule 11; both `writing.md`. How each ended is written below
+when the plan closes.
+
+### Files by layer (§2.2)
+
+Living text at `124ae80`: 115 files, each in exactly one layer. Left
+out, as before round 2, with `temp/run-6-briefing.md` and
+`temp/run-6-handoff/`, run 6's own text.
+
+| Layer | Files | Count |
+|---|---|---|
+| 1. The conventions manual | `docs/conventions/conventions/README.md` | 1 |
+| 2. Project-recording | `docs/conventions/project-recording/README.md` | 1 |
+| 3. The other manuals, the models, the concept | as round 2, and `docs/glossary.md` | 23 |
+| 4. `ARCHITECTURE.md`, `README.md`, the records | as round 2, and `docs/adr/README.md` | 12 |
+| 5. Our agent setup | as round 2, and `.claude/approaches-on-trial/model-placing.md` | 19 |
+| 6. `delivery/`, what ships | as round 2 | 59 |
+
+What changed since round 2's list, at `620fe22`: three came in, the
+glossary (layer 3, ADR-0070's homes), the ADR folder's form (layer
+4) and `model-placing.md` (layer 5); none went; no layer widened.
