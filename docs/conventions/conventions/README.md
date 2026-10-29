@@ -246,10 +246,14 @@ rule to name.*
 A finding taken into a manual is written as what it teaches, not as
 the case that taught it. The body states the lesson in general, in
 the convention's own terms, as a new section or a change to one.
-The case goes beside it as a dated italic: what happened, when, and
-what changed. Another convention, or one project's detail, may
-appear as an example. The statement never stands on it, so it still
-holds when the example is gone.
+The case goes to the history that tells it, an ADR or a devlog
+entry, and the manual keeps one italic line pointing there: "*Its
+story: ADR-0059.*". A case told nowhere else is first written into
+a devlog entry. Once the case has left, the section is read again:
+where the lesson no longer reads clearly without it, it gains a
+short plain example (ADR-0073). Another convention, or one
+project's detail, may appear as an example. The statement never
+stands on it, so it still holds when the example is gone.
 
 *Learned 2026-10-18, at `docs/conventions/agent-arrangement/` §3.7, `CLAUDE.local.md`.
 Its first draft said what `CLAUDE.local.md` holds through

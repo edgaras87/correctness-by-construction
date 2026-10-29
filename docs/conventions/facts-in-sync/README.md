@@ -237,8 +237,7 @@ moved from a plan's close to the commit that renumbers.*
 This page included. A description is how we understand a thing
 today, written down (`docs/models/idea-to-output.md` §2, *The kinds*): the
 concept, each model, each manual. It states what is true today; how it came to be
-is history's: the ADRs, the devlog, commit bodies, and a lesson's
-dated italic (`docs/conventions/conventions/` §2.6, *A lesson taken*). It may be
+is history's: the ADRs, the devlog and commit bodies. It may be
 wrong or incomplete, and it is
 canonical regardless — everything derived from it agrees with it
 until it changes, and it changes only for a reason recorded,
