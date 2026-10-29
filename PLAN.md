@@ -295,7 +295,7 @@ Notes:
 
 ---
 
-## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the foundation check, `visual-comparison`)    [!] stopped: Take run 5's lessons for run 6, then Birth run 6, on full auto (devlog 2026-10-29)
+## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the foundation check, `visual-comparison`)    [~]
 
 Goal: Living text written before a rule now meets that rule, and project-recording's list of the records maps them in both seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
