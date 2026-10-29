@@ -3,17 +3,21 @@
 <!-- What each word of ours means, each defined once, in plain words
      (docs/conventions/writing/ §2, rule 6 and rule 9). Two kinds of
      entry. A word with one sense here: the word in bold, then what
-     it means; the word is used bare. A word with more than one
-     meaning here: the word in bold, its plain sense, then each sense
-     of ours beneath it with the subject it carries at every use,
-     written exactly as the entry writes it (rule 6). A thing with a
-     word of its own is not a sense. A new sense gets its line before
-     its first use. Where a manual or a model
-     owns the thing a word names, the entry points at it with a fact
-     reference and does not restate it. A word is coined only when
-     plain English cannot say it; an entry goes when its word does.
-     Entries sit in groups by what they name; a new word goes in its
-     group, after the words it uses.
+     it means. It owns the bare word, so that word is not used in its
+     plain sense here. A word with more than one meaning here: the word in
+     bold, a line saying that bare it is plain English, then each
+     sense of ours beneath it with the subject it carries at every
+     use, written exactly as the entry writes it (rule 6). A thing
+     with a word of its own is not a sense. A new sense gets its
+     line before its first use; a word of the first kind that needs
+     a second sense, ours or the plain one, becomes an entry of the
+     second kind, and its bare uses take their subject in the same
+     change. Where a manual or a model owns the thing a word names,
+     the entry points at it with a fact reference and does not
+     restate it. A word is coined only when plain English cannot say
+     it; an entry goes when its word does. Entries sit in groups by
+     what they name; a new word goes in its group, after the words
+     it uses.
      foundation: the writing convention -->
 
 Used across both repos, each defined here once — or, where a
@@ -106,28 +110,27 @@ manual owns the thing a word names, pointed at there.
   Not a form, which is read while writing.
 - **local map** — a directory's `README.md` that says how the parts
   of that area relate (`docs/conventions/project-recording/` §8.6, *Local maps*).
-- **rule** — plain English: what a text says must be done, "the
-  bump rule". Bare, it means only that. Each sense of ours carries
-  its subject (`docs/conventions/writing/` §2, rule 9):
+- **rule** — bare, plain English, read as any word is; nothing of
+  ours. Each sense of ours carries its subject
+  (`docs/conventions/writing/` §2, rule 9):
   - **agent rule** — a file under `.claude/rules/`, loaded into the
     agent by path or in every session
     (`docs/conventions/agent-arrangement/` §3.2, *`rules/`*).
   - a numbered line inside one carries its owner: "one-home rule 3",
     "writing rule 6".
-- **template** — plain English: a text copied and filled in. Bare,
-  it means only that. Each sense of ours carries its subject:
+- **template** — bare, plain English, read as any word is; nothing
+  of ours. Our sense carries its subject:
   - **a skill's template** — a file under a skill's `templates/`,
     copied and filled by the project, never edited in place
     (`docs/conventions/exchange/` §5.8, *A skill's template is filled…*).
-- **stub** — plain English: a placeholder, or in a test a stand-in
-  for a real part. Bare, it means only that. Our sense carries its
-  subject:
+- **stub** — bare, plain English, read as any word is; nothing of
+  ours. Our sense carries its subject:
   - **record stub** — a record as it is born: the shipped file with
     its header comment and headings, which a project fills from its
     first entry on. The container holds one per record
     (`docs/conventions/project-recording/`, *What this is made usable as*).
-- **overlay** — plain English: a layer laid over another, or to lay
-  one. Bare, it means only that. Our sense carries its subject:
+- **overlay** — bare, plain English, read as any word is; nothing
+  of ours. Our sense carries its subject:
   - **stack overlay** — the stack's part of the hygiene files,
     appended below the base's marked line: repo-hygiene's `.part`
     files for one stack (`docs/conventions/repo-hygiene/` §2, *Layering*).

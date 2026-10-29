@@ -29,6 +29,9 @@ tell which is meant from the word alone. Counted 2026-10-25 and
   reads what ships. Shipped text already says "record stub" twice.
 - **"overlay"**, 11 uses, all but one "stack overlay", repo-hygiene's
   `.part` files for one stack; once a verb, in `exchange-deliver`.
+- **"shape"**, 437 uses, and **"form"**, 214: ours in all but about
+  26, which are the verb, "shaped by a talk", and idioms, "takes one
+  form". Both are glossary words of the first kind already.
 
 The glossary defines none of these senses. Every entry it holds is a
 word with one sense here, written bare: run, master, take, step,
@@ -140,6 +143,26 @@ in the exchange manual alone, would single out the easier kind.
    and rejected: a stack is the technology, not the convention, and
    the word that carries the sense is "overlay".
 
+**What an entry says of the bare word:**
+1. **Its plain sense,** "what a text says must be done". Taken at
+   first. Dropped when the reviewer asked whether it harms us: it
+   narrows a plain English word to one of its senses, so "as a rule"
+   would break the entry, and the glossary would own what is not
+   ours.
+2. **Only that it is plain English,** read as any word is, with
+   nothing of ours in it. Taken. Rule 9 already said "what plain
+   English says".
+
+**Shape and form,** which the reviewer proposed as second-kind words:
+1. **A prefix at every use,** "output shape", "record form". Rejected:
+   about 650 lines for 26 plain ones, and "record form" does not
+   cover a manual's or a reading's form, so the prefix would be the
+   owner, which 62 lines already write by rule 8.
+2. **First kind, with the clause the rule was missing:** a word of
+   the first kind owns the bare word, which is not used in its plain
+   sense here. Taken. The 26 plain uses go in round 3. The same
+   clause settles "run" the verb against "run" the repository.
+
 **Renaming `convention-manual.md`,** since it reads as a manual.
 Rejected: every agent rule of ours is named by what it governs,
 `one-home.md`, `working-a-reading.md`, `foundation-check.md`; with
@@ -163,27 +186,32 @@ clearly.
    lists the run's own words.
 2. **The glossary holds two kinds of entry,** and its header says
    so. A word with one sense here is defined bare, as every entry is
-   today. A word with more than one sense here has one entry: the
-   word, its plain sense, then each sense of ours beneath it with
-   the subject it carries. A thing with a word of its own is not a
-   sense and is not listed. A new sense gets its line before its
-   first use.
+   today; it owns the bare word, so that word is not used in its
+   plain sense here. A word with more than one sense here has one entry:
+   the word, a line saying that bare it is plain English, read as
+   any word is, then each sense of ours beneath it with the subject
+   it carries. The entry defines nothing of the bare word. A thing
+   with a word of its own is not a sense and is not listed. A new
+   sense gets its line before its first use; a first-kind word that
+   needs a second sense, ours or the plain one, becomes a
+   second-kind entry, and its bare uses take their subject in the
+   same change.
 3. **No mark around a prefixed word:** no italic, bold, backticks,
    quotes or link. Quotes keep their one job, a word spoken of.
 4. **The words for "rule":** agent rule, for a file under
-   `.claude/rules/`; a numbered line carries its owner; bare "rule"
-   is what a text says must be done. What a built system keeps is
-   an invariant, and the line between blocks is a `---` line: words
-   of their own, not senses of "rule".
+   `.claude/rules/`; a numbered line carries its owner; bare, it is
+   plain English. What a built system keeps is an invariant, and the
+   line between blocks is a `---` line: words of their own, not
+   senses of "rule".
 5. **The words for "template":** a skill's template, for the files
-   under a skill's `templates/` that a run copies and fills; bare
-   "template" is a text copied and filled in, repo-hygiene's `.part`
-   files among them. A record's stub is a stub.
+   under a skill's `templates/` that a run copies and fills; bare,
+   it is plain English, and repo-hygiene's `.part` files are
+   templates in that sense. A record's stub is a stub.
 6. **The words for "stub" and "overlay":** record stub, for the
    shipped file with its header and headings that a project fills;
    stack overlay, for repo-hygiene's `.part` files for one stack.
-   Bare, each is plain English: a placeholder or a test's stand-in; a
-   layer laid over another.
+   Bare, each is plain English. Shape and form stay words of the
+   first kind.
 7. **The rest of the list** is measured at round 3's rule check:
    stage, step, fill, master, take, tag, skill, log, model and run,
    and any word the check meets, the glossary's own first-kind
@@ -193,7 +221,7 @@ clearly.
    list. Four lines change now: project-recording §13's and the
    container's two "one row per rule", and the slice-record shape's
    "separated by a rule".
-9. **A prefixed form is a name,** written exactly as its entry
+9. **A prefixed word is a name,** written exactly as its entry
    writes it: "agent rule", never "the agent's rule file". Writing
    rule 6 already says so of a defined name; the glossary's header
    says it of these.
@@ -208,14 +236,15 @@ clearly.
   foundation check reads the two together.
 - Round 3's Writing read has words to read against: about 150 bare
   uses of "rule" for a file become "agent rule", "skills and rules"
-  among them; about 70 bare "stub" become "record stub"; and the
+  among them; about 70 bare "stub" become "record stub"; about 26
+  plain uses of "shape" and "form" are reworded; and the
   conventions manual's §1.1 reads as an agent rule's lines. That is
   round 3's work.
 - The run's glossary template, `cbc-framing`'s, takes the second
   kind of entry in its header, so a run's agent reading rule 9 finds
   the form. The list is the run's own.
 - The glossary's groups stay by what a word names. A second-kind
-  entry is told apart by its shape; a grep for "plain English:"
+  entry is told apart by its layout; a grep for "bare, plain English"
   lists them. A second grouping would be a second home for the list.
 - A shipped agent rule changes. Runs hold the older copy until a
   delivery; run 6's reading is pending.
