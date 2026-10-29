@@ -13,7 +13,8 @@ story behind a lesson" is worked, and leaves TODO. Decided
    without the case, it gains a plain example.
 2. **The story's home is the history that already tells it:** an
    ADR, or a devlog entry. A story told nowhere else is written,
-   word for word, into one devlog entry on the day it moves.
+   word for word, into a devlog entry in the commit that moves its
+   manual's notes.
 3. **Now, before round 3's rule check,** so round 3 reads the
    manuals in the shape they keep.
 
@@ -51,10 +52,10 @@ which likens a use note to a lesson's; `model-placing.md` stage 3
 and its *Not known yet*, where a model's dated note becomes the same
 one line.
 
-**4. `docs: devlog keeps the lessons' own stories`**
-One entry, dated the day it is written, holding the ~21 notes told nowhere else,
-word for word, each under its manual and section. Written before the
-manuals move, so each pointer lands.
+**4. Dropped, 2026-10-29.** It was one devlog entry for every story
+told nowhere else, written first. Which stories those are shows only
+when each note is read beside its home, which 5 to 8 do. So each of
+them writes its own.
 
 **5. `docs: the exchange's lessons point at stories`**
 16 notes.
@@ -71,7 +72,10 @@ visual-comparison, writing, and the tiers model: 24 notes.
 
 In each of 5 to 8, every note is read beside its candidate home
 first; its line names the exact entry; a live claim moves into the
-body; the section is read again for the safeguard.
+body; the section is read again for the safeguard. A story told
+nowhere else goes, word for word, into a devlog entry in the same
+commit, headed "<its date>, the lessons' own stories: <the
+manuals>", so its pointer lands at once.
 
 **9. `docs: ADR-0073 accepted, the story item worked`**
 The TODO item leaves, and conversation-memory §18 goes with it.
@@ -89,10 +93,11 @@ that then disagrees gets a lettered commit after it.
   devlog 2026-10-19, later.*". A note told in several places names
   each. It stays in italics, set apart from the rule, as the note
   was.
-- **The orphans' entry first,** so no line points at nothing. Its
-  heading names what it is: "<its date>, the lessons' own stories".
+- **Each commit's orphans land with their pointers,** so no line
+  points at nothing: one devlog entry per commit, its heading
+  naming what it is.
 - **A note an ADR tells only in part** points at the ADR, and what
-  the ADR leaves out goes, word for word, into the orphans' entry.
+  the ADR leaves out goes, word for word, into that commit's entry.
 - **Examples are not decided here.** The safeguard adds one only
   where a section needs it; whether the conventions keep examples
   at all is TODO's own item.

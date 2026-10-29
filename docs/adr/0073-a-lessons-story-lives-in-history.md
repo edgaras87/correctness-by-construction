@@ -46,7 +46,10 @@ ADRs or devlog, and manuals never ship.
 **Where its story goes:**
 1. **All of them into one new devlog entry.** Rejected: the 50
    already told would be told twice, under a date that is not
-   theirs.
+   theirs. One entry for the orphans alone, written first, was the
+   plan's own until 2026-10-29: which stories are orphans shows only
+   when each note is read beside its home, so the reading would run
+   twice.
 2. **A new record, a lessons log,** each note under an id. Rejected:
    a new kind of record, with its own row, form and section, for
    stories ADRs and the devlog already hold.
@@ -73,9 +76,10 @@ ADRs or devlog, and manuals never ship.
 2. **The story's home is the history that already tells it,** an ADR
    or a devlog entry, read beside the note before its line is
    written. A story told nowhere else is copied, word for word, into
-   one devlog entry written the day the notes move, before any line
-   points at it. Where an ADR tells a story only in part, the line
-   points at the ADR, and the rest goes into that entry.
+   a devlog entry written in the commit that moves its manual's
+   notes, so no line points at nothing. Where an ADR tells a story
+   only in part, the line points at the ADR, and the rest goes into
+   that entry.
 3. **Now, before round 3's rule check,** as one commit plan, so
    round 3 reads the manuals in the shape they keep.
 
@@ -89,8 +93,8 @@ ADRs or devlog, and manuals never ship.
 - Our files that follow the rule change: `convention-manual.md`
   item 6, `approach-evaluation.md` stage 6, and `model-placing.md`
   stage 3 and its *Not known yet*.
-- One devlog entry holds the ~21 stories told nowhere else, word for
-  word.
+- A devlog entry in each commit that moves notes holds the stories
+  told nowhere else, word for word: about 21 in all.
 - The 72 notes become pointers, each read beside its home first.
 - A manual reads as its rules. The cost accepted: at a change, the
   story is one hop away, in a record that is never edited, so the
