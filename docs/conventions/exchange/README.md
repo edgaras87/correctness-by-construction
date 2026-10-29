@@ -175,7 +175,7 @@ nothing in flight — and when it is the agent, it reports what it
 found and waits for the word before anything lands. The
 staging is named by the commit at which the files and the note are
 both final — commit the note last, then name the bundle — so the
-pin the run records points at exactly the note it read. *Its story: devlog 2026-09-25, later; and devlog 2026-10-29, the lessons' own stories: the exchange.*
+pin the run records points at exactly the note it read. *Its story: devlog 2026-09-25, later; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 ### 3.2 What goes
 
@@ -229,7 +229,7 @@ and what it holds for each kind — is the conventions convention's
 (`docs/conventions/conventions/` §1.3, *The `foundation` line*). What is the exchange's: the
 line travels with the copy as a live claim, what this file comes
 from *now* and not when or from which run, and nothing in a copy
-can say otherwise. *Its story: devlog 2026-09-26, evening; and devlog 2026-10-29, the lessons' own stories: the exchange.*
+can say otherwise. *Its story: devlog 2026-09-26, evening; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 ### 3.6 A copy carries presence and content, never absence
 
@@ -432,7 +432,7 @@ changed there but not committed. That work is not yet the run's
 word. But a verdict may rest on it, so the reading names it, and no
 verdict is written against what that work undoes.
 
-*Its story: devlog 2026-10-18; and devlog 2026-10-29, the lessons' own stories: the exchange.*
+*Its story: devlog 2026-10-18; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 ### 6.2 A file the run wrote
 
@@ -458,7 +458,7 @@ A reading also asks what the run teaches the worked example,
 `delivery/method/.claude/skills/cbc-framing/references/worked-example.md`,
 which its copy in `cbc-slice` follows.
 
-*Its story: devlog 2026-09-30, later still; and devlog 2026-10-29, the lessons' own stories: the exchange.*
+*Its story: devlog 2026-09-30, later still; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 ### 6.4 A reading closes two ways
 

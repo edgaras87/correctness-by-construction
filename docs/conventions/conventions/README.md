@@ -138,10 +138,7 @@ a step's Now line names the stage it is in, and one word for both
 would read "Now: Step 3" inside Step 1. A numbered instruction
 inside a stage is not a phase, and its list may call it a step.
 
-*Found 2026-10-15: `cbc-framing` called its phases steps, inside
-PLAN's Step 1, and run 3 asked for a word of their own;
-`infra-establish`'s walk did the same inside Step 3. Both say stage
-since 2026-10-17, as the other skills did.*
+*Its story: devlog 2026-10-17, later; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
 ## 2. The manual
 
@@ -173,10 +170,7 @@ the body. A section two manuals need becomes the next candidate:
 a pair recurred, the test a shape is written by
 (`docs/conventions/shapes/` §1.2, *How one is born*). The list grows no other way.
 
-*Found 2026-09-28, when the form was first written:
-`docs/conventions/exchange/` and `docs/conventions/shapes/` had
-grown the same sections with nothing telling either writer to. The
-form was not designed; it was read off the two (ADR-0039).*
+*Its story: ADR-0039.*
 
 ### 2.1 The opening statement
 
@@ -185,11 +179,7 @@ one line whether this is the page they need. Not a summary of how
 it works, nor its boundary or its channel, which have sections of
 their own.
 
-*Found 2026-10-19: of the fourteen manuals' opening statements,
-five said the subject in one sentence, five added claims that have
-other homes, and four summed up how the work goes. "What the
-convention is" allowed all three. The conventions manual's own
-said what a convention claims, not its subject.*
+*Its story: devlog 2026-10-19; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
 ### 2.2 What it is for
 
@@ -221,11 +211,7 @@ seat, the section is a paragraph naming which body sections are
 whose, as `docs/conventions/exchange/` does. Placed after *what
 this is made usable as*.
 
-*Found 2026-09-28: twice a manual had grown seat sections because
-the two sides do different things, and nothing told the writer of
-the next one to ask. Six manuals had never said. Every manual
-gained the section, so the asking is built in (ADR-0039,
-decision 3).*
+*Its story: ADR-0039.*
 
 ### 2.5 The body
 
@@ -236,10 +222,7 @@ it, and do not tell it again. Facts-in-sync asks the same of a convention's subj
 one. When a section gets a number, and its parts too, is facts-in-sync's
 (`docs/conventions/facts-in-sync/` §3.2, *A section's parts are numbered*).
 
-*Found 2026-10-19: in this manual, §3 held two subjects, how a
-manual is written and how everything stays in step. Nothing said a
-section holds one subject, so a walk through the manual had no
-rule to name.*
+*Its story: devlog 2026-10-19; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
 ### 2.6 A lesson taken
 
@@ -255,11 +238,7 @@ short plain example (ADR-0073). Another convention, or one
 project's detail, may appear as an example. The statement never
 stands on it, so it still holds when the example is gone.
 
-*Learned 2026-10-18, at `docs/conventions/agent-arrangement/` §3.7, `CLAUDE.local.md`.
-Its first draft said what `CLAUDE.local.md` holds through
-`commit-plan`'s grant of small commits. The reviewer asked for it
-without that dependency and beyond commits. It became a test any
-line can be sorted by, with the commit grant as one example.*
+*Its story: devlog 2026-10-18; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
 ### 2.7 Why it arrives this way
 
@@ -301,17 +280,11 @@ placing takes these steps:
    how this repo's agent works. No registry entry: the deliverer
    receives no conventions (ADR-0042).
 
-*Written 2026-09-28 from how the last three conventions had been
-added, not from what the index said. By 2026-10-18 seven had come
-this way: `visual-comparison`, the exchange, shapes, this one,
-writing, the retrospective and first-time work.*
+*Its story: devlog 2026-10-18; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
 No CHANGELOG line and no PLAN step. The CHANGELOG logs the concept's
 versions and has no place for a convention's entry (`CHANGELOG.md`'s
-standing comment); the PLAN has no per-convention steps. *The
-index asked for both until 2026-09-28, and the last seven
-conventions took neither — a rule kept where nobody reads it
-(ADR-0039).*
+standing comment); the PLAN has no per-convention steps. *Its story: devlog 2026-09-28; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
 ## Why it arrives this way
 

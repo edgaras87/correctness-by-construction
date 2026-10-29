@@ -66,9 +66,7 @@ that carry a fact reference, so at each commit each new or changed
 line is asked whether it relies on a fact written elsewhere, and
 whether it says where (ADR-0070).
 
-*Found 2026-10-24: the 11 manuals' channel sections reasoned from
-the agent model with no fact reference. No walk could see them, and
-a read found them.*
+*Its story: devlog 2026-10-24.*
 
 ## 1. One home
 
@@ -99,17 +97,7 @@ being trusted. In practice:
   (ADR-0070).
 - **Comments and config count too,** not only records.
 
-*Added 2026-10-15, from run 3: its loaded one-home rule said these
-five things, and project-recording's rule did not (ADR-0053).*
-
-*Widened 2026-10-20: a line cut to a fact reference left its reader
-without the picture at the moment of use. The reviewer judged
-three cases, each retold and pointed, and the retellings read
-better (ADR-0059).*
-
-*Widened 2026-10-27: round 2 of this repo's refinement had to say
-whether the decisions log and the conversation memory were history.
-Both are dated and never rewritten, and the list named neither.*
+*Its story: ADR-0053; ADR-0059; devlog 2026-10-27, late night.*
 
 ## 2. Point and derive
 
@@ -202,21 +190,10 @@ so does every section of the same form in the document, whether
 anything points there yet or not: a fact reference names the
 number, and a reader meets one structure throughout. Bold emphasis
 inside running prose is not a part. A bold-led bullet is a part when
-it holds a paragraph of its own, with its own reason or dated case.
+it holds a paragraph of its own, with its own reason or story.
 A short list item, a phrase and a line, is not.
 
-*Decided in the walk, 2026-09-29, when the conventions manual's §3
-held six rules as bold paragraphs and every reference into it said
-"§3"; it lived in the devlog alone until 2026-09-30. Written there
-first as "a part other text points at", it would have numbered one
-section of project-recording beside seven built the same way; the
-reviewer caught it at the boundary, and it was reworded the same
-day, by form.*
-
-*Found 2026-10-27, at round 2's close read: commit-plan §2's
-bold-led bullets had been numbered in `79bc4a2`, and 16 more
-sections in 10 documents were built the same way. The rule said
-nothing of a bold-led bullet, so each could be read two ways.*
+*Its story: devlog 2026-09-30, later; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync; devlog 2026-10-27, night.*
 
 ### 3.3 A rename is grepped at its commit
 
@@ -227,10 +204,7 @@ Placing an approach on trial into a convention is such a move
 (ADR-0070). A commit plan's sweep looks again before its close
 (`docs/conventions/commit-plan/` §2.10, *The sweep, before the close…*).
 
-*Found 2026-10-19: the refinement's manual was renumbered three
-times on 2026-10-18, outside any commit plan, so no close sweep
-ran. A fact reference in TODO stood stale for five commits. The grep
-moved from a plan's close to the commit that renumbers.*
+*Its story: devlog 2026-10-19.*
 
 ## 4. The rule for every description
 
@@ -285,15 +259,7 @@ derivative, the seats, what each asserts — is ADR-0039; the
 concept's edges are ADR-0003 and `CHANGELOG.md`'s standing
 comment.
 
-*Before 2026-10-17 the rest ran twice by hand: the correspondence
-check of 2026-09-25, and the walk of `a337674^:docs/master.md` at
-the exchange plan's close, both because the reviewer asked, not
-because anything made anyone look.*
-
-*Found 2026-10-19: project-recording's deliverer seat retold
-`PLAN.md`'s step form, and nothing linked the two, so a change on
-either side never reached the other. The reviewer had a record's
-form name its description, as a skill does.*
+*Its story: devlog 2026-09-25, later; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync; devlog 2026-10-19.*
 
 ## 5. A disagreement
 
