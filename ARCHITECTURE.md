@@ -133,14 +133,14 @@ chapters carry none (`docs/conventions/facts-in-sync/` §4, *The rule for every 
 The concept made usable: `cbc-framing` and `cbc-slice`, under
 `.claude/skills/`, and the shapes their gates read, under
 `.claude/shapes/`. Each skill is derived from the concept, as its
-`foundation` line says (`docs/conventions/conventions/` §1.3, *The `foundation` line*).
+`foundation` line says (`docs/conventions/conventions/` §1.3, *The Foundation Line*).
 
 ### 2.2 The stack practice — `delivery/spring-postgres/`
 
 What one real Spring and Postgres project taught: `infra-establish`,
 `infra-serve` and `cbc-bootstrap`. Not derived from the concept but
 checked against it, as their `foundation` lines say
-(`docs/conventions/conventions/` §1.3, *The `foundation` line*). A run on
+(`docs/conventions/conventions/` §1.3, *The Foundation Line*). A run on
 another stack takes no `spring-postgres/`; another stack's practice
 would be a group beside this one (ADR-0029).
 
@@ -197,7 +197,7 @@ of the tree, or a check at commit review.
 |---|---|---|
 | The concept is canonical here; the archive it came from is a frozen snapshot, never a source | §1.1, *The concept — `concept/`*; `CHANGELOG.md`'s `[v1]` entry | commit review |
 | A concept change that could invalidate what derives from it lands with a version entry | `CHANGELOG.md`'s standing comment (ADR-0003) | commit review |
-| Every execution states the concept version it derives from | `docs/conventions/conventions/` §1.3, *The `foundation` line* (ADR-0004, ADR-0036) | its `foundation` line, which travels with every copy |
+| Every execution states the concept version it derives from | `docs/conventions/conventions/` §1.3, *The Foundation Line* (ADR-0004, ADR-0036) | its `foundation` line, which travels with every copy |
 | Every file a run receives has its master here, in the group that ships it | `docs/conventions/exchange/` §1, *What cannot change* and §3.2, *What goes* | `exchange-deliver`, which stages only from the masters |
 | A manual never ships | `docs/conventions/exchange/` §3.2, *What goes* | the tree: manuals sit under `docs/`, and a delivery stages only from `delivery/` and `concept/` |
 | A manual never outlives the rule it explains | `docs/conventions/facts-in-sync/` §4, *The rule for every description* and §5, *A disagreement* (ADR-0025) | the foundation check, `.claude/rules/foundation-check.md`, at each commit |

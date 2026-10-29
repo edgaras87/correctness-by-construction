@@ -226,7 +226,7 @@ for all of them, and this is where it is stated:
 2. Each derived thing names its description, once: one
    `foundation` per file, its root, what the whole of it stands on.
    Which files carry it, where, and what each holds is the conventions manual's
-   (`docs/conventions/conventions/` §1.3, *The `foundation` line*). Every line that uses a part of
+   (`docs/conventions/conventions/` §1.3, *The Foundation Line*). Every line that uses a part of
    a document, its root included, carries a fact reference to that
    part (§3.1, *What it is*), the root's parts as much as any other's.
    Where all of a section's lines use one part of the root, the
@@ -252,7 +252,7 @@ for all of them, and this is where it is stated:
 Steps 1, 2 and the greps in 3 are checkable today: every shipped
 skill and rule carries `foundation`, every manual names what
 derives from it in *What this is made usable as*, and a path and a
-`foundation` value are tokens (`docs/conventions/conventions/` §1.3, *The `foundation` line*).
+`foundation` value are tokens (`docs/conventions/conventions/` §1.3, *The Foundation Line*).
 The foundation check makes this repo do the rest, the re-reads in
 step 3 and steps 4 and 5, before every such commit
 (`.claude/rules/foundation-check.md`). Where a manual and the concept

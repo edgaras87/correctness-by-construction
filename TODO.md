@@ -502,18 +502,18 @@
 - [ ] Write a rule that writes a skill or rule from its convention
       (2026-10-17, the reviewer).
       Context: the conventions manual says how a skill or rule is
-      written (`docs/conventions/conventions/` §1, *The artifact*), and nothing puts it in front of the
+      written (`docs/conventions/conventions/` §1, *A convention's artifacts*), and nothing puts it in front of the
       writer: a manual has `convention-manual.md`, a skill or rule
       has no such rule. An approach on trial writes freely, and its
       pieces are input: what the work needed. When an evaluation
       places one, the lasting form comes from the conventions manual: the manual by
-      (`docs/conventions/conventions/` §2, *The manual*), each skill or
-      rule from it by (`docs/conventions/conventions/` §1, *The artifact*).
+      (`docs/conventions/conventions/` §2, *The Convention Manual*), each skill or
+      rule from it by (`docs/conventions/conventions/` §1, *A convention's artifacts*).
       Ideas:
       - a rule derived from the conventions manual's artifact part
-        (`docs/conventions/conventions/` §1, *The artifact*), as
+        (`docs/conventions/conventions/` §1, *A convention's artifacts*), as
         `convention-manual.md` is from its manual part
-        (`docs/conventions/conventions/` §2, *The manual*), on `.claude/skills/`,
+        (`docs/conventions/conventions/` §2, *The Convention Manual*), on `.claude/skills/`,
         `.claude/rules/` and `delivery/`.
       - a `paths:` rule loads only when a file is touched, and the
         commit is the other moment

@@ -89,7 +89,7 @@ its thing. A CBC Run keeps a glossary of its own.
   Model, the Tiers Model, the Idea-to-Output Model.
 - **Convention Manual** — a convention's Canonical Description, at
   `docs/conventions/<name>/README.md` (`docs/conventions/conventions/`
-  §2, *The manual*).
+  §2, *The Convention Manual*).
 - **Made Usable** — what a stated body becomes in the delivery: the
   concept as the method, the conventions as the container.
 - **Work Approach** — how a piece of work is done. A skill or an
@@ -166,7 +166,7 @@ its thing. A CBC Run keeps a glossary of its own.
   Shape, a record's form and a Convention Manual standing on an Idea
   Model carry one; a line that uses a part of a document carries a
   Fact Reference to that part instead
-  (`docs/conventions/conventions/` §1.3, *The `foundation` line*;
+  (`docs/conventions/conventions/` §1.3, *The Foundation Line*;
   `docs/conventions/facts-in-sync/` §4, *The rule for every description*).
   Not *source*: that was a run's word for the deliverer, and is not
   ours.
@@ -184,7 +184,7 @@ its thing. A CBC Run keeps a glossary of its own.
   named by its skill outside it: `cbc-slice`'s Stage 3,
   `cbc-framing`'s Stage 2. A Plan Step's Now line names the Skill
   Stage it is in. How a skill names them is the conventions manual's
-  (`docs/conventions/conventions/` §1.4, *Stages*).
+  (`docs/conventions/conventions/` §1.4, *Skill Stages*).
 - **Approach Stage** — one phase of an Approach on Trial, numbered
   the same way (`.claude/approaches-on-trial/approach-drafting.md`,
   *Stages*).

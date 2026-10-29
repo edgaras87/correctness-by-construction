@@ -163,7 +163,7 @@ one page.
   `docs/conventions/project-recording/` §13, *The records table…*.
 - **The form of a commit message** —
   `docs/conventions/commit-messages/`.
-- **The form of a manual** — `docs/conventions/conventions/` §2, *The manual*.
+- **The form of a manual** — `docs/conventions/conventions/` §2, *The Convention Manual*.
 - **What a kind of output looks like** —
   `docs/conventions/shapes/`.
 - **How a rule reaches an agent** —

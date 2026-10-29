@@ -226,7 +226,7 @@ hold. When such a run exists, those lines become a fill.
 
 The field — its name, that every skill, rule and shape has one,
 and what it holds for each kind — is the conventions convention's
-(`docs/conventions/conventions/` §1.3, *The `foundation` line*). What is the exchange's: the
+(`docs/conventions/conventions/` §1.3, *The Foundation Line*). What is the exchange's: the
 line travels with the copy as a live claim, what this file comes
 from *now* and not when or from which run, and nothing in a copy
 can say otherwise. *Its story: devlog 2026-09-26, evening; devlog 2026-10-29, the lessons' own stories: the exchange.*
@@ -521,7 +521,7 @@ new is written without it (`docs/conventions/agent-arrangement/`
   arrangement's** — `docs/conventions/agent-arrangement/`, its
   seats.
 - **What `foundation` holds for each kind of file** —
-  `docs/conventions/conventions/` §1.3, *The `foundation` line*.
+  `docs/conventions/conventions/` §1.3, *The Foundation Line*.
 - **How a shape reaches a run** — `docs/conventions/shapes/` §4, *Where a shape lives, between…*.
 - **The commits and decisions of working a reading** — a commit
   plan when it takes more than one commit,
