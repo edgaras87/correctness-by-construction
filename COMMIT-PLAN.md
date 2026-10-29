@@ -8,8 +8,9 @@ what changed since round 2's check; three doubts were tried on
 samples and the reviewer decided each on 2026-10-29. Rule 9 gains
 two sentences: a word of another part of speech is another word, and
 a first-kind word used in its plain sense carries a mark. The
-glossary lists two more words of the second kind, decisions log and
-repo tag, and four entries say how their plain uses look. Rule 11
+glossary lists three more words of the second kind, decisions log,
+repo tag and idea model, and four entries say how their plain uses
+look. Rule 11
 says an edit changes the lines its change needs and no others, and
 Markdown has no line width. Both `writing.md` carry rules 9 and 11
 as the manual states them. Two TODO items are closed, and the
@@ -31,9 +32,11 @@ the reviewer's decisions, and the files by layer. The Writing row in
 *Kinds and rounds* widens to all living text.
 
 **3. `docs: ADR-0076 rule 9 refined, the pass first`**
-Proposed. The two refinements to rule 9, log and tag listed, the
-noun "fill" gone, model's plain use marked, and the words pass before
-round 3's read. Names what it changes in ADR-0074.
+Proposed. The two refinements to rule 9; log, tag and model listed,
+the last as idea model since the shipped text already uses the word
+in four other senses; the noun "fill" gone; the exchange's verb
+"stage" naming its object; and the words pass before round 3's read.
+Names what it changes in ADR-0074.
 
 **4. `docs: ADR-0077 an edit changes only its lines`**
 Proposed. Rule 11 and the ways rejected: a width as a guide, a
@@ -42,8 +45,9 @@ change about as long as what it replaces.
 **5. `docs: rule 9 refined, log and tag join the list`**
 The writing manual's rule 9 gains its two sentences. The glossary's
 header takes the part-of-speech sentence; entries of the second kind
-for log and tag; one line each in run, take, model and step. One
-commit: the sentences and the entries are one rule as it now reads.
+for log, tag and model; one line each in run, take, step and stage.
+One commit: the sentences and the entries are one rule as it now
+reads.
 
 **6. `docs: writing rule 11, an edit changes its lines`**
 The writing manual's §2 gains rule 11 with its why.
@@ -81,5 +85,11 @@ The entry for the set, with the session-end lines.
   decisions with different reasons and different rejected options.
 - **The check is written before its fixes land, and its endings
   after,** in two `docs(temp)` commits, as round 2's check was.
+- **Model is listed, not marked** (revision of 2026-10-29, before
+  commit 2). The plan first kept "model" bare and marked Claude's 29
+  uses. The reviewer asked why; the shipped text already says world
+  model, adversity model, data model and role model, so a bare
+  "model" tells a reader nothing, and the rule's own test says second
+  kind. About 208 generic uses become "idea model" in the pass.
 - **No commit is provisional.** The four decisions are the
   reviewer's, taken one by one on 2026-10-29.
