@@ -18,7 +18,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-10-28.
+     Last touched: 2026-10-29.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation-memory…).
      foundation: the project-recording convention -->
@@ -847,59 +847,6 @@ when".
 - Not built now: round 2 does not need it. Its moment is this
   item's trigger, the refinement's close, when the refinement's
   approach is judged: the largest check this repo runs.
-
-## 18. The story behind a lesson
-
-Item: "Decide whether a manual keeps the story behind a lesson".
-
-### 2026-10-25, evening
-
-#### What the reviewer asked
-
-While round 2's DECISION-7 was decided, on whether the lessons rule
-reaches beyond manuals: "should we keep those "written stories"?
-isnt it a noise? do we need them at all and if do, should we move
-them to some kind of record file to which we refer and not keeping
-them in texts? doesnt that thing is for maintenance and not for
-usage? even for maintenance it is for remembering where it came,
-but how much it is usefull? cost is that we have text and it loads
-to context together with text. but it is used only at specific case
-when we need to remember store why we brought it in." And which way
-holds best on maintenance, readability, future-proofing and
-complexity.
-
-#### What exists today
-
-- `docs/conventions/conventions/` §3.7: the body states a lesson in
-  general; the case goes beside it as a dated italic, what
-  happened, when, what changed. *What it is for* holds the need's
-  evidence by design, and is not in question.
-- Counted 2026-10-25: 56 notes in the 12 manuals, 286 of 3,817
-  lines (7%); 17 in our `.claude/`, 115 of 3,245 (3%).
-- Round 2's read: 6 rules stood only in a note (FINDING-155, 156,
-  163, 164, 165, 167).
-- Many notes have their story in an ADR or the devlog too; not all.
-
-#### Points made
-
-- A note does two jobs. An example shows the rule in use ("a
-  substring cannot tell `3` from `30`"), read every time. An origin
-  says where it came from, read only at a change.
-- An origin is needed when a rule is changed or dropped (what
-  failure did it stop), when its strength is judged (lived or
-  guessed, once or twice), and when the reviewer asks "why did we do
-  X?". Each comes at a change, when the foundation check opens the
-  manual anyway, so one pointer costs one hop.
-- A run can never use our origins: it cannot open our ADRs or
-  devlog.
-- Three ways: keep the full note; a one-line pointer with the story
-  in history; drop it and rely on git. The pointer held best on
-  maintenance and readability, and held on future-proofing; the full
-  note held only on future-proofing; dropping it loses the evidence
-  the manuals ask for.
-- Not now: it changes §3.7, the rule round 2's Lessons kind reads
-  against, which stays while the round reads (the refinement's
-  §2.4).
 
 ## 19. What "rule" names
 

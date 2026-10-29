@@ -678,33 +678,6 @@
                no second manual sharing it.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
 
-- [ ] Decide whether a manual keeps the story behind a lesson
-      (2026-10-25, the reviewer).
-      Context: a lesson's dated italic does two jobs. An example
-      helps a reader use the lesson, each time it is read. An origin
-      serves only when the lesson is changed or questioned. The 12
-      manuals hold 56 such notes, 286 of 3,817 lines (7%); our
-      `.claude/`, 17 and 115 lines (3%). Each loads with its file.
-      Round 2's read found 6 rules standing only in a note. Round 2 reads against the conventions manual's lesson rule
-      (`docs/conventions/conventions/` §2.6, *A lesson taken*), so the
-      rule stays until the round closes.
-      Ideas:
-      - examples stay; each origin becomes one line pointing at its
-        history, an ADR, a devlog entry or a commit, and the story
-        lives there.
-      - an origin with no other home gets one: a devlog entry
-        written the day it moves.
-      - weighed on maintenance, readability, future-proofing and
-        complexity, the fact reference held best; the full note held only
-        on future-proofing.
-      - "Decide whether the concept, the conventions and the
-        approaches keep examples" weighs the examples; this item,
-        the origins.
-      Trigger: round 2 of the refinement closes, before round 3's
-               rule check.
-      See: devlog 2026-10-25, evening; `TODO-CONVERSATION-MEMORY.md`
-      §18, *The story behind a lesson*.
-
 - [ ] Decide what "rule" names, and give the agent's rule files a
       name of their own (2026-10-25, the reviewer).
       Context: "rule" has four senses in 779 uses across living

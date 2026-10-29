@@ -1,7 +1,9 @@
 # 0073. A lesson's story lives in history
 
 Date: 2026-10-29
-Status: Proposed (opened under the commit plan for lesson stories)
+Status: Accepted (2026-10-29, at the set's records commit; opened
+Proposed under the commit plan for lesson stories, revised once:
+each commit that moved notes kept its own orphans)
 
 ## Context
 
@@ -94,8 +96,12 @@ ADRs or devlog, and manuals never ship.
   item 6, `approach-evaluation.md` stage 6, and `model-placing.md`
   stage 3 and its *Not known yet*.
 - A devlog entry in each commit that moves notes holds the stories
-  told nowhere else, word for word: about 21 in all.
-- The 72 notes become pointers, each read beside its home first.
+  not told whole elsewhere, word for word: 42 in four entries, more
+  than the 21 measured first, since a note whose home holds only
+  the fix is copied too.
+- 69 notes became pointers, each read beside its home first. Three
+  stayed: one was no note, one states a section's trial status, and
+  one sits in shapes' *What it is for*.
 - A manual reads as its rules. The cost accepted: at a change, the
   story is one hop away, in a record that is never edited, so the
   pointer cannot drift.
