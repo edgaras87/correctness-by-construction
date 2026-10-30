@@ -2726,6 +2726,12 @@ failure-mode labels; 537, the chapters' headings; 543, "enemy".
   FINDING-543: declined, "enemy" is the census's word for an actor and
   "adversary" the walls' word for what they defend against; a rename
   reaches 16 uses in five shipped files.
+- Chosen: (a), by the reviewer, 2026-10-30, as recommended. (b) was
+  ruled out by DECISION-16's reopening: the plain-rewrite item keeps
+  only what this round leaves. The 13 editorial findings are worked in
+  layer 3, concept v1 staying v1, with one CHANGELOG line under
+  [Unreleased]. FINDING-531: the four labels stay, *How it rots*
+  becomes *How it fails*. FINDING-537 and 543 declined.
 
 **DECISION-18.** Whether dated notes are history. Rests: the
 approaches' *Uses* notes and the refinement's *Found* lines,
