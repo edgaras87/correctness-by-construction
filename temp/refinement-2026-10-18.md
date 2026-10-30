@@ -1084,3 +1084,81 @@ out, as before round 2, with `temp/run-6-briefing.md` and
 What changed since round 2's list, at `620fe22`: three came in, the
 glossary (layer 3, ADR-0070's homes), the ADR folder's form (layer
 4) and `model-placing.md` (layer 5); none went; no layer widened.
+
+### The pass before the read
+
+The pass that gives old text its Glossary Names and its titles their
+labels ran 2026-10-29 to 2026-10-30 as the commit plan "the
+Names-and-labels pass", `4a15920` to `fbc4294`, 21 commits: 17
+planned, two revisions of the plan, two inserted for the sweep's
+fixes, 14a and 14b. Its order was the Refinement Layers' order; the
+history item of 2026-10-29 rode first, as commit 2. The hand read
+every living file whole; a script, kept in the session's scratchpad
+and never committed, capitalized the lowercase Names the hand
+confirmed, replaced the italic title in every Fact Reference to a
+retitled section, and counted headings, references, front matter and
+code fences before and after each commit.
+
+**Counts.** Measured at the opening, 2026-10-29, over 92 files, and
+at the close, 2026-10-30, at `fbc4294`, over 90: the glossary Skill
+Template left and the shipped glossary came in, and the close's script
+was rebuilt after a compaction, so the two file lists differ by one
+convention file each way.
+
+| Measure | Opening | Close |
+|---|---|---|
+| lines that spell a Glossary Name in lowercase | 171 | 50, all the fixed heading *What this is made usable as* and the verb "made usable" |
+| lines that carry a bare word ending some Name | 5,131 | 4,724, English where read: "it runs", "step 4 of the walkthrough", "the shape a CBC Run gets" |
+| numbered titles | 360 | 360 |
+| of them past 30 characters, or with a gloss | 174, and about 230 statements among the rest | 19, each kept by a decision below |
+| Fact References whose title differs from its heading | not measured | 0 in living text; 1 in the plan file, deleted at the close |
+
+**What the hand changed beyond the script.**
+
+- Eight things found defined without a Name got one: Delivery Fill,
+  Run Ask and Foundation Check in the manuals; Concept Repo, Run Repo
+  and Concept Garden in the Tiers Model; Change Set in the commit-plan
+  manual; Master Copy was already Named. Each entered
+  `docs/glossary.md` in its commit.
+- The CBC Run's glossary is a Record Stub born filled,
+  `delivery/container/docs/glossary.md`: 27 Names the shipped texts
+  use, one plain sentence each from the CBC Run's side; the CBC Run
+  adds its own below. cbc-framing's glossary Skill Template left, and
+  the skill says framing adds each thing it defines as a Glossary
+  Name.
+- The four Output Shapes are titled by their output: the Kill Shape,
+  the Evidence Test Shape, the Registry Entry Shape, the Slice Record
+  Shape.
+- The method's and the stack's own words stayed: slice, kill, fold,
+  framing, promise, census, witness, wall, harness, ground. They are
+  the concept's, and the five concept chapters left the pass
+  untouched.
+- The container's `approach-drafting` is byte-identical to ours
+  again; `visual-comparison`'s footer is two pointers; the playbook
+  is v11; the Pure Seed's prompt says "one commit at a time" where
+  "step" meant a commit; its sed cuts the playbook at *The
+  Plan Step Form*.
+- The sweep ran before the close, over the 90 files unwrapped, by
+  two checks: every Name spelled in lowercase, and every Fact
+  Reference's title against the heading it points at. It found seven
+  stale titles and thirteen lowercase Names, fixed in 14a, 14b and
+  the agent commit; the plan's "cut form with …" grep found nothing
+  the title check had not.
+
+**Kept by decision, and so left to the read as settled.**
+
+- ARCHITECTURE.md's seven area titles keep their paths after the
+  dash (the plan's decision).
+- The two walks of `infra-establish` keep their nine stage and step
+  headings' words; `spring-boot-walkthrough`'s two long step headings
+  the same. Rule 10 leaves stage headings alone; only "1 ·" became
+  "1." (commit 13's boundary).
+- The manual form's fixed headings keep their words, *The seats*,
+  *What this is made usable as*; "made usable" as a verb is English.
+- `.claude/decisions.md`'s entries are history and keep their words.
+
+**Left to the read.** `shapes-lifecycle.md` §4, *When an Output
+Shape names work*, is 31 characters. The other writing rules, 1 to 8
+and 11, were not read in the pass; the hand changed words and titles
+only. Round 3 reads all living text against the whole rule, so its
+Writing findings are what the pass missed, not the pass.
