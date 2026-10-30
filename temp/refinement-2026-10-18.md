@@ -2963,6 +2963,8 @@ outside its owner, and an Approach Stage's case. Rests: FINDING-571,
   rule's examples read.
 - Recommended: (a). One case for one kind of thing; the glossary
   already writes it.
+- Chosen: (a), by the reviewer, 2026-10-30, as recommended. The
+  eight findings are fixed.
 
 **DECISION-26.** Which figures are dead. Rule 5's 109 findings rest on
 a reading of each figure; the reviewer decides each word once, here.
