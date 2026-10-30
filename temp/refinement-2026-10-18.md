@@ -3103,6 +3103,11 @@ lead only.
   for a title with a gloss, said in facts-in-sync §3.1.
 - Recommended: (a). The pass kept the titles for their paths; the
   readers show the cost lands on every reference.
+- Chosen: (a), by the reviewer, 2026-10-31, as recommended. The count
+  above was wrong: 15 references in 6 files, not about 30. The seven
+  titles lose their gloss, each path going to its section's first
+  line; the 15 references carry the title whole; this reverses the
+  pass's decision for these seven.
 
 **DECISION-32.** What a convention is. Raised by the reviewer at
 DECISION-24, 2026-10-30. Rests: DECISION-24's wording; every text that
