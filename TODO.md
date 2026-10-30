@@ -505,6 +505,17 @@
       Trigger: the refinement of this repo closes.
       See: devlog 2026-10-18, readability.
 
+- [ ] Decide whether writing rule 10 reaches unnumbered headings
+      (2026-10-30, the reviewer).
+      Context: rule 10 binds a numbered section's title; its reason,
+      that a title is read in every Fact Reference to it, reaches an
+      unnumbered heading too. Refinement Round 3 found references
+      cutting a skill's or a reference file's heading short, and 27
+      unnumbered headings in the Method Group with a gloss after a
+      dash or colon. The round read against the rule as written.
+      Trigger: the refinement of this repo closes.
+      See: `temp/refinement-2026-10-18.md`, DECISION-20 (`1aa928c`).
+
 - [ ] Write an Agent Rule that writes a skill or Agent Rule from its convention
       (2026-10-17, the reviewer).
       Context: the conventions manual says how a skill or rule is
