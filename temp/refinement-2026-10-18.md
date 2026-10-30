@@ -3086,6 +3086,9 @@ three checks.
   prose.
 - (b) A form's fixed lines stand outside the rule.
 - Recommended: (a).
+- Chosen: (a), by the reviewer, 2026-10-31, as recommended: the agent
+  reads these lines more often than most, so their voice is the one it
+  copies. The six findings are fixed within the shape each line keeps.
 
 **DECISION-31.** `ARCHITECTURE.md`'s seven area titles and the
 references cut at their dash. Rests: FINDING-285, 341 and 617, and
