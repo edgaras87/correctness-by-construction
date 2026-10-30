@@ -2665,7 +2665,7 @@ out. The numbering follows the readers' lists, FINDING-282 to 925.
 
 Sixteen, DECISION-16 to DECISION-31. Four of them end most of the
 list between them: DECISION-16, where the method's and the stack's
-186 findings are worked; DECISION-26, which figures are dead; DECISION-19,
+188 findings are worked; DECISION-26, which figures are dead; DECISION-19,
 whether the method's own words are Names; DECISION-18, whether dated
 notes are history.
 
@@ -2677,17 +2677,26 @@ this round did leaves the item.
 - (a) All worked in this round's layer 6, as a commit plan per group;
   the item closes with them, or keeps what the work left.
 - (b) The exact findings worked now, in layer 6: rules 4, 6, 8, 9 and 10
-  and the two Agreement ones, 56 findings. The rewrites, rules 1, 2,
-  3, 5 and 7, 132 findings, move to the item, which becomes a Plan
+  and the two Agreement ones, 55 findings. The rewrites, rules 1, 2,
+  3, 5 and 7, 133 findings, move to the item, which becomes a Plan
   Step of its own after the refinement closes, this list its input
   (`.claude/approaches-on-trial/refinement.md` §2.7, *Working the
   findings*: a change too big for one commit plan is a Plan Step of
   its own).
-- (c) All 186 move to the item.
+- (c) All 188 move to the item.
 - Recommended: (b). The exact fixes are each one edit and carry
   Names the CBC Run's glossary lists. A plain rewrite of 32 files is
   a Plan Step, not a layer's commit plan, and the refinement's last
   read would wait on it.
+- Chosen: (b), by the reviewer, 2026-10-30. The 133 rewrites are the
+  item's worklist: no second read finds them again, and the one check
+  read after the rewrite is its Plan Step's gate, as it would be this
+  round's close read under (a). The rewrite adds what this read did
+  not do: each rewritten section keeps its meaning, checked against
+  the concept by the Foundation Check. The refinement's last read
+  does not list a moved finding again, as with DECISION-7's. The cost:
+  a CBC Run born before the rewrite lands gets today's text, with the
+  exact fixes only.
 
 **DECISION-17.** The concept chapters. Rests: FINDING-530 to 545, the
 reader's 16, every proposal marked editorial; three ask a question
