@@ -2821,6 +2821,14 @@ lens, ledger, rider, flag, possession.
   glossaries. The method's and the stack's rule 9 findings wait for
   it, the roll-ups and 832, 896, 919, 813, 815 among them; 792 and 774
   are fixed as proposed. Every other finding goes on.
+- A question for the design, found at DECISION-28 by the reviewer,
+  2026-10-30: how a CBC Run already born gets a Name added later. A
+  record is delivered once and never updated
+  (`docs/conventions/exchange/` §2.4, *The records' exception*), and a
+  Delivery Fill writes only at birth, while the delivered Agent Skills
+  that use a new Name update at every delivery. One way: the delivered
+  groups' Names live in a file that is a pinned copy, updated with
+  every delivery, and only the CBC Run's own group in the record.
 
 **DECISION-20.** Rule 10's reach. Rests: FINDING-303, 368, 379, 380,
 454, 471, 472, 507, 517, 537, 596, 665, 666, 826, 827 and 922.
