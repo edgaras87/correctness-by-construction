@@ -23,7 +23,7 @@
      foundation: the project-recording convention -->
 
 **A Plan Step is the one piece of work being done now:** a Run Reading of a
-CBC Run, or a TODO item big enough for a branch. A change set inside it
+CBC Run, or a TODO item big enough for a branch. A Change Set inside it
 is a commit plan, and a small item needs no Plan Step, nor does a
 delivery alone. TODO never repeats the open Plan Step; a TODO item that
 becomes a Plan Step leaves TODO.
@@ -299,10 +299,8 @@ Notes:
 
 Goal: Living text written before a rule now meets that rule, and project-recording's list of the records maps them in both Convention Seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
-Now: between Refinement Rounds 2 and 3: Refinement Round 3's rule check is done; the
-pass that gives old text its Glossary Names and its titles their
-labels runs as a commit plan of its own (TODO), then Refinement Round 3 reads
-(`.claude/approaches-on-trial/refinement.md` §2.4, *Read*).
+Now: Refinement Round 3 reads (`.claude/approaches-on-trial/refinement.md` §2.4, *Reading the Finding Kinds*),
+`temp/refinement-2026-10-18.md`'s *Met in round 2, of other kinds* first.
 Gate:
 
 **At the opening.**
@@ -349,7 +347,7 @@ Gate:
       and that skill's gates hold for it (2026-10-26, ADR-0067;
       rendered by the reviewer before acceptance).
 - [ ] Each Refinement Round's close read has its counts
-      (`.claude/approaches-on-trial/refinement.md` §2.8, *A round's close*).
+      (`.claude/approaches-on-trial/refinement.md` §2.8, *A Refinement Round's close*).
 - [ ] The refinement's Work Approach is evaluated: each piece has the
       reviewer's ending, and an ADR records them with the ways
       rejected at the opening

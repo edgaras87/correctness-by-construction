@@ -120,7 +120,7 @@ is why those sentences live in this skill and nowhere else.
 
 ## What this does not cover
 
-- **The change set: sequencing, the boundary inside a plan, the
+- **The Change Set: sequencing, the boundary inside a plan, the
   close** — `docs/conventions/commit-plan/`.
 - **What the agent side is, and which paths it holds** —
   `docs/conventions/agent-arrangement/`.
@@ -129,6 +129,6 @@ is why those sentences live in this skill and nowhere else.
 
 ## Where to look
 
-- The commit boundary inside a change set:
+- The commit boundary inside a Change Set:
   `docs/conventions/commit-plan/`.
 - What the `agent` scope covers: `docs/conventions/agent-arrangement/`.

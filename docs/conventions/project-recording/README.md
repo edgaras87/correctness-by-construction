@@ -138,7 +138,7 @@ Convention Seats keep a record differently, *The seats* says how.
    it (§6, *CHANGELOG.md*). The Convention Seats differ.
 8. `.claude/decisions.md`: how the agent's setup was decided
    (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).
-9. `COMMIT-PLAN.md`: the commits of a change set in flight, when
+9. `COMMIT-PLAN.md`: the commits of a Change Set in flight, when
    present (`docs/conventions/commit-plan/` §1, *What a commit plan is*).
 10. `docs/glossary.md`: the Glossary Names, and what each means
     (`docs/conventions/writing/` §2, *Why each rule*, rule 9).

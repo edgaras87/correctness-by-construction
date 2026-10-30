@@ -209,6 +209,9 @@ its thing. A CBC Run keeps a glossary of its own.
   fixes do the same to the text, read together; one rule read
   against, and the findings it makes
   (`.claude/approaches-on-trial/refinement.md` §1, *What it reads, and its words*).
+- **Change Set** — a body of work that needs more than one commit,
+  sequenced and closed as a commit plan
+  (`docs/conventions/commit-plan/` §1, *What a commit plan is*).
 - **Conversation Memory** — the talk that shaped a TODO item, kept
   beside it in `TODO-CONVERSATION-MEMORY.md`: what was asked, the
   options weighed, what was said for and against. It decides

@@ -264,7 +264,7 @@ own (`.claude/approaches-on-trial/approach-evaluation.md`). The
 placing takes these steps:
 
 1. An ADR for the decisions behind it, opened Proposed when it lands
-   inside a change set.
+   inside a Change Set.
 2. The manual at `docs/conventions/<name>/README.md`, in the form
    (§2, *The Convention Manual*).
 3. Its artifacts in the Container Group, if it ships any. A convention

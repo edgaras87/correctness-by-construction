@@ -482,7 +482,7 @@
       hard to read (2026-10-18, the reviewer).
       Context: a refinement's finding names a broken rule, so text
       that meets the rules stays, even when it could read better
-      (`.claude/approaches-on-trial/refinement.md` §2.4, *Read*). Polish
+      (`.claude/approaches-on-trial/refinement.md` §2.4, *Reading the Finding Kinds*). Polish
       with no rule has no end: a reader asked to look always finds
       something. The reviewer is the reader the text fails, and asks
       "explain simpler" after most answers with parts.
@@ -772,71 +772,6 @@
                Skill Template, or a second stack's Stack Overlays arriving,
                whichever comes first.
       See: devlog 2026-10-28; ADR-0070.
-
-- [ ] Run the pass that gives old text its Glossary Names and its
-      titles their labels, by Refinement Layer, as a commit plan
-      (`docs/conventions/commit-plan/`) (2026-10-29, the reviewer).
-      Context: rule 9 says a defined thing is written by its Glossary
-      Name, capitalized, and a lowercase word is English (ADR-0076);
-      rule 10 says a title is a label of 30 characters or fewer,
-      standing alone (ADR-0075). Measured 2026-10-29: about 3,000
-      lines carry a bare word of ours or a phrase without its
-      capitals; about 230 of 375 titles break rule 10. Samples judged:
-      the thirteen labels for the commit-plan manual's §2 and the
-      glossary's entries (`temp/refinement-2026-10-18.md`, *Round 3: how it reads*).
-      Ideas:
-      - by Refinement Layer, as the reference rewrite was: a script lists every
-        bare use of a Name's word and capitalizes every phrase the
-        glossary lists; a hand chooses each title and each bare use's
-        Name or English; the script replaces the references; the
-        rename grep runs at each commit
-        (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
-      - one rewritten paragraph is shown to the reviewer before the
-        pass runs, so the capitals are judged on prose first.
-      - the record sections keep their pattern across records: *What
-        a plan is*, *Why a plan*, *Where a plan lives*, *How a plan
-        is written*, *When a plan changes*, *A plan's anti-patterns*.
-      - a gloss moves into the body's first line; ARCHITECTURE.md's
-        six area titles keep their paths there.
-      - the stack references' "§1 ·" numbering becomes `N.M`
-        (`docs/conventions/facts-in-sync/` §3.2, *Numbering a section's parts*).
-      - the script counts headings, references and code fences
-        before and after, and changes nothing on a second run
-        (writing rule 11, ADR-0077).
-      - the item below, the history told inline, goes in the same
-        pass.
-      Trigger: now; Refinement Round 3's rule check is done, and Refinement Round 3 reads
-               after the pass.
-      See: ADR-0075; ADR-0076; ADR-0077; devlog 2026-10-29, section
-      titles; devlog 2026-10-29, the words; devlog 2026-10-29, round
-      3's rule check; `25b3946:TODO-CONVERSATION-MEMORY.md` §25.
-
-- [ ] Move the history told inline in six living texts to its
-      story's home (2026-10-29, the reviewer).
-      Context: a manual states a lesson in general and keeps one
-      italic line pointing at the case that taught it
-      (`docs/conventions/conventions/` §2.6, *A lesson taken*); only
-      its opening tells the failure lived (§2.2, *What it is for*).
-      Found 2026-10-29, when rule 9's why was first written as a
-      story: the shapes manual's dated reshape note under its
-      opening; facts-in-sync's italic paragraph "Where it has already
-      happened"; the visual-comparison skill's §4 lessons and its
-      Decisions footer, told as the Mermaid cases, ours and the
-      Container Group's; two CBC Run 3 cases under the retrospective manual's
-      lessons; writing
-      rule 2's why; one clause in the exchange manual's *Why it
-      arrives this way*.
-      Ideas:
-      - each case goes to the ADR or devlog entry that holds it, or
-        to a devlog line when none does; the section keeps "*Its
-        story:*" and is read again, keeping a short plain example
-        where the lesson no longer reads without one (ADR-0073).
-      - the two visual-comparison skills change in one commit each,
-        the Master Copy first.
-      Trigger: the pass that takes words and titles by Refinement Layer, the
-               item above, since it rewrites these files.
-      See: devlog 2026-10-29, round 3's rule check;
-      `TODO-CONVERSATION-MEMORY.md` §26.
 
 ## Later / someday
 

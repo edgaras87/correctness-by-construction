@@ -5,7 +5,7 @@ as they land, and closed.**
 
 ## What it is for
 
-So that a change set can be inspected commit
+So that a Change Set can be inspected commit
 by commit before it lands, and a divergence at commit *k* forces the
 remaining commits to be re-evaluated rather than continued on a
 plan that no longer holds. Adopted with the container
@@ -34,13 +34,13 @@ them is checked back against this page.
 
 ## The seats
 
-A CBC Run runs its change sets under the skill, the plan file at its
-root its own. The Concept Deliverer runs its change sets under the same
+A CBC Run runs its Change Sets under the skill, the plan file at its
+root its own. The Concept Deliverer runs its Change Sets under the same
 skill, the plan file at its root its own.
 
 ## 1. What a commit plan is
 
-The unit is the change set: the scope between one commit and a
+The unit is the Change Set: the scope between one commit and a
 whole project.
 
 A patch series, carried into a repo where work is committed
@@ -73,7 +73,7 @@ append-or-evolve (ADR-0038, 1b).
 
 ### 2.2 Root placement
 
-An in-flight change set is visible from a
+An in-flight Change Set is visible from a
 clean clone, so "is work half-landed, and where did it stop?" is
 answerable without the working tree.
 
@@ -91,7 +91,7 @@ normal road, not a sign the plan failed (ADR-0038, 1e). *Its story: devlog 2026-
 
 ### 2.5 The records commits
 
-A change set batches record moments, and a record's trigger can fire mid-set before its truth
+A Change Set batches record moments, and a record's trigger can fire mid-set before its truth
 exists. Walking the entry file's records table while drafting the
 commit list is what catches it (ADR-0038, 1d).
 
