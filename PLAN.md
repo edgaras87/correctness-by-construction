@@ -299,8 +299,8 @@ Notes:
 
 Goal: Living text written before a rule now meets that rule, and project-recording's list of the records maps them in both Convention Seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
-Now: Refinement Round 3 reads (`.claude/approaches-on-trial/refinement.md` §2.4, *Reading the Finding Kinds*),
-`temp/refinement-2026-10-18.md`'s *Met in round 2, of other kinds* first.
+Now: Refinement Round 3's findings are decided (`.claude/approaches-on-trial/refinement.md` §2.6, *Deciding the findings*),
+DECISION-16 first; then the endings, then the work by Refinement Layer.
 Gate:
 
 **At the opening.**
