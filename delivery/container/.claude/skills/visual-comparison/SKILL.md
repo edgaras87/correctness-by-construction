@@ -41,7 +41,7 @@ is the answer. An obvious answer means a clear one, not a simple
 form: when what the work needs is already clear, the method does not
 fire, however large the form.
 
-## 2. The method
+## 2. The comparison's steps
 
 1. **Write the requirements first, in a `temp/` draft.** What the
    artifact must *carry*, not what it should look like. Each one
@@ -95,7 +95,7 @@ name the case, it is not an entry yet.
   Mermaid `block-beta` is meant for stacked blocks and lost both
   the arrow labels and the vertical order. `sequenceDiagram` is
   meant for handoffs between actors and had to draw a read-only
-  reading as an arrow into the other repo — asserting the opposite
+  Run Reading as an arrow into the other repo — asserting the opposite
   of the rule the procedure existed to keep. A picture that states
   the opposite of the truth is worse than no picture.
 
@@ -109,7 +109,7 @@ name the case, it is not an entry yet.
   operator is transport, not a place.
 
 - **Asked for a picture, this method is not always what is wanted.**
-  A model written in prose was asked for a diagram of it. The method
+  An Idea Model written in prose was asked for a diagram of it. The method
   was reached for, and most of it was not run — no non-picture
   candidate, requirements written after the first candidate was
   built, no verdict settled by looking. What the work actually
@@ -129,7 +129,7 @@ name the case, it is not an entry yet.
 ## 5. What this does not do
 
 - It does not choose a notation for this project. The Mermaid in
-  its cases is the deliverer's provisional trial, which does not
+  its cases is the Concept Deliverer's provisional trial, which does not
   travel; this project decides its own forms.
 - It does not run on a schedule, and it is not a review of forms
   already settled.
@@ -145,12 +145,7 @@ name the case, it is not an entry yet.
   it": a candidate that needs the layout fought has lost
 - CBC ADR-0027, decision 3 — §5's Mermaid trial, provisional and not
   travelling
-- CBC ADR-0028 — the trigger fired and was answered here. The
-  recommendation was to wait for a third instance: two uses by one
-  author in one week is thin evidence. If that objection was
-  right, §4 is where it shows, by not growing
-- CBC ADR-0030 — the third run was not about showing anything,
-  which separated a general method out and left this one
-  specialised. That general half was discarded 2026-09-24; §4's
-  discipline line is from there, and so is §1's rule that the set
-  must hold a non-picture
+- CBC ADR-0028 — the trigger fired; this skill is its answer, and §4
+  growing or not is the test of the objection it records
+- CBC ADR-0030 — the general method separated out; §4's discipline
+  line and §1's rule that the set holds a non-picture are from it

@@ -4,31 +4,31 @@ paths:
 foundation: the shapes convention
 ---
 
-# Shapes: what they are, and how they live
+# Output Shapes
 
-A **shape** says what a kind of output looks like in this project:
+An **Output Shape** says what a kind of output looks like in this project:
 its form, never its content. It opens with one line naming what it
 covers:
 
 > **Governs:** how `<which parts>` of `<which artifact>` are
 > written. Their form, never their content.
 
-A step finds the shapes that apply to its work by that line. A file
-without it is not a shape. A shape says nothing about when it is
+A Plan Step finds the Output Shapes that apply to its work by that line. A file
+without it is not an Output Shape. An Output Shape says nothing about when it is
 written or changed; that is this file's.
 
 ## 1. Written from work that exists
 
-A shape is written from outputs that already exist: a pair that
+An Output Shape is written from outputs that already exist: a pair that
 recurred, or one piece worth keeping. Never from an idea of how the
-work should go. If no shape covers what a step made, its gate checks
+work should go. If no Output Shape covers what a Plan Step made, its gate checks
 nothing for it.
 
-Before a shape is written, its examples are read side by side, with
+Before an Output Shape is written, its examples are read side by side, with
 two questions:
 
 - **Where do they differ?** Each difference ends as one form for
-  all, a variant the shape names and allows, or a better form
+  all, a variant the Output Shape names and allows, or a better form
   neither example had.
 - **What could they all do better?** Read against the project's
   rules and decisions, and what went wrong. A weakness every
@@ -36,80 +36,80 @@ two questions:
   entries that all lack a worked example with numbers.
 
 The reviewer settles what the look finds; anything the writer adds
-beyond it is named as theirs. Then the shape is tried on the
+beyond it is named as theirs. Then the Output Shape is tried on the
 examples it came from, and on an earlier version where a miss is
-known. A shape catches a part that is missing, not a part that kept
+known. An Output Shape catches a part that is missing, not a part that kept
 its place but lost half its meaning: only the source shows that.
 
 ## 2. One place, read at the gate
 
-Every shape lives in `.claude/shapes/`. Nothing loads it while the
-work is written. It is read at the step's closing gate.
+Every Output Shape lives in `.claude/shapes/`. Nothing loads it while the
+work is written. It is read at the Plan Step's closing gate.
 
-Why: work written without the shape in view can show that the shape
+Why: work written without the Output Shape in view can show that it
 is wrong, or that a new one is needed. What must hold while the work
-is written is not a shape. It belongs to the skill or the rule that
+is written is not an Output Shape. It belongs to the skill or the Agent Rule that
 runs the work.
 
 ## 3. A difference at the gate
 
-The gate reads what the step made against every shape that governs
+The gate reads what the Plan Step made against every Output Shape that governs
 it. The comparison is by judgment, not by text: does the output
-have the parts the shape names, in its order, reading as it says?
+have the parts the Output Shape names, in its order, reading as it says?
 Each difference is named, with the line from the output and the
-line from the shape. It ends one of four ways, judged one
+line from the Output Shape. It ends one of four ways, judged one
 difference at a time. Any change it leads to, in the output or in
-the shape, is shown before it is made, never applied silently:
+the Output Shape, is shown before it is made, never applied silently:
 
-- **The output drifted.** The shape stands; the output is brought
+- **The output drifted.** The Output Shape stands; the output is brought
   to it.
-- **The shape was wrong here.** The output stands; the shape
+- **The Output Shape was wrong here.** The output stands; the Output Shape
   changes: a project's own with a dated line, a delivered one under
   `delivered-copies.md`.
-- **Each had something.** The shape takes what the output found,
-  and the output is brought to the changed shape.
-- **The output is a different kind.** Both stand, and a new shape
+- **Each had something.** The Output Shape takes what the output found,
+  and the output is brought to the changed Output Shape.
+- **The output is a different kind.** Both stand, and a new Output Shape
   starts from the output (§1, *Written from work that exists*). Either of the last three can name
-  new work (§4, *When a shape names work*).
+  new work (§4, *When an Output Shape names work*).
 
 Outputs closed before a change are not reopened.
 
-## 4. When a shape names work
+## 4. When an Output Shape names work
 
-A shape mostly names form: the order of parts, how they read. Some
-parts need work done during the step. Example: a backstop "seen at
+An Output Shape mostly names form: the order of parts, how they read. Some
+parts need work done during the Plan Step. Example: a backstop "seen at
 the red run" can only be known by looking during the red run.
 
-When a shape is written or changed so that it names such a part,
+When an Output Shape is written or changed so that it names such a part,
 the skill that runs the work is checked. If the skill does not ask
 for that part, it is changed too, under `delivered-copies.md`.
 Otherwise the gate finds the part missing when it is too late to
 produce, and the work must be redone.
 
-## 5. Offering a shape back
+## 5. Offering an Output Shape back
 
-A shape this project wrote reaches the deliverer when a line under
-TODO's *To the deliverer* offers it; the deliverer reads it at its
-next reading. A shape marks what any project would want (its
+An Output Shape this project wrote reaches the Concept Deliverer when a Run Ask under
+TODO's *To the deliverer* offers it; the Concept Deliverer reads it at its
+next Run Reading. An Output Shape marks what any project would want (its
 skeleton) apart from this project's example (its illustration), so
-the deliverer can take one and leave the other. How an edit reaches
-the deliverer is `delivered-copies.md`'s.
+the Concept Deliverer can take one and leave the other. How an edit reaches
+the Concept Deliverer is `delivered-copies.md`'s.
 
 ## 6. What this does not govern
 
-The gate items themselves, and how a step carries them.
+The gate items themselves, and how a Plan Step carries them.
 
 ---
 
 ## Decisions
 
 - CBC ADR-0035 — written in never-oversold from its own lived work
-  and taken here reshaped: the holder is named as the deliverer,
-  which the run's `delivered-copies.md` names, and the role-name it
+  and taken here reshaped: the holder is named as the Concept Deliverer,
+  which the CBC Run's `delivered-copies.md` names, and the role-name it
   arrived under is not adopted
-- CBC ADR-0037 — shapes are a convention; this rule derives from its
-  manual, keeps the definition because a run cannot open the manual,
-  and says that a shape states form and never its lifecycle
-- CBC ADR-0052 — one place, read at the gate; shapes travel as
-  copies; the look before a shape is written; four endings; a shape
+- CBC ADR-0037 — shapes are a convention; this Agent Rule derives from its
+  manual, keeps the definition because a CBC Run cannot open the manual,
+  and says that an Output Shape states form and never its lifecycle
+- CBC ADR-0052 — one place, read at the gate; Output Shapes travel as
+  copies; the look before an Output Shape is written; four endings; an Output Shape
   that names work is asked for by its skill

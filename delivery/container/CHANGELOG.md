@@ -16,7 +16,7 @@ Framing decides. The answer replaces this placeholder.>
      fresh one. A breaking change is called out as one; under
      SemVer it bumps the major version.
      Why the form is as it is: (CBC docs/conventions/project-recording/
-     §6.4, How).
+     §6.4, How the changelog is written).
      foundation: the project-recording convention -->
 
 ## [Unreleased]

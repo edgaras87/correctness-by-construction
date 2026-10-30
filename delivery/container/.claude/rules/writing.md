@@ -28,14 +28,14 @@ commit messages, comments. How it reads, never what it says.
    three ways."
 6. **Keep names as labels.** Write defined names and references
    exactly: KILL-5, FACT-CALLER-5, SLICE-1, ADR-0014. Define each
-   coined word once, in plain words, in the project's glossary,
+   Glossary Name once, in plain words, in the project's glossary,
    `docs/glossary.md`. Coin a word only when plain English cannot
    say it. A number local to one record carries its owner outside
    it: "SLICE-1 GUARANTEE-3", never a bare "GUARANTEE-3".
 7. **Cut what adds nothing.** If a sentence can go without losing
    meaning, it goes.
 8. **Start from what the reader holds.** Before a label, a section
-   number or a coined word, ask whether this reader knows it. If
+   number or a Glossary Name, ask whether this reader knows it. If
    not, say first, in plain words, what it is. Not "KILL-2 fails",
    but "KILL-2, the second charge for one order, fails".
 9. **Write a defined thing by its Glossary Name,** two or more
@@ -84,7 +84,7 @@ Same meaning, same references. It can be read once.
 
 - **Chat:** every answer.
 - **Records:** every new or changed line. History keeps its words.
-- **Other texts:** a skill or rule may be written densely. Follow
+- **Other texts:** a skill or Agent Rule may be written densely. Follow
   what it says, but not how it says it. This rule sets the voice.
 
 ## Other styles

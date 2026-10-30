@@ -1,6 +1,6 @@
 # Plan: <project name>
 
-<!-- The stub ships the pure form: the steps below are placeholders
+<!-- The Record Stub ships the pure form: the Plan Steps below are placeholders
      showing it — a goal, a gate of verifiable facts. At birth
      the seed replaces the region between the STEPS markers with a
      playbook's full sequence — a concept's; the playbook itself
@@ -8,7 +8,7 @@
      placeholders in place. Either way the two STEPS markers stay:
      they are what makes the swap re-runnable.
      Why the form is as it is: (CBC docs/conventions/project-recording/
-     §2.4, How).
+     §2.4, How a plan is written).
      foundation: the project-recording convention -->
 
 <!-- Steps from: <playbook> v<N> at <concept commit>,
@@ -17,14 +17,14 @@
 
 ## Legend
 
-`[ ]` planned  ·  `[~]` in progress  ·  `[x]` done (+date)  ·  `[!]` blocked (+what unblocks) or stopped (+the step first)  ·  `[-]` skipped (+why)
+`[ ]` planned  ·  `[~]` in progress  ·  `[x]` done (+date)  ·  `[!]` blocked (+what unblocks) or stopped (+the Plan Step first)  ·  `[-]` skipped (+why)
 
-**Gate** = exit criteria: verifiable facts, not intentions. A step is done only when every gate item is true.
-Detail only the next 1–2 steps finely; keep later steps coarse (rolling wave).
+**Gate** = exit criteria: verifiable facts, not intentions. A Plan Step is done only when every gate item is true.
+Detail only the next 1–2 Plan Steps finely; keep later Plan Steps coarse (rolling wave).
 
 ---
 
-<!-- STEPS-BEGIN — steps between the markers; the markers stay -->
+<!-- STEPS-BEGIN — Plan Steps between the markers; the markers stay -->
 
 ## Step 0: <first step, e.g. "Bootstrap">
 
@@ -34,7 +34,7 @@ Gate:
 - [ ] <verifiable fact>
 Notes:
 
-## Step: <next step>
+## Step: <next Plan Step>
 
 Goal: <one sentence>.
 Gate:
@@ -59,7 +59,7 @@ Notes:
 
 ## Discovered along the way
 
-<!-- Non-blocking findings. Triage each into TODO.md: assign to a step,
+<!-- Non-blocking findings. Triage each into TODO.md: assign to a Plan Step,
      park in Later, or drop. Then delete the line here. -->
 - <YYYY-MM-DD> <finding> → <where it went>
 

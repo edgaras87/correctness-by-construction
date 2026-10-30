@@ -1,7 +1,7 @@
 # TODO
 
 <!-- Add items the moment they're discovered — that's what empties your head.
-     Triage when closing a step. Prune "Later" ruthlessly: deleting an
+     Triage when closing a Plan Step. Prune "Later" ruthlessly: deleting an
      idea you'd re-derive anyway costs nothing.
      Rule: an inline TODO:/FIXME: anywhere in the work must reference an
      item here.
@@ -23,14 +23,14 @@
      today — never stack a dated update on it; the change's story is
      the devlog's.
      Why the form is as it is: (CBC docs/conventions/project-recording/
-     §5.4, How).
+     §5.4, How an item is written).
      foundation: the project-recording convention -->
 
-## Now (current plan step)
+## Now (the current Plan Step)
 
 - [ ]
 
-## Next (upcoming steps — assign each to a step when triaged)
+## Next (upcoming Plan Steps — assign each to one when triaged)
 
 - [ ]
 
@@ -40,10 +40,11 @@
 
 ## Known issues (deferred deliberately — each entry: what, why accepted, when to revisit)
 
-- <issue>. Accepted because <reason>. Revisit at <step / condition>.
+- <issue>. Accepted because <reason>. Revisit at <Plan Step / condition>.
 
 ## To the deliverer
 
-<!-- Lines this project addresses to its deliverer: an edit made to
-     a delivered copy, an ask, an offer. Each goes when the pin that
-     answers it arrives. How: .claude/rules/delivered-copies.md. -->
+<!-- Run Asks: lines this project addresses to its Concept Deliverer, for an
+     edit made to a delivered copy, a question or an offer. Each goes when
+     the Delivery Pin that answers it arrives. How:
+     .claude/rules/delivered-copies.md. -->

@@ -10,13 +10,13 @@
      End every session with a "Resume:" line — cheapest save-point there is.
      When this file gets long, split into devlog/<YYYY-MM>.md per month.
      Why the form is as it is: (CBC docs/conventions/project-recording/
-     §4.4, How).
+     §4.4, How the devlog is written).
      foundation: the project-recording convention -->
 
 ## <YYYY-MM-DD>  (Step 0: bootstrap)
 
 - Project started. Repo initialized from its delivery.
-- Briefing: <a link to docs/system/framing/briefing.md, once
+- Run Briefing: <a link to docs/system/framing/briefing.md, once
   framing commits it; names used before then are working names>
 - Open: <first open question>
 - Resume: <first concrete action>

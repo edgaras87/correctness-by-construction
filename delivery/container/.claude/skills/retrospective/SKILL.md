@@ -1,14 +1,14 @@
 ---
 name: retrospective
-description: Walk a finished run part by part and decide what the next run does differently. Use when the run has finished building, before Release, or when the reviewer asks for a retrospective, a look back, or "what would we do differently". Do NOT use to fix this run's records; that is apply-retrospective, after this.
+description: Walk a finished CBC Run part by part and decide what the next CBC Run does differently. Use when the CBC Run has finished building, before Release, or when the reviewer asks for a retrospective, a look back, or "what would we do differently". Do NOT use to fix this run's records; that is apply-retrospective, after this.
 foundation: the retrospective convention
 ---
 
 # Retrospective
 
-The run stays as it is. Its lessons go to the next run, through what
-the next run starts from: the skills, the rules, the playbook, the
-templates, the reviewer's local file. A lesson that lands nowhere is
+The CBC Run stays as it is. Its lessons go to the next CBC Run, through what
+the next CBC Run starts from: the skills, the Agent Rules, the playbook, the
+Skill Templates, the reviewer's local file. A lesson that lands nowhere is
 repeated.
 
 The reviewer decides everything. The agent reads, measures, finds,
@@ -20,18 +20,18 @@ proposes and writes.
    until the retro lands. Ask the reviewer whether small commits are
    free on it.
 2. **Write the note,** `RETRO.md` at the root, with these sections:
-   - **Goal:** the run stays as it is; lessons go to the next run.
+   - **Goal:** the CBC Run stays as it is; lessons go to the next CBC Run.
    - **Rules:** the branch, the `try/` branches, how commits work,
      one decision at a time.
-   - **Parts:** a table of the run's parts, in the order the run
+   - **Parts:** a table of the CBC Run's parts, in the order the CBC Run
      built them, each with its files and a status: not started, in
      progress, done (date).
    - **Do differently:** one block per part.
-   - **Delivering the retro:** what reaches the next run, and how.
+   - **Delivering the retro:** what reaches the next CBC Run, and how.
    - **Experiments:** one line per `try/` branch.
    - **Parked:** questions raised in one part that belong to
      another, each naming that part.
-3. **Explain the run to the reviewer first:** how work is done, what
+3. **Explain the CBC Run to the reviewer first:** how work is done, what
    is read when, what you think is good and what is costly. Use
    numbers: words of records against lines of code, commits by kind.
    The first candidates for decisions come from this.
@@ -41,13 +41,13 @@ proposes and writes.
 1. **Read the part's files in full.** Then measure: sizes, counts,
    how often a thing appears, where one fact is written twice.
 2. **Find what went wrong or cost too much.** Ask of the part:
-   - Which steps took much longer or shorter than planned, and why?
+   - Which Plan Steps took much longer or shorter than planned, and why?
    - What needed to happen earlier?
    - Which approaches were tried and dropped?
    - What work had no home in the plan?
    - Which gate items caught nothing?
 
-   Each finding needs a real example from the run: a quoted line
+   Each finding needs a real example from the CBC Run: a quoted line
    with its file and line number, or a count. A finding without an
    example is dropped.
 3. **Say what worked.** "Kept as it is", with the reason, is a valid
@@ -64,14 +64,14 @@ proposes and writes.
    - a recommendation.
 
    Where there is a choice, show the variants applied to real text
-   from the run, side by side, before asking.
+   from the CBC Run, side by side, before asking.
 2. **When the reviewer asks for a simpler explanation,** give one,
    with an example, before changing anything.
 3. **On agreement, write the decision into the note and stage it.**
    Commit on the reviewer's word. Then show the next one.
 4. **A decision block holds, in order:**
    - **D<n>. The decision as a sentence.** (date)
-   - What happened in the run, with the example.
+   - What happened in the CBC Run, with the example.
    - The change, as bullets.
    - **Considered and rejected:** each option that was on the table,
      with its reason. Only when there was one.
@@ -82,17 +82,17 @@ proposes and writes.
 
 ## Rules for a decision
 
-- **"Lands in" names a place the next run starts from.** "Remember
+- **"Lands in" names a place the next CBC Run starts from.** "Remember
   to" is not a place.
 - **Stay inside the question asked.** A new question goes to Parked,
   with the part that owns it.
 - **No decision without something that went wrong.** A good idea
   with no failure behind it is dropped.
 - **Judge on real text, never before it exists.** A question that
-  needs text the run has not written yet is parked to the moment it
+  needs text the CBC Run has not written yet is parked to the moment it
   will exist.
-- **Do not fix the run's records.** The one exception is Stage 4,
-  item 3: the run's own hand-off lists.
+- **Do not fix the CBC Run's records.** The one exception is Stage 4,
+  item 3: the CBC Run's own Run Asks.
 
 ## Stage 3 — try a change on a branch
 
@@ -108,23 +108,23 @@ note's commits move back). The note's Experiments line records which.
    names its part.
 2. **The entry file is read top to bottom.** Every line still passes
    the three tests in its guard comment, or leaves.
-3. **The run's own hand-off lists close into the note.** Each item
+3. **The CBC Run's own Run Asks close into the note.** Each Run Ask
    in TODO's "To the deliverer" that a decision answers becomes one
-   line naming that decision. The decisions log gets a "rules in
+   line naming that decision. The Decisions Log gets a "rules in
    force now" list on top, with what each rule replaced.
-4. **What only the next run can check becomes its gate items.** List
-   them in the note, each with the step that judges it. The
-   deliverer writes each into the next run's PLAN at that step, with one line of reason, naming the decision.
-5. **One TODO line asks the deliverer to apply the note's
+4. **What only the next CBC Run can check becomes its gate items.** List
+   them in the note, each with the Plan Step that judges it. The
+   Concept Deliverer writes each into the next CBC Run's PLAN at that Plan Step, with one line of reason, naming the decision.
+5. **One TODO line asks the Concept Deliverer to apply the note's
    decisions.**
 6. **A devlog entry,** ending with a "Resume:" line, and TODO's Now
    updated.
 7. **Land it.** The look back and the `-detail` branch are commit-plan's
-   (`.claude/skills/commit-plan/SKILL.md` §4, *Lifecycle*, and §6, *Review
+   (`.claude/skills/commit-plan/SKILL.md` §4, *The lifecycle*, and §6, *Review
    protocol*). The branch,
    `retrospective`, reaches main by fast-forward, on the reviewer's
-   word (`PLAN.md`'s step form, *At the close*).
-8. **Then apply it to this run,** before Release:
+   word (the Plan Step Form, *At the close*).
+8. **Then apply it to this CBC Run,** before Release:
    `.claude/skills/apply-retrospective/`.
 
 ## Between sessions

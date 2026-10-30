@@ -1,12 +1,12 @@
 # Architecture
 
 <!-- Describes the system AS IT IS NOW — not the aspiration. 1–2 pages max.
-     Update trigger: a plan step's gate closes and this no longer matches
+     Update trigger: a Plan Step's gate closes and this no longer matches
      reality. For the WHY behind any shape, link the ADR. By rule, not
      by slice: a slice's close adds or changes rows in Invariants, never
      a paragraph; how the slice got there is its record's.
      Why the form is as it is: (CBC docs/conventions/project-recording/
-     §8.4, How).
+     §8.4, How the map is written).
      foundation: the project-recording convention -->
 
 ## Overview
