@@ -69,7 +69,7 @@ method from it, holds the Master Copy of every file a CBC Run receives,
 delivers to CBC Runs, and reads them back to learn what to change. It
 is not a builder; there is nothing to build. Its entry file sits at
 the repo root, the address the arrangement is described from: *"A
-concept repo… Documents only — no code, no runs."* It holds the
+Concept Repo… Documents only — no code, no runs."* It holds the
 convention skills `commit-messages`, `commit-plan` and
 `visual-comparison`, not the retrospective's, whose Convention Seat here is on
 trial; the Exchange Convention's skills, `exchange-read` and

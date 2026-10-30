@@ -211,7 +211,7 @@ flowchart LR
     SH["a shape<br/>in the group of<br/>the thing it shapes"]
   end
 
-  subgraph RUN["a run repo"]
+  subgraph RUN["a Run Repo"]
     direction TB
     MADE["what a step made"]
     SHP[".claude/shapes/<br/>nothing loads it"]

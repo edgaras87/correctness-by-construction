@@ -112,7 +112,7 @@ chat answers, records, commit messages, code comments.
    that first uses it, pointing at the home that defines it, and a
    word whose English meaning is ours has no Name (rule 6).
 10. **A section's title names its subject.** A title is read in every
-    fact reference to its section, where the sentence already says
+    Fact Reference to its section, where the sentence already says
     the point; a title that states the point says it twice, and
     changes when the rule does. A subject is short, so a title of 30
     characters or fewer is carried whole, never cut. It stands alone,

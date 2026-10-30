@@ -356,7 +356,7 @@
 - [ ] Decide how commits cited by hash can still be regrouped
       (2026-10-19, the reviewer).
       Context: our `commit-plan` skill regroups a set's commits before
-      its close (`.claude/skills/commit-plan/SKILL.md` §4, *Lifecycle*), and a regroup gives them new hashes. This repo cites
+      its close (`.claude/skills/commit-plan/SKILL.md` §4, *The lifecycle*), and a regroup gives them new hashes. This repo cites
       hashes in living text: the refinement's file, TODO, other
       commit bodies. So the refinement's commits up to `ccce6af`
       were not regrouped, and the history keeps every small fix,

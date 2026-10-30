@@ -13,7 +13,7 @@ one upstream and one Delivery Pin. It is the Concept Deliverer: each CBC Run is 
 what this repo ships, and is read back from here. Documents only:
 nothing is built here, no application, no service, no CBC Run.
 It is a Concept Repo, the concepts tier of the workspace
-(Concept Repos → Run Repos, the tier above empty; see `docs/models/tiers.md` §2.1, *The empty top tier*, §2.2, *Concepts*):
+(Concept Repos → Run Repos, the tier above empty; see `docs/models/tiers.md` §2.1, *The empty top tier*, §2.2, *Concept Repos*):
 CBC Runs happen in other repos pinned to
 a concept version, and their surprises come back here as changes to
 what we hold: the concept, the Idea Models, the conventions, and the
@@ -44,7 +44,7 @@ recorded way instead of living in a head and scattered notes.
   (ADR-0038; `docs/models/tiers.md` §2.1, *The empty top tier*).
 - Garden machinery — none until the Concept Garden rule triggers: a second
   Concept Repo, a rule written twice (`docs/models/tiers.md` §2.2, *Concept Repos*).
-- Graduating an execution to its own concept repo — same trigger,
+- Graduating an execution to its own Concept Repo — same trigger,
   not now.
 - Everything in the archive repo outside the two directories named
   in the birth briefing.

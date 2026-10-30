@@ -18,7 +18,7 @@ the wrong one (`docs/models/idea-to-output.md` §3.3, *Settling a disagreement*)
 
 ```
 (no repo)     how you work      method: conventions, container, models —
-                                held by the concept repo below until
+                                held by the Concept Repo below until
                                 three repos have lived (ADR-0038)
 concepts      what you know     one repo per concept: mental layer,
    │ container and execution        ▲ harvest: a run's surprises

@@ -320,7 +320,7 @@ Both moments are every task, so both Agent Rules are ambient
 - **The Repo Tag a citation carries, `CBC ADR-nnnn`** —
   `docs/conventions/project-recording/` §3.5, *Numbers across repos*.
 - **What a link is, and that either side may be wrong** —
-  `docs/models/idea-to-output.md` §3.1, *The four Chain Links* and §3.3, *A disagreement is settled*.
+  `docs/models/idea-to-output.md` §3.1, *The four Chain Links* and §3.3, *Settling a disagreement*.
 
 ## Where to look
 

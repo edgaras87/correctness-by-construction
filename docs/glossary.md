@@ -5,7 +5,7 @@
      written exactly (docs/conventions/writing/ §2, Why each rule,
      rule 9). A lowercase word is English. One entry per Name: the
      Name in bold, then what it means in plain words, and, where a
-     manual or a model owns the thing, a fact reference to it; the
+     manual or a model owns the thing, a Fact Reference to it; the
      home defines, the entry points. A Name is added in the commit
      that first uses it; an entry goes when its thing does. A word
      whose English meaning is ours has no Name and no entry. A

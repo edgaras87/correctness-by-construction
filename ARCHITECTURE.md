@@ -50,7 +50,7 @@ how to use it, is `README.md`.
 ```
 
 Where each group lands, and which files are copies, is the delivery map's
-(`delivery/README.md` §1, *The groups are pieces…*, and §2, *Three ways a file lands*);
+(`delivery/README.md` §1, *The groups and the tree*, and §2, *Three ways a file lands*);
 the cycle of Delivery Pins and Run Readings is the Exchange Convention's
 (`docs/conventions/exchange/` §2.5, *One cycle, drawn*).
 
@@ -238,7 +238,7 @@ delivery/
 ├── spring-postgres/ the stack practice (§2.2)
 ├── fills/           text written into a newborn's own files (§2.4)
 ├── installs/        how a run is seeded (§2.4)
-└── README.md        the delivery's local map (§2.4)
+└── README.md        the delivery's Local Map (§2.4)
 temp/                drafts and kept files, tracked, deleted when served
 CLAUDE.md, .claude/  this repo's work arrangement; .claude/decisions.md
                      is a record

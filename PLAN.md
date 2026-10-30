@@ -318,7 +318,7 @@ Gate:
 
 - [x] The refinement's file holds every Finding Kind the TODO item asked
       for, each in its Refinement Round, and the reviewer confirmed them
-      (`.claude/approaches-on-trial/refinement.md` §2.1, *Group the kinds*; 2026-10-19,
+      (`.claude/approaches-on-trial/refinement.md` §2.1, *Group the Finding Kinds*; 2026-10-19,
       again with Wiring).
 - [x] The refinement's file lists every living file in exactly one
       Refinement Layer (`.claude/approaches-on-trial/refinement.md` §2.2, *List the files*;
@@ -380,10 +380,10 @@ Notes:
   item joined it, as its trigger asked. Both items, with their
   Ideas, are in `TODO.md` at `b3b2018`.
 - Stages, from the refinement
-  (`.claude/approaches-on-trial/refinement.md` §2, *The stages*):
+  (`.claude/approaches-on-trial/refinement.md` §2, *The Approach Stages*):
   1. before Refinement Round 1: group the Finding Kinds into Refinement Rounds, which creates
      the refinement's file; list the files by Refinement Layer; check the
-     rules (`.claude/approaches-on-trial/refinement.md` §2.1, *Group the kinds* to
+     rules (`.claude/approaches-on-trial/refinement.md` §2.1, *Group the Finding Kinds* to
      §2.3). The reviewer confirms the Finding Kinds, their Refinement Rounds, the
      Refinement Layers, whether the method's texts are read here
      (`.claude/approaches-on-trial/refinement.md` §3, *Not known yet*), and that no

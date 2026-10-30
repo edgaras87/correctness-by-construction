@@ -96,7 +96,7 @@ stands on the one above.
 New things are born the other way:
 
 ```
-unfamiliar work ──► approach on trial ──► convention ──► model
+unfamiliar work ──► Approach on Trial ──► convention ──► model
 outputs ──► shape
 ```
 
