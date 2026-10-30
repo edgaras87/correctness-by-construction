@@ -2697,6 +2697,17 @@ this round did leaves the item.
   does not list a moved finding again, as with DECISION-7's. The cost:
   a CBC Run born before the rewrite lands gets today's text, with the
   exact fixes only.
+- Reopened and chosen: (a), by the reviewer, 2026-10-30, the same
+  day, on the reviewer's question whether this round is the plain
+  rewrite. It is: round 3 rewords what stays, and on 2026-10-19 the
+  reviewer had it read the method's texts so that one pass would do
+  the rewrite (*Files by layer*, before round 1). The plain-rewrite
+  item's trigger says the same: it keeps what this round leaves. (b)
+  was recommended on size and not checked against that choice. All
+  188 are worked in layer 6, the Method Group and the Stack Group each
+  as a commit plan; the check after the work is this round's close
+  read, and the meaning of each rewritten section is checked against
+  the concept by the Foundation Check.
 
 **DECISION-17.** The concept chapters. Rests: FINDING-530 to 545, the
 reader's 16, every proposal marked editorial; three ask a question
