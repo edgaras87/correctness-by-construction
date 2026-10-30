@@ -3028,6 +3028,16 @@ Approach Stage, used in the shipped `approach-drafting.md`.
   sentence each from the CBC Run's side.
 - (b) The two texts say it in plain words instead.
 - Recommended: (a). The CBC Run meets both words as Names.
+- Chosen: (a), by the reviewer, 2026-10-30, with a gap the reviewer's
+  question found: Approach Stage has no defining home. Our glossary
+  points at `approach-drafting.md` §*Stages*, which uses the word and
+  never says what one is. So one sentence there defines it, as the
+  conventions manual §1.4 defines Skill Stage, in our copy and the
+  shipped one, one text; the CBC Run's entry then points at its own
+  copy. Run Reading enters the CBC Run's glossary as a follower of
+  `docs/conventions/exchange/` §6.3, *The Run Reading*, standing alone,
+  since a CBC Run cannot open that home. Both are shared Names, in the
+  container's glossary by DECISION-19's shape.
 
 **DECISION-29.** `CBC ADR` citations mid-sentence and in Skill
 Templates. Rests: FINDING-924, 20 lines in 18 files; 842.
