@@ -2859,6 +2859,9 @@ legends, Mermaid labels, a drawing's boxes, a code-block table.
 - (b) Drawn text is outside the rule: its words are labels.
 - Recommended: (a). A reader of the exchange's legend meets "the run"
   with the same doubt as in prose, and the legend has room.
+- Chosen: (a), by the reviewer, 2026-10-30, as recommended. The nine
+  findings are fixed: the Name where its box has room, a one-line key
+  above the drawing where it has not.
 
 **DECISION-22.** A Markdown mark on a Name at its defining line.
 Rests: FINDING-405, 474, 494, 626, 639 and 722; and bold on a coined
