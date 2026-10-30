@@ -2900,6 +2900,20 @@ handbook"; 625, "the working arrangement"; 664, "living text"; 640,
 - (b) Names for all.
 - (c) English for all, "the handbook" introduced in plain words.
 - Recommended: (a).
+- Chosen: a revised (a), by the reviewer, 2026-10-30, on the agent's
+  recommendation judged again by DECISION-19's test, a word a text
+  gives a meaning English does not, and a second question, whether
+  the word clashes with a Name already held. Names: Entry File, 107
+  uses; Living Text, its home facts-in-sync §1; Receipt Branch, its
+  home the Exchange Convention, which gains the fact from ADR-0018;
+  Hygiene Base, beside Stack Overlay. Plain words, for a clash: "the
+  map" written `ARCHITECTURE.md`, beside Local Map; "the chain" said
+  as the order the conventions act in, beside Chain Link; "registry"
+  outside the slice registry, a trace of the old conventions
+  registry, said as the birth entry's list of conventions. English:
+  records table, working arrangement. "The handbook" said in plain
+  words once per file where first met. The Names enter their glossary
+  groups by DECISION-19's shape.
 
 **DECISION-24.** A convention named by its bare hyphenated word.
 Rests: FINDING-291, 338, 376, 487, 508, 551, 595, 631, 662 and 678.
