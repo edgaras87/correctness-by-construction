@@ -2843,6 +2843,12 @@ lens, ledger, rider, flag, possession.
 - (c) Narrower: numbered sections only, comma titles as they are.
 - Recommended: (a). Under it 303, 368, 454, 471, 517, 665 and 922 are
   fixed, the rest declined.
+- Chosen: (a), by the reviewer, 2026-10-30, as recommended. A rule
+  the round reads against is not widened mid-round (§2.4, *Reading the
+  Finding Kinds*). The rule's reason, that a title is read in every
+  reference to it, reaches an unnumbered heading too; the readers
+  found references cutting a skill's heading short. Whether rule 10
+  widens is for after the round.
 
 **DECISION-21.** Whether rule 9 reaches drawn text. Rests:
 FINDING-313, 394, 465, 466, 511, 524, 548, 773 and 798: pictures,
