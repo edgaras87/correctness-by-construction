@@ -157,7 +157,7 @@ differs from the branch tip, so it lists nothing when the worktree
 equals it, and it empties the index either way.
 
 **6. Fire the agent** — a fresh session in the newborn, never the
-concept repo's, with this prompt and nothing more:
+Concept Deliverer's, with this prompt and nothing more:
 
 ```text
 This repo was seeded, not born whole — the branch birth-seed

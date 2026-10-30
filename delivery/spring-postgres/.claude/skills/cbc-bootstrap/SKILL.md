@@ -160,7 +160,7 @@ here — under the stack conventions:
   comment, grouped by capability.
 - The repo already exists: **extract into it, never overwrite.** Each
   hygiene file, `.gitignore`, `.gitattributes` and `.editorconfig`,
-  takes its stack overlay below the marked line it carries; the README
+  takes its Stack Overlay below the marked line it carries; the README
   is kept.
 - Widen the build's test includes so integration tests run under the one
   standard test command — no second command, no test that quietly never runs.

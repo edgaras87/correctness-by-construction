@@ -36,7 +36,7 @@ structure. No JPA, no in-app Flyway, no `-data-` starters.
 
 - Initialize to the identity fields and **extract into the existing repo
   root** — beside the infrastructure dirs. Never overwrite: each
-  hygiene file takes its stack overlay below the marked line it
+  hygiene file takes its Stack Overlay below the marked line it
   carries — `.gitignore` (build output, IDE, OS, log sets),
   `.gitattributes` (wrapper line endings: shell wrapper LF, cmd
   wrapper CRLF), `.editorconfig` — and `README.md` is kept.

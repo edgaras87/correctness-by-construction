@@ -21,6 +21,8 @@
   records, and this project never reaches into it.
 - **CBC Run** — this project: a repository born from the Concept
   Deliverer to build a real system by correctness by construction.
+- **Concept Repo** — any repository that holds one concept and what
+  is made from it; the Concept Deliverer is one.
 - **Delivery Pin** — the Concept Deliverer's commit every delivered
   copy here equals, kept in the Decisions Log's last delivery entry.
 - **Master Copy** — the Concept Deliverer's copy of a file delivered
@@ -58,6 +60,9 @@
   by its output: the Kill Shape.
 - **Skill Template** — a file under a skill's `templates/`, copied
   and filled by this project, never edited in place.
+- **Stack Overlay** — the stack's part of a hygiene file,
+  `.gitignore`, `.gitattributes` or `.editorconfig`, below the
+  marked line the container's base carries.
 - **Approach on Trial** — the written way of doing one kind of work
   that no skill covers yet, at `.claude/approaches-on-trial/<work>.md`,
   drafted by `approach-drafting`.
