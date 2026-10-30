@@ -103,14 +103,14 @@ Reason out and present for confirmation, each with its why:
   bootstrap is the reviewer, the
   harness accepts an instance only on health with the store UP, and the
   release gate's clean-machine test is where a forgotten export becomes
-  a real need — decided there, unless this run decides otherwise by name.
+  a real need — decided there, unless this CBC Run decides otherwise by name.
 
 **Gate: the human confirms the decisions before Stage 2.**
 
 ## Stage 2 — compose the requirements document
 
 Write `bootstrap-requirements.md` at the path the project's records
-choose — beside the builder's other manuals; both lived runs put it at
+choose — beside the builder's other manuals; both lived CBC Runs put it at
 `docs/construction/` — in the project's language:
 
 - §1 the initialization identity

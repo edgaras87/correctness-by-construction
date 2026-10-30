@@ -9,11 +9,11 @@ are load-bearing throughout; on Boot 3 the names differ.
 This doc carries **required outcomes** (what must be true, the how is
 yours) and **lived traps** (exact facts about this stack and environment).
 It carries no code to copy. Its config files, though, are
-copy-and-fill masters in `templates/` beside this skill's
+Skill Templates in `templates/` beside this skill's
 `references/` (CBC ADR-0008); they implement the stack line above.
-If the run's decided stack differs you are **off-template**: derive
+If the CBC Run's decided stack differs you are **off-template**: derive
 from the outcomes here, and the rest is
-(`.claude/rules/delivered-copies.md`, rule 8, *A skill's template is
+(`.claude/rules/delivered-copies.md`, rule 8, *A Skill Template is
 copied and filled*). **The project's requirements document wins over
 this doc on any conflict.** Governing principle at every tier: *something
 outside the app migrates; the app runs.*
@@ -60,9 +60,9 @@ announces **Java 21** (align IDE and terminal JDK if not); health UP.
 
 ## 3. Wire the runtime datasource
 
-Config skeleton copy-and-fill: `.claude/skills/cbc-bootstrap/templates/application.yaml` — the
-absences below ride in it as comments; the run's business config
-grows under its own key, never in the template.
+Config skeleton, a Skill Template: `.claude/skills/cbc-bootstrap/templates/application.yaml` — the
+absences below ride in it as comments; the CBC Run's business config
+grows under its own key, never in the Skill Template.
 
 - Connect **as the runtime identity only**, using the connection facts the
   requirements carry; details in the operator manual.
@@ -104,7 +104,7 @@ enable the user socket unit, point the library at it.
 **Traps, exact:**
 1. `~/.testcontainers.properties` binds **only from `$HOME`** — never the
    project root (lived as a long "no valid Docker environment" hunt).
-   Copy-and-fill: `.claude/skills/cbc-bootstrap/templates/testcontainers.properties`.
+   Skill Template: `.claude/skills/cbc-bootstrap/templates/testcontainers.properties`.
 2. Ryuk, the library's reaper, runs fine under rootless podman on the
    Testcontainers 2.x line (lived: podman 5.8, Testcontainers 2.0.5,
    both throwaways reaped within seconds of the JVM's exit) — keep it
@@ -130,7 +130,7 @@ enable the user socket unit, point the library at it.
   module: the engine alone runs no auto-configuration, so the harness's
   own call is the only migration path
   (`.claude/skills/cbc-bootstrap/references/spring-harness-reference.md`
-  §1, *The database base…*).
+  §1, *The database base*).
 - **One container per test JVM**, same major version as the ground,
   started once and shared, lifecycle explicitly the harness's own.
 - **Migration runs immediately after container start, before any app

@@ -108,13 +108,13 @@ but a silent deviation poisons the record.
 ## Records and outputs (the repo's own conventions win)
 
 Where the ground's record lives depends on what the repo keeps —
-lived by two runs, and the shape below is theirs:
+lived by two CBC Runs, and the shape below is theirs:
 
 - **A repo with records** (a plan, ADRs, a devlog — every container-born
   project): **no establishment log.** Decisions are ADRs — the
   environment; the service set with its not-provisioned list; the
   constraints, each with its enforcement. The walk as lived is the
-  devlog's entry for the step, growing as the walk runs: for every
+  devlog's entry for the Plan Step, growing as the walk runs: for every
   executing stage, the command, what was expected, what actually
   happened. Expected results sit in the verify suite and the
   operator manual. The environment ADR carries the mapping from

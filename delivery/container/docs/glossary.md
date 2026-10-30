@@ -23,6 +23,8 @@
   Deliverer to build a real system by correctness by construction.
 - **Delivery Pin** — the Concept Deliverer's commit every delivered
   copy here equals, kept in the Decisions Log's last delivery entry.
+- **Master Copy** — the Concept Deliverer's copy of a file delivered
+  here; a copy here follows it and is diffed against it.
 - **Read-Through Commit** — this project's own commit the Concept
   Deliverer last read up to, named by each Delivery Note.
 - **Delivery Note** — the text beside a delivery: what changed since

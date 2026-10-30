@@ -11,9 +11,9 @@ the most corrected.
 `.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`'s, steps 4 and 5; what enters the build
 and how each entry is written is `.claude/skills/cbc-bootstrap/references/spring-pom-convention.md`'s; the
 machine setup that makes containers reachable is the project's
-operator manual's. **The run's requirements document wins over all of
+operator manual's. **The CBC Run's requirements document wins over all of
 them** — where it forbids something this file shows, the file is
-wrong for that run.
+wrong for that CBC Run.
 
 **Why code exists here at all.** The walkthrough deliberately carries
 none: two projects may end with different code for the same thing.
@@ -22,7 +22,7 @@ which are shaped by the stack and the harness outcomes rather than by
 the problem — three projects produced them near-identically, and each
 executor's only route was reading the previous project's source. This
 file exists to make that read unnecessary. **It is a reference, not a
-template** (CBC ADR-0008): imitated, never pasted-and-filled — copied
+Skill Template** (CBC ADR-0008): imitated, never pasted-and-filled — copied
 thoughtlessly it will be wrong in the variation points named at the
 end.
 
@@ -42,7 +42,7 @@ major version.
 | probe endpoint | **main** | one identity round-trip through the real door — scaffolding, dies at the first slice |
 | contention probe | test | many requests released at one instant, all asserted |
 
-## 1 · The database base — a faithful miniature of the ground
+## 1. The database base
 
 **Outcomes it realizes** (walkthrough, step 4): one PostgreSQL
 container of the ground's major version per test JVM, started once
@@ -159,7 +159,7 @@ public abstract class DatabaseIT {
 - **The filesystem location is deliberate**: `filesystem:` and the
   project's one home, so nothing can drift from a classpath copy.
 
-## 2 · The evidence tier
+## 2. The evidence tier
 
 **Outcome** (step 4): a small, **layered** test-support base — the
 database base above, and a web-plus-database base over it — so a test
@@ -197,7 +197,7 @@ public abstract class WebDatabaseIT extends DatabaseIT {
    (the third pass added a clock configuration here at a later slice
    — slice-era growth, not bootstrap shape).
 
-## 3 · The migration-path test
+## 3. The migration-path test
 
 **Outcome** (step 4): the migration path **proven, not assumed** —
 and, riding on it, the connection identity asserted and the
@@ -283,7 +283,7 @@ class MigrationPathIT extends DatabaseIT {
   cause**, not the thrown exception — assert there, or the test is
   red for the wrong reason.
 
-## 4 · The probe pair
+## 4. The probe pair
 
 **Outcomes** (step 5): one **probe endpoint** in the main source
 doing a real round-trip as the runtime identity, documented as
@@ -422,7 +422,7 @@ class ContentionProbeIT extends WebDatabaseIT {
   **witness** — persisted state showing the violation — not a count
   of successful responses.
 
-## 5 · What is not in this file, and why
+## 5. What is not in this file
 
 - **The application's own code** — the executor's, always. Only the
   probe crosses into `main/`, because the method demands it and the
@@ -439,7 +439,7 @@ class ContentionProbeIT extends WebDatabaseIT {
   cover the integration naming is a build decision, stated as an
   outcome in the walkthrough.
 
-## 6 · Variation points — read before copying
+## 6. The variation points
 
 1. **The image version follows the ground's major version.**
    `postgres:17` here because the lived grounds were 17. This is the
@@ -451,7 +451,7 @@ class ContentionProbeIT extends WebDatabaseIT {
 3. **The credential rule decides the wiring.** The localdev literals
    here are the establishment's coupling (`bootstrap.sql` ↔
    `.env.example`) carried into the harness, and they keep the suite
-   self-contained — no environment set, no ground up. A run whose
+   self-contained — no environment set, no ground up. A CBC Run whose
    requirements forbid committed test credentials is off this
    reference at exactly this point: derive its wiring, record the
    deviation, expect it to harvest.
@@ -462,7 +462,7 @@ class ContentionProbeIT extends WebDatabaseIT {
    (`failOnMissingLocations(true)`); the third relied on the
    migration-path test plus a tracked home. Either works; closing it
    nowhere leaves the suite green on a clone that cannot migrate.
-5. **The data-access grain** follows the run's requirements, not this
+5. **The data-access grain** follows the CBC Run's requirements, not this
    file: `JdbcClient` appears because plain SQL access was required.
 6. **The request count** is a knob, not a law. A hundred is what the
    lived passes used; what matters is that they are released
@@ -476,7 +476,7 @@ class ContentionProbeIT extends WebDatabaseIT {
    the machinery proof must cross the process boundary (walkthrough,
    step 5): a single-process pass proves a shape nobody runs, and a
    lock inside the process could make it pass. Lived once, carried
-   here as prose until a second run lives
+   here as prose until a second CBC Run lives
    it: the container and the migration lifted out of the database
    base into a **store holder** of their own, so a test with no
    application context shares the store — the base keeps only the
@@ -493,7 +493,7 @@ class ContentionProbeIT extends WebDatabaseIT {
    up. The in-process burst stays beside it as the cheap first
    check.
 9. **How the evidence asserts on a body** is a stack convention this
-   file left unsaid, so each run decided by habit. Lived once: a
+   file left unsaid, so each CBC Run decided by habit. Lived once: a
    substring cannot tell `3` from `30`, cannot say a field exists,
    and cannot say one is absent. The convention, decided before the
    first slice and held after: **by path for a shape** (a small

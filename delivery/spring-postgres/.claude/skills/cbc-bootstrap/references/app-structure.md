@@ -5,7 +5,7 @@
 
 How the application's packages are shaped is a **bootstrap
 decision**, made and recorded exactly as the stack decision is: in
-the run's own log, with its why, before the code that lives under
+the CBC Run's own log, with its why, before the code that lives under
 it. The recorded decision governs **all later code — slice work
 included**: slices enter the structure decided here, they do not
 re-decide it. This doc carries the lived default, the decision
@@ -57,24 +57,24 @@ earned per feature.** Lived across nine slices:
   checks it?"; which test proves which guarantee is the slice
   record's. The bootstrap's first tests go in from the start: the
   contention probe in `adversity/`, the migration path in `store/`.
-  These test packages were laid out after one run's slices, not yet
+  These test packages were laid out after one CBC Run's slices, not yet
   lived from a bootstrap.
 
-This is the shape a run gets when its log says nothing else.
+This is the shape a CBC Run gets when its log says nothing else.
 
 ## The decision rule
 
 - **Decided at bootstrap, logged with its why.** As with the stack:
   the slices rarely discriminate between structures, so the
-  deciding inputs are the run's own — fluency, audience, and a
-  stated intent (*"this run practices pattern X"* is a legitimate
+  deciding inputs are the CBC Run's own — fluency, audience, and a
+  stated intent (*"this CBC Run practices pattern X"* is a legitimate
   deciding input when it is written down).
 - **Deviating from the default is off-default**, as deviating from
-  a skill's template is: derive from the chosen pattern's own logic,
+  a Skill Template is: derive from the chosen pattern's own logic,
   and the rest is (`.claude/rules/delivered-copies.md`, rule 8, *A
-  skill's template is copied and filled*). What you learn comes back
+  Skill Template is copied and filled*). What you learn comes back
   into this doc.
-- **The first run to live an alternative makes it lived** — its
+- **The first CBC Run to live an alternative makes it lived** — its
   entry below stops being vocabulary and gains a harvest line.
 
 ## The vocabulary — named alternatives, none lived here yet

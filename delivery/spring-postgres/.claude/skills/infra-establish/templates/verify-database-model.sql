@@ -1,6 +1,6 @@
--- Template — master copy in correctness-by-construction (CBC ADR-0008).
--- Copy into a run at the same path and fill; the filled file is the
--- run's own (.claude/rules/delivered-copies.md, rule 8, A skill's template is copied and filled).
+-- Skill Template — the Master Copy is in correctness-by-construction (CBC ADR-0008).
+-- Copy into a CBC Run at the same path and fill; the filled file is the
+-- CBC Run's own (.claude/rules/delivered-copies.md, rule 8, A Skill Template is copied and filled).
 
 -- infrastructure/postgres/verify-database-model.sql
 --

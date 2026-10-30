@@ -1,13 +1,13 @@
-# Template — master copy in correctness-by-construction (CBC ADR-0008).
-# Copy into a run and fill; the filled file is the run's
-# own (.claude/rules/delivered-copies.md, rule 8, A skill's template is copied and filled).
+# Skill Template — the Master Copy is in correctness-by-construction (CBC ADR-0008).
+# Copy into a CBC Run and fill; the filled file is the CBC Run's
+# own (.claude/rules/delivered-copies.md, rule 8, A Skill Template is copied and filled).
 
 spring:
   application:
     name: <project>
 
   # The one identity this application knows: <project>_runtime — the data
-  # authority, nothing else (the run's infrastructure contract).
+  # authority, nothing else (the CBC Run's infrastructure contract).
   # Deliberate absences, each a decision:
   #   - no schema pinning here: the ground pins search_path server-side
   #     for the runtime role

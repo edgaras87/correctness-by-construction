@@ -11,17 +11,17 @@ Placeholders: `<project>` — underscored in SQL identifiers
 (`<project>_migrator`), hyphenated where project naming allows
 (compose project name).
 
-The files themselves are copy-and-fill masters in `templates/`,
+The files themselves are Skill Templates in `templates/`,
 beside this skill's `references/` (CBC ADR-0008) — this walk carries the
-whys and the order; the templates carry the bodies and their recall
-comments. Fill a template, and the filled file is the run's own.
-The templates implement the assumptions above. If the run's decided
+whys and the order; the Skill Templates carry the bodies and their recall
+comments. Fill one, and the filled file is the CBC Run's own.
+The Skill Templates implement the assumptions above. If the CBC Run's decided
 constraints differ, you are **off-template**: derive from the model
 (`.claude/skills/infra-establish/references/postgres-role-split.md`),
 and the rest is (`.claude/rules/delivered-copies.md`, rule 8, *A
-skill's template is copied and filled*).
+Skill Template is copied and filled*).
 
-## 0 · Preconditions
+## 0. Preconditions
 
 - podman installed, a compose provider present; `podman compose config`
   runs clean (canonical command: `podman compose` — the front door,
@@ -31,20 +31,20 @@ skill's template is copied and filled*).
   DDL; role-split authority). This walkthrough *implements* those
   decisions; it does not make them.
 
-## 1 · Declare the service (compose)
+## 1. Declare the service (compose)
 
 `compose.yaml` — a `postgres` service and the Flyway one-shot (a
 one-shot behind a profile: the only DDL path, hidden from plain
-`up`). Copy-and-fill: `.claude/skills/infra-establish/templates/compose.yaml`.
+`up`). Skill Template: `.claude/skills/infra-establish/templates/compose.yaml`.
 
 Podman notes: the `:Z` mount flag matters on SELinux hosts; volume and
 network names get the compose project prefix automatically — never
 write it manually. The `name:` pin is a lived correction: without it,
 volume identity depends on the directory the file happens to run from.
 
-## 2 · Split out credentials (`.env`)
+## 2. Split out credentials (`.env`)
 
-`.env` (git-ignored) + committed `.env.example`. Copy-and-fill:
+`.env` (git-ignored) + committed `.env.example`. Skill Template:
 `.claude/skills/infra-establish/templates/.env.example`. Keys: the bootstrap password, the migrator
 password (**must equal** the literal in the bootstrap SQL), optional
 `POSTGRES_PORT`, and the runtime application password (**must
@@ -55,12 +55,12 @@ Rule: secrets and machine variance are variables;
 files that use them — changing one is a committed decision, not
 configuration.
 
-## 3 · Write the bootstrap SQL (the model instantiated)
+## 3. Write the bootstrap SQL (the model instantiated)
 
 `infrastructure/postgres/init/bootstrap.sql` — runs **once**,
 automatically, at the container's first start against an empty volume,
 as the bootstrap identity, **connected to `POSTGRES_DB`**.
-Copy-and-fill: `.claude/skills/infra-establish/templates/bootstrap.sql` — its comments are the
+Skill Template: `.claude/skills/infra-establish/templates/bootstrap.sql` — its comments are the
 recall layer, carried in full; the load-bearing lines are the
 default privileges (every table and sequence a future migration
 creates arrives already granted to runtime, so the split needs no
@@ -70,28 +70,28 @@ Who creates the database: **the container**, from `POSTGRES_DB` —
 owned by the bootstrap identity; migrator owns only the schema. No
 `CREATE DATABASE` in the script.
 
-## 4 · Land the verification suite
+## 4. Land the verification suite
 
 `infrastructure/postgres/verify-database-model.sql` — beside `init/`,
 **not in it** (run on demand, never at container start).
-Copy-and-fill: `.claude/skills/infra-establish/templates/verify-database-model.sql`. It queries the
+Skill Template: `.claude/skills/infra-establish/templates/verify-database-model.sql`. It queries the
 catalog against the model's claims — roles and capabilities,
 database and schema ownership, schema privileges, default privileges
 (the model's load-bearing mechanism, invisible to `\dn+`); expected
 results ride as comments beside each query so the reader needs no
 other doc open.
 
-## 5 · Wire Flyway (config + empty migrations)
+## 5. Wire Flyway (config + empty migrations)
 
 `infrastructure/flyway/conf/flyway.conf` — no credentials (env-passed
 by compose); the url speaks the compose network's service name.
-Copy-and-fill: `.claude/skills/infra-establish/templates/flyway.conf`.
+Skill Template: `.claude/skills/infra-establish/templates/flyway.conf`.
 
 `infrastructure/flyway/migrations/` — empty (+`.gitkeep`) until work
 earns schema; naming, when it does: `V<n>__<description>.sql`. **No
 grant statements in migrations, ever** — default privileges handle it.
 
-## 6 · Bring it up
+## 6. Bring it up
 
 ```sh
 podman compose config      # sanity: interpolation resolves, file renders
@@ -105,7 +105,7 @@ healthy during that temporary server, and a query in that window
 fails with `the database system is shutting down`. Wait a second and
 retry; `pg_isready` plus one real query is the honest "up".
 
-## 7 · Verify — both ways, always
+## 7. Verify — both ways, always
 
 **Catalog check:**
 
@@ -139,7 +139,7 @@ correct on a fresh ground):
 podman compose run --rm flyway info
 ```
 
-## 8 · Know the reset path
+## 8. Know the reset path
 
 The bootstrap SQL runs only against an empty volume. After any change
 to it (**destructive — drops all data; explicit confirmation first**):
@@ -151,7 +151,7 @@ podman compose up -d
 
 …then re-run step 7, both checks.
 
-## 9 · Hand off
+## 9. Hand off
 
 The connection facts the system's code needs: host
 `localhost:${POSTGRES_PORT:-5432}` from outside, `postgres:5432`
@@ -184,5 +184,5 @@ podman run --rm --network host docker.io/library/postgres:17 \
 These facts land in the project's **living infrastructure contract** —
 one section per service, grown at each later addition, the refusals
 written as contract terms. Note there that the ground files were
-filled from this skill's templates — the trail a later reader needs
-to find the masters.
+filled from this skill's Skill Templates — the trail a later reader needs
+to find the Master Copies.

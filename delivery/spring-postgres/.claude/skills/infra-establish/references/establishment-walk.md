@@ -18,7 +18,7 @@ move, not the stop: a dated revision entry in the definition's
 LAYER-1-ENVIRONMENT, one commit, then the walk begins (Stage 0,
 check 2).
 
-## 1 · Decide the Execution Environment — demands first, against the lived default
+## 1. Decide the Execution Environment — demands first, against the lived default
 
 Derive what the slices' adversities demand the evidence be able to
 *do*: kill processes mid-write, race plural instances, break a commit
@@ -67,7 +67,7 @@ An ephemeral throwaway compose smoke test outside the repo is allowed
 when the operator wants the earlier signal; it is never owed and never
 committed.
 
-## 2 · Evaluate Infrastructure Services — constrained by need
+## 2. Evaluate Infrastructure Services — constrained by need
 
 Slice by slice: what capability does each invariant's evidence
 actually require? The service set is what survives that question — and
@@ -76,7 +76,7 @@ cache refused, a queue refused, and for what reason). One log entry.
 Anything joining later re-enters this evaluation as a logged decision
 (the infra-serve skill).
 
-## 3 · Name each service's constraints — against standing knowledge first
+## 3. Name each service's constraints — against standing knowledge first
 
 Constraints are requirements and limitations imposed on a service —
 governance of the ground, stated as principles (e.g. *the running
@@ -93,7 +93,7 @@ its own truth — but references the standing knowledge as the
 realization, never re-deriving it. A service without standing
 knowledge gets its constraints derived fresh.
 
-## 4 · Apply — or record — the governing knowledge
+## 4. Apply — or record — the governing knowledge
 
 Where a constraint's realization is reusable across projects, it is
 knowledge, not project truth: keep it generic, keep the project's
@@ -102,7 +102,7 @@ reusable realization (a new service family), write it up as a new
 reference beside `.claude/skills/infra-establish/references/postgres-role-split.md` so no later project
 re-derives it.
 
-## 5 · Stand the services up, and verify both ways
+## 5. Stand the services up, and verify both ways
 
 Ground files land as project truth: declarations (`compose.yaml`),
 bootstrap scripts, tool configs — **secrets split out** per the
@@ -124,7 +124,7 @@ For PostgreSQL, the whole of stages 3–6 has a lived end-to-end
 sequence: `.claude/skills/infra-establish/references/postgres-setup-walkthrough.md`. Consult it when PostgreSQL
 recurs; never force its shape on a different service.
 
-## 6 · Write the infrastructure contract
+## 6. Write the infrastructure contract
 
 The builder-facing manual — a **living document, one section per
 service**, grown at every later re-entry: what services exist, how to
@@ -134,7 +134,7 @@ allow and refuse (the refusals written as contract terms), how schema
 changes are made. It masters the ground's vocabulary. The exit needs
 both manuals standing — this one and the operator manual.
 
-## 7 · Run the exit test
+## 7. Run the exit test
 
 Against the lived walk: does the ground run? Is every service tied to
 a stated need, every exclusion to a stated why? Do both verifications
@@ -143,12 +143,12 @@ from lived work? Could a reader stand the same ground up on their own
 machine from the operator manual alone? Any no → the walk isn't done.
 
 When the exit test passes, the ground's truth projects outward: the
-run's README gains its **Prerequisites** section — the environment
+CBC Run's README gains its **Prerequisites** section — the environment
 lines a stranger's machine needs before this ground can stand,
 derived from the operator manual, carrying only what a stranger
 needs in hand and linking the manual for the rest. Skeleton:
 `.claude/skills/infra-establish/templates/readme-prerequisites.md` in this skill — merge, fill,
-and the section is the run's own (`.claude/rules/delivered-copies.md`, rule 8, *A skill's template is copied and filled*). The stack's own
+and the section is the CBC Run's own (`.claude/rules/delivered-copies.md`, rule 8, *A Skill Template is copied and filled*). The stack's own
 prerequisite line is **not** written here: its fact is born at
 bootstrap, whose skill carries it (CBC ADR-0013). The container's README
 ships without the section — container stays, direction goes — and

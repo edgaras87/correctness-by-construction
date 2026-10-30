@@ -1,8 +1,8 @@
-<!-- Template — master copy in correctness-by-construction (CBC ADR-0008).
-     Merge into the run's README at Stage 5, when the
+<!-- Skill Template — the Master Copy is in correctness-by-construction (CBC ADR-0008).
+     Merge into the CBC Run's README at Stage 5, when the
      harness is real, and fill from the certified commands; the
-     filled sections are the run's own (.claude/rules/delivered-copies.md, rule 8, A skill's template is copied and filled). Only the material
-     below travels — this header stays with the master. The stack
+     filled sections are the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, A Skill Template is copied and filled). Only the material
+     below travels — this header stays with the Master Copy. The stack
      line joins the Prerequisites section infra-establish opened; the
      command bodies are the lived Spring/Maven shape — a different
      stack writes its own, keeping the shape: Run stands the ground
