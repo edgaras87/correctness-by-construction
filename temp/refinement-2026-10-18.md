@@ -2752,6 +2752,19 @@ Memory's part headings, FINDING-596 and 597; the shipped
   devlog entry does; rewording it rewords evidence. Under (a),
   FINDING-568, 596, 597, 647, 653, 656 to 661 and 668 are declined,
   and 705 and 706 stand.
+- Chosen: (c), by the reviewer, 2026-10-30, on the agent's changed
+  recommendation after the reviewer asked why not fix. The test is who
+  reads the text: nobody works from the devlog, but the agent reads an
+  approach's notes each time it does that work, and copies the voice
+  it reads; the shipped copy is read by every CBC Run. A Name spelled
+  right changes no fact a note records. So the approaches' *Uses*
+  notes and the refinement's *Found* lines are living: their Names
+  are fixed, what each says stays. FINDING-647, 653, 656 to 661 and
+  668 fixed so; 648, the shipped "here", fixed. The released CHANGELOG
+  entry and the Conversation Memory's part headings are history:
+  FINDING-568, 596 and 597 declined, and the one-home rule's *Not a
+  second home* and facts-in-sync §1 name a released CHANGELOG entry at
+  the round's close. 705 and 706 stand.
 
 **DECISION-19.** Whether the method's and the stack's own words are
 Glossary Names. Rests: the roll-ups FINDING-739, 741, 744, 747, 775,
