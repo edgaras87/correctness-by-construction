@@ -71,7 +71,7 @@ there.
    lands where the Exchange Convention says.
 
 8. **Records as they fall,** each at its moment in `CLAUDE.md`'s
-   records table: an ADR, the decisions log, the devlog.
+   records table: an ADR, the Decisions Log, the devlog.
 
 9. **When the list is closed, `exchange-deliver`.** Closed means the
    first gate below holds: a finding with no item reaches no

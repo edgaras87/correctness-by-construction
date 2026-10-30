@@ -29,7 +29,7 @@ read back from here. Documents only — no code, no CBC Runs
 | How the repo's parts tie together changed | What stands now, and how its parts tie | ARCHITECTURE.md |
 | Meeting a Glossary Name, or defining a thing | The Glossary Names, each pointing at its home | docs/glossary.md |
 | Agent setup changed | Decision, why, rejected options | .claude/decisions.md |
-| Work needs more than one commit | In-flight change set | COMMIT-PLAN.md (when present) |
+| Work needs more than one commit | In-flight Change Set | COMMIT-PLAN.md (when present) |
 
 <!-- This file is loaded in full on every task, relevant or not
      (`docs/conventions/agent-arrangement/` §2.6, The entry file's size), so every line

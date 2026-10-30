@@ -1,12 +1,12 @@
 ---
 name: commit-plan
-description: How work larger than one commit is sequenced into commits, reviewed at each boundary, and closed. Use before starting a change set that needs more than one commit.
+description: How work larger than one commit is sequenced into commits, reviewed at each boundary, and closed. Use before starting a Change Set that needs more than one commit.
 foundation: the commit-plan convention
 ---
 
 # Commit Plan
 
-A **change set** is a body of work that needs more than one commit.
+A **Change Set** is a body of work that needs more than one commit.
 Its commits are planned before it starts, reviewed as they land,
 and the plan is closed.
 
@@ -29,7 +29,7 @@ when someone other than the author reviews as it lands.
 One file, `COMMIT-PLAN.md`, at the repo root, one at a time:
 
 ```markdown
-# Commit plan: <what this change set does>
+# Commit plan: <what this Change Set does>
 
 ## Summary — the state after all commits
 <Prose. The end state, not the commits. What the repo looks like once
@@ -146,7 +146,7 @@ refinement, not divergence; the close body distinguishes the two.
 
 Work stops at every commit boundary: stage, show the diff, commit
 only on the reviewer's word. The rule is commit-messages', and binds
-at every commit, not only inside a change set (`docs/conventions/commit-messages/` §2.4, *Commit on the word*).
+at every commit, not only inside a Change Set (`docs/conventions/commit-messages/` §2.4, *Commit on the word*).
 
 **Small steps inside a planned commit, where the reviewer has
 granted them.** A planned commit may then be built as several small
