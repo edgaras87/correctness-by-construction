@@ -2663,7 +2663,8 @@ out. The numbering follows the readers' lists, FINDING-282 to 925.
 
 ### Decisions
 
-Sixteen, DECISION-16 to DECISION-31. Four of them end most of the
+Seventeen, DECISION-16 to DECISION-32, the last raised by the
+reviewer while deciding. Four of them end most of the
 list between them: DECISION-16, where the method's and the stack's
 188 findings are worked; DECISION-26, which figures are dead; DECISION-19,
 whether the method's own words are Names; DECISION-18, whether dated
@@ -2933,6 +2934,23 @@ writes "commit-messages' rule".
   today: 16 lines in layer 4 alone.
 - (c) Backticks on the label.
 - Recommended: (a).
+- Chosen: a revised option, by the reviewer, 2026-10-30, after asking
+  what a convention is (DECISION-32). Three conventions share their
+  name with an artifact: commit-messages, commit-plan and
+  visual-comparison. Where a label could mean either, the sentence
+  writes the kind: "the commit-messages manual" for the top level,
+  "the commit-messages Agent Skill" for the skill, as an Agent Rule
+  is written; never "approach", which would clash with Work Approach
+  and Approach on Trial. Where a label has no clash, the bare
+  hyphenated word stands: project-recording's, facts-in-sync's. A
+  one-word convention, exchange, shapes, writing, conventions,
+  retrospective, is its path or its Name, since the bare word is
+  English: "the exchange manual" and the like change. In a shipped
+  file "manual" is not written but beside a Fact Reference the CBC Run
+  is not asked to follow. Agent Skill is a new Glossary Name; its
+  reach, every use of "skill" for the file or only where a label
+  clashes, is DECISION-32's design. The glossary's header gains the
+  line at the round's close.
 
 **DECISION-25.** How a Skill Stage or an Approach Stage is written
 outside its owner, and an Approach Stage's case. Rests: FINDING-571,
@@ -3027,6 +3045,30 @@ lead only.
   for a title with a gloss, said in facts-in-sync §3.1.
 - Recommended: (a). The pass kept the titles for their paths; the
   readers show the cost lands on every reference.
+
+**DECISION-32.** What a convention is. Raised by the reviewer at
+DECISION-24, 2026-10-30. Rests: DECISION-24's wording; every text that
+names a convention or its artifacts. The Idea-to-Output Model has a
+convention as two texts, its manual and its artifacts
+(`docs/models/idea-to-output.md` §6.1, *Two texts*), and so spans two
+levels of its own chain: the manual is a Canonical Description, a
+skill a Work Approach.
+- (a) A convention is the manual's level: the way of working, written
+  in its manual. Its Agent Skills, Agent Rules and forms are Work
+  Approaches made from it, one level down, each pointing up by its
+  Foundation Line; a manual points down only in its list *What this
+  is made usable as*. A CBC Run holds no convention, only approaches
+  made from ours.
+- (b) As today: a convention is the manual and its artifacts.
+- Chosen: (a), by the reviewer, 2026-10-30. A design change to an Idea
+  Model (`.claude/approaches-on-trial/refinement.md` §2.7, *Working
+  the findings*): an ADR, the Foundation Check's walk from
+  `docs/models/idea-to-output.md` §6 to the conventions manual §1 and
+  what stands on them, built with DECISION-19's design after the
+  decisions. It also settles Agent Skill as a Name for a skill file,
+  beside Agent Rule, and how far it reaches: 603 lines in 79 living
+  files say "skill" today, 81 of them inside Skill Stage or Skill
+  Template.
 
 ### Met in round 3, of other kinds
 
