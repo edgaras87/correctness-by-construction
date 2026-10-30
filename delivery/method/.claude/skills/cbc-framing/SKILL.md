@@ -8,8 +8,8 @@ foundation: concept v1
 
 Turn a standing project idea into three artifacts: **intent** (the promise),
 **system definition** (its five layers), **slice registry** (the work, cut
-and ready). All paper — no code, no tech choices; the run's stub-born repo
-is the paper's home. A framing may honestly end in "no project"; that is a
+and ready). All paper — no code, no tech choices; the CBC Run's repo,
+born from Record Stubs, is the paper's home. A framing may honestly end in "no project"; that is a
 valid exit.
 
 The full procedure is `.claude/skills/cbc-framing/references/cbc-framing-workflow.md` — read it before
@@ -34,9 +34,9 @@ human works it with you. The hard rule, from the method itself:
   responsibilities, out-of-scope facts — recorded, never silently dropped.
   Silence is the only forbidden channel.
 
-**Delegated-verdict mode.** A run may hand these verdicts to the
-agent — but only through an explicit decision recorded in the run's
-own records (its `.claude/decisions.md`), naming what is delegated,
+**Delegated-verdict mode.** A CBC Run may hand these verdicts to the
+agent — but only through an explicit decision recorded in the CBC Run's
+own records (its Decisions Log, `.claude/decisions.md`), naming what is delegated,
 why, and the cost accepted: the written derivation trail becomes
 the only review, so its legibility is part of the product. Every
 gate is still presented, decided, and recorded where the record
@@ -104,10 +104,11 @@ commit, and the file's first line says what was removed. After it,
 the briefing is history, never edited. So a claim like "no
 divergence from the briefing" can be checked against it.
 
-**The glossary starts here too:** `docs/glossary.md`, from the
-copy-and-fill master `.claude/skills/cbc-framing/templates/glossary.md`. Each coined word and
-each tag kind is defined there once, in one plain sentence, when
-framing first uses it. Every later record adds to it.
+**The glossary is already there:** `docs/glossary.md`, born with
+the CBC Run, holds the Glossary Names the delivered files are written
+in. Each thing framing defines, and each tag kind, gets its Glossary
+Name there, in one plain sentence, when framing first uses it. Every
+later record adds to it.
 
 **Each stage's result is written once, straight into its export,**
 when the human gives the verdict: the intent at stage 0, the
@@ -140,9 +141,9 @@ result and never restates it. Three rules:
    record of how the framing ran.
 
 Where each record kind lives: framing verdicts — inline here; a
-delegation arrangement — the run's `.claude/decisions.md` (agent
+delegation arrangement — the CBC Run's Decisions Log (agent
 setup, not project truth); the framing's adoption — one ADR in the
-run's `docs/adr/` at close.
+CBC Run's `docs/adr/` at close.
 
 ## Export and handoff
 
@@ -153,14 +154,14 @@ false. The **residue filter** holds throughout: an export never
 references the derivation doc's machinery — conclusions stand
 re-grounded in the exports themselves. The same filter refuses
 **agent language**: nothing in an export names this skill, a
-workflow stage, or the run's arrangement — a reader without the
+workflow stage, or the CBC Run's arrangement — a reader without the
 skills directory must not need it to read them. Default export
 practice: **commit in derivation order** — the intent; the system
 definition growing LAYER-2-SYSTEM → LAYER-1-ENVIRONMENT →
 LAYER-4-PROBLEMS → LAYER-3-AREAS → LAYER-5-INTERACTION, each
 stage's result committed at its verdict; the registry; the adoption
 record; the README last (the surface derives from committed
-internals) — so the run repo's own history tells the derivation
+internals) — so the CBC Run's own history tells the derivation
 story. The order is the commits', not the file's: each layer
 commit places its section where the workflow presents it, so the
 definition ends LAYER-1-ENVIRONMENT to LAYER-5-INTERACTION,
@@ -184,10 +185,10 @@ grouping is headings for the reader, never a boundary; the
 reconciliation line accounts for every kill and states even its
 absences (the written zero); exactly one slice is chosen-next
 while open work remains. The default layout is the
-copy-and-fill master `.claude/skills/cbc-framing/templates/registry.md` beside this
-skill's references (CBC ADR-0008). Declining it is **off-template**:
+Skill Template `.claude/skills/cbc-framing/templates/registry.md`
+(CBC ADR-0008). Declining it is **off-template**:
 derive your own layout from the outcomes above, and the rest is
-(`.claude/rules/delivered-copies.md`, rule 8, *A skill's template is
+(`.claude/rules/delivered-copies.md`, rule 8, *A Skill Template is
 copied and filled*).
 
 **The exports are living records, not write-once.** The registry
@@ -200,7 +201,7 @@ what changed, why, what triggered it), the framing's own
 return-trip discipline extended past close. Silent edits and stale
 claims are the same forbidden channel.
 
-**The README — the projected surface.** The run repo's README is
+**The README — the projected surface.** The CBC Run's README is
 **derived from the three exports, never authored on its own**:
 every claim on it has a master in `docs/system/`. A fact the
 reader needs that lives only in the derivation record marks a gap
@@ -219,7 +220,7 @@ What each piece derives from:
 Depth is a routing link into the exports, never more prose. At
 framing close the thin README is the whole public surface — with
 the masters one click away, a public restatement fails: the reader
-clicks into the master instead. A run whose conditions differ may
+clicks into the master instead. A CBC Run whose conditions differ may
 rebut this, off-default, logged. The README refreshes the way it
 was born: event-driven at milestones (a slice close moves the
 status line), re-derived from the masters, never patched in place.

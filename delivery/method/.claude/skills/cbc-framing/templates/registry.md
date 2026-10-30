@@ -1,15 +1,15 @@
-<!-- Copy-and-fill master for the slice-registry export (CBC ADR-0008).
+<!-- The Skill Template for the slice-registry export (CBC ADR-0008).
      Fill every <angle> slot; delete
-     the guidance lines. Declining this template is off-template:
+     the guidance lines. Declining this Skill Template is off-template:
      derive your own layout from the outcomes in the skill's export
      section (.claude/skills/cbc-framing/SKILL.md, Export and
      handoff); the rest is (.claude/rules/delivered-copies.md, rule
-     8, A skill's template is copied and filled). -->
+     8, A Skill Template is copied and filled). -->
 
 # Slice registry — the work, cut and ready
 
 Framed <date>; every verdict <the reviewer's — or: delegated, per
-<the run's record of that decision>>. Source of truth for what to
+<the CBC Run's record of that decision>>. Source of truth for what to
 work next. Ordering is an expectation, re-decided at each slice
 close — never assumed from this file's original state.
 

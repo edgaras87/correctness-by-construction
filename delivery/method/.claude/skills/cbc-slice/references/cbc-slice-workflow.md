@@ -33,7 +33,7 @@ alternatives are never weighed against the actual requirement.
 
 One record per slice, written as the stages go. This is the minimum
 every record needs: where each stage's output goes, and one block
-per guarantee. The slice-record shape, in `.claude/shapes/`, adds to
+per guarantee. The Slice Record Shape, in `.claude/shapes/`, adds to
 it and says how each part reads; it is read at the close, never while
 writing. Beside each part, the stage that writes it.
 
@@ -190,16 +190,16 @@ later slice may rely on now, so it stays short and current. What a
 row holds is the Invariants section's own comment, in
 `ARCHITECTURE.md`.
 
-**Why the shapes are not in this skill.** They arrive with the
-method as copies in `.claude/shapes/`: the slice record, the evidence
-test, the kill and the registry entry. The project changes them, or
-writes its own, as the shapes rule says
-(`.claude/rules/shapes-lifecycle.md` §1, *Written from work that exists*). A shape inside this skill
+**Why the Output Shapes are not in this skill.** They arrive with the
+method as copies in `.claude/shapes/`: the Slice Record Shape, the
+Evidence Test Shape, the Kill Shape and the Registry Entry Shape. The project changes them, or
+writes its own, as the shapes Agent Rule says
+(`.claude/rules/shapes-lifecycle.md` §1, *Written from work that exists*). An Output Shape inside this skill
 would be read while the record is written, and the record would
 follow it instead of showing where it is wrong. Whether an output is
-worth a new shape is a judgement the project makes when it makes it,
-not a step of this close. Why a shape is read only at the close: the
-shapes rule, "One place, read at the gate".
+worth a new Output Shape is a judgement the project makes when it makes it,
+not a step of this close. Why an Output Shape is read only at the close:
+(`.claude/rules/shapes-lifecycle.md` §2, *One place, read at the gate*).
 
 ---
 

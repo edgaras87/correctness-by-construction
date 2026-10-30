@@ -2,16 +2,16 @@
 foundation: practice, under the shapes convention
 ---
 
-# The shape of an evidence test
+# The Evidence Test Shape
 
 **Governs:** how an evidence test is written: the first line of its
 comment, the order of its assertions, and the labels on them. Its
 form only. Which adversity a test creates, and which guarantee it
 answers, come from the slice record.
 
-<!-- A shape: what a kind of output looks like, its form and never
+<!-- An Output Shape: what a kind of output looks like, its form and never
      its content. Read at a slice's closing gate, never while a test
-     is written. How shapes live is .claude/rules/shapes-lifecycle.md,
+     is written. How Output Shapes live is .claude/rules/shapes-lifecycle.md,
      and not repeated here. When a red run counts is the build
      gate of .claude/skills/cbc-slice/SKILL.md, Stage 3, not this
      shape's. -->
@@ -24,7 +24,7 @@ answers, come from the slice record.
 - a structural test, which reads the code;
 - a tripwire, which pins a decision and is not evidence.
 
-A test this shape accepts can still create the wrong adversity.
+A test this Output Shape accepts can still create the wrong adversity.
 That is the slice record's business. What it leaves out is *What is
 exempt, and why*.
 
@@ -179,7 +179,7 @@ Read the slice's tests and ask:
    where it differs) before the exact numbers? Is what must agree
    read in one read?
 3. Does every label print the reading?
-4. Where a test differs from this shape: did it drift, was the shape
+4. Where a test differs from this Output Shape: did it drift, was the Output Shape
    wrong, did each have something, or is it a different kind of
-   test? How each ends is the shapes rule's
+   test? How each ends is the shapes Agent Rule's
    (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).

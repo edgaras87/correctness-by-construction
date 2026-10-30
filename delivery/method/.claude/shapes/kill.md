@@ -2,22 +2,22 @@
 foundation: practice, under the shapes convention
 ---
 
-# The shape of a kill
+# The Kill Shape
 
 **Governs:** how a kill is written in the definition's collisions
 layer: one way the promise can break, found by setting one fact
 against one possession. Its form, never its content: which fact
 meets which possession, and what dies, come from the collision.
 
-<!-- A shape: what a kind of output looks like, its form and never
+<!-- An Output Shape: what a kind of output looks like, its form and never
      its content. Read at framing's closing gate, never while the
-     kills are written. How shapes live is
+     kills are written. How Output Shapes live is
      .claude/rules/shapes-lifecycle.md, and not repeated here. -->
 
 ## What this document controls
 
 **The form of one kill in the numbered list of kills,** and nothing
-else. A kill this shape accepts can still be the wrong kill; that
+else. A kill this Output Shape accepts can still be the wrong kill; that
 is the collision's business. What it leaves out is *What is exempt,
 and why*.
 
@@ -119,7 +119,7 @@ Read the kills and ask:
    by" a fence?
 4. Does every kill that dies have a `*Say:*` line with real
    numbers?
-5. Where a kill differs from this shape: did it drift, was the
+5. Where a kill differs from this Output Shape: did it drift, was the
    shape wrong, did each have something, or is it a different kind?
-   How each ends is the shapes rule's
+   How each ends is the shapes Agent Rule's
    (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).

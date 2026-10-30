@@ -2,22 +2,22 @@
 foundation: practice, under the shapes convention
 ---
 
-# The shape of a slice record
+# The Slice Record Shape
 
 **Governs:** how a slice record is laid out, and how each
 guarantee's block is written. Their form, never their content: what
 a guarantee says comes from the attack, and what holds it comes from
 the plan.
 
-<!-- A shape: what a kind of output looks like, its form and never
+<!-- An Output Shape: what a kind of output looks like, its form and never
      its content. Read at a slice's closing gate, never while the
-     record is written. How shapes live is
+     record is written. How Output Shapes live is
      .claude/rules/shapes-lifecycle.md, and not repeated here. -->
 
 ## What this document controls
 
 **The record's order, and the form of a guarantee's block.** A
-block this shape accepts can still hold the wrong guarantee; that
+block this Output Shape accepts can still hold the wrong guarantee; that
 is the attack's business, and the specification's. Every other
 section is the slice's own, as long as the slice needs.
 
@@ -217,7 +217,7 @@ Read the record and ask:
 4. Does every chosen option come first, with its cost and the size
    that cost assumes?
 5. Does every backstop say whether it was seen at the red run?
-6. Where the record differs from this shape: did it drift, was the
+6. Where the record differs from this Output Shape: did it drift, was the
    shape wrong, did each have something, or is it a different kind?
-   How each ends is the shapes rule's
+   How each ends is the shapes Agent Rule's
    (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).

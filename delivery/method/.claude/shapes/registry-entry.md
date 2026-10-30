@@ -2,7 +2,7 @@
 foundation: practice, under the shapes convention
 ---
 
-# The shape of a registry entry
+# The Registry Entry Shape
 
 **Governs:** how one slice's entry is written in the slice
 registry: the fields framing gives it, and the line each close
@@ -10,9 +10,9 @@ adds. Its form, never its content: what the invariant and the
 adversity are comes from framing, and what a close answered comes
 from the slice's record.
 
-<!-- A shape: what a kind of output looks like, its form and never
+<!-- An Output Shape: what a kind of output looks like, its form and never
      its content. Read at framing's closing gate, and at each
-     slice's close, never while the entry is written. How shapes
+     slice's close, never while the entry is written. How Output Shapes
      live is .claude/rules/shapes-lifecycle.md, and not repeated
      here. -->
 
@@ -103,7 +103,7 @@ Read the entry and ask:
 3. Is the record linked?
 4. Does a closed slice's entry answer each flag and judgment it
    settled, one line each, with a reference?
-5. Where the entry differs from this shape: did it drift, was the
+5. Where the entry differs from this Output Shape: did it drift, was the
    shape wrong, did each have something, or is it a different kind?
-   How each ends is the shapes rule's
+   How each ends is the shapes Agent Rule's
    (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).

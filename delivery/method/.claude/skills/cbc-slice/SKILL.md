@@ -197,20 +197,20 @@ never seen red is not known to be watching.
 3. **Where this slice changed how the system is built, add or change
    rows in ARCHITECTURE's Invariants table,** as its header comment
    says.
-4. **Last, read what the slice made against the shapes in
+4. **Last, read what the slice made against the Output Shapes in
    `.claude/shapes/`,** the method's copies and any the project
-   wrote; this skill carries none. Where no shape governs what the
+   wrote; this skill carries none. Where no Output Shape governs what the
    slice made, nothing is checked. Where one does, each difference
    is **proposed as a diff, never corrected**. How each ends is the
-   shapes rule's
+   shapes Agent Rule's
    (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*), and the human
    says which.
 
 **Gate:** the slice is closed in the registry with its answers,
 provisionals and hand-ons one line each and the ordering re-decided in
 writing; ARCHITECTURE's rows match what the slice built; and the
-record has been read against the project's shapes, each difference
-ended as the shapes rule says
+record has been read against the project's Output Shapes, each difference
+ended as the shapes Agent Rule says
 (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).
 
 ## Deviations — legal, never silent

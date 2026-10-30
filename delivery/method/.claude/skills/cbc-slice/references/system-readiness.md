@@ -69,7 +69,7 @@ the evidence is seen red with the wall absent before the wall stands,
 recorded from actual output. The slice's gate says so at its opening;
 readiness is signed with READINESS-5 owed there.
 
-## READINESS-6 — The run's record surfaces exist
+## READINESS-6 — The CBC Run's record surfaces exist
 
 The registry is writable, and the project's own record scheme (decided at
 bootstrap, not by this method) has a place for deviations and sign-offs —
