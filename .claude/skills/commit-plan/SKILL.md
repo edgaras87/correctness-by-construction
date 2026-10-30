@@ -24,7 +24,7 @@ commits, and pays for itself only across a sequence. Reach for one
 especially when the split could turn out wrong halfway through, or
 when someone other than the author reviews as it lands.
 
-## 2. The artifact
+## 2. The plan file
 
 One file, `COMMIT-PLAN.md`, at the repo root, one at a time:
 
@@ -89,13 +89,13 @@ section.>
   table: every record whose moment this set will create gets a
   commit, at the boundary where its truth exists. A set that closes
   a `PLAN.md` gate item names the commit that closes it. A change to
-  the agent's own files — a skill or rule corrected or added, its
+  the agent's own files — a skill or Agent Rule corrected or added, its
   decisions entry — is a commit of its own, never
   folded into a records commit, since the two are kept apart
-  (`docs/conventions/commit-messages/` §2.3, *The agent's files never share…*). A records commit planned to carry one has to be split
+  (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*). A records commit planned to carry one has to be split
   when it opens.
 
-## 4. Lifecycle
+## 4. The lifecycle
 
 | When | Commit | Contents |
 |---|---|---|
@@ -160,7 +160,7 @@ the same way. Each small commit follows commit-messages too: subject
 and body are counted when it is written, not at the regroup. Without
 the grant, every commit is a boundary.
 
-## 7. Anti-patterns
+## 7. A plan's anti-patterns
 
 - **Commits grouped by file type.** Tidy-looking, reverts incoherently.
 - **Checkboxes in the plan.** Status belongs to git history.

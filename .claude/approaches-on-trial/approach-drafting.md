@@ -1,10 +1,10 @@
 # Approach drafting
 
-**On trial.** How work never done before gets its approach: drafted
+**On trial.** How work never done before gets its Approach on Trial: drafted
 for that work, corrected as the work goes, and handed over at its
-close. The same in a run and at the deliverer, apart from the close.
+close. The same in a CBC Run and at the Concept Deliverer, apart from the close.
 
-An approach is how a piece of work is done. On trial, it is not yet
+A Work Approach is how a piece of work is done. On trial, it is an Approach on Trial, not yet
 proven: a guess the work tests. It lives in
 `.claude/approaches-on-trial/`, one file per kind of work.
 
@@ -12,18 +12,18 @@ proven: a guess the work tests. It lives in
 
 So that the first time a kind of work is done, the way it was done
 is kept as it worked, not as it was guessed. A skill or a manual
-written before the work describes a guess. An approach starts as
+written before the work describes a guess. An Approach on Trial starts as
 one too, but the work corrects it before anything is made of it.
 
 ## When it opens
 
-When a step opens, or a work item inside one, or a small TODO item
-comes due, and no skill, rule or approach on trial covers the work.
-A step's opening items ask this.
+When a Plan Step opens, or a work item inside one, or a small TODO item
+comes due, and no skill, Agent Rule or Approach on Trial covers the work.
+A Plan Step's opening items ask this.
 
-First ask: **is it new, or a gap in a skill, rule or approach this
-project holds?** A gap is an edit to that file, and this approach
-stops here. In a run, how a delivered copy is edited is
+First ask: **is it new, or a gap in a skill, Agent Rule or Approach on Trial this
+project holds?** A gap is an edit to that file, and this Approach on Trial
+stops here. In a CBC Run, how a delivered copy is edited is
 `.claude/rules/delivered-copies.md`'s.
 
 ## Stages
@@ -33,47 +33,47 @@ stops here. In a run, how a delivered copy is edited is
 1. **The reviewer says what the work should do or be.**
 2. **Find the ways it could be done,** and recommend one. The
    reviewer chooses. Keep the others, each with the reason.
-3. **Write the approach** at
+3. **Write the Approach on Trial** at
    `.claude/approaches-on-trial/<work>.md`, `<work>` the kind of work
    in a word or two. The name starts with `approach-` only when its
    subject is approaches. It holds:
    - what the work is for;
-   - its stages, in order;
+   - its Approach Stages, in order;
    - what is not known yet;
    - the ways rejected, with their reasons;
    - its uses, empty until the close.
 
    Write it for this work, in its own terms. Nothing is made general
    yet: what is general shows only once the work is done.
-4. **If the work is a step,** what its Notes and gate take from
-   the approach is `PLAN.md`'s step form's.
+4. **If the work is a Plan Step,** what its Notes and gate take from
+   the Approach on Trial is the Plan Step Form's.
 
 ### 2. Work
 
-- **When the work shows the approach wrong, change the approach
+- **When the work shows the Approach on Trial wrong, change it
   first,** then go on. It always says what is being done now, not
   what was planned.
 - **Each change is a commit of its own.** Its body says what the
   work taught, and names the commit where the work showed it. The
-  approach is an agent file and the work a project file, so the two
+  Approach on Trial is an agent file and the work a project file, so the two
   never share a commit
   (`.claude/skills/commit-messages/SKILL.md`, *The agent's own files*).
 
 ### 3. Close
 
-1. **Write this use's note** under the approach's uses, dated: what
+1. **Write this use's note** under the Approach on Trial's uses, dated: what
    the work did, what it taught, what is still not known.
 2. **Hand it over for evaluation.**
-   - **At the deliverer:** open `approach-evaluation`.
-   - **In a run:** one line under TODO's *To the deliverer* offers
+   - **At the Concept Deliverer:** open `approach-evaluation`.
+   - **In a CBC Run:** one line under TODO's *To the deliverer* offers
      it, with its path and the commits that hold its history, so the
-     deliverer reads how it grew. Example: "approach on trial,
+     Concept Deliverer reads how it grew. Example: "Approach on Trial,
      offered for evaluation: `.claude/approaches-on-trial/retro.md`,
-     its history at `a1b2c3d`..`e4f5a6b`". The approach stays where
+     its history at `a1b2c3d`..`e4f5a6b`". The Approach on Trial stays where
      it is, and this project uses it again until a delivery says
      otherwise.
 
-## When the approach fails
+## When the Approach on Trial fails
 
 Drop it, and the devlog says why, as a dead end. What was tried
 stays in the history. Then ask the reviewer whether to start again
@@ -81,19 +81,19 @@ from another way.
 
 ## Not known yet
 
-- **Whether "stages from earlier work" retires.** A step's opening
-  item still accepts them as a way. They are an approach nobody
-  wrote down. Once approaches on trial exist, repeated work may be
+- **Whether "stages from earlier work" retires.** A Plan Step's opening
+  item still accepts them as a way. They are a Work Approach nobody
+  wrote down. Once Approaches on Trial exist, repeated work may be
   better written as one.
-- **What catches a work item outside a step.** A step's opening
-  items ask whether its approach is known. A small TODO item has no
+- **What catches a work item outside a Plan Step.** A Plan Step's opening
+  items ask whether its Work Approach is known. A small TODO item has no
   such item, and no skill description catches it any more.
 - **Whether the form holds:** what for, stages, not known, ways
   rejected, uses.
 
 ## Settled when
 
-A run and the deliverer have each drafted an approach with it, and
+A CBC Run and the Concept Deliverer have each drafted an Approach on Trial with it, and
 the evaluations of both changed nothing in it.
 
 ## Uses

@@ -1,61 +1,58 @@
 # Model placing
 
-**On trial.** How a model that leans on a text below it takes the
+**On trial.** How an Idea Model that leans on a text below it takes the
 general idea it borrows, so the lower text comes to stand on the
-model. Rewritten in general at its first evaluation, 2026-10-28, from
-one use: the tiers model and the exchange.
+Idea Model. Rewritten in general at its first evaluation, 2026-10-28, from
+one use: the Tiers Model and the Exchange Convention.
 
 ## What it is for
 
-So that a model holds the facts it relies on, the next project can
-derive its own text from the model, and the lower text keeps only
-what is its repo's. It is the step from a convention to a model
+So that an Idea Model holds the facts it relies on, the next project can
+derive its own text from the Idea Model, and the lower text keeps only
+what is its repo's. It is the step from a convention to an Idea Model
 (`docs/models/idea-to-output.md` §4.2, *Up, work to an idea*).
 
 ## When it opens
 
-A model's line relies on a fact whose home is a manual or another
-text below it (`docs/models/idea-to-output.md` §3.2, *Every link
-points up*).
+An Idea Model's line relies on a fact whose home is a manual or another
+text below it (`docs/models/idea-to-output.md` §3.2, *The direction of a link*).
 
 ## Stages
 
-1. **Read the model whole, then list its lines that rely on
-   something below,** each with the fact it borrows. The model may
+1. **Read the Idea Model whole, then list its lines that rely on
+   something below,** each with the fact it borrows. The Idea Model may
    already hold part of that fact, in other words, and the lower
    text retell it without pointing up.
-2. **Sort each fact:** general, true for any repo the model maps; or
+2. **Sort each fact:** general, true for any repo the Idea Model maps; or
    this repo's, true only here. The question: would another repo the
-   model maps find it true? A "today" alone does not make a fact
-   this repo's: it may be the model's own subject.
-3. **Write the general facts into the model,** in general words,
+   Idea Model maps find it true? A "today" alone does not make a fact
+   this repo's: it may be the Idea Model's own subject.
+3. **Write the general facts into the Idea Model,** in general words,
    where its own subject puts them, with one line pointing at the
    story of where they were learned, as a lesson does in a manual
    (`docs/conventions/conventions/` §2.6, *A lesson taken*).
-4. **The lower text stands on the model.** A manual's `foundation`
-   names the model (`docs/conventions/conventions/` §1.3, *The
-   `foundation` line*). Its lines that told the general facts point
+4. **The lower text stands on the Idea Model.** A manual's Foundation Line
+   names the Idea Model (`docs/conventions/conventions/` §1.3, *The Foundation Line*). Its lines that told the general facts point
    up and keep what each means here, numbered as before, so every
    reference to them still lands.
-5. **This repo's facts leave the model:** about the repo, to
+5. **This repo's facts leave the Idea Model:** about the repo, to
    `README.md` (ADR-0068); about how it works, to the manual.
 6. **Mark what stays as an example:** "here, for example".
 7. **Grep, then walk.** Grep every living reference to the facts' old
-   home (`docs/conventions/facts-in-sync/` §3.3, *A rename is grepped…*); then walk what stands on the model and on the
-   lower text (`docs/conventions/facts-in-sync/` §4, *The rule for
-   every description*).
+   home (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*); then walk what stands on the Idea Model and on the
+   lower text (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
 
 ## Not known yet
 
 - Whether stage 2's one question is enough to judge "general".
-- Whether a story's pointer fits a model: no form says what a
-  model holds.
-- Whether the lower text's `foundation` always becomes the model, or
-  only when its whole idea is the model's.
-- Whether a model may list its own facts again, each with its
+- Whether a story's pointer fits an Idea Model: no form says what an
+  Idea Model holds.
+- Whether the lower text's Foundation Line always becomes the Idea Model, or
+  only when its whole idea is the Idea Model's.
+- Whether an Idea Model may list its own facts again, each with its
   reference, so a reader sees them together.
-- Where it is placed when settled. An approach never stands on a
-  model (`docs/models/idea-to-output.md` §3.1, *The four links*), so
+- Where it is placed when settled. A Work Approach never stands on an
+  Idea Model (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*), so
   a manual: likely the conventions manual, beside its part on adding one
   (`docs/conventions/conventions/` §3, *Adding a convention*).
 
@@ -63,15 +60,15 @@ points up*).
 
 - **One general line for each reference down,** and nothing placed:
   the next project loses what it could derive from (ADR-0071).
-- **A "This repo" section closing the model:** the reader jumps to
+- **A "This repo" section closing the Idea Model:** the reader jumps to
   the end for every example.
-- **Writing the model's part first, then finding the lower text's
-  lines:** the work starts from what the model relies on, so nothing
-  is placed that the model does not need.
+- **Writing the Idea Model's part first, then finding the lower text's
+  lines:** the work starts from what the Idea Model relies on, so nothing
+  is placed that the Idea Model does not need.
 
 ## Settled when
 
-It has placed a second model's borrowed facts, from a different
+It has placed a second Idea Model's borrowed facts, from a different
 lower text, and that use changed nothing in its stages.
 
 ## Uses
