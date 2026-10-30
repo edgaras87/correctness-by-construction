@@ -2792,6 +2792,34 @@ lens, ledger, rider, flag, possession.
   have no rival, and a hundred capitalized Names would make every
   skill harder to read. Under (a) the roll-ups and 832, 896, 919, 813,
   815, 440 are declined; 792 and 774 fixed.
+- Chosen: (b), by the reviewer, 2026-10-30, against the agent's
+  recommendation. The CBC Run's own rule 9 already asks it: a word a
+  delivered text gives a meaning English does not is a Glossary Name,
+  and the method's and the stack's words are not. Whoever writes a
+  text defines its words: this repo, the concept, manuals, skills,
+  rules and Output Shapes; a CBC Run, its records' problem words and
+  its Approaches on Trial's words, the latter marked on trial in its
+  glossary and read at each Run Reading, a general one harvested into
+  ours. The shape:
+  - our glossary grouped by who uses a Name: ours only; shared, whose
+    CBC Run twins stay in the container's glossary; the concept's; the
+    method's; the stack's;
+  - the concept's and the method's Names reach a CBC Run's
+    `docs/glossary.md` by a Delivery Fill from the Method Group, the
+    stack's by one from the Stack Group, so a stack swapped swaps its
+    words; each from a source file of its own, not the playbook;
+  - a delivered entry is a follower of ours, written from the CBC
+    Run's side, since a CBC Run cannot open our manuals; the
+    Foundation Check carries a change in one to the other;
+  - the CBC Run's own group keeps two parts: its problem's words, and
+    its Approaches on Trial's, on trial.
+  A design change, not a finding's fix (`.claude/approaches-on-trial/refinement.md`
+  §2.7, *Working the findings*): an ADR and a commit plan of its own,
+  inside the refinement, built before layer 6's work; it changes the
+  Exchange Convention's list of Delivery Fills, the Pure Seed and both
+  glossaries. The method's and the stack's rule 9 findings wait for
+  it, the roll-ups and 832, 896, 919, 813, 815 among them; 792 and 774
+  are fixed as proposed. Every other finding goes on.
 
 **DECISION-20.** Rule 10's reach. Rests: FINDING-303, 368, 379, 380,
 454, 471, 472, 507, 517, 537, 596, 665, 666, 826, 827 and 922.
