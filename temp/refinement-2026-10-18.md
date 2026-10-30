@@ -2871,6 +2871,17 @@ label, 718 and 730.
 - (b) Bold at the one defining line is allowed; the rule gains the
   exception at the round's close.
 - Recommended: (a). All eight fixed.
+- Chosen: (b), by the reviewer, 2026-10-30, on the agent's changed
+  recommendation after the reviewer asked why not. Capitals show a
+  word is a Name at every use; bold at the defining sentence shows
+  where it is defined, its one home made visible, and a retelling
+  does not bold. Checkable: each bold Name is bold once in all living
+  text, in the file its glossary entry points at. At the home the bold
+  stays: FINDING-405's six, 474, 494, 722. Elsewhere it goes: 626, the
+  `commit-plan` skill's Change Set; 639, `exchange-read`'s Delivery
+  Pin. 718 and 730 are coined labels, not Names, judged with
+  DECISION-19's renames. Rule 9 and its manual gain the line at the
+  round's close; the work leaves the home bolds in place.
 
 **DECISION-23.** Lowercase phrases for defined things with no Name.
 Rests: FINDING-339, "the entry file", "the records table", "the map";
