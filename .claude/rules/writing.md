@@ -5,7 +5,7 @@ foundation: the writing convention
 # Writing
 
 **Governs:** everything written here: chat answers, records, what
-we write for runs, commit messages, comments. How it reads, never
+we write for CBC Runs, commit messages, comments. How it reads, never
 what it says.
 
 <!-- No paths: line, so this loads at the start of every session.
@@ -28,14 +28,14 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
    act of the exchange", but "a third step of the exchange."
 6. **Keep names as labels.** Write defined names and references
    exactly: ADR-0052, FINDING-7, WORK-9, `exchange-read`. Define each
-   coined word once, in plain words, in `docs/glossary.md`. Coin a
+   Glossary Name once, in plain words, in `docs/glossary.md`. Coin a
    word only when plain English cannot say it. A number
-   local to one document carries its owner outside it: "run 3's RETRO
-   D22", never a bare "D22": every run's RETRO has one.
+   local to one document carries its owner outside it: "CBC Run 3's RETRO
+   D22", never a bare "D22": every CBC Run's RETRO has one.
 7. **Cut what adds nothing.** If a sentence can go without losing
    meaning, it goes.
 8. **Start from what the reader holds.** Before a label, a section
-   number or a coined word, ask whether this reader knows it. If
+   number or a Glossary Name, ask whether this reader knows it. If
    not, say first, in plain words, what it is. Not "Stale lines has
    a weak rule", but "Stale lines, the kind that finds lines no
    longer true, has a weak rule".
@@ -75,7 +75,7 @@ After:
 
 > The count is of items, not of work. One item can take twenty
 > commits. An item that edits a skill both sides hold is two
-> commits: the master, then our own copy.
+> commits: the Master Copy, then our own copy.
 
 Same meaning. It can be read once.
 
@@ -85,7 +85,7 @@ What the rules govern: (`docs/conventions/writing/` §1, *What it governs*).
 
 - **Chat:** every answer.
 - **Records:** every new or changed line. History keeps its words.
-- **What runs read:** the skills, rules, shapes, approaches,
+- **What CBC Runs read:** the skills, Agent Rules, Output Shapes, Approaches on Trial,
   concept chapters and notes we write, and the manuals they come
   from, every new or changed line. Older text is rewritten in work
   of its own.
@@ -104,7 +104,7 @@ this rule then names that kind and its style
 ## Decisions
 
 - ADR-0053 — how a text reads is a convention of its own, its rule
-  loaded in every session, here as in every run
+  loaded in every session, here as in every CBC Run
 - ADR-0074 — rule 9's first form: a word with more than one meaning
   here carried its subject; the words for rule, template, stub,
   overlay, shape and form

@@ -1,9 +1,9 @@
 # Agent decisions
 
 <!-- The working arrangement's decision log. Append-only, newest
-     last. One entry per arrangement decision — a skill or rule
+     last. One entry per arrangement decision — a skill or Agent Rule
      added, what one asks changed, a workflow adopted. A fix that
-     brings a skill or rule to its manual is no decision: its
+     brings a skill or Agent Rule to its manual is no decision: its
      commit body says why. Three parts: what, why, what was
      rejected.
 

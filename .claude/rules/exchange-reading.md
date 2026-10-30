@@ -4,47 +4,47 @@ paths:
 foundation: the exchange convention
 ---
 
-<!-- The form of a reading, as a rule. Loads when one is read,
+<!-- The form of a Run Reading, as an Agent Rule. Loads when one is read,
      so while it is worked, not while a new one is written
      (docs/conventions/agent-arrangement/ §5.6); says its form,
      never its content. -->
 
-# The reading
+# The Run Reading
 
-**Governs:** how a reading — the document `exchange-read` produces and
+**Governs:** how a Run Reading — the document `exchange-read` produces and
 the work then fills — is written. Its form, never its content.
 
 ## Where it sits
 
 `temp/reading-<run>-<date>.md`, the date being the read that opened
-it. When it opens, extends and closes is the exchange's (`docs/conventions/exchange/` §6.3, *The reading*,
-and §6.4, *A reading closes two ways*), not this file's.
+it. When it opens, extends and closes is the Exchange Convention's (`docs/conventions/exchange/` §6.3, *The Run Reading*,
+and §6.4, *How a Run Reading closes*), not this file's.
 
 ## The header comment
 
 Says what this is, that it stays here, and that it is edited in
 place. Cites our own paths and decisions freely; nothing in it goes
-to a run.
+to a CBC Run.
 
 ## The first line
 
-The run, and its commit read through. That commit is the
-read-through the next note carries, and the point the next reading
+The CBC Run, and its commit read through. That commit is the
+Read-Through Commit the next Delivery Note carries, and the point the next Run Reading
 starts from. Written first, before anything is read.
 
 ## The sections, in this order
 
-What a reading holds, and why: (`docs/conventions/exchange/` §6.3, *The reading*).
+What a Run Reading holds, and why: (`docs/conventions/exchange/` §6.3, *The Run Reading*).
 
 1. **Where we read to.** The commit read through, the previous
    read-through, and the span between.
-2. **What the run did.** The span in prose, a paragraph per thing
-   that happened — a step closed, a pass made, an edit landed, a
-   hand-off written.
+2. **What the CBC Run did.** The span in prose, a paragraph per thing
+   that happened — a Plan Step closed, a pass made, an edit landed, a
+   Run Ask written.
 3. **Findings.** `FINDING-1`, `FINDING-2`, … — one per thing found,
    bold, with what it is and where. When one is fixed, its line says
    so and names the commit; it is never deleted.
-4. **What the run taught us that we had not thought of.** Kept
+4. **What the CBC Run taught us that we had not thought of.** Kept
    apart from findings: not a defect, a thing we would not have
    seen from here.
 5. **Decisions.** `DECISION-1`, `DECISION-2`, … — each with what it
@@ -54,7 +54,7 @@ What a reading holds, and why: (`docs/conventions/exchange/` §6.3, *The reading
    **plan** when it will need a commit plan of its own. Done ones say
    so with the commit, in place. The order is preliminary and the
    reviewer reorders it.
-7. **What this reading taught.** Lessons about reading itself, one
+7. **What this Run Reading taught.** Lessons about reading itself, one
    line each, written as they happen — this is where the form
    learns.
 8. **Notes.** Counts, what is deliberately not being done, and
@@ -72,5 +72,5 @@ How the list is worked is `.claude/rules/working-a-reading.md`'s.
 
 ## Decisions
 
-- ADR-0036 — the exchange: what a reading is, and that its form
-  is held here as a rule, loading when a reading is read
+- ADR-0036 — the Exchange Convention: what a Run Reading is, and that its form
+  is held here as an Agent Rule, loading when a Run Reading is read
