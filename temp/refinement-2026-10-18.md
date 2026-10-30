@@ -3058,6 +3058,21 @@ Templates. Rests: FINDING-924, 20 lines in 18 files; 842.
 - (b) A template header keeps its citation as provenance, and §1.1
   says so.
 - Recommended: (a).
+- Chosen: a wider (a), by the reviewer, 2026-10-30, on the reviewer's
+  point that decision numbers are ours: we need them to change a
+  shipped file, and a CBC Run can neither open them nor needs them to
+  change its copies. Stripping them at the seed was weighed and not
+  taken: a CBC Run's copy equals the Master Copy at its Delivery Pin,
+  which every diff of the exchange rests on. Taken instead: shipped
+  files carry no decision citation at all, their *Decisions* footers
+  included, in the Master Copy itself; the why is reached through the
+  Foundation Line, the manual and its ADRs. Our files that never ship
+  keep their footers, `ADR-nnnn`. The cost: a grep for an ADR finds
+  the manual's section, not the shipped file's; the Foundation Check's
+  walk from the manual keeps the link. A design change: the
+  conventions manual §1.1, *How a rule is written*, and ADR-0069
+  change, built with DECISION-32's design after the decisions.
+  FINDING-924 and 842 are fixed by it.
 
 **DECISION-30.** Whether a record's form is held to rules 2 and 3.
 Rests: FINDING-605, a record header's comment; 700 and 709, the Record
