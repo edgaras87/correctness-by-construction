@@ -2951,6 +2951,8 @@ writes "commit-messages' rule".
   reach, every use of "skill" for the file or only where a label
   clashes, is DECISION-32's design. The glossary's header gains the
   line at the round's close.
+- Widened by the reviewer at DECISION-27, 2026-10-30: the kind word is
+  written always, not only where a name clashes.
 
 **DECISION-25.** How a Skill Stage or an Approach Stage is written
 outside its owner, and an Approach Stage's case. Rests: FINDING-571,
@@ -3008,6 +3010,16 @@ and 921: "cbc-slice", "the cbc-slice skill", bare.
   both glossaries do.
 - (b) Bare, as a label.
 - Recommended: (a).
+- Chosen, by the reviewer, 2026-10-30, after the agent had
+  recommended declining the four as taste: neither form. A skill is
+  written with its kind word, always, as DECISION-24 now reads: "the
+  cbc-slice Agent Skill", "the one-home Agent Rule", "the
+  commit-messages manual"; a numbered line as "writing rule 9"; a
+  path, as a Fact Reference, whenever the sentence points at where a
+  fact is written. The four findings are fixed so, and the shape
+  reaches every name of an agent part in living text, 166 skill names
+  in backticks among them. A form with a slash, /cbc-slice, was taken
+  and then dropped for simplicity the same day.
 
 **DECISION-28.** The shipped glossary's missing Names. Rests:
 FINDING-644 and 723, Run Reading, used in two shipped texts; 646,
@@ -3076,9 +3088,18 @@ skill a Work Approach.
   `docs/models/idea-to-output.md` §6 to the conventions manual §1 and
   what stands on them, built with DECISION-19's design after the
   decisions. It also settles Agent Skill as a Name for a skill file,
-  beside Agent Rule, and how far it reaches: 603 lines in 79 living
-  files say "skill" today, 81 of them inside Skill Stage or Skill
-  Template.
+  beside Agent Rule; its reach is every use, by DECISION-27: 603
+  lines in 79 living files say "skill" today, 81 of them inside Skill
+  Stage or Skill Template.
+- Widened by the reviewer at DECISION-27, 2026-10-30: a convention and
+  a Work Approach never share a name. Five do today: commit-messages,
+  commit-plan, visual-comparison and retrospective, a manual and an
+  Agent Skill each; writing, a manual and an Agent Rule. The design
+  chooses which side is renamed. A rule that would choose: a manual is
+  named by its subject, an Agent Skill by what it does, as
+  exchange-read and exchange-deliver already are. Renaming an Agent
+  Skill reaches every CBC Run that holds it; renaming a manual moves
+  its folder and every Fact Reference to it, on our side only.
 
 ### Met in round 3, of other kinds
 
