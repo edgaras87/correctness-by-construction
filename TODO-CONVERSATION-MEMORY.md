@@ -746,6 +746,43 @@ item: model and effort by kind of work, not one default. Then:
 - Not next: the open step takes the text-division item first, and
   that item decides where how agents work is written.
 
+### 2026-10-30
+
+#### What the reviewer asked
+
+With round 3's read committed and 10% of the week's Fable usage
+left: "how much this session holds? if i start new model, will i
+loose anything? … does we have in session (model) something we
+should save as doc that other session and model could catch? is
+what we have done, like that big reading is save in sessions
+memory? model? how that works? if change model, but work on same
+session, does i still be working on same thing?" Then: "maybe we
+should have this how sessios, models and memory works writen into
+our repo? in agent model maybe?"
+
+#### What exists today
+
+- **The rule, in general:** the Agent Model §6, only what is written
+  into the repo survives the session; §5, the context window.
+- **The mechanics, lived today:** a model switch inside a session
+  keeps the transcript, so the new model sees every word and tool
+  result but not the old model's reasoning; the nine readers the
+  usage limit stopped kept their transcripts and resumed by
+  `SendMessage`; a new session keeps the repo, the devlog's Resume
+  line and the user's memory files, which are per user and outside
+  the repo.
+- **The save point:** a devlog entry with a Resume line, written
+  before a switch; today's at `90a70bc`.
+
+#### What the reviewer took
+
+The devlog entry first, then the decisions on the same model, a
+devlog entry at about 97% of the week's usage before switching, and
+another after the last decision. The mechanics as an idea line under
+this item, not a change to the Agent Model mid-refinement: the model
+states the rule, the binding would hold the mechanics, both when the
+item is worked.
+
 ## 12. A session's end
 
 Item: "Decide whether a session's end has a home of its own, and

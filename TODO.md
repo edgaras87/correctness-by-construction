@@ -173,6 +173,12 @@
         failure is not noticing the moment, a rebase: a Local Rule
         for our `CLAUDE.md` (`docs/conventions/agent-arrangement/`
         §2.4, *How the entry file is written*)?
+      - what survives what, lived 2026-10-30: a model switch inside a
+        session keeps the transcript; an agent the usage limit stopped
+        keeps its transcript and resumes by `SendMessage`; a new
+        session keeps the repo, the devlog's Resume line and the
+        user's memory files only. The Agent Model §6 states the rule;
+        the binding, agent-arrangement §5, would hold the mechanics.
       Trigger: CBC Run 5's Run Reading, with the lines gathered by then.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, *How work is run by agents*; `.claude/decisions.md`, 2026-10-22, the account skills.
