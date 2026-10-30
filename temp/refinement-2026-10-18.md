@@ -2994,6 +2994,14 @@ a reading of each figure; the reviewer decides each word once, here.
 Recommended: as the table. The rest of rule 5's findings name one
 figure each and take the reader's proposal.
 
+Chosen: the table, by the reviewer, 2026-10-30, with two rows
+corrected, since both were written before DECISION-19 took (b). The
+theatre row's exception, the three standing guards' names (813) and
+the four failure-mode labels (531): they stay, and DECISION-19's
+design gives them Names. The row "lens, stamp, ledger, probe" (790):
+not judged as figures here; they wait for DECISION-19's design, which
+names them.
+
 **DECISION-27.** A skill's name in prose. Rests: FINDING-587, 631, 767
 and 921: "cbc-slice", "the cbc-slice skill", bare.
 - (a) Backticks, `cbc-slice`: a path's last part, written as it is;
