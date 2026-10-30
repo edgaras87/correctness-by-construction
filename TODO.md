@@ -756,6 +756,14 @@
       - (d) a Finding Kind of its own in the refinement's last read.
       - what a scenario finds missing becomes a finding or a TODO
         item; the test changes no rule itself.
+      - the same two means for Glossary Names, 2026-10-30. A script
+        can check every bold capitalized phrase against the glossary,
+        every entry's pointer against the file where its Name is bold
+        once (DECISION-22 of the refinement), and every Name spelled
+        in lowercase. Only a read finds a word a text gives a new
+        meaning with no mark, and decides a Name or plain words:
+        rule 9's question at the commit, and a refinement's Writing
+        read. The sweep scripts live in a session's scratchpad today.
       Trigger: the refinement closes.
       See: devlog 2026-10-28; ADR-0070;
       `TODO-CONVERSATION-MEMORY.md` §22, *Testing fact references…*.
