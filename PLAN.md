@@ -380,7 +380,7 @@ Notes:
   item joined it, as its trigger asked. Both items, with their
   Ideas, are in `TODO.md` at `b3b2018`.
 - Stages, from the refinement
-  (`.claude/approaches-on-trial/refinement.md` §2, *The Approach Stages*):
+  (`.claude/approaches-on-trial/refinement.md` §2, *The Approach on Trial Stages*):
   1. before Refinement Round 1: group the Finding Kinds into Refinement Rounds, which creates
      the refinement's file; list the files by Refinement Layer; check the
      rules (`.claude/approaches-on-trial/refinement.md` §2.1, *Group the Finding Kinds* to
