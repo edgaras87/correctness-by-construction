@@ -119,7 +119,7 @@ a follower, not a second statement (§1, *One home*; ADR-0059).
 A line that relies on a fact written elsewhere carries a **Fact
 Reference**: the address of the fact's home. It has two readers.
 The agent may follow it to read the fact whole, with no guarantee
-that it will (`docs/models/agent.md` §4.2, *pulled*, claim P1). The Change Walk
+that it will (`docs/models/agent.md` §4.2, *Pulled Channel*, claim P1). The Change Walk
 re-reads the line when the home changes (§4, *A Canonical Description's rule*). A fact has one home,
 so a Fact Reference has one target: the home of the fact its line
 relies on. The line above relies on a claim about agents, so it
@@ -171,7 +171,7 @@ and serves this repo's Change Walk alone. A CBC Run cannot open our manuals, so
 the line says what the CBC Run needs without it.
 
 The Agent Model calls any text that sends an agent to a file a
-pointer (`docs/models/agent.md` §12.2, *On pulled*, claim P1). A
+pointer (`docs/models/agent.md` §12.2, *On the Pulled Channel*, claim P1). A
 Fact Reference is one kind of pointer, and this page calls it only
 by its own name.
 

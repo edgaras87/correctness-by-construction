@@ -80,12 +80,12 @@ birth into a file the Run Repo owns from then on, never re-copied
 the playbook that seeded it. At a Run Birth the two
 meet, both input to Framing rather than agreement.
 
-### 3.2 The told channel
+### 3.2 The Told Channel
 
 Told is not delivery. A tier above may hand a Run Repo something as session input — a warning the
 Run Repo's own derivation missed, given after that derivation is on record,
 as an experiment's instrument. That is the told channel, unpinned by
-design (`docs/models/agent.md` §4.4, *told*), and the Run Repo's records say it was
+design (`docs/models/agent.md` §4.4, *Told Channel*), and the Run Repo's records say it was
 told; it is not a third form of delivery, and a Run Repo that leans on it
 has the diagnostic told carries. Nor is a copy the Run Repo has edited
 between two Delivery Pins (§3.5, *What holds on every flow*, fact 4):

@@ -153,7 +153,7 @@ from the note.
 Two skills, because each Plan Step is bound to a moment the agent would
 otherwise have to notice: the CBC Run finishing its building, and the note
 closing. A Plan Step opens each, and names the skill: where a pointer
-is placed decides whether it fires (`docs/models/agent.md` §12.2, *On pulled*).
+is placed decides whether it fires (`docs/models/agent.md` §12.2, *On the Pulled Channel*).
 
 A section in the plan did not work: its moment was the project's
 end, which a CBC Run that stops early never reaches, and a section can

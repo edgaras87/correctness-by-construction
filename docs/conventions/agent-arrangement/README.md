@@ -109,7 +109,7 @@ manual names how in its list of what derives from it:
 ## 1. What the arrangement is
 
 The theory this leans on is `docs/models/agent.md`: the ambient
-channel (`docs/models/agent.md` §4.1, *ambient*), the choosing table
+channel (`docs/models/agent.md` §4.1, *Ambient Channel*), the choosing table
 (`docs/models/agent.md` §8, *Choosing a channel*), the claims (`docs/models/agent.md`
 §12, *Claims*). The Agent Model describes; this page explains against it, and its binding is what Claude Code gives each channel
 (§5, *The Claude Code binding*).
@@ -239,10 +239,10 @@ moves, a convention is adopted, or the build command changes, and at the re-read
 
 ### 2.6 The entry file's size
 
-The entry file is the ambient channel (`docs/models/agent.md` §4.1, *ambient*):
+The entry file is the ambient channel (`docs/models/agent.md` §4.1, *Ambient Channel*):
 paid on every task, including the tasks it is irrelevant to, and each
 line added lowers compliance with every other
-(`docs/models/agent.md` §12.1, *On ambient*, claim A2,
+(`docs/models/agent.md` §12.1, *On the Ambient Channel*, claim A2,
 assumed). So its size is a running concern, not a one-time one. The
 cost is what the harness delivers, not the file: HTML comments are
 dropped on load (§5.3, *Memory files' comments*), so the guard and the
@@ -327,7 +327,7 @@ base ignores it (`docs/conventions/repo-hygiene/`).
 
 Not under `.claude/`, but the arrangement's neighbour: the operator's
 standing instructions, loaded beside the entry file and read the same
-way (`docs/models/agent.md` §4.1, *ambient*, ownership). One person, one
+way (`docs/models/agent.md` §4.1, *Ambient Channel*, ownership). One person, one
 checkout; the hygiene base ignores it, and its words never enter a
 record — a record that quotes it has let one operator's preference
 into the project's truth. The Container Group ships none, and a CBC Run's
@@ -408,8 +408,8 @@ qualify. *Its story: ADR-0053.*
 ## 5. The Claude Code binding
 
 The Agent Model names the channels and the gate
-(`docs/models/agent.md` §4, *The channels*, §7, *The gate*); a binding names the mechanisms one
-tool gives each (`docs/models/agent.md` §10, *The bindings*). This is Claude Code's,
+(`docs/models/agent.md` §4, *The channels*, §7, *The Enforcement Gate*); a binding names the mechanisms one
+tool gives each (`docs/models/agent.md` §10, *The Tool Bindings*). This is Claude Code's,
 the tool both Convention Seats use. It changes with the tool's releases, so
 each fact says which release it was checked against, and a change
 is made here alone. A second tool's binding would be written beside
@@ -470,7 +470,7 @@ Skills appear twice as well, and neither time under pushed. Claude
 Code loads a skill's `name` and `description` at session start and its
 body only when the agent invokes it: an ambient trigger over a pulled
 body. The agent still decides, and pushed promises it does not
-(`docs/models/agent.md` §4.3, *pushed*). A skill is still the closest this tool
+(`docs/models/agent.md` §4.3, *Pushed Channel*). A skill is still the closest this tool
 gets to pushed for a rule about an action; a hook closes the
 remainder.
 
@@ -509,7 +509,7 @@ repo saw the Read tool alone load a rule; on 2.1.310 a `sed` read
 loaded one, as the documentation now says. Bug reports, checked
 2026-10-24, show `paths:` failing silently in some formats and Convention Seats
 (Claude Code issues #17204, #33581, #87217). An Agent Rule that must arrive
-does not rest on a path alone (`docs/models/agent.md` §7, *The gate*).
+does not rest on a path alone (`docs/models/agent.md` §7, *The Enforcement Gate*).
 
 ### 5.7 Compaction and subagents
 
@@ -523,7 +523,7 @@ does not rest on a path alone (`docs/models/agent.md` §7, *The gate*).
   agents skip `CLAUDE.md`. A fork inherits the whole conversation.
 
 So what a delegated task must know goes in its prompt, which is told
-(`docs/models/agent.md` §4.4, *told*). An Explore or Plan agent gets none of
+(`docs/models/agent.md` §4.4, *Told Channel*). An Explore or Plan agent gets none of
 the Agent Rules loaded every session, only those whose `paths:` match the files it
 touches.
 
@@ -532,7 +532,7 @@ touches.
 Every rule here governs a file the Container Group ships and rides in it
 as a comment: the entry file's comments carry points-never-restates,
 the guard and the size rule; the Decisions Log's carry its own.
-Acting on the file is the trigger (`docs/models/agent.md` §4.6, *installed*).
+Acting on the file is the trigger (`docs/models/agent.md` §4.6, *Installed Channel*).
 
 Not a skill, because the failure guarded against is a noticing
 failure: told "remember X", an agent writes X into the entry file

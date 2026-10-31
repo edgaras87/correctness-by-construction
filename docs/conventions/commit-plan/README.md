@@ -164,7 +164,7 @@ It is commit-messages' rule, and this convention points at it
 
 A skill, because its moment is one the agent recognises — work turning
 out to need several commits — and nothing in a record would put the
-plan in front of it then (`docs/models/agent.md` §4.2, *pulled*). The one rule
+plan in front of it then (`docs/models/agent.md` §4.2, *Pulled Channel*). The one rule
 that must fire at every commit, the stop, is not here: a skill that
 opens only for multi-commit work cannot carry it, so it is
 commit-messages' (`docs/conventions/commit-messages/` §2.4, *Commit on the word*).

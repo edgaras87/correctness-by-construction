@@ -16,7 +16,7 @@ let conventions be written against something stated, instead of
 each author reasoning from a private picture of "the agent".
 
 Layer 1 — vendor-neutral. One tool's mechanisms are a **binding**
-(§10, *The bindings*).
+(§10, *The Tool Bindings*).
 
 ---
 
@@ -40,7 +40,7 @@ convention lands*).
 2. **The channels** — how text reaches the agent (§4, *The channels*).
 3. **The context window** — everything the agent knows now (§5, *The context window*).
 4. **The write-back** — what the agent leaves in the repo (§6, *Write-back and persistence*).
-5. **The gate** — enforcement, which sits outside all of it (§7, *The gate*).
+5. **The gate** — enforcement, which sits outside all of it (§7, *The Enforcement Gate*).
 
 ## 3. The components, drawn
 
@@ -72,7 +72,7 @@ fire** and **what they guarantee** — and a rule's reliability is a
 property of the channel it travels, not of how well the rule is
 written. A sixth delivers nothing to the window at all.
 
-### 4.1 ambient
+### 4.1 Ambient Channel
 
 Entry files loaded at session start, before the first task.
 - **Fires:** always.
@@ -82,7 +82,7 @@ Entry files loaded at session start, before the first task.
   without bound if used as a rulebook; each addition dilutes the rest.
 - **Fidelity:** space is scarce here, so rules arrive compressed — and
   compression loses parts (§12, *Claims* M1). The binding can lose parts too:
-  what the tool loads is not always the file on disk (§10, *The bindings*).
+  what the tool loads is not always the file on disk (§10, *The Tool Bindings*).
 - **Ownership:** the project's text, or one operator's. An operator's
   standing file fires and costs like the entry file but belongs to one
   person and one checkout, stays out of the repo's history, and its
@@ -92,7 +92,7 @@ Entry files loaded at session start, before the first task.
 - **Suits:** orientation and routing. Where to look, what kind of repo
   this is, what must never happen — if it is short.
 
-### 4.2 pulled
+### 4.2 Pulled Channel
 
 The agent reads a file because it decided to.
 - **Fires:** at the agent's initiative.
@@ -103,7 +103,7 @@ The agent reads a file because it decided to.
 - **Suits:** depth. Full conventions, reference material, anything long
   or precise.
 
-### 4.3 pushed
+### 4.3 Pushed Channel
 
 Something outside the agent's choosing puts text in context at a
 particular moment: a task type matches, an event occurs.
@@ -115,7 +115,7 @@ particular moment: a task type matches, an event occurs.
 - **Costs:** machinery. Something defines and maintains the condition.
 - **Suits:** rules bound to an action. A commit format at commit time.
 
-### 4.4 told
+### 4.4 Told Channel
 
 A human says it in the session.
 - **Fires:** when the human bothers.
@@ -125,7 +125,7 @@ A human says it in the session.
   this channel is a diagnostic:** a convention is missing, or one
   exists in a channel that is not firing.
 
-### 4.5 observed
+### 4.5 Observed Channel
 
 Results of commands the agent runs: file contents, search hits, test
 output, diffs.
@@ -136,7 +136,7 @@ output, diffs.
   of a rule disagree requires this channel — no instruction substitutes
   for a comparison actually being run (§12, *Claims* O1).
 
-### 4.6 installed
+### 4.6 Installed Channel
 
 Not a channel into the window. The convention arrives as **files** and
 works by existing: `.gitignore`, `.editorconfig`, a directory layout, a
@@ -195,7 +195,7 @@ Consequences:
 - The next session starts from the repo alone. It is not a
   continuation; it is a reconstruction.
 
-## 7. The gate
+## 7. The Enforcement Gate
 
 Enforcement is not in the text. A file cannot prevent anything. Only a
 check outside the text — a hook, CI, a human review, or the tool's own
@@ -217,7 +217,7 @@ convention.
 | needed to orient, every session | **ambient** | always present; that cost is unavoidable anyway |
 | long, precise, occasionally needed | **pulled** | fidelity matters more than presence |
 | bound to a specific action | **pushed** | present at the moment, without initiative |
-| must never be violated | + **gate** | §7, *The gate* |
+| must never be violated | + **gate** | §7, *The Enforcement Gate* |
 | resting on a fact of this session | **told**, every session | a file cannot know the session, and the prompt outranks it (§5, *The context window*) |
 | stated by a human repeatedly, and true of any project | — | a convention is missing, or its channel is not firing |
 
@@ -234,7 +234,7 @@ names a channel.
 No table here: a list of each convention's channel would be a second
 home for facts this Idea Model does not own.
 
-## 10. The bindings
+## 10. The Tool Bindings
 
 Bindings are Layer 2. Layer 1 names capabilities; a binding names the mechanisms one tool
 gives each of them: which file is ambient, what pushes, what gates.
@@ -255,7 +255,7 @@ tool has shown:
   Type-specific guidance is a playbook.
 - **Model capability.** How capable, how current — changes per release.
   These are claims about the shape of the runtime, not its quality.
-- **Tool mechanisms.** (§10, *The bindings*)
+- **Tool mechanisms.** (§10, *The Tool Bindings*)
 
 ## 12. Claims
 
@@ -274,7 +274,7 @@ Evidence from outside is listed under its claim too, marked
 first-hand or bug report. It leaves the status alone: a claim is
 evidenced only when it was seen in this work.
 
-### 12.1 On ambient
+### 12.1 On the Ambient Channel
 
 **A1 — Presence is not compliance.** A rule being in context does not
 mean it is followed.
@@ -302,7 +302,7 @@ the lower compliance with any single rule in it.
   (Jaroslawicz et al., arXiv 2507.11538, 2025). The task was writing
   with keywords, not working from an entry file.
 
-### 12.2 On pulled
+### 12.2 On the Pulled Channel
 
 **P1 — A pointer is not the file.** An agent can act on a rule's topic
 without opening the file that states it.
@@ -330,14 +330,14 @@ list at session start.
   difference between a guide always loaded and topic files read by
   choice, in a study too small to see less than 30 points.
 
-### 12.3 On pushed
+### 12.3 On the Pushed Channel
 
 **U1 — A trigger fails in both directions.** A condition can fire when
 it should not (noise, which trains the reader to ignore it) and fail to
 fire when it should (silence, indistinguishable from having no rule).
 - `assumed` · *Refuted by:* a condition reliably exact in practice.
 
-### 12.4 On observed
+### 12.4 On the Observed Channel
 
 **O1 — Divergence is invisible without a comparison.** Nothing causes
 two disagreeing copies of a rule to be noticed unless something

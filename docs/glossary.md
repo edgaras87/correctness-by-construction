@@ -229,6 +229,33 @@ delivered files below.
   nothing; it is read when the item is worked
   (`docs/conventions/project-recording/` §14, *Conversation Memory*).
 
+## The Agent Model
+
+- **Ambient Channel** — text that reaches the agent at session start,
+  before the first task: the Entry File and what it loads
+  (`docs/models/agent.md` §4.1, *Ambient Channel*).
+- **Pulled Channel** — a file the agent reads because it decided to
+  (`docs/models/agent.md` §4.2, *Pulled Channel*).
+- **Pushed Channel** — text put in the agent's context at a moment it
+  did not choose: a task type matches, an event occurs
+  (`docs/models/agent.md` §4.3, *Pushed Channel*).
+- **Told Channel** — what a human says in the session
+  (`docs/models/agent.md` §4.4, *Told Channel*); between tiers, what a tier
+  above hands a Run Repo as session input (`docs/models/tiers.md`
+  §3.2, *The Told Channel*).
+- **Observed Channel** — the results of commands the agent runs: file
+  contents, search hits, test output
+  (`docs/models/agent.md` §4.5, *Observed Channel*).
+- **Installed Channel** — files that work by existing, such as
+  `.gitignore`, and deliver nothing to the context window
+  (`docs/models/agent.md` §4.6, *Installed Channel*).
+- **Enforcement Gate** — a check outside the text that turns "should"
+  into "cannot": a hook, CI, a human review
+  (`docs/models/agent.md` §7, *The Enforcement Gate*).
+- **Tool Binding** — the mechanisms one tool gives the channels and
+  the Enforcement Gate, written by the repo that uses the tool
+  (`docs/models/agent.md` §10, *The Tool Bindings*).
+
 ## The concept and the method
 
 Their Names are in `delivery/method/docs/glossary/method.md`.

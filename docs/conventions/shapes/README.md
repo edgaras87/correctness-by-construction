@@ -292,7 +292,7 @@ between them records when the Output Shape changed.
 
 The first convention with no skill: its artifact is an Agent Rule, because
 the moment it serves is an Output Shape being touched, and an Agent Rule loads on the
-path (`docs/models/agent.md` §4.3, *pushed*). The Output Shapes themselves reach no
+path (`docs/models/agent.md` §4.3, *Pushed Channel*). The Output Shapes themselves reach no
 agent while work is written, by design — nothing loads
 `.claude/shapes/`, and that is their force (§3, *One place, read at the gate*).
 

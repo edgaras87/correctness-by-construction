@@ -839,7 +839,7 @@ changed the work.*
 
 A rule for filling in `PLAN.md` sits inside `PLAN.md`, so acting on
 the record is what puts the rule in front of you; there is no trigger
-to fire and nothing to remember (`docs/models/agent.md` §4.6, *installed*). Timing
+to fire and nothing to remember (`docs/models/agent.md` §4.6, *Installed Channel*). Timing
 is the one exception: a rule saying when to open a record cannot live
 inside it, so the entry file's records table carries a moment per row
 (§13, *The records table*). A skill would not do: it fires when the agent recognises the

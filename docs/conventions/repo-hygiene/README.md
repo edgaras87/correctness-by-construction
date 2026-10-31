@@ -93,7 +93,7 @@ Plan Step, skill or playbook names the append.
 ## Why it arrives this way
 
 This convention never reaches an agent as text. Its product is three
-files that shape the repo by existing (`docs/models/agent.md` §4.6, *installed*):
+files that shape the repo by existing (`docs/models/agent.md` §4.6, *Installed Channel*):
 nobody complies with `.gitignore`, git simply hides what it names. A
 rule here that cannot become a line in one of the three files has no
 delivery at all.
