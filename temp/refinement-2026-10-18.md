@@ -2834,6 +2834,66 @@ lens, ledger, rider, flag, possession.
   place of the Delivery Fill; the concept's ten words take two-word
   Names; every candidate is judged in one table first.
 
+**DECISION-19's Names table: the concept's group.** Proposed
+2026-10-31 from the chapters under `concept/`, under writing rule 9
+as it stands after ADR-0078's decision 12: a Name built on another
+carries it whole, and past 4 words, every word counted, a shorter
+true one is looked for. A hyphenated word counts as one. "English"
+means the word stays lowercase, its plain meaning ours. Fold,
+witness, harness and ground are not defined in the concept; they go
+to the method's and the stack's groups. Judged by the reviewer,
+2026-10-31: every row and every question's proposal taken.
+
+| # | Word today | What it means (chapter) | Proposed | Built on it | Why |
+|---|---|---|---|---|---|
+| 1 | slice | one invariant made real, end to end (04) | Invariant Slice | Invariant Slice Registry; the method's Invariant Slice Record | says what the work is cut along |
+| 2 | kill | what dies when an enemy fact meets what we own (03) | Enemy Collision Kill | Enemy Collision Kill Shape, 4 words | built on row 3, whole |
+| 3 | collision | each enemy fact run against each possession (03) | Enemy Collision | row 2 | pairs with Enemy Fact |
+| 4 | census | the list of attackable facts, done when fresh attacks find nothing (03) | Enemy Census | | the chapter's own "the enemy census" |
+| 5 | enemy fact | one attackable fact | Enemy Fact | rows 3 and 4 are its family | the census's item |
+| 6 | enemy | whatever can hurt: a caller, the store | English | | its plain meaning; rows 2 to 5 carry it as English |
+| 7 | possession | what the system owns (03) | System Possession | | "system" English, as below |
+| 8 | area | a division of the system by ownership (01) | Responsibility Area | | chapter 01's own title for LAYER-3-AREAS |
+| 9 | owner | who owns a fact (02, 03) | English | | its plain meaning |
+| 10 | system | the thing being built | English | rows 7, 12, 13, 19, 21 | see question 1 |
+| 11 | promise | one falsifiable commitment to a named party (01) | Falsifiable Promise | | its defining property |
+| 12 | guarantee | a never-event stated against a named source (00) | System Guarantee | System Guarantee Inventory, System Guarantee Erosion | owner first; GUARANTEE-n ids stay |
+| 13 | guarantee inventory | the few never-events whose violation is costly (02) | System Guarantee Inventory | | built on row 12, whole |
+| 14 | never-event | what must never happen, before a source is named (00, 02) | System Never-Event | | one word as written; see question 2 |
+| 15 | invariant | a property that always holds | English | | its technical English meaning is ours |
+| 16 | wall | what makes a guarantee impossible to break, ranked by what it binds (02) | Structural Wall | | the chapter's own bold phrase |
+| 17 | framing | the first movement: the idea worked into three documents (03) | CBC Framing | rows 18 and 19 | matches the cbc-framing Agent Skill |
+| 18 | what framing produces | its three documents, "artifacts" or "exports" today (03) | CBC Framing Export | | one Name for both words |
+| 19 | intent | the first export: the promise and the purposes refused (03) | CBC Framing Intent | | built on row 17, whole |
+| 20 | system definition | the second export: authority, boundary, adversary, owners (03) | System Definition | | used as a document |
+| 21 | slice registry | the third export: the work, cut into invariants (03) | Invariant Slice Registry | | built on row 1, whole |
+| 22 | layered system | the concept's world model, five layers (01) | Layered System | System Layer, the method's file | the chapter's title |
+| 23 | the inversion | asking what must never happen before what it should do (00) | CBC Inversion | | "the inversion" alone is English |
+| 24 | guarantee erosion by feature | features shipped without re-checking guarantees (00) | System Guarantee Erosion | | whole would be 6 words; see question 3 |
+| 25 | the escape hatch, testing theater, the theory swamp | three more ways it fails (00) | Escape Hatch, Testing Theater, Theory Swamp | | kept by DECISION-17, now capitalized |
+| 26 | authority, boundary | fields of the system definition (01) | English | | plain meanings |
+| 27 | feature-thin | with few features | English | | an adjective, defined where it stands |
+| 28 | technique, process framework, composition | what the concept is not (00) | English | | plain words |
+
+Questions the rule raised, each taken as proposed:
+
+1. **Whether "system" is English.** Chapter 01 titles LAYER-2-SYSTEM
+   "System of Interest". If that title is a Name, every "System"
+   Name above is built on it, and System Guarantee becomes System of
+   Interest Guarantee. Proposed: the layer titles are labels, like
+   Step 0, and "system" is English, the thing being built.
+   Responsibility Area is the exception, since the chapters use
+   "area" in prose with its defined meaning.
+2. **Whether a never-event is a guarantee.** Chapter 00 says
+   "Guarantees are the never-events, each stated against a named
+   source": one thing before and after its source is named. Proposed:
+   two Names, since chapter 02 uses both; the other way is one Name,
+   System Guarantee, with "never-event" rewritten to it.
+3. **The trigger, once.** "Guarantee erosion by feature" built whole
+   is System Guarantee Erosion by Feature, 6 words. Proposed: System
+   Guarantee Erosion, the "by feature" going to its entry, since what
+   erodes is the guarantee and features are its cause.
+
 **DECISION-20.** Rule 10's reach. Rests: FINDING-303, 368, 379, 380,
 454, 471, 472, 507, 517, 537, 596, 665, 666, 826, 827 and 922.
 - (a) The rule's letter: numbered sections and parts, in both
