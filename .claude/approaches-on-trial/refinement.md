@@ -226,7 +226,15 @@ finding is FINDING-n, numbered on across the Refinement Rounds, and says:
 
 - where: the path, and lines;
 - what the rule says, and what the text says;
-- how it stands (§2.4, *Reading the Finding Kinds*).
+- how it stands (§2.4, *Reading the Finding Kinds*);
+- why the text breaks the rule, one of three: it is older than the
+  rule; the checks at the change missed it, naming the check that
+  should have caught it; or the rule is unclear or wrong.
+
+A finding of the second or third cause carries a lesson. It goes to
+the check or the rule the finding names, at the Plan Step's close,
+with the Plan Step's other lessons. A finding older than its rule
+teaches nothing: it is fixed, and that is all.
 
 A finding that needs the reviewer's choice beyond "fix it" gets a
 DECISION-n: the options, a recommendation, and the findings that
@@ -286,6 +294,8 @@ wrong. What the read finds is listed and decided like any finding,
 and the Refinement Round's section counts:
 
 - findings in text the Refinement Round changed, and in text it did not;
+- findings by cause: older than the rule, missed at the change, the
+  rule unclear;
 - how many the reviewer took, and how many were declined as taste.
 
 Then the Refinement Round's findings collapse: each list becomes one line
@@ -331,6 +341,11 @@ commit, so the file can be read from git.
   needs, and whether one pass was the better way.
 - **Whether a refinement comes again,** and what makes one due: a
   new rule, or a count of rules since the last.
+- **Whether a refinement is the second check on text kept true.** The
+  reviewer's view, 2026-10-31: the checks at each change are the
+  first, a refinement the second, and a finding's cause the way back
+  from the second to the first. Judged at the close, with where it is
+  written: a convention of its own, or facts-in-sync.
 - **Whether the refinement's file needs an Output Shape.** It borrows the
   eval's form, which borrowed a Run Reading's.
 - **Whether the three Refinement Rounds hold.** They were drawn from one
