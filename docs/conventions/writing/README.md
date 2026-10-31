@@ -110,6 +110,12 @@ chat answers, records, commit messages, code comments.
    "staging" the exchange's or git's; two words say what the thing is
    and whose, and the capitals say it is defined before the words are
    read, as a contract's "the Deliverer" or Kubernetes' "a Pod" do.
+   A Name built on another Name carries it whole: Agent Skill
+   Template, never Skill Template, since a short form leaves its word
+   for the reader to decide again. This holds however long the Name
+   gets. A Name of more than 4 words, every word counted, is a trigger
+   to look for a shorter true Name before it is accepted; when none is
+   found, the long Name stands. A count, so a script can find it.
    Every Markdown mark already has a job here, so none marks a Name. A
    numbered one is named by its owner and number, "working-a-reading
    rule 2", "the walk's step 3"; a label inside its owner keeps its

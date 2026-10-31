@@ -77,8 +77,10 @@ The reviewer decided each part below as a question, 2026-10-31.
    reviewer: the kind word is written always.
 8. **Renaming one side of the five shared names now,** the manuals by
    their subject or the Agent Skills by their act. Deferred, not
-   rejected: CBC Runs 4, 5 and 6 were built with these names and are
-   still to be read. A naming grammar alone was weighed and found not
+   rejected: which side is renamed, and to what, is a choice that how
+   CBC Runs 4, 5 and 6 used these parts can inform, and four of the
+   names ship, so a rename moves every CBC Run's folders and
+   commands, the paths a read compares by. A naming grammar alone was weighed and found not
    to prevent clashes: all 12 manuals and all 10 Agent Rules are
    nouns, and a strict "verb first" for Agent Skills would rename 11
    of 12.
@@ -91,6 +93,15 @@ The reviewer decided each part below as a question, 2026-10-31.
     other.
 11. **The renames as a pass inside the design.** Rejected: round 3's
     work opens every file anyway, so a file is opened once.
+12. **A long chain cut short by naming the thing by what it is,**
+    when the tie to its parent is not lost. Rejected by the reviewer:
+    whether a tie is lost is a test the reader must know, as option 2
+    of ADR-0076 was, and its only reason was length. A count of words
+    is a trigger a script can find.
+13. **The Run family's renaming deferred** to the item for the five
+    shared names. Rejected: the rule sets each new Name, so no Run
+    Reading has anything to inform, and it moves no path; the CBC
+    Runs take it by delivery.
 
 ## Decision
 
@@ -190,6 +201,24 @@ The reviewer decided each part below as a question, 2026-10-31.
     its new Names are done in round 3's work, file by file, with each
     file's findings. This ADR is accepted at the plan's close.
 
+**Names built on Names**
+
+12. **A Name built on another Name carries it whole,** however long
+    it gets: the Invariant Slice Registry, never the Slice Registry;
+    the System Guarantee Inventory, never the Guarantee Inventory.
+    Each word of a Name is asked whether it is short for another
+    Name; if it is, that Name is written whole. A Name of more than 4
+    words, every word counted, is a trigger to look for a shorter true
+    Name before it is accepted; when none is found, the long Name
+    stands. The writing manual's rule 9 holds it. Raised by the
+    reviewer at the Names table, 2026-10-31. The Names that already
+    break it are renamed in this plan, their entries and homes:
+    Run Ask, Run Reading, Run Birth, Run Briefing, Run Hand-off and
+    Newborn Run take CBC Run whole; Approach Stage takes Approach on
+    Trial; the Kill Shape and the Slice-Record Shape take their judged
+    Names. Each renamed entry says what CBC Runs born before it write,
+    since their records keep the old word.
+
 **What changes in part:** ADR-0069's decision 1, where a CBC Run's
 copy cited `CBC ADR-nnnn`: a delivered copy now carries no citation.
 ADR-0076's decision 2, the glossary as one list: the delivered Names
@@ -209,3 +238,6 @@ Master Copies: now without the footer. None of the three is edited.
   Skill, 107 for Entry File, each read by hand.
 - **The five shared names still meet in a grep** until the renaming
   item is worked.
+- **A Name's words show what it is built on,** and a base Name's
+  rename carries into every Name built on it, found by grep. Names
+  grow: the longest proposed so far run to 4 words.
