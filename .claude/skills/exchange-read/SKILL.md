@@ -38,7 +38,8 @@ Why the read is done so: (`docs/conventions/exchange/` §6.1, *Reading a CBC Run
 
      ```sh
      git -C "$run" diff <base> -- .claude/skills .claude/rules \
-       .claude/shapes .claude/approaches-on-trial docs/concept
+       .claude/shapes .claude/approaches-on-trial docs/concept \
+       docs/glossary
      ```
 
      `<base>` is the CBC Run's receipt branch for `P` when it cut one;
