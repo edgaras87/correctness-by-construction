@@ -16,7 +16,8 @@ footer-only change. Every
 citation in living text follows the rule. The glossary is grouped by
 who uses a Name; the shared, the concept's and method's, and the
 stack's Names ship as three pinned copies under `docs/glossary/`, and
-a CBC Run's `docs/glossary.md` holds only its own. Every candidate
+a CBC Run's `docs/glossary.md` holds only its own. A Name built on
+another Name carries it whole, however long it gets. Every candidate
 word has been judged in one table, and each judged Name has its
 entry.
 
@@ -111,6 +112,19 @@ it follows; `exchange-deliver` copies `docs/glossary/` with the other
 pinned copies after birth, and lists it among the paths whose changes
 the Delivery Note carries.
 
+**12c. `docs: a Name built on a Name carries it whole`**
+The writing manual's rule 9: a Name built on another Name carries it
+whole, the Invariant Slice Registry, never the Slice Registry, however
+long it gets; a Name of more than 4 words, every word counted, is a
+trigger to look for a shorter true Name before it is accepted, and
+stands when none is found. ADR-0078 gains it as decision 12.
+
+**12d. `chore(agent): our writing rule carries whole Names`**
+Our `writing.md`'s rule 9 follows the manual.
+
+**12e. `fix(delivery): shipped rule 9 carries whole Names`**
+The container's `writing.md`'s rule 9 follows the manual.
+
 **13. `docs(temp): the Names table, <group> judged`** *(provisional)*
 One commit per group, in this order: the concept's ten, the method's,
 the stack's, the Agent Model's with the Names the decisions gave. The
@@ -123,7 +137,13 @@ the table.
 After each group of 13 is judged: its Names into their file, the
 delivered ones under `delivery/` as `fix(delivery)`, ours as `docs`;
 the Agent Model's six channel titles take their Names, with the
-rename grep. One commit per group, after its judging.
+rename grep. The Names that break 12c's rule are renamed in their
+group's commit, their entries and homes only: Run Ask, Run Reading,
+Run Birth, Run Briefing, Run Hand-off and Newborn Run take CBC Run,
+Approach Stage takes Approach on Trial, the Kill Shape and the
+Slice-Record Shape take their judged Names. Each renamed entry says
+what CBC Runs born before it write, since their records keep the
+old word. One commit per group, after its judging.
 
 **15. `docs: ADR-0078 accepted`**
 The final records commit: ADR-0078 Accepted, with what changed since
@@ -146,6 +166,9 @@ The session's entry, after the close.
   Approaches*, 30 characters; conventions §1.4 *Skill Stages* to
   *Agent Skill Stages*; exchange §5.8 *Filling a Skill Template*, its
   new title chosen at commit 4 within 30 characters.
+- **The Run family is renamed here, not deferred.** The rule sets
+  each new Name, so no Run Reading has anything to inform, unlike
+  the five shared names; the CBC Runs take the rename by delivery.
 - **The citation script stays in the session's scratchpad,** as the
   sweep's scripts do; nothing commits a script.
 - **The Names table stands in the refinement's file,** beside the
