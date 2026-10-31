@@ -2893,8 +2893,8 @@ label, 718 and 730.
   round's close; the work leaves the home bolds in place.
 
 **DECISION-23.** Lowercase phrases for defined things with no Name.
-Rests: FINDING-339, "the entry file", "the records table", "the map";
-284, "the chain"; 301 and 367, "registry"; 363 and 503, "the
+Rests: FINDING-339 and 367, "the entry file", "the records table", "the
+map"; 284, "the chain"; 301 and 364, "registry"; 363 and 503, "the
 handbook"; 625, "the working arrangement"; 664, "living text"; 640,
 "receipt branch"; 440, "the base".
 - (a) English, each, where the English meaning is ours: entry file,
@@ -3264,3 +3264,63 @@ Sixteen decisions, DECISION-16 to DECISION-31.
 
 88 things met in passing, of other kinds, listed for the work where
 it touches the same file, and for the last read.
+
+### Endings (§2.6)
+
+The reviewer took the endings, 2026-10-31, as the seventeen decisions
+leave them, one side of each "or" chosen: where a proposal held an
+"or", the fix was taken, as in round 2. Where a finding asked a
+question no decision answers, the agent made the call below, and the
+reviewer took it. The work names each fixed finding's commit.
+
+- **Fixed, 595,** each in its Refinement Layer: FINDING-282 to 289, 291 to 301, 303 to 334, 336 to 338, 340 to 378, 381 to 404, 406 to 441, 443 to 471, 473, 475 to 479, 481 to 493, 495 to 506, 508, 510 to 530, 532 to 536, 538 to 542, 544 to 567, 569 to 595, 598 to 624, 626 to 654, 656 to 662, 664 to 665, 667 to 717, 719 to 721, 723 to 729, 731 to 738, 740, 742 to 743, 745 to 746, 748 to 774, 776 to 789, 791 to 798, 800 to 807, 809 to 812, 814, 816 to 818, 820 to 822, 824 to 825, 828 to 831, 833 to 841, 843 to 862, 864 to 895, 897 to 909, 911 to 913, 915 to 918, 920 to 923, 925.
+- **Fixed by the design of DECISION-19, 29 and 32, 21,** worked once
+  it has landed: FINDING-509, 655, 718, 730, 739, 741, 744, 747, 775, 790, 799, 808, 813, 815, 819, 823, 832, 842, 896, 919, 924.
+- **Fixed in part, 5:**
+  - FINDING-339: Entry File and `ARCHITECTURE.md` fixed; "the records table" stays English, DECISION-23.
+  - FINDING-405: the bold stays at the Name's home and goes elsewhere, DECISION-22.
+  - FINDING-494: the bold stays at the Name's home and goes elsewhere, DECISION-22.
+  - FINDING-531: the title fixed; the four labels stay and get Names by DECISION-19.
+  - FINDING-910: "door" stays where it is the boundary; its four other senses fixed, DECISION-26.
+- **Declined, 23:**
+  - FINDING-290: "consumer" is any project holding a copy, this repo included: English.
+  - FINDING-302: a record's short name, PLAN, TODO, ARCHITECTURE, is its label, as a convention's is by DECISION-24.
+  - FINDING-335, 442, 480, 914: a dead figure, DECISION-26.
+  - FINDING-379 to 380, 472, 507, 666, 826 to 827: outside rule 10 as written, DECISION-20.
+  - FINDING-474, 722: the bold is at the Name's home, DECISION-22.
+  - FINDING-537, 543: DECISION-17.
+  - FINDING-568, 596 to 597: history, DECISION-18.
+  - FINDING-625: English, DECISION-23.
+  - FINDING-663: no count of 2026-10-17 exists to give.
+  - FINDING-863: a summary that says it is one, as one-home rule 3 allows.
+- **Moved to TODO:** none. Round 2's findings that DECISION-7 and 8
+  moved to the plain-rewrite item, FINDING-206's citations of CBC Run
+  3's RETRO, 223, 224, 227 and 228, are worked in this round's layer 6,
+  by DECISION-16: the item keeps only what the round leaves.
+
+The agent's calls, where a finding asked a question no decision
+answers:
+- FINDING-385, fixed: each part leads with its rule, then its why.
+- FINDING-404, fixed: Delivery Staging names the delivery as it arrives, as the CBC Run's glossary and exchange §4 use it; the act is "stage a delivery"; our glossary's entry, which says the act, changes.
+- FINDING-413, fixed: the two composed entry files named.
+- FINDING-419, fixed: "root" said as the Foundation Line's document.
+- FINDING-492, fixed: each Idea Model says what it is first, its status after.
+- FINDING-509, by the design: the Agent Model's words, ambient, told and the rest, judged by DECISION-19's test in its design, in our glossary's group for Names ours only.
+- FINDING-522, fixed: what meets at a Run Birth said in plain words.
+- FINDING-525, fixed: "made usable" the verb, lowercase; Made Usable only as the noun.
+- FINDING-561, fixed: as FINDING-525.
+- FINDING-623, fixed: as sub-lists, the manual first, by DECISION-30's reason.
+- FINDING-672, fixed: the four become Skill Stages, each under its heading, as conventions §1.4 says.
+- FINDING-738, fixed: said in plain words, or the example dropped.
+- FINDING-746, fixed: "stage" there is the Skill Stage, by DECISION-25.
+- FINDING-764, fixed: the lead quoted whole, by DECISION-31's reason.
+- FINDING-778, fixed: the six as a list.
+- FINDING-801, fixed: one short sentence, keeping its label.
+- FINDING-822, fixed: the Slice Record Shape, as the Names pass titled it; the glossary's hyphen goes.
+- FINDING-916, fixed: in the rewrite, by DECISION-16.
+
+DECISION-23's Rests named FINDING-367 for "registry": that is 364,
+and 367 the entry file's; corrected there.
+
+None of the declines is taste alone: each line meets the rule as
+written, keeps a decision's word, or is history.
