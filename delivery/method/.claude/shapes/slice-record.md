@@ -2,7 +2,7 @@
 foundation: practice, under the shapes convention
 ---
 
-# The Slice Record Shape
+# The Invariant Slice Record Shape
 
 **Governs:** how a slice record is laid out, and how each
 guarantee's block is written. Their form, never their content: what

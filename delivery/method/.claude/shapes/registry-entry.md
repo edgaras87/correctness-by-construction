@@ -2,7 +2,7 @@
 foundation: practice, under the shapes convention
 ---
 
-# The Registry Entry Shape
+# The Invariant Slice Entry Shape
 
 **Governs:** how one slice's entry is written in the slice
 registry: the fields framing gives it, and the line each close
