@@ -125,6 +125,11 @@ Our `writing.md`'s rule 9 follows the manual.
 **12e. `fix(delivery): shipped rule 9 carries whole Names`**
 The container's `writing.md`'s rule 9 follows the manual.
 
+**12f. `chore(agent): exchange-read diffs the glossary`**
+`exchange-read`'s step 3 adds `docs/glossary` to the paths it diffs,
+so a CBC Run's edit to a delivered Names file is read, as 12b made
+`exchange-deliver` carry it.
+
 **13. `docs(temp): the Names table, <group> judged`** *(provisional)*
 One commit per group, in this order: the concept's ten, the method's,
 the stack's, the Agent Model's with the Names the decisions gave. The
@@ -141,9 +146,12 @@ rename grep. The Names that break 12c's rule are renamed in their
 group's commit, their entries and homes only: Run Ask, Run Reading,
 Run Birth, Run Briefing, Run Hand-off and Newborn Run take CBC Run,
 Approach Stage takes Approach on Trial, the Kill Shape and the
-Slice-Record Shape take their judged Names. Each renamed entry says
-what CBC Runs born before it write, since their records keep the
-old word. One commit per group, after its judging.
+Slice-Record Shape take their judged Names. Every entry, new or
+renamed, names the words CBC Runs born before it wrote, since their
+records keep them and a Run Reading reads them. The concept's 23
+entries, committed before this was decided, take theirs in a commit
+of their own, with the entry form in each glossary file's header.
+One commit per group, after its judging.
 
 **15. `docs: ADR-0078 accepted`**
 The final records commit: ADR-0078 Accepted, with what changed since
