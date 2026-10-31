@@ -472,7 +472,7 @@ backlog line points at it — an Output Shape, an Agent Rule, a
 reference the CBC Run thinks any project would want. Then it gets a
 verdict like an edit does.
 
-### 6.3 The Run Reading
+### 6.3 The CBC Run Reading
 
 The read produces a Run Reading, or extends the one open for that
 CBC Run — a document in `temp/` listing every edit, every Run Ask and
@@ -490,7 +490,7 @@ which its copy in `cbc-slice` follows.
 
 *Its story: devlog 2026-09-30, later still; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
-### 6.4 How a Run Reading closes
+### 6.4 How a CBC Run Reading closes
 
 A Run Reading closes two ways. Its work closes — every item taken,
 declined or held, the Delivery Note gone down. Or it is **overtaken**: the

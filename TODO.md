@@ -1104,7 +1104,7 @@
       its Delivery Pin had no verdict until the Run Reading of 2026-09-30 read it
       again — three edits to copies, ten asks and offers.
       The Exchange Convention closes an overtaken Run Reading
-      (`docs/conventions/exchange/` §6.4, *How a Run Reading closes*)
+      (`docs/conventions/exchange/` §6.4, *How a CBC Run Reading closes*)
       "the same way", one pass over its items, and is silent on the Delivery Note every read ends with
       (`docs/conventions/exchange/` §6.6, *The Delivery Note after a read*). Once so far.
       Ideas: the overtaken Run Reading sends a Delivery Note: read, asks open.

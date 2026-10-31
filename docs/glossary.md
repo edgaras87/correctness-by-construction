@@ -37,9 +37,9 @@ delivered files below.
   that builds a real system with what this repo gave it, blind to
   its Concept Deliverer (`docs/models/tiers.md` §2.3, *Run Repos*). Named by
   its number: CBC Run 6.
-- **Newborn Run** — a CBC Run at its birth, from its Pure Seed until
-  its agent finishes the Run Birth. It holds what the seed put
-  there, one Delivery Pin included, and no earlier state.
+- **Newborn CBC Run** — a CBC Run at its birth, from its Pure Seed
+  until its agent finishes the CBC Run Birth. It holds what the seed
+  put there, one Delivery Pin included, and no earlier state.
 - **Convention Seat** — a side a convention has, this repo's or a
   CBC Run's (`docs/conventions/conventions/` §2.4, *The seats*).
 
@@ -63,26 +63,31 @@ delivered files below.
 - **Delivery Take** — the CBC Run's act: moving delivered files from
   `temp/` into place and recording the Delivery Pin
   (`docs/conventions/exchange/` §4, *The Delivery Take*).
+- **Receipt Branch** — a branch holding a delivery as it arrived,
+  named by its Delivery Pin and never merged: the Pure Seed's
+  `birth-seed`, or one a CBC Run cuts at its Delivery Take, so the
+  next diff of its edits is exact (`docs/conventions/exchange/` §4,
+  *The Delivery Take*, step 3; `delivery/installs/pure-seed.md`).
 - **Delivery Fill** — text one group writes at Delivery Staging into
   a marked place in another group's file, the playbook's Plan Steps
   into `PLAN.md`; the only delivery that is not a copy
   (`docs/conventions/exchange/` §3.4, *One group per file*).
-- **Run Ask** — a line in a CBC Run's backlog, under *To the
+- **CBC Run Ask** — a line in a CBC Run's backlog, under *To the
   deliverer*, asking us for a verdict: on an edit to a copy, a file
-  it offers, or a question. Every Run Reading lists each
+  it offers, or a question. Every CBC Run Reading lists each
   (`docs/conventions/exchange/` §5.1, *When a copy may be edited*).
-- **Run Reading** — the Concept Deliverer reading a CBC Run since it
-  last read it, and the text that records what it found
-  (`docs/conventions/exchange/` §6.3, *The Run Reading*).
+- **CBC Run Reading** — the Concept Deliverer reading a CBC Run
+  since it last read it, and the text that records what it found
+  (`docs/conventions/exchange/` §6.3, *The CBC Run Reading*).
 - **Record Harvest** — us reading a CBC Run's records and changing
   our Master Copies from what it learned
   (`docs/models/tiers.md` §3.3, *Upward harvest*).
-- **Run Birth** — a CBC Run's first state, made from this repo at one
+- **CBC Run Birth** — a CBC Run's first state, made from this repo at one
   Delivery Pin (`docs/models/tiers.md` §3.1, *Downward delivery*).
 - **Pure Seed** — the procedure that gives a CBC Run its birth from
   this repo alone: `delivery/installs/pure-seed.md`.
-- **Run Briefing**, **Run Hand-off** — the two texts put in a Newborn
-  Run's `temp/` before it starts: what it is to build, and how it is
+- **CBC Run Briefing**, **CBC Run Hand-off** — the two texts put in
+  a Newborn CBC Run's `temp/` before it starts: what it is to build, and how it is
   to work (`.claude/approaches-on-trial/auto-run.md`, *Stages*).
 - **Container Group**, **Method Group**, **Stack Group** — the three
   groups of files a CBC Run receives, each a piece of its tree:
@@ -124,7 +129,7 @@ delivered files below.
   A Work Approach (`docs/models/idea-to-output.md` §2, *The kinds*).
   A particular one is named by its owner: a record's form sits in
   the record itself, its header comment, the Plan Step Form, a Record
-  Stub's headings. A Convention Manual's and a Run Reading's are
+  Stub's headings. A Convention Manual's and a CBC Run Reading's are
   Agent Rules today; whether they become Output Shapes is TODO's
   "Decide whether our own forms become Output Shapes".
 - **Output Shape** — a presumed output, written from outputs that
@@ -133,6 +138,9 @@ delivered files below.
   `docs/conventions/shapes/`). A particular one is named by its
   output: the Enemy Collision Kill Shape, the Invariant Slice Record Shape. Not an Output
   Form, which is read while writing.
+- **Entry File** — the file the tool loads at session start, before
+  the first task: `CLAUDE.md` here, and in every CBC Run
+  (`docs/models/agent.md` §4.1, *Ambient Channel*).
 - **Local Map** — a directory's `README.md` that says how the parts
   of that area relate (`docs/conventions/project-recording/` §8.6, *Local Maps*).
 - **Agent Rule** — a file under `.claude/rules/`, loaded into the
@@ -158,8 +166,12 @@ delivered files below.
   entry on. The Container Group holds one per record, each named by
   it: the Plan Stub, the Decisions Log Stub
   (`docs/conventions/project-recording/`, *What this is made usable as*).
+- **Hygiene Base** — the stack-agnostic hygiene files every repo
+  gets, correct for a records-only one; a Stack Overlay is appended
+  below each one's marked line (`docs/conventions/repo-hygiene/`
+  §2, *Base and Stack Overlays*).
 - **Stack Overlay** — the stack's part of the hygiene files, appended
-  below the base's marked line: repo-hygiene's `.part` files for one
+  below the Hygiene Base's marked line: repo-hygiene's `.part` files for one
   stack (`docs/conventions/repo-hygiene/` §2, *Base and Stack Overlays*).
 - **Decisions Log** — a CBC Run's `.claude/decisions.md`, where its
   agent records the decisions about its own setup; ours is the same
@@ -174,6 +186,10 @@ delivered files below.
   more words, owner or kind first, each capitalized, written
   exactly; what this file lists
   (`docs/conventions/writing/` §2, *Why each rule*, rule 9).
+- **Living Text** — text kept true as things change: every text
+  here but history, which records what was true then
+  and is never updated (`docs/conventions/facts-in-sync/` §1, *One
+  home*).
 - **Fact Reference** — what a line carries when it relies on a fact
   written elsewhere: the address of the fact's home, its path,
   section and title, in parentheses
@@ -212,7 +228,7 @@ delivered files below.
   `cbc-framing`'s Stage 2. A Plan Step's Now line names the Agent Skill
   Stage it is in. How an Agent Skill names them is the conventions manual's
   (`docs/conventions/conventions/` §1.4, *Agent Skill Stages*).
-- **Approach Stage** — one phase of an Approach on Trial, numbered
+- **Approach on Trial Stage** — one phase of an Approach on Trial, numbered
   the same way (`.claude/approaches-on-trial/approach-drafting.md`,
   *Stages*).
 - **Refinement Layer**, **Refinement Round**, **Finding Kind** — the
@@ -223,6 +239,9 @@ delivered files below.
 - **Change Set** — a body of work that needs more than one commit,
   sequenced and closed as a commit plan
   (`docs/conventions/commit-plan/` §1, *What a commit plan is*).
+- **Plan Step Gate** — a Plan Step's exit criteria: facts that can be
+  checked, written when the Plan Step opens; it is done only when
+  every one is true (the Plan Step Form in our `PLAN.md`).
 - **Conversation Memory** — the talk that shaped a TODO item, kept
   beside it in `TODO-CONVERSATION-MEMORY.md`: what was asked, the
   options weighed, what was said for and against. It decides
