@@ -1176,3 +1176,73 @@ in the refinement's *Not known yet*, judged at its close with where it
 is written. Whether the idea is an Idea Model, a section of the
 Idea-to-Output Model or of a one-home model, is this item's, due at
 the same close. This talk kept here.
+
+## 30. Reading a CBC Run born before
+
+Item: "Read a CBC Run born before the refinement by its needs, not
+its diff".
+
+### 2026-10-31
+
+#### What the reviewer asked
+
+After the method's Names table, the reviewer asked how CBC Runs are
+read once the structure changes: "how we gonna read runs after and
+decide what to take from them if we now change structuraly? how we
+see difference? can we decide what runs done and what new was found,
+if we have different structure?"
+
+#### What exists today
+
+- **A read compares the CBC Run with itself:** its copies against its
+  own last delivery, its Decisions Log, its Run Asks
+  (`.claude/skills/exchange-read/SKILL.md`, step 3). Our renames do
+  not touch that diff.
+- **Taking an item back lands it in our Master Copy**
+  (`.claude/rules/working-a-reading.md`, rule 4). An edit written
+  against "slice" or "fence" meets Invariant Slice or Scope
+  Exclusion there.
+- **The Names table maps old words to Names,** but it lives in
+  `temp/` and goes at the refinement's close, before CBC Runs 4, 5
+  and 6 are read.
+
+The agent proposed giving every Glossary Name its old words in its
+entry, so the map outlives the table.
+
+#### What the reviewer said
+
+"when we redo everything with this glossary naming thing, we will
+bring better defined full picture. it will not only better frame
+definition, but also how everything is put together. so what i think
+will happened, is we cant just compare what run have changed. what we
+could still do is what how run was going and what it did and consider
+if something what is not defined in our new way put together repo is
+missing or not, or if something is definded in not right way and we
+should change something. i think what could happend after refinement,
+is we can find that we frame our delivery in different way and some
+run parts is no more relevant. but all this is just a guess."
+
+On the order: stopping the Plan Step to read first "is not best
+decision", since the reading "could be still done on old way of
+current system we have before refinement", while "i still be working
+on old structure which i already see improvement. so yes, i think we
+should continue on improvement and reading comes after."
+
+#### What the agent added
+
+- **The diff loses weight; the why keeps it.** A Decisions Log entry
+  and a Run Ask say what the CBC Run needed, which survives any
+  restructure.
+- **"No longer relevant" needs its reason.** A CBC Run that struggled
+  with "slice" may have struggled with the idea, which a rename does
+  not fix. So each item ends met, still missing, or no longer
+  applies, with why the need is gone.
+- **Not designed now:** nothing has tried it. The Run Reading of CBC
+  Run 4 tests the guess.
+
+#### What the reviewer took
+
+The refinement goes on, and the readings come after it. The way of
+reading waits as a TODO item, triggered by CBC Run 4's Run Reading.
+Every Glossary Name's entry names its old words, and `exchange-read`
+diffs `docs/glossary` too: both added to the design's commit plan.

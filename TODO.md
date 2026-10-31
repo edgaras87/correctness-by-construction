@@ -546,6 +546,33 @@
       See: `TODO-CONVERSATION-MEMORY.md` §27, *Shared names of
       conventions and approaches*.
 
+- [ ] Read a CBC Run born before the refinement by its needs, not its
+      diff (2026-10-31, the reviewer).
+      Context: a Run Reading takes three things from a CBC Run: the
+      diff of its copies, its Decisions Log and its Run Asks
+      (`.claude/skills/exchange-read/SKILL.md`, step 3). The
+      refinement renames the delivered text to Glossary Names and may
+      change how the parts are put together, so a diff by CBC Runs
+      4, 5 and 6 shows edits to text we no longer hold, and cannot be
+      taken as it stands. Their Decisions Log entries and Run Asks
+      still say what each needed and what went wrong without it. The
+      readings come after the refinement, not before: read now, every
+      item taken would land in text round 3 rewrites.
+      Ideas:
+      - read how the CBC Run went and what it did, and ask whether
+        the new structure meets each need, defines it wrongly, or
+        misses it.
+      - each item ends one of three ways: met, naming where; still
+        missing or wrong, becoming work; no longer applies, saying
+        why the need is gone, not only the text it touched.
+      - the old words a CBC Run wrote are read through each Glossary
+        Name's entry, which names them.
+      Trigger: the Run Reading of CBC Run 4 opens. If its diff proves
+               still usable as it stands, the item closes with nothing
+               changed.
+      See: `TODO-CONVERSATION-MEMORY.md` §30, *Reading a CBC Run
+      born before*.
+
 - [ ] Write an Agent Rule that writes a skill or Agent Rule from its convention
       (2026-10-17, the reviewer).
       Context: the conventions manual says how a skill or rule is
