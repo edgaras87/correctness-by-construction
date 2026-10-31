@@ -10,8 +10,9 @@ agent part is always named with its kind, and a new name never
 repeats an old one. One rule for citing a decision stands in
 facts-in-sync §3, carried by both one-home Agent Rules: a Work
 Approach cites in its *Decisions* footer only, our Master Copies keep
-their footers, and every delivery strips them, in the Pure Seed, in
-`exchange-deliver`, and before `exchange-read` compares. Every
+their footers, and every delivery strips them, in the Pure Seed and
+in `exchange-deliver`, whose list of changed copies leaves out a
+footer-only change. Every
 citation in living text follows the rule. The glossary is grouped by
 who uses a Name; the shared, the concept's and method's, and the
 stack's Names ship as three pinned copies under `docs/glossary/`, and
@@ -59,13 +60,15 @@ holding its own footer rule.
 
 **6. `docs: the exchange strips footers at delivery`**
 The exchange manual: a copy equals its Master Copy at the Delivery Pin
-without its *Decisions* footer; the strip runs at Delivery Staging, in
-the Pure Seed, and before a read compares.
+without its *Decisions* footer; the strip runs at Delivery Staging and
+in the Pure Seed, and the Delivery Note's list leaves out a footer-only
+change.
 
 **7. `chore(agent): our files follow the design`**
 Our side's Work Approaches: the one-home Agent Rule takes the citation
-rule; `exchange-deliver` strips at staging and `exchange-read` before
-it compares; `writing.md`'s rule 9 names Agent Skill Template;
+rule; `exchange-deliver` strips at staging and leaves a footer-only
+change out of its list; `exchange-read` stays as it is, since a read
+compares two stripped copies; `writing.md`'s rule 9 names Agent Skill Template;
 `.claude/rules/convention-manual.md` follows the
 manual's wording. An `agent` commit, apart from the records.
 
