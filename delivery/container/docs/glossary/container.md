@@ -24,24 +24,29 @@
 - **Read-Through Commit** — this project's own commit the Concept
   Deliverer last read up to, named by each Delivery Note.
 - **Delivery Note** — the text beside a delivery: what changed since
-  the Delivery Pin, why it matters here, and a verdict on every Run
-  Ask.
+  the Delivery Pin, why it matters here, and a verdict on every CBC
+  Run Ask.
 - **Delivery Staging** — a delivery as it arrives in `temp/`: a
   directory named for the Concept Deliverer's commit, the Delivery
   Note beside it, in force only once taken.
 - **Delivery Take** — moving a Delivery Staging into place and
   recording the new Delivery Pin, as `.claude/rules/delivered-copies.md`
   says.
-- **Run Ask** — one line under TODO's *To the deliverer*, asking the
+- **CBC Run Ask** — one line under TODO's *To the deliverer*, asking the
   Concept Deliverer for a verdict: on an edit to a copy, a file
   offered, or a question.
-- **Run Briefing** — the text that names the problem this project
+- **CBC Run Briefing** — the text that names the problem this project
   builds, read at framing and committed unchanged.
-- **Run Hand-off** — the text that says how this project works on
-  full auto, when it does; it arrives in `temp/` with the Run
+- **CBC Run Hand-off** — the text that says how this project works
+  on full auto, when it does; it arrives in `temp/` with the CBC Run
   Briefing.
 - **Pure Seed** — the Concept Deliverer's procedure that gave this
   project its birth.
+- **Entry File** — the file the tool loads at session start, before
+  the first task: `CLAUDE.md`.
+- **Living Text** — text kept true as things change: every text here
+  but history, which records what was true then and is never updated
+  (`.claude/rules/one-home.md`, *Not a second home*).
 - **Record Stub** — a record as it was born: the shipped file with
   its header comment and headings, this project's own from its first
   entry on.
@@ -49,7 +54,7 @@
   agent by path or in every session; a numbered line inside one is
   named by its owner and number, "delivered-copies rule 4".
 - **Output Shape** — a presumed output, written from outputs that
-  exist and read only at a Plan Step's closing gate
+  exist and read only at a Plan Step Gate, when the Plan Step closes
   (`.claude/rules/shapes-lifecycle.md`). A particular one is named
   by its output: the Enemy Collision Kill Shape.
 - **Agent Skill** — a file under `.claude/skills/<name>/`, its
@@ -66,8 +71,11 @@
 - **Work Approach** — how a piece of work is done: an Agent Skill, an Agent
   Rule, or an Approach on Trial.
 - **Plan Step** — one piece of `PLAN.md`'s work, with a goal and a
-  gate; named by its number, Step 0. The Plan Step Form is
+  Plan Step Gate; named by its number, Step 0. The Plan Step Form is
   `PLAN.md`'s own.
+- **Plan Step Gate** — a Plan Step's exit criteria: facts that can be
+  checked, written when the Plan Step opens; it is done only when
+  every one is true.
 - **Agent Skill Stage** — one phase of an Agent Skill, numbered from Stage 0 and
   named by its Agent Skill outside it: `cbc-slice`'s Stage 3.
 - **Decisions Log** — `.claude/decisions.md`: the agent's own setup
