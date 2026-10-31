@@ -1,8 +1,13 @@
 # 0078. A convention is its manual, its footers stay here, its Names ship as copies
 
 Date: 2026-10-31
-Status: Proposed, the save point before the commit plan for the
-refinement's design of DECISION-19, 29 and 32, which opens next.
+Status: Accepted (2026-10-31, at the close of the commit plan for
+the refinement's design of DECISION-19, 29 and 32; opened Proposed
+as its save point. Since then, decision 12 was added on the
+reviewer's question at the Names table, and revised twice: a
+hyphenated word counts as one, and no entry names old words; option
+8 took its real reasons; the four groups of Names were judged and
+entered).
 
 ## Context
 
@@ -187,7 +192,7 @@ The reviewer decided each part below as a question, 2026-10-31.
     is renamed: the concept's ten, the method's, the stack's and the
     Agent Model's, with the Names the decisions already gave, Entry
     File, Living Text, Receipt Branch, Hygiene Base and Agent Skill.
-    Each row gets a Name of two words, owner or kind first, with a
+    Each row gets a Name of two or more words, owner or kind first, with a
     one-line reason and its common compounds, or "English", with why.
     The reviewer judges one group at a time. FINDING-507's decline in
     DECISION-20 reverses: the Agent Model's six channel titles become
@@ -210,7 +215,8 @@ The reviewer decided each part below as a question, 2026-10-31.
     Name; if it is, that Name is written whole. A Name of more than 4
     words, every word counted, is a trigger to look for a shorter true
     Name before it is accepted; when none is found, the long Name
-    stands. The writing manual's rule 9 holds it. Raised by the
+    stands. A hyphenated word counts as one, toward the two and the 4.
+    The writing manual's rule 9 holds it. Raised by the
     reviewer at the Names table, 2026-10-31. The Names that already
     break it are renamed in this plan, their entries and homes:
     Run Ask, Run Reading, Run Birth, Run Briefing, Run Hand-off and
