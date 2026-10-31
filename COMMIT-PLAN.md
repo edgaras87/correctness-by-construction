@@ -65,15 +65,16 @@ the Pure Seed, and before a read compares.
 **7. `chore(agent): our files follow the design`**
 Our side's Work Approaches: the one-home Agent Rule takes the citation
 rule; `exchange-deliver` strips at staging and `exchange-read` before
-it compares; `writing.md`'s rule 9 names Agent Skill Template and the
-glossary files; `.claude/rules/convention-manual.md` follows the
+it compares; `writing.md`'s rule 9 names Agent Skill Template;
+`.claude/rules/convention-manual.md` follows the
 manual's wording. An `agent` commit, apart from the records.
 
 **8. `fix(delivery): the seed and shipped rules strip`**
 The Pure Seed strips footers as it copies each group; the container's
 one-home Agent Rule takes the citation rule; the delivered-copies
 Agent Rule's rule 1 says a copy carries no footer, and its rule 8
-says Agent Skill Template; the container's `writing.md` follows ours.
+says Agent Skill Template; the container's `writing.md` names Agent
+Skill Template, as ours does.
 
 **9. `chore(agent): citations move to footers`**
 The citation script, run over living text, lists every citation
@@ -85,19 +86,24 @@ The 20 in the Method Group's and Stack Group's files move to footers
 of their own, stripped at delivery. ADR-0013 then stands in
 cbc-bootstrap's footer.
 
-**11. `docs: the glossary grouped by who uses a Name`**
-Our `docs/glossary.md`: the Names only we use, the shared Names, and
-one line per delivered group pointing at its file; the writing manual's
-*What this is made usable as* and rule 9 name the files.
-
-**12. `fix(delivery): delivered Names as pinned copies`**
+**11. `fix(delivery): delivered Names as pinned copies`**
 The shared Names leave the container's glossary record for
 `delivery/container/docs/glossary/container.md`; the record keeps
 *This project's own*, and its header points at the delivered files.
 `delivery/method/docs/glossary/method.md` and
 `delivery/spring-postgres/docs/glossary/stack.md` are created with
 their headers, their entries to come. The exchange's §3.2, *What
-goes*, names the three among the pinned copies, now that they exist.
+goes*, names the three among the pinned copies, and the container's
+`writing.md` names them in its rule 9, now that they exist.
+
+**12. `docs: the glossary grouped by who uses a Name`**
+Our `docs/glossary.md`: the Names only we use, the shared Names, and
+one line per delivered group pointing at its file; the writing manual's
+*What this is made usable as* and rule 9 name the files.
+
+**12b. `chore(agent): our writing rule names the files`**
+Our `writing.md`'s rule 9 names the glossary files, after the manual
+it follows.
 
 **13. `docs(temp): the Names table, <group> judged`** *(provisional)*
 One commit per group, in this order: the concept's ten, the method's,
@@ -142,6 +148,6 @@ The session's entry, after the close.
 - **The agent's files and the shipped files land after the manuals
   they follow,** in commits of their own: a source before what
   derives from it.
-- **The delivered glossary files are created empty in 12** and filled
+- **The delivered glossary files are created empty in 11** and filled
   in 14, so the structure lands before the Names, and a judged group
-  never waits on another.
+  never waits on another. A text names them only once they exist.
