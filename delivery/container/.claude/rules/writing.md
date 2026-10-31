@@ -42,7 +42,11 @@ commit messages, comments. How it reads, never what it says.
    words, owner or kind first, each word capitalized, exactly as the
    project's glossary, `docs/glossary.md`, or a delivered file under
    `docs/glossary/` lists it: Agent Rule,
-   Record Stub, Output Shape, Skill Template. A lowercase word is
+   Record Stub, Output Shape, Agent Skill Template. A Name built on
+   another Name carries it whole, however long it gets: Agent Skill
+   Template, never Skill Template. Past 4 words, every word counted,
+   look for a shorter true Name before taking it; when none is found,
+   the long Name stands. A lowercase word is
    English and only English; no Markdown mark marks a Name. A
    numbered thing carries its owner and number, "delivered-copies
    rule 4", "the skill's stage 3"; a label inside its owner keeps its
@@ -108,3 +112,5 @@ this rule then names that kind and its style.
   two or more words, capitalized; the glossary is the list of Names
 - ADR-0077 — rule 11: an edit changes only the lines its change
   needs; Markdown has no line width
+- ADR-0078 — rule 9: a Name built on another Name carries it
+  whole; past 4 words, a trigger to look for a shorter one
