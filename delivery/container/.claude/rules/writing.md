@@ -46,7 +46,8 @@ commit messages, comments. How it reads, never what it says.
    another Name carries it whole, however long it gets: Agent Skill
    Template, never Skill Template. Past 4 words, every word counted,
    look for a shorter true Name before taking it; when none is found,
-   the long Name stands. A lowercase word is
+   the long Name stands. A hyphenated word counts as one, toward the
+   two and the 4: "never-event" is one word. A lowercase word is
    English and only English; no Markdown mark marks a Name. A
    numbered thing carries its owner and number, "delivered-copies
    rule 4", "the skill's stage 3"; a label inside its owner keeps its
