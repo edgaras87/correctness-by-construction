@@ -41,7 +41,8 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
    longer true, has a weak rule".
 9. **Write a defined thing by its Glossary Name,** two or more
    words, owner or kind first, each word capitalized, exactly as
-   `docs/glossary.md` lists it: CBC Run, Plan Step, Agent Rule,
+   `docs/glossary.md` lists it, or the file it points at for the
+   concept's, the method's and the stack's: CBC Run, Plan Step, Agent Rule,
    Output Shape, Delivery Staging. A lowercase word is English and
    only English; no Markdown mark marks a Name. A numbered thing
    carries its owner and number, "working-a-reading rule 2", "the

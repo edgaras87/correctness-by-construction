@@ -32,7 +32,8 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
    git diff -M --stat P..HEAD -- concept/ \
      'delivery/*/.claude/skills/*' 'delivery/*/.claude/rules/*' \
      'delivery/*/.claude/shapes/*' \
-     'delivery/*/.claude/approaches-on-trial/*'
+     'delivery/*/.claude/approaches-on-trial/*' \
+     'delivery/*/docs/glossary/*'
    ```
 
    Those are the copies, and only they travel after birth
@@ -118,7 +119,7 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
    ```sh
    groups="container method spring-postgres"   # the run's groups
    copies() { (cd delivery/$1 && find .claude/skills .claude/rules \
-                .claude/shapes .claude/approaches-on-trial \
+                .claude/shapes .claude/approaches-on-trial docs/glossary \
                 -type f 2>/dev/null); }
    for g in $groups; do copies $g; done \
      | sort | uniq -d                          # must print nothing
@@ -141,8 +142,8 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
    changes nothing (`docs/conventions/exchange/` §3.8, *The footer at delivery*).
 
    Each group's `.claude/skills/`, `.claude/rules/`,
-   `.claude/shapes/` and `.claude/approaches-on-trial/`, and nothing
-   else of it: the Container Group's
+   `.claude/shapes/`, `.claude/approaches-on-trial/` and
+   `docs/glossary/`, and nothing else of it: the Container Group's
    records, entry files, Decisions Log and hygiene files went at
    birth and are the CBC Run's.
 
