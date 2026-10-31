@@ -289,9 +289,14 @@ The strip runs in three places:
 
 1. at birth, in the Pure Seed, as each group is copied;
 2. at every later Delivery Staging, in `exchange-deliver`;
-3. on our side, before a read compares a CBC Run's copy with its
-   Master Copy at the Delivery Pin (§6.1, *Reading a CBC Run*), so a
-   footer never shows as an edit.
+3. in the list of what changed since the CBC Run's Delivery Pin, which
+   the Delivery Note carries (§3.7, *The Delivery Note*): a copy whose
+   only change is its footer is left out, since the CBC Run's diff of
+   the staged copies shows none.
+
+A read needs no strip: it compares a CBC Run's copy with the CBC
+Run's own last delivery, and both are stripped (§6.1, *Reading a CBC
+Run*).
 
 It cuts that section and nothing else, and a second run changes
 nothing. A file with no footer passes through unchanged. A CBC Run
@@ -448,8 +453,7 @@ decided constraint to fit an Agent Skill Template (ADR-0008).
 We open the CBC Run's repository and read three things
 since its Read-Through Commit: its Decisions Log (every edit and why), its
 backlog (every line addressed to us), and the diff of every held
-copy against its Delivery Pin, our side's footer stripped first
-(§3.8, *The footer at delivery*). Those three give every item; the devlog is
+copy against its Delivery Pin. Those three give every item; the devlog is
 context.
 
 One more look gives no item: the CBC Run's tree, the work staged or

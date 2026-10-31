@@ -135,8 +135,11 @@ The reviewer decided each part below as a question, 2026-10-31.
    6. a Record Stub and an Agent Skill Template cite nothing.
 5. **Our Master Copies keep their footers; every delivery strips
    them.** The strip runs in the Pure Seed and in `exchange-deliver`
-   when a delivery is staged, and on our side before `exchange-read`
-   compares a CBC Run's copy with ours. It cuts the `---` line and the
+   when a delivery is staged; and `exchange-deliver`'s list of what
+   changed since the CBC Run's Delivery Pin leaves out a copy whose
+   only change is its footer, since the CBC Run's diff of the staged
+   copies shows none. A read needs no strip: it compares a CBC Run's
+   copy with the CBC Run's own last delivery, both stripped. It cuts the `---` line and the
    `## Decisions` section below it, and nothing else. A CBC Run's copy
    equals its Master Copy at the Delivery Pin without that footer;
    the exchange manual and the delivered-copies Agent Rule say so. A
