@@ -12,11 +12,17 @@
      convention is named by its path in backticks or by its Name,
      the Exchange Convention, never by the bare word. Entries sit in
      groups by what they name; a new Name goes in its group, after
-     the Names it uses.
+     the Names it uses. The concept's, the method's and the stack's
+     Names are written once, in the file each group delivers, and
+     read there; their groups here point at it. A Name that file
+     delivery/container/docs/glossary/container.md also lists is
+     shared: its entry there follows this one, from the CBC Run's
+     side.
      foundation: the writing convention -->
 
 The Names used in this repo, each pointing at the home that defines
-its thing. A CBC Run keeps a glossary of its own.
+its thing. A CBC Run keeps a glossary of its own, and receives the
+delivered files below.
 
 ## The repositories
 
@@ -223,8 +229,10 @@ its thing. A CBC Run keeps a glossary of its own.
   nothing; it is read when the item is worked
   (`docs/conventions/project-recording/` §14, *Conversation Memory*).
 
-## The concept
+## The concept and the method
 
-- **System Layer** — one of the five layers of the layered system the
-  concept describes, LAYER-1-ENVIRONMENT to LAYER-5-INTERACTION
-  (`concept/01-layered-system.md`).
+Their Names are in `delivery/method/docs/glossary/method.md`.
+
+## The stack
+
+Its Names are in `delivery/spring-postgres/docs/glossary/stack.md`.

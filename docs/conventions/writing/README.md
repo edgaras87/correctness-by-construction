@@ -29,7 +29,14 @@ on 2026-10-15 (ADR-0053).
   it loads at the start of every session.
 - **`docs/glossary.md` — the Concept Deliverer's glossary**, the list of
   Glossary Names rule 9 points at; its header comment holds the form of
-  an entry. A CBC Run starts its own at the same path.
+  an entry. A CBC Run starts its own at the same path, a record that
+  holds only the Names it defines.
+- **The delivered Glossary Names, shipped as pinned copies,** one file
+  per group, updated with every delivery:
+  `delivery/container/docs/glossary/container.md`, the shared Names;
+  `delivery/method/docs/glossary/method.md`, the concept's and the
+  method's; `delivery/spring-postgres/docs/glossary/stack.md`, the
+  stack's. Each lands under `docs/glossary/` in a CBC Run.
 - **`.claude/rules/writing.md` — the Concept Deliverer's**, derived from
   this page like the container's, not copied from it, and loaded
   the same way. It differs where the Convention Seat does: it covers the
