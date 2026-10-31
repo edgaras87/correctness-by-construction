@@ -36,7 +36,7 @@ text below it (`docs/models/idea-to-output.md` §3.2, *The direction of a link*)
    up and keep what each means here, numbered as before, so every
    reference to them still lands.
 5. **This repo's facts leave the Idea Model:** about the repo, to
-   `README.md` (ADR-0068); about how it works, to the manual.
+   `README.md`; about how it works, to the manual.
 6. **Mark what stays as an example:** "here, for example".
 7. **Grep, then walk.** Grep every living reference to the facts' old
    home (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*); then walk what stands on the Idea Model and on the
@@ -59,7 +59,7 @@ text below it (`docs/models/idea-to-output.md` §3.2, *The direction of a link*)
 ## Ways rejected
 
 - **One general line for each reference down,** and nothing placed:
-  the next project loses what it could derive from (ADR-0071).
+  the next project loses what it could derive from.
 - **A "This repo" section closing the Idea Model:** the reader jumps to
   the end for every example.
 - **Writing the Idea Model's part first, then finding the lower text's
@@ -93,3 +93,12 @@ found by a later check (`b7c17ae`): stage 7 now greps first.
 *Its first evaluation, 2026-10-28.* One use, so every piece stayed
 on trial and nothing was placed. Rewritten in general, with what
 would settle it.
+
+---
+
+## Decisions
+
+- ADR-0068 — stage 5: this repo's facts about itself go to
+  `README.md`
+- ADR-0071 — *Ways rejected*: one general line for each reference
+  down

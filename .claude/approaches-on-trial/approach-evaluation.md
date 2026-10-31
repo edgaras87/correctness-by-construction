@@ -9,8 +9,8 @@ Approaches on Trial over and never evaluates. The part a CBC Run holds is
 
 So that what a piece of work taught goes where it belongs, piece by
 piece, and nothing unproven is locked into a convention. Before
-this, first-time work's close made one lasting form, chosen at once
-(ADR-0056). The redesign of 2026-10-19 closed as three pieces, which
+this, first-time work's close made one lasting form, chosen at once.
+The redesign of 2026-10-19 closed as three pieces, which
 one form could not say. The refinement's draft was counted as a
 manual before anyone judged whether it was one.
 
@@ -116,7 +116,7 @@ evaluation closes on the agent's word.
 
 ## Ways rejected
 
-ADR-0058, *Options considered*.
+Those the decision behind this page weighed; the footer names it.
 
 ## Settled when
 
@@ -146,3 +146,11 @@ close places pieces, each into a home that exists before a new one.
 fix to a manual added anything, it looked for the place that should
 already do the job. Taught: stage 3's order, an existing home
 first.
+
+---
+
+## Decisions
+
+- ADR-0056 — *What it is for*: first-time work's close made one
+  lasting form
+- ADR-0058 — *Ways rejected*: its *Options considered*

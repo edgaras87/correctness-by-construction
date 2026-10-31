@@ -20,7 +20,7 @@ in the method's voice, though its memory said to explain plainly
 The need was written down on 2026-10-17. Most of this repo's text
 then predated four rules:
 
-- writing, and one home per fact (ADR-0053);
+- writing, and one home per fact;
 - the Foundation Check (2026-10-17);
 - a lesson written in general (`docs/conventions/conventions/`
   §2.6, *A lesson taken*, 2026-10-18).
@@ -364,8 +364,8 @@ commit, so the file can be read from git.
 
 ## Why it arrives this way
 
-An Approach on Trial (ADR-0058), first written as a manual on
-trial by first-time work as ADR-0056 had it. A skill written before
+An Approach on Trial, first written as a manual on trial by
+first-time work. A skill written before
 the work would describe a guess. The work corrects this page as it
 goes, and its evaluation at the close places its pieces
 (`.claude/approaches-on-trial/approach-evaluation.md`).
@@ -385,3 +385,12 @@ goes, and its evaluation at the close places its pieces
 
 - `.claude/approaches-on-trial/approach-drafting.md`
 - `19f1d7b^:temp/eval-2026-09-30.md`, the eval, in git
+
+---
+
+## Decisions
+
+- ADR-0053 — *What it is for*: writing, and one home per fact
+- ADR-0056 — *Why it arrives this way*: first written as a manual on
+  trial by first-time work
+- ADR-0058 — *Why it arrives this way*: an Approach on Trial

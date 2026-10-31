@@ -95,7 +95,7 @@ started CBC Run 4 (`temp/RUN-4.md`). Never on our Convention Seat.
 and born in one evening, 19 commits: three readers on run 4 at the
 default effort, all three paid; the briefing drafted on the
 reviewer's ask and decided line by line; two items due before a
-birth settled (ADR-0061, `cd69ed7`); a hand-off of five files; the
+birth settled (`cd69ed7`); a hand-off of five files; the
 birth from main at `ae8a041`, started on Fable 5.1 with the seed's
 prompt. Run 5 ran from 00:54 to 04:54 and from 08:28 to 08:45,
 through Release: 13 steps, 6 slices, 254 commits, 11 `red/` and 13
@@ -116,3 +116,10 @@ through Release: 13 steps, 6 slices, 254 commits, 11 `red/` and 13
 Not known still: what in the hand-off is general; how the reviewer
 checks a running run; whether the light read cost run 5 anything,
 which its reading will say.
+
+---
+
+## Decisions
+
+- ADR-0061 — *Uses*, CBC Run 5's birth: the two items due before a
+  birth
