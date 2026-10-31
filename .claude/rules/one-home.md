@@ -44,6 +44,12 @@ rules, comments and config. Where it lives, never how it reads.
    on a fact written elsewhere, and whether it says where. Nothing
    else finds a missing Fact Reference
    (`docs/conventions/facts-in-sync/`, *The Concept Deliverer's seat*).
+7. **Cite a decision where its reader needs it.** A manual or a
+   record cites it inside the sentence; an Agent Skill, an Agent Rule,
+   an Approach on Trial or an Output Shape cites it once, in its
+   *Decisions* footer, never in a sentence. Cite our own as
+   `ADR-nnnn`; the footer is stripped from every copy we deliver
+   (`docs/conventions/facts-in-sync/` §3.4, *A decision citation*).
 
 ## Not a second home
 
@@ -67,3 +73,4 @@ before anything retells it (`docs/conventions/facts-in-sync/` §1,
 - ADR-0065 — one home is facts-in-sync's, with the Fact Reference
 - ADR-0070 — how a Fact Reference is written; each new line asked
   at the commit
+- ADR-0078 — rule 7: a decision is cited where its reader needs it

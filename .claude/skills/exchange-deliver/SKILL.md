@@ -44,6 +44,24 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
    what it holds; the Delivery Note says what that diff will show, and the
    CBC Run finds the Delivery Note wrong if it does not.
 
+   Leave out a path whose only change is its *Decisions* footer: the
+   copy is staged without it (step 2 of Stage 2), so the CBC Run's
+   diff shows nothing there
+   (`docs/conventions/exchange/` §3.8, *The footer at delivery*):
+
+   ```sh
+   footer_only() {   # true when $1 changed since $P only in its footer
+     python3 - "$1" "$P" <<'PY'
+   import re, subprocess, sys
+   path, pin = sys.argv[1], sys.argv[2]
+   cut = lambda t: re.sub(r'\n+---\n+## Decisions\n.*\Z', '\n', t, flags=re.S)
+   show = lambda ref: subprocess.run(["git", "show", f"{ref}:{path}"],
+                                     capture_output=True, text=True).stdout
+   sys.exit(0 if cut(show(pin)) == cut(show("HEAD")) else 1)
+   PY
+   }
+   ```
+
 2. **Why it matters to this CBC Run** — the part a diff cannot carry.
    What the change does to the CBC Run's next Plan Step, not what it does to
    the files.
@@ -109,7 +127,18 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
      copies $g | (cd delivery/$g && xargs cp --parents -t "$stage")
    done
    mkdir -p "$stage"/docs && cp -r concept "$stage"/docs/concept
+   find "$stage" -name '*.md' -exec python3 -c '
+   import re, sys
+   for p in sys.argv[1:]:
+       t = open(p, encoding="utf-8").read()
+       n = re.sub(r"\n+---\n+## Decisions\n.*\Z", "\n", t, flags=re.S)
+       if n != t: open(p, "w", encoding="utf-8").write(n)
+   ' {} +
    ```
+
+   The last command strips every copy's *Decisions* footer, the `---`
+   line and the section below it, and nothing else; a second run
+   changes nothing (`docs/conventions/exchange/` §3.8, *The footer at delivery*).
 
    Each group's `.claude/skills/`, `.claude/rules/`,
    `.claude/shapes/` and `.claude/approaches-on-trial/`, and nothing
