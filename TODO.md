@@ -522,10 +522,13 @@
       visual-comparison and retrospective, each a manual and an Agent
       Skill; writing, a manual and an Agent Rule. Writing the kind
       word always keeps them apart in reading (the refinement's
-      DECISION-24 and 27), but a grep still finds both. CBC Runs 4, 5
-      and 6 were built with these names and their Run Readings are
-      open: renamed first, their records would be read in names our
-      texts no longer use. New names follow the naming rule of the
+      DECISION-24 and 27), but a grep still finds both. It waits for
+      two reasons: which side is renamed, and to what, is a choice
+      that how CBC Runs 4, 5 and 6 used these parts can inform; and
+      four of the names ship, so a rename moves every CBC Run's
+      folders and commands, the paths a read compares by. Their
+      records keep the old names either way, since a record is never
+      updated. New names follow the naming rule of the
       refinement's design, ADR-0078 when written.
       Ideas:
       - rename the manual, by its subject: commit-message-form,
