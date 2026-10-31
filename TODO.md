@@ -569,6 +569,27 @@
                `.claude/approaches-on-trial/approach-evaluation.md`.
       See: devlog 2026-10-17, later, the skill rewrite.
 
+- [ ] Check each manual for Work Approach text: rules stated without
+      their why, or rules no Work Approach carries (2026-10-31, the
+      reviewer).
+      Context: since ADR-0078, a manual says what a way of working is,
+      how and why, and the Work Approaches made from it state the
+      rules, one sentence each (`docs/models/idea-to-output.md` §6.1,
+      *The manual's level*). Some manuals still state rules as an
+      Agent Rule would. Two found at the design's commit 5: facts-in-sync
+      §3.4 first listed its six rules with almost no why; the
+      conventions manual §1 holds the rules for writing an Agent Skill
+      or Agent Rule, and no Work Approach carries them to the writer.
+      Ideas:
+      - per manual, each rule-shaped passage: does it give its why,
+        and which Work Approach states it.
+      - conventions §1 is the item above, "Write an Agent Rule that
+        writes a skill or Agent Rule from its convention".
+      - a passage with no Work Approach: an Agent Rule is made, or the
+        passage stays as the manual's reason for a rule held elsewhere.
+      Trigger: the refinement of this repo closes.
+      See: ADR-0078.
+
 - [ ] Rewrite the method's texts plain (2026-10-17, CBC Run 3's RETRO
       D2).
       Context: the agent copies the voice it reads. CBC Run 3's records
