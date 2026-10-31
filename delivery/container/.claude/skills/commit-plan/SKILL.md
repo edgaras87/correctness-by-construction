@@ -177,18 +177,18 @@ the grant, every commit is a boundary.
 
 ## Decisions
 
-- CBC ADR-0038, 1b — a separate convention; the plan is a scaffold,
+- ADR-0038, 1b — a separate convention; the plan is a scaffold,
   not a record
-- CBC ADR-0038, 1d — §3: a set that closes a gate item names the
+- ADR-0038, 1d — §3: a set that closes a gate item names the
   commit
-- CBC ADR-0038, 1e — §3: order follows where the decision lives;
+- ADR-0038, 1e — §3: order follows where the decision lives;
   §2: provisional tails; §4: ADRs open Proposed
-- CBC ADR-0038, 1f — §6: the stop at every boundary is
+- ADR-0038, 1f — §6: the stop at every boundary is
   commit-messages'
-- CBC ADR-0049, 1 — a commit plan counts commits; "step" is
+- ADR-0049, 1 — a commit plan counts commits; "step" is
   `PLAN.md`'s
-- CBC ADR-0049, 3 — §4: the sweep greps the text unwrapped
-- CBC ADR-0050, 1–3 — §6: small steps on the reviewer's grant, each
+- ADR-0049, 3 — §4: the sweep greps the text unwrapped
+- ADR-0050, 1–3 — §6: small steps on the reviewer's grant, each
   counted when written; §4: a look back before the close
-- CBC ADR-0050, 4–5 — §2: an inserted commit takes a letter; a
+- ADR-0050, 4–5 — §2: an inserted commit takes a letter; a
   planned commit may repeat over a set

@@ -1,5 +1,5 @@
-<!-- A reference on CBC ADR-0008's imitated side: a decision surface,
-     nothing to paste or fill. -->
+<!-- A reference, read and imitated: a decision surface, nothing to
+     paste or fill. -->
 
 # App structure — the decision surface at bootstrap
 
@@ -104,6 +104,6 @@ endorsement. Deeper trade-off talk is a conversation, not this doc.
 - **Pros/cons essays** — re-derivable in conversation at the moment
   of choice, and they would stale; the two lines above are for
   recall and shared vocabulary only.
-- **Application code** — the executor's, always (CBC ADR-0008); the
+- **Application code** — the executor's, always; the
   harness reference is the only code-bearing exception, and it
   earned that.

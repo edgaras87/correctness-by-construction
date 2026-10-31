@@ -1,4 +1,4 @@
-<!-- The Skill Template for the slice-registry export (CBC ADR-0008).
+<!-- The Skill Template for the slice-registry export.
      Fill every <angle> slot; delete
      the guidance lines. Declining this Skill Template is off-template:
      derive your own layout from the outcomes in the skill's export

@@ -177,10 +177,10 @@ and that is what the Concept Deliverer reads.
 
 ## Decisions
 
-- CBC ADR-0008 — rule 8: a Skill Template is copied and filled
-- CBC ADR-0036 — the Exchange Convention. This Agent Rule is the CBC Run's half of it,
+- ADR-0008 — rule 8: a Skill Template is copied and filled
+- ADR-0036 — the Exchange Convention. This Agent Rule is the CBC Run's half of it,
   built from the seven rules never-oversold wrote for its own method
   skills and widened to every delivered copy; the Delivery Pin and the
   Read-Through Commit; what a copy cannot carry; the check at the Delivery Take
-- CBC ADR-0046 — item 5: the Delivery Take's commits, the chapters first and
+- ADR-0046 — item 5: the Delivery Take's commits, the chapters first and
   the entry in the last

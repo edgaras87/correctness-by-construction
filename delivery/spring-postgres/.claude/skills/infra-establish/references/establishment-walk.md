@@ -150,7 +150,7 @@ needs in hand and linking the manual for the rest. Skeleton:
 `.claude/skills/infra-establish/templates/readme-prerequisites.md` in this skill — merge, fill,
 and the section is the CBC Run's own (`.claude/rules/delivered-copies.md`, rule 8, *A Skill Template is copied and filled*). The stack's own
 prerequisite line is **not** written here: its fact is born at
-bootstrap, whose skill carries it (CBC ADR-0013). The container's README
+bootstrap, whose skill carries it. The container's README
 ships without the section — container stays, direction goes — and
 the section arrives now because this gate made it true.
 

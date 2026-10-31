@@ -10,7 +10,7 @@ This doc carries **required outcomes** (what must be true, the how is
 yours) and **lived traps** (exact facts about this stack and environment).
 It carries no code to copy. Its config files, though, are
 Skill Templates in `templates/` beside this skill's
-`references/` (CBC ADR-0008); they implement the stack line above.
+`references/`; they implement the stack line above.
 If the CBC Run's decided stack differs you are **off-template**: derive
 from the outcomes here, and the rest is
 (`.claude/rules/delivered-copies.md`, rule 8, *A Skill Template is

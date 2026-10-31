@@ -103,13 +103,13 @@ The gate items themselves, and how a Plan Step carries them.
 
 ## Decisions
 
-- CBC ADR-0035 — written in never-oversold from its own lived work
+- ADR-0035 — written in never-oversold from its own lived work
   and taken here reshaped: the holder is named as the Concept Deliverer,
   which the CBC Run's `delivered-copies.md` names, and the role-name it
   arrived under is not adopted
-- CBC ADR-0037 — shapes are a convention; this Agent Rule derives from its
+- ADR-0037 — shapes are a convention; this Agent Rule derives from its
   manual, keeps the definition because a CBC Run cannot open the manual,
   and says that an Output Shape states form and never its lifecycle
-- CBC ADR-0052 — one place, read at the gate; Output Shapes travel as
+- ADR-0052 — one place, read at the gate; Output Shapes travel as
   copies; the look before an Output Shape is written; four endings; an Output Shape
   that names work is asked for by its skill

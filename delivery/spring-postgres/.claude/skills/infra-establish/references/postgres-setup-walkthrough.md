@@ -12,7 +12,7 @@ Placeholders: `<project>` — underscored in SQL identifiers
 (compose project name).
 
 The files themselves are Skill Templates in `templates/`,
-beside this skill's `references/` (CBC ADR-0008) — this walk carries the
+beside this skill's `references/` — this walk carries the
 whys and the order; the Skill Templates carry the bodies and their recall
 comments. Fill one, and the filled file is the CBC Run's own.
 The Skill Templates implement the assumptions above. If the CBC Run's decided

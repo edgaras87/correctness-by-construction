@@ -137,5 +137,5 @@ reads those two, then the note.
 
 ## Decisions
 
-- CBC ADR-0054 — the retrospective is a convention, its look and
+- ADR-0054 — the retrospective is a convention, its look and
   its apply step two skills, taken from never-oversold's

@@ -185,8 +185,8 @@ grouping is headings for the reader, never a boundary; the
 reconciliation line accounts for every kill and states even its
 absences (the written zero); exactly one slice is chosen-next
 while open work remains. The default layout is the
-Skill Template `.claude/skills/cbc-framing/templates/registry.md`
-(CBC ADR-0008). Declining it is **off-template**:
+Skill Template `.claude/skills/cbc-framing/templates/registry.md`.
+Declining it is **off-template**:
 derive your own layout from the outcomes above, and the rest is
 (`.claude/rules/delivered-copies.md`, rule 8, *A Skill Template is
 copied and filled*).
@@ -234,3 +234,10 @@ then the skeleton and its adversity harness — defined by the readiness
 checklist (`.claude/skills/cbc-slice/references/system-readiness.md`). Slicing
 begins only when the human signs off readiness; the cbc-slice skill will
 check.
+
+---
+
+## Decisions
+
+- ADR-0008 — *Export and handoff*: the registry's default layout is
+  a Skill Template, copied and filled

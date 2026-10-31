@@ -203,7 +203,7 @@ harness's component says the form it starts the system in, and why
 that is the form that ships. The project's records table sends "what
 may a slice rely on" there.
 
-The certified facts also project into the README (CBC ADR-0013): the
+The certified facts also project into the README: the
 **Run** and **Test** sections, plus the stack's line joining the
 Prerequisites section the establishment opened — merged and filled
 from `.claude/skills/cbc-bootstrap/templates/readme-run-test.md`. Run ends in the lived proof of
@@ -215,3 +215,14 @@ harness is real.
 **Exit test:** the skeleton runs on the real ground as the runtime identity
 alone, and the harness demonstrably creates the chosen adversity through the
 real door. Then hand over: growth belongs to cbc-slice.
+
+---
+
+## Decisions
+
+- ADR-0008 — `references/app-structure.md`,
+  `references/spring-boot-walkthrough.md` and
+  `references/spring-harness-reference.md`: a reference is read and
+  imitated, a Skill Template copied and filled
+- ADR-0013 — Stage 5: the README's Run and Test sections arrive when
+  the bootstrap makes them true

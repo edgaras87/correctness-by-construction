@@ -22,7 +22,7 @@ which are shaped by the stack and the harness outcomes rather than by
 the problem — three projects produced them near-identically, and each
 executor's only route was reading the previous project's source. This
 file exists to make that read unnecessary. **It is a reference, not a
-Skill Template** (CBC ADR-0008): imitated, never pasted-and-filled — copied
+Skill Template**: imitated, never pasted-and-filled — copied
 thoughtlessly it will be wrong in the variation points named at the
 end.
 

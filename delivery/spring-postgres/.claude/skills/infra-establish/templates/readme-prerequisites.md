@@ -1,4 +1,4 @@
-<!-- Skill Template — the Master Copy is in correctness-by-construction (CBC ADR-0008).
+<!-- Skill Template — the Master Copy is in correctness-by-construction.
      Merge into
      the CBC Run's README when the ground stands and fill; the filled
      section is the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, A Skill Template is copied and filled). Only the section below

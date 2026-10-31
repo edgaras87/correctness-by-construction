@@ -97,13 +97,13 @@ this rule then names that kind and its style.
 
 ## Decisions
 
-- CBC ADR-0053 — how a text reads is a convention of its own, and
+- ADR-0053 — how a text reads is a convention of its own, and
   its rule loads in every session
-- CBC ADR-0074 — rule 9's first form: a word with more than one
+- ADR-0074 — rule 9's first form: a word with more than one
   meaning carried its subject
-- CBC ADR-0075 — rule 10: a numbered section's title names its
+- ADR-0075 — rule 10: a numbered section's title names its
   subject, 30 characters at most, standing alone
-- CBC ADR-0076 — rule 9: every defined thing has a Glossary Name of
+- ADR-0076 — rule 9: every defined thing has a Glossary Name of
   two or more words, capitalized; the glossary is the list of Names
-- CBC ADR-0077 — rule 11: an edit changes only the lines its change
+- ADR-0077 — rule 11: an edit changes only the lines its change
   needs; Markdown has no line width

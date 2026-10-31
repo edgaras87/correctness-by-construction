@@ -138,14 +138,14 @@ name the case, it is not an entry yet.
 
 ## Decisions
 
-- CBC ADR-0027 — the comparison is a method that worked once;
+- ADR-0027 — the comparison is a method that worked once;
   recorded, not adopted, with the second format question as the
   trigger for asking whether it becomes a rule
-- CBC ADR-0027, decision 2 — §4's "using a dialect is not fighting
+- ADR-0027, decision 2 — §4's "using a dialect is not fighting
   it": a candidate that needs the layout fought has lost
-- CBC ADR-0027, decision 3 — §5's Mermaid trial, provisional and not
+- ADR-0027, decision 3 — §5's Mermaid trial, provisional and not
   travelling
-- CBC ADR-0028 — the trigger fired; this skill is its answer, and §4
+- ADR-0028 — the trigger fired; this skill is its answer, and §4
   growing or not is the test of the objection it records
-- CBC ADR-0030 — the general method separated out; §4's discipline
+- ADR-0030 — the general method separated out; §4's discipline
   line and §1's rule that the set holds a non-picture are from it

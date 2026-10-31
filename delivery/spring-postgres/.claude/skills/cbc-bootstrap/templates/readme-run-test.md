@@ -1,4 +1,4 @@
-<!-- Skill Template — the Master Copy is in correctness-by-construction (CBC ADR-0008).
+<!-- Skill Template — the Master Copy is in correctness-by-construction.
      Merge into the CBC Run's README at Stage 5, when the
      harness is real, and fill from the certified commands; the
      filled sections are the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, A Skill Template is copied and filled). Only the material

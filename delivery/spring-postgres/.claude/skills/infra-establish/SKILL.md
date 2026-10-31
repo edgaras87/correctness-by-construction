@@ -149,10 +149,19 @@ The layout, both cases:
     never reconstructed later.
 - README `Prerequisites` section — projected at the exit, when the
   ground stands: the environment lines only, merged and filled from
-  `.claude/skills/infra-establish/templates/readme-prerequisites.md` (CBC ADR-0013). The stack's
+  `.claude/skills/infra-establish/templates/readme-prerequisites.md`. The stack's
   line arrives at bootstrap, not here. Direction in the walk's stage
   7.
 - Optional, only if the project keeps public docs: a setup guide
   derived from the operator manual — a projection, never a second
   master; re-derived when the manual changes.
 
+---
+
+## Decisions
+
+- ADR-0008 — `references/postgres-setup-walkthrough.md`: the ground's
+  files are Skill Templates beside the references
+- ADR-0013 — *Records and outputs* and `references/establishment-walk.md`
+  stage 7: the README's Prerequisites section arrives when the ground
+  stands

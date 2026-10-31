@@ -1,4 +1,4 @@
--- Skill Template — the Master Copy is in correctness-by-construction (CBC ADR-0008).
+-- Skill Template — the Master Copy is in correctness-by-construction.
 -- Copy into a CBC Run at the same path and fill; the filled
 -- file is the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, A Skill Template is copied and filled).
 

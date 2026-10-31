@@ -49,8 +49,8 @@ comment is living text.
 
 ## Decisions
 
-- CBC ADR-0053 — the one-home rule loads in every session
-- CBC ADR-0065 — one home is facts-in-sync's
-- CBC ADR-0070 — a retelling may stand beside its id, re-read when
+- ADR-0053 — the one-home rule loads in every session
+- ADR-0065 — one home is facts-in-sync's
+- ADR-0070 — a retelling may stand beside its id, re-read when
   its home changes
-- CBC ADR-0078 — rule 6: a decision is cited where its reader needs it
+- ADR-0078 — rule 6: a decision is cited where its reader needs it
