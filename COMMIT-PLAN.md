@@ -60,8 +60,7 @@ holding its own footer rule.
 **6. `docs: the exchange strips footers at delivery`**
 The exchange manual: a copy equals its Master Copy at the Delivery Pin
 without its *Decisions* footer; the strip runs at Delivery Staging, in
-the Pure Seed, and before a read compares. Pinned copies in §3.2,
-*What goes*, gain the three glossary files.
+the Pure Seed, and before a read compares.
 
 **7. `chore(agent): our files follow the design`**
 Our side's Work Approaches: the one-home Agent Rule takes the citation
@@ -97,7 +96,8 @@ The shared Names leave the container's glossary record for
 *This project's own*, and its header points at the delivered files.
 `delivery/method/docs/glossary/method.md` and
 `delivery/spring-postgres/docs/glossary/stack.md` are created with
-their headers, their entries to come.
+their headers, their entries to come. The exchange's §3.2, *What
+goes*, names the three among the pinned copies, now that they exist.
 
 **13. `docs(temp): the Names table, <group> judged`** *(provisional)*
 One commit per group, in this order: the concept's ten, the method's,
