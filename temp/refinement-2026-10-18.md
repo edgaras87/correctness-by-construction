@@ -2829,6 +2829,10 @@ lens, ledger, rider, flag, possession.
   that use a new Name update at every delivery. One way: the delivered
   groups' Names live in a file that is a pinned copy, updated with
   every delivery, and only the CBC Run's own group in the record.
+- Its design decided, 2026-10-31, ADR-0078: the delivered Names are
+  pinned copies, one file per group, updated with every delivery, in
+  place of the Delivery Fill; the concept's ten words take two-word
+  Names; every candidate is judged in one table first.
 
 **DECISION-20.** Rule 10's reach. Rests: FINDING-303, 368, 379, 380,
 454, 471, 472, 507, 517, 537, 596, 665, 666, 826, 827 and 922.
@@ -3073,6 +3077,12 @@ Templates. Rests: FINDING-924, 20 lines in 18 files; 842.
   conventions manual §1.1, *How a rule is written*, and ADR-0069
   change, built with DECISION-32's design after the decisions.
   FINDING-924 and 842 are fixed by it.
+- Reversed by the reviewer at the design's question 10, 2026-10-31,
+  ADR-0078: our Master Copies keep their footers, and every delivery
+  strips them, in the Pure Seed and in `exchange-deliver`, and before
+  `exchange-read` compares. One rule for citing a decision, in
+  facts-in-sync §3: a citation in a Work Approach's sentence moves to
+  its footer, so the shipped 20 go there and are stripped on the way.
 
 **DECISION-30.** Whether a record's form is held to rules 2 and 3.
 Rests: FINDING-605, a record header's comment; 700 and 709, the Record
