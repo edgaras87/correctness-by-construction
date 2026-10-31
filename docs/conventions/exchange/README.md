@@ -115,7 +115,8 @@ per group, not one per convention.
 ### 2.3 The bytes at the Delivery Pin
 
 The moment a CBC Run takes a delivery,
-every copy equals the Master Copy exactly, and anyone can check it with
+every copy equals the Master Copy without its *Decisions* footer
+(§3.8, *The footer at delivery*), and anyone can check it with
 `diff`. Between Delivery Pins the copy is the Master Copy plus the CBC Run's edits,
 and that difference is the whole of what the Concept Deliverer reads. A
 Delivery Take overwrites whole and the bytes match again. Same Delivery Pin, same
@@ -175,11 +176,13 @@ nothing in flight — and when it is the agent, it reports what it
 found and waits for the word before anything lands. The
 Delivery Staging is named by the commit at which the files and the Delivery Note are
 both final — commit the Delivery Note last, then name the bundle — so the
-Delivery Pin the CBC Run records points at exactly the Delivery Note it read. *Its story: devlog 2026-09-25, later; devlog 2026-10-29, the lessons' own stories: the exchange.*
+Delivery Pin the CBC Run records points at exactly the Delivery Note it read.
+Every copy is staged without its footer (§3.8, *The footer at delivery*). *Its story: devlog 2026-09-25, later; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 ### 3.2 What goes
 
-Files, whole. The groups that ship — the Method Group, the
+Files, whole, but for a copy's *Decisions* footer (§3.8, *The footer
+at delivery*). The groups that ship — the Method Group, the
 Container Group, the Stack Group if the CBC Run is on that stack — and the
 concept. Nothing that explains them; the explanation stays home.
 
@@ -273,6 +276,27 @@ ordinal, and the one it gave itself at its Identity Plan Step. A CBC Run's
 records do not say which is which; ours do (`ARCHITECTURE.md` §2.5, *The CBC Runs*).
 
 *Its story: devlog 2026-09-20.*
+
+### 3.8 The footer at delivery
+
+A copy goes without its *Decisions* footer: the `---` line and the
+`## Decisions` section below it, the last part of an Agent Skill, an
+Agent Rule, an Approach on Trial or an Output Shape. Why it goes, and
+why the Master Copy keeps it, is the citation rule's
+(`docs/conventions/facts-in-sync/` §3.4, *A decision citation*).
+
+The strip runs in three places:
+
+1. at birth, in the Pure Seed, as each group is copied;
+2. at every later Delivery Staging, in `exchange-deliver`;
+3. on our side, before a read compares a CBC Run's copy with its
+   Master Copy at the Delivery Pin (§6.1, *Reading a CBC Run*), so a
+   footer never shows as an edit.
+
+It cuts that section and nothing else, and a second run changes
+nothing. A file with no footer passes through unchanged. A CBC Run
+never writes a footer on a copy: an edit's reason goes to its
+Decisions Log (§5.1, *When a copy may be edited*).
 
 ## 4. The Delivery Take
 
@@ -424,7 +448,8 @@ decided constraint to fit an Agent Skill Template (ADR-0008).
 We open the CBC Run's repository and read three things
 since its Read-Through Commit: its Decisions Log (every edit and why), its
 backlog (every line addressed to us), and the diff of every held
-copy against its Delivery Pin. Those three give every item; the devlog is
+copy against its Delivery Pin, our side's footer stripped first
+(§3.8, *The footer at delivery*). Those three give every item; the devlog is
 context.
 
 One more look gives no item: the CBC Run's tree, the work staged or

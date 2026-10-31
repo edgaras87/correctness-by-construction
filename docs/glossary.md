@@ -43,7 +43,8 @@ its thing. A CBC Run keeps a glossary of its own.
   holds copies of it (`docs/conventions/exchange/` §1, *What cannot change*, fact 3).
 - **Read-Through Commit**, **Delivery Pin** — the two numbers a CBC
   Run records for a delivery: its own commit the Concept Deliverer
-  last read up to, and the Concept Deliverer's commit its copies equal
+  last read up to, and the Concept Deliverer's commit its copies
+  equal, but for their *Decisions* footers
   (`docs/conventions/exchange/` §2.2, *The CBC Run*).
 - **Delivery Note** — the text beside a delivery: what changed since
   the CBC Run's Delivery Pin, and a verdict on everything the CBC Run

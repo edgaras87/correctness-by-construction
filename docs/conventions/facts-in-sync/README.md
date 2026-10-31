@@ -234,7 +234,8 @@ both Convention Seats:
 5. **A copy we deliver has its footer stripped at delivery.** A CBC
    Run cannot open our ADRs, so our footer is a pointer it cannot
    follow. We keep it, since we are the ones who change the file. The
-   strip is the Exchange Convention's (`docs/conventions/exchange/`).
+   strip is the Exchange Convention's (`docs/conventions/exchange/`
+   §3.8, *The footer at delivery*).
 6. **A Record Stub and an Agent Skill Template cite nothing.** The
    project fills them, and a citation of ours would become a line of
    its own record that points at nothing it can open.
