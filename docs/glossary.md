@@ -104,7 +104,7 @@ its thing. A CBC Run keeps a glossary of its own.
   §2, *The Convention Manual*).
 - **Made Usable** — what a stated body becomes in the delivery: the
   concept as the method, the conventions as the container.
-- **Work Approach** — how a piece of work is done. A skill or an
+- **Work Approach** — how a piece of work is done. An Agent Skill or an
   Agent Rule is a Work Approach proven and placed; an Approach on
   Trial is not yet proven (`docs/models/idea-to-output.md` §2, *The kinds*).
 - **Approach on Trial** — the written Work Approach to one kind of
@@ -137,11 +137,15 @@ its thing. A CBC Run keeps a glossary of its own.
   §2.4, *How the entry file is written*); a Paths Rule, one loaded by path; and Claude Code's
   permission and deny rules, its own words
   (`docs/conventions/agent-arrangement/` §3.5, *`.claude/settings.json`*).
-- **Skill Template** — a file under a skill's `templates/`, copied
+- **Agent Skill** — a file under `.claude/skills/<name>/`, its
+  `SKILL.md` and what it references, read when its moment comes
+  (`docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`*). Always written with its
+  kind, the commit-plan Agent Skill
+  (`docs/conventions/conventions/` §1.5, *Naming a Work Approach*).
+- **Agent Skill Template** — a file under an Agent Skill's `templates/`, copied
   and filled by the project, never edited in place
-  (`docs/conventions/exchange/` §5.8, *Filling a Skill Template*).
-  A particular one is named by its file: the Registry Template, the
-  Glossary Template.
+  (`docs/conventions/exchange/` §5.8, *Agent Skill Templates*).
+  A particular one is named by its file: `templates/registry.md`.
 - **Record Stub** — a record as it is born: the shipped file with its
   header comment and headings, which a project fills from its first
   entry on. The Container Group holds one per record, each named by
@@ -196,11 +200,11 @@ its thing. A CBC Run keeps a glossary of its own.
 - **Plan Step** — one piece of `PLAN.md`'s work, a CBC Run's or ours.
   What makes work a Plan Step here is the Plan Step Form in our
   `PLAN.md` (ADR-0057). Named by its number in its plan: Step 0.
-- **Skill Stage** — one phase of a skill, numbered from Stage 0 and
-  named by its skill outside it: `cbc-slice`'s Stage 3,
-  `cbc-framing`'s Stage 2. A Plan Step's Now line names the Skill
-  Stage it is in. How a skill names them is the conventions manual's
-  (`docs/conventions/conventions/` §1.4, *Skill Stages*).
+- **Agent Skill Stage** — one phase of an Agent Skill, numbered from Stage 0 and
+  named by its Agent Skill outside it: `cbc-slice`'s Stage 3,
+  `cbc-framing`'s Stage 2. A Plan Step's Now line names the Agent Skill
+  Stage it is in. How an Agent Skill names them is the conventions manual's
+  (`docs/conventions/conventions/` §1.4, *Agent Skill Stages*).
 - **Approach Stage** — one phase of an Approach on Trial, numbered
   the same way (`.claude/approaches-on-trial/approach-drafting.md`,
   *Stages*).

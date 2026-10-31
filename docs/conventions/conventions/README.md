@@ -24,8 +24,8 @@ it the next day.
 
 Nothing shipped of its own; what a repo holds is:
 
-- **the Foundation Line in every shipped skill, Agent Rule and Output Shape**
-  — a CBC Run's, and this convention's artifact there (§1.3, *The Foundation Line*);
+- **the Foundation Line in every shipped Agent Skill, Agent Rule and Output Shape**
+  — a CBC Run's, and this convention's Work Approach there (§1.3, *The Foundation Line*);
 - **`.claude/rules/convention-manual.md` — the form of a manual,
   the Concept Deliverer's**, loading whenever a manual is opened;
 - **the index, `docs/conventions/README.md`** — it points: the chain, relations only (ADR-0032), and one line sending a reader here and to the map
@@ -36,23 +36,23 @@ a change forced in one of them is checked back against this page.
 
 ## The seats
 
-A CBC Run holds artifacts and writes no manuals. The Concept
+A CBC Run holds Work Approaches and writes no manuals. The Concept
 Deliverer writes the manuals and holds the Master Copy of every
-artifact. This page is written from the Concept Deliverer's
+shipped Work Approach. This page is written from the Concept Deliverer's
 Convention Seat.
 
-## 1. A convention's artifacts
+## 1. A convention's Work Approaches
 
-What a convention is, a manual and its artifacts, is the Idea Model's
-(`docs/models/idea-to-output.md` §6, *A convention*). Here, a convention's artifacts
+What a convention is, its manual and the Work Approaches made from it, is the Idea Model's
+(`docs/models/idea-to-output.md` §6, *A convention*). Here, a convention's Work Approaches
 are what a project holds: a CBC Run, or this repo, which keeps its own
-under `.claude/`. A skill file for a rule bound to a moment; an Agent
+under `.claude/`. An Agent Skill for a rule bound to a moment; an Agent
 Rule for a rule bound to a path, or, with no path, to every task;
-Record Stubs and templates for rules that ride in the files a project is
+Record Stubs and Agent Skill Templates for rules that ride in the files a project is
 born with. The Master Copies are real files in the Container Group,
-`delivery/container/`. Which copy of an artifact is the Master Copy, and
+`delivery/container/`. Which copy of a Work Approach is the Master Copy, and
 how every other copy changes, is the Exchange Convention's
-(`docs/conventions/exchange/` §1, *What cannot change*, and §4, *The Delivery Take*). The Concept Deliverer's own skills
+(`docs/conventions/exchange/` §1, *What cannot change*, and §4, *The Delivery Take*). The Concept Deliverer's own Agent Skills
 and Agent Rules are not copies: it writes its own
 (`docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`*).
 
@@ -82,7 +82,7 @@ loader reads:
 
 ```yaml
 ---
-name: <the convention's name, or with its act: exchange-read>
+name: <its act, a verb, never a name already used: exchange-read>
 description: <when to read this file — the trigger>
 foundation: the <name> convention
 ---
@@ -100,7 +100,7 @@ claim, never history — and a file has one
 
 Which files carry it, and where:
 
-- every skill and Agent Rule, shipped or this repo's own, in its
+- every Agent Skill and Agent Rule, shipped or this repo's own, in its
   frontmatter;
 - every shipped Output Shape, in frontmatter of its own;
 - a manual whose idea an Idea Model states, in frontmatter of its own;
@@ -117,7 +117,7 @@ What it holds:
 - for the method, the concept and its version, `concept v1`;
 - for the stack practice, the concept it was checked against,
   `practice, checked against concept v1`;
-- for a convention's artifact, the convention by name, `the
+- for a convention's Work Approach, the convention by name, `the
   exchange convention`;
 - for an Output Shape, the convention it lives under, `practice, under the
   shapes convention`;
@@ -131,15 +131,33 @@ chapters and Idea Models carry none; they are the top. That the line
 travels with a copy is the Exchange Convention's
 (`docs/conventions/exchange/` §3.5, *The Foundation Line in a copy*).
 
-### 1.4 Skill Stages
+### 1.4 Agent Skill Stages
 
-A skill's phases are Skill Stages, numbered from Stage 0, each under its
+An Agent Skill's phases are Agent Skill Stages, numbered from Stage 0, each under its
 own heading: `## Stage 1 — specify-correctness`. "Step" is PLAN's:
-a Plan Step's Now line names the Skill Stage it is in, and one word for both
+a Plan Step's Now line names the Agent Skill Stage it is in, and one word for both
 would read "Now: Step 3" inside Step 1. A numbered instruction
-inside a Skill Stage is not a phase, and its list may call it a step.
+inside an Agent Skill Stage is not a phase, and its list may call it a step.
 
 *Its story: devlog 2026-10-17, later; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
+
+### 1.5 Naming a Work Approach
+
+A new name never repeats a manual's, an Agent Skill's or an Agent
+Rule's: a grep for it, before it is given, finds none. A shared name
+makes every grep for one find both. A new Agent Skill is named by
+its act, a verb: exchange-read, infra-establish.
+
+In text, a Work Approach is always written with its kind: the
+commit-plan Agent Skill, the one-home Agent Rule. A manual is written
+the same way, the commit-plan manual. A sentence that points at where
+a fact is written gives the path, as a Fact Reference.
+
+Five names older than this part are shared: commit-messages,
+commit-plan, visual-comparison and retrospective, each a manual and
+an Agent Skill; writing, a manual and an Agent Rule. The kind keeps
+them apart in text until TODO's "Rename the manuals, Agent Skills and
+Agent Rules that share a name" is worked (ADR-0078).
 
 ## 2. The Convention Manual
 
@@ -267,7 +285,7 @@ placing takes these steps:
    inside a Change Set.
 2. The manual at `docs/conventions/<name>/README.md`, in the form
    (§2, *The Convention Manual*).
-3. Its artifacts in the Container Group, if it ships any. A convention
+3. Its Work Approaches in the Container Group, if it ships any. A convention
    entering or leaving the Container Group updates the birth entry in the
    Decisions Log's Record Stub there, in the same commit: a CBC Run holds
    that list, and cannot open this repo's.
@@ -275,8 +293,8 @@ placing takes these steps:
    during a piece of work.
 5. The convention's line in the map: a phrase and its manual's path
    (`ARCHITECTURE.md` §1.2, *The conventions…*).
-6. What the Concept Deliverer holds of it, derived from the manual: for a
-   skill, its own under `.claude/skills/`, in its own agent-scoped
+6. What the Concept Deliverer holds of it, derived from the manual: for an
+   Agent Skill, its own under `.claude/skills/`, in its own agent-scoped
    commit, with an entry in `.claude/decisions.md` when it changes
    how this repo's agent works. No registry entry: the Concept Deliverer
    receives no conventions (ADR-0042).
@@ -293,7 +311,7 @@ The manual reaches no agent: a maintainer reads it. The form of a
 manual is an Agent Rule, loading when a manual is read, so it is in view
 while one is worked; a manual written new is written without it
 (`docs/conventions/agent-arrangement/` §5.6, *Rules files*). The
-Foundation Line rides in the frontmatter of every shipped skill
+Foundation Line rides in the frontmatter of every shipped Agent Skill
 and Agent Rule, read by whoever opens the file, because a claim about
 what a file stands on has to travel with the file.
 
@@ -320,5 +338,5 @@ what a file stands on has to travel with the file.
 - The rule for every description: `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*.
 - What `foundation` holds for each kind of file: §1.3, *The Foundation Line*, above; that
   it travels with a copy, `docs/conventions/exchange/` §3.5, *The Foundation Line in a copy*.
-- A convention whose artifact is an Agent Rule, not a skill:
+- A convention whose Work Approach is an Agent Rule, not an Agent Skill:
   `docs/conventions/shapes/`.

@@ -157,7 +157,7 @@ foundation: the exchange convention
    Skill Template's header. The Skill Template stays a pinned copy: a change to
    it, such as a line every project needs, is an edit to the
    copy under rule 2. Filled values never go back to the Concept Deliverer
-   (CBC `docs/conventions/exchange/` §5.8, *Filling a Skill Template*).
+   (CBC `docs/conventions/exchange/` §5.8, *Agent Skill Templates*).
 
    When this project's decided constraints differ from what a
    Skill Template assumes, it is **off-template**:

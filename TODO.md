@@ -546,16 +546,16 @@
 - [ ] Write an Agent Rule that writes a skill or Agent Rule from its convention
       (2026-10-17, the reviewer).
       Context: the conventions manual says how a skill or rule is
-      written (`docs/conventions/conventions/` §1, *A convention's artifacts*), and nothing puts it in front of the
+      written (`docs/conventions/conventions/` §1, *A convention's Work Approaches*), and nothing puts it in front of the
       writer: a manual has `convention-manual.md`, a skill or rule
       has no such rule. An Approach on Trial writes freely, and its
       pieces are input: what the work needed. When an evaluation
       places one, the lasting form comes from the conventions manual: the manual by
       (`docs/conventions/conventions/` §2, *The Convention Manual*), each skill or
-      rule from it by (`docs/conventions/conventions/` §1, *A convention's artifacts*).
+      rule from it by (`docs/conventions/conventions/` §1, *A convention's Work Approaches*).
       Ideas:
       - an Agent Rule derived from the conventions manual's artifact part
-        (`docs/conventions/conventions/` §1, *A convention's artifacts*), as
+        (`docs/conventions/conventions/` §1, *A convention's Work Approaches*), as
         `convention-manual.md` is from its manual part
         (`docs/conventions/conventions/` §2, *The Convention Manual*), on `.claude/skills/`,
         `.claude/rules/` and `delivery/`.
@@ -804,12 +804,12 @@
       their own words, and drifted: deviate from a Skill Template,
       derive from what it implements, log it, expect a harvest,
       never bend a decided constraint to fit it. On 2026-10-28 it went to the Exchange Convention
-      (`docs/conventions/exchange/` §5.8, *Filling a Skill Template*) and the CBC Run's `delivered-copies.md`, chosen on
+      (`docs/conventions/exchange/` §5.8, *Agent Skill Templates*) and the CBC Run's `delivered-copies.md`, chosen on
       one Run Reading, with no CBC Run having lived it.
       Ideas:
       - (a) one skill states it; the others point.
       - (b) delivered copies: the Exchange Convention
-        (`docs/conventions/exchange/` §5.8, *Filling a Skill Template*) and the CBC Run's
+        (`docs/conventions/exchange/` §5.8, *Agent Skill Templates*) and the CBC Run's
         `delivered-copies.md`; today's choice.
       - (c) each Skill Template states it in its own header,
         where a CBC Run meets the choice.
@@ -817,7 +817,7 @@
       - weigh each by maintenance, readability, future-proofing and
         complexity.
       - check that every manual and shipped text that speaks of a
-        skill's templates agrees with the Exchange Convention (`docs/conventions/exchange/` §5.8, *Filling a Skill Template*) and
+        skill's templates agrees with the Exchange Convention (`docs/conventions/exchange/` §5.8, *Agent Skill Templates*) and
         `delivered-copies.md`,
         and that `delivery/README.md` and ADR-0008 still match.
       - check that each use says whose template it is: a skill's,

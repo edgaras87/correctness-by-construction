@@ -398,24 +398,24 @@ it (ADR-0051).
 They are the CBC Run's own from birth, not copies (§2.4, *The records' exception*), and this
 section does not apply to them.
 
-### 5.8 Filling a Skill Template
+### 5.8 Agent Skill Templates
 
-A Skill Template, a file in a skill's `templates/`, arrives pinned, with the rest of the
-skill. At use, the CBC Run copies it to the path the skill names and
+An Agent Skill Template, a file in an Agent Skill's `templates/`, arrives pinned, with the rest of the
+Agent Skill. At use, the CBC Run copies it to the path the Agent Skill names and
 fills it. The filled file is the CBC Run's own, as a record is (§5.7,
-*The records*), and may drop the Skill Template's header. The Skill
+*The records*), and may drop the Agent Skill Template's header. The Agent Skill
 Template stays the pinned copy. A change to it, such as a
 line every run needs or a comment that was wrong, is an edit to the
 copy under its rule (§5.1, *When a copy may be edited*). The filled
 values never come back: they are the CBC Run's decisions.
 
-A CBC Run whose decided constraints differ from what a Skill Template
-assumes is off-template. It derives from what the Skill Template
-implements, which the skill names. It records the deviation where
+A CBC Run whose decided constraints differ from what an Agent Skill Template
+assumes is off-template. It derives from what the Agent Skill Template
+implements, which the Agent Skill names. It records the deviation where
 its records table puts a decision, what it did instead and why
 (`docs/conventions/project-recording/` §13, *The records table*). It expects the
 deviation to come back as a change to the skill. It never bends a
-decided constraint to fit a Skill Template (ADR-0008).
+decided constraint to fit an Agent Skill Template (ADR-0008).
 
 ## 6. Up from the CBC Run
 

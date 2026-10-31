@@ -42,7 +42,7 @@ into the CBC Run's `.claude/shapes/`; the rest is the shapes manual's
 
 A skill's Skill Templates travel with the skill as pinned copies. How
 a CBC Run fills a Skill Template, and what it does when it deviates
-from one, is the Exchange Convention's (`docs/conventions/exchange/` §5.8, *Filling a Skill Template*).
+from one, is the Exchange Convention's (`docs/conventions/exchange/` §5.8, *Agent Skill Templates*).
 
 The method's own artifacts, such as `docs/system/`, which
 cbc-framing writes, sit beside the records in the CBC Run, not in place
