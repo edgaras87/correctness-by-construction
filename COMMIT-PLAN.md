@@ -146,12 +146,11 @@ rename grep. The Names that break 12c's rule are renamed in their
 group's commit, their entries and homes only: Run Ask, Run Reading,
 Run Birth, Run Briefing, Run Hand-off and Newborn Run take CBC Run,
 Approach Stage takes Approach on Trial, the Kill Shape and the
-Slice-Record Shape take their judged Names. Every entry, new or
-renamed, names the words CBC Runs born before it wrote, since their
-records keep them and a Run Reading reads them. The concept's 23
-entries, committed before this was decided, take theirs in a commit
-of their own, with the entry form in each glossary file's header.
-One commit per group, after its judging.
+Slice-Record Shape take their judged Names. No entry names the
+words older text wrote: a lowercase one would read as the Name, and
+the line would ship to every CBC Run born after. A Run Reading reads
+them through the Names table at its last commit. One commit per
+group, after its judging.
 
 **15. `docs: ADR-0078 accepted`**
 The final records commit: ADR-0078 Accepted, with what changed since
