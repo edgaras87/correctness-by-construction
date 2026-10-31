@@ -188,7 +188,8 @@ concept. Nothing that explains them; the explanation stays home.
 
 At birth, every file of each group. After it, only the copies: the
 Container Group's skills, Agent Rules and Approaches on Trial; the Method Group's and the Stack Group's
-skills, Agent Rules and Output Shapes; the concept. The rest of the Container Group —
+skills, Agent Rules and Output Shapes; each group's Glossary Names, in
+`docs/glossary/`; the concept. The rest of the Container Group —
 its records, the two entry files, the Decisions Log, the hygiene
 files — went once and is the CBC Run's (§2.4, *The records' exception*); a later delivery that
 carried it would land Record Stubs over what the CBC Run has written.

@@ -130,7 +130,7 @@ for p in sys.argv[1:]:
     n = re.sub(r"\n+---\n+## Decisions\n.*\Z", "\n", t, flags=re.S)
     if n != t: open(p, "w", encoding="utf-8").write(n)
 ' {} + 2>/dev/null
-git add .claude/skills .claude/shapes
+git add .claude/skills .claude/shapes docs/glossary
 git commit -m "chore: seed — method and stack skills, shapes, pin @ $bundle_pin"
 
 sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## The Plan Step Form/,$p' \

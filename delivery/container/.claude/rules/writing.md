@@ -40,7 +40,8 @@ commit messages, comments. How it reads, never what it says.
    but "KILL-2, the second charge for one order, fails".
 9. **Write a defined thing by its Glossary Name,** two or more
    words, owner or kind first, each word capitalized, exactly as the
-   project's glossary, `docs/glossary.md`, lists it: Agent Rule,
+   project's glossary, `docs/glossary.md`, or a delivered file under
+   `docs/glossary/` lists it: Agent Rule,
    Record Stub, Output Shape, Skill Template. A lowercase word is
    English and only English; no Markdown mark marks a Name. A
    numbered thing carries its owner and number, "delivered-copies

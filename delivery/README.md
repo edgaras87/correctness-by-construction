@@ -28,7 +28,8 @@ into the CBC Run's `.claude/shapes/`; the rest is the shapes manual's
   They never travel again.
 - **Pinned copies.** The container's convention skills, Agent Rules and
   Approach on Trial; the method's and the stack practice's skills,
-  Agent Rules and Output Shapes; and the concept, at `docs/concept/`
+  Agent Rules and Output Shapes; each group's delivered Glossary
+  Names, in `docs/glossary/`; and the concept, at `docs/concept/`
   (`docs/conventions/exchange/` §3.2, *What goes* and §3.3, *A group's place in the tree*). They land where the container
   claims nothing. The CBC Run may edit one in place, under the
   Exchange Convention's rule (`docs/conventions/exchange/` §5, *Editing a copy*); a newer one

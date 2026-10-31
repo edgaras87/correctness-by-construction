@@ -24,7 +24,8 @@ foundation: the exchange convention
      read up to, taken from the Delivery Note.
 
    One Delivery Pin covers everything delivered: the skills, Agent Rules, Output Shapes
-   and Approaches on Trial under `.claude/`, and `docs/concept/`. The concept chapters are
+   and Approaches on Trial under `.claude/`, `docs/concept/`, and the
+   delivered Glossary Names in `docs/glossary/`. The concept chapters are
    copies too. The records (`PLAN`, `TODO`,
    the devlog, the glossary) were delivered once as Record Stubs, and the entry file was
    composed once. All of them are this CBC Run's own, not copies, and
