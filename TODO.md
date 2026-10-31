@@ -569,26 +569,35 @@
                `.claude/approaches-on-trial/approach-evaluation.md`.
       See: devlog 2026-10-17, later, the skill rewrite.
 
-- [ ] Check each manual for Work Approach text: rules stated without
-      their why, or rules no Work Approach carries (2026-10-31, the
-      reviewer).
-      Context: since ADR-0078, a manual says what a way of working is,
-      how and why, and the Work Approaches made from it state the
-      rules, one sentence each (`docs/models/idea-to-output.md` §6.1,
-      *The manual's level*). Some manuals still state rules as an
-      Agent Rule would. Two found at the design's commit 5: facts-in-sync
-      §3.4 first listed its six rules with almost no why; the
-      conventions manual §1 holds the rules for writing an Agent Skill
-      or Agent Rule, and no Work Approach carries them to the writer.
+- [ ] Read text for its level in the chain, the Levels Finding Kind,
+      both ways across each boundary (2026-10-31, the reviewer).
+      Context: each level has its own job. An Idea Model states an
+      idea any repo adapts; a manual says what a way of working is, how
+      and why; the Work Approaches made from it state the rules, one
+      sentence each, and explain nothing (`docs/models/idea-to-output.md`
+      §6.1, *The manual's level*, ADR-0078). Text at the wrong level
+      breaks that. Found at the design's commit 5: facts-in-sync §3.4
+      first listed its six rules with almost no why; the conventions
+      manual §1 holds the rules for writing an Agent Skill or Agent
+      Rule, and no Work Approach carries them to the writer.
       Ideas:
-      - per manual, each rule-shaped passage: does it give its why,
-        and which Work Approach states it.
+      - the four cells: a model holding this repo's own rules; a
+        manual retelling its model's idea; a manual stating rules
+        with no why; an Agent Skill or Agent Rule explaining why.
+      - per passage: which level it belongs to, and whether the level
+        it belongs to already holds it.
       - conventions §1 is the item above, "Write an Agent Rule that
         writes a skill or Agent Rule from its convention".
       - a passage with no Work Approach: an Agent Rule is made, or the
-        passage stays as the manual's reason for a rule held elsewhere.
-      Trigger: the refinement of this repo closes.
-      See: ADR-0078.
+        passage stays as the manual's reason for a rule held
+        elsewhere.
+      - a Finding Kind of the next refinement, if one comes again
+        (`.claude/approaches-on-trial/refinement.md` §3, *Not known
+        yet*); ADR-0078 is the new rule that makes it due.
+      Trigger: the refinement of this repo closes, when whether a
+               refinement comes again is decided.
+      See: ADR-0078; `TODO-CONVERSATION-MEMORY.md` §28, *Text at the
+      wrong level of the chain*.
 
 - [ ] Rewrite the method's texts plain (2026-10-17, CBC Run 3's RETRO
       D2).

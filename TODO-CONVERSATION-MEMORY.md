@@ -1078,3 +1078,46 @@ Agent Rule's, checked by grep; a new Agent Skill takes a verb. The
 renaming, either way the tables show, waits until the CBC Runs built
 with the old names have been read: a TODO item, with this talk kept
 here.
+
+## 28. Text at the wrong level of the chain
+
+Item: "Read text for its level in the chain, the Levels Finding Kind,
+both ways across each boundary".
+
+### 2026-10-31
+
+#### What the reviewer asked
+
+At the design's commit 5, after facts-in-sync §3.4 was written: "do
+we have skill or rules for conventions and facts-in-sync? because
+what we have write now in them feels as approach. should we mark
+those as todo for later to check again and decide if we should have
+split into manual and approach?" Then, the item added: "do we also
+need to check if vica versa for approaches? what about `model ->
+convention` thing, do we need to check both side too? should we have
+this defined as approaches which we could use as refinements or
+what? like after some times, we do repo check and refinement where
+we check how text is writen, and do we need some updates, fixes or
+any other change (like the one we noticed on this change)?"
+
+#### What exists today
+
+- **The split, since ADR-0078:** a manual says what, how and why; its
+  Work Approaches state the rules and explain nothing.
+- **facts-in-sync** has Work Approaches: both one-home Agent Rules and
+  the Foundation Check. Its §3.4 first listed rules with almost no
+  why; it was rewritten with a reason per point (`96a4d82`).
+- **The conventions manual** has the Agent Rule for a manual's form;
+  its §1, the rules for writing an Agent Skill or Agent Rule, reaches
+  no writer but by reading the manual. TODO's "Write an Agent Rule
+  that writes a skill or Agent Rule from its convention" holds it.
+- **When a refinement comes again** is open in the refinement's own
+  text, judged at its close.
+
+#### What the reviewer took
+
+One item for the whole check: both boundaries of the chain, Idea Model
+and manual, manual and Work Approach, each read both ways. It is a
+Finding Kind, Levels, for the next refinement, due when this one
+closes and decides whether a refinement comes again. This talk kept
+here.
