@@ -131,7 +131,7 @@ delivered files below.
   exist, and read only at the gate to check what was made
   (`docs/models/idea-to-output.md` §2, *The kinds*;
   `docs/conventions/shapes/`). A particular one is named by its
-  output: the Kill Shape, the Slice-Record Shape. Not an Output
+  output: the Enemy Collision Kill Shape, the Slice-Record Shape. Not an Output
   Form, which is read while writing.
 - **Local Map** — a directory's `README.md` that says how the parts
   of that area relate (`docs/conventions/project-recording/` §8.6, *Local Maps*).
