@@ -770,7 +770,10 @@
         derived file changed against its foundation; a retelling
         whose host is itself a source; a CBC Run's id whose home changes;
         a shipped CBC line when our manual changes; a fact stated
-        only in history; a line with no Fact Reference.
+        only in history; a line with no Fact Reference; a reference
+        inside a living sentence about the past, after its section is
+        retitled: it takes the new title, since only history keeps an
+        old one (2026-10-31, ADR-0078's Context).
       - for each: what finds it, a grep or a read; which rule says
         so, by Fact Reference; what is re-read, the line, its
         paragraph or the whole file; what could still slip.
