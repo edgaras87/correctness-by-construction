@@ -107,7 +107,9 @@ one line per delivered group pointing at its file; the writing manual's
 
 **12b. `chore(agent): our writing rule names the files`**
 Our `writing.md`'s rule 9 names the glossary files, after the manual
-it follows.
+it follows; `exchange-deliver` copies `docs/glossary/` with the other
+pinned copies after birth, and lists it among the paths whose changes
+the Delivery Note carries.
 
 **13. `docs(temp): the Names table, <group> judged`** *(provisional)*
 One commit per group, in this order: the concept's ten, the method's,
