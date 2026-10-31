@@ -2894,6 +2894,200 @@ Questions the rule raised, each taken as proposed:
    Guarantee Erosion, the "by feature" going to its entry, since what
    erodes is the guarantee and features are its cause.
 
+**DECISION-19's Names table: the method's group.** Proposed
+2026-10-31 from the Method Group's files under `delivery/method/.claude/`,
+under writing rule 9 as it stands after ADR-0078's decision 12: a
+Name built on another carries it whole, and past 4 words, every word
+counted, a shorter true one is looked for; a hyphenated word counts
+as one. "English" means the word stays lowercase, its plain meaning
+ours. "Label" means a label inside its owner, keeping its case, never
+a Name. "One thing" means the word is another word for a thing that
+already has a Name, and is rewritten to it. The concept's 23 Names
+are in `delivery/method/docs/glossary/method.md` and are not repeated.
+Files: F `cbc-framing/SKILL.md`, FW `cbc-framing/references/cbc-framing-workflow.md`,
+WE `references/worked-example.md`, S `cbc-slice/SKILL.md`, SW
+`cbc-slice/references/cbc-slice-workflow.md`, SR
+`cbc-slice/references/system-readiness.md`; the Output Shapes under
+`shapes/` by their file's first word: kill, test, entry, record. Judged by the reviewer, 2026-10-31: every row, trigger and question's proposal taken.
+
+| # | Word today | What it means (file:line) | Proposed | Built on it | Why |
+|---|---|---|---|---|---|
+| | **The cbc-framing Agent Skill** | | | | |
+| 1 | stage 0 to stage 6 | one phase of framing's derivation (F 50-56, FW 30-36) | Agent Skill Stage, the shared Name; "Stage 3" a label | | one thing; a label keeps its case |
+| 2 | fold, FOLD-n | a definition-shaped concern folded into the first slice that consumes it, its checks riding along (FW 86, 320) | Invariant Slice Fold | Invariant Slice Fold Candidate | built on Invariant Slice, whole |
+| 3 | fold-candidate | a concern with no enemy, marked at stage 3 to become a fold (F 86, FW 262) | Invariant Slice Fold Candidate | | built on row 2, whole; 4 words |
+| 4 | concern | one item stage 6 sorts: kills with one proof obligation, or an enemy-less wording hole (FW 258-262, 300) | CBC Framing Concern | | covers both sources, so not built on the kill |
+| 5 | fold-reconciliation line, reconciliation line | the registry's line accounting every concern as slices and folds, absences included (F 94, 185; FW 322) | CBC Framing Reconciliation | | whole it would be 6 words; see trigger 1 |
+| 6 | the written zero | an absence stated in the reconciliation (F 186) | English | | plain words, defined where they stand |
+| 7 | slice surface | what stage 6 cuts: the slices and folds (F 56, FW 17, 298) | Invariant Slice Registry | | one thing |
+| 8 | operational test | two kills are two slices only if their evidence must create different adversity (F 92, FW 314, WE 178) | Invariant Slice Split Test | | says what it decides; 4 words |
+| 9 | theorem, definition | stage 6's two stamps on a concern (FW 300-309) | Label | | see question 3 |
+| 10 | the sort, the dedupe, the folds | stage 6's three passes (FW 305-323) | Label | | numbered parts of one stage |
+| 11 | hostage test | for each candidate possession: could someone else owning it break the promise? (F 51, 71; FW 127) | System Possession Test | | built on System Possession, whole; "hostage" a figure, rule 5 |
+| 12 | refusal | a candidate fact or responsibility deliberately not owned, written (F 72, FW 130) | System Refusal | System Refusal Test | the counterpart of System Possession |
+| 13 | mirror test, the mirror | can the promise stay true if this goes wrong elsewhere? Yes means refused (F 73, FW 129) | System Refusal Test | | built on row 12, whole; "mirror" a figure |
+| 14 | sketch-enemies, sketches, sketch-debt | rough enemies stage 1 runs on, a debt stage 2 pays (F 73, FW 131-137) | Enemy Sketch | | "enemy" English as in Enemy Fact; the debt is said in its entry |
+| 15 | probe | a re-scan of the census through a different lens (F 81, FW 192-196) | Enemy Census Probe | rows 16 to 18 | built on Enemy Census, whole |
+| 16 | lens | the angle a probe scans by; three, each mechanical (FW 193-210) | Enemy Census Probe Lens | | built on row 15, whole; 4 words |
+| 17 | probe log | each probe's lens, stamps and findings, recorded in LAYER-1-ENVIRONMENT (F 82, FW 225) | Enemy Census Probe Log | | built on row 15, whole; 4 words |
+| 18 | stamp, the three-stamp rule | one of three marks on every probe result: new fact, nothing new, out of scope (FW 212-216) | Enemy Census Probe Stamp | | built on row 15, whole; the rule is its entry |
+| 19 | saturation | the census's exit: two consecutive lenses find zero new facts (F 27, 81; FW 223) | Enemy Census Saturation | | built on Enemy Census, whole |
+| 20 | assumption hunt, silent singulars, silent successes, timeline stretched, resource lens | the three lenses and their moves (FW 198-210) | Label | | see question 4; whole Names would pass 5 words |
+| 21 | the audit checklist | the human's four questions to check the framer's census (FW 218) | Enemy Census Audit Checklist | | 4 words |
+| 22 | trust assumption, ASSUMPTION-n | a deliberate acceptance beside the facts, not defended (F 78, FW 82, 157) | Trust Assumption | | "trust" English |
+| 23 | fence, NOT-OURS-n | a written-out scope exclusion that visibly stops facts at stage 3 (FW 83, 233; kill 44-70) | Scope Exclusion | | the workflow's own phrase; "fence" a figure |
+| 24 | fence list, not-probed ledger, scope verdicts, the ledgers | the three lists the census's exit leaves (FW 231-246, WE 94) | English "list"; the items are rows 23, 25, 26 | | "ledger" a figure; whole Names would pass 5 words; see trigger 3 |
+| 25 | what the not-probed ledger names | a door the census did not examine, named (FW 237-240) | Enemy Census Gap | | built on Enemy Census, whole |
+| 26 | scope verdict, SYSTEM-BOUNDARY-n | a boundary question put as a named verdict: in, out, censused-and-fenced (FW 84, 241) | Scope Verdict | | "scope" English; its three values are labels |
+| 27 | runtime ground, the ground | where the system runs: the machine, the instances, the store, the clock, the size; the definition's block names it, the work after framing establishes it (F 80, 230; FW 172-190) | Runtime Ground | | the method defines it; see question 8 |
+| 28 | derivation doc, the derivation | `docs/system/framing/derivation.md`: how each stage ran, kept forever (F 98, 121) | CBC Framing Derivation | CBC Framing Derivation Appendix | built on CBC Framing, whole |
+| 29 | escape valve | an appendix beside the derivation, for bulky sweep output only (F 137) | CBC Framing Derivation Appendix | | built on row 28, whole; "valve" a figure beside Escape Hatch |
+| 30 | briefing | the problem as brought, committed unchanged at framing's start (F 100-105) | Run Briefing, the shared Name, CBC Run Briefing once renamed | | one thing: the container's entry is this text |
+| 31 | residue filter | an export never refers to the derivation's machinery (F 153, 227) | CBC Framing Export Filter | | built on CBC Framing Export, whole; 4 words; see question 6 |
+| 32 | agent language | words naming an Agent Skill, a workflow stage or the CBC Run's arrangement, refused in an export (F 156) | Agent Language | | "agent" English; defined where it stands |
+| 33 | logged return trip, logged revision, revision entry | a dated change to an export: what changed, why, what triggered it, during framing and after (F 60, 199; FW 54-58) | CBC Framing Export Revision | | one thing, three words today; 4 words |
+| 34 | draft line | a line on an export's top until the close (F 116) | English | | whole it would be 5 words, and "a draft line" says it plainly; see trigger 2 |
+| 35 | demonstration mode | framing with reasoning fully visible, teaching the moves; every verdict still the human's (F 30) | Demonstration Mode | | names the mode it is |
+| 36 | delegated-verdict mode | the human's verdicts handed to the agent by a recorded decision (F 37) | Delegated-Verdict Mode | | 2 words, the hyphen one |
+| 37 | joint work, the mode | the default: the agent derives, the human gives every verdict (F 22-35) | English | | plain words; rows 35 and 36 are the Names |
+| 38 | audience | who the claim is sold to, never a consumer of the running system (F 67, FW 107) | Falsifiable Promise Audience | | narrower than English; built on Falsifiable Promise, whole |
+| 39 | Exit, Hands down, Hands up, Residue | each stage's closing parts (FW 119-121, 248) | Label | | parts inside a stage |
+| 40 | tag | KIND-n, one spelling everywhere (FW 70-93) | English | | a label in plain words; each tag kind is a Name the CBC Run gives (F 109) |
+| 41 | seam | the line between two Responsibility Areas, drawn or noted-not-drawn (F 88, FW 276, 286) | Responsibility Area Seam | | built on Responsibility Area, whole |
+| 42 | division | a candidate Responsibility Area (F 87, FW 274) | English | | plain meaning |
+| 43 | walk, walker, framer | a framing run, and whoever runs it (F 30, WE 14) | CBC Framing; "framer" English | | one thing |
+| 44 | actor, the three negations (vanishes, duplicates, lies) | what a request touches beyond control, and how each fails (FW 144-147) | English; the negations Label | | plain meanings |
+| 45 | chosen-next, open, in-progress, closed | the registry's status values (F 182) | Label | | values in backticks, keeping their case |
+| 46 | presumption order, presumes | the order by what each proof takes as standing (FW 325) | English | | plain meaning, defined where it stands |
+| | **The cbc-slice Agent Skill** | | | | |
+| 47 | guarantee, GUARANTEE-n, strategy-free guarantee | one property, derived by attack, that the slice's invariant needs (S 79-82, SW 96-101) | Invariant Slice Guarantee | rows 48, 49 | see question 1 |
+| 48 | guarantee's block | one guarantee's section of the record (S 28, record 53) | Invariant Slice Guarantee Block | | built on row 47, whole; 4 words |
+| 49 | guarantee challenge | the attack on the invariant that yields the guarantees (S 79, WE 223) | Invariant Slice Guarantee Challenge | | built on row 47, whole; 4 words |
+| 50 | evidence test | a test that creates the adversity and reads the witness (S 135, test 7, 22) | Evidence Test | Evidence Test Shape | already the Output Shape's base; "evidence" English, see question 7 |
+| 51 | evidence criterion, EVIDENCE-n | what test would create a guarantee's adversity and show the invariant surviving (S 83, SW 104, record 76) | Evidence Criterion | | named before the test is built |
+| 52 | witness | the state read from outside, where the truth is stored, that shows whether the invariant held (FW 116, S 139, test 97-103) | State Witness | State Witness Reading | says what is read |
+| 53 | a reading | one read of the witness (S 138, test 97, 126) | State Witness Reading | | built on row 52, whole |
+| 54 | the red, red run, seen red | an evidence test run with its wall absent, failing on the witness, in a state that never lands in history (S 141-160, SW 150, record 187) | Red Run | Red Run Tree | "red" the test term; the conditions are the method's |
+| 55 | red tree | the working tree of a red run, where a race's pause may stand (S 156, SW 147) | Red Run Tree | | built on row 54, whole |
+| 56 | backstop | what stands behind a wall, seen catching at the red run or unproven (S 157, SW 150, record 187) | Structural Wall Backstop | | built on Structural Wall, whole |
+| 57 | the wall's own check | a test that sends a wall its refusal directly, or reads it where defined; not evidence (S 169, SW 166) | Structural Wall Check | | built on Structural Wall, whole; see question 9 |
+| 58 | tripwire | a test that pins a decided option, not the promise; not evidence (S 166, SW 159, test 25, 56) | Decision Test | | says what it guards; "tripwire" a figure |
+| 59 | structural owner | the one wall per guarantee (S 102) | Structural Wall | | one thing; concept chapter 02 |
+| 60 | correctness spec, the spec, the specification | Stage 1's output: invariant, guarantees, evidence criteria, adversity model (S 92, SW 103) | Correctness Specification | | one thing, three words today; see question 2 |
+| 61 | adversity model | the specification's part saying what attacks and how the evidence creates it (SW 104) | Adversity Model | | "adversity" English |
+| 62 | adversity class | contention, duplicate delivery, partial failure (S 44, SR 39-53) | Adversity Class | | a fixed set of kinds |
+| 63 | harness, adversity harness | the test machinery that can create the slice's adversity class, and fail (F 233, S 44-49, SR 39-63) | Adversity Harness | | the method defines what it must do; see question 8 |
+| 64 | readiness, readiness checklist, readiness gate | the six checks before a slice opens (S 31, SR 1-83) | System Readiness; "Stage 0" a label | | the file's own title; one thing |
+| 65 | the close | the moment a slice is closed in the registry with its answers (S 191, SW 179, record 55-57) | Invariant Slice Close | | see question 2 |
+| 66 | slice record, the record | one record per slice, written as the stages go (SW 32-69) | Invariant Slice Record | Invariant Slice Record Shape | built on Invariant Slice, whole |
+| 67 | escape-hatch hunt | Stage 2's search for paths around the wall (S 114, WE 242) | Escape Hatch Hunt | | built on Escape Hatch, whole |
+| 68 | standing guards | three watches named at the close, one per failure mode (S 222-226, SW 206-216) | Standing Guard; each named by the concept Name it watches | | FINDING-813's figures go; no new Name per guard |
+| 69 | provisionals, hand-ons | what a slice leaves provisional, and what it hands to later slices (S 192, 210; record 42) | English | | adjective and verb, rewritten as plain phrases |
+| 70 | the opening | Stage 1's start, where a question the framing never answered is decided (S 74, SW 47) | English, "Stage 1's start" | | see question 2 |
+| 71 | surface | what the guarantees need somewhere to live (S 119); the README as the exports' surface (F 204) | English | | two plain meanings; see question 6 |
+| 72 | door | where the adversity arrives (S 72, SW 129) | English | | plain meaning |
+| 73 | deviation, sign-off, working defaults, options weighed | (S 216, SW 218, record 88) | English; headings Label | | plain meanings |
+| 74 | trusted writer, trust list | a writer the definition trusts (S 115, SW 122) | English | | built in plain words on Trust Assumption |
+| | **The Output Shapes** | | | | |
+| 75 | registry entry, entry | one slice's entry in the registry (entry 132) | Invariant Slice Entry | Invariant Slice Entry Shape | "registry" dropped: see trigger 4 |
+| 76 | rider | a structural condition checked, never battle-tested, whose silent violation voids the evidence (entry 165) | Evidence Precondition | | says what it is; "rider" a figure; the field label goes with it in round 3 |
+| 77 | flag, flag riding | the adversity cannot be created the normal way, and what the evidence does instead (S 94-96, entry 167) | Adversity Flag | | names what is flagged |
+| 78 | Presumes, Judgment logged, Answered at close, Area, Kills covered | an entry's fields (entry 160-174) | Label | | fields of one entry |
+| 79 | possession, collision, case, death | the Kill Shape's words (kill 9-65) | the concept's Names; "case" and "death" English | | "death" is what dies, said plainly in round 3 |
+| 80 | `*Say:*` line | the line of real numbers under a kill or a claim (kill 72, record 69) | Label | | a field in its owner |
+| 81 | Skeleton, Illustration | an Output Shape's two layers (kill 24, test 32, record 24) | Label | | see question 6 for "skeleton" |
+| 82 | structural test | a test that reads the code (test 24) | Structural Wall Check | | see question 9 |
+
+Triggers fired, each taken as proposed:
+
+1. **CBC Framing Reconciliation (row 5).** Built whole, "the
+   registry's fold-reconciliation line" is the Invariant Slice
+   Registry Fold Reconciliation Line, 6 words, or the Invariant Slice
+   Fold Reconciliation Line, 5. Proposed: CBC Framing Reconciliation,
+   3: it accounts for every CBC Framing Concern, not only the folds.
+2. **The draft line (row 34).** The CBC Framing Export Draft Line, 5
+   words. Proposed: English; "a draft line" says it plainly.
+3. **The ledgers (row 24).** The Scope Exclusion Enemy Census Ledger,
+   5 words. Proposed: no Name for the lists; the items carry the
+   Names, and "ledger" goes as a figure.
+4. **The Registry Entry Shape (row 75).** The Invariant Slice
+   Registry Entry Shape, 5 words. Proposed: the Invariant Slice
+   Entry Shape, 4: an entry is an Invariant Slice's, and the registry
+   is where every entry stands.
+5. **The three lenses (row 20).** "The resource lens" built whole is
+   the Resource Enemy Census Probe Lens, 5 words. Proposed: the three
+   lenses and their moves are labels inside the Enemy Census Probe
+   Lens's entry.
+
+Questions the rule raised, each taken as proposed:
+
+1. **Two meanings of "guarantee".** The concept's System Guarantee is
+   a never-event against a named source (`docs/concept/00-cbc.md`);
+   cbc-slice's GUARANTEE-n is one of several properties the slice's
+   invariant needs, found by attack (S 79-82). Proposed: two Names,
+   System Guarantee and Invariant Slice Guarantee.
+2. **One name per cbc-slice stage (FINDING-815).** Proposed: the
+   stages keep their labels, Stage 1 specify-correctness to Stage 4
+   document; "the spec" and "the specification" become the
+   Correctness Specification, Stage 1's output; "the close" becomes
+   the Invariant Slice Close, the event at Stage 4's end; "the
+   opening" becomes "Stage 1's start".
+3. **"Definition" as a stage 6 stamp** clashes with System
+   Definition, "the definition" in the same files. Proposed: the
+   stamps become the labels "theorem" and "contract", since the
+   workflow calls a definition contract-shaped.
+4. **Labels or Names for parts inside one owner.** Proposed: the
+   three lenses and their moves, stage 6's three passes, each
+   stage's Exit, Hands down and Residue, an entry's fields, the
+   status values, a scope verdict's values, an Output Shape's
+   Skeleton and Illustration, and the `*Say:*` line are labels: they
+   keep their case where they stand and get no Name.
+5. **Figures renamed by what they do (rule 5).** Hostage test, mirror
+   test, fence, escape valve, tripwire, rider and ledger. Proposed:
+   the plain Names in rows 11, 13, 23, 29, 58, 76 and 24. The other
+   way keeps the known word with an owner: System Possession Hostage
+   Test, Scope Fence, Decision Tripwire, Evidence Rider. CBC Runs 4
+   to 6's records keep the old words either way.
+6. **One word, two meanings, in the same files.** "Residue" is stage
+   0's banked rejections (FW 120) and the filter's (F 153); "surface"
+   is the slices' cut, the code's minimum and the README; "skeleton"
+   is a service (SR 21) and an Output Shape's layer. Proposed: the
+   residue filter becomes the CBC Framing Export Filter and Residue
+   stays a label; "slice surface" becomes the Invariant Slice
+   Registry and "surface" stays English; "skeleton" stays English
+   and Skeleton a label.
+7. **Whether "evidence" is a Name.** The method gives it a narrow
+   meaning: a passing test that creates the adversity ("No evidence,
+   no closed slice", S 11). Proposed: English, its plain meaning
+   proof; the Names are Evidence Test and Evidence Criterion.
+8. **Harness, ground and bootstrap.** The method defines what the
+   ground and the harness must be (FW 172-190, SR 39-63), so Runtime
+   Ground and Adversity Harness are this group's; the stack's group
+   names how its Agent Skills build them. "The bootstrap" (F 231, SR
+   6) is the stack's cbc-bootstrap Agent Skill's work, and goes to
+   the stack's group with FINDING-832's "system bootstrapped".
+9. **A structural test and the wall's own check.** The Evidence Test
+   Shape lists "a structural test, which reads the code" (test 24);
+   cbc-slice's wall's own check "reads the wall where it is defined"
+   (S 170). Proposed: one thing, the Structural Wall Check; the
+   other way is two Names, the second the Code Rule Test.
+10. **The briefing is the Run Briefing.** The container's entry is
+    "the text that names the problem this project builds, read at
+    framing and committed unchanged", the file cbc-framing commits at
+    `docs/system/framing/briefing.md`. Proposed: one thing, written
+    by the shared Name, CBC Run Briefing once commit 14 renames it.
+
+Existing Names whose base this group changes:
+
+- **The Slice-Record Shape** (so in `docs/glossary.md`; the file
+  titles it the Slice Record Shape, `shapes/slice-record.md` line 5):
+  the Invariant Slice Record Shape, 4 words.
+- **The Registry Entry Shape:** whole, the Invariant Slice Registry
+  Entry Shape, 5 words, a trigger; proposed the Invariant Slice Entry
+  Shape, 4 words (trigger 4).
+- **The Evidence Test Shape:** unchanged, 3 words; its base, Evidence
+  Test, is row 50.
+
 **DECISION-20.** Rule 10's reach. Rests: FINDING-303, 368, 379, 380,
 454, 471, 472, 507, 517, 537, 596, 665, 666, 826, 827 and 922.
 - (a) The rule's letter: numbered sections and parts, in both
