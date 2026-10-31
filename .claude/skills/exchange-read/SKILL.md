@@ -68,7 +68,7 @@ Why the read is done so: (`docs/conventions/exchange/` §6.1, *Reading a CBC Run
    to its form, `.claude/rules/exchange-reading.md`: one line per
    edit, per Run Ask, per finding — what it is, where it is, and nothing
    decided yet. One question every Run Reading asks: what does the CBC Run
-   teach the worked example (`docs/conventions/exchange/` §6.3, *The Run Reading*)? The
+   teach the worked example (`docs/conventions/exchange/` §6.3, *The CBC Run Reading*)? The
    first line, written at step 2, is the Read-Through Commit the next Delivery Note
    will carry. One Run Reading per CBC Run, open at a time.
 

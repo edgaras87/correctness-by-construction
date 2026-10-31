@@ -75,7 +75,7 @@ The words of this page, each defined once:
 - **Refinement Layer** — a set of files fixed together. Refinement Layers go in an order
   that puts a source before what derives from it (§2.2, *List the files*).
 
-## 2. The Approach Stages
+## 2. The Approach on Trial Stages
 
 A map of the Approach Stages. Each section holds its rule.
 

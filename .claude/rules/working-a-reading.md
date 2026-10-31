@@ -9,7 +9,7 @@ foundation: practice, under the exchange convention
      looks like; this says how its list is worked. Written from
      three Run Readings of CBC Run 3. -->
 
-# Working a Run Reading
+# Working a CBC Run Reading
 
 **Governs:** what happens between `exchange-read` and
 `exchange-deliver` — how a Run Reading's list is worked until every
@@ -110,7 +110,7 @@ Run Reading is extended, by `exchange-read` again or by
 
 - **What a Run Reading looks like** — `.claude/rules/exchange-reading.md`.
 - **When a Run Reading opens, extends, closes, or is overtaken** —
-  `docs/conventions/exchange/` §6.3, *The Run Reading* and §6.4, *How a Run Reading closes*.
+  `docs/conventions/exchange/` §6.3, *The CBC Run Reading* and §6.4, *How a CBC Run Reading closes*.
 - **The CBC Run moving before the Delivery Note** — `exchange-deliver`, Stage 1,
   step 0.
 - **How a commit plan runs** — `commit-plan`.
