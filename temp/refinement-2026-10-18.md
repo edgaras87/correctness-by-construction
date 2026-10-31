@@ -3088,6 +3088,130 @@ Existing Names whose base this group changes:
 - **The Evidence Test Shape:** unchanged, 3 words; its base, Evidence
   Test, is row 50.
 
+**DECISION-19's Names table: the stack's group.** Proposed
+2026-10-31 from the Stack Group's files under
+`delivery/spring-postgres/.claude/skills/`, under writing rule 9 as
+it stands after ADR-0078's decision 12: a Name built on another
+carries it whole, and past 4 words, every word counted, a shorter
+true one is looked for; a hyphenated word counts as one. "English"
+means the word stays lowercase, its plain meaning ours; a technical
+term whose plain technical meaning is ours (Testcontainers, Flyway,
+a role, a migration, a schema) is English. "Label" means a label
+inside its owner, keeping its case, never a Name. "One thing" means
+the word is another word for a thing that already has a Name, and is
+rewritten to it. The concept's and the method's Names are in
+`delivery/method/docs/glossary/method.md`, the shared ones in
+`delivery/container/docs/glossary/container.md`, and are not
+repeated. Files: B `cbc-bootstrap/SKILL.md`, AS
+`cbc-bootstrap/references/app-structure.md`, BW
+`cbc-bootstrap/references/spring-boot-walkthrough.md`, HR
+`cbc-bootstrap/references/spring-harness-reference.md`, PC
+`cbc-bootstrap/references/spring-pom-convention.md`, I
+`infra-establish/SKILL.md`, EW
+`infra-establish/references/establishment-walk.md`, RS
+`infra-establish/references/postgres-role-split.md`, PW
+`infra-establish/references/postgres-setup-walkthrough.md`, V
+`infra-serve/SKILL.md`. Judged by the reviewer, 2026-10-31: every row and question's proposal taken.
+
+| # | Word today | What it means (file:line) | Proposed | Built on it | Why |
+|---|---|---|---|---|---|
+| | **The cbc-bootstrap Agent Skill** | | | | |
+| 1 | the bootstrap, bootstrap (as the work) | the work between CBC Framing and the first Invariant Slice: the stack settled, an empty running skeleton on the Runtime Ground, the Adversity Harness proven on one adversity (B 1-12; F 231, SR 6) | CBC Bootstrap | rows 3 to 8 | owner first, as CBC Framing; the method's table sent it here |
+| 2 | system bootstrapped | the CBC Bootstrap's one exit (B 9, HR 3) | One thing: the CBC Bootstrap's end; "Exit test" a label | | a milestone of the work, not a thing of its own (FINDING-832) |
+| 3 | requirements document, `bootstrap-requirements.md`, the requirements | Stage 2's contract: identity, capabilities, constraints, the ground's facts, the evidence owed, the exclusions (B 109-131, 197) | CBC Bootstrap Requirements | | built on row 1, whole |
+| 4 | the harness's one proven adversity | the one Adversity Class the Adversity Harness is proven on at the CBC Bootstrap, read from the framing's own words (B 66-79) | CBC Bootstrap Adversity Class | | built on row 1 and the Adversity Class, whole; 4 words |
+| 5 | probe, probe endpoint, contention probe, the probe pair | the scaffolding endpoint and test that prove the Adversity Harness creates the CBC Bootstrap Adversity Class; both die at the first Invariant Slice (B 98, 187; BW 184-196; HR 286-424) | CBC Bootstrap Probe; its endpoint and its test labels | | built on row 1, whole; "probe" alone clashes with the Enemy Census Probe |
+| 6 | step plan | Stage 3's ordered plan, five steps, each one change with its verification and commit (B 133-147) | CBC Bootstrap Step Plan | | built on row 1, whole; 4 words; kept apart from the shared Plan Step |
+| 7 | the exclusions | what the CBC Bootstrap does not build, each with its why (B 97-106, 186) | CBC Bootstrap Exclusion | | built on row 1, whole; "exclusion" alone now reads as the Scope Exclusion |
+| 8 | the stack evaluation, the stack decision | Stage 1's choice of the stack by fluency and audience (B 59-65, BW 21) | English | | plain words, defined where they stand |
+| 9 | initialization identity | group, artifact, base package, packaging, language version (B 81-83, 190) | Build Coordinates | | "identity" means a database login everywhere else; see question 2 |
+| 10 | runtime identity, the runtime role, runtime | the database role the running application connects as, and nothing else (B 64, 86, 92; RS 32; HR 133) | Label: the `runtime` role | | a role name inside the Database Role Split, row 33; see question 2 |
+| 11 | migrations home, one home | the one directory holding migrations, empty at the CBC Bootstrap (B 65, 89, 94; HR 128-161) | English: "the migrations directory" | | "home" is a fact's home elsewhere; see question 3 |
+| 12 | zero-applied assertion, migration-path test, `MigrationPathIT` | the test that proves the migration path runs and applied none at the CBC Bootstrap (B 89; HR 41, 200-284) | Migration Path Test | | HR §3's own title; "migration" English |
+| 13 | harness, evidence harness, the harness bases | the Adversity Harness as this stack builds it (B 4, 66, 87; HR 1-41) | One thing: Adversity Harness | | the method's Name |
+| 14 | the database base, the evidence tier | the harness's two layered test bases, `DatabaseIT` and `WebDatabaseIT` (HR 39-40, 45, 162-199) | Label: by class name | | parts inside one owner; "tier" has three senses (FINDING-852) |
+| 15 | the ground, established ground | the Runtime Ground as stood up and verified (B 2, 42, 49; I 9-14) | One thing: Runtime Ground | | the method's Name |
+| 16 | the skeleton, empty-but-running skeleton | the running application with no business behavior, wired to the Runtime Ground (B 3, 46; BW 35) | English | | as the method's table left "skeleton"; a walking skeleton is technical English |
+| 17 | capability, capability set | what the system must be able to do at the CBC Bootstrap, typically four (B 84-91; PC 21) | English | | plain meaning; the list is the CBC Bootstrap Requirements' §2 |
+| 18 | constraint (in the CBC Bootstrap) | a rule the code must keep, cited against the Infrastructure Contract (B 92-96) | English | | plain meaning; the ground's own is row 26 |
+| 19 | the log, the project's log, the CBC Run's own log | where a decision is recorded (B 62; AS 8, 63, 67; BW 23; HR 415) | English: "an ADR" | | FINDING-919: a CBC Run records decisions as ADRs |
+| 20 | executor | whoever writes the application code (AS 107; HR 23, 427, 470) | One thing: CBC Run | | FINDING-850 |
+| 21 | the builder | who reads the CBC Bootstrap Requirements and the Infrastructure Contract to build (B 61, 110; I 89) | English | | plain meaning |
+| 22 | certify, certified | Stage 5's check against the delivered state, member by member (B 172-200) | English | | plain meaning |
+| 23 | Exit test, exit records, Bound facts, Outcomes it realizes, Variation points | headings and closing parts inside their files (B 194, 215; HR 121, 442) | Label | | parts inside one owner |
+| 24 | problem area | what one package holds: everything that area needs (AS 40) | One thing: Responsibility Area | | see question 4 |
+| 25 | package-by-feature, classic layered, hexagonal, vertical slice, modular monolith | named architecture styles (AS 22, 85-100) | English | | technical English; see question 5 for "vertical slice" |
+| | **The infra-establish and infra-serve Agent Skills** | | | | |
+| 26 | Execution Environment, the environment decision | the local runtime host for infrastructure (EW 162; I 65; EW 21) | Execution Environment | | the walk's own Name (FINDING-896); the lowercase uses take it |
+| 27 | Infrastructure Service, the service set | a capability provided to the system (EW 164; I 72) | Infrastructure Service | rows 28 to 30 | the walk's own Name (FINDING-896) |
+| 28 | Infrastructure Service Constraint, constraint | a requirement or limit put on an Infrastructure Service, each naming its enforcement (EW 165; I 78) | Infrastructure Service Constraint | | the walk's own Name; 3 words |
+| 29 | not-provisioned list, exclusion | a service refused, with its why, in Stage 2's evaluation (I 74-77; V 26) | Infrastructure Service Exclusion; the list English | | built on row 27, whole; the items carry the Name, as the method's ledgers |
+| 30 | re-entry | a service added, changed or removed on an established Runtime Ground, by the same need-led evaluation as one logged decision (V 1-30; I) | Infrastructure Service Re-entry | | built on row 27, whole; 3 words |
+| 31 | the establishment, the walk, establishment walk | infra-establish's work, Stage 0 to Stage 7 (I 9-90; EW 1) | Infrastructure Establishment; the walk's sections Agent Skill Stages | row 32 | owner first; FINDING-897: "Stage 5" everywhere |
+| 32 | establishment log | `docs/infrastructure/establishment-log.md`, kept only by a repo without records (I 114, 124; V 21) | Infrastructure Establishment Log | | built on row 31, whole; 4 words |
+| 33 | role split, authority split, authority model | database authority as a grant-enforced property: `migrator` owns structure, `runtime` writes data (RS 1-45; HR 133; BW) | Database Role Split | | RS's title; "authority" see question 6 |
+| 34 | `migrator`, `runtime`, structure authority, data authority | the Database Role Split's two roles (RS 26, 32) | Label | | role names in backticks |
+| 35 | bootstrap identity | the admin login that runs the setup once and owns the database, never wired in (RS 42; PW 161) | Database Setup Identity | | "bootstrap" would mean the CBC Bootstrap; see question 1 |
+| 36 | bootstrap SQL | `infrastructure/bootstrap.sql`, the Database Role Split made real (PW 58; HR 128) | Label: by its path | | a file; see question 1 |
+| 37 | catalog check | real state queried against the model's claims, the expected result beside each query (I 83; PW 110) | Catalog Check | | the Stage 5 gate's own name |
+| 38 | behavioral check | the Infrastructure Service Constraint attempted and watched being refused, live (I 84; PW 117) | Behavioral Check | | its pair; "both ways" is the two together |
+| 39 | verify suite, verification suite | `infrastructure/verify-database-model.sql` (I 120; PW 73) | Label: by its path | | a file |
+| 40 | infrastructure contract | the builder-facing manual: identities, reachability, refusals, how schema changes are made (I 89, 140; V) | Infrastructure Contract | | used as a document |
+| 41 | operator manual | the human's stand-up-and-use manual, written from the lived setup (I 89, 148; B 43) | Operator Manual | | used as a document; not a Convention Manual |
+| 42 | lived default, rebuttable default | the choice a stack reference makes unless a demand or an environment fact defeats it: podman local containers, compose-driven; package-by-feature (I 1; EW 37; AS 20; V 44) | Stack Default | | "lived" is a coined adjective (FINDING-916); see question 7 |
+| 43 | standing knowledge, governing knowledge | a reference already written, used as the Stack Default (V 44; EW 79-116) | English: "the reference" | | FINDING-892 |
+| 44 | enforcement mechanism | what makes an Infrastructure Service Constraint hold: the database's grants, a config, a Structural Wall (I 78-81) | English | | plain meaning |
+| 45 | lever | what the evidence does to the ground: start several instances, kill one, freeze the store (I 68; EW 31-36) | English, rewritten as FINDING-882 proposes | | a figure; proven where the Adversity Harness is built |
+| 46 | witness read | reading the stored state from outside (PW 172) | One thing: State Witness Reading | | the method's Name |
+| 47 | the definition, the intent, the registry, framing artifacts | (I 27-36; EW 8-18) | One thing: System Definition, CBC Framing Intent, Invariant Slice Registry, CBC Framing Export | | the concept's Names |
+| 48 | door, real door | where the adversity arrives (B 85, 217; BW 190-222; HR 42-486) | English | | as the method's table row 72 |
+| 49 | lived, unlived, honestly empty, proof of life, world is up, decision surface, receipt, seam, two-seat, load-bearing | figures and coined adjectives (FINDING-830, 834, 844, 913 to 918) | English, rewritten as each finding proposes | | not Names; "receipt" and "seat" would read as Receipt Branch and Convention Seat |
+| 50 | stand up, reset path, grant boundaries, project-named schema, test companion, earning reason | (I; PW 142; RS 46, 55; PC 20-24) | English | | technical or plain meanings |
+
+Triggers fired:
+
+None. The longest Names are 4 words: the CBC Bootstrap Adversity
+Class, the CBC Bootstrap Step Plan and the Infrastructure
+Establishment Log.
+
+Questions the rule raised, each taken as proposed:
+
+1. **Two meanings of "bootstrap".** The cbc-bootstrap Agent Skill's
+   work (row 1) and the database's one-time setup: the bootstrap SQL
+   and the bootstrap identity (rows 35, 36). Proposed: CBC Bootstrap
+   for the work; the setup's identity becomes the Database Setup
+   Identity, and its file is written by its path. The other way keeps
+   "Database Bootstrap Identity", 3 words, with "bootstrap" in two
+   senses.
+2. **Three meanings of "identity".** A database login (the `runtime`
+   role, the Database Setup Identity), and the Maven project's
+   coordinates (row 9). Proposed: "identity" stays English for a
+   database login; the coordinates become Build Coordinates; the two
+   roles are labels by their names.
+3. **"Home" for the migrations directory.** One-home calls the place
+   a fact lives its home, and a CBC Run reads it so. Proposed:
+   English, "the migrations directory".
+4. **Whether a "problem area" is a Responsibility Area.** AS 40 puts
+   one package per problem area, "the package list reads as the
+   problem's table of contents". Proposed: one thing, Responsibility
+   Area; the other way is English, a package by feature.
+5. **"Vertical slice" beside the Invariant Slice.** AS 94 names an
+   architecture style. Proposed: English, written "vertical-slice
+   architecture", so "slice" never stands alone there.
+6. **Two meanings of "authority".** The concept's: which facts the
+   system is the single authority on (System Definition). The
+   Database Role Split's: which role may change structure or data.
+   Proposed: both English, each defined where it stands; the role
+   split's is always written with its role.
+7. **"Lived default".** Proposed: the Stack Default, the default a
+   stack's references carry; whether a CBC Run has lived it is said
+   in plain words. The other way keeps the known word: Lived Default.
+
+Existing Names whose base this group changes:
+
+- None. The shared Stack Overlay and Stack Group are built on
+  "stack", which stays English.
+
 **DECISION-20.** Rule 10's reach. Rests: FINDING-303, 368, 379, 380,
 454, 471, 472, 507, 517, 537, 596, 665, 666, 826, 827 and 922.
 - (a) The rule's letter: numbered sections and parts, in both
