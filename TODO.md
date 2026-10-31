@@ -565,8 +565,12 @@
       - each item ends one of three ways: met, naming where; still
         missing or wrong, becoming work; no longer applies, saying
         why the need is gone, not only the text it touched.
-      - the old words a CBC Run wrote are read through each Glossary
-        Name's entry, which names them.
+      - the old words a CBC Run wrote are read through the
+        refinement's Names table, under DECISION-19, at the commit
+        that last holds `temp/refinement-2026-10-18.md`; most Names
+        hold their old word, "slice" in Invariant Slice.
+      - a delivery to a CBC Run born before names the renames in its
+        Delivery Note, once, since its records keep the old words.
       Trigger: the Run Reading of CBC Run 4 opens. If its diff proves
                still usable as it stands, the item closes with nothing
                changed.

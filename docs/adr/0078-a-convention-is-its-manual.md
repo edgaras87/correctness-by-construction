@@ -216,8 +216,10 @@ The reviewer decided each part below as a question, 2026-10-31.
     Run Ask, Run Reading, Run Birth, Run Briefing, Run Hand-off and
     Newborn Run take CBC Run whole; Approach Stage takes Approach on
     Trial; the Kill Shape and the Slice-Record Shape take their judged
-    Names. Each renamed entry says what CBC Runs born before it write,
-    since their records keep the old word.
+    Names. No entry names the words older text wrote: a lowercase one
+    would read as the Name, against rule 9, and the line would ship to
+    every CBC Run born after. A Run Reading of a CBC Run born before
+    reads them through the Names table at its last commit.
 
 **What changes in part:** ADR-0069's decision 1, where a CBC Run's
 copy cited `CBC ADR-nnnn`: a delivered copy now carries no citation.

@@ -1246,3 +1246,30 @@ The refinement goes on, and the readings come after it. The way of
 reading waits as a TODO item, triggered by CBC Run 4's Run Reading.
 Every Glossary Name's entry names its old words, and `exchange-read`
 diffs `docs/glossary` too: both added to the design's commit plan.
+
+### 2026-10-31, later
+
+#### What the reviewer asked
+
+When the old words were staged into the concept's entries: "i dont
+see this as good idea. it also could mean plain english word. why we
+filling those?" Then: "remind we why we need this at all?"
+
+#### What the agent found
+
+- **The line breaks rule 9:** "Older text: "fact"" beside Enemy Fact
+  tells a reader a plain "fact" may be the Name.
+- **It serves one reading and ships forever:** only CBC Runs 4, 5 and
+  6 wrote the old words; every CBC Run born after would carry the
+  line in every entry.
+- **The need is mostly met already:** most Names hold their old word;
+  the Names table maps the rest and stays in git; a reading by needs
+  reads a word in its context; a CBC Run born before learns the
+  renames from its next Delivery Note.
+
+#### What the reviewer took
+
+No glossary entry names old words, the renamed ones included. A Run
+Reading reads them through the Names table at its last commit; a
+delivery to a CBC Run born before names the renames in its Delivery
+Note. The earlier part's last paragraph is reversed here.
