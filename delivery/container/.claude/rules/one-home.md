@@ -32,6 +32,11 @@ config. Where it lives, never how it reads.
 5. **When two copies are unavoidable,** make one the owner and the
    other its follower, and let a check compare them. Example: the
    version lives in the build file; the CHANGELOG follows it.
+6. **Cite a decision where its reader needs it.** A record cites it
+   inside the sentence; an Agent Skill, Agent Rule, Approach on Trial
+   or Output Shape this project writes cites it once, in its
+   *Decisions* footer, never in a sentence, as `ADR-nnnn`. A delivered
+   copy has none: its decisions are the Concept Deliverer's.
 
 ## Not a second home
 
@@ -48,3 +53,4 @@ comment is living text.
 - CBC ADR-0065 — one home is facts-in-sync's
 - CBC ADR-0070 — a retelling may stand beside its id, re-read when
   its home changes
+- CBC ADR-0078 — rule 6: a decision is cited where its reader needs it

@@ -53,6 +53,14 @@ sed -i "s/^## <YYYY-MM-DD>/## $(date +%F)/" \
 name=$(basename "$new_project_dir")
 sed -i "s/<working-name>/$name/g" \
     "$new_project_dir"/.claude/CLAUDE.md "$new_project_dir"/README.md
+(cd "$new_project_dir" && find .claude/skills .claude/rules .claude/shapes .claude/approaches-on-trial \
+  -name '*.md' -exec python3 -c '
+import re, sys
+for p in sys.argv[1:]:
+    t = open(p, encoding="utf-8").read()
+    n = re.sub(r"\n+---\n+## Decisions\n.*\Z", "\n", t, flags=re.S)
+    if n != t: open(p, "w", encoding="utf-8").write(n)
+' {} + 2>/dev/null)
 ```
 
 The trailing `/.` matters: `delivery/container/*` silently skips the
@@ -69,7 +77,10 @@ first heading: three records, one moment. The last fills the
 working name into the two entry files, which arrive inside the
 container rather than being written over Record Stubs. Every `sed`
 targets a placeholder and not a line number, so re-running the
-block is harmless. Installing by hand, fill the five placeholders
+block is harmless. The last command strips every copy's *Decisions*
+footer, which cites decisions the CBC Run cannot open; it cuts the
+`---` line and the section below it, and nothing else
+(`docs/conventions/exchange/` §3.8, *The footer at delivery*). Installing by hand, fill the five placeholders
 yourself before the agent's first session.
 
 **3. Create the repo and land the hygiene commit** — verbatim, the
@@ -110,6 +121,15 @@ git commit -m "chore: seed — the concept, pin @ $bundle_pin"
 for g in method spring-postgres; do
   cp -r "$bundle_dir"/delivery/$g/. .
 done
+# Their footers stay home, as the container's did in step 2.
+find .claude/skills .claude/rules .claude/shapes .claude/approaches-on-trial \
+  -name '*.md' -exec python3 -c '
+import re, sys
+for p in sys.argv[1:]:
+    t = open(p, encoding="utf-8").read()
+    n = re.sub(r"\n+---\n+## Decisions\n.*\Z", "\n", t, flags=re.S)
+    if n != t: open(p, "w", encoding="utf-8").write(n)
+' {} + 2>/dev/null
 git add .claude/skills .claude/shapes
 git commit -m "chore: seed — method and stack skills, shapes, pin @ $bundle_pin"
 

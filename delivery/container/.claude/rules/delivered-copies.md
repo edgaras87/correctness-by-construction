@@ -18,8 +18,8 @@ foundation: the exchange convention
 1. **Every file delivered here is a copy pinned at the Concept Deliverer's
    commit.** The Decisions Log's last delivery entry carries two
    numbers:
-   - the **Delivery Pin:** the Concept Deliverer's commit these copies equal, taken
-     from the Delivery Staging's name;
+   - the **Delivery Pin:** the Concept Deliverer's commit these copies equal, but for
+     its *Decisions* footers, taken from the Delivery Staging's name;
    - the **Read-Through Commit:** this CBC Run's own commit the Concept Deliverer last
      read up to, taken from the Delivery Note.
 
@@ -30,9 +30,10 @@ foundation: the exchange convention
    composed once. All of them are this CBC Run's own, not copies, and
    this file does not govern them.
 
-   A copy's *Decisions* footer names the Concept Deliverer's decisions it
-   rests on, as `CBC ADR-nnnn`; this CBC Run cannot open them. To go
-   against one, quote its line under *To the deliverer*.
+   A copy arrives without the Concept Deliverer's *Decisions* footer:
+   the decisions it rests on are the Concept Deliverer's, and this CBC
+   Run cannot open them. To go against a copy, quote the line you
+   disagree with under *To the deliverer*.
 
    **A copy is never renamed or deleted here.** Its delivered path
    is its identity for the Delivery Take. A renamed copy becomes two files at
