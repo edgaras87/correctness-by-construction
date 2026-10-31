@@ -86,7 +86,7 @@ Five chapters, `concept/00-cbc.md` first.
 
 How work is done here, and why each rule is as it is. None of it is
 CbC: the concept is about how a system is built, the conventions
-about how a repo is kept. What a convention is, and its two parts, is the Idea Model's
+about how a repo is kept. What a convention is, its manual and the Work Approaches made from it, is the Idea Model's
 (`docs/models/idea-to-output.md` §6, *A convention*); how they hand work to each
 other is the index, `docs/conventions/README.md`.
 

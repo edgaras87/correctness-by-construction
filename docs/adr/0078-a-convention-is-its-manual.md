@@ -20,7 +20,7 @@ round's work (`.claude/approaches-on-trial/refinement.md` §2.7,
 - **DECISION-32,** raised by the reviewer: a convention is its
   manual's level. The Idea-to-Output Model had a convention as two
   texts, its manual and its artifacts
-  (`docs/models/idea-to-output.md` §6.1, *Two texts*), and so spanned
+  (`docs/models/idea-to-output.md` §6.1, *The manual's level*), and so spanned
   two levels of its own chain. With it, DECISION-24 and 27: an agent
   part is always named with its kind, "the commit-plan manual", "the
   commit-plan Agent Skill".

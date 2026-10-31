@@ -140,20 +140,18 @@ waits for a second Concept Repo.
 
 ## 6. A convention
 
-### 6.1 Two texts
+### 6.1 The manual's level
 
-A convention is a way of working written down once, as two texts
-kept apart:
+A convention is the Canonical Description of a way of working: its
+manual. The manual says what the way of working is, how it works and
+why, with the decisions behind it. It is written for a person, and
+for whoever keeps the convention.
 
-- **its manual,** a Canonical Description: what the way of working is, how
-  it works and why, with the decisions behind it. Written for a
-  person, and for whoever keeps the convention.
-- **its artifacts,** the Work Approaches made from the manual: the
-  skills, Agent Rules and forms a project acts on. They state the rules,
-  one sentence each, and explain nothing.
-
-A project holds the artifacts. The manual stays with whoever keeps
-the convention.
+The Work Approaches made from it sit one level down, as for any
+Canonical Description (§2, *The kinds*): the Agent Skills, Agent Rules
+and Output Forms a project acts on. They state the rules, one
+sentence each, and explain nothing. Each names the manual in its
+Foundation Line.
 
 ### 6.2 What a convention asserts
 
@@ -165,6 +163,20 @@ project's records live.
 What falsifies it: a project ignores a convention, gives no reason,
 and comes to no harm. That convention is one nobody owes anything
 to: a method filed in the wrong place.
+
+### 6.3 A convention and the concept
+
+Both are Canonical Descriptions with Work Approaches below them. They
+differ in four things:
+
+| | A convention | The concept |
+|---|---|---|
+| Its description | stays with whoever keeps the convention | copied whole into each project born from it (§5, *An Idea Model and a concept*) |
+| What a project holds | the Work Approaches only | the description, and the Work Approaches made from it |
+| What it asserts | rules: the work may break one, with a reason it gives (§6.2, *What a convention asserts*) | a method the work follows; a project edits its copy only from a mistake lived (§5, *An Idea Model and a concept*) |
+| A version | none (ADR-0039) | versioned as a whole (ADR-0039) |
+
+A project holds no convention, only the Work Approaches made from one.
 
 ## 7. One chain here
 
