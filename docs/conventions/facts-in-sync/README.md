@@ -209,26 +209,35 @@ Placing an Approach on Trial into a convention is such a move
 ### 3.4 A decision citation
 
 A text that rests on a decision cites the ADR that took it. The ADR
-is the home of the why, so a citation is a kind of Fact Reference,
-and one rule holds for it in both Convention Seats:
+is the home of the why, so a citation is a kind of Fact Reference.
+Where it goes depends on who reads the text, and the same holds in
+both Convention Seats:
 
-1. **A manual cites a decision inside its sentences,** where it
-   explains the why.
-2. **A record does the same.**
+1. **A manual cites a decision inside its sentences.** Its reader
+   asks why, and the citation stands beside the claim it backs.
+2. **A record does the same.** A record tells what is or what
+   happened, and its reader follows the citation where it stands.
 3. **A Work Approach lists the decisions it rests on once,** in a
    footer headed *Decisions* below a `---` line, and never inside a
-   sentence: an Agent Skill, an Agent Rule, an Approach on Trial, an
-   Output Shape. A footer line names the section it backs, unless it
-   backs the whole file.
+   sentence. Its reader acts on the rule at the moment of work, and a
+   citation there gives nothing to act on. The footer keeps the why
+   one look away for whoever changes the file. A footer line names
+   the section it backs, unless it backs the whole file, so a change
+   to a section finds its decision.
 4. **Each Convention Seat cites its own decisions as `ADR-nnnn`.** A
-   CBC Run's own Work Approaches cite its own ADRs. A decision this
+   seat can open only its own ADRs, and both number theirs from
+   0001, so a bare number means the reader's own. A decision this
    repo inherited is adopted before anything here cites it
-   (ADR-0038). Another repo's decision carries its Repo Tag
+   (ADR-0038): a citation points at a decision this repo holds.
+   Another repo's decision carries its Repo Tag
    (`docs/conventions/project-recording/` §3.5, *Numbers across repos*).
-5. **A copy we deliver has its footer stripped at delivery,** so a
-   CBC Run reads no pointer it cannot follow. The strip is the
-   Exchange Convention's (`docs/conventions/exchange/`).
-6. **A Record Stub and an Agent Skill Template cite nothing.**
+5. **A copy we deliver has its footer stripped at delivery.** A CBC
+   Run cannot open our ADRs, so our footer is a pointer it cannot
+   follow. We keep it, since we are the ones who change the file. The
+   strip is the Exchange Convention's (`docs/conventions/exchange/`).
+6. **A Record Stub and an Agent Skill Template cite nothing.** The
+   project fills them, and a citation of ours would become a line of
+   its own record that points at nothing it can open.
 
 *Its story: ADR-0078.*
 
