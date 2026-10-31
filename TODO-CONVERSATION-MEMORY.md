@@ -1121,3 +1121,58 @@ and manual, manual and Work Approach, each read both ways. It is a
 Finding Kind, Levels, for the next refinement, due when this one
 closes and decides whether a refinement comes again. This talk kept
 here.
+
+## 29. Two checks on text kept true
+
+Item: "Decide which ideas here are Idea Models".
+
+### 2026-10-31
+
+#### What the reviewer asked
+
+At the design's commit 5d, reworded at the reviewer's request: "We
+wrote the Idea-to-Output Model so that our texts do not become false
+over time. A line written today can stop being true later, when other
+texts change. We want the texts never to contradict each other. Each
+carries a reference where it needs one, so that when one place
+changes, the others are adapted and the whole picture stays true. We
+cannot be sure this holds, so we run whole-repo refinements, and what
+we just found is one of their results. A refinement checks that the
+repo still holds true, and also finds what was missed. When we find a
+miss, we can find why it was missed, and improve how we keep the
+texts true so that it does not happen again. So a refinement is a
+second wall. The first is the rules we follow at each change; when
+something slips past them, a full read of the repo catches it. Is
+this right? What am I missing, and what could be done better? Will it
+hold on maintenance, readability, future-proofing and complexity?
+Where, how and when should we define it?" Then: "Should it have an
+Idea Model of its own, or be a new section of one we have?"
+
+#### What exists today
+
+- **The first check has four layers:** the Foundation Check and
+  one-home rule 6 at each commit; a commit plan's sweep and look back
+  at its close; a Plan Step's close items; the reviewer at every
+  boundary, whose questions caught four of the day's slips.
+- **The second is the refinement,** an Approach on Trial. Its stated
+  job is old text meeting a new rule; catching misses is a second job.
+  Most of Refinement Round 3's 644 findings are text older than
+  writing rules 9 to 11.
+- **What was missing:** a finding's cause, so a miss teaches the first
+  check; the scripted checks, rebuilt in three sessions and never
+  kept; one place that shows the two checks together. A test of the
+  first check before it fails is TODO's "Test Fact References and
+  foundations as a whole".
+- **Weighed on four questions:** maintenance holds once each miss gets
+  its cause; readability not yet, the checks spread over five texts
+  and three TODO items; future-proofing partly, since full reads grow
+  with the repo; complexity low, every piece existing.
+
+#### What the reviewer took
+
+A cause for every finding from Refinement Round 3's close read on, as
+the refinement's own change (`fc4efe0`); the two-check view
+in the refinement's *Not known yet*, judged at its close with where it
+is written. Whether the idea is an Idea Model, a section of the
+Idea-to-Output Model or of a one-home model, is this item's, due at
+the same close. This talk kept here.

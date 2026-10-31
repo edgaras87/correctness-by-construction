@@ -723,9 +723,15 @@
         set of records answers; how each Convention Seat adapts it, as the
         refinement's DECISION-12 map shows. Weighed against the Idea-to-Output Model, which holds part of
         it (`docs/models/idea-to-output.md` §2, *The kinds*).
+      - the two checks on text kept true: the checks at each change,
+        a refinement after, and a finding's cause the way back. A
+        section of the Idea-to-Output Model, with its Chain Links and
+        its way up, or with the one-home idea if that becomes a model.
       Trigger: the refinement's close, once facts-in-sync, whose
                subject is the first idea, has lived through Refinement Round 2.
-      See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.
+      See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1;
+      `TODO-CONVERSATION-MEMORY.md` §29, *Two checks on text kept
+      true*.
 
 - [ ] Decide whether an Idea Model ships to a CBC Run (2026-10-24, the
       reviewer).
