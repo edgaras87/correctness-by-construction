@@ -51,7 +51,7 @@
 - **Output Shape** — a presumed output, written from outputs that
   exist and read only at a Plan Step's closing gate
   (`.claude/rules/shapes-lifecycle.md`). A particular one is named
-  by its output: the Kill Shape.
+  by its output: the Enemy Collision Kill Shape.
 - **Agent Skill** — a file under `.claude/skills/<name>/`, its
   `SKILL.md` and what it references, read when its moment comes;
   always written with its kind: the commit-plan Agent Skill.

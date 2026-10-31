@@ -2,7 +2,7 @@
 foundation: practice, under the shapes convention
 ---
 
-# The Kill Shape
+# The Enemy Collision Kill Shape
 
 **Governs:** how a kill is written in the definition's collisions
 layer: one way the promise can break, found by setting one fact
