@@ -73,11 +73,12 @@ compares two stripped copies; `writing.md`'s rule 9 names Agent Skill Template;
 manual's wording. An `agent` commit, apart from the records.
 
 **8. `fix(delivery): the seed and shipped rules strip`**
-The Pure Seed strips footers as it copies each group; the container's
-one-home Agent Rule takes the citation rule; the delivered-copies
-Agent Rule's rule 1 says a copy carries no footer, and its rule 8
-says Agent Skill Template; the container's `writing.md` names Agent
-Skill Template, as ours does.
+The Pure Seed strips every copy's footer as it copies the container
+and the groups; the container's one-home Agent Rule takes the citation
+rule, from the CBC Run's side; the delivered-copies Agent Rule's rule 1
+says a copy arrives without our footer. The shipped renames to Agent
+Skill Template, rule 8's bold lead among them, quoted in 17 places, are
+round 3's work, with each file's findings (ADR-0078, decision 11).
 
 **9. `chore(agent): citations move to footers`**
 The citation script, run over living text, lists every citation
