@@ -3212,6 +3212,77 @@ Existing Names whose base this group changes:
 - None. The shared Stack Overlay and Stack Group are built on
   "stack", which stays English.
 
+**DECISION-19's Names table: the Agent Model's group.** Proposed
+2026-10-31, under writing rule 9 as the three groups before it. Three
+parts: the Agent Model's own words, `docs/models/agent.md` (AM); the
+Names the refinement's decisions gave, DECISION-23 and 32; and the
+Names 12c's whole-Name rule renames (ADR-0078, decision 12). "Ours"
+or "shared" says which glossary holds the entry: `docs/glossary.md`
+only, or also `delivery/container/docs/glossary/container.md`.
+FINDING-507's decline reverses: the six channel titles take their
+Names, with the rename grep. Judged by the reviewer, 2026-10-31:
+every row and question's proposal taken.
+
+| # | Word today | What it means (home) | Proposed | Built on it | Why |
+|---|---|---|---|---|---|
+| | **The Agent Model's words** | | | | |
+| 1 | channel | how text reaches the agent's context window, by when it fires and what it guarantees (AM §4) | English | rows 2 to 7 | its plain meaning, a way a message travels; see question 1 |
+| 2 | ambient | entry files loaded at session start (AM §4.1) | Ambient Channel | | the model's word, now a Name; §4.1 retitled |
+| 3 | pulled | a file the agent reads because it decided to (AM §4.2) | Pulled Channel | | as row 2 |
+| 4 | pushed | text put in context at a moment the agent did not choose (AM §4.3) | Pushed Channel | | as row 2 |
+| 5 | told | a human says it in the session (AM §4.4) | Told Channel | | as row 2 |
+| 6 | observed | the results of commands the agent runs (AM §4.5) | Observed Channel | | as row 2 |
+| 7 | installed | files that work by existing, delivering nothing to the window (AM §4.6) | Installed Channel | | the model counts it the sixth; as row 2 |
+| 8 | the gate | enforcement outside the text: a hook, CI, a human review (AM §7) | Enforcement Gate | | "gate" has a second meaning; see question 2 |
+| 9 | binding | one tool's mechanisms for the channels and the gate, Layer 2 (AM §10) | Tool Binding | | owner first; §10 retitled *The Tool Bindings* |
+| 10 | Layer 1, Layer 2 | the model's vendor-neutral layer and the bindings' layer (AM opening, §10) | Label | | see question 4 |
+| 11 | context window, role | everything the agent knows now; the harness's three roles (AM §5) | English | | technical English |
+| 12 | write-back | what the agent leaves in the repo (AM §2, §6) | English | | technical English: writing back to the store that lasts |
+| 13 | claim, A1, W2, S1, G1 | a behavioural statement with its status and refutation condition; its id (AM §12) | English; the ids Label | | plain meaning; the ids keep their case |
+| 14 | the repo | the only durable memory (AM §2) | English | | plain meaning |
+| | **The Names the decisions gave** | | | | |
+| 15 | entry file | the file a tool loads at session start, `CLAUDE.md` (AM §4.1) | Entry File, shared | | DECISION-23; 107 uses |
+| 16 | living text | text that is kept true, as opposed to history (`docs/conventions/facts-in-sync/` §1) | Living Text, shared | | DECISION-23; the container's one-home Agent Rule uses it |
+| 17 | receipt branch | the branch a delivery lands on, so the branch is its manifest (ADR-0018) | Receipt Branch, ours | | DECISION-23; see question 3 |
+| 18 | the base | the stack-agnostic hygiene files, beside the Stack Overlays (`docs/conventions/repo-hygiene/`) | Hygiene Base, ours | | DECISION-23 |
+| 19 | skill | a file under `.claude/skills/<name>/` | Agent Skill | | DECISION-32; entered at commit 4 |
+| | **The Names the whole-Name rule renames** | | | | |
+| 20 | Run Ask | a line in a CBC Run's backlog addressed to us | CBC Run Ask, shared | | built on CBC Run, whole |
+| 21 | Run Reading | us reading a CBC Run since we last did (`docs/conventions/exchange/` §6.3) | CBC Run Reading, ours | | as row 20; see question 5 |
+| 22 | Run Birth | a CBC Run's first state | CBC Run Birth, ours | | as row 20 |
+| 23 | Run Briefing | the text naming the problem a CBC Run builds | CBC Run Briefing, shared | | as row 20 |
+| 24 | Run Hand-off | the text a Newborn Run's agent reads to begin | CBC Run Hand-off, shared | | as row 20 |
+| 25 | Newborn Run | a CBC Run at its birth | Newborn CBC Run, ours | | as row 20 |
+| 26 | Approach Stage | one phase of an Approach on Trial | Approach on Trial Stage, ours | | built on Approach on Trial, whole; "approach" alone is also Work Approach's |
+
+Questions the rule raised, each taken as proposed:
+
+1. **Whether "channel" is English.** Its meaning here is the plain
+   one, a way a message travels, so the six Names are Ambient
+   Channel to Installed Channel. The other way is a Name, Agent
+   Channel, and the six built on it whole: Ambient Agent Channel, 3
+   words each.
+2. **Two meanings of "gate".** The Agent Model's is enforcement
+   outside the text; a Plan Step's is its exit criteria (`PLAN.md`,
+   *Gate*), 67 uses of "the gate" between them. Proposed: two Names,
+   Enforcement Gate and Plan Step Gate, the second ours and shared;
+   each use is read by hand in round 3's work.
+3. **Receipt Branch's home.** ADR-0018 holds the fact and no manual
+   does; DECISION-23 said the Exchange Convention gains it. Proposed:
+   the exchange manual gains one sentence in this group's glossary
+   commit, so the entry points at a living home.
+4. **Layer 1 and Layer 2 beside the System Layer and the Refinement
+   Layer.** Proposed: labels inside the Agent Model, written "the
+   Agent Model's Layer 1" outside it.
+5. **The Run family's homes are titles.** Exchange §6.3 *The Run
+   Reading* and §6.4 *How a Run Reading closes*, the exchange-reading
+   and working-a-reading Agent Rules' titles, and the refinement
+   Approach on Trial's §2 *The Approach Stages* hold the old Names.
+   Proposed: each retitled in this group's commits, *The CBC Run
+   Reading*, *How a CBC Run Reading closes*, *The Approach on Trial
+   Stages*, with the rename grep; the other uses wait for round 3's
+   work.
+
 **DECISION-20.** Rule 10's reach. Rests: FINDING-303, 368, 379, 380,
 454, 471, 472, 507, 517, 537, 596, 665, 666, 826, 827 and 922.
 - (a) The rule's letter: numbered sections and parts, in both
