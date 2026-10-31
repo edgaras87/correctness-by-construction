@@ -3141,6 +3141,12 @@ skill a Work Approach.
   exchange-read and exchange-deliver already are. Renaming an Agent
   Skill reaches every CBC Run that holds it; renaming a manual moves
   its folder and every Fact Reference to it, on our side only.
+- Narrowed by the reviewer at the design's question 8, 2026-10-31:
+  the five shared names stay for now, kept apart by the kind word; a
+  new name never repeats one already used, checked by grep, and a new
+  Agent Skill takes a verb. The renaming is TODO's "Rename the
+  manuals, Agent Skills and Agent Rules that share a name", due when
+  the Run Readings of CBC Runs 4, 5 and 6 have closed.
 
 ### Met in round 3, of other kinds
 

@@ -18,7 +18,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-10-30.
+     Last touched: 2026-10-31.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
@@ -1032,3 +1032,49 @@ commit. The six old places as one TODO item, due in the pass that
 takes words and titles by Refinement Layer, since it rewrites those
 files; not fixed in the plan for round 3's rule check, which would
 have widened it past rule 9.
+
+## 27. Shared names of conventions and approaches
+
+Item: "Rename the manuals, Agent Skills and Agent Rules that share a
+name".
+
+### 2026-10-31
+
+#### What the reviewer asked
+
+At the design's question 8, after the agent recommended renaming
+the five manuals: "now i confused and thinking maybe we should leave
+that names can be same? we kind of solved by how we refer, by adding
+suffix, doent we? what else is wrong if we leave the same names?
+could we bring more clarity by having different names? can u show
+examples how we could rename both ways … should we bring rules how
+we name conventions and how we name approaches, like different
+grammar, expression or something like that?" Then: "show me others
+too how could look after renaming with those rules".
+
+#### What exists today
+
+- **The kind word, always:** "the commit-plan manual", "the
+  commit-plan Agent Skill" (the refinement's DECISION-24 and 27).
+  Reading is no longer ambiguous.
+- **What stays wrong:** a grep for a shared name finds the manual,
+  the Agent Skill, the `foundation:` lines and the paths together;
+  history and the CBC Runs' records say the bare name and are never
+  reworded.
+- **The grammar, tried on every name:** all 12 manuals already fit
+  "a subject, a noun", and all 10 Agent Rules fit "what it governs,
+  a noun", which cannot part a manual from an Agent Rule. Agent
+  Skills follow no one pattern: subject and act (exchange-read,
+  infra-establish), act and subject (apply-retrospective), a noun
+  (commit-messages). A strict "verb first" renames 11 of 12; a loose
+  "has a verb" renames 3 and lets commit-plan through, since it
+  reads as a noun or as subject and act.
+
+#### What the reviewer took
+
+The current names stay, the five shared ones too. A rule for new
+names: a new name never repeats a manual's, an Agent Skill's or an
+Agent Rule's, checked by grep; a new Agent Skill takes a verb. The
+renaming, either way the tables show, waits until the CBC Runs built
+with the old names have been read: a TODO item, with this talk kept
+here.

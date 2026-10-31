@@ -516,6 +516,33 @@
       Trigger: the refinement of this repo closes.
       See: `temp/refinement-2026-10-18.md`, DECISION-20 (`1aa928c`).
 
+- [ ] Rename the manuals, Agent Skills and Agent Rules that share a
+      name (2026-10-31, the reviewer).
+      Context: five names are shared: commit-messages, commit-plan,
+      visual-comparison and retrospective, each a manual and an Agent
+      Skill; writing, a manual and an Agent Rule. Writing the kind
+      word always keeps them apart in reading (the refinement's
+      DECISION-24 and 27), but a grep still finds both. CBC Runs 4, 5
+      and 6 were built with these names and their Run Readings are
+      open: renamed first, their records would be read in names our
+      texts no longer use. New names follow the naming rule of the
+      refinement's design, ADR-0078 when written.
+      Ideas:
+      - rename the manual, by its subject: commit-message-form,
+        change-sets, diagram-choice, looking-back, plain-writing.
+      - or rename the Agent Skill or Agent Rule, by its act:
+        write-commit-message, plan-commits, compare-diagrams,
+        hold-retrospective, write-plainly; four ship, so every CBC
+        Run gets new folders and commands.
+      - a strict "verb first" grammar would rename 11 of the 12
+        Agent Skills; a loose one 3, and lets commit-plan through.
+      - no grammar parts a manual from an Agent Rule: both are nouns.
+      Trigger: the Run Readings of CBC Runs 4, 5 and 6 have closed. A
+               CBC Run born before then is built with the old names
+               and joins them.
+      See: `TODO-CONVERSATION-MEMORY.md` §27, *Shared names of
+      conventions and approaches*.
+
 - [ ] Write an Agent Rule that writes a skill or Agent Rule from its convention
       (2026-10-17, the reviewer).
       Context: the conventions manual says how a skill or rule is
