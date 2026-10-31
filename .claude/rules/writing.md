@@ -47,7 +47,8 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
    carries it whole, however long it gets: Agent Skill Template, never
    Skill Template. Past 4 words, every word counted, look for a
    shorter true Name before taking it; when none is found, the long
-   Name stands. A lowercase word is English and
+   Name stands. A hyphenated word counts as one, toward the two and the 4:
+   "never-event" is one word. A lowercase word is English and
    only English; no Markdown mark marks a Name. A numbered thing
    carries its owner and number, "working-a-reading rule 2", "the
    walk's step 3"; a label inside its owner keeps its case, "Step 0";
