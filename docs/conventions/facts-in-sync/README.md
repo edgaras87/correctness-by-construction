@@ -206,6 +206,32 @@ Placing an Approach on Trial into a convention is such a move
 
 *Its story: devlog 2026-10-19.*
 
+### 3.4 A decision citation
+
+A text that rests on a decision cites the ADR that took it. The ADR
+is the home of the why, so a citation is a kind of Fact Reference,
+and one rule holds for it in both Convention Seats:
+
+1. **A manual cites a decision inside its sentences,** where it
+   explains the why.
+2. **A record does the same.**
+3. **A Work Approach lists the decisions it rests on once,** in a
+   footer headed *Decisions* below a `---` line, and never inside a
+   sentence: an Agent Skill, an Agent Rule, an Approach on Trial, an
+   Output Shape. A footer line names the section it backs, unless it
+   backs the whole file.
+4. **Each Convention Seat cites its own decisions as `ADR-nnnn`.** A
+   CBC Run's own Work Approaches cite its own ADRs. A decision this
+   repo inherited is adopted before anything here cites it
+   (ADR-0038). Another repo's decision carries its Repo Tag
+   (`docs/conventions/project-recording/` §3.5, *Numbers across repos*).
+5. **A copy we deliver has its footer stripped at delivery,** so a
+   CBC Run reads no pointer it cannot follow. The strip is the
+   Exchange Convention's (`docs/conventions/exchange/`).
+6. **A Record Stub and an Agent Skill Template cite nothing.**
+
+*Its story: ADR-0078.*
+
 ## 4. A Canonical Description's rule
 
 This page included. A Canonical Description is how we understand a thing

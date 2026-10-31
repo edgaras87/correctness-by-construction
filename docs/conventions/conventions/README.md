@@ -63,14 +63,9 @@ opening it at the moment of use.
 
 - A rule is one sentence in the imperative. Its why is the manual's
   or the ADR's.
-- Cite no decision mid-sentence. A skill or an Agent Rule lists the decisions
-  it rests on once, in a footer headed *Decisions*: each as
-  `CBC ADR-nnnn` in one that ships, `ADR-nnnn` in one that stays
-  here, the Repo Tag being `project-recording`'s rule
-  (`docs/conventions/project-recording/` §3.5, *Numbers across repos*), and a decision this
-  repo inherited is adopted before a shipped file cites it
-  (ADR-0038). A footer line names the section it
-  backs, unless it backs the whole file. A Record Stub cites nothing.
+- A decision is cited as one rule says for every text, in both
+  Convention Seats: in a Work Approach, once, in its *Decisions*
+  footer (`docs/conventions/facts-in-sync/` §3.4, *A decision citation*).
 - Say what a rule is not only when a consumer lived the misreading,
   and then name the CBC Run.
 - A worked example in a code block is exempt from all of this.
