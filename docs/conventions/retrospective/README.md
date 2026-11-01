@@ -83,8 +83,8 @@ this repo, or CBC Run 4's CBC Run Reading shows the missing guide cost something
 ### The Concept Deliverer's seat
 
 On trial. This repo has no project end. Its Plan Steps close on
-"lessons folded back where they came from: conventions, the playbook,
-the concept", a close line its PLAN still carries. That names the places but no method.
+"lessons written back where they came from: conventions, the
+playbook, the concept", a close line its PLAN carries. That names the places but no method.
 
 At the close of the Plan Step that runs the next CBC Run Birth, it
 runs both Agent Skills on itself, from `delivery/container/`, in place

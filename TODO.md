@@ -33,7 +33,7 @@
 
 ## Next (each due at its trigger)
 
-- [ ] Read CBC Run 6, `checkout`, by `exchange-read` (2026-10-29, the
+- [ ] Read CBC Run 6, `checkout`, by the exchange-read Agent Skill (2026-10-29, the
       reviewer).
       Context: CBC Run 6 ran on full auto through its Release, Step 14,
       and closed a Step 15 after it: 254 commits, 7 Invariant Slices, tag
@@ -59,30 +59,30 @@
                the lock for now.
       See: devlog 2026-10-29, night.
 
-- [ ] Write `exchange-birth` while a birth runs (2026-09-26, the
+- [ ] Write the exchange-birth Agent Skill while a CBC Run Birth runs (2026-09-26, the
       reviewer).
-      Context: written from the exchange manual, as `exchange-read`
-      and `exchange-deliver` were, keeping the Pure Seed's intent — it
+      Context: written from the exchange manual, as the exchange-read Agent Skill
+      and the exchange-deliver Agent Skill were, keeping the Pure Seed's intent — it
       delivers everything and decides nothing. Then *What this does
       not do* in `.claude/skills/exchange-deliver/SKILL.md` points at
       it, `pure-seed.md` goes, and ADR-0016's procedure of record
-      moves. CBC Runs 5 and 6 are born by the Pure Seed, to keep their births
-      small.
+      moves. CBC Runs 5 and 6 are born by the Pure Seed, to keep their CBC
+      Run Births small.
       Ideas: first-time work on our Convention Seat, so an Approach on Trial
-             drafted by `approach-drafting` (ADR-0058).
-      Trigger: the birth after CBC Run 6's.
+             drafted by the approach-drafting Approach on Trial (ADR-0058).
+      Trigger: the CBC Run Birth after CBC Run 6's.
       See: devlog 2026-09-26, evening; and 2026-09-30, night,
       later, where `pure-seed.md` was brought up to date for it.
 
 - [ ] Decide whether a commit plan's look-back also asks if the
       work could have been done better (2026-10-21, the reviewer).
-      Context: before its close, `commit-plan` looks back at the
+      Context: before its close, the commit-plan Agent Skill looks back at the
       landed commits for their grouping only. Work shows what a plan
       missed; the reviewer would have the look-back ask whether the
       work itself could be meaningfully better, and if so try that
       way and compare it with the first try before keeping one. CBC
       Run 4 tried each Real question's options on `try/` branches, a
-      Real question being what `auto-run` calls one it must not decide
+      Real question being what the auto-run Approach on Trial calls one it must not decide
       alone: 14
       of them, and 2 changed the answer. CBC Run 5 tries it first, from
       its CBC Run Hand-off.
@@ -94,25 +94,25 @@
       - a cap on its cost, so no plan doubles by habit.
       Trigger: CBC Run 5's CBC Run Reading.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
-      §9, *A commit plan's look-back…*.
+      §9, *A commit plan's look-back at the way*.
 
 - [ ] Decide whether the concept, the conventions and the
       Approaches on Trial keep examples (2026-10-21, the reviewer).
       Context: CBC Run 4 read CBC Run 3's real Enemy Collision Kills in the Output Shapes' examples
       at birth, and its CBC Framing copied them in places (ADR-0061).
-      The method's worked example, 271 lines in both `cbc-framing`
-      and `cbc-slice`, is an order service that weighs "Orders are
+      The method's worked example, 271 lines in both the cbc-framing
+      and the cbc-slice Agent Skills, is an order service that weighs "Orders are
       never lost AND payment always completes"; the concept's
       chapters, the cbc-slice workflow, the playbook, `writing.md` and
-      the stack's references hold smaller ones. CBC Run 5, event
-      tickets, is born with all of them.
+      the stack's references hold smaller ones. CBC Run 5,
+      `event-tickets`, is born with all of them.
       Ideas:
       - examples stripped to a description of what must be done.
       - examples kept, drawn from a domain no CBC Run will build.
       - examples kept where a reader learns, gone where a CBC Run acts.
       Trigger: CBC Run 5's CBC Run Reading.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
-      §10, *Examples in the concept…*.
+      §10, *Examples in the concept, the conventions and the approaches*.
 
 - [ ] Decide how work is run by agents: delegation, model and
       effort by kind of work, forks or fresh agents, new challenges
@@ -125,13 +125,13 @@
       changed model mid-run with no record of why. `/doctor`,
       2026-10-22: 69 general-purpose agents in 29 days, none given
       a model, so all on Opus: 11% of a week's usage. New challenges
-      have `approach-drafting`; looking back has a trial in CBC Run 5.
+      have the approach-drafting Approach on Trial; looking back has a trial in CBC Run 5.
       Ideas:
       - low effort to read and collect; the highest to find the
         options; medium or high to implement and summarise.
       - a lead agent fans out readers and keeps the decisions.
       - each delegation leaves one line: the kind of work, the
-        Idea Model, the effort, whether it paid.
+        model, the effort, whether it paid.
       - an Approach on Trial before any convention (ADR-0058); a
         convention of its own, or a section of agent-arrangement.
       - one default model for every subagent, offered by `/doctor`
@@ -166,7 +166,7 @@
         never rules).
       - or that section splits in two: the approaches, and what
         reaches the agent's setup.
-      - `CLAUDE.local.md` repeats two rules, both commit-messages':
+      - `CLAUDE.local.md` repeats two rules, both the commit-messages manual's:
         commit on the word, and a stop at each boundary
         (`docs/conventions/commit-messages/` §2.4, *Commit on the word*). Yet agent-arrangement counts how often the agent stops as a
         setting (`docs/conventions/agent-arrangement/` §3.7, *`CLAUDE.local.md`*). Refinement Round
@@ -181,12 +181,13 @@
         keeps its transcript and resumes by `SendMessage`; a new
         session keeps the repo, the devlog's Resume line and the
         user's memory files only. The Agent Model §6 states the rule;
-        the binding, agent-arrangement §5, would hold the mechanics.
+        the Tool Binding (`docs/conventions/agent-arrangement/` §5,
+        *The Claude Code Tool Binding*) would hold the mechanics.
       Trigger: CBC Run 5's CBC Run Reading, with the lines gathered by then.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, *How work is run by agents*; `.claude/decisions.md`, 2026-10-22, the account Agent Skills.
 
-- [ ] Evaluate `auto-run`, the Approach on Trial for preparing a
+- [ ] Evaluate the auto-run Approach on Trial, for preparing a
       full-auto CBC Run (2026-10-22, the Plan Step that birthed CBC Run 5).
       Context: drafted and used once, for CBC Run 5
       (`.claude/approaches-on-trial/auto-run.md`, its use note). Its
@@ -204,9 +205,9 @@
       Context: an Output Shape is read at a Plan Step Gate only, so work written
       without it can show it wrong (`docs/conventions/shapes/` §3, *Where an Output Shape lives*).
       An Agent Skill that carries the output's form undoes that.
-      `cbc-framing` hands over `templates/registry.md` to fill in,
+      the cbc-framing Agent Skill hands over `templates/registry.md` to fill in,
       for the output the Invariant Slice Entry Shape governs.
-      `approach-drafting`'s Stage 1 lists the parts a Work Approach
+      the approach-drafting Approach on Trial's Stage 1 lists the parts a Work Approach
       file holds, the form of its own output.
       Ideas:
       - an Output Shape adapts: divergence is how it learns
@@ -228,31 +229,31 @@
         the fix goes to the Work Approach, and the output records
         the gap.
       - Refinement Round 2's FINDING-211: one form told in an Agent Skill, an Output Shape
-        and a template: the Invariant Slice Record's outline, the
-        Structural Wall Backstop at the Red Run, a cost's size, the registry entry's fields, a
+        and an Agent Skill Template: the Invariant Slice Record's outline, the
+        Structural Wall Backstop at the Red Run, a cost's size, the Invariant Slice Entry's fields, a
         body asserted by path.
-      Trigger: `approach-drafting`'s first evaluation, at the
+      Trigger: the approach-drafting Approach on Trial's first evaluation, at the
                refinement's close.
-      See: devlog 2026-10-20, later; `TODO-CONVERSATION-MEMORY.md` §2, *How an approach and a shape…*.
+      See: devlog 2026-10-20, later; `TODO-CONVERSATION-MEMORY.md` §2, *How an approach and a shape divide an output*.
 
-- [ ] Decide whether approach drafting becomes a convention
+- [ ] Decide whether the approach-drafting Approach on Trial becomes a convention
       (2026-10-27, the reviewer).
       Context: `approach-drafting.md` is on trial (ADR-0058), held
       word for word in both Convention Seats until its evaluation (ADR-0069,
       decision 2). No manual lists it.
       Ideas:
       - one convention for Approaches on Trial, its Work Approaches
-        `approach-drafting` in both Convention Seats and `approach-evaluation`
+        the approach-drafting Approach on Trial in both Convention Seats and the approach-evaluation one
         in ours.
-      Trigger: `approach-drafting`'s evaluation at the refinement's
-               close, at its Stage 5.
+      Trigger: the approach-drafting Approach on Trial's evaluation at the
+               refinement's close, at the approach-evaluation Approach on Trial's Stage 5.
 
 - [ ] Choose whether a manual is called a concept (2026-10-19, the
       reviewer).
       Context: one idea should have one word. The reviewer saw a
       manual as a concept: an idea written down, with sub-ideas,
       and its rules and Agent Skills as the convention. "Concept" already
-      names the CbC concept and the Tiers Model's concepts tier.
+      names this repo's concept and the Tiers Model's concepts tier.
       Facts-in-sync calls both a Canonical Description
       (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
       Ideas:
@@ -266,7 +267,7 @@
 - [ ] Decide whether a sweep checks one home after work lands, and
       when (2026-10-22, the reviewer).
       Context: the Foundation Check walks what derives from a
-      changed Canonical Description at each commit, and `commit-plan`'s close
+      changed Canonical Description at each commit, and the commit-plan Agent Skill's close
       sweeps for names a Change Set moved. Nothing looks back over finished
       work to see whether its facts still have one home. Refinement Round 2's
       One home Finding Kind does it once, for the refinement.
@@ -282,9 +283,9 @@
         context was missing that would have helped?", as
         `claude-md-management` does; the answer is one finding in
         that session's devlog entry, from 2026-10-22. The sweep
-        reads the findings since the last one and ends each: entry
-        file, rule, Agent Skill, record, or nothing.
-      - how the sweep stands to `retrospective`, a CBC Run's look-back
+        reads the findings since the last one and ends each: Entry
+        File, Agent Rule, Agent Skill, record, or nothing.
+      - how the sweep stands to the retrospective Agent Skill, a CBC Run's look-back
         at its end.
       - `.claude/rules/foundation-check.md`, weighed with this item:
         what is checked at each commit, and what is left to the
@@ -300,7 +301,7 @@
       - looking back, defined once: reading a text against what it
         rests on, to find what is out of date, wrong or in
         disagreement. Five acts do it today: the Foundation Check,
-        `commit-plan`'s sweep, a Refinement Round, a CBC Run Reading
+        the commit-plan Agent Skill's sweep, a Refinement Round, a CBC Run Reading
         and the missing-context finding. What a check is
         in the Idea-to-Output Model; when each runs, in its own
         convention.
@@ -311,7 +312,7 @@
 
 - [ ] Decide how an item names the items it waits on, and what
       happens when one closes (2026-10-24, the reviewer).
-      Context: TODO sorts by horizon and trigger; within a horizon,
+      Context: TODO sorts by section, Now, Next and Later, then by trigger; within a section,
       by when added. Some triggers name another item in free prose.
       One named an item that did not exist ("the item on what a
       thing is"), and two waited on the text-division item, with
@@ -368,32 +369,32 @@
       (2026-10-19, the reviewer).
       Context: our `commit-plan` Agent Skill regroups a Change Set's commits before
       its close (`.claude/skills/commit-plan/SKILL.md` §4, *The lifecycle*), and a regroup gives them new hashes. This repo cites
-      hashes in living text: the refinement's file, TODO, other
+      hashes in Living Text: the refinement's file, TODO, other
       commit bodies. So the refinement's commits up to `ccce6af`
       were not regrouped, and the history keeps every small fix,
       each reviewed as it landed.
       Ideas:
-      - cite records, not commits: living text points at a devlog
+      - cite records, not commits: Living Text points at a devlog
         entry or a section; hashes only in history.
       - cite at the close: while a Change Set is open nothing durable
         cites its hashes; the close cites the final ones.
       - rewrite the citations with the regroup: a map of old hash
         to new, grepped and replaced in the same rewrite.
       - regroup only on the branch, before main takes it.
-      Trigger: the refinement of this repo closes; its rounds read `commit-plan` and the Fact Reference's form
+      Trigger: the refinement of this repo closes; its Refinement Rounds read the commit-plan manual and the Fact Reference's form
         (`docs/conventions/facts-in-sync/` §3, *The Fact Reference*).
       See: devlog 2026-10-19, regrouping.
 
 - [ ] Make the conventions index a full Local Map (2026-09-30, the
       reviewer).
-      Context: its chain shows only the conventions that act in
+      Context: its order shows only the conventions that act in
       sequence during a piece of work. The other nine relate by what
       they govern, read or describe, stated as about thirty Fact References across the manuals' *What this does not cover*, and seen
-      together nowhere. The local-map rule now exists
+      together nowhere. Project-recording's Local Map part now exists
       (`docs/conventions/project-recording/` §8.6, *Local Maps*, ADR-0045).
       Ideas:
-      - all twelve and how each touches the others, derived from those references, built by `visual-comparison`.
-      - three links, each with its upkeep: derives
+      - all twelve and how each touches the others, derived from those references, built by the visual-comparison Agent Skill.
+      - three Chain Links, each with its upkeep: derives
         (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, the Foundation
         Check), points (one home, the grep at a commit that moves a
         section, a Plan Step's close), governs
@@ -401,7 +402,7 @@
         sweep that text or file the sweep, a rule beside
         `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
       - scenarios as entries into one procedure, the Foundation
-        Check: a manual, an Agent Skill or rule, a CBC Run's finding. Two
+        Check: a manual, an Agent Skill or Agent Rule, a CBC Run's finding. Two
         exits it lacks: the governs sweep, and what must run again
         after.
       - rename "The chain": the Idea-to-Output Model's chain is
@@ -412,7 +413,7 @@
 
 - [ ] Read CBC Run 4 against `dac4dd1`, the CBC Run 3 commit it was born
       from (2026-10-15, the reviewer).
-      Context: CBC Run 4, safe-reservation-2, was born 2026-10-15 by
+      Context: CBC Run 4, `safe-reservation-2`, was born 2026-10-15 by
       hand from CBC Run 3's Agent Skills, Agent Rules and Output Shapes at `dac4dd1` and
       our Container Group at `35edd3f`, and ran on full auto through
       Release. Reading it shows what it changed on top of
@@ -428,14 +429,14 @@
       - how CBC Run 4 closed its Plan Step branches (`run4/step-9` to 11):
         the playbook still ticks "reached main by fast-forward" in
         the Plan Step Gate, which ours dropped (`49d06e6`).
-      - whether CBC Run 4's birth fired three triggers: "before the next
+      - whether CBC Run 4's CBC Run Birth fired three triggers: "before the next
         birth", shipping `temp/`; "the next birth's Step 3 close",
         the ground-must-be-up rule; "a fourth CBC Run deriving
-        `.gitignore` by hand", `cbc-bootstrap`'s hygiene.
-      - the retrospective puts a "rules in force now" list on top of
+        `.gitignore` by hand", the cbc-bootstrap Agent Skill's hygiene.
+      - the retrospective Agent Skill puts a "rules in force now" list on top of
         a Decisions Log kept append-only; CBC Run 3 and CBC Run 4 both did:
         which side changes.
-      - `cbc-framing` writes a status line into the README, where
+      - the cbc-framing Agent Skill writes a status line into the README, where
         the README's form, its header comment, keeps changing status
         in PLAN: how that line lived in CBC Run 4.
       - whether CBC Run 4 confirmed its plan's Plan Steps once framed, as project-recording says a CBC Run does
@@ -444,7 +445,7 @@
         CBC Framing Plan Step should.
       Trigger: the refinement of this repo closes; in a new session.
       See: `f097695`, the kickoff and the message it took;
-      `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's reading: two moves…*.
+      `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's reading: two moves from layer 6*.
 
 - [ ] Decide whether our own forms become Output Shapes, and whether an
       Output Shape's part can be optional (2026-10-17, the reviewer).
@@ -464,7 +465,7 @@
         convention: a manual's, a Work Approach's, a CBC Run Reading's, a
         record's. Five mechanisms hold them today.
       - read at a Plan Step Gate and adaptable like any Output Shape; the Work Approach
-        or rule that writes the document carries no layout.
+        or Agent Rule that writes the document carries no layout.
       - what must hold while writing stays an Agent Rule
         (`docs/conventions/shapes/` §3, *Where an Output Shape lives*): a
         manual's section order may; how each part is written may not.
@@ -501,10 +502,10 @@
       - each mark is a finding; a file is done when the reviewer
         reads it without a stumble.
       - a pattern in the marks becomes a rule in
-        `.claude/rules/writing.md`, so a refinement's writing kind
+        `.claude/rules/writing.md`, so a refinement's Writing Finding Kind
         catches it after.
       - what is read most first: the README, our Agent Skills and
-        rules, what ships.
+        Agent Rules, what ships.
       - the agent polishing alone, only where a rewrite cuts words;
         the reviewer checks each one for drift in meaning.
       Trigger: the refinement of this repo closes.
@@ -527,7 +528,7 @@
       visual-comparison and retrospective, each a manual and an Agent
       Skill; writing, a manual and an Agent Rule. Writing the kind
       word always keeps them apart in reading (the refinement's
-      DECISION-24 and 27), but a grep still finds both. It waits for
+      DECISION-24 and DECISION-27), but a grep still finds both. It waits for
       two reasons: which side is renamed, and to what, is a choice
       that how CBC Runs 4, 5 and 6 used these parts can inform; and
       four of the names ship, so a rename moves every CBC Run's
@@ -562,7 +563,7 @@
       taken as it stands. Their Decisions Log entries and CBC Run Asks
       still say what each needed and what went wrong without it. The
       readings come after the refinement, not before: read now, every
-      item taken would land in text round 3 rewrites.
+      item taken would land in text Refinement Round 3 rewrites.
       Ideas:
       - read how the CBC Run went and what it did, and ask whether
         the new structure meets each need, defines it wrongly, or
@@ -584,14 +585,14 @@
 
 - [ ] Write an Agent Rule that writes an Agent Skill or Agent Rule from its convention
       (2026-10-17, the reviewer).
-      Context: the conventions manual says how an Agent Skill or rule is
+      Context: the conventions manual says how an Agent Skill or Agent Rule is
       written (`docs/conventions/conventions/` §1, *A convention's Work Approaches*), and nothing puts it in front of the
-      writer: a manual has `convention-manual.md`, an Agent Skill or rule
+      writer: a manual has `convention-manual.md`, an Agent Skill or Agent Rule
       has no such rule. An Approach on Trial writes freely, and its
       pieces are input: what the work needed. When an evaluation
       places one, the lasting form comes from the conventions manual: the manual by
       (`docs/conventions/conventions/` §2, *The Convention Manual*), each Agent Skill or
-      rule from it by (`docs/conventions/conventions/` §1, *A convention's Work Approaches*).
+      Agent Rule from it by (`docs/conventions/conventions/` §1, *A convention's Work Approaches*).
       Ideas:
       - an Agent Rule derived from the conventions manual's Work Approaches part
         (`docs/conventions/conventions/` §1, *A convention's Work Approaches*), as
@@ -601,10 +602,10 @@
       - a Paths Rule loads only when a file is touched, and the
         commit is the other moment
         (`docs/conventions/agent-arrangement/` §5.6, *Rules files*).
-      - `approach-evaluation`'s placing hands each piece to the
+      - the approach-evaluation Approach on Trial's placing hands each piece to the
         rule, for a Work Approach of ours and of a CBC Run's alike.
       Trigger: the first evaluation that places a piece as an Agent Skill
-               or rule, at Stage 5 of
+               or Agent Rule, at Stage 5 of
                `.claude/approaches-on-trial/approach-evaluation.md`.
       See: devlog 2026-10-17, later, the Agent Skill rewrite.
 
@@ -620,7 +621,7 @@
       manual §1 holds the rules for writing an Agent Skill or Agent
       Rule, and no Work Approach carries them to the writer.
       Ideas:
-      - the four cells: a model holding this repo's own rules; a
+      - the four cells: an Idea Model holding this repo's own rules; a
         manual retelling its model's idea; a manual stating rules
         with no why; an Agent Skill or Agent Rule explaining why.
       - per passage: which level it belongs to, and whether the level
@@ -642,10 +643,10 @@
       D2).
       Context: the agent copies the voice it reads. CBC Run 3's records
       came out in the Agent Skills' voice, though "explain plainly" was in
-      its memory. Plain already: the Agent Rules, the Output Shapes, `cbc-slice`'s
+      its memory. Plain already: the Agent Rules, the Output Shapes, the cbc-slice Agent Skill's
       Agent Skill and workflow (`2674c03`). Not yet, about 26,000 words:
-      `cbc-framing` (8,500), the stack Agent Skills (13,800), the concept
-      chapters (3,400), readiness (600). A chapter reworded is a
+      the cbc-framing Agent Skill (8,500), the stack Agent Skills (13,800), the concept
+      chapters (3,400), System Readiness (600). A chapter reworded is a
       concept change, editorial unless a meaning moves.
       Ideas:
       - one commit per file; the worked example's two copies as one.
@@ -655,13 +656,13 @@
         Framing Reconciliation move.
       - "invariant-shaped", "contract-shaped": "shape" now reads as the
         Output Shape.
-      - `cbc-slice`'s opening states the completion test alone;
+      - the cbc-slice Agent Skill's opening states the completion test alone;
         `concept/04-cbc-slice.md` says the test proves a Structural
         Wall, and the Structural Wall closes the Invariant Slice.
       - Refinement Round 2's Lessons and Layout Finding Kinds in these texts, left here by
         the refinement's DECISION-7 and DECISION-8: FINDING-223, the Adversity Harness
         reference's "passes"; FINDING-224, the "lived" markers; FINDING-227,
-        `cbc-framing`'s export section, `infra-establish`'s manuals
+        the cbc-framing Agent Skill's export section, the infra-establish Agent Skill's manuals
         told three times, the worked example's two layouts; FINDING-228,
         the walkthrough's parts in its fourth section
         (`delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md` §4, *The Adversity Harness*); and FINDING-206, the playbook's 12
@@ -670,7 +671,7 @@
                reads these texts; what Refinement Round 3 did leaves this
                item, and what is left stays or goes.
       See: devlog 2026-10-17, later, the plain method;
-      `TODO-CONVERSATION-MEMORY.md` §6, *The method's plain rewrite…*.
+      `TODO-CONVERSATION-MEMORY.md` §6, *The method's plain rewrite: `cbc-slice`'s opening*.
 
 - [ ] Run this repo's retrospective, on trial (2026-10-17, from the
       Plan Step Gate of PLAN's Step 10).
@@ -691,8 +692,8 @@
       (`docs/conventions/exchange/` §4, *The Delivery Take*).
       Once so far; checked by hand at `e6538f6`: no staged path was new.
       The Method Group's four Output Shapes sit at CBC Run 3's own `.claude/shapes/`
-      paths (ADR-0052); the next birth is where they first land.
-      Ideas: in `exchange-deliver`, the staged paths against the
+      paths (ADR-0052); the next CBC Run Birth is where they first land.
+      Ideas: in the exchange-deliver Agent Skill, the staged paths against the
              CBC Run's files that are not at its Delivery Pin.
       Trigger: the next delivery that ships a path new to the CBC Run.
       See: devlog 2026-09-30, the delivery to CBC Run 3.
@@ -730,7 +731,7 @@
       and its first Invariant Slice Close reads them against it: the
       differences are the measurement. CBC Run 4 held CBC Run 3's Output Shape from
       birth, so CBC Run 5 is the first clean one, unless it reads the
-      Output Shapes at birth (the item on `.claude/shapes/`). `cbc-slice`
+      Output Shapes at birth (the item on `.claude/shapes/`). The cbc-slice Agent Skill
       holds most of its lessons, so tests from the Agent Skill alone may
       meet it.
       Trigger: CBC Run 5's first Invariant Slice closing.
@@ -740,16 +741,17 @@
       rule to its Entry File unasked (2026-09-04, ADR-0013's scope
       boundary).
       Context: the shipped Entry File teaches this addition and no Agent Skill
-      prompts it. CBC Run 3 answered the bootstrap half — its entry
-      file now states only what never changes. At establish it
+      prompts it. CBC Run 3 answered the CBC Bootstrap half: its Entry
+      File now states only what never changes. At Infrastructure Establishment it
       added no Local Rule, at no visible cost; a costly miss would
       be evidence for an Agent Skill line.
-      Trigger: the next birth's Step 3 close.
+      Trigger: the next CBC Run Birth's Step 3 close.
       See: devlog 2026-09-12, later.
 
 - [ ] Decide which ideas here are Idea Models (2026-10-24, the
       reviewer).
-      Context: three Idea Models exist: agent, tiers, idea-to-output. An
+      Context: three Idea Models exist: the Agent Model, the Tiers Model
+      and the Idea-to-Output Model. An
       Idea Model comes from a convention whose idea is general enough to
       be used elsewhere (`docs/models/idea-to-output.md` §4.2, *The upward direction*). The
       text-division item held candidates, left open by ADR-0063.
@@ -792,7 +794,7 @@
       Context: the text-division item had an Idea Model only where several
       manuals share an idea. The reviewer asked to weaken that: an
       Idea Model for one convention, "to see general idea behind that
-      convention". Idea-to-output has an Idea Model come from a convention whose idea is
+      convention". The Idea-to-Output Model has an Idea Model come from a convention whose idea is
       general enough (`docs/models/idea-to-output.md` §4.2, *The upward direction*).
       Trigger: a convention whose idea another repo could use, with
                no second manual sharing it.
@@ -804,7 +806,7 @@
       Context: a line that relies on a fact written elsewhere and
       carries no Fact Reference is found by no grep and no Change Walk. The
       check of ADR-0070 asks it of each new or changed
-      line at the commit. Only the refinement's rounds read the whole
+      line at the commit. Only the refinement's Refinement Rounds read the whole
       repo for it today: their Dependencies Finding Kind, which Refinement Round 2's
       close read ran with seven agents and 52 findings.
       Ideas:
@@ -827,7 +829,7 @@
       Trigger: a read finds a missing Fact Reference in text written
                after the per-commit check is in force, or a reference
                pointing down in text written after ADR-0071.
-      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §21, *A full read for missing fact…*.
+      See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §21, *A full read for missing fact references*.
 
 - [ ] Test Fact References and foundations as a whole: name every
       scenario a change brings, and check each still holds
@@ -850,7 +852,7 @@
         - a derived file changed against its foundation;
         - a retelling whose host is itself a Canonical Description;
         - a CBC Run's id whose home changes;
-        - a shipped CBC line when our manual changes;
+        - a shipped line that retells a manual, when our manual changes;
         - a fact stated only in history;
         - a line with no Fact Reference;
         - a reference inside a living sentence about the past, after
@@ -874,11 +876,11 @@
         once (DECISION-22 of the refinement), and every Name spelled
         in lowercase. Only a read finds a word a text gives a new
         meaning with no mark, and decides a Name or plain words:
-        rule 9's question at the commit, and a refinement's Writing
+        writing rule 9's question at the commit, and a refinement's Writing
         read. The sweep scripts live in a session's scratchpad today.
       Trigger: the refinement closes.
       See: devlog 2026-10-28; ADR-0070;
-      `TODO-CONVERSATION-MEMORY.md` §22, *Testing fact references…*.
+      `TODO-CONVERSATION-MEMORY.md` §22, *Testing fact references and foundations as a whole*.
 
 - [ ] Look again at where a CBC Run learns how to treat a Skill
       Template (2026-10-28, the reviewer).
@@ -895,7 +897,7 @@
         `delivered-copies.md`; today's choice.
       - (c) each Agent Skill Template states it in its own header,
         where a CBC Run meets the choice.
-      - (d) an Output Shape for an Agent Skill Templates.
+      - (d) an Output Shape for Agent Skill Templates.
       - weigh each by maintenance, readability, future-proofing and
         complexity.
       - check that every manual and shipped text that speaks of an
@@ -903,7 +905,7 @@
         `delivered-copies.md`,
         and that `delivery/README.md` and ADR-0008 still match.
       - check that each use says whose template it is: an Agent Skill's,
-        repo-hygiene's, or a Record Stub. Of 97 uses in living text,
+        repo-hygiene's, or a Record Stub. Of 97 uses in Living Text,
         only some say.
       Trigger: a CBC Run Reading that shows a CBC Run deviating from an
                Agent Skill Template, or a second stack's Stack Overlays arriving,
@@ -915,12 +917,14 @@
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
       Context: so a stranger, or future-you, can read, cite and copy
       from this repo without the archive. Four items of its own:
-      a CHANGELOG entry for the release; README true for a
-      stranger; `docs/models/` checked against the repo, since
-      `CLAUDE.md` sends a stranger there; known issues filed here.
+      - a CHANGELOG entry for the release;
+      - README true for a stranger;
+      - `docs/models/` checked against the repo, since `CLAUDE.md`
+        sends a stranger there;
+      - known issues filed here.
       PLAN held it until ADR-0057.
-      Trigger: the reviewer names it, after the Plan Step that runs run
-               5's birth closes.
+      Trigger: the reviewer names it, after the Plan Step that runs CBC
+               Run 5's CBC Run Birth closes.
       See: ADR-0057, decision 4.
 
 - [ ] Decide what our CHANGELOG tracks, and how the Record Stub asks it
@@ -959,14 +963,14 @@
 - [ ] Decide how the worked example's two copies are kept: checked
       by a diff, or made one (2026-09-17, and 2026-10-15 for the
       check).
-      Context: one document, byte-identical in `cbc-framing`'s and
-      `cbc-slice`'s `references/`. `.claude/rules/one-home.md` rule 5
+      Context: one document, byte-identical in the cbc-framing Agent Skill's and
+      the cbc-slice Agent Skill's `references/`. `.claude/rules/one-home.md` rule 5
       asks a check where two copies cannot be avoided (ADR-0053);
       today they are compared by hand at each edit, and were
-      identical on 2026-10-15. Made one, `cbc-slice` could not be
-      installed without `cbc-framing`.
+      identical on 2026-10-15. Made one, the cbc-slice Agent Skill could not be
+      installed without the cbc-framing Agent Skill.
       Ideas:
-      - a diff of the two in `exchange-deliver`'s gates, since a
+      - a diff of the two in the exchange-deliver Agent Skill's gates, since a
         delivery is when the copies leave.
       - one document, once one Agent Skill is wanted without the other.
       Trigger: the two found different, the worked example's next
@@ -974,7 +978,7 @@
                other.
       See: devlog 2026-09-17, later.
 
-- [ ] Decide whether `infra-establish`'s contract carries a paragraph
+- [ ] Decide whether the Infrastructure Contract carries a paragraph
       on the store's facility (2026-09-17, CBC Run 3).
       Context: CBC Run 3 wrote one at Step 3 — the ways its store makes
       two writers disagree — because the Agent Skill is silent on it. We
@@ -988,8 +992,8 @@
 - [ ] Move the Agent Skills' `foundation` to concept v2 at the release
       (2026-10-08, ADR-0048).
       Context: the Method Group's Agent Skills say `foundation: concept v1`.
-      ADR-0048 makes the next release v2, and `cbc-slice` and
-      `cbc-framing` already state its ranking.
+      ADR-0048 makes the next release v2, and the cbc-slice and
+      cbc-framing Agent Skills already state its ranking.
       Trigger: the release that names v2.
 
 - [ ] Decide whether an Agent Rule can be delivered on trial, as an Output Shape
@@ -997,7 +1001,7 @@
       Context: an Output Shape reaches a CBC Run but binds nothing until a
       Plan Step Gate reads it (ADR-0052); an Agent Rule learned in one CBC Run is in
       force in the next from its first Plan Step. CBC Run 3 asked after
-      offering its Evidence-Test Shape as an Agent Rule. Held: the question
+      offering its Evidence Test Shape as an Agent Rule. Held: the question
       is real only once there is an Agent Rule we would deliver that way.
       CBC Run 3's RETRO D4 says a trial names the close that judges it,
       and the Plan Step Form says so since `0cdc50c`.
@@ -1023,7 +1027,7 @@
       into a chapter's section today. The chapters are the canonical
       text every CBC Run holds a copy of, so numbering them would change
       every copy for no reader yet
-      (`docs/conventions/facts-in-sync/` §3.2, *Numbering a section's parts* numbers by form).
+      (`docs/conventions/facts-in-sync/` §3.2, *Numbering a section's parts*).
       Trigger: the first Fact Reference that needs a section of a
                chapter.
       See: devlog 2026-09-30, numbered parts.
@@ -1032,7 +1036,7 @@
       the reviewer)
       Context: project-recording describes it
       (`docs/conventions/project-recording/` §9, *The playbook*), and one playbook exists, the CBC Run's. It is not an Output Shape: an Output Shape is form, never content
-      (`docs/conventions/shapes/` §1.1, *What an Output Shape says*, and §2, *What a
+      (`docs/conventions/shapes/` §1.1, *What an Output Shape says*, and §2, *What an
       Output Shape is not*), and a filled-in template is not one; a
       playbook is content, copied and filled at birth.
       Ideas: a convention of its own, split from project-recording's playbook part
@@ -1045,7 +1049,7 @@
       Context: `delivery/container/` is the CBC Run's derivation of the
       conventions, and this repo's own files are the Concept Deliverer's
       (ADR-0042). No second maintainer repo exists, so no
-      maintainer's container does either.
+      maintainer's Container Group does either.
       Ideas: filter this repo — keep the functionality and layout,
              drop this concept's own content.
       Trigger: a second maintainer repo.
@@ -1073,15 +1077,16 @@
       check (2026-09-18).
       Context: the sending half is in force — a Delivery Note says when it
       claims what the receiver cannot check. Two receivers, the
-      handbook and CBC Run 3, took such claims as attributed
+      handbook, the repo that held the working arrangement before this
+      one, and CBC Run 3, took such claims as attributed
       rather than checked, unprompted; a rule now would tell them
       to keep doing what they do.
       Trigger: the first receiver that acts on an unmarked
       uncheckable claim as fact.
       See: devlog 2026-09-18, later still.
 
-- [ ] Decide whether `cbc-bootstrap` points at the Spring hygiene
-      parts, or "grow, never overwrite" stands (2026-09-18).
+- [ ] Decide whether the cbc-bootstrap Agent Skill points at the Spring
+      Stack Overlay, or "grow, never overwrite" stands (2026-09-18).
       Context: the `.part` files under
       `docs/conventions/repo-hygiene/templates/java-spring/` are pointed at by
       nothing, and three CBC Runs derived `.gitignore` by hand. They
@@ -1091,17 +1096,16 @@
       gap: nothing ships a Stack Overlay, and a blind CBC Run cannot
       fetch one.
       Ideas:
-      - Refinement Round 2's FINDING-203: `cbc-bootstrap`'s Agent Skill and its
+      - Refinement Round 2's FINDING-203: the cbc-bootstrap Agent Skill and its
         walkthrough both tell a CBC Run to add a Stack Overlay below
         each hygiene file's marker, and no file ships one. The
         Agent Skill could point at the walkthrough's step 2 instead.
-      Trigger: `cbc-bootstrap`'s hygiene step next opened, or a
+      Trigger: the cbc-bootstrap Agent Skill's hygiene step next opened, or a
       fourth CBC Run deriving `.gitignore` by hand.
       See: devlog 2026-09-18.
 
-- [ ] Weigh three candidate rules for what makes a note land
-      (2026-09-17, the reply of the handbook, the repo that held the
-      working arrangement before this one).
+- [ ] Weigh three candidate rules for what makes a Delivery Note land
+      (2026-09-17, the reply of the handbook).
       Context: the only outside reading of our Delivery Notes. The
       three candidates:
       - an opening ordered by weight let them plan their commit split
@@ -1118,7 +1122,7 @@
       Context: the CBC Run Reading of 2026-09-24 was overtaken on 09-26 and
       deleted without one, so what CBC Run 3 had addressed to us since
       its Delivery Pin had no verdict until the CBC Run Reading of 2026-09-30 read it
-      again — three edits to copies, ten asks and offers.
+      again — three edits to copies, ten CBC Run Asks.
       The Exchange Convention closes an overtaken CBC Run Reading
       (`docs/conventions/exchange/` §6.4, *How a CBC Run Reading closes*)
       "the same way", one pass over its items, and is silent on the Delivery Note every read ends with
@@ -1136,7 +1140,7 @@
       arriving, a Plan Step closing at the CBC Run, a calendar — none is
       named, so a CBC Run Reading happens when someone remembers, and both
       sides drift further from the Delivery Pin while it waits. CBC Run 3's RETRO
-      D24 names one moment: after a CBC Run's apply Plan Step, so its
+      D24 names one moment: after a CBC Run's apply-retrospective Plan Step, so its
       decisions arrive tried. CBC Run 3's next Plan Step waited on our Delivery Note:
       recording the Read-Through Commit was on its path (2026-10-18).
       Trigger: a CBC Run Ask found waiting for a CBC Run Reading nobody called.
@@ -1153,19 +1157,19 @@
 - [ ] Say once that a CBC Run Reading's decisions are the reviewer's
       (2026-10-01, the working draft).
       Context: the agent proposes and builds, the reviewer settles —
-      every CBC Run Reading has gone so, and nothing says it. Probably the
-      arrangement's to say, not the CBC Run Reading's.
+      every CBC Run Reading has gone so, and nothing says it. Probably
+      agent-arrangement's to say, not the CBC Run Reading's.
       Trigger: an agent found settling what was the reviewer's.
       See: devlog 2026-10-01.
 
 - [ ] Watch whether the worked example anchors a CBC Run's CBC Framing
       (2026-09-17, the reviewer).
       Context: an invented order service with an idempotency Invariant Slice
-      could steer a CBC Run toward that shape. No evidence in three
+      could steer a CBC Run toward that kind of problem. No evidence in three
       CBC Runs; one weak signal — the example and CBC Run 3 both land on
       one Responsibility Area.
-      Ideas: a second example on another shape, keeping this one.
-      Trigger: the next CBC Framing read on a differently shaped
+      Ideas: a second example on another kind of problem, keeping this one.
+      Trigger: the next CBC Framing read on a different kind of
       problem.
       See: devlog 2026-09-17, later.
 
@@ -1180,15 +1184,15 @@
       Trigger: declined-but-needed becoming a pattern.
       See: devlog 2026-09-17, later.
 
-- [ ] Add a rung for System Guarantees held by absence to the enforcement
+- [ ] Add a level for System Guarantees held by absence to the enforcement
       hierarchy (2026-09-14, CBC Run 3's SL-1).
       Context: no process clock, no state outside the store — nothing
       to observe at runtime; its Structural Wall is a rule on the compiled
-      classes. CBC Run 3 asks for a rung between "single validated entry
+      classes. CBC Run 3 asks for a level between "single checked entry
       path" and "code review". It met it again in SL-2 and SL-4, and
       CBC Run 4 rebuilt the same problem from CBC Run 3's copies, so neither
       is a second CBC Run. The hierarchy lives in
-      `concept/02-guarantees-and-walls.md` and both `cbc-slice` files: a
+      `concept/02-guarantees-and-walls.md` and both of the cbc-slice Agent Skill's files: a
       concept change, with an ADR and the version question (ADR-0003).
       Trigger: CBC Run 5 meeting a System Guarantee held by absence.
       See: devlog 2026-09-15; and 2026-10-10.
@@ -1203,7 +1207,7 @@
       Trigger: a second CBC Run whose Invariant Slice inherits its Structural Wall.
       See: devlog 2026-10-10.
 
-- [ ] Decide whether `cbc-slice` says a Red Run removes the Structural Wall Backstop too
+- [ ] Decide whether the cbc-slice Agent Skill says a Red Run removes the Structural Wall Backstop too
       (2026-10-10, the CBC Run Reading of CBC Run 3).
       Context: the Agent Skill says a Structural Wall that already stands is removed on
       the working tree for its Red Run. SL-4's Red Run as signed stayed green:
@@ -1223,22 +1227,22 @@
 
 - [ ] Revisit "backend" in the Agent Skills' description lines
       (2026-09-06).
-      Context: kept — it names the toolkit's honest scope, and
-      every CBC Run so far is one. The practice Agent Skills' bodies
+      Context: kept — it names the real scope of the Agent Skills, and
+      every CBC Run so far is one. The Stack Group's Agent Skills' bodies
       (compose, Flyway, Spring Boot) are backend-born too.
       Ideas: start with the description lines.
       Trigger: the first non-backend CBC Run.
       See: devlog 2026-09-07.
 
-- [ ] Tune the practice Agent Skills' trigger descriptions (2026-08-28).
+- [ ] Tune the Stack Group's Agent Skills' trigger descriptions (2026-08-28).
       Context: unoptimized since import (archive STATUS).
       Trigger: an Agent Skill under- or over-firing in a CBC Run.
 
-- [ ] Consider a held-insight tier in the Record Harvest discipline
+- [ ] Consider a held-insight kind in the Record Harvest discipline
       (2026-08-29, safe-reservations' close).
       Context: safe-reservations sent its lessons back in two kinds:
       sure adoptions, landed in the Master Copies, and insights held
-      as evidence, each with a named way to be promoted later. ADR-0007 has only the first tier; adding
+      as evidence, each with a named way to be promoted later. ADR-0007 has only the first kind; adding
       one is an amendment, decided deliberately.
       Trigger: a CBC Run Reading holds an insight it cannot land yet and
       has nowhere to put it.
@@ -1257,7 +1261,7 @@
       changed (2026-10-18, the reviewer).
       Context: a CBC Run takes a delivery under the `delivered-copies.md`
       it holds, so a delivery that changes that rule is taken under
-      the old one. The rule cannot travel alone: one Delivery Pin covers every
+      the old one. The rule cannot be delivered alone: one Delivery Pin covers every
       copy (`docs/conventions/exchange/` §2.2, *The CBC Run*). CBC Run 3's copy lacked
       `4de6ba2`'s Output Shapes; no files went, so it never acted.
       Ideas: the Delivery Note's "why it matters" names a change to the rule

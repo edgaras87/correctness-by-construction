@@ -7,7 +7,7 @@
 
 ## Legend
 
-`[ ]` planned  ·  `[~]` in progress  ·  `[x]` done (+date)  ·  `[!]` blocked (+what unblocks) or stopped (+the Plan Step first)  ·  `[-]` skipped (+why)
+`[ ]` planned  ·  `[~]` in progress  ·  `[x]` done (+date)  ·  `[!]` blocked (+what unblocks) or stopped (+the Plan Step that must come first)  ·  `[-]` skipped (+why)
 
 **Plan Step Gate** = exit criteria: verifiable facts, not intentions. A Plan Step is done only when every Plan Step Gate item is true.
 
@@ -32,7 +32,7 @@ becomes a Plan Step leaves TODO.
 ## Step: <title>  (<the Agent Skills, Agent Rules and Approaches on Trial it uses, if any>)    [~]
 
 Goal: <one sentence: what is true when this Plan Step is done>
-Now: <the stage this Plan Step is in, one line>
+Now: <the Agent Skill Stage or Approach on Trial Stage this Plan Step is in, or a stage its Notes list; one line>
 Gate:
 <the opening items below, filled in>
 <this Plan Step's own items, asked of the goal, then checked against
@@ -60,7 +60,7 @@ does not set a standard the work was held to.
       and nothing of the Plan Step was done on main except a CBC Run Reading's
       read, which comes before the branch
       (`.claude/rules/working-a-reading.md`, step 1).
-- [ ] This gate was written before the work started.
+- [ ] This Plan Step Gate was written before the work started.
 - [ ] The Plan Step's Work Approach is known: the Agent Skills and Agent Rules it uses;
       an Approach on Trial in `.claude/approaches-on-trial/` that
       covers the work; or the stages its Notes list from earlier
@@ -70,7 +70,7 @@ does not set a standard the work was held to.
 **The Plan Step's own items,** written first, from the goal alone. Ask of
 the goal: "how would I check that's true?" Each answer is one item:
 a fact, checkable by looking, what and not how. Together they equal
-the goal. For `exchange-birth`'s goal "a project born from this repo
+the goal. For the exchange-birth Agent Skill's goal "a project born from this repo
 alone", one item is "CBC Run 5's birth entry names one Delivery Pin, ours, and
 nothing from another repo". What a stage uses sets the order of
 work, and its stages are not copied into the Plan Step Gate. An item is ticked
@@ -86,16 +86,16 @@ Plan Step that uses none has only its own items.
 
 - [ ] Every link and path in the records resolves.
 - [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in
-      `cbc-framing` and in `cbc-slice`.
-- [ ] No living line in a record the Plan Step touched, or one that
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
       about something the Plan Step changed.
 - [ ] New and changed text meets `.claude/rules/writing.md`.
 - [ ] Every commit on `<branch>` follows the commit-messages Agent Skill.
 - [ ] No commit straddles agent and project paths
       (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
-- [ ] The Plan Step's lessons are folded back where they came from:
+- [ ] The Plan Step's lessons are written back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
@@ -135,9 +135,9 @@ it.
 ## Step: Birth CBC Run 6, on full auto  (`.claude/approaches-on-trial/auto-run.md`, `delivery/installs/pure-seed.md`, the Foundation Check)    [!] stopped: Refine this repo against its own rules (devlog 2026-10-29, morning)
 
 Goal: CBC Run 6 is born from this repo at one Delivery Pin on main, with the
-reviewer's checkout CBC Run Briefing and a CBC Run Hand-off for full auto, ready for
+reviewer's CBC Run Briefing for `checkout`, CBC Run 6's project, and a CBC Run Hand-off for full auto, ready for
 the reviewer to start.
-Now: the close: its checks, `auto-run`'s note of this use, main
+Now: the close: its checks, the auto-run Approach on Trial's note of this use, main
 taking the branch.
 Gate:
 
@@ -146,16 +146,16 @@ Gate:
 - [x] The Plan Step's branch `run-6-birth-2026-10-29` is cut from main
       at `a002002`, and nothing of the Plan Step was done on main
       (2026-10-29).
-- [x] This gate was written before the work started (2026-10-29).
-- [x] The Plan Step's Work Approach is known: `auto-run`, on trial, in its
-      second use (2026-10-29).
+- [x] This Plan Step Gate was written before the work started (2026-10-29).
+- [x] The Plan Step's Work Approach is known: the auto-run Approach on
+      Trial, in its second use (2026-10-29).
 
 **The Plan Step's own items.**
 
 - [x] The lessons CBC Run 5 left for the next CBC Run each say keep, change
       or add for CBC Run 6, in its CBC Run Hand-off. CBC Run 5 was read in full
-      (`temp/reading-run-5-2026-10-22.md`), so this is Stage 1's
-      light read (2026-10-29, `657d372`).
+      (`temp/reading-run-5-2026-10-22.md`), so the auto-run Approach on
+      Trial's Stage 1 is a light read (2026-10-29, `657d372`).
 - [x] CBC Run 6's CBC Run Briefing is the reviewer's: checkout, in
       `temp/run-6-briefing.md`, its Responsibility Areas meeting at a
       LAYER-5-INTERACTION question. Larger than CBC Run 5's, on the
@@ -165,9 +165,9 @@ Gate:
       CBC Run Reading's WORK-1, taken here from the stopped Plan Step. It now
       names no CBC Run at all (2026-10-29, `7f6e3a8`).
 - [x] CBC Run 6's CBC Run Hand-off says what full auto means for it, part by
-      part as `auto-run` Stage 4 lists (2026-10-29, `657d372`).
-- [x] What TODO says is due before a birth is settled:
-      `exchange-birth` waits for the birth after CBC Run 6's (devlog
+      part as the auto-run Approach on Trial's Stage 4 lists (2026-10-29, `657d372`).
+- [x] What TODO says is due before a CBC Run Birth is settled: the
+      exchange-birth Agent Skill waits for the CBC Run Birth after CBC Run 6's (devlog
       2026-10-29, later; 2026-10-29).
 - [x] CBC Run 6 is born by `delivery/installs/pure-seed.md` at
       `~/IdeaProjects/cbc-pure-run-6`, its Delivery Pin a commit on main, the
@@ -181,9 +181,9 @@ Gate:
 
 - [ ] Every link and path in the records resolves.
 - [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in
-      `cbc-framing` and in `cbc-slice`.
-- [ ] No living line in a record the Plan Step touched, or one that
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
       about something the Plan Step changed.
 - [ ] New and changed text meets `.claude/rules/writing.md`.
@@ -191,7 +191,7 @@ Gate:
       the commit-messages Agent Skill.
 - [ ] No commit straddles agent and project paths
       (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
-- [ ] The Plan Step's lessons are folded back where they came from:
+- [ ] The Plan Step's lessons are written back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
@@ -205,7 +205,7 @@ Notes:
   reviewer wants CBC Run 6 born now, before CBC Run 5's lessons are all
   taken. The Plan Step for those lessons and the refinement resume
   after this one closes.
-- Stages: `auto-run`'s six. Stage 1 is answered by CBC Run 5's CBC
+- Stages: the auto-run Approach on Trial's six. Stage 1 is answered by CBC Run 5's CBC
   Run Reading. Stage 3 is settled. The CBC Run Briefing is Stage 2's.
 
 ---
@@ -224,9 +224,9 @@ Gate:
 - [x] The Plan Step's branch `run-5-lessons-2026-10-29` is cut from main
       at `3f20857`, and nothing of the Plan Step was done on main
       (2026-10-29).
-- [x] This gate was written before the work started (2026-10-29).
+- [x] This Plan Step Gate was written before the work started (2026-10-29).
 - [x] The Plan Step's Work Approach is known: `.claude/rules/working-a-reading.md`
-      for the CBC Run Reading's items, `commit-plan` for the items marked
+      for the CBC Run Reading's items, the commit-plan Agent Skill for the items marked
       plan, the Foundation Check for each Master Copy changed
       (2026-10-29).
 
@@ -255,7 +255,7 @@ Gate:
 - [ ] The CBC Run Reading's other items are untouched, left for the Plan Step
       after the refinement, and the CBC Run Reading stays in `temp/`.
 
-**Known already.** The rule's *Gates* hold when a CBC Run Reading closes;
+**Known already.** The working-a-reading Agent Rule's *Gates* hold when a CBC Run Reading closes;
 this Plan Step does not close it. Its "every work item has ended" is the
 third own item, for this Plan Step's items only.
 
@@ -263,9 +263,9 @@ third own item, for this Plan Step's items only.
 
 - [ ] Every link and path in the records resolves.
 - [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in
-      `cbc-framing` and in `cbc-slice`.
-- [ ] No living line in a record the Plan Step touched, or one that
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
       about something the Plan Step changed.
 - [ ] New and changed text meets `.claude/rules/writing.md`.
@@ -273,7 +273,7 @@ third own item, for this Plan Step's items only.
       the commit-messages Agent Skill.
 - [ ] No commit straddles agent and project paths
       (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
-- [ ] The Plan Step's lessons are folded back where they came from:
+- [ ] The Plan Step's lessons are written back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
@@ -285,13 +285,13 @@ third own item, for this Plan Step's items only.
 Notes:
 - Opened 2026-10-29, from the devlog's entry of that day: the
   reviewer chose to take what CBC Run 6 needs from CBC Run 5's CBC Run Reading
-  before CBC Run 6's birth. The rest of the CBC Run Reading waits for the
-  refinement's close. CBC Run 5's DECISION-1 was taken in talk: each
+  before CBC Run 6's CBC Run Birth. The rest of the CBC Run Reading waits for the
+  refinement's close. The CBC Run Reading's DECISION-1 was taken in talk: each
   fix judged on its own evidence, with the same three endings.
-- Stages: decide and work, by the rule's steps 2 to 8. WORK-3,
+- Stages: decide and work, by working-a-reading steps 2 to 8. WORK-3,
   WORK-4 and WORK-10 are commit plans of their own. No Delivery Note
   goes to CBC Run 5: it waits for the rest of the CBC Run Reading
-  (`exchange-deliver`).
+  (the exchange-deliver Agent Skill).
 - The reviewer decides each decision, and signs each commit at its
   boundary. Main takes the branch by fast-forward on the reviewer's
   word; then Birth CBC Run 6, on full auto, opens.
@@ -300,17 +300,17 @@ Notes:
 
 ## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the Foundation Check, `visual-comparison`)    [~]
 
-Goal: Living text written before a rule now meets that rule, and project-recording's list of the records maps them in both Convention Seats
+Goal: Living Text written before a rule now meets that rule, and project-recording's list of the records maps them in both Convention Seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
 Now: Refinement Round 3's close (`.claude/approaches-on-trial/refinement.md` §2.8, *A Refinement Round's close*):
-all the text the round covers, read again against rules 1 to 10. Layers 1 to 6 worked, `e784f41` to `4d8147d`.
+all the text the round covers, read again against writing rules 1 to 10. Refinement Layers 1 to 6 worked, `e784f41` to `4d8147d`.
 Gate:
 
 **At the opening.**
 
 - [x] The Plan Step's branch `refinement-2026-10-18` is cut from main,
       and nothing of the Plan Step was done on main (2026-10-18).
-- [x] This gate was written before the work started (2026-10-18).
+- [x] This Plan Step Gate was written before the work started (2026-10-18).
 - [x] No Agent Skill, Agent Rule or earlier work said how to refine, so the
       Plan Step opened a provisional manual by first-time work,
       `2e9c26b:docs/conventions/refinement/README.md`, marked *on
@@ -323,7 +323,7 @@ Gate:
       for, each in its Refinement Round, and the reviewer confirmed them
       (`.claude/approaches-on-trial/refinement.md` §2.1, *Group the Finding Kinds*; 2026-10-19,
       again with Wiring).
-- [x] The refinement's file lists every living file in exactly one
+- [x] The refinement's file lists every file of Living Text in exactly one
       Refinement Layer (`.claude/approaches-on-trial/refinement.md` §2.2, *List the files*;
       2026-10-19).
 - [x] Before Refinement Round 1, no rule among the refinement's Finding Kinds was in
@@ -334,7 +334,7 @@ Gate:
       since the last, and each doubt ended; the refinement's file
       says which (`.claude/approaches-on-trial/refinement.md` §2.3, *Check the rules*).
 - [ ] Every Finding Kind in the refinement's file was read in its Refinement Round
-      across all living text, and each read names the files it
+      across all Living Text, and each read names the files it
       covered.
 - [ ] Every finding has the reviewer's ending: fixed, declined
       with its reason, or a TODO item.
@@ -346,7 +346,8 @@ Gate:
       `RETRO.md`, `COMMIT-PLAN.md`, `docs/system/`, and records
       another convention owns (2026-10-26; one view read as one
       section for both Convention Seats, not one screen, ADR-0067 decision 4).
-- [x] The records map's form was chosen by `visual-comparison`,
+- [x] The form of project-recording's list of the records was chosen by
+      the visual-comparison Agent Skill,
       and that Agent Skill's gates hold for it (2026-10-26, ADR-0067;
       rendered by the reviewer before acceptance).
 - [ ] Each Refinement Round's close read has its counts
@@ -355,7 +356,7 @@ Gate:
       reviewer's ending, and an ADR records them with the ways
       rejected at the opening
       (`.claude/approaches-on-trial/approach-evaluation.md`).
-- [ ] The trials of `approach-drafting` and `approach-evaluation`
+- [ ] The trials of the approach-drafting and approach-evaluation Approaches on Trial
       on our Convention Seat have their verdicts, one line each: kept, changed
       or dropped.
 
@@ -363,9 +364,9 @@ Gate:
 
 - [ ] Every link and path in the records resolves.
 - [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in
-      `cbc-framing` and in `cbc-slice`.
-- [ ] No living line in a record the Plan Step touched, or one that
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
       about something the Plan Step changed.
 - [ ] New and changed text meets `.claude/rules/writing.md`.
@@ -373,15 +374,15 @@ Gate:
       the commit-messages Agent Skill.
 - [ ] No commit straddles agent and project paths
       (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
-- [ ] The Plan Step's lessons are folded back where they came from:
+- [ ] The Plan Step's lessons are written back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
       §2.4, *How the Entry File is written*).
 
 Notes:
-- Opened 2026-10-18 from TODO's refinement item. The records map
-  item joined it, as its trigger asked. Both items, with their
+- Opened 2026-10-18 from TODO's refinement item. The item for
+  project-recording's list of the records joined it, as its trigger asked. Both items, with their
   Ideas, are in `TODO.md` at `b3b2018`.
 - Stages, from the refinement
   (`.claude/approaches-on-trial/refinement.md` §2, *The Approach on Trial Stages*):
@@ -389,22 +390,22 @@ Notes:
      Refinement Rounds, which creates the refinement's file. List the
      files by Refinement Layer. Check the rules
      (`.claude/approaches-on-trial/refinement.md` §2.1, *Group the Finding Kinds* to
-     §2.3). The reviewer confirms the Finding Kinds, their Refinement Rounds, the
-     Refinement Layers, whether the method's texts are read here
-     (`.claude/approaches-on-trial/refinement.md` §3, *Not known yet*), and that no
-     rule is in doubt;
+     §2.3), and decide whether the method's texts are read here
+     (`.claude/approaches-on-trial/refinement.md` §3, *Not known yet*);
   2. each Refinement Round: read, list, decide, work, then its close read;
   3. the last read, repeated until it finds nothing;
   4. the close: the refinement's file goes, then
      `.claude/approaches-on-trial/approach-evaluation.md` evaluates
      the refinement's Work Approach.
-- The records map is Refinement Round 2's, in project-recording's Refinement Layer, its
-  form chosen by `visual-comparison`.
+- Project-recording's list of the records is Refinement Round 2's, in
+  project-recording's Refinement Layer, its form chosen by the
+  visual-comparison Agent Skill.
 - When the work shows the Work Approach wrong, it changes first, in a
   commit of its own
   (`.claude/approaches-on-trial/approach-drafting.md`, Stage 2).
 - The first use of first-time work on our Convention Seat, which ADR-0058
-  made `approach-drafting`, and the first of `approach-evaluation`.
+  made the approach-drafting Approach on Trial, and the first of the
+  approach-evaluation Approach on Trial.
   This Plan Step's close judges both.
 - The reviewer signs:
   - the Finding Kinds, their Refinement Rounds, the Refinement Layers
