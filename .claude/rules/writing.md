@@ -49,20 +49,27 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
    shorter true Name before taking it; when none is found, the long
    Name stands. A hyphenated word counts as one, toward the two and the 4:
    "never-event" is one word. A lowercase word is English and
-   only English; no Markdown mark marks a Name. A numbered thing
-   carries its owner and number, "working-a-reading rule 2", "the
-   walk's step 3"; a label inside its owner keeps its case, "Step 0";
-   a path is written as it is. A thing is defined when a text gives
+   only English; no Markdown mark marks a Name. Written otherwise:
+   - a numbered thing carries its owner and number,
+     "working-a-reading rule 2", "the walk's step 3";
+   - a label inside its owner keeps its case, "Step 0";
+   - a path is written as it is.
+
+   A thing is defined when a text gives
    a word a meaning English does not: its Name goes into the glossary
    in the commit that first uses it, pointing at the home that
    defines it.
-10. **Title a numbered section with its subject.** A label, a noun
-    phrase of 30 characters or fewer, in sentence case, one phrase
-    with no gloss after a dash or colon, a Glossary Name inside it
-    keeping its capitals; it stands alone without its parent heading:
-    *How a plan is written*, never *How*. The point goes in the first
-    sentence. The manual form's fixed headings, a stage heading and a
-    numbered rule's bold lead are not titles under this rule.
+10. **Title a numbered section with its subject.** A title is:
+    - a label, a noun phrase of 30 characters or fewer;
+    - in sentence case, a Glossary Name inside it keeping its
+      capitals;
+    - one phrase, with no gloss after a dash or colon;
+    - standing alone without its parent heading: *How a plan is
+      written*, never *How*.
+
+    The point goes in the first sentence. The manual form's fixed
+    headings, a stage heading and a numbered rule's bold lead are not
+    titles under this rule.
 11. **Change only the lines the change needs.** The rest stand as
     they are. Markdown has no line width here; 72 is a commit body's
     rule and nothing else. A script that rewrites text counts
@@ -80,7 +87,7 @@ Before:
 After:
 
 > The count is of items, not of work. One item can take twenty
-> commits. An item that edits a skill both sides hold is two
+> commits. An item that edits an Agent Skill both sides hold is two
 > commits: the Master Copy, then our own copy.
 
 Same meaning. It can be read once.
@@ -91,7 +98,7 @@ What the rules govern: (`docs/conventions/writing/` §1, *What it governs*).
 
 - **Chat:** every answer.
 - **Records:** every new or changed line. History keeps its words.
-- **What CBC Runs read:** the skills, Agent Rules, Output Shapes, Approaches on Trial,
+- **What CBC Runs read:** the Agent Skills, Agent Rules, Output Shapes, Approaches on Trial,
   concept chapters and notes we write, and the manuals they come
   from, every new or changed line. Older text is rewritten in work
   of its own.
