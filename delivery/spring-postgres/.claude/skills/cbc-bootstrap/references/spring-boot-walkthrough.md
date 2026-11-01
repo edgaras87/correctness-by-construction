@@ -44,7 +44,7 @@ credentials and JPA with `ddl-auto: validate`, hands the running app
 control over database structure. No JPA, no in-app Flyway, no
 `-data-` starters.
 
-## 2. Stand the skeleton in the live repo
+## 2. Stand the skeleton
 
 - Generate the skeleton with Spring Initializr from the Build
   Coordinates, and **extract it into the existing repo root,** beside
@@ -63,8 +63,8 @@ control over database structure. No JPA, no in-app Flyway, no
   carrying the application name only. The pom's empty metadata blocks
   are deleted, and its description filled from the CBC Framing
   Intent.
-- The pom is written by the POM convention,
-  `.claude/skills/cbc-bootstrap/references/spring-pom-convention.md`.
+- The pom is written as
+  `.claude/skills/cbc-bootstrap/references/spring-pom-convention.md` says.
 
 **Verified:**
 - the context test green, with no database;
@@ -83,7 +83,7 @@ control over database structure. No JPA, no in-app Flyway, no
 
 ## 3. Wire the runtime datasource
 
-The config skeleton is an Agent Skill Template,
+The config file is an Agent Skill Template,
 `.claude/skills/cbc-bootstrap/templates/application.yaml`. The
 absences below are in it as comments. The CBC Run's business config
 grows under its own key, never in the Agent Skill Template.
@@ -139,7 +139,7 @@ at it.
 
 **Traps, exact:**
 1. `~/.testcontainers.properties` binds **only from `$HOME`,** never
-   from the project root. A CBC Run lost a long search to the "no
+   from the project root. A CBC Run searched long for the cause of the "no
    valid Docker environment" error here. Agent Skill Template:
    `.claude/skills/cbc-bootstrap/templates/testcontainers.properties`.
 2. Ryuk, the library's reaper:
@@ -282,9 +282,9 @@ all passing.
 - **How "up" is read:** free ports come from a socket bound and
   released. The up signal is health UP, with the store's component
   UP, through the instance's own door.
-- **Who owns the lifecycle:** the Adversity Harness. Instances are
-  started before the race and closed in `finally`, destroyed and then
-  forcibly, none left running on a failed test.
+- **Who owns the lifecycle:** the Adversity Harness. Instances
+  start before the race. A `finally` block destroys each one, and
+  forcibly if it is still alive. None is left running when a test fails.
 - **What the CBC Bootstrap Probe answers:** its process id beside the
   identity, so the race asserts the process ids served are exactly
   the instances started.
@@ -302,27 +302,27 @@ Invariant Slice.
 
 ## Recall list — the traps compressed
 
-1. Boot 4 renames: web starter → web-MVC name; `-test` companions per
-   starter; test REST client in `org.springframework.boot.resttestclient.*`.
+1. Boot 4 renames. The web starter takes the web-MVC name. Each starter has a `-test`
+   companion. The test REST client is in `org.springframework.boot.resttestclient.*`.
 2. `spring-boot-restclient` at test scope or the web test context fails on
-   `RestTemplateBuilder`; `@AutoConfigureTestRestTemplate` required —
+   `RestTemplateBuilder`; `@AutoConfigureTestRestTemplate` is required:
    `RANDOM_PORT` alone provides no `TestRestTemplate` bean.
 3. Testcontainers 2.x: `testcontainers-postgresql`,
    `org.testcontainers.postgresql`.
 4. `~/.testcontainers.properties` binds only from `$HOME`.
-5. Podman socket can be *active* with the file missing — restart user
-   units, confirm the file.
+5. Podman socket can be *active* with the file missing. Restart user
+   units, and confirm the file.
 6. Ryuk stays on under rootless podman on 2.x; `ryuk.disabled` in the
-   properties file has no effect — if it fails, the environment variable.
+   properties file has no effect. If it fails, use the environment variable.
 7. No dummy baseline migration; the history table is created by a
    run with no migrations.
 8. Flyway is the Adversity Harness's only; at runtime scope it undoes
    the Runtime Ground's constraint. On Flyway ≥ 10 it needs
    `flyway-database-postgresql`.
-9. Boot version coordinate plain `4.x.y` — the `.RELEASE` suffix does not
+9. The Boot version coordinate is plain `4.x.y`. The `.RELEASE` suffix does not
    resolve.
-10. Environment facts in no tool's notation — never compose placeholder
+10. Environment facts are in no tool's notation. Never compose placeholder
     syntax in application config or in requirement text you write.
-11. A missing secret does not stop the app — the unresolved placeholder
-    binds as the literal; only health (`db` DOWN) tells. Fail-fast is a
+11. A missing secret does not stop the app. The unresolved placeholder
+    binds as the literal, and only health (`db` DOWN) tells. Fail-fast is a
     *what*, decided by name.

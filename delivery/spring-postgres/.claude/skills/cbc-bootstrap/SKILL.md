@@ -6,7 +6,7 @@ foundation: practice, checked against concept v1
 
 # CBC Bootstrap — make a framed system run
 
-One run, one exit, the CBC Bootstrap's end:
+One pass, one exit, the CBC Bootstrap's end:
 
 - the stack settled;
 - an empty but running skeleton, wired to the real Runtime Ground
@@ -26,7 +26,7 @@ them is a **hard boundary between Agent Skill Stages**:
   file layout is named there.**
 - Stage 4 is where implementation judgment lives: the dependencies
   and when they enter, the shape of the code, the commit split, under
-  the stack conventions in `references/`.
+  the stack references in `references/`.
 - Never let a mechanism chosen early pass for a requirement. While
   implementing, you may find a missing *what*: a capability or
   constraint the work turns out to need. Then **stop and return to
@@ -44,7 +44,7 @@ contract. On any conflict between them and the walkthrough,
 `.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`,
 **the CBC Bootstrap Requirements win**, and the conflict is reported.
 
-## Stage 0 — System Readiness (refuse if not ready)
+## Stage 0 — readiness (refuse if not ready)
 
 Check, in the repo as it stands:
 
@@ -54,7 +54,7 @@ Check, in the repo as it stands:
 2. **The Runtime Ground established, running and verified:** the
    Infrastructure Contract and the Operator Manual exist
    (`.claude/skills/infra-establish/SKILL.md`, *Records and outputs*),
-   and the Runtime Ground's stand-up check is recorded. Missing: stop.
+   and its Catalog Check and Behavioral Check are recorded. Missing: stop.
    That is Infrastructure Establishment, done before this Agent Skill.
 3. **No skeleton yet:** if application code already exists, this
    Agent Skill does not apply. Go to the cbc-slice Agent Skill.
@@ -63,8 +63,9 @@ Then **check the Runtime Ground live,** by the Operator Manual,
 before any wiring. The records say it was verified. The wiring needs
 it up now.
 
-Record what stood, what was checked, and what was noticed. Only a
-missing member stops; a note goes in the record.
+Record what stood, what was checked and what was noticed, in the
+devlog's entry for the Plan Step. Only a failed check 1 to 3 stops.
+Anything else is a note.
 
 ## Stage 1 — decide (no mechanism; the reviewer confirms)
 
@@ -134,15 +135,15 @@ why:
      `.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`,
      step 3. At the CBC Bootstrap the only operator is the reviewer.
      The Adversity Harness accepts an instance only on health with
-     the store UP. The release Plan Step Gate's clean-machine test is
-     where a forgotten export becomes a real need, and it is decided
+     the store UP. The question comes back at release, when a test on a
+     clean machine shows whether a missing secret matters. It is decided
      there, unless this CBC Run decides otherwise by name.
 
 **Gate: the reviewer confirms the decisions before Stage 2.**
 
 ## Stage 2 — write the CBC Bootstrap Requirements
 
-Write `bootstrap-requirements.md` in the project's language, at the
+Write `bootstrap-requirements.md` in the language the project's records are written in, at the
 path the project's records choose. It goes beside the builder's
 other manuals. Both CBC Runs that ran this Agent Skill put it at
 `docs/construction/`.
@@ -191,7 +192,7 @@ reviewer confirms.**
 
 For each step: make the change, **verify it**, commit. A step whose
 verification fails is not committed; it is reported. Implementation
-decisions are yours here, under the stack conventions:
+decisions are yours here, under the stack references:
 
 - Read `.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`
   for the outcomes and the traps CBC Runs met: Boot 4 renames, test
@@ -266,8 +267,8 @@ The certified facts also go into the README:
 They are merged and filled from
 `.claude/skills/cbc-bootstrap/templates/readme-run-test.md`. Run ends
 in a check that the system answers. Test is the one standard test
-command, checked by structure at certification. The container's
-README has no Run or Test section. They arrive now, because the
+command, checked by structure at certification. The README this
+CBC Run was born with has no Run or Test section. They arrive now, because the
 Adversity Harness is real.
 
 **Exit test:** the skeleton runs on the real Runtime Ground as the

@@ -22,7 +22,7 @@ say that. It is ***why is this here***.
 - **Every runtime dependency carries a comment above it.** It says
   what capability the dependency gives, in the project's own terms:
   what the system does with it, and, where a decision hangs on it,
-  which boundary or guarantee it serves. Capability, not where the
+  which boundary or Invariant Slice Guarantee it serves. Capability, not where the
   requirement came from.
 - **Every test companion carries its own line.** Some companions
   exist only to satisfy another module's auto-configuration. Then the

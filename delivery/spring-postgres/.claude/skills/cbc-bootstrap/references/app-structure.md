@@ -19,7 +19,7 @@ So the choice is made knowingly, can be recalled months later, and
 means the same thing to the person and the agent.
 
 **It owns nothing else.** What classes exist is the Invariant Slices'
-outcome. What enters the build is the POM convention's. This doc owns
+outcome. What enters the build is `spring-pom-convention.md`'s. This doc owns
 only the *shape they land in*.
 
 ## The Stack Default
@@ -34,9 +34,9 @@ Slices:
 └── <feature-b>/     ...
 
 <base-package>                test
-├── adversity/       creates the danger for real: races, bursts of duplicates, kills
+├── adversity/       creates the danger for real: races, bursts of duplicates, killed processes
 ├── folds/           an Invariant Slice Fold's fact shown by running the system, no attack
-├── structure/       reads the code: a guarantee held by an absence
+├── structure/       reads the code: an Invariant Slice Guarantee held by an absence
 ├── store/           the store's own refusals, and the migration path
 ├── door/            the HTTP contract: each answer and its status
 ├── testsupport/     the Adversity Harness's base classes (harness reference), and its own test
@@ -62,7 +62,7 @@ Slices:
   one test may serve several. A test that mixes kinds goes by its
   main job. The folder answers "show me every race test", or "I
   changed the door: what checks it?". Which test proves which
-  guarantee is the Invariant Slice Record's. The CBC Bootstrap's
+  Invariant Slice Guarantee is the Invariant Slice Record's. The CBC Bootstrap's
   first tests go in from the start: the CBC Bootstrap Probe in
   `adversity/`, the Migration Path Test in `store/`. These test
   packages were laid out after one CBC Run's Invariant Slices. No CBC
@@ -117,4 +117,4 @@ endorsement. A deeper weighing is a conversation, not this doc.
   The two lines above are for recall and shared words only.
 - **Application code.** It is the CBC Run's, always. The harness
   reference, `.claude/skills/cbc-bootstrap/references/spring-harness-reference.md`,
-  is the only exception that carries code, and it earned that.
+  is the only exception that carries code.

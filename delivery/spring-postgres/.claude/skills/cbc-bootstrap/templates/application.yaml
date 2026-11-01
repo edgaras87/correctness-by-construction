@@ -26,5 +26,5 @@ management:
   endpoint:
     health:
       # evidence runs wait for "the system is up, store included": the db
-      # component must be visible, not just folded into the status
+      # component must be visible, not just merged into the status
       show-components: always

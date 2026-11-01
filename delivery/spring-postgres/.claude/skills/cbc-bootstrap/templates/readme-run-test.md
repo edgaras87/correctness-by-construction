@@ -2,7 +2,7 @@
      Merge into the CBC Run's README at the cbc-bootstrap Agent Skill's Stage 5, when the Adversity
      Harness is real, and fill from the certified commands. The filled
      sections are the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is copied and filled, never edited in place).
-     Only the material below travels; this header stays with the
+     Only the material below is merged; this header stays with the
      Master Copy. The stack line joins the Prerequisites section that
      Infrastructure Establishment opened. The command bodies are the
      Spring and Maven shape CBC Runs used. A different stack writes its
