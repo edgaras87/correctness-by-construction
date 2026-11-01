@@ -17,9 +17,9 @@ Knowing the lesson did not fix it:
 - **A polish pass after the fact** cost CBC Run 3 a Plan Step, and the voice
   was still not fixed.
 
-At its retrospective, on 2026-10-11, CBC Run 3 wrote a one-page rule
-that loads in every session (its RETRO.md, D2). Its Step 10 then
-rewrote its records under the rule, three times. Taken from CBC Run 3
+At its retrospective, on 2026-10-11, CBC Run 3 wrote a one-page Agent
+Rule that loads in every session (its `RETRO.md`, D2). Its Step 10
+then rewrote its records under the Agent Rule, three times. Taken from CBC Run 3
 on 2026-10-15 (ADR-0053).
 
 ## What this is made usable as
@@ -33,10 +33,12 @@ on 2026-10-15 (ADR-0053).
   holds only the Names it defines.
 - **The delivered Glossary Names, shipped as pinned copies,** one file
   per group, updated with every delivery:
-  `delivery/container/docs/glossary/container.md`, the shared Names;
-  `delivery/method/docs/glossary/method.md`, the concept's and the
-  method's; `delivery/spring-postgres/docs/glossary/stack.md`, the
-  stack's. Each lands under `docs/glossary/` in a CBC Run.
+  - `delivery/container/docs/glossary/container.md`, the shared Names;
+  - `delivery/method/docs/glossary/method.md`, the concept's and the
+    method's;
+  - `delivery/spring-postgres/docs/glossary/stack.md`, the stack's.
+
+  Each lands under `docs/glossary/` in a CBC Run.
 - **`.claude/rules/writing.md` — the Concept Deliverer's**, derived from
   this page like the container's, not copied from it, and loaded
   the same way. It differs where the Convention Seat does: it covers the
@@ -44,14 +46,14 @@ on 2026-10-15 (ADR-0053).
   notes the Concept Deliverer writes; and its examples are this repo's.
 
 This page explains; the Agent Rule states. What derives from this page is
-that list. A change here walks it; a change forced in it is checked
+that list. A change here runs the Change Walk on it; a change forced in it is checked
 back against this page.
 
 ## The seats
 
 A CBC Run writes under the Agent Rule from birth: its chat, its records, its
 commits. The Concept Deliverer writes under its own: its chat and
-records. It also covers what CBC Runs read, since an agent copies the
+records. Its Agent Rule also covers what CBC Runs read, since an agent copies the
 voice it reads. So every new or changed line of an Agent Skill, Agent
 Rule, Output Shape, Approach on Trial, concept chapter or note follows
 it. So do the Concept Deliverer's manuals. The Concept Deliverer also
@@ -59,20 +61,20 @@ writes this page and the Agent Rule's Master Copy.
 
 ## 1. What it governs
 
-How a text reads, never what it says. It covers every text written:
+It covers every text written:
 chat answers, records, commit messages, code comments.
 
 - **History keeps its words.** A closed devlog entry, an ADR or a
-  commit body is not rewritten for its voice. The rule applies to
-  every new or changed line.
+  commit body is not rewritten for its voice. The Agent Rule applies
+  to every new or changed line.
 - **An Agent Skill or an Agent Rule may be dense.** Its reader follows what it
   says, not how it says it. An agent copies the voice it reads, so
-  the rule says outright that it sets the voice.
+  the Agent Rule says outright that it sets the voice.
 - **Plain is the default for every kind of text.** A kind of text
   gets another style only when plain has been shown to fall short
-  there. The rule then names that kind and its style. None is named
-  yet: CBC Run 3 left a specification style for its claims to be judged
-  on plain text first (its RETRO.md, D14).
+  there. The Agent Rule then names that kind and its style. None is
+  named yet: CBC Run 3 put off a specification style until its claims
+  had been judged in plain text (its `RETRO.md`, D14).
 
 ## 2. Why each rule
 
@@ -116,7 +118,8 @@ chat answers, records, commit messages, code comments.
    for the reader to decide again. This holds however long the Name
    gets. A Name of more than 4 words, every word counted, is a trigger
    to look for a shorter true Name before it is accepted; when none is
-   found, the long Name stands. A count, so a script can find it. A
+   found, the long Name stands. The trigger is a count, so a script
+   can find it. A
    hyphenated word counts as one, here and in the two words a Name
    needs: "never-event" is one word.
    Every Markdown mark already has a job here, so none marks a Name.
@@ -129,8 +132,8 @@ chat answers, records, commit messages, code comments.
 
    A thing is defined when a text gives it a meaning
    English does not. Its Name goes into the glossary in the commit
-   that first uses it, pointing at the home that defines it, and a
-   word whose English meaning is ours has no Name (rule 6).
+   that first uses it, pointing at the home that defines it. A word
+   whose English meaning is ours has no Name (rule 6).
 10. **A section's title names its subject.** A title is read in every
     Fact Reference to its section, where the sentence already says
     the point. A title that states the point says it twice, and it
@@ -150,9 +153,9 @@ chat answers, records, commit messages, code comments.
 11. **An edit changes the lines its change needs.** The reviewer
     reads a diff at every commit boundary, for its change; a line
     rewrapped beside it hides the change among lines that did not
-    need to move. Markdown has no line width here: a reader meets the
-    text rendered, or in an editor that wraps, and 985 lines in 83 of
-    the 99 living files already run past 72. The 72 is
+    need to move. Markdown has no line width here. A reader meets the
+    text rendered, or in an editor that wraps. 985 lines in 83 of the
+    99 living files already run past 72. The 72 is
     the commit-messages manual's rule for a body and nothing else
     (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
     A scripted pass is held to the same rule: it counts headings,
@@ -168,8 +171,8 @@ An Agent Rule with no `paths:`, loaded in every session
 answer and every record written, and nothing else fires at all of
 them (`docs/models/agent.md` §8, *Choosing a channel*):
 
-- **A `paths:` list** loads when a file is touched, after a new
-  one's first draft is written, and chat has no path
+- **A Paths Rule** loads when a file is touched, after a new one's
+  first draft is written. Chat has no path
   (`docs/conventions/agent-arrangement/` §5.6, *Rules files*). CBC Run 3's first
   draft loaded on Markdown files, and was dropped for this.
 - **An Agent Skill** fires when the agent notices the moment. The failure
@@ -177,8 +180,8 @@ them (`docs/models/agent.md` §8, *Choosing a channel*):
 - **Memory or `CLAUDE.local.md`** held the lesson in CBC Run 3 and did
   not act. The local file is also one person's, and reaches no CBC Run.
 
-The cost is one page in every session, which is why the rule stays
-one page.
+The cost is one page in every session, which is why the Agent Rule
+stays one page.
 
 ## What this does not cover
 

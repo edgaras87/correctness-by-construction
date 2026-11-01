@@ -7,7 +7,7 @@
 
 So that a repo never commits what it should not, and never
 accumulates line-ending noise, from its first commit. Adopted with
-the Container Group (ADR-0038); no failure of the Concept Deliverer's is
+the Container Group (ADR-0038). No failure of the Concept Deliverer's is
 recorded before it. Lived since:
 
 - every CBC Run was born with the Hygiene Base;
@@ -15,7 +15,7 @@ recorded before it. Lived since:
   the Hygiene Base did (its `aa9b3ec`), and the Hygiene Base carries
   the line now;
 - CBC Run 3 appended its stack's ignores at the Plan Step that makes
-  the stack true (its `5336563`).
+  the stack true, the Plan Step that first builds the application on its stack (its `5336563`).
 
 ## What this is made usable as
 
@@ -23,7 +23,7 @@ recorded before it. Lived since:
   `delivery/container/.gitattributes` and
   `delivery/container/.editorconfig` — the Hygiene Base, shipped**, copied
   into a repo at its creation and the CBC Run's own from then on; they
-  never travel again.
+  are never delivered again.
 - **`docs/conventions/repo-hygiene/templates/java-spring/` — a
   Stack Overlay, the Concept Deliverer's**, three `.part` files for Maven
   build output, wrapper line-ending exceptions and SQL/conf
@@ -32,7 +32,7 @@ recorded before it. Lived since:
   repo's root — the Concept Deliverer's own**, the same Hygiene Base.
 
 They carry no rules to read. What
-derives from this page is that list. A change here walks it; a
+derives from this page is that list. A change here runs the Change Walk on it; a
 change forced in one of them is checked back against this page.
 
 ## The seats
@@ -49,8 +49,8 @@ repo" section (`docs/conventions/agent-arrangement/` §3.7, *`CLAUDE.local.md`*)
 | File | What it governs | Why it must exist from day zero |
 |---|---|---|
 | `.gitignore` | What never enters history: derived output, machine-local IDE state, OS junk, secrets | The worst ignores are the ones added *after* the junk is committed |
-| `.gitattributes` | Line-ending truth (`* text=auto eol=lf`) and per-file exceptions | Normalization must be in force before the first cross-platform clone, or history accumulates CRLF noise |
-| `.editorconfig` | Editor behavior the repo carries itself: charset, EOL, final newline, whitespace, indent | "Safe reservations" — rules fire only on files you touch (`[creating] [typing] [save] [format]` labels in the file); untouched files keep their bytes |
+| `.gitattributes` | The line-ending rule (`* text=auto eol=lf`) and per-file exceptions | Normalization must be in force before the first cross-platform clone, or history accumulates CRLF noise |
+| `.editorconfig` | Editor behavior the repo carries itself: charset, EOL, final newline, whitespace, indent | Rules fire only on files you touch, at the moments the file's labels name (`[creating] [typing] [save] [format]`). Untouched files keep their bytes |
 
 `.editorconfig` and `.gitattributes` are a pair: the editor *writes*
 LF, git *guarantees* LF. Neither alone is sufficient.

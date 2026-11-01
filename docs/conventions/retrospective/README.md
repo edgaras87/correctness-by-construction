@@ -10,7 +10,7 @@ an example and a place to land. The failure is lived, in CBC Run 3
 (its repository, `never-oversold`). Its plan ended on a section,
 "Retrospective (fill at project end)", with five questions (§2, *How
 the look back decides*). CBC Run 3 stopped before Release, the
-playbook's last Plan Step, so the section's moment never came; the
+playbook's last Plan Step, so the section's moment never came. The
 retrospective happened only because the reviewer asked for one. It
 then did far more than the section asked, and none of that was
 written down as a way of working (its `RETRO.md`, D23):
@@ -23,7 +23,8 @@ written down as a way of working (its `RETRO.md`, D23):
   lessons to CBC Run 3's own records before Release, and left what CBC Run
   3 had proved alone (its `RETRO.md`, D24).
 
-CBC Run 3 kept both as Agent Skills, and offered them. Taken on 2026-10-15
+CBC Run 3 kept the look back and the applying of its lessons as two
+Agent Skills, and offered them. Taken on 2026-10-15
 (ADR-0054).
 
 ## What this is made usable as
@@ -37,7 +38,7 @@ CBC Run 3 kept both as Agent Skills, and offered them. Taken on 2026-10-15
 
 The Concept Deliverer holds neither; its Convention Seat is on trial (below). This page
 explains; the Agent Skills state. What derives from this page is that
-list. A change here walks it; a change forced in one of them is
+list. A change here runs the Change Walk on it; a change forced in one of them is
 checked back against this page.
 
 ## The seats
@@ -55,20 +56,22 @@ decisions. In summary of them:
   - each experiment: keep or drop;
   - when the branch lands.
 
-  **They get:**
+  **The CBC Run gets:**
   - `RETRO.md`, with every decision, its example, what was rejected
     and where it lands;
   - TODO's *To the deliverer* pointing at it;
-  - the next CBC Run's checks, listed for its plan.
+  - the Plan Step Gate items only the next CBC Run can check, each
+    with the Plan Step that judges it.
 - **In the apply Plan Step, the reviewer decides:**
-  - each triage row;
+  - each triage row: a decision marked applied, partly applied, or
+    next CBC Run only;
   - each new decision the triage raises;
   - the commit plan before any change;
   - each planned commit at its boundary;
   - each revision of the plan that changes what lands;
   - when the branch lands.
 
-  **They get** the CBC Run's records improved where the triage said
+  **The CBC Run gets** its records improved where the triage said
   so, and `RETRO.md`'s *Applied to* section: what happened to each
   decision.
 
@@ -81,21 +84,21 @@ this repo, or CBC Run 4's CBC Run Reading shows the missing guide cost something
 
 On trial. This repo has no project end. Its Plan Steps close on
 "lessons folded back where they came from: conventions, the playbook,
-the concept". That names the places but no method.
+the concept", a close line its PLAN still carries. That names the places but no method.
 
 At the close of the Plan Step that runs the next CBC Run Birth, it
 runs both Agent Skills on itself, from `delivery/container/`, in place
-of that item. The parts are its own: the concept, the conventions, the
-delivery, the exchange, its records. The next Plan Step stands where
-a CBC Run has its next CBC Run. The trial's verdict says whether this
+of that close line. The parts are its own: the concept, the
+conventions, the delivery, the exchange, its records. For this repo,
+its next Plan Step plays the part a next CBC Run plays for a CBC Run. The trial's verdict says whether this
 repo holds its own copies, and what this Convention Seat is.
 
 ## 1. The two Plan Steps
 
 Looking and changing are kept apart on purpose. A retrospective that
 may fix what it finds starts fixing the first thing, and stops
-looking. But a look that changes nothing leaves a CBC Run released with
-records it has shown could read better. So a second Plan Step applies
+looking. But if the look changes nothing, the CBC Run is released with
+records it has already shown could read better. So a second Plan Step applies
 the lessons, before Release.
 
 *Its story: devlog 2026-10-15; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
@@ -114,7 +117,8 @@ the lessons, before Release.
   to real lines, not argued in the abstract.
 - **The reviewer's corrections are kept.** The agent's first
   version goes under "Considered and rejected", with the reason.
-- **The old questions still ask.** They are prompts, inside the walk:
+- **The old questions still ask.** They are prompts, asked while the
+  CBC Run is read part by part:
   - which Plan Steps took longer or shorter;
   - what needed to happen earlier;
   - what was tried and dropped;
@@ -131,15 +135,16 @@ the lessons, before Release.
   what it proved:** a plainer sentence, a fact kept once and linked.
 - **What changes how a Plan Step runs waits for the next CBC Run.** The
   CBC Run's Plan Steps are closed.
-- **History is never touched,** and the records later Plan Steps were
-  built on change only by a dated revision entry.
-- **New proof is not this Plan Step's.** A new test was never seen fail.
+- **History is never touched.** A record that later Plan Steps were
+  built on changes only by a dated revision entry.
+- **New proof is not this Plan Step's.** A test written now was never
+  seen to fail, so it proves nothing yet.
   A gap found here is listed, and the reviewer decides whether it
   earns a Plan Step of its own.
 - **The order of the commits follows influence.** Removing repeats
   goes before rewriting, so no text is polished and then deleted.
-  Owners go before the records that summarize them, README last. The
-  plain-words rewrite goes last.
+  Owners go before the records that summarize them, README last of
+  these. The plain-words rewrite comes after all of them.
 - **A fresh reader checks each rewrite** against the old text. The
   writer reads what they meant, not what is on the page.
 - **Tests are counted from this CBC Run's reports only.** A report
@@ -152,17 +157,18 @@ the lessons, before Release.
 ## 4. `RETRO.md`
 
 The look back's record, at the CBC Run's root, one per CBC Run. It holds
-every decision, the experiments, what was parked, and, after the
+every decision, the experiments, what was set aside for later, and,
+after the
 apply Plan Step, a row per decision saying what happened to it. The
 records table names its moment. It is history once the CBC Run is
 released: the next CBC Run starts from where its decisions landed, not
-from the note.
+from `RETRO.md`.
 
 ## Why it arrives this way
 
 Two Agent Skills, because each Plan Step is bound to a moment the agent would
-otherwise have to notice: the CBC Run finishing its building, and the note
-closing. A Plan Step opens each, and names the Agent Skill: where a pointer
+otherwise have to notice: the CBC Run finishing its building, and
+`RETRO.md` closing. A Plan Step opens each, and names the Agent Skill: where a pointer
 is placed decides whether it fires (`docs/models/agent.md` §12.2, *On the Pulled Channel*).
 
 A section in the plan did not work. Its moment was the project's

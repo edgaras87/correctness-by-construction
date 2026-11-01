@@ -13,12 +13,14 @@ dialects, each built for the job in hand, failed only when rendered
 
 - **`block-beta`** lost its arrow labels;
 - **`sequenceDiagram`** had to draw a read-only CBC Run Reading as an
-  arrow into the other repo. It asserted the opposite of the rule the
-  procedure existed to keep.
+  arrow into the other repo. The arrow said the opposite of the rule
+  it was drawn to show: a CBC Run Reading reads a CBC Run and sends it
+  nothing.
 
 And the answer that won one requirement that day was a table. A
-method named for diagrams would have left it out of the set. Written as a method the
-same day, made a convention on 2026-09-19 (ADR-0031).
+method named for diagrams would have left the table out of the
+candidates. The method was written the same day, and made a
+convention on 2026-09-19 (ADR-0031).
 
 ## What this is made usable as
 
@@ -31,7 +33,7 @@ same day, made a convention on 2026-09-19 (ADR-0031).
   the other, and written for this Convention Seat (ADR-0042, ADR-0069).
 
 This page explains; the Agent Skill states. What derives from this page
-is that list. A change here walks it; a change forced in one of
+is that list. A change here runs the Change Walk on it; a change forced in one of
 them is checked back against this page.
 
 ## The seats
@@ -42,7 +44,7 @@ way on its own.
 ## 1. What a comparison is
 
 Every candidate is built and rendered, and judged against what the
-reader must get. The unit is the thing being shown.
+reader must get. One comparison is made for each thing being shown.
 
 A comparison is that method, plus the one failure mode only a picture
 has: a notation that asserts something you did not mean. A table can be
@@ -79,24 +81,24 @@ are load-bearing.
 
 ### 2.4 The buildable notations
 
-The buildable notations are two, and the constraint is not aesthetic. Plain text, rendering on GitHub and in the IDE with
-no build step, leaves Mermaid and Unicode box drawing. PlantUML,
-Graphviz and D2 need a render step or a plugin; a committed SVG
-renders but is not text anyone can read in a diff. A diagram
-nobody can read in review is as opaque in a diff as a binary file.
+The buildable notations are two. The constraint is plain text that
+renders on GitHub and in the IDE with no build step, and only Mermaid
+and Unicode box drawing meet it. The constraint is not aesthetic.
+PlantUML, Graphviz and D2 need a render step or a plugin; a committed
+SVG renders but is not text anyone can read in a diff.
 
 ## Why it arrives this way
 
 An Agent Skill, opened when a structure is hard to see and more than one way
 of showing it could work (`docs/models/agent.md` §4.2, *Pulled Channel*). The agent
-recognises the moment by the question it is facing; no path is touched
-that a rule could load on, and nothing in a record would bring the
-method up then.
+recognises the moment by the question it is facing. No file is
+touched that a Paths Rule could load on. Nothing in a record would
+bring the method up then.
 
 ## What this does not cover
 
 - **Which notations a project uses** — the project's own. The
-  Concept Deliverer's Mermaid trial is provisional and does not travel
+  Concept Deliverer's Mermaid trial is provisional and is not delivered
   (ADR-0027 decision 3); a project deciding its own may reach a
   different answer.
 - **A choice that is not about how something is shown** — no

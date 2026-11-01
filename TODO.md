@@ -212,7 +212,7 @@
       - an Output Shape adapts: divergence is how it learns
         (`docs/conventions/shapes/` §2, *What an Output Shape is not*), and an Output Shape that never
         changes is finished or unread (`docs/conventions/shapes/`
-        §5.2, *A tick, and a difference*).
+        §5.2, *Ticks and differences*).
       - a Work Approach is written without the output's form; a part an
         Output Shape needs is asked for as content, in the Work Approach's own
         words.
@@ -224,7 +224,7 @@
         reads differently from one left out.
       - a part never asked for is a fifth kind of difference, beside
         the four a Plan Step Gate ends one in
-        (`docs/conventions/shapes/` §5.2, *A tick, and a difference*):
+        (`docs/conventions/shapes/` §5.2, *Ticks and differences*):
         the fix goes to the Work Approach, and the output records
         the gap.
       - Refinement Round 2's FINDING-211: one form told in an Agent Skill, an Output Shape
