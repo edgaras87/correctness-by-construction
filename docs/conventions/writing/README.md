@@ -83,9 +83,8 @@ the Agent Rule says outright that it sets the voice.
 
 Plain is the default for every kind of text. A kind of text
 gets another style only when plain has been shown to fall short
-there. The Agent Rule then names that kind and its style. None is
-named yet: CBC Run 3 put off a specification style until its claims
-had been judged in plain text (its `RETRO.md`, D14).
+there. The Agent Rule then names that kind and its style. None is named yet.
+*Its story: devlog 2026-11-01, the last read's work, pass 1 and most of pass 2.*
 
 ## 2. Why each rule
 

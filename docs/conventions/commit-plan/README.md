@@ -121,8 +121,8 @@ long, or is rewritten there with nothing in the plan saying why. *Its story: dev
 A commit that touches them is kept apart from everything else
 (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*), so
 a records commit planned to carry an Agent Skill's correction has to be
-split when it opens. *CBC Run 3's Step 10 plan put two changes under
-`.claude/` inside its records Plan Step, and split it by revision.*
+split when it opens.
+*Its story: devlog 2026-11-01, the last read's work, pass 1 and most of pass 2.*
 
 ### 2.10 The sweep
 
