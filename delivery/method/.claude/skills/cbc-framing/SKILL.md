@@ -1,6 +1,6 @@
 ---
 name: cbc-framing
-description: Frame a new backend system with correctness-driven design. Turn a raw project idea into one Falsifiable Promise, a System Definition of five layers, and an Invariant Slice Registry, BEFORE any code or tech choices. Use this whenever the user wants to start, design, or plan a backend or service where being wrong is expensive, such as orders, payments, inventory, bookings, anything owning facts or money. Use it too when they mention framing, a promise, invariants, idempotency, "what must never happen", CbC, or correctness-driven design, even if they just say "I have an idea for a service" or "help me design a backend". Do NOT use for throwaway prototypes, experiments, or low-stakes tools. Do NOT use for implementing code: that is the cbc-slice Agent Skill, which runs only after CBC Framing AND the system's bootstrap.
+description: Frame a new backend system with correctness-driven design. Turn a standing project idea into one Falsifiable Promise, a System Definition of five layers, and an Invariant Slice Registry, BEFORE any code or tech choices. Use this whenever the user wants to start, design, or plan a backend or service where being wrong is expensive, such as orders, payments, inventory, bookings, anything owning facts or money. Use it too when they mention framing, a promise, invariants, idempotency, "what must never happen", CbC, or correctness-driven design, even if they just say "I have an idea for a service" or "help me design a backend". Do NOT use for throwaway prototypes, experiments, or low-stakes tools. Do NOT use for implementing code: that is the cbc-slice Agent Skill, which runs only after CBC Framing AND the system's bootstrap.
 foundation: concept v1
 ---
 
@@ -13,7 +13,7 @@ Turn a standing project idea into three CBC Framing Exports:
 - the Invariant Slice Registry: the work, cut and ready.
 
 Documents only: no code, no tech choices. They live in the CBC Run's
-repo, born from Record Stubs. A CBC Framing may honestly end in "no
+repo, born from Record Stubs. A CBC Framing may end in "no
 project". That is a valid exit.
 
 The full procedure is `.claude/skills/cbc-framing/references/cbc-framing-workflow.md`.
@@ -38,7 +38,7 @@ method itself:
   call.
 - A first-time CBC Framing may ask for **Demonstration Mode**: derive
   with reasoning fully visible, teaching the moves.
-- **Every "outside" is written.** Rejected candidate promises, System
+- **Every "outside" is written.** Rejected candidate Falsifiable Promises, System
   Refusals, facts out of scope: each is recorded, never silently
   dropped.
 
@@ -48,7 +48,7 @@ own Decisions Log, `.claude/decisions.md`. The decision names what is
 delegated, why, and the cost accepted. The cost: the written
 derivation becomes the only review, so its legibility is part of the
 product. Every Agent Skill Stage's Exit is still presented, decided,
-and recorded where the records put sign-offs. Delegation changes who
+and recorded in the record the records table names for sign-offs. Delegation changes who
 calls the verdict, never whether it is written. Without that
 recorded decision, the default above stands.
 
@@ -67,7 +67,7 @@ Stage 6 cut the Invariant Slice Registry                       Invariant Slices 
 Run them in this order. Each Agent Skill Stage consumes exactly the
 previous one's output. An upward correction is made only as a CBC
 Framing Export Revision. Example: an Enemy Census finding that shows
-a missed System Possession becomes a logged revision of
+a missed System Possession becomes a CBC Framing Export Revision of
 LAYER-2-SYSTEM. A scheduled re-read is never one.
 
 ## Each Agent Skill Stage's Exit
@@ -77,7 +77,7 @@ Check these before asking the reviewer to close an Agent Skill Stage.
 - **Stage 0:** exactly one Falsifiable Promise, one sentence,
   falsifiable: the scenario that breaks it can be described
   concretely. The **Falsifiable Promise Audience** is named: who the
-  claim is sold to. Those who only use the system belong in the
+  Falsifiable Promise is made to. Those who only use the system belong in the
   Enemy Census. What done demonstrably means is stated. A second real
   purpose means the CBC Framing Intent is overloaded: force the
   choice. Record the rejected candidates.
@@ -94,8 +94,8 @@ Check these before asking the reviewer to close an Agent Skill Stage.
   assumptions.** List what can hurt, never what you trust. The
   workflow allows two labelled blocks beside the Enemy Facts:
   - the Trust Assumptions, accepted deliberately and kept short.
-    Either way, they answer who besides the system can write what it
-    stores;
+    They answer who besides the system can write what it stores,
+    whether that writer is trusted or defended;
   - the Runtime Ground, with the size the system is built for.
 
   Exit only by Enemy Census Saturation: two consecutive fresh Enemy
@@ -146,7 +146,7 @@ CBC Framing Export,** when the reviewer gives the verdict: the CBC
 Framing Intent at Stage 0, the System Definition's layer at Stages 1
 to 5, the Invariant Slice Registry at Stage 6. The CBC Framing Export
 is the result's only home. It carries a draft line at its top until
-the close. Example, in the System Definition: "FACT-CALLER-5. A
+CBC Framing's close. Example, in the System Definition: "FACT-CALLER-5. A
 caller reuses an idempotency key with a different order body → a
 lie: 'this is a repeat' when it isn't."
 
@@ -159,7 +159,7 @@ links to each result and never restates it. Three rules:
    Enemy Census Probes, the dead ends, the reviewer's questions, and
    the verdict, written inline where it happens. Then a link to where
    the result lives. Example: "Stage 2. Considered 'a caller resends
-   a key with only the quantity changed'; folded into FACT-CALLER-5.
+   a key with only the quantity changed'; merged into FACT-CALLER-5.
    Asked: is a changed quantity the same fact as a changed delivery
    address? Yes: both are a different body under a reused key.
    Verdict: accepted. Results: System Definition,
@@ -179,7 +179,7 @@ Where each kind of record lives:
 - a delegation arrangement: the CBC Run's Decisions Log, since it is
   agent setup, not project truth;
 - the CBC Framing's adoption: one ADR in the CBC Run's `docs/adr/`,
-  at the close.
+  at CBC Framing's close.
 
 ## Export and handoff
 
@@ -192,7 +192,7 @@ internal truth at one path:
 - `registry.md`: the Invariant Slices, the Invariant Slice Folds, the
   CBC Framing Reconciliation and the `chosen-next` Invariant Slice.
 
-At the close, **check that each CBC Framing Export reads alone**, then
+At CBC Framing's close, **check that each CBC Framing Export reads alone**, then
 remove its draft line. Nothing is composed or copied. A result copied
 from one file to another drifts, and a rewording can turn true into
 false.
@@ -201,7 +201,7 @@ The **CBC Framing Export Filter** holds throughout: a CBC Framing
 Export never refers to the CBC Framing Derivation's machinery. Its
 conclusions stand on the CBC Framing Exports themselves. The same
 filter refuses **Agent Language**: nothing in a CBC Framing Export
-names this Agent Skill, a workflow stage, or the CBC Run's
+names this Agent Skill, an Agent Skill Stage, or the CBC Run's
 arrangement. A reader without the Agent Skills directory must not
 need it to read them.
 
@@ -220,7 +220,7 @@ is the commits', not the file's. Each layer's commit places its
 section where the workflow presents it, so the System Definition ends
 LAYER-1-ENVIRONMENT to LAYER-5-INTERACTION, from the outside in, and
 no reorder is needed after. Skipping the order departs from the
-default: log why.
+default: log why in the Decisions Log.
 
 **The Invariant Slice Registry's outcomes,** what the file must
 carry, whatever its layout:
@@ -233,7 +233,7 @@ carry, whatever its layout:
    `open · chosen-next · in-progress · closed (date, evidence)`;
 3. an Evidence Precondition, a condition the Invariant Slice checks
    but never attacks, and an Adversity Flag, an adversity that
-   cannot be created the normal way, sit on the entry they concern;
+   cannot be created the normal way, sit on the Invariant Slice Entry they concern;
 4. any grouping is headings for the reader, never a boundary;
 5. the CBC Framing Reconciliation accounts for every Enemy Collision
    Kill, and states even its absences, the written zero;
@@ -242,8 +242,8 @@ carry, whatever its layout:
 
 The default layout is the Agent Skill Template
 `.claude/skills/cbc-framing/templates/registry.md`. Declining it is
-off-template: derive your own layout from the outcomes above. The
-rest is (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill
+off-template: derive your own layout from the outcomes above. How it
+is used is the delivered-copies Agent Rule's (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill
 Template is copied and filled, never edited in place*).
 
 **The CBC Framing Exports are living records, not written once.** The
@@ -269,14 +269,14 @@ a second home, and two homes diverge. What each piece derives from:
 | the CBC Framing Intent | why this exists | one paragraph |
 | the System Definition's System Possessions and System Refusals | what this is | one paragraph, no parts named |
 | the Invariant Slice Registry | the planned invariants | one line per invariant |
-| the method | a note that points | two lines, never a restatement |
-| the repo's observable state | an honest status line | one line |
+| the method | a note that points at the method | two lines, never a restatement |
+| the repo's observable state | a status line that says what the repo does now | one line |
 
 Depth is a link into the CBC Framing Exports, never more prose. At
 the CBC Framing close, the thin README is the whole public page. With
 each home linked, a restatement in the README fails: the reader reads
 the home instead. A CBC Run whose conditions differ may argue against
-this, departing from the default, logged. The README is refreshed at
+this, departing from the default, logged in the Decisions Log. The README is refreshed at
 milestones: an Invariant Slice Close moves the status line. The CBC
 Framing Export Filter applies with full force: the README tells what
 the system is and guarantees, never how the work ran.
@@ -288,7 +288,7 @@ CBC Framing and the first Invariant Slice sits real project work:
 - the Runtime Ground the system runs on, its store among it;
 - then the skeleton and its Adversity Harness.
 
-System Readiness defines it
+System Readiness defines what must stand
 (`.claude/skills/cbc-slice/references/system-readiness.md`). Invariant
 Slice work begins only when the reviewer signs off System Readiness.
 The cbc-slice Agent Skill will check.

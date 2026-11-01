@@ -3,13 +3,13 @@
      lines. Declining this Agent Skill Template is off-template:
      derive your own layout from the outcomes in the Agent Skill's
      export section (.claude/skills/cbc-framing/SKILL.md, Export and
-     handoff). The rest is (.claude/rules/delivered-copies.md, rule
-     8, An Agent Skill Template is copied and filled, never edited in
+     handoff). How it is used is the delivered-copies Agent Rule's
+     (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is copied and filled, never edited in
      place). -->
 
 # Invariant Slice Registry — the work, cut and ready
 
-Framed <date>; every verdict <the reviewer's — or: delegated, per
+CBC Framing closed <date>; every verdict <the reviewer's — or: delegated, per
 <the CBC Run's record of that decision>>. This file is the source of
 truth for what to work next. The order is an expectation, decided
 again at each Invariant Slice Close, never assumed from this file's
@@ -39,7 +39,8 @@ must *create*. Status values: `open` · `chosen-next` ·
 - **Adversity Flag:** <what cannot be created the normal way, and the
   unusual form of evidence named here, so whoever works the Invariant
   Slice is warned, not surprised. The Invariant Slice answers it by
-  name in its Correctness Specification: created, or removed with the
+  name in its Correctness Specification: created, or the adversity
+  removed by a contract the Correctness Specification adopts, with the
   removal shown. Or "none">
 - **Presumes:** <the Invariant Slices this one stands on, and what it
   takes from each; or "nothing">
@@ -49,8 +50,8 @@ must *create*. Status values: `open` · `chosen-next` ·
 - **Record:** <a link to the Invariant Slice Record; "none" until it has one>
 - **Answered at close:** <"none" until the Invariant Slice Close.
   Then one line per Adversity Flag or judgment it settled: the answer
-  in a sentence, and where in the record. How the Invariant Slice got
-  there is the record's, never told here. CBC Framing's words above
+  in a sentence, and where in the Invariant Slice Record. How the Invariant Slice got
+  there is the Invariant Slice Record's, never told here. CBC Framing's words above
   stay as written.>
 
 Every field is present; an empty one says "none", so a reader can
@@ -75,14 +76,14 @@ tell empty from forgotten.
 
 <One line, kept current: which Invariant Slices stand open, or "all
 N Invariant Slices closed with evidence (date)". New work enters by
-framing again, or as a new Invariant Slice through this Invariant
+a new CBC Framing, or as a new Invariant Slice through this Invariant
 Slice Registry, never around it.>
 
 ## CBC Framing Reconciliation
 
 Every Enemy Collision Kill the System Definition's LAYER-4-PROBLEMS
 names, accounted for: <N> Enemy Collision Kills ↔ <n> Invariant
-Slices + <m> Invariant Slice Folds + <deferrals> + <refusals>. One
+Slices + <m> Invariant Slice Folds + <deferrals> + <Scope Exclusions>. One
 row per Enemy Collision Kill, so that nothing dropped is checked by
 counting. The System Definition's LAYER-4-PROBLEMS is the home of
 every Enemy Collision Kill: what dies, against which Enemy Fact, from
@@ -100,11 +101,11 @@ Folds: <each Invariant Slice Fold → the first Invariant Slice consuming it>.
 The written zero: <state absences too — "no deferrals; no kill
 dropped" is a line, never a silence.>
 
-## Ordering expectation (decided again at each close)
+## Ordering expectation (decided again at each Invariant Slice Close)
 
 <SLICE-1 → SLICE-2 → …, with a one-line rationale: what each proof
 takes as already standing. Each Invariant Slice Close decides the
-next again, and says why in its own record. Here: the order as it
+next again, and says why in its own Invariant Slice Record. Here: the order as it
 stands, and a link to each Invariant Slice Record, never the story
 again.>
 

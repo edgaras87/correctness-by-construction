@@ -1,6 +1,6 @@
 # CBC Framing workflow — layering the system
 
-*The first part of the method: how a raw idea becomes a System
+*The first part of the method: how a standing idea becomes a System
 Definition in layers and an Invariant Slice Registry. It ends exactly
 where `.claude/skills/cbc-slice/references/cbc-slice-workflow.md`
 begins: its output is that workflow's input.*
@@ -16,7 +16,7 @@ file owns the worked example. The copy,
 
 ## The unit
 
-A **CBC Framing** is one Falsifiable Promise worked into an Invariant
+A CBC Framing is one Falsifiable Promise worked into an Invariant
 Slice Registry. Input: a standing idea, such as a need or a candidate
 problem. Output: the three CBC Framing Exports:
 
@@ -24,7 +24,7 @@ problem. Output: the three CBC Framing Exports:
 - the System Definition, its five System Layers filled in;
 - the Invariant Slice Registry, the work, cut and ready.
 
-A CBC Framing may honestly end in **no project**. That is a valid
+A CBC Framing may end in **no project**. That is a valid
 exit, not a failure.
 
 ## The order, and why it differs from the presentation
@@ -43,8 +43,8 @@ Stage 5  check between owners            (LAYER-5-INTERACTION)  — only if owne
 Stage 6  cut the Invariant Slice Registry                       — theorems vs contracts
 ```
 
-Two inversions, used in all six CBC Framings so far: the two in the
-archive this repo came from, and those of CBC Runs 3 to 6.
+Two swaps of order, used in all six CBC Framings so far: two CBC
+Framings made before the first CBC Run, and those of CBC Runs 3 to 6.
 
 - **LAYER-2-SYSTEM before LAYER-1-ENVIRONMENT.** The Falsifiable
   Promise can be derived on rough Enemy Sketches. The full Enemy
@@ -71,7 +71,7 @@ Four rules govern every handoff:
 2. **Upward only through a CBC Framing Export Revision, never a
    scheduled one.** The Enemy Census (Stage 2) may reveal a missed
    System Possession or an unwritten System Refusal. Then
-   LAYER-2-SYSTEM gets a logged revision. If not, LAYER-2-SYSTEM
+   LAYER-2-SYSTEM gets a CBC Framing Export Revision. If not, LAYER-2-SYSTEM
    stands. There is no routine scheduled re-read back up: that
    reopens settled layers forever.
 3. **Reasoning may cross layers; statements may not.** Talk of
@@ -80,7 +80,7 @@ Four rules govern every handoff:
    resulting LAYER-2-SYSTEM statement stays purely LAYER-2-SYSTEM.
    Every recorded statement sits in exactly one System Layer.
 4. **Every "outside" is written:** a System Refusal, a deferral, a
-   rejected candidate promise
+   rejected candidate Falsifiable Promise
    (`.claude/skills/cbc-framing/SKILL.md`, *The mode — non-negotiable*).
 
 ---
@@ -103,11 +103,11 @@ Export, never restarting per section.
 | an Enemy Collision Kill (Stage 3) | KILL-<n> | KILL-15 |
 | an Invariant Slice Fold (Stage 6) | FOLD-<n> | FOLD-1 |
 | an Invariant Slice (Stage 6) | SLICE-<n> | SLICE-4 |
-| a System Layer, its number before its name, as the concept chapter has them | LAYER-<n>-<NAME> | LAYER-4-PROBLEMS |
+| a System Layer, its number before its name, as `docs/concept/01-layered-system.md` has them | LAYER-<n>-<NAME> | LAYER-4-PROBLEMS |
 
 A CBC Framing Concern that becomes exactly one Invariant Slice is
-called by that Invariant Slice's tag from Stage 6 on. A letter is
-used only for a CBC Framing Concern that does not. A number local to
+called by that Invariant Slice's tag from Stage 6 on. A CBC Framing
+Concern that does not is called by a letter: A, B and on. A number local to
 one record carries its owner outside it
 (`.claude/rules/writing.md`, rule 6): "SLICE-4 GUARANTEE-1".
 
@@ -117,9 +117,9 @@ one record carries its owner outside it
 proof matter?*
 
 Name the capability. Name who values it. Name what "done"
-demonstrably means. Filter out promises that are really features:
+demonstrably means. Filter out candidate Falsifiable Promises that are really features:
 *could this claim be false, and would proving it true matter to the
-named audience?* A second real purpose is not a second promise. A
+Falsifiable Promise Audience?* A second real purpose is not a second Falsifiable Promise. A
 CBC Framing Intent carrying two is overloaded: force the choice.
 
 Three sharpenings, each written into the CBC Framing Intent:
@@ -128,16 +128,16 @@ Three sharpenings, each written into the CBC Framing Intent:
   the party for whom the proof matters. Those who use the running
   system, callers and services, cannot be made a claim. They create
   adversity, and enter the Enemy Census as actors, never the CBC
-  Framing Intent as audience.
+  Framing Intent as its Falsifiable Promise Audience.
 - **Worth proving is two questions, both answered concretely:**
   - could it be false? Its negation is named as an event, not a
     vague worry;
-  - would proving it true matter to the named audience?
+  - would proving it true matter to the Falsifiable Promise Audience?
 - **What "done" demonstrably means, spelled out:**
   - the named adversity is really created, never sequential replay
     pretending to be it;
-  - the State Witness, checkable from outside, on state, never
-    fires;
+  - the State Witness, read from outside on the stored state, never
+    shows the Falsifiable Promise broken;
   - the Falsifiable Promise Audience can follow the path from claim
     to proof.
 
@@ -166,7 +166,7 @@ makes them exact.
 stated.
 **Hands down:** the System Possessions, which say what the Enemy
 Census must cover, and the Enemy Sketches still to be made exact.
-This is also where the boundary is. Every crossing from outside is
+Stage 1 also sets the boundary. Every crossing from outside is
 where untrusted becomes trusted: check at the door.
 
 ## Stage 2 — Name the enemies (LAYER-1-ENVIRONMENT)
@@ -185,20 +185,20 @@ Enemy Fact leaves *us* facing.
 **The mistake to avoid:** an Enemy Census is not a list of
 assumptions. Listing what you *trust* ("the store is atomic"), in
 place of what can *hurt* ("a write's outcome can be unknowable"),
-passes a casual reading and fails the standard. The store is an
+passes a casual reading and fails Stage 2's Exit. The store is an
 actor that can hurt you, not a helper whose tools always work.
 
 Two labelled blocks are allowed beside the Enemy Facts, never in
 their place.
 
 **The first block is the Trust Assumptions,** under the label
-**"Trust assumptions — accepted deliberately, not defended"**. It is
+**"Trust Assumptions — accepted deliberately, not defended"**. It is
 the opposite of hidden trust. Each line is a deliberate acceptance a
 reviewer can challenge ("the store durably holds a commit it
 acknowledged"). The block is kept short. Once it is easier to extend
 than the list of Enemy Facts, it has become the mistake above.
 
-The block owes one answer, either way, in any system that keeps
+The block must answer one question, either way, in any system that keeps
 state: **who besides the system can write what it stores?** It may
 be a console, a script, another service, or the store's superuser.
 - Trusted: the writer is a line in this block, and what it does not
@@ -211,7 +211,7 @@ answer, defend against anyone who might write, has no end: a writer
 who can remove a Structural Wall cannot be walled against.
 
 **The second block is the Runtime Ground,** under the label **"The
-runtime ground"**. The work that establishes the Runtime Ground,
+Runtime Ground"**. The work that establishes the Runtime Ground,
 after CBC Framing, requires it. It says what the system assumes
 about where it runs, so the Runtime Ground is derived from need
 rather than habit. It has six lines:
@@ -221,7 +221,7 @@ rather than habit. It has six lines:
    one by the README's commands;
 3. **the instances:** whether more than one instance of our process
    runs on that machine. It is an Enemy Fact, not a deployment
-   choice, when a line of the Enemy Census races them;
+   choice, when the Enemy Census has the instances race;
 4. **the store:** a service on that machine, reachable by every
    instance and outliving any of them. What it is stays the decision of
    the work that establishes the Runtime Ground;
@@ -238,7 +238,7 @@ Falsifiable Promise says so. Six lines, not a design. System
 Readiness, the check before Invariant Slice work begins
 (`.claude/skills/cbc-slice/references/system-readiness.md`), reads
 this block first. A CBC Framing that leaves it out writes it later,
-by a dated revision. Two CBC Runs left it out and wrote it later.
+by a CBC Framing Export Revision. Two CBC Runs left it out and wrote it later.
 
 **How Enemy Census Saturation is reached.** The first listing ran on
 one Enemy Census Probe Lens, actors × the three negations. It only
@@ -290,9 +290,9 @@ Enemy Census without deriving it all again:
 **Exit, by Enemy Census Saturation:** run the Enemy Census Probe
 Lenses until **two consecutive ones yield zero new Enemy Facts**. It
 is a number, not a feeling. **The Enemy Census Probe Log is recorded
-in LAYER-1-ENVIRONMENT:** each Enemy Census Probe's lens, its stamps,
+in LAYER-1-ENVIRONMENT:** each Enemy Census Probe's Enemy Census Probe Lens, its Enemy Census Probe Stamps,
 and what it found, or "nothing new". So a later reader can check the
-saturation claim, not just read it. An Enemy Fact out of scope gets a
+Enemy Census Saturation claim, not just read it. An Enemy Fact out of scope gets a
 written refusal or deferral line, never silence.
 
 **What the exit leaves behind, three lists, written:**
@@ -302,7 +302,7 @@ written refusal or deferral line, never silence.
   boundary, not a disclaimer. It is worth writing because it
   *visibly stops Enemy Facts* at Stage 3, where an excluded Enemy
   Fact collides with nothing.
-- **The Enemy Census Gaps.** What was *not* examined, named honestly:
+- **The Enemy Census Gaps.** What was *not* examined, named:
   clock skew, deployment transitions, and the like. So a later reader
   knows where the Enemy Census ends, not just what it holds. An Enemy
   Census Gap is raised at the Agent Skill Stage's close, never
@@ -313,7 +313,7 @@ written refusal or deferral line, never silence.
   - *in*: more of the same named kind, a richer demonstration;
   - *out*: a new kind of difficulty, the subject of another
     Falsifiable Promise;
-  - *censused-and-fenced*: the Enemy Facts stay, and the boundary
+  - *censused-and-excluded*: the Enemy Facts stay, and the boundary
     holds.
 
   Who decides each is the mode's rule
@@ -321,7 +321,7 @@ written refusal or deferral line, never silence.
 
 **Hands down:** the list of Enemy Facts and the three lists.
 **Hands up (conditional, logged):** a missed System Possession or
-unwritten System Refusal becomes a revision of LAYER-2-SYSTEM.
+unwritten System Refusal becomes a CBC Framing Export Revision of LAYER-2-SYSTEM.
 
 ## Stage 3 — Run the Enemy Collisions (LAYER-4-PROBLEMS)
 
@@ -338,13 +338,13 @@ when their *proof obligations* differ. Merge duplicates by what an
 Enemy Fact does to us, not whose fault it is. Gaps in the wording of
 LAYER-2-SYSTEM's own System Possessions, CBC Framing Concerns with no
 enemy, are marked as Invariant Slice Fold Candidates, not Invariant
-Slices. A System Possession whose every Enemy Fact is used by other
-Enemy Collision Kills, and that has none of its own, is normal.
+Slices. A System Possession can have no Enemy Collision Kill of its own:
+each Enemy Fact that reaches it may already be counted in another's. That is normal.
 
 **Exit:** a full pass across all Enemy Facts × System Possessions
 yields nothing new.
 **Hands down:** Enemy Collision Kills stated as invariants, adversity
-named. The cbc-slice workflow's Stage 1, specify-correctness, takes
+named. The cbc-slice Agent Skill's Stage 1, specify-correctness, takes
 them with no translation.
 
 ## Stage 4 — Sort into owners (LAYER-3-AREAS)
@@ -357,7 +357,7 @@ touches. A division is real only if it would hold **separate state
 AND separate decision authority**. The count of CBC Framing Concerns
 is not the count of Responsibility Areas. Where a plausible
 Responsibility Area Seam fails the test, name it and refuse to draw
-it. A seam named and not drawn is a better record than silence.
+it. A Responsibility Area Seam named and not drawn is a better record than silence.
 
 **Exit:** ownership stated, even if the statement is "one
 Responsibility Area". A thin or empty LAYER-3-AREAS, reached by
@@ -370,13 +370,13 @@ gap. **Hands down:** the owners, or the one owner.
 
 If not: record **empty, with its reasons**. Each emptiness follows
 from an earlier decision, such as one Responsibility Area, or
-siblings refused at LAYER-2-SYSTEM. It is never a blank.
+sibling systems refused at LAYER-2-SYSTEM. It is never a blank.
 
 If so: name what must hold across the Responsibility Area Seams that
 no single Responsibility Area's System Guarantee covers. Examples:
 ordering across a boundary, failure that must be coordinated,
-consistency across the seams. LAYER-5-INTERACTION takes
-LAYER-3-AREAS's boundaries and LAYER-4-PROBLEMS's local guarantees
+consistency across the Responsibility Area Seams. LAYER-5-INTERACTION takes
+LAYER-3-AREAS's boundaries and LAYER-4-PROBLEMS's local System Guarantees
 as given. It never redefines them.
 
 **Exit:** LAYER-5-INTERACTION empty with its reasons, or its
@@ -387,11 +387,11 @@ constraints across Responsibility Areas stated.
 *Question: which CBC Framing Concerns are theorems, which are
 contracts?*
 
-An **Invariant Slice** is one invariant × one adversity that needs
+An Invariant Slice is one invariant × one adversity that needs
 its own proof. The Agent Skill Stage runs as **three passes**, each
 with its test and its record:
 
-1. **The sort.** Every CBC Framing Concern gets one of two stamps,
+1. **The sort.** Every CBC Framing Concern gets one of two labels,
    with a written *because* for each:
    - **theorem:** it carries an invariant under adversity of its
      own. Proof means *creating* that adversity and the State
@@ -400,7 +400,7 @@ with its test and its record:
      create against it.
 
    The *because* means a CBC Framing Concern that almost got the
-   other stamp has its doubt answered in the record. When Stage 3's
+   other label has its doubt answered in the record. When Stage 3's
    discipline held, Enemy Collision Kills arrive already shaped as
    theorems, and this pass confirms them. That is the discipline
    working, not the pass skipped.
@@ -446,8 +446,8 @@ standing idea, and does not invent one.
   Briefing.
 - How the Falsifiable Promise generalizes for systems that compute or
   relay rather than own facts, such as a renderer or a proxy.
-- The case with several owners, end to end. The two archive CBC
-  Framings and CBC Run 3's found one Responsibility Area each. CBC
+- The case with several owners, end to end. The two CBC Framings made
+  before the first CBC Run and CBC Run 3's found one Responsibility Area each. CBC
   Run 5's found two, CBC Run 6's three, each with a filled
   LAYER-5-INTERACTION, and both CBC Runs went on through their
   Invariant Slices. CBC Run 4's is not yet read. What the case

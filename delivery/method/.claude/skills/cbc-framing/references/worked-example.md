@@ -2,7 +2,7 @@
 
 *A demonstration run, invented for teaching, not a CBC Framing a CBC Run did.
 It shows Part 1 (CBC Framing, Stages 0 to 6), the three CBC Framing
-Exports it leaves behind, and how Part 2 (the cbc-slice workflow)
+Exports it leaves behind, and how Part 2 (the cbc-slice Agent Skill)
 consumes them. Kept deliberately small: one Falsifiable Promise, one
 Responsibility Area.*
 
@@ -15,7 +15,7 @@ Responsibility Area.*
 Idea brought to the CBC Framing: "a backend where shops submit
 customer orders."
 
-Candidate promises considered and recorded:
+Candidate Falsifiable Promises considered and recorded:
 - "Fast order processing": rejected, a wish for a feature, not
   falsifiable.
 - "Orders are never lost AND payment always completes": rejected,
@@ -27,14 +27,14 @@ exactly one recorded order — no matter how many times it arrives.*
 Falsifiable Promise Audience: the shop owner, the party the proof
 matters to, since a double order is theirs to refund. Integrating
 clients are callers. They enter the Enemy Census as actors, not the
-CBC Framing Intent as audience.
+CBC Framing Intent as its Falsifiable Promise Audience.
 
 Falsifiable: the scenario that breaks it is concrete. A timeout
 retry creates two orders, and a customer is charged twice.
 
 Done, demonstrably:
 - identical submissions really fired at once, and replayed after a
-  swallowed response;
+  lost response;
 - the State Witness, recorded orders per submission read from the
   store, never above one;
 - the path from this sentence to that test can be followed by the
@@ -44,12 +44,12 @@ Done, demonstrably:
 
 The System Possession Test on each candidate:
 
-| Candidate | If someone else owned it, could they break the promise? | Verdict |
+| Candidate | If someone else owned it, could they break the Falsifiable Promise? | Verdict |
 |---|---|---|
 | POSSESSION-1. The order records | Yes — they could double-record | **ours** |
 | POSSESSION-2. The new-vs-repeat decision | Yes — a retrying caller deciding "I'm new" breaks it | **ours** |
 | POSSESSION-3. The answer to a repeated submission | Yes — a wrong replay creates a second order | **ours** |
-| Payment processing | No — promise stays true even if payment fails | refused, written |
+| Payment processing | No — the Falsifiable Promise stays true even if payment fails | refused, written |
 | Product catalog correctness | No — someone else's fact | refused, written |
 | Notifying the customer | No | refused, written |
 
@@ -78,7 +78,7 @@ an actor. Enemy Facts, consequence first:
 - **FACT-STORE-6.** A write's outcome can be unknowable (store timeout) →
   we face uncertainty about our own state.
 
-Trust assumptions — accepted deliberately, not defended: **ASSUMPTION-1.**
+Trust Assumptions — accepted deliberately, not defended: **ASSUMPTION-1.**
 Our service is the only writer of the order records; whoever holds the
 store's own credentials writes none by hand.
 
@@ -99,14 +99,14 @@ Two Enemy Census Probes in a row found nothing new: saturated.
 The Runtime Ground, beside the Enemy Facts:
 1. the machine: one local machine;
 2. a stranger's clean machine stands the system up from the README;
-3. the instances: one instance of our process, since no line of the
-   Enemy Census races two of us;
+3. the instances: one instance of our process, since no Enemy Fact
+   has two instances racing;
 4. the store: a service on that machine, reachable by the instance
    and outliving it;
 5. the clock: the machine's;
 6. the size: one shop, up to ten thousand orders, each a record and
    its key kept for life, and fifty identical submissions racing at
-   once, the hammering's own count.
+   once, the count the evidence will use.
 
 Revision check: did the Enemy Census reveal a missed System
 Possession? No. LAYER-2-SYSTEM stands, and no CBC Framing Export
@@ -191,7 +191,7 @@ Slice.
 
 All CBC Framing Concerns touch one state, the order records, and one
 decision, new or repeat. A candidate Responsibility Area Seam was
-probed: "key management" as its own Responsibility Area. It fails the
+examined: "key management" as its own Responsibility Area. It fails the
 test: no separate state, no separate decision authority. Named, not
 drawn. **Ownership: one Responsibility Area, order intake.** Confirmed
 by sorting, not assumed.
@@ -211,7 +211,7 @@ adversity*.
 - **SLICE-1 — "exactly once under duplicate delivery."** Invariant:
   N arrivals of one submission → exactly one recorded order. Covers
   KILL-1 to KILL-3 and KILL-5: its evidence must create replays,
-  races, AND the lie of a reused key. Judgment logged: races fold in
+  races, AND the lie of a reused key. Judgment logged: races are merged
   here because duplicate delivery is the one Adversity Class, the
   concurrent case its hardest.
 - **SLICE-2 — "recovery converges under partial failure."**
@@ -234,7 +234,7 @@ decided again at the Invariant Slice Close.
 ## What now exists (the three CBC Framing Exports)
 
 1. **CBC Framing Intent:** the Falsifiable Promise in one sentence,
-   its audience, what done demonstrably means, and the rejected
+   its Falsifiable Promise Audience, what done demonstrably means, and the rejected
    candidates.
 2. **System Definition:**
    - LAYER-1-ENVIRONMENT: the six Enemy Facts, one Trust Assumption,
@@ -251,7 +251,7 @@ decided again at the Invariant Slice Close.
 
 ---
 
-# Part 2 — SLICE-1 enters the cbc-slice workflow
+# Part 2 — SLICE-1 enters the cbc-slice Agent Skill
 
 **Stage 1, specify-correctness,** takes the Invariant Slice Entry
 *as written*, with no translation:
@@ -273,7 +273,7 @@ decided again at the Invariant Slice Close.
   - **EVIDENCE-1:** a hammering test, many concurrent identical
     submissions (GUARANTEE-1 and GUARANTEE-2);
   - **EVIDENCE-2:** an injected-replay test, a retry after a
-    swallowed response (GUARANTEE-3);
+    lost response (GUARANTEE-3);
   - **EVIDENCE-3:** a mismatched-body test (GUARANTEE-4).
 
   Gate passed: zero mechanisms named.
@@ -289,7 +289,7 @@ the strongest available:
 
 Escape Hatch Hunt, against the Trust Assumption: every write path of
 ours, an admin endpoint included, goes through the same
-constraint-guarded table. There is no side door. Someone at the
+constraint-guarded table. There is no Escape Hatch. Someone at the
 store's console is trusted, not walled against (NOT-OURS-3). Gate
 passed: no Invariant Slice Guarantee without its Structural Wall.
 
@@ -312,7 +312,7 @@ decides again what is next.
 
 ---
 
-## What the example shows about the seams
+## What the example shows about the handoffs
 
 - The Enemy Census (Stage 2) is where Part 2's Adversity Models come
   from: the Correctness Specification *took* its threats from
