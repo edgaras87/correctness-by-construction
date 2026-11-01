@@ -29,17 +29,6 @@ A structure is hard to see and more than one way of showing it
 could work. A Mermaid dialect against another, a table against a
 picture, a numbered list against both.
 
-**The candidate set must contain at least one thing that is not a
-picture** — a table, a numbered list, the prose you already have.
-Otherwise a picture wins by construction and the comparison cannot
-return *no picture*, which is a real answer.
-
-Where a project holds to plain text that renders on GitHub and in
-the IDE with no build step, the buildable notations are Mermaid and
-Unicode box drawing. PlantUML, Graphviz and D2 all need a
-render step or a plugin and are out; a committed SVG renders but is
-not text anyone can read in a diff.
-
 It does not fire for a form with one obvious answer, and it does
 not fire twice for the same question — the record from last time
 is the answer. An obvious answer means a clear one, not a simple
@@ -47,6 +36,8 @@ form: when what the work needs is already clear, the comparison does not
 fire, however large the form.
 
 ## 2. The comparison's steps
+
+Why they are so: (`docs/conventions/visual-comparison/` §2.1, *A non-picture in the set*; §2.2, *Deciding by the render*; §2.4, *The buildable notations*).
 
 1. **Write the requirements first, in a `temp/` draft.** What the
    artifact must *carry*, not what it should look like. Each one
@@ -62,9 +53,17 @@ fire, however large the form.
 3. **List the candidates, including the plain ones.** A numbered
    list and a table are candidates. So is the form you already
    have — leaving it in gives "nothing wins" somewhere to land.
+   The set must contain at least one thing that is not a picture.
+   Otherwise a picture wins by construction and the comparison
+   cannot return *no picture*, which is a real answer.
 
 4. **Build every candidate for real.** Not a sketch, not a
-   description. The findings come from building.
+   description. The findings come from building. Where a project
+   holds to plain text that renders on GitHub and in the IDE with no
+   build step, the buildable notations are Mermaid and Unicode box
+   drawing. PlantUML, Graphviz and D2 all need a render step or a
+   plugin and are out; a committed SVG renders but is not text anyone
+   can read in a diff.
 
 5. **Render them where they will actually be read**, and judge
    pass or fail per requirement with the reason. A verdict reached
@@ -123,13 +122,13 @@ name the case, it is not an entry yet.
   What the work actually
   needed was to build one picture, ask what it was *for*, and build
   the second picture that question produced. The Agent Skill's own "it does not fire for a form with one obvious answer"
-(§1, *When this fires*) covers this, and was read as
+  (§1, *When this fires*) covers this, and was read as
   being about simple forms rather than about clear answers. Adding
   two pictures to one document is ordinary work; it earned no ADR,
   and writing one would have been ceremony over a comparison that
   did not happen.
 
-- **Using a dialect is not fighting it.** Ordinary syntax is
+- **Using a dialect is not fighting it** (`docs/conventions/visual-comparison/` §2.3, *Fighting a notation*). Ordinary syntax is
   ordinary. Invisible links, spacer nodes and nodes declared out
   of meaning order are the fight, and a candidate needing them has
   lost.

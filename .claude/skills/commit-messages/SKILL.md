@@ -16,6 +16,8 @@ foundation: the commit-messages convention
 <footer>                                ← issue refs, breaking changes, optional
 ```
 
+Why it is so: (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*; §2.2, *Mood and tense*).
+
 The subject says what the commit changes, in the present tense, and
 makes sense alone in `git log --oneline`. Either mood will do:
 - a change to the work reads as a command, "fix race in order creation";
@@ -101,6 +103,8 @@ refresh. Re-land after #58.
 
 ## The agent's own files
 
+Why it is so: (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+
 `CLAUDE.md` and `.claude/` are the working arrangement.
 `COMMIT-PLAN.md` is committed with them. None is a project record. A
 commit that touches them is scoped `agent`, and touches nothing else.
@@ -109,12 +113,13 @@ lifecycle.
 
 ## Rules
 
+Why they are so: (`docs/conventions/commit-messages/` §1, *What a commit message is*; §2.4, *Commit on the word*).
+
 - **Commit on the word.** Stage, show the reviewer the diff, and
   commit only when they have said so; one commit at a time, and no
   push without the same word.
 - **One logical change per commit.** "Fix X and update deps and
   rename file" is three commits.
-- **The subject alone makes sense** in `git log --oneline`.
 - **The body answers why**, and anything the diff cannot say:
   rejected alternatives, non-obvious constraints, "looks wrong but
   is right because…".
