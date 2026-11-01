@@ -556,7 +556,7 @@
       diff (2026-10-31, the reviewer).
       Context: a CBC Run Reading takes three things from a CBC Run: the
       diff of its copies, its Decisions Log and its CBC Run Asks
-      (`.claude/skills/exchange-read/SKILL.md`, Stage 3, *Read three things*). The
+      (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*). The
       refinement renames the delivered text to Glossary Names and may
       change how the parts are put together, so a diff by CBC Runs
       4, 5 and 6 shows edits to text we no longer hold, and cannot be
