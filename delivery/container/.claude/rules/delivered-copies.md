@@ -5,6 +5,7 @@ paths:
   - ".claude/shapes/**"
   - ".claude/approaches-on-trial/**"
   - "docs/concept/**"
+  - "docs/glossary/**"
   - "temp/**"
 foundation: the exchange convention
 ---
