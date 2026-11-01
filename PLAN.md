@@ -302,8 +302,8 @@ Notes:
 
 Goal: Living text written before a rule now meets that rule, and project-recording's list of the records maps them in both Convention Seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
-Now: Refinement Round 3's work by Refinement Layer (`.claude/approaches-on-trial/refinement.md` §2.7, *Working the findings*),
-each file's findings and its new Names (ADR-0078, decision 11), layer 1 first.
+Now: Refinement Round 3's close (`.claude/approaches-on-trial/refinement.md` §2.8, *A Refinement Round's close*):
+all the text the round covers, read again against rules 1 to 10. Layers 1 to 6 worked, `e784f41` to `4d8147d`.
 Gate:
 
 **At the opening.**
