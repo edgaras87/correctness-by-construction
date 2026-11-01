@@ -682,6 +682,17 @@
       Trigger: the close of the refinement Plan Step.
       See: ADR-0057, decision 4.
 
+- [ ] Judge the Conversation Memory trial (2026-11-01, the
+      refinement's last read).
+      Context: project-recording put `TODO-CONVERSATION-MEMORY.md` on
+      trial, to be judged when its third item was worked with its
+      section in hand (`docs/conventions/project-recording/` §14,
+      *Conversation Memory*). The third was worked by
+      2026-10-29, and no one judged it. If it holds, it reaches CBC
+      Runs through the Container Group; if not, it goes.
+      Trigger: the close of the refinement Plan Step.
+      See: devlog 2026-11-01, the last read's work.
+
 - [ ] Decide whether a delivery checks its paths against the CBC Run's
       own files (2026-09-30, the CBC Run Reading of CBC Run 3).
       Context: our shipped `.claude/rules/shapes-lifecycle.md` sat

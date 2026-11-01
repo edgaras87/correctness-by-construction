@@ -852,8 +852,8 @@ Convention Seat it is kept beside the item, in
   weighing.
 - **Gone with its item,** so nothing outlives what it was about.
 
-The trial is judged when the third item is worked with its section
-in hand, or at the refinement Plan Step's close, whichever comes first.
+The trial is judged at the moment TODO's item "Judge the
+Conversation Memory trial" names.
 If it holds, it reaches CBC Runs through the Container Group; if not, it goes.
 
 *On trial since 2026-10-21. The evidence is in the devlog: each
