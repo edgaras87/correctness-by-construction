@@ -10,7 +10,7 @@ one use: the Tiers Model and the Exchange Convention.
 So that an Idea Model holds the facts it relies on, the next project can
 derive its own text from the Idea Model, and the lower text keeps only
 what is its repo's. It is the step from a convention to an Idea Model
-(`docs/models/idea-to-output.md` §4.2, *Up, work to an idea*).
+(`docs/models/idea-to-output.md` §4.2, *The upward direction*).
 
 ## When it opens
 

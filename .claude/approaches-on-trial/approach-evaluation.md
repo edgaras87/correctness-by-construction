@@ -131,7 +131,7 @@ Its first use. One use behind the approach, so every piece stayed on
 trial and stage 6 was the work: rewritten in general, with what
 would settle it. Stage 3 was weighed for a model as a home, and
 kept to conventions and records: a piece reaches a model only
-through a convention (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*, and §4.2, *Up, work to an idea*). Taught: a first
+through a convention (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*, and §4.2, *The upward direction*). Taught: a first
 evaluation places nothing; its work is the rewrite.
 
 The two notes below are from before it was written.
