@@ -1,16 +1,16 @@
 # Agent decisions
 
-<!-- The working arrangement's decision log. Append-only, newest
-     last. One entry per arrangement decision — a skill or Agent Rule
-     added, what one asks changed, a workflow adopted. A fix that
-     brings a skill or Agent Rule to its manual is no decision: its
-     commit body says why. Three parts: what, why, what was
+<!-- The working arrangement's Decisions Log. Append-only, newest
+     last. One entry per arrangement decision — an Agent Skill or Agent
+     Rule added, what one asks changed, a workflow adopted. A fix that
+     brings an Agent Skill or Agent Rule to its manual is no decision:
+     its commit body says why. Three parts: what, why, what was
      rejected.
 
-     Division of labor: the standing rule rides as a comment in the
-     artifact it governs — this log keeps the why and the rejected
-     options, and neither repeats the other. Commit bodies stay
-     ordinary commit bodies.
+     Division of labor: a standing rule is written as a comment in
+     the file it governs. This log keeps the why and the rejected
+     options. Neither repeats the other. Commit bodies stay ordinary
+     commit bodies.
 
      An entry that follows from an ADR says in a line or two what
      changed in this arrangement, and points at the ADR; it does
