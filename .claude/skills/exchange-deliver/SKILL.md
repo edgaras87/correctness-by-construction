@@ -149,7 +149,7 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
    Each group's `.claude/skills/`, `.claude/rules/`,
    `.claude/shapes/`, `.claude/approaches-on-trial/` and
    `docs/glossary/`, and nothing else of it: the Container Group's
-   records, Entry File, `temp/README.md`, Decisions Log and Hygiene
+   records, the Entry File, `README.md`, the Decisions Log and the Hygiene
    Base went at birth and are the CBC Run's.
 
    `concept/` is the one path that is not a mirror
