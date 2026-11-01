@@ -3789,3 +3789,15 @@ and 367 the entry file's; corrected there.
 
 None of the declines is taste alone: each line meets the rule as
 written, keeps a decision's word, or is history.
+
+### The work (§2.7)
+
+Each Refinement Layer's fixed findings, with the commits that fixed
+them.
+
+- **Layer 1, the conventions manual:** FINDING-282 to 287, 292 to 301,
+  303 and 304 in `ab4c2e6`, its old words given their Names there;
+  294 and 295 carried to `.claude/rules/convention-manual.md` in
+  `839f785`. Already fixed by the design: 288 in `e0714e0`, 289 and
+  291 in `39e35b3`, 291's other half already DECISION-24's kind word,
+  "the facts-in-sync manual".
