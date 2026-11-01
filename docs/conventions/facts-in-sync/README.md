@@ -15,16 +15,18 @@ relies on it. What went wrong without it:
 
 - duplicated facts diverged, and diverged records stopped being
   trusted;
-- the handbook's Entry File held three disagreeing copies of one rule
+- the Entry File of the handbook, the repo the arrangement came from,
+  now history (ADR-0038), held three disagreeing copies of one rule
   (`docs/conventions/agent-arrangement/`, *What it is for*);
-- CBC Run 3 told one Plan Step's story in four records: PLAN, the
-  devlog, the Invariant Slice Record and the commits (its RETRO.md,
+- CBC Run 3 told one Plan Step's story in four records: `PLAN.md`,
+  the devlog, the Invariant Slice Record and the commits (its RETRO.md,
   D1).
 
 The rules against it were written early, but spread over two
 manuals, the project-recording manual and the conventions manual.
-Refinement Round 2 found the One home and Dependencies Finding Kinds
-standing on rules split that way, and the rules came here before it
+Refinement Round 2 found two Finding Kinds, One home and
+Dependencies, the checks of a fact's home and of what a text stands
+on, resting on rules split that way, and the rules came here before it
 read (ADR-0065).
 
 ## What this is made usable as
@@ -42,7 +44,7 @@ read (ADR-0065).
   Change Walk and the disagreement (§3.3, *The rename grep*; §4, *A Canonical
   Description's rule*; §5, *A disagreement*).
 
-What derives from this page is that list. A change here walks it;
+What derives from this page is that list. A change here runs the Change Walk on it;
 a change forced in one of them is checked back against this page.
 
 ## The seats
@@ -82,9 +84,9 @@ as a follower. In practice:
   reads it in the owner's place.
 - **A fact changes at its home.** The links to it do not change,
   unless the home itself moves. Each retelling whose Fact Reference
-  names it is found and re-read, with the paragraph around it; a
-  retelling whose host is itself a Canonical Description is walked in
-  turn.
+  names it is found and re-read, with the paragraph around it. A
+  retelling that sits in a Canonical Description sets off that text's
+  Change Walk in turn.
 - **A copy is a follower.** One is the owner and the other follows
   it. Two cases: a copy that cannot be avoided, as the CHANGELOG
   follows the version in the build file; and a retelling beside its
@@ -95,9 +97,12 @@ as a follower. In practice:
   bodies and the entries of `.claude/decisions.md` record what was
   true then. So do the parts of `TODO-CONVERSATION-MEMORY.md`, which
   only the Concept Deliverer keeps. They are never updated, so they cannot
-  drift. Each file's header comment is living text.
+  drift.
+- **Living Text** is every text but history: text kept true as things
+  change. Each file's header comment is Living Text, the header
+  comments of the history files included.
 - **History is not a first home either.** A fact stated only in
-  history gets a living home before anything retells it: nothing
+  history gets a home in Living Text before anything retells it: nothing
   changes at a history entry, so nothing would re-read what tells it
   (ADR-0070).
 - **Comments and config count too,** not only records.
@@ -108,7 +113,7 @@ as a follower. In practice:
 
 A convention's subject is stated in its manual and nowhere else.
 Text that touches the subject points at the manual and does not
-restate it: another manual, the index, `ARCHITECTURE.md`, an ADR's
+restate it: another manual, a Local Map, `ARCHITECTURE.md`, an ADR's
 context, an Entry File. Text that makes the subject usable derives
 from the manual and names it in `foundation`. Two relations, two
 verbs: point and derive. A reader who finds the subject stated
@@ -124,7 +129,7 @@ a follower, not a second statement (§1, *One home*; ADR-0059).
 A line that relies on a fact written elsewhere carries a **Fact
 Reference**: the address of the fact's home. It has two readers.
 The agent may follow it to read the fact whole, with no guarantee
-that it will (`docs/models/agent.md` §4.2, *Pulled Channel*, claim P1). The Change Walk
+that it will (`docs/models/agent.md` §12.2, *On the Pulled Channel*, claim P1). The Change Walk
 re-reads the line when the home changes (§4, *A Canonical Description's rule*). A fact has one home,
 so a Fact Reference has one target: the home of the fact its line
 relies on. The line above relies on a claim about agents, so it
@@ -150,8 +155,8 @@ A Fact Reference is written in one form, always in parentheses:
   such as (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 3);
 - **a numbered rule in a file of rules:** the rule's number and its
   bold lead as the title, such as
-  (`.claude/rules/delivered-copies.md`, rule 8, *A skill's template
-  is copied…*).
+  (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill
+  Template is…*).
 
 In a comment, an HTML one or a line of YAML or SQL, the title takes
 no asterisks: there they show as written. In a list whose items are
@@ -203,7 +208,7 @@ A short list item, a phrase and a line, is not.
 ### 3.3 The rename grep
 
 A commit that renames a file, renumbers or retitles a section, or
-moves a fact to a new home greps all living text for each old path,
+moves a fact to a new home greps all Living Text for each old path,
 number and title, and fixes what points at them in the same commit.
 Placing an Approach on Trial into a convention is such a move
 (ADR-0070). A commit plan's sweep looks again before its close
@@ -230,7 +235,7 @@ both Convention Seats:
    the section it backs, unless it backs the whole file, so a change
    to a section finds its decision.
 4. **Each Convention Seat cites its own decisions as `ADR-nnnn`.** A
-   seat can open only its own ADRs, and both number theirs from
+   Convention Seat can open only its own ADRs, and both number theirs from
    0001, so a bare number means the reader's own. A decision this
    repo inherited is adopted before anything here cites it
    (ADR-0038): a citation points at a decision this repo holds.
@@ -261,8 +266,8 @@ for all of them, and this is where it is stated:
 
 1. A Canonical Description lists what derives from it. An Idea Model leaves its
    list to the grep in step 3: repos it never sees stand on it too.
-2. Each derived thing names its Canonical Description, once: one
-   `foundation` per file, the Foundation Line's document, what the whole of it stands on.
+2. Each derived thing names its Canonical Description once, in its
+   one Foundation Line: the document the whole file stands on.
    Which files carry it, where, and what each holds is the conventions manual's
    (`docs/conventions/conventions/` §1.3, *The Foundation Line*). Every line that uses a part of
    a document, the Foundation Line's document included, carries a Fact Reference to that
@@ -277,11 +282,11 @@ for all of them, and this is where it is stated:
    or in the next when one side is an agent file and the other is
    not (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*). It greps for the
    Canonical Description's path, to find what points at it, and for its name
-   in `foundation` lines, to find what stands on it: `the <name>
+   in Foundation Lines, to find what stands on it: `the <name>
    convention`, `the <name> model`, or `concept v1`. Each retelling
    whose Fact Reference names a changed section is re-read with the
-   paragraph around it; a host that changes for it is walked in
-   turn (step 5). The greps and these re-reads are **the Change Walk**.
+   paragraph around it. A Canonical Description that changes for it
+   has its own Change Walk in turn (step 5). The greps and these re-reads are **the Change Walk**.
 4. A change forced in a derived thing is checked back against the
    Canonical Description.
 5. A disagreement is raised and decided (§5, *A disagreement*); if the Canonical Description
@@ -327,9 +332,9 @@ contradicts one may have found the Canonical Description's flaw rather than
 its own. When practice and a statement disagree, the statement is
 a candidate for change, not the judge. That includes this page.
 
-It has happened: CBC Run 3 argued down a clause of
-`convention-lifecycle` on the day it first ran under it, and the
-clause changed (ADR-0034).
+It has happened: CBC Run 3 showed a clause of `convention-lifecycle`,
+the receiver's protocol then, wrong on the day it first ran under it,
+and the clause changed (ADR-0034).
 
 The concept's meaning has changed once since v1 (`CHANGELOG.md`).
 Whether it changes rarely because it is right, or because nothing has
@@ -340,7 +345,7 @@ been read against it hard enough, is not known.
 ## Why it arrives this way
 
 Two rules, each loaded in every session, with no `paths:`
-(`docs/conventions/agent-arrangement/` §3.9, *An Agent Rule always loaded*). One home's moment is
+(`docs/conventions/agent-arrangement/` §3.9, *An Agent Rule always loaded*). The one-home Agent Rule's moment is
 every text written. A fact is retold in the record being written.
 That record's Record Stub says nothing of the record the fact was
 taken from, so no Record Stub is open at the moment. The

@@ -12,7 +12,8 @@ in both directions, and what each side keeps so it can happen again.**
 So that the Concept Deliverer and a blind CBC Run stay in step. Files
 go down whole. What the CBC Run learned comes back as a CBC Run
 Reading, and a verdict returns. Each side holds only the half it can
-run. Not version control: a Delivery Pin is one part of it. The
+run. The exchange is more than version control: a Delivery Pin is
+only one part of it. The
 failure it answers is lived. Three things were wrong until 2026-09-26:
 
 - the receiver's protocol, `convention-lifecycle`, 154 lines, was
@@ -38,7 +39,8 @@ arrangements, each side holding only what it runs
   loading when a copy or a file in `temp/` is read (§4, *The Delivery Take*; §5, *Editing a copy*).
 - **`.claude/skills/exchange-read/SKILL.md` — the Concept Deliverer's**,
   opened when the reviewer says to read a CBC Run (§6, *Up from the CBC Run*): find the span
-  from the CBC Run's Read-Through Commit, read the three things §6.1 names, write the
+  from the CBC Run's Read-Through Commit, read its Decisions Log, its backlog and the diff
+  of its copies (§6.1, *Reading a CBC Run*), write the
   CBC Run Reading. Ends where the work begins.
 - **`.claude/skills/exchange-deliver/SKILL.md` — the Concept Deliverer's**,
   opened when the reviewer says to deliver (§3, *Down to the CBC Run*): the Delivery Note committed
@@ -48,14 +50,14 @@ arrangements, each side holding only what it runs
 - **`.claude/rules/exchange-reading.md` — the CBC Run Reading's form, the
   Concept Deliverer's**, loading when a CBC Run Reading in `temp/` is read, not
   while a new one is written (`docs/conventions/agent-arrangement/`
-  §5.6, *Rules files*). What `exchange-read` writes, and what
+  §5.6, *Rules files*). What the exchange-read Agent Skill writes, and what
   the work then fills, to one form.
 - **`.claude/rules/working-a-reading.md` — how a CBC Run Reading's list is
   worked, the Concept Deliverer's**, practice under this page, loading when
   a CBC Run Reading in `temp/` is read. It works each item to its ending (§6.5, *Verdicts*).
 
 No Work Approach explains anything. What derives from this page is that
-list. A change here walks it; a change forced in one of them is
+list. A change here runs the Change Walk on it; a change forced in one of them is
 checked back against this page.
 
 *Its story: devlog 2026-09-25, later.*
@@ -128,8 +130,8 @@ read.
 
 ### 2.4 The records' exception
 
-The records are the one exception. They never update. `PLAN`, `TODO`
-and the devlog are delivered once as Record Stubs, and the two
+The records are the one exception. They never update. `PLAN.md`,
+`TODO.md` and the devlog are delivered once as Record Stubs, and the two
 composed files, the Entry File and `README.md`, once. The CBC
 Run fills them. No later delivery touches them. Their skeleton froze
 at birth, so no compare ever runs on them.
@@ -141,7 +143,9 @@ re-applies the same declined edit after two Delivery Takes.
 
 ### 2.5 One cycle
 
-Two repos, two numbers, and only a Delivery Note moves either.
+Two repos, two numbers, and only a Delivery Note moves either. In the
+drawing, pin is the Delivery Pin, and read-through is the
+Read-Through Commit.
 
 ```
    D      ───X───────────────────────────Y──────────▶
@@ -151,7 +155,7 @@ Two repos, two numbers, and only a Delivery Note moves either.
    R      ───b────e1────e2────r────────────t──────────▶
                                ▲
                                │ read-through = r
-                               (named in the note, recorded at t)
+                               (named in the Delivery Note, recorded at t)
 
    D   the Concept Deliverer's history.  R   the CBC Run's.
    b   born from X. The CBC Run writes: Delivery Pin X,
@@ -176,7 +180,7 @@ writes the Read-Through Commit and leaves the Delivery Pin where it was.
 On the reviewer's word, the delivery and its Delivery Note are
 copied into the CBC Run's `temp/` — by the reviewer, or by the agent
 when told to. The agent never stages a delivery unasked. Whoever
-copies, the CBC Run's tree is checked quiet first: `git status`
+copies, the CBC Run's tree is checked clean first: `git status`
 there, nothing in flight. When it is the agent, it reports what it
 found and waits for the word before anything lands. The Delivery
 Staging is named by the commit at which the files and the Delivery
@@ -233,7 +237,7 @@ Group and leaves the Stack Group (ADR-0029).
 When one group's words must sit in another group's file, such as the
 Method Group's playbook inside the Container Group's `PLAN.md`, that
 is a **Delivery Fill**. The owning group's file has a marked place.
-The other group provides the text. Staging writes it in. Delivery
+The other group provides the text. Staging a delivery writes it in. Delivery
 Fills are the only step that is not a copy, and they are listed here.
 One exists. One is owed: the Container Group's Entry File names the
 Method Group's Agent Skills and `docs/concept/`. So a CBC Run taking
@@ -273,20 +277,22 @@ verdict says the decision and what the CBC Run owes now, nothing else.
 It never describes our own practice, which the CBC Run cannot check. It
 never says "accepted" for something not decided.
 Nothing that needs our repo to verify: a Delivery Note that reports facts
-about our tree gives the CBC Run a claim it cannot check. Three
-claims cannot avoid it, and the Delivery Note says so, in a clause:
+about our tree gives the CBC Run a claim it cannot check. Three kinds
+of Delivery Note cannot avoid it, and the Delivery Note says so, in a
+clause:
 
 - a thin Delivery Note, which ships no copy;
-- material outside the delivery;
-- a negative claim, which is about our whole tree. A Delivery Note fails to reach when it
-is thin, when what it names does not exist, when the relationship
-changed under it, or when the right content comes in a form the CBC Run
-cannot act on.
+- one about material outside the delivery;
+- one making a negative claim, which is about our whole tree.
+
+A Delivery Note fails to reach when it is thin, when what it names
+does not exist, when the relationship changed under it, or when the
+right content comes in a form the CBC Run cannot act on.
 
 No ADR number, no path in this repo and no word of this repo's own
 vocabulary, in a Delivery Note or in a prompt: the CBC Run cannot see this repo,
-and a citation it cannot follow reads as its own. That is the Told
-Channel's text. A shipped copy carries no citation either: its footer
+and a citation it cannot follow reads as its own. A prompt is the
+Told Channel's text, so the same holds for it. A shipped copy carries no citation either: its footer
 is stripped at delivery (§3.8, *The footer at delivery*).
 
 A Delivery Note that names a third repository gives both names: ours, by
@@ -307,7 +313,8 @@ why the Master Copy keeps it, is the citation rule's
 The strip runs in three places:
 
 1. at birth, in the Pure Seed, as each group is copied;
-2. at every later delivery, as it is staged, in `exchange-deliver`;
+2. at every later delivery, as it is staged, in the exchange-deliver
+   Agent Skill;
 3. in the list of what changed since the CBC Run's Delivery Pin, which
    the Delivery Note carries (§3.7, *The Delivery Note*): a copy whose
    only change is its footer is left out, since the CBC Run's diff of
@@ -398,7 +405,7 @@ One kind of copy takes one more edit: an Approach on Trial gets a
 dated note of each use under its *Uses*, in the CBC Run's own terms.
 The note is what the Approach on Trial is for, since it carries the use to
 the Concept Deliverer's evaluation. It is the CBC Run's own account, so the
-second condition does not hold it; the other two do.
+second condition does not apply to it; the other two do.
 
 ### 5.2 A finished copy
 
@@ -410,7 +417,7 @@ mistake writes the fix. One process for every copy.
 
 The one difference is said in the Decisions Log entry and in the
 backlog line. A running Agent Skill's fix is exercised by the next
-Plan Step here. A finished Agent Skill's fix is first used by the
+Plan Step of this CBC Run. A finished Agent Skill's fix is first used by the
 Concept Deliverer, so its line marks it *untried here*, and the
 Concept Deliverer reads those hunks hardest. Such an edit is taken
 when it is sound, and the next CBC Run is its trial.
@@ -424,7 +431,8 @@ may not lag what the CBC Run itself has learned.
 ### 5.4 One word for the other side
 
 In the rule and in the backlog line: the Concept Deliverer. CBC Run 3's text says *source*; `docs/glossary.md` says
-Concept Deliverer, and the shipped Agent Rule says one thing.
+Concept Deliverer, and the shipped Agent Rule, `delivered-copies.md`,
+uses that one word.
 
 ### 5.5 Renaming or deleting a copy
 
@@ -508,7 +516,7 @@ where; how the list is worked is
 
 A CBC Run Reading also asks what the CBC Run teaches the worked example,
 `delivery/method/.claude/skills/cbc-framing/references/worked-example.md`,
-which its copy in `cbc-slice` follows.
+which its copy in the cbc-slice Agent Skill follows.
 
 *Its story: devlog 2026-09-30, later still; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
@@ -531,7 +539,7 @@ Each item leaves the list with one of three:
   carries it, and the CBC Run's edit is absorbed rather than
   overwritten.
 - **Declined** — with why, and the why is never "the Canonical Description
-  says otherwise": facts-in-sync owns that rule, for every Canonical
+  says otherwise": the facts-in-sync manual owns that rule, for every Canonical
   Description (`docs/conventions/facts-in-sync/` §5, *A disagreement*). A
   Canonical Description can be what the CBC Run has found wrong. Declined means:
   not general, or not worth the change. The why goes in the Delivery Note
@@ -539,7 +547,7 @@ Each item leaves the list with one of three:
 - **Held** — with the trigger that would settle it, and a line in
   our own backlog so it is not lost between CBC Run Readings.
 
-An unverifiable promise is worse than any of the three. The
+A verdict that cannot be checked is worse than any of the three. The
 verdicts go down in the Delivery Note (§3.7, *The Delivery Note*).
 
 ### 6.6 The Delivery Note after a read
