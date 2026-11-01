@@ -975,7 +975,7 @@
       See: devlog 2026-09-17, later.
 
 - [ ] Decide whether `infra-establish`'s contract carries a paragraph
-      on the store's facility (2026-09-17, never-oversold).
+      on the store's facility (2026-09-17, CBC Run 3).
       Context: CBC Run 3 wrote one at Step 3 — the ways its store makes
       two writers disagree — because the Agent Skill is silent on it. We
       held it rather than declined: one instance is not an Output Shape.
@@ -993,7 +993,7 @@
       Trigger: the release that names v2.
 
 - [ ] Decide whether an Agent Rule can be delivered on trial, as an Output Shape
-      can (2026-10-08, never-oversold).
+      can (2026-10-08, CBC Run 3).
       Context: an Output Shape reaches a CBC Run but binds nothing until a
       Plan Step Gate reads it (ADR-0052); an Agent Rule learned in one CBC Run is in
       force in the next from its first Plan Step. CBC Run 3 asked after
@@ -1008,7 +1008,7 @@
       Trigger: an Agent Rule we would ship that one CBC Run alone has lived.
       See: devlog 2026-10-08.
 
-- [ ] Give the method a glossary (2026-10-08, never-oversold).
+- [ ] Give the method a glossary (2026-10-08, CBC Run 3).
       Context: its words are defined where each is first used;
       tripwire, witness, fold, fence and possession appear only in
       the Agent Skills, never in the chapters a reader starts from, and
@@ -1073,7 +1073,7 @@
       check (2026-09-18).
       Context: the sending half is in force — a Delivery Note says when it
       claims what the receiver cannot check. Two receivers, the
-      handbook and never-oversold, took such claims as attributed
+      handbook and CBC Run 3, took such claims as attributed
       rather than checked, unprompted; a rule now would tell them
       to keep doing what they do.
       Trigger: the first receiver that acts on an unmarked
