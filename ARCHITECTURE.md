@@ -42,6 +42,7 @@ how to use it, is `README.md`.
    │ delivery/container/    │   temp/    │ .claude/shapes/ copies │
    │                        │            │ .claude/approaches-on- │
    │                        │            │  trial/         copies │
+   │                        │            │ docs/glossary/  copies │
    │                        │            │ PLAN, TODO, devlog,    │
    │  Master Copies         │            │ src/ … its own         │
    └────────────────────────┘            └────────────────────────┘
@@ -136,8 +137,9 @@ ship*). This list is kept here: the chapters carry none
 ### 2.1 The Method Group
 
 `delivery/method/`: the concept made usable. The cbc-framing and
-cbc-slice Agent Skills, under `.claude/skills/`, and the Output Shapes their Plan
-Step Gates read, under `.claude/shapes/`. Each Agent Skill is derived
+cbc-slice Agent Skills, under `.claude/skills/`, the Output Shapes their Plan
+Step Gates read, under `.claude/shapes/`, and the concept's and the
+method's Glossary Names, `docs/glossary/method.md`. Each Agent Skill is derived
 from the concept, as its
 Foundation Line says (`docs/conventions/conventions/` §1.3, *The Foundation Line*).
 
@@ -147,7 +149,8 @@ Foundation Line says (`docs/conventions/conventions/` §1.3, *The Foundation Lin
 project taught: the infra-establish, infra-serve and cbc-bootstrap
 Agent Skills. Not derived from the concept but
 checked against it, as their Foundation Lines say
-(`docs/conventions/conventions/` §1.3, *The Foundation Line*). A CBC Run on
+(`docs/conventions/conventions/` §1.3, *The Foundation Line*). Beside
+them, the stack's Glossary Names, `docs/glossary/stack.md`. A CBC Run on
 another stack takes no `spring-postgres/`; another stack's Agent
 Skills would be a group beside this one (ADR-0029).
 
@@ -155,8 +158,8 @@ Skills would be a group beside this one (ADR-0029).
 
 `delivery/container/`: the conventions made usable. The Record
 Stubs, the Entry File, the Decisions Log, the convention Agent Skills
-and Agent Rules, an Approach on Trial, the Hygiene Base, and
-`temp/README.md`. Which convention a
+and Agent Rules, an Approach on Trial, the Hygiene Base, the shared
+Glossary Names, `docs/glossary/container.md`, and `temp/README.md`. Which convention a
 file belongs to is its Foundation Line. A project with no
 correctness-by-construction in it would still want most of this,
 which is why it is a group of its own.
@@ -248,7 +251,7 @@ docs/
 └── baselines/       trial evidence withheld from CBC Runs (ADR-0035)
 delivery/
 ├── container/       what a CBC Run is born into (§2.3)
-├── method/          the cbc-framing and cbc-slice Agent Skills, their Output Shapes (§2.1)
+├── method/          the cbc-framing and cbc-slice Agent Skills, their Output Shapes and Glossary Names (§2.1)
 ├── spring-postgres/ the Stack Group (§2.2)
 ├── fills/           text written into a Newborn CBC Run's own files (§2.4)
 ├── installs/        how a CBC Run is seeded (§2.4)

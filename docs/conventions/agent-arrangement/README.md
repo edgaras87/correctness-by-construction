@@ -49,7 +49,7 @@ section each (`docs/conventions/conventions/` §2.4, *The seats*).
 ### The CBC Run's seat
 
 A builder's. Shipped in `delivery/container/`: the Concept Deliverer writes it and the
-CBC Run receives it. Its Entry File says two things. `docs/concept/`
+CBC Run receives it. Its Entry File says, among other things: `docs/concept/`
 and the Agent Skills, Agent Rules, Output Shapes and Approaches on
 Trial under `.claude/` are delivered copies, pinned. Until the CBC
 Framing Exports exist, the only method work is running the
