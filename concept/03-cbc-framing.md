@@ -51,13 +51,13 @@ chosen before the problem is understood.
 **Sort into Responsibility Areas — only if forced.** If the Enemy
 Collisions genuinely demand separate owners, partition; if one owner
 covers everything, that is a confirmed answer. Then, and only if there
-is more than one Responsibility Area, examine the seams between them
+is more than one Responsibility Area, examine where each two of them meet,
 for the correctness no single owner can hold.
 
 **Cut into Invariant Slices.** The Enemy Collisions become an Invariant
 Slice Registry, each Invariant Slice one invariant to be made real. The
-Invariant Slice Registry's ordering is an expectation, not a commitment; evidence from
-built Invariant Slices is allowed to reorder what remains.
+Invariant Slice Registry's ordering is an expectation, not a commitment.
+Evidence from built Invariant Slices is allowed to reorder what remains.
 
 ## Why this order and not the layers'
 

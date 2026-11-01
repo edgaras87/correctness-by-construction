@@ -56,7 +56,7 @@ to be derived *from*.
 ## LAYER-3-AREAS — Responsibility Areas
 
 The interior, partitioned by one rule: **every fact has exactly one
-owner.** Often the honest answer is a single Responsibility Area — that
+owner.** Often the right answer is a single Responsibility Area. That
 is a confirmed answer, not a gap. Keeping the partition small is a
 design decision, not a limitation.
 

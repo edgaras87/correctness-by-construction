@@ -32,8 +32,8 @@ requirement was fully stated.
 
 **Plan.** Choose the mechanism, and say why it beats *that* attack,
 not why it is good in general. The Structural Wall is picked from the
-ranking of Structural Walls, the strongest available; choosing a weaker Structural
-Wall than possible is a decision that needs a stated reason.
+ranking of Structural Walls, the strongest available. Choosing a weaker
+Structural Wall than possible is a decision that needs a stated reason.
 
 **Build.** The mechanism, plus the proof: a test that ***creates* the
 attack** and shows the invariant surviving. It hammers the endpoint
