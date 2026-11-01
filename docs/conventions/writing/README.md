@@ -30,7 +30,9 @@ on 2026-10-15 (ADR-0053).
 - **`docs/glossary.md` — the Concept Deliverer's glossary**, the list of
   Glossary Names rule 9 points at; its header comment holds the form of
   an entry. A CBC Run starts its own at the same path, a record that
-  holds only the Names it defines.
+  holds only the Names it defines, from the shipped Record Stub
+  `delivery/container/docs/glossary.md`, opened when a text defines a
+  thing.
 - **The delivered Glossary Names, shipped as pinned copies,** one file
   per group, updated with every delivery:
   - `delivery/container/docs/glossary/container.md`, the shared Names;
@@ -94,8 +96,9 @@ chat answers, records, commit messages, code comments.
    Skill's phase is an Agent Skill Stage (`docs/glossary.md`).
 6. **Names are labels.** A reference reworded points somewhere
    else. A coined word that is not defined is a word the reader
-   cannot check, so each is defined once, in the project's
-   glossary. A number local to one record carries its owner outside
+   cannot check, so each has one Glossary Name, listed in the
+   project's glossary with its plain meaning, pointing at the home
+   that defines it. A number local to one record carries its owner outside
    it, because "GUARANTEE-3" means something different in every
    Invariant Slice Record.
 7. **Cut what adds nothing.** Every extra sentence is one more
@@ -125,8 +128,8 @@ chat answers, records, commit messages, code comments.
    Every Markdown mark already has a job here, so one alone marks a
    Name: bold, once, at the line that defines it. The capitals show a
    Name at every use, and the bold shows where it is defined. A bold
-   lead that opens a list item marks the item, not the Name, so it
-   may begin with one.
+   lead that opens a list item or a paragraph marks the item, not the
+   Name, so it may begin with one.
    Four things are written otherwise:
    - a numbered thing, by its owner and number: "working-a-reading
      rule 2", "the walk's step 3";
@@ -157,8 +160,8 @@ chat answers, records, commit messages, code comments.
       one; a list, *Ticks, gates and differences*, does not.
 
     This holds for numbered sections and parts in both Convention
-    Seats. Three are not titles under it: the manual form's fixed
-    headings, an Agent Skill Stage or Approach on Trial Stage heading, and a numbered rule's bold
+    Seats. Three are not titles under it: a form's fixed headings, the
+    manual form's in our Convention Seat and a record's in a CBC Run's; an Agent Skill Stage or Approach on Trial Stage heading; and a numbered rule's bold
     lead.
 11. **An edit changes the lines its change needs.** The reviewer
     reads a diff at every commit boundary, for its change; a line
