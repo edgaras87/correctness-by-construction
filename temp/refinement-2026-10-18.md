@@ -3806,3 +3806,29 @@ them.
   in part as its ending says; what retells a replaced phrase carried
   in `f222539` (our records), `454028f` (`CLAUDE.md`) and `2c00ebf`
   (the Record Stubs and the container's Entry File). 335 declined.
+- **Layer 3, the other manuals, the models, the concept, the
+  glossary:** each file's findings in its commit, its old words given
+  their Names there; what follows a file in the commit after it.
+  - the Agent Model, FINDING-492 to 506, 508 and 509, `4ee4062`; 507
+    declined;
+  - the Idea-to-Output Model, 510 to 517, with 492 to 494 there,
+    `11389e9`; its two agent-side references, `acbb438`;
+  - the Tiers Model, 518 to 529, with 492 to 494 there, `2ccc26a`;
+  - the concept's chapters, 530 to 536, 538 to 542, 544 and 545,
+    `1f0c17e`; what the method's files retell, `f074544`; 537 and 543
+    declined;
+  - the writing manual, 483 to 485, `99dbc35`;
+  - facts-in-sync, 414 to 434, `5747b32`;
+  - agent-arrangement, 343 to 368, `f07d52a`; its Entry File
+    references, `c4748c1` and `5a397a7`;
+  - commit-messages, 369 to 378, `51a5469`; 379 and 380 declined;
+  - commit-plan, 381 to 388, `341107f`;
+  - the exchange, 389 to 413, `a60a357`;
+  - repo-hygiene and its templates, 435 to 441 and 443, `6d67082`;
+    442 declined;
+  - retrospective, 444 to 449 and 451 to 456, `7b81e55`; 450 not
+    worked, its count needing CBC Run 3's apply guide;
+  - shapes, 457 to 471 and 473, `9fb20fd`; 472 and 474 declined;
+  - visual-comparison, 475 to 479, 481 and 482, `7a54776`; 480
+    declined;
+  - the index and the glossary, 341, 342 and 486 to 491, `a575fb5`.
