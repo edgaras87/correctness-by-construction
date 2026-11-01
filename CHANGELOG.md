@@ -70,8 +70,9 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   Falsifiable Promise, Enemy Census and the rest, each defined where
   it was. Long sentences split, lists made of chained parts, figures
   replaced: the two "movements" are its two parts, "How it rots" is
-  How it fails, "the joint" is the pair. No meaning moves; concept v1
-  stays v1. Editorial.
+  How it fails, "the joint" is the two components together, the
+  Structural Walls' ranks have one name each. No meaning moves;
+  concept v1 stays v1. Editorial.
 
 ### Removed
 

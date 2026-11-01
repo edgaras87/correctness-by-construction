@@ -1,6 +1,6 @@
 # Correctness-by-construction
 
-*The main document. Read this first; the other chapters deepen it —
+*The main document. Read this first. The other chapters go deeper:
 the Layered System, System Guarantees and Structural Walls, CBC
 Framing, and the Invariant Slice.*
 
@@ -37,8 +37,8 @@ input.
 
 One corollary follows immediately: the surface stays deliberately
 **feature-thin**. Every feature added is new attack surface against the
-system's own System Guarantees. Guarantee depth is the visible product;
-staying small is discipline, not taste.
+system's own System Guarantees. The depth of the System Guarantees is
+the visible product. Staying small is discipline, not taste.
 
 ## What kind of thing this is
 
@@ -57,9 +57,10 @@ Its nearest relative is test-first development: a small inversion of
 question order that, held consistently, reorganizes everything downstream
 of it.
 
-## The two components and their pair
+## The two components
 
-The discipline has exactly two components, and it lives in the pair:
+The discipline has exactly two components, and is defined by the two
+together:
 
 **The world model — the Layered System.** A containment description of
 reality. It has five layers:
@@ -103,7 +104,7 @@ None of the parts are new:
   walls against language drift.
 - SLOs (site reliability engineering) made promises explicit and
   falsifiable.
-- Threat modeling already thinks in never-events first.
+- Threat modeling already asks first what must never happen.
 - Design-before-code culture found that the cheapest place to catch a
   flaw is a document.
 - The academic correctness-by-construction lineage owns "errors
@@ -114,24 +115,25 @@ Each of those practices covers one part and stops:
 - threat modeling produces adversity but no boundary;
 - bounded contexts produce boundaries but no guarantees;
 - SLOs state guarantees but no enforcement;
-- formal methods enforce but don't say where specifications come from.
+- the correctness-by-construction lineage enforces but doesn't say
+  where specifications come from.
 
 What is claimed as original here is the **composition**. These are not
-five practices but five phases of one derivation, with a single
-organizing question, *what must never happen, and what structure makes
-it impossible*, asked at each phase in that phase's vocabulary.
+five practices but five phases of one derivation. One question
+organizes them: *what must never happen, and what structure makes it
+impossible*. Each phase asks it in its own vocabulary.
 
 ## What it is not
 
 - **Not universal.** It prices correctness above speed of exploration. For
   throwaway code, experiments, and low-stakes tools, iterate-and-fix is
-  cheaper and not wrong. The method earns its cost when breaking the
-  Falsifiable Promise is expensive or irreversible — money, safety, trust — or when the
-  system will live long. A method that does not know its limits is a slogan.
+  cheaper and not wrong. The discipline earns its cost when breaking
+  the Falsifiable Promise is expensive or irreversible (money, safety,
+  trust), or when the system will live long. A method that does not know its limits is a slogan.
 - **Not formal methods.** It keeps the stance of the
-  correctness-by-construction lineage while dropping universal proof. Rigor
-  is *spent*, not applied: the budget goes to the few invariants whose
-  violation is expensive or irreversible.
+  correctness-by-construction lineage while dropping universal proof.
+  Rigor is chosen, not applied everywhere: it goes to the few
+  invariants whose violation is expensive or irreversible.
 - **Not architecture.** Two teams following it could produce a monolith and
   a set of services from the same design. It constrains what must be
   *answerable*, not what must be *built*.
@@ -142,9 +144,10 @@ The known failure modes, named so they can be caught:
 
 - **System Guarantee Erosion.** New features ship without re-checking
   the System Guarantees they might now violate.
-- **Escape Hatch.** An admin path or raw script bypasses the single
-  enforced code path; the System Guarantee quietly becomes fiction.
+- **Escape Hatch.** An admin path or raw script goes around the single
+  enforced code path. The System Guarantee stops being true, and
+  nobody sees it.
 - **Testing Theater.** System Guarantees drift out of structure and
   back into test suites. Tests sample; structure forbids.
-- **Theory Swamp.** Attempting deep rigor before the layers have shrunk
-  the problem — over-theorizing a world that hasn't been bounded yet.
+- **Theory Swamp.** Deep rigor is tried before the layers have made the
+  problem small. It theorizes about a world not yet bounded.

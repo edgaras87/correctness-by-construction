@@ -5,7 +5,7 @@ invariant made real, end to end.** Not a feature, not a screen, not a
 sprint's worth of tickets — one System Never-Event from the System
 Guarantee Inventory, taken from specification to a Structural Wall,
 proven to survive its specific attack. This chapter describes what an
-Invariant Slice is; the procedural detail of working one is left
+Invariant Slice is. The procedural detail of working one is left
 outside the concept.
 
 ## Why the invariant is the unit
@@ -14,7 +14,7 @@ Cutting by invariant keeps the derivation direction intact all the way
 into code. Every unit of work is a System Guarantee becoming
 enforceable. The feature surface grows only as a side effect, where a
 System Guarantee needs somewhere to live. Cutting work by feature
-reproduces the inversion the discipline exists to avoid: features
+brings back the order the discipline exists to reverse: features
 first, correctness later.
 
 An Invariant Slice is *closed* when its invariant demonstrably survives
@@ -30,14 +30,14 @@ specification that says "use a unique constraint" has answered the next
 phase's question in this one. The mechanism was then chosen before the
 requirement was fully stated.
 
-**Plan.** Choose the mechanism, and say why it beats *that* attack — not
-why it is good in general. The Structural Wall is picked from the
-enforcement hierarchy, strongest available; choosing a weaker Structural
+**Plan.** Choose the mechanism, and say why it beats *that* attack,
+not why it is good in general. The Structural Wall is picked from the
+ranking of Structural Walls, the strongest available; choosing a weaker Structural
 Wall than possible is a decision that needs a stated reason.
 
 **Build.** The mechanism, plus the proof: a test that ***creates* the
-attack** — hammers the endpoint concurrently, injects the duplicate, kills
-the process mid-write — and shows the invariant surviving. This test is the
+attack** and shows the invariant surviving. It hammers the endpoint
+concurrently, injects the duplicate, or kills the process mid-write. This test is the
 defining deliverable of the Invariant Slice, and the one most projects
 skip. An attack-creating test is different in kind from a correctness
 test. It doesn't check that the code does the right thing: it creates

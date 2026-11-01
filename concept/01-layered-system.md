@@ -1,9 +1,11 @@
 # The Layered System
 
 The world model half of the discipline: a containment description of
-reality, five nested boxes. The layering is not administrative — each layer
-produces the precondition the next one needs to be a well-posed
+reality, five nested boxes. The layering is not administrative. Each
+layer produces the precondition the next one needs to be a well-posed
 question at all.
+
+In the drawing, an area is a Responsibility Area.
 
 ```
 LAYER-1-ENVIRONMENT   Environment            the world the system lives in — outside its control
@@ -18,7 +20,7 @@ containment:  LAYER-1-ENVIRONMENT surrounds LAYER-2-SYSTEM
               LAYER-5-INTERACTION is not "below" LAYER-4-PROBLEMS — it lives between the areas
 ```
 
-## LAYER-1-ENVIRONMENT — The environment
+## LAYER-1-ENVIRONMENT — Environment
 
 Everything outside the system's control: users, networks, other systems,
 the system's own process crashing. It is described as *hostile*: things
@@ -35,19 +37,19 @@ Why the layer exists: without a described environment, System Guarantees have no
 adversary and collapse into slogans. "Never lose an order" means nothing
 until you can say what tries to lose it.
 
-## LAYER-2-SYSTEM — The system of interest
+## LAYER-2-SYSTEM — System of Interest
 
 The thing being built, defined by three properties:
 
 - **Authority**: which facts this system is the single authority on.
 - **Falsifiable Promise**: one commitment about those facts, made to a
-  named audience. Falsifiable means the breaking scenario can be imagined
-  concretely — that property is what separates a Falsifiable Promise
-  from a mission statement.
+  named audience. Falsifiable means the breaking scenario can be
+  imagined concretely. That property is what separates a Falsifiable
+  Promise from a mission statement.
 - **Boundary**: everything crossing from outside gets checked at the door.
 
-Why the layer exists: without a boundary, you defend against everything —
-an unbounded job that ends in the Theory Swamp. The boundary gives defense
+Why the layer exists: without a boundary, you defend against
+everything. That job has no end, and ends in the Theory Swamp. The boundary gives defense
 a finite task; the Falsifiable Promise gives the whole design something
 to be derived *from*.
 
@@ -62,7 +64,7 @@ Why the layer exists: an invariant is only enforceable if exactly one place
 answers for it. Without the ownership partition, every invariant is
 everyone's job — which means no one's.
 
-## LAYER-4-PROBLEMS — Local problems
+## LAYER-4-PROBLEMS — Local Problems
 
 Inside each Responsibility Area: bounded problems small enough to be
 *closed* — an invariant that must hold, the specific adversity that
@@ -89,10 +91,10 @@ be owned. It is where most real incidents live.
 
 **Containment is not work order.** The boxes nest from LAYER-1-ENVIRONMENT
 to LAYER-5-INTERACTION, and that is the right order for *presenting* a
-system. It is not the order the design work runs in — deriving the layers
-has its own order, starting from the Falsifiable Promise. That order
+system. It is not the order the design work runs in. Deriving the
+layers has its own order, starting from the Falsifiable Promise. That order
 belongs to CBC Framing and is described there.
 
 **Layers are not architecture.** The Layered System says what must be
 answerable and by whom. It does not say what must be built: the same layer
-description can honestly become a monolith or a set of services.
+description can rightly become a monolith or a set of services.
