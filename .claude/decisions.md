@@ -1240,3 +1240,18 @@
   run's copy until its evaluation.
   Why: ADR-0069.
   Rejected: see ADR-0069.
+
+- 2026-11-01 `CLAUDE.local.md`: inside a Change Set, the agent stops
+  for the plan, then commits each planned commit without stopping. It
+  stops where a decision is the reviewer's, and before the close
+  commit. Outside a Change Set every commit still stops for the word.
+  Why: the last read's Change Set ran 41 commits this way on the
+  reviewer's word, after `eb85cce`, and stopped three times, each for
+  findings only the reviewer could end. The plan, its decisions and
+  the agent's calls had settled every other commit before it began.
+  A setting, how often the agent stops for review
+  (`docs/conventions/agent-arrangement/` §3.7, *`CLAUDE.local.md`*).
+  Rejected: a stop at every commit in a Change Set (before the grant,
+  the reviewer took each diff as shown once the plan and its
+  decisions were in); a grant given again in each session's prompt (the file
+  loads first and said the opposite); a TODO item (nothing is open).
