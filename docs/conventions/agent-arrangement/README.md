@@ -216,7 +216,7 @@ three the Entry File's guard comment states:
   task it is not.
 - **Nothing else would deliver it.** What stays is what no channel fires
   for: what the project is, where its records are, a stance, a fact
-  whose failure is not noticing it. A
+  nobody would notice was missing. A
   rule that acts somewhere lives there; the Entry File says where.
 
 What passes, in practice, is five kinds of content:
@@ -246,9 +246,8 @@ no other home: a convention cannot hold it, because a convention is
 what is true across projects. It is also the easiest slot in which to
 start restating the rules, so it takes stance and not rules.
 
-*Local rules* pass one test before they enter: **a rule earns a
-place in the Ambient Channel only when its failure is not noticing the
-moment**. A test prerequisite, a migration rule or a service that
+*Local rules* pass one test before they enter: **a rule earns a place in the Ambient Channel only when nothing
+would tell the agent that its moment has come**. A test prerequisite, a migration rule or a service that
 must be running fails this test: each has a moment, and goes where the moment is, as
 the second test says. Most
 facts that feel local have a moment, which is why this slot stays
