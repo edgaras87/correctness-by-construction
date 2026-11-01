@@ -182,4 +182,4 @@ Read the slice's tests and ask:
 4. Where a test differs from this Output Shape: did it drift, was the Output Shape
    wrong, did each have something, or is it a different kind of
    test? How each ends is the shapes Agent Rule's
-   (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).
+   (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the close*).

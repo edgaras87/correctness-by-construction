@@ -199,7 +199,7 @@ would be read while the record is written, and the record would
 follow it instead of showing where it is wrong. Whether an output is
 worth a new Output Shape is a judgement the project makes when it makes it,
 not a step of this close. Why an Output Shape is read only at the close:
-(`.claude/rules/shapes-lifecycle.md` §2, *One place, read at the gate*).
+(`.claude/rules/shapes-lifecycle.md` §2, *Where an Output Shape lives*).
 
 ---
 

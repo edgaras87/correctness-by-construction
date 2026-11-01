@@ -35,6 +35,9 @@
 - **CBC Run Ask** — one line under TODO's *To the deliverer*, asking the
   Concept Deliverer for a verdict: on an edit to a copy, a file
   offered, or a question.
+- **CBC Run Reading** — the Concept Deliverer reading this project
+  since it last read it, and the text that records what it found;
+  read only, it writes nothing here.
 - **CBC Run Briefing** — the text that names the problem this project
   builds, read at CBC Framing and committed unchanged.
 - **CBC Run Hand-off** — the text that says how this project works
@@ -78,6 +81,9 @@
   every one is true.
 - **Agent Skill Stage** — one phase of an Agent Skill, numbered from Stage 0 and
   named by its Agent Skill outside it: `cbc-slice`'s Stage 3.
+- **Approach on Trial Stage** — one phase of an Approach on Trial,
+  numbered, under its own heading
+  (`.claude/approaches-on-trial/approach-drafting.md`, *Stages*).
 - **Decisions Log** — `.claude/decisions.md`: the agent's own setup
   decisions, the conventions held, and each delivery's Delivery Pin
   and Read-Through Commit.

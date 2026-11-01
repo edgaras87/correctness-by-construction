@@ -112,7 +112,7 @@ come in its CBC Run Hand-off, never here.
 
 The records item asks for an outcome. A CBC Run may write a script
 that checks it and run it at every close. How a difference with an Output Shape is settled is the shapes-lifecycle Agent Rule's
-(`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).
+(`.claude/rules/shapes-lifecycle.md` §3, *A difference at the close*).
 
 **When every item is ticked and committed,** the next commit
 replaces the Plan Step Gate with one line: the date, what the Plan

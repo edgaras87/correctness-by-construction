@@ -9,7 +9,7 @@ commit messages, comments. How it reads, never what it says.
 
 <!-- No paths: line, so this loads at the start of every session:
      its moment is every answer and every record. The why of each
-     rule is the deliverer's writing manual. -->
+     rule is the Concept Deliverer's writing manual. -->
 
 ## The rules
 
@@ -48,19 +48,25 @@ commit messages, comments. How it reads, never what it says.
    look for a shorter true Name before taking it; when none is found,
    the long Name stands. A hyphenated word counts as one, toward the
    two and the 4: "never-event" is one word. A lowercase word is
-   English and only English; no Markdown mark marks a Name. A
-   numbered thing carries its owner and number, "delivered-copies
-   rule 4", "the skill's stage 3"; a label inside its owner keeps its
-   case, "Stage 3", "KILL-2"; a path is written as it is. A thing is
-   defined when a text gives a word a meaning English does not: its
-   Name goes into the glossary in the commit that first uses it,
-   pointing at the text that defines it.
-10. **Title a numbered section with its subject.** A label, a noun
-    phrase of 30 characters or fewer, in sentence case, one phrase
-    with no gloss after a dash or colon, a Glossary Name inside it
-    keeping its capitals; it stands alone without its parent heading:
-    *How a slice is cut*, never *How*. The point goes in the first
-    sentence. A record's fixed headings, a stage heading and a
+   English and only English; no Markdown mark marks a Name. Written
+   otherwise:
+   - a numbered thing carries its owner and number,
+     "delivered-copies rule 4", "`cbc-slice`'s Stage 3";
+   - a label inside its owner keeps its case, "Stage 3", "KILL-2";
+   - a path is written as it is.
+
+   A thing is defined when a text gives a word a meaning English does
+   not: its Name goes into the glossary in the commit that first uses
+   it, pointing at the text that defines it.
+10. **Title a numbered section with its subject.** A title is:
+    - a label, a noun phrase of 30 characters or fewer;
+    - in sentence case, a Glossary Name inside it keeping its
+      capitals;
+    - one phrase, with no gloss after a dash or colon;
+    - standing alone without its parent heading: *How an Invariant
+      Slice is cut*, never *How*.
+
+    The point goes in the first sentence. A record's fixed headings, a stage heading and a
     numbered rule's bold lead are not titles under this rule.
 11. **Change only the lines the change needs.** The rest stand as
     they are. Markdown has no line width here; 72 is a commit body's
@@ -82,7 +88,7 @@ After:
 > EVIDENCE-2: the test must be able to fail. The stored answer
 > already exists, because GUARANTEE-3 built it. So we skip the
 > lookup on the working tree, and check that the replay test goes
-> red. That red run is owed in the build stage.
+> red. That Red Run is owed in the build stage.
 
 Same meaning, same references. It can be read once.
 
@@ -90,7 +96,7 @@ Same meaning, same references. It can be read once.
 
 - **Chat:** every answer.
 - **Records:** every new or changed line. History keeps its words.
-- **Other texts:** a skill or Agent Rule may be written densely. Follow
+- **Other texts:** an Agent Skill or Agent Rule may be written densely. Follow
   what it says, but not how it says it. This rule sets the voice.
 
 ## Other styles

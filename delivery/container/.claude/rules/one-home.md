@@ -9,23 +9,23 @@ config. Where it lives, never how it reads.
 
 <!-- No paths: line, so this loads at the start of every session:
      a fact can be retold in any line written. The why is in the
-     deliverer's facts-in-sync manual (CBC
+     Concept Deliverer's facts-in-sync manual (CBC
      docs/conventions/facts-in-sync/ §1, One home; The CBC Run's seat). -->
 
 ## The rules
 
-1. **Give each fact one home.** The records table in the entry file
+1. **Give each fact one home.** The records table in the Entry File
    says which record owns which kind of fact.
 2. **Elsewhere, link; retell only where the reader acts on it
    there.** A retelling carries its source's id, as SLICE-4 or
    KILL-12, or else its path, section and title in parentheses.
    "SLICE-4, a retried order makes one order" saves a lookup where
    the reader needs it. Elsewhere, link and don't retell: "The scale
-   it is built for: see the system definition." Without the id or
+   it is built for: see the System Definition." Without the id or
    the reference, a retelling is a second home.
 3. **Make a summary say it is one.** It names its owner, and nobody
-   reads it in the owner's place. A registry entry does this: it
-   links the slice record it sums up.
+   reads it in the owner's place. An Invariant Slice Registry entry
+   does this: it links the Invariant Slice Record it sums up.
 4. **Change a fact at its home.** The links don't change, unless
    the home itself moves. In the same commit, grep the fact's id or
    path and re-read each line that carries it, with its paragraph.

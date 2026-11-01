@@ -10,8 +10,14 @@ How a structure is shown is settled by rendering, not by argument.
 Write what the reader must get *before* looking at candidates,
 build each one, judge it line by line, and let the render decide.
 
-The spine is requirements first, every candidate built, judged per
-requirement, the outcome recorded. What makes it its own method is the
+The steps are:
+
+1. requirements first;
+2. every candidate built;
+3. each judged per requirement;
+4. the outcome recorded.
+
+What makes it its own method is the
 failure mode only a picture has: *a notation that asserts something
 you did not mean*, and what that has cost.
 
@@ -66,7 +72,7 @@ fire, however large the form.
    by reasoning is a *prediction*; mark it as one until the render
    confirms it.
 
-6. **Decide, and record it** where the entry file's records table
+6. **Decide, and record it** where the Entry File's records table
    puts a decision of its kind — the requirements, the candidates,
    and why each lost. Then delete the draft; it has served, and git
    history keeps it.
@@ -95,7 +101,7 @@ name the case, it is not an entry yet.
   Mermaid `block-beta` is meant for stacked blocks and lost both
   the arrow labels and the vertical order. `sequenceDiagram` is
   meant for handoffs between actors and had to draw a read-only
-  Run Reading as an arrow into the other repo — asserting the opposite
+  CBC Run Reading as an arrow into the other repo — asserting the opposite
   of the rule the procedure existed to keep. A picture that states
   the opposite of the truth is worse than no picture.
 
@@ -110,11 +116,14 @@ name the case, it is not an entry yet.
 
 - **Asked for a picture, this method is not always what is wanted.**
   An Idea Model written in prose was asked for a diagram of it. The method
-  was reached for, and most of it was not run — no non-picture
-  candidate, requirements written after the first candidate was
-  built, no verdict settled by looking. What the work actually
+  was reached for, and most of it was not run:
+  - no non-picture candidate;
+  - requirements written after the first candidate was built;
+  - no verdict settled by looking.
+
+  What the work actually
   needed was to build one picture, ask what it was *for*, and build
-  the second picture that question produced. The skill's own "it does not fire for a form with one obvious answer"
+  the second picture that question produced. The Agent Skill's own "it does not fire for a form with one obvious answer"
 (§1, *When this fires*) covers this, and was read as
   being about simple forms rather than about clear answers. Adding
   two pictures to one document is ordinary work; it earned no ADR,
@@ -129,8 +138,8 @@ name the case, it is not an entry yet.
 ## 5. What this does not do
 
 - It does not choose a notation for this project. The Mermaid in
-  its cases is the Concept Deliverer's provisional trial, which does not
-  travel; this project decides its own forms.
+  its cases is the Concept Deliverer's provisional trial. It does
+  not travel. This project decides its own forms.
 - It does not run on a schedule, and it is not a review of forms
   already settled.
 
@@ -145,7 +154,7 @@ name the case, it is not an entry yet.
   it": a candidate that needs the layout fought has lost
 - ADR-0027, decision 3 — §5's Mermaid trial, provisional and not
   travelling
-- ADR-0028 — the trigger fired; this skill is its answer, and §4
+- ADR-0028 — the trigger fired; this Agent Skill is its answer, and §4
   growing or not is the test of the objection it records
 - ADR-0030 — the general method separated out; §4's discipline
   line and §1's rule that the set holds a non-picture are from it

@@ -2,25 +2,25 @@
 
 <!-- The working arrangement's decision log. Append-only, newest
      last. One entry per
-     arrangement decision — a skill added or changed, an Agent Rule tuned,
+     arrangement decision — an Agent Skill added or changed, an Agent Rule tuned,
      a workflow adopted. Three parts: what, why, what was rejected.
 
-     Division of labor: the standing rule rides as a comment in the
-     artifact it governs — this log keeps the why and the rejected
+     Division of labor: the standing rule is a comment in the
+     artifact it governs. This log keeps the why and the rejected
      options, and neither repeats the other. Commit bodies stay
      ordinary commit bodies.
 
      This file is agent-side; how a commit touching it is made is
-     the commit-messages skill's.
+     the commit-messages Agent Skill's.
 
      At the project retrospective, read top to bottom: each entry
-     graduates to the Concept Deliverer, stays local, or dies.
+     goes to the Concept Deliverer, stays local, or is dropped.
 
-     The two placeholders in the birth entry below — the date and
-     the Delivery Pin's commit — are replaced at copy time by the Concept Deliverer's
+     The two placeholders in the birth entry below, the date and
+     the Delivery Pin's commit, are replaced at copy time by the Concept Deliverer's
      Pure Seed. The Delivery Pin is the Concept Deliverer's commit every copy here
      equals. Beside it the entry carries the Read-Through Commit, the
-     commit of this project the Concept Deliverer last read up to; at birth
+     commit of this project the Concept Deliverer last read up to. At birth
      nothing has been read, and the first Delivery Note sets it. Every later
      delivery entry carries both (.claude/rules/delivered-copies.md,
      rule 1). If a placeholder still shows, the Pure Seed was not run;
@@ -38,4 +38,5 @@
   Approaches on Trial: approach-drafting.
   Why: the Concept Deliverer's defaults. Their decisions are cited
   CBC ADR-nnnn and are the Concept Deliverer's to explain.
-  Rejected: none — see the Concept Deliverer's ADRs.
+  Rejected: none here. The Concept Deliverer's ADRs hold what it
+  rejected, and this project cannot open them.

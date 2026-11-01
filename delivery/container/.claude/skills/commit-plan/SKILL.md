@@ -85,14 +85,14 @@ section.>
   what held. One plan may mix both, per decision. Two constraints
   either way: no commit references what does not yet exist, and
   durable records are caught up before the close.
-- **Plan the records commits.** Walk the entry file's records
+- **Plan the records commits.** Walk the Entry File's records
   table: every record whose moment this set will create gets a
   commit, at the boundary where its truth exists. A set that closes
-  a `PLAN.md` gate item names the commit that closes it. A change to
-  the agent's own files — a skill or Agent Rule corrected or added, its
+  a `PLAN.md` Plan Step Gate item names the commit that closes it. A change to
+  the agent's own files — an Agent Skill or Agent Rule corrected or added, its
   decisions entry — is a commit of its own, never
   folded into a records commit, since the two are kept apart
-  (`.claude/skills/commit-messages/SKILL.md`, *The agent's own files*): and a records commit planned to carry one has to be split
+  (`.claude/skills/commit-messages/SKILL.md`, *The agent's own files*). A records commit planned to carry one has to be split
   when it opens.
 
 ## 4. The lifecycle
@@ -179,7 +179,7 @@ the grant, every commit is a boundary.
 
 - ADR-0038, 1b — a separate convention; the plan is a scaffold,
   not a record
-- ADR-0038, 1d — §3: a set that closes a gate item names the
+- ADR-0038, 1d — §3: a set that closes a Plan Step Gate item names the
   commit
 - ADR-0038, 1e — §3: order follows where the decision lives;
   §2: provisional tails; §4: ADRs open Proposed

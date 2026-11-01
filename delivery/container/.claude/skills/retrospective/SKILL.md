@@ -1,14 +1,15 @@
 ---
 name: retrospective
-description: Walk a finished CBC Run part by part and decide what the next CBC Run does differently. Use when the CBC Run has finished building, before Release, or when the reviewer asks for a retrospective, a look back, or "what would we do differently". Do NOT use to fix this run's records; that is apply-retrospective, after this.
+description: Walk a finished CBC Run part by part and decide what the next CBC Run does differently. Use when the CBC Run has finished building, before Release, or when the reviewer asks for a retrospective, a look back, or "what would we do differently". Do NOT use to fix this CBC Run's records; that is apply-retrospective, after this.
 foundation: the retrospective convention
 ---
 
 # Retrospective
 
 The CBC Run stays as it is. Its lessons go to the next CBC Run, through what
-the next CBC Run starts from: the skills, the Agent Rules, the playbook, the
-Skill Templates, the reviewer's local file. A lesson that lands nowhere is
+the next CBC Run starts from: the Agent Skills, the Agent Rules, the
+playbook the Plan Steps came from, the Agent Skill Templates, the
+reviewer's `CLAUDE.local.md`. A lesson that lands nowhere is
 repeated.
 
 The reviewer decides everything. The agent reads, measures, finds,
@@ -17,7 +18,7 @@ proposes and writes.
 ## Stage 0 — open
 
 1. **Cut a branch,** `retrospective`, from main. Main is not touched
-   until the retro lands. Ask the reviewer whether small commits are
+   until the retrospective lands. Ask the reviewer whether small commits are
    free on it.
 2. **Write the note,** `RETRO.md` at the root, with these sections:
    - **Goal:** the CBC Run stays as it is; lessons go to the next CBC Run.
@@ -27,7 +28,7 @@ proposes and writes.
      built them, each with its files and a status: not started, in
      progress, done (date).
    - **Do differently:** one block per part.
-   - **Delivering the retro:** what reaches the next CBC Run, and how.
+   - **Delivering the retrospective:** what reaches the next CBC Run, and how.
    - **Experiments:** one line per `try/` branch.
    - **Parked:** questions raised in one part that belong to
      another, each naming that part.
@@ -45,7 +46,7 @@ proposes and writes.
    - What needed to happen earlier?
    - Which approaches were tried and dropped?
    - What work had no home in the plan?
-   - Which gate items caught nothing?
+   - Which Plan Step Gate items caught nothing?
 
    Each finding needs a real example from the CBC Run: a quoted line
    with its file and line number, or a count. A finding without an
@@ -92,34 +93,35 @@ proposes and writes.
   needs text the CBC Run has not written yet is parked to the moment it
   will exist.
 - **Do not fix the CBC Run's records.** The one exception is Stage 4,
-  item 3: the CBC Run's own Run Asks.
+  item 3: the CBC Run's own CBC Run Asks.
 
 ## Stage 3 — try a change on a branch
 
-A change worth testing during the retro, such as a new rule, goes on
-`try/<what>`, cut from `retrospective`, and is used for the rest of
-the retro. At the close the reviewer keeps it (`retrospective`
-fast-forwards to it) or drops it (the branch is deleted, and the
-note's commits move back). The note's Experiments line records which.
+A change worth testing during the retrospective, such as a new rule,
+goes on `try/<what>`, cut from `retrospective`, and is used for the
+rest of the retrospective. At the close the reviewer keeps it or
+drops it. Kept: `retrospective` fast-forwards to it. Dropped: the
+branch is deleted, and the note's commits move back. The note's Experiments line records which.
 
 ## Stage 4 — close
 
 1. **Every part is done,** and every Parked item is judged or still
    names its part.
-2. **The entry file is read top to bottom.** Every line still passes
+2. **The Entry File is read top to bottom.** Every line still passes
    the three tests in its guard comment, or leaves.
-3. **The CBC Run's own Run Asks close into the note.** Each Run Ask
+3. **The CBC Run's own CBC Run Asks close into the note.** Each CBC Run Ask
    in TODO's "To the deliverer" that a decision answers becomes one
    line naming that decision. The Decisions Log gets a "rules in
    force now" list on top, with what each rule replaced.
-4. **What only the next CBC Run can check becomes its gate items.** List
+4. **What only the next CBC Run can check becomes its Plan Step Gate items.** List
    them in the note, each with the Plan Step that judges it. The
    Concept Deliverer writes each into the next CBC Run's PLAN at that Plan Step, with one line of reason, naming the decision.
 5. **One TODO line asks the Concept Deliverer to apply the note's
    decisions.**
 6. **A devlog entry,** ending with a "Resume:" line, and TODO's Now
    updated.
-7. **Land it.** The look back and the `-detail` branch are commit-plan's
+7. **Land it.** The closing look at the landed commits, and the
+   `-detail` branch that keeps what was tried, are the commit-plan Agent Skill's
    (`.claude/skills/commit-plan/SKILL.md` §4, *The lifecycle*, and §6, *Review
    protocol*). The branch,
    `retrospective`, reaches main by fast-forward, on the reviewer's
@@ -130,7 +132,7 @@ note's commits move back). The note's Experiments line records which.
 ## Between sessions
 
 PLAN's "Now:" line and the devlog's last "Resume:" line say where
-the retro stands. The note holds every decision, so a new session
+the retrospective stands. The note holds every decision, so a new session
 reads those two, then the note.
 
 ---
@@ -138,4 +140,4 @@ reads those two, then the note.
 ## Decisions
 
 - ADR-0054 — the retrospective is a convention, its look and
-  its apply step two skills, taken from never-oversold's
+  its apply step two Agent Skills, taken from CBC Run 3's

@@ -15,13 +15,13 @@ covers:
 
 A Plan Step finds the Output Shapes that apply to its work by that line. A file
 without it is not an Output Shape. An Output Shape says nothing about when it is
-written or changed; that is this file's.
+written or changed. That is this file's.
 
 ## 1. Written from work that exists
 
 An Output Shape is written from outputs that already exist: a pair that
 recurred, or one piece worth keeping. Never from an idea of how the
-work should go. If no Output Shape covers what a Plan Step made, its gate checks
+work should go. If no Output Shape covers what a Plan Step made, its Plan Step Gate checks
 nothing for it.
 
 Before an Output Shape is written, its examples are read side by side, with
@@ -35,26 +35,27 @@ two questions:
   example shares never shows up by comparing them. Example: twenty
   entries that all lack a worked example with numbers.
 
-The reviewer settles what the look finds; anything the writer adds
+The reviewer settles what this reading finds; anything the writer adds
 beyond it is named as theirs. Then the Output Shape is tried on the
 examples it came from, and on an earlier version where a miss is
 known. An Output Shape catches a part that is missing, not a part that kept
 its place but lost half its meaning: only the source shows that.
 
-## 2. One place, read at the gate
+## 2. Where an Output Shape lives
 
 Every Output Shape lives in `.claude/shapes/`. Nothing loads it while the
-work is written. It is read at the Plan Step's closing gate.
+work is written. It is read at the Plan Step Gate, when the Plan Step
+closes.
 
 Why: work written without the Output Shape in view can show that it
 is wrong, or that a new one is needed. What must hold while the work
-is written is not an Output Shape. It belongs to the skill or the Agent Rule that
+is written is not an Output Shape. It belongs to the Agent Skill or the Agent Rule that
 runs the work.
 
-## 3. A difference at the gate
+## 3. A difference at the close
 
-The gate reads what the Plan Step made against every Output Shape that governs
-it. The comparison is by judgment, not by text: does the output
+At the Plan Step Gate, what the Plan Step made is read against every
+Output Shape that governs it. The comparison is by judgment, not by text: does the output
 have the parts the Output Shape names, in its order, reading as it says?
 Each difference is named, with the line from the output and the
 line from the Output Shape. It ends one of four ways, judged one
@@ -77,39 +78,40 @@ Outputs closed before a change are not reopened.
 ## 4. When an Output Shape names work
 
 An Output Shape mostly names form: the order of parts, how they read. Some
-parts need work done during the Plan Step. Example: a backstop "seen at
-the red run" can only be known by looking during the red run.
+parts need work done during the Plan Step. Example: a Structural Wall
+Backstop "seen at the Red Run" can only be known by looking during
+the Red Run.
 
 When an Output Shape is written or changed so that it names such a part,
-the skill that runs the work is checked. If the skill does not ask
+the Agent Skill that runs the work is checked. If the Agent Skill does not ask
 for that part, it is changed too, under `delivered-copies.md`.
-Otherwise the gate finds the part missing when it is too late to
+Otherwise the Plan Step Gate finds the part missing when it is too late to
 produce, and the work must be redone.
 
 ## 5. Offering an Output Shape back
 
-An Output Shape this project wrote reaches the Concept Deliverer when a Run Ask under
-TODO's *To the deliverer* offers it; the Concept Deliverer reads it at its
-next Run Reading. An Output Shape marks what any project would want (its
+An Output Shape this project wrote reaches the Concept Deliverer when a CBC Run Ask under
+TODO's *To the deliverer* offers it. The Concept Deliverer reads it at its
+next CBC Run Reading. An Output Shape marks what any project would want (its
 skeleton) apart from this project's example (its illustration), so
 the Concept Deliverer can take one and leave the other. How an edit reaches
 the Concept Deliverer is `delivered-copies.md`'s.
 
 ## 6. What this does not govern
 
-The gate items themselves, and how a Plan Step carries them.
+The Plan Step Gate items themselves, and how a Plan Step carries them.
 
 ---
 
 ## Decisions
 
-- ADR-0035 — written in never-oversold from its own lived work
+- ADR-0035 — written in CBC Run 3 from its own lived work
   and taken here reshaped: the holder is named as the Concept Deliverer,
   which the CBC Run's `delivered-copies.md` names, and the role-name it
   arrived under is not adopted
 - ADR-0037 — shapes are a convention; this Agent Rule derives from its
   manual, keeps the definition because a CBC Run cannot open the manual,
   and says that an Output Shape states form and never its lifecycle
-- ADR-0052 — one place, read at the gate; Output Shapes travel as
+- ADR-0052 — one place, read at the Plan Step Gate; Output Shapes travel as
   copies; the look before an Output Shape is written; four endings; an Output Shape
-  that names work is asked for by its skill
+  that names work is asked for by its Agent Skill

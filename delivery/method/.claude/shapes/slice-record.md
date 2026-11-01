@@ -220,4 +220,4 @@ Read the record and ask:
 6. Where the record differs from this Output Shape: did it drift, was the
    shape wrong, did each have something, or is it a different kind?
    How each ends is the shapes Agent Rule's
-   (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the gate*).
+   (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the close*).
