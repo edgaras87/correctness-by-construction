@@ -3893,6 +3893,61 @@ them.
     913, 915 to 923 and 925, `78fe685`; our `.gitignore` follows,
     `4185a49`; 914 declined; 924 fixed by DECISION-29's design,
     `ac34e28`.
+- **Round 3's close read:** FINDING-926 to 1410, under a commit plan
+  in the Refinement Layers' order; each file family's findings in its
+  commit, what follows it in the commit after.
+  - the conventions manual, 926 to 944 with DECISION-39's sentence,
+    `0803717`; the convention-manual Agent Rule follows, `22da3ce`;
+  - project-recording, 945 to 969, `f435e8d`;
+  - the index, agent-arrangement, commit-messages and commit-plan,
+    970 to 1000, `103a301`;
+  - exchange and facts-in-sync, 1001 to 1022 with DECISION-35's
+    sentence, `0cdd102`;
+  - repo-hygiene, retrospective, shapes, visual-comparison and the
+    writing manual, 1023 to 1069 and 1081, `efb8cef`;
+  - the glossary, 1070 to 1080 with DECISION-36, `b379c2d`;
+  - the Idea Models, 1082 to 1122, `9fce63c`;
+  - the concept's chapters, 1123 to 1151, editorial, with
+    DECISION-34's 532, `eefdced`; 1127's second half, a gap line in
+    chapter 00, not editorial and open;
+  - `ARCHITECTURE.md` and `README.md`, 1152 to 1171, `5d0f5ca`, whose
+    body says "1150";
+  - `PLAN.md` and `TODO.md`, 1172 to 1212 with DECISION-34's 549, 578
+    and 580, `bcf3010`;
+  - `CHANGELOG.md`, the Conversation Memory and `temp/README.md`, 1213
+    to 1216 and 1219 to 1221, `a6f2a67`; 1217 and 1218 with the
+    Master Copies, `2fca3bf`;
+  - our Entry File and Agent Rules, F's share of 1222 to 1253,
+    `fab7214`; the writing manual's rule 10 follows, `c91c15a`;
+  - our Agent Skills and Approaches on Trial, F's other findings to
+    1255, `448a16c`;
+  - the delivery's pages, 1257 to 1276, `a456f4c`; our `PLAN.md`'s
+    form follows, `78d04c3`; 1275 stands, by DECISION-39;
+  - the container's records and hygiene files, 1277 to 1289 with
+    1211, 1217 and 1218, `2fca3bf`; ours follow, `e39ad66`; 1287
+    declined, CBC Bootstrap being the Stack Group's Name;
+  - the container's agent files, 1256, 1277's Agent Rule line and
+    1290 to 1315, with DECISION-33, `8b6eec0`; ours follow,
+    `7319107`;
+  - four lines against what was taken, corrected: 1258, 1300, 1303
+    and 1313, `75d77e2`; ours follow, `04a06dd`;
+  - the Method Group, 1316 to 1364, by file: cbc-framing's
+    `ce370e4`; cbc-slice's, with 1320's homes, `5a1fa33`; the
+    Output Shapes `6e1d55e`; the glossary and plain-words page
+    `60398b1`; 1340 and 1360 stand, by DECISION-37, and 1361 by
+    DECISION-40;
+  - the Stack Group, 1365 to 1410, by file: cbc-bootstrap's
+    `63bb1db`; infra-establish's and infra-serve's `1f13fee`, with
+    the Stage 0 quote `ce370e4`'s rename grep missed; the glossary
+    `91619d6`; 1391 stands, by DECISION-37.
+
+  Left for the last read: 1384's bold leads that begin with a Name
+  and 1388's "Stage n Gate" labels, each a question no decision
+  answers; whether writing rule 10 says a parenthesis is a gloss, as
+  DECISION-38 decided; the Java label "the promise: %s"; the Pure
+  Seed's `git add` without `.claude/rules`; the playbook's "Steps
+  5..N-3" with no status box; agent-arrangement §2.4's "a fact whose
+  failure is not noticing it".
 
 ## Round 3's close read
 
