@@ -86,8 +86,8 @@ On trial. This repo has no project end. Its Plan Steps close on
 "lessons written back where they came from: conventions, the
 playbook, the concept", a close line its PLAN carries. That names the places but no method.
 
-At the close of the Plan Step that runs the next CBC Run Birth, it
-runs both Agent Skills on itself, from `delivery/container/`, in place
+At the moment TODO's item "Run this repo's retrospective, on trial"
+names, it runs both Agent Skills on itself, from `delivery/container/`, in place
 of that close line. The parts are its own: the concept, the
 conventions, the delivery, the exchange, its records. For this repo,
 its next Plan Step plays the part a next CBC Run plays for a CBC Run. The trial's verdict says whether this

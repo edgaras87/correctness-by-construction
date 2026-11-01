@@ -679,7 +679,7 @@
       seat, says what it is: both retrospective Agent Skills run on this repo, from
       `delivery/container/`, and a verdict on whether we hold them.
       The Plan Step Gate of PLAN's Step 10 held it until ADR-0057.
-      Trigger: the close of the Plan Step that runs CBC Run 5's birth.
+      Trigger: the close of the refinement Plan Step.
       See: ADR-0057, decision 4.
 
 - [ ] Decide whether a delivery checks its paths against the CBC Run's

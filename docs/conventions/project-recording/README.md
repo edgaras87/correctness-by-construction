@@ -69,9 +69,8 @@ The Concept Deliverer keeps the same records, derived from this page rather
 than from the Record Stubs (ADR-0042). It differs in seven things:
 
 1. **No project end.** Lessons are written back at each Plan Step's
-   close, rather than at a retrospective. Whether a retrospective
-   serves it too is on trial at the close of the Plan Step that runs
-   the next CBC Run Birth
+   close, rather than at a retrospective. Whether a retrospective serves it too is on trial, at the moment
+   TODO's item "Run this repo's retrospective, on trial" names
    (`docs/conventions/retrospective/`, *The seats*).
 2. **The playbook.** It owns
    `delivery/fills/cbc-run-pure-playbook.md`, where a CBC Run holds
