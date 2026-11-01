@@ -3893,3 +3893,1556 @@ them.
     913, 915 to 923 and 925, `78fe685`; our `.gitignore` follows,
     `4185a49`; 914 declined; 924 fixed by DECISION-29's design,
     `ac34e28`.
+
+## Round 3's close read
+
+All 118 living files read again at `f5dfbbe`, 2026-11-01, against
+writing rules 1 to 10 (§2.8), by nine readers as in round 3's read,
+A to I, one Refinement Layer or part of one each, each file whole.
+The 118 are round 3's 115, with the three delivered Names files
+ADR-0078 added. A script swept all 118 first, for the same three
+things as before the read: 6 numbered titles past 30 characters or
+with a gloss, 47 lowercase spellings of a Name outside history and
+outside "made usable", and every Fact Reference's title against its
+heading, all of which held. Each reader judged the sweep's lines for
+its files.
+
+The agent then checked each finding's first quote against the tree
+by script: 350 of 485 matched at the line named, 12 a few lines
+away; the 123 the script could not parse were sampled by hand, 7 of
+them, and all held. Each finding's mark, changed or not changed in
+round 3, is taken from `git blame` on its first line named, against
+`00420b9`, where round 3's read was taken.
+
+Found true, so not listed:
+- the worked example's two copies are byte-identical;
+- `approach-drafting.md` is one text in both Convention Seats;
+- every numbered Fact Reference's title lands on its heading.
+
+### Findings
+
+FINDING-926 to 1410. Each keeps its reader's number beside it, and
+its reader's proposal; nothing is decided yet.
+
+#### Reader A, Layers 1 and 2: the conventions manual, project-recording
+
+##### `docs/conventions/conventions/README.md`
+
+**FINDING-926.** (A-1) [changed in round 3] rule 9; checked. `docs/conventions/conventions/README.md` *§1, A convention's Work Approaches* (line 49): "is the Idea Model's". The glossary names a particular Idea Model by its name: "the Agent Model, the Tiers Model, the Idea-to-Output Model". "The Idea Model" leaves the reader to work out which one is meant, though the path follows. The sentence can also be read as "a convention is its manual and its Work Approaches", which is DECISION-32's rejected option (b). Proposed: fix: "What a convention is, its manual, with its Work Approaches one level down, is the Idea-to-Output Model's (`docs/models/idea-to-output.md` §6, *A convention*)." Changed.
+
+**FINDING-927.** (A-2) [not changed in round 3] rule 9; checked. *§3, Adding a convention*, step 4 (line 301): "The index's chain, only if the convention acts in sequence". DECISION-23 said "the chain" is to be said as the order the conventions act in, since it clashes with Chain Link. This file's own *What this is made usable as* (line 33) already says it that way. Proposed: fix: "4. Its place in the index's order of the conventions, only if the convention acts in sequence during a piece of work." Unchanged.
+
+**FINDING-928.** (A-3) [changed in round 3] rule 9; checked. *What this does not cover* (lines 336–337): "which paths are the arrangement's". "The arrangement" names the agent-arrangement convention by a short word. DECISION-24 lists "the arrangement" among the forms that change, and DECISION-27 writes a convention with its kind word every time. Proposed: fix: "and which paths the agent-arrangement manual lists". Changed (line 336 rewritten; these words kept).
+
+**FINDING-929.** (A-4) [changed in round 3] rule 3; checked. *§2.2, The need* (lines 208–214): "as evidence. Or as intent marked on trial. … Or as adopted, taken whole from elsewhere". The section names three forms a need can take, joined by "Or as" fragments, so the reader has to count them. The Agent Rule made from this section, `.claude/rules/convention-manual.md` item 2, lists the same three. Proposed: fix: "*What it is for* says the need: the work it makes possible, the failure lived without it, and the trigger. It is stated as one of three:", then a list of three: evidence; intent marked on trial, saying what would make it evidence and when to look again, after which the need is rewritten from what was seen or the convention goes; adopted, saying where it came from and what has been lived under it since. Then: "Never a wish written as evidence." Changed.
+
+**FINDING-930.** (A-5) [changed in round 3] rule 3; checked. *§2.4, The seats* (lines 233–239): "One paragraph when they are alike, a section per Convention Seat when they are not, and "no Convention Seat" said outright when one side has none". The four forms the section can take are packed into two sentences. `.claude/rules/convention-manual.md` item 4 lists them as "One of four:". Proposed: fix: "It takes one of four forms:", then four items: one paragraph when they are alike; a section per Convention Seat when not; "no Convention Seat" said outright when one side has none, so a reader does not hunt for it; a paragraph naming which body sections are whose when the body is already written per Convention Seat, as `docs/conventions/exchange/` does. Changed.
+
+**FINDING-931.** (A-6) [not changed in round 3] rule 2; checked. *§2.7, The channel* (lines 274–275): "Where it reasons from the Agent Model, a Fact Reference to that part (`docs/models/agent.md`)." This sentence has no verb. The parenthesis is also not a Fact Reference, since a Fact Reference gives a section and a title. Proposed: fix: "Where it reasons from the Agent Model, it carries a Fact Reference to the part it rests on, such as (`docs/models/agent.md` §8, *Choosing a channel*)." Changed.
+
+**FINDING-932.** (A-7) [changed in round 3] rule 8; resting on the reader. *What this is made usable as* (lines 28–29): "— a CBC Run's, and this convention's Work Approach there". It is hard to tell what "a CBC Run's" belongs to, or what "there" points at. The next entry (line 32) says only "it points.", and does not say what it points at. Proposed: fix: "— held in a CBC Run, where it is this convention's one Work Approach (§1.3, *The Foundation Line*);" and "it points at each manual." Changed.
+
+**FINDING-933.** (A-8) [not changed in round 3] rule 8; resting on the reader. *§1.3, The Foundation Line* (line 132): "The value carries the relation where it is not derivation." The reader has to work out from the list above that this means the "checked against" and "under" values. Proposed: fix: "Where a file is not derived from what it names, the value says how the two relate: `checked against`, `under`." Unchanged.
+
+**FINDING-934.** (A-9) [not changed in round 3] rule 8; resting on the reader. *§1.3, The Foundation Line* (line 121): "for the stack practice, the concept it was checked against". "The stack practice" is met here with no plain words. The reader has to know it means the Stack Group's files. Proposed: fix: "for the Stack Group's Agent Skills, the stack practice, the concept they were checked against". Question: is "the stack practice" exactly the Stack Group's Agent Skills, or more? Unchanged.
+
+**FINDING-935.** (A-10) [changed in round 3] rule 8; resting on the reader. *§2, The Convention Manual* (lines 191–193): "A section two manuals need becomes the next candidate. A pair recurred is the test an Output Shape is written by". The sentence does not say what the section is a candidate for, and "a pair recurred" has to be decoded. Proposed: fix: "A section that two manuals need becomes a candidate for the list. It is the same test by which an Output Shape is written: a pair of outputs that recur (`docs/conventions/shapes/` §1.2, *How an Output Shape is born*)." Changed.
+
+**FINDING-936.** (A-11) [not changed in round 3] rule 2; resting on the reader. *§2, The Convention Manual* (lines 181–183): "in the order of the parts below, from (§2.1, *The opening statement*) to (§2.9, *Where to look*)". The sentence uses two Fact References as nouns inside it, after two other qualifiers. Proposed: fix: "**The form** is the sections a manual has, each a heading after the opening. They come in the order of §2.1 to §2.9 below." Unchanged.
+
+**FINDING-937.** (A-12) [changed in round 3] rule 2; resting on the reader. *§3, Adding a convention*, step 6 (lines 309–310): "No line in a birth entry's list of conventions, as a CBC Run's Decisions Log holds: the Concept Deliverer receives none (ADR-0042)." The sentence has no verb, and "receives none" leaves the reader to supply "none of what". Proposed: fix: "A CBC Run's Decisions Log lists, in its birth entry, the conventions it received. The Concept Deliverer receives none, so it writes no such line (ADR-0042)." Changed.
+
+**FINDING-938.** (A-13) [changed in round 3] rule 8; resting on the reader. *§1.1, How a rule is written* (line 74): "A decision is cited as one rule says for every text". "One rule" does not say which rule. The reader learns it only from the Fact Reference two lines down. Proposed: fix: "A decision is cited as the facts-in-sync manual says for every text, in both Convention Seats: …". Changed.
+
+**FINDING-939.** (A-14) [not changed in round 3] rule 8; resting on the reader. *§1, A convention's Work Approaches* (lines 67–68): "The reader is an agent in a project, holding a pinned copy". The sentence does not say whose reader. Line 64 says this repo's own Agent Skills and Agent Rules are not copies, so their reader holds no pinned copy. Proposed: fix: "A Work Approach's reader is an agent in a project, opening it at the moment of use. In a CBC Run, that agent holds a pinned copy." Unchanged.
+
+**FINDING-940.** (A-15) [not changed in round 3] rule 2; resting on the reader. *§1.3, The Foundation Line* (lines 110–112): "as a Foundation Line, `foundation:`, in that header's comment. Both Convention Seats, the CBC Run's Record Stubs included." One list item stacks three asides, then ends on a fragment. Proposed: fix: "a record whose header holds its form, such as the Plan Step Form or `TODO.md`'s item form: a `foundation:` line in that header's comment, in both Convention Seats, the CBC Run's Record Stubs included." Unchanged.
+
+**FINDING-941.** (A-16) [not changed in round 3] rule 9; uncertain. *§3, Adding a convention*, step 3 (line 299): "the Decisions Log's Record Stub". The glossary's Record Stub entry says each Record Stub is "named by it: the Plan Stub, the Decisions Log Stub". But no living text outside the glossary uses those Names, so the working practice is "Record Stub" plus its record or path. Also `docs/conventions/project-recording/README.md` lines 238 ("the Record Stub's legend"), 651 ("The plan's Record Stub"), 659–660 ("the Record Stub's placeholders", "the CBC Run's PLAN Record Stub"): 4 more where the particular Record Stub is meant and no path is given. Question: does a particular Record Stub take its Name (Plan Stub, Decisions Log Stub), or does the glossary's example go? If it takes its Name: "the Decisions Log Stub", "the Plan Stub's legend", "The Plan Stub", "the Plan Stub's placeholders". Unchanged.
+
+**FINDING-942.** (A-17) [not changed in round 3] rule 9; uncertain. *§2.4, The seats* (line 228): "### 2.4 The seats". This is a numbered title holding the lowercase word for a Convention Seat, and the glossary's Convention Seat entry points at it. The fixed heading "## The seats", which every manual has, is a label of the form. But this section is numbered, so rule 10 reaches it (DECISION-20), and so does rule 9. Also `docs/conventions/project-recording/README.md` lines 56 ("### The CBC Run's seat"), 65 ("### The Concept Deliverer's seat"), 166 ("*The CBC Run's seat:*") and 187 ("*Our seat:*"): 4 more. Question: is "seat" in the fixed heading, and in the per-seat headings built from it, a label or the Name? If it is the Name: "### 2.4 The Convention Seats", with the rename grep; "The CBC Run's Convention Seat" and so on. Unchanged.
+
+**FINDING-943.** (A-18) [change not traced] rule 6; uncertain. *§3, Adding a convention* (line 315) and *What this does not cover* (line 341): "`CHANGELOG.md`'s standing comment". Every other place, these two files included, calls a record's top comment its "header comment" (one-home's *Not a second home*; `docs/conventions/project-recording/README.md` lines 360, 413, 477, 528, 586, 670, 828). Two words for one thing make the reader ask whether they mean two things. Also `docs/conventions/project-recording/README.md` line 875: 1 more. Proposed: fix: "`CHANGELOG.md`'s header comment", in all 3; or decline if "standing" marks something the header comment is not. Unchanged.
+
+**FINDING-944.** (A-19) [not changed in round 3] rule 3; resting on the reader. *§3, Adding a convention* (line 316): "the PLAN has no per-convention Plan Steps. *Its story: devlog 2026-09-28; …*". Here the story line runs on at the end of a prose paragraph. §2.6 asks for "one italic line", and every other story line in the file stands on its own line. Proposed: fix: move the italic to its own line under the paragraph. Unchanged.
+
+##### `docs/conventions/project-recording/README.md`
+
+**FINDING-945.** (A-20) [changed in round 3] rule 9; checked. *§7.5, When a README changes* (lines 543, 545, 548) and *§9.1, What a playbook is* (line 631): "a Plan Step whose gate makes true", "in lived gates", "The Release Plan Step's gate", "the full sequence of Plan Steps, gates, and". Each lowercase "gate" means a Plan Step Gate. DECISION-19's Agent Model group, question 2, gave "gate" two Names and asked that each use be read by hand. "Lived gates" is also opaque (rule 8). 4 instances. Proposed: fix: "a Plan Step whose Plan Step Gate makes true"; "in Plan Step Gates already in use ("ARCHITECTURE current")"; "The Release Plan Step's Plan Step Gate includes"; "the full sequence of Plan Steps, their Plan Step Gates, and". Changed.
+
+**FINDING-946.** (A-21) [not changed in round 3] rule 5; checked. *§5.4, How an item is written* (line 423): "an idea parked here is not lost"; *§12, Minimum viable set* (line 763): "devlog only (even that pays off)". DECISION-26's row "debt, bank, park, pays off" says fix. 2 instances. Proposed: fix: "an idea written here is not lost"; "devlog only (even that is worth it)". Unchanged.
+
+**FINDING-947.** (A-22) [not changed in round 3] rule 5; resting on the reader. These figures are not in DECISION-26's table: "the raw material for the retrospective and the playbook" (line 228); "Polishing it: it kills the habit." (380); "otherwise they rot" (408); "The cross-project script." (626); "Same checklist spirit as playbooks" (718); "when a struggle crystallizes into a decision" (730, in the drawing, which rule 9 reaches by DECISION-21). The same row ruled the matching figure "the raw material that gets distilled upward" (FINDING-321), and it was fixed. 6 instances. Proposed: fix: "what the retrospective and the playbook are written from"; "Polishing it: the habit stops"; "otherwise they are forgotten"; "The Plan Steps every project of a type starts from."; "A checklist, as a playbook is"; "when a struggle ends in a decision". Changed in part (380 was rewritten with the figure kept); the rest unchanged.
+
+**FINDING-948.** (A-23) [changed in round 3] rule 5; uncertain. *The Concept Deliverer's seat* and on (lines 70, 85, 86, 155, 170, 202, 669, 673, 686): "Lessons fold back at each Plan Step's close", "the evidence its playbook is folded from", "**Fold back:**", "Never folding retrospectives back". "Fold" is a figure for writing lessons into a record, and "folded from" a figure for writing from. The method also gives "fold" a meaning of its own, the Invariant Slice Fold. DECISION-19 fixes a word that has a rival among the delivered Names. 9 instances here, and 32 in living text, the retrospective manual's own Concept Deliverer's seat among them. Question: is "fold back" kept as the convention's dead verb, or said plainly ("lessons are written back into the playbook", "the evidence its playbook is written from") across living text? Changed in part (the Concept Deliverer's seat's list was rewritten with these words kept).
+
+**FINDING-949.** (A-24) [changed in round 3] rule 9; checked. *The Concept Deliverer's seat*, item 1 (line 72): "on trial at the close of the birth Plan Step". "Birth" stands for the CBC Run Birth. The Plan Step meant is the one the retrospective manual calls "the Plan Step that runs the next CBC Run Birth" (`docs/conventions/retrospective/`, *The Concept Deliverer's seat*). Proposed: fix: "on trial at the close of the Plan Step that runs the next CBC Run Birth". Changed (the list was rewritten with these words kept).
+
+**FINDING-950.** (A-25) [not changed in round 3] rule 2; checked. *The Concept Deliverer's seat*, item 5 (lines 108–110): "Its words are a record of their own, `docs/glossary.md`, as a CBC Run's are, and a line known wrong is a TODO known issue". This one sentence holds two unrelated facts: where the glossary is, and what happens to a wrong line. Proposed: fix: "Its words are a record of their own, `docs/glossary.md`, as a CBC Run's are. A line known wrong is a known issue in `TODO.md` (§5, *TODO.md*)." Changed.
+
+**FINDING-951.** (A-26) [not changed in round 3] rule 8; resting on the reader. *The Concept Deliverer's seat*, item 5 (lines 97–106): "**what is stated, and what ships from it** — the pairing, the Idea Models". The five parts are given in new words, not by `ARCHITECTURE.md`'s headings (*Overview*, §1 *What is stated here*, §2 *The delivery and the CBC Runs*, §3 *What must stay true*, §4 *Codemap*), so a reader cannot find them by title. "The pairing" is `ARCHITECTURE.md`'s own word, and it is not explained here. Proposed: fix: name each part by its heading, and say "the pairing" plainly: "each Canonical Description beside what is made from it". Changed.
+
+**FINDING-952.** (A-27) [changed in round 3] rule 8; resting on the reader. *The Concept Deliverer's seat*, item 7 (lines 119–120): "A CBC Run gets it only if it holds here." The reader has to work out that "holds" means "passes its trial". Also *The CBC Run's seat* (lines 61–62): "its lessons reach the playbook when the Concept Deliverer reads it": "it" can be the retrospective or the CBC Run. 2 instances. Proposed: fix: "A CBC Run gets it only if its trial here keeps it (§14, *Conversation Memory*)."; "when the Concept Deliverer reads the CBC Run". Changed.
+
+**FINDING-953.** (A-28) [not changed in round 3] rule 8; resting on the reader. *What it is for* (lines 13–14): "Adopted with the Container Group (ADR-0038, 1d for the README's moment)". An adopted need says where it came from (`docs/conventions/conventions/` §2.2, *The need*), and this line does not say. DECISION-23 asks that the handbook be named in plain words once per file. The text "1d for the README's moment" is also hard to decode. Proposed: fix: "Adopted with the Container Group from the handbook, the repo this arrangement came from, now history (ADR-0038; its decision 1d sets when the README changes)." Unchanged.
+
+**FINDING-954.** (A-29) [changed in round 3] rule 2; resting on the reader. *What this is made usable as* (lines 30–34): "— the one part of the Entry File this convention owns (§13, *The records table*), in a file `docs/conventions/agent-arrangement/` owns: the rule that cannot live inside a record, when to open it." One list item holds four ideas: whose part it is, whose file it sits in, what it holds, and why it is not in a record. Proposed: fix: "— the one part of the Entry File this convention owns (§13, *The records table*). The file is the agent-arrangement manual's. The table holds the one rule a record cannot hold: when to open it." Changed.
+
+**FINDING-955.** (A-30) [changed in round 3] rule 2; resting on the reader. *The Concept Deliverer's seat*, item 4 (lines 81–83, 89–90): "What makes work a Plan Step, and the Plan Step Form, the CBC Run's adapted to this Convention Seat, are under"; "(§3.3, *Where ADRs live*'s index is the CBC Run's)". The first sentence has nested asides. The second folds a Fact Reference into a clause. 2 instances. Proposed: fix: "What makes work a Plan Step, and the Plan Step Form, are under `## The Plan Step Form` at the top of the Concept Deliverer's own `PLAN.md` (ADR-0057). The form is the CBC Run's, adapted to this Convention Seat."; "and no decision index, since `docs/adr/` lists itself. The index in §3.3, *Where ADRs live*, is the CBC Run's." Changed.
+
+**FINDING-956.** (A-31) [changed in round 3] rule 2; checked. *§2.1, What a plan is* (lines 218–221): "The plan of Plan Steps: the whole of the work sketched coarsely, the next 1–2 Plan Steps detailed finely, the detail moving forward as Plan Steps close, each with its exit criteria, its Plan Step Gate, and a live status." This is one sentence with no verb and five parts. "Its exit criteria, its Plan Step Gate" also reads as two things, though the Plan Step Gate is the exit criteria (glossary). Proposed: fix: "A plan is its Plan Steps. The whole of the work is sketched coarsely, and the next 1–2 Plan Steps are detailed finely. The detail moves forward as Plan Steps close. Each Plan Step has a Plan Step Gate, its exit criteria, and a live status." Changed.
+
+**FINDING-957.** (A-32) [not changed in round 3] rule 2; resting on the reader. *§2.4* (lines 237–240), *§3.4* (294–297), *§4.4* (360–362): "In a CBC Run, the Record Stub's legend and the Plan Step Form copied from the playbook at birth, …; in the Concept Deliverer's Convention Seat, `PLAN.md`'s legend and its Plan Step Form." The pattern "In a CBC Run, X; in the Concept Deliverer's Convention Seat, Y" has no verb on either side of the semicolon. The reader has to carry "is the form" over from the sentence before. 3 instances. Proposed: fix: "In a CBC Run, the form is X. In the Concept Deliverer's Convention Seat, it is Y." Changed in part (295 rewritten); 237–240 and 360–362 unchanged.
+
+**FINDING-958.** (A-33) [not changed in round 3] rule 3; checked. *§4.2, Why a devlog* (lines 346–351): "Three payoffs: (1) dead ends are recorded, … — "tried caching …" saves the next attempt; (2) resuming …; (3) it is what the records above it are written from". The three parts are numbered inside one sentence and joined by semicolons and a dash. Proposed: fix: "Three payoffs:", then a list of three, each one item, with the caching example as its own sentence in item 1. Changed in part (349–351).
+
+**FINDING-959.** (A-34) [not changed in round 3] rule 8; resting on the reader. *§5.4, How an item is written* (lines 421, 429–430): "The story is not, because the devlog already holds it."; "tighter, it cut meaning; looser, an item grows back into its story." The first leaves the reader to supply "is not there". The second is two compressed clauses, one of them in the past tense with no event named. 2 instances. Proposed: fix: "The story is not there, because the devlog already holds it."; "When it was capped tighter, it lost meaning. When it is looser, an item grows back into its story." Unchanged.
+
+**FINDING-960.** (A-35) [not changed in round 3] rule 2; checked. *§9.4, How a playbook is written*, item 1 (lines 659–660): "Born without one, the Record Stub's placeholders are filled in place. How is the CBC Run's PLAN Record Stub." In the first sentence "born" attaches to the placeholders, not the CBC Run. The second is a fragment the reader has to rebuild. Proposed: fix: "A CBC Run born without one fills the Plan Stub's placeholders in place. The Plan Stub says how." (Plan Stub per FINDING-941's answer.) Unchanged.
+
+**FINDING-961.** (A-36) [change not traced] rule 6; uncertain. *§6.3, Where the changelog lives* (lines 470–471): "says what at its Framing Plan Step"; *§9.4* (line 674): "The CBC Framing and Release Plan Steps". The playbook titles its Step 1 "CBC Framing" (`delivery/fills/cbc-run-pure-playbook.md`). So "Framing Plan Step" is a third label for that Plan Step, or a different one, since line 470 is about any concept or docs repo. Question: does line 470 mean a CBC Run's CBC Framing Plan Step (then "its CBC Framing Plan Step"), or any repo's framing (then lowercase English, "at its framing")? Changed.
+
+**FINDING-962.** (A-37) [changed in round 3] rule 8; uncertain. *§8.1, What ARCHITECTURE is* (lines 567–568): "A Plan Step's contract, once certified, is history". "Contract" and "certified" are defined nowhere in this file and have no Name. The reader cannot tell what a Plan Step's contract is. Proposed: question: what is meant, a CBC Run's Invariant Slice Record or its Plan Step Gate? Then say it by that Name: "What a closed Plan Step proved is history". Changed.
+
+**FINDING-963.** (A-38) [changed in round 3] rule 9; uncertain. *§8.4, How ARCHITECTURE is written* (line 594): "The why behind a shape is the ADR's"; *§11*'s drawing (line 734): "when the Plan Step changed the system's shape". ADR-0074 listed "shape" among the words with more than one meaning here, and Output Shape is a delivered Name. 2 instances. Proposed: fix: "The why behind a design choice is the ADR's"; "changed the system's structure". Changed.
+
+**FINDING-964.** (A-39) [change not traced] rule 3; resting on the reader. Dashes that set off an aside inside a sentence: line 226 ("at any moment — the three questions"), 277 ("consequences — including the downsides"), 400 ("deferral *explicit* — "we know"), 406 ("when there's a team — same structure"), 643–644 ("the type — the one a project's "Steps from" line names —"), 698 ("too large for an ADR — a multi-page proposal"), 791 ("its path** — and adding a record"), 803 ("not a restatement — it says when to go"). 8 instances. Proposed: fix: end the sentence before the dash, and give the aside a sentence of its own. Changed in part (226 sits in a hunk); the rest unchanged.
+
+**FINDING-965.** (A-40) [not changed in round 3] rule 10; uncertain. *§12* (line 759): "Minimum viable set"; *§13.1* (line 788): "What a row holds"; *§13.2* (line 806): "The table's anti-patterns". Read alone in a Fact Reference, none of the three says what it is about: a set of what, a row of what, which table. Proposed: fix: *The fewest records needed* (26 characters), *What a records table row holds* (30), *Records table anti-patterns* (27), with the rename grep. Unchanged.
+
+**FINDING-966.** (A-41) [changed in round 3] rule 2; resting on the reader. *§13, The records table* (lines 781–783): "The Entry File, the one file loaded before any task, what it may hold and how it stays small, is the agent-arrangement manual's". Two asides sit between the subject and the verb. The second can be read as part of the subject. Proposed: fix: "The Entry File is the one file loaded before any task. What it may hold, and how it stays small, is the agent-arrangement manual's (…)." Changed.
+
+**FINDING-967.** (A-42) [change not traced] rule 9; resting on the reader. Lines 33 ("in a file `docs/conventions/agent-arrangement/` owns"), 254 ("`RETRO.md`, by `docs/conventions/retrospective/`") and 859 ("the failure `docs/conventions/agent-arrangement/` measured, in its *What it is for*"). In each, a path is the doer of a verb. DECISION-27 names a manual with its kind word and keeps a path for a Fact Reference. Line 207 of the same file already writes "the agent-arrangement manual's". 3 instances. Proposed: fix: "in a file the agent-arrangement manual owns"; "`RETRO.md`, under the retrospective manual (`docs/conventions/retrospective/`)"; "the failure the agent-arrangement manual measured (`docs/conventions/agent-arrangement/`, *What it is for*)". Changed in part (858–859); 33 and 254 unchanged.
+
+**FINDING-968.** (A-43) [not changed in round 3] rule 9; uncertain. *§3.3, Where ADRs live* (line 290): "in PLAN.md's Decision index"; *§13.2* (line 809): "It belongs in PLAN.md; the table's row for PLAN.md". This is the path outside backticks, 3 times, where the rest of the file writes `PLAN.md`. The index is also "Decision index" at 290 (the Plan Stub's heading, `## Decision index`) and "decision index" at 89. Proposed: fix: "`PLAN.md`" in all three; "Decision index" at 89, keeping the heading's case. Changed in part (89, 808–810); 290 unchanged.
+
+**FINDING-969.** (A-44) [not changed in round 3] rule 2; resting on the reader. *§1, The records at a glance* (lines 162–164): "How the records feed each other, a picture for each Convention Seat. An arrow says what a record holds for the plan; when a record is opened is each Convention Seat's records table's (§13, *The records table*)." The first sentence has no verb. The second ends on a stacked possessive. Proposed: fix: "Each Convention Seat has a picture of how the records feed each other. An arrow says what a record holds for the plan. When a record is opened is in each Convention Seat's records table (§13, *The records table*)." Unchanged.
+
+#### Reader B, Layer 3: the index and five manuals
+
+##### `docs/conventions/README.md`
+
+**FINDING-970.** (B-1) [not changed in round 3] rule 9; checked.
+`docs/conventions/README.md` *The chain* (line 35): "only `commit-plan`". The name stands bare, with no kind word. DECISION-24, as widened, and DECISION-27 require the kind word always: "the commit-plan Agent Skill" or "the commit-plan manual". Also `docs/conventions/README.md` lines 34, 36, 44: 3 more in prose. The drawing's labels at lines 20–22, "visual-comparison", "commit-plan", "commit-messages", are 3 more, since DECISION-21 says rule 9 reaches drawn text and the boxes have room. Proposed: question: which kind word does the chain mean? Recommended: "Agent Skill", since the text says each one "fires" at its moment, and line 44 is the shipped Agent Skill ("a project on another stack can use it unchanged"). So: "only the commit-plan Agent Skill", and box labels "commit-plan Agent Skill" and so on. Unchanged.
+
+**FINDING-971.** (B-2) [not changed in round 3] rule 9; checked.
+`docs/conventions/README.md` *The chain* (line 39): "not from this chain". DECISION-23 chose plain words for "the chain", since it clashes with Chain Link: "the order the conventions act in". Also `docs/conventions/README.md` line 12, the heading "## The chain", and line 47, "**What the chain produces**": 2 more. Also `docs/conventions/commit-plan/README.md` line 182, "the index's chain": 1 more (B-3). Proposed: fix: heading "## The order of the conventions"; line 39 "not from this order"; line 47 "**What this order produces**". Unchanged.
+
+**FINDING-972.** (B-3) [not changed in round 3] rule 9; checked.
+`docs/conventions/commit-plan/README.md` *What this does not cover* (line 182): "the index's chain". `docs/conventions/README.md` is a Local Map, so "the index" is a second word for a Glossary Name. The line also uses "chain" (B-2). Also `docs/conventions/facts-in-sync/README.md` *Point and derive* (line 111): "another manual, the index": 1 more. Proposed: fix: "the order in the conventions' Local Map, `docs/conventions/README.md`, says which"; and at line 111, "another manual, a Local Map, `ARCHITECTURE.md`". Unchanged.
+
+##### `docs/conventions/agent-arrangement/README.md`
+
+**FINDING-973.** (B-4) [changed in round 3] rule 9; checked.
+`docs/conventions/agent-arrangement/README.md` *The CBC Run's seat* (line 55): "the only method work is running `cbc-framing`". The kind word is missing (DECISION-27). The shipped Entry File itself writes "running the cbc-framing Agent Skill". Also line 95: "because `exchange-read` reads them": 1 more. Lines 58 and 80 write "the retrospective's": 2 more, where a one-word convention stands bare (DECISION-24). Proposed: fix:
+- line 55: "running the cbc-framing Agent Skill";
+- line 95: "because the exchange-read Agent Skill reads them";
+- line 58: "the retrospective Agent Skill and the apply-retrospective Agent Skill among them";
+- line 80: "not the retrospective manual's Agent Skills".
+
+Changed.
+
+**FINDING-974.** (B-5) [not changed in round 3] rule 9; checked.
+`docs/conventions/agent-arrangement/README.md` §2.4, *How the Entry File is written* (line 196): "three the Record Stub's guard comment states". Line 30 says the shipped Entry File is "not a Record Stub". The guard comment is the Entry File's own. Also line 412, "the Record Stub" carries the test; and line 590, "The Record Stubs: `delivery/container/.claude/CLAUDE.md`": 2 more. Round 3's *Met in round 3* list already notes line 590 against line 30. Proposed: fix:
+- line 196: "the Entry File's guard comment";
+- line 412: "the shipped Entry File carries the test";
+- line 590: "The Entry File and the Decisions Log's Record Stub: …".
+
+Unchanged.
+
+**FINDING-975.** (B-6) [not changed in round 3] rule 9; uncertain.
+`docs/conventions/agent-arrangement/README.md` §3.4, *`.claude/decisions.md`* (line 330): "own Record Stub." The subject is the Concept Deliverer's Decisions Log. A Record Stub is a shipped file as it is born, and the Concept Deliverer's log is neither. Proposed: fix: "Its rules sit in its header comment." Unchanged.
+
+**FINDING-976.** (B-7) [changed in round 3] rule 9; checked.
+`docs/conventions/agent-arrangement/README.md` §5.5, *Agent Skills* (line 503): "in an Agent Skill as in a rule. Our `foundation` lines". The line has two faults:
+- "a rule" stands for Agent Rule;
+- "`foundation` lines" stands for Foundation Lines.
+
+Also `docs/conventions/facts-in-sync/README.md` §4 step 3 (line 280): "in `foundation` lines": 1 more. Proposed: fix: "in an Agent Skill as in an Agent Rule. Our Foundation Lines are for a reader of the file"; and at line 280, "for its name in Foundation Lines". Changed (503); unchanged (280).
+
+**FINDING-977.** (B-8) [not changed in round 3] rule 5; checked.
+`docs/conventions/agent-arrangement/README.md` §4, *Arrangement anti-patterns* (line 424): "**Parking a repeated rule in the operator's file**". DECISION-26's table fixes "park". Proposed: fix: "**Keeping a repeated rule in the operator's file**". Unchanged.
+
+**FINDING-978.** (B-9) [not changed in round 3] rule 6; checked.
+`docs/conventions/agent-arrangement/README.md` §4, *Arrangement anti-patterns* (line 406): "**Putting rules in the working-style slot**". §2.4 names this slot *How to work here* (lines 232, 240). "Working-style" is a third word for it. Also line 411: "**Shipping the stance and local-rules slots as empty sections**": 1 more, for *How to work here* and *Local rules*. Proposed: fix: "**Putting rules in the *How to work here* slot**"; and at line 411, "the *How to work here* and *Local rules* slots". Unchanged.
+
+**FINDING-979.** (B-10) [changed in round 3] rule 9; uncertain.
+`docs/conventions/agent-arrangement/README.md` §4, *Arrangement anti-patterns* (line 416): "drifts from the source". The glossary's Foundation Line entry retires *source*: it "was a CBC Run's word for the Concept Deliverer, and is not ours". Here the word means the convention's manual. Proposed: fix: "drifts from its manual". Changed.
+
+**FINDING-980.** (B-11) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/agent-arrangement/README.md` §2.6, *The Entry File's size* (line 270): "So the guard and the". This manual never says in plain words what "the guard" is. Also lines 558 and 567: 2 more. Proposed: fix: at line 270, the first use, write "the guard comment, the Entry File's comment that holds the three tests". Changed.
+
+**FINDING-981.** (B-12) [not changed in round 3] rule 3; resting on the reader.
+`docs/conventions/agent-arrangement/README.md` *What the difference is* (line 109): "`delivered-copies.md` — how to take a newer copy". One sentence carries both seats' holdings, joined by a dash gloss and a semicolon. Also §3.4 (line 324): "is a comment in the file it governs; the Decisions Log keeps the why": 1 more, three clauses on semicolons. Proposed: fix: "The CBC Run holds the receiver's Agent Rule, `delivered-copies.md`. It says how to take a newer copy without losing its own edits, and what it may do to one meanwhile. The Concept Deliverer holds its Agent Skills and the form of the CBC Run Reading they produce." Line 324 splits the same way, into three sentences. Unchanged (109–110); changed (108, 324).
+
+**FINDING-982.** (B-13) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/agent-arrangement/README.md` §2.2, *Why an Entry File* (line 181): "It earns that by holding only what". The sentence before is about the agent and the files. "It" means the Entry File, three sentences back. Proposed: fix: "The Entry File earns that by holding only what every session needs". Changed.
+
+**FINDING-983.** (B-14) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/agent-arrangement/README.md` §1.3, *Not records* (line 154): "convention that owns the content states the touch". The text does not say which "two sides" are meant. "States the touch" does not say what is written. Proposed: fix: "Where a project fact sits in an arrangement file, the convention that owns the fact states it, and this one holds the file it sits in". Changed.
+
+**FINDING-984.** (B-15) [changed in round 3] rule 2; resting on the reader.
+`docs/conventions/agent-arrangement/README.md` §2.4, *How the Entry File is written* (line 250): "be running fails: each has a moment". Three subjects share one singular verb, and the object it fails is left out. Proposed: fix: "A test prerequisite, a migration rule or a service that must be running fails this test: each has a moment". Changed.
+
+**FINDING-985.** (B-16) [changed in round 3] rule 2; resting on the reader.
+`docs/conventions/agent-arrangement/README.md` *Why it arrives this way* (line 564): "where it stands, and an Agent Skill fires only on recognising the moment". One sentence chains the case and the reason. "Where it stands" has no clear meaning. Proposed: fix: "Told "remember X", an agent writes X into the Entry File. An Agent Skill would fire only if the agent recognised the moment, and here it does not." Changed.
+
+**FINDING-986.** (B-17) [not changed in round 3] rule 10; uncertain.
+`docs/conventions/agent-arrangement/README.md` §5.1 (line 441): "### 5.1 The mapping". The title does not stand alone. In the Fact Reference at line 187, "(§5.1, *The mapping*)", the reader cannot tell what is mapped to what. Proposed: fix: "### 5.1 Channels to mechanisms", 22 characters, with the rename grep. Unchanged.
+
+**FINDING-987.** (B-18) [not changed in round 3] rule 9; uncertain.
+`docs/conventions/agent-arrangement/README.md` §3.9 (line 392): "### 3.9 A rule loaded in every session". Here "rule" stands for Agent Rule, inside a numbered title that six or more Fact References carry. "An Agent Rule loaded in every session" is 37 characters, over rule 10's 30. Proposed: question: keep the title, or retitle "An Agent Rule always loaded" (27 characters) with the rename grep. Unchanged.
+
+##### `docs/conventions/commit-messages/README.md`
+
+**FINDING-988.** (B-19) [not changed in round 3] rule 9; checked.
+`docs/conventions/commit-messages/README.md` *What it is for* (line 19): "alone with no gate." This is the Agent Model's sense of "gate", which DECISION-19's table (question 2) named Enforcement Gate. Each use of "the gate" was to be read by hand. Proposed: fix: "with no Enforcement Gate." Unchanged.
+
+**FINDING-989.** (B-20) [not changed in round 3] rule 9; checked.
+`docs/conventions/commit-messages/README.md` §2.4, *Commit on the word* (line 82): "so the agent stages, shows the diff, and waits". The bare verb has no object. The glossary's Delivery Staging entry says the verb names its object, since git's verb is the same word. Proposed: fix: "so the agent stages the commit, shows the diff, and waits". Unchanged.
+
+**FINDING-990.** (B-21) [not changed in round 3] rule 8; resting on the reader.
+`docs/conventions/commit-messages/README.md` *What this is made usable as* (line 26): "the `agent` scope, the stop,". This manual never names "the stop" where it states the rule. §2.4 describes the stop without the label. Also line 18, "the stop sentence", and line 117, "the `agent` scope and the stop": 2 more. Proposed: fix: §2.4 gives the label: "…shows the diff, and waits for the word: the stop." Line 18, met first, says "the stop sentence, the rule that the agent waits at each commit". Unchanged (18, 26); changed (117).
+
+**FINDING-991.** (B-22) [changed in round 3] rule 2; resting on the reader.
+`docs/conventions/commit-messages/README.md` *The seats* (line 39): "It has one local habit, which scope carries the". It reads as a relative clause. The habit is what the commit's scope signals. Proposed: fix: "It has one local habit: the scope, not the type, carries the signal. It is stated in its own section and not shipped (§3, …)." Changed.
+
+**FINDING-992.** (B-23) [changed in round 3] rule 5; checked.
+`docs/conventions/commit-messages/README.md` §3, *The Concept Deliverer's habit* (line 107): "That is the mirror of the". "Mirror" is a figure. Proposed: fix: "It is the other answer done with the scope instead of the type, and not a weaker version of it." Changed.
+
+##### `docs/conventions/commit-plan/README.md`
+
+**FINDING-993.** (B-24) [changed in round 3] rule 9; checked.
+`docs/conventions/commit-plan/README.md` §2.6, *What a plan counts* (line 100): "A plan counts commits, never steps." The word stands for Plan Step. The sentence after it quotes "Step" as `PLAN.md`'s word, and that word is now the Name. Proposed: fix: "A plan counts commits, never Plan Steps." Changed.
+
+**FINDING-994.** (B-25) [changed in round 3] rule 8; checked.
+`docs/conventions/commit-plan/README.md` §2.11, *Small commits* (line 148): "(§2.13, *The stop at every boundary*)". A same-document reference comes right after "the commit-messages manual's rule". A reader takes it as that manual's §2.13, which does not exist. And this manual's §2.13 only points on. Proposed: fix: "(`docs/conventions/commit-messages/` §2.4, *Commit on the word*)". Changed.
+
+**FINDING-995.** (B-26) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/commit-plan/README.md` §2.8, *Counting subjects* (line 117): "A subject is counted when it is written." What is counted is the subject's characters, against the 50 limit. Nothing in the section says so. Also line 149: "Each small commit is counted": 1 more. Proposed: fix: "A subject's characters are counted against the 50 limit when it is written." Changed.
+
+**FINDING-996.** (B-27) [changed in round 3] rule 2; resting on the reader.
+`docs/conventions/commit-plan/README.md` §2.11, *Small commits* (line 144): "Each planned commit landing as one leaves no room to try". A participle phrase is the subject, and "two ways meant" follows on a colon. Proposed: fix: "When each planned commit lands as one, there is no room to try. Trying two ways meant reworking a commit in place." Changed.
+
+**FINDING-997.** (B-28) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/commit-plan/README.md` *What it is for* (line 12): "The failure it answered was lived elsewhere". "Elsewhere" is never named. Then "It is not ours to restate." (line 14) tells the reader nothing they can use (rule 7). Proposed: fix: name the place in plain words, as the agent-arrangement manual does: "lived in the handbook, the repo this convention came from, now history (ADR-0038)". Cut "It is not ours to restate." Changed.
+
+**FINDING-998.** (B-29) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/commit-plan/README.md` §2.10, *The sweep* (line 136): "It reads the text unwrapped." The sentence before is about "a commit's own grep". "It" means the sweep. Proposed: fix: "The sweep reads the text unwrapped." Changed.
+
+**FINDING-999.** (B-30) [changed in round 3] rule 3; resting on the reader.
+`docs/conventions/commit-plan/README.md` *Why it arrives this way* (line 168): "its moment is one the agent recognises — work turning". A pair of dashes holds a gloss inside a three-part sentence. Proposed: fix: "An Agent Skill, because the agent recognises its moment: work turning out to need several commits. Nothing in a record would put the plan in front of it then (…)." Changed.
+
+**FINDING-1000.** (B-31) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/commit-plan/README.md` §2.5, *The records commits* (line 94): "Change Set batches record moments". "Record moments" is not defined. "Before its truth exists" (line 95) is not plain. Proposed: fix: "A Change Set gathers the moments its records name. A record's moment can come mid-set, before the fact it records is true." Changed.
+
+##### `docs/conventions/exchange/README.md`
+
+**FINDING-1001.** (B-32) [not changed in round 3] rule 9; checked.
+`docs/conventions/exchange/README.md` *What this is made usable as* (line 51): "What `exchange-read` writes". The kind word is missing (DECISION-27). Also:
+- line 310, "in `exchange-deliver`";
+- line 511, "which its copy in `cbc-slice` follows";
+- line 534, "facts-in-sync owns that rule", a convention without its kind word (DECISION-24, widened).
+
+That is 3 more. Proposed: fix:
+- line 51: "the exchange-read Agent Skill";
+- line 310: "in the exchange-deliver Agent Skill";
+- line 511: "in the cbc-slice Agent Skill";
+- line 534: "the facts-in-sync manual owns that rule".
+
+Unchanged (51, 511); changed (310, 534).
+
+**FINDING-1002.** (B-33) [not changed in round 3] rule 9; checked.
+`docs/conventions/exchange/README.md` §2.5, *One cycle* (lines 149, 153, 154): "pin = X", "read-through = r", "(named in the note, recorded at t)". DECISION-21 covers drawn text:
+- a Name goes where its box has room;
+- otherwise, one line above the drawing says which short word stands for which Name.
+
+The key below uses the Names, but no line maps "pin" or "read-through" to them. "The note" has room for "Delivery Note". Proposed: fix: "(named in the Delivery Note, recorded at t)". Add one line above the drawing: "pin is the Delivery Pin; read-through is the Read-Through Commit." Unchanged.
+
+**FINDING-1003.** (B-34) [changed in round 3] rule 9; checked.
+`docs/conventions/exchange/README.md` §3.4, *One group per file* (line 236): "Staging writes it in." The noun stands with no object, and the glossary says the verb names its object. Proposed: fix: "Staging a delivery writes it in." Changed.
+
+**FINDING-1004.** (B-35) [changed in round 3] rule 3; checked.
+`docs/conventions/exchange/README.md` §3.7, *The Delivery Note* (line 281): "which is about our whole tree. A Delivery Note fails to reach when it". The next paragraph runs on inside the third bullet. So a list announced as three claims (line 277) holds a fourth, unrelated idea. Also, "a thin Delivery Note" is a note, not a claim. Proposed: fix: end the bullet at "tree."; a blank line; then "A Delivery Note fails to reach when …" as its own paragraph. The lead becomes "Three kinds of Delivery Note cannot avoid it". Changed.
+
+**FINDING-1005.** (B-36) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/exchange/README.md` *What this is made usable as* (line 41): "read the three things §6.1 names". The section number has no title, and the reader does not hold it. Proposed: fix: "read its Decisions Log, its backlog and the diff of its copies (§6.1, *Reading a CBC Run*)". Changed.
+
+**FINDING-1006.** (B-37) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/exchange/README.md` *What it is for* (line 15): "Not version control: a Delivery Pin is one part of it." The subject of "Not" is missing, and "it" could be the exchange or version control. Proposed: fix: "The exchange is more than version control: a Delivery Pin is only one part of it." Changed.
+
+**FINDING-1007.** (B-38) [changed in round 3] rule 5; resting on the reader.
+`docs/conventions/exchange/README.md` §3.1, *Delivery Staging* (line 179): "the CBC Run's tree is checked quiet first". "Quiet" is a figure for a clean tree. Proposed: fix: "checked clean first". Changed.
+
+**FINDING-1008.** (B-39) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/exchange/README.md` §3.7, *The Delivery Note* (line 288): "That is the Told". "That" could be the citation or the prompt. Proposed: fix: "A prompt is the Told Channel's text, so the same holds for it." Changed.
+
+**FINDING-1009.** (B-40) [not changed in round 3] rule 8; resting on the reader.
+`docs/conventions/exchange/README.md` §5.1, *When a copy may be edited* (line 401): "second condition does not hold it; the other two do." "Hold it" is unclear. It means the condition does not apply. Proposed: fix: "so the second condition does not apply to it; the other two do." Unchanged.
+
+**FINDING-1010.** (B-41) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/exchange/README.md` §5.2, *A finished copy* (line 413): "Plan Step here." Elsewhere in this manual "here" is the Concept Deliverer, as in §6.5, "a Master Copy changes here". In §5.2 it is the CBC Run. Proposed: fix: "by the next Plan Step of this CBC Run". The label *untried here* (line 414) stays, as the CBC Run's own words. Changed.
+
+**FINDING-1011.** (B-42) [not changed in round 3] rule 8; checked.
+`docs/conventions/exchange/README.md` §5.4, *One word for the other side* (line 427): "and the shipped Agent Rule says one thing." The sentence does not name the Agent Rule, `delivered-copies.md`, or the "one thing", Concept Deliverer. Proposed: fix: "and the shipped Agent Rule, `delivered-copies.md`, uses that one word." Unchanged (427); the sentence's first half changed (426).
+
+**FINDING-1012.** (B-43) [not changed in round 3] rule 9; uncertain.
+`docs/conventions/exchange/README.md` §6.5, *Verdicts* (line 542): "An unverifiable promise is worse than any of the three." "Promise" sits beside the method's Falsifiable Promise. Here it means a verdict that cannot be checked. Proposed: fix: "A verdict that cannot be checked is worse than any of the three." Unchanged.
+
+**FINDING-1013.** (B-44) [changed in round 3] rule 9; uncertain.
+`docs/conventions/exchange/README.md` §2.4, *The records' exception* (line 131): "`PLAN`, `TODO`". These are in code font but are not paths. A path is written as it is. Also `docs/conventions/facts-in-sync/README.md` line 20, "four records: PLAN, the": 1 more. Proposed: fix: "`PLAN.md`, `TODO.md` and the devlog"; and "four records: `PLAN.md`, the devlog …". Changed.
+
+##### `docs/conventions/facts-in-sync/README.md`
+
+**FINDING-1014.** (B-45) [not changed in round 3] rule 9; checked.
+`docs/conventions/facts-in-sync/README.md` §1, *One home* (line 98): "Each file's header comment is living text." Living Text is a Glossary Name, from DECISION-23, and its home is this section. Also:
+- line 206, §3.3: "greps all living text", the second sweep line, 1 more;
+- line 100: "gets a living home", 1 more, uncertain: it means a home in Living Text.
+
+Proposed: fix:
+- line 98: "is Living Text";
+- line 206: "greps all Living Text";
+- line 100: "gets a home in Living Text".
+
+§1 also needs its defining sentence (see *Met in passing*). Bold is allowed there (DECISION-22). Unchanged.
+
+**FINDING-1015.** (B-46) [changed in round 3] rule 8; checked.
+`docs/conventions/facts-in-sync/README.md` *What it is for* (line 18): "the handbook's Entry File held three disagreeing copies of one rule". This is the file's first "the handbook", with no plain words. DECISION-23 says it is introduced once per file, where first met. Proposed: fix: "the Entry File of the handbook, the repo the arrangement came from, now history (ADR-0038), held three disagreeing copies of one rule". Changed.
+
+**FINDING-1016.** (B-47) [changed in round 3] rule 9; checked.
+`docs/conventions/facts-in-sync/README.md` §3.4, *A decision citation* (line 233): "seat can open only its own ADRs". A lowercase "seat" stands for Convention Seat in prose. Also the headings *The CBC Run's seat* and *The Concept Deliverer's seat* (lines 50, 63, and `docs/conventions/agent-arrangement/README.md` lines 49, 69), and their Fact References at lines 35 and 39: uncertain. They sit under the manual form's fixed heading *The seats*. Proposed: fix: "A Convention Seat can open only its own ADRs". Question: do the per-seat headings take "Convention Seat", as in *The CBC Run's Convention Seat*? Changed.
+
+**FINDING-1017.** (B-48) [not changed in round 3] rule 6; checked.
+`docs/conventions/facts-in-sync/README.md` §3.1, *What a Fact Reference is* (line 153): "*A skill's template". The example quotes an old bold lead. `delivered-copies.md` rule 8 now reads "An Agent Skill Template is copied and filled, never edited in…". A reference reworded points elsewhere, and this example teaches the form. Proposed: fix: "rule 8, *An Agent Skill Template is…*", 26 characters before the "…". Unchanged.
+
+**FINDING-1018.** (B-49) [not changed in round 3] rule 8; resting on the reader.
+`docs/conventions/facts-in-sync/README.md` §5, *A disagreement* (line 331): "`convention-lifecycle` on the day it first ran under it". The reader does not hold this retired name. "Argued down" (line 330) is also a figure. Proposed: fix: "CBC Run 3 showed a clause of `convention-lifecycle`, the receiver's protocol then, wrong on the day it first ran under it, and the clause changed". Unchanged.
+
+**FINDING-1019.** (B-50) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/facts-in-sync/README.md` §1, *One home* (line 86): "retelling whose host is itself a Canonical Description". "Host" is not said in plain words. Also §4 step 3 (line 283): "a host that changes for it is walked in": 1 more. Proposed: fix: "a retelling that sits in a Canonical Description sets off that text's Change Walk in turn". Changed (86); unchanged (283).
+
+**FINDING-1020.** (B-51) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/facts-in-sync/README.md` *What it is for* (line 26): "found the One home and Dependencies Finding Kinds". The reader holds neither label. Proposed: fix: "found two Finding Kinds, One home and Dependencies, the checks of a fact's home and of what a text stands on, resting on rules split that way". Changed.
+
+**FINDING-1021.** (B-52) [changed in round 3] rule 2; resting on the reader.
+`docs/conventions/facts-in-sync/README.md` §4 step 2 (line 265): "`foundation` per file, the Foundation Line's document, what the whole of it stands on." Three appositives, one after another, describe one thing. Proposed: fix: "Each derived thing names its Canonical Description once, in its one Foundation Line: the document the whole file stands on." Changed.
+
+**FINDING-1022.** (B-53) [not changed in round 3] rule 8; resting on the reader.
+`docs/conventions/facts-in-sync/README.md` *Why it arrives this way* (line 343): "One home's moment is". The section title is used as the name of an Agent Rule, and it reads as a phrase. Proposed: fix: "The one-home Agent Rule's moment is every text written." Unchanged.
+
+#### Reader C, Layer 3: repo-hygiene, retrospective, shapes, visual-comparison, writing, the glossary
+
+##### `docs/conventions/repo-hygiene/README.md`
+
+**FINDING-1023.** (C-1) [not changed in round 3] rule 5; checked.
+`docs/conventions/repo-hygiene/README.md` *What this is made usable as* (line 26): "never travel again." DECISION-26's journey row says to fix "travels" with plain words. Also `docs/conventions/shapes/README.md` 163, 175, 246, 247, 248, 249: 7 more uses on 6 lines ("travels whole", "travels as a copy", "What travels upward", "It travels by being *read*", "What must not travel", "the skeleton travels"). Also `docs/conventions/visual-comparison/README.md` 99: 1 more ("does not travel"). Proposed: fix: "they are never delivered again"; shapes, "is delivered whole", "An Output Shape is delivered as a copy", "What goes upward is a **finding**", "It reaches the Concept Deliverer by being *read*, not by being sent", "What must not be passed on", "the skeleton is passed on"; visual-comparison, "is provisional and is not delivered". Mixed: repo-hygiene 26, shapes 175, 246, 249 and visual-comparison 99 unchanged; shapes 163, 247, 248 changed.
+
+**FINDING-1024.** (C-2) [not changed in round 3] rule 8; checked.
+`docs/conventions/repo-hygiene/README.md` §1, *The three files* (line 53): "\"Safe reservations\" — rules fire only on files you touch". This is a coined label in quotes, and no text in the repo defines it. The Hygiene Base's `.editorconfig` explains the same idea with no such name ("When rules fire", "Never on their own"). The cell also chains three parts with a dash, a parenthesis and a semicolon (rule 3). Proposed: fix: "Rules fire only on files you touch, at the moments the file's labels name (`[creating] [typing] [save] [format]`). Untouched files keep their bytes." Unchanged.
+
+**FINDING-1025.** (C-3) [not changed in round 3] rule 5; uncertain.
+`docs/conventions/repo-hygiene/README.md` §1, *The three files* (line 52): "Line-ending truth (`* text=auto eol=lf`)". "Truth" stands for the rule the line sets. Proposed: fix: "The line-ending rule (`* text=auto eol=lf`)", or decline if the reviewer reads it as dead. Unchanged.
+
+**FINDING-1026.** (C-4) [changed in round 3] rule 8; uncertain.
+`docs/conventions/repo-hygiene/README.md` *What it is for* (line 17): "at the Plan Step that makes the stack true". The reader has to work out which Plan Step "makes the stack true" means. The playbook calls it "Step 4: CBC Bootstrap", and CBC Bootstrap is a Glossary Name in the stack's file. The Hygiene Base's marker lines call the same moment "app bootstrap". Also lines 41, 64-65, 71, 112: 4 more. Proposed: question: should the manual name it "the CBC Bootstrap Plan Step", or keep a phrase that fits any stack? If the phrase stays, say it once in plain words, for example "the Plan Step that first builds the application on its stack". Mixed: lines 17, 65, 71 and 112 changed; 41 and 64 unchanged.
+
+**FINDING-1027.** (C-5) [changed in round 3] rule 2; uncertain.
+`docs/conventions/repo-hygiene/README.md` *What it is for* (lines 9-11): "Adopted with the Container Group (ADR-0038); no failure of the Concept Deliverer's is recorded before it." Two ideas are joined by a semicolon. Proposed: fix: "Adopted with the Container Group (ADR-0038). No failure of the Concept Deliverer's is recorded before it." Mixed: lines 9 and 11 changed, 10 unchanged.
+
+##### The hygiene templates
+
+No finding. One copy difference is listed under *Met in passing*.
+
+##### `docs/conventions/retrospective/README.md`
+
+**FINDING-1028.** (C-6) [changed in round 3] rule 8; checked.
+`docs/conventions/retrospective/README.md` *What it is for* (line 26): "CBC Run 3 kept both as Agent Skills, and offered them." "Both" has no two-item antecedent: it comes right after a list of three things the retrospective did. The two meant are the look back and the applying of its lessons. Proposed: fix: "CBC Run 3 kept the look back and the applying of its lessons as two Agent Skills, and offered them." Changed.
+
+**FINDING-1029.** (C-7) [changed in round 3] rule 5; checked.
+`docs/conventions/retrospective/README.md` §2, *How the look back decides* (line 117): "They are prompts, inside the walk:". DECISION-26's journey row says to fix "the walk". Proposed: fix: "They are prompts, asked while the CBC Run is read part by part:". Changed.
+
+**FINDING-1030.** (C-8) [not changed in round 3] rule 5; checked.
+`docs/conventions/retrospective/README.md` §4, *`RETRO.md`* (line 155): "every decision, the experiments, what was parked". DECISION-26's debt row says to fix "park". Proposed: fix: "what was set aside for later". Unchanged.
+
+**FINDING-1031.** (C-9) [not changed in round 3] rule 6; uncertain.
+`docs/conventions/retrospective/README.md` §4, *`RETRO.md`* (line 159): "from the note." Within six lines `RETRO.md` is called three things: "`RETRO.md`", "The look back's record" and "the note". Also line 164: 1 more ("the note closing"). The retrospective Agent Skill also says "the note", so the manual may be copying its word. Proposed: fix: "`RETRO.md`" at lines 159 and 164. Unchanged.
+
+**FINDING-1032.** (C-10) [not changed in round 3] rule 2; checked.
+`docs/conventions/retrospective/README.md` §3, *How the lessons are applied* (lines 134-135): "**History is never touched,** and the records later Plan Steps were built on change only by a dated revision entry." This misleads on first reading: "the records later Plan Steps" reads as one noun phrase, and the verb, "change", comes late. Proposed: fix: "**History is never touched.** A record that later Plan Steps were built on changes only by a dated revision entry." Unchanged.
+
+**FINDING-1033.** (C-11) [not changed in round 3] rule 8; resting on the reader.
+`docs/conventions/retrospective/README.md` §3, *How the lessons are applied* (line 136): "A new test was never seen fail." The reason is left for the reader to work out: a test written after the build was never seen to fail, so it proves nothing. Proposed: fix: "A test written now was never seen to fail, so it proves nothing yet." Unchanged.
+
+**FINDING-1034.** (C-12) [changed in round 3] rule 8; uncertain.
+`docs/conventions/retrospective/README.md` §3, *How the lessons are applied* (lines 141-142): "README last. The plain-words rewrite goes last." Two things are both "last" within two lines, and the reader cannot tell which comes first. Proposed: question: which goes last? If the rewrite does: "Owners go before the records that summarize them, README last of these. The plain-words rewrite comes after all of them." Changed.
+
+**FINDING-1035.** (C-13) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/retrospective/README.md` *The Concept Deliverer's seat* (lines 87-90): "in place of that item." and "The next Plan Step stands where a CBC Run has its next CBC Run." "That item" points back two sentences to a quoted close line, and the reader must find it. "Stands where" is a figure for "plays the part of". Proposed: fix: "in place of that close line." and "For this repo, its next Plan Step plays the part a next CBC Run plays for a CBC Run." Changed.
+
+**FINDING-1036.** (C-14) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/retrospective/README.md` *The CBC Run's seat* (line 58): "**They get:**". The subject just before is "the reviewer", which is singular. "They" could mean the reviewer and the agent, or the CBC Run. Also line 71: 1 more ("**They get** the CBC Run's records improved"). Proposed: fix: "**The CBC Run gets:**" in both. Changed.
+
+**FINDING-1037.** (C-15) [changed in round 3] rule 8; uncertain.
+`docs/conventions/retrospective/README.md` *The CBC Run's seat* (line 64): "each triage row;". "Triage" is the apply-retrospective Agent Skill's Stage 1. The manual uses it twice (lines 64-65 and 71) and never says what it is. Proposed: fix: at first use, "each triage row: a decision marked applied, partly applied, or next CBC Run only;". Changed.
+
+**FINDING-1038.** (C-16) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/retrospective/README.md` *The CBC Run's seat* (line 62): "the next CBC Run's checks, listed for its plan." The retrospective Agent Skill makes these Plan Step Gate items that only the next CBC Run can check. The manual's words do not say so. Proposed: fix: "the Plan Step Gate items only the next CBC Run can check, each with the Plan Step that judges it." Changed.
+
+**FINDING-1039.** (C-17) [changed in round 3] rule 2; checked.
+`docs/conventions/retrospective/README.md` *What it is for* (lines 12-14): "so the section's moment never came; the retrospective happened only because the reviewer asked for one." Two ideas are joined by a semicolon, after a sentence that already carries an aside. Proposed: fix: end at "never came." and start a new sentence, "The retrospective happened only because the reviewer asked for one." Changed.
+
+**FINDING-1040.** (C-18) [not changed in round 3] rule 2; resting on the reader.
+`docs/conventions/retrospective/README.md` §1, *The two Plan Steps* (lines 97-98): "But a look that changes nothing leaves a CBC Run released with records it has shown could read better." The reader must hold a long object ("a CBC Run released with records it has shown could read better") before the sentence makes sense. Proposed: fix: "But if the look changes nothing, the CBC Run is released with records it has already shown could read better." Unchanged.
+
+##### `docs/conventions/shapes/README.md`
+
+**FINDING-1041.** (C-19) [changed in round 3] rule 9; checked.
+`docs/conventions/shapes/README.md` §3, *Where an Output Shape lives* (lines 152-154): "A Structural Wall Backstop \"seen at the red run\", for example, can only be known by looking during the Red Run." Red Run is a Glossary Name (`delivery/method/docs/glossary/method.md`). The same sentence writes it in lowercase inside the quote and with capitals after it. The quote is also stale: the Output Shape now says "seen catching at the Red Run" (`delivery/method/.claude/shapes/slice-record.md` line 89). Proposed: fix: "A Structural Wall Backstop \"seen catching at the Red Run\", for example, can only be known by looking during the Red Run." Changed.
+
+**FINDING-1042.** (C-20) [not changed in round 3] rule 10; checked.
+`docs/conventions/shapes/README.md` §5.2 (line 276): "### 5.2 A tick, and a difference". This is two phrases joined by a comma. DECISION-20 made "What it reads, and its words" and "Detachable, and kept so" one phrase each. Proposed: fix: "### 5.2 Ticks and differences". The rename grep finds two Fact References to fix in the same commit: `TODO.md` 215 and 227. Unchanged.
+
+**FINDING-1043.** (C-21) [changed in round 3] rule 9; checked.
+`docs/conventions/shapes/README.md` §4, *An Output Shape between repos* (line 168): "a Spring Adversity Harness file's is `spring-postgres/`;". "Spring Adversity Harness" is capitalized like a Name, but neither glossary lists it. The stack's Names table (DECISION-19, row 13) ruled the stack's harness "One thing: Adversity Harness", the method's Name. Proposed: fix: "a file of the stack's Adversity Harness is `spring-postgres/`;". Changed.
+
+**FINDING-1044.** (C-22) [not changed in round 3] rule 9; checked.
+`docs/conventions/shapes/README.md` §5.2, *A tick, and a difference* (line 288): "the gate says". This means the Plan Step Gate. A lowercase word is English only, and the section's first sentence writes the Name. Also `docs/glossary.md` 152: 1 more ("read only at the gate"). The container's glossary writes "read only at a Plan Step Gate". Proposed: fix: "the Plan Step Gate says"; and in the glossary, "read only at a Plan Step Gate". Unchanged.
+
+**FINDING-1045.** (C-23) [changed in round 3] rule 9; uncertain.
+`docs/conventions/shapes/README.md` *The Concept Deliverer's seat* (lines 55-56): "Two of its own forms, a CBC Run Reading's and a manual's". These are Output Forms, and the manual is a Convention Manual: the glossary's Output Form entry says "A Convention Manual's and a CBC Run Reading's are Agent Rules today". Also `docs/glossary.md` 146 and 221 ("a record's form"), and `docs/conventions/writing/README.md` 147 ("the manual form's fixed headings"): 3 more. Proposed: fix: "Two of its own Output Forms, a CBC Run Reading's and a Convention Manual's"; question for the other three: is "a record's form" a particular Output Form named by its owner, as the entry allows, or should it be the Name? Mixed: shapes 56 and writing 147 changed; glossary 146 and 221 unchanged.
+
+**FINDING-1046.** (C-24) [not changed in round 3] rule 3; checked.
+`docs/conventions/shapes/README.md` §1.2, *How an Output Shape is born* (lines 91-95): "**it recurred**, so a pair is the evidence and what they share is the Output Shape; or **it was judged worth keeping**, so one piece was rebuilt". Two ways are chained with a semicolon and "or" in one sentence, after "Two ways one is born". A list shows the count. Proposed: fix: "Two ways one is born, and neither ranks above the other:", then two bullets. Unchanged.
+
+**FINDING-1047.** (C-25) [not changed in round 3] rule 2; checked.
+`docs/conventions/shapes/README.md` §2, *What an Output Shape is not* (lines 130-133): "Trial evidence is withheld **in order to stay** undelivered — a derivation that has seen it measures imitation instead of independence, so showing it destroys the measurement." A rule, its reason and its result sit in one sentence across a dash. Also lines 119-120 ("the failure mode it warns about — the material that does not fit gets hidden"), 95-97 ("how work should go — everything measured against it afterwards") and 301-303 ("are not reopened — each looks like"): 3 more. Proposed: fix: one sentence per idea, with no dash; for example "Trial evidence is withheld so that it stays undelivered. A derivation that has seen it measures imitation, not independence. Showing it destroys the measurement." Unchanged.
+
+**FINDING-1048.** (C-26) [not changed in round 3] rule 5; uncertain.
+`docs/conventions/shapes/README.md` §2, *What an Output Shape is not* (line 125): "An Output Shape *wants* divergence: that is how it learns". This gives a file wants and learning. Also lines 129-130 ("Their blindness runs opposite ways"), 172 ("that falls out of the groups"), 313 ("that is their force") and 114 ("four near neighbours"): 4 more. Proposed: fix: "An Output Shape expects divergence: a difference is how it gets corrected"; "They are hidden for opposite reasons"; "that follows from the groups"; "that is what makes them work"; "four things easily taken for it"; or decline the ones the reviewer reads as dead. Mixed: lines 114, 125, 129-130 unchanged; 172 and 313 changed.
+
+**FINDING-1049.** (C-27) [changed in round 3] rule 2; checked.
+`docs/conventions/shapes/README.md` *Why it arrives this way* (lines 309-311): "The first convention with no Agent Skill: its Work Approach is an Agent Rule, because the moment it serves is an Output Shape being touched, and an Agent Rule loads on the path". Four ideas are chained with a colon, "because" and "and": it is the first such convention, its Work Approach is an Agent Rule, why, and how an Agent Rule loads. Proposed: fix: "The first convention with no Agent Skill. Its Work Approach is an Agent Rule. Its moment is an Output Shape being touched, and an Agent Rule loads on that path (…)." Mixed: lines 309 and 311 changed, 310 unchanged.
+
+**FINDING-1050.** (C-28) [changed in round 3] rule 2; checked.
+`docs/conventions/shapes/README.md` *What this is made usable as* (lines 32-34): "held at `.claude/shapes/` and read at a Plan Step Gate, when the Plan Step closes: instances of this convention, each from a CBC Run's lived records, its illustration from the worked example". After the form's path-and-mark lead, five facts follow in one sentence: where, when, what they are, where each came from, and where its illustration came from. Proposed: fix: end after "when the Plan Step closes.", then "Each was written from a CBC Run's records, and carries an illustration from the worked example (§4.2, *An Output Shape's two layers*)." Mixed: lines 32-33 changed, 34 unchanged.
+
+**FINDING-1051.** (C-29) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/shapes/README.md` §4.1, *Nothing fetched* (lines 187-190): "*Named in ADR-0037 as \"a third act of the exchange\", and never built:" The note has no subject, so the reader must guess what was named and never built (a fetch of Output Shapes at the Plan Step Gate). "For it to carry" later in the note has the same gap. Proposed: fix: "*A fetch of Output Shapes at the Plan Step Gate was named in ADR-0037 as \"a third act of the exchange\", and never built: …*". Mixed: lines 187-188 changed, 189-190 unchanged.
+
+**FINDING-1052.** (C-30) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/shapes/README.md` §4.3, *The birth and delivery picture* (lines 236-237): "the difference in the line is the point." The reader has to work out that "the difference" is dashed against solid, meaning read against sent. Also line 242: 1 more ("What is this convention's is where the CBC Run Reading looks"), which puts its point in a clause used as subject. Proposed: fix: "The line is dashed because a CBC Run Reading reads; nothing is sent." and "This convention says where the CBC Run Reading looks: …". Changed.
+
+**FINDING-1053.** (C-31) [not changed in round 3] rule 9; uncertain.
+`docs/conventions/shapes/README.md` §4.2, *An Output Shape's two layers* (line 199): "the hand-off to make that possible." CBC Run Hand-off is a Glossary Name. Here the lowercase word means handing an Output Shape to another project, so it fails DECISION-23's test of a clash with a Name already held. Proposed: fix: "when it is handed to another project". Unchanged.
+
+##### `docs/conventions/visual-comparison/README.md`
+
+**FINDING-1054.** (C-32) [not changed in round 3] rule 2; checked.
+`docs/conventions/visual-comparison/README.md` *Why it arrives this way* (lines 92-94): "recognises the moment by the question it is facing; no path is touched that a rule could load on, and nothing in a record would bring the method up then." Three ideas are chained with a semicolon and "and". Proposed: fix: "The agent recognises the moment by the question it is facing. No file is touched that a Paths Rule could load on. Nothing in a record would bring the method up then." (The lowercase "a rule" is in FINDING-1060.) Unchanged.
+
+**FINDING-1055.** (C-33) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/visual-comparison/README.md` *What it is for* (lines 16-17): "It asserted the opposite of the rule the procedure existed to keep." The sentence names neither the rule nor the procedure, so the reader must reconstruct both. Proposed: fix: "The arrow said the opposite of the rule it was drawn to show: a CBC Run Reading reads a CBC Run and sends it nothing." Changed.
+
+**FINDING-1056.** (C-34) [changed in round 3] rule 8; checked.
+`docs/conventions/visual-comparison/README.md` *What it is for* (line 20): "would have left it out of the set." "The set" appears here before anything says what it is: "The candidate set" is first named in §2.1 (line 64). Line 21 is also a fragment with no subject: "Written as a method the same day, made a convention on 2026-09-19". Proposed: fix: "A method named for diagrams would have left the table out of the candidates. The method was written the same day, and made a convention on 2026-09-19 (ADR-0031)." Mixed: line 20 changed, 21 unchanged.
+
+**FINDING-1057.** (C-35) [changed in round 3] rule 2; resting on the reader.
+`docs/conventions/visual-comparison/README.md` §2.4, *The buildable notations* (lines 82-83): "Plain text, rendering on GitHub and in the IDE with no build step, leaves Mermaid and Unicode box drawing." The constraint is the subject of a clause with an aside inside it. It also comes after "the constraint is not aesthetic", which names the constraint before saying it (rule 1). Proposed: fix: "The buildable notations are two. The constraint is plain text that renders on GitHub and in the IDE with no build step, and only Mermaid and Unicode box drawing meet it." Mixed: line 82 changed, 83 unchanged.
+
+**FINDING-1058.** (C-36) [not changed in round 3] rule 7; uncertain.
+`docs/conventions/visual-comparison/README.md` §2.4, *The buildable notations* (lines 85-86): "A diagram nobody can read in review is as opaque in a diff as a binary file." This repeats the clause before it: "a committed SVG renders but is not text anyone can read in a diff". Proposed: fix: cut the last sentence; or decline, if the reviewer wants the point said as a rule. Mixed: line 86 changed, 85 unchanged.
+
+**FINDING-1059.** (C-37) [not changed in round 3] rule 8; resting on the reader.
+`docs/conventions/visual-comparison/README.md` §1, *What a comparison is* (line 45): "The unit is the thing being shown." The reader cannot tell what "the unit" is a unit of. Proposed: fix: "One comparison is made for each thing being shown." Unchanged.
+
+##### `docs/conventions/writing/README.md`
+
+**FINDING-1060.** (C-38) [not changed in round 3] rule 9; checked.
+`docs/conventions/writing/README.md` *What it is for* (line 20): "CBC Run 3 wrote a one-page rule". Here, and in "the rule" at lines 22, 66, 70, 73 and 180, the lowercase word means an Agent Rule: CBC Run 3's, then the writing Agent Rule. Line 46 writes the Name ("the Agent Rule states"). That makes 6 uses in this file. Also `docs/conventions/visual-comparison/README.md` 93 ("a rule could load on", a Paths Rule): 1 more. Proposed: fix: "a one-page Agent Rule", "under the Agent Rule", "The Agent Rule applies", "the Agent Rule says outright", "The Agent Rule then names", "why the Agent Rule stays one page"; visual-comparison, "a Paths Rule". Unchanged.
+
+**FINDING-1061.** (C-39) [not changed in round 3] rule 9; checked.
+`docs/conventions/writing/README.md` *Why it arrives this way* (line 171): "**A `paths:` list** loads when a file is touched". The glossary names this kind a Paths Rule (`docs/glossary.md`, Agent Rule entry), and FINDING-581 fixed "a `paths:` rule" in `TODO.md` to that Name. A list does not load; the Agent Rule does. The bullet also chains three ideas with commas and "and" (rule 2). Proposed: fix: "**A Paths Rule** loads when a file is touched, after a new one's first draft is written. Chat has no path." Unchanged.
+
+**FINDING-1062.** (C-40) [not changed in round 3] rule 6; checked.
+`docs/conventions/writing/README.md` *What it is for* (line 21): "(its RETRO.md, D2)". The retrospective manual now writes the file as "`RETRO.md`" (FINDING-448), so the same reference is written two ways across manuals. Also line 75: 1 more ("(its RETRO.md, D14)"). Proposed: fix: "(its `RETRO.md`, D2)" and "(its `RETRO.md`, D14)". Unchanged.
+
+**FINDING-1063.** (C-41) [changed in round 3] rule 8; resting on the reader.
+`docs/conventions/writing/README.md` *The seats* (lines 53-55): "The Concept Deliverer writes under its own: its chat and records. It also covers what CBC Runs read". "It" changes referent, from the Concept Deliverer to its Agent Rule, with no noun to show the change. Proposed: fix: "Its Agent Rule also covers what CBC Runs read". Changed.
+
+**FINDING-1064.** (C-42) [not changed in round 3] rule 2; checked.
+`docs/conventions/writing/README.md` §2, rule 9 (lines 131-133): "Its Name goes into the glossary in the commit that first uses it, pointing at the home that defines it, and a word whose English meaning is ours has no Name (rule 6)." Two rules are joined by "and": when a Name is added, and when a word gets no Name. Proposed: fix: end at "defines it.", then "A word whose English meaning is ours has no Name (rule 6)." Unchanged.
+
+**FINDING-1065.** (C-43) [changed in round 3] rule 2; resting on the reader.
+`docs/conventions/writing/README.md` §2, rule 9 (line 119): "A count, so a script can find it." This is a fragment with no verb, and the reader must supply "the trigger is". Proposed: fix: "The trigger is a count, so a script can find it." Changed.
+
+**FINDING-1066.** (C-44) [not changed in round 3] rule 2; checked.
+`docs/conventions/writing/README.md` §2, rule 11 (lines 153-155): "Markdown has no line width here: a reader meets the text rendered, or in an editor that wraps, and 985 lines in 83 of the 99 living files already run past 72." Three ideas are chained with a colon and "and": the rule, why, and a count. Proposed: fix: "Markdown has no line width here. A reader meets the text rendered, or in an editor that wraps. 985 lines in 83 of the 99 living files already run past 72." Unchanged.
+
+**FINDING-1067.** (C-45) [not changed in round 3] rule 8; resting on the reader.
+`docs/conventions/writing/README.md` §1, *What it governs* (lines 74-75): "CBC Run 3 left a specification style for its claims to be judged on plain text first". "Left" can mean dropped or deferred, and "for its claims to be judged" reads as if the claims are being judged. Proposed: fix: "CBC Run 3 put off a specification style until its claims had been judged in plain text (its `RETRO.md`, D14)." Unchanged.
+
+**FINDING-1068.** (C-46) [changed in round 3] rule 3; uncertain.
+`docs/conventions/writing/README.md` *What this is made usable as* (lines 35-39): "`delivery/container/docs/glossary/container.md`, the shared Names; `delivery/method/docs/glossary/method.md`, the concept's and the method's; `delivery/spring-postgres/docs/glossary/stack.md`, the stack's." Three files are chained with semicolons inside one bullet. Proposed: fix: a sub-list of three; or decline, since the form keeps one bullet per entry. Changed.
+
+**FINDING-1069.** (C-47) [not changed in round 3] rule 7; uncertain.
+`docs/conventions/writing/README.md` §1, *What it governs* (line 62): "How a text reads, never what it says." This repeats the opening statement at line 3 word for word. Proposed: fix: cut, and begin §1 at "It covers every text written"; or decline if the reviewer wants §1 to stand alone in a Fact Reference. Unchanged.
+
+##### `docs/glossary.md`
+
+**FINDING-1070.** (C-48) [not changed in round 3] rule 9; checked.
+`docs/glossary.md` *Kinds of text*, Agent Rule entry (line 167): "Rule, the entry file's". Entry File is a Glossary Name (DECISION-23), with an entry ten lines above, and the Fact Reference on the next line writes it capitalized. Proposed: fix: "a Local Rule, the Entry File's". Unchanged.
+
+**FINDING-1071.** (C-49) [not changed in round 3] rule 9; checked.
+`docs/glossary.md` *How texts tie*, Foundation Line entry (line 220): "A skill, an Agent Rule, an Output". Agent Skill is a Name, written with its kind every time (DECISION-27, and the glossary's own Agent Skill entry). Proposed: fix: "An Agent Skill, an Agent Rule, an Output Shape". Unchanged.
+
+**FINDING-1072.** (C-50) [not changed in round 3] rule 9; uncertain.
+`docs/glossary.md` *Between them*, Pure Seed entry (line 92): "the procedure that gives a CBC Run its birth from". CBC Run Birth is a Name, two entries above, and this lowercase "birth" names the same event, which DECISION-23's test counts as a clash with a Name already held. DECISION-26 keeps "born" as English. Also `docs/glossary.md` 43, `docs/conventions/repo-hygiene/README.md` 40 and 88, `docs/conventions/writing/README.md` 52, `docs/conventions/shapes/README.md` 175, 206 (a title) and 231 (the Mermaid label): 7 more. Proposed: question: is "birth" English, like "born", or the Name? If the Name: "the procedure that makes a CBC Run Birth from this repo alone"; repo-hygiene 88, "The next CBC Run Birth starts corrected"; the idioms "from birth" and "at birth" kept as English. Mixed: glossary 92 unchanged, 43 changed; repo-hygiene 40 unchanged, 88 changed; writing 52 unchanged; shapes 206 changed, 175 and 231 unchanged.
+
+**FINDING-1073.** (C-51) [changed in round 3] rule 3; checked.
+`docs/glossary.md` header comment (lines 12-14): "A convention is named by its path in backticks, with its kind word, the exchange manual, or by its Name, the Exchange Convention; never by the bare word." The ways are separated only by commas, and the reader cannot count them: is "with its kind word" a second way, or a condition on the path? The example "the exchange manual" has no backticks, so it reads as a way of its own. Proposed: fix: "A convention is named in one of three ways: by its path in backticks; by its word with its kind word, the exchange manual; or by its Name, the Exchange Convention. Never by the bare word." Changed.
+
+**FINDING-1074.** (C-52) [not changed in round 3] rule 6; uncertain.
+`docs/glossary.md` *Kinds of text*, Agent Rule entry (lines 166-168): "a Local Rule, the entry file's (…); a Paths Rule, one loaded by path". Local Rule and Paths Rule are capitalized as Names, and `TODO.md` uses both (lines 176, 601 and 745). Neither has an entry of its own, and the header says "One entry per Name". Proposed: fix: two entries after Agent Rule, each pointing at its home (agent-arrangement §2.4 and §5.6); or a question for the reviewer: are they labels inside the Agent Rule entry? Mixed: lines 166-167 unchanged, 168 changed.
+
+**FINDING-1075.** (C-53) [not changed in round 3] rule 9; uncertain.
+`docs/glossary.md` *Kinds of text*, Record Stub entry (line 183): "it: the Plan Stub, the Decisions Log Stub". These two Names are built on Record Stub and Decisions Log but drop "Record", so they do not carry the Name whole (writing rule 9, ADR-0078). No living text uses either. Proposed: fix: drop the two examples ("each named by its record"); or "the Plan Record Stub, the Decisions Log Record Stub", the second at 4 words. Unchanged.
+
+**FINDING-1076.** (C-54) [not changed in round 3] rule 2; resting on the reader.
+`docs/glossary.md` *How texts tie*, Chain Link entry (lines 216-217): "Wider than a Fact Reference, which is what one kind of link, points, writes down." The verb "writes down" comes after a nested aside, and "points" stands as a noun between commas. "Link" is also lowercase for the Name. Proposed: fix: "A Fact Reference is narrower: it writes down one kind of Chain Link, points." Unchanged.
+
+**FINDING-1077.** (C-55) [not changed in round 3] rule 8; resting on the reader.
+`docs/glossary.md` *Kinds of text*, Output Form entry (lines 146-148): "A particular one is named by its owner: a record's form sits in the record itself, its header comment, the Plan Step Form, a Record Stub's headings." The colon promises names, but the text after it lists where forms sit. Only "the Plan Step Form" is a name. Proposed: fix: "A particular one is named by its owner: the Plan Step Form. A record's Output Form sits in the record itself: its header comment, or a Record Stub's headings." Mixed: lines 146-147 unchanged, 148 changed.
+
+**FINDING-1078.** (C-56) [changed in round 3] rule 8; resting on the reader.
+`docs/glossary.md` *Between them*, Delivery Pin entry (lines 57-58): "but for their *Decisions* footers; the other number". "The other number" only makes sense to a reader who has just read the entry above. A glossary entry is often read alone. Proposed: fix: "the second of the two numbers a CBC Run records for a delivery, beside the Read-Through Commit". Mixed: line 57 changed, 58 unchanged.
+
+**FINDING-1079.** (C-57) [not changed in round 3] rule 2; resting on the reader.
+`docs/glossary.md` *Kinds of text*, Canonical Description entry (lines 116-118): "Canonical says reference, never correctness: today's understanding, changed only for a reason recorded." "Canonical says reference" is compressed, and the reader must expand it to "the word canonical means it is the reference". Proposed: fix: "\"Canonical\" means the reference, not that it is correct. It is today's understanding, changed only for a reason that is recorded." Unchanged.
+
+**FINDING-1080.** (C-58) [not changed in round 3] rule 5; uncertain.
+`docs/glossary.md` *Kinds of text*, Idea Model entry (lines 120-121): "its rules varying by repo, like an interface." This is a comparison the reader has to translate. Proposed: fix: "its rules varying by repo, each repo writing its own Convention Manual for it"; or decline as a plain technical comparison. Unchanged.
+
+##### Across the manuals
+
+**FINDING-1081.** (C-59) [not changed in round 3] rule 9; uncertain.
+`docs/conventions/writing/README.md` *What this is made usable as* (line 47): "A change here walks it". The verb stands for running the Change Walk, a Name, on the list. The same sentence ends every manual's list: `docs/conventions/repo-hygiene/README.md` 35, `docs/conventions/retrospective/README.md` 40, `docs/conventions/shapes/README.md` 38 and `docs/conventions/visual-comparison/README.md` 34: 4 more in these files. The form sets it: "It ends with the sentence that a change here walks that list" (`docs/conventions/conventions/` §2.3, *The list of what derives*). Proposed: question: decline as the form's fixed sentence, or change the form and every manual to "A change here runs the Change Walk on it". Unchanged.
+
+#### Reader D, Layer 3: the Idea Models and the concept
+
+##### `docs/models/agent.md`
+
+**FINDING-1082.** (D-1) [not changed in round 3] rule 10; checked. `docs/models/agent.md` *§3* (line 45): "## 3. The components, drawn". A comma gloss in a numbered title counts (DECISION-20). It is the same kind as *One cycle, drawn*, which DECISION-20 fixed, and was missed. "The components" alone would repeat §2's subject. No Fact Reference names the title outside `temp/` and the devlog. Proposed: fix: "## 3. A drawing of the components" (27 characters). unchanged.
+
+**FINDING-1083.** (D-2) [not changed in round 3] rule 10; checked. `docs/models/tiers.md` *§1* (line 17): "## 1. The tiers, drawn". The same comma gloss as FINDING-1082. "The tiers" alone would repeat §2's title. No Fact Reference names it outside `temp/` and the devlog. Proposed: fix: "## 1. A drawing of the tiers". unchanged.
+
+**FINDING-1084.** (D-3) [changed in round 3] rule 10; uncertain. `docs/models/agent.md` *§12.1* (line 286): "### 12.1 On the Ambient Channel". Read alone in a Fact Reference, the title loses its parent, *Claims*. The same applies to §12.2 to §12.8 (*On the Pulled Channel* to *On the Enforcement Gate*) and §12.9 *Scorecard*. Also §2 *Components* (line 37) and §11 *Out of scope* (line 259): neither says of what. 10 more. Proposed: question: does "standing alone" reach a child title that leans on its parent? If yes: "Claims on the Ambient Channel" (29) and so on, "The claims' scorecard", "The agent's components", "What the model leaves out", with the rename grep. changed (§12.1 to §12.4, §12.8 titles); unchanged (the rest).
+
+**FINDING-1085.** (D-4) [changed in round 3] rule 5; resting on the reader. `docs/models/agent.md` *§4.1, Ambient Channel* (lines 95-96): "the Told Channel's diagnostic below, parked rather than fixed". "Parked" is the "debt, bank, park" figure DECISION-26 fixes. The sentence also points "below" with no section. Line 88-89, "An operator's standing file", is not said in plain words either (rule 8). Proposed: fix: "An operator's own file, loaded only in their checkout:" at 88-89; and "Using it again and again for a rule true in any project is the Told Channel's diagnostic (§4.4, *Told Channel*): the missing convention is worked around, not written." changed.
+
+**FINDING-1086.** (D-5) [not changed in round 3] rule 9; checked. `docs/models/agent.md` *§4.6, Installed Channel* (line 152): "only what applies at bootstrap can be delivered this way". "Bootstrap" has a rival among the delivered Names, CBC Bootstrap (`stack.md`); DECISION-19 fixes a word with a rival. The line is also labelled **Costs:** but states a limit, not a cost (rule 3). Proposed: fix: "**Limits:** only what holds from a project's first commit can be delivered this way." unchanged.
+
+**FINDING-1087.** (D-6) [not changed in round 3] rule 2; resting on the reader. `docs/models/agent.md` *§4.6, Installed Channel* (lines 150-151): "the outcome, not the behaviour — the agent does not comply with `.gitignore`, it simply cannot see what git hides." A dash and a comma splice join three ideas. Also 160-162, "`.gitignore` is self-enforcing by mechanism; a Record Stub with its rules in comments is self-enforcing by placement", two parts joined by a semicolon; 163-164, "a record's format travels this way, its timing cannot", a comma splice, with "travels" from DECISION-26's journey row: 2 more. Proposed: fix: "the outcome, not the behaviour. The agent does not comply with `.gitignore`. It cannot see what git hides."; at 160-162, two sentences; at 163-164, "A record's format can be delivered this way. Its timing cannot." unchanged.
+
+**FINDING-1088.** (D-7) [changed in round 3] rule 9; checked. `docs/models/agent.md` *§7, The Enforcement Gate* (line 211): "the Ambient, Pulled or Pushed Channel changes the odds". Two Names are cut to their first word. A Name is written exactly, and line 184 writes them whole. Proposed: fix: "the Ambient Channel, the Pulled Channel or the Pushed Channel changes the odds". changed.
+
+**FINDING-1089.** (D-8) [changed in round 3] rule 1; resting on the reader. `docs/models/agent.md` *§9, Where each convention lands* (line 234): "Shown by each convention's Work Approaches". The section opens on a sentence with no subject, so its point never gets said. Line 236's "the choosing table" is a label the reader has not met (rule 8). Proposed: fix: "Each convention's Work Approaches show where it lands: an Agent Skill for a rule bound to a moment, Record Stubs and Agent Skill Templates for a rule carried in the files a project is born with. The choice rests on the table in §8 (§8, *Choosing a channel*)." changed.
+
+**FINDING-1090.** (D-9) [changed in round 3] rule 2; checked. `docs/models/agent.md` *§10, The Tool Bindings* (line 244): "Layer 1 names capabilities; a Tool Binding names the mechanisms one tool gives each of them: which file…". A semicolon and a colon list hold three ideas. Proposed: fix: "Layer 1 names capabilities. A Tool Binding names the mechanisms one tool gives each of them: which file the Ambient Channel loads, what the Pushed Channel carries, what an Enforcement Gate checks." changed.
+
+**FINDING-1091.** (D-10) [not changed in round 3] rule 8; resting on the reader. `docs/models/agent.md` *§12, Claims* (lines 277-279): "the handbook's history, this repo's, or a CBC Run's. The handbook is the repo that held the working arrangement before this one". The handbook is used first and said one sentence later. Proposed: fix: "Each piece of evidence says where it was seen: this repo's history, a CBC Run's, or the handbook's. The handbook is the repo…", or put the gloss at first use. changed.
+
+**FINDING-1092.** (D-11) [changed in round 3] rule 2; checked. `docs/models/agent.md` *§12.1, A1* (lines 296-298): "In this repo the commit-messages Agent Skill is opened at every commit. So did seven of the eight revisions". "So did" points back to "run over 50 characters" across a sentence about something else, so it reads as "so did [open the Agent Skill]". At 299, "at every Plan Step read" does not say who read. At 300, "(devlog, 2026-09-10 to 09-14)" does not say whose devlog (rule 6). Proposed: fix: "125 of this repo's 233 commits from 2026-09-20 to 09-29 run over 50 characters, though the commit-messages Agent Skill is opened at every commit here. Seven of the eight revisions of commit plans of 2026-09-29 ran over too, the longest at 67."; question: whose devlog, and "at every Plan Step we read". changed.
+
+**FINDING-1093.** (D-12) [changed in round 3] rule 8; resting on the reader. `docs/models/agent.md` *§12.1, A1* (line 301): "**Open question it raises:** unenforced, or mis-set." Two bare adjectives stand for a question the reader has to rebuild. Proposed: fix: "**Open question it raises:** is the limit only unenforced, or set wrong?" changed.
+
+**FINDING-1094.** (D-13) [not changed in round 3] rule 2; resting on the reader. `docs/models/agent.md` *§12.2, P2* (line 336): "`measured` elsewhere, against it, though not on P2 itself —". "Against it" and "not on P2 itself" pull two ways in one lead. At 341-342, "One framework, the vendor's own suite." is a fragment whose point (a weak source) is left unsaid. At 344, "30 points" does not say percentage points: 2 more. Proposed: fix: "`measured` elsewhere, on a nearby question, not P2 itself:"; "Both numbers come from one framework, tested by its vendor's own suite."; "30 percentage points". changed (338-341); unchanged (336-337, 342-344).
+
+**FINDING-1095.** (D-14) [changed in round 3] rule 8; resting on the reader. `docs/models/agent.md` *§12.4, O1* (lines 369-370): "the handbook's three-place hygiene update (its devlog, k)". "k" is an entry label in the handbook's devlog that the reader does not hold, and "three-place hygiene update" packs a sentence into a noun. Also 360-361, "it had kept a member since 2026-09-18", for "it still held a file": 1 more. Proposed: fix: "Earlier, a hygiene change the handbook needed in three places was caught by hand (the handbook's devlog, entry k)."; "and it still held one file, added 2026-09-18". changed.
+
+**FINDING-1096.** (D-15) [not changed in round 3] rule 3; checked. `docs/models/agent.md` *§12.5, W2* (lines 387-392): "a stop … skipped on an instruction the prompt never gave; a checkout opened because…". Two incidents are chained with a semicolon in one item. O1 above gives its three as sub-items. Proposed: fix: two sub-items, one per incident. changed.
+
+**FINDING-1097.** (D-16) [not changed in round 3] rule 2; checked. `docs/models/agent.md` *§12.8, G1* (lines 422-424): "The rule existed in two channels for the whole life of the handbook, no Enforcement Gate existed, and it was broken 15 times." Commas chain three ideas. Proposed: fix: "The rule existed in two channels for the whole life of the handbook. No Enforcement Gate existed. It was broken 15 times." changed.
+
+**FINDING-1098.** (D-17) [changed in round 3] rule 7; resting on the reader. `docs/models/agent.md` *§12.9, Scorecard* (line 440): "Note that the Installed Channel carries no claims." "Note that" adds nothing, and line 154 already says the Installed Channel is "immune to every claim". Proposed: fix: "The Installed Channel carries no claims." changed.
+
+**FINDING-1099.** (D-18) [changed in round 3] rule 2; resting on the reader. `docs/models/agent.md` *§5, The context window* (lines 184-186): "So a rule that rests on a fact of the session — a reviewer is present, a repo is out of bounds — cannot live in a file alone: the file cannot know the session, and the prompt outranks it." Examples in dashes and two reasons after a colon make one sentence of four ideas. Also 97-98, "what must never happen — if it is short.", a condition hung on a list after a dash: 1 more. Proposed: fix: "So a rule that rests on a fact of the session cannot live in a file alone. Such a fact is, for example, that a reviewer is present, or a repo is out of bounds. The file cannot know the session, and the prompt outranks it."; at 97-98, "**Suits:** orientation and routing, kept short: where to look, what kind of repo this is, what must never happen." changed (184); unchanged (185-186, 97-98).
+
+##### `docs/models/idea-to-output.md`
+
+**FINDING-1100.** (D-19) [changed in round 3] rule 8; resting on the reader. `docs/models/idea-to-output.md` *opening* (lines 9-10): "written from one full chain, the agent's, and checked against the concept's and a record's." The reader cannot tell yet which chain "the agent's" is, or which record. Also 187 "The agent's is the worked example.": 1 more. Proposed: fix: "written from one full chain, the Agent Model's (§7, *One chain here*), and checked against the concept's and one record's"; at 187, "The Agent Model's chain is the worked example." changed (9-10); unchanged (187).
+
+**FINDING-1101.** (D-20) [not changed in round 3] rule 9; checked. `docs/models/idea-to-output.md` *§2, The kinds* (line 36): "`docs/models/`: agent, tiers, this one". A particular Idea Model is named by its name (`docs/glossary.md`, *Idea Model*), and the lowercase words are neither its name nor its paths. Proposed: fix: "`docs/models/`: the Agent Model, the Tiers Model, this one". unchanged.
+
+**FINDING-1102.** (D-21) [not changed in round 3] rule 8; resting on the reader. `docs/models/idea-to-output.md` *§3.2, The direction of a link* (line 74): "A reference down is placed upward." It reads as a riddle until the next sentence explains it. Also 69-70, "Sideways is a fact whose home sits beside the line.", a direction used as a subject: 1 more. Proposed: fix: "A link that would point down is fixed by moving its idea up."; "A sideways link points at a fact whose home is at the line's own level." unchanged.
+
+**FINDING-1103.** (D-22) [changed in round 3] rule 8; checked. `docs/models/idea-to-output.md` *§4.2, The upward direction* (lines 111-112): "The Idea Models before this one came from the handbook, the repo that held the working arrangement before this one". One sentence uses "this one" twice for two things: this Idea Model and this repo. Proposed: fix: "The earlier Idea Models came from the handbook, the repo that held the working arrangement before this repo, now history (ADR-0038)." changed.
+
+**FINDING-1104.** (D-23) [not changed in round 3] rule 9; uncertain. `docs/models/idea-to-output.md` *§4.3* (line 124): "### 4.3 After a birth". "Birth" has a rival among our Names, CBC Run Birth. Read alone in a reference (rule 10), the title says a CBC Run's birth, but it means a text written one level up. Also 129, "Birth goes up": 1 more. Proposed: fix: "### 4.3 After the step up" (line 118's own words), and "A new text is written up; afterwards, reliance goes up too."; rename grep (no Fact Reference names it today). unchanged.
+
+**FINDING-1105.** (D-24) [not changed in round 3] rule 5; resting on the reader. `docs/models/idea-to-output.md` *§5, An Idea Model and a concept* (lines 138-139): "only from a mistake lived, and the edit goes home." "Goes home" is a figure for "is sent to the Concept Deliverer", and "a mistake lived" turns the plain order around. Also 179 "only from a mistake lived": 1 more. Proposed: fix: "A CBC Run edits its copy only after a mistake it met, and the Concept Deliverer reads the edit."; the same words at 179. unchanged (139); changed (179).
+
+**FINDING-1106.** (D-25) [not changed in round 3] rule 8; resting on the reader. `docs/models/idea-to-output.md` *§5* (lines 141-142): "What a concept is waits for a second Concept Repo." What waits is an Idea Model of concepts. The sentence leaves the reader to supply that. Proposed: fix: "An Idea Model of what a concept is waits for a second Concept Repo." unchanged.
+
+**FINDING-1107.** (D-26) [not changed in round 3] rule 8; resting on the reader. `docs/models/idea-to-output.md` *§6.2, What a convention asserts* (lines 162-164): "That freedom is the worker's, in one case". "In one case" does not say it means each departure is decided one case at a time. At 167-168, "That convention is one nobody owes anything to: a method filed in the wrong place" leaves the reader to work out why no harm makes it a method: 1 more. Proposed: question: say each in plain words, e.g. "The worker may use that freedom one case at a time, and writes the reason in that project's records." unchanged.
+
+**FINDING-1108.** (D-27) [changed in round 3] rule 8; checked. `docs/models/idea-to-output.md` *§7, One chain here* (lines 190-191): "Their content is the output." "Their" could be the guard and the header, or the two files. The output is the files' entries. Proposed: fix: "What the Entry File and the Decisions Log hold is the output." changed.
+
+**FINDING-1109.** (D-28) [not changed in round 3] rule 8; resting on the reader. `docs/models/idea-to-output.md` *§8, What it does not answer* (lines 199-200): "this repo's conventions, not this Idea Model". The other two items each name a path; this one does not say which convention. Proposed: fix: "— `docs/conventions/facts-in-sync/`, not this Idea Model." unchanged.
+
+##### `docs/models/tiers.md`
+
+**FINDING-1110.** (D-29) [not changed in round 3] rule 9; checked. `docs/models/tiers.md` *§1* (lines 23-24): "mental layer," and "container and execution copies". The drawing names a Concept Repo's two layers by words §2.2 does not use: there they are its Canonical Descriptions and what is made usable. Rule 9 reaches drawn text (DECISION-21). Also 20, "conventions, container, models", for the Container Group and the Idea Models: 1 more. Proposed: fix: the Names where the box has room, "Canonical Descriptions," and "Container Group and made-usable copies"; or one key line above the drawing. unchanged (20, 23); changed (24).
+
+**FINDING-1111.** (D-30) [changed in round 3] rule 8; resting on the reader. `docs/models/tiers.md` *§2.1, The empty top tier* (lines 34-35): "A second repo that needs it copies parts." "A second repo" means a second Concept Repo, and the reader has to guess. At 36-37, "the upward channels" uses "channel" for a flow, in the file that uses the Told Channel: 1 more. Proposed: fix: "A second Concept Repo that needs the method copies parts."; "the upward flows". changed (34-36); unchanged (37).
+
+**FINDING-1112.** (D-31) [changed in round 3] rule 9; checked. `docs/models/tiers.md` *§2.2, Concept Repos* (line 53): "2. What is Made Usable from them:". "Made usable" as the verb is lowercase. Made Usable is capitalized only as the noun (the round's call at FINDING-525), and line 68 writes "made usable". Also 108-109 "what is Made Usable is re-derived": 1 more. Proposed: fix: "What is made usable from them:" and "what is made usable is re-derived". changed.
+
+**FINDING-1113.** (D-32) [changed in round 3] rule 8; resting on the reader. `docs/models/tiers.md` *§2.2* (lines 56-57): "Run Repos never happen here." A repo does not happen. The point is that no Run Repo's work is done in a Concept Repo. Proposed: fix: "No Run Repo's work is done here." unchanged.
+
+**FINDING-1114.** (D-33) [not changed in round 3] rule 3; resting on the reader. `docs/models/tiers.md` *§3.1, Downward delivery* (lines 81-82): "Down is delivery, in two forms. A copy, always pinned at a commit of the tier above, which is what "a concept version" is. And a Delivery Fill:". The two forms are told in a fragment and an "And" sentence. Proposed: fix: a list of two, "1. A copy, always pinned at a commit of the tier above: that pin is what "a concept version" is. 2. A Delivery Fill: …". unchanged.
+
+**FINDING-1115.** (D-34) [changed in round 3] rule 9; checked. `docs/models/tiers.md` *§3.1* (lines 84-85): "it is folded back by name into the playbook that seeded it." "Fold" has a rival among the delivered Names, Invariant Slice Fold. Proposed: fix: "it is merged back by name into the playbook it came from." changed.
+
+**FINDING-1116.** (D-35) [changed in round 3] rule 9; checked. `docs/models/tiers.md` *§3.1* (line 89): "At a Run Birth the two meet." Run Birth is no longer a Name. It became CBC Run Birth (DECISION-19, the Agent Model's group, row 22), and this model speaks of any Run Repo. In the same sentence, "framing" has a rival in CBC Framing, and "neither is a settled agreement" still does not say what agreement would be (rule 8). Proposed: fix: "At a Run Repo's birth the two meet. Both are input to the Run Repo's first decisions, which choose what to keep of them. Neither binds it." changed.
+
+**FINDING-1117.** (D-36) [changed in round 3] rule 7; checked. `docs/models/tiers.md` *§3.2, The Told Channel* (lines 97-99): "That is the Told Channel, unpinned by design" and "It is not a third form of delivery". Both repeat line 95, "The Told Channel is not delivery." At 101, "Nor is a copy the Run Repo has edited" points back past them to "a third form of delivery". At 97, "as an experiment's instrument" is not said in plain words (rule 8). Proposed: fix: "The Told Channel is not delivery, and is unpinned by design (`docs/models/agent.md` §4.4, *Told Channel*). A tier above may hand a Run Repo a warning as session input, after the Run Repo's own work has missed it and is on record. The Run Repo's records say it was told. A Run Repo that leans on it has the Told Channel's diagnostic. A copy the Run Repo has edited between two Delivery Pins is not a form of delivery either (§3.5, …, fact 4)." changed.
+
+**FINDING-1118.** (D-37) [not changed in round 3] rule 2; resting on the reader. `docs/models/tiers.md` *§3.3, Upward harvest* (lines 110-111): "Nothing edits an upstream repo as a side effect of downstream work, in either direction." The sentence names one direction, then says "either". Proposed: fix: "Work in one repo never edits another as a side effect, up or down." unchanged.
+
+**FINDING-1119.** (D-38) [changed in round 3] rule 5; resting on the reader. `docs/models/tiers.md` *§3.4* (line 115): "The Delivery Pin follows the talk, the documents the tiers exchange." "The talk" is a figure for documents, glossed at once. The title at 113 carries it, and 128 cites the title. Proposed: fix: "### 3.4 The Delivery Pin and documents"; "The Delivery Pin follows the documents the tiers exchange."; rename grep: one reference, line 128. unchanged (113); changed (115).
+
+**FINDING-1120.** (D-39) [changed in round 3] rule 4; resting on the reader. `docs/models/tiers.md` *§3.4* (line 119): "That happened once, and it is why the Delivery Pin moves with every Delivery Take". It does not say where or when. Proposed: question: name the CBC Run and the date, or the ADR that records it. changed.
+
+**FINDING-1121.** (D-40) [changed in round 3] rule 8; checked. `docs/models/tiers.md` *§3.5, What holds on every flow* (line 140): "And one number, the Delivery Pin: the commit of the tier above that a delivery's copies equal". The Delivery Pin is used at 101 and throughout §3.4 (113-120), and said in plain words only here. Proposed: fix: say it at §3.4's first line, "The Delivery Pin, the commit of the tier above that a delivery's copies equal, follows …", and keep 140 as the fact. changed.
+
+**FINDING-1122.** (D-41) [not changed in round 3] rule 2; resting on the reader. `docs/models/tiers.md` *§4.2, The dependency rule* (lines 160-162): "A repo lives in exactly one tier; a Concept Repo maintaining its own records, and today its method, is the concepts tier's work, and not a Run Repo's." A semicolon joins two ideas, and the subject (a repo) is said to be "work". Proposed: fix: "A repo lives in exactly one tier. A Concept Repo that keeps its own records, and today its method, does the concepts tier's work, not a Run Repo's." changed (162); unchanged (160-161).
+
+##### `concept/00-cbc.md`
+
+**FINDING-1123.** (D-42) [not changed in round 3] rule 3; resting on the reader. `concept/00-cbc.md` *opening* (lines 3-5): "Read this first; the other chapters deepen it — the Layered System, …". A semicolon and a dash join three parts. Proposed: fix: "*The main document. Read this first. The other chapters go deeper: the Layered System, System Guarantees and Structural Walls, CBC Framing, and the Invariant Slice.*" Editorial. unchanged (3); changed (4-5).
+
+**FINDING-1124.** (D-43) [changed in round 3] rule 9; checked. `concept/00-cbc.md` *The CBC Inversion* (line 40): "Guarantee depth is the visible product;". "Guarantee" stands alone for the System Guarantees. A semicolon also joins a second idea (rule 2). Proposed: fix: "The depth of the System Guarantees is the visible product. Staying small is discipline, not taste." Editorial. changed.
+
+**FINDING-1125.** (D-44) [changed in round 3] rule 7; resting on the reader. `concept/00-cbc.md` (line 60): "## The two components and their pair". The two components are the pair, so the title names one thing twice. At 62, "it lives in the pair" says it with a figure. Proposed: fix: "## The two components"; "The discipline has exactly two components, and is defined by the two together:". Editorial. changed.
+
+**FINDING-1126.** (D-45) [changed in round 3] rule 9; uncertain. `concept/00-cbc.md` *Where it comes from* (line 106): "Threat modeling already thinks in never-events first." "Never-event" is not English. The concept defines the System Never-Event, and this lowercase use stands for threat modeling's version of the same idea. Proposed: fix: "Threat modeling already asks first what must never happen." Editorial. changed.
+
+**FINDING-1127.** (D-46) [changed in round 3] rule 6; checked. `concept/00-cbc.md` *Where it comes from* (line 117): "formal methods enforce but don't say where specifications come from." The list at 102-110 names "the academic correctness-by-construction lineage". The second list at 114-117 calls it "formal methods": one practice under two names. The second list also has four items for "five practices" (120), and design-before-code has none. Proposed: fix: "the correctness-by-construction lineage enforces but doesn't say …" (editorial); question: whether design-before-code gets its gap line (not editorial: it adds a claim). changed.
+
+**FINDING-1128.** (D-47) [changed in round 3] rule 2; resting on the reader. `concept/00-cbc.md` *Where it comes from* (lines 119-122): "These are not five practices but five phases of one derivation, with a single organizing question, …, asked at each phase in that phase's vocabulary." One sentence holds three ideas. Proposed: fix: "These are not five practices but five phases of one derivation. One question organizes them: *what must never happen, and what structure makes it impossible*. Each phase asks it in its own vocabulary." Editorial. changed.
+
+**FINDING-1129.** (D-48) [not changed in round 3] rule 6; uncertain. `concept/00-cbc.md` *What it is not* (line 128): "The method earns its cost". The chapter calls itself "the discipline" everywhere else. "The method" is what the concept becomes (`docs/glossary.md`, *Made Usable*). Proposed: fix: "The discipline earns its cost". Editorial. unchanged.
+
+**FINDING-1130.** (D-49) [not changed in round 3] rule 5; checked. `concept/00-cbc.md` *What it is not* (lines 132-133): "Rigor is *spent*, not applied: the budget goes to the few invariants". This is one of FINDING-532's five figures. The round's ending took its "one word each" fix (§2.6), and this one was left. Proposed: fix: "Rigor is chosen, not applied everywhere: it goes to the few invariants". Editorial. unchanged.
+
+**FINDING-1131.** (D-50) [changed in round 3] rule 5; resting on the reader. `concept/00-cbc.md` *How it fails* (lines 145-146): "bypasses the single enforced code path; the System Guarantee quietly becomes fiction." "Becomes fiction" is a figure, and a semicolon joins the two ideas. The method's glossary says it plainly: "a System Guarantee stops being true". Proposed: fix: "An admin path or raw script goes around the single enforced code path. The System Guarantee stops being true, and nobody sees it." Editorial. changed.
+
+**FINDING-1132.** (D-51) [changed in round 3] rule 2; resting on the reader. `concept/00-cbc.md` *How it fails* (lines 149-150): "Attempting deep rigor before the layers have shrunk the problem — over-theorizing a world that hasn't been bounded yet." A fragment and a dash restatement; the other three items are sentences. Proposed: fix: "Deep rigor is tried before the layers have made the problem small. It theorizes about a world not yet bounded." Editorial. changed (149); unchanged (150).
+
+##### `concept/01-layered-system.md`
+
+**FINDING-1133.** (D-52) [not changed in round 3] rule 9; checked. `concept/01-layered-system.md` *drawing* (line 12): "bounded problems inside one area". In the drawing, "area" stands for Responsibility Area, which the Names table took as a Name because the chapters use "area" with its defined meaning. Rule 9 reaches drawn text (DECISION-21). Also 13 "when areas interact", 17 "each area in LAYER-3-AREAS", 18 "between the areas": 3 more. Proposed: fix: the Name where the line has room ("inside one Responsibility Area", "between the Responsibility Areas"); or one key line above the drawing. Editorial. unchanged.
+
+**FINDING-1134.** (D-53) [not changed in round 3] rule 6; uncertain. `concept/01-layered-system.md` *LAYER-2-SYSTEM* (line 38): "## LAYER-2-SYSTEM — The system of interest". The drawing's label is "System of Interest" (10). The heading writes it in another case and with an article. The same at 21, "The environment" for "Environment" (9), and 65, "Local problems" for "Local Problems" (12): 2 more. The layer titles are labels (the concept's Names table, question 1), and a label is written exactly. Not FINDING-537's gloss question. Proposed: fix: the headings' glosses take the drawing's labels as written. Editorial. unchanged.
+
+**FINDING-1135.** (D-54) [not changed in round 3] rule 5; resting on the reader. `concept/01-layered-system.md` *Two readings to keep apart* (line 98): "description can honestly become a monolith". DECISION-26 fixes "honest, honestly". Proposed: fix: "the same layer description can rightly become a monolith or a set of services", or drop the word. Editorial. unchanged.
+
+**FINDING-1136.** (D-55) [not changed in round 3] rule 2; resting on the reader. `concept/01-layered-system.md` *opening* (line 4): "The layering is not administrative — each layer produces the precondition". A dash joins two ideas. Also in this file 45, 49-50, 92; `concept/02-guarantees-and-walls.md` 3-4 (an aside nested in dashes, "documents are packaging", also rule 5), 16-17, 39, 80, 99; `concept/03-cbc-framing.md` 13; `concept/04-cbc-slice.md` 39-40 (an aside nested in dashes); `concept/00-cbc.md` 129: 12 more. Proposed: fix: a full stop for each dash that joins two clauses; a colon or a list for the asides at 02 3-4, 04 39-40 and 00 129. Editorial. unchanged (01 4, 49, 92; 02 3-4; 04 39-40); changed (the rest).
+
+##### `concept/02-guarantees-and-walls.md`
+
+**FINDING-1137.** (D-56) [changed in round 3] rule 5; resting on the reader. `concept/02-guarantees-and-walls.md` *The described adversary* (lines 25-27): "This is the Falsifiable Promise's opponent; without it the System Guarantees below have nothing to be tested against." "Opponent" is a figure, and a semicolon joins the two ideas. Proposed: fix: "It is what the Falsifiable Promise is defended against. Without it, the System Guarantees below have nothing to be tested against." Editorial. changed.
+
+**FINDING-1138.** (D-57) [changed in round 3] rule 5; resting on the reader. `concept/02-guarantees-and-walls.md` *The System Guarantee Inventory* (line 38): "Small is a feature." The idiom uses "feature" in a chapter where a feature is the product's surface, the thing that comes last. Proposed: fix: "Small is the aim." Editorial. changed.
+
+**FINDING-1139.** (D-58) [not changed in round 3] rule 6; checked. `concept/02-guarantees-and-walls.md` *The ownership map* (lines 49-52): "→ type system / → single validated entry path / … / → code review". The list below names the same ranks differently: 61 "a type error", 62 "a single checked entry path", 68 "a single entry path", 65 "review". One rank, two names each. Proposed: fix: one name per rank in both places, e.g. "type system" and "a single checked entry path" throughout. Editorial. unchanged (49-52); changed (61-68).
+
+**FINDING-1140.** (D-59) [changed in round 3] rule 8; checked. `concept/02-guarantees-and-walls.md` *The ownership map* (lines 72-73): "only where the trust names it the only writer". "The trust" is not said anywhere. It means the assumptions accepted as trust (24-25). Proposed: fix: "only where the assumptions accepted as trust name it the only writer". Editorial. changed.
+
+**FINDING-1141.** (D-60) [not changed in round 3] rule 2; resting on the reader. `concept/02-guarantees-and-walls.md` *The derived surface* (line 86): "The feature set — as an *output*." A fragment opens the section. Proposed: fix: "The feature set comes out of the design, as an *output*." Editorial. unchanged.
+
+**FINDING-1142.** (D-61) [changed in round 3] rule 6; uncertain. `concept/02-guarantees-and-walls.md` *The stance underneath* (line 98): "migrating out of the schema and into a test suite". The chapter's top Structural Wall is "the store's refusal" (47). "The schema" names it by one stack's word. Proposed: fix: "moving out of the store's refusal and into a test suite". Editorial. changed.
+
+##### `concept/03-cbc-framing.md`
+
+**FINDING-1143.** (D-62) [changed in round 3] rule 9; checked. `concept/03-cbc-framing.md` *The derivation order* (lines 27-28): "A candidate promise that is really a feature is rejected." The defined thing is written in lowercase, in the paragraph headed **Choose the Falsifiable Promise**. Proposed: fix: "A candidate Falsifiable Promise that is really a feature is rejected." Editorial. changed.
+
+**FINDING-1144.** (D-63) [changed in round 3] rule 8; checked. `concept/03-cbc-framing.md` *The derivation order* (line 29): "the CBC Framing Intent is overloaded". The CBC Framing Intent is used here and said only at 74-75, "the Falsifiable Promise and the purposes refused". Proposed: fix: "the CBC Framing Intent, the document that states the Falsifiable Promise, is overloaded". Editorial. changed.
+
+**FINDING-1145.** (D-64) [changed in round 3] rule 8; checked. `concept/03-cbc-framing.md` *The derivation order* (line 40): "The Enemy Census collects attackable facts, not generalities." Line 44 then uses Enemy Fact, which the chapter never ties to these words. Proposed: fix: "The Enemy Census collects Enemy Facts, attackable facts, not generalities." Editorial. changed.
+
+**FINDING-1146.** (D-65) [changed in round 3] rule 9; checked. `concept/03-cbc-framing.md` *The derivation order* (line 45): "The output names the *Enemy Collision Kill*". No Markdown mark marks a Name. Only bold at its home is allowed (DECISION-22), and this is italics. Proposed: fix: plain "the Enemy Collision Kill", or bold if this line is its home (the method's glossary points here). Editorial. changed.
+
+**FINDING-1147.** (D-66) [not changed in round 3] rule 8; checked. `concept/03-cbc-framing.md` (line 61): "## Why this order and not the map's". "The map" is not said in the chapter. It means the Layered System's outside-in order (22-23), and "the map" was ruled out beside Local Map (DECISION-23). Proposed: fix: "## Why this order and not the layers'". Editorial. unchanged.
+
+**FINDING-1148.** (D-67) [changed in round 3] rule 9; uncertain. `concept/03-cbc-framing.md` *Why this order and not the map's* (line 67): "The two inversions,". The two order changes are called "inversions", beside the CBC Inversion, which is a different thing. Proposed: fix: "The two changes of order,". Editorial. changed.
+
+**FINDING-1149.** (D-68) [changed in round 3] rule 2; resting on the reader. `concept/03-cbc-framing.md` *opening* (lines 7-8): "This chapter describes *what CBC Framing is*; the procedural detail of running it is deliberately left outside the concept." A semicolon joins two ideas. Also `concept/04-cbc-slice.md` 7-9, the same sentence; `concept/03-cbc-framing.md` 38-39, "Follow one request through its whole life; everything beyond the system's control is an actor.": 2 more. Proposed: fix: a full stop for each semicolon. Editorial. changed.
+
+##### `concept/04-cbc-slice.md`
+
+**FINDING-1150.** (D-69) [changed in round 3] rule 8; checked. `concept/04-cbc-slice.md` *Why the invariant is the unit* (line 17): "reproduces the inversion the discipline exists to avoid". The discipline is an inversion (the CBC Inversion). Here "the inversion" names the order it reverses, so the reader meets the word for both. Proposed: fix: "Cutting work by feature brings back the order the discipline exists to reverse: features first, correctness later." Editorial. changed.
+
+**FINDING-1151.** (D-70) [changed in round 3] rule 6; checked. `concept/04-cbc-slice.md` *The four phases* (lines 34-35): "picked from the enforcement hierarchy". Chapter 02 calls the same list "The Structural Walls, ranked strongest to weakest" and "the ranking". This is a third name. Proposed: fix: "picked from the ranking of Structural Walls, the strongest available". Editorial. changed.
+
+#### Reader E, Layer 4: the records and folder forms
+
+##### ARCHITECTURE.md
+
+**FINDING-1152.** (E-1) [not changed in round 3] rule 9; checked. `ARCHITECTURE.md` header comment (line 6): "The Concept Deliverer's map". DECISION-23 took "the map" for `ARCHITECTURE.md` away, since it clashes with Local Map. Also `ARCHITECTURE.md` 233: "record: this map"; `README.md` 63, the records table: "The map: what is here, what ships, and what must stay true". 3 lines. Proposed: fix: "The Concept Deliverer's `ARCHITECTURE.md`"; "record: this page"; "What is here, what ships, and what must stay true". Unchanged.
+
+**FINDING-1153.** (E-2) [not changed in round 3] rule 9; checked. `ARCHITECTURE.md` Overview (line 53): "is the delivery map's". `delivery/README.md` is a Local Map, and line 129 calls it "the delivery's Local Map". DECISION-23 keeps "map" for the Local Map only. Proposed: fix: "is the delivery's Local Map's". Unchanged.
+
+**FINDING-1154.** (E-3) [changed in round 3] rule 9; checked. `ARCHITECTURE.md` §1, *What is stated here* (line 63): "in the delivery that is it *made usable*". FINDING-561's ending made the verb lowercase with no mark, but the italics are still there. The clause is also hard to read (rule 2). Proposed: fix: "Each is made usable as something in the delivery, and this pairing is what this repo is built around." Changed.
+
+**FINDING-1155.** (E-4) [not changed in round 3] rule 7; checked. `ARCHITECTURE.md` §1.1, *The concept* (line 76-77): "Every copy elsewhere, a CBC Run's `docs/concept/`, is a copy." This says that a copy is a copy. Proposed: fix: "**Canonical here.** The concept's one canonical text is here. A CBC Run's `docs/concept/` holds a copy." Changed (the round split the line; the sentence is older).
+
+**FINDING-1156.** (E-5) [changed in round 3] rule 4; checked. `ARCHITECTURE.md` Overview (line 32): "A few rules must hold across all of it". §3's table has 11 rows. Proposed: fix: "Eleven rules must hold across all of it". Changed.
+
+**FINDING-1157.** (E-6) [changed in round 3] rule 9; checked. `ARCHITECTURE.md` §1.3, *The Idea Models* (line 123-124): "names it in its `foundation` line". The Name is Foundation Line, and line 141 writes it that way. Proposed: fix: "names it in its Foundation Line". Changed.
+
+**FINDING-1158.** (E-7) [changed in round 3] rule 9; checked. Agent Skills and Approaches on Trial are named bare, with no kind word. Conventions §1.5, *Naming a Work Approach*, says "In text, a Work Approach is always written with its kind", and DECISION-27 applies this to every name of an agent part. `ARCHITECTURE.md` §2.1 (line 137): "`cbc-framing` and". Line 216 has the right form: "the commit-messages Agent Skill". Also:
+- `ARCHITECTURE.md` 145-146, 213, 217, 220, and codemap 249: 6 more.
+- `PLAN.md` 73, 90, 140, 150, 168, 170, 185, 208, 229, 267, 294, 349, 358, 367, 402, 407: 16 lines, plus the title parentheses at 213 and 301.
+- `TODO.md` 36, 62, 64, 79, 103, 128, 207, 209, 234, 245, 247, 269, 283, 287, 303, 383, 395, 434, 438, 604, 645, 647, 658, 664, 695, 733, 962, 966, 969, 977, 991, 1083, 1094, 1098, 1191, 1206: about 44 lines.
+- `CHANGELOG.md` 31, 33, 43, 58: 4 more.
+
+Six of these are the shared names that DECISION-24 says always need the kind word: `commit-plan` (PLAN 213, 229, 301; TODO 79, 269, 303, 383), `retrospective` (TODO 287) and `visual-comparison` (PLAN 349, 402; TODO 395). Proposed: fix: write the kind word, "the cbc-framing and cbc-slice Agent Skills", "the auto-run Approach on Trial". Give a path as a Fact Reference where the line points at where a fact is written. In the codemap, use a one-line key (DECISION-21). Question: the glossary still writes "`cbc-slice`'s Stage 3", in DECISION-25's form. Does that form stand beside DECISION-27? And does a Plan Step title's parenthesis, a list the Plan Step Form defines, count as a labelled list? Mixed: ARCHITECTURE 137, 145, 249 and PLAN 168, 229 changed; ARCHITECTURE 213, 217, 220 and TODO 36, 62, 79 unchanged.
+
+**FINDING-1159.** (E-8) [changed in round 3] rule 5; checked. "travel" is decided as a figure to fix (DECISION-26, journey row). `ARCHITECTURE.md` §2.4's title (line 162): "What does not travel". Also `ARCHITECTURE.md` 131-132 (the Fact Reference to it), 205 "a line that travels with a file", 212 "which travels with every copy"; `TODO.md` 1260 "The rule cannot travel alone". 5 lines. Proposed: fix: §2.4 becomes *What does not ship*; the rename grep finds only line 132. "a line kept in a file"; "which every copy carries"; "The rule cannot be delivered alone". Changed (ARCHITECTURE); TODO 1260 unchanged.
+
+**FINDING-1160.** (E-9) [changed in round 3] rule 9; uncertain. "the stack practice" points at §2.2, *The Stack Group*: `ARCHITECTURE.md` §2 (line 130): "the method, the stack practice and the". Also `ARCHITECTURE.md` 149 "another stack's practice", 250 codemap "the stack practice (§2.2)"; `CHANGELOG.md` 42 "**The stack practice**"; `TODO.md` 1227 "The practice Agent Skills' bodies", 1233 "the practice Agent Skills' trigger descriptions". 6 lines. Proposed: question: is this the Stack Group, so it takes the Name ("the Stack Group", "the Stack Group's Agent Skills")? Or is it English for what one project taught? Mixed: ARCHITECTURE 130 and TODO 1227, 1233 changed; the rest unchanged.
+
+**FINDING-1161.** (E-10) [not changed in round 3] rule 9; checked. `ARCHITECTURE.md` §3, *What must stay true* (line 213): "which stages only from the Master Copies". Line 214 has "a delivery stages only from `delivery/` and `concept/`". The glossary's Delivery Staging entry says the act is "stage a delivery": the verb names its object. Line 214 makes the delivery the actor. Proposed: fix: "which stages a delivery only from the Master Copies"; "a delivery is staged only from `delivery/` and `concept/`". Unchanged.
+
+**FINDING-1162.** (E-11) [not changed in round 3] rule 9; checked. `ARCHITECTURE.md` §3 (line 219): "the CBC Run's `delivered-copies.md`, rule 1". Also line 220. The glossary's Agent Rule entry names a numbered line by its owner and number, "one-home rule 3", and conventions §1.5 asks for the kind word. Proposed: fix: "the CBC Run's delivered-copies rule 1"; "the CBC Run's delivered-copies Agent Rule". Unchanged.
+
+**FINDING-1163.** (E-12) [changed in round 3] rule 8; resting on the reader. `ARCHITECTURE.md` §2 (line 129-133): "The concept's list of what derives from it is the method, the stack practice and the playbook (…). The chapters carry no such list". The concept has a list, and then its chapters carry none. A reader who does not know where the list is kept reads this as a contradiction. Proposed: fix: "What derives from the concept is the method, the Stack Group and the playbook (…). This list is kept here: the chapters carry none (…)." Changed.
+
+**FINDING-1164.** (E-13) [changed in round 3] rule 8; resting on the reader. `ARCHITECTURE.md` §2.5, *The CBC Runs* (line 198-199): "What each side holds for it is the Exchange Convention's *What this is made usable as*." "it" has nothing to point back at, and the heading has no path. Proposed: fix: "What each side holds for the exchange is the Exchange Convention's (`docs/conventions/exchange/`, *What this is made usable as*)." Changed.
+
+**FINDING-1165.** (E-14) [changed in round 3] rule 8; checked. `ARCHITECTURE.md` §1.2 (line 89): "None of it is CbC". This abbreviation is spelled out nowhere in these files. The repo writes "correctness by construction" (`README.md` 3) and "CBC" inside its Names. Also `TODO.md` 255 "names the CbC concept". 2 lines. Proposed: fix: "None of it is about correctness by construction"; "names this repo's concept". ARCHITECTURE 89 changed; TODO 255 unchanged.
+
+**FINDING-1166.** (E-15) [not changed in round 3] rule 5; uncertain. `ARCHITECTURE.md` §3 (line 215): "A manual never outlives the rule it explains". This is a life figure, next to DECISION-26's "dies, death" row. Proposed: fix: "No manual explains a rule that no longer holds". Unchanged.
+
+**FINDING-1167.** (E-16) [not changed in round 3] rule 8; resting on the reader. `ARCHITECTURE.md` §4, *Codemap* (line 254): "deleted when served". Also `temp/README.md` 15: "once it has served". Neither says when that is. 2 lines. Proposed: fix: "deleted once the work that needed it is done". Unchanged.
+
+**FINDING-1168.** (E-17) [not changed in round 3] rule 9; uncertain. `ARCHITECTURE.md` §1.2 (lines 101, 103, 111, 113, 117): "**conventions** —", "**exchange** —", "**retrospective** —", "**shapes** —", "**writing** —". DECISION-24 says a one-word convention is only ever its path or its Name, since the bare word is English. Here each one is a bold list label, with its path after it. 5 lines. Proposed: question: does the folder word stand as a list label? If not, lead each line with its path. Unchanged.
+
+##### README.md
+
+**FINDING-1169.** (E-18) [changed in round 3] rule 9; checked. `README.md` *What it holds* (line 9-10): "Agent Skills, checklists, templates". These templates are Agent Skill Templates, as `CHANGELOG.md` 44 writes them. Proposed: fix: "Agent Skills with their Agent Skill Templates and checklists, and Output Shapes". Changed.
+
+**FINDING-1170.** (E-19) [not changed in round 3] rule 3; checked. `README.md` header comment (line 75-77): "it arrives when a Plan Step's gate makes it true: the README says only what is already true". Two colons are chained. "a Plan Step's gate" is the Plan Step Gate (rule 9). Proposed: fix: "A missing section is not an omission. It arrives when a Plan Step Gate makes it true, since the README says only what is already true." Changed.
+
+**FINDING-1171.** (E-20) [changed in round 3] rule 9; checked. "the records map" is a coined name for project-recording §1's table. The home calls it *The records at a glance*, and PLAN 303 and 343 say "project-recording's list of the records". DECISION-23 keeps "map" for the Local Map. `README.md` *Project records* (line 70): "is the records map". Also `PLAN.md` 349, 383, 401 and `temp/README.md` 18. 5 lines. Proposed: fix: "project-recording's list of the records". README 70 and temp 18 changed; PLAN unchanged.
+
+**FINDING-1172.** (E-21) [changed in round 3] rule 8; resting on the reader. `README.md` *What it holds* (line 15): "**The Concept Deliverer:** each CBC Run is born from what this repo". The label names the Concept Deliverer, but the sentence never says this repo is it. A reader from outside, who is the one the header comment names, learns the word without learning what it means. Proposed: fix: "**The Concept Deliverer:** this repo is the Concept Deliverer. Each CBC Run is born from what it ships, in a repo of its own, and is read back from here." Changed.
+
+**FINDING-1173.** (E-22) [changed in round 3] rule 5; uncertain. `README.md` *Out of scope* (line 52): "Graduating a CBC Run to its own Concept Repo". This is a school figure, and the Tiers Model does not use the word. Proposed: fix: "Moving a CBC Run into a Concept Repo of its own". Changed.
+
+##### PLAN.md
+
+**FINDING-1174.** (E-23) [not changed in round 3] rule 9; checked. Living Text is a Name (DECISION-23). `PLAN.md` Refine's Goal (line 303): "Living text written before a rule". Also:
+- `PLAN.md` 337: "across all living text";
+- `TODO.md` 371: "hashes in living text";
+- `TODO.md` 376: "living text points at a devlog";
+- `TODO.md` 906: "Of 97 uses in living text".
+
+Uncertain: the adjective in `PLAN.md` 326, "every living file", and in the Plan Step Form's close item, `PLAN.md` 91, 186, 268, 368, "No living line in a record". Proposed: fix the five to "Living Text". Question for the adjective: "every file of Living Text"; "No line of Living Text in a record…". Unchanged, all.
+
+**FINDING-1175.** (E-24) [not changed in round 3] rule 9; checked. `PLAN.md` the Plan Step Form, *At the opening* (line 63): "This gate was written before the work started." The Name is Plan Step Gate, and the form writes it in full at lines 53-54. Also `PLAN.md` 149, 227, 313. 4 lines. Proposed: fix: "This Plan Step Gate was written before the work started." Unchanged.
+
+**FINDING-1176.** (E-25) [changed in round 3] rule 9; uncertain. `PLAN.md` the Plan Step Form (line 35): "Now: <the stage this Plan Step is in, one line>". The glossary's Agent Skill Stage entry says "A Plan Step's Now line names the Agent Skill Stage it is in". The form writes "stage" in lowercase. Also `PLAN.md` 45, 47, 66, 75-76, 82, 118, 120-121: 8 more. The form's stages also cover "those of earlier work", which has no Name. Proposed: question: if the Now line's stage is the Agent Skill Stage or Approach on Trial Stage, the Names go in. If it is English for any phase, the glossary's sentence changes. Mixed: 35, 47, 76, 120 changed; 45, 82, 118 unchanged.
+
+**FINDING-1177.** (E-26) [changed in round 3] rule 9; checked. `PLAN.md` Step: Birth CBC Run 6 (line 168): "as `auto-run` Stage 4 lists". DECISION-25's form outside the owner is "`auto-run`'s Stage 4". Line 157, "so this is Stage 1's light read", has no owner either. 2 lines. Proposed: fix: "as `auto-run`'s Stage 4 lists" (or FINDING-1158's kind-word form); "so `auto-run`'s Stage 1 is a light read". Changed.
+
+**FINDING-1178.** (E-27) [changed in round 3] rule 6; checked. `PLAN.md` Refine's Now line (line 306): "read again against rules 1 to 10. Layers 1 to 6 worked". "rules" has no owner, and "Layers" is the Name Refinement Layer cut short. Proposed: fix: "read again against writing rules 1 to 10. Refinement Layers 1 to 6 worked". Changed (f5dfbbe).
+
+**FINDING-1179.** (E-28) [changed in round 3] rule 8; resting on the reader. `PLAN.md` Step: Take CBC Run 5's lessons (line 258): "The rule's *Gates* hold when a CBC Run Reading closes". Line 291 has "by the rule's steps 2 to 8". The rule is the working-a-reading Agent Rule, named only by path in the title. 2 lines. Proposed: fix: "The working-a-reading Agent Rule's *Gates*"; "by working-a-reading steps 2 to 8". 258 changed; 291 unchanged.
+
+**FINDING-1180.** (E-29) [not changed in round 3] rule 6; checked. `PLAN.md` Step: Take CBC Run 5's lessons, Notes (line 289): "CBC Run 5's DECISION-1 was taken in talk". DECISION-1 belongs to our CBC Run Reading of CBC Run 5, as line 216 writes it. "CBC Run 5's" makes it the CBC Run's own. Proposed: fix: "The CBC Run Reading's DECISION-1 was taken in talk". Unchanged.
+
+**FINDING-1181.** (E-30) [not changed in round 3] rule 9; uncertain. "birth" as a noun for a CBC Run Birth. `PLAN.md` (line 169): "What TODO says is due before a birth is settled". Also `TODO.md` 62, 69, 73, 431-432, 694, 747: 7 more. "born" stays (DECISION-26), but the noun names the Name's thing. Proposed: question: is "a birth" English, or the CBC Run Birth? Unchanged.
+
+**FINDING-1182.** (E-31) [not changed in round 3] rule 7; resting on the reader. `PLAN.md` Refine's Notes, stage 1 (line 392-395): "The reviewer confirms the Finding Kinds, their Refinement Rounds, the Refinement Layers, …". The list at lines 409-411, "The reviewer signs:", says the same again for the same moment. Proposed: fix: stage 1 keeps the acts, and the reviewer's part stays only in the list at line 409. Unchanged.
+
+**FINDING-1183.** (E-32) [changed in round 3] rule 8; resting on the reader. `PLAN.md` Step: Birth CBC Run 6's Goal (line 138): "reviewer's checkout CBC Run Briefing". "checkout" is CBC Run 6's own name (`ARCHITECTURE.md` §2.5), and it reads as an English word. "full auto" (lines 135, 138, 167, 177) is defined only in `auto-run`. Proposed: fix: "the reviewer's CBC Run Briefing for `checkout`, CBC Run 6's project". Line 138 changed.
+
+**FINDING-1184.** (E-33) [not changed in round 3] rule 8; resting on the reader. `PLAN.md` Legend (line 10): "stopped (+the Plan Step first)". Proposed: fix: "stopped (+the Plan Step that must come first)". Unchanged.
+
+##### TODO.md
+
+**FINDING-1185.** (E-34) [not changed in round 3] rule 9; checked. `TODO.md` Next, "Decide how work is run by agents" (line 133-134): "the kind of work, the Idea Model, the effort". This is FINDING-578, which the endings list as fixed in `e5a874b`. The line is as it was at 00420b9. The agent's model is meant. Proposed: fix: "the model". Unchanged.
+
+**FINDING-1186.** (E-35) [not changed in round 3] rule 9; checked. `TODO.md` Next, "Decide which ideas here are Idea Models" (line 752): "three Idea Models exist: agent, tiers, idea-to-output". Line 795 has "Idea-to-output has an Idea Model come from". This is FINDING-549, listed as fixed, and both TODO lines are unchanged. 2 lines. Proposed: fix: "the Agent Model, the Tiers Model and the Idea-to-Output Model"; "The Idea-to-Output Model has an Idea Model come from". Unchanged.
+
+**FINDING-1187.** (E-36) [not changed in round 3] rule 9; checked. `TODO.md` Later, "Release concept v2" (line 922-923): "the Plan Step that runs run 5's birth closes". This is one of FINDING-580's lines, listed as fixed. Proposed: fix: "CBC Run 5's birth". Unchanged.
+
+**FINDING-1188.** (E-37) [not changed in round 3] rule 6; checked. Fact References to Conversation Memory sections cut short with "…". DECISION-31's reason applies: a Fact Reference carries its title whole. `TODO.md` (line 97): "§9, *A commit plan's look-back…*". Also lines 115, 236, 447, 673, 830, 881: 6 more. Proposed: fix: the whole title, e.g. "§9, *A commit plan's look-back at the way*", "§21, *A full read for missing fact references*". Unchanged.
+
+**FINDING-1189.** (E-38) [not changed in round 3] rule 6; checked. `TODO.md` Later, "Does the playbook need a convention of its own?" (line 1035-1036): "*What a Output Shape is not*". The heading is *What an Output Shape is not* (`docs/conventions/shapes/README.md` line 112). FINDING-586 fixed the same slip at another line. Proposed: fix: "an". Unchanged.
+
+**FINDING-1190.** (E-39) [changed in round 3] rule 9; checked. "rule" written for Agent Rule. `TODO.md` (line 404): "a manual, an Agent Skill or rule". Also 286 "file, rule, Agent Skill, record, or nothing", 467, 480, 506-507, 587, 589, 593-594, 607: 8 more. Proposed: fix: "Agent Rule", "Agent Rules". 404, 506, 587, 589, 607 changed; 286 changed; 467, 480 unchanged.
+
+**FINDING-1191.** (E-40) [not changed in round 3] rule 9; checked. Entry File in lowercase. `TODO.md` (line 285-286): "ends each: entry file, rule, …". Also 743-744: "its entry file now states only what never changes". 2 lines. Proposed: fix: "Entry File". 286 changed; 743-744 unchanged.
+
+**FINDING-1192.** (E-41) [not changed in round 3] rule 9; checked. The method's and the stack's Names written as bare words:
+- `TODO.md` "Watch whether the next Newborn CBC Run…" (line 743-745): "answered the bootstrap half", "At establish it", for CBC Bootstrap and Infrastructure Establishment;
+- `TODO.md` 977: "`infra-establish`'s contract", for the Infrastructure Contract;
+- `TODO.md` 648: "readiness (600)", for System Readiness;
+- `CHANGELOG.md` 37-38: "the registry template or readiness checklist", for the Agent Skill Template `templates/registry.md` and System Readiness's checklist.
+
+5 lines. Proposed: fix: the Names. CHANGELOG 37-38 and TODO 647 changed; the rest unchanged.
+
+**FINDING-1193.** (E-42) [not changed in round 3] rule 9; checked. The refinement's Names in lowercase:
+- `TODO.md` (line 383): "its rounds read";
+- `TODO.md` 807: "Only the refinement's rounds read";
+- `TODO.md` 565: "text round 3 rewrites";
+- `TODO.md` 504-505: "a refinement's writing kind", where line 669 writes "Its Writing Finding Kind".
+
+4 lines. Proposed: fix: "its Refinement Rounds"; "Refinement Round 3"; "a refinement's Writing Finding Kind". 565 changed; 383, 504, 807 unchanged.
+
+**FINDING-1194.** (E-43) [changed in round 3] rule 6; checked. `TODO.md` "Rename the manuals…" (line 529-530): "(the refinement's DECISION-24 and 27)". This is FINDING-584's fault: a bare number after the first label. Also line 877, "rule 9's question at the commit", has no owner. 2 lines. Proposed: fix: "DECISION-24 and DECISION-27"; "writing rule 9's question". Changed.
+
+**FINDING-1195.** (E-44) [not changed in round 3] rule 9; checked. `TODO.md` "Make the conventions index a full Local Map" (line 389): "its chain shows only the conventions". DECISION-23 says this "chain" is written as the order the conventions act in, since the Name Chain Link exists beside it. Line 396, "three links, each with its upkeep", means Chain Links. 2 lines. Proposed: fix: "its order shows only the conventions that act in sequence"; "three Chain Links". Unchanged.
+
+**FINDING-1196.** (E-45) [not changed in round 3] rule 9; checked. `TODO.md` (line 392): "The local-map rule now exists". The Name is Local Map, and it has a home in project-recording §8.6. Proposed: fix: "Project-recording's Local Map part now exists". Unchanged.
+
+**FINDING-1197.** (E-46) [changed in round 3] rule 9; checked. `TODO.md` "Decide how work is run by agents" (line 183-184): "the binding, agent-arrangement §5, would hold the mechanics". The Name is Tool Binding, and the Fact Reference lacks its path and title. Proposed: fix: "the Tool Binding (`docs/conventions/agent-arrangement/` §5, *The Claude Code Tool Binding*) would hold the mechanics". Changed.
+
+**FINDING-1198.** (E-47) [not changed in round 3] rule 9; checked. Convention and agent-part names without their kind word (DECISION-24, DECISION-27):
+- `TODO.md` (line 169): "both commit-messages':";
+- `TODO.md` 435: "the retrospective puts";
+- `TODO.md` 1156-1157: "Probably the arrangement's to say", one of the phrases DECISION-24 names to change;
+- `TODO.md` 238: "Decide whether approach drafting becomes a convention".
+
+4 lines. Proposed: fix: "both the commit-messages manual's"; "the retrospective Agent Skill puts"; "agent-arrangement's to say"; "whether the approach-drafting Approach on Trial becomes a convention". 1156-1157 changed; 169, 238, 435 unchanged.
+
+**FINDING-1199.** (E-48) [not changed in round 3] rule 9; checked. `TODO.md` "Look again at where a CBC Run learns…" (line 883-884): "how to treat a Skill Template". The Name is Agent Skill Template, carried whole (writing rule 9). Line 898 has "an Output Shape for an Agent Skill Templates", where the article and the plural disagree. 2 lines. Proposed: fix: "an Agent Skill Template"; "(d) an Output Shape for Agent Skill Templates". 884 unchanged; 898 changed.
+
+**FINDING-1200.** (E-49) [changed in round 3] rule 9; checked. `TODO.md` "Decide how a Work Approach and an Output Shape divide…" (line 230-233): "an Agent Skill, an Output Shape and a template", "the registry entry's fields". These are an Agent Skill Template and the Invariant Slice Entry. Proposed: fix: "and an Agent Skill Template"; "the Invariant Slice Entry's fields". Changed.
+
+**FINDING-1201.** (E-50) [not changed in round 3] rule 9; checked. `TODO.md` (line 1000): "its Evidence-Test Shape". The Name is Evidence Test Shape: FINDING-822 took out the hyphen. Proposed: fix: "its Evidence Test Shape". Unchanged.
+
+**FINDING-1202.** (E-51) [not changed in round 3] rule 9; checked. `TODO.md` "Decide whether an overtaken CBC Run Reading…" (line 1121): "ten asks and offers". A CBC Run Ask is a line asking for a verdict on an edit, a file it offers, or a question. Proposed: fix: "ten CBC Run Asks". Unchanged.
+
+**FINDING-1203.** (E-52) [not changed in round 3] rule 9; checked. `TODO.md` (line 1102): "what makes a note land". The item's Context says "our Delivery Notes". Proposed: fix: "what makes a Delivery Note land". Unchanged.
+
+**FINDING-1204.** (E-53) [changed in round 3] rule 9; checked. `TODO.md` (line 1083-1084): "the Spring hygiene parts". These are the Stack Overlay, which line 1091 names. Proposed: fix: "points at the Spring Stack Overlay". Changed.
+
+**FINDING-1205.** (E-54) [not changed in round 3] rule 9; checked. `TODO.md` "Filter a maintainer's Container Group…" (line 1048): "maintainer's container does either". This is the Container Group the title names. Proposed: fix: "so no maintainer's Container Group does either". Unchanged.
+
+**FINDING-1206.** (E-55) [changed in round 3] rule 9; uncertain. `TODO.md` "Read text for its level in the chain" (line 623): "a model holding this repo's own rules". The item's Context names the level as "An Idea Model". Proposed: fix: "an Idea Model holding this repo's own rules". Changed.
+
+**FINDING-1207.** (E-56) [not changed in round 3] rule 5; checked. Figures DECISION-26 decided to fix:
+- `TODO.md` (line 314): "TODO sorts by horizon and trigger; within a horizon", the journey row;
+- `TODO.md` 1226: "the toolkit's honest scope", the honest row.
+
+Uncertain:
+- `TODO.md` 702-703: "from the method's first walk", the journey row, unless "walk 1" is a trial's label (`cbc-derived-claude-walk1.md`);
+- `TODO.md` 1062: "not master text", the master row, inside a proposed name.
+
+4 lines. Proposed: fix: "TODO sorts by section, Now, Next and Later, then by trigger; within a section"; "it names the real scope of the Agent Skills"; question for walk and master. 702 changed; the rest unchanged.
+
+**FINDING-1208.** (E-57) [changed in round 3] rule 8; checked. `TODO.md` "Decide whether a receiver needs a rule…" (line 1076): "handbook and CBC Run 3". DECISION-23 says "the handbook" is said in plain words once per file, where it is first met. In TODO the plain words come later, at line 1103-1104. Proposed: fix: move "the handbook, the repo that held the working arrangement before this one," to line 1076. Changed.
+
+**FINDING-1209.** (E-58) [not changed in round 3] rule 3; checked. `TODO.md` Later, "Release concept v2" (line 917-920): "Four items of its own: a CHANGELOG entry for the release; README true for a stranger; …; known issues filed here." Four parts are chained by semicolons, the fault FINDING-589 fixed elsewhere. Proposed: fix: a list of four. Unchanged.
+
+**FINDING-1210.** (E-59) [not changed in round 3] rule 6; resting on the reader. A CBC Run's own name is written two ways. `TODO.md` (line 107-108): "CBC Run 5, event tickets,". Line 415 has "CBC Run 4, safe-reservation-2,". `ARCHITECTURE.md` §2.5 writes `event-tickets` and `safe-reservation-2`, and TODO 36 writes `checkout` in backticks. 2 lines. Proposed: fix: backticks, as in the table. Unchanged.
+
+**FINDING-1211.** (E-60) [not changed in round 3] rule 9; uncertain. "shape" used as English beside Output Shape, which TODO line 656-657 itself warns of. `TODO.md` "Watch whether the worked example anchors…" (line 1164): "could steer a CBC Run toward that shape". Also `TODO.md` 1167, 1168 and `.gitignore` 16, ".env.example is the committed shape". 4 lines. Proposed: fix: "toward that kind of problem"; "another kind"; "a different kind of problem"; "the committed example". 1163-1164 and 1168 changed; 1167 and `.gitignore` unchanged.
+
+**FINDING-1212.** (E-61) [changed in round 3] rule 9; uncertain. "tier" used beside the Tiers Model's tiers. `TODO.md` (line 1237): "a held-insight tier". Also 1241: "ADR-0007 has only the first tier". 2 lines. Proposed: fix: "a held-insight kind"; "only the first kind". 1237 changed; 1241 unchanged.
+
+**FINDING-1213.** (E-62) [not changed in round 3] rule 5; uncertain. "rung" is a ladder figure. The concept's own words are ranking and hierarchy (`concept/02-guarantees-and-walls.md` line 56). `CHANGELOG.md` [Unreleased], Changed (line 50): "The top rung of the". Also `TODO.md` 1183 "Add a rung for System Guarantees" and 1187 "asks for a rung between". 3 lines. Proposed: fix: "The top of the Structural Wall ranking"; "Add a level for System Guarantees held by absence"; "asks for a level between". CHANGELOG 50 and TODO 1183 changed; 1187 unchanged.
+
+**FINDING-1214.** (E-63) [changed in round 3] rule 8; resting on the reader. TODO lines that leave the reader without what they need:
+- `TODO.md` (line 853): "a shipped CBC line when our manual changes";
+- line 248: "at its Stage 5", where the owner is unclear and line 607 names approach-evaluation's;
+- line 1139: "after a CBC Run's apply Plan Step";
+- line 1253: "the milestone that fires it";
+- line 1026: "*Numbering a section's parts* numbers by form", words left after a title;
+- lines 1134, 1146, 1154: "(…, the working draft)", where the form asks who raised it.
+
+8 lines. Proposed: fix: say each plainly, e.g. "a shipped line that retells a manual"; "at `approach-evaluation`'s Stage 5"; drop "numbers by form". 248 and 853 changed; the rest unchanged.
+
+##### CHANGELOG.md
+
+**FINDING-1215.** (E-64) [not changed in round 3] rule 9; checked. `CHANGELOG.md` header comment (line 10-11): "for the pinners: CBC Runs and skills citing a concept version". Line 18-19 has "or a skill derived from it". Line 12, in the same comment, writes "a derived Agent Skill". 2 lines. Proposed: fix: "Agent Skills"; "an Agent Skill". Unchanged.
+
+**FINDING-1216.** (E-65) [changed in round 3] rule 9; checked. `CHANGELOG.md` [Unreleased], Added (line 39-41): "the Output Shapes their Plan Step Gates read: an Invariant Slice Record, an Evidence Test, an Enemy Collision Kill and an Invariant Slice Entry". These name the outputs, not the Output Shapes. The glossary names an Output Shape by its output plus "Shape". Proposed: fix: "the Invariant Slice Record Shape, the Evidence Test Shape, the Enemy Collision Kill Shape and the Invariant Slice Entry Shape". Changed.
+
+##### Hygiene files, folder forms, Conversation Memory
+
+**FINDING-1217.** (E-66) [not changed in round 3] rule 9; checked. `.gitignore` comment (line 2): "# base layer — any repo, from day zero (records-only repos included)". Also `.gitattributes` 2 and `.editorconfig` 16, "this is the base layer". The Name is Hygiene Base (DECISION-23). Our files follow the Master Copies in `delivery/container/`, which say the same, so the fix starts there. 3 lines here, 3 in the Master Copies. Proposed: fix: "# Hygiene Base — any repo, from day zero (…)"; "this is the Hygiene Base". `.gitignore` and `.gitattributes` unchanged; `.editorconfig` 16 changed.
+
+**FINDING-1218.** (E-67) [changed in round 3] rule 9; uncertain. `.editorconfig` comment (line 10): "# Layout conventions (hand-kept - no tool formats this file):". Here "convention" is a defined thing (DECISION-32). The Master Copy reads the same. Proposed: fix: "# Layout rules (…)", in the Master Copy first. Changed.
+
+**FINDING-1219.** (E-68) [not changed in round 3] rule 9; checked. `TODO-CONVERSATION-MEMORY.md` title (line 26): "# TODO's conversation-memory". The Name is Conversation Memory. This is the file's title, not a part heading, so DECISION-18 does not cover it. Proposed: fix: "# TODO's Conversation Memory". Unchanged.
+
+**FINDING-1220.** (E-69) [changed in round 3] rule 8; resting on the reader. `temp/README.md` *A draft* (line 6-9): "a CBC Run Reading written from one". The "one" points back across a list. "an evaluation of this repo while the Change Sets that fix it work through it" never names the refinement's file. Proposed: fix: "a CBC Run Reading of a CBC Run"; "the refinement's file, while the Change Sets that fix what it found are worked". Changed.
+
+**FINDING-1221.** (E-70) [not changed in round 3] rule 5; uncertain. `temp/README.md` (line 3): "a draft on its way somewhere else". Line 6 has "a Delivery Note on its way to a CBC Run". This is a journey figure, next to DECISION-26's journey row. 2 lines. Proposed: fix: "a draft of a text whose home is elsewhere"; "a Delivery Note not yet staged". 3 unchanged; 6 changed.
+
+`devlog/README.md` and `docs/adr/README.md`: no findings.
+
+#### Reader F, Layer 5: our agent setup
+
+**FINDING-1222.** (F-1) [not changed in round 3] rule 9; checked. `.claude/rules/working-a-reading.md` *Governs* (line 14): "**Governs:** what happens between `exchange-read` and". A Work Approach is always written with its kind (`docs/conventions/conventions/` §1.5, *Naming a Work Approach*; DECISION-27). A backticked name alone is neither the kind nor a path. This file has 9 such lines: 14, 15, 75, 108, 110, 113, 114, 121, 123 (`commit-plan`). Also `.claude/rules/exchange-reading.md` 14: 1 more; `.claude/rules/one-home.md` 41 (`cbc-framing`, `cbc-slice`): 1 more; `.claude/skills/exchange-deliver/SKILL.md` 21, 23: 2 more; `.claude/skills/exchange-read/SKILL.md` 11, 100: 2 more; `.claude/approaches-on-trial/approach-evaluation.md` 20, 30, 78, 92, 104 (`approach-drafting`), 114 (`working-a-reading.md`): 6 more; `.claude/approaches-on-trial/auto-run.md` 25, 41 ("the shipped `delivered-copies.md` rule"), 43, 114: 4 more; `.claude/approaches-on-trial/approach-drafting.md` 70 (`approach-evaluation`, both copies): 1 more. 26 lines. `writing.md` line 30's `exchange-read` is an example of a label kept exact, not counted. Proposed: fix: the kind word, "the exchange-read Agent Skill", "the approach-drafting Approach on Trial", "the shipped delivered-copies Agent Rule"; the path where the line points at where a fact is written. Changed 15, unchanged 11.
+
+**FINDING-1223.** (F-2) [not changed in round 3] rule 9; checked. `.claude/rules/foundation-check.md` *A moved section* (line 62): "any file, or moves a fact to a new home, grep all living text for". Living Text is a Glossary Name (DECISION-23; `docs/glossary.md`, *How texts tie*). FINDING-664 named these lines, and its fix reached only `refinement.md`. Also `.claude/rules/one-home.md` 60, "is living text": 1 more; `.claude/skills/commit-plan/SKILL.md` 117–118 and 125, "live text": 2 more, and the same 2 in `delivery/container/.claude/skills/commit-plan/SKILL.md`. Proposed: fix: "grep all Living Text", "is Living Text", "grep Living Text", "from Living Text". Unchanged.
+
+**FINDING-1224.** (F-3) [not changed in round 3] rule 9; uncertain. `.claude/approaches-on-trial/refinement.md` §2.2 *List the files* (line 141): "Every living file falls in exactly one Refinement Layer. When the list finds a". The adjective carries Living Text's meaning, and rule 9 may not reach an adjective made from a Name. Also this file 88, 128; `.claude/approaches-on-trial/model-placing.md` 41, "every living reference"; `.claude/rules/one-home.md` 60, "a living home", the words of facts-in-sync §1. 5 lines. Proposed: question: "every file of Living Text", "every reference in Living Text", or English as it stands. Changed 1 (128), unchanged 4.
+
+**FINDING-1225.** (F-4) [not changed in round 3] rule 9; checked. `.claude/approaches-on-trial/refinement.md` *What this is made usable as* (line 44): "- **its Plan Step in `PLAN.md`**, whose Notes list this page's Approach Stages;". Approach Stage became Approach on Trial Stage (DECISION-19, the Agent Model's group, row 26), and the rename missed this line. The rest of the file uses the new Name. Proposed: fix: "this page's Approach on Trial Stages". Unchanged.
+
+**FINDING-1226.** (F-5) [changed in round 3] rule 9; checked. `.claude/approaches-on-trial/refinement.md` §1.1 *The refinement's words* (line 65): "- **Living Text** — every file but history. History is the". Bold on a Name stands only at its home (DECISION-22). The glossary and DECISION-23 put Living Text's home at facts-in-sync §1, so this is a second definition, in bold, with a scope of its own (`docs/baselines/`, a CBC Run's text in `temp/`). Proposed: question: either this section is the home and the glossary points here, or the bold goes and the line reads as the refinement's scope: "A refinement reads Living Text (`docs/conventions/facts-in-sync/` §1, *One home*), less `docs/baselines/` and a CBC Run's own text in `temp/`." Changed.
+
+**FINDING-1227.** (F-6) [not changed in round 3] rule 9; checked. `.claude/rules/one-home.md` *Governs* (line 8): "rules, comments and config. Where it lives, never how it reads." The list names kinds of file, "manuals, Agent Skills, rules", and "rules" stands for Agent Rules. Also this file's footer 68, "the one-home rule" (DECISION-27: the one-home Agent Rule); `.claude/approaches-on-trial/refinement.md` 23 and footer 395, "writing, and one home per fact", which names two Agent Rules by bare words (DECISION-24: a one-word convention is never its bare word). 4 lines. Proposed: fix: "manuals, Agent Skills, Agent Rules, comments and config"; "the one-home Agent Rule"; "the writing and one-home Agent Rules". Changed 2 (refinement 23, 395), unchanged 2.
+
+**FINDING-1228.** (F-7) [changed in round 3] rule 9; checked. `.claude/rules/writing.md` *The rules*, rule 10 (line 71): "headings, a stage heading and a numbered rule's bold lead are not". The manual says "an Agent Skill Stage heading" (`docs/conventions/writing/` §2, *Why each rule*, rule 10), and DECISION-20 also counts the refinement's Approach on Trial Stage headings. Lowercase "stage" stands for both Names. Also `delivery/container/.claude/rules/writing.md` 69: 1 more. Proposed: fix: "an Agent Skill Stage or Approach on Trial Stage heading", with the manual's rule 10 gaining the second Name. Changed.
+
+**FINDING-1229.** (F-8) [not changed in round 3] rule 9; checked. `.claude/skills/exchange-deliver/SKILL.md` *Stage 2* (line 102): "## Stage 2 — stage and copy across". The glossary's Delivery Staging entry says the verb names its object, "stage a delivery", since git's verb is the same word. Here it has none, and stands beside "Stage 2". Line 106, "If the agent stages, it runs steps 1 and", is the second. 2 lines. Proposed: fix: "## Stage 2 — stage the delivery and copy it across"; "If the agent stages the delivery". Unchanged.
+
+**FINDING-1230.** (F-9) [not changed in round 3] rule 9; checked. `.claude/skills/commit-plan/SKILL.md` §3 *How the commits are split* (line 93): "decisions entry — is a commit of its own, never". The entry is a Decisions Log entry, written in lowercase. Same line in the container's copy. Proposed: fix: "its Decisions Log entry". Unchanged.
+
+**FINDING-1231.** (F-10) [not changed in round 3] rule 9; checked. `.claude/approaches-on-trial/approach-drafting.md` *Stages*, §1 *Open*, step 3 (line 42): "subject is approaches. It holds:". The subject meant is Approaches on Trial, as `approach-drafting` and `approach-evaluation` are about. Same line in the byte-identical shipped copy. Proposed: fix: "only when its subject is Approaches on Trial". Unchanged.
+
+**FINDING-1232.** (F-11) [not changed in round 3] rule 9; uncertain. `.claude/approaches-on-trial/approach-drafting.md` *Not known yet* (line 94): "- **Whether the form holds:** what for, stages, not known, ways". A label inside its owner keeps its case; these words stand for the page's sections *What it is for*, *Stages*, *Not known yet*, *Ways rejected*, *Uses*. Also this file 67, "under the Approach on Trial's uses"; `.claude/approaches-on-trial/approach-evaluation.md` 102, "each Approach on Trial's "settled when""; `.claude/approaches-on-trial/model-placing.md` 72, "changed nothing in its stages"; `.claude/rules/working-a-reading.md` footer 137, "a CBC Run Reading's gates and stages". 5 lines. Proposed: fix: the labels in italics, "*What it is for*, *Stages*, *Not known yet*, *Ways rejected*, *Uses*"; "its *Settled when*"; "its Approach on Trial Stages". Unchanged.
+
+**FINDING-1233.** (F-12) [not changed in round 3] rule 9; uncertain. `.claude/approaches-on-trial/auto-run.md` *What it is for* (line 9): "So that a CBC Run can go from birth to Release with no stop for the". CBC Run Birth is a Name, and "birth" names the same event in lowercase. DECISION-26 kept "born" as a dead figure; it said nothing of the noun. Also this file 4, 34, 56, 59, 96, 101, 103, 111, 133–134: 9 more; `.claude/skills/exchange-deliver/SKILL.md` 42, 153, 200: 3 more; `.claude/rules/one-home.md` 24: 1 more. 14 lines. Proposed: question: is "birth" English beside the Name, as "born" is? If so the glossary entry can say it; if not, "CBC Run 5's CBC Run Birth" and the like. Changed 8, unchanged 6.
+
+**FINDING-1234.** (F-13) [not changed in round 3] rule 9; uncertain. `.claude/skills/visual-comparison/SKILL.md` opening (line 24): "Kind: playbook — copied into a fresh draft each time, never". "Playbook" here is a kind of Agent Skill. Elsewhere "the playbook" is `delivery/fills/cbc-run-pure-playbook.md` (`docs/glossary.md`, Delivery Fill). One word, two meanings. Both copies. Proposed: question: "Kind: an Agent Skill copied into a fresh draft each time, never run in place", or decline as English. Unchanged.
+
+**FINDING-1235.** (F-14) [not changed in round 3] rule 9; uncertain. `CLAUDE.md` *Records*, header comment (line 16): "record's item in the records map". The Fact Reference after it titles the thing *The records at a glance*; "the records map" is ADR-0067's word. DECISION-23 put "the map" into plain words beside Local Map, and the same test may reach this one. Also `.claude/approaches-on-trial/refinement.md` 134, "with the map of the records". Proposed: question: "summarizes the record's item in project-recording's list of the records", or English as it stands. Unchanged.
+
+**FINDING-1236.** (F-15) [not changed in round 3] rule 9; uncertain. `.claude/rules/working-a-reading.md` *Decisions* (line 133): "against its source, and its file read whole". Step 4, which this line summarizes, says "checked against its foundation", and the glossary's Foundation Line entry says *source* is not our word. Proposed: fix: "a taken item checked against its foundation". Unchanged.
+
+**FINDING-1237.** (F-16) [not changed in round 3] rule 5; checked. `.claude/skills/exchange-deliver/SKILL.md` *Stage 1*, step 1 (line 42): "Those are the copies, and only they travel after birth". DECISION-26's journey row fixes "travels". Also `.claude/skills/visual-comparison/SKILL.md` 141, "is provisional and does not travel", and footer 155, "travelling": 2 more; `delivery/container/.claude/skills/visual-comparison/SKILL.md` 142 and 156: 2 more. 5 lines. Proposed: fix: "only they are delivered after birth"; "is provisional and is not delivered"; "provisional and not delivered". Unchanged.
+
+**FINDING-1238.** (F-17) [not changed in round 3] rule 5; checked. `.claude/approaches-on-trial/approach-evaluation.md` *Not known yet* (line 103): "needs a floor of uses.". DECISION-26 fixes "floor and ceiling". 1 line. Proposed: fix: "or placing needs a set number of uses first". Unchanged.
+
+**FINDING-1239.** (F-18) [changed in round 3] rule 5; checked. `.claude/approaches-on-trial/auto-run.md` *Stages*, stage 4 (lines 48–49): "every trouble the CBC Run Briefing names / staged by a test;". "Stage" as a verb for making an adversity happen is the theatre figure FINDING-792 fixed in the method's texts to "create". 1 line. Proposed: fix: "every trouble the CBC Run Briefing names created by a test". Changed.
+
+**FINDING-1240.** (F-19) [not changed in round 3] rule 5; resting on the reader. `.claude/skills/exchange-deliver/SKILL.md` *Stage 2*, step 2 (line 155): "`concept/` is the one path that is not a mirror". "A mirror" stands for "copied to the same path". 1 line. Proposed: fix: "`concept/` is the one path that moves: it lands at `docs/concept/` in the CBC Run". Unchanged.
+
+**FINDING-1241.** (F-20) [not changed in round 3] rule 6; checked. `.claude/rules/convention-manual.md` header comment (lines 8–9): "while a new one is written (docs/conventions/agent-arrangement/ / §5.6); says its form, never its content." A Fact Reference carries path, section and title (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*); this one has no title. Also `.claude/rules/exchange-reading.md` 9 and `.claude/rules/foundation-check.md` 11, the same reference: 2 more. And `.claude/approaches-on-trial/refinement.md` 70, "(`docs/conventions/facts-in-sync/` §1, One home)", a title with no asterisks outside a comment: 1 more. 4 lines. Proposed: fix: "(docs/conventions/agent-arrangement/ §5.6, Rules files)"; "*One home*". Unchanged.
+
+**FINDING-1242.** (F-21) [changed in round 3] rule 6; resting on the reader. `.claude/rules/one-home.md` *The rules*, rule 3 (line 30): "reads it in the owner's place. `ARCHITECTURE.md` does this (§1.2, *The conventions*):". The same-document form (§N, *title*) is used for another document; the path stands outside the parentheses. Also `CLAUDE.md` 3, "(see `docs/models/tiers.md` §2.1, *The empty top tier*, §2.2, *Concept Repos*)": "see" and two sections inside one pair of parentheses, against the one form of §3.1. 2 lines. Proposed: fix: "`ARCHITECTURE.md` does this (`ARCHITECTURE.md` §1.2, *The conventions*)"; "A Concept Repo (`docs/models/tiers.md` §2.2, *Concept Repos*)", with §2.1 in its own parentheses if the line needs it. Changed 1 (one-home 30), unchanged 1.
+
+**FINDING-1243.** (F-22) [not changed in round 3] rule 6; checked. `.claude/rules/foundation-check.md` *The check*, step 3 (line 39): "3. **A Canonical Description changed:** walk what derives from it, as the Change Walk's step 3". The Change Walk is facts-in-sync §4's step 3 ("The greps and these re-reads are the Change Walk"); it has no step 3 of its own. The reference is reworded and points at a step that does not exist. Proposed: fix: "3. **A Canonical Description changed:** run the Change Walk on what derives from it (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 3)." Unchanged.
+
+**FINDING-1244.** (F-23) [not changed in round 3] rule 2; resting on the reader. `.claude/rules/working-a-reading.md` *The steps*, step 4 (lines 51–52): "where a CBC Run's decision says it / lands names a place, never how the CBC Runs lived it." The clause nests a subject inside a subject and cannot be read once. Proposed: fix: "It is checked against what the CBC Runs did, too. A CBC Run's decision names where a change lands, not how the CBC Runs lived with it." Unchanged.
+
+**FINDING-1245.** (F-24) [changed in round 3] rule 2; resting on the reader. `.claude/skills/exchange-read/SKILL.md` *Stage 2* (line 32): "Reading's first line, a new CBC Run Reading's or the open one's,". "…or the open one's, moved, before anything is read" packs two cases and a timing into one sentence. Proposed: fix: "Write it now as the CBC Run Reading's first line, before anything is read. In an open CBC Run Reading, the first line moves to it." Changed.
+
+**FINDING-1246.** (F-25) [not changed in round 3] rule 2; resting on the reader. `.claude/rules/writing.md` header comment (lines 12–14): "Ours, derived from docs/conventions/writing/ like the". A semicolon joins two ideas, and the second runs backward: "how the two differ, that manual's *What this is made usable as* lists". Also `.claude/rules/one-home.md` 14–15, "How the two Convention Seats differ, that manual's *The seats* says.": 1 more; `.claude/rules/convention-manual.md` 10–11, "The why is (docs/conventions/conventions/ §2, The Convention Manual).", a sentence that is only a reference: 1 more. 3 places. Proposed: fix: "Ours is derived from docs/conventions/writing/, as the container's is. That manual's What this is made usable as lists how they differ."; "That manual's *The seats* says how the two differ."; "The why is in docs/conventions/conventions/ (§2, The Convention Manual)." Changed 1 (one-home 15), unchanged 2.
+
+**FINDING-1247.** (F-26) [not changed in round 3] rule 2; resting on the reader. `CLAUDE.md` *Records* table (line 24): "| Starting work, or noticed something not doing it now | What's next; the backlog | TODO.md |". "Noticed something not doing it now" mixes tense and drops its subject. Proposed: fix: "Starting work, or noticing something to do later". Unchanged.
+
+**FINDING-1248.** (F-27) [changed in round 3] rule 2; checked. `.claude/skills/exchange-deliver/SKILL.md` description (line 3): "Use when the reviewer says to deliver — after a CBC Run Reading, or when something a CBC Run holds has changed here — and for a Delivery Note alone". DECISION-30: a description stays one paragraph of short sentences. This sentence holds three cases between a pair of dashes. Also `.claude/skills/visual-comparison/SKILL.md` 3, "Settle how a structure is shown — a picture, a table, a plain list — by writing down", both copies: 1 more. Proposed: fix: "Use when the reviewer says to deliver: after a CBC Run Reading, or when something a CBC Run holds has changed here. Use it too for a Delivery Note alone, when a CBC Run Reading found nothing to send."; "Settle how a structure is shown: a picture, a table or a plain list. Write down what the reader must get, and render every candidate against it." Changed 1 (exchange-deliver), unchanged 1.
+
+**FINDING-1249.** (F-28) [changed in round 3] rule 7; resting on the reader. `.claude/rules/working-a-reading.md` header comment (line 7): "<!-- How this repo works a CBC Run Reading, from the CBC Run Reading to the Delivery Note.". The Name stands twice where one use says it. Also `.claude/approaches-on-trial/auto-run.md` 25, "the CBC Run's CBC Run Reading (`exchange-read`)": 1 more. Proposed: fix: "How this repo works a CBC Run Reading's list, from the written CBC Run Reading to the Delivery Note."; "This is not a CBC Run Reading of it (the exchange-read Agent Skill)". Changed.
+
+**FINDING-1250.** (F-29) [not changed in round 3] rule 7; resting on the reader. `.claude/skills/visual-comparison/SKILL.md` opening (line 11): "build each one, judge it line by line, and let the render decide.". Lines 10–11 give the steps, and the list at 13–18 gives the same four again; §2 then gives six. Both copies. Proposed: fix: keep the list and cut "Write what the reader must get *before* looking at candidates, build each one, judge it line by line, and let the render decide." to "Write what the reader must get before looking at candidates." Changed.
+
+**FINDING-1251.** (F-30) [changed in round 3] rule 3; checked. `.claude/approaches-on-trial/auto-run.md` *Stages*, stage 4 (line 44): "   - how far it may grow or shrink: the CBC Run Briefing's Out, what". The item chains three parts with semicolons (lines 44–49), inside a list whose items already end in semicolons, so the count is hidden. Proposed: fix: a sub-list under "how far it may grow or shrink:", one line each for the Out, the bound on Responsibility Areas and Invariant Slices, and the troubles created by a test. Changed.
+
+**FINDING-1252.** (F-31) [not changed in round 3] rule 3; checked. `.claude/approaches-on-trial/approach-drafting.md` *Uses* (lines 115–116): "trial in `docs/conventions/`. It closed in three pieces: its work / to the file of the refinement, the Concept Deliverer's fixing of its". The three pieces are joined by semicolons, and the first holds a comma gloss, so it reads as four. Both copies. Proposed: fix: "It closed in three pieces:" then a list: "its work, to the refinement's file (the refinement: the Concept Deliverer fixing its own text against its rules); two ideas, to TODO; its way of judging a fix, to the refinement." Changed.
+
+**FINDING-1253.** (F-32) [not changed in round 3] rule 3; resting on the reader. `.claude/skills/commit-messages/SKILL.md` *The agent's own files* (line 105): "commit that touches them is scoped `agent` — `chore(agent)` to add,". A pair of dashes holds a list of parts mid-sentence (105–107). Also, both copies where shipped: `commit-messages/SKILL.md` 21–22; `.claude/skills/commit-plan/SKILL.md` 92–93 and 122–123; `.claude/rules/exchange-reading.md` 14–15; `.claude/rules/working-a-reading.md` 69; `.claude/rules/convention-manual.md` 77–78; `.claude/skills/exchange-deliver/SKILL.md` 89–90: 7 more. 8 sentences. Proposed: fix: a colon and a list, or a sentence per part: "A commit that touches them is scoped `agent`, and touches nothing else. `chore(agent)` adds, installs or updates an Agent Skill or Agent Rule. `docs(agent)` is for a commit plan's lifecycle." The dashes stand on unchanged lines; 4 of the 8 sentences have a changed line. Unchanged.
+
+**FINDING-1254.** (F-33) [not changed in round 3] rule 8; uncertain. `.claude/skills/exchange-deliver/SKILL.md` *Stage 1*, step 9 (line 99): "9. **Commit the Delivery Note last.** The commit after this one is `H`, and". "This one" reads as the last commit before the Delivery Note. *Gates* (line 187) and `docs/conventions/exchange/` §3.1, *Delivery Staging*, name the Delivery Staging by the Delivery Note's own commit. Proposed: fix: "Its commit is `H`, and the Delivery Staging is named by it." Unchanged.
+
+**FINDING-1255.** (F-34) [not changed in round 3] rule 8; resting on the reader. `.claude/skills/exchange-deliver/SKILL.md` *Stage 2*, step 3 (line 170): "   The CBC Run's Agent Rule takes it from there.". Which Agent Rule is not said. Line 198, "The CBC Run's Agent Rule does", is the second. 2 lines. Proposed: fix: "The CBC Run's delivered-copies Agent Rule takes it from there." Unchanged.
+
+**FINDING-1256.** (F-35) [not changed in round 3] rules 5 and 9; checked. `delivery/container/.claude/skills/commit-plan/SKILL.md` §2 *The plan file* (line 59): "- **The list may roll.** Commits near at hand are firm. Commits". ADR-0069: where the two seats agree, the text is the same. The round fixed ours (`31156de`; FINDING-626 to 629, 631, 671; DECISION-22, 24, 26, 27), and `ddd6057` carried none of it to the container. The container still has: bold **Change Set** (9); "set" for Change Set (17, 67, 89, 90, 109, 110, 112, 113, 115, 116, 182, 194); "roll" and "decision horizon" (59–60); "travels the same road" (142); "Small steps" (104, 151, 191); "commit-messages" bare (53, 148, 159, 187); "artifact" (74, 84); "scaffold" (180); "provisional tail" (169, 185). About 30 lines. Explained by seat, and not counted: 95, a path the CBC Run can open, and 148–149, no Fact Reference to our manual. Proposed: fix: carry our wording into the container's copy, with 95 and 148–149 kept for the seat. Unchanged.
+
+#### Reader G, Layer 6: the delivery's pages and the Container Group
+
+##### delivery/README.md
+
+**FINDING-1257.** (G-1) [not changed in round 3] rule 9; checked. `delivery/README.md` §6, *When it lands* (line 94): "Only infra-serve, re-entry, arrives unplanned". It has two faults. The Agent Skill is written without its kind word (DECISION-27). "re-entry" is lowercase where the stack's Name is Infrastructure Service Re-entry. Proposed: fix: "Only the infra-serve Agent Skill, for an Infrastructure Service Re-entry, arrives unplanned". Unchanged.
+
+**FINDING-1258.** (G-2) [changed in round 3] rule 8; resting on the reader. `delivery/README.md` §5, *What a CBC Run does not get* (line 81): "Its own decisions, its own run files and its own versioning". Nothing says what "run files" are. A bare "run" is English, so the phrase names no file kind the reader knows. Proposed: question: which files are meant, the `temp/RUN-n.md` kind? Name them in plain words. Unchanged.
+
+**FINDING-1259.** (G-3) [changed in round 3] rule 8; resting on the reader. `delivery/README.md` §2, *Three ways a file lands* (lines 55–56): "recorded under the container's record rules". Also §4 (lines 76–77): "the standing comments". Neither phrase says what it refers to. The first means the records table and each Record Stub's header comment. The second means the header comments. 1 more. Proposed: fix: "recorded as the container's records table and Record Stub headers say"; "the header comments". Unchanged.
+
+##### delivery/installs/pure-seed.md
+
+**FINDING-1260.** (G-4) [changed in round 3] rule 9; checked. `delivery/installs/pure-seed.md` step 6, after the prompt (line 258): "a reviewer is present *this CBC Run*". The sentence is about one session ("true of this session too"). The Name makes it claim a reviewer for the whole CBC Run. The text looks like a "run" replaced by the Name where it meant "this time". Proposed: fix: "a reviewer is present *in this session*". Unchanged (present at `00420b9`).
+
+**FINDING-1261.** (G-5) [changed in round 3] rule 9; checked. `delivery/installs/pure-seed.md` step 4, after the block (line 183): "This manual delivers what the Master Copy holds". The Pure Seed is a procedure, not a manual. "Manual" here means a Convention Manual. Proposed: fix: "The Pure Seed delivers what the Master Copy holds". Unchanged (the old text had "this manual delivers").
+
+**FINDING-1262.** (G-6) [changed in round 3] rule 9; checked. `delivery/installs/pure-seed.md` closing checklist (line 330): "No Plan Step Gate waits on the briefing to block it". The lowercase "the briefing" stands where the Name CBC Run Briefing is meant (DECISION-19 table row 30). The same sentence then writes the Name. Proposed: fix: "No Plan Step Gate waits on the CBC Run Briefing". Changed.
+
+**FINDING-1263.** (G-7) [not changed in round 3] rule 9; checked. `delivery/installs/pure-seed.md` step 4, shell comment (lines 144–145): "a CBC Run on another stack names method alone and is born with two method Agent Skills, not five". `method` is the loop's directory name, but it is written bare. "Two method Agent Skills, not five" reads as if the method has five. Five is the method and stack together. Proposed: fix: "names `method` alone, and is born with the Method Group's two Agent Skills, not the five of both groups". Changed (Names only).
+
+**FINDING-1264.** (G-8) [changed in round 3] rule 8; resting on the reader. `delivery/installs/pure-seed.md` step 4, after the block (lines 174–175): "Where it began is ADR-0025's, not a number the Newborn CBC Run holds." "It" is the container, and "where it began" is not said in plain words. Proposed: fix: "The container's own history here is ADR-0025's. The Newborn CBC Run holds no commit for it." Unchanged.
+
+**FINDING-1265.** (G-9) [changed in round 3] rule 8; resting on the reader. `delivery/installs/pure-seed.md` step 4, after the block (lines 184–185): "CBC Framing's comment goes in with the Plan Steps." This names a comment the reader has not met. It is the HTML comment under the playbook's Step 1. Proposed: fix: "The comment under the playbook's Step 1, CBC Framing, goes in with the Plan Steps." Changed.
+
+**FINDING-1266.** (G-10) [changed in round 3] rule 5; resting on the reader. `delivery/installs/pure-seed.md` step 4, shell comment (line 149): "# Their footers stay home, as the container's did in step 2." "Stay home" is a figure. The footers are cut off. Proposed: fix: "# Their footers are stripped, as the container's were in step 2." Changed.
+
+**FINDING-1267.** (G-11) [changed in round 3] rule 5; resting on the reader. `delivery/installs/pure-seed.md` step 6, after the prompt (lines 258–260): "A stop written only in a file loses to the harness's pressure to finish". This is personification. Proposed: fix: "A stop written only in a file is skipped when the harness pushes to finish and nothing outside the file says a reviewer is present." Unchanged.
+
+**FINDING-1268.** (G-12) [changed in round 3] rule 2; resting on the reader. `delivery/installs/pure-seed.md` step 6, the prompt (line 228): "Then plan the work as the conventions you were given direct:". The verb comes last, so "direct" first reads as an adjective. The prompt goes to the Newborn CBC Run's agent. Proposed: fix: "Then plan the work the way the delivered Agent Skills and Agent Rules say:". See also *Met in passing*, on "conventions". Unchanged.
+
+##### delivery/fills/cbc-run-pure-playbook.md (lands in the CBC Run's `PLAN.md`)
+
+**FINDING-1269.** (G-13) [changed in round 3] rule 9; checked. `delivery/fills/cbc-run-pure-playbook.md` *The Plan Step Form* (line 50): "the order service's first Invariant Slice, which runs `cbc-slice`". The Agent Skill is written without its kind word (DECISION-27). Also line 156, the Step 1 comment's "(cbc-framing)": 1 more. Proposed: fix: "which runs the cbc-slice Agent Skill"; "(the cbc-framing Agent Skill)". Unchanged.
+
+**FINDING-1270.** (G-14) [not changed in round 3] rule 6; checked. `delivery/fills/cbc-run-pure-playbook.md` *At the close* (line 111): "(`.claude/approaches-on-trial/approach-drafting.md`, its close)". "Its close" is not a section title. The section is *Stages*, §3, *Close*. Proposed: fix: "(`.claude/approaches-on-trial/approach-drafting.md`, *Stages*, §3, *Close*)". Unchanged.
+
+**FINDING-1271.** (G-15) [changed in round 3] rule 8; resting on the reader. `delivery/fills/cbc-run-pure-playbook.md` Step 0 (line 145): "Goal: the container exists before content". The CBC Run's glossary has no Container Group, so the reader cannot resolve this. In a CBC Run on this stack, "container" already means a podman container (the stack's Execution Environment). Also `delivery/container/docs/glossary/container.md` line 70, Stack Overlay: "the marked line the container's base carries": 1 more. Proposed: fix: "Goal: the repo, the records and the agent's arrangement exist before any content."; "below the marked line each hygiene file carries". Unchanged (the glossary line moved from the old `docs/glossary.md`).
+
+**FINDING-1272.** (G-16) [not changed in round 3] rule 8; resting on the reader. `delivery/fills/cbc-run-pure-playbook.md` *At the opening* (lines 62–63): "a branch not cut cannot be cut afterwards". A branch can be cut at any time. The real point is that work done before the cut is not on the branch. Proposed: fix: "Cheap now, impossible later: work done before the branch is cut is not on it." Unchanged.
+
+**FINDING-1273.** (G-17) [not changed in round 3] rule 8; resting on the reader. `delivery/fills/cbc-run-pure-playbook.md` (lines 135–141): "A piece of the way of working put on trial says at which Plan Step's close it is judged" and "A default that does not fit a Plan Step … not a Plan Step cutting a corner". Neither "a piece of the way of working" nor "a default" says what it is. "Cutting a corner" is an idiom (rule 5). Proposed: fix: "A change to how work is done, put on trial, names the Plan Step whose close judges it."; "A playbook item that does not fit a Plan Step is struck there, with its reason. That is a finding about the item, not a Plan Step skipping work." Unchanged.
+
+**FINDING-1274.** (G-18) [not changed in round 3] rule 8; resting on the reader. `delivery/fills/cbc-run-pure-playbook.md` Step 3 (line 179): "Goal: services stood up, constrained to need, verified both ways." "Both ways" means the Catalog Check and the Behavioral Check. Only the infra-establish Agent Skill says so. Proposed: fix: "Goal: the services the Invariant Slices need stood up and constrained, each verified by a Catalog Check and a Behavioral Check." Unchanged.
+
+**FINDING-1275.** (G-19) [changed in round 3] rule 3; uncertain. `delivery/fills/cbc-run-pure-playbook.md` Steps 5..N-3, N-2 and N-1 (lines 194–198, 205–211, 220–224): "Goal: two things are true at each close:" with a bulleted list after it. The Form's Goal is "<one sentence …>" (line 31). DECISION-30 kept a Goal as one sentence with its parts labelled inside it. The round's fix made three Goals into a lead line plus bullets. Proposed: question: is a lead line plus bullets "one sentence, its parts labelled"? If not, write each as one sentence: "Goal: at each close, (1) the Invariant Slice is closed by an Evidence Test that creates its adversity, and (2) the order of the Invariant Slices left is decided again." Changed.
+
+**FINDING-1276.** (G-20) [changed in round 3] rule 8; uncertain. `delivery/fills/cbc-run-pure-playbook.md` Step 1 comment (line 153): "<!-- CBC: this Plan Step opens on the CBC Run Briefing." Nothing in the CBC Run says what the "CBC:" tag on a comment marks. Proposed: question: drop the tag, or say once in `PLAN.md`'s header what it marks. Changed (the tag was kept from "CbC:").
+
+##### The Container Group: records and comments
+
+**FINDING-1277.** (G-21) [change not traced] rule 8; uncertain. 11 lines in 10 shipped files point at the Concept Deliverer's manuals with a "CBC" prefix: `delivery/container/.claude/CLAUDE.md` lines 40 and 60, `README.md` 35, `ARCHITECTURE.md` 9, `CHANGELOG.md` 18, `PLAN.md` 10, `TODO.md` 24, `devlog/devlog.md` 12, `docs/adr/0001-record-architecture-decisions.md` 41, `.claude/decisions.md` 28, and `.claude/rules/delivered-copies.md` 163, "(CBC `docs/conventions/exchange/` §5.8, *Agent Skill Templates*)". The CBC Run cannot open these files. Nothing in its tree says "CBC" is the Concept Deliverer's Repo Tag. The container glossary has no Repo Tag, and `README.md` line 21 shows only `<TAG> ADR-nnnn`. DECISION-3 excepted only `one-home.md` and `writing.md`, and those two say "the Concept Deliverer's" in words. Proposed: question: write "the Concept Deliverer's" before each, as `delivery/container/.claude/rules/writing.md` line 12 does, or decline them as provenance for our Foundation Check. Unchanged; `CLAUDE.md` line 60's title changed.
+
+**FINDING-1278.** (G-22) [not changed in round 3] rule 2; resting on the reader. `delivery/container/.claude/CLAUDE.md`, the three-tests comment (lines 61–62, 66–67): "else it is a convention, stated once, there" and "a fact whose failure is not noticing it". "There" points at nothing. The second phrase cannot be read once. "Convention" is also what a CBC Run does not hold (DECISION-32). Proposed: fix: "1. True of this project and nowhere else. Otherwise it belongs in a delivered Agent Skill or Agent Rule, stated once." and "3. Nothing else would deliver it: a stance, or a fact nobody would notice was missing." Unchanged.
+
+**FINDING-1279.** (G-23) [not changed in round 3] rule 3; checked. `delivery/container/.claude/CLAUDE.md` *Records* comment (lines 37–38): "Three things per row — the moment, what it holds, the path — never the rule itself". The parts are chained with dashes. Also: `delivery/container/docs/adr/0001-record-architecture-decisions.md` lines 8–9, "Significant decisions — what to use, … what a term means — will be made"; `delivery/container/.claude/skills/commit-messages/SKILL.md` lines 20–22, "reads as a command — "fix race in order creation" — and a record as what became true", and lines 105–107, "scoped `agent` — `chore(agent)` to add, … — and touches nothing else"; `delivery/container/.claude/skills/visual-comparison/SKILL.md` line 3, the description, "— a picture, a table, a plain list —". 4 more. Proposed: fix: a colon and a list, or separate sentences. In the description, keep one paragraph of short sentences (DECISION-30). Unchanged.
+
+**FINDING-1280.** (G-24) [not changed in round 3] rule 9; checked. `delivery/container/.claude/decisions.md` header comment (line 3): "The working arrangement's decision log." The lowercase "decision log" stands where the Name Decisions Log, in the container glossary, is meant. Proposed: fix: "The working arrangement's Decisions Log." Unchanged.
+
+**FINDING-1281.** (G-25) [changed in round 3] rule 2; resting on the reader. `delivery/container/PLAN.md` header comment (lines 6–8): "with a playbook's full sequence, a concept's. The playbook itself stays where it came from. Born without one, fill the placeholders in place." "A concept's" hangs off the end. "Born without one" dangles. Proposed: fix: "with the full sequence of Plan Steps from a playbook the Concept Deliverer keeps. The playbook itself is not delivered. A project born without a playbook fills the placeholders in place." Unchanged.
+
+**FINDING-1282.** (G-26) [not changed in round 3] rule 5; checked. `delivery/container/PLAN.md` *Discovered along the way* comment (line 63): "assign to a Plan Step, park in Later, or drop". DECISION-26 rules "park" a figure to fix. Also `delivery/container/.claude/skills/retrospective/SKILL.md` line 93, "is parked to the moment it will exist": 1 more. The *Parked* section label stays, being a label. Proposed: fix: "move to Later"; "waits for the moment it will exist, listed under *Parked*". Unchanged.
+
+**FINDING-1283.** (G-27) [not changed in round 3] rule 9; checked. `delivery/container/PLAN.md` (lines 29, 50): "<first step, e.g. "Bootstrap">" and "<last step, e.g. "Release">". The lowercase "step" stands where Plan Step is meant. The other placeholders say "<next Plan Step>". Proposed: fix: "<first Plan Step, …>", "<last Plan Step, …>". Unchanged.
+
+**FINDING-1284.** (G-28) [not changed in round 3] rule 9; checked. `delivery/container/devlog/devlog.md` first heading (line 16): "(Step 0: bootstrap)". A label keeps its case. The playbook's label is "Step 0: Bootstrap". Round 3 listed this in passing, and it still stands. Proposed: fix: "(Step 0: Bootstrap)". Unchanged.
+
+**FINDING-1285.** (G-29) [changed in round 3] rule 8; resting on the reader. `delivery/container/devlog/devlog.md` header comment (line 5): "Never clean up." It does not say what is never cleaned up. Proposed: fix: "Never rewrite an earlier entry." Unchanged.
+
+**FINDING-1286.** (G-30) [not changed in round 3] rule 5; resting on the reader. `delivery/container/ARCHITECTURE.md` *Overview* comment (line 15): "what kind of system this is, in one breath". Also *Invariants* comment (line 36), "the test that goes red if either went", where "either" has no clear antecedent (rule 8): 1 more. Proposed: fix: cut "in one breath"; "the test that goes red if the computation or the refusal were removed". Unchanged.
+
+**FINDING-1287.** (G-31) [change not traced] rule 9; checked. `delivery/container/.editorconfig` lines 17 and 54, `.gitattributes` line 9, `.gitignore` line 29: "at app bootstrap". The Stack Overlays are appended at CBC Bootstrap, the method's Name and the playbook's Step 4. 4 lines. Proposed: fix: "at CBC Bootstrap". Unchanged (FINDING-708 changed these lines, not this phrase).
+
+**FINDING-1288.** (G-32) [not changed in round 3] rule 9; checked. `delivery/container/.gitignore` (line 16): ".env.example is the committed shape". "Shape" carries the Output Shape meaning. FINDING-923 replaced the same phrase eight lines below. Proposed: fix: ".env.example is the committed counterpart". Unchanged.
+
+**FINDING-1289.** (G-33) [not changed in round 3] rule 6; resting on the reader. `delivery/container/.gitignore` (line 24): "The operator's standing instructions". Every other shipped file calls this person the reviewer (FINDING-711). In the stack's text, "operator" is the reader of the Operator Manual. Proposed: fix: "The reviewer's standing instructions". Unchanged.
+
+##### The Container Group: Agent Rules and the Approach on Trial
+
+**FINDING-1290.** (G-34) [changed in round 3] rule 9; checked. `delivery/container/.claude/rules/delivered-copies.md` rule 4's bold lead (line 75): "**At every Plan Step's close, the CBC Run Asks.**" The old "the Run Asks" was a subject and a verb. With the Name, the lead reads as a noun phrase with no verb, or as the verb "asks" capitalized by mistake. Proposed: fix: "**At every Plan Step's close, the CBC Run writes its CBC Run Asks.**" Changed.
+
+**FINDING-1291.** (G-35) [not changed in round 3] rule 6; resting on the reader. `delivery/container/.claude/rules/delivered-copies.md` rule 5's lead (line 92): "**After the reply, the re-pin: the Delivery Take.**" "Re-pin" is a second word coined for the Name Delivery Take. It stands again at line 129, "gone with the re-pin", and line 140, "the re-pin still lands whole". The title's "re-pinned" (line 12) is the same word. 3 more. Proposed: fix: "**After the reply, the Delivery Take.**"; "gone at the Delivery Take"; "the Delivery Take still copies whole". `temp/README.md` line 13's Fact Reference to the lead follows, by the rename grep. Unchanged.
+
+**FINDING-1292.** (G-36) [not changed in round 3] rule 8; resting on the reader. `delivery/container/.claude/rules/delivered-copies.md` rule 5 (lines 93–94): "a directory named for the hash". It does not say which hash. Also line 122: 1 more. Proposed: fix: "named for the Concept Deliverer's commit", as `temp/README.md` lines 11–12 and the glossary's Delivery Staging say. Unchanged.
+
+**FINDING-1293.** (G-37) [not changed in round 3] rule 2; resting on the reader. `delivery/container/.claude/rules/delivered-copies.md` rule 2 (lines 62–63, 67–68): "so lived work can show one wrong" and "so the second condition does not hold it; the other two do". Neither phrase can be read once. Proposed: fix: "so work in this project can show that a chapter is wrong"; "so the second condition does not apply to it. The first and third do." Unchanged.
+
+**FINDING-1294.** (G-38) [not changed in round 3] rule 9; checked. `delivery/container/.claude/rules/delivered-copies.md` rule 1 (line 29): "(`PLAN`, `TODO`, the devlog, the glossary)". Code font marks a path, and these are not paths. Proposed: fix: "(`PLAN.md`, `TODO.md`, the devlog, the glossary)". Unchanged.
+
+**FINDING-1295.** (G-39) [not changed in round 3] rule 9; checked. `delivery/container/.claude/rules/shapes-lifecycle.md` §3 (line 69): "a delivered one under `delivered-copies.md`". This is neither the part with its kind word (DECISION-27) nor the full path. Also §4 line 87 and §5 line 98: 2 more. Proposed: fix: "under the delivered-copies Agent Rule" at each, or the path `.claude/rules/delivered-copies.md`. Unchanged.
+
+**FINDING-1296.** (G-40) [not changed in round 3] rule 8; uncertain. `delivery/container/.claude/rules/shapes-lifecycle.md` §1 (line 42): "only the source shows that". "Source" means the outputs the Output Shape was written from. The glossary retires "source" as a word. Proposed: fix: "only reading the output itself shows that". Unchanged.
+
+**FINDING-1297.** (G-41) [not changed in round 3] rule 9; checked. `delivery/container/.claude/approaches-on-trial/approach-drafting.md` *Stages*, §3 (line 70): "open `approach-evaluation`". It is written without its kind word (DECISION-27). Also `delivery/container/docs/glossary/container.md` line 73, "drafted by `approach-drafting`": 1 more. Proposed: fix: "open the approach-evaluation Approach on Trial"; "drafted under the approach-drafting Approach on Trial". Unchanged (the glossary line moved from the old `docs/glossary.md`).
+
+**FINDING-1298.** (G-42) [not changed in round 3] rule 9; resting on the reader. `delivery/container/.claude/approaches-on-trial/approach-drafting.md` *Stages*, §1 (lines 41–42, 47): "only when its subject is approaches" and "its uses, empty until the close". Also §3 line 67, "under the Approach on Trial's uses". "Approaches" stands for Approaches on Trial. "Uses" is the *Uses* section label, which `delivered-copies.md` line 66 writes "under its *Uses*". 2 more. Proposed: fix: "only when its subject is Approaches on Trial"; "its *Uses*"; "under the Approach on Trial's *Uses*". Unchanged.
+
+**FINDING-1299.** (G-43) [changed in round 3] rule 8; checked. `delivery/container/.claude/approaches-on-trial/approach-drafting.md` *What it is for* (line 14): "An Agent Skill or a manual written before the work describes a guess." A CBC Run holds no manual. DECISION-24 says a shipped file does not write "manual" except beside a Fact Reference. Proposed: fix: "An Agent Skill written before the work describes a guess." Changed.
+
+**FINDING-1300.** (G-44) [not changed in round 3] rule 8; uncertain. `delivery/container/.claude/approaches-on-trial/approach-drafting.md` *Uses* (lines 115, 122, 129, 131): `docs/conventions/`, `.claude/approaches-on-trial/model-placing.md` and `4fedbb3`. These are paths and a commit in the Concept Deliverer's tree, written as a CBC Run reads its own. Each note's lead names the Concept Deliverer. DECISION-18 (c) keeps what a note says. Proposed: question: prefix "the Concept Deliverer's" to each path, or decline as the note's own words. Unchanged.
+
+##### The Container Group: Agent Skills
+
+**FINDING-1301.** (G-45) [changed in round 3] rule 9; checked. `delivery/container/.claude/skills/apply-retrospective/SKILL.md` description (line 3): "(that is retrospective)". Also `delivery/container/.claude/skills/retrospective/SKILL.md` description (line 3), "that is apply-retrospective, after this": 1 more. Both are written without the kind word (DECISION-27). Proposed: fix: "(that is the retrospective Agent Skill)"; "that is the apply-retrospective Agent Skill, after this". Unchanged.
+
+**FINDING-1302.** (G-46) [not changed in round 3] rule 3; checked. `delivery/container/.claude/skills/apply-retrospective/SKILL.md` Stage 2 (line 74): "- regroup before rewriting; fix tags before the words around them;". Two ordering rules sit in one bullet. Proposed: fix: two bullets. Unchanged.
+
+**FINDING-1303.** (G-47) [not changed in round 3] rule 4; resting on the reader. `delivery/container/.claude/skills/apply-retrospective/SKILL.md` Stage 3, the stop rule (lines 108–110): "If pass 2 changed only small things, the pass ends. If it changed something real". It sets no measure. Also lines 97–98, "meaning lost, the writing rule, home", three checks given as bare nouns (rule 8): 1 more. Proposed: question: what counts as real, for example a changed fact; fix: "whether meaning was lost, whether the writing rule is met, whether each fact is at its home". Unchanged.
+
+**FINDING-1304.** (G-48) [not changed in round 3] rule 6; resting on the reader. `delivery/container/.claude/skills/apply-retrospective/SKILL.md` Stage 1 (lines 37–38, 49): "**applied**, **partly** (and which part), or **next CBC Run only**" and then "**Apply here**". One status value is written two ways. Proposed: fix: "**Applied**" at line 49. Unchanged.
+
+**FINDING-1305.** (G-49) [changed in round 3] rule 9; resting on the reader. `delivery/container/.claude/skills/retrospective/SKILL.md` Stage 4 (lines 110–111): "the three tests in its guard comment". The Entry File gives the comment no such name. "Guard" collides with the method's Standing Guard. Proposed: fix: "the three tests in the comment above its *Local rules*". Unchanged.
+
+**FINDING-1306.** (G-50) [changed in round 3] rule 8; resting on the reader. `delivery/container/.claude/skills/retrospective/SKILL.md` Stage 3 (lines 103–104): "Dropped: the branch is deleted, and the note's commits move back." It does not say where the commits move. Proposed: fix: "Dropped: the branch is deleted, and the commits to `RETRO.md` made on it are copied back to `retrospective`." Unchanged.
+
+**FINDING-1307.** (G-51) [not changed in round 3] rule 9; uncertain. `delivery/container/.claude/skills/retrospective/SKILL.md` Stage 1 (line 47): "Which approaches were tried and dropped?" "Approach" alone is also Work Approach's word (DECISION-19 table row 26). Proposed: fix: "Which ways of working were tried and dropped?" Unchanged.
+
+**FINDING-1308.** (G-52) [not changed in round 3] rule 9; checked. `delivery/container/.claude/skills/commit-plan/SKILL.md` (line 17): "set's ADR is still Proposed". The lowercase "set" stands where the Name Change Set is meant. It also stands at lines 89, 90, 109, 110, 112, 113, 115 and 116: 8 more. Our copy, `.claude/skills/commit-plan/SKILL.md`, already writes "Change Set" at each, and the shipped copy was not brought along (`31156de`). Also uncertain: the bold "**Change Set**" at line 9, which our copy dropped (FINDING-626). `container.md` makes this Agent Skill the Name's home in a CBC Run, so the bold may stand. Proposed: fix: take our copy's lines. Unchanged.
+
+**FINDING-1309.** (G-53) [not changed in round 3] rule 9; checked. `delivery/container/.claude/skills/commit-plan/SKILL.md` §2 (line 53): "Commit subjects follow commit-messages". The skill is written without its kind word. Also line 148, "The rule is commit-messages' and binds", and line 159, "follows commit-messages too": 2 more, and 1 in the footer. Proposed: fix: "the commit-messages Agent Skill", as our copy has it. Unchanged.
+
+**FINDING-1310.** (G-54) [not changed in round 3] rule 5; checked. `delivery/container/.claude/skills/commit-plan/SKILL.md` §2 (lines 59–60): "**The list may roll.** … past the decision horizon". These are figures DECISION-26's journey row fixes. Also §5 line 142, "travels the same road", and §7 line 169, "tail refined at its boundary": 2 more; footer lines 180 and 185, "scaffold", "provisional tails". Our copy fixed each. Proposed: fix: our copy's words: "**The list may change past a point.** … Commits that a result not yet seen must shape"; "follows the same four steps"; "commit refined at its boundary". Unchanged.
+
+**FINDING-1311.** (G-55) [not changed in round 3] rule 9; checked. `delivery/container/.claude/skills/commit-plan/SKILL.md` §4 table (line 104): "| Small steps |". Also §6 line 151, "**Small steps inside a planned commit": 1 more, and 1 in the footer. The skill's own footer cites ADR-0049, 1: "step" is `PLAN.md`'s. Our copy writes "Small commits". Proposed: fix: "Small commits" at each. Unchanged.
+
+**FINDING-1312.** (G-56) [changed in round 3] rule 8; resting on the reader. `delivery/container/.claude/skills/visual-comparison/SKILL.md` opening (line 20): "What makes it its own method". The Agent Skill calls itself a "method" 5 times: lines 20, 47, 91, 117 and 118. In a CBC Run, "the method" is correctness by construction (`.claude/CLAUDE.md` line 16, "The method is in `docs/concept/`"). 4 more. Proposed: fix: "this Agent Skill" or "the comparison" at each. Our copy is the same. Unchanged.
+
+**FINDING-1313.** (G-57) [not changed in round 3] rule 9; checked. `delivery/container/.claude/skills/visual-comparison/SKILL.md` opening (line 24): "Kind: playbook — copied into a fresh draft each time, never executed in place." In a CBC Run, "the playbook" is the source of its Plan Steps (`PLAN.md`'s "Steps from:"). "Kind:" is a label nothing defines. Proposed: fix: "Its steps are copied into a fresh `temp/` draft each time, never followed in place." Unchanged.
+
+**FINDING-1314.** (G-58) [not changed in round 3] rule 10; checked. `delivery/container/.claude/skills/visual-comparison/SKILL.md` §3 (line 80): "## 3. Gates". This numbered title does not stand alone. "Gate" belongs to two Names, Plan Step Gate and Enforcement Gate, and the section lists the checks a comparison must pass. Proposed: fix: "## 3. The comparison's checks", 26 characters, with the rename grep, in both copies. Unchanged.
+
+**FINDING-1315.** (G-59) [changed in round 3] rule 8; resting on the reader. `delivery/container/.claude/skills/visual-comparison/SKILL.md` §4 (lines 104–105, 113–115): "the rule the procedure existed to keep" and "could not place the operator … the operator is transport, not a place". The CBC Run's reader holds neither "the procedure" nor "the operator". "Transport" is a figure (rule 5). Proposed: fix: "the rule the exchange existed to keep: a CBC Run Reading writes nothing in the CBC Run"; "could not place the reviewer, who works in both repos. The fix was to show the reviewer as what carries text between them, not as a place." Unchanged.
+
+#### Reader H, Layer 6: the Method Group
+
+**FINDING-1316.** (H-1) [not changed in round 3] rule 8; checked. workflow *The order, and why it differs from the presentation* (line 46-47): "the two in the archive this repo came from, and those of CBC Runs 3 to 6." This file ships to a CBC Run. There, "this repo" is the CBC Run's own repo, and that repo came from no archive. The archive has no name and cannot be opened from the CBC Run's tree. Also workflow 449: "The two archive CBC Framings": 1 more. Proposed: fix: "two CBC Framings made before the first CBC Run, and those of CBC Runs 3 to 6"; line 449 "The two CBC Framings made before the first CBC Run". changed.
+
+**FINDING-1317.** (H-2) [not changed in round 3] rule 8; checked. framing SKILL *Each Agent Skill Stage's Exit* (line 96-98): "Either way, they answer who besides the system can write what it stores;". The two ways, trusted or defended, are stated only in the workflow (lines 204-207). In SKILL.md, "either way" points at nothing. The rewrite split it from its old clause. Proposed: fix: "They answer who besides the system can write what it stores, whether that writer is trusted or defended;". changed.
+
+**FINDING-1318.** (H-3) [not changed in round 3] rule 2; checked. framing SKILL *Export and handoff* (line 245-247): "The rest is (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is copied and filled, never edited in place*)." The sentence's object is a parenthesised Fact Reference, and "the rest" names nothing. Also template lines 6-8, the same sentence (its Fact Reference on line 5 also lacks italics on the title); slice workflow 214-215, "Why an Output Shape is read only at the close: (`.claude/rules/shapes-lifecycle.md` §2, ...)", a fragment of the same form: 2 more. Proposed: fix: "How it is used is the delivered-copies Agent Rule's (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is copied and filled, never edited in place*)."; slice workflow: "An Output Shape is read only at the close, for the reasons in `.claude/rules/shapes-lifecycle.md` §2, *Where an Output Shape lives*." changed.
+
+**FINDING-1319.** (H-4) [not changed in round 3] rule 9; checked. glossary *The method's* (line 181-184): "**Correctness Specification** — the cbc-slice Agent Skill's Stage 1 output: … (`.claude/skills/cbc-slice/SKILL.md`)." Slice SKILL first uses the Name at line 83 and never says what it is. The slice workflow defines it, in bold, at lines 108-110: "The output is the **Correctness Specification**: invariant → Invariant Slice Guarantees → Evidence Criteria, plus the Adversity Model." So the entry points at a file that does not define it. Proposed: fix: point the entry at `.claude/skills/cbc-slice/references/cbc-slice-workflow.md`. The slice workflow's bold then stands at its home (see H-6). changed.
+
+**FINDING-1320.** (H-5) [not changed in round 3] rule 9; checked. glossary, entries whose home uses the Name and never says what it is:
+- State Witness and State Witness Reading (lines 215-219, home slice SKILL): slice SKILL uses both from line 157 and never defines them. What a State Witness is appears in `.claude/shapes/evidence-test.md` 101-102 ("Read it from where the truth is stored") and in workflow 139.
+- Responsibility Area Seam (145-147, home workflow): the workflow uses it at lines 66, 359, 369 and 375, and never says it is the line between two Responsibility Areas.
+- Adversity Model (194-196, home slice workflow): named once, at line 110. Its content is described in the outline at 47-49 without the Name.
+- Invariant Slice Close (234-236, home slice SKILL): used from line 85. Line 221 says what is done at the close, but no line says what the close is.
+- System Refusal (100-102, home framing SKILL): used at 41, 86 and 88 but never defined. The workflow (152-159) reaches it only through the System Refusal Test.
+- Adversity Harness (200-202, home `system-readiness.md`): READINESS-4 and READINESS-5 say what it must do, never what it is. Uncertain.
+- System Layer (35-37, home `docs/concept/01-layered-system.md`): the chapter defines the five layers but never uses the Name. Uncertain, since the chapter is not this reader's file.
+
+Proposed: fix: one plain defining sentence at each home, in the glossary entry's words. Or, for State Witness, point the entry at `.claude/shapes/evidence-test.md`. glossary lines changed; the homes' lines changed.
+
+**FINDING-1321.** (H-6) [not changed in round 3] rule 9; checked. workflow *The unit* (line 19): "A **CBC Framing** is one Falsifiable Promise". Bold on a Name is allowed only at its home (DECISION-22), and this Name's home is `docs/concept/03-cbc-framing.md`. Also workflow 390 "An **Invariant Slice** is"; slice SKILL 9 "Carry **one Invariant Slice**"; slice workflow 16 "An **Invariant Slice** is" (home `docs/concept/04-cbc-slice.md`): 3 more. Proposed: fix: drop the bold. changed.
+
+**FINDING-1322.** (H-7) [not changed in round 3] rule 9; checked. Script sweep line, confirmed. workflow *Stage 2 — Name the enemies* (line 213-214): "under the label **"The runtime ground"**". The CBC Run copies this label into its System Definition. The label spells the Name Runtime Ground in lowercase, and the worked example's System Definition already writes "The Runtime Ground, beside the Enemy Facts:" (line 99). Also workflow 195, the label **"Trust assumptions — accepted deliberately, not defended"**, and worked example 81, which copies it: 2 more. Proposed: fix: labels "The Runtime Ground" and "Trust Assumptions — accepted deliberately, not defended"; worked example 81 changes to match, in both copies, in the same commit. Workflow lines changed; worked example 81 unchanged.
+
+**FINDING-1323.** (H-8) [not changed in round 3] rule 9; checked. framing SKILL *The derivation order (not the presentation order)* (line 69-71): "becomes a logged revision of LAYER-2-SYSTEM". Row 33 of DECISION-19's table rewrote "logged revision" to the CBC Framing Export Revision. Also workflow 74 "gets a logged revision", 241 "by a dated revision", 324 "becomes a revision of LAYER-2-SYSTEM"; slice SKILL 132 "answered there by a dated revision": 4 more. Proposed: fix: "a CBC Framing Export Revision of LAYER-2-SYSTEM", and the same in each. changed.
+
+**FINDING-1324.** (H-9) [not changed in round 3] rule 9; checked. framing SKILL *The record — the CBC Framing Exports, and one CBC Framing Derivation* (line 148-149): "It carries a draft line at its top until the close." "The close" is lowercase. Here it means CBC Framing's close, but the same files name another close, the Invariant Slice Close. Also framing SKILL 182 "at the close" and 195 "At the close" (CBC Framing's); slice workflow 190 "on what the close wrote down … what a close hands on" and 213-214 "this close … only at the close" (the Invariant Slice Close); template 103 "decided again at each close"; slice SKILL 262 heading "(mention at close)": 7 more. The Output Shapes' fixed heading *What to check at a close* and the field *Answered at close* are labels, so they are not raised. Proposed: fix: "until CBC Framing's close" in the first three; "the Invariant Slice Close" in the rest. changed.
+
+**FINDING-1325.** (H-10) [not changed in round 3] rule 9; checked. "the record" stands for the Invariant Slice Record, which row 66 of DECISION-19's table names. `.claude/shapes/registry-entry.md` *The shape* (line 68-69): "a reference to the record. How the Invariant Slice got there is its record's." Also `evidence-test.md` 61, 83; `registry-entry.md` 53, 96, 100; `slice-record.md` 14, 19, 31 (heading "The record's order"), 215, 217, 227; slice SKILL 16, 95, 229, 230; slice workflow 4, 36, 211 (twice); `system-readiness.md` 29; template 52, 53, 107: 24 more. Proposed: fix: the Name at each use. Or a question for the reviewer: may the bare head noun stand for the Name within the paragraph that just named it? If it may, rule 9 needs that line, and FINDING-1326 and FINDING-1327 follow the answer. mostly changed (`registry-entry.md` 96, 100 and `slice-record.md` 215, 227 unchanged).
+
+**FINDING-1326.** (H-11) [not changed in round 3] rule 9; checked. "the entry" stands for the Invariant Slice Entry (DECISION-19 row 75). slice SKILL *Stage 4 — document* (line 222-224): "The entry went to `in-progress` … The entry gets one line per item". Also `registry-entry.md` 16, 23, 64, 69, 105, 111, 113; framing SKILL 236; `system-readiness.md` 45: 9 more. Proposed: fix, or as FINDING-1325's question. mostly changed (`registry-entry.md` 105, 113 unchanged).
+
+**FINDING-1327.** (H-12) [not changed in round 3] rule 9; checked. "the block" stands for the Invariant Slice Guarantee Block (DECISION-19 row 48). `slice-record.md` *What this document controls* (line 20): "A block this Output Shape accepts". Also `slice-record.md` 25, 27, 38, 54, 58, 166, 178, 179, 196, 219; slice workflow 52 (drawn: "one block per guarantee"), 70, 71, 72: 14 more. Proposed: fix, or as FINDING-1325's question. mostly changed (`slice-record.md` 25, 166 and slice workflow 52 unchanged).
+
+**FINDING-1328.** (H-13) [changed in round 3] rule 9; checked. "promise" in lowercase stands for the Falsifiable Promise (DECISION-19 concept row 11). `the-whole-system-in-plain.md` *The one idea* (line 27-28): "the minimum needed to keep the promises real". There is only one Falsifiable Promise. Also `the-whole-system-in-plain.md` 38, 56, 116; workflow 83, 120, 122 (twice); framing SKILL 41; worked example 18, 47 (table head), 52; `evidence-test.md` 91, the code label `"the promise: %s"`, which is uncertain because it is a string in code: 12 more. Proposed: fix: "the Falsifiable Promise", and "candidate Falsifiable Promises" for the rejected ones. changed, except worked example 47, 52 and `evidence-test.md` 91, unchanged.
+
+**FINDING-1329.** (H-14) [changed in round 3] rule 9; checked. "audience" stands for the Falsifiable Promise Audience (DECISION-19 row 38). workflow *Stage 0 — Choose the Falsifiable Promise* (line 121-122): "would proving it true matter to the named audience?". Also workflow 131, 135; worked example 30, 237; `the-whole-system-in-plain.md` 54: 5 more. Proposed: fix: "the Falsifiable Promise Audience". changed.
+
+**FINDING-1330.** (H-15) [not changed in round 3] rule 9; checked. "guarantee" in lowercase stands for a System Guarantee or an Invariant Slice Guarantee. workflow *Stage 5 — Check between owners* (line 379): "LAYER-4-PROBLEMS's local guarantees". Also `the-whole-system-in-plain.md` 85 "the guarantees" and 91 (heading "who guards each guarantee"); slice workflow 49 and 52 (drawn; DECISION-21 asks a key line where the box has no room), 147 "a contention guarantee", 184 "how deep the guarantees go"; slice workflow 244 "(*invariant / adversity / guarantees / evidence criteria*)", whose "evidence criteria" also writes the Evidence Criterion lowercase and whose four headings do not match the outline's headings (46-66): 7 more. The record's own section labels, "Guarantees" and "The plan, across guarantees", are labels and not raised. Proposed: fix: the Name at each use; at 244, the outline's headings as they stand. changed, except slice workflow 49, 52 and `the-whole-system-in-plain.md` 91, unchanged.
+
+**FINDING-1331.** (H-16) [not changed in round 3] rule 9; checked. "seam" in lowercase stands for the Responsibility Area Seam. workflow *Stage 4 — Sort into owners* (line 360): "A seam named and not drawn". Also workflow 378 "across the seams". Worked example 315, heading "What the example shows about the seams", uses "seams" in another sense: the handoffs between the two Agent Skills. That is a second meaning in the file that names one Responsibility Area Seam (line 246): 2 more. Proposed: fix: "A Responsibility Area Seam named and not drawn", "across the Responsibility Area Seams"; heading "What the example shows about the handoffs". Workflow lines changed; worked example 315 unchanged.
+
+**FINDING-1332.** (H-17) [changed in round 3] rule 9; checked. workflow *Stage 2 — Name the enemies* (line 293): "each Enemy Census Probe's lens, its stamps, and what it found". Two Names are written in lowercase. Also workflow 295 "the saturation claim" (the Enemy Census Saturation); glossary 119-120 "each Enemy Census Probe's lens, stamps and findings": 2 more. "**The resource lens.**" (265) is a label, by trigger 5, and not raised. Proposed: fix: "its Enemy Census Probe Lens, its Enemy Census Probe Stamps"; "the Enemy Census Saturation claim". changed.
+
+**FINDING-1333.** (H-18) [change not traced] rule 9; uncertain. Some words of a Name are used in a second sense. The reader then has to decide which meaning is meant, which is the doubt rule 9 exists to remove:
+- "stamps": workflow 394 "one of two stamps" and 403 "the other stamp", for theorem and contract, beside the Enemy Census Probe Stamp;
+- "fold": framing SKILL 162 "folded into FACT-CALLER-5", where one candidate fact is merged into another; `registry-entry.md` 93 and worked example 214 "races fold in here", where KILL-2 is merged into SLICE-1, not an Invariant Slice Fold;
+- "probed": worked example 194, a Responsibility Area Seam examined, beside the Enemy Census Probe;
+- "inversions": workflow 46 "Two inversions", two swaps of order, beside the CBC Inversion;
+- "layer": slice workflow 103 "This middle layer is the real work", the Invariant Slice Guarantees, beside System Layer.
+
+Proposed: fix: "one of two labels", "merged into FACT-CALLER-5", "races are merged here", "was examined", "Two swaps of order", "This middle step". Most lines changed; `registry-entry.md` 93 unchanged.
+
+**FINDING-1334.** (H-19) [changed in round 3] rule 9; checked. `registry-entry.md` *The shape* (line 38): "each attack the evidence must stage". "Stage" as a verb sits beside Agent Skill Stage, which FINDING-792 fixed elsewhere. Also line 45 "what cannot be staged the normal way": 1 more. The template's own slots say "generate" (32) and "created" (39). Proposed: fix: "must create", "cannot be created". 38 unchanged, 45 changed.
+
+**FINDING-1335.** (H-20) [not changed in round 3] rule 9; checked. framing SKILL *Export and handoff* (line 204): "names this Agent Skill, a workflow stage, or the CBC Run's arrangement". "A workflow stage" stands for an Agent Skill Stage. Also glossary 176, the Agent Language entry: "a workflow stage": 1 more. Proposed: fix: "an Agent Skill Stage". changed.
+
+**FINDING-1336.** (H-21) [not changed in round 3] rule 9; checked. `kill.md` *The shape* (line 70-72): "says "stopped by" and the Scope Exclusion, or several: "stopped by NOT-OURS-1", "stopped by NOT-OURS-2 and SYSTEM-BOUNDARY-5"". SYSTEM-BOUNDARY-n is a Scope Verdict's tag (workflow 102), so the example calls a Scope Verdict a Scope Exclusion. Also template 85 "+ <deferrals> + <refusals>": its table (95) writes "excluded: NOT-OURS-n", and "refusal" is the System Refusal's word: 1 more. Proposed: fix: "and the Scope Exclusion or Scope Verdict that stops it, or several"; template "+ <deferrals> + <Scope Exclusions>". changed.
+
+**FINDING-1337.** (H-22) [not changed in round 3] rule 9; checked. `kill.md` *Governs* (line 7-8): "written in the System Definition's collisions layer". This is a third name for the layer whose tag is LAYER-4-PROBLEMS (framing SKILL 61, workflow 106). Proposed: fix: "written in the System Definition's LAYER-4-PROBLEMS". changed.
+
+**FINDING-1338.** (H-23) [not changed in round 3] rule 9; checked. slice SKILL *Stage 3 — build* (line 161-162): "record the red from actual output". DECISION-19 row 54 rewrote "the red" to the Red Run. Also line 210 "The red was recorded from actual output.": 1 more. Proposed: fix: "record the Red Run's failure from actual output"; "The Red Run's failure was recorded from actual output." changed.
+
+**FINDING-1339.** (H-24) [not changed in round 3] rule 9; uncertain. template *The Invariant Slice Registry's state* (line 77-78): "New work enters by framing again". This is CBC Framing written as a lowercase verb (DECISION-19 concept row 17). Also template 12 "Framed <date>": 1 more. Proposed: fix: "by a new CBC Framing"; "CBC Framing closed <date>". changed.
+
+**FINDING-1340.** (H-25) [not changed in round 3] rule 9; uncertain. slice SKILL frontmatter (line 3): "close a slice, … or to continue a project that has a slice registry (docs/system/registry.md)". The description's first sentence writes Invariant Slice and Invariant Slice Registry. The trigger list then uses the lowercase words. Proposed: question: are a description's trigger phrases the user's own English, which would stand, as the framing SKILL's "framing, a promise, invariants" does? Or are they the Agent Skill's text, held to rule 9? changed.
+
+**FINDING-1341.** (H-26) [not changed in round 3] rule 9; uncertain. workflow *Stage 3 — Run the Enemy Collisions* (line 347): "The cbc-slice workflow's Stage 1, specify-correctness". Stage 1 belongs to the cbc-slice Agent Skill. DECISION-25 writes a stage outside its owner with that owner named, and DECISION-27 writes the kind word. Also worked example 5 "Part 2 (the cbc-slice workflow)" and 254 "enters the cbc-slice workflow": 2 more. Proposed: fix: "The cbc-slice Agent Skill's Stage 1"; "the cbc-slice Agent Skill". changed.
+
+**FINDING-1342.** (H-27) [not changed in round 3] rule 5; checked. worked example *Stage 0 — Choose the Falsifiable Promise* (line 36-37): "replayed after a swallowed response". DECISION-26's row "swallow, archaeology, binary blob, hedge" fixes the figure. Also worked example 276; `system-readiness.md` 51; `evidence-test.md` 50 "swallow the reply": 3 more. Proposed: fix: "a lost response", "lose the reply". changed, except `evidence-test.md` 50, unchanged.
+
+**FINDING-1343.** (H-28) [not changed in round 3] rule 5; uncertain. framing SKILL, the opening under its title (line 16-17): "A CBC Framing may honestly end in "no project"." DECISION-26 fixes "honest, honestly" said of a file; here it is said of a CBC Framing, a list and a count. Also framing SKILL 273 "an honest status line"; workflow 27 "may honestly end", 305 "named honestly"; `kill.md` 76 "the count stays honest": 4 more. Proposed: fix: drop "honestly" (SKILL 16, workflow 27); "a status line that says what the repo does now"; "named"; "and every pair is counted". changed, except framing SKILL 273, unchanged.
+
+**FINDING-1344.** (H-29) [not changed in round 3] rule 5; uncertain. `evidence-test.md` *The order of its assertions* (line 106-107): "only checks the setup is in place. It owes nothing." "Owes" is a debt figure (DECISION-26 row "debt, bank, park, pays off"). Also `evidence-test.md` 122 "so it owes none"; `slice-record.md` 173 "is owed"; workflow 201 "The block owes one answer"; slice SKILL 197 "still owes a test"; `system-readiness.md` 79 "with READINESS-5 owed there": 5 more. The CBC Run's own writing rule's *After* example also says "owed", which suggests the reviewer may keep the word. Proposed: question: is "owe" dead in English? If not, fix: "It asserts nothing more"; "is needed"; "must answer one question"; "still needs a test"; "with READINESS-5 left to that Stage 3". changed, except `slice-record.md` 173, unchanged.
+
+**FINDING-1345.** (H-30) [not changed in round 3] rule 5; uncertain. `evidence-test.md` *The first line says what the test is* (line 63-64): "and discharges no Enemy Collision Kill". "Discharge" is proof talk for an obligation. The same file says a test "answers" a kill (line 72). Also `evidence-test.md` 176; slice SKILL 196: 2 more. Proposed: fix: "answers no Enemy Collision Kill". changed.
+
+**FINDING-1346.** (H-31) [changed in round 3] rule 5; checked. worked example *Part 2 — SLICE-1 enters the cbc-slice workflow* (line 292): "There is no side door." DECISION-26 keeps "door" only where it means the boundary. A side door is a path around the Structural Wall, which the concept names. Proposed: fix: "There is no Escape Hatch." changed.
+
+**FINDING-1347.** (H-32) [not changed in round 3] rule 5; checked. workflow *Stage 2 — Name the enemies* (line 316): "*censused-and-fenced*". This Scope Verdict value keeps "fence", the figure that DECISION-19 row 23 replaced with Scope Exclusion. The glossary (139) writes "censused and excluded". Proposed: fix: "*censused-and-excluded*", as the glossary has it. changed.
+
+**FINDING-1348.** (H-33) [changed in round 3] rule 5; resting on the reader. framing SKILL *Each Agent Skill Stage's Exit* (line 79-80): "who the claim is sold to". "Sold" is a figure. The workflow (127) and the glossary (94) say "made to". Proposed: fix: "who the Falsifiable Promise is made to". changed.
+
+**FINDING-1349.** (H-34) [not changed in round 3] rule 5; resting on the reader. workflow *Stage 0 — Choose the Falsifiable Promise* (line 139-140): "the State Witness, checkable from outside, on state, never fires;". A State Witness is read; it does not fire. The worked example (38-39) says what is meant: "never above one". Proposed: fix: "the State Witness, read from outside on the stored state, never shows the Falsifiable Promise broken;". changed.
+
+**FINDING-1350.** (H-35) [not changed in round 3] rule 5; resting on the reader. workflow *Stage 2 — Name the enemies* (line 222-224): "It is an Enemy Fact, not a deployment choice, when a line of the Enemy Census races them;". A line does not race; an Enemy Fact makes instances race. Also worked example 102-103 "since no line of the Enemy Census races two of us": 1 more. Proposed: fix: "when an Enemy Fact in the Enemy Census has them race"; "since no Enemy Fact has two instances racing". changed.
+
+**FINDING-1351.** (H-36) [not changed in round 3] rule 5; checked. `evidence-test.md` *Why each rule is there* (line 166-168): "and a Decision Test is never counted as an Enemy Collision Kill." A test is never a kill; what is meant is that it is never counted as answering one. Proposed: fix: "never counted as answering an Enemy Collision Kill." changed.
+
+**FINDING-1352.** (H-37) [changed in round 3] rule 8; resting on the reader. `evidence-test.md` *What this document controls* (line 28-30): "What it leaves out is *What is exempt, and why*." The sentence uses a heading as its object, and "it" stands two sentences from the Output Shape. Also `kill.md` 23-24, the same sentence; `registry-entry.md` 26 "are their own"; `slice-record.md` 22-23 "Every other section is the Invariant Slice's own, as long as it needs": 3 more. Proposed: fix: "What this Output Shape does not govern is listed under *What is exempt, and why*."; "are not this Output Shape's"; "Every other section's content and length are the Invariant Slice's to decide." changed, except the line-30 halves, unchanged.
+
+**FINDING-1353.** (H-38) [not changed in round 3] rule 8; resting on the reader. workflow *The unit* (line 20): "Input: a standing idea, such as a need or a candidate problem." Line 3 says "a raw idea". Line 444 sets "a raw idea" against "an idea already shaped", and line 440 says "a standing idea" again. Framing SKILL 9 says "a standing project idea", while its description says "a raw project idea". The reader cannot tell whether "standing" means raw or shaped. Proposed: question: which is the input? Then one word for it in all five places. changed.
+
+**FINDING-1354.** (H-39) [change not traced] rule 8; resting on the reader. workflow, places where the reader is not given what a word points at:
+- 106 "as the concept chapter has them": which chapter;
+- 109-110 "A letter is used only for a CBC Framing Concern that does not.": which letter, and how it is given; no example uses one;
+- 169 "This is also where the boundary is.": Stage 1 sets the boundary;
+- 188 "fails the standard": which standard;
+- 341-342 "A System Possession whose every Enemy Fact is used by other Enemy Collision Kills": a System Possession has no Enemy Facts of its own;
+- 371-372 "siblings refused at LAYER-2-SYSTEM": the worked example (202) says "sibling systems".
+
+Proposed: fix: "as `docs/concept/01-layered-system.md` has them"; "is called by a letter, A, B and on"; "Stage 1 also sets the boundary."; name the standard or cut the clause; "A System Possession every Enemy Collision Kill of which is shared with another System Possession"; "sibling systems refused at LAYER-2-SYSTEM". changed.
+
+**FINDING-1355.** (H-40) [not changed in round 3] rule 8; resting on the reader. framing SKILL *Export and handoff* (line 291): "System Readiness defines it". "It" has no clear antecedent: the handoff, or the project work between? Also framing SKILL 51 "recorded where the records put sign-offs"; 222-223 "Skipping the order departs from the default: log why." and 279 "logged", neither saying where; 272 "a note that points", not saying at what: 4 more. Proposed: fix: "System Readiness defines what must stand"; "in the record the records table names for sign-offs"; "log why in the Decisions Log" (or wherever the reviewer puts a departure); "a note that points at the method". changed, except 272, unchanged.
+
+**FINDING-1356.** (H-41) [not changed in round 3] rule 8; resting on the reader. template *SLICE-1* slot (line 42-43): "created, or removed with the removal shown." What is removed, the adversity by a contract, is said only in slice SKILL 108-109. Proposed: fix: "created, or the adversity removed by a contract the Correctness Specification adopts, with the removal shown." changed.
+
+**FINDING-1357.** (H-42) [change not traced] rule 8; resting on the reader. Lines the reader must decode:
+- slice workflow 192-193 "a counter that over-approximates until a later Invariant Slice ends something";
+- slice workflow 212-213 "a judgement the project makes when it makes it", where "it" could be the output or the Output Shape;
+- slice SKILL 137 "is scope: refuse it";
+- `evidence-test.md` 138-139 "A helper that may be refused returns the answer and asserts nothing. The helper a setup relies on calls it, and asserts.", where the request is refused, not the helper.
+
+Proposed: fix: say what is ended; "when it makes that output"; "is scope beyond this Invariant Slice: refuse it"; "A helper whose request may be refused returns the answer and asserts nothing. A setup helper calls it, and asserts the answer it needs." changed, except `evidence-test.md` 138, unchanged.
+
+**FINDING-1358.** (H-43) [not changed in round 3] rule 8; resting on the reader. worked example *Stage 2 — Name the enemies* (line 108-109): "fifty identical submissions racing at once, the hammering's own count." The hammering test first appears at line 273, in Part 2. At Stage 2 the reader does not yet hold it. Proposed: fix: "the count the evidence will use". changed.
+
+**FINDING-1359.** (H-44) [not changed in round 3] rule 8; uncertain. `the-whole-system-in-plain.md` header (line 3): "No jargon: each Name is given once, beside its plain words." The page breaks its own promise. Falsifiable Promise (13), Structural Wall (15) and CBC Framing Intent (53) come with no plain words at first use. After Responsibility Areas is given at line 41, the page writes "part" and "owner" for them. Proposed: question: may a plain-words summary use plain words for a Name after giving it once, against rule 9? If not, the page writes the Names. Either way, plain words go beside the first use of the three. changed.
+
+**FINDING-1360.** (H-45) [not changed in round 3] rule 8; uncertain. `evidence-test.md`, `kill.md`, `registry-entry.md`, `slice-record.md` frontmatter (line 2): "foundation: practice, under the shapes convention". In a CBC Run, neither "practice" nor "the shapes convention" can be looked up. The container's glossary lists no Foundation Line, and the CBC Run's other delivered files write the bare form ("foundation: the shapes convention", `shapes-lifecycle.md`). The form is our conventions manual's (§1.3), read by our Foundation Check. Proposed: question: is a Foundation Line read by the CBC Run? If it is, the container glossary gains Foundation Line, and "practice" is said in plain words. unchanged.
+
+**FINDING-1361.** (H-46) [not changed in round 3] rule 8; uncertain. workflow *Stage 2 — Name the enemies* (line 241): "Two CBC Runs left it out and wrote it later." The reader cannot open those CBC Runs. Also the *Open (to be settled by CBC Runs)* section (444-454): "all six CBC Framings so far", "CBC Run 5's found two, CBC Run 6's three", "CBC Run 4's is not yet read". The count goes stale at the next CBC Framing, which may be the reader's own: 1 more. Proposed: question: keep the CBC Runs' evidence in a shipped file, with numbers no CBC Run can check? Or move it to our own records and leave the open questions alone. changed.
+
+**FINDING-1362.** (H-47) [not changed in round 3] rule 6; checked. glossary *The concept's* (line 18-20): "**System Guarantee** — … Each is GUARANTEE-n where it is written." Line 185-187 gives the Invariant Slice Guarantee the same tag, "GUARANTEE-n". One tag kind names two Names, and DECISION-19's question 1 made them two Names. Proposed: question: which keeps GUARANTEE-n? In the method's files the tag is always the Invariant Slice Guarantee's. The System Guarantee's line may drop it, or take another tag kind. changed.
+
+**FINDING-1363.** (H-48) [change not traced] rule 8; resting on the reader. glossary, entries that start by counting from the entry above them: 24 "**Escape Hatch** — the second:", 27 "the third", 30 "the fourth", 61 "**System Definition** — the second:", 63 "the third". A glossary entry is looked up alone, and "the second" then points at nothing. Proposed: fix: "the second way the concept fails:", "the second CBC Framing Export:", and so on. changed.
+
+**FINDING-1364.** (H-49) [not changed in round 3] rule 6; resting on the reader. glossary *The method's* (line 186): "found by attacking it, stated without a strategy". Slice SKILL says "with no mechanism in it" (89-90). Two words for one thing. Proposed: fix: "stated without a mechanism". changed.
+
+#### Reader I, Layer 6: the Stack Group
+
+**FINDING-1365.** (I-1) [changed in round 3] rule 10; checked.
+`cbc-bootstrap/references/spring-boot-walkthrough.md` *2. Stand the skeleton in the live repo* (line 47): "Stand the skeleton in the live repo". The title has 35 characters. The limit is 30. Proposed: fix: "2. Stand the skeleton" (18). Unchanged.
+
+**FINDING-1366.** (I-2) [changed in round 3] rule 10; checked.
+`infra-establish/references/postgres-setup-walkthrough.md` *5. Wire Flyway (config and empty migrations)* (line 110): "Wire Flyway (config and empty migrations)". It has 41 characters, and the parentheses hold a gloss. Proposed: fix: "5. Wire Flyway" (11). Changed.
+
+**FINDING-1367.** (I-3) [not changed in round 3] rule 10; checked.
+`infra-establish/references/postgres-setup-walkthrough.md` *7. Verify — both ways, always* (line 136): "Verify — both ways, always". A gloss follows a dash. Proposed: fix: "7. Verify both ways" (16). Unchanged.
+
+**FINDING-1368.** (I-4) [not changed in round 3] rule 10; checked.
+`infra-establish/references/postgres-setup-walkthrough.md` *6. Bring it up* (line 122): "Bring it up". Neither title stands alone without its parent heading. "It" names nothing. "Hand off" names no subject, and it reads like the CBC Run Hand-off. Also line 184 "9. Hand off": 1 more. Proposed: fix: "6. Bring the services up" (21); "9. The connection facts" (20), since the section mostly lists them. Unchanged.
+
+**FINDING-1369.** (I-5) [not changed in round 3] rule 10; uncertain.
+`infra-establish/references/postgres-setup-walkthrough.md` *1. Declare the service (compose)* (line 43): "Declare the service (compose)". The parentheses add a gloss. Rule 10 names only a gloss after a dash or a colon. Also line 58 "2. Split out credentials (`.env`)": 1 more. Proposed: question: does a parenthesis count as a gloss? If it does, "1. Declare the service" and "2. Split out credentials". Unchanged.
+
+**FINDING-1370.** (I-6) [changed in round 3] rule 9; checked.
+`cbc-bootstrap/SKILL.md` *Stage 0* (line 47): "## Stage 0 — System Readiness (refuse if not ready)". System Readiness is "the six checks a system passes before an Invariant Slice opens" (`delivery/method/docs/glossary/method.md`), with its home in cbc-slice's `system-readiness.md`. This Stage 0 runs three other checks, before the CBC Bootstrap. The round changed "readiness check" into the Name. Also `infra-establish/SKILL.md` line 31, "## Stage 0 — System Readiness (before anything else)": 1 more. Proposed: fix: "## Stage 0 — readiness (refuse if not ready)" and "## Stage 0 — readiness (before anything else)", the plain word. Changed.
+
+**FINDING-1371.** (I-7) [changed in round 3] rule 9; checked.
+`docs/glossary/stack.md` *CBC Bootstrap Probe* (line 28): "(`.claude/skills/cbc-bootstrap/SKILL.md`)". The entry points at a file that never defines the Name. `cbc-bootstrap/SKILL.md` uses the Probe 6 times but never says it is an endpoint and a test. `spring-boot-walkthrough.md` step 5 says it, and so does `spring-harness-reference.md` §4. Proposed: fix: point at `.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`. Or add one defining sentence to the SKILL's CBC Bootstrap Exclusion 1. Changed.
+
+**FINDING-1372.** (I-8) [changed in round 3] rule 9; checked.
+`docs/glossary/stack.md` *Stack Default* (line 87): "(`.claude/skills/infra-establish/SKILL.md`)". `infra-establish/SKILL.md` uses the Name once, in its description, and never defines it. The entry's general sense is in `establishment-walk.md` Stage 1 (lines 49-53). Its "packages by feature" half is in `app-structure.md` *The Stack Default*. Proposed: fix: point at `.claude/skills/infra-establish/references/establishment-walk.md` and `.claude/skills/cbc-bootstrap/references/app-structure.md`. Changed.
+
+**FINDING-1373.** (I-9) [not changed in round 3] rule 9; checked.
+`infra-establish/references/postgres-role-split.md` *(opening)* (line 8): "**this model wins.**". "The model" here means the Database Role Split. A CBC Run's reader also holds the Adversity Model, and nothing says which model is meant. Also `postgres-role-split.md` 30, 44, 53, 119, 128, 131: 6 more; `postgres-setup-walkthrough.md` 9, 27, 99, 104: 4 more; `templates/bootstrap.sql` 10, 35, 37: 3 more; `infra-establish/SKILL.md` 98 "the model's claims": 1 more; `docs/glossary/stack.md` 71 "what the model claims": 1 more. Proposed: fix: "the Database Role Split", or its path where a file is meant. Inside `postgres-role-split.md`, use "this reference". Changed, but for role-split 30 and bootstrap.sql 10.
+
+**FINDING-1374.** (I-10) [not changed in round 3] rule 9, rule 5; checked.
+`infra-establish/SKILL.md` *(opening)* (line 18): "The exit is the walk's Stage 7". "The walk" is both a figure (DECISION-26, the journey row: fix) and another word for Infrastructure Establishment (DECISION-19, the stack's table, row 31). Also `infra-establish/SKILL.md` 21, 66, 127, 147, 148, 159, 170, 193: 8 more; `establishment-walk.md` 1 (title), 5 "Two projects have walked it", 8, 22, 23, 123, 175, 185: 8 more; `postgres-setup-walkthrough.md` 22 "This walk": 1 more. Proposed: fix: "Infrastructure Establishment's Stage 7"; "the Infrastructure Establishment as done"; the file by its path, `establishment-walk.md`; "This walkthrough". Changed.
+
+**FINDING-1375.** (I-11) [not changed in round 3] rule 9, rule 8; checked.
+`cbc-bootstrap/references/spring-harness-reference.md` *(opening)* (line 7): "Three projects built them. The shape below is the third project's, the most corrected." "Project" here means a CBC Run. Lines 19 and 24 of the same file say CBC Run. The ordinals "second" and "third" also assume a numbered list that the reader does not hold. Also `spring-harness-reference.md` 25, 28, 30, 61, 146, 162, 213, 290, 432, 485, 494: 11 more; `infra-establish/SKILL.md` 29; `establishment-walk.md` 5; `postgres-setup-walkthrough.md` 4: 3 more. Proposed: fix: "Three CBC Runs built them. The shape below is the latest one's, the most corrected." Use "the latest CBC Run" for "the third project" and "an earlier CBC Run" for "the second project". Changed.
+
+**FINDING-1376.** (I-12) [not changed in round 3] rule 9; checked.
+`infra-establish/SKILL.md` *Records and outputs* (lines 154-155): "the sentence the log's first entry would have held. One CBC Run kept a log beside such records". The log meant here is the Infrastructure Establishment Log. In a repository with records, the decision is an ADR (the stack's table, row 19). Also `establishment-walk.md` 89 "It is one log entry." and 112 "the project's log entry stays"; `infra-serve/SKILL.md` 44 "a log entry, or an ADR": 3 more. Proposed: fix: "the Infrastructure Establishment Log's first entry"; "kept an Infrastructure Establishment Log beside such records"; "It is one ADR, or one Infrastructure Establishment Log entry"; "an Infrastructure Establishment Log entry, or an ADR in a repo with records". Changed.
+
+**FINDING-1377.** (I-13) [not changed in round 3] rule 9; checked.
+`infra-establish/SKILL.md` *Records and outputs* (line 151): "The expected results sit in the verify suite and the Operator". The stack's table, row 39, writes this file by its path. Also `infra-establish/SKILL.md` 169; `templates/bootstrap.sql` 38 "the verify suite's role filter"; `postgres-setup-walkthrough.md` 93, the title "4. Land the verification suite": 3 more. Proposed: fix: `infrastructure/postgres/verify-database-model.sql`. The title becomes "4. Land the Catalog Check" (21), since the file's header calls itself the Catalog Check. Changed, but for the setup walkthrough's title.
+
+**FINDING-1378.** (I-14) [not changed in round 3] rule 9; checked.
+`infra-establish/SKILL.md` *Stage 0* (line 51): "The facts are added by a dated revision entry". The method's Name for this is CBC Framing Export Revision. Also `establishment-walk.md` 22-23 "a dated revision entry in its LAYER-1-ENVIRONMENT": 1 more. Proposed: fix: "by a CBC Framing Export Revision in LAYER-1-ENVIRONMENT". Changed.
+
+**FINDING-1379.** (I-15) [not changed in round 3] rule 9; checked.
+`infra-establish/SKILL.md` *The walk and its Gates* (line 92): "No list of exclusions, no Stage 2.". Line 96 reads: "A constraint without enforcement is a wish." In infra-establish, rows 28 and 29 of the stack's table make these Infrastructure Service Constraint and Infrastructure Service Exclusion. Also `infra-establish/SKILL.md` 27 "which makes the constraint real"; `infra-serve/SKILL.md` 33-34 "the old exclusion's why", "the exclusion stands"; `establishment-walk.md` 106 "its constraint set", 116 "gets its constraints derived fresh", 121 "How a constraint is made real": 6 more. Proposed: fix: "No list of Infrastructure Service Exclusions, no Stage 2."; "An Infrastructure Service Constraint without enforcement is a wish."; the same at each line. Changed.
+
+**FINDING-1380.** (I-16) [not changed in round 3] rule 9; checked.
+`infra-establish/SKILL.md` *description* (line 3): "It requires the completed CBC Framing Exports (intent, definition, slice registry)." The three CBC Framing Exports are written in lowercase short forms. Proposed: fix: "(the CBC Framing Intent, the System Definition and the Invariant Slice Registry)". Changed.
+
+**FINDING-1381.** (I-17) [not changed in round 3] rule 9; uncertain.
+`cbc-bootstrap/SKILL.md` *description* (line 3): "continue a project that has a completed framing". The same paragraph also says "a completed CBC Framing". "Do NOT use for framing" names the work in lowercase too. Also `infra-establish/SKILL.md` 3, "Do NOT use for framing": 1 more. A description may keep the user's words for triggering, but neither phrase is in quotes. Proposed: fix: "a completed CBC Framing"; "for CBC Framing (the cbc-framing Agent Skill)". Changed.
+
+**FINDING-1382.** (I-18) [changed in round 3] rule 9, rule 8; checked.
+`infra-establish/references/establishment-walk.md` *The Names defined here* (line 207): "These three are the Stack Group's:". Stack Group is a Name in our `docs/glossary.md` only. No delivered Names file lists it, so a CBC Run cannot resolve it. Proposed: fix: "These three are the stack's, listed in `docs/glossary/stack.md`:". Changed.
+
+**FINDING-1383.** (I-19) [not changed in round 3] rule 8, rule 9; checked.
+`cbc-bootstrap/SKILL.md` *Stage 5* (lines 269-270): "The container's README has no Run or Test section.". "The container" is our Container Group, and the CBC Run's glossaries do not list it. In these files "container" mostly means a podman container: `spring-boot-walkthrough.md` 11, 180 and 185, `postgres-setup-walkthrough.md` 80 and 89. Also `infra-establish/SKILL.md` 139-140 "every project created from the container"; `establishment-walk.md` 198: 2 more. Proposed: fix: "The README this CBC Run was born with has no Run or Test section"; "every CBC Run". Changed.
+
+**FINDING-1384.** (I-20) [not changed in round 3] rule 9; checked.
+`infra-establish/references/postgres-setup-walkthrough.md` *9. Hand off* (line 225): "the project's **living Infrastructure Contract:**". By DECISION-22, a Name is bold at its home only, and this Name's home is `infra-establish/SKILL.md`. Also `establishment-walk.md` 140 and 143 "**Catalog Check:**", "**Behavioral Check:**"; `postgres-setup-walkthrough.md` 138 and 145, the same two; `infra-establish/SKILL.md` 9 "**Runtime Ground:**", whose home is `cbc-framing-workflow.md`; `spring-harness-reference.md` 445 "**State Witness,**": 6 more. Proposed: fix: drop the bold. Question on the bold list-item leads that begin with a Name (`cbc-bootstrap/SKILL.md` 45, 51, 54, 83, 103, 126; `infra-serve/SKILL.md` 19, 24, 25; `spring-boot-walkthrough.md` 184, 236, 240; `spring-harness-reference.md` 144, 160, 426, 516): does DECISION-22 reach a lead? Changed.
+
+**FINDING-1385.** (I-21) [not changed in round 3] rule 9; checked.
+`infra-establish/references/postgres-role-split.md` *The roles* (line 43): "*the Database Setup Identity:*". This is the Name's home, and it is marked in italics. DECISION-22 allows bold at the home, not another mark. Its sibling items, `migrator` and `runtime`, are bold. Proposed: fix: "**the Database Setup Identity:**". Changed.
+
+**FINDING-1386.** (I-22) [changed in round 3] rule 9; checked.
+`infra-establish/references/establishment-walk.md` *Stage 7* (line 191): "The skeleton is". This gives "skeleton" a third meaning: an Agent Skill Template. DECISION-19 (method, question 6) leaves "skeleton" English for the running service, and Skeleton a label for an Output Shape's layer. Also `spring-boot-walkthrough.md` 86 "The config skeleton is an Agent Skill Template": 1 more, uncertain. Proposed: fix: "The Agent Skill Template is"; "The config file is an Agent Skill Template". Changed.
+
+**FINDING-1387.** (I-23) [changed in round 3] rule 9; checked.
+`cbc-bootstrap/references/app-structure.md` *The Stack Default* (lines 64-65): "Which test proves which guarantee is the Invariant Slice Record's.". The Invariant Slice Record holds Invariant Slice Guarantees, and here the word is lowercase. Also line 39 in the drawing, "reads the code: a guarantee held by an absence"; `spring-pom-convention.md` 25 "which boundary or guarantee it serves": 2 more. Proposed: fix: "which Invariant Slice Guarantee" in all three. The drawing's line has room. Changed, but for line 39.
+
+**FINDING-1388.** (I-24) [not changed in round 3] rule 9; uncertain.
+`infra-establish/references/establishment-walk.md` *Stage 7* (line 199): "because this Gate made it true.". "Gate" stands capitalized alone, and a CBC Run also holds Plan Step Gate. `docs/glossary/stack.md` 75 "the infra-establish Agent Skill's Stage 5 gate" lowercases the label "Stage 5 Gate". Also `infra-establish/SKILL.md` 66, the heading "The walk and its Gates". Proposed: fix: "because the exit test made it true"; the glossary entry writes "Stage 5 Gate", keeping the label's case. Question: may the Stage labels "Stage 1 Gate" to "Stage 6 Gate" stand beside Plan Step Gate? Changed.
+
+**FINDING-1389.** (I-25) [changed in round 3] rule 9; checked.
+`infra-serve/SKILL.md` *Hard lines* (line 87): "One logical change per delivery the size of a commit". In a CBC Run, a delivery is the Concept Deliverer's: Delivery Note, Delivery Staging. Also `cbc-bootstrap/SKILL.md` 138 "where a forgotten export becomes a real need", which uses a shell export beside CBC Framing Export: 1 more. `cbc-bootstrap/SKILL.md` 132 "no delivery machinery" is uncertain. Proposed: fix: "6. One logical change per commit, with a commit message drafted for each."; "where a secret nobody exported becomes a real need". Changed.
+
+**FINDING-1390.** (I-26) [not changed in round 3] rule 9; uncertain.
+`cbc-bootstrap/references/app-structure.md` *The Stack Default* (line 37): "races, bursts of duplicates, kills". These words are bases of Names, used here in other senses:
+- "kills" means killed processes, beside Enemy Collision Kill;
+- `cbc-bootstrap/templates/application.yaml` 29, "not just folded into the status", beside Invariant Slice Fold;
+- `spring-harness-reference.md` 473, "The `filesystem:` prefix is the invariant; the path is not.", where invariant means the fixed part;
+- `spring-harness-reference.md` 223, 275, 297, 299, "the copy", meaning the test database, beside pinned copies;
+- `cbc-bootstrap/SKILL.md` 9, "One run, one exit", beside CBC Run.
+
+That is 8 more. Proposed: fix: "killed processes"; "merged into the status"; "is fixed"; "One pass, one exit". Keep "the copy", defined at line 45. Changed, but for application.yaml 29.
+
+**FINDING-1391.** (I-27) [not changed in round 3] rule 9; uncertain.
+`cbc-bootstrap/references/spring-harness-reference.md` *1. The database base* (line 99): "MIGRATIONS_HOME". CBC Runs imitate this code, and its identifiers carry words the stack's table changed:
+- "home" (row 11): `MIGRATIONS_HOME` here, and `GROUND_BOOTSTRAP_SQL` at line 97;
+- "probe" alone (row 5): `GroundProbeController` and `/probe/ground` at 336 and 344, and the role `probe` in `postgres-setup-walkthrough.md` 158-161;
+- "bootstrap" for the setup (row 35, question 1): `POSTGRES_BOOTSTRAP_PASSWORD` in `templates/.env.example` 12 and `templates/compose.yaml` 15.
+
+Proposed: question: do the Names reach code identifiers? If they do: `MIGRATIONS_DIRECTORY`, `SETUP_SQL`, `BootstrapProbeController`, the role `no_grant`, `POSTGRES_SETUP_PASSWORD`. Unchanged.
+
+**FINDING-1392.** (I-28) [not changed in round 3] rule 9, rule 8; uncertain.
+`cbc-bootstrap/SKILL.md` *The boundary you must keep* (line 29): "under the stack conventions in `references/`". These are references, not conventions. In a CBC Run, "convention" is what arrives in the Decisions Log (the container's records table: "a convention arrives"). Since DECISION-32, a CBC Run holds approaches made from conventions, never conventions. Also `cbc-bootstrap/SKILL.md` 194; `app-structure.md` 22 "the POM convention's"; `spring-boot-walkthrough.md` 66 "The pom is written by the POM convention,"; `spring-pom-convention.md` 1, its title; `spring-harness-reference.md` 527 and 529 "the convention"; `infra-establish/SKILL.md` 135 "The repo's own conventions win.": 7 more. Proposed: fix: "under the stack references in `references/`"; "`spring-pom-convention.md`'s"; "the rule" in the harness reference; "The repo's own records win." The file's name stays, being a path. Changed, but for the pom file's title.
+
+**FINDING-1393.** (I-29) [changed in round 3] rule 6; checked.
+`cbc-bootstrap/references/spring-harness-reference.md` *4. The CBC Bootstrap Probe* (line 410): "(variation point 9), never by substring.". This code comment is imitated into a CBC Run's test, where "variation point 9" has no owner. Also `establishment-walk.md` 20 "(Stage 0 in SKILL.md)": a CBC Run holds several SKILL.md files: 1 more. Proposed: fix: "(spring-harness-reference.md, variation point 9)"; "(Stage 0 in `.claude/skills/infra-establish/SKILL.md`)". Unchanged; the establishment-walk line changed.
+
+**FINDING-1394.** (I-30) [not changed in round 3] rule 8; checked.
+`cbc-bootstrap/SKILL.md` *Stage 0* (line 57): "and the Runtime Ground's stand-up check is recorded". No "stand-up check" exists in infra-establish. Its Stage 5 records the Catalog Check and the Behavioral Check. Proposed: fix: "and its Catalog Check and Behavioral Check are recorded". Changed.
+
+**FINDING-1395.** (I-31) [not changed in round 3] rule 8; resting on the reader.
+`cbc-bootstrap/SKILL.md` *Stage 0* (lines 66-67): "Only a missing member stops; a note goes in the record.". The text never says which members it means, or which record. Proposed: fix: "Record what stood, what was checked and what was noticed, in the devlog's entry for the Plan Step. Only a failed check 1 to 3 stops. Anything else is a note." Changed.
+
+**FINDING-1396.** (I-32) [not changed in round 3] rule 8; resting on the reader.
+`cbc-bootstrap/SKILL.md` *Stage 1* (line 137): "The release Plan Step Gate's clean-machine test is". The reader holds no release Plan Step and no clean-machine test from this text. Proposed: fix: "The question comes back at release, when a test on a clean machine shows whether a missing secret matters." Changed.
+
+**FINDING-1397.** (I-33) [not changed in round 3] rule 8; resting on the reader.
+`cbc-bootstrap/references/spring-harness-reference.md` *1. The database base* (line 153): "The migrate call plays the **compose one-shot's role** against the". The compose one-shot is described in infra-establish's setup walkthrough, §1, which a cbc-bootstrap reader may not have read. Also line 474 "The credential rule decides the wiring.": no rule has that name: 1 more. Proposed: fix: "The migrate call does here what the `flyway` service in `compose.yaml` does on the Runtime Ground"; "How credentials are handled decides the wiring." Unchanged.
+
+**FINDING-1398.** (I-34) [not changed in round 3] rule 8, rule 5; resting on the reader.
+`infra-establish/SKILL.md` *Records and outputs* (lines 166-167): "the stranger's first command finds them there". "The stranger" is a figure the text never explains. Also `establishment-walk.md` 189 and 190; `templates/readme-prerequisites.md` 7: 3 more. Proposed: fix: "the first command of someone new to the repo"; "a new machine". Changed.
+
+**FINDING-1399.** (I-35) [not changed in round 3] rule 8; uncertain.
+`infra-establish/references/establishment-walk.md` *(opening)* (line 3): "The method, end to end. It is generic throughout.". In a CBC Run, "the method" is the concept's method: the cbc-framing and cbc-slice Agent Skills. This file is Infrastructure Establishment's stages. Proposed: fix: "Infrastructure Establishment, Stage 0 to Stage 7. It is generic throughout." Changed.
+
+**FINDING-1400.** (I-36) [not changed in round 3] rule 8; resting on the reader.
+`cbc-bootstrap/SKILL.md` *Stage 2* (line 145): "Write `bootstrap-requirements.md` in the project's language". The text does not say whether this is the prose language or the programming language. Also `infra-serve/SKILL.md` 86 "Project files are written in the project's language.": 1 more. Proposed: fix: "in the language the project's records are written in". Changed.
+
+**FINDING-1401.** (I-37) [changed in round 3] rule 2; resting on the reader.
+`cbc-bootstrap/references/spring-harness-reference.md` *1. The database base* (lines 165-170): "Boot 4 moved Flyway's auto-configuration into its own module; with". This is one sentence of 56 words, joined by a semicolon. Proposed: fix: "Boot 4 moved Flyway's auto-configuration into its own module. With only `flyway-core` and `flyway-database-postgresql` on the test classpath, no auto-configuration runs inside the application context. So the `static` call above is the only migration path in tests." Unchanged.
+
+**FINDING-1402.** (I-38) [not changed in round 3] rule 2; resting on the reader.
+`infra-establish/references/postgres-role-split.md` *The roles* (lines 45-46): "it creates the database, and owns it, the two roles, the application schema, and the grants.". It can be read as owning the schema, which is `migrator`'s (line 33). Proposed: fix: "It runs the setup once. It creates the database, the two roles, the application schema and the grants. It owns the database." Changed.
+
+**FINDING-1403.** (I-39) [not changed in round 3] rule 2; resting on the reader.
+`cbc-bootstrap/references/spring-boot-walkthrough.md` *5. The adversity created* (lines 286-287): "closed in `finally`, destroyed and then forcibly, none left running on a failed test.". The phrase "destroyed and then forcibly" has no verb for its second half. Proposed: fix: "Instances start before the race. A `finally` block destroys each one, and forcibly if it is still alive. None is left running when a test fails." Changed.
+
+**FINDING-1404.** (I-40) [changed in round 3] rule 2, rule 3; resting on the reader.
+`infra-establish/references/establishment-walk.md` *Stage 1* (lines 38-41): "What the evidence must be able to do to the Runtime Ground, start several instances, kill one, freeze the store, is proven where". A list sits inside the subject. Also `postgres-setup-walkthrough.md` 198-199 "Then the Invariant Slices cannot tell whether that reader can write, and must be defended against.": the subject of "must be defended against" is unclear: 1 more. Proposed: fix: "The evidence must be able to start several instances, kill one and freeze the store. Each is proven where the Adversity Harness that does it is built, in the form it does it:"; "...whether that reader can write, so they must defend against one who does." Changed.
+
+**FINDING-1405.** (I-41) [not changed in round 3] rule 3; checked.
+`cbc-bootstrap/references/spring-boot-walkthrough.md` *Recall list* (lines 308-309): "`@AutoConfigureTestRestTemplate` required — `RANDOM_PORT` alone provides no `TestRestTemplate` bean.". The list joins its parts with dashes and semicolons. Also items 1 (305-306), 5 (313), 6 (316), 9 (322), 10 (324), 11 (326): 6 more. Proposed: fix: one fact per sentence, for example "`@AutoConfigureTestRestTemplate` is required: `RANDOM_PORT` alone provides no `TestRestTemplate` bean." Unchanged, but for 316 and 324.
+
+**FINDING-1406.** (I-42) [not changed in round 3] rule 3; checked.
+`infra-establish/templates/bootstrap.sql` *Purpose* (line 11): "— this file makes it real, and never derives it again.". The template comments join their parts with dashes. Also `bootstrap.sql` 14, 16, 20, 22, 45, 55, 60: 7 more; `templates/.env.example` 7, 21: 2 more; `templates/readme-prerequisites.md` 5 and 11: 2 more; `templates/compose.yaml` 28: 1 more. Proposed: fix: a colon or a full stop at each. Mostly unchanged; bootstrap.sql 11, 14, 45 and 55 and readme-prerequisites 5 changed.
+
+**FINDING-1407.** (I-43) [not changed in round 3] rule 5; checked.
+`cbc-bootstrap/templates/readme-run-test.md` *header* (line 5): "Only the material below travels; this header stays with the". DECISION-26's journey row fixes "travels". Also `infra-establish/templates/readme-prerequisites.md` 5: 1 more. Proposed: fix: "Only the material below is merged; this header stays with the Master Copy." Changed.
+
+**FINDING-1408.** (I-44) [not changed in round 3] rule 5; checked.
+`cbc-bootstrap/references/spring-harness-reference.md` *What these files are* (line 48): "scaffolding, dies at the first Invariant Slice". DECISION-26 fixes "dies" when it is said of scaffolding. `docs/glossary/stack.md` 27 already says "both go". Proposed: fix: "scaffolding, deleted at the first Invariant Slice". Changed.
+
+**FINDING-1409.** (I-45) [not changed in round 3] rule 5; resting on the reader.
+`infra-establish/references/postgres-role-split.md` *The grant boundaries* (line 92): "cannot wear away one migration at a time". The other figures:
+- `postgres-setup-walkthrough.md` 87, "cannot wear away";
+- `templates/bootstrap.sql` 61, "cannot erode";
+- `postgres-role-split.md` 115-116, "rules nothing enforces decay", and 59, "everything hangs off that ownership";
+- `spring-boot-walkthrough.md` 142, "A CBC Run lost a long search to the";
+- `app-structure.md` 120, "and it earned that";
+- `infra-establish/SKILL.md` 57, "plumbing dotfiles".
+
+That is 7 more. Proposed: fix: "cannot stop holding, one migration at a time"; "rules nothing enforces stop being kept"; "everything follows from that ownership"; "A CBC Run searched long for the cause of"; drop "and it earned that"; "hygiene files", the cbc-bootstrap Agent Skill's word. Changed, but for bootstrap.sql 61.
+
+**FINDING-1410.** (I-46) [not changed in round 3] rule 9; checked.
+`infra-establish/SKILL.md` *The walk and its Gates* (line 69): "0: ready? → 1: environment → 2: services   → 3: constraints → 4: the reference". DECISION-21 extends rule 9 to drawn text. The drawing's "environment", "services", "constraints" (line 69) and "contract" (line 72) are short forms of Names, and no line above says which Name each stands for. Proposed: fix: one line above the drawing: "environment: the Execution Environment; services: the Infrastructure Services; constraints: the Infrastructure Service Constraints; contract: the Infrastructure Contract and the Operator Manual." Changed (line 69; line 72 unchanged).
+
+### Met at the close read, of other kinds
+
+#### Reader A
+
+- `docs/conventions/conventions/README.md` *What this is made usable as*: §2.3 asks each entry for "the moment it opens at". The Foundation Line entry (28–29) and the index entry (32–35) give none.
+- `docs/conventions/conventions/README.md` *Why it arrives this way* (324–326): "in the frontmatter of every shipped Agent Skill and Agent Rule". §1.3 also puts it in this repo's own files, shipped Output Shapes and manuals on an Idea Model, and in a record's header comment, which is not frontmatter.
+- `docs/conventions/conventions/README.md` §1.2's frontmatter template (line 90), `foundation: the <name> convention`, fits only a convention's Agent Skill. §1.3 gives method Agent Skills `concept v1` and stack ones `practice, checked against concept v1`.
+- `docs/conventions/project-recording/README.md` §13 (784–786): "the only part of the project-recording manual loaded before any task". The records table is in the Entry File, not in the manual. `docs/conventions/conventions/` §2 says a manual is never loaded into an agent.
+- `docs/conventions/project-recording/README.md` §3.3 (290) states the PLAN.md Decision index for every repo. Item 4 of *The Concept Deliverer's seat* says the Concept Deliverer has none, and §3.3 does not say the index is the CBC Run's.
+- `docs/conventions/project-recording/README.md` §2.4 (252–254), "The look back is not the plan's: `RETRO.md`", is stated for both Convention Seats. Line 154 says the Concept Deliverer has no `RETRO.md`.
+
+Counts: 44 entries: 19 in the conventions manual, 25 in the project-recording manual. By rule: rule 2, 12; rule 3, 5; rule 5, 3; rule 6, 2; rule 8, 11; rule 9, 10; rule 10, 1. By state: 21 changed, 7 changed in part, 16 unchanged. The script sweep's 1 line is not a finding. Met in passing: 6.
+
+#### Reader B
+
+- `docs/conventions/facts-in-sync/README.md` §1: the glossary says Living Text's home is this section. Lines 94–102 use the word but never define it.
+- `docs/conventions/facts-in-sync/README.md` line 127 cites claim P1 under `docs/models/agent.md` §4.2, *Pulled Channel*. P1 sits in §12.2, *On the Pulled Channel* (agent.md line 318), as line 179 of the same file cites it.
+- `docs/conventions/agent-arrangement/README.md` lines 91–94 and 326 say a CBC Run's birth entry "lists the conventions it holds". DECISION-32 says a CBC Run holds no convention, only Work Approaches made from ours.
+- `docs/conventions/agent-arrangement/README.md` line 382: "(the Plan Step Form)" stands as a Fact Reference with no path. The form is in `PLAN.md`.
+- `docs/conventions/commit-plan/README.md` §2.7, §2.9 and §2.12 (lines 110–113, 126–127, 158–159): the italic line still tells the case instead of pointing at its story. Round 3's *Met in round 3* listed this, and it still stands.
+- `docs/conventions/commit-plan/README.md` §2.10 (lines 136–138): "a manual wraps its prose". Since ADR-0077, Markdown has no line width. The reason holds for older text only.
+- `docs/conventions/exchange/README.md` §6.1 (line 479): "the diff of every held copy against its Delivery Pin". The Delivery Pin is our commit, which the CBC Run's diff cannot name. §3.8 (lines 316–317) and the exchange-read Agent Skill compare against the CBC Run's own last delivery commit.
+- DECISION-29's reversal says the strip runs "before `exchange-read` compares". `docs/conventions/exchange/README.md` §3.8 says a read needs no strip, and the exchange-read Agent Skill strips nothing. The manual matches the Agent Skill, not the decision's wording.
+
+53 entries. By rule: rule 2, 5; rule 3, 3; rule 5, 3; rule 6, 2; rule 8, 20; rule 9, 19; rule 10, 1. Changed 31, unchanged 22.
+
+#### Reader C
+
+- `docs/conventions/writing/README.md` §1 line 65: "History keeps its words" names three kinds of history. The one-home Agent Rule's *Not a second home* names more: the decisions log entries and Conversation Memory parts, and, by DECISION-18, a released CHANGELOG entry. The two lists disagree.
+- `docs/conventions/writing/README.md` line 122 ("none marks a Name") and the writing Agent Rule's rule 9 still forbid bold on a Name. DECISION-22 allows it at the home, and the line is due at the round's close.
+- `docs/conventions/writing/README.md` rule 10 (lines 141-149) does not say that a comma gloss counts (DECISION-20). Its list of non-titles names an Agent Skill Stage heading but not an Approach on Trial Stage heading, which DECISION-20 also put outside the rule.
+- `docs/conventions/writing/README.md` line 162: the *Its story* line cites "devlog 2026-10-29" twice and does not cite ADR-0078, which changed rule 9. *Where to look* (line 198) names ADR-0053 only.
+- `docs/conventions/writing/README.md` line 154: "985 lines in 83 of the 99 living files" is a count from before the round. It is likely stale; not checked.
+- `docs/conventions/visual-comparison/README.md` line 53: "Its name is the question, not a candidate: *how is this shown*". The convention and its Agent Skill are named visual-comparison, which names a picture. The claim does not match the name.
+- `docs/conventions/shapes/README.md` line 299: "Any change is shown before it is made." has no blank line before it, so Markdown renders it inside the fourth bullet.
+- `docs/conventions/shapes/README.md` line 33: "instances of this convention". By DECISION-32 the Output Shapes are Work Approaches made from a convention, not instances of it.
+- `docs/conventions/repo-hygiene/templates/java-spring/editorconfig.part` line 3 marks "# --- java-spring Stack Overlay ---". The other two `.part` files mark "# --- java-spring (Maven) Stack Overlay ---…".
+- `docs/conventions/repo-hygiene/README.md` says "the Plan Step that makes the stack true". The Hygiene Base's three marker lines say "at app bootstrap". The playbook calls it "Step 4: CBC Bootstrap". These are three wordings for one moment.
+- `docs/glossary.md` line 44: Newborn CBC Run runs "until its agent finishes the CBC Run Birth", and `docs/conventions/retrospective/README.md` line 86 says "runs the next CBC Run Birth". The glossary defines CBC Run Birth as "a CBC Run's first state", not an act.
+
+#### Reader D
+
+- `docs/models/agent.md` §10 (line 252): "One mechanism may serve two channels", but its example pairs a channel with the Enforcement Gate, which is not a channel.
+- `docs/models/agent.md` G1 (line 423) says the rule was broken 15 times "for the whole life of the handbook". A1 (line 293) counts 15 in the handbook's first 20 commits.
+- `docs/models/agent.md` W2 (line 387) cites "three CBC Runs" and gives two incidents.
+- `docs/models/agent.md` M2 (line 416) is "`evidenced` (definitional)", while line 275 defines `evidenced` as observed.
+- `docs/models/agent.md` §9 (line 234) gives an Agent Skill to "a rule bound to a moment", which §8's table gives to the Pushed Channel. A1 (line 292) calls an Agent Skill the Pulled Channel.
+- `docs/models/idea-to-output.md` §2 (line 40): `.claude/shapes/` does not exist in this repo. The Output Shapes are at `delivery/method/.claude/shapes/`.
+- `docs/models/tiers.md` §4.2 (line 160), "Downward: only pinned copies", leaves out the Delivery Fill, which §3.1 gives as the second downward form.
+- `docs/models/tiers.md` §3.2 (line 102), "an edit goes up", against §3.5 fact 5, "Nothing moves up as files".
+- `concept/00-cbc.md` (lines 112-120): "five practices" and "five phases", but the list of gaps has four, and design-before-code has none (D-46).
+
+#### Reader E
+
+- `ARCHITECTURE.md` §2.5: CBC Run 6's state, "born 2026-10-29 at `657d372`, on full auto", is out of date. `TODO.md` 38-39 says it ran through its Release, Step 14, and closed a Step 15.
+- `ARCHITECTURE.md` header comment, line 13: "the live CBC Run" is singular, but the table has more than one CBC Run since it was written.
+- `README.md` 16: "a repo of its own pinned to a concept version". A CBC Run records a Delivery Pin, a commit (glossary; `TODO.md` 932, "A CBC Run pins a commit"). It is an Agent Skill's Foundation Line that pins a concept version.
+- `TODO.md` 537: "ADR-0078 when written". ADR-0078 exists.
+- `TODO.md` 1011-1019, "Give the method a glossary": `delivery/method/docs/glossary/method.md` exists now (ADR-0078), so "the method has none" is false.
+- `TODO.md` 396-402: the item lists three links, "derives, points, governs". The glossary's Chain Links are four: stands on, points, governs, written from.
+- `TODO.md` 694, 747 and 431-432 wait on "the next birth". CBC Runs 5 and 6 have been born since.
+- Triggers that look passed:
+  - `TODO.md` 95, 113, 185, 198, "CBC Run 5's CBC Run Reading": it exists, `temp/reading-run-5-2026-10-22.md`, per `PLAN.md` 157;
+  - `TODO.md` 681 and 922-923, the close of the Plan Step for CBC Run 5's birth;
+  - `TODO.md` 736, "CBC Run 5's first Invariant Slice closing": CBC Run 5 is through Release;
+  - `TODO.md` 307-308 and 771-772, waiting on Refinement Round 2, which has closed.
+- `TODO.md` 818-820: "once the settled form is written there". `docs/conventions/facts-in-sync/` §3.1 now holds the one form.
+- `TODO.md` 906-907, "only some say": FINDING-591's count was not worked, so the rule 4 gap stays open.
+- `TODO-CONVERSATION-MEMORY.md` §7, §8 and §26: no TODO item and no other living record points at them, though the header says the item's See names each section.
+- `devlog/README.md` 9-10, "fragments fine", follows project-recording §4 (its line 364). `.claude/rules/writing.md` *Where it applies* puts every new record line under the rules. The two disagree.
+- The glossary's Agent Skill Stage entry and DECISION-25 write "`cbc-slice`'s Stage 3". Conventions §1.5 and DECISION-27 ask for the kind word every time.
+- `ARCHITECTURE.md` 78: the list item's second line starts at column 0. It renders by lazy continuation, but in the source it looks like it is outside the list.
+- `PLAN.md` 238: the ticked item starts in lowercase, "the Exchange Convention says". All the others start with a capital.
+
+#### Reader F
+
+- `approach-drafting.md`: byte-identical. Its findings, FINDING-1222 (line 70), FINDING-1231, FINDING-1232, FINDING-1252, hold for both.
+- `commit-messages/SKILL.md`: identical. FINDING-1253 holds for both.
+- `visual-comparison/SKILL.md`: one difference, §5, written for the seat. FINDING-1234, FINDING-1237, FINDING-1248, FINDING-1250 hold for both.
+- `commit-plan/SKILL.md`: differs beyond the seat, FINDING-1256.
+- `writing.md` and `one-home.md`: every difference is the seat's (examples, the glossary's place, the CBC Run's Fact Reference by id, footers). FINDING-1228 holds for both.
+
+- The round's read said our `commit-plan` differs from the container's only as ADR-0069 allows. Since `31156de` that is no longer true (F-35).
+- Living Text's home, facts-in-sync §1 per the glossary and DECISION-23, still writes "living text" in lowercase and never defines it. The only definition, in bold, is `refinement.md` §1.1 (F-5).
+- Foundation Line values spell Names in lowercase: `the exchange convention`, `the agent model`, `the tiers model`, `the idea-to-output model`. The form is conventions §1.3's, a question for Refinement Layer 1, not for these files.
+- `working-a-reading.md`'s Foundation Line, `practice, under the exchange convention`, uses the form §1.3 gives for an Output Shape, not the one for a convention's Work Approach.
+- The Foundation Check's step 1 lists where Foundation Lines sit and says "Only these are checked". It misses the delivered Glossary Names files, `delivery/*/docs/glossary/*.md`, which carry one in their header comment.
+- `exchange-read`'s Agent Skill Stage headings capitalize after the dash ("Find where to start"), and `exchange-deliver`'s do not ("write the Delivery Note"). Conventions §1.4's example is lowercase. Both skills number from Stage 1, while §1.4 and the glossary say "numbered from Stage 0".
+- `exchange-read`'s opening says "the fourth writes a document", but Stage 2 already writes its first line.
+- `exchange-deliver`'s step 6 has no bold lead, while steps 0 to 5 and 7 to 9 do.
+- Due at the round's close and not yet in: DECISION-22's home-bold line in writing rule 9 ("no Markdown mark marks a Name" stands bare), and DECISION-18's released CHANGELOG entry in one-home's *Not a second home*.
+- `approach-drafting.md`'s "The refinement is open." (both copies) goes stale at the close, as round 3's read already noted.
+
+#### Reader G
+
+- `delivery/container/.claude/skills/commit-plan/SKILL.md` differs from our `.claude/skills/commit-plan/SKILL.md` in 24 hunks. Our copy got the round's fixes in `31156de`, and the shipped one did not (G-52 to G-55). The pair is not a copy kept in step.
+- `delivery/container/.claude/decisions.md` lines 39–40, "Their decisions are cited CBC ADR-nnnn": since ADR-0078, every delivery strips the footers. A CBC Run now meets no `CBC ADR-nnnn` in any shipped file, and grep finds none outside the footers.
+- `delivery/container/.claude/decisions.md` lines 35–37 ("Conventions: …"), `.claude/CLAUDE.md` line 54 ("a convention arrives", "the conventions held"), and the Pure Seed's prompt and commit subjects (lines 131, 213, 228, 291, "conventions") say a CBC Run holds conventions. DECISION-32 says it holds none, only the Work Approaches made from them.
+- `delivery/container/.claude/rules/delivered-copies.md` rule 5 has no Receipt Branch step. `docs/conventions/exchange/` §4, step 3, has the CBC Run cut one, optionally, so step 2's diff is exact. `container.md` has no Receipt Branch entry.
+- `delivery/container/.claude/rules/delivered-copies.md` line 21–22: "these copies equal, but for its *Decisions* footers". "Its" has a plural antecedent.
+- `delivery/container/.claude/decisions.md` lines 21–22, "The Delivery Pin is the Concept Deliverer's commit every copy here equals", drops "but for its *Decisions* footer", which `container.md` and `delivered-copies.md` rule 1 carry. Round 3 met it as a second home, and it still stands.
+- Round 3's in-passing items still stand: `shapes-lifecycle.md` line 73, "Either of the last three"; `apply-retrospective/SKILL.md` lines 88–89, "Links point at labels, never section numbers", against `one-home.md` rule 2; `retrospective/SKILL.md` lines 114–115 ("rules in force now" list on top) against the Decisions Log's "Append-only, newest last"; `retrospective/SKILL.md` line 118 (the Concept Deliverer writes the next CBC Run's `PLAN.md`) against the playbook line 87–88 and the Pure Seed lines 3–4; `PLAN.md`'s placeholder Plan Steps have no "Now:" line; `visual-comparison/SKILL.md` line 127's unindented bullet continuation.
+- `delivery/fills/cbc-run-pure-playbook.md` line 192: "## Steps 5..N-3" has no status box, where every other Plan Step heading has one.
+- `delivery/fills/cbc-run-pure-playbook.md` line 70, "the stages its Notes list from earlier CBC Runs": a Newborn CBC Run holds nothing from earlier CBC Runs (`delivery/installs/pure-seed.md` line 29).
+- `delivery/installs/pure-seed.md` line 158 adds `.claude/skills .claude/shapes docs/glossary` but not `.claude/rules`. Today no file of the Method Group or the Stack Group is under `.claude/rules/`, but `delivery/README.md` lines 33–34 says those groups carry Agent Rules.
+- `delivery/installs/pure-seed.md` lines 9–10, "finishes the CBC Run Birth", against the glossary's "a CBC Run's first state". Round 3 met it in passing, and it still stands.
+
+#### Reader H
+
+- Enemy Census Saturation is still stated in three units: framing SKILL 101-102 "two consecutive fresh Enemy Census Probes", workflow 291 "two consecutive ones" (the lenses), `the-whole-system-in-plain.md` 62-63 "two fresh attacks". The glossary (122-124) says Enemy Census Probes.
+- The workflow names three Enemy Census Probe Lenses (248-267) but calls the first listing, "actors × the three negations" (244), a lens too, so the count is three or four. The glossary says "the workflow names three".
+- The evidence label still differs: `evidence-test.md` 47 and 81 write "· GUARANTEE-3 — KILL-3" with a dash; slice SKILL 97 and 185 write "· GUARANTEE-2 · KILL-12" with a middle dot.
+- `kill.md` 83 "FACT-CALLER-1 to FACT-STORE-6": a range over the tags of four different actors.
+- `kill.md` 105-108: the illustrated "nothing dies" Enemy Collision Kill starts with NOT-OURS-1, a Scope Exclusion, where the Skeleton (60-61) says it starts with the Enemy Fact.
+- When an Output Shape is read: the four Output Shapes' headers say "Read at … Plan Step Gate", while slice workflow 40 says the Invariant Slice Record Shape "is read at the Invariant Slice Close".
+- Worked example 247 puts "the CBC Framing Concerns" in LAYER-4-PROBLEMS, while Stage 3 (framing SKILL 61, `kill.md` 8) puts the Enemy Collision Kills there.
+- Worked example 115-123 leaves two of the three lists the workflow says the exit leaves (298-317); no Scope Verdicts list, not even an empty one.
+- The System Possession Test reads three ways: framing SKILL 85-86 and the glossary 98-99 "could they break the Falsifiable Promise?", workflow 156-157 "… without us being able to stop them?".
+- The Structural Wall ladder: slice SKILL 117 "single validated entry path", `the-whole-system-in-plain.md` 97 "single checked entry path"; concept chapter 02 has both (50, 62).
+- Slice SKILL 233 says "`ARCHITECTURE.md`'s Invariants table"; slice workflow 201 says "the Invariants section's own comment". The container's `ARCHITECTURE.md` has a section `## Invariants`.
+- "judgement" (slice workflow 213) against "judgment" everywhere else ("Judgment logged").
+- The workflow's *Open* section (453) says "CBC Run 4's is not yet read", which may be stale against the records.
+- The four Output Shapes' "did each have something" (`evidence-test.md` 193, `kill.md` 130, `registry-entry.md` 114, `slice-record.md` 228) asks after the shapes-lifecycle Agent Rule's §3 ending "Each had something". It reads only with the Fact Reference that follows it, which it has.
+- No numbered section stands in these 14 files, so rule 10 found nothing.
+
+#### Reader I
+
+- `establishment-walk.md` Stage 4 (lines 123-127) tells a CBC Run to write a new reference beside `postgres-role-split.md`, inside a pinned copy's folder, "so no later project derives it again". `.claude/rules/delivered-copies.md` allows a copy to change only by its rules, and only the Concept Deliverer can carry it to later CBC Runs.
+- `establishment-walk.md` 170 says "It is the home of the Runtime Ground's own words", and 206 says "The project's Infrastructure Contract is where it writes its own words". The container's records table puts a CBC Run's own Names in `docs/glossary.md`.
+- The Catalog Check checks against three differently named things: "the model's claims" (`infra-establish/SKILL.md` 98), "the reference's claims" (`establishment-walk.md` 141) and "the claims of postgres-role-split.md" (`verify-database-model.sql` 10-11).
+- `spring-pom-convention.md` *What the file does not carry* (57-62): two of its three bullets still say what the file does carry, as round 3 met.
+- The default-privileges sentence still has three homes: `postgres-role-split.md` 89-94, `postgres-setup-walkthrough.md` 84-87, `bootstrap.sql` 59-61.
+- `app-structure.md` 80-83 sends a departure from the Stack Default, which is a reference's choice, to delivered-copies rule 8, which governs Agent Skill Templates. It fits only by analogy.
+- `cbc-bootstrap/SKILL.md` 147 says "Both CBC Runs that ran this Agent Skill", while `spring-harness-reference.md` 7 says "Three projects built them". Two or three; the difference is never explained.
+- `spring-boot-walkthrough.md` 263 spells "honours", while `establishment-walk.md` 13 spells "honor" and the stack's files spell "behavior".
+- `infra-establish/SKILL.md`'s drawing labels Stage 6 "contract", while its Stage 6 Gate asks that both manuals stand.
+
+### The close read's counts
+
+485 findings, FINDING-926 to 1410:
+- by reader: A 44, B 53, C 59, D 70, E 70, F 35, G 59, H 49, I 46;
+- by rule: 1, 1; 2, 57; 3, 24; 4, 3; 5, 49; 6, 29; 7, 9; 8, 117;
+  9, 177; 10, 12; 7 under more than one rule;
+- by how they stand: 238 checked, 166 resting on the reader, 81
+  uncertain;
+- in text round 3 changed: 195; in text it did not: 280; not traced:
+  10;
+- proposed: 447 fix, 34 a question, 4 another ending;
+- met in passing, of other kinds: about 100 lines, below the
+  findings.
+
+By cause, as the agent reads them before the endings: the 195 in
+changed text were missed at the change; most of the 280 in text not
+changed were missed by round 3's read, a few older than a rule the
+round changed; the 81 uncertain ask whether the rule reaches them.
+Three causes recur across readers, and each wants a decision:
+- **copies not carried over:** layer 5 fixed our commit-plan Agent
+  Skill, and layer 6 did not carry the fixes to the container's copy,
+  24 hunks (FINDING-1256, 1308 to 1311);
+- **fixes the endings list as made that never landed:** FINDING-532,
+  549, 578 and 580 in part (FINDING-1130, 1185 to 1187);
+- **Living Text in lowercase:** FINDING-664's fix reached only
+  `refinement.md`. Three Agent Rules, in both seats, still write it
+  lowercase (FINDING-1223), and its definition sits in
+  `refinement.md`, not at its home (FINDING-1226).
