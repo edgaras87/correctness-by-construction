@@ -292,7 +292,7 @@ renumbered. Indexed with one line each in PLAN.md's Decision index.
 ### 3.4 How an ADR is written
 
 How an ADR is written is its form. In a CBC Run, the Record Stub
-`docs/adr/0001-record-architecture-decisions.md`, the template
+`docs/adr/0001-record-architecture-decisions.md`, the form
 copied for each new one; in the Concept Deliverer's Convention Seat, the header of
 `docs/adr/README.md`. Why the form is as it is:
 
@@ -353,7 +353,7 @@ context, a retrospective's lesson, a playbook warning.
 ### 4.3 Where the devlog lives
 
 `devlog/2026-08.md` (file per month) or a single `devlog.md` for
-small projects. Newest entries on top.
+small projects, split per month once it passes 300 lines. Newest entries on top.
 
 ### 4.4 How the devlog is written
 
