@@ -6,14 +6,15 @@ the structure of a thing rather than tested in afterwards.
 
 - **What it holds:** the plain-words statement of the concept, with
   its rationale, open questions, and the log of what changed it and
-  why. And what is made usable from it: Agent Skills, checklists,
-  templates, each pinned to the concept version it derives from.
+  why. And what is made usable from it: Agent Skills with their Agent
+  Skill Templates and checklists, and Output Shapes, each pinned to
+  the concept version it derives from.
 - **The Container Group:** it also holds the files a CBC Run is born
   into, as its own (ADR-0024, ADR-0025; where they came from is
   ADR-0038's record). So a CBC Run has one upstream and one Delivery
   Pin.
-- **The Concept Deliverer:** each CBC Run is born from what this repo
-  ships, in a repo of its own pinned to a concept version, and is read
+- **The Concept Deliverer:** this repo is the Concept Deliverer. Each
+  CBC Run is born from what it ships, in a repo of its own pinned to a concept version, and is read
   back from here.
 - **Documents only:** nothing is built here, no application, no
   service, no CBC Run.
@@ -49,7 +50,7 @@ the structure of a thing rather than tested in afterwards.
   repos (ADR-0038; `docs/models/tiers.md` §2.1, *The empty top tier*).
 - Garden machinery — none until the Concept Garden rule triggers: a second
   Concept Repo, a rule written twice (`docs/models/tiers.md` §2.2, *Concept Repos*).
-- Graduating a CBC Run to its own Concept Repo — same trigger,
+- Moving a CBC Run into a Concept Repo of its own — same trigger,
   not now.
 - Everything in the archive repo, `system-design-method`, beyond the
   concept chapters taken from it (`CHANGELOG.md`, *[v1]*).
@@ -60,21 +61,21 @@ the structure of a thing rather than tested in afterwards.
 |---|---|---|
 | Plan | [PLAN.md](PLAN.md) | The Plan Step being worked, and what *done* means for it |
 | Decisions | [docs/adr/](docs/adr/) — cited from other repos as `CBC ADR-nnnn` | Why is it built this way |
-| Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | The map: what is here, what ships, and what must stay true |
+| Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | What is here, what ships, and what must stay true |
 | Backlog | [TODO.md](TODO.md) | What's next, and what's known but not done |
 | Backlog's talk | [TODO-CONVERSATION-MEMORY.md](TODO-CONVERSATION-MEMORY.md) | The talk that shaped each TODO item, on trial |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per concept version, for those who pin one |
 | Devlog | [devlog/](devlog/) | What happened, the dead ends, where to resume |
 
 A summary. Every record in both Convention Seats, the CBC Run's and this repo's,
-and where each is explained, is the records map
-(`docs/conventions/project-recording/` §1, *The records at a glance*).
+and where each is explained, is project-recording's list of the
+records (`docs/conventions/project-recording/` §1, *The records at a glance*).
 
 <!-- A line here is true now, and meant for someone arriving from
      outside. What changes weekly is TODO.md's; why is the ADRs'; how
-     it went is the devlog's. A missing section is not an omission: it
-     arrives when a Plan Step's gate makes it true: the README says only
-     what is already true.
+     it went is the devlog's. A missing section is not an omission. It
+     arrives when a Plan Step Gate makes it true, since the README says
+     only what is already true.
      Why the form is as it is: (docs/conventions/project-recording/
      §7.4, How a README is written).
      foundation: the project-recording convention -->
