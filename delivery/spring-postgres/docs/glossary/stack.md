@@ -25,7 +25,7 @@
 - **CBC Bootstrap Probe** — the scaffolding endpoint and test that
   prove the Adversity Harness creates the CBC Bootstrap Adversity
   Class; both go at the first Invariant Slice
-  (`.claude/skills/cbc-bootstrap/SKILL.md`).
+  (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`).
 - **CBC Bootstrap Step Plan** — the cbc-bootstrap Agent Skill's Stage 3 plan: five
   steps in order, each one change with its check and its commit
   (`.claude/skills/cbc-bootstrap/SKILL.md`).
@@ -68,11 +68,11 @@
   setup once and owns the database; never wired into the application
   (`.claude/skills/infra-establish/references/postgres-role-split.md`).
 - **Catalog Check** — the real database state queried against what the
-  model claims, each query with its expected result beside it
+  Database Role Split claims, each query with its expected result beside it
   (`.claude/skills/infra-establish/SKILL.md`).
 - **Behavioral Check** — an Infrastructure Service Constraint
   attempted live and seen refused; with the Catalog Check, the
-  infra-establish Agent Skill's Stage 5 gate
+  infra-establish Agent Skill's Stage 5 Gate
   (`.claude/skills/infra-establish/SKILL.md`).
 - **Infrastructure Contract** — the manual for whoever builds on the
   Runtime Ground: its identities, how it is reached, what it refuses,
@@ -84,4 +84,5 @@
 - **Stack Default** — the choice a stack's references make unless a
   demand or a fact about the environment defeats it: local containers
   under podman, run by compose; packages by feature
-  (`.claude/skills/infra-establish/SKILL.md`).
+  (`.claude/skills/infra-establish/references/establishment-walk.md`;
+  `.claude/skills/cbc-bootstrap/references/app-structure.md`).
