@@ -12,7 +12,7 @@ when the work is done, the exchange-deliver Agent Skill carries the verdicts dow
 
 Why the read is done so: (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*).
 
-## Stage 1 — Find where to start
+## Stage 1 — find where to start
 
 Open the CBC Run's Decisions Log, `.claude/decisions.md`. Its last
 delivery entry carries two numbers:
@@ -20,7 +20,7 @@ delivery entry carries two numbers:
 - the Delivery Pin `P`, our commit its copies equal;
 - the Read-Through Commit `R`, its commit we last read up to.
 
-## Stage 2 — The span
+## Stage 2 — the span
 
 The span is `R..HEAD`, in the CBC Run:
 
@@ -32,7 +32,7 @@ That `HEAD` is the Read-Through Commit. Write it now as the CBC Run
 Reading's first line, before anything is read. In an open CBC Run
 Reading, the first line moves to it.
 
-## Stage 3 — Read three things
+## Stage 3 — read three things
 
 Read three things in the span. They give every item:
 
@@ -67,7 +67,7 @@ Two checks follow, and neither gives an item:
   that what it changed is the same on the branch read. A branch
   and a tag may share a name; `refs/heads/<name>` says which.
 
-## Stage 4 — Write the CBC Run Reading
+## Stage 4 — write the CBC Run Reading
 
 Write the CBC Run Reading, or extend the one that is open. If `temp/`
 holds a CBC Run Reading for this CBC Run, this read extends it: new
