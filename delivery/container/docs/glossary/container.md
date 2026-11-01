@@ -65,9 +65,12 @@
   always written with its kind: the commit-plan Agent Skill.
 - **Agent Skill Template** — a file under an Agent Skill's `templates/`, copied
   and filled by this project, never edited in place.
+- **Hygiene Base** — the hygiene files every repo gets before it has
+  a stack, `.gitignore`, `.gitattributes` and `.editorconfig`, down to
+  each one's marked line.
 - **Stack Overlay** — the stack's part of a hygiene file,
   `.gitignore`, `.gitattributes` or `.editorconfig`, below the
-  marked line the container's base carries.
+  Hygiene Base's marked line.
 - **Approach on Trial** — the written way of doing one kind of work
   that no Agent Skill covers yet, at `.claude/approaches-on-trial/<work>.md`,
   drafted by `approach-drafting`.

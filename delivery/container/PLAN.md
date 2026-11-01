@@ -3,11 +3,11 @@
 <!-- The Record Stub ships the pure form. The Plan Steps below are
      placeholders that show it: a goal, and a Plan Step Gate of facts
      that can be checked. At birth the Pure Seed replaces the region
-     between the STEPS markers with a playbook's full sequence, a
-     concept's. The playbook itself stays where it came from. Born
-     without one, fill the placeholders in place. Either way the two STEPS markers stay:
+     between the STEPS markers with the full sequence of Plan Steps from a
+     playbook the Concept Deliverer keeps. The playbook itself is not delivered. A project born
+     without a playbook fills the placeholders in place. Either way the two STEPS markers stay:
      they are what makes the swap re-runnable.
-     Why the form is as it is: (CBC docs/conventions/project-recording/
+     Why the form is as it is: (the Concept Deliverer's docs/conventions/project-recording/
      §2.4, How a plan is written).
      foundation: the project-recording convention -->
 
@@ -26,7 +26,7 @@ Detail only the next 1–2 Plan Steps finely; keep later Plan Steps coarse, the 
 
 <!-- STEPS-BEGIN — Plan Steps between the markers; the markers stay -->
 
-## Step 0: <first step, e.g. "Bootstrap">
+## Step 0: <first Plan Step, e.g. "Bootstrap">
 
 Goal: <one sentence>.
 Gate:
@@ -47,7 +47,7 @@ Notes:
 Goal: <one line>.
 Gate: TBD — depends on <decision that unlocks it>.
 
-## Step N: <last step, e.g. "Release">
+## Step N: <last Plan Step, e.g. "Release">
 
 Gate:
 - [ ] <the facts that make this project done or shipped>
@@ -60,7 +60,7 @@ Notes:
 ## Discovered along the way
 
 <!-- Non-blocking findings. Triage each into TODO.md: assign to a Plan Step,
-     park in Later, or drop. Then delete the line here. -->
+     move to Later, or drop. Then delete the line here. -->
 - <YYYY-MM-DD> <finding> → <where it went>
 
 ## Decision index

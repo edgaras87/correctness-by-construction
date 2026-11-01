@@ -1,6 +1,6 @@
 # Agent decisions
 
-<!-- The working arrangement's decision log. Append-only, newest
+<!-- The working arrangement's Decisions Log. Append-only, newest
      last. One entry per
      arrangement decision — an Agent Skill added or changed, an Agent Rule tuned,
      a workflow adopted. Three parts: what, why, what was rejected.
@@ -25,7 +25,7 @@
      delivery entry carries both (.claude/rules/delivered-copies.md,
      rule 1). If a placeholder still shows, the Pure Seed was not run;
      fix it before the bootstrap commit.
-     Why the log is as it is: (CBC docs/conventions/agent-arrangement/
+     Why the log is as it is: (the Concept Deliverer's docs/conventions/agent-arrangement/
      §3.4, `.claude/decisions.md`).
      foundation: the agent-arrangement convention -->
 

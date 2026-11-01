@@ -5,9 +5,9 @@ Status: Accepted
 
 ## Context
 
-Significant decisions — what to use, where a boundary falls, what to
-build and what to take, what a term means — will be made throughout
-this project. Without a record, the *why* is lost:
+Significant decisions will be made throughout this project: what to
+use, where a boundary falls, what to build and what to take, what a
+term means. Without a record, the *why* is lost:
 debates recur, and future maintainers can't distinguish deliberate choices
 from accidents.
 
@@ -38,6 +38,6 @@ decision time.
 
 <!-- The form of the next ADR: copy this file, bump the number,
      replace every section. Keep it under one page.
-     Why the form is as it is: (CBC docs/conventions/project-recording/
+     Why the form is as it is: (the Concept Deliverer's docs/conventions/project-recording/
      §3.4, How an ADR is written).
      foundation: the project-recording convention -->

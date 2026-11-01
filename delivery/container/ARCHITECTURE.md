@@ -6,13 +6,13 @@
      by Invariant Slice: an Invariant Slice's close adds or changes rows
      in Invariants, never a paragraph. How the Invariant Slice got there
      is its Invariant Slice Record's.
-     Why the form is as it is: (CBC docs/conventions/project-recording/
+     Why the form is as it is: (the Concept Deliverer's docs/conventions/project-recording/
      §8.4, How ARCHITECTURE is written).
      foundation: the project-recording convention -->
 
 ## Overview
 
-<!-- One paragraph: what kind of system this is, in one breath.
+<!-- One paragraph: what kind of system this is.
      Fill-comment: the paragraph replaces this comment. -->
 
 ```
@@ -33,7 +33,7 @@ Why shaped this way: ADR-000N.
 
 <!-- One row per invariant the system keeps: where the arithmetic or the
      decision is made, what refuses a wrong result, the test that goes
-     red if either went, and the Invariant Slice that proved it, linked. A "—"
+     red if the arithmetic or the refusal were removed, and the Invariant Slice that proved it, linked. A "—"
      says a column holds nothing, on purpose. Example, from an order
      service, a row whose rule nothing computes:
      | a key never maps to two orders | — | the unique constraint on the key | the hammering test | SLICE-1 GUARANTEE-1 | -->

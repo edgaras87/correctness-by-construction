@@ -34,10 +34,10 @@ arrive with them, in `docs/glossary/`; this project's own are
 ## Records
 
 <!-- When to open which record. The record teaches the rest, but only
-     once opened, and nothing else says when. Three things per row —
-     the moment, what it holds, the path — never the rule itself: what
+     once opened, and nothing else says when. Three things per row:
+     the moment, what it holds, the path. Never the rule itself: what
      an ADR contains is inside the ADR. Adding a record means adding
-     its row (CBC docs/conventions/project-recording/ §13, The records
+     its row (the Concept Deliverer's docs/conventions/project-recording/ §13, The records
      table). -->
 
 | When | What's in it | Record |
@@ -57,14 +57,14 @@ arrive with them, in `docs/glossary/`; this project's own are
 
 <!-- This file is loaded in full on every task, relevant or not, so
      every line below passes three tests or leaves
-     (CBC docs/conventions/agent-arrangement/ §2.4, How the Entry File is written):
-     1. True of this project and nowhere else — else it is a
-        convention, stated once, there.
-     2. No moment — else it goes where the moment is: the record's
+     (the Concept Deliverer's docs/conventions/agent-arrangement/ §2.4, How the Entry File is written):
+     1. True of this project and nowhere else. Otherwise it belongs in a
+        delivered Agent Skill, Agent Rule or Record Stub, stated once.
+     2. No moment. Otherwise it goes where the moment is: the record's
         Record Stub, README, a project Agent Skill, or .claude/rules/ with a
-        paths: list for a rule about one directory.
-     3. Nothing else would deliver it — a stance, or a fact whose
-        failure is not noticing it.
+        paths: list for an Agent Rule about one directory.
+     3. Nothing else would deliver it: a stance, or a fact nobody
+        would notice was missing.
      Longer than a screen means a line is failing. Shrinking it is
      maintenance, not tidying.
      foundation: the agent-arrangement convention -->

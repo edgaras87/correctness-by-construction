@@ -1,5 +1,5 @@
 # ======================================================================
-# base layer — any repo, from day zero (records-only repos included)
+# Hygiene Base — any repo, from day zero (records-only repos included)
 # ======================================================================
 
 # JetBrains IDE state — machine-local, never project truth
@@ -13,7 +13,7 @@ Thumbs.db
 # Logs
 *.log
 
-# Local secrets — .env.example is the committed shape; real values
+# Local secrets — .env.example is the committed counterpart; real values
 # never enter history
 .env
 
@@ -21,7 +21,7 @@ Thumbs.db
 # its committed counterpart, when a project adds one, is .claude/settings.json
 .claude/settings.local.json
 
-# The operator's standing instructions — one person, one checkout;
+# The reviewer's standing instructions — one person, one checkout;
 # the tool loads it beside CLAUDE.md but never ignores it on its own
 CLAUDE.local.md
 

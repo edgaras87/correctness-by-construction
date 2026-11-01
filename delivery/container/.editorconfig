@@ -7,13 +7,13 @@
 #   [format]   - consulted by the IDE formatter when it runs
 # Never on their own: untouched files keep their bytes.
 #
-# Layout conventions (hand-kept - no tool formats this file):
+# Layout rules (hand-kept - no tool formats this file):
 # - each comment+setting group is separated from the previous entry
 #   by one blank line;
 # - comments are whole lines, above their setting;
 # - a ruler line marks each file-type block.
 #
-# LAYERS: this is the base layer (any repo, day zero). Stack Overlay
+# LAYERS: this is the Hygiene Base (any repo, day zero). Stack Overlay
 # blocks are appended at app bootstrap below the marker at the bottom.
 
 root = true
