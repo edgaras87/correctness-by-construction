@@ -139,8 +139,7 @@ history lines.
 6. **The devlog entry and PLAN's close,** the Plan Step Gate ticked.
 7. **Land it.** The closing look at the landed commits, and the
    `-detail` branch that keeps what was tried, are the commit-plan Agent Skill's
-   (`.claude/skills/commit-plan/SKILL.md` §4, *The lifecycle*, and §6, *Review
-   protocol*). The branch
+   (`.claude/skills/commit-plan/SKILL.md` §4, *The lifecycle*, and §6.2, *Small commits*). The branch
    reaches main by fast-forward, on the reviewer's word (the Plan Step
    Form, *At the close*), and the commit plan closes.
 

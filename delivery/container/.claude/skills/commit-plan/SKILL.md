@@ -26,6 +26,8 @@ when someone other than the author reviews as it lands.
 
 ## 2. The plan file
 
+Why it is so: (the Concept Deliverer's docs/conventions/commit-plan/ §2.1, *Not a record*; §2.2, *Root placement*; §2.3, *Status in the file*; §2.7, *Inserted and repeated commits*; §2.8, *Counting subjects*).
+
 One file, `COMMIT-PLAN.md`, at the repo root, one at a time:
 
 ```markdown
@@ -71,6 +73,8 @@ section.>
 
 ## 3. How the commits are split
 
+Why it is so: (the Concept Deliverer's docs/conventions/commit-plan/ §1, *What a commit plan is*; §2.4, *Material-first*; §2.5, *The records commits*; §2.9, *The agent's files*).
+
 - **By change, not by file.** One commit is one coherent thing
   the repo needs, whatever files that touches; one file may appear
   in as many commits as it has distinct changes.
@@ -97,11 +101,13 @@ section.>
 
 ## 4. The lifecycle
 
+Why it is so: (the Concept Deliverer's docs/conventions/commit-plan/ §2.6, *What a plan counts*; §2.10, *The sweep*; §2.12, *The look back*).
+
 | When | Commit | Contents |
 |---|---|---|
 | Open | `docs(agent): add commit plan for <X>` | the approved plan |
 | Work | the planned commits | as planned; stop at each boundary |
-| Small commits | tries, fixes, a way abandoned | inside a planned commit, on the reviewer's grant; folded into it at its boundary (§6, *Review protocol*) |
+| Small commits | tries, fixes, a way abandoned | inside a planned commit, on the reviewer's grant; folded into it at its boundary (§6.2, *Small commits*) |
 | Diverge | `docs(agent): revise commit plan — <what changed>` | only when reality diverged; body says why |
 | Close | `docs(agent): close commit plan for <X>` | deletes the file; **body records what diverged** |
 
@@ -144,19 +150,22 @@ planned refinement, not divergence; the close body distinguishes the two.
 
 ## 6. Review protocol
 
+### 6.1 The stop at each boundary
+
 Work stops at every commit boundary: stage, show the diff, commit
 only on the reviewer's word. The rule is the commit-messages Agent Skill's, and binds
-at every commit, not only inside a Change Set.
+at every commit, not only inside a Change Set (`.claude/skills/commit-messages/SKILL.md`, *Rules*).
 
-**Small commits inside a planned commit, where the reviewer has
-granted them.** A planned commit may then be built as several small
+### 6.2 Small commits
+
+Where the reviewer has granted them, a planned commit may be built as several small
 commits: a try, a fix, a way abandoned. Before its boundary, they
 are squashed into the one commit the plan names, and the reviewer
 reviews that. The small commits are kept on a local
 `<branch>-detail` branch, so nothing tried is lost. Where the
 reviewer lets small commits land as they go, they are grouped by
 kind at the look back instead, and the `-detail` branch keeps them
-the same way. Each small commit follows the commit-messages Agent Skill too: subject
+the same way (the Concept Deliverer's docs/conventions/commit-plan/ §2.11, *Small commits*). Each small commit follows the commit-messages Agent Skill too: subject
 and body are counted when it is written, not at the regroup. Without
 the grant, every commit is a boundary.
 
