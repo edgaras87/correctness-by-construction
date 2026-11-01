@@ -1,7 +1,7 @@
 # The whole system in plain words
 
-*One page. No jargon: each Name is given once, beside its plain
-words. A summary of the concept, `docs/concept/`, and of the two
+*One page. Each Name is written beside its plain words at its first
+use. A summary of the concept, `docs/concept/`, and of the two
 workflows, `.claude/skills/cbc-framing/references/cbc-framing-workflow.md`
 and `.claude/skills/cbc-slice/references/cbc-slice-workflow.md`. If
 this page and they ever disagree, one of them is wrong: find out
@@ -10,9 +10,9 @@ which.*
 **What this is, in one sentence:** a way of designing a backend that
 starts from what must never happen.
 
-It derives the backend from one Falsifiable Promise. It asks *"what
+It derives the backend from one Falsifiable Promise, a commitment whose breaking can be pictured concretely. It asks *"what
 must never happen?"* before *"what should it do?"* It answers each
-System Never-Event with a Structural Wall, proven by a test that
+System Never-Event, a thing that must never happen, with a Structural Wall, a structure that makes it impossible, proven by a test that
 creates the attack.
 
 ## The one idea
@@ -25,8 +25,8 @@ listing features.
 Then build the smallest system that makes those disasters
 *impossible by structure*: not caught by tests, not fixed after
 alerts. Features come last, as the minimum needed to keep the
-promises real. Every extra feature is a new way to break your own
-System Guarantees. So staying small is discipline, not taste.
+Falsifiable Promise real. Every extra feature is a new way to break your own
+System Guarantees, the System Never-Events the system holds by structure. So staying small is discipline, not taste.
 
 ## The Layered System: five nested layers
 
@@ -35,25 +35,25 @@ System Guarantees. So staying small is discipline, not taste.
   It is hostile: things vanish, duplicate, and lie.
 - **LAYER-2-SYSTEM — Your system.** One Falsifiable Promise: which
   facts you are the authority on, and what you commit to about them.
-  A real promise can be broken: you can describe the exact scenario
+  A real Falsifiable Promise can be broken: you can describe the exact scenario
   where it fails. Also the boundary: everything crossing from outside
   is checked right at the door.
 - **LAYER-3-AREAS — The parts inside,** the Responsibility Areas.
   They are split by one rule: every fact has exactly one owner. Often
-  the answer is "one part", and that is fine.
-- **LAYER-4-PROBLEMS — The small problems.** Inside each part: what
+  the answer is "one Responsibility Area", and that is fine.
+- **LAYER-4-PROBLEMS — The small problems.** Inside each Responsibility Area: what
   must hold true, and what attacks it. They are small on purpose: the
   layers above made them small.
-- **LAYER-5-INTERACTION — Between the parts.** Correctness no single
-  part can own. Most real incidents happen here. It is empty if there
-  is only one part.
+- **LAYER-5-INTERACTION — Between the Responsibility Areas.** Correctness no single
+  Responsibility Area can own. Most real incidents happen here. It is empty if there
+  is only one Responsibility Area.
 
 ## The order of work (not the same as the layers' order)
 
-0. **Choose the Falsifiable Promise** (the CBC Framing Intent). One
-   sentence, worth proving, for a named audience.
+0. **Choose the Falsifiable Promise** (the CBC Framing Intent, the document that states it). One
+   sentence, worth proving, for a named Falsifiable Promise Audience, the party the proof matters to.
 1. **What must be ours?** (LAYER-2-SYSTEM). For each candidate: "if
-   someone else owned this, could they break our promise?" Yes: ours,
+   someone else owned this, could they break our Falsifiable Promise?" Yes: ours,
    a System Possession. No: refused, in writing.
 2. **List the enemies** (LAYER-1-ENVIRONMENT). Follow one request
    through its whole life. Everything beyond your control is an
@@ -65,7 +65,7 @@ System Guarantees. So staying small is discipline, not taste.
    each thing you own: what dies? Name the Enemy Collision Kill, never
    the cure. Mechanisms come later.
 4. **Sort into owners** (LAYER-3-AREAS), only if the Enemy Collisions
-   actually force separate owners. One owner is a confirmed answer,
+   actually force separate Responsibility Areas. One Responsibility Area is a confirmed answer,
    not a gap.
 5. **Check between owners** (LAYER-5-INTERACTION), only if Stage 4
    made more than one.
@@ -82,13 +82,13 @@ System Guarantees. So staying small is discipline, not taste.
 - **Build:** the mechanism, plus a test that *creates* the attack
   (hammer it concurrently, inject duplicates, kill it mid-write) and
   shows the invariant surviving.
-- **Document:** the Falsifiable Promise, the guarantees, the proof,
+- **Document:** the Falsifiable Promise, the Invariant Slice Guarantees, the proof,
   readable later.
 
 The test that creates the attack is the deliverable most projects
 skip.
 
-## Enforcement: who guards each guarantee
+## Enforcement: who guards each System Guarantee
 
 Every System Guarantee gets exactly one Structural Wall, the
 strongest available:
@@ -113,5 +113,5 @@ absence of one.
 
 Throwaway code, experiments, low-stakes tools: iterate-and-fix is
 cheaper there, and not wrong. This method pays off when breaking the
-promise is expensive or cannot be undone (money, safety, trust), or
+Falsifiable Promise is expensive or cannot be undone (money, safety, trust), or
 when the system will live long.

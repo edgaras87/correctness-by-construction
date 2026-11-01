@@ -17,17 +17,17 @@
   counted twice, an order created twice (`docs/concept/00-cbc.md`).
 - **System Guarantee** — a System Never-Event stated against a named
   source of adversity; the system holds it by structure
-  (`docs/concept/00-cbc.md`). Each is GUARANTEE-n where it is written.
+  (`docs/concept/00-cbc.md`).
 - **System Guarantee Erosion** — the first way the concept fails: new
   features ship without the System Guarantees they might break being
   checked again (`docs/concept/00-cbc.md`).
-- **Escape Hatch** — the second: an admin path or a raw script goes
+- **Escape Hatch** — the second way the concept fails: an admin path or a raw script goes
   around the one enforced code path, and a System Guarantee stops
   being true (`docs/concept/00-cbc.md`).
-- **Testing Theater** — the third: System Guarantees move out of
+- **Testing Theater** — the third way the concept fails: System Guarantees move out of
   structure and back into tests, which sample where structure forbids
   (`docs/concept/00-cbc.md`).
-- **Theory Swamp** — the fourth: deep rigor tried before the layers
+- **Theory Swamp** — the fourth way the concept fails: deep rigor tried before the layers
   have made the problem small (`docs/concept/00-cbc.md`).
 - **Layered System** — the concept's model of the world: five nested
   layers, from the environment the system lives in to what emerges
@@ -58,9 +58,9 @@
 - **CBC Framing Intent** — the first CBC Framing Export: the
   Falsifiable Promise and the purposes refused
   (`docs/concept/03-cbc-framing.md`).
-- **System Definition** — the second: the system's authority,
+- **System Definition** — the second CBC Framing Export: the system's authority,
   boundary, adversary and owners (`docs/concept/03-cbc-framing.md`).
-- **Invariant Slice Registry** — the third: the work cut into
+- **Invariant Slice Registry** — the third CBC Framing Export: the work cut into
   Invariant Slices, in an order that evidence may change
   (`docs/concept/03-cbc-framing.md`).
 - **Enemy Fact** — one attackable fact about something outside the
@@ -76,8 +76,8 @@
   Possession, to see what dies (`docs/concept/03-cbc-framing.md`).
 - **Enemy Collision Kill** — what dies in an Enemy Collision, named
   without its cure: "a retry lands twice and the order exists twice"
-  (`docs/concept/03-cbc-framing.md`). Written by the Enemy Collision
-  Kill Shape.
+  (`docs/concept/03-cbc-framing.md`). Its form is the Enemy Collision
+  Kill Shape's (`.claude/shapes/kill.md`).
 - **Invariant Slice** — the second part of the work and its unit:
   one System Never-Event from the System Guarantee Inventory made
   real end to end, closed when it survives its attack
@@ -116,7 +116,7 @@
   Census Probe result: a new fact, nothing new, or out of scope; every
   result gets one
   (`.claude/skills/cbc-framing/references/cbc-framing-workflow.md`).
-- **Enemy Census Probe Log** — each Enemy Census Probe's lens, stamps
+- **Enemy Census Probe Log** — each Enemy Census Probe's Enemy Census Probe Lens, Enemy Census Probe Stamps
   and findings, written into LAYER-1-ENVIRONMENT
   (`.claude/skills/cbc-framing/references/cbc-framing-workflow.md`).
 - **Enemy Census Saturation** — the Enemy Census's end: two Enemy
@@ -172,8 +172,8 @@
 - **CBC Framing Export Filter** — the rule that a CBC Framing Export
   never refers to the CBC Framing Derivation's working
   (`.claude/skills/cbc-framing/SKILL.md`).
-- **Agent Language** — words that name an Agent Skill, a workflow
-  stage or the CBC Run's arrangement; a CBC Framing Export never holds
+- **Agent Language** — words that name an Agent Skill, an Agent
+  Skill Stage or the CBC Run's arrangement; a CBC Framing Export never holds
   them (`.claude/skills/cbc-framing/SKILL.md`).
 - **CBC Framing Export Revision** — a dated change to a CBC Framing
   Export: what changed, why, and what set it off, during CBC Framing
@@ -181,9 +181,9 @@
 - **Correctness Specification** — the cbc-slice Agent Skill's Stage 1
   output: the invariant, its Invariant Slice Guarantees, their
   Evidence Criteria and the Adversity Model
-  (`.claude/skills/cbc-slice/SKILL.md`).
+  (`.claude/skills/cbc-slice/references/cbc-slice-workflow.md`).
 - **Invariant Slice Guarantee** — one property the Invariant Slice's
-  invariant needs, found by attacking it, stated without a strategy;
+  invariant needs, found by attacking it, stated without a mechanism;
   GUARANTEE-n (`.claude/skills/cbc-slice/SKILL.md`).
 - **Invariant Slice Guarantee Challenge** — the attack on the
   invariant that yields its Invariant Slice Guarantees, kept up until
