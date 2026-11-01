@@ -17,7 +17,7 @@ manual before anyone judged whether it was one.
 ## The life of an Approach on Trial
 
 1. **Drafted:** during its first use, specific to that work, by
-   `approach-drafting`.
+   the approach-drafting Approach on Trial.
 2. **On trial:** rewritten in general at its first evaluation. Each
    later use adds a dated note and is evaluated again.
 3. **Placed or dropped:** a piece is placed into a convention when
@@ -27,7 +27,7 @@ manual before anyone judged whether it was one.
 ## When it opens
 
 - **A drafted Approach on Trial is handed over.** Ours, at the close of
-  `approach-drafting`. A CBC Run's, when a CBC Run Reading meets its offer line
+  the approach-drafting Approach on Trial. A CBC Run's, when a CBC Run Reading meets its offer line
   under *To the deliverer*.
 - **An Approach on Trial has a new dated note** from a later use,
   ours or a CBC Run's.
@@ -75,7 +75,7 @@ either.
 - **An Approach on Trial splits by Convention Seat only when a whole part is used by one
   Convention Seat alone.** That part becomes an Approach on Trial of its own, and the
   other Convention Seat never receives it. This one split from
-  `approach-drafting` that way.
+  the approach-drafting Approach on Trial that way.
 - **A step that differs is marked inline** in the shared Approach on Trial:
   "At the Concept Deliverer:", "In a CBC Run:". Not "here", which means the
   reader's own Convention Seat.
@@ -89,7 +89,7 @@ either.
 
 ## The reviewer's reading is the check
 
-This Approach on Trial judges Approaches on Trial, itself and `approach-drafting`
+This Approach on Trial judges Approaches on Trial, itself and the approach-drafting Approach on Trial
 among them. The agent will tend to find its own Approach on Trial good. So
 the agent proposes, the reviewer decides each ending, and no
 evaluation closes on the agent's word.
@@ -99,9 +99,9 @@ evaluation closes on the agent's word.
 - **Whether a manual still goes on trial.** A convention could be
   adopted marked on trial, as first-time work was. Now unproven work
   stays in Approaches on Trial, and the mark may no longer be needed.
-- **Whether each Approach on Trial's "settled when" is enough,** or placing
-  needs a floor of uses.
-- **Whether this and `approach-drafting` become one convention**
+- **Whether each Approach on Trial's *Settled when* is enough,** or placing
+  needs a set number of uses first.
+- **Whether this and the approach-drafting Approach on Trial become one convention**
   when placed: one manual, an Agent Skill for each Convention Seat.
 - **What a CBC Run does with a piece left as the project's own:** keeps
   it as its Approach on Trial, or writes it as an Agent Skill or Agent Rule of
@@ -111,7 +111,7 @@ evaluation closes on the agent's word.
   that shows it big enough splits it.
 - **How a CBC Run's offered Approach on Trial reaches this evaluation.** Only
   *When it opens* says so. Weighed on 2026-10-20: an Agent Skill opening
-  when a CBC Run Reading meets the offer line; `working-a-reading.md`
+  when a CBC Run Reading meets the offer line; the working-a-reading Agent Rule
   pointing here; or nothing, the CBC Run Reading working it by hand.
 
 ## Ways rejected

@@ -20,7 +20,7 @@ in the method's voice, though its memory said to explain plainly
 The need was written down on 2026-10-17. Most of this repo's text
 then predated four rules:
 
-- writing, and one home per fact;
+- the writing and one-home Agent Rules;
 - the Foundation Check (2026-10-17);
 - a lesson written in general (`docs/conventions/conventions/`
   §2.6, *A lesson taken*, 2026-10-18).
@@ -41,7 +41,7 @@ Look again at that Plan Step's close.
 Nothing yet: the close decides
 (`.claude/approaches-on-trial/approach-evaluation.md`). While a refinement is open, a repo holds:
 
-- **its Plan Step in `PLAN.md`**, whose Notes list this page's Approach Stages;
+- **its Plan Step in `PLAN.md`**, whose Notes list this page's Approach on Trial Stages;
 - **its file, `temp/refinement-<date>.md`**, deleted at the close.
 
 What derives from this page is that list. A change here walks it.
@@ -55,21 +55,15 @@ is the Concept Deliverer's.
 
 ## 1. What it reads
 
-A refinement reads Living Text against the rules it names. Its
+A refinement reads Living Text (`docs/conventions/facts-in-sync/` §1,
+*One home*) against the rules it names. It leaves out `docs/baselines/`, frozen on purpose,
+and a CBC Run's own text in `temp/`, which its CBC Run Reading reads. Its
 Finding Kinds are its own, so they are written in its file, not here.
 
 ### 1.1 The refinement's words
 
 The words of this page, each defined once:
 
-- **Living Text** — every file but history. History is the
-  devlog, closed ADRs, commit bodies, the entries of
-  `.claude/decisions.md` and the parts of
-  `TODO-CONVERSATION-MEMORY.md`, but not those two files' header
-  comments
-  (`docs/conventions/facts-in-sync/` §1, One home). Also left out: `docs/baselines/`,
-  frozen on purpose, and a CBC Run's own text in `temp/`, which its
-  CBC Run Reading reads.
 - **Finding Kind** — one rule the refinement reads against, and the
   findings it makes. Written as what a finding of it is, the rule,
   and its Refinement Round.
@@ -85,7 +79,7 @@ A map of the Approach on Trial Stages. Each section holds its rule.
 | Stage | Does | The refinement's file |
 |---|---|---|
 | 2.1 Group the Finding Kinds | Finding Kinds from TODO, each in its Refinement Round | created, with the Finding Kinds |
-| 2.2 List the files | every living file into a Refinement Layer, with counts | the Refinement Layer list |
+| 2.2 List the files | every file of Living Text into a Refinement Layer, with counts | the Refinement Layer list |
 | 2.3 Check the rules | before each Refinement Round: doubts found, and tried on a sample | each rule's result |
 | 2.4–2.8 Each Refinement Round | read, list the findings, decide, work, close | the Refinement Round's section; its findings collapse at its close |
 | 2.9 The last read | every Finding Kind, read until nothing is found | its section |
@@ -125,20 +119,20 @@ and their Refinement Rounds.
 
 ### 2.2 List the files
 
-The agent lists the living files (§1, *What it reads*) in the file, by Refinement Layer, with
+The agent lists the files of Living Text (§1, *What it reads*) in the file, by Refinement Layer, with
 their counts. Every refinement starts from these six Refinement Layers, in an
 order that puts a source before what derives from it:
 
 1. the conventions manual, `docs/conventions/conventions/`, which
    every other manual is read against;
-2. project-recording, with the map of the records, which other
+2. project-recording, with its list of the records, which other
    text points to;
 3. the other manuals, and the concept chapters;
 4. `ARCHITECTURE.md`, `README.md` and the records;
 5. our Agent Skills and Agent Rules, under `.claude/`;
 6. `delivery/`, what ships.
 
-Every living file falls in exactly one Refinement Layer. When the list finds a
+Every file of Living Text falls in exactly one Refinement Layer. When the list finds a
 file that fits none, a Refinement Layer is widened to hold it, or a new one
 is added, and the file records it. Each Refinement Round shows from
 this list that it covered every file. The reviewer confirms the
@@ -392,7 +386,7 @@ goes, and its evaluation at the close places its pieces
 
 ## Decisions
 
-- ADR-0053 — *What it is for*: writing, and one home per fact
+- ADR-0053 — *What it is for*: the writing and one-home Agent Rules
 - ADR-0056 — *Why it arrives this way*: first written as a manual on
   trial by first-time work
 - ADR-0058 — *Why it arrives this way*: an Approach on Trial

@@ -1,6 +1,6 @@
 ---
 name: exchange-deliver
-description: Write the Delivery Note and stage a delivery into a CBC Run's temp/. Use when the reviewer says to deliver — after a CBC Run Reading, or when something a CBC Run holds has changed here — and for a Delivery Note alone when a CBC Run Reading found nothing to send.
+description: Write the Delivery Note and stage a delivery into a CBC Run's temp/. Use when the reviewer says to deliver: after a CBC Run Reading, or when something a CBC Run holds has changed here. Use it too for a Delivery Note alone, when a CBC Run Reading found nothing to send.
 foundation: the exchange convention
 ---
 
@@ -18,9 +18,9 @@ In `temp/note-to-<run>-<date>.md`, told, not delivered: the CBC Run
 reads it through the Told Channel, as session input, not as a copy it
 keeps (`docs/models/tiers.md` §3.2, *The Told Channel*).
 
-0. **If the CBC Run moved since the CBC Run Reading, run `exchange-read` on the new
+0. **If the CBC Run moved since the CBC Run Reading, run the exchange-read Agent Skill on the new
    span.** The CBC Run Reading's first line names `R`; if `R..HEAD` is not
-   empty, run `exchange-read`'s Stages 2 to 4 on it. The three things
+   empty, run the exchange-read Agent Skill's Stages 2 to 4 on it. The three things
    it reads are the filter. The CBC Run's own building yields nothing,
    and the extension is empty in seconds. A copy edited or a line to
    us yields items. They take the next numbers and are worked before
@@ -39,7 +39,7 @@ keeps (`docs/models/tiers.md` §3.2, *The Told Channel*).
      'delivery/*/docs/glossary/*'
    ```
 
-   Those are the copies, and only they travel after birth
+   Those are the copies, and only they are delivered after CBC Run Birth
    (`docs/conventions/exchange/` §3.2, *What goes*); the trailing `/*` is what
    makes git match inside them.
 
@@ -86,8 +86,8 @@ keeps (`docs/models/tiers.md` §3.2, *The Told Channel*).
 6. Nothing that needs our repo to verify. A claim the CBC Run cannot
    check from its own tree is a claim it can never check, so it stays
    open. Where one
-   cannot be avoided — a thin Delivery Note, material outside the delivery, a
-   negative claim — the Delivery Note says so, in a clause.
+   cannot be avoided, the Delivery Note says so, in a clause. That happens in three cases: a thin Delivery Note, material outside the delivery, a
+   negative claim.
 
 7. **No ADR number, no path in this repo, no word of our own
    vocabulary.** The Delivery Note goes through the Told Channel, and
@@ -96,14 +96,14 @@ keeps (`docs/models/tiers.md` §3.2, *The Told Channel*).
 8. **A third repository gets both names**: ours, by ordinal, and the
    one it gave itself.
 
-9. **Commit the Delivery Note last.** The commit after this one is `H`, and
+9. **Commit the Delivery Note last.** Its commit is `H`, and
    the Delivery Staging is named by it.
 
-## Stage 2 — stage and copy across
+## Stage 2 — stage the delivery and copy it across
 
 Why it is staged so: (`docs/conventions/exchange/` §3.1, *Delivery Staging*).
 
-On the reviewer's word. If the agent stages, it runs steps 1 and
+On the reviewer's word. If the agent stages the delivery, it runs steps 1 and
 2, reports, and waits for the word before step 3.
 
 1. **The CBC Run's tree is quiet, and nothing of ours is in its
@@ -152,7 +152,7 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
    records, the Entry File, `README.md`, the Decisions Log and the Hygiene
    Base went at birth and are the CBC Run's.
 
-   `concept/` is the one path that is not a mirror
+   `concept/` is the one path that moves: it lands at `docs/concept/` in the CBC Run
    (`docs/conventions/exchange/` §3.3, *A group's place in the tree*).
 
    The `chmod` is there because `mktemp -d` makes the folder
@@ -167,7 +167,7 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
    cp temp/note-to-<run>-<date>.md "$run"/temp/
    ```
 
-   The CBC Run's Agent Rule takes it from there. The Delivery Staging and the Delivery Note
+   The CBC Run's delivered-copies Agent Rule takes it from there. The Delivery Staging and the Delivery Note
    leave `temp/` when it has; whatever else is there is the CBC Run's.
 
 ## A Delivery Note without files
@@ -195,10 +195,10 @@ does not move.
 
 - It does not decide verdicts. They come from the CBC Run Reading, as its
   items ended.
-- It does not take. The CBC Run's Agent Rule does, from `temp/`, in its own
+- It does not take. The CBC Run's delivered-copies Agent Rule does, from `temp/`, in its own
   time.
-- Birth: every file of each group into the Newborn CBC Run's root, not
-  only the copies Stage 2's step 2 takes, followed by the Delivery Fills —
+- CBC Run Birth: every file of each group into the Newborn CBC Run's root, not
+  only the copies Stage 2's step 2 takes, followed by the Delivery Fills.
   `delivery/installs/pure-seed.md` has the rest.
 
 ---

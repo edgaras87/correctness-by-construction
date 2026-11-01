@@ -8,7 +8,7 @@ foundation: the exchange convention
 
 Four Agent Skill Stages, and the fourth writes a document. What
 happens to the document afterwards is work, not this Agent Skill;
-when the work is done, `exchange-deliver` carries the verdicts down.
+when the work is done, the exchange-deliver Agent Skill carries the verdicts down.
 
 Why the read is done so: (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*).
 
@@ -29,8 +29,8 @@ git -C "$run" log --oneline R..HEAD
 ```
 
 That `HEAD` is the Read-Through Commit. Write it now as the CBC Run
-Reading's first line, a new CBC Run Reading's or the open one's,
-moved, before anything is read.
+Reading's first line, before anything is read. In an open CBC Run
+Reading, the first line moves to it.
 
 ## Stage 3 — Read three things
 
@@ -97,7 +97,7 @@ time.
 
 - It does not decide. Each item ends as taken, declined or held in
   the work that follows, where the Exchange Convention says each lands.
-- It does not send. `exchange-deliver` does. A read that sends no
+- It does not send. The exchange-deliver Agent Skill does. A read that sends no
   Delivery Note has not finished: the CBC Run's Read-Through Commit
   stays where it was, and the CBC Run cannot tell it was read.
 

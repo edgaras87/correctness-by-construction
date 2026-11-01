@@ -38,7 +38,7 @@ text below it (`docs/models/idea-to-output.md` §3.2, *The direction of a link*)
 5. **This repo's facts leave the Idea Model:** about the repo, to
    `README.md`; about how it works, to the manual.
 6. **Mark what stays as an example:** "here, for example".
-7. **Grep, then walk.** Grep every living reference to the facts' old
+7. **Grep, then walk.** Grep every reference in Living Text to the facts' old
    home (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*); then walk what stands on the Idea Model and on the
    lower text (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
 
@@ -69,7 +69,7 @@ text below it (`docs/models/idea-to-output.md` §3.2, *The direction of a link*)
 ## Settled when
 
 It has placed a second Idea Model's borrowed facts, from a different
-lower text, and that use changed nothing in its stages.
+lower text, and that use changed nothing in its Approach on Trial Stages.
 
 ## Uses
 

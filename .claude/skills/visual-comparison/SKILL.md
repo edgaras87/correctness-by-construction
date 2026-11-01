@@ -1,14 +1,13 @@
 ---
 name: visual-comparison
-description: Settle how a structure is shown — a picture, a table, a plain list — by writing down what the reader must get and rendering every candidate against it. Use when a diagram might be the answer, including deciding it should not be.
+description: Settle how a structure is shown: a picture, a table or a plain list. Write down what the reader must get, and render every candidate against it. Use when a diagram might be the answer, including deciding it should not be.
 foundation: the visual-comparison convention
 ---
 
 # Visual Comparison
 
 How a structure is shown is settled by rendering, not by argument.
-Write what the reader must get *before* looking at candidates,
-build each one, judge it line by line, and let the render decide.
+Write what the reader must get *before* looking at candidates.
 
 The steps are:
 
@@ -21,8 +20,8 @@ What makes it its own method is the
 failure mode only a picture has: *a notation that asserts something
 you did not mean*, and what that has cost.
 
-Kind: playbook — copied into a fresh draft each time, never
-executed in place.
+Kind: an Agent Skill copied into a fresh draft each time, never
+run in place.
 
 ## 1. When this fires
 
@@ -138,7 +137,7 @@ name the case, it is not an entry yet.
 ## 5. What this does not do
 
 - It does not choose a format for another repo. Our Mermaid trial
-  is provisional and does not travel; a CBC Run decides its own forms.
+  is provisional and is not delivered; a CBC Run decides its own forms.
 - It does not run on a schedule, and it is not a review of forms
   already settled.
 
@@ -152,7 +151,7 @@ name the case, it is not an entry yet.
 - ADR-0027, decision 2 — §4's "using a dialect is not fighting
   it": a candidate that needs the layout fought has lost
 - ADR-0027, decision 3 — §5's Mermaid trial, provisional and not
-  travelling
+  delivered
 - ADR-0028 — the trigger fired; this Agent Skill is its answer, and §4
   growing or not is the test of the objection it records
 - ADR-0030 — the general method separated out; §4's discipline

@@ -1,7 +1,7 @@
 # Auto run
 
 **On trial.** How the Concept Deliverer prepares a CBC Run that works on full
-auto, from its birth to its Release, and births it. Drafted for CBC Run
+auto, from its CBC Run Birth to its Release, and runs its CBC Run Birth. Drafted for CBC Run
 5 by `.claude/approaches-on-trial/approach-drafting.md`.
 
 ## What it is for
@@ -22,7 +22,7 @@ started CBC Run 4 (`temp/RUN-4.md`). Never on our Convention Seat.
    Decisions Log and its `RETRO.md`: how full auto went, and what
    it skipped, deferred or did by hand for want of a way. Each
    finding says keep, change or add, for this CBC Run. This is not
-   the CBC Run's CBC Run Reading (`exchange-read`), which harvests its
+   a CBC Run Reading of it (the exchange-read Agent Skill), which harvests its
    lessons. Those lessons do not reach this CBC Run. The reviewer is
    told that cost.
 2. **The intent is the reviewer's.** The agent may draft it when
@@ -31,32 +31,32 @@ started CBC Run 4 (`temp/RUN-4.md`). Never on our Convention Seat.
    and whether its size fits a CBC Run. It is written as the CBC Run
    Briefing, which CBC Framing commits unchanged, so it brings the
    problem and leaves the Falsifiable Promise open.
-3. **Settle what TODO says is due before a birth.**
+3. **Settle what TODO says is due before a CBC Run Birth.**
 4. **Write the CBC Run Hand-off,** in this repo's `temp/`, from Stage 1's
    findings. It says what full auto means for this CBC Run:
    - it decides everything, and logs each decision with what it
      rejected;
    - what is settled before it starts, if anything;
    - how its copies are edited: the shipped
-     `delivered-copies.md` rule;
+     delivered-copies Agent Rule;
    - work with no way written down gets an Approach on Trial,
-     drafted by the shipped `approach-drafting`;
-   - how far it may grow or shrink: the CBC Run Briefing's Out, what
-     the system will not do, is closed, and what CBC Framing finds
-     there is refused in writing; a bound on Responsibility Areas and
-     Invariant Slices, past which is a Real question, one the CBC Run
-     must not decide alone; every trouble the CBC Run Briefing names
-     staged by a test;
+     drafted by the shipped approach-drafting Approach on Trial;
+   - how far it may grow or shrink:
+     - the CBC Run Briefing's Out, what the system will not do, is
+       closed, and what CBC Framing finds there is refused in writing;
+     - a bound on Responsibility Areas and Invariant Slices, past which
+       is a Real question, one the CBC Run must not decide alone;
+     - every trouble the CBC Run Briefing names is created by a test;
    - how an Agent Skill's sign-off is given on full auto;
    - its commits and branches; never a push;
    - when auto ends, and what waits for the reviewer then;
    - its `CLAUDE.local.md`.
 5. **Main takes the Plan Step's branch,** so the Delivery Pin is a commit main
    holds.
-6. **Birth by `delivery/installs/pure-seed.md`,** from a clean
+6. **CBC Run Birth by `delivery/installs/pure-seed.md`,** from a clean
    tree. The intent and the CBC Run Hand-off go into the Newborn CBC Run's `temp/`.
    The reviewer starts the CBC Run with the Pure Seed's own prompt, its
-   review lines replaced by full auto. So the birth stays comparable
+   review lines replaced by full auto. So the CBC Run Birth stays comparable
    with every other. Nothing else is composed for it.
 
 ## Not known yet
@@ -93,14 +93,14 @@ started CBC Run 4 (`temp/RUN-4.md`). Never on our Convention Seat.
 
 ## Uses
 
-*The Concept Deliverer, CBC Run 5's birth, 2026-10-21 to 2026-10-22.*
+*The Concept Deliverer, CBC Run 5's CBC Run Birth, 2026-10-21 to 2026-10-22.*
 Prepared and born in one evening, 19 commits:
 - three readers on CBC Run 4 at the default effort, all three paid;
 - the CBC Run Briefing drafted on the reviewer's ask and decided
   line by line;
-- two items due before a birth settled (`cd69ed7`);
+- two items due before a CBC Run Birth settled (`cd69ed7`);
 - a CBC Run Hand-off of five files;
-- the birth from main at `ae8a041`, started on Fable 5.1 with the
+- the CBC Run Birth from main at `ae8a041`, started on Fable 5.1 with the
   Pure Seed's prompt.
 
 CBC Run 5 ran from 00:54 to 04:54 and from 08:28 to 08:45, through
@@ -108,10 +108,10 @@ Release: 13 Plan Steps, 6 Invariant Slices, 254 commits, 11 `red/`
 and 13 `try/` branches, no remote, no push, the model unchanged.
 Taught:
 - **the Newborn CBC Run reads its CBC Run Hand-off:** within 13
-  minutes it drafted an Approach on Trial for the birth, delegated
+  minutes it drafted an Approach on Trial for its CBC Run Birth, delegated
   every sign-off and adopted `run.md` as `docs/run.md`; by Release it
   had drafted four Approaches on Trial of its own and noted its use
-  of `approach-drafting`;
+  of the approach-drafting Approach on Trial;
 - **the machine stopped it, not the agent:** a power-off at 04:54
   cost 3 hours 31 minutes and a restart; the CBC Run picked up on one
   question from the reviewer, and dated its last two Plan Steps a day
@@ -130,5 +130,5 @@ will say.
 
 ## Decisions
 
-- ADR-0061 — *Uses*, CBC Run 5's birth: the two items due before a
-  birth
+- ADR-0061 — *Uses*, CBC Run 5's CBC Run Birth: the two items due before a
+  CBC Run Birth

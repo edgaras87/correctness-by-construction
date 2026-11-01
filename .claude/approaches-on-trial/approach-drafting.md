@@ -39,7 +39,7 @@ its own heading.
 3. **Write the Approach on Trial** at
    `.claude/approaches-on-trial/<work>.md`, `<work>` the kind of work
    in a word or two. The name starts with `approach-` only when its
-   subject is approaches. It holds:
+   subject is Approaches on Trial. It holds:
    - what the work is for;
    - its Approach on Trial Stages, in order;
    - what is not known yet;
@@ -64,10 +64,10 @@ its own heading.
 
 ### 3. Close
 
-1. **Write this use's note** under the Approach on Trial's uses, dated: what
+1. **Write this use's note** under the Approach on Trial's *Uses*, dated: what
    the work did, what it taught, what is still not known.
 2. **Hand it over for evaluation.**
-   - **At the Concept Deliverer:** open `approach-evaluation`.
+   - **At the Concept Deliverer:** open the approach-evaluation Approach on Trial.
    - **In a CBC Run:** one line under TODO's *To the deliverer* offers
      it, with its path and the commits that hold its history, so the
      Concept Deliverer reads how it grew. Example: "Approach on Trial,
@@ -91,8 +91,8 @@ from another way.
 - **What catches a work item outside a Plan Step.** A Plan Step's opening
   items ask whether its Work Approach is known. A small TODO item has no
   such item, and no Agent Skill description catches it any more.
-- **Whether the form holds:** what for, stages, not known, ways
-  rejected, uses.
+- **Whether the form holds:** *What it is for*, *Stages*, *Not known yet*, *Ways
+  rejected*, *Uses*.
 
 ## Settled when
 
@@ -112,10 +112,12 @@ ran three CBC Run Readings, then became an Agent Rule. Taught: a draft can becom
 an Agent Rule, not only an Agent Skill.
 
 *The Concept Deliverer, the redesign of the conventions manual, 2026-10-19.* Drafted as a manual on
-trial in `docs/conventions/`. It closed in three pieces: its work
-to the file of the refinement, the Concept Deliverer's fixing of its
-own text against its rules; two ideas to TODO; its way of judging a
-fix to the refinement. The manual was dropped. Taught: the close
+trial in `docs/conventions/`. It closed in three pieces:
+- its work, to the refinement's file;
+- two ideas, to TODO;
+- its way of judging a fix, to the refinement.
+
+The refinement is the Concept Deliverer's fixing of its own text against its rules. The manual was dropped. Taught: the close
 places pieces; it does not make one form.
 
 *The Concept Deliverer, the refinement, from 2026-10-18.* Drafted as a

@@ -89,8 +89,8 @@ section.>
   table: every record whose moment this Change Set will create gets a
   commit, at the boundary where its truth exists. A Change Set that closes
   a `PLAN.md` Plan Step Gate item names the commit that closes it. A change to
-  the agent's own files — an Agent Skill or Agent Rule corrected or added, its
-  decisions entry — is a commit of its own, never
+  the agent's own files is a commit of its own: an Agent Skill or Agent Rule corrected or added, and
+  its Decisions Log entry. It is never
   folded into a records commit, since the two are kept apart
   (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*). A records commit planned to carry one has to be split
   when it opens.
@@ -114,15 +114,15 @@ section.>
   ADR committed Accepted early claims that no later boundary can
   contradict it. An abandoned Change Set leaves its ADRs Proposed.
 - **Before the close, sweep for every name the Change Set moved.** When a
-  commit renamed, renumbered, retitled or moved anything, grep live
-  text for each old identifier, path, number and title — all of
+  commit renamed, renumbered, retitled or moved anything, grep Living Text
+  for each old identifier, path, number and title: all of
   them, not the one being described. A
   renumbering moves every number, so the search is the whole span;
   the cheapest form is every old value at once. Grep the text
-  unwrapped, its lines joined and its spaces squeezed —
-  `tr '\n' ' ' | tr -s ' '` — since a name the file breaks across
+  unwrapped, its lines joined and its spaces squeezed
+  (`tr '\n' ' ' | tr -s ' '`), since a name the file breaks across
   two lines is invisible to a line-by-line grep. What is history
-  stays; what points at the old name from live text is the defect.
+  stays; what points at the old name from Living Text is the defect.
 - **Before the close, look back at the landed commits as a whole.**
   Where a better grouping shows (two that are one change, or one
   that is two), propose it to the reviewer, regroup on the word, and
