@@ -28,8 +28,8 @@ concept; start with [00-cbc.md](docs/concept/00-cbc.md).
 <!-- A line here is true now, and meant for someone arriving from
      outside. What changes weekly is PLAN.md's; why is the ADRs'; how
      it went is the devlog's. A missing section is not an omission: it
-     arrives when a Plan Step's gate makes it true — projection follows
-     truth. Once the project runs: its prerequisites, the one command
+     arrives when a Plan Step's gate makes it true: the README says only
+     what is already true. Once the project runs: its prerequisites, the one command
      that builds and runs it from a clean clone, and how to run its
      tests, each when it becomes true.
      Why the form is as it is: (CBC docs/conventions/project-recording/

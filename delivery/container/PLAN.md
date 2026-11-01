@@ -20,7 +20,7 @@
 `[ ]` planned  ·  `[~]` in progress  ·  `[x]` done (+date)  ·  `[!]` blocked (+what unblocks) or stopped (+the Plan Step first)  ·  `[-]` skipped (+why)
 
 **Gate** = exit criteria: verifiable facts, not intentions. A Plan Step is done only when every gate item is true.
-Detail only the next 1–2 Plan Steps finely; keep later Plan Steps coarse (rolling wave).
+Detail only the next 1–2 Plan Steps finely; keep later Plan Steps coarse, the detail moving forward as Plan Steps close.
 
 ---
 
