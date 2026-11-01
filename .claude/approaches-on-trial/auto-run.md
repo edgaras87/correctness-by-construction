@@ -83,9 +83,9 @@ started CBC Run 4 (`temp/RUN-4.md`). Never on our Convention Seat.
 ## Ways rejected
 
 - **Autonomy built into the Container Group now,** a shipped Agent Rule that
-  makes any CBC Run full-auto. Rejected for now: one full-auto CBC Run has
-  been lived, and a shipped Agent Rule would decide for every CBC Run what
-  one has shown. Stage 4's parts are its candidates.
+  makes any CBC Run full-auto. Rejected for now, when it was drafted on 2026-10-21: one full-auto
+  CBC Run had been lived, and a shipped Agent Rule would decide for
+  every CBC Run what one had shown. Stage 4's parts are its candidates.
 - **No CBC Run Hand-off: the intent and `CLAUDE.local.md` alone,** relying
   on the shipped Agent Skills. Rejected: CBC Run 4's CBC Run Hand-off settled how
   sign-offs, new work and copies go on full auto, and the Agent Skills
