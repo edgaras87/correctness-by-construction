@@ -4468,6 +4468,7 @@ Left to the reviewer alone, with no call:
 
 Decided by the reviewer, 2026-11-01, during the work:
 - **FINDING-1444:** a held edit is re-applied on top at a Delivery Take, as an unanswered one is, and stands until a later Delivery Note answers it.
+- **FINDING-1432:** (c), the line names both channels: the Record Stub arrives by the Installed Channel, and its rule is read by the Pulled Channel.
 - **FINDING-1431,** met at commit 7 with no TODO item to point at: a TODO item, "Judge the Conversation Memory trial", holds it, its trigger the close of the refinement Plan Step (`056d14a`).
 
 ### DECISION-49's pass
