@@ -32,7 +32,7 @@ Nothing shipped of its own; what a repo holds is:
 - **the index, `docs/conventions/README.md`** — it points. It holds
   the order the conventions act in during a piece of work, relations
   only (ADR-0032). One line sends a reader here and to
-  `ARCHITECTURE.md` (§1.2, *The conventions — `docs/conventions/`*).
+  `ARCHITECTURE.md` (§1.2, *The conventions*).
 
 What derives from this page is that list. A change here walks it;
 a change forced in one of them is checked back against this page.
@@ -301,8 +301,7 @@ placing takes these steps:
 4. The index's chain, only if the convention acts in sequence
    during a piece of work.
 5. The convention's line in `ARCHITECTURE.md`: a phrase and its
-   manual's path (`ARCHITECTURE.md` §1.2, *The conventions —
-   `docs/conventions/`*).
+   manual's path (`ARCHITECTURE.md` §1.2, *The conventions*).
 6. What the Concept Deliverer holds of it, derived from the manual: for an
    Agent Skill, its own under `.claude/skills/`. That Agent Skill lands
    in its own agent-scoped commit, with an entry in

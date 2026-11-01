@@ -5,7 +5,7 @@ during a piece of work hand to each other, from an idea to committed
 work. The others relate through what they govern, read or describe,
 and each states those relations in its manual's *What this does not
 cover*. Which conventions there are and what each covers is
-`ARCHITECTURE.md`'s (§1.2, *The conventions — `docs/conventions/`*).
+`ARCHITECTURE.md`'s (§1.2, *The conventions*).
 What a convention is, how one is written and how one is added is
 `docs/conventions/conventions/`.
 
