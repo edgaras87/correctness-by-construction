@@ -125,7 +125,7 @@ What follows from it:
 - the README's Run section names the symptom.
 
 Whether the app should refuse to start without its secret is a
-*what*, not a wiring detail. It is decided at Stage 1 by name. One
+*what*, not a wiring detail. It is decided at the cbc-bootstrap Agent Skill's Stage 1 by name. One
 CBC Run decided it at release, not at the CBC Bootstrap. It is never
 absorbed here.
 
@@ -207,7 +207,7 @@ variation points before writing a line.
 
 **Traps, exact:**
 1. `spring-boot-restclient` must be present **at test scope** on
-   Boot 4, or the web test context dies with
+   Boot 4, or the web test context fails with
    `NoClassDefFoundError: RestTemplateBuilder`. The failure names
    something else.
 2. Boot 4 moved the test REST client:
@@ -235,7 +235,7 @@ all passing.
 
 - **The CBC Bootstrap Probe's endpoint,** in main source: one real
   round-trip to the database as the `runtime` role. Its own javadoc
-  documents it as **scaffolding that dies when the first real
+  documents it as **scaffolding, deleted when the first real
   Invariant Slice lands.** It never grows business meaning.
 - **The CBC Bootstrap Probe's test:** many requests (one CBC Run used
   a hundred) held at a barrier and **released at one instant.** Each
@@ -244,7 +244,7 @@ all passing.
   one instant *is* the shape later race evidence takes, aimed at
   nothing yet.
 - The CBC Bootstrap Probe as code, the endpoint, the barrier test and
-  the javadoc that schedules its death, is in
+  the javadoc that schedules its deletion, is in
   `.claude/skills/cbc-bootstrap/references/spring-harness-reference.md`,
   under the same rule: imitate, never paste.
 - **When the System Definition's Runtime Ground names more than one
@@ -296,9 +296,9 @@ all passing.
 ## The exit
 
 The project's records grown: the stack, the run and test commands,
-the Operator Manual linked, an honest "no business behavior yet",
-the CBC Bootstrap Probe's death scheduled at the first Invariant
-Slice.
+the Operator Manual linked, "no business behavior yet" said
+outright, the CBC Bootstrap Probe's deletion scheduled at the first
+Invariant Slice.
 
 ## Recall list — the traps compressed
 

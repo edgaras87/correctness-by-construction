@@ -71,11 +71,11 @@ the Output Shape, is shown before it is made, never applied silently:
   and the output is brought to the changed Output Shape.
 - **The output is a different kind.** Both stand, and a new Output Shape
   starts from the output (§1, *Written from work that exists*). Either of the last three can name
-  new work (§4, *When an Output Shape names work*).
+  new work (§4, *An Output Shape naming work*).
 
 Outputs closed before a change are not reopened.
 
-## 4. When an Output Shape names work
+## 4. An Output Shape naming work
 
 An Output Shape mostly names form: the order of parts, how they read. Some
 parts need work done during the Plan Step. Example: a Structural Wall

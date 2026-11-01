@@ -136,7 +136,7 @@ The repo's own conventions win. Where the Runtime Ground's record
 lives depends on what the repo keeps. Two CBC Runs worked it, and the
 shape below is theirs.
 
-- **A repo with records** (a plan, ADRs, a devlog: every project born
+- **A repo with records** (a plan, ADRs, a devlog: every project created
   from the container): **no Infrastructure Establishment Log.**
   - Decisions are ADRs:
     1. the Execution Environment;

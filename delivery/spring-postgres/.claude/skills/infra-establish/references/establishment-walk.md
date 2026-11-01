@@ -194,7 +194,7 @@ in this Agent Skill. Merge it and fill it, and the section is the CBC
 Run's own (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is copied and filled, never edited in place*).
 
 The stack's own prerequisite line is **not** written here. Its fact
-is born at the CBC Bootstrap, whose Agent Skill carries it. The
+is created at the CBC Bootstrap, whose Agent Skill carries it. The
 container's README has no Prerequisites section. It arrives now,
 because this Gate made it true.
 

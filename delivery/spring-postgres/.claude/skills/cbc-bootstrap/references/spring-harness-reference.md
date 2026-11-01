@@ -308,7 +308,7 @@ class MigrationPathIT extends DatabaseIT {
 
 **Outcomes** (step 5):
 1. **the endpoint,** in the main source, doing a real round-trip as
-   the `runtime` role. It is documented as scaffolding that dies when
+   the `runtime` role. It is documented as scaffolding, deleted when
    the first real Invariant Slice lands;
 2. **the test:** many requests held at a barrier and released at one
    instant. Each is a full HTTP → application → real-PostgreSQL
@@ -325,7 +325,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * SCAFFOLDING — dies when the first real Invariant Slice lands.
+ * SCAFFOLDING — deleted when the first real Invariant Slice lands.
  *
  * One real round-trip to the database as the runtime role, so the CBC
  * Bootstrap's Adversity Harness has a full HTTP → application → store
@@ -432,9 +432,9 @@ class ContentionProbeIT extends WebDatabaseIT {
   pool of that size (the third project) and virtual threads (the
   second) both satisfy it. Any pool smaller than the count weakens
   the burst.
-- **Both files are scaffolding, and both die together** at the first
+- **Both files are scaffolding, and both are deleted together** at the first
   Invariant Slice. The endpoint must never grow business meaning: the
-  real surface is born from its invariant, not extended out of the
+  real surface is created from its invariant, not extended out of the
   CBC Bootstrap Probe. Say this in the code, not only in an ADR: the
   javadoc is what the person deleting it will read.
 - **What this proves, and what it does not.** It proves the
@@ -532,7 +532,7 @@ class ContentionProbeIT extends WebDatabaseIT {
      body once and answers a path, `$.id`, `$.onHandCount`. So a
      field's value, presence and absence are each one assertion;
    - **by type when a shared API contract exists:** a client type
-     both sides compile against. None exists in a system born from
+     both sides compile against. None exists in a system built from
      its invariant, so path is the default;
    - **never by substring,** even for a word. An error title is a
      path too.

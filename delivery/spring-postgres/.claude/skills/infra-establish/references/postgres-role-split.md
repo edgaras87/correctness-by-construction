@@ -90,7 +90,7 @@ The load-bearing lines are the **default privileges** pair. Every
 table and sequence a future migration creates arrives already granted
 to `runtime`. So the split needs no grant discipline per migration,
 and cannot wear away one migration at a time. The connect revoke
-works the same way at the outermost door: access at every level
+works the same way for the connect right: access at every level
 exists by grant, never by default.
 
 `runtime` deliberately receives no `TRUNCATE`, no `REFERENCES`, no

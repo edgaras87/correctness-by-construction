@@ -1,6 +1,6 @@
 # Worked example: a tiny order service through both workflows
 
-*A demonstration run, invented for teaching, not a lived CBC Framing.
+*A demonstration run, invented for teaching, not a CBC Framing a CBC Run did.
 It shows Part 1 (CBC Framing, Stages 0 to 6), the three CBC Framing
 Exports it leaves behind, and how Part 2 (the cbc-slice workflow)
 consumes them. Kept deliberately small: one Falsifiable Promise, one

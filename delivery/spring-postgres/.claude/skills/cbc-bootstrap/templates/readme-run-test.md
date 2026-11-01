@@ -1,5 +1,5 @@
 <!-- Agent Skill Template — the Master Copy is in correctness-by-construction.
-     Merge into the CBC Run's README at Stage 5, when the Adversity
+     Merge into the CBC Run's README at the cbc-bootstrap Agent Skill's Stage 5, when the Adversity
      Harness is real, and fill from the certified commands. The filled
      sections are the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is copied and filled, never edited in place).
      Only the material below travels; this header stays with the

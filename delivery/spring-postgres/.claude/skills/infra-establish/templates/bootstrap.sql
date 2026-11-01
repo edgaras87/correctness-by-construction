@@ -52,8 +52,8 @@ CREATE SCHEMA <project_schema> AUTHORIZATION <project>_migrator;
 GRANT USAGE ON SCHEMA <project_schema> TO <project>_runtime;
 
 -- the DEFAULT SCHEMA named "public" (unrelated to the PUBLIC grant target
--- above) stops being usable by anyone — no side door beside the governed
--- schema. (PG15+ already revokes CREATE; this makes the whole stance explicit.)
+-- above) stops being usable by anyone — no second schema beside the
+-- governed one. (PG15+ already revokes CREATE; this makes the whole stance explicit.)
 REVOKE ALL ON SCHEMA public FROM PUBLIC;
 
 -- the load-bearing lines: every table and sequence a future migration creates

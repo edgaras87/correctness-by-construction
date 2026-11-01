@@ -63,8 +63,9 @@ Gate cannot run, and "done" becomes a feeling again.
 
 ## READINESS-5 — The Adversity Harness can fail
 
-Test it on itself: break an invariant deliberately, on a branch, by
-dropping the constraint or commenting out the guard. Confirm the
+Test it on itself: break an invariant deliberately, by dropping the
+constraint or commenting out the guard, in a state that never lands
+in history: a branch never merged, for one. Confirm the
 Evidence Test goes red, then restore. An Adversity Harness that has
 never failed proves nothing when it passes.
 

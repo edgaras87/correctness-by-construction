@@ -1,69 +1,88 @@
 ---
 name: infra-serve
-description: Add, change, or remove an infrastructure service or capability on an ALREADY-ESTABLISHED ground - a new dependency discovered during the project's build (a cache, a queue, a second datastore, a broker, an extension, a new port or capability on an existing service) re-enters the original need-constrained evaluation as one logged decision, with the manuals grown from the lived setup. Use whenever the user wants to add infrastructure to a project whose ground already stands - "we need Redis now", "add a message queue", "the new slice needs X", "open another port", "bump the postgres version" - even if it sounds like a small compose edit. Re-entry is the lived normal, never a failure of the first pass. Do NOT use for the first establishment (infra-establish) or for application/schema work (that is building, not ground).
+description: Add, change, or remove an Infrastructure Service or capability on an ALREADY-ESTABLISHED Runtime Ground. A new dependency found during the project's build (a cache, a queue, a second datastore, a broker, an extension, a new port or capability on an existing service) re-enters the original evaluation from need, as one logged decision, with the manuals grown from the setup as done. Use whenever the user wants to add infrastructure to a project whose Runtime Ground already stands, such as "we need Redis now", "add a message queue", "the new slice needs X", "open another port", "bump the postgres version", even if it sounds like a small compose edit. An Infrastructure Service Re-entry is the normal case, never a failure of the first pass. Do NOT use for the first Infrastructure Establishment (the infra-establish Agent Skill), or for application or schema work: that is building, not the Runtime Ground.
 foundation: practice, checked against concept v1
 ---
 
-# Infra serve — keeping an established ground
+# Infrastructure Service Re-entry — keeping an established Runtime Ground
 
-The ground stays governed after it stands: **every new dependency
-re-enters the evaluation** — the same constrained-by-need question the
-establishment asked, one logged decision, the manuals grown. Nothing
-joins the ground because it was easy to add.
+The Runtime Ground stays governed after it stands: **every new
+dependency re-enters the evaluation.** It is the same question from
+need that Infrastructure Establishment asked, one logged decision, and
+the manuals grown. Nothing joins the Runtime Ground because it was
+easy to add.
 
-## Stage 0 — the ground stands?
+## Stage 0 — the Runtime Ground stands?
 
-Verify: the ground's record exists with the original service
-evaluation and its not-provisioned list — the establishment log, or
-the ADR that holds the evaluation in a repo with records
-(`.claude/skills/infra-establish/SKILL.md`, *Records and outputs*); the infrastructure contract
-and operator manual exist; the ground currently comes up
-(`podman compose ps` or the project's equivalent — read the actual
-output). Any missing → this is not a re-entry; run infra-establish,
-or repair the record first.
+Check:
 
-Check the original evaluation: if the wanted service is **on the
-not-provisioned list**, the old exclusion's why must be answered by
-the new need — name what changed. If it isn't answered, the exclusion
-stands and the request is refused with that reasoning.
+1. **The Runtime Ground's record exists,** with the original
+   evaluation of Infrastructure Services and its Infrastructure
+   Service Exclusions: the Infrastructure Establishment Log, or, in a
+   repo with records, the ADR that holds the evaluation
+   (`.claude/skills/infra-establish/SKILL.md`, *Records and outputs*).
+2. **The Infrastructure Contract and the Operator Manual exist.**
+3. **The Runtime Ground comes up now:** `podman compose ps`, or the
+   project's equivalent. Read the actual output.
 
-## The re-entry, one pass
+Any missing: this is not an Infrastructure Service Re-entry. Run the
+infra-establish Agent Skill, or repair the record first.
 
-1. **Need.** What slice, invariant, or environment fact demands this —
-   concretely, what must the evidence or the system now be able to
-   *do* that the current ground refuses? "We'll probably need it" is
-   not a need; refuse anticipation even when cheap. Removals and
-   version changes take the same question in reverse: what need does
-   the current shape no longer serve?
-2. **Decision.** One entry in the ground's record — a log entry, or
-   an ADR in a repo with records: the need, the
-   service (or change) that answers it, what was considered and
-   excluded with each exclusion's why. The user's confirmation is the
-   verdict.
-3. **Constraints.** The new service gets its constraints named with
-   enforcement mechanisms, standing knowledge as the rebuttable
-   default where it exists (for a datastore: the role-split model,
-   `.claude/skills/infra-establish/references/postgres-role-split.md`). A changed service gets its existing
-   constraints re-checked against the change.
-4. **Stand up and verify both ways.** Ground files as complete files
-   (never fragments); secrets split out; then the catalog check *and*
-   the behavioral check for the new capability — expected result
-   stated before running, outcome read from actual output. A reused
-   service family may have a lived walkthrough among
-   `.claude/skills/infra-establish/references/` — consult it; never
+Check the original evaluation. If the wanted service is **an
+Infrastructure Service Exclusion,** the new need must answer the old
+exclusion's why: name what changed. If it is not answered, the
+exclusion stands, and the request is refused with that reasoning.
+
+## The Infrastructure Service Re-entry, one pass
+
+1. **Need.** What Invariant Slice, invariant, or environment fact
+   demands this? Concretely: what must the evidence or the system now
+   be able to *do* that the current Runtime Ground refuses? "We'll
+   probably need it" is not a need. Refuse anticipation, even when it
+   is cheap. Removals and version changes take the same question in
+   reverse: what need does the current shape no longer serve?
+2. **Decision.** One entry in the Runtime Ground's record: a log
+   entry, or an ADR in a repo with records. It holds:
+   - the need;
+   - the service, or change, that answers it;
+   - what was considered and excluded, each with its why.
+
+   The reviewer's confirmation is the verdict.
+3. **Constraints.** The new service gets its Infrastructure Service
+   Constraints named, with their enforcement mechanisms. Where a
+   reference exists, it is the default, unless a project fact defeats
+   it: for a datastore, the Database Role Split,
+   `.claude/skills/infra-establish/references/postgres-role-split.md`.
+   A changed service gets its existing Infrastructure Service
+   Constraints checked again against the change.
+4. **Stand up, and verify both ways.**
+   - The Runtime Ground's files are written as complete files, never
+     fragments.
+   - Secrets are split out.
+   - Then the Catalog Check *and* the Behavioral Check for the new
+     capability: the expected result stated before running, the
+     outcome read from actual output.
+
+   A service family used before may have a walkthrough among
+   `.claude/skills/infra-establish/references/`. Consult it. Never
    force its shape on a different service.
-5. **Grow the manuals.** The infrastructure contract gains (or
-   amends) the service's section, in the form
-   `.claude/skills/infra-establish/SKILL.md`, *Records and outputs*,
-   gives it; the operator manual gains
-   the lived setup and any new reset path. If the project keeps a
-   public setup guide, re-derive it from the operator manual — the
-   manual stays the sole master.
+5. **Grow the manuals.**
+   - The Infrastructure Contract gains or amends the service's
+     section, in the form
+     `.claude/skills/infra-establish/SKILL.md`, *Records and outputs*,
+     gives it.
+   - The Operator Manual gains the setup as done, and any new reset
+     path.
+   - If the project keeps a public setup guide, derive it again from
+     the Operator Manual. The manual stays its only home.
 
 ## Hard lines
 
-Never re-frame the problem; never build the system (the ground ends
-where application code and schema content begin); destructive acts
-need explicit confirmation; host-level installs are the user's own
-acts; project files speak the project's language. One logical change
-per commit-sized delivery, commit message drafted for each.
+1. Never frame the problem again.
+2. Never build the system: the Runtime Ground ends where application
+   code and schema content begin.
+3. Destructive acts need explicit confirmation.
+4. Installs on the host are the reviewer's own acts.
+5. Project files are written in the project's language.
+6. One logical change per delivery the size of a commit, with a
+   commit message drafted for each.

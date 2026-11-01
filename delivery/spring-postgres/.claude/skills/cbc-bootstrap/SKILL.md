@@ -4,7 +4,7 @@ description: Run the CBC Bootstrap of a framed project on an established Runtime
 foundation: practice, checked against concept v1
 ---
 
-# cbc-bootstrap — bring a framed system to life
+# CBC Bootstrap — make a framed system run
 
 One run, one exit, the CBC Bootstrap's end:
 
@@ -125,7 +125,7 @@ why:
      SQL access.
 - **The CBC Bootstrap Exclusions, each with its why:**
   1. no business behavior: the CBC Bootstrap Probe is scaffolding,
-     marked to die at the first Invariant Slice;
+     marked for deletion at the first Invariant Slice;
   2. no persistence schema: no table before its invariant;
   3. no other Adversity Classes;
   4. no auth, unless an Invariant Slice needs identity at the door;
@@ -223,7 +223,7 @@ Certify **against the delivered state, never a report alone.** Check,
 member by member:
 
 - **§5 evidence:**
-  - the CBC Bootstrap Step Plan as executed, its deviations honest;
+  - the CBC Bootstrap Step Plan as executed, its deviations stated;
   - the run proof: the Java version announced; health UP with the
     database component UP against the running Runtime Ground; the
     standard test command green end to end, checked by structure:
@@ -231,7 +231,7 @@ member by member:
   - the commits standing.
 - **§1:** the Build Coordinates exact.
 - **§2:** all capabilities present **and bounded.** The CBC Bootstrap
-  Probe carries no business meaning, and is documented to die at the
+  Probe carries no business meaning, and is documented for deletion at the
   first Invariant Slice.
 - **§3:** all constraints visible in the delivered files:
   - the `runtime` role alone in config;
@@ -243,9 +243,9 @@ member by member:
 - **§6:** the CBC Bootstrap Exclusions respected.
 
 Then write the exit records in the project's own docs: the milestone
-certified, the run and test commands, the Operator Manual linked, an
-honest "no business behavior yet", and the CBC Bootstrap Probe's
-death scheduled at the first Invariant Slice.
+certified, the run and test commands, the Operator Manual linked,
+"no business behavior yet" said outright, and the CBC Bootstrap Probe's
+deletion scheduled at the first Invariant Slice.
 
 **Once certified, the CBC Bootstrap Requirements are history,** like
 a closed ADR. They are never updated, and carry no banner of what
