@@ -4,8 +4,8 @@
 
 ## What it is for
 
-So that a text can be read once. The failure is lived, in CBC Run 3,
-never-oversold. It wrote about 150,000 words of Markdown for 768
+So that a text can be read once. The failure is lived, in CBC Run 3
+(its repository, `never-oversold`). It wrote about 150,000 words of Markdown for 768
 lines of production code, in long chained sentences, with coined
 words never defined. Its reviewer asked "explain simpler" again and
 again, and the same request is common here.
