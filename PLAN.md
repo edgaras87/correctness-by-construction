@@ -98,7 +98,7 @@ Plan Step that uses none has only its own items.
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the entry file is written*).
+      §2.4, *How the Entry File is written*).
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
       (`.claude/approaches-on-trial/approach-drafting.md`, its close).
@@ -192,7 +192,7 @@ Gate:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the entry file is written*).
+      §2.4, *How the Entry File is written*).
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
       (`.claude/approaches-on-trial/approach-drafting.md`, its close).
@@ -274,7 +274,7 @@ third own item, for this Plan Step's items only.
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the entry file is written*).
+      §2.4, *How the Entry File is written*).
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
       (`.claude/approaches-on-trial/approach-drafting.md`, its close).
@@ -373,7 +373,7 @@ Gate:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the entry file is written*).
+      §2.4, *How the Entry File is written*).
 
 Notes:
 - Opened 2026-10-18 from TODO's refinement item. The records map

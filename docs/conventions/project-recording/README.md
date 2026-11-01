@@ -205,7 +205,7 @@ each Convention Seat's records table's (§13, *The records table*).
 ```
 
 The Entry File is the agent-arrangement manual's
-(`docs/conventions/agent-arrangement/` §2, *The entry file*). The
+(`docs/conventions/agent-arrangement/` §2, *The Entry File*). The
 playbook is absent from a CBC Run on purpose: it lives in the repo that
 owns the project type, never in a project born from it (§9, *The playbook*).
 
@@ -507,7 +507,7 @@ What this project is, who it's for, how to run it, and where
 everything else is.
 
 README is the first page for people; the Entry File is the first for agents
-(`docs/conventions/agent-arrangement/` §2, *The entry file*). Two audiences, two
+(`docs/conventions/agent-arrangement/` §2, *The Entry File*). Two audiences, two
 files, no shared text.
 
 ### 7.2 Why a README
@@ -780,7 +780,7 @@ for a cosmetic gain.*
 
 The Entry File, the one file loaded before any task, what it may
 hold and how it stays small, is the agent-arrangement manual's
-(`docs/conventions/agent-arrangement/` §2, *The entry file*). This convention owns one
+(`docs/conventions/agent-arrangement/` §2, *The Entry File*). This convention owns one
 part of it: the records table, the only part of the project-recording
 manual loaded before any task (`docs/models/agent.md` §4.1, *Ambient
 Channel*; *Why it arrives this way*).
@@ -862,7 +862,7 @@ its *What it is for*.
 ## What this does not cover
 
 - **The Entry File as a whole: what it may hold, and how it stays
-  small** — `docs/conventions/agent-arrangement/` §2, *The entry file*.
+  small** — `docs/conventions/agent-arrangement/` §2, *The Entry File*.
 - **How a commit is written, and why its body is a micro-ADR** —
   `docs/conventions/commit-messages/`.
 - **How work larger than one commit is sequenced** —

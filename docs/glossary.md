@@ -149,7 +149,7 @@ delivered files below.
   numbered line inside one is named by its owner and number:
   "one-home rule 3", "writing rule 6". The kinds in use: a Local
   Rule, the entry file's (`docs/conventions/agent-arrangement/`
-  §2.4, *How the entry file is written*); a Paths Rule, one loaded by path; and Claude Code's
+  §2.4, *How the Entry File is written*); a Paths Rule, one loaded by path; and Claude Code's
   permission and deny rules, its own words
   (`docs/conventions/agent-arrangement/` §3.5, *`.claude/settings.json`*).
 - **Agent Skill** — a file under `.claude/skills/<name>/`, its

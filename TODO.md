@@ -172,7 +172,7 @@
         agent's memory, unseen by any reader of the repo. Its
         failure is not noticing the moment, a rebase: a Local Rule
         for our `CLAUDE.md` (`docs/conventions/agent-arrangement/`
-        §2.4, *How the entry file is written*)?
+        §2.4, *How the Entry File is written*)?
       - what survives what, lived 2026-10-30: a model switch inside a
         session keeps the transcript; an agent the usage limit stopped
         keeps its transcript and resumes by `SendMessage`; a new
