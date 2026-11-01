@@ -5,7 +5,7 @@ generic throughout. A using project's concrete names, passwords and
 wiring live in that project's own manuals, never here. On any
 conflict with the setup walkthrough,
 `.claude/skills/infra-establish/references/postgres-setup-walkthrough.md`,
-**this model wins.**
+**this reference wins.**
 
 ## The principle
 
@@ -27,7 +27,7 @@ DDL makes drift in structure impossible, not merely forbidden.
 
 ## The roles
 
-Three identities, two of them the model's own:
+Three identities, two of them this reference's own:
 
 - **`migrator`:** the structure authority.
   - It owns the application schema and every object in it.
@@ -40,23 +40,23 @@ Three identities, two of them the model's own:
   connects as.** DML only: read and write rows, use sequences. No
   create, no alter, no drop, no ownership. If the application
   attempts DDL, the database refuses.
-- *the Database Setup Identity:* the server's existing admin role,
-  `postgres` in a stock container, never created by this model.
-  - It runs the setup **once:** it creates the database, and owns it,
-    the two roles, the application schema, and the grants.
+- **the Database Setup Identity:** the server's existing admin role,
+  `postgres` in a stock container, never created by this reference.
+  - It runs the setup **once.** It creates the database, the two
+    roles, the application schema and the grants. It owns the database.
   - It is not part of the running system, and never appears in
     application or migration config.
 
 **Database ownership stays above the split,** with the Database
 Setup Identity by default. A dedicated database-owner role is real on
 shared or managed clusters. It is an extension by need, not the base
-model.
+reference.
 
 ## The application schema
 
 Own it; don't use `public`. The mechanism is **ownership scoped to
 the schema:** `migrator` owns a **schema named for the project,** and
-everything hangs off that ownership. The default `public` schema is
+everything follows from that ownership. The default `public` schema is
 the wrong place. It is a shared legacy surface whose ownership is not
 the migrator's to have. The application's `search_path` names the
 project's schema. And `public` is stripped of PUBLIC privileges, so
@@ -89,7 +89,7 @@ ALTER DEFAULT PRIVILEGES FOR ROLE migrator IN SCHEMA app
 The load-bearing lines are the **default privileges** pair. Every
 table and sequence a future migration creates arrives already granted
 to `runtime`. So the split needs no grant discipline per migration,
-and cannot wear away one migration at a time. The connect revoke
+and cannot stop holding, one migration at a time. The connect revoke
 works the same way for the connect right: access at every level
 exists by grant, never by default.
 
@@ -113,10 +113,10 @@ it may carry the bare project name.
   migration call, any injected statement can restructure the
   database. Refused.
 - **Convention only ("the app just doesn't run DDL"):** rules nothing
-  enforces decay. The grant system makes the rule a property.
+  enforces stop being kept. The grant system makes the rule a property.
 - **More roles** (a dedicated database owner, readers, identities per
   service, row-level security): real needs at a larger scope.
-  Extensions by need, not the base model.
+  Extensions by need, not the base reference.
 
 ## What a using project supplies
 
@@ -125,8 +125,8 @@ it may carry the bare project name.
 2. the schema name, and the application's `search_path`;
 3. which migration tool connects as `migrator`;
 4. where `bootstrap.sql` lives, and how it is applied;
-5. how the model is verified on the Runtime Ground: Catalog Checks,
+5. how the Database Role Split is verified on the Runtime Ground: Catalog Checks,
    plus a Behavioral Check that DDL is refused;
 6. where each of these is written: in the project's manuals and the
-   Runtime Ground's files, referring to this model, never restating
+   Runtime Ground's files, referring to this reference, never restating
    it.

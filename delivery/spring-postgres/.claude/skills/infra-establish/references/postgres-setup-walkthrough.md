@@ -1,12 +1,12 @@
 # PostgreSQL setup walkthrough — from nothing to a governed, verified Runtime Ground
 
 What to do, end to end, for one Infrastructure Service, as two
-projects did it.
+CBC Runs did it.
 
 **It owns nothing.** The shape of the authority, the roles, the
 grants and the why, has its home in
 `.claude/skills/infra-establish/references/postgres-role-split.md`.
-On any conflict, the model wins.
+On any conflict, the Database Role Split wins.
 
 The context it assumes, noted where it binds:
 
@@ -19,12 +19,12 @@ Placeholders: `<project>`, with an underscore in SQL identifiers
 it (the compose project name).
 
 The files themselves are Agent Skill Templates in `templates/`,
-beside this Agent Skill's `references/`. This walk carries the whys
+beside this Agent Skill's `references/`. This walkthrough carries the whys
 and the order. The Agent Skill Templates carry the bodies, and their
 comments for recall. Fill one, and the filled file is the CBC Run's
 own. The Agent Skill Templates implement the assumptions above. If
 the CBC Run's decided constraints differ, you are off-template.
-Derive from the model
+Derive from the Database Role Split
 (`.claude/skills/infra-establish/references/postgres-role-split.md`),
 and record the deviation as delivered-copies rule 8 says
 (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is copied and filled, never edited in place*).
@@ -40,7 +40,7 @@ and record the deviation as delivered-copies rule 8 says
   Role Split. This walkthrough *implements* those decisions. It does
   not make them.
 
-## 1. Declare the service (compose)
+## 1. Declare the service
 
 `compose.yaml`: a `postgres` service and the Flyway one-shot. The
 one-shot sits behind a profile: it is the only DDL path, hidden from
@@ -55,7 +55,7 @@ Podman notes:
   volume's identity depends on the directory the file happens to run
   from.
 
-## 2. Split out credentials (`.env`)
+## 2. Split out credentials
 
 `.env`, git-ignored, and a committed `.env.example`. Agent Skill
 Template: `.claude/skills/infra-establish/templates/.env.example`.
@@ -84,30 +84,30 @@ volume. It runs as the Database Setup Identity, **connected to
 comments are there for recall, carried in full. The load-bearing
 lines are the default privileges. Every table and sequence a future
 migration creates arrives already granted to `runtime`. So the split
-needs no discipline per migration, and cannot wear away.
+needs no discipline per migration, and cannot stop holding.
 
 Who creates the database: **the container,** from `POSTGRES_DB`. It
 is owned by the Database Setup Identity, and `migrator` owns only the
 schema. There is no `CREATE DATABASE` in the script.
 
-## 4. Land the verification suite
+## 4. Land the Catalog Check
 
 `infrastructure/postgres/verify-database-model.sql` sits beside
 `init/`, **not in it:** it runs on demand, never at container start.
 Agent Skill Template:
 `.claude/skills/infra-establish/templates/verify-database-model.sql`.
-It queries the catalog against the model's claims:
+It queries the catalog against the Database Role Split's claims:
 
 1. the roles and their capabilities;
 2. who owns the database and the schema;
 3. the schema's privileges;
-4. the default privileges: the model's load-bearing mechanism, which
+4. the default privileges: the Database Role Split's load-bearing mechanism, which
    `\dn+` does not show.
 
 The expected results are comments beside each query, so the reader
 needs no other doc open.
 
-## 5. Wire Flyway (config and empty migrations)
+## 5. Wire Flyway
 
 `infrastructure/flyway/conf/flyway.conf`: no credentials, since
 compose passes them in the environment. The url names the compose
@@ -119,7 +119,7 @@ work needs schema. The naming, when it does: `V<n>__<description>.sql`.
 **No grant statements in migrations, ever:** the default privileges
 handle it.
 
-## 6. Bring it up
+## 6. Bring the services up
 
 ```sh
 podman compose config      # sanity: interpolation resolves, file renders
@@ -133,16 +133,16 @@ healthy during that temporary server, and a query in that window
 fails with `the database system is shutting down`. Wait a second and
 retry. `pg_isready`, plus one real query, is the true "up".
 
-## 7. Verify — both ways, always
+## 7. Verify both ways
 
-**Catalog Check:**
+The Catalog Check:
 
 ```sh
 podman exec -i <project>-postgres \
   psql -U postgres -d <project_db> < infrastructure/postgres/verify-database-model.sql
 ```
 
-**Behavioral Check** (the Infrastructure Service Constraint
+The Behavioral Check (the Infrastructure Service Constraint
 attempted, and refused, live):
 
 ```sh
@@ -181,7 +181,7 @@ podman compose up -d
 
 …then run step 7 again, both checks.
 
-## 9. Hand off
+## 9. The connection facts
 
 **Decide, and write in the manuals, which identity people inspect
 with.** Day-to-day inspection in an IDE or `psql` would otherwise use
@@ -196,7 +196,7 @@ project means, in the manuals and against CBC Framing. Either:
 
 Left unsaid, the writing identity is handed out as the looking one.
 Then the Invariant Slices cannot tell whether that reader can write,
-and must be defended against.
+so they must defend against one who does.
 
 The connection facts the system's code needs:
 
@@ -222,7 +222,7 @@ podman run --rm --network host docker.io/library/postgres:17 \
 # expected: 1
 ```
 
-These facts land in the project's **living Infrastructure Contract:**
+These facts land in the project's living Infrastructure Contract:
 one section per Infrastructure Service, grown at each later
 Infrastructure Service Re-entry, the refusals written as contract
 terms. Note there that the Runtime Ground's files were filled from

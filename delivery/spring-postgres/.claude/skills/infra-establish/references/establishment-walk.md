@@ -1,11 +1,11 @@
-# The Infrastructure Establishment walk — Agent Skill Stage by Agent Skill Stage
+# Infrastructure Establishment — Agent Skill Stage by Agent Skill Stage
 
-The method, end to end. It is generic throughout. The project's
+Infrastructure Establishment, Stage 0 to Stage 7. It is generic throughout. The project's
 concrete choices land in its own record and manuals, never here. Two
-projects have walked it. Deviations a different Runtime Ground forces
+CBC Runs have done it. Deviations a different Runtime Ground forces
 are legal when logged.
 
-## Inputs, before the walk starts
+## Inputs, before Stage 0
 
 The CBC Framing Exports, standing:
 
@@ -17,11 +17,11 @@ The CBC Framing Exports, standing:
 
 The CBC Framing Intent is consulted at questions of scope and
 tradeoff. If the CBC Framing Intent or the Invariant Slice Registry
-is not settled, the step is not ready: stop (Stage 0 in SKILL.md).
+is not settled, the step is not ready: stop (Stage 0 in `.claude/skills/infra-establish/SKILL.md`).
 If only the System Definition's Runtime Ground facts are missing, the
-System Definition is revised first, and the walk goes on: a dated
-revision entry in its LAYER-1-ENVIRONMENT, one commit, then the walk
-begins (Stage 0, check 2).
+System Definition is revised first: a CBC Framing Export Revision in
+its LAYER-1-ENVIRONMENT, one commit. Then Stage 1 begins (Stage 0,
+check 2).
 
 ## Stage 1 — Decide the Execution Environment, demands first, against the Stack Default
 
@@ -35,9 +35,9 @@ manuals record it.
 **The demands choose the Execution Environment; the Runtime Ground
 does not prove them.** The Runtime Ground proves the engine (below),
 and, at Stage 5, what the store itself promises: each Infrastructure
-Service Constraint seen refused. What the evidence must be able to
-do to the Runtime Ground, start several instances, kill one, freeze
-the store, is proven where the Adversity Harness that does it is
+Service Constraint seen refused. The evidence must be able to start
+several instances on the Runtime Ground, kill one and freeze the
+store. Each is proven where the Adversity Harness that does it is
 built, in the form it does it:
 
 - the CBC Bootstrap's Adversity Harness, for its first adversity;
@@ -86,7 +86,7 @@ Invariant Slice by Invariant Slice: what capability does each
 invariant's evidence actually require? The set of Infrastructure
 Services is what survives that question. **Each Infrastructure
 Service Exclusion is stated with its why:** a cache refused, a queue
-refused, and for what reason. It is one log entry. Anything joining
+refused, and for what reason. It is one ADR, or one Infrastructure Establishment Log entry. Anything joining
 later re-enters this evaluation as a logged decision, an
 Infrastructure Service Re-entry (the infra-serve Agent Skill).
 
@@ -103,24 +103,24 @@ Constraint names its enforcement mechanism.**
 A reference may already be written for a decided Infrastructure
 Service: for PostgreSQL,
 `.claude/skills/infra-establish/references/postgres-role-split.md`,
-in this Agent Skill's references. Then its constraint set is the
+in this Agent Skill's references. Then its set of Infrastructure Service Constraints is the
 default, unless a project fact defeats it:
 
 - check it against this project's facts;
 - depart only when a project fact defeats it, and name what defeats
   it;
-- the project's log entry stays, since its own constraints are its
+- the project's ADR or Infrastructure Establishment Log entry stays, since its own Infrastructure Service Constraints are its
   own facts, but it refers to the reference as how they are made
   real, and never derives them again.
 
-An Infrastructure Service with no reference gets its constraints
+An Infrastructure Service with no reference gets its Infrastructure Service Constraints
 derived fresh.
 
 ## Stage 4 — Apply the reference, or record a new one
 
-How a constraint is made real can be the same across projects. Then
+How an Infrastructure Service Constraint is made real can be the same across projects. Then
 it is a reference, not a project fact: keep it generic, and keep the
-project's concrete wiring in its manuals. When this walk derives a
+project's concrete wiring in its manuals. When an Infrastructure Establishment derives a
 new one that can be reused, for a new family of services, write it
 up as a new reference beside
 `.claude/skills/infra-establish/references/postgres-role-split.md`,
@@ -137,10 +137,10 @@ Services come up on the Execution Environment.
 
 Then **two verifications that complement each other, always both:**
 
-- **Catalog Check:** the Runtime Ground's real state queried against
+- the Catalog Check: the Runtime Ground's real state queried against
   the reference's claims, the expected result written as a comment
   beside each query, so the reader needs no other doc open.
-- **Behavioral Check:** the Infrastructure Service Constraint
+- the Behavioral Check: the Infrastructure Service Constraint
   *attempted*, and watched being **refused,** live. The rule shown,
   not assumed.
 
@@ -172,7 +172,7 @@ manuals standing: this one, and the Operator Manual.
 
 ## Stage 7 — Run the exit test
 
-Against the walk as done:
+Against the Infrastructure Establishment as done:
 
 1. Does the Runtime Ground run?
 2. Is every Infrastructure Service tied to a stated need, and every
@@ -182,21 +182,21 @@ Against the walk as done:
 5. Could a reader stand the same Runtime Ground up on their own
    machine from the Operator Manual alone?
 
-Any no: the walk is not done.
+Any no: the Infrastructure Establishment is not done.
 
 When the exit test passes, the CBC Run's README gains its
 **Prerequisites** section. It holds the environment lines a
-stranger's machine needs before this Runtime Ground can stand. It is
-derived from the Operator Manual, carries only what a stranger needs
-in hand, and links the manual for the rest. The skeleton is
+new machine needs before this Runtime Ground can stand. It is
+derived from the Operator Manual, carries only what someone new to the repo needs
+in hand, and links the manual for the rest. The Agent Skill Template is
 `.claude/skills/infra-establish/templates/readme-prerequisites.md`,
 in this Agent Skill. Merge it and fill it, and the section is the CBC
 Run's own (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is copied and filled, never edited in place*).
 
 The stack's own prerequisite line is **not** written here. Its fact
 is created at the CBC Bootstrap, whose Agent Skill carries it. The
-container's README has no Prerequisites section. It arrives now,
-because this Gate made it true.
+README this CBC Run was born with has no Prerequisites section. It arrives now,
+because the exit test made it true.
 
 If the project keeps public docs, derive the setup guide from the
 Operator Manual now. It is never a second home.
@@ -204,7 +204,7 @@ Operator Manual now. It is never a second home.
 ## The Names defined here
 
 The project's Infrastructure Contract is where it writes its own
-words. These three are the Stack Group's:
+words. These three are the stack's, listed in `docs/glossary/stack.md`:
 
 - **Execution Environment** — the local runtime host for
   infrastructure.

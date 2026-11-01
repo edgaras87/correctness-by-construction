@@ -25,7 +25,7 @@ services:
       timeout: 3s
       retries: 10
 
-  flyway:                                   # the only DDL path — a one-shot,
+  flyway:                                   # the only DDL path: a one-shot,
     image: docker.io/flyway/flyway:11       # hidden from plain `up`
     profiles: ["migrate"]
     environment:

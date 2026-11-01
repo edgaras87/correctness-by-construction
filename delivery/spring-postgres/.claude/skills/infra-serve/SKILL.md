@@ -30,8 +30,8 @@ infra-establish Agent Skill, or repair the record first.
 
 Check the original evaluation. If the wanted service is **an
 Infrastructure Service Exclusion,** the new need must answer the old
-exclusion's why: name what changed. If it is not answered, the
-exclusion stands, and the request is refused with that reasoning.
+Infrastructure Service Exclusion's why: name what changed. If it is not answered, the
+Infrastructure Service Exclusion stands, and the request is refused with that reasoning.
 
 ## The Infrastructure Service Re-entry, one pass
 
@@ -41,8 +41,8 @@ exclusion stands, and the request is refused with that reasoning.
    probably need it" is not a need. Refuse anticipation, even when it
    is cheap. Removals and version changes take the same question in
    reverse: what need does the current shape no longer serve?
-2. **Decision.** One entry in the Runtime Ground's record: a log
-   entry, or an ADR in a repo with records. It holds:
+2. **Decision.** One entry in the Runtime Ground's record: an
+   Infrastructure Establishment Log entry, or an ADR in a repo with records. It holds:
    - the need;
    - the service, or change, that answers it;
    - what was considered and excluded, each with its why.
@@ -83,6 +83,6 @@ exclusion stands, and the request is refused with that reasoning.
    code and schema content begin.
 3. Destructive acts need explicit confirmation.
 4. Installs on the host are the reviewer's own acts.
-5. Project files are written in the project's language.
-6. One logical change per delivery the size of a commit, with a
-   commit message drafted for each.
+5. Project files are written in the language the project's records are written in.
+6. One logical change per commit, with a commit message drafted for
+   each.
