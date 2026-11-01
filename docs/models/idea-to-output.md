@@ -1,16 +1,16 @@
 # Idea-to-Output Model
 
-A draft: written from one full chain, the agent's, and checked
-against the concept's and a record's.
-
 A structured description of the kinds of text this repo holds, how
 each links to the others, and the two directions text moves: down
 from an idea to what work produces, and up from work to a new idea.
 Its job is to answer, for any text, *what kind is this, and what
 does it stand on* — instead of each session re-deriving the picture.
 
-This is an **Idea Model**: the top Canonical Description of its chain. It binds
-what stands on it, and when the two disagree, either side may be
+A draft: written from one full chain, the agent's, and checked
+against the concept's and a record's.
+
+This is an Idea Model: the top Canonical Description of its chain. It binds
+what stands on it. When the two disagree, either side may be
 the wrong one (§3.3, *Settling a disagreement*).
 
 ---
@@ -18,15 +18,16 @@ the wrong one (§3.3, *Settling a disagreement*).
 ## 1. The chain
 
 ```
-  model ──► description ──► approach ──► output
-            (a manual,      (a skill,      ▲
-             the concept)    a rule,       │ governs, at the gate
-                             a form)     shape ◄── written from outputs
+  Idea Model ──► Canonical Description ──► Work Approach ──► output
+                 (a manual,                (an Agent Skill,     ▲
+                  the concept)              an Agent Rule,      │ governs, at the
+                                            an Output Form)     │ Plan Step Gate
+                                                           Output Shape ◄── written from outputs
 ```
 
 Read left to right, it is the idea-to-output chain: each kind is
 written from the one before it. A chain may start below an Idea Model:
-most manuals stand on none.
+8 of the 12 manuals stand on none (2026-11-01).
 
 ## 2. The kinds
 
@@ -34,12 +35,12 @@ most manuals stand on none.
 |---|---|---|
 | Idea Model | an idea any repo can adapt; its rules vary by repo, like an interface | `docs/models/`: agent, tiers, this one |
 | Canonical Description | how one thing is understood today, written down | a convention's manual; the concept, `concept/` |
-| Work Approach | how a piece of work is done | a skill, an Agent Rule, an Approach on Trial, a record's form in its header comment |
-| output | what the work produces | a record's entries, a CBC Run's slices and code |
-| Output Shape | a presumed output, written from outputs that exist | `.claude/shapes/`, read only at the gate |
+| Work Approach | how a piece of work is done | an Agent Skill, an Agent Rule, an Approach on Trial, a record's form in its header comment |
+| output | what the work produces | a record's entries, a CBC Run's Invariant Slices and code |
+| Output Shape | a presumed output, written from outputs that exist | `.claude/shapes/`, read only at a Plan Step Gate |
 
 An Output Shape is not a step after the Work Approach. It is written from
-outputs, and governs the next one; written from the Work Approach, it
+outputs and governs the next one. Written from the Work Approach, it
 would describe intent, as a template does.
 
 ## 3. The Chain Links
@@ -50,8 +51,8 @@ would describe intent, as a template does.
 |---|---|---|
 | stands on | a file | what the whole of it was written from |
 | points | a line | the home of a fact it relies on: the one place that fact is written |
-| governs | an output | the Output Shape it is checked against, at the gate |
-| written from | an output or Work Approach | the kind written from it (§4.2, *Up, work to an idea*) |
+| governs | an output | the Output Shape it is checked against, at a Plan Step Gate |
+| written from | an output or Work Approach | the kind written from it (§4.2, *The upward direction*) |
 
 A file stands on one thing; a line may point at a fact's home in
 any document at its own level or above (§3.2, *The direction of a
@@ -85,19 +86,19 @@ agree again, by changing the lower, the upper, or both.
 
 ## 4. The two directions
 
-### 4.1 Down, an idea to an output
+### 4.1 The downward direction
 
-An Idea Model is adapted by a manual; the manual is made usable as
-skills, Agent Rules and forms; work done with them leaves outputs. Each
-stands on the one above.
+An Idea Model is adapted by a manual. The manual is made usable as
+Agent Skills, Agent Rules and Output Forms. Work done with them leaves
+outputs. Each stands on the one above.
 
-### 4.2 Up, work to an idea
+### 4.2 The upward direction
 
 New things are born the other way:
 
 ```
-unfamiliar work ──► Approach on Trial ──► convention ──► model
-outputs ──► shape
+unfamiliar work ──► Approach on Trial ──► convention ──► Idea Model
+outputs ──► Output Shape
 ```
 
 - **An Approach on Trial** comes from work no Work Approach covers.
@@ -105,9 +106,11 @@ outputs ──► shape
   projects.
 - **An Idea Model** comes from a convention whose idea is general enough
   to be used elsewhere. Here, for example, the Tiers Model took the
-  Exchange Convention's general facts on 2026-10-28, by an Approach still on
-  Trial, `.claude/approaches-on-trial/model-placing.md`; the Idea Models
-  before this one came from the handbook.
+  Exchange Convention's general facts on 2026-10-28, by an Approach on
+  Trial still open, `.claude/approaches-on-trial/model-placing.md`.
+  The Idea Models before this one came from the handbook, the repo
+  that held the working arrangement before this one, now history
+  (ADR-0038).
 - **An Output Shape** comes from outputs that exist.
 
 So a new text finds its foundation by looking up this path for the
@@ -120,7 +123,7 @@ The steps between repos, a CBC Run's lesson reaching the Concept Deliverer, are 
 
 ### 4.3 After a birth
 
-The lower text is rewritten to stand on the new one. A skill
+The lower text is rewritten to stand on the new one. An Agent Skill
 drafted as an Approach on Trial is rewritten from the convention
 written out of it. A manual whose idea became an Idea Model stands on
 it. Birth goes up; afterwards, reliance goes up too.
@@ -182,8 +185,10 @@ A project holds no convention, only the Work Approaches made from one.
 
 Each file names what it stands on, so the chains are not listed
 here. The agent's is the worked example. The Agent Model stands
-above `agent-arrangement`, which stands above the entry file's guard
-and the Decisions Log's header; their content is the output. Each
+above the agent-arrangement manual. That manual stands above the
+Entry File's guard, the comment in it that says what the file must
+not become, and the Decisions Log's header. Their content is the
+output. Each
 manual's *Why it arrives this way* points at the part of the Agent
 Model it reasons from.
 

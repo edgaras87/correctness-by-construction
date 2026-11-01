@@ -270,7 +270,7 @@ place. A project may add a skill of its own, for a moment-bound
 local rule the entry file must not hold (§2, *The entry file*). Work no skill covers
 starts from an Approach on Trial (§3.8, *`.claude/approaches-on-trial/`*), and a skill is written only
 when an evaluation places one (`docs/models/idea-to-output.md` §4.2,
-*Up, work to an idea*). How that is done is
+*The upward direction*). How that is done is
 `.claude/approaches-on-trial/approach-drafting.md`'s and its
 evaluation's.
 *Its story: ADR-0056; ADR-0058.*

@@ -744,7 +744,7 @@
       reviewer).
       Context: three Idea Models exist: agent, tiers, idea-to-output. An
       Idea Model comes from a convention whose idea is general enough to
-      be used elsewhere (`docs/models/idea-to-output.md` §4.2, *Up, work to an idea*). The
+      be used elsewhere (`docs/models/idea-to-output.md` §4.2, *The upward direction*). The
       text-division item held candidates, left open by ADR-0063.
       Ideas:
       - one home: facts, their home, Fact References, and how a
@@ -786,8 +786,7 @@
       manuals share an idea. The reviewer asked to weaken that: an
       Idea Model for one convention, "to see general idea behind that
       convention". Idea-to-output has an Idea Model come from a convention whose idea is
-      general enough (`docs/models/idea-to-output.md` §4.2, *Up, work to
-      an idea*).
+      general enough (`docs/models/idea-to-output.md` §4.2, *The upward direction*).
       Trigger: a convention whose idea another repo could use, with
                no second manual sharing it.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1.

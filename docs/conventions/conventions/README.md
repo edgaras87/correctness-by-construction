@@ -113,7 +113,7 @@ Which files carry it, and where:
 
 An Approach on Trial carries none: it is first-time work, and stands
 on no Canonical Description until an evaluation places it
-(`docs/models/idea-to-output.md` §4.2, *Up, work to an idea*).
+(`docs/models/idea-to-output.md` §4.2, *The upward direction*).
 
 What it holds:
 
