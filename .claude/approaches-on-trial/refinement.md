@@ -55,8 +55,8 @@ is the Concept Deliverer's.
 
 ## 1. What it reads
 
-A refinement reads Living Text (`docs/conventions/facts-in-sync/` §1,
-*One home*) against the rules it names. It leaves out `docs/baselines/`, frozen on purpose,
+A refinement reads Living Text (`docs/conventions/facts-in-sync/` §1.5,
+*Living Text*) against the rules it names. It leaves out `docs/baselines/`, frozen on purpose,
 and a CBC Run's own text in `temp/`, which its CBC Run Reading reads. Its
 Finding Kinds are its own, so they are written in its file, not here.
 

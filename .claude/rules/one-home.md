@@ -9,8 +9,8 @@ Agent Rules, comments and config. Where it lives, never how it reads.
 
 <!-- No paths: line, so this loads at the start of every session.
      Ours is derived from docs/conventions/facts-in-sync/ (§1, One home;
-     §2, Point and derive; §3.1, What a Fact Reference is; The Concept
-     Deliverer's seat). The container's is derived from §1 and its CBC
+     §2, Point and derive; §3.1, What a Fact Reference is; §3.4, A decision
+     citation; The Concept Deliverer's seat). The container's is derived from §1 and its CBC
      Run's seat (§1, One home; The CBC Run's seat). That manual's
      *The seats* says how the two Convention Seats differ. -->
 
@@ -58,8 +58,8 @@ History: the devlog, closed ADRs, commit bodies, the entries of
 `TODO-CONVERSATION-MEMORY.md`. They record what was true then. They
 are never updated, so they cannot drift. Each file's header comment
 is Living Text. A fact stated only in history gets a home in Living Text
-before anything retells it (`docs/conventions/facts-in-sync/` §1,
-*One home*).
+before anything retells it (`docs/conventions/facts-in-sync/` §1.6,
+*History is not a first home*).
 
 ---
 
