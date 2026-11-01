@@ -238,7 +238,8 @@
   Slice Close, one for each of System Guarantee Erosion, Testing
   Theater and the Escape Hatch (`.claude/skills/cbc-slice/SKILL.md`).
 - **Invariant Slice Record** — one record per Invariant Slice, written
-  as its stages go; written by the Invariant Slice Record Shape
+  as its Agent Skill Stages go, in the form the Invariant Slice
+  Record Shape sets
   (`.claude/skills/cbc-slice/references/cbc-slice-workflow.md`).
 - **Invariant Slice Guarantee Block** — one Invariant Slice
   Guarantee's section of the Invariant Slice Record
