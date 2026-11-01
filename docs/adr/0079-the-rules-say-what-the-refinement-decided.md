@@ -1,7 +1,9 @@
 # 0079. The rules say what the refinement decided
 
 Date: 2026-11-01
-Status: Proposed, opened under the commit plan for the rules' fix
+Status: Accepted (2026-11-01, at commit 6 of the commit plan for the
+rules' fix; decision 4 narrowed since proposed, from every comma to a
+comma that joins a gloss, so a list in a title stays allowed)
 
 ## Context
 
@@ -107,8 +109,8 @@ Two more questions needed no change:
    item, not the Name, and may begin with one.
 3. **Writing rule 9:** a Foundation Line's value is written as the
    conventions manual gives it, like a path.
-4. **Writing rule 10:** a title has no gloss after a dash, colon or
-   comma, or in parentheses.
+4. **Writing rule 10:** a title has no gloss after a dash or colon,
+   joined by a comma, or in parentheses.
 5. **History:** a released CHANGELOG entry is history, in facts-in-sync
    §1 and both `one-home.md`.
 

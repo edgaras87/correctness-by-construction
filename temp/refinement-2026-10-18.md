@@ -2894,3 +2894,70 @@ Round. The last read (§2.9) is next: everything read against every
 Finding Kind of the refinement, in one read, with no fixes between.
 What is left for it is listed in *The work*, under *Round 3's close
 read*, and in *Met at the close read, of other kinds*.
+
+## The last read
+
+### The rules' check (§2.3)
+
+What changed since each Finding Kind was last read against, and the
+TODO items that name a rule or its manual, searched 2026-11-01. The
+table in *Kinds and rounds* names each rule where it stood on
+2026-10-19; each has a home now:
+
+| Kind | Rule now | Last read against | Changed since | Doubt |
+|---|---|---|---|---|
+| Stale lines | none needed: a false line is wrong | round 1's close read, `9f7e8dd` | nothing | no |
+| Wiring | `docs/conventions/conventions/` §1.3, §2.3; `docs/conventions/facts-in-sync/` §3 | `9f7e8dd` | the Foundation Line's one home (`c0a3849`); the Fact Reference's one form (`a5c5a8e`, `a349b92`, `c53eac8`, `f76c045`, ADR-0070); a section may carry one Fact Reference for its lines (`36ea94d`, ADR-0072) | no |
+| Agreement | facts-in-sync §4, §5; conventions §2.4 | `9f7e8dd` | the rule moved into facts-in-sync (`e2ad2e4`, ADR-0065) | no |
+| One home | `.claude/rules/one-home.md`, on facts-in-sync §1 | round 2's close read, `d37a08f` | history is never a first home (ADR-0070); the Decisions Log and the Conversation Memory named as history (`f3175be`) | yes, one |
+| Dependencies | facts-in-sync §2; §3.4, where a decision is cited | `d37a08f` | the citation rule (`39e35b3`, `96a4d82`, ADR-0078) | no |
+| Lessons | conventions §2.6 | `d37a08f` | a lesson points at its story (`9f80445`, ADR-0073) | no |
+| Layout | conventions §2.5; facts-in-sync §3.2 | `d37a08f` | a bold-led bullet with a paragraph of its own is a part (`aa40496`, DECISION-15) | no |
+| Writing | `.claude/rules/writing.md`, on `docs/conventions/writing/` | round 3's close read, `f5dfbbe` | the stage headings named, Agent Skill Stage and Approach on Trial Stage (`c91c15a`) | yes, five |
+
+None of TODO's 66 items doubts a rule's words. Four name a rule and
+are due at the refinement's close, the read their evidence:
+"Decide whether writing rule 10 reaches unnumbered headings", which
+would widen it; "Test Fact References and foundations as a whole",
+whose idea (d), a Finding Kind of its own in the last read, is not
+taken, by the reviewer, 2026-11-01; "Decide whether a sweep checks one
+home after work lands"; and "Decide whether a standing full read
+looks for missing Fact References", whose trigger has not come.
+
+Eight doubts came from what Round 3 left for this read: 1 to 4 from
+the list in *The work*, under *Round 3's close read*; 5 to 8 from
+*Met at the close read, of other kinds*, which the agent read only
+after the first four were decided. Six are decisions the rules never
+took. Two of them, DECISION-22 and DECISION-18, said their rule
+would gain the line at round 3's close, and it did not. How each
+ended, all by the reviewer, 2026-11-01, and all in ADR-0079:
+
+1. **Rule 9, bold on a Name** (DECISION-22): in doubt, fixed. A Name
+   is bold once, at the line that defines it.
+2. **Rule 10, a parenthesis after a title** (DECISION-38): in doubt,
+   fixed. It is a gloss.
+3. **Rule 9, a list item's bold lead that begins with a Name**
+   (FINDING-1384): in doubt, fixed. The bold marks the item, not the
+   Name, and stands.
+4. **Rule 9, the labels "Stage 1 Gate" to "Stage 6 Gate" beside Plan
+   Step Gate** (FINDING-1388): not in doubt. They are labels inside
+   their owner, which rule 9 already allows.
+5. **Rule 10, a comma that joins a gloss** (DECISION-20): in doubt,
+   fixed. It is a gloss; a comma in a list is not.
+6. **One home, a released CHANGELOG entry** (DECISION-18): in doubt,
+   fixed. It is history.
+7. **Rule 9, a Foundation Line's value** (reader F): in doubt, fixed.
+   It is written as conventions §1.3 gives it, as a path is.
+8. **The writing rule's reach over the devlog,** "fragments fine" in
+   `devlog/README.md` and project-recording §4 (reader E): not in
+   doubt. The writing rule covers every new record line; the two lines
+   are findings for this read.
+
+The fixes, under the commit plan for the rules' fix: the writing
+manual `66d8f6e`, ours `212a795`, the container's `0db2038`, for 1 to
+3, 5 and 7; facts-in-sync §1 `f028aa8`, ours `71ad729`, the
+container's `ae8eb31`, for 6.
+
+The read's input, beside all Living Text: the list in *The work*,
+under *Round 3's close read*, and *Met at the close read, of other
+kinds*.
