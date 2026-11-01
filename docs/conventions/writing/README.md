@@ -148,7 +148,7 @@ chat answers, records, commit messages, code comments.
 
     This holds for numbered sections and parts in both Convention
     Seats. Three are not titles under it: the manual form's fixed
-    headings, an Agent Skill Stage heading, and a numbered rule's bold
+    headings, an Agent Skill Stage or Approach on Trial Stage heading, and a numbered rule's bold
     lead.
 11. **An edit changes the lines its change needs.** The reviewer
     reads a diff at every commit boundary, for its change; a line
