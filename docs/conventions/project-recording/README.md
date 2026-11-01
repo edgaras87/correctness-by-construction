@@ -371,8 +371,8 @@ is the header comment and the first entry of the Record Stub,
 `devlog/devlog.md`. In the Concept Deliverer's Convention Seat, it is
 `devlog/README.md`. Why the form is as it is:
 
-- Written for future-you, not an audience: fragments fine, spelling
-  irrelevant, honesty mandatory. "I don't understand why this
+- Written for future-you, not an audience: short plain sentences,
+  as every record is, and honest. "I don't understand why this
   works" is a legitimate and valuable entry.
 - An entry names the Plan Step or the work it was part of, and a dead
   end is marked loudly: both are then greppable.

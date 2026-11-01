@@ -6,8 +6,8 @@ One file per month, `<YYYY-MM>.md`, newest entries on top. A Fact Reference to a
 An entry takes 2 to 5 minutes at a session's end. A TODO item's
 story is written here when the item is added (`TODO.md`'s header). An entry's heading is
 its date, then in brackets the work it was part of.
-For your later self: fragments
-fine, honesty mandatory. Never rewrite an earlier entry. Mark dead ends with
+For your later self: short
+plain sentences, and honest. Never rewrite an earlier entry. Mark dead ends with
 "DEAD END:" so they're greppable. End every session with a "Resume:"
 line: the next session starts there.
 
