@@ -1,7 +1,8 @@
 # Agent decisions
 
 <!-- The working arrangement's Decisions Log. Append-only, newest
-     last. One entry per
+     last, but for the "rules in force now" list the retrospective puts
+     on top. One entry per
      arrangement decision — an Agent Skill added or changed, an Agent Rule tuned,
      a workflow adopted. Three parts: what, why, what was rejected.
 

@@ -115,7 +115,9 @@ branch is deleted, and the commits to `RETRO.md` made on it are copied back to `
    force now" list on top, with what each rule replaced.
 4. **What only the next CBC Run can check becomes its Plan Step Gate items.** List
    them in the note, each with the Plan Step that judges it. The
-   Concept Deliverer writes each into the next CBC Run's PLAN at that Plan Step, with one line of reason, naming the decision.
+   Concept Deliverer writes each into the playbook the next CBC Run is
+   born with, at that Plan Step, with one line of reason, naming the
+   decision.
 5. **One TODO line asks the Concept Deliverer to apply the note's
    decisions.**
 6. **A devlog entry,** ending with a "Resume:" line, and TODO's Now
