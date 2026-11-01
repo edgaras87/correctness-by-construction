@@ -72,7 +72,7 @@ fire, however large the form.
    by reasoning is a *prediction*; mark it as one until the render
    confirms it.
 
-6. **Decide, and record it** where the entry file's records table
+6. **Decide, and record it** where the Entry File's records table
    puts a decision of its kind — the requirements, the candidates,
    and why each lost. Then delete the draft; it has served, and git
    history keeps it.

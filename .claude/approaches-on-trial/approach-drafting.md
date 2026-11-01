@@ -18,15 +18,18 @@ one too, but the work corrects it before anything is made of it.
 ## When it opens
 
 When a Plan Step opens, or a work item inside one, or a small TODO item
-comes due, and no skill, Agent Rule or Approach on Trial covers the work.
+comes due, and no Agent Skill, Agent Rule or Approach on Trial covers the work.
 A Plan Step's opening items ask this.
 
-First ask: **is it new, or a gap in a skill, Agent Rule or Approach on Trial this
+First ask: **is it new, or a gap in an Agent Skill, Agent Rule or Approach on Trial this
 project holds?** A gap is an edit to that file, and this Approach on Trial
 stops here. In a CBC Run, how a delivered copy is edited is
 `.claude/rules/delivered-copies.md`'s.
 
 ## Stages
+
+Each phase below is one Approach on Trial Stage, numbered, under
+its own heading.
 
 ### 1. Open
 
@@ -102,7 +105,7 @@ the evaluations of both changed nothing in it.
 the retrospective and its apply step had no Agent Skill. The reviewer
 asked for a written draft, changed as the work went, with the Agent Skill
 built at the close. Both Agent Skills came out that way and were taken
-here. Taught: start from a draft, not an Agent Skill.
+into the Concept Deliverer. Taught: start from a draft, not an Agent Skill.
 
 *The Concept Deliverer, working a CBC Run Reading, 2026-10-01.* A draft in `temp/`
 ran three CBC Run Readings, then became an Agent Rule. Taught: a draft can become
@@ -110,7 +113,8 @@ an Agent Rule, not only an Agent Skill.
 
 *The Concept Deliverer, the redesign of the conventions manual, 2026-10-19.* Drafted as a manual on
 trial in `docs/conventions/`. It closed in three pieces: its work
-to the refinement's file, two ideas to TODO, its way of judging a
+to the file of the refinement, the Concept Deliverer's fixing of its
+own text against its rules; two ideas to TODO; its way of judging a
 fix to the refinement. The manual was dropped. Taught: the close
 places pieces; it does not make one form.
 
@@ -121,8 +125,8 @@ not a manual, and needs a home of its own. This Approach on Trial came from
 that lesson. The refinement is open.
 
 *The Concept Deliverer, placing into an Idea Model, 2026-10-28.* The first step
-from a convention to an Idea Model, done for the Tiers Model and the
-Exchange Convention: `.claude/approaches-on-trial/model-placing.md`, written
+from a convention to an Idea Model, done for two of the Concept
+Deliverer's texts, the Tiers Model and the Exchange Convention: `.claude/approaches-on-trial/model-placing.md`, written
 before the work and corrected once by it, in its own commit
 (`4fedbb3`). Taught: the work's first sort, shown before anything
 was written, is where the draft first met the work.
