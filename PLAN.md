@@ -102,7 +102,7 @@ Plan Step that uses none has only its own items.
       §2.4, *How the Entry File is written*).
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
+      (`.claude/approaches-on-trial/approach-drafting.md`, *Stages*, §3, *Close*).
 
 **When every item is ticked and committed,** main takes the Plan Step's
 branch, if it has one, by fast-forward on the reviewer's word. Then
@@ -122,13 +122,13 @@ restarts at that stage. Any stage whose input the other Plan Step
 changed runs again. A ticked item stays ticked unless the other
 Plan Step made it untrue.
 
-**A trial names the close that judges it.** A piece of the way of
-working put on trial says at which Plan Step's close it is judged. Its
+**A trial names the close that judges it.** A change to how work is
+done, put on trial, names the Plan Step whose close judges it. Its
 verdict there is one line: kept, changed or dropped.
 
-**A default that does not fit a Plan Step** is struck there, with its
-reason. That is a finding about the default, not a Plan Step skipping
-it.
+**An item given here that does not fit a Plan Step** is struck there, with its
+reason. That is a finding about the item, not a Plan Step skipping
+work.
 
 ---
 
@@ -198,7 +198,7 @@ Gate:
       §2.4, *How the Entry File is written*).
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
+      (`.claude/approaches-on-trial/approach-drafting.md`, *Stages*, §3, *Close*).
 
 Notes:
 - Opened 2026-10-29, from the devlog's entry 2026-10-29, later: the
@@ -280,7 +280,7 @@ third own item, for this Plan Step's items only.
       §2.4, *How the Entry File is written*).
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
+      (`.claude/approaches-on-trial/approach-drafting.md`, *Stages*, §3, *Close*).
 
 Notes:
 - Opened 2026-10-29, from the devlog's entry of that day: the
