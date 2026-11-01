@@ -44,8 +44,7 @@ started CBC Run 4 (`temp/RUN-4.md`). Never on our Convention Seat.
    - how far it may grow or shrink:
      - the CBC Run Briefing's Out, what the system will not do, is
        closed, and what CBC Framing finds there is refused in writing;
-     - a bound on Responsibility Areas and Invariant Slices, past which
-       is a Real question, one the CBC Run must not decide alone;
+     - a bound on Responsibility Areas and Invariant Slices, past which is a question the CBC Run must not decide alone;
      - every trouble the CBC Run Briefing names is created by a test;
    - how an Agent Skill's sign-off is given on full auto;
    - its commits and branches; never a push;
