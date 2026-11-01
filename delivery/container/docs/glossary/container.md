@@ -89,7 +89,7 @@
   numbered, under its own heading
   (`.claude/approaches-on-trial/approach-drafting.md`, *Stages*).
 - **Decisions Log** — `.claude/decisions.md`: the agent's own setup
-  decisions, the conventions held, and each delivery's Delivery Pin
+  decisions, the Work Approaches held, and each delivery's Delivery Pin
   and Read-Through Commit.
 - **Change Set** — a body of work that needs more than one commit,
   planned and closed under the commit-plan Agent Skill.

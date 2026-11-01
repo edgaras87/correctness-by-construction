@@ -128,7 +128,7 @@ hygiene commit.
 git switch -c birth-seed
 
 git add -A
-git commit -m "chore: seed — records and conventions, pin @ $deliverer_pin"
+git commit -m "chore: seed — records and Work Approaches, pin @ $deliverer_pin"
 
 # concept/ lands at docs/concept/, the mapping's one exception
 # (docs/conventions/exchange/ §3.3, A group's place in the tree).
@@ -210,7 +210,7 @@ never the Concept Deliverer's. Give it this prompt and nothing more:
 This repo was seeded, not born whole. The branch birth-seed
 shows it. It holds one delivery from correctness-by-construction,
 in two halves:
-- first, the records, the conventions and the two composed files,
+- first, the records, the container's Work Approaches and the two composed files,
   the Entry File and README.md;
 - then docs/concept/, five method and stack Agent Skills, the
   method's four Output Shapes, and the Plan Steps in PLAN.
@@ -288,7 +288,7 @@ claim says so, in a clause.
 item is a fact that can be checked:
 
 - Four commits on birth-seed above the hygiene commit: the
-  records and conventions, the concept, the method and stack
+  records and Work Approaches, the concept, the method and stack
   Agent Skills with the method's Output Shapes, the Plan Steps into PLAN. Main at
   the hygiene commit, its log holding nothing else; main's
   worktree byte-identical to the branch tip, every delivered file

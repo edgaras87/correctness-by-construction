@@ -32,7 +32,7 @@
 - <YYYY-MM-DD> Born from the correctness-by-construction delivery,
   Delivery Pin <delivery-pin>; Read-Through Commit none — nothing read before the
   first Delivery Note.
-  Conventions: project-recording, commit-messages, repo-hygiene,
+  Work Approaches made from: project-recording, commit-messages, repo-hygiene,
   commit-plan, exchange, agent-arrangement, visual-comparison,
   shapes, writing, retrospective, facts-in-sync.
   Approaches on Trial: approach-drafting.

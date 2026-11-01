@@ -51,7 +51,7 @@ arrive with them, in `docs/glossary/`; this project's own are
 | The Falsifiable Promise, the System Layers or the Invariant Slices are in question | CBC Framing Intent, System Definition, Invariant Slice Registry | docs/system/ |
 | Meeting a Glossary Name or a tag you do not know, or defining a thing | The Glossary Names and tag kinds this project defines, one plain sentence each; the delivered ones are in `docs/glossary/` | docs/glossary.md |
 | Something became true the outside should see | The first page: what this is, how to use it | README.md |
-| Agent setup changed, or a convention arrives | Decision, why, rejected options; the conventions held, the Delivery Pin | .claude/decisions.md |
+| Agent setup changed, or a Work Approach arrives | Decision, why, rejected options; the Work Approaches held, the Delivery Pin | .claude/decisions.md |
 | The CBC Run has finished building, before Release | What the next CBC Run does differently, and where each lesson lands | RETRO.md (when present) |
 | Work needs more than one commit | In-flight Change Set | COMMIT-PLAN.md (when present) |
 
