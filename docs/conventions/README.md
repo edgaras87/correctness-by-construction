@@ -4,13 +4,14 @@ A Local Map (`docs/conventions/project-recording/` §8.6, *Local Maps*): how the
 during a piece of work hand to each other, from an idea to committed
 work. The others relate through what they govern, read or describe,
 and each states those relations in its manual's *What this does not
-cover*. Which conventions there are and what each covers is the map's
-(`ARCHITECTURE.md` §1.2, *The conventions…*); what a convention is, how one is written and
-how one is added is `docs/conventions/conventions/`.
+cover*. Which conventions there are and what each covers is
+`ARCHITECTURE.md`'s (§1.2, *The conventions — `docs/conventions/`*).
+What a convention is, how one is written and how one is added is
+`docs/conventions/conventions/`.
 
 ## The chain
 
-**Relations only** — every rule lives in a manual or a skill, and
+**Relations only** — every rule lives in a manual or an Agent Skill, and
 nothing here restates one (ADR-0032).
 
 ```mermaid
@@ -19,7 +20,7 @@ flowchart TB
     vc["visual-comparison"]
     cp["commit-plan"]
     cm["commit-messages"]
-    dom["the domain skills<br/>cbc-framing · infra-establish<br/>infra-serve · cbc-bootstrap · cbc-slice"]
+    dom["the domain Agent Skills<br/>cbc-framing · infra-establish<br/>infra-serve · cbc-bootstrap · cbc-slice"]
 
     idea --> vc
     idea --> cp
@@ -34,12 +35,12 @@ not what you must pass through.** A typo fix reaches only
 only `commit-plan`. A question about how a diagram is drawn reaches
 `visual-comparison` from wherever it arose.
 
-**Work no skill or Agent Rule covers** starts from an Approach on Trial,
+**Work no Agent Skill or Agent Rule covers** starts from an Approach on Trial,
 not from this chain: `.claude/approaches-on-trial/approach-drafting.md`.
 Its work is planned like any other.
 
 **The order *inside* a plan does not come from here.** It comes
-from the domain skill that knows the work. That division is why
+from the domain Agent Skill that knows the work. That division is why
 `commit-plan` stays generic and a project on another stack can use
 it unchanged.
 

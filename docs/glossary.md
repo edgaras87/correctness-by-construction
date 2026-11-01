@@ -9,8 +9,9 @@
      home defines, the entry points. A Name is added in the commit
      that first uses it; an entry goes when its thing does. A word
      whose English meaning is ours has no Name and no entry. A
-     convention is named by its path in backticks or by its Name,
-     the Exchange Convention, never by the bare word. Entries sit in
+     convention is named by its path in backticks, with its kind
+     word, the exchange manual, or by its Name, the Exchange
+     Convention; never by the bare word. Entries sit in
      groups by what they name; a new Name goes in its group, after
      the Names it uses. The concept's, the method's and the stack's
      Names are written once, in the file each group delivers, and
@@ -26,10 +27,12 @@ delivered files below.
 
 ## The repositories
 
-- **Concept Repo**, **Run Repo**, **Concept Garden** — the Tiers Model's
-  words for any concept's repository, any repository born from one to
-  try it, and the folder that holds the Concept Repos
-  (`docs/models/tiers.md` §2.2, *Concept Repos*; §2.3, *Run Repos*).
+- **Concept Repo** — the Tiers Model's word for any concept's
+  repository (`docs/models/tiers.md` §2.2, *Concept Repos*).
+- **Run Repo** — the Tiers Model's word for any repository born from
+  a Concept Repo to try it (`docs/models/tiers.md` §2.3, *Run Repos*).
+- **Concept Garden** — the folder that holds the Concept Repos
+  (`docs/models/tiers.md` §2.2, *Concept Repos*).
 - **Concept Deliverer** — this repo: the Concept Repo of correctness
   by construction, holding the Master Copy of every file a CBC Run
   receives (`docs/models/tiers.md` §2.2, *Concept Repos*).
@@ -38,8 +41,8 @@ delivered files below.
   its Concept Deliverer (`docs/models/tiers.md` §2.3, *Run Repos*). Named by
   its number: CBC Run 6.
 - **Newborn CBC Run** — a CBC Run at its birth, from its Pure Seed
-  until its agent finishes the CBC Run Birth. It holds what the seed
-  put there, one Delivery Pin included, and no earlier state.
+  until its agent finishes the CBC Run Birth. It holds what the Pure
+  Seed put there, one Delivery Pin included, and no earlier state.
 - **Convention Seat** — a side a convention has, this repo's or a
   CBC Run's (`docs/conventions/conventions/` §2.4, *The seats*).
 
@@ -47,10 +50,11 @@ delivered files below.
 
 - **Master Copy** — the Concept Deliverer's copy of a file; a CBC Run
   holds copies of it (`docs/conventions/exchange/` §1, *What cannot change*, fact 3).
-- **Read-Through Commit**, **Delivery Pin** — the two numbers a CBC
-  Run records for a delivery: its own commit the Concept Deliverer
-  last read up to, and the Concept Deliverer's commit its copies
-  equal, but for their *Decisions* footers
+- **Read-Through Commit** — the CBC Run's own commit the Concept
+  Deliverer last read up to, one of the two numbers a CBC Run
+  records for a delivery (`docs/conventions/exchange/` §2.2, *The CBC Run*).
+- **Delivery Pin** — the Concept Deliverer's commit a CBC Run's
+  copies equal, but for their *Decisions* footers; the other number
   (`docs/conventions/exchange/` §2.2, *The CBC Run*).
 - **Delivery Note** — the text beside a delivery: what changed since
   the CBC Run's Delivery Pin, and a verdict on everything the CBC Run
@@ -87,12 +91,18 @@ delivered files below.
   Delivery Pin (`docs/models/tiers.md` §3.1, *Downward delivery*).
 - **Pure Seed** — the procedure that gives a CBC Run its birth from
   this repo alone: `delivery/installs/pure-seed.md`.
-- **CBC Run Briefing**, **CBC Run Hand-off** — the two texts put in
-  a Newborn CBC Run's `temp/` before it starts: what it is to build, and how it is
-  to work (`.claude/approaches-on-trial/auto-run.md`, *Stages*).
-- **Container Group**, **Method Group**, **Stack Group** — the three
-  groups of files a CBC Run receives, each a piece of its tree:
-  `delivery/container/`, `delivery/method/`,
+- **CBC Run Briefing** — the text put in a Newborn CBC Run's `temp/`
+  before it starts that says what it is to build
+  (`.claude/approaches-on-trial/auto-run.md`, *Stages*).
+- **CBC Run Hand-off** — the text beside it that says how it is to
+  work (`.claude/approaches-on-trial/auto-run.md`, *Stages*).
+- **Container Group** — the group of files every CBC Run receives,
+  its records and working arrangement: `delivery/container/`
+  (`docs/conventions/exchange/` §3.3, *A group's place in the tree*).
+- **Method Group** — the group that carries the method, its Agent
+  Skills and Output Shapes: `delivery/method/`
+  (`docs/conventions/exchange/` §3.3, *A group's place in the tree*).
+- **Stack Group** — the group for one stack, swapped with the stack:
   `delivery/spring-postgres/`
   (`docs/conventions/exchange/` §3.3, *A group's place in the tree*).
 
@@ -100,8 +110,8 @@ delivered files below.
 
 - **Canonical Description** — how we understand a thing today,
   written down: the concept, an Idea Model, a Convention Manual. It
-  may be wrong or incomplete and is the one that counts regardless;
-  what derives from it applies it and does not explain. One rule for
+  may be wrong or incomplete. It is the one that counts regardless.
+  What derives from it applies it and does not explain. One rule for
   all of them (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*);
   they differ at the edges (ADR-0039). Canonical says reference,
   never correctness: today's understanding, changed only for a
@@ -115,8 +125,13 @@ delivered files below.
 - **Convention Manual** — a convention's Canonical Description, at
   `docs/conventions/<name>/README.md` (`docs/conventions/conventions/`
   §2, *The Convention Manual*).
-- **Made Usable** — what a stated body becomes in the delivery: the
-  concept as the method, the conventions as the container.
+- **Exchange Convention** — the convention at
+  `docs/conventions/exchange/`: everything that passes between the
+  Concept Deliverer and a CBC Run. The one convention with a Name of
+  its own; the others are named by path or with their kind word.
+- **Made Usable** — what a body of text becomes in the delivery: the
+  concept becomes the method, the conventions become the Container
+  Group.
 - **Work Approach** — how a piece of work is done. An Agent Skill or an
   Agent Rule is a Work Approach proven and placed; an Approach on
   Trial is not yet proven (`docs/models/idea-to-output.md` §2, *The kinds*).
@@ -172,8 +187,8 @@ delivered files below.
   below each one's marked line (`docs/conventions/repo-hygiene/`
   §2, *The template layers*).
 - **Stack Overlay** — the stack's part of the hygiene files, appended
-  below the Hygiene Base's marked line: repo-hygiene's `.part` files for one
-  stack (`docs/conventions/repo-hygiene/` §2, *The template layers*).
+  below the Hygiene Base's marked line: the `.part` files under
+  `docs/conventions/repo-hygiene/templates/`, one directory per stack (`docs/conventions/repo-hygiene/` §2, *The template layers*).
 - **Decisions Log** — a CBC Run's `.claude/decisions.md`, where its
   agent records the decisions about its own setup; ours is the same
   file here (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).
@@ -232,10 +247,13 @@ delivered files below.
 - **Approach on Trial Stage** — one phase of an Approach on Trial, numbered
   the same way (`.claude/approaches-on-trial/approach-drafting.md`,
   *Stages*).
-- **Refinement Layer**, **Refinement Round**, **Finding Kind** — the
-  refinement's words: a set of files fixed together; the kinds whose
-  fixes do the same to the text, read together; one rule read
-  against, and the findings it makes
+- **Refinement Layer** — a set of files the refinement fixes together
+  (`.claude/approaches-on-trial/refinement.md` §1, *What it reads, and its words*).
+- **Refinement Round** — the Finding Kinds whose fixes do the same to
+  the text, read together
+  (`.claude/approaches-on-trial/refinement.md` §1, *What it reads, and its words*).
+- **Finding Kind** — one rule the refinement reads against, and the
+  findings it makes
   (`.claude/approaches-on-trial/refinement.md` §1, *What it reads, and its words*).
 - **Change Set** — a body of work that needs more than one commit,
   sequenced and closed as a commit plan
