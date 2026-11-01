@@ -176,8 +176,10 @@ at a word boundary to 30 or fewer, ending in "…". The parentheses give the Cha
 find; the sentence says its point in words, and the reference gives
 only the address.
 
-In a shipped file, a reference to this repo's text leads with CBC
-and serves this repo's Change Walk alone. A CBC Run cannot open our manuals, so
+In a shipped file, a reference to this repo's text opens with "the
+Concept Deliverer's", such as (the Concept Deliverer's
+docs/conventions/project-recording/ §3.3, *Where ADRs live*), and
+serves this repo's Change Walk alone. A CBC Run cannot open our manuals, so
 the line says what the CBC Run needs without it.
 
 The Agent Model calls any text that sends an agent to a file a
@@ -203,7 +205,15 @@ inside running prose is not a part. A bold-led bullet is a part when
 it holds a paragraph of its own, with its own reason or story.
 A short list item, a phrase and a line, is not.
 
-*Its story: devlog 2026-09-30, later; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync; devlog 2026-10-27, night.*
+Where it reaches: a manual, an Idea Model and `delivery/README.md`,
+whose parts are pointed at. Elsewhere a rule stays a bullet, however
+long: in an Agent Skill, an Agent Rule, an Approach on Trial, a
+reference, and a manual's list of rules. A label repeated in every
+section of one form, such as *Bound facts*, is that form's fixed
+label, not a part. In any file, a part that a Fact Reference points
+at is numbered.
+
+*Its story: devlog 2026-09-30, later; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync; devlog 2026-10-27, night; devlog 2026-11-01.*
 
 ### 3.3 The rename grep
 
@@ -227,7 +237,7 @@ both Convention Seats:
    asks why, and the citation stands beside the claim it backs.
 2. **A record does the same.** A record tells what is or what
    happened, and its reader follows the citation where it stands.
-3. **A Work Approach lists the decisions it rests on once,** in a
+3. **A Work Approach or an Output Shape lists the decisions it rests on once,** in a
    footer headed *Decisions* below a `---` line, and never inside a
    sentence. Its reader acts on the rule at the moment of work, and a
    citation there gives nothing to act on. The footer keeps the why
