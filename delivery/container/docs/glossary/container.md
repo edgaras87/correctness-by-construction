@@ -82,7 +82,7 @@
 - **Plan Step Gate** — a Plan Step's exit criteria: facts that can be
   checked, written when the Plan Step opens; it is done only when
   every one is true.
-- **Agent Skill Stage** — one phase of an Agent Skill, numbered from Stage 0 and
+- **Agent Skill Stage** — one phase of an Agent Skill, numbered, and
   named by its Agent Skill outside it: the cbc-slice Agent Skill's
   Stage 3.
 - **Approach on Trial Stage** — one phase of an Approach on Trial,
