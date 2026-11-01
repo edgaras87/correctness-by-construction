@@ -3801,3 +3801,8 @@ them.
   `839f785`. Already fixed by the design: 288 in `e0714e0`, 289 and
   291 in `39e35b3`, 291's other half already DECISION-24's kind word,
   "the facts-in-sync manual".
+- **Layer 2, the project-recording manual:** FINDING-305 to 334 and
+  336 to 340 in `eb57bcf`, its old words given their Names there, 339
+  in part as its ending says; what retells a replaced phrase carried
+  in `f222539` (our records), `454028f` (`CLAUDE.md`) and `2c00ebf`
+  (the Record Stubs and the container's Entry File). 335 declined.
