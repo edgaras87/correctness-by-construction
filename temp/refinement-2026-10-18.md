@@ -4323,6 +4323,137 @@ Lines found by more than one reader in passing are one entry. Met in passing, an
 
 **FINDING-1795.** Writing, rule 9; resting on the reader; missed at a change (WI-1). `delivery/spring-postgres/.claude/skills/infra-serve/SKILL.md`, *Stage 0 — the Runtime Ground stands?*, lines 31-32: "Check the original evaluation. If the wanted service is **an". "**an Infrastructure Service Exclusion,**" is bold inside a sentence. It is not a list lead. The Name's home is `infra-establish/SKILL.md` (`docs/glossary/stack.md` line 52), not this file. Why: missed at a change. `78fe685` turned "**on the not-provisioned list**" into the bolded Name, after DECISION-22 had been taken. FINDING-1384 then listed the bold Names away from their homes, and did not list this one. Proposed: fix: "Check the original evaluation. If the wanted service is an Infrastructure Service Exclusion, the new need must answer the old" (bold dropped; line 32's "Infrastructure Service Exclusion,**" loses its closing marks).
 
+### Decisions
+
+Twelve decisions, DECISION-41 to DECISION-52, for what recurs or what needs the reviewer's choice; then the agent's calls on the single questions; then three left to the reviewer alone. The reviewer took the twelve and the calls as recommended, 2026-11-01. Every other finding's ending is its proposal. Where a fix proposal holds an "or", its first option is taken.
+
+**DECISION-41.** Shipped text that points home, after DECISION-40. Rests: FINDING-1447. DECISION-40 changed 11 shipped lines from "CBC docs/…" to "the Concept Deliverer's docs/…". Facts-in-sync §3.1 still says such a line "leads with CBC", and the container's one-home Agent Rule still writes "CBC docs/" across lines 12–13.
+- (a) §3.1 says a shipped reference to our text opens with "the Concept Deliverer's"; the container's line follows.
+- (b) The 11 lines take "CBC" back, and the container's glossary gains the Repo Tag.
+- Recommended: (a). It is what DECISION-40 chose, and nothing in a CBC Run says what "CBC" is.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-42.** Fact References in our copies of shipped Agent Skills. Rests: FINDING-1633, 1635, 1640. Our commit-messages, commit-plan and visual-comparison Agent Skills retell their manuals with no Fact Reference. Each is held identical to the container's copy, but for the seat (ADR-0069). A shipped file may carry a reference to our text: it serves our Change Walk alone, and the line says what the CBC Run needs without it (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
+- (a) Both copies gain the references, one per section where one covers it (ADR-0072), in the shipped copy in DECISION-41's form.
+- (b) Ours alone gains them, and the pair differs by more hunks.
+- (c) Facts-in-sync §4 step 2 says a copy held identical to a shipped one keeps the shipped seat's rule: it stands alone, and its Foundation Line names the manual the Change Walk opens.
+- Recommended: (a). It is what §3.1 already allows, and (c) would add an exception to avoid it. A reference names the section, where a Foundation Line names only the manual. The container's commit-plan then gains the reference at line 149 that ours has, and one hunk between the copies goes. The agent first recommended (c), reading "a shipped line stands alone" as "it carries no reference"; the reviewer's question found it.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-43.** References into and between the concept chapters. Rests: FINDING-1665, 1594. The method's Agent Skills use parts of the concept and never say which. The chapters name each other by title, with no Fact Reference.
+- (a) Both gain references: the method's texts one per section that uses a chapter part, the chapters one per line that leans on another chapter.
+- (b) Neither: the concept is copied whole, and the method's Foundation Line, `concept v1`, names it.
+- (c) The method's texts gain them, in "Rewrite the method's texts plain", and its first one fires "Number the concept chapters' sections"; the chapters, one Canonical Description copied whole, need none between themselves.
+- Recommended: (c). A change to a chapter must find the method lines that use it. Inside one Canonical Description, a title is enough.
+- Chosen: (c), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-44.** Counts of CBC Runs in the stack's text. Rests: FINDING-1693, 1687, 1684, 1679, 1698, 1578; beside them the Lessons findings that tell a case as a story, FINDING-1673, 1675, 1676, 1680, 1681, 1683, 1685, 1686, 1688, 1689, 1692, 1697, 1700. DECISION-40 kept a shipped workflow's count, since the CBC Run reads it as why the line is required. The stack's references give counts too: "Both CBC Runs that ran this Agent Skill", "Three projects built them", "A hundred is what the CBC Runs used".
+- (a) DECISION-40 reaches a count that says how proven a line is. Each stays, made true and told once; the two that differ (1578) are explained. A case told as a story, "one CBC Run did this", goes, as the Lessons findings propose.
+- (b) The counts go too. The one general line in `infra-establish/SKILL.md` stands for all.
+- Recommended: (a). It holds DECISION-40's reason, and a number says how proven a default is, which rule 4 asks.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-45.** Where a bold-led bullet is a part. Rests: FINDING-1636, 1643, 1627, 1682, 1605; and FINDING-1601, 1606, 1611, 1616, 1648, 1669, which propose numbering such bullets. Facts-in-sync §3.2: a bold-led bullet is a part when it holds a paragraph of its own. Readers ask whether that reaches an Agent Skill's rules, an Approach on Trial's list, a manual's rule list, and the labels a form repeats in every section.
+- (a) It reaches the manuals, the Idea Models and `delivery/README.md`, where a part is pointed at. A rule in an Agent Skill, an Agent Rule, an Approach on Trial, a reference or a manual's rule list stays a bullet, however long. A label repeated in every section of one form is that form's fixed label. A part that a Fact Reference points at is numbered, in any file. §3.2 gains these lines.
+- (b) It reaches every file: each such bullet is numbered.
+- Recommended: (a). The numbers are for pointing, so what is pointed at is numbered and a rule that is only acted on stays a bullet. Under (a), FINDING-1601, 1606, 1611, 1616 and 1669 are numbered as proposed, and 1648, in an Agent Skill, stays. FINDING-1645 and 1647 still stand: each is one section that holds two subjects or three, and is fixed as its reader recommends. FINDING-1645's small commits, which three Fact References point at, take a number by the new line.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-46.** A Name in a paragraph's bold lead. Rests: FINDING-1710, 1720, 1780. ADR-0079 lets a list item's bold lead begin with a Name. Concept chapters 00 and 03, the exchange manual and the worked example bold a Name as a paragraph's lead.
+- (a) A paragraph's bold lead counts as a list item's: the rule's line says "a bold lead", and the leads stand. A bold Name inside running prose still goes.
+- (b) Only a list item's lead. The paragraphs become list items, or lose the bold.
+- Recommended: (a). The bold marks the paragraph, as it marks a list item. Under (a), FINDING-1720's line 116, a second bold at the Name's own home, still loses its bold.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-47.** A Name's home in the CBC Run's seat. Rests: FINDING-1758, 1765, 1650. In a CBC Run, the container's glossary points Change Set at the commit-plan Agent Skill and Delivery Pin at delivered-copies rule 1. Those lines bold the Name. Ours do not, because our glossary points at the manuals.
+- (a) The CBC Run's home is the file its glossary points at. The bold stays there, a seat difference ADR-0069 allows, and delivered-copies rule 1's items open with the Name. The container's glossary entries point at their homes and stop defining (FINDING-1650).
+- (b) The container's copies follow ours, and the bold goes.
+- Recommended: (a). Writing rule 9 bolds the defining line, and in a CBC Run that line is the shipped file.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-48.** Trials whose moment has passed. Rests: FINDING-1425, 1451, 1431, 1513. The retrospective trial was set for "the next CBC Run Birth", which has come twice. The Conversation Memory trial was set for its third item, and has had at least three. The auto-run Approach on Trial rejects a way because "one full-auto CBC Run has been lived"; three have.
+- (a) Each manual line names the TODO item that holds the trial's trigger, and the trigger is set there, at the reviewer's word. A rejection's reason says when it was weighed.
+- (b) Each trial is judged now.
+- Recommended: (a). A trigger kept in one place does not go stale in two. Judging a trial is work of its own.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-49.** TODO items whose trigger has passed. Rests: FINDING-1491, 1495, 1507, 1509, 1510, 1511; beside them 1490 and 1493, already fixes. About 14 items wait on CBC Run 5's reading, CBC Run 5's birth close, "the next birth" or Refinement Round 2, and each of these has happened.
+- (a) The agent drafts each item's ending, worked, re-aimed with a new trigger, or closed, and the reviewer decides each in one pass. They land in round 1's layer 4.
+- (b) Each trigger is re-aimed only, and the items wait for work of their own.
+- Recommended: (a). A fired trigger is an item due now. Re-aiming it hides that.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-50.** The method's findings, and "Rewrite the method's texts plain". Rests: FINDING-1501, 1502, 1666, 1559; and the Lessons and Layout findings in layer 6's method and stack. The TODO item's trigger, the refinement's close, is due. It still lists FINDING-206, 223, 224, 227 and 228; the tree shows 223, 224, 227 and 228 not worked, and 206 gone (SL2-15).
+- (a) This read's findings are fixed in the refinement, in their Refinement Rounds. The item then keeps only what is left, its Context rewritten from the tree, and round 3's Endings line is corrected.
+- (b) The method's and the stack's findings move to the item, and the refinement closes without them.
+- Recommended: (a). The refinement is the work the item asked for. Moving the findings would need a second read of the same files.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-51.** A count in Living Text. Rests: FINDING-1424, 1427, 1428, 1457, 1508, 1593. "Four CBC Runs kept their records", "a median of 102 lines", "985 lines in 83 files", "about 1,350 commits since v1": each was true when taken, and nothing updates it. `ARCHITECTURE.md` "keeps to about two pages": ADR-0068 set that at about 1,200 words, and it holds 2,053.
+- (a) A count carries the date it was taken, and stays as taken. A measure that is a target says so: "aims at about two pages".
+- (b) Each count is brought up to date, and a check at each change keeps it so.
+- Recommended: (a). A dated count stays true, and no check exists to keep (b).
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-52.** A collision where nothing dies. Rests: FINDING-1550, 1552. The kill Output Shape gives a tried Enemy Collision that breaks nothing a `KILL-<n>` tag. In the concept and the glossary, an Enemy Collision Kill is what dies. Known, and deferred to the plain rewrite.
+- (a) The Output Shape changes: such a collision is listed as tried, under its own tag. The worked example, the workflow and the registry template follow.
+- (b) The concept and the glossary widen the Kill to every tried collision.
+- Recommended: (a). The concept holds, and the change stays in the method.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+The agent's calls, on the single questions, each a fix unless said:
+- FINDING-1416: the third kind takes the Idea Model's word, Output Forms, as ADR-0078 decision 1 did; an Agent Skill Template travels inside its Agent Skill.
+- FINDING-1429: the example names a gate item that exists.
+- FINDING-1432: the line takes the channel the Agent Model's §8 table gives a rule read inside a record, checked at the fix.
+- FINDING-1442: `COMMIT-PLAN.md` is listed in project-recording §1 for its moment, and is the agent's file, not a project record; §1 says so.
+- FINDING-1452: the line says the name came first and the question is its subject.
+- FINDING-1456: rule 6 as proposed, in the manual and both Agent Rules.
+- FINDING-1458, 1542: the CBC Run Birth entry widens to the event, as DECISION-36 reads it.
+- FINDING-1462: M2 takes the grade the Agent Model defines for a definitional claim, checked at the fix; line 275 stands.
+- FINDING-1463: §8's table decides; §9 and A1 follow it.
+- FINDING-1465: the difference is an adaptation, said in agent-arrangement §3.7 with a Fact Reference to the model.
+- FINDING-1477: facts-in-sync §4 step 1 gains the line that `ARCHITECTURE.md` §2 keeps the concept's list.
+- FINDING-1482: the goal is rewritten now, as proposed.
+- FINDING-1488: the Conversation Memory's header allows "Item: none".
+- FINDING-1514: declined. `CLAUDE.local.md` is the reviewer's own file, and the agent changes it only on their word.
+- FINDING-1517: facts-in-sync §3.4 names the Output Shape.
+- FINDING-1525: conventions §1.4 says a first stage is Stage 0 only when it checks readiness; the headings take §1.4's case.
+- FINDING-1530: delivered-copies rule 5 gains the optional Receipt Branch step, and the container's glossary the entry.
+- FINDING-1531, 1534: as recommended; for 1534, "with a dated line" goes.
+- FINDING-1535: the manual's rule 10 names a record's fixed headings for the CBC Run's seat.
+- FINDING-1537: agent-arrangement §3.4 names the "rules in force now" list as the one part of the log not appended, and the Record Stub's header says so.
+- FINDING-1538: the line follows the playbook and the Pure Seed: the Concept Deliverer writes each lesson into the playbook the next CBC Run is born with.
+- FINDING-1539: one wording with left G3 and left B3, in one commit.
+- FINDING-1553: §3.1 says a numbered rule is cited by its number and its lead, cut at 30 characters with "…", as a title is; the 15 follow, and the 2 without a lead gain one.
+- FINDING-1562: yes, as the Agent Skill says; all four places name the three kinds.
+- FINDING-1572: follows FINDING-1587's fix.
+- FINDING-1574, 1577: as proposed; for 1577, the stack evaluation's first option, so the concept holds.
+- FINDING-1576: the playbook's Plan Step order carries the sign-off, and the cbc-bootstrap Agent Skill's close points at it.
+- FINDING-1579, 1585: a footer names a file by its root path, as every Fact Reference does.
+- FINDING-1590: relying; the Fact Reference to the Idea-to-Output Model §4.2.
+- FINDING-1595: §3 is retitled to cover the operator's file, with the rename grep, and §1.1's list names `CLAUDE.local.md`.
+- FINDING-1602: the case goes; the story line already points at ADR-0034.
+- FINDING-1617: (a), the Idea Model's line is general.
+- FINDING-1618: (a), §3.5 keeps the definition.
+- FINDING-1621, 1622: the archive's fact gets its home in `ARCHITECTURE.md` §1.1, and the README and the table point there.
+- FINDING-1623: the Conversation Memory's header is the home; TODO's line gains the Fact Reference.
+- FINDING-1642, 1659, 1661, 1672, 1701: as their readers recommend.
+- FINDING-1725: (b), plain words at shapes line 13; no new Name.
+- FINDING-1733: the kind word, "the commit-plan Agent Skill".
+- FINDING-1739: "walk" stands, a trial's label; "master text" becomes "text to copy".
+- FINDING-1740, 1748: plain words, as recommended.
+- FINDING-1746: plain words, and the milestone named as proposed.
+- FINDING-1755, 1763: the kind word, by DECISION-27, with left E13.
+- FINDING-1766: the line changes, with FINDING-1705 and 1731, by ADR-0079's doubt 8.
+- FINDING-1771: stands, by DECISION-37: a string in code is code.
+- FINDING-1781: line 48 is the CBC Framing Derivation, and is fixed; the template's two lines mean what CBC Framing derived, and stand.
+- FINDING-1785: fixed as proposed; the figures are not dead.
+
+Left to the reviewer alone, with no call:
+- **FINDING-1433:** the gap line in concept chapter 00, four gaps against five practices. A fix that is not editorial is a concept change.
+- **FINDING-1444:** what a held edit becomes at a Delivery Take. It is how the exchange works, not how its text reads.
+- **FINDING-1487:** `temp/run-6-handoff/`, tracked and named by no TODO item or Plan Step: an item names it, or it goes.
+
 ### The read's counts
 
 385 findings:
