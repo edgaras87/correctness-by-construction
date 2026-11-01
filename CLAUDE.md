@@ -35,13 +35,13 @@ and is read back from here. Documents only — no code, no CBC Runs
      (`docs/conventions/agent-arrangement/` §2.6, The Entry File's size), so every line
      below passes three tests or leaves
      (`docs/conventions/agent-arrangement/` §2.4, How the Entry File is written):
-     1. True of this project and nowhere else — else it is a
-        convention, stated once, there.
-     2. No moment — else it goes where the moment is: the record's
-        Record Stub, README, a project Agent Skill, or .claude/rules/ with a
-        paths: list for an Agent Rule about one directory.
-     3. Nothing else would deliver it — a stance, or a fact whose
-        failure is not noticing it.
+     1. True of this project and nowhere else. Otherwise it belongs in a
+        manual, stated once.
+     2. No moment. Otherwise it goes where the moment is: the record's
+        Record Stub, README, a project Agent Skill, or a Paths Rule in
+        .claude/rules/ for one directory.
+     3. Nothing else would deliver it: a stance, or a fact nobody
+        would notice was missing.
      Longer than a screen means a line is failing. Shrinking it is
      maintenance, not tidying.
      foundation: the agent-arrangement convention -->

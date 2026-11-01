@@ -5,8 +5,7 @@ foundation: the facts-in-sync convention
 <!-- Makes the Change Walk, the disagreement and the grep for a moved name
      (docs/conventions/facts-in-sync/ §4, A Canonical Description's rule;
      §5, A disagreement; §3.3, The rename grep) fire at the commit;
-     before, they had to be remembered. Loaded in every session, with no paths: an
-     Agent Rule with paths: loads only when a file is touched with the agent's
+     before, they had to be remembered. Loaded in every session, with no paths: a Paths Rule loads only when a file is touched with the agent's
      tools, and an edit made by script never loads it
      (docs/conventions/agent-arrangement/ §5.6, Rules files). Ours, shipped
      nowhere: a CBC Run holds no manuals. -->
@@ -80,6 +79,6 @@ this commit (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
 ## Decisions
 
 - `.claude/decisions.md`, 2026-10-17 — the check at the commit,
-  loaded in every session; why not an Agent Rule with paths:, a `CLAUDE.md`
+  loaded in every session; why not a Paths Rule, a `CLAUDE.md`
   line, or a hook now
 - ADR-0065 — the check stands on the facts-in-sync manual
