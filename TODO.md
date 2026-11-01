@@ -441,7 +441,7 @@
       - whether CBC Run 4 confirmed its plan's Plan Steps once framed, as project-recording says a CBC Run does
         (`docs/conventions/project-recording/` §9.4, *How a playbook is written*),
         though no Agent Skill or Plan Step asks it: if not, whether the playbook's
-        Framing Plan Step should.
+        CBC Framing Plan Step should.
       Trigger: the refinement of this repo closes; in a new session.
       See: `f097695`, the kickoff and the message it took;
       `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's reading: two moves…*.
@@ -947,7 +947,7 @@
       - what is tracked is read again when the repo grows a new kind
         of thing.
       - the Record Stub gains a `Tracks:` line beside `Versioning:`, decided
-        at the Framing Plan Step, with when to revisit it; the lesson goes in project-recording's changelog part
+        at the CBC Framing Plan Step, with when to revisit it; the lesson goes in project-recording's changelog part
         (`docs/conventions/project-recording/` §6, *CHANGELOG.md*).
       - a Delivery Fill sets a CBC Run's two lines at birth, as the playbook
         fills its plan; we fill ours in place

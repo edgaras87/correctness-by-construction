@@ -671,7 +671,7 @@ has four moments, and each says where its doer reads how:
    comment, `delivery/fills/cbc-run-pure-playbook.md`.
 
 The lessons fold into the playbook because it is what the next CBC Run
-starts from. The Framing and Release Plan Steps have their own copies
+starts from. The CBC Framing and Release Plan Steps have their own copies
 there, so their lessons have a home.
 
 ### 9.5 When a playbook changes
