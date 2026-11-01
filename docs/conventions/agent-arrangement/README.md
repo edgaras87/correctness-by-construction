@@ -32,7 +32,9 @@ now ships it there.
 - **`delivery/container/.claude/decisions.md` — the Decisions Log's
   Record Stub, shipped**, opened when the arrangement changes; the CBC Run's
   own from birth.
-- **The Concept Deliverer's own `CLAUDE.md` and `.claude/decisions.md`.**
+- **The Concept Deliverer's own `CLAUDE.md` and `.claude/decisions.md`**,
+  the one loaded at the start of every session, the other opened when
+  the arrangement changes.
 
 Every rule here is a comment in the file it governs, met when
 the file is opened to edit it; nothing here is loaded into an
@@ -137,7 +139,9 @@ The arrangement's paths are a closed list (ADR-0038, 1c):
   what goes in it is this convention's.
 - **`.claude/`** — the Agent Skills directory, the Agent Rules directory, the
   Output Shapes directory, the Approaches on Trial, the Decisions Log, and
-  the tool's settings, tracked and machine-local (§3, *`.claude/`*).
+  the tool's settings, tracked and machine-local (§3, *`.claude/` and its neighbour*).
+- **`CLAUDE.local.md`** — the operator's own file, beside the Entry File
+  (§3.7, *`CLAUDE.local.md`*).
 
 ### 1.2 Detachability
 
@@ -225,12 +229,13 @@ What passes, in practice, is five kinds of content:
 2. the records table;
 3. build and test commands, where the project has them;
 4. how to work here;
-5. local rules that have no moment.
+5. Local Rules, rules of this project only that have no moment.
 
 That is a description of what the tests leave, not a rule of its
 own. A line that passes belongs whatever heading it sits under, and no
-heading saves one that fails. The first two are present at birth. The
-other three arrive when they become true, and take their headings
+heading saves one that fails. The first two are present at birth, and
+a CBC Run's Entry File is born with one Local Rule. The others arrive
+when they become true, and take their headings
 from the names below, *How to work here* and *Local rules*, so two
 born repos spell them the same way.
 
@@ -284,7 +289,7 @@ Run's Decisions Log makes the same move for its entries.
 The Concept Deliverer has no project end, and re-reads it at each Plan Step's close
 instead, as a closing item of its Plan Step Gate (ADR-0057).
 
-## 3. `.claude/`
+## 3. `.claude/` and its neighbour
 
 ### 3.1 `.claude/skills/`
 
@@ -292,8 +297,8 @@ Where a convention's Agent Skills live, one directory per Agent Skill: in a
 CBC Run, a delivered copy, verbatim (the update is
 `docs/conventions/exchange/`'s); at the Concept Deliverer, its own
 derivation from the manual (ADR-0042). This convention owns the
-place. A project may add an Agent Skill of its own, for a moment-bound
-local rule the Entry File must not hold (§2, *The Entry File*). Work no Agent Skill covers
+place. A project may add an Agent Skill of its own, for a rule of this project only that has a moment, which the Entry
+File must not hold (§2, *The Entry File*). Work no Agent Skill covers
 starts from an Approach on Trial (§3.8, *`.claude/approaches-on-trial/`*), and an Agent Skill is written only
 when an evaluation places one (`docs/models/idea-to-output.md` §4.2,
 *The upward direction*). How that is done is
@@ -383,7 +388,7 @@ hand.
 
 Where a project keeps its Approaches on Trial: one file per kind of
 work, not yet proven. Nothing loads the directory. A Plan Step's opening
-item sends the agent to it (the Plan Step Form). What an Approach on Trial
+item sends the agent to it (`PLAN.md`, *The Plan Step Form*). What an Approach on Trial
 is lives above (`docs/models/idea-to-output.md` §2, *The kinds*);
 how one is drafted and how one is evaluated are
 `.claude/approaches-on-trial/approach-drafting.md`'s and
@@ -409,7 +414,7 @@ qualify in a CBC Run and three here. *Its story: ADR-0053.*
 
 - **Putting rules in the *How to work here* slot** — a rule that is true
   in another project is a convention written as a stance.
-- **A local rule with a moment** — "run Docker before the tests" —
+- **A Local Rule with a moment** — "run Docker before the tests" —
   paid for on every session and read at none of the moments it is
   about.
 - **Shipping the *How to work here* and *Local rules* slots as empty

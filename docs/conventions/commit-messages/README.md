@@ -15,9 +15,9 @@ the rule in. 15 of the first 20 commits of the repo it came from
 broke it: present, correct, unfollowed (`docs/models/agent.md`
 §12, *Claims*, A1). So the rule is opened at the commit, not read
 once. Lived here since: 480 commits under it by
-2026-09-19, and CBC Run 3 held forty-four commits on the stop
-sentence, the rule that the agent waits at each commit, alone with
-no Enforcement Gate.
+2026-09-19. CBC Run 3 held forty-four commits on the stop sentence
+alone, with no Enforcement Gate. The stop sentence is the rule that
+the agent waits at each commit.
 
 ## What this is made usable as
 

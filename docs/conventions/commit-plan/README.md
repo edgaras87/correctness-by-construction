@@ -59,8 +59,7 @@ still make sense. **Order follows where the decision lives.** A
 decision settled in conversation is recorded first and implemented
 second. A decision only visible in the material is found by
 touching the material, and the durable record is written from what
-held. The second kind makes the tail of a plan provisional, and the
-plan says so.
+held. The second kind makes the plan's last commits provisional, and the plan says so.
 
 ## 2. Why it is shaped this way
 
@@ -85,8 +84,7 @@ makes a neglected plan wrong. Git history is the status.
 ### 2.4 Material-first
 
 Some decisions show only in the material: no conversation can
-settle them before the work is touched. For them, the provisional
-tail, the revision commit and the Proposed-then-Accepted ADR are the
+settle them before the work is touched. For them, the provisional commits, the revision commit and the Proposed-then-Accepted ADR are the
 normal course, not a sign the plan failed (ADR-0038, 1e). *Its story: devlog 2026-09-27, afternoon; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ### 2.5 The records commits
@@ -108,15 +106,13 @@ A plan's numbers are cited, in its notes, its revisions and its
 commit bodies, so a commit inserted later takes a letter rather
 than renumbering the rest. Where one change reaches many records,
 one planned commit repeats over them, naming its order and the
-rule that stops it. *CBC Run 3's Step 10 inserted 8b, 22b and E2.1 to
-E2.12 after its plan was written, and ran one plain pass three
-times over its records, the third only over what the second
-changed (ADR-0050, 4 and 5).*
+rule that stops it. *Its story: ADR-0050, 4 and 5.*
 
 ### 2.8 Counting subjects
 
-A subject's characters are counted against the 50 limit when it is
-written. A plan writes every subject
+A subject's characters are counted against the subject's 50-character
+limit (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*)
+when it is written. A plan writes every subject
 before any lands. Counted only at each boundary, a long one lands
 long, or is rewritten there with nothing in the plan saying why. *Its story: devlog 2026-10-08; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
@@ -135,9 +131,8 @@ Set moved, all at once. A commit that renames a file, renumbers or
 retitles a section, or moves a fact greps for the old names in that
 commit (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
 But a commit's own grep looks for the names it meant to move, and
-misses the rest. The sweep reads the text unwrapped. A grep matches line by
-line, and a manual wraps its prose, so a name broken across two
-lines is never found. *Its story: ADR-0049; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
+misses the rest. The sweep reads the text unwrapped. A grep matches line by line, and a line of older text may be wrapped,
+so a name broken across two lines is never found. *Its story: ADR-0049; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ### 2.11 Small commits
 
@@ -156,9 +151,7 @@ when it is written, as a planned subject is. *Its story: ADR-0050.*
 The Change Set is looked at whole, and regrouped on the reviewer's
 word. Each boundary shows one commit; nothing showed the Change Set.
 Looked at whole, two commits can turn out to be one change, or one
-commit two changes.
-*CBC Run 3's polish regrouped 36 small commits into 7, after the fact
-(ADR-0050, 3).*
+commit two changes. *Its story: ADR-0050, 3.*
 
 ### 2.13 The stop at every boundary
 

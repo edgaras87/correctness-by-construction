@@ -147,6 +147,9 @@ Convention Seats keep a record differently, *The seats* says how.
    (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).
 9. `COMMIT-PLAN.md`: the commits of a Change Set in flight, when
    present (`docs/conventions/commit-plan/` §1, *What a commit plan is*).
+   Listed for its moment; it is the agent's file, committed with the
+   arrangement, not a project record (`docs/conventions/commit-plan/`
+   §2.1, *Not a record*).
 10. `docs/glossary.md`: the Glossary Names, and what each means
     (`docs/conventions/writing/` §2, *Why each rule*, rule 9).
 
