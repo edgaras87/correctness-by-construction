@@ -4,7 +4,7 @@
 It goes in Refinement Rounds: what is true, then where it lives, then how it
 reads. Each Refinement Round reads first and lists what it finds. Nothing
 changes until the reviewer has ended each finding, and then the
-text is fixed one Refinement Layer at a time.**
+text is fixed by a Change Set written from the list.**
 
 ## What it is for
 
@@ -32,8 +32,8 @@ parts, and ended every one. Its file is in git at
 
 *On trial.* What would make it evidence: the refinement Plan Step in
 `PLAN.md` closes with every finding ended. The reviewer then judges
-whether Refinement Rounds held, each read first and fixed one
-Refinement Layer at a time.
+whether Refinement Rounds held, each read first and fixed by a
+Change Set written from its list.
 Look again at that Plan Step's close.
 
 ## What this is made usable as
@@ -69,7 +69,7 @@ The words of this page, each defined once:
   and its Refinement Round.
 - **Refinement Round** — the Finding Kinds whose fixes do the same to the text, read
   and fixed together before the next Refinement Round reads (§2.1, *Group the Finding Kinds*).
-- **Refinement Layer** — a set of files fixed together. Refinement Layers go in an order
+- **Refinement Layer** — a set of files listed together. Refinement Layers go in an order
   that puts a source before what derives from it (§2.2, *List the files*).
 
 ## 2. The Approach on Trial Stages
@@ -255,12 +255,23 @@ A finding is never deleted or renumbered while the file lives.
 
 ### 2.7 Working the findings
 
-One Refinement Layer's findings at a time, in the files' order
-(§2.2, *List the files*), each a commit plan
-(`docs/conventions/commit-plan/`). A source comes before what
-derives from it, so a fix is carried down once and never redone.
-A commit that touches a Canonical Description goes through the Foundation
-Check.
+A Refinement Round's findings are worked as one Change Set
+(`docs/conventions/commit-plan/`), written from its list. The list's
+order by Refinement Layer (§2.2, *List the files*) shows which fixes
+are sources. The plan groups the commits by what each change needs:
+
+- **each shared fact first:** its home and every copy in one commit,
+  so no commit leaves the repo disagreeing with itself;
+- **then each file once:** all its findings in one edit.
+
+Each commit names its findings. Once the work is done, the Refinement
+Round's section names each finding's commit. A commit that touches a
+Canonical Description goes through the Foundation Check.
+
+*Found 2026-11-01: one commit plan for each Refinement Layer would
+have opened most files of the last read two or three times, and left a
+shared fact's copies disagreeing between Refinement Layers
+(devlog 2026-11-01).*
 
 A finding's ending is read from the decisions and the agent's calls
 together before it is fixed. The finding's own entry still reads as
@@ -270,9 +281,9 @@ its reader proposed.
 calls after its last decision, and four findings were worked from
 their entries against the call (devlog 2026-11-01).*
 
-A fact told in several Refinement Layers is fixed with its home's Refinement Layer.
-Its other copies become Fact References in the same commit plan: a
-deletion, not a rewrite, so the order holds.
+A fact told in several files is fixed in one commit, its home and
+every copy. A copy that a Fact Reference can replace becomes one: a
+deletion, not a rewrite.
 
 A finding whose fix changes how a convention works, not only what
 its text says, is a design change. It is made inside the
@@ -325,9 +336,12 @@ no fixes between them. The order of the Refinement Rounds is for fixes, not
 for reads: with nothing changing, a read gives the same result in
 any order.
 
-What it finds is put in Refinement Rounds by the Finding Kinds' rule
-(§2.1, *Group the Finding Kinds*) and fixed in that
-order, a Refinement Round only where a finding needs one. Then everything is read
+What it finds is listed by Refinement Round, by the Finding Kinds'
+rule (§2.1, *Group the Finding Kinds*), then by Refinement Layer
+(§2.5, *List the findings*). No read waits on a fix, so all of it is
+worked as one Change Set written from that list (§2.7, *Working the
+findings*). Where findings of two Refinement Rounds touch the same
+lines, the edit takes them in Refinement Round order. Then everything is read
 again, until a read finds nothing that breaks a rule. The rule for a finding (§2.4, *Reading the Finding Kinds*) is what makes this end.
 
 ### 2.10 The close
@@ -355,7 +369,8 @@ commit, so the file can be read from git.
 - **Whether the three Refinement Rounds hold.** They were drawn from one
   refinement's eight Finding Kinds. Wiring, which adds missing links, fitted
   Refinement Round 1; whether other added text fits is still to see.
-- **Whether one Refinement Layer's findings fit one commit plan.**
+- **Whether a Change Set written from the list holds.** The last
+  read's is the first; its close says what diverged.
 - **Approach on Trial Stages beside Agent Skill Stages.** The glossary gives this
   page's phases their own Name; whether the two hold apart is judged
   at the close.
