@@ -1,29 +1,30 @@
-# Skill Template — the Master Copy is in correctness-by-construction.
+# Agent Skill Template — the Master Copy is in correctness-by-construction.
 # Copy into a CBC Run and fill; the filled file is the CBC Run's
-# own (.claude/rules/delivered-copies.md, rule 8, A Skill Template is copied and filled).
+# own (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is copied and filled, never edited in place).
 
 spring:
   application:
     name: <project>
 
-  # The one identity this application knows: <project>_runtime — the data
-  # authority, nothing else (the CBC Run's infrastructure contract).
+  # The one identity this application knows: <project>_runtime, the data
+  # authority, nothing else (the CBC Run's Infrastructure Contract).
   # Deliberate absences, each a decision:
-  #   - no schema pinning here: the ground pins search_path server-side
+  #   - no schema pinning here: the Runtime Ground pins search_path server-side
   #     for the runtime role
   #   - no migrator credentials in any profile: schema is the flyway
-  #     one-shot's (ground) and the harness's (tests), never the app's
-  #   - no test profile: the harness overrides the datasource itself
+  #     one-shot's (Runtime Ground) and the Adversity Harness's (tests),
+  #     never the app's
+  #   - no test profile: the Adversity Harness overrides the datasource itself
   datasource:
     url: jdbc:postgresql://localhost:${POSTGRES_PORT:5432}/<project_db>
     username: <project>_runtime
-    # secrets never default: exported by the operator; local-dev value
-    # rides in .env (see .env.example)
+    # secrets never default: exported by the operator; the local-dev value
+    # is in .env (see .env.example)
     password: ${<PROJECT>_RUNTIME_PASSWORD}
 
 management:
   endpoint:
     health:
-      # evidence runs gate on "world is up, store included" — the db
+      # evidence runs wait for "the system is up, store included": the db
       # component must be visible, not just folded into the status
       show-components: always

@@ -40,7 +40,8 @@ Agent Skill Stages keeps the two apart.
 
 Every decision is written down with its why **before** the code that
 applies it exists. The CBC Bootstrap Requirements (Stage 2) are the
-contract. On any conflict between them and the walkthrough reference,
+contract. On any conflict between them and the walkthrough,
+`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`,
 **the CBC Bootstrap Requirements win**, and the conflict is reported.
 
 ## Stage 0 — System Readiness (refuse if not ready)
@@ -90,7 +91,7 @@ why:
   System Definition's Runtime Ground says whether the system runs as
   more than one instance. If it does, a pass in a single process
   proves a shape nobody runs: the proof must cross the process
-  boundary (the stack walkthrough's step 5). Decide it here, by name,
+  boundary (the walkthrough's step 5). Decide it here, by name,
   with its why.
 
   Decide, too, **the form the Adversity Harness starts the system in:
@@ -173,8 +174,8 @@ deliberate, and Stage 4 closes it. Commit it before implementing.
 
 Produce an ordered CBC Bootstrap Step Plan. Each step is one logical
 change, with its own verification and its own commit, naming what it
-gives. The shape CBC Runs have used is five steps (see the stack
-walkthrough in `references/`):
+gives. The shape CBC Runs have used is five steps (see the
+walkthrough's steps):
 
 1. the stack decision recorded;
 2. the skeleton standing in the live repo;

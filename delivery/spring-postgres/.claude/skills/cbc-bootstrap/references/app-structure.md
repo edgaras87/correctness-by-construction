@@ -116,5 +116,5 @@ endorsement. A deeper weighing is a conversation, not this doc.
   conversation at the moment of choice, and here they would go stale.
   The two lines above are for recall and shared words only.
 - **Application code.** It is the CBC Run's, always. The harness
-  reference is the only exception that carries code, and it earned
-  that.
+  reference, `.claude/skills/cbc-bootstrap/references/spring-harness-reference.md`,
+  is the only exception that carries code, and it earned that.

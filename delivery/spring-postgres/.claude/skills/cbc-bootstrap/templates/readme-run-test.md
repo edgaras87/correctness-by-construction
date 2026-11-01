@@ -1,30 +1,33 @@
-<!-- Skill Template — the Master Copy is in correctness-by-construction.
-     Merge into the CBC Run's README at Stage 5, when the
-     harness is real, and fill from the certified commands; the
-     filled sections are the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, A Skill Template is copied and filled). Only the material
-     below travels — this header stays with the Master Copy. The stack
-     line joins the Prerequisites section infra-establish opened; the
-     command bodies are the lived Spring/Maven shape — a different
-     stack writes its own, keeping the shape: Run stands the ground
-     up and ends in a proof of life; Test is the one standard test
-     command, with what it really drives stated beside it. -->
+<!-- Agent Skill Template — the Master Copy is in correctness-by-construction.
+     Merge into the CBC Run's README at Stage 5, when the Adversity
+     Harness is real, and fill from the certified commands. The filled
+     sections are the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is copied and filled, never edited in place).
+     Only the material below travels; this header stays with the
+     Master Copy. The stack line joins the Prerequisites section that
+     Infrastructure Establishment opened. The command bodies are the
+     Spring and Maven shape CBC Runs used. A different stack writes its
+     own, keeping the shape:
+     - Run stands the Runtime Ground up, and ends in a check that the
+       system answers;
+     - Test is the one standard test command, with what it really
+       drives stated beside it. -->
 
 <!-- Into the existing Prerequisites section: -->
 
-- JDK <version> (Maven rides in via the committed wrapper)
+- JDK <version> (Maven comes with the committed wrapper)
 
 ## Run
 
 ```bash
-# stand the ground up (first time: creates roles/schema; see the
-# operator manual for the two-way verification)
+# stand the Runtime Ground up (first time: creates roles/schema; see
+# the Operator Manual for the Catalog Check and the Behavioral Check)
 cp .env.example .env
 podman compose up -d
 
-# run the system against it, as the runtime identity
+# run the system against it, as the runtime role
 set -a; . ./.env; set +a
 ./mvnw spring-boot:run
-# proof of life: curl localhost:8080/actuator/health → status UP, db UP
+# check it answers: curl localhost:8080/actuator/health → status UP, db UP
 ```
 
 If health answers with `db` DOWN, the environment was not exported:
@@ -36,6 +39,6 @@ same shell and start again.
 ```bash
 # the one standard test command — unit and integration tests together;
 # integration tests drive a real throwaway PostgreSQL (Testcontainers,
-# rootless podman), so the ground does not need to be up
+# rootless podman), so the Runtime Ground does not need to be up
 ./mvnw test
 ```
