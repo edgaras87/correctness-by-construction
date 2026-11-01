@@ -130,7 +130,7 @@ read.
 
 The records are the one exception. They never update. `PLAN`, `TODO`
 and the devlog are delivered once as Record Stubs, and the two
-composed files, the Entry File and `temp/README.md`, once. The CBC
+composed files, the Entry File and `README.md`, once. The CBC
 Run fills them. No later delivery touches them. Their skeleton froze
 at birth, so no compare ever runs on them.
 
@@ -202,7 +202,7 @@ At birth, every file of each group. After it, only the copies:
 - the concept.
 
 The rest of the Container Group went once and is the CBC Run's: its
-records, the two composed files, `CLAUDE.md` and `temp/README.md`, the
+records, the two composed files, the Entry File and `README.md`, the
 Decisions Log, the hygiene files (§2.4, *The records' exception*). A
 later delivery that carried it would land Record Stubs over what the
 CBC Run has written.
