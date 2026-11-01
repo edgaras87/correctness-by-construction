@@ -351,8 +351,10 @@ Gate:
       the visual-comparison Agent Skill,
       and that Agent Skill's gates hold for it (2026-10-26, ADR-0067;
       rendered by the reviewer before acceptance).
-- [ ] Each Refinement Round's close read has its counts
-      (`.claude/approaches-on-trial/refinement.md` §2.8, *A Refinement Round's close*).
+- [x] Each Refinement Round's close read has its counts
+      (`.claude/approaches-on-trial/refinement.md` §2.8, *A Refinement Round's close*;
+      2026-11-01). Refinement Rounds 1 and 2 have the counts §2.8 asked
+      when they closed: the count by cause came in `fc4efe0`, 2026-10-31.
 - [ ] The refinement's Work Approach is evaluated: each piece has the
       reviewer's ending, and an ADR records them with the ways
       rejected at the opening
