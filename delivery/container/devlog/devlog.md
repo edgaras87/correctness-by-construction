@@ -2,7 +2,7 @@
 
 <!-- Newest entries on top. 2–5 minutes at the end of each session,
      and a TODO item's story when the item is added.
-     For your later self: fragments fine, honesty mandatory. Never rewrite an earlier entry.
+     Write for your later self: short sentences, honestly. Never rewrite an earlier entry.
      An entry is what happened, the dead ends, where to resume. Test
      output and a Plan Step Gate's facts live in their own records: link them,
      don't copy them.
