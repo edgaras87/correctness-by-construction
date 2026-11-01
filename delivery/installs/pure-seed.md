@@ -1,49 +1,66 @@
 # Install: the Pure Seed — material only, the agent finishes
 
 The birth procedure of record (ADR-0016). One idea: the Pure Seed
-delivers everything and decides nothing. Every delivery is a commit
-on a receipt branch, `birth-seed`, so that branch is the manifest —
-what arrived, from where, at which Delivery Pin — while main stays at the
-hygiene commit with the same files in its worktree, untracked: the
-newborn's agent finishes the birth itself by reading what is there
-and committing it under its own sequence and split (ADR-0018). The
-container comes from `delivery/container/`, this repo's (ADR-0024,
-ADR-0025), and the Pure Seed fills only what is mechanical: the birth
-entry's Delivery Pin and date, two other birth dates, the working name in the
-two entry files, and the playbook's Plan Steps into PLAN with its "Steps
-from:" line. Beyond those, no field is filled: not the other Record Stubs,
-no bundle birth entry. What the agent cannot derive rides in the
-seed commits' subjects; everything else it can.
+delivers everything and decides nothing.
 
-Deliberately not delivered: nothing that encodes a prior CBC Run's
-conclusions, and no playbook file — its Plan Steps ride in PLAN. The
-agent meets the container and the method raw. One exception: the
-two entry files arrive composed, in the container itself, because
-they hold two stances a CBC Run can only receive, the pre-framing guard
-and the pin stance: nothing it does before the Run Briefing produces
-them (ADR-0019, ADR-0024).
+Every delivery is a commit on a Receipt Branch, `birth-seed`. That
+branch is the manifest: what arrived, from where, at which Delivery
+Pin. Main stays at the hygiene commit, with the same files in its
+worktree, untracked. The Newborn CBC Run's agent finishes the CBC
+Run Birth itself. It reads what is there and commits it under its
+own sequence and split (ADR-0018).
+
+The container comes from `delivery/container/`, this repo's
+(ADR-0024, ADR-0025). The Pure Seed fills only what is mechanical:
+
+- the birth entry's Delivery Pin and date;
+- two other birth dates;
+- the working name in the two composed files, the Entry File and
+  `README.md`;
+- the playbook's Plan Steps into PLAN, with its "Steps from:" line.
+
+No other field is filled. The other Record Stubs stay as they are,
+and no entry from this repo's own birth is copied. What the agent
+cannot derive is in the seed commits' subjects. Everything else it
+can derive.
+
+Deliberately not delivered:
+
+- anything that encodes an earlier CBC Run's conclusions;
+- a playbook file.
+
+The agent meets the container and the method with nothing added.
+One exception: the two composed files arrive written, in the
+container itself. They hold two stances a CBC Run can only receive:
+
+- the paragraph that forbids method work before CBC Framing;
+- the line that says the concept is a pinned copy.
+
+Nothing the CBC Run does before the CBC Run Briefing produces them
+(ADR-0019, ADR-0024).
 
 **1. Set the paths and capture the Delivery Pin.**
 
 ```bash
 new_project_dir=~/IdeaProjects/<placeholder-name>
-bundle_dir=~/PycharmProjects/engineering/concept-garden/correctness-by-construction
+deliverer_dir=~/PycharmProjects/engineering/concept-garden/correctness-by-construction
 
-bundle_pin=$(git -C "$bundle_dir" rev-parse --short HEAD)
+deliverer_pin=$(git -C "$deliverer_dir" rev-parse --short HEAD)
 ```
 
-One Delivery Pin, ours, and one directory: everything the Pure Seed copies is
-under `$bundle_dir`, and a CBC Run is born from this repo alone.
+Everything the Pure Seed copies is under `$deliverer_dir`. A CBC Run
+is born from this repo alone.
 
-The name is a placeholder — everything before the Run Briefing is
-problem-agnostic, and the Run Briefing brings the real name.
+The name is a placeholder. Everything before the CBC Run Briefing is
+the same for every problem, and the CBC Run Briefing brings the real
+name.
 
 **2. Copy the container.**
 
 ```bash
 mkdir -p "$new_project_dir"
-cp -r "$bundle_dir"/delivery/container/. "$new_project_dir"/
-sed -i -e "s/<bundle-commit>/$bundle_pin/" \
+cp -r "$deliverer_dir"/delivery/container/. "$new_project_dir"/
+sed -i -e "s/<delivery-pin>/$deliverer_pin/" \
     -e "s/<YYYY-MM-DD> Born/$(date +%F) Born/" \
     "$new_project_dir"/.claude/decisions.md
 sed -i "s/^Date: <YYYY-MM-DD>/Date: $(date +%F)/" \
@@ -63,29 +80,36 @@ for p in sys.argv[1:]:
 ' {} + 2>/dev/null)
 ```
 
-The trailing `/.` matters: `delivery/container/*` silently skips the
-dotfiles — `.gitignore`, `.gitattributes`, `.editorconfig` — and
+The trailing `/.` matters. `delivery/container/*` silently skips the
+dotfiles, `.gitignore`, `.gitattributes` and `.editorconfig`, and
 the whole `.claude/` directory.
 
-The birth entry takes two placeholders: the Delivery Pin, for what was
-delivered, and the date. Its Read-Through Commit is written as *none* in
-the Record Stub — nothing has been read before the first Delivery Note — and
-the Pure Seed leaves it. One Delivery Pin, because the CBC Run holds one delivery
-(ADR-0025, ADR-0036). The next two `sed`s fill the other birth
-dates the container carries, the first ADR's and the devlog's
-first heading: three records, one moment. The last fills the
-working name into the two entry files, which arrive inside the
-container rather than being written over Record Stubs. Every `sed`
-targets a placeholder and not a line number, so re-running the
-block is harmless. The last command strips every copy's *Decisions*
-footer, which cites decisions the CBC Run cannot open; it cuts the
-`---` line and the section below it, and nothing else
+The birth entry takes two placeholders:
+
+- the Delivery Pin, for what was delivered;
+- the date.
+
+Its Read-Through Commit is written as *none* in the Record Stub,
+because nothing has been read before the first Delivery Note. The
+Pure Seed leaves it. One Delivery Pin, because the CBC Run holds one
+delivery (ADR-0025, ADR-0036).
+
+The next two `sed`s fill the other birth dates the container
+carries: the first ADR's, and the devlog's first heading. Three
+records, one moment. The next fills the working name into the two
+composed files. They arrive inside the container, not written over
+Record Stubs. Every `sed` targets a placeholder, not a line number,
+so running the block again is harmless.
+
+The last command strips every copy's *Decisions* footer, which cites
+decisions the CBC Run cannot open. It cuts the `---` line and the
+section below it, and nothing else
 (`docs/conventions/exchange/` §3.8, *The footer at delivery*). Installing by hand, fill the five placeholders
 yourself before the agent's first session.
 
-**3. Create the repo and land the hygiene commit** — verbatim, the
-same in every project, because the hygiene base carries no
-per-project content:
+**3. Create the repo and make the hygiene commit.** Run it as it
+stands. It is the same in every project, because the Hygiene Base
+carries nothing of one project:
 
 ```bash
 cd "$new_project_dir"
@@ -95,31 +119,32 @@ git add .gitignore .gitattributes .editorconfig
 git commit -m "chore: add repo hygiene base"
 ```
 
-**4. Cut the receipt branch and commit the deliveries there, the
-Delivery Pin in the subjects.** One commit per delivery; the subject is where
-the agent later reads the Delivery Pin. Main is left at the hygiene commit.
+**4. Cut the Receipt Branch and commit the deliveries there, the
+Delivery Pin in the subjects.** One commit per delivery. The subject
+is where the agent later reads the Delivery Pin. Main is left at the
+hygiene commit.
 
 ```bash
 git switch -c birth-seed
 
 git add -A
-git commit -m "chore: seed — records and conventions, pin @ $bundle_pin"
+git commit -m "chore: seed — records and conventions, pin @ $deliverer_pin"
 
 # concept/ lands at docs/concept/, the mapping's one exception
-# (docs/conventions/exchange/ §3.3).
+# (docs/conventions/exchange/ §3.3, A group's place in the tree).
 mkdir -p docs/concept
-cp "$bundle_dir"/concept/*.md docs/concept/
+cp "$deliverer_dir"/concept/*.md docs/concept/
 git add docs/concept
-git commit -m "chore: seed — the concept, pin @ $bundle_pin"
+git commit -m "chore: seed — the concept, pin @ $deliverer_pin"
 
 # The groups this CBC Run takes, on top of the container that step 2
 # copied. Each group is a piece of the CBC Run's tree, so copying it in
 # place is the whole of the mapping (docs/conventions/exchange/
-# §3.3). This CBC Run is
+# §3.3, A group's place in the tree). This CBC Run is
 # Spring and PostgreSQL; a CBC Run on another stack names method alone
-# and is born with two method skills, not five (ADR-0029).
+# and is born with two method Agent Skills, not five (ADR-0029).
 for g in method spring-postgres; do
-  cp -r "$bundle_dir"/delivery/$g/. .
+  cp -r "$deliverer_dir"/delivery/$g/. .
 done
 # Their footers stay home, as the container's did in step 2.
 find .claude/skills .claude/rules .claude/shapes .claude/approaches-on-trial \
@@ -131,33 +156,34 @@ for p in sys.argv[1:]:
     if n != t: open(p, "w", encoding="utf-8").write(n)
 ' {} + 2>/dev/null
 git add .claude/skills .claude/shapes docs/glossary
-git commit -m "chore: seed — method and stack skills, shapes, pin @ $bundle_pin"
+git commit -m "chore: seed — method and stack skills, shapes, pin @ $deliverer_pin"
 
 sed -i -e "/<!-- STEPS-BEGIN/r "<(echo; sed -n '/^## The Plan Step Form/,$p' \
-    "$bundle_dir"/delivery/fills/cbc-run-pure-playbook.md; echo) \
+    "$deliverer_dir"/delivery/fills/cbc-run-pure-playbook.md; echo) \
     -e '/<!-- STEPS-BEGIN/,/<!-- STEPS-END/{/STEPS-BEGIN/b;/STEPS-END/b;d}' \
     PLAN.md
 playbook_version=$(sed -n 's/^Playbook version: \(v[0-9]*\).*/\1/p' \
-    "$bundle_dir"/delivery/fills/cbc-run-pure-playbook.md)
-sed -i "s|<playbook> v<N> at <concept commit>|cbc-run-pure $playbook_version at $bundle_pin|" \
+    "$deliverer_dir"/delivery/fills/cbc-run-pure-playbook.md)
+sed -i "s|<playbook> v<N> at <concept commit>|cbc-run-pure $playbook_version at $deliverer_pin|" \
     PLAN.md
 git add PLAN.md
-git commit -m "chore: seed — steps into PLAN, cbc-run-pure $playbook_version @ $bundle_pin"
+git commit -m "chore: seed — steps into PLAN, cbc-run-pure $playbook_version @ $deliverer_pin"
 ```
 
-One Delivery Pin in every subject, ours: the container arrives inside the
-delivery rather than beside it, and where it began is ADR-0025's,
-not a number the newborn holds.
+The container's commit carries our Delivery Pin too. The container
+arrives inside the delivery, not beside it. Where it began is
+ADR-0025's, not a number the Newborn CBC Run holds.
 
-The first sed is the swap the container's markers ask for — the
-Plan Steps land between the STEPS markers and the markers stay; the
+The first `sed` is the swap the container's markers ask for. The
+Plan Steps land between the STEPS markers, and the markers stay. The
 second fills the "Steps from:" comment's placeholder in place, as
-its own text sanctions. Both are re-runnable.
+the comment's own text allows. Both can be run again.
 
-The source is `delivery/fills/cbc-run-pure-playbook.md`, read
-verbatim — no filter rides the insert; this manual delivers what the
-Master Copy holds, like every other seed step. Framing's (CbC) comment
-rides in with the Plan Steps: where the Run Briefing lands, no conclusions.
+The source is `delivery/fills/cbc-run-pure-playbook.md`, read as it
+stands. No filter changes the insert. This manual delivers what the
+Master Copy holds, like every other seed step. CBC Framing's comment
+goes in with the Plan Steps. It says where the CBC Run Briefing
+lands, and holds no conclusions.
 
 **5. Return to main and restore the branch tip into its worktree,
 untracked.** The branch is never merged.
@@ -168,117 +194,145 @@ git restore --source=birth-seed --worktree --staged -- .
 git reset -q
 ```
 
-The restore writes every file of the branch tip into main's
-worktree and index; the reset empties the index again, so the
-files stand untracked and main's log holds nothing but the
-hygiene commit. Check it before firing: `git add -A && git diff
---cached --stat birth-seed; git reset -q` lists every file that
-differs from the branch tip, so it lists nothing when the worktree
-equals it, and it empties the index either way.
+The restore writes every file of the branch tip into main's worktree
+and index. The reset empties the index again. The files stand
+untracked, and main's log holds nothing but the hygiene commit.
 
-**6. Fire the agent** — a fresh session in the newborn, never the
-Concept Deliverer's, with this prompt and nothing more:
+Check it before starting the agent: `git add -A && git diff
+--cached --stat birth-seed; git reset -q`. It lists every file that
+differs from the branch tip, so it lists nothing when the worktree
+equals it. It empties the index either way.
+
+**6. Start the agent.** Open a fresh session in the Newborn CBC Run,
+never the Concept Deliverer's. Give it this prompt and nothing more:
 
 ```text
-This repo was seeded, not born whole — the branch birth-seed
-shows it: one delivery from correctness-by-construction, in two
-halves — first the records, the conventions and the two entry
-files, then docs/concept/, five method and stack skills, the
-method's four Output Shapes and the Plan Steps in PLAN — every seed commit
-naming that one Delivery Pin. Main
-holds the same files, untracked, on top of the hygiene commit;
-the branch is a receipt, never merged. Your
-task is to finish the birth: assemble what was delivered into a
-working project — your own arrangement, the records, PLAN's
-Step 0 closed on its gates. Read the whole repository first,
-every file and every seed commit, but for .claude/shapes/: an
-Output Shape is read at a Plan Step's closing gate, never before the work it
-judges. Then plan the work as the
-conventions you were given direct — your own commit sequence,
-your own order of artifacts, split by the commit scopes the
-skills define, each choice one you can justify in the plan.
-I am the reviewer the commit-plan convention names, and the
-work moves at my pace: stage the plan and ask for my approval
-before committing it; then one commit at a time — stage it,
-show me what changed, and commit only on my word, staging the
-next after each approval.
-Work only within this repository — the repo the delivery came
+This repo was seeded, not born whole. The branch birth-seed
+shows it. It holds one delivery from correctness-by-construction,
+in two halves:
+- first, the records, the conventions and the two composed files,
+  the Entry File and README.md;
+- then docs/concept/, five method and stack Agent Skills, the
+  method's four Output Shapes, and the Plan Steps in PLAN.
+Every seed commit names that one Delivery Pin. Main holds the
+same files, untracked, on top of the hygiene commit. The branch
+is a receipt, never merged.
+
+Your task is to finish the birth. Assemble what was delivered
+into a working project: your own arrangement, the records, and
+PLAN's Step 0 closed on its Plan Step Gate. Read the whole
+repository first, every file and every seed commit, except
+.claude/shapes/. An Output Shape is read at a Plan Step Gate,
+never before the work it judges.
+
+Then plan the work as the conventions you were given direct:
+your own commit sequence and your own order of files, split by
+the commit scopes the Agent Skills define. Each choice is one you
+can justify in the plan.
+
+I am the reviewer the commit-plan Agent Skill names, and the
+work moves at my pace. Stage the plan and ask for my approval
+before committing it. Then go one commit at a time: stage it,
+show me what changed, and commit only on my word. Stage the next
+after each approval.
+
+Work only within this repository. The repo the delivery came
 from is not yours to read. The problem arrives later, as a
-Run Briefing that opens Framing; nothing before it names the
-problem.
+CBC Run Briefing that opens CBC Framing. Nothing before it names
+the problem.
 ```
 
-What the agent does with the delivered entry files stays its own
-choice, and that choice is the Run Reading's object.
+What the agent does with the two composed files stays its own
+choice. That choice is what the CBC Run Reading looks at.
 
-The prompt is the session channel — it carries what is true only of
-this moment: the situation (one delivery in two halves, the branch
-that holds them — deletable, never merged, session-shaped truth),
-the task, the read-everything instruction, the expectation of a
-plan, and the review protocol. That last is session truth like the
-rest — a reviewer is present *this CBC Run* — and a stop written only in
-a file loses to the harness's pressure to finish when no voice above
-the file says anyone is watching (devlog 2026-09-06, "the pure seed
-runs"). Pacing is not a measured object, so the lines leak nothing.
-PLAN carries only what stays true of the project. What the prompt
-deliberately never says: any order, any answer to which records to
-touch or how far to adapt them, whether skills land as one commit or
-split by source — the sequence the agent chooses and justifies is
-the CBC Run's central data. The commit-scope rule is not restated; it
-rides in the delivered skills, and the prompt only points at them.
-The stay-inside line guards the blindness: this repo holds the
-answer sheet, `docs/baselines/`, and the permission prompt on any
-outside read is the human's hard backstop behind it.
+The prompt holds what is true of this session only:
 
-Anything said to the newborn after this prompt, at a review stop or
-in an answer, is told text, held to the Delivery Note's rules
-(`docs/conventions/exchange/` §3.7, *The Delivery Note*). One case is the birth's own: a
-newborn holds no earlier state, so it cannot check "this changed
-since" — the claim has nothing to land on. Such a claim says so, in
-a clause.
+- the situation: one delivery in two halves, and the branch that
+  holds them, which can be deleted and is never merged;
+- the task;
+- the instruction to read everything;
+- the expectation of a plan;
+- the review protocol.
 
-**A correct Pure Seed is checkable** — before the agent starts, every
-item is a verifiable fact:
+The review protocol is true of this session too: a reviewer is
+present *this CBC Run*. A stop written only in a file loses to the
+harness's pressure to finish when nothing outside the file says a
+reviewer is present (devlog 2026-09-06, "the pure seed runs").
+Pacing is not what a CBC Run Reading measures, so these lines give
+nothing away. PLAN carries only what stays true of the project.
+
+What the prompt deliberately never says:
+
+- any order;
+- which records to touch, or how far to adapt them;
+- whether Agent Skills land as one commit or split by source.
+
+The sequence the agent chooses and justifies is the CBC Run's
+central data. The commit-scope rule is not restated. It is in the
+delivered Agent Skills, and the prompt only points at them.
+
+The line that keeps the agent inside the repo keeps it from seeing
+answers. This repo holds the baselines a CBC Run must not read,
+`docs/baselines/`. The permission prompt on any read outside is the
+reviewer's last check behind that line.
+
+Anything said to the Newborn CBC Run after this prompt, at a review
+stop or in an answer, is Told Channel text. It is held to the
+Delivery Note's rules
+(`docs/conventions/exchange/` §3.7, *The Delivery Note*). One case is the birth's own. A
+Newborn CBC Run holds no earlier state, so it cannot check "this
+changed since": the claim has nothing to compare against. Such a
+claim says so, in a clause.
+
+**A correct Pure Seed is checkable.** Before the agent starts, every
+item is a fact that can be checked:
 
 - Four commits on birth-seed above the hygiene commit: the
   records and conventions, the concept, the method and stack
-  skills with the method's Output Shapes, the Plan Steps into PLAN. Main at
+  Agent Skills with the method's Output Shapes, the Plan Steps into PLAN. Main at
   the hygiene commit, its log holding nothing else; main's
   worktree byte-identical to the branch tip, every delivered file
   listed untracked by `git status` (the check in step 5 lists
   nothing).
 - Every pinned copy (`docs/conventions/exchange/` §3.2, *What goes*)
   byte-identical to its Master Copy at the subject's Delivery Pin, and as many
-  method and stack skills and Output Shapes as step 6's prompt counts.
-- PLAN's STEPS region holds the pure playbook's sequence —
+  method and stack Agent Skills and Output Shapes as step 6's prompt counts.
+- PLAN's STEPS region holds the pure playbook's sequence,
   identical to `delivery/fills/cbc-run-pure-playbook.md` from the Plan Step Form down
-  at the subject's Delivery Pin — both markers in place, and the "Steps
+  at the subject's Delivery Pin. Both markers are in place, and the "Steps
   from:" comment names cbc-run-pure at the version the playbook's
   version line gives, at the Delivery Pin. No
-  playbook file exists, and no line of the region states an
-  assembly conclusion.
+  playbook file exists, and no line of the region states how an
+  earlier CBC Run was assembled.
 - The five birth placeholders are filled and no more: the birth
   entry's Delivery Pin and date, ADR-0001's date, the devlog heading,
-  and the working name in the two entry files. Every other Record Stub
-  still reads as one, and no bundle birth entry exists.
+  and the working name in the two composed files. Every other Record Stub
+  still reads as one, and no entry from this repo's own birth exists.
   `.claude/CLAUDE.md` and `README.md` are byte-identical to the
   container's with the name filled, neither carries a provenance
   header, and no `CLAUDE.md` sits at the root.
-- No provenance header from this repo anywhere in the newborn.
+- No provenance header from this repo anywhere in the Newborn CBC Run.
 
-What the agent is left to do — the reader's checklist for the
-Run Reading afterwards, not instructions delivered to it: every
-delivered file committed on main by the agent, under its own
-sequence and the commit split the skills define (an add-all in
-one commit is an outcome the Run Reading records, not one the Pure Seed
-prevents); a commit plan whose sequence is chosen and
-justified (the entrance doc's place in it, when records enter
-history and how far they adapt to the method, whether skills land
-whole or split by source); the Record Stubs filled; Step 0 closed
-clean on its container gates — no briefing gate exists to block
-it, the Run Briefing opens Framing; the agent/project commit split
-held throughout, from the skills, unprompted.
+What the agent is left to do is the reader's checklist for the CBC
+Run Reading afterwards. It is not delivered to the agent as
+instructions:
 
-The Run Reading is the Concept Deliverer's act, read-only, recorded there:
-the derived arrangement against the walk-1 baseline and the
-shipped template, the order chosen, the misses.
+- Every delivered file committed on main by the agent, under its
+  own sequence and the commit split the Agent Skills define. An
+  add-all in one commit is an outcome the CBC Run Reading records,
+  not one the Pure Seed prevents.
+- A commit plan whose sequence is chosen and justified: the Entry
+  File's place in it, when records enter history and how far they
+  adapt to the method, whether Agent Skills land whole or split by
+  source.
+- The Record Stubs filled.
+- Step 0 closed clean on the Plan Step Gate the container wrote for
+  it. No Plan Step Gate waits on the briefing to block it: the CBC
+  Run Briefing opens CBC Framing.
+- The split between agent commits and project commits held
+  throughout, from the Agent Skills, unprompted.
+
+The CBC Run Reading is the Concept Deliverer's act, read only, and
+recorded there. It compares the arrangement the agent derived
+against `docs/baselines/cbc-derived-claude-walk1.md` and the
+container's Record Stubs, the order chosen, and the misses.

@@ -30,7 +30,7 @@
      foundation: the agent-arrangement convention -->
 
 - <YYYY-MM-DD> Born from the correctness-by-construction delivery,
-  Delivery Pin <bundle-commit>; Read-Through Commit none — nothing read before the
+  Delivery Pin <delivery-pin>; Read-Through Commit none — nothing read before the
   first Delivery Note.
   Conventions: project-recording, commit-messages, repo-hygiene,
   commit-plan, exchange, agent-arrangement, visual-comparison,
