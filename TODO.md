@@ -664,7 +664,7 @@
         `cbc-framing`'s export section, `infra-establish`'s manuals
         told three times, the worked example's two layouts; FINDING-228,
         the walkthrough's parts in its fourth section
-        (`delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md` §4, *Stand up the evidence harness*); and FINDING-206, the playbook's 12
+        (`delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md` §4, *The Adversity Harness*); and FINDING-206, the playbook's 12
         citations of CBC Run 3's RETRO.
       Trigger: the refinement of this repo closes. Its Writing Finding Kind
                reads these texts; what Refinement Round 3 did leaves this
