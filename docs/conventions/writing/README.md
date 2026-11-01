@@ -122,13 +122,21 @@ chat answers, records, commit messages, code comments.
    can find it. A
    hyphenated word counts as one, here and in the two words a Name
    needs: "never-event" is one word.
-   Every Markdown mark already has a job here, so none marks a Name.
-   Three things are written otherwise:
+   Every Markdown mark already has a job here, so one alone marks a
+   Name: bold, once, at the line that defines it. The capitals show a
+   Name at every use, and the bold shows where it is defined. A bold
+   lead that opens a list item marks the item, not the Name, so it
+   may begin with one.
+   Four things are written otherwise:
    - a numbered thing, by its owner and number: "working-a-reading
      rule 2", "the walk's step 3";
    - a label inside its owner, keeping its case: "Step 0" in a plan,
      "Stage 3" in an Agent Skill;
-   - a path, as it is.
+   - a path, as it is;
+   - a Foundation Line's value, as the conventions manual gives it,
+     since the Change Walk greps for it exactly: `the exchange
+     convention` (`docs/conventions/conventions/` §1.3, *The
+     Foundation Line*).
 
    A thing is defined when a text gives it a meaning
    English does not. Its Name goes into the glossary in the commit
@@ -144,7 +152,9 @@ chat answers, records, commit messages, code comments.
     - one phrase;
     - in sentence case, a Glossary Name inside it keeping its
       capitals;
-    - with no gloss after a dash or colon: the gloss opens the body.
+    - with no gloss after a dash or colon, joined by a comma, or in
+      parentheses: the gloss opens the body. *The tiers, drawn* holds
+      one; a list, *Ticks, gates and differences*, does not.
 
     This holds for numbered sections and parts in both Convention
     Seats. Three are not titles under it: the manual form's fixed
@@ -162,7 +172,7 @@ chat answers, records, commit messages, code comments.
     references and code fences before and after, and changes nothing
     on a second run.
 
-*Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model; devlog 2026-10-19; ADR-0074 to ADR-0077, rules 9 to 11; devlog 2026-10-29, the lessons' own stories: six places.*
+*Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model; devlog 2026-10-19; ADR-0074 to ADR-0077, rules 9 to 11; ADR-0079, rules 9 and 10; devlog 2026-10-29, the lessons' own stories: six places.*
 
 ## Why it arrives this way
 
