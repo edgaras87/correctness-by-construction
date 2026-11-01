@@ -32,6 +32,9 @@
   directory named for the Concept Deliverer's commit, the Delivery
   Note beside it, in force only once taken
   (`.claude/rules/delivered-copies.md`, rule 5, *After the reply, the Delivery…*).
+- **Receipt Branch** — a branch that holds a delivery as it arrived,
+  named by its Delivery Pin (`.claude/rules/delivered-copies.md`,
+  rule 5, *After the reply, the Delivery…*).
 - **Delivery Take** — moving a Delivery Staging into place and
   recording the new Delivery Pin, as `.claude/rules/delivered-copies.md`
   says.

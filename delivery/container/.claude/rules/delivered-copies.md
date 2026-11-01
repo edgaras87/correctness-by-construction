@@ -108,17 +108,22 @@ foundation: the exchange convention
    3. **An edit with no verdict was made after the Read-Through Commit the
       Delivery Note names.** The copy lands whole, and that edit is re-applied
       on top. Its Decisions Log entry and its CBC Run Ask stand until a later
-      Delivery Note answers the edit. If the edit was made to a path the Delivery Note
+      Delivery Note answers the edit. An edit the Delivery Note holds
+      is re-applied on top the same way, and stands until a later
+      Delivery Note answers it. If the edit was made to a path the Delivery Note
       names as gone, there is no copy to land on, and nothing is
       re-applied. The Decisions Log entry and the CBC Run Ask stand, the diff is
       in this CBC Run's history, and the next Delivery Note answers them.
-   4. **Copy whole.**
+   4. **Copy whole.** A Receipt Branch, named by the new Delivery Pin,
+      may hold the delivery as it arrived; cut one when this CBC Run
+      expects to edit, since it makes step 2's diff exact next time.
    5. **Remove what the Delivery Note says is gone.** Each path it names as
       deleted is deleted, and each it names as renamed is moved. A
       copy cannot carry an absence, so the Delivery Note carries it and this
       step does it.
-   6. **Write one Decisions Log entry** carrying both numbers: the new
-      Delivery Pin, and the Read-Through Commit the Delivery Note names. The copy is pristine
+   6. **Write one Decisions Log entry:** the date, the new Delivery
+      Pin, the Read-Through Commit the Delivery Note names, what came,
+      and each declined edit with where its need went. The copy is pristine
       again, and the CBC Run Ask leaves with the Delivery Pin.
    7. **Remove the Delivery Staging,** the directory named for the Concept Deliverer's commit and
       its Delivery Note, and nothing else. `temp/` may hold the project's own
