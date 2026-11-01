@@ -75,6 +75,11 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   How it fails, "the joint" is the two components together, the
   Structural Walls' ranks have one name each. No meaning moves;
   concept v1 stays v1. Editorial.
+- Chapter 00 names what design-before-code culture leaves out, as it
+  names it for the other four practices: it puts the flaw in a
+  document, but does not say what the document must hold. The
+  chapter called them "five phases of one derivation" with four gaps
+  listed.
 
 ### Removed
 

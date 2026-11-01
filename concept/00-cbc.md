@@ -115,6 +115,8 @@ Each of those practices covers one part and stops:
 - threat modeling produces adversity but no boundary;
 - bounded contexts produce boundaries but no guarantees;
 - SLOs state guarantees but no enforcement;
+- design-before-code culture puts the flaw in a document, but does not
+  say what the document must hold;
 - the correctness-by-construction lineage enforces but doesn't say
   where specifications come from.
 
