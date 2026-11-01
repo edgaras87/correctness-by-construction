@@ -1,99 +1,117 @@
 # The whole system in plain words
 
-*One page. No jargon. A summary of the concept, `docs/concept/`, and of
-the two workflows, `.claude/skills/cbc-framing/references/cbc-framing-workflow.md`
-and `.claude/skills/cbc-slice/references/cbc-slice-workflow.md`. If this
-page and they ever disagree, one of them is wrong — find out which.*
+*One page. No jargon: each Name is given once, beside its plain
+words. A summary of the concept, `docs/concept/`, and of the two
+workflows, `.claude/skills/cbc-framing/references/cbc-framing-workflow.md`
+and `.claude/skills/cbc-slice/references/cbc-slice-workflow.md`. If
+this page and they ever disagree, one of them is wrong: find out
+which.*
 
-**What this is, in one sentence:** a design discipline that derives a
-backend from one falsifiable promise — asking *"what must never happen?"*
-before *"what should it do?"* — and answers each never-event with a
-structural wall, proven by a test that creates the attack.
+**What this is, in one sentence:** a way of designing a backend that
+starts from what must never happen.
+
+It derives the backend from one Falsifiable Promise. It asks *"what
+must never happen?"* before *"what should it do?"* It answers each
+System Never-Event with a Structural Wall, proven by a test that
+creates the attack.
 
 ## The one idea
 
-Most software is designed by asking "what should it do?" and listing
-features. This method flips it: ask **"what must never happen?"** first.
-Money counted twice. An order created twice. A stale answer shown as fresh.
-Then build the smallest system that makes those disasters *impossible by
-structure* — not caught by tests, not fixed after alerts. Features come
-last, as the minimum needed to keep the promises real. Every extra feature
-is a new way to break your own guarantees, so staying small is discipline,
-not taste.
+Ask **"what must never happen?"** first. Money counted twice. An
+order created twice. A stale answer shown as fresh. Most software is
+designed the other way round, by asking "what should it do?" and
+listing features.
 
-## The map: five nested boxes
+Then build the smallest system that makes those disasters
+*impossible by structure*: not caught by tests, not fixed after
+alerts. Features come last, as the minimum needed to keep the
+promises real. Every extra feature is a new way to break your own
+System Guarantees. So staying small is discipline, not taste.
 
-- **LAYER-1-ENVIRONMENT — The world.** Everything outside your control:
-  users, networks, other systems, your own process crashing. It is
-  hostile: things vanish, duplicate, and lie.
-- **LAYER-2-SYSTEM — Your system.** One promise: which facts you are the
-  authority on, and what you commit to about them. A real promise can be
-  broken — you can describe the exact scenario where it fails. Also the
-  boundary: everything crossing from outside gets checked right at the
-  door.
-- **LAYER-3-AREAS — The parts inside.** Split by one rule: every fact has
-  exactly one owner. Often the answer is "one part" — that's fine.
-- **LAYER-4-PROBLEMS — The small problems.** Inside each part: what must
-  hold true, and what attacks it. Small on purpose — the boxes above made
-  them small.
+## The Layered System: five nested layers
+
+- **LAYER-1-ENVIRONMENT — The world.** Everything outside your
+  control: users, networks, other systems, your own process crashing.
+  It is hostile: things vanish, duplicate, and lie.
+- **LAYER-2-SYSTEM — Your system.** One Falsifiable Promise: which
+  facts you are the authority on, and what you commit to about them.
+  A real promise can be broken: you can describe the exact scenario
+  where it fails. Also the boundary: everything crossing from outside
+  is checked right at the door.
+- **LAYER-3-AREAS — The parts inside,** the Responsibility Areas.
+  They are split by one rule: every fact has exactly one owner. Often
+  the answer is "one part", and that is fine.
+- **LAYER-4-PROBLEMS — The small problems.** Inside each part: what
+  must hold true, and what attacks it. They are small on purpose: the
+  layers above made them small.
 - **LAYER-5-INTERACTION — Between the parts.** Correctness no single
-  part can own. Where most real incidents live. Empty if there's only
-  one part.
+  part can own. Most real incidents happen here. It is empty if there
+  is only one part.
 
-## The order of work (not the same as the map's order)
+## The order of work (not the same as the layers' order)
 
-0. **Choose the promise** (intent). One sentence, worth proving, for a
-   named audience.
+0. **Choose the Falsifiable Promise** (the CBC Framing Intent). One
+   sentence, worth proving, for a named audience.
 1. **What must be ours?** (LAYER-2-SYSTEM). For each candidate: "if
-   someone else owned this, could they break our promise?" Yes → ours. No
-   → refused, in writing.
+   someone else owned this, could they break our promise?" Yes: ours,
+   a System Possession. No: refused, in writing.
 2. **List the enemies** (LAYER-1-ENVIRONMENT). Follow one request
-   through its whole life; everything beyond your control is an actor.
-   For each: can it vanish, duplicate, or lie? Write facts you can
-   attack with ("responses get lost"), not vibes ("networks are
-   unreliable"). Stop when two fresh attacks on the list find nothing
-   new.
-3. **Run the collisions** (LAYER-4-PROBLEMS). Each enemy fact × each thing
-   you own: what dies? Name the kill, never the cure — mechanisms come
-   later.
-4. **Sort into owners** (LAYER-3-AREAS) — only if the collisions
+   through its whole life. Everything beyond your control is an
+   actor. For each: can it vanish, duplicate, or lie? Write Enemy
+   Facts you can attack with ("responses get lost"), not vague worries
+   ("networks are unreliable"). Stop when two fresh attacks on the
+   list find nothing new.
+3. **Run the Enemy Collisions** (LAYER-4-PROBLEMS). Each Enemy Fact ×
+   each thing you own: what dies? Name the Enemy Collision Kill, never
+   the cure. Mechanisms come later.
+4. **Sort into owners** (LAYER-3-AREAS), only if the Enemy Collisions
    actually force separate owners. One owner is a confirmed answer,
    not a gap.
-5. **Check between owners** (LAYER-5-INTERACTION) — only if stage 4
+5. **Check between owners** (LAYER-5-INTERACTION), only if Stage 4
    made more than one.
-6. **Cut into slices.** A slice = one invariant made real: proven to
-   survive its specific attack, end to end.
+6. **Cut into Invariant Slices.** An Invariant Slice is one invariant
+   made real: proven to survive its specific attack, end to end.
 
-*(Numbered 0–6 to match the detailed workflows stage for stage.)*
+*(Numbered 0 to 6 to match the detailed workflows, Stage for Stage.)*
 
-## Working one slice
+## Working one Invariant Slice
 
-**Specify** — write what must hold and what attacks it; no solutions yet.
-**Plan** — pick the mechanism and say why it beats *that* attack.
-**Build** — the mechanism, plus a test that *creates* the attack (hammer it
-concurrently, inject duplicates, kill it mid-write) and shows the invariant
-surviving. **Document** — the promise, the guarantees, the proof, readable
-later. The attack-creating test is the deliverable most projects skip.
+- **Specify:** write what must hold and what attacks it. No solutions
+  yet.
+- **Plan:** pick the mechanism, and say why it beats *that* attack.
+- **Build:** the mechanism, plus a test that *creates* the attack
+  (hammer it concurrently, inject duplicates, kill it mid-write) and
+  shows the invariant surviving.
+- **Document:** the Falsifiable Promise, the guarantees, the proof,
+  readable later.
+
+The test that creates the attack is the deliverable most projects
+skip.
 
 ## Enforcement: who guards each guarantee
 
-Every guarantee gets exactly one structural guard, strongest available:
+Every System Guarantee gets exactly one Structural Wall, the
+strongest available:
 
 the store's refusal (a constraint, a right withheld) → type system →
 single checked entry path → runtime check → code review → hope.
 
-"All the code being careful" is not a guard — it's the absence of one.
+"All the code being careful" is not a Structural Wall. It is the
+absence of one.
 
 ## How it fails (watch for these)
 
-New features shipping without re-checking the guarantees. An admin script
-that bypasses the one enforced path — the guarantee quietly becomes
-fiction. Guarantees drifting out of structure and back into test suites.
-And over-theorizing before the boxes have shrunk the problem.
+- **System Guarantee Erosion:** new features ship without re-checking
+  the System Guarantees.
+- **Escape Hatch:** an admin script goes around the one enforced
+  path, and the System Guarantee quietly becomes fiction.
+- **Testing Theater:** System Guarantees drift out of structure and
+  back into test suites.
+- **Theory Swamp:** theory before the layers have shrunk the problem.
 
 ## When NOT to use this
 
-Throwaway code, experiments, low-stakes tools: iterate-and-fix is cheaper
-and not wrong. This method pays off when breaking the promise is expensive
-or irreversible (money, safety, trust), or the system will live long.
-
+Throwaway code, experiments, low-stakes tools: iterate-and-fix is
+cheaper there, and not wrong. This method pays off when breaking the
+promise is expensive or cannot be undone (money, safety, trust), or
+when the system will live long.
