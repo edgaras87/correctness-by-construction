@@ -3832,3 +3832,18 @@ them.
   - visual-comparison, 475 to 479, 481 and 482, `7a54776`; 480
     declined;
   - the index and the glossary, 341, 342 and 486 to 491, `a575fb5`.
+- **Layer 4, `ARCHITECTURE.md`, `README.md` and the records:** each
+  record's findings in its commit, the old words of its living text
+  given their Names there; history kept its words.
+  - `ARCHITECTURE.md`, 546 to 556, `c0eb1e6`; its references in our
+    one-home Agent Rule, `ddc07db`, and under `delivery/`, `252293f`;
+  - `README.md`, 557 to 563, `943dafe`; 564 fixed in layer 2,
+    `f222539`;
+  - `PLAN.md`, 570 to 577, `520ab30`;
+  - `TODO.md`, 578 to 585, 587 to 590 and 592 to 594, `e5a874b`; 586
+    already fixed; 591 not worked, its count needing a reading of
+    the 97 uses;
+  - `CHANGELOG.md`, 565 to 567 and 569, `5e703d3`, with 566's four
+    TODO lines; 568 declined;
+  - `devlog/README.md`, `temp/README.md` and `docs/adr/README.md`,
+    598 to 603, `c57a713`; 596 and 597 declined.
