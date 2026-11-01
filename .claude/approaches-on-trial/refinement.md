@@ -262,6 +262,14 @@ derives from it, so a fix is carried down once and never redone.
 A commit that touches a Canonical Description goes through the Foundation
 Check.
 
+A finding's ending is read from the decisions and the agent's calls
+together before it is fixed. The finding's own entry still reads as
+its reader proposed.
+
+*Found 2026-11-01: Refinement Round 3's close read listed the agent's
+calls after its last decision, and four findings were worked from
+their entries against the call (devlog 2026-11-01).*
+
 A fact told in several Refinement Layers is fixed with its home's Refinement Layer.
 Its other copies become Fact References in the same commit plan: a
 deletion, not a rewrite, so the order holds.
