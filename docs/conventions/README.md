@@ -4,8 +4,7 @@ A Local Map (`docs/conventions/project-recording/` §8.6, *Local Maps*): how the
 during a piece of work hand to each other, from an idea to committed
 work. The others relate through what they govern, read or describe,
 and each states those relations in its manual's *What this does not
-cover*. Which conventions there are and what each covers is
-`ARCHITECTURE.md`'s (§1.2, *The conventions*).
+cover*. Which conventions there are and what each covers is `ARCHITECTURE.md`'s (`ARCHITECTURE.md` §1.2, *The conventions*).
 What a convention is, how one is written and how one is added is
 `docs/conventions/conventions/`.
 
@@ -48,5 +47,5 @@ stack can use it unchanged.
 **What this order produces** is not in it: an ADR for a decision
 with rejected options, a `temp/` draft for a measurement or a
 comparison, and the commits themselves. The other conventions, and
-the records they govern, are not stages of this and fire on their
-own moments.
+the records they govern, are not steps in this order. Each fires at
+its own moment.

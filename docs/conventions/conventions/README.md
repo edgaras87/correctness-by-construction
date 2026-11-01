@@ -26,13 +26,14 @@ convention, and the index read against it the next day (devlog
 Nothing shipped of its own; what a repo holds is:
 
 - **the Foundation Line in every shipped Agent Skill, Agent Rule and Output Shape**
-  — held in a CBC Run, where it is this convention's one Work Approach (§1.3, *The Foundation Line*);
+  — held in a CBC Run, where it is this convention's one Work Approach, read whenever its file is opened (§1.3, *The Foundation Line*);
 - **`.claude/rules/convention-manual.md` — the form of a manual,
   the Concept Deliverer's**, loading whenever a manual is opened;
-- **the index, `docs/conventions/README.md`** — it points at each manual. It holds
-  the order the conventions act in during a piece of work, relations
-  only (ADR-0032). One line sends a reader here and to
-  `ARCHITECTURE.md` (§1.2, *The conventions*).
+- **the index, `docs/conventions/README.md` — the Concept Deliverer's**,
+  opened when a reader looks for the order the conventions act in
+  during a piece of work. It holds that order, relations only
+  (ADR-0032). One line sends a reader here, and to `ARCHITECTURE.md`
+  for which conventions there are (`ARCHITECTURE.md` §1.2, *The conventions*).
 
 What derives from this page is that list. A change here runs the Change Walk on it;
 a change forced in one of them is checked back against this page.
@@ -92,7 +93,7 @@ what the tool reads to load it:
 ---
 name: <its act, a verb, never a name already used: exchange-read>
 description: <when to read this file — the trigger>
-foundation: the <name> convention
+foundation: <what the file stands on, as §1.3 gives it>
 ---
 ```
 
@@ -162,8 +163,8 @@ its act, a verb: exchange-read, infra-establish.
 
 In text, a Work Approach is always written with its kind: the
 commit-plan Agent Skill, the one-home Agent Rule. A manual is written
-the same way, the commit-plan manual. A sentence that points at where
-a fact is written gives the path, as a Fact Reference.
+the same way, the commit-plan manual. A sentence that points at where a fact is written gives the path, as a
+Fact Reference (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
 
 Five names older than this part are shared: commit-messages,
 commit-plan, visual-comparison and retrospective, each a manual and
@@ -181,7 +182,7 @@ and comes to no harm (`docs/models/idea-to-output.md` §6.2, *What a convention 
 manual records it. None has yet.
 
 The manual is free prose: the convention stated, from which its Work
-Approaches are made usable (`ARCHITECTURE.md` §1, *What is stated here*). It explains and
+Approaches are made usable (`docs/models/idea-to-output.md` §6.1, *The manual's level*). It explains and
 points at the ADRs. A Work Approach says what a project does, and its
 `foundation` line names the manual it derives from. How a manual
 and what points at it or derives from it stay in agreement is
@@ -229,8 +230,8 @@ Never a wish written as evidence.
 
 ### 2.3 The list of what derives
 
-*What this is made usable as* is the list a change to the page
-walks, placed as the answer to the need. Each entry has:
+*What this is made usable as* is the list the Change Walk runs on when
+the page changes, placed as the answer to the need. Each entry has:
 
 1. its path from the repo root;
 2. its mark, shipped or the Concept Deliverer's;
@@ -305,8 +306,9 @@ Optional: Fact References only, as root paths.
 ## 3. Adding a convention
 
 A new convention can come from an Approach on Trial, ours or a
-CBC Run's, when its evaluation places a piece as a convention of its
-own (`.claude/approaches-on-trial/approach-evaluation.md`). The
+CBC Run's, when its evaluation, by the approach-evaluation Approach
+on Trial, places a piece as a convention of its own
+(`docs/models/idea-to-output.md` §4.2, *The upward direction*). The
 placing takes these steps:
 
 1. An ADR for the decisions behind it, opened Proposed when it lands
@@ -332,8 +334,8 @@ placing takes these steps:
 *Its story: devlog 2026-10-18; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
 No CHANGELOG line and no Plan Step. The CHANGELOG logs the concept's
-versions and has no place for a convention's entry (`CHANGELOG.md`'s
-header comment); the PLAN has no per-convention Plan Steps.
+versions, and has no place for a convention's entry (`CHANGELOG.md`'s
+header comment). The PLAN has no Plan Step per convention.
 
 *Its story: devlog 2026-09-28; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
@@ -343,8 +345,8 @@ The manual reaches no agent: a maintainer reads it. The form of a
 manual is an Agent Rule. It loads when a manual is read, so it is in
 view while one is worked. A manual written new is written without it
 (`docs/conventions/agent-arrangement/` §5.6, *Rules files*). The
-Foundation Line sits in the frontmatter of every shipped Agent Skill
-and Agent Rule, read by whoever opens the file, because a claim about
+Foundation Line sits in every file §1.3 names, in its frontmatter or
+its header comment, read by whoever opens the file, because a claim about
 what a file stands on has to travel with the file.
 
 ## What this does not cover
@@ -368,7 +370,7 @@ what a file stands on has to travel with the file.
 
 - The order the conventions act in: `docs/conventions/README.md`.
 - The rule for every description: `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*.
-- What `foundation` holds for each kind of file: §1.3, *The Foundation Line*, above; that
-  it travels with a copy, `docs/conventions/exchange/` §3.5, *The Foundation Line in a copy*.
+- What `foundation` holds for each kind of file: `docs/conventions/conventions/` §1.3, *The Foundation Line*.
+- That it travels with a copy: `docs/conventions/exchange/` §3.5, *The Foundation Line in a copy*.
 - A convention whose Work Approach is an Agent Rule, not an Agent Skill:
   `docs/conventions/shapes/`.
