@@ -26,7 +26,7 @@ into the CBC Run's `.claude/shapes/`; the rest is the shapes manual's
 - **The CBC Run's own from birth.** The container's Record Stubs, its
   two composed files, the Entry File and `README.md`, its Decisions
   Log, its Hygiene Base and its `temp/README.md` are copied once and
-  are the CBC Run's from then on. They never travel again.
+  are the CBC Run's from then on. They are never delivered again.
 - **Pinned copies:**
   - the Container Group's convention Agent Skills, Agent Rules and
     Approach on Trial;
@@ -46,14 +46,14 @@ into the CBC Run's `.claude/shapes/`; the rest is the shapes manual's
 |---|---|
 | `delivery/fills/cbc-run-pure-playbook.md` | its Plan Steps replace everything between the PLAN Record Stub's STEPS markers. The "Steps from:" line names it at the Delivery Pin (`delivery/installs/pure-seed.md` step 4). The CBC Run holds no copy of the playbook. |
 
-An Agent Skill's Agent Skill Templates travel with the Agent Skill as pinned copies. How
+An Agent Skill's Agent Skill Templates are delivered with the Agent Skill as pinned copies. How
 a CBC Run fills an Agent Skill Template, and what it does when it deviates
 from one, is the Exchange Convention's (`docs/conventions/exchange/` §5.8, *Agent Skill Templates*).
 
 The method's own files, such as `docs/system/`, which the
 cbc-framing Agent Skill writes, sit beside the records in the CBC Run,
-not in place of them. Events of the method are recorded under the
-container's record rules.
+not in place of them. Events of the method are recorded where the
+container's records table and each Record Stub's header comment say.
 
 ## 3. The one exception
 
@@ -74,11 +74,11 @@ CBC Run it is a pinned reference beside the CBC Run's own work
 | `.claude/decisions.md`'s birth entry carries one Delivery Pin and a Read-Through Commit | the Delivery Pin is ours (ADR-0025); the Read-Through Commit is the Exchange Convention's second number (ADR-0036) |
 
 In the two composed files, the title line, the records table
-and the standing comments are the Record Stubs' own form.
+and the header comments are the Record Stubs' own form.
 
 ## 5. What a CBC Run does not get
 
-Its own decisions, its own run files and its own versioning: they
+Its own decisions, the files that run its system and its own versioning: they
 are the CBC Run's to make. Nor the agent definitions of the archive
 repo the concept came from, since the Agent Skills carry the method
 whole (ADR-0006). A CBC Run on another stack
@@ -91,5 +91,5 @@ that run much later. Each Agent Skill's Stage 0 refuses to start
 before its inputs exist, so an early copy is inert. And one moment
 keeps the whole set at one Delivery Pin. The CBC Run's Plan Steps,
 and which Agent Skill each opens, come from the playbook,
-`delivery/fills/cbc-run-pure-playbook.md`. Only infra-serve, re-entry,
+`delivery/fills/cbc-run-pure-playbook.md`. Only the infra-serve Agent Skill, for an Infrastructure Service Re-entry,
 arrives unplanned, and its own trigger covers that.

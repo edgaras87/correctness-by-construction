@@ -47,7 +47,7 @@ neither splits its work into a few stages when it opens, and lists
 them in its Notes.
 Two examples:
 
-- the order service's first Invariant Slice, which runs `cbc-slice`: "Now:
+- the order service's first Invariant Slice, which runs the cbc-slice Agent Skill: "Now:
   Stage 2, the plan. Specification signed 2026-11-01."
 - Step 2, which runs no Agent Skill, its Notes listing name, description
   and remote: "Now: the description. Name chosen 2026-11-03."
@@ -59,15 +59,15 @@ work is.
 of its work.** A Plan Step Gate written at the close describes what happened. It
 does not set a standard the work was held to.
 
-**At the opening.** Cheap now, impossible later: a branch not cut
-cannot be cut afterwards.
+**At the opening.** Cheap now, impossible later: work done before
+the branch is cut is not on it.
 
 - [ ] The Plan Step's branch `<branch>` is cut from main, and the Plan Step
       has not been worked anywhere else.
 - [ ] This Plan Step Gate was written before the work started.
 - [ ] The Plan Step's Work Approach is known: the Agent Skill it runs; an Approach
       on Trial in `.claude/approaches-on-trial/` that covers the
-      work; or the stages its Notes list from earlier CBC Runs. If none,
+      work; or stages from earlier work, listed in its Notes. If none,
       the Plan Step drafted one
       (`.claude/approaches-on-trial/approach-drafting.md`).
 
@@ -108,7 +108,7 @@ come in its CBC Run Hand-off, never here.
       reviewer's word.
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md`, its close).
+      (`.claude/approaches-on-trial/approach-drafting.md`, *Stages*, §3, *Close*).
 
 The records item asks for an outcome. A CBC Run may write a script
 that checks it and run it at every close. How a difference with an Output Shape is settled is the shapes-lifecycle Agent Rule's
@@ -132,28 +132,28 @@ restarts at that stage. Any stage whose input the other Plan Step
 changed runs again. A ticked item stays ticked unless the other
 Plan Step made it untrue.
 
-**A trial names the close that judges it.** A piece of the way of
-working put on trial says at which Plan Step's close it is judged. Its
+**A trial names the close that judges it.** A change to how work is
+done, put on trial, names the Plan Step whose close judges it. Its
 verdict there is one line: kept, changed or dropped.
 
-**A default that does not fit a Plan Step** is struck there, with its
-reason. That is a finding about the default, not a Plan Step cutting a
-corner.
+**An item given here that does not fit a Plan Step** is struck there, with its
+reason. That is a finding about the item, not a Plan Step skipping
+work.
 
 ## Step 0: Bootstrap                                [~]
 
-Goal: the container exists before content: the repo, the records
-and the agent's arrangement.
+Goal: the repo, the records and the agent's arrangement exist before
+any content.
 Now:
 Gate:
 Notes:
 
 ## Step 1: CBC Framing  (cbc-framing)               [ ]
 
-<!-- CBC: this Plan Step opens on the CBC Run Briefing. It is the
+<!-- This Plan Step opens on the CBC Run Briefing. It is the
      Plan Step's starting input, the first prompt of project work,
      committed unchanged at docs/system/framing/briefing.md
-     (cbc-framing). The README purpose paragraph and the devlog's
+     (the cbc-framing Agent Skill). The README purpose paragraph and the devlog's
      CBC Run Briefing line land here. Names given before it are
      working names. -->
 
@@ -176,7 +176,7 @@ Notes:
 
 ## Step 3: Infrastructure Establishment  (infra-establish)    [ ]
 
-Goal: services stood up, constrained to need, verified both ways.
+Goal: the services the Invariant Slices need stood up and constrained, each verified by a Catalog Check and a Behavioral Check.
 Now:
 Gate:
 Notes:

@@ -141,12 +141,12 @@ git commit -m "chore: seed — the concept, pin @ $deliverer_pin"
 # copied. Each group is a piece of the CBC Run's tree, so copying it in
 # place is the whole of the mapping (docs/conventions/exchange/
 # §3.3, A group's place in the tree). This CBC Run is
-# Spring and PostgreSQL; a CBC Run on another stack names method alone
-# and is born with two method Agent Skills, not five (ADR-0029).
+# Spring and PostgreSQL; a CBC Run on another stack names `method` alone,
+# and is born with the Method Group's two Agent Skills, not the five of both groups (ADR-0029).
 for g in method spring-postgres; do
   cp -r "$deliverer_dir"/delivery/$g/. .
 done
-# Their footers stay home, as the container's did in step 2.
+# Their footers are stripped, as the container's were in step 2.
 find .claude/skills .claude/rules .claude/shapes .claude/approaches-on-trial \
   -name '*.md' -exec python3 -c '
 import re, sys
@@ -171,8 +171,8 @@ git commit -m "chore: seed — steps into PLAN, cbc-run-pure $playbook_version @
 ```
 
 The container's commit carries our Delivery Pin too. The container
-arrives inside the delivery, not beside it. Where it began is
-ADR-0025's, not a number the Newborn CBC Run holds.
+arrives inside the delivery, not beside it. Where the container came from is told in
+ADR-0025. The Newborn CBC Run holds no number for it.
 
 The first `sed` is the swap the container's markers ask for. The
 Plan Steps land between the STEPS markers, and the markers stay. The
@@ -180,8 +180,8 @@ second fills the "Steps from:" comment's placeholder in place, as
 the comment's own text allows. Both can be run again.
 
 The source is `delivery/fills/cbc-run-pure-playbook.md`, read as it
-stands. No filter changes the insert. This manual delivers what the
-Master Copy holds, like every other seed step. CBC Framing's comment
+stands. No filter changes the insert. The Pure Seed delivers what the
+Master Copy holds, like every other seed step. The comment under the playbook's Step 1, CBC Framing,
 goes in with the Plan Steps. It says where the CBC Run Briefing
 lands, and holds no conclusions.
 
@@ -225,7 +225,7 @@ repository first, every file and every seed commit, except
 .claude/shapes/. An Output Shape is read at a Plan Step Gate,
 never before the work it judges.
 
-Then plan the work as the conventions you were given direct:
+Then plan the work the way the delivered Agent Skills and Agent Rules say:
 your own commit sequence and your own order of files, split by
 the commit scopes the Agent Skills define. Each choice is one you
 can justify in the plan.
@@ -255,8 +255,8 @@ The prompt holds what is true of this session only:
 - the review protocol.
 
 The review protocol is true of this session too: a reviewer is
-present *this CBC Run*. A stop written only in a file loses to the
-harness's pressure to finish when nothing outside the file says a
+present *in this session*. An agent pressed to finish skips a stop written only in a file,
+when nothing outside the file says a
 reviewer is present (devlog 2026-09-06, "the pure seed runs").
 Pacing is not what a CBC Run Reading measures, so these lines give
 nothing away. PLAN carries only what stays true of the project.
@@ -279,7 +279,7 @@ reviewer's last check behind that line.
 Anything said to the Newborn CBC Run after this prompt, at a review
 stop or in an answer, is Told Channel text. It is held to the
 Delivery Note's rules
-(`docs/conventions/exchange/` §3.7, *The Delivery Note*). One case is the birth's own. A
+(`docs/conventions/exchange/` §3.7, *The Delivery Note*). One case is the CBC Run Birth's own. A
 Newborn CBC Run holds no earlier state, so it cannot check "this
 changed since": the claim has nothing to compare against. Such a
 claim says so, in a clause.
@@ -327,8 +327,8 @@ instructions:
   source.
 - The Record Stubs filled.
 - Step 0 closed clean on the Plan Step Gate the container wrote for
-  it. No Plan Step Gate waits on the briefing to block it: the CBC
-  Run Briefing opens CBC Framing.
+  it. No Plan Step Gate waits on the CBC Run Briefing: it
+  opens CBC Framing.
 - The split between agent commits and project commits held
   throughout, from the Agent Skills, unprompted.
 
