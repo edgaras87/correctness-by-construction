@@ -83,7 +83,8 @@
   checked, written when the Plan Step opens; it is done only when
   every one is true.
 - **Agent Skill Stage** — one phase of an Agent Skill, numbered from Stage 0 and
-  named by its Agent Skill outside it: `cbc-slice`'s Stage 3.
+  named by its Agent Skill outside it: the cbc-slice Agent Skill's
+  Stage 3.
 - **Approach on Trial Stage** — one phase of an Approach on Trial,
   numbered, under its own heading
   (`.claude/approaches-on-trial/approach-drafting.md`, *Stages*).

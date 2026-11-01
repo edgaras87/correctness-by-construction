@@ -27,9 +27,9 @@ commit messages, comments. How it reads, never what it says.
    "KILL-1 to KILL-3 are the same failure, a second order, caused
    three ways."
 6. **Keep names as labels.** Write defined names and references
-   exactly: KILL-5, FACT-CALLER-5, SLICE-1, ADR-0014. Define each
-   Glossary Name once, in plain words, in the project's glossary,
-   `docs/glossary.md`. Coin a word only when plain English cannot
+   exactly: KILL-5, FACT-CALLER-5, SLICE-1, ADR-0014. List each
+   Glossary Name once in the project's glossary, `docs/glossary.md`,
+   in plain words, pointing at the home that defines it. Coin a word only when plain English cannot
    say it. A number local to one record carries its owner outside
    it: "SLICE-1 GUARANTEE-3", never a bare "GUARANTEE-3".
 7. **Cut what adds nothing.** If a sentence can go without losing
@@ -49,10 +49,10 @@ commit messages, comments. How it reads, never what it says.
    the long Name stands. A hyphenated word counts as one, toward the
    two and the 4: "never-event" is one word. A lowercase word is
    English and only English. No Markdown mark marks a Name, but bold
-   once, at the line that defines it. A list item's bold lead may
-   begin with a Name. Written otherwise:
+   once, at the line that defines it. A bold lead, of a list item or a
+   paragraph, may begin with a Name. Written otherwise:
    - a numbered thing carries its owner and number,
-     "delivered-copies rule 4", "`cbc-slice`'s Stage 3";
+     "delivered-copies rule 4", "the cbc-slice Agent Skill's Stage 3";
    - a label inside its owner keeps its case, "Stage 3", "KILL-2";
    - a path is written as it is;
    - a Foundation Line's value is written as it is, `concept v1`.
