@@ -3063,3 +3063,67 @@ Readers are read-only, on the model and effort of the session, as
 at Round 3's close read. The agent checks each finding's first quote
 against the tree by script before listing it, and samples what the
 script cannot parse.
+
+### Before the readers
+
+Steps 1 and 2 of the setup, run 2026-11-01 at `075a7ff`.
+
+**Step 1, the leftovers: 78 still stand.** Each item's quoted text
+was searched for with lines joined; where it is still in place, the
+item stands. Where an item weighs two files against each other, its
+quote was checked and its substance rests on the reader who met it.
+Four items, in whole or in part, had no quote to search, and are
+marked unverified.
+
+- **The work's list, 8:** 5 stand: FINDING-1127's gap line in
+  concept chapter 00; the Java label "the promise: %s"; the Pure
+  Seed's `git add` without `.claude/rules`; the playbook's "Steps
+  5..N-3" with no status box; agent-arrangement's "a fact whose
+  failure is not noticing it". 3 ended by ADR-0079: FINDING-1384's
+  bold leads, FINDING-1388's Gate labels, and the parenthesis.
+- ***Met at the close read, of other kinds*, 99:** 73 stand, 23 are
+  gone, and 3 repeat The work's list.
+
+| Reader | Met | Stand | Gone | What went |
+|---|---|---|---|---|
+| A | 6 | 6 | 0 | |
+| B | 8 | 5 | 3 | Living Text is defined in facts-in-sync §1; claim P1 is cited at its section; DECISION-29's wording was not a line of text |
+| C | 11 | 8 | 3 | DECISION-22's line and the comma gloss, `66d8f6e`; shapes' "instances" |
+| D | 9 | 7 | 1 | the Tiers Model's downward forms name the Delivery Fill; 1 repeats FINDING-1127 |
+| E | 15 | 14 | 1 | TODO's "derives, points, governs" |
+| F | 15 | 6 | 9 | the five copy statements, found true; our `commit-plan` and the container's now differ in 3 hunks, not 24; Living Text defined; the Foundation Line's value and the two rule lines, ADR-0079 |
+| G | 11 | 7 | 2 | the copies' 24 hunks; the playbook's "earlier CBC Runs"; 2 repeat The work's list |
+| H | 15 | 12 | 3 | cbc-slice's "single validated entry path"; two lines that were not findings |
+| I | 9 | 8 | 1 | the Catalog Check's "the model's claims" |
+
+The 78 are listed with the readers' findings, by Refinement Layer,
+when the read's list is written (§2.5). Readers are told each one
+and do not list it again.
+
+**Step 2, the scripts.**
+
+- **Wiring:** 236 hits; 233 are the script's own misreads or a CBC
+  Run's own paths. 3 are listed:
+  - the writing manual's *What this is made usable as* does not name
+    `delivery/container/docs/glossary.md`, whose Foundation Line names
+    the writing convention: checked;
+  - the Decisions footers of `cbc-bootstrap/SKILL.md` and
+    `infra-establish/SKILL.md` name `references/…` from the Agent
+    Skill's folder, not from the repo root: uncertain, as a footer
+    line may only name a file.
+- **Copies:** the worked example is byte-identical in both Agent
+  Skills; `approach-drafting.md` is one text in both Convention Seats;
+  `commit-messages` is identical. `commit-plan` differs in 3 hunks:
+  2 are the seat's, and the container's still bolds Change Set, which
+  ours dropped at FINDING-626. `visual-comparison` differs in 1
+  hunk, the seat's. The hunks go to the Agreement reader of the CBC
+  Run's side.
+- **Writing:** no numbered title in Living Text breaks rule 10; the
+  10 that do are the Conversation Memory's part headings, history.
+  48 lowercase spellings of a Name: 43 are the fixed heading or the
+  verb "made usable", a Foundation Line's value, or the released
+  `[v1]` entry, all allowed; 5 go to their readers. 68 bold Names:
+  40 at the home their entry names, 22 list leads; 6 go to their
+  readers: `PLAN.md`'s legend and the container's, delivered-copies'
+  Delivery Pin and Read-Through Commit, and the worked example's
+  paragraph leads, in both copies.
