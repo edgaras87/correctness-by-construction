@@ -84,7 +84,7 @@ single checked entry path → runtime check → code review → hope.
 
 "All the code being careful" is not a guard — it's the absence of one.
 
-## How it rots (watch for these)
+## How it fails (watch for these)
 
 New features shipping without re-checking the guarantees. An admin script
 that bypasses the one enforced path — the guarantee quietly becomes

@@ -49,7 +49,7 @@
   break; each gets the strongest one available, ranked by who it
   binds, from the store's refusal down to hope
   (`docs/concept/02-guarantees-and-walls.md`).
-- **CBC Framing** — the first movement of the work: an idea turned
+- **CBC Framing** — the first part of the work: an idea turned
   into a defined system on paper, before any code or technology
   choice (`docs/concept/03-cbc-framing.md`).
 - **CBC Framing Export** — one of the three documents CBC Framing
@@ -78,7 +78,7 @@
   without its cure: "a retry lands twice and the order exists twice"
   (`docs/concept/03-cbc-framing.md`). Written by the Enemy Collision
   Kill Shape.
-- **Invariant Slice** — the second movement of the work and its unit:
+- **Invariant Slice** — the second part of the work and its unit:
   one System Never-Event from the System Guarantee Inventory made
   real end to end, closed when it survives its attack
   (`docs/concept/04-cbc-slice.md`).
