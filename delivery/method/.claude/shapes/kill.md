@@ -5,7 +5,7 @@ foundation: practice, under the shapes convention
 # The Enemy Collision Kill Shape
 
 **Governs:** how an Enemy Collision Kill is written in the System
-Definition's collisions layer: one way the Falsifiable Promise can
+Definition's LAYER-4-PROBLEMS: one way the Falsifiable Promise can
 break, found by setting one Enemy Fact against one System
 Possession. Its form, never its content: which Enemy Fact meets
 which System Possession, and what dies, come from the Enemy
@@ -21,7 +21,7 @@ Collision.
 **The form of one Enemy Collision Kill in the numbered list,** and
 nothing else. An Enemy Collision Kill this Output Shape accepts can
 still be the wrong one. That is the Enemy Collision's business. What
-it leaves out is *What is exempt, and why*.
+this Output Shape does not govern is listed under *What is exempt, and why*.
 
 **Two layers, marked apart.** *Skeleton:* what any project's Enemy
 Collision Kills would want. *Illustration:* one form of it, from the
@@ -68,12 +68,12 @@ An Enemy Collision that breaks nothing:
   Each case ends in what dies, in bold, or in the Scope Exclusion
   that stops it.
 - **A case a Scope Exclusion stops says "stopped by"** and the Scope
-  Exclusion, or several: "stopped by NOT-OURS-1", "stopped by
+  Exclusion or Scope Verdict that stops it, or several: "stopped by NOT-OURS-1", "stopped by
   NOT-OURS-2 and SYSTEM-BOUNDARY-5". A reason may follow after a
   colon.
 - **An Enemy Collision that breaks nothing stays in the list,**
   saying "**nothing dies**", why, and the Scope Exclusion. It shows
-  the pair was tried, and the count stays honest.
+  the pair was tried, and every pair is counted.
 - **Every Enemy Collision Kill where something dies carries a
   `*Say:*` line** with real numbers from this system: the state
   before, the Enemy Collision, the state that breaks the Falsifiable

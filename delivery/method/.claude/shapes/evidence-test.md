@@ -26,7 +26,7 @@ evidence:
 - a Decision Test, which pins a decision and is not evidence.
 
 A test this Output Shape accepts can still create the wrong adversity.
-That is the Invariant Slice Record's business. What it leaves out is *What is
+That is the Invariant Slice Record's business. What this Output Shape does not govern is listed under *What is
 exempt, and why*.
 
 **Two layers, marked apart.**
@@ -47,7 +47,7 @@ A project takes the skeleton and writes its own illustration.
  * SLICE-1 EVIDENCE-2 · GUARANTEE-3 — KILL-3: the reply is lost, and
  * the caller submits again.
  *
- * <p>Submit with key K, swallow the reply, submit K again. One order
+ * <p>Submit with key K, lose the reply, submit K again. One order
  * exists for K after both, and the retry is answered with the first
  * reply. This fails if a second order is recorded for K, or the retry
  * is answered as new.
@@ -58,10 +58,10 @@ A Decision Test says it is not evidence, and names the decision it pins:
 
 ```java
 /**
- * Not evidence — a Decision Test for the choice in SLICE-1's record,
+ * Not evidence — a Decision Test for the choice in SLICE-1's Invariant Slice Record,
  * "A repeat gets the stored first reply": <the decision it pins>. It
  * guards the decided option, not the Falsifiable Promise, and
- * discharges no Enemy Collision Kill.
+ * answers no Enemy Collision Kill.
  */
 ```
 
@@ -80,7 +80,7 @@ A Decision Test says it is not evidence, and names the decision it pins:
 
 *Illustration:* `SLICE-<n> EVIDENCE-<m> · GUARANTEE-<k> — KILL-<j>`,
 numbered as in the Invariant Slice Record. The Invariant Slice is
-named because a test sits outside its record.
+named because a test sits outside its Invariant Slice Record.
 
 ### The order of its assertions
 
@@ -104,7 +104,7 @@ assertThat(Body.of(retry.getBody()).stringAt("$.orderId")).isEqualTo(first.order
 2. **Then the Falsifiable Promise,** on every State Witness Reading
    taken after the adversity, sampled ones included. A State Witness
    Reading taken before the adversity only checks the setup is in
-   place. It owes nothing.
+   place. It asserts nothing more.
 3. **Then the Invariant Slice's own invariant,** where it differs
    from the Falsifiable Promise.
 4. **Then the exact numbers,** then the state of each thing the
@@ -119,7 +119,7 @@ assertThat(Body.of(retry.getBody()).stringAt("$.orderId")).isEqualTo(first.order
 - **The Falsifiable Promise:** `Witness.Orders.holds()`: the key's
   submission is exactly one recorded order.
 - **An Invariant Slice's own invariant:** SLICE-1's is the
-  Falsifiable Promise itself, so it owes none. SLICE-2's, "a retry
+  Falsifiable Promise itself, so it adds no assertion. SLICE-2's, "a retry
   after a crash ends in one order and one truthful answer", adds the
   answer, asserted beside the Falsifiable Promise.
 - **The answer:** the status, then the body by JSON path.
@@ -135,8 +135,8 @@ assertThat(Body.of(retry.getBody()).stringAt("$.orderId")).isEqualTo(first.order
   missing field by its name, never by a null.
 - **The Invariant Slice Record's example numbers,** when the test
   tells its story, so the two can be read side by side.
-- **A helper that may be refused returns the answer and asserts
-  nothing.** The helper a setup relies on calls it, and asserts.
+- **A helper whose request may be refused returns the answer and asserts
+  nothing.** A setup helper calls it, and asserts the answer it needs.
 
 *Illustration:*
 - **A label:** `.as("<what this number means>: %s", after)`.
@@ -164,7 +164,7 @@ assertThat(Body.of(retry.getBody()).stringAt("$.orderId")).isEqualTo(first.order
   still not belong together: the order count read before a commit,
   its stored reply after it.
 - **Every test says what it is,** so nobody has to ask what it is
-  for, and a Decision Test is never counted as an Enemy Collision
+  for, and a Decision Test is never counted as answering an Enemy Collision
   Kill.
 - **The State Witness Reading in the labels,** so a failure read from the output
   alone says what the state was.
@@ -173,7 +173,7 @@ assertThat(Body.of(retry.getBody()).stringAt("$.orderId")).isEqualTo(first.order
 
 - **Structural Wall Checks:** a test that reads the store's own list
   of its constraints, or one that sends the store a refusal
-  directly. They say *not evidence* at their class. They discharge
+  directly. They say *not evidence* at their class. They answer
   no Enemy Collision Kill and need no State Witness.
 - **Infrastructure tests:** health, the migration path, the
   Adversity Harness's own checks.

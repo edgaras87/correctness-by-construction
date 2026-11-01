@@ -11,31 +11,31 @@ attack, and what holds it comes from the plan.
 
 <!-- An Output Shape: what a kind of output looks like, its form and never
      its content. Read at an Invariant Slice's Plan Step Gate, never
-     while the record is written. How Output Shapes live is
+     while the Invariant Slice Record is written. How Output Shapes live is
      .claude/rules/shapes-lifecycle.md, and not repeated here. -->
 
 ## What this document controls
 
-**The record's order, and the form of an Invariant Slice Guarantee
-Block.** A block this Output Shape accepts can still hold the wrong
+**The Invariant Slice Record's order, and the form of an Invariant Slice Guarantee
+Block.** An Invariant Slice Guarantee Block this Output Shape accepts can still hold the wrong
 Invariant Slice Guarantee. That is the attack's business, and the
-Correctness Specification's. Every other section is the Invariant
-Slice's own, as long as it needs.
+Correctness Specification's. Every other section's content and length
+are the Invariant Slice's to decide.
 
-**Two layers, marked apart.** *Skeleton:* the order and the block,
+**Two layers, marked apart.** *Skeleton:* the order and the Invariant Slice Guarantee Block,
 what any project's Invariant Slice Records would want.
-*Illustration:* one block filled in, from the method's worked
+*Illustration:* one Invariant Slice Guarantee Block filled in, from the method's worked
 example, a tiny order service. A project takes the skeleton and
 writes its own illustration.
 
-## The record's order
+## The Invariant Slice Record's order
 
 1. **Invariant.** What the Invariant Slice protects, in one statement.
 2. **Adversity.** What attacks it, and how the evidence creates it,
    for every Invariant Slice Guarantee alike.
 3. **Decided before the Correctness Specification,** where something
    was.
-4. **Guarantees.** One block per Invariant Slice Guarantee, below.
+4. **Guarantees.** One Invariant Slice Guarantee Block per Invariant Slice Guarantee, below.
 5. **Folds and flags:** the Invariant Slice Folds and Adversity
    Flags the Invariant Slice Registry handed this Invariant Slice,
    each answered.
@@ -51,11 +51,11 @@ writes its own illustration.
 10. **Sign-offs.**
 
 What spans every Invariant Slice Guarantee has its own section. What
-belongs to one is in its block, and nowhere else.
+belongs to one is in its Invariant Slice Guarantee Block, and nowhere else.
 
 ## An Invariant Slice Guarantee Block
 
-The block grows by Agent Skill Stage, the cbc-slice Agent Skill's.
+The Invariant Slice Guarantee Block grows by Agent Skill Stage, the cbc-slice Agent Skill's.
 Stage 1 writes the claim, the attack and the Evidence Criterion.
 Stage 2 adds what holds it and the options weighed. Stage 4 adds the
 tests, at the Invariant Slice Close. The reviewer signs an Agent
@@ -163,20 +163,20 @@ named adversity, simultaneous duplicates.
 
 ### Rules for the parts
 
-- **The claim is written once,** at the top of its block. No other
+- **The claim is written once,** at the top of its Invariant Slice Guarantee Block. No other
   section restates it.
 - **The claim says what happens to what,** in this system's nouns:
   the condition first where there is one, as a clause or as the
   subject ("A refused change moves nothing"), then the outcome a
   test can see. No abstract noun standing for the mechanism
   ("nonsense", "the truth").
-- **A `*Say:*` line is owed wherever a mechanism is involved,** and
+- **A `*Say:*` line is needed wherever a mechanism is involved,** and
   not forced where the claim is concrete without one. An option
   carries none: the chosen one's numbers are in *The wall*, and a
   rejected one was never run.
 - **Options are weighed where this Invariant Slice made the
-  choice.** Where the Structural Wall already stood, the block names
-  where its options were weighed ("in SLICE-1 GUARANTEE-1's block")
+  choice.** Where the Structural Wall already stood, the Invariant Slice Guarantee Block names
+  where its options were weighed ("in SLICE-1 GUARANTEE-1's Invariant Slice Guarantee Block")
   instead of weighing them again.
 - **The chosen option comes first and says so.** Every option
   answers the same questions under the same labels, so options are
@@ -193,7 +193,7 @@ named adversity, simultaneous duplicates.
   Run removes the Structural Wall, and that is the one moment the
   Structural Wall Backstop meets the attack. One never seen there is
   written "unproven". One that caught the attack is named, and the
-  block says the Red Run was taken again with it absent too.
+  Invariant Slice Guarantee Block says the Red Run was taken again with it absent too.
 - **An option changed after the plan was signed keeps its dates.**
   The new choice comes first, marked `*chosen <date>*`. The one it
   replaced moves below, marked `*as signed on <date>*`, and answers
@@ -212,11 +212,11 @@ named adversity, simultaneous duplicates.
 
 ## What to check at a close
 
-Read the record and ask:
+Read the Invariant Slice Record and ask:
 
-1. Does it follow the record's order, with what spans Invariant
+1. Does it follow the Invariant Slice Record's order, with what spans Invariant
    Slice Guarantees in its own sections?
-2. Is each Invariant Slice Guarantee one block, its parts in order,
+2. Is each Invariant Slice Guarantee one Invariant Slice Guarantee Block, its parts in order,
    and no part of it elsewhere?
 3. Is each claim written once, condition first, saying what a test
    can see?
@@ -224,7 +224,7 @@ Read the record and ask:
    that cost assumes?
 5. Does every Structural Wall Backstop say whether it was seen at
    the Red Run?
-6. Where the record differs from this Output Shape: did it drift, was the
+6. Where the Invariant Slice Record differs from this Output Shape: did it drift, was the
    Output Shape wrong, did each have something, or is it a different kind?
    How each ends is the shapes-lifecycle Agent Rule's
    (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the close*).

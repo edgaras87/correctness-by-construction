@@ -13,17 +13,17 @@ Slice Record.
 
 <!-- An Output Shape: what a kind of output looks like, its form and never
      its content. Read at CBC Framing's Plan Step Gate, and at each
-     Invariant Slice Close, never while the entry is written. How Output Shapes
+     Invariant Slice Close, never while the Invariant Slice Entry is written. How Output Shapes
      live is .claude/rules/shapes-lifecycle.md, and not repeated
      here. -->
 
 ## What this document controls
 
 **The form of one Invariant Slice Entry,** and nothing else. An
-entry this Output Shape accepts can still cut the wrong Invariant
+Invariant Slice Entry this Output Shape accepts can still cut the wrong Invariant
 Slice. That is CBC Framing's business. The Invariant Slice
 Registry's other sections (its state, the count of Enemy Collision
-Kills against Invariant Slices, the order) are their own.
+Kills against Invariant Slices, the order) are not this Output Shape's.
 
 **Two layers, marked apart.** *Skeleton:* what any project's
 Invariant Slice Registry would want. *Illustration:* one form of it, from the
@@ -35,14 +35,14 @@ method's worked example, a tiny order service.
 ### SLICE-<n> — <the invariant, in a few words>  `<status>`
 
 - **Invariant:** <one statement, true in every readable state>
-- **Adversity to create:** <each attack the evidence must stage,
+- **Adversity to create:** <each attack the evidence must create,
   with the Enemy Fact it comes from>
 - **Area:** <the owner>. **Kills covered:** <KILL-ids>
 - **Folds in:** <each Invariant Slice Fold this Invariant Slice consumes, or "none">
 - **Evidence Precondition:** <a structural condition checked, never
   tested under adversity, whose silent violation voids the evidence;
   or "none">
-- **Adversity Flag:** <what cannot be staged the normal way, and what
+- **Adversity Flag:** <what cannot be created the normal way, and what
   the evidence does instead; or "none">
 - **Presumes:** <the Invariant Slices this one stands on, and what it takes
   from each; or "nothing">
@@ -50,7 +50,7 @@ method's worked example, a tiny order service.
 - **Record:** <a link to the Invariant Slice Record>
 - **Answered at close:** <one line per Adversity Flag or judgment the
   Invariant Slice settled: the answer in a sentence, and where in the
-  record>
+  Invariant Slice Record>
 ```
 
 *Skeleton:*
@@ -61,12 +61,12 @@ method's worked example, a tiny order service.
 - **The status sits in the heading,** one of the Invariant Slice
   Registry's status values, and a closed Invariant Slice gives its
   date.
-- **The Invariant Slice Record is linked** from the entry, so a
+- **The Invariant Slice Record is linked** from the Invariant Slice Entry, so a
   reader of the Invariant Slice Registry reaches it in one step.
 - **At the Invariant Slice Close, one line per Adversity Flag or
   judgment the Invariant Slice settled,** under *Answered at close*.
-  One sentence and a reference to the record. How the Invariant
-  Slice got there is its record's. An entry with nothing to answer
+  One sentence and a reference to the Invariant Slice Record. How the Invariant
+  Slice got there is its Invariant Slice Record's. An Invariant Slice Entry with nothing to answer
   says "none".
 - **CBC Framing's words stay as they were written.** A judgment the
   Invariant Slice proved wrong is not rewritten. Its answer sits
@@ -90,27 +90,27 @@ method's worked example, a tiny order service.
 - **Evidence Precondition:** none.
 - **Adversity Flag:** none.
 - **Presumes:** nothing.
-- **Judgment logged:** races fold in here because duplicate
+- **Judgment logged:** races are merged here because duplicate
   delivery is the one Adversity Class, the concurrent case its
   hardest.
-- **Record:** [SLICE-1](<the path to its record>)
+- **Record:** [SLICE-1](<the path to its Invariant Slice Record>)
 - **Answered at close:**
   - The judgment held: the race needed no Structural Wall of its own. The
     unique constraint on the key holds the race as it holds the
-    retry (record, SLICE-1 GUARANTEE-1 and GUARANTEE-2).
+    retry (Invariant Slice Record, SLICE-1 GUARANTEE-1 and GUARANTEE-2).
 ```
 
 ## What to check at a close
 
-Read the entry and ask:
+Read the Invariant Slice Entry and ask:
 
 1. Is every field present, an empty one saying "none"?
 2. Does the heading carry the status, and a closed Invariant Slice
    its date?
 3. Is the Invariant Slice Record linked?
-4. Does a closed Invariant Slice's entry answer each Adversity Flag
+4. Does a closed Invariant Slice's Invariant Slice Entry answer each Adversity Flag
    and judgment it settled, one line each, with a reference?
-5. Where the entry differs from this Output Shape: did it drift, was the
+5. Where the Invariant Slice Entry differs from this Output Shape: did it drift, was the
    Output Shape wrong, did each have something, or is it a different kind?
    How each ends is the shapes-lifecycle Agent Rule's
    (`.claude/rules/shapes-lifecycle.md` §3, *A difference at the close*).
