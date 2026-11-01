@@ -330,7 +330,9 @@ holds what it was delivered: its birth entry lists the Work Approaches
 it holds, and each delivery entry the Delivery Pin and the Read-Through Commit
 (`docs/conventions/exchange/` §2.2, *The CBC Run*). The Concept Deliverer's holds neither,
 since it receives no delivery (ADR-0042). Its rules sit in its
-header comment.
+header comment. One part of a CBC Run's log is not appended: at its
+retrospective, a "rules in force now" list goes on top, each rule
+with what it replaced, so a reader meets the current rules first.
 
 *Its story: devlog 2026-10-17, later; devlog 2026-10-29, the lessons' own stories: project-recording and agent-arrangement.*
 
