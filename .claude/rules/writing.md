@@ -49,11 +49,15 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
    shorter true Name before taking it; when none is found, the long
    Name stands. A hyphenated word counts as one, toward the two and the 4:
    "never-event" is one word. A lowercase word is English and
-   only English; no Markdown mark marks a Name. Written otherwise:
+   only English. No Markdown mark marks a Name, but bold once, at
+   the line that defines it. A list item's bold lead may begin with
+   a Name. Written otherwise:
    - a numbered thing carries its owner and number,
      "working-a-reading rule 2", "the walk's step 3";
    - a label inside its owner keeps its case, "Step 0";
-   - a path is written as it is.
+   - a path is written as it is;
+   - a Foundation Line's value is written as the conventions manual
+     gives it, `the exchange convention`.
 
    A thing is defined when a text gives
    a word a meaning English does not: its Name goes into the glossary
@@ -63,7 +67,8 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
     - a label, a noun phrase of 30 characters or fewer;
     - in sentence case, a Glossary Name inside it keeping its
       capitals;
-    - one phrase, with no gloss after a dash or colon;
+    - one phrase, with no gloss after a dash or colon, joined by a
+      comma, or in parentheses;
     - standing alone without its parent heading: *How a plan is
       written*, never *How*.
 
@@ -129,3 +134,6 @@ this rule then names that kind and its style
   needs; Markdown has no line width
 - ADR-0078 — rule 9: a Name built on another Name carries it whole;
   past 4 words, a trigger to look for a shorter one
+- ADR-0079 — rule 9: bold once at a Name's home, a list item's bold
+  lead, a Foundation Line's value; rule 10: a comma or a parenthesis
+  is a gloss
