@@ -13,7 +13,7 @@ its records and nothing else (`docs/conventions/exchange/` §6.1, *Reading a CBC
 Adopted with the Container Group from the handbook, the repo this
 arrangement came from, now history (ADR-0038; its decision 1d sets
 when the README changes). No failure of the Concept Deliverer's is recorded before it. Lived
-since: four CBC Runs kept their records under these Record Stubs. Every
+since: by 2026-10-20, four CBC Runs had kept their records under these Record Stubs. Every
 CBC Run Reading of CBC Run 3 has been a reading of its Decisions Log, its
 backlog and its devlog. The records proved the need by being the only
 channel there is.
@@ -78,7 +78,7 @@ than from the Record Stubs (ADR-0042). It differs in seven things:
 3. **`CHANGELOG.md`.** It versions the concept, not a release
    (ADR-0003).
 4. **`PLAN.md`.** It holds one Plan Step being worked: the piece of
-   work being done now, and below it any Plan Step stopped for it.
+   work being done now, and beside it any Plan Step stopped for it.
    What makes work a Plan Step, and the Plan Step Form, are under
    `## The Plan Step Form` at the top of the Concept Deliverer's own
    `PLAN.md` (ADR-0057). The form is the CBC Run's, adapted to this
@@ -92,8 +92,7 @@ than from the Record Stubs (ADR-0042). It differs in seven things:
    the CBC Run's.
 5. **`ARCHITECTURE.md`.** It describes documents and delivery rather
    than a built system, where a CBC Run's describes modules, runtime
-   invariants and a `src/` codemap. It keeps to about two pages, as §8
-   asks (§8, *ARCHITECTURE.md*; ADR-0068). Its parts,
+   invariants and a `src/` codemap. It aims at about two pages, as §8 asks (§8, *ARCHITECTURE.md*; ADR-0068). Its parts,
    each with what it holds and who reads it:
 
    - ***Overview*** — the repo in one view, for a newcomer after the
@@ -114,8 +113,9 @@ than from the Record Stubs (ADR-0042). It differs in seven things:
    known issue in `TODO.md` (§5, *TODO.md*).
 6. **The ADRs' length.** They have no page limit. A CBC Run's ADR
    records one choice in its code. The Concept Deliverer's record the
-   design of a method and its conventions: up to 12 numbered
-   decisions each, a median of 4.5, and a median of 102 lines. Their
+   design of a method and its conventions: on 2026-11-01, at 78 ADRs,
+   up to 12 numbered decisions each, a median of 4.5, and a median of
+   102 lines. Their
    length is governed by "cut what adds nothing"
    (`docs/conventions/writing/` §2, *Why each rule*, rule 7).
 7. **Conversation Memory.** It keeps the talk behind a TODO item
@@ -155,8 +155,8 @@ Convention Seats keep a record differently, *The seats* says how.
 11. `docs/system/`: what is promised, what must never happen, the
     Invariant Slices (`concept/03-cbc-framing.md`).
 12. `RETRO.md`: what the next CBC Run does differently, when present
-    (`docs/conventions/retrospective/` §4, *`RETRO.md`*). Ours has none: lessons
-    are written back at each Plan Step's close.
+    (`docs/conventions/retrospective/` §4, *`RETRO.md`*). Ours has none
+    (*The Concept Deliverer's seat*, item 1).
 
 **Ours only**
 
@@ -255,7 +255,7 @@ Plan Step Form. Why the form is as it is:
 - A Plan Step that stops is not done and not dropped: it keeps its place
   and the work it did, and resumes where it stopped.
 - "Discovered along the way" holds what a Plan Step finds and does not
-  do. The look back is not the plan's: it is `RETRO.md`'s, under the
+  do. In a CBC Run, the look back is not the plan's: it is `RETRO.md`'s, under the
   retrospective manual (`docs/conventions/retrospective/`).
 
 ### 2.5 When a plan changes
@@ -292,7 +292,8 @@ recurring.
 ### 3.3 Where ADRs live
 
 `docs/adr/NNNN-short-title.md`, numbered sequentially, never
-renumbered. Indexed with one line each in `PLAN.md`'s Decision index.
+renumbered. In a CBC Run, indexed with one line each in `PLAN.md`'s
+Decision index.
 
 ### 3.4 How an ADR is written
 
@@ -446,8 +447,7 @@ the Concept Deliverer's own. Why the form is as it is:
 ### 5.5 When an item is written
 
 Its moments are the records table's (§13, *The records table*). An item goes in when it
-is found, so it stops occupying your head (§11, *The flow between records*, rule 3: moments,
-not schedules).
+is found, so no one has to remember it (§11, *The flow between records*, rule 3).
 
 ### 5.6 TODO's anti-patterns
 
@@ -554,10 +554,10 @@ Stubbed at birth; after that, its moment is the records table's
 (ADR-0038, 1d). The mechanism is a Plan Step Gate item where
 relevant: a Plan Step whose Plan Step Gate makes true something the
 README should say includes updating the README. Record upkeep is
-already written so in Plan Step Gates in use ("ARCHITECTURE
-current"). Never a standing
-item on every Plan Step Gate: 7 of the playbook's 9 Plan Steps make
-nothing true that the README says, and an item usually empty trains
+already written so in Plan Step Gates in use ("`CLAUDE.md` read top
+to bottom"). Never a standing
+item on every Plan Step Gate: on 2026-11-01, 7 of the playbook's 9
+Plan Steps made nothing true that the README says, and an item usually empty trains
 ticking it unread. The Release Plan Step's Plan Step Gate includes "README
 verified on a clean machine."
 
@@ -667,15 +667,17 @@ form, and what past CBC Runs taught it, as its *Known already*. Its
 Release Plan Step carries the type's own release facts. Its lifecycle
 has four moments, and each says where its doer reads how:
 
-1. **Birth:** the playbook's Plan Steps fill the plan, and its "Steps
+1. **At birth:** the playbook's Plan Steps fill the plan, and its "Steps
    from" line records which playbook, at what version. A CBC Run born
    without one fills the placeholders of its plan's Record Stub in
    place. That Record Stub says how.
 2. **Once the problem is framed:** the CBC Run confirms the Plan Steps
    against it, filling specifics, deleting what it has no use for,
    adding what it needs, renumbering; born without a playbook, it
-   authors them. No Agent Skill or Plan Step asks this of a CBC Run yet: the TODO
-   item "Read CBC Run 4 against `dac4dd1`" asks whether CBC Run 4 did it.
+   authors them. The playbook's Step 2 asks part of it: each later Plan Step is
+   read against the CBC Framing Exports and reworded where it no longer
+   fits. The TODO item "Read CBC Run 4 against `dac4dd1`" asks whether
+   CBC Run 4 did it.
 3. **Before the Release Plan Step:** the retrospective writes `RETRO.md`, each
    decision naming where its lesson lands
    (`docs/conventions/retrospective/`).
@@ -780,8 +782,8 @@ Not every project needs all of it. Scale by stakes:
 - **Anything with users or teammates:** add CHANGELOG and ARCHITECTURE.
 - **Second project of the same type:** add the playbook.
 
-The test for adding any record is always the same: *will someone —
-probably future-you — need this answer and be unable to reconstruct it?*
+The test for adding any record is always the same: *will someone, probably future-you, need this answer and be unable to
+reconstruct it?*
 If yes, it gets written down, once, in its designated home.
 
 ---
@@ -795,8 +797,8 @@ for a cosmetic gain.*
 The Entry File is the one file loaded before any task. What it may
 hold, and how it stays small, is the agent-arrangement manual's
 (`docs/conventions/agent-arrangement/` §2, *The Entry File*). This convention owns one
-part of it: the records table, the only part of the project-recording
-manual loaded before any task (`docs/models/agent.md` §4.1, *Ambient
+part of it: the records table, which the Entry File holds and every
+session loads (`docs/models/agent.md` §4.1, *Ambient
 Channel*; *Why it arrives this way*).
 
 ### 13.1 What a records table row holds
@@ -806,7 +808,7 @@ the record holds, and its path.** Adding a record means adding its
 row. What the record holds is a short summary of its item in the list of records
 (§1, *The records at a glance*).
 
-The moment is the half that is new and the half that is load-bearing.
+The moment is the part that is new, and the part that is load-bearing.
 The table is then readable in both directions: *I just did X, where
 does it go?* reads down the first column, *where is Y recorded?* reads
 down the second. Both are real questions and a table answering only
