@@ -33,10 +33,10 @@ frontmatter naming it, `foundation: the agent model`
    trial* with what would make it evidence and when to look again,
    after which the need is rewritten from what was seen or the
    convention goes; or, taken whole from elsewhere, adopted —
-   where it came from and what has been lived under it since. Never intent dressed as
-   evidence: a wish ("so that X is easier") is not a need.
-3. **What this is made usable as.** The answer to the need: every
-   derived artifact, each by path from the repo root, marked
+   where it came from and what has been lived under it since. Never a wish
+   written as evidence: "so that X is easier" is not a need.
+3. **What this is made usable as.** The answer to the need: everything
+   derived from the manual, each by path from the repo root, marked
    shipped or the Concept Deliverer's, with the moment it opens at — or
    "nothing shipped", and then what a repo holds. Ends with the
    sentence that a change here walks that list.
@@ -65,12 +65,12 @@ frontmatter naming it, `foundation: the agent model`
    ADR-0059.* A case told nowhere is written into a devlog entry
    first, and the section is read again once the case has left
    (`docs/conventions/conventions/` §2.6, *A lesson taken*).
-7. **Why it arrives this way.** The channel — a skill, an Agent Rule, a
+7. **Why it arrives this way.** The channel — an Agent Skill, an Agent Rule, a
    Record Stub or a file — and why that one: the moment it serves, and
    what would or would not put it in front of its reader then.
    Where the reasoning rests on the Agent Model, a Fact Reference to the part it rests on, such as
    (`docs/models/agent.md` §8, *Choosing a channel*)
-   (`docs/conventions/conventions/` §2.7, *Why it arrives this way*).
+   (`docs/conventions/conventions/` §2.7, *The channel*).
 8. **What this does not cover.** A list: each neighbouring subject
    in bold, then the path it belongs to.
 9. **Where to look**, optional: Fact References only, as root paths.
@@ -81,7 +81,7 @@ Length, tone, and how many sections the body has. Whether a
 section is needed is the manual's to decide; that a reader finds
 the nine where they expect them is this file's.
 
-## The list is the floor, not the ceiling
+## The list is the least a manual has
 
 Content that fits none of the nine gets its own heading in the
 body, and the writer looks for such content rather than forcing it
