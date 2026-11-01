@@ -6,7 +6,7 @@ foundation: the commit-plan convention
 
 # Commit Plan
 
-A **Change Set** is a body of work that needs more than one commit.
+A Change Set is a body of work that needs more than one commit.
 Its commits are planned before it starts, reviewed as they land,
 and the plan is closed.
 
@@ -14,7 +14,7 @@ and the plan is closed.
 settled before the plan is opened — in discussion, or in a record.
 When it turns out not to have been, the plan is revised
 (§5, *Divergence*) and the
-set's ADR is still Proposed.
+Change Set's ADR is still Proposed.
 
 ## 1. When a commit plan is needed
 
@@ -50,28 +50,28 @@ could reasonably object to. Optional, but usually the most useful
 section.>
 ```
 
-- Commit subjects follow commit-messages, and are counted against
-  its limit when the plan is written, not when each commit lands:
-  a subject planned too long lands too long, or is rewritten at its
-  boundary with nothing in the plan saying why. The note under each
+- Commit subjects follow the commit-messages Agent Skill. They are
+  counted against its limit when the plan is written, not when each
+  commit lands. A subject planned too long lands too long, or is
+  rewritten at its boundary with nothing in the plan saying why. The note under each
   commit says why it is a commit of its own; the commit body is
   written at commit time.
-- **The list may roll.** Commits near at hand are firm. Commits
-  past the decision horizon, whatever a not-yet-seen result must
-  shape, are provisional and marked so; a provisional commit names
-  its intent and defers its wording and exact split.
+- **The list may change past a point.** Commits near at hand are
+  firm. Commits that a result not yet seen must shape are
+  provisional and marked so; a provisional commit names its intent
+  and defers its wording and exact split.
 - **No status in the file.** No checkboxes. The commits that exist
   are the plan done so far.
 - **A commit inserted later takes a letter,** `8b` after `8`, so the
   numbers already cited stay true.
-- **A planned commit may repeat over a set,** when the same change
+- **A planned commit may repeat over a series,** when the same change
   reaches many records: "one commit per record, in this order". It
   names the order, and, if it may run again, the rule that stops it
   ("a second pass only over the records the first one changed").
 
 ## 3. How the commits are split
 
-- **By change, not by artifact.** One commit is one coherent thing
+- **By change, not by file.** One commit is one coherent thing
   the repo needs, whatever files that touches; one file may appear
   in as many commits as it has distinct changes.
 - **The test is revert:** undo one commit, and the repo lands in a
@@ -81,15 +81,15 @@ section.>
 - **Order follows where the decision lives.** A decision settled in
   conversation runs decision-first: record it, then implement it. A
   decision only seeable in the material runs material-first: touch
-  the artifact, let the shape emerge, write the durable record from
+  the material, let the shape emerge, write the durable record from
   what held. One plan may mix both, per decision. Two constraints
   either way: no commit references what does not yet exist, and
   durable records are caught up before the close.
-- **Plan the records commits.** Walk the entry file's records
-  table: every record whose moment this set will create gets a
-  commit, at the boundary where its truth exists. A set that closes
-  a `PLAN.md` gate item names the commit that closes it. A change to
-  the agent's own files — a skill or Agent Rule corrected or added, its
+- **Plan the records commits.** Walk the Entry File's records
+  table: every record whose moment this Change Set will create gets a
+  commit, at the boundary where its truth exists. A Change Set that closes
+  a `PLAN.md` Plan Step Gate item names the commit that closes it. A change to
+  the agent's own files — an Agent Skill or Agent Rule corrected or added, its
   decisions entry — is a commit of its own, never
   folded into a records commit, since the two are kept apart
   (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*). A records commit planned to carry one has to be split
@@ -101,19 +101,19 @@ section.>
 |---|---|---|
 | Open | `docs(agent): add commit plan for <X>` | the approved plan |
 | Work | the planned commits | as planned; stop at each boundary |
-| Small steps | tries, fixes, a way abandoned | inside a planned commit, on the reviewer's grant; folded into it at its boundary (§6, *Review protocol*) |
+| Small commits | tries, fixes, a way abandoned | inside a planned commit, on the reviewer's grant; folded into it at its boundary (§6, *Review protocol*) |
 | Diverge | `docs(agent): revise commit plan — <what changed>` | only when reality diverged; body says why |
 | Close | `docs(agent): close commit plan for <X>` | deletes the file; **body records what diverged** |
 
 - Commit the plan after it is agreed and before any of the work.
-- The close commit's body is the set's retrospective: what diverged
-  and why. If nothing diverged, say so. An abandoned set closes the
+- The close commit's body is the Change Set's retrospective: what diverged
+  and why. If nothing diverged, say so. An abandoned Change Set closes the
   same way, with the reason.
-- **An ADR inside the set opens as Proposed** and flips to Accepted
-  in the set's final records commit, never in the close commit. An
+- **An ADR inside the Change Set opens as Proposed** and flips to Accepted
+  in the Change Set's final records commit, never in the close commit. An
   ADR committed Accepted early claims that no later boundary can
-  contradict it. An abandoned set leaves its ADRs Proposed.
-- **Before the close, sweep for every name the set moved.** When a
+  contradict it. An abandoned Change Set leaves its ADRs Proposed.
+- **Before the close, sweep for every name the Change Set moved.** When a
   commit renamed, renumbered, retitled or moved anything, grep live
   text for each old identifier, path, number and title — all of
   them, not the one being described. A
@@ -139,16 +139,16 @@ When a commit needs something other than what was planned:
    a body saying what forced it.
 4. Continue.
 
-Refining a provisional commit travels the same road and is planned
-refinement, not divergence; the close body distinguishes the two.
+Refining a provisional commit follows the same four steps, and is
+planned refinement, not divergence; the close body distinguishes the two.
 
 ## 6. Review protocol
 
 Work stops at every commit boundary: stage, show the diff, commit
-only on the reviewer's word. The rule is commit-messages', and binds
+only on the reviewer's word. The rule is the commit-messages Agent Skill's, and binds
 at every commit, not only inside a Change Set (`docs/conventions/commit-messages/` §2.4, *Commit on the word*).
 
-**Small steps inside a planned commit, where the reviewer has
+**Small commits inside a planned commit, where the reviewer has
 granted them.** A planned commit may then be built as several small
 commits: a try, a fix, a way abandoned. Before its boundary, they
 are squashed into the one commit the plan names, and the reviewer
@@ -156,7 +156,7 @@ reviews that. The small commits are kept on a local
 `<branch>-detail` branch, so nothing tried is lost. Where the
 reviewer lets small commits land as they go, they are grouped by
 kind at the look back instead, and the `-detail` branch keeps them
-the same way. Each small commit follows commit-messages too: subject
+the same way. Each small commit follows the commit-messages Agent Skill too: subject
 and body are counted when it is written, not at the regroup. Without
 the grant, every commit is a boundary.
 
@@ -166,7 +166,7 @@ the grant, every commit is a boundary.
 - **Checkboxes in the plan.** Status belongs to git history.
 - **The plan written after the work.** A summary, not an agreement;
   nothing was reviewable and divergence is unrecorded. A provisional
-  tail refined at its boundary is not this.
+  commit refined at its boundary is not this.
 - **An ADR committed Accepted whose shape a later boundary decides.**
 - **A plan for a single commit.**
 - **The file kept after the close.** History keeps it.
@@ -177,18 +177,18 @@ the grant, every commit is a boundary.
 
 ## Decisions
 
-- ADR-0038, 1b — a separate convention; the plan is a scaffold,
+- ADR-0038, 1b — a separate convention; the plan is temporary,
   not a record
-- ADR-0038, 1d — §3: a set that closes a gate item names the
-  commit
+- ADR-0038, 1d — §3: a Change Set that closes a Plan Step Gate item
+  names the commit
 - ADR-0038, 1e — §3: order follows where the decision lives;
-  §2: provisional tails; §4: ADRs open Proposed
+  §2: provisional commits; §4: ADRs open Proposed
 - ADR-0038, 1f — §6: the stop at every boundary is
-  commit-messages'
+  the commit-messages Agent Skill's
 - ADR-0049, 1 — a commit plan counts commits; "step" is
   `PLAN.md`'s
 - ADR-0049, 3 — §4: the sweep greps the text unwrapped
-- ADR-0050, 1–3 — §6: small steps on the reviewer's grant, each
+- ADR-0050, 1–3 — §6: small commits on the reviewer's grant, each
   counted when written; §4: a look back before the close
 - ADR-0050, 4–5 — §2: an inserted commit takes a letter; a
-  planned commit may repeat over a set
+  planned commit may repeat over a series

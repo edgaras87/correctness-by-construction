@@ -1,29 +1,32 @@
 ---
 name: exchange-deliver
-description: Write the Delivery Note and stage a delivery into a CBC Run's temp/. Use when the reviewer says to deliver — after a Run Reading, or when something a CBC Run holds has changed here — and for a Delivery Note alone when a Run Reading found nothing to send.
+description: Write the Delivery Note and stage a delivery into a CBC Run's temp/. Use when the reviewer says to deliver — after a CBC Run Reading, or when something a CBC Run holds has changed here — and for a Delivery Note alone when a CBC Run Reading found nothing to send.
 foundation: the exchange convention
 ---
 
 # Deliver
 
-Two Skill Stages: the Delivery Note, then the Delivery Staging on the word. The same whether
-a Run Reading preceded it or we changed something on our own; the
-verdicts and the Read-Through Commit ride only when one did.
+Two Agent Skill Stages: the Delivery Note, then the delivery staged on the word. The same whether
+a CBC Run Reading preceded it or we changed something on our own; the
+verdicts and the Read-Through Commit go only when one did.
 
 ## Stage 1 — write the Delivery Note
 
 What a Delivery Note holds, and why: (`docs/conventions/exchange/` §3.7, *The Delivery Note*).
 
-In `temp/note-to-<run>-<date>.md`, told not delivered.
+In `temp/note-to-<run>-<date>.md`, told, not delivered: the CBC Run
+reads it through the Told Channel, as session input, not as a copy it
+keeps (`docs/models/tiers.md` §3.2, *The Told Channel*).
 
-0. **If the CBC Run moved since the Run Reading, run `exchange-read` on the new
-   span.** The Run Reading's first line names `R`; if `R..HEAD` is not
-   empty, `exchange-read` steps 2–4 on it. The three things it reads are the
-   filter — the CBC Run's own building yields nothing and the extension
-   is empty in seconds; a copy edited or a line to us yields items,
-   which take the next numbers and are worked before the Delivery Note. The
-   Delivery Note then says the new `HEAD`. Both sides moved from one Delivery Pin;
-   this is where their side is read before the Delivery Take merges it.
+0. **If the CBC Run moved since the CBC Run Reading, run `exchange-read` on the new
+   span.** The CBC Run Reading's first line names `R`; if `R..HEAD` is not
+   empty, run `exchange-read`'s Stages 2 to 4 on it. The three things
+   it reads are the filter. The CBC Run's own building yields nothing,
+   and the extension is empty in seconds. A copy edited or a line to
+   us yields items. They take the next numbers and are worked before
+   the Delivery Note. The Delivery Note then says the new `HEAD`. Both
+   sides moved from one Delivery Pin; this is where their side is read
+   before the Delivery Take merges it.
 
 1. **What changed since the CBC Run's Delivery Pin**, as paths the CBC Run can check
    against its own tree:
@@ -40,10 +43,10 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
    (`docs/conventions/exchange/` §3.2, *What goes*); the trailing `/*` is what
    makes git match inside them.
 
-   Every path that differs, is new, is gone, or moved — deletions
-   and renames named as such. The CBC Run will diff the Delivery Staging against
-   what it holds; the Delivery Note says what that diff will show, and the
-   CBC Run finds the Delivery Note wrong if it does not.
+   Every path that differs, is new, is gone, or moved: deletions and
+   renames named as such. The CBC Run will diff the Delivery Staging
+   against what it holds. The Delivery Note says what that diff will
+   show, and the CBC Run finds the Delivery Note wrong if it does not.
 
    Leave out a path whose only change is its *Decisions* footer: the
    copy is staged without it (step 2 of Stage 2), so the CBC Run's
@@ -67,26 +70,28 @@ In `temp/note-to-<run>-<date>.md`, told not delivered.
    What the change does to the CBC Run's next Plan Step, not what it does to
    the files.
 
-3. **The verdicts**, if a Run Reading preceded this — one for every
-   Run Ask under *To the deliverer* and every edit, in the CBC Run's order,
-   as the Run Reading's items ended. A verdict is the decision and what
-   the CBC Run owes now; never a description of our own practice, which
-   the CBC Run cannot check; never "accepted" for something not decided.
+3. **The verdicts**, if a CBC Run Reading preceded this: one for every
+   CBC Run Ask under *To the deliverer* and every edit, in the CBC Run's order,
+   as the CBC Run Reading's items ended. A verdict is the decision and
+   what the CBC Run owes now. Never:
+   - a description of our own practice, which the CBC Run cannot check;
+   - "accepted" for something not decided.
 
-4. **The Read-Through Commit**, if a Run Reading preceded this: `read through
-   <run HEAD>`, from the Run Reading's first line. A delivery without a
-   Run Reading carries none, and the CBC Run's stays where it was.
+4. **The Read-Through Commit**, if a CBC Run Reading preceded this: `read through
+   <run HEAD>`, from the CBC Run Reading's first line. A delivery without a
+   CBC Run Reading carries none, and the CBC Run's stays where it was.
 
 5. **What it recommends, in order**, and what is optional.
 
 6. Nothing that needs our repo to verify. A claim the CBC Run cannot
-   check from its own tree is a hedge it can never close. Where one
+   check from its own tree is a claim it can never check, so it stays
+   open. Where one
    cannot be avoided — a thin Delivery Note, material outside the delivery, a
    negative claim — the Delivery Note says so, in a clause.
 
 7. **No ADR number, no path in this repo, no word of our own
-   vocabulary.** The Delivery Note is told text, and a citation the CBC Run cannot
-   follow reads as its own.
+   vocabulary.** The Delivery Note goes through the Told Channel, and
+   a citation the CBC Run cannot follow reads as its own.
 
 8. **A third repository gets both names**: ours, by ordinal, and the
    one it gave itself.
@@ -117,7 +122,7 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
    that no path is claimed twice:
 
    ```sh
-   groups="container method spring-postgres"   # the run's groups
+   groups="container method spring-postgres"   # the CBC Run's groups
    copies() { (cd delivery/$1 && find .claude/skills .claude/rules \
                 .claude/shapes .claude/approaches-on-trial docs/glossary \
                 -type f 2>/dev/null); }
@@ -144,15 +149,16 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
    Each group's `.claude/skills/`, `.claude/rules/`,
    `.claude/shapes/`, `.claude/approaches-on-trial/` and
    `docs/glossary/`, and nothing else of it: the Container Group's
-   records, entry files, Decisions Log and hygiene files went at
-   birth and are the CBC Run's.
+   records, Entry File, `temp/README.md`, Decisions Log and Hygiene
+   Base went at birth and are the CBC Run's.
 
    `concept/` is the one path that is not a mirror
    (`docs/conventions/exchange/` §3.3, *A group's place in the tree*).
 
-   `mktemp -d` makes the folder owner-only, and the copy in step 3
-   carries its mode: a CBC Run that takes the Delivery Staging's `.` onto its
-   root gets 700 there, which git does not show. The `chmod` is why.
+   The `chmod` is there because `mktemp -d` makes the folder
+   owner-only, and the copy in step 3 carries its mode. A CBC Run that
+   takes the Delivery Staging's `.` onto its root would get 700 there,
+   which git does not show.
 
 3. **Copy across, named by `H`, the Delivery Note beside it:**
 
@@ -168,12 +174,13 @@ On the reviewer's word. If the agent stages, it runs steps 1 and
 
 Why every read ends with one: (`docs/conventions/exchange/` §6.6, *The Delivery Note after a read*).
 
-A Run Reading that found nothing addressed to us: the Delivery Note is one line —
-`read through <run HEAD>, nothing to answer, no files` — and
-Stage 2 copies only the Delivery Note. One that found something and took
-none of it is not this case: a declined item still owes its
-verdict, so its Delivery Note carries the verdicts and no files. The CBC Run
-records the Read-Through Commit; the Delivery Pin does not move.
+A CBC Run Reading that found nothing addressed to us: the Delivery
+Note is one line, `read through <run HEAD>, nothing to answer, no
+files`, and Stage 2 copies only the Delivery Note. One that found
+something and took none of it is not this case. A declined item still
+owes its verdict, so its Delivery Note carries the verdicts and no
+files. The CBC Run records the Read-Through Commit; the Delivery Pin
+does not move.
 
 ## Gates
 
@@ -181,16 +188,16 @@ records the Read-Through Commit; the Delivery Pin does not move.
 - The CBC Run's tree was quiet and its `temp/` held nothing of ours
   before anything was copied.
 - No path was claimed by two groups.
-- The CBC Run's `temp/` gained exactly the bundle and the Delivery Note, and
+- The CBC Run's `temp/` gained exactly the Delivery Staging, `bundle-H`, and the Delivery Note, and
   nothing tracked in the CBC Run changed.
 
 ## What this does not do
 
-- It does not decide verdicts. They come from the Run Reading, as its
+- It does not decide verdicts. They come from the CBC Run Reading, as its
   items ended.
 - It does not take. The CBC Run's Agent Rule does, from `temp/`, in its own
   time.
-- Birth: every file of each group into the Newborn Run's root, not
+- Birth: every file of each group into the Newborn CBC Run's root, not
   only the copies Stage 2's step 2 takes, followed by the Delivery Fills —
   `delivery/installs/pure-seed.md` has the rest.
 
