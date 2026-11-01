@@ -1,6 +1,6 @@
 
 # ---------------------------------------------------------------------
-# --- java-spring overlay ---
+# --- java-spring Stack Overlay ---
 [*.sql]
 
 # [typing][format] width only - SQL layout opinions stay with the IDE

@@ -170,10 +170,10 @@ delivered files below.
 - **Hygiene Base** — the stack-agnostic hygiene files every repo
   gets, correct for a records-only one; a Stack Overlay is appended
   below each one's marked line (`docs/conventions/repo-hygiene/`
-  §2, *Base and Stack Overlays*).
+  §2, *The template layers*).
 - **Stack Overlay** — the stack's part of the hygiene files, appended
   below the Hygiene Base's marked line: repo-hygiene's `.part` files for one
-  stack (`docs/conventions/repo-hygiene/` §2, *Base and Stack Overlays*).
+  stack (`docs/conventions/repo-hygiene/` §2, *The template layers*).
 - **Decisions Log** — a CBC Run's `.claude/decisions.md`, where its
   agent records the decisions about its own setup; ours is the same
   file here (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).

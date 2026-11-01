@@ -1,5 +1,5 @@
 
-# --- java-spring (Maven) overlay --------------------------------------
+# --- java-spring (Maven) Stack Overlay --------------------------------
 
 # The Maven wrapper: the shell script stays LF, the Windows wrapper
 # stays CRLF.

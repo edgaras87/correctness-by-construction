@@ -1,5 +1,5 @@
 
-# --- java-spring (Maven) overlay --------------------------------------
+# --- java-spring (Maven) Stack Overlay --------------------------------
 
 # Maven build output — derived, never source
 target/
