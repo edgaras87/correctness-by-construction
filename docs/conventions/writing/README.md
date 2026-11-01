@@ -13,7 +13,7 @@ again, and the same request is common here.
 Knowing the lesson did not fix it:
 
 - **"Explain plainly" sat in CBC Run 3's agent memory from 2026-09-20.**
-  Its records still came out in the voice of the skills it read.
+  Its records still came out in the voice of the Agent Skills it read.
 - **A polish pass after the fact** cost CBC Run 3 a Plan Step, and the voice
   was still not fixed.
 
@@ -40,7 +40,7 @@ on 2026-10-15 (ADR-0053).
 - **`.claude/rules/writing.md` — the Concept Deliverer's**, derived from
   this page like the container's, not copied from it, and loaded
   the same way. It differs where the Convention Seat does: it covers the
-  skills, Agent Rules, Output Shapes, Approaches on Trial, manuals, concept chapters and
+  Agent Skills, Agent Rules, Output Shapes, Approaches on Trial, manuals, concept chapters and
   notes the Concept Deliverer writes; and its examples are this repo's.
 
 This page explains; the Agent Rule states. What derives from this page is
@@ -50,11 +50,12 @@ back against this page.
 ## The seats
 
 A CBC Run writes under the Agent Rule from birth: its chat, its records, its
-commits. The Concept Deliverer writes under its own: its chat and records,
-and also what CBC Runs read, since an agent copies the voice it reads:
-every new or changed line of a skill, Agent Rule, Output Shape, Approach on Trial,
-concept chapter or note follows it, and so do its manuals. The
-Concept Deliverer also writes this page and the Agent Rule's Master Copy.
+commits. The Concept Deliverer writes under its own: its chat and
+records. It also covers what CBC Runs read, since an agent copies the
+voice it reads. So every new or changed line of an Agent Skill, Agent
+Rule, Output Shape, Approach on Trial, concept chapter or note follows
+it. So do the Concept Deliverer's manuals. The Concept Deliverer also
+writes this page and the Agent Rule's Master Copy.
 
 ## 1. What it governs
 
@@ -64,7 +65,7 @@ chat answers, records, commit messages, code comments.
 - **History keeps its words.** A closed devlog entry, an ADR or a
   commit body is not rewritten for its voice. The rule applies to
   every new or changed line.
-- **A skill or an Agent Rule may be dense.** Its reader follows what it
+- **An Agent Skill or an Agent Rule may be dense.** Its reader follows what it
   says, not how it says it. An agent copies the voice it reads, so
   the rule says outright that it sets the voice.
 - **Plain is the default for every kind of text.** A kind of text
@@ -87,14 +88,14 @@ chat answers, records, commit messages, code comments.
 5. **Plain words, not metaphor.** A metaphor has to be translated,
    and two readers translate it differently. CBC Run 3's retrospective
    names "costume", "weather" and "stage" as words to drop: the
-   stage of a theatre, as in "the stage, not a victim". A skill's
-   phase is a Skill Stage (`docs/glossary.md`).
+   stage of a theatre, as in "the stage, not a victim". An Agent
+   Skill's phase is an Agent Skill Stage (`docs/glossary.md`).
 6. **Names are labels.** A reference reworded points somewhere
    else. A coined word that is not defined is a word the reader
    cannot check, so each is defined once, in the project's
    glossary. A number local to one record carries its owner outside
    it, because "GUARANTEE-3" means something different in every
-   slice record.
+   Invariant Slice Record.
 7. **Cut what adds nothing.** Every extra sentence is one more
    thing to read before the point.
 8. **Start from what the reader holds.** A label the reader does
@@ -105,10 +106,10 @@ chat answers, records, commit messages, code comments.
 9. **A defined thing has a Glossary Name of two or more words.**
    Owner or kind first, then the word, each word capitalized, written
    exactly: CBC Run, Plan Step, Agent Rule, Delivery Staging. A
-   lowercase word is English and only English. A thing hung on one
+   lowercase word is English and only English. A thing named by one
    English word makes the reader decide at every use which is meant,
-   "staging" the exchange's or git's; two words say what the thing is
-   and whose, and the capitals say it is defined before the words are
+   "staging" the exchange's or git's. Two words say what the thing is
+   and whose. The capitals say it is defined before the words are
    read, as a contract's "the Deliverer" or Kubernetes' "a Pod" do.
    A Name built on another Name carries it whole: Agent Skill
    Template, never Skill Template, since a short form leaves its word
@@ -121,22 +122,22 @@ chat answers, records, commit messages, code comments.
    Every Markdown mark already has a job here, so none marks a Name. A
    numbered one is named by its owner and number, "working-a-reading
    rule 2", "the walk's step 3"; a label inside its owner keeps its
-   case, "Step 0" in a plan, "Stage 3" in a skill; a path is written
+   case, "Step 0" in a plan, "Stage 3" in an Agent Skill; a path is written
    as it is. A thing is defined when a text gives it a meaning
    English does not. Its Name goes into the glossary in the commit
    that first uses it, pointing at the home that defines it, and a
    word whose English meaning is ours has no Name (rule 6).
 10. **A section's title names its subject.** A title is read in every
     Fact Reference to its section, where the sentence already says
-    the point; a title that states the point says it twice, and
+    the point. A title that states the point says it twice, and it
     changes when the rule does. A subject is short, so a title of 30
     characters or fewer is carried whole, never cut. It stands alone,
     since a reference shows no parent: *How a plan is written*, never
     *How*. One phrase in sentence case, a Glossary Name inside it
     keeping its capitals, with no gloss after a dash or colon: the
     gloss opens the body. This holds for numbered sections
-    and parts in both Convention Seats; the manual form's fixed headings, a
-    Skill Stage heading and a numbered rule's bold lead are not titles under
+    and parts in both Convention Seats; the manual form's fixed headings, an
+    Agent Skill Stage heading and a numbered rule's bold lead are not titles under
     it.
 11. **An edit changes the lines its change needs.** The reviewer
     reads a diff at every commit boundary, for its change; a line
@@ -144,7 +145,7 @@ chat answers, records, commit messages, code comments.
     need to move. Markdown has no line width here: a reader meets the
     text rendered, or in an editor that wraps, and 985 lines in 83 of
     the 99 living files already run past 72. The 72 is
-    commit-messages' rule for a body and nothing else
+    the commit-messages manual's rule for a body and nothing else
     (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
     A scripted pass is held to the same rule: it counts headings,
     references and code fences before and after, and changes nothing
@@ -163,7 +164,7 @@ them (`docs/models/agent.md` §8, *Choosing a channel*):
   one's first draft is written, and chat has no path
   (`docs/conventions/agent-arrangement/` §5.6, *Rules files*). CBC Run 3's first
   draft loaded on Markdown files, and was dropped for this.
-- **A skill** fires when the agent notices the moment. The failure
+- **An Agent Skill** fires when the agent notices the moment. The failure
   here is not noticing: the agent writes in the voice it last read.
 - **Memory or `CLAUDE.local.md`** held the lesson in CBC Run 3 and did
   not act. The local file is also one person's, and reaches no CBC Run.
