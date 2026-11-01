@@ -3127,3 +3127,15 @@ and do not list it again.
   readers: `PLAN.md`'s legend and the container's, delivered-copies'
   Delivery Pin and Read-Through Commit, and the worked example's
   paragraph leads, in both copies.
+
+### The readers' reports
+
+The 23 readers' reports, and the two of the Agreement reader's
+helpers, are kept in `temp/last-read-2026-11-01/`, one file per
+reader by its label: 272 findings, read at `70404e1`. Beside them,
+the briefs the readers were given (`_brief.md`, `_writing-brief.md`),
+the agent's notes on the leftovers (`_leftovers.md`), and the sweep
+scripts with their file list (`_wiring.py`, `_writing.py`,
+`_living-layers.tsv`), to run again at the next read. The read's
+list (§2.5) is written from them; the folder goes with this file at
+the refinement's close.
