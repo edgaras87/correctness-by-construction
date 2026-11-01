@@ -236,8 +236,9 @@ with two texts that can disagree (§5, *The context window*).
 ## 9. Where each convention lands
 
 Each convention's Work Approaches show where it lands: an Agent Skill
-for a rule bound to a moment, Record Stubs and Agent Skill Templates
-for a rule carried in the files a project is born with. The choice
+for a rule bound to a moment, an Agent Rule for a rule bound to a
+path or to every task, an Output Form for a rule carried in the files
+a project is born with. The choice
 rests on the table in §8 (§8, *Choosing a channel*). No field in a file
 names a channel.
 

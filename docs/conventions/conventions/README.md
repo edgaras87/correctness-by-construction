@@ -49,13 +49,18 @@ Convention Seat.
 What a convention is, its manual, with its Work Approaches one level down, is the Idea-to-Output Model's
 (`docs/models/idea-to-output.md` §6, *A convention*). Here, a convention's Work Approaches
 are what a project holds: a CBC Run, or this repo, which keeps its own
-under `.claude/`. A Work Approach is one of three:
+under `.claude/`. A convention's Work Approach is one of three
+(`docs/models/idea-to-output.md` §2, *The kinds*):
 
 - an Agent Skill, for a rule bound to a moment;
 - an Agent Rule, for a rule bound to a path, or, with no path, to
   every task;
-- Record Stubs and Agent Skill Templates, for rules that sit in the
-  files a project is born with.
+- an Output Form, a record's form in its header comment, for rules
+  that sit in the files a project is born with. It ships in a Record
+  Stub.
+
+An Agent Skill Template is part of its Agent Skill, not a Work
+Approach of its own.
 
 The Master Copies are real files in the Container Group,
 `delivery/container/`. Which copy of a Work Approach is the Master Copy, and
@@ -305,10 +310,10 @@ placing takes these steps:
    inside a Change Set.
 2. The manual at `docs/conventions/<name>/README.md`, in the form
    (§2, *The Convention Manual*).
-3. Its Work Approaches in the Container Group, if it ships any. A convention
+3. Its Work Approaches in the Container Group, if it ships any. A Work Approach
    entering or leaving the Container Group updates the birth entry in the
    Decisions Log's Record Stub there, in the same commit: a CBC Run holds
-   that list, and cannot open this repo's.
+   that list, and cannot open this repo's (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*).
 4. Its place in the index's order of the conventions, only if the
    convention acts in sequence during a piece of work.
 5. The convention's line in `ARCHITECTURE.md`: a phrase and its
@@ -318,8 +323,8 @@ placing takes these steps:
    in its own agent-scoped commit, with an entry in
    `.claude/decisions.md` when it changes how this repo's agent works.
    A CBC Run's Decisions Log lists, in its birth entry, the
-   conventions it received. The Concept Deliverer receives none, so it
-   writes no such line (ADR-0042).
+   Work Approaches it received. The Concept Deliverer's lists none,
+   since it receives none (`docs/conventions/agent-arrangement/` §3.4, *`.claude/decisions.md`*; ADR-0042).
 
 *Its story: devlog 2026-10-18; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 

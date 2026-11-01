@@ -35,9 +35,12 @@ written from the one before it. A chain may start below an Idea Model:
 |---|---|---|
 | Idea Model | an idea any repo can adapt; its rules vary by repo, like an interface | `docs/models/`: the Agent Model, the Tiers Model, this one |
 | Canonical Description | how one thing is understood today, written down | a convention's manual; the concept, `concept/` |
-| Work Approach | how a piece of work is done | an Agent Skill, an Agent Rule, an Approach on Trial, a record's form in its header comment |
+| Work Approach | how a piece of work is done | an Agent Skill, an Agent Rule, an Approach on Trial, an Output Form |
 | output | what the work produces | a record's entries, a CBC Run's Invariant Slices and code |
 | Output Shape | a presumed output, written from outputs that exist | `.claude/shapes/`, read only at a Plan Step Gate |
+
+An **Output Form** is how one output is written, read while it is
+written, such as a record's header comment.
 
 An Output Shape is not a step after the Work Approach. It is written from
 outputs and governs the next one. Written from the Work Approach, it

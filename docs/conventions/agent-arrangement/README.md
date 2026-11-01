@@ -90,11 +90,10 @@ Concept Repo… Documents only — no code, no CBC Runs."* It holds:
 - its Approaches on Trial (§3.8, *`.claude/approaches-on-trial/`*).
 
 Its Decisions Log holds arrangement decisions only, and no birth
-entry's list of conventions: it receives no conventions. No one reads
-it but itself, so an entry that follows from an ADR is a line
-pointing at it (ADR-0042). A CBC Run's Decisions Log keeps that list,
-and its entries run longer because the exchange-read Agent Skill
-reads them.
+entry's list: it receives no Work Approaches (§3.4, *`.claude/decisions.md`*).
+No one reads it but itself, so an entry that follows from an ADR is a
+line pointing at it (ADR-0042). A CBC Run's entries run longer,
+because the exchange-read Agent Skill reads them.
 
 ### What the difference is
 
@@ -327,7 +326,7 @@ The arrangement's Decisions Log: append-only and dated, each entry in
 three parts: what changed, why, what was rejected. The standing rule
 is a comment in the file it governs. The Decisions Log keeps the why
 and the rejected options. Neither repeats the other. A CBC Run's also
-holds what it was delivered: its birth entry lists the conventions
+holds what it was delivered: its birth entry lists the Work Approaches
 it holds, and each delivery entry the Delivery Pin and the Read-Through Commit
 (`docs/conventions/exchange/` §2.2, *The CBC Run*). The Concept Deliverer's holds neither,
 since it receives no delivery (ADR-0042). Its rules sit in its
