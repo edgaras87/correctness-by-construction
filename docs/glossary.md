@@ -254,7 +254,7 @@ delivered files below.
 - **Approach on Trial Stage** — one phase of an Approach on Trial, numbered
   the same way (`.claude/approaches-on-trial/approach-drafting.md`,
   *Stages*).
-- **Refinement Layer** — a set of files the refinement fixes together
+- **Refinement Layer** — a set of files the refinement lists together
   (`.claude/approaches-on-trial/refinement.md` §1.1, *The refinement's words*).
 - **Refinement Round** — the Finding Kinds whose fixes do the same to
   the text, read together
