@@ -7,15 +7,15 @@ lives, and how to write it.**
 ## What it is for
 
 So that what a project decided, where it stands, what it tried and
-what it learned can be read by someone who was not there — a
+what it learned can be read by someone who was not there: a
 newcomer, future-you, or the Concept Deliverer, which reads a CBC Run through
 its records and nothing else (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*).
 Adopted with the Container Group (ADR-0038, 1d for the README's
 moment); no failure of the Concept Deliverer's is recorded before it. Lived
-since: four CBC Runs kept their records under these Record Stubs, and every
-Run Reading of CBC Run 3 has been a reading of its Decisions Log, its
-backlog and its devlog — the need proved by being the only channel
-there is.
+since: four CBC Runs kept their records under these Record Stubs. Every
+CBC Run Reading of CBC Run 3 has been a reading of its Decisions Log, its
+backlog and its devlog. The records proved the need by being the only
+channel there is.
 
 ## What this is made usable as
 
@@ -27,18 +27,19 @@ there is.
   and `delivery/container/devlog/devlog.md`. Each carries its own
   rules as comments, met when the file is opened; each is the CBC Run's
   own from birth.
-- **The records table in the entry file,
+- **The records table in the Entry File,
   `delivery/container/.claude/CLAUDE.md`, and ours, in `CLAUDE.md`**
-  — this convention's one stake (§13, *The records table*), in a file
+  — the one part of the Entry File this convention owns (§13, *The records table*), in a file
   `docs/conventions/agent-arrangement/` owns: the rule that cannot
   live inside a record, when to open it.
 - **`delivery/fills/cbc-run-pure-playbook.md` — the playbook's
-  Plan Steps, filled into a CBC Run's `PLAN.md` at birth** (§9, *The playbook*).
+  Plan Steps, put into a CBC Run's `PLAN.md` at birth by a Delivery
+  Fill** (§9, *The playbook*).
 - **The Concept Deliverer's own records**: `README.md`, `PLAN.md`,
   `TODO.md`, `CHANGELOG.md`, `ARCHITECTURE.md`, `docs/adr/` and
   `devlog/`, derived from this page as the Record Stubs are, and never
   copied from them (ADR-0042); and `TODO-CONVERSATION-MEMORY.md`,
-  on trial, which has no stub (§14, *Conversation Memory*, ADR-0060).
+  on trial, which has no Record Stub (§14, *Conversation Memory*, ADR-0060).
 
 This page explains the records; the Record Stubs state the rules. What
 derives from this page is that
@@ -47,16 +48,16 @@ checked back against this page.
 
 ## The seats
 
-The same records in both Convention Seats, each derived from this page — the
-CBC Run's through the Record Stubs, the Concept Deliverer's directly — with seven
-differences of rule or ownership, so a section each
-(`docs/conventions/conventions/` §2.4, *The seats*).
+Both Convention Seats keep the same records, each derived from this
+page: the CBC Run's through the Record Stubs, the Concept Deliverer's
+directly. They differ in seven things of rule or ownership, so each
+has a section (`docs/conventions/conventions/` §2.4, *The seats*).
 
 ### The CBC Run's seat
 
 A CBC Run keeps every record the Record Stubs name, from birth. Its `PLAN.md`'s
 Plan Steps arrive whole from a playbook it does not hold, filled in at
-birth. Its retrospective runs before Release
+birth. Its retrospective runs before its Release Plan Step
 (`docs/conventions/retrospective/`), and its lessons reach the
 playbook when the Concept Deliverer reads it. Its
 `CHANGELOG.md` logs releases.
@@ -64,57 +65,59 @@ playbook when the Concept Deliverer reads it. Its
 ### The Concept Deliverer's seat
 
 The Concept Deliverer keeps the same records, derived from this page rather
-than from the Record Stubs (ADR-0042), and differs in seven things. It
-has no project end, so lessons fold back at each Plan Step's close
-rather than at a retrospective; whether a retrospective serves it too is on trial at
-the close of the birth Plan Step (`docs/conventions/retrospective/`,
-*The seats*). It owns the playbook,
-`delivery/fills/cbc-run-pure-playbook.md`, where a CBC Run holds only
-the Plan Steps filled into its plan (§9, *The playbook*). Its `CHANGELOG.md` versions the
-concept, not a release (ADR-0003).
+than from the Record Stubs (ADR-0042). It differs in seven things:
 
-And its `PLAN.md` holds one Plan Step being worked: the piece of work
-being done now, and below it any Plan Step stopped for it.
-What makes work a Plan Step, and the Plan Step Form, the CBC Run's adapted to
-this Convention Seat, are under `## The Plan Step Form` at the top of the
-Concept Deliverer's own `PLAN.md` (ADR-0057). A CBC Run keeps its finished
-Plan Steps in its plan, each closed to one line, because they are the
-evidence its playbook is folded from; no playbook is folded from
-the Concept Deliverer's own plan, so its finished Plan Steps are only history,
-which is the devlog's. Its plan has no "Discovered along the way",
-since TODO takes a finding at once; and no decision index, since
-`docs/adr/` lists itself (§3.3, *Where ADRs live*'s index is the CBC Run's).
+1. **No project end.** Lessons fold back at each Plan Step's close
+   rather than at a retrospective. Whether a retrospective serves it
+   too is on trial at the close of the birth Plan Step
+   (`docs/conventions/retrospective/`, *The seats*).
+2. **The playbook.** It owns
+   `delivery/fills/cbc-run-pure-playbook.md`, where a CBC Run holds
+   only the Plan Steps filled into its plan (§9, *The playbook*).
+3. **`CHANGELOG.md`.** It versions the concept, not a release
+   (ADR-0003).
+4. **`PLAN.md`.** It holds one Plan Step being worked: the piece of
+   work being done now, and below it any Plan Step stopped for it.
+   What makes work a Plan Step, and the Plan Step Form, the CBC Run's
+   adapted to this Convention Seat, are under `## The Plan Step Form`
+   at the top of the Concept Deliverer's own `PLAN.md` (ADR-0057). A
+   CBC Run keeps its finished Plan Steps in its plan, each closed to
+   one line: they are the evidence its playbook is folded from. No
+   playbook is folded from the Concept Deliverer's plan. Its finished
+   Plan Steps are history, and history is the devlog's. Its plan has
+   no "Discovered along the way", since TODO takes a finding at once;
+   and no decision index, since `docs/adr/` lists itself (§3.3,
+   *Where ADRs live*'s index is the CBC Run's).
+5. **`ARCHITECTURE.md`.** It describes documents and delivery rather
+   than a built system, where a CBC Run's describes modules, runtime
+   invariants and a `src/` codemap. It keeps to about two pages, as §8
+   asks (§8, *ARCHITECTURE.md*; ADR-0068). Its parts,
+   each with what it holds and who reads it:
 
-And its `ARCHITECTURE.md` maps documents and delivery rather than a
-built system, where a CBC Run's maps modules, runtime invariants and a
-`src/` codemap. It keeps to about two pages, as the map's section asks
-(§8, *ARCHITECTURE.md*; ADR-0068). Its parts,
-each with what it holds and who reads it:
+   - **the overview** — the repo in one view, for a newcomer after the
+     README;
+   - **what is stated, and what ships from it** — the pairing, the
+     Idea Models, and the delivery by group, for whoever changes a
+     Canonical Description and needs what is made from it;
+   - **the table of CBC Runs** — each by both its names, for the agent
+     writing a Delivery Note (`docs/conventions/exchange/` §3.7, *The Delivery Note*);
+   - **what must stay true** — each rule, where it is stated and what
+     holds it, for the reviewer at commit review;
+   - **the codemap** — where each thing lives, for anyone looking.
 
-- **the overview** — the repo in one view, for a newcomer after the
-  README;
-- **what is stated, and what ships from it** — the pairing, the
-  Idea Models, and the delivery by group, for whoever changes a
-  Canonical Description and needs what is made from it;
-- **the table of CBC Runs** — each by both its names, for the agent
-  writing a Delivery Note (`docs/conventions/exchange/` §3.7, *The Delivery Note*);
-- **what must stay true** — each rule, where it is stated and what
-  holds it, for the reviewer at commit review;
-- **the codemap** — where each thing lives, for anyone looking.
-
-A part no one reads goes. Its words are a record of their own,
-`docs/glossary.md`, as a CBC Run's are, and a line known wrong is a
-TODO known issue (§5, *TODO.md*).
-
-And its ADRs have no page limit. A CBC Run's ADR records one choice in
-its code; the Concept Deliverer's record the design of a method and its
-conventions, several numbered decisions each, and run to a median
-of 101 lines. Their length is governed by "cut what adds nothing"
-(`docs/conventions/writing/` §2, *Why each rule*, rule 7).
-
-And it keeps the talk behind a TODO item beside the item, in
-`TODO-CONVERSATION-MEMORY.md`, on trial (§14, *Conversation Memory*; ADR-0060). A CBC Run
-gets it only if it holds here.
+   A part no one reads goes. Its words are a record of their own,
+   `docs/glossary.md`, as a CBC Run's are, and a line known wrong is a
+   TODO known issue (§5, *TODO.md*).
+6. **The ADRs' length.** They have no page limit. A CBC Run's ADR
+   records one choice in its code. The Concept Deliverer's record the
+   design of a method and its conventions: up to 12 numbered
+   decisions each, a median of 4.5, and a median of 102 lines. Their
+   length is governed by "cut what adds nothing"
+   (`docs/conventions/writing/` §2, *Why each rule*, rule 7).
+7. **Conversation Memory.** It keeps the talk behind a TODO item
+   beside the item, in `TODO-CONVERSATION-MEMORY.md`, on trial (§14,
+   *Conversation Memory*; ADR-0060). A CBC Run gets it only if it
+   holds here.
 
 *Its story: ADR-0041; ADR-0057.*
 
@@ -146,7 +149,7 @@ Convention Seats keep a record differently, *The seats* says how.
 **The CBC Run's only**
 
 11. `docs/system/`: what is promised, what must never happen, the
-    slices (`concept/03-cbc-framing.md`).
+    Invariant Slices (`concept/03-cbc-framing.md`).
 12. `RETRO.md`: what the next CBC Run does differently, when present
     (`docs/conventions/retrospective/` §4, *`RETRO.md`*). Ours has none: lessons
     fold back at each Plan Step's close.
@@ -163,10 +166,10 @@ each Convention Seat's records table's (§13, *The records table*).
 *The CBC Run's seat:*
 
 ```
-                    PLAYBOOK  (the deliverer's; a run holds none)
-                       │  steps, at birth         ▲  lessons fold back,
+                    PLAYBOOK  (the Concept Deliverer's; a CBC Run holds none)
+                       │  Plan Steps, at birth    ▲  lessons fold back,
                        ▼                          │  through RETRO.md
-   ┌────────────────  PLAN.md  (the spine) ───────┴────────────┐
+   ┌────────────────  PLAN.md  ───────────────────┴────────────┐
    │  Step 0 [x] ── Step 1 [~] ── Step 2 [ ] ── ... ── Retro   │
    └───┬──────────────┬────────────────┬────────────────┬──────┘
        │              │                │                │
@@ -177,16 +180,16 @@ each Convention Seat's records table's (§13, *The records table*).
        │                                           (for users)
        └──► summed into ARCHITECTURE.md (the system as it stands)
 
-   docs/system/ = what is promised, the slices
-   README.md    = the front door: what this is, where the rest is
+   docs/system/ = what is promised, the Invariant Slices
+   README.md    = the first page: what this is, where the rest is
 ```
 
 *Our seat:*
 
 ```
-   ┌───────────────  PLAN.md  (the spine) ───────────────┐
-   │  the one step being worked, and any step it stopped │
-   └───┬──────────────┬────────────────┬────────────┬────┘
+   ┌───────────────────────  PLAN.md  ───────────────────────┐
+   │  the one Plan Step being worked, and any it stopped     │
+   └───┬──────────────┬────────────────┬────────────┬────────┘
        │              │                │            │
       why       what happened     not yet done  what changed
        │              │                │            │
@@ -196,31 +199,32 @@ each Convention Seat's records table's (§13, *The records table*).
        │              TODO-CONVERSATION-MEMORY.md (the talk behind an item)
        └──► summed into ARCHITECTURE.md (documents and delivery)
 
-   Lessons fold back at each step's close: into the conventions,
+   Lessons fold back at each Plan Step's close: into the conventions,
    the playbook, the concept.
-   README.md = the front door: what this is, where the rest is
+   README.md = the first page: what this is, where the rest is
 ```
 
-The entry file is agent-arrangement's
+The Entry File is the agent-arrangement manual's
 (`docs/conventions/agent-arrangement/` §2, *The entry file*). The
 playbook is absent from a CBC Run on purpose: it lives in the repo that
 owns the project type, never in a project born from it (§9, *The playbook*).
 
 ## 2. PLAN.md
 
-The spine the other records hang off.
+The record the others point back to.
 
 ### 2.1 What a plan is
 
-The gated plan of Plan Steps: the full journey sketched coarsely, the next
-1–2 Plan Steps detailed finely (rolling wave), each with exit
-criteria (gates) and a live status.
+The plan of Plan Steps: the whole of the work sketched coarsely, the
+next 1–2 Plan Steps detailed finely, the detail moving forward as Plan
+Steps close, each with its exit criteria, its Plan Step Gate, and a
+live status.
 
 ### 2.2 Why a plan
 
 It answers "where are we, what's next, and what does *done* mean" at
 any moment — the three questions that otherwise live only in
-someone's head. Gates prevent Plan Steps from being declared finished by
+someone's head. Plan Step Gates prevent Plan Steps from being declared finished by
 fatigue. The completed plan is also the raw material for the
 retrospective and the playbook.
 
@@ -236,13 +240,13 @@ at birth, `delivery/fills/cbc-run-pure-playbook.md` (§9, *The playbook*); in th
 Concept Deliverer's Convention Seat, `PLAN.md`'s legend and its Plan Step Form. Why the form
 is as it is:
 
-- A gate holds facts, not intentions: "tests pass on a clean clone",
+- A Plan Step Gate holds facts, not intentions: "tests pass on a clean clone",
   not "code is good". A Plan Step is then not declared finished by
   fatigue.
 - A closed Plan Step's line says what diverged from the plan: that is
-  retro fuel.
+  what the retrospective reads.
 - A Plan Step links outward to its decisions and its devlog, so the plan
-  stays the spine the other records hang off (§1, *The records at a glance*).
+  stays the record the others point back to (§1, *The records at a glance*).
 - A Plan Step that stops is not done and not dropped: it keeps its place
   and the work it did, and resumes where it stopped.
 - "Discovered along the way" holds what a Plan Step finds and does not
@@ -257,8 +261,9 @@ paperwork after it.
 
 ### 2.6 A plan's anti-patterns
 
-Plan Steps without gates (it's just a wish list); detailing Step 9 before
-Step 2 is done; letting statuses go stale so the plan lies.
+- Plan Steps without Plan Step Gates: it's just a wish list.
+- Detailing Step 9 before Step 2 is done.
+- Letting statuses go stale, so the plan lies.
 
 ---
 
@@ -275,9 +280,9 @@ including the downsides knowingly accepted.
 ### 3.2 Why an ADR
 
 Code shows *what* was built; ADRs preserve *why*. Six months later,
-"why is this Postgres and not Mongo" has an answer, and — equally
-important — "we already considered that and rejected it because…"
-stops the same debate from recurring.
+"why is this Postgres and not Mongo" has an answer. And "we already
+considered that and rejected it because…" stops the same debate from
+recurring.
 
 ### 3.3 Where ADRs live
 
@@ -306,9 +311,9 @@ copied for each new one; in the Concept Deliverer's Convention Seat, the header 
 
 A bare `ADR-nnnn` names the decision in the repo where it is read. A
 reference to another repo's decision carries that repo's Repo Tag before
-the number — `CBC ADR-0012`, as a CBC Run cites the Concept Deliverer's — a
-short upper-case name each repo declares once in its README's
-decisions row (§7, *README.md*). A document written to be read in another repo
+the number: `CBC ADR-0012`, as a CBC Run cites the Concept Deliverer's.
+A Repo Tag is a short upper-case name each repo declares once in its
+README's decisions row (§7, *README.md*). A document written to be read in another repo
 carries the Repo Tag on every citation (ADR-0020).
 
 ### 3.6 When an ADR is written
@@ -319,9 +324,10 @@ often changes the decision.
 
 ### 3.7 An ADR's anti-patterns
 
-Editing old ADRs; ADRs so long nobody writes them; recording the
-decision but not the rejected options (the rejections are half the
-value).
+- Editing old ADRs.
+- ADRs so long nobody writes them.
+- Recording the decision but not the rejected options: the
+  rejections are half the value.
 
 ---
 
@@ -332,17 +338,17 @@ The engineering journal.
 ### 4.1 What the devlog is
 
 Dated, informal entries: what was worked on, what was tried, what
-failed and why, open questions, hunches. The lab notebook of the
-project.
+failed and why, open questions, hunches. The project's dated notes,
+kept as written.
 
 ### 4.2 Why a devlog
 
 Three payoffs: (1) dead ends are recorded, so they aren't
 re-explored — "tried caching at the repo layer, caused stale reads"
 saves the next attempt; (2) resuming after a break takes minutes
-instead of an hour of re-reading code; (3) it is the raw material
-that gets distilled upward — a devlog struggle becomes an ADR's
-context, a retro lesson, a playbook warning.
+instead of an hour of re-reading code; (3) it is what the records
+above it are written from: a devlog struggle becomes an ADR's
+context, a retrospective's lesson, a playbook warning.
 
 ### 4.3 Where the devlog lives
 
@@ -360,8 +366,8 @@ Concept Deliverer's Convention Seat, `devlog/README.md`. Why the form is as it i
   works" is a legitimate and valuable entry.
 - An entry names the Plan Step or the work it was part of, and a dead
   end is marked loudly: both are then greppable.
-- A session ends with a "Resume:" line, the cheapest save-point
-  that exists. It marks a place in the work, not a time: sessions
+- A session ends with a "Resume:" line, the cheapest place to resume
+  from. It marks a place in the work, not a time: sessions
   resume after walks, days or weeks.
 
 ### 4.5 When an entry is written
@@ -371,9 +377,10 @@ cleaned up afterwards.
 
 ### 4.6 The devlog's anti-patterns
 
-Polishing it (kills the habit); recording only successes (the
-failures are the valuable part); letting it replace ADRs (decisions
-must still be promoted to their durable form).
+- Polishing it: it kills the habit.
+- Recording only successes: the failures are the valuable part.
+- Letting it replace ADRs: decisions must still be promoted to their
+  durable form.
 
 ---
 
@@ -388,7 +395,7 @@ bugs, ideas, and consciously deferred problems.
 
 ### 5.2 Why a TODO
 
-An open loop held in the head costs attention; written down and
+A thing known and not written down costs attention; written down and
 triaged, it costs nothing until its time comes. It also makes
 deferral *explicit* — "we know about this and chose not yet" is a
 decision, and this is where it's recorded.
@@ -406,8 +413,8 @@ How an item is written, and when it goes, is TODO's form: the
 header comment and the headings of `TODO.md`, the Record Stub in a CBC Run and
 the Concept Deliverer's own. Why the form is as it is:
 
-- Prune ruthlessly. A 200-item "later" list is a graveyard, not a
-  plan; deleting an idea you'd re-derive anyway if it mattered
+- Prune ruthlessly. A 200-item "later" list is never read, and is
+  not a plan; deleting an idea you'd re-derive anyway if it mattered
   costs nothing.
 - Open work only: what closed is the devlog's, the ADRs' and git's
   to tell, and a closed entry kept here is a second copy of it.
@@ -432,9 +439,11 @@ not schedules).
 
 ### 5.6 TODO's anti-patterns
 
-Using it as the plan (it has no gates or sequence); never deleting;
-closed entries kept whole; dated updates stacked on an open item;
-inline code TODOs with no tracked counterpart.
+- Using it as the plan: it has no Plan Step Gates or sequence.
+- Never deleting.
+- Closed entries kept whole.
+- Dated updates stacked on an open item.
+- Inline code TODOs with no tracked counterpart.
 
 ---
 
@@ -457,9 +466,9 @@ digest.
 
 `CHANGELOG.md` in the repo root. Format: Keep a Changelog
 (keepachangelog.com) with Semantic Versioning. What a version *is*
-depends on the repo type — an application releases SemVer versions;
-a concept or docs repo versions something else, and says what at
-Framing. The discipline (curated, user-voiced, written per change)
+depends on the repo type. An application releases SemVer versions. A
+concept or docs repo versions something else, and says what at its
+Framing Plan Step. The discipline (curated, user-voiced, written per change)
 carries unchanged.
 
 ### 6.4 How the changelog is written
@@ -481,22 +490,23 @@ Its moment is each Convention Seat's records table's (§13, *The records table*)
 
 ### 6.6 The changelog's anti-patterns
 
-Dumping git log into it; writing it from memory at release time;
-developer-speak ("refactored OrderService") instead of user-speak
-("order creation is ~3x faster").
+- Dumping git log into it.
+- Writing it from memory at release time.
+- Developer-speak ("refactored OrderService") instead of user-speak
+  ("order creation is ~3x faster").
 
 ---
 
 ## 7. README.md
 
-The front door.
+The first page a person reads.
 
 ### 7.1 What a README is
 
 What this project is, who it's for, how to run it, and where
 everything else is.
 
-README is the front door for people; the entry file is the one for agents
+README is the first page for people; the Entry File is the first for agents
 (`docs/conventions/agent-arrangement/` §2, *The entry file*). Two audiences, two
 files, no shared text.
 
@@ -528,54 +538,52 @@ CBC Run and the Concept Deliverer's own. Why the form is as it is:
 ### 7.5 When a README changes
 
 Stubbed at birth; after that, its moment is the records table's
-(§13, *The records table*). Projection follows truth, so the README never claims what is
-not yet true (ADR-0038, 1d). The
-mechanism is a gate item where relevant: a Plan Step whose gate makes
-something projectable true includes updating its projection, exactly
-as record upkeep is already expressed in lived gates ("ARCHITECTURE
-current"). Never a standing item on every gate — most Plan Steps make
-nothing projectable true, and a usually-vacuous item trains
-rubber-stamping. The Release gate includes "README verified on a
-clean machine."
+(§13, *The records table*). The README says only what is already true
+(ADR-0038, 1d). The mechanism is a Plan Step Gate item where
+relevant: a Plan Step whose gate makes true something the README
+should say includes updating the README. Record upkeep is already
+written so in lived gates ("ARCHITECTURE current"). Never a standing
+item on every Plan Step Gate: 7 of the playbook's 9 Plan Steps make
+nothing true that the README says, and an item usually empty trains
+ticking it unread. The Release Plan Step's gate includes "README
+verified on a clean machine."
 
 ### 7.6 A README's anti-patterns
 
-Duplicating live status into it; setup instructions that only work
-on the author's machine.
+- Duplicating live status into it.
+- Setup instructions that only work on the author's machine.
 
 ---
 
 ## 8. ARCHITECTURE.md
 
-The map of the current state.
+The current state, in one place.
 
-### 8.1 What the map is
+### 8.1 What ARCHITECTURE is
 
 A short prose description of the system as it *is now*: the main
 components, their responsibilities, how they talk to each other,
 where the important invariants live, and where in the codebase each
-piece is found. It is what a later slice may rely on. A Plan Step's
-contract, once certified, is history, and this map holds what stands
+piece is found. It is what a later Invariant Slice may rely on. A Plan Step's
+contract, once certified, is history, and ARCHITECTURE holds what stands
 now. The Concept Deliverer's maps documents and delivery instead, and its
 Convention Seat says how.
 
 *Its story: devlog 2026-10-17, later; devlog 2026-10-29, the lessons' own stories: project-recording and agent-arrangement.*
 
-### 8.2 Why a map
+### 8.2 Why ARCHITECTURE
 
 ADRs are a history of individual choices; this is the synthesized
-present. It's the difference between a stack of route decisions and
-a map. Newcomers read it second, right after the README (§7.2, *Why a README*).
-(Convention
+present. (Convention
 popularized by matklad's "ARCHITECTURE.md" essay.)
 
-### 8.3 Where the map lives
+### 8.3 Where ARCHITECTURE lives
 
 `ARCHITECTURE.md` in the repo root (or `docs/`).
 
-### 8.4 How the map is written
+### 8.4 How ARCHITECTURE is written
 
-What the map holds, and when it changes, is its form: the header
+What ARCHITECTURE holds, and when it changes, is its form: the header
 comment and the sections of `ARCHITECTURE.md`. In a CBC Run, the Record Stub:
 an overview, the components, the invariants and the codemap. The
 Concept Deliverer's maps documents and delivery instead (*The seats*). Why
@@ -583,28 +591,28 @@ the form is as it is:
 
 - One or two pages, the system as it is now: a newcomer reads it
   second, after the README (§7.2, *Why a README*).
-- The why behind a shape is the ADR's, linked, so the map states
+- The why behind a shape is the ADR's, linked, so ARCHITECTURE states
   and never argues.
 - A Plan Step's close is when the structure it describes can have moved,
-  so that is when the map is checked.
+  so that is when ARCHITECTURE is checked.
 - The invariants are a table, one row per invariant, never a paragraph:
-  how a slice got there is its record's.
+  how an Invariant Slice got there is its Invariant Slice Record's.
 
 *Its story: devlog 2026-10-17, later; devlog 2026-10-29, the lessons' own stories: project-recording and agent-arrangement.*
 
-### 8.5 The map's anti-patterns
+### 8.5 ARCHITECTURE's anti-patterns
 
-Describing the aspirational design instead of the real one; so much
-detail it goes stale in a week — it maps the forest, the code is the
-trees.
+- Describing the aspirational design instead of the real one.
+- So much detail it goes stale in a week: it describes the whole, the
+  code describes each part.
 
 ### 8.6 Local Maps
 
-An area whose parts relate in ways the map should not carry — how
-they connect, hand work to each other, or land elsewhere — gets a
-Local Map: its directory's `README.md`, which ARCHITECTURE points
-into. A Local Map holds relations only. It holds no count or list the
-map holds, and nothing a part says about itself; its first lines say
+A Local Map is a directory's `README.md`, which ARCHITECTURE points
+into. An area gets one when its parts relate in ways ARCHITECTURE
+should not carry: how they connect, hand work to each other, or land
+elsewhere. A Local Map holds relations only. It holds no count or list
+ARCHITECTURE holds, and nothing a part says about itself; its first lines say
 what it maps and point for the rest. The file keeps the tool's name,
 `README.md`, and not every README is one: a README holding a folder's
 rules is another kind (ADR-0045).
@@ -619,16 +627,16 @@ The cross-project script.
 
 ### 9.1 What a playbook is
 
-The reusable, versioned template distilled from completed plans of
+The reusable, versioned template written from completed plans of
 the same project type: the full sequence of Plan Steps, gates, and what
 past CBC Runs taught each.
 
 ### 9.2 Why a playbook
 
 It converts one project's experience into the next project's head
-start. The first plan of a familiar project type writes itself, and
-past mistakes are pre-loaded as warnings at exactly the Plan Step where
-they bit.
+start. The first plan of a familiar project type is already written,
+and past mistakes stand as warnings at the Plan Step where they
+happened.
 
 ### 9.3 Where a playbook lives
 
@@ -644,7 +652,7 @@ The full sequence, first Plan Step to last. The plan's Record Stub prescribes no
 Plan Step; a playbook prescribes them all. Each keeps the plan's
 form, and what past CBC Runs taught it, as its *Known already*. Its
 Release Plan Step carries the type's own release facts. Its lifecycle
-has four acts, each with its how where its doer reads it:
+has four moments, and each says where its doer reads how:
 
 1. **Birth:** the playbook's Plan Steps fill the plan, and its "Steps
    from" line records which playbook, at what version. Born without
@@ -653,9 +661,9 @@ has four acts, each with its how where its doer reads it:
 2. **Once the problem is framed:** the CBC Run confirms the Plan Steps
    against it, filling specifics, deleting what it has no use for,
    adding what it needs, renumbering; born without a playbook, it
-   authors them. No skill or Plan Step asks this of a CBC Run yet: the TODO
+   authors them. No Agent Skill or Plan Step asks this of a CBC Run yet: the TODO
    item "Read CBC Run 4 against `dac4dd1`" asks whether CBC Run 4 did it.
-3. **Before Release:** the retrospective writes `RETRO.md`, each
+3. **Before the Release Plan Step:** the retrospective writes `RETRO.md`, each
    decision naming where its lesson lands
    (`docs/conventions/retrospective/`).
 4. **Fold back:** each surviving lesson lands in the playbook the
@@ -663,19 +671,21 @@ has four acts, each with its how where its doer reads it:
    comment, `delivery/fills/cbc-run-pure-playbook.md`.
 
 The lessons fold into the playbook because it is what the next CBC Run
-starts from. Framing and Release have their own copies of those
-Plan Steps there, so their lessons have a home.
+starts from. The Framing and Release Plan Steps have their own copies
+there, so their lessons have a home.
 
 ### 9.5 When a playbook changes
 
 Created after the *second* project of a type (the first time you
-notice "I've done this before"); updated at every retro thereafter.
+notice "I've done this before"); updated at every retrospective thereafter.
 
 ### 9.6 A playbook's anti-patterns
 
-Writing a playbook from theory before doing the project type even
-once; never folding retros back (a playbook that stops learning is
-just bureaucracy); gates so heavy people route around the playbook.
+- Writing a playbook from theory before doing the project type even
+  once.
+- Never folding retrospectives back: a playbook that stops learning
+  is just bureaucracy.
+- Plan Step Gates so heavy people route around the playbook.
 
 ---
 
@@ -712,22 +722,22 @@ playbooks, but for operating, not building. `docs/runbooks/`.
 
 ## 11. The flow between records
 
-Records form a distillation pipeline — raw experience at the bottom,
-durable knowledge at the top:
+Each record is written from the one below it: the devlog holds what
+happened, the records above it keep what lasts:
 
 ```
 devlog (raw, daily)
   → ADR          when a struggle crystallizes into a decision
   → TODO         when it surfaces future work
-  → PLAN notes   when it explains why a step diverged
-       → CHANGELOG      when the step ships something user-visible
-       → ARCHITECTURE   when the step changed the system's shape
-       → RETRO.md       before Release
+  → PLAN notes   when it explains why a Plan Step diverged
+       → CHANGELOG      when the Plan Step ships something user-visible
+       → ARCHITECTURE   when the Plan Step changed the system's shape
+       → RETRO.md       before the Release Plan Step
             → PLAYBOOK  lessons made reusable
                  → next project's PLAN
 ```
 
-The rules that make the pipeline work:
+The rules that make this work:
 
 1. **Write once, at the source:** each fact has one home, and the
    other records link to it (`docs/conventions/facts-in-sync/` §1, *One home*).
@@ -736,7 +746,7 @@ The rules that make the pipeline work:
    (→ADR) and lessons (→playbook).
 3. **Update at natural moments, not on a schedule.** Bound to events,
    recording never becomes a separate chore to skip. *Which* moment
-   belongs to which record is stated once, in the entry file's records
+   belongs to which record is stated once, in the Entry File's records
    table (§13, *The records table*): that is where an agent meets it, and a second list here
    would be a copy that drifts.
 4. **Cheap at the bottom, durable at the top.** The devlog may be messy;
@@ -768,18 +778,19 @@ If yes, it gets written down, once, in its designated home.
 from other conventions, and renumbering would break those citations
 for a cosmetic gain.*
 
-The entry file — the one file loaded before any task, what it may
-hold, how it stays small — is agent-arrangement's
-(`docs/conventions/agent-arrangement/` §2, *The entry file*). This convention keeps one
-stake in it: the records table, the only ambient part of
-project-recording (*Why it arrives this way*).
+The Entry File, the one file loaded before any task, what it may
+hold and how it stays small, is the agent-arrangement manual's
+(`docs/conventions/agent-arrangement/` §2, *The entry file*). This convention owns one
+part of it: the records table, the only part of the project-recording
+manual loaded before any task (`docs/models/agent.md` §4.1, *Ambient
+Channel*; *Why it arrives this way*).
 
 ### 13.1 What a row holds
 
 **Every row of the records table names three things: the moment, what
 the record holds, and its path** — and adding a record means adding
 its row. What the record holds is a short summary of its item in the list of records
-(§1, *The records at a glance*). This is a requirement, not a convenience.
+(§1, *The records at a glance*).
 
 The moment is the half that is new and the half that is load-bearing.
 The table is then readable in both directions: *I just did X, where
@@ -794,9 +805,9 @@ contains nothing about what to write.
 
 ### 13.2 The table's anti-patterns
 
-Local status in the entry file — where the work
-stands, what is next. It belongs in PLAN.md; the table's row for
-PLAN.md is where the entry file says so.
+Local status in the Entry File: where the work stands, what is next.
+It belongs in PLAN.md; the table's row for PLAN.md is where the
+Entry File says so.
 
 ---
 
@@ -804,10 +815,10 @@ PLAN.md is where the entry file says so.
 
 The Concept Deliverer's, on trial.
 
-A TODO item keeps what triage needs, and its story is the devlog's.
-The talk that shaped it is neither: what was asked, the options
-weighed, what was said for and against, the reviewer's own words.
-That talk is the Conversation Memory. In the Concept Deliverer's
+The Conversation Memory is the talk that shaped a TODO item: what was
+asked, the options weighed, what was said for and against, the
+reviewer's own words. The item keeps what triage needs, and its story
+is the devlog's; the talk is neither. In the Concept Deliverer's
 Convention Seat it is kept beside the item, in
 `TODO-CONVERSATION-MEMORY.md` at the root, next to `TODO.md`
 (ADR-0060).
@@ -824,8 +835,8 @@ Convention Seat it is kept beside the item, in
   shapes an item, on the agent's recommendation: the talk is the
   reviewer's.
 - **Read before the Ideas are weighed,** so the talk shapes the
-  weighing, and gone with its item, so nothing outlives what it was
-  about.
+  weighing.
+- **Gone with its item,** so nothing outlives what it was about.
 
 The trial is judged when the third item is worked with its section
 in hand, or at the refinement Plan Step's close, whichever comes first.
@@ -841,16 +852,16 @@ A rule for filling in `PLAN.md` sits inside `PLAN.md`, so acting on
 the record is what puts the rule in front of you; there is no trigger
 to fire and nothing to remember (`docs/models/agent.md` §4.6, *Installed Channel*). Timing
 is the one exception: a rule saying when to open a record cannot live
-inside it, so the entry file's records table carries a moment per row
-(§13, *The records table*). A skill would not do: it fires when the agent recognises the
+inside it, so the Entry File's records table carries a moment per row
+(§13, *The records table*). An Agent Skill would not do: it fires when the agent recognises the
 moment, and failing to recognise the moment is the failure being
-fixed. Restating a record's rules in the entry file "so they are
+fixed. Restating a record's rules in the Entry File "so they are
 always available" is the failure `docs/conventions/agent-arrangement/` measured, in
 its *What it is for*.
 
 ## What this does not cover
 
-- **The entry file as a whole: what it may hold, and how it stays
+- **The Entry File as a whole: what it may hold, and how it stays
   small** — `docs/conventions/agent-arrangement/` §2, *The entry file*.
 - **How a commit is written, and why its body is a micro-ADR** —
   `docs/conventions/commit-messages/`.
@@ -866,7 +877,7 @@ its *What it is for*.
 ## Where to look
 
 - The Record Stubs: `delivery/container/`.
-- The entry file and its records table:
+- The Entry File and its records table:
   `docs/conventions/agent-arrangement/`.
 - Commit messages, the finest-grained record:
   `docs/conventions/commit-messages/`.
