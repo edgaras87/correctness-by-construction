@@ -1,11 +1,10 @@
 # devlog/ — work history
 
-One file per month, `<YYYY-MM>.md`, newest entries on top; a new
-month opens its own file. A Fact Reference to an entry names its date —
+One file per month, `<YYYY-MM>.md`, newest entries on top. A Fact Reference to an entry names its date —
 "devlog 2026-09-19" — and the date names the file.
 
-2–5 minutes at the end of each session, and a TODO item's story
-when the item is added (`TODO.md`'s header). An entry's heading is
+An entry takes 2 to 5 minutes at a session's end. A TODO item's
+story is written here when the item is added (`TODO.md`'s header). An entry's heading is
 its date, then in brackets the work it was part of.
 For future-you: fragments
 fine, honesty mandatory. Never clean up. Mark dead ends loudly with

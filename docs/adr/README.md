@@ -32,5 +32,5 @@ in order. The folder is its own index.
      accepted ADR's decision: a changed mind is a new ADR marked
      "Supersedes <NNNN>", and the old one's status names it.
      Why the form is as it is: (docs/conventions/project-recording/
-     §3.4, How).
+     §3.4, How an ADR is written).
      foundation: the project-recording convention -->
