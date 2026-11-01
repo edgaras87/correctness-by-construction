@@ -302,8 +302,8 @@ Notes:
 
 Goal: Living Text written before a rule now meets that rule, and project-recording's list of the records maps them in both Convention Seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
-Now: Refinement Round 3's close (`.claude/approaches-on-trial/refinement.md` §2.8, *A Refinement Round's close*):
-all the text the round covers, read again against writing rules 1 to 10. Refinement Layers 1 to 6 worked, `e784f41` to `4d8147d`.
+Now: the last read (`.claude/approaches-on-trial/refinement.md` §2.9, *The last read*):
+everything read against every Finding Kind of the refinement, in one read, with no fixes between. Refinement Round 3 closed at `c6b3635`.
 Gate:
 
 **At the opening.**
