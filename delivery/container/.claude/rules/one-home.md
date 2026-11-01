@@ -40,8 +40,8 @@ config. Where it lives, never how it reads.
 
 ## Not a second home
 
-History: the devlog, closed ADRs, commit bodies and the entries of
-`.claude/decisions.md`. They record what was true then. They are
+History: the devlog, closed ADRs, commit bodies, the entries of
+`.claude/decisions.md` and `CHANGELOG.md`'s released entries. They record what was true then. They are
 never updated, so they cannot drift. The Decisions Log's header
 comment is living text.
 
@@ -54,3 +54,5 @@ comment is living text.
 - ADR-0070 — a retelling may stand beside its id, re-read when
   its home changes
 - ADR-0078 — rule 6: a decision is cited where its reader needs it
+- ADR-0079 — *Not a second home*: a released CHANGELOG entry is
+  history
