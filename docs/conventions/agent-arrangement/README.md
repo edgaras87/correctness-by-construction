@@ -208,7 +208,7 @@ three the Entry File's guard comment states:
   `paths:` (§3.9, *An Agent Rule always loaded*): the convention's channel, not a line here.
   **It points; it never restates**: a summary is lossy on arrival,
   and then two files disagree while both look current
-  (`docs/models/agent.md` §12.7, *Claims on summaries*, claim M1).
+  (`docs/models/agent.md` §12.7, *Claims on summaries*, claims M1 and M2).
 - **No moment.** A line with a moment goes where the moment is:
   - the record's Record Stub;
   - README;
@@ -366,7 +366,8 @@ a record that quotes it has let one operator's preference into the
 project's truth. The Container Group ships none, and a CBC Run's
 stays ignored. The Concept Deliverer tracks its own: it has one operator,
 and a setting kept out of git is one no reader of the repo can see
-(ADR-0062). Outside practice ignores the file, as the tool's
+(ADR-0062). That adapts the Agent Model, which keeps an operator's
+file out of history (`docs/models/agent.md` §4.1, *Ambient Channel*). Outside practice ignores the file, as the tool's
 documentation advises.
 
 It holds the operator's settings, never rules. A setting is a

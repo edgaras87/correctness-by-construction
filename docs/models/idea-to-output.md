@@ -37,7 +37,7 @@ written from the one before it. A chain may start below an Idea Model:
 | Canonical Description | how one thing is understood today, written down | a convention's manual; the concept, `concept/` |
 | Work Approach | how a piece of work is done | an Agent Skill, an Agent Rule, an Approach on Trial, an Output Form |
 | output | what the work produces | a record's entries, a CBC Run's Invariant Slices and code |
-| Output Shape | a presumed output, written from outputs that exist | `.claude/shapes/`, read only at a Plan Step Gate |
+| Output Shape | a presumed output, written from outputs that exist | a CBC Run's `.claude/shapes/`, read only at a Plan Step Gate |
 
 An **Output Form** is how one output is written, read while it is
 written, such as a record's header comment.
@@ -61,7 +61,9 @@ A file stands on one thing; a line may point at a fact's home in
 any document at its own level or above (§3.2, *The direction of a
 link*).
 
-A Work Approach stands on a Canonical Description, never on an Idea Model directly.
+A placed Work Approach stands on a Canonical Description, never on an
+Idea Model directly. An Approach on Trial stands on none yet (§4.2,
+*The upward direction*).
 
 ### 3.2 The direction of a link
 
@@ -138,8 +140,8 @@ Both sit at the top of a chain. They differ in where things vary:
 - **An Idea Model's rules vary by repo.** Each repo adapts it in its own
   manual.
 - **A concept has one form and one home.** It is copied whole, and
-  only its outputs vary. A CBC Run edits its copy only after a
-  mistake it met, and the Concept Deliverer reads the edit.
+  only its outputs vary. A project edits its copy of a concept only
+  from a mistake it met, and the concept's repo reads the edit.
 
 No Idea Model sits above correctness by construction. An Idea Model
 of what a concept is waits for a second Concept Repo.

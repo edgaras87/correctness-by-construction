@@ -461,7 +461,8 @@ Skills are written from the chapters and readers learn the method
 from them, so lived work can show one wrong. The Concept Deliverer
 judges an exact hunk where a prose line must first be translated.
 The edit is the CBC Run's copy's: the concept changes only when the
-Concept Deliverer takes it.
+Concept Deliverer takes it (`docs/models/idea-to-output.md` §5, *An
+Idea Model and a concept*).
 *Its story: ADR-0051.*
 
 ### 5.7 The records

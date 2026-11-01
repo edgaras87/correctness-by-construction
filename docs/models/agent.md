@@ -167,30 +167,39 @@ committed template.
 
 ## 5. The context window
 
-- **Finite.** Everything in it competes with everything else.
-- **Undifferentiated within a role.** Once text arrives, *its channel
-  of origin is not marked.* A rule from the Entry File and a rule from
-  a file read mid-task are the same kind of object.
+### 5.1 Finite
 
-  Consequence: **no file carries authority over another.** "The Entry
-  File overrides the convention" has no mechanism to run on — the
-  agent sees two statements, not two ranks. Precedence between files
-  must be resolved before text reaches the window, by not writing the
-  rule twice.
+The context window is finite. Everything in it competes with everything else.
 
-- **Ranked by role above that.** The harness marks three things
-  apart: its own wiring, the prompt, and what tools return. An agent
-  weighs them in that order. A rule in the prompt beats the same
-  rule's contrary in a file. A file's rule holds only until the prompt
-  says otherwise (§12, *Claims* W2). Every file, through the Ambient
-  Channel or the Pulled Channel, sits in the lowest role. So a rule
-  that rests on a fact of the session cannot live in a file alone.
-  Such a fact is, for example, that a reviewer is present, or a repo
-  is out of bounds. The file cannot know the session, and the prompt
-  outranks it.
-  It goes through the Told Channel, every session, by design (§8, *Choosing a channel*).
+### 5.2 Undifferentiated within a role
 
-- **Ordered, not prioritised.** Position is not rank.
+It is undifferentiated within a role. Once text arrives, *its channel
+of origin is not marked.* A rule from the Entry File and a rule from
+a file read mid-task are the same kind of object.
+
+Consequence: **no file carries authority over another.** "The Entry
+File overrides the convention" has no mechanism to run on — the
+agent sees two statements, not two ranks. Precedence between files
+must be resolved before text reaches the window, by not writing the
+rule twice.
+
+### 5.3 Ranked by role above that
+
+It is ranked by role above that. The harness marks three things
+apart: its own wiring, the prompt, and what tools return. An agent
+weighs them in that order. A rule in the prompt beats the same
+rule's contrary in a file. A file's rule holds only until the prompt
+says otherwise (§12, *Claims* W2). Every file, through the Ambient
+Channel or the Pulled Channel, sits in the lowest role. So a rule
+that rests on a fact of the session cannot live in a file alone.
+Such a fact is, for example, that a reviewer is present, or a repo
+is out of bounds. The file cannot know the session, and the prompt
+outranks it.
+It goes through the Told Channel, every session, by design (§8, *Choosing a channel*).
+
+### 5.4 Order without priority
+
+It is ordered, not prioritised. Position is not rank.
 
 ## 6. Write-back and persistence
 
@@ -235,8 +244,8 @@ with two texts that can disagree (§5, *The context window*).
 
 ## 9. Where each convention lands
 
-Each convention's Work Approaches show where it lands: an Agent Skill
-for a rule bound to a moment, an Agent Rule for a rule bound to a
+Each convention's Work Approaches show where it lands: an Agent Skill,
+read through the Pulled Channel, for a rule bound to a moment, an Agent Rule for a rule bound to a
 path or to every task, an Output Form for a rule carried in the files
 a project is born with. The choice
 rests on the table in §8 (§8, *Choosing a channel*). No field in a file
@@ -255,9 +264,9 @@ beside its arrangement. This Idea Model changes only when an idea
 does. Two things every Tool Binding has to say, from what one tool
 has shown:
 
-- **One mechanism may serve two channels.** A hook that injects
-  context is the Pushed Channel; one that blocks is an Enforcement
-  Gate.
+- **One mechanism may serve a channel and a gate.** A hook that
+  injects context is the Pushed Channel; one that blocks is an
+  Enforcement Gate.
 - **What the tool loads is not always the file on disk.** A tool may
   drop part of a file, a comment for one, before it reaches the
   window.
@@ -278,7 +287,7 @@ does not mean compliance). The second kind is stated here, each
 attached to the component it constrains, each written so it can be
 proven wrong.
 
-`evidenced` = observed. `assumed` = asserted but never observed —
+`evidenced` = observed, or true by definition, marked `(definitional)`. `assumed` = asserted but never observed —
 including assertions already acted on. Each piece of evidence says
 where it was seen: this repo's history, a CBC Run's, or the
 handbook's. The handbook is the repo that held the working
@@ -392,7 +401,8 @@ agent resolves one and proceeds rather than reporting the ambiguity.
 prompt. The prompt outranks anything a tool returned. So a file's rule
 loses to a contrary rule in the prompt, and a rule given through the
 Told Channel exists only in the session it was told to.
-- `evidenced` · three CBC Runs of the Pure Seed, reported 2026-09-10:
+- `evidenced` · three CBC Runs of the Pure Seed, reported 2026-09-10,
+  two incidents among them:
   - a stop the change-plans Agent Skill of the time asked for,
     skipped on an instruction the prompt never gave;
   - a checkout opened because the prompt's "stay inside this
@@ -412,8 +422,8 @@ including by the same agent.
 
 **M1 — A hand-written summary is lossy on arrival.** Summarising drops
 parts of a rule immediately, before any drift.
-- `evidenced` — the commit-messages manual states "≤50 chars, imperative, **no
-  period**". The handbook's Entry File of the time rendered it as
+- `evidenced` — the handbook's commit-messages manual of the time
+  stated "≤50 chars, imperative, **no period**". The handbook's Entry File of the time rendered it as
   "imperative subject ≤50 chars, body explains why, footers link
   ADRs/issues". "No period" was gone on arrival.
 
@@ -428,7 +438,7 @@ look current.
 **G1 — Text does not enforce.** No file prevents a violation; only a
 check outside the text can.
 - `evidenced` — same measurement as A1. The rule existed in two
-  channels for the whole life of the handbook. No Enforcement Gate
+  channels in the handbook's first 20 commits. No Enforcement Gate
   existed. It was broken 15 times. Here too: nothing gates a subject's
   length, and A1's count is 125 of 233.
 - The tool's documentation says the same: an instruction in

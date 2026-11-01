@@ -26,7 +26,7 @@ Repo's "mental layer" is its Canonical Descriptions, and its
                                 held by the Concept Repo below until
                                 three repos have lived (ADR-0038)
 concepts      what you know     one repo per concept: mental layer,
-   │ container and execution        ▲ harvest: a Run Repo's surprises
+   │ container and execution        ▲ Record Harvest: a Run Repo's surprises
    ▼ copies, pinned at a commit     │ become concept changes
 runs          what you try      projects, experiments
 ```
@@ -85,8 +85,9 @@ here, for example, the Exchange Convention (`docs/conventions/exchange/`).
 
 Down is delivery, in two forms:
 
-1. a copy, always pinned at a commit of the tier above: that pin is
-   what "a concept version" is;
+1. a copy, always pinned at a commit of the tier above. The copy also
+   names the concept version it derives from, which the Concept Repo's
+   own log sets;
 2. a Delivery Fill: text written at birth into a file the Run Repo
    owns from then on. It is never re-copied. At the Run Repo's
    retrospective it is merged back by name into the playbook it came
@@ -107,12 +108,13 @@ has missed it and is on record. The Run Repo's records say it was
 told. A Run Repo that leans on it has the Told Channel's diagnostic.
 A copy the Run Repo has edited between two Delivery Pins is not a
 form of delivery either (§3.5, *What holds on every flow*, fact 4):
-delivery comes down, and an edit goes up.
+delivery comes down, and an edit is read from above.
 
 ### 3.3 Upward harvest
 
-Up is harvest, and only through records: the tier above reads a
-Run Repo's records, read-only, and the Run Repo sends nothing. A Run Repo's
+Up is the Record Harvest, and only through what the Run Repo committed:
+its records, and the diff of its copies. The tier above reads them,
+read-only, and the Run Repo sends nothing. A Run Repo's
 surprise about the concept becomes a concept change, and what is
 made usable is re-derived from it. A method lesson stops at the
 Concept Repo while it holds the method. Work in one repo never edits
@@ -120,13 +122,12 @@ another as a side effect, up or down.
 
 ### 3.4 The Delivery Pin and documents
 
-The Delivery Pin, the commit of the tier above that a delivery's
-copies equal, follows the documents the tiers exchange.
+The Delivery Pin (§3.5, *What holds on every flow*) follows the
+documents the tiers exchange.
 No tier's agent reads a tier above it, so every delivery is a
-document, and its Delivery Pin moves with it. A document taken
+document, and each delivery that brings a copy moves its Delivery Pin. A document taken
 without its Delivery Pin moving leaves the Run Repo's record of what
-it holds wrong. That is why the Delivery Pin moves with every
-Delivery Take (§3.5, *What holds on every flow*; ADR-0036).
+it holds wrong. That is why the Delivery Pin moves with every Delivery Take that brings a copy (§3.5, *What holds on every flow*; ADR-0036).
 
 ### 3.5 What holds on every flow
 
@@ -167,6 +168,6 @@ answers to what it was given.
 ### 4.2 The dependency rule
 
 Downward: only pinned copies and Delivery Fills. Upward: only
-records. A repo lives in exactly one tier. A Concept Repo that keeps
+records, and the diff of the copies. A repo lives in exactly one tier. A Concept Repo that keeps
 its own records, and today its method, does the concepts tier's
 work, not a Run Repo's.

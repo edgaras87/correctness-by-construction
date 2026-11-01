@@ -71,9 +71,9 @@ delivered files below.
   `temp/` into place and recording the Delivery Pin
   (`docs/conventions/exchange/` §4, *The Delivery Take*).
 - **Receipt Branch** — a branch holding a delivery as it arrived,
-  named by its Delivery Pin and never merged: the Pure Seed's
-  `birth-seed`, or one a CBC Run cuts at its Delivery Take, so the
-  next diff of its edits is exact (`docs/conventions/exchange/` §4,
+  never merged: the Pure Seed's `birth-seed`, its Delivery Pin in each
+  commit's subject, or one a CBC Run cuts at its Delivery Take, named
+  by the Delivery Pin, so the next diff of its edits is exact (`docs/conventions/exchange/` §4,
   *The Delivery Take*, step 3; `delivery/installs/pure-seed.md`).
 - **Delivery Fill** — text one group writes at Delivery Staging into
   a marked place in another group's file, the playbook's Plan Steps
@@ -116,12 +116,11 @@ delivered files below.
   may be wrong or incomplete. It is the one that counts regardless.
   What derives from it applies it and does not explain. One rule for
   all of them (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*);
-  they differ at the edges (ADR-0039). "Canonical" means the
-  reference, not that it is correct. It is today's understanding,
-  changed only for a reason that is recorded.
+  they differ at the edges (ADR-0039). It changes only for a reason
+  that is recorded.
 - **Idea Model** — the top Canonical Description of a chain of
-  texts: an idea any repo can adapt, its rules varying by repo, each
-  repo writing its own Convention Manual for it. A repo adapts it in a Convention Manual
+  texts: an idea any repo can adapt, its rules varying by repo. Each
+  repo adapts it in a Convention Manual of its own
   (`docs/models/idea-to-output.md` §2, *The kinds*, and §5, *An Idea
   Model and a concept*). A particular one is named by its name: the
   Agent Model, the Tiers Model, the Idea-to-Output Model.
