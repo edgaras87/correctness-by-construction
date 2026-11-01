@@ -54,7 +54,7 @@ Agent Rules, comments and config. Where it lives, never how it reads.
 ## Not a second home
 
 History: the devlog, closed ADRs, commit bodies, the entries of
-`.claude/decisions.md` and the parts of
+`.claude/decisions.md`, `CHANGELOG.md`'s released entries and the parts of
 `TODO-CONVERSATION-MEMORY.md`. They record what was true then. They
 are never updated, so they cannot drift. Each file's header comment
 is Living Text. A fact stated only in history gets a home in Living Text
@@ -74,3 +74,5 @@ before anything retells it (`docs/conventions/facts-in-sync/` §1,
 - ADR-0070 — how a Fact Reference is written; each new line asked
   at the commit
 - ADR-0078 — rule 7: a decision is cited where its reader needs it
+- ADR-0079 — *Not a second home*: a released CHANGELOG entry is
+  history
