@@ -2961,3 +2961,105 @@ container's `ae8eb31`, for 6.
 The read's input, beside all Living Text: the list in *The work*,
 under *Round 3's close read*, and *Met at the close read, of other
 kinds*.
+
+### Files by layer (§2.2)
+
+As at Round 3's close read: 118 files. Since `f5dfbbe` none came in
+and none went; `devlog/2026-11.md` is history.
+
+| Layer | Files | Lines |
+|---|---|---|
+| 1. The conventions manual | 1 | 366 |
+| 2. Project-recording | 1 | 898 |
+| 3. The other manuals, the models, the concept | 23 | about 4,600 |
+| 4. `ARCHITECTURE.md`, `README.md`, the records | 12 | about 3,600 |
+| 5. Our agent setup | 19 | 3,649 |
+| 6. `delivery/`, what ships | 62: the container 25, the method 14, the stack 20, `README.md`, the playbook, the Pure Seed | 8,570 |
+
+Read by header only, as before: `TODO-CONVERSATION-MEMORY.md`, 1,275
+lines, and `.claude/decisions.md`, 1,242 lines, whose entries and
+parts are history.
+
+### The read's setup (§2.4)
+
+Nothing is fixed during the read. Three steps, in order.
+
+**1. The leftovers, checked first.** The agent checks each item of
+both lists Round 3 left, in *The work* under *Round 3's close read*
+and in *Met at the close read, of other kinds*, against the tree.
+One still true is listed as a finding under its Finding Kind; one
+gone is named with the commit that took it. Readers are given the
+result and do not list these again.
+
+**2. The scripts,** run by the agent over all 118 files:
+
+- **Wiring, whole:** every path in backticks resolves; every Fact
+  Reference lands on a heading with its number and title; every
+  ADR cited exists; every Foundation Line names a convention, an
+  Idea Model or a concept version that exists; every manual's *What
+  this is made usable as* names each file whose Foundation Line names
+  it, and nothing else.
+- **Copies:** the worked example in `cbc-framing` and `cbc-slice`
+  byte-identical; `approach-drafting.md` one text in both Convention
+  Seats; our `commit-messages`, `commit-plan` and `visual-comparison`
+  against the container's, every hunk listed for Agreement to judge
+  against ADR-0069.
+- **Writing, what a script can find:** numbered titles past 30
+  characters, or with a dash, colon, comma or parenthesis; Glossary
+  Names spelled in lowercase; a bold Name bold more than once, or away
+  from the file its glossary entry points at.
+
+A script's hit is a line to judge, not a finding. Each goes to the
+reader of its file and Finding Kind.
+
+**3. The readers,** 23, each for one Finding Kind and one part of the
+text, side by side, each file whole unless the table says otherwise:
+
+| Finding Kind | Reader | Files |
+|---|---|---|
+| Stale lines | 1 | layers 1 to 3 (25) |
+| Stale lines | 2 | layers 4 and 5 (31) |
+| Stale lines | 3 | layer 6: the container, `delivery/README.md`, the playbook, the Pure Seed (28) |
+| Stale lines | 4 | layer 6: the method and the stack (34) |
+| Agreement | our side | each file with a Foundation Line in layers 3 to 5, beside what it names; each manual's *The seats* beside the files its Convention Seat holds |
+| Agreement | the CBC Run's side | layer 6's Agent Skills, Agent Rules, Output Shapes and references beside their manual or the concept; the Record Stubs beside project-recording; our copies of shipped files diffed |
+| One home | ours | layers 1 to 5 (56), then a sweep by grep across all 118 |
+| One home | what ships | layer 6 (62); the pairs of copies diffed |
+| Dependencies | ours | layers 1 to 5 (56) |
+| Dependencies | what ships | layer 6 (62) |
+| Lessons | ours | layers 1 to 5 (56) |
+| Lessons | what ships | layer 6 (62) |
+| Layout | ours | the manuals, the models, the concept, `ARCHITECTURE.md`, `README.md` and `.claude/` whole; the other records and the templates by headings |
+| Layout | what ships | layer 6's Agent Skills, Agent Rules, Output Shapes and references whole; the Record Stubs and templates by headings |
+| Writing | A | layers 1 and 2 (2) |
+| Writing | B | layer 3: the index, agent-arrangement, commit-messages, commit-plan, exchange, facts-in-sync (6) |
+| Writing | C | layer 3: repo-hygiene and its 3 templates, retrospective, shapes, visual-comparison, writing, `docs/glossary.md` (9) |
+| Writing | D | layer 3: the 3 Idea Models, the 5 concept chapters (8) |
+| Writing | E | layer 4 (12) |
+| Writing | F | layer 5 (19); the container's 4 copies diffed and read with ours |
+| Writing | G | layer 6: `delivery/README.md`, the Pure Seed, the playbook, the container but those 4 (24) |
+| Writing | H | layer 6: the method (14) |
+| Writing | I | layer 6: the stack (20) |
+
+Stale lines takes four readers, as Refinement Round 1 took five:
+each line is checked against the tree, the heaviest read of the
+eight. Wiring takes none: the scripts read it whole.
+
+**What each reader gets:**
+
+- its Finding Kind's row in *The rules' check*, and the rule's home,
+  to read first;
+- the rule for a finding (`.claude/approaches-on-trial/refinement.md`
+  §2.4, *Reading the Finding Kinds*): a finding names the rule the
+  text breaks; text that could read better is not one;
+- the decisions taken, in each Refinement Round's *Decisions*, and
+  the agent's calls on the single questions, beside them; a line one
+  of them settled is not a finding;
+- the result of step 1, and the script hits for its files;
+- the form of a finding (§2.5, *List the findings*): where, what the
+  rule says and the text says, how it stands, and why it was missed.
+
+Readers are read-only, on the model and effort of the session, as
+at Round 3's close read. The agent checks each finding's first quote
+against the tree by script before listing it, and samples what the
+script cannot parse.
