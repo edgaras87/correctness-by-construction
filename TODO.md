@@ -81,10 +81,8 @@
       missed; the reviewer would have the look-back ask whether the
       work itself could be meaningfully better, and if so try that
       way and compare it with the first try before keeping one. CBC
-      Run 4 tried each Real question's options on `try/` branches, a
-      Real question being what the auto-run Approach on Trial calls one it must not decide
-      alone: 14
-      of them, and 2 changed the answer. CBC Run 5 tries it first, from
+      Run 4 tried the options of each question it must not decide
+      alone on `try/` branches: 14 of them, and 2 changed the answer. CBC Run 5 tries it first, from
       its CBC Run Hand-off.
       Ideas:
       - a bar for "meaningful": it changes a Structural Wall, a test's
