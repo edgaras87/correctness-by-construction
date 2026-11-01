@@ -3847,3 +3847,20 @@ them.
     TODO lines; 568 declined;
   - `devlog/README.md`, `temp/README.md` and `docs/adr/README.md`,
     598 to 603, `c57a713`; 596 and 597 declined.
+- **Layer 5, our agent setup:** each kind of agent file's findings in
+  its commit, its old words given their Names there; the dated *Uses*
+  notes are living, by DECISION-18.
+  - `CLAUDE.md` and `CLAUDE.local.md`, 604, 605 and 607, `1275d0f`;
+    606 fixed in layer 2, `454028f`;
+  - the Agent Rules, 611, 614 to 616 and 618 to 622, `2158499`; 612
+    and 613 fixed in layer 1, `839f785`; 617 in layer 4, `ddc07db`;
+    623 in the writing manual first, `66abe45`, then ours,
+    `e65bd34`; 662's two footers in `1246c85`;
+  - the Agent Skills, 624, 626 to 629, 631 to 643, 671 and 672,
+    `31156de`; the reference to `exchange-read`'s Stage 3, `683febc`;
+  - the Approaches on Trial, 647, 649 to 662, 664, 665 and 667 to 670,
+    `1246c85`; the glossary's references to the new §1.1, `80772da`;
+    663 and 666 declined;
+  - the Decisions Log's header, 608 to 610, `e834a11`.
+  630, 644 to 646 and 648 name only the container's copies and are
+  layer 6's.
