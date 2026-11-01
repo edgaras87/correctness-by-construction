@@ -119,11 +119,15 @@ chat answers, records, commit messages, code comments.
    found, the long Name stands. A count, so a script can find it. A
    hyphenated word counts as one, here and in the two words a Name
    needs: "never-event" is one word.
-   Every Markdown mark already has a job here, so none marks a Name. A
-   numbered one is named by its owner and number, "working-a-reading
-   rule 2", "the walk's step 3"; a label inside its owner keeps its
-   case, "Step 0" in a plan, "Stage 3" in an Agent Skill; a path is written
-   as it is. A thing is defined when a text gives it a meaning
+   Every Markdown mark already has a job here, so none marks a Name.
+   Three things are written otherwise:
+   - a numbered thing, by its owner and number: "working-a-reading
+     rule 2", "the walk's step 3";
+   - a label inside its owner, keeping its case: "Step 0" in a plan,
+     "Stage 3" in an Agent Skill;
+   - a path, as it is.
+
+   A thing is defined when a text gives it a meaning
    English does not. Its Name goes into the glossary in the commit
    that first uses it, pointing at the home that defines it, and a
    word whose English meaning is ours has no Name (rule 6).
@@ -133,12 +137,16 @@ chat answers, records, commit messages, code comments.
     changes when the rule does. A subject is short, so a title of 30
     characters or fewer is carried whole, never cut. It stands alone,
     since a reference shows no parent: *How a plan is written*, never
-    *How*. One phrase in sentence case, a Glossary Name inside it
-    keeping its capitals, with no gloss after a dash or colon: the
-    gloss opens the body. This holds for numbered sections
-    and parts in both Convention Seats; the manual form's fixed headings, an
-    Agent Skill Stage heading and a numbered rule's bold lead are not titles under
-    it.
+    *How*. A title is:
+    - one phrase;
+    - in sentence case, a Glossary Name inside it keeping its
+      capitals;
+    - with no gloss after a dash or colon: the gloss opens the body.
+
+    This holds for numbered sections and parts in both Convention
+    Seats. Three are not titles under it: the manual form's fixed
+    headings, an Agent Skill Stage heading, and a numbered rule's bold
+    lead.
 11. **An edit changes the lines its change needs.** The reviewer
     reads a diff at every commit boundary, for its change; a line
     rewrapped beside it hides the change among lines that did not
