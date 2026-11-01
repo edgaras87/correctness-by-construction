@@ -5418,6 +5418,134 @@ Counts: 44 entries: 19 in the conventions manual, 25 in the project-recording ma
 - `spring-boot-walkthrough.md` 263 spells "honours", while `establishment-walk.md` 13 spells "honor" and the stack's files spell "behavior".
 - `infra-establish/SKILL.md`'s drawing labels Stage 6 "contract", while its Stage 6 Gate asks that both manuals stand.
 
+### Decisions
+
+Eight decisions, DECISION-33 to DECISION-40, for what recurs or what
+a reader asked; then the agent's calls on the single questions.
+Every other finding's ending is its reader's proposal, taken by the
+reviewer, 2026-11-01, with the decisions and the calls below.
+
+**DECISION-33.** The container's commit-plan Agent Skill. Rests:
+FINDING-1256, 1308 to 1311. Layer 5 fixed our copy; layer 6's
+`ddd6057` fixed only FINDING-630 in the container's, so the two
+differ by 24 hunks. Of the other five pairs, commit-messages and
+`approach-drafting.md` are identical, visual-comparison differs in
+its §5 as ADR-0069 allows, and `writing.md` and `one-home.md` are
+written for their seats.
+- (a) The container's copy takes our fixes, hunk by hunk, keeping
+  only what ADR-0069 lets a seat's copy say differently.
+- (b) Each finding fixed alone.
+- Recommended: (a). The findings are one miss, at one boundary, and
+  a diff after shows the two agree.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-34.** Fixes the endings list as made that never landed.
+Rests: FINDING-1130 (532), 1185 (578), 1186 (549), 1187 (580 in
+part).
+- (a) Each is made now, and *The work* names its commit; the close
+  commit records the miss.
+- (b) The endings are corrected to "not fixed", and the four move to
+  the last read.
+- Recommended: (a). The decisions stand; only the work was short.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-35.** Living Text's home. Rests: FINDING-1223, 1224,
+1226, and the lowercase uses in PLAN and TODO. The glossary points
+at facts-in-sync §1, which uses the words and never defines them;
+`refinement.md` §1.1 defines them in bold.
+- (a) Facts-in-sync §1 gains the one defining sentence, bold there;
+  `refinement.md` §1.1 keeps its scope and points at it, its bold
+  gone; every lowercase use takes the Name.
+- (b) `refinement.md` §1.1 becomes the home, and the glossary points
+  there.
+- Recommended: (a). Living Text is a fact of one-home, used in every
+  seat; the refinement only reads it.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-36.** "Birth" beside CBC Run Birth. Rests: FINDING-1072,
+1181, 1233, and their other uses. "Born", "at birth" and "from
+birth" are English everywhere.
+- (a) "Birth" as a noun for the event is the Name, CBC Run Birth;
+  "born", "at birth" and "from birth" stay English.
+- (b) "Birth" stays English, and the Name is used only where the
+  first state itself is meant.
+- Recommended: (a). A reader cannot tell "a birth" from the Name,
+  and the idioms read as English.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-37.** Where the Names stop. Rests: FINDING-1391, code
+identifiers; 1340, a description's trigger phrases; 1360, the
+Foundation Line's words in shipped files.
+- (a) The Names reach prose and comments, not code identifiers, not
+  the user's phrases a description quotes, and not a Foundation
+  Line's value, whose form conventions §1.3 sets.
+- (b) The Names reach all three.
+- Recommended: (a). An identifier is code, a quoted phrase is the
+  user's, and a Foundation Line is a field.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-38.** What rule 10's "standing alone" and "gloss" reach.
+Rests: FINDING-1084, child titles that lean on their parent, the
+Agent Model's §12.1 to 12.4; 1369, a parenthesis after a title;
+987, agent-arrangement §3.9.
+- (a) A child title stands alone; a parenthesis is a gloss. Each is
+  retitled, with the rename grep.
+- (b) A child title may lean on its parent's; a parenthesis is not a
+  gloss.
+- Recommended: (a). Rule 10's own example, *How*, is a title that
+  leans on its parent.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-39.** Forms under rules 2 and 3. Rests: FINDING-1275,
+the playbook's Goals as a lead line and bullets; 1081, the manual
+form's sentence "A change here walks it"; 1359, the plain-words
+page's "no jargon".
+- (a) A Goal's labelled list is one sentence, as DECISION-30 meant;
+  the form's sentence becomes "A change here runs the Change Walk on
+  it", in the conventions manual and every manual; the plain-words
+  page writes the Names, each beside its plain words at first use.
+- (b) Each stays as it stands.
+- Recommended: (a). Each keeps the form's shape and meets the rule.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+**DECISION-40.** Shipped text that points home. Rests: FINDING-1277,
+11 lines with "CBC docs/conventions/…"; 1300, approach-drafting's
+*Uses* paths; 1361, CBC Runs' evidence counts in a shipped workflow.
+- (a) "CBC docs/…" becomes "the Concept Deliverer's
+  docs/conventions/…" at each; the *Uses* paths take "the Concept
+  Deliverer's"; the workflow keeps the count, since the CBC Run
+  reads it as why the line is required.
+- (b) The pointers go, the counts move to our records.
+- Recommended: (a). The pointers serve our Foundation Check, and the
+  count says why, which rule 4 asks.
+- Chosen: (a), by the reviewer, 2026-11-01, as recommended.
+
+The agent's calls, on the single questions, each a fix unless said:
+- FINDING-962: the Invariant Slice Record; "what a closed Plan Step
+  proved is history".
+- FINDING-970: "the commit-plan Agent Skill", as the reader
+  recommends.
+- FINDING-1026: the phrase stays, said once plainly: "the Plan Step
+  that first builds the application on its stack".
+- FINDING-1034: the plain-words rewrite goes last, as the reader
+  proposes.
+- FINDING-1107: said in plain words, as proposed.
+- FINDING-1120: the ADR that records it, named.
+- FINDING-1160: the Stack Group, by its Name.
+- FINDING-1168: the paths lead each line.
+- FINDING-1176: the Now line names the Agent Skill Stage or Approach
+  on Trial Stage; the glossary's sentence stays.
+- FINDING-1234: "Kind: an Agent Skill copied into a fresh draft each
+  time".
+- FINDING-1235: "project-recording's list of the records".
+- FINDING-1258: the `temp/RUN-n.md` kind, said plainly.
+- FINDING-1276: the tag goes.
+- FINDING-1303: "a changed fact", as proposed.
+- FINDING-1344: "owe" is not dead; the reader's fixes.
+- FINDING-1353: "a standing idea", in all five places.
+- FINDING-1362: GUARANTEE-n is the Invariant Slice Guarantee's; the
+  System Guarantee's entry drops the tag.
+
 ### The close read's counts
 
 485 findings, FINDING-926 to 1410:
