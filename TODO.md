@@ -648,7 +648,6 @@
         Shape asks; the example's kill count and reconciliation move.
       - "invariant-shaped", "contract-shaped": "shape" now reads as the
         Output Shape.
-      - chapter 02's "scope creep wearing a safety costume".
       - `cbc-slice`'s opening states the completion test alone;
         `concept/04-cbc-slice.md` says the test proves a wall, and
         the wall closes the slice.

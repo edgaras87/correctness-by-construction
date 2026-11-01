@@ -60,6 +60,13 @@ concept versions — whole numbers, not SemVer (ADR-0003).
   LAYER-4-PROBLEMS, LAYER-5-INTERACTION, where it said L1 to L5.
   From never-oversold's retrospective; the names are the
   chapter's own. The method and stack skills use them. Editorial.
+- The five chapters in plain words, and in the concept's Names:
+  Invariant Slice, CBC Framing, System Guarantee, Structural Wall,
+  Falsifiable Promise, Enemy Census and the rest, each defined where
+  it was. Long sentences split, lists made of chained parts, figures
+  replaced: the two "movements" are its two parts, "How it rots" is
+  How it fails, "the joint" is the pair. No meaning moves; concept v1
+  stays v1. Editorial.
 
 ### Removed
 
