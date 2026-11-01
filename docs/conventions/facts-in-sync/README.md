@@ -94,8 +94,8 @@ as a follower. In practice:
   carries a Fact Reference to the home (§3.1, *What a Fact Reference is*). Without one it is a
   second home.
 - **History is not a second home.** The devlog, closed ADRs, commit
-  bodies and the entries of `.claude/decisions.md` record what was
-  true then. So do the parts of `TODO-CONVERSATION-MEMORY.md`, which
+  bodies, the entries of `.claude/decisions.md` and a CHANGELOG's
+  released entries record what was true then. So do the parts of `TODO-CONVERSATION-MEMORY.md`, which
   only the Concept Deliverer keeps. They are never updated, so they cannot
   drift.
 - **Living Text** is every text but history: text kept true as things
