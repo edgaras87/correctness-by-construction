@@ -3864,3 +3864,32 @@ them.
   - the Decisions Log's header, 608 to 610, `e834a11`.
   630, 644 to 646 and 648 name only the container's copies and are
   layer 6's.
+- **Layer 6, `delivery/`, what ships:** each Agent Skill's or file
+  family's findings in its commit, its old words given the Names of
+  the four Names tables; what follows it in the commit after.
+  - the exchange manual and `exchange-deliver`, naming the two
+    composed files right, `e2142b3` and `0776127`;
+  - the delivery's pages, 673 to 694, `5d562d8`; the
+    project-recording manual and `TODO.md` follow the CBC Framing
+    Plan Step's title, `6927e66`;
+  - the container's records, 695, 697, 698 and 700 to 709,
+    `b451eb9`; 696 and 699 fixed in layer 2, `2c00ebf`; our own
+    copies and the project-recording manual follow, `cffd879`;
+  - the container's agent files, 630, 644 to 646, 648, 710 to 721
+    and 723 to 735, `ddd6057`; our approach-drafting and
+    visual-comparison follow, `db36e62`, and the agent-arrangement
+    manual's seats, `445db69`; 722 declined;
+  - the four Output Shapes, 736 to 747, `8a4525b`;
+  - cbc-framing's Agent Skill, 748 to 775, `4884a12`;
+  - cbc-framing's workflow, 776 to 799, `3be745a`;
+  - cbc-framing's references, 800 to 810, `8316ce0`;
+  - cbc-slice, 811 to 825, `06a3915`; 826 and 827 declined;
+  - cbc-bootstrap's Agent Skill and `app-structure.md`, 828 to 850,
+    `c449de0`;
+  - cbc-bootstrap's references and templates, 851 to 862 and 864 to
+    878, `a6ccf5b`; 863 declined;
+  - infra-establish, 879 to 907, `580f7dc`;
+  - infra-serve and the items checked across both groups, 908 to
+    913, 915 to 923 and 925, `78fe685`; our `.gitignore` follows,
+    `4185a49`; 914 declined; 924 fixed by DECISION-29's design,
+    `ac34e28`.
