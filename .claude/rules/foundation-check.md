@@ -24,7 +24,10 @@ or moves a section. Which side is right, never how either reads.
      `.claude/rules/`, `.claude/` under `delivery/`, and a manual
      that names its Idea Model;
    - records whose header comment carries a Foundation Line,
-     in either Convention Seat (`docs/conventions/conventions/` §1.3, *The Foundation Line*);
+     in either Convention Seat (`docs/conventions/conventions/` §1.3, *The Foundation Line*),
+     and the shipped files whose header comment carries one: the
+     delivered Glossary Names under `delivery/*/docs/glossary/` and
+     the playbook's Plan Step Form;
    - Canonical Descriptions: `docs/models/`, `docs/conventions/*/README.md`,
      `concept/`.
 

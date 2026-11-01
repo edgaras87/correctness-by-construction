@@ -22,8 +22,8 @@ Agent Rules, comments and config. Where it lives, never how it reads.
 2. **Elsewhere, link; retell only where the reader acts on it
    there.** A retelling carries a Fact Reference to its source: its
    path, section and title, in parentheses. "After CBC Run Birth, only the
-   copies go: Agent Skills, Agent Rules, Output Shapes, Approaches on Trial and the
-   concept (`docs/conventions/exchange/` §3.2, *What goes*)."
+   copies go: Agent Skills, Agent Rules, Output Shapes, Approaches on Trial,
+   the Glossary Names and the concept (`docs/conventions/exchange/` §3.2, *What goes*)."
    Without the Fact Reference it is a second home
    (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
 3. **Make a summary say it is one.** It names its owner, and nobody
