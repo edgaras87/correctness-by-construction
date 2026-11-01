@@ -52,7 +52,7 @@ how to use it, is `README.md`.
 Where each group lands, and which files are copies, is the delivery map's
 (`delivery/README.md` §1, *The groups and the tree*, and §2, *Three ways a file lands*);
 the cycle of Delivery Pins and Run Readings is the Exchange Convention's
-(`docs/conventions/exchange/` §2.5, *One cycle, drawn*).
+(`docs/conventions/exchange/` §2.5, *One cycle*).
 
 ---
 

@@ -55,11 +55,12 @@ delivered files below.
 - **Delivery Note** — the text beside a delivery: what changed since
   the CBC Run's Delivery Pin, and a verdict on everything the CBC Run
   asked (`docs/conventions/exchange/` §3.7, *The Delivery Note*).
-- **Delivery Staging** — copying the delivery and its Delivery Note
-  into a CBC Run's `temp/`, by the reviewer or by the agent when told
-  to (`docs/conventions/exchange/` §3.1, *Delivery Staging*). The CBC Run does
-  nothing until it has happened. The verb names its object, "stage a
-  delivery", since git's verb is the same word.
+- **Delivery Staging** — a delivery as it arrives in a CBC Run's
+  `temp/`: the files and their Delivery Note, in a directory named for
+  our commit (`docs/conventions/exchange/` §3.1, *Delivery Staging*).
+  The act is "stage a delivery", by the reviewer or by the agent when
+  told to; the verb names its object, since git's verb is the same
+  word. The CBC Run does nothing until it has happened.
 - **Delivery Take** — the CBC Run's act: moving delivered files from
   `temp/` into place and recording the Delivery Pin
   (`docs/conventions/exchange/` §4, *The Delivery Take*).
