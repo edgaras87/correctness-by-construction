@@ -24,10 +24,10 @@ relies on it. What went wrong without it:
 
 The rules against it were written early, but spread over two
 manuals, the project-recording manual and the conventions manual.
-Refinement Round 2 found two Finding Kinds, One home and
-Dependencies, the checks of a fact's home and of what a text stands
-on, resting on rules split that way, and the rules came here before it
-read (ADR-0065).
+Two of Refinement Round 2's Finding Kinds rested on rules split
+that way. One home checks a fact's home. Dependencies checks what a
+text stands on. The rules came here before that round read
+(ADR-0065).
 
 ## What this is made usable as
 
@@ -38,7 +38,7 @@ read (ADR-0065).
 - **`.claude/rules/one-home.md` — the Concept Deliverer's**, loaded in
   every session: one home, point and derive, the Fact Reference, and
   the Concept Deliverer's Convention Seat's question at each commit (§1, *One home*;
-  §2, *Point and derive*; §3.1, *What a Fact Reference is*; *The Concept Deliverer's seat*).
+  §2, *Point and derive*; §3.1, *What a Fact Reference is*; §3.4, *A decision citation*; *The Concept Deliverer's seat*).
 - **`.claude/rules/foundation-check.md` — the Concept Deliverer's**, loaded
   in every session and acting before a commit is staged, the Foundation Check: the grep for a moved name, the
   Change Walk and the disagreement (§3.3, *The rename grep*; §4, *A Canonical
@@ -78,34 +78,54 @@ whether it says where (ADR-0070).
 ## 1. One home
 
 Each fact has one home; other texts *link* to it, and copy it only
-as a follower. In practice:
+as a follower.
 
-- **A summary says it is one.** It names its owner, and nobody
-  reads it in the owner's place.
-- **A fact changes at its home.** The links to it do not change,
-  unless the home itself moves. Each retelling whose Fact Reference
-  names it is found and re-read, with the paragraph around it. A
-  retelling that sits in a Canonical Description sets off that text's
-  Change Walk in turn.
-- **A copy is a follower.** One is the owner and the other follows
-  it. Two cases: a copy that cannot be avoided, as the CHANGELOG
-  follows the version in the build file; and a retelling beside its
-  Fact Reference, where the reader acts on the fact in place. A follower
-  carries a Fact Reference to the home (§3.1, *What a Fact Reference is*). Without one it is a
-  second home.
-- **History is not a second home.** The devlog, closed ADRs, commit
-  bodies, the entries of `.claude/decisions.md` and a CHANGELOG's
-  released entries record what was true then. So do the parts of `TODO-CONVERSATION-MEMORY.md`, which
-  only the Concept Deliverer keeps. They are never updated, so they cannot
-  drift.
-- **Living Text** is every text but history: text kept true as things
-  change. Each file's header comment is Living Text, the header
-  comments of the history files included.
-- **History is not a first home either.** A fact stated only in
-  history gets a home in Living Text before anything retells it: nothing
-  changes at a history entry, so nothing would re-read what tells it
-  (ADR-0070).
-- **Comments and config count too,** not only records.
+### 1.1 A summary says it is one
+
+A summary says it is one. It names its owner, and nobody
+reads it in the owner's place.
+
+### 1.2 A fact changes at its home
+
+A fact changes at its home. The links to it do not change,
+unless the home itself moves. Each retelling whose Fact Reference
+names it is found and re-read, with the paragraph around it. A
+retelling that sits in a Canonical Description sets off that text's
+Change Walk in turn.
+
+### 1.3 A copy is a follower
+
+A copy is a follower. One is the owner and the other follows
+it. Two cases: a copy that cannot be avoided, as the CHANGELOG
+follows the version in the build file; and a retelling beside its
+Fact Reference, where the reader acts on the fact in place. A follower
+carries a Fact Reference to the home (§3.1, *What a Fact Reference is*). Without one it is a
+second home.
+
+### 1.4 History is not a second home
+
+History is not a second home. The devlog, closed ADRs, commit
+bodies, the entries of `.claude/decisions.md` and a CHANGELOG's
+released entries record what was true then. So do the parts of `TODO-CONVERSATION-MEMORY.md`, which
+only the Concept Deliverer keeps. They are never updated, so they cannot
+drift.
+
+### 1.5 Living Text
+
+**Living Text** is every text but history: text kept true as things
+change. Each file's header comment is Living Text, the header
+comments of the history files included.
+
+### 1.6 History is not a first home
+
+History is not a first home either. A fact stated only in
+history gets a home in Living Text before anything retells it: nothing
+changes at a history entry, so nothing would re-read what tells it
+(ADR-0070).
+
+### 1.7 Comments and config count too
+
+Comments and config count too, not only records.
 
 *Its story: ADR-0053; ADR-0059; devlog 2026-10-27, late night.*
 
@@ -342,11 +362,9 @@ contradicts one may have found the Canonical Description's flaw rather than
 its own. When practice and a statement disagree, the statement is
 a candidate for change, not the judge. That includes this page.
 
-It has happened: CBC Run 3 showed a clause of `convention-lifecycle`,
-the receiver's protocol then, wrong on the day it first ran under it,
-and the clause changed (ADR-0034).
 
-The concept's meaning has changed once since v1 (`CHANGELOG.md`).
+
+The concept's meaning has changed once since v1 (ADR-0048).
 Whether it changes rarely because it is right, or because nothing has
 been read against it hard enough, is not known.
 

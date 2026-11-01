@@ -212,8 +212,7 @@ delivered files below.
   (`docs/conventions/writing/` §2, *Why each rule*, rule 9).
 - **Living Text** — text kept true as things change: every text
   here but history, which records what was true then
-  and is never updated (`docs/conventions/facts-in-sync/` §1, *One
-  home*).
+  and is never updated (`docs/conventions/facts-in-sync/` §1.5, *Living Text*).
 - **Fact Reference** — what a line carries when it relies on a fact
   written elsewhere: the address of the fact's home, its path,
   section and title, in parentheses

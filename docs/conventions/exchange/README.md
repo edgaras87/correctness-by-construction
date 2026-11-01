@@ -45,8 +45,8 @@ arrangements, each side holding only what it runs
 - **`.claude/skills/exchange-deliver/SKILL.md` — the Concept Deliverer's**,
   opened when the reviewer says to deliver (§3, *Down to the CBC Run*): the Delivery Note committed
   last, the delivery staged on the word; the same whether a CBC Run Reading
-  preceded it or not. Birth is a delivery into the root plus the
-  Delivery Fills, and `delivery/installs/pure-seed.md` keeps that.
+  preceded it or not. A CBC Run Birth is a delivery into the root plus
+  the Delivery Fills, and `delivery/installs/pure-seed.md` keeps that.
 - **`.claude/rules/exchange-reading.md` — the CBC Run Reading's form, the
   Concept Deliverer's**, loading when a CBC Run Reading in `temp/` is read, not
   while a new one is written (`docs/conventions/agent-arrangement/`
@@ -96,13 +96,16 @@ The Master Copies. Nothing per CBC Run.
 
 ### 2.2 The CBC Run
 
-The copies, and one line per Delivery Note in its own Decisions
-Log carrying two numbers — **the Delivery Pin**, the Concept Deliverer's commit its
-copies equal, and **the Read-Through Commit**, its own commit the
-Concept Deliverer last read up to. The first comes from the Delivery Staging's name,
-the second from the Delivery Note. Its edits since the Delivery Pin need no record
-of their own — they are the diff against what was delivered, and
-git holds it.
+The copies. And one line in its own Decisions Log per Delivery Note,
+which carries two numbers:
+
+- **the Delivery Pin**, the Concept Deliverer's commit its copies
+  equal, taken from the Delivery Staging's name;
+- **the Read-Through Commit**, its own commit the Concept Deliverer
+  last read up to, taken from the Delivery Note.
+
+Its edits since the Delivery Pin need no record of their own. They
+are the diff against what was delivered, and git holds it.
 
 Both numbers are in the CBC Run because it is the only place the
 Concept Deliverer can look. To deliver, read the CBC Run's Delivery Pin and diff forward
@@ -113,7 +116,7 @@ The Delivery Pin is a commit of the Concept Deliverer's. The CBC Run stores it a
 cannot resolve it, so everything the CBC Run needs to check must be
 checkable against its own tree.
 
-**One Delivery Pin** for everything delivered, as on every flow
+One Delivery Pin for everything delivered, as on every flow
 (`docs/models/tiers.md` §3.5, *What holds on every flow*): not one
 per group, not one per convention.
 
@@ -228,7 +231,7 @@ That is the whole of the mapping, stated here once.
 
 Every shipped file is in exactly one group, and staging a delivery
 checks it: a path claimed by two groups is an error, not a merge. An
-Agent Skill belongs to one group and travels whole, never split
+Agent Skill belongs to one group and is delivered whole, never split
 across two. The Method Group holds no stack. Nothing that needs
 Spring, PostgreSQL, Maven or podman sits under `delivery/method/`, so
 a CBC Run on another stack takes the Container Group and the Method
@@ -251,8 +254,8 @@ Every shipped Agent Skill, Agent Rule and Output Shape carries a
 Foundation Line. The field, its name, that each has one, and what it
 holds for each kind, is the conventions manual's
 (`docs/conventions/conventions/` §1.3, *The Foundation Line*). What
-is the Exchange Convention's: the line travels with the copy as a
-live claim. It says what this file comes from *now*, not when or from
+is the Exchange Convention's: every copy carries the line as a live
+claim. It says what this file comes from *now*, not when or from
 which CBC Run, and nothing in a copy can say otherwise. *Its story: devlog 2026-09-26, evening; devlog 2026-10-29, the lessons' own stories: the exchange.*
 
 ### 3.6 Absence in a delivery
@@ -268,11 +271,16 @@ and the Delivery Note says both halves.
 
 ### 3.7 The Delivery Note
 
-What changed since the CBC Run's Delivery Pin, stated so the CBC Run
-can diff the Delivery Staging against what it holds and find the Delivery Note wrong.
-Why it matters to this CBC Run — the part a diff cannot carry. A verdict
-on everything the CBC Run addressed to us since we last read it, in the
-CBC Run's order: the Delivery Note is the verdicts' only channel. A
+A Delivery Note says three things:
+
+- what changed since the CBC Run's Delivery Pin, so the CBC Run can
+  diff the Delivery Staging against what it holds and find the
+  Delivery Note wrong;
+- why it matters to this CBC Run, the part a diff cannot carry;
+- a verdict on everything the CBC Run addressed to us since we last
+  read it, in the CBC Run's order.
+
+The Delivery Note is the verdicts' only channel. A
 verdict says the decision and what the CBC Run owes now, nothing else.
 It never describes our own practice, which the CBC Run cannot check. It
 never says "accepted" for something not decided.
@@ -487,7 +495,7 @@ decided constraint to fit an Agent Skill Template (ADR-0008).
 We open the CBC Run's repository and read three things
 since its Read-Through Commit: its Decisions Log (every edit and why), its
 backlog (every line addressed to us), and the diff of every held
-copy against its Delivery Pin. Those three give every item; the devlog is
+copy against the commit of its last delivery. Those three give every item; the devlog is
 context.
 
 One more look gives no item: the CBC Run's tree, the work staged or
@@ -594,4 +602,4 @@ Reading written new is written without it (`docs/conventions/agent-arrangement/`
   rejected options, `docs/conventions/project-recording/`.
 - **The concept's version** — ADR-0003, and `CHANGELOG.md`'s
   standing comment.
-- **The birth procedure** — `delivery/installs/pure-seed.md`.
+- **How a CBC Run is born** — `delivery/installs/pure-seed.md`.
