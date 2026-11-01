@@ -5,7 +5,7 @@ foundation: the idea-to-output model
 # Conventions
 
 **How a way of working is written down once, in a manual, and made
-into the Agent Rules and skills a project acts on.**
+into the Agent Rules and Agent Skills a project acts on.**
 
 ## What it is for
 
@@ -16,9 +16,10 @@ every rule made from it.
 
 What went wrong without it: the rules for conventions lived in the
 conventions index, against that index's scope, and two of them
-were rules nobody had followed (ADR-0039). The trigger: the
-descriptions item filed on 2026-09-27, and the index read against
-it the next day.
+were rules nobody had followed (ADR-0039). The trigger: a TODO
+item, filed on 2026-09-27, that asked for a description of each
+convention, and the index read against it the next day (devlog
+2026-09-28).
 
 ## What this is made usable as
 
@@ -28,8 +29,10 @@ Nothing shipped of its own; what a repo holds is:
   — a CBC Run's, and this convention's Work Approach there (§1.3, *The Foundation Line*);
 - **`.claude/rules/convention-manual.md` — the form of a manual,
   the Concept Deliverer's**, loading whenever a manual is opened;
-- **the index, `docs/conventions/README.md`** — it points: the chain, relations only (ADR-0032), and one line sending a reader here and to the map
-  (`ARCHITECTURE.md` §1.2, *The conventions…*).
+- **the index, `docs/conventions/README.md`** — it points. It holds
+  the order the conventions act in during a piece of work, relations
+  only (ADR-0032). One line sends a reader here and to
+  `ARCHITECTURE.md` (§1.2, *The conventions — `docs/conventions/`*).
 
 What derives from this page is that list. A change here walks it;
 a change forced in one of them is checked back against this page.
@@ -46,10 +49,15 @@ Convention Seat.
 What a convention is, its manual and the Work Approaches made from it, is the Idea Model's
 (`docs/models/idea-to-output.md` §6, *A convention*). Here, a convention's Work Approaches
 are what a project holds: a CBC Run, or this repo, which keeps its own
-under `.claude/`. An Agent Skill for a rule bound to a moment; an Agent
-Rule for a rule bound to a path, or, with no path, to every task;
-Record Stubs and Agent Skill Templates for rules that ride in the files a project is
-born with. The Master Copies are real files in the Container Group,
+under `.claude/`. A Work Approach is one of three:
+
+- an Agent Skill, for a rule bound to a moment;
+- an Agent Rule, for a rule bound to a path, or, with no path, to
+  every task;
+- Record Stubs and Agent Skill Templates, for rules that sit in the
+  files a project is born with.
+
+The Master Copies are real files in the Container Group,
 `delivery/container/`. Which copy of a Work Approach is the Master Copy, and
 how every other copy changes, is the Exchange Convention's
 (`docs/conventions/exchange/` §1, *What cannot change*, and §4, *The Delivery Take*). The Concept Deliverer's own Agent Skills
@@ -70,10 +78,10 @@ opening it at the moment of use.
   and then name the CBC Run.
 - A worked example in a code block is exempt from all of this.
 
-### 1.2 A skill's frontmatter
+### 1.2 An Agent Skill's frontmatter
 
-A skill file opens with YAML frontmatter, which is what a skill
-loader reads:
+An Agent Skill's `SKILL.md` opens with YAML frontmatter, which is
+what the tool reads to load it:
 
 ```yaml
 ---
@@ -89,8 +97,8 @@ foundation: the <name> convention
 
 ### 1.3 The Foundation Line
 
-`foundation` says what the whole file stands on *now* — a live
-claim, never history — and a file has one
+`foundation` says what the whole file stands on *now*. It is a live
+claim, never history. A file has one
 (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 2).
 
 Which files carry it, and where:
@@ -163,9 +171,9 @@ agent by default. When a CBC Run ignores a convention with no reason
 and comes to no harm (`docs/models/idea-to-output.md` §6.2, *What a convention asserts*), its
 manual records it. None has yet.
 
-The manual is free prose: the convention stated, from which the
-artifact is made usable (`ARCHITECTURE.md` §1, *What is stated here*). It explains and
-points at the ADRs; the artifact says what a project does, and its
+The manual is free prose: the convention stated, from which its Work
+Approaches are made usable (`ARCHITECTURE.md` §1, *What is stated here*). It explains and
+points at the ADRs. A Work Approach says what a project does, and its
 `foundation` line names the manual it derives from. How a manual
 and what points at it or derives from it stay in agreement is
 `docs/conventions/facts-in-sync/`.
@@ -179,9 +187,9 @@ manual's to decide. Whether the form becomes an Output Shape is the TODO
 item "Decide whether our own forms become Output Shapes".
 
 The form grows from what manuals already hold. The list is the
-floor, and content that fits none of it takes its own heading in
-the body. A section two manuals need becomes the next candidate:
-a pair recurred, the test an Output Shape is written by
+least a manual has, and content that fits none of it takes its own
+heading in the body. A section two manuals need becomes the next
+candidate. A pair recurred is the test an Output Shape is written by
 (`docs/conventions/shapes/` §1.2, *How an Output Shape is born*). The list grows no other way.
 
 *Its story: ADR-0039.*
@@ -195,34 +203,39 @@ their own.
 
 *Its story: devlog 2026-10-19; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
-### 2.2 What it is for
+### 2.2 The need
 
-The need: the work it makes possible, the failure lived without
-it, and the trigger, as evidence. Or as intent marked on trial,
-with what would make it evidence and when to look again, after
-which the need is rewritten from what was seen or the convention
-goes. Or as adopted, taken whole from elsewhere: where it came
-from, and what has been lived under it since. Never intent dressed
-as evidence.
+*What it is for* says the need: the work it makes possible, the
+failure lived without it, and the trigger, as evidence. Or as intent
+marked on trial. The mark says what would make it evidence, and when
+to look again. Then the need is rewritten from what was seen, or the
+convention goes. Or as adopted, taken whole from elsewhere: where it
+came from, and what has been lived under it since. Never a wish
+written as evidence.
 
-### 2.3 The list of derived artifacts
+### 2.3 The list of what derives
 
-The list a change to the page walks: every derived artifact, by
-path from the repo root, each marked shipped or the Concept Deliverer's,
-with the moment it opens at, placed as the answer to the need. When
-nothing ships, it says so, and lists what a repo holds. It ends
+*What this is made usable as* is the list a change to the page
+walks, placed as the answer to the need. Each entry has:
+
+1. its path from the repo root;
+2. its mark, shipped or the Concept Deliverer's;
+3. the moment it opens at.
+
+When nothing ships, it says so, and lists what a repo holds. It ends
 with the sentence that a change here walks that list.
 
 ### 2.4 The seats
 
 A convention has two Convention Seats, the CBC Run's and the Concept
-Deliverer's, and a manual names both: what each does under it, the CBC Run first — what
-each holds is the list in *what this is made usable as*. One
+Deliverer's. The manual says what each does under it, the CBC Run
+first. What each holds is the list in *What this is made usable
+as*. One
 paragraph when they are alike, a section per Convention Seat when they are
 not, and "no Convention Seat" said outright when one side has none, so a
 reader does not hunt for it. When the body is already written per
 Convention Seat, the section is a paragraph naming which body sections are
-whose, as `docs/conventions/exchange/` does. Placed after *what
+whose, as `docs/conventions/exchange/` does. Placed after *What
 this is made usable as*.
 
 *Its story: ADR-0039.*
@@ -254,15 +267,16 @@ stands on it, so it still holds when the example is gone.
 
 *Its story: devlog 2026-10-18; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
-### 2.7 Why it arrives this way
+### 2.7 The channel
 
-The channel, a skill, an Agent Rule, a Record Stub or a file, and why that one.
+*Why it arrives this way* names the channel, an Agent Skill, an Agent
+Rule, a Record Stub or a file, and why that one.
 Where it reasons from the Agent Model, a Fact Reference to that
 part (`docs/models/agent.md`).
 
-### 2.8 What this does not cover
+### 2.8 The boundary
 
-The boundary against its neighbours: a list, each neighbour's
+*What this does not cover* is the boundary against its neighbours: a list, each neighbour's
 subject in bold, then the path it belongs to.
 
 ### 2.9 Where to look
@@ -286,13 +300,15 @@ placing takes these steps:
    that list, and cannot open this repo's.
 4. The index's chain, only if the convention acts in sequence
    during a piece of work.
-5. The convention's line in the map: a phrase and its manual's path
-   (`ARCHITECTURE.md` §1.2, *The conventions…*).
+5. The convention's line in `ARCHITECTURE.md`: a phrase and its
+   manual's path (`ARCHITECTURE.md` §1.2, *The conventions —
+   `docs/conventions/`*).
 6. What the Concept Deliverer holds of it, derived from the manual: for an
-   Agent Skill, its own under `.claude/skills/`, in its own agent-scoped
-   commit, with an entry in `.claude/decisions.md` when it changes
-   how this repo's agent works. No registry entry: the Concept Deliverer
-   receives no conventions (ADR-0042).
+   Agent Skill, its own under `.claude/skills/`. That Agent Skill lands
+   in its own agent-scoped commit, with an entry in
+   `.claude/decisions.md` when it changes how this repo's agent works.
+   No line in a birth entry's list of conventions, as a CBC Run's
+   Decisions Log holds: the Concept Deliverer receives none (ADR-0042).
 
 *Its story: devlog 2026-10-18; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync.*
 
@@ -303,10 +319,10 @@ standing comment); the PLAN has no per-convention Plan Steps. *Its story: devlog
 ## Why it arrives this way
 
 The manual reaches no agent: a maintainer reads it. The form of a
-manual is an Agent Rule, loading when a manual is read, so it is in view
-while one is worked; a manual written new is written without it
+manual is an Agent Rule. It loads when a manual is read, so it is in
+view while one is worked. A manual written new is written without it
 (`docs/conventions/agent-arrangement/` §5.6, *Rules files*). The
-Foundation Line rides in the frontmatter of every shipped Agent Skill
+Foundation Line sits in the frontmatter of every shipped Agent Skill
 and Agent Rule, read by whoever opens the file, because a claim about
 what a file stands on has to travel with the file.
 
@@ -318,7 +334,7 @@ what a file stands on has to travel with the file.
   from it stays in agreement** — `docs/conventions/facts-in-sync/`.
 - **The Repo Tag a citation carries, and the records a project keeps** —
   `docs/conventions/project-recording/`.
-- **How an Agent Rule or a skill reaches an agent, and which paths are the
+- **How an Agent Rule or an Agent Skill reaches an agent, and which paths are the
   arrangement's** — `docs/conventions/agent-arrangement/`.
 - **What an Output Shape is and how one lives** — `docs/conventions/shapes/`.
   The form of a manual is an Agent Rule held here, not an Output Shape.
@@ -329,7 +345,7 @@ what a file stands on has to travel with the file.
 
 ## Where to look
 
-- The chain: `docs/conventions/README.md`.
+- The order the conventions act in: `docs/conventions/README.md`.
 - The rule for every description: `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*.
 - What `foundation` holds for each kind of file: §1.3, *The Foundation Line*, above; that
   it travels with a copy, `docs/conventions/exchange/` §3.5, *The Foundation Line in a copy*.
