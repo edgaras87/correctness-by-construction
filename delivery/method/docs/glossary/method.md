@@ -86,9 +86,9 @@
 ## The method's
 
 - **Demonstration Mode** — CBC Framing with its reasoning fully shown,
-  to teach the moves; every verdict stays the human's
+  to teach the moves; every verdict stays the reviewer's
   (`.claude/skills/cbc-framing/SKILL.md`).
-- **Delegated-Verdict Mode** — CBC Framing with the human's verdicts
+- **Delegated-Verdict Mode** — CBC Framing with the reviewer's verdicts
   handed to the agent, by a decision recorded in the CBC Run's
   Decisions Log (`.claude/skills/cbc-framing/SKILL.md`).
 - **Falsifiable Promise Audience** — who the Falsifiable Promise is
@@ -122,7 +122,7 @@
 - **Enemy Census Saturation** — the Enemy Census's end: two Enemy
   Census Probes in a row find no new Enemy Fact
   (`.claude/skills/cbc-framing/references/cbc-framing-workflow.md`).
-- **Enemy Census Audit Checklist** — the human's four questions for
+- **Enemy Census Audit Checklist** — the reviewer's four questions for
   checking the agent's Enemy Census
   (`.claude/skills/cbc-framing/references/cbc-framing-workflow.md`).
 - **Enemy Census Gap** — a place the Enemy Census did not examine,

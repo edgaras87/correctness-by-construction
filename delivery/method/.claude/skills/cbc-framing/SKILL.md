@@ -1,243 +1,301 @@
 ---
 name: cbc-framing
-description: Frame a new backend system with correctness-driven design - turn a raw project idea into one falsifiable promise, a layered system definition (five layers), and a registry of provable slices, BEFORE any code or tech choices. Use this whenever the user wants to start, design, or plan a backend/service where being wrong is expensive (orders, payments, inventory, bookings, anything owning facts or money), mentions framing, a promise, invariants, idempotency, "what must never happen", CbC, or correctness-driven design - even if they just say "I have an idea for a service" or "help me design a backend". Do NOT use for throwaway prototypes, experiments, or low-stakes tools, and do not use for implementing code (that is cbc-slice, which runs only after framing AND bootstrap).
+description: Frame a new backend system with correctness-driven design. Turn a raw project idea into one Falsifiable Promise, a System Definition of five layers, and an Invariant Slice Registry, BEFORE any code or tech choices. Use this whenever the user wants to start, design, or plan a backend or service where being wrong is expensive, such as orders, payments, inventory, bookings, anything owning facts or money. Use it too when they mention framing, a promise, invariants, idempotency, "what must never happen", CbC, or correctness-driven design, even if they just say "I have an idea for a service" or "help me design a backend". Do NOT use for throwaway prototypes, experiments, or low-stakes tools. Do NOT use for implementing code: that is the cbc-slice Agent Skill, which runs only after CBC Framing AND the system's bootstrap.
 foundation: concept v1
 ---
 
-# CbC framing — one promise worked into a slice surface
+# CBC Framing — one Falsifiable Promise worked into an Invariant Slice Registry
 
-Turn a standing project idea into three artifacts: **intent** (the promise),
-**system definition** (its five layers), **slice registry** (the work, cut
-and ready). All paper — no code, no tech choices; the CBC Run's repo,
-born from Record Stubs, is the paper's home. A framing may honestly end in "no project"; that is a
-valid exit.
+Turn a standing project idea into three CBC Framing Exports:
 
-The full procedure is `.claude/skills/cbc-framing/references/cbc-framing-workflow.md` — read it before
-stage 0 and keep it open; this file is the operating rules, not a substitute.
-`.claude/skills/cbc-framing/references/worked-example.md` shows a complete framing of a tiny order
-service — consult it whenever unsure what a stage's output looks like.
-`.claude/skills/cbc-framing/references/the-whole-system-in-plain.md` is the one-page orientation if the
-user (or you) needs the whole method reloaded first.
+- the CBC Framing Intent: the Falsifiable Promise;
+- the System Definition: its five System Layers;
+- the Invariant Slice Registry: the work, cut and ready.
+
+Documents only: no code, no tech choices. They live in the CBC Run's
+repo, born from Record Stubs. A CBC Framing may honestly end in "no
+project". That is a valid exit.
+
+The full procedure is `.claude/skills/cbc-framing/references/cbc-framing-workflow.md`.
+Read it before Stage 0 and keep it open. This file is the operating
+rules, not a substitute.
+`.claude/skills/cbc-framing/references/worked-example.md` shows a
+complete CBC Framing of a tiny order service. Consult it whenever
+unsure what an Agent Skill Stage's output looks like.
+`.claude/skills/cbc-framing/references/the-whole-system-in-plain.md`
+is the one-page orientation, if the reviewer or you need the whole
+method reloaded first.
 
 ## The mode — non-negotiable
 
-Framing is **joint work**. You open each question and derive visibly; the
-human works it with you. The hard rule, from the method itself:
+CBC Framing is **joint work**. You open each question and derive
+visibly, and the reviewer works it with you. The hard rule, from the
+method itself:
 
-- **You never close a stage, never call saturation, never resolve a fork
-  alone.** Every exit is the human's verdict. Present your derivation, then
-  ask for the call.
-- A first-time walker may ask for **demonstration mode** — derive with
-  reasoning fully visible, teaching the moves. Even then, every verdict
-  stays human.
-- **Every "outside" is written.** Rejected candidate promises, refused
-  responsibilities, out-of-scope facts — recorded, never silently dropped.
-  Silence is the only forbidden channel.
+- **You never close an Agent Skill Stage, never call Enemy Census
+  Saturation, never resolve a fork alone.** Every exit is the
+  reviewer's verdict. Present your derivation, then ask for the
+  call.
+- A first-time CBC Framing may ask for **Demonstration Mode**: derive
+  with reasoning fully visible, teaching the moves.
+- **Every "outside" is written.** Rejected candidate promises, System
+  Refusals, facts out of scope: each is recorded, never silently
+  dropped.
 
-**Delegated-verdict mode.** A CBC Run may hand these verdicts to the
-agent — but only through an explicit decision recorded in the CBC Run's
-own records (its Decisions Log, `.claude/decisions.md`), naming what is delegated,
-why, and the cost accepted: the written derivation trail becomes
-the only review, so its legibility is part of the product. Every
-gate is still presented, decided, and recorded where the record
-scheme puts sign-offs — delegation changes who calls the verdict,
-never whether it is written. Absent that recorded decision, the
-default above stands: every verdict is the human's.
+**Delegated-Verdict Mode.** A CBC Run may hand these verdicts to the
+agent. It does so only through an explicit decision recorded in its
+own Decisions Log, `.claude/decisions.md`. The decision names what is
+delegated, why, and the cost accepted. The cost: the written
+derivation becomes the only review, so its legibility is part of the
+product. Every Agent Skill Stage's Exit is still presented, decided,
+and recorded where the records put sign-offs. Delegation changes who
+calls the verdict, never whether it is written. Without that
+recorded decision, the default above stands.
 
 ## The derivation order (not the presentation order)
 
 ```
-stage 0 choose the promise      (intent)               one claim, falsifiable, worth proving
-stage 1 what must be ours?      (LAYER-2-SYSTEM)       hostage test; refusals in writing
-stage 2 name the enemies        (LAYER-1-ENVIRONMENT)  census: vanishes / duplicates / lies
-stage 3 run the collisions      (LAYER-4-PROBLEMS)     facts × possessions → kills
-stage 4 sort into owners        (LAYER-3-AREAS)        only if collisions force divisions
-stage 5 check between owners    (LAYER-5-INTERACTION)  only if owners exist; else empty-with-reasons
-stage 6 cut the slice surface                          slices vs folds; registry
+Stage 0 choose the Falsifiable Promise  (CBC Framing Intent)   one claim, falsifiable, worth proving
+Stage 1 what must be ours?              (LAYER-2-SYSTEM)       System Possession Test; System Refusals in writing
+Stage 2 name the enemies                (LAYER-1-ENVIRONMENT)  Enemy Census: vanishes / duplicates / lies
+Stage 3 run the Enemy Collisions        (LAYER-4-PROBLEMS)     Enemy Facts × System Possessions → Enemy Collision Kills
+Stage 4 sort into owners                (LAYER-3-AREAS)        only if Enemy Collisions force Responsibility Areas
+Stage 5 check between owners            (LAYER-5-INTERACTION)  only if owners exist; else empty-with-reasons
+Stage 6 cut the Invariant Slice Registry                       Invariant Slices vs Invariant Slice Folds
 ```
 
-Run them in this order — each stage consumes exactly the previous stage's
-output. Upward corrections only as logged return trips (a census finding
-that reveals a missed possession → logged LAYER-2-SYSTEM revision),
-never scheduled polish passes.
+Run them in this order. Each Agent Skill Stage consumes exactly the
+previous one's output. An upward correction is made only as a CBC
+Framing Export Revision. Example: an Enemy Census finding that shows
+a missed System Possession becomes a logged revision of
+LAYER-2-SYSTEM. A scheduled re-read is never one.
 
-## Per-stage gates (check before asking the human to close a stage)
+## Each Agent Skill Stage's Exit
 
-- **Stage 0:** exactly one promise, one sentence, falsifiable — the breaking
-  scenario can be described concretely. The audience named as who the
-  claim is sold to (system consumers belong in the census); what done
-  demonstrably means stated. A second real purpose means the
-  intent is overloaded: force the choice. Bank rejected candidates.
-- **Stage 1:** every possession earned by the hostage test ("if someone else
-  owned this, could they break the promise?"); every refusal written with
-  the mirror test. Sketch-enemies are fine here — they are debt stage 2 pays.
-- **Stage 2:** facts only, concrete enough to attack with ("responses get
-  lost", never "networks are unreliable"), consequence-first. **A census is
-  not an assumption inventory** — list what can hurt, never what you trust,
-  outside the two labelled blocks the workflow allows beside the facts:
-  the trust assumptions, accepted deliberately and kept short — and
-  answering, either way, who besides the system can write what it
-  stores — and the runtime ground, the size the system is built for
-  among it. Exit only by saturation: two consecutive fresh probes
-  finding nothing new — the probe log recorded in LAYER-1-ENVIRONMENT.
-- **Stage 3:** each kill states **what dies, never how it's saved** — park
-  any mechanism the instant it surfaces. Land kills invariant-shaped with
-  adversity named, consumable by the slice workflow with zero translation.
-  Enemy-less contract-shaped concerns → fold-candidates, not slices.
-- **Stage 4:** a division is real only with separate state AND separate
-  decision authority. One area is a *confirmed* answer, not a gap. Name
-  seams that fail the bar; refuse to draw them.
-- **Stage 5:** empty is fine — but empty **with its reasons**, each traced to
-  a prior decision.
-- **Stage 6:** two kills are two slices only if their evidence must create
-  *different adversity*. Folds ride into the spec of the slice consuming
-  them. The registry carries the fold-reconciliation line (concerns ↔
-  slices + folds — nothing silently dropped) and a chosen-next slice.
-  Ordering is an expectation, re-decided at each slice close.
+Check these before asking the reviewer to close an Agent Skill Stage.
 
-## The record — the exports, and one derivation doc
+- **Stage 0:** exactly one Falsifiable Promise, one sentence,
+  falsifiable: the scenario that breaks it can be described
+  concretely. The **Falsifiable Promise Audience** is named: who the
+  claim is sold to. Those who only use the system belong in the
+  Enemy Census. What done demonstrably means is stated. A second real
+  purpose means the CBC Framing Intent is overloaded: force the
+  choice. Record the rejected candidates.
+- **Stage 1:** every System Possession passes the **System Possession
+  Test**: if someone else owned this, could they break the
+  Falsifiable Promise? Every System Refusal is written with the
+  **System Refusal Test**: can the Falsifiable Promise stay true if
+  this goes wrong elsewhere? Yes means refused. **Enemy Sketches**,
+  rough enemies, are fine here. Stage 2 replaces them with Enemy
+  Facts.
+- **Stage 2:** Enemy Facts only, concrete enough to attack with
+  ("responses get lost", never "networks are unreliable"),
+  consequence first. **An Enemy Census is not a list of
+  assumptions.** List what can hurt, never what you trust. The
+  workflow allows two labelled blocks beside the Enemy Facts:
+  - the Trust Assumptions, accepted deliberately and kept short.
+    Either way, they answer who besides the system can write what it
+    stores;
+  - the Runtime Ground, with the size the system is built for.
 
-**The briefing comes first.** Framing opens by committing it,
-unchanged, at `docs/system/framing/briefing.md`: the problem as
+  Exit only by Enemy Census Saturation: two consecutive fresh Enemy
+  Census Probes find nothing new. The Enemy Census Probe Log is
+  recorded in LAYER-1-ENVIRONMENT.
+- **Stage 3:** each Enemy Collision Kill states **what dies, never
+  how it is saved.** Set any mechanism aside the moment it comes up.
+  Write each Enemy Collision Kill shaped as an invariant, its
+  adversity named, so the cbc-slice Agent Skill can take it with no
+  translation. A CBC Framing Concern with no enemy, shaped as a
+  contract, becomes an Invariant Slice Fold Candidate, not an
+  Invariant Slice.
+- **Stage 4:** a division is real only with separate state AND
+  separate decision authority. One Responsibility Area is a
+  *confirmed* answer, not a gap. Name the Responsibility Area Seams
+  that fail the test, and refuse to draw them.
+- **Stage 5:** empty is fine, but empty **with its reasons**, each
+  traced to an earlier decision.
+- **Stage 6:** two Enemy Collision Kills are two Invariant Slices
+  only if their evidence must create *different adversity*. That is
+  the Invariant Slice Split Test. An Invariant Slice Fold goes into
+  the Correctness Specification of the Invariant Slice that consumes
+  it. The Invariant Slice Registry carries the CBC Framing
+  Reconciliation: every CBC Framing Concern accounted for as
+  Invariant Slices and Invariant Slice Folds, nothing silently
+  dropped. It also carries one `chosen-next` Invariant Slice. The
+  order is an expectation, decided again at each Invariant Slice
+  Close.
+
+## The record — the CBC Framing Exports, and one CBC Framing Derivation
+
+**The CBC Run Briefing comes first.** CBC Framing opens by committing
+it, unchanged, at `docs/system/framing/briefing.md`: the problem as
 brought, in its own words. Anything private is removed before that
 commit, and the file's first line says what was removed. After it,
-the briefing is history, never edited. So a claim like "no
-divergence from the briefing" can be checked against it.
+the CBC Run Briefing is history, never edited. So a claim like "no
+divergence from the CBC Run Briefing" can be checked against it.
 
-**The glossary is already there:** `docs/glossary.md`, born with
-the CBC Run, holds the Glossary Names the delivered files are written
-in. Each thing framing defines, and each tag kind, gets its Glossary
-Name there, in one plain sentence, when framing first uses it. Every
-later record adds to it.
+**The glossary is already there.** `docs/glossary.md`, born with the
+CBC Run, holds this project's own Glossary Names. The Names the
+delivered files are written in arrive in `docs/glossary/`. Each thing
+CBC Framing defines, and each tag kind, gets its Glossary Name in
+`docs/glossary.md`, in one plain sentence, when CBC Framing first
+uses it. Every later record adds to it.
 
-**Each stage's result is written once, straight into its export,**
-when the human gives the verdict: the intent at stage 0, the
-definition's layer at stages 1 to 5, the registry at stage 6. The
-export is the result's only home; it carries a draft line at its
-top until the close. Example, in the definition: "FACT-CALLER-5. A
+**Each Agent Skill Stage's result is written once, straight into its
+CBC Framing Export,** when the reviewer gives the verdict: the CBC
+Framing Intent at Stage 0, the System Definition's layer at Stages 1
+to 5, the Invariant Slice Registry at Stage 6. The CBC Framing Export
+is the result's only home. It carries a draft line at its top until
+the close. Example, in the System Definition: "FACT-CALLER-5. A
 caller reuses an idempotency key with a different order body → a
 lie: 'this is a repeat' when it isn't."
 
-**The derivation keeps how each stage ran:**
-`docs/system/framing/derivation.md`, nested beside the truth it
-earns, kept as the archive forever, never deleted. It links to each
-result and never restates it. Three rules:
+**The CBC Framing Derivation keeps how each Agent Skill Stage ran.**
+It is `docs/system/framing/derivation.md`, beside the CBC Framing
+Exports it leads to, kept as the archive forever, never deleted. It
+links to each result and never restates it. Three rules:
 
-1. **One section per stage:** what was considered, the probes, the
-   dead ends, the human's questions, and the verdict, written
-   inline where it happens; then a link to where the result lives.
-   Example: "Stage 2. Considered 'a caller resends a key with only
-   the quantity changed'; folded into FACT-CALLER-5. Asked: is a
-   changed quantity the same fact as a changed delivery address?
-   Yes: both are a different body under a reused key. Verdict:
-   accepted. Results: definition, LAYER-1-ENVIRONMENT."
-2. **A section freezes at its verdict.** Append-only after that. A
-   return trip changes the export, and adds one line here: what
-   changed, and why.
-3. **The escape valve:** a genuinely bulky mechanical sweep may
-   live as a referenced appendix file beside it in the same
-   directory, plain-named (`collision-grid.md`, say), carrying
-   sweep output only, never decisions. The doc stays the single
-   record of how the framing ran.
+1. **One section per Agent Skill Stage:** what was considered, the
+   Enemy Census Probes, the dead ends, the reviewer's questions, and
+   the verdict, written inline where it happens. Then a link to where
+   the result lives. Example: "Stage 2. Considered 'a caller resends
+   a key with only the quantity changed'; folded into FACT-CALLER-5.
+   Asked: is a changed quantity the same fact as a changed delivery
+   address? Yes: both are a different body under a reused key.
+   Verdict: accepted. Results: System Definition,
+   LAYER-1-ENVIRONMENT."
+2. **A section freezes at its verdict.** It is append-only after
+   that. A CBC Framing Export Revision changes the CBC Framing
+   Export, and adds one line here: what changed, and why.
+3. **The one exception:** a bulky mechanical sweep may live in a
+   **CBC Framing Derivation Appendix**, a file beside it in the same
+   directory, plainly named (`collision-grid.md`, say). The file
+   carries sweep output only, never decisions. The CBC Framing
+   Derivation stays the single record of how the CBC Framing ran.
 
-Where each record kind lives: framing verdicts — inline here; a
-delegation arrangement — the CBC Run's Decisions Log (agent
-setup, not project truth); the framing's adoption — one ADR in the
-CBC Run's `docs/adr/` at close.
+Where each kind of record lives:
+
+- CBC Framing's verdicts: inline in the CBC Framing Derivation;
+- a delegation arrangement: the CBC Run's Decisions Log, since it is
+  agent setup, not project truth;
+- the CBC Framing's adoption: one ADR in the CBC Run's `docs/adr/`,
+  at the close.
 
 ## Export and handoff
 
-At close, **check that each export reads alone**, then remove its
-draft line. Nothing is composed or copied: a result copied from
-one file to another drifts, and a rewording can turn true into
-false. The **residue filter** holds throughout: an export never
-references the derivation doc's machinery — conclusions stand
-re-grounded in the exports themselves. The same filter refuses
-**agent language**: nothing in an export names this skill, a
-workflow stage, or the CBC Run's arrangement — a reader without the
-skills directory must not need it to read them. Default export
-practice: **commit in derivation order** — the intent; the system
-definition growing LAYER-2-SYSTEM → LAYER-1-ENVIRONMENT →
-LAYER-4-PROBLEMS → LAYER-3-AREAS → LAYER-5-INTERACTION, each
-stage's result committed at its verdict; the registry; the adoption
-record; the README last (the surface derives from committed
-internals) — so the CBC Run's own history tells the derivation
-story. The order is the commits', not the file's: each layer
-commit places its section where the workflow presents it, so the
-definition ends LAYER-1-ENVIRONMENT to LAYER-5-INTERACTION,
-outside-in, and no reorder is needed after. Skipping the sequence
-is off-default: log why.
+The three CBC Framing Exports live under `docs/system/`, the
+internal truth at one path:
 
-The three artifacts, under `docs/system/` — internal truth as one
-nameable path:
+- `intent.md`: the Falsifiable Promise, and the candidates rejected;
+- `definition.md`: the five System Layers, each filled or empty with
+  reasons;
+- `registry.md`: the Invariant Slices, the Invariant Slice Folds, the
+  CBC Framing Reconciliation and the `chosen-next` Invariant Slice.
 
-- `intent.md` — the promise + banked rejections
-- `definition.md` — the five layers, each filled or empty-with-reasons
-- `registry.md` — slices + folds + reconciliation line + chosen-next
+At the close, **check that each CBC Framing Export reads alone**, then
+remove its draft line. Nothing is composed or copied. A result copied
+from one file to another drifts, and a rewording can turn true into
+false.
 
-**The registry's outcomes** (what the file must carry, whatever its
-layout): every slice entry states its invariant, the adversity its
-evidence must *create*, its owning area, the kills it covers, and
-what it presumes already stands; statuses are trustworthy
-(`open · chosen-next · in-progress · closed (date, evidence)`);
-riders and flags ride the entry they guard; any
-grouping is headings for the reader, never a boundary; the
-reconciliation line accounts for every kill and states even its
-absences (the written zero); exactly one slice is chosen-next
-while open work remains. The default layout is the
-Skill Template `.claude/skills/cbc-framing/templates/registry.md`.
-Declining it is **off-template**:
-derive your own layout from the outcomes above, and the rest is
-(`.claude/rules/delivered-copies.md`, rule 8, *A Skill Template is
-copied and filled*).
+The **CBC Framing Export Filter** holds throughout: a CBC Framing
+Export never refers to the CBC Framing Derivation's machinery. Its
+conclusions stand on the CBC Framing Exports themselves. The same
+filter refuses **Agent Language**: nothing in a CBC Framing Export
+names this Agent Skill, a workflow stage, or the CBC Run's
+arrangement. A reader without the Agent Skills directory must not
+need it to read them.
 
-**The exports are living records, not write-once.** The registry
-already lives (statuses change at every slice close); the other two
-stay true the same way: when later work changes what an export
-claims — a named breach closes (intent's staging honesty), a
-downstream stage surfaces facts the definition must carry — the
-export is updated **only through a logged revision entry** (dated:
-what changed, why, what triggered it), the framing's own
-return-trip discipline extended past close. Silent edits and stale
-claims are the same forbidden channel.
+By default, **commit in derivation order:**
 
-**The README — the projected surface.** The CBC Run's README is
-**derived from the three exports, never authored on its own**:
-every claim on it has a master in `docs/system/`. A fact the
-reader needs that lives only in the derivation record marks a gap
-in the exports — fix the export first, then re-derive; a surface
-patched independently is a second master, and two masters diverge.
-What each piece derives from:
+1. the CBC Framing Intent;
+2. the System Definition, growing LAYER-2-SYSTEM → LAYER-1-ENVIRONMENT
+   → LAYER-4-PROBLEMS → LAYER-3-AREAS → LAYER-5-INTERACTION, each
+   Agent Skill Stage's result committed at its verdict;
+3. the Invariant Slice Registry;
+4. the adoption record;
+5. the README, last, since it derives from what is committed.
+
+So the CBC Run's own history tells the derivation story. The order
+is the commits', not the file's. Each layer's commit places its
+section where the workflow presents it, so the System Definition ends
+LAYER-1-ENVIRONMENT to LAYER-5-INTERACTION, from the outside in, and
+no reorder is needed after. Skipping the order departs from the
+default: log why.
+
+**The Invariant Slice Registry's outcomes,** what the file must
+carry, whatever its layout:
+
+1. every Invariant Slice Entry states its invariant, the adversity
+   its evidence must *create*, its owning Responsibility Area, the
+   Enemy Collision Kills it covers, and what it presumes already
+   stands;
+2. its statuses are trustworthy:
+   `open · chosen-next · in-progress · closed (date, evidence)`;
+3. an Evidence Precondition, a condition the Invariant Slice checks
+   but never attacks, and an Adversity Flag, an adversity that
+   cannot be created the normal way, sit on the entry they concern;
+4. any grouping is headings for the reader, never a boundary;
+5. the CBC Framing Reconciliation accounts for every Enemy Collision
+   Kill, and states even its absences, the written zero;
+6. exactly one Invariant Slice is `chosen-next` while open work
+   remains.
+
+The default layout is the Agent Skill Template
+`.claude/skills/cbc-framing/templates/registry.md`. Declining it is
+off-template: derive your own layout from the outcomes above. The
+rest is (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill
+Template is copied and filled, never edited in place*).
+
+**The CBC Framing Exports are living records, not written once.** The
+Invariant Slice Registry already lives: its statuses change at every
+Invariant Slice Close. The other two stay true the same way. Later
+work may change what a CBC Framing Export claims. A gap the CBC
+Framing Intent named may close, or a later Agent Skill Stage may find
+facts the System Definition must carry. Then the CBC Framing Export
+is updated **only through a CBC Framing Export Revision**: dated,
+saying what changed, why, and what set it off. It is the same rule
+as during CBC Framing, kept after its close.
+
+**The README, derived from the CBC Framing Exports.** The CBC Run's
+README is **derived from the three CBC Framing Exports, never written
+on its own.** Every claim on it has its home in `docs/system/`. A
+fact the reader needs that lives only in the CBC Framing Derivation
+marks a gap in the CBC Framing Exports. Fix the CBC Framing Export
+first, then derive the README again. A README patched on its own is
+a second home, and two homes diverge. What each piece derives from:
 
 | From | Becomes | How much |
 |---|---|---|
-| the intent | why this exists | one paragraph |
-| the definition's owned-and-refused | what this is | one paragraph, no parts named |
-| the registry | the planned invariants | one line per invariant |
+| the CBC Framing Intent | why this exists | one paragraph |
+| the System Definition's System Possessions and System Refusals | what this is | one paragraph, no parts named |
+| the Invariant Slice Registry | the planned invariants | one line per invariant |
 | the method | a note that points | two lines, never a restatement |
 | the repo's observable state | an honest status line | one line |
 
-Depth is a routing link into the exports, never more prose. At
-framing close the thin README is the whole public surface — with
-the masters one click away, a public restatement fails: the reader
-clicks into the master instead. A CBC Run whose conditions differ may
-rebut this, off-default, logged. The README refreshes the way it
-was born: event-driven at milestones (a slice close moves the
-status line), re-derived from the masters, never patched in place.
-The residue filter applies with full force: the surface tells what
+Depth is a link into the CBC Framing Exports, never more prose. At
+the CBC Framing close, the thin README is the whole public page. With
+each home linked, a restatement in the README fails: the reader reads
+the home instead. A CBC Run whose conditions differ may argue against
+this, departing from the default, logged. The README is refreshed at
+milestones: an Invariant Slice Close moves the status line. The CBC
+Framing Export Filter applies with full force: the README tells what
 the system is and guarantees, never how the work ran.
 
-Then say this explicitly to the user: **the handoff is to the ground and
-the bootstrap, not to slicing.** Between framing and the first slice sits
-real project work — the ground the system runs on, its store among it;
-then the skeleton and its adversity harness — defined by the readiness
-checklist (`.claude/skills/cbc-slice/references/system-readiness.md`). Slicing
-begins only when the human signs off readiness; the cbc-slice skill will
-check.
+Then say this to the reviewer plainly: **the handoff is to the
+Runtime Ground and the skeleton, not to Invariant Slices.** Between
+CBC Framing and the first Invariant Slice sits real project work:
+
+- the Runtime Ground the system runs on, its store among it;
+- then the skeleton and its Adversity Harness.
+
+System Readiness defines it
+(`.claude/skills/cbc-slice/references/system-readiness.md`). Invariant
+Slice work begins only when the reviewer signs off System Readiness.
+The cbc-slice Agent Skill will check.
 
 ---
 
 ## Decisions
 
-- ADR-0008 — *Export and handoff*: the registry's default layout is
-  a Skill Template, copied and filled
+- ADR-0008 — *Export and handoff*: the Invariant Slice Registry's
+  default layout is an Agent Skill Template, copied and filled
