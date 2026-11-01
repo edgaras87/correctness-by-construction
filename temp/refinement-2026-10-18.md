@@ -4401,6 +4401,12 @@ Twelve decisions, DECISION-41 to DECISION-52, for what recurs or what needs the 
 - Recommended: (a). The concept holds, and the change stays in the method.
 - Chosen: (a), by the reviewer, 2026-11-01, as recommended.
 
+**DECISION-53.** One commit plan for each Refinement Round. Rests: the work of all 385 findings. `.claude/approaches-on-trial/refinement.md` §2.7 asks for a commit plan for each Refinement Layer. Every one of the 18 pairs of Refinement Round and Refinement Layer has findings, from 2 to 62, so that is 18 plans and 36 commits that only open and close them.
+- (a) One plan for each Refinement Layer, as §2.7 asks.
+- (b) One plan for each Refinement Round, its layers in order inside it, each layer's commits split when the layer opens and its endings committed at its end.
+- Recommended: (b). The order, sources before what derives from them, and the stop at every commit both stay; 6 commits open and close plans, not 36. Asked by the reviewer, 2026-11-01, after round 1's layer 1 plan was opened (`f92d6b7`).
+- Chosen: (b), by the reviewer, 2026-11-01. A departure from §2.7, carried as a lesson for the Approach on Trial at the refinement's close.
+
 The agent's calls, on the single questions, each a fix unless said:
 - FINDING-1416: the third kind takes the Idea Model's word, Output Forms, as ADR-0078 decision 1 did; an Agent Skill Template travels inside its Agent Skill.
 - FINDING-1429: the example names a gate item that exists.
