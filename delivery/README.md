@@ -78,7 +78,7 @@ and the header comments are the Record Stubs' own form.
 
 ## 5. What a CBC Run does not get
 
-Its own decisions, the files that run its system and its own versioning: they
+Its own decisions, its own `temp/RUN-n.md` files that brief the next CBC Run, and its own versioning: they
 are the CBC Run's to make. Nor the agent definitions of the archive
 repo the concept came from, since the Agent Skills carry the method
 whole (ADR-0006). A CBC Run on another stack

@@ -20,8 +20,8 @@ What sets the comparison apart is the
 failure mode only a picture has: *a notation that asserts something
 you did not mean*, and what that has cost.
 
-Its steps are copied into a fresh `temp/` draft each time, never
-followed in place.
+Kind: an Agent Skill copied into a fresh draft each time, never
+run in place.
 
 ## 1. When this fires
 

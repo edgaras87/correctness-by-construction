@@ -107,7 +107,7 @@ own small commits.
    yet" lines, Glossary Names missing from the project's glossary. One
    commit per record that changes.
 3. **The stop rule.** If pass 2 changed only wording, the pass
-   ends. If it changed a fact, a link or a count, pass 3 runs over those
+   ends. If it changed a fact, pass 3 runs over those
    records only, and the pass ends there.
 
 **A tool that edits text** (a replace, a move) is checked on what
