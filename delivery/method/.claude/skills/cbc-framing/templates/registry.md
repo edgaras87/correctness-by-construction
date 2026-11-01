@@ -31,9 +31,9 @@ Status values: `open` · `chosen-next` · `in-progress` ·
 - **Area:** <owner from LAYER-3-AREAS>. **Kills covered:**
   <KILL-ids from LAYER-4-PROBLEMS>.
 - **Folds in:** <definitions this slice consumes first; or "none">
-- **Rider:** <a structural condition checked, never battle-tested,
+- **Evidence Precondition:** <a structural condition checked, never tested under adversity,
   whose silent violation voids this slice's evidence; or "none">
-- **Flag riding:** <what cannot be staged the normal way — name the
+- **Adversity Flag:** <what cannot be staged the normal way — name the
   unusual form of evidence here, so the consumer inherits the warning,
   not the surprise; the slice answers it by name in its
   specification, staged or removed with the removal shown; or
@@ -58,8 +58,8 @@ tell empty from forgotten.
 - **Adversity to create:** <…>
 - **Area:** <…>. **Kills covered:** <…>.
 - **Folds in:** <…>
-- **Rider:** <…>
-- **Flag riding:** <…>
+- **Evidence Precondition:** <…>
+- **Adversity Flag:** <…>
 - **Presumes:** <…>
 - **Judgment logged:** <…>
 - **Record:** <…>
