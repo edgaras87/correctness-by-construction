@@ -4454,6 +4454,37 @@ Left to the reviewer alone, with no call:
 - **FINDING-1444:** what a held edit becomes at a Delivery Take. It is how the exchange works, not how its text reads.
 - **FINDING-1487:** `temp/run-6-handoff/`, tracked and named by no TODO item or Plan Step: an item names it, or it goes.
 
+### DECISION-49's pass
+
+The ending of each TODO item whose trigger looked passed, drafted by the agent and taken by the reviewer, 2026-11-01. Lines are `TODO.md`'s at `1ce79f9`. CBC Run 5's CBC Run Reading exists; its work waits in the stopped Plan Step "Take CBC Run 5's lessons for CBC Run 6". The TODO edits land with round 1's layer 4.
+
+**Re-aimed at work already planned:**
+- **A commit plan's look-back (77):** at CBC Run 5's reading's WORK-17, which gives it FINDING-9 and D18. The Context says what CBC Run 5 did: 13 look-back lines, 0 tries (FINDING-1490).
+- **Examples in the concept (99):** at WORK-17, which gives it the worked-example section. "271 lines" becomes 328.
+- **How work is run by agents (117):** at WORK-17, which gives it that CBC Run 5 delegated nothing.
+- **Evaluate auto-run (190):** at WORK-10's landing, which puts the reading's nine lessons into auto-run. "Used once" becomes "used twice" (FINDING-1493).
+
+**Re-aimed at a new trigger:**
+- **Run this repo's retrospective (676):** the refinement Plan Step's close. The two manuals point at this item, by DECISION-48.
+- **Release concept v2 (917):** "the reviewer names it, after the refinement's close".
+- **The Infrastructure Contract's facility paragraph (981):** "a CBC Run Reading finds a CBC Run writing it unprompted". The Context says CBC Run 5's reading has nothing on it.
+- **A level for System Guarantees held by absence (1187):** the same, with the same note.
+
+**Closed:**
+- **Give the method a glossary (1015):** `delivery/method/docs/glossary/method.md` does it (ADR-0078). What is left, a stranger meeting the words in the chapters, goes to Release concept v2's README item.
+- **Whether the worked example anchors a CBC Run's CBC Framing (1165):** CBC Run 5 framed another kind of problem, two Responsibility Areas and a LAYER-5 not empty (its reading, §4). The second example's idea moves to the examples item.
+- **Whether the next Newborn CBC Run adds the ground-must-be-up rule (740):** into "Read CBC Run 6", as one idea: CBC Run 5's and CBC Run 6's Entry Files.
+- **CBC Run 5's first Invariant Slice against the Evidence Test Shape (727):** into CBC Run 5's reading, whose FINDING-23 and 30 are what the Plan Step Gate found. Uncertain: whether they cover the whole comparison is checked at the fix.
+
+**Still waiting, wording only:**
+- **A sweep for one home (267)** and **which ideas are Idea Models (751):** the trigger becomes "the refinement's close"; Round 2's condition is met.
+- **A delivery's path check (685):** the trigger stands; the Context's "the next CBC Run Birth is where they first land" says they landed at CBC Run 5's.
+- **Read CBC Run 4 (414):** stands. Line 433 quotes other items' triggers inside a question, so left E7's line 433 is declined.
+- **Skill Template (885):** stands. "Only some say" is true, inside an idea, so left E10 is declined.
+
+**To check at the fix:**
+- **A standing full read for missing Fact References (803):** `git blame` on the Dependencies findings missed at a change. If any line is newer than 2026-10-27, the trigger has fired, and the item is re-aimed at the refinement's close with those findings as evidence. Its "once the settled form is written" goes either way (left E9).
+
 ### The read's counts
 
 385 findings:
