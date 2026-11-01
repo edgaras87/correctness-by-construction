@@ -23,7 +23,7 @@
      §14, Conversation Memory).
      foundation: the project-recording convention -->
 
-# TODO's conversation-memory
+# TODO's Conversation Memory
 
 ## 2. How an approach and a shape divide an output
 

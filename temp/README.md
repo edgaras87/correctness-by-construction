@@ -1,12 +1,12 @@
 # temp/ — drafts and kept files
 
-What lives here is a draft on its way somewhere else, or a file
-kept for work still to come.
+What lives here is a draft of a text whose home is elsewhere, or a
+file kept for work still to come.
 
-- **A draft:** a Delivery Note on its way to a CBC Run, a CBC Run Reading written from
-  one, a CBC Run Briefing being written before it goes to a CBC Run, an
-  evaluation of this repo while the Change Sets that fix it work through
-  it.
+- **A draft:** a Delivery Note not yet staged, a CBC Run Reading of a
+  CBC Run, a CBC Run Briefing being written before it goes to a CBC
+  Run, the refinement's file, while the Change Sets that fix what it
+  found are worked.
 - **A kept file:** context that work not yet due rests on, such as
   a CBC Run Hand-off a coming CBC Run Reading starts from. A TODO item or the open
   Plan Step names it.

@@ -8,14 +8,14 @@ Format: [Keep a Changelog](https://keepachangelog.com/) · Versions are
 concept versions — whole numbers, not SemVer (ADR-0003).
 
 <!-- Write entries WHEN the change lands, for the pinners: CBC Runs
-     and skills citing a concept version. A version bump = a change
+     and Agent Skills citing a concept version. A version bump = a change
      that could invalidate a derived Agent Skill; editorial fixes go
      in the next version (ADR-0003). Categories:
      Added · Changed · Removed · Fixed.
      Releasing = rename [Unreleased] to [vN] - date, open a fresh one.
      [Unreleased] is the net change since the last release: a later
      change that undoes or reshapes an entry in it edits that entry,
-     never adds a second. An entry is the concept, or a skill
+     never adds a second. An entry is the concept, or an Agent Skill
      derived from it or checked against it; a convention's change,
      or the delivery's, is none — a manual has no version
      (ADR-0039).
@@ -28,35 +28,37 @@ concept versions — whole numbers, not SemVer (ADR-0003).
 ### Added
 
 - **The method**, derived from concept v1:
-  - `cbc-framing`: an idea worked into one Falsifiable Promise, a
-    System Definition and an Invariant Slice Registry;
-  - `cbc-slice`: one invariant carried through specify, plan, build
+  - the cbc-framing Agent Skill: an idea worked into one Falsifiable
+    Promise, a System Definition and an Invariant Slice Registry;
+  - the cbc-slice Agent Skill: one invariant carried through specify, plan, build
     and document, until a test that creates its adversity shows it
     holds.
 
-  Each with its workflow, a worked example, and the registry template
-  or readiness checklist it hands on (ADR-0008). Beside them, the
-  Output Shapes their Plan Step Gates read: an Invariant Slice
-  Record, an Evidence Test, an Enemy Collision Kill and an Invariant
-  Slice Entry, from CBC Run 3's records (ADR-0052).
-- **The stack practice**, checked against concept v1 and not derived
-  from it: `infra-establish`, `infra-serve` and `cbc-bootstrap`, for
+  Each with its workflow, a worked example, and the Agent Skill
+  Template of the Invariant Slice Registry or System Readiness's
+  checklist it hands on (ADR-0008). Beside them, the Output Shapes
+  their Plan Step Gates read: the Invariant Slice Record Shape, the
+  Evidence Test Shape, the Enemy Collision Kill Shape and the
+  Invariant Slice Entry Shape, from CBC Run 3's records (ADR-0052).
+- **The Stack Group**, checked against concept v1 and not derived
+  from it: the infra-establish, infra-serve and cbc-bootstrap Agent
+  Skills, for
   a Spring and PostgreSQL CBC Run, with the Agent Skill Templates a
   CBC Run fills and then owns (ADR-0029).
 
 ### Changed
 
 - **The Structural Walls chapter, harvested from CBC Run 3
-  (`never-oversold`) — the concept becomes v2.** The top rung of the
+  (`never-oversold`) — the concept becomes v2.** The top of the
   Structural Wall ranking is the store's refusal: a constraint, or a
   right withheld from the identity that writes. A new paragraph says
   who each Structural Wall leaves unbound: whoever can remove it. So
   the described adversary says who besides the system may write what
-  it stores. A single entry path is a Structural Wall only where that
+  it stores. A single checked entry path is a Structural Wall only where that
   answer names it the only writer. A plan derived from v1 could hold
   such a path as a Structural Wall with no answer behind it
-  (ADR-0048). `cbc-slice` and `cbc-framing` state
-  the ranking anew.
+  (ADR-0048). The cbc-slice and cbc-framing Agent Skills state the
+  ranking anew.
 - Chapter 03's sentence on when technology enters, corrected from
   the CBC Runs: after CBC Framing, each choice answerable to the
   Invariant Slice Registry — not "with the first slice". Editorial.
