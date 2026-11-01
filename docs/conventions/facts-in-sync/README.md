@@ -11,16 +11,21 @@ stays in agreement with it.**
 
 So that a fact read anywhere in a repo is the fact as its home
 states it today, and a change at the home reaches every line that
-relies on it. What went wrong without it: duplicated facts
-diverged, and diverged records stopped being trusted; the
-handbook's entry file held three disagreeing copies of one rule
-(`docs/conventions/agent-arrangement/`, *What it is for*); CBC Run 3
-told one Plan Step's story in four records (its RETRO.md, D1). The rules
-against it were written early, but spread over two manuals,
-project-recording's and the conventions manual. Refinement Round 2 of the
-refinement found its One home and Dependencies kinds standing on
-rules split that way, and the rules came here before it read
-(ADR-0065).
+relies on it. What went wrong without it:
+
+- duplicated facts diverged, and diverged records stopped being
+  trusted;
+- the handbook's Entry File held three disagreeing copies of one rule
+  (`docs/conventions/agent-arrangement/`, *What it is for*);
+- CBC Run 3 told one Plan Step's story in four records: PLAN, the
+  devlog, the Invariant Slice Record and the commits (its RETRO.md,
+  D1).
+
+The rules against it were written early, but spread over two
+manuals, the project-recording manual and the conventions manual.
+Refinement Round 2 found the One home and Dependencies Finding Kinds
+standing on rules split that way, and the rules came here before it
+read (ADR-0065).
 
 ## What this is made usable as
 
@@ -51,8 +56,8 @@ id, such as SLICE-4 or KILL-12, is a CBC Run's Fact Reference, written
 bare. When the fact changes at its home, the CBC Run greps the id and
 re-reads each line that carries it, in the same commit (ADR-0070).
 A CBC Run cannot open this repo's manuals, so a shipped line that relies
-on one stands alone (§3.1, *What a Fact Reference is*). The Change Walk and the disagreement (§4, *A Canonical
-Description's rule*; §5, *A disagreement*) reach a CBC Run as the Exchange Convention's Run Reading of what it sends back
+on one stands alone (§3.1, *What a Fact Reference is*). A CBC Run meets the Change Walk and the disagreement (§4, *A Canonical
+Description's rule*; §5, *A disagreement*) through the CBC Run Reading we write of what it sends back
 (`docs/conventions/exchange/` §6, *Up from the CBC Run*).
 
 ### The Concept Deliverer's seat
@@ -71,19 +76,19 @@ whether it says where (ADR-0070).
 ## 1. One home
 
 Each fact has one home; other texts *link* to it, and copy it only
-as a follower. Duplicated facts diverge, and diverged records stop
-being trusted. In practice:
+as a follower. In practice:
 
 - **A summary says it is one.** It names its owner, and nobody
   reads it in the owner's place.
 - **A fact changes at its home.** The links to it do not change,
   unless the home itself moves. Each retelling whose Fact Reference
   names it is found and re-read, with the paragraph around it; a
-  retelling whose host is itself a source walks on.
+  retelling whose host is itself a Canonical Description is walked in
+  turn.
 - **A copy is a follower.** One is the owner and the other follows
-  it: where two copies cannot be avoided, as the version in the
-  build file is followed by the CHANGELOG, or where the reader acts
-  on the fact in place, retold beside its Fact Reference. A follower
+  it. Two cases: a copy that cannot be avoided, as the CHANGELOG
+  follows the version in the build file; and a retelling beside its
+  Fact Reference, where the reader acts on the fact in place. A follower
   carries a Fact Reference to the home (§3.1, *What a Fact Reference is*). Without one it is a
   second home.
 - **History is not a second home.** The devlog, closed ADRs, commit
@@ -104,10 +109,10 @@ being trusted. In practice:
 A convention's subject is stated in its manual and nowhere else.
 Text that touches the subject points at the manual and does not
 restate it: another manual, the index, `ARCHITECTURE.md`, an ADR's
-context, an entry file. Text that makes the subject usable derives
+context, an Entry File. Text that makes the subject usable derives
 from the manual and names it in `foundation`. Two relations, two
-verbs — point and derive — and a reader who finds the subject stated
-twice has found a defect; the measured case is `docs/conventions/agent-arrangement/`'s, its
+verbs: point and derive. A reader who finds the subject stated
+twice has found a defect. The measured case is `docs/conventions/agent-arrangement/`'s, its
 *What it is for*. A retelling with a Fact
 Reference to its section, where the reader acts on it in place, is
 a follower, not a second statement (§1, *One home*; ADR-0059).
@@ -126,7 +131,7 @@ relies on. The line above relies on a claim about agents, so it
 names the Agent Model, not a convention that applies the claim.
 
 That home sits at the line's own level or above: a Canonical Description's
-line points at a Canonical Description or an Idea Model, never at a skill or a
+line points at a Canonical Description or an Idea Model, never at an Agent Skill or a
 record for a fact. A line that only names a text, such as the
 record a manual describes, is not a Fact Reference, and names any
 level (`docs/models/idea-to-output.md` §3.2, *The direction of a link*).
@@ -155,9 +160,9 @@ only addresses, such as a manual's *What this does not cover* and
 in it still carries its title.
 
 The path runs from the repo root, so a document finds everything
-pointing at it with one grep. A skill names its own files the same
-way: two skills may hold a file of the same name. The number lands
-the reader on a paragraph rather than a wall. The title says what is
+pointing at it with one grep. An Agent Skill names its own files the same
+way: two Agent Skills may hold a file of the same name. The number lands
+the reader on a paragraph rather than on the whole document. The title says what is
 there without opening it, and a number and title that no longer
 match show a stale reference. A section's title is 30 characters or
 fewer and is carried whole (`docs/conventions/writing/` §2, *Why each
@@ -185,9 +190,9 @@ change.
 
 ### 3.2 Numbering a section's parts
 
-A section divided into labelled parts numbers them, `### N.M`, and
-so does every section of the same form in the document, whether
-anything points there yet or not: a Fact Reference names the
+A section divided into labelled parts numbers them, `### N.M`. So
+does every section of the same form in the document, whether
+anything points there yet or not. A Fact Reference names the
 number, and a reader meets one structure throughout. Bold emphasis
 inside running prose is not a part. A bold-led bullet is a part when
 it holds a paragraph of its own, with its own reason or story.
@@ -244,27 +249,26 @@ both Convention Seats:
 
 ## 4. A Canonical Description's rule
 
-This page included. A Canonical Description is how we understand a thing
+A Canonical Description is how we understand a thing
 today, written down (`docs/models/idea-to-output.md` §2, *The kinds*): the
-concept, each Idea Model, each manual. It states what is true today; how it came to be
+concept, each Idea Model, each manual, this page included. It states what is true today; how it came to be
 is history's: the ADRs, the devlog and commit bodies. It may be
-wrong or incomplete, and it is
-canonical regardless — everything derived from it agrees with it
-until it changes, and it changes only for a reason recorded,
-practice being the evidence. What derives from it is not a
+wrong or incomplete. It is canonical regardless: everything derived
+from it agrees with it until it changes. It changes only for a reason
+recorded, and practice is the evidence. What derives from it is not a
 Canonical Description: it applies, it does not explain. The rule is the same
 for all of them, and this is where it is stated:
 
 1. A Canonical Description lists what derives from it. An Idea Model leaves its
    list to the grep in step 3: repos it never sees stand on it too.
 2. Each derived thing names its Canonical Description, once: one
-   `foundation` per file, its root, what the whole of it stands on.
+   `foundation` per file, the Foundation Line's document, what the whole of it stands on.
    Which files carry it, where, and what each holds is the conventions manual's
    (`docs/conventions/conventions/` §1.3, *The Foundation Line*). Every line that uses a part of
-   a document, its root included, carries a Fact Reference to that
-   part (§3.1, *What a Fact Reference is*), the root's parts as much as any other's.
-   Where all of a section's lines use one part of the root, the
-   section carries it once, not each line (ADR-0072). The root
+   a document, the Foundation Line's document included, carries a Fact Reference to that
+   part (§3.1, *What a Fact Reference is*).
+   Where all of a section's lines use one part of the Foundation Line's document, the
+   section carries it once, not each line (ADR-0072). The Foundation Line
    says which document to open when the file changes, and the whole
    file is re-read: that finds what no single line shows, a fact
    gone missing or a file that no longer holds together. A Fact
@@ -284,16 +288,14 @@ for all of them, and this is where it is stated:
    changes, the Change Walk runs again.
 
 Steps 1, 2 and the greps in 3 are checkable today: every shipped
-skill and Agent Rule carries `foundation`, every manual names what
+Agent Skill and Agent Rule carries `foundation`, every manual names what
 derives from it in *What this is made usable as*, and a path and a
 `foundation` value are tokens (`docs/conventions/conventions/` §1.3, *The Foundation Line*).
 The Foundation Check makes this repo do the rest, the re-reads in
 step 3 and steps 4 and 5, before every such commit
 (`.claude/rules/foundation-check.md`). Where a manual and the concept
-are handled differently — versioning, shipping, the kind of
-derivative, the Convention Seats, what each asserts — is ADR-0039; the
-concept's edges are ADR-0003 and `CHANGELOG.md`'s standing
-comment.
+are handled differently is ADR-0039; the concept's edges are ADR-0003
+and `CHANGELOG.md`'s standing comment.
 
 *Its story: devlog 2026-09-25, later; devlog 2026-10-29, the lessons' own stories: conventions and facts-in-sync; devlog 2026-10-19.*
 
@@ -302,10 +304,15 @@ comment.
 A derived thing, a Fact Reference or practice saying other than its
 Canonical Description: two linked texts that disagree, either of which may be
 the wrong one (`docs/models/idea-to-output.md` §3.3, *Settling a disagreement*). It is raised
-where it is found — a finding in a Run Reading, an edit a CBC Run made to
-its copy, a question at a boundary, the Foundation Check at a
-commit — and decided, never defaulted: neither side is right for
-being the Canonical Description, nor for being newer. Practice is the
+where it is found, in one of four places:
+
+- a finding in a CBC Run Reading;
+- an edit a CBC Run made to its copy;
+- a question at a boundary;
+- the Foundation Check at a commit.
+
+It is decided, never defaulted. Neither side is right for being the
+Canonical Description, nor for being newer. Practice is the
 evidence. When the Canonical Description changes, the Change Walk runs again (§4, *A Canonical Description's rule*);
 when the derived thing changes, it follows in the same commit, or in the next, as the Change Walk's step 3 says (§4, *A Canonical
 Description's rule*, step 3). The decision is recorded where the
@@ -324,8 +331,9 @@ It has happened: CBC Run 3 argued down a clause of
 `convention-lifecycle` on the day it first ran under it, and the
 clause changed (ADR-0034).
 
-Whether the concept bends rarely because it is right, or because
-nothing has been read against it hard enough, is not known.
+The concept's meaning has changed once since v1 (`CHANGELOG.md`).
+Whether it changes rarely because it is right, or because nothing has
+been read against it hard enough, is not known.
 
 *Its story: ADR-0034; ADR-0035; ADR-0048; devlog 2026-10-29, the lessons' own stories: six places.*
 
@@ -333,22 +341,23 @@ nothing has been read against it hard enough, is not known.
 
 Two rules, each loaded in every session, with no `paths:`
 (`docs/conventions/agent-arrangement/` §3.9, *A rule loaded in every session*). One home's moment is
-every text written: a fact is retold in the record being written,
-and that record's Record Stub says nothing of the record the fact was taken
-from, so no Record Stub is open at the moment. The project-recording manual held the
-rule from the start, and CBC Run 3 still told one Plan Step's story in four
-records: PLAN, the devlog, the slice record and the commits (its
-RETRO.md, D1). The check's moment is every commit that touches a
-Canonical Description or what derives from it, and an Agent Rule with `paths:` loads
-only when a file is touched with the agent's tools: an edit made by
-script never loads it (`docs/conventions/agent-arrangement/` §5.6, *Rules files*).
-Both moments are every task, so both Agent Rules are ambient
-(`docs/models/agent.md` §8, *Choosing a channel*).
+every text written. A fact is retold in the record being written.
+That record's Record Stub says nothing of the record the fact was
+taken from, so no Record Stub is open at the moment. The
+project-recording manual held the rule from the start, and CBC Run 3
+still told one Plan Step's story in four records (*What it is for*).
+The Foundation Check's moment is every commit that touches a
+Canonical Description or what derives from it. An Agent Rule with
+`paths:` loads only when a file is touched with the agent's tools: an
+edit made by script never loads it
+(`docs/conventions/agent-arrangement/` §5.6, *Rules files*). Both
+moments are every task, so both Agent Rules go through the Ambient
+Channel (`docs/models/agent.md` §8, *Choosing a channel*).
 
 ## What this does not cover
 
 - **Which record owns which kind of fact** —
-  `docs/conventions/project-recording/` §13, *The records table*, the records table.
+  `docs/conventions/project-recording/` §13, *The records table*.
 - **Which copy is the Master Copy, and how a copy reaches a CBC Run** —
   `docs/conventions/exchange/`.
 - **What a convention is, and the form of a manual** —
