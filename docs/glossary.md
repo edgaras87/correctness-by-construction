@@ -89,8 +89,9 @@ delivered files below.
 - **Record Harvest** — us reading a CBC Run's records and changing
   our Master Copies from what it learned
   (`docs/models/tiers.md` §3.3, *Upward harvest*).
-- **CBC Run Birth** — a CBC Run's first state, made from this repo at one
-  Delivery Pin (`docs/models/tiers.md` §3.1, *Downward delivery*).
+- **CBC Run Birth** — the making of a CBC Run from this repo at one
+  Delivery Pin, and the first state it leaves
+  (`docs/models/tiers.md` §3.1, *Downward delivery*).
 - **Pure Seed** — the procedure that makes a CBC Run Birth from this
   repo alone: `delivery/installs/pure-seed.md`.
 - **CBC Run Briefing** — the text put in a Newborn CBC Run's `temp/`
