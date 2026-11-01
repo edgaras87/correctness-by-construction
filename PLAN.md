@@ -330,9 +330,10 @@ Gate:
       doubt, or each doubt was tried on a sample and ended; the
       refinement's file says which
       (`.claude/approaches-on-trial/refinement.md` §2.3, *Check the rules*; 2026-10-19).
-- [ ] Before each later Refinement Round, its rule check read what changed
+- [x] Before each later Refinement Round, its rule check read what changed
       since the last, and each doubt ended; the refinement's file
-      says which (`.claude/approaches-on-trial/refinement.md` §2.3, *Check the rules*).
+      says which (`.claude/approaches-on-trial/refinement.md` §2.3, *Check the rules*;
+      Refinement Round 2, 2026-10-25; Refinement Round 3, 2026-10-29).
 - [ ] Every Finding Kind in the refinement's file was read in its Refinement Round
       across all Living Text, and each read names the files it
       covered.
