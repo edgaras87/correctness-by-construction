@@ -43,7 +43,7 @@ frontmatter naming it, `foundation: the agent model`
    derived from the manual, each by path from the repo root, marked
    shipped or the Concept Deliverer's, with the moment it opens at — or
    "nothing shipped", and then what a repo holds. Ends with the
-   sentence that a change here walks that list.
+   sentence that a change here runs the Change Walk on that list.
 4. **The seats.** Both named, the CBC Run's first: what each does
    under the convention. One of four:
    - one paragraph when alike;
