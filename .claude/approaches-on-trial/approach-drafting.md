@@ -107,12 +107,12 @@ asked for a written draft, changed as the work went, with the Agent Skill
 built at the close. Both Agent Skills came out that way and were taken
 into the Concept Deliverer. Taught: start from a draft, not an Agent Skill.
 
-*The Concept Deliverer, working a CBC Run Reading, 2026-10-01.* A draft in `temp/`
+*The Concept Deliverer, working a CBC Run Reading, 2026-10-01.* A draft in the Concept Deliverer's `temp/`
 ran three CBC Run Readings, then became an Agent Rule. Taught: a draft can become
 an Agent Rule, not only an Agent Skill.
 
 *The Concept Deliverer, the redesign of the conventions manual, 2026-10-19.* Drafted as a manual on
-trial in `docs/conventions/`. It closed in three pieces:
+trial in the Concept Deliverer's `docs/conventions/`. It closed in three pieces:
 - its work, to the refinement's file;
 - two ideas, to TODO;
 - its way of judging a fix, to the refinement.
@@ -121,14 +121,14 @@ The refinement is the Concept Deliverer's fixing of its own text against its rul
 places pieces; it does not make one form.
 
 *The Concept Deliverer, the refinement, from 2026-10-18.* Drafted as a
-manual on trial in `docs/conventions/`, and then counted as a
+manual on trial in the Concept Deliverer's `docs/conventions/`, and then counted as a
 manual before anyone judged whether it is one. Taught: a draft is
 not a manual, and needs a home of its own. This Approach on Trial came from
 that lesson. The refinement is open.
 
 *The Concept Deliverer, placing into an Idea Model, 2026-10-28.* The first step
 from a convention to an Idea Model, done for two of the Concept
-Deliverer's texts, the Tiers Model and the Exchange Convention: `.claude/approaches-on-trial/model-placing.md`, written
+Deliverer's texts, the Tiers Model and the Exchange Convention: the Concept Deliverer's `.claude/approaches-on-trial/model-placing.md`, written
 before the work and corrected once by it, in its own commit
-(`4fedbb3`). Taught: the work's first sort, shown before anything
+(the Concept Deliverer's `4fedbb3`). Taught: the work's first sort, shown before anything
 was written, is where the draft first met the work.
