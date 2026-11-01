@@ -32,9 +32,9 @@ read back from here. Documents only — no code, no CBC Runs
 | Work needs more than one commit | In-flight Change Set | COMMIT-PLAN.md (when present) |
 
 <!-- This file is loaded in full on every task, relevant or not
-     (`docs/conventions/agent-arrangement/` §2.6, The entry file's size), so every line
+     (`docs/conventions/agent-arrangement/` §2.6, The Entry File's size), so every line
      below passes three tests or leaves
-     (`docs/conventions/agent-arrangement/` §2.4, How the entry file is written):
+     (`docs/conventions/agent-arrangement/` §2.4, How the Entry File is written):
      1. True of this project and nowhere else — else it is a
         convention, stated once, there.
      2. No moment — else it goes where the moment is: the record's
