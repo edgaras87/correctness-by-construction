@@ -25,7 +25,7 @@ read back from here. Documents only — no code, no CBC Runs
 | A talk shaped a TODO item or an open question, or one is being worked | The Conversation Memory of each item, on trial | TODO-CONVERSATION-MEMORY.md |
 | Session ending, a dead end hit, or a TODO item added | Work history, dead ends, a TODO item's story | devlog/<YYYY-MM>.md |
 | The concept changed, or a skill derived from or checked against it | What changed, for those who pin a concept version | CHANGELOG.md |
-| Something became true the outside should see | The front door: what this is, how to use it | README.md |
+| Something became true the outside should see | The first page: what this is, how to use it | README.md |
 | How the repo's parts tie together changed | What stands now, and how its parts tie | ARCHITECTURE.md |
 | Meeting a Glossary Name, or defining a thing | The Glossary Names, each pointing at its home | docs/glossary.md |
 | Agent setup changed | Decision, why, rejected options | .claude/decisions.md |
