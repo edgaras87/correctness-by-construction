@@ -4407,6 +4407,12 @@ Twelve decisions, DECISION-41 to DECISION-52, for what recurs or what needs the 
 - Recommended: (b). The order, sources before what derives from them, and the stop at every commit both stay; 6 commits open and close plans, not 36. Asked by the reviewer, 2026-11-01, after round 1's layer 1 plan was opened (`f92d6b7`).
 - Chosen: (b), by the reviewer, 2026-11-01. A departure from §2.7, carried as a lesson for the Approach on Trial at the refinement's close.
 
+**DECISION-54.** The Change Set written from the list. Rests: the work of all 385 findings; it replaces DECISION-53. Under DECISION-53, round 1's plan still went layer by layer, and rounds 2 and 3 after it. 88 files have findings, 61 of them in more than one Refinement Round, so most would be edited two or three times. Only 25 pairs of findings from different Refinement Rounds sit within 4 lines of each other. About 15 facts are shared across files; a Refinement Layer fixes such a fact at its home and its followers layers later, and the repo disagrees with itself between.
+- (a) DECISION-53: one plan for each Refinement Round, its Refinement Layers in order.
+- (b) One Change Set for all 385, written from the list. The list keeps its order by Refinement Round and Refinement Layer, the order that shows the chains to decide on. The plan takes the list as its input: first each shared fact, its home and all its followers in one commit; then each file once, all its findings in one edit, the 25 close pairs fixed in Refinement Round order inside it. Each commit names its findings; *The work* is written once, from `git log`, at the end.
+- Recommended: (b). The repo never disagrees with itself between commits, and no file is opened twice. Commits drop from about 70 to about 33.
+- Chosen: (b), by the reviewer, 2026-11-01. The lesson for `.claude/approaches-on-trial/refinement.md` §2.7 at the refinement's close, the reviewer's: Refinement Rounds and Refinement Layers order the read and the list; the Change Set is written from the list, grouped by what each change needs. Where Refinement Rounds order the reads, as in a first refinement, each round's fixes still land before the next round reads, and inside a round the Refinement Layers are the plan's input, not its structure.
+
 The agent's calls, on the single questions, each a fix unless said:
 - FINDING-1416: the third kind takes the Idea Model's word, Output Forms, as ADR-0078 decision 1 did; an Agent Skill Template travels inside its Agent Skill.
 - FINDING-1429: the example names a gate item that exists.
