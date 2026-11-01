@@ -863,7 +863,7 @@ its *What it is for*.
 
 - **The Entry File as a whole: what it may hold, and how it stays
   small** — `docs/conventions/agent-arrangement/` §2, *The Entry File*.
-- **How a commit is written, and why its body is a micro-ADR** —
+- **How a commit is written, and why its body records the why** —
   `docs/conventions/commit-messages/`.
 - **How work larger than one commit is sequenced** —
   `docs/conventions/commit-plan/`.
