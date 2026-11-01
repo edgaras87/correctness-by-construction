@@ -27,8 +27,9 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
 5. **Use plain words, not metaphor.** Say what happens. Not "a third
    act of the exchange", but "a third step of the exchange."
 6. **Keep names as labels.** Write defined names and references
-   exactly: ADR-0052, FINDING-7, WORK-9, `exchange-read`. Define each
-   Glossary Name once, in plain words, in `docs/glossary.md`. Coin a
+   exactly: ADR-0052, FINDING-7, WORK-9, the exchange-read Agent Skill.
+   List each Glossary Name once in `docs/glossary.md`, in plain words,
+   pointing at the home that defines it. Coin a
    word only when plain English cannot say it. A number
    local to one document carries its owner outside it: "CBC Run 3's RETRO
    D22", never a bare "D22": every CBC Run's RETRO has one.
@@ -50,8 +51,8 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
    Name stands. A hyphenated word counts as one, toward the two and the 4:
    "never-event" is one word. A lowercase word is English and
    only English. No Markdown mark marks a Name, but bold once, at
-   the line that defines it. A list item's bold lead may begin with
-   a Name. Written otherwise:
+   the line that defines it. A bold lead, of a list item or a paragraph, may
+   begin with a Name. Written otherwise:
    - a numbered thing carries its owner and number,
      "working-a-reading rule 2", "the walk's step 3";
    - a label inside its owner keeps its case, "Step 0";
@@ -104,7 +105,7 @@ What the rules govern: (`docs/conventions/writing/` §1, *What it governs*).
 - **Chat:** every answer.
 - **Records:** every new or changed line. History keeps its words.
 - **What CBC Runs read:** the Agent Skills, Agent Rules, Output Shapes, Approaches on Trial,
-  concept chapters and notes we write, and the manuals they come
+  concept chapters, delivered Glossary Names and notes we write, and the manuals they come
   from, every new or changed line. Older text is rewritten in work
   of its own.
 - **Reading a dense text:** follow what it says, not how it says
