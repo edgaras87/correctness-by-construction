@@ -56,7 +56,7 @@ arrive with them, in `docs/glossary/`; this project's own are
 
 <!-- This file is loaded in full on every task, relevant or not, so
      every line below passes three tests or leaves
-     (CBC docs/conventions/agent-arrangement/ §2.4, How the entry file is written):
+     (CBC docs/conventions/agent-arrangement/ §2.4, How the Entry File is written):
      1. True of this project and nowhere else — else it is a
         convention, stated once, there.
      2. No moment — else it goes where the moment is: the record's
