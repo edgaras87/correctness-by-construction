@@ -4466,6 +4466,10 @@ Left to the reviewer alone, with no call:
 - **FINDING-1444:** what a held edit becomes at a Delivery Take. It is how the exchange works, not how its text reads.
 - **FINDING-1487:** `temp/run-6-handoff/`, tracked and named by no TODO item or Plan Step: an item names it, or it goes.
 
+Decided by the reviewer, 2026-11-01, during the work:
+- **FINDING-1444:** a held edit is re-applied on top at a Delivery Take, as an unanswered one is, and stands until a later Delivery Note answers it.
+- **FINDING-1431,** met at commit 7 with no TODO item to point at: a TODO item, "Judge the Conversation Memory trial", holds it, its trigger the close of the refinement Plan Step (`056d14a`).
+
 ### DECISION-49's pass
 
 The ending of each TODO item whose trigger looked passed, drafted by the agent and taken by the reviewer, 2026-11-01. Lines are `TODO.md`'s at `1ce79f9`. CBC Run 5's CBC Run Reading exists; its work waits in the stopped Plan Step "Take CBC Run 5's lessons for CBC Run 6". The TODO edits land with round 1's layer 4.
