@@ -19,9 +19,9 @@ foundation: the exchange convention
 1. **Every file delivered here is a copy pinned at the Concept Deliverer's
    commit.** The Decisions Log's last delivery entry carries two
    numbers:
-   - the **Delivery Pin:** the Concept Deliverer's commit these copies equal, but for
-     its *Decisions* footers, taken from the Delivery Staging's name;
-   - the **Read-Through Commit:** this CBC Run's own commit the Concept Deliverer last
+   - **Delivery Pin:** the Concept Deliverer's commit these copies equal, but for
+     their *Decisions* footers, taken from the Delivery Staging's name;
+   - **Read-Through Commit:** this CBC Run's own commit the Concept Deliverer last
      read up to, taken from the Delivery Note.
 
    One Delivery Pin covers everything delivered: the Agent Skills, Agent Rules, Output Shapes

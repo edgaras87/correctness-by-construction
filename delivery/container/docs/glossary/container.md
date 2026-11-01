@@ -18,23 +18,27 @@
   is made from it; the Concept Deliverer is one.
 - **Delivery Pin** — the Concept Deliverer's commit every delivered
   copy here equals, but for its *Decisions* footer, kept in the
-  Decisions Log's last delivery entry.
+  Decisions Log's last delivery entry
+  (`.claude/rules/delivered-copies.md`, rule 1, *Every file delivered here is…*).
 - **Master Copy** — the Concept Deliverer's copy of a file delivered
   here; a copy here follows it and is diffed against it.
 - **Read-Through Commit** — this project's own commit the Concept
-  Deliverer last read up to, named by each Delivery Note.
+  Deliverer last read up to, named by each Delivery Note
+  (`.claude/rules/delivered-copies.md`, rule 1, *Every file delivered here is…*).
 - **Delivery Note** — the text beside a delivery: what changed since
   the Delivery Pin, why it matters here, and a verdict on every CBC
   Run Ask.
 - **Delivery Staging** — a delivery as it arrives in `temp/`: a
   directory named for the Concept Deliverer's commit, the Delivery
-  Note beside it, in force only once taken.
+  Note beside it, in force only once taken
+  (`.claude/rules/delivered-copies.md`, rule 5, *After the reply, the Delivery…*).
 - **Delivery Take** — moving a Delivery Staging into place and
   recording the new Delivery Pin, as `.claude/rules/delivered-copies.md`
   says.
 - **CBC Run Ask** — one line under TODO's *To the deliverer*, asking the
   Concept Deliverer for a verdict: on an edit to a copy, a file
-  offered, or a question.
+  offered, or a question
+  (`.claude/rules/delivered-copies.md`, rule 4, *At every Plan Step's close…*).
 - **CBC Run Reading** — the Concept Deliverer reading this project
   since it last read it, and the text that records what it found;
   read only, it writes nothing here.
@@ -64,7 +68,8 @@
   `SKILL.md` and what it references, read when its moment comes;
   always written with its kind: the commit-plan Agent Skill.
 - **Agent Skill Template** — a file under an Agent Skill's `templates/`, copied
-  and filled by this project, never edited in place.
+  and filled by this project, never edited in place
+  (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is…*).
 - **Hygiene Base** — the hygiene files every repo gets before it has
   a stack, `.gitignore`, `.gitattributes` and `.editorconfig`, down to
   each one's marked line.
@@ -81,7 +86,7 @@
   `PLAN.md`'s own.
 - **Plan Step Gate** — a Plan Step's exit criteria: facts that can be
   checked, written when the Plan Step opens; it is done only when
-  every one is true.
+  every one is true (`PLAN.md`, *Legend*).
 - **Agent Skill Stage** — one phase of an Agent Skill, numbered, and
   named by its Agent Skill outside it: the cbc-slice Agent Skill's
   Stage 3.
