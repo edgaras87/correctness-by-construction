@@ -10,7 +10,7 @@
      defines a thing adds its Name here in the same commit; a tag
      kind is defined here too, as one line. A Name coined in one of
      this project's Approaches on Trial goes under its own heading,
-     on trial: the Concept Deliverer reads them at each Run Reading.
+     on trial: the Concept Deliverer reads them at each CBC Run Reading.
      The Names the delivered files are written in are not here: they
      arrive with the delivery, in docs/glossary/, one file per group.
      Alphabetical in each group.

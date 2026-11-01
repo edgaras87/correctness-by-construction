@@ -1,14 +1,14 @@
 # <working-name>
 
-A backend built by [correctness-by-construction](docs/concept/):
-a system whose design is derived from one falsifiable promise —
-asking what must never happen before what it should do — and
-whose every invariant is held by a wall that a test creating its
-adversity proves. The problem is not yet chosen. It arrives with the
-briefing that opens framing, and this paragraph is then
-re-derived from the framed intent ([PLAN.md](PLAN.md), Step 1).
-Until then the repository holds the method, the plan, and the
-records — no code.
+A backend built by [correctness-by-construction](docs/concept/).
+Its design is derived from one Falsifiable Promise, by asking what
+must never happen before what it should do. Every invariant is held
+by a Structural Wall, and an Evidence Test that creates its
+adversity proves the wall. The problem is not yet chosen. It arrives
+with the CBC Run Briefing that opens CBC Framing, and this paragraph
+is then derived again from the CBC Framing Intent
+([PLAN.md](PLAN.md), Step 1). Until then the repository holds the
+method, the plan and the records, and no code.
 
 The method: [docs/concept/](docs/concept/), a pinned copy of the
 concept; start with [00-cbc.md](docs/concept/00-cbc.md).
@@ -20,16 +20,16 @@ concept; start with [00-cbc.md](docs/concept/00-cbc.md).
 | Plan | [PLAN.md](PLAN.md) | Where are we, what's next, what does *done* mean |
 | Decisions | [docs/adr/](docs/adr/) — cited from other repos as `<TAG> ADR-nnnn` | Why is it built this way |
 | Architecture | [ARCHITECTURE.md](ARCHITECTURE.md) | What is the current shape of the system |
-| System | [docs/system/](docs/system/) | What is promised, what must never happen, what the slices are |
+| System | [docs/system/](docs/system/) | What is promised, what must never happen, what the Invariant Slices are |
 | Backlog | [TODO.md](TODO.md) | What's known but not done |
 | Changelog | [CHANGELOG.md](CHANGELOG.md) | What changed per version (for users) |
 | Devlog | [devlog/](devlog/) | Day-to-day work, dead ends, open questions |
 
 <!-- A line here is true now, and meant for someone arriving from
      outside. What changes weekly is PLAN.md's; why is the ADRs'; how
-     it went is the devlog's. A missing section is not an omission: it
-     arrives when a Plan Step's gate makes it true: the README says only
-     what is already true. Once the project runs: its prerequisites, the one command
+     it went is the devlog's. A missing section is not an omission. It
+     arrives when a Plan Step Gate makes it true, since the README says
+     only what is already true. Once the project runs: its prerequisites, the one command
      that builds and runs it from a clean clone, and how to run its
      tests, each when it becomes true.
      Why the form is as it is: (CBC docs/conventions/project-recording/

@@ -7,7 +7,7 @@ Status: Accepted
 
 Significant decisions — what to use, where a boundary falls, what to
 build and what to take, what a term means — will be made throughout
-this project. Without a record, the *why* evaporates:
+this project. Without a record, the *why* is lost:
 debates recur, and future maintainers can't distinguish deliberate choices
 from accidents.
 
@@ -21,7 +21,7 @@ from accidents.
 ## Decision
 
 We will record every significant architecture decision as a numbered ADR in
-`docs/adr/`, using this template (context / options / decision /
+`docs/adr/`, using this form (context / options / decision /
 consequences). ADRs are immutable: a reversed decision gets a *new* ADR
 marked "Supersedes NNNN", and the old one's status becomes
 "Superseded by NNNN".
@@ -36,7 +36,7 @@ Good: decisions and their rejected alternatives are searchable forever;
 Bad: small ongoing discipline cost; requires honesty about downsides at
 decision time.
 
-<!-- Template for the next ADR: copy this file, bump the number,
+<!-- The form of the next ADR: copy this file, bump the number,
      replace every section. Keep it under one page.
      Why the form is as it is: (CBC docs/conventions/project-recording/
      §3.4, How an ADR is written).

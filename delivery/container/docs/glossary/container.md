@@ -36,7 +36,7 @@
   Concept Deliverer for a verdict: on an edit to a copy, a file
   offered, or a question.
 - **CBC Run Briefing** — the text that names the problem this project
-  builds, read at framing and committed unchanged.
+  builds, read at CBC Framing and committed unchanged.
 - **CBC Run Hand-off** — the text that says how this project works
   on full auto, when it does; it arrives in `temp/` with the CBC Run
   Briefing.
@@ -66,7 +66,7 @@
   `.gitignore`, `.gitattributes` or `.editorconfig`, below the
   marked line the container's base carries.
 - **Approach on Trial** — the written way of doing one kind of work
-  that no skill covers yet, at `.claude/approaches-on-trial/<work>.md`,
+  that no Agent Skill covers yet, at `.claude/approaches-on-trial/<work>.md`,
   drafted by `approach-drafting`.
 - **Work Approach** — how a piece of work is done: an Agent Skill, an Agent
   Rule, or an Approach on Trial.
@@ -82,9 +82,9 @@
   decisions, the conventions held, and each delivery's Delivery Pin
   and Read-Through Commit.
 - **Change Set** — a body of work that needs more than one commit,
-  planned and closed under `commit-plan`.
+  planned and closed under the commit-plan Agent Skill.
 - **Idea Model** — a Concept Deliverer's text stating an idea any
   repository can adapt; this project holds none and may meet the
-  word in a delivered skill.
+  word in a delivered Agent Skill.
 - **Glossary Name** — the name of a thing this project defines: two
   or more words, capitalized, written exactly; what this file lists.
