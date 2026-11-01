@@ -5,14 +5,14 @@ foundation: the facts-in-sync convention
 # One home per fact
 
 **Governs:** where a fact is written in records, manuals, Agent Skills,
-rules, comments and config. Where it lives, never how it reads.
+Agent Rules, comments and config. Where it lives, never how it reads.
 
 <!-- No paths: line, so this loads at the start of every session.
      Ours is derived from docs/conventions/facts-in-sync/ (§1, One home;
      §2, Point and derive; §3.1, What a Fact Reference is; The Concept
      Deliverer's seat). The container's is derived from §1 and its CBC
-     Run's seat (§1, One home; The CBC Run's seat). How the two
-     Convention Seats differ, that manual's *The seats* says. -->
+     Run's seat (§1, One home; The CBC Run's seat). That manual's
+     *The seats* says how the two Convention Seats differ. -->
 
 ## The rules
 
@@ -21,13 +21,13 @@ rules, comments and config. Where it lives, never how it reads.
    lives in its manual (`docs/conventions/facts-in-sync/` §2, *Point and derive*).
 2. **Elsewhere, link; retell only where the reader acts on it
    there.** A retelling carries a Fact Reference to its source: its
-   path, section and title, in parentheses. "After birth, only the
+   path, section and title, in parentheses. "After CBC Run Birth, only the
    copies go: Agent Skills, Agent Rules, Output Shapes, Approaches on Trial and the
    concept (`docs/conventions/exchange/` §3.2, *What goes*)."
    Without the Fact Reference it is a second home
    (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
 3. **Make a summary say it is one.** It names its owner, and nobody
-   reads it in the owner's place. `ARCHITECTURE.md` does this (§1.2, *The conventions*):
+   reads it in the owner's place. `ARCHITECTURE.md` does this (`ARCHITECTURE.md` §1.2, *The conventions*):
    a phrase for each convention, and the manual for the rest.
 4. **Change a fact at its home.** The links don't change, unless
    the home itself moves, or its section is renamed, renumbered or
@@ -38,7 +38,7 @@ rules, comments and config. Where it lives, never how it reads.
 5. **Make every copy a follower:** one is the owner, the other
    follows it and is checked against it. A retelling with a Fact
    Reference is one. Two copies that cannot be avoided are another:
-   the worked example sits in `cbc-framing` and in `cbc-slice`, and
+   the worked example sits in the cbc-framing and cbc-slice Agent Skills, and
    the two must stay identical.
 6. **Ask each new or changed line at the commit** whether it relies
    on a fact written elsewhere, and whether it says where. Nothing
@@ -57,7 +57,7 @@ History: the devlog, closed ADRs, commit bodies, the entries of
 `.claude/decisions.md` and the parts of
 `TODO-CONVERSATION-MEMORY.md`. They record what was true then. They
 are never updated, so they cannot drift. Each file's header comment
-is living text. A fact stated only in history gets a living home
+is Living Text. A fact stated only in history gets a home in Living Text
 before anything retells it (`docs/conventions/facts-in-sync/` §1,
 *One home*).
 
@@ -65,7 +65,7 @@ before anything retells it (`docs/conventions/facts-in-sync/` §1,
 
 ## Decisions
 
-- ADR-0053 — the one-home rule loads in every session, here as in
+- ADR-0053 — the one-home Agent Rule loads in every session, here as in
   every CBC Run
 - ADR-0059 — a retelling may stand where the reader acts on it,
   with a Fact Reference to its source; ours now, a CBC Run's when its

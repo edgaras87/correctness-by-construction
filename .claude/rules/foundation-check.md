@@ -8,7 +8,7 @@ foundation: the facts-in-sync convention
      before, they had to be remembered. Loaded in every session, with no paths: an
      Agent Rule with paths: loads only when a file is touched with the agent's
      tools, and an edit made by script never loads it
-     (docs/conventions/agent-arrangement/ §5.6). Ours, shipped
+     (docs/conventions/agent-arrangement/ §5.6, Rules files). Ours, shipped
      nowhere: a CBC Run holds no manuals. -->
 
 # The Foundation Check
@@ -36,8 +36,8 @@ or moves a section. Which side is right, never how either reads.
    `concept/`. Read the parts the change touches. A file names one
    `foundation`; a second is a Fact Reference to a part
    (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 2).
-3. **A Canonical Description changed:** walk what derives from it, as the Change Walk's step 3
-   says (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 3).
+3. **A Canonical Description changed:** run the Change Walk on what derives from it
+   (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 3).
 4. **List every disagreement before deciding any.** For each, show
    the reviewer what the foundation says, what the change says, and
    which side the agent thinks is wrong, and why. The reviewer
@@ -59,7 +59,7 @@ or moves a section. Which side is right, never how either reads.
 ## A moved section
 
 When the commit renames a file, renumbers or retitles a section, in
-any file, or moves a fact to a new home, grep all living text for
+any file, or moves a fact to a new home, grep all Living Text for
 each old path, number and title, and fix what points at them in
 this commit (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
 

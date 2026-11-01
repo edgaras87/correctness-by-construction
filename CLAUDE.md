@@ -1,6 +1,6 @@
 # correctness-by-construction
 
-A Concept Repo (see `docs/models/tiers.md` §2.1, *The empty top tier*, §2.2, *Concept Repos*): one
+A Concept Repo (`docs/models/tiers.md` §2.2, *Concept Repos*): one
 concept in plain words, and what is made from it. It is the
 Concept Deliverer. A CBC Run is a separate repository that builds a
 real system by the concept. Each is born from what this repo ships,
@@ -13,7 +13,7 @@ and is read back from here. Documents only — no code, no CBC Runs
      once opened, and nothing else says when. Three things per row:
      the moment, what it holds, the path. Never the rule itself: what
      an ADR contains is inside the ADR. What it holds summarizes the
-     record's item in the records map
+     record's item in project-recording's list of the records
      (docs/conventions/project-recording/ §1, The records at a glance). Adding a record means
      adding its row (`docs/conventions/project-recording/` §13, The records table). -->
 
@@ -21,7 +21,7 @@ and is read back from here. Documents only — no code, no CBC Runs
 |---|---|---|
 | Opening a Plan Step, or closing its Plan Step Gate | The Plan Step Form, and the open Plan Step | PLAN.md |
 | A decision taken, options rejected | Decisions and why | docs/adr/ |
-| Starting work, or noticed something not doing it now | What's next; the backlog | TODO.md |
+| Starting work, or noticing something to do later | What's next; the backlog | TODO.md |
 | A talk shaped a TODO item or an open question, or one is being worked | The Conversation Memory of each item, on trial | TODO-CONVERSATION-MEMORY.md |
 | Session ending, a dead end hit, or a TODO item added | Work history, dead ends, a TODO item's story | devlog/<YYYY-MM>.md |
 | The concept changed, or an Agent Skill derived from or checked against it | What changed, for those who pin a concept version | CHANGELOG.md |
@@ -39,7 +39,7 @@ and is read back from here. Documents only — no code, no CBC Runs
         convention, stated once, there.
      2. No moment — else it goes where the moment is: the record's
         Record Stub, README, a project Agent Skill, or .claude/rules/ with a
-        paths: list for a rule about one directory.
+        paths: list for an Agent Rule about one directory.
      3. Nothing else would deliver it — a stance, or a fact whose
         failure is not noticing it.
      Longer than a screen means a line is failing. Shrinking it is

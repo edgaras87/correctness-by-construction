@@ -4,11 +4,11 @@ paths:
 foundation: the conventions convention
 ---
 
-<!-- The form of a manual, as a rule. Loads when one is read, not
+<!-- The form of a manual, as an Agent Rule. Loads when one is read, not
      while a new one is written (docs/conventions/agent-arrangement/
-     §5.6); says its form, never its content.
-     Ours, shipped nowhere: a CBC Run writes no manuals. The why is
-     (docs/conventions/conventions/ §2, The Convention Manual). -->
+     §5.6, Rules files); says its form, never its content.
+     Ours, shipped nowhere: a CBC Run writes no manuals. The why is in
+     the conventions manual (docs/conventions/conventions/ §2, The Convention Manual). -->
 
 # A manual
 
@@ -74,8 +74,8 @@ frontmatter naming it, `foundation: the agent model`
    ADR-0059.* A case told nowhere is written into a devlog entry
    first, and the section is read again once the case has left
    (`docs/conventions/conventions/` §2.6, *A lesson taken*).
-7. **Why it arrives this way.** The channel — an Agent Skill, an Agent Rule, a
-   Record Stub or a file — and why that one: the moment it serves, and
+7. **Why it arrives this way.** The channel: an Agent Skill, an Agent Rule, a
+   Record Stub or a file. Then why that one: the moment it serves, and
    what would or would not put it in front of its reader then.
    Where the reasoning rests on the Agent Model, a Fact Reference to the part it rests on, such as
    (`docs/models/agent.md` §8, *Choosing a channel*)

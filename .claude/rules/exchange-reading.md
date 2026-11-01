@@ -6,13 +6,13 @@ foundation: the exchange convention
 
 <!-- The form of a CBC Run Reading, as an Agent Rule. Loads when one is read,
      so while it is worked, not while a new one is written
-     (docs/conventions/agent-arrangement/ §5.6); says its form,
+     (docs/conventions/agent-arrangement/ §5.6, Rules files); says its form,
      never its content. -->
 
 # The CBC Run Reading
 
-**Governs:** how a CBC Run Reading — the document `exchange-read` produces and
-the work then fills — is written. Its form, never its content.
+**Governs:** how a CBC Run Reading is written: the document the exchange-read Agent Skill produces,
+and the work then fills. Its form, never its content.
 
 ## Where it sits
 
@@ -39,7 +39,7 @@ What a CBC Run Reading holds, and why: (`docs/conventions/exchange/` §6.3, *The
 1. **Where we read to.** The commit read through, the previous
    Read-Through Commit, and the span between.
 2. **What the CBC Run did.** The span in prose, a paragraph per thing
-   that happened — a Plan Step closed, a pass made, an edit landed, a
+   that happened: a Plan Step closed, a pass made, an edit landed, a
    CBC Run Ask written.
 3. **Findings.** `FINDING-1`, `FINDING-2`, … — one per thing found,
    bold, with what it is and where. When one is fixed, its line says
@@ -63,7 +63,7 @@ What a CBC Run Reading holds, and why: (`docs/conventions/exchange/` §6.3, *The
 ## What holds across all of it
 
 - **Numbers are kept.** An item keeps its number when it closes and
-  is marked done in place — the file cites its own items, and so
+  is marked done in place: the file cites its own items, and so
   do lines outside it. Nothing is renumbered.
 
 How the list is worked is `.claude/rules/working-a-reading.md`'s.

@@ -9,9 +9,9 @@ we write for CBC Runs, commit messages, comments. How it reads, never
 what it says.
 
 <!-- No paths: line, so this loads at the start of every session.
-     Ours, derived from docs/conventions/writing/ like the
-     container's; how the two differ, that manual's *What this is
-     made usable as* lists. -->
+     Ours is derived from docs/conventions/writing/, as the
+     container's is. That manual's *What this is made usable as*
+     lists how the two differ. -->
 
 ## The rules
 
@@ -68,7 +68,7 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
       written*, never *How*.
 
     The point goes in the first sentence. The manual form's fixed
-    headings, a stage heading and a numbered rule's bold lead are not
+    headings, an Agent Skill Stage or Approach on Trial Stage heading, and a numbered rule's bold lead are not
     titles under this rule.
 11. **Change only the lines the change needs.** The rest stand as
     they are. Markdown has no line width here; 72 is a commit body's
