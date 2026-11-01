@@ -52,10 +52,10 @@ unhelpful; a diagram can be *wrong* in a way the reader will
 believe, because a drawing makes a claim by how it is drawn before
 anyone reads a label.
 
-Its name is the question, not a candidate: *how is this shown*,
-and "not a picture" is one of its answers. A name that named a
-picture would have kept the table and the numbered list out of the
-set. ADR-0028's best answer to one requirement was one of those.
+Its subject is a question, not a candidate: *how is this shown*,
+and "not a picture" is one of its answers. Its name came first and
+stayed; a subject that named a picture would keep the table and the
+numbered list out of the set. *Its story: ADR-0028.*
 
 ## 2. Why it is shaped this way
 

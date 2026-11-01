@@ -76,9 +76,9 @@ decisions. In summary of them:
   decision.
 
 No guide ships beside the Agent Skills: it would repeat them, and the two
-would drift. CBC Run 3's apply guide restated nearly every rule of its
-Agent Skill. The choice is reopened if a reviewer works without reading
+would drift. The choice is reopened if a reviewer works without reading
 this repo, or CBC Run 4's CBC Run Reading shows the missing guide cost something.
+*Its story: ADR-0054.*
 
 ### The Concept Deliverer's seat
 

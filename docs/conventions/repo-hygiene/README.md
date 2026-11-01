@@ -68,15 +68,16 @@ Composition is plain concatenation; all three formats append
 cleanly:
 
 ```bash
-# at the Plan Step that makes the stack true, with the Stack Overlay at hand:
+# at the CBC Bootstrap, with the Stack Overlay at hand:
 t=<the Stack Overlay's directory>
 cat "$t"/gitignore.part      >> .gitignore
 cat "$t"/gitattributes.part  >> .gitattributes
 cat "$t"/editorconfig.part   >> .editorconfig
 ```
 
-How a Stack Overlay reaches a CBC Run is open: nothing ships one, and no
-Plan Step, Agent Skill or playbook names the append.
+How a Stack Overlay reaches a CBC Run is open: nothing ships one. The
+cbc-bootstrap Agent Skill names the append, and its walkthrough lists
+what each file takes, written by the CBC Run itself.
 
 *Its story: devlog 2026-09-28; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 

@@ -54,8 +54,8 @@ back against this page.
 ## The seats
 
 A CBC Run writes under the Agent Rule from birth: its chat, its records, its
-commits. The Concept Deliverer writes under its own: its chat and
-records. Its Agent Rule also covers what CBC Runs read, since an agent copies the
+commits. The Concept Deliverer writes under its own: its chat, its
+records, its commits and comments. Its Agent Rule also covers what CBC Runs read, since an agent copies the
 voice it reads. So every new or changed line of an Agent Skill, Agent
 Rule, Output Shape, Approach on Trial, concept chapter or note follows
 it. So do the Concept Deliverer's manuals. The Concept Deliverer also
@@ -66,17 +66,26 @@ writes this page and the Agent Rule's Master Copy.
 It covers every text written:
 chat answers, records, commit messages, code comments.
 
-- **History keeps its words.** A closed devlog entry, an ADR or a
-  commit body is not rewritten for its voice. The Agent Rule applies
-  to every new or changed line.
-- **An Agent Skill or an Agent Rule may be dense.** Its reader follows what it
-  says, not how it says it. An agent copies the voice it reads, so
-  the Agent Rule says outright that it sets the voice.
-- **Plain is the default for every kind of text.** A kind of text
-  gets another style only when plain has been shown to fall short
-  there. The Agent Rule then names that kind and its style. None is
-  named yet: CBC Run 3 put off a specification style until its claims
-  had been judged in plain text (its `RETRO.md`, D14).
+### 1.1 History keeps its words
+
+History, as facts-in-sync names it
+(`docs/conventions/facts-in-sync/` §1.4, *History is not a second home*),
+is not rewritten for its voice. The Agent Rule applies
+to every new or changed line.
+
+### 1.2 Dense Work Approaches
+
+An Agent Skill or an Agent Rule may be dense. Its reader follows what it
+says, not how it says it. An agent copies the voice it reads, so
+the Agent Rule says outright that it sets the voice.
+
+### 1.3 Plain as the default
+
+Plain is the default for every kind of text. A kind of text
+gets another style only when plain has been shown to fall short
+there. The Agent Rule then names that kind and its style. None is
+named yet: CBC Run 3 put off a specification style until its claims
+had been judged in plain text (its `RETRO.md`, D14).
 
 ## 2. Why each rule
 
@@ -93,7 +102,8 @@ chat answers, records, commit messages, code comments.
    and two readers translate it differently. CBC Run 3's retrospective
    names "costume", "weather" and "stage" as words to drop: the
    stage of a theatre, as in "the stage, not a victim". An Agent
-   Skill's phase is an Agent Skill Stage (`docs/glossary.md`).
+   Skill's phase is an Agent Skill Stage (`docs/conventions/conventions/`
+   §1.4, *Agent Skill Stages*).
 6. **Names are labels.** A reference reworded points somewhere
    else. A coined word that is not defined is a word the reader
    cannot check, so each has one Glossary Name, listed in the
@@ -167,15 +177,15 @@ chat answers, records, commit messages, code comments.
     reads a diff at every commit boundary, for its change; a line
     rewrapped beside it hides the change among lines that did not
     need to move. Markdown has no line width here. A reader meets the
-    text rendered, or in an editor that wraps. 985 lines in 83 of the
-    99 living files already run past 72. The 72 is
+    text rendered, or in an editor that wraps. On 2026-10-29, 985 lines in
+    83 of the 99 living files already ran past 72. The 72 is
     the commit-messages manual's rule for a body and nothing else
     (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
     A scripted pass is held to the same rule: it counts headings,
     references and code fences before and after, and changes nothing
     on a second run.
 
-*Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model; devlog 2026-10-19; ADR-0074 to ADR-0077, rules 9 to 11; ADR-0079, rules 9 and 10; devlog 2026-10-29, the lessons' own stories: six places.*
+*Its story: devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model; devlog 2026-10-19; ADR-0074 to ADR-0077, rules 9 to 11; ADR-0078, rule 9; ADR-0079, rules 9 and 10; devlog 2026-10-29, the lessons' own stories: six places.*
 
 ## Why it arrives this way
 
@@ -186,12 +196,13 @@ them (`docs/models/agent.md` §8, *Choosing a channel*):
 
 - **A Paths Rule** loads when a file is touched, after a new one's
   first draft is written. Chat has no path
-  (`docs/conventions/agent-arrangement/` §5.6, *Rules files*). CBC Run 3's first
-  draft loaded on Markdown files, and was dropped for this.
+  (`docs/conventions/agent-arrangement/` §5.6, *Rules files*).
 - **An Agent Skill** fires when the agent notices the moment. The failure
   here is not noticing: the agent writes in the voice it last read.
-- **Memory or `CLAUDE.local.md`** held the lesson in CBC Run 3 and did
-  not act. The local file is also one person's, and reaches no CBC Run.
+- **Memory or `CLAUDE.local.md`** holds a lesson the agent does not act
+  on. The local file is also one person's, and reaches no CBC Run.
+
+*Its story: ADR-0053.*
 
 The cost is one page in every session, which is why the Agent Rule
 stays one page.
@@ -211,5 +222,5 @@ stays one page.
 
 ## Where to look
 
-- The decision: ADR-0053.
+- The decisions: ADR-0053; ADR-0074 to ADR-0079.
 - The Agent Rule: `delivery/container/.claude/rules/writing.md`.

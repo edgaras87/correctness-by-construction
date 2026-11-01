@@ -10,8 +10,8 @@ work that exists, and read against the next output of its kind,
 instead of each output re-deriving the form, or a template being
 filled in. The failure is lived. CBC Run 3 made a thing this repo's
 vocabulary had no word for. It was called a template, a
-specification, a convention and trial evidence before it got its
-own (§2, *What an Output Shape is not*; ADR-0035, 2026-09-23).
+specification, a convention and trial evidence, the material kept in
+`docs/baselines/` and never shown to a CBC Run, before it got its own (§2, *What an Output Shape is not*; ADR-0035, 2026-09-23).
 
 Made a convention, with this page as its manual, on 2026-09-27
 (ADR-0037). The Agent Rule binds. This page is why the Agent Rule is
@@ -119,25 +119,36 @@ Output Shape catches a part missing, not a part that lost half its meaning
 Four things are easily taken for an Output Shape. The
 differences are why this section exists.
 
-- **Not a template.** A template's content is holes awaiting
-  specifics, and you fill it in. An Output Shape is read *against* finished
-  work. Filling an Output Shape in is the failure mode it warns
-  about. The material that does not fit gets hidden as a completed
-  form.
-- **Not a specification.** A test can verify conformance to a
-  specification. Nothing can test that a passage reads well, and a
-  difference from an Output Shape is a question rather than a failure.
-- **Not a convention.** Deviating from a convention owes an
-  explanation. An Output Shape expects divergence: a difference is how
-  it gets corrected, and a difference may end with the Output Shape
-  changing rather than the output.
-- **Not trial evidence.** This is the one that will be got wrong,
-  because both are kept from the writer and look alike. They are
-  hidden for opposite reasons. Trial evidence is withheld **so that it
-  stays** undelivered. A derivation that has seen it measures
-  imitation, not independence. Showing it destroys the measurement. An Output Shape is delivered, and kept out of view **only
-  until the Plan Step Gate**, after which being read against the work is the
-  entire point.
+### 2.1 Not a template
+
+A template's content is holes awaiting
+specifics, and you fill it in. An Output Shape is read *against* finished
+work. Filling an Output Shape in is the failure mode it warns
+about. The material that does not fit gets hidden as a completed
+form.
+
+### 2.2 Not a specification
+
+A test can verify conformance to a
+specification. Nothing can test that a passage reads well, and a
+difference from an Output Shape is a question rather than a failure.
+
+### 2.3 Not a convention
+
+Deviating from a convention owes an
+explanation. An Output Shape expects divergence: a difference is how
+it gets corrected, and a difference may end with the Output Shape
+changing rather than the output.
+
+### 2.4 Not trial evidence
+
+This is the one that will be got wrong,
+because both are kept from the writer and look alike. They are
+hidden for opposite reasons. Trial evidence is withheld **so that it
+stays** undelivered. A derivation that has seen it measures
+imitation, not independence. Showing it destroys the measurement. An Output Shape is delivered, and kept out of view **only
+until the Plan Step Gate**, after which being read against the work is the
+entire point.
 
 ## 3. Where an Output Shape lives
 
@@ -165,7 +176,8 @@ is too late to produce.
 
 Between repositories, an Output Shape follows the group of the
 thing it shapes: the same rule by which an Agent Skill belongs to
-exactly one group and is delivered whole. Inside a project, where an
+exactly one group and is delivered whole
+(`docs/conventions/exchange/` §3.4, *One group per file*). Inside a project, where an
 Output Shape lives is said above (§3, *Where an Output Shape lives*).
 For example:
 
@@ -189,11 +201,8 @@ A project fetches nothing (`docs/models/tiers.md` §3.5, *What holds on every fl
 fact 1): what arrives,
 arrives because it was staged with a delivery, by the reviewer or
 by the agent when told (`docs/conventions/exchange/` §3.1, *Delivery Staging*). Nothing is
-staged for a Plan Step Gate on its own. *A fetch of Output Shapes at
-the Plan Step Gate was named in ADR-0037 as "a third act of the
-exchange", and never built: CBC Run 3 looked in `temp/` at two closes
-and found nothing either time. With Output Shapes in the delivery,
-nothing was left for a fetch to carry.*
+staged for a Plan Step Gate on its own.
+*Its story: ADR-0052.*
 
 ### 4.2 An Output Shape's two layers
 
@@ -302,6 +311,7 @@ preferring one side:
 - **each had something,** and both move;
 - **the output is a different kind,** so both stand and a new Output
   Shape starts from it (§1.2, *How an Output Shape is born*).
+
 Any change is shown before it is made.
 
 Outputs closed before a change are not reopened. Each looks like
