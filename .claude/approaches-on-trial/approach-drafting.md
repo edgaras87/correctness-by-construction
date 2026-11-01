@@ -11,8 +11,8 @@ proven: a guess the work tests. It lives in
 ## What it is for
 
 So that the first time a kind of work is done, the way it was done
-is kept as it worked, not as it was guessed. An Agent Skill or a manual
-written before the work describes a guess. An Approach on Trial starts as
+is kept as it worked, not as it was guessed. An Agent Skill written before the work
+describes a guess, as a manual does at the Concept Deliverer. An Approach on Trial starts as
 one too, but the work corrects it before anything is made of it.
 
 ## When it opens
