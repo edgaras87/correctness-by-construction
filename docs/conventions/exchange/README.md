@@ -342,10 +342,12 @@ copy.
    moves.
 2. **Find your own edits.** The diff of each held copy against the
    Delivery Pin, which the CBC Run holds as the commit of its last delivery entry
-   (§2.2, *The CBC Run*). Empty: nothing to protect. Not empty: each edit ends one of three ways:
+   (§2.2, *The CBC Run*). Empty: nothing to protect. Not empty: each edit ends one of four ways:
    - **taken** in the Delivery Note: the new copy carries it;
    - **declined** in the Delivery Note: it goes, and the need it
      served goes to the CBC Run's records;
+   - **held** in the Delivery Note: it is re-applied on top, and
+     stands until a later Delivery Note answers it;
    - **unanswered:** it was made after the Concept Deliverer last
      read, and it is re-applied on top.
 3. **Place.** The delivered files overwrite the copies whole. The
@@ -359,7 +361,8 @@ copy.
    as deleted is deleted; each it names as renamed is moved. The
    only step a copy cannot do. *Its story: devlog 2026-09-25, later.*
 5. **Register.** One line in the CBC Run's Decisions Log: the date, the
-   Delivery Pin, what came, what was declined and where its need went. Agent
+   new Delivery Pin, the Read-Through Commit the Delivery Note names,
+   what came, and each declined edit with where its need went. Agent
    side only, and in the last commit, where every copy equals the
    Delivery Pin. Then the Delivery Staging goes: the directory named
    for the Delivery Pin, and its Delivery Note. Nothing else goes:
