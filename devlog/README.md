@@ -10,7 +10,7 @@ its date, then in brackets the work it was part of.
 For future-you: fragments
 fine, honesty mandatory. Never clean up. Mark dead ends loudly with
 "DEAD END:" so they're greppable. End every session with a "Resume:"
-line — cheapest save-point there is.
+line, the cheapest place to resume from.
 
 <!-- Why the form is as it is: (docs/conventions/project-recording/
      §4.4, How the devlog is written).

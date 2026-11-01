@@ -68,8 +68,8 @@ and where each is explained, is the records map:
 <!-- A line here is true now, and meant for someone arriving from
      outside. What changes weekly is TODO.md's; why is the ADRs'; how
      it went is the devlog's. A missing section is not an omission: it
-     arrives when a Plan Step's gate makes it true — projection follows
-     truth.
+     arrives when a Plan Step's gate makes it true: the README says only
+     what is already true.
      Why the form is as it is: (docs/conventions/project-recording/
      §7.4, How a README is written).
      foundation: the project-recording convention -->
