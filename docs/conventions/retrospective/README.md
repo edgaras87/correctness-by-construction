@@ -169,7 +169,7 @@ from `RETRO.md`.
 Two Agent Skills, because each Plan Step is bound to a moment the agent would
 otherwise have to notice: the CBC Run finishing its building, and
 `RETRO.md` closing. A Plan Step opens each, and names the Agent Skill: where a pointer
-is placed decides whether it fires (`docs/models/agent.md` §12.2, *On the Pulled Channel*).
+is placed decides whether it fires (`docs/models/agent.md` §12.2, *Claims on the Pulled Channel*).
 
 A section in the plan did not work. Its moment was the project's
 end, which a CBC Run that stops early never reaches. And a section

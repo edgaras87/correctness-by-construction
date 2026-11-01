@@ -6,8 +6,8 @@ from an idea to what work produces, and up from work to a new idea.
 Its job is to answer, for any text, *what kind is this, and what
 does it stand on* — instead of each session re-deriving the picture.
 
-A draft: written from one full chain, the agent's, and checked
-against the concept's and a record's.
+A draft: written from one full chain, the Agent Model's (§7, *One
+chain here*), and checked against the concept's and one record's.
 
 This is an Idea Model: the top Canonical Description of its chain. It binds
 what stands on it. When the two disagree, either side may be
@@ -33,7 +33,7 @@ written from the one before it. A chain may start below an Idea Model:
 
 | Kind | What it is | Here |
 |---|---|---|
-| Idea Model | an idea any repo can adapt; its rules vary by repo, like an interface | `docs/models/`: agent, tiers, this one |
+| Idea Model | an idea any repo can adapt; its rules vary by repo, like an interface | `docs/models/`: the Agent Model, the Tiers Model, this one |
 | Canonical Description | how one thing is understood today, written down | a convention's manual; the concept, `concept/` |
 | Work Approach | how a piece of work is done | an Agent Skill, an Agent Rule, an Approach on Trial, a record's form in its header comment |
 | output | what the work produces | a record's entries, a CBC Run's Invariant Slices and code |
@@ -66,12 +66,13 @@ A lower text relies on an upper one; an upper text at most lists
 what stands on it.
 
 A line that relies on a fact points at its home at its own level or
-above, never below. Sideways is a fact whose home sits beside the
-line. A line that only names or lists a text, such as the record a
+above, never below. A sideways link points at a fact whose home is
+at the line's own level. A line that only names or lists a text, such as the record a
 Canonical Description is about or what stands on it, may name any level:
 naming is not a link.
 
-A reference down is placed upward. Where the lower text holds an
+A link that would point down is fixed by moving its idea up. Where
+the lower text holds an
 idea general enough, the idea is written into the upper text in
 general words, and the lower text stands on it. Where it holds only
 one repo's specifics, the upper text says one general line. A marked
@@ -108,9 +109,8 @@ outputs ──► Output Shape
   to be used elsewhere. Here, for example, the Tiers Model took the
   Exchange Convention's general facts on 2026-10-28, by an Approach on
   Trial still open, `.claude/approaches-on-trial/model-placing.md`.
-  The Idea Models before this one came from the handbook, the repo
-  that held the working arrangement before this one, now history
-  (ADR-0038).
+  The earlier Idea Models came from the handbook, the repo that held
+  the working arrangement before this repo, now history (ADR-0038).
 - **An Output Shape** comes from outputs that exist.
 
 So a new text finds its foundation by looking up this path for the
@@ -121,12 +121,12 @@ stand on.
 The steps between repos, a CBC Run's lesson reaching the Concept Deliverer, are the Tiers Model's
 (`docs/models/tiers.md` §3, *The flows*).
 
-### 4.3 After a birth
+### 4.3 After the step up
 
 The lower text is rewritten to stand on the new one. An Agent Skill
 drafted as an Approach on Trial is rewritten from the convention
 written out of it. A manual whose idea became an Idea Model stands on
-it. Birth goes up; afterwards, reliance goes up too.
+it. A new text is written up; afterwards, reliance goes up too.
 
 ## 5. An Idea Model and a concept
 
@@ -135,11 +135,11 @@ Both sit at the top of a chain. They differ in where things vary:
 - **An Idea Model's rules vary by repo.** Each repo adapts it in its own
   manual.
 - **A concept has one form and one home.** It is copied whole, and
-  only its outputs vary. A CBC Run edits its copy only from a mistake
-  lived, and the edit goes home.
+  only its outputs vary. A CBC Run edits its copy only after a
+  mistake it met, and the Concept Deliverer reads the edit.
 
-No Idea Model sits above correctness by construction. What a concept is
-waits for a second Concept Repo.
+No Idea Model sits above correctness by construction. An Idea Model
+of what a concept is waits for a second Concept Repo.
 
 ## 6. A convention
 
@@ -159,13 +159,13 @@ Foundation Line.
 ### 6.2 What a convention asserts
 
 That its rules are rules, not a method the work must follow: the
-work may ignore one, with a reason it can give. That freedom is the
-worker's, in one case, and the reason is written where that
-project's records live.
+work may ignore one, with a reason it can give. The worker may use
+that freedom one case at a time, and writes the reason in that
+project's records.
 
 What falsifies it: a project ignores a convention, gives no reason,
-and comes to no harm. That convention is one nobody owes anything
-to: a method filed in the wrong place.
+and comes to no harm. Then the convention asked for nothing a
+project needs: it is a method filed in the wrong place.
 
 ### 6.3 A convention and the concept
 
@@ -184,11 +184,11 @@ A project holds no convention, only the Work Approaches made from one.
 ## 7. One chain here
 
 Each file names what it stands on, so the chains are not listed
-here. The agent's is the worked example. The Agent Model stands
+here. The Agent Model's chain is the worked example. The Agent Model stands
 above the agent-arrangement manual. That manual stands above the
 Entry File's guard, the comment in it that says what the file must
-not become, and the Decisions Log's header. Their content is the
-output. Each
+not become, and the Decisions Log's header. What the Entry File and
+the Decisions Log hold is the output. Each
 manual's *Why it arrives this way* points at the part of the Agent
 Model it reasons from.
 
@@ -197,4 +197,4 @@ Model it reasons from.
 - **Which repo a text belongs to** — `docs/models/tiers.md`.
 - **How a text reaches an agent** — `docs/models/agent.md`.
 - **How a link is written and checked, and a disagreement found
-  and decided** — this repo's conventions, not this Idea Model.
+  and decided** — `docs/conventions/facts-in-sync/`, not this Idea Model.

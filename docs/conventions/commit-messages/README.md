@@ -116,7 +116,7 @@ is following neither and discovering the shape afterwards. *Its story: devlog 20
 An Agent Skill, opened at the moment of writing a commit message
 (`docs/models/agent.md` §4.2, *Pulled Channel*), because the rule held in an
 Entry File, through the Ambient Channel, was present and unfollowed (*What it is for*;
-`docs/models/agent.md` §12.1, *On the Ambient Channel*). The commit is also the moment two other
+`docs/models/agent.md` §12.1, *Claims on the Ambient Channel*). The commit is also the moment two other
 rules bind at, the `agent` scope and the stop. That is why those
 sentences live in this Agent Skill and nowhere else.
 

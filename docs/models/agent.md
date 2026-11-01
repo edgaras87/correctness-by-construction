@@ -34,7 +34,7 @@ The practical question the Idea Model exists to answer: *given a convention
 sitting in a project, how does it reach the agent that is supposed to follow it?* (§8, *Choosing a channel*; §9, *Where each
 convention lands*).
 
-## 2. Components
+## 2. The agent's components
 
 1. **The repo** — the only durable memory. Files, and their history.
 2. **The channels** — how text reaches the agent (§4, *The channels*).
@@ -42,7 +42,7 @@ convention lands*).
 4. **The write-back** — what the agent leaves in the repo (§6, *Write-back and persistence*).
 5. **The Enforcement Gate** — enforcement, which sits outside all of it (§7, *The Enforcement Gate*).
 
-## 3. The components, drawn
+## 3. A drawing of the components
 
 ```
                      ┌─────────── the repo ───────────┐
@@ -86,16 +86,17 @@ Entry Files loaded at session start, before the first task.
   compression loses parts (§12, *Claims* M1). The Tool Binding can lose parts too:
   what the tool loads is not always the file on disk (§10, *The Tool Bindings*).
 - **Ownership:** the project's text, or one operator's. An operator's
-  standing file:
+  own file, loaded only in their checkout:
   - fires and costs like the Entry File;
   - belongs to one person and one checkout;
   - stays out of the repo's history;
   - never has its words enter records.
 
-  Repeated use of it for a rule that would be true in any project is
-  the Told Channel's diagnostic below, parked rather than fixed.
-- **Suits:** orientation and routing. Where to look, what kind of repo
-  this is, what must never happen — if it is short.
+  Using it again and again for a rule true in any project is the Told
+  Channel's diagnostic (§4.4, *Told Channel*): the missing convention
+  is worked around, not written.
+- **Suits:** orientation and routing, kept short: where to look, what
+  kind of repo this is, what must never happen.
 
 ### 4.2 Pulled Channel
 
@@ -147,9 +148,10 @@ Not a channel into the window. The convention arrives as **files** and
 works by existing: `.gitignore`, `.editorconfig`, a directory layout, a
 committed template.
 - **Fires:** never. There is nothing to fire.
-- **Guarantees:** the outcome, not the behaviour — the agent does not
-  comply with `.gitignore`, it simply cannot see what git hides.
-- **Costs:** only what applies at bootstrap can be delivered this way.
+- **Guarantees:** the outcome, not the behaviour. The agent does not
+  comply with `.gitignore`. It cannot see what git hides.
+- **Limits:** only what holds from a project's first commit can be
+  delivered this way.
 - **Suits:** anything expressible as repo state rather than as
   instruction. **This is the strongest delivery available**, and the only one immune to every claim (§12, *Claims*).
 - **Self-enforcing:** the property that makes it strong. A rule is
@@ -157,11 +159,11 @@ committed template.
   front of you. Here, for example, the rule for filling in `PLAN.md`
   sits inside `PLAN.md`, so it cannot be skipped without opening the
   file it governs. No trigger is needed because the act is the trigger. This is
-  how a text convention can be installed at all: `.gitignore` is
-  self-enforcing by mechanism; a Record Stub with its rules in comments is
-  self-enforcing by placement, and only while the comments stay in the
-  file. It covers the act, not the decision to act: a record's format
-  travels this way, its timing cannot.
+  how a text convention can be installed at all. `.gitignore` is
+  self-enforcing by mechanism. A Record Stub with its rules in
+  comments is self-enforcing by placement, and only while the comments
+  stay in the file. It covers the act, not the decision to act. A
+  record's format can be delivered this way. Its timing cannot.
 
 ## 5. The context window
 
@@ -181,9 +183,11 @@ committed template.
   weighs them in that order. A rule in the prompt beats the same
   rule's contrary in a file. A file's rule holds only until the prompt
   says otherwise (§12, *Claims* W2). Every file, through the Ambient
-  Channel or the Pulled Channel, sits in the lowest role. So a rule that rests on a fact of the session — a
-  reviewer is present, a repo is out of bounds — cannot live in a file
-  alone: the file cannot know the session, and the prompt outranks it.
+  Channel or the Pulled Channel, sits in the lowest role. So a rule
+  that rests on a fact of the session cannot live in a file alone.
+  Such a fact is, for example, that a reviewer is present, or a repo
+  is out of bounds. The file cannot know the session, and the prompt
+  outranks it.
   It goes through the Told Channel, every session, by design (§8, *Choosing a channel*).
 
 - **Ordered, not prioritised.** Position is not rank.
@@ -208,8 +212,8 @@ human review. The tool's permission prompt is a human review the tool
 forces.
 
 **No channel choice substitutes for an Enforcement Gate.** If a rule
-must never be violated, the Ambient, Pulled or Pushed Channel changes
-the odds; only an Enforcement Gate changes the outcome (§12, *Claims* G1).
+must never be violated, the Ambient Channel, the Pulled Channel or the
+Pushed Channel changes the odds; only an Enforcement Gate changes the outcome (§12, *Claims* G1).
 
 ## 8. Choosing a channel
 
@@ -231,9 +235,10 @@ with two texts that can disagree (§5, *The context window*).
 
 ## 9. Where each convention lands
 
-Shown by each convention's Work Approaches: an Agent Skill for a rule
-bound to a moment, Record Stubs and Agent Skill Templates for a rule
-carried in the files a project is born with. The choice rests on the choosing table (§8, *Choosing a channel*). No field in a file
+Each convention's Work Approaches show where it lands: an Agent Skill
+for a rule bound to a moment, Record Stubs and Agent Skill Templates
+for a rule carried in the files a project is born with. The choice
+rests on the table in §8 (§8, *Choosing a channel*). No field in a file
 names a channel.
 
 No table here: a list of each convention's channel would be a second
@@ -241,8 +246,8 @@ home for facts this Idea Model does not own.
 
 ## 10. The Tool Bindings
 
-Tool Bindings are Layer 2. Layer 1 names capabilities; a Tool Binding names the mechanisms one tool
-gives each of them: which file the Ambient Channel loads, what the
+Tool Bindings are Layer 2. Layer 1 names capabilities. A Tool
+Binding names the mechanisms one tool gives each of them: which file the Ambient Channel loads, what the
 Pushed Channel carries, what an Enforcement Gate checks. It changes
 with the tool's releases. So the repo that uses the tool writes it,
 beside its arrangement. This Idea Model changes only when an idea
@@ -256,7 +261,7 @@ has shown:
   drop part of a file, a comment for one, before it reaches the
   window.
 
-## 11. Out of scope
+## 11. What the model leaves out
 
 - **Project type.** Being a backend does not change how context loads.
   Type-specific guidance is a playbook.
@@ -274,16 +279,16 @@ proven wrong.
 
 `evidenced` = observed. `assumed` = asserted but never observed —
 including assertions already acted on. Each piece of evidence says
-where it was seen: the handbook's history, this repo's, or a CBC Run's.
-The handbook is the repo that held the working arrangement before
-this one, now history (ADR-0038).
+where it was seen: this repo's history, a CBC Run's, or the
+handbook's. The handbook is the repo that held the working
+arrangement before this one, now history (ADR-0038).
 
 Evidence from outside is listed under its claim too, marked
 `measured` for a controlled study with numbers, `reported` for a
 first-hand or bug report. It leaves the status alone: a claim is
 evidenced only when it was seen in this work.
 
-### 12.1 On the Ambient Channel
+### 12.1 Claims on the Ambient Channel
 
 **A1 — Presence is not compliance.** A rule being in context does not
 mean it is followed.
@@ -293,12 +298,13 @@ mean it is followed.
   15 of the handbook's first 20 commits exceed it. Present, correct,
   unfollowed.
 - `evidenced` here too — 125 of this repo's 233 commits from
-  2026-09-20 to 09-29 run over 50 characters. In this repo the
-  commit-messages Agent Skill is opened at every commit. So did seven
-  of the eight revisions of commit plans of 2026-09-29, the longest at
-  67. CBC Run 3's subjects crossed 50 at every Plan Step read, at 52
-  to 56 (devlog, 2026-09-10 to 09-14).
-- **Open question it raises:** unenforced, or mis-set.
+  2026-09-20 to 09-29 run over 50 characters, though the
+  commit-messages Agent Skill is opened at every commit here. Seven of
+  the eight revisions of commit plans of 2026-09-29 ran over too, the
+  longest at 67. CBC Run 3's subjects crossed 50 at every Plan Step we
+  read, at 52 to 56 (this repo's devlog, 2026-09-10 to 09-14).
+- **Open question it raises:** is the limit only unenforced, or set
+  wrong?
   `docs(handbook):` consumes 15 of the 50 characters before the verb.
   Here, for example, the commit-plan Agent Skill's own revision form,
   `docs(agent): revise commit plan — `, consumes 34 before saying
@@ -313,7 +319,7 @@ Channel's text, the lower compliance with any single rule in it.
   (Jaroslawicz et al., arXiv 2507.11538, 2025). The task was writing
   with keywords, not working from an Entry File.
 
-### 12.2 On the Pulled Channel
+### 12.2 Claims on the Pulled Channel
 
 **P1 — A pointer is not the file.** An agent can act on a rule's topic
 without opening the file that states it.
@@ -333,32 +339,33 @@ list at session start.
 - *Refuted by:* both placements performing the same. The test that
   can run: a CBC Run Reading of a CBC Run that holds one rule both ways, pointed
   at from an Agent Skill at its moment and from the Entry File alone.
-- `measured` elsewhere, against it, though not on P2 itself — the
+- `measured` elsewhere, on a nearby question, not P2 itself: the
   same Vercel evals passed 100% with an index of the docs in the
   Entry File, 79% with an Agent Skill the prompt named, and 53% with
   an Agent Skill alone. An Agent Skill's trigger reaches through the
   Ambient Channel too, its name and description loaded at session
-  start, so this compares two pointers read then. One framework, the
-  vendor's own suite. Khatri (arXiv 2607.27250, 2026) found no
+  start, so this compares two pointers read then. Both numbers come
+  from one framework, tested by its vendor's own suite. Khatri (arXiv 2607.27250, 2026) found no
   difference between a guide always loaded and topic files read by
-  choice, in a study too small to see less than 30 points.
+  choice, in a study too small to see less than 30 percentage
+  points.
 
-### 12.3 On the Pushed Channel
+### 12.3 Claims on the Pushed Channel
 
 **U1 — A trigger fails in both directions.** A condition can fire when
 it should not (noise, which trains the reader to ignore it) and fail to
 fire when it should (silence, indistinguishable from having no rule).
 - `assumed` · *Refuted by:* a condition reliably exact in practice.
 
-### 12.4 On the Observed Channel
+### 12.4 Claims on the Observed Channel
 
 **O1 — Divergence is invisible without a comparison.** Nothing causes
 two disagreeing copies of a rule to be noticed unless something
 compares them.
 - `evidenced` — here, three divergences were missed until a
   comparison was run for another reason:
-  - ADR-0024 decision 4 said `fills/` retires, and it had kept a
-    member since 2026-09-18; found on 2026-09-29 while PLAN's Step 8
+  - ADR-0024 decision 4 said `fills/` retires, and it still held one
+    file, added 2026-09-18; found on 2026-09-29 while PLAN's Step 8
     was being shrunk.
   - PLAN's decision index went stale twice, found each time while
     something else was being written.
@@ -366,11 +373,11 @@ compares them.
     records "under the same stubs" after ADR-0041 had split its PLAN
     from the Record Stub; found at the reviewer's question.
 
-  Earlier, the handbook's three-place hygiene update (its devlog, k)
-  was caught by hand.
+  Earlier, a hygiene change the handbook needed in three places was
+  caught by hand (the handbook's devlog, entry k).
 - *Refuted by:* an agent flagging a stale copy unprompted.
 
-### 12.5 On the context window
+### 12.5 Claims on the context window
 
 **W1 — Conflict fails silently.** Faced with two conflicting rules, an
 agent resolves one and proceeds rather than reporting the ambiguity.
@@ -385,14 +392,14 @@ prompt. The prompt outranks anything a tool returned. So a file's rule
 loses to a contrary rule in the prompt, and a rule given through the
 Told Channel exists only in the session it was told to.
 - `evidenced` · three CBC Runs of the Pure Seed, reported 2026-09-10:
-  a stop the change-plans Agent Skill of the time asked for, skipped
-  on an instruction the prompt never gave;
-  a checkout opened because the prompt's "stay inside this repository"
-  had not fired yet while the CBC Run's own procedure named a checkout on
-  disk. *Refuted by:* an agent holding a file's rule against a prompt
+  - a stop the change-plans Agent Skill of the time asked for,
+    skipped on an instruction the prompt never gave;
+  - a checkout opened because the prompt's "stay inside this
+    repository" had not fired yet, while the CBC Run's own procedure
+    named a checkout on disk. *Refuted by:* an agent holding a file's rule against a prompt
   that contradicts it.
 
-### 12.6 On persistence
+### 12.6 Claims on persistence
 
 **S1 — A record is only as good as its self-containment.** A record
 assuming context from the session that wrote it is unreadable later,
@@ -400,7 +407,7 @@ including by the same agent.
 - `assumed` · *Refuted by:* acting correctly on a terse old record
   without asking.
 
-### 12.7 On summaries
+### 12.7 Claims on summaries
 
 **M1 — A hand-written summary is lossy on arrival.** Summarising drops
 parts of a rule immediately, before any drift.
@@ -415,19 +422,19 @@ regeneration detects. A hand-written one can disagree while both files
 look current.
 - `evidenced` (definitional)
 
-### 12.8 On the Enforcement Gate
+### 12.8 Claims on the Enforcement Gate
 
 **G1 — Text does not enforce.** No file prevents a violation; only a
 check outside the text can.
 - `evidenced` — same measurement as A1. The rule existed in two
-  channels for the whole life of the handbook, no Enforcement Gate existed, and
-  it was broken 15 times. Here too: nothing gates a subject's
+  channels for the whole life of the handbook. No Enforcement Gate
+  existed. It was broken 15 times. Here too: nothing gates a subject's
   length, and A1's count is 125 of 233.
 - The tool's documentation says the same: an instruction in
   `CLAUDE.md` or an Agent Skill "is a request, not a guarantee", and
   guardrails go in hooks (checked 2026-10-24).
 
-### 12.9 Scorecard
+### 12.9 The claims' scorecard
 
 | Status | Claims |
 |---|---|
@@ -437,5 +444,5 @@ check outside the text can.
 Six of twelve remain assumed. **P2** decides router versus rulebook,
 and a CBC Run Reading is what can resolve it.
 
-Note that the Installed Channel carries no claims. It is the only delivery that
+The Installed Channel carries no claims. It is the only delivery that
 does not depend on an agent doing anything.

@@ -205,7 +205,7 @@ three the Entry File's guard comment states:
   `paths:` (§3.9, *An Agent Rule always loaded*): the convention's channel, not a line here.
   **It points; it never restates**: a summary is lossy on arrival,
   and then two files disagree while both look current
-  (`docs/models/agent.md` §12.7, *On summaries*, claim M1).
+  (`docs/models/agent.md` §12.7, *Claims on summaries*, claim M1).
 - **No moment.** A line with a moment goes where the moment is:
   - the record's Record Stub;
   - README;
@@ -266,7 +266,7 @@ moves, a convention is adopted, or the build command changes, and at the re-read
 The Entry File goes through the Ambient Channel (`docs/models/agent.md` §4.1, *Ambient Channel*).
 It is paid on every task, including the tasks it is irrelevant to. Each
 line added lowers compliance with every other
-(`docs/models/agent.md` §12.1, *On the Ambient Channel*, claim A2,
+(`docs/models/agent.md` §12.1, *Claims on the Ambient Channel*, claim A2,
 assumed). So its size is a running concern, not a one-time one.
 
 The cost is what the tool delivers, not the file. HTML comments are

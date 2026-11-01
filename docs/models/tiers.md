@@ -14,7 +14,12 @@ the wrong one (`docs/models/idea-to-output.md` §3.3, *Settling a disagreement*)
 
 ---
 
-## 1. The tiers, drawn
+## 1. A drawing of the tiers
+
+In the drawing, "conventions, container, models" are the
+conventions, the Container Group and the Idea Models; a Concept
+Repo's "mental layer" is its Canonical Descriptions, and its
+"container and execution copies" are what is made usable from them.
 
 ```
 (no repo)     how you work      method: conventions, container, models —
@@ -31,10 +36,10 @@ runs          what you try      projects, experiments
 ### 2.1 The empty top tier
 
 The top tier is empty: today the Concept Repo holds the method its
-Run Repos are born with, as its own. A second repo that needs it
-copies parts. A third does the same. Only after three is a repo above
-them considered, from what the three lived. Until then the upward
-channels end at the Concept Repo.
+Run Repos are born with, as its own. A second Concept Repo that
+needs the method copies parts. A third does the same. Only after
+three is a repo above them considered, from what the three lived.
+Until then the upward flows end at the Concept Repo.
 
 A repo that owned the working arrangement was built once, ahead of
 its evidence, and is history (ADR-0038). It held how projects are
@@ -50,11 +55,11 @@ layers:
 1. Its Canonical Descriptions: the plain-words statement of the idea,
    its rationale, its open questions, and the log of what changed it
    and why.
-2. What is Made Usable from them: Agent Skills, checklists,
+2. What is made usable from them: Agent Skills, checklists,
    templates, birth materials for projects that follow the concept.
 
-Each states which concept version it derives from. Run Repos never
-happen here.
+Each states which concept version it derives from. No Run Repo's
+work is done here.
 
 The **Concept Garden** is whatever holds the Concept Repos together.
 It is a plain folder with no records, no arrangement, and no agent of
@@ -78,46 +83,50 @@ here, for example, the Exchange Convention (`docs/conventions/exchange/`).
 
 ### 3.1 Downward delivery
 
-Down is delivery, in two forms. A copy, always pinned at a commit of the tier above,
-which is what "a concept version" is. And a Delivery Fill: text written at
-birth into a file the Run Repo owns from then on. It is never
-re-copied. At the Run Repo's retrospective it is folded back by name
-into the playbook that seeded it. Here, for example, a playbook's Plan
+Down is delivery, in two forms:
+
+1. a copy, always pinned at a commit of the tier above: that pin is
+   what "a concept version" is;
+2. a Delivery Fill: text written at birth into a file the Run Repo
+   owns from then on. It is never re-copied. At the Run Repo's
+   retrospective it is merged back by name into the playbook it came
+   from. Here, for example, a playbook's Plan
 Steps are written into a CBC Run's plan (`delivery/README.md` §2,
 *Three ways a file lands*).
 
-At a Run Birth the two meet. Both are input to the Run Repo's
-framing, which decides what to keep of them; neither is a settled
-agreement.
+At a Run Repo's birth the two meet. Both are input to the Run Repo's
+first decisions, which choose what to keep of them. Neither binds
+it.
 
 ### 3.2 The Told Channel
 
-The Told Channel is not delivery. A tier above may hand a Run Repo something as session input: a warning the
-Run Repo's own derivation missed, given after that derivation is on record,
-as an experiment's instrument. That is the Told Channel, unpinned by
-design (`docs/models/agent.md` §4.4, *Told Channel*). The Run Repo's
-records say it was told. It is not a third form of delivery, and a Run
-Repo that leans on it has the Told Channel's diagnostic. Nor is a copy
-the Run Repo has edited between two Delivery Pins (§3.5, *What holds
-on every flow*, fact 4): delivery comes down, and an edit goes up.
+The Told Channel is not delivery, and is unpinned by design
+(`docs/models/agent.md` §4.4, *Told Channel*). A tier above may hand a
+Run Repo a warning as session input, after the Run Repo's own work
+has missed it and is on record. The Run Repo's records say it was
+told. A Run Repo that leans on it has the Told Channel's diagnostic.
+A copy the Run Repo has edited between two Delivery Pins is not a
+form of delivery either (§3.5, *What holds on every flow*, fact 4):
+delivery comes down, and an edit goes up.
 
 ### 3.3 Upward harvest
 
 Up is harvest, and only through records: the tier above reads a
 Run Repo's records, read-only, and the Run Repo sends nothing. A Run Repo's
 surprise about the concept becomes a concept change, and what is
-Made Usable is re-derived from it. A method lesson stops at the
-Concept Repo while it holds the method. Nothing edits an upstream
-repo as a side effect of downstream work, in either direction.
+made usable is re-derived from it. A method lesson stops at the
+Concept Repo while it holds the method. Work in one repo never edits
+another as a side effect, up or down.
 
-### 3.4 The Delivery Pin and the talk
+### 3.4 The Delivery Pin and documents
 
-The Delivery Pin follows the talk, the documents the tiers exchange.
+The Delivery Pin, the commit of the tier above that a delivery's
+copies equal, follows the documents the tiers exchange.
 No tier's agent reads a tier above it, so every delivery is a
 document, and its Delivery Pin moves with it. A document taken
 without its Delivery Pin moving leaves the Run Repo's record of what
-it holds wrong. That happened once, and it is why the Delivery Pin
-moves with every Delivery Take (§3.5, *What holds on every flow*).
+it holds wrong. That is why the Delivery Pin moves with every
+Delivery Take (§3.5, *What holds on every flow*; ADR-0036).
 
 ### 3.5 What holds on every flow
 
@@ -125,7 +134,7 @@ Five facts hold between a tier and the one below it. A design that
 ignores one describes a different system.
 
 1. **The tier below is blind.** It holds no address for the tier
-   above, and cannot fetch (§3.4, *The Delivery Pin and the talk*).
+   above, and cannot fetch (§3.4, *The Delivery Pin and documents*).
 2. **Nothing arrives by itself.** Every delivery is decided above
    and carried across by a person, or by an agent on a person's
    word. Never automatic, never started below.
@@ -157,6 +166,7 @@ answers to what it was given.
 
 ### 4.2 The dependency rule
 
-Downward: only pinned copies. Upward: only records. A repo lives in
-exactly one tier; a Concept Repo maintaining its own records, and
-today its method, is the concepts tier's work, and not a Run Repo's.
+Downward: only pinned copies and Delivery Fills. Upward: only
+records. A repo lives in exactly one tier. A Concept Repo that keeps
+its own records, and today its method, does the concepts tier's
+work, not a Run Repo's.
