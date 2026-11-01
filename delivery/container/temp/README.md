@@ -10,5 +10,5 @@ history. A file is deleted once it has served, and git keeps it.
   keeps to `.claude/`, a fact to where its kind lives.
 - **Deliveries arrive here,** as a Delivery Staging: a directory named for the
   Concept Deliverer's commit, its Delivery Note beside it. They are taken as the delivered-copies Agent Rule says
-  (`.claude/rules/delivered-copies.md`, rule 5, *After the reply, the re-pin: the Delivery Take*). A Delivery Staging is never
+  (`.claude/rules/delivered-copies.md`, rule 5, *After the reply, the Delivery Take*). A Delivery Staging is never
   committed. The Delivery Take removes it, and only it.

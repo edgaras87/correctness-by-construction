@@ -39,7 +39,7 @@ The reviewer settles what this reading finds; anything the writer adds
 beyond it is named as theirs. Then the Output Shape is tried on the
 examples it came from, and on an earlier version where a miss is
 known. An Output Shape catches a part that is missing, not a part that kept
-its place but lost half its meaning: only the source shows that.
+its place but lost half its meaning: only reading the output itself shows that.
 
 ## 2. Where an Output Shape lives
 
@@ -66,7 +66,7 @@ the Output Shape, is shown before it is made, never applied silently:
   to it.
 - **The Output Shape was wrong here.** The output stands; the Output Shape
   changes: a project's own with a dated line, a delivered one under
-  `delivered-copies.md`.
+  the delivered-copies Agent Rule.
 - **Each had something.** The Output Shape takes what the output found,
   and the output is brought to the changed Output Shape.
 - **The output is a different kind.** Both stand, and a new Output Shape
@@ -84,7 +84,7 @@ the Red Run.
 
 When an Output Shape is written or changed so that it names such a part,
 the Agent Skill that runs the work is checked. If the Agent Skill does not ask
-for that part, it is changed too, under `delivered-copies.md`.
+for that part, it is changed too, under the delivered-copies Agent Rule.
 Otherwise the Plan Step Gate finds the part missing when it is too late to
 produce, and the work must be redone.
 
@@ -95,7 +95,7 @@ TODO's *To the deliverer* offers it. The Concept Deliverer reads it at its
 next CBC Run Reading. An Output Shape marks what any project would want (its
 skeleton) apart from this project's example (its illustration), so
 the Concept Deliverer can take one and leave the other. How an edit reaches
-the Concept Deliverer is `delivered-copies.md`'s.
+the Concept Deliverer is the delivered-copies Agent Rule's.
 
 ## 6. What this does not govern
 

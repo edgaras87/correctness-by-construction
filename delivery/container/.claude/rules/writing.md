@@ -66,7 +66,7 @@ commit messages, comments. How it reads, never what it says.
     - standing alone without its parent heading: *How an Invariant
       Slice is cut*, never *How*.
 
-    The point goes in the first sentence. A record's fixed headings, a stage heading and a
+    The point goes in the first sentence. A record's fixed headings, an Agent Skill Stage or Approach on Trial Stage heading, and a
     numbered rule's bold lead are not titles under this rule.
 11. **Change only the lines the change needs.** The rest stand as
     they are. Markdown has no line width here; 72 is a commit body's

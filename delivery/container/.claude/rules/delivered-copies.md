@@ -9,7 +9,7 @@ paths:
 foundation: the exchange convention
 ---
 
-# Delivered copies: pinned, edited in place, re-pinned
+# Delivered copies: pinned, edited in place, pinned again
 
 <!-- What this CBC Run holds from its Concept Deliverer, and what it may do to
      it. The Concept Deliverer's side of the same exchange is not here; the
@@ -26,7 +26,7 @@ foundation: the exchange convention
    One Delivery Pin covers everything delivered: the Agent Skills, Agent Rules, Output Shapes
    and Approaches on Trial under `.claude/`, `docs/concept/`, and the
    delivered Glossary Names in `docs/glossary/`. The concept chapters are
-   copies too. The records (`PLAN`, `TODO`,
+   copies too. The records (`PLAN.md`, `TODO.md`,
    the devlog, the glossary) were delivered once as Record Stubs, and the Entry File
    and `README.md` were composed once. All of them are this CBC Run's own, not copies, and
    this file does not govern them.
@@ -59,20 +59,20 @@ foundation: the exchange convention
 
    A concept chapter is edited only from a mistake lived here:
    Agent Skills are written from the chapters and readers learn the method
-   from them, so lived work can show one wrong. A preference for
+   from them, so work in this project can show that a chapter is wrong. A preference for
    other wording is never the reason.
 
    An Approach on Trial takes one more edit: a dated note of each
    use under its *Uses*, in this project's own terms. It is how the
-   use reaches the Concept Deliverer, so the second condition does not hold
-   it; the other two do.
+   use reaches the Concept Deliverer, so the second condition does not apply
+   to it. The first and third do.
 
 3. **What this project needs that no copy should carry goes into
    the project's records,** where that kind of thing already lives:
    a Plan Step Gate item in PLAN, an ADR, an Invariant Slice Record, the Entry File. The
    copy stays general.
 
-4. **At every Plan Step's close, the CBC Run Asks.** One TODO line per edited
+4. **At every Plan Step's close, the CBC Run writes its CBC Run Asks.** One TODO line per edited
    copy: "Concept Deliverer: evaluate this CBC Run's changes to `<copy>` since
    `<Delivery Pin>`". The lines go under one heading kept for the purpose,
    `## To the deliverer`. A rewrite of another section then cannot
@@ -89,9 +89,9 @@ foundation: the exchange convention
    declined or held. The CBC Run Ask is done at the Delivery Take
    (rule 5).
 
-5. **After the reply, the re-pin: the Delivery Take.** The Concept Deliverer's new
+5. **After the reply, the Delivery Take.** The Concept Deliverer's new
    version arrives as a Delivery Staging in this repo's own `temp/`, a directory
-   named for the hash, with the Delivery Note beside it. **Nothing in `temp/`
+   named for the Concept Deliverer's commit, with the Delivery Note beside it. **Nothing in `temp/`
    is in force until it is copied into place.** A staged Agent Skill is a
    file, not an Agent Skill, and a Plan Step that opens meanwhile runs on the held
    copy.
@@ -119,14 +119,14 @@ foundation: the exchange convention
    6. **Write one Decisions Log entry** carrying both numbers: the new
       Delivery Pin, and the Read-Through Commit the Delivery Note names. The copy is pristine
       again, and the CBC Run Ask leaves with the Delivery Pin.
-   7. **Remove the Delivery Staging,** the directory named for the hash and
+   7. **Remove the Delivery Staging,** the directory named for the Concept Deliverer's commit and
       its Delivery Note, and nothing else. `temp/` may hold the project's own
       drafts, which are not the delivery's to clear.
 
    The Delivery Take's commits follow `.claude/skills/commit-messages/`. When
    there is more than one, the chapters' commit comes first, and the
    entry goes in the last, where every copy equals the Delivery Pin. A
-   declined edit is gone with the re-pin, and never edited back in.
+   declined edit is gone at the Delivery Take, and never edited back in.
    If the project still needs what was declined, that need goes into
    the records under rule 3, and the Decisions Log entry says so.
 
@@ -137,7 +137,7 @@ foundation: the exchange convention
 6. **If a Plan Step opens before the reply,** work continues on the
    edited copy, and edits keep landing under rule 2. They stack on
    this side only. The Concept Deliverer diffs against the Delivery Pin either way,
-   and the re-pin still lands whole. Being behind the Concept Deliverer is
+   and the Delivery Take still copies whole. Being behind the Concept Deliverer is
    acceptable. Being behind this CBC Run's own lessons is not.
 
 7. **A copy this project has finished with is edited the same way,
@@ -160,7 +160,7 @@ foundation: the exchange convention
    Agent Skill Template's header. The Agent Skill Template stays a pinned copy: a change to
    it, such as a line every project needs, is an edit to the
    copy under rule 2. Filled values never go back to the Concept Deliverer
-   (CBC `docs/conventions/exchange/` §5.8, *Agent Skill Templates*).
+   (the Concept Deliverer's `docs/conventions/exchange/` §5.8, *Agent Skill Templates*).
 
    When this project's decided constraints differ from what a
    Agent Skill Template assumes, it is off-template:

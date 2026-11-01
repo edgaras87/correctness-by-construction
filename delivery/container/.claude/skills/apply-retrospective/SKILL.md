@@ -1,6 +1,6 @@
 ---
 name: apply-retrospective
-description: Apply a finished retrospective to the CBC Run it looked back on, before Release. Use when RETRO.md is closed and the reviewer asks to apply it to this CBC Run, or to "fix the records before Release". Do NOT use to decide what the next CBC Run does differently (that is retrospective), or to add new proof.
+description: Apply a finished retrospective to the CBC Run it looked back on, before Release. Use when RETRO.md is closed and the reviewer asks to apply it to this CBC Run, or to "fix the records before Release". Do NOT use to decide what the next CBC Run does differently (that is the retrospective Agent Skill), or to add new proof.
 foundation: the retrospective convention
 ---
 
@@ -46,10 +46,10 @@ and checks.
    (the decision gets a dated line) **or an earlier row.**
 
 **How a row is decided:**
-- **Apply here** what improves what the CBC Run hands over without
+- **Applied:** what improves what the CBC Run hands over without
   changing what it proved: a plainer sentence, a fact kept once and
   linked.
-- **Next CBC Run only** what changes how a Plan Step runs: the CBC Run's Plan Steps are
+- **Next CBC Run only:** what changes how a Plan Step runs: the CBC Run's Plan Steps are
   closed.
 - **Never** history: devlog entries, closed ADRs, closed Plan Step Gates,
   released CHANGELOG versions, migrations, comments included.
@@ -71,7 +71,8 @@ The reviewer approves it before any change. Order the commits by
 influence:
 - remove repeats before rewriting, so nothing is polished and then
   deleted;
-- regroup before rewriting; fix tags before the words around them;
+- regroup before rewriting;
+- fix tags before the words around them;
 - move a fact to its home before its copy goes;
 - **owners before summaries:** a record that summarizes others comes
   after them, README last;
@@ -95,7 +96,7 @@ own small commits.
 1. **Pass 1, one commit per record, owners first.** Rewrite only the
    paragraphs that fail the writing rule or tell a fact outside its
    home. Then a fresh reader with no part in the rewrite checks
-   the before and after: meaning lost, the writing rule, home. A
+   the before and after: whether meaning was lost, whether the writing rule is met, whether each fact is at its home. A
    second fresh read if the fixes were more than five, never a
    third. Show the reviewer the changes, what each read found, and
    what was skipped as taste.
@@ -105,8 +106,8 @@ own small commits.
    cross-record checks: the records check, stale "now / today / not
    yet" lines, Glossary Names missing from the project's glossary. One
    commit per record that changes.
-3. **The stop rule.** If pass 2 changed only small things, the pass
-   ends. If it changed something real, pass 3 runs over those
+3. **The stop rule.** If pass 2 changed only wording, the pass
+   ends. If it changed a fact, a link or a count, pass 3 runs over those
    records only, and the pass ends there.
 
 **A tool that edits text** (a replace, a move) is checked on what

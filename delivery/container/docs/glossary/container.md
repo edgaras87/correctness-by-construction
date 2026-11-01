@@ -73,7 +73,7 @@
   Hygiene Base's marked line.
 - **Approach on Trial** — the written way of doing one kind of work
   that no Agent Skill covers yet, at `.claude/approaches-on-trial/<work>.md`,
-  drafted by `approach-drafting`.
+  drafted under the approach-drafting Approach on Trial.
 - **Work Approach** — how a piece of work is done: an Agent Skill, an Agent
   Rule, or an Approach on Trial.
 - **Plan Step** — one piece of `PLAN.md`'s work, with a goal and a

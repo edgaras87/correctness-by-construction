@@ -17,10 +17,11 @@ foundation: the commit-messages convention
 ```
 
 The subject says what the commit changes, in the present tense, and
-makes sense alone in `git log --oneline`. Either mood: a change to
-the work reads as a command — "fix race in order creation" — and a
-record as what became true — "TODO asks for a glossary". "Fixed
-race" fails: it reports the author, not the repo.
+makes sense alone in `git log --oneline`. Either mood will do:
+- a change to the work reads as a command, "fix race in order creation";
+- a record reads as what became true, "TODO asks for a glossary".
+
+"Fixed race" fails: it reports the author, not the repo.
 
 ## Types
 
@@ -102,9 +103,9 @@ refresh. Re-land after #58.
 
 `CLAUDE.md` and `.claude/` are the working arrangement.
 `COMMIT-PLAN.md` is committed with them. None is a project record. A
-commit that touches them is scoped `agent` — `chore(agent)` to add,
-install or update an Agent Skill or Agent Rule, `docs(agent)` for a commit plan's
-lifecycle — and touches nothing else.
+commit that touches them is scoped `agent`, and touches nothing else.
+`chore(agent)` adds, installs or updates an Agent Skill or Agent Rule. `docs(agent)` is for a commit plan's
+lifecycle.
 
 ## Rules
 

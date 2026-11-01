@@ -1,6 +1,6 @@
 ---
 name: retrospective
-description: Walk a finished CBC Run part by part and decide what the next CBC Run does differently. Use when the CBC Run has finished building, before Release, or when the reviewer asks for a retrospective, a look back, or "what would we do differently". Do NOT use to fix this CBC Run's records; that is apply-retrospective, after this.
+description: Walk a finished CBC Run part by part and decide what the next CBC Run does differently. Use when the CBC Run has finished building, before Release, or when the reviewer asks for a retrospective, a look back, or "what would we do differently". Do NOT use to fix this CBC Run's records; that is the apply-retrospective Agent Skill, after this.
 foundation: the retrospective convention
 ---
 
@@ -44,7 +44,7 @@ proposes and writes.
 2. **Find what went wrong or cost too much.** Ask of the part:
    - Which Plan Steps took much longer or shorter than planned, and why?
    - What needed to happen earlier?
-   - Which approaches were tried and dropped?
+   - Which ways of working were tried and dropped?
    - What work had no home in the plan?
    - Which Plan Step Gate items caught nothing?
 
@@ -90,8 +90,8 @@ proposes and writes.
 - **No decision without something that went wrong.** A good idea
   with no failure behind it is dropped.
 - **Judge on real text, never before it exists.** A question that
-  needs text the CBC Run has not written yet is parked to the moment it
-  will exist.
+  needs text the CBC Run has not written yet waits for the moment it
+  will exist, listed under *Parked*.
 - **Do not fix the CBC Run's records.** The one exception is Stage 4,
   item 3: the CBC Run's own CBC Run Asks.
 
@@ -101,14 +101,14 @@ A change worth testing during the retrospective, such as a new rule,
 goes on `try/<what>`, cut from `retrospective`, and is used for the
 rest of the retrospective. At the close the reviewer keeps it or
 drops it. Kept: `retrospective` fast-forwards to it. Dropped: the
-branch is deleted, and the note's commits move back. The note's Experiments line records which.
+branch is deleted, and the commits to `RETRO.md` made on it are copied back to `retrospective`. The note's Experiments line records which.
 
 ## Stage 4 — close
 
 1. **Every part is done,** and every Parked item is judged or still
    names its part.
 2. **The Entry File is read top to bottom.** Every line still passes
-   the three tests in its guard comment, or leaves.
+   the three tests in the comment above its *Local rules*, or leaves.
 3. **The CBC Run's own CBC Run Asks close into the note.** Each CBC Run Ask
    in TODO's "To the deliverer" that a decision answers becomes one
    line naming that decision. The Decisions Log gets a "rules in
