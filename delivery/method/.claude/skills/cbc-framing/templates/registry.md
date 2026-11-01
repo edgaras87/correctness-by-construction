@@ -4,8 +4,7 @@
      derive your own layout from the outcomes in the Agent Skill's
      export section (.claude/skills/cbc-framing/SKILL.md, Export and
      handoff). How it is used is the delivered-copies Agent Rule's
-     (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is copied and filled, never edited in
-     place). -->
+     (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is…). -->
 
 # Invariant Slice Registry — the work, cut and ready
 

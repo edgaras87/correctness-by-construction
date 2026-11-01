@@ -9,7 +9,7 @@ config. Where it lives, never how it reads.
 
 <!-- No paths: line, so this loads at the start of every session:
      a fact can be retold in any line written. The why is in the
-     Concept Deliverer's facts-in-sync manual (CBC
+     facts-in-sync manual (the Concept Deliverer's
      docs/conventions/facts-in-sync/ §1, One home; The CBC Run's seat). -->
 
 ## The rules

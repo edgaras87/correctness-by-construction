@@ -1,6 +1,6 @@
 # Agent Skill Template — the Master Copy is in correctness-by-construction.
 # Copy into a CBC Run and
-# fill; the filled file is the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is copied and filled, never edited in place).
+# fill; the filled file is the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is…).
 
 # The Runtime Ground, as the CBC Run's decisions established it.
 # The command: podman compose. Secrets and machine variance live in .env

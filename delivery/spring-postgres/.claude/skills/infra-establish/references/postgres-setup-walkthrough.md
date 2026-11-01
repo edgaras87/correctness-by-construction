@@ -27,7 +27,7 @@ the CBC Run's decided constraints differ, you are off-template.
 Derive from the Database Role Split
 (`.claude/skills/infra-establish/references/postgres-role-split.md`),
 and record the deviation as delivered-copies rule 8 says
-(`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is copied and filled, never edited in place*).
+(`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is…*).
 
 ## 0. Preconditions
 

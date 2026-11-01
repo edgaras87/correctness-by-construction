@@ -243,8 +243,7 @@ carry, whatever its layout:
 The default layout is the Agent Skill Template
 `.claude/skills/cbc-framing/templates/registry.md`. Declining it is
 off-template: derive your own layout from the outcomes above. How it
-is used is the delivered-copies Agent Rule's (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill
-Template is copied and filled, never edited in place*).
+is used is the delivered-copies Agent Rule's (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is…*).
 
 **The CBC Framing Exports are living records, not written once.** The
 Invariant Slice Registry already lives: its statuses change at every

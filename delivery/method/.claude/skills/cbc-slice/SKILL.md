@@ -93,7 +93,7 @@ explicitly if it is not already recorded.
    surviving. It is named now, and built in Stage 3.
 5. **Tag them** GUARANTEE-n and EVIDENCE-n, numbered once through the
    Invariant Slice Record. Outside the Invariant Slice Record, each carries its
-   Invariant Slice (`.claude/rules/writing.md`, rule 6): "SLICE-4
+   Invariant Slice (`.claude/rules/writing.md`, rule 6, *Keep names as labels*): "SLICE-4
    GUARANTEE-1", "SLICE-4 EVIDENCE-3 · GUARANTEE-2 · KILL-12". CBC
    Framing's tags (KILL, FOLD, FACT, NOT-OURS, …) are used as CBC
    Framing wrote them.

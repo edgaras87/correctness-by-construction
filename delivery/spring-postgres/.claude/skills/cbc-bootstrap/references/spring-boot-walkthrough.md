@@ -20,7 +20,7 @@ are Agent Skill Templates in `templates/` beside this Agent Skill's
 `references/`, and they implement the stack line above. If the CBC
 Run's decided stack differs, you are off-template. Derive from the
 outcomes here, and record the deviation as delivered-copies rule 8
-says (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is copied and filled, never edited in place*).
+says (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is…*).
 **The project's CBC Bootstrap Requirements win over this doc on any
 conflict.** The principle in the Runtime Ground and in the Adversity
 Harness alike: *something outside the app migrates; the app runs.*

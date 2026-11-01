@@ -191,7 +191,7 @@ derived from the Operator Manual, carries only what someone new to the repo need
 in hand, and links the manual for the rest. The Agent Skill Template is
 `.claude/skills/infra-establish/templates/readme-prerequisites.md`,
 in this Agent Skill. Merge it and fill it, and the section is the CBC
-Run's own (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is copied and filled, never edited in place*).
+Run's own (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is…*).
 
 The stack's own prerequisite line is **not** written here. Its fact
 is created at the CBC Bootstrap, whose Agent Skill carries it. The

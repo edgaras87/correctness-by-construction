@@ -109,7 +109,7 @@ A CBC Framing Concern that becomes exactly one Invariant Slice is
 called by that Invariant Slice's tag from Stage 6 on. A CBC Framing
 Concern that does not is called by a letter: A, B and on. A number local to
 one record carries its owner outside it
-(`.claude/rules/writing.md`, rule 6): "SLICE-4 GUARANTEE-1".
+(`.claude/rules/writing.md`, rule 6, *Keep names as labels*): "SLICE-4 GUARANTEE-1".
 
 ## Stage 0 — Choose the Falsifiable Promise (CBC Framing Intent)
 

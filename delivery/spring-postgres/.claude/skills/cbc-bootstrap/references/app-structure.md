@@ -80,7 +80,7 @@ This is the shape a CBC Run gets when its ADRs say nothing else.
 - **Departing from the Stack Default is off-default,** as departing
   from an Agent Skill Template is. Derive from the chosen pattern's
   own logic, and record the deviation as delivered-copies rule 8 says
-  (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is copied and filled, never edited in place*).
+  (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is…*).
   What you learn comes back into this doc.
 - **The first CBC Run to use an alternative makes it used.** Its
   entry below then stops being a meaning only, and gains a line on

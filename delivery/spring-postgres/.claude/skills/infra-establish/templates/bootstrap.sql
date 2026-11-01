@@ -1,6 +1,6 @@
 -- Agent Skill Template — the Master Copy is in correctness-by-construction.
 -- Copy into a CBC Run at the same path and fill; the filled
--- file is the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is copied and filled, never edited in place).
+-- file is the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is…).
 
 -- infrastructure/postgres/init/bootstrap.sql
 --

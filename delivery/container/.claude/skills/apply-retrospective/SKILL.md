@@ -61,7 +61,7 @@ and checks.
 - **New proof is not this Plan Step's.** A gap found here is listed, and
   the reviewer decides whether it earns a Plan Step of its own.
 - **Delivered copies** may be edited under the delivered-copies Agent Rule
-  (`.claude/rules/delivered-copies.md`, rule 2, *A copy may be edited in place during a Plan Step when all three hold*);
+  (`.claude/rules/delivered-copies.md`, rule 2, *A copy may be edited in place…*);
   a copy this CBC Run has finished with is marked untried.
 
 ## Stage 2 — commit plan
