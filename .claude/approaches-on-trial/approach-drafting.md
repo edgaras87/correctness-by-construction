@@ -11,7 +11,7 @@ proven: a guess the work tests. It lives in
 ## What it is for
 
 So that the first time a kind of work is done, the way it was done
-is kept as it worked, not as it was guessed. A skill or a manual
+is kept as it worked, not as it was guessed. An Agent Skill or a manual
 written before the work describes a guess. An Approach on Trial starts as
 one too, but the work corrects it before anything is made of it.
 
@@ -38,14 +38,14 @@ stops here. In a CBC Run, how a delivered copy is edited is
    in a word or two. The name starts with `approach-` only when its
    subject is approaches. It holds:
    - what the work is for;
-   - its Approach Stages, in order;
+   - its Approach on Trial Stages, in order;
    - what is not known yet;
    - the ways rejected, with their reasons;
    - its uses, empty until the close.
 
    Write it for this work, in its own terms. Nothing is made general
    yet: what is general shows only once the work is done.
-4. **If the work is a Plan Step,** what its Notes and gate take from
+4. **If the work is a Plan Step,** what its Notes and Plan Step Gate take from
    the Approach on Trial is the Plan Step Form's.
 
 ### 2. Work
@@ -87,7 +87,7 @@ from another way.
   better written as one.
 - **What catches a work item outside a Plan Step.** A Plan Step's opening
   items ask whether its Work Approach is known. A small TODO item has no
-  such item, and no skill description catches it any more.
+  such item, and no Agent Skill description catches it any more.
 - **Whether the form holds:** what for, stages, not known, ways
   rejected, uses.
 
@@ -98,31 +98,31 @@ the evaluations of both changed nothing in it.
 
 ## Uses
 
-*Run 3, Steps 9 and 10, 2026-10-16.* Before this was written down:
-the retrospective and its apply step had no skill. The reviewer
-asked for a written draft, changed as the work went, with the skill
-built at the close. Both skills came out that way and were taken
-here. Taught: start from a draft, not a skill.
+*CBC Run 3, Steps 9 and 10, 2026-10-16.* Before this was written down:
+the retrospective and its apply step had no Agent Skill. The reviewer
+asked for a written draft, changed as the work went, with the Agent Skill
+built at the close. Both Agent Skills came out that way and were taken
+here. Taught: start from a draft, not an Agent Skill.
 
-*The deliverer, working a reading, 2026-10-01.* A draft in `temp/`
-ran three readings, then became a rule. Taught: a draft can become
-a rule, not only a skill.
+*The Concept Deliverer, working a CBC Run Reading, 2026-10-01.* A draft in `temp/`
+ran three CBC Run Readings, then became an Agent Rule. Taught: a draft can become
+an Agent Rule, not only an Agent Skill.
 
-*The deliverer, the redesign, 2026-10-19.* Drafted as a manual on
+*The Concept Deliverer, the redesign of the conventions manual, 2026-10-19.* Drafted as a manual on
 trial in `docs/conventions/`. It closed in three pieces: its work
 to the refinement's file, two ideas to TODO, its way of judging a
 fix to the refinement. The manual was dropped. Taught: the close
 places pieces; it does not make one form.
 
-*The deliverer, the refinement, from 2026-10-18.* Drafted as a
+*The Concept Deliverer, the refinement, from 2026-10-18.* Drafted as a
 manual on trial in `docs/conventions/`, and then counted as a
 manual before anyone judged whether it is one. Taught: a draft is
-not a manual, and needs a home of its own. This approach came from
+not a manual, and needs a home of its own. This Approach on Trial came from
 that lesson. The refinement is open.
 
-*The deliverer, placing into a model, 2026-10-28.* The first step
-from a convention to a model, done for the tiers model and the
-exchange: `.claude/approaches-on-trial/model-placing.md`, written
+*The Concept Deliverer, placing into an Idea Model, 2026-10-28.* The first step
+from a convention to an Idea Model, done for the Tiers Model and the
+Exchange Convention: `.claude/approaches-on-trial/model-placing.md`, written
 before the work and corrected once by it, in its own commit
 (`4fedbb3`). Taught: the work's first sort, shown before anything
 was written, is where the draft first met the work.

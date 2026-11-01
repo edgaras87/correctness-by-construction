@@ -10,24 +10,24 @@ Approaches on Trial over and never evaluates. The part a CBC Run holds is
 So that what a piece of work taught goes where it belongs, piece by
 piece, and nothing unproven is locked into a convention. Before
 this, first-time work's close made one lasting form, chosen at once.
-The redesign of 2026-10-19 closed as three pieces, which
-one form could not say. The refinement's draft was counted as a
+The redesign of the conventions manual, on 2026-10-19, closed as
+three pieces, which one form could not say. The refinement's draft was counted as a
 manual before anyone judged whether it was one.
 
-## The stages of an Approach on Trial
+## The life of an Approach on Trial
 
 1. **Drafted:** during its first use, specific to that work, by
    `approach-drafting`.
 2. **On trial:** rewritten in general at its first evaluation. Each
    later use adds a dated note and is evaluated again.
 3. **Placed or dropped:** a piece is placed into a convention when
-   it meets what its Approach on Trial named would settle it, or dropped at
-   any evaluation. The Approach on Trial's file goes when nothing is left in it.
+   it meets what its Approach on Trial said would settle it. A piece
+   can be dropped at any evaluation. The Approach on Trial's file goes when nothing is left in it.
 
 ## When it opens
 
 - **A drafted Approach on Trial is handed over.** Ours, at the close of
-  `approach-drafting`. A CBC Run's, when a Run Reading meets its offer line
+  `approach-drafting`. A CBC Run's, when a CBC Run Reading meets its offer line
   under *To the deliverer*.
 - **An Approach on Trial has a new dated note** from a later use,
   ours or a CBC Run's.
@@ -68,7 +68,7 @@ either.
    splits (below).
 7. **Record the endings.** For our own Approach on Trial, an ADR when a
    convention is made or changed and options were weighed. For a
-   CBC Run's, the Run Reading's Delivery Note carries each ending.
+   CBC Run's, the CBC Run Reading's Delivery Note carries each ending.
 
 ## Seats
 
@@ -79,7 +79,7 @@ either.
 - **A step that differs is marked inline** in the shared Approach on Trial:
   "At the Concept Deliverer:", "In a CBC Run:". Not "here", which means the
   reader's own Convention Seat.
-- **Each idea lives in the part that acts on it.** The Approach Stages and
+- **Each idea lives in the part that acts on it.** The Approach on Trial Stages and
   the Convention Seats are here because only an evaluation acts on them.
 - **Our part points at the shared one by its path.** The shared one
   says the Concept Deliverer holds a part that does not ship, and gives no
@@ -98,21 +98,21 @@ evaluation closes on the agent's word.
 
 - **Whether a manual still goes on trial.** A convention could be
   adopted marked on trial, as first-time work was. Now unproven work
-  stays in approaches, and the mark may no longer be needed.
+  stays in Approaches on Trial, and the mark may no longer be needed.
 - **Whether each Approach on Trial's "settled when" is enough,** or placing
   needs a floor of uses.
 - **Whether this and `approach-drafting` become one convention**
-  when placed: one manual, a skill for each Convention Seat.
+  when placed: one manual, an Agent Skill for each Convention Seat.
 - **What a CBC Run does with a piece left as the project's own:** keeps
-  it as its Approach on Trial, or writes it as a skill or Agent Rule of
+  it as its Approach on Trial, or writes it as an Agent Skill or Agent Rule of
   its own (`docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`*).
-- **Whether generalizing is work of its own.** Today it is stage 6.
+- **Whether generalizing is work of its own.** Today it is Stage 6.
   Both are the Concept Deliverer's, so no Convention Seat splits them; a first use
   that shows it big enough splits it.
 - **How a CBC Run's offered Approach on Trial reaches this evaluation.** Only
-  *When it opens* says so. Weighed on 2026-10-20: a skill opening
-  when a Run Reading meets the offer line; `working-a-reading.md`
-  pointing here; or nothing, the Run Reading working it by hand.
+  *When it opens* says so. Weighed on 2026-10-20: an Agent Skill opening
+  when a CBC Run Reading meets the offer line; `working-a-reading.md`
+  pointing here; or nothing, the CBC Run Reading working it by hand.
 
 ## Ways rejected
 
@@ -126,25 +126,25 @@ it.
 
 ## Uses
 
-*The deliverer, `model-placing.md`'s first evaluation, 2026-10-28.*
-Its first use. One use behind the approach, so every piece stayed on
-trial and stage 6 was the work: rewritten in general, with what
-would settle it. Stage 3 was weighed for a model as a home, and
-kept to conventions and records: a piece reaches a model only
-through a convention (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*, and §4.2, *The upward direction*). Taught: a first
+*The Concept Deliverer, `model-placing.md`'s first evaluation, 2026-10-28.*
+Its first use. One use was behind the Approach on Trial, so every
+piece stayed on trial. Stage 6 was the work: rewritten in general,
+with what would settle it. Stage 3 was weighed for an Idea Model as a
+home, and kept to conventions and records: a piece reaches an Idea
+Model only through a convention (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*, and §4.2, *The upward direction*). Taught: a first
 evaluation places nothing; its work is the rewrite.
 
 The two notes below are from before it was written.
 
-*The deliverer, the redesign's close, 2026-10-19.* Before this was
+*The Concept Deliverer, the close of the conventions manual's redesign, 2026-10-19.* Before this was
 written: the redesign's manual was read, and its pieces went to
 three places that already existed, the refinement's file, TODO and
 the refinement's rule check. The manual was dropped. Taught: the
 close places pieces, each into a home that exists before a new one.
 
-*The deliverer, the refinement's rule check, 2026-10-19.* Before a
+*The Concept Deliverer, the refinement's rule check, 2026-10-19.* Before a
 fix to a manual added anything, it looked for the place that should
-already do the job. Taught: stage 3's order, an existing home
+already do the job. Taught: Stage 3's order, an existing home
 first.
 
 ---

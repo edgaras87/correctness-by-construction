@@ -79,4 +79,4 @@ this commit (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
 - `.claude/decisions.md`, 2026-10-17 — the check at the commit,
   loaded in every session; why not an Agent Rule with paths:, a `CLAUDE.md`
   line, or a hook now
-- ADR-0065 — the check stands on facts-in-sync
+- ADR-0065 — the check stands on the facts-in-sync manual

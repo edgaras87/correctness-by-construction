@@ -31,8 +31,9 @@ parts, and ended every one. Its file is in git at
 `19f1d7b^:temp/eval-2026-09-30.md`.
 
 *On trial.* What would make it evidence: the refinement Plan Step in
-`PLAN.md` closes with every finding ended, and the reviewer judges
-whether Refinement Rounds, each read first and fixed Refinement Layer by Refinement Layer, held.
+`PLAN.md` closes with every finding ended. The reviewer then judges
+whether Refinement Rounds held, each read first and fixed one
+Refinement Layer at a time.
 Look again at that Plan Step's close.
 
 ## What this is made usable as
@@ -52,21 +53,23 @@ alone, so its trial is our own next refinement. A CBC Run that finds it
 needs one offers it under *To the deliverer*. The rest of this page
 is the Concept Deliverer's.
 
-## 1. What it reads, and its words
+## 1. What it reads
 
-A refinement reads living text against the rules it names. Its
+A refinement reads Living Text against the rules it names. Its
 Finding Kinds are its own, so they are written in its file, not here.
+
+### 1.1 The refinement's words
 
 The words of this page, each defined once:
 
-- **living text** — every file but history. History is the
+- **Living Text** — every file but history. History is the
   devlog, closed ADRs, commit bodies, the entries of
   `.claude/decisions.md` and the parts of
   `TODO-CONVERSATION-MEMORY.md`, but not those two files' header
   comments
   (`docs/conventions/facts-in-sync/` §1, One home). Also left out: `docs/baselines/`,
   frozen on purpose, and a CBC Run's own text in `temp/`, which its
-  Run Reading reads.
+  CBC Run Reading reads.
 - **Finding Kind** — one rule the refinement reads against, and the
   findings it makes. Written as what a finding of it is, the rule,
   and its Refinement Round.
@@ -77,7 +80,7 @@ The words of this page, each defined once:
 
 ## 2. The Approach on Trial Stages
 
-A map of the Approach Stages. Each section holds its rule.
+A map of the Approach on Trial Stages. Each section holds its rule.
 
 | Stage | Does | The refinement's file |
 |---|---|---|
@@ -122,7 +125,7 @@ and their Refinement Rounds.
 
 ### 2.2 List the files
 
-The agent lists the living files (§1, *What it reads, and its words*) in the file, by Refinement Layer, with
+The agent lists the living files (§1, *What it reads*) in the file, by Refinement Layer, with
 their counts. Every refinement starts from these six Refinement Layers, in an
 order that puts a source before what derives from it:
 
@@ -132,7 +135,7 @@ order that puts a source before what derives from it:
    text points to;
 3. the other manuals, and the concept chapters;
 4. `ARCHITECTURE.md`, `README.md` and the records;
-5. our skills and Agent Rules, under `.claude/`;
+5. our Agent Skills and Agent Rules, under `.claude/`;
 6. `delivery/`, what ships.
 
 Every living file falls in exactly one Refinement Layer. When the list finds a
@@ -154,7 +157,7 @@ names a manual covers every rule that stands on it.
 
 A doubted rule is first read whole, with the manual it stands on.
 A gap, or a line nobody means any more, is fixed in the manual,
-and the Foundation Check carries the fix to the Agent Rules and skills
+and the Foundation Check carries the fix to the Agent Rules and Agent Skills
 that derive from it. Where the doubt is about what a rule does to
 text, the rule is also tried on a sample of the text it governs,
 taken from the files' list (§2.2, *List the files*), and the reviewer judges the result.
@@ -185,10 +188,11 @@ manual were fixes of this kind. The first try added a section that
 repeated what the opening statement and "What it is for" are for.
 The redesign closed, and its way of judging each fix came here.*
 
-*Found 2026-10-25, before round 2: a convention TODO had due when
-round 2 reads would move the rules its One home and Dependencies
-kinds stand on, mid-read. The check moved from the first round to
-each round.*
+*Found 2026-10-25, before Refinement Round 2: a convention TODO item
+was due when Refinement Round 2 would read. Its fix would have moved
+the rules the One home and Dependencies Finding Kinds stand on, in
+the middle of the read. The check moved from the first Refinement
+Round to each Refinement Round.*
 
 ### 2.4 Reading the Finding Kinds
 
@@ -278,8 +282,8 @@ derives from the convention. It never changes a rule the Refinement Round
 reads against (§2.4, *Reading the Finding Kinds*). A change with a goal of its own, too big for
 one commit plan, is a Plan Step of its own, in `PLAN.md`.
 
-*Found 2026-10-20: round 1's DECISION-1 asked what "manual" means
-in a run, and the answer was a change to how first-time work is
+*Found 2026-10-20: Refinement Round 1's DECISION-1 asked what "manual" means
+in a CBC Run, and the answer was a change to how first-time work is
 done, not to two sentences. The day before, the refinement had
 stopped for a redesign of the conventions that proved to be its
 own rule check. The reviewer had this one made inside the
@@ -304,11 +308,9 @@ the text, not the findings, and every commit cites their numbers.
 The setup, the decisions, the counts and anything left for a later
 Refinement Round stay.
 
-*Found 2026-10-21: after round 1, the file held 1,639 lines, 1,450
-of them closed findings that round 2 would not read. Collapsed in
+*Found 2026-10-21: after Refinement Round 1, the file held 1,639 lines, 1,450
+of them closed findings that Refinement Round 2 would not read. Collapsed in
 `a629f52`, it held 390.*
-
-Then the next Refinement Round reads.
 
 ### 2.9 The last read
 
@@ -345,27 +347,27 @@ commit, so the file can be read from git.
   reviewer's view, 2026-10-31: the checks at each change are the
   first, a refinement the second, and a finding's cause the way back
   from the second to the first. Judged at the close, with where it is
-  written: a convention of its own, or facts-in-sync.
+  written: a convention of its own, or the facts-in-sync manual.
 - **Whether the refinement's file needs an Output Shape.** It borrows the
-  eval's form, which borrowed a Run Reading's.
+  eval's form, which borrowed a CBC Run Reading's.
 - **Whether the three Refinement Rounds hold.** They were drawn from one
   refinement's eight Finding Kinds. Wiring, which adds missing links, fitted
   Refinement Round 1; whether other added text fits is still to see.
 - **Whether one Refinement Layer's findings fit one commit plan.**
-- **Approach Stages beside Skill Stages.** The glossary gives this
+- **Approach on Trial Stages beside Agent Skill Stages.** The glossary gives this
   page's phases their own Name; whether the two hold apart is judged
   at the close.
 - **Whether the full reads again paid.** The counts of findings in
   unchanged text decide whether a narrower read would have done.
 - **Whether the design change in place belongs to every Plan Step.**
   The work holds it for a refinement alone (§2.7, *Working the findings*) (`8c9aadf`), the only work
-  that has lived it; a draft into both step forms was undone before
-  its commit.
+  that has lived it. A draft into both Plan Step Forms, ours and the
+  container's, was undone before its commit.
 
 ## Why it arrives this way
 
 An Approach on Trial, first written as a manual on trial by
-first-time work. A skill written before
+first-time work. An Agent Skill written before
 the work would describe a guess. The work corrects this page as it
 goes, and its evaluation at the close places its pieces
 (`.claude/approaches-on-trial/approach-evaluation.md`).

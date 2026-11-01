@@ -70,7 +70,7 @@ before anything retells it (`docs/conventions/facts-in-sync/` §1,
 - ADR-0059 — a retelling may stand where the reader acts on it,
   with a Fact Reference to its source; ours now, a CBC Run's when its
   case is designed
-- ADR-0065 — one home is facts-in-sync's, with the Fact Reference
+- ADR-0065 — one home is the facts-in-sync manual's, with the Fact Reference
 - ADR-0070 — how a Fact Reference is written; each new line asked
   at the commit
 - ADR-0078 — rule 7: a decision is cited where its reader needs it

@@ -44,7 +44,7 @@ text below it (`docs/models/idea-to-output.md` §3.2, *The direction of a link*)
 
 ## Not known yet
 
-- Whether stage 2's one question is enough to judge "general".
+- Whether Stage 2's one question is enough to judge "general".
 - Whether a story's pointer fits an Idea Model: no form says what an
   Idea Model holds.
 - Whether the lower text's Foundation Line always becomes the Idea Model, or
@@ -53,7 +53,7 @@ text below it (`docs/models/idea-to-output.md` §3.2, *The direction of a link*)
   reference, so a reader sees them together.
 - Where it is placed when settled. A Work Approach never stands on an
   Idea Model (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*), so
-  a manual: likely the conventions manual, beside its part on adding one
+  a manual: likely the conventions manual, `docs/conventions/conventions/`, beside its part on adding one
   (`docs/conventions/conventions/` §3, *Adding a convention*).
 
 ## Ways rejected
@@ -73,22 +73,29 @@ lower text, and that use changed nothing in its stages.
 
 ## Uses
 
-*The deliverer, the tiers model and the exchange, 2026-10-28,
-`c94438e`..`a22529d`.* The tiers model sent its reader down four
-times: three to the exchange, one to `delivery/README.md`. Sorted,
-three of the exchange's five facts and its pin were general, and
-went into a new tiers §3.5; the other two the model already held,
-and the exchange had retold them without pointing up. The fill was
-this repo's, and became a marked example. The exchange came to
-stand on the model, its §1 pointing up and keeping what each fact
-means here. The README step planned at the start was dropped: the
-model's "today" facts map the workspace, its own subject.
+*The Concept Deliverer, the Tiers Model and the Exchange Convention, 2026-10-28,
+`c94438e`..`a22529d`.* The Tiers Model sent its reader down four
+times: three to the exchange manual, one to `delivery/README.md`.
+Sorted, three of the exchange manual's five facts and its Delivery
+Pin were general. They went into a new §3.5 of the Tiers Model
+(`docs/models/tiers.md` §3.5, *What holds on every flow*). The other
+two the Tiers Model already held, and the exchange manual had retold
+them without pointing up. The Delivery Fill was this repo's, and
+became a marked example. The exchange manual came to stand on the
+Tiers Model, its §1 pointing up and keeping what each fact means
+here (`docs/conventions/exchange/` §1, *What cannot change*). The
+README step planned at the start was dropped: the Tiers Model's
+"today" facts map the workspace, its own subject.
 
-Taught: read the model whole before sorting (`4fedbb3`); a "today"
-alone does not make a fact this repo's (`4fedbb3`); keeping the
-lower text's numbering keeps every reference to it landing. Three
-references to exchange §1 were left at the facts' old home and
-found by a later check (`b7c17ae`): stage 7 now greps first.
+Taught:
+- read the Idea Model whole before sorting (`4fedbb3`);
+- a "today" alone does not make a fact this repo's (`4fedbb3`);
+- keeping the lower text's numbering keeps every reference to it
+  landing.
+
+Three references to the exchange manual's §1 were left at the facts'
+old home and found by a later check (`b7c17ae`): Stage 7 now greps
+first.
 
 *Its first evaluation, 2026-10-28.* One use, so every piece stayed
 on trial and nothing was placed. Rewritten in general, with what
@@ -98,7 +105,7 @@ would settle it.
 
 ## Decisions
 
-- ADR-0068 — stage 5: this repo's facts about itself go to
+- ADR-0068 — Stage 5: this repo's facts about itself go to
   `README.md`
 - ADR-0071 — *Ways rejected*: one general line for each reference
   down
