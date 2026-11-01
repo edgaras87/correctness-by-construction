@@ -53,7 +53,7 @@ CBC Run receives it. Its Entry File says two things. `docs/concept/`
 and the Agent Skills, Agent Rules, Output Shapes and Approaches on
 Trial under `.claude/` are delivered copies, pinned. Until the CBC
 Framing Exports exist, the only method work is running `cbc-framing`
-jointly with the human. It holds:
+jointly with the reviewer. It holds:
 
 - five convention Agent Skills, the retrospective's two among them;
 - one Approach on Trial, `approach-drafting`;
