@@ -27,7 +27,7 @@ rules, comments and config. Where it lives, never how it reads.
    Without the Fact Reference it is a second home
    (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
 3. **Make a summary say it is one.** It names its owner, and nobody
-   reads it in the owner's place. The map does this (`ARCHITECTURE.md` §1.2, *The conventions…*):
+   reads it in the owner's place. The map does this (`ARCHITECTURE.md` §1.2, *The conventions*):
    a phrase for each convention, and the manual for the rest.
 4. **Change a fact at its home.** The links don't change, unless
    the home itself moves, or its section is renamed, renumbered or
