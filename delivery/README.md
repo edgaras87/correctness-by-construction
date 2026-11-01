@@ -75,7 +75,7 @@ and the standing comments are the Record Stubs' own form.
 Its own decisions, its own run files and its own versioning, which
 are the CBC Run's to make; and the archive's agent definitions, since
 the skills carry the method whole (ADR-0006). A CBC Run on another stack
-also takes no `spring-postgres/` (`ARCHITECTURE.md` §2.2, *The Stack Group…*).
+also takes no `spring-postgres/` (`ARCHITECTURE.md` §2.2, *The Stack Group*).
 
 ## 6. When it lands
 

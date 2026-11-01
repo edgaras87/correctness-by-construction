@@ -6,7 +6,7 @@
      by slice: a slice's close adds or changes rows in Invariants, never
      a paragraph; how the slice got there is its record's.
      Why the form is as it is: (CBC docs/conventions/project-recording/
-     §8.4, How the map is written).
+     §8.4, How ARCHITECTURE is written).
      foundation: the project-recording convention -->
 
 ## Overview
