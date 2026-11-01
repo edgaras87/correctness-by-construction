@@ -15,8 +15,9 @@ the rule in. 15 of the first 20 commits of the repo it came from
 broke it: present, correct, unfollowed (`docs/models/agent.md`
 §12, *Claims*, A1). So the rule is opened at the commit, not read
 once. Lived here since: 480 commits under it by
-2026-09-19, and CBC Run 3 held forty-four commits on the stop sentence
-alone with no gate.
+2026-09-19, and CBC Run 3 held forty-four commits on the stop
+sentence, the rule that the agent waits at each commit, alone with
+no Enforcement Gate.
 
 ## What this is made usable as
 
@@ -30,14 +31,15 @@ alone with no gate.
   the other, and written for this Convention Seat (ADR-0042, ADR-0069).
 
 This page explains; the Agent Skill states. What derives from this page
-is that list. A change here walks it; a change forced in one of
+is that list. A change here runs the Change Walk on it; a change forced in one of
 them is checked back against this page.
 
 ## The seats
 
 A CBC Run commits under the Agent Skill. The Concept Deliverer commits under the
-same Agent Skill. It has one local habit, which scope carries the
-signal, stated in its own section and not shipped (§3, *The Concept Deliverer's habit*).
+same Agent Skill. It has one local habit: the scope, not the type,
+carries the signal. It is stated in its own section, and not shipped
+(§3, *The Concept Deliverer's habit*).
 
 ## 1. What a commit message is
 
@@ -79,7 +81,8 @@ paths are the arrangement's is the agent-arrangement manual's
 
 The commit boundary is the one place a
 wrong assumption is cheap to catch when an agent is doing the
-committing, so the agent stages, shows the diff, and waits. The
+committing. So the agent stages the commit, shows the diff, and
+waits for the word: the stop. The
 rule is text, in the Agent Skill, and gated nowhere (ADR-0038, 1f).
 *Its story: devlog 2026-09-10, later; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
@@ -104,8 +107,8 @@ the log:
   lost: `fix(delivery)` most often, `fix(concept)` and
   `fix(agent)` rarely.
 
-So the scope carries the signal here. That is the mirror of the
-other answer, not a weaker version of it. Either works; what does not work
+So the scope carries the signal here. It is the other answer done
+with the scope instead of the type, and not a weaker version of it. Either works; what does not work
 is following neither and discovering the shape afterwards. *Its story: devlog 2026-09-19, after the close; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
 ## Why it arrives this way

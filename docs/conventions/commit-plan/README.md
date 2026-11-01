@@ -9,9 +9,10 @@ So that a Change Set can be inspected commit
 by commit before it lands, and a divergence at commit *k* forces the
 remaining commits to be re-evaluated rather than continued on a
 plan that no longer holds. Adopted with the Container Group
-(ADR-0038, 1b). The failure it answered was lived elsewhere: a
-commit sequence kept by hand in a scratch file across four
-sessions, fitting no record. It is not ours to restate. Lived here
+(ADR-0038, 1b). The failure it answered was lived in the handbook,
+the repo this convention came from, now history (ADR-0038): a commit
+sequence kept by hand in a scratch file across four sessions,
+fitting no record. Lived here
 since: every Change Set since 2026-08-27 has run under it. On
 2026-09-27 and 28 one Change Set was revised four times at its
 boundaries on the reviewer's readings, each revision on its own
@@ -29,7 +30,7 @@ and fixing it afterwards or not at all, has not happened here.
   the other, and written for this Convention Seat (ADR-0042, ADR-0069).
 
 This page explains; the Agent Skill states. What derives from this page
-is that list. A change here walks it; a change forced in one of
+is that list. A change here runs the Change Walk on it; a change forced in one of
 them is checked back against this page.
 
 ## The seats
@@ -91,13 +92,13 @@ normal course, not a sign the plan failed (ADR-0038, 1e). *Its story: devlog 202
 ### 2.5 The records commits
 
 The records table is walked while the commit list is drafted. A
-Change Set batches record moments, and a record's trigger can fire
-mid-set before its truth exists. Walking the Entry File's records
+Change Set gathers the moments its records name. A record's moment
+can come mid-set, before the fact it records is true. Walking the Entry File's records
 table while drafting is what catches it (ADR-0038, 1d).
 
 ### 2.6 What a plan counts
 
-A plan counts commits, never steps. "Step" is `PLAN.md`'s word; a
+A plan counts commits, never Plan Steps. "Step" is `PLAN.md`'s word; a
 plan that called its commits steps would give one word two meanings
 (ADR-0049, 1). *Its story: devlog 2026-10-08; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
@@ -114,7 +115,8 @@ changed (ADR-0050, 4 and 5).*
 
 ### 2.8 Counting subjects
 
-A subject is counted when it is written. A plan writes every subject
+A subject's characters are counted against the 50 limit when it is
+written. A plan writes every subject
 before any lands. Counted only at each boundary, a long one lands
 long, or is rewritten there with nothing in the plan saying why. *Its story: devlog 2026-10-08; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
@@ -133,7 +135,7 @@ Set moved, all at once. A commit that renames a file, renumbers or
 retitles a section, or moves a fact greps for the old names in that
 commit (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
 But a commit's own grep looks for the names it meant to move, and
-misses the rest. It reads the text unwrapped. A grep matches line by
+misses the rest. The sweep reads the text unwrapped. A grep matches line by
 line, and a manual wraps its prose, so a name broken across two
 lines is never found. *Its story: ADR-0049; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
@@ -141,11 +143,11 @@ lines is never found. *Its story: ADR-0049; devlog 2026-10-29, the lessons' own 
 
 Small commits, on the reviewer's grant, are folded into the planned
 commit before its boundary, so the reviewer still sees one commit
-there. Each planned commit landing as one leaves no room to try: two
-ways meant reworking a commit in place. Small commits give the room.
+there. When each planned commit lands as one, there is no room to
+try. Trying two ways meant reworking a commit in place. Small commits give the room.
 The grant is the reviewer's because a small commit is still a
 commit. The stop at every commit is the commit-messages manual's rule
-(§2.13, *The stop at every boundary*). Without the grant, every
+(`docs/conventions/commit-messages/` §2.4, *Commit on the word*). Without the grant, every
 commit is a boundary. Each small commit is counted
 when it is written, as a planned subject is. *Its story: ADR-0050.*
 
@@ -165,9 +167,9 @@ It is the commit-messages manual's rule, and this convention points at it
 
 ## Why it arrives this way
 
-An Agent Skill, because its moment is one the agent recognises — work turning
-out to need several commits — and nothing in a record would put the
-plan in front of it then (`docs/models/agent.md` §4.2, *Pulled Channel*). The one rule
+An Agent Skill, because the agent recognises its moment: work
+turning out to need several commits. Nothing in a record would put
+the plan in front of it then (`docs/models/agent.md` §4.2, *Pulled Channel*). The one rule
 that must fire at every commit, the stop, is not here: an Agent Skill that
 opens only for multi-commit work cannot carry it, so it is
 the commit-messages manual's (`docs/conventions/commit-messages/` §2.4, *Commit on the word*).
@@ -179,8 +181,8 @@ the commit-messages manual's (`docs/conventions/commit-messages/` §2.4, *Commit
 - **The records a plan is walked against, and what an ADR is** —
   `docs/conventions/project-recording/`.
 - **The order of the work inside a plan** — the domain Agent Skill that
-  knows the work; the index's chain, `docs/conventions/README.md`,
-  says which.
+  knows the work; the order in the conventions' Local Map,
+  `docs/conventions/README.md`, says which.
 
 ## Where to look
 

@@ -164,7 +164,7 @@ chat answers, records, commit messages, code comments.
 ## Why it arrives this way
 
 An Agent Rule with no `paths:`, loaded in every session
-(`docs/conventions/agent-arrangement/` §3.9, *A rule loaded in every session*). Its moment is every
+(`docs/conventions/agent-arrangement/` §3.9, *An Agent Rule always loaded*). Its moment is every
 answer and every record written, and nothing else fires at all of
 them (`docs/models/agent.md` §8, *Choosing a channel*):
 

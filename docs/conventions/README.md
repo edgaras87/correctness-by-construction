@@ -9,7 +9,7 @@ cover*. Which conventions there are and what each covers is
 What a convention is, how one is written and how one is added is
 `docs/conventions/conventions/`.
 
-## The chain
+## The order of the conventions
 
 **Relations only** — every rule lives in a manual or an Agent Skill, and
 nothing here restates one (ADR-0032).
@@ -17,9 +17,9 @@ nothing here restates one (ADR-0032).
 ```mermaid
 flowchart TB
     idea["an idea, or a request"]
-    vc["visual-comparison"]
-    cp["commit-plan"]
-    cm["commit-messages"]
+    vc["visual-comparison Agent Skill"]
+    cp["commit-plan Agent Skill"]
+    cm["commit-messages Agent Skill"]
     dom["the domain Agent Skills<br/>cbc-framing · infra-establish<br/>infra-serve · cbc-bootstrap · cbc-slice"]
 
     idea --> vc
@@ -30,21 +30,22 @@ flowchart TB
 ```
 
 **Each fires at its own moment; the arrows say what hands to what,
-not what you must pass through.** A typo fix reaches only
-`commit-messages`. A settled decision needing four commits reaches
-only `commit-plan`. A question about how a diagram is drawn reaches
-`visual-comparison` from wherever it arose.
+not what you must pass through.** A typo fix reaches only the
+commit-messages Agent Skill. A settled decision needing four commits
+reaches only the commit-plan Agent Skill. A question about how a
+diagram is drawn reaches the visual-comparison Agent Skill from
+wherever it arose.
 
 **Work no Agent Skill or Agent Rule covers** starts from an Approach on Trial,
-not from this chain: `.claude/approaches-on-trial/approach-drafting.md`.
+not from this order: `.claude/approaches-on-trial/approach-drafting.md`.
 Its work is planned like any other.
 
 **The order *inside* a plan does not come from here.** It comes
 from the domain Agent Skill that knows the work. That division is why
-`commit-plan` stays generic and a project on another stack can use
-it unchanged.
+the commit-plan Agent Skill stays generic, and a project on another
+stack can use it unchanged.
 
-**What the chain produces** is not on it: an ADR for a decision
+**What this order produces** is not in it: an ADR for a decision
 with rejected options, a `temp/` draft for a measurement or a
 comparison, and the commits themselves. The other conventions, and
 the records they govern, are not stages of this and fire on their

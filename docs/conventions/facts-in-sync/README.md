@@ -340,7 +340,7 @@ been read against it hard enough, is not known.
 ## Why it arrives this way
 
 Two rules, each loaded in every session, with no `paths:`
-(`docs/conventions/agent-arrangement/` §3.9, *A rule loaded in every session*). One home's moment is
+(`docs/conventions/agent-arrangement/` §3.9, *An Agent Rule always loaded*). One home's moment is
 every text written. A fact is retold in the record being written.
 That record's Record Stub says nothing of the record the fact was
 taken from, so no Record Stub is open at the moment. The

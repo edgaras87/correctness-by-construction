@@ -37,7 +37,7 @@ now ships it there.
 Every rule here is a comment in the file it governs, met when
 the file is opened to edit it; nothing here is loaded into an
 agent. What derives from this page is that list. A change here
-walks it; a change forced in one of them is checked back against
+runs the Change Walk on it; a change forced in one of them is checked back against
 this page.
 
 ## The seats
@@ -52,10 +52,11 @@ A builder's. Shipped in `delivery/container/`: the Concept Deliverer writes it a
 CBC Run receives it. Its Entry File says two things. `docs/concept/`
 and the Agent Skills, Agent Rules, Output Shapes and Approaches on
 Trial under `.claude/` are delivered copies, pinned. Until the CBC
-Framing Exports exist, the only method work is running `cbc-framing`
-jointly with the reviewer. It holds:
+Framing Exports exist, the only method work is running the
+cbc-framing Agent Skill jointly with the reviewer. It holds:
 
-- five convention Agent Skills, the retrospective's two among them;
+- five convention Agent Skills, the retrospective Agent Skill and the
+  apply-retrospective Agent Skill among them;
 - one Approach on Trial, `approach-drafting`;
 - four Agent Rules: `shapes-lifecycle.md`; `delivered-copies.md`, the
   Exchange Convention's half for this side; and `writing.md` and
@@ -77,8 +78,8 @@ the repo root, the address the arrangement is described from: *"A
 Concept Repo… Documents only — no code, no CBC Runs."* It holds:
 
 - the convention Agent Skills `commit-messages`, `commit-plan` and
-  `visual-comparison`, not the retrospective's, whose Convention Seat
-  here is on trial;
+  `visual-comparison`, not the retrospective manual's Agent Skills,
+  whose Convention Seat here is on trial;
 - the Exchange Convention's Agent Skills, `exchange-read` and
   `exchange-deliver`;
 - the Agent Rules every session loads: `writing.md`, `one-home.md`
@@ -92,7 +93,8 @@ Its Decisions Log holds arrangement decisions only, and no birth
 entry's list of conventions: it receives no conventions. No one reads
 it but itself, so an entry that follows from an ADR is a line
 pointing at it (ADR-0042). A CBC Run's Decisions Log keeps that list,
-and its entries run longer because `exchange-read` reads them.
+and its entries run longer because the exchange-read Agent Skill
+reads them.
 
 ### What the difference is
 
@@ -105,10 +107,11 @@ of it (ADR-0036). Three things are the same:
 - the records table has the same shape;
 - the agent and project split is the same rule.
 
-The difference in what they hold: the CBC Run holds the receiver's Agent Rule,
-`delivered-copies.md` — how to take a newer copy without losing its
-own edits, and what it may do to one meanwhile; the Concept Deliverer holds
-its Agent Skills and the form of the CBC Run Reading they produce.
+The difference in what they hold: the CBC Run holds the receiver's
+Agent Rule, `delivered-copies.md`. It says how to take a newer copy
+without losing its own edits, and what it may do to one meanwhile.
+The Concept Deliverer holds its Agent Skills, and the form of the CBC
+Run Reading they produce.
 Neither holds the other's half, because neither could run it. The
 two Agent Rules both Convention Seats load in every session differ by the job too,
 and each
@@ -150,9 +153,9 @@ convention's.
 
 The arrangement holds no project truth: nothing
 here says what the project is deciding, planning or shipping. It
-says how an agent is to work in it. Where the two sides touch, the
-convention that owns the content states the touch, and this one holds
-the file it sits in: the records table in the Entry File, and a CBC
+says how an agent is to work in it. Where a project fact sits in an
+arrangement file, the convention that owns the fact states it, and
+this one holds the file it sits in: the records table in the Entry File, and a CBC
 Run's Decisions Log's birth entry.
 
 ## 2. The Entry File
@@ -178,13 +181,13 @@ The Entry File is the one piece of text present before anything is
 looked up. The records teach their own use, and so does every Record
 Stub in the arrangement: each carries its rules in embedded comments,
 met at the moment the file is opened. That only works if the agent
-knows the files exist. It earns that by holding only what
-every session needs, never a convention's rules.
+knows the files exist. The Entry File earns that by holding only
+what every session needs, never a convention's rules.
 
 ### 2.3 Where the Entry File lives
 
 Repo root, or under `.claude/` — Claude Code reads `CLAUDE.md` at
-either address as one file (§5.1, *The mapping*). The
+either address as one file (§5.1, *Channels to mechanisms*). The
 Container Group ships it under `.claude/`, so that every agent-side path
 sits in one directory; a project that wants it at the root moves it.
 The Concept Deliverer's sits at the root.
@@ -193,13 +196,13 @@ The Concept Deliverer's sits at the root.
 
 The file is paid for on every task, so the boundary is a test
 applied to every line, not a list of sections. Three tests, the same
-three the Record Stub's guard comment states:
+three the Entry File's guard comment states:
 
 - **True of this project and nowhere else.** A line that would be
   true in another project is a convention, and lives there — once. If
   the rule sits in an Agent Skill or a Record Stub, it is not repeated here. If
   the convention's moment is every task, its Agent Rule loads with no
-  `paths:` (§3.9, *A rule loaded in every session*): the convention's channel, not a line here.
+  `paths:` (§3.9, *An Agent Rule always loaded*): the convention's channel, not a line here.
   **It points; it never restates**: a summary is lossy on arrival,
   and then two files disagree while both look current
   (`docs/models/agent.md` §12.7, *On summaries*, claim M1).
@@ -246,8 +249,8 @@ start restating the rules, so it takes stance and not rules.
 
 *Local rules* pass one test before they enter: **a rule earns a
 place in the Ambient Channel only when its failure is not noticing the
-moment**. A test prerequisite, a migration rule, a service that must
-be running fails: each has a moment, and goes where the moment is, as
+moment**. A test prerequisite, a migration rule or a service that
+must be running fails this test: each has a moment, and goes where the moment is, as
 the second test says. Most
 facts that feel local have a moment, which is why this slot stays
 short.
@@ -267,8 +270,9 @@ line added lowers compliance with every other
 assumed). So its size is a running concern, not a one-time one.
 
 The cost is what the tool delivers, not the file. HTML comments are
-dropped on load (§5.3, *Memory files' comments*). So the guard and the
-records comment cost nothing per task, and are read when the file is
+dropped on load (§5.3, *Memory files' comments*). So the guard comment,
+the Entry File's comment that holds the three tests, and the records
+comment cost nothing per task, and are read when the file is
 opened to edit it, the moment they govern. If what remains is longer
 than a screen, something in it belongs in a convention, a record or
 an Agent Skill; shrinking it is maintenance, not tidying. The tool's
@@ -307,7 +311,7 @@ list at the top. When a file loads, and its limits, are this page's
 home for a rule true only in one part of the tree, which an Agent Skill would
 carry only if the agent noticed the moment. Without the list, the file
 is the Entry File by another name and fails the Entry File's tests the same way
-(§2.4, *How the Entry File is written*), with one exception (§3.9, *A rule loaded in every session*).
+(§2.4, *How the Entry File is written*), with one exception (§3.9, *An Agent Rule always loaded*).
 
 ### 3.3 `.claude/shapes/`
 
@@ -320,14 +324,14 @@ ships Output Shapes, or when the project writes its first.
 ### 3.4 `.claude/decisions.md`
 
 The arrangement's Decisions Log: append-only and dated, each entry in
-three parts — what changed, why, what was rejected. The standing rule
-is a comment in the file it governs; the Decisions Log keeps the why
-and the rejected options; neither repeats the other. A CBC Run's also
+three parts: what changed, why, what was rejected. The standing rule
+is a comment in the file it governs. The Decisions Log keeps the why
+and the rejected options. Neither repeats the other. A CBC Run's also
 holds what it was delivered: its birth entry lists the conventions
 it holds, and each delivery entry the Delivery Pin and the Read-Through Commit
 (`docs/conventions/exchange/` §2.2, *The CBC Run*). The Concept Deliverer's holds neither,
 since it receives no delivery (ADR-0042). Its rules sit in its
-own Record Stub.
+header comment.
 
 *Its story: devlog 2026-10-17, later; devlog 2026-10-29, the lessons' own stories: project-recording and agent-arrangement.*
 
@@ -389,7 +393,7 @@ In a CBC Run, an Approach on Trial the Concept Deliverer ships is a pinned copy
 (`docs/conventions/exchange/` §3.2, *What goes*), and one the CBC Run drafts is its
 own. *Its story: ADR-0058.*
 
-### 3.9 A rule loaded in every session
+### 3.9 An Agent Rule always loaded
 
 A convention whose moment is every task ships its Agent Rule with no
 `paths:`, so it loads in every session. Its moment is every answer
@@ -403,25 +407,25 @@ qualify in a CBC Run and three here. *Its story: ADR-0053.*
 
 ## 4. Arrangement anti-patterns
 
-- **Putting rules in the working-style slot** — a rule that is true
+- **Putting rules in the *How to work here* slot** — a rule that is true
   in another project is a convention written as a stance.
 - **A local rule with a moment** — "run Docker before the tests" —
   paid for on every session and read at none of the moments it is
   about.
-- **Shipping the stance and local-rules slots as empty sections** — a
-  header waiting for content is cost with no guard in it; the Record Stub
-  carries the test, and the header arrives with the first line that
+- **Shipping the *How to work here* and *Local rules* slots as empty
+  sections** — a header waiting for content is cost with no guard in
+  it; the shipped Entry File carries the test, and the header arrives with the first line that
   passes it.
 - **Restating a convention's rules "so they are always in context"** —
-  it grows once per convention and drifts from the source.
+  it grows once per convention and drifts from its manual.
 - **A second Entry File kept beside the first for another tool**,
   unless that tool is actually in use.
 - **Project truth in the arrangement** — local status, a decision
-  about the system, a Plan Step. They belong in PLAN.md, `docs/adr/`,
+  about the system, a Plan Step. They belong in `PLAN.md`, `docs/adr/`,
   the records; the arrangement is what a portfolio copy drops.
 - **Growth by accretion** — every line added dilutes every other line,
   so removing one is maintenance, not tidying.
-- **Parking a repeated rule in the operator's file** — a rule the
+- **Keeping a repeated rule in the operator's file** — a rule the
   human keeps saying is the Agent Model's Told Channel diagnostic
   (`docs/models/agent.md` §8, *Choosing a channel*): a convention
   is missing, or its channel is not firing. `CLAUDE.local.md` makes
@@ -438,7 +442,7 @@ is made here alone. A second tool's Tool Binding would be written beside
 this one, and writing it is the test for tool-shaped assumptions
 hiding in the Agent Model. None has been needed.
 
-### 5.1 The mapping
+### 5.1 Channels to mechanisms
 
 Sketch, Claude Code — checked against 2.1.310 on 2026-10-24, by its
 documentation, by what could be observed here, and by bug reports
@@ -500,8 +504,8 @@ still the closest this tool gets to the Pushed Channel for a rule
 about an action; a hook closes the remainder.
 
 The tool ignores a frontmatter field it does not know, without an
-error, in an Agent Skill as in a rule. Our `foundation` lines are for a
-reader of the file, never for the tool. An Agent Skill may also
+error, in an Agent Skill as in an Agent Rule. Our Foundation Lines are
+for a reader of the file, never for the tool. An Agent Skill may also
 carry a `paths:` list; what it does to an Agent Skill this repo has
 not checked.
 
@@ -555,13 +559,14 @@ touches.
 
 Every rule here governs a file the Container Group ships and is a
 comment in it. The Entry File's comments carry the rule that it
-points and never restates, the guard and the size rule. The
+points and never restates, the guard comment and the size rule. The
 Decisions Log's carry its own.
 Acting on the file is the trigger (`docs/models/agent.md` §4.6, *Installed Channel*).
 
 Not an Agent Skill, because the failure guarded against is a noticing
-failure: told "remember X", an agent writes X into the Entry File
-where it stands, and an Agent Skill fires only on recognising the moment.
+failure. Told "remember X", an agent writes X into the Entry File.
+An Agent Skill would fire only if the agent recognised the moment,
+and here it does not.
 Not paid at the Ambient Channel's cost either: the comments are dropped on load
 (§5.3, *Memory files' comments*), so they are read when the file is opened to edit it
 and cost nothing on any other task. A long guard is free; a long
@@ -587,6 +592,7 @@ on (`docs/conventions/exchange/` §2.4, *The records' exception*).
 
 ## Where to look
 
-- The Record Stubs: `delivery/container/.claude/CLAUDE.md` and
+- The Entry File and the Decisions Log's Record Stub:
+  `delivery/container/.claude/CLAUDE.md` and
   `delivery/container/.claude/decisions.md`.
 - The Agent Model it explains against: `docs/models/agent.md`.
