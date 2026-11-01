@@ -246,7 +246,7 @@ delivered files below.
 - **Plan Step** — one piece of `PLAN.md`'s work, a CBC Run's or ours.
   What makes work a Plan Step here is the Plan Step Form in our
   `PLAN.md` (ADR-0057). Named by its number in its plan: Step 0.
-- **Agent Skill Stage** — one phase of an Agent Skill, numbered from Stage 0 and
+- **Agent Skill Stage** — one phase of an Agent Skill, numbered, and
   named by its Agent Skill outside it: the cbc-slice Agent Skill's
   Stage 3, the cbc-framing Agent Skill's Stage 2. A Plan Step's Now line names the Agent Skill
   Stage it is in. How an Agent Skill names them is the conventions manual's

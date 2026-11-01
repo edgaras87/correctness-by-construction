@@ -142,8 +142,11 @@ travels with a copy is the Exchange Convention's
 
 ### 1.4 Agent Skill Stages
 
-An Agent Skill's phases are Agent Skill Stages, numbered from Stage 0, each under its
-own heading: `## Stage 1 — specify-correctness`. "Step" is PLAN's:
+An Agent Skill's phases are Agent Skill Stages, each under its own
+heading, the words after the dash in lowercase:
+`## Stage 1 — specify-correctness`. They are numbered from Stage 0 when the first
+opens the work or checks that it can start, and from Stage 1 when the
+first is the work itself. "Step" is PLAN's:
 a Plan Step's Now line names the Agent Skill Stage it is in, and one word for both
 would read "Now: Step 3" inside Step 1. A numbered instruction
 inside an Agent Skill Stage is not a phase, and its list may call it a step.
