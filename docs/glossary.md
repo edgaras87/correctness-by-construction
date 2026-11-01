@@ -248,13 +248,13 @@ delivered files below.
   the same way (`.claude/approaches-on-trial/approach-drafting.md`,
   *Stages*).
 - **Refinement Layer** — a set of files the refinement fixes together
-  (`.claude/approaches-on-trial/refinement.md` §1, *What it reads, and its words*).
+  (`.claude/approaches-on-trial/refinement.md` §1.1, *The refinement's words*).
 - **Refinement Round** — the Finding Kinds whose fixes do the same to
   the text, read together
-  (`.claude/approaches-on-trial/refinement.md` §1, *What it reads, and its words*).
+  (`.claude/approaches-on-trial/refinement.md` §1.1, *The refinement's words*).
 - **Finding Kind** — one rule the refinement reads against, and the
   findings it makes
-  (`.claude/approaches-on-trial/refinement.md` §1, *What it reads, and its words*).
+  (`.claude/approaches-on-trial/refinement.md` §1.1, *The refinement's words*).
 - **Change Set** — a body of work that needs more than one commit,
   sequenced and closed as a commit plan
   (`docs/conventions/commit-plan/` §1, *What a commit plan is*).
