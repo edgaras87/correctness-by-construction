@@ -28,31 +28,40 @@ frontmatter naming it, `foundation: the agent model`
    page they need. Not a summary of how it works, nor its boundary
    or its channel: sections 5, 8 and 7 hold those.
 2. **What it is for.** The need: what work the convention makes
-   possible, what went wrong without it — with the CBC Run or the date
-   — and the event that made it. Evidence; or intent marked *on
-   trial* with what would make it evidence and when to look again,
-   after which the need is rewritten from what was seen or the
-   convention goes; or, taken whole from elsewhere, adopted —
-   where it came from and what has been lived under it since. Never a wish
-   written as evidence: "so that X is easier" is not a need.
+   possible, what went wrong without it, with the CBC Run or the date,
+   and the event that made it. Stated as one of three:
+   - evidence;
+   - intent marked *on trial*, with what would make it evidence and
+     when to look again; then the need is rewritten from what was
+     seen, or the convention goes;
+   - adopted, taken whole from elsewhere: where it came from and what
+     has been lived under it since.
+
+   Never a wish written as evidence: "so that X is easier" is not a
+   need.
 3. **What this is made usable as.** The answer to the need: everything
    derived from the manual, each by path from the repo root, marked
    shipped or the Concept Deliverer's, with the moment it opens at — or
    "nothing shipped", and then what a repo holds. Ends with the
    sentence that a change here walks that list.
 4. **The seats.** Both named, the CBC Run's first: what each does
-   under the convention. One paragraph when alike; a section per
-   Convention Seat when not; a paragraph naming which body sections are whose
-   when the body is already written per Convention Seat; "no Convention Seat" said
-   outright when one side has none.
-5. **The body**, numbered sections, free prose. Fact References to
-   a manual, the concept or an Idea Model, never to a skill or a record
-   for a fact
-   (`docs/models/idea-to-output.md` §3.2, *The direction of a link*);
-   never a restatement of another convention's subject, but for a
-   retelling with a Fact Reference to its section, where the reader
-   acts on it in place (`docs/conventions/facts-in-sync/` §2,
-   *Point and derive*). A section divided into
+   under the convention. One of four:
+   - one paragraph when alike;
+   - a section per Convention Seat when not;
+   - a paragraph naming which body sections are whose, when the body
+     is already written per Convention Seat;
+   - "no Convention Seat" said outright when one side has none.
+5. **The body**, numbered sections, free prose. Two rules on what it
+   points at:
+   - Fact References to a manual, the concept or an Idea Model, never
+     to an Agent Skill or a record for a fact
+     (`docs/models/idea-to-output.md` §3.2, *The direction of a link*);
+   - never a restatement of another convention's subject, but for a
+     retelling with a Fact Reference to its section, where the reader
+     acts on it in place (`docs/conventions/facts-in-sync/` §2,
+     *Point and derive*).
+
+   A section divided into
    labelled parts numbers them, `### N.M`, and so does every
    section of the same form in the manual. Emphasis in prose is
    not a part; a bold-led bullet with a paragraph of its own is

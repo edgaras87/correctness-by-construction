@@ -4,8 +4,8 @@ foundation: the facts-in-sync convention
 
 <!-- Makes the Change Walk, the disagreement and the grep for a moved name
      (docs/conventions/facts-in-sync/ §4, A Canonical Description's rule;
-     §5, A disagreement; §3.3, The rename grep) fire at the commit, where they waited
-     to be remembered. Loaded in every session, with no paths: an
+     §5, A disagreement; §3.3, The rename grep) fire at the commit;
+     before, they had to be remembered. Loaded in every session, with no paths: an
      Agent Rule with paths: loads only when a file is touched with the agent's
      tools, and an edit made by script never loads it
      (docs/conventions/agent-arrangement/ §5.6). Ours, shipped
