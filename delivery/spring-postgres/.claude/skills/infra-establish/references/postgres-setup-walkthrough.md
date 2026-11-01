@@ -1,95 +1,123 @@
-# PostgreSQL setup walkthrough — from nothing to a governed, verified ground
+# PostgreSQL setup walkthrough — from nothing to a governed, verified Runtime Ground
 
-The end-to-end *do this* for one service, lived by two projects.
-**Masters nothing**: the authority shape — roles, grants, the why — is
-mastered in `.claude/skills/infra-establish/references/postgres-role-split.md`; on any conflict the model wins.
-Context it assumes (noted where it binds): the Execution Environment is
-**podman local containers** driven by a compose file, and **Flyway**
-runs as a compose one-shot as the only DDL path.
+What to do, end to end, for one Infrastructure Service, as two
+projects did it.
 
-Placeholders: `<project>` — underscored in SQL identifiers
-(`<project>_migrator`), hyphenated where project naming allows
-(compose project name).
+**It owns nothing.** The shape of the authority, the roles, the
+grants and the why, has its home in
+`.claude/skills/infra-establish/references/postgres-role-split.md`.
+On any conflict, the model wins.
 
-The files themselves are Skill Templates in `templates/`,
-beside this skill's `references/` — this walk carries the
-whys and the order; the Skill Templates carry the bodies and their recall
-comments. Fill one, and the filled file is the CBC Run's own.
-The Skill Templates implement the assumptions above. If the CBC Run's decided
-constraints differ, you are **off-template**: derive from the model
+The context it assumes, noted where it binds:
+
+- the Execution Environment is **podman local containers,** driven
+  by a compose file;
+- **Flyway** runs as a compose one-shot, as the only DDL path.
+
+Placeholders: `<project>`, with an underscore in SQL identifiers
+(`<project>_migrator`), and with a hyphen where project naming allows
+it (the compose project name).
+
+The files themselves are Agent Skill Templates in `templates/`,
+beside this Agent Skill's `references/`. This walk carries the whys
+and the order. The Agent Skill Templates carry the bodies, and their
+comments for recall. Fill one, and the filled file is the CBC Run's
+own. The Agent Skill Templates implement the assumptions above. If
+the CBC Run's decided constraints differ, you are off-template.
+Derive from the model
 (`.claude/skills/infra-establish/references/postgres-role-split.md`),
-and the rest is (`.claude/rules/delivered-copies.md`, rule 8, *A
-Skill Template is copied and filled*).
+and record the deviation as delivered-copies rule 8 says
+(`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is copied and filled, never edited in place*).
 
 ## 0. Preconditions
 
-- podman installed, a compose provider present; `podman compose config`
-  runs clean (canonical command: `podman compose` — the front door,
-  whatever provider stands behind it).
+- podman installed, and a compose provider present. `podman compose
+  config` runs clean. The canonical command is `podman compose`,
+  whatever provider stands behind it.
 - The decisions already made and logged: PostgreSQL is a required
-  Infrastructure Service; its constraints are named (migrations-only
-  DDL; role-split authority). This walkthrough *implements* those
-  decisions; it does not make them.
+  Infrastructure Service, and its Infrastructure Service Constraints
+  are named: DDL by migrations only, and authority by the Database
+  Role Split. This walkthrough *implements* those decisions. It does
+  not make them.
 
 ## 1. Declare the service (compose)
 
-`compose.yaml` — a `postgres` service and the Flyway one-shot (a
-one-shot behind a profile: the only DDL path, hidden from plain
-`up`). Skill Template: `.claude/skills/infra-establish/templates/compose.yaml`.
+`compose.yaml`: a `postgres` service and the Flyway one-shot. The
+one-shot sits behind a profile: it is the only DDL path, hidden from
+plain `up`. Agent Skill Template:
+`.claude/skills/infra-establish/templates/compose.yaml`.
 
-Podman notes: the `:Z` mount flag matters on SELinux hosts; volume and
-network names get the compose project prefix automatically — never
-write it manually. The `name:` pin is a lived correction: without it,
-volume identity depends on the directory the file happens to run from.
+Podman notes:
+- the `:Z` mount flag matters on SELinux hosts;
+- volume and network names get the compose project prefix
+  automatically. Never write it by hand;
+- the `name:` pin is a correction a CBC Run made. Without it, the
+  volume's identity depends on the directory the file happens to run
+  from.
 
 ## 2. Split out credentials (`.env`)
 
-`.env` (git-ignored) + committed `.env.example`. Skill Template:
-`.claude/skills/infra-establish/templates/.env.example`. Keys: the bootstrap password, the migrator
-password (**must equal** the literal in the bootstrap SQL), optional
-`POSTGRES_PORT`, and the runtime application password (**must
-equal** the runtime literal in the bootstrap SQL) — the app reads it
-from the environment at bootstrap.
-Rule: secrets and machine variance are variables;
-**decided identities (db, schema, role names) stay literal** in the
-files that use them — changing one is a committed decision, not
-configuration.
+`.env`, git-ignored, and a committed `.env.example`. Agent Skill
+Template: `.claude/skills/infra-establish/templates/.env.example`.
+The keys:
 
-## 3. Write the bootstrap SQL (the model instantiated)
+1. the Database Setup Identity's password;
+2. the `migrator` password, which **must equal** the literal in
+   `bootstrap.sql`;
+3. `POSTGRES_PORT`, optional;
+4. the `runtime` application password, which **must equal** the
+   `runtime` literal in `bootstrap.sql`. The app reads it from the
+   environment at the CBC Bootstrap.
 
-`infrastructure/postgres/init/bootstrap.sql` — runs **once**,
-automatically, at the container's first start against an empty volume,
-as the bootstrap identity, **connected to `POSTGRES_DB`**.
-Skill Template: `.claude/skills/infra-establish/templates/bootstrap.sql` — its comments are the
-recall layer, carried in full; the load-bearing lines are the
-default privileges (every table and sequence a future migration
-creates arrives already granted to runtime, so the split needs no
-per-migration discipline and cannot erode).
+The rule: secrets and what varies per machine are variables.
+**Decided identities (the database, schema and role names) stay
+literal** in the files that use them. Changing one is a committed
+decision, not configuration.
 
-Who creates the database: **the container**, from `POSTGRES_DB` —
-owned by the bootstrap identity; migrator owns only the schema. No
-`CREATE DATABASE` in the script.
+## 3. Write `bootstrap.sql`
+
+`infrastructure/postgres/init/bootstrap.sql` runs **once,**
+automatically, at the container's first start against an empty
+volume. It runs as the Database Setup Identity, **connected to
+`POSTGRES_DB`.** Agent Skill Template:
+`.claude/skills/infra-establish/templates/bootstrap.sql`. Its
+comments are there for recall, carried in full. The load-bearing
+lines are the default privileges. Every table and sequence a future
+migration creates arrives already granted to `runtime`. So the split
+needs no discipline per migration, and cannot wear away.
+
+Who creates the database: **the container,** from `POSTGRES_DB`. It
+is owned by the Database Setup Identity, and `migrator` owns only the
+schema. There is no `CREATE DATABASE` in the script.
 
 ## 4. Land the verification suite
 
-`infrastructure/postgres/verify-database-model.sql` — beside `init/`,
-**not in it** (run on demand, never at container start).
-Skill Template: `.claude/skills/infra-establish/templates/verify-database-model.sql`. It queries the
-catalog against the model's claims — roles and capabilities,
-database and schema ownership, schema privileges, default privileges
-(the model's load-bearing mechanism, invisible to `\dn+`); expected
-results ride as comments beside each query so the reader needs no
-other doc open.
+`infrastructure/postgres/verify-database-model.sql` sits beside
+`init/`, **not in it:** it runs on demand, never at container start.
+Agent Skill Template:
+`.claude/skills/infra-establish/templates/verify-database-model.sql`.
+It queries the catalog against the model's claims:
 
-## 5. Wire Flyway (config + empty migrations)
+1. the roles and their capabilities;
+2. who owns the database and the schema;
+3. the schema's privileges;
+4. the default privileges: the model's load-bearing mechanism, which
+   `\dn+` does not show.
 
-`infrastructure/flyway/conf/flyway.conf` — no credentials (env-passed
-by compose); the url speaks the compose network's service name.
-Skill Template: `.claude/skills/infra-establish/templates/flyway.conf`.
+The expected results are comments beside each query, so the reader
+needs no other doc open.
 
-`infrastructure/flyway/migrations/` — empty (+`.gitkeep`) until work
-earns schema; naming, when it does: `V<n>__<description>.sql`. **No
-grant statements in migrations, ever** — default privileges handle it.
+## 5. Wire Flyway (config and empty migrations)
+
+`infrastructure/flyway/conf/flyway.conf`: no credentials, since
+compose passes them in the environment. The url names the compose
+network's service. Agent Skill Template:
+`.claude/skills/infra-establish/templates/flyway.conf`.
+
+`infrastructure/flyway/migrations/`: empty, with a `.gitkeep`, until
+work needs schema. The naming, when it does: `V<n>__<description>.sql`.
+**No grant statements in migrations, ever:** the default privileges
+handle it.
 
 ## 6. Bring it up
 
@@ -99,22 +127,23 @@ podman compose up -d       # first start: db created, bootstrap SQL runs
 podman compose ps          # expect: <project>-postgres Up (healthy)
 ```
 
-**A trap, lived:** the image runs the bootstrap against a
-*temporary* server and then restarts. The health check can report
+**A trap a CBC Run met:** the image runs `bootstrap.sql` against a
+*temporary* server, and then restarts. The health check can report
 healthy during that temporary server, and a query in that window
 fails with `the database system is shutting down`. Wait a second and
-retry; `pg_isready` plus one real query is the honest "up".
+retry. `pg_isready`, plus one real query, is the true "up".
 
 ## 7. Verify — both ways, always
 
-**Catalog check:**
+**Catalog Check:**
 
 ```sh
 podman exec -i <project>-postgres \
   psql -U postgres -d <project_db> < infrastructure/postgres/verify-database-model.sql
 ```
 
-**Behavioral check** (the constraint attempted and refused, live):
+**Behavioral Check** (the Infrastructure Service Constraint
+attempted, and refused, live):
 
 ```sh
 podman exec -it <project>-postgres \
@@ -122,8 +151,8 @@ podman exec -it <project>-postgres \
 # expected: ERROR: permission denied for schema <project_schema>
 ```
 
-The other refusal worth watching live — an ungranted role cannot
-connect (a probe role, dropped after):
+The other refusal worth watching live: a role with no grant cannot
+connect. Try it with a throwaway role, dropped after:
 
 ```sh
 podman exec <project>-postgres psql -U postgres -d <project_db> -c "CREATE ROLE probe LOGIN;"
@@ -132,8 +161,8 @@ podman exec <project>-postgres psql -U probe -d <project_db> -c 'select 1'
 podman exec <project>-postgres psql -U postgres -d <project_db> -c "DROP ROLE probe;"
 ```
 
-**Flyway as migrator** (connects, sees the schema, empty history —
-correct on a fresh ground):
+**Flyway as `migrator`:** it connects, sees the schema, and shows an
+empty history, which is correct on a fresh Runtime Ground.
 
 ```sh
 podman compose run --rm flyway info
@@ -141,39 +170,51 @@ podman compose run --rm flyway info
 
 ## 8. Know the reset path
 
-The bootstrap SQL runs only against an empty volume. After any change
-to it (**destructive — drops all data; explicit confirmation first**):
+`bootstrap.sql` runs only against an empty volume. After any change
+to it (**destructive: it drops all data. Get explicit confirmation
+first**):
 
 ```sh
 podman compose down --volumes
 podman compose up -d
 ```
 
-…then re-run step 7, both checks.
+…then run step 7 again, both checks.
 
 ## 9. Hand off
 
-The connection facts the system's code needs: host
-`localhost:${POSTGRES_PORT:-5432}` from outside, `postgres:5432`
-container-to-container; database `<project_db>`, schema
-`<project_schema>`; **the application connects as `<project>_runtime`
-and nothing else** — migrator is the migration tool's identity alone;
-the bootstrap identity is an occasional admin lens, never wired in.
-Day-to-day IDE/psql inspection: runtime — the identity the
-application writes with, so whoever inspects holds a password that
-can change every table. Say which the project means, in the manuals
-and against the framing: either the framing's trust list covers
-people reading with it (trusted not to write), or a read-only
-identity is owed for looking, made at bootstrap beside the two.
-Left unsaid, the writing identity is handed out as the looking one,
-and the slices cannot tell whether that hand is a writer to defend
-against.
+**Decide, and write in the manuals, which identity people inspect
+with.** Day-to-day inspection in an IDE or `psql` would otherwise use
+`runtime`: the identity the application writes with. So whoever
+inspects holds a password that can change every table. Say which the
+project means, in the manuals and against CBC Framing. Either:
 
-**Reading from outside without a host `psql`.** The witness read —
-persisted state read from the host, as runtime, through the
-published port — needs a client. A host without one uses a client
-container on the host network; with a host `psql`, the same URL
-works directly:
+- the System Definition's Trust Assumptions cover people reading
+  with it, trusted not to write; or
+- a read-only identity is owed for looking, made at the CBC
+  Bootstrap beside the two.
+
+Left unsaid, the writing identity is handed out as the looking one.
+Then the Invariant Slices cannot tell whether that reader can write,
+and must be defended against.
+
+The connection facts the system's code needs:
+
+1. the host: `localhost:${POSTGRES_PORT:-5432}` from outside, and
+   `postgres:5432` from container to container;
+2. the database: `<project_db>`;
+3. the schema: `<project_schema>`;
+4. **the application connects as `<project>_runtime`, and nothing
+   else;**
+5. `migrator` is the migration tool's identity alone;
+6. the Database Setup Identity is used by hand for admin, never in
+   config.
+
+**Reading from outside without a host `psql`.** The State Witness
+Reading, persisted state read from the host as `runtime` through the
+published port, needs a client. A host without one uses a client
+container on the host network. With a host `psql`, the same URL works
+directly:
 
 ```sh
 podman run --rm --network host docker.io/library/postgres:17 \
@@ -181,8 +222,9 @@ podman run --rm --network host docker.io/library/postgres:17 \
 # expected: 1
 ```
 
-These facts land in the project's **living infrastructure contract** —
-one section per service, grown at each later addition, the refusals
-written as contract terms. Note there that the ground files were
-filled from this skill's Skill Templates — the trail a later reader needs
-to find the Master Copies.
+These facts land in the project's **living Infrastructure Contract:**
+one section per Infrastructure Service, grown at each later
+Infrastructure Service Re-entry, the refusals written as contract
+terms. Note there that the Runtime Ground's files were filled from
+this Agent Skill's Agent Skill Templates: the trail a later reader
+needs to find the Master Copies.

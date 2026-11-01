@@ -1,17 +1,17 @@
--- Skill Template — the Master Copy is in correctness-by-construction.
+-- Agent Skill Template — the Master Copy is in correctness-by-construction.
 -- Copy into a CBC Run at the same path and fill; the filled
--- file is the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, A Skill Template is copied and filled).
+-- file is the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is copied and filled, never edited in place).
 
 -- infrastructure/postgres/init/bootstrap.sql
 --
 -- Purpose:
---   Instantiate the postgres role model for this project: the two working
+--   Make the Database Role Split real for this project: the two working
 --   identities, the application schema, and the privilege boundaries.
 --   Model: .claude/skills/infra-establish/references/postgres-role-split.md
---   — this file instantiates, never re-derives.
+--   — this file makes it real, and never derives it again.
 --
 -- Run as:
---   the bootstrap identity (postgres) — runs automatically, ONCE, at the
+--   the Database Setup Identity (postgres) — runs automatically, ONCE, at the
 --   container's first start against an empty volume (docker-entrypoint-initdb.d;
 --   files there run in lexical order — irrelevant while this is the only one).
 --   Re-run = full reset: podman compose down --volumes, then up.
@@ -30,19 +30,19 @@
 --   Identities, schema, and privilege boundaries only — no tables, no
 --   application objects; those arrive solely through the migration tool.
 
--- the two identities of the authority split. Prefixed names are the
+-- the two identities of the Database Role Split. Prefixed names are the
 -- shared-cluster case of postgres-role-split.md, Naming across a
--- cluster, the model named above (roles are
--- cluster-wide). One dedicated cluster in one container — the lived
--- normal — takes the model's bare names, migrator and runtime; then
--- the verify suite's role filter becomes an explicit IN list, and the
--- other templates' <project>_ role references drop the prefix too.
+-- cluster, the model named above (roles are cluster-wide).
+-- One dedicated cluster in one container, the usual case in CBC Runs,
+-- takes the model's bare names, migrator and runtime. Then:
+--   - the verify suite's role filter becomes an explicit IN list;
+--   - the other templates' <project>_ role references drop the prefix too.
 CREATE ROLE <project>_migrator LOGIN PASSWORD '<project>_migrator_localdev';
 CREATE ROLE <project>_runtime  LOGIN PASSWORD '<project>_runtime_localdev';
 
 -- PUBLIC (the grant target: every role, present and future) loses the default
 -- right to connect; access to this database exists only by the named grants
--- below. The bootstrap identity needs no grant — superusers bypass checks.
+-- below. The Database Setup Identity needs no grant — superusers bypass checks.
 REVOKE CONNECT ON DATABASE <project_db> FROM PUBLIC;
 GRANT  CONNECT ON DATABASE <project_db> TO <project>_migrator;
 GRANT  CONNECT ON DATABASE <project_db> TO <project>_runtime;

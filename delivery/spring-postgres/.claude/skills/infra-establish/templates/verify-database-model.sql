@@ -1,12 +1,12 @@
--- Skill Template — the Master Copy is in correctness-by-construction.
+-- Agent Skill Template — the Master Copy is in correctness-by-construction.
 -- Copy into a CBC Run at the same path and fill; the filled file is the
--- CBC Run's own (.claude/rules/delivered-copies.md, rule 8, A Skill Template is copied and filled).
+-- CBC Run's own (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is copied and filled, never edited in place).
 
 -- infrastructure/postgres/verify-database-model.sql
 --
--- The catalog half of the two-way verification
+-- The Catalog Check, one of the two verifications
 -- (.claude/skills/infra-establish/references/establishment-walk.md,
--- stage 5): the ground's
+-- Stage 5): the Runtime Ground's
 -- real state queried against the claims of
 -- .claude/skills/infra-establish/references/postgres-role-split.md.
 -- Run on demand,
@@ -15,10 +15,10 @@
 --   podman exec -i <project>-postgres \
 --     psql -U postgres -d <project_db> < infrastructure/postgres/verify-database-model.sql
 --
--- Expected results ride as comments beside each query — this file needs no
--- other document open. The behavioral half (DDL attempted as runtime and
--- refused) lives in the operator manual and the ground's record — the
--- establishment log, or the devlog in a repo with records.
+-- Expected results are comments beside each query — this file needs no
+-- other document open. The Behavioral Check (DDL attempted as runtime and
+-- refused) lives in the Operator Manual and the Runtime Ground's record:
+-- the Infrastructure Establishment Log, or the devlog in a repo with records.
 
 \echo ''
 \echo '=== 1 · Project roles and capabilities ==='
@@ -34,7 +34,7 @@ ORDER BY rolname;
 
 \echo ''
 \echo '=== 2 · Database ownership — stays above the split ==='
--- expected: <project_db> owned by postgres (the bootstrap identity)
+-- expected: <project_db> owned by postgres (the Database Setup Identity)
 SELECT datname, pg_get_userbyid(datdba) AS owner
 FROM pg_database
 WHERE datname = '<project_db>';
@@ -82,7 +82,7 @@ ORDER BY objtype, privilege_type;
 \echo ''
 \echo '=== 6 · Connect privilege — access by grant, never by default ==='
 -- expected: <project>_migrator t, <project>_runtime t, and PUBLIC (the
--- empty-string role, oid 0) f — the bootstrap's REVOKE CONNECT, checked
+-- empty-string role, oid 0) f — bootstrap.sql's REVOKE CONNECT, checked
 SELECT '<project>_migrator' AS who, has_database_privilege('<project>_migrator', '<project_db>', 'CONNECT') AS connect
 UNION ALL SELECT '<project>_runtime',  has_database_privilege('<project>_runtime',  '<project_db>', 'CONNECT')
 UNION ALL SELECT 'PUBLIC',             has_database_privilege(0::oid,               '<project_db>', 'CONNECT')

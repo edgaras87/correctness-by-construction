@@ -1,167 +1,207 @@
 ---
 name: infra-establish
-description: Establish a framed backend project's infrastructure ground - decide the execution environment against a lived default (podman local containers, compose-driven), evaluate infrastructure services strictly from the slice registry's adversity needs (the not-provisioned list stated with each exclusion's why), name each service's constraints with database-level enforcement, stand services up, verify both ways (catalog check plus behavioral refusal check), and write the two manuals (infrastructure contract for the builder, operator manual for the human). Use whenever a framed project needs its infrastructure stood up - containers, PostgreSQL, compose files, Flyway/migrations tooling, "set up the database", "stand up the ground", "infrastructure establishment" - even if the user just says "the framing is done, let's get it running". Requires completed framing artifacts (intent, definition, slice registry) - Stage 0 checks and refuses to proceed without them. Do NOT use for framing (cbc-framing), for implementing slices (cbc-slice), or for adding a service to an already-established ground (infra-serve).
+description: Run the Infrastructure Establishment of a framed backend project, its Runtime Ground. Decide the Execution Environment against the Stack Default (podman local containers, compose-driven). Choose the Infrastructure Services strictly from the adversity needs of the Invariant Slice Registry, and state each Infrastructure Service Exclusion with its why. Name each Infrastructure Service Constraint with database-level enforcement. Stand the services up, verify both ways (a Catalog Check and a Behavioral Check), and write the two manuals: the Infrastructure Contract for the builder, the Operator Manual for the operator. Use whenever a framed project needs its infrastructure stood up: containers, PostgreSQL, compose files, Flyway or migrations tooling, "set up the database", "stand up the ground", "infrastructure establishment", even if the user just says "the framing is done, let's get it running". It requires the completed CBC Framing Exports (intent, definition, slice registry). Stage 0 checks them, and refuses to go on without them. Do NOT use for framing (the cbc-framing Agent Skill), for implementing Invariant Slices (the cbc-slice Agent Skill), or for adding a service to an already-established Runtime Ground (the infra-serve Agent Skill).
 foundation: practice, checked against concept v1
 ---
 
-# Infra establish — from no infrastructure to a governed, verified ground
+# Infrastructure Establishment — from no infrastructure to a governed, verified Runtime Ground
 
-Take one framed project to **ground**: the environment chosen and
-running, the services the problem's reasoning chain requires stood up,
-constrained to need, verified both ways, with the manuals that make the
-ground usable and reproducible. The exit is the walk's stage 7: **the
-ground runs, constrained to need, both manuals stand.**
+Take one framed project to its **Runtime Ground:**
 
-The full walk is `.claude/skills/infra-establish/references/establishment-walk.md` — read it before
-Stage 1. When PostgreSQL is the decided datastore, two more references
-apply at their stages: `.claude/skills/infra-establish/references/postgres-role-split.md` (the authority
-model — the constraint's realization) and
-`.claude/skills/infra-establish/references/postgres-setup-walkthrough.md` (the lived end-to-end
-sequence, confirmed by two projects).
+1. the Execution Environment chosen and running;
+2. the Infrastructure Services the problem's reasoning requires,
+   stood up;
+3. each constrained to need;
+4. each verified both ways;
+5. the manuals that make the Runtime Ground usable and reproducible.
 
-## Stage 0 — readiness gate (before anything else)
+The exit is the walk's Stage 7: **the Runtime Ground runs,
+constrained to need, and both manuals stand.**
+
+The full walk is
+`.claude/skills/infra-establish/references/establishment-walk.md`.
+Read it before Stage 1. When PostgreSQL is the decided datastore, two
+more references apply at their Agent Skill Stages:
+
+- `.claude/skills/infra-establish/references/postgres-role-split.md`,
+  the Database Role Split, which makes the constraint real;
+- `.claude/skills/infra-establish/references/postgres-setup-walkthrough.md`,
+  the sequence end to end, as two projects confirmed it.
+
+## Stage 0 — System Readiness (before anything else)
 
 The service decision lives in *this* work, but the **need** is handed
-in. Verify against the actual repo:
+in. Check against the actual repo:
 
-1. **The framing artifacts exist and are settled**: the project intent,
-   the system definition (its environment facts are binding), and the
-   slice registry (its slices' adversity requirements are the deciding
-   constraints). With cbc-framing these live under `docs/system/`:
+1. **The CBC Framing Exports exist and are settled:**
+   - the CBC Framing Intent;
+   - the System Definition: its environment facts are binding;
+   - the Invariant Slice Registry: its Invariant Slices' adversity
+     requirements are the deciding constraints.
+
+   With the cbc-framing Agent Skill, these live under `docs/system/`:
    `intent.md`, `definition.md`, `registry.md`.
-2. **The environment facts are readable** — the definition states what
-   runtime ground the system assumes, the lines of "The runtime
-   ground" in `.claude/skills/cbc-framing/references/cbc-framing-workflow.md`.
-   If the definition has
-   no runtime-ground facts, this is not "stop": it is the downstream
-   trigger the definition's own revision rule names. The facts are
-   added by a dated revision entry in LAYER-1-ENVIRONMENT — what
-   changed, why, triggered by this check — one commit, no possession,
-   refusal or verdict touched; then the check passes. Lived twice, the
-   same way both times. Framing work is not done here; a fact the
-   framing left unstated is written where it belongs.
-3. **The repo exists and is a git repo** with its plumbing dotfiles
-   present or creatable (`.gitignore` at minimum — secrets handling
-   depends on it).
+2. **The environment facts are readable.** The System Definition
+   states what Runtime Ground the system assumes: the lines of "The
+   runtime ground" in
+   `.claude/skills/cbc-framing/references/cbc-framing-workflow.md`.
 
-**Check 1 or 3 fails → stop.** Report exactly what is missing.
-Framing work is never done here — that is the framing job's
-territory. An establishment started on an unframed project
-provisions from habit,
-and habit is exactly what the method exists to refuse.
+   If the System Definition has no Runtime Ground facts, this is not
+   "stop". It is the later trigger the System Definition's own
+   revision rule names. The facts are added by a dated revision entry
+   in LAYER-1-ENVIRONMENT: what changed, why, and that this check set
+   it off. It is one commit, and touches no System Possession, System
+   Refusal or verdict. Then the check passes. Two CBC Runs met this,
+   the same way both times. A fact CBC Framing left unstated is
+   written where it belongs.
+3. **The repo exists, and is a git repo** with its plumbing dotfiles
+   present or creatable: `.gitignore` at least, since secrets
+   handling depends on it.
 
-## The walk and its gates
+**Check 1 or 3 fails: stop.** Report exactly what is missing. CBC
+Framing work is never done here. An Infrastructure Establishment
+started on a project not framed provisions from habit, and habit is
+exactly what the method exists to refuse.
+
+## The walk and its Gates
 
 ```
-0: ready? → 1: environment → 2: services   → 3: constraints → 4: knowledge
+0: ready? → 1: environment → 2: services   → 3: constraints → 4: the reference
                 (decided,       (from need,     (named, with     (applied or
                  stood up)       exclusions)     enforcement)     recorded)
           → 5: stand up + verify BOTH ways → 6: contract → 7: exit test
 ```
 
-Full detail per stage: `.claude/skills/infra-establish/references/establishment-walk.md`. The
-non-negotiables:
+The full detail of each Agent Skill Stage:
+`.claude/skills/infra-establish/references/establishment-walk.md`.
+What cannot be bargained away:
 
-- **Stage 1 gate:** the environment decision is logged with its why
-  *before* any ground file exists. **No compose file is born at stage
-  1** — its content is stages 2–5's outcome. The adversities' demands
-  choose the environment; **the levers the evidence pulls are proven
-  by the harness that pulls them**, not here. The operator manual's
-  environment section is written from the lived stand-up, at the
-  moment it happens.
-- **Stage 2 gate:** one logged evaluation, slice by slice: what
-  capability does each invariant's evidence actually require? The
-  service set is what survives that question — **and the
-  not-provisioned list is stated with each exclusion's why.** A cache
-  refused, a queue refused, and for what reason. No exclusion list, no
-  stage 2.
-- **Stage 3 gate:** every constraint names its **enforcement
-  mechanism** — the database's own grant system, a config, a
-  structural wall — never convention, code review, or trust. A
-  constraint without enforcement is a wish.
-- **Stage 5 gate:** verification runs **both ways, always**: the
-  **catalog check** (real state queried against the model's claims,
-  expected results stated beside each query) *and* the **behavioral
-  check** (the constraint attempted and watched being refused, live).
-  A ground verified one way is not verified.
-- **Stage 6 gate:** both manuals stand — the **infrastructure
-  contract** (builder-facing: identities, reachability, refusals, how
-  schema changes are made) and the **operator manual** (stand-up-and-
-  use, written from lived work). No manuals, no exit.
+- **Stage 1 Gate:** the Execution Environment decision is logged with
+  its why *before* any file of the Runtime Ground exists. **No compose
+  file is created at Stage 1:** its content is the outcome of Stages
+  2 to 5. The adversities' demands choose the Execution Environment.
+  **What the evidence must be able to do to the Runtime Ground is
+  proven by the Adversity Harness that does it,** not here. The
+  Operator Manual's environment section is written from the stand-up
+  as it is done.
+- **Stage 2 Gate:** one logged evaluation, Invariant Slice by
+  Invariant Slice: what capability does each invariant's evidence
+  actually require? The set of Infrastructure Services is what
+  survives that question. **Each Infrastructure Service Exclusion is
+  stated with its why:** a cache refused, a queue refused, and for
+  what reason. No list of exclusions, no Stage 2.
+- **Stage 3 Gate:** every Infrastructure Service Constraint names its
+  **enforcement mechanism:** the database's own grant system, a
+  config, a Structural Wall. Never convention, code review, or trust.
+  A constraint without enforcement is a wish.
+- **Stage 5 Gate:** verification runs **both ways, always:**
+  - the **Catalog Check:** real state queried against the model's
+    claims, the expected result stated beside each query;
+  - the **Behavioral Check:** the Infrastructure Service Constraint
+    attempted, and watched being refused, live.
 
-## The lived-result discipline (every executing stage)
+  A Runtime Ground verified one way is not verified.
+- **Stage 6 Gate:** both manuals stand:
+  - the **Infrastructure Contract**, for the builder: identities,
+    reachability, refusals, how schema changes are made;
+  - the **Operator Manual**, for standing up and use, written from
+    the work as done.
 
-State the command and its expected result → run → read the actual
-output → the outcome is what actually happened. Record it in the
-ground's record (Records and outputs, below). Destructive acts
-(volume drops, resets) need the user's explicit yes; host-level
-installs are the user's own acts.
+  No manuals, no exit.
+
+## The rule for results (every Agent Skill Stage that runs commands)
+
+1. State the command, and its expected result.
+2. Run it.
+3. Read the actual output.
+4. The outcome is what actually happened.
+
+Record it in the Runtime Ground's record (*Records and outputs*,
+below). Destructive acts, such as dropping volumes or resets, need
+the reviewer's explicit yes. Installs on the host are the reviewer's
+own acts.
 
 ## Deviations — legal, never silent
 
-A different ground (no containers, several services, another
-constraint family) may force departures from the walk or the
-references. Depart when the ground demands it; log where, what was
-done instead, and why. The references are lived captures, not law —
-but a silent deviation poisons the record.
+A different Runtime Ground, with no containers, several services, or
+another family of constraints, may force departures from the walk or
+the references. Depart when the Runtime Ground demands it. Log where,
+what was done instead, and why. The references are written from what
+CBC Runs did, not rules. But a deviation not logged makes the record
+wrong.
 
-## Records and outputs (the repo's own conventions win)
+## Records and outputs
 
-Where the ground's record lives depends on what the repo keeps —
-lived by two CBC Runs, and the shape below is theirs:
+The repo's own conventions win. Where the Runtime Ground's record
+lives depends on what the repo keeps. Two CBC Runs worked it, and the
+shape below is theirs.
 
-- **A repo with records** (a plan, ADRs, a devlog — every container-born
-  project): **no establishment log.** Decisions are ADRs — the
-  environment; the service set with its not-provisioned list; the
-  constraints, each with its enforcement. The walk as lived is the
-  devlog's entry for the Plan Step, growing as the walk runs: for every
-  executing stage, the command, what was expected, what actually
-  happened. Expected results sit in the verify suite and the
-  operator manual. The environment ADR carries the mapping from
-  this skill's default records to the repo's own — the sentence
-  the log's first entry would have held. Lived once: a log beside
-  such records held nothing they did not.
-- **A repo without records:**
-  `docs/infrastructure/establishment-log.md`, beside the manuals —
-  the decision record and the walk's lived outputs, its first entry
-  mapping this skill's defaults to whatever the repo does keep.
-  Prose about the ground lives with the manuals; `infrastructure/`
-  holds only what runs.
+- **A repo with records** (a plan, ADRs, a devlog: every project born
+  from the container): **no Infrastructure Establishment Log.**
+  - Decisions are ADRs:
+    1. the Execution Environment;
+    2. the set of Infrastructure Services, with the Infrastructure
+       Service Exclusions;
+    3. the Infrastructure Service Constraints, each with its
+       enforcement.
+  - The walk as done is the devlog's entry for the Plan Step, growing
+    as the walk runs. For each Agent Skill Stage that runs commands,
+    it holds the command, what was expected, and what actually
+    happened.
+  - The expected results sit in the verify suite and the Operator
+    Manual.
+  - The Execution Environment ADR maps this Agent Skill's default
+    records to the repo's own: the sentence the log's first entry
+    would have held. One CBC Run kept a log beside such records, and
+    it held nothing they did not.
+- **A repo without records:** the Infrastructure Establishment Log,
+  `docs/infrastructure/establishment-log.md`, beside the manuals. It
+  is the decision record and the walk's outputs as done. Its first
+  entry maps this Agent Skill's defaults to whatever the repo does
+  keep. Prose about the Runtime Ground lives with the manuals.
+  `infrastructure/` holds only what runs.
 
-The layout, both cases:
+The layout, in both cases:
 
-- `compose.yaml` and `.env.example` at the root, `.env` ignored —
-  the stranger's first command finds them there.
-- `infrastructure/` — the rest of the runnable ground (bootstrap
-  SQL, verify suite, migration tool config), landed as the walk
-  produces them.
-- The two manuals under the repo's docs directory
+- `compose.yaml` and `.env.example` at the root, `.env` ignored: the
+  stranger's first command finds them there.
+- `infrastructure/`: the rest of the runnable Runtime Ground
+  (`bootstrap.sql`, the verify suite, the migration tool's config),
+  landed as the walk produces them.
+- The two manuals, under the repo's docs directory
   (`docs/infrastructure/`), beside what else is written about the
   system:
-  - `infrastructure-contract.md` — the **living** builder-facing
-    manual: one section per service, which identity to connect as
-    and which never to use, reachability inside vs outside the
-    environment's network, what the constraints refuse, how schema
-    changes are made. Grown at every re-entry, never rewritten from
-    scratch.
-  - `operator-manual.md` — the operator's full stand-up-and-use
-    truth, written **from the lived setup, contemporaneously** —
-    never reconstructed later.
-- README `Prerequisites` section — projected at the exit, when the
-  ground stands: the environment lines only, merged and filled from
-  `.claude/skills/infra-establish/templates/readme-prerequisites.md`. The stack's
-  line arrives at bootstrap, not here. Direction in the walk's stage
-  7.
-- Optional, only if the project keeps public docs: a setup guide
-  derived from the operator manual — a projection, never a second
-  master; re-derived when the manual changes.
+  - `infrastructure-contract.md`, the Infrastructure Contract: the
+    **living** manual for the builder. It has one section per
+    Infrastructure Service, saying:
+    - which identity to connect as, and which never to use;
+    - reachability inside and outside the Execution Environment's
+      network;
+    - what the Infrastructure Service Constraints refuse;
+    - how schema changes are made.
+
+    It grows at every Infrastructure Service Re-entry, and is never
+    rewritten from scratch.
+  - `operator-manual.md`, the Operator Manual: everything the
+    operator needs to stand the Runtime Ground up and use it,
+    written **from the setup as it is done, at the time,** never
+    reconstructed later.
+- The README's `Prerequisites` section, derived from the Operator
+  Manual at the exit, when the Runtime Ground stands. It carries the
+  environment lines only, merged and filled from
+  `.claude/skills/infra-establish/templates/readme-prerequisites.md`.
+  The stack's line arrives at the CBC Bootstrap, not here. The walk's
+  Stage 7 says how.
+- Optional, only if the project keeps public docs: a setup guide,
+  derived from the Operator Manual. It is never a second home, and is
+  derived again when the manual changes.
 
 ---
 
 ## Decisions
 
-- ADR-0008 — `references/postgres-setup-walkthrough.md`: the ground's
-  files are Skill Templates beside the references
+- ADR-0008 — `references/postgres-setup-walkthrough.md`: the Runtime
+  Ground's files are Agent Skill Templates beside the references
 - ADR-0013 — *Records and outputs* and `references/establishment-walk.md`
-  stage 7: the README's Prerequisites section arrives when the ground
-  stands
+  Stage 7: the README's Prerequisites section arrives when the Runtime
+  Ground stands

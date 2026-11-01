@@ -1,8 +1,8 @@
-# Skill Template — the Master Copy is in correctness-by-construction.
+# Agent Skill Template — the Master Copy is in correctness-by-construction.
 # Copy into a CBC Run and
-# fill; the filled file is the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, A Skill Template is copied and filled).
+# fill; the filled file is the CBC Run's own (.claude/rules/delivered-copies.md, rule 8, An Agent Skill Template is copied and filled, never edited in place).
 
-# The infrastructure ground, as the CBC Run's decisions established it.
+# The Runtime Ground, as the CBC Run's decisions established it.
 # Front door: podman compose. Secrets and machine variance live in .env
 # (git-ignored; shape in .env.example); decided identities are literal.
 name: <project>         # pinned: volume/network identity must not depend
