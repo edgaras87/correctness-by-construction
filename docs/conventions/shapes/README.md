@@ -209,7 +209,7 @@ An Output Shape the Concept Deliverer ships carries an illustration from the Met
 worked example, never a CBC Run's: the next CBC Run may be the same problem,
 and a CBC Run's illustration is its answer.
 
-### 4.3 The birth and delivery picture
+### 4.3 CBC Run Birth and delivery
 
 Where an Output Shape sits at the Concept Deliverer, and how it reaches a CBC Run. Every
 arrow that crosses is a delivery, staged by the reviewer or by the
@@ -234,7 +234,7 @@ flowchart LR
     SHP[".claude/shapes/<br/>nothing loads it"]
   end
 
-  SH -->|"staged with it,<br/>at a birth or a delivery"| SHP
+  SH -->|"staged with it,<br/>at a CBC Run Birth or a delivery"| SHP
   MADE -->|"read against it, at the close"| SHP
   SHP -.->|"read at a CBC Run Reading: the copy against its Delivery Pin,<br/>and the CBC Run's own Output Shapes it offers"| SH
 ```

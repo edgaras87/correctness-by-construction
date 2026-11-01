@@ -85,8 +85,8 @@ Plan Step, Agent Skill or playbook names the append.
 - A CBC Run's files are its own. A fix that would be true of any
   project comes back the way every lesson does. The Concept Deliverer
   reads the CBC Run (`docs/conventions/exchange/` §6, *Up from the CBC
-  Run*) and changes the Master Copy here. The next birth starts
-  corrected.
+  Run*) and changes the Master Copy here. The next CBC Run Birth
+  starts corrected.
 - A new stack is a new directory under `templates/` with the three
   `.part` files, and an ADR if any choice was non-obvious.
 - `.idea/` is ignored wholesale; JetBrains state is machine-local.

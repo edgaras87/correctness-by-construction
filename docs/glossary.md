@@ -9,9 +9,10 @@
      home defines, the entry points. A Name is added in the commit
      that first uses it; an entry goes when its thing does. A word
      whose English meaning is ours has no Name and no entry. A
-     convention is named by its path in backticks, with its kind
-     word, the exchange manual, or by its Name, the Exchange
-     Convention; never by the bare word. Entries sit in
+     convention is named in one of three ways: by its path in
+     backticks; by its word with its kind word, the exchange manual;
+     or by its Name, the Exchange Convention. Never by the bare
+     word. Entries sit in
      groups by what they name; a new Name goes in its group, after
      the Names it uses. The concept's, the method's and the stack's
      Names are written once, in the file each group delivers, and
@@ -54,8 +55,9 @@ delivered files below.
   Deliverer last read up to, one of the two numbers a CBC Run
   records for a delivery (`docs/conventions/exchange/` §2.2, *The CBC Run*).
 - **Delivery Pin** — the Concept Deliverer's commit a CBC Run's
-  copies equal, but for their *Decisions* footers; the other number
-  (`docs/conventions/exchange/` §2.2, *The CBC Run*).
+  copies equal, but for their *Decisions* footers. It is the second
+  of the two numbers a CBC Run records for a delivery, beside the
+  Read-Through Commit (`docs/conventions/exchange/` §2.2, *The CBC Run*).
 - **Delivery Note** — the text beside a delivery: what changed since
   the CBC Run's Delivery Pin, and a verdict on everything the CBC Run
   asked (`docs/conventions/exchange/` §3.7, *The Delivery Note*).
@@ -89,8 +91,8 @@ delivered files below.
   (`docs/models/tiers.md` §3.3, *Upward harvest*).
 - **CBC Run Birth** — a CBC Run's first state, made from this repo at one
   Delivery Pin (`docs/models/tiers.md` §3.1, *Downward delivery*).
-- **Pure Seed** — the procedure that gives a CBC Run its birth from
-  this repo alone: `delivery/installs/pure-seed.md`.
+- **Pure Seed** — the procedure that makes a CBC Run Birth from this
+  repo alone: `delivery/installs/pure-seed.md`.
 - **CBC Run Briefing** — the text put in a Newborn CBC Run's `temp/`
   before it starts that says what it is to build
   (`.claude/approaches-on-trial/auto-run.md`, *Stages*).
@@ -113,12 +115,12 @@ delivered files below.
   may be wrong or incomplete. It is the one that counts regardless.
   What derives from it applies it and does not explain. One rule for
   all of them (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*);
-  they differ at the edges (ADR-0039). Canonical says reference,
-  never correctness: today's understanding, changed only for a
-  reason recorded.
+  they differ at the edges (ADR-0039). "Canonical" means the
+  reference, not that it is correct. It is today's understanding,
+  changed only for a reason that is recorded.
 - **Idea Model** — the top Canonical Description of a chain of
-  texts: an idea any repo can adapt, its rules varying by repo, like
-  an interface. A repo adapts it in a Convention Manual
+  texts: an idea any repo can adapt, its rules varying by repo, each
+  repo writing its own Convention Manual for it. A repo adapts it in a Convention Manual
   (`docs/models/idea-to-output.md` §2, *The kinds*, and §5, *An Idea
   Model and a concept*). A particular one is named by its name: the
   Agent Model, the Tiers Model, the Idea-to-Output Model.
@@ -143,13 +145,13 @@ delivered files below.
 - **Output Form** — how an output is written, read while it is
   written: rules for the writing and the output's layout, together.
   A Work Approach (`docs/models/idea-to-output.md` §2, *The kinds*).
-  A particular one is named by its owner: a record's form sits in
-  the record itself, its header comment, the Plan Step Form, a Record
-  Stub's headings. A Convention Manual's and a CBC Run Reading's are
+  A particular one is named by its owner: the Plan Step Form. A
+  record's Output Form sits in the record itself: its header comment,
+  or a Record Stub's headings. A Convention Manual's and a CBC Run Reading's are
   Agent Rules today; whether they become Output Shapes is TODO's
   "Decide whether our own forms become Output Shapes".
 - **Output Shape** — a presumed output, written from outputs that
-  exist, and read only at the gate to check what was made
+  exist, and read only at a Plan Step Gate to check what was made
   (`docs/models/idea-to-output.md` §2, *The kinds*;
   `docs/conventions/shapes/`). A particular one is named by its
   output: the Enemy Collision Kill Shape, the Invariant Slice Record Shape. Not an Output
@@ -164,10 +166,15 @@ delivered files below.
   (`docs/conventions/agent-arrangement/` §3.2, *`.claude/rules/`*). A
   numbered line inside one is named by its owner and number:
   "one-home rule 3", "writing rule 6". The kinds in use: a Local
-  Rule, the entry file's (`docs/conventions/agent-arrangement/`
-  §2.4, *How the Entry File is written*); a Paths Rule, one loaded by path; and Claude Code's
-  permission and deny rules, its own words
+  Rule; a Paths Rule; and Claude Code's permission and deny rules,
+  its own words
   (`docs/conventions/agent-arrangement/` §3.5, *`.claude/settings.json`*).
+- **Local Rule** — a rule written in the Entry File's *Local rules*
+  slot, true of this project only
+  (`docs/conventions/agent-arrangement/` §2.4, *How the Entry File is written*).
+- **Paths Rule** — an Agent Rule with a `paths:` list, loaded when a
+  file it names is touched
+  (`docs/conventions/agent-arrangement/` §5.6, *Rules files*).
 - **Agent Skill** — a file under `.claude/skills/<name>/`, its
   `SKILL.md` and what it references, read when its moment comes
   (`docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`*). Always written with its
@@ -180,7 +187,7 @@ delivered files below.
 - **Record Stub** — a record as it is born: the shipped file with its
   header comment and headings, which a project fills from its first
   entry on. The Container Group holds one per record, each named by
-  it: the Plan Stub, the Decisions Log Stub
+  its record
   (`docs/conventions/project-recording/`, *What this is made usable as*).
 - **Hygiene Base** — the stack-agnostic hygiene files every repo
   gets, correct for a records-only one; a Stack Overlay is appended
@@ -212,12 +219,12 @@ delivered files below.
   (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
 - **Chain Link** — a relation from a lower text to the upper one it
   relies on: stands on, points, governs, written from
-  (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*). Wider
-  than a Fact Reference, which is what one kind of link, points,
-  writes down.
+  (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*). A
+  Fact Reference is narrower: it writes down one kind of Chain Link,
+  points.
 - **Foundation Line** — the line by which a file names the one thing
   the whole of it stands on: its Canonical Description, or the
-  practice it was written under. A skill, an Agent Rule, an Output
+  practice it was written under. An Agent Skill, an Agent Rule, an Output
   Shape, a record's form and a Convention Manual standing on an Idea
   Model carry one; a line that uses a part of a document carries a
   Fact Reference to that part instead
