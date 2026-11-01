@@ -48,12 +48,14 @@ commit messages, comments. How it reads, never what it says.
    look for a shorter true Name before taking it; when none is found,
    the long Name stands. A hyphenated word counts as one, toward the
    two and the 4: "never-event" is one word. A lowercase word is
-   English and only English; no Markdown mark marks a Name. Written
-   otherwise:
+   English and only English. No Markdown mark marks a Name, but bold
+   once, at the line that defines it. A list item's bold lead may
+   begin with a Name. Written otherwise:
    - a numbered thing carries its owner and number,
      "delivered-copies rule 4", "`cbc-slice`'s Stage 3";
    - a label inside its owner keeps its case, "Stage 3", "KILL-2";
-   - a path is written as it is.
+   - a path is written as it is;
+   - a Foundation Line's value is written as it is, `concept v1`.
 
    A thing is defined when a text gives a word a meaning English does
    not: its Name goes into the glossary in the commit that first uses
@@ -62,7 +64,8 @@ commit messages, comments. How it reads, never what it says.
     - a label, a noun phrase of 30 characters or fewer;
     - in sentence case, a Glossary Name inside it keeping its
       capitals;
-    - one phrase, with no gloss after a dash or colon;
+    - one phrase, with no gloss after a dash or colon, joined by a
+      comma, or in parentheses;
     - standing alone without its parent heading: *How an Invariant
       Slice is cut*, never *How*.
 
@@ -121,3 +124,6 @@ this rule then names that kind and its style.
   needs; Markdown has no line width
 - ADR-0078 — rule 9: a Name built on another Name carries it
   whole; past 4 words, a trigger to look for a shorter one
+- ADR-0079 — rule 9: bold once at a Name's home, a list item's
+  bold lead, a Foundation Line's value; rule 10: a comma or a
+  parenthesis is a gloss
