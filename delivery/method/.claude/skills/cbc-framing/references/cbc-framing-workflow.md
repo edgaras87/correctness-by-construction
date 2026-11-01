@@ -63,7 +63,7 @@ Four rules govern every handoff:
    - the System Possessions set what the Enemy Census covers;
    - Enemy Facts × System Possessions feed the Enemy Collisions;
    - the Enemy Collision Kills feed the sort into owners;
-   - the owners feed the Responsibility Area Seams;
+   - the owners feed the Responsibility Area Seams, the lines between them;
    - everything feeds the cut.
 
    An Agent Skill Stage whose input is not the previous one's output

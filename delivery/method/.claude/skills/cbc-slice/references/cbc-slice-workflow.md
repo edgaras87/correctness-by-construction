@@ -1,7 +1,7 @@
 # Invariant Slice workflow — the outline, the why, the examples
 
 *SKILL.md says what to do at each Agent Skill Stage, and each one's
-Gate. This file holds only what SKILL.md does not: the record's
+Gate. This file holds only what SKILL.md does not: the Invariant Slice Record's
 outline, why each Agent Skill Stage runs as it does, and worked
 examples. Each section names the Agent Skill Stage it serves.*
 
@@ -13,7 +13,7 @@ which owns it. An edit lands there first, then here, word for word.*
 
 ## The unit
 
-An **Invariant Slice** is one invariant × one adversity, carried all
+An Invariant Slice is one invariant × one adversity, carried all
 the way to passing evidence. Not a feature, not an endpoint, not a
 ticket.
 
@@ -33,7 +33,7 @@ alternatives are never weighed against the actual requirement.
 ## The Invariant Slice Record's outline
 
 One Invariant Slice Record per Invariant Slice, written as the Agent
-Skill Stages go. This is the minimum every record needs: where each
+Skill Stages go. This is the minimum every Invariant Slice Record needs: where each
 Agent Skill Stage's output goes, and one Invariant Slice Guarantee
 Block per Invariant Slice Guarantee. The Invariant Slice Record
 Shape, in `.claude/shapes/`, adds to it and says how each part reads.
@@ -46,10 +46,10 @@ each part, the Agent Skill Stage that writes it.
 ## Invariant                                  Stage 1
 ## Adversity                                  Stage 1
    what attacks it, and how the evidence creates it, for every
-   guarantee alike
+   Invariant Slice Guarantee alike
 ## Decided before the Correctness Specification   Stage 1's start, where something was
 ## Guarantees
-### SLICE-<n> GUARANTEE-<k>. <the claim>       one block per guarantee:
+### SLICE-<n> GUARANTEE-<k>. <the claim>       one Invariant Slice Guarantee Block per Invariant Slice Guarantee:
    the attack, and what we guarantee          Stage 1
    its Evidence Criterion                     Stage 1
    what holds it, and what stands behind it   Stage 2
@@ -67,9 +67,9 @@ each part, the Agent Skill Stage that writes it.
 ```
 
 What spans every Invariant Slice Guarantee has its own section. What
-belongs to one is in its block, and nowhere else: the claim is
-written once, at the top of its block. An Agent Skill Stage that adds
-to a block adds to that block. It does not open a section of its
+belongs to one is in its Invariant Slice Guarantee Block, and nowhere else: the claim is
+written once, at the top of its Invariant Slice Guarantee Block. An Agent Skill Stage that adds
+to an Invariant Slice Guarantee Block adds to that one. It does not open a section of its
 own.
 
 ---
@@ -100,14 +100,15 @@ superseded.
 unanswered is a warning the Invariant Slice inherited and dropped.
 
 **Invariant Slice Guarantees are derived by attack, never looked
-up.** This middle layer is the real work, and textbook examples skip
+up.** This middle step is the real work, and textbook examples skip
 it. For the order example, the attack yields: uniqueness of the key;
 a winner and a loser under concurrency; safe replay of the winner's
 response; correct key scope. Each says what must hold, not how.
 
 The output is the **Correctness Specification**: invariant →
 Invariant Slice Guarantees → Evidence Criteria, plus the Adversity
-Model.
+Model. The Adversity Model is the part that says what attacks and how
+the evidence creates it: the Invariant Slice Record's *Adversity*.
 
 ## Stage 2 — why
 
@@ -144,7 +145,7 @@ invariant needs one, and an Invariant Slice is not a feature.
 here usually means Stage 1 or 2 was skipped.
 
 **Create, don't sample.** A test that runs one request at a time is
-not evidence for a contention guarantee. The evidence must create the
+not evidence for an Invariant Slice Guarantee against contention. The evidence must create the
 adversity the Correctness Specification names.
 
 **Why the Falsifiable Promise is read first.** A test that checks
@@ -181,16 +182,16 @@ gap. It creates no adversity, so it is not evidence.
 it?*
 
 **The Invariant Slice Record is the Invariant Slice's visible
-product.** In this discipline, how deep the guarantees go is what is
+product.** In this discipline, how deep the Invariant Slice Guarantees go is what is
 shown, not the feature.
 
 **Why the Invariant Slice Close writes its answers.** A built
 Invariant Slice can teach that the next expected one is wrong, split
 or unnecessary. The Invariant Slice Registry can only decide again
-on what the close wrote down. Examples of what a close hands on:
+on what the Invariant Slice Close wrote down. Examples of what an Invariant Slice Close hands on:
 - a Structural Wall that already holds part of a later invariant;
-- a counter that over-approximates until a later Invariant Slice
-  ends something;
+- a counter that counts more than are live, until a later Invariant
+  Slice makes them end;
 - a choice a later Invariant Slice must make.
 
 And an Invariant Slice Registry that reads `chosen-next` through a
@@ -208,10 +209,10 @@ and the Invariant Slice Entry Shape. The project changes them, or
 writes its own, as the shapes-lifecycle Agent Rule says
 (`.claude/rules/shapes-lifecycle.md` §1, *Written from work that exists*).
 An Output Shape inside this Agent Skill would be read while the
-record is written, and the record would follow it instead of showing
+Invariant Slice Record is written, and the Invariant Slice Record would follow it instead of showing
 where it is wrong. Whether an output is worth a new Output Shape is a
-judgement the project makes when it makes it, not a step of this
-close. Why an Output Shape is read only at the close:
+judgement the project makes when it makes that output, not a step of this
+Invariant Slice Close. An Output Shape is read only at the Invariant Slice Close, for reasons the shapes-lifecycle Agent Rule gives
 (`.claude/rules/shapes-lifecycle.md` §2, *Where an Output Shape lives*).
 
 ---
@@ -241,6 +242,6 @@ reason:
   Stage 3's second move, with no separate Gate between Stage 3 and
   Stage 4.
 - **The Correctness Specification is prose under fixed headings**
-  (*invariant / adversity / guarantees / evidence criteria*), one per
+  (*Invariant*, *Adversity*, *Guarantees*, each with its Evidence Criterion), one per
   Invariant Slice. Structure enough to diff, prose enough not to fix
   a schema in advance.

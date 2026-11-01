@@ -6,14 +6,14 @@ foundation: concept v1
 
 # Invariant Slice — one invariant made real
 
-Carry **one Invariant Slice**, one invariant × its adversity, to
+Carry one Invariant Slice, one invariant × its adversity, to
 demonstrated evidence. The completion test is single and
 non-negotiable: **the test that creates the adversity exists and
 passes.** No evidence, no closed Invariant Slice.
 
 This file says what to do at each Agent Skill Stage, and each one's
 Gate. `.claude/skills/cbc-slice/references/cbc-slice-workflow.md`
-holds what this file does not: the record's outline, why each Agent
+holds what this file does not: the Invariant Slice Record's outline, why each Agent
 Skill Stage runs as it does, and examples. Read it before Stage 1.
 `.claude/skills/cbc-slice/references/worked-example.md` Part 2 shows
 one Invariant Slice worked end to end.
@@ -92,7 +92,7 @@ explicitly if it is not already recorded.
    test would *create* its adversity and show the invariant
    surviving. It is named now, and built in Stage 3.
 5. **Tag them** GUARANTEE-n and EVIDENCE-n, numbered once through the
-   Invariant Slice Record. Outside the record, each carries its
+   Invariant Slice Record. Outside the Invariant Slice Record, each carries its
    Invariant Slice (`.claude/rules/writing.md`, rule 6): "SLICE-4
    GUARANTEE-1", "SLICE-4 EVIDENCE-3 · GUARANTEE-2 · KILL-12". CBC
    Framing's tags (KILL, FOLD, FACT, NOT-OURS, …) are used as CBC
@@ -114,7 +114,7 @@ explicitly if it is not already recorded.
 
 1. **One Structural Wall per Invariant Slice Guarantee,** the
    strongest available: the store's refusal (a constraint, a right
-   withheld) → type system → single validated entry path → runtime
+   withheld) → type system → single checked entry path → runtime
    check → code review → hope.
 2. **Justify each against the named adversity:** "a unique
    constraint defeats duplicate delivery because the second insert
@@ -129,12 +129,12 @@ explicitly if it is not already recorded.
    System Definition's Trust Assumptions. A writer the System
    Definition trusts is named as trusted, not walled against. A writer
    it never mentions is a question for the System Definition. It is
-   answered there by a dated revision, before it is a Structural Wall
+   answered there by a CBC Framing Export Revision, before it is a Structural Wall
    to build.
 5. **Name the surface at its minimum:** only what the Invariant Slice
    Guarantees need somewhere to live (the door, the schema, the
    records), and nothing beyond. What enters here without an
-   Invariant Slice Guarantee needing it is scope: refuse it, or send
+   Invariant Slice Guarantee needing it is scope beyond this Invariant Slice: refuse it, or send
    it back to the Invariant Slice Registry.
 
 **Gate:**
@@ -154,12 +154,14 @@ explicitly if it is not already recorded.
 2. **Build the Evidence Tests:** tests that **create** the adversity
    (hammer concurrently, inject the duplicate, kill mid-transaction,
    replay out of order) and show the invariant surviving, one
-   Invariant Slice Guarantee at a time. Every State Witness Reading
+   Invariant Slice Guarantee at a time. The State Witness is the state
+   read from outside, where the truth is stored, that shows whether the
+   invariant held. One read of it is a State Witness Reading. Every State Witness Reading
    after the adversity checks the Falsifiable Promise first, then the
    Invariant Slice's invariant, and only then any exact number.
 3. **Give each one its Red Run.** Run it with its Structural Wall
    absent, in a state that never lands in history, and record the
-   red from actual output. Then watch the same test, unchanged, go
+   Red Run's failure from actual output. Then watch the same test, unchanged, go
    green with the Structural Wall standing.
    - How the Structural Wall is made absent is the Invariant Slice's
      choice. When this Invariant Slice builds the Structural Wall, the
@@ -193,8 +195,8 @@ explicitly if it is not already recorded.
      directly (the second key inserted, the forbidden write made), or
      reads the Structural Wall where it is defined. It shows the
      Structural Wall stands.
-   - Neither discharges an Enemy Collision Kill. **Every Enemy
-     Collision Kill still owes a test that had its Red Run.** The Red
+   - Neither answers an Enemy Collision Kill. **Every Enemy
+     Collision Kill still needs a test that had its Red Run.** The Red
      Run decides which kind a test is, not its author.
 6. **Record deviations** (below). An Invariant Slice Guarantee the
    build reveals is added to the Correctness Specification, with this
@@ -207,7 +209,7 @@ explicitly if it is not already recorded.
 3. Each had its Red Run, failing on the State Witness.
 4. The Red Run had the Structural Wall absent, in a state that never
    lands in history.
-5. The red was recorded from actual output.
+5. The Red Run's failure was recorded from actual output.
 6. The same test then went green, unchanged.
 
 A green happy-path suite closes nothing. A test that never had its
@@ -219,15 +221,16 @@ Red Run is not known to catch anything.
    Invariant Slice Guarantee Block gains the tests that prove it, and
    the sections across Invariant Slice Guarantees are finished.
 2. **Close the Invariant Slice in the Invariant Slice Registry** as
-   `closed (date, evidence)`. The entry went to `in-progress` when
+   `closed (date, evidence)`. That moment, with its answers written, is
+   the Invariant Slice Close. The Invariant Slice Entry went to `in-progress` when
    the Correctness Specification landed, not at the Invariant Slice
-   Close. The entry gets one line per item under *Answered at close*:
+   Close. The Invariant Slice Entry gets one line per item under *Answered at close*:
    - what the Invariant Slice left provisional;
    - what it hands to later Invariant Slices, by name;
    - each Adversity Flag or judgment it settled.
 
-   Each line is the answer in a sentence, and where in the record.
-   The reasons stay in the record. Then the order is decided again,
+   Each line is the answer in a sentence, and where in the Invariant Slice Record.
+   The reasons stay in the Invariant Slice Record. Then the order is decided again,
    with its reason written.
 3. **Where this Invariant Slice changed how the system is built, add
    or change rows in `ARCHITECTURE.md`'s Invariants table,** as its
@@ -259,7 +262,7 @@ workflow is allowed. Departing silently is not. Every deviation is
 recorded in the project's own record scheme: where, what was done
 instead, and why.
 
-## Standing Guards (mention at close)
+## Standing Guards (mention at Invariant Slice Close)
 
 At the Invariant Slice Close, remind the reviewer of the three
 Standing Guards, each named by the failure it watches for: System

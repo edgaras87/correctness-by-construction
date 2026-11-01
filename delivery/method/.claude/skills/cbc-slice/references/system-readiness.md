@@ -26,7 +26,7 @@ is derived later, one Invariant Slice at a time.
 
 Why: an Invariant Slice's Stage 3 must land in a place where code and
 tests already run. Toolchain problems met in the middle of an
-Invariant Slice fill its record with lines that are not about the
+Invariant Slice fill its Invariant Slice Record with lines that are not about the
 method.
 
 ## READINESS-3 — The real store is reachable from tests
@@ -42,13 +42,14 @@ mock proves the mock, not the invariant.
 
 ## READINESS-4 — The Adversity Harness can create the Adversity Class this Invariant Slice names
 
-Read this Invariant Slice's entry. For **the Adversity Class it
+The Adversity Harness is the test machinery that creates adversity.
+Read this Invariant Slice's Invariant Slice Entry. For **the Adversity Class it
 names**, the Adversity Harness must be able to create it:
 
 - **contention:** fire N really concurrent requests at one endpoint,
   in parallel, not quickly one after another;
 - **duplicate delivery:** replay a captured request; inject a
-  duplicate after a swallowed response; send a request with the same
+  duplicate after a lost response; send a request with the same
   key and a different body;
 - **partial failure and crashes:** kill the process, or the
   transaction, mid-write, then restart and drive it again.
@@ -76,7 +77,7 @@ answered inside that Invariant Slice's Stage 3 instead: the evidence
 has its Red Run with the Structural Wall absent, before the
 Structural Wall stands, recorded from actual output. The Invariant
 Slice's Gate says so at Stage 1's start. System Readiness is signed
-with READINESS-5 owed there.
+with READINESS-5 left to that Stage 3.
 
 ## READINESS-6 — The CBC Run's records exist
 

@@ -83,8 +83,8 @@ Check these before asking the reviewer to close an Agent Skill Stage.
   choice. Record the rejected candidates.
 - **Stage 1:** every System Possession passes the **System Possession
   Test**: if someone else owned this, could they break the
-  Falsifiable Promise? Every System Refusal is written with the
-  **System Refusal Test**: can the Falsifiable Promise stay true if
+  Falsifiable Promise? Every System Refusal, a fact or responsibility the system
+  deliberately does not own, is written with the **System Refusal Test**: can the Falsifiable Promise stay true if
   this goes wrong elsewhere? Yes means refused. **Enemy Sketches**,
   rough enemies, are fine here. Stage 2 replaces them with Enemy
   Facts.
