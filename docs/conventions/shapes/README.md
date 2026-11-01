@@ -6,16 +6,17 @@ it: its form, never its content.**
 ## What it is for
 
 So that what a kind of output looks like is written down once, from
-work that exists, and read against the next output of its kind —
+work that exists, and read against the next output of its kind,
 instead of each output re-deriving the form, or a template being
-filled in. The failure is lived: CBC Run 3 made a thing this repo's
-vocabulary had no word for, and it was called a template, a
+filled in. The failure is lived. CBC Run 3 made a thing this repo's
+vocabulary had no word for. It was called a template, a
 specification, a convention and trial evidence before it got its
-own (§2, *What an Output Shape is not*; ADR-0035, 2026-09-23). Made a convention, with this page
-as its manual, on 2026-09-27 (ADR-0037): the Agent Rule binds, and this
-page is why the Agent Rule is as it is, so that "why is this a
-directory and not a rules file?" has an answer that is not
-archaeology.
+own (§2, *What an Output Shape is not*; ADR-0035, 2026-09-23).
+
+Made a convention, with this page as its manual, on 2026-09-27
+(ADR-0037). The Agent Rule binds. This page is why the Agent Rule is
+as it is. So "why is this a directory and not a rules file?" has an
+answer on this page.
 
 *Its story: ADR-0052; devlog 2026-10-29, the lessons' own stories: six places.*
 
@@ -23,13 +24,13 @@ archaeology.
 
 - **`delivery/container/.claude/rules/shapes-lifecycle.md` — the
   Agent Rule, shipped**, held at `.claude/rules/shapes-lifecycle.md` and
-  loading when a file under `.claude/shapes/` is touched (§1, *What an Output Shape is*; §3, *One place, read
-  at the gate*; §4, *An Output Shape between repos*; §5, *Using an
-  Output Shape*), from the CBC Run's Convention Seat, with the definition repeated because a
-  CBC Run cannot open this page.
+  loading when a file under `.claude/shapes/` is touched (§1, *What an Output Shape is*; §3, *Where an
+  Output Shape lives*; §4, *An Output Shape between repos*; §5, *Using an
+  Output Shape*). It states the CBC Run's Convention Seat, and repeats
+  the definition, since a CBC Run cannot open this page.
 - **`delivery/method/.claude/shapes/` — the Method Group's Output Shapes,
-  shipped**, held at `.claude/shapes/` and read at a Plan Step's closing
-  gate: instances of this convention, each from a CBC Run's lived
+  shipped**, held at `.claude/shapes/` and read at a Plan Step Gate,
+  when the Plan Step closes: instances of this convention, each from a CBC Run's lived
   records, its illustration from the worked example (§4.2, *An Output Shape's two layers*).
 - **`delivery/README.md` — it points**: one sentence on placement, and the rest here
   (§4, *An Output Shape between repos*).
@@ -44,19 +45,22 @@ a change forced in one of them is checked back against this page.
 ### The CBC Run's seat
 
 A CBC Run holds the Agent Rule, and keeps its Output Shapes in `.claude/shapes/`,
-read at a Plan Step's closing gate. It receives Output Shapes in its deliveries
+read at a Plan Step Gate, when the Plan Step closes. It receives Output Shapes in its deliveries
 as copies, and writes its own from work that exists. It offers what
 it arrived at by keeping it and pointing at it from its backlog.
 
 ### The Concept Deliverer's seat
 
-The Concept Deliverer makes outputs too — a Run Reading is one — and its Plan Steps
-have gates (ADR-0057). Two of its own forms, a Run Reading's and a
-manual's, are Agent Rules today, with a
-Governs line, loaded when the file is read, not while a new one is
-written (`docs/conventions/agent-arrangement/` §5.6, *Rules files*); whether they become Output Shapes read at a Plan Step's gate is the
-TODO item "Decide whether our own forms become Output Shapes". It holds the Output Shapes it
-ships, each in the group of what it shapes (§4, *An Output Shape between repos*), and reads a CBC Run's
+The Concept Deliverer makes outputs too. A CBC Run Reading is one,
+and its Plan Steps have Plan Step Gates (ADR-0057). Two of its own
+forms, a CBC Run Reading's and a manual's, are Agent Rules today, with
+a Governs line. They load when the file is read, not while a new one is
+written (`docs/conventions/agent-arrangement/` §5.6, *Rules files*).
+Whether they become Output Shapes read at a Plan Step Gate is the
+TODO item "Decide whether our own forms become Output Shapes".
+
+It holds the Output Shapes it ships, each in the group of what it
+shapes (§4, *An Output Shape between repos*). It reads a CBC Run's
 Output Shapes when a line under its *To the deliverer* offers them
 (`docs/conventions/exchange/` §6.2, *A file the CBC Run wrote*).
 
@@ -71,9 +75,9 @@ repository makes the output — a CBC Run, or the Concept Deliverer.
 The two halves matter equally. *Form* is what recurs — which parts a
 record has, what each is for, what a worked example must contain.
 *Never content* is what stops an Output Shape check turning into a review of
-the work: an Output Shape can say a guarantee needs an example with real
-numbers, and cannot say which numbers, or whether the guarantee is
-any good.
+the work: an Output Shape can say an Invariant Slice Guarantee needs an
+example with real numbers, and cannot say which numbers, or whether
+the Invariant Slice Guarantee is any good.
 
 An Output Shape says what an output looks like while it exists. When the
 output opens, extends and closes is the owning convention's. An Output Shape
@@ -108,7 +112,7 @@ Output Shape catches a part missing, not a part that lost half its meaning
 ## 2. What an Output Shape is not
 
 An Output Shape has four near neighbours, easily taken for it. The
-differences are the reason the entry exists.
+differences are why this section exists.
 
 - **Not a template.** A template's content is holes awaiting
   specifics, and you fill it in. An Output Shape is read *against* finished
@@ -127,13 +131,14 @@ differences are the reason the entry exists.
   order to stay** undelivered — a derivation that has seen it
   measures imitation instead of independence, so showing it destroys
   the measurement. An Output Shape is delivered, and kept out of view **only
-  until the gate**, after which being read against the work is the
+  until the Plan Step Gate**, after which being read against the work is the
   entire point.
 
-## 3. One place, read at the gate
+## 3. Where an Output Shape lives
 
 An Output Shape lives in `.claude/shapes/`. Nothing loads it while the work
-is written; it is read at the Plan Step's closing gate.
+is written; it is read at the Plan Step Gate, when the Plan Step
+closes.
 
 The reason is what an Output Shape is for. Work written without it in
 view can show that the Output Shape is wrong, or that a new one is needed;
@@ -142,24 +147,30 @@ output of a kind, which nothing here has yet influenced, is read
 against the Output Shape rather than written from it.
 
 What must hold while the work is written is not an Output Shape. It belongs
-to the skill or the Agent Rule that runs the work. And where an Output Shape names
-a part only the work can produce — a backstop "seen at the red run"
-can only be known by looking during the red run — the skill that
-runs the work asks for it too. Otherwise the gate finds the part
-missing when it is too late to produce.
+to the Agent Skill or the Agent Rule that runs the work. Where an
+Output Shape names a part only the work can produce, the Agent Skill
+that runs the work asks for it too. A Structural Wall Backstop "seen
+at the red run", for example, can only be known by looking during the
+Red Run. Otherwise the Plan Step Gate finds the part missing when it
+is too late to produce.
 
 *Its story: ADR-0052.*
 
 ## 4. An Output Shape between repos
 
-Stated here once; `delivery/README.md` points here. Inside a project, where an Output Shape lives is said above (§3, *One place,
-read at the gate*). Between repositories, an Output Shape follows the group of the
-thing it shapes — the same rule by which a skill belongs to exactly
-one group and travels whole. A slice record's Output Shape is `method/`; a
-Spring harness file's is `spring-postgres/`; a devlog entry's or a
-commit plan's is `container/`. A CBC Run on another stack receives the
-first and never the second, and that falls out of the groups rather
-than being enforced on top of them.
+Between repositories, an Output Shape follows the group of the
+thing it shapes: the same rule by which an Agent Skill belongs to
+exactly one group and travels whole. Inside a project, where an
+Output Shape lives is said above (§3, *Where an Output Shape lives*).
+For example:
+
+- an Invariant Slice Record's Output Shape is `method/`;
+- a Spring Adversity Harness file's is `spring-postgres/`;
+- a devlog entry's or a commit plan's is `container/`.
+
+A CBC Run on another stack receives the first and never the second,
+and that falls out of the groups rather than being enforced on top of
+them. Stated here once; `delivery/README.md` points here.
 
 An Output Shape travels as a copy, at birth and at every delivery, under the
 one Delivery Pin that covers every delivered copy
@@ -173,8 +184,8 @@ A project fetches nothing (`docs/models/tiers.md` §3.5, *What holds on every fl
 fact 1): what arrives,
 arrives because it was staged with a delivery, by the reviewer or
 by the agent when told (`docs/conventions/exchange/` §3.1, *Delivery Staging*). Nothing is
-staged for a gate on its own. *Named in ADR-0037 as a third act of
-the exchange, and never built: CBC Run 3 looked in `temp/` at two
+staged for a Plan Step Gate on its own. *Named in ADR-0037 as "a third
+act of the exchange", and never built: CBC Run 3 looked in `temp/` at two
 closes and found nothing either time. With Output Shapes in the delivery,
 nothing was left for it to carry.*
 
@@ -192,7 +203,7 @@ An Output Shape the Concept Deliverer ships carries an illustration from the Met
 worked example, never a CBC Run's: the next CBC Run may be the same problem,
 and a CBC Run's illustration is its answer.
 
-### 4.3 Birth and delivery, drawn
+### 4.3 The birth and delivery picture
 
 Where an Output Shape sits at the Concept Deliverer, and how it reaches a CBC Run. Every
 arrow that crosses is a delivery, staged by the reviewer or by the
@@ -206,67 +217,68 @@ pictures and no facts.
 
 ```mermaid
 flowchart LR
-  subgraph HERE["the deliverer"]
+  subgraph HERE["the Concept Deliverer"]
     direction TB
-    SH["a shape<br/>in the group of<br/>the thing it shapes"]
+    SH["an Output Shape<br/>in the group of<br/>the thing it shapes"]
   end
 
   subgraph RUN["a Run Repo"]
     direction TB
-    MADE["what a step made"]
+    MADE["what a Plan Step made"]
     SHP[".claude/shapes/<br/>nothing loads it"]
   end
 
   SH -->|"staged with it,<br/>at a birth or a delivery"| SHP
   MADE -->|"read against it, at the close"| SHP
-  SHP -.->|"read at a reading: the copy against its pin,<br/>and the run's own shapes it offers"| SH
+  SHP -.->|"read at a CBC Run Reading: the copy against its Delivery Pin,<br/>and the CBC Run's own Output Shapes it offers"| SH
 ```
 
-**The dashed line back is a Run Reading, and the difference in the line
-is the point.** The traffic model — nothing sent upward, nothing
-fetched, the Concept Deliverer reading a CBC Run and never the reverse — is the
-Tiers Model's (`docs/models/tiers.md` §3.5, *What holds on every flow*), and the Run Reading is
-the Exchange Convention's (`docs/conventions/exchange/` §6, *Up from the CBC Run*). What is this
-convention's is
-where the Run Reading looks: at `.claude/shapes/`, for the delivered
+**The dashed line back is a CBC Run Reading, and the difference in
+the line is the point.** The flows are the Tiers Model's
+(`docs/models/tiers.md` §3.5, *What holds on every flow*): nothing
+sent upward, nothing fetched, the Concept Deliverer reading a CBC Run
+and never the reverse. The CBC Run Reading is the Exchange
+Convention's (`docs/conventions/exchange/` §6, *Up from the CBC Run*).
+What is this convention's is where the CBC Run Reading looks: at `.claude/shapes/`, for the delivered
 copies against their Delivery Pin and for the CBC Run's own Output Shapes, when a
 backlog line offers them.
 
 What travels upward is a **finding**, never a proposal: one project
-saying what it arrived at — and it travels by being *read*, not by
-being sent. What must not travel is a CBC Run's answer as the next
+saying what it arrived at. It travels by being *read*, not by being
+sent. What must not travel is a CBC Run's answer as the next
 CBC Run's standard: the skeleton travels, the illustration is the
 Method Group's (§4.2, *An Output Shape's two layers*).
 
 ## 5. Using an Output Shape
 
-### 5.1 Use, drawn
+### 5.1 The Plan Step Gate picture
 
-What a gate does when a Plan Step closes: find which Output Shapes govern what
+What a Plan Step Gate does when a Plan Step closes: find which Output Shapes govern what
 was made, read, and settle each difference. One ending is easy to
 misread as a gap and is plainly an ending here: "no Output Shape governs
 this" means nothing is checked, and that is correct.
 
 ```mermaid
 flowchart TB
-  CLOSE["a step closes"] --> GOV{"does any shape govern<br/>what this step made?"}
+  CLOSE["a Plan Step closes"] --> GOV{"does any Output Shape govern<br/>what this Plan Step made?"}
   GOV -->|none| NONE["nothing is checked,<br/>and that is correct"]
-  GOV -->|one or more| READ["read what the step made<br/>against each"]
+  GOV -->|one or more| READ["read what the Plan Step made<br/>against each"]
   READ --> DIFF{"a difference?"}
   DIFF -->|no| TICK["tick, naming what it<br/>was checked against"]
   DIFF -->|yes| PROP["name it, both lines shown —<br/>never correct it"]
   PROP --> WHO{"the human says<br/>which of four"}
-  WHO -->|"the output drifted"| A["the output is brought<br/>to the shape"]
-  WHO -->|"the shape was wrong here"| B["the shape changes;<br/>the output stands"]
+  WHO -->|"the output drifted"| A["the output is brought<br/>to the Output Shape"]
+  WHO -->|"the Output Shape was wrong here"| B["the Output Shape changes;<br/>the output stands"]
   WHO -->|"each had something"| C["both move"]
-  WHO -->|"a different kind"| D["both stand;<br/>a new shape starts"]
+  WHO -->|"a different kind"| D["both stand;<br/>a new Output Shape starts"]
 ```
 
 ### 5.2 A tick, and a difference
 
-A gate reads what a Plan Step made against every Output Shape governing it, and
-**what it ticks records what it checked against** — including that
-nothing governed, which is an answer rather than an omission. A tick
+A Plan Step Gate reads what a Plan Step made against every Output
+Shape governing it. **What it ticks records what it checked
+against.** That includes that nothing governed, which is an answer
+rather than an omission. A tick
 with no note is what would be wrong.
 
 The comparison is by judgment, not by text: does the output have
@@ -276,10 +288,14 @@ and the line from the Output Shape, side by side. That is the whole guard
 against an Output Shape check becoming a review of the work: the gate says
 where two things differ, and a human says what that means. It ends
 one of four ways, decided per difference and never by a policy of
-preferring one side: **the output drifted**, so it is brought to the
-Output Shape; **the Output Shape was wrong here**, so it changes and the output
-stands; **each had something**, and both move; or **the output is a
-different kind**, so both stand and a new Output Shape starts from it (§1.2, *How an Output Shape is born*).
+preferring one side:
+
+- **the output drifted,** so it is brought to the Output Shape;
+- **the Output Shape was wrong here,** so it changes and the output
+  stands;
+- **each had something,** and both move;
+- **the output is a different kind,** so both stand and a new Output
+  Shape starts from it (§1.2, *How an Output Shape is born*).
 Any change is shown before it is made.
 
 Outputs closed before a change are not reopened — each looks like
@@ -290,11 +306,11 @@ between them records when the Output Shape changed.
 
 ## Why it arrives this way
 
-The first convention with no skill: its artifact is an Agent Rule, because
+The first convention with no Agent Skill: its Work Approach is an Agent Rule, because
 the moment it serves is an Output Shape being touched, and an Agent Rule loads on the
 path (`docs/models/agent.md` §4.3, *Pushed Channel*). The Output Shapes themselves reach no
 agent while work is written, by design — nothing loads
-`.claude/shapes/`, and that is their force (§3, *One place, read at the gate*).
+`.claude/shapes/`, and that is their force (§3, *Where an Output Shape lives*).
 
 ## What this does not cover
 
@@ -304,7 +320,7 @@ agent while work is written, by design — nothing loads
 - **How an Agent Rule loads** — `docs/conventions/agent-arrangement/` §5.6, *Rules files*.
 - **What passes between repositories, and how** —
   `docs/conventions/exchange/`.
-- **The gate items that make a project meet an Output Shape at a Plan Step's
+- **The Plan Step Gate items that make a project meet an Output Shape at a Plan Step's
   close** — whatever defines the project's Plan Steps; for a CBC Run born
   from the Concept Deliverer, `delivery/fills/cbc-run-pure-playbook.md`.
 - **Whether `docs/baselines/` holds anything that is an Output Shape

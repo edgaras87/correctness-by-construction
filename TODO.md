@@ -199,7 +199,7 @@
       Work Approach says what is done, the Output Shape how its output looks
       (2026-10-20, the reviewer).
       Context: an Output Shape is read at the gate only, so work written
-      without it can show it wrong (`docs/conventions/shapes/` §3, *One place, read at the gate*).
+      without it can show it wrong (`docs/conventions/shapes/` §3, *Where an Output Shape lives*).
       A skill that carries the output's form undoes that.
       `cbc-framing` hands over `templates/registry.md` to fill in,
       for the output the Registry-Entry Shape governs.
@@ -444,7 +444,7 @@
 - [ ] Decide whether our own forms become Output Shapes, and whether an
       Output Shape's part can be optional (2026-10-17, the reviewer).
       Context: an Output Shape is read at a Plan Step's gate only, so the work
-      is not shaped by it (`docs/conventions/shapes/` §3, *One place, read at the gate*). Our own
+      is not shaped by it (`docs/conventions/shapes/` §3, *Where an Output Shape lives*). Our own
       forms, a Run Reading's and a manual's, are Agent Rules that load when
       such a file is read. They kept that place because this repo
       had no Plan Steps; since ADR-0057 it has.
@@ -461,7 +461,7 @@
       - read at the gate and adaptable like any Output Shape; the Work Approach
         or rule that writes the document carries no layout.
       - what must hold while writing stays an Agent Rule
-        (`docs/conventions/shapes/` §3, *One place, read at the gate*): a
+        (`docs/conventions/shapes/` §3, *Where an Output Shape lives*): a
         manual's section order may; how each part is written may not.
       - `.claude/rules/convention-manual.md` is the manual's form. It
         stands on the conventions convention until this item
@@ -469,7 +469,7 @@
       - a record's form, in its header comment, stays
         project-recording's: it is read when the record is opened,
         while an entry is written, which the shapes manual keeps for Agent Rules
-        (`docs/conventions/shapes/` §3, *One place, read at the gate*).
+        (`docs/conventions/shapes/` §3, *Where an Output Shape lives*).
         Only `.claude/decisions.md` holds one under another
         convention, agent-arrangement. The open forms are those in
         rules: a manual's, a Run Reading's.
