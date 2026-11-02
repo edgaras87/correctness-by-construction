@@ -33,10 +33,9 @@ them is a **hard boundary between Agent Skill Stages**:
   Stage 1, as a logged decision taken again.** Never absorb it
   silently.
 
-This rule was written from a practice with two roles: one decided
-**what** was built and under which constraints, another **how** it
-was realized in code. Run as one agent, the boundary between the
-Agent Skill Stages keeps the two apart.
+One agent decides both **what** is built, under which constraints,
+and **how** it is realized in code. The boundary between the Agent
+Skill Stages keeps the two apart.
 
 Every decision is written down with its why **before** the code that
 applies it exists. The CBC Bootstrap Requirements (Stage 2) are the
@@ -72,14 +71,19 @@ Anything else is a note.
 Reason out each of these and present it for confirmation, with its
 why:
 
-- **The stack evaluation.** The deciding inputs are **fluency and
+- **The stack evaluation.** The stack must serve the Invariant Slice
+  Registry; among stacks that do, the deciding inputs are **fluency and
   audience**: which stack the builder or team is proven on, and what
   the intended reader of this codebase reads fluently. The
   correctness work should be the visible substance, not a new stack.
-  Record the decision **in an ADR before any code exists.** It
-  includes:
+  Record the decision **in an ADR before any code exists.** This
+  list is what the ADR holds; the walkthrough's step 1 points here.
+  It includes:
   - the migration tool stays outside the app;
   - the app knows one identity, the `runtime` role;
+  - the application structure, decided against the Stack Default in
+    `.claude/skills/cbc-bootstrap/references/app-structure.md`;
+    departing from it is a logged decision, off-default;
   - the migrations directory is confirmed.
 - **The CBC Bootstrap Adversity Class.** Read it from CBC Framing's
   own words: the Falsifiable Promise's named Adversity Class, and the
@@ -145,12 +149,13 @@ why:
 
 Write `bootstrap-requirements.md` in the language the project's records are written in, at the
 path the project's records choose. It goes beside the builder's
-other manuals. Both CBC Runs that ran this Agent Skill put it at
-`docs/construction/`.
+other manuals. The two CBC Runs that had run this Agent Skill by
+2026-09-26 put it at `docs/construction/`. The harness reference's
+three are projects, earlier than this Agent Skill.
 
 - §1 the Build Coordinates
 - §2 the capabilities, each with its why
-- §3 the constraints, each **by reference** to the ADR or contract
+- §3 the constraints, each **by reference** to the ADR or the Infrastructure Contract
   that decided it. The why is stated here only where no record holds
   it.
 - §4 the Runtime Ground's facts **by reference:** cite the Operator
@@ -175,7 +180,7 @@ deliberate, and Stage 4 closes it. Commit it before implementing.
 
 Produce an ordered CBC Bootstrap Step Plan. Each step is one logical
 change, with its own verification and its own commit, naming what it
-gives. The shape CBC Runs have used is five steps (see the
+gives. The usual shape is five steps (see the
 walkthrough's steps):
 
 1. the stack decision recorded;
@@ -205,10 +210,10 @@ decisions are yours here, under the stack references:
 - The repo already exists: **extract into it, never overwrite.** Each
   hygiene file, `.gitignore`, `.gitattributes` and `.editorconfig`,
   takes its Stack Overlay below the marked line it carries. The README
-  is kept.
+  is kept (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 2).
 - Widen the build's test includes, so integration tests run under the
   one standard test command: no second command, no test that quietly
-  never runs.
+  never runs (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 4).
 
 **When something does not fit, report it, never absorb it:**
 - silent on a *what*: back to Stage 1, a logged decision taken again;
@@ -274,15 +279,17 @@ Adversity Harness is real.
 **Exit test:** the skeleton runs on the real Runtime Ground as the
 `runtime` role alone, and the Adversity Harness demonstrably creates
 the CBC Bootstrap Adversity Class through the real door. Then hand
-over: growth belongs to the cbc-slice Agent Skill.
+over: growth belongs to the cbc-slice Agent Skill, once the reviewer
+signs off System Readiness (`PLAN.md`, the CBC Bootstrap Plan Step's
+goal).
 
 ---
 
 ## Decisions
 
-- ADR-0008 — `references/app-structure.md`,
-  `references/spring-boot-walkthrough.md` and
-  `references/spring-harness-reference.md`: a reference is read and
+- ADR-0008 — `delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/app-structure.md`,
+  `delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md` and
+  `delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-harness-reference.md`: a reference is read and
   imitated, an Agent Skill Template copied and filled
 - ADR-0013 — Stage 5: the README's Run and Test sections arrive when
   the CBC Bootstrap makes them true

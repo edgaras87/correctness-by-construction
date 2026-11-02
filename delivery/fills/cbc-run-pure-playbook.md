@@ -185,7 +185,8 @@ Notes:
 ## Step 4: CBC Bootstrap  (cbc-bootstrap)    [ ]
 
 Goal: an empty but buildable, testable, runnable system wired to the
-Runtime Ground, with the Adversity Harness proven on one adversity.
+Runtime Ground, with the Adversity Harness proven on one adversity,
+and System Readiness signed off by the reviewer.
 Now:
 Gate:
 Notes:

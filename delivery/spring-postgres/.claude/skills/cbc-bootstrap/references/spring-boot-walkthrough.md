@@ -27,16 +27,9 @@ Harness alike: *something outside the app migrates; the app runs.*
 
 ## 1. Record the stack decision
 
-Before any code, an ADR carries:
-
-- the stack;
-- the application structure, decided against the Stack Default.
-  `.claude/skills/cbc-bootstrap/references/app-structure.md`, beside
-  this walkthrough, holds the choice. Departing from its default is a
-  logged decision, off-default;
-- Flyway staying outside the app: no `migrator` credentials in any
-  profile;
-- the migrations directory confirmed.
+Before any code, an ADR records the stack decision. What it holds is
+the cbc-bootstrap Agent Skill's
+(`.claude/skills/cbc-bootstrap/SKILL.md`, *Stage 1 — decide…*).
 
 **Trap: the standard recipe reverses the Runtime Ground's
 constraint.** The usual Spring path, in-app Flyway with two sets of
@@ -125,13 +118,15 @@ What follows from it:
 - the README's Run section names the symptom.
 
 Whether the app should refuse to start without its secret is a
-*what*, not a wiring detail. It is decided at the cbc-bootstrap Agent Skill's Stage 1 by name. One
-CBC Run decided it at release, not at the CBC Bootstrap. It is never
-absorbed here.
+*what*, not a wiring detail. It is decided at the cbc-bootstrap Agent Skill's Stage 1 by name, and
+may be put off to release there (CBC Bootstrap Exclusion 6). It is
+never absorbed here.
 
 ## 4. The Adversity Harness
 
-### The test runtime (once per machine; the Operator Manual's)
+### 4.1 The test runtime
+
+Once per machine, and the Operator Manual's.
 
 Testcontainers needs a reachable container-runtime socket. With
 rootless podman: enable the user socket unit, and point the library
@@ -139,8 +134,8 @@ at it.
 
 **Traps, exact:**
 1. `~/.testcontainers.properties` binds **only from `$HOME`,** never
-   from the project root. A CBC Run searched long for the cause of the "no
-   valid Docker environment" error here. Agent Skill Template:
+   from the project root. In the project root it is ignored, and the
+   error, "no valid Docker environment", does not say why. Agent Skill Template:
    `.claude/skills/cbc-bootstrap/templates/testcontainers.properties`.
 2. Ryuk, the library's reaper:
    - it runs fine under rootless podman on the Testcontainers 2.x
@@ -161,7 +156,7 @@ at it.
    user units, start the socket again, and confirm the file exists.
 4. This setup belongs in the project's Operator Manual, not the code.
 
-### The Adversity Harness in the codebase
+### 4.2 The harness in code
 
 - **Capabilities in test scope only:**
   1. drive a real PostgreSQL container from tests;
@@ -169,7 +164,8 @@ at it.
   3. run migrations **on the Adversity Harness's side.**
 
   Flyway is a tool of the Adversity Harness. At runtime scope it
-  would undo step 3's claim. On Boot 4 the engine enters, not Boot's
+  would undo step 3's claim, *Wire the runtime datasource*: the
+  application cannot migrate. On Boot 4 the engine enters, not Boot's
   Flyway module. The engine alone runs no auto-configuration, so the
   Adversity Harness's own call is the only migration path
   (`.claude/skills/cbc-bootstrap/references/spring-harness-reference.md`
@@ -237,8 +233,8 @@ all passing.
   round-trip to the database as the `runtime` role. Its own javadoc
   documents it as **scaffolding, deleted when the first real
   Invariant Slice lands.** It never grows business meaning.
-- **The CBC Bootstrap Probe's test:** many requests (one CBC Run used
-  a hundred) held at a barrier and **released at one instant.** Each
+- **The CBC Bootstrap Probe's test:** many requests (the projects
+  used a hundred) held at a barrier and **released at one instant.** Each
   is a full HTTP → application → real-PostgreSQL round-trip through
   the real door, and every response is asserted. Releasing them at
   one instant *is* the shape later race evidence takes, aimed at
@@ -260,11 +256,11 @@ all passing.
   5. the State Witness read from the store from outside, never
      through an instance.
 
-  Only a mechanism in the store, or a protocol every process honours,
+  Only a mechanism in the store, or a protocol every process honors,
   can pass it. The harness reference carries the shape, as its
   variation point 8.
 
-**As one CBC Run built it:**
+**How it is built, built once so far:**
 - **What is started:** the instances are **started from the build's
   own output:** `target/classes`, plus exactly the runtime classpath,
   which the dependency plugin writes to a file at
@@ -288,35 +284,32 @@ all passing.
 - **What the CBC Bootstrap Probe answers:** its process id beside the
   identity, so the race asserts the process ids served are exactly
   the instances started.
-- **Traps met:** none. Three instances, 120 requests at one instant,
-  no port collision across runs.
+- **Traps known:** none yet.
 
 **Verified:** the standard test command green.
 
 ## The exit
 
-The project's records grown: the stack, the run and test commands,
-the Operator Manual linked, "no business behavior yet" said
-outright, the CBC Bootstrap Probe's deletion scheduled at the first
-Invariant Slice.
+The exit records are the cbc-bootstrap Agent Skill's
+(`.claude/skills/cbc-bootstrap/SKILL.md`, *Stage 5 — certify and close*).
 
 ## Recall list — the traps compressed
 
 1. Boot 4 renames. The web starter takes the web-MVC name. Each starter has a `-test`
    companion. The test REST client is in `org.springframework.boot.resttestclient.*`.
 2. `spring-boot-restclient` at test scope or the web test context fails on
-   `RestTemplateBuilder`; `@AutoConfigureTestRestTemplate` is required:
+   `RestTemplateBuilder`. `@AutoConfigureTestRestTemplate` is required:
    `RANDOM_PORT` alone provides no `TestRestTemplate` bean.
 3. Testcontainers 2.x: `testcontainers-postgresql`,
    `org.testcontainers.postgresql`.
 4. `~/.testcontainers.properties` binds only from `$HOME`.
 5. Podman socket can be *active* with the file missing. Restart user
    units, and confirm the file.
-6. Ryuk stays on under rootless podman on 2.x; `ryuk.disabled` in the
+6. Ryuk stays on under rootless podman on 2.x. `ryuk.disabled` in the
    properties file has no effect. If it fails, use the environment variable.
-7. No dummy baseline migration; the history table is created by a
+7. No dummy baseline migration. The history table is created by a
    run with no migrations.
-8. Flyway is the Adversity Harness's only; at runtime scope it undoes
+8. Flyway is the Adversity Harness's only. At runtime scope it undoes
    the Runtime Ground's constraint. On Flyway ≥ 10 it needs
    `flyway-database-postgresql`.
 9. The Boot version coordinate is plain `4.x.y`. The `.RELEASE` suffix does not

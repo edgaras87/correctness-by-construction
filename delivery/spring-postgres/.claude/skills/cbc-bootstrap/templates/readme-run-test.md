@@ -5,7 +5,7 @@
      Only the material below is merged; this header stays with the
      Master Copy. The stack line joins the Prerequisites section that
      Infrastructure Establishment opened. The command bodies are the
-     Spring and Maven shape CBC Runs used. A different stack writes its
+     Spring and Maven shape the projects used. A different stack writes its
      own, keeping the shape:
      - Run stands the Runtime Ground up, and ends in a check that the
        system answers;

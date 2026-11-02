@@ -25,8 +25,8 @@ only the *shape they land in*.
 ## The Stack Default
 
 **Package-by-feature, package-private boundaries, structural depth
-earned per feature.** One CBC Run used it across nine Invariant
-Slices:
+added per feature, by need.** One project used it across nine
+Invariant Slices:
 
 ```
 <base-package>                main
@@ -50,11 +50,11 @@ Slices:
   `public class Foo`). Only what another feature really calls becomes
   public. The compiler enforces the boundary: enforcement over
   convention, the same stance as the Database Role Split.
-- **Depth is earned per feature, never stamped.** A feature starts
-  with as few classes as its Invariant Slice needs. One feature a CBC
-  Run built had a controller and a domain class. An internal service
+- **Depth grows per feature, by need, never from a template.** A
+  feature starts with as few classes as its Invariant Slice needs: a
+  controller and a domain class can be enough. An internal service
   or persistence split appears inside one feature when that feature's
-  own complexity earns it, and nowhere else. Layers inside a feature
+  own complexity needs it, and nowhere else. Layers inside a feature
   are allowed. A layer template across the whole repo is provisioning
   ahead of need.
 - **Tests are placed by the kind of check they are,** never by

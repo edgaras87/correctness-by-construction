@@ -4,8 +4,9 @@ The Adversity Harness's five recurring files for the CBC Bootstrap's
 end on the Spring line: the two test bases, the Migration Path Test,
 and the CBC Bootstrap Probe's two files. **Scoped to one stack, by
 name:** Spring Boot on Maven, the Boot 4 line, Testcontainers 2.x,
-PostgreSQL. Three CBC Runs built them. The shape below is the latest
-CBC Run's, the most corrected.
+PostgreSQL. Three projects built them by 2026-08-28, before this
+Agent Skill existed. The shape below is the third's, the most
+corrected.
 
 **It owns nothing.** Three other files do:
 - the *outcomes* these files satisfy are
@@ -25,9 +26,8 @@ CBC Run has to read the last CBC Run's source. The walkthrough
 deliberately carries none: two CBC Runs may end with different code
 for the same thing. That holds for the application. It does not hold
 for these five, which are shaped by the stack and the Adversity
-Harness's outcomes, not by the problem. Three CBC Runs produced them
-almost identically, and each one's only route was reading the
-earlier CBC Run's source. **It is a reference, not an Agent Skill
+Harness's outcomes, not by the problem, so they come out the same
+in every CBC Run on this stack. **It is a reference, not an Agent Skill
 Template:** imitated, never pasted and filled. Copied without
 thought, it will be wrong in the variation points named at the
 end.
@@ -58,7 +58,7 @@ Ground's major version.
    container starts and before any application context boots.** It
    points at the **one migrations directory on the filesystem,**
    never a classpath copy;
-3. the latest CBC Run's correction: **the Database Role Split holds
+3. **the Database Role Split holds
    in evidence runs.** The container is set up by the SAME
    `bootstrap.sql` the Runtime Ground uses. Migration runs as the
    `migrator` role, and the application context connects as
@@ -143,23 +143,22 @@ public abstract class DatabaseIT {
   coupling Infrastructure Establishment's `.env.example` documents.
 - **The Database Role Split is live in tests:** migrate as
   `<project>_migrator`, connect as `<project>_runtime`. An Adversity
-  Harness run as the container's superuser, an earlier CBC Run's
-  shape, proves the round-trip but not the authority. DDL attempted
+  Harness run as the container's superuser proves the round-trip but not the authority. DDL attempted
   from application code would succeed in tests and fail on the
   Runtime Ground.
 - **Testcontainers 2.x names** are the walkthrough's trap
-  (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 4,
-  *The Adversity Harness in the codebase*, *Traps, exact*, item 3).
+  (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 4.2,
+  *The harness in code*, *Traps, exact*, item 3).
 - The migrate call does here what the `flyway` service in
   `compose.yaml` does on the Runtime Ground, against the throwaway database. Flyway is a **tool of the Adversity Harness, in
   test scope.** At runtime scope it would undo the datasource's claim
   that the application cannot migrate. Which Flyway artifacts it
   needs is the walkthrough's trap
-  (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 4,
-  *The Adversity Harness in the codebase*, *Traps, exact*, item 4).
+  (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 4.2,
+  *The harness in code*, *Traps, exact*, item 4).
 - **The Adversity Harness's Flyway is the build's,** managed by Boot,
   and may be a different major than the Runtime Ground's one-shot
-  image. The latest CBC Run ran 12 against the Runtime Ground's 11.
+  image: Flyway 12 against the Runtime Ground's 11 is fine.
   They never meet: separate databases, separate history tables.
   Noted, accepted.
 - **On Boot 4 the engine enters alone, and that is load-bearing.**
@@ -202,17 +201,16 @@ public abstract class WebDatabaseIT extends DatabaseIT {
 
 **Bound facts.**
 
-1. The Boot 4 test-client traps, `spring-boot-restclient` at test
-   scope and `@AutoConfigureTestRestTemplate`, are the walkthrough's
-   (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 4,
-   *The Adversity Harness in the codebase*, *Traps, exact*, items 1 and 2).
-2. The bases stay lean: no shared protected fields. A test autowires
-   what it uses (`JdbcClient`, `TestRestTemplate`). So attacking
-   through the door, and inspecting persisted state directly, are
-   both one line away. The bases grow only what every extending test
-   needs. The latest CBC Run added a clock configuration here at a
-   later Invariant Slice: growth during Invariant Slice work, not the
-   CBC Bootstrap's shape.
+- The Boot 4 test-client traps, `spring-boot-restclient` at test
+  scope and `@AutoConfigureTestRestTemplate`, are the walkthrough's
+  (`.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md`, step 4.2,
+  *The harness in code*, *Traps, exact*, items 1 and 2).
+- The bases stay lean: no shared protected fields. A test autowires
+  what it uses (`JdbcClient`, `TestRestTemplate`). So attacking
+  through the door, and inspecting persisted state directly, are
+  both one line away. The bases grow only what every extending test
+  needs: a clock configuration added at a later Invariant Slice is
+  growth during Invariant Slice work, not the CBC Bootstrap's shape.
 
 ## 3. The Migration Path Test
 
@@ -287,16 +285,15 @@ class MigrationPathIT extends DatabaseIT {
 - **Zero is the true state at the CBC Bootstrap.** The history table
   is created even by a run with no migrations. So its existence proves
   the path, and zero proves the migrations directory is empty. When
-  the first Invariant Slice needs V1, the latest CBC Run changed this
-  to "count ≥ 1 and none failed": the count changed, the proof did
-  not.
+  the first Invariant Slice needs V1, the assertion becomes "count ≥
+  1 and none failed": the count changes, the proof does not.
 - **The identity assertion is the Database Role Split's cheapest
   check.** `current_user`, seen by SQL from the application context,
   must be the `runtime` role. It costs three lines. It catches an
   Adversity Harness quietly wired as the wrong identity, the exact
   failure the copy exists to prevent.
-- **The refused DDL shows the authority, not only the identity.** One
-  CBC Run met this: a copy wired as the right name but without the
+- **The refused DDL shows the authority, not only the identity.** A
+  copy wired as the right name but without the
   Database Role Split, the grants missing and `bootstrap.sql` not
   mounted, passes the identity assertion and fails here, with the
   Runtime Ground's own message. Its trap is in the shape. Spring
@@ -429,8 +426,7 @@ class ContentionProbeIT extends WebDatabaseIT {
   application speaks as `runtime`.
 - **The pool is sized to the request count,** so every worker can
   block at the barrier at once. That is the requirement here. A fixed
-  pool of that size (the latest CBC Run) and virtual threads (an
-  earlier one) both satisfy it. Any pool smaller than the count weakens
+  pool of that size and virtual threads both satisfy it. Any pool smaller than the count weakens
   the burst.
 - **Both files are scaffolding, and both are deleted together** at the first
   Invariant Slice. The endpoint must never grow business meaning: the
@@ -448,8 +444,9 @@ class ContentionProbeIT extends WebDatabaseIT {
 ## 5. What is not in this file
 
 - **The application's own code.** It is the CBC Run's, always. Only
-  the CBC Bootstrap Probe crosses into `main/`, because the method
-  demands it, and the method deletes it.
+  the CBC Bootstrap Probe crosses into `main/`, because the CBC
+  Bootstrap needs a door to attack, and the first Invariant Slice
+  deletes it.
 - **The pom entries.** Which artifacts realize these capabilities,
   when they enter, and how each comment is written is
   `.claude/skills/cbc-bootstrap/references/spring-pom-convention.md`'s. This file names artifacts only where
@@ -465,8 +462,8 @@ class ContentionProbeIT extends WebDatabaseIT {
 ## 6. The variation points
 
 1. **The image version follows the Runtime Ground's major
-   version.** `postgres:17` here, because the Runtime Grounds CBC Runs
-   built were 17. This is the one line that is wrong by default in any
+   version.** `postgres:17` here, the version the infra-establish
+   Agent Skill's `templates/compose.yaml` pins. This is the one line that is wrong by default in any
    project whose Runtime Ground differs.
 2. **The migrations directory's path** is the project's one
    migrations directory, as its own records name it. The
@@ -482,16 +479,16 @@ class ContentionProbeIT extends WebDatabaseIT {
 4. **A missing migrations directory is caught somewhere,
    deliberately.** Git carries no empty directory. So a fresh clone
    can lack the migrations directory, while Flyway's default skips a
-   missing location with a warning. An earlier CBC Run caught it in
-   Flyway config (`failOnMissingLocations(true)`). The latest relied on
-   the Migration Path Test, plus a tracked directory. Either works.
+   missing location with a warning. Two ways work: Flyway config
+   (`failOnMissingLocations(true)`), or the Migration Path Test plus a
+   tracked directory.
    Catching it nowhere leaves the suite green on a clone that cannot
    migrate.
 5. **How data is accessed** follows the CBC Run's CBC Bootstrap
    Requirements, not this file: `JdbcClient` appears because plain
    SQL access was required.
 6. **The request count** can be set; it is not a requirement. A
-   hundred is what the CBC Runs used. What matters is that they are
+   hundred is what the projects used. What matters is that they are
    released together.
 7. **Package layout** (`testsupport/`, `probe/`) is the CBC Run's.
    The layering is the outcome; the names are not. The test packages
@@ -523,11 +520,12 @@ class ContentionProbeIT extends WebDatabaseIT {
 
    The burst inside one process stays beside it, as the cheap first
    check.
-9. **A body is asserted by path, never by substring.** This file
-   once left the rule unsaid, so each CBC Run decided by habit.
-   One CBC Run met why: a substring cannot tell `3` from `30`, cannot
-   say a field exists, and cannot say one is absent. The rule,
-   decided before the first Invariant Slice and held after:
+9. **A body is asserted by path, never by substring.** A substring
+   cannot tell `3` from `30`, cannot say a field exists, and cannot
+   say one is absent. The rule is the Evidence Test Shape's
+   (`.claude/shapes/evidence-test.md`, *How its assertions read*);
+   its stack form, decided before the first Invariant Slice and held
+   after:
    - **by path for a shape:** a small test-support reader parses a
      body once and answers a path, `$.id`, `$.onHandCount`. So a
      field's value, presence and absence are each one assertion;
@@ -539,3 +537,8 @@ class ContentionProbeIT extends WebDatabaseIT {
 
    The CBC Bootstrap Probe above is the one exception, and its comment
    says why: its body is the identity string itself, not a shape.
+
+10. **The CBC Bootstrap Probe's test follows the CBC Bootstrap
+    Adversity Class.** The burst above is the shape for contention. A
+    first Invariant Slice that names another Adversity Class, such as
+    duplicate delivery, gets a probe test that creates that one.

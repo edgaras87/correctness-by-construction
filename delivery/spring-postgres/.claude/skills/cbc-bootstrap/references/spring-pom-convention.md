@@ -50,16 +50,19 @@ companions. Where no companion exists, the runtime dependency stands
 alone, and the gap is left uncommented: its absence is not a
 decision.
 
+## What the file carries
+
+- `<description>`, filled from the project's CBC Framing Intent:
+  one line, in the problem's language, not the artifact's name
+  restated.
+- Versions from the parent, wherever the parent manages them. An
+  explicit version is itself a decision, and carries a comment saying
+  why.
+
 ## What the file does not carry
 
 - No generated empty metadata: `<url/>`, `<licenses>`, `<developers>`
   and `<scm>` are deleted unless actually populated.
-- `<description>` is filled from the project's CBC Framing Intent:
-  one line, in the problem's language, not the artifact's name
-  restated.
-- Versions are the parent's, wherever the parent manages them. An
-  explicit version is itself a decision, and carries a comment saying
-  why.
 
 ## Afterwards
 
