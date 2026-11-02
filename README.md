@@ -7,14 +7,14 @@ the structure of a thing rather than tested in afterwards.
 - **What it holds:** the plain-words statement of the concept, with
   its rationale, open questions, and the log of what changed it and
   why. And what is made usable from it: Agent Skills with their Agent
-  Skill Templates and checklists, and Output Shapes, each pinned to
-  the concept version it derives from.
+  Skill Templates and checklists, each pinned to the concept version
+  it derives from, and the Output Shapes their Plan Step Gates read.
 - **The Container Group:** it also holds the files a CBC Run is born
   into, as its own (ADR-0024, ADR-0025; where they came from is
   ADR-0038's record). So a CBC Run has one upstream and one Delivery
   Pin.
 - **The Concept Deliverer:** this repo is the Concept Deliverer. Each
-  CBC Run is born from what it ships, in a repo of its own pinned to a concept version, and is read
+  CBC Run is born from what it ships, in a repo of its own pinned to a commit of this repo, and is read
   back from here.
 - **Documents only:** nothing is built here, no application, no
   service, no CBC Run.
@@ -30,7 +30,8 @@ the structure of a thing rather than tested in afterwards.
 ## Success criteria
 
 - The concept statement here is the single canonical version;
-  the archive copy is demoted to a historical snapshot.
+  the copy in the archive repo, `system-design-method`, is demoted to
+  a historical snapshot.
 - The Record Harvest loop has run end-to-end at least once: a real CBC Run's
   surprise recorded as a concept change with provenance, and the
   affected Agent Skill re-derived.
@@ -53,7 +54,7 @@ the structure of a thing rather than tested in afterwards.
 - Moving a CBC Run into a Concept Repo of its own — same trigger,
   not now.
 - Everything in the archive repo, `system-design-method`, beyond the
-  concept chapters taken from it (`CHANGELOG.md`, *[v1]*).
+  concept chapters taken from it (`ARCHITECTURE.md` §1.1, *The concept*).
 
 ## Project records
 

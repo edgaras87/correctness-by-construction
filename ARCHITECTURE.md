@@ -5,12 +5,12 @@
      ADRs' and the devlog's; this page points there and does not
      retell it. The Concept Deliverer's ARCHITECTURE.md
      (docs/conventions/project-recording/, The Concept Deliverer's seat;
-     ADR-0044, ADR-0068): about two pages, owning the pairing of
+     ADR-0044, ADR-0068): aiming at about two pages, owning the pairing of
      stated and made usable, the table of CBC Runs, how each rule is held and the codemap, and
      pointing at the home of everything else.
 
      Written under one rule: state only what is checkable in this
-     repo and in the live CBC Run, and mark anything merely intended as
+     repo and in the CBC Runs, and mark anything merely intended as
      intended. A line found wrong, or two that contradict, and not
      fixed at once, is a TODO known issue until it is.
      Why the form is as it is: (docs/conventions/project-recording/
@@ -77,7 +77,10 @@ built around. The Idea Models ship nothing either:
 
 - **Canonical here.** The concept's one canonical text is here. A CBC
   Run's `docs/concept/` holds a copy. What a CBC Run may do to it is the Exchange Convention's
-(`docs/conventions/exchange/` §5.6, *Editing a chapter*). The concept changes only here.
+  (`docs/conventions/exchange/` §5.6, *Editing a chapter*). The concept changes only here.
+- **Imported once.** The chapters came from the archive repo,
+  `system-design-method`, at its commit `fe0075d`. The copy there is
+  a frozen snapshot, never a source.
 - **Versioned as a whole**, not per chapter. It is at **v1**, and
   CHANGELOG's [Unreleased] holds a change that makes the next
   release v2 (ADR-0048). When its version moves is `CHANGELOG.md`'s
@@ -128,10 +131,10 @@ one names it in its Foundation Line.
 ## 2. The delivery and the CBC Runs
 
 What ships, by group. How each group lands in a CBC Run is the
-delivery's Local Map, `delivery/README.md`. What derives from the
-concept is the method, the Stack Group and the playbook (§2.1, *The
-Method Group*, §2.2, *The Stack Group* and §2.4, *What does not
-ship*). This list is kept here: the chapters carry none
+delivery's Local Map, `delivery/README.md`. What stands on the
+concept is the method, derived from it, and the Stack Group and the
+playbook, checked against it (§2.1, *The Method Group*, §2.2, *The
+Stack Group* and §2.4, *What does not ship*). This list is kept here: the chapters carry none
 (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, step 1).
 
 ### 2.1 The Method Group
@@ -151,8 +154,8 @@ Agent Skills. Not derived from the concept but
 checked against it, as their Foundation Lines say
 (`docs/conventions/conventions/` §1.3, *The Foundation Line*). Beside
 them, the stack's Glossary Names, `docs/glossary/stack.md`. A CBC Run on
-another stack takes no `spring-postgres/`; another stack's Agent
-Skills would be a group beside this one (ADR-0029).
+another stack takes no `spring-postgres/` (`docs/conventions/exchange/` §3.4, *One group per file*); another stack's Agent
+Skills would be a group beside this one.
 
 ### 2.3 The Container Group
 
@@ -189,7 +192,7 @@ then has only ours:
 | CBC Run 3 | `never-oversold` | `~/IdeaProjects/cbc-pure-run-3` | live |
 | CBC Run 4 | `safe-reservation-2` | `~/IdeaProjects/cbc-pure-run-4` | through Release, not yet read |
 | CBC Run 5 | `event-tickets` | `~/IdeaProjects/cbc-pure-run-5` | through Release, read, not yet answered |
-| CBC Run 6 | `checkout` | `~/IdeaProjects/cbc-pure-run-6` | born 2026-10-29 at `657d372`, on full auto |
+| CBC Run 6 | `checkout` | `~/IdeaProjects/cbc-pure-run-6` | through Release, not yet read |
 
 How a delivery goes down and what a CBC Run learned comes back is the
 Exchange Convention's, `docs/conventions/exchange/`. A CBC Run:
@@ -212,9 +215,9 @@ layout of the tree, or a check at commit review.
 
 | Rule | Stated in | Held by |
 |---|---|---|
-| The concept is canonical here; the archive it came from is a frozen snapshot, never a source | §1.1, *The concept*; `CHANGELOG.md`'s `[v1]` entry | commit review |
+| The concept is canonical here; the archive repo it came from, `system-design-method`, is a frozen snapshot, never a source | §1.1, *The concept* | commit review |
 | A concept change that could invalidate what derives from it lands with a version entry | `CHANGELOG.md`'s header comment (ADR-0003) | commit review |
-| Every Agent Skill and Output Shape of the method states the concept version it derives from | `docs/conventions/conventions/` §1.3, *The Foundation Line* (ADR-0004, ADR-0036) | its Foundation Line, which every copy carries |
+| Every Agent Skill of the method states the concept version it derives from | `docs/conventions/conventions/` §1.3, *The Foundation Line* (ADR-0004, ADR-0036) | its Foundation Line, which every copy carries |
 | Every file a CBC Run receives has its Master Copy here, in the group that ships it | `docs/conventions/exchange/` §1, *What cannot change* and §3.2, *What goes* | the exchange-deliver Agent Skill, which stages a delivery only from the Master Copies |
 | A manual never ships | `docs/conventions/exchange/` §3.2, *What goes* | the tree: manuals sit under `docs/`, and a delivery is staged only from `delivery/` and `concept/` |
 | No manual explains a rule that no longer holds | `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule* and §5, *A disagreement* (ADR-0025) | the Foundation Check, `.claude/rules/foundation-check.md`, at each commit |

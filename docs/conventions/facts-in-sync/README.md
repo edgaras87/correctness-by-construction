@@ -296,6 +296,8 @@ for all of them, and this is where it is stated:
 
 1. A Canonical Description lists what derives from it. An Idea Model leaves its
    list to the grep in step 3: repos it never sees stand on it too.
+   The concept's chapters carry no list: `ARCHITECTURE.md` §2, *The
+   delivery and the CBC Runs*, keeps it.
 2. Each derived thing names its Canonical Description once, in its
    one Foundation Line: the document the whole file stands on.
    Which files carry it, where, and what each holds is the conventions manual's
