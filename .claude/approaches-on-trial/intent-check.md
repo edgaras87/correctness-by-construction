@@ -17,41 +17,47 @@ At the start of the review, before any part of the repo is checked.
 
 ## Stages
 
-### 1. The reviewer writes a part
+### 1. The reviewer tells it
 
-In their own words, as long or short as it comes. The intent comes
-in parts; each is worked before the next.
+In their own words, as long or short as it comes. The intent is one,
+told in stops, in any order. A later stop may add a line, or change
+or drop any line already there.
 
-### 2. The agent plays it back
+### 2. The agent folds it in and plays it back
 
-1. **Sorted and in plain words,** a numbered line each.
-2. **From the part alone.** Earlier answers held as possible goals
-   are not drawn on, so they do not steer the intent.
-3. **What it noticed, labelled:**
-   - gaps, where the part can be read more than one way;
+1. **Fold each stop into one draft,** grouped by subject, not by
+   when it was told, a numbered line each, in plain words.
+2. **Play back what the stop changed:** the lines added, changed or
+   dropped.
+3. **From what was told alone.** Earlier answers held as possible
+   goals are not drawn on, so they do not steer the intent.
+4. **What it noticed, labelled,** kept with the draft and answered
+   whenever the reviewer chooses:
+   - gaps, where a line can be read more than one way;
    - tensions, where two lines pull against each other;
    - differences from the repo, where the repo says otherwise. Named,
      not argued.
 
-### 3. Correct and lock
+### 3. Correct, and lock when the whole is told
 
-The reviewer corrects the playback until they say it holds. The part
-is then written into the review's notes file in `temp/`, locked. A
-later part may reopen it; the reviewer decides.
+The draft lives in the review's notes file in `temp/`. The reviewer
+corrects any line, at any stop. It is written as played back and
+corrected; the reviewer's own words are not stored.
 
-The part is written as played back and corrected; the reviewer's own
-words are not stored.
+The intent is locked once, when the reviewer says the whole is told.
+Locked, it is what the repo is checked against. Until then every
+line is a draft.
 
 ### 4. Derive the goals
 
-Once every part is locked.
+Once the intent is locked.
 
 1. **Each goal is a check that comes from a line of the intent:** how
    we would see that line holds. The reviewer approves each.
 2. **Each possible goal held from earlier is set against the intent.**
    One that follows from a line becomes a goal. One that does not is
-   dropped, or shows a part the intent missed, and that part is
-   reopened.
+   dropped, or shows something the intent missed, and the intent is
+   reopened to take it.
 
 ### 5. Check the repo against the goals
 
@@ -60,7 +66,7 @@ How is not known yet.
 ## Not known yet
 
 - How the repo is checked against the goals.
-- Whether the intent's parts become the README's *why*.
+- Whether the intent becomes the README's *why*.
 
 ## Ways rejected
 
