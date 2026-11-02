@@ -82,8 +82,13 @@ repo's parts, starts from it.
 ## Where it is written
 
 - **Each round** goes into the review's notes file in `temp/`, word
-  for word: the question, the options shown, the answer, and what
-  changed in the queue and why.
+  for word:
+  - the queue as shown;
+  - the question being worked, and its options;
+  - the reviewer's answer;
+  - each correction, with the question and options after it;
+  - the answer as locked;
+  - what changed in the queue, and why.
 - **The rounds run in chat,** never in the question dialog that pops
   up in the input. The dialog holds 4 options at most and hides the
   talk around them.
