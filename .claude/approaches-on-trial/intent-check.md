@@ -25,7 +25,9 @@ in parts; each is worked before the next.
 ### 2. The agent plays it back
 
 1. **Sorted and in plain words,** a numbered line each.
-2. **What it noticed, labelled:**
+2. **From the part alone.** Earlier answers held as possible goals
+   are not drawn on, so they do not steer the intent.
+3. **What it noticed, labelled:**
    - gaps, where the part can be read more than one way;
    - tensions, where two lines pull against each other;
    - differences from the repo, where the repo says otherwise. Named,
@@ -37,13 +39,24 @@ The reviewer corrects the playback until they say it holds. The part
 is then written into the review's notes file in `temp/`, locked. A
 later part may reopen it; the reviewer decides.
 
-### 4. Check the repo against it
+### 4. Derive the goals
 
-Once every part is locked. How is not known yet.
+Once every part is locked.
+
+1. **Each goal is a check that comes from a line of the intent:** how
+   we would see that line holds. The reviewer approves each.
+2. **Each possible goal held from earlier is set against the intent.**
+   One that follows from a line becomes a goal. One that does not is
+   dropped, or shows a part the intent missed, and that part is
+   reopened.
+
+### 5. Check the repo against the goals
+
+How is not known yet.
 
 ## Not known yet
 
-- How the repo is checked against the locked intent.
+- How the repo is checked against the goals.
 - Whether the intent's parts become the README's *why*.
 
 ## Ways rejected
