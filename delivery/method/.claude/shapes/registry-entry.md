@@ -48,9 +48,10 @@ method's worked example, a tiny order service.
   from each; or "nothing">
 - **Judgment logged:** <why the Invariant Slice is cut this way; or "none">
 - **Record:** <a link to the Invariant Slice Record>
-- **Answered at close:** <one line per Adversity Flag or judgment the
-  Invariant Slice settled: the answer in a sentence, and where in the
-  Invariant Slice Record>
+- **Answered at close:** <one line per item: what the Invariant Slice
+  left provisional, what it hands to later Invariant Slices, and each
+  Adversity Flag or judgment it settled: the answer in a sentence, and
+  where in the Invariant Slice Record>
 ```
 
 *Skeleton:*
@@ -60,12 +61,14 @@ method's worked example, a tiny order service.
   "nothing", for what an Invariant Slice presumes), so a reader can tell
   empty from forgotten.
 - **The status sits in the heading,** one of the Invariant Slice
-  Registry's status values (`.claude/skills/cbc-framing/SKILL.md`, *Export and handoff*), and a closed Invariant Slice gives its
+  Registry's status values (`.claude/skills/cbc-framing/SKILL.md`, *The Invariant Slice Registry's outcomes*), and a closed Invariant Slice gives its
   date.
 - **The Invariant Slice Record is linked** from the Invariant Slice Entry, so a
   reader of the Invariant Slice Registry reaches it in one step.
-- **At the Invariant Slice Close, one line per Adversity Flag or
-  judgment the Invariant Slice settled,** under *Answered at close*.
+- **At the Invariant Slice Close, one line per item,** under
+  *Answered at close*: what the Invariant Slice left provisional, what
+  it hands to later Invariant Slices, and each Adversity Flag or
+  judgment it settled.
   One sentence and a reference to the Invariant Slice Record. How the Invariant
   Slice got there is its Invariant Slice Record's. An Invariant Slice Entry with nothing to answer
   says "none".
@@ -109,8 +112,9 @@ Read the Invariant Slice Entry and ask:
 2. Does the heading carry the status, and a closed Invariant Slice
    its date?
 3. Is the Invariant Slice Record linked?
-4. Does a closed Invariant Slice's Invariant Slice Entry answer each Adversity Flag
-   and judgment it settled, one line each, with a reference?
+4. Does a closed Invariant Slice's Invariant Slice Entry give what it
+   left provisional, what it hands on, and each Adversity Flag and
+   judgment it settled, one line each, with a reference?
 5. Where the Invariant Slice Entry differs from this Output Shape: did it drift, was the
    Output Shape wrong, did each have something, or is it a different kind?
    How each ends is the shapes-lifecycle Agent Rule's

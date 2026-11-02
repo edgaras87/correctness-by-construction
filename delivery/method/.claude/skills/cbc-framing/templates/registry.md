@@ -48,7 +48,9 @@ must *create*. Status values: `open` · `chosen-next` ·
   Invariant Slices sharing one Adversity Class; or "none">
 - **Record:** <a link to the Invariant Slice Record; "none" until it has one>
 - **Answered at close:** <"none" until the Invariant Slice Close.
-  Then one line per Adversity Flag or judgment it settled: the answer
+  Then one line per item: what the Invariant Slice left provisional,
+  what it hands to later Invariant Slices by name, and each Adversity
+  Flag or judgment it settled: the answer
   in a sentence, and where in the Invariant Slice Record. How the Invariant Slice got
   there is the Invariant Slice Record's, never told here. CBC Framing's words above
   stay as written.>
@@ -93,12 +95,12 @@ counting, never to be read in its place.
 |---|---|---|
 | KILL-1 | <a few words> | SLICE-1 |
 | KILL-2 | <…> | <SLICE-n; or FOLD-n; or "excluded: NOT-OURS-n"; or "deferred: <why>"> |
-| <…every kill, one row> | | |
+| <…every Enemy Collision Kill, one row> | | |
 
 Folds: <each Invariant Slice Fold → the first Invariant Slice consuming it>.
 
-The written zero: <state absences too — "no deferrals; no kill
-dropped" is a line, never a silence.>
+The written zero: <state absences too — "no deferrals; no Enemy
+Collision Kill dropped" is a line, never a silence.>
 
 ## Ordering expectation (decided again at each Invariant Slice Close)
 

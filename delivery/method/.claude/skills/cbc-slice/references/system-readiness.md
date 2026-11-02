@@ -10,7 +10,7 @@ method work.*
 ## READINESS-1 — The CBC Framing Exports are in the repo
 
 The three CBC Framing Exports of `.claude/skills/cbc-framing/SKILL.md`
-(*Export and handoff*): `docs/system/intent.md`,
+(*The CBC Framing Exports*): `docs/system/intent.md`,
 `docs/system/definition.md` and `docs/system/registry.md`, the
 Invariant Slice Registry with a **`chosen-next` Invariant Slice**.
 

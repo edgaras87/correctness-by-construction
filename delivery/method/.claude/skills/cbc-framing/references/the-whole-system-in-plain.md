@@ -12,8 +12,10 @@ starts from what must never happen.
 
 It derives the backend from one Falsifiable Promise, a commitment whose breaking can be pictured concretely. It asks *"what
 must never happen?"* before *"what should it do?"* It answers each
-System Never-Event, a thing that must never happen, with a Structural Wall, a structure that makes it impossible, proven by a test that
-creates the attack.
+System Never-Event, a thing that must never happen, with a Structural Wall.
+A Structural Wall is a structure that makes the System Never-Event
+impossible. A test that creates the attack proves the Structural
+Wall holds.
 
 ## The one idea
 
@@ -59,8 +61,8 @@ System Guarantees, the System Never-Events the system holds by structure. So sta
    through its whole life. Everything beyond your control is an
    actor. For each: can it vanish, duplicate, or lie? Write Enemy
    Facts you can attack with ("responses get lost"), not vague worries
-   ("networks are unreliable"). Stop when two fresh attacks on the
-   list find nothing new.
+   ("networks are unreliable"). Stop when two Enemy Census Probes in
+   a row find no new Enemy Fact.
 3. **Run the Enemy Collisions** (LAYER-4-PROBLEMS). Each Enemy Fact ×
    each thing you own: what dies? Name the Enemy Collision Kill, never
    the cure. Mechanisms come later.
@@ -82,8 +84,8 @@ System Guarantees, the System Never-Events the system holds by structure. So sta
 - **Build:** the mechanism, plus a test that *creates* the attack
   (hammer it concurrently, inject duplicates, kill it mid-write) and
   shows the invariant surviving.
-- **Document:** the Falsifiable Promise, the Invariant Slice Guarantees, the proof,
-  readable later.
+- **Document:** what is promised, the Structural Wall that holds it,
+  and the proof, readable later.
 
 The test that creates the attack is the deliverable most projects
 skip.
@@ -104,7 +106,7 @@ absence of one.
 - **System Guarantee Erosion:** new features ship without re-checking
   the System Guarantees.
 - **Escape Hatch:** an admin script goes around the one enforced
-  path, and the System Guarantee quietly becomes fiction.
+  path, and the System Guarantee quietly stops being true.
 - **Testing Theater:** System Guarantees drift out of structure and
   back into test suites.
 - **Theory Swamp:** theory before the layers have shrunk the problem.

@@ -48,7 +48,7 @@ Framings made before the first CBC Run, and those of CBC Runs 3 to 6.
 
 - **LAYER-2-SYSTEM before LAYER-1-ENVIRONMENT.** The Falsifiable
   Promise can be derived on rough Enemy Sketches. The full Enemy
-  Census comes after, and makes the sketches exact.
+  Census comes after, and makes the Enemy Sketches exact.
 - **LAYER-4-PROBLEMS before LAYER-3-AREAS.** Responsibility Areas are
   *found* by sorting Enemy Collisions, never drawn first on
   intuition.
@@ -155,7 +155,7 @@ what do we refuse?*
 
 The test is the System Possession Test. For each candidate System
 Possession: *"if somebody else owned this, could they break the
-Falsifiable Promise without us being able to stop them?"* Yes: ours.
+Falsifiable Promise?"* Yes: ours.
 No: run the System Refusal Test, *"can the Falsifiable Promise stay
 true even if this goes wrong elsewhere?"* Yes: refused, in writing.
 
@@ -242,7 +242,7 @@ this block first. A CBC Framing that leaves it out writes it later,
 by a CBC Framing Export Revision. Two CBC Runs left it out and wrote it later.
 
 **How Enemy Census Saturation is reached.** The first listing ran on
-one Enemy Census Probe Lens, actors × the three negations. It only
+actors × the three negations. It only
 finds Enemy Facts shaped like "someone misbehaves". An Enemy Census
 Probe deliberately takes up a **different Enemy Census Probe Lens**
 and scans the same Enemy Census again. What a new one catches, the
@@ -289,7 +289,8 @@ Enemy Census without deriving it all again:
    Stamp?
 
 **Exit, by Enemy Census Saturation:** run the Enemy Census Probe
-Lenses until **two consecutive ones yield zero new Enemy Facts**. It
+Lenses until **two Enemy Census Probes in a row find no new Enemy
+Fact**. It
 is a number, not a feeling. **The Enemy Census Probe Log is recorded
 in LAYER-1-ENVIRONMENT:** each Enemy Census Probe's Enemy Census Probe Lens, its Enemy Census Probe Stamps,
 and what it found, or "nothing new". So a later reader can check the
@@ -298,7 +299,7 @@ written refusal or deferral line, never silence.
 
 **What the exit leaves behind, three lists, written:**
 
-- **The Scope Exclusions.** Every exclusion as a numbered line:
+- **The Scope Exclusions.** Every Scope Exclusion as a numbered line:
   NOT-OURS-1, NOT-OURS-2, and so on. A Scope Exclusion is a working
   boundary, not a disclaimer. It is worth writing because it
   *visibly stops Enemy Facts* at Stage 3, where an excluded Enemy

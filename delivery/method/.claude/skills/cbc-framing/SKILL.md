@@ -45,10 +45,11 @@ method itself:
 **Delegated-Verdict Mode.** A CBC Run may hand these verdicts to the
 agent. It does so only through an explicit decision recorded in its
 own Decisions Log, `.claude/decisions.md`. The decision names what is
-delegated, why, and the cost accepted. The cost: the written
-derivation becomes the only review, so its legibility is part of the
+delegated, why, and the cost accepted. The cost: the CBC Framing
+Derivation becomes the only review, so its legibility is part of the
 product. Every Agent Skill Stage's Exit is still presented, decided,
-and recorded in the record the records table names for sign-offs. Delegation changes who
+and recorded inline in the CBC Framing Derivation, as *The record*
+says. Delegation changes who
 calls the verdict, never whether it is written. Without that
 recorded decision, the default above stands.
 
@@ -98,8 +99,8 @@ Check these before asking the reviewer to close an Agent Skill Stage.
     whether that writer is trusted or defended;
   - the Runtime Ground, with the size the system is built for.
 
-  Exit only by Enemy Census Saturation: two consecutive fresh Enemy
-  Census Probes find nothing new. The Enemy Census Probe Log is
+  Exit only by Enemy Census Saturation: two Enemy Census Probes in a
+  row find no new Enemy Fact. The Enemy Census Probe Log is
   recorded in LAYER-1-ENVIRONMENT.
 - **Stage 3:** each Enemy Collision Kill states **what dies, never
   how it is saved.** Set any mechanism aside the moment it comes up.
@@ -181,7 +182,7 @@ Where each kind of record lives:
 - the CBC Framing's adoption: one ADR in the CBC Run's `docs/adr/`,
   at CBC Framing's close.
 
-## Export and handoff
+## The CBC Framing Exports
 
 The three CBC Framing Exports live under `docs/system/`, the
 internal truth at one path:
@@ -205,6 +206,18 @@ names this Agent Skill, an Agent Skill Stage, or the CBC Run's
 arrangement. A reader without the Agent Skills directory must not
 need it to read them.
 
+**The CBC Framing Exports are living records, not written once.** The
+Invariant Slice Registry already lives: its statuses change at every
+Invariant Slice Close. The other two stay true the same way. Later
+work may change what a CBC Framing Export claims. A gap the CBC
+Framing Intent named may close, or a later Agent Skill Stage may find
+facts the System Definition must carry. Then the CBC Framing Export
+is updated **only through a CBC Framing Export Revision**: dated,
+saying what changed, why, and what set it off. It is the same rule
+as during CBC Framing, kept after its close.
+
+## The commit order
+
 By default, **commit in derivation order:**
 
 1. the CBC Framing Intent;
@@ -222,8 +235,9 @@ LAYER-1-ENVIRONMENT to LAYER-5-INTERACTION, from the outside in, and
 no reorder is needed after. Skipping the order departs from the
 default: log why in the Decisions Log.
 
-**The Invariant Slice Registry's outcomes,** what the file must
-carry, whatever its layout:
+## The Invariant Slice Registry's outcomes
+
+What the file must carry, whatever its layout:
 
 1. every Invariant Slice Entry states its invariant, the adversity
    its evidence must *create*, its owning Responsibility Area, the
@@ -245,18 +259,9 @@ The default layout is the Agent Skill Template
 off-template: derive your own layout from the outcomes above. How it
 is used is the delivered-copies Agent Rule's (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is…*).
 
-**The CBC Framing Exports are living records, not written once.** The
-Invariant Slice Registry already lives: its statuses change at every
-Invariant Slice Close. The other two stay true the same way. Later
-work may change what a CBC Framing Export claims. A gap the CBC
-Framing Intent named may close, or a later Agent Skill Stage may find
-facts the System Definition must carry. Then the CBC Framing Export
-is updated **only through a CBC Framing Export Revision**: dated,
-saying what changed, why, and what set it off. It is the same rule
-as during CBC Framing, kept after its close.
+## The README
 
-**The README, derived from the CBC Framing Exports.** The CBC Run's
-README is **derived from the three CBC Framing Exports, never written
+The CBC Run's README is **derived from the three CBC Framing Exports, never written
 on its own.** Every claim on it has its home in `docs/system/`. A
 fact the reader needs that lives only in the CBC Framing Derivation
 marks a gap in the CBC Framing Exports. Fix the CBC Framing Export
@@ -280,7 +285,9 @@ milestones: an Invariant Slice Close moves the status line. The CBC
 Framing Export Filter applies with full force: the README tells what
 the system is and guarantees, never how the work ran.
 
-Then say this to the reviewer plainly: **the handoff is to the
+## The handoff
+
+At CBC Framing's close, say this to the reviewer plainly: **the handoff is to the
 Runtime Ground and the skeleton, not to Invariant Slices.** Between
 CBC Framing and the first Invariant Slice sits real project work:
 
@@ -296,5 +303,5 @@ The cbc-slice Agent Skill will check.
 
 ## Decisions
 
-- ADR-0008 — *Export and handoff*: the Invariant Slice Registry's
+- ADR-0008 — *The Invariant Slice Registry's outcomes*: the Invariant Slice Registry's
   default layout is an Agent Skill Template, copied and filled

@@ -91,10 +91,10 @@ Enemy Census Saturation:
    quietly assume?"), found the Enemy Fact of the unknowable write;
 2. Enemy Census Probe 2, the timeline stretched (a retry arriving a
    day later), found nothing new;
-3. Enemy Census Probe 3, quantities at huge (a key reused thousands
+3. Enemy Census Probe 3, the resource lens, quantities at huge (a key reused thousands
    of times), found nothing new.
 
-Two Enemy Census Probes in a row found nothing new: saturated.
+Two Enemy Census Probes in a row found nothing new: Enemy Census Saturation.
 
 The Runtime Ground, beside the Enemy Facts:
 1. the machine: one local machine;
@@ -118,6 +118,7 @@ The lists the exit leaves:
   **NOT-OURS-2** a caller submits as another shop: identity at the
   door, a new kind of difficulty. **NOT-OURS-3** a console or a
   script writes order records: the Trust Assumption says none does.
+- Scope Verdicts: none.
 - Enemy Census Gaps: clock skew between machines (one machine);
   deployment transitions (no second version ever runs beside the
   first).
@@ -239,7 +240,7 @@ an Invariant Slice Fold in SLICE-1's Correctness Specification, its
 checks going with it. Nothing dropped: 6 Enemy Collision Kills → 2
 Invariant Slices + 1 Invariant Slice Fold.
 
-**Invariant Slice Registry:** SLICE-1 `chosen-next`. SLICE-2
+Invariant Slice Registry: SLICE-1 `chosen-next`. SLICE-2
 presumes the uniqueness SLICE-1 builds. That is an expectation,
 decided again at the Invariant Slice Close.
 
@@ -269,7 +270,9 @@ decided again at the Invariant Slice Close.
 
 # Part 2 — SLICE-1 enters the cbc-slice Agent Skill
 
-**Stage 1, specify-correctness,** takes the Invariant Slice Entry
+## Stage 1 — specify-correctness
+
+Stage 1 takes the Invariant Slice Entry
 *as written*, with no translation:
 
 - Invariant: N arrivals of one submission → exactly one recorded order.
@@ -294,7 +297,9 @@ decided again at the Invariant Slice Close.
 
   Gate passed: zero mechanisms named.
 
-**Stage 2, plan:** one Structural Wall per Invariant Slice Guarantee,
+## Stage 2 — plan
+
+One Structural Wall per Invariant Slice Guarantee,
 the strongest available:
 - GUARANTEE-1: a database unique constraint on the key. *It defeats
   duplicates because the second insert cannot physically succeed.*
@@ -309,7 +314,9 @@ constraint-guarded table. There is no Escape Hatch. Someone at the
 store's console is trusted, not walled against (NOT-OURS-3). Gate
 passed: no Invariant Slice Guarantee without its Structural Wall.
 
-**Stage 3, build:** plain code, plus the evidence. Hammer it, inject
+## Stage 3 — build
+
+Plain code, plus the evidence. Hammer it, inject
 the replay, send the mismatched body, and watch the invariant survive,
 one Invariant Slice Guarantee at a time. Each test has a Red Run,
 its Structural Wall absent, failing on the State Witness, recorded
@@ -319,7 +326,9 @@ second row with the key, written straight to the store, is refused.
 That is a Structural Wall Check, not evidence. Gate: green happy-path
 tests close nothing. Only tests that create the adversity do.
 
-**Stage 4, document:** the Invariant Slice Record completed, one
+## Stage 4 — document
+
+The Invariant Slice Record completed, one
 Invariant Slice Guarantee Block each. GUARANTEE-1 to GUARANTEE-4 each
 hold its attack, its Evidence Criterion, its Structural Wall and the
 tests that proved it. SLICE-1 closes in the Invariant Slice Registry
