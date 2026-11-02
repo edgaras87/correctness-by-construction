@@ -133,3 +133,9 @@ Deliverer's texts, the Tiers Model and the Exchange Convention: the Concept Deli
 before the work and corrected once by it, in its own commit
 (the Concept Deliverer's `4fedbb3`). Taught: the work's first sort, shown before anything
 was written, is where the draft first met the work.
+
+*The Concept Deliverer, its first evaluation, at the refinement's close, 2026-11-02.*
+Kept on trial: the drafts behind it are the Concept Deliverer's alone,
+and *Settled when* asks a CBC Run's too. The two it drafted,
+`refinement.md` and `model-placing.md`, are both kept on trial. Not
+placed, so its copy stays one text in both Convention Seats.
