@@ -68,3 +68,51 @@ is to point at it.
 
 Open 7 and 8 are settled before exchange moves: exchange is the idea
 of shipping itself.
+
+## 5. Sockets and plugs
+
+A borrowed fact becomes a socket.
+
+- **A socket** is a need, written by the idea that has it, in its own
+  words: the commit set needs "commits in one stable form".
+- **A plug** is an idea that meets it: a commit-messages idea.
+- **The wiring** is the project text saying which plug fills which
+  socket.
+
+**Where each lives.** The socket in the idea that needs it: the need
+is part of what the idea is. The definition in the plug idea. The
+wiring in the project text, never the socket.
+
+**No plug fits all.** A plug meets only the sockets it is wired into.
+A socket asks for little, "one stable form", not "Conventional Commits
+with a subject of 50 characters"; the less it asks, the more plugs
+fit.
+
+**Variants.** One idea fitting five places, and a variant fitting
+three, is allowed, and each variant is a whole idea to keep.
+
+1. First, make the difference a decision: one of the idea's *What
+   each project decides*. One idea then fits all eight.
+2. A variant idea only when the difference is not a choice but a
+   different idea.
+
+**What follows from it:**
+
+1. **A plug that changes is checked against its sockets.** The wiring
+   makes it a lookup, not a search, and each socket is one line. This
+   is the "relies on" line, with a place to live.
+2. **A socket is worded with care.** Too vague, and anything fits: it
+   checks nothing. Too exact, and it names one plug in disguise: a
+   sideways pointer again. It says what the idea truly relies on, in a
+   form that can be checked.
+3. **One need, many wordings.** Five ideas may each need one stable
+   commit form, worded five ways. The wiring shows all five filled by
+   one plug, and the idea map, read from it, makes that seen.
+4. **A socket no plug fills** is met by a local rule in the project
+   text, as `temp/model-example/this-repo/committing.md` does with
+   Conventional Commits, until a plug idea is written.
+5. **Two ideas that fill each other's sockets** are likely one idea cut
+   in the wrong place: a sign to merge them.
+
+In shared code this is an interface and its implementations, the
+project text putting the implementation in: dependency injection.
