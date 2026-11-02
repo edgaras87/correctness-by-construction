@@ -124,7 +124,8 @@ places pieces; it does not make one form.
 manual on trial in the Concept Deliverer's `docs/conventions/`, and then counted as a
 manual before anyone judged whether it is one. Taught: a draft is
 not a manual, and needs a home of its own. This Approach on Trial came from
-that lesson. The refinement is open.
+that lesson. The refinement closed on 2026-11-02, after three
+Refinement Rounds and a last read whose 385 findings were all ended.
 
 *The Concept Deliverer, placing into an Idea Model, 2026-10-28.* The first step
 from a convention to an Idea Model, done for two of the Concept
