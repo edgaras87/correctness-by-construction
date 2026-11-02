@@ -15,8 +15,8 @@
 
 # Playbook: CBC Run — pure
 
-Playbook version: v11 (2026-10-30, provisional; since v10, written
-in Glossary Names)
+Playbook version: v11 (2026-10-30, provisional; last updated by the
+Concept Deliverer: since v10, written in Glossary Names)
 
 ## The Plan Step Form
 
@@ -96,12 +96,13 @@ come in its CBC Run Hand-off, never here.
       Invariant Slice and Enemy Collision Kill a record cites exists; each pair of copies
       agrees, such as the version in the build file and in
       CHANGELOG.
-- [ ] No living line in a record the Plan Step touched, or one that
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
       about something the Plan Step changed.
 - [ ] New and changed text reads to `.claude/rules/writing.md`.
 - [ ] Every commit on `<branch>` follows the commit-messages Agent Skill.
-- [ ] No commit straddles agent and project paths.
+- [ ] No commit straddles agent and project paths
+      (`.claude/skills/commit-messages/SKILL.md`, *The agent's own files*).
 - [ ] No implementation file is older than the decision it
       realizes: the log reads decision, then code.
 - [ ] The Plan Step reached main by fast-forward from `<branch>`, on the
@@ -153,7 +154,7 @@ Notes:
 <!-- This Plan Step opens on the CBC Run Briefing. It is the
      Plan Step's starting input, the first prompt of project work,
      committed unchanged at docs/system/framing/briefing.md
-     (the cbc-framing Agent Skill). The README purpose paragraph and the devlog's
+     (.claude/skills/cbc-framing/SKILL.md, The record — the CBC Framing…). The README purpose paragraph and the devlog's
      CBC Run Briefing line land here. Names given before it are
      working names. -->
 
@@ -189,7 +190,7 @@ Now:
 Gate:
 Notes:
 
-## Steps 5..N-3: Invariant Slices  (cbc-slice, one Plan Step per Invariant Slice)
+## Steps 5..N-3: Invariant Slices  (cbc-slice, one Plan Step per Invariant Slice)    [ ]
 
 Goal: two things are true at each close:
 - the Invariant Slice is closed by an Evidence Test that creates

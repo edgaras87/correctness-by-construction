@@ -2,7 +2,7 @@
 
 A Local Map (ADR-0045): how the parts of `delivery/` relate, and
 where each lands in a CBC Run. What each part is, is
-`ARCHITECTURE.md`'s (§2, *The delivery and the CBC Runs*). How a CBC
+`ARCHITECTURE.md`'s (`ARCHITECTURE.md` §2, *The delivery and the CBC Runs*). How a CBC
 Run is born is `delivery/installs/pure-seed.md`. How it is updated
 afterwards, and how what it learns comes back, is the Exchange
 Convention, `docs/conventions/exchange/`.
@@ -21,39 +21,47 @@ An Output Shape travels with the group of the thing it shapes, as a copy
 into the CBC Run's `.claude/shapes/`; the rest is the shapes manual's
 (`docs/conventions/shapes/` §4, *An Output Shape between repos*).
 
+The method's own files, such as `docs/system/`, which the
+cbc-framing Agent Skill writes, sit beside the records in the CBC Run,
+not in place of them. Events of the method are recorded where the
+container's records table and each Record Stub's header comment say.
+
 ## 2. Three ways a file lands
 
-- **The CBC Run's own from birth.** The container's Record Stubs, its
-  two composed files, the Entry File and `README.md`, its Decisions
-  Log, its Hygiene Base and its `temp/README.md` are copied once and
-  are the CBC Run's from then on. They are never delivered again.
-- **Pinned copies:**
-  - the Container Group's convention Agent Skills, Agent Rules and
-    Approach on Trial;
-  - the Method Group's and the Stack Group's Agent Skills, Agent
-    Rules and Output Shapes;
-  - each group's delivered Glossary Names, in `docs/glossary/`;
-  - the concept, at `docs/concept/`
+### 2.1 Own from birth
 
-  (`docs/conventions/exchange/` §3.2, *What goes* and §3.3, *A group's place in the tree*). They land where the container
-  claims nothing. The CBC Run may edit one in place, under the
-  Exchange Convention's rule (`docs/conventions/exchange/` §5, *Editing a copy*). A newer one
-  arrives by copying anew at a new Delivery Pin.
-- **Delivery Fills.** Text the Pure Seed writes into a file the container already
-  put there, which is the CBC Run's own from that moment. One exists:
+The container's Record Stubs, its two composed files, the Entry File
+and `README.md`, its Decisions Log, its Hygiene Base and its
+`temp/README.md` are copied once and are the CBC Run's from then on.
+They are never delivered again
+(`docs/conventions/exchange/` §2.4, *The records' exception*).
 
-| From here | Into the CBC Run |
-|---|---|
-| `delivery/fills/cbc-run-pure-playbook.md` | its Plan Steps replace everything between the PLAN Record Stub's STEPS markers. The "Steps from:" line names it at the Delivery Pin (`delivery/installs/pure-seed.md` step 4). The CBC Run holds no copy of the playbook. |
+### 2.2 Pinned copies
+
+- the Container Group's convention Agent Skills, Agent Rules and
+  Approach on Trial;
+- the Method Group's and the Stack Group's Agent Skills, Agent
+  Rules and Output Shapes;
+- each group's delivered Glossary Names, in `docs/glossary/`;
+- the concept (§3, *The one exception*).
+
+(`docs/conventions/exchange/` §3.2, *What goes* and §3.3, *A group's place in the tree*). They land where the container
+claims nothing. The CBC Run may edit one in place, under the
+Exchange Convention's rule (`docs/conventions/exchange/` §5, *Editing a copy*). A newer one
+arrives by copying anew at a new Delivery Pin.
 
 An Agent Skill's Agent Skill Templates are delivered with the Agent Skill as pinned copies. How
 a CBC Run fills an Agent Skill Template, and what it does when it deviates
 from one, is the Exchange Convention's (`docs/conventions/exchange/` §5.8, *Agent Skill Templates*).
 
-The method's own files, such as `docs/system/`, which the
-cbc-framing Agent Skill writes, sit beside the records in the CBC Run,
-not in place of them. Events of the method are recorded where the
-container's records table and each Record Stub's header comment say.
+### 2.3 Delivery Fills
+
+Text the Pure Seed writes into a file the container already put
+there, which is the CBC Run's own from that moment. One exists:
+
+| From here | Into the CBC Run |
+|---|---|
+| `delivery/fills/cbc-run-pure-playbook.md` | its Plan Steps replace everything between the PLAN Record Stub's STEPS markers. The "Steps from:" line names it at the Delivery Pin (`delivery/installs/pure-seed.md` step 4). The CBC Run holds no copy of the playbook. |
 
 ## 3. The one exception
 
@@ -87,7 +95,7 @@ also takes no `spring-postgres/` (`docs/conventions/exchange/` §3.4, *One group
 ## 6. When it lands
 
 Everything copies at birth, including the Agent Skills for phases
-that run much later. Each Agent Skill's Stage 0 refuses to start
+that run much later. The Stage 0 of the cbc-slice Agent Skill and of the Stack Group's three Agent Skills refuses to start
 before its inputs exist, so an early copy is inert. And one moment
 keeps the whole set at one Delivery Pin. The CBC Run's Plan Steps,
 and which Agent Skill each opens, come from the playbook,

@@ -143,8 +143,8 @@ assertThat(Body.of(retry.getBody()).stringAt("$.orderId")).isEqualTo(first.order
 - **Fields:** `Body.of(…).stringAt("$.orderId")`, and
   `Body.names("orderId")` for a missing one.
 - **The example numbers:** fifty identical submissions released at
-  one instant, one order recorded (the worked example's Runtime
-  Ground).
+  one instant, one order recorded
+  (`.claude/skills/cbc-framing/references/worked-example.md`, *Stage 2 — Name the enemies…*).
 - **A helper:** `trySubmit` beside `submit`.
 
 ### Why each rule is there
