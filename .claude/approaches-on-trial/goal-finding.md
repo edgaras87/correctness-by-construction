@@ -21,11 +21,18 @@ At the start of the review, before the repo's parts are listed.
 
 ## Stages
 
-### 1. Set up the queue
+### 1. Plan the questions
 
-The agent writes 3 questions, the most important first. The first
-two ask, in the reviewer's own words: what success looks like in six
-months, and what failure would look like.
+1. **The agent writes the question plan:** the parts the questions
+   come in, in order, each with why it comes there, and the
+   questions of each. What the repo holds comes first, how things get
+   into it second, what they cost and return last. A question about
+   cost means little until it has a thing or a step to attach to.
+2. **The reviewer agrees the plan** before round 1.
+3. **Each question asks about what the repo has,** with its sizes
+   beside it, never about a measure nobody has taken.
+4. **The queue is the current part's first 3 questions,** the most
+   important first.
 
 ### 2. Work the top question
 
@@ -55,6 +62,9 @@ notes.
    or drop one that no longer matters.
 2. **Add 1 new question.**
 3. **Sort the 3 again,** and say what changed and why.
+4. **Draw from the current part of the plan.** When its questions are
+   done, the next part's fill the queue. An answer may change the
+   plan too: the agent says how, and the reviewer agrees it.
 
 Then back to Stage 2.
 
@@ -111,5 +121,10 @@ repo's parts, starts from it.
 - **Real moments alone:** slow, and leans toward recent memory. Kept
   as Stage 7, to test the goals.
 - **The question dialog:** 4 options at most, and the context hidden.
+- **Starting from success, failure and cost, with no plan:** lived in
+  rounds 1 to 3 of the first use (`temp/review.md` at `3624553`;
+  `7afe7f3` holds rounds 1 and 2). The reviewer could not put numbers
+  on what nobody had measured, and found the questions too broad,
+  asked before what the repo holds and how things get in.
 
 ## Uses
