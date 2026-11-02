@@ -657,35 +657,21 @@
 
 - [ ] Rewrite the method's texts plain (2026-10-17, CBC Run 3's RETRO
       D2).
-      Context: the agent copies the voice it reads. CBC Run 3's records
-      came out in the Agent Skills' voice, though "explain plainly" was in
-      its memory. Plain already: the Agent Rules, the Output Shapes, the cbc-slice Agent Skill's
-      Agent Skill and workflow (`2674c03`). Not yet, about 26,000 words:
-      the cbc-framing Agent Skill (8,500), the stack Agent Skills (13,800), the concept
-      chapters (3,400), System Readiness (600). A chapter reworded is a
-      concept change, editorial unless a meaning moves.
+      Context: Refinement Round 3 rewrote the method's and the stack's
+      texts, the concept chapters and System Readiness against the
+      writing rule, and the refinement's last read fixed what it found
+      in them, FINDING-206, 223, 224, 227 and 228 among it. What is
+      left: the method's texts use parts of the concept chapters and
+      never say which, so a change to a chapter finds no line here
+      (the refinement's DECISION-43 and FINDING-1665).
       Ideas:
-      - one commit per file; the worked example's two copies as one.
-      - the Enemy Collisions a Scope Exclusion stops, written as
-        "nothing dies" Enemy Collision Kills, as the Enemy Collision
-        Kill Shape asks; the example's count of them and its CBC
-        Framing Reconciliation move.
-      - "invariant-shaped", "contract-shaped": "shape" now reads as the
-        Output Shape.
-      - the cbc-slice Agent Skill's opening states the completion test alone;
-        `concept/04-cbc-slice.md` says the test proves a Structural
-        Wall, and the Structural Wall closes the Invariant Slice.
-      - Refinement Round 2's Lessons and Layout Finding Kinds in these texts, left here by
-        the refinement's DECISION-7 and DECISION-8: FINDING-223, the Adversity Harness
-        reference's "passes"; FINDING-224, the "lived" markers; FINDING-227,
-        the cbc-framing Agent Skill's export section, the infra-establish Agent Skill's manuals
-        told three times, the worked example's two layouts; FINDING-228,
-        the walkthrough's parts in its fourth section
-        (`delivery/spring-postgres/.claude/skills/cbc-bootstrap/references/spring-boot-walkthrough.md` §4, *The Adversity Harness*); and FINDING-206, the playbook's 12
-        citations of CBC Run 3's RETRO.
-      Trigger: the refinement of this repo closes. Its Writing Finding Kind
-               reads these texts; what Refinement Round 3 did leaves this
-               item, and what is left stays or goes.
+      - one Fact Reference per section that uses a chapter part
+        (ADR-0072), such as (`docs/concept/03-cbc-framing.md`, *The
+        derivation order*); the first one fires "Number the concept
+        chapters' sections".
+      - the chapters, one Canonical Description copied whole, need none
+        between themselves.
+      Trigger: the refinement of this repo closes.
       See: devlog 2026-10-17, later, the plain method;
       `TODO-CONVERSATION-MEMORY.md` §6, *The method's plain rewrite: `cbc-slice`'s opening*.
 

@@ -2353,8 +2353,10 @@ reviewer took it. The work names each fixed finding's commit.
   - FINDING-863: a summary that says it is one, as one-home rule 3 allows.
 - **Moved to TODO:** none. Round 2's findings that DECISION-7 and 8
   moved to the plain-rewrite item, FINDING-206's citations of CBC Run
-  3's RETRO, 223, 224, 227 and 228, are worked in this round's layer 6,
-  by DECISION-16: the item keeps only what the round leaves.
+  3's RETRO, 223, 224, 227 and 228, were to be worked in this round's
+  layer 6, by DECISION-16. Corrected by the last read (FINDING-1501,
+  DECISION-50): this round worked 206 and 224 only; the last read's
+  work fixed 223, 227 and 228.
 
 The agent's calls, where a finding asked a question no decision
 answers:
