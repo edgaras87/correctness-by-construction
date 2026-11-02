@@ -66,6 +66,8 @@ When the commit renames a file, renumbers or retitles a section, in
 any file, or moves a fact to a new home, grep all Living Text for
 each old path, number and title, and fix what points at them in
 this commit (`docs/conventions/facts-in-sync/` §3.3, *The rename grep*).
+When the commit replaces a word across files, re-read each changed
+sentence for what it now claims.
 
 ## What this does not cover
 
