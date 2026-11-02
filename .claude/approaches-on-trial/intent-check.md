@@ -1,19 +1,21 @@
 # Intent check
 
-**On trial.** How the reviewer's intent for this repo is written down,
-made clear, and locked, so the repo can be checked against it.
-Drafted 2026-11-02 for the review of how this repo works and what it
-costs, after goal-finding was dropped.
+**On trial.** How the reviewer's intent for what is under review is
+written down, made clear, and locked, so it can be checked against
+it. Drafted 2026-11-02 for the review of how this repo works, after
+goal-finding was dropped; the same day the review was re-aimed at the
+idea-to-approach model under the repo.
 
 ## What it is for
 
-So that the review checks the repo against what the reviewer meant
-it to be. The intent is the reviewer's; the agent helps make it clear
+So that the review checks what is under review against what the
+reviewer means it to be. The intent is the reviewer's; the agent helps make it clear
 enough to check, and adds nothing of its own.
 
 ## When it opens
 
-At the start of the review, before any part of the repo is checked.
+At the start of the review, before anything under review is
+checked.
 
 ## Stages
 
@@ -36,13 +38,12 @@ Stage 5, never taken as the intent.
 2. **Play back what the stop changed:** the lines added, changed or
    dropped.
 3. **From what was told alone.** Earlier answers held as possible
-   goals are not drawn on, so they do not steer the intent.
+   goals are not drawn on, and neither are the repo's facts, so
+   neither steers the intent. The repo's facts come in at Stage 5.
 4. **What it noticed, labelled,** kept with the draft and answered
    whenever the reviewer chooses:
    - gaps, where a line can be read more than one way;
-   - tensions, where two lines pull against each other;
-   - differences from the repo, where the repo says otherwise. Named,
-     not argued.
+   - tensions, where two lines pull against each other.
 
 ### 3. Correct, and lock when the whole is told
 
