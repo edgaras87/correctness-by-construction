@@ -132,6 +132,84 @@ work.
 
 ---
 
+## Step: Review how this repo works, and what it costs  (`.claude/approaches-on-trial/goal-finding.md`)    [~]
+
+Goal: this repo has goals the reviewer approved; each of its parts is
+judged against them, for what it costs and what it returns; and each
+finding has the reviewer's decision.
+Now: goal-finding, Stage 2, round 1.
+Gate:
+
+**At the opening.**
+
+- [x] The Plan Step's branch `review-2026-11-02` is cut from main
+      at `68b635a`, and nothing of the Plan Step was done on main
+      (2026-11-02).
+- [x] This Plan Step Gate was written before the work started, but
+      for round 1's questions: shown in chat before it, committed
+      after it (2026-11-02).
+- [x] The Plan Step's Work Approach is known: the goal-finding Approach
+      on Trial, drafted for it (`ebe4deb`..`52a1061`), for the goals.
+      The phases after it have none yet (Notes) (2026-11-02).
+
+**The Plan Step's own items.**
+
+- [ ] The goals are the reviewer's, approved, each with a check, in
+      `temp/review.md`.
+- [ ] `README.md` states the approved goals: why the repo exists, and
+      its success criteria.
+- [ ] Every part of the repo is listed with the goal it serves, what
+      it costs, and the evidence of what it returned, or "none yet".
+- [ ] Each finding has the reviewer's decision: keep, shrink, merge
+      or cut, with its reason.
+- [ ] Each decision that changes the repo has its TODO item or its
+      commit plan.
+
+**Known already.** goal-finding has no *Gates* section. Its close is the
+approach-drafting Approach on Trial's, the last close item below.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `review-2026-11-02` follows
+      the commit-messages Agent Skill.
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-02, from that day's talk: the reviewer doubts the
+  repo works the right way, and wants how its parts are kept and
+  used, what each costs, and whether it is worth it, looked at
+  before more work.
+- Stages, three phases: find the goals, by goal-finding; list and
+  measure the repo's parts against them; decide each finding, one at
+  a time. The second and third have no Work Approach yet. Each gets
+  one when it opens: goal-finding grows, or a new Approach on Trial is
+  drafted (`.claude/approaches-on-trial/approach-drafting.md`).
+- The reviewer approves the goals and decides each finding. Each
+  commit is staged and shown, and committed on the reviewer's word.
+- The two Plan Steps below stay stopped. TODO items near this one,
+  such as this repo's retrospective and how work is run by agents,
+  stay in TODO; whether this Plan Step takes them is decided when the
+  parts are listed.
+
+---
+
 ## Step: Birth CBC Run 6, on full auto  (`.claude/approaches-on-trial/auto-run.md`, `delivery/installs/pure-seed.md`, the Foundation Check)    [!] stopped: Refine this repo against its own rules (devlog 2026-10-29, morning)
 
 Goal: CBC Run 6 is born from this repo at one Delivery Pin on main, with the
