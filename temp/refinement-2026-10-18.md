@@ -4475,6 +4475,7 @@ Decided by the reviewer, 2026-11-01, during the work:
 Decided by the reviewer, 2026-11-02, during the work:
 - **FINDING-1487:** `temp/run-6-handoff/` stays, and the TODO item "Read CBC Run 6" names it.
 - **FINDING-1488,** the agent's call reversed at the Foundation Check: project-recording §14 says a section goes with its item, so §7, §8 and §26 go, and the header gains no "Item: none".
+- **DECISION-52's tag:** a tried Enemy Collision where nothing dies is `HOLDS-<n>`, numbered on its own.
 
 ### DECISION-49's pass
 
