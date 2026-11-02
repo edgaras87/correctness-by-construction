@@ -44,7 +44,7 @@ Nothing yet: the close decides
 - **its Plan Step in `PLAN.md`**, whose Notes list this page's Approach on Trial Stages;
 - **its file, `temp/refinement-<date>.md`**, deleted at the close.
 
-What derives from this page is that list. A change here walks it.
+What derives from this page is that list. A change here runs the Change Walk on it.
 
 ## The seats
 

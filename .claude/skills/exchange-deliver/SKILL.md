@@ -14,9 +14,9 @@ verdicts and the Read-Through Commit go only when one did.
 
 What a Delivery Note holds, and why: (`docs/conventions/exchange/` §3.7, *The Delivery Note*).
 
-In `temp/note-to-<run>-<date>.md`, told, not delivered: the CBC Run
-reads it through the Told Channel, as session input, not as a copy it
-keeps (`docs/models/tiers.md` §3.2, *The Told Channel*).
+In `temp/note-to-<run>-<date>.md`. It goes down with the delivery,
+but it is not a copy: the CBC Run reads it at the Delivery Take, and
+it goes when the take is done (`docs/conventions/exchange/` §4, *The Delivery Take*, step 5).
 
 0. **If the CBC Run moved since the CBC Run Reading, run the exchange-read Agent Skill on the new
    span.** The CBC Run Reading's first line names `R`; if `R..HEAD` is not
@@ -83,15 +83,15 @@ keeps (`docs/models/tiers.md` §3.2, *The Told Channel*).
 
 5. **What it recommends, in order**, and what is optional.
 
-6. Nothing that needs our repo to verify. A claim the CBC Run cannot
+6. **Nothing that needs our repo to verify.** A claim the CBC Run cannot
    check from its own tree is a claim it can never check, so it stays
    open. Where one
    cannot be avoided, the Delivery Note says so, in a clause. That happens in three cases: a thin Delivery Note, material outside the delivery, a
    negative claim.
 
 7. **No ADR number, no path in this repo, no word of our own
-   vocabulary.** The Delivery Note goes through the Told Channel, and
-   a citation the CBC Run cannot follow reads as its own.
+   vocabulary.** The CBC Run cannot open this repo, and a citation it
+   cannot follow reads as its own.
 
 8. **A third repository gets both names**: ours, by ordinal, and the
    one it gave itself.
@@ -146,9 +146,13 @@ On the reviewer's word. If the agent stages the delivery, it runs steps 1 and
    line and the section below it, and nothing else; a second run
    changes nothing (`docs/conventions/exchange/` §3.8, *The footer at delivery*).
 
-   Each group's `.claude/skills/`, `.claude/rules/`,
-   `.claude/shapes/`, `.claude/approaches-on-trial/` and
-   `docs/glossary/`, and nothing else of it: the Container Group's
+   What each group ships after birth
+   (`docs/conventions/exchange/` §3.2, *What goes*): the Container
+   Group's Agent Skills, Agent Rules and Approaches on Trial; the
+   Method Group's and the Stack Group's Agent Skills, Agent Rules and
+   Output Shapes; each group's `docs/glossary/`. The script looks in
+   all five folders of every group, and a folder a group does not
+   have yields nothing. Nothing else of a group goes: the Container Group's
    records, the Entry File, `README.md`, the Decisions Log and the Hygiene
    Base went at birth and are the CBC Run's.
 

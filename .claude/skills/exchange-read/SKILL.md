@@ -6,13 +6,16 @@ foundation: the exchange convention
 
 # Read a CBC Run
 
-Four Agent Skill Stages, and the fourth writes a document. What
+Four Agent Skill Stages, and the document is begun at Stage 2 and
+finished at the fourth. What
 happens to the document afterwards is work, not this Agent Skill;
 when the work is done, the exchange-deliver Agent Skill carries the verdicts down.
 
 Why the read is done so: (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*).
 
 ## Stage 1 — find where to start
+
+Why both numbers are in the CBC Run: (`docs/conventions/exchange/` §2.2, *The CBC Run*).
 
 Open the CBC Run's Decisions Log, `.claude/decisions.md`. Its last
 delivery entry carries two numbers:
@@ -96,7 +99,8 @@ time.
 ## What this does not do
 
 - It does not decide. Each item ends as taken, declined or held in
-  the work that follows, where the Exchange Convention says each lands.
+  the work that follows, where the Exchange Convention says each lands
+  (`docs/conventions/exchange/` §6.5, *Verdicts*).
 - It does not send. The exchange-deliver Agent Skill does. A read that sends no
   Delivery Note has not finished: the CBC Run's Read-Through Commit
   stays where it was, and the CBC Run cannot tell it was read.
