@@ -14,7 +14,11 @@
 
 Empty until part 1 is locked.
 
-## Background
+## Possible goals
+
+Possibilities, not decisions: held until the intent is locked, then
+set against it (intent-check, Stage 4). Not drawn on while the intent
+is written.
 
 Two answers locked by goal-finding, before it was dropped. The rounds
 that gave them are in git: `7afe7f3` holds rounds 1 and 2; `3624553`
