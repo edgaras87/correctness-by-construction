@@ -30,16 +30,13 @@ read the whole repo, listed 68 findings and 10 decisions in six
 parts, and ended every one. Its file is in git at
 `19f1d7b^:temp/eval-2026-09-30.md`.
 
-*On trial.* What would make it evidence: the refinement Plan Step in
-`PLAN.md` closes with every finding ended. The reviewer then judges
-whether Refinement Rounds held, each read first and fixed by a
-Change Set written from its list.
-Look again at that Plan Step's close.
+*On trial,* after one use: its first evaluation kept every piece on
+trial and placed none (ADR-0080). What would settle it is *Settled
+when*, below.
 
 ## What this is made usable as
 
-Nothing yet: the close decides
-(`.claude/approaches-on-trial/approach-evaluation.md`). While a refinement is open, a repo holds:
+Nothing yet: each piece stays on trial (ADR-0080). While a refinement is open, a repo holds:
 
 - **its Plan Step in `PLAN.md`**, whose Notes list this page's Approach on Trial Stages;
 - **its file, `temp/refinement-<date>.md`**, deleted at the close.
@@ -59,6 +56,13 @@ A refinement reads Living Text (`docs/conventions/facts-in-sync/` §1.5,
 *Living Text*) against the rules it names. It leaves out `docs/baselines/`, frozen on purpose,
 and a CBC Run's own text in `temp/`, which its CBC Run Reading reads. Its
 Finding Kinds are its own, so they are written in its file, not here.
+
+Text another TODO item already plans to rewrite is read here too.
+Fixed in the same pass, it is read once against every rule, not twice.
+
+*Found 2026-11-02: Refinement Round 3 did the method's plain rewrite,
+which a TODO item held, and the last read finished it; the item kept
+only what no Finding Kind asked (ADR-0080).*
 
 ### 1.1 The refinement's words
 
@@ -248,6 +252,7 @@ decided (`.claude/rules/foundation-check.md`, step 4). Each finding
 then gets one ending:
 
 - **fixed**, and its line names the commit;
+- **stands by a decision**, naming the DECISION-n or the call;
 - **declined**, with the reason;
 - **moved** to a TODO item.
 
@@ -352,11 +357,6 @@ commit, so the file can be read from git.
 ## 3. Not known yet
 
 - **Whether the order holds:** the first Refinement Round tests the Refinement Layers (§2.2, *List the files*); the last, whether the Refinement Rounds were worth their reads.
-- **Text another TODO item already plans to rewrite:** read here,
-  or left to that item. On 2026-10-19 the reviewer had the Writing
-  Finding Kind read the method's texts, which TODO's plain-rewrite item
-  covers. The refinement's close weighs what that item still
-  needs, and whether one pass was the better way.
 - **Whether a refinement comes again,** and what makes one due: a
   new rule, or a count of rules since the last.
 - **Whether a refinement is the second check on text kept true.** The
@@ -375,11 +375,30 @@ commit, so the file can be read from git.
   page's phases their own Name; whether the two hold apart is judged
   at the close.
 - **Whether the full reads again paid.** The counts of findings in
-  unchanged text decide whether a narrower read would have done.
+  unchanged text decide whether a narrower read would have done. In
+  the first refinement, 54 of the last read's findings were older than
+  their rule, in text earlier reads had left. Its read again was
+  skipped for budget, so it gave no count.
 - **Whether the design change in place belongs to every Plan Step.**
   The work holds it for a refinement alone (§2.7, *Working the findings*) (`8c9aadf`), the only work
   that has lived it. A draft into both Plan Step Forms, ours and the
   container's, was undone before its commit.
+
+## Settled when
+
+A second refinement has run on it, and its evaluation changed nothing
+in it. Each *Not known yet* item is then answered from two uses.
+
+## Uses
+
+*The Concept Deliverer, the first refinement, 2026-10-18 to 2026-11-02.*
+Three Refinement Rounds and a last read; the last read's 385 findings
+all ended, in one Change Set written from the list. The read again was
+skipped once, for budget, and §2.9 stands. Taught: Refinement Rounds
+and Refinement Layers order the read and the list, not the work
+(§2.7, *Working the findings*); text another TODO item already plans to
+rewrite is read in the same pass (§1, *What it reads*). Its file is in
+git at `55e2bd0^:temp/refinement-2026-10-18.md`.
 
 ## Why it arrives this way
 
@@ -413,3 +432,6 @@ goes, and its evaluation at the close places its pieces
 - ADR-0056 — *Why it arrives this way*: first written as a manual on
   trial by first-time work
 - ADR-0058 — *Why it arrives this way*: an Approach on Trial
+- ADR-0080 — *What it is for*, §1 and *Uses*: every piece on trial
+  after the first use; text another TODO item already plans to rewrite
+  is read here
