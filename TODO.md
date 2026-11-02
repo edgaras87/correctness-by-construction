@@ -659,8 +659,8 @@
       D2).
       Context: Refinement Round 3 rewrote the method's and the stack's
       texts, the concept chapters and System Readiness against the
-      writing rule, and the refinement's last read fixed what it found
-      in them, FINDING-206, 223, 224, 227 and 228 among it. What is
+      writing rule. FINDING-206 and 224 were gone by then, and the
+      refinement's last read fixed 223, 227 and 228. What is
       left: the method's texts use parts of the concept chapters and
       never say which, so a change to a chapter finds no line here
       (the refinement's DECISION-43 and FINDING-1665).

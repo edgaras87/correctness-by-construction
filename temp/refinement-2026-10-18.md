@@ -2355,8 +2355,8 @@ reviewer took it. The work names each fixed finding's commit.
   moved to the plain-rewrite item, FINDING-206's citations of CBC Run
   3's RETRO, 223, 224, 227 and 228, were to be worked in this round's
   layer 6, by DECISION-16. Corrected by the last read (FINDING-1501,
-  DECISION-50): this round worked 206 and 224 only; the last read's
-  work fixed 223, 227 and 228.
+  DECISION-50): 206 went at `7f6e3a8`, before this round, and 224 in
+  it; the last read's work fixed 223, 227 and 228.
 
 The agent's calls, where a finding asked a question no decision
 answers:
