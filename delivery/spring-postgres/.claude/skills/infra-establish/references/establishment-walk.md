@@ -1,9 +1,8 @@
 # Infrastructure Establishment — Agent Skill Stage by Agent Skill Stage
 
 Infrastructure Establishment, Stage 0 to Stage 7. It is generic throughout. The project's
-concrete choices land in its own record and manuals, never here. Two
-CBC Runs have done it. Deviations a different Runtime Ground forces
-are legal when logged.
+concrete choices land in its own record and manuals, never here.
+Deviations a different Runtime Ground forces are legal when logged.
 
 ## Inputs, before Stage 0
 
@@ -17,7 +16,7 @@ The CBC Framing Exports, standing:
 
 The CBC Framing Intent is consulted at questions of scope and
 tradeoff. If the CBC Framing Intent or the Invariant Slice Registry
-is not settled, the step is not ready: stop (Stage 0 in `.claude/skills/infra-establish/SKILL.md`).
+is not settled, Infrastructure Establishment is not ready: stop (Stage 0 in `.claude/skills/infra-establish/SKILL.md`).
 If only the System Definition's Runtime Ground facts are missing, the
 System Definition is revised first: a CBC Framing Export Revision in
 its LAYER-1-ENVIRONMENT, one commit. Then Stage 1 begins (Stage 0,
@@ -90,7 +89,7 @@ refused, and for what reason. It is one ADR, or one Infrastructure Establishment
 later re-enters this evaluation as a logged decision, an
 Infrastructure Service Re-entry (the infra-serve Agent Skill).
 
-## Stage 3 — Name each Infrastructure Service's constraints, the reference first
+## Stage 3 — Name the Infrastructure Service Constraints, the reference first
 
 Infrastructure Service Constraints are requirements and limits put on
 an Infrastructure Service. They govern the Runtime Ground, and are
@@ -122,9 +121,9 @@ How an Infrastructure Service Constraint is made real can be the same across pro
 it is a reference, not a project fact: keep it generic, and keep the
 project's concrete wiring in its manuals. When an Infrastructure Establishment derives a
 new one that can be reused, for a new family of services, write it
-up as a new reference beside
-`.claude/skills/infra-establish/references/postgres-role-split.md`,
-so no later project derives it again.
+up as a reference of the project's own, in its docs, and offer it
+under TODO's *To the deliverer*, so no later project derives it
+again (`.claude/rules/delivered-copies.md`, rule 4, *At every Plan Step's close…*).
 
 ## Stage 5 — Stand the Infrastructure Services up, and verify both ways
 
@@ -147,8 +146,7 @@ Then **two verifications that complement each other, always both:**
 The Operator Manual grows its service sections from this work as
 done.
 
-For PostgreSQL, the whole of Stages 3 to 6 has a sequence end to end,
-as CBC Runs did it:
+For PostgreSQL, the whole of Stages 3 to 6 has a sequence end to end:
 `.claude/skills/infra-establish/references/postgres-setup-walkthrough.md`.
 Consult it when PostgreSQL comes again. Never force its shape on a
 different Infrastructure Service.
@@ -157,17 +155,11 @@ different Infrastructure Service.
 
 The Infrastructure Contract is the builder's manual: a **living
 document, one section per Infrastructure Service,** grown at every
-later Infrastructure Service Re-entry. Each section says:
+later Infrastructure Service Re-entry. What each section says is (`.claude/skills/infra-establish/SKILL.md`, *Records and outputs*).
+The refusals are written as contract terms.
 
-1. what Infrastructure Services exist;
-2. how to reach them, inside and outside the Execution Environment's
-   network;
-3. **which identity to connect as, and which never to use;**
-4. what the Infrastructure Service Constraints allow and refuse, the
-   refusals written as contract terms;
-5. how schema changes are made.
-
-It is the home of the Runtime Ground's own words. The exit needs both
+It is where the Runtime Ground's own words are defined; each is
+listed in the project's `docs/glossary.md`. The exit needs both
 manuals standing: this one, and the Operator Manual.
 
 ## Stage 7 — Run the exit test
@@ -203,8 +195,8 @@ Operator Manual now. It is never a second home.
 
 ## The Names defined here
 
-The project's Infrastructure Contract is where it writes its own
-words. These three are the stack's, listed in `docs/glossary/stack.md`:
+The project's Infrastructure Contract defines its own words, and its
+`docs/glossary.md` lists them. These three are the stack's, listed in `docs/glossary/stack.md`:
 
 - **Execution Environment** — the local runtime host for
   infrastructure.

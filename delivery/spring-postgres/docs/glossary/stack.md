@@ -81,8 +81,10 @@
 - **Operator Manual** — the human's manual for standing up and using
   the Runtime Ground, written from the setup as it was done
   (`.claude/skills/infra-establish/SKILL.md`).
-- **Stack Default** — the choice a stack's references make unless a
-  demand or a fact about the environment defeats it: local containers
-  under podman, run by compose; packages by feature
+- **Stack Default** — the choice a stack's references make by
+  default: local containers under podman, run by compose, departed
+  from only when a demand or a fact about the environment defeats it;
+  packages by feature, departed from by the CBC Run's own deciding
+  inputs
   (`.claude/skills/infra-establish/references/establishment-walk.md`;
   `.claude/skills/cbc-bootstrap/references/app-structure.md`).

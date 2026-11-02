@@ -37,8 +37,8 @@ same shell and start again.
 ## Test
 
 ```bash
-# the one standard test command — unit and integration tests together;
-# integration tests drive a real throwaway PostgreSQL (Testcontainers,
+# the one standard test command: unit and integration tests together.
+# Integration tests drive a real throwaway PostgreSQL (Testcontainers,
 # rootless podman), so the Runtime Ground does not need to be up
 ./mvnw test
 ```

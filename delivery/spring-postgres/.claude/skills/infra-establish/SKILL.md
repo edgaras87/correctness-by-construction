@@ -26,7 +26,7 @@ more references apply at their Agent Skill Stages:
 - `.claude/skills/infra-establish/references/postgres-role-split.md`,
   the Database Role Split, which makes the Infrastructure Service Constraint real;
 - `.claude/skills/infra-establish/references/postgres-setup-walkthrough.md`,
-  the sequence end to end, as two CBC Runs confirmed it.
+  the sequence end to end, as two projects confirmed it.
 
 ## Stage 0 — readiness (before anything else)
 
@@ -51,9 +51,8 @@ in. Check against the actual repo:
    revision rule names. The facts are added by a CBC Framing Export Revision
    in LAYER-1-ENVIRONMENT: what changed, why, and that this check set
    it off. It is one commit, and touches no System Possession, System
-   Refusal or verdict. Then the check passes. Two CBC Runs met this,
-   the same way both times. A fact CBC Framing left unstated is
-   written where it belongs.
+   Refusal or verdict. Then the check passes. A fact CBC Framing left
+   unstated is written where it belongs.
 3. **The repo exists, and is a git repo** with its hygiene files
    present or creatable: `.gitignore` at least, since secrets
    handling depends on it.
@@ -66,15 +65,15 @@ exactly what the method exists to refuse.
 ## The Agent Skill Stages and their Gates
 
 In the drawing, environment is the Execution Environment, services the
-Infrastructure Services, constraints the Infrastructure Service
-Constraints, and contract the Infrastructure Contract and the Operator
-Manual.
+Infrastructure Services, exclusions the Infrastructure Service
+Exclusions, constraints the Infrastructure Service Constraints, and
+manuals the Infrastructure Contract and the Operator Manual.
 
 ```
 0: ready? → 1: environment → 2: services   → 3: constraints → 4: the reference
                 (decided,       (from need,     (named, with     (applied or
                  stood up)       exclusions)     enforcement)     recorded)
-          → 5: stand up + verify BOTH ways → 6: contract → 7: exit test
+          → 5: stand up + verify BOTH ways → 6: manuals → 7: exit test
 ```
 
 The full detail of each Agent Skill Stage:
@@ -107,8 +106,8 @@ What cannot be bargained away:
 
   A Runtime Ground verified one way is not verified.
 - **Stage 6 Gate:** both manuals stand:
-  - the **Infrastructure Contract**, for the builder: identities,
-    reachability, refusals, how schema changes are made;
+  - the **Infrastructure Contract**, for the builder, holding what
+    *Records and outputs* below lists;
   - the **Operator Manual**, for standing up and use, written from
     the work as done.
 
@@ -129,7 +128,7 @@ own acts.
 ## Deviations — legal, never silent
 
 A different Runtime Ground, with no containers, several services, or
-another family of constraints, may force departures from `establishment-walk.md` or
+another family of constraints, may force departures from `.claude/skills/infra-establish/references/establishment-walk.md` or
 the references. Depart when the Runtime Ground demands it. Log where,
 what was done instead, and why. The references are written from what
 CBC Runs did, not rules. But a deviation not logged makes the record
@@ -138,7 +137,7 @@ wrong.
 ## Records and outputs
 
 The repo's own records win. Where the Runtime Ground's record
-lives depends on what the repo keeps. Two CBC Runs worked it, and the
+lives depends on what the repo keeps. CBC Runs worked it, and the
 shape below is theirs.
 
 - **A repo with records** (a plan, ADRs, a devlog: every
@@ -157,8 +156,8 @@ shape below is theirs.
     Manual.
   - The Execution Environment ADR maps this Agent Skill's default
     records to the repo's own: the sentence the Infrastructure Establishment Log's first entry
-    would have held. One CBC Run kept an Infrastructure Establishment Log beside such records, and
-    it held nothing they did not.
+    would have held. An Infrastructure Establishment Log beside such
+    records holds nothing they do not.
 - **A repo without records:** the Infrastructure Establishment Log,
   `docs/infrastructure/establishment-log.md`, beside the manuals. It
   is the decision record and the Infrastructure Establishment's outputs as done. Its first
@@ -195,7 +194,7 @@ The layout, in both cases:
   Manual at the exit, when the Runtime Ground stands. It carries the
   environment lines only, merged and filled from
   `.claude/skills/infra-establish/templates/readme-prerequisites.md`.
-  The stack's line arrives at the CBC Bootstrap, not here. `establishment-walk.md`'s
+  The stack's line arrives at the CBC Bootstrap, not here. `.claude/skills/infra-establish/references/establishment-walk.md`'s
   Stage 7 says how.
 - Optional, only if the project keeps public docs: a setup guide,
   derived from the Operator Manual. It is never a second home, and is
@@ -205,8 +204,8 @@ The layout, in both cases:
 
 ## Decisions
 
-- ADR-0008 — `references/postgres-setup-walkthrough.md`: the Runtime
+- ADR-0008 — `delivery/spring-postgres/.claude/skills/infra-establish/references/postgres-setup-walkthrough.md`: the Runtime
   Ground's files are Agent Skill Templates beside the references
-- ADR-0013 — *Records and outputs* and `references/establishment-walk.md`
+- ADR-0013 — *Records and outputs* and `delivery/spring-postgres/.claude/skills/infra-establish/references/establishment-walk.md`
   Stage 7: the README's Prerequisites section arrives when the Runtime
   Ground stands

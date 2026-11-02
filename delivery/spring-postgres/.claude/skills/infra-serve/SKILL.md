@@ -28,8 +28,8 @@ Check:
 Any missing: this is not an Infrastructure Service Re-entry. Run the
 infra-establish Agent Skill, or repair the record first.
 
-Check the original evaluation. If the wanted service is **an
-Infrastructure Service Exclusion,** the new need must answer the old
+Check the original evaluation. If the wanted service is an
+Infrastructure Service Exclusion, the new need must answer the old
 Infrastructure Service Exclusion's why: name what changed. If it is not answered, the
 Infrastructure Service Exclusion stands, and the request is refused with that reasoning.
 
@@ -81,8 +81,10 @@ Infrastructure Service Exclusion stands, and the request is refused with that re
 1. Never frame the problem again.
 2. Never build the system: the Runtime Ground ends where application
    code and schema content begin.
-3. Destructive acts need explicit confirmation.
-4. Installs on the host are the reviewer's own acts.
+3. Destructive acts need explicit confirmation
+   (`.claude/skills/infra-establish/SKILL.md`, *The rule for results…*).
+4. Installs on the host are the reviewer's own acts
+   (`.claude/skills/infra-establish/SKILL.md`, *The rule for results…*).
 5. Project files are written in the language the project's records are written in.
 6. One logical change per commit, with a commit message drafted for
    each.

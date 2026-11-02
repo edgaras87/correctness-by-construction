@@ -39,4 +39,4 @@ services:
       - ./infrastructure/flyway/migrations:/flyway/sql:ro,Z
 
 volumes:
-  postgres-data:        # bare name — compose prefixes the pinned project name
+  postgres-data:        # bare name: compose prefixes the pinned project name

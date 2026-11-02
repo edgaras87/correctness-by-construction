@@ -1,7 +1,6 @@
 # PostgreSQL setup walkthrough — from nothing to a governed, verified Runtime Ground
 
-What to do, end to end, for one Infrastructure Service, as two
-CBC Runs did it.
+What to do, end to end, for one Infrastructure Service.
 
 **It owns nothing.** The shape of the authority, the roles, the
 grants and the why, has its home in
@@ -32,8 +31,8 @@ and record the deviation as delivered-copies rule 8 says
 ## 0. Preconditions
 
 - podman installed, and a compose provider present. `podman compose
-  config` runs clean. The canonical command is `podman compose`,
-  whatever provider stands behind it.
+  config` runs clean. The canonical command is `podman compose`
+  (`.claude/skills/infra-establish/references/establishment-walk.md`, Stage 1).
 - The decisions already made and logged: PostgreSQL is a required
   Infrastructure Service, and its Infrastructure Service Constraints
   are named: DDL by migrations only, and authority by the Database
@@ -51,7 +50,7 @@ Podman notes:
 - the `:Z` mount flag matters on SELinux hosts;
 - volume and network names get the compose project prefix
   automatically. Never write it by hand;
-- the `name:` pin is a correction a CBC Run made. Without it, the
+- the `name:` pin is required. Without it, the
   volume's identity depends on the directory the file happens to run
   from.
 
@@ -69,10 +68,9 @@ The keys:
    `runtime` literal in `bootstrap.sql`. The app reads it from the
    environment at the CBC Bootstrap.
 
-The rule: secrets and what varies per machine are variables.
-**Decided identities (the database, schema and role names) stay
-literal** in the files that use them. Changing one is a committed
-decision, not configuration.
+Which values are variables and which stay literal is the
+establishment walk's (`.claude/skills/infra-establish/references/establishment-walk.md`, Stage 5). Here
+the decided identities are the database, schema and role names.
 
 ## 3. Write `bootstrap.sql`
 
@@ -82,9 +80,8 @@ volume. It runs as the Database Setup Identity, **connected to
 `POSTGRES_DB`.** Agent Skill Template:
 `.claude/skills/infra-establish/templates/bootstrap.sql`. Its
 comments are there for recall, carried in full. The load-bearing
-lines are the default privileges. Every table and sequence a future
-migration creates arrives already granted to `runtime`. So the split
-needs no discipline per migration, and cannot stop holding.
+lines are the default privileges
+(`.claude/skills/infra-establish/references/postgres-role-split.md`, *The grant boundaries…*).
 
 Who creates the database: **the container,** from `POSTGRES_DB`. It
 is owned by the Database Setup Identity, and `migrator` owns only the
@@ -102,10 +99,13 @@ It queries the catalog against the Database Role Split's claims:
 2. who owns the database and the schema;
 3. the schema's privileges;
 4. the default privileges: the Database Role Split's load-bearing mechanism, which
-   `\dn+` does not show.
+   `\dn+` does not show;
+5. who may connect to the database: the two roles by grant, PUBLIC
+   not at all;
+6. the `public` schema: PUBLIC holds no privilege on it.
 
-The expected results are comments beside each query, so the reader
-needs no other doc open.
+The expected results are comments beside each query
+(`.claude/skills/infra-establish/references/establishment-walk.md`, Stage 5).
 
 ## 5. Wire Flyway
 
@@ -191,8 +191,8 @@ project means, in the manuals and against CBC Framing. Either:
 
 - the System Definition's Trust Assumptions cover people reading
   with it, trusted not to write; or
-- a read-only identity is owed for looking, made at the CBC
-  Bootstrap beside the two.
+- a read-only identity is owed for looking, made at Infrastructure
+  Establishment beside the two.
 
 Left unsaid, the writing identity is handed out as the looking one.
 Then the Invariant Slices cannot tell whether that reader can write,
@@ -222,9 +222,7 @@ podman run --rm --network host docker.io/library/postgres:17 \
 # expected: 1
 ```
 
-These facts land in the project's living Infrastructure Contract:
-one section per Infrastructure Service, grown at each later
-Infrastructure Service Re-entry, the refusals written as contract
-terms. Note there that the Runtime Ground's files were filled from
+These facts land in the project's living Infrastructure Contract,
+in the form (`.claude/skills/infra-establish/SKILL.md`, *Records and outputs*) gives. Note there that the Runtime Ground's files were filled from
 this Agent Skill's Agent Skill Templates: the trail a later reader
 needs to find the Master Copies.

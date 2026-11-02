@@ -19,7 +19,8 @@ So the choice is made knowingly, can be recalled months later, and
 means the same thing to the person and the agent.
 
 **It owns nothing else.** What classes exist is the Invariant Slices'
-outcome. What enters the build is `spring-pom-convention.md`'s. This doc owns
+outcome. What enters the build is
+`.claude/skills/cbc-bootstrap/references/spring-pom-convention.md`'s. This doc owns
 only the *shape they land in*.
 
 ## The Stack Default
@@ -77,11 +78,10 @@ This is the shape a CBC Run gets when its ADRs say nothing else.
   the deciding inputs are the CBC Run's own: fluency, audience, and
   a stated intent. *"This CBC Run practices pattern X"* is a
   legitimate deciding input when it is written down.
-- **Departing from the Stack Default is off-default,** as departing
-  from an Agent Skill Template is. Derive from the chosen pattern's
-  own logic, and record the deviation as delivered-copies rule 8 says
-  (`.claude/rules/delivered-copies.md`, rule 8, *An Agent Skill Template is…*).
-  What you learn comes back into this doc.
+- **Departing from the Stack Default is the CBC Run's own decision,**
+  taken on the inputs above and recorded in its ADR with its why.
+  Derive from the chosen pattern's own logic. What you learn comes
+  back into this doc, offered under TODO's *To the deliverer*.
 - **The first CBC Run to use an alternative makes it used.** Its
   entry below then stops being a meaning only, and gains a line on
   how it went, when a later delivery brings that back into this doc.

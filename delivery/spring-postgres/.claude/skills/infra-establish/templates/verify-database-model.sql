@@ -15,7 +15,7 @@
 --   podman exec -i <project>-postgres \
 --     psql -U postgres -d <project_db> < infrastructure/postgres/verify-database-model.sql
 --
--- Expected results are comments beside each query — this file needs no
+-- Expected results are comments beside each query, so this file needs no
 -- other document open. The Behavioral Check (DDL attempted as runtime and
 -- refused) lives in the Operator Manual and the Runtime Ground's record:
 -- the Infrastructure Establishment Log, or the devlog in a repo with records.
@@ -82,8 +82,16 @@ ORDER BY objtype, privilege_type;
 \echo ''
 \echo '=== 6 · Connect privilege — access by grant, never by default ==='
 -- expected: <project>_migrator t, <project>_runtime t, and PUBLIC (the
--- empty-string role, oid 0) f — bootstrap.sql's REVOKE CONNECT, checked
+-- empty-string role, oid 0) f: bootstrap.sql's REVOKE CONNECT, checked
 SELECT '<project>_migrator' AS who, has_database_privilege('<project>_migrator', '<project_db>', 'CONNECT') AS connect
 UNION ALL SELECT '<project>_runtime',  has_database_privilege('<project>_runtime',  '<project_db>', 'CONNECT')
 UNION ALL SELECT 'PUBLIC',             has_database_privilege(0::oid,               '<project_db>', 'CONNECT')
 ORDER BY who;
+
+\echo ''
+\echo '=== 7 · The public schema: PUBLIC holds nothing ==='
+-- expected: 0: bootstrap.sql's REVOKE ALL ON SCHEMA public FROM PUBLIC, checked
+SELECT count(*) AS public_grants_to_public
+FROM pg_namespace n
+     CROSS JOIN LATERAL aclexplode(n.nspacl) a
+WHERE n.nspname = 'public' AND a.grantee = 0;

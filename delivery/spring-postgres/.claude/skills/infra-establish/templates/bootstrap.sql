@@ -27,15 +27,15 @@
 --   (FLYWAY_MIGRATOR_PASSWORD must equal the migrator password here).
 --
 -- Boundary:
---   Identities, schema, and privilege boundaries only — no tables, no
---   application objects; those arrive solely through the migration tool.
+--   Identities, schema, and privilege boundaries only. No tables, no
+--   application objects: those arrive solely through the migration tool.
 
 -- the two identities of the Database Role Split. Prefixed names are the
--- shared-cluster case of postgres-role-split.md, Naming across a
--- cluster, the Database Role Split named above (roles are cluster-wide).
+-- shared-cluster case, since roles are cluster-wide
+-- (.claude/skills/infra-establish/references/postgres-role-split.md, Naming across a cluster).
 -- One dedicated cluster in one container, the usual case in CBC Runs,
 -- takes the Database Role Split's bare names, migrator and runtime. Then:
---   - verify-database-model.sql's role filter becomes an explicit IN list;
+--   - infrastructure/postgres/verify-database-model.sql's role filter becomes an explicit IN list;
 --   - the other templates' <project>_ role references drop the prefix too.
 CREATE ROLE <project>_migrator LOGIN PASSWORD '<project>_migrator_localdev';
 CREATE ROLE <project>_runtime  LOGIN PASSWORD '<project>_runtime_localdev';
@@ -56,16 +56,15 @@ GRANT USAGE ON SCHEMA <project_schema> TO <project>_runtime;
 -- governed one. (PG15+ already revokes CREATE; this makes the whole stance explicit.)
 REVOKE ALL ON SCHEMA public FROM PUBLIC;
 
--- the load-bearing lines: every table and sequence a future migration creates
--- arrives already granted to runtime. The split needs no per-migration
--- discipline, so it keeps holding
+-- the load-bearing lines
+-- (.claude/skills/infra-establish/references/postgres-role-split.md, The grant boundaries…)
 ALTER DEFAULT PRIVILEGES FOR ROLE <project>_migrator IN SCHEMA <project_schema>
   GRANT SELECT, INSERT, UPDATE, DELETE ON TABLES TO <project>_runtime;
 ALTER DEFAULT PRIVILEGES FOR ROLE <project>_migrator IN SCHEMA <project_schema>
   GRANT USAGE, SELECT ON SEQUENCES TO <project>_runtime;
 
--- search_path: where unqualified names resolve — pinned so migrations and
--- application statements land in the governed schema, never in public. A
--- default for convenience; the authority boundary is the grants above.
+-- search_path: where unqualified names resolve. It is pinned so migrations
+-- and application statements land in the governed schema, never in public.
+-- It is a default for convenience. The authority boundary is the grants above.
 ALTER ROLE <project>_migrator SET search_path = <project_schema>;
 ALTER ROLE <project>_runtime  SET search_path = <project_schema>;

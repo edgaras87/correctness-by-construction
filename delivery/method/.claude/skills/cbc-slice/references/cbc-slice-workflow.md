@@ -1,7 +1,8 @@
 # Invariant Slice workflow — the outline, the why, the examples
 
-*SKILL.md says what to do at each Agent Skill Stage, and each one's
-Gate. This file holds only what SKILL.md does not: the Invariant Slice Record's
+*`.claude/skills/cbc-slice/SKILL.md` says what to do at each Agent
+Skill Stage, and each one's Gate. This file holds only what it does
+not: the Invariant Slice Record's
 outline, why each Agent Skill Stage runs as it does, and worked
 examples. Each section names the Agent Skill Stage it serves.*
 
