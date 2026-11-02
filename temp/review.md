@@ -14,13 +14,51 @@
 Empty until the loop ends: Stage 6 writes them, Stage 8 approves
 them.
 
+## The question plan
+
+The questions come in three parts. Each part's answers are what the
+next part's questions ask about. Rounds 1 and 2, below, stay as
+background: what success and failure look like.
+
+**Part 1, what we put here.** First, since everything after it is
+about these things.
+
+- 1.1 The kinds of thing the repo holds, with their sizes: the
+  concept, the Idea Models, the conventions, what ships to CBC Runs,
+  our own agent files, the records, the history. Which did you mean
+  to have, and which grew on their own?
+- 1.2 For each kind, who reads it: you, the agent, a CBC Run, or
+  nobody?
+- 1.3 Is anything missing that you expected to find here?
+
+**Part 2, how we put things here.** Second: the way a thing gets in
+is what turns a small change into many commits, and it is judged
+only once what it acts on is known.
+
+- 2.1 One real change, walked step by step: today's, from a talk to a
+  committed rule. Which steps did you expect, and which surprised
+  you?
+- 2.2 Which steps happen on every change, and which only sometimes:
+  the Plan Step and its Gate, the commit plan, Fact References,
+  Glossary Names, the Foundation Check, the devlog?
+- 2.3 Who drives each step: you, the agent, or a rule?
+
+**Part 3, cost and worth.** Last, when cost has things and steps to
+attach to.
+
+- 3.1 Which of these costs more than it gives you?
+- 3.2 Which has helped you, and would you keep even at its cost?
+- 3.3 When two of them compete for a session, which wins?
+
+**Then the goals,** written from all three parts, tested on real
+moments, and approved (goal-finding, Stages 6 to 8).
+
 ## The queue
 
-1. What does "cheap to keep" mean for you, in amounts?
-2. Which writing here has paid off, and would you keep even at its
-   cost?
-3. When the five parts of success pull against each other, which
-   come first?
+1. Which kinds of thing did you mean the repo to have, and which grew
+   on their own? (1.1)
+2. For each kind, who reads it? (1.2)
+3. Is anything missing that you expected to find here? (1.3)
 
 ## Rounds
 
@@ -117,6 +155,55 @@ them.
      cost?
   3. When the five parts of success pull against each other, which
      come first?
+- **Question 1, and its options:** What does "cheap to keep" mean for
+  you, in amounts? Pick the measures that matter, a number on each.
+  - a. Upkeep share: at most __ of the commits or sessions go to the
+    repo's own rules, records and rewording. Today: 1,410 commits
+    since 2026-10-01, 7 of them touched `concept/`.
+  - b. Usage: the repo's upkeep stays under __ of the weekly usage
+    limit. Today: subagents alone took 11% of a week's usage over 29
+    days (2026-10-22).
+  - c. Review time: at most __ minutes a day, or per session. Today:
+    not measured.
+  - d. Start-up reading: what every session loads stays under __
+    lines. Today: 363 lines of rules, plus a 26-line memory index.
+  - e. Size: the way of working stays under __ times the concept.
+    Today: about 10 times, 5,100 lines against 507.
+  - f. My own answer, or a mix.
+- **The reviewer's answer:** "i cant tell in numbers, because i never
+  measure and not aware. also these questions too broad. can they be
+  more related and what we have?"
+- **Correction 1:** the question asks about things the repo has, not
+  amounts. The question after it: which of these costs more than it
+  gives you? Its options:
+  - a. The refinement: 414 commits over 16 days, 2026-10-18 to
+    2026-11-02, checking the repo against its own rules. CBC Run 6's
+    lessons waited meanwhile.
+  - b. `TODO.md`: 64 items in 1,262 lines, each with Context, Ideas,
+    Trigger and See; and `TODO-CONVERSATION-MEMORY.md`, 1,041 lines
+    of the talk behind them.
+  - c. The devlog: October alone is 3,224 lines.
+  - d. The decision records: 81 ADRs, and `.claude/decisions.md`,
+    1,259 lines on the agent's setup.
+  - e. The naming rules: 70 Glossary Names, each written whole and
+    capitalized, such as "CBC Run Reading", and checked on every line.
+  - f. Closing a Plan Step: the refinement's close took 8 commits:
+    lessons, rules, delivery, the Gate and the close entry.
+  - g. This review's setup: 7 commits before the first answer.
+  - h. My own answer, or a mix.
+- **The queue after the correction:** the reviewer found the questions
+  too broad, so the other two are tied to what the repo has as well.
+  1. Which of these costs more than it gives you?
+  2. Which of these has helped you, and would you keep even at its
+     cost?
+  3. When two of them compete for a session, which wins?
+- **Stopped, unanswered:** the reviewer: "okay, this is not working.
+  these are good questions, but i think we have started blindly and
+  asking what is upfornt. i want first to handle that part which is
+  responsible in how we put things here. after it start asking about
+  cost. maybe before how we put things here, we should ask what we put
+  here." The questions now follow *The question plan*, above, and
+  this round's three come back as Part 3.
 
 ## Notes
 
