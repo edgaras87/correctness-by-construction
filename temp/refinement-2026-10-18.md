@@ -327,7 +327,7 @@ by a rewrap in `b6ecf85`, was repaired in `bdeca06`.
 
 Not findings: true lines, met while working, whose question is
 where a fact lives. Round 2 reads them first. The talk behind them
-is `TODO-CONVERSATION-MEMORY.md` §7.
+is `eec14ca:TODO-CONVERSATION-MEMORY.md` §7.
 
 1. **The playbook's version in four places:** its own line and the
    seed's three. Tag the copies, or have the seed read the version
@@ -614,7 +614,7 @@ a part of a document, its root included, carries a fact reference",
 reach a derived file's lines about its own manual, and our record
 headers? Rests: FINDING-191, 196. On 2026-10-21 the reviewer held
 that the `foundation` grep reaches such a line
-(`TODO-CONVERSATION-MEMORY.md` §7); §4 step 2 was written later.
+(`eec14ca:TODO-CONVERSATION-MEMORY.md` §7); §4 step 2 was written later.
 - (a) Yes: each such line gains a section reference now.
 - (b) No: the `foundation` line covers lines about its own root,
   and §4 step 2 says so.

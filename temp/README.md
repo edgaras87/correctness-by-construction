@@ -12,10 +12,10 @@ file kept for work still to come.
   Plan Step names it.
 
 Both are tracked, so the shaping shows as diffs. Each is deleted
-once it has served, and git history keeps every version.
+once the work that needed it is done, and git history keeps every version.
 
 Not records. What a draft said and why lives in the records, which
-the records map lists
+project-recording's list of the records names
 (`docs/conventions/project-recording/` §1, *The records at a glance*):
 
 - the devlog logs a draft made, passed, or deleted;

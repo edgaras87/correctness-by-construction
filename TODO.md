@@ -45,7 +45,8 @@
         ground-must-be-up rule unasked: the shipped Entry File teaches
         it, and no Agent Skill prompts it (ADR-0013).
       Trigger: the refinement's close, or the reviewer's word.
-      See: devlog 2026-10-29, morning.
+      See: devlog 2026-10-29, morning; `temp/run-6-handoff/`, the CBC
+      Run Hand-off the reading starts from.
 
 - [ ] Unlock the folders locked for CBC Run 6 (2026-10-29, the
       reviewer).
@@ -779,7 +780,7 @@
         an Output Shape is not*).
       - records: what a record is, a form and its entries; what a
         set of records answers; how each Convention Seat adapts it, as the
-        refinement's DECISION-12 map shows. Weighed against the Idea-to-Output Model, which holds part of
+        project-recording's list of the records shows (the refinement's DECISION-12). Weighed against the Idea-to-Output Model, which holds part of
         it (`docs/models/idea-to-output.md` §2, *The kinds*).
       - the two checks on text kept true: the checks at each change,
         a refinement after, and a finding's cause the way back. A
