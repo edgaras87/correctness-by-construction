@@ -132,12 +132,13 @@ work.
 
 ---
 
-## Step: Review how this repo works, and what it costs  (`.claude/approaches-on-trial/intent-check.md`)    [~]
+## Step: Weigh the idea-to-approach model  (`.claude/approaches-on-trial/intent-check.md`)    [~]
 
-Goal: the reviewer's intent for this repo is written and locked; the
-repo is checked against it; and each place it does not hold has the
-reviewer's decision.
-Now: intent-check, Stages 1 to 3: the intent told in stops.
+Goal: the reviewer's intent for an idea-to-approach model is locked;
+whether such a model is worth defining is decided; and ours is
+compared with its alternatives, each finding with the reviewer's
+decision.
+Now: intent-check, Stages 1 to 3: the model's intent told in stops.
 Gate:
 
 **At the opening.**
@@ -155,15 +156,19 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] The reviewer's intent is written, played back and locked, part
-      by part, in `temp/review.md`.
-- [ ] `README.md` states the locked intent: why the repo exists, and
-      its success criteria.
-- [ ] Every part of the repo is checked against the intent: what of
-      it the part serves, what it costs, and the evidence of what it
-      returned, or "none yet".
-- [ ] Each place the intent does not hold has the reviewer's
-      decision, with its reason.
+- [ ] The reviewer's intent for the model is written, played back,
+      and locked once the whole is told, in `temp/review.md`.
+- [ ] The goals come from the locked intent, each approved by the
+      reviewer.
+- [ ] Whether an idea-to-approach model is worth defining at all is
+      decided, with its reason.
+- [ ] Today's model and its alternatives are compared: against the
+      goals, then on the criteria, on lived evidence
+      (`.claude/approaches-on-trial/intent-check.md` §5,
+      *Compare the how*).
+- [ ] Each finding has the reviewer's decision, with its reason.
+- [ ] Where the locked intent lives is decided: in this repo, or in a
+      repo of its own.
 - [ ] Each decision that changes the repo has its TODO item or its
       commit plan.
 
@@ -198,20 +203,23 @@ Notes:
   repo works the right way, and wants how its parts are kept and
   used, what each costs, and whether it is worth it, looked at
   before more work.
-- Stages, three phases: the intent, by intent-check; the repo checked
-  against it; each place it does not hold decided, one at a time. The
-  second and third have no Work Approach yet. Each gets one when it
-  opens: intent-check grows, or a new Approach on Trial is drafted
+- Stages: intent-check's, from the intent told to the how compared.
+  Finding the alternatives has no Work Approach yet; it gets one when
+  it opens: intent-check grows, or a new Approach on Trial is drafted
   (`.claude/approaches-on-trial/approach-drafting.md`).
 - goal-finding, a loop of questions toward goals, was dropped the day
   it opened, and the own items were rewritten from goals to the
   intent (devlog 2026-11-02, goal-finding dropped).
+- Re-aimed the same day, from this repo to the idea-to-approach
+  model under it: the reviewer saw that the repo stands on the model,
+  and the delivery on the repo, so the model is what must be right
+  first. The title, goal and own items changed with it.
 - The reviewer locks the intent and decides each finding. Each
   commit is staged and shown, and committed on the reviewer's word.
 - The two Plan Steps below stay stopped. TODO items near this one,
   such as this repo's retrospective and how work is run by agents,
   stay in TODO; whether this Plan Step takes them is decided when the
-  parts are listed.
+  alternatives are compared.
 
 ---
 

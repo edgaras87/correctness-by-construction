@@ -1,20 +1,26 @@
-# Review of how this repo works
+# Review of the idea-to-approach model
 
-<!-- A draft for the review of how this repo works and what it costs:
-     whether the reviewer's ideas and intent are put here the right
-     way, what each part costs, and what could be better. Its first
-     phase writes the reviewer's intent, told in stops, and locks it
-     once the whole is told, by the intent-check Approach on Trial
+<!-- A draft for the review of the idea-to-approach model under this
+     repo: whether such a model is worth defining, and whether ours is
+     the best among its alternatives. It began as a review of how this
+     repo works, and was re-aimed at the model the repo stands on. Its
+     first phase writes the reviewer's intent, told in stops, and locks
+     it once the whole is told, by the intent-check Approach on Trial
      (.claude/approaches-on-trial/intent-check.md).
-     Once locked, the intent changes only when the reviewer reopens it. The
-     locked intent goes to its home in the README, and this file goes
-     once the review is done; git keeps every version. -->
+     Once locked, the intent changes only when the reviewer reopens it.
+     Where the locked intent lives is decided at the review's end; this
+     file goes once the review is done, and git keeps every version. -->
 
 ## Intent
 
 ### The intent, a draft
 
 Told in stops; any line may change until the intent is locked.
+
+**Re-aimed:** the subject is now the idea-to-approach model under this
+repo; the repo stands on it, and the delivery on the repo. Lines 3 to
+5 are the model's. Lines 1 and 2, and H1 to H6, are about the repo
+built on it, kept for later.
 
 **Why: the pain behind it**
 
@@ -100,28 +106,6 @@ Kept to help reveal the intent, and compared at intent-check's Stage
   - Line 3 and H6: reused on many projects, yet held in a repo about
     one concept. The core puts the ideas and their approaches first,
     and where they live after.
-- **Differences from the repo,** named, not argued:
-  - The core: the repo writes this chain down. Its Idea-to-Output
-    Model goes from an Idea Model, to a Canonical Description, to a
-    Work Approach, to an output (`docs/models/idea-to-output.md` §2,
-    *The kinds*).
-  - "Work Approach": in the repo it is how one piece of work is done;
-    an Agent Skill or an Agent Rule is one (`docs/glossary.md`). The
-    whole kit, H1, is called the delivery.
-  - Line 3 and H1: the common Work Approaches ship today in the
-    Container Group: the commit-messages, commit-plan, retrospective,
-    apply-retrospective and visual-comparison Agent Skills, and the
-    delivered-copies, one-home, shapes-lifecycle and writing Agent
-    Rules.
-  - Line 3: the README puts "a general method or working arrangement"
-    out of scope, held here until three repos have lived it
-    (ADR-0038). Line 3 puts it in.
-  - H3: tracking is spread over `CHANGELOG.md`, the ADRs, the devlog
-    and the CBC Run Readings; no one place.
-  - Line 5 and H4: a Work Approach names its manual, the Canonical
-    Description that holds its why, in its Foundation Line.
-  - The README's *why*, the reviewer's understanding improving in a
-    recorded way, is not in the intent yet.
 
 ## Possible goals
 
@@ -150,3 +134,28 @@ holds round 3, stopped.
 
 Things noticed along the way, for the later phases: marks, doubts,
 ideas. No fixes.
+
+**Today's model and repo, for Stage 5.** Noticed while the intent was
+told, and kept out of it:
+
+- The core: the repo writes this chain down. Its Idea-to-Output
+  Model goes from an Idea Model, to a Canonical Description, to a
+  Work Approach, to an output (`docs/models/idea-to-output.md` §2,
+  *The kinds*).
+- "Work Approach": in the repo it is how one piece of work is done;
+  an Agent Skill or an Agent Rule is one (`docs/glossary.md`). The
+  whole kit, H1, is called the delivery.
+- Line 3 and H1: the common Work Approaches ship today in the
+  Container Group: the commit-messages, commit-plan, retrospective,
+  apply-retrospective and visual-comparison Agent Skills, and the
+  delivered-copies, one-home, shapes-lifecycle and writing Agent
+  Rules.
+- Line 3: the README puts "a general method or working arrangement"
+  out of scope, held here until three repos have lived it
+  (ADR-0038). Line 3 puts it in.
+- H3: tracking is spread over `CHANGELOG.md`, the ADRs, the devlog
+  and the CBC Run Readings; no one place.
+- Line 5 and H4: a Work Approach names its manual, the Canonical
+  Description that holds its why, in its Foundation Line.
+- The README's *why*, the reviewer's understanding improving in a
+  recorded way, is not in the intent yet.
