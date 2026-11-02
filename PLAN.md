@@ -302,8 +302,7 @@ Notes:
 
 Goal: Living Text written before a rule now meets that rule, and project-recording's list of the records maps them in both Convention Seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
-Now: the Plan Step's close: the refinement's Work Approach evaluated
-(`.claude/approaches-on-trial/approach-evaluation.md`), the two trials' verdicts, then the close items.
+Now: the Plan Step's close: the findings' lessons written back, then the close items.
 The refinement closed at `55e2bd0`; its file is read from `55e2bd0^`.
 Gate:
 
@@ -360,13 +359,17 @@ Gate:
       (`.claude/approaches-on-trial/refinement.md` §2.8, *A Refinement Round's close*;
       2026-11-01). Refinement Rounds 1 and 2 have the counts §2.8 asked
       when they closed: the count by cause came in `fc4efe0`, 2026-10-31.
-- [ ] The refinement's Work Approach is evaluated: each piece has the
+- [x] The refinement's Work Approach is evaluated: each piece has the
       reviewer's ending, and an ADR records them with the ways
       rejected at the opening
-      (`.claude/approaches-on-trial/approach-evaluation.md`).
-- [ ] The trials of the approach-drafting and approach-evaluation Approaches on Trial
+      (`.claude/approaches-on-trial/approach-evaluation.md`): every
+      piece on trial, ADR-0080 (2026-11-02, `1ca25e5`; rewritten in `7edaacc`).
+- [x] The trials of the approach-drafting and approach-evaluation Approaches on Trial
       on our Convention Seat have their verdicts, one line each: kept, changed
-      or dropped.
+      or dropped:
+      - approach-drafting: kept on trial; no CBC Run's draft yet;
+      - approach-evaluation: kept on trial; no CBC Run's evaluated, no piece placed
+      (2026-11-02, each a note under its *Uses*).
 
 **At the close.**
 
