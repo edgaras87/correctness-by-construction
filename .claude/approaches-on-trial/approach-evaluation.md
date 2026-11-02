@@ -126,6 +126,14 @@ it.
 
 ## Uses
 
+*The Concept Deliverer, `refinement.md`'s first evaluation, 2026-11-02.*
+Its second use. Stages 1 to 4 went into a draft in `temp/`, which the
+reviewer took whole; an ADR recorded the endings (ADR-0080), and
+Stage 6 rewrote the page. Every piece stayed on trial again, one use
+behind each. Taught: a draft of the pieces lets the reviewer decide
+them in one pass. Kept on trial: *Settled when* asks a CBC Run's
+Approach on Trial evaluated, and a piece placed.
+
 *The Concept Deliverer, `model-placing.md`'s first evaluation, 2026-10-28.*
 Its first use. One use was behind the Approach on Trial, so every
 piece stayed on trial. Stage 6 was the work: rewritten in general,
