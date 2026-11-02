@@ -16,9 +16,29 @@ them.
 
 ## The queue
 
-Empty until round 1.
+1. In six months, if this repo went well, what is true?
+2. In six months, if this repo failed, what went wrong?
+3. Which matters more to you: the CBC concept, or the way of
+   working?
 
 ## Rounds
+
+### Round 1
+
+- **The queue as shown:** 1, 2 and 3, as in *The queue* above.
+- **Question 1, and its options:** In six months, if this repo went
+  well, what is true?
+  - a. The concept is sharper: CBC Runs found gaps, and the concept
+    chapters changed because of them.
+  - b. CBC Runs build real systems that keep their guarantees, with
+    little of your attention.
+  - c. The way of working moved to a second concept repo and worked
+    there with little change.
+  - d. You understand system design better, and the repo shows how
+    that understanding grew.
+  - e. The repo is cheap to keep: most sessions go to new learning,
+    not upkeep.
+  - f. My own answer, or a mix.
 
 ## Notes
 
