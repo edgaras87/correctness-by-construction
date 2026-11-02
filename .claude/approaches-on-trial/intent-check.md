@@ -39,6 +39,9 @@ The reviewer corrects the playback until they say it holds. The part
 is then written into the review's notes file in `temp/`, locked. A
 later part may reopen it; the reviewer decides.
 
+The part is written as played back and corrected; the reviewer's own
+words are not stored.
+
 ### 4. Derive the goals
 
 Once every part is locked.
