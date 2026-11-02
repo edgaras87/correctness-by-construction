@@ -35,73 +35,87 @@ Told in stops; any line may change until the intent is locked.
 
 **The intent**
 
-*The CBC kit*
+**The core: turn ideas into Work Approaches an agent can use, and
+keep them true as work teaches us.** Everything below serves it.
 
-1. **A ready kit for starting a CBC project.** This repo keeps a
+*The ideas*
+
+1. **Two kinds of idea.** A concept, such as CBC. A way of working,
+   such as the commit set, or committing itself.
+
+*How the approaches reach a project*
+
+2. **A ready kit for starting a CBC project.** This repo keeps a
    delivery prepared ahead of time. When a CBC project is needed, the
    reviewer takes the delivery and starts on the CBC problem itself.
    They do not first write the concept, the Agent Rules or the Agent
    Skills: those are here, ready.
-2. **One place for what CBC Runs teach.** Each CBC Run finds things to
-   improve, in the concept and in the Work Approaches built on it.
-   This repo is the one place those are tracked: what changed, why,
-   where, and from which CBC Run.
-
-*Common Work Approaches*
-
-3. **Written once, reused.** Work that comes back on every project,
-   such as committing, is written once and reused, never derived
-   again each time. The delivery carries it beside the CBC kit.
+3. **Common Work Approaches, written once, reused.** Work that comes
+   back on every project, such as committing, is written once and
+   reused, never derived again each time. The delivery carries it
+   beside the CBC kit.
 4. **This repo uses them too.** One place they are reused is this
    repo, in keeping the delivery itself.
 
-*A model behind them*
+*How use feeds back*
 
-5. **A model for writing and keeping Work Approaches,** seen from the
+5. **One place for what the work teaches.** Each CBC Run finds things
+   to improve, in the concept and in the Work Approaches built on it.
+   This repo is the one place those are tracked: what changed, why,
+   where, and from which CBC Run.
+
+*How the approaches are written and kept*
+
+6. **A model for writing and keeping Work Approaches,** seen from the
    agent's side: how much context each carries, and why each is as it
    is, so a later change knows what it may remove.
-6. **Open: is the model worth it?** The other ways: write each Work
+7. **Open: is the model worth it?** The other ways: write each Work
    Approach from scratch each time; or keep steps that belong to one
    project, such as preparing its database. Work like committing, the
    same everywhere, argues for storing it once.
 
 *Where things live*
 
-7. **Some of this may move later.** The intent covers several things
+8. **Some of this may move later.** The intent covers several things
    that live here today. The common Work Approaches may move to a repo
    of their own that keeps them.
 
 **Noticed:**
 
 - **Gaps:**
-  - Line 1, "start working": who works a CBC project, the reviewer
+  - Line 2, "start working": who works a CBC project, the reviewer
     with an agent, or an agent on full auto, as CBC Run 6 ran?
-  - Line 1, "not worry about other stuff": is the stack, Spring and
+  - Line 2, "not worry about other stuff": is the stack, Spring and
     PostgreSQL today, part of the kit, or chosen per project?
-  - Line 2, tracking: who reads it, the reviewer only, or the CBC Runs
-    pinned to a version of the kit too?
-  - Line 2: does an improvement go to the next CBC Run only, or to
-    one still running too?
   - Line 3, "every project": any project, or any project worked with
     an agent the way this one is?
-  - Line 5, "the model": what it holds. The why of each Work
+  - Line 5, tracking: who reads it, the reviewer only, or the CBC Runs
+    pinned to a version of the kit too?
+  - Line 5: does an improvement go to the next CBC Run only, or to
+    one still running too?
+  - Line 5: what the work teaches about a way of working, not the
+    concept, is it tracked here too?
+  - Line 6, "the model": what it holds. The why of each Work
     Approach; how much context each carries; how a change is checked;
     or all three?
-  - Line 6: who answers "is it worth it": this review?
+  - Line 7: who answers "is it worth it": this review?
 - **Tensions:**
-  - Line 1 and line 2: a ready kit wants to be stable, and every CBC
+  - Line 2 and line 5: a ready kit wants to be stable, and every CBC
     Run changes it. How often does it change: after each CBC Run, or
     in batches?
-  - Line 5 and the pain: the model is meant to keep the cost down,
+  - Line 6 and the pain: the model is meant to keep the cost down,
     and is itself kept at a cost.
-  - Line 3 and line 7: reused on many projects, yet held in a repo
-    about one concept.
+  - Line 3 and line 8: reused on many projects, yet held in a repo
+    about one concept. The core puts the ideas and their approaches
+    first, and where they live after.
 - **Differences from the repo,** named, not argued:
+  - The core: the repo writes this chain down. Its Idea-to-Output
+    Model goes from an Idea Model, to a Canonical Description, to a
+    Work Approach, to an output (`docs/models/idea-to-output.md` §2,
+    *The kinds*).
   - "Work Approach": in the repo it is how one piece of work is done;
     an Agent Skill or an Agent Rule is one (`docs/glossary.md`). The
     whole kit is called the delivery.
-  - Line 2: tracking is spread over `CHANGELOG.md`, the ADRs, the
-    devlog and the CBC Run Readings; no one place.
   - Line 3: the common Work Approaches ship today in the Container
     Group: the commit-messages, commit-plan, retrospective,
     apply-retrospective and visual-comparison Agent Skills, and the
@@ -110,11 +124,10 @@ Told in stops; any line may change until the intent is locked.
   - Line 3: the README puts "a general method or working arrangement"
     out of scope, held here until three repos have lived it
     (ADR-0038). Line 3 puts it in.
-  - Line 5: the repo has a chain for this. An Idea Model, then a
-    Canonical Description, such as a convention's manual, which holds
-    the why, then the Work Approach derived from it
-    (`docs/models/idea-to-output.md` §2, *The kinds*). A Work Approach
-    names its manual in its Foundation Line.
+  - Line 5: tracking is spread over `CHANGELOG.md`, the ADRs, the
+    devlog and the CBC Run Readings; no one place.
+  - Line 6: a Work Approach names its manual, the Canonical
+    Description that holds its why, in its Foundation Line.
   - The README's *why*, the reviewer's understanding improving in a
     recorded way, is not in the intent yet.
 
