@@ -18,45 +18,47 @@
 Told in stops; any line may change until the intent is locked.
 
 **Re-aimed:** the subject is now the idea-to-approach model under this
-repo; the repo stands on it, and the delivery on the repo. Lines 3 to
-5 are the model's. Lines 1 and 2, and H1 to H6, are about the repo
-built on it, kept for later.
-
-**Why: the pain behind it**
-
-- **Work beside the concept.** Some work is not about the concept,
-  and comes back on every project. Committing to git, with commit
-  messages that stay stable. A way of working: think, propose, draft
-  the commits, write a provisional ADR, then work, each step free to
-  steer the plan, so what is done follows what the work met, not
-  theory alone.
-- **It grows.** There are many such pieces of work, and more will
-  come. They change over time, and merge into each other. The system
-  takes on more complex work, predictably, and the cost of keeping it
-  grows with it.
-- **Agent Skills and Agent Rules alone do not hold up.** Each needs
-  context: how much of the story does it retell? And when one is to
-  change, if nothing says why it is so, nobody can tell what may be
-  removed or changed.
+repo; the repo stands on it, and the delivery on the repo. What is
+about the repo is kept apart, for later.
 
 **The intent**
 
 **The core: turn ideas into Work Approaches an agent can use, and
 keep them true as work teaches us.** Everything below serves it.
 
+*The model*
+
 1. **Two kinds of idea.** A concept, such as CBC. A way of working,
    such as the commit set, or committing itself.
-2. **Ready when a project starts.** When a CBC project is needed, its
-   Work Approaches are ready. The reviewer starts on the CBC problem
-   itself, and writes no concept, Agent Rules or Agent Skills first.
-3. **Never derived again.** Work that comes back on every project,
-   such as committing, is not worked out again each time.
-4. **What the work teaches comes back.** Each CBC Run finds things to
-   improve, in the concept and in the Work Approaches built on it.
-   What changed is tracked: why, where, and from which CBC Run.
-5. **A change knows what it may remove.** Why each Work Approach is
-   as it is, and how much context it carries, are written, so a later
-   change can tell what may go.
+2. **An idea is written once, free of any project.** It is the idea
+   itself, bound to no repo.
+3. **Adapted, never discovered again.** The same idea is adapted to
+   each project's needs, in more than one place. A new repo takes an
+   idea another project found without finding it again.
+4. **One idea, several Work Approaches.** In one project, an idea can
+   meet several cases, each with its own Work Approach. The exchange
+   between the kit and a CBC Run is one idea, with reading,
+   processing and writing back.
+5. **Ideas connect.** A new idea extends the others and does not
+   contradict them.
+6. **What a project applied is known:** which ideas it took, which it
+   left, and which it should take.
+7. **What the work teaches comes back.** Each project finds things to
+   improve, in the ideas and in the Work Approaches built on them.
+   What changed is tracked: why, where, and from which project.
+8. **Traceable both ways.** From an idea one can follow to its Work
+   Approaches, and back. Why each is as it is, and how much context it
+   carries, are written, so a change knows what may go.
+9. **Growth stays bearable.** More ideas, more Work Approaches, and
+   more links between ideas must not make one change touch
+   everything.
+
+*The repo built on it, kept for later*
+
+- R1. **Ready when a CBC project starts.** When a CBC project is
+  needed, its Work Approaches are ready. The reviewer starts on the
+  CBC problem itself, and writes no concept, Agent Rules or Agent
+  Skills first.
 
 **How, as pictured today**
 
@@ -76,33 +78,50 @@ Kept to help reveal the intent, and compared at intent-check's Stage
   same everywhere, argues for storing it once.
 - H6. **Some of this may move later.** The common Work Approaches may
   move to a repo of their own that keeps them.
+- H7. **Three layers per idea:** the idea's description, free of any
+  project; its description for one project; and the lean Work
+  Approach the agent follows, from that.
+- H8. **An idea map:** ideas, or their sections, as separate texts,
+  linked into a network.
+- H9. **One home per fact,** reused elsewhere by reference.
+- H10. **Upkeep split across several agents.** A separate question.
+
+**Open questions,** for the comparison:
+
+- Would this model work, and what would it cost to keep?
+- What alternatives exist? Does anyone address this, and how?
+- Is today's chain, Idea Model to convention to Work Approach, this
+  model, or a shallower one?
+- Is the cost felt in the refinement from how the model is defined,
+  or from something else too?
 
 **Noticed:**
 
 - **Gaps:**
-  - Line 2, "starts on the CBC problem": who works a CBC project, the
-    reviewer with an agent, or an agent on full auto, as CBC Run 6
-    ran?
-  - Line 2, "writes nothing first": is the stack, Spring and
-    PostgreSQL today, part of what is ready, or chosen per project?
-  - Line 3, "every project": any project, or any project worked with
+  - Line 2 and H7: is the project's description of an idea a text of
+    its own, or part of the Work Approach?
+  - Line 5, "does not contradict": checked how, and by whom?
+  - Line 6: known where, in the project or with the idea?
+  - Line 3, "each project": any project, or any project worked with
     an agent the way this one is?
-  - Line 4, tracking: who reads it, the reviewer only, or the CBC Runs
-    pinned to a version of the kit too?
-  - Line 4: does an improvement go to the next CBC Run only, or to
-    one still running too?
-  - Line 4: what the work teaches about a way of working, not the
-    concept, is it tracked too?
+  - Line 7, tracking: who reads it, the reviewer only, or the
+    projects pinned to a version too? Does an improvement go to the
+    next project only, or to one still running too?
+  - R1, "starts on the CBC problem": who works a CBC project, the
+    reviewer with an agent, or an agent on full auto? Is the stack
+    part of what is ready, or chosen per project?
   - H4, "the model": what it holds. The why of each Work Approach;
     how much context each carries; how a change is checked; or all
     three?
-  - H5: who answers "is it worth it": this review?
 - **Tensions:**
-  - Line 2 and line 4: what is ready wants to be stable, and every CBC
-    Run changes it. How often does it change: after each CBC Run, or
-    in batches?
-  - H4 and the pain: the model is meant to keep the cost down, and is
-    itself kept at a cost.
+  - Lines 2 and 3 against line 9: an idea written once and reused by
+    reference is what makes the mesh. One home pulls against a change
+    that stays local.
+  - H7 and the pain: three texts per idea, and more per case, is more
+    to keep.
+  - R1 and line 7: what is ready wants to be stable, and every project
+    changes it. How often does it change: after each project, or in
+    batches?
   - Line 3 and H6: reused on many projects, yet held in a repo about
     one concept. The core puts the ideas and their approaches first,
     and where they live after.
