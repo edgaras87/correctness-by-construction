@@ -70,9 +70,9 @@ does not set a standard the work was held to.
 **The Plan Step's own items,** written first, from the goal alone. Ask of
 the goal: "how would I check that's true?" Each answer is one item:
 a fact, checkable by looking, what and not how. Together they equal
-the goal. For the exchange-birth Agent Skill's goal "a project born from this repo
-alone", one item is "CBC Run 5's birth entry names one Delivery Pin, ours, and
-nothing from another repo". What a stage uses sets the order of
+the goal. For the goal of the Plan Step Birth CBC Run 6, "CBC Run 6 is born from
+this repo at one Delivery Pin on main", one item is "CBC Run 6's birth entry names
+one Delivery Pin, ours, and nothing from another repo". What a stage uses sets the order of
 work, and its stages are not copied into the Plan Step Gate. An item is ticked
 when it comes true, whenever that is.
 
@@ -102,7 +102,7 @@ Plan Step that uses none has only its own items.
       §2.4, *How the Entry File is written*).
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md`, *Stages*, §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
 
 **When every item is ticked and committed,** main takes the Plan Step's
 branch, if it has one, by fast-forward on the reviewer's word. Then
@@ -156,7 +156,7 @@ Gate:
       or add for CBC Run 6, in its CBC Run Hand-off. CBC Run 5 was read in full
       (`temp/reading-run-5-2026-10-22.md`), so the auto-run Approach on
       Trial's Stage 1 is a light read (2026-10-29, `657d372`).
-- [x] CBC Run 6's CBC Run Briefing is the reviewer's: checkout, in
+- [x] CBC Run 6's CBC Run Briefing is the reviewer's: `checkout`, in
       `temp/run-6-briefing.md`, its Responsibility Areas meeting at a
       LAYER-5-INTERACTION question. Larger than CBC Run 5's, on the
       reviewer's word: three Responsibility Areas, 6 to 12 Invariant Slices (2026-10-29,
@@ -198,7 +198,7 @@ Gate:
       §2.4, *How the Entry File is written*).
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md`, *Stages*, §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
 
 Notes:
 - Opened 2026-10-29, from the devlog's entry 2026-10-29, later: the
@@ -210,10 +210,9 @@ Notes:
 
 ---
 
-## Step: Take CBC Run 5's lessons for CBC Run 6  (`.claude/rules/working-a-reading.md`, `commit-plan`, the Foundation Check)    [!] stopped: Birth CBC Run 6, on full auto (devlog 2026-10-29, later)
+## Step: Take CBC Run 5's lessons for CBC Run 6  (`.claude/rules/working-a-reading.md`, the commit-plan Agent Skill, the Foundation Check)    [!] stopped: Birth CBC Run 6, on full auto (devlog 2026-10-29, later)
 
-Goal: CBC Run 6 can be born from files that carry what CBC Run 5 learned
-for it: CBC Run 5's CBC Run Reading has DECISION-1, DECISION-2 and DECISION-5
+Goal: CBC Run 5's CBC Run Reading has DECISION-1, DECISION-2 and DECISION-5
 settled, and WORK-1 and WORK-3 to WORK-10 ended.
 Now: decide and work (`.claude/rules/working-a-reading.md`, steps 2
 to 8).
@@ -235,7 +234,7 @@ Gate:
 - [ ] CBC Run 5's CBC Run Reading marks DECISION-1, DECISION-2 and DECISION-5
       settled in place, each with how; one that needed an ADR has
       it, Accepted.
-- [x] the Exchange Convention says how an edit the CBC Run never used is judged
+- [x] The Exchange Convention says how an edit the CBC Run never used is judged
       (`docs/conventions/exchange/` §5.2, *A finished copy*),
       as DECISION-1 settled it. The opening named §6.5. §5.2 is where
       the Exchange Convention already speaks of such an edit, and the endings do
@@ -247,7 +246,8 @@ Gate:
       foundation, its file read whole before the commit
       (`.claude/rules/working-a-reading.md`, step 4). A file both
       Convention Seats hold changed in both.
-- [ ] The playbook has no line meant for CBC Run 5 only.
+- [x] The playbook has no line meant for CBC Run 5 only: taken by Birth CBC Run 6,
+      on full auto (2026-10-29, `7f6e3a8`).
 - [ ] The lessons CBC Run 5 left for the next CBC Run Hand-off sit where
       DECISION-2 placed them.
 - [x] The CBC Run Reading's two slips, named in devlog 2026-10-29, are
@@ -280,7 +280,7 @@ third own item, for this Plan Step's items only.
       §2.4, *How the Entry File is written*).
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md`, *Stages*, §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
 
 Notes:
 - Opened 2026-10-29, from the devlog's entry of that day: the
@@ -294,11 +294,11 @@ Notes:
   (the exchange-deliver Agent Skill).
 - The reviewer decides each decision, and signs each commit at its
   boundary. Main takes the branch by fast-forward on the reviewer's
-  word; then Birth CBC Run 6, on full auto, opens.
+  word.
 
 ---
 
-## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, `approach-drafting`, `approach-evaluation`, `commit-plan`, the Foundation Check, `visual-comparison`)    [~]
+## Step: Refine this repo against its own rules  (`.claude/approaches-on-trial/refinement.md`, the approach-drafting Approach on Trial, the approach-evaluation Approach on Trial, the commit-plan Agent Skill, the Foundation Check, the visual-comparison Agent Skill)    [~]
 
 Goal: Living Text written before a rule now meets that rule, and project-recording's list of the records maps them in both Convention Seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
@@ -405,10 +405,10 @@ Notes:
   visual-comparison Agent Skill.
 - When the work shows the Work Approach wrong, it changes first, in a
   commit of its own
-  (`.claude/approaches-on-trial/approach-drafting.md`, Stage 2).
+  (`.claude/approaches-on-trial/approach-drafting.md` §2, *Work*).
 - The first use of first-time work on our Convention Seat, which ADR-0058
-  made the approach-drafting Approach on Trial, and the first of the
-  approach-evaluation Approach on Trial.
+  made the approach-drafting Approach on Trial. The approach-evaluation
+  Approach on Trial was first used on 2026-10-28, for `model-placing.md`.
   This Plan Step's close judges both.
 - The reviewer signs:
   - the Finding Kinds, their Refinement Rounds, the Refinement Layers
