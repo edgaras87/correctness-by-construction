@@ -13,7 +13,7 @@ rewriting it. Adopted with the Container Group (ADR-0038, 1a, 1c,
 Entry File, through the Ambient Channel, and an Agent Skill pulled
 the rule in. 15 of the first 20 commits of the repo it came from
 broke it: present, correct, unfollowed (`docs/models/agent.md`
-§12, *Claims*, A1). So the rule is opened at the commit, not read
+§12.1, *Claims on the Ambient Channel*, A1). So the rule is opened at the commit, not read
 once. Lived here since: 480 commits under it by
 2026-09-19. CBC Run 3 held forty-four commits on the stop sentence
 alone, with no Enforcement Gate. The stop sentence is the rule that
