@@ -189,7 +189,7 @@ and what points at it or derives from it stay in agreement is
 `docs/conventions/facts-in-sync/`.
 
 **The form** is the sections a manual has, each a heading after the
-opening. They come in the order of §2.1 to §2.9 below. It fixes where a reader
+opening, but for §2.6, a rule for the body. They come in the order of §2.1 to §2.9 below. It fixes where a reader
 finds each section, not a manual's length, its tone, or how many
 sections its body has. Whether a section is needed is each
 manual's to decide. Whether the form becomes an Output Shape is the TODO
