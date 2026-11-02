@@ -29,12 +29,15 @@ months, and what failure would look like.
 
 ### 2. Work the top question
 
-1. **The agent gives options for it.** The last option is always
-   "my own answer, or a mix".
+1. **The agent lists options for it in its answer,** lettered a, b,
+   c. The last option is always "my own answer, or a mix". The
+   questions are numbered 1 to 3, so "1b" names one option.
 2. **The agent recommends none.** The questions ask what the
    reviewer wants; a recommendation would steer the answer.
-3. **The reviewer may correct the question itself.** The agent then
-   rewrites it and gives fresh options.
+3. **The reviewer answers in the chat input:** a letter, a mix of
+   letters, their own words, or a correction to the question, its
+   options, or both. After a correction, the agent rewrites the
+   question and gives fresh options.
 4. **Each round shows the whole queue,** all 3 questions. The
    reviewer may reorder them, or name one that is wrong.
 
@@ -81,8 +84,9 @@ repo's parts, starts from it.
 - **Each round** goes into the review's notes file in `temp/`, word
   for word: the question, the options shown, the answer, and what
   changed in the queue and why.
-- **The rounds run in chat,** not in the question dialog. The dialog
-  holds 4 options at most and hides the talk around them.
+- **The rounds run in chat,** never in the question dialog that pops
+  up in the input. The dialog holds 4 options at most and hides the
+  talk around them.
 
 ## Not known yet
 
