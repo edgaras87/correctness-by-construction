@@ -39,7 +39,7 @@ Agent Rules, comments and config. Where it lives, never how it reads.
    follows it and is checked against it. A retelling with a Fact
    Reference is one. Two copies that cannot be avoided are another:
    the worked example sits in the cbc-framing and cbc-slice Agent Skills, and
-   the two must stay identical.
+   the two must stay identical (`docs/conventions/exchange/` §6.3, *The CBC Run Reading*).
 6. **Ask each new or changed line at the commit** whether it relies
    on a fact written elsewhere, and whether it says where. Nothing
    else finds a missing Fact Reference

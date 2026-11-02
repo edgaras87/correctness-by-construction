@@ -18,17 +18,19 @@ or moves a section. Which side is right, never how either reads.
 
 ## The check
 
-1. **Look at the staged paths first.** Only these are checked:
+1. **Look at the staged paths first.** Only these are checked
+   (`docs/conventions/conventions/` §1.3, *The Foundation Line*, for
+   the first two):
    - files with a Foundation Line: `.claude/skills/`,
      `.claude/rules/`, `.claude/` under `delivery/`, and a manual
      that names its Idea Model;
    - records whose header comment carries a Foundation Line,
-     in either Convention Seat (`docs/conventions/conventions/` §1.3, *The Foundation Line*),
+     in either Convention Seat,
      and the shipped files whose header comment carries one: the
      delivered Glossary Names under `delivery/*/docs/glossary/` and
      the playbook's Plan Step Form;
    - Canonical Descriptions: `docs/models/`, `docs/conventions/*/README.md`,
-     `concept/`.
+     `concept/` (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
 
    If none is staged, the check is done.
 2. **A file with a Foundation Line changed:** open what the line

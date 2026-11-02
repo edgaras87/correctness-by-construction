@@ -67,7 +67,7 @@ there.
    the copy. The diff alone cannot tell the two apart.
 
 7. **Each item ends as one of three:** taken, declined or held. It
-   lands where the Exchange Convention says.
+   lands where the Exchange Convention says (`docs/conventions/exchange/` §6.5, *Verdicts*).
 
 8. **Records as they fall,** each at its moment in `CLAUDE.md`'s
    records table: an ADR, the Decisions Log, the devlog.

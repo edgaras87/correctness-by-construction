@@ -15,6 +15,8 @@
      An entry that follows from an ADR says in a line or two what
      changed in this arrangement, and points at the ADR; it does
      not retell it.
+     Why the form is as it is: (docs/conventions/agent-arrangement/
+     §3.4, .claude/decisions.md).
      foundation: the agent-arrangement convention -->
 
 - 2026-08-27 Born from the engineering-handbook starter kit

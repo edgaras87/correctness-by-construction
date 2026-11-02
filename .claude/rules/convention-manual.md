@@ -18,7 +18,7 @@ is written. Its form, never its content.
 ## The sections, in this order
 
 Each a `##` heading, except the opening statement, which is a bold
-sentence under the title. The body's sections are numbered; the
+sentence under the title, and item 6, a rule for the body. The body's sections are numbered; the
 others are not. A manual whose idea an Idea Model states opens with
 frontmatter naming it, `foundation: the agent model`
 (`docs/conventions/conventions/` §1.3, *The Foundation Line*).
@@ -26,10 +26,11 @@ frontmatter naming it, `foundation: the agent model`
 1. **The opening statement.** One bold sentence: the manual's
    subject, so a reader can tell from one line whether this is the
    page they need. Not a summary of how it works, nor its boundary
-   or its channel: sections 5, 8 and 7 hold those.
+   or its channel: sections 5, 8 and 7 hold those
+   (`docs/conventions/conventions/` §2.1, *The opening statement*).
 2. **What it is for.** The need: what work the convention makes
    possible, what went wrong without it, with the CBC Run or the date,
-   and the event that made it. Stated as one of three:
+   and the event that made it (`docs/conventions/conventions/` §2.2, *The need*). Stated as one of three:
    - evidence;
    - intent marked *on trial*, with what would make it evidence and
      when to look again; then the need is rewritten from what was
@@ -41,11 +42,12 @@ frontmatter naming it, `foundation: the agent model`
    need.
 3. **What this is made usable as.** The answer to the need: everything
    derived from the manual, each by path from the repo root, marked
-   shipped or the Concept Deliverer's, with the moment it opens at — or
-   "nothing shipped", and then what a repo holds. Ends with the
-   sentence that a change here runs the Change Walk on that list.
+   shipped or the Concept Deliverer's, with the moment it opens at.
+   When nothing ships: "nothing shipped", and then what a repo holds.
+   Ends with the sentence that a change here runs the Change Walk on that list
+   (`docs/conventions/conventions/` §2.3, *The list of what derives*).
 4. **The seats.** Both named, the CBC Run's first: what each does
-   under the convention. One of four:
+   under the convention (`docs/conventions/conventions/` §2.4, *The seats*). One of four:
    - one paragraph when alike;
    - a section per Convention Seat when not;
    - a paragraph naming which body sections are whose, when the body
@@ -77,12 +79,13 @@ frontmatter naming it, `foundation: the agent model`
 7. **Why it arrives this way.** The channel: an Agent Skill, an Agent Rule, a
    Record Stub or a file. Then why that one: the moment it serves, and
    what would or would not put it in front of its reader then.
-   Where the reasoning rests on the Agent Model, a Fact Reference to the part it rests on, such as
-   (`docs/models/agent.md` §8, *Choosing a channel*)
-   (`docs/conventions/conventions/` §2.7, *The channel*).
+   Where the reasoning rests on the Agent Model, it carries a Fact
+   Reference to that part, such as (`docs/models/agent.md` §8,
+   *Choosing a channel*). Why: (`docs/conventions/conventions/` §2.7, *The channel*).
 8. **What this does not cover.** A list: each neighbouring subject
-   in bold, then the path it belongs to.
-9. **Where to look**, optional: Fact References only, as root paths.
+   in bold, then the path it belongs to (`docs/conventions/conventions/` §2.8, *The boundary*).
+9. **Where to look**, optional: Fact References only, as root paths
+   (`docs/conventions/conventions/` §2.9, *Where to look*).
 
 ## What this does not fix
 
