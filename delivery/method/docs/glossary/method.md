@@ -77,7 +77,8 @@
 - **Enemy Collision Kill** — what dies in an Enemy Collision, named
   without its cure: "a retry lands twice and the order exists twice"
   (`docs/concept/03-cbc-framing.md`). Its form is the Enemy Collision
-  Kill Shape's (`.claude/shapes/kill.md`).
+  Kill Shape's (`.claude/shapes/kill.md`). An Enemy Collision tried
+  where nothing dies is no Kill, and is tagged HOLDS-n.
 - **Invariant Slice** — the second part of the work and its unit:
   one System Never-Event from the System Guarantee Inventory made
   real end to end, closed when it survives its attack

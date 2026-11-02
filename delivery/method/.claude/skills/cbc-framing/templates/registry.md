@@ -31,7 +31,7 @@ must *create*. Status values: `open` · `chosen-next` ·
 - **Adversity to create:** <the attack the evidence must generate,
   from the Enemy Census in LAYER-1-ENVIRONMENT, not invented>
 - **Area:** <owner from LAYER-3-AREAS>. **Kills covered:**
-  <KILL-ids from LAYER-4-PROBLEMS>.
+  <KILL-ids from LAYER-4-PROBLEMS, never a HOLDS-id>.
 - **Folds in:** <the Invariant Slice Folds this Invariant Slice consumes first; or "none">
 - **Evidence Precondition:** <a structural condition checked, never tested under adversity,
   whose silent violation voids this Invariant Slice's evidence; or "none">

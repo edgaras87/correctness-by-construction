@@ -171,8 +171,22 @@ exists.**
 *Say:* the write for key K times out after two seconds; the store
 holds one order for K or none, and nothing we hold says which.
 
-Enemy Facts a Scope Exclusion covers collide with nothing:
-NOT-OURS-1 to NOT-OURS-3 stop them.
+Each enemy a Scope Exclusion covers, tried and stopped:
+
+**HOLDS-1.** NOT-OURS-1, a shop editing or cancelling a recorded
+order × POSSESSION-1 → the order changes after it is recorded:
+nothing dies. The Falsifiable Promise is about recording one order,
+not what happens to it after. Stopped by NOT-OURS-1.
+
+**HOLDS-2.** NOT-OURS-2, a caller submitting as another shop ×
+POSSESSION-2 → the submission is judged under the wrong shop's
+keys: nothing dies. One submission still makes one order; who may
+submit is identity at the door. Stopped by NOT-OURS-2.
+
+**HOLDS-3.** NOT-OURS-3, a console or a script writing order
+records × POSSESSION-1 → a record appears that no submission made:
+nothing dies. The Trust Assumption says no console or script writes
+order records. Stopped by NOT-OURS-3.
 
 Merged by what each Enemy Fact does to us:
 - KILL-1 to KILL-3 are one CBC Framing Concern: the same failure, a
@@ -244,7 +258,9 @@ decided again at the Invariant Slice Close.
      Refusals;
    - LAYER-3-AREAS: one Responsibility Area, one Responsibility Area
      Seam named and not drawn;
-   - LAYER-4-PROBLEMS: the CBC Framing Concerns;
+   - LAYER-4-PROBLEMS: six Enemy Collision Kills, three tried
+     collisions where nothing dies (HOLDS-1 to HOLDS-3), and the CBC
+     Framing Concerns;
    - LAYER-5-INTERACTION: empty, with reasons.
 3. **Invariant Slice Registry:** 2 Invariant Slices + 1 Invariant
    Slice Fold, the CBC Framing Reconciliation, SLICE-1 `chosen-next`.

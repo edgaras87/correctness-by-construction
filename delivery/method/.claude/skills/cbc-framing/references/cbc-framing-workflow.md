@@ -101,6 +101,7 @@ Export, never restarting per section.
 | a Scope Exclusion (Stage 2) | NOT-OURS-<n> | NOT-OURS-2 |
 | a Scope Verdict (Stage 2) | SYSTEM-BOUNDARY-<n> | SYSTEM-BOUNDARY-5 |
 | an Enemy Collision Kill (Stage 3) | KILL-<n> | KILL-15 |
+| an Enemy Collision tried where nothing dies (Stage 3) | HOLDS-<n> | HOLDS-2 |
 | an Invariant Slice Fold (Stage 6) | FOLD-<n> | FOLD-1 |
 | an Invariant Slice (Stage 6) | SLICE-<n> | SLICE-4 |
 | a System Layer, its number before its name, as `docs/concept/01-layered-system.md` has them | LAYER-<n>-<NAME> | LAYER-4-PROBLEMS |
@@ -340,6 +341,9 @@ LAYER-2-SYSTEM's own System Possessions, CBC Framing Concerns with no
 enemy, are marked as Invariant Slice Fold Candidates, not Invariant
 Slices. A System Possession can have no Enemy Collision Kill of its own:
 each Enemy Fact that reaches it may already be counted in another's. That is normal.
+A pair a Scope Exclusion stops is no Enemy Collision Kill: it is
+written as tried, `HOLDS-<n>`, nothing dying, with the Scope
+Exclusion that stops it.
 
 **Exit:** a full pass across all Enemy Facts × System Possessions
 yields nothing new.

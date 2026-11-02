@@ -48,11 +48,13 @@ ways:
 *Say:* <numbers for each case that dies>
 ```
 
-An Enemy Collision that breaks nothing:
+An Enemy Collision that breaks nothing is no Enemy Collision Kill.
+It is listed as tried, under its own tag:
 
 ```markdown
-**KILL-<n>.** <the Enemy Fact> × <the System Possession> → <what happens>:
-**nothing dies.** <why the Falsifiable Promise holds>. Stopped by <Scope Exclusion>.
+**HOLDS-<n>.** <the Enemy Fact, or the Scope Exclusion that covers it> ×
+<the System Possession> → <what happens>: nothing dies. <why the
+Falsifiable Promise holds>. Stopped by <Scope Exclusion>.
 ```
 
 *Skeleton:*
@@ -71,9 +73,11 @@ An Enemy Collision that breaks nothing:
   Exclusion or Scope Verdict that stops it, or several: "stopped by NOT-OURS-1", "stopped by
   NOT-OURS-2 and SYSTEM-BOUNDARY-5". A reason may follow after a
   colon.
-- **An Enemy Collision that breaks nothing stays in the list,**
-  saying "**nothing dies**", why, and the Scope Exclusion. It shows
-  the pair was tried, and every pair is counted.
+- **An Enemy Collision that breaks nothing stays in the list as a
+  `HOLDS-<n>`,** numbered on its own, saying "nothing dies", why, and
+  the Scope Exclusion. It starts with the Enemy Fact, or the Scope
+  Exclusion that covers it. It shows the pair was tried, and every
+  pair is counted.
 - **Every Enemy Collision Kill where something dies carries a
   `*Say:*` line** with real numbers from this system: the state
   before, the Enemy Collision, the state that breaks the Falsifiable
@@ -103,9 +107,9 @@ confirmed that does not exist.**
 killed; the store holds one order for K, and the caller holds no
 reply. (b) the caller holds "created" for K; the store holds none.
 
-**KILL-<n>.** NOT-OURS-1, a shop cancelling a recorded order ×
-POSSESSION-1 → the order changes after it is recorded: **nothing
-dies.** The Falsifiable Promise is about recording one order, not what happens
+**HOLDS-1.** NOT-OURS-1, a shop cancelling a recorded order ×
+POSSESSION-1 → the order changes after it is recorded: nothing
+dies. The Falsifiable Promise is about recording one order, not what happens
 to it after. Stopped by NOT-OURS-1.
 ```
 
@@ -121,8 +125,9 @@ to it after. Stopped by NOT-OURS-1.
 Read the Enemy Collision Kills and ask:
 
 1. Does each start with the Enemy Fact and the System Possession,
-   by their tags?
-2. Does each state what dies, in bold, or say "nothing dies"?
+   by their tags, or a `HOLDS-<n>` with the Scope Exclusion?
+2. Does each `KILL-<n>` state what dies, in bold, and each
+   `HOLDS-<n>` say "nothing dies" and what stops it?
 3. Is every case labelled, and does each end in what dies or
    "stopped by" a Scope Exclusion?
 4. Does each where something dies have a `*Say:*` line with real
