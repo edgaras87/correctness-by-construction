@@ -302,7 +302,7 @@ Notes:
 
 Goal: Living Text written before a rule now meets that rule, and project-recording's list of the records maps them in both Convention Seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
-Now: the Plan Step's close: the findings' lessons written back, then the close items.
+Now: every Gate item ticked, or marked with why; main takes the branch by fast-forward, on the reviewer's word.
 The refinement closed at `55e2bd0`; its file is read from `55e2bd0^`.
 Gate:
 
@@ -395,11 +395,15 @@ Gate:
       (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
       Not met, accepted by the reviewer, history not rewritten: `f81450b` (`COMMIT-PLAN.md` with `TODO.md`) and
       `4302cf2` (`COMMIT-PLAN.md` with an ADR), both 2026-10-29.
-- [ ] The Plan Step's lessons are written back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+- [x] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept: commit-plan §2.8 and
+      §2.9, facts-in-sync §3.3, and their Agent Skills and Agent Rule
+      (2026-11-02, `afa5922`, `568fb89`, `cedcb4b`).
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the Entry File is written*).
+      §2.4, *How the Entry File is written*): what the project is and
+      the records table, every line true of this repo alone, with no
+      moment of its own (2026-11-02).
 
 Notes:
 - Opened 2026-10-18 from TODO's refinement item. The item for
