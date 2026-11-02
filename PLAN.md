@@ -137,7 +137,7 @@ work.
 Goal: the reviewer's intent for this repo is written and locked; the
 repo is checked against it; and each place it does not hold has the
 reviewer's decision.
-Now: intent-check, Stage 2, part 1.
+Now: intent-check, Stages 1 to 3: the intent told in stops.
 Gate:
 
 **At the opening.**

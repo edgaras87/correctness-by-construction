@@ -3,16 +3,18 @@
 <!-- A draft for the review of how this repo works and what it costs:
      whether the reviewer's ideas and intent are put here the right
      way, what each part costs, and what could be better. Its first
-     phase writes the reviewer's intent and locks it, part by part, by
-     the intent-check Approach on Trial
+     phase writes the reviewer's intent, told in stops, and locks it
+     once the whole is told, by the intent-check Approach on Trial
      (.claude/approaches-on-trial/intent-check.md).
-     A locked part changes only when the reviewer reopens it. The
+     Once locked, the intent changes only when the reviewer reopens it. The
      locked intent goes to its home in the README, and this file goes
      once the review is done; git keeps every version. -->
 
 ## Intent
 
-### Part 1, a draft, not locked
+### The intent, a draft
+
+Told in stops; any line may change until the intent is locked.
 
 1. **A ready kit for starting a CBC project.** This repo keeps a
    delivery prepared ahead of time. When a CBC project is needed, the
@@ -47,9 +49,9 @@
   - Tracking: spread over `CHANGELOG.md`, the ADRs, the devlog and the
     CBC Run Readings; no one place.
   - The README's *why*, the reviewer's understanding improving in a
-    recorded way, is not in part 1.
+    recorded way, is not in the intent yet.
   - The way of working, the conventions and Idea Models, is not in
-    part 1.
+    the intent yet.
 
 ## Possible goals
 
