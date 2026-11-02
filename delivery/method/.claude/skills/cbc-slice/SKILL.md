@@ -94,7 +94,7 @@ explicitly if it is not already recorded.
 5. **Tag them** GUARANTEE-n and EVIDENCE-n, numbered once through the
    Invariant Slice Record. Outside the Invariant Slice Record, each carries its
    Invariant Slice (`.claude/rules/writing.md`, rule 6, *Keep names as labels*): "SLICE-4
-   GUARANTEE-1", "SLICE-4 EVIDENCE-3 · GUARANTEE-2 · KILL-12". CBC
+   GUARANTEE-1", "SLICE-4 EVIDENCE-3 · GUARANTEE-2 — KILL-12". CBC
    Framing's tags (KILL, FOLD, FACT, NOT-OURS, …) are used as CBC
    Framing wrote them.
 
@@ -184,7 +184,7 @@ explicitly if it is not already recorded.
      had no Structural Wall to break.
 4. **Label each test beside itself:** its Evidence Criterion, its
    Invariant Slice Guarantee and its Enemy Collision Kill, with the
-   Invariant Slice ("SLICE-4 EVIDENCE-3 · GUARANTEE-2 · KILL-12"), and
+   Invariant Slice ("SLICE-4 EVIDENCE-3 · GUARANTEE-2 — KILL-12"), and
    in plain words what it checks and what would trip it. The reasons
    stay in the Invariant Slice Record.
 5. **A test that is not evidence says so on itself.**

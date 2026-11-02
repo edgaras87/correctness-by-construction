@@ -30,6 +30,8 @@ writes its own illustration.
 
 ## The Invariant Slice Record's order
 
+The order is the cbc-slice workflow's (`.claude/skills/cbc-slice/references/cbc-slice-workflow.md`, *The Invariant Slice Record's outline*).
+
 1. **Invariant.** What the Invariant Slice protects, in one statement.
 2. **Adversity.** What attacks it, and how the evidence creates it,
    for every Invariant Slice Guarantee alike.
@@ -55,7 +57,7 @@ belongs to one is in its Invariant Slice Guarantee Block, and nowhere else.
 
 ## An Invariant Slice Guarantee Block
 
-The Invariant Slice Guarantee Block grows by Agent Skill Stage, the cbc-slice Agent Skill's.
+The Invariant Slice Guarantee Block grows by the cbc-slice Agent Skill's Agent Skill Stages (`.claude/skills/cbc-slice/references/cbc-slice-workflow.md`, *The Invariant Slice Record's outline*).
 Stage 1 writes the claim, the attack and the Evidence Criterion.
 Stage 2 adds what holds it and the options weighed. Stage 4 adds the
 tests, at the Invariant Slice Close. The reviewer signs an Agent
@@ -198,7 +200,7 @@ named adversity, simultaneous duplicates.
   The new choice comes first, marked `*chosen <date>*`. The one it
   replaced moves below, marked `*as signed on <date>*`, and answers
   under `*Why not, on revision:*`.
-- **Blocks are separated by a `---` line.**
+- **Invariant Slice Guarantee Blocks are separated by a `---` line.**
 
 ## What is exempt, and why
 

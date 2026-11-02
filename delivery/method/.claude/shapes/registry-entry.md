@@ -55,11 +55,12 @@ method's worked example, a tiny order service.
 
 *Skeleton:*
 
-- **Every field is present.** An empty one says "none" (or
+- **Every field is present,** as the Agent Skill Template gives them
+  (`.claude/skills/cbc-framing/templates/registry.md`). An empty one says "none" (or
   "nothing", for what an Invariant Slice presumes), so a reader can tell
   empty from forgotten.
 - **The status sits in the heading,** one of the Invariant Slice
-  Registry's status values, and a closed Invariant Slice gives its
+  Registry's status values (`.claude/skills/cbc-framing/SKILL.md`, *Export and handoff*), and a closed Invariant Slice gives its
   date.
 - **The Invariant Slice Record is linked** from the Invariant Slice Entry, so a
   reader of the Invariant Slice Registry reaches it in one step.

@@ -80,7 +80,8 @@ An Enemy Collision that breaks nothing:
   Promise.
 
 *Illustration, from the worked example:* the tags are its System
-Definition's: Enemy Facts FACT-CALLER-1 to FACT-STORE-6, System
+Definition's: Enemy Facts FACT-CALLER-1, FACT-CALLER-2,
+FACT-NETWORK-3, FACT-PROCESS-4, FACT-CALLER-5 and FACT-STORE-6, System
 Possessions POSSESSION-1 to POSSESSION-3, Scope Exclusions NOT-OURS-1
 to NOT-OURS-3.
 

@@ -22,7 +22,9 @@ Guarantee it answers, come from the Invariant Slice Record.
 evidence:
 - an Evidence Test, which creates an adversity at the door and reads
   the State Witness;
-- a Structural Wall Check, which reads the code;
+- a Structural Wall Check, which sends a Structural Wall its refusal
+  directly or reads it where it is defined, and is not evidence
+  (`.claude/skills/cbc-slice/SKILL.md`, *Stage 3 — build*);
 - a Decision Test, which pins a decision and is not evidence.
 
 A test this Output Shape accepts can still create the wrong adversity.
@@ -119,8 +121,9 @@ assertThat(Body.of(retry.getBody()).stringAt("$.orderId")).isEqualTo(first.order
 - **The Falsifiable Promise:** `Witness.Orders.holds()`: the key's
   submission is exactly one recorded order.
 - **An Invariant Slice's own invariant:** SLICE-1's is the
-  Falsifiable Promise itself, so it adds no assertion. SLICE-2's, "a retry
-  after a crash ends in one order and one truthful answer", adds the
+  Falsifiable Promise itself, so it adds no assertion. SLICE-2's, "a crash
+  at any point leaves the system where a retry ends in exactly one
+  order and one truthful answer", adds the
   answer, asserted beside the Falsifiable Promise.
 - **The answer:** the status, then the body by JSON path.
 
@@ -151,7 +154,7 @@ assertThat(Body.of(retry.getBody()).stringAt("$.orderId")).isEqualTo(first.order
 
 - **The State Witness before the answer.** A test that fails on a status
   code proves it reads status codes. A Red Run that stops at "expected
-  409 but was 200" has never read the store.
+  409 but was 200" has never read the store (`.claude/skills/cbc-slice/SKILL.md`, *Stage 3 — build*).
 - **The Falsifiable Promise before the exact numbers.** The numbers can be
   right for the story while the state is wrong somewhere else.
 - **The Invariant Slice's invariant beside the Falsifiable
@@ -171,9 +174,8 @@ assertThat(Body.of(retry.getBody()).stringAt("$.orderId")).isEqualTo(first.order
 
 ## What is exempt, and why
 
-- **Structural Wall Checks:** a test that reads the store's own list
-  of its constraints, or one that sends the store a refusal
-  directly. They say *not evidence* at their class. They answer
+- **Structural Wall Checks:** a test that sends a Structural Wall its
+  refusal directly, or reads it where it is defined (`.claude/skills/cbc-slice/SKILL.md`, *Stage 3 — build*). They say *not evidence* at their class. They answer
   no Enemy Collision Kill and need no State Witness.
 - **Infrastructure tests:** health, the migration path, the
   Adversity Harness's own checks.
