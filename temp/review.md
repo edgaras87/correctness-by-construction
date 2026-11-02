@@ -13,9 +13,11 @@
 
 ## Intent
 
-### The intent, a draft
+### The intent, locked
 
-Told in stops; any line may change until the intent is locked.
+Locked 2026-11-02, on the reviewer's word. It changes only when the
+reviewer reopens it (intent-check, Stage 3). Its gaps and tensions,
+below, stay open; the goals and the comparison take them up.
 
 **Re-aimed:** the subject is now the idea-to-approach model under this
 repo; the repo stands on it, and the delivery on the repo. What is

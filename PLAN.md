@@ -138,7 +138,7 @@ Goal: the reviewer's intent for an idea-to-approach model is locked;
 whether such a model is worth defining is decided; and ours is
 compared with its alternatives, each finding with the reviewer's
 decision.
-Now: intent-check, Stages 1 to 3: the model's intent told in stops.
+Now: intent-check, Stage 4: the goals, from the locked intent.
 Gate:
 
 **At the opening.**
@@ -156,8 +156,9 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] The reviewer's intent for the model is written, played back,
-      and locked once the whole is told, in `temp/review.md`.
+- [x] The reviewer's intent for the model is written, played back,
+      and locked once the whole is told, in `temp/review.md`
+      (2026-11-02).
 - [ ] The goals come from the locked intent, each approved by the
       reviewer.
 - [ ] Whether an idea-to-approach model is worth defining at all is
