@@ -22,7 +22,8 @@
      weighed only when the item is due. Each is then taken, extended
      or declined, and the verdict goes with the work. The talk that shaped an item may sit in
      TODO-CONVERSATION-MEMORY.md. When See names its section, it is
-     read before the Ideas are weighed. When an item changes, rewrite
+     read before the Ideas are weighed (TODO-CONVERSATION-MEMORY.md,
+     its header comment). When an item changes, rewrite
      it true for today. Never stack a dated update on it: the
      change's story is the devlog's.
      Why the form is as it is: (docs/conventions/project-recording/
@@ -37,7 +38,7 @@
       reviewer).
       Context: CBC Run 6 ran on full auto through its Release, Step 14,
       and closed a Step 15 after it: 254 commits, 7 Invariant Slices, tag
-      `v0.1.0`. Its birth Plan Step stopped before its close, so its
+      `v0.1.0`. The Plan Step of its CBC Run Birth stopped before its close, so its
       CBC Run Reading waits.
       Ideas:
       - whether CBC Run 5's and CBC Run 6's Entry Files added the
@@ -49,7 +50,8 @@
 - [ ] Unlock the folders locked for CBC Run 6 (2026-10-29, the
       reviewer).
       Context: CBC Run 6 must not read another repository, and a
-      `Read` deny rule does not stop a shell. So, before its birth,
+      `Read` deny rule stops `cat` and `sed` but not `grep -r` or a script
+      (`docs/conventions/agent-arrangement/` §5.4, *Permission rules*). So, before its CBC Run Birth,
       twelve entries in `~/IdeaProjects` were made unreadable,
       `chmod 000`: `archive`, `cbc-pure-run`, `cbc-pure-run-2`,
       `cbc-pure-run-3`, `cbc-pure-run-4`, `cbc-pure-run-5`,
@@ -201,7 +203,7 @@
       full-auto CBC Run (2026-10-22, the Plan Step that birthed CBC Run 5).
       Context: drafted for CBC Run 5 and used twice, for CBC Runs 5
       and 6 (`.claude/approaches-on-trial/auto-run.md`, its use note;
-      CBC Run 6's note waits for its birth Plan Step's close). Its
+      CBC Run 6's note waits for the close of its CBC Run Birth's Plan Step). Its
       open questions are CBC Run 5's CBC Run Reading's to answer: what in the
       CBC Run Hand-off is general enough for the Container Group, and whether the
       light read of the last CBC Run cost CBC Run 5 anything. Evaluated
@@ -380,7 +382,7 @@
 - [ ] Decide how commits cited by hash can still be regrouped
       (2026-10-19, the reviewer).
       Context: our `commit-plan` Agent Skill regroups a Change Set's commits before
-      its close (`.claude/skills/commit-plan/SKILL.md` §4, *The lifecycle*), and a regroup gives them new hashes. This repo cites
+      its close (`docs/conventions/commit-plan/` §2.12, *The look back*), and a regroup gives them new hashes. This repo cites
       hashes in Living Text: the refinement's file, TODO, other
       commit bodies. So the refinement's commits up to `ccce6af`
       were not regrouped, and the history keeps every small fix,
@@ -406,13 +408,15 @@
       (`docs/conventions/project-recording/` §8.6, *Local Maps*, ADR-0045).
       Ideas:
       - all twelve and how each touches the others, derived from those references, built by the visual-comparison Agent Skill.
-      - three Chain Links, each with its upkeep: derives
+      - the four Chain Links (`docs/models/idea-to-output.md` §3.1, *The four Chain Links*),
+        each with its upkeep: stands on
         (`docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*, the Foundation
         Check), points (one home, the grep at a commit that moves a
         section, a Plan Step's close), governs
         (none: a change to a rule that governs other text could
         sweep that text or file the sweep, a rule beside
-        `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).
+        `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*),
+        written from (none named yet).
       - scenarios as entries into one procedure, the Foundation
         Check: a manual, an Agent Skill or Agent Rule, a CBC Run's finding. Two
         exits it lacks: the governs sweep, and what must run again
@@ -452,9 +456,8 @@
         the README's form, its header comment, keeps changing status
         in PLAN: how that line lived in CBC Run 4.
       - whether CBC Run 4 confirmed its plan's Plan Steps once framed, as project-recording says a CBC Run does
-        (`docs/conventions/project-recording/` §9.4, *How a playbook is written*),
-        though no Agent Skill or Plan Step asks it: if not, whether the playbook's
-        CBC Framing Plan Step should.
+        (`docs/conventions/project-recording/` §9.4, *How a playbook is written*).
+        The playbook's Step 2 now asks part of it.
       Trigger: the refinement of this repo closes; in a new session.
       See: `f097695`, the kickoff and the message it took;
       `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's reading: two moves from layer 6*.
@@ -488,9 +491,9 @@
         project-recording's: it is read when the record is opened,
         while an entry is written, which the shapes manual keeps for Agent Rules
         (`docs/conventions/shapes/` §3, *Where an Output Shape lives*).
-        Only `.claude/decisions.md` holds one under another
-        convention, agent-arrangement. The open forms are those in
-        rules: a manual's, a CBC Run Reading's.
+        Only `.claude/decisions.md` and `docs/glossary.md` hold one
+        under another convention: agent-arrangement and writing. The
+        open forms are those in Agent Rules: a manual's, a CBC Run Reading's.
       - a text gets an Output Shape when there are many of its kind and a
         moment to check them: manuals, CBC Run Readings, Agent Skills and Agent Rules
         may; a record's entries are checked only as they are written.
@@ -543,17 +546,17 @@
       DECISION-24 and DECISION-27), but a grep still finds both. It waits for
       two reasons: which side is renamed, and to what, is a choice
       that how CBC Runs 4, 5 and 6 used these parts can inform; and
-      four of the names ship, so a rename moves every CBC Run's
+      all five names ship, so a rename moves every CBC Run's
       folders and commands, the paths a read compares by. Their
       records keep the old names either way, since a record is never
       updated. New names follow the naming rule of the
-      refinement's design, ADR-0078 when written.
+      refinement's design, ADR-0078.
       Ideas:
       - rename the manual, by its subject: commit-message-form,
         change-sets, diagram-choice, looking-back, plain-writing.
       - or rename the Agent Skill or Agent Rule, by its act:
         write-commit-message, plan-commits, compare-diagrams,
-        hold-retrospective, write-plainly; four ship, so every CBC
+        hold-retrospective, write-plainly; all five ship, so every CBC
         Run gets new folders and commands.
       - a strict "verb first" grammar would rename 11 of the 12
         Agent Skills; a loose one 3, and lets commit-plan through.
@@ -574,8 +577,8 @@
       4, 5 and 6 shows edits to text we no longer hold, and cannot be
       taken as it stands. Their Decisions Log entries and CBC Run Asks
       still say what each needed and what went wrong without it. The
-      readings come after the refinement, not before: read now, every
-      item taken would land in text Refinement Round 3 rewrites.
+      readings come after the refinement, not before: an item taken now
+      could land in text the refinement's last read changes.
       Ideas:
       - read how the CBC Run went and what it did, and ask whether
         the new structure meets each need, defines it wrongly, or
@@ -628,7 +631,7 @@
       and why; the Work Approaches made from it state the rules, one
       sentence each, and explain nothing (`docs/models/idea-to-output.md`
       §6.1, *The manual's level*, ADR-0078). Text at the wrong level
-      breaks that. Found at the design's commit 5: facts-in-sync §3.4
+      breaks that. Found at commit 5 of ADR-0078's commit plan: facts-in-sync §3.4
       first listed its six rules with almost no why; the conventions
       manual §1 holds the rules for writing an Agent Skill or Agent
       Rule, and no Work Approach carries them to the writer.
@@ -638,7 +641,7 @@
         with no why; an Agent Skill or Agent Rule explaining why.
       - per passage: which level it belongs to, and whether the level
         it belongs to already holds it.
-      - conventions §1 is the item above, "Write an Agent Rule that
+      - the conventions manual §1 is the item above, "Write an Agent Rule that
         writes an Agent Skill or Agent Rule from its convention".
       - a passage with no Work Approach: an Agent Rule is made, or the
         passage stays as the manual's reason for a rule held
@@ -725,7 +728,7 @@
       full CBC Run's derived Entry File (2026-09-06, the reviewer).
       Context: the template's method half, from the method's first
       walk, is frozen at `docs/baselines/claude-md-template-v1.md`.
-      No birth can judge the stance bullets, the template's lines on
+      No CBC Run Birth can judge the stance bullets, the template's lines on
       how to work: only a CBC Run that has framed and built. Three
       texts to compare: the CBC Run's `CLAUDE.md`, frozen v1, and
       `cbc-derived-claude-walk1.md`; a Record Harvest re-enters the template
@@ -892,7 +895,7 @@
       See: devlog 2026-10-28; ADR-0070;
       `TODO-CONVERSATION-MEMORY.md` §22, *Testing fact references and foundations as a whole*.
 
-- [ ] Look again at where a CBC Run learns how to treat a Skill
+- [ ] Look again at where a CBC Run learns how to treat an Agent Skill
       Template (2026-10-28, the reviewer).
       Context: four shipped files told the off-template rule in
       their own words, and drifted: deviate from an Agent Skill Template,
@@ -940,7 +943,8 @@
       (2026-10-21, the reviewer).
       Context: ADR-0003 (2026-08) made it the concept's log, for
       CBC Runs pinning a version; ADR-0039 decision 9 kept conventions
-      out. Since v1 (2026-08-28), about 1,350 commits added the
+      out. Since v1 (2026-08-28), about 1,800 commits on main, counted
+      2026-11-02, added the
       conventions, the Container Group, the Idea Models and Approaches on
       Trial, and none is logged. A CBC Run pins a commit and cannot read
       our changelog: its readers are us and a stranger after a
@@ -1063,7 +1067,7 @@
       Trigger: a second Concept Repo.
       See: devlog 2026-09-30, the Tiers Model.
 
-- [ ] Name the discipline "lived is evidence, not master text"
+- [ ] Name the discipline "lived is evidence, not text to copy"
       (2026-09-04, the reviewer).
       Context: the records table says what goes in a README, the
       Entry File and the internal records, and it slipped twice in
@@ -1135,7 +1139,8 @@
       Trigger: the next CBC Run Reading overtaken.
       See: devlog 2026-09-30, the delivery to CBC Run 3.
 
-- [ ] Name when a CBC Run is read (2026-10-01, the working draft).
+- [ ] Name when a CBC Run is read (2026-10-01, from the draft of
+      working a reading, now gone).
       Context: a CBC Run Reading happens when the reviewer says. A CBC Run Ask
       arriving, a Plan Step closing at the CBC Run, a calendar — none is
       named, so a CBC Run Reading happens when someone remembers, and both
@@ -1147,7 +1152,7 @@
       See: devlog 2026-10-01.
 
 - [ ] Decide how CBC Run Readings work with more than one live CBC Run
-      (2026-10-01, the working draft).
+      (2026-10-01, from the draft of working a reading, now gone).
       Context: the rules for reading and working a CBC Run Reading are
       written for one CBC Run. Two live CBC Runs mean two CBC Run Readings, and
       their items may be the same finding twice.
@@ -1155,7 +1160,7 @@
       See: devlog 2026-10-01.
 
 - [ ] Say once that a CBC Run Reading's decisions are the reviewer's
-      (2026-10-01, the working draft).
+      (2026-10-01, from the draft of working a reading, now gone).
       Context: the agent proposes and builds, the reviewer settles —
       every CBC Run Reading has gone so, and nothing says it. Probably
       agent-arrangement's to say, not the CBC Run Reading's.
@@ -1244,7 +1249,7 @@
       something to say, saying only what is already true, and
       refreshed at each Invariant Slice Close. Seen in the
       safe-reservations repo, never lived by a CBC Run of ours.
-      Trigger: a CBC Run first reaching the milestone that fires it.
+      Trigger: a CBC Run first writing public docs beyond its README.
       See: devlog 2026-08-30 (doc projection checked).
 
 - [ ] Decide how a CBC Run learns that the rule for taking deliveries
@@ -1262,8 +1267,8 @@
 
 ## Known issues (deferred deliberately — each entry: what, why accepted, when to revisit)
 
-- The postgres image tag floats (2026-08-28). The Runtime Ground template
-  and the Adversity Harness reference both say `postgres:17`, so they can
+- The postgres image tag floats (2026-08-28). The infra-establish Agent
+  Skill's Agent Skill Template `templates/compose.yaml` and the Adversity Harness reference both say `postgres:17`, so they can
   pull different minors at different times. Accepted: the shared
   major is a deliberate coupling, and no CBC Run has hit drift.
   Revisit: a CBC Run's first minor-drift surprise — then pin both
