@@ -4472,6 +4472,10 @@ Decided by the reviewer, 2026-11-01, during the work:
 - **FINDING-1432:** (c), the line names both channels: the Record Stub arrives by the Installed Channel, and its rule is read by the Pulled Channel.
 - **FINDING-1431,** met at commit 7 with no TODO item to point at: a TODO item, "Judge the Conversation Memory trial", holds it, its trigger the close of the refinement Plan Step (`056d14a`).
 
+Decided by the reviewer, 2026-11-02, during the work:
+- **FINDING-1487:** `temp/run-6-handoff/` stays, and the TODO item "Read CBC Run 6" names it.
+- **FINDING-1488,** the agent's call reversed at the Foundation Check: project-recording §14 says a section goes with its item, so §7, §8 and §26 go, and the header gains no "Item: none".
+
 ### DECISION-49's pass
 
 The ending of each TODO item whose trigger looked passed, drafted by the agent and taken by the reviewer, 2026-11-01. Lines are `TODO.md`'s at `1ce79f9`. CBC Run 5's CBC Run Reading exists; its work waits in the stopped Plan Step "Take CBC Run 5's lessons for CBC Run 6". The TODO edits land with round 1's layer 4.
