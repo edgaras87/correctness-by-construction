@@ -12,7 +12,44 @@
 
 ## Intent
 
-Empty until part 1 is locked.
+### Part 1, a draft, not locked
+
+1. **A ready kit for starting a CBC project.** This repo keeps a
+   delivery prepared ahead of time. When a CBC project is needed, the
+   reviewer takes the delivery and starts on the CBC problem itself.
+   They do not first write the concept, the Agent Rules or the Agent
+   Skills: those are here, ready.
+2. **One place for what CBC Runs teach.** Each CBC Run finds things to
+   improve, in the concept and in the Work Approaches built on it.
+   This repo is the one place those are tracked: what changed, why,
+   where, and from which CBC Run.
+3. **Some of this may move later.** The intent covers several things
+   that live here today; some may get a home of their own.
+
+**Noticed:**
+
+- **Gaps:**
+  - "Start working": who works a CBC project, the reviewer with an
+    agent, or an agent on full auto, as CBC Run 6 ran?
+  - "Not worry about other stuff": is the stack, Spring and
+    PostgreSQL today, part of the kit, or chosen per project?
+  - Tracking: who reads it, the reviewer only, or the CBC Runs pinned
+    to a version of the kit too?
+  - Where an improvement goes: to the next CBC Run only, or to one
+    still running too?
+- **A tension:** a ready kit wants to be stable, and every CBC Run
+  changes it. How often does it change: after each CBC Run, or in
+  batches?
+- **Differences from the repo,** named, not argued:
+  - "Work Approach": in the repo it is how one piece of work is done;
+    an Agent Skill or an Agent Rule is one (`docs/glossary.md`). The
+    whole kit is called the delivery.
+  - Tracking: spread over `CHANGELOG.md`, the ADRs, the devlog and the
+    CBC Run Readings; no one place.
+  - The README's *why*, the reviewer's understanding improving in a
+    recorded way, is not in part 1.
+  - The way of working, the conventions and Idea Models, is not in
+    part 1.
 
 ## Possible goals
 
