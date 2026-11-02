@@ -149,9 +149,9 @@ Gate:
 - [x] This Plan Step Gate was written before the work started, but
       for round 1's questions: shown in chat before it, committed
       after it (2026-11-02).
-- [ ] The Plan Step's Work Approach is known. None now: goal-finding
-      and intent-check, each drafted for it, were dropped (Notes). The
-      next is drafted when the problem's work opens.
+- [-] The Plan Step's Work Approach is known: none at the close.
+      goal-finding and intent-check, each drafted for it, were dropped
+      (Notes), and the rest ran without one.
 
 **The Plan Step's own items.**
 
@@ -159,18 +159,24 @@ Gate:
       and locked once the whole is told: `temp/idea-model-problem.md`
       §1, *The model we try to build*, and §3, *What a good model must
       do* (2026-11-02).
-- [ ] The goals come from the locked intent, each approved by the
-      reviewer: drafted as the checks in §3.
-- [ ] Whether an idea-to-approach model is worth defining at all is
-      decided, with its reason.
-- [ ] Today's model and its alternatives are compared: against the
+- [-] The goals come from the locked intent, each approved by the
+      reviewer: drafted as the checks in §3, never approved one by
+      one. The counts of ADR-0081, decision 4, stand in for them.
+- [x] Whether an idea-to-approach model is worth defining at all is
+      decided, with its reason: yes, on trial, ADR-0081 (2026-11-02).
+- [x] Today's model and its alternatives are compared: against the
       goals, then on the criteria, on lived evidence
-      (`temp/idea-model-problem.md` §3, *What a good model must do*).
-- [ ] Each finding has the reviewer's decision, with its reason.
-- [ ] Where the locked intent lives is decided: in this repo, or in a
-      repo of its own.
-- [ ] Each decision that changes the repo has its TODO item or its
-      commit plan.
+      (`temp/idea-model-problem.md` §3, *What a good model must do*):
+      `temp/model-example/comparison.md` and `today-problems.md`
+      (2026-11-02, `a364763`, `e27a1b6`).
+- [x] Each finding has the reviewer's decision, with its reason: split
+      first, idea by idea from the Work Approach up, exchange first, a
+      pattern after (ADR-0081; 2026-11-02).
+- [-] Where the locked intent lives is decided: in this repo, or in a
+      repo of its own. Open: the move gives what
+      `temp/model-example/` holds its homes (ADR-0081, Consequences).
+- [x] Each decision that changes the repo has its TODO item or its
+      commit plan: "Move exchange to the new layering" (2026-11-02).
 
 **Known already.** No Work Approach yet; the gates of the next one
 join when it is drafted. The close of an Approach on Trial is the
@@ -178,26 +184,40 @@ approach-drafting Approach on Trial's, the last close item below.
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves.
-- [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in the
-      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
-- [ ] No line of Living Text in a record the Plan Step touched, or one that
+- [x] Every link and path in the records resolves, but for
+      `temp/review.md`, named in history and in this Plan Step's Notes,
+      which leave with it (2026-11-02).
+- [x] Every ADR a record cites exists (2026-11-02).
+- [x] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill: neither
+      touched (2026-11-02).
+- [x] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the Plan Step changed.
-- [ ] New and changed text meets `.claude/rules/writing.md`.
-- [ ] Every commit on `review-2026-11-02` follows
-      the commit-messages Agent Skill.
-- [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
-- [ ] The Plan Step's lessons are written back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      about something the Plan Step changed (2026-11-02).
+- [-] New and changed text meets `.claude/rules/writing.md`. Not met in
+      one way: "project text" and "socket", coined in
+      `temp/model-example/` and used in ADR-0081, have no Glossary Name.
+      Held for where names live, settled before the first split
+      (ADR-0081, decision 6).
+- [-] Every commit on `review-2026-11-02` follows
+      the commit-messages Agent Skill. Not met, accepted: 22 subjects
+      past 50 characters, 11 body lines past 72; not rewritten, and no
+      guard added (the reviewer, 2026-11-02).
+- [x] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*)
+      (2026-11-02).
+- [-] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept. None: its decision is
+      ADR-0081, and its dead ends are the devlog's.
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the Entry File is written*).
-- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      §2.4, *How the Entry File is written*): unchanged (2026-11-02).
+- [-] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
       (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+      Both were dropped instead, by approach-drafting's *When the
+      Approach on Trial fails* (devlog 2026-11-02, goal-finding
+      dropped; the problem drafted).
 
 Notes:
 - Opened 2026-11-02, from that day's talk: the reviewer doubts the
