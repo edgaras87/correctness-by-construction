@@ -302,8 +302,9 @@ Notes:
 
 Goal: Living Text written before a rule now meets that rule, and project-recording's list of the records maps them in both Convention Seats
 (`docs/conventions/project-recording/` §1, *The records at a glance*).
-Now: the last read (`.claude/approaches-on-trial/refinement.md` §2.9, *The last read*):
-everything read against every Finding Kind of the refinement, in one read, with no fixes between. Refinement Round 3 closed at `c6b3635`.
+Now: the Plan Step's close: the refinement's Work Approach evaluated
+(`.claude/approaches-on-trial/approach-evaluation.md`), the two trials' verdicts, then the close items.
+The refinement closed at `55e2bd0`; its file is read from `55e2bd0^`.
 Gate:
 
 **At the opening.**
@@ -334,13 +335,17 @@ Gate:
       since the last, and each doubt ended; the refinement's file
       says which (`.claude/approaches-on-trial/refinement.md` §2.3, *Check the rules*;
       Refinement Round 2, 2026-10-25; Refinement Round 3, 2026-10-29).
-- [ ] Every Finding Kind in the refinement's file was read in its Refinement Round
+- [x] Every Finding Kind in the refinement's file was read in its Refinement Round
       across all Living Text, and each read names the files it
-      covered.
-- [ ] Every finding has the reviewer's ending: fixed, declined
-      with its reason, or a TODO item.
-- [ ] The last read found nothing that breaks a rule
-      (`.claude/approaches-on-trial/refinement.md` §2.9, *The last read*).
+      covered: each Refinement Round's *Files by layer* and the last
+      read's setup (`55e2bd0^:temp/refinement-2026-10-18.md`; 2026-11-01).
+- [x] Every finding has the reviewer's ending: fixed, declined
+      with its reason, or a TODO item: the last read's 385 in its
+      *The work* (2026-11-02, `483bc19`; FINDING-1512 in `309cabb`).
+- [-] The last read found nothing that breaks a rule
+      (`.claude/approaches-on-trial/refinement.md` §2.9, *The last read*):
+      skipped, the read again after the last read's work, by the
+      reviewer, out of tokens (2026-11-02, `765de0b`). §2.9 stands.
 - [x] Project-recording's list of the records shows in one view which
       record answers what, in both Convention Seats
       (`docs/conventions/project-recording/` §1, *The records at a glance*). It includes
