@@ -39,6 +39,10 @@
       and closed a Step 15 after it: 254 commits, 7 Invariant Slices, tag
       `v0.1.0`. Its birth Plan Step stopped before its close, so its
       CBC Run Reading waits.
+      Ideas:
+      - whether CBC Run 5's and CBC Run 6's Entry Files added the
+        ground-must-be-up rule unasked: the shipped Entry File teaches
+        it, and no Agent Skill prompts it (ADR-0013).
       Trigger: the refinement's close, or the reviewer's word.
       See: devlog 2026-10-29, morning.
 
@@ -82,15 +86,16 @@
       work itself could be meaningfully better, and if so try that
       way and compare it with the first try before keeping one. CBC
       Run 4 tried the options of each question it must not decide
-      alone on `try/` branches: 14 of them, and 2 changed the answer. CBC Run 5 tries it first, from
-      its CBC Run Hand-off.
+      alone on `try/` branches: 14 of them, and 2 changed the answer. CBC Run 5 tried it from
+      its CBC Run Hand-off: 13 look-back lines, 0 tries (its CBC Run Reading, FINDING-9).
       Ideas:
       - a bar for "meaningful": it changes a Structural Wall, a test's
         adversity, or removes a part; rewording is not enough.
       - the better way on a `try/` branch, compared, and the try not
         chosen kept on its branch.
       - a cap on its cost, so no plan doubles by habit.
-      Trigger: CBC Run 5's CBC Run Reading.
+      Trigger: WORK-17 of CBC Run 5's CBC Run Reading is worked, giving this
+               item FINDING-9 and D18.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §9, *A commit plan's look-back at the way*.
 
@@ -98,17 +103,22 @@
       Approaches on Trial keep examples (2026-10-21, the reviewer).
       Context: CBC Run 4 read CBC Run 3's real Enemy Collision Kills in the Output Shapes' examples
       at birth, and its CBC Framing copied them in places (ADR-0061).
-      The method's worked example, 271 lines in both the cbc-framing
+      The method's worked example, 328 lines in both the cbc-framing
       and the cbc-slice Agent Skills, is an order service that weighs "Orders are
       never lost AND payment always completes"; the concept's
       chapters, the cbc-slice workflow, the playbook, `writing.md` and
       the stack's references hold smaller ones. CBC Run 5,
-      `event-tickets`, is born with all of them.
+      `event-tickets`, was born with all of them.
       Ideas:
       - examples stripped to a description of what must be done.
       - examples kept, drawn from a domain no CBC Run will build.
       - examples kept where a reader learns, gone where a CBC Run acts.
-      Trigger: CBC Run 5's CBC Run Reading.
+      - a second worked example on another kind of problem, keeping
+        this one: CBC Run 5 framed two Responsibility Areas and a
+        LAYER-5 not empty (its CBC Run Reading, §4, *What run 5 teaches
+        the worked example*).
+      Trigger: WORK-17 of CBC Run 5's CBC Run Reading is worked, giving this
+               item the reading's worked-example section.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §10, *Examples in the concept, the conventions and the approaches*.
 
@@ -181,20 +191,25 @@
         user's memory files only. The Agent Model §6 states the rule;
         the Tool Binding (`docs/conventions/agent-arrangement/` §5,
         *The Claude Code Tool Binding*) would hold the mechanics.
-      Trigger: CBC Run 5's CBC Run Reading, with the lines gathered by then.
+      Trigger: WORK-17 of CBC Run 5's CBC Run Reading is worked, giving this
+               item that CBC Run 5 delegated nothing; with the lines
+               gathered by then.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, *How work is run by agents*; `.claude/decisions.md`, 2026-10-22, the account Agent Skills.
 
 - [ ] Evaluate the auto-run Approach on Trial, for preparing a
       full-auto CBC Run (2026-10-22, the Plan Step that birthed CBC Run 5).
-      Context: drafted and used once, for CBC Run 5
-      (`.claude/approaches-on-trial/auto-run.md`, its use note). Its
+      Context: drafted for CBC Run 5 and used twice, for CBC Runs 5
+      and 6 (`.claude/approaches-on-trial/auto-run.md`, its use note;
+      CBC Run 6's note waits for its birth Plan Step's close). Its
       open questions are CBC Run 5's CBC Run Reading's to answer: what in the
       CBC Run Hand-off is general enough for the Container Group, and whether the
       light read of the last CBC Run cost CBC Run 5 anything. Evaluated
       before that, every piece would end on trial and be judged
       again.
-      Trigger: CBC Run 5's CBC Run Reading, with its lessons in hand.
+      Trigger: WORK-10 of CBC Run 5's CBC Run Reading lands, putting
+               the reading's nine lessons into the auto-run Approach
+               on Trial.
       See: devlog 2026-10-22.
 
 - [ ] Decide how a Work Approach and an Output Shape divide an output: the
@@ -303,8 +318,7 @@
         and the missing-context finding. What a check is
         in the Idea-to-Output Model; when each runs, in its own
         convention.
-      Trigger: the refinement's close, once Refinement Round 2 has swept one
-               home and shown what a sweep finds.
+      Trigger: the refinement's close.
       See: devlog 2026-10-21, evening; `TODO-CONVERSATION-MEMORY.md`
       §11, *How work is run by agents*, the `claude-md-management` part, and §14, *A sweep, and what looking back is*.
 
@@ -701,7 +715,7 @@
       (`docs/conventions/exchange/` §4, *The Delivery Take*).
       Once so far; checked by hand at `e6538f6`: no staged path was new.
       The Method Group's four Output Shapes sit at CBC Run 3's own `.claude/shapes/`
-      paths (ADR-0052); the next CBC Run Birth is where they first land.
+      paths (ADR-0052); they first landed at CBC Run 5's CBC Run Birth.
       Ideas: in the exchange-deliver Agent Skill, the staged paths against the
              CBC Run's files that are not at its Delivery Pin.
       Trigger: the next delivery that ships a path new to the CBC Run.
@@ -739,23 +753,12 @@
       only at a Plan Step Gate. A Newborn CBC Run writes its first tests without it,
       and its first Invariant Slice Close reads them against it: the
       differences are the measurement. CBC Run 4 held CBC Run 3's Output Shape from
-      birth, so CBC Run 5 is the first clean one, unless it reads the
-      Output Shapes at birth (the item on `.claude/shapes/`). The cbc-slice Agent Skill
-      holds most of its lessons, so tests from the Agent Skill alone may
-      meet it.
-      Trigger: CBC Run 5's first Invariant Slice closing.
+      birth, so CBC Run 5 is the first clean one: since ADR-0061 a Newborn CBC Run reads its Output Shapes at the Plan Step Gate, not at birth.
+      The cbc-slice Agent Skill holds most of its lessons, so tests from the Agent Skill alone may meet it.
+      CBC Run 5's CBC Run Reading counts three differences at SLICE-1 (§4) and does not list them.
+      Trigger: the Plan Step that works the rest of CBC Run 5's CBC Run
+               Reading, after the refinement.
       See: devlog 2026-10-08; and 2026-10-10.
-
-- [ ] Watch whether the next Newborn CBC Run adds the ground-must-be-up
-      rule to its Entry File unasked (2026-09-04, ADR-0013's scope
-      boundary).
-      Context: the shipped Entry File teaches this addition and no Agent Skill
-      prompts it. CBC Run 3 answered the CBC Bootstrap half: its Entry
-      File now states only what never changes. At Infrastructure Establishment it
-      added no Local Rule, at no visible cost; a costly miss would
-      be evidence for an Agent Skill line.
-      Trigger: the next CBC Run Birth's Step 3 close.
-      See: devlog 2026-09-12, later.
 
 - [ ] Decide which ideas here are Idea Models (2026-10-24, the
       reviewer).
@@ -779,8 +782,7 @@
         a refinement after, and a finding's cause the way back. A
         section of the Idea-to-Output Model, with its Chain Links and
         its way up, or with the one-home idea if that becomes a model.
-      Trigger: the refinement's close, once facts-in-sync, whose
-               subject is the first idea, has lived through Refinement Round 2.
+      Trigger: the refinement's close.
       See: ADR-0063; `30eb42e:TODO-CONVERSATION-MEMORY.md` §1;
       `TODO-CONVERSATION-MEMORY.md` §29, *Two checks on text kept
       true*.
@@ -816,8 +818,10 @@
       carries no Fact Reference is found by no grep and no Change Walk. The
       check of ADR-0070 asks it of each new or changed
       line at the commit. Only the refinement's Refinement Rounds read the whole
-      repo for it today: their Dependencies Finding Kind, which Refinement Round 2's
-      close read ran with seven agents and 52 findings.
+      repo for it today: their Dependencies Finding Kind, which two of Refinement
+      Round 2's seven close-read agents ran, with 19 findings. The last
+      read found it missed in text written after the check: FINDING-1625
+      (`9435842`, 2026-10-30) and FINDING-1626 (`683febc`, 2026-11-01).
       Ideas:
       - its own piece of work: not the sweep, a grep at a plan's
         close, and not session end, which only records.
@@ -827,17 +831,14 @@
       - one Finding Kind per agent; other Finding Kinds may share the read, each
         with its own agent.
       - it reads against the reference's form
-        (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*) once the settled form is
-        written there.
+        (`docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is*).
       - a second Finding Kind for the same read: direction (ADR-0071). A
         line in an Idea Model or a manual that relies on a lower text is
         found by no grep either: telling relying from naming takes
         a read. Done by hand on 2026-10-28: the three Idea Models and 67
         manual paragraphs, 6 found, 3 of them references left at a
         fact's old home when it moved (`b7c17ae`).
-      Trigger: a read finds a missing Fact Reference in text written
-               after the per-commit check is in force, or a reference
-               pointing down in text written after ADR-0071.
+      Trigger: the refinement's close.
       See: devlog 2026-10-28; `TODO-CONVERSATION-MEMORY.md` §21, *A full read for missing fact references*.
 
 - [ ] Test Fact References and foundations as a whole: name every
@@ -927,13 +928,12 @@
       Context: so a stranger, or future-you, can read, cite and copy
       from this repo without the archive. Four items of its own:
       - a CHANGELOG entry for the release;
-      - README true for a stranger;
+      - README true for a stranger, who meets the method's words in the chapters (`delivery/method/docs/glossary/method.md` lists them);
       - `docs/models/` checked against the repo, since `CLAUDE.md`
         sends a stranger there;
       - known issues filed here.
       PLAN held it until ADR-0057.
-      Trigger: the reviewer names it, after the Plan Step that runs CBC
-               Run 5's CBC Run Birth closes.
+      Trigger: the reviewer names it, after the refinement's close.
       See: ADR-0057, decision 4.
 
 - [ ] Decide what our CHANGELOG tracks, and how the Record Stub asks it
@@ -994,8 +994,9 @@
       held it rather than declined: one instance is not an Output Shape.
       CBC Run 3 says SL-2 did not lean on it; SL-2 faces no race.
       CBC Run 4 rebuilt CBC Run 3's problem from CBC Run 3's copies, so it
-      cannot be the second CBC Run.
-      Trigger: CBC Run 5 reaching the same gap unprompted.
+      cannot be the second CBC Run. CBC Run 5's CBC Run Reading has
+      nothing on it.
+      Trigger: a CBC Run Reading finds a CBC Run writing it unprompted.
       See: devlog 2026-09-17, later still.
 
 - [ ] Move the Agent Skills' `foundation` to concept v2 at the release
@@ -1020,16 +1021,6 @@
         (ADR-0058).
       Trigger: an Agent Rule we would ship that one CBC Run alone has lived.
       See: devlog 2026-10-08.
-
-- [ ] Give the method a glossary (2026-10-08, CBC Run 3).
-      Context: its words are defined where each is first used;
-      tripwire, witness, fold, fence and possession appear only in
-      the Agent Skills, never in the chapters a reader starts from, and
-      the Structural Wall Check joins them. Whether a list beside the
-      chapters, or a chapter's, is open. Since `fbd1c5e` each CBC Run
-      starts its own glossary at CBC Framing; the method has none.
-      Trigger: Release's README item, where a stranger first needs
-      the words.
 
 - [ ] Number the concept chapters' sections (2026-09-30).
       Context: their `##` headings are unnumbered, and nothing points
@@ -1171,17 +1162,6 @@
       Trigger: an agent found settling what was the reviewer's.
       See: devlog 2026-10-01.
 
-- [ ] Watch whether the worked example anchors a CBC Run's CBC Framing
-      (2026-09-17, the reviewer).
-      Context: an invented order service with an idempotency Invariant Slice
-      could steer a CBC Run toward that kind of problem. No evidence in three
-      CBC Runs; one weak signal — the example and CBC Run 3 both land on
-      one Responsibility Area.
-      Ideas: a second example on another kind of problem, keeping this one.
-      Trigger: the next CBC Framing read on a different kind of
-      problem.
-      See: devlog 2026-09-17, later.
-
 - [ ] Could a project need its own variant of a shipped Agent Skill?
       (2026-09-17, the reviewer)
       Context: an Agent Skill is the same for every project; what one
@@ -1200,10 +1180,11 @@
       classes. CBC Run 3 asks for a level between "single checked entry
       path" and "code review". It met it again in SL-2 and SL-4, and
       CBC Run 4 rebuilt the same problem from CBC Run 3's copies, so neither
-      is a second CBC Run. The hierarchy lives in
+      is a second CBC Run, and CBC Run 5's CBC Run Reading has nothing on it. The hierarchy lives in
       `concept/02-guarantees-and-walls.md` and both of the cbc-slice Agent Skill's files: a
       concept change, with an ADR and the version question (ADR-0003).
-      Trigger: CBC Run 5 meeting a System Guarantee held by absence.
+      Trigger: a CBC Run Reading finds another CBC Run meeting a System
+               Guarantee held by absence.
       See: devlog 2026-09-15; and 2026-10-10.
 
 - [ ] Decide whether the worked example shows an Invariant Slice that
