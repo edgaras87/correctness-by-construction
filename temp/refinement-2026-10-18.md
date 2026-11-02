@@ -4479,6 +4479,9 @@ Decided by the reviewer, 2026-11-02, during the work:
 - **FINDING-1488,** the agent's call reversed at the Foundation Check: project-recording §14 says a section goes with its item, so §7, §8 and §26 go, and the header gains no "Item: none".
 - **DECISION-52's tag:** a tried Enemy Collision where nothing dies is `HOLDS-<n>`, numbered on its own.
 
+Decided by the reviewer, 2026-11-02, after the work:
+- **The read again is skipped** (`.claude/approaches-on-trial/refinement.md` §2.9, *The last read*), because the reviewer is out of tokens. The refinement closes on this read's work. §2.9 stands as written: this is a one-time departure for budget, not a lesson for the Approach on Trial's evaluation.
+
 ### DECISION-49's pass
 
 The ending of each TODO item whose trigger looked passed, drafted by the agent and taken by the reviewer, 2026-11-01. Lines are `TODO.md`'s at `1ce79f9`. CBC Run 5's CBC Run Reading exists; its work waits in the stopped Plan Step "Take CBC Run 5's lessons for CBC Run 6". The TODO edits land with round 1's layer 4.
