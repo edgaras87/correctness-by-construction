@@ -3,7 +3,7 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/) ·
 Versioning: <what is a version here? An app releases
-[SemVer](https://semver.org/); a Concept Repo versions its concepts;
+[SemVer](https://semver.org/). A Concept Repo versions its concepts.
 CBC Framing decides. The answer replaces this placeholder.>
 
 <!-- Write entries WHEN the change lands, in the user's words

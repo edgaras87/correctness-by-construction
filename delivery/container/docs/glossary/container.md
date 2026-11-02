@@ -104,5 +104,6 @@
 - **Idea Model** — a Concept Deliverer's text stating an idea any
   repository can adapt; this project holds none and may meet the
   word in a delivered Agent Skill.
-- **Glossary Name** — the name of a thing this project defines: two
-  or more words, capitalized, written exactly; what this file lists.
+- **Glossary Name** — the name of a defined thing: two or more
+  words, capitalized, written exactly. This project's own are listed
+  in `docs/glossary.md`, the delivered ones in `docs/glossary/`.

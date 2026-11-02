@@ -29,6 +29,7 @@ Detail only the next 1–2 Plan Steps finely; keep later Plan Steps coarse, the 
 ## Step 0: <first Plan Step, e.g. "Bootstrap">
 
 Goal: <one sentence>.
+Now: <where the Plan Step stands, one line>
 Gate:
 - [ ] <verifiable fact, not an intention>
 - [ ] <verifiable fact>
@@ -37,6 +38,7 @@ Notes:
 ## Step: <next Plan Step>
 
 Goal: <one sentence>.
+Now: <where the Plan Step stands, one line>
 Gate:
 - [ ] <criterion>
 - [ ] <criterion>
@@ -45,10 +47,12 @@ Notes:
 ## Step: <coarse placeholder — detail when a project reaches it>
 
 Goal: <one line>.
+Now: <where the Plan Step stands, one line>
 Gate: TBD — depends on <decision that unlocks it>.
 
 ## Step N: <last Plan Step, e.g. "Release">
 
+Now: <where the Plan Step stands, one line>
 Gate:
 - [ ] <the facts that make this project done or shipped>
 Notes:

@@ -4,7 +4,7 @@ A backend built by [correctness-by-construction](docs/concept/).
 Its design is derived from one Falsifiable Promise, by asking what
 must never happen before what it should do. Every invariant is held
 by a Structural Wall, and an Evidence Test that creates its
-adversity proves the wall. The problem is not yet chosen. It arrives
+adversity proves the Structural Wall. The problem is not yet chosen. It arrives
 with the CBC Run Briefing that opens CBC Framing, and this paragraph
 is then derived again from the CBC Framing Intent
 ([PLAN.md](PLAN.md), Step 1). Until then the repository holds the
@@ -26,7 +26,7 @@ concept; start with [00-cbc.md](docs/concept/00-cbc.md).
 | Devlog | [devlog/](devlog/) | Day-to-day work, dead ends, open questions |
 
 <!-- A line here is true now, and meant for someone arriving from
-     outside. What changes weekly is PLAN.md's; why is the ADRs'; how
+     outside. What changes weekly is PLAN.md's. Why is the ADRs'. How
      it went is the devlog's. A missing section is not an omission. It
      arrives when a Plan Step Gate makes it true, since the README says
      only what is already true. Once the project runs: its prerequisites, the one command

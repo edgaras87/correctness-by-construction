@@ -25,7 +25,7 @@
      nothing has been read, and the first Delivery Note sets it. Every later
      delivery entry carries both (.claude/rules/delivered-copies.md,
      rule 1). If a placeholder still shows, the Pure Seed was not run;
-     fix it before the bootstrap commit.
+     fix it before this file is first committed.
      Why the log is as it is: (the Concept Deliverer's docs/conventions/agent-arrangement/
      §3.4, `.claude/decisions.md`).
      foundation: the agent-arrangement convention -->
