@@ -116,6 +116,11 @@ when it is written. A plan writes every subject
 before any lands. Counted only at each boundary, a long one lands
 long, or is rewritten there with nothing in the plan saying why. *Its story: devlog 2026-10-08; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
 
+A plan whose later commits are provisional gives them no subject yet.
+Each is then written at its commit, and counted there, by script,
+before it lands.
+*Its story: devlog 2026-11-02, the refinement Plan Step's lessons.*
+
 ### 2.9 The agent's files
 
 A commit that touches them is kept apart from everything else
@@ -123,6 +128,10 @@ A commit that touches them is kept apart from everything else
 a records commit planned to carry an Agent Skill's correction has to be
 split when it opens.
 *Its story: devlog 2026-11-01, the last read's work, pass 1 and most of pass 2.*
+
+`COMMIT-PLAN.md` is one of them. A plan opened or revised beside a
+TODO line or an ADR is two commits: the plan's, then the record's.
+*Its story: devlog 2026-11-02, the refinement Plan Step's lessons.*
 
 ### 2.10 The sweep
 

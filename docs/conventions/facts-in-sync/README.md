@@ -244,7 +244,12 @@ Placing an Approach on Trial into a convention is such a move
 (ADR-0070). A commit plan's sweep looks again before its close
 (`docs/conventions/commit-plan/` §2.10, *The sweep*).
 
-*Its story: devlog 2026-10-19.*
+A sweep that replaces a word across files, such as a Name for an
+English word, re-reads each sentence it changes for what it now
+claims. The grep finds every word; only the read finds a sentence
+the new word made false.
+
+*Its story: devlog 2026-10-19; devlog 2026-11-02, the refinement Plan Step's lessons.*
 
 ### 3.4 A decision citation
 
