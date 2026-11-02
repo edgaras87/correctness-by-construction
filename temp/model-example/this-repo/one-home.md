@@ -1,9 +1,14 @@
 # One home per fact, in this repo
 
-<!-- Layer: the project version
+<!-- Layer: the project text
      (temp/model-example/layers.md). -->
 
-**Its idea:** `temp/model-example/idea/one-home.md`, as of 2026-11-02.
+**Draws on:** `temp/model-example/idea/one-home.md`, as of 2026-11-02,
+all of it.
+
+## Wiring
+
+1. **A way to search the texts:** `grep` over the repo.
 
 ## Answers
 
@@ -14,7 +19,7 @@
    section is added, and every shift moves pointers.
 3. **Homes, by kind of fact:**
    - an idea's reasoning: the idea;
-   - a choice this repo made: the project version;
+   - a choice this repo made: the project text;
    - a step: the Work Approach;
    - where work stands: the plan and the backlog;
    - what happened: the history, never a home for a living fact.

@@ -66,9 +66,9 @@ Each fact is written in one place, its home. Elsewhere, point at it.
 6. How many pointers make a fact core, changed only on purpose.
 7. Who checks a change: one agent, or several.
 
-## Links to other ideas
+## Needs
 
-None yet.
+1. **A way to search the texts** for a pointer's form.
 
 ## Changes
 
