@@ -419,9 +419,9 @@ with its test and its record:
 3. **The folds.** Each contract becomes an Invariant Slice Fold in
    the first Invariant Slice that consumes it, its check going with
    it. The Invariant Slice Registry is written, carrying the CBC
-   Framing Reconciliation: every CBC Framing Concern accounted for as
-   Invariant Slices and Invariant Slice Folds, so nothing is silently
-   dropped.
+   Framing Reconciliation: every Enemy Collision Kill accounted for as
+   Invariant Slices, Invariant Slice Folds, deferrals or Scope
+   Exclusions, so nothing is silently dropped.
 
 The order is an *expectation*, not a commitment. Derive a presumption
 order, by what each proof takes as already standing. Decide the

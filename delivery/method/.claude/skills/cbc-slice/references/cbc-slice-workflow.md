@@ -37,7 +37,7 @@ Skill Stages go. This is the minimum every Invariant Slice Record needs: where e
 Agent Skill Stage's output goes, and one Invariant Slice Guarantee
 Block per Invariant Slice Guarantee. The Invariant Slice Record
 Shape, in `.claude/shapes/`, adds to it and says how each part reads.
-It is read at the Invariant Slice Close, never while writing. Beside
+It is read at the Invariant Slice's Plan Step Gate, never while writing. Beside
 each part, the Agent Skill Stage that writes it.
 
 ```
@@ -128,11 +128,9 @@ option chosen at one size can lose at another.
 
 **Why a trusted writer is not walled against.** Any path that goes
 around the Structural Wall makes the Invariant Slice Guarantee
-false, so every write path goes through the Structural Wall. But an
-Invariant Slice Guarantee cannot wall against a writer who can
-remove the Structural Wall, such as the store's superuser, or the
-identity the System Definition names as the system's own. Trying
-turns every Invariant Slice into a defence with no end.
+false, so every write path goes through the Structural Wall. Why a
+writer who can remove the Structural Wall is trusted instead:
+(`.claude/skills/cbc-framing/references/cbc-framing-workflow.md`, *Stage 2 — Name the enemies…*).
 
 **Why the surface is minimal.** The door exists because the
 invariant needs one, and an Invariant Slice is not a feature.
@@ -211,7 +209,7 @@ writes its own, as the shapes-lifecycle Agent Rule says
 An Output Shape inside this Agent Skill would be read while the
 Invariant Slice Record is written, and the Invariant Slice Record would follow it instead of showing
 where it is wrong. Whether an output is worth a new Output Shape is a
-judgement the project makes when it makes that output, not a step of this
+judgment the project makes when it makes that output, not a step of this
 Invariant Slice Close. An Output Shape is read only at the Invariant Slice Close, for reasons the shapes-lifecycle Agent Rule gives
 (`.claude/rules/shapes-lifecycle.md` §2, *Where an Output Shape lives*).
 

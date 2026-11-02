@@ -161,11 +161,12 @@
 - **Invariant Slice Fold Candidate** — a CBC Framing Concern marked at the cbc-framing Agent Skill's Stage 3 as one that may become an Invariant Slice Fold
   (`.claude/skills/cbc-framing/SKILL.md`).
 - **CBC Framing Reconciliation** — the Invariant Slice Registry's line
-  that accounts for every CBC Framing Concern as Invariant Slices or
-  Invariant Slice Folds, a count of zero included
+  that accounts for every Enemy Collision Kill as Invariant Slices,
+  Invariant Slice Folds, deferrals or Scope Exclusions, a count of
+  zero included
   (`.claude/skills/cbc-framing/SKILL.md`).
 - **CBC Framing Derivation** — `docs/system/framing/derivation.md`:
-  how each stage of CBC Framing ran, kept for good
+  how each Agent Skill Stage of CBC Framing ran, kept for good
   (`.claude/skills/cbc-framing/SKILL.md`).
 - **CBC Framing Derivation Appendix** — a file beside the CBC Framing
   Derivation, only for bulky sweep output

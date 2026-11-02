@@ -120,9 +120,9 @@ Check these before asking the reviewer to close an Agent Skill Stage.
   the Invariant Slice Split Test. An Invariant Slice Fold goes into
   the Correctness Specification of the Invariant Slice that consumes
   it. The Invariant Slice Registry carries the CBC Framing
-  Reconciliation: every CBC Framing Concern accounted for as
-  Invariant Slices and Invariant Slice Folds, nothing silently
-  dropped. It also carries one `chosen-next` Invariant Slice. The
+  Reconciliation: every Enemy Collision Kill accounted for as
+  Invariant Slices, Invariant Slice Folds, deferrals or Scope
+  Exclusions, nothing silently dropped. It also carries one `chosen-next` Invariant Slice. The
   order is an expectation, decided again at each Invariant Slice
   Close.
 

@@ -7,9 +7,9 @@ foundation: concept v1
 # Invariant Slice — one invariant made real
 
 Carry one Invariant Slice, one invariant × its adversity, to
-demonstrated evidence. The completion test is single and
-non-negotiable: **the test that creates the adversity exists and
-passes.** No evidence, no closed Invariant Slice.
+demonstrated evidence. The completion test is non-negotiable:
+**the Structural Wall stands, and the test that creates the
+adversity had its Red Run and passes.** No evidence, no closed Invariant Slice.
 
 This file says what to do at each Agent Skill Stage, and each one's
 Gate. `.claude/skills/cbc-slice/references/cbc-slice-workflow.md`
@@ -97,6 +97,9 @@ explicitly if it is not already recorded.
    GUARANTEE-1", "SLICE-4 EVIDENCE-3 · GUARANTEE-2 — KILL-12". CBC
    Framing's tags (KILL, FOLD, FACT, NOT-OURS, …) are used as CBC
    Framing wrote them.
+
+6. **Set the Invariant Slice Entry to `in-progress`** when the
+   Correctness Specification lands.
 
 **Gate:**
 1. **Zero mechanisms.** If the Correctness Specification mentions a
@@ -233,7 +236,7 @@ Red Run is not known to catch anything.
    The reasons stay in the Invariant Slice Record. Then the order is decided again,
    with its reason written.
 3. **Where this Invariant Slice changed how the system is built, add
-   or change rows in `ARCHITECTURE.md`'s Invariants table,** as its
+   or change rows in `ARCHITECTURE.md`'s Invariants section,** as its
    header comment says.
 4. **Last, read what the Invariant Slice made against the Output
    Shapes in `.claude/shapes/`:** the method's copies, and any the

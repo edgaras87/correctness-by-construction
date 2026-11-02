@@ -12,7 +12,8 @@ method work.*
 The three CBC Framing Exports of `.claude/skills/cbc-framing/SKILL.md`
 (*The CBC Framing Exports*): `docs/system/intent.md`,
 `docs/system/definition.md` and `docs/system/registry.md`, the
-Invariant Slice Registry with a **`chosen-next` Invariant Slice**.
+Invariant Slice Registry with a **`chosen-next` Invariant Slice** and
+its CBC Framing Reconciliation.
 
 Why: the cbc-slice Agent Skill's Stage 1 takes the Invariant Slice
 Entry *as written*. Without the CBC Framing Exports, there is nothing
