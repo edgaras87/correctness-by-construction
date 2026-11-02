@@ -4523,3 +4523,90 @@ The readers' 262:
 - **by cause:** 192 missed at a change, 54 older than the rule, 14 the rule unclear, 1 known and deferred to TODO, 1 not traced.
 
 By reader, before merges: SL1 15, SL2 23, SL3 6, SL4 5; Agreement, ours 17, what ships 15; One home, ours 8, what ships 15; Dependencies, ours 21, what ships 13; Lessons, ours 8, what ships 18; Layout, ours 10, what ships 12; Writing A 7, B 10, C 3, D 6, E 15, F 15, G 8, H 12, I 10.
+
+### The work (§2.7)
+
+One Change Set, `COMMIT-PLAN.md`, from `f92d6b7` to its close: 385 findings, every one ended. Written from `git log`: each commit, and the findings its body names. A finding named in two commits landed in parts, or a follower carried it to the other side of the agent/docs split.
+
+- `9505824` docs: facts-in-sync's rules take the decisions: 1447, 1517, 1553
+- `a998c32` fix(delivery): shipped lines follow facts-in-sync: 1447, 1553
+- `25b2b04` docs: writing manual takes the decisions: 1453, 1456, 1535, 1728
+- `ae5c1dc` chore(agent): our writing rule follows its manual: 1456, 1520, 1755
+- `cc8c927` fix(delivery): container's writing rule follows: 1456, 1535, 1763
+- `f2682a3` docs: a CBC Run receives Work Approaches: 1412, 1416, 1437, 1466, 1591, 1596, 1729
+- `eb85cce` fix(delivery): the container holds Work Approaches: 1527, 1539
+- `7f07dc6` docs: Agent Skill Stages from Stage 0, by §1.4: 1525
+- `c3f9e2c` chore(agent): exchange Agent Skills' headings: 1525, 1626
+- `027c228` docs: TODO points at the exchange for a reading: 1626
+- `f081e65` fix(delivery): container glossary's Agent Skill Stage: 1525
+- `576caba` chore(agent): our rules name delivered glossaries: 1516, 1518
+- `a763ed1` fix(delivery): delivered-copies covers glossaries: 1529
+- `997abe5` docs: records name the delivered glossaries: 1436, 1478
+- `7544def` docs: trials point at their TODO items: 1425, 1431, 1451
+- `2cbefbe` chore(agent): auto-run's rejection says when: 1513
+- `0d3c23a` docs: CBC Run Birth, the event: 1458, 1542
+- `9fa370a` fix(delivery): a Name's home in the CBC Run's seat: 1650 to 1652, 1758, 1759, 1765
+- `056d14a` docs: TODO holds the Conversation Memory trial: 1431
+- `efefb47` chore(agent): held Agent Skills take references: 1633 to 1636, 1639, 1640, 1645, 1649
+- `6de7328` fix(delivery): the container's held copies follow: 1634, 1639, 1643 to 1645, 1647 to 1649
+- `315f643` docs: exchange's Delivery Take, held and logged: 1444, 1530, 1531
+- `89375da` fix(delivery): delivered-copies and its glossary: 1444, 1530, 1531
+- `dbf26f3` docs: the rules-in-force list's place: 1537
+- `7675552` fix(delivery): retrospective and the Record Stub: 1537, 1538
+- `2ae23a1` docs: the devlog in short sentences: 1705, 1731
+- `c7d4eec` fix(delivery): the devlog Record Stub follows: 1766
+- `c0e133f` docs: a fact the agent misses by not noticing: 1714
+- `f194796` chore(agent): our Entry File's three tests: 1751, 1752
+- `36af646` docs: "Real question" in plain words: 1740
+- `24181bf` chore(agent): auto-run's "Real question", plain: 1748
+- `787a212` docs: the conventions manual and the index: 1411, 1413 to 1415, 1417, 1418, 1588 to 1590, 1703, 1704, 1724
+- `e32725a` docs: project-recording, its last read findings: 1419 to 1424, 1426 to 1430, 1432, 1592, 1593, 1706 to 1709
+- `7cc0aa6` docs: project-recording names both channels: 1432
+- `372af7e` docs: three manuals, their last read findings: 1434, 1435, 1438, 1439, 1441 to 1443, 1595, 1597 to 1600, 1715 to 1717
+- `dda6f45` docs: exchange and facts-in-sync, last read findings: 1445, 1446, 1601 to 1603, 1718 to 1723
+- `807cf10` chore(agent): our files take facts-in-sync's parts: 1446
+- `1b744bf` docs: five manuals, their last read findings: 1448 to 1450, 1452, 1454, 1455, 1457, 1604 to 1615, 1725
+- `13e4847` fix(delivery): Hygiene Base names the CBC Bootstrap: 1448
+- `91d1e5c` docs: the glossary and the Idea Models: 1435, 1459 to 1465, 1467 to 1473, 1616 to 1618, 1726, 1727, 1730
+- `5dec14f` docs: the concept's chapters, editorial again: 1433, 1594, 1710 to 1713
+- `9a79e8c` docs: chapter 00 names design-before-code's gap: 1433
+- `053cdab` docs: two cases point at their story: 1443, 1599, 1612
+- `9a22250` docs: ARCHITECTURE and README, last read findings: 1427, 1474 to 1477, 1479, 1485, 1486, 1619 to 1622, 1735
+- `51e314b` fix(delivery): the other stack points at exchange: 1620
+- `bf94ea2` docs: PLAN, its last read findings: 1480 to 1484, 1732 to 1734
+- `9d8ca44` fix(delivery): playbook's Close reference, one form: 1481
+- `7af6189` docs: TODO, DECISION-49's pass: 1490 to 1493, 1495, 1504 to 1507, 1509 to 1511, 1625, 1626
+- `eec14ca` docs: TODO, its other last read findings: 1494, 1496 to 1503, 1508, 1623 to 1625, 1738, 1739, 1741 to 1747
+- `cc2d16b` docs: temp/ and the Conversation Memory: 1487 to 1489, 1736, 1737
+- `307e2bf` docs: the manual's form, a rule beside its headings: 1515
+- `fddb68d` chore(agent): our rules and log, last read findings: 1514, 1515, 1519, 1628 to 1632, 1753, 1754
+- `dc52440` chore(agent): our Agent Skills and trials, last read: 1512, 1521 to 1524, 1627, 1637, 1638, 1749, 1750
+- `8871e84` fix(delivery): commit-messages names Approaches on Trial: 1521
+- `ea16c1e` fix(delivery): container rules and skills, last read: 1526, 1528, 1532 to 1536, 1641, 1642, 1646, 1759 to 1762, 1764
+- `59ef042` chore(agent): approach-drafting points at PLAN.md: 1646
+- `e6403b9` fix(delivery): container stubs and glossary, last read: 1540, 1541, 1756, 1757, 1767, 1768
+- `eb822da` fix(delivery): Pure Seed, playbook, Local Map, last read: 1421, 1543 to 1546, 1570, 1571, 1653 to 1659, 1668 to 1671, 1769, 1770
+- `e97037e` fix(delivery): the method's Output Shapes, last read: 1547 to 1552, 1660 to 1663, 1771, 1772
+- `127f617` fix(delivery): a collision where nothing dies, HOLDS: 1550, 1552
+- `fffd1c3` fix(delivery): the cbc-framing Agent Skill, last read: 1553 to 1562, 1664 to 1666, 1773 to 1782
+- `0f3ce94` fix(delivery): the cbc-slice Agent Skill, last read: 1563 to 1569, 1667, 1783, 1784
+- `12735dc` fix(delivery): the cbc-bootstrap Agent Skill, last read: 1572 to 1579, 1587, 1672 to 1694, 1785 to 1789
+- `f91f893` fix(delivery): infra Agent Skills, stack glossary, last read: 1572, 1580 to 1587, 1679, 1695 to 1702, 1790 to 1795
+- `20bdb4d` docs: TODO's plain rewrite keeps what is left: 1501 to 1503, 1665, 1744
+- `d3a154c` docs: FINDING-206 went before Round 3: 1503
+- `7a376c5` docs: commit-messages cites claim A1 at §12.1: 1440
+
+Endings:
+- **fixed:** 370, FINDING-1776 among them, met by 1555's fix;
+- **stand by a decision or a call:** 10: 1594 (DECISION-43); 1605, 1627, 1643, 1648 and 1682 (DECISION-45); 1710 (DECISION-46); 1765 (DECISION-47); 1771 (DECISION-37); 1559 (the agent's call);
+- **declined:** 4: 1507 and 1514, as decided; 1519, working-a-reading's Foundation Line already the exchange manual's words; 1564, CBC Run 4 still not read;
+- **left for the refinement's close:** 1, FINDING-1512, approach-drafting's "The refinement is open.", in both copies.
+
+Ended by the reviewer during the work: FINDING-1431, 1432, 1433, 1444, 1487, 1488, and DECISION-52's tag (*Decisions*, above).
+
+Departures from the plan:
+- **commits added:** 5c, 5d and 19b for rename greps; a follower for each family that crossed the agent/docs split; 32 in two, its DECISION-52 half after the reviewer named the tag; the plain-rewrite item after commit 36, and a correction to it; FINDING-1440, missed at commit 18 and found by this list;
+- **commits dropped:** 2b and 8b, their followers already agreeing;
+- **findings moved:** 1421 to the playbook's commit; 1759 taken early; 1501 to 1503 and 1744 after commit 36, by DECISION-50; 1572 to commit 36, with 1587; 1665 to TODO's plain-rewrite item, by DECISION-43;
+- **calls reversed:** FINDING-1435, declined at commit 18 and fixed at 21; FINDING-1488's call, reversed by the reviewer at the Foundation Check;
+- **a commit body wrong:** `bf94ea2` names project-recording "§3" for the Plan Step Form; it is §2.4.
