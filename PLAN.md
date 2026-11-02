@@ -373,18 +373,28 @@ Gate:
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves.
-- [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in the
-      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
-- [ ] No line of Living Text in a record the Plan Step touched, or one that
+- [x] Every link and path in the records resolves: by script, 40
+      paths not found at the root, each a CBC Run's own path, named
+      beside its owner, or pinned to a commit (2026-11-02).
+- [x] Every ADR a record cites exists (by script, 2026-11-02).
+- [x] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill: the
+      worked example and approach-drafting identical; the three held
+      Agent Skills differ only by seat, as ADR-0069 allows (2026-11-02).
+- [x] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the Plan Step changed.
-- [ ] New and changed text meets `.claude/rules/writing.md`.
-- [ ] Every commit on `refinement-2026-10-18` follows
-      the commit-messages Agent Skill.
-- [ ] No commit straddles agent and project paths
+      about something the Plan Step changed: one found in TODO, "Read
+      a CBC Run born before the refinement", and fixed (2026-11-02).
+- [-] New and changed text meets `.claude/rules/writing.md`: not read
+      whole after the last read's work, the read again skipped for
+      budget (2026-11-02, `765de0b`).
+- [-] Every commit on `refinement-2026-10-18` follows
+      the commit-messages Agent Skill. Not met, accepted by the reviewer, history not rewritten: 119 of 409 subjects
+      run past 50 characters, 21 of them 2026-11-02 (by script).
+- [-] No commit straddles agent and project paths
       (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+      Not met, accepted by the reviewer, history not rewritten: `f81450b` (`COMMIT-PLAN.md` with `TODO.md`) and
+      `4302cf2` (`COMMIT-PLAN.md` with an ADR), both 2026-10-29.
 - [ ] The Plan Step's lessons are written back where they came from:
       conventions, the playbook, the concept.
 - [ ] `CLAUDE.md` read top to bottom; each line still passes its

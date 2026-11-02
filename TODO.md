@@ -578,8 +578,8 @@
       4, 5 and 6 shows edits to text we no longer hold, and cannot be
       taken as it stands. Their Decisions Log entries and CBC Run Asks
       still say what each needed and what went wrong without it. The
-      readings come after the refinement, not before: an item taken now
-      could land in text the refinement's last read changes.
+      readings come after the refinement, which closed at `55e2bd0`, so
+      an item taken lands in text the refinement no longer changes.
       Ideas:
       - read how the CBC Run went and what it did, and ask whether
         the new structure meets each need, defines it wrongly, or
