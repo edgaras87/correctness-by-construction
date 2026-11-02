@@ -82,7 +82,7 @@ Its own decisions, its own `temp/RUN-n.md` files that brief the next CBC Run, an
 are the CBC Run's to make. Nor the agent definitions of the archive
 repo the concept came from, since the Agent Skills carry the method
 whole (ADR-0006). A CBC Run on another stack
-also takes no `spring-postgres/` (`ARCHITECTURE.md` §2.2, *The Stack Group*).
+also takes no `spring-postgres/` (`docs/conventions/exchange/` §3.4, *One group per file*).
 
 ## 6. When it lands
 
