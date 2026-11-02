@@ -55,7 +55,9 @@ section.>
 - Commit subjects follow the commit-messages Agent Skill. They are
   counted against its limit when the plan is written, not when each
   commit lands. A subject planned too long lands too long, or is
-  rewritten at its boundary with nothing in the plan saying why. The note under each
+  rewritten at its boundary with nothing in the plan saying why. A
+  subject the plan left provisional is written at its commit, and
+  counted there by script before it lands. The note under each
   commit says why it is a commit of its own; the commit body is
   written at commit time.
 - **The list may change past a point.** Commits near at hand are
@@ -94,7 +96,8 @@ Why it is so: (the Concept Deliverer's docs/conventions/commit-plan/ §1, *What 
   commit, at the boundary where its truth exists. A Change Set that closes
   a `PLAN.md` Plan Step Gate item names the commit that closes it. A change to
   the agent's own files is a commit of its own: an Agent Skill or Agent Rule corrected or added, and
-  its Decisions Log entry. It is never
+  its Decisions Log entry. `COMMIT-PLAN.md` is one of them: a plan
+  opened or revised beside a TODO line or an ADR is two commits. It is never
   folded into a records commit, since the two are kept apart
   (`.claude/skills/commit-messages/SKILL.md`, *The agent's own files*). A records commit planned to carry one has to be split
   when it opens.
