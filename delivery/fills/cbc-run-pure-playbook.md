@@ -108,7 +108,7 @@ come in its CBC Run Hand-off, never here.
       reviewer's word.
 - [ ] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md`, *Stages*, §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
 
 The records item asks for an outcome. A CBC Run may write a script
 that checks it and run it at every close. How a difference with an Output Shape is settled is the shapes-lifecycle Agent Rule's
