@@ -132,12 +132,12 @@ work.
 
 ---
 
-## Step: Review how this repo works, and what it costs  (`.claude/approaches-on-trial/goal-finding.md`)    [~]
+## Step: Review how this repo works, and what it costs  (`.claude/approaches-on-trial/intent-check.md`)    [~]
 
-Goal: this repo has goals the reviewer approved; each of its parts is
-judged against them, for what it costs and what it returns; and each
-finding has the reviewer's decision.
-Now: goal-finding, Stage 2, round 1.
+Goal: the reviewer's intent for this repo is written and locked; the
+repo is checked against it; and each place it does not hold has the
+reviewer's decision.
+Now: intent-check, Stage 2, part 1.
 Gate:
 
 **At the opening.**
@@ -148,24 +148,26 @@ Gate:
 - [x] This Plan Step Gate was written before the work started, but
       for round 1's questions: shown in chat before it, committed
       after it (2026-11-02).
-- [x] The Plan Step's Work Approach is known: the goal-finding Approach
-      on Trial, drafted for it (`ebe4deb`..`52a1061`), for the goals.
-      The phases after it have none yet (Notes) (2026-11-02).
+- [x] The Plan Step's Work Approach is known: the intent-check Approach
+      on Trial, for the intent. It replaces goal-finding, drafted for
+      this Plan Step and dropped (Notes). The phases after it have
+      none yet (2026-11-02).
 
 **The Plan Step's own items.**
 
-- [ ] The goals are the reviewer's, approved, each with a check, in
-      `temp/review.md`.
-- [ ] `README.md` states the approved goals: why the repo exists, and
+- [ ] The reviewer's intent is written, played back and locked, part
+      by part, in `temp/review.md`.
+- [ ] `README.md` states the locked intent: why the repo exists, and
       its success criteria.
-- [ ] Every part of the repo is listed with the goal it serves, what
-      it costs, and the evidence of what it returned, or "none yet".
-- [ ] Each finding has the reviewer's decision: keep, shrink, merge
-      or cut, with its reason.
+- [ ] Every part of the repo is checked against the intent: what of
+      it the part serves, what it costs, and the evidence of what it
+      returned, or "none yet".
+- [ ] Each place the intent does not hold has the reviewer's
+      decision, with its reason.
 - [ ] Each decision that changes the repo has its TODO item or its
       commit plan.
 
-**Known already.** goal-finding has no *Gates* section. Its close is the
+**Known already.** intent-check has no *Gates* section. Its close is the
 approach-drafting Approach on Trial's, the last close item below.
 
 **At the close.**
@@ -196,12 +198,15 @@ Notes:
   repo works the right way, and wants how its parts are kept and
   used, what each costs, and whether it is worth it, looked at
   before more work.
-- Stages, three phases: find the goals, by goal-finding; list and
-  measure the repo's parts against them; decide each finding, one at
-  a time. The second and third have no Work Approach yet. Each gets
-  one when it opens: goal-finding grows, or a new Approach on Trial is
-  drafted (`.claude/approaches-on-trial/approach-drafting.md`).
-- The reviewer approves the goals and decides each finding. Each
+- Stages, three phases: the intent, by intent-check; the repo checked
+  against it; each place it does not hold decided, one at a time. The
+  second and third have no Work Approach yet. Each gets one when it
+  opens: intent-check grows, or a new Approach on Trial is drafted
+  (`.claude/approaches-on-trial/approach-drafting.md`).
+- goal-finding, a loop of questions toward goals, was dropped the day
+  it opened, and the own items were rewritten from goals to the
+  intent (devlog 2026-11-02, goal-finding dropped).
+- The reviewer locks the intent and decides each finding. Each
   commit is staged and shown, and committed on the reviewer's word.
 - The two Plan Steps below stay stopped. TODO items near this one,
   such as this repo's retrospective and how work is run by agents,
