@@ -536,7 +536,7 @@
       unnumbered headings in the Method Group with a gloss after a
       dash or colon. The round read against the rule as written.
       Trigger: the refinement of this repo closes.
-      See: `temp/refinement-2026-10-18.md`, DECISION-20 (`1aa928c`).
+      See: `55e2bd0^:temp/refinement-2026-10-18.md`, DECISION-20 (`1aa928c`).
 
 - [ ] Rename the manuals, Agent Skills and Agent Rules that share a
       name (2026-10-31, the reviewer).
@@ -589,7 +589,7 @@
         why the need is gone, not only the text it touched.
       - the old words a CBC Run wrote are read through the
         refinement's Names table, under DECISION-19, at the commit
-        that last holds `temp/refinement-2026-10-18.md`; most Names
+        that last holds `temp/refinement-2026-10-18.md`, `55e2bd0^`; most Names
         hold their old word, "slice" in Invariant Slice.
       - a delivery to a CBC Run born before names the renames in its
         Delivery Note, once, since its records keep the old words.
