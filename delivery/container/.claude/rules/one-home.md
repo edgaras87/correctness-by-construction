@@ -24,8 +24,8 @@ config. Where it lives, never how it reads.
    it is built for: see the System Definition." Without the id or
    the reference, a retelling is a second home.
 3. **Make a summary say it is one.** It names its owner, and nobody
-   reads it in the owner's place. An Invariant Slice Registry entry
-   does this: it links the Invariant Slice Record it sums up.
+   reads it in the owner's place. An Invariant Slice Entry does this:
+   it links the Invariant Slice Record it sums up.
 4. **Change a fact at its home.** The links don't change, unless
    the home itself moves. In the same commit, grep the fact's id or
    path and re-read each line that carries it, with its paragraph.
@@ -42,14 +42,16 @@ config. Where it lives, never how it reads.
 
 History: the devlog, closed ADRs, commit bodies, the entries of
 `.claude/decisions.md` and `CHANGELOG.md`'s released entries. They record what was true then. They are
-never updated, so they cannot drift. The Decisions Log's header
-comment is living text.
+never updated, so they cannot drift. **Living Text** is every text
+but history. Each file's header comment is Living Text, the history
+files' included. A fact stated only in history gets a home in
+Living Text before anything retells it.
 
 ---
 
 ## Decisions
 
-- ADR-0053 — the one-home rule loads in every session
+- ADR-0053 — the one-home Agent Rule loads in every session
 - ADR-0065 — one home is facts-in-sync's
 - ADR-0070 — a retelling may stand beside its id, re-read when
   its home changes

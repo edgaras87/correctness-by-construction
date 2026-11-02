@@ -51,8 +51,8 @@ and checks.
   linked.
 - **Next CBC Run only:** what changes how a Plan Step runs: the CBC Run's Plan Steps are
   closed.
-- **Never** history: devlog entries, closed ADRs, closed Plan Step Gates,
-  released CHANGELOG versions, migrations, comments included.
+- **Never** history (`.claude/rules/one-home.md`, *Not a second home*),
+  and with it closed Plan Step Gates and migrations.
 - **The records later Plan Steps were built on** change only by a dated
   revision entry.
 - **Signed text a reader still uses,** such as an Invariant Slice Record, may
@@ -86,8 +86,8 @@ own small commits.
 
 - **A move is checked by a script,** not by reading: the same lines
   before and after. A move commit changes no words.
-- **Links point at labels,** never section numbers: "SLICE-4
-  GUARANTEE-2", not "§8".
+- **Links carry a label,** and where there is one, its section
+  number and title: "SLICE-4 GUARANTEE-2", never a bare "§8".
 - **The records check,** the Plan Step Form's closing item on
   links, paths and pairs of copies, runs before the build, after
   anything that moves files, and at the close.
@@ -129,7 +129,7 @@ history lines.
    into a few decisions for the reviewer. Records closed before an
    Output Shape changed are named, not reopened.
 3. **The Agent Skills this Plan Step taught,** each edited under the
-   delivered-copies Agent Rule with its Decisions Log entry: the commit-plan Agent Skill from how
+   delivered-copies Agent Rule (`.claude/rules/delivered-copies.md`, rule 2, *A copy may be edited in place…*) with its Decisions Log entry: the commit-plan Agent Skill from how
    the plan ran, and this Agent Skill from how the Plan Step ran.
 4. **RETRO.md:** each row names its commits; what trying a decision
    taught is written back, dated, on the decision.
@@ -140,8 +140,8 @@ history lines.
 7. **Land it.** The closing look at the landed commits, and the
    `-detail` branch that keeps what was tried, are the commit-plan Agent Skill's
    (`.claude/skills/commit-plan/SKILL.md` §4, *The lifecycle*, and §6.2, *Small commits*). The branch
-   reaches main by fast-forward, on the reviewer's word (the Plan Step
-   Form, *At the close*), and the commit plan closes.
+   reaches main by fast-forward, on the reviewer's word (`PLAN.md`,
+   *The Plan Step Form*, *At the close*), and the commit plan closes.
 
 ## Between sessions
 

@@ -65,12 +65,12 @@ the Output Shape, is shown before it is made, never applied silently:
 - **The output drifted.** The Output Shape stands; the output is brought
   to it.
 - **The Output Shape was wrong here.** The output stands; the Output Shape
-  changes: a project's own with a dated line, a delivered one under
-  the delivered-copies Agent Rule.
+  changes: a project's own in place, a delivered one under
+  the delivered-copies Agent Rule (`.claude/rules/delivered-copies.md`, rule 2, *A copy may be edited in place…*).
 - **Each had something.** The Output Shape takes what the output found,
   and the output is brought to the changed Output Shape.
 - **The output is a different kind.** Both stand, and a new Output Shape
-  starts from the output (§1, *Written from work that exists*). Either of the last three can name
+  starts from the output (§1, *Written from work that exists*). Any of the last three can name
   new work (§4, *An Output Shape naming work*).
 
 Outputs closed before a change are not reopened.
@@ -84,7 +84,8 @@ the Red Run.
 
 When an Output Shape is written or changed so that it names such a part,
 the Agent Skill that runs the work is checked. If the Agent Skill does not ask
-for that part, it is changed too, under the delivered-copies Agent Rule.
+for that part, it is changed too, under the delivered-copies Agent Rule
+(`.claude/rules/delivered-copies.md`, rule 2, *A copy may be edited in place…*).
 Otherwise the Plan Step Gate finds the part missing when it is too late to
 produce, and the work must be redone.
 
@@ -95,7 +96,8 @@ TODO's *To the deliverer* offers it. The Concept Deliverer reads it at its
 next CBC Run Reading. An Output Shape marks what any project would want (its
 skeleton) apart from this project's example (its illustration), so
 the Concept Deliverer can take one and leave the other. How an edit reaches
-the Concept Deliverer is the delivered-copies Agent Rule's.
+the Concept Deliverer is the delivered-copies Agent Rule's
+(`.claude/rules/delivered-copies.md`, rule 4, *At every Plan Step's close…*).
 
 ## 6. What this does not govern
 

@@ -49,7 +49,7 @@ its own heading.
    Write it for this work, in its own terms. Nothing is made general
    yet: what is general shows only once the work is done.
 4. **If the work is a Plan Step,** what its Notes and Plan Step Gate take from
-   the Approach on Trial is the Plan Step Form's.
+   the Approach on Trial is the Plan Step Form's (`PLAN.md`, *The Plan Step Form*).
 
 ### 2. Work
 

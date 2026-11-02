@@ -126,7 +126,7 @@ branch is deleted, and the commits to `RETRO.md` made on it are copied back to `
    `-detail` branch that keeps what was tried, are the commit-plan Agent Skill's
    (`.claude/skills/commit-plan/SKILL.md` §4, *The lifecycle*, and §6.2, *Small commits*). The branch,
    `retrospective`, reaches main by fast-forward, on the reviewer's
-   word (the Plan Step Form, *At the close*).
+   word (`PLAN.md`, *The Plan Step Form*, *At the close*).
 8. **Then apply it to this CBC Run,** before Release:
    `.claude/skills/apply-retrospective/`.
 

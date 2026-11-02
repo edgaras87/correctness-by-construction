@@ -91,7 +91,7 @@ After:
 > EVIDENCE-2: the test must be able to fail. The stored answer
 > already exists, because GUARANTEE-3 built it. So we skip the
 > lookup on the working tree, and check that the replay test goes
-> red. That Red Run is owed in the build stage.
+> red. That Red Run must happen in Stage 3, build.
 
 Same meaning, same references. It can be read once.
 

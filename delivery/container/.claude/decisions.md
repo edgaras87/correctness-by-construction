@@ -20,7 +20,7 @@
      The two placeholders in the birth entry below, the date and
      the Delivery Pin's commit, are replaced at copy time by the Concept Deliverer's
      Pure Seed. The Delivery Pin is the Concept Deliverer's commit every copy here
-     equals. Beside it the entry carries the Read-Through Commit, the
+     equals, but for their Decisions footers. Beside it the entry carries the Read-Through Commit, the
      commit of this project the Concept Deliverer last read up to. At birth
      nothing has been read, and the first Delivery Note sets it. Every later
      delivery entry carries both (.claude/rules/delivered-copies.md,
@@ -37,7 +37,7 @@
   commit-plan, exchange, agent-arrangement, visual-comparison,
   shapes, writing, retrospective, facts-in-sync.
   Approaches on Trial: approach-drafting.
-  Why: the Concept Deliverer's defaults. Their decisions are cited
-  CBC ADR-nnnn and are the Concept Deliverer's to explain.
+  Why: the Concept Deliverer's defaults. Their decisions are the
+  Concept Deliverer's to explain.
   Rejected: none here. The Concept Deliverer's ADRs hold what it
   rejected, and this project cannot open them.
