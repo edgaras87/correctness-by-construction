@@ -137,8 +137,8 @@ work.
 Goal: whether an idea-to-approach model is worth defining is decided;
 and ours is compared with its alternatives, each finding with the
 reviewer's decision.
-Now: the problem drafted, `temp/idea-model-problem.md`; next, a Work
-Approach for working it.
+Now: the model drafted and compared, `temp/model-example/`; next, the
+move plan's first idea, exchange (`temp/model-example/move-plan.md`).
 Gate:
 
 **At the opening.**
