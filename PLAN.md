@@ -132,6 +132,94 @@ work.
 
 ---
 
+## Step: Move exchange to the new layering  (the commit-plan Agent Skill, the Foundation Check)    [~]
+
+Goal: exchange stands in the layering of ADR-0081, its idea lifted
+out above one text for each seat, each step of the move counted, and
+ADR-0081 judged from the counts.
+Now: Stage 0, the three things settled before the first split
+(`temp/model-example/move-plan.md` §4).
+Gate:
+
+**At the opening.**
+
+- [x] The Plan Step's branch `exchange-move-2026-11-02` is cut from main
+      at `f49de77`, and nothing of the Plan Step was done on main
+      (2026-11-02).
+- [x] This Plan Step Gate was written before the work started (2026-11-02).
+- [x] The Plan Step's Work Approach is known: the stages its Notes
+      list from `temp/model-example/move-plan.md`, the commit-plan
+      Agent Skill for a stage of more than one commit, and the
+      Foundation Check, as Stage 0 leaves it (2026-11-02).
+
+**The Plan Step's own items.**
+
+- [ ] The three things of ADR-0081, decision 6, each have the
+      reviewer's decision, written down before the first split: which
+      of the repo's own rules pause for a moved idea, and what holds
+      in their place; how a Work Approach ships; where names live.
+- [ ] Exchange's texts are listed and counted before the first split:
+      for each, its lines, its pointers in and out, and the texts a
+      change to it touches.
+- [ ] Each of exchange's Work Approaches covers one case.
+- [ ] Exchange's manual is one text for each seat.
+- [ ] Each case has its own section in its text.
+- [ ] Exchange's idea stands in a text bound to no project, and the
+      texts under it link up to it, never sideways.
+- [ ] Each lived lesson exchange's texts held has its place: the why
+      in the idea, in its own words; the history in the ADRs and the
+      devlog (`temp/model-example/move-plan.md` §5).
+- [ ] No commit of the move adds a sideways pointer, and each fact
+      has one home at every commit (ADR-0081, decision 3).
+- [ ] Each step's counts stand beside the first ones.
+- [ ] No delivery went to a CBC Run while the move ran.
+- [ ] ADR-0081 carries its verdict, kept, changed or dropped, and
+      whether the next idea moves, both from the counts.
+
+**Known already.** Neither the commit-plan Agent Skill nor the
+Foundation Check has a *Gates* section. This Plan Step has only its own
+items.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `exchange-move-2026-11-02` follows
+      the commit-messages Agent Skill.
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-02, from the TODO item of that day and the devlog's
+  entry "the model's Plan Step closes". ADR-0081, Proposed, is judged
+  at this close.
+- Stages, from `temp/model-example/move-plan.md`:
+  - Stage 0: settle the three things (§4), and count exchange's texts;
+  - Stage 1: split each Work Approach by case (§2, step 1);
+  - Stage 2: split the manual by seat (§2, step 2);
+  - Stage 3: give each case its own section (§2, step 3);
+  - Stage 4: lift the idea out (§2, step 4);
+  - Stage 5: count, and judge ADR-0081.
+- A stage of more than one commit is a commit plan. The reviewer
+  signs each plan, and each decision the plan does not settle.
+- Main takes the branch by fast-forward on the reviewer's word.
+
+---
+
 ## Step: Birth CBC Run 6, on full auto  (`.claude/approaches-on-trial/auto-run.md`, `delivery/installs/pure-seed.md`, the Foundation Check)    [!] stopped: Refine this repo against its own rules (devlog 2026-10-29, morning)
 
 Goal: CBC Run 6 is born from this repo at one Delivery Pin on main, with the

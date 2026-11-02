@@ -34,20 +34,6 @@
 
 ## Next (each due at its trigger)
 
-- [ ] Move exchange to the new layering, by ADR-0081 (2026-11-02, the
-      reviewer).
-      Context: ADR-0081, Proposed, takes on trial the layering of idea,
-      project text and Work Approach, the repo moved to it idea by idea,
-      exchange first. Before the first split, three things are
-      settled: which of the repo's own rules pause for a moved idea,
-      how a Work Approach ships, and where names live. Then exchange's
-      Work Approaches split by case, its manual by seat, each case
-      into a section, and the idea lifted out, counted at each step.
-      The move's counts judge ADR-0081.
-      Trigger: due now, as the next Plan Step.
-      See: devlog 2026-11-02, the model drafted and set against
-      today's; `temp/model-example/move-plan.md`.
-
 - [ ] Read CBC Run 6, `checkout`, by the exchange-read Agent Skill (2026-10-29, the
       reviewer).
       Context: CBC Run 6 ran on full auto through its Release, Step 14,
