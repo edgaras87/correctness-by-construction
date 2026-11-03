@@ -1,7 +1,8 @@
 # What this repo holds, for the rebuild
 
 <!-- A kept file: every Work Approach this repo holds, the idea behind
-     each, what it points at, and the lessons it carries. The list the
+     each, what it points at, the lessons it carries, and the facts
+     many texts share. The list the
      rebuild in a new repo reads this repo by, idea by idea. Counted
      2026-11-03 at `ee8f3b0`. -->
 
@@ -135,7 +136,89 @@ the idea-to-output model, conventions and agent-arrangement. §4 point
 **Not decided:** the 5 Approaches on Trial and Conversation Memory
 (§3): each is rebuilt when its work comes up, or dropped.
 
-## 6. How it was built
+## 6. The shared facts
+
+A shared fact is a section that 5 or more pointers from other files
+name. 466 pointers name 151 sections. 31 sections take 5 or more,
+228 pointers in all: half the pointers, on a fifth of the sections.
+
+Sorted by what the rebuild does with them:
+
+**A. Replaced by the layering itself:** 6 sections, 43 pointers. The
+layering's three templates and its links-only-up say the same things.
+
+| Pointers | Files | Section |
+|---|---|---|
+| 12 | 8 | conventions §1.3, *The Foundation Line* |
+| 9 | 6 | the idea-to-output model §2, *The kinds* |
+| 6 | 5 | the idea-to-output model §3.1, *The four Chain Links* |
+| 6 | 4 | the idea-to-output model §4.2, *The upward direction* |
+| 5 | 4 | conventions §2, *The Convention Manual* |
+| 5 | 5 | conventions §2.4, *The seats* |
+
+**B. Needed on the first day, from ideas the draft order puts late:**
+7 sections, 50 pointers. They say how the agent is set up: the Entry
+File, how an Agent Rule or an Agent Skill loads, what this repo is.
+
+| Pointers | Files | Section |
+|---|---|---|
+| 13 | 10 | agent-arrangement §5.6, *Rules files* |
+| 8 | 5 | agent-arrangement §2.4, *How the Entry File is written* |
+| 7 | 3 | the agent model §4.1, *Ambient Channel* |
+| 6 | 5 | the agent model §8, *Choosing a channel* |
+| 6 | 4 | the tiers model §2.2, *Concept Repos* |
+| 5 | 4 | agent-arrangement §3.4, *`.claude/decisions.md`* |
+| 5 | 5 | the agent model §4.2, *Pulled Channel* |
+
+**C. From ideas the draft order puts early:** 4 sections, 33 pointers.
+
+| Pointers | Files | Section |
+|---|---|---|
+| 13 | 10 | commit-messages §2.3, *The `agent` scope* |
+| 7 | 5 | commit-messages §2.4, *Commit on the word* |
+| 7 | 6 | project-recording §13, *The records table* |
+| 6 | 4 | writing §2, *Why each rule* |
+
+**D. Exchange's, with the flow between repos:** 11 sections, 70
+pointers. Ideas built before
+exchange that rely on these write them as needs until exchange is
+built.
+
+| Pointers | Files | Section |
+|---|---|---|
+| 10 | 9 | exchange §3.2, *What goes* |
+| 8 | 7 | exchange §3.4, *One group per file* |
+| 7 | 6 | exchange §2.2, *The CBC Run* |
+| 6 | 4 | exchange §1, *What cannot change* |
+| 6 | 5 | exchange §6.3, *The CBC Run Reading* |
+| 6 | 4 | exchange §3.3, *A group's place in the tree* |
+| 6 | 4 | exchange §5.8, *Agent Skill Templates* |
+| 6 | 4 | the tiers model §3.5, *What holds on every flow* |
+| 5 | 5 | exchange §6, *Up from the CBC Run* |
+| 5 | 4 | exchange §4, *The Delivery Take* |
+| 5 | 4 | exchange §6.1, *Reading a CBC Run* |
+
+**E. One each:** 3 sections, 32 pointers.
+
+| Pointers | Files | Section | Where it goes |
+|---|---|---|---|
+| 19 | 7 | facts-in-sync §4, *A Canonical Description's rule* | facts-in-sync, the most pointed-at fact |
+| 8 | 7 | the shapes-lifecycle Agent Rule §3, *A difference at the close* | the CBC Run's side, with the concept |
+| 5 | 2 | the approach-drafting Approach on Trial §3, *Close* | trying a new way of working (§3) |
+
+What it changes in the draft order (§5):
+
+1. **Group B comes early.** How the agent is set up is needed at the
+   first Entry File and the first Agent Rule, so before writing (§5,
+   step 3). agent-arrangement and the agent model wait only for their
+   other parts.
+2. **Group A needs no idea of its own.** The layering, §5 step 1,
+   holds it.
+3. **Exchange is pointed at most,** 70 pointers on 11 sections. Every
+   idea built before it that relies on these holds a need until
+   exchange is built.
+
+## 7. How it was built
 
 - **Work Approaches:** every Agent Skill, Agent Rule, Approach on Trial
   and Output Shape under a `.claude/`, the playbook, the Pure Seed,
@@ -147,5 +230,8 @@ the idea-to-output model, conventions and agent-arrangement. §4 point
   model", `concept/` or "concept v1".
 - **Lessons:** distinct ADR numbers, "CBC Run" followed by a digit,
   and *Its story* lines. A lesson told without these is not counted.
+- **Shared facts:** a path to another file followed by § and a number,
+  in Living Text. A pointer by title alone, or inside its own file, is
+  not counted. A shipped copy's pointers count with ours.
 - **Not read:** what each text says. A row says what a text is for,
   from its own opening line, not whether that is true.
