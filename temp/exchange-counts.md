@@ -1,11 +1,10 @@
 # Exchange, counted
 
-<!-- A kept file for the Plan Step "Move exchange to the new layering":
-     exchange's texts counted before the first split, and again after
-     each stage, by the same method. The counts judge ADR-0081 at the
-     Plan Step's close (ADR-0081, decision 4). -->
+<!-- A kept file: exchange's texts in this repo, counted 2026-11-03,
+     before the rebuild. Set against exchange rebuilt in cbc-concept,
+     by the same method (ADR-0081, decision 7). -->
 
-## 1. Before the first split
+## 1. In this repo
 
 Exchange is 6 texts, 1,341 lines. 42 of the repo's 101 files of
 Living Text point at one of them. A change to the manual can touch 22
@@ -51,7 +50,7 @@ The manual's sections other texts point at, by section number:
 
 ## 2. How it is counted
 
-The same method runs after each stage, so the numbers compare.
+The same method runs on exchange rebuilt, so the numbers compare.
 
 1. **Exchange's texts:** the files whose Foundation Line names
    `the exchange convention`, the manual itself, and the
@@ -82,6 +81,5 @@ What the method cannot tell:
   manual, as the CBC Run's folder.
 - **A pointer is not always written as one.** A fact borrowed with no
   path or name is not counted.
-- **Names change in the move.** The method's patterns are updated to
-  the new texts' paths and names at each stage, and the update says
-  which.
+- **Names change in the rebuild.** The method's patterns are updated
+  to the new repo's paths and names, and the update says which.

@@ -132,53 +132,51 @@ work.
 
 ---
 
-## Step: Move exchange to the new layering  (the commit-plan Agent Skill, the Foundation Check)    [~]
+## Step: Rebuild in cbc-concept, until it stands on its own  (none: each step is chosen when the last is done)    [~]
 
-Goal: exchange stands in the layering of ADR-0081, its idea lifted
-out above one text for each seat, each step of the move counted, and
-ADR-0081 judged from the counts.
-Now: Stage 0, the three things settled before the first split
-(`temp/model-example/move-plan.md` §4).
+Goal: `cbc-concept`, next to this repo, writes and commits by Work
+Approaches of its own, built step by step by ADR-0081, and ADR-0081
+is judged from what the steps cost.
+Now: step 1, git hygiene in `cbc-concept`.
 Gate:
 
 **At the opening.**
 
-- [x] The Plan Step's branch `exchange-move-2026-11-02` is cut from main
+- [x] The Plan Step's branch `rebuild-2026-11-02` is cut from main
       at `f49de77`, and nothing of the Plan Step was done on main
       (2026-11-02).
-- [x] This Plan Step Gate was written before the work started (2026-11-02).
-- [x] The Plan Step's Work Approach is known: the stages its Notes
-      list from `temp/model-example/move-plan.md`, the commit-plan
-      Agent Skill for a stage of more than one commit, and the
-      Foundation Check, as Stage 0 leaves it (2026-11-02).
+- [x] This Plan Step Gate was written before the work started: first
+      for moving exchange (2026-11-02), rewritten at the re-aim,
+      before the rebuild's first step (2026-11-03).
+- [x] The Plan Step's Work Approach is known: the steps of the draft
+      order (`temp/rebuild-inventory.md` §5, *A draft order*), each
+      chosen when the last is done. No Approach on Trial drafted, on
+      the reviewer's word: start, and let the work show the next step
+      (2026-11-03).
 
 **The Plan Step's own items.**
 
-- [ ] The three things of ADR-0081, decision 6, each have the
-      reviewer's decision, written down before the first split: which
-      of the repo's own rules pause for a moved idea, and what holds
-      in their place; how a Work Approach ships; where names live.
-- [x] Exchange's texts are listed and counted before the first split:
-      for each, its lines, its pointers in and out, and the texts a
-      change to it touches (2026-11-03, `temp/exchange-counts.md` §1).
-- [ ] Each of exchange's Work Approaches covers one case.
-- [ ] Exchange's manual is one text for each seat.
-- [ ] Each case has its own section in its text.
-- [ ] Exchange's idea stands in a text bound to no project, and the
-      texts under it link up to it, never sideways.
-- [ ] Each lived lesson exchange's texts held has its place: the why
-      in the idea, in its own words; the history in the ADRs and the
-      devlog (`temp/model-example/move-plan.md` §5).
-- [ ] No commit of the move adds a sideways pointer, and each fact
-      has one home at every commit (ADR-0081, decision 3).
-- [ ] Each step's counts stand beside the first ones.
-- [ ] No delivery went to a CBC Run while the move ran.
-- [ ] ADR-0081 carries its verdict, kept, changed or dropped, and
-      whether the next idea moves, both from the counts.
+- [ ] `cbc-concept` is a git repo next to this one, with its three
+      repo files, and its first commit made.
+- [ ] It has a writing Work Approach, loaded in every session.
+- [ ] It has a commit Work Approach, and every commit after it
+      follows it.
+- [ ] Each Work Approach there follows the layering's template
+      (`temp/model-example/layers.md`, *The Work Approach*) and stands
+      alone: no pointer to this repo.
+- [ ] Each rule there is one its work needed when it was written:
+      none taken because this repo has it (ADR-0081, decision 4).
+- [ ] Each Work Approach rebuilt lists the lessons its texts here
+      held, each carried over or dropped (ADR-0081, decision 5).
+- [ ] Each step's cost, its commits and files, is in this repo's
+      devlog.
+- [ ] The step after standing on its own is chosen and written down,
+      in TODO here or in `cbc-concept`'s own records.
+- [ ] ADR-0081 carries its verdict, kept, changed or dropped, from the
+      steps' costs (ADR-0081, decision 7).
 
-**Known already.** Neither the commit-plan Agent Skill nor the
-Foundation Check has a *Gates* section. This Plan Step has only its own
-items.
+**Known already.** No Agent Skill or Agent Rule is used, so nothing is
+known already. This Plan Step has only its own items.
 
 **At the close.**
 
@@ -190,7 +188,7 @@ items.
       mentions its subject, still says "now", "today" or "not yet"
       about something the Plan Step changed.
 - [ ] New and changed text meets `.claude/rules/writing.md`.
-- [ ] Every commit on `exchange-move-2026-11-02` follows
+- [ ] Every commit on `rebuild-2026-11-02` follows
       the commit-messages Agent Skill.
 - [ ] No commit straddles agent and project paths
       (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
@@ -204,18 +202,17 @@ items.
       (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
 
 Notes:
-- Opened 2026-11-02, from the TODO item of that day and the devlog's
-  entry "the model's Plan Step closes". ADR-0081, Proposed, is judged
-  at this close.
-- Stages, from `temp/model-example/move-plan.md`:
-  - Stage 0: settle the three things (§4), and count exchange's texts;
-  - Stage 1: split each Work Approach by case (§2, step 1);
-  - Stage 2: split the manual by seat (§2, step 2);
-  - Stage 3: give each case its own section (§2, step 3);
-  - Stage 4: lift the idea out (§2, step 4);
-  - Stage 5: count, and judge ADR-0081.
-- A stage of more than one commit is a commit plan. The reviewer
-  signs each plan, and each decision the plan does not settle.
+- Opened 2026-11-02 as "Move exchange to the new layering". Re-aimed
+  2026-11-03, before any move, when moving in place proved to be
+  another system to keep; ADR-0081 changed with it. Done before the
+  re-aim, and kept: exchange counted (`ee8f3b0`), the inventory
+  (`d6fe916`, `176a571`), the draft order (`d167535`).
+- Steps, from the draft order: git hygiene, writing, commit messages.
+  The next is chosen when the last is done.
+- The work is done in `cbc-concept`. This repo holds its plan and
+  history until `cbc-concept` has records of its own. The rules of
+  this repo govern only its own commits.
+- The reviewer signs each commit, in both repos.
 - Main takes the branch by fast-forward on the reviewer's word.
 
 ---
