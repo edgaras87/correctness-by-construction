@@ -114,27 +114,39 @@ Two more ideas have a home but no Work Approach:
 
 ## 5. A draft order
 
-By what the new repo needs first. Each idea goes in whole: idea,
-project text, Work Approach.
+A draft, not a decision. The rebuild goes one step at a time, in
+`cbc-concept`, next to this repo. Each step is done before the next
+is chosen, and what a step shows may change the rest.
 
-1. **The layering:** the three templates.
-2. **repo-hygiene and commit-messages:** before the first commit.
-3. **writing:** every text after that uses it.
-4. **project-recording:** plan, devlog, TODO and ADRs, only the parts
-   used.
-5. **facts-in-sync:** once there are enough texts to drift apart.
-6. **commit-plan:** at the first work of more than one commit.
-7. **exchange,** with the Pure Seed: when the new repo first ships to
-   a CBC Run.
-8. **The concept, with its Work Approaches, shapes and retrospective:**
-   what a CBC Run uses.
+**First, the repo stands on its own:**
 
-**Waits until an idea needs it:** the agent model, the tiers model,
-the idea-to-output model, conventions and agent-arrangement. §4 point
-1 suggests few ideas will.
+1. **Git hygiene:** `git init`, the three repo files, and the first
+   commit, with a plain message.
+2. **Writing:** the rules every text needs from its first line. Only
+   those: a rule waits until the repo has the problem it solves.
+3. **Commit messages:** how it commits, and when.
 
-**Not decided:** the 5 Approaches on Trial and Conversation Memory
-(§3): each is rebuilt when its work comes up, or dropped.
+Each is a Work Approach by the layering's template
+(`temp/model-example/layers.md`, *The Work Approach*), standing alone.
+Its idea and project text come later.
+
+**Then the ideas,** written and lifted above their Work Approaches,
+read from §1 and §2. Likely next, as the work asks:
+
+- **agent setup,** when the Entry File has something to say (§6, group B);
+- **the layering's templates,** when the first idea is written;
+- **project-recording,** only the records used;
+- **facts-in-sync,** once there are enough texts to drift apart;
+- **commit-plan,** at the first work of more than one commit;
+- **exchange,** with the Pure Seed, at the first delivery to a CBC Run;
+- **the concept,** with its Work Approaches, Output Shapes and the
+  retrospective.
+
+**Replaced by the layering:** conventions and the idea-to-output
+model (§6, group A). **Rebuilt only when an idea needs them:** the
+rest of the agent model and the tiers model. **Not decided:** the 5
+Approaches on Trial and Conversation Memory (§3): each is rebuilt
+when its work comes up, or dropped.
 
 ## 6. The shared facts
 
@@ -208,12 +220,11 @@ built.
 
 What it changes in the draft order (§5):
 
-1. **Group B comes early.** How the agent is set up is needed at the
-   first Entry File and the first Agent Rule, so before writing (§5,
-   step 3). agent-arrangement and the agent model wait only for their
-   other parts.
-2. **Group A needs no idea of its own.** The layering, §5 step 1,
-   holds it.
+1. **Group B comes early.** Where an Agent Rule lives and when it
+   loads is needed at the first one, writing (§5, step 2). The rest
+   of agent setup waits for the Entry File.
+2. **Group A needs no idea of its own.** The layering's templates
+   hold it.
 3. **Exchange is pointed at most,** 70 pointers on 11 sections. Every
    idea built before it that relies on these holds a need until
    exchange is built.
