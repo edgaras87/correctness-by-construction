@@ -158,9 +158,9 @@ Gate:
       reviewer's decision, written down before the first split: which
       of the repo's own rules pause for a moved idea, and what holds
       in their place; how a Work Approach ships; where names live.
-- [ ] Exchange's texts are listed and counted before the first split:
+- [x] Exchange's texts are listed and counted before the first split:
       for each, its lines, its pointers in and out, and the texts a
-      change to it touches.
+      change to it touches (2026-11-03, `temp/exchange-counts.md` §1).
 - [ ] Each of exchange's Work Approaches covers one case.
 - [ ] Exchange's manual is one text for each seat.
 - [ ] Each case has its own section in its text.
