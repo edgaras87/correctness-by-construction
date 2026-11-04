@@ -137,7 +137,8 @@ work.
 Goal: `cbc-concept`, next to this repo, writes and commits by Work
 Approaches of its own, built step by step by ADR-0081, and ADR-0081
 is judged from what the steps cost.
-Now: step 1, git hygiene in `cbc-concept`.
+Now: wave 2 of the ideas in `cbc-concept`; the commit rule and
+`CLAUDE.local.md` wait.
 Gate:
 
 **At the opening.**
@@ -156,9 +157,10 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] `cbc-concept` is a git repo next to this one, with its three
-      repo files, and its first commit made.
-- [ ] It has a writing Work Approach, loaded in every session.
+- [x] `cbc-concept` is a git repo next to this one, with its three
+      repo files, and its first commit made (2026-11-03, `72e27e5`).
+- [x] It has a writing Work Approach, loaded in every session
+      (2026-11-03, `a36675f`).
 - [ ] It has a commit Work Approach, and every commit after it
       follows it.
 - [ ] Each Work Approach there follows the layering's template
@@ -208,7 +210,13 @@ Notes:
   re-aim, and kept: exchange counted (`ee8f3b0`), the inventory
   (`d6fe916`, `176a571`), the draft order (`d167535`).
 - Steps, from the draft order: git hygiene, writing, commit messages.
-  The next is chosen when the last is done.
+  The next is chosen when the last is done. Git hygiene and writing
+  are done. Then the work put two things first: `cbc-concept`'s TODO
+  with its Conversation Memory, and its ideas, written in waves, one
+  likely chain of ideas at a time (its `TODO.md`, the waves item).
+  The waves go beyond this Plan Step's goal; on the reviewer's word,
+  they are noted in that TODO, not opened as a Plan Step. Wave 1 is
+  written and checked. The commit rule waits.
 - The work is done in `cbc-concept`. This repo holds its plan and
   history until `cbc-concept` has records of its own. The rules of
   this repo govern only its own commits.
