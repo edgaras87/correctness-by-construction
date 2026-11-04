@@ -3,9 +3,10 @@
 Date: 2026-11-02
 Status: Proposed, opened at the close of the Plan Step "Weigh the
 idea-to-approach model"; changed 2026-11-03, before any move, from
-moving this repo in place to rebuilding in a new repo; judged at the
-close of the Plan Step "Rebuild in cbc-concept, until it stands on
-its own"
+moving this repo in place to rebuilding in a new repo; decision 7
+changed 2026-11-04, from commits to rounds of correction; judged at
+the close of the Plan Step "Rebuild in cbc-concept, until it stands
+on its own"
 
 ## Context
 
@@ -82,9 +83,11 @@ one would stop the move again.
    each is carried over or dropped on purpose.
 6. **No pattern beyond the layering** is chosen before the trial is
    judged.
-7. **The trial is judged from what the steps cost:** the commits and
-   files each took, against the same work here. When exchange is
-   rebuilt, its counts are set against `temp/exchange-counts.md`.
+7. **The trial is judged from what the steps cost:** the rounds of
+   correction and the files each took, against the same work here.
+   Commits are no measure: polish is folded into the commit it fixes.
+   When exchange is rebuilt, its counts are set against
+   `temp/exchange-counts.md`.
 
 ## Consequences
 
@@ -103,3 +106,7 @@ one would stop the move again.
 - The goals drafted for the model were never approved one by one
   (`temp/idea-model-problem.md` §3); the costs of decision 7 stand in
   for them on this trial.
+- The layering has a second version, the reviewer's concept: the idea
+  layer as a graph of chains, each kept true by an agent of its own.
+  It is drafted in `cbc-concept`'s `drafts/layering-v2.md`, and
+  simulated against v1 before either is adopted.

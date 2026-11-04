@@ -168,8 +168,8 @@ Gate:
       none taken because this repo has it (ADR-0081, decision 4).
 - [ ] Each Work Approach rebuilt lists the lessons its texts here
       held, each carried over or dropped (ADR-0081, decision 5).
-- [ ] Each step's cost, its commits and files, is in this repo's
-      devlog.
+- [ ] Each step's cost, its rounds of correction and its files, is
+      in this repo's devlog.
 - [ ] The step after standing on its own is chosen and written down,
       in TODO here or in `cbc-concept`'s own records.
 - [ ] ADR-0081 carries its verdict, kept, changed or dropped, from the
