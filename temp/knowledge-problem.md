@@ -13,7 +13,14 @@
 
 Knowledge is what one knows, and how one understands it. It lives in a head. Text is where it is stored: a copy, made at one moment.
 
-You and I are on the same page when what I know, built from the text, matches what you know. Both of us learn, and write down what we learn. A new session reads it, and you don't have to retell it. We continue improving from there.
+The text is the interface between your mind and me. Each of us uses it differently:
+
+- For you, it holds how you see something: your understanding and where you are, at the level that idea needs, basics for one and details for another. It isn't always correct. You use it to recall.
+- For me, it tells what you know and how much. I usually know more about the subject. I use the text to see where you are, and to help you work on the idea from there: apply it, learn more of it, keep it up, and go deeper.
+
+You and I are on the same page when my picture of your understanding, built from the text, matches your understanding and its level. Both of us learn, and write down what we learn. A new session reads it, and you don't have to retell it. We continue improving from there.
+
+Not every text is understanding. An Agent Skill or a rule tells me what to do, and history tells what happened. Each is a kind of its own.
 
 ## 2. What goes wrong
 
