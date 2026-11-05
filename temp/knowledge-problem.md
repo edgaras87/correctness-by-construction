@@ -137,7 +137,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 10. An instruction still applies understanding that has moved on.
 11. An instruction is faithful to an understanding that is mistaken, and neither side sees it until the work shows it.
 
-Seen on 2026-11-05: case 1, the rebuild's purpose, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
+Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
 
 ## 4. What was tried
 
