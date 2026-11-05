@@ -27,6 +27,20 @@ Not every text is understanding. An Agent Skill or a rule tells me what to do, a
 - **The why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
 - **What was written goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. I then read it as true and act on it. This is the bigger problem.
 
+Where it breaks, at the interface between your mind and me. Cases found by thinking it through, each to be tested against real sessions in stage 2:
+
+1. You know something the text doesn't hold.
+2. The text is older than your understanding: you have moved on.
+3. My context is older than the text: I read it earlier in the session, or from a summary, and it has changed since.
+4. The text is ahead of you: I wrote it, and it holds my understanding, not yours.
+5. The text is at the wrong level: too thin to recall from, or too dense to read.
+6. The text is wrong, and I treat it as true instead of suggesting a fix.
+7. I read the text and build a different understanding from it than you meant.
+8. Two texts disagree, and neither says which one is where you are now.
+9. The text holds the what, not the why.
+
+Seen on 2026-11-05: case 1, the rebuild's purpose, written nowhere for 3 days; cases 4 and 5, my dense answers, until you said we were not on the same page.
+
 ## 3. What was tried
 
 This repo keeps each fact in one home, with references pointing at it (one home per fact). It was built without full consideration, and it costs too much to keep:
