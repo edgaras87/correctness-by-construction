@@ -137,8 +137,9 @@ work.
 Goal: `cbc-concept`, next to this repo, writes and commits by Work
 Approaches of its own, built step by step by ADR-0081, and ADR-0081
 is judged from what the steps cost.
-Now: wave 2 of the ideas in `cbc-concept`; the commit rule and
-`CLAUDE.local.md` wait.
+Now: wave 2 of the ideas in `cbc-concept`: how chains are drawn,
+then the Conversation Memory idea and the wave's checkpoint; the
+commit rule and `CLAUDE.local.md` wait.
 Gate:
 
 **At the opening.**
