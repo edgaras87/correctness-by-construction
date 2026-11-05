@@ -26,6 +26,8 @@ Two sides work with the knowledge:
 
 The human and the agent are on the same page when the agent's picture of the human's understanding, built from the text, matches that understanding and its level. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
 
+The problem holds wherever a human works with an agent across sessions. This repo is where it is seen first, and where it is tested.
+
 ## 2. The axes of knowledge
 
 Where text is kept so far, on each of the three axes, which §2.1 to §2.3 explain. Every text should have a place on each axis; one that doesn't is a finding.
