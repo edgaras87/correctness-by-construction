@@ -78,7 +78,7 @@ Knowledge moves between the times, and the move is where it gets lost:
 
 If a move isn't written down, the old text keeps claiming now.
 
-Before keeps why it changed, not only what was thought. Without it, the why goes missing again, seen through time.
+Before keeps why it changed, not only what was thought. Without that why, a later reader sees what changed but not the reason: the why goes missing (§3), this time between before and now.
 
 Now has degrees of certainty: what is thought now isn't always what is known. Some of now is unchecked, and later holds what should be checked.
 
