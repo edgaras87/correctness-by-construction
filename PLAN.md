@@ -132,14 +132,14 @@ work.
 
 ---
 
-## Step: Rebuild in cbc-concept, until it stands on its own  (none: each step is chosen when the last is done)    [~]
+## Step: Rebuild in cbc-concept, until it stands on its own  (none: each step is chosen when the last is done)    [!] stopped: Find how what we know stays true (devlog 2026-11-05, the rebuild stopped)
 
 Goal: `cbc-concept`, next to this repo, writes and commits by Work
 Approaches of its own, built step by step by ADR-0081, and ADR-0081
 is judged from what the steps cost.
-Now: wave 2 of the ideas in `cbc-concept`: how chains are drawn,
-then the Conversation Memory idea and the wave's checkpoint; the
-commit rule and `CLAUDE.local.md` wait.
+Now: stopped in wave 2 of the ideas in `cbc-concept`, before the
+Conversation Memory idea and the wave's checkpoint; the commit rule
+and `CLAUDE.local.md` wait. `cbc-concept` is frozen at `118c6f5`.
 Gate:
 
 **At the opening.**
@@ -218,6 +218,9 @@ Notes:
   The waves go beyond this Plan Step's goal; on the reviewer's word,
   they are noted in that TODO, not opened as a Plan Step. Wave 1 is
   written and checked. The commit rule waits.
+- Stopped 2026-11-05 for "Find how what we know stays true". It
+  resumes or closes when that Plan Step ends, by what it finds.
+  ADR-0081's verdict waits until then.
 - The work is done in `cbc-concept`. This repo holds its plan and
   history until `cbc-concept` has records of its own. The rules of
   this repo govern only its own commits.

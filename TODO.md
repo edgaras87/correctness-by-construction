@@ -32,19 +32,6 @@
 
 ## Now (due while the open Plan Step runs)
 
-- [ ] Close the Plan Step "Rebuild in cbc-concept", and write ADR-0081's
-      verdict (2026-11-05, the reviewer).
-      Context: its goal, `cbc-concept` writing and committing by Work
-      Approaches of its own, will not be met. ADR-0081 is judged from
-      what the steps cost (its decision 7): in 3 days, 10 ideas, 1 Work
-      Approach, no commit rule, and 14 ways of drawing tried.
-      Ideas:
-      - whether a Plan Step opens for the problem now, or once it is
-        written.
-      Trigger: now; `cbc-concept` is frozen, at its `118c6f5`. The first
-      of four items worked in order, each deleted once done.
-      See: devlog 2026-11-05, the rebuild frozen.
-
 ## Next (each due at its trigger)
 
 - [ ] Write the problem of keeping what we know true, in the
@@ -64,7 +51,7 @@
       - signs this repo biases the answers, and a fresh repo should
         start bottom-up: the problem cannot be stated without its
         Glossary Names, or every option is a variant of one home.
-      Trigger: the Plan Step closed.
+      Trigger: the rebuild's Plan Step stopped.
       See: devlog 2026-11-05, the rebuild frozen;
       `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what we know true*.
 
