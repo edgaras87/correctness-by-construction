@@ -26,6 +26,17 @@ The human and the agent are on the same page when the agent's picture of the hum
 
 ## 2. The axes of knowledge
 
+Where text is kept so far, on each of the three axes, which §2.1 to §2.3 explain. Every text should have a place on each axis; one that doesn't is a finding.
+
+| Where it's kept | Kind | Time | Who reads it |
+|---|---|---|---|
+| Understanding files in the repo | understanding | now | both |
+| Agent Skills and rules | instruction | now | the agent acts on it; the human checks what they told it |
+| Devlog, commit messages | understanding | before | both, seldom |
+| TODO | understanding | later | both |
+| The human's private working rules | instruction | now | the agent acts on it; the human wrote it |
+| The agent's memory | both | now | the agent; the human rarely |
+
 ### 2.1 Who uses the text
 
 The text is the interface between the human's mind and the agent. Each uses it differently.
