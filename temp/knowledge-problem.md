@@ -18,10 +18,23 @@ Two sides work with the knowledge:
 - **The human:** the person whose knowledge it is. They learn, decide, and carry the knowledge from one session to the next.
 - **The agent:** the AI model working in a session. It starts each session knowing only what it reads.
 
-The text is the interface between the human's mind and the agent. Each uses it differently:
+The text is the interface between the human's mind and the agent. Each uses it differently.
 
-- For the human, it holds how they see something: their understanding and where they are, at the level that idea needs, basics for one and details for another. It isn't always correct. The human uses it to recall.
-- For the agent, it tells what the human knows and how much. The agent usually knows more about the subject. It uses the text to see where the human is, and to help them work on the idea from there: apply it, learn more of it, keep it up, and go deeper.
+For the human, the text is, so far:
+
+- how they see something, and how they understand it;
+- where they are with it, at the level each idea needs: basics for one, details for another;
+- not always correct;
+- what they recall from.
+
+For the agent, the text is, so far:
+
+- what the human knows, and how much;
+- where to start helping: applying the idea, learning more of it, keeping it up, going deeper, and anything else done with it.
+
+The agent usually knows more about the subject than the text says.
+
+Each list holds what has been found so far; more may come.
 
 The human and the agent are on the same page when the agent's picture of the human's understanding, built from the text, matches that understanding and its level. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
 
