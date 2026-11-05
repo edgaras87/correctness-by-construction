@@ -138,14 +138,17 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 9. The text holds the what, not the why. | writing | kind |
 | 10. An instruction still applies understanding that has moved on. | time | kind |
 | 11. An instruction is faithful to an understanding that is mistaken, and neither side sees it until the work shows it. | writing | kind |
+| 12. A move between times isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time |
+| 13. The agent reads a before text as now, such as an old journal entry taken as current. | reading | time |
+| 14. The agent reads understanding as an instruction, such as the human thinking aloud taken as an order, or applies an instruction where it wasn't meant to. | reading | kind |
 
 The same cases by place and axis. An empty cell may be a missing case:
 
 | | who uses it | time | kind |
 |---|---|---|---|
-| **writing** | 1, 4, 5 | — | 9, 11 |
+| **writing** | 1, 4, 5 | 12 | 9, 11 |
 | **time** | 3 | 2, 8 | 10 |
-| **reading** | 6, 7 | — | — |
+| **reading** | 6, 7 | 13 | 14 |
 
 Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
 
