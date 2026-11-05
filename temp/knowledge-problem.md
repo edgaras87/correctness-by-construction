@@ -83,6 +83,8 @@ An instruction has two readers too. The agent acts on it. The human reads it to 
 
 The two kinds go wrong differently. Understanding may be not always correct and still do its job. An instruction can't be: the agent acts on it as it stands.
 
+Some understanding is about the agent itself: how a change works, `decide ──▶ make ──▶ check ──▶ record`; how a session starts empty; what loads when. Here the agent teaches the human. From what the human then understands, the two write instructions together, such as how a change is recorded.
+
 ## 3. What goes wrong
 
 Both problems below are one: the text and the knowledge drift apart. When the text holds less than the knowledge, the why goes missing. When the text is older than the knowledge, it goes stale.
