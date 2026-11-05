@@ -11,7 +11,9 @@
 
 ## 1. The purpose
 
-You and I are on the same page from one session to the next. You learn something and write it down. A new session reads it, and you don't have to retell it. We continue improving from there.
+Knowledge is what one knows, and how one understands it. It lives in a head. Text is where it is stored: a copy, made at one moment.
+
+You and I are on the same page when what I know, built from the text, matches what you know. Both of us learn, and write down what we learn. A new session reads it, and you don't have to retell it. We continue improving from there.
 
 ## 2. What goes wrong
 
