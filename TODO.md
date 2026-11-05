@@ -32,7 +32,64 @@
 
 ## Now (due while the open Plan Step runs)
 
+- [ ] Close the Plan Step "Rebuild in cbc-concept", and write ADR-0081's
+      verdict (2026-11-05, the reviewer).
+      Context: its goal, `cbc-concept` writing and committing by Work
+      Approaches of its own, will not be met. ADR-0081 is judged from
+      what the steps cost (its decision 7): in 3 days, 10 ideas, 1 Work
+      Approach, no commit rule, and 14 ways of drawing tried.
+      Ideas:
+      - whether a Plan Step opens for the problem now, or once it is
+        written.
+      Trigger: now; `cbc-concept` is frozen, at its `118c6f5`. The first
+      of four items worked in order, each deleted once done.
+      See: devlog 2026-11-05, the rebuild frozen.
+
 ## Next (each due at its trigger)
+
+- [ ] Write the problem of keeping what we know true, in the
+      reviewer's words (2026-11-05, the reviewer).
+      Context: the purpose: the reviewer and the agent stay on the same
+      page from one session to the next, with nothing retold. Two
+      problems: an Agent Skill without the idea behind it, and texts
+      going stale as the work moves on. One home per fact cost too
+      much: a change can loop between a home and its references, and
+      references that disagree with each other multiply the rounds.
+      Ideas:
+      - start from `temp/idea-model-problem.md`: it has the loop (§5)
+        and 9 musts with checks (§3), not the purpose or bottom-up.
+      - not everything must stay true: what the agent acts on must;
+        history cannot go stale.
+      - check a text when it is about to be used, not by a sweep.
+      - signs this repo biases the answers, and a fresh repo should
+        start bottom-up: the problem cannot be stated without its
+        Glossary Names, or every option is a variant of one home.
+      Trigger: the Plan Step closed.
+      See: devlog 2026-11-05, the rebuild frozen.
+
+- [ ] Read the real-world record of where the same page failed
+      (2026-11-05, the reviewer).
+      Context: the devlog's "What context was missing" lines, 18 since
+      October, each a time a session lacked what it needed; and the
+      refinement's findings, 485 in round 3's close read and 385 in its
+      last read. A sample sorted by cause shows where staleness comes
+      from: a retelling that drifted, a home that was wrong, or
+      something never written.
+      Trigger: the problem written.
+      See: devlog 2026-11-05, the rebuild frozen.
+
+- [ ] Take the first real case, from the real world up (2026-11-05,
+      the reviewer).
+      Context: the rebuild worked from the top down. This works up: one
+      real case, drawn and defined. When a second comes, it is set
+      beside the first: one fits both, or two stay apart, or one
+      general one is drawn. Whether a general layer is needed at all
+      is found here.
+      Ideas:
+      - draw it as `cbc-concept`'s step drawings did: one change's
+        walk, 11 steps across 5 ideas, 8 ways.
+      Trigger: the real-world record read.
+      See: devlog 2026-11-05, the rebuild frozen.
 
 - [ ] Read CBC Run 6, `checkout`, by the exchange-read Agent Skill (2026-10-29, the
       reviewer).
