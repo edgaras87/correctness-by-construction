@@ -58,6 +58,8 @@ Agent Skills and rules are another axis, left for later.
 
 Both problems below are one: the text and the knowledge drift apart. When the text holds less than the knowledge, the why goes missing. When the text is older than the knowledge, it goes stale.
 
+Wrong text is not, by that alone, the problem. Text that is incomplete or not correct, but honestly shows where the human is, does its job. The problem is text that no longer matches where the human is, or that the agent treats as settled fact.
+
 - **The why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
 - **What was written goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is the bigger problem. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
 
