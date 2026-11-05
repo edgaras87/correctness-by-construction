@@ -56,6 +56,8 @@ Agent Skills and rules are another axis, left for later.
 
 ## 3. What goes wrong
 
+Both problems below are one: the text and the knowledge drift apart. When the text holds less than the knowledge, the why goes missing. When the text is older than the knowledge, it goes stale.
+
 - **The why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
 - **What was written goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is the bigger problem. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
 
