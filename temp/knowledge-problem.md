@@ -49,7 +49,7 @@ Agent Skills and rules are another axis, left for later.
 ## 2. What goes wrong
 
 - **The why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
-- **What was written goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is the bigger problem.
+- **What was written goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is the bigger problem. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
 
 Where it breaks, at the interface between the human's mind and the agent. Cases found by thinking it through, each to be tested against real sessions in stage 2:
 
