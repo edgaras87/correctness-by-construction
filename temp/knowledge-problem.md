@@ -100,7 +100,7 @@ Text comes in two kinds, so far:
 
 An instruction has two readers too. The agent acts on it. The human reads it to know what they told the agent.
 
-The two kinds go wrong differently. Understanding may be not always correct and still do its job. An instruction can't be: the agent acts on it as it stands.
+The two kinds go wrong differently. Understanding may be not always correct and still do its job. An instruction must be faithful to its understanding, since the agent acts on it as it stands. It is only as right as that understanding: a mistaken understanding passes into a faithful instruction unseen.
 
 Some understanding is about the agent itself: how a change works, `decide ──▶ make ──▶ check ──▶ record`; how a session starts empty; what loads when. Here the agent teaches the human. From what the human then understands, the two write instructions together, such as how a change is recorded.
 
@@ -135,6 +135,7 @@ Where it breaks, at the interface between the human's mind and the agent. Cases 
 8. Two texts disagree, and neither says which one is where the human is now.
 9. The text holds the what, not the why.
 10. An instruction still applies understanding that has moved on.
+11. An instruction is faithful to an understanding that is mistaken, and neither side sees it until the work shows it.
 
 Seen on 2026-11-05: case 1, the rebuild's purpose, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
 
