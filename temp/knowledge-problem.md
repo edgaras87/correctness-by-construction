@@ -110,12 +110,12 @@ One understanding can give several instructions. An Agent Skill and a rule diffe
 
 ## 3. What goes wrong
 
-Both problems below are one: the text and the knowledge drift apart. When the text holds less than the knowledge, the why goes missing. When the text is older than the knowledge, it goes stale.
+Everything here is one drift: the text and the knowledge drift apart.
+
+- **When the text holds less than the knowledge, the why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
+- **When the text is older than the knowledge, it goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is the bigger problem. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
 
 Wrong understanding is not, by that alone, the problem. Understanding that is incomplete or not correct, but honestly shows where the human is, does its job. An instruction is different: the agent acts on it as it stands (§2.3). The problem is text that no longer matches where the human is, or that the agent treats as settled fact.
-
-- **The why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
-- **What was written goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is the bigger problem. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
 
 The drift happens in three places:
 
@@ -123,19 +123,29 @@ The drift happens in three places:
 - **Time:** the knowledge moves on, and the text stays as it was.
 - **Reading:** the agent reads the text and builds a different understanding from it than the human holds.
 
-The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§5):
+The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§5). Each is tagged with the place it breaks and the axis of §2 it lives on:
 
-1. The human knows something the text doesn't hold.
-2. The text is older than the human's understanding: they have moved on.
-3. The agent's context is older than the text: it read the text earlier in the session, or from a summary, and the text has changed since.
-4. The text is ahead of the human: the agent wrote it, and it holds the agent's understanding, not the human's.
-5. The text is at the wrong level: too thin to recall from, or too dense to read.
-6. The text is wrong, and the agent treats it as true instead of suggesting a fix.
-7. The agent reads the text and builds a different understanding from it than the human meant.
-8. Two texts disagree, and neither says which one is where the human is now.
-9. The text holds the what, not the why.
-10. An instruction still applies understanding that has moved on.
-11. An instruction is faithful to an understanding that is mistaken, and neither side sees it until the work shows it.
+| Case | Place | Axis |
+|---|---|---|
+| 1. The human knows something the text doesn't hold. | writing | who uses it |
+| 2. The text is older than the human's understanding: they have moved on. | time | time |
+| 3. The agent's context is older than the text: it read the text earlier in the session, or from a summary, and the text has changed since. | time | who uses it |
+| 4. The text is ahead of the human: the agent wrote it, and it holds the agent's understanding, not the human's. | writing | who uses it |
+| 5. The text is at the wrong level: too thin to recall from, or too dense to read. | writing | who uses it |
+| 6. The text is wrong, and the agent treats it as true instead of suggesting a fix. | reading | who uses it |
+| 7. The agent reads the text and builds a different understanding from it than the human meant. | reading | who uses it |
+| 8. Two texts disagree, and neither says which one is where the human is now. | time | time |
+| 9. The text holds the what, not the why. | writing | kind |
+| 10. An instruction still applies understanding that has moved on. | time | kind |
+| 11. An instruction is faithful to an understanding that is mistaken, and neither side sees it until the work shows it. | writing | kind |
+
+The same cases by place and axis. An empty cell may be a missing case:
+
+| | who uses it | time | kind |
+|---|---|---|---|
+| **writing** | 1, 4, 5 | — | 9, 11 |
+| **time** | 3 | 2, 8 | 10 |
+| **reading** | 6, 7 | — | — |
 
 Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
 
