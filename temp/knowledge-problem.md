@@ -44,6 +44,8 @@ Each list holds what has been found so far; more may come.
 
 The text is also the agent's interface with itself, from one session to the next. What the agent learns in a session reaches the next only if it is written down.
 
+Some of that text is kept outside the repo: the agent's own memory, notes it writes for itself about working with the human, such as "never push" or "explain simpler first". The human rarely reads them. They overlap the human's own working rules and the repo's rules, and they can go stale like any other text.
+
 ### 2.2 The time of knowledge
 
 Knowledge has a time too:
