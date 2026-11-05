@@ -38,7 +38,13 @@ Each list holds what has been found so far; more may come.
 
 The human and the agent are on the same page when the agent's picture of the human's understanding, built from the text, matches that understanding and its level. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
 
-Not every text is understanding. An Agent Skill or a rule tells the agent what to do, and history tells what happened. Each is a kind of its own.
+Knowledge has a time too:
+
+- before: what was known or thought before;
+- now: what is known or thought now, not always checked;
+- later: what is meant to be learned, or checked, later.
+
+Agent Skills and rules are another axis, left for later.
 
 ## 2. What goes wrong
 
