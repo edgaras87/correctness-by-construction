@@ -61,6 +61,12 @@ Both problems below are one: the text and the knowledge drift apart. When the te
 - **The why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
 - **What was written goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is the bigger problem. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
 
+The drift happens in three places:
+
+- **Writing:** knowledge goes into text, and part of it is lost, such as the why.
+- **Time:** the knowledge moves on, and the text stays as it was.
+- **Reading:** the agent reads the text and builds a different understanding from it than the human holds.
+
 Where it breaks, at the interface between the human's mind and the agent. Cases found by thinking it through, each to be tested against real sessions in stage 2:
 
 1. The human knows something the text doesn't hold.
