@@ -42,6 +42,8 @@ The agent usually knows more about the subject than the text says.
 
 Each list holds what has been found so far; more may come.
 
+The text is also the agent's interface with itself, from one session to the next. What the agent learns in a session reaches the next only if it is written down.
+
 ### 2.2 The time of knowledge
 
 Knowledge has a time too:
