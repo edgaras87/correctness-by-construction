@@ -5,7 +5,9 @@
      TODO-CONVERSATION-MEMORY.md §31, *Keeping what we know true*,
      and from what temp/idea-model-problem.md says of the problem,
      not of a model. Polished one insight at a time, each a commit,
-     so the diffs show what changed. It proposes no solution. Its
+     so the diffs show what changed. It states the problem only: an
+     answer met on the way is kept as an option to consider (§7),
+     not chosen. Its
      home is decided when the Plan Step closes; it goes then, and
      git keeps every version. -->
 
@@ -102,9 +104,9 @@ The two kinds go wrong differently. Understanding may be not always correct and 
 
 Some understanding is about the agent itself: how a change works, `decide ──▶ make ──▶ check ──▶ record`; how a session starts empty; what loads when. Here the agent teaches the human. From what the human then understands, the two write instructions together, such as how a change is recorded.
 
-An instruction stands on its understanding. When the understanding moves on, the instruction can go stale without anyone seeing it. Instructions are written by demand: only when work needs one, and short. The why stays in the understanding, not in the instruction.
+An instruction stands on its understanding. When the understanding moves on, the instruction can go stale without anyone seeing it. An instruction that carries the whole why grows long.
 
-One understanding can give several instructions. An Agent Skill and a rule differ mainly by when they load: a rule in every session, an Agent Skill at a task. If each instruction retells the understanding, one home's loop comes back between them. If each points up to it, and says only what to do, nothing is repeated.
+One understanding can give several instructions. An Agent Skill and a rule differ mainly by when they load: a rule in every session, an Agent Skill at a task. When each instruction retells the understanding, the same knowledge is written several times, and the copies can disagree.
 
 ## 3. What goes wrong
 
@@ -164,3 +166,11 @@ Each line can be checked:
 - A new session continues without the human retelling. Count the retellings and corrections in each session.
 - Behind each Agent Skill, its why can be found.
 - The cost of one change stays about the same as the repo grows.
+
+## 7. Options to consider
+
+Answers met while stating the problem, kept to be weighed, not chosen:
+
+- write an instruction only when work needs one, and keep it short;
+- keep the why in the understanding, not in the instruction;
+- let an instruction point up to its understanding instead of retelling it. How this differs from one home per fact (§4) is open.
