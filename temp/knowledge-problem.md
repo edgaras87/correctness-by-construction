@@ -85,6 +85,8 @@ The two kinds go wrong differently. Understanding may be not always correct and 
 
 Some understanding is about the agent itself: how a change works, `decide ──▶ make ──▶ check ──▶ record`; how a session starts empty; what loads when. Here the agent teaches the human. From what the human then understands, the two write instructions together, such as how a change is recorded.
 
+An instruction stands on its understanding. When the understanding moves on, the instruction can go stale without anyone seeing it. Instructions are written by demand: only when work needs one, and short. The why stays in the understanding, not in the instruction.
+
 ## 3. What goes wrong
 
 Both problems below are one: the text and the knowledge drift apart. When the text holds less than the knowledge, the why goes missing. When the text is older than the knowledge, it goes stale.
@@ -111,6 +113,7 @@ Where it breaks, at the interface between the human's mind and the agent. Cases 
 7. The agent reads the text and builds a different understanding from it than the human meant.
 8. Two texts disagree, and neither says which one is where the human is now.
 9. The text holds the what, not the why.
+10. An instruction still applies understanding that has moved on.
 
 Seen on 2026-11-05: case 1, the rebuild's purpose, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
 
