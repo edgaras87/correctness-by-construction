@@ -72,9 +72,16 @@ What before is for, so far:
 - going back: undoing to an earlier state;
 - evidence: what things cost, so a choice can be judged.
 
-### 2.3 Agent Skills and rules
+### 2.3 The kind of text
 
-Agent Skills and rules are another axis, left for later.
+Text comes in two kinds, so far:
+
+- understanding: what is known, and how it is understood;
+- instruction: text built on understanding, to apply it. Agent Skills and rules are instructions.
+
+An instruction has two readers too. The agent acts on it. The human reads it to know what they told the agent.
+
+The two kinds go wrong differently. Understanding may be not always correct and still do its job. An instruction can't be: the agent acts on it as it stands.
 
 ## 3. What goes wrong
 
