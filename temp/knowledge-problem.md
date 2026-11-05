@@ -13,7 +13,12 @@
 
 Knowledge is what one knows, and how one understands it. It lives in a head. Text is where it is stored: a copy, made at one moment.
 
-Two sides work with the knowledge: the human, and the agent, the AI model in a session. The text is the interface between the human's mind and the agent. Each uses it differently:
+Two sides work with the knowledge:
+
+- **The human:** the person whose knowledge it is. They learn, decide, and carry the knowledge from one session to the next.
+- **The agent:** the AI model working in a session. It starts each session knowing only what it reads.
+
+The text is the interface between the human's mind and the agent. Each uses it differently:
 
 - For the human, it holds how they see something: their understanding and where they are, at the level that idea needs, basics for one and details for another. It isn't always correct. The human uses it to recall.
 - For the agent, it tells what the human knows and how much. The agent usually knows more about the subject. It uses the text to see where the human is, and to help them work on the idea from there: apply it, learn more of it, keep it up, and go deeper.
