@@ -18,7 +18,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-02.
+     Last touched: 2026-11-05.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
@@ -1039,3 +1039,89 @@ No glossary entry names old words, the renamed ones included. A Run
 Reading reads them through the Names table at its last commit; a
 delivery to a CBC Run born before names the renames in its Delivery
 Note. The earlier part's last paragraph is reversed here.
+
+## 31. Keeping what we know true
+
+Item: "Write the problem of keeping what we know true, in the reviewer's words".
+
+### 2026-11-05
+
+#### What the reviewer said
+
+Asked whether to build approaches on the one-change drawing, the
+reviewer stepped back: "i actualy thinking if we not overengineered
+our model of that layer system. i am thinking, maybe i should try to
+start over." Then the problem, in full, for the first time:
+
+"main purpose is to find how to maintain what we learned and know.
+by we i mean what i know and u are on same page. you know everything
+and i learn something, write something. now that i dont have to
+retell you in new session u read that from what i know, so we are on
+same page and continue improving from there."
+
+Two problems: "when we have skill writen, idea behind is missing.
+the bigger problem is when we work we keep moving forward. everything
+what was writen before is out of date, so they most likely incorrect,
+contradictional, missing something or anyway different."
+
+On one home per fact: "it became to costly to maintain. maybe it is
+still good way of maintain, but needs improvememtn." A refresh is one
+agent running through the whole repo. In the best case, one spot is
+fixed and the whole is true again. In the worse cases, a change in a
+referring part forces the home to change; then every other reference
+is checked; if they disagree, back to the home, and so on: "this
+becomes not one iteration problem where decition needs to be taken
+based different spots." And when references start to disagree with
+each other, "that multiplies".
+
+On the rebuild: "we started from top layer, which is most general as
+idea and its graph. that part is not asociated to any project, so we
+try to find general idea again without real world. so what i think
+is we should start from real world and then go up. actualy we should
+find if we need that at all." Layering v1 and v2 were a good find,
+not to be dropped; "whats really help to understand is
+visualization."
+
+The way: freeze `cbc-concept`, come back here, and state the
+problem anew. "if that our repo knowledge and approaches effects and
+influance too much on answers we should create new fresh repo and
+start over, but differently this time from buttom to up".
+
+#### What exists today
+
+- `temp/idea-model-problem.md`, 2026-11-02, holds most of it: the
+  loop between a home and its references (§5), with this repo's
+  numbers, 398 section references pointing at 129 sections; the
+  Agent Skill without its why (§2); 9 musts, each with a check (§3).
+- What it lacks: the purpose, the two sides on the same page; the
+  bottom-up direction, since it takes the three levels as given; and
+  references disagreeing with each other, not only with the home.
+- ADR-0081 had set the rebuild to stand on its own first, and to take
+  a rule only when its work needs it (its decisions 3 and 4). The
+  rebuild wrote 10 ideas and 1 Work Approach in 3 days.
+
+#### What the agent added
+
+- **The real world is on record:** 18 "What context was missing"
+  lines in the devlog since October, and the refinement's findings,
+  485 in round 3's close read and 385 in its last read. A sample
+  sorted by cause shows where staleness comes from.
+- **Not everything must stay true:** history cannot go stale; what
+  the agent acts on must be true now. The smaller that set, the less
+  to keep.
+- **Check at use, not by sweep:** the loop comes from a sweep; a
+  text checked when it is about to be used bounds each fix to the
+  work in hand. An option, not weighed.
+- **The bias, named in advance:** this repo loads one home and the
+  Foundation Check in every session. Signs a fresh repo is needed:
+  the problem cannot be stated without this repo's Glossary Names,
+  or every option is a variant of one home. Not yet agreed.
+
+#### What the reviewer took
+
+The playback was right. `cbc-concept` frozen, its README telling
+what it was, when it was born, what was done and where it stopped.
+The rebuild's Plan Step closes. Then, in order, each deleted once
+done: write the problem, read the real-world record, take the first
+real case. "we change that order when needed, that is when something
+changes."

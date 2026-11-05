@@ -65,7 +65,8 @@
         start bottom-up: the problem cannot be stated without its
         Glossary Names, or every option is a variant of one home.
       Trigger: the Plan Step closed.
-      See: devlog 2026-11-05, the rebuild frozen.
+      See: devlog 2026-11-05, the rebuild frozen;
+      `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what we know true*.
 
 - [ ] Read the real-world record of where the same page failed
       (2026-11-05, the reviewer).
