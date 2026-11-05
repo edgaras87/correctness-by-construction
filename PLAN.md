@@ -154,8 +154,6 @@ Gate:
 
 - [ ] The problem is written in the reviewer's words, purpose first,
       and the reviewer says it is right.
-- [ ] The signs that this repo biases the answers are agreed before
-      the problem is written, and checked at the close.
 - [ ] Where the same page failed is sorted by cause, with counts,
       from the devlog's "What context was missing" lines and a sample
       of the refinement's findings.
@@ -212,9 +210,10 @@ Notes:
      general layer is needed at all is found here.
 - Ideas carried from TODO, noted and not weighed: not everything must
   stay true, since history cannot go stale; check a text when it is
-  about to be used, not by a sweep; the signs of bias proposed, the
-  problem stated only in this repo's Glossary Names, or every option
-  a variant of one home.
+  about to be used, not by a sweep.
+- If this repo's rules steer the answers, the reviewer or the agent
+  says so when it is felt, and the reviewer decides then; signs set
+  in advance were dropped as a check built ahead (2026-11-05).
 - The reviewer signs each commit.
 - Main takes the branch by fast-forward on the reviewer's word.
 
