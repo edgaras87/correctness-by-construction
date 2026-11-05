@@ -150,7 +150,7 @@ This repo keeps each fact in one home, with references pointing at it (one home 
 
 ## 5. Where it may be wrong
 
-Stage 2 tests these against the record:
+The next step of this work tests these against the record: the devlog's notes of what each session lacked, and the findings of past reviews of this repo:
 
 - how often stale text actually hurt a session, and how;
 - where staleness comes from: a retelling that drifted, a home that was wrong, or something never written down;
