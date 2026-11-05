@@ -1125,3 +1125,79 @@ The rebuild's Plan Step closes. Then, in order, each deleted once
 done: write the problem, read the real-world record, take the first
 real case. "we change that order when needed, that is when something
 changes."
+
+### 2026-11-05, later
+
+#### What the reviewer said
+
+On closing the rebuild: "maybe we should stop instead of drop till
+we see if we dont want to go back? i think after we work on next
+step we will see if there i a reason to go back again?"
+
+On the signs of bias the agent proposed: "Again explain simple what
+we are doing here? because i think we are not on same page." Then:
+"we now gonna describe problem before we try to find solution. our
+repo using one approach which is build without full consideration
+"one-home" and "references". it may be incorrect or not complete."
+
+On the problem's first line: "this "You learn something and write it
+down" in "## 1. The purpose" is actually a knowledge. Knowledge is
+what i know and how i understand something. Knowledge is stored/put
+in texts."
+
+On the same page: "those text is interface between my mind and u."
+"Knowledge text for u and me means little different things. for me
+is to put some ideas how i see something, how i understand that,
+where i am [...] this does not mean that it is correct. also idea
+knowledge could be at different understanding levels [...] Also i
+use it something as to recall." For the agent: "it does not mean
+what u know. it means u know at what understanding level i am. you
+know more about it. [...] u use that text to help me to work on that
+idea. by work we mean multiple things: use that idea for
+application, learn more about that idea, maintain that idea and any
+other thing we can do about it."
+
+On names: ""you" and "me" words can become misleading, because in
+text at some point each could me both." On the two uses: "These
+sound as bounded list. should we make it open for extension?"
+
+On time: "knowledge can also be: what we knew before, what we know
+now, and what we have in mind to learn later. Also it can be said
+as: what I thought before, what i think it is now and what i think
+we should check about it later." Agent Skills and rules wait: "this
+is another axis to problem we facing and it is something we should
+talk separatly later."
+
+On the draft so far: "it seems that this text is too lean. do we
+capture all this thinking we do now? does this text delivers same
+knowldege what we have in this session now, if someone would read it
+in new session?"
+
+#### What the agent added
+
+- **The same page was wrong as first written:** the agent knows more
+  of the subject than the text; what must match is its picture of
+  the human's understanding, and its level.
+- **Nine cases where the interface breaks,** from thinking it
+  through; two seen that day: the rebuild's purpose written nowhere
+  for 3 days, and the agent's dense answers.
+- **One drift, three places:** text holding less than the knowledge,
+  or older than it; lost at writing, in time, or at reading.
+- **Stale is a wrong time:** a text still reading as now after the
+  knowledge moved on. History cannot go stale this way.
+- **The moves between times lose knowledge;** before keeps why it
+  changed; now has degrees of certainty.
+- **The draft was its own case 9:** it held the what, not the why,
+  until the missing points went in.
+- **The signs of bias set in advance** were a check built ahead.
+
+#### What the reviewer took
+
+The rebuild stopped, not closed, and "Find how what we know stays
+true" opened with three stages; stage 3 kept. No signs of bias set
+in advance: either side says so when it is felt. The problem is
+drafted in `temp/knowledge-problem.md` and polished one insight at a
+time, each a commit, so the diffs show what changed: knowledge and
+text; the text as the interface; the human and the agent, named and
+defined; the two uses as open lists; the time axis; each axis a
+section; and the agent's five missing points.
