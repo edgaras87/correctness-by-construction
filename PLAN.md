@@ -207,8 +207,10 @@ Notes:
      by cause: a retelling that drifted, a home that was wrong, or
      something never written.
   3. The real cases: one drawn and defined, as `cbc-concept`'s step
-     drawings did one change; a second set beside it. Whether a
-     general layer is needed at all is found here.
+     drawings did one change; a second set beside it, from outside
+     this repo, such as a CBC Run, since the problem holds wherever a
+     human works with an agent. Whether a general layer is needed at
+     all is found here.
 - Ideas carried from TODO, noted and not weighed: not everything must
   stay true, since history cannot go stale; check a text when it is
   about to be used, not by a sweep.
