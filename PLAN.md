@@ -132,6 +132,94 @@ work.
 
 ---
 
+## Step: Find how what we know stays true  (none: its stages are listed in its Notes)    [~]
+
+Goal: a way to keep what the reviewer and the agent know true, from
+one session to the next, is chosen from the problem in the
+reviewer's words and from real cases in this repo.
+Now: stage 1, the problem, written in the reviewer's words.
+Gate:
+
+**At the opening.**
+
+- [x] The Plan Step's branch `knowledge-2026-11-05` is cut from main
+      at `ca5c422`, and nothing of the Plan Step was done on main
+      (2026-11-05).
+- [x] This Plan Step Gate was written before the work started
+      (2026-11-05).
+- [x] The Plan Step's Work Approach is known: the stages its Notes
+      list, from the order set on 2026-11-05 (2026-11-05).
+
+**The Plan Step's own items.**
+
+- [ ] The problem is written in the reviewer's words, purpose first,
+      and the reviewer says it is right.
+- [ ] The signs that this repo biases the answers are agreed before
+      the problem is written, and checked at the close.
+- [ ] Where the same page failed is sorted by cause, with counts,
+      from the devlog's "What context was missing" lines and a sample
+      of the refinement's findings.
+- [ ] At least two real cases are drawn side by side, and it is
+      decided whether one fits both, the two stay apart, or one
+      general one is drawn.
+- [ ] The way chosen is written, set against one home per fact: what
+      it keeps true, what it lets go stale, and what one change costs.
+
+**Known already.** No Agent Skill or Agent Rule is used, so nothing is
+known already. This Plan Step has only its own items.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `knowledge-2026-11-05` follows
+      the commit-messages Agent Skill.
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-05, when the rebuild in `cbc-concept` stopped for it
+  (devlog 2026-11-05, the rebuild frozen; the rebuild stopped). The
+  talk behind it: `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what
+  we know true*.
+- Stages, in order, each taken off this list once done. The order
+  changes only when something changes.
+  1. The problem, written in the reviewer's words, starting from
+     `temp/idea-model-problem.md`: it has the loop between a home and
+     its references (§5) and 9 musts with checks (§3), not the
+     purpose or the bottom-up direction.
+  2. The real-world record: the devlog's 18 "What context was
+     missing" lines since October, and the refinement's findings, 485
+     in round 3's close read and 385 in its last read. A sample sorted
+     by cause: a retelling that drifted, a home that was wrong, or
+     something never written.
+  3. The real cases: one drawn and defined, as `cbc-concept`'s step
+     drawings did one change; a second set beside it. Whether a
+     general layer is needed at all is found here.
+- Ideas carried from TODO, noted and not weighed: not everything must
+  stay true, since history cannot go stale; check a text when it is
+  about to be used, not by a sweep; the signs of bias proposed, the
+  problem stated only in this repo's Glossary Names, or every option
+  a variant of one home.
+- The reviewer signs each commit.
+- Main takes the branch by fast-forward on the reviewer's word.
+
+---
+
 ## Step: Rebuild in cbc-concept, until it stands on its own  (none: each step is chosen when the last is done)    [!] stopped: Find how what we know stays true (devlog 2026-11-05, the rebuild stopped)
 
 Goal: `cbc-concept`, next to this repo, writes and commits by Work
