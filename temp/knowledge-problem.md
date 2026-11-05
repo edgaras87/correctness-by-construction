@@ -121,7 +121,10 @@ Stage 2 tests these against the record:
 - how often stale text actually hurt a session, and how;
 - where staleness comes from: a retelling that drifted, a home that was wrong, or something never written down;
 - whether every text must stay true, or only what the agent acts on;
-- whether the cost lies in the one-home idea itself, or in how it's kept, such as the sweep.
+- whether the cost lies in the one-home idea itself, or in how it's kept, such as the sweep;
+- whether only now decides that a change is needed, with before as input and not authority;
+- when checking before costs more than it gives, and whether it can harm: by what reading it costs, by anchoring new thinking to old framing, or by being read as now;
+- which kinds of before pay, and which aren't worth keeping. This repo's devlog alone is 8,773 lines, after 4 months.
 
 ## 6. What would show it's solved
 
