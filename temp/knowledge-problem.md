@@ -146,7 +146,7 @@ This repo keeps each fact in one home, with references pointing at it (one home 
 - **Finding is cheap, judging is not.** A search lists every place that points at a fact. Whether each place still holds needs reading. This repo has 398 section references pointing at 129 sections. The most pointed-at section has 22.
 - **The fix becomes a loop.** A change in one referring place can force the home to change. Then every other reference has to be checked again. If they disagree, it's back to the home, and so on. A decision has to be weighed across many places, not taken in one pass.
 - **It multiplies.** When references start disagreeing with each other, each disagreement starts its own loop.
-- **The refresh is a sweep.** One agent reads the whole repo once, and every finding it makes can start a loop.
+- **A refresh is a sweep.** To bring the text up to date, one agent reads the whole repo once, and every finding it makes can start a loop.
 
 ## 5. Where it may be wrong
 
