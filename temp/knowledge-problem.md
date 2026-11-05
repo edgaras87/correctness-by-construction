@@ -22,7 +22,7 @@ The chat is not text. It is where knowledge passes between the human and the age
 Two sides work with the knowledge:
 
 - **The human:** the person whose knowledge it is. They learn, decide, and carry the knowledge from one session to the next.
-- **The agent:** the AI model working in a session. It starts each session knowing only what it reads.
+- **The agent:** the AI model working in a session. It knows its subjects from its training, but starts each session knowing the human and the work only from what it reads.
 
 The human and the agent are on the same page when the agent's picture of the human's understanding, built from the text, matches that understanding and its level. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
 
