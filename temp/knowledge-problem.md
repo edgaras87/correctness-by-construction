@@ -13,6 +13,10 @@
 
 Knowledge is what one knows, and how one understands it. It lives in a head. Text is where it is stored: a copy, made at one moment.
 
+Text here is understanding and instruction (§2.3), wherever it is kept. So far it is kept in the repo's files, in commit messages, in the human's private working rules, and in the agent's memory.
+
+The chat is not text. It is where knowledge passes between the human and the agent, and it is lost when the session ends unless something is written down.
+
 Two sides work with the knowledge:
 
 - **The human:** the person whose knowledge it is. They learn, decide, and carry the knowledge from one session to the next.
