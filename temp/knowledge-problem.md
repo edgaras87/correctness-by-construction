@@ -87,6 +87,8 @@ Some understanding is about the agent itself: how a change works, `decide ──
 
 An instruction stands on its understanding. When the understanding moves on, the instruction can go stale without anyone seeing it. Instructions are written by demand: only when work needs one, and short. The why stays in the understanding, not in the instruction.
 
+One understanding can give several instructions. An Agent Skill and a rule differ mainly by when they load: a rule in every session, an Agent Skill at a task. If each instruction retells the understanding, one home's loop comes back between them. If each points up to it, and says only what to do, nothing is repeated.
+
 ## 3. What goes wrong
 
 Both problems below are one: the text and the knowledge drift apart. When the text holds less than the knowledge, the why goes missing. When the text is older than the knowledge, it goes stale.
