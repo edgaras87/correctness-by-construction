@@ -123,7 +123,7 @@ The drift happens in three places:
 - **Time:** the knowledge moves on, and the text stays as it was.
 - **Reading:** the agent reads the text and builds a different understanding from it than the human holds.
 
-Where it breaks, at the interface between the human's mind and the agent. Cases found by thinking it through, each to be tested against real sessions in stage 2:
+The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§5):
 
 1. The human knows something the text doesn't hold.
 2. The text is older than the human's understanding: they have moved on.
