@@ -63,6 +63,15 @@ Before keeps why it changed, not only what was thought. Without it, the why goes
 
 Now has degrees of certainty: what is thought now isn't always what is known. Some of now is unchecked, and later holds what should be checked.
 
+What before is for, so far:
+
+- not repeating a mistake: a dead end marked as one isn't tried again;
+- knowing why now is as it is: when a past decision is questioned, its reasons and what was rejected are there;
+- seeing where the human has been: the path of their understanding, which helps the agent judge their level now;
+- resuming work: where it stopped, and what was tried;
+- going back: undoing to an earlier state;
+- evidence: what things cost, so a choice can be judged.
+
 ### 2.3 Agent Skills and rules
 
 Agent Skills and rules are another axis, left for later.
