@@ -52,6 +52,17 @@ Knowledge has a time too:
 - now: what is known or thought now, not always checked;
 - later: what is meant to be learned, or checked, later.
 
+Knowledge moves between the times, and the move is where it gets lost:
+
+- later becomes now when something is learned or checked;
+- now becomes before when it is replaced.
+
+If a move isn't written down, the old text keeps claiming now.
+
+Before keeps why it changed, not only what was thought. Without it, the why goes missing again, seen through time.
+
+Now has degrees of certainty: what is thought now isn't always what is known. Some of now is unchecked, and later holds what should be checked.
+
 ### 2.3 Agent Skills and rules
 
 Agent Skills and rules are another axis, left for later.
