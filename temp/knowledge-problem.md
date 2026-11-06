@@ -43,6 +43,16 @@ Its understanding falls in two groups. Each gives instructions in two places, th
 
 The two groups are split today. They may turn out to be one understanding, sorted into two groups.
 
+Between understanding and instruction, this repo means to keep a middle level, for both groups. It describes the three levels itself, in its Idea-to-Output Model (`docs/models/idea-to-output.md`, §2):
+
+| Level | What it holds | In this repo |
+|---|---|---|
+| understanding, general | an idea any repo can adapt | the Idea Models, `docs/models/` |
+| the middle | how one thing is understood here, in detail | the convention manuals, `docs/conventions/`; the concept, `concept/` |
+| instruction | how a piece of work is done, for the agent | Agent Skills, rules, the Approach on Trial |
+
+Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
+
 So knowledge written here becomes instructions that agents act on in other repos. The agent in a CBC Run starts with none of this repo's context, only what was shipped, and the copies there can drift, or change on their own.
 
 What each repo is meant to keep: the system as we mean it to be. This is later knowledge (§3.2), what should be, not a description of the repo today, and the intent itself may change. Whether the repo does all of it is not yet checked.
