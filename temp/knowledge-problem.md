@@ -213,7 +213,7 @@ An instruction comes from the adapted level where there is one, and the adapted 
 
 An instruction has two readers too. The agent acts on it. The human reads it to know what they told the agent.
 
-The two kinds go wrong differently. Understanding may be not always correct and still do its job. An instruction must be faithful to its understanding, since the agent acts on it as it stands. It is only as right as that understanding: a mistaken understanding passes into a faithful instruction unseen.
+The two kinds go wrong differently. Understanding may be not always correct and still do its job. An instruction must be faithful to its understanding, since the agent acts on it as it stands. It is only as right as that understanding: Mistaken Knowledge passes into a faithful instruction unseen.
 
 New knowledge can be used before it is judged: knowledge on trial. It may be a way of working, an understanding, or the form of a text. While it is new, a text can be both kinds: a way of working tried for the first time is written as one text, an instruction with its understanding inside it. It is split only when it is judged, since what is not yet understood cannot be split.
 
@@ -235,7 +235,7 @@ The two repos are not the two sides of §1. The human and the agent work in both
 
 ## 4. What goes wrong
 
-Most of what goes wrong is one drift: the text and the knowledge drift apart. One failure is not drift: the knowledge itself is mistaken, and the text carries it faithfully (case 11). Drift is fixed by bringing the text up to the knowledge; a mistaken knowledge is fixed in the knowledge first.
+Most of what goes wrong is one drift: the text and the knowledge drift apart. One failure is not drift: Mistaken Knowledge (case 11). Drift is fixed by bringing the text up to the knowledge; Mistaken Knowledge is fixed in the knowledge first.
 
 A third failure sits outside the text: the repo itself may not be what it is meant to be (§2). It is fixed in the repo, or in the intent, and it can cause drift. The next step of this work checks it first (§6).
 
@@ -264,7 +264,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 8. Two texts disagree, and neither says which one is where the human is now. | aging | time | either |
 | 9. The text holds the what, not the why. | writing | kind | either |
 | 10. An instruction still applies understanding that has moved on. | aging | kind | either |
-| 11. An instruction is faithful to an understanding that is mistaken, and neither side sees it until the work shows it. | writing | kind | either |
+| 11. An instruction is faithful to Mistaken Knowledge, and neither side sees it until the work shows it. | writing | kind | either |
 | 12. A move between times isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time | either |
 | 13. The agent reads a before text as now, such as an old devlog entry taken as current. | reading | time | either |
 | 14. The agent reads understanding as an instruction, such as the human thinking aloud, in chat or in text, taken as an order, or applies an instruction where it wasn't meant to. | reading | kind | either |
