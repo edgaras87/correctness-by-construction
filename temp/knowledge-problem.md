@@ -13,7 +13,7 @@
 
 ## 1. The purpose
 
-Knowledge is what one knows, and how one understands it. It lives in a head. Text is where it is stored: a copy, made at one moment.
+Knowledge is what one knows, and how one understands it. It lives in a head. Text is where it is stored, as it stood at one moment.
 
 Text here is understanding and instruction (§3.3), wherever it is kept. So far it is kept in the repo's files, in commit messages, in the human's private working rules, and in the agent's memory.
 
@@ -157,7 +157,7 @@ Some understanding is about the agent itself: how a change works, in four steps,
 
 An instruction stands on its understanding. When the understanding moves on, the instruction can go stale without anyone seeing it. An instruction that carries the whole why grows long.
 
-One understanding can give several instructions. When each instruction retells the understanding, the same knowledge is written several times, and the copies can disagree.
+One understanding can give several instructions. When each instruction retells the understanding, the same knowledge is written several times, and they can disagree.
 
 An instruction can be copied to other repos, for the agents working there. Each copy can drift from the understanding it came from, and can change on its own.
 
