@@ -37,12 +37,12 @@ Names, in order of first use:
 - **Shipped Copy:** an Instruction Text this repo ships, as it lives in a CBC Run.
 - **Repo Intent:** what this repo and each CBC Run are meant to keep (§2). Its *time* is *later*, not the repo today.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
+- **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
 - **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
 - **Knowledge Axis:** one way of sorting text. There are four: *who uses it*, *time*, *kind*, *where* (§3).
 - **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
 - **Knowledge Drift:** text and knowledge moving apart. The text holds less than the knowledge, or is older than it.
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
-- **Knowledge Drift Phase:** where Knowledge Drift happens: *writing*, *aging*, *reading*.
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **Repo Intent Drift:** the repo not being what Repo Intent says. It is fixed in the repo, or in the Repo Intent.
 - **One Home per Fact:** this repo's practice: each fact in one text, its home, with every other text pointing there.
@@ -53,7 +53,7 @@ Labels:
 - *time*: *before*, *now*, *later*
 - *kind*: Understanding Text, Instruction Text
 - *where*: *this repo*, *a CBC Run*; a Failure Case is *either* or *between*
-- Knowledge Drift Phase: *writing*, *aging*, *reading*
+- Text Life Phase: *writing*, *aging*, *reading*
 
 ## 1. The purpose
 
@@ -239,15 +239,15 @@ A third failure sits outside the text: the repo itself may not be what it is mea
 
 Wrong understanding is not, by that alone, the problem. Understanding that is incomplete or not correct, but honestly shows where the human is, does its job. An instruction is different: the agent acts on it as it stands (§3.3). The problem is text that no longer matches where the human is, or that the agent treats as settled fact.
 
-The drift happens in three phases of a text's life: two moments, writing and reading, and the stretch between them, aging.
+A failure shows in one of three Text Life Phases: two moments, *writing* and *reading*, and the stretch between them, *aging*.
 
-- **Writing:** knowledge goes into text, and part of it is lost, such as the why.
-- **Aging:** the knowledge moves on, and the text grows older than it.
-- **Reading:** the agent reads the text and builds a different understanding from it than the human holds.
+- *Writing:* knowledge goes into text, and part of it is lost, such as the why.
+- *Aging:* the knowledge moves on, and the text grows older than it.
+- *Reading:* the agent reads the text and builds a different understanding from it than the human holds.
 
-The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the phase it breaks in, the Knowledge Axis it lives on (§3), and where: in either repo, or between this repo and a run (§3.4):
+The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the Text Life Phase it breaks in, the Knowledge Axis it lives on (§3), and where: in either repo, or between this repo and a run (§3.4):
 
-| Case | Phase | Knowledge Axis | Where |
+| Case | Text Life Phase | Knowledge Axis | Where |
 |---|---|---|---|
 | 1. The human knows something the text doesn't hold. | writing | who uses it | either |
 | 2. The text is older than the human's understanding: they have moved on. | aging | time | either |
@@ -274,7 +274,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 23. An adapted understanding lags behind its general idea, which has moved on. | aging | kind | either |
 | 24. A general idea is bent to one project's needs, and no longer fits the others. | writing | kind | between |
 
-The same cases by phase and Knowledge Axis. Every cell has a case; an empty one would point at a missing case:
+The same cases by Text Life Phase and Knowledge Axis. Every cell has a case; an empty one would point at a missing case:
 
 | | who uses it | time | kind | where |
 |---|---|---|---|---|
