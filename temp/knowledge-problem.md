@@ -76,7 +76,7 @@ Where text is kept so far, on each of the four axes, which §3.1 to §3.4 explai
 
 | Where it's kept | Kind | Time | Who uses it | Where |
 |---|---|---|---|---|
-| Understanding files in the repo | understanding | now | both | this repo |
+| Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | this repo |
 | Agent Skills and rules | instruction | now | the agent acts on it; the human checks what they told it | this repo, and a copy in each run of those it ships |
 | Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | this repo; each run keeps its own |
 | TODO, the backlog | understanding | later | both | this repo; each run keeps its own |
