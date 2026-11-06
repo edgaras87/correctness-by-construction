@@ -291,7 +291,7 @@ Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this re
 
 ## 5. What was tried
 
-This repo writes each fact in one text, its home, and every other text that needs it points there by a reference instead of retelling it (one home per fact). It was built without full consideration, and it is felt to have cost too much to keep here; §6 tests where that cost comes from:
+This repo keeps One Home per Fact, with a reference wherever another text needs the fact. It was built without full consideration, and it is felt to have cost too much to keep here; §6 tests where that cost comes from:
 
 - **Finding is cheap, judging is not.** A search lists every place that points at a fact. Whether each place still holds needs reading. This repo has 398 section references pointing at 129 sections. The most pointed-at section has 22.
 - **The fix becomes a loop.** A change in one referring place can force the home to change. Then every other reference has to be checked again. If they disagree, it's back to the home, and so on. A decision has to be weighed across many places, not taken in one pass.
@@ -305,12 +305,12 @@ The next step of this work tests these against this repo's history: the devlog's
 - how often stale text actually hurt a session, and how;
 - where staleness comes from: a retelling that drifted, a home that was wrong, or something never written down;
 - whether every text must stay true, or only what the agent acts on;
-- whether the cost lies in the one-home idea itself, or in how it's kept, such as the sweep;
+- whether the cost lies in One Home per Fact itself, or in how it's kept, such as the sweep;
 - whether only now decides that a change is needed, with before as input and not authority;
 - when checking before costs more than it gives, and whether it can harm: by what reading it costs, by anchoring new thinking to old framing, or by being read as now;
 - which parts of before pay, and which aren't worth keeping. This repo's devlog alone is 8,773 lines, after 4 months;
 - whether the middle level is needed for every idea, or only for an idea that serves projects with different needs;
-- whether part of one home's cost comes from levels missing or merged: an instruction written straight from a general idea is reread whenever the idea changes.
+- whether part of the cost of One Home per Fact comes from levels missing or merged: an instruction written straight from a general idea is reread whenever the idea changes.
 
 ## 7. What would show it's solved
 
@@ -326,7 +326,7 @@ Answers met while stating the problem, kept to be weighed, not chosen:
 
 - write an instruction only when work needs one, and keep it short;
 - keep the why in the understanding, not in the instruction;
-- let an instruction point up to its understanding instead of retelling it. How this differs from one home per fact (§5) is open.
+- let an instruction point up to its understanding instead of retelling it. How this differs from One Home per Fact (§5) is open.
 - keep a middle level for an idea that serves projects with different needs, and none for an idea only one project uses. Weighed so far:
 
   | | With a middle level | Without one |
