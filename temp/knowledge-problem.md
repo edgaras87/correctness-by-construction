@@ -74,6 +74,8 @@ The problem holds wherever a human works with an agent across sessions. This rep
 
 ## 2. This repo as intended
 
+Where this text speaks in general, it says project. In this first case, each project is kept in a repo: this repo, a Concept Repo, and each CBC Run, a Run Repo, as this repo's glossary names them.
+
 This repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a CBC Run, or run for short, build real systems by the concept. Each starts from what this repo ships, and what it learns is read back here.
 
 Among its instructions are Agent Skills and rules. An Agent Skill is an instruction the agent loads for a task; a rule is one it loads in every session.
