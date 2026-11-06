@@ -122,6 +122,8 @@ Knowledge moves between the times, and the move is where it gets lost:
 
 If a move isn't written down, the old text keeps claiming now.
 
+New knowledge enters in several ways, so far: the human learns, a talk ends in a decision, the agent finds something in the work, a run shows something this repo reads back, or work never done before is tried.
+
 Before keeps why it changed, not only what was thought. Without that why, a later reader sees what changed but not the reason: the why goes missing (§4), this time between before and now.
 
 Now has degrees of certainty: what is thought now isn't always what is known. Some of now is unchecked, and later holds what should be checked.
