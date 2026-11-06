@@ -15,7 +15,7 @@ This text states one problem: how what a human and an agent know stays true, and
 
 ## Names
 
-A capitalized Name is defined here, once; a lowercase word is plain English; an *italic* word is a label inside the Name it belongs to. The Names are local to this text, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. A definition names what it builds on by its Name, never by where it stands in the text, such as "the same idea" or "the two".
+A capitalized Name is defined here, once. Six plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground. Any other lowercase word is plain English. An *italic* word is a label inside the Name it belongs to. The Names are local to this text, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. A definition names what it builds on by its Name, never by where it stands in the text, such as "the same idea" or "the two".
 
 Plain words, in a narrow sense:
 
