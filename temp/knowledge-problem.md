@@ -67,6 +67,7 @@ Each CBC Run:
 3. keeps understanding of its own problem: one specific system's design;
 4. keeps its own records, from the setup it was shipped;
 5. may lose the why of its changes: this repo reads only what the run wrote down.
+6. drafts trials for work never done before, uses each until this repo judges it, and offers it back.
 
 Seen already, where the repo differs from that intent: one convention manual, understanding, is written for both seats at once, this repo's and every CBC Run's, though the two need different things from it.
 
