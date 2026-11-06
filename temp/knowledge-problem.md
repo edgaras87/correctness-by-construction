@@ -11,26 +11,49 @@
      home is decided when the Plan Step closes; it goes then, and
      git keeps every version. -->
 
-## Words used here
+This text states one problem: how what a human and an agent know stays true, and shared, from one session to the next. It proposes no answer.
 
-Words this text gives an exact meaning, each with where it is defined. This list is a trial of names one text uses alone (TODO, *Decide which names go in the glossary, and how a name one text uses alone is kept apart*). They are kept lowercase, each was checked against this repo's glossary, and the list is judged by whether a fresh reader still gets lost on them. One word collided, "seat", and was replaced by "repo".
+## Names
 
-- knowledge, text, the chat: §1
-- the human, the agent: §1
-- the same page, depth of understanding: §1
-- repo, run: §2
-- the intent, the middle level: §2
-- axis: §3
-- interface: §3.1
-- before, now, later; a move: §3.2
-- understanding, instruction: §3.3
-- general, adapted: §3.3
-- knowledge on trial: §3.3
-- a shipped copy: §3.4
-- drift, mistaken knowledge: §4
-- phase: writing, aging, reading: §4
-- case: §4
-- one home per fact, a refresh: §5
+A capitalized Name is defined here, once; a lowercase word is plain English; an *italic* word is a label inside the Name it belongs to. The Names are local to this text, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary.
+
+Plain words, in a narrow sense:
+
+- **knowledge:** what one knows, and how one understands it. It lives in a head.
+- **text:** where knowledge is stored, as it stood at one moment: Understanding Text and Instruction Text, wherever kept.
+- **the chat:** where knowledge passes between the two; lost when a session ends, unless written down. Not text.
+- **the human:** the person whose knowledge it is, who carries it from one session to the next.
+- **the agent:** the AI model in a session. It knows its subjects from training, and the human and the work only from what it reads.
+
+Names, in order of first use:
+
+- **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
+- **Same Page:** the agent's picture of the human's understanding, built from the text, matches it and its Depth of Understanding.
+- **CBC Run:** a repo that builds a real system by the concept, starting from what this repo ships. This repo's glossary Name.
+- **Understanding Text:** text that holds what is known, and how it is understood.
+- **Instruction Text:** text built on understanding, to apply it; what the agent acts on. Agent Skills and rules are Instruction Texts.
+- **General Understanding Text:** an Understanding Text bound to no project.
+- **Adapted Understanding Text:** the same idea narrowed to one project's needs; the middle level between general understanding and instruction.
+- **Shipped Copy:** an Instruction Text this repo ships, as it lives in a CBC Run.
+- **Repo Intent:** what this repo and each CBC Run are meant to keep (§2). Its *time* is *later*, not the repo today.
+- **Failure Case:** one way the Same Page fails, numbered in §4.
+- **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an understanding, or a text's form.
+- **Repo Refresh:** bringing text up to date. Today, one agent reads the whole repo once.
+- **Knowledge Axis:** one way of sorting text. There are four: *who uses it*, *time*, *kind*, *where* (§3).
+- **Knowledge Move:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
+- **Knowledge Drift:** text and knowledge moving apart. The text holds less than the knowledge, or is older than it.
+- **Knowledge Drift Phase:** where Knowledge Drift happens: *writing*, *aging*, *reading*.
+- **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
+- **Repo Intent Drift:** the repo not being what Repo Intent says. It is fixed in the repo, or in the intent.
+- **One Home per Fact:** this repo's practice: each fact in one text, its home, with every other text pointing there.
+
+Labels:
+
+- *who uses it*: *the human*, *the agent*, *both*
+- *time*: *before*, *now*, *later*
+- *kind*: Understanding Text, Instruction Text
+- *where*: *this repo*, *a CBC Run*; a Failure Case is *either* or *between*
+- Knowledge Drift Phase: *writing*, *aging*, *reading*
 
 ## 1. The purpose
 
