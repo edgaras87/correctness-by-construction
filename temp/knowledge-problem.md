@@ -58,7 +58,7 @@ This repo keeps:
    - specific to that run's problem: the change is rejected, and the understanding and the delivery stay as they are;
 6. updates for runs already running: when delivery changes, a run born earlier gets the change, or keeps working from its old copy;
 7. its own records: the history and the backlog of this work.
-8. its trials: work done for the first time, written as one text, an Approach on Trial, in a run or here, and judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment to refresh what it touches, here and in the runs' copies. This repo also judges its own trials, with no outside judge. A run's trial, once judged here, reaches back to that run by an update, or the run keeps working from its own version.
+8. its knowledge on trial, from runs and its own, judged here. Its form for work done for the first time is the Approach on Trial: one text, written in a run or here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment to refresh what it touches, here and in the runs' copies. This repo also judges its own knowledge on trial, with no outside judge. A run's, once judged here, reaches back to that run by an update, or the run keeps working from its own version.
 
 Each CBC Run:
 
@@ -66,7 +66,7 @@ Each CBC Run:
 2. gets the concept's understanding, to explain its problems. Whether a run may change that understanding, since it uses it directly, is open;
 3. keeps understanding of its own problem: one specific system's design;
 4. keeps its own records, from the setup it was shipped;
-5. drafts trials for work done for the first time, uses each until this repo judges it, and offers it back.
+5. puts knowledge on trial, such as an Approach on Trial for work done for the first time, uses each until this repo judges it, and offers it back.
 
 Seen already, where the repo differs from that intent: one convention manual, the understanding text for one way of working, is written for both repos at once, this repo and every CBC Run, though the two need different things from it.
 
@@ -82,7 +82,7 @@ Where text is kept so far, on each of the four axes, which §3.1 to §3.4 explai
 | TODO, the backlog | understanding | later | both | this repo; each run keeps its own |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | this repo |
 | The agent's memory | both | now | the agent; the human rarely | this repo's work, outside its files |
-| A trial, an Approach on Trial | both | now, unchecked | the agent works by it; the human judges it | this repo, or a run |
+| Knowledge on trial, such as an Approach on Trial | both | now, unchecked | the agent works by it; the human judges it | this repo, or a run |
 | A shipped copy | instruction | now | the agent in the run | each run |
 | The intent, §2's lists | understanding | later | both | this repo |
 
@@ -125,7 +125,7 @@ Knowledge moves between the times, and the move is where it gets lost:
 
 If a move isn't written down, the old text keeps claiming now.
 
-New knowledge enters in several ways, so far: the human learns, a talk ends in a decision, the agent finds something in the work, a run shows something this repo reads back, or work done for the first time is tried.
+New knowledge enters in several ways, so far: the human learns, a talk ends in a decision, the agent finds something in the work, a run shows something this repo reads back, or knowledge is put on trial (§3.3).
 
 Before keeps why it changed, not only what was thought. Without that why, a reader afterwards sees what changed but not the reason: the why goes missing (§4), this time between before and now.
 
@@ -151,7 +151,7 @@ An instruction has two readers too. The agent acts on it. The human reads it to 
 
 The two kinds go wrong differently. Understanding may be not always correct and still do its job. An instruction must be faithful to its understanding, since the agent acts on it as it stands. It is only as right as that understanding: a mistaken understanding passes into a faithful instruction unseen.
 
-A text can be both kinds while its knowledge is new. Work done for the first time is written as one text, an instruction with its understanding inside it, and tried. It is split only when it is judged, since what is not yet understood cannot be split.
+New knowledge can be used before it is judged: knowledge on trial. It may be a way of working, an understanding, or the form of a text. While it is new, a text can be both kinds: a way of working tried for the first time is written as one text, an instruction with its understanding inside it. It is split only when it is judged, since what is not yet understood cannot be split.
 
 Some understanding is about the agent itself: how a change works, in four steps, `decide ──▶ make ──▶ check ──▶ record`; how a session starts empty; what loads when. Here the agent teaches the human. From what the human then understands, the two write instructions together, such as how a change is recorded.
 
@@ -207,7 +207,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 15. One understanding text serves repos whose needs differ, and a change made for one changes the other. | writing | where | between |
 | 16. One instruction covers several tasks, and a change made for one task changes the others. | writing | kind | either |
 | 17. A later text is read as now: what is meant to be is taken for what is. | reading | time | either |
-| 18. Unchecked knowledge is read as checked, such as a trial's text taken as proven. | reading | time | either |
+| 18. Unchecked knowledge is read as checked, such as knowledge on trial taken as proven. | reading | time | either |
 | 19. A run's copy of a shipped instruction drifts from what was shipped. | aging | where | between |
 | 20. This repo judges a run's change wrongly: a lesson taken as specific to the run, or something specific taken as a lesson. | reading | where | between |
 | 21. An update never reaches a run already running, which works on from its old copy. | aging | where | between |
