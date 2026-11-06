@@ -261,7 +261,9 @@ The next step of this work tests these against this repo's history: the devlog's
 - whether the cost lies in the one-home idea itself, or in how it's kept, such as the sweep;
 - whether only now decides that a change is needed, with before as input and not authority;
 - when checking before costs more than it gives, and whether it can harm: by what reading it costs, by anchoring new thinking to old framing, or by being read as now;
-- which parts of before pay, and which aren't worth keeping. This repo's devlog alone is 8,773 lines, after 4 months.
+- which parts of before pay, and which aren't worth keeping. This repo's devlog alone is 8,773 lines, after 4 months;
+- whether the middle level is needed for every idea, or only for an idea that serves projects with different needs;
+- whether part of one home's cost comes from levels missing or merged: an instruction written straight from a general idea is reread whenever the idea changes.
 
 ## 7. What would show it's solved
 
