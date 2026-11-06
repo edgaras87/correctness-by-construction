@@ -157,6 +157,13 @@ Text comes in two kinds, so far:
 - understanding: what is known, and how it is understood;
 - instruction: text built on understanding, to apply it. Agent Skills and rules are instructions.
 
+Understanding can have levels, so far:
+
+- general: an idea bound to no project;
+- adapted: the same idea narrowed to one project's needs, such as this repo's upkeep or a run's work.
+
+An instruction comes from the adapted level where there is one, and the adapted level from the general.
+
 An instruction has two readers too. The agent acts on it. The human reads it to know what they told the agent.
 
 The two kinds go wrong differently. Understanding may be not always correct and still do its job. An instruction must be faithful to its understanding, since the agent acts on it as it stands. It is only as right as that understanding: a mistaken understanding passes into a faithful instruction unseen.
