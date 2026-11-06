@@ -43,6 +43,28 @@ The two groups are split today. They may turn out to be one understanding, sorte
 
 So knowledge written here becomes instructions that agents act on in other repos. The agent in a CBC Run starts with none of this repo's context, only what was shipped, and the copies there can drift, or change on their own.
 
+What each side is meant to keep. This is the intent; whether the repo does all of it today is not yet checked.
+
+This repo keeps:
+
+1. understanding of agent work;
+2. understanding of the concept, CBC system design;
+3. delivery: instructions made from both, general enough to reuse in any project built by the concept;
+4. its own instructions, from the understanding of agent work, updated as that understanding changes;
+5. findings from runs. A run uses the instructions in practice, and changes them as its problems demand, without the understanding to judge whether a change is right. This repo reads the changes and concludes one of two things:
+   - a lesson: the understanding is updated, then the delivered instructions, so future runs don't repeat a mistake or miss the same thing;
+   - specific to that run's problem: the change is rejected, and the understanding and the delivery stay as they are;
+6. updates for runs already running: when delivery changes, a run born earlier gets the change, or keeps working from its old copy;
+7. its own records: the history and the backlog of this work.
+
+Each CBC Run:
+
+1. keeps no understanding of agent work. It uses the instructions, and may change them;
+2. gets the concept's understanding, to explain its problems. Whether a run may change that understanding, since it uses it directly, is open;
+3. keeps understanding of its own problem: one specific system's design;
+4. keeps its own records, from the setup it was shipped;
+5. may lose the why of its changes: this repo reads only what the run wrote down.
+
 ## 3. The axes of knowledge
 
 Where text is kept so far, on each of the three axes, which §3.1 to §3.3 explain. Every text should have a place on each axis; one that doesn't is a finding.
