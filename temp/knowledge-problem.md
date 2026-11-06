@@ -66,8 +66,7 @@ Each CBC Run:
 2. gets the concept's understanding, to explain its problems. Whether a run may change that understanding, since it uses it directly, is open;
 3. keeps understanding of its own problem: one specific system's design;
 4. keeps its own records, from the setup it was shipped;
-5. may lose the why of its changes: this repo reads only what the run wrote down.
-6. drafts trials for work never done before, uses each until this repo judges it, and offers it back.
+5. drafts trials for work never done before, uses each until this repo judges it, and offers it back.
 
 Seen already, where the repo differs from that intent: one convention manual, understanding, is written for both seats at once, this repo's and every CBC Run's, though the two need different things from it.
 
@@ -182,36 +181,40 @@ The drift happens in three phases of a text's life: two moments, writing and rea
 - **Aging:** the knowledge moves on, and the text grows older than it.
 - **Reading:** the agent reads the text and builds a different understanding from it than the human holds.
 
-The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the phase it breaks in and the axis of §3 it lives on:
+The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the phase it breaks in, the axis of §3 it lives on, and where: in either seat, or between the two (§3.4):
 
-| Case | Phase | Axis |
-|---|---|---|
-| 1. The human knows something the text doesn't hold. | writing | who uses it |
-| 2. The text is older than the human's understanding: they have moved on. | aging | time |
-| 3. The agent's context is older than the text: it read the text earlier in the session, or from a summary, and the text has changed since. | aging | who uses it |
-| 4. The text is ahead of the human: the agent wrote it, and it holds the agent's understanding, not the human's. | writing | who uses it |
-| 5. The text is at the wrong level: too thin to recall from, or too dense to read. | writing | who uses it |
-| 6. The text is wrong, and the agent treats it as true instead of suggesting a fix. | reading | who uses it |
-| 7. The agent reads the text and builds a different understanding from it than the human meant. | reading | who uses it |
-| 8. Two texts disagree, and neither says which one is where the human is now. | aging | time |
-| 9. The text holds the what, not the why. | writing | kind |
-| 10. An instruction still applies understanding that has moved on. | aging | kind |
-| 11. An instruction is faithful to an understanding that is mistaken, and neither side sees it until the work shows it. | writing | kind |
-| 12. A move between times isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time |
-| 13. The agent reads a before text as now, such as an old devlog entry taken as current. | reading | time |
-| 14. The agent reads understanding as an instruction, such as the human thinking aloud, in chat or in text, taken as an order, or applies an instruction where it wasn't meant to. | reading | kind |
-| 15. One understanding text serves sides whose needs differ, and a change made for one moves the other. | writing | who uses it |
-| 16. One instruction covers several tasks, and a change made for one task changes the others. | writing | kind |
-| 17. A later text is read as now: what is meant to be is taken for what is. | reading | time |
-| 18. Unchecked knowledge is read as checked, such as a trial's text taken as proven. | reading | time |
+| Case | Phase | Axis | Where |
+|---|---|---|---|
+| 1. The human knows something the text doesn't hold. | writing | who uses it | either |
+| 2. The text is older than the human's understanding: they have moved on. | aging | time | either |
+| 3. The agent's context is older than the text: it read the text earlier in the session, or from a summary, and the text has changed since. | aging | who uses it | either |
+| 4. The text is ahead of the human: the agent wrote it, and it holds the agent's understanding, not the human's. | writing | who uses it | either |
+| 5. The text is at the wrong level: too thin to recall from, or too dense to read. | writing | who uses it | either |
+| 6. The text is wrong, and the agent treats it as true instead of suggesting a fix. | reading | who uses it | either |
+| 7. The agent reads the text and builds a different understanding from it than the human meant. | reading | who uses it | either |
+| 8. Two texts disagree, and neither says which one is where the human is now. | aging | time | either |
+| 9. The text holds the what, not the why. | writing | kind | either |
+| 10. An instruction still applies understanding that has moved on. | aging | kind | either |
+| 11. An instruction is faithful to an understanding that is mistaken, and neither side sees it until the work shows it. | writing | kind | either |
+| 12. A move between times isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time | either |
+| 13. The agent reads a before text as now, such as an old devlog entry taken as current. | reading | time | either |
+| 14. The agent reads understanding as an instruction, such as the human thinking aloud, in chat or in text, taken as an order, or applies an instruction where it wasn't meant to. | reading | kind | either |
+| 15. One understanding text serves seats whose needs differ, and a change made for one moves the other. | writing | where | between |
+| 16. One instruction covers several tasks, and a change made for one task changes the others. | writing | kind | either |
+| 17. A later text is read as now: what is meant to be is taken for what is. | reading | time | either |
+| 18. Unchecked knowledge is read as checked, such as a trial's text taken as proven. | reading | time | either |
+| 19. A run's copy of a shipped instruction drifts from what was shipped. | aging | where | between |
+| 20. This repo judges a run's change wrongly: a lesson taken as specific to the run, or something specific taken as a lesson. | reading | where | between |
+| 21. An update never reaches a run already running, which works on from its old copy. | aging | where | between |
+| 22. A run's change reaches this repo without its why: the run wrote down what it changed, not why. | writing | where | between |
 
 The same cases by phase and axis. Every cell has a case; an empty one would point at a missing case:
 
-| | who uses it | time | kind |
-|---|---|---|---|
-| **writing** | 1, 4, 5, 15 | 12 | 9, 11, 16 |
-| **aging** | 3 | 2, 8 | 10 |
-| **reading** | 6, 7 | 13, 17, 18 | 14 |
+| | who uses it | time | kind | where |
+|---|---|---|---|---|
+| **writing** | 1, 4, 5 | 12 | 9, 11, 16 | 15, 22 |
+| **aging** | 3 | 2, 8 | 10 | 19, 21 |
+| **reading** | 6, 7 | 13, 17, 18 | 14 | 20 |
 
 Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
 
