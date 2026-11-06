@@ -234,7 +234,7 @@ This repo writes each fact in one text, its home, and every other text that need
 
 ## 6. Where it may be wrong
 
-The next step of this work tests these against the record: the devlog's notes of what each session lacked, and the findings of past reviews of this repo:
+The next step of this work tests these against this repo's history: the devlog's notes of what each session lacked, and the findings of past reviews of this repo:
 
 - how often stale text actually hurt a session, and how;
 - where staleness comes from: a retelling that drifted, a home that was wrong, or something never written down;
