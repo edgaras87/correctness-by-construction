@@ -78,7 +78,10 @@ Each CBC Run:
 4. keeps its own records, from the setup it was shipped;
 5. puts knowledge on trial, uses each until this repo judges it, and offers it back. This repo's form for it today is the Approach on Trial, for ways of working only.
 
-Seen already, where the repo differs from that intent: one convention manual, the understanding text for one way of working, is written for both repos at once, this repo and every CBC Run, though the two need different things from it.
+Seen already, where the repo differs from that intent:
+
+- one convention manual, the middle level for one way of working, is written for both repos at once, this repo and every CBC Run, though the two need different things from it: one middle serving two repos (case 15);
+- two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (case 8).
 
 ## 3. The axes of knowledge
 
