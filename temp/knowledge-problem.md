@@ -38,10 +38,10 @@ Names, in order of first use:
 - **Repo Intent:** what this repo and each CBC Run are meant to keep (§2). Its *time* is *later*, not the repo today.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
-- **Repo Refresh:** bringing text up to date. Today it is a sweep: one agent reads the whole repo once.
 - **Knowledge Axis:** one way of sorting text. There are four: *who uses it*, *time*, *kind*, *where* (§3).
 - **Knowledge Move:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
 - **Knowledge Drift:** text and knowledge moving apart. The text holds less than the knowledge, or is older than it.
+- **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
 - **Knowledge Drift Phase:** where Knowledge Drift happens: *writing*, *aging*, *reading*.
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **Repo Intent Drift:** the repo not being what Repo Intent says. It is fixed in the repo, or in the Repo Intent.
@@ -112,7 +112,7 @@ This repo keeps:
    - specific to that run's problem: the change is rejected, and the understanding and the delivery stay as they are;
 6. updates for runs already running: when delivery changes, a run born earlier gets the change, or keeps working from its old copy;
 7. its own records: the history and the backlog of this work.
-8. its knowledge on trial, from runs and its own, judged here. Its form for work done for the first time is the Approach on Trial: one text, written in a run or here. That is what the repo has today; whether it meets this intent, and what other knowledge on trial needs, is checked in the next step. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Repo Refresh of what it touches, here and in the runs' copies. This repo also judges its own knowledge on trial, with no outside judge. A run's, once judged here, reaches back to that run by an update, or the run keeps working from its own version.
+8. its knowledge on trial, from runs and its own, judged here. Its form for work done for the first time is the Approach on Trial: one text, written in a run or here. That is what the repo has today; whether it meets this intent, and what other knowledge on trial needs, is checked in the next step. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the runs' copies. This repo also judges its own knowledge on trial, with no outside judge. A run's, once judged here, reaches back to that run by an update, or the run keeps working from its own version.
 
 Each CBC Run:
 
@@ -296,7 +296,7 @@ This repo writes each fact in one text, its home, and every other text that need
 - **Finding is cheap, judging is not.** A search lists every place that points at a fact. Whether each place still holds needs reading. This repo has 398 section references pointing at 129 sections. The most pointed-at section has 22.
 - **The fix becomes a loop.** A change in one referring place can force the home to change. Then every other reference has to be checked again. If they disagree, it's back to the home, and so on. A decision has to be weighed across many places, not taken in one pass.
 - **It multiplies.** When references start disagreeing with each other, each disagreement starts its own loop.
-- **A Repo Refresh is a sweep.** Every finding it makes can start a loop.
+- **A Knowledge Drift Repair starts with a sweep.** Every finding it makes can start a loop.
 
 ## 6. Where it may be wrong
 
