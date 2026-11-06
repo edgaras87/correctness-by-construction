@@ -82,6 +82,9 @@ Where text is kept so far, on each of the four axes, which §3.1 to §3.4 explai
 | TODO, the backlog | understanding | later | both | this repo; each run keeps its own |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | this repo |
 | The agent's memory | both | now | the agent; the human rarely | this repo's work, outside its files |
+| A trial, an Approach on Trial | both | now, unchecked | the agent works by it; the human judges it | this repo, or a run |
+| A shipped copy | instruction | now | the agent in the run | each run |
+| The intent, §2's lists | understanding | later | both | this repo |
 
 ### 3.1 Who uses the text
 
