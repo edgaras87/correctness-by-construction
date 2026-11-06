@@ -168,7 +168,7 @@ The seats are not the two sides of §1. The human and the agent work in both.
 
 ## 4. What goes wrong
 
-Everything here is one drift: the text and the knowledge drift apart.
+Most of what goes wrong is one drift: the text and the knowledge drift apart. One kind is not: the knowledge itself is mistaken, and the text carries it faithfully (case 11). Drift is fixed by bringing the text up to the knowledge; a mistaken knowledge is fixed in the knowledge first.
 
 - **When the text holds less than the knowledge, the why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
 - **When the text is older than the knowledge, it goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is the bigger problem. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
