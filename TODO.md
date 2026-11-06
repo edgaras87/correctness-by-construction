@@ -69,6 +69,10 @@
       - what else can go wrong: a local name grows global unseen; a
         glossary entry drifts from its home; names in the agent's
         memory, outside the repo.
+      - a definition names what it builds on by its Name, never by
+        where it stands in the text, such as "the same idea": tried in
+        `temp/knowledge-problem.md`'s Names, where five definitions
+        broke it.
       Trigger: the close of "Find how what we know stays true", when
       its lessons are written back.
 
