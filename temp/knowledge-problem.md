@@ -183,7 +183,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 11. An instruction is faithful to an understanding that is mistaken, and neither side sees it until the work shows it. | writing | kind |
 | 12. A move between times isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time |
 | 13. The agent reads a before text as now, such as an old devlog entry taken as current. | reading | time |
-| 14. The agent reads understanding as an instruction, such as the human thinking aloud taken as an order, or applies an instruction where it wasn't meant to. | reading | kind |
+| 14. The agent reads understanding as an instruction, such as the human thinking aloud, in chat or in text, taken as an order, or applies an instruction where it wasn't meant to. | reading | kind |
 
 The same cases by phase and axis. Every cell has a case; an empty one would point at a missing case:
 
