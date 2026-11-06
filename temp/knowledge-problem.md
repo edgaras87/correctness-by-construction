@@ -39,7 +39,7 @@ Names, in order of first use:
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
 - **Knowledge Axis:** one way of sorting text. There are four: *who uses it*, *time*, *kind*, *where* (§3).
-- **Knowledge Move:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
+- **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
 - **Knowledge Drift:** text and knowledge moving apart. The text holds less than the knowledge, or is older than it.
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
 - **Knowledge Drift Phase:** where Knowledge Drift happens: *writing*, *aging*, *reading*.
@@ -175,7 +175,7 @@ Knowledge has a time too:
 - now: what is known or thought now, not always checked;
 - later: what is meant to be learned, or checked, afterwards.
 
-A Knowledge Move is where knowledge gets lost. If a Knowledge Move isn't written down, the old text keeps claiming now.
+A Knowledge Time Shift is where knowledge gets lost. If a Knowledge Time Shift isn't written down, the old text keeps claiming now.
 
 New knowledge enters in several ways, so far: the human learns, a talk ends in a decision, the agent finds something in the work, a run shows something this repo reads back, or knowledge is used as Knowledge on Trial (§3.3).
 
@@ -260,7 +260,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 9. The text holds the what, not the why. | writing | kind | either |
 | 10. An instruction still applies understanding that has moved on. | aging | kind | either |
 | 11. An instruction is faithful to Mistaken Knowledge, and neither side sees it until the work shows it. | writing | kind | either |
-| 12. A Knowledge Move isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time | either |
+| 12. A Knowledge Time Shift isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time | either |
 | 13. The agent reads a before text as now, such as an old devlog entry taken as current. | reading | time | either |
 | 14. The agent reads understanding as an instruction, such as the human thinking aloud, in chat or in text, taken as an order, or applies an instruction where it wasn't meant to. | reading | kind | either |
 | 15. One understanding text serves repos whose needs differ, and a change made for one changes the other. | writing | where | between |
