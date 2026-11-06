@@ -171,7 +171,7 @@ The two repos are not the two sides of §1. The human and the agent work in both
 
 ## 4. What goes wrong
 
-Most of what goes wrong is one drift: the text and the knowledge drift apart. One kind is not: the knowledge itself is mistaken, and the text carries it faithfully (case 11). Drift is fixed by bringing the text up to the knowledge; a mistaken knowledge is fixed in the knowledge first.
+Most of what goes wrong is one drift: the text and the knowledge drift apart. One failure is not drift: the knowledge itself is mistaken, and the text carries it faithfully (case 11). Drift is fixed by bringing the text up to the knowledge; a mistaken knowledge is fixed in the knowledge first.
 
 A third failure sits outside the text: the repo itself may not be what it is meant to be (§2). It is fixed in the repo, or in the intent, and it can cause drift. The next step of this work checks it first (§6).
 
@@ -242,7 +242,7 @@ The next step of this work tests these against the record: the devlog's notes of
 - whether the cost lies in the one-home idea itself, or in how it's kept, such as the sweep;
 - whether only now decides that a change is needed, with before as input and not authority;
 - when checking before costs more than it gives, and whether it can harm: by what reading it costs, by anchoring new thinking to old framing, or by being read as now;
-- which kinds of before pay, and which aren't worth keeping. This repo's devlog alone is 8,773 lines, after 4 months.
+- which parts of before pay, and which aren't worth keeping. This repo's devlog alone is 8,773 lines, after 4 months.
 
 ## 7. What would show it's solved
 
