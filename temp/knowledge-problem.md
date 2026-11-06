@@ -150,7 +150,7 @@ The text is the interface between the human's mind and the agent. Each uses it d
 For the human, the text is, so far:
 
 - how they see something, and how they understand it;
-- where they are with it, at the depth of understanding each idea needs: basics for one, details for another;
+- where they are with it, at the Depth of Understanding each idea needs;
 - not always correct;
 - what they recall from.
 
@@ -192,7 +192,7 @@ What before is for, so far:
 
 - not repeating a mistake: a dead end marked as one isn't tried again;
 - knowing why now is as it is: when a past decision is questioned, its reasons and what was rejected are there;
-- seeing where the human has been: the path of their understanding, which helps the agent judge their depth of understanding now;
+- seeing where the human has been: the path of their understanding, which helps the agent judge their Depth of Understanding now;
 - resuming work: where it stopped, and what was tried;
 - going back: undoing to an earlier state;
 - evidence: what things cost, so a choice can be judged.
@@ -258,7 +258,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 2. The text is older than the human's understanding: they have moved on. | aging | time | either |
 | 3. The agent's context is older than the text: it read the text earlier in the session, or from a summary, and the text has changed since. | aging | who uses it | either |
 | 4. The text is ahead of the human: the agent wrote it, and it holds the agent's understanding, not the human's. | writing | who uses it | either |
-| 5. The text misses the human's depth of understanding: too thin to recall from, or too dense to read. | writing | who uses it | either |
+| 5. The text misses the human's Depth of Understanding: too thin to recall from, or too dense to read. | writing | who uses it | either |
 | 6. The text is wrong, and the agent treats it as true instead of suggesting a fix. | reading | who uses it | either |
 | 7. The agent reads the text and builds a different understanding from it than the human meant. | reading | who uses it | either |
 | 8. Two texts disagree, and neither says which one is where the human is now. | aging | time | either |
