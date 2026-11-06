@@ -58,6 +58,7 @@ This repo keeps:
    - specific to that run's problem: the change is rejected, and the understanding and the delivery stay as they are;
 6. updates for runs already running: when delivery changes, a run born earlier gets the change, or keeps working from its old copy;
 7. its own records: the history and the backlog of this work.
+8. its trials: work never done before, written as one text, an Approach on Trial, in a run or here, and judged here. Each stays on trial for more uses, lands as new understanding or spread across understanding that exists, or is dropped. A landing is a moment to refresh what it touches, here and in the runs' copies.
 
 Each CBC Run:
 
