@@ -34,7 +34,7 @@ This repo, `correctness-by-construction`, holds one concept, correctness by cons
 
 Among its instructions are Agent Skills and rules. An Agent Skill is an instruction the agent loads for a task; a rule is one it loads in every session.
 
-Its understanding falls in two groups. Each gives instructions in two places, this repo's and each CBC Run's, which this repo calls its Convention Seats:
+Its understanding falls in two groups. Each gives instructions in two places, this repo and each CBC Run:
 
 | Understanding | Instructions for this repo | Instructions shipped to each CBC Run |
 |---|---|---|
@@ -45,7 +45,7 @@ The two groups are split today. They may turn out to be one understanding, sorte
 
 So knowledge written here becomes instructions that agents act on in other repos. The agent in a CBC Run starts with none of this repo's context, only what was shipped, and the copies there can drift, or change on their own.
 
-What each seat is meant to keep: the system as we mean it to be. This is later knowledge (§3.2), what should be, not a description of the repo today, and the intent itself may change. Whether the repo does all of it is not yet checked.
+What each repo is meant to keep: the system as we mean it to be. This is later knowledge (§3.2), what should be, not a description of the repo today, and the intent itself may change. Whether the repo does all of it is not yet checked.
 
 This repo keeps:
 
@@ -68,7 +68,7 @@ Each CBC Run:
 4. keeps its own records, from the setup it was shipped;
 5. drafts trials for work never done before, uses each until this repo judges it, and offers it back.
 
-Seen already, where the repo differs from that intent: one convention manual, the understanding text for one way of working, is written for both seats at once, this repo's and every CBC Run's, though the two need different things from it.
+Seen already, where the repo differs from that intent: one convention manual, the understanding text for one way of working, is written for both repos at once, this repo and every CBC Run, though the two need different things from it.
 
 ## 3. The axes of knowledge
 
@@ -165,9 +165,9 @@ An instruction can be copied to other repos, for the agents working there. Each 
 
 A text is kept in this repo, or in a run. Some is in both: what this repo ships becomes a copy in each run, and a run's changes come back only when this repo reads them.
 
-Some failures can happen in either seat. Others happen only between the two: a run's copy drifts from what was shipped; this repo judges a run's change wrongly, as a lesson when it was specific to the run, or the other way round; an update never reaches a run already running.
+Some failures can happen in either repo. Others happen only between the two: a run's copy drifts from what was shipped; this repo judges a run's change wrongly, as a lesson when it was specific to the run, or the other way round; an update never reaches a run already running.
 
-The seats are not the two sides of §1. The human and the agent work in both.
+The two repos are not the two sides of §1. The human and the agent work in both.
 
 ## 4. What goes wrong
 
@@ -184,7 +184,7 @@ The drift happens in three phases of a text's life: two moments, writing and rea
 - **Aging:** the knowledge moves on, and the text grows older than it.
 - **Reading:** the agent reads the text and builds a different understanding from it than the human holds.
 
-The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the phase it breaks in, the axis of §3 it lives on, and where: in either seat, or between the two (§3.4):
+The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the phase it breaks in, the axis of §3 it lives on, and where: in either repo, or between this repo and a run (§3.4):
 
 | Case | Phase | Axis | Where |
 |---|---|---|---|
@@ -202,7 +202,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 12. A move between times isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time | either |
 | 13. The agent reads a before text as now, such as an old devlog entry taken as current. | reading | time | either |
 | 14. The agent reads understanding as an instruction, such as the human thinking aloud, in chat or in text, taken as an order, or applies an instruction where it wasn't meant to. | reading | kind | either |
-| 15. One understanding text serves seats whose needs differ, and a change made for one moves the other. | writing | where | between |
+| 15. One understanding text serves repos whose needs differ, and a change made for one moves the other. | writing | where | between |
 | 16. One instruction covers several tasks, and a change made for one task changes the others. | writing | kind | either |
 | 17. A later text is read as now: what is meant to be is taken for what is. | reading | time | either |
 | 18. Unchecked knowledge is read as checked, such as a trial's text taken as proven. | reading | time | either |
