@@ -67,6 +67,8 @@ Each CBC Run:
 4. keeps its own records, from the setup it was shipped;
 5. may lose the why of its changes: this repo reads only what the run wrote down.
 
+Seen already, where the repo differs from that intent: one convention manual, understanding, is written for both seats at once, this repo's and every CBC Run's, though the two need different things from it.
+
 ## 3. The axes of knowledge
 
 Where text is kept so far, on each of the three axes, which §3.1 to §3.3 explain. Every text should have a place on each axis; one that doesn't is a finding.
