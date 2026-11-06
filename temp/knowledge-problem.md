@@ -35,7 +35,7 @@ Names, in order of first use:
 - **General Understanding Text:** an Understanding Text bound to no project.
 - **Adapted Understanding Text:** a General Understanding Text narrowed to one project's needs; the middle level between General Understanding Text and Instruction Text.
 - **Shipped Copy:** an Instruction Text this repo ships, as it lives in a CBC Run.
-- **Repo Responsibility:** what each repo is meant to keep: this repo, a Concept Repo, and each CBC Run (§2). Its *time* is *later*: as meant, not as done today.
+- **Repo Responsibility:** what each repo is meant to keep: this repo, and each CBC Run (§2). Its *time* is *later*: as meant, not as done today.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
 - **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
@@ -74,7 +74,7 @@ The problem holds wherever a human works with an agent across sessions. This rep
 
 ## 2. This repo as intended
 
-Where this text speaks in general, it says project. In this first case, each project is kept in a repo: this repo, a Concept Repo, and each CBC Run, a Run Repo, as this repo's glossary names them.
+Where this text speaks in general, it says project. In this first case, each project is kept in a repo, a git repository, of one of two sorts, as this repo's glossary names them: a Concept Repo, which this repo is, and a Run Repo, one for each CBC Run.
 
 This repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a CBC Run, or run for short, build real systems by the concept. Each starts from what this repo ships, and what it learns is read back here.
 
