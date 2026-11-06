@@ -29,6 +29,7 @@ Plain words, in a narrow sense:
 Names, in order of first use:
 
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
+- **Maintainer Repo:** the repo that keeps the understanding, ships what each CBC Run receives, and reads back what the runs learn. Here, `correctness-by-construction`; its glossary calls it the Concept Deliverer.
 - **CBC Run:** a repo that builds a real system by the concept, starting from what this repo ships. This repo's glossary Name.
 - **Understanding Text:** text that holds what is known, and how it is understood.
 - **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. Agent Skills and rules are Instruction Texts.
@@ -74,7 +75,12 @@ The problem holds wherever a human works with an agent across sessions. This rep
 
 ## 2. This repo as intended
 
-Where this text speaks in general, it says project. In this first case, each project is kept in a repo, a git repository, of one of two sorts, as this repo's glossary names them: a Concept Repo, which this repo is, and a Run Repo, one for each CBC Run.
+This text speaks of projects in general. Here, each project lives in a repo, a git repository. So far there are two sorts of repo:
+
+- the Maintainer Repo, which holds the concept;
+- each CBC Run, which builds a real system by the concept.
+
+The Maintainer Repo holds more than its own work. It also holds the understanding of agent work. No single project owns it, and every CBC Run receives it.
 
 This repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a CBC Run, or run for short, build real systems by the concept. Each starts from what this repo ships, and what it learns is read back here.
 
