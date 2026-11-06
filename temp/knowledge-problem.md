@@ -28,6 +28,19 @@ The human and the agent are on the same page when the agent's picture of the hum
 
 The problem holds wherever a human works with an agent across sessions. This repo is where it is seen first, and where it is tested.
 
+This repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a CBC Run, build real systems by the concept. Each starts from what this repo ships, and what it learns is read back here.
+
+Its understanding falls in two groups. Each gives instructions in two places, this repo's and each CBC Run's, which this repo calls its Convention Seats:
+
+| Understanding | Instructions for this repo | Instructions shipped to each CBC Run |
+|---|---|---|
+| How work is done with an agent: a change, a commit, a plan | this repo's own Agent Skills and rules | the Container Group: the setup for the agent in a run, its Agent Skills, rules and records |
+| How a CBC system is designed: the concept and its methods | none | the methods, such as the cbc-framing and cbc-slice Agent Skills |
+
+The two groups are split today. They may turn out to be one understanding, sorted into two groups.
+
+So knowledge written here becomes instructions that agents act on in other repos. The agent in a CBC Run starts with none of this repo's context, only what was shipped, and the copies there can drift, or change on their own.
+
 ## 2. The axes of knowledge
 
 Where text is kept so far, on each of the three axes, which §2.1 to §2.3 explain. Every text should have a place on each axis; one that doesn't is a finding.
