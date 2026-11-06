@@ -76,7 +76,7 @@ Where text is kept so far, on each of the three axes, which §3.1 to §3.3 expla
 | Understanding files in the repo | understanding | now | both |
 | Agent Skills and rules | instruction | now | the agent acts on it; the human checks what they told it |
 | Devlog, the journal of the work, and commit messages | understanding | before | both, seldom |
-| TODO | understanding | later | both |
+| TODO, the backlog | understanding | later | both |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it |
 | The agent's memory | both | now | the agent; the human rarely |
 
