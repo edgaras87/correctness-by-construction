@@ -45,7 +45,7 @@ The two groups are split today. They may turn out to be one understanding, sorte
 
 So knowledge written here becomes instructions that agents act on in other repos. The agent in a CBC Run starts with none of this repo's context, only what was shipped, and the copies there can drift, or change on their own.
 
-What each seat is meant to keep: the system as we mean it to be. This is later knowledge, what should be, not a description of the repo today, and the intent itself may change. Whether the repo does all of it is not yet checked.
+What each seat is meant to keep: the system as we mean it to be. This is later knowledge (§3.2), what should be, not a description of the repo today, and the intent itself may change. Whether the repo does all of it is not yet checked.
 
 This repo keeps:
 
