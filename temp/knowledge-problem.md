@@ -145,7 +145,7 @@ Where text is kept so far, on each of the four axes, which §3.1 to §3.4 explai
 
 ### 3.1 Who uses the text
 
-The text is the interface between the human's mind and the agent. Each uses it differently.
+The text is the interface between the human's mind and the agent, the means by which they reach common ground (§1). Each uses it differently.
 
 For the human, the text is, so far:
 
@@ -156,7 +156,7 @@ For the human, the text is, so far:
 
 For the agent, the text is, so far:
 
-- what the human knows, and how much;
+- what the human knows, and at what Depth of Understanding: the agent's side of common ground;
 - where to start helping: applying the idea, learning more of it, keeping it up, going deeper, and anything else done with it.
 
 The agent usually knows more about the subject than the text says.
