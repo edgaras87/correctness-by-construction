@@ -68,7 +68,7 @@ Two sides work with the knowledge:
 - **The human:** the person whose knowledge it is. They learn, decide, and carry the knowledge from one session to the next.
 - **The agent:** the AI model working in a session. It knows its subjects from its training, but starts each session knowing the human and the work only from what it reads.
 
-The human and the agent are on the same page when the agent's picture of the human's understanding, built from the text, matches that understanding, and its depth of understanding: how deep it goes. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
+The purpose is the Same Page between the human and the agent, from one session to the next. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
 
 The problem holds wherever a human works with an agent across sessions. This repo is where it is seen first, and where it is tested.
 
@@ -287,7 +287,7 @@ The same cases by phase and axis. Every cell has a case; an empty one would poin
 | **aging** | 3 | 2, 8 | 10, 23 | 19, 21 |
 | **reading** | 6, 7 | 13, 17, 18 | 14 | 20 |
 
-Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
+Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the Same Page.
 
 ## 5. What was tried
 
