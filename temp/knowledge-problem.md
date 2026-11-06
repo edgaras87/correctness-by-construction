@@ -127,9 +127,9 @@ Seen already, where the repo differs from that intent:
 - one convention manual, the middle level for one way of working, is written for both repos at once, this repo and every CBC Run, though the two need different things from it: one middle serving two repos (case 15);
 - two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (case 8).
 
-## 3. The axes of knowledge
+## 3. The Knowledge Axes
 
-Where text is kept so far, on each of the four axes, which §3.1 to §3.4 explain. Every text should have a place on each axis; one that doesn't is a finding.
+Where text is kept so far, on each of the four Knowledge Axes, which §3.1 to §3.4 explain. Every text should have a place on each Knowledge Axis; one that doesn't is a finding.
 
 | Where it's kept | Kind | Time | Who uses it | Where |
 |---|---|---|---|---|
@@ -250,9 +250,9 @@ The drift happens in three phases of a text's life: two moments, writing and rea
 - **Aging:** the knowledge moves on, and the text grows older than it.
 - **Reading:** the agent reads the text and builds a different understanding from it than the human holds.
 
-The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the phase it breaks in, the axis of §3 it lives on, and where: in either repo, or between this repo and a run (§3.4):
+The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the phase it breaks in, the Knowledge Axis it lives on (§3), and where: in either repo, or between this repo and a run (§3.4):
 
-| Case | Phase | Axis | Where |
+| Case | Phase | Knowledge Axis | Where |
 |---|---|---|---|
 | 1. The human knows something the text doesn't hold. | writing | who uses it | either |
 | 2. The text is older than the human's understanding: they have moved on. | aging | time | either |
@@ -279,7 +279,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 23. An adapted understanding lags behind its general idea, which has moved on. | aging | kind | either |
 | 24. A general idea is bent to one project's needs, and no longer fits the others. | writing | kind | between |
 
-The same cases by phase and axis. Every cell has a case; an empty one would point at a missing case:
+The same cases by phase and Knowledge Axis. Every cell has a case; an empty one would point at a missing case:
 
 | | who uses it | time | kind | where |
 |---|---|---|---|---|
