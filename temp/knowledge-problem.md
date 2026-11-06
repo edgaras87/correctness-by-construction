@@ -73,7 +73,7 @@ Where text is kept so far, on each of the three axes, which §3.1 to §3.3 expla
 |---|---|---|---|
 | Understanding files in the repo | understanding | now | both |
 | Agent Skills and rules | instruction | now | the agent acts on it; the human checks what they told it |
-| Devlog, commit messages | understanding | before | both, seldom |
+| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom |
 | TODO | understanding | later | both |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it |
 | The agent's memory | both | now | the agent; the human rarely |
@@ -180,7 +180,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 10. An instruction still applies understanding that has moved on. | aging | kind |
 | 11. An instruction is faithful to an understanding that is mistaken, and neither side sees it until the work shows it. | writing | kind |
 | 12. A move between times isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time |
-| 13. The agent reads a before text as now, such as an old journal entry taken as current. | reading | time |
+| 13. The agent reads a before text as now, such as an old devlog entry taken as current. | reading | time |
 | 14. The agent reads understanding as an instruction, such as the human thinking aloud taken as an order, or applies an instruction where it wasn't meant to. | reading | kind |
 
 The same cases by phase and axis. Every cell has a case; an empty one would point at a missing case:
