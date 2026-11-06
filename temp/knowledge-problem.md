@@ -99,7 +99,7 @@ Each idea can then live in three texts, not two. Whether the levels are kept apa
 
 So knowledge written here becomes instructions that agents act on in other repos. The agent in a CBC Run starts with none of this repo's context, only what was shipped, and the copies there can drift, or change on their own.
 
-What each repo is meant to keep: the system as we mean it to be. This is later knowledge (§3.2), what should be, not a description of the repo today, and the intent itself may change. Whether the repo does all of it is not yet checked.
+The Repo Intent follows. It may change itself, and whether the repo does all of it is not yet checked.
 
 This repo keeps:
 
@@ -112,7 +112,7 @@ This repo keeps:
    - specific to that run's problem: the change is rejected, and the understanding and the delivery stay as they are;
 6. updates for runs already running: when delivery changes, a run born earlier gets the change, or keeps working from its old copy;
 7. its own records: the history and the backlog of this work.
-8. its Knowledge on Trial, from runs and its own, judged here. Its form for work done for the first time is the Approach on Trial: one text, written in a run or here. That is what the repo has today; whether it meets this intent, and what other Knowledge on Trial needs, is checked in the next step. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the runs' copies. This repo also judges its own Knowledge on Trial, with no outside judge. A run's, once judged here, reaches back to that run by an update, or the run keeps working from its own version.
+8. its Knowledge on Trial, from runs and its own, judged here. Its form for work done for the first time is the Approach on Trial: one text, written in a run or here. That is what the repo has today; whether it meets the Repo Intent, and what other Knowledge on Trial needs, is checked in the next step. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the runs' copies. This repo also judges its own Knowledge on Trial, with no outside judge. A run's, once judged here, reaches back to that run by an update, or the run keeps working from its own version.
 
 Each CBC Run:
 
@@ -122,7 +122,7 @@ Each CBC Run:
 4. keeps its own records, from the setup it was shipped;
 5. has its own Knowledge on Trial: it uses each until this repo judges it, and offers it back. This repo's form for it today is the Approach on Trial, for ways of working only.
 
-Seen already, where the repo differs from that intent:
+Seen already, where the repo differs from the Repo Intent:
 
 - one convention manual, the middle level for one way of working, is written for both repos at once, this repo and every CBC Run, though the two need different things from it: one middle serving two repos (case 15);
 - two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (case 8).
@@ -141,7 +141,7 @@ Where text is kept so far, on each of the four Knowledge Axes, which §3.1 to §
 | The agent's memory | both | now | the agent; the human rarely | this repo's work, outside its files |
 | Knowledge on Trial; today, in this repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | this repo, or a run |
 | A shipped copy | instruction | now | the agent in the run | each run |
-| The intent, §2's lists | understanding | later | both | this repo |
+| The Repo Intent, §2's lists | understanding | later | both | this repo |
 
 ### 3.1 Who uses the text
 
@@ -232,7 +232,7 @@ The two repos are not the two sides of §1. The human and the agent work in both
 
 Most of what goes wrong is one drift: the text and the knowledge drift apart. Not every failure here is Knowledge Drift. In case 11 the text matches the knowledge, but the knowledge is wrong: Mistaken Knowledge. Drift is fixed by bringing the text up to the knowledge; Mistaken Knowledge is fixed in the knowledge first.
 
-A third failure sits outside the text: the repo itself may not be what it is meant to be (§2). It is fixed in the repo, or in the intent, and it can cause drift. The next step of this work checks it first (§6).
+A third failure sits outside the text: Repo Intent Drift (§2). It is fixed in the repo, or in the Repo Intent, and it can cause drift. The next step of this work checks it first (§6).
 
 - **When the text holds less than the knowledge, the why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
 - **When the text is older than the knowledge, it goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is felt as the bigger problem; §6 tests it. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
