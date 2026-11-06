@@ -119,37 +119,37 @@ Everything here is one drift: the text and the knowledge drift apart.
 
 Wrong understanding is not, by that alone, the problem. Understanding that is incomplete or not correct, but honestly shows where the human is, does its job. An instruction is different: the agent acts on it as it stands (§2.3). The problem is text that no longer matches where the human is, or that the agent treats as settled fact.
 
-The drift happens in three places:
+The drift happens in three phases of a text's life: two moments, writing and reading, and the stretch between them, aging.
 
 - **Writing:** knowledge goes into text, and part of it is lost, such as the why.
-- **Time:** the knowledge moves on, and the text stays as it was.
+- **Aging:** the knowledge moves on, and the text grows older than it.
 - **Reading:** the agent reads the text and builds a different understanding from it than the human holds.
 
-The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§5). Each is tagged with the place it breaks and the axis of §2 it lives on:
+The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§5). Each is tagged with the phase it breaks in and the axis of §2 it lives on:
 
-| Case | Place | Axis |
+| Case | Phase | Axis |
 |---|---|---|
 | 1. The human knows something the text doesn't hold. | writing | who uses it |
-| 2. The text is older than the human's understanding: they have moved on. | time | time |
-| 3. The agent's context is older than the text: it read the text earlier in the session, or from a summary, and the text has changed since. | time | who uses it |
+| 2. The text is older than the human's understanding: they have moved on. | aging | time |
+| 3. The agent's context is older than the text: it read the text earlier in the session, or from a summary, and the text has changed since. | aging | who uses it |
 | 4. The text is ahead of the human: the agent wrote it, and it holds the agent's understanding, not the human's. | writing | who uses it |
 | 5. The text is at the wrong level: too thin to recall from, or too dense to read. | writing | who uses it |
 | 6. The text is wrong, and the agent treats it as true instead of suggesting a fix. | reading | who uses it |
 | 7. The agent reads the text and builds a different understanding from it than the human meant. | reading | who uses it |
-| 8. Two texts disagree, and neither says which one is where the human is now. | time | time |
+| 8. Two texts disagree, and neither says which one is where the human is now. | aging | time |
 | 9. The text holds the what, not the why. | writing | kind |
-| 10. An instruction still applies understanding that has moved on. | time | kind |
+| 10. An instruction still applies understanding that has moved on. | aging | kind |
 | 11. An instruction is faithful to an understanding that is mistaken, and neither side sees it until the work shows it. | writing | kind |
 | 12. A move between times isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time |
 | 13. The agent reads a before text as now, such as an old journal entry taken as current. | reading | time |
 | 14. The agent reads understanding as an instruction, such as the human thinking aloud taken as an order, or applies an instruction where it wasn't meant to. | reading | kind |
 
-The same cases by place and axis. An empty cell may be a missing case:
+The same cases by phase and axis. An empty cell may be a missing case:
 
 | | who uses it | time | kind |
 |---|---|---|---|
 | **writing** | 1, 4, 5 | 12 | 9, 11 |
-| **time** | 3 | 2, 8 | 10 |
+| **aging** | 3 | 2, 8 | 10 |
 | **reading** | 6, 7 | 13 | 14 |
 
 Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
