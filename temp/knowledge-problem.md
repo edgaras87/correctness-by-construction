@@ -280,3 +280,11 @@ Answers met while stating the problem, kept to be weighed, not chosen:
 - write an instruction only when work needs one, and keep it short;
 - keep the why in the understanding, not in the instruction;
 - let an instruction point up to its understanding instead of retelling it. How this differs from one home per fact (§5) is open.
+- keep a middle level for an idea that serves projects with different needs, and none for an idea only one project uses. Weighed so far:
+
+  | | With a middle level | Without one |
+  |---|---|---|
+  | The general idea | written once, fits any project | bent to fit each project, or repeated in each |
+  | One idea, two projects with different needs | each gets its own adapted text | one text serves both, case 15 |
+  | A change to the general idea | reread the adapted texts, a few | reread every instruction |
+  | Its cost | one more level to keep, and drift between levels, cases 23 and 24 | the general idea retold everywhere |
