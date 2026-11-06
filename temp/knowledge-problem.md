@@ -47,8 +47,8 @@ Between understanding and instruction, this repo means to keep a middle level, f
 
 | Level | What it holds | In this repo |
 |---|---|---|
-| understanding, general | an idea any repo can adapt | the Idea Models, `docs/models/` |
-| the middle | how one thing is understood here, in detail | the convention manuals, `docs/conventions/`; the concept, `concept/` |
+| understanding, general | an idea any repo can adapt (§3.3) | the Idea Models, `docs/models/` |
+| the middle | understanding adapted to one repo's needs (§3.3) | the convention manuals, `docs/conventions/`; the concept, `concept/` |
 | instruction | how a piece of work is done, for the agent | Agent Skills, rules, the Approach on Trial |
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
