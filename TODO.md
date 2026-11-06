@@ -34,6 +34,44 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Decide how the writing rule catches a plain word used in two
+      senses (2026-11-06, the reviewer).
+      Context: in one text, a plain word can carry two meanings. In
+      `temp/knowledge-problem.md`, "time" named both a phase and an
+      axis, and "place" meant a position, a location and the phases; a
+      fresh reader could not tell cases tagged "time / time" apart.
+      Writing rule 9 covers defined names, not plain words; its first
+      form, a word carrying its subject, went with ADR-0076.
+      Ideas:
+      - find another word;
+      - give one sense an extra word, by subject;
+      - a check at the commit: does any word in this text mean two
+        things?
+      Trigger: the close of "Find how what we know stays true", when
+      its lessons are written back.
+
+- [ ] Decide which names go in the glossary, and how a name one text
+      uses alone is kept apart (2026-11-06, the reviewer).
+      Context: writing rule 9 sends every defined thing's Glossary Name
+      to `docs/glossary.md`. If every name goes there, the glossary
+      grows and names start to collide, though some are needed only to
+      read one text. But the agent reads whatever it opens, and cannot
+      tell a name local to one text from a global one unless the text
+      says so. Two texts with the same local name for different things
+      may be merged by the agent into one meaning.
+      Ideas:
+      - only names used across texts go in the glossary; a local name
+        is defined in its text, and marked as local there;
+      - a local name a second text starts using becomes global, and
+        goes in;
+      - whether the glossary is mostly for the human, since the agent
+        meets names in context;
+      - what else can go wrong: a local name grows global unseen; a
+        glossary entry drifts from its home; names in the agent's
+        memory, outside the repo.
+      Trigger: the close of "Find how what we know stays true", when
+      its lessons are written back.
+
 - [ ] Read CBC Run 6, `checkout`, by the exchange-read Agent Skill (2026-10-29, the
       reviewer).
       Context: CBC Run 6 ran on full auto through its Release, Step 14,
