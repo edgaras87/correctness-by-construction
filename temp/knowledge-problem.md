@@ -24,7 +24,7 @@ Two sides work with the knowledge:
 - **The human:** the person whose knowledge it is. They learn, decide, and carry the knowledge from one session to the next.
 - **The agent:** the AI model working in a session. It knows its subjects from its training, but starts each session knowing the human and the work only from what it reads.
 
-The human and the agent are on the same page when the agent's picture of the human's understanding, built from the text, matches that understanding and its level, how deep it goes. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
+The human and the agent are on the same page when the agent's picture of the human's understanding, built from the text, matches that understanding and its depth, how deep it goes. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
 
 The problem holds wherever a human works with an agent across sessions. This repo is where it is seen first, and where it is tested.
 
@@ -106,7 +106,7 @@ The text is the interface between the human's mind and the agent. Each uses it d
 For the human, the text is, so far:
 
 - how they see something, and how they understand it;
-- where they are with it, at the level each idea needs: basics for one, details for another;
+- where they are with it, at the depth each idea needs: basics for one, details for another;
 - not always correct;
 - what they recall from.
 
@@ -148,7 +148,7 @@ What before is for, so far:
 
 - not repeating a mistake: a dead end marked as one isn't tried again;
 - knowing why now is as it is: when a past decision is questioned, its reasons and what was rejected are there;
-- seeing where the human has been: the path of their understanding, which helps the agent judge their level now;
+- seeing where the human has been: the path of their understanding, which helps the agent judge their depth now;
 - resuming work: where it stopped, and what was tried;
 - going back: undoing to an earlier state;
 - evidence: what things cost, so a choice can be judged.
@@ -214,7 +214,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 2. The text is older than the human's understanding: they have moved on. | aging | time | either |
 | 3. The agent's context is older than the text: it read the text earlier in the session, or from a summary, and the text has changed since. | aging | who uses it | either |
 | 4. The text is ahead of the human: the agent wrote it, and it holds the agent's understanding, not the human's. | writing | who uses it | either |
-| 5. The text is at the wrong level: too thin to recall from, or too dense to read. | writing | who uses it | either |
+| 5. The text is at the wrong depth: too thin to recall from, or too dense to read. | writing | who uses it | either |
 | 6. The text is wrong, and the agent treats it as true instead of suggesting a fix. | reading | who uses it | either |
 | 7. The agent reads the text and builds a different understanding from it than the human meant. | reading | who uses it | either |
 | 8. Two texts disagree, and neither says which one is where the human is now. | aging | time | either |
