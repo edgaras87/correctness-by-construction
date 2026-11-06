@@ -204,6 +204,9 @@ Notes:
   2. The real-world record, in two parts. First, the repo set
      against what the problem draft says it is meant to keep (its §2,
      intent not yet checked): what it does, and what it does not.
+     This repo's descriptions of itself, such as `CLAUDE.md` and
+     `ARCHITECTURE.md`, are checked too, for intent written as if
+     it were now (the draft's case 17).
      Then where the same page failed: the devlog's 18 "What context
      was missing" lines since October, and the refinement's findings,
      485 in round 3's close read and 385 in its last read. A sample
