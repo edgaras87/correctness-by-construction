@@ -58,7 +58,7 @@ This repo keeps:
    - specific to that run's problem: the change is rejected, and the understanding and the delivery stay as they are;
 6. updates for runs already running: when delivery changes, a run born earlier gets the change, or keeps working from its old copy;
 7. its own records: the history and the backlog of this work.
-8. its knowledge on trial, from runs and its own, judged here. Its form for work done for the first time is the Approach on Trial: one text, written in a run or here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment to refresh what it touches, here and in the runs' copies. This repo also judges its own knowledge on trial, with no outside judge. A run's, once judged here, reaches back to that run by an update, or the run keeps working from its own version.
+8. its knowledge on trial, from runs and its own, judged here. Its form for work done for the first time is the Approach on Trial: one text, written in a run or here. That is what the repo has today; whether it meets this intent, and what other knowledge on trial needs, is checked in the next step. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment to refresh what it touches, here and in the runs' copies. This repo also judges its own knowledge on trial, with no outside judge. A run's, once judged here, reaches back to that run by an update, or the run keeps working from its own version.
 
 Each CBC Run:
 
@@ -66,7 +66,7 @@ Each CBC Run:
 2. gets the concept's understanding, to explain its problems. Whether a run may change that understanding, since it uses it directly, is open;
 3. keeps understanding of its own problem: one specific system's design;
 4. keeps its own records, from the setup it was shipped;
-5. puts knowledge on trial, such as an Approach on Trial for work done for the first time, uses each until this repo judges it, and offers it back.
+5. puts knowledge on trial, uses each until this repo judges it, and offers it back. This repo's form for it today is the Approach on Trial, for ways of working only.
 
 Seen already, where the repo differs from that intent: one convention manual, the understanding text for one way of working, is written for both repos at once, this repo and every CBC Run, though the two need different things from it.
 
@@ -82,7 +82,7 @@ Where text is kept so far, on each of the four axes, which §3.1 to §3.4 explai
 | TODO, the backlog | understanding | later | both | this repo; each run keeps its own |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | this repo |
 | The agent's memory | both | now | the agent; the human rarely | this repo's work, outside its files |
-| Knowledge on trial, such as an Approach on Trial | both | now, unchecked | the agent works by it; the human judges it | this repo, or a run |
+| Knowledge on trial; today, in this repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | this repo, or a run |
 | A shipped copy | instruction | now | the agent in the run | each run |
 | The intent, §2's lists | understanding | later | both | this repo |
 
