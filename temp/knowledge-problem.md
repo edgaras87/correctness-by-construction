@@ -186,12 +186,14 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 12. A move between times isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time |
 | 13. The agent reads a before text as now, such as an old devlog entry taken as current. | reading | time |
 | 14. The agent reads understanding as an instruction, such as the human thinking aloud, in chat or in text, taken as an order, or applies an instruction where it wasn't meant to. | reading | kind |
+| 15. One understanding text serves sides whose needs differ, and a change made for one moves the other. | writing | who uses it |
+| 16. One instruction covers several tasks, and a change made for one task changes the others. | writing | kind |
 
 The same cases by phase and axis. Every cell has a case; an empty one would point at a missing case:
 
 | | who uses it | time | kind |
 |---|---|---|---|
-| **writing** | 1, 4, 5 | 12 | 9, 11 |
+| **writing** | 1, 4, 5, 15 | 12 | 9, 11, 16 |
 | **aging** | 3 | 2, 8 | 10 |
 | **reading** | 6, 7 | 13 | 14 |
 
