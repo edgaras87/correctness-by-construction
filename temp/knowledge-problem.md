@@ -197,7 +197,7 @@ Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this re
 
 ## 5. What was tried
 
-This repo keeps each fact in one home, with references pointing at it (one home per fact). It was built without full consideration, and it costs too much to keep:
+This repo writes each fact in one text, its home, and every other text that needs it points there by a reference instead of retelling it (one home per fact). It was built without full consideration, and it costs too much to keep:
 
 - **Finding is cheap, judging is not.** A search lists every place that points at a fact. Whether each place still holds needs reading. This repo has 398 section references pointing at 129 sections. The most pointed-at section has 22.
 - **The fix becomes a loop.** A change in one referring place can force the home to change. Then every other reference has to be checked again. If they disagree, it's back to the home, and so on. A decision has to be weighed across many places, not taken in one pass.
