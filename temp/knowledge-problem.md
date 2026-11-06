@@ -69,7 +69,7 @@ Each CBC Run:
 
 Where text is kept so far, on each of the three axes, which §3.1 to §3.3 explain. Every text should have a place on each axis; one that doesn't is a finding.
 
-| Where it's kept | Kind | Time | Who reads it |
+| Where it's kept | Kind | Time | Who uses it |
 |---|---|---|---|
 | Understanding files in the repo | understanding | now | both |
 | Agent Skills and rules | instruction | now | the agent acts on it; the human checks what they told it |
