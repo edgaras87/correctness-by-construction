@@ -204,7 +204,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 12. A move between times isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time | either |
 | 13. The agent reads a before text as now, such as an old devlog entry taken as current. | reading | time | either |
 | 14. The agent reads understanding as an instruction, such as the human thinking aloud, in chat or in text, taken as an order, or applies an instruction where it wasn't meant to. | reading | kind | either |
-| 15. One understanding text serves repos whose needs differ, and a change made for one moves the other. | writing | where | between |
+| 15. One understanding text serves repos whose needs differ, and a change made for one changes the other. | writing | where | between |
 | 16. One instruction covers several tasks, and a change made for one task changes the others. | writing | kind | either |
 | 17. A later text is read as now: what is meant to be is taken for what is. | reading | time | either |
 | 18. Unchecked knowledge is read as checked, such as a trial's text taken as proven. | reading | time | either |
