@@ -73,16 +73,16 @@ Seen already, where the repo differs from that intent: one convention manual, un
 
 ## 3. The axes of knowledge
 
-Where text is kept so far, on each of the three axes, which §3.1 to §3.3 explain. Every text should have a place on each axis; one that doesn't is a finding.
+Where text is kept so far, on each of the four axes, which §3.1 to §3.4 explain. Every text should have a place on each axis; one that doesn't is a finding.
 
-| Where it's kept | Kind | Time | Who uses it |
-|---|---|---|---|
-| Understanding files in the repo | understanding | now | both |
-| Agent Skills and rules | instruction | now | the agent acts on it; the human checks what they told it |
-| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom |
-| TODO, the backlog | understanding | later | both |
-| The human's private working rules | instruction | now | the agent acts on it; the human wrote it |
-| The agent's memory | both | now | the agent; the human rarely |
+| Where it's kept | Kind | Time | Who uses it | Where |
+|---|---|---|---|---|
+| Understanding files in the repo | understanding | now | both | this repo |
+| Agent Skills and rules | instruction | now | the agent acts on it; the human checks what they told it | this repo, and a copy in each run of those it ships |
+| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | this repo; each run keeps its own |
+| TODO, the backlog | understanding | later | both | this repo; each run keeps its own |
+| The human's private working rules | instruction | now | the agent acts on it; the human wrote it | this repo |
+| The agent's memory | both | now | the agent; the human rarely | this repo's work, outside its files |
 
 ### 3.1 Who uses the text
 
@@ -158,6 +158,14 @@ An instruction stands on its understanding. When the understanding moves on, the
 One understanding can give several instructions. When each instruction retells the understanding, the same knowledge is written several times, and the copies can disagree.
 
 An instruction can be copied to other repos, for the agents working there. Each copy can drift from the understanding it came from, and can change on its own.
+
+### 3.4 Where the text is
+
+A text is kept in this repo, or in a run. Some is in both: what this repo ships becomes a copy in each run, and a run's changes come back only when this repo reads them.
+
+Some failures can happen in either seat. Others happen only between the two: a run's copy drifts from what was shipped; this repo judges a run's change wrongly, as a lesson when it was specific to the run, or the other way round; an update never reaches a run already running.
+
+The seats are not the two sides of §1. The human and the agent work in both.
 
 ## 4. What goes wrong
 
