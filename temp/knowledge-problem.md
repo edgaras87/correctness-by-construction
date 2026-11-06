@@ -229,13 +229,15 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 20. This repo judges a run's change wrongly: a lesson taken as specific to the run, or something specific taken as a lesson. | reading | where | between |
 | 21. An update never reaches a run already running, which works on from its old copy. | aging | where | between |
 | 22. A run's change reaches this repo without its why: the run wrote down what it changed, not why. | writing | where | between |
+| 23. An adapted understanding lags behind its general idea, which has moved on. | aging | kind | either |
+| 24. A general idea is bent to one project's needs, and no longer fits the others. | writing | kind | between |
 
 The same cases by phase and axis. Every cell has a case; an empty one would point at a missing case:
 
 | | who uses it | time | kind | where |
 |---|---|---|---|---|
-| **writing** | 1, 4, 5 | 12 | 9, 11, 16 | 15, 22 |
-| **aging** | 3 | 2, 8 | 10 | 19, 21 |
+| **writing** | 1, 4, 5 | 12 | 9, 11, 16, 24 | 15, 22 |
+| **aging** | 3 | 2, 8 | 10, 23 | 19, 21 |
 | **reading** | 6, 7 | 13, 17, 18 | 14 | 20 |
 
 Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
