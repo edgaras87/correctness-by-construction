@@ -11,6 +11,27 @@
      home is decided when the Plan Step closes; it goes then, and
      git keeps every version. -->
 
+## Words used here
+
+Words this text gives an exact meaning, each with where it is defined. This list is a trial of names one text uses alone (TODO, *Decide which names go in the glossary, and how a name one text uses alone is kept apart*). They are kept lowercase, each was checked against this repo's glossary, and the list is judged by whether a fresh reader still gets lost on them. One word collided, "seat", and was replaced by "repo".
+
+- knowledge, text, the chat: §1
+- the human, the agent: §1
+- the same page, depth of understanding: §1
+- repo, run: §2
+- the intent, the middle level: §2
+- axis: §3
+- interface: §3.1
+- before, now, later; a move: §3.2
+- understanding, instruction: §3.3
+- general, adapted: §3.3
+- knowledge on trial: §3.3
+- a shipped copy: §3.4
+- drift, mistaken knowledge: §4
+- phase: writing, aging, reading: §4
+- case: §4
+- one home per fact, a refresh: §5
+
 ## 1. The purpose
 
 Knowledge is what one knows, and how one understands it. It lives in a head. Text is where it is stored, as it stood at one moment.
