@@ -69,6 +69,10 @@
       - what else can go wrong: a local name grows global unseen; a
         glossary entry drifts from its home; names in the agent's
         memory, outside the repo.
+      - a draft's local Names are used while it is worked on, and land
+        in the glossary or go when it finishes; narrowed lowercase
+        words bleed most easily between docs the agent reads together,
+        so they are kept rarest.
       Trigger: the close of "Find how what we know stays true", when
       its lessons are written back.
 
