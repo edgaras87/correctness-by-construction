@@ -28,7 +28,7 @@ The human and the agent are on the same page when the agent's picture of the hum
 
 The problem holds wherever a human works with an agent across sessions. This repo is where it is seen first, and where it is tested.
 
-## 2. This repo
+## 2. This repo as intended
 
 This repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a CBC Run, or run for short, build real systems by the concept. Each starts from what this repo ships, and what it learns is read back here.
 
