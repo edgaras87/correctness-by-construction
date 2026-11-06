@@ -235,7 +235,7 @@ The two repos are not the two sides of §1. The human and the agent work in both
 
 ## 4. What goes wrong
 
-Most of what goes wrong is one drift: the text and the knowledge drift apart. One failure is not drift: Mistaken Knowledge (case 11). Drift is fixed by bringing the text up to the knowledge; Mistaken Knowledge is fixed in the knowledge first.
+Most of what goes wrong is one drift: the text and the knowledge drift apart. Not every failure here is Knowledge Drift. In case 11 the text matches the knowledge, but the knowledge is wrong: Mistaken Knowledge. Drift is fixed by bringing the text up to the knowledge; Mistaken Knowledge is fixed in the knowledge first.
 
 A third failure sits outside the text: the repo itself may not be what it is meant to be (§2). It is fixed in the repo, or in the intent, and it can cause drift. The next step of this work checks it first (§6).
 
