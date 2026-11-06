@@ -171,7 +171,7 @@ The seats are not the two sides of §1. The human and the agent work in both.
 Most of what goes wrong is one drift: the text and the knowledge drift apart. One kind is not: the knowledge itself is mistaken, and the text carries it faithfully (case 11). Drift is fixed by bringing the text up to the knowledge; a mistaken knowledge is fixed in the knowledge first.
 
 - **When the text holds less than the knowledge, the why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
-- **When the text is older than the knowledge, it goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is the bigger problem. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
+- **When the text is older than the knowledge, it goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is felt as the bigger problem; §6 tests it. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
 
 Wrong understanding is not, by that alone, the problem. Understanding that is incomplete or not correct, but honestly shows where the human is, does its job. An instruction is different: the agent acts on it as it stands (§3.3). The problem is text that no longer matches where the human is, or that the agent treats as settled fact.
 
@@ -220,7 +220,7 @@ Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this re
 
 ## 5. What was tried
 
-This repo writes each fact in one text, its home, and every other text that needs it points there by a reference instead of retelling it (one home per fact). It was built without full consideration, and it has cost too much to keep here:
+This repo writes each fact in one text, its home, and every other text that needs it points there by a reference instead of retelling it (one home per fact). It was built without full consideration, and it is felt to have cost too much to keep here; §6 tests where that cost comes from:
 
 - **Finding is cheap, judging is not.** A search lists every place that points at a fact. Whether each place still holds needs reading. This repo has 398 section references pointing at 129 sections. The most pointed-at section has 22.
 - **The fix becomes a loop.** A change in one referring place can force the home to change. Then every other reference has to be checked again. If they disagree, it's back to the home, and so on. A decision has to be weighed across many places, not taken in one pass.
