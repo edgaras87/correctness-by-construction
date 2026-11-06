@@ -183,7 +183,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 13. The agent reads a before text as now, such as an old journal entry taken as current. | reading | time |
 | 14. The agent reads understanding as an instruction, such as the human thinking aloud taken as an order, or applies an instruction where it wasn't meant to. | reading | kind |
 
-The same cases by phase and axis. An empty cell may be a missing case:
+The same cases by phase and axis. Every cell has a case; an empty one would point at a missing case:
 
 | | who uses it | time | kind |
 |---|---|---|---|
