@@ -34,21 +34,21 @@
 
 ## Next (each due at its trigger)
 
-- [ ] Decide how the writing rule catches a plain word used in two
-      senses (2026-11-06, the reviewer).
-      Context: in one text, a plain word can carry two meanings. In
-      `temp/knowledge-problem.md`, "time" named both a phase and an
-      axis, and "place" meant a position, a location and the phases; a
-      fresh reader could not tell cases tagged "time / time" apart.
-      Writing rule 9 covers defined names, not plain words; its first
-      form, a word carrying its subject, went with ADR-0076.
+- [ ] Land the writing rules found in the problem draft (2026-11-06,
+      the reviewer).
+      Context: writing `temp/knowledge-problem.md` found rules the
+      writing rule lacks. Each is in force in the draft, on trial:
+      a plain word keeps one meaning in a text, after "time", "place",
+      "seat", "case", "kind" and "level" each carried two; an exact
+      meaning gets a Name of two or more words, capitalized, and Names
+      one text uses alone are defined at its start; a definition names
+      what it builds on by its Name, never by its place in the text.
+      Writing rule 9 covers defined Names only.
       Ideas:
-      - find another word;
-      - give one sense an extra word, by subject;
       - a check at the commit: does any word in this text mean two
         things?
-      Trigger: the close of "Find how what we know stays true", when
-      its lessons are written back.
+      Trigger: this repo's writing rule is reworked, once the repo is
+      fixed.
 
 - [ ] Decide which names go in the glossary, and how a name one text
       uses alone is kept apart (2026-11-06, the reviewer).
@@ -69,10 +69,6 @@
       - what else can go wrong: a local name grows global unseen; a
         glossary entry drifts from its home; names in the agent's
         memory, outside the repo.
-      - a definition names what it builds on by its Name, never by
-        where it stands in the text, such as "the same idea": tried in
-        `temp/knowledge-problem.md`'s Names, where five definitions
-        broke it.
       Trigger: the close of "Find how what we know stays true", when
       its lessons are written back.
 
