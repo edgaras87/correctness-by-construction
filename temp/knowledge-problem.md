@@ -218,7 +218,7 @@ The next step of this work tests these against the record: the devlog's notes of
 
 ## 7. What would show it's solved
 
-Each line can be checked:
+First checks only. They are refined once the next step shows which cases really happen. Each line can be checked:
 
 - A new session continues without the human retelling. Count the retellings and corrections in each session.
 - Behind each Agent Skill, its why can be found.

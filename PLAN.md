@@ -201,11 +201,14 @@ Notes:
      `temp/idea-model-problem.md`: it has the loop between a home and
      its references (§5) and 9 musts with checks (§3), not the
      purpose or the bottom-up direction.
-  2. The real-world record: the devlog's 18 "What context was
-     missing" lines since October, and the refinement's findings, 485
-     in round 3's close read and 385 in its last read. A sample sorted
-     by cause: a retelling that drifted, a home that was wrong, or
-     something never written.
+  2. The real-world record, in two parts. First, the repo set
+     against what the problem draft says it is meant to keep (its §2,
+     intent not yet checked): what it does, and what it does not.
+     Then where the same page failed: the devlog's 18 "What context
+     was missing" lines since October, and the refinement's findings,
+     485 in round 3's close read and 385 in its last read. A sample
+     sorted by the draft's 14 cases, so each case gets its count; a
+     failure no case fits is a new case.
   3. The real cases: one drawn and defined, as `cbc-concept`'s step
      drawings did one change; a second set beside it, from outside
      this repo, such as a CBC Run, since the problem holds wherever a
