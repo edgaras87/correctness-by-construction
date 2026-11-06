@@ -175,12 +175,7 @@ Knowledge has a time too:
 - now: what is known or thought now, not always checked;
 - later: what is meant to be learned, or checked, afterwards.
 
-Knowledge moves between the times, and the move is where it gets lost:
-
-- later becomes now when something is learned or checked;
-- now becomes before when it is replaced.
-
-If a move isn't written down, the old text keeps claiming now.
+A Knowledge Move is where knowledge gets lost. If a Knowledge Move isn't written down, the old text keeps claiming now.
 
 New knowledge enters in several ways, so far: the human learns, a talk ends in a decision, the agent finds something in the work, a run shows something this repo reads back, or knowledge is used as Knowledge on Trial (§3.3).
 
@@ -265,7 +260,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 9. The text holds the what, not the why. | writing | kind | either |
 | 10. An instruction still applies understanding that has moved on. | aging | kind | either |
 | 11. An instruction is faithful to Mistaken Knowledge, and neither side sees it until the work shows it. | writing | kind | either |
-| 12. A move between times isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time | either |
+| 12. A Knowledge Move isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time | either |
 | 13. The agent reads a before text as now, such as an old devlog entry taken as current. | reading | time | either |
 | 14. The agent reads understanding as an instruction, such as the human thinking aloud, in chat or in text, taken as an order, or applies an instruction where it wasn't meant to. | reading | kind | either |
 | 15. One understanding text serves repos whose needs differ, and a change made for one changes the other. | writing | where | between |
