@@ -32,6 +32,8 @@ The problem holds wherever a human works with an agent across sessions. This rep
 
 This repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a CBC Run, build real systems by the concept. Each starts from what this repo ships, and what it learns is read back here.
 
+Among its instructions are Agent Skills and rules. An Agent Skill is an instruction the agent loads for a task; a rule is one it loads in every session.
+
 Its understanding falls in two groups. Each gives instructions in two places, this repo's and each CBC Run's, which this repo calls its Convention Seats:
 
 | Understanding | Instructions for this repo | Instructions shipped to each CBC Run |
