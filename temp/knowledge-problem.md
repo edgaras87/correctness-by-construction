@@ -192,6 +192,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 15. One understanding text serves sides whose needs differ, and a change made for one moves the other. | writing | who uses it |
 | 16. One instruction covers several tasks, and a change made for one task changes the others. | writing | kind |
 | 17. A later text is read as now: what is meant to be is taken for what is. | reading | time |
+| 18. Unchecked knowledge is read as checked, such as a trial's text taken as proven. | reading | time |
 
 The same cases by phase and axis. Every cell has a case; an empty one would point at a missing case:
 
@@ -199,7 +200,7 @@ The same cases by phase and axis. Every cell has a case; an empty one would poin
 |---|---|---|---|
 | **writing** | 1, 4, 5, 15 | 12 | 9, 11, 16 |
 | **aging** | 3 | 2, 8 | 10 |
-| **reading** | 6, 7 | 13, 17 | 14 |
+| **reading** | 6, 7 | 13, 17, 18 | 14 |
 
 Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
 
