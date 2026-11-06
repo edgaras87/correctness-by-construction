@@ -6,7 +6,7 @@
      and from what temp/idea-model-problem.md says of the problem,
      not of a model. Polished one insight at a time, each a commit,
      so the diffs show what changed. It states the problem only: an
-     answer met on the way is kept as an option to consider (§7),
+     answer met on the way is kept as an option to consider (§8),
      not chosen. Its
      home is decided when the Plan Step closes; it goes then, and
      git keeps every version. -->
@@ -15,7 +15,7 @@
 
 Knowledge is what one knows, and how one understands it. It lives in a head. Text is where it is stored: a copy, made at one moment.
 
-Text here is understanding and instruction (§2.3), wherever it is kept. So far it is kept in the repo's files, in commit messages, in the human's private working rules, and in the agent's memory.
+Text here is understanding and instruction (§3.3), wherever it is kept. So far it is kept in the repo's files, in commit messages, in the human's private working rules, and in the agent's memory.
 
 The chat is not text. It is where knowledge passes between the human and the agent, and it is lost when the session ends unless something is written down.
 
@@ -27,6 +27,8 @@ Two sides work with the knowledge:
 The human and the agent are on the same page when the agent's picture of the human's understanding, built from the text, matches that understanding and its level. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
 
 The problem holds wherever a human works with an agent across sessions. This repo is where it is seen first, and where it is tested.
+
+## 2. The first case
 
 This repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a CBC Run, build real systems by the concept. Each starts from what this repo ships, and what it learns is read back here.
 
@@ -41,9 +43,9 @@ The two groups are split today. They may turn out to be one understanding, sorte
 
 So knowledge written here becomes instructions that agents act on in other repos. The agent in a CBC Run starts with none of this repo's context, only what was shipped, and the copies there can drift, or change on their own.
 
-## 2. The axes of knowledge
+## 3. The axes of knowledge
 
-Where text is kept so far, on each of the three axes, which §2.1 to §2.3 explain. Every text should have a place on each axis; one that doesn't is a finding.
+Where text is kept so far, on each of the three axes, which §3.1 to §3.3 explain. Every text should have a place on each axis; one that doesn't is a finding.
 
 | Where it's kept | Kind | Time | Who reads it |
 |---|---|---|---|
@@ -54,7 +56,7 @@ Where text is kept so far, on each of the three axes, which §2.1 to §2.3 expla
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it |
 | The agent's memory | both | now | the agent; the human rarely |
 
-### 2.1 Who uses the text
+### 3.1 Who uses the text
 
 The text is the interface between the human's mind and the agent. Each uses it differently.
 
@@ -78,7 +80,7 @@ The text is also the agent's interface with itself, from one session to the next
 
 Some of that text is kept outside the repo: the agent's own memory, notes it writes for itself about working with the human, such as "never push" or "explain simpler first". The human rarely reads them. They overlap the human's own working rules and the repo's rules, and they can go stale like any other text.
 
-### 2.2 The time of knowledge
+### 3.2 The time of knowledge
 
 Knowledge has a time too:
 
@@ -93,7 +95,7 @@ Knowledge moves between the times, and the move is where it gets lost:
 
 If a move isn't written down, the old text keeps claiming now.
 
-Before keeps why it changed, not only what was thought. Without that why, a later reader sees what changed but not the reason: the why goes missing (§3), this time between before and now.
+Before keeps why it changed, not only what was thought. Without that why, a later reader sees what changed but not the reason: the why goes missing (§4), this time between before and now.
 
 Now has degrees of certainty: what is thought now isn't always what is known. Some of now is unchecked, and later holds what should be checked.
 
@@ -106,7 +108,7 @@ What before is for, so far:
 - going back: undoing to an earlier state;
 - evidence: what things cost, so a choice can be judged.
 
-### 2.3 The kind of text
+### 3.3 The kind of text
 
 Text comes in two kinds, so far:
 
@@ -125,14 +127,14 @@ One understanding can give several instructions. When each instruction retells t
 
 An instruction can be copied to other repos, for the agents working there. Each copy can drift from the understanding it came from, and can change on its own.
 
-## 3. What goes wrong
+## 4. What goes wrong
 
 Everything here is one drift: the text and the knowledge drift apart.
 
 - **When the text holds less than the knowledge, the why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
 - **When the text is older than the knowledge, it goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is the bigger problem. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
 
-Wrong understanding is not, by that alone, the problem. Understanding that is incomplete or not correct, but honestly shows where the human is, does its job. An instruction is different: the agent acts on it as it stands (§2.3). The problem is text that no longer matches where the human is, or that the agent treats as settled fact.
+Wrong understanding is not, by that alone, the problem. Understanding that is incomplete or not correct, but honestly shows where the human is, does its job. An instruction is different: the agent acts on it as it stands (§3.3). The problem is text that no longer matches where the human is, or that the agent treats as settled fact.
 
 The drift happens in three phases of a text's life: two moments, writing and reading, and the stretch between them, aging.
 
@@ -140,7 +142,7 @@ The drift happens in three phases of a text's life: two moments, writing and rea
 - **Aging:** the knowledge moves on, and the text grows older than it.
 - **Reading:** the agent reads the text and builds a different understanding from it than the human holds.
 
-The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§5). Each is tagged with the phase it breaks in and the axis of §2 it lives on:
+The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the phase it breaks in and the axis of §3 it lives on:
 
 | Case | Phase | Axis |
 |---|---|---|
@@ -169,7 +171,7 @@ The same cases by phase and axis. An empty cell may be a missing case:
 
 Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the same page.
 
-## 4. What was tried
+## 5. What was tried
 
 This repo keeps each fact in one home, with references pointing at it (one home per fact). It was built without full consideration, and it costs too much to keep:
 
@@ -178,7 +180,7 @@ This repo keeps each fact in one home, with references pointing at it (one home 
 - **It multiplies.** When references start disagreeing with each other, each disagreement starts its own loop.
 - **A refresh is a sweep.** To bring the text up to date, one agent reads the whole repo once, and every finding it makes can start a loop.
 
-## 5. Where it may be wrong
+## 6. Where it may be wrong
 
 The next step of this work tests these against the record: the devlog's notes of what each session lacked, and the findings of past reviews of this repo:
 
@@ -190,7 +192,7 @@ The next step of this work tests these against the record: the devlog's notes of
 - when checking before costs more than it gives, and whether it can harm: by what reading it costs, by anchoring new thinking to old framing, or by being read as now;
 - which kinds of before pay, and which aren't worth keeping. This repo's devlog alone is 8,773 lines, after 4 months.
 
-## 6. What would show it's solved
+## 7. What would show it's solved
 
 Each line can be checked:
 
@@ -198,10 +200,10 @@ Each line can be checked:
 - Behind each Agent Skill, its why can be found.
 - The cost of one change stays about the same as the repo grows.
 
-## 7. Options to consider
+## 8. Options to consider
 
 Answers met while stating the problem, kept to be weighed, not chosen:
 
 - write an instruction only when work needs one, and keep it short;
 - keep the why in the understanding, not in the instruction;
-- let an instruction point up to its understanding instead of retelling it. How this differs from one home per fact (§4) is open.
+- let an instruction point up to its understanding instead of retelling it. How this differs from one home per fact (§5) is open.
