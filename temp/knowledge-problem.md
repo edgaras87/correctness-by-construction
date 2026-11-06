@@ -24,11 +24,11 @@ Plain words, in a narrow sense:
 - **the chat:** where knowledge passes between the human and the agent; lost when a session ends, unless written down. Not text.
 - **the human:** the person whose knowledge it is, who carries it from one session to the next.
 - **the agent:** the AI model in a session. It knows its subjects from training, and the human and the work only from what it reads.
+- **common ground:** between the human and the agent, on what the human knows: the agent's picture of the human's understanding, built from the text, matches it and its Depth of Understanding.
 
 Names, in order of first use:
 
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
-- **Same Page:** the agent's picture of the human's understanding, built from the text, matches it and its Depth of Understanding.
 - **CBC Run:** a repo that builds a real system by the concept, starting from what this repo ships. This repo's glossary Name.
 - **Understanding Text:** text that holds what is known, and how it is understood.
 - **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. Agent Skills and rules are Instruction Texts.
@@ -36,7 +36,7 @@ Names, in order of first use:
 - **Adapted Understanding Text:** a General Understanding Text narrowed to one project's needs; the middle level between General Understanding Text and Instruction Text.
 - **Shipped Copy:** an Instruction Text this repo ships, as it lives in a CBC Run.
 - **Repo Intent:** what this repo and each CBC Run are meant to keep (§2). Its *time* is *later*, not the repo today.
-- **Failure Case:** one way the Same Page fails, numbered in §4.
+- **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
 - **Repo Refresh:** bringing text up to date. Today, one agent reads the whole repo once.
 - **Knowledge Axis:** one way of sorting text. There are four: *who uses it*, *time*, *kind*, *where* (§3).
@@ -68,7 +68,7 @@ Two sides work with the knowledge:
 - **The human:** the person whose knowledge it is. They learn, decide, and carry the knowledge from one session to the next.
 - **The agent:** the AI model working in a session. It knows its subjects from its training, but starts each session knowing the human and the work only from what it reads.
 
-The purpose is the Same Page between the human and the agent, from one session to the next. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
+The purpose is common ground between the human and the agent on what the human knows, and how deeply, from one session to the next. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
 
 The problem holds wherever a human works with an agent across sessions. This repo is where it is seen first, and where it is tested.
 
@@ -287,7 +287,7 @@ The same cases by phase and axis. Every cell has a case; an empty one would poin
 | **aging** | 3 | 2, 8 | 10, 23 | 19, 21 |
 | **reading** | 6, 7 | 13, 17, 18 | 14 | 20 |
 
-Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they were not on the Same Page.
+Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they had lost common ground.
 
 ## 5. What was tried
 
