@@ -33,7 +33,9 @@ Defined Terms, in order of first use:
 - **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
 - **System Kit:** what the Maintainer Repo keeps for System Repos to work from: mostly Instruction Texts, with the concept and the Defined Terms they use. Its originals stay in the Maintainer Repo, with the understanding that explains them; each System Repo works from copies, updated as the System Kit changes.
 - **Understanding Text:** text that holds what is known, and how it is understood.
-- **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. Agent Skills and rules are Instruction Texts.
+- **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. So far it comes in two sorts, Task Instruction Text and Session Instruction Text.
+- **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
+- **Session Instruction Text:** an Instruction Text the agent loads in every session.
 - **General Understanding Text:** an Understanding Text bound to no project.
 - **Adapted Understanding Text:** a General Understanding Text narrowed to one project's needs; the middle level between General Understanding Text and Instruction Text.
 - **Shipped Copy:** a copy of a System Kit file, as it lives in a System Repo.
@@ -85,14 +87,12 @@ The Maintainer Repo holds more than its own work. It also holds the understandin
 
 The Maintainer Repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a System Repo, build real systems by the concept. Each starts from what the Maintainer Repo ships, and what it learns is read back here.
 
-Among its instructions are Agent Skills and rules. An Agent Skill is an instruction the agent loads for a task; a rule is one it loads in every session.
-
 Its understanding falls in two groups. Each gives instructions in two places, the Maintainer Repo and each System Repo:
 
 | Understanding | Instructions for the Maintainer Repo | Instructions shipped to each System Repo |
 |---|---|---|
-| How work is done with an agent: a change, a commit, a plan | the Maintainer Repo's own Agent Skills and rules | its part of the System Kit: the setup for the agent, its Agent Skills, rules and record forms |
-| How a CBC system is designed: the concept and its methods | none | the methods, such as the cbc-framing and cbc-slice Agent Skills |
+| How work is done with an agent: a change, a commit, a plan | the Maintainer Repo's own Task and Session Instruction Texts | its part of the System Kit: the setup for the agent, its Task and Session Instruction Texts, and record forms |
+| How a CBC system is designed: the concept and its methods | none | the methods, as Task Instruction Texts |
 
 The two groups are split today. They may turn out to be one understanding, sorted into two groups.
 
@@ -143,7 +143,7 @@ Where text is kept so far, on each of the four Knowledge Axes, which §3.1 to §
 | Where it's kept | Kind | Time | Who uses it | Where |
 |---|---|---|---|---|
 | Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo |
-| Agent Skills and rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo, and a copy in each System Repo of those it ships |
+| Task and Session Instruction Texts; today, Agent Skills and Agent Rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo, and a copy in each System Repo of those it ships |
 | Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own |
 | TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo |
@@ -174,7 +174,7 @@ Each list holds what has been found so far; more may come.
 
 The text is also the agent's interface with itself, from one session to the next. What the agent learns in a session reaches the next only if it is written down.
 
-Some of that text is kept outside the repo: the agent's own memory, notes it writes for itself about working with the human, such as "never push" or "explain simpler first". The human rarely reads them. They overlap the human's own working rules and the repo's rules, and they can go stale like any other text.
+Some of that text is kept outside the repo: the agent's own memory, notes it writes for itself about working with the human, such as "never push" or "explain simpler first". The human rarely reads them. They overlap the human's own working rules and the repo's Session Instruction Texts, and they can go stale like any other text.
 
 ### 3.2 The time of knowledge
 
@@ -206,7 +206,7 @@ What before is for, so far:
 Text comes in two kinds, so far:
 
 - understanding: what is known, and how it is understood;
-- instruction: text built on understanding, to apply it. Agent Skills and rules are instructions.
+- instruction: text built on understanding, to apply it.
 
 Understanding can have levels, so far:
 
@@ -243,7 +243,7 @@ Most of what goes wrong is one drift: the text and the knowledge drift apart. No
 
 A third failure sits outside the text: a Repo Responsibility Gap (§2). It is fixed in the repo, or in the Repo Responsibility, and it can cause drift. The next step of this work checks it first (§6).
 
-- **When the text holds less than the knowledge, the why goes missing.** An Agent Skill is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
+- **When the text holds less than the knowledge, the why goes missing.** An Instruction Text is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
 - **When the text is older than the knowledge, it goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is felt as the bigger problem; §6 tests it. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
 
 Wrong understanding is not, by that alone, the problem. Understanding that is incomplete or not correct, but honestly shows where the human is, does its job. An instruction is different: the agent acts on it as it stands (§3.3). The problem is text that no longer matches where the human is, or that the agent treats as settled fact.
@@ -321,7 +321,7 @@ The next step of this work tests these against the Maintainer Repo's history: th
 First checks only. They are refined once the next step shows which cases really happen. Each line can be checked:
 
 - A new session continues without the human retelling. Count the retellings and corrections in each session.
-- Behind each Agent Skill, its why can be found.
+- Behind each Instruction Text, its why can be found.
 - The cost of one change stays about the same as the repo grows.
 
 ## 8. Options to consider
