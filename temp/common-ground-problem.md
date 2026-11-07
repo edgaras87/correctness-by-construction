@@ -40,7 +40,7 @@ Defined Terms, in order of first use:
 - **File Instruction Text:** an Instruction Text the agent loads when a certain kind of file is opened.
 - **General Understanding Text:** an Understanding Text bound to no project.
 - **Adapted Understanding Text:** a General Understanding Text narrowed to one project's needs; the middle level between General Understanding Text and Instruction Text.
-- **Shipped Copy:** a copy of a System Kit file, as it lives in a System Repo.
+- **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo.
 - **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
@@ -108,7 +108,7 @@ Between understanding and instruction, the Maintainer Repo means to keep a middl
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
 
-So knowledge written here becomes instructions that agents act on in other repos. The agent in a System Repo starts with none of the Maintainer Repo's context, only its Shipped Copies, and they can drift, or change on their own.
+So knowledge written here becomes instructions that agents act on in other repos. The agent in a System Repo starts with none of the Maintainer Repo's context, only its System Kit Copies, and they can drift, or change on their own.
 
 The Repo Responsibility follows. It may change itself, and whether the repo does all of it is not yet checked.
 
@@ -121,9 +121,9 @@ The Maintainer Repo keeps:
 5. findings from System Repos. A System Repo uses the instructions in practice, and changes them as its problems demand, without the understanding to judge whether a change is right. The Maintainer Repo reads the changes and concludes one of two things:
    - a lesson: the understanding is updated, then the System Kit, so future System Repos don't repeat a mistake or miss the same thing;
    - specific to that System Repo's problem: the change is rejected, and the understanding and the System Kit stay as they are;
-6. updates for System Repos already at work: when the System Kit changes, a System Repo born earlier gets the change, or keeps working from its old Shipped Copy;
+6. updates for System Repos already at work: when the System Kit changes, a System Repo born earlier gets the change, or keeps working from its old System Kit Copy;
 7. its own records: the history and the backlog of this work.
-8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' Shipped Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches back to that System Repo by an update, or the System Repo keeps working from its own version.
+8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' System Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches back to that System Repo by an update, or the System Repo keeps working from its own version.
 
 Each System Repo:
 
@@ -155,7 +155,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | Maintainer Repo | the Concept Deliverer, a Concept Repo by its Tiers Model: `correctness-by-construction` |
 | System Repo | a CBC Run |
 | System Kit | the delivery, `delivery/`: the Container Group, the Method Group and a Stack Group, with the concept and each group's Glossary Names |
-| Shipped Copy | a CBC Run's copy of a Master Copy |
+| System Kit Copy | a CBC Run's copy of a Master Copy |
 | Task Instruction Text | an Agent Skill |
 | Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules |
 | File Instruction Text | an Agent Rule loaded by path, when a file it names is opened |
@@ -175,13 +175,13 @@ Where text is kept today, in the Maintainer Repo, on each of the four Knowledge 
 | Where it's kept | Kind | Time | Who uses it | Where |
 |---|---|---|---|---|
 | Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo |
-| Instruction Texts, of all three sorts; today, Agent Skills and Agent Rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as Shipped Copies in each System Repo, for those in the System Kit |
+| Instruction Texts, of all three sorts; today, Agent Skills and Agent Rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as System Kit Copies in each System Repo, for those in the System Kit |
 | Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own |
 | TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo |
 | The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files |
 | Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a System Repo |
-| Shipped Copy | mostly instruction; the concept and the Defined Terms are understanding | now | the agent in the System Repo | each System Repo |
+| System Kit Copy | mostly instruction; the concept and the Defined Terms are understanding | now | the agent in the System Repo | each System Repo |
 | The Repo Responsibility, §2's lists | understanding | later | both | the Maintainer Repo |
 
 ### 3.1 Who uses the text
@@ -263,9 +263,9 @@ An instruction can be copied to other repos, for the agents working there. Each 
 
 ### 3.4 Where the text is
 
-A text is kept in the Maintainer Repo, or in a System Repo. Some is in both: what the Maintainer Repo ships becomes a Shipped Copy in each System Repo, and a System Repo's changes come back only when the Maintainer Repo reads them.
+A text is kept in the Maintainer Repo, or in a System Repo. Some is in both: what the Maintainer Repo ships becomes a System Kit Copy in each System Repo, and a System Repo's changes come back only when the Maintainer Repo reads them.
 
-Some failures can happen in either repo. Others happen only between the two: a Shipped Copy drifts from its original in the System Kit; the Maintainer Repo judges a System Repo's change wrongly, as a lesson when it was specific to the System Repo, or the other way round; an update never reaches a System Repo already at work.
+Some failures can happen in either repo. Others happen only between the two: a System Kit Copy drifts from its original; the Maintainer Repo judges a System Repo's change wrongly, as a lesson when it was specific to the System Repo, or the other way round; an update never reaches a System Repo already at work.
 
 The two repos are not the two sides of §1. The human and the agent work in both.
 
@@ -308,9 +308,9 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 16. One instruction covers several tasks, and a change made for one task changes the others. | writing | kind | either |
 | 17. A later text is read as now: what is meant to be is taken for what is. | reading | time | either |
 | 18. Unchecked knowledge is read as checked, such as Knowledge on Trial taken as proven. | reading | time | either |
-| 19. A Shipped Copy drifts from its original in the System Kit. | aging | where | between |
+| 19. A System Kit Copy drifts from its original. | aging | where | between |
 | 20. The Maintainer Repo judges a System Repo's change wrongly: a lesson taken as specific to the System Repo, or something specific taken as a lesson. | reading | where | between |
-| 21. An update never reaches a System Repo already at work, which works on from its old Shipped Copy. | aging | where | between |
+| 21. An update never reaches a System Repo already at work, which works on from its old System Kit Copy. | aging | where | between |
 | 22. A System Repo's change reaches the Maintainer Repo without its why: the System Repo wrote down what it changed, not why. | writing | where | between |
 | 23. An adapted understanding lags behind its general idea, which has moved on. | aging | kind | either |
 | 24. A general idea is bent to one project's needs, and no longer fits the others. | writing | kind | between |
