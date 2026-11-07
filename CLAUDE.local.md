@@ -10,7 +10,9 @@
 - At the end of a session, before the devlog entry: list each
   correction or rule said only in our chat, and ask me where each
   goes: your memory, this file, a TODO item, or nowhere. Then show
-  me the memory notes you wrote or changed this session, and for
-  each, whether it stays, moves into this file or the repo, or goes.
-  On trial; it moves to the session-end item in TODO when that item
-  is decided.
+  me the memory notes changed since the last such check, found by
+  their file times, and for each, whether it stays, moves into this
+  file or the repo, or goes. Show both as tables: rule, where it
+  came from, now in, suggestion; and note, new or changed, what it
+  says, suggestion. On trial; it moves to the session-end item in
+  TODO when that item is decided.
