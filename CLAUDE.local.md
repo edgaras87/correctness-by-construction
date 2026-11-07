@@ -5,6 +5,8 @@
 - In a Change Set, stop once its plan is written, for my word on it.
   Then stage each planned commit, show me the diff, and stop, as for
   any commit. No commit runs without my word.
+  When I say "auto" for a Change Set, commit its planned commits
+  without stopping, for that Change Set only.
 - A TODO line we decide while talking: stage it at once and show
   me. In a Change Set it is an inserted commit.
 - At the end of a session, before the devlog entry: list each
