@@ -7,6 +7,14 @@
   any commit. No commit runs without my word.
   When I say "auto" for a Change Set, commit its planned commits
   without stopping, for that Change Set only.
+- Consult before you edit: your assessment and a recommendation,
+  then wait. One decision at a time.
+- Explain the simple version first: plain words, short sentences,
+  one idea each. When an answer holds more than two findings or asks
+  me to decide, start plain without waiting for me to ask.
+- When I roll back staged work or change files myself, it is my
+  decision, not an error to fix. Read the working tree again before
+  saying what is staged.
 - A TODO line we decide while talking: stage it at once and show
   me. In a Change Set it is an inserted commit.
 - At the end of a session, before the devlog entry: list each
