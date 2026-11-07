@@ -1,4 +1,4 @@
-# The problem: keeping what we know true
+# The Common Ground Problem
 
 <!-- A draft: the problem of the Plan Step "Find how what we know
      stays true", its stage 1, in the reviewer's words. Built from
@@ -11,11 +11,11 @@
      home is decided when the Plan Step closes; it goes then, and
      git keeps every version. -->
 
-This text states one problem: how what a human and an agent know stays true, and shared, from one session to the next. It proposes no answer.
+This document states the Common Ground Problem. It proposes no answer.
 
 ## Defined Terms
 
-A Defined Term is a word or words given an exact meaning, written capitalized, so plain English stays free. Each Defined Term below is defined here, once. Six plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground. Any other lowercase word is plain English. An *italic* word is a label inside the Defined Term it belongs to. The Defined Terms below are local to this text, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
+A Defined Term is a word or words given an exact meaning, written capitalized, so plain English stays free. Each Defined Term below is defined here, once. Six plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground. Any other lowercase word is plain English. An *italic* word is a label inside the Defined Term it belongs to. The Defined Terms below are local to the Common Ground Problem, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
 
 Plain words, in a narrow sense:
 
@@ -28,6 +28,7 @@ Plain words, in a narrow sense:
 
 Defined Terms, in order of first use:
 
+- **Common Ground Problem:** keeping common ground between the human and the agent from one session to the next, while the text it is built from goes stale; the problem this document states.
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
 - **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns. Here, `correctness-by-construction`; its glossary calls it the Concept Deliverer.
 - **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
@@ -78,7 +79,7 @@ The problem holds wherever a human works with an agent across sessions. The Main
 
 ## 2. The Maintainer Repo
 
-The Maintainer Repo is pictured twice. §2.1 is the intent: what it should be and keep, in this document's own Defined Terms. §2.2 is what it has today, not yet checked, and what to check, in the repo's own names. They are kept apart because the repo may have drifted from the intent, and a problem written only from today would take that drift as given. The next step sets one against the other: each difference is a Repo Responsibility Gap, or a sign the intent should change.
+The Maintainer Repo is pictured twice. §2.1 is the intent: what it should be and keep, in the Common Ground Problem's own Defined Terms. §2.2 is what it has today, not yet checked, and what to check, in the repo's own names. They are kept apart because the repo may have drifted from the intent, and a problem written only from today would take that drift as given. The next step sets one against the other: each difference is a Repo Responsibility Gap, or a sign the intent should change.
 
 ### 2.1 As intended
 
