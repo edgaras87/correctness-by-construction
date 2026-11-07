@@ -34,6 +34,21 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Land two facts from the agent's memory in the exchange
+      convention (2026-11-08, the reviewer).
+      Context: two facts lived only in the agent's memory until the
+      first session-end check moved them here. Main's history is never
+      rewritten: a CBC Run's Delivery Pin names a commit on main, and
+      CBC Run 4 was born from `35edd3f`. And this repo never drafts a
+      CBC Run's next opening prompt: at a step's end it gives one
+      hand-back line, and the run decides how it continues.
+      Ideas:
+      - their home: the exchange convention, which owns pins and
+        readings, and `.claude/rules/working-a-reading.md`; or an ADR
+        for the first.
+      Trigger: the exchange convention is next changed, or a reading
+      of a CBC Run opens.
+
 - [ ] Write the understanding of the agent's memory, and how it is
       checked (2026-11-07, the reviewer).
       Context: the agent keeps notes outside the repo, one folder for
