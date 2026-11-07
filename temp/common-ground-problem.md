@@ -11,7 +11,7 @@
      home is decided when the Plan Step closes; it goes then, and
      git keeps every version. -->
 
-This document states the Common Ground Problem. It proposes no answer.
+This document states the Common Ground Problem. It chooses no answer; answers met along the way are kept as options to weigh (§8).
 
 ## Defined Terms
 
