@@ -145,8 +145,8 @@ For Knowledge on Trial it has the Approach on Trial: one text for work done for 
 
 Seen already, two Repo Responsibility Gaps:
 
-- one convention manual, the middle level for one way of working, is written for both repos at once, the Maintainer Repo and every System Repo, though the two need different things from it: one middle serving two repos (case 15);
-- two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (case 8).
+- one convention manual, the middle level for one way of working, is written for both repos at once, the Maintainer Repo and every System Repo, though the two need different things from it: one middle serving two repos (Failure Case 15);
+- two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (Failure Case 8).
 
 What the Maintainer Repo has today, for each Defined Term of the intent:
 
@@ -271,7 +271,7 @@ The two repos are not the two sides of §1. The human and the agent work in both
 
 ## 4. What goes wrong
 
-Most of what goes wrong is one drift: the text and the knowledge drift apart. Not every failure here is Knowledge Drift. In case 11 the text matches the knowledge, but the knowledge is wrong: Mistaken Knowledge. Drift is fixed by bringing the text up to the knowledge; Mistaken Knowledge is fixed in the knowledge first.
+Most of what goes wrong is one drift: the text and the knowledge drift apart. Not every failure here is Knowledge Drift. In Failure Case 11 the text matches the knowledge, but the knowledge is wrong: Mistaken Knowledge. Drift is fixed by bringing the text up to the knowledge; Mistaken Knowledge is fixed in the knowledge first.
 
 A third failure sits outside the text: a Repo Responsibility Gap (§2). It is fixed in the repo, or in the Repo Responsibility, and it can cause drift. The next step of this work checks it first (§6).
 
@@ -286,9 +286,9 @@ A failure shows in one of three Text Life Phases: two moments, *writing* and *re
 - *Aging:* the knowledge moves on, and the text grows older than it.
 - *Reading:* the agent reads the text and builds a different understanding from it than the human holds.
 
-The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the Text Life Phase it breaks in, the Knowledge Axis it lives on (§3), and where: in either repo, or between the Maintainer Repo and a System Repo (§3.4):
+The drift breaks the interface between the human's mind and the agent in these Failure Cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the Text Life Phase it breaks in, the Knowledge Axis it lives on (§3), and where: in either repo, or between the Maintainer Repo and a System Repo (§3.4):
 
-| Case | Text Life Phase | Knowledge Axis | Where |
+| Failure Case | Text Life Phase | Knowledge Axis | Where |
 |---|---|---|---|
 | 1. The human knows something the text doesn't hold. | writing | who uses it | either |
 | 2. The text is older than the human's understanding: they have moved on. | aging | time | either |
@@ -315,7 +315,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 23. An adapted understanding lags behind its general idea, which has moved on. | aging | kind | either |
 | 24. A general idea is bent to one project's needs, and no longer fits the others. | writing | kind | between |
 
-The same cases by Text Life Phase and Knowledge Axis. Every cell has a case; an empty one would point at a missing case:
+The same Failure Cases by Text Life Phase and Knowledge Axis. Every cell has a Failure Case; an empty one would point at a missing Failure Case:
 
 | | who uses it | time | kind | where |
 |---|---|---|---|---|
@@ -323,7 +323,7 @@ The same cases by Text Life Phase and Knowledge Axis. Every cell has a case; an 
 | **aging** | 3 | 2, 8 | 10, 23 | 19, 21 |
 | **reading** | 6, 7 | 13, 17, 18 | 14 | 20 |
 
-Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild the Maintainer Repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they had lost common ground.
+Seen on 2026-11-05: Failure Case 1, the purpose of an earlier attempt to rebuild the Maintainer Repo's way of working, written nowhere for 3 days; Failure Cases 4 and 5, the agent's dense answers, until the human said they had lost common ground.
 
 ## 5. What was tried
 
@@ -350,7 +350,7 @@ The next step of this work tests these against the Maintainer Repo's history: th
 
 ## 7. What would show it's solved
 
-First checks only. They are refined once the next step shows which cases really happen. Each line can be checked:
+First checks only. They are refined once the next step shows which Failure Cases really happen. Each line can be checked:
 
 - A new session continues without the human retelling. Count the retellings and corrections in each session.
 - Behind each Instruction Text, its why can be found.
@@ -368,6 +368,6 @@ Answers met while stating the problem, kept to be weighed, not chosen:
   | | With a middle level | Without one |
   |---|---|---|
   | The general idea | written once, fits any project | bent to fit each project, or repeated in each |
-  | One idea, two projects with different needs | each gets its own adapted text | one text serves both, case 15 |
+  | One idea, two projects with different needs | each gets its own adapted text | one text serves both, Failure Case 15 |
   | A change to the general idea | reread the adapted texts, a few | reread every instruction |
-  | Its cost | one more level to keep, and drift between levels, cases 23 and 24 | the general idea retold everywhere |
+  | Its cost | one more level to keep, and drift between levels, Failure Cases 23 and 24 | the general idea retold everywhere |
