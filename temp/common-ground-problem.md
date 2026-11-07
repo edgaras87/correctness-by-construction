@@ -19,39 +19,39 @@ A Defined Term is a word or words given an exact meaning, written capitalized, s
 
 Plain words, in a narrow sense:
 
+- **the agent:** the AI model in a session. It knows its subjects from training, and the human and the work only from what it reads.
+- **the chat:** where knowledge passes between the human and the agent; lost when a session ends, unless written down. Not text.
+- **common ground:** between the human and the agent, on what the human knows: the agent's picture of the human's understanding, built from the text, matches it and its Depth of Understanding.
+- **the human:** the person whose knowledge it is, who carries it from one session to the next.
 - **knowledge:** what one knows, and how one understands it. It lives in a head.
 - **text:** where knowledge is stored, as it stood at one moment: Understanding Text and Instruction Text, wherever kept.
-- **the chat:** where knowledge passes between the human and the agent; lost when a session ends, unless written down. Not text.
-- **the human:** the person whose knowledge it is, who carries it from one session to the next.
-- **the agent:** the AI model in a session. It knows its subjects from training, and the human and the work only from what it reads.
-- **common ground:** between the human and the agent, on what the human knows: the agent's picture of the human's understanding, built from the text, matches it and its Depth of Understanding.
 
-Defined Terms, in order of first use:
+Defined Terms, in alphabetical order:
 
+- **Adapted Understanding Text:** a General Understanding Text narrowed to one project's needs; the middle level between General Understanding Text and Instruction Text.
 - **Common Ground Problem:** keeping common ground between the human and the agent from one session to the next, while the text it is built from goes stale; the problem this document states.
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
-- **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns.
-- **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
-- **System Kit:** what the Maintainer Repo keeps for System Repos to work from: mostly Instruction Texts, with the concept and the Defined Terms they use. Its originals stay in the Maintainer Repo, with the understanding that explains them; each System Repo works from copies, updated as the System Kit changes.
-- **Understanding Text:** text that holds what is known, and how it is understood.
-- **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. So far it comes in three sorts, by when the agent loads it: Task Instruction Text, Session Instruction Text and File Instruction Text.
-- **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
-- **Session Instruction Text:** an Instruction Text the agent loads in every session.
+- **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **File Instruction Text:** an Instruction Text the agent loads when a certain kind of file is opened.
 - **General Understanding Text:** an Understanding Text bound to no project.
-- **Adapted Understanding Text:** a General Understanding Text narrowed to one project's needs; the middle level between General Understanding Text and Instruction Text.
-- **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo.
-- **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
-- **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
-- **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
-- **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
+- **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. So far it comes in three sorts, by when the agent loads it: Task Instruction Text, Session Instruction Text and File Instruction Text.
 - **Knowledge Axis:** one way of sorting text. There are four: *who uses it*, *time*, *kind*, *where* (§3).
-- **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
 - **Knowledge Drift:** text and knowledge moving apart. The text holds less than the knowledge, or is older than it.
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
+- **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
+- **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
+- **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns.
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
-- **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
+- **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
+- **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
+- **Session Instruction Text:** an Instruction Text the agent loads in every session.
+- **System Kit:** what the Maintainer Repo keeps for System Repos to work from: mostly Instruction Texts, with the concept and the Defined Terms they use. Its originals stay in the Maintainer Repo, with the understanding that explains them; each System Repo works from copies, updated as the System Kit changes.
+- **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo.
+- **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
+- **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
+- **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
+- **Understanding Text:** text that holds what is known, and how it is understood.
 
 Labels:
 
