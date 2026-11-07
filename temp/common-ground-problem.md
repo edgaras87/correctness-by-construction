@@ -108,7 +108,7 @@ Between understanding and instruction, the Maintainer Repo means to keep a middl
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
 
-So knowledge written here becomes instructions that agents act on in other repos. The agent in a System Repo starts with none of the Maintainer Repo's context, only what was shipped, and the copies there can drift, or change on their own.
+So knowledge written here becomes instructions that agents act on in other repos. The agent in a System Repo starts with none of the Maintainer Repo's context, only its Shipped Copies, and they can drift, or change on their own.
 
 The Repo Responsibility follows. It may change itself, and whether the repo does all of it is not yet checked.
 
@@ -121,9 +121,9 @@ The Maintainer Repo keeps:
 5. findings from System Repos. A System Repo uses the instructions in practice, and changes them as its problems demand, without the understanding to judge whether a change is right. The Maintainer Repo reads the changes and concludes one of two things:
    - a lesson: the understanding is updated, then the System Kit, so future System Repos don't repeat a mistake or miss the same thing;
    - specific to that System Repo's problem: the change is rejected, and the understanding and the System Kit stay as they are;
-6. updates for System Repos already at work: when the System Kit changes, a System Repo born earlier gets the change, or keeps working from its old copy;
+6. updates for System Repos already at work: when the System Kit changes, a System Repo born earlier gets the change, or keeps working from its old Shipped Copy;
 7. its own records: the history and the backlog of this work.
-8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches back to that System Repo by an update, or the System Repo keeps working from its own version.
+8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' Shipped Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches back to that System Repo by an update, or the System Repo keeps working from its own version.
 
 Each System Repo:
 
@@ -175,7 +175,7 @@ Where text is kept today, in the Maintainer Repo, on each of the four Knowledge 
 | Where it's kept | Kind | Time | Who uses it | Where |
 |---|---|---|---|---|
 | Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo |
-| Instruction Texts, of all three sorts; today, Agent Skills and Agent Rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo, and a copy in each System Repo of those it ships |
+| Instruction Texts, of all three sorts; today, Agent Skills and Agent Rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as Shipped Copies in each System Repo, for those in the System Kit |
 | Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own |
 | TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo |
@@ -263,9 +263,9 @@ An instruction can be copied to other repos, for the agents working there. Each 
 
 ### 3.4 Where the text is
 
-A text is kept in the Maintainer Repo, or in a System Repo. Some is in both: what the Maintainer Repo ships becomes a copy in each System Repo, and a System Repo's changes come back only when the Maintainer Repo reads them.
+A text is kept in the Maintainer Repo, or in a System Repo. Some is in both: what the Maintainer Repo ships becomes a Shipped Copy in each System Repo, and a System Repo's changes come back only when the Maintainer Repo reads them.
 
-Some failures can happen in either repo. Others happen only between the two: a System Repo's copy drifts from what was shipped; the Maintainer Repo judges a System Repo's change wrongly, as a lesson when it was specific to the System Repo, or the other way round; an update never reaches a System Repo already at work.
+Some failures can happen in either repo. Others happen only between the two: a Shipped Copy drifts from its original in the System Kit; the Maintainer Repo judges a System Repo's change wrongly, as a lesson when it was specific to the System Repo, or the other way round; an update never reaches a System Repo already at work.
 
 The two repos are not the two sides of §1. The human and the agent work in both.
 
@@ -308,9 +308,9 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 16. One instruction covers several tasks, and a change made for one task changes the others. | writing | kind | either |
 | 17. A later text is read as now: what is meant to be is taken for what is. | reading | time | either |
 | 18. Unchecked knowledge is read as checked, such as Knowledge on Trial taken as proven. | reading | time | either |
-| 19. A System Repo's copy of a shipped instruction drifts from what was shipped. | aging | where | between |
+| 19. A Shipped Copy drifts from its original in the System Kit. | aging | where | between |
 | 20. The Maintainer Repo judges a System Repo's change wrongly: a lesson taken as specific to the System Repo, or something specific taken as a lesson. | reading | where | between |
-| 21. An update never reaches a System Repo already at work, which works on from its old copy. | aging | where | between |
+| 21. An update never reaches a System Repo already at work, which works on from its old Shipped Copy. | aging | where | between |
 | 22. A System Repo's change reaches the Maintainer Repo without its why: the System Repo wrote down what it changed, not why. | writing | where | between |
 | 23. An adapted understanding lags behind its general idea, which has moved on. | aging | kind | either |
 | 24. A general idea is bent to one project's needs, and no longer fits the others. | writing | kind | between |
