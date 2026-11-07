@@ -136,6 +136,25 @@ Seen already, two Repo Responsibility Gaps:
 - one convention manual, the middle level for one way of working, is written for both repos at once, the Maintainer Repo and every System Repo, though the two need different things from it: one middle serving two repos (case 15);
 - two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (case 8).
 
+What the Maintainer Repo has today, for each Defined Term of the intent. Its *time* is *now*, unchecked: the next step checks each row, and a row that does not hold is a Repo Responsibility Gap, or a sign the intent must change.
+
+| Defined Term | In the Maintainer Repo today |
+|---|---|
+| Maintainer Repo | the Concept Deliverer, a Concept Repo by its Tiers Model: `correctness-by-construction` |
+| System Repo | a CBC Run |
+| System Kit | the delivery, `delivery/`: the Container Group, the Method Group and a Stack Group, with the concept and each group's Glossary Names |
+| Shipped Copy | a CBC Run's copy of a Master Copy |
+| Task Instruction Text | an Agent Skill |
+| Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules. An Agent Rule loaded by path, when a file is opened, is a sort the intent does not yet name |
+| Knowledge on Trial | the Approach on Trial, for ways of working only |
+| General Understanding Text | an Idea Model, `docs/models/` |
+| Adapted Understanding Text | a convention manual, `docs/conventions/`; the concept, `concept/` |
+| Defined Term | a Glossary Name, in `docs/glossary.md` |
+| One Home per Fact | the facts-in-sync convention, and the one-home Agent Rule |
+| Knowledge Drift Repair | the Foundation Check and its Change Walk at each commit; the refinement's reads of the whole repo |
+| reading back what a System Repo learns | a CBC Run Reading |
+| an update to a System Repo already at work | a delivery with its Delivery Note |
+
 ## 3. The Knowledge Axes
 
 Where text is kept so far, on each of the four Knowledge Axes, which §3.1 to §3.4 explain. Every text should have a place on each Knowledge Axis; one that doesn't is a finding.
