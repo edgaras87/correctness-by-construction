@@ -82,7 +82,7 @@ The Maintainer Repo is pictured twice. §2.1 is the intent: what it should be an
 
 ### 2.1 As intended
 
-This text speaks of projects in general. Here, each project lives in a repo, a git repository. So far there are two sorts of repo:
+Each project is meant to live in a repo, a git repository, of one of two sorts, so far:
 
 - the Maintainer Repo, which holds the concept;
 - each System Repo, which builds a real system by the concept.
