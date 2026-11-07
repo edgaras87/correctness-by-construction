@@ -19,8 +19,11 @@
   changed or deleted note, ask whether it stays, moves into this
   file or the repo, or goes. Show both as tables: rule, where it
   came from, now in, suggestion; and note, new, changed or deleted,
-  what it says now, what you changed, suggestion. Then write the
-  session's "Memory checked" line: the time, and every note's name
-  and date. With no such line yet, every note counts as new. On
-  trial; it moves to the session-end item in TODO when that item is
-  decided.
+  what it says now, what you changed, suggestion. Carry out what I
+  decide in the same session; only then write the devlog entry, with
+  its "Memory checked" line: the time, and every note's name and
+  date to the minute, as memory stands after the moves. With no such
+  line yet, every note counts as new. On trial; it moves to the
+  session-end item in TODO when that item is decided.
+- When a session reaches a natural boundary and has run long, about
+  40 commits or the context over half full, suggest closing it.
