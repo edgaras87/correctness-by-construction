@@ -57,6 +57,9 @@
         not named /context or /memory, which Claude Code already has;
       - git inside the memory folder, dropped: a second repo and
         commit rhythm against a risk not yet met.
+      - the check by name and date finds only notes the agent edited;
+        a note made stale by a change in the repo around it shows only
+        in a full review, as on 2026-11-07, or in stage 2's reading.
       Trigger: the session-end item is decided, or the Agent Model is
       reworked, whichever comes first.
       See: `TODO-CONVERSATION-MEMORY.md` §32, *The agent's memory*.
@@ -129,6 +132,10 @@
         in the glossary or go when it finishes; narrowed lowercase
         words bleed most easily between docs the agent reads together,
         so they are kept rarest.
+      - the repo's glossary takes the rules the problem draft's
+        Defined Terms follow, being local aside: sorted alphabetically,
+        a definition naming what it builds on by its Term, and no Term
+        shortened by sharing words with another.
       Trigger: the close of "Find how what we know stays true", when
       its lessons are written back.
 
