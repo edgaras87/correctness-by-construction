@@ -13,9 +13,9 @@
 
 This text states one problem: how what a human and an agent know stays true, and shared, from one session to the next. It proposes no answer.
 
-## Names
+## Defined Terms
 
-A capitalized Name is defined here, once. Six plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground. Any other lowercase word is plain English. An *italic* word is a label inside the Name it belongs to. The Names are local to this text, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. A definition names what it builds on by its Name, never by where it stands in the text, such as "the same idea" or "the two".
+A Defined Term is a word or words given an exact meaning, written capitalized, so plain English stays free. Each Defined Term below is defined here, once. Six plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground. Any other lowercase word is plain English. An *italic* word is a label inside the Defined Term it belongs to. The Defined Terms below are local to this text, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
 
 Plain words, in a narrow sense:
 
@@ -26,12 +26,12 @@ Plain words, in a narrow sense:
 - **the agent:** the AI model in a session. It knows its subjects from training, and the human and the work only from what it reads.
 - **common ground:** between the human and the agent, on what the human knows: the agent's picture of the human's understanding, built from the text, matches it and its Depth of Understanding.
 
-Names, in order of first use:
+Defined Terms, in order of first use:
 
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
 - **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns. Here, `correctness-by-construction`; its glossary calls it the Concept Deliverer.
 - **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
-- **System Kit:** what the Maintainer Repo keeps for System Repos to work from: mostly Instruction Texts, with the concept and the Names they use. Its originals stay in the Maintainer Repo, with the understanding that explains them; each System Repo works from copies, updated as the System Kit changes.
+- **System Kit:** what the Maintainer Repo keeps for System Repos to work from: mostly Instruction Texts, with the concept and the Defined Terms they use. Its originals stay in the Maintainer Repo, with the understanding that explains them; each System Repo works from copies, updated as the System Kit changes.
 - **Understanding Text:** text that holds what is known, and how it is understood.
 - **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. Agent Skills and rules are Instruction Texts.
 - **General Understanding Text:** an Understanding Text bound to no project.
@@ -114,7 +114,7 @@ The Maintainer Repo keeps:
 
 1. understanding of agent work;
 2. understanding of the concept, CBC system design;
-3. the System Kit: Instruction Texts made from both, with the concept and the Names, general enough to reuse in any project built by the concept;
+3. the System Kit, for every System Repo to work from. It is made from the understanding of agent work and of the concept, and holds Instruction Texts, the concept itself, and the Defined Terms those texts use;
 4. its own instructions, from the understanding of agent work, updated as that understanding changes;
 5. findings from System Repos. A System Repo uses the instructions in practice, and changes them as its problems demand, without the understanding to judge whether a change is right. The Maintainer Repo reads the changes and concludes one of two things:
    - a lesson: the understanding is updated, then the System Kit, so future System Repos don't repeat a mistake or miss the same thing;
@@ -149,7 +149,7 @@ Where text is kept so far, on each of the four Knowledge Axes, which §3.1 to §
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo |
 | The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files |
 | Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a System Repo |
-| Shipped Copy | mostly instruction; the concept and the Names are understanding | now | the agent in the System Repo | each System Repo |
+| Shipped Copy | mostly instruction; the concept and the Defined Terms are understanding | now | the agent in the System Repo | each System Repo |
 | The Repo Responsibility, §2's lists | understanding | later | both | the Maintainer Repo |
 
 ### 3.1 Who uses the text
