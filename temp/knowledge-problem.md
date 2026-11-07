@@ -78,7 +78,7 @@ The problem holds wherever a human works with an agent across sessions. The Main
 
 ## 2. The Maintainer Repo
 
-§2 holds two pictures of the Maintainer Repo. §2.1 is the intent: what it is meant to be and keep, in this document's own Defined Terms, its *time* *later*. §2.2 is what it has today and what to check, in the repo's own names, its *time* *now*, unchecked. They are kept apart because the repo may have drifted from the intent, and a problem written only from today would take that drift as given. The next step sets one against the other: each difference is a Repo Responsibility Gap, or a sign the intent should change.
+§2 holds two pictures of the Maintainer Repo. §2.1 is the intent: what the Maintainer Repo should be and keep, in this document's own Defined Terms. §2.2 is what it has today, not yet checked, and what to check, in the repo's own names. They are kept apart because the repo may have drifted from the intent, and a problem written only from today would take that drift as given. The next step sets one against the other: each difference is a Repo Responsibility Gap, or a sign the intent should change.
 
 ### 2.1 As intended
 
@@ -146,7 +146,7 @@ Seen already, two Repo Responsibility Gaps:
 - one convention manual, the middle level for one way of working, is written for both repos at once, the Maintainer Repo and every System Repo, though the two need different things from it: one middle serving two repos (case 15);
 - two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (case 8).
 
-What the Maintainer Repo has today, for each Defined Term of the intent. Its *time* is *now*, unchecked: the next step checks each row, and a row that does not hold is a Repo Responsibility Gap, or a sign the intent must change.
+What the Maintainer Repo has today, for each Defined Term of the intent:
 
 | Defined Term | In the Maintainer Repo today |
 |---|---|
