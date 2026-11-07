@@ -207,11 +207,12 @@ Notes:
      This repo's descriptions of itself, such as `CLAUDE.md` and
      `ARCHITECTURE.md`, are checked too, for intent written as if
      it were now (the draft's case 17).
-     Then where the same page failed: the devlog's 18 "What context
-     was missing" lines since October, and the refinement's findings,
-     485 in round 3's close read and 385 in its last read. A sample
-     sorted by the draft's 14 cases, so each case gets its count; a
-     failure no case fits is a new case.
+     Then where common ground was lost: the devlog's 18 "What context
+     was missing" lines since October, the refinement's findings, 485
+     in round 3's close read and 385 in its last read, and the agent's
+     memory notes, for what they hold, what is stale and what is
+     missing. A sample sorted by the draft's Failure Cases, so each
+     gets its count; a failure none fits is a new Failure Case.
   3. The real cases: one drawn and defined, as `cbc-concept`'s step
      drawings did one change; a second set beside it, from outside
      this repo, such as a CBC Run, since the problem holds wherever a
