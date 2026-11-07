@@ -30,7 +30,7 @@ Defined Terms, in order of first use:
 
 - **Common Ground Problem:** keeping common ground between the human and the agent from one session to the next, while the text it is built from goes stale; the problem this document states.
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
-- **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns. Here, `correctness-by-construction`; its glossary calls it the Concept Deliverer.
+- **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns.
 - **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
 - **System Kit:** what the Maintainer Repo keeps for System Repos to work from: mostly Instruction Texts, with the concept and the Defined Terms they use. Its originals stay in the Maintainer Repo, with the understanding that explains them; each System Repo works from copies, updated as the System Kit changes.
 - **Understanding Text:** text that holds what is known, and how it is understood.
@@ -170,7 +170,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 
 ## 3. The Knowledge Axes
 
-Where text is kept so far, on each of the four Knowledge Axes, which §3.1 to §3.4 explain. Every text should have a place on each Knowledge Axis; one that doesn't is a finding.
+Where text is kept today, in the Maintainer Repo, on each of the four Knowledge Axes, which §3.1 to §3.4 explain. Every text should have a place on each Knowledge Axis; one that doesn't is a finding.
 
 | Where it's kept | Kind | Time | Who uses it | Where |
 |---|---|---|---|---|
@@ -302,7 +302,7 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 10. An instruction still applies understanding that has moved on. | aging | kind | either |
 | 11. An instruction is faithful to Mistaken Knowledge, and neither side sees it until the work shows it. | writing | kind | either |
 | 12. A Knowledge Time Shift isn't written down: what was learned still sits in later, or replaced understanding isn't kept as before. | writing | time | either |
-| 13. The agent reads a before text as now, such as an old devlog entry taken as current. | reading | time | either |
+| 13. The agent reads a before text as now, such as an old journal entry taken as current. | reading | time | either |
 | 14. The agent reads understanding as an instruction, such as the human thinking aloud, in chat or in text, taken as an order, or applies an instruction where it wasn't meant to. | reading | kind | either |
 | 15. One understanding text serves repos whose needs differ, and a change made for one changes the other. | writing | where | between |
 | 16. One instruction covers several tasks, and a change made for one task changes the others. | writing | kind | either |
