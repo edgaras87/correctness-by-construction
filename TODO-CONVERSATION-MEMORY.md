@@ -1201,3 +1201,78 @@ time, each a commit, so the diffs show what changed: knowledge and
 text; the text as the interface; the human and the agent, named and
 defined; the two uses as open lists; the time axis; each axis a
 section; and the agent's five missing points.
+
+### 2026-11-06 and 2026-11-07
+
+#### What the reviewer said
+
+On words with two meanings: "i also noticed that we vary commonly
+overload words. should we mark this as todo later for writing rule
+to consider and pay attention?" On local names, the agent's reading
+of them across documents: "what happens when agent will read more
+then one doc with such rule, where in one doc it list its words and
+in other theirs. now will agent dont mix that in his context?"
+
+On the middle level: "this middle level, or as i just though as
+understandings lower lever which is part of understanding and
+adapted to project needs [...] brings as extra understanding
+maintanace. complexity grow [...] Now how that helps. we can have
+some understand writen without dependency on any specific project
+[...] so maybe while i try to put everything what i understand i
+find reason why middle level is required and not optional?"
+
+On definitions at the start: "we should have definitions of those
+words in the beggining. maybe we should mark them or have label or
+note as this is defined in begining. [...] in books we have this
+start '*' i think and footer". Later: "i wanted, that when it appears
+first time in doc, we would mark it something like '*' [...] but
+term list i would like to be order alphabeticaly".
+
+On the intent against today: "we write more like we pretending if
+it is done this intendent way, where in reallity it may need to
+make changes. So maybe here we should also write our own naming and
+talk about cbc runs as what we think they are, where after we gonna
+clarify if they really are." And: "maybe we could start by naming
+our current `deliver` in better way."
+
+On the CBC part, held for later: "now i think i understood why u were
+suggesting before to include CBC in name for our repo [...] Just
+keep in mind that i have idea why this is true which i will describe
+later as another insight."
+
+On refining a document with many agents: "can we have such thing
+like document refinement, where we start it by one agent and giving
+him rule where it can start his agents, where each agent is
+responsible about one idea in that doc. [...] when one agent does,
+that it kind of feels that it reasons on snapshot of document. i
+want that it was check according what document is stating. so there
+could be multiple ideas and snapshot can take change for one place
+but break other."
+
+#### What the agent added
+
+- **Local names bleed** between documents the agent reads together;
+  narrowed lowercase words most, unique capitalized Terms least.
+- **The middle level pays by demand,** only for an idea two projects
+  with different needs share; the trade-off kept as an option.
+- **The repo already has words for some of it:** Concept Deliverer,
+  Glossary Name, Canonical Description, the last with two scopes.
+- **A third sort of instruction,** an Agent Rule loaded by path.
+- **First-use marks** weighed: a mark goes stale when an earlier use
+  is added, and breaks plain searches.
+- **For many agents,** one core agent edits; checkers report, split
+  by rule rather than by idea, until a pass finds nothing new.
+
+#### What the reviewer took
+
+Words with two meanings swept, and the writing rules found gathered
+in one TODO item, to land once the repo is fixed. The middle level
+kept, with its two failures and its trade-off as an option. Defined
+Terms at the start, sorted alphabetically, with no mark at first use
+and no opening line about capitals. The intent in the draft's own
+Terms, today in the repo's names, in §2.2 and its table: Maintainer
+Repo, System Repo, System Kit, System Kit Copy, Task, Session and
+File Instruction Text, Knowledge on Trial. Neutral Terms kept until
+the CBC insight is written. The document named the Common Ground
+Problem. The multi-agent refinement noted in TODO, to try in place
+of the draft's fourth fresh read.

@@ -57,6 +57,8 @@
         nothing; at milestones, not on every change.
       Trigger: the draft's renames done, in place of its fourth fresh
       read.
+      See: `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what we know
+      true*, its part of 2026-11-06 and 2026-11-07.
 
 - [ ] Land the writing rules found in the problem draft (2026-11-06,
       the reviewer).
