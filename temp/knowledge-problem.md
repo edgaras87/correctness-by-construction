@@ -91,7 +91,7 @@ Its understanding falls in two groups. Each gives instructions in two places, th
 
 | Understanding | Instructions for the Maintainer Repo | Instructions shipped to each System Repo |
 |---|---|---|
-| How work is done with an agent: a change, a commit, a plan | the Maintainer Repo's own Task and Session Instruction Texts | its part of the System Kit: the setup for the agent, its Task and Session Instruction Texts, and record forms |
+| How work is done with an agent: a change, a commit, a plan | the Maintainer Repo's own Task Instruction Texts and Session Instruction Texts | its part of the System Kit: the setup for the agent, its Task Instruction Texts and Session Instruction Texts, and record forms |
 | How a CBC system is designed: the concept and its methods | none | the methods, as Task Instruction Texts |
 
 The two groups are split today. They may turn out to be one understanding, sorted into two groups.
@@ -143,7 +143,7 @@ Where text is kept so far, on each of the four Knowledge Axes, which §3.1 to §
 | Where it's kept | Kind | Time | Who uses it | Where |
 |---|---|---|---|---|
 | Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo |
-| Task and Session Instruction Texts; today, Agent Skills and Agent Rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo, and a copy in each System Repo of those it ships |
+| Task Instruction Texts and Session Instruction Texts; today, Agent Skills and Agent Rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo, and a copy in each System Repo of those it ships |
 | Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own |
 | TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo |
