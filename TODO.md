@@ -73,6 +73,9 @@
       Ideas:
       - a check at the commit: does any word in this text mean two
         things?
+      - a fifth rule found: a numbered thing is in parentheses when it
+        is a pointer, "(Failure Case 15)", bare when it is the subject
+        of its sentence, "In Failure Case 11 the text matches".
       Trigger: this repo's writing rule is reworked, once the repo is
       fixed.
 
