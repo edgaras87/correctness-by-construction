@@ -108,7 +108,7 @@ Between understanding and instruction, the Maintainer Repo means to keep a middl
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
 
-So knowledge written here becomes instructions that agents act on in other repos. The agent in a System Repo starts with none of the Maintainer Repo's context, only its System Kit Copies, and they can drift, or change on their own.
+So knowledge written in the Maintainer Repo becomes instructions that agents act on: in the Maintainer Repo itself, for its own work, and in every System Repo. The agent in a System Repo starts with none of the Maintainer Repo's context, only its System Kit Copies, and they can drift, or change on their own.
 
 The Repo Responsibility follows. It may change itself, and whether the repo does all of it is not yet checked.
 
