@@ -29,13 +29,15 @@ Plain words, in a narrow sense:
 Names, in order of first use:
 
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
-- **Maintainer Repo:** the repo that keeps the understanding, ships what each CBC Run receives, and reads back what the runs learn. Here, `correctness-by-construction`; its glossary calls it the Concept Deliverer.
+- **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns. Here, `correctness-by-construction`; its glossary calls it the Concept Deliverer.
+- **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
+- **System Kit:** what the Maintainer Repo keeps for System Repos to work from: mostly Instruction Texts, with the concept and the Names they use. Its originals stay in the Maintainer Repo, with the understanding that explains them; each System Repo works from copies, updated as the System Kit changes.
 - **CBC Run:** a repo that builds a real system by the concept, starting from what the Maintainer Repo ships. The Maintainer Repo's glossary Name.
 - **Understanding Text:** text that holds what is known, and how it is understood.
 - **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. Agent Skills and rules are Instruction Texts.
 - **General Understanding Text:** an Understanding Text bound to no project.
 - **Adapted Understanding Text:** a General Understanding Text narrowed to one project's needs; the middle level between General Understanding Text and Instruction Text.
-- **Shipped Copy:** an Instruction Text the Maintainer Repo ships, as it lives in a CBC Run.
+- **Shipped Copy:** a copy of a System Kit file, as it lives in a System Repo.
 - **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each CBC Run (§2). Its *time* is *later*: as meant, not as done today.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
