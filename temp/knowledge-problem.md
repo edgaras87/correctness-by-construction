@@ -76,7 +76,9 @@ The purpose is common ground between the human and the agent on what the human k
 
 The problem holds wherever a human works with an agent across sessions. The Maintainer Repo is where it is seen first, and where it is tested.
 
-## 2. Maintainer Repo as intended
+## 2. The Maintainer Repo
+
+### 2.1 As intended
 
 This text speaks of projects in general. Here, each project lives in a repo, a git repository. So far there are two sorts of repo:
 
@@ -85,8 +87,6 @@ This text speaks of projects in general. Here, each project lives in a repo, a g
 
 The Maintainer Repo holds more than its own work. It also holds the understanding of agent work. No single project owns it, and every System Repo receives instructions made from it, in the System Kit.
 
-The Maintainer Repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a System Repo, build real systems by the concept. Each starts from what the Maintainer Repo ships, and what it learns is read back here.
-
 Its understanding falls in two groups. Each gives instructions in two places, the Maintainer Repo and each System Repo:
 
 | Understanding | Instructions for the Maintainer Repo | Instructions shipped to each System Repo |
@@ -94,9 +94,7 @@ Its understanding falls in two groups. Each gives instructions in two places, th
 | How work is done with an agent: a change, a commit, a plan | the Maintainer Repo's own Task Instruction Texts and Session Instruction Texts | its part of the System Kit: the setup for the agent, its Task Instruction Texts and Session Instruction Texts, and record forms |
 | How a CBC system is designed: the concept and its methods | none | the methods, as Task Instruction Texts |
 
-The two groups are split today. They may turn out to be one understanding, sorted into two groups.
-
-Between understanding and instruction, the Maintainer Repo means to keep a middle level, for both groups. It describes the three levels itself, in its Idea-to-Output Model (`docs/models/idea-to-output.md`, §2):
+Between understanding and instruction, the Maintainer Repo means to keep a middle level, for both groups:
 
 | Level | What it holds |
 |---|---|
@@ -121,7 +119,7 @@ The Maintainer Repo keeps:
    - specific to that System Repo's problem: the change is rejected, and the understanding and the System Kit stay as they are;
 6. updates for System Repos already at work: when the System Kit changes, a System Repo born earlier gets the change, or keeps working from its old copy;
 7. its own records: the history and the backlog of this work.
-8. its Knowledge on Trial, from System Repos and its own, judged here. Its form for work done for the first time is the Approach on Trial: one text, written in a System Repo or here. That is what the repo has today; whether it meets the Repo Responsibility, and what other Knowledge on Trial needs, is checked in the next step. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches back to that System Repo by an update, or the System Repo keeps working from its own version.
+8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches back to that System Repo by an update, or the System Repo keeps working from its own version.
 
 Each System Repo:
 
@@ -129,7 +127,17 @@ Each System Repo:
 2. gets the concept's understanding, to explain its problems. Whether a System Repo may change that understanding, since it uses it directly, is open;
 3. keeps understanding of its own problem: one specific system's design;
 4. keeps its own records, started from the record forms in its System Kit;
-5. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back. The Maintainer Repo's form for it today is the Approach on Trial, for ways of working only.
+5. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back.
+
+### 2.2 As it is today
+
+The Maintainer Repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a System Repo, build real systems by the concept. Each starts from what the Maintainer Repo ships, and what it learns is read back here.
+
+The two groups are split today. They may turn out to be one understanding, sorted into two groups.
+
+It describes the three levels itself, in its Idea-to-Output Model (`docs/models/idea-to-output.md`, §2).
+
+Its form for work done for the first time is the Approach on Trial: one text, written in a System Repo or here. That is what the repo has today; whether it meets the Repo Responsibility, and what other Knowledge on Trial needs, is checked in the next step. The Maintainer Repo's form for it today is the Approach on Trial, for ways of working only.
 
 Seen already, two Repo Responsibility Gaps:
 
