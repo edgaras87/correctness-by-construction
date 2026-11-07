@@ -450,6 +450,13 @@
         placed or let go, and the agent's memory notes written or
         changed are shown to the reviewer. Three such rules were found
         at that session's end that lived nowhere else.
+      - the agent's memory is not in git, so its changes leave no
+        history, and the repo's Agent Model says the repo is the only
+        durable memory (`docs/models/agent.md` §2, §6): add both to
+        the problem draft (§3.1, and §2.2 as a gap seen); weigh git
+        inside the memory folder against the session-end listing;
+        check what `/memory` covers; at each check, ask per note
+        whether it stays, moves into the repo, or goes.
       Trigger: with "Decide whether a sweep checks one home after
                work lands", its twin; ADR-0063's kinds of text now
                say where either belongs.
