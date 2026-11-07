@@ -34,6 +34,33 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Write the understanding of the agent's memory, and how it is
+      checked (2026-11-07, the reviewer).
+      Context: the agent keeps notes outside the repo, one folder for
+      each project folder, its index loaded every session, each note
+      read when it seems relevant. They are not in git, and the
+      reviewer rarely reads them; the repo's Agent Model says the repo
+      is the only durable memory (`docs/models/agent.md` §2, §6). A
+      session-end check of them is on trial in `CLAUDE.local.md`.
+      Ideas:
+      - the kinds of note and where each belongs: the reviewer's
+        working rules to `CLAUDE.local.md`, a fact of the repo to its
+        records, a lesson about the agent itself to its memory;
+      - the check compares names and dates with the last check's
+        list: new, deleted, changed, unchanged; the first check sees
+        every note as new; what changed inside a note shows only in
+        the agent's own report, with nothing to compare against;
+      - where the list lives: the devlog on trial, safe if lost, since
+        every note then counts as new; or a home of its own;
+      - a command to run the check at any moment, on memory, the chat
+        or both, with or without the list: a full check without it;
+        not named /context or /memory, which Claude Code already has;
+      - git inside the memory folder, dropped: a second repo and
+        commit rhythm against a risk not yet met.
+      Trigger: the session-end item is decided, or the Agent Model is
+      reworked, whichever comes first.
+      See: `TODO-CONVERSATION-MEMORY.md` §32, *The agent's memory*.
+
 - [ ] Try a multi-agent refinement of the Common Ground Problem
       (2026-11-07, the reviewer).
       Context: one agent edits a document from a snapshot: a fix in one

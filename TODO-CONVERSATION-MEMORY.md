@@ -1276,3 +1276,68 @@ File Instruction Text, Knowledge on Trial. Neutral Terms kept until
 the CBC insight is written. The document named the Common Ground
 Problem. The multi-agent refinement noted in TODO, to try in place
 of the draft's fourth fresh read.
+
+## 32. The agent's memory
+
+Item: "Write the understanding of the agent's memory, and how it is
+checked".
+
+### 2026-11-07
+
+#### What the reviewer asked
+
+"there is also rules, that u like write your self to remmeber, like
+u adapt by what i correct u or something, but we not store those.
+are they in some memory or what? [...] i mean what we loose when we
+start new session." Then: "do u read only that sessions memmory?
+[...] Should i note that at session ending i should check that
+memory for rules that lives only there and decide if i want those to
+become pernament". And: "does that means that there is a rule in
+chat that does not live in memmory or anywhere else?"
+
+On why it exists: "it does not split into sessions? why it exist
+then? why it is there? why not in claude local? do i have to manage
+it?" On seeing its changes: "how we see the difference if its not
+tracked? is it worth to have snapshots after checks?"
+
+On git inside the memory folder: "i dont see how it will work. you
+would be commiting in both repos, one in memory and and one here?"
+On the date of the last check: "why we need last check time at all
+if we cant see what was touched?"
+
+#### What the agent showed
+
+- **Memory is per project folder, not per session:** every session
+  in this folder shares it; the index loads, notes are read when
+  relevant; it is not in git and stays on this machine and path.
+- **What a new session loses is the chat:** three rules that day
+  lived only there, until saved.
+- **The repo's Agent Model is wrong about it:** "The repo — the only
+  durable memory" (`docs/models/agent.md` §2).
+- **A file's time tells which note changed, not what changed in it:**
+  nothing old is kept to compare against.
+
+#### What the reviewer said
+
+The reviewer's own form of the check: "each note is sep doc which has
+last touch date. we store those as some tags like name and date. if
+something we missing that means its new, if something mem is missing
+that means its out, if date is diff that means it changed and if note
+and date are same it doesnt changed." The agent's form, one date
+alone, missed deleted notes.
+
+On where the list lives: "i not sure about devlog, as it could go
+aways later and i could loose this rules if i will forget that."
+
+On running it any time: "maybe include also to consider like skill
+or rule, where i could run it like /context which gives full check of
+that memory and/or chat same way as session end, but maybe with or
+without that registry that check?"
+
+#### What the reviewer took
+
+The session-end check, on trial in `CLAUDE.local.md`: the chat's
+rules placed or let go; memory compared with the last check's list
+of names and dates; both shown as tables; the list written into the
+session's devlog entry. Git inside the memory folder dropped. An
+understanding text to be written, with all of this, as a TODO item.
