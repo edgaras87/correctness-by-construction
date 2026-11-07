@@ -78,6 +78,8 @@ The problem holds wherever a human works with an agent across sessions. The Main
 
 ## 2. The Maintainer Repo
 
+§2 holds two pictures of the Maintainer Repo. §2.1 is the intent: what it is meant to be and keep, in this document's own Defined Terms, its *time* *later*. §2.2 is what it has today and what to check, in the repo's own names, its *time* *now*, unchecked. They are kept apart because the repo may have drifted from the intent, and a problem written only from today would take that drift as given. The next step sets one against the other: each difference is a Repo Responsibility Gap, or a sign the intent should change.
+
 ### 2.1 As intended
 
 This text speaks of projects in general. Here, each project lives in a repo, a git repository. So far there are two sorts of repo:
@@ -129,7 +131,7 @@ Each System Repo:
 4. keeps its own records, started from the record forms in its System Kit;
 5. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back.
 
-### 2.2 As it is today
+### 2.2 Today and what to check
 
 The Maintainer Repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a System Repo, build real systems by the concept. Each starts from what the Maintainer Repo ships, and what it learns is read back here.
 
