@@ -133,13 +133,13 @@ Each System Repo:
 
 ### 2.2 Today and what to check
 
-The Maintainer Repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a System Repo, build real systems by the concept. Each starts from what the Maintainer Repo ships, and what it learns is read back here.
+Today the Maintainer Repo is `correctness-by-construction`. Its concept is correctness by construction, written in plain words. It holds documents only, no code.
 
-The two groups are split today. They may turn out to be one understanding, sorted into two groups.
+Its two groups of understanding, agent work and the concept, are split today. They may turn out to be one understanding, sorted into two groups.
 
-It describes the three levels itself, in its Idea-to-Output Model (`docs/models/idea-to-output.md`, §2).
+It describes the three levels of understanding itself, in its Idea-to-Output Model (`docs/models/idea-to-output.md`, §2).
 
-Its form for work done for the first time is the Approach on Trial: one text, written in a System Repo or here. That is what the repo has today; whether it meets the Repo Responsibility, and what other Knowledge on Trial needs, is checked in the next step. The Maintainer Repo's form for it today is the Approach on Trial, for ways of working only.
+For Knowledge on Trial it has the Approach on Trial: one text for work done for the first time, written in a System Repo or here, and for ways of working only. Whether that meets the Repo Responsibility, and what other Knowledge on Trial needs, is a check for the next step.
 
 Seen already, two Repo Responsibility Gaps:
 
