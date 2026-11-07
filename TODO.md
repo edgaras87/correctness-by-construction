@@ -445,6 +445,11 @@
         dropped. The moment is worth a Plan Step Gate item; lighter forms to weigh:
         only the items in the decision's area, a fresh agent, or only
         at a big piece of work's close.
+      - a check of the chat, on trial in `CLAUDE.local.md` since
+        2026-11-07: each correction or rule said only in the chat is
+        placed or let go, and the agent's memory notes written or
+        changed are shown to the reviewer. Three such rules were found
+        at that session's end that lived nowhere else.
       Trigger: with "Decide whether a sweep checks one home after
                work lands", its twin; ADR-0063's kinds of text now
                say where either belongs.
