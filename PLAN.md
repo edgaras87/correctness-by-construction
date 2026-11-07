@@ -137,7 +137,7 @@ work.
 Goal: a way to keep what the reviewer and the agent know true, from
 one session to the next, is chosen from the problem in the
 reviewer's words and from real cases in this repo.
-Now: stage 1, the problem, drafted in `temp/knowledge-problem.md`
+Now: stage 1, the problem, drafted in `temp/common-ground-problem.md`
 and polished one insight at a time.
 Gate:
 

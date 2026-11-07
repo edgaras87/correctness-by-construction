@@ -36,7 +36,7 @@
 
 - [ ] Land the writing rules found in the problem draft (2026-11-06,
       the reviewer).
-      Context: writing `temp/knowledge-problem.md` found rules the
+      Context: writing `temp/common-ground-problem.md` found rules the
       writing rule lacks, each in force there on trial: a plain word
       keeps one meaning in a text ("time", "place", "seat", "case",
       "kind", "level" each carried two); an exact meaning gets a Name,
