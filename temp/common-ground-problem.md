@@ -34,9 +34,10 @@ Defined Terms, in order of first use:
 - **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
 - **System Kit:** what the Maintainer Repo keeps for System Repos to work from: mostly Instruction Texts, with the concept and the Defined Terms they use. Its originals stay in the Maintainer Repo, with the understanding that explains them; each System Repo works from copies, updated as the System Kit changes.
 - **Understanding Text:** text that holds what is known, and how it is understood.
-- **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. So far it comes in two sorts, Task Instruction Text and Session Instruction Text.
+- **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. So far it comes in three sorts, by when the agent loads it: Task Instruction Text, Session Instruction Text and File Instruction Text.
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
+- **File Instruction Text:** an Instruction Text the agent loads when a certain kind of file is opened.
 - **General Understanding Text:** an Understanding Text bound to no project.
 - **Adapted Understanding Text:** a General Understanding Text narrowed to one project's needs; the middle level between General Understanding Text and Instruction Text.
 - **Shipped Copy:** a copy of a System Kit file, as it lives in a System Repo.
@@ -156,7 +157,8 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | System Kit | the delivery, `delivery/`: the Container Group, the Method Group and a Stack Group, with the concept and each group's Glossary Names |
 | Shipped Copy | a CBC Run's copy of a Master Copy |
 | Task Instruction Text | an Agent Skill |
-| Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules. An Agent Rule loaded by path, when a file is opened, is a sort the intent does not yet name |
+| Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules |
+| File Instruction Text | an Agent Rule loaded by path, when a file it names is opened |
 | Knowledge on Trial | the Approach on Trial, for ways of working only |
 | General Understanding Text | an Idea Model, `docs/models/` |
 | Adapted Understanding Text | a convention manual, `docs/conventions/`; the concept, `concept/` |
