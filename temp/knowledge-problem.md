@@ -78,7 +78,7 @@ The problem holds wherever a human works with an agent across sessions. The Main
 
 ## 2. The Maintainer Repo
 
-§2 holds two pictures of the Maintainer Repo. §2.1 is the intent: what the Maintainer Repo should be and keep, in this document's own Defined Terms. §2.2 is what it has today, not yet checked, and what to check, in the repo's own names. They are kept apart because the repo may have drifted from the intent, and a problem written only from today would take that drift as given. The next step sets one against the other: each difference is a Repo Responsibility Gap, or a sign the intent should change.
+The Maintainer Repo is pictured twice. §2.1 is the intent: what it should be and keep, in this document's own Defined Terms. §2.2 is what it has today, not yet checked, and what to check, in the repo's own names. They are kept apart because the repo may have drifted from the intent, and a problem written only from today would take that drift as given. The next step sets one against the other: each difference is a Repo Responsibility Gap, or a sign the intent should change.
 
 ### 2.1 As intended
 
