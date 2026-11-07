@@ -11,7 +11,7 @@
      home is decided when the Plan Step closes; it goes then, and
      git keeps every version. -->
 
-This document states the Common Ground Problem. It chooses no answer; answers met along the way are kept as options to weigh (§8). It is written about the system as intended, and its options are weighed there. The next step sets the Maintainer Repo as it is today against that intent; an answer is tried on the real repo only where the two fit.
+This document states the Common Ground Problem. It chooses no answer; answers met along the way are kept as options to weigh (§8). It is written about the system as intended (§2.1), and its options are weighed there; what the Maintainer Repo has today, and what was already noticed there, is set apart (§2.2). The next step sets the two against each other, and an answer is tried on the real repo only where they fit.
 
 ## Defined Terms
 
@@ -80,7 +80,7 @@ The problem holds wherever a human works with an agent across sessions. The Main
 
 ## 2. The Maintainer Repo
 
-The Maintainer Repo is pictured twice. §2.1 is the intent: what it should be and keep, in the Common Ground Problem's own Defined Terms. §2.2 is what it has today, not yet checked, and what to check, in the repo's own names. They are kept apart because the repo may have drifted from the intent, and a problem written only from today would take that drift as given. The next step sets one against the other: each difference is a Repo Responsibility Gap, or a sign the intent should change.
+The Maintainer Repo is pictured twice. §2.1 is the intent: what it should be and keep, in the Common Ground Problem's own Defined Terms. §2.2 is what it has today, not yet checked, and what to check, in the repo's own names. They are kept apart because the repo may have drifted from the intent, and a problem written only from today would take that drift as given. Each difference between them is a Repo Responsibility Gap, or a sign the intent should change.
 
 ### 2.1 As intended
 
