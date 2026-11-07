@@ -34,6 +34,30 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Try a multi-agent refinement of the Common Ground Problem
+      (2026-11-07, the reviewer).
+      Context: one agent edits a document from a snapshot: a fix in one
+      place can break another unseen, as "level" did and as renames
+      missed uses until a grep. A core agent, the only one that edits,
+      would take reports from checker agents, ask the reviewer where a
+      choice is theirs, apply, and re-check what each change touched,
+      until a pass finds nothing new. Tried on one document first.
+      Ideas:
+      - split by rule, not by idea: one home, locked words, Defined
+        Terms written whole, references, contradictions need the whole
+        document; plain writing can be split by part;
+      - a mistake is a breach of the document's own rules: its Defined
+        Terms lead, the writing rules found, intent kept from today;
+      - measure it against the three fresh reads: what it found, what
+        it cost, whether it converged; one fresh read was about 40,000
+        tokens, a run could reach half a million;
+      - it may be one answer to the problem itself, a Knowledge Drift
+        Repair by agents, close to layering v2's agent for each chain;
+      - only then decide whether it becomes a rule, an Agent Skill or
+        nothing; at milestones, not on every change.
+      Trigger: the draft's renames done, in place of its fourth fresh
+      read.
+
 - [ ] Land the writing rules found in the problem draft (2026-11-06,
       the reviewer).
       Context: writing `temp/common-ground-problem.md` found rules the
