@@ -30,13 +30,13 @@ Names, in order of first use:
 
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
 - **Maintainer Repo:** the repo that keeps the understanding, ships what each CBC Run receives, and reads back what the runs learn. Here, `correctness-by-construction`; its glossary calls it the Concept Deliverer.
-- **CBC Run:** a repo that builds a real system by the concept, starting from what this repo ships. This repo's glossary Name.
+- **CBC Run:** a repo that builds a real system by the concept, starting from what the Maintainer Repo ships. The Maintainer Repo's glossary Name.
 - **Understanding Text:** text that holds what is known, and how it is understood.
 - **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. Agent Skills and rules are Instruction Texts.
 - **General Understanding Text:** an Understanding Text bound to no project.
 - **Adapted Understanding Text:** a General Understanding Text narrowed to one project's needs; the middle level between General Understanding Text and Instruction Text.
-- **Shipped Copy:** an Instruction Text this repo ships, as it lives in a CBC Run.
-- **Repo Responsibility:** what each repo is meant to keep: this repo, and each CBC Run (§2). Its *time* is *later*: as meant, not as done today.
+- **Shipped Copy:** an Instruction Text the Maintainer Repo ships, as it lives in a CBC Run.
+- **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each CBC Run (§2). Its *time* is *later*: as meant, not as done today.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
 - **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
@@ -46,14 +46,14 @@ Names, in order of first use:
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
-- **One Home per Fact:** this repo's practice: each fact in one text, its home, with every other text pointing there.
+- **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
 
 Labels:
 
 - *who uses it*: *the human*, *the agent*, *both*
 - *time*: *before*, *now*, *later*
 - *kind*: Understanding Text, Instruction Text
-- *where*: *this repo*, *a CBC Run*; a Failure Case is *either* or *between*
+- *where*: *the Maintainer Repo*, *a CBC Run*; a Failure Case is *either* or *between*
 - Text Life Phase: *writing*, *aging*, *reading*
 
 ## 1. The purpose
@@ -71,9 +71,9 @@ Two sides work with the knowledge:
 
 The purpose is common ground between the human and the agent on what the human knows, and how deeply, from one session to the next. Both learn, and write down what they learn. A new session reads it, and the human doesn't have to retell it. Both continue improving from there.
 
-The problem holds wherever a human works with an agent across sessions. This repo is where it is seen first, and where it is tested.
+The problem holds wherever a human works with an agent across sessions. The Maintainer Repo is where it is seen first, and where it is tested.
 
-## 2. This repo as intended
+## 2. Maintainer Repo as intended
 
 This text speaks of projects in general. Here, each project lives in a repo, a git repository. So far there are two sorts of repo:
 
@@ -82,22 +82,22 @@ This text speaks of projects in general. Here, each project lives in a repo, a g
 
 The Maintainer Repo holds more than its own work. It also holds the understanding of agent work. No single project owns it, and every CBC Run receives it.
 
-This repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a CBC Run, or run for short, build real systems by the concept. Each starts from what this repo ships, and what it learns is read back here.
+The Maintainer Repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a CBC Run, or run for short, build real systems by the concept. Each starts from what the Maintainer Repo ships, and what it learns is read back here.
 
 Among its instructions are Agent Skills and rules. An Agent Skill is an instruction the agent loads for a task; a rule is one it loads in every session.
 
-Its understanding falls in two groups. Each gives instructions in two places, this repo and each CBC Run:
+Its understanding falls in two groups. Each gives instructions in two places, the Maintainer Repo and each CBC Run:
 
-| Understanding | Instructions for this repo | Instructions shipped to each CBC Run |
+| Understanding | Instructions for the Maintainer Repo | Instructions shipped to each CBC Run |
 |---|---|---|
-| How work is done with an agent: a change, a commit, a plan | this repo's own Agent Skills and rules | the Container Group: the setup for the agent in a run, its Agent Skills, rules and records |
+| How work is done with an agent: a change, a commit, a plan | the Maintainer Repo's own Agent Skills and rules | the Container Group: the setup for the agent in a run, its Agent Skills, rules and records |
 | How a CBC system is designed: the concept and its methods | none | the methods, such as the cbc-framing and cbc-slice Agent Skills |
 
 The two groups are split today. They may turn out to be one understanding, sorted into two groups.
 
-Between understanding and instruction, this repo means to keep a middle level, for both groups. It describes the three levels itself, in its Idea-to-Output Model (`docs/models/idea-to-output.md`, §2):
+Between understanding and instruction, the Maintainer Repo means to keep a middle level, for both groups. It describes the three levels itself, in its Idea-to-Output Model (`docs/models/idea-to-output.md`, §2):
 
-| Level | What it holds | In this repo |
+| Level | What it holds | In the Maintainer Repo |
 |---|---|---|
 | understanding, general | an idea any repo can adapt (§3.3) | the Idea Models, `docs/models/` |
 | the middle | understanding adapted to one repo's needs (§3.3) | the convention manuals, `docs/conventions/`; the concept, `concept/` |
@@ -105,22 +105,22 @@ Between understanding and instruction, this repo means to keep a middle level, f
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
 
-So knowledge written here becomes instructions that agents act on in other repos. The agent in a CBC Run starts with none of this repo's context, only what was shipped, and the copies there can drift, or change on their own.
+So knowledge written here becomes instructions that agents act on in other repos. The agent in a CBC Run starts with none of the Maintainer Repo's context, only what was shipped, and the copies there can drift, or change on their own.
 
 The Repo Responsibility follows. It may change itself, and whether the repo does all of it is not yet checked.
 
-This repo keeps:
+The Maintainer Repo keeps:
 
 1. understanding of agent work;
 2. understanding of the concept, CBC system design;
 3. delivery: instructions made from both, general enough to reuse in any project built by the concept;
 4. its own instructions, from the understanding of agent work, updated as that understanding changes;
-5. findings from runs. A run uses the instructions in practice, and changes them as its problems demand, without the understanding to judge whether a change is right. This repo reads the changes and concludes one of two things:
+5. findings from runs. A run uses the instructions in practice, and changes them as its problems demand, without the understanding to judge whether a change is right. The Maintainer Repo reads the changes and concludes one of two things:
    - a lesson: the understanding is updated, then the delivered instructions, so future runs don't repeat a mistake or miss the same thing;
    - specific to that run's problem: the change is rejected, and the understanding and the delivery stay as they are;
 6. updates for runs already running: when delivery changes, a run born earlier gets the change, or keeps working from its old copy;
 7. its own records: the history and the backlog of this work.
-8. its Knowledge on Trial, from runs and its own, judged here. Its form for work done for the first time is the Approach on Trial: one text, written in a run or here. That is what the repo has today; whether it meets the Repo Responsibility, and what other Knowledge on Trial needs, is checked in the next step. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the runs' copies. This repo also judges its own Knowledge on Trial, with no outside judge. A run's, once judged here, reaches back to that run by an update, or the run keeps working from its own version.
+8. its Knowledge on Trial, from runs and its own, judged here. Its form for work done for the first time is the Approach on Trial: one text, written in a run or here. That is what the repo has today; whether it meets the Repo Responsibility, and what other Knowledge on Trial needs, is checked in the next step. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the runs' copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A run's, once judged here, reaches back to that run by an update, or the run keeps working from its own version.
 
 Each CBC Run:
 
@@ -128,11 +128,11 @@ Each CBC Run:
 2. gets the concept's understanding, to explain its problems. Whether a run may change that understanding, since it uses it directly, is open;
 3. keeps understanding of its own problem: one specific system's design;
 4. keeps its own records, from the setup it was shipped;
-5. has its own Knowledge on Trial: it uses each until this repo judges it, and offers it back. This repo's form for it today is the Approach on Trial, for ways of working only.
+5. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back. The Maintainer Repo's form for it today is the Approach on Trial, for ways of working only.
 
 Seen already, two Repo Responsibility Gaps:
 
-- one convention manual, the middle level for one way of working, is written for both repos at once, this repo and every CBC Run, though the two need different things from it: one middle serving two repos (case 15);
+- one convention manual, the middle level for one way of working, is written for both repos at once, the Maintainer Repo and every CBC Run, though the two need different things from it: one middle serving two repos (case 15);
 - two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (case 8).
 
 ## 3. The Knowledge Axes
@@ -141,15 +141,15 @@ Where text is kept so far, on each of the four Knowledge Axes, which §3.1 to §
 
 | Where it's kept | Kind | Time | Who uses it | Where |
 |---|---|---|---|---|
-| Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | this repo |
-| Agent Skills and rules | instruction | now | the agent acts on it; the human checks what they told it | this repo, and a copy in each run of those it ships |
-| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | this repo; each run keeps its own |
-| TODO, the backlog | understanding | later | both | this repo; each run keeps its own |
-| The human's private working rules | instruction | now | the agent acts on it; the human wrote it | this repo |
-| The agent's memory | both | now | the agent; the human rarely | this repo's work, outside its files |
-| Knowledge on Trial; today, in this repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | this repo, or a run |
+| Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo |
+| Agent Skills and rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo, and a copy in each run of those it ships |
+| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each run keeps its own |
+| TODO, the backlog | understanding | later | both | the Maintainer Repo; each run keeps its own |
+| The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo |
+| The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files |
+| Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a run |
 | A shipped copy | instruction | now | the agent in the run | each run |
-| The Repo Responsibility, §2's lists | understanding | later | both | this repo |
+| The Repo Responsibility, §2's lists | understanding | later | both | the Maintainer Repo |
 
 ### 3.1 Who uses the text
 
@@ -185,7 +185,7 @@ Knowledge has a time too:
 
 A Knowledge Time Shift is where knowledge gets lost. If a Knowledge Time Shift isn't written down, the old text keeps claiming now.
 
-New knowledge enters in several ways, so far: the human learns, a talk ends in a decision, the agent finds something in the work, a run shows something this repo reads back, or knowledge is used as Knowledge on Trial (§3.3).
+New knowledge enters in several ways, so far: the human learns, a talk ends in a decision, the agent finds something in the work, a run shows something the Maintainer Repo reads back, or knowledge is used as Knowledge on Trial (§3.3).
 
 Before keeps why it changed, not only what was thought. Without that why, a reader afterwards sees what changed but not the reason: the why goes missing (§4), this time between before and now.
 
@@ -210,7 +210,7 @@ Text comes in two kinds, so far:
 Understanding can have levels, so far:
 
 - general: an idea bound to no project;
-- adapted: the same idea narrowed to one project's needs, such as this repo's upkeep or a run's work.
+- adapted: the same idea narrowed to one project's needs, such as the Maintainer Repo's upkeep or a run's work.
 
 An instruction comes from the adapted level where there is one, and the adapted level from the general.
 
@@ -230,9 +230,9 @@ An instruction can be copied to other repos, for the agents working there. Each 
 
 ### 3.4 Where the text is
 
-A text is kept in this repo, or in a run. Some is in both: what this repo ships becomes a copy in each run, and a run's changes come back only when this repo reads them.
+A text is kept in the Maintainer Repo, or in a run. Some is in both: what the Maintainer Repo ships becomes a copy in each run, and a run's changes come back only when the Maintainer Repo reads them.
 
-Some failures can happen in either repo. Others happen only between the two: a run's copy drifts from what was shipped; this repo judges a run's change wrongly, as a lesson when it was specific to the run, or the other way round; an update never reaches a run already running.
+Some failures can happen in either repo. Others happen only between the two: a run's copy drifts from what was shipped; the Maintainer Repo judges a run's change wrongly, as a lesson when it was specific to the run, or the other way round; an update never reaches a run already running.
 
 The two repos are not the two sides of §1. The human and the agent work in both.
 
@@ -253,7 +253,7 @@ A failure shows in one of three Text Life Phases: two moments, *writing* and *re
 - *Aging:* the knowledge moves on, and the text grows older than it.
 - *Reading:* the agent reads the text and builds a different understanding from it than the human holds.
 
-The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the Text Life Phase it breaks in, the Knowledge Axis it lives on (§3), and where: in either repo, or between this repo and a run (§3.4):
+The drift breaks the interface between the human's mind and the agent in these cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the Text Life Phase it breaks in, the Knowledge Axis it lives on (§3), and where: in either repo, or between the Maintainer Repo and a run (§3.4):
 
 | Case | Text Life Phase | Knowledge Axis | Where |
 |---|---|---|---|
@@ -276,9 +276,9 @@ The drift breaks the interface between the human's mind and the agent in these c
 | 17. A later text is read as now: what is meant to be is taken for what is. | reading | time | either |
 | 18. Unchecked knowledge is read as checked, such as Knowledge on Trial taken as proven. | reading | time | either |
 | 19. A run's copy of a shipped instruction drifts from what was shipped. | aging | where | between |
-| 20. This repo judges a run's change wrongly: a lesson taken as specific to the run, or something specific taken as a lesson. | reading | where | between |
+| 20. The Maintainer Repo judges a run's change wrongly: a lesson taken as specific to the run, or something specific taken as a lesson. | reading | where | between |
 | 21. An update never reaches a run already running, which works on from its old copy. | aging | where | between |
-| 22. A run's change reaches this repo without its why: the run wrote down what it changed, not why. | writing | where | between |
+| 22. A run's change reaches the Maintainer Repo without its why: the run wrote down what it changed, not why. | writing | where | between |
 | 23. An adapted understanding lags behind its general idea, which has moved on. | aging | kind | either |
 | 24. A general idea is bent to one project's needs, and no longer fits the others. | writing | kind | between |
 
@@ -290,20 +290,20 @@ The same cases by Text Life Phase and Knowledge Axis. Every cell has a case; an 
 | **aging** | 3 | 2, 8 | 10, 23 | 19, 21 |
 | **reading** | 6, 7 | 13, 17, 18 | 14 | 20 |
 
-Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild this repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they had lost common ground.
+Seen on 2026-11-05: case 1, the purpose of an earlier attempt to rebuild the Maintainer Repo's way of working, written nowhere for 3 days; cases 4 and 5, the agent's dense answers, until the human said they had lost common ground.
 
 ## 5. What was tried
 
-This repo keeps One Home per Fact, with a reference wherever another text needs the fact. It was built without full consideration, and it is felt to have cost too much to keep here; §6 tests where that cost comes from:
+The Maintainer Repo keeps One Home per Fact, with a reference wherever another text needs the fact. It was built without full consideration, and it is felt to have cost too much to keep here; §6 tests where that cost comes from:
 
-- **Finding is cheap, judging is not.** A search lists every place that points at a fact. Whether each place still holds needs reading. This repo has 398 section references pointing at 129 sections. The most pointed-at section has 22.
+- **Finding is cheap, judging is not.** A search lists every place that points at a fact. Whether each place still holds needs reading. The Maintainer Repo has 398 section references pointing at 129 sections. The most pointed-at section has 22.
 - **The fix becomes a loop.** A change in one referring place can force the home to change. Then every other reference has to be checked again. If they disagree, it's back to the home, and so on. A decision has to be weighed across many places, not taken in one pass.
 - **It multiplies.** When references start disagreeing with each other, each disagreement starts its own loop.
 - **A Knowledge Drift Repair starts with a sweep.** Every finding it makes can start a loop.
 
 ## 6. Where it may be wrong
 
-The next step of this work tests these against this repo's history: the devlog's notes of what each session lacked, and the findings of past reviews of this repo:
+The next step of this work tests these against the Maintainer Repo's history: the devlog's notes of what each session lacked, and the findings of past reviews of the Maintainer Repo:
 
 - how often stale text actually hurt a session, and how;
 - where staleness comes from: a retelling that drifted, a home that was wrong, or something never written down;
@@ -311,7 +311,7 @@ The next step of this work tests these against this repo's history: the devlog's
 - whether the cost lies in One Home per Fact itself, or in how it's kept, such as the sweep;
 - whether only now decides that a change is needed, with before as input and not authority;
 - when checking before costs more than it gives, and whether it can harm: by what reading it costs, by anchoring new thinking to old framing, or by being read as now;
-- which parts of before pay, and which aren't worth keeping. This repo's devlog alone is 8,773 lines, after 4 months;
+- which parts of before pay, and which aren't worth keeping. The Maintainer Repo's devlog alone is 8,773 lines, after 4 months;
 - whether the middle level is needed for every idea, or only for an idea that serves projects with different needs;
 - whether part of the cost of One Home per Fact comes from levels missing or merged: an instruction written straight from a general idea is reread whenever the idea changes.
 
