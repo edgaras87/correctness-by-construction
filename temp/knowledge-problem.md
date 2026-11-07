@@ -81,7 +81,7 @@ This text speaks of projects in general. Here, each project lives in a repo, a g
 - the Maintainer Repo, which holds the concept;
 - each System Repo, which builds a real system by the concept.
 
-The Maintainer Repo holds more than its own work. It also holds the understanding of agent work. No single project owns it, and every System Repo receives it.
+The Maintainer Repo holds more than its own work. It also holds the understanding of agent work. No single project owns it, and every System Repo receives instructions made from it, in the System Kit.
 
 The Maintainer Repo, `correctness-by-construction`, holds one concept, correctness by construction, written in plain words, and what is made from it. It holds documents only, no code. Other repos, each a System Repo, build real systems by the concept. Each starts from what the Maintainer Repo ships, and what it learns is read back here.
 
@@ -91,7 +91,7 @@ Its understanding falls in two groups. Each gives instructions in two places, th
 
 | Understanding | Instructions for the Maintainer Repo | Instructions shipped to each System Repo |
 |---|---|---|
-| How work is done with an agent: a change, a commit, a plan | the Maintainer Repo's own Agent Skills and rules | the Container Group: the setup for the agent in a System Repo, its Agent Skills, rules and records |
+| How work is done with an agent: a change, a commit, a plan | the Maintainer Repo's own Agent Skills and rules | its part of the System Kit: the setup for the agent, its Agent Skills, rules and record forms |
 | How a CBC system is designed: the concept and its methods | none | the methods, such as the cbc-framing and cbc-slice Agent Skills |
 
 The two groups are split today. They may turn out to be one understanding, sorted into two groups.
@@ -114,12 +114,12 @@ The Maintainer Repo keeps:
 
 1. understanding of agent work;
 2. understanding of the concept, CBC system design;
-3. delivery: instructions made from both, general enough to reuse in any project built by the concept;
+3. the System Kit: Instruction Texts made from both, with the concept and the Names, general enough to reuse in any project built by the concept;
 4. its own instructions, from the understanding of agent work, updated as that understanding changes;
 5. findings from System Repos. A System Repo uses the instructions in practice, and changes them as its problems demand, without the understanding to judge whether a change is right. The Maintainer Repo reads the changes and concludes one of two things:
-   - a lesson: the understanding is updated, then the delivered instructions, so future System Repos don't repeat a mistake or miss the same thing;
-   - specific to that System Repo's problem: the change is rejected, and the understanding and the delivery stay as they are;
-6. updates for System Repos already at work: when delivery changes, a System Repo born earlier gets the change, or keeps working from its old copy;
+   - a lesson: the understanding is updated, then the System Kit, so future System Repos don't repeat a mistake or miss the same thing;
+   - specific to that System Repo's problem: the change is rejected, and the understanding and the System Kit stay as they are;
+6. updates for System Repos already at work: when the System Kit changes, a System Repo born earlier gets the change, or keeps working from its old copy;
 7. its own records: the history and the backlog of this work.
 8. its Knowledge on Trial, from System Repos and its own, judged here. Its form for work done for the first time is the Approach on Trial: one text, written in a System Repo or here. That is what the repo has today; whether it meets the Repo Responsibility, and what other Knowledge on Trial needs, is checked in the next step. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches back to that System Repo by an update, or the System Repo keeps working from its own version.
 
@@ -128,7 +128,7 @@ Each System Repo:
 1. keeps no understanding of agent work. It uses the instructions, and may change them;
 2. gets the concept's understanding, to explain its problems. Whether a System Repo may change that understanding, since it uses it directly, is open;
 3. keeps understanding of its own problem: one specific system's design;
-4. keeps its own records, from the setup it was shipped;
+4. keeps its own records, started from the record forms in its System Kit;
 5. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back. The Maintainer Repo's form for it today is the Approach on Trial, for ways of working only.
 
 Seen already, two Repo Responsibility Gaps:
@@ -149,7 +149,7 @@ Where text is kept so far, on each of the four Knowledge Axes, which §3.1 to §
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo |
 | The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files |
 | Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a System Repo |
-| A shipped copy | instruction | now | the agent in the System Repo | each System Repo |
+| Shipped Copy | mostly instruction; the concept and the Names are understanding | now | the agent in the System Repo | each System Repo |
 | The Repo Responsibility, §2's lists | understanding | later | both | the Maintainer Repo |
 
 ### 3.1 Who uses the text
