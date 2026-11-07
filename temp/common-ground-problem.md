@@ -368,6 +368,6 @@ Answers met while stating the problem, kept to be weighed, not chosen:
   | | With a middle level | Without one |
   |---|---|---|
   | The general idea | written once, fits any project | bent to fit each project, or repeated in each |
-  | One idea, two projects with different needs | each gets its own adapted text | one text serves both, Failure Case 15 |
+  | One idea, two projects with different needs | each gets its own adapted text | one text serves both (Failure Case 15) |
   | A change to the general idea | reread the adapted texts, a few | reread every instruction |
-  | Its cost | one more level to keep, and drift between levels, Failure Cases 23 and 24 | the general idea retold everywhere |
+  | Its cost | one more level to keep, and drift between levels (Failure Cases 23 and 24) | the general idea retold everywhere |
