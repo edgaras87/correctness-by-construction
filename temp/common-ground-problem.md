@@ -11,7 +11,7 @@
      home is decided when the Plan Step closes; it goes then, and
      git keeps every version. -->
 
-This document states the Common Ground Problem. It chooses no answer; answers met along the way are kept as options to weigh (§8).
+This document states the Common Ground Problem. It chooses no answer; answers met along the way are kept as options to weigh (§8). It is written about the system as intended, and its options are weighed there. The next step sets the Maintainer Repo as it is today against that intent; an answer is tried on the real repo only where the two fit.
 
 ## Defined Terms
 
