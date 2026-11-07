@@ -271,9 +271,9 @@ The two repos are not the two sides of §1. The human and the agent work in both
 
 ## 4. What goes wrong
 
-Most of what goes wrong is one drift: the text and the knowledge drift apart. Not every failure here is Knowledge Drift. In Failure Case 11 the text matches the knowledge, but the knowledge is wrong: Mistaken Knowledge. Drift is fixed by bringing the text up to the knowledge; Mistaken Knowledge is fixed in the knowledge first.
+Most of what goes wrong is Knowledge Drift, but not every failure here is. In Failure Case 11 the text matches the knowledge, but the knowledge is wrong: Mistaken Knowledge. Knowledge Drift is fixed by bringing the text up to the knowledge; Mistaken Knowledge is fixed in the knowledge first.
 
-A third failure sits outside the text: a Repo Responsibility Gap (§2). It is fixed in the repo, or in the Repo Responsibility, and it can cause drift. The next step of this work checks it first (§6).
+A third failure sits outside the text: a Repo Responsibility Gap (§2). It is fixed in the repo, or in the Repo Responsibility, and it can cause Knowledge Drift. The next step of this work checks it first (§6).
 
 - **When the text holds less than the knowledge, the why goes missing.** An Instruction Text is written, but the idea behind it isn't. When it has to change, nobody can tell which parts can go.
 - **When the text is older than the knowledge, it goes stale.** The work keeps moving forward. Earlier text becomes wrong, contradicts other text, misses something, or simply differs. The agent then reads it as true and acts on it. This is felt as the bigger problem; §6 tests it. A text goes stale when its time is wrong: it still reads as now after the knowledge has moved on.
@@ -286,7 +286,7 @@ A failure shows in one of three Text Life Phases: two moments, *writing* and *re
 - *Aging:* the knowledge moves on, and the text grows older than it.
 - *Reading:* the agent reads the text and builds a different understanding from it than the human holds.
 
-The drift breaks the interface between the human's mind and the agent in these Failure Cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the Text Life Phase it breaks in, the Knowledge Axis it lives on (§3), and where: in either repo, or between the Maintainer Repo and a System Repo (§3.4):
+The interface between the human's mind and the agent breaks in these Failure Cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the Text Life Phase it breaks in, the Knowledge Axis it lives on (§3), and where: in either repo, or between the Maintainer Repo and a System Repo (§3.4):
 
 | Failure Case | Text Life Phase | Knowledge Axis | Where |
 |---|---|---|---|
