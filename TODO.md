@@ -37,13 +37,13 @@
 - [ ] Land the writing rules found in the problem draft (2026-11-06,
       the reviewer).
       Context: writing `temp/knowledge-problem.md` found rules the
-      writing rule lacks. Each is in force in the draft, on trial:
-      a plain word keeps one meaning in a text, after "time", "place",
-      "seat", "case", "kind" and "level" each carried two; an exact
-      meaning gets a Name of two or more words, capitalized, and Names
-      one text uses alone are defined at its start; a definition names
-      what it builds on by its Name, never by its place in the text.
-      Writing rule 9 covers defined Names only.
+      writing rule lacks, each in force there on trial: a plain word
+      keeps one meaning in a text ("time", "place", "seat", "case",
+      "kind", "level" each carried two); an exact meaning gets a Name,
+      capitalized, defined at the start of a text that alone uses it;
+      a definition names what it builds on by its Name, not its place;
+      a Name is never shortened by sharing words with another, as in
+      "Task and Session". Writing rule 9 covers defined Names only.
       Ideas:
       - a check at the commit: does any word in this text mean two
         things?
