@@ -98,11 +98,11 @@ The two groups are split today. They may turn out to be one understanding, sorte
 
 Between understanding and instruction, the Maintainer Repo means to keep a middle level, for both groups. It describes the three levels itself, in its Idea-to-Output Model (`docs/models/idea-to-output.md`, §2):
 
-| Level | What it holds | In the Maintainer Repo |
-|---|---|---|
-| understanding, general | an idea any repo can adapt (§3.3) | the Idea Models, `docs/models/` |
-| the middle | understanding adapted to one repo's needs (§3.3) | the convention manuals, `docs/conventions/`; the concept, `concept/` |
-| instruction | how a piece of work is done, for the agent | Agent Skills, rules, the Approach on Trial |
+| Level | What it holds |
+|---|---|
+| understanding, general | an idea any repo can adapt (§3.3) |
+| the middle | understanding adapted to one repo's needs (§3.3) |
+| instruction | how a piece of work is done, for the agent |
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
 
