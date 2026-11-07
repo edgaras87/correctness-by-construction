@@ -7,3 +7,8 @@
   any commit. No commit runs without my word.
 - A TODO line we decide while talking: stage it at once and show
   me. In a Change Set it is an inserted commit.
+- At the end of a session, before the devlog entry: list each
+  correction or rule said only in our chat, and ask me where each
+  goes: your memory, this file, a TODO item, or nowhere. Then show
+  me the memory notes you wrote or changed this session. On trial;
+  it moves to the session-end item in TODO when that item is decided.
