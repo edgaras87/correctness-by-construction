@@ -1374,6 +1374,27 @@ or invariant. if it is invariant we would need do this analisys. we
 could build adapted understanding and instructions how that is
 done."
 
+#### What the reviewer asked, edited
+
+The same words, with grammar and spelling fixed, the meaning kept:
+
+- "Maybe it would be better if we had a middle level, and the
+  current concept was mostly the System Kit's middle? What if CBC
+  design could be not only for backends (which it is now?) but for
+  anything?"
+- "I already feel we are doing this in this repo at this exact
+  moment, or we could be doing it for the Common Ground Problem. We
+  have this pain description, attacks and where it could fail; then
+  we may have invariants, guarantees and tests for what we are
+  trying to do here right now."
+- "If we could adapt CBC design for the Common Ground Problem in
+  this Maintainer Repo, we could also maintain it in a similar way
+  as in the backend: if we want to introduce something new, we would
+  need to check that it holds to our design. We could also decide
+  whether it is just a feature or an invariant. If it is an
+  invariant, we would need to do this analysis. We could build
+  adapted understanding, and instructions for how that is done."
+
 #### What the agent showed
 
 - **The concept names no backend:** "A system is what it promises
@@ -1409,6 +1430,19 @@ common-ground-problem and see what we can do". The split of the
 concept into general understanding, the System Kit's adapted case
 and instructions is to be done "without loosing any info and
 correctness of cbc concept and methods".
+
+#### What the reviewer said, edited
+
+The same words, with grammar and spelling fixed, the meaning kept:
+
+- "We continue as we did until now, without CBC design adapted to
+  our Common Ground Problem. We just make a change now: CBC has a
+  general understanding, and we have one adapted case, for backends,
+  in the System Kit."
+- "After we finish working with the Common Ground Problem", applied
+  "to the completed Common Ground Problem, to see what we can do".
+- "Without losing any information, or the correctness of the CBC
+  concept and methods".
 
 #### What the reviewer took
 
