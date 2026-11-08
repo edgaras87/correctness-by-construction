@@ -11,6 +11,14 @@
      its date; a part is never rewritten. The item's See, or the
      record holding the question, names the section.
 
+     The reviewer's words are quoted as said, and stay so. Each
+     heading that quotes them is followed by two more. First, the
+     same words edited: grammar and spelling fixed, the meaning
+     kept, under the heading's name with ", edited". Then, where
+     the words hold an ask, "What the reviewer asked, as the agent
+     would ask it": each ask put in the agent's words, to show its
+     reading. Since 2026-11-08, judged with the record's trial.
+
      The agent asks the reviewer before saving a talk: a new
      section, a part added to one, or nothing, with its
      recommendation. A section is read when its item is worked,
