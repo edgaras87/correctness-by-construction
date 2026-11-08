@@ -1395,6 +1395,23 @@ The same words, with grammar and spelling fixed, the meaning kept:
   invariant, we would need to do this analysis. We could build
   adapted understanding, and instructions for how that is done."
 
+#### What the reviewer asked, as the agent would ask it
+
+The questions the reviewer was asking, put by the agent:
+
+1. Is the concept general, fitting any system, with today's
+   delivery as its adapted case for backends? If so, does CBC design
+   need a middle level after all?
+2. Is the Common Ground Problem itself a problem CBC design could
+   solve? Its purpose reads like a Falsifiable Promise, and its
+   Failure Cases like sources of adversity. Which of CBC's parts
+   does it still lack?
+3. If the Maintainer Repo adapted CBC design to the Common Ground
+   Problem, could the repo be kept the way a backend is? Each new
+   change would first be sorted: a feature, or a change that touches
+   a System Guarantee. Only the second would get the full analysis.
+   Would that need its own adapted understanding and instructions?
+
 #### What the agent showed
 
 - **The concept names no backend:** "A system is what it promises
@@ -1443,6 +1460,15 @@ The same words, with grammar and spelling fixed, the meaning kept:
   "to the completed Common Ground Problem, to see what we can do".
 - "Without losing any information, or the correctness of the CBC
   concept and methods".
+
+#### What the reviewer asked, as the agent would ask it
+
+The question the reviewer was asking, put by the agent:
+
+1. Should the trial of CBC design on the Common Ground Problem wait
+   until the problem is finished? Only the claim that CBC design is
+   general, with one backend case, would be written now, and the
+   concept's split would be decided in stage 2.
 
 #### What the reviewer took
 
