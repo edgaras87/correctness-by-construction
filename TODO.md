@@ -34,6 +34,49 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Split the concept into general understanding, the System
+      Kit's backend case and their instructions, losing nothing
+      (2026-11-08, the reviewer).
+      Context: CBC design fits any system, not only software. The
+      System Kit holds one adapted case of it so far, for backends.
+      Today `concept/` holds both in one text, its examples and words
+      leaning toward software, and the Method Group's Agent Skills
+      stand on it. The open Plan Step's stage 2 labels which parts are
+      which. The split waits for the way that Plan Step chooses, so
+      that way shapes it. No fact or step of the concept or the
+      methods may be lost.
+      Ideas:
+      - stage 2's labels as the split's input;
+      - the concept's software examples may go with the backend case,
+        which meets the item on whether the concept keeps examples;
+      - concept v2's release may carry it, since every CBC Run pins a
+        concept version.
+      Trigger: the close of the Plan Step "Find how what we know stays
+      true".
+      See: devlog 2026-11-08, CBC design beyond backends;
+      `TODO-CONVERSATION-MEMORY.md` §33, *CBC design beyond backends*.
+
+- [ ] Try CBC design on the finished Common Ground Problem, beside
+      the way chosen (2026-11-08, the reviewer).
+      Context: the Common Ground Problem draft already reads in part
+      as a CBC design: its purpose as a Falsifiable Promise, its
+      Failure Cases as sources of adversity, its checks of being
+      solved as how it could be falsified. It lacks System Guarantees
+      and Structural Walls. Today's answer to stale text is detection:
+      sweeps, and checks at each commit. The trial waits for the
+      concept's split, and for a way chosen without CBC to compare.
+      Ideas:
+      - each change sorted first: a feature, or a change that touches
+        a System Guarantee; only the second gets the full analysis;
+      - if it holds, the Maintainer Repo's own adapted case of CBC
+        design, with its instructions;
+      - the risks seen: a Structural Wall is hard to build in text;
+        part of the system is a person; the repo is judged by the
+        concept it keeps.
+      Trigger: the concept's split is done.
+      See: devlog 2026-11-08, CBC design beyond backends;
+      `TODO-CONVERSATION-MEMORY.md` §33, *CBC design beyond backends*.
+
 - [ ] Land two facts from the agent's memory in the exchange
       convention (2026-11-08, the reviewer).
       Context: two facts lived only in the agent's memory until the
