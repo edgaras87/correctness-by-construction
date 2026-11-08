@@ -108,6 +108,8 @@ Between understanding and instruction, the Maintainer Repo means to keep a middl
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
 
+The understanding of CBC system design is general: it fits any system, not only software. The System Kit holds one adapted case of it so far, for backends.
+
 So knowledge written in the Maintainer Repo becomes instructions that agents act on: in the Maintainer Repo itself, for its own work, and in every System Repo. The agent in a System Repo starts with none of the Maintainer Repo's context, only its System Kit Copies, and they can drift, or change on their own.
 
 The Repo Responsibility follows. It may change itself, and whether the repo does all of it is not yet checked.
@@ -143,10 +145,11 @@ It describes the three levels of understanding itself, in its Idea-to-Output Mod
 
 For Knowledge on Trial it has the Approach on Trial: one text for work done for the first time, written in a System Repo or here, and for ways of working only. Whether that meets the Repo Responsibility, and what other Knowledge on Trial needs, is a check for the next step.
 
-Seen already, two Repo Responsibility Gaps:
+Seen already, three Repo Responsibility Gaps:
 
 - one convention manual, the middle level for one way of working, is written for both repos at once, the Maintainer Repo and every System Repo, though the two need different things from it: one middle serving two repos (Failure Case 15);
-- two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (Failure Case 8).
+- two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (Failure Case 8);
+- the concept, `concept/`, holds the general understanding of CBC system design and its backend case in one text, not split. Its examples and words lean toward software. Which parts are general and which are the backend case is sorted in the next step.
 
 What the Maintainer Repo has today, for each Defined Term of the intent:
 
@@ -160,8 +163,8 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules |
 | File Instruction Text | an Agent Rule loaded by path, when a file it names is opened |
 | Knowledge on Trial | the Approach on Trial, for ways of working only |
-| General Understanding Text | an Idea Model, `docs/models/` |
-| Adapted Understanding Text | a convention manual, `docs/conventions/`; the concept, `concept/` |
+| General Understanding Text | an Idea Model, `docs/models/`; the concept, `concept/`, with its backend case inside it |
+| Adapted Understanding Text | a convention manual, `docs/conventions/`; the concept's backend case, not split from the concept |
 | Defined Term | a Glossary Name, in `docs/glossary.md` |
 | One Home per Fact | the facts-in-sync convention, and the one-home Agent Rule |
 | Knowledge Drift Repair | the Foundation Check and its Change Walk at each commit; the refinement's reads of the whole repo |
