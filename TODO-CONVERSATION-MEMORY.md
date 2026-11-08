@@ -18,7 +18,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-05.
+     Last touched: 2026-11-08.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
@@ -1341,3 +1341,83 @@ rules placed or let go; memory compared with the last check's list
 of names and dates; both shown as tables; the list written into the
 session's devlog entry. Git inside the memory folder dropped. An
 understanding text to be written, with all of this, as a TODO item.
+
+## 33. CBC design beyond backends
+
+Items: "Split the concept into general understanding, the System
+Kit's backend case and their instructions, losing nothing"; and "Try
+CBC design on the finished Common Ground Problem, beside the way
+chosen".
+
+### 2026-11-08
+
+#### What the reviewer asked
+
+The agent had said CBC design needs no middle level, since only
+System Repos use it, and that the concept is general. The reviewer
+asked: "maybe it would be better if we have middle and current one
+was mostly middle of system kit? what if cbc design could be not
+only for backend (which is now?) but for anything?"
+
+Then of this work: "i already feel we are doing this now on this
+repo at this exact moment or we could be doing
+"common-ground-problem"? we have this pain description, attacks and
+where it could fail, then we may have invariants, guarantees and
+test for what we try to do here right now." The draft's purpose was
+written as the backend System Kit's is.
+
+"if we could adapt cbc design for "common-ground-problem" in this
+maintainer repo we could also maintain it in similar way as in
+backend, where if we want introduce something new, we would need to
+check if holds our design. we could also decide if it just feature
+or invariant. if it is invariant we would need do this analisys. we
+could build adapted understanding and instructions how that is
+done."
+
+#### What the agent showed
+
+- **The concept names no backend:** "A system is what it promises
+  about a hostile world" (`concept/00-cbc.md`). The backend sits
+  lower, in the Method Group and the `spring-postgres` Stack Group.
+  Its examples and words still lean toward software.
+- **The draft already holds part of CBC:** §1's purpose as the
+  Falsifiable Promise; §4's Failure Cases as sources of adversity;
+  §7 as how it could be falsified; §8's "an instruction only when
+  work needs one" as feature-thin. Missing: System Guarantees and
+  Structural Walls.
+- **Today's answer is detection:** sweeps, the Foundation Check, the
+  refinement's reads. CBC calls that correctness added afterwards;
+  it may explain the cost in the draft's §5.
+- **Five risks:** a wall is hard to build in text, so CBC may become
+  a checklist; part of the system is a person, so the promise must
+  be about texts and sessions; it is circular, the repo judged by
+  the concept it keeps; it is an answer, and stage 1 states the
+  problem only; making the concept general reaches every CBC Run.
+- **It fills a cell:** the draft's §2.1 table gives the Maintainer
+  Repo no CBC instructions. With CBC applied to common ground, both
+  groups take the same shape, an adapted text on each side of one
+  general text.
+
+#### What the reviewer said
+
+On the order: "we continue as we did till now, without cbc design
+adapted to our common-ground-problem. we just make change now that
+cbc has general understanding and that we have one adapted case for
+backends in system kit." The trial comes "after we finish working
+with common-ground-problem", applied "to completed
+common-ground-problem and see what we can do". The split of the
+concept into general understanding, the System Kit's adapted case
+and instructions is to be done "without loosing any info and
+correctness of cbc concept and methods".
+
+#### What the reviewer took
+
+The draft says now that CBC design is general and the System Kit
+holds one adapted case, for backends (`4938344`). Stage 2 sorts the
+concept and the Method Group into general and backend, labels only;
+the split is a TODO item, after the Plan Step, so the way chosen
+shapes it. The trial on the Common Ground Problem is a second item,
+after the split: CBC from a clean general text is a fairer test
+than from today's mixed one. Why the trial waits: stage 1 stays a
+problem; a way chosen without CBC is the baseline to compare
+against; CBC needs a settled promise to derive from.
