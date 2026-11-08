@@ -207,6 +207,9 @@ Notes:
      This repo's descriptions of itself, such as `CLAUDE.md` and
      `ARCHITECTURE.md`, are checked too, for intent written as if
      it were now (the draft's case 17).
+     The concept, `concept/`, and the Method Group are sorted into
+     general and backend: labels only, nothing rewritten. The labels
+     feed TODO's item that splits the concept.
      Then where common ground was lost: the devlog's 18 "What context
      was missing" lines since October, the refinement's findings, 485
      in round 3's close read and 385 in its last read, and the agent's
