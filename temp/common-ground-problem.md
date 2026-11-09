@@ -111,16 +111,6 @@ Each idea can then live in three texts, not two. Whether the levels are kept apa
 
 The understanding of CBC system design is project-agnostic: it fits any system, not only software. The System Kit holds one Adapted Case of it so far, for backends.
 
-**What the System Kit holds.** This is the one list of it; the rest of this document points here.
-
-Agent work and CBC system design are each held as Adapted Cases. How each splits into Adapted Cases, one or several, is open.
-
-1. agent work, written from its project-agnostic understanding for System Repos, among it how a System Repo takes an update;
-2. CBC system design, written from its project-agnostic understanding for one kind of system: backends, so far;
-3. the Defined Terms the Adapted Cases use;
-4. the forms a System Repo's records start from. They go once, at birth, and are the System Repo's own after it;
-5. a description of CBC system design for the System Repo's readers, as adapted to its kind of system. Its form is open, and is decided when the concept is split, and so is whether a System Repo may change it.
-
 So knowledge written in the Maintainer Repo becomes instructions that agents act on: in the Maintainer Repo itself, for its own work, and in every System Repo. The agent in a System Repo starts with none of the Maintainer Repo's context, only its System Kit Copies, and they can drift, or change on their own.
 
 The Repo Responsibility follows. It may change itself, and whether the repo does all of it is not yet checked.
@@ -129,7 +119,7 @@ The Maintainer Repo keeps:
 
 1. understanding of agent work;
 2. understanding of the concept, CBC system design;
-3. the System Kit, for every System Repo to work from (above, *What the System Kit holds*);
+3. the System Kit, for every System Repo to work from (below, *What the System Kit holds*);
 4. its own Adapted Case of agent work, updated as the project-agnostic understanding changes;
 5. findings from System Repos. A System Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other System Repos. The Maintainer Repo reads the changes back and judges each, by its own Adapted Case of taking a change from another repo (below, *Judging a change read back*);
 6. updates for System Repos, taken when work resumes in one (below, *An update*): a System Repo born earlier gets the System Kit's changes, or keeps working from its own System Kit Copy;
@@ -138,11 +128,23 @@ The Maintainer Repo keeps:
 
 Each System Repo:
 
-1. keeps its System Kit Copies of the Adapted Cases (above, *What the System Kit holds*). It uses them, and may change any part of them. The project-agnostic understanding stays in the Maintainer Repo;
+1. keeps its System Kit Copies of the Adapted Cases (below, *What the System Kit holds*). It uses them, and may change any part of them. The project-agnostic understanding stays in the Maintainer Repo;
 2. keeps understanding of its own problem: one specific system's design;
 3. keeps its own records, started from the record forms in its System Kit;
 4. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back;
 5. takes updates by its System Kit Copy of the instructions for taking them, and may change those too (below, *An update*).
+
+#### What the System Kit holds
+
+Other parts of this document point here, and list none of it.
+
+Agent work and CBC system design are each held as Adapted Cases. How each splits into Adapted Cases, one or several, is open.
+
+1. agent work, written from its project-agnostic understanding for System Repos, among it how a System Repo takes an update;
+2. CBC system design, written from its project-agnostic understanding for one kind of system: backends, so far;
+3. the Defined Terms the Adapted Cases use;
+4. the forms a System Repo's records start from. They go once, at birth, and are the System Repo's own after it;
+5. a description of CBC system design for the System Repo's readers, as adapted to its kind of system. Its form is open, and is decided when the concept is split, and so is whether a System Repo may change it.
 
 #### What passes between the repos
 
