@@ -88,7 +88,7 @@ Each scenario is written step by step, the human reading each before the next.
 - **Reads:** the problem the human brings, written as a problem statement: the situation, and what is hostile in it, with no promise set yet. The framing sets the promise later, inside the System Repo. Also what each System Kit is for. Today there is one, for backends.
 - **Decides:** the human decides which System Kit fits, or that none does. The stack is not chosen here: CBC design chooses it once the problem is framed, inside the System Repo (scenario 2). If none fits:
   - the System Repo is not started;
-  - or it is started with the project-agnostic texts, and writes its own Adapted Case as Knowledge on Trial, judged when it is read back. If that case holds, it may become a second System Kit (§1). A branch, not simulated: its trigger is the first problem no System Kit fits.
+  - or the Maintainer Repo first writes an Adapted Case for the new kind of system, from the project-agnostic understanding, as Knowledge on Trial, and the System Repo is started with it. The project-agnostic texts stay home, as at every birth. The System Repo adapts the case further, and reading back judges it like any other. If it holds, it may become a second System Kit (§1). A branch, not simulated: its trigger is the first problem no System Kit fits.
 - **Marks:**
   - in the Maintainer Repo, that the System Repo exists: its name, where it lives, which System Kit it got, and why. A System Repo is blind, so the Maintainer Repo is the only side that can find it again to read it back (scenario 3);
   - the problem statement goes with the new System Repo at birth, its first text of its own. The Maintainer Repo keeps no copy.
