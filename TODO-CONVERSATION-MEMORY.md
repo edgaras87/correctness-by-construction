@@ -26,7 +26,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-08.
+     Last touched: 2026-11-10.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
@@ -1486,6 +1486,182 @@ from our own work, new knowledge from the reviewer. One main
 example, a delivered copy edited, with the other kinds of change as
 variants. Scenarios as checks: how the alert fires is decided once
 the simulation is done.
+
+### 2026-11-09 and 2026-11-10
+
+#### What the reviewer said
+
+- **The carrying:** "should we say "The human carries the files
+  across" or "human ask agent to carry" or "we have instruction how
+  to carry out, which is followed by human or agent by human
+  premision" or something?"
+- **The understanding goes:** "yes, adapted understanding goes with
+  its instructions".
+- **A change from today:** "should we note a requared change next
+  to it?" And: "what this means "Today the explanation stays home."
+  in "**Decides:**"?"
+- **Copies stay their own, and a Name:** "should we mention or even
+  decide now, that we thinking that adapted understanding +
+  instruction can diff from system kit even after reading and
+  update, because in maintainer we keep shared one and in system
+  repo we have edited/adapted to problem needs? also i see the need
+  to have term for adapted understanding + instruction, what u
+  think? we had in current system use approach, we could also use
+  that, but we different term from todays maintainer. what could u
+  suggest?"
+- **Work Approach:** "we use "Work Approach" for skill intruction?
+  it is already Agent Skill, doesnt it? where it is defined?" Then:
+  "do we need a word in intent for "Work Approach"? does it really
+  mean something like "Instruction Kind"? do u see better name?"
+- **The sweep:** "so we go with "Adapted Case"? also should we
+  update "common-ground-problem" and change to "Adapted Case" where
+  we are saying instruction text with its adapted understandig?"
+- **The concept in the System Kit:** "We will need only concept as
+  project documentation for description. So maybe just paragraph in
+  README is enough or maybe we want more detailed description? then
+  should that description like in System Kit already to deliver and
+  reused? both? is this what this word means? should we have a term
+  that descirbes all this?" And: "should we have in one place listed
+  what system kit consists for better maintenance and refer where we
+  need that as one-home rule?"
+- **Adapted, twice over:** "i mean we use project-agnostic
+  understanding to write adapted case, but when we say "2. CBC
+  system design, adapted to one kind of system:" it feels strange,
+  doesnt it? am i missing something?" Then: "also should we use word
+  norrowed instead of adapted?"
+- **Retelling:** "doesnt this retell too much? should we just refer
+  what kit contains when its delivered? also why not make *What the
+  System Kit holds* as section?" And: "wait a minute. shoulding we
+  refernce what system kit holds instead?"
+- **A birth:** "should we have here adapted case for birth? and in
+  that adapted case instruction or as sep script which human alone
+  could use?"
+
+#### What the reviewer said, edited
+
+The same words, with grammar and spelling fixed, the meaning kept:
+
+- **The carrying:** "Should we say "The human carries the files
+  across", or "the human asks the agent to carry them", or "we have
+  instructions for how to carry them, followed by the human, or by
+  the agent with the human's permission", or something else?"
+- **The understanding goes:** "Yes, the adapted understanding goes
+  with its instructions."
+- **A change from today:** "Should we note the required change
+  next to it?" And: "What does "Today the explanation stays home."
+  mean in "Decides"?"
+- **Copies stay their own, and a Name:** "Should we mention, or even
+  decide now, that an adapted understanding with its instructions
+  can differ from the System Kit even after reading back and an
+  update, because the Maintainer Repo keeps the shared one and the
+  System Repo keeps one edited to its problem's needs? I also see
+  the need for a term for an adapted understanding with its
+  instructions; what do you think? Today we use "approach", and we
+  could use that too, but we use different terms from today's
+  Maintainer Repo. What would you suggest?"
+- **Work Approach:** "Do we use "Work Approach" for an Agent
+  Skill's instructions? Isn't that already an Agent Skill? Where is
+  it defined?" Then: "Do we need a word in the intent for "Work
+  Approach"? Does it really mean something like "Instruction Kind"?
+  Do you see a better name?"
+- **The sweep:** "So we go with "Adapted Case"? And should we update
+  the Common Ground Problem to say "Adapted Case" where it says an
+  Instruction Text with its adapted understanding?"
+- **The concept in the System Kit:** "We need the concept only as
+  project documentation, a description. Is a paragraph in a README
+  enough, or do we want a more detailed description? Should that
+  description already be in the System Kit, delivered and reused?
+  Both? Is that what this word means? Should we have a term for all
+  this?" And: "Should the System Kit's contents be listed in one
+  place, for easier upkeep, and referred to wherever they are needed,
+  by the one-home rule?"
+- **Adapted, twice over:** "We use the project-agnostic
+  understanding to write an Adapted Case, but "2. CBC system design,
+  adapted to one kind of system" feels strange, doesn't it? Am I
+  missing something?" Then: "Should we use the word "narrowed"
+  instead of "adapted"?"
+- **Retelling:** "Doesn't this retell too much? Should we just refer
+  to what the System Kit holds when it is delivered? And why not make
+  *What the System Kit holds* a section?" And: "Wait a minute.
+  Shouldn't we refer to *What the System Kit holds* instead?"
+- **A birth:** "Should a birth have its own Adapted Case here? And in
+  that Adapted Case, should the steps be an instruction, or a
+  separate script the human could run alone?"
+
+#### What the reviewer asked, as the agent would ask it
+
+The questions the reviewer was asking, put by the agent:
+
+1. What must hold when files cross between the repos: who carries
+   them, or that nothing crosses without the human's word?
+2. Where does a step say how it differs from today's exchange, so
+   that today's facts are not read as the intent's?
+3. Does a System Repo's copy stay its own after reading back and an
+   update, for both halves alike?
+4. What one Name fits an adapted understanding with the Instruction
+   Texts built on it, without taking a word today uses for something
+   else?
+5. Does the intent need its own word for today's Work Approach, or
+   does it have one already?
+6. What does a System Repo need of the concept beyond its Adapted
+   Cases, in what form, and where is it decided?
+7. Should the System Kit's contents have one home, that every other
+   mention points at?
+8. Does "adapted" mean one thing, when it covers a sort of repo, a
+   kind of system and one project, and is "narrowed" the more exact
+   word?
+9. Is a birth an Adapted Case of the Maintainer Repo's, and may its
+   mechanical steps be something a human runs without the agent?
+
+#### What the agent added
+
+- **Adapted Case, not Approach:** today's Work Approach is the
+  instructions alone, so "Approach" for both halves would give one
+  word two scopes (Failure Case 8). Work Approach is today's name
+  for what the intent calls Instruction Text, sorted by form, not by
+  when it loads.
+- **A field, Changed from today:** a "today" sentence in Decides
+  reads as now (Failure Case 13). Each difference goes to the
+  Common Ground Problem's §2.2.
+- **A judged difference stays:** so something must mark it, or
+  reading back judges the same edit again; the simulation's second
+  pass is where the need shows.
+- **"The concept" in the System Kit meant three things:** the
+  project-agnostic text, which stays home; CBC for backends, already
+  an Adapted Case; and a description for readers, the one left open.
+- **Adapting does two things:** it narrows an idea and adds what the
+  need has, such as HTTP for backends or a 50-character subject cap.
+  What was added has nothing above it to be checked against; judging
+  question 3 checks only the narrowed part.
+- **A count in the wording decides what is open:** "one Adapted
+  Case" where the split is open.
+- **Today's Pure Seed is already half of a birth's Adapted Case:**
+  shell commands inside a document, deciding nothing, since the repo
+  holds no code. Instruction Text, what the agent acts on, does not
+  cover steps a human runs alone.
+- **Step 1's branch clashed with "stay home":** it sent the
+  project-agnostic texts to a System Repo no System Kit fits.
+
+#### What the reviewer took
+
+The adapted understanding goes with its instructions; the
+project-agnostic texts stay home, at birth and at an update, and an
+update sends only the System Kit's changes, each with its why
+(`eb841a4`, `51e975a`). A System Repo's copies stay its own after
+reading back and an update, both halves alike (`b8ad5a1`). Adapted
+Case, defined and swept through both drafts (`46d636e`, `83c8196`,
+`e2e2916`); the mapping table's Instruction Text row (`7d15a60`).
+*What the System Kit holds*, one list in its own section, the rest
+pointing at it (`cad1f1c`, `28763b8`, `7af28da`). An Adapted
+Understanding Text narrows to a sort of need and adds what that need
+has (`8d1e229`, `83d7fb7`). Nothing crosses without the human's word
+(`7392be1`); a birth is the Maintainer Repo's Adapted Case, its
+mechanical part's form open (`e9cb979`); steps a human runs alone
+have no Defined Term yet (`a2ecef2`). The moment of the System Kit is
+marked at birth (`706ee8a`). A System Repo no System Kit fits starts
+from a first Adapted Case the Maintainer Repo writes, on trial
+(`40fa928`). The description of CBC system design waits for the
+concept's split (`dde07a0`). Next, scenario 1, step 3.
 
 ## 32. The agent's memory
 
