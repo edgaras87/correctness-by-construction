@@ -148,7 +148,7 @@ Agent work and CBC system design are each held as Adapted Cases. How each splits
 
 #### What passes between the repos
 
-What passes between the repos, so far:
+So far, three movements:
 
 | Movement | From, to | What passes |
 |---|---|---|
