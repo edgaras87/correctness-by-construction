@@ -100,14 +100,15 @@ Each scenario is written step by step, the human reading each before the next.
 
 - **Who acts:** the agent, in the Maintainer Repo, on the human's word. The human carries the files across, since nothing arrives by itself.
 - **Reads:** the System Kit chosen in step 1, as it stands now.
-- **Decides:** nothing new. Every file of the System Kit goes, whole. Among them are the instructions for taking an update, which the System Repo needs in scenario 6. Open: whether each Instruction Text's Adapted Understanding Text goes with it.
+- **Decides:** nothing new. Every file of the System Kit goes, whole. Among them are the instructions for taking an update, which the System Repo needs in scenario 6. Each Instruction Text goes with its Adapted Understanding Text, so the System Repo can judge what an update brings. The Project-Agnostic Understanding Texts stay home. Today the explanation stays home.
 - **Marks:**
   - in the System Repo, each file says whether it is a System Kit Copy or the System Repo's own from birth. A System Kit Copy may be updated later (scenario 6). A text of its own, such as the problem statement or a record it fills, never is;
+  - each Instruction Text names its Adapted Understanding Text, so the two are read, checked and updated as a pair;
   - Knowledge on Trial keeps its mark in the copy, so the System Repo can tell it from what is proven.
 - **Borrowed:**
-  - every file goes at birth, and the explanation stays home (`docs/conventions/exchange/` §3.2, *What goes*);
+  - every file goes at birth (`docs/conventions/exchange/` §3.2, *What goes*);
   - the records go once, as Record Stubs, and are never updated (`docs/conventions/exchange/` §2.4, *The records' exception*);
   - each copy's *Decisions* footer is left out. It points at the Maintainer Repo's decisions, which a blind System Repo cannot read (`docs/conventions/exchange/` §3.8, *The footer at delivery*).
 - **Can go wrong:**
   - Knowledge on Trial in a copy is read as proven (Failure Case 18);
-  - a copy holds the what without the why, since the explanation stayed home (Failure Case 9).
+  - an Instruction Text goes without its Adapted Understanding Text, so the copy holds the what without the why (Failure Case 9).
