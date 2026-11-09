@@ -47,7 +47,7 @@ Defined Terms, in alphabetical order:
 - **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
 - **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
-- **System Kit:** what the Maintainer Repo keeps for System Repos to work from, shared by the System Repos it serves: Instruction Texts, each with the Adapted Understanding Text it is built on, and the concept and the Defined Terms they use. Its originals stay in the Maintainer Repo, beside the project-agnostic understanding they are adapted from; each System Repo works from copies, and takes the System Kit's changes by an update.
+- **System Kit:** what the Maintainer Repo keeps for System Repos to work from, shared by the System Repos it serves: Adapted Cases, and the concept and the Defined Terms they use. Its originals stay in the Maintainer Repo, beside the project-agnostic understanding they are adapted from; each System Repo works from copies, and takes the System Kit's changes by an update.
 - **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo.
 - **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
@@ -109,7 +109,7 @@ Between understanding and instruction, the Maintainer Repo means to keep a middl
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
 
-The understanding of CBC system design is project-agnostic: it fits any system, not only software. The System Kit holds one adapted case of it so far, for backends.
+The understanding of CBC system design is project-agnostic: it fits any system, not only software. The System Kit holds one Adapted Case of it so far, for backends.
 
 So knowledge written in the Maintainer Repo becomes instructions that agents act on: in the Maintainer Repo itself, for its own work, and in every System Repo. The agent in a System Repo starts with none of the Maintainer Repo's context, only its System Kit Copies, and they can drift, or change on their own.
 
@@ -119,16 +119,16 @@ The Maintainer Repo keeps:
 
 1. understanding of agent work;
 2. understanding of the concept, CBC system design;
-3. the System Kit, for every System Repo to work from. It is made from the understanding of agent work and of the concept, and holds Instruction Texts, each with the Adapted Understanding Text it is built on, the concept itself, and the Defined Terms those texts use;
-4. its own adapted understanding of agent work, and the Instruction Texts built on it, both updated as the project-agnostic understanding changes;
-5. findings from System Repos. A System Repo uses the instructions and their adapted understanding in practice, and changes them as its problems demand. It can judge a change against its own adapted understanding, but not against the project-agnostic understanding or other System Repos. The Maintainer Repo reads the changes back and judges each, by its own adapted case of taking a change from another repo (below, *Judging a change read back*);
+3. the System Kit, for every System Repo to work from. It is made from the understanding of agent work and of the concept, and holds Adapted Cases, the concept itself, and the Defined Terms those texts use;
+4. its own Adapted Case of agent work, updated as the project-agnostic understanding changes;
+5. findings from System Repos. A System Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other System Repos. The Maintainer Repo reads the changes back and judges each, by its own Adapted Case of taking a change from another repo (below, *Judging a change read back*);
 6. updates for System Repos, taken when work resumes in one (below, *An update*): a System Repo born earlier gets the System Kit's changes, or keeps working from its own System Kit Copy;
 7. its own records: the history and the backlog of this work.
 8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' System Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches back to that System Repo by an update, or the System Repo keeps working from its own version.
 
 Each System Repo:
 
-1. keeps the adapted understanding of agent work, as System Kit Copies, each with the Instruction Texts built on it. It uses both, and may change both. The project-agnostic understanding stays in the Maintainer Repo;
+1. keeps the Adapted Case of agent work, as System Kit Copies. It uses it, and may change any part of it. The project-agnostic understanding stays in the Maintainer Repo;
 2. gets the concept's understanding, to explain its problems. Whether a System Repo may change that understanding, since it uses it directly, is open;
 3. keeps understanding of its own problem: one specific system's design;
 4. keeps its own records, started from the record forms in its System Kit;
@@ -145,21 +145,21 @@ What passes between the repos, so far:
 | reading back | a System Repo to the Maintainer Repo | what the System Repo changed in its System Kit Copies, and why |
 | update | the Maintainer Repo to a System Repo, when work resumes in it | the System Kit's changes since its copies were taken |
 
-Each sort of repo takes a change from the other by its own adapted case of one idea, how a repo takes a change from another, with its instructions. The Maintainer Repo's is the judging below. The System Repos' is part of the System Kit: each System Repo uses its copy and may change it, and the Maintainer Repo judges those changes like any other.
+Each sort of repo takes a change from the other by its own Adapted Case of one idea, how a repo takes a change from another. The Maintainer Repo's is the judging below. The System Repos' is part of the System Kit: each System Repo uses its copy and may change it, and the Maintainer Repo judges those changes like any other.
 
 **Judging a change read back.** Four questions, in order, the cheapest first:
 
 1. Did the System Kit Copy already say this? Then it is a misreading (Failure Case 7). Nothing changes but, perhaps, the copy's wording.
 2. Is it specific to that System Repo's problem? Then nothing changes here; it stays in that System Repo.
-3. Does the project-agnostic understanding already hold it? Then the System Kit's adapted case lost it in narrowing, and is fixed from the project-agnostic understanding. The Maintainer Repo's own adapted case is checked for the same loss.
+3. Does the project-agnostic understanding already hold it? Then the Adapted Case it came from lost it in narrowing, and is fixed from the project-agnostic understanding. The Maintainer Repo's own Adapted Case of the same idea is checked for the same loss.
 4. Is it true for every repo? Then it is a project-agnostic lesson, below.
 
-If none holds, it is a lesson for System Repos only: the System Kit's adapted case gains it, and the project-agnostic understanding stays as it is. A lesson found in the Maintainer Repo's own work takes questions 3 and 4 the same way.
+If none holds, it is a lesson for System Repos only: the Adapted Case it came from gains it, and the project-agnostic understanding stays as it is. A lesson found in the Maintainer Repo's own work takes questions 3 and 4 the same way.
 
-**A project-agnostic lesson.** A Project-Agnostic Understanding Text is bound to no project, so a lesson enters it if it holds for any project, whatever an adapted case says.
+**A project-agnostic lesson.** A Project-Agnostic Understanding Text is bound to no project, so a lesson enters it if it holds for any project, whatever an Adapted Case says.
 
 - It is reworded to name no project, the agent drafting and the human deciding. Its first wording is kept beside it, since the rewording is the agent's reading.
-- Every other Adapted Understanding Text built on that idea is surveyed; the one the lesson came from is not. Each answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto. If every answer conflicts, the lesson may not be project-agnostic.
+- Every other Adapted Case built on that idea is surveyed; the one the lesson came from is not. Each answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto. If every answer conflicts, the lesson may not be project-agnostic.
 - The survey is always run when the lesson changes or contradicts project-agnostic text that already exists, and at the human's choice when the lesson is new.
 - The project-agnostic understanding then gains the lesson, or is fixed where it was wrong (Failure Case 11), and what the survey found must change, changes.
 
@@ -204,6 +204,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | File Instruction Text | an Agent Rule loaded by path, when a file it names is opened |
 | Knowledge on Trial | the Approach on Trial, for ways of working only |
 | Project-Agnostic Understanding Text | an Idea Model, `docs/models/`; the concept, `concept/`, with its backend case inside it |
+| Adapted Case | no one thing: a convention manual, with the Work Approaches made from it |
 | Adapted Understanding Text | a convention manual, `docs/conventions/`; the concept's backend case, not split from the concept |
 | Defined Term | a Glossary Name, in `docs/glossary.md` |
 | One Home per Fact | the facts-in-sync convention, and the one-home Agent Rule |
