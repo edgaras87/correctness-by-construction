@@ -111,6 +111,16 @@ Each idea can then live in three texts, not two. Whether the levels are kept apa
 
 The understanding of CBC system design is project-agnostic: it fits any system, not only software. The System Kit holds one Adapted Case of it so far, for backends.
 
+**What the System Kit holds.** This is the one list of it; the rest of this document points here.
+
+Agent work and CBC system design are each held as Adapted Cases. How each splits into Adapted Cases, one or several, is open.
+
+1. agent work, written from its project-agnostic understanding for System Repos, among it how a System Repo takes an update;
+2. CBC system design, written from its project-agnostic understanding for one kind of system: backends, so far;
+3. the Defined Terms the Adapted Cases use;
+4. the forms a System Repo's records start from. They go once, at birth, and are the System Repo's own after it;
+5. a description of CBC system design for the System Repo's readers, as adapted to its kind of system. Its form is open, and is decided when the concept is split.
+
 So knowledge written in the Maintainer Repo becomes instructions that agents act on: in the Maintainer Repo itself, for its own work, and in every System Repo. The agent in a System Repo starts with none of the Maintainer Repo's context, only its System Kit Copies, and they can drift, or change on their own.
 
 The Repo Responsibility follows. It may change itself, and whether the repo does all of it is not yet checked.
