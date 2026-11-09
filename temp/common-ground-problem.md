@@ -135,6 +135,8 @@ Each System Repo:
 5. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back;
 6. takes updates by its System Kit Copy of the instructions for taking them, and may change those too (below, *An update*).
 
+#### What passes between the repos
+
 What passes between the repos, so far:
 
 | Movement | From, to | What passes |
