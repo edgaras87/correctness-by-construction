@@ -46,7 +46,7 @@ Defined Terms, in alphabetical order:
 - **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
 - **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
-- **System Kit:** what the Maintainer Repo keeps for System Repos to work from: mostly Instruction Texts, with the concept and the Defined Terms they use. Its originals stay in the Maintainer Repo, with the understanding that explains them; each System Repo works from copies, updated as the System Kit changes.
+- **System Kit:** what the Maintainer Repo keeps for System Repos to work from, shared by the System Repos it serves: mostly Instruction Texts, with the concept and the Defined Terms they use. Its originals stay in the Maintainer Repo, with the understanding that explains them; each System Repo works from copies, updated as the System Kit changes.
 - **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo.
 - **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
