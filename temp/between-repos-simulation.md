@@ -21,7 +21,7 @@ It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.m
 Eight scenarios, in order:
 
 1. **Birth of a System Repo:** the Maintainer Repo starts a new System Repo from the System Kit.
-2. **Work in a System Repo:** it changes its System Kit Copies, and marks what it changed.
+2. **Work in a System Repo:** it changes its System Kit Copies, and marks what it changed. It chooses its stack once its problem is framed, and marks the choice for the Maintainer Repo to read.
 3. **Reading a System Repo:** the Maintainer Repo reads what changed since it last read.
 4. **Judging what was read:** the four questions, ending in an Understanding Lesson or none.
 5. **The flow down:** a project-agnostic change, the survey, every adapted case it touches, and their instructions.
@@ -32,7 +32,7 @@ Eight scenarios, in order:
 Not simulated, each for its reason:
 
 - **Reading the Maintainer Repo:** nobody outside reads it, since a System Repo is blind. What the Maintainer Repo learns from itself is scenario 7.
-- **A second kind of system:** not needed yet. Its trigger is the first System Repo that does not build a backend.
+- **A second System Kit:** not needed yet. Its trigger is the first problem no System Kit fits. It brings a choice and a name: several System Kits, each whole, or one System Kit whose parts birth picks from; and a name for each, once there is more than one.
 - **A System Repo's own problem understanding:** the System Repo's own work, covered by the agent-work case in its System Kit.
 
 Fixed before the simulation starts:
@@ -79,12 +79,12 @@ Each scenario is written step by step, the human reading each before the next.
 
 ### 5.1 Birth of a System Repo
 
-**Step 1. The human decides to start a System Repo.**
+**Step 1. The human and the agent choose the System Kit that fits the problem.**
 
-- **Who acts:** the human. The agent in the Maintainer Repo helps, if asked.
-- **Reads:** the problem the human wants solved, as they hold it now.
-- **Decides:** the human decides what system is built, and its kind: a backend, in the example. The kind decides which of the System Kit's adapted cases the System Repo gets.
-- **Marks:** in the Maintainer Repo, that the System Repo exists: its name, where it lives, and its kind. A System Repo is blind, so the Maintainer Repo is the only side that can find it again to read it back (scenario 3).
+- **Who acts:** the human and the agent, in the Maintainer Repo.
+- **Reads:** the problem the human brings, as they hold it now, and what each System Kit is for. Today there is one, for backends.
+- **Decides:** the human decides which System Kit fits, or that none does. If none does, the System Repo is not started, or it is the trigger for a second System Kit (§1). The stack is not chosen here: CBC design chooses it once the problem is framed, inside the System Repo (scenario 2).
+- **Marks:** in the Maintainer Repo, that the System Repo exists: its name, where it lives, and which System Kit it got. A System Repo is blind, so the Maintainer Repo is the only side that can find it again to read it back (scenario 3).
 - **Can go wrong:**
-  - the kind has no adapted case in the System Kit yet: the trigger for a second kind of system (§1);
+  - no System Kit fits, and one is bent to fit the problem (Failure Case 24);
   - the System Repo is known only to the human, so it is never read back (Failure Case 1).
