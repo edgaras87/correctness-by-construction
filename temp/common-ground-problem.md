@@ -305,6 +305,8 @@ An instruction comes from the adapted level where there is one, and the adapted 
 
 An instruction has two readers too. The agent acts on it. The human reads it to know what they told the agent.
 
+Some instructions are followed by the human alone, such as the steps of a birth that a human can run without the agent. Instruction Text, what the agent acts on, does not cover them. Whether they need a Defined Term of their own is open.
+
 The two kinds go wrong differently. Understanding may be not always correct and still do its job. An instruction must be faithful to its understanding, since the agent acts on it as it stands. It is only as right as that understanding: Mistaken Knowledge passes into a faithful instruction unseen.
 
 While knowledge is on trial, a text can be both kinds: a way of working tried for the first time is written as one text, an instruction with its understanding inside it. It is split only when it is judged, since what is not yet understood cannot be split.
