@@ -35,6 +35,8 @@ Not simulated, each for its reason:
 - **A second System Kit:** not needed yet. Its trigger is the first problem no System Kit fits. It brings a choice and a name: several System Kits, each whole, or one System Kit whose parts birth picks from; and a name for each, once there is more than one.
 - **A System Repo's own problem understanding:** the System Repo's own work, covered by the agent-work case in its System Kit.
 
+A branch the example does not take is noted at the step where it starts, with its trigger, and not simulated. So the simulation ends.
+
 Fixed before the simulation starts:
 
 - **A System Repo is blind:** it has no address for the Maintainer Repo.
@@ -82,9 +84,14 @@ Each scenario is written step by step, the human reading each before the next.
 **Step 1. The human and the agent choose the System Kit that fits the problem.**
 
 - **Who acts:** the human and the agent, in the Maintainer Repo.
-- **Reads:** the problem the human brings, as they hold it now, and what each System Kit is for. Today there is one, for backends.
-- **Decides:** the human decides which System Kit fits, or that none does. If none does, the System Repo is not started, or it is the trigger for a second System Kit (§1). The stack is not chosen here: CBC design chooses it once the problem is framed, inside the System Repo (scenario 2).
-- **Marks:** in the Maintainer Repo, that the System Repo exists: its name, where it lives, and which System Kit it got. A System Repo is blind, so the Maintainer Repo is the only side that can find it again to read it back (scenario 3).
+- **Reads:** the problem the human brings, written as a problem statement: the situation, and what is hostile in it, with no promise set yet. The framing sets the promise later, inside the System Repo. Also what each System Kit is for. Today there is one, for backends.
+- **Decides:** the human decides which System Kit fits, or that none does. The stack is not chosen here: CBC design chooses it once the problem is framed, inside the System Repo (scenario 2). If none fits:
+  - the System Repo is not started;
+  - or it is started with the project-agnostic texts, and writes its own adapted case as Knowledge on Trial, judged when it is read back. If that case holds, it may become a second System Kit (§1). A branch, not simulated: its trigger is the first problem no System Kit fits.
+- **Marks:**
+  - in the Maintainer Repo, that the System Repo exists: its name, where it lives, which System Kit it got, and why. A System Repo is blind, so the Maintainer Repo is the only side that can find it again to read it back (scenario 3);
+  - the problem statement goes with the new System Repo at birth, its first text of its own. The Maintainer Repo keeps no copy.
+- **Borrowed:** the problem statement is today's CBC Run Briefing, put in a new CBC Run's `temp/` (`docs/glossary.md`, *CBC Run Briefing*).
 - **Can go wrong:**
   - no System Kit fits, and one is bent to fit the problem (Failure Case 24);
   - the System Repo is known only to the human, so it is never read back (Failure Case 1).
