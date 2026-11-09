@@ -1285,6 +1285,208 @@ the CBC insight is written. The document named the Common Ground
 Problem. The multi-agent refinement noted in TODO, to try in place
 of the draft's fourth fresh read.
 
+### 2026-11-08 and 2026-11-09
+
+#### What the reviewer said
+
+- **Our own adapted level:** "Now that means that each repo has its
+  adapted need understanding, so ours should too as maintainer repo.
+  That means we need to write adapted understing to us too which we
+  not even mention and i think were awere." Then: "so then that
+  means we should have `maintainer repo adapted understanding <-
+  general understanding -> system kit understanfing`". And: "we need
+  to decide if these adapted understandings could/should be
+  delivered together with instructions. maybe we should do exact as
+  we do with cbc understanding where we are judge? or maybe it is
+  redudntant text for system repo?"
+- **The picture:** "system-repo responsibility is: - maintain
+  understanding of target problem which is in cbc system design
+  domain - maintain adapted understanding and its instructions
+  (agent work + cbc design + infra)". On infra: "what i think that
+  it is just bigger set of input and not complexity, what u think?"
+- **What the general text answers to:** "or we think about
+  differently as general understanding should be project agnostic.
+  so no matter if something in any adapted understand is no more
+  true. it only if we think it has to be as general understanding
+  lesson, like new thing or change of old one." And: "we could have
+  as option to run survey in adapted understanding about this new
+  formulated lesson where each tells its insigh in somekind of way.
+  so i would have more info for decition."
+- **Updates:** "now when i have few system repos, i could check all
+  and send updated notes. what happens if there is alot? [...] i
+  will be working on one project at one time. maybe i could request
+  updates while i am on project only?" And: "i think here we will
+  need that starter kit could be different by bytes from starter
+  kit copy." And: "should we mark that each repo that has to have
+  adapted understandig with instrcutions on how it will be taking
+  updates?"
+- **The word general:** "should we have some like shared-system-kit
+  and shared-understanding instead of general? did i used general
+  incorrectly?" And: "would u understand me if i sometime will say
+  general by mistake?"
+- **Lessons:** "should we have this as "Project-Agnostic Lesson"
+  term"; "isnt this lesson for System kit?"; "so maybe we have Repo
+  Lesson, which gives Project-Agnostic Understanding Lesson and
+  Adaptive Understanding Lesson?" Then: "Judged Lesson would fit
+  better if we need direct. Understanding Lesson could mean any
+  direction as shared/general leson for any case direction, in and
+  out and any future needs maybe?"
+- **Instructions and their understanding:** "my guess was that we
+  not aware that instrcutions are tight to adapted understanding and
+  when we touch adapted understanding we should do that together
+  with instrcutions. or not?"
+- **Blindness, and a simulation:** "system repo can and have clues
+  in his records what have change and what to check, but system repo
+  has not address for maintainer. it has to stay blind from it. now
+  this is decided. maybe we should decide how updated goes back,
+  before we start making scenarios on how we read lessons?" Then:
+  "i think it should be like simulation, where we start from step
+  one, consider whats happening, then include parts we see is needed
+  to mark and go to next step." On the example: "is there difference
+  if change in system repo is done on copy we have delivered vs
+  changes as new things by knowledge was introduces vs
+  knowledge-on-trail as provisional was delivered and some changes
+  was do to it?" On checks: "should we have those scenarios as
+  checks, when something is done later not by scenario will be alert
+  that we need to change or introduce scenario and recheck this
+  maintanace system if that still holds?"
+
+#### What the reviewer said, edited
+
+The same words, with grammar and spelling fixed, the meaning kept:
+
+- **Our own adapted level:** "That means each repo has its own
+  adapted understanding, so ours should too, as the Maintainer Repo.
+  We need to write an adapted understanding for ourselves too, which
+  we don't even mention, and I think we weren't aware of it." Then:
+  "So we should have `Maintainer Repo adapted understanding ←
+  general understanding → System Kit understanding`." And: "We need
+  to decide whether these adapted understandings could or should be
+  delivered together with the instructions. Maybe we should do
+  exactly as we do with the CBC understanding, where we are the
+  judge? Or is it redundant text for a System Repo?"
+- **The picture:** "A System Repo's responsibility is to maintain
+  the understanding of its target problem, which is in the CBC
+  system design domain, and to maintain the adapted understanding
+  and its instructions (agent work, CBC design and infra)." On
+  infra: "I think it is just a bigger set of input, not more
+  complexity. What do you think?"
+- **What the general text answers to:** "Or we think of it
+  differently: general understanding should be project-agnostic. So
+  it doesn't matter whether something in an adapted understanding is
+  no longer true. It changes only if we think the lesson belongs in
+  the general understanding, as something new or a change to
+  something old." And: "We could have, as an option, a survey of the
+  adapted understandings about the newly worded lesson, where each
+  gives its view in some way. Then I would have more to decide on."
+- **Updates:** "Now that I have a few System Repos, I could check
+  them all and send update notes. What happens if there are many?
+  [...] I will be working on one project at a time. Maybe I could
+  request updates only while I am on a project?" And: "I think we
+  will need the System Kit to be able to differ, byte for byte, from
+  a System Kit Copy." And: "Should we say that each repo needs an
+  adapted understanding, with instructions, for how it takes
+  updates?"
+- **The word general:** "Should we have something like a shared
+  System Kit and shared understanding instead of general? Did I use
+  general incorrectly?" And: "Would you understand me if I sometimes
+  said general by mistake?"
+- **Lessons:** "Should this be a Term, Project-Agnostic Lesson?";
+  "Isn't this a lesson for the System Kit?"; "So maybe we have a
+  Repo Lesson, which gives a Project-Agnostic Understanding Lesson
+  and an Adapted Understanding Lesson?" Then: "Judged Lesson would
+  fit better if we need a direction. Understanding Lesson could mean
+  any direction, a lesson for any case, in and out, and maybe any
+  future needs?"
+- **Instructions and their understanding:** "My guess was that we
+  weren't aware that instructions are tied to their adapted
+  understanding, and that when we touch the adapted understanding,
+  we should touch the instructions with it. Or not?"
+- **Blindness, and a simulation:** "A System Repo can have, and has,
+  clues in its records about what changed and what to check, but it
+  has no address for the Maintainer Repo. It has to stay blind to
+  it. This is decided. Maybe we should decide how updates go back
+  before we start making scenarios for how we read lessons?" Then:
+  "I think it should be like a simulation: we start from step one,
+  consider what happens, add the parts we see need marking, and go
+  to the next step." On the example: "Is there a difference between
+  a System Repo changing a copy we delivered, adding new things as
+  new knowledge, and changing Knowledge on Trial we delivered as
+  provisional?" On checks: "Should the scenarios be checks, so that
+  when something is later done outside any scenario, an alert says
+  we need to change or add a scenario and recheck that this
+  maintenance system still holds?"
+
+#### What the reviewer asked, as the agent would ask it
+
+The questions the reviewer was asking, put by the agent:
+
+1. Does the Maintainer Repo need its own adapted understanding of
+   agent work, and should the System Kit's adapted understanding go
+   to System Repos with the instructions, judged by us when they
+   change it?
+2. Is a new group of understanding, such as infra, only more of the
+   same shape, or does it add complexity?
+3. Is the general understanding what all adapted cases agree on, or
+   is it bound to no project, with each adapted case's view only
+   input to the decision?
+4. How do updates reach System Repos when there are many, and must
+   each System Repo have its own instructions for taking them?
+5. Is "general" the right word, or is "shared" what was meant?
+6. Should a lesson have a Defined Term, named by where it lands, and
+   should that name carry a direction?
+7. When an adapted understanding changes, must its instructions
+   change with it?
+8. Should the update direction be settled before the reading
+   direction is simulated, and should the simulation's scenarios
+   become checks that fire when work falls outside them?
+
+#### What the agent added
+
+- **The draft had a hole:** our instructions built straight from
+  the understanding of agent work, the middle skipped.
+- **Judging has outcomes on two questions:** how far a change
+  reaches, and what it says about the general text. Four questions
+  in order, cheapest first, and a misreading among the outcomes.
+- **Reading back before updating:** an update first could erase a
+  System Repo's unread changes; an update merges, never overwrites.
+- **The update instructions update themselves:** taken first, or an
+  update is taken by instructions older than it (Failure Case 10).
+- **General and shared differ:** the System Kit's adapted case is
+  shared, not general; a general idea may be used by no repo yet.
+  "Shared" for the general text would bring view 1 back.
+- **What arrives is not a lesson yet:** two of the four questions
+  end with none. "Judged" carries no direction, since both
+  directions are judged; direction belongs to the movement.
+- **An instruction and its adapted case are checked together,** not
+  always changed together; a change to either can end in an
+  Understanding Lesson.
+- **Today's exchange already answers most of the update:** blind, a
+  Delivery Take that re-applies held edits, a Delivery Pin. Two
+  differences from the intent: who judges an update, and when one
+  happens.
+- **For the simulation:** birth first; a second pass of the cycle;
+  the reviewer as an actor; what must be written before a session
+  ends; the agent marks what it borrows from today's exchange.
+
+#### What the reviewer took
+
+Decisions 1 to 5, in the draft (`917b05d`): view 2, the general
+text bound to no project and a survey as input, never a veto; a
+lesson reworded to name no project, its first wording kept; the
+survey's three answers; the four questions; updates when work
+resumes, open in their how. Each sort of repo takes a change by its
+own adapted case. "General" renamed Project-Agnostic Understanding
+Text (`ecd311e`); the System Kit defined as shared (`5a9b22a`).
+Understanding Lesson as the Term, with no direction, not yet
+written. Today's blindness stands. Next, a simulation of what passes
+between the repos, in eight scenarios: birth, work in a System
+Repo, reading it, judging, the flow down, updating it, a lesson
+from our own work, new knowledge from the reviewer. One main
+example, a delivered copy edited, with the other kinds of change as
+variants. Scenarios as checks: how the alert fires is decided once
+the simulation is done.
+
 ## 32. The agent's memory
 
 Item: "Write the understanding of the agent's memory, and how it is
@@ -1489,3 +1691,39 @@ after the split: CBC from a clean general text is a fairer test
 than from today's mixed one. Why the trial waits: stage 1 stays a
 problem; a way chosen without CBC is the baseline to compare
 against; CBC needs a settled promise to derive from.
+
+### 2026-11-09
+
+#### What the reviewer asked
+
+On the simulation of what passes between the repos: "just for
+curiosity how that is similar what we do in cbc design? (we will do
+that later)"
+
+#### What the reviewer asked, edited
+
+The same words, with grammar and spelling fixed, the meaning kept:
+
+- "Just out of curiosity, how is that similar to what we do in CBC
+  design? (We will do that later.)"
+
+#### What the reviewer asked, as the agent would ask it
+
+The question the reviewer was asking, put by the agent:
+
+1. Does the simulation's step form match CBC design's parts, so the
+   simulation can feed the CBC trial?
+
+#### What the agent showed
+
+- **A step's "what can go wrong"** as a source of adversity.
+- **A step's "what is marked"** as a Structural Wall: a pin makes
+  "we don't know what was delivered" impossible.
+- **Scenarios as checks** as tests that fail when the system drifts
+  from its design.
+- **A new scenario needed** as a change that touches a System
+  Guarantee, so the full analysis runs.
+
+#### What the reviewer took
+
+Kept for the trial: the simulation is its natural input.
