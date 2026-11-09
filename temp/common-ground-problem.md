@@ -28,6 +28,7 @@ Plain words, in a narrow sense:
 
 Defined Terms, in alphabetical order:
 
+- **Adapted Case:** an Adapted Understanding Text with the Instruction Texts built on it. They are read, checked and updated together.
 - **Adapted Understanding Text:** a Project-Agnostic Understanding Text narrowed to one project's needs; the middle level between Project-Agnostic Understanding Text and Instruction Text.
 - **Common Ground Problem:** keeping common ground between the human and the agent from one session to the next, while the text it is built from goes stale; the problem this document states.
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
