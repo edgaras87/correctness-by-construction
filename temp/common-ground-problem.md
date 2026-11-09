@@ -197,6 +197,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | System Repo | a CBC Run |
 | System Kit | the delivery, `delivery/`: the Container Group, the Method Group and a Stack Group, with the concept and each group's Glossary Names |
 | System Kit Copy | a CBC Run's copy of a Master Copy |
+| Instruction Text | a Work Approach: an Agent Skill, an Agent Rule, an Approach on Trial or an Output Form. Which of the three sorts an Output Form is, is open |
 | Task Instruction Text | an Agent Skill |
 | Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules |
 | File Instruction Text | an Agent Rule loaded by path, when a file it names is opened |
