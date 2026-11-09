@@ -15,26 +15,24 @@ This document states the Common Ground Problem. It chooses no answer; answers me
 
 ## Defined Terms
 
-A Defined Term is a word or words given an exact meaning, written capitalized, so plain English stays free. Each Defined Term below is defined here, once. Seven plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground, general. Any other lowercase word is plain English. An *italic* word is a label inside the Defined Term it belongs to. The Defined Terms below are local to the Common Ground Problem, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. They are the intent's words; the repo's own names for the same things are today's, set beside them in §2.2. When this document lands, each Defined Term replaces a repo name, joins the repo's glossary, or goes. A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
+A Defined Term is a word or words given an exact meaning, written capitalized, so plain English stays free. Each Defined Term below is defined here, once. Six plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground. Any other lowercase word is plain English. An *italic* word is a label inside the Defined Term it belongs to. The Defined Terms below are local to the Common Ground Problem, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. They are the intent's words; the repo's own names for the same things are today's, set beside them in §2.2. When this document lands, each Defined Term replaces a repo name, joins the repo's glossary, or goes. A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
 
 Plain words, in a narrow sense:
 
 - **the agent:** the AI model in a session. It knows its subjects from training, and the human and the work only from what it reads.
 - **the chat:** where knowledge passes between the human and the agent; lost when a session ends, unless written down. Not text.
 - **common ground:** between the human and the agent, on what the human knows: the agent's picture of the human's understanding, built from the text, matches it and its Depth of Understanding.
-- **general:** bound to no project, as an idea any repo can adapt. Never "shared by many", nor "broad".
 - **the human:** the person whose knowledge it is, who carries it from one session to the next.
 - **knowledge:** what one knows, and how one understands it. It lives in a head.
 - **text:** where knowledge is stored, as it stood at one moment: Understanding Text and Instruction Text, wherever kept.
 
 Defined Terms, in alphabetical order:
 
-- **Adapted Understanding Text:** a General Understanding Text narrowed to one project's needs; the middle level between General Understanding Text and Instruction Text.
+- **Adapted Understanding Text:** a Project-Agnostic Understanding Text narrowed to one project's needs; the middle level between Project-Agnostic Understanding Text and Instruction Text.
 - **Common Ground Problem:** keeping common ground between the human and the agent from one session to the next, while the text it is built from goes stale; the problem this document states.
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **File Instruction Text:** an Instruction Text the agent loads when a certain kind of file is opened.
-- **General Understanding Text:** an Understanding Text bound to no project.
 - **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. So far it comes in three sorts, by when the agent loads it: Task Instruction Text, Session Instruction Text and File Instruction Text.
 - **Knowledge Axis:** one way of sorting text. There are four: *who uses it*, *time*, *kind*, *where* (§3).
 - **Knowledge Drift:** text and knowledge moving apart. The text holds less than the knowledge, or is older than it.
@@ -44,6 +42,7 @@ Defined Terms, in alphabetical order:
 - **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns.
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
+- **Project-Agnostic Understanding Text:** an Understanding Text bound to no project.
 - **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
 - **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
@@ -103,13 +102,13 @@ Between understanding and instruction, the Maintainer Repo means to keep a middl
 
 | Level | What it holds |
 |---|---|
-| understanding, general | an idea any repo can adapt (§3.3) |
+| understanding, project-agnostic | an idea any repo can adapt (§3.3) |
 | the middle | understanding adapted to one repo's needs (§3.3) |
 | instruction | how a piece of work is done, for the agent |
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
 
-The understanding of CBC system design is general: it fits any system, not only software. The System Kit holds one adapted case of it so far, for backends.
+The understanding of CBC system design is project-agnostic: it fits any system, not only software. The System Kit holds one adapted case of it so far, for backends.
 
 So knowledge written in the Maintainer Repo becomes instructions that agents act on: in the Maintainer Repo itself, for its own work, and in every System Repo. The agent in a System Repo starts with none of the Maintainer Repo's context, only its System Kit Copies, and they can drift, or change on their own.
 
@@ -151,17 +150,17 @@ Each sort of repo takes a change from the other by its own adapted case of one i
 
 1. Did the System Kit Copy already say this? Then it is a misreading (Failure Case 7). Nothing changes but, perhaps, the copy's wording.
 2. Is it specific to that System Repo's problem? Then nothing changes here; it stays in that System Repo.
-3. Does the general understanding already hold it? Then the System Kit's adapted case lost it in narrowing, and is fixed from the general understanding. The Maintainer Repo's own adapted case is checked for the same loss.
-4. Is it true for every repo? Then it is a general lesson, below.
+3. Does the project-agnostic understanding already hold it? Then the System Kit's adapted case lost it in narrowing, and is fixed from the project-agnostic understanding. The Maintainer Repo's own adapted case is checked for the same loss.
+4. Is it true for every repo? Then it is a project-agnostic lesson, below.
 
-If none holds, it is a lesson for System Repos only: the System Kit's adapted case gains it, and the general understanding stays as it is. A lesson found in the Maintainer Repo's own work takes questions 3 and 4 the same way.
+If none holds, it is a lesson for System Repos only: the System Kit's adapted case gains it, and the project-agnostic understanding stays as it is. A lesson found in the Maintainer Repo's own work takes questions 3 and 4 the same way.
 
-**A general lesson.** A General Understanding Text is bound to no project, so a lesson enters it if it is true in general, whatever an adapted case says.
+**A project-agnostic lesson.** A Project-Agnostic Understanding Text is bound to no project, so a lesson enters it if it holds for any project, whatever an adapted case says.
 
 - It is reworded to name no project, the agent drafting and the human deciding. Its first wording is kept beside it, since the rewording is the agent's reading.
-- Every other Adapted Understanding Text built on that idea is surveyed; the one the lesson came from is not. Each answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto. If every answer conflicts, the lesson may not be general.
-- The survey is always run when the lesson changes or contradicts general text that already exists, and at the human's choice when the lesson is new.
-- The general understanding then gains the lesson, or is fixed where it was wrong (Failure Case 11), and what the survey found must change, changes.
+- Every other Adapted Understanding Text built on that idea is surveyed; the one the lesson came from is not. Each answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto. If every answer conflicts, the lesson may not be project-agnostic.
+- The survey is always run when the lesson changes or contradicts project-agnostic text that already exists, and at the human's choice when the lesson is new.
+- The project-agnostic understanding then gains the lesson, or is fixed where it was wrong (Failure Case 11), and what the survey found must change, changes.
 
 How each question is answered, and by whom, is open. So is a change that arrives without its why (Failure Case 22).
 
@@ -172,7 +171,7 @@ How each question is answered, and by whom, is open. So is a change that arrives
 - each System Repo says which moment of the System Kit its copies come from;
 - a declined update is recorded with its why, so a later reading back does not take it for a new change;
 - the instructions for taking an update are taken first, on their own, and the rest under them. Otherwise an update is taken by instructions older than it (Failure Case 10);
-- open: what is sent, the System Kit's changes each with its why, or the general understanding too.
+- open: what is sent, the System Kit's changes each with its why, or the project-agnostic understanding too.
 
 ### 2.2 Today and what to check
 
@@ -188,7 +187,7 @@ Seen already, three Repo Responsibility Gaps:
 
 - one convention manual, the middle level for one way of working, is written for both repos at once, the Maintainer Repo and every System Repo, though the two need different things from it: one middle serving two repos (Failure Case 15);
 - two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (Failure Case 8);
-- the concept, `concept/`, holds the general understanding of CBC system design and its backend case in one text, not split. Its examples and words lean toward software. Which parts are general and which are the backend case is sorted in the next step.
+- the concept, `concept/`, holds the project-agnostic understanding of CBC system design and its backend case in one text, not split. Its examples and words lean toward software. Which parts are project-agnostic and which are the backend case is sorted in the next step.
 
 What the Maintainer Repo has today, for each Defined Term of the intent:
 
@@ -202,7 +201,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules |
 | File Instruction Text | an Agent Rule loaded by path, when a file it names is opened |
 | Knowledge on Trial | the Approach on Trial, for ways of working only |
-| General Understanding Text | an Idea Model, `docs/models/`; the concept, `concept/`, with its backend case inside it |
+| Project-Agnostic Understanding Text | an Idea Model, `docs/models/`; the concept, `concept/`, with its backend case inside it |
 | Adapted Understanding Text | a convention manual, `docs/conventions/`; the concept's backend case, not split from the concept |
 | Defined Term | a Glossary Name, in `docs/glossary.md` |
 | One Home per Fact | the facts-in-sync convention, and the one-home Agent Rule |
@@ -285,10 +284,10 @@ Text comes in two kinds, so far:
 
 Understanding can have levels, so far:
 
-- general: an idea bound to no project;
+- project-agnostic: an idea bound to no project;
 - adapted: the same idea narrowed to one project's needs, such as the Maintainer Repo's upkeep or a System Repo's work.
 
-An instruction comes from the adapted level where there is one, and the adapted level from the general.
+An instruction comes from the adapted level where there is one, and the adapted level from the project-agnostic one.
 
 An instruction has two readers too. The agent acts on it. The human reads it to know what they told the agent.
 
@@ -355,8 +354,8 @@ The interface between the human's mind and the agent breaks in these Failure Cas
 | 20. The Maintainer Repo judges a System Repo's change wrongly: a lesson taken as specific to the System Repo, or something specific taken as a lesson. | reading | where | between |
 | 21. Work resumes in a System Repo without reading back and updating first, and goes on from its old System Kit Copy. | aging | where | between |
 | 22. A System Repo's change reaches the Maintainer Repo without its why: the System Repo wrote down what it changed, not why. | writing | where | between |
-| 23. An adapted understanding lags behind its general idea, which has moved on. | aging | kind | either |
-| 24. A general idea is bent to one project's needs, and no longer fits the others. | writing | kind | between |
+| 23. An adapted understanding lags behind its project-agnostic idea, which has moved on. | aging | kind | either |
+| 24. A project-agnostic idea is bent to one project's needs, and no longer fits the others. | writing | kind | between |
 
 The same Failure Cases by Text Life Phase and Knowledge Axis. Every cell has a Failure Case; an empty one would point at a missing Failure Case:
 
@@ -390,7 +389,7 @@ The next step of this work tests these against the Maintainer Repo's history: th
 - which parts of before pay, and which aren't worth keeping. The Maintainer Repo's devlog alone is 8,773 lines, after 4 months;
 - whether the middle level is needed for every idea, or only for an idea that serves projects with different needs;
 - whether an update taken only when work resumes in a System Repo still holds when more than one project runs at once, or someone other than the human works in a System Repo;
-- whether part of the cost of One Home per Fact comes from levels missing or merged: an instruction written straight from a general idea is reread whenever the idea changes.
+- whether part of the cost of One Home per Fact comes from levels missing or merged: an instruction written straight from a project-agnostic idea is reread whenever the idea changes.
 
 ## 7. What would show it's solved
 
@@ -411,7 +410,7 @@ Answers met while stating the problem, kept to be weighed, not chosen:
 
   | | With a middle level | Without one |
   |---|---|---|
-  | The general idea | written once, fits any project | bent to fit each project, or repeated in each |
+  | The project-agnostic idea | written once, fits any project | bent to fit each project, or repeated in each |
   | One idea, two projects with different needs | each gets its own adapted text | one text serves both (Failure Case 15) |
-  | A change to the general idea | reread the adapted texts, a few | reread every instruction |
-  | Its cost | one more level to keep, and drift between levels (Failure Cases 23 and 24) | the general idea retold everywhere |
+  | A change to the project-agnostic idea | reread the adapted texts, a few | reread every instruction |
+  | Its cost | one more level to keep, and drift between levels (Failure Cases 23 and 24) | the project-agnostic idea retold everywhere |
