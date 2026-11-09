@@ -122,9 +122,9 @@ The Maintainer Repo keeps:
 3. the System Kit, for every System Repo to work from (below, *What the System Kit holds*);
 4. its own Adapted Case of agent work, updated as the project-agnostic understanding changes;
 5. findings from System Repos. A System Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other System Repos. The Maintainer Repo reads the changes back and judges each, by its own Adapted Case of taking a change from another repo (below, *Judging a change read back*);
-6. updates for System Repos, taken when work resumes in one (below, *An update*): a System Repo born earlier gets the System Kit's changes, or keeps working from its own System Kit Copy;
+6. updates for System Repos, taken when work resumes in one (below, *An update*): a System Repo born earlier gets the System Kit's changes, and judges each against its own System Kit Copy;
 7. its own records: the history and the backlog of this work.
-8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' System Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches back to that System Repo by an update, or the System Repo keeps working from its own version.
+8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' System Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches that System Repo by an update, judged there like any other change.
 
 Each System Repo:
 
@@ -132,7 +132,7 @@ Each System Repo:
 2. keeps understanding of its own problem: one specific system's design;
 3. keeps its own records, started from the record forms in its System Kit;
 4. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back;
-5. takes updates by its System Kit Copy of the instructions for taking them, and may change those too (below, *An update*).
+5. takes updates by its copy of the Adapted Case for taking them, and may change any part of it (below, *An update*).
 
 #### What the System Kit holds
 
