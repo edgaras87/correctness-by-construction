@@ -90,14 +90,14 @@ Each project is meant to live in a repo, a git repository, of one of two sorts, 
 - the Maintainer Repo, which holds the concept;
 - each System Repo, which builds a real system by the concept.
 
-The Maintainer Repo holds more than its own work. It also holds the understanding of agent work. No single project owns it, and every System Repo receives instructions made from it, in the System Kit.
+The Maintainer Repo holds more than its own work. It also holds the understanding of agent work. No single project owns it, and every System Repo receives it adapted, in the System Kit.
 
-Its understanding falls in two groups. Each gives instructions in two places, the Maintainer Repo and each System Repo:
+Its understanding falls in two groups. Each is adapted for two places, the Maintainer Repo and each System Repo:
 
-| Understanding | Instructions for the Maintainer Repo | Instructions shipped to each System Repo |
+| Understanding | Adapted for the Maintainer Repo | Shipped to each System Repo |
 |---|---|---|
-| How work is done with an agent: a change, a commit, a plan | the Maintainer Repo's own Instruction Texts | its part of the System Kit: the setup for the agent, its Instruction Texts and record forms |
-| How a CBC system is designed: the concept and its methods | none | the methods, as Task Instruction Texts |
+| How work is done with an agent: a change, a commit, a plan | its own Adapted Case of agent work | agent work, adapted for System Repos (below, *What the System Kit holds*) |
+| How a CBC system is designed: the concept and its methods | none | CBC system design, adapted for one kind of system (below, *What the System Kit holds*) |
 
 Between understanding and instruction, the Maintainer Repo means to keep a middle level, for both groups:
 
