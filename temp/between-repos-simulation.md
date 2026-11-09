@@ -76,3 +76,15 @@ The scenarios run in two passes. Pass 1 starts from birth. Pass 2 starts when wo
 ## 5. The scenarios
 
 Each scenario is written step by step, the human reading each before the next.
+
+### 5.1 Birth of a System Repo
+
+**Step 1. The human decides to start a System Repo.**
+
+- **Who acts:** the human. The agent in the Maintainer Repo helps, if asked.
+- **Reads:** the problem the human wants solved, as they hold it now.
+- **Decides:** the human decides what system is built, and its kind: a backend, in the example. The kind decides which of the System Kit's adapted cases the System Repo gets.
+- **Marks:** in the Maintainer Repo, that the System Repo exists: its name, where it lives, and its kind. A System Repo is blind, so the Maintainer Repo is the only side that can find it again to read it back (scenario 3).
+- **Can go wrong:**
+  - the kind has no adapted case in the System Kit yet: the trigger for a second kind of system (§1);
+  - the System Repo is known only to the human, so it is never read back (Failure Case 1).
