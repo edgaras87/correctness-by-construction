@@ -94,7 +94,7 @@ The Maintainer Repo holds more than its own work. It also holds the understandin
 
 Its understanding falls in two groups. Each is adapted for two places, the Maintainer Repo and each System Repo:
 
-| Understanding | Adapted for the Maintainer Repo | Shipped to each System Repo |
+| Understanding | Adapted for the Maintainer Repo | System Kit |
 |---|---|---|
 | How work is done with an agent: a change, a commit, a plan | its own Adapted Case of agent work | agent work, adapted for System Repos (below, *What the System Kit holds*) |
 | How a CBC system is designed: the concept and its methods | none | CBC system design, adapted for one kind of system (below, *What the System Kit holds*) |
