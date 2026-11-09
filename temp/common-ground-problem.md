@@ -166,7 +166,7 @@ How each question is answered, and by whom, is open. So is a change that arrives
 
 **An update.** How a System Repo takes one is open. Seen so far:
 
-- a System Kit Copy may differ from its original, and keeps the System Repo's specific changes. An update never overwrites it: the System Repo judges what is new, as the Maintainer Repo judges a lesson;
+- a System Kit Copy may differ from its original, and keeps the System Repo's specific changes. This holds for an Instruction Text and its Adapted Understanding Text alike, and still holds after reading back and an update. An update never overwrites it: the System Repo judges what is new, as the Maintainer Repo judges a lesson;
 - work resuming in a System Repo goes in a fixed order: reading back, judging, then the update;
 - each System Repo says which moment of the System Kit its copies come from;
 - a declined update is recorded with its why, so a later reading back does not take it for a new change;
