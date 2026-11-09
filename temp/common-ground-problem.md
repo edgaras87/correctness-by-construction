@@ -183,7 +183,7 @@ How each question is answered, and by whom, is open. So is a change that arrives
 - each System Repo says which moment of the System Kit its copies come from;
 - a declined update is recorded with its why, so a later reading back does not take it for a new change;
 - the instructions for taking an update are taken first, on their own, and the rest under them. Otherwise an update is taken by instructions older than it (Failure Case 10);
-- open: what is sent, the System Kit's changes each with its why, or the project-agnostic understanding too.
+- an update sends the System Kit's changes, each with its why. The project-agnostic understanding stays home, as at birth. A change that comes from a project-agnostic lesson quotes the lesson as its why.
 
 ### 2.2 Today and what to check
 
