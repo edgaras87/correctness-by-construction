@@ -127,7 +127,7 @@ The Maintainer Repo keeps:
 
 Each System Repo:
 
-1. keeps no understanding of agent work. It uses the instructions, and may change them;
+1. keeps the adapted understanding of agent work, as System Kit Copies, each with the Instruction Texts built on it. It uses both, and may change both. The project-agnostic understanding stays in the Maintainer Repo;
 2. gets the concept's understanding, to explain its problems. Whether a System Repo may change that understanding, since it uses it directly, is open;
 3. keeps understanding of its own problem: one specific system's design;
 4. keeps its own records, started from the record forms in its System Kit;
