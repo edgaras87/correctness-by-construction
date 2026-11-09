@@ -15,13 +15,14 @@ This document states the Common Ground Problem. It chooses no answer; answers me
 
 ## Defined Terms
 
-A Defined Term is a word or words given an exact meaning, written capitalized, so plain English stays free. Each Defined Term below is defined here, once. Six plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground. Any other lowercase word is plain English. An *italic* word is a label inside the Defined Term it belongs to. The Defined Terms below are local to the Common Ground Problem, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. They are the intent's words; the repo's own names for the same things are today's, set beside them in §2.2. When this document lands, each Defined Term replaces a repo name, joins the repo's glossary, or goes. A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
+A Defined Term is a word or words given an exact meaning, written capitalized, so plain English stays free. Each Defined Term below is defined here, once. Seven plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground, general. Any other lowercase word is plain English. An *italic* word is a label inside the Defined Term it belongs to. The Defined Terms below are local to the Common Ground Problem, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. They are the intent's words; the repo's own names for the same things are today's, set beside them in §2.2. When this document lands, each Defined Term replaces a repo name, joins the repo's glossary, or goes. A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
 
 Plain words, in a narrow sense:
 
 - **the agent:** the AI model in a session. It knows its subjects from training, and the human and the work only from what it reads.
 - **the chat:** where knowledge passes between the human and the agent; lost when a session ends, unless written down. Not text.
 - **common ground:** between the human and the agent, on what the human knows: the agent's picture of the human's understanding, built from the text, matches it and its Depth of Understanding.
+- **general:** bound to no project, as an idea any repo can adapt. Never "shared by many", nor "broad".
 - **the human:** the person whose knowledge it is, who carries it from one session to the next.
 - **knowledge:** what one knows, and how one understands it. It lives in a head.
 - **text:** where knowledge is stored, as it stood at one moment: Understanding Text and Instruction Text, wherever kept.
