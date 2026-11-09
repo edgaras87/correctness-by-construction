@@ -315,7 +315,7 @@ An instruction stands on its understanding. When the understanding moves on, the
 
 One understanding can give several instructions. When each instruction retells the understanding, the same knowledge is written several times, and they can disagree.
 
-An instruction can be copied to other repos, for the agents working there. Each copy can drift from the understanding it came from, and can change on its own.
+An instruction can be copied to other repos, for the agents working there, with the adapted understanding it stands on. Each copy can drift from the understanding it came from, and can change on its own.
 
 ### 3.4 Where the text is
 
