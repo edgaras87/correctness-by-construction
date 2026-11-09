@@ -99,16 +99,16 @@ Each scenario is written step by step, the human reading each before the next.
 
 **Step 2. The Maintainer Repo gives the new System Repo its System Kit Copies.**
 
-- **Who acts:** the human, or the agent on the human's word, in the Maintainer Repo, by the Maintainer Repo's instructions for a birth.
+- **Who acts:** the human, or the agent on the human's word, in the Maintainer Repo, by the Maintainer Repo's Adapted Case for a birth.
 - **Reads:** the System Kit chosen in step 1, as it stands now.
-- **Decides:** nothing new. Every file of the System Kit goes, whole. Among them is the Adapted Case for taking an update, which the System Repo needs in scenario 6. Each Adapted Case goes whole, so the System Repo can judge what an update brings. The Project-Agnostic Understanding Texts stay home.
+- **Decides:** nothing new. Every file of the System Kit goes, whole. Among them is the Adapted Case for taking an update, which the System Repo needs in scenario 6. Each Adapted Case goes whole, so the System Repo can judge what an update brings. The Project-Agnostic Understanding Texts stay home. Open, not decided here: the form of the birth's mechanical part, inside the Instruction Text or as a script a human can run alone. Its trigger: the intent's birth instructions are written.
 - **Marks:**
   - in the System Repo, each file says whether it is a System Kit Copy or the System Repo's own from birth. A System Kit Copy may be updated later (scenario 6). A text of its own, such as the problem statement or a record it fills, never is;
   - each Instruction Text names its Adapted Understanding Text, so an Adapted Case is read, checked and updated together;
   - Knowledge on Trial keeps its mark in the copy, so the System Repo can tell it from what is proven;
   - in the System Repo, the moment of the System Kit its copies were taken. Reading back needs it to tell the System Repo's edits from the System Kit's changes (scenario 3), and an update needs it to know what is new (scenario 6). The Common Ground Problem already asks for it (§2.1, *An update*).
 - **Borrowed:**
-  - the instructions for a birth are today's Pure Seed, `delivery/installs/pure-seed.md`;
+  - the Adapted Case for a birth is today's exchange manual with the Pure Seed, `delivery/installs/pure-seed.md`. The Pure Seed's shell commands sit inside the document, since the Maintainer Repo holds no code;
   - the human carries a delivery across, or the agent does on the human's word (`docs/conventions/exchange/` §1, *What cannot change*);
   - every file goes at birth (`docs/conventions/exchange/` §3.2, *What goes*);
   - the records go once, as Record Stubs, and are never updated (`docs/conventions/exchange/` §2.4, *The records' exception*);
