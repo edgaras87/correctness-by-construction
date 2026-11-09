@@ -109,7 +109,7 @@ Between understanding and instruction, the Maintainer Repo means to keep a middl
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
 
-The understanding of CBC system design is project-agnostic: it fits any system, not only software. The System Kit holds one Adapted Case of it so far, for backends.
+The understanding of CBC system design is project-agnostic: it fits any system, not only software. The System Kit holds it adapted for one kind of system so far (below, *What the System Kit holds*).
 
 So knowledge written in the Maintainer Repo becomes instructions that agents act on: in the Maintainer Repo itself, for its own work, and in every System Repo. The agent in a System Repo starts with none of the Maintainer Repo's context, only its System Kit Copies, and they can drift, or change on their own.
 
