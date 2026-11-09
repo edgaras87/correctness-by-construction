@@ -105,12 +105,15 @@ Each scenario is written step by step, the human reading each before the next.
 - **Marks:**
   - in the System Repo, each file says whether it is a System Kit Copy or the System Repo's own from birth. A System Kit Copy may be updated later (scenario 6). A text of its own, such as the problem statement or a record it fills, never is;
   - each Instruction Text names its Adapted Understanding Text, so an Adapted Case is read, checked and updated together;
-  - Knowledge on Trial keeps its mark in the copy, so the System Repo can tell it from what is proven.
+  - Knowledge on Trial keeps its mark in the copy, so the System Repo can tell it from what is proven;
+  - in the System Repo, the moment of the System Kit its copies were taken. Reading back needs it to tell the System Repo's edits from the System Kit's changes (scenario 3), and an update needs it to know what is new (scenario 6). The Common Ground Problem already asks for it (§2.1, *An update*).
 - **Borrowed:**
   - every file goes at birth (`docs/conventions/exchange/` §3.2, *What goes*);
   - the records go once, as Record Stubs, and are never updated (`docs/conventions/exchange/` §2.4, *The records' exception*);
-  - each copy's *Decisions* footer is left out. It points at the Maintainer Repo's decisions, which a blind System Repo cannot read (`docs/conventions/exchange/` §3.8, *The footer at delivery*).
+  - each copy's *Decisions* footer is left out. It points at the Maintainer Repo's decisions, which a blind System Repo cannot read (`docs/conventions/exchange/` §3.8, *The footer at delivery*);
+  - the moment is today's Delivery Pin: the Concept Deliverer's commit the copies equal, kept in the CBC Run (`docs/conventions/exchange/` §2.2, *The CBC Run*).
 - **Changed from today:** the Adapted Understanding Texts go too. Today the explanation stays home (`docs/conventions/exchange/` §3.2, *What goes*).
 - **Can go wrong:**
   - Knowledge on Trial in a copy is read as proven (Failure Case 18);
-  - an Instruction Text goes without its Adapted Understanding Text, so the copy holds the what without the why (Failure Case 9).
+  - an Instruction Text goes without its Adapted Understanding Text, so the copy holds the what without the why (Failure Case 9);
+  - the moment is missing or wrong, so a change of the System Kit's is read back as the System Repo's own (Failure Case 20).
