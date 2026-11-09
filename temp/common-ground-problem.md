@@ -118,7 +118,7 @@ The Maintainer Repo keeps:
 
 1. understanding of agent work;
 2. understanding of the concept, CBC system design;
-3. the System Kit, for every System Repo to work from. It is made from the understanding of agent work and of the concept, and holds Instruction Texts, the concept itself, and the Defined Terms those texts use;
+3. the System Kit, for every System Repo to work from. It is made from the understanding of agent work and of the concept, and holds Instruction Texts, each with the Adapted Understanding Text it is built on, the concept itself, and the Defined Terms those texts use;
 4. its own instructions, from the understanding of agent work, updated as that understanding changes;
 5. findings from System Repos. A System Repo uses the instructions and their adapted understanding in practice, and changes them as its problems demand. It can judge a change against its own adapted understanding, but not against the project-agnostic understanding or other System Repos. The Maintainer Repo reads the changes back and judges each, by its own adapted case of taking a change from another repo (below, *Judging a change read back*);
 6. updates for System Repos, taken when work resumes in one (below, *An update*): a System Repo born earlier gets the System Kit's changes, or keeps working from its own System Kit Copy;
