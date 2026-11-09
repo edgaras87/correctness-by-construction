@@ -120,10 +120,8 @@ The Maintainer Repo keeps:
 2. understanding of the concept, CBC system design;
 3. the System Kit, for every System Repo to work from. It is made from the understanding of agent work and of the concept, and holds Instruction Texts, the concept itself, and the Defined Terms those texts use;
 4. its own instructions, from the understanding of agent work, updated as that understanding changes;
-5. findings from System Repos. A System Repo uses the instructions in practice, and changes them as its problems demand, without the understanding to judge whether a change is right. The Maintainer Repo reads the changes and concludes one of two things:
-   - a lesson: the understanding is updated, then the System Kit, so future System Repos don't repeat a mistake or miss the same thing;
-   - specific to that System Repo's problem: the change is rejected, and the understanding and the System Kit stay as they are;
-6. updates for System Repos already at work: when the System Kit changes, a System Repo born earlier gets the change, or keeps working from its old System Kit Copy;
+5. findings from System Repos. A System Repo uses the instructions in practice, and changes them as its problems demand, without the understanding to judge whether a change is right. The Maintainer Repo reads the changes back and judges each, by its own adapted case of taking a change from another repo (below, *Judging a change read back*);
+6. updates for System Repos, taken when work resumes in one (below, *An update*): a System Repo born earlier gets the System Kit's changes, or keeps working from its own System Kit Copy;
 7. its own records: the history and the backlog of this work.
 8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' System Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches back to that System Repo by an update, or the System Repo keeps working from its own version.
 
@@ -133,7 +131,45 @@ Each System Repo:
 2. gets the concept's understanding, to explain its problems. Whether a System Repo may change that understanding, since it uses it directly, is open;
 3. keeps understanding of its own problem: one specific system's design;
 4. keeps its own records, started from the record forms in its System Kit;
-5. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back.
+5. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back;
+6. takes updates by its System Kit Copy of the instructions for taking them, and may change those too (below, *An update*).
+
+What passes between the repos, so far:
+
+| Movement | From, to | What passes |
+|---|---|---|
+| birth | the Maintainer Repo to a new System Repo | System Kit Copies, taken at one moment of the System Kit |
+| reading back | a System Repo to the Maintainer Repo | what the System Repo changed in its System Kit Copies, and why |
+| update | the Maintainer Repo to a System Repo, when work resumes in it | the System Kit's changes since its copies were taken |
+
+Each sort of repo takes a change from the other by its own adapted case of one idea, how a repo takes a change from another, with its instructions. The Maintainer Repo's is the judging below. The System Repos' is part of the System Kit: each System Repo uses its copy and may change it, and the Maintainer Repo judges those changes like any other.
+
+**Judging a change read back.** Four questions, in order, the cheapest first:
+
+1. Did the System Kit Copy already say this? Then it is a misreading (Failure Case 7). Nothing changes but, perhaps, the copy's wording.
+2. Is it specific to that System Repo's problem? Then nothing changes here; it stays in that System Repo.
+3. Does the general understanding already hold it? Then the System Kit's adapted case lost it in narrowing, and is fixed from the general understanding. The Maintainer Repo's own adapted case is checked for the same loss.
+4. Is it true for every repo? Then it is a general lesson, below.
+
+If none holds, it is a lesson for System Repos only: the System Kit's adapted case gains it, and the general understanding stays as it is. A lesson found in the Maintainer Repo's own work takes questions 3 and 4 the same way.
+
+**A general lesson.** A General Understanding Text is bound to no project, so a lesson enters it if it is true in general, whatever an adapted case says.
+
+- It is reworded to name no project, the agent drafting and the human deciding. Its first wording is kept beside it, since the rewording is the agent's reading.
+- Every other Adapted Understanding Text built on that idea is surveyed; the one the lesson came from is not. Each answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto. If every answer conflicts, the lesson may not be general.
+- The survey is always run when the lesson changes or contradicts general text that already exists, and at the human's choice when the lesson is new.
+- The general understanding then gains the lesson, or is fixed where it was wrong (Failure Case 11), and what the survey found must change, changes.
+
+How each question is answered, and by whom, is open. So is a change that arrives without its why (Failure Case 22).
+
+**An update.** How a System Repo takes one is open. Seen so far:
+
+- a System Kit Copy may differ from its original, and keeps the System Repo's specific changes. An update never overwrites it: the System Repo judges what is new, as the Maintainer Repo judges a lesson;
+- work resuming in a System Repo goes in a fixed order: reading back, judging, then the update;
+- each System Repo says which moment of the System Kit its copies come from;
+- a declined update is recorded with its why, so a later reading back does not take it for a new change;
+- the instructions for taking an update are taken first, on their own, and the rest under them. Otherwise an update is taken by instructions older than it (Failure Case 10);
+- open: what is sent, the System Kit's changes each with its why, or the general understanding too.
 
 ### 2.2 Today and what to check
 
@@ -169,7 +205,8 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | One Home per Fact | the facts-in-sync convention, and the one-home Agent Rule |
 | Knowledge Drift Repair | the Foundation Check and its Change Walk at each commit; the refinement's reads of the whole repo |
 | reading back what a System Repo learns | a CBC Run Reading |
-| an update to a System Repo already at work | a delivery with its Delivery Note |
+| an update to a System Repo | a delivery with its Delivery Note |
+| birth of a System Repo | a CBC Run Birth |
 
 ## 3. The Knowledge Axes
 
@@ -268,7 +305,7 @@ An instruction can be copied to other repos, for the agents working there. Each 
 
 A text is kept in the Maintainer Repo, or in a System Repo. Some is in both: what the Maintainer Repo ships becomes a System Kit Copy in each System Repo, and a System Repo's changes come back only when the Maintainer Repo reads them.
 
-Some failures can happen in either repo. Others happen only between the two: a System Kit Copy drifts from its original; the Maintainer Repo judges a System Repo's change wrongly, as a lesson when it was specific to the System Repo, or the other way round; an update never reaches a System Repo already at work.
+Some failures can happen in either repo. Others happen only between the two: a System Kit Copy drifts from its original; the Maintainer Repo judges a System Repo's change wrongly, as a lesson when it was specific to the System Repo, or the other way round; work resumes in a System Repo without an update.
 
 The two repos are not the two sides of §1. The human and the agent work in both.
 
@@ -313,7 +350,7 @@ The interface between the human's mind and the agent breaks in these Failure Cas
 | 18. Unchecked knowledge is read as checked, such as Knowledge on Trial taken as proven. | reading | time | either |
 | 19. A System Kit Copy drifts from its original. | aging | where | between |
 | 20. The Maintainer Repo judges a System Repo's change wrongly: a lesson taken as specific to the System Repo, or something specific taken as a lesson. | reading | where | between |
-| 21. An update never reaches a System Repo already at work, which works on from its old System Kit Copy. | aging | where | between |
+| 21. Work resumes in a System Repo without reading back and updating first, and goes on from its old System Kit Copy. | aging | where | between |
 | 22. A System Repo's change reaches the Maintainer Repo without its why: the System Repo wrote down what it changed, not why. | writing | where | between |
 | 23. An adapted understanding lags behind its general idea, which has moved on. | aging | kind | either |
 | 24. A general idea is bent to one project's needs, and no longer fits the others. | writing | kind | between |
@@ -349,6 +386,7 @@ The next step of this work tests these against the Maintainer Repo's history: th
 - when checking before costs more than it gives, and whether it can harm: by what reading it costs, by anchoring new thinking to old framing, or by being read as now;
 - which parts of before pay, and which aren't worth keeping. The Maintainer Repo's devlog alone is 8,773 lines, after 4 months;
 - whether the middle level is needed for every idea, or only for an idea that serves projects with different needs;
+- whether an update taken only when work resumes in a System Repo still holds when more than one project runs at once, or someone other than the human works in a System Repo;
 - whether part of the cost of One Home per Fact comes from levels missing or merged: an instruction written straight from a general idea is reread whenever the idea changes.
 
 ## 7. What would show it's solved
