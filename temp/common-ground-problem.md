@@ -29,7 +29,7 @@ Plain words, in a narrow sense:
 Defined Terms, in alphabetical order:
 
 - **Adapted Case:** an Adapted Understanding Text with the Instruction Texts built on it. They are read, checked and updated together.
-- **Adapted Understanding Text:** a Project-Agnostic Understanding Text narrowed to one project's needs; the middle level between Project-Agnostic Understanding Text and Instruction Text.
+- **Adapted Understanding Text:** a Project-Agnostic Understanding Text narrowed to one sort of need: a sort of repo, or a kind of system. A System Repo's copy may narrow it further, to its own project. It is the middle level between Project-Agnostic Understanding Text and Instruction Text.
 - **Common Ground Problem:** keeping common ground between the human and the agent from one session to the next, while the text it is built from goes stale; the problem this document states.
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
@@ -104,7 +104,7 @@ Between understanding and instruction, the Maintainer Repo means to keep a middl
 | Level | What it holds |
 |---|---|
 | understanding, project-agnostic | an idea any repo can adapt (§3.3) |
-| the middle | understanding adapted to one repo's needs (§3.3) |
+| the middle | understanding adapted to one sort of repo, or one kind of system (§3.3) |
 | instruction | how a piece of work is done, for the agent |
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
@@ -298,7 +298,7 @@ Text comes in two kinds, so far:
 Understanding can have levels, so far:
 
 - project-agnostic: an idea bound to no project;
-- adapted: the same idea narrowed to one project's needs, such as the Maintainer Repo's upkeep or a System Repo's work.
+- adapted: the same idea narrowed to one sort of need, such as the Maintainer Repo's upkeep or a System Repo's work.
 
 An instruction comes from the adapted level where there is one, and the adapted level from the project-agnostic one.
 
