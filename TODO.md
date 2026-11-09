@@ -50,7 +50,12 @@
       - the concept's software examples may go with the backend case,
         which meets the item on whether the concept keeps examples;
       - concept v2's release may carry it, since every CBC Run pins a
-        concept version.
+        concept version;
+      - the System Kit's description of CBC system design, for a
+        System Repo's readers, is decided with it: its form, such as
+        a README paragraph, a longer text or a playbook part, and
+        whether a System Repo may change it (the Common Ground
+        Problem, *What the System Kit holds*, item 5).
       Trigger: the close of the Plan Step "Find how what we know stays
       true".
       See: devlog 2026-11-08, CBC design beyond backends;
