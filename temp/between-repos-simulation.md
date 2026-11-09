@@ -24,7 +24,7 @@ Eight scenarios, in order:
 2. **Work in a System Repo:** it changes its System Kit Copies, and marks what it changed. It chooses its stack once its problem is framed, and marks the choice for the Maintainer Repo to read.
 3. **Reading a System Repo:** the Maintainer Repo reads what changed since it last read.
 4. **Judging what was read:** the four questions, ending in an Understanding Lesson or none.
-5. **The flow down:** a project-agnostic change, the survey, every adapted case it touches, and their instructions.
+5. **The flow down:** a project-agnostic change, the survey, every Adapted Case it touches.
 6. **Updating a System Repo:** the System Kit's changes reach a System Repo when work resumes in it.
 7. **A lesson from our own work:** the Maintainer Repo finds an Understanding Lesson in its own work.
 8. **New knowledge from the human:** the human learns something outside any work.
@@ -52,6 +52,7 @@ Each step has these fields. A field with nothing in it is left out.
 - **Marks:** what this step must write down for a later step, or before a session ends.
 - **Can go wrong:** the Failure Cases this step can hit, by number.
 - **Borrowed:** what the step takes from today's exchange, and from where. The agent had read today's exchange before writing this, so each borrowing is marked.
+- **Changed from today:** what the step does differently from today's exchange, and where today says it. Each goes to the Common Ground Problem's §2.2.
 - **Added later:** what a later step found missing here, which step found it, and why.
 
 ## 3. The example
@@ -69,7 +70,7 @@ Other kinds of change go differently. Each is written as a variant, only at the 
 - **c. Delivered Knowledge on Trial changed:** the original is itself unjudged.
 - **d. A copy no longer used, or deleted:** an absence.
 - **e. A change with no why written.**
-- **f. Which half of the pair it touches:** an Instruction Text copy, or a copy of its Adapted Understanding Text.
+- **f. Which half of the Adapted Case it touches:** an Instruction Text copy, or a copy of its Adapted Understanding Text.
 
 ## 4. Two passes of the cycle
 
@@ -87,7 +88,7 @@ Each scenario is written step by step, the human reading each before the next.
 - **Reads:** the problem the human brings, written as a problem statement: the situation, and what is hostile in it, with no promise set yet. The framing sets the promise later, inside the System Repo. Also what each System Kit is for. Today there is one, for backends.
 - **Decides:** the human decides which System Kit fits, or that none does. The stack is not chosen here: CBC design chooses it once the problem is framed, inside the System Repo (scenario 2). If none fits:
   - the System Repo is not started;
-  - or it is started with the project-agnostic texts, and writes its own adapted case as Knowledge on Trial, judged when it is read back. If that case holds, it may become a second System Kit (§1). A branch, not simulated: its trigger is the first problem no System Kit fits.
+  - or it is started with the project-agnostic texts, and writes its own Adapted Case as Knowledge on Trial, judged when it is read back. If that case holds, it may become a second System Kit (§1). A branch, not simulated: its trigger is the first problem no System Kit fits.
 - **Marks:**
   - in the Maintainer Repo, that the System Repo exists: its name, where it lives, which System Kit it got, and why. A System Repo is blind, so the Maintainer Repo is the only side that can find it again to read it back (scenario 3);
   - the problem statement goes with the new System Repo at birth, its first text of its own. The Maintainer Repo keeps no copy.
@@ -100,15 +101,16 @@ Each scenario is written step by step, the human reading each before the next.
 
 - **Who acts:** the agent, in the Maintainer Repo, on the human's word. The human carries the files across, since nothing arrives by itself.
 - **Reads:** the System Kit chosen in step 1, as it stands now.
-- **Decides:** nothing new. Every file of the System Kit goes, whole. Among them are the instructions for taking an update, which the System Repo needs in scenario 6. Each Instruction Text goes with its Adapted Understanding Text, so the System Repo can judge what an update brings. The Project-Agnostic Understanding Texts stay home. Today the explanation stays home.
+- **Decides:** nothing new. Every file of the System Kit goes, whole. Among them is the Adapted Case for taking an update, which the System Repo needs in scenario 6. Each Adapted Case goes whole, so the System Repo can judge what an update brings. The Project-Agnostic Understanding Texts stay home.
 - **Marks:**
   - in the System Repo, each file says whether it is a System Kit Copy or the System Repo's own from birth. A System Kit Copy may be updated later (scenario 6). A text of its own, such as the problem statement or a record it fills, never is;
-  - each Instruction Text names its Adapted Understanding Text, so the two are read, checked and updated as a pair;
+  - each Instruction Text names its Adapted Understanding Text, so an Adapted Case is read, checked and updated together;
   - Knowledge on Trial keeps its mark in the copy, so the System Repo can tell it from what is proven.
 - **Borrowed:**
   - every file goes at birth (`docs/conventions/exchange/` §3.2, *What goes*);
   - the records go once, as Record Stubs, and are never updated (`docs/conventions/exchange/` §2.4, *The records' exception*);
   - each copy's *Decisions* footer is left out. It points at the Maintainer Repo's decisions, which a blind System Repo cannot read (`docs/conventions/exchange/` §3.8, *The footer at delivery*).
+- **Changed from today:** the Adapted Understanding Texts go too. Today the explanation stays home (`docs/conventions/exchange/` §3.2, *What goes*).
 - **Can go wrong:**
   - Knowledge on Trial in a copy is read as proven (Failure Case 18);
   - an Instruction Text goes without its Adapted Understanding Text, so the copy holds the what without the why (Failure Case 9).
