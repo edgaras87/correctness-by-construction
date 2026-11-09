@@ -40,7 +40,7 @@ A branch the example does not take is noted at the step where it starts, with it
 Fixed before the simulation starts:
 
 - **A System Repo is blind:** it has no address for the Maintainer Repo.
-- **Nothing arrives by itself:** the human carries every change across.
+- **Nothing arrives by itself:** nothing crosses between the repos without the human's word. The human carries it, or the agent does on the human's word.
 
 ## 2. How a step is written
 
@@ -99,7 +99,7 @@ Each scenario is written step by step, the human reading each before the next.
 
 **Step 2. The Maintainer Repo gives the new System Repo its System Kit Copies.**
 
-- **Who acts:** the agent, in the Maintainer Repo, on the human's word. The human carries the files across, since nothing arrives by itself.
+- **Who acts:** the human, or the agent on the human's word, in the Maintainer Repo, by the Maintainer Repo's instructions for a birth.
 - **Reads:** the System Kit chosen in step 1, as it stands now.
 - **Decides:** nothing new. Every file of the System Kit goes, whole. Among them is the Adapted Case for taking an update, which the System Repo needs in scenario 6. Each Adapted Case goes whole, so the System Repo can judge what an update brings. The Project-Agnostic Understanding Texts stay home.
 - **Marks:**
@@ -108,6 +108,8 @@ Each scenario is written step by step, the human reading each before the next.
   - Knowledge on Trial keeps its mark in the copy, so the System Repo can tell it from what is proven;
   - in the System Repo, the moment of the System Kit its copies were taken. Reading back needs it to tell the System Repo's edits from the System Kit's changes (scenario 3), and an update needs it to know what is new (scenario 6). The Common Ground Problem already asks for it (§2.1, *An update*).
 - **Borrowed:**
+  - the instructions for a birth are today's Pure Seed, `delivery/installs/pure-seed.md`;
+  - the human carries a delivery across, or the agent does on the human's word (`docs/conventions/exchange/` §1, *What cannot change*);
   - every file goes at birth (`docs/conventions/exchange/` §3.2, *What goes*);
   - the records go once, as Record Stubs, and are never updated (`docs/conventions/exchange/` §2.4, *The records' exception*);
   - each copy's *Decisions* footer is left out. It points at the Maintainer Repo's decisions, which a blind System Repo cannot read (`docs/conventions/exchange/` §3.8, *The footer at delivery*);
