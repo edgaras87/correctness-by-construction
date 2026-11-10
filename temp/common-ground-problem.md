@@ -185,24 +185,40 @@ How each question is answered, and by whom, is open. So is a change that arrives
 - the instructions for taking an update are taken first, on their own, and the rest under them. Otherwise an update is taken by instructions older than it (Failure Case 10);
 - an update sends the System Kit's changes, each with its why. The project-agnostic understanding stays home, as at birth. A change that comes from a project-agnostic lesson quotes the lesson as its why.
 
-#### The case worked here
+#### A System Repo's change
 
-Of what passes between the repos, one case is worked here: a System Repo changes one of its System Kit Copies. Other cases exist, such as a birth, a lesson found in the Maintainer Repo's own work, or new knowledge from the human. They are left on purpose until this problem is finished (`TODO.md`, the item on resuming the simulation).
+This section follows one source of the Common Ground Problem: a System Repo changes its System Kit Copies, and the change has to reach the Maintainer Repo and be judged there. Other sources exist, such as a birth, a lesson found in the Maintainer Repo's own work, or new knowledge from the human. They are left on purpose until this problem is finished (`TODO.md`, the item on resuming the simulation).
 
-The example: a System Repo works by its System Kit Copy of the commit-message Task Instruction Text, which caps a commit subject at 50 characters. Its scope names are long, and the cap fails its work. It raises the cap in its copy to 60.
+A change is followed in two halves:
 
-The case, as intended:
+- **First half, recorded and read:** how the System Repo records its change, and how the Maintainer Repo finds it. Its cases are what was changed. They are the same however deep the change turns out to go, since that is known only once it is judged.
+- **Second half, decided and updated:** how the Maintainer Repo decides, and how the update is written. Its cases are how deep the change goes in the Maintainer Repo.
 
-1. **The change.** The System Repo changes its copy when its work shows the copy does not fit, never ahead of that. It writes why: what happened, and whether it thinks the change answers its own problem or one any repo would meet. When it changes one half of an Adapted Case, it says whether the other half still matches (Failure Case 8). Its copy keeps the change (above, *An update*).
-2. **How the change is found.** The Maintainer Repo keeps where each System Repo lives, since a System Repo cannot point back. It reads each System Repo from where the last reading stopped, the first time from where the copies arrived. It compares each System Kit Copy across that stretch of the System Repo's own history, and reads each change's why. So every change is found once: one with no why is found by the comparison alone (Failure Case 22), and one already judged is not found again. A comparison with the System Kit would find again every change the copy kept. Open: an update lands inside the next stretch, and how its changes are told from the System Repo's own.
-3. **How it is judged.** By the four questions (above, *Judging a change read back*). The System Repo's own view of its change is input, never the verdict. In the example, long scope names point to question 2: specific to that System Repo, so nothing changes in the Maintainer Repo. If the cap turns out wrong for every repo, question 4 makes it a project-agnostic lesson.
-4. **What goes back.** The System Repo learns the verdict with the next update (above, *An update*). Its copy keeps its change either way. If the change became a lesson, the System Kit changes, and the update brings that change with its why.
+The cases are worked one at a time. The first is worked whole; each other case is then checked against it, and what differs is written. A case that grows too complex goes to TODO, to be checked once this problem is finished.
 
-The case holds for a change to any delivered copy: an Instruction Text, an Adapted Understanding Text, both, or a Defined Term. Three kinds of change differ from it, so far, each at the parts named. They are not worked here:
+The cases so far:
 
-- **delivered Knowledge on Trial changed:** judged differently. The original was never proven, so the change is evidence for its trial, not a fix to proven text;
-- **new text of the System Repo's own, on trial:** found differently, since there is no copy to compare: only if the System Repo offers it. Judged differently too: with no original, the first question does not apply;
-- **a copy no longer used:** found differently. Nothing in the file changes, so only a mark shows it.
+| Half | Case | Status | Differs so far |
+|---|---|---|---|
+| first | both halves of one Adapted Case | being worked, below | — |
+| first | an Instruction Text only | not yet checked | recorded: says whether its Adapted Understanding Text still matches (Failure Case 8) |
+| first | an Adapted Understanding Text only | not yet checked | recorded: says whether its Instruction Texts still match (Failure Case 8) |
+| first | a Defined Term | not yet checked | — |
+| first | delivered Knowledge on Trial | not yet checked | decided: the original was never proven, so the change is evidence for its trial |
+| first | new text of the System Repo's own, on trial | not yet checked | read: found only if offered, with no copy to compare; decided: with no original, the first question does not apply |
+| first | a copy no longer used | not yet checked | read: nothing in the file changes, so only a mark shows it |
+| second | a. it stays in the System Repo | not yet checked | — |
+| second | b. the System Kit's Adapted Case changes | not yet checked | the update brings it to this System Repo too, whose copy already has it |
+| second | c. the project-agnostic text changes | not yet checked | the other Adapted Cases are surveyed, the Maintainer Repo's own among them |
+
+The example: a System Repo works by its System Kit Copy of the commit-message Task Instruction Text, which caps a commit subject at 50 characters. Its scope names are long, and the cap fails its work. It raises the cap in its copy to 60, and its copy of the Adapted Understanding Text, which says why the cap is 50, now says why 60 fits its scope names.
+
+**First half, for both halves of one Adapted Case:**
+
+1. **How the change is recorded.** The System Repo changes its copy when its work shows the copy does not fit, never ahead of that. It writes why: what happened, and whether it thinks the change answers its own problem or one any repo would meet. What changed needs no record: the comparison shows it. Its copy keeps the change (above, *An update*).
+2. **How the change is read.** The Maintainer Repo keeps where each System Repo lives, since a System Repo cannot point back. It reads each System Repo from where the last reading stopped, the first time from where the copies arrived. It compares each System Kit Copy across that stretch of the System Repo's own history, and reads each change's why. So every change is found once: one with no why is found by the comparison alone (Failure Case 22), and one already judged is not found again. A comparison with the System Kit would find again every change the copy kept. Open: an update lands inside the next stretch, and how its changes are told from the System Repo's own.
+
+**Second half, not yet written.** It waits for a depth to be chosen to work first. Known so far: the four questions decide (above, *Judging a change read back*), and the System Repo's own view of its change is input, never the verdict. In the example, long scope names point to question 2, depth a. If the cap turns out wrong for every repo, question 4 makes it a project-agnostic lesson, depth c. The verdict reaches the System Repo with the next update, and its copy keeps its change either way (above, *An update*).
 
 ### 2.2 Today and what to check
 
