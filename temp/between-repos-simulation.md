@@ -165,11 +165,12 @@ Birth happens in the idea's repo, which becomes the System Repo. Its main holds 
 
 **Step 2. The Maintainer Repo gives the new System Repo its System Kit Copies.**
 
-- **Who acts:** the human, or the agent on the human's word. It works from the Maintainer Repo, and writes only into the idea's repo.
-- **Adapted Case:** the Maintainer Repo's, for a birth. It delivers everything and decides nothing. In order:
-  1. cut a birth branch from main, which holds the brief;
-  2. commit the System Kit Copies there as they arrived, the moment in each commit and in the first record entry;
-  3. the human checks that every file arrived whole and the moment is written, before step 3.
+- **Who acts:** the human, or the agent on the human's word, for the delivery; the agent, for the check. Both work from the Maintainer Repo, and write only into the idea's repo.
+- **Adapted Case:** two, both the Maintainer Repo's:
+  - for a birth. It delivers everything and decides nothing. In order:
+    1. cut a birth branch from main, which holds the brief;
+    2. commit the System Kit Copies there as they arrived, the moment in each commit and in the first record entry;
+  - for checking a delivery, run once the delivery is committed. It is written apart from the one that delivers, so it does not share its mistakes. It reads the System Kit on its own, and checks that each copy equals its original as delivered, nothing is missing, nothing is extra, and the moment is written. The human gives the word on what it found, before step 3.
 - **Reads:** the System Kit chosen in step 1, as it stands now.
 - **Decides:** nothing new. The birth delivers everything and decides nothing. Every file of the System Kit goes, whole. Among them:
   - the two Adapted Cases the System Repo needs before its work: the one for finishing its birth (steps 3 and 4), and the one for taking an update (scenario 6);
@@ -192,20 +193,22 @@ Birth happens in the idea's repo, which becomes the System Repo. Its main holds 
   - every file goes at birth (`docs/conventions/exchange/` §3.2, *What goes*);
   - the start is today's Receipt Branch, `birth-seed` (`delivery/installs/pure-seed.md`, step 4; `docs/glossary.md`, *Receipt Branch*);
   - the moment is today's Delivery Pin, the Concept Deliverer's commit the copies equal. The Pure Seed writes it in each commit's subject on `birth-seed`, and in the birth entry of the Decisions Log (`delivery/installs/pure-seed.md`, steps 2 and 4);
-  - the check is today's *Check the seed* (`delivery/installs/pure-seed.md`, step 6);
+  - what is checked is today's *Check the seed* (`delivery/installs/pure-seed.md`, step 6). At a Delivery Pin every copy equals its Master Copy without its footer, and `diff` shows it (`docs/conventions/exchange/` §2.3, *The bytes at the Delivery Pin*);
   - the records go once, as Record Stubs, and are never updated (`docs/conventions/exchange/` §2.4, *The records' exception*);
   - each copy's *Decisions* footer is left out. It points at the Maintainer Repo's decisions, which a blind System Repo cannot read (`docs/conventions/exchange/` §3.8, *The footer at delivery*).
 - **Changed from today:**
   - the Adapted Understanding Texts go too. Today the explanation stays home (`docs/conventions/exchange/` §3.2, *What goes*);
   - main grows from the start. Today main stays at a hygiene commit, the Receipt Branch is never merged, and the agent commits the delivered files again on main, in its own arrangement (`delivery/installs/pure-seed.md`, its opening and steps 3 to 5). Here main starts with the brief, the housekeeping files arrive with the System Kit, and every later change is a commit above the start;
   - the prompt goes with the System Kit. Today it sits in the Pure Seed, in the Concept Deliverer, and never reaches the CBC Run (`delivery/installs/pure-seed.md`, step 7);
+  - a second Adapted Case checks the delivery. Today the Pure Seed both delivers and checks (`delivery/installs/pure-seed.md`, steps 4 and 6);
   - the brief is in the repo at birth. Today a pure birth keeps it out: it arrives later, and opens CBC Framing (`delivery/installs/pure-seed.md`, step 7). A full-auto birth puts it in `temp/` (`.claude/approaches-on-trial/auto-run.md`, *Stages*, stage 6);
   - today two texts disagree on the start. The Pure Seed writes the Read-Through Commit as *none* at birth, and keeps the delivery as it arrived on the Receipt Branch (`delivery/installs/pure-seed.md`, steps 2 and 4). The exchange's cycle has the CBC Run write its birth commit b as its Read-Through Commit (`docs/conventions/exchange/` §2.5, *One cycle*). The start here is the Pure Seed's, the delivery as it arrived.
 - **Can go wrong:**
   - Knowledge on Trial in a copy is read as proven (Failure Case 18);
   - an Instruction Text goes without its Adapted Understanding Text, so the copy holds the what without the why (Failure Case 9);
   - the moment is missing or wrong, so a change of the System Kit's is read back as the System Repo's own (Failure Case 20);
-  - the start holds an edit, so reading back takes the edit for the System Kit's text, and it is never judged (Failure Case 19).
+  - the start holds an edit, so reading back takes the edit for the System Kit's text, and it is never judged (Failure Case 19);
+  - the check is written from the delivery's own text, so a file the delivery misses, the check misses too.
 
 **Step 3. The human starts the agent, and the agent does the birth's work.**
 
