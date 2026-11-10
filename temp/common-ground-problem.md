@@ -185,6 +185,19 @@ How each question is answered, and by whom, is open. So is a change that arrives
 - the instructions for taking an update are taken first, on their own, and the rest under them. Otherwise an update is taken by instructions older than it (Failure Case 10);
 - an update sends the System Kit's changes, each with its why. The project-agnostic understanding stays home, as at birth. A change that comes from a project-agnostic lesson quotes the lesson as its why.
 
+#### The case worked here
+
+Of what passes between the repos, one case is worked here: a System Repo changes one of its System Kit Copies. Other cases exist, such as a birth, a lesson found in the Maintainer Repo's own work, or new knowledge from the human. They are left on purpose until this problem is finished (`TODO.md`, the item on resuming the simulation).
+
+The example: a System Repo works by its System Kit Copy of the commit-message Task Instruction Text, which caps a commit subject at 50 characters. Its scope names are long, and the cap fails its work. It raises the cap in its copy to 60.
+
+The case, as intended:
+
+1. **The change.** The System Repo changes its copy when its work shows the copy does not fit, never ahead of that. It writes why: what happened, and whether it thinks the change answers its own problem or one any repo would meet. Its copy keeps the change (above, *An update*).
+2. **How the change is found.** The Maintainer Repo keeps where each System Repo lives, since a System Repo cannot point back. It reads each System Repo from where the last reading stopped, the first time from where the copies arrived. It compares each System Kit Copy across that stretch of the System Repo's own history, and reads each change's why. So every change is found once: one with no why is found by the comparison alone (Failure Case 22), and one already judged is not found again. A comparison with the System Kit would find again every change the copy kept. Open: an update lands inside the next stretch, and how its changes are told from the System Repo's own.
+3. **How it is judged.** By the four questions (above, *Judging a change read back*). The System Repo's own view of its change is input, never the verdict. In the example, long scope names point to question 2: specific to that System Repo, so nothing changes in the Maintainer Repo. If the cap turns out wrong for every repo, question 4 makes it a project-agnostic lesson.
+4. **What goes back.** The System Repo learns the verdict with the next update (above, *An update*). Its copy keeps its change either way. If the change became a lesson, the System Kit changes, and the update brings that change with its why.
+
 ### 2.2 Today and what to check
 
 Today the Maintainer Repo is `correctness-by-construction`. Its concept is correctness by construction, written in plain words. It holds documents only, no code.
