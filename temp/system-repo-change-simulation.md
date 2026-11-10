@@ -26,6 +26,7 @@ Each step has these fields. A field with nothing in it is left out.
 - **What must happen:** the outcome, and who acts.
 - **Options:** what could be done here, today's way among them.
 - **Chosen:** the option taken, and why the others were not.
+- **Adapted Case:** which Adapted Case runs the step, whose it is, what loads it, and what it must say for this step. Once a half is done, these are read together: they give the rules, and later the Adapted Case texts.
 - **Open:** what the step leaves undecided, each with the trigger that decides it.
 - **Today:** what is borrowed from today, and what changes, each with its source.
 
@@ -84,9 +85,15 @@ Seven steps:
   - the System Repo's proposal: its own problem, or one any repo would meet. It is marked as a proposal. The Maintainer Repo judges every change, and says whether it agrees, and why if not (§4).
 
   The entry says the change as it stands. A later edit rewrites it, and git keeps the old one.
+- **Adapted Case:** the System Repo's, for changing a System Kit Copy, itself a System Kit Copy. It loads when a copy is touched. For this step it says:
+  - a copy changes only when the work shows it does not fit, never ahead;
+  - the entry is written with the change, with its four parts;
+  - what happened is written concretely, in the System Repo's own words;
+  - whether the change is its own or any repo's is a proposal, never a verdict.
 - **Open:** which moment of the System Kit an entry is written against, and whether an entry goes once an update takes its change in. Before the first update, every entry stands against the moment the copies arrived. Its trigger: the first update to reach a System Repo whose copies have entries.
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
+  - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
   - borrowed: the entry names which work found the change, as a Decisions Log entry names its Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
   - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the copy keeps it (`temp/common-ground-problem.md` §2.1, *An update*);
   - changed: today nothing is written into a copy but the edit, since "a file says how to use it, never its own history", and the why goes in the Decisions Log (`docs/conventions/exchange/` §5.1). Here the why goes in the copy's Adapted Understanding Text, which is not read while working;
