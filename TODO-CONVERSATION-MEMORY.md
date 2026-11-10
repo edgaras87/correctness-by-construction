@@ -1663,6 +1663,254 @@ from a first Adapted Case the Maintainer Repo writes, on trial
 (`40fa928`). The description of CBC system design waits for the
 concept's split (`dde07a0`). Next, scenario 1, step 3.
 
+### 2026-11-10, later
+
+#### What the reviewer said
+
+- **The start:** "which one we should keep and why: [the agent's
+  line on committing the received files unchanged first] ? should we
+  include that we deliver problem brief and first promp to start?
+  maybe we should not commit from maintainer? do we include hash
+  which should be included in records from maintainer in that promp?
+  what else i may be missing? i think we have sep branck for that
+  preparation in the runs, at least we had i think in run 3? do we
+  need to mention that?"
+- **A birth Adapted Case on the System Repo's side:** "so we prepare
+  in maintainer not only problem brief but also prompt. also i want
+  to have some Adapted Case for System Repo , which would know what
+  it has to do in the beggining. If we say that we make first commit
+  from Maintainer with System Kit Copy in new Repo, then in System
+  Repo should be Adapted Case, that knows that it receives promp and
+  has to cut new branch and do stuff. now, if we commit System Kit
+  Copy most likely we have create local git repo and commited
+  hygiene already? so this part shoud be clear what do what. does
+  first job of agent is to read prompt and prepare everything? how
+  much maintainer tells what shoud be prepared and how much system
+  repo agent has to figure out itself?"
+- **The prompt and the brief:** "we say that promp is the same for
+  all birth, right? so it should live together with maintainer's
+  part of birth Adapted case? as sep doc to use and not in
+  instructions? instructions will refer to it? should we consider or
+  left open if that prompt should be also touch durring delivery by
+  problem brief?" And: "Also we should decide how that problem brief
+  is started and when it reach new repo? do we start problem brief
+  in maintainer repo temp/ and when we know which system kit we use
+  we deliver it in new repo, so basicaly when we finish on problem
+  brief? or we could have like default new repo each time we start
+  on problem brief."
+- **A repo for an idea:** "i thinking to have brief in sep repo. I
+  think i dont want to polute maintainer of extend with another
+  resposibility of problem intents. also System Repo could have its
+  history, which we may want to edit maybe." And: "That repo may die
+  not started a project. That repo does all briefing stuff not on
+  main branch. when we decided to work on that problem briefing, we
+  edit git history on that branch before we merge to main, so we
+  keep history of problem but in controled way." And: "i still want
+  marks for prompt here. if it standart for system kit, we could
+  deliver together with the kit. but i want to leave open question
+  if there should prompt we posible edits by problem briefing, which
+  real world experience may demand." And: "also  that way maintainer
+  would need to reg those and edit by how we work on them, like did
+  it stated and what system kit is used, does it still on briefing,
+  or did we droped. also i could open new session and work on ideas
+  from fresh context, but have ability to bring required context
+  what maintainer had access, like project-agnostic ideas or prev or
+  now running projects."
+- **Merge first, or go on:** "now should we merge to main and then
+  again new branch cutted or we continue on say it should be open
+  question and checked by real application, but for now i think we
+  should choose one and mark second as trigger to check and confirm.
+  what u think?"
+- **An empty main and a messy branch:** "cant we work on briefing
+  branch with empty main branch?" And: "we have this messy branch
+  where we commiting how we need. then before we fast-forward, we
+  copy that branch, clean up  there and fast forward to main. clean
+  up branch can be deleted as it is on main now, messy is kept for
+  history and local only, no remote push ever if we need hide messy
+  part of briefing." And: "so basicaly we could repeat same thing
+  for system birth scenario, where in the end branch is copied,
+  cleaned, fast forward and deleted by keeping messy one for history
+  and decliend for remote push."
+- **Copy or clean in place:** "do we really need to copy branch
+  before deleting, or that cleanup should go in same branch and we
+  rebase on main only cleaned part?"
+- **The step's fields:** "we have who acts, read, decides...do we
+  need options here? also maybe we have section for Adapted Case as
+  sep, which describes which is used and responsibility in this
+  step? Why now it feels that it need steps inside step, like cut
+  branch, copy system-kit, ...? why are those not sep steps? are
+  they to small? should we have sep steps in each step?"
+- **The check:** "Can we have agent Adapted case that checks that?
+  should it be next to copy of system kit, where one delivers and
+  other check the deliver?" Then: "why we have check on system repo
+  side? i was thinking only about from maintainer?"
+
+#### What the reviewer said, edited
+
+The same words, with grammar and spelling fixed, the meaning kept:
+
+- **The start:** "Which one should we keep, and why? Should we
+  include that we deliver the problem brief and the first prompt to
+  start? Maybe the Maintainer Repo should not commit? Do we put the
+  hash that the Maintainer Repo's records must hold in that prompt?
+  What else may I be missing? I think we had a separate branch for
+  that preparation in the runs, at least in run 3; do we need to
+  mention that?"
+- **A birth Adapted Case on the System Repo's side:** "So the
+  Maintainer Repo prepares not only the problem brief but also the
+  prompt. I also want an Adapted Case for the System Repo that knows
+  what it has to do at the beginning. If the Maintainer Repo makes
+  the first commit with the System Kit Copies in the new repo, then
+  the System Repo should have an Adapted Case that knows it receives
+  a prompt, has to cut a new branch, and so on. If we commit the
+  System Kit Copies, we have most likely created the local git repo
+  and committed the hygiene files already? So it should be clear who
+  does what. Is the agent's first job to read the prompt and prepare
+  everything? How much does the Maintainer Repo say about what is
+  prepared, and how much does the System Repo's agent work out
+  itself?"
+- **The prompt and the brief:** "We say the prompt is the same for
+  every birth, right? So should it live with the Maintainer Repo's
+  part of the birth Adapted Case, as a separate document to use, not
+  inside the instructions, with the instructions referring to it?
+  Should we consider, or leave open, whether the problem brief also
+  changes that prompt during delivery?" And: "We should also decide
+  how the problem brief is started and when it reaches the new repo.
+  Do we start it in the Maintainer Repo's temp/ and deliver it to
+  the new repo once we know which System Kit we use, so when the
+  brief is finished? Or do we open a default new repo each time we
+  start a problem brief?"
+- **A repo for an idea:** "I am thinking of keeping the brief in a
+  separate repo. I don't want to burden the Maintainer Repo, or
+  extend it, with another responsibility: problem intents. Also, the
+  System Repo could have its own history, which we may want to
+  edit." And: "That repo may die without a project starting. It does
+  all the briefing off the main branch. When we decide to go ahead
+  with the brief, we edit the git history on that branch before we
+  merge to main, so the problem's history is kept, in a controlled
+  way." And: "I still want the prompt marked here. If it is standard
+  for a System Kit, we could deliver it with the System Kit. But I
+  want to leave open whether the problem brief may edit the prompt,
+  which real-world experience may demand." And: "That way the
+  Maintainer Repo would need to register these repos and update each
+  by how the work on it goes: whether it started and which System
+  Kit it uses, whether it is still briefing, or whether we dropped
+  it. I could also open a new session and work on ideas from a fresh
+  context, but be able to bring in the context the Maintainer Repo
+  had access to, such as project-agnostic ideas, or earlier or
+  running projects."
+- **Merge first, or go on:** "Should we merge to main and then cut a
+  new branch, or continue on the same one? We could say it is an
+  open question, to be checked by real use. But for now I think we
+  should choose one, and mark the other with a trigger to check and
+  confirm it. What do you think?"
+- **An empty main and a messy branch:** "Can't we work on the
+  briefing branch with main empty?" And: "We have this messy branch
+  where we commit however we need. Then, before we fast-forward, we
+  copy that branch, clean it up there, and fast-forward main to it.
+  The cleaned branch can be deleted, since it is on main now. The
+  messy one is kept for history, local only, never pushed to a
+  remote, if we need to hide the messy part of the briefing." And:
+  "So we could repeat the same thing in the birth scenario: at the
+  end the branch is copied, cleaned, fast-forwarded and deleted,
+  keeping the messy one for history and never pushing it."
+- **Copy or clean in place:** "Do we really need to copy the branch
+  before deleting it, or should the cleanup happen on the same
+  branch, with only the cleaned part rebased onto main?"
+- **The step's fields:** "We have Who acts, Reads, Decides. Do we
+  need options here? And maybe a section of its own for the Adapted
+  Case, describing which one is used and its responsibility in this
+  step? Why does it now feel as if steps need steps inside them,
+  like cutting a branch or copying the System Kit? Why are those not
+  separate steps? Are they too small? Should each step have separate
+  steps?"
+- **The check:** "Can an agent's Adapted Case do that check? Should
+  it sit next to the one that copies the System Kit, so that one
+  delivers and the other checks the delivery?" Then: "Why is there a
+  check on the System Repo's side? I was thinking only of the
+  Maintainer Repo's."
+
+#### What the reviewer asked, as the agent would ask it
+
+The questions the reviewer was asking, put by the agent:
+
+1. Who fixes where a System Repo's own history starts, the birth
+   before the agent acts or the agent's first commit, and what of
+   today's birth, its Receipt Branch among it, does that borrow?
+2. Does the birth deliver the brief and the first prompt, and does
+   the System Kit's moment travel in the prompt or in the files?
+3. What does the Maintainer Repo prepare at a birth, and what does
+   the System Repo's agent work out itself, by an Adapted Case of
+   its own?
+4. Where does the fixed prompt live, and may a brief change it?
+5. Where is a brief drafted, and when does it reach the repo that
+   will be born?
+6. Can a brief live in a repo of its own from the first idea, made
+   and registered by the Maintainer Repo, which may die or later be
+   born into a System Repo?
+7. After a brief's history is cleaned, does main take it before
+   birth, or does birth go on from the same branch?
+8. Can main stay empty until the brief is finished, and can the
+   messy branch be kept, local, while only a cleaned branch reaches
+   main, at the brief and at birth alike?
+9. Must the clean history be built on a branch apart, or can it be
+   cleaned in place?
+10. Does a step need fields for what it leaves open and for the
+    Adapted Case it runs by, and where does one step end and the
+    next begin?
+11. Who checks a delivery, and by which Adapted Case?
+
+#### What the agent added
+
+- **Today's texts disagree on the start:** the Pure Seed writes the
+  Read-Through Commit as *none* at birth; the exchange's cycle has
+  the CBC Run write its birth commit b.
+- **The moment goes in the files, never the prompt:** a prompt lives
+  in one session, and Run 3 showed a rule told only in a session is
+  lost there.
+- **A prompt fixed per System Kit keeps births comparable;** a brief
+  retold in the prompt would be a second home for the problem.
+- **Blindness is only told today:** Run 3's agent read a checkout on
+  disk of the repo it took copies from. No Failure Case covers it.
+- **Keeping the messy branch off the remote does not hide it from
+  the agent** in the same repo: `git log --all` shows it. Hence the
+  open question of moving it out.
+- **The cleanup can delete what reading back needs:** lessons are
+  written before it, and a record citing a messy commit points at
+  nothing on main.
+- **The start must survive the birth's cleanup whole:** the clean
+  branch is built on the start itself, and the start's commit is
+  checked the same on both branches.
+- **A clean branch apart keeps two rules:** the messy branch is
+  never rewritten, and main moves once, after the human approves.
+  Cleaning in place breaks the first; cleaning on main, the second.
+- **An empty main works:** tried in a scratch repo, the first commit
+  goes on the briefing branch, and main is made later at the clean
+  tip.
+- **Steps inside a step are its Adapted Case's order.** A step is
+  one actor, in one repo, doing one kind of work, ending in
+  something a later step reads.
+- **A misreading:** the agent first put the delivery's check on the
+  System Repo's side, with a file list. A blind repo cannot compare
+  with the System Kit; the reviewer had meant a second Adapted Case
+  beside the one that delivers.
+
+#### What the reviewer took
+
+The start is the delivery as it arrived, made by the birth before
+the agent acts, and today's way kept over the agent's first draft; a
+birth Adapted Case on the System Repo's side gives the outcomes and
+the order, never the arrangement (`e95b73b`). A brief lives in a
+repo of its own, scenario 0: made and registered by the Maintainer
+Repo, worked on a briefing branch kept local, cleaned onto a branch
+apart, main made once; whether the briefing branch stays in the repo
+is open (`6cd4cfa`). Birth happens in that repo, main growing from
+the start; the prompt goes with the System Kit, whether a brief may
+edit it open (`d49478d`). Each step names its Adapted Case and what
+it leaves open (`3652e69`). The birth's cleanup is a step of its own
+(`3c42a4e`). A second Adapted Case of the Maintainer Repo's checks
+the delivery (`1cc6f0e`). Next, scenario 2.
+
 ## 32. The agent's memory
 
 Item: "Write the understanding of the agent's memory, and how it is
