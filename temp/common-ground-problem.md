@@ -158,11 +158,11 @@ So far, three movements:
 
 Each sort of repo takes a change from the other by its own Adapted Case of one idea, how a repo takes a change from another. The Maintainer Repo's is the judging below. The System Repos' is part of the System Kit: each System Repo uses its copy and may change it, and the Maintainer Repo judges those changes like any other.
 
-A change read back is followed in two halves, each with its rules below: recorded and read, then decided and updated. Their cases are worked one at a time (below, *A System Repo's change*).
+A change read back is followed in two halves, each with its rules below: recorded and read, then decided and updated. Their cases are simulated one at a time (below, *A System Repo's change*).
 
 ##### Recording and reading
 
-Its rules so far come from one case, both halves of one Adapted Case changed (below, *A System Repo's change*).
+Its rules so far come from one case, both halves of one Adapted Case changed (`temp/system-repo-change-simulation.md`, *The cases*).
 
 **Recording a change.** A System Repo changes its copy when its work shows the copy does not fit, never ahead of that. It writes why: what happened, and whether it thinks the change answers its own problem or one any repo would meet. What changed needs no record: the comparison shows it. Its copy keeps the change (below, *An update*).
 
@@ -208,34 +208,11 @@ A change is followed in two halves:
 - **First half, recorded and read:** how the System Repo records its change, and how the Maintainer Repo finds it. Its cases are what was changed. They are the same however deep the change turns out to go, since that is known only once it is judged.
 - **Second half, decided and updated:** how the Maintainer Repo decides, and how the update is written. Its cases are how deep the change goes in the Maintainer Repo.
 
-The cases are worked one at a time. The first is worked whole; each other case is then checked against it, and what differs is written. A case that grows too complex goes to TODO, to be checked once this problem is finished.
+The cases are simulated in `temp/system-repo-change-simulation.md`, and the rules above are written from it.
 
-The cases so far:
+**Taken into account:** the cases the rules have been checked against. None is finished yet.
 
-| Half | Case | Status | Differs so far |
-|---|---|---|---|
-| first | both halves of one Adapted Case | being simulated (`temp/system-repo-change-simulation.md`) | — |
-| first | an Instruction Text only | not yet checked | recorded: says whether its Adapted Understanding Text still matches (Failure Case 8) |
-| first | an Adapted Understanding Text only | not yet checked | recorded: says whether its Instruction Texts still match (Failure Case 8) |
-| first | a Defined Term | not yet checked | — |
-| first | delivered Knowledge on Trial | not yet checked | decided: the original was never proven, so the change is evidence for its trial |
-| first | new text of the System Repo's own, on trial | not yet checked | read: found only if offered, with no copy to compare; decided: with no original, the first question does not apply |
-| first | a copy no longer used | not yet checked | read: nothing in the file changes, so only a mark shows it |
-| first | one reason behind changes to several Adapted Cases | not yet checked | recorded: one why, naming every copy it changed; read: the changes are listed together |
-| second | a. it stays in the System Repo | not yet checked | — |
-| second | b. the System Kit's Adapted Case changes | not yet checked | the update brings it to this System Repo too, whose copy already has it |
-| second | c. the project-agnostic text changes | not yet checked | the other Adapted Cases are surveyed, the Maintainer Repo's own among them |
-| second | d. the project-agnostic text already holds it | not yet checked | question 3 checks only the Maintainer Repo's own Adapted Case for the same loss, though every Adapted Case on that idea may have lost it; if several did, the project-agnostic wording may be too weak, and is reworded clearer, never narrower |
-| second | e. it asks to narrow the project-agnostic text | not yet checked | the narrowing goes into the Adapted Case, marked with its why (above, *Narrowing, never shrinking*) |
-| second | f. several Adapted Cases need it, but not all | not yet checked | it cannot enter the project-agnostic text, so each Adapted Case gains it, and the same text has no shared home. Open; its trigger: the first change two Adapted Cases need, but not every one |
-
-A stretch of work may hold several changes, alike or mixed. Each is recorded and read on its own, so they add no row but one: one reason behind changes to several Adapted Cases.
-
-The example: a System Repo works by its System Kit Copy of the commit-message Task Instruction Text, which caps a commit subject at 50 characters. Its scope names are long, and the cap fails its work. It raises the cap in its copy to 60, and its copy of the Adapted Understanding Text, which says why the cap is 50, now says why 60 fits its scope names.
-
-**First half, for both halves of one Adapted Case.** Its first rules are in *Recording and reading* (above). They are being simulated step by step (`temp/system-repo-change-simulation.md`), and rewritten from it once all the half's steps are seen together. In the example, the System Repo records that its long scope names made the 50-character cap fail, and that it thinks the change is its own. Reading finds both halves changed in one stretch, with that why.
-
-**Second half, not yet written.** It waits for a depth to be chosen to work first. Known so far: the four questions decide (above, *Judging a change read back*), and the System Repo's own view of its change is input, never the verdict. In the example, long scope names point to question 2, depth a. If the cap turns out wrong for every repo, question 4 makes it a project-agnostic lesson, depth c. The verdict reaches the System Repo with the next update, and its copy keeps its change either way (above, *An update*).
+**Not taken into account:** the other sources named above, and each case sent to TODO, with its why. None is sent yet.
 
 ### 2.2 Today and what to check
 

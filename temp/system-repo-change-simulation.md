@@ -29,7 +29,30 @@ Each step has these fields. A field with nothing in it is left out.
 - **Open:** what the step leaves undecided, each with the trigger that decides it.
 - **Today:** what is borrowed from today, and what changes, each with its source.
 
-## 2. The first half, recorded and read
+## 2. The cases
+
+The cases are simulated one at a time. The first is simulated whole; each other case is then checked against it, and what differs is written. A case that grows too complex goes to TODO, to be checked once the Common Ground Problem is finished. The first-half cases are what was changed; the second-half cases are how deep the change goes in the Maintainer Repo (`temp/common-ground-problem.md` §2.1, *A System Repo's change*).
+
+| Half | Case | Status | Differs so far |
+|---|---|---|---|
+| first | both halves of one Adapted Case | being simulated, §3 | — |
+| first | an Instruction Text only | not yet checked | recorded: says whether its Adapted Understanding Text still matches (Failure Case 8) |
+| first | an Adapted Understanding Text only | not yet checked | recorded: says whether its Instruction Texts still match (Failure Case 8) |
+| first | a Defined Term | not yet checked | — |
+| first | delivered Knowledge on Trial | not yet checked | decided: the original was never proven, so the change is evidence for its trial |
+| first | new text of the System Repo's own, on trial | not yet checked | read: found only if offered, with no copy to compare; decided: with no original, the first question does not apply |
+| first | a copy no longer used | not yet checked | read: nothing in the file changes, so only a mark shows it |
+| first | one reason behind changes to several Adapted Cases | not yet checked | recorded: one why, naming every copy it changed; read: the changes are listed together |
+| second | a. it stays in the System Repo | not yet checked | — |
+| second | b. the System Kit's Adapted Case changes | not yet checked | the update brings it to this System Repo too, whose copy already has it |
+| second | c. the project-agnostic text changes | not yet checked | the other Adapted Cases are surveyed, the Maintainer Repo's own among them |
+| second | d. the project-agnostic text already holds it | not yet checked | question 3 checks only the Maintainer Repo's own Adapted Case for the same loss, though every Adapted Case on that idea may have lost it; if several did, the project-agnostic wording may be too weak, and is reworded clearer, never narrower |
+| second | e. it asks to narrow the project-agnostic text | not yet checked | the narrowing goes into the Adapted Case, marked with its why (`temp/common-ground-problem.md` §2.1, *Narrowing, never shrinking*) |
+| second | f. several Adapted Cases need it, but not all | not yet checked | it cannot enter the project-agnostic text, so each Adapted Case gains it, and the same text has no shared home. Open; its trigger: the first change two Adapted Cases need, but not every one |
+
+A stretch of work may hold several changes, alike or mixed. Each is recorded and read on its own, so they add no row but one: one reason behind changes to several Adapted Cases.
+
+## 3. The first half, recorded and read
 
 Seven steps:
 
@@ -56,3 +79,11 @@ Seven steps:
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the copy keeps it (`temp/common-ground-problem.md` §2.1, *An update*).
+
+## 4. The second half, decided and updated
+
+Not yet simulated. It waits for a depth to be chosen to work first (§2, the second-half rows). Known so far:
+
+- the four questions decide (`temp/common-ground-problem.md` §2.1, *Judging a change read back*), and the System Repo's own view of its change is input, never the verdict;
+- the depth comes from the reason, never the edit. A cap raised from 50 to 60 stays in the System Repo, depth a, when its reason is "our scope names are long". The same edit is a project-agnostic lesson, depth c, when its reason is "the cap counts the scope, which any repo with scopes meets". Only the recorded reason tells them apart;
+- the verdict reaches the System Repo with the next update, and its copy keeps its change either way (`temp/common-ground-problem.md` §2.1, *An update*).
