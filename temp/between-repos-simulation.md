@@ -8,7 +8,11 @@
      repos*; how it differs from today goes into that draft's §2.2,
      for stage 2. The talk behind it: TODO-CONVERSATION-MEMORY.md §31,
      its part of 2026-11-08 and 2026-11-09. It goes when the Plan
-     Step closes, and git keeps every version. -->
+     Step closes, and git keeps every version.
+     Frozen on 2026-11-10, after scenario 3, on the reviewer's word:
+     the Common Ground Problem takes one case instead, a System Repo
+     changing a System Kit Copy. It resumes by the TODO item that
+     names this file. -->
 
 This document simulates how understanding moves between the repos, one step at a time. It is written for the system as intended, starting fresh, not from today's exchange. Each step says what happens, and what must be marked for a later step. A later step that finds something missing adds it to the earlier step, and says why.
 

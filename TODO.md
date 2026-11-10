@@ -34,6 +34,24 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Resume the simulation of what passes between the repos,
+      `temp/between-repos-simulation.md` (2026-11-10, the reviewer).
+      Context: the simulation grew into designing the whole exchange:
+      an idea's repo, birth, cleanups, reading back. That is solution
+      work, and it made the problem bigger while stage 1 is the
+      problem. It is frozen after scenario 3: scenarios 0 to 3
+      written, 4 to 8 not. Its *Changed from today* fields hold
+      findings about today's repo that stage 2 needs. The Common
+      Ground Problem takes one case instead: a System Repo changes a
+      System Kit Copy.
+      Ideas:
+      - write the scenarios left from practice, or let real cases
+        become scenarios of their own;
+      - start from the file's *Open* fields, each with its trigger.
+      Trigger: the Common Ground Problem is finished.
+      See: devlog 2026-11-10, the simulation frozen;
+      `TODO-CONVERSATION-MEMORY.md` §31.
+
 - [ ] Split the concept into general understanding, the System
       Kit's backend case and their instructions, losing nothing
       (2026-11-08, the reviewer).
