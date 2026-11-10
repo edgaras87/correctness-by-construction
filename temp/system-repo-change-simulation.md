@@ -56,29 +56,41 @@ A stretch of work may hold several changes, alike or mixed. Each is recorded and
 
 Seven steps:
 
-1. The work meets a copy that does not fit.
-2. The System Repo edits both halves of the Adapted Case.
-3. It records why.
+1. The work meets a copy that does not fit, and the copy is changed, with its entry.
+2. The session ends: each change made in it has its entry.
+3. The Plan Step's gate: the step's entries are kept, edited or reversed, and linked when they share a reason.
 4. The stretch of work ends, and the Maintainer Repo is told.
 5. The Maintainer Repo finds where to start reading.
-6. It compares the copies, and reads each why.
+6. It compares the copies, and reads each entry.
 7. It lists what changed, nothing judged.
 
-**Step 1. The work meets a copy that does not fit.**
+**Step 1. The work meets a copy that does not fit, and the copy is changed, with its entry.**
 
-- **What must happen:** during its own work, the System Repo finds that a System Kit Copy does not fit what happened, and the human decides what is done about it, the agent proposing.
+- **What must happen:** during its own work, the System Repo finds that a System Kit Copy does not fit what happened. The human decides the change, the agent proposing. The change is made then, and its entry is written with it. Either may be edited or reversed later, the entry with the change.
 - **Options:**
-  - a. the copy is changed now, because the work showed it does not fit;
+  - a. the copy is changed when the work shows it does not fit, and its entry written with it;
   - b. the copy is changed ahead, for what the agent foresees;
-  - c. the misfit is noted, and the copy changed later, at the end of the stretch of work;
+  - c. the misfit is noted, and the copy changed at the Plan Step's gate;
   - d. the copy stays as it is, and the System Repo writes what it does instead in its own records.
 - **Chosen:** a. The others:
   - b is a speculation, with nothing that happened behind it;
-  - c leaves the copy saying what the System Repo no longer does, until someone remembers the note;
+  - c waits for no reason: an entry lets any change be edited or reversed later, and until the gate the copy says what the System Repo no longer does;
   - d leaves the copy saying it for good, and the next agent reads the copy, not the records.
+
+  The entry goes in a footer of the copy's Adapted Understanding Text, which is not loaded for work. So the change and its why land in one diff, and the why cannot lose its copy. An Instruction Text changed alone has its entry there too. The entry holds:
+  - what changed, by meaning: the part, and what it says now;
+  - what happened, concretely, in the System Repo's own words. It is never written to sound project-agnostic: making it general is the Maintainer Repo's, after judging;
+  - which work found it;
+  - the System Repo's proposal: its own problem, or one any repo would meet. It is marked as a proposal. The Maintainer Repo judges every change, and says whether it agrees, and why if not (§4).
+
+  The entry says the change as it stands. A later edit rewrites it, and git keeps the old one.
+- **Open:** which moment of the System Kit an entry is written against, and whether an entry goes once an update takes its change in. Before the first update, every entry stands against the moment the copies arrived. Its trigger: the first update to reach a System Repo whose copies have entries.
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
-  - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the copy keeps it (`temp/common-ground-problem.md` §2.1, *An update*).
+  - borrowed: the entry names which work found the change, as a Decisions Log entry names its Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
+  - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the copy keeps it (`temp/common-ground-problem.md` §2.1, *An update*);
+  - changed: today nothing is written into a copy but the edit, since "a file says how to use it, never its own history", and the why goes in the Decisions Log (`docs/conventions/exchange/` §5.1). Here the why goes in the copy's Adapted Understanding Text, which is not read while working;
+  - changed: today every edit must claim to be for any CBC Run. Here the System Repo proposes, and the Maintainer Repo judges.
 
 ## 4. The second half, decided and updated
 
