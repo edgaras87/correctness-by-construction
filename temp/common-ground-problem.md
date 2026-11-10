@@ -230,7 +230,7 @@ The cases so far:
 
 The example: a System Repo works by its System Kit Copy of the commit-message Task Instruction Text, which caps a commit subject at 50 characters. Its scope names are long, and the cap fails its work. It raises the cap in its copy to 60, and its copy of the Adapted Understanding Text, which says why the cap is 50, now says why 60 fits its scope names.
 
-**First half, for both halves of one Adapted Case.** Worked, and written as the first rules of *Recording and reading* (above). In the example, the System Repo records that its long scope names made the 50-character cap fail, and that it thinks the change is its own. Reading finds both halves changed in one stretch, with that why.
+**First half, for both halves of one Adapted Case.** Its first rules are in *Recording and reading* (above). They are being simulated step by step (`temp/system-repo-change-simulation.md`), and rewritten from it once all the half's steps are seen together. In the example, the System Repo records that its long scope names made the 50-character cap fail, and that it thinks the change is its own. Reading finds both halves changed in one stretch, with that why.
 
 **Second half, not yet written.** It waits for a depth to be chosen to work first. Known so far: the four questions decide (above, *Judging a change read back*), and the System Repo's own view of its change is input, never the verdict. In the example, long scope names point to question 2, depth a. If the cap turns out wrong for every repo, question 4 makes it a project-agnostic lesson, depth c. The verdict reaches the System Repo with the next update, and its copy keeps its change either way (above, *An update*).
 
