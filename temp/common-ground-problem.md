@@ -176,6 +176,8 @@ If none holds, it is a lesson for System Repos only: the Adapted Case it came fr
 
 How each question is answered, and by whom, is open. So is a change that arrives without its why (Failure Case 22).
 
+**Narrowing, never shrinking.** A Project-Agnostic Understanding Text changes only where it is wrong for every repo (Failure Case 11). A part that does not fit one sort of repo stays in it: the Adapted Case leaves the part out, and marks that it did, with why. The mark is written when the exclusion is decided, never listed ahead. So question 3 can tell a part lost in narrowing, with no mark, from one left out on purpose, with its mark. A change to a marked part reopens its why.
+
 **An update.** How a System Repo takes one is open. Seen so far:
 
 - a System Kit Copy may differ from its original, and keeps the System Repo's specific changes. This holds for an Instruction Text and its Adapted Understanding Text alike, and still holds after reading back and an update. An update never overwrites it: the System Repo judges what is new, as the Maintainer Repo judges a lesson;
@@ -210,6 +212,9 @@ The cases so far:
 | second | a. it stays in the System Repo | not yet checked | — |
 | second | b. the System Kit's Adapted Case changes | not yet checked | the update brings it to this System Repo too, whose copy already has it |
 | second | c. the project-agnostic text changes | not yet checked | the other Adapted Cases are surveyed, the Maintainer Repo's own among them |
+| second | d. the project-agnostic text already holds it | not yet checked | question 3 checks only the Maintainer Repo's own Adapted Case for the same loss, though every Adapted Case on that idea may have lost it; if several did, the project-agnostic wording may be too weak, and is reworded clearer, never narrower |
+| second | e. it asks to narrow the project-agnostic text | not yet checked | the narrowing goes into the Adapted Case, marked with its why (above, *Narrowing, never shrinking*) |
+| second | f. several Adapted Cases need it, but not all | not yet checked | it cannot enter the project-agnostic text, so each Adapted Case gains it, and the same text has no shared home. Open; its trigger: the first change two Adapted Cases need, but not every one |
 
 The example: a System Repo works by its System Kit Copy of the commit-message Task Instruction Text, which caps a commit subject at 50 characters. Its scope names are long, and the cap fails its work. It raises the cap in its copy to 60, and its copy of the Adapted Understanding Text, which says why the cap is 50, now says why 60 fits its scope names.
 
