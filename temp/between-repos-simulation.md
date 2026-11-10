@@ -18,8 +18,9 @@ It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.m
 
 ## 1. What is simulated
 
-Eight scenarios, in order:
+Nine scenarios, in order:
 
+0. **An idea's repo:** the Maintainer Repo makes a repo for a new idea. Its brief is worked there on a branch of its own, and main is made from the brief's cleaned history.
 1. **Birth of a System Repo:** the Maintainer Repo starts a new System Repo from the System Kit.
 2. **Work in a System Repo:** it changes its System Kit Copies, and marks what it changed. It chooses its stack once its problem is framed, and marks the choice for the Maintainer Repo to read.
 3. **Reading a System Repo:** the Maintainer Repo reads what changed since it last read.
@@ -74,11 +75,69 @@ Other kinds of change go differently. Each is written as a variant, only at the 
 
 ## 4. Two passes of the cycle
 
-The scenarios run in two passes. Pass 1 starts from birth. Pass 2 starts when work resumes in the same System Repo after an update. Some needs show only on the second pass, when a step must know where the first one stopped.
+The scenarios run in two passes. Pass 1 starts from an idea (scenario 0). Scenario 0 runs once per idea, so pass 2 does not repeat it. Pass 2 starts when work resumes in the same System Repo after an update. Some needs show only on the second pass, when a step must know where the first one stopped.
 
 ## 5. The scenarios
 
 Each scenario is written step by step, the human reading each before the next.
+
+### 5.0 An idea's repo
+
+It runs once per idea, before birth. The example starts at birth (§3), so it has no part here.
+
+**Step 1. The Maintainer Repo makes a repo for a new idea.**
+
+- **Who acts:** the human, or the agent on the human's word, by the Maintainer Repo's Adapted Case for a new idea. It works from the Maintainer Repo, and writes only into the new repo.
+- **Reads:** the idea, as the human tells it.
+- **Decides:** the human decides the idea is worth a repo. Open, not decided here: which texts the idea's repo gets when it is made, so a session there knows what a brief holds, how the briefing is worked, and where its lessons are written. Its trigger: the intent's instructions for a new idea are written.
+- **Marks:**
+  - in the Maintainer Repo, a register entry: the idea's repo, where it lives, and its state, *briefing*. The register is the only place the Maintainer Repo can find it again. A dropped idea stays in the register, marked *dropped*;
+  - in the idea's repo, a briefing branch that holds its first commit. Main does not exist until the brief is finished (step 3).
+- **Borrowed:**
+  - the register is today's table of CBC Runs, each with where it lives and its state (`ARCHITECTURE.md` §2.5, *The CBC Runs*);
+  - the brief is today's CBC Run Briefing (`docs/glossary.md`, *CBC Run Briefing*).
+- **Changed from today:** a brief is drafted in a repo of its own. Today it is drafted in the Concept Deliverer's `temp/`, such as `temp/run-6-briefing.md`, and its drafting history stays in the Concept Deliverer's. The Maintainer Repo now keeps only the register entry.
+- **Can go wrong:**
+  - the idea's repo is known only to the human, so it is never found again (Failure Case 1);
+  - the register is not updated, so it is older than the human's understanding (Failure Case 2).
+
+**Step 2. The brief is worked on the briefing branch.**
+
+- **Who acts:** the human, with an agent: from the Maintainer Repo, or in a session of the idea's repo's own.
+- **Reads:** the brief so far. Context from the Maintainer Repo, such as project-agnostic understanding or what other System Repos found, comes in only on the human's word.
+- **Decides:** the human decides what the brief includes and excludes, and when the work pauses, stops, or is finished. The agent may draft on the human's word.
+- **Marks:**
+  - commits on the briefing branch, as the work needs. This branch is never rewritten;
+  - each include and exclude, with its why, written where step 3's cleanup keeps it;
+  - in the register, the state, on the human's word: *briefing*, *paused* or *dropped*.
+
+  Open, not decided here: whether the briefing branch stays in the idea's repo, where a later agent can read it, or moves out of it. Until then it stays. Its trigger: the first briefing that brought in context from the Maintainer Repo.
+- **Borrowed:** the brief is the human's; the agent drafts it when asked, and the human's version is what goes (`.claude/approaches-on-trial/auto-run.md`, *Stages*, stage 2).
+- **Can go wrong:**
+  - context from the Maintainer Repo is written into the brief, so the System Repo inherits what it is meant never to see. No Failure Case covers it yet, as in scenario 1, step 3;
+  - the register says *briefing* for an idea the human has let go (Failure Case 2).
+
+**Step 3. The brief is finished, its history cleaned, and main is made.**
+
+- **Who acts:** the agent, on the human's word, in the idea's repo.
+- **Reads:** the briefing branch, whole.
+- **Decides:** the human decides the brief is finished, and approves the clean history before main is made.
+- **Marks,** in this order:
+  - what was learned, first: each dead end and each rejected option, with its why, where the clean history keeps it. The cleanup drops commits, never lessons;
+  - a clean branch holding the brief in clean commits. The briefing branch is never rewritten. How the clean branch is built, a copy cleaned or the work brought onto a new branch, is the Adapted Case's;
+  - main, made once at the clean branch's tip, after the human approves. The clean branch is then deleted;
+  - the briefing branch, kept local and never pushed;
+  - in the register, the state *brief done*.
+
+  Open, not decided here:
+  - a record that cites a commit on the briefing branch points at nothing on main. Either the cleanup fixes each citation, or a record on the briefing branch cites no commit. Its trigger: the first cleanup;
+  - "never pushed" is only told: a push of every branch takes it too. Its trigger: the idea's repo gets its first remote;
+  - whether every Plan Step in a System Repo ends the same way, its branch cleaned before main moves. Its trigger: the first birth that ends this way.
+- **Borrowed:** a Plan Step's branch reaches main by fast-forward, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*).
+- **Changed from today:** today a branch reaches main as it is, with no cleanup. Main's history is still never rewritten (`TODO.md`, the item on landing two facts in the exchange convention): only the briefing branch is cleaned, and main is made from the result.
+- **Can go wrong:**
+  - the cleanup drops a why, so the clean history holds the what without the why (Failure Case 9);
+  - the briefing branch is pushed, and what was meant to stay local is out.
 
 ### 5.1 Birth of a System Repo
 
