@@ -99,23 +99,62 @@ Each scenario is written step by step, the human reading each before the next.
 
 **Step 2. The Maintainer Repo gives the new System Repo its System Kit Copies.**
 
-- **Who acts:** the human, or the agent on the human's word, in the Maintainer Repo, by the Maintainer Repo's Adapted Case for a birth.
+- **Who acts:** the human, or the agent on the human's word, by the Maintainer Repo's Adapted Case for a birth. It works from the Maintainer Repo, and writes only into the new System Repo.
 - **Reads:** the System Kit chosen in step 1, as it stands now.
-- **Decides:** nothing new. Every file of the System Kit goes, whole. Among them is the Adapted Case for taking an update, which the System Repo needs in scenario 6. Each Adapted Case goes whole, so the System Repo can judge what an update brings. The Project-Agnostic Understanding Texts stay home. Open, not decided here: the form of the birth's mechanical part, inside the Instruction Text or as a script a human can run alone. Its trigger: the intent's birth instructions are written.
-- **Marks:**
-  - in the System Repo, each file says whether it is a System Kit Copy or the System Repo's own from birth. A System Kit Copy may be updated later (scenario 6). A text of its own, such as the problem statement or a record it fills, never is;
-  - each Instruction Text names its Adapted Understanding Text, so an Adapted Case is read, checked and updated together;
-  - Knowledge on Trial keeps its mark in the copy, so the System Repo can tell it from what is proven;
-  - in the System Repo, the moment of the System Kit its copies were taken. Reading back needs it to tell the System Repo's edits from the System Kit's changes (scenario 3), and an update needs it to know what is new (scenario 6). The Common Ground Problem already asks for it (§2.1, *An update*).
+- **Decides:** nothing new. The birth delivers everything and decides nothing. Every file of the System Kit goes, whole. Among them are the two Adapted Cases the System Repo needs before its work: the one for finishing its birth (step 3), and the one for taking an update (scenario 6). Each Adapted Case goes whole, so the System Repo can judge what an update brings. The Project-Agnostic Understanding Texts stay home. Before step 3, the human checks that every file arrived whole and the moment is written. Open, not decided here: the form of the birth's mechanical part, inside the Instruction Text or as a script a human can run alone. Its trigger: the intent's birth instructions are written.
+- **Marks,** in this order:
+  - the new System Repo, with a first commit that holds nothing from the System Kit, so the next commit holds the copies and nothing else;
+  - the start: the System Kit Copies, committed as they arrived, on a branch of their own that is never merged or changed. It is made before the agent acts, so no edit of the System Repo's can be in it. Every change after it is the System Repo's own, and the first reading back starts there (scenario 3);
+  - the moment of the System Kit the copies were taken at, in each commit of the start and in the System Repo's first record entry. The moment says what the copies came from, in the Maintainer Repo's history. The start says where the System Repo's changes begin, in its own. Reading back needs both, and both are kept in the System Repo, since the Maintainer Repo can look only there. An update needs the moment to know what is new (scenario 6). The Common Ground Problem already asks for it (§2.1, *An update*);
+  - the problem statement from step 1, put beside the copies and not committed. It is the System Repo's own text;
+  - in each file, whether it is a System Kit Copy or the System Repo's own from birth. A System Kit Copy may be updated later (scenario 6). A text of its own, such as the problem statement or a record it fills, never is;
+  - in each Instruction Text, the Adapted Understanding Text it stands on, so an Adapted Case is read, checked and updated together;
+  - in a copy of Knowledge on Trial, its mark, so the System Repo can tell it from what is proven.
 - **Borrowed:**
-  - the Adapted Case for a birth is today's exchange manual with the Pure Seed, `delivery/installs/pure-seed.md`. The Pure Seed's shell commands sit inside the document, since the Maintainer Repo holds no code;
+  - the Adapted Case for a birth is today's exchange manual with the Pure Seed, `delivery/installs/pure-seed.md`. The Pure Seed's shell commands sit inside the document, since the Maintainer Repo holds no code. It "delivers everything and decides nothing" (its opening);
   - the human carries a delivery across, or the agent does on the human's word (`docs/conventions/exchange/` §1, *What cannot change*);
   - every file goes at birth (`docs/conventions/exchange/` §3.2, *What goes*);
+  - the first commit is today's hygiene commit, and main stays there, the delivered files beside it untracked (`delivery/installs/pure-seed.md`, steps 3 and 5);
+  - the start is today's Receipt Branch, `birth-seed`, never merged (`delivery/installs/pure-seed.md`, step 4; `docs/glossary.md`, *Receipt Branch*);
+  - the moment is today's Delivery Pin, the Concept Deliverer's commit the copies equal. The Pure Seed writes it in each commit's subject on `birth-seed`, and in the birth entry of the Decisions Log (`delivery/installs/pure-seed.md`, steps 2 and 4);
+  - the check is today's *Check the seed* (`delivery/installs/pure-seed.md`, step 6);
+  - the problem statement waits in `temp/`, and the System Repo commits it unchanged when its work starts. Today a full-auto birth puts it there (`.claude/approaches-on-trial/auto-run.md`, *Stages*, stage 6), and CBC Framing commits it unchanged (`delivery/fills/cbc-run-pure-playbook.md`, Step 1);
   - the records go once, as Record Stubs, and are never updated (`docs/conventions/exchange/` §2.4, *The records' exception*);
-  - each copy's *Decisions* footer is left out. It points at the Maintainer Repo's decisions, which a blind System Repo cannot read (`docs/conventions/exchange/` §3.8, *The footer at delivery*);
-  - the moment is today's Delivery Pin: the Concept Deliverer's commit the copies equal, kept in the CBC Run (`docs/conventions/exchange/` §2.2, *The CBC Run*).
-- **Changed from today:** the Adapted Understanding Texts go too. Today the explanation stays home (`docs/conventions/exchange/` §3.2, *What goes*).
+  - each copy's *Decisions* footer is left out. It points at the Maintainer Repo's decisions, which a blind System Repo cannot read (`docs/conventions/exchange/` §3.8, *The footer at delivery*).
+- **Changed from today:**
+  - the Adapted Understanding Texts go too. Today the explanation stays home (`docs/conventions/exchange/` §3.2, *What goes*);
+  - today two texts disagree on the start. The Pure Seed writes the Read-Through Commit as *none* at birth, and keeps the delivery as it arrived on the Receipt Branch (`delivery/installs/pure-seed.md`, steps 2 and 4). The exchange's cycle has the CBC Run write its birth commit b as its Read-Through Commit (`docs/conventions/exchange/` §2.5, *One cycle*). The start here is the Pure Seed's;
+  - today a pure birth keeps the problem statement out: it arrives later, and opens CBC Framing (`delivery/installs/pure-seed.md`, step 7).
 - **Can go wrong:**
   - Knowledge on Trial in a copy is read as proven (Failure Case 18);
   - an Instruction Text goes without its Adapted Understanding Text, so the copy holds the what without the why (Failure Case 9);
-  - the moment is missing or wrong, so a change of the System Kit's is read back as the System Repo's own (Failure Case 20).
+  - the moment is missing or wrong, so a change of the System Kit's is read back as the System Repo's own (Failure Case 20);
+  - the start holds an edit, or is changed later, so reading back takes the edit for the System Kit's text, and it is never judged (Failure Case 19).
+
+**Step 3. The human starts the agent, and the agent finishes the birth.**
+
+- **Who acts:** the human, then the agent in the new System Repo, in its first session.
+- **Reads:**
+  - the prompt: one fixed text, the same for every birth. It holds only what is true of this session: what arrived and where, that the birth is finished by the System Repo's Adapted Case for it, and that a reviewer is present. It names no moment: that is in the files (step 2);
+  - every file that arrived in step 2, before any change.
+- **Decides:** the agent decides how the System Repo is arranged, each choice with its why in its plan. Its Adapted Case for a birth gives the outcomes and the order, never the arrangement:
+  1. read everything that arrived, before any change;
+  2. cut a branch for the birth's work from main;
+  3. plan the arrangement, each choice with its why;
+  4. commit one at a time, on the reviewer's word;
+  5. end when the outcomes hold: the records exist and the agent's arrangement stands, before any work on the problem.
+
+  Open, not decided here: whether the problem statement is read at birth, or only when the work starts (scenario 2). Its trigger: scenario 2's first step is written.
+- **Marks:**
+  - in the System Repo's records, the end of the birth. Scenario 2 starts after it, so reading back can tell the birth's arrangement from the work's changes;
+  - in the plan, each arrangement choice and its why, so reading back reads the why with the change.
+- **Borrowed:**
+  - the prompt is today's Pure Seed prompt, the same for every birth so births can be compared, holding what is true of this session only (`delivery/installs/pure-seed.md`, step 7);
+  - the agent finishing the birth is today's Newborn CBC Run's agent, which finishes the CBC Run Birth (`delivery/installs/pure-seed.md`, its opening and step 7);
+  - the order is today's prompt: read the whole repository, plan the agent's own commit sequence, commit on the reviewer's word (`delivery/installs/pure-seed.md`, step 7);
+  - the branch is the branch every Plan Step cuts from main (`delivery/fills/cbc-run-pure-playbook.md`, *At the opening*);
+  - the outcomes and the end are today's Step 0, Bootstrap, closed on its Plan Step Gate: "the repo, the records and the agent's arrangement exist before any content" (`delivery/fills/cbc-run-pure-playbook.md`, Step 0).
+- **Changed from today:** the order and the outcomes live in an Adapted Case in the System Kit, not in the prompt. Today the prompt holds the order, and Step 0's gate is left for the agent to write. A prompt lives only in its session, and the System Repo can neither change it nor offer a change back.
+- **Can go wrong:**
+  - the agent reads the Maintainer Repo, which a System Repo is meant never to see. Today blindness is only told: the other repo sits on the same disk. Run 3's agent read a checkout on disk of the repo it took copies from (devlog 2026-09-09, later). No Failure Case covers it yet; noted for the Common Ground Problem's §4;
+  - an arrangement choice is committed without its why, so reading back has the change and not the reason (Failure Case 22).
