@@ -118,16 +118,20 @@ Six steps:
 
   A change kept as it is needs nothing more. A change edited gets its entry rewritten. When changes share one reason, the reason is written in full in one entry, and each other entry says how its own copy was affected and points at that one.
 
-  The gate also asks once: did an Adapted Case used in this step not fit, with no change made? A misfit worked around without a change leaves nothing for the comparison to find. The human, who saw every session of the step, answers.
+  The gate also asks once: did an Adapted Case used in this step not fit, with no change made? A misfit worked around without a change leaves nothing for the comparison to find. The human, who saw every session of the step, answers. Each misfit named is written as a note for the Maintainer Repo.
+
+  A note carries what has no change to carry it: a misfit with no change made, a doubt about a line left as it is, something the System Kit lacked, a copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. A note never lists a change: the entry already says it, and a second line would have to follow every edit and reversal. A note about a change points at its entry, and never retells it. Reading reads the notes as well as the copies (step 5).
 - **Adapted Case:** the System Repo's, for closing a Plan Step, its gate list. It loads when the Plan Step closes. For this step it says:
   - compare the copies against where the Plan Step began, and check each change has an entry that says it;
   - the human decides each change: kept, edited or reversed, its entry with it;
   - changes with one reason are linked;
-  - ask once whether an Adapted Case did not fit, with no change made.
+  - ask once whether an Adapted Case did not fit, with no change made, and write each as a note;
+  - a note never lists a change; one about a change points at its entry.
 - **Open:** whether a reversed change leaves a trace for the Maintainer Repo. A change tried and undone may be evidence that the System Kit Copy was right. Its trigger: the first change reversed at a gate.
 - **Today:**
   - borrowed: the gate is a list of outcomes checked at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
   - borrowed: each Approach on Trial the Plan Step used has its dated note at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). An entry checked at the gate is the same shape;
+  - borrowed: a line the CBC Run disagrees with is quoted under *To the deliverer*, and a copy it does not use gets a CBC Run Ask there (`delivery/container/.claude/rules/delivered-copies.md`, rule 1). Notes can go under that heading;
   - changed: today the close writes one CBC Run Ask per edited copy (`delivery/container/.claude/rules/delivered-copies.md`, rule 4), option d. Here the entries are what reading reads;
   - changed: today nothing at the close looks at the step's changes to copies together.
 
