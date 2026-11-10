@@ -158,6 +158,18 @@ So far, three movements:
 
 Each sort of repo takes a change from the other by its own Adapted Case of one idea, how a repo takes a change from another. The Maintainer Repo's is the judging below. The System Repos' is part of the System Kit: each System Repo uses its copy and may change it, and the Maintainer Repo judges those changes like any other.
 
+A change read back is followed in two halves, each with its rules below: recorded and read, then decided and updated. Their cases are worked one at a time (below, *A System Repo's change*).
+
+##### Recording and reading
+
+Its rules so far come from one case, both halves of one Adapted Case changed (below, *A System Repo's change*).
+
+**Recording a change.** A System Repo changes its copy when its work shows the copy does not fit, never ahead of that. It writes why: what happened, and whether it thinks the change answers its own problem or one any repo would meet. What changed needs no record: the comparison shows it. Its copy keeps the change (below, *An update*).
+
+**Reading a change.** The Maintainer Repo keeps where each System Repo lives, since a System Repo cannot point back. It reads each System Repo from where the last reading stopped, the first time from where the copies arrived. It compares each System Kit Copy across that stretch of the System Repo's own history, and reads each change's why. So every change is found once: one with no why is found by the comparison alone (Failure Case 22), and one already judged is not found again. A comparison with the System Kit would find again every change the copy kept. A declined update is recorded with its why, so reading does not take it for a new change (below, *An update*). Open: an update lands inside the next stretch, and how its changes are told from the System Repo's own.
+
+##### Deciding and updating
+
 **Judging a change read back.** Four questions, in order, the cheapest first:
 
 1. Did the System Kit Copy already say this? Then it is a misreading (Failure Case 7). Nothing changes but, perhaps, the copy's wording.
@@ -218,10 +230,7 @@ The cases so far:
 
 The example: a System Repo works by its System Kit Copy of the commit-message Task Instruction Text, which caps a commit subject at 50 characters. Its scope names are long, and the cap fails its work. It raises the cap in its copy to 60, and its copy of the Adapted Understanding Text, which says why the cap is 50, now says why 60 fits its scope names.
 
-**First half, for both halves of one Adapted Case:**
-
-1. **How the change is recorded.** The System Repo changes its copy when its work shows the copy does not fit, never ahead of that. It writes why: what happened, and whether it thinks the change answers its own problem or one any repo would meet. What changed needs no record: the comparison shows it. Its copy keeps the change (above, *An update*).
-2. **How the change is read.** The Maintainer Repo keeps where each System Repo lives, since a System Repo cannot point back. It reads each System Repo from where the last reading stopped, the first time from where the copies arrived. It compares each System Kit Copy across that stretch of the System Repo's own history, and reads each change's why. So every change is found once: one with no why is found by the comparison alone (Failure Case 22), and one already judged is not found again. A comparison with the System Kit would find again every change the copy kept. Open: an update lands inside the next stretch, and how its changes are told from the System Repo's own.
+**First half, for both halves of one Adapted Case.** Worked, and written as the first rules of *Recording and reading* (above). In the example, the System Repo records that its long scope names made the 50-character cap fail, and that it thinks the change is its own. Reading finds both halves changed in one stretch, with that why.
 
 **Second half, not yet written.** It waits for a depth to be chosen to work first. Known so far: the four questions decide (above, *Judging a change read back*), and the System Repo's own view of its change is input, never the verdict. In the example, long scope names point to question 2, depth a. If the cap turns out wrong for every repo, question 4 makes it a project-agnostic lesson, depth c. The verdict reaches the System Repo with the next update, and its copy keeps its change either way (above, *An update*).
 
