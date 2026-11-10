@@ -103,6 +103,34 @@ Six steps:
   - changed: today every edit must claim to be for any CBC Run. Here the System Repo proposes, and the Maintainer Repo judges;
   - borrowed: a check fires at the commit because, before, it had to be remembered (`.claude/rules/foundation-check.md`, its header comment). That one is the Maintainer Repo's own.
 
+**Step 2. The Plan Step's gate: the step's changes are compared with their entries, and each is kept, edited or reversed, and linked when they share a reason.**
+
+- **What must happen:** at the Plan Step's close, the step's changes to copies are seen together, now that the whole step is seen. The agent compares the copies against where the Plan Step began, and shows each change with its entry. The human decides each, the agent proposing: kept, edited, or reversed, its entry with it. Changes that share one reason are linked.
+- **Options:**
+  - a. the gate looks at the step's changes together: the comparison, a decision on each, and the links;
+  - b. the gate only checks that each change has an entry that says it, and decides nothing;
+  - c. the gate does nothing with copies: the Maintainer Repo reviews the changes when it reads them;
+  - d. the gate writes one line per changed copy, asking the Maintainer Repo to read it.
+- **Chosen:** a. The others:
+  - b keeps a change made early in the step, though the end of the step may show it wrong, and leaves changes with one reason unlinked;
+  - c leaves the review to the side that cannot see what happened, and a wrong change then reaches the Maintainer Repo's judging;
+  - d adds nothing to the entries: reading compares every copy, and reads the entries. It comes back if a reading misses a changed copy because nothing asked it to look.
+
+  A change kept as it is needs nothing more. A change edited gets its entry rewritten. When changes share one reason, the reason is written in full in one entry, and each other entry says how its own copy was affected and points at that one.
+
+  The gate also asks once: did an Adapted Case used in this step not fit, with no change made? A misfit worked around without a change leaves nothing for the comparison to find. The human, who saw every session of the step, answers.
+- **Adapted Case:** the System Repo's, for closing a Plan Step, its gate list. It loads when the Plan Step closes. For this step it says:
+  - compare the copies against where the Plan Step began, and check each change has an entry that says it;
+  - the human decides each change: kept, edited or reversed, its entry with it;
+  - changes with one reason are linked;
+  - ask once whether an Adapted Case did not fit, with no change made.
+- **Open:** whether a reversed change leaves a trace for the Maintainer Repo. A change tried and undone may be evidence that the System Kit Copy was right. Its trigger: the first change reversed at a gate.
+- **Today:**
+  - borrowed: the gate is a list of outcomes checked at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
+  - borrowed: each Approach on Trial the Plan Step used has its dated note at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). An entry checked at the gate is the same shape;
+  - changed: today the close writes one CBC Run Ask per edited copy (`delivery/container/.claude/rules/delivered-copies.md`, rule 4), option d. Here the entries are what reading reads;
+  - changed: today nothing at the close looks at the step's changes to copies together.
+
 ## 4. The second half, decided and updated
 
 Not yet simulated. It waits for a depth to be chosen to work first (§2, the second-half rows). Known so far:
