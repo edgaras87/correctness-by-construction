@@ -11,7 +11,7 @@
 
 This document simulates one case: a System Repo changes both halves of one Adapted Case in its System Kit Copies, and the Maintainer Repo reads the change back. It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
 
-The example: the commit-message Task Instruction Text caps a subject at 50 characters. The System Repo's scope names are long, so its subjects fail the cap. It raises its copy to 60, and changes the Adapted Understanding Text that says why the cap is 50 (`temp/common-ground-problem.md`, *A System Repo's change*).
+The scope: the two halves are the Instruction Text and its Adapted Understanding Text. The change may have any reason, its own or one any repo would meet. Either half may change first. One stretch of work may hold several such changes. Each step's choice must hold for all of it, so no fixed example is used: a step is tried against the scope's edges.
 
 ## 1. How it is worked
 
@@ -43,7 +43,7 @@ Seven steps:
 
 **Step 1. The work meets a copy that does not fit.**
 
-- **What must happen:** during its own work, the System Repo finds that a System Kit Copy does not fit what happened, and the human decides what is done about it, the agent proposing. In the example, a commit subject fails the 50-character cap because of a long scope name.
+- **What must happen:** during its own work, the System Repo finds that a System Kit Copy does not fit what happened, and the human decides what is done about it, the agent proposing.
 - **Options:**
   - a. the copy is changed now, because the work showed it does not fit;
   - b. the copy is changed ahead, for what the agent foresees;
@@ -55,4 +55,4 @@ Seven steps:
   - d leaves the copy saying it for good, and the next agent reads the copy, not the records.
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
-  - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). The example's need is its own, so today forbids the edit. Here the copy keeps it (`temp/common-ground-problem.md` §2.1, *An update*).
+  - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the copy keeps it (`temp/common-ground-problem.md` §2.1, *An update*).
