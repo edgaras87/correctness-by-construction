@@ -326,3 +326,54 @@ The example starts here (§3).
 - **Can go wrong:**
   - the human never tells the Maintainer Repo, so the System Repo is not read back (Failure Case 1);
   - the register says a System Repo was read when it has new work (Failure Case 2).
+
+### 5.3 Reading a System Repo
+
+It ends in a list of what changed, nothing judged. Judging is scenario 4.
+
+**Step 1. The Maintainer Repo finds the System Repo, and where to start.**
+
+- **Who acts:** the agent, on the human's word, from the Maintainer Repo. It only reads the System Repo.
+- **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says: find the System Repo by the register; find where the last reading stopped, or the start if none has; write where this reading stops before reading anything.
+- **Reads:** the register; in the System Repo, its records, for where the last reading stopped, and its history, for the start.
+- **Decides:** the human decides which System Repo is read, and when: when the register says it has work to read back, or when work resumes in it. Work resuming goes in a fixed order: reading back, judging, then the update (`temp/common-ground-problem.md` §2.1, *An update*).
+- **Marks:**
+  - in the reading, its first line: the System Repo's commit this reading stops at;
+  - that commit reaches the System Repo with the update (scenario 6), so the next reading starts there. The System Repo holds it, since the Maintainer Repo can look only there.
+- **Borrowed:**
+  - the span runs from the Read-Through Commit to the CBC Run's `HEAD`, and that `HEAD` is written first, as the CBC Run Reading's first line (`.claude/skills/exchange-read/SKILL.md`, Stages 1 and 2);
+  - both numbers are kept in the CBC Run, the only place the Concept Deliverer can look (`docs/conventions/exchange/` §2.2, *The CBC Run*).
+- **Changed from today:** the first reading starts at the start, the commit whose subject carries the moment (scenario 1, step 2). Today a CBC Run is born with its Read-Through Commit written as *none* (`delivery/installs/pure-seed.md`, step 2), and the exchange-read Agent Skill names no span for that case.
+- **Can go wrong:**
+  - the register is out of date, so a System Repo with work is never read (Failure Case 2);
+  - the reading starts at the wrong commit, so a change is missed, or one already judged is read as new (Failure Case 20).
+
+**Step 2. The Maintainer Repo reads what changed, and lists it.**
+
+- **Who acts:** the agent, on the human's word, from the Maintainer Repo. It writes only in the Maintainer Repo.
+- **Adapted Case:** the Maintainer Repo's, for reading a System Repo. In order:
+  1. diff every System Kit Copy across the span, in the System Repo's own history;
+  2. read each change's why in the records, and the System Repo's own reading of it;
+  3. read the texts the System Repo added and offered, and its stack choice (scenario 2, step 1);
+  4. name work not yet committed, and list nothing against it;
+  5. write one line per change, nothing decided.
+- **Reads:** in the System Repo, across the span: the copies' diff, the records, and the uncommitted work.
+- **Decides:** nothing. Each change is listed, none judged (scenario 4). The human checks that the list is whole.
+- **Open:** the update comes after this reading, so its commits fall inside the next span. The next reading must tell the System Kit's changes from the System Repo's: the span starting after the update, or the update's commits marked and left out. Its trigger: scenario 6 is written.
+- **Marks:** the reading, in the Maintainer Repo: one line per change, with what changed, its why and the System Repo's own reading, as found. In the example: the commit-message Task Instruction Text copy, its cap raised from 50 to 60; why, "our scope names are long"; the System Repo's reading, its own.
+- **Variants:**
+  - b. something new added: listed from the records' offer, with no copy to diff against. A text the System Repo did not offer stays its own, and is not listed;
+  - c. delivered Knowledge on Trial changed: listed with its use notes, read as evidence for the trial;
+  - d. a copy no longer used: listed from its mark, since a diff shows no change for it;
+  - e. no why written: listed from the diff alone, marked "no why". Judging then has the what without the why (Failure Case 22);
+  - f. one half edited: listed with the System Repo's mark on whether the other half holds, or marked "other half not checked".
+- **Borrowed:**
+  - three things give every item: the Decisions Log, the lines addressed to the Concept Deliverer, and the copies' diff (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*);
+  - work not committed is named, and no verdict is written against what it undoes (`docs/conventions/exchange/` §6.1);
+  - a file the CBC Run wrote is read only if it offers it (`docs/conventions/exchange/` §6.2, *A file the CBC Run wrote*);
+  - one line per item, nothing decided; the CBC Run is read only (`.claude/skills/exchange-read/SKILL.md`, Stage 4 and *Gates*).
+- **Changed from today:** the diff runs across the span in the System Repo's own history. Today it runs against what was delivered, the Receipt Branch or the last delivery entry (`.claude/skills/exchange-read/SKILL.md`, Stage 3). That works today only because a Delivery Take makes every copy pristine again. Here a copy keeps the System Repo's judged changes after an update, so a diff against the System Kit would list each of them again at every reading.
+- **Can go wrong:**
+  - a change is listed without its why, and judging guesses it (Failure Case 22);
+  - the reading builds a different understanding of a change than the System Repo meant (Failure Case 7);
+  - the System Repo's own reading is copied in as a verdict (Failure Case 20).
