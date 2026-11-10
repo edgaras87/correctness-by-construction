@@ -214,19 +214,22 @@ The cases so far:
 
 | Half | Case | Status | Differs so far |
 |---|---|---|---|
-| first | both halves of one Adapted Case | being worked, below | — |
+| first | both halves of one Adapted Case | being simulated (`temp/system-repo-change-simulation.md`) | — |
 | first | an Instruction Text only | not yet checked | recorded: says whether its Adapted Understanding Text still matches (Failure Case 8) |
 | first | an Adapted Understanding Text only | not yet checked | recorded: says whether its Instruction Texts still match (Failure Case 8) |
 | first | a Defined Term | not yet checked | — |
 | first | delivered Knowledge on Trial | not yet checked | decided: the original was never proven, so the change is evidence for its trial |
 | first | new text of the System Repo's own, on trial | not yet checked | read: found only if offered, with no copy to compare; decided: with no original, the first question does not apply |
 | first | a copy no longer used | not yet checked | read: nothing in the file changes, so only a mark shows it |
+| first | one reason behind changes to several Adapted Cases | not yet checked | recorded: one why, naming every copy it changed; read: the changes are listed together |
 | second | a. it stays in the System Repo | not yet checked | — |
 | second | b. the System Kit's Adapted Case changes | not yet checked | the update brings it to this System Repo too, whose copy already has it |
 | second | c. the project-agnostic text changes | not yet checked | the other Adapted Cases are surveyed, the Maintainer Repo's own among them |
 | second | d. the project-agnostic text already holds it | not yet checked | question 3 checks only the Maintainer Repo's own Adapted Case for the same loss, though every Adapted Case on that idea may have lost it; if several did, the project-agnostic wording may be too weak, and is reworded clearer, never narrower |
 | second | e. it asks to narrow the project-agnostic text | not yet checked | the narrowing goes into the Adapted Case, marked with its why (above, *Narrowing, never shrinking*) |
 | second | f. several Adapted Cases need it, but not all | not yet checked | it cannot enter the project-agnostic text, so each Adapted Case gains it, and the same text has no shared home. Open; its trigger: the first change two Adapted Cases need, but not every one |
+
+A stretch of work may hold several changes, alike or mixed. Each is recorded and read on its own, so they add no row but one: one reason behind changes to several Adapted Cases.
 
 The example: a System Repo works by its System Kit Copy of the commit-message Task Instruction Text, which caps a commit subject at 50 characters. Its scope names are long, and the cap fails its work. It raises the cap in its copy to 60, and its copy of the Adapted Understanding Text, which says why the cap is 50, now says why 60 fits its scope names.
 
