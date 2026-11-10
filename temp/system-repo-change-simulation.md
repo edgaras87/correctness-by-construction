@@ -55,15 +55,14 @@ A stretch of work may hold several changes, alike or mixed. Each is recorded and
 
 ## 3. The first half, recorded and read
 
-Seven steps:
+Six steps:
 
 1. The work meets a copy that does not fit, and the copy is changed, with its entry.
-2. The session ends: each change made in it has its entry.
-3. The Plan Step's gate: the step's entries are kept, edited or reversed, and linked when they share a reason.
-4. The stretch of work ends, and the Maintainer Repo is told.
-5. The Maintainer Repo finds where to start reading.
-6. It compares the copies, and reads each entry.
-7. It lists what changed, nothing judged.
+2. The Plan Step's gate: the step's changes are compared with their entries, and each is kept, edited or reversed, and linked when they share a reason.
+3. The stretch of work ends, and the Maintainer Repo is told.
+4. The Maintainer Repo finds where to start reading.
+5. It compares the copies, and reads each entry.
+6. It lists what changed, nothing judged.
 
 **Step 1. The work meets a copy that does not fit, and the copy is changed, with its entry.**
 
@@ -85,9 +84,13 @@ Seven steps:
   - the System Repo's proposal: its own problem, or one any repo would meet. It is marked as a proposal. The Maintainer Repo judges every change, and says whether it agrees, and why if not (§4).
 
   The entry says the change as it stands. A later edit rewrites it, and git keeps the old one.
+
+  The change and its entry go in the same commit. A commit that changes a copy and not its entry is stopped there. The commit is always reached: work never committed is lost, change and entry together.
+
+  Weighed and dropped: a check at each session's end, comparing the copies with their entries. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds an entry missing or wrong whose change was committed in an earlier session.
 - **Adapted Case:** the System Repo's, for changing a System Kit Copy, itself a System Kit Copy. It loads when a copy is touched. For this step it says:
   - a copy changes only when the work shows it does not fit, never ahead;
-  - the entry is written with the change, with its four parts;
+  - the entry is written with the change, with its four parts, and goes in the same commit;
   - what happened is written concretely, in the System Repo's own words;
   - whether the change is its own or any repo's is a proposal, never a verdict.
 - **Open:** which moment of the System Kit an entry is written against, and whether an entry goes once an update takes its change in. Before the first update, every entry stands against the moment the copies arrived. Its trigger: the first update to reach a System Repo whose copies have entries.
@@ -97,7 +100,8 @@ Seven steps:
   - borrowed: the entry names which work found the change, as a Decisions Log entry names its Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
   - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the copy keeps it (`temp/common-ground-problem.md` §2.1, *An update*);
   - changed: today nothing is written into a copy but the edit, since "a file says how to use it, never its own history", and the why goes in the Decisions Log (`docs/conventions/exchange/` §5.1). Here the why goes in the copy's Adapted Understanding Text, which is not read while working;
-  - changed: today every edit must claim to be for any CBC Run. Here the System Repo proposes, and the Maintainer Repo judges.
+  - changed: today every edit must claim to be for any CBC Run. Here the System Repo proposes, and the Maintainer Repo judges;
+  - borrowed: a check fires at the commit because, before, it had to be remembered (`.claude/rules/foundation-check.md`, its header comment). That one is the Maintainer Repo's own.
 
 ## 4. The second half, decided and updated
 
