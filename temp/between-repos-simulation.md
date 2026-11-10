@@ -172,7 +172,7 @@ Birth happens in the idea's repo, which becomes the System Repo. Its main holds 
   3. the human checks that every file arrived whole and the moment is written, before step 3.
 - **Reads:** the System Kit chosen in step 1, as it stands now.
 - **Decides:** nothing new. The birth delivers everything and decides nothing. Every file of the System Kit goes, whole. Among them:
-  - the two Adapted Cases the System Repo needs before its work: the one for finishing its birth (step 3), and the one for taking an update (scenario 6);
+  - the two Adapted Cases the System Repo needs before its work: the one for finishing its birth (steps 3 and 4), and the one for taking an update (scenario 6);
   - the prompt for the birth's first session, the same for every birth by this System Kit (step 3).
 
   Each Adapted Case goes whole, so the System Repo can judge what an update brings. The Project-Agnostic Understanding Texts stay home.
@@ -181,7 +181,7 @@ Birth happens in the idea's repo, which becomes the System Repo. Its main holds 
   - whether a brief may edit the prompt for its birth. Its trigger: a real birth that needs it.
 - **Marks:**
   - a birth branch, cut from main, which holds the brief;
-  - the start: on the birth branch, the System Kit Copies, committed as they arrived, before the agent acts. No edit of the System Repo's can be in it. It reaches main unchanged through the birth's cleanup (step 3). Every change after it is the System Repo's own, and the first reading back starts there (scenario 3);
+  - the start: on the birth branch, the System Kit Copies, committed as they arrived, before the agent acts. No edit of the System Repo's can be in it. It reaches main unchanged through the birth's cleanup (step 4). Every change after it is the System Repo's own, and the first reading back starts there (scenario 3);
   - the moment of the System Kit the copies were taken at, in each commit of the start and in the System Repo's first record entry. The moment says what the copies came from, in the Maintainer Repo's history. The start says where the System Repo's changes begin, in its own. Reading back needs both, and both are kept in the System Repo, since the Maintainer Repo can look only there. An update needs the moment to know what is new (scenario 6). The Common Ground Problem already asks for it (§2.1, *An update*);
   - in each file, whether it is a System Kit Copy or the System Repo's own. A System Kit Copy may be updated later (scenario 6). A text of its own, such as the brief or a record it fills, never is;
   - in each Instruction Text, the Adapted Understanding Text it stands on, so an Adapted Case is read, checked and updated together;
@@ -207,7 +207,7 @@ Birth happens in the idea's repo, which becomes the System Repo. Its main holds 
   - the moment is missing or wrong, so a change of the System Kit's is read back as the System Repo's own (Failure Case 20);
   - the start holds an edit, so reading back takes the edit for the System Kit's text, and it is never judged (Failure Case 19).
 
-**Step 3. The human starts the agent, and the agent finishes the birth.**
+**Step 3. The human starts the agent, and the agent does the birth's work.**
 
 - **Who acts:** the human, then the agent in the new System Repo, in its first session.
 - **Adapted Case:** the System Repo's, for finishing its birth, a System Kit Copy. It gives the outcomes and the order, never the arrangement:
@@ -215,25 +215,45 @@ Birth happens in the idea's repo, which becomes the System Repo. Its main holds 
   2. work on the birth branch, above the start;
   3. plan the arrangement, each choice with its why;
   4. commit one at a time, on the reviewer's word;
-  5. stop when the outcomes hold: the records exist and the agent's arrangement stands, before any work on the problem;
-  6. clean up as the brief was (scenario 0, step 3): what was learned written first; a clean branch with the start unchanged and the agent's commits cleaned; main moved once to its tip, on the human's word; the clean branch deleted; the birth branch kept local and never pushed.
+  5. stop when the outcomes hold: the records exist and the agent's arrangement stands, before any work on the problem.
 - **Reads:**
   - the prompt, from the System Kit Copies, given by the human in the session. It holds only what is true of this session: what arrived and where, that the birth is finished by the System Repo's Adapted Case for it, and that a reviewer is present. It names no moment: that is in the files (step 2). It is given in the session even though it is in the files, since a reviewer's stop written only in a file is skipped;
   - every file on the birth branch, the brief among them, before any change.
-- **Decides:** the agent decides how the System Repo is arranged, each choice with its why in its plan. The human gives the word for each commit, and for main to move.
-- **Marks:**
-  - in the System Repo's records, the end of the birth. Scenario 2 starts after it, so reading back can tell the birth's arrangement from the work's changes;
-  - in the plan, each arrangement choice and its why, so reading back reads the why with the change;
-  - in the register, the state *born*, on the human's word.
+- **Decides:** the agent decides how the System Repo is arranged, each choice with its why in its plan. The human gives the word for each commit.
+- **Marks:** in the plan, each arrangement choice and its why, so reading back reads the why with the change.
 - **Borrowed:**
   - the prompt is today's Pure Seed prompt, the same for every birth so births can be compared, holding what is true of this session only (`delivery/installs/pure-seed.md`, step 7);
   - the agent finishing the birth is today's Newborn CBC Run's agent, which finishes the CBC Run Birth (`delivery/installs/pure-seed.md`, its opening and step 7);
   - the order is today's prompt: read the whole repository, plan the agent's own commit sequence, commit on the reviewer's word (`delivery/installs/pure-seed.md`, step 7);
-  - the outcomes and the end are today's Step 0, Bootstrap, closed on its Plan Step Gate: "the repo, the records and the agent's arrangement exist before any content" (`delivery/fills/cbc-run-pure-playbook.md`, Step 0).
+  - the outcomes are today's Step 0, Bootstrap: "the repo, the records and the agent's arrangement exist before any content" (`delivery/fills/cbc-run-pure-playbook.md`, Step 0).
 - **Changed from today:**
   - the order and the outcomes live in an Adapted Case in the System Kit, not in the prompt. Today the prompt holds the order, and Step 0's gate is left for the agent to write. A prompt lives only in its session, and the System Repo can neither change it nor offer a change back;
-  - the birth's work goes on the branch that holds the start, and is cleaned before main moves. Today every Plan Step, Step 0 among them, cuts its branch from main and reaches main as it is (`delivery/fills/cbc-run-pure-playbook.md`, *At the opening* and *At the close*).
+  - the birth's work goes on the branch that holds the start. Today every Plan Step, Step 0 among them, cuts its branch from main (`delivery/fills/cbc-run-pure-playbook.md`, *At the opening*).
 - **Can go wrong:**
   - the agent reads the Maintainer Repo, which a System Repo is meant never to see. Today blindness is only told: the other repo sits on the same disk. Run 3's agent read a checkout on disk of the repo it took copies from (devlog 2026-09-09, later). No Failure Case covers it yet; noted for the Common Ground Problem's §4;
-  - an arrangement choice is committed without its why, so reading back has the change and not the reason (Failure Case 22);
-  - the cleanup changes the start or folds it into the agent's commits, so reading back loses its base (Failure Case 19).
+  - an arrangement choice is committed without its why, so reading back has the change and not the reason (Failure Case 22).
+
+**Step 4. The birth's history is cleaned, and main moves.**
+
+- **Who acts:** the agent, on the human's word, in the new System Repo.
+- **Adapted Case:** the System Repo's, for finishing its birth. It cleans up as the brief was (scenario 0, step 3), with the start kept whole. In order:
+  1. write what was learned first: each dead end and each rejected option, with its why, where the clean history keeps it;
+  2. build a clean branch on the start itself, the agent's commits above it cleaned, never rewriting the birth branch;
+  3. check that the start's commit is the same on the clean branch as on the birth branch;
+  4. move main once, to the clean branch's tip, after the human approves;
+  5. delete the clean branch, and keep the birth branch local, never pushed.
+- **Reads:** the birth branch, whole.
+- **Decides:** the human approves the clean history before main moves.
+- **Open:** the two of scenario 0, step 3, hold here too: a record citing a commit on the birth branch, and "never pushed" being only told. Their triggers are the same.
+- **Marks:**
+  - in the System Repo's records, the end of the birth. Scenario 2 starts after it, so reading back can tell the birth's arrangement from the work's changes;
+  - main, holding the brief, the start, and the birth's work above it, cleaned;
+  - the birth branch, local;
+  - in the register, the state *born*, on the human's word.
+- **Borrowed:**
+  - a Plan Step's branch reaches main by fast-forward, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
+  - the end is today's Step 0 closed on its Plan Step Gate (`delivery/fills/cbc-run-pure-playbook.md`, Step 0).
+- **Changed from today:** the birth's work is cleaned before main moves. Today a Plan Step reaches main as it is (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*).
+- **Can go wrong:**
+  - the cleanup changes the start or folds it into the agent's commits, so reading back loses its base (Failure Case 19);
+  - the cleanup drops a why, so the clean history holds the what without the why (Failure Case 9).
