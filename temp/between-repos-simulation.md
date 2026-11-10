@@ -48,8 +48,10 @@ Fixed before the simulation starts:
 Each step has these fields. A field with nothing in it is left out.
 
 - **Who acts:** the human, the agent, and in which repo.
+- **Adapted Case:** which Adapted Case the step runs by, whose it is, and what it must say for this step, in order where the order matters.
 - **Reads:** the texts this step needs.
 - **Decides:** what is decided, and by whom.
+- **Open:** what this step leaves undecided, each with the trigger that decides it.
 - **Marks:** what this step must write down for a later step, or before a session ends.
 - **Can go wrong:** the Failure Cases this step can hit, by number.
 - **Borrowed:** what the step takes from today's exchange, and from where. The agent had read today's exchange before writing this, so each borrowing is marked.
@@ -89,9 +91,11 @@ A brief states the problem: the situation, and what is hostile in it, with no pr
 
 **Step 1. The Maintainer Repo makes a repo for a new idea.**
 
-- **Who acts:** the human, or the agent on the human's word, by the Maintainer Repo's Adapted Case for a new idea. It works from the Maintainer Repo, and writes only into the new repo.
+- **Who acts:** the human, or the agent on the human's word. It works from the Maintainer Repo, and writes only into the new repo.
+- **Adapted Case:** the Maintainer Repo's, for a new idea. It says how the idea's repo is made, with its first commit on a briefing branch and no main, and how the register entry is written.
 - **Reads:** the idea, as the human tells it.
-- **Decides:** the human decides the idea is worth a repo. Open, not decided here: which texts the idea's repo gets when it is made, so a session there knows what a brief holds, how the briefing is worked, and where its lessons are written. Its trigger: the intent's instructions for a new idea are written.
+- **Decides:** the human decides the idea is worth a repo.
+- **Open:** which texts the idea's repo gets when it is made, so a session there knows what a brief holds, how the briefing is worked, and where its lessons are written. Its trigger: the intent's instructions for a new idea are written.
 - **Marks:**
   - in the Maintainer Repo, a register entry: the idea's repo, where it lives, and its state, *briefing*. The register is the only place the Maintainer Repo can find it again. A dropped idea stays in the register, marked *dropped*;
   - in the idea's repo, a briefing branch that holds its first commit. Main does not exist until the brief is finished (step 3).
@@ -106,14 +110,14 @@ A brief states the problem: the situation, and what is hostile in it, with no pr
 **Step 2. The brief is worked on the briefing branch.**
 
 - **Who acts:** the human, with an agent: from the Maintainer Repo, or in a session of the idea's repo's own.
+- **Adapted Case:** the idea's repo's briefing texts, from step 1, whichever side works. For this step they say what a brief holds, and that each include and exclude is written with its why.
 - **Reads:** the brief so far. Context from the Maintainer Repo, such as project-agnostic understanding or what other System Repos found, comes in only on the human's word.
 - **Decides:** the human decides what the brief includes and excludes, and when the work pauses, stops, or is finished. The agent may draft on the human's word.
+- **Open:** whether the briefing branch stays in the idea's repo, where a later agent can read it, or moves out of it. Until then it stays. Its trigger: the first briefing that brought in context from the Maintainer Repo.
 - **Marks:**
   - commits on the briefing branch, as the work needs. This branch is never rewritten;
   - each include and exclude, with its why, written where step 3's cleanup keeps it;
   - in the register, the state, on the human's word: *briefing*, *paused* or *dropped*.
-
-  Open, not decided here: whether the briefing branch stays in the idea's repo, where a later agent can read it, or moves out of it. Until then it stays. Its trigger: the first briefing that brought in context from the Maintainer Repo.
 - **Borrowed:** the brief is the human's; the agent drafts it when asked, and the human's version is what goes (`.claude/approaches-on-trial/auto-run.md`, *Stages*, stage 2).
 - **Can go wrong:**
   - context from the Maintainer Repo is written into the brief, so the System Repo inherits what it is meant never to see. No Failure Case covers it yet, as in scenario 1, step 3;
@@ -122,19 +126,22 @@ A brief states the problem: the situation, and what is hostile in it, with no pr
 **Step 3. The brief is finished, its history cleaned, and main is made.**
 
 - **Who acts:** the agent, on the human's word, in the idea's repo.
+- **Adapted Case:** the idea's repo's briefing texts. In order:
+  1. write what was learned first: each dead end and each rejected option, with its why, where the clean history keeps it. The cleanup drops commits, never lessons;
+  2. build a clean branch holding the brief in clean commits, never rewriting the briefing branch: a copy cleaned, or the work brought onto a new branch;
+  3. make main once, at the clean branch's tip, after the human approves;
+  4. delete the clean branch, and keep the briefing branch local, never pushed.
 - **Reads:** the briefing branch, whole.
 - **Decides:** the human decides the brief is finished, and approves the clean history before main is made.
-- **Marks,** in this order:
-  - what was learned, first: each dead end and each rejected option, with its why, where the clean history keeps it. The cleanup drops commits, never lessons;
-  - a clean branch holding the brief in clean commits. The briefing branch is never rewritten. How the clean branch is built, a copy cleaned or the work brought onto a new branch, is the Adapted Case's;
-  - main, made once at the clean branch's tip, after the human approves. The clean branch is then deleted;
-  - the briefing branch, kept local and never pushed;
-  - in the register, the state *brief done*.
-
-  Open, not decided here:
+- **Open:**
   - a record that cites a commit on the briefing branch points at nothing on main. Either the cleanup fixes each citation, or a record on the briefing branch cites no commit. Its trigger: the first cleanup;
   - "never pushed" is only told: a push of every branch takes it too. Its trigger: the idea's repo gets its first remote;
   - whether every Plan Step in a System Repo ends the same way, its branch cleaned before main moves. Its trigger: the first birth that ends this way.
+- **Marks:**
+  - what was learned, with its why, in the clean history;
+  - main, holding the brief in clean commits;
+  - the briefing branch, local;
+  - in the register, the state *brief done*.
 - **Borrowed:** a Plan Step's branch reaches main by fast-forward, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*).
 - **Changed from today:** today a branch reaches main as it is, with no cleanup. Main's history is still never rewritten (`TODO.md`, the item on landing two facts in the exchange convention): only the briefing branch is cleaned, and main is made from the result.
 - **Can go wrong:**
@@ -148,6 +155,7 @@ Birth happens in the idea's repo, which becomes the System Repo. Its main holds 
 **Step 1. The human and the agent choose the System Kit that fits the problem.**
 
 - **Who acts:** the human and the agent, in the Maintainer Repo.
+- **Adapted Case:** the Maintainer Repo's, for a birth. For this step it says how a System Kit is chosen from a brief, and how the register records the choice.
 - **Reads:** the finished brief, on the main of the idea's repo. Also what each System Kit is for. Today there is one, for backends.
 - **Decides:** the human decides which System Kit fits, or that none does. The stack is not chosen here: CBC design chooses it once the problem is framed, inside the System Repo (scenario 2). If none fits:
   - the idea's repo is not born, and waits with its brief on main;
@@ -157,18 +165,21 @@ Birth happens in the idea's repo, which becomes the System Repo. Its main holds 
 
 **Step 2. The Maintainer Repo gives the new System Repo its System Kit Copies.**
 
-- **Who acts:** the human, or the agent on the human's word, by the Maintainer Repo's Adapted Case for a birth. It works from the Maintainer Repo, and writes only into the idea's repo.
+- **Who acts:** the human, or the agent on the human's word. It works from the Maintainer Repo, and writes only into the idea's repo.
+- **Adapted Case:** the Maintainer Repo's, for a birth. It delivers everything and decides nothing. In order:
+  1. cut a birth branch from main, which holds the brief;
+  2. commit the System Kit Copies there as they arrived, the moment in each commit and in the first record entry;
+  3. the human checks that every file arrived whole and the moment is written, before step 3.
 - **Reads:** the System Kit chosen in step 1, as it stands now.
 - **Decides:** nothing new. The birth delivers everything and decides nothing. Every file of the System Kit goes, whole. Among them:
   - the two Adapted Cases the System Repo needs before its work: the one for finishing its birth (step 3), and the one for taking an update (scenario 6);
   - the prompt for the birth's first session, the same for every birth by this System Kit (step 3).
 
-  Each Adapted Case goes whole, so the System Repo can judge what an update brings. The Project-Agnostic Understanding Texts stay home. Before step 3, the human checks that every file arrived whole and the moment is written.
-
-  Open, not decided here:
+  Each Adapted Case goes whole, so the System Repo can judge what an update brings. The Project-Agnostic Understanding Texts stay home.
+- **Open:**
   - the form of the birth's mechanical part, inside the Instruction Text or as a script a human can run alone. Its trigger: the intent's birth instructions are written;
   - whether a brief may edit the prompt for its birth. Its trigger: a real birth that needs it.
-- **Marks,** in this order:
+- **Marks:**
   - a birth branch, cut from main, which holds the brief;
   - the start: on the birth branch, the System Kit Copies, committed as they arrived, before the agent acts. No edit of the System Repo's can be in it. It reaches main unchanged through the birth's cleanup (step 3). Every change after it is the System Repo's own, and the first reading back starts there (scenario 3);
   - the moment of the System Kit the copies were taken at, in each commit of the start and in the System Repo's first record entry. The moment says what the copies came from, in the Maintainer Repo's history. The start says where the System Repo's changes begin, in its own. Reading back needs both, and both are kept in the System Repo, since the Maintainer Repo can look only there. An update needs the moment to know what is new (scenario 6). The Common Ground Problem already asks for it (§2.1, *An update*);
@@ -199,16 +210,17 @@ Birth happens in the idea's repo, which becomes the System Repo. Its main holds 
 **Step 3. The human starts the agent, and the agent finishes the birth.**
 
 - **Who acts:** the human, then the agent in the new System Repo, in its first session.
-- **Reads:**
-  - the prompt, from the System Kit Copies, given by the human in the session. It holds only what is true of this session: what arrived and where, that the birth is finished by the System Repo's Adapted Case for it, and that a reviewer is present. It names no moment: that is in the files (step 2). It is given in the session even though it is in the files, since a reviewer's stop written only in a file is skipped;
-  - every file on the birth branch, the brief among them, before any change.
-- **Decides:** the agent decides how the System Repo is arranged, each choice with its why in its plan. Its Adapted Case for a birth gives the outcomes and the order, never the arrangement:
+- **Adapted Case:** the System Repo's, for finishing its birth, a System Kit Copy. It gives the outcomes and the order, never the arrangement:
   1. read everything on the birth branch, before any change;
   2. work on the birth branch, above the start;
   3. plan the arrangement, each choice with its why;
   4. commit one at a time, on the reviewer's word;
   5. stop when the outcomes hold: the records exist and the agent's arrangement stands, before any work on the problem;
   6. clean up as the brief was (scenario 0, step 3): what was learned written first; a clean branch with the start unchanged and the agent's commits cleaned; main moved once to its tip, on the human's word; the clean branch deleted; the birth branch kept local and never pushed.
+- **Reads:**
+  - the prompt, from the System Kit Copies, given by the human in the session. It holds only what is true of this session: what arrived and where, that the birth is finished by the System Repo's Adapted Case for it, and that a reviewer is present. It names no moment: that is in the files (step 2). It is given in the session even though it is in the files, since a reviewer's stop written only in a file is skipped;
+  - every file on the birth branch, the brief among them, before any change.
+- **Decides:** the agent decides how the System Repo is arranged, each choice with its why in its plan. The human gives the word for each commit, and for main to move.
 - **Marks:**
   - in the System Repo's records, the end of the birth. Scenario 2 starts after it, so reading back can tell the birth's arrangement from the work's changes;
   - in the plan, each arrangement choice and its why, so reading back reads the why with the change;
