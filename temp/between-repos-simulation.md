@@ -53,6 +53,7 @@ Each step has these fields. A field with nothing in it is left out.
 - **Decides:** what is decided, and by whom.
 - **Open:** what this step leaves undecided, each with the trigger that decides it.
 - **Marks:** what this step must write down for a later step, or before a session ends.
+- **Variants:** where a kind of change from §3 parts from the example at this step, and how it goes.
 - **Can go wrong:** the Failure Cases this step can hit, by number.
 - **Borrowed:** what the step takes from today's exchange, and from where. The agent had read today's exchange before writing this, so each borrowing is marked.
 - **Changed from today:** what the step does differently from today's exchange, and where today says it. Each goes to the Common Ground Problem's §2.2.
@@ -260,3 +261,68 @@ Birth happens in the idea's repo, which becomes the System Repo. Its main holds 
 - **Can go wrong:**
   - the cleanup changes the start or folds it into the agent's commits, so reading back loses its base (Failure Case 19);
   - the cleanup drops a why, so the clean history holds the what without the why (Failure Case 9).
+
+### 5.2 Work in a System Repo
+
+The example starts here (§3).
+
+**Step 1. The System Repo frames its problem and chooses its stack.**
+
+- **Who acts:** the human and the agent, in the System Repo.
+- **Adapted Case:** the System Repo's copy of CBC system design. For this step it says how the problem is framed from the brief, and how the stack is chosen from the framing.
+- **Reads:** the brief, on main, and the System Kit Copies.
+- **Decides:** the human decides the framing and the stack, the agent proposing.
+- **Open:** how a stack's Adapted Case reaches a System Repo that chooses its stack after birth: in the System Kit for every stack from birth, written by the System Repo as its own Knowledge on Trial, or brought by an update once reading back finds the choice. Its trigger: the first System Repo that chooses its stack after birth.
+- **Marks:** in the System Repo's records, the stack and its why, where reading back finds them (scenario 3).
+- **Borrowed:** the framing is today's CBC Framing, which opens on the brief and commits it unchanged (`delivery/fills/cbc-run-pure-playbook.md`, Step 1).
+- **Changed from today:** the stack is chosen inside the System Repo. Today it is chosen at birth, in the Concept Deliverer: the Pure Seed delivers the Spring and PostgreSQL group, or the method group alone for another stack (`delivery/installs/pure-seed.md`, step 4).
+- **Can go wrong:** the stack is chosen in a session and never written, so reading back cannot tell why the System Repo's copies differ (Failure Case 1).
+
+**Step 2. The work meets a copy that does not fit, and the System Repo edits it.**
+
+- **Who acts:** the agent, on the human's word, in the System Repo, during its work.
+- **Adapted Case:** the System Repo's, for changing a System Kit Copy, itself a copy. It says: an edit comes from something that happened, never a speculation; nothing is written into the copy but the edit; the why is written in the records.
+- **Reads:** the copy that failed the work, and the Adapted Understanding Text it stands on.
+- **Decides:** the human decides the edit, the agent proposing. In the example: the commit-message Task Instruction Text caps a subject at 50 characters, the System Repo's scope names are long, and its copy is raised to 60.
+- **Open:** whether the why and a line asking the Maintainer Repo to read the edit are one mark or two. Today they are two. Its trigger: scenario 3 reads them.
+- **Marks:**
+  - the edit, in the copy, and nothing else there;
+  - in the records: what changed, what happened that the copy did not foresee, which work found it, and why;
+  - the System Repo's own reading: whether the edit answers its own problem or one any repo would meet, as far as it can tell. Judging takes it as input, never as a verdict (scenario 4). In the example, "our scope names are long" reads as its own;
+  - whether the other half of the Adapted Case still holds: an edit to an Instruction Text says whether its Adapted Understanding Text still says what the copy now does, and the other way round.
+- **Variants:**
+  - b. something new added: a text of the System Repo's own, with no copy to compare with. It is marked as its own and as Knowledge on Trial, and offered back;
+  - c. delivered Knowledge on Trial changed: the edit, and a dated note of the use, since the use is what the trial is for;
+  - d. a copy no longer used: never deleted. It is marked unused, with its why. A deleted copy would come back at the next update (scenario 6);
+  - e. no why written: the edit lands with nothing in the records, and only the diff shows it (Failure Case 22);
+  - f. one half edited: the Instruction Text changes and its Adapted Understanding Text does not, or the other way round. The halves then disagree, unless the mark above says the other still holds (Failure Case 8).
+- **Borrowed:**
+  - an edit comes from something that happened, never a speculation; one Decisions Log entry says what changed, which Plan Step found it, and why (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
+  - nothing is written into the copy but the edit (`docs/conventions/exchange/` §5.1);
+  - a copy is never renamed or deleted; one not used gets a line, "we do not use this" (`docs/conventions/exchange/` §5.5, *Renaming or deleting a copy*);
+  - an Approach on Trial takes a dated note of each use (`docs/conventions/exchange/` §5.1).
+- **Changed from today:**
+  - an edit for the System Repo's own problem stays in its copy. Today an edit must ask what any CBC Run would want, "never this CBC Run's own answer", and what only the CBC Run needs goes in its records (`docs/conventions/exchange/` §5.1; `delivery/container/.claude/rules/delivered-copies.md`, rules 2 and 3). The intent keeps a System Repo's specific changes in its copy (`temp/common-ground-problem.md` §2.1, *An update*). Today's rule forbids the example's edit;
+  - the System Repo's own reading of whether an edit is its own or for every repo. Today the rule makes every edit claim to be for every repo;
+  - the mark on the other half. Today the explanation stays home, so a copy has no other half.
+- **Can go wrong:**
+  - the edit is made and its why is not (Failure Case 22);
+  - one half changes and the other is not checked, so the two disagree (Failure Case 8);
+  - the System Repo's reading is taken as the verdict, so a lesson for every repo stays in one System Repo (Failure Case 20).
+
+**Step 3. The work stops, and the System Repo waits to be read.**
+
+- **Who acts:** the agent, on the human's word, in the System Repo, as a stretch of work ends; then the human, who tells the Maintainer Repo.
+- **Adapted Case:** the System Repo's agent work, for ending a stretch of work. It says what must be in the records before the work stops.
+- **Reads:** the records, and each copy's diff since the start, or since the last update.
+- **Decides:** the human decides the work stops, and tells the Maintainer Repo.
+- **Open:** whether each stretch of work is cleaned before main moves, as the birth's was (scenario 0, step 3, holds this open). If it is, an edit's commit is folded in with others, and only the records keep its why.
+- **Marks:**
+  - in the System Repo's records, where the work stopped, and every edited copy with its why;
+  - in the register, on the human's word, that the System Repo has work to read back.
+- **Borrowed:**
+  - at every Plan Step's close, the CBC Run writes one line per edited copy under *To the deliverer* (`delivery/container/.claude/rules/delivered-copies.md`, rule 4);
+  - the register's states, such as "through Release, not yet read" (`ARCHITECTURE.md` §2.5, *The CBC Runs*).
+- **Can go wrong:**
+  - the human never tells the Maintainer Repo, so the System Repo is not read back (Failure Case 1);
+  - the register says a System Repo was read when it has new work (Failure Case 2).
