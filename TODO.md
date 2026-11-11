@@ -47,7 +47,11 @@
       Ideas:
       - write the scenarios left from practice, or let real cases
         become scenarios of their own;
-      - start from the file's *Open* fields, each with its trigger.
+      - start from the file's *Open* fields, each with its trigger;
+      - the birth scenario gains what
+        `temp/system-repo-change-simulation.md` step 4 asks of it:
+        the delivery check writes the System Repo's register row,
+        with "read to" set to the start.
       Trigger: the Common Ground Problem is finished.
       See: devlog 2026-11-10, the simulation frozen;
       `TODO-CONVERSATION-MEMORY.md` §31.
