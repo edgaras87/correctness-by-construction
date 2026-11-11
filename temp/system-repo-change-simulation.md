@@ -32,8 +32,6 @@ The steps make six parts, each done by one repo:
 | Deliver | Maintainer Repo | §7, steps 1–2 |
 | Take | System Repo | §8, step 1 |
 
-One step is not drafted yet: the next reading does not find the change again. Its part is found when it is written.
-
 Each step has these fields. A field with nothing in it is left out.
 
 - **What must happen:** the outcome, and who acts.
@@ -231,7 +229,10 @@ Four steps:
   - pair each change with its entry; mark one with none "no entry";
   - compare the notes' place across the span, and read each new note;
   - judge nothing.
-- **Open:** an update lands inside the next span, so its changes to the copies would read as the System Repo's own, with no entry. They might be told apart by starting the span after the update, by marking the update's commits, or by comparing with the System Kit minus the entries, option b. Its trigger: the first update to reach a System Repo whose copies have entries, §3, step 1's trigger too.
+- **Open:**
+  - an update lands inside the next span, so its changes to the copies would read as the System Repo's own, with no entry. They might be told apart by starting the span after the update, by marking the update's commits, or by comparing with the System Kit minus the entries, option b. Its trigger: the first update to reach a System Repo whose copies have entries, §3, step 1's trigger too;
+  - a System Repo with nothing new since its take still differs from the System Kit, by the changes it put back. Whether it is read again is open. Its trigger: the first return to a System Repo with nothing new since its take;
+  - a reading keeps no memory of earlier verdicts, so a change put back at the take is read like any other, and may be judged again. Whether that costs too much is open. Its trigger: the first reading after a take that put changes back.
 - **Today:**
   - borrowed: every item is read from the copies' diff, the whys, and the lines to the Concept Deliverer (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*; `.claude/skills/exchange-read/SKILL.md`, Stage 3). Here the whys are in the diff, so it is two: the diff and the notes;
   - borrowed: the CBC Run is only read, never written (`.claude/skills/exchange-read/SKILL.md`, *Gates*);
