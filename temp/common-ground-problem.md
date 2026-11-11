@@ -41,6 +41,7 @@ Defined Terms, in alphabetical order:
 - **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
 - **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
 - **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns.
+- **Maintainer Repo Register:** the Maintainer Repo's list of its System Repos: where each lives, and its *read to*.
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
 - **Project-Agnostic Understanding Text:** an Understanding Text bound to no project.
@@ -56,6 +57,7 @@ Defined Terms, in alphabetical order:
 - **System Kit Update Note:** what the Maintainer Repo writes with a System Kit Update, for the System Repo that takes it.
 - **System Kit Version:** the System Kit as it stood at one Maintainer Repo commit. Each System Repo records the one its System Kit Copies came from.
 - **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
+- **System Repo Reading:** the Maintainer Repo reading one System Repo since it last read it, and the draft that lists what it found.
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
 - **Understanding Text:** text that holds what is known, and how it is understood.
@@ -67,6 +69,7 @@ Labels:
 - *kind*: Understanding Text, Instruction Text
 - *where*: *the Maintainer Repo*, *a System Repo*; a Failure Case is *either* or *between*
 - Text Life Phase: *writing*, *aging*, *reading*
+- Maintainer Repo Register: *read to*, the System Repo's commit the next System Repo Reading starts from
 
 ## 1. The purpose
 
@@ -256,6 +259,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | Defined Term | In the Maintainer Repo today |
 |---|---|
 | Maintainer Repo | the Concept Deliverer, a Concept Repo by its Tiers Model: `correctness-by-construction` |
+| Maintainer Repo Register | the list of CBC Runs (`ARCHITECTURE.md` §2.5, *The CBC Runs*). Its *read to* is today's Read-Through Commit, kept in the CBC Run instead |
 | System Repo | a CBC Run |
 | System Kit | the delivery, `delivery/`: the Container Group, the Method Group and a Stack Group, with the concept and each group's Glossary Names |
 | System Kit Copy | a CBC Run's copy of a Master Copy |
@@ -276,7 +280,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | Defined Term | a Glossary Name, in `docs/glossary.md` |
 | One Home per Fact | the facts-in-sync convention, and the one-home Agent Rule |
 | Knowledge Drift Repair | the Foundation Check and its Change Walk at each commit; the refinement's reads of the whole repo |
-| reading back what a System Repo learns | a CBC Run Reading |
+| System Repo Reading | a CBC Run Reading |
 | birth of a System Repo | a CBC Run Birth |
 
 ## 3. The Knowledge Axes
