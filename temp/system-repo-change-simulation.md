@@ -255,14 +255,15 @@ It is simulated first for depth a, the change staying in the System Repo: the sh
 - the depth comes from the reason, never the edit. A cap raised from 50 to 60 stays in the System Repo, depth a, when its reason is "our scope names are long". The same edit is a project-agnostic lesson, depth c, when its reason is "the cap counts the scope, which any repo with scopes meets". Only the recorded reason tells them apart;
 - what the System Repo gets reaches it with the next update, and its copy keeps its change either way (`temp/common-ground-problem.md` §2.1, *An update*).
 
-Six steps, for depth a:
+Seven steps, for depth a:
 
 1. The list is judged.
 2. The verdict is written.
 3. The Maintainer Repo makes its changes. For depth a, none.
 4. The update is made: the System Kit's changes, and the verdicts the System Repo can act on.
-5. The System Repo takes the update.
-6. The next reading does not find the change again.
+5. The update is delivered.
+6. The System Repo takes the update.
+7. The next reading does not find the change again.
 
 **Step 1. The list is judged.**
 
@@ -366,10 +367,10 @@ Six steps, for depth a:
   Whether an update is due is found by comparison, as step 3 of the first half finds work to read: the System Repo's moment, which it holds, against the System Kit's. It runs when the human names a System Repo to update, or asks which are behind. A System Repo is blind, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
 
   An update holds:
-  - every System Kit Copy, whole, at the System Kit's new moment, and the moment. The System Repo then has the new version of each file, and finds its old one in its own history (step 5);
+  - every System Kit Copy, whole, at the System Kit's new moment, and the moment. The System Repo then has the new version of each file, and finds its old one in its own history (step 6);
   - the whys of the System Kit's changes since the System Repo's moment, whatever their source: this System Repo's reading, another System Repo's, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo;
   - each path gone or renamed, since a copy cannot carry its own absence;
-  - the verdicts that go down, from this System Repo's own reading only, each naming the System Repo's own copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (step 5).
+  - the verdicts that go down, from this System Repo's own reading only, each naming the System Repo's own copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (step 6).
 
   Nothing in it cites what the System Repo cannot open: no path, record or word of the Maintainer Repo's own. A depth-a change whose proposal held sends nothing, and the System Repo's copy keeps it.
 
@@ -393,4 +394,28 @@ Six steps, for depth a:
   - borrowed: one CBC Run Reading is open per CBC Run at a time, and a new read extends it (`.claude/skills/exchange-read/SKILL.md`, Stage 4);
   - changed: today every read ends with a Delivery Note, even an empty one, to carry the Read-Through Commit (`docs/conventions/exchange/` §6.6). Here an update goes only when it carries something;
   - changed: today the note gives a verdict on everything the CBC Run addressed to the Concept Deliverer (`docs/conventions/exchange/` §3.7). Here only the verdicts the System Repo can act on go down.
+
+**Step 5. The update is delivered.**
+
+- **What must happen:** on the human's word, the update is staged into the System Repo's `temp/`, by the human or by the agent. It is the only time the Maintainer Repo writes into a System Repo, and it writes nowhere else there. Nothing in `temp/` is in force until the System Repo takes it (step 6).
+- **Options,** for checking what was staged:
+  - a. a second Adapted Case of the Maintainer Repo's checks it, apart from the one that delivered, as at birth;
+  - b. the delivering Adapted Case compares each staged file with the System Kit at the new moment, once staged, and the System Repo checks the note against the files when it takes them;
+  - c. only the System Repo's check, at the take.
+- **Chosen:** b. The others:
+  - a was chosen at birth because the start becomes the base of every reading (`temp/between-repos-simulation.md` §5.1, step 2). Here a wrong file is held in `temp/`, never in force, and a comparison of files leaves little mistake to share. It comes back if a staged file is found, after a take, to differ from the System Kit;
+  - c leaves only the System Repo to check, and it cannot open the System Kit, so a staged file that differs from it passes.
+
+  The System Repo's tree is checked clean first, with nothing in flight. When it is not, the agent says what it found and waits for the word. An update already waiting there is replaced by the new one (step 4). The update is named by the Maintainer Repo's commit at which its files and note were final, so its moment is exact.
+- **Adapted Case:** the Maintainer Repo's, for delivering an update. It loads on the human's word to deliver. For this step it says:
+  - never stage unasked; check the System Repo's tree clean first;
+  - write only into the System Repo's `temp/`, replacing an update already waiting;
+  - name the update by the commit it was final at;
+  - compare each staged file with the System Kit at the new moment.
+- **Today:**
+  - borrowed: the delivery and its note are copied into the CBC Run's `temp/` on the reviewer's word, by the reviewer or by the agent when told; the agent never stages unasked; the tree is checked clean first; the Delivery Staging is named by the commit at which files and note are final (`docs/conventions/exchange/` §3.1, *Delivery Staging*);
+  - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
+  - borrowed: one Agent Skill both writes the note and stages the delivery (`.claude/skills/exchange-deliver/SKILL.md`). It also compares the staged files here;
+  - borrowed: the CBC Run's `temp/` gains exactly the staging and its note, and nothing tracked in the CBC Run changes (`.claude/skills/exchange-deliver/SKILL.md`, *Gates*);
+  - changed: today the staged files are copied by a script, so they equal the Master Copies by how they are made, and no comparison follows; the CBC Run's Delivery Take checks the note against the files (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 1).
 
