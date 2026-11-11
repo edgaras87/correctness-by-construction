@@ -40,8 +40,8 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | first | an Instruction Text only | not yet checked | recorded: says whether its Adapted Understanding Text still matches (Failure Case 8) |
 | first | an Adapted Understanding Text only | not yet checked | recorded: says whether its Instruction Texts still match (Failure Case 8) |
 | first | a Defined Term | not yet checked | — |
-| first | delivered Knowledge on Trial | not yet checked | decided: the original was never proven, so the change is evidence for its trial |
-| first | new text of the System Repo's own, on trial | not yet checked | read: found only if offered, with no copy to compare; decided: with no original, the first question does not apply |
+| first | delivered Knowledge on Trial | not yet checked | read: compared like any copy; decided: the original was never proven, so the change is evidence for its trial |
+| first | new text of the System Repo's own, on trial | not yet checked | read: written in the System Kit's on-trial folder, so the comparison finds it as a new file; decided: with no original, the first question does not apply |
 | first | a copy no longer used | not yet checked | read: nothing in the file changes, so only a mark shows it |
 | first | one reason behind changes to several Adapted Cases | not yet checked | recorded: one why, naming every copy it changed; read: the changes are listed together |
 | second | a. it stays in the System Repo | not yet checked | — |
@@ -192,7 +192,7 @@ Six steps:
 
 **Step 5. The Maintainer Repo compares the copies, and reads each entry.**
 
-- **What must happen:** across the span, from "read to" to the stop, the agent finds every change to a System Kit Copy, pairs each with its entry, and reads the notes written in the span. It only reads the System Repo, and writes only in the Maintainer Repo.
+- **What must happen:** across the span, from "read to" to the stop, the agent finds every change in the System Kit's folders, a new file among them, pairs each with its entry, and reads the notes written in the span. It only reads the System Repo, and writes only in the Maintainer Repo.
 - **Options,** for how changes are found:
   - a. each copy compared across the span, in the System Repo's own history, from "read to" to the stop;
   - b. each copy compared with the System Kit, at the moment the copies came from;
