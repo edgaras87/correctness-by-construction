@@ -178,9 +178,9 @@ Six steps:
   - a fails when a reading has no update after it, which step 3's readings between allow: the System Repo still holds the old stop, and the next reading finds again what was read;
   - c keeps every reading only for one line.
 
-  The start is the register's "read to". A System Repo never read starts at the start, the commit holding the System Kit Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). The stop is the System Repo's main, written as the open reading's first line before anything is read, so a commit landing during the reading falls into the next one. It moves into the register when the reading is done (step 6), never before: a reading left half done must not mark its changes read. The reading stays a draft, and goes once its work is done.
+  The start is the register's "read to", and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with "read to" set to the start, the commit holding the System Kit Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own change, so it stands as read. So every reading, the first among them, starts at "read to", and no "none" needs a path of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation). The stop is the System Repo's main, written as the open reading's first line before anything is read, so a commit landing during the reading falls into the next one. It moves into the register when the reading is done (step 6), never before: a reading left half done must not mark its changes read. The reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
-  - the start is the register's "read to", or the System Repo's start if it was never read;
+  - the start is the register's "read to";
   - the stop is the System Repo's main, written as the reading's first line before anything is read;
   - the stop moves into the register when the reading is done.
 - **Today:**
@@ -188,7 +188,7 @@ Six steps:
   - borrowed: the register keeps where each System Repo lives (`ARCHITECTURE.md` §2.5, *The CBC Runs*). It gains the "read to" commit;
   - borrowed: a CBC Run Reading is a draft in `temp/`, deleted once the work that needed it is done (`temp/README.md`; `.claude/skills/exchange-read/SKILL.md`, Stage 4);
   - changed: today the stop, the Read-Through Commit, is kept in the CBC Run, carried there by the next Delivery Note, because "it is the only place the Concept Deliverer can look" (`docs/conventions/exchange/` §2.2, *The CBC Run*). Today every reading is followed by a delivery, so the stop always arrives. Here a reading may have no update after it;
-  - changed: today a CBC Run is born with its Read-Through Commit written as *none*, and the exchange-read Agent Skill names no span for it (`delivery/installs/pure-seed.md`, step 2). Here the first reading starts at the start.
+  - changed: today a CBC Run is born with its Read-Through Commit written as *none*, and the exchange-read Agent Skill names no span for it (`delivery/installs/pure-seed.md`, step 2). Here birth writes the start as "read to", and the first reading starts there.
 
 ## 4. The second half, decided and updated
 
