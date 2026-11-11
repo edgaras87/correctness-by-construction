@@ -286,11 +286,14 @@ Six steps, for depth a:
   - question 3, the project-agnostic understanding already holds it: the Project-Agnostic Understanding Text the Adapted Case narrows;
   - question 4, true for every repo: depth c's step, checked later.
 
-  Lines listed together under one reason are judged together, and the reason is judged once. A line whose parts answer differently is split, each part judged on its own; the parts keep their one entry. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
+  Lines listed together under one reason are judged together, and the reason is judged once. A line whose parts answer differently is split, each part judged on its own; the parts keep their one entry.
+
+  A question is answered from what the change does and why, never from its wording. The System Repo writes in its own words on purpose (§3, step 1), and making a lesson general is rewording, after judging (step 3). A change worded for one project may still be a lesson for every repo. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
 - **Adapted Case:** the Maintainer Repo's, for judging a reading. It loads when the human starts judging a reading whose list was checked whole. For this step it says:
   - question 0 first: does the change fix what happened, without breaking something the copy did? An unsound change spreads nowhere, and its verdict says why;
   - then the four questions, in order, until one holds; for each, what it reads;
   - a line whose parts answer differently is split, each part judged on its own;
+  - a question is answered from what the change does and why, never from its wording;
   - the agent proposes each answer with what it read; the human decides;
   - lines under one reason are judged together;
   - a line with no entry is held until its why is brought.
