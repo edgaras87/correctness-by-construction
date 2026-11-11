@@ -368,6 +368,7 @@ Seven steps, for depth a:
 
   An update is two things: every System Kit Copy, whole, at the System Kit's new moment, and a note. The System Repo then has the new version of each file, and finds its old one in its own history (step 6). The note holds:
   - the new moment;
+  - the moment it was built from, and the System Repo's commit the reading stopped at. The take checks both before anything moves (step 6). The note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
   - what changed since the System Repo's moment: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a copy cannot carry its own absence;
   - the why of each System Kit change since then, whatever its source: this System Repo's reading, another System Repo's, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo. With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - the verdicts that go down, from this System Repo's own reading only, each naming the System Repo's own copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (step 6);
@@ -384,7 +385,7 @@ Seven steps, for depth a:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change or a verdict;
   - it is due when the System Repo's moment is behind the System Kit's, or a verdict goes down; the moments are compared when the human names a System Repo or asks which are behind;
-  - it carries every System Kit Copy whole, at the new moment, and a note: the moment, what changed and how many, the whys whatever their source, the verdicts from this System Repo's reading that it can act on, a question for each held line, what is taken first, and the update it replaces;
+  - it carries every System Kit Copy whole, at the new moment, and a note: the moment, the moment it was built from and the reading's stop, what changed and how many, the whys whatever their source, the verdicts from this System Repo's reading that it can act on, a question for each held line, what is taken first, and the update it replaces;
   - it cites nothing the System Repo cannot open;
   - each verdict names the System Repo's commit it judged;
   - one reading open per System Repo, a new reading extending it; one update waiting, a newer one replacing it.
@@ -439,9 +440,11 @@ Seven steps, for depth a:
   - c takes the update over changes not yet read. The update answered none of them, and clearing their entries loses them before they are read;
   - d keeps entries that say how a copy differed from the old System Kit. After the take some describe nothing, and none says how the copy differs from the new one.
 
-  The opening order follows the fixed order already set: reading back, judging, then the update (`temp/common-ground-problem.md` §2.1, *An update*). An open reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old copies first; the human may instead drop or restart it, when the update changes a rule it rests on. Before delivery, the System Repo's main is compared with the reading's stop:
-  - case 1, main is still the stop, and the System Kit has not moved since the reading was judged: the update is delivered and taken;
-  - case 2, anything else: there is no take. The cycle runs again from "read to": the new span is read, judged against the System Kit as it is now, the Maintainer Repo's changes made, and a new update made. It replaces the waiting one and carries its verdicts not yet sent (step 4).
+  The opening order follows the fixed order already set: reading back, judging, then the update (`temp/common-ground-problem.md` §2.1, *An update*). An open reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old copies first; the human may instead drop or restart it, when the update changes a rule it rests on. The take checks first, from the note, what the System Repo itself can see:
+  - case 1, its main is still the reading's stop, and its moment is the one the update was built from: the update is taken;
+  - case 2, anything else: there is no take, and the System Repo says so, which starts a reading. The cycle runs again from "read to": the new span is read, judged against the System Kit as it is now, the Maintainer Repo's changes made, and a new update made. It replaces the waiting one and carries its verdicts not yet sent (step 4).
+
+  The Maintainer Repo may compare the System Repo's main with the stop before delivery too, to save a delivery bound to fail. A System Kit moved since the update was made is no reason to refuse it: the update is correct, if not the latest, and the next brings the rest.
 
   A gate may have fixed, merged or dropped entries the update answered. These show in the new span as changes with their entries, and are judged like any. Entries from before "read to" still in the copies are cleared at the take, and what is still needed comes back with a fresh entry, judged in the next reading.
 
@@ -456,7 +459,7 @@ Seven steps, for depth a:
 
   A take may be postponed, with its why. Work then goes on with the old copies, and the order runs again at the next opening: the reading is extended, and a newer update replaces the waiting one (step 4).
 - **Adapted Case:**
-  - the System Repo's, for taking an update, itself in the update and taken first. It loads when a Plan Step opens with an update waiting. For this step it says: take only at a Plan Step's opening, right after a reading that reached main, or postpone with why; take in the order above; re-apply only with evidence, each with a fresh entry;
+  - the System Repo's, for taking an update, itself in the update and taken first. It loads when a Plan Step opens with an update waiting. For this step it says: check first that main is still the reading's stop and the moment is the update's base, and take nothing when either differs, saying so; take only at a Plan Step's opening, or postpone with why; take in the order above; re-apply only with evidence, each with a fresh entry;
   - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its update taken, since the last opening? A System Repo cannot see this itself; the human answers.
 - **Open:**
   - finished work done under a rule the update changed may now be wrong. New work follows the new copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first update that changes a rule a finished Plan Step followed;
