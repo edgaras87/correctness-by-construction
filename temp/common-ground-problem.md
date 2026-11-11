@@ -49,6 +49,8 @@ Defined Terms, in alphabetical order:
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
 - **System Kit:** what the Maintainer Repo keeps for System Repos to work from, shared by the System Repos it serves, and listed in §2.1, *What the System Kit holds*. Its originals stay in the Maintainer Repo, beside the project-agnostic understanding they are adapted from; each System Repo works from copies, and takes the System Kit's changes by an update.
 - **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo.
+- **System Kit Copy Change:** a System Repo's change to a System Kit Copy, made against the System Kit Version that copy came from.
+- **System Kit Version:** the System Kit as it stood at one Maintainer Repo commit. Each System Repo records the one its System Kit Copies came from.
 - **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
@@ -253,6 +255,8 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | System Repo | a CBC Run |
 | System Kit | the delivery, `delivery/`: the Container Group, the Method Group and a Stack Group, with the concept and each group's Glossary Names |
 | System Kit Copy | a CBC Run's copy of a Master Copy |
+| System Kit Copy Change | a CBC Run's edit to a copy (`docs/conventions/exchange/` §5.1, *When a copy may be edited*) |
+| System Kit Version | the Delivery Pin: the Concept Deliverer's commit a CBC Run's copies equal |
 | Instruction Text | a Work Approach: an Agent Skill, an Agent Rule, an Approach on Trial or an Output Form. Which of the three sorts an Output Form is, is open |
 | Task Instruction Text | an Agent Skill |
 | Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules |
