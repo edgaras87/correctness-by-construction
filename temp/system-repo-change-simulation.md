@@ -402,7 +402,7 @@ Seven steps, for depth a:
 
 **Step 5. The update is delivered.**
 
-- **What must happen:** on the human's word, the update is staged into the System Repo's `temp/`, by the human or by the agent. It is the only time the Maintainer Repo writes into a System Repo, and it writes nowhere else there. Nothing in `temp/` is in force until the System Repo takes it (step 6).
+- **What must happen:** on the human's word, the update is staged into the System Repo's `temp/`, by the human or by the agent. It writes only into the System Repo's `temp/`, nowhere else there. Nothing in `temp/` is in force until the System Repo takes it (step 6).
 - **Options,** for checking what was staged:
   - a. a second Adapted Case of the Maintainer Repo's checks it, apart from the one that delivered, as at birth;
   - b. the delivering Adapted Case compares each staged file with the System Kit at the new moment, once staged, and the System Repo checks the note against the files when it takes them;
@@ -423,4 +423,47 @@ Seven steps, for depth a:
   - borrowed: one Agent Skill both writes the note and stages the delivery (`.claude/skills/exchange-deliver/SKILL.md`). It also compares the staged files here;
   - borrowed: the CBC Run's `temp/` gains exactly the staging and its note, and nothing tracked in the CBC Run changes (`.claude/skills/exchange-deliver/SKILL.md`, *Gates*);
   - changed: today the staged files are copied by a script, so they equal the Master Copies by how they are made, and no comparison follows; the CBC Run's Delivery Take checks the note against the files (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 1).
+
+**Step 6. The System Repo takes the update.**
+
+- **What must happen:** the update is taken when the System Repo's next Plan Step opens, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: the System Repo is read back to main, judged, and its update made, delivered and taken. Then the step opens on the new copies.
+- **Options,** for when an update is taken:
+  - a. whenever it arrives;
+  - b. at a Plan Step's opening, right after a reading that reached main;
+  - c. at a Plan Step's opening, whatever was read.
+- **Options,** for the System Repo's entries at the take:
+  - d. kept, since the merge keeps what only the System Repo added;
+  - e. all cleared, every copy taken whole, and what is still needed re-applied with a fresh entry.
+- **Chosen:** b and e. The others:
+  - a lands in the middle of a step, which then runs on two sets of rules;
+  - c takes the update over changes not yet read. The update answered none of them, and clearing their entries loses them before they are read;
+  - d keeps entries that say how a copy differed from the old System Kit. After the take some describe nothing, and none says how the copy differs from the new one.
+
+  The opening order follows the fixed order already set: reading back, judging, then the update (`temp/common-ground-problem.md` §2.1, *An update*). An open reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old copies first; the human may instead drop or restart it, when the update changes a rule it rests on. If work moved past the reading's stop anyway, there is no take: the reading is extended and judged, and the update remade first.
+
+  At the take, in order:
+  1. the Adapted Case for taking an update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
+  2. the files are checked against the note: what changed, and how many (step 4). A mismatch is said before anything moves;
+  3. every copy is taken whole, at the new moment; each path gone is removed, and each renamed is moved. Every entry is cleared: the reading reached main, so each was read and judged;
+  4. what the System Repo still needs is re-applied, each with a fresh entry written against the new version: what did not fit, what it keeps, which work found it, and its proposal. An old entry's what-happened may be carried in a line. Only a change with evidence is re-applied: its old entry, or a clash with the new version. A System Kit change on a part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
+  5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its entry saying which. One naming a part that changed after its commit is checked, with a note when it no longer applies. A question is answered as an entry or a note;
+  6. the new moment is recorded, with the System Repo's commit that holds it, so the next update finds its base;
+  7. the update and its note are removed from `temp/`.
+
+  A take may be postponed, with its why. Work then goes on with the old copies, and the order runs again at the next opening: the reading is extended, and a newer update replaces the waiting one (step 4).
+- **Adapted Case:**
+  - the System Repo's, for taking an update, itself in the update and taken first. It loads when a Plan Step opens with an update waiting. For this step it says: take only at a Plan Step's opening, right after a reading that reached main, or postpone with why; take in the order above; re-apply only with evidence, each with a fresh entry;
+  - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its update taken, since the last opening? A System Repo cannot see this itself; the human answers.
+- **Open:**
+  - finished work done under a rule the update changed may now be wrong. New work follows the new copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first update that changes a rule a finished Plan Step followed;
+  - a take postponed again and again leaves the System Repo far behind. Its trigger: the first take postponed past two openings.
+
+  The take answers §3, step 1's Open on its own terms: every entry stands against the last moment taken, or birth's, and every entry goes at a take, rewritten when its difference stays. It is confirmed by that Open's trigger, the first update to reach a System Repo whose copies have entries.
+- **Today:**
+  - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
+  - borrowed: the Delivery Take's order: the note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);
+  - borrowed: being behind the Concept Deliverer is acceptable (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). A postponed take is that;
+  - changed: today an edit made after the Read-Through Commit is re-applied on top, its record standing (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 3). Here the opening order leaves no such edit;
+  - changed: today a declined edit is gone at the Delivery Take, and never edited back in (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the System Repo re-applies what it still needs, with a fresh entry;
+  - changed: today work continues on the edited copy when a Plan Step opens before the reply (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). Here the next step waits for the take, unless it is postponed with why.
 
