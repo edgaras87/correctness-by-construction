@@ -8,7 +8,7 @@
 - **Its steps sit in six sections,** one per part: Change, Read, Judge, Act on the verdicts, Deliver, Take. Steps are numbered inside each part, so a step added later renumbers only its own part.
 - **The word "half" is gone** from both temp files, in both its meanings: a part of the case, and one text of an Adapted Case.
 - **`temp/common-ground-problem.md` agrees with the simulation:** its pointers name the new sections, its rules sit under one heading per part, and "read to" moves once the verdicts are acted on.
-- **The simulation's step 7 is written,** where its part is found to be.
+- **Step 7 is not a step.** The next reading is a normal reading, with no memory of earlier verdicts. What step 7 asked, and a System Repo with nothing new since its take, are Opens in Read, step 3, left for practice.
 
 ## Commits
 
@@ -27,8 +27,8 @@ This file.
 **4. `docs: temp's problem moves "read to" when acted`**
 The problem file's *Reading a change* and *The list* still move "read to" once the list is whole. The simulation moved it to once the verdicts are acted on (`b2f458c`). A stale fact of its own, apart from the halves.
 
-**5. `docs: temp's simulation, step 7`** *(provisional)*
-"The next reading does not find the change again." Its part is decided when it is written: likely Read, for the next reading, where it would answer *Reading a change*'s Open on how an update's changes are told from the System Repo's own. Its wording and split follow from that.
+**5. `docs: temp's step 7 becomes Read's Opens`**
+"The next reading does not find the change again" is dropped as a step. Read, step 3 gains two Opens beside its Open on an update's changes: whether a System Repo with nothing new since its take is read again, and whether a change put back at the take is judged again. Each has its trigger. §1's line on the step not drafted goes.
 
 **6. `docs(agent): close commit plan, the six parts`**
 Deletes this file. The body records what diverged. Before it, the sweep: "half", "halves", "first-half", "second-half", every old "§3, step" and "§4, step", and each old section title, grepped unwrapped across Living Text.
@@ -39,4 +39,5 @@ Deletes this file. The body records what diverged. Before it, the sweep: "half",
 - **The problem file's rules move by part in this plan,** commit 3b, as a move only. Rewording them from the steps is the work after this plan. The two old headings kept the halves alive in the problem file after commit 3 removed them from the simulation (the reviewer, 2026-11-11).
 - **The merged case's rule goes in with the merge,** commit 2, so the problem file's *Recording a change* never lags the step it comes from.
 - **Section titles** are the part names of §1's table. Each is checked against writing rule 10 when commit 3 is written.
+- **The next reading has no memory of earlier verdicts** in this simulation: a change put back at the take is read like any other. Marking it "already judged" in its entry was weighed and left for practice (the reviewer, 2026-11-11).
 - **Depth c** is not in this plan. It comes after step 7, as the Resume line set.
