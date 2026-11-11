@@ -301,3 +301,29 @@ Six steps, for depth a:
   - changed: the four questions gain question 0, and a line may be split into parts. The second-half rules have neither;
   - borrowed: a verdict that cannot be reached yet is held, with its trigger and a line so it is not lost (`docs/conventions/exchange/` §6.5, *Verdicts*);
   - changed: today a verdict says whether the Concept Deliverer takes a hunk: taken, declined or held (`docs/conventions/exchange/` §6.5). Here it says how deep the change goes. Depth a is near today's declined, "not general", but the copy keeps the change, where today the next Delivery Take overwrites it.
+
+**Step 2. The verdict is written.**
+
+- **What must happen:** each judged line, or part of one, gets a verdict, the agent drafting and the human deciding. It is written for the System Repo, which reads it when the update arrives (step 5). For depth a: the change stays, as the System Repo's own.
+- **Options,** for what a verdict holds:
+  - a. the answer only: unsound, misread, or its depth;
+  - b. the answer, its why, and whether it agrees with the System Repo's proposal, with why if not;
+  - c. b, and what the Maintainer Repo changes for it.
+- **Chosen:** b. The others:
+  - a tells the System Repo where its change went, never why, so a proposal judged wrong teaches it nothing;
+  - c names Maintainer Repo texts the System Repo cannot open. What changes there belongs to the depths that change something, depth c's step, and to the update's own changes (step 4).
+
+  A verdict is one of: unsound; misread, question 1; its own, question 2, depth a; lost in narrowing, question 3, depth d; a project-agnostic lesson, question 4, depth c; a lesson for System Repos only, depth b; or held, with its trigger. Lines under one reason share one verdict, and each line says how its own copy is affected.
+
+  Its why stands on its own. It cites nothing the System Repo cannot open, since the System Repo checks it against its own tree. The agreement is said in one line, "the proposal holds" or "the proposal does not hold, because …". An unsound verdict says what the change breaks or leaves unfixed; whether to reverse it is the System Repo's decision.
+- **Adapted Case:** the Maintainer Repo's, for judging a reading. For this step it says:
+  - one verdict per line or part: its answer, its why, and whether the proposal holds;
+  - lines under one reason share a verdict, each saying how its own copy is affected;
+  - the why cites nothing the System Repo cannot open.
+- **Open:** whether an unsound verdict offers a fix. Its trigger: the first unsound verdict.
+- **Today:**
+  - borrowed: a verdict carries its why, and goes down to the CBC Run (`docs/conventions/exchange/` §6.5, *Verdicts*);
+  - borrowed: what the CBC Run must check is checkable against its own tree (`docs/conventions/exchange/` §2.2, *The CBC Run*);
+  - changed: today a verdict is taken, declined or held (`docs/conventions/exchange/` §6.5). Here it is a depth, or unsound, misread or held;
+  - changed: today no verdict answers a proposal, since every edit claims to be for any CBC Run (`docs/conventions/exchange/` §5.1). Here each says whether the proposal holds.
+
