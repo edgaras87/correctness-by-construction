@@ -158,11 +158,11 @@ So far, three movements:
 
 Each sort of repo takes a change from the other by its own Adapted Case of one idea, how a repo takes a change from another. The Maintainer Repo's is the judging below. The System Repos' is part of the System Kit: each System Repo uses its copy and may change it, and the Maintainer Repo judges those changes like any other.
 
-A change read back is followed in two halves, each with its rules below: recorded and read, then decided and updated. Their cases are simulated one at a time (below, *A System Repo's change*).
+A change read back is followed in six parts, from the change to the update's take. Its rules below are in two groups: recorded and read, then decided and updated. Their cases are simulated one at a time (below, *A System Repo's change*).
 
 ##### Recording and reading
 
-Its rules come from one case, one Adapted Case changed in any of its texts, simulated step by step. Each rule's options, and why the others were not taken, are there (`temp/system-repo-change-simulation.md` §3, *The first half*). The other cases are checked against them next.
+Its rules come from one case, one Adapted Case changed in any of its texts, simulated step by step. Each rule's options, and why the others were not taken, are there (`temp/system-repo-change-simulation.md` §3, *Change*; §4, *Read*). The other cases are checked against them next.
 
 **Recording a change.** A System Repo changes its copy when its work shows the copy does not fit, never ahead of that, the human deciding. The change carries an entry, written and committed with it, in a footer of the copy's Adapted Understanding Text, which is not loaded for work. The entry says what changed, by meaning, and whether the texts it left as they were still match it; what happened, concretely, in the System Repo's own words; which work found it; and whether the System Repo thinks the change answers its own problem or one any repo would meet. That last is a proposal, never a verdict. The entry says the change as it stands: a later edit or reversal rewrites it. The copy keeps the change (below, *An update*).
 
@@ -209,10 +209,10 @@ How each question is answered, and by whom, is open. So is a change that arrives
 
 This section follows one source of the Common Ground Problem: a System Repo changes its System Kit Copies, and the change has to reach the Maintainer Repo and be judged there. Other sources exist, such as a birth, a lesson found in the Maintainer Repo's own work, or new knowledge from the human. They are left on purpose until this problem is finished (`TODO.md`, the item on resuming the simulation).
 
-A change is followed in two halves:
+A change is followed in six parts: change, read, judge, act on the verdicts, deliver, and take. Its cases are of two kinds:
 
-- **First half, recorded and read:** how the System Repo records its change, and how the Maintainer Repo finds it. Its cases are what was changed. They are the same however deep the change turns out to go, since that is known only once it is judged.
-- **Second half, decided and updated:** how the Maintainer Repo decides, and how the update is written. Its cases are how deep the change goes in the Maintainer Repo.
+- **What was changed:** these vary how the System Repo records its change, and how the Maintainer Repo finds it. They are the same however deep the change turns out to go, since that is known only once it is judged.
+- **How deep it goes:** these vary how the Maintainer Repo decides, and how the update is written.
 
 The cases are simulated in `temp/system-repo-change-simulation.md`, and the rules above are written from it.
 

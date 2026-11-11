@@ -49,7 +49,7 @@
         become scenarios of their own;
       - start from the file's *Open* fields, each with its trigger;
       - the birth scenario gains what
-        `temp/system-repo-change-simulation.md` step 4 asks of it:
+        `temp/system-repo-change-simulation.md` §4, step 2 asks of it:
         the delivery check writes the System Repo's register row,
         with "read to" set to the start.
       Trigger: the Common Ground Problem is finished.
