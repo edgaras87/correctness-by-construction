@@ -21,6 +21,19 @@ Three moves, in order:
 2. **Write the rules:** once all of a half's steps are seen together, its rules are written in `temp/common-ground-problem.md` §2.1, *What passes between the repos*.
 3. **Check them:** each step is walked again against the rules. A step a rule does not hold for changes the rule or the step.
 
+The steps make six parts, each done by one repo:
+
+| Part | Who | Steps |
+|---|---|---|
+| Change | System Repo | §3, steps 1–2 |
+| Read | Maintainer Repo | §3, steps 3–6 |
+| Judge | Maintainer Repo | §4, steps 1–2 |
+| Act on the verdicts | Maintainer Repo | §4, step 3 |
+| Deliver | Maintainer Repo | §4, steps 4–5 |
+| Take | System Repo | §4, step 6 |
+
+§4's step 7 is not drafted yet.
+
 Each step has these fields. A field with nothing in it is left out.
 
 - **What must happen:** the outcome, and who acts.
