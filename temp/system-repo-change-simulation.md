@@ -221,6 +221,30 @@ Six steps:
   - changed: today the diff runs against what was delivered, the Receipt Branch or the last delivery entry (`.claude/skills/exchange-read/SKILL.md`, Stage 3). That works because a Delivery Take makes every copy equal its original again. Here a copy keeps its changes;
   - changed: today the whys are read from the Decisions Log. Here they are read from the entries, in the copies.
 
+**Step 6. It lists what changed, nothing judged.**
+
+- **What must happen:** the reading gets one line per change and one per note, nothing judged. The human checks that the list is whole. Then the reading is done, and its stop moves into the register (step 4).
+- **Options:**
+  - a. one line per change, nothing decided; judging is the second half;
+  - b. each change judged as it is listed;
+  - c. only the changes the System Repo proposed as any repo's are listed;
+  - d. one line per copy, its changes summed.
+- **Chosen:** a. The others:
+  - b judges before the whole list is seen, so changes with one reason are judged apart, and each verdict leans on the System Repo's proposal (Failure Case 20). Listing is cheap and judging is not, so the list is checked whole first;
+  - c takes the proposal for the verdict, and a lesson for every repo stays in one System Repo (Failure Case 20);
+  - d merges two changes to one copy, and one of their reasons is lost.
+
+  A line holds what step 5 found: the copy and its part, what it says now, what happened, which work found it, and the System Repo's proposal, marked as one. A change with no entry says "no entry". Changes linked by one reason are listed together, under it. A note is a line of its own; one about a change sits with that change.
+- **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
+  - one line per change and per note, nothing judged;
+  - linked changes listed together, under their reason;
+  - the human checks the list is whole; then the stop moves into the register.
+- **Today:**
+  - borrowed: one line per item, what it is and where, nothing decided (`.claude/skills/exchange-read/SKILL.md`, Stage 4 and *Gates*);
+  - borrowed: the reading is a draft to its form (`.claude/rules/exchange-reading.md`);
+  - changed: today a line is one per edit, per CBC Run Ask and per finding, read from three places (`.claude/skills/exchange-read/SKILL.md`, Stage 3). Here a line is one per change, with its entry, and one per note;
+  - changed: today the proposal is not asked for: every edit must claim to be for any CBC Run (`docs/conventions/exchange/` §5.1). Here each line carries it, as input to judging.
+
 ## 4. The second half, decided and updated
 
 Not yet simulated. It waits for a depth to be chosen to work first (§2, the second-half rows). Known so far:
