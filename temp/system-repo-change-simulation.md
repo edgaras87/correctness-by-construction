@@ -190,6 +190,37 @@ Six steps:
   - changed: today the stop, the Read-Through Commit, is kept in the CBC Run, carried there by the next Delivery Note, because "it is the only place the Concept Deliverer can look" (`docs/conventions/exchange/` §2.2, *The CBC Run*). Today every reading is followed by a delivery, so the stop always arrives. Here a reading may have no update after it;
   - changed: today a CBC Run is born with its Read-Through Commit written as *none*, and the exchange-read Agent Skill names no span for it (`delivery/installs/pure-seed.md`, step 2). Here birth writes the start as "read to", and the first reading starts there.
 
+**Step 5. The Maintainer Repo compares the copies, and reads each entry.**
+
+- **What must happen:** across the span, from "read to" to the stop, the agent finds every change to a System Kit Copy, pairs each with its entry, and reads the notes written in the span. It only reads the System Repo, and writes only in the Maintainer Repo.
+- **Options,** for how changes are found:
+  - a. each copy compared across the span, in the System Repo's own history, from "read to" to the stop;
+  - b. each copy compared with the System Kit, at the moment the copies came from;
+  - c. only the entries read, with no comparison;
+  - d. the span walked commit by commit.
+- **Chosen:** a. The others:
+  - b finds the same as a until the first update. After it, a copy that kept a change differs from the System Kit at every reading, and the change is found again each time;
+  - c misses a change with no entry, which the commit's check should have stopped, but which can still land (Failure Case 22);
+  - d shows every edit on the way, and changes the gate reversed. The gate has settled those (step 2); what stands at the stop is what is read.
+
+  An entry lands in the same diff as its change, in the copy's Adapted Understanding Text, so pairing them is reading one diff. Three things can come out:
+  - a change with its entry: read with its what, what happened, which work found it, and the System Repo's proposal;
+  - a change with no entry: read from the comparison alone, and marked "no entry";
+  - an entry changed with no change to the copy, as when a why is rewritten: read as a change of its why.
+
+  The notes written in the span are read beside them. A note about a change points at its entry, so it is read with that change.
+- **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
+  - compare each copy from "read to" to the stop, in the System Repo's history;
+  - pair each change with its entry; mark one with none "no entry";
+  - read the notes written in the span;
+  - judge nothing.
+- **Open:** an update lands inside the next span, so its changes to the copies would read as the System Repo's own, with no entry. They might be told apart by starting the span after the update, by marking the update's commits, or by comparing with the System Kit minus the entries, option b. Its trigger: the first update to reach a System Repo whose copies have entries, step 1's trigger too.
+- **Today:**
+  - borrowed: every item is read from the copies' diff, the whys, and the lines to the Concept Deliverer (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*; `.claude/skills/exchange-read/SKILL.md`, Stage 3). Here the whys are in the diff, so it is two: the diff and the notes;
+  - borrowed: the CBC Run is only read, never written (`.claude/skills/exchange-read/SKILL.md`, *Gates*);
+  - changed: today the diff runs against what was delivered, the Receipt Branch or the last delivery entry (`.claude/skills/exchange-read/SKILL.md`, Stage 3). That works because a Delivery Take makes every copy equal its original again. Here a copy keeps its changes;
+  - changed: today the whys are read from the Decisions Log. Here they are read from the entries, in the copies.
+
 ## 4. The second half, decided and updated
 
 Not yet simulated. It waits for a depth to be chosen to work first (§2, the second-half rows). Known so far:
