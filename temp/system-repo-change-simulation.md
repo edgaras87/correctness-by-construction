@@ -348,3 +348,38 @@ Six steps, for depth a:
   - borrowed: a taken change is committed here, and the next delivery carries it (`docs/conventions/exchange/` §6.5). It is the other depths' path;
   - borrowed: the why of a declined change goes in the Delivery Note and nowhere else (`docs/conventions/exchange/` §6.5). Here the reading holds it until the update.
 
+**Step 4. The update is made: the System Kit's changes, and the verdicts the System Repo can act on.**
+
+- **What must happen:** when work resumes in the System Repo, after it is read back and judged, the Maintainer Repo makes its update, the agent drafting and the human deciding (`temp/common-ground-problem.md` §2.1, *An update*). The human carries it into the System Repo, since nothing arrives by itself. For depth a, the System Kit has not changed for this change, so the update carries it only if its verdict is one the System Repo can act on.
+- **Options,** for which verdicts go down:
+  - a. every verdict;
+  - b. only those the System Repo can act on: unsound, misread, and a proposal that did not hold;
+  - c. none; only the System Kit's changes.
+- **Options,** for when an update goes:
+  - d. after every reading, even with nothing to carry;
+  - e. only when it carries something: a System Kit change, or a verdict that goes down.
+- **Chosen:** b and e. The others:
+  - a sends lines that ask nothing of the System Repo. A change judged its own, with its proposal holding, needs no answer: the copy keeps it either way;
+  - c leaves an unsound change unknown to the only repo that can reverse it;
+  - d sends an empty update to carry where the reading stopped. "Read to" is in the register now (§3, step 4), so nothing needs carrying.
+
+  An update holds:
+  - the System Kit's changes since the moment the System Repo's copies came from, each with its why, and the new moment;
+  - each path gone or renamed, since a copy cannot carry its own absence;
+  - the verdicts that go down, each naming the System Repo's own copy and part, and saying what the System Repo may do now.
+
+  Nothing in it cites what the System Repo cannot open: no path, record or word of the Maintainer Repo's own. A depth-a change whose proposal held sends nothing, and the System Repo's copy keeps it.
+- **Adapted Case:** the Maintainer Repo's, for making an update. It loads on the human's word to update a System Repo. For this step it says:
+  - it follows the System Repo's reading back and judging, never comes before them;
+  - it goes only when it carries a System Kit change or a verdict;
+  - it carries the System Kit's changes with their whys and the new moment, what is gone, and the verdicts the System Repo can act on;
+  - it cites nothing the System Repo cannot open.
+- **Today:**
+  - borrowed: the delivery is staged into the CBC Run's `temp/` on the reviewer's word, the CBC Run's tree checked clean first, and named by the commit it was final at (`docs/conventions/exchange/` §3.1, *Delivery Staging*);
+  - borrowed: the note says what changed since the Delivery Pin, and why it matters to this CBC Run (`docs/conventions/exchange/` §3.7, *The Delivery Note*);
+  - borrowed: a verdict says the decision and what the CBC Run owes now, nothing else; no path or word of this repo's reaches it (`docs/conventions/exchange/` §3.7);
+  - borrowed: a note may arrive alone, with no files (`docs/conventions/exchange/` §6.6, *The Delivery Note after a read*). An update of verdicts only is one;
+  - borrowed: the note carries what is gone (`docs/conventions/exchange/` §3.6, *Absence in a delivery*);
+  - changed: today every read ends with a Delivery Note, even an empty one, to carry the Read-Through Commit (`docs/conventions/exchange/` §6.6). Here an update goes only when it carries something;
+  - changed: today the note gives a verdict on everything the CBC Run addressed to the Concept Deliverer (`docs/conventions/exchange/` §3.7). Here only the verdicts the System Repo can act on go down.
+
