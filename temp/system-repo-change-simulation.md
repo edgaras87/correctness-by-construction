@@ -88,15 +88,17 @@ Six steps:
   The change and its entry go in the same commit. A commit that changes a copy and not its entry is stopped there. The commit is always reached: work never committed is lost, change and entry together.
 
   Weighed and dropped: a check at each session's end, comparing the copies with their entries. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds an entry missing or wrong whose change was committed in an earlier session.
-- **Adapted Case:** the System Repo's, for changing a System Kit Copy, itself a System Kit Copy. It loads when a copy is touched. For this step it says:
+- **Adapted Case:** the System Repo's, for changing a System Kit Copy, itself a System Kit Copy. It loads when a copy, or the notes' place, is touched. For this step it says:
   - a copy changes only when the work shows it does not fit, never ahead;
   - the entry is written with the change, with its four parts, and goes in the same commit;
   - what happened is written concretely, in the System Repo's own words;
-  - whether the change is its own or any repo's is a proposal, never a verdict.
+  - whether the change is its own or any repo's is a proposal, never a verdict;
+  - a note, written at any time, carries only what has no change; one about a change points at its entry, and never retells it (step 2).
 - **Open:** which moment of the System Kit an entry is written against, and whether an entry goes once an update takes its change in. Before the first update, every entry stands against the moment the copies arrived. Its trigger: the first update to reach a System Repo whose copies have entries.
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
+  - changed: today its paths do not hold `TODO.md`, where *To the deliverer* is. Here the notes' place loads it too;
   - borrowed: the entry names which work found the change, as a Decisions Log entry names its Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
   - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the copy keeps it (`temp/common-ground-problem.md` §2.1, *An update*);
   - changed: today nothing is written into a copy but the edit, since "a file says how to use it, never its own history", and the why goes in the Decisions Log (`docs/conventions/exchange/` §5.1). Here the why goes in the copy's Adapted Understanding Text, which is not read while working;
@@ -116,17 +118,16 @@ Six steps:
   - c leaves the review to the side that cannot see what happened, and a wrong change then reaches the Maintainer Repo's judging;
   - d adds nothing to the entries: reading compares every copy, and reads the entries. It comes back if a reading misses a changed copy because nothing asked it to look.
 
-  A change kept as it is needs nothing more. A change edited gets its entry rewritten. When changes share one reason, the reason is written in full in one entry, and each other entry says how its own copy was affected and points at that one.
+  A change kept as it is needs nothing more. A change edited gets its entry rewritten. When changes share one reason, the reason is written in full in one entry, and each other entry says how its own copy was affected and points at that one. If the entry holding the reason is reversed, the reason moves to one that stays, and the others point there.
 
   The gate also asks once: did an Adapted Case used in this step not fit, with no change made? A misfit worked around without a change leaves nothing for the comparison to find. The human, who saw every session of the step, answers. Each misfit named is written as a note for the Maintainer Repo.
 
-  A note carries what has no change to carry it: a misfit with no change made, a doubt about a line left as it is, something the System Kit lacked, a copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. A note never lists a change: the entry already says it, and a second line would have to follow every edit and reversal. A note about a change points at its entry, and never retells it. Reading reads the notes as well as the copies (step 5).
+  A note carries what has no change to carry it: a misfit with no change made, a doubt about a line left as it is, something the System Kit lacked, a copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. Notes are kept in one known place in the System Repo's records. A note never lists a change: the entry already says it, and a second line would have to follow every edit and reversal. A note about a change points at its entry, and never retells it. Reading reads the notes as well as the copies (step 5).
 - **Adapted Case:** the System Repo's, for closing a Plan Step, its gate list. It loads when the Plan Step closes. For this step it says:
   - compare the copies against where the Plan Step began, and check each change has an entry that says it;
   - the human decides each change: kept, edited or reversed, its entry with it;
-  - changes with one reason are linked;
-  - ask once whether an Adapted Case did not fit, with no change made, and write each as a note;
-  - a note never lists a change; one about a change points at its entry.
+  - changes with one reason are linked, and the reason never stays only in a reversed entry;
+  - ask once whether an Adapted Case did not fit, with no change made, and write each as a note.
 - **Open:** whether a reversed change leaves a trace for the Maintainer Repo. A change tried and undone may be evidence that the System Kit Copy was right. Its trigger: the first change reversed at a gate.
 - **Today:**
   - borrowed: the gate is a list of outcomes checked at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
@@ -208,11 +209,11 @@ Six steps:
   - a change with no entry: read from the comparison alone, and marked "no entry";
   - an entry changed with no change to the copy, as when a why is rewritten: read as a change of its why.
 
-  The notes written in the span are read beside them. A note about a change points at its entry, so it is read with that change.
+  The notes are found the same way: their place in the System Repo's records is compared across the span, and each new note is read beside the changes. A note about a change points at its entry, so it is read with that change.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - compare each copy from "read to" to the stop, in the System Repo's history;
   - pair each change with its entry; mark one with none "no entry";
-  - read the notes written in the span;
+  - compare the notes' place across the span, and read each new note;
   - judge nothing.
 - **Open:** an update lands inside the next span, so its changes to the copies would read as the System Repo's own, with no entry. They might be told apart by starting the span after the update, by marking the update's commits, or by comparing with the System Kit minus the entries, option b. Its trigger: the first update to reach a System Repo whose copies have entries, step 1's trigger too.
 - **Today:**
