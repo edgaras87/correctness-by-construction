@@ -9,9 +9,9 @@
      and 3. It goes when the Plan Step closes, and git keeps every
      version. -->
 
-This document simulates one case: a System Repo changes both halves of one Adapted Case in its System Kit Copies, and the Maintainer Repo reads the change back. It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
+This document simulates one case: a System Repo changes one Adapted Case in its System Kit Copies, any of its texts, and the Maintainer Repo reads the change back. It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
 
-The scope: the two halves are the Instruction Text and its Adapted Understanding Text. The change may have any reason, its own or one any repo would meet. Either half may change first. One stretch of work may hold several such changes. Each step's choice must hold for all of it, so no fixed example is used: a step is tried against the scope's edges.
+The scope: the change may touch the Adapted Understanding Text, an Instruction Text built on it, or both, in either order. The change may have any reason, its own or one any repo would meet. One stretch of work may hold several such changes. Each step's choice must hold for all of it, so no fixed example is used: a step is tried against the scope's edges.
 
 ## 1. How it is worked
 
@@ -49,15 +49,12 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 
 | Half | Case | Status | Differs so far |
 |---|---|---|---|
-| first | both halves of one Adapted Case | being simulated, §3 | — |
-| first | an Instruction Text only | not yet checked | recorded: says whether its Adapted Understanding Text still matches (Failure Case 8) |
-| first | an Adapted Understanding Text only | not yet checked | recorded: says whether its Instruction Texts still match (Failure Case 8) |
+| first | one Adapted Case, any of its texts | being simulated, §3 | — |
 | first | a Defined Term | not yet checked | — |
 | first | delivered Knowledge on Trial | not yet checked | read: compared like any copy; decided: the original was never proven, so the change is evidence for its trial |
 | first | new text of the System Repo's own, on trial | not yet checked | read: written in the System Kit's on-trial folder, so the comparison finds it as a new file; decided: with no original, the first question does not apply |
-| first | a copy no longer used | not yet checked | read: nothing in the file changes, so only a mark shows it |
 | first | one reason behind changes to several Adapted Cases | not yet checked | recorded: one why, naming every copy it changed; read: the changes are listed together |
-| first | a note with no change | not yet checked | read: a line of its own, from the notes' place, with no copy's diff; decided: questions 1 to 4 fit a doubt about a line, not a lack or an unused copy |
+| first | a note with no change | not yet checked | read: a line of its own, from the notes' place, with no copy's diff; a copy no longer used shows only so, since nothing in its file changes; decided: questions 1 to 4 fit a doubt about a line, not a lack or an unused copy |
 | second | a. it stays in the System Repo | not yet checked | — |
 | second | b. the System Kit's Adapted Case changes | not yet checked | the update brings it to this System Repo too, whose copy already has it |
 | second | c. the project-agnostic text changes | not yet checked | the other Adapted Cases are surveyed, the Maintainer Repo's own among them |
@@ -92,7 +89,7 @@ Six steps:
   - d leaves the copy saying it for good, and the next agent reads the copy, not the records.
 
   The entry goes in a footer of the copy's Adapted Understanding Text, which is not loaded for work. So the change and its why land in one diff, and the why cannot lose its copy. An Instruction Text changed alone has its entry there too. The entry holds:
-  - what changed, by meaning: the part, and what it says now;
+  - what changed, by meaning: the part, and what it says now. When the change left some of the Adapted Case's texts as they were, whether they still match it (Failure Case 8);
   - what happened, concretely, in the System Repo's own words. It is never written to sound project-agnostic: making it general is the Maintainer Repo's, after judging;
   - which work found it;
   - the System Repo's proposal: its own problem, or one any repo would meet. It is marked as a proposal. The Maintainer Repo judges every change, and says whether it agrees, and why if not (§4).
