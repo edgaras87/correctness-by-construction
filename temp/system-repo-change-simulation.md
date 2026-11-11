@@ -248,8 +248,50 @@ Six steps:
 
 ## 4. The second half, decided and updated
 
-Not yet simulated. It waits for a depth to be chosen to work first (§2, the second-half rows). Known so far:
+It is simulated first for depth a, the change staying in the System Repo: the shortest path through every step. Depth c, the project-agnostic text changing, is then checked against it (§2, the second-half rows). Known before it was simulated:
 
 - the four questions decide (`temp/common-ground-problem.md` §2.1, *Judging a change read back*), and the System Repo's own view of its change is input, never the verdict;
 - the depth comes from the reason, never the edit. A cap raised from 50 to 60 stays in the System Repo, depth a, when its reason is "our scope names are long". The same edit is a project-agnostic lesson, depth c, when its reason is "the cap counts the scope, which any repo with scopes meets". Only the recorded reason tells them apart;
 - the verdict reaches the System Repo with the next update, and its copy keeps its change either way (`temp/common-ground-problem.md` §2.1, *An update*).
+
+Six steps, for depth a:
+
+1. The list is judged.
+2. The verdict is written.
+3. The verdict waits for the update.
+4. The update is made.
+5. The System Repo takes the update.
+6. The verdict lands in the entry, and the next reading does not find the change again.
+
+**Step 1. The list is judged.**
+
+- **What must happen:** each line of the reading is judged by the four questions, in order, the cheapest first, until one holds (`temp/common-ground-problem.md` §2.1, *Judging a change read back*). The agent proposes an answer to each, with what it read; the human decides. For depth a, question 2 holds: the change answers that System Repo's own problem.
+- **Options,** for who judges:
+  - a. the agent proposes each answer, with what it read, and the human decides each line;
+  - b. the agent judges, and the human looks only at the lines where the agent disagrees with the System Repo's proposal;
+  - c. the human judges alone.
+- **Options,** for a line marked "no entry":
+  - d. judged from the comparison alone;
+  - e. held, until the human brings its why from the System Repo.
+- **Chosen:** a and e. The others:
+  - b lets the agent's agreement with the proposal pass unchecked: two readings agreeing is not a verdict (Failure Case 20);
+  - c leaves the human to read every text the questions need, which the agent reads faster, and with nothing written down to check;
+  - d judges on a guess at the why (Failure Case 22).
+
+  What each question reads:
+  - question 1, the copy already said it: the original part, at the moment the copies came from, beside the change;
+  - question 2, specific to that System Repo's problem: what happened, the System Repo's proposal, and its framing of its problem;
+  - question 3, the project-agnostic understanding already holds it: the Project-Agnostic Understanding Text the Adapted Case narrows;
+  - question 4, true for every repo: depth c's step, checked later.
+
+  Lines listed together under one reason are judged together, and the reason is judged once. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
+- **Adapted Case:** the Maintainer Repo's, for judging a reading. It loads when the human starts judging a reading whose list was checked whole. For this step it says:
+  - the four questions, in order, until one holds; for each, what it reads;
+  - the agent proposes each answer with what it read; the human decides;
+  - lines under one reason are judged together;
+  - a line with no entry is held until its why is brought.
+- **Open:** how question 4 is answered, and by whom. Its trigger: depth c is checked against these steps.
+- **Today:**
+  - borrowed: the four questions, from the second-half rules written before this simulation (`temp/common-ground-problem.md` §2.1, *Judging a change read back*). They leave how each is answered, and by whom, open; step 1 answers it for questions 1 to 3;
+  - borrowed: a verdict that cannot be reached yet is held, with its trigger and a line so it is not lost (`docs/conventions/exchange/` §6.5, *Verdicts*);
+  - changed: today a verdict says whether the Concept Deliverer takes a hunk: taken, declined or held (`docs/conventions/exchange/` §6.5). Here it says how deep the change goes. Depth a is near today's declined, "not general", but the copy keeps the change, where today the next Delivery Take overwrites it.
