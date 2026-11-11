@@ -253,16 +253,16 @@ It is simulated first for depth a, the change staying in the System Repo: the sh
 
 - the four questions decide (`temp/common-ground-problem.md` §2.1, *Judging a change read back*), and the System Repo's own view of its change is input, never the verdict;
 - the depth comes from the reason, never the edit. A cap raised from 50 to 60 stays in the System Repo, depth a, when its reason is "our scope names are long". The same edit is a project-agnostic lesson, depth c, when its reason is "the cap counts the scope, which any repo with scopes meets". Only the recorded reason tells them apart;
-- the verdict reaches the System Repo with the next update, and its copy keeps its change either way (`temp/common-ground-problem.md` §2.1, *An update*).
+- what the System Repo gets reaches it with the next update, and its copy keeps its change either way (`temp/common-ground-problem.md` §2.1, *An update*).
 
 Six steps, for depth a:
 
 1. The list is judged.
 2. The verdict is written.
-3. The verdict waits for the update.
-4. The update is made.
+3. The Maintainer Repo makes its changes. For depth a, none.
+4. The update is made: the System Kit's changes, and the verdicts the System Repo can act on.
 5. The System Repo takes the update.
-6. The verdict lands in the entry, and the next reading does not find the change again.
+6. The next reading does not find the change again.
 
 **Step 1. The list is judged.**
 
@@ -304,26 +304,25 @@ Six steps, for depth a:
 
 **Step 2. The verdict is written.**
 
-- **What must happen:** each judged line, or part of one, gets a verdict, the agent drafting and the human deciding. It is written for the System Repo, which reads it when the update arrives (step 5). For depth a: the change stays, as the System Repo's own.
+- **What must happen:** each judged line, or part of one, gets a verdict, the agent drafting and the human deciding. It is the Maintainer Repo's decision, written for its own work: what it changes, in the System Kit or the project-agnostic understanding, starts from it (step 3). Which verdicts the System Repo gets is step 4's. For depth a: the change stays, as the System Repo's own, and nothing changes here.
 - **Options,** for what a verdict holds:
   - a. the answer only: unsound, misread, or its depth;
   - b. the answer, its why, and whether it agrees with the System Repo's proposal, with why if not;
   - c. b, and what the Maintainer Repo changes for it.
 - **Chosen:** b. The others:
-  - a tells the System Repo where its change went, never why, so a proposal judged wrong teaches it nothing;
-  - c names Maintainer Repo texts the System Repo cannot open. What changes there belongs to the depths that change something, depth c's step, and to the update's own changes (step 4).
+  - a leaves the change made from it with nothing to check it against, and a proposal judged wrong goes unseen;
+  - c decides what changes before it is worked out: that is step 3's, with the survey where the depth needs one.
 
   A verdict is one of: unsound; misread, question 1; its own, question 2, depth a; lost in narrowing, question 3, depth d; a project-agnostic lesson, question 4, depth c; a lesson for System Repos only, depth b; or held, with its trigger. Lines under one reason share one verdict, and each line says how its own copy is affected.
 
-  Its why stands on its own. It cites nothing the System Repo cannot open, since the System Repo checks it against its own tree. The agreement is said in one line, "the proposal holds" or "the proposal does not hold, because …". An unsound verdict says what the change breaks or leaves unfixed; whether to reverse it is the System Repo's decision.
+  The agreement is said in one line, "the proposal holds" or "the proposal does not hold, because …". An unsound verdict says what the change breaks or leaves unfixed; whether to reverse it is the System Repo's decision, once the verdict reaches it (step 4).
 - **Adapted Case:** the Maintainer Repo's, for judging a reading. For this step it says:
   - one verdict per line or part: its answer, its why, and whether the proposal holds;
-  - lines under one reason share a verdict, each saying how its own copy is affected;
-  - the why cites nothing the System Repo cannot open.
+  - lines under one reason share a verdict, each saying how its own copy is affected.
 - **Open:** whether an unsound verdict offers a fix. Its trigger: the first unsound verdict.
 - **Today:**
-  - borrowed: a verdict carries its why, and goes down to the CBC Run (`docs/conventions/exchange/` §6.5, *Verdicts*);
-  - borrowed: what the CBC Run must check is checkable against its own tree (`docs/conventions/exchange/` §2.2, *The CBC Run*);
+  - borrowed: a verdict carries its why (`docs/conventions/exchange/` §6.5, *Verdicts*);
+  - changed: today every verdict goes down in the Delivery Note (`docs/conventions/exchange/` §6.5). Here the verdict is the Maintainer Repo's, and only those the System Repo can act on go down (step 4);
   - changed: today a verdict is taken, declined or held (`docs/conventions/exchange/` §6.5). Here it is a depth, or unsound, misread or held;
   - changed: today no verdict answers a proposal, since every edit claims to be for any CBC Run (`docs/conventions/exchange/` §5.1). Here each says whether the proposal holds.
 
