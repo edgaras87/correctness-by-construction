@@ -158,11 +158,11 @@ So far, three movements:
 
 Each sort of repo takes a change from the other by its own Adapted Case of one idea, how a repo takes a change from another. The Maintainer Repo's is the judging below. The System Repos' is part of the System Kit: each System Repo uses its copy and may change it, and the Maintainer Repo judges those changes like any other.
 
-A change read back is followed in six parts, from the change to the update's take. Its rules below are in two groups: recorded and read, then decided and updated. Their cases are simulated one at a time (below, *A System Repo's change*).
+A change read back is followed in six parts, from the change to the update's take, each with its rules below. Their cases are simulated one at a time (below, *A System Repo's change*).
 
-##### Recording and reading
+The rules of Change and Read come from one case, one Adapted Case changed in any of its texts, simulated step by step. Each rule's options, and why the others were not taken, are there (`temp/system-repo-change-simulation.md` §3, *Change*; §4, *Read*). The other cases are checked against them next.
 
-Its rules come from one case, one Adapted Case changed in any of its texts, simulated step by step. Each rule's options, and why the others were not taken, are there (`temp/system-repo-change-simulation.md` §3, *Change*; §4, *Read*). The other cases are checked against them next.
+##### Change
 
 **Recording a change.** A System Repo changes its copy when its work shows the copy does not fit, never ahead of that, the human deciding. The change carries an entry, written and committed with it, in a footer of the copy's Adapted Understanding Text, which is not loaded for work. The entry says what changed, by meaning, and whether the texts it left as they were still match it; what happened, concretely, in the System Repo's own words; which work found it; and whether the System Repo thinks the change answers its own problem or one any repo would meet. That last is a proposal, never a verdict. The entry says the change as it stands: a later edit or reversal rewrites it. The copy keeps the change (below, *An update*).
 
@@ -170,11 +170,13 @@ Its rules come from one case, one Adapted Case changed in any of its texts, simu
 
 **The gate.** At each Plan Step's close, the step's changes are compared with their entries and seen together. The human decides each: kept, edited or reversed. Changes with one reason are linked, the reason written once. The gate asks once whether an Adapted Case did not fit with no change made, and each one named becomes a note. Main moves only at the close.
 
+##### Read
+
 **Reading a change.** The Maintainer Repo's register keeps, for each System Repo, where it lives and "read to", the commit its last reading stopped at. Birth sets "read to" to the commit holding the copies as they arrived, so it is never empty. A System Repo has work to read when its main has moved past "read to". It is checked when the human names it, and every System Repo is when the human asks what to read. A reading runs from "read to" to main, so it reads only closed Plan Steps, and it writes main down before reading anything. It compares the System Kit's folders and the notes' place across that span, in the System Repo's own history, and pairs each change with its entry in the same diff. So a change with no entry is still found (Failure Case 22), and one already read is not found again. A look past main may be asked for; it moves nothing, and gives only notes. Open: an update lands inside the next span, and how its changes are told from the System Repo's own. Its trigger: the first update to reach a System Repo whose copies have entries.
 
 **The list.** A reading is one line per change and per note, nothing judged: the System Repo's proposal stays a proposal. Changes with one reason are listed together. The human checks that the list is whole, and only then does "read to" move to the reading's stop. The reading is a draft, and goes once its work is done.
 
-##### Deciding and updating
+##### Judge
 
 **Judging a change read back.** Four questions, in order, the cheapest first:
 
@@ -184,6 +186,8 @@ Its rules come from one case, one Adapted Case changed in any of its texts, simu
 4. Is it true for every repo? Then it is a project-agnostic lesson, below.
 
 If none holds, it is a lesson for System Repos only: the Adapted Case it came from gains it, and the project-agnostic understanding stays as it is. A lesson found in the Maintainer Repo's own work takes questions 3 and 4 the same way.
+
+##### Act on the verdicts
 
 **A project-agnostic lesson.** A Project-Agnostic Understanding Text is bound to no project, so a lesson enters it if it holds for any project, whatever an Adapted Case says.
 
@@ -196,14 +200,19 @@ How each question is answered, and by whom, is open. So is a change that arrives
 
 **Narrowing, never shrinking.** A Project-Agnostic Understanding Text changes only where it is wrong for every repo (Failure Case 11). A part that does not fit one sort of repo stays in it: the Adapted Case leaves the part out, and marks that it did, with why. The mark is written when the exclusion is decided, never listed ahead. So question 3 can tell a part lost in narrowing, with no mark, from one left out on purpose, with its mark. A change to a marked part reopens its why.
 
+##### Deliver
+
+**What an update sends.** An update sends the System Kit's changes, each with its why. The project-agnostic understanding stays home, as at birth. A change that comes from a project-agnostic lesson quotes the lesson as its why.
+
+##### Take
+
 **An update.** How a System Repo takes one is open. Seen so far:
 
 - a System Kit Copy may differ from its original, and keeps the System Repo's specific changes. This holds for an Instruction Text and its Adapted Understanding Text alike, and still holds after reading back and an update. An update never overwrites it: the System Repo judges what is new, as the Maintainer Repo judges a lesson;
 - work resuming in a System Repo goes in a fixed order: reading back, judging, then the update;
 - each System Repo says which moment of the System Kit its copies come from;
 - a declined update is recorded with its why, so a later reading back does not take it for a new change;
-- the instructions for taking an update are taken first, on their own, and the rest under them. Otherwise an update is taken by instructions older than it (Failure Case 10);
-- an update sends the System Kit's changes, each with its why. The project-agnostic understanding stays home, as at birth. A change that comes from a project-agnostic lesson quotes the lesson as its why.
+- the instructions for taking an update are taken first, on their own, and the rest under them. Otherwise an update is taken by instructions older than it (Failure Case 10).
 
 #### A System Repo's change
 

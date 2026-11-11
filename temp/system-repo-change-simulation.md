@@ -3,8 +3,8 @@
 <!-- A draft for the Plan Step "Find how what we know stays true",
      stage 1. It simulates one case of temp/common-ground-problem.md,
      *A System Repo's change*, step by step, until that draft's rules
-     can be written from it: *Recording and reading* first, then
-     *Deciding and updating*. The rules live there, never here. Its
+     can be written from it, one heading per part. The rules live
+     there, never here. Its
      input: the frozen temp/between-repos-simulation.md, scenarios 2
      and 3. It goes when the Plan Step closes, and git keeps every
      version. -->
