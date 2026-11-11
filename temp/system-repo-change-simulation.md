@@ -44,6 +44,7 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | first | new text of the System Repo's own, on trial | not yet checked | read: written in the System Kit's on-trial folder, so the comparison finds it as a new file; decided: with no original, the first question does not apply |
 | first | a copy no longer used | not yet checked | read: nothing in the file changes, so only a mark shows it |
 | first | one reason behind changes to several Adapted Cases | not yet checked | recorded: one why, naming every copy it changed; read: the changes are listed together |
+| first | a note with no change | not yet checked | read: a line of its own, from the notes' place, with no copy's diff; decided: questions 1 to 4 fit a doubt about a line, not a lack or an unused copy |
 | second | a. it stays in the System Repo | not yet checked | — |
 | second | b. the System Kit's Adapted Case changes | not yet checked | the update brings it to this System Repo too, whose copy already has it |
 | second | c. the project-agnostic text changes | not yet checked | the other Adapted Cases are surveyed, the Maintainer Repo's own among them |
@@ -265,7 +266,7 @@ Six steps, for depth a:
 
 **Step 1. The list is judged.**
 
-- **What must happen:** each line of the reading is judged by the four questions, in order, the cheapest first, until one holds (`temp/common-ground-problem.md` §2.1, *Judging a change read back*). The agent proposes an answer to each, with what it read; the human decides. For depth a, question 2 holds: the change answers that System Repo's own problem.
+- **What must happen:** each line of the reading is first judged sound or not. A sound line is then judged by the four questions, in order, the cheapest first, until one holds (`temp/common-ground-problem.md` §2.1, *Judging a change read back*). The agent proposes an answer to each, with what it read; the human decides. For depth a, question 2 holds: the change answers that System Repo's own problem.
 - **Options,** for who judges:
   - a. the agent proposes each answer, with what it read, and the human decides each line;
   - b. the agent judges, and the human looks only at the lines where the agent disagrees with the System Repo's proposal;
@@ -279,19 +280,24 @@ Six steps, for depth a:
   - d judges on a guess at the why (Failure Case 22).
 
   What each question reads:
+  - question 0, the change is sound: what happened, the change, and the original part. Does the change fix what happened, without breaking something the copy did? An unsound change spreads nowhere: the depth questions are not asked, and the verdict says why. The copy is the System Repo's own, so the change stays there unless the System Repo reverses it;
   - question 1, the copy already said it: the original part, at the moment the copies came from, beside the change;
   - question 2, specific to that System Repo's problem: what happened, the System Repo's proposal, and its framing of its problem;
   - question 3, the project-agnostic understanding already holds it: the Project-Agnostic Understanding Text the Adapted Case narrows;
   - question 4, true for every repo: depth c's step, checked later.
 
-  Lines listed together under one reason are judged together, and the reason is judged once. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
+  Lines listed together under one reason are judged together, and the reason is judged once. A line whose parts answer differently is split, each part judged on its own; the parts keep their one entry. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
 - **Adapted Case:** the Maintainer Repo's, for judging a reading. It loads when the human starts judging a reading whose list was checked whole. For this step it says:
-  - the four questions, in order, until one holds; for each, what it reads;
+  - question 0 first: does the change fix what happened, without breaking something the copy did? An unsound change spreads nowhere, and its verdict says why;
+  - then the four questions, in order, until one holds; for each, what it reads;
+  - a line whose parts answer differently is split, each part judged on its own;
   - the agent proposes each answer with what it read; the human decides;
   - lines under one reason are judged together;
   - a line with no entry is held until its why is brought.
 - **Open:** how question 4 is answered, and by whom. Its trigger: depth c is checked against these steps.
 - **Today:**
   - borrowed: the four questions, from the second-half rules written before this simulation (`temp/common-ground-problem.md` §2.1, *Judging a change read back*). They leave how each is answered, and by whom, open; step 1 answers it for questions 1 to 3;
+  - borrowed: a change may be declined as "not worth the change" (`docs/conventions/exchange/` §6.5, *Verdicts*). Question 0 asks it first, for every depth;
+  - changed: the four questions gain question 0, and a line may be split into parts. The second-half rules have neither;
   - borrowed: a verdict that cannot be reached yet is held, with its trigger and a line so it is not lost (`docs/conventions/exchange/` §6.5, *Verdicts*);
   - changed: today a verdict says whether the Concept Deliverer takes a hunk: taken, declined or held (`docs/conventions/exchange/` §6.5). Here it says how deep the change goes. Depth a is near today's declined, "not general", but the copy keeps the change, where today the next Delivery Take overwrites it.
