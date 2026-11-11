@@ -167,6 +167,29 @@ Six steps:
   - changed: today the register's state, such as "through Release, not yet read", is written by hand (`ARCHITECTURE.md` §2.5). Here it is found by comparison when asked;
   - changed: today a reading runs to the CBC Run's `HEAD`, and names work not yet committed (`.claude/skills/exchange-read/SKILL.md`, Stages 2 and 3). Here it runs to main, and work past it waits.
 
+**Step 4. The Maintainer Repo finds where to start reading.**
+
+- **What must happen:** the agent finds where this reading starts, and writes where it stops, before reading anything. A later reading must start where this one stopped, whether an update follows this reading or not.
+- **Options,** for where the last reading's stop is kept:
+  - a. in the System Repo, carried there by the next update;
+  - b. in the Maintainer Repo's register, a "read to" commit beside where each System Repo lives;
+  - c. in the Maintainer Repo, as the first line of each reading, every reading kept.
+- **Chosen:** b. The others:
+  - a fails when a reading has no update after it, which step 3's readings between allow: the System Repo still holds the old stop, and the next reading finds again what was read;
+  - c keeps every reading only for one line.
+
+  The start is the register's "read to". A System Repo never read starts at the start, the commit holding the System Kit Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). The stop is the System Repo's main, written as the open reading's first line before anything is read, so a commit landing during the reading falls into the next one. It moves into the register when the reading is done (step 6), never before: a reading left half done must not mark its changes read. The reading stays a draft, and goes once its work is done.
+- **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
+  - the start is the register's "read to", or the System Repo's start if it was never read;
+  - the stop is the System Repo's main, written as the reading's first line before anything is read;
+  - the stop moves into the register when the reading is done.
+- **Today:**
+  - borrowed: the stop is written first, as the reading's first line, before anything is read (`.claude/skills/exchange-read/SKILL.md`, Stage 2);
+  - borrowed: the register keeps where each System Repo lives (`ARCHITECTURE.md` §2.5, *The CBC Runs*). It gains the "read to" commit;
+  - borrowed: a CBC Run Reading is a draft in `temp/`, deleted once the work that needed it is done (`temp/README.md`; `.claude/skills/exchange-read/SKILL.md`, Stage 4);
+  - changed: today the stop, the Read-Through Commit, is kept in the CBC Run, carried there by the next Delivery Note, because "it is the only place the Concept Deliverer can look" (`docs/conventions/exchange/` §2.2, *The CBC Run*). Today every reading is followed by a delivery, so the stop always arrives. Here a reading may have no update after it;
+  - changed: today a CBC Run is born with its Read-Through Commit written as *none*, and the exchange-read Agent Skill names no span for it (`delivery/installs/pure-seed.md`, step 2). Here the first reading starts at the start.
+
 ## 4. The second half, decided and updated
 
 Not yet simulated. It waits for a depth to be chosen to work first (§2, the second-half rows). Known so far:
