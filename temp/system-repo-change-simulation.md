@@ -329,3 +329,22 @@ Six steps, for depth a:
   - changed: today a verdict is taken, declined or held (`docs/conventions/exchange/` §6.5). Here it is a depth, or unsound, misread or held;
   - changed: today no verdict answers a proposal, since every edit claims to be for any CBC Run (`docs/conventions/exchange/` §5.1). Here each says whether the proposal holds.
 
+**Step 3. The Maintainer Repo makes its changes. For depth a, none.**
+
+- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth a, nothing changes in the System Kit or the project-agnostic understanding. The verdict waits in the reading, which stays a draft until the update carries what the System Repo needs (step 4).
+- **Options,** for depth a:
+  - a. nothing changes here; the verdict waits in the reading;
+  - b. nothing changes in the System Kit, and the verdict is also kept in a lasting record, by the part it changed, so a later reading sees when another System Repo makes the same change;
+  - c. the change enters the System Kit as a variant, for System Repos like this one.
+- **Chosen:** a. The others:
+  - b builds a record before any part has been changed by two System Repos;
+  - c is a speculation: one System Repo's own change, offered to System Repos that have not met it. Several Adapted Cases needing a change, but not all, is its own case (§2, row f).
+
+  For the other depths, this step holds the work, each checked here later: depth b changes the System Kit's Adapted Case; depth c changes the project-agnostic understanding, after the survey; depth d fixes the Adapted Case from the project-agnostic understanding; a narrowing is marked with its why. A lesson is reworded here, never before: for every System Repo at depth b, naming no project at depth c (`temp/common-ground-problem.md` §2.1, *A project-agnostic lesson*).
+- **Adapted Case:** the Maintainer Repo's, for judging a reading. For this step it says: a verdict of its own changes nothing here; the reading stays a draft until the update carries what the System Repo needs.
+- **Open:** whether depth a's verdicts are kept beyond the update, so the same change by a second System Repo is seen. Without it, two System Repos making one change are each judged alone. Its trigger: the second System Repo read back.
+- **Today:**
+  - borrowed: a declined change moves nothing in the Concept Deliverer's tree (`docs/conventions/exchange/` §6.5, *Verdicts*);
+  - borrowed: a taken change is committed here, and the next delivery carries it (`docs/conventions/exchange/` §6.5). It is the other depths' path;
+  - borrowed: the why of a declined change goes in the Delivery Note and nowhere else (`docs/conventions/exchange/` §6.5). Here the reading holds it until the update.
+
