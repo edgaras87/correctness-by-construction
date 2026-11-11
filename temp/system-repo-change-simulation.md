@@ -350,7 +350,7 @@ Six steps, for depth a:
 
 **Step 4. The update is made: the System Kit's changes, and the verdicts the System Repo can act on.**
 
-- **What must happen:** when work resumes in the System Repo, after it is read back and judged, the Maintainer Repo makes its update, the agent drafting and the human deciding (`temp/common-ground-problem.md` §2.1, *An update*). An update is due when the System Kit has moved past the moment the System Repo's copies came from, or when its reading left a verdict that goes down. The human carries it into the System Repo, since nothing arrives by itself. For depth a, the System Kit has not changed for this change, so the update carries it only if its verdict is one the System Repo can act on.
+- **What must happen:** when work resumes in the System Repo, after it is read back and judged, the Maintainer Repo makes its update, the agent drafting and the human deciding (`temp/common-ground-problem.md` §2.1, *An update*). An update is due when the System Kit has moved past the moment the System Repo's copies came from, or when its reading left a verdict that goes down. It reaches the System Repo on the human's word, in a step of its own: nothing crosses without that word, and the agent may carry it. For depth a, the System Kit has not changed for this change, so the update carries it only if its verdict is one the System Repo can act on.
 - **Options,** for which verdicts go down:
   - a. every verdict;
   - b. only those the System Repo can act on: unsound, misread, and a proposal that did not hold;
