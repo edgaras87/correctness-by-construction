@@ -135,6 +135,38 @@ Six steps:
   - changed: today the close writes one CBC Run Ask per edited copy (`delivery/container/.claude/rules/delivered-copies.md`, rule 4), option d. Here the entries are what reading reads;
   - changed: today nothing at the close looks at the step's changes to copies together.
 
+**Step 3. The stretch of work ends, and the Maintainer Repo is told.**
+
+- **What must happen:** a stretch of work ends where reading can stop, and the Maintainer Repo learns that the System Repo has work it has not read. The human decides which System Repo is read, and when.
+- **Options,** for where a stretch ends:
+  - a. at any commit, the System Repo's latest;
+  - b. at a closed Plan Step's gate, the last one on main.
+- **Options,** for how the Maintainer Repo learns:
+  - c. the human tells it, and its register is marked by hand;
+  - d. the human names a System Repo, and the agent compares its main with where its last reading stopped. Every System Repo is compared when the human asks what to read;
+  - e. only when work resumes in the System Repo, by the fixed order: reading back, judging, then the update.
+- **Chosen:** b and d. The others:
+  - a reads changes the gate has not yet looked at, which the System Repo may still edit or reverse (step 2);
+  - c depends on the human remembering, and the register then says a System Repo was read when it has new work (Failure Case 2);
+  - e alone never reads a System Repo whose work does not resume, so what it learned is lost (Failure Case 1). It stands as it is, for every System Repo (`temp/common-ground-problem.md` §2.1, *An update*), and d adds the reading between.
+
+  Main moves only at a gate's close, so main is always at a closed gate, and nothing on it waits for a gate. Work past it, in a branch or not yet committed, is left for the next reading.
+
+  A look at work past main may be asked for, as when a change is in doubt before its gate. It is not a reading: it does not move where the last reading stopped, judges nothing, and gives only notes, for the human and for the System Repo's gate. The work is read when it reaches main.
+
+  d keeps no state of its own: whether a System Repo has work comes from its main and the last reading's stop, never from a line someone must keep true.
+
+  If a stretch's history is cleaned before main moves, the entries are unharmed: they are in the copies, not in the commits.
+- **Adapted Case:**
+  - the System Repo's gate list: main moves only at a gate's close. It is there today;
+  - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read, or asks what to read. For this step it says: compare the named System Repo's main with where its last reading stopped, or every System Repo's when asked; a look past main moves nothing, and gives only notes.
+- **Open:** a System Repo nobody names is not read until its work resumes. Its trigger: the first lesson found late because a System Repo went unread.
+- **Today:**
+  - borrowed: a Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
+  - borrowed: the Maintainer Repo keeps where each System Repo lives (`ARCHITECTURE.md` §2.5, *The CBC Runs*);
+  - changed: today the register's state, such as "through Release, not yet read", is written by hand (`ARCHITECTURE.md` §2.5). Here it is found by comparison when asked;
+  - changed: today a reading runs to the CBC Run's `HEAD`, and names work not yet committed (`.claude/skills/exchange-read/SKILL.md`, Stages 2 and 3). Here it runs to main, and work past it waits.
+
 ## 4. The second half, decided and updated
 
 Not yet simulated. It waits for a depth to be chosen to work first (§2, the second-half rows). Known so far:
