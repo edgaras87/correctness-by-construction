@@ -26,7 +26,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-10.
+     Last touched: 2026-11-11.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
@@ -1910,6 +1910,108 @@ edit it open (`d49478d`). Each step names its Adapted Case and what
 it leaves open (`3652e69`). The birth's cleanup is a step of its own
 (`3c42a4e`). A second Adapted Case of the Maintainer Repo's checks
 the delivery (`1cc6f0e`). Next, scenario 2.
+
+### 2026-11-10 and 2026-11-11
+
+#### What the reviewer said
+
+- **Freezing the scenarios:** "i think this can increase complexity of already complex enough problem, where we build common-ground-problem solution together with current repo update to intent repo. so i think what we can do is to freeze those scenarios for later, after we finish with this problem." And: "So what i think we should take one obviuos scenario and just describe intent of it. this scenarios should be system repo system kit copy change. so if we define this one case we and we write boundary that there is others, but we intentionaly not dealing now with those, we could continue on common-ground-problem."
+- **The hows, for one case first:** "also i think we need also to write: how change is recorded, how we read, how we decide, and how we write update. right?" And: "should we split in possible scenarios, select only one now to define first version for hows. after check each if that holds?"
+- **Narrowing, never shrinking:** "it coud happend, that project agnostic understanding does not need any records, as it hold that change already and we need only to change adapted cases." And: "should we not shrink ever and in adapted case just mark that this specific part is excluded here with reason why?"
+- **Simulating to write rules:** "go step by step and consider what must happen. for example we take change as sep step and cosider for specific case what could we do and what we finaly choose. when we see all steps togther we write rules. then we check with out scenario all steps and how rules holds." And: "lets sep for change in system-repo, where we put as all simulations needed till we can continue on the common-ground-problem with derived rules."
+- **A scope, not an example:** "why we need that example at all? why we can just have define scope with example?"
+- **Checking at the gate:** "each step has its ending. current system repo uses such plan and has gates. it think this structure will not change. so i think this is the place to check and this is one gate to include: to check if we have any changes for Adated Cases we  have used." And: "or should we have like note create , when we first time dissagree what Adapte Case is saying and check that note in the end?"
+- **Entries in a footer:** "or we should have changes and records why that happened as footer in Adapted Case understanding, because it does not load for work and those change notes does not bothers." And: "if we write notes of change whys and whats, we can change any time we like and reverse or edit those changes. gates and session end just checkpoints and we should decide how they could be useful."
+- **A proposal, checked twice:** "Should we go with double check, where system repo gives this as proposal from his point of view and maintainer checks change and gives his oppinion on that proposal, where it could find that suggestion was incorrect?"
+- **Worth its upkeep:** "Now tell me how usefull or redundant this is? do we loose alot without it? what it actualy helps us? how much of maintanance that brings and is it worth it?" And: "yes, drop step 2, but should we keep a record, like what we have droped?"
+- **Notes:** "i think i still may use this practice, where i will note something that maintainer should look or check, when something is poping in my minds. so if this funtionality is available, is there point to list about these changes? is it a noise and/or breaks one-home rule"
+- **One System Repo by default:** "Can i still in some case ask to read some steps in the middle of work if needed or to check only specific repo only and not check all when needed?"
+- **"Read to" in the register:** "you mean all readings are kept just to have from where to read? i not see this as good idea. i think if we have register, we could store there where we left, like hash of commit or something." And: "now if reading was never done, should we have default "none", "null" or what? is this not this step responsibility?"
+- **Knowledge on Trial:** "also about that folder, we also have sep folder in system kit for them, as we have in today's."
+- **The questions:** "do we ask those questions for each finding? are those questions good? should i be asking more? are they fit everything?" And: "if change that is comming is actually needed, but it is writen not quite good, like it is too specific to problem, not shared enough manner. will we still drop it even if change is needed only writen better?"
+- **Who a verdict is for:** "for whome we write verdic? do i understand correct, that we write those for ourself to prepare changes on system kit and when needed project-agnostic understanding with everything related to them."
+- **An update in the middle of a step:** "now i have updated which is for the part that is before step started. if i brough that and update in the middle of step it is a place of possible failure, because update was conidered on old info and if we process update we can u loose new info because work moved forward."
+- **What is delivered:** "we also need to deliver updated system kit as copy, doesnt it? because how system repo will know how it looks after reading is taken? do we need to deliver everything or only whats touched?"
+- **Who checks the fit:** "who should check this fitting thing? should system repo do that as it knows better its needs, or maintainer during the update when it writes that update."
+- **Delivery, a step:** "we will have adapted case for deliver: "The human carries it into the System Repo, since nothing arrives by itself". so is it step we missing? deliver updates?"
+- **Entries at the take:** "shouldnt we delete entries and write new ones? also we could write what has not fit and what we changed during implementation of update."
+- **A boundary at the opening:** "can we solve this we just writing boundary that today, system repo can not move forward while update is not finished."
+- **Bounding out:** "now i really thinking , maybe i should bound out this and wait till i face this. because this is too much complexity for now."
+- **A gate that reworked entries:** "it could happend that at gate of step, new entries togther with old ones was merged, wired or connected into new findingd. so how would that work? is it simpler to just drop update and redo or atleast redo and in the end just compare somehow?" And: "so we kind of need to readings or/and reading evalutations? am i missing something?"
+- **"Read to" once acted on:** "so after we judge, "read to" still not moves till we not locked those changes we found in this maintainer repo. after changes was landed, that means there is no more to read and judge and "read to" is safe to move, no matter if repo reached updates." And: "is it true that we could split those basicaly in 2 cases, where first one is when updated that is comming, was prepared on same system kit version from which reading of that updated was done and if that system repo we sending update nowhere moved."
+- **Six parts:** "should it be like `change(system repo) -> read(maintainer) -> judge(maintainer) -> update(maintainer) -> deliver(maintainer) -> take updates(system repo)`?" And: "why we need that split into 2 half? those half gives us what? what not remove that split and then split in those six parts?"
+
+#### What the reviewer said, edited
+
+The same words, with grammar and spelling fixed, the meaning kept:
+
+- **Freezing the scenarios:** "I think this can add complexity to a problem already complex enough, where we build the Common Ground Problem's solution together with turning today's repo into the intended one. So I think we can freeze those scenarios for later, after we finish this problem." And: "So I think we should take one obvious scenario and just describe its intent. This scenario should be a System Repo changing its System Kit Copy. If we define this one case, and write a boundary saying there are others that we are not dealing with now on purpose, we can continue on the Common Ground Problem."
+- **The hows, for one case first:** "I think we also need to write how a change is recorded, how we read it, how we decide, and how we write the update. Right?" And: "Should we split it into possible scenarios, select only one now to define a first version of the hows, and afterwards check whether each holds?"
+- **Narrowing, never shrinking:** "It could happen that the project-agnostic understanding needs no record, since it already holds that change, and we only need to change Adapted Cases." And: "Should we never shrink it, and in the Adapted Case just mark that this specific part is excluded here, with the reason why?"
+- **Simulating to write rules:** "Go step by step and consider what must happen. For example, take a change as a separate step and consider, for a specific case, what we could do and what we finally choose. When we see all the steps together, we write the rules. Then we check all the steps against our scenario, and how the rules hold." And: "Let's separate the System Repo's change into its own file, where we put all the simulation needed until we can continue on the Common Ground Problem with the rules derived."
+- **A scope, not an example:** "Why do we need that example at all? Why can't we just define the scope?"
+- **Checking at the gate:** "Each step has its end. Today's System Repo works by such a plan and has gates. I don't think this structure will change. So I think this is the place to check, and this is one gate to include: checking whether we have any changes for the Adapted Cases we have used." And: "Or should we create a note the first time we disagree with what an Adapted Case says, and check that note at the end?"
+- **Entries in a footer:** "Or we should keep the changes, and records of why they happened, as a footer in the Adapted Understanding Text, because it is not loaded for work, so those change notes don't get in the way." And: "If we write notes of each change's why and what, we can change anything at any time, and reverse or edit those changes. Gates and session ends are just checkpoints, and we should decide how they could be useful."
+- **A proposal, checked twice:** "Should we check twice, where the System Repo gives this as a proposal from its point of view, and the Maintainer Repo checks the change and gives its opinion on that proposal, so it could find that the suggestion was incorrect?"
+- **Worth its upkeep:** "Now tell me how useful or redundant this is. Do we lose much without it? What does it actually help us with? How much upkeep does it bring, and is it worth it?" And: "Yes, drop step 2. But should we keep a record of what we dropped?"
+- **Notes:** "I think I may still use this practice, where I note something the Maintainer Repo should look at or check, when something pops into my mind. So if this is available, is there any point in listing these changes? Is it noise, does it break the one-home rule, or both?"
+- **One System Repo by default:** "Can I still, in some cases, ask to read some steps in the middle of work if needed, or check only one specific repo and not all of them?"
+- **"Read to" in the register:** "You mean all readings are kept just so we know where to read from? I don't think that's a good idea. If we have a register, we could store there where we left off, like a commit hash." And: "If a reading was never done, should we have a default, "none", "null", or what? Isn't this this step's responsibility?"
+- **Knowledge on Trial:** "Also, about that folder: the System Kit has a separate folder for them too, as today's does."
+- **The questions:** "Do we ask those questions for each finding? Are they good questions? Should I be asking more? Do they fit everything?" And: "If an incoming change is actually needed, but it is not written well, too specific to the problem, not written in a shared way, do we still drop it, even though the change is needed and only needs writing better?"
+- **Who a verdict is for:** "Who do we write the verdict for? Do I understand correctly that we write it for ourselves, to prepare changes to the System Kit and, when needed, to the project-agnostic understanding, with everything related to them?"
+- **An update in the middle of a step:** "Now I have an update for the part before the step started. If I bring that update in the middle of the step, it is a place where things can fail, because the update was built on old information, and if we process it we can lose new information, since work moved forward."
+- **What is delivered:** "We also need to deliver the updated System Kit as a copy, don't we? Otherwise how will the System Repo know how it looks after the reading is taken? Do we need to deliver everything, or only what was touched?"
+- **Who checks the fit:** "Who should check this fit? Should the System Repo, since it knows its needs better, or the Maintainer Repo, when it writes the update?"
+- **Delivery, a step:** "We will have an Adapted Case for delivering: "The human carries it into the System Repo, since nothing arrives by itself". So is it a step we are missing, delivering updates?"
+- **Entries at the take:** "Shouldn't we delete the entries and write new ones? We could also write what did not fit, and what we changed while putting the update in place."
+- **A boundary at the opening:** "Can we solve this just by writing a boundary that, for now, a System Repo cannot move forward while an update is not finished?"
+- **Bounding out:** "Now I am really thinking I should bound this out and wait until I face it, because it is too much complexity for now."
+- **A gate that reworked entries:** "It could happen that, at a step's gate, new entries together with old ones were merged, wired or connected into new findings. How would that work? Is it simpler to drop the update and redo it, or at least redo it and just compare at the end somehow?" And: "So do we need two readings, or two reading evaluations? Am I missing something?"
+- **"Read to" once acted on:** "So after we judge, "read to" still does not move until we have locked in the changes we found, in this Maintainer Repo. Once the changes have landed, there is nothing more to read and judge, and "read to" is safe to move, whether or not the update has reached the repo." And: "Is it true that we could split them into two cases, the first where the incoming update was prepared on the same System Kit version the reading was done from, and the System Repo we are sending it to has not moved?"
+- **Six parts:** "Should it be change (System Repo), read (Maintainer Repo), judge (Maintainer Repo), update (Maintainer Repo), deliver (Maintainer Repo), take the update (System Repo)?" And: "Why do we need that split into two halves? What do the halves give us? Why not remove that split and split into those six parts instead?"
+
+#### What the reviewer asked, as the agent would ask it
+
+The questions the reviewer was asking, put by the agent:
+
+1. Can the scenarios be frozen, and one case, a System Repo changing its copy, followed until the Common Ground Problem has rules, the others bounded out on purpose?
+2. Does the case need the four hows, recorded, read, decided and updated, and should one case be worked first and the rest checked against it?
+3. When the project-agnostic text already holds a lesson, or holds what fits not every Adapted Case, does it change, or does the Adapted Case mark what it leaves out?
+4. Should the rules be found by simulating each step in a file of its own, options weighed and one chosen, and written only once a half's steps are seen together?
+5. Does a fixed example bound the case, where a scope would not?
+6. Where is a copy's change caught: a Plan Step's gate, a note at the first disagreement, a check at a session's end, or an entry written with the change?
+7. Who decides whether a change is the System Repo's own or any repo's?
+8. Is each check worth its upkeep, and is a dropped one recorded?
+9. Do the reviewer's own notes to the Maintainer Repo repeat the entries?
+10. Is one System Repo read by default, and can a reading be asked for at any time?
+11. Where is a reading's stop kept, and what does it start as?
+12. How is new Knowledge on Trial found?
+13. Are the judging questions enough, and is a needed change that is badly worded dropped?
+14. Who reads a verdict?
+15. What happens to an update made from a reading the work has since moved past?
+16. What does an update carry, and who checks that it fits?
+17. Is delivery a step of its own, by an Adapted Case?
+18. Do entries survive a take?
+19. When the System Repo moved on, is the update redone or continued, and does a repo on an older System Kit moment need a reading of its own?
+20. When does "read to" move?
+21. Are the six parts the real structure, and what do the two halves still give?
+
+#### What the agent added
+
+- **Today's stop needs a delivery to travel:** the Read-Through Commit reaches the CBC Run only in a Delivery Note. Once a reading may have no update after it, the stop must live in the Maintainer Repo.
+- **Only a Plan Step's gate survives sessions;** a session's end is not a checkpoint the work can rely on. The session-end check was weighed with the reviewer and dropped, its trigger kept.
+- **An entry written with the change, in the same commit,** is caught by a commit check; nothing else needs remembering.
+- **Judging reads what a change does, never its wording:** the System Repo writes in its own words, and rewording is the Maintainer Repo's, after judging. Question 0, is the change sound, comes first, since an unsound change spreads nowhere.
+- **Entries describe a difference from one System Kit moment.** After a take, none says how a copy differs from the new one, so all are cleared and the needed ones rewritten.
+- **A check before delivery can be stale by the take;** a check at the take is not. The update's note names its base and the reading's stop, so even an older Adapted Case for taking runs the check.
+- **"Covered":** a change the System Kit has since made the same way, so a lesson is not made twice.
+- **"Halves" names two things:** the two halves of the case, and the two texts of an Adapted Case.
+- **Misreadings:** the agent wrote the verdict for the System Repo; wrote that the human carries the update, where an Adapted Case delivers; and wrote that birth's delivery was the only time the Maintainer Repo writes into a System Repo. The agent's redo-and-compare, for a System Repo that moved on, was replaced by the reviewer's "read to" once acted on.
+
+#### What the reviewer took
+
+The scenarios are frozen, and one case, "A System Repo's change", is followed in two halves, recorded and read, then decided and updated (`d9cd5ca`, `fc15327`, `61f8770`). A Project-Agnostic Understanding Text narrows and never shrinks (`9f6cc48`). The case is simulated step by step in `temp/system-repo-change-simulation.md`, by a scope rather than an example, with its cases table (`75808bd`, `698878d`, `98929f7`). A copy changes with its entry in the Adapted Understanding Text's footer, checked at the commit; each step names its Adapted Case (`5226a0e`, `22d9624`, `c15c23f`). The gate keeps, edits or reverses each change, and a note carries only what has no change (`a357418`, `eb94bc9`). "Read to" lives in the register, set by birth (`3ea48da`, `22b803c`). The first half's rules are written from the steps (`8412f15`). Judging gains question 0 and reads substance; the verdict is the Maintainer Repo's (`4bf6aa9`, `0af84ad`, `f037caa`). The update carries the whole System Kit and the verdicts that can be acted on, is delivered in a step, and is taken at a Plan Step's opening, entries cleared (`a3a597e` to `05050ed`). "Read to" moves once the verdicts are acted on; the take checks its own base, case 1 or case 2 (`b2f458c`, `d124fd7`). The six parts are mapped (`0b24556`). Next: the halves give way to the six parts when the rules are written from both.
 
 ## 32. The agent's memory
 
