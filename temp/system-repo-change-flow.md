@@ -145,7 +145,7 @@ The question: where does the take happen, so that main still moves only at a clo
 
 ### Option a, a take of its own, on a branch
 
-The take is run by its own Adapted Case, with no Plan Step. It cuts a branch from main at c6, makes one commit per part of the take's order, and moves main by fast-forward, as a gate does (`temp/system-repo-change-simulation.md` §8, step 1, *At the take, in order*). The take is run by the Adapted Case for taking an Update; the first thing it takes is the Update's own new version of itself, so the rest is taken by the new one (Failure Case 10). Its checks are its gate: main is still the Reading's stop, and the files match the Update Note. Step 2 is cut from c13 as c14. c7 commits the Update as delivered, and may go later. c10 and c11 stand for one commit each per Change put back and per verdict acted on, zero or more.
+The take is run by its own Adapted Case, with no Plan Step. It cuts a branch from main at c6, makes one commit per part of the take's order, and moves main by fast-forward, as a gate does (`temp/system-repo-change-simulation.md` §8, step 1, *At the take, in order*). The take is run by the Adapted Case for taking an Update; the first thing it takes is the Update's own new version of itself, so the rest is taken by the new one (Failure Case 10). Its checks are its gate: main is still the Reading's stop, and the files match the Update Note. Step 2 is cut from c13 as c14. c7 commits the Update as it arrived, in `temp/` and not yet in force: a record of what came, before the take changes anything. It may go later. c10 and c11 stand for one commit each per Change put back and per verdict acted on, zero or more.
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -170,8 +170,9 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                                     ┊
                                                     ┊
                                                     │
- open: does                                   ┌     ├─ cut ─▶ c7 ●  the Update as delivered   ◀──── 9. Take, by its Adapted Case: main is still c6
- the next Reading                             ┆     │            │
+ open: does                                   ┌     ├─ cut ─▶ c7 ●  the Update, as it arrived ◀──── 9. Take, by its Adapted Case: main is still c6
+ the next Reading                             ┆     │            │                                  (committed in temp/, not yet in force: a record
+                                              ┆     │            │                                  of what came, before the take changes anything)
  cover c7 to c13?                             ┆     │         c8 ●  its new Adapted Case      ◀──── the Update's own, taken first; it runs the rest
                                               ┆     │            ┊                            ┄┄┄┄┄ the files checked against the Update Note; no commit
                                               ┆     │         c9 ●  every Copy at Version 2   ◀──── Copies taken whole; every Record cleared
