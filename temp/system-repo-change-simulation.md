@@ -52,7 +52,7 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | what changed | delivered Knowledge on Trial | not yet checked | read: compared like any copy; decided: the original was never proven, so the change is evidence for its trial |
 | what changed | new text of the System Repo's own, on trial | not yet checked | read: written in the System Kit's on-trial folder, so the comparison finds it as a new file; decided: with no original, the first question does not apply |
 | what changed | one reason behind changes to several Adapted Cases | not yet checked | recorded: one why, naming every copy it changed; read: the changes are listed together |
-| what changed | a note with no change | not yet checked | read: a line of its own, from the notes' place, with no copy's diff; a copy no longer used shows only so, since nothing in its file changes; decided: questions 1 to 4 fit a doubt about a line, not a lack or an unused copy |
+| what changed | a System Kit Attention Note with no change | not yet checked | read: a line of its own, from the System Kit Attention Notes' place, with no copy's diff; a copy no longer used shows only so, since nothing in its file changes; decided: questions 1 to 4 fit a doubt about a line, not a lack or an unused copy |
 | how deep | a. it stays in the System Repo | not yet checked | — |
 | how deep | b. the System Kit's Adapted Case changes | not yet checked | the update brings it to this System Repo too, whose copy already has it |
 | how deep | c. the project-agnostic text changes | not yet checked | the other Adapted Cases are surveyed, the Maintainer Repo's own among them |
@@ -93,17 +93,17 @@ Two steps:
   The change and its entry go in the same commit. A commit that changes a copy and not its entry is stopped there. The commit is always reached: work never committed is lost, change and entry together.
 
   Weighed and dropped: a check at each session's end, comparing the copies with their entries. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds an entry missing or wrong whose change was committed in an earlier session.
-- **Adapted Case:** the System Repo's, for changing a System Kit Copy, itself a System Kit Copy. It loads when a copy, or the notes' place, is touched. For this step it says:
+- **Adapted Case:** the System Repo's, for changing a System Kit Copy, itself a System Kit Copy. It loads when a copy, or the System Kit Attention Notes' place, is touched. For this step it says:
   - a copy changes only when the work shows it does not fit, never ahead;
   - the entry is written with the change, with its four parts, and goes in the same commit;
   - what happened is written concretely, in the System Repo's own words;
   - whether the change is its own or any repo's is a proposal, never a verdict;
-  - a note, written at any time, carries only what has no change; one about a change points at its entry, and never retells it (step 2).
+  - a System Kit Attention Note, written at any time, carries only what has no change; one about a change points at its entry, and never retells it (step 2).
 - **Open:** which System Kit Version an entry is written against, and whether an entry goes once an update takes its change in. Before the first update, every entry stands against the System Kit Version the copies arrived at. Its trigger: the first update to reach a System Repo whose copies have entries.
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
-  - changed: today its paths do not hold `TODO.md`, where *To the deliverer* is. Here the notes' place loads it too;
+  - changed: today its paths do not hold `TODO.md`, where *To the deliverer* is. Here the System Kit Attention Notes' place loads it too;
   - borrowed: the entry names which work found the change, as a Decisions Log entry names its Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
   - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the copy keeps it (`temp/common-ground-problem.md` §2.1, *An update*);
   - changed: today nothing is written into a copy but the edit, since "a file says how to use it, never its own history", and the why goes in the Decisions Log (`docs/conventions/exchange/` §5.1). Here the why goes in the copy's Adapted Understanding Text, which is not read while working;
@@ -125,19 +125,19 @@ Two steps:
 
   A change kept as it is needs nothing more. A change edited gets its entry rewritten. When changes share one reason, the reason is written in full in one entry, and each other entry says how its own copy was affected and points at that one. If the entry holding the reason is reversed, the reason moves to one that stays, and the others point there.
 
-  The gate also asks once: did an Adapted Case used in this step not fit, with no change made? A misfit worked around without a change leaves nothing for the comparison to find. The human, who saw every session of the step, answers. Each misfit named is written as a note for the Maintainer Repo.
+  The gate also asks once: did an Adapted Case used in this step not fit, with no change made? A misfit worked around without a change leaves nothing for the comparison to find. The human, who saw every session of the step, answers. Each misfit named is written as a System Kit Attention Note for the Maintainer Repo.
 
-  A note carries what has no change to carry it: a misfit with no change made, a doubt about a line left as it is, something the System Kit lacked, a copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. Notes are kept in one known place in the System Repo's records. A note never lists a change: the entry already says it, and a second line would have to follow every edit and reversal. A note about a change points at its entry, and never retells it. A System Repo Reading reads the notes as well as the copies (§4, step 3).
+  A System Kit Attention Note carries what has no change to carry it: a misfit with no change made, a doubt about a line left as it is, something the System Kit lacked, a copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. System Kit Attention Notes are kept in one known place in the System Repo's records. A System Kit Attention Note never lists a change: the entry already says it, and a second line would have to follow every edit and reversal. One about a change points at its entry, and never retells it. A System Repo Reading reads the System Kit Attention Notes as well as the copies (§4, step 3).
 - **Adapted Case:** the System Repo's, for closing a Plan Step, its gate list. It loads when the Plan Step closes. For this step it says:
   - compare the copies against where the Plan Step began, and check each change has an entry that says it;
   - the human decides each change: kept, edited or reversed, its entry with it;
   - changes with one reason are linked, and the reason never stays only in a reversed entry;
-  - ask once whether an Adapted Case did not fit, with no change made, and write each as a note.
+  - ask once whether an Adapted Case did not fit, with no change made, and write each as a System Kit Attention Note.
 - **Open:** whether a reversed change leaves a trace for the Maintainer Repo. A change tried and undone may be evidence that the System Kit Copy was right. Its trigger: the first change reversed at a gate.
 - **Today:**
   - borrowed: the gate is a list of outcomes checked at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
   - borrowed: each Approach on Trial the Plan Step used has its dated note at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). An entry checked at the gate is the same shape;
-  - borrowed: a line the CBC Run disagrees with is quoted under *To the deliverer*, and a copy it does not use gets a CBC Run Ask there (`delivery/container/.claude/rules/delivered-copies.md`, rule 1). Notes can go under that heading;
+  - borrowed: a line the CBC Run disagrees with is quoted under *To the deliverer*, and a copy it does not use gets a CBC Run Ask there (`delivery/container/.claude/rules/delivered-copies.md`, rule 1). System Kit Attention Notes can go under that heading;
   - changed: today the close writes one CBC Run Ask per edited copy (`delivery/container/.claude/rules/delivered-copies.md`, rule 4), option d. Here the entries are what a System Repo Reading reads;
   - changed: today nothing at the close looks at the step's changes to copies together.
 
@@ -167,14 +167,14 @@ Four steps:
 
   Main moves only at a gate's close, so main is always at a closed gate, and nothing on it waits for a gate. Work past it, in a branch or not yet committed, is left for the next System Repo Reading.
 
-  A look at work past main may be asked for, as when a change is in doubt before its gate. It is not a System Repo Reading: it does not move where the last System Repo Reading stopped, judges nothing, and gives only notes, for the human and for the System Repo's gate. The work is read when it reaches main.
+  A look at work past main may be asked for, as when a change is in doubt before its gate. It is not a System Repo Reading: it does not move where the last System Repo Reading stopped, judges nothing, and gives only System Kit Attention Notes, for the human and for the System Repo's gate. The work is read when it reaches main.
 
   d keeps no state of its own: whether a System Repo has work comes from its main and the last System Repo Reading's stop, never from a line someone must keep true.
 
   If a stretch's history is cleaned before main moves, the entries are unharmed: they are in the copies, not in the commits.
 - **Adapted Case:**
   - the System Repo's gate list: main moves only at a gate's close. It is there today;
-  - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read, or asks what to read. For this step it says: compare the named System Repo's main with where its last System Repo Reading stopped, or every System Repo's when asked; a look past main moves nothing, and gives only notes.
+  - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read, or asks what to read. For this step it says: compare the named System Repo's main with where its last System Repo Reading stopped, or every System Repo's when asked; a look past main moves nothing, and gives only System Kit Attention Notes.
 - **Open:** a System Repo nobody names is not read until its work resumes. Its trigger: the first lesson found late because a System Repo went unread.
 - **Today:**
   - borrowed: a Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
@@ -207,7 +207,7 @@ Four steps:
 
 **Step 3. The Maintainer Repo compares the copies, and reads each entry.**
 
-- **What must happen:** across the span, from *read to* to the stop, the agent finds every change in the System Kit's folders, a new file among them, pairs each with its entry, and reads the notes written in the span. It only reads the System Repo, and writes only in the Maintainer Repo.
+- **What must happen:** across the span, from *read to* to the stop, the agent finds every change in the System Kit's folders, a new file among them, pairs each with its entry, and reads the System Kit Attention Notes written in the span. It only reads the System Repo, and writes only in the Maintainer Repo.
 - **Options,** for how changes are found:
   - a. each copy compared across the span, in the System Repo's own history, from *read to* to the stop;
   - b. each copy compared with the System Kit Version the copies came from;
@@ -223,25 +223,25 @@ Four steps:
   - a change with no entry: read from the comparison alone, and marked "no entry";
   - an entry changed with no change to the copy, as when a why is rewritten: read as a change of its why.
 
-  The notes are found the same way: their place in the System Repo's records is compared across the span, and each new note is read beside the changes. A note about a change points at its entry, so it is read with that change.
+  The System Kit Attention Notes are found the same way: their place in the System Repo's records is compared across the span, and each new System Kit Attention Note is read beside the changes. One about a change points at its entry, so it is read with that change.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - compare each copy from *read to* to the stop, in the System Repo's history;
   - pair each change with its entry; mark one with none "no entry";
-  - compare the notes' place across the span, and read each new note;
+  - compare the System Kit Attention Notes' place across the span, and read each new System Kit Attention Note;
   - judge nothing.
 - **Open:**
   - an update lands inside the next span, so its changes to the copies would read as the System Repo's own, with no entry. They might be told apart by starting the span after the update, by marking the update's commits, or by comparing with the System Kit minus the entries, option b. Its trigger: the first update to reach a System Repo whose copies have entries, §3, step 1's trigger too;
   - a System Repo with nothing new since its take still differs from the System Kit, by the changes it put back. Whether it is read again is open. Its trigger: the first return to a System Repo with nothing new since its take;
   - a System Repo Reading keeps no memory of earlier verdicts, so a change put back at the take is read like any other, and may be judged again. Whether that costs too much is open. Its trigger: the first System Repo Reading after a take that put changes back.
 - **Today:**
-  - borrowed: every item is read from the copies' diff, the whys, and the lines to the Concept Deliverer (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*; `.claude/skills/exchange-read/SKILL.md`, Stage 3). Here the whys are in the diff, so it is two: the diff and the notes;
+  - borrowed: every item is read from the copies' diff, the whys, and the lines to the Concept Deliverer (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*; `.claude/skills/exchange-read/SKILL.md`, Stage 3). Here the whys are in the diff, so it is two: the diff and the System Kit Attention Notes;
   - borrowed: the CBC Run is only read, never written (`.claude/skills/exchange-read/SKILL.md`, *Gates*);
   - changed: today the diff runs against what was delivered, the Receipt Branch or the last delivery entry (`.claude/skills/exchange-read/SKILL.md`, Stage 3). That works because a Delivery Take makes every copy equal its original again. Here a copy keeps its changes;
   - changed: today the whys are read from the Decisions Log. Here they are read from the entries, in the copies.
 
 **Step 4. It lists what changed, nothing judged.**
 
-- **What must happen:** the System Repo Reading gets one line per change and one per note, nothing judged. The human checks that the list is whole. Then it is judged, and its stop moves into the Maintainer Repo Register once its verdicts are acted on (step 2).
+- **What must happen:** the System Repo Reading gets one line per change and one per System Kit Attention Note, nothing judged. The human checks that the list is whole. Then it is judged, and its stop moves into the Maintainer Repo Register once its verdicts are acted on (step 2).
 - **Options:**
   - a. one line per change, nothing decided; judging is §5's;
   - b. each change judged as it is listed;
@@ -252,15 +252,15 @@ Four steps:
   - c takes the proposal for the verdict, and a lesson for every repo stays in one System Repo (Failure Case 20);
   - d merges two changes to one copy, and one of their reasons is lost.
 
-  A line holds what step 3 found: the copy and its part, what it says now, what happened, which work found it, and the System Repo's proposal, marked as one. A change with no entry says "no entry". Changes linked by one reason are listed together, under it. A note is a line of its own; one about a change sits with that change.
+  A line holds what step 3 found: the copy and its part, what it says now, what happened, which work found it, and the System Repo's proposal, marked as one. A change with no entry says "no entry". Changes linked by one reason are listed together, under it. A System Kit Attention Note is a line of its own; one about a change sits with that change.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
-  - one line per change and per note, nothing judged;
+  - one line per change and per System Kit Attention Note, nothing judged;
   - linked changes listed together, under their reason;
   - the human checks the list is whole; the stop moves into the Maintainer Repo Register once the verdicts are acted on.
 - **Today:**
   - borrowed: one line per item, what it is and where, nothing decided (`.claude/skills/exchange-read/SKILL.md`, Stage 4 and *Gates*);
   - borrowed: the System Repo Reading is a draft to its form (`.claude/rules/exchange-reading.md`);
-  - changed: today a line is one per edit, per CBC Run Ask and per finding, read from three places (`.claude/skills/exchange-read/SKILL.md`, Stage 3). Here a line is one per change, with its entry, and one per note;
+  - changed: today a line is one per edit, per CBC Run Ask and per finding, read from three places (`.claude/skills/exchange-read/SKILL.md`, Stage 3). Here a line is one per change, with its entry, and one per System Kit Attention Note;
   - changed: today the proposal is not asked for: every edit must claim to be for any CBC Run (`docs/conventions/exchange/` §5.1). Here each line carries it, as input to judging.
 
 ## 5. Judge
@@ -386,17 +386,17 @@ Two steps:
 
   Whether an update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's System Kit Version, which it holds, against the newest. It runs when the human names a System Repo to update, or asks which are behind. A System Repo is blind, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
 
-  An update is two things: every System Kit Copy, whole, at the new System Kit Version, and a note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The note holds:
+  An update is two things: every System Kit Copy, whole, at the new System Kit Version, and a System Kit Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The System Kit Update Note holds:
   - the new System Kit Version;
-  - the System Kit Version it was built from, and the System Repo's commit the System Repo Reading stopped at. The take checks both before anything moves (§8, step 1). The note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
+  - the System Kit Version it was built from, and the System Repo's commit the System Repo Reading stopped at. The take checks both before anything moves (§8, step 1). The System Kit Update Note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
   - what changed since the System Repo's System Kit Version: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a copy cannot carry its own absence;
   - the why of each System Kit change since then, whatever its source: the System Repo Reading of this System Repo or of another, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo. With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - the verdicts that go down, from this System Repo's own System Repo Reading only, each naming the System Repo's own copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (§8, step 1);
-  - a question for each line held for want of its why: what happened, to the change named. The answer comes back as an entry or a note, and the next System Repo Reading finds it;
+  - a question for each line held for want of its why: what happened, to the change named. The answer comes back as an entry or a System Kit Attention Note, and the next System Repo Reading finds it;
   - which files are taken first: the Adapted Case for taking an update, so an update is never taken by instructions older than it (`temp/common-ground-problem.md` §2.1, *An update*; Failure Case 10);
   - the update it replaces, when one was waiting.
 
-  The note is no summary of the Maintainer Repo's work, which the System Repo cannot check. It is not a record either: it goes once the update is taken, and what the System Repo decides goes in its entries.
+  The System Kit Update Note is no summary of the Maintainer Repo's work, which the System Repo cannot check. It is not a record either: it goes once the update is taken, and what the System Repo decides goes in its entries.
 
   Nothing in it cites what the System Repo cannot open: no path, record or word of the Maintainer Repo's own. A depth-a change whose proposal held sends nothing, and the System Repo's copy keeps it.
 
@@ -405,7 +405,7 @@ Two steps:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change or a verdict;
   - it is due when the System Repo's System Kit Version is behind the newest, or a verdict goes down; the System Kit Versions are compared when the human names a System Repo or asks which are behind;
-  - it carries every System Kit Copy whole, at the new System Kit Version, and a note: that System Kit Version, the one it was built from and the System Repo Reading's stop, what changed and how many, the whys whatever their source, the verdicts from the System Repo Reading of this System Repo that it can act on, a question for each held line, what is taken first, and the update it replaces;
+  - it carries every System Kit Copy whole, at the new System Kit Version, and a System Kit Update Note: that System Kit Version, the one it was built from and the System Repo Reading's stop, what changed and how many, the whys whatever their source, the verdicts from the System Repo Reading of this System Repo that it can act on, a question for each held line, what is taken first, and the update it replaces;
   - it cites nothing the System Repo cannot open;
   - each verdict names the System Repo's commit it judged;
   - one System Repo Reading open per System Repo, a new System Repo Reading extending it; one update waiting, a newer one replacing it.
@@ -413,37 +413,37 @@ Two steps:
   - borrowed: the delivery is staged into the CBC Run's `temp/` on the reviewer's word, the CBC Run's tree checked clean first, and named by the commit it was final at (`docs/conventions/exchange/` §3.1, *Delivery Staging*);
   - borrowed: files go whole, every copy at every delivery after birth (`docs/conventions/exchange/` §3.2, *What goes*);
   - borrowed: a delivery goes after a CBC Run Reading, or when something a CBC Run holds has changed in the Concept Deliverer (`.claude/skills/exchange-deliver/SKILL.md`, its description);
-  - borrowed: the note says what changed since the Delivery Pin, as paths the CBC Run can check, and why it matters to this CBC Run; it never describes the Concept Deliverer's own practice (`docs/conventions/exchange/` §3.7, *The Delivery Note*; `.claude/skills/exchange-deliver/SKILL.md`);
+  - borrowed: the Delivery Note says what changed since the Delivery Pin, as paths the CBC Run can check, and why it matters to this CBC Run; it never describes the Concept Deliverer's own practice (`docs/conventions/exchange/` §3.7, *The Delivery Note*; `.claude/skills/exchange-deliver/SKILL.md`);
   - borrowed: a verdict says the decision and what the CBC Run owes now, nothing else; no path or word of this repo's reaches it (`docs/conventions/exchange/` §3.7);
-  - borrowed: a note may arrive alone, with no files (`docs/conventions/exchange/` §6.6, *The Delivery Note after a read*). An update of verdicts only is one;
-  - borrowed: the note carries what is gone (`docs/conventions/exchange/` §3.6, *Absence in a delivery*);
+  - borrowed: a Delivery Note may arrive alone, with no files (`docs/conventions/exchange/` §6.6, *The Delivery Note after a read*). An update of verdicts only is one;
+  - borrowed: the Delivery Note carries what is gone (`docs/conventions/exchange/` §3.6, *Absence in a delivery*);
   - borrowed: one CBC Run Reading is open per CBC Run at a time, and a new read extends it (`.claude/skills/exchange-read/SKILL.md`, Stage 4);
   - changed: today every read ends with a Delivery Note, even an empty one, to carry the Read-Through Commit (`docs/conventions/exchange/` §6.6). Here an update goes only when it carries something;
-  - changed: today the note gives a verdict on everything the CBC Run addressed to the Concept Deliverer (`docs/conventions/exchange/` §3.7). Here only the verdicts the System Repo can act on go down.
+  - changed: today the Delivery Note gives a verdict on everything the CBC Run addressed to the Concept Deliverer (`docs/conventions/exchange/` §3.7). Here only the verdicts the System Repo can act on go down.
 
 **Step 2. The update is delivered.**
 
 - **What must happen:** on the human's word, the update is staged into the System Repo's `temp/`, by the human or by the agent. It writes only into the System Repo's `temp/`, nowhere else there. Nothing in `temp/` is in force until the System Repo takes it (§8, step 1).
 - **Options,** for checking what was staged:
   - a. a second Adapted Case of the Maintainer Repo's checks it, apart from the one that delivered, as at birth;
-  - b. the delivering Adapted Case compares each staged file with the new System Kit Version, once staged, and the System Repo checks the note against the files when it takes them;
+  - b. the delivering Adapted Case compares each staged file with the new System Kit Version, once staged, and the System Repo checks the System Kit Update Note against the files when it takes them;
   - c. only the System Repo's check, at the take.
 - **Chosen:** b. The others:
   - a was chosen at birth because the start becomes the base of every System Repo Reading (`temp/between-repos-simulation.md` §5.1, step 2). Here a wrong file is held in `temp/`, never in force, and a comparison of files leaves little mistake to share. It comes back if a staged file is found, after a take, to differ from the System Kit;
   - c leaves only the System Repo to check, and it cannot open the System Kit, so a staged file that differs from it passes.
 
-  The System Repo's tree is checked clean first, with nothing in flight. When it is not, the agent says what it found and waits for the word. An update already waiting there is replaced by the new one (step 1). The update is named by the Maintainer Repo's commit at which its files and note were final, so its System Kit Version is exact.
+  The System Repo's tree is checked clean first, with nothing in flight. When it is not, the agent says what it found and waits for the word. An update already waiting there is replaced by the new one (step 1). The update is named by the Maintainer Repo's commit at which its files and System Kit Update Note were final, so its System Kit Version is exact.
 - **Adapted Case:** the Maintainer Repo's, for delivering an update. It loads on the human's word to deliver. For this step it says:
   - never stage unasked; check the System Repo's tree clean first;
   - write only into the System Repo's `temp/`, replacing an update already waiting;
   - name the update by the commit it was final at;
   - compare each staged file with the new System Kit Version.
 - **Today:**
-  - borrowed: the delivery and its note are copied into the CBC Run's `temp/` on the reviewer's word, by the reviewer or by the agent when told; the agent never stages unasked; the tree is checked clean first; the Delivery Staging is named by the commit at which files and note are final (`docs/conventions/exchange/` §3.1, *Delivery Staging*);
+  - borrowed: the delivery and its Delivery Note are copied into the CBC Run's `temp/` on the reviewer's word, by the reviewer or by the agent when told; the agent never stages unasked; the tree is checked clean first; the Delivery Staging is named by the commit at which files and Delivery Note are final (`docs/conventions/exchange/` §3.1, *Delivery Staging*);
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
-  - borrowed: one Agent Skill both writes the note and stages the delivery (`.claude/skills/exchange-deliver/SKILL.md`). It also compares the staged files here;
-  - borrowed: the CBC Run's `temp/` gains exactly the staging and its note, and nothing tracked in the CBC Run changes (`.claude/skills/exchange-deliver/SKILL.md`, *Gates*);
-  - changed: today the staged files are copied by a script, so they equal the Master Copies by how they are made, and no comparison follows; the CBC Run's Delivery Take checks the note against the files (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 1).
+  - borrowed: one Agent Skill both writes the Delivery Note and stages the delivery (`.claude/skills/exchange-deliver/SKILL.md`). It also compares the staged files here;
+  - borrowed: the CBC Run's `temp/` gains exactly the staging and its Delivery Note, and nothing tracked in the CBC Run changes (`.claude/skills/exchange-deliver/SKILL.md`, *Gates*);
+  - changed: today the staged files are copied by a script, so they equal the Master Copies by how they are made, and no comparison follows; the CBC Run's Delivery Take checks the Delivery Note against the files (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 1).
 
 ## 8. Take
 
@@ -462,7 +462,7 @@ Two steps:
   - c takes the update over changes not yet read. The update answered none of them, and clearing their entries loses them before they are read;
   - d keeps entries that say how a copy differed from the old System Kit. After the take some describe nothing, and none says how the copy differs from the new one.
 
-  The opening order follows the fixed order already set: reading back, judging, then the update (`temp/common-ground-problem.md` §2.1, *An update*). An open System Repo Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old copies first; the human may instead drop or restart it, when the update changes a rule it rests on. The take checks first, from the note, what the System Repo itself can see:
+  The opening order follows the fixed order already set: reading back, judging, then the update (`temp/common-ground-problem.md` §2.1, *An update*). An open System Repo Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old copies first; the human may instead drop or restart it, when the update changes a rule it rests on. The take checks first, from the System Kit Update Note, what the System Repo itself can see:
   - case 1, its main is still the System Repo Reading's stop, and its System Kit Version is the one the update was built from: the update is taken;
   - case 2, anything else: there is no take, and the System Repo says so, which starts a System Repo Reading. The cycle runs again from *read to*: the new span is read, judged against the System Kit as it is now, the Maintainer Repo's changes made, and a new update made. It replaces the waiting one and carries its verdicts not yet sent (§7, step 1).
 
@@ -472,12 +472,12 @@ Two steps:
 
   At the take, in order:
   1. the Adapted Case for taking an update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
-  2. the files are checked against the note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
+  2. the files are checked against the System Kit Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
   3. every copy is taken whole, at the new System Kit Version; each path gone is removed, and each renamed is moved. Every entry is cleared: the System Repo Reading reached main, so each was read and judged;
   4. what the System Repo still needs is re-applied, each with a fresh entry written against the new version: what did not fit, what it keeps, which work found it, and its proposal. An old entry's what-happened may be carried in a line. Only a change with evidence is re-applied: its old entry, or a clash with the new version. A System Kit change on a part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
-  5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its entry saying which. One naming a part that changed after its commit is checked, with a note when it no longer applies. A question is answered as an entry or a note;
+  5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its entry saying which. One naming a part that changed after its commit is checked, with a System Kit Attention Note when it no longer applies. A question is answered as an entry or a System Kit Attention Note;
   6. the new System Kit Version is recorded, with the System Repo's commit that holds it, so the next update finds its base;
-  7. the update and its note are removed from `temp/`.
+  7. the update and its System Kit Update Note are removed from `temp/`.
 
   A take may be postponed, with its why. Work then goes on with the old copies, and the order runs again at the next opening: the System Repo Reading is extended, and a newer update replaces the waiting one (§7, step 1).
 - **Adapted Case:**
@@ -490,7 +490,7 @@ Two steps:
   The take answers §3, step 1's Open on its own terms: every entry stands against the last System Kit Version taken, or birth's, and every entry goes at a take, rewritten when its difference stays. It is confirmed by that Open's trigger, the first update to reach a System Repo whose copies have entries.
 - **Today:**
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
-  - borrowed: the Delivery Take's order: the note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);
+  - borrowed: the Delivery Take's order: the Delivery Note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);
   - borrowed: being behind the Concept Deliverer is acceptable (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). A postponed take is that;
   - changed: today an edit made after the Read-Through Commit is re-applied on top, its record standing (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 3). Here the opening order leaves no such edit;
   - changed: today a declined edit is gone at the Delivery Take, and never edited back in (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the System Repo re-applies what it still needs, with a fresh entry;
