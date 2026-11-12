@@ -66,79 +66,79 @@ A stretch of work may hold several System Kit Copy Changes, alike or mixed. Each
 
 Two steps:
 
-1. The work meets a copy that does not fit, and the copy is changed, with its entry.
-2. The Plan Step's gate: the step's System Kit Copy Changes are compared with their entries, and each is kept, edited or reversed, and linked when they share a reason.
+1. The work meets a copy that does not fit, and the copy is changed, with its System Kit Copy Change Record.
+2. The Plan Step's gate: the step's System Kit Copy Changes are compared with their System Kit Copy Change Records, and each is kept, edited or reversed, and linked when they share a reason.
 
-**Step 1. The work meets a copy that does not fit, and the copy is changed, with its entry.**
+**Step 1. The work meets a copy that does not fit, and the copy is changed, with its System Kit Copy Change Record.**
 
-- **What must happen:** during its own work, the System Repo finds that a System Kit Copy does not fit what happened. The human decides the System Kit Copy Change, the agent proposing. It is made then, and its entry is written with it. Either may be edited or reversed later, the entry with it.
+- **What must happen:** during its own work, the System Repo finds that a System Kit Copy does not fit what happened. The human decides the System Kit Copy Change, the agent proposing. It is made then, and its System Kit Copy Change Record is written with it. Either may be edited or reversed later, the System Kit Copy Change Record with it.
 - **Options:**
-  - a. the copy is changed when the work shows it does not fit, and its entry written with it;
+  - a. the copy is changed when the work shows it does not fit, and its System Kit Copy Change Record written with it;
   - b. the copy is changed ahead, for what the agent foresees;
   - c. the misfit is noted, and the copy changed at the Plan Step's gate;
   - d. the copy stays as it is, and the System Repo writes what it does instead in its own records.
 - **Chosen:** a. The others:
   - b is a speculation, with nothing that happened behind it;
-  - c waits for no reason: an entry lets any System Kit Copy Change be edited or reversed later, and until the gate the copy says what the System Repo no longer does;
+  - c waits for no reason: a System Kit Copy Change Record lets any System Kit Copy Change be edited or reversed later, and until the gate the copy says what the System Repo no longer does;
   - d leaves the copy saying it for good, and the next agent reads the copy, not the records.
 
-  The entry goes in a footer of the copy's Adapted Understanding Text, which is not loaded for work. So the System Kit Copy Change and its why land in one diff, and the why cannot lose its copy. An Instruction Text changed alone has its entry there too. The entry holds:
+  The System Kit Copy Change Record goes in a footer of the copy's Adapted Understanding Text, which is not loaded for work. So the System Kit Copy Change and its why land in one diff, and the why cannot lose its copy. An Instruction Text changed alone has one there too. It holds:
   - what changed, by meaning: the part, and what it says now. When the System Kit Copy Change left some of the Adapted Case's texts as they were, whether they still match it (Failure Case 8);
   - what happened, concretely, in the System Repo's own words. It is never written to sound project-agnostic: making it general is the Maintainer Repo's, after judging;
   - which work found it;
   - the System Repo's proposal: its own problem, or one any repo would meet. It is marked as a proposal. The Maintainer Repo judges every System Kit Copy Change, and says whether it agrees, and why if not (§5).
 
-  The entry says the System Kit Copy Change as it stands. A later edit rewrites it, and git keeps the old one.
+  The System Kit Copy Change Record says the System Kit Copy Change as it stands. A later edit rewrites it, and git keeps the old one.
 
-  The System Kit Copy Change and its entry go in the same commit. A commit that changes a copy and not its entry is stopped there. The commit is always reached: work never committed is lost, System Kit Copy Change and entry together.
+  The System Kit Copy Change and its System Kit Copy Change Record go in the same commit. A commit that changes a copy and not its System Kit Copy Change Record is stopped there. The commit is always reached: work never committed is lost, the two together.
 
-  Weighed and dropped: a check at each session's end, comparing the copies with their entries. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds an entry missing or wrong whose System Kit Copy Change was committed in an earlier session.
+  Weighed and dropped: a check at each session's end, comparing the copies with their System Kit Copy Change Records. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds a System Kit Copy Change Record missing or wrong whose System Kit Copy Change was committed in an earlier session.
 - **Adapted Case:** the System Repo's, for changing a System Kit Copy, itself a System Kit Copy. It loads when a copy, or the System Kit Attention Notes' place, is touched. For this step it says:
   - a copy changes only when the work shows it does not fit, never ahead;
-  - the entry is written with the System Kit Copy Change, with its four parts, and goes in the same commit;
+  - the System Kit Copy Change Record is written with the System Kit Copy Change, with its four parts, and goes in the same commit;
   - what happened is written concretely, in the System Repo's own words;
   - whether the System Kit Copy Change is its own or any repo's is a proposal, never a verdict;
-  - a System Kit Attention Note, written at any time, carries only what has no System Kit Copy Change; one about a System Kit Copy Change points at its entry, and never retells it (step 2).
-- **Open:** which System Kit Version an entry is written against, and whether an entry goes once a System Kit Update takes its System Kit Copy Change in. Before the first System Kit Update, every entry stands against the System Kit Version the copies arrived at. Its trigger: the first System Kit Update to reach a System Repo whose copies have entries.
+  - a System Kit Attention Note, written at any time, carries only what has no System Kit Copy Change; one about a System Kit Copy Change points at its System Kit Copy Change Record, and never retells it (step 2).
+- **Open:** which System Kit Version a System Kit Copy Change Record is written against, and whether one goes once a System Kit Update takes its System Kit Copy Change in. Before the first System Kit Update, every System Kit Copy Change Record stands against the System Kit Version the copies arrived at. Its trigger: the first System Kit Update to reach a System Repo whose copies have System Kit Copy Change Records.
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
   - changed: today its paths do not hold `TODO.md`, where *To the deliverer* is. Here the System Kit Attention Notes' place loads it too;
-  - borrowed: the entry names which work found the System Kit Copy Change, as a Decisions Log entry names its Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
+  - borrowed: the System Kit Copy Change Record names which work found the System Kit Copy Change, as a Decisions Log entry names its Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
   - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the copy keeps it (`temp/common-ground-problem.md` §2.1, *An update*);
   - changed: today nothing is written into a copy but the edit, since "a file says how to use it, never its own history", and the why goes in the Decisions Log (`docs/conventions/exchange/` §5.1). Here the why goes in the copy's Adapted Understanding Text, which is not read while working;
   - changed: today every edit must claim to be for any CBC Run. Here the System Repo proposes, and the Maintainer Repo judges;
   - borrowed: a check fires at the commit because, before, it had to be remembered (`.claude/rules/foundation-check.md`, its header comment). That one is the Maintainer Repo's own.
 
-**Step 2. The Plan Step's gate: the step's System Kit Copy Changes are compared with their entries, and each is kept, edited or reversed, and linked when they share a reason.**
+**Step 2. The Plan Step's gate: the step's System Kit Copy Changes are compared with their System Kit Copy Change Records, and each is kept, edited or reversed, and linked when they share a reason.**
 
-- **What must happen:** at the Plan Step's close, the step's System Kit Copy Changes are seen together, now that the whole step is seen. The agent compares the copies against where the Plan Step began, and shows each with its entry. The human decides each, the agent proposing: kept, edited, or reversed, its entry with it. System Kit Copy Changes that share one reason are linked.
+- **What must happen:** at the Plan Step's close, the step's System Kit Copy Changes are seen together, now that the whole step is seen. The agent compares the copies against where the Plan Step began, and shows each with its System Kit Copy Change Record. The human decides each, the agent proposing: kept, edited, or reversed, its System Kit Copy Change Record with it. System Kit Copy Changes that share one reason are linked.
 - **Options:**
   - a. the gate looks at the step's System Kit Copy Changes together: the comparison, a decision on each, and the links;
-  - b. the gate only checks that each System Kit Copy Change has an entry that says it, and decides nothing;
+  - b. the gate only checks that each System Kit Copy Change has a System Kit Copy Change Record that says it, and decides nothing;
   - c. the gate does nothing with copies: the Maintainer Repo reviews the System Kit Copy Changes when it reads them;
   - d. the gate writes one line per changed copy, asking the Maintainer Repo to read it.
 - **Chosen:** a. The others:
   - b keeps a System Kit Copy Change made early in the step, though the end of the step may show it wrong, and leaves System Kit Copy Changes with one reason unlinked;
   - c leaves the review to the side that cannot see what happened, and a wrong System Kit Copy Change then reaches the Maintainer Repo's judging;
-  - d adds nothing to the entries: a System Repo Reading compares every copy, and reads the entries. It comes back if a System Repo Reading misses a changed copy because nothing asked it to look.
+  - d adds nothing to the System Kit Copy Change Records: a System Repo Reading compares every copy, and reads the System Kit Copy Change Records. It comes back if a System Repo Reading misses a changed copy because nothing asked it to look.
 
-  A System Kit Copy Change kept as it is needs nothing more. One edited gets its entry rewritten. When System Kit Copy Changes share one reason, the reason is written in full in one entry, and each other entry says how its own copy was affected and points at that one. If the entry holding the reason is reversed, the reason moves to one that stays, and the others point there.
+  A System Kit Copy Change kept as it is needs nothing more. One edited gets its System Kit Copy Change Record rewritten. When System Kit Copy Changes share one reason, the reason is written in full in one System Kit Copy Change Record, and each other one says how its own copy was affected and points at that one. If the one holding the reason is reversed, the reason moves to one that stays, and the others point there.
 
   The gate also asks once: did an Adapted Case used in this step not fit, with no System Kit Copy Change made? A misfit worked around without a System Kit Copy Change leaves nothing for the comparison to find. The human, who saw every session of the step, answers. Each misfit named is written as a System Kit Attention Note for the Maintainer Repo.
 
-  A System Kit Attention Note carries what has no System Kit Copy Change to carry it: a misfit with none made, a doubt about a line left as it is, something the System Kit lacked, a copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. System Kit Attention Notes are kept in one known place in the System Repo's records. A System Kit Attention Note never lists a System Kit Copy Change: the entry already says it, and a second line would have to follow every edit and reversal. One about a System Kit Copy Change points at its entry, and never retells it. A System Repo Reading reads the System Kit Attention Notes as well as the copies (§4, step 3).
+  A System Kit Attention Note carries what has no System Kit Copy Change to carry it: a misfit with none made, a doubt about a line left as it is, something the System Kit lacked, a copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. System Kit Attention Notes are kept in one known place in the System Repo's records. A System Kit Attention Note never lists a System Kit Copy Change: the System Kit Copy Change Record already says it, and a second line would have to follow every edit and reversal. One about a System Kit Copy Change points at its System Kit Copy Change Record, and never retells it. A System Repo Reading reads the System Kit Attention Notes as well as the copies (§4, step 3).
 - **Adapted Case:** the System Repo's, for closing a Plan Step, its gate list. It loads when the Plan Step closes. For this step it says:
-  - compare the copies against where the Plan Step began, and check each System Kit Copy Change has an entry that says it;
-  - the human decides each System Kit Copy Change: kept, edited or reversed, its entry with it;
-  - System Kit Copy Changes with one reason are linked, and the reason never stays only in a reversed entry;
+  - compare the copies against where the Plan Step began, and check each System Kit Copy Change has a System Kit Copy Change Record that says it;
+  - the human decides each System Kit Copy Change: kept, edited or reversed, its System Kit Copy Change Record with it;
+  - System Kit Copy Changes with one reason are linked, and the reason never stays only in a reversed System Kit Copy Change Record;
   - ask once whether an Adapted Case did not fit, with no System Kit Copy Change made, and write each as a System Kit Attention Note.
 - **Open:** whether a reversed System Kit Copy Change leaves a trace for the Maintainer Repo. One tried and undone may be evidence that the System Kit Copy was right. Its trigger: the first System Kit Copy Change reversed at a gate.
 - **Today:**
   - borrowed: the gate is a list of outcomes checked at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
-  - borrowed: each Approach on Trial the Plan Step used has its dated note at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). An entry checked at the gate is the same shape;
+  - borrowed: each Approach on Trial the Plan Step used has its dated note at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). A System Kit Copy Change Record checked at the gate is the same shape;
   - borrowed: a line the CBC Run disagrees with is quoted under *To the deliverer*, and a copy it does not use gets a CBC Run Ask there (`delivery/container/.claude/rules/delivered-copies.md`, rule 1). System Kit Attention Notes can go under that heading;
-  - changed: today the close writes one CBC Run Ask per edited copy (`delivery/container/.claude/rules/delivered-copies.md`, rule 4), option d. Here the entries are what a System Repo Reading reads;
+  - changed: today the close writes one CBC Run Ask per edited copy (`delivery/container/.claude/rules/delivered-copies.md`, rule 4), option d. Here the System Kit Copy Change Records are what a System Repo Reading reads;
   - changed: today nothing at the close looks at the step's changes to copies together.
 
 ## 4. Read
@@ -147,7 +147,7 @@ Four steps:
 
 1. The stretch of work ends, and the Maintainer Repo is told.
 2. The Maintainer Repo finds where to start reading.
-3. It compares the copies, and reads each entry.
+3. It compares the copies, and reads each System Kit Copy Change Record.
 4. It lists what changed, nothing judged.
 
 **Step 1. The stretch of work ends, and the Maintainer Repo is told.**
@@ -171,7 +171,7 @@ Four steps:
 
   d keeps no state of its own: whether a System Repo has work comes from its main and the last System Repo Reading's stop, never from a line someone must keep true.
 
-  If a stretch's history is cleaned before main moves, the entries are unharmed: they are in the copies, not in the commits.
+  If a stretch's history is cleaned before main moves, the System Kit Copy Change Records are unharmed: they are in the copies, not in the commits.
 - **Adapted Case:**
   - the System Repo's gate list: main moves only at a gate's close. It is there today;
   - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read, or asks what to read. For this step it says: compare the named System Repo's main with where its last System Repo Reading stopped, or every System Repo's when asked; a look past main moves nothing, and gives only System Kit Attention Notes.
@@ -205,39 +205,39 @@ Four steps:
   - changed: today the stop, the Read-Through Commit, is kept in the CBC Run, carried there by the next Delivery Note, because "it is the only place the Concept Deliverer can look" (`docs/conventions/exchange/` §2.2, *The CBC Run*). Today every CBC Run Reading is followed by a delivery, so the stop always arrives. Here a System Repo Reading may have no System Kit Update after it;
   - changed: today a CBC Run is born with its Read-Through Commit written as *none*, and the exchange-read Agent Skill names no span for it (`delivery/installs/pure-seed.md`, step 2). Here birth writes the start as *read to*, and the first System Repo Reading starts there.
 
-**Step 3. The Maintainer Repo compares the copies, and reads each entry.**
+**Step 3. The Maintainer Repo compares the copies, and reads each System Kit Copy Change Record.**
 
-- **What must happen:** across the span, from *read to* to the stop, the agent finds every System Kit Copy Change in the System Kit's folders, a new file among them, pairs each with its entry, and reads the System Kit Attention Notes written in the span. It only reads the System Repo, and writes only in the Maintainer Repo.
+- **What must happen:** across the span, from *read to* to the stop, the agent finds every System Kit Copy Change in the System Kit's folders, a new file among them, pairs each with its System Kit Copy Change Record, and reads the System Kit Attention Notes written in the span. It only reads the System Repo, and writes only in the Maintainer Repo.
 - **Options,** for how System Kit Copy Changes are found:
   - a. each copy compared across the span, in the System Repo's own history, from *read to* to the stop;
   - b. each copy compared with the System Kit Version the copies came from;
-  - c. only the entries read, with no comparison;
+  - c. only the System Kit Copy Change Records read, with no comparison;
   - d. the span walked commit by commit.
 - **Chosen:** a. The others:
   - b finds the same as a until the first System Kit Update. After it, a copy that kept a System Kit Copy Change differs from the System Kit at every System Repo Reading, and the System Kit Copy Change is found again each time;
-  - c misses a System Kit Copy Change with no entry, which the commit's check should have stopped, but which can still land (Failure Case 22);
+  - c misses a System Kit Copy Change with no System Kit Copy Change Record, which the commit's check should have stopped, but which can still land (Failure Case 22);
   - d shows every edit on the way, and System Kit Copy Changes the gate reversed. The gate has settled those (§3, step 2); what stands at the stop is what is read.
 
-  An entry lands in the same diff as its System Kit Copy Change, in the copy's Adapted Understanding Text, so pairing them is reading one diff. Three things can come out:
-  - a System Kit Copy Change with its entry: read with its what, what happened, which work found it, and the System Repo's proposal;
-  - a System Kit Copy Change with no entry: read from the comparison alone, and marked "no entry";
-  - an entry changed with no System Kit Copy Change, as when a why is rewritten: read as a change of its why.
+  A System Kit Copy Change Record lands in the same diff as its System Kit Copy Change, in the copy's Adapted Understanding Text, so pairing them is reading one diff. Three things can come out:
+  - a System Kit Copy Change with its System Kit Copy Change Record: read with its what, what happened, which work found it, and the System Repo's proposal;
+  - a System Kit Copy Change with no System Kit Copy Change Record: read from the comparison alone, and marked "no entry";
+  - a System Kit Copy Change Record changed with no System Kit Copy Change, as when a why is rewritten: read as a change of its why.
 
-  The System Kit Attention Notes are found the same way: their place in the System Repo's records is compared across the span, and each new System Kit Attention Note is read beside the System Kit Copy Changes. One about a System Kit Copy Change points at its entry, so the two are read together.
+  The System Kit Attention Notes are found the same way: their place in the System Repo's records is compared across the span, and each new System Kit Attention Note is read beside the System Kit Copy Changes. One about a System Kit Copy Change points at its System Kit Copy Change Record, so the two are read together.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - compare each copy from *read to* to the stop, in the System Repo's history;
-  - pair each System Kit Copy Change with its entry; mark one with none "no entry";
+  - pair each System Kit Copy Change with its System Kit Copy Change Record; mark one with none "no entry";
   - compare the System Kit Attention Notes' place across the span, and read each new System Kit Attention Note;
   - judge nothing.
 - **Open:**
-  - a System Kit Update lands inside the next span, so its changes to the copies would read as the System Repo's own, with no entry. They might be told apart by starting the span after the System Kit Update, by marking the System Kit Update's commits, or by comparing with the System Kit minus the entries, option b. Its trigger: the first System Kit Update to reach a System Repo whose copies have entries, §3, step 1's trigger too;
+  - a System Kit Update lands inside the next span, so its changes to the copies would read as the System Repo's own, with no System Kit Copy Change Record. They might be told apart by starting the span after the System Kit Update, by marking the System Kit Update's commits, or by comparing with the System Kit minus the System Kit Copy Change Records, option b. Its trigger: the first System Kit Update to reach a System Repo whose copies have System Kit Copy Change Records, §3, step 1's trigger too;
   - a System Repo with nothing new since its take still differs from the System Kit, by the System Kit Copy Changes it put back. Whether it is read again is open. Its trigger: the first return to a System Repo with nothing new since its take;
   - a System Repo Reading keeps no memory of earlier verdicts, so a System Kit Copy Change put back at the take is read like any other, and may be judged again. Whether that costs too much is open. Its trigger: the first System Repo Reading after a take that put System Kit Copy Changes back.
 - **Today:**
   - borrowed: every item is read from the copies' diff, the whys, and the lines to the Concept Deliverer (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*; `.claude/skills/exchange-read/SKILL.md`, Stage 3). Here the whys are in the diff, so it is two: the diff and the System Kit Attention Notes;
   - borrowed: the CBC Run is only read, never written (`.claude/skills/exchange-read/SKILL.md`, *Gates*);
   - changed: today the diff runs against what was delivered, the Receipt Branch or the last delivery entry (`.claude/skills/exchange-read/SKILL.md`, Stage 3). That works because a Delivery Take makes every copy equal its original again. Here a copy keeps its System Kit Copy Changes;
-  - changed: today the whys are read from the Decisions Log. Here they are read from the entries, in the copies.
+  - changed: today the whys are read from the Decisions Log. Here they are read from the System Kit Copy Change Records, in the copies.
 
 **Step 4. It lists what changed, nothing judged.**
 
@@ -252,7 +252,7 @@ Four steps:
   - c takes the proposal for the verdict, and a lesson for every repo stays in one System Repo (Failure Case 20);
   - d merges two System Kit Copy Changes to one copy, and one of their reasons is lost.
 
-  A line holds what step 3 found: the copy and its part, what it says now, what happened, which work found it, and the System Repo's proposal, marked as one. A System Kit Copy Change with no entry says "no entry". System Kit Copy Changes linked by one reason are listed together, under it. A System Kit Attention Note is a line of its own; one about a System Kit Copy Change sits with it.
+  A line holds what step 3 found: the copy and its part, what it says now, what happened, which work found it, and the System Repo's proposal, marked as one. A System Kit Copy Change with no System Kit Copy Change Record says "no entry". System Kit Copy Changes linked by one reason are listed together, under it. A System Kit Attention Note is a line of its own; one about a System Kit Copy Change sits with it.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - one line per System Kit Copy Change and per System Kit Attention Note, nothing judged;
   - linked System Kit Copy Changes listed together, under their reason;
@@ -260,7 +260,7 @@ Four steps:
 - **Today:**
   - borrowed: one line per item, what it is and where, nothing decided (`.claude/skills/exchange-read/SKILL.md`, Stage 4 and *Gates*);
   - borrowed: the System Repo Reading is a draft to its form (`.claude/rules/exchange-reading.md`);
-  - changed: today a line is one per edit, per CBC Run Ask and per finding, read from three places (`.claude/skills/exchange-read/SKILL.md`, Stage 3). Here a line is one per System Kit Copy Change, with its entry, and one per System Kit Attention Note;
+  - changed: today a line is one per edit, per CBC Run Ask and per finding, read from three places (`.claude/skills/exchange-read/SKILL.md`, Stage 3). Here a line is one per System Kit Copy Change, with its System Kit Copy Change Record, and one per System Kit Attention Note;
   - changed: today the proposal is not asked for: every edit must claim to be for any CBC Run (`docs/conventions/exchange/` §5.1). Here each line carries it, as input to judging.
 
 ## 5. Judge
@@ -298,7 +298,7 @@ Two steps:
   - question 3, the project-agnostic understanding already holds it: the Project-Agnostic Understanding Text the Adapted Case narrows;
   - question 4, true for every repo: depth c's step, checked later.
 
-  Lines listed together under one reason are judged together, and the reason is judged once. A line whose parts answer differently is split, each part judged on its own; the parts keep their one entry.
+  Lines listed together under one reason are judged together, and the reason is judged once. A line whose parts answer differently is split, each part judged on its own; the parts keep their one System Kit Copy Change Record.
 
   A question is answered from what the System Kit Copy Change does and why, never from its wording. The System Repo writes in its own words on purpose (§3, step 1), and making a lesson general is rewording, after judging (§6, step 1). A System Kit Copy Change worded for one project may still be a lesson for every repo. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
 - **Adapted Case:** the Maintainer Repo's, for judging a System Repo Reading. It loads when the human starts judging a System Repo Reading whose list was checked whole. For this step it says:
@@ -308,7 +308,7 @@ Two steps:
   - a question is answered from what the System Kit Copy Change does and why, never from its wording;
   - the agent proposes each answer with what it read; the human decides;
   - lines under one reason are judged together;
-  - a line with no entry is held until its why is brought.
+  - a line with no System Kit Copy Change Record is held until its why is brought.
 - **Open:** how question 4 is answered, and by whom. Its trigger: depth c is checked against these steps.
 - **Today:**
   - borrowed: the four questions, from the rules on deciding written before this simulation (`temp/common-ground-problem.md` §2.1, *Judging a change read back*). They leave how each is answered, and by whom, open; step 1 answers it for questions 1 to 3;
@@ -392,11 +392,11 @@ Two steps:
   - what changed since the System Repo's System Kit Version: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a copy cannot carry its own absence;
   - the why of each System Kit change since then, whatever its source: the System Repo Reading of this System Repo or of another, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo. With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - the verdicts that go down, from this System Repo's own System Repo Reading only, each naming the System Repo's own copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (§8, step 1);
-  - a question for each line held for want of its why: what happened, to the System Kit Copy Change named. The answer comes back as an entry or a System Kit Attention Note, and the next System Repo Reading finds it;
+  - a question for each line held for want of its why: what happened, to the System Kit Copy Change named. The answer comes back as a System Kit Copy Change Record or a System Kit Attention Note, and the next System Repo Reading finds it;
   - which files are taken first: the Adapted Case for taking a System Kit Update, so a System Kit Update is never taken by instructions older than it (`temp/common-ground-problem.md` §2.1, *An update*; Failure Case 10);
   - the System Kit Update it replaces, when one was waiting.
 
-  The System Kit Update Note is no summary of the Maintainer Repo's work, which the System Repo cannot check. It is not a record either: it goes once the System Kit Update is taken, and what the System Repo decides goes in its entries.
+  The System Kit Update Note is no summary of the Maintainer Repo's work, which the System Repo cannot check. It is not a record either: it goes once the System Kit Update is taken, and what the System Repo decides goes in its System Kit Copy Change Records.
 
   Nothing in it cites what the System Repo cannot open: no path, record or word of the Maintainer Repo's own. A depth-a System Kit Copy Change whose proposal held sends nothing, and the System Repo's copy keeps it.
 
@@ -454,13 +454,13 @@ Two steps:
   - a. whenever it arrives;
   - b. at a Plan Step's opening, right after a System Repo Reading that reached main;
   - c. at a Plan Step's opening, whatever was read.
-- **Options,** for the System Repo's entries at the take:
+- **Options,** for the System Repo's System Kit Copy Change Records at the take:
   - d. kept, since the merge keeps what only the System Repo added;
-  - e. all cleared, every copy taken whole, and what is still needed re-applied with a fresh entry.
+  - e. all cleared, every copy taken whole, and what is still needed re-applied with a fresh System Kit Copy Change Record.
 - **Chosen:** b and e. The others:
   - a lands in the middle of a step, which then runs on two sets of rules;
-  - c takes the System Kit Update over System Kit Copy Changes not yet read. The System Kit Update answered none of them, and clearing their entries loses them before they are read;
-  - d keeps entries that say how a copy differed from the old System Kit. After the take some describe nothing, and none says how the copy differs from the new one.
+  - c takes the System Kit Update over System Kit Copy Changes not yet read. The System Kit Update answered none of them, and clearing their System Kit Copy Change Records loses them before they are read;
+  - d keeps System Kit Copy Change Records that say how a copy differed from the old System Kit. After the take some describe nothing, and none says how the copy differs from the new one.
 
   The opening order follows the fixed order already set: reading back, judging, then the System Kit Update (`temp/common-ground-problem.md` §2.1, *An update*). An open System Repo Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old copies first; the human may instead drop or restart it, when the System Kit Update changes a rule it rests on. The take checks first, from the System Kit Update Note, what the System Repo itself can see:
   - case 1, its main is still the System Repo Reading's stop, and its System Kit Version is the one the System Kit Update was built from: the System Kit Update is taken;
@@ -468,31 +468,31 @@ Two steps:
 
   The Maintainer Repo may compare the System Repo's main with the stop before delivery too, to save a delivery bound to fail. A System Kit moved since the System Kit Update was made is no reason to refuse it: the System Kit Update is correct, if not the latest, and the next brings the rest.
 
-  A gate may have fixed, merged or dropped entries the System Kit Update answered. These show in the new span as System Kit Copy Changes with their entries, and are judged like any. Entries from before *read to* still in the copies are cleared at the take, and what is still needed comes back with a fresh entry, judged in the next System Repo Reading.
+  A gate may have fixed, merged or dropped System Kit Copy Change Records the System Kit Update answered. These show in the new span as System Kit Copy Changes with their System Kit Copy Change Records, and are judged like any. System Kit Copy Change Records from before *read to* still in the copies are cleared at the take, and what is still needed comes back with a fresh System Kit Copy Change Record, judged in the next System Repo Reading.
 
   At the take, in order:
   1. the Adapted Case for taking a System Kit Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the System Kit Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
-  3. every copy is taken whole, at the new System Kit Version; each path gone is removed, and each renamed is moved. Every entry is cleared: the System Repo Reading reached main, so each was read and judged;
-  4. what the System Repo still needs is re-applied, each with a fresh entry written against the new version: what did not fit, what it keeps, which work found it, and its proposal. An old entry's what-happened may be carried in a line. Only a System Kit Copy Change with evidence is re-applied: its old entry, or a clash with the new version. A System Kit change on a part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
-  5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its entry saying which. One naming a part that changed after its commit is checked, with a System Kit Attention Note when it no longer applies. A question is answered as an entry or a System Kit Attention Note;
+  3. every copy is taken whole, at the new System Kit Version; each path gone is removed, and each renamed is moved. Every System Kit Copy Change Record is cleared: the System Repo Reading reached main, so each was read and judged;
+  4. what the System Repo still needs is re-applied, each with a fresh System Kit Copy Change Record written against the new version: what did not fit, what it keeps, which work found it, and its proposal. An old System Kit Copy Change Record's what-happened may be carried in a line. Only a System Kit Copy Change with evidence is re-applied: its old one, or a clash with the new version. A System Kit change on a part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
+  5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its System Kit Copy Change Record saying which. One naming a part that changed after its commit is checked, with a System Kit Attention Note when it no longer applies. A question is answered as a System Kit Copy Change Record or a System Kit Attention Note;
   6. the new System Kit Version is recorded, with the System Repo's commit that holds it, so the next System Kit Update finds its base;
   7. the System Kit Update and its System Kit Update Note are removed from `temp/`.
 
   A take may be postponed, with its why. Work then goes on with the old copies, and the order runs again at the next opening: the System Repo Reading is extended, and a newer System Kit Update replaces the waiting one (§7, step 1).
 - **Adapted Case:**
-  - the System Repo's, for taking a System Kit Update, itself in the System Kit Update and taken first. It loads when a Plan Step opens with a System Kit Update waiting. For this step it says: check first that main is still the System Repo Reading's stop and its System Kit Version is the System Kit Update's base, and take nothing when either differs, saying so; take only at a Plan Step's opening, or postpone with why; take in the order above; re-apply only with evidence, each with a fresh entry;
+  - the System Repo's, for taking a System Kit Update, itself in the System Kit Update and taken first. It loads when a Plan Step opens with a System Kit Update waiting. For this step it says: check first that main is still the System Repo Reading's stop and its System Kit Version is the System Kit Update's base, and take nothing when either differs, saying so; take only at a Plan Step's opening, or postpone with why; take in the order above; re-apply only with evidence, each with a fresh System Kit Copy Change Record;
   - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its System Kit Update taken, since the last opening? A System Repo cannot see this itself; the human answers.
 - **Open:**
   - finished work done under a rule the System Kit Update changed may now be wrong. New work follows the new copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first System Kit Update that changes a rule a finished Plan Step followed;
   - a take postponed again and again leaves the System Repo far behind. Its trigger: the first take postponed past two openings.
 
-  The take answers §3, step 1's Open on its own terms: every entry stands against the last System Kit Version taken, or birth's, and every entry goes at a take, rewritten when its difference stays. It is confirmed by that Open's trigger, the first System Kit Update to reach a System Repo whose copies have entries.
+  The take answers §3, step 1's Open on its own terms: every System Kit Copy Change Record stands against the last System Kit Version taken, or birth's, and every System Kit Copy Change Record goes at a take, rewritten when its difference stays. It is confirmed by that Open's trigger, the first System Kit Update to reach a System Repo whose copies have System Kit Copy Change Records.
 - **Today:**
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
   - borrowed: the Delivery Take's order: the Delivery Note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);
   - borrowed: being behind the Concept Deliverer is acceptable (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). A postponed take is that;
   - changed: today an edit made after the Read-Through Commit is re-applied on top, its record standing (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 3). Here the opening order leaves no such edit;
-  - changed: today a declined edit is gone at the Delivery Take, and never edited back in (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the System Repo re-applies what it still needs, with a fresh entry;
+  - changed: today a declined edit is gone at the Delivery Take, and never edited back in (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the System Repo re-applies what it still needs, with a fresh System Kit Copy Change Record;
   - changed: today work continues on the edited copy when a Plan Step opens before the reply (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). Here the next step waits for the take, unless it is postponed with why.
 
