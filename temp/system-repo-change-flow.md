@@ -41,7 +41,9 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
                                                     │
  open: does Reading 1 cover c2?                  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
                                                     │
-                                              ┌     ├─ cut ─▶ c3 ●  work, no Copy changed
+                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+                                                    │            │
+                                              ┌     │         c3 ●  work, no Copy changed
  Reading 1                                    │     │            │
  covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
  c3 to c6                                     │     │            │
@@ -55,10 +57,12 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
                                                     ┊
                                                     ┊
                                                     │
- open: does the next Reading cover c7?           c7 ●  the take: Version 2 comes in           ◀──── 9. Take: main is still c6, so it runs
+ open: does the next Reading cover c7?           c7 ●  the take: Version 2 comes in           ◀──── 9. Take: main is still c6 and the Version is still 1, so it runs
                                                     │                                         ◀──── main moves here? Read says only at a gate
                                                     │
-                                                    └─ cut ─▶ c8 ●  work, on Version 2        ◀──── 10. step 2 opens on Version 2
+                                                    └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
+                                                                 │
+                                                              c8 ●  work, on Version 2
 ```
 
 **Key:**
@@ -97,7 +101,9 @@ Step 2 opened before the take: the human started it before the Update came, or p
                                                     │
  open: does Reading 1 cover c2?                  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
                                                     │
-                                              ┌     ├─ cut ─▶ c3 ●  work, no Copy changed
+                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+                                                    │            │
+                                              ┌     │         c3 ●  work, no Copy changed
  Reading 1                                    │     │            │
  covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
  c3 to c6                                     │     │            │
@@ -108,7 +114,9 @@ Step 2 opened before the take: the human started it before the Update came, or p
  4 to 7. Read, List, Judge, Act:           ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
  c3 to c6; c6 becomes read to              ┘        ┊
                                                     │
-                                              ┌     └─ cut ─▶ c7 ●  work, on Version 1        ◀──── 10. step 2 opened before the take
+                                                    └─ cut ──────┐                            ◀──── 10. step 2 opened before the take
+                                                                 │
+                                              ┌               c7 ●  work, on Version 1
  8. Deliver: the Update waits in temp/        │                  ┊
  read again                                   │               c8 ●  a Copy changed            ◀──── 1. a Change, with its Record
  c7 to c9                                     │                  │
@@ -156,7 +164,9 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                                     │
  open: does Reading 1 cover c2?                  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
                                                     │
-                                              ┌     ├─ cut ─▶ c3 ●  work, no Copy changed
+                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+                                                    │            │
+                                              ┌     │         c3 ●  work, no Copy changed
  Reading 1                                    │     │            │
  covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
  c3 to c6                                     │     │            │
@@ -170,10 +180,12 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                                     ┊
                                                     ┊
                                                     │
- open: does                                   ┌     ├─ cut ─▶ c7 ●  the Update, as it arrived ◀──── 9. Take, by its Adapted Case: main is still c6
- the next Reading                             ┆     │            │                                  (committed in temp/, not yet in force: a record
-                                              ┆     │            │                                  of what came, before the take changes anything)
- cover c7 to c13?                             ┆     │         c8 ●  its new Adapted Case      ◀──── the Update's own, taken first; it runs the rest
+                                                    ├─ cut ──────┐                            ◀──── 9. Take, by its Adapted Case: main is still c6,
+                                                    │            │                                  and the Version is still 1
+ open: does                                   ┌     │         c7 ●  the Update, as it arrived       (committed in temp/, not yet in force: a record
+ the next Reading                             ┆     │            │                                  of what came, before the take changes anything)
+ cover c7 to c13?                             ┆     │            │
+                                              ┆     │         c8 ●  its new Adapted Case      ◀──── the Update's own, taken first; it runs the rest
                                               ┆     │            ┊                            ┄┄┄┄┄ the files checked against the Update Note; no commit
                                               ┆     │         c9 ●  every Copy at Version 2   ◀──── Copies taken whole; every Record cleared
                                               ┆     │            │
@@ -187,7 +199,9 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                                     │            │
                                                 c13 ● ◀──────────┘                            ◀──── main moves to c13 by fast-forward, the take's checks its gate
                                                     │
-                                                    └─ cut ─▶ c14 ● work, on Version 2        ◀──── 10. step 2 opens on Version 2
+                                                    └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
+                                                                 │
+                                                             c14 ●  work, on Version 2
 ```
 
 ## 4. After, item 1b
@@ -207,8 +221,10 @@ Reading 1 starts after *read to*, c1, and covers the take. Its first part reads 
                                                     │
  Reading 1 covers c2 to c6.                   ┌  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
  First part, c2 alone: its Copies             │     │
- against Version 1; what differs              │     ├─ cut ─▶ c3 ●  work, no Copy changed
+ against Version 1; what differs              │     ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
  was put back at the take                     │     │            │
+                                              │     │         c3 ●  work, no Copy changed
+                                              │     │            │
                                               │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
                                               │     │            │
                                               │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
@@ -233,7 +249,9 @@ Reading 1 starts after the commit the take recorded, c2, not after *read to*, so
                                                     │
  skipped: Reading 1 starts after c2 ─▶           c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
                                                     │
-                                              ┌     ├─ cut ─▶ c3 ●  work, no Copy changed
+                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+                                                    │            │
+                                              ┌     │         c3 ●  work, no Copy changed
  Reading 1                                    │     │            │
  covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
  c3 to c6                                     │     │            │
