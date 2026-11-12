@@ -103,7 +103,6 @@ Two steps:
   - what happened is written concretely, in the System Repo's own words;
   - whether the System Kit Copy Change is its own or any repo's is a proposal, never a verdict;
   - a System Kit Attention Note, written at any time, carries only what has no System Kit Copy Change (above, *The System Kit Attention Note*).
-- **Open:** which System Kit Version a System Kit Copy Change Record is written against, and whether one goes once a System Kit Update takes its System Kit Copy Change in. Before the first System Kit Update, every System Kit Copy Change Record stands against the System Kit Version the copies arrived at. Its trigger: the first System Kit Update to reach a System Repo whose copies have System Kit Copy Change Records.
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
@@ -232,7 +231,7 @@ Four steps:
   - compare the System Kit Attention Notes' place across the span, and read each new System Kit Attention Note;
   - judge nothing.
 - **Open:**
-  - a System Kit Update lands inside the next span, so its changes to the copies would read as the System Repo's own, with no System Kit Copy Change Record. They might be told apart by starting the span after the System Kit Update, by marking the System Kit Update's commits, or by comparing with the System Kit minus the System Kit Copy Change Records, option b. Its trigger: the first System Kit Update to reach a System Repo whose copies have System Kit Copy Change Records, §3, step 1's trigger too;
+  - a System Kit Update lands inside the next span, so its changes to the copies would read as the System Repo's own, with no System Kit Copy Change Record. They might be told apart by starting the span after the System Kit Update, by marking the System Kit Update's commits, or by comparing with the System Kit minus the System Kit Copy Change Records, option b. Its trigger: the first System Kit Update to reach a System Repo whose copies have System Kit Copy Change Records;
   - a System Repo with nothing new since its take still differs from the System Kit, by the System Kit Copy Changes it put back. Whether it is read again is open. Its trigger: the first return to a System Repo with nothing new since its take;
   - a System Repo Reading keeps no memory of earlier verdicts, so a System Kit Copy Change put back at the take is read like any other, and may be judged again. Whether that costs too much is open. Its trigger: the first System Repo Reading after a take that put System Kit Copy Changes back.
 - **Today:**
@@ -489,7 +488,7 @@ Two steps:
   - finished work done under a rule the System Kit Update changed may now be wrong. New work follows the new copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first System Kit Update that changes a rule a finished Plan Step followed;
   - a take postponed again and again leaves the System Repo far behind. Its trigger: the first take postponed past two openings.
 
-  The take answers §3, step 1's Open on its own terms: every System Kit Copy Change Record stands against the last System Kit Version taken, or birth's, and every System Kit Copy Change Record goes at a take, rewritten when its difference stays. It is confirmed by that Open's trigger, the first System Kit Update to reach a System Repo whose copies have System Kit Copy Change Records.
+  Every System Kit Copy Change Record stands against the last System Kit Version taken, or birth's, and every System Kit Copy Change Record goes at a take, rewritten when its difference stays. This is confirmed at the first System Kit Update to reach a System Repo whose copies have System Kit Copy Change Records.
 - **Today:**
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
   - borrowed: the Delivery Take's order: the Delivery Note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);
