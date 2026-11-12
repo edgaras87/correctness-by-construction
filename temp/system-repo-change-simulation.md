@@ -141,9 +141,9 @@ Two steps:
   - c leaves the review to the side that cannot see what happened, and a wrong Change then reaches the Maintainer Repo's judging;
   - d adds nothing to the Records: a Reading compares every Copy, and reads the Records. It comes back if a Reading misses a changed Copy because nothing asked it to look.
 
-  A Change kept as it is needs nothing more. One edited gets its Record rewritten. When Changes share one reason, the reason is written in full in one Record, and each other one says how its own Copy was affected and points at that one. If the one holding the reason is reversed, the reason moves to one that stays, and the others point there.
+  **After the decision.** A Change kept as it is needs nothing more. One edited gets its Record rewritten. When Changes share one reason, the reason is written in full in one Record, and each other one says how its own Copy was affected and points at that one. If the one holding the reason is reversed, the reason moves to one that stays, and the others point there.
 
-  The gate also asks once: did an Adapted Case used in this step not fit, with no Change made? A misfit worked around without a Change leaves nothing for the comparison to find. The human, who saw every session of the step, answers. Each misfit named is written as an Attention Note for the Maintainer Repo.
+  **The gate's question.** The gate also asks once: did an Adapted Case used in this step not fit, with no Change made? A misfit worked around without a Change leaves nothing for the comparison to find. The human, who saw every session of the step, answers. Each misfit named is written as an Attention Note for the Maintainer Repo.
 - **Adapted Case:** the System Repo's, for closing a Plan Step, its gate list. It loads when the Plan Step closes. For this step it says:
   - compare the Copies against where the Plan Step began, and check each Change has a Record that says it;
   - the human decides each Change: kept, edited or reversed, its Record with it;
@@ -181,13 +181,13 @@ Four steps:
   - c depends on the human remembering, and the Register then says a System Repo was read when it has new work (Failure Case 2);
   - e alone never reads a System Repo whose work does not resume, so what it learned is lost (Failure Case 1). It stands as it is, for every System Repo (`temp/common-ground-problem.md` §2.1, *An update*), and d adds Readings between two resumptions of work.
 
-  Main moves only at a gate's close, so main is always at a closed gate, and nothing on it waits for a gate. Work past it, in a branch or not yet committed, is left for the next Reading.
+  **Where a stretch ends.** Main moves only at a gate's close, so main is always at a closed gate, and nothing on it waits for a gate. Work past it, in a branch or not yet committed, is left for the next Reading.
 
-  A look at work past main may be asked for, as when a Change is in doubt before its gate. It is not a Reading: it does not move where the last Reading stopped, judges nothing, and gives only Attention Notes, for the human and for the System Repo's gate. The work is read when it reaches main.
+  **A look past main.** A look at work past main may be asked for, as when a Change is in doubt before its gate. It is not a Reading: it does not move where the last Reading stopped, judges nothing, and gives only Attention Notes, for the human and for the System Repo's gate. The work is read when it reaches main.
 
-  d keeps no state of its own: whether a System Repo has work comes from its main and the last Reading's stop, never from a line someone must keep true.
+  **No state kept.** d keeps no state of its own: whether a System Repo has work comes from its main and the last Reading's stop, never from a line someone must keep true.
 
-  If a stretch's history is cleaned before main moves, the Records are unharmed: they are in the Copies, not in the commits.
+  **Cleaned history.** If a stretch's history is cleaned before main moves, the Records are unharmed: they are in the Copies, not in the commits.
 - **Adapted Case:**
   - the System Repo's gate list: main moves only at a gate's close. It is there today;
   - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read, or asks what to read. For this step it says: compare the named System Repo's main with where its last Reading stopped, or every System Repo's when asked; a look past main moves nothing, and gives only Attention Notes.
@@ -209,7 +209,11 @@ Four steps:
   - a fails when a Reading has no Update after it, which step 1 allows, since a Reading may come between two resumptions of work: the System Repo still holds the old stop, and the next Reading finds again what was read;
   - c keeps every Reading for good, only for its first line.
 
-  The start is the Register's *read to*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with *read to* set to the start, the commit holding the Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Change, so it stands as read. So every Reading, the first among them, starts at *read to*, and a System Repo never read needs no rule of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation). The stop is the System Repo's main, written as the open Reading's first line before anything is read, so a commit landing during the Reading falls into the next one. It moves into the Register once the Reading's verdicts are acted on in the Maintainer Repo (§6, step 1), right after judging when they ask for no change, never before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all in the span is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
+  **Where it starts.** The start is the Register's *read to*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with *read to* set to the start, the commit holding the Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Change, so it stands as read. So every Reading, the first among them, starts at *read to*, and a System Repo never read needs no rule of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation).
+
+  **Where it stops.** The stop is the System Repo's main, written as the open Reading's first line before anything is read, so a commit landing during the Reading falls into the next one.
+
+  **When the stop moves.** The stop moves into the Register once the Reading's verdicts are acted on in the Maintainer Repo (§6, step 1), right after judging when they ask for no change, never before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all in the span is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - the start is the Register's *read to*;
   - the stop is the System Repo's main, written as the Reading's first line before anything is read;
@@ -234,12 +238,12 @@ Four steps:
   - c misses a Change with no Record, which the commit's check should have stopped, but which can still land (Failure Case 22);
   - d shows every edit on the way, and Changes the gate reversed. The gate has settled those (§3, step 2); what stands at the stop is what is read.
 
-  A Record lands in the same diff as its Change, in the Copy's Adapted Understanding Text, so pairing them is reading one diff. Three things can come out:
+  **Pairing.** A Record lands in the same diff as its Change, in the Copy's Adapted Understanding Text, so pairing them is reading one diff. Three things can come out:
   - a Change with its Record: read with its what, what happened, which work found it, and the System Repo's proposal;
   - a Change with no Record: read from the comparison alone, and marked "no entry";
   - a Record changed with no Change, as when a why is rewritten: read as a change of its why.
 
-  The Attention Notes are found the same way: their place in the System Repo's records is compared across the span, and each new Attention Note is read beside the Changes. One about a Change points at its Record, so the two are read together.
+  **The Attention Notes.** The Attention Notes are found the same way: their place in the System Repo's records is compared across the span, and each new Attention Note is read beside the Changes. One about a Change points at its Record, so the two are read together.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - compare each Copy from *read to* to the stop, in the System Repo's history;
   - pair each Change with its Record; mark one with none "no entry";
@@ -268,7 +272,7 @@ Four steps:
   - c takes the proposal for the verdict, and a lesson for every repo stays in one System Repo (Failure Case 20);
   - d merges two Changes to one Copy, and one of their reasons is lost.
 
-  A line holds what step 3 found: the Copy and its part, what it says now, what happened, which work found it, and the System Repo's proposal, marked as one. A Change with no Record says "no entry". Changes linked by one reason are listed together, under it. An Attention Note is a line of its own; one about a Change sits with it.
+  **What a line holds.** A line holds what step 3 found: the Copy and its part, what it says now, what happened, which work found it, and the System Repo's proposal, marked as one. A Change with no Record says "no entry". Changes linked by one reason are listed together, under it. An Attention Note is a line of its own; one about a Change sits with it.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - one line per Change and per Attention Note, nothing judged;
   - linked Changes listed together, under their reason;
@@ -307,16 +311,16 @@ Two steps:
   - c leaves the human to read every text the questions need, which the agent reads faster, and with nothing written down to check;
   - d judges on a guess at the why (Failure Case 22).
 
-  What each question reads:
+  **What each question reads:**
   - question 0, the Change is sound: what happened, the Change, and the original part. Does it fix what happened, without breaking something the Copy did? An unsound Change spreads nowhere: the depth questions are not asked, and the verdict says why. The Copy is the System Repo's own, so the Change stays there unless the System Repo reverses it;
   - question 1, the Copy already said it: the original part, in the Version the Copies came from, beside the Change. When the System Kit has moved since, its part as it is now is read too: a change the System Kit has since made the same way is covered, and nothing new is made, so one lesson is not made twice;
   - question 2, specific to that System Repo's problem: what happened, the System Repo's proposal, and its framing of its problem;
   - question 3, the project-agnostic understanding already holds it: the Project-Agnostic Understanding Text the Adapted Case narrows;
   - question 4, true for every repo: depth c's step, checked later.
 
-  Lines listed together under one reason are judged together, and the reason is judged once. A line whose parts answer differently is split, each part judged on its own; the parts keep their one Record.
+  **Lines together, lines split.** Lines listed together under one reason are judged together, and the reason is judged once. A line whose parts answer differently is split, each part judged on its own; the parts keep their one Record.
 
-  A question is answered from what the Change does and why, never from its wording. The System Repo writes in its own words on purpose (§3, step 1), and making a lesson general is rewording, after judging (§6, step 1). A Change worded for one project may still be a lesson for every repo. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
+  **Not from the wording.** A question is answered from what the Change does and why, never from its wording. The System Repo writes in its own words on purpose (§3, step 1), and making a lesson general is rewording, after judging (§6, step 1). A Change worded for one project may still be a lesson for every repo. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. It loads when the human starts judging a Reading whose list was checked whole. For this step it says:
   - question 0 first: does the Change fix what happened, without breaking something the Copy did? An unsound Change spreads nowhere, and its verdict says why;
   - then the four questions, in order, until one holds; for each, what it reads;
@@ -344,9 +348,9 @@ Two steps:
   - a leaves the change made from it with nothing to check it against, and a proposal judged wrong goes unseen;
   - c decides what changes before it is worked out: that is §6, step 1's, with the survey where the depth needs one.
 
-  A verdict is one of: unsound; misread, question 1; covered by a System Kit change since the System Repo's Version, question 1; its own, question 2, depth a; lost in narrowing, question 3, depth d; a project-agnostic lesson, question 4, depth c; a lesson for System Repos only, depth b; or held, with its trigger. Lines under one reason share one verdict, and each line says how its own Copy is affected.
+  **The verdicts.** A verdict is one of: unsound; misread, question 1; covered by a System Kit change since the System Repo's Version, question 1; its own, question 2, depth a; lost in narrowing, question 3, depth d; a project-agnostic lesson, question 4, depth c; a lesson for System Repos only, depth b; or held, with its trigger. Lines under one reason share one verdict, and each line says how its own Copy is affected.
 
-  The agreement is said in one line, "the proposal holds" or "the proposal does not hold, because …". An unsound verdict says what the Change breaks or leaves unfixed; whether to reverse it is the System Repo's decision, once the verdict reaches it (§7, step 1).
+  **The agreement.** The agreement is said in one line, "the proposal holds" or "the proposal does not hold, because …". An unsound verdict says what the Change breaks or leaves unfixed; whether to reverse it is the System Repo's decision, once the verdict reaches it (§7, step 1).
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says:
   - one verdict per line or part: its answer, its why, and whether the proposal holds;
   - lines under one reason share a verdict, each saying how its own Copy is affected.
@@ -370,7 +374,7 @@ Two steps:
   - b builds a record before any part has been changed by two System Repos;
   - c is a speculation: one System Repo's own Change, offered to System Repos that have not met it. Several Adapted Cases needing a change, but not all, is its own case (§2, row f).
 
-  For the other depths, this step holds the work, each checked here later: depth b changes the System Kit's Adapted Case; depth c changes the project-agnostic understanding, after the survey; depth d fixes the Adapted Case from the project-agnostic understanding; a narrowing is marked with its why. A lesson is reworded here, never before: for every System Repo at depth b, naming no project at depth c (`temp/common-ground-problem.md` §2.1, *A project-agnostic lesson*).
+  **The other depths.** For the other depths, this step holds the work, each checked here later: depth b changes the System Kit's Adapted Case; depth c changes the project-agnostic understanding, after the survey; depth d fixes the Adapted Case from the project-agnostic understanding; a narrowing is marked with its why. A lesson is reworded here, never before: for every System Repo at depth b, naming no project at depth c (`temp/common-ground-problem.md` §2.1, *A project-agnostic lesson*).
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says: a verdict of its own changes nothing here; the Reading stays a draft until the Update carries what the System Repo needs; once the verdicts are acted on, the stop moves into the Register.
 - **Open:** whether depth a's verdicts are kept beyond the Update, so the same Change by a second System Repo is seen. Without it, two System Repos making one Change are each judged alone. Its trigger: the second System Repo read back.
 - **Today:**
@@ -400,9 +404,9 @@ Two steps:
   - c leaves an unsound Change unknown to the only repo that can reverse it;
   - d sends an empty Update to carry where the Reading stopped. *Read to* is in the Register now (§4, step 2), so nothing needs carrying.
 
-  Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. It runs when the human names a System Repo to update, or asks which are behind. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
+  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. It runs when the human names a System Repo to update, or asks which are behind. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
 
-  An Update is two things: every Copy, whole, at the new Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
+  **What it is.** An Update is two things: every Copy, whole, at the new Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
   - the new Version;
   - the Version it was built from, and the System Repo's commit the Reading stopped at. The take checks both before anything moves (§8, step 1). The Update Note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
   - what changed since the System Repo's Version: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a file that is gone cannot say so itself;
@@ -412,11 +416,11 @@ Two steps:
   - which files are taken first: the Adapted Case for taking an Update, so an Update is never taken by instructions older than it (`temp/common-ground-problem.md` §2.1, *An update*; Failure Case 10);
   - the Update it replaces, when one was waiting.
 
-  The Update Note is no summary of the Maintainer Repo's work, which the System Repo cannot check. It is not a record either: it goes once the Update is taken, and what the System Repo decides goes in its Records.
+  **What the Update Note is not.** The Update Note is no summary of the Maintainer Repo's work, which the System Repo cannot check. It is not a record either: it goes once the Update is taken, and what the System Repo decides goes in its Records.
 
-  Nothing in it cites what the System Repo cannot open: no path, record or word of the Maintainer Repo's own. A depth-a Change whose proposal held sends nothing, and the System Repo's Copy keeps it.
+  **What it cites.** Nothing in it cites what the System Repo cannot open: no path, record or word of the Maintainer Repo's own. A depth-a Change whose proposal held sends nothing, and the System Repo's Copy keeps it.
 
-  A Reading stays open until its Update is made, or until it is judged with nothing to send. One Reading is open per System Repo at a time: a Reading made while one is open extends it, and its lines are judged with the rest, so judging already done is kept. One Update waits for the System Repo at a time: a newer one replaces one not yet taken, since it carries every System Kit change since the Copies' Version, and the verdicts of both Readings.
+  **One at a time.** A Reading stays open until its Update is made, or until it is judged with nothing to send. One Reading is open per System Repo at a time: a Reading made while one is open extends it, and its lines are judged with the rest, so judging already done is kept. One Update waits for the System Repo at a time: a newer one replaces one not yet taken, since it carries every System Kit change since the Copies' Version, and the verdicts of both Readings.
 - **Adapted Case:** the Maintainer Repo's, for making an Update. It loads on the human's word to update a System Repo. For this step it says:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change or a verdict;
@@ -448,7 +452,7 @@ Two steps:
   - a was chosen at birth because the start becomes the base of every Reading (`temp/between-repos-simulation.md` §5.1, step 2). Here a wrong file is held in `temp/`, never in force, and a comparison of files leaves little mistake to share. It comes back if a staged file is found, after a take, to differ from the System Kit;
   - c leaves only the System Repo to check, and it cannot open the System Kit, so a staged file that differs from it passes.
 
-  The System Repo's tree is checked clean first, with nothing in flight. When it is not, the agent says what it found and waits for the word. An Update already waiting there is replaced by the new one (step 1). The Update is named by the Maintainer Repo's commit at which its files and Update Note were final, so its Version is exact.
+  **Before staging.** The System Repo's tree is checked clean first, with nothing in flight. When it is not, the agent says what it found and waits for the word. An Update already waiting there is replaced by the new one (step 1). The Update is named by the Maintainer Repo's commit at which its files and Update Note were final, so its Version is exact.
 - **Adapted Case:** the Maintainer Repo's, for delivering an Update. It loads on the human's word to deliver. For this step it says:
   - never stage unasked; check the System Repo's tree clean first;
   - write only into the System Repo's `temp/`, replacing an Update already waiting;
@@ -478,15 +482,15 @@ Two steps:
   - c takes the Update over Changes not yet read. The Update answered none of them, and clearing their Records loses them before they are read;
   - d keeps Records that say how a Copy differed from the old System Kit. After the take some describe nothing, and none says how the Copy differs from the new one.
 
-  The opening order follows the fixed order already set: reading back, judging, then the Update (`temp/common-ground-problem.md` §2.1, *An update*). An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old Copies first; the human may instead drop or restart it, when the Update changes a rule it rests on. The take checks first, from the Update Note, what the System Repo itself can see:
+  **Before the take.** The opening order follows the fixed order already set: reading back, judging, then the Update (`temp/common-ground-problem.md` §2.1, *An update*). An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old Copies first; the human may instead drop or restart it, when the Update changes a rule it rests on. The take checks first, from the Update Note, what the System Repo itself can see:
   - case 1, its main is still the Reading's stop, and its Version is the one the Update was built from: the Update is taken;
   - case 2, anything else: there is no take, and the System Repo says so, which starts a Reading. The cycle runs again from *read to*: the new span is read, judged against the System Kit as it is now, the Maintainer Repo's changes made, and a new Update made. It replaces the waiting one and carries its verdicts not yet sent (§7, step 1).
 
-  The Maintainer Repo may compare the System Repo's main with the stop before delivery too, to save a delivery bound to fail. A System Kit moved since the Update was made is no reason to refuse it: the Update is correct, if not the latest, and the next brings the rest.
+  **A check before delivery.** The Maintainer Repo may compare the System Repo's main with the stop before delivery too, to save a delivery bound to fail. A System Kit moved since the Update was made is no reason to refuse it: the Update is correct, if not the latest, and the next brings the rest.
 
-  A gate may have fixed, merged or dropped Records the Update answered. These show in the new span as Changes with their Records, and are judged like any. Records from before *read to* still in the Copies are cleared at the take, and what is still needed comes back with a fresh Record, judged in the next Reading.
+  **Old Records.** A gate may have fixed, merged or dropped Records the Update answered. These show in the new span as Changes with their Records, and are judged like any. Records from before *read to* still in the Copies are cleared at the take, and what is still needed comes back with a fresh Record, judged in the next Reading.
 
-  At the take, in order:
+  **At the take, in order:**
   1. the Adapted Case for taking an Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
   3. every Copy is taken whole, at the new Version; each path gone is removed, and each renamed is moved. Every Record is cleared: the Reading reached main, so each was read and judged;
@@ -495,9 +499,9 @@ Two steps:
   6. the new Version is recorded, with the System Repo's commit that holds it, so the next Update finds its base;
   7. the Update and its Update Note are removed from `temp/`.
 
-  A take may be postponed, with its why. Work then goes on with the old Copies, and the order runs again at the next opening: the Reading is extended, and a newer Update replaces the waiting one (§7, step 1).
+  **A postponed take.** A take may be postponed, with its why. Work then goes on with the old Copies, and the order runs again at the next opening: the Reading is extended, and a newer Update replaces the waiting one (§7, step 1).
 
-  Every Record stands against the last Version taken, or birth's, and every Record goes at a take, rewritten when its difference stays. This is confirmed at the first Update to reach a System Repo whose Copies have Records.
+  **What a Record stands against.** Every Record stands against the last Version taken, or birth's, and every Record goes at a take, rewritten when its difference stays. This is confirmed at the first Update to reach a System Repo whose Copies have Records.
 - **Adapted Case:**
   - the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says: check first that main is still the Reading's stop and its Version is the Update's base, and take nothing when either differs, saying so; take only at a Plan Step's opening, or postpone with why; take in the order above; re-apply only with evidence, each with a fresh Record;
   - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its Update taken, since the last opening? A System Repo cannot see this itself; the human answers.
