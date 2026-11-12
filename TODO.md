@@ -34,22 +34,55 @@
 
 ## Next (each due at its trigger)
 
-- [ ] Draft an Adapted Case for refining a document
-      (2026-11-12, the reviewer).
+- [ ] Design how a document is refined: a broad Adapted Case, an
+      Output Shape read after the work, and how each corrects the
+      other (2026-11-12, the reviewer).
       Context: the reviewer asks for a refinement by hand today, and
       the agent chooses the checks each time. On 2026-11-12 nine
-      checks were run on `temp/system-repo-change-simulation.md`. The
-      walk of one case through every part found what the scripts
-      could not: a contradiction and four gaps. One run on one
-      document is not yet a form to derive a case from.
+      checks were run on `temp/system-repo-change-simulation.md`. An
+      Output Shape is read after the work, and changes when an output
+      differs from it (`docs/conventions/shapes/` §2.3, *Not a convention*;
+      §3, *Where an Output Shape lives*). One run on one document is
+      not yet a form to derive from.
       Ideas:
-      - start from the nine checks, in the order they were run;
-      - the walk comes before the wording, since it changes what the
-        text says;
-      - the case says which checks a script runs and which need a
-        read by eye.
+      - the Adapted Case describes a refinement broadly, names no
+        checks, and tells the agent to find them itself;
+      - an Output Shape says what a refinement's report holds; the
+        nine checks are its first draft;
+      - the output holds what the Output Shape lacks: the Output
+        Shape gains it;
+      - the Output Shape holds what the output lacks: that check is
+        run again;
+      - the agent does not read the Output Shape before it works, or
+        it becomes a list to tick;
+      - the walk of one case through every part comes before the
+        wording, since it changes what the text says;
+      - which checks a script runs and which need a read by eye;
+      - where the Output Shape is read is the item "Decide where
+        small work is gated when it is too small for a Plan Step";
+      - our own Output Shapes are the item "Decide whether our own
+        forms become Output Shapes".
       Trigger: a second document is refined by the reviewer's ask.
-      See: devlog 2026-11-12, the checks run on the simulation.
+      See: devlog 2026-11-12, the checks run on the simulation;
+      `TODO-CONVERSATION-MEMORY.md` §34, *Refining a document*.
+
+- [ ] Decide where small work is gated when it is too small for a
+      Plan Step (2026-11-12, the reviewer).
+      Context: an Output Shape is read at a Plan Step Gate, when the
+      Plan Step closes (`docs/conventions/shapes/` §3, *Where an Output Shape lives*).
+      A document is refined inside a Plan Step, when it needs it, and
+      that work is too small to be a Plan Step. So nothing reads its
+      Output Shape. Any small work that needs a check at its end has
+      the same gap.
+      Ideas:
+      - a Plan Step of its own;
+      - separate work inside a Plan Step, with gates at its end: it
+        looks like a Plan Step and is not one;
+      - a commit plan's close, which already says what diverged.
+      Trigger: the item "Design how a document is refined" is worked,
+               or other small work needs a check at its end.
+      See: devlog 2026-11-12, a refinement's Output Shape;
+      `TODO-CONVERSATION-MEMORY.md` §34, *Refining a document*.
 
 - [ ] Resume the simulation of what passes between the repos,
       `temp/between-repos-simulation.md` (2026-11-10, the reviewer).
@@ -455,6 +488,8 @@
         and an Agent Skill Template: the Invariant Slice Record's outline, the
         Structural Wall Backstop at the Red Run, a cost's size, the Invariant Slice Entry's fields, a
         body asserted by path.
+      - a document's refinement is a case of it: the item "Design how
+        a document is refined".
       Trigger: the approach-drafting Approach on Trial's first evaluation, at the
                refinement's close.
       See: devlog 2026-10-20, later; `TODO-CONVERSATION-MEMORY.md` §2, *How an approach and a shape divide an output*.
@@ -719,6 +754,8 @@
       - Idea Models and the concept get none while nothing of their kind
         recurs: three Idea Models share no parts yet, and the concept has
         one form and one home (`docs/models/idea-to-output.md` §5, *An Idea Model and a concept*).
+      - a refinement's report may be the first: the item "Design how
+        a document is refined".
       Trigger: CBC Run 4's CBC Run Reading, which reads how CBC Run 4 lived CBC Run 3's
                Output Shapes.
       See: devlog 2026-10-17, our forms as shapes; 2026-10-20,
