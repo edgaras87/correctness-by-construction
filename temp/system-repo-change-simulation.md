@@ -425,7 +425,7 @@ Two steps:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change or a verdict;
   - it is due when the System Repo's Version is behind the newest, or a verdict goes down; the Versions are compared when the human names a System Repo or asks which are behind;
-  - it carries every Copy whole, at the new Version, and an Update Note: that Version, the one it was built from and the Reading's stop, what changed and how many, the whys whatever their source, the verdicts from the Reading of this System Repo that it can act on, a question for each held line, what is taken first, and the Update it replaces;
+  - it carries every Copy whole, at the new Version, and an Update Note holding the eight things listed above;
   - it cites nothing the System Repo cannot open;
   - each verdict names the System Repo's commit it judged;
   - one Reading open per System Repo, a new Reading extending it; one Update waiting, a newer one replacing it.
