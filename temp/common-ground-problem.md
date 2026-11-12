@@ -161,7 +161,7 @@ So far, three movements:
 
 | Movement | From, to | What passes |
 |---|---|---|
-| birth | the Maintainer Repo to a new System Repo | System Kit Copies, taken at one moment of the System Kit |
+| birth | the Maintainer Repo to a new System Repo | System Kit Copies, taken at one System Kit Version |
 | reading back | a System Repo to the Maintainer Repo | what the System Repo changed in its System Kit Copies, and why |
 | update | the Maintainer Repo to a System Repo, when work resumes in it | the System Kit's changes since its copies were taken |
 
@@ -219,7 +219,7 @@ How each question is answered, and by whom, is open. So is a change that arrives
 
 - a System Kit Copy may differ from its original, and keeps the System Repo's specific changes. This holds for an Instruction Text and its Adapted Understanding Text alike, and still holds after reading back and an update. An update never overwrites it: the System Repo judges what is new, as the Maintainer Repo judges a lesson;
 - work resuming in a System Repo goes in a fixed order: reading back, judging, then the update;
-- each System Repo says which moment of the System Kit its copies come from;
+- each System Repo says which System Kit Version its copies come from;
 - a declined update is recorded with its why, so a later reading back does not take it for a new change;
 - the instructions for taking an update are taken first, on their own, and the rest under them. Otherwise an update is taken by instructions older than it (Failure Case 10).
 
