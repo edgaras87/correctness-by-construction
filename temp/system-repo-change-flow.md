@@ -33,33 +33,32 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
 #### Picture 1, the take inside its window
 
 ```
- Maintainer Repo                                 main      branches                                 System Repo
- ───────────────                                 ────      ────────                                 ───────────
- 
- read and
- acted on.
- read to: where the last Reading stopped  ─▶  ┌  c0 ●  earlier work
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ read and acted on                            ┌  c0 ●  earlier work, with Changes
                                               │     │
-                                              └  c1 ●  take                                   ◀──── the last take, on Version 1
+ read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
                                                     │
-                                              ┌     ├─ cut ─▶ c2 ●  work, no Copy changed
+ open: does Reading 1 cover c2?                  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
+                                                    │
+                                              ┌     ├─ cut ─▶ c3 ●  work, no Copy changed
  Reading 1                                    │     │            │
- covers                                       │     │         c3 ●  a Copy changed            ◀──── 1. a Change, with its Record
- c2 to c5                                     │     │            │
-                                              │     │         c4 ●  another Copy changed      ◀──── 1. another Change, with its Record
+ covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
+ c3 to c6                                     │     │            │
+                                              │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
                                               │     │            │
-                                              └     │         c5 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
+                                              └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
                                                     │            │
-                                                 c5 ● ◀──────────┘                            ◀──── main moves to c5 by fast-forward, no new commit
- 4 to 6. Read, List, Judge: c2 to c5                ┊
- 7. Act: c5 becomes read to                         ┊
- 8. Deliver: the Update waits in temp/              ┊
+ 4 to 6. Read, List, Judge: c3 to c6       ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
+ 7. Act: c6 becomes read to                │        ┊
+ 8. Deliver: the Update waits in temp/     ┘        ┊
+                                                    ┊
+                                                    ┊
                                                     │
-                                                 c6 ●  the take: Version 2 comes in           ◀──── 9. Take: main is still c5, so it runs
+ open: does the next Reading cover c7?           c7 ●  the take: Version 2 comes in           ◀──── 9. Take: main is still c6, so it runs
                                                     │                                         ◀──── main moves here? Read says only at a gate
-                                                    │                                         ◀┄┄┄┄ open: next Reading after c5, or after c6?
                                                     │
-                                                    └─ cut ─▶ c7 ●  work, on Version 2        ◀──── 10. step 2 opens on Version 2
+                                                    └─ cut ─▶ c8 ●  work, on Version 2        ◀──── 10. step 2 opens on Version 2
 ```
 
 **Key:**
@@ -70,52 +69,54 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
 - **System Repo:** its parts, each pointing at the commit it acts on.
 - **┊:** no commit.
 - **numbers:** 1 a Change, 2 the gate decides, 3 the gate closes, 4 Read, 5 List, 6 Judge, 7 Act, 8 Deliver, 9 the take, 10 the next Plan Step opens.
-- **Versions:** the Copies are at Version 1 until a take brings Version 2. The picture starts at c1: read, judged and acted on, and taken as Version 1, so nothing earlier waits.
+- **Versions:** the picture starts in the middle of the work. c0 and c1 were read and acted on, *read to* is c1, and c2 is the last take, which brought Version 1. The Copies stay at Version 1 until a take brings Version 2.
 
 | Commit | Where | System Repo | Maintainer Repo |
 |---|---|---|---|
-| c0 | main | earlier work | read and acted on |
-| c1 | main | the last stop, on Version 1 | *read to* |
-| c2 | step 1's branch | work, no Copy changed | covered by Reading 1 |
-| c3 | step 1's branch | 1. a Change: a Copy changed, with its Record | covered by Reading 1 |
-| c4 | step 1's branch | 1. another Change: another Copy changed, with its Record | covered by Reading 1 |
-| c5 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c5 by fast-forward | covered by Reading 1, its stop |
-| no commit | | | 4 to 6. Read, List, Judge: c2 to c5. 7. Act: c5 becomes *read to*. 8. Deliver: the Update waits in `temp/` |
-| c6 | main | 9. the take: main is still c5, so it runs, and Version 2 comes in. Main moves here? Read says only at a gate | open: does the next Reading start after c5, or after c6? |
-| c7 | step 2's branch | 10. step 2 opens on Version 2 | |
+| c0 | main | earlier work, with Changes | read and acted on |
+| c1 | main | earlier work, the last stop | read and acted on; *read to* |
+| c2 | main | 9. the last take: main was still c1, and Version 1 comes in | open: does Reading 1 cover c2? |
+| c3 | step 1's branch | work, no Copy changed | covered by Reading 1 |
+| c4 | step 1's branch | 1. a Change: a Copy changed, with its Record | covered by Reading 1 |
+| c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | covered by Reading 1 |
+| c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | covered by Reading 1, its stop |
+| no commit | | | 4 to 6. Read, List, Judge: c3 to c6. 7. Act: c6 becomes *read to*. 8. Deliver: the Update waits in `temp/` |
+| c7 | main | 9. the take: main is still c6, so it runs, and Version 2 comes in. Main moves here? Read says only at a gate | open: does the next Reading cover c7? |
+| c8 | step 2's branch | 10. step 2 opens on Version 2 | |
 
 #### Picture 2, the window missed
 
 Step 2 opened before the take: the human started it before the Update came, or postponed the take (`temp/system-repo-change-simulation.md` §8, step 1, *A postponed take*).
 
 ```
- Maintainer Repo                           main      branches                          System Repo
- ───────────────                           ────      ────────                          ───────────
- read and                             ┌  c0 ●  earlier work
- acted on                             │     │
-                                      └  c1 ●  the last stop, on Version 1            ◀──── read to: where the last Reading stopped
-                                            │
-                                      ┌     ├─ cut ─▶ c2 ●  work, no Copy changed
- Reading 1                            │     │            │
- covers                               │     │         c3 ●  a Copy changed            ◀──── 1. a Change, with its Record
- c2 to c5                             │     │            │
-                                      │     │         c4 ●  another Copy changed      ◀──── 1. another Change, with its Record
-                                      │     │            │
-                                      └     │         c5 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
-                                            │            │
-                                         c5 ● ◀──────────┘                            ◀──── main moves to c5 by fast-forward, no new commit
- 4 to 7. Read, List, Judge, Act:            ┊
- c2 to c5; c5 becomes read to               ┊
-                                            │
-                                      ┌     └─ cut ─▶ c6 ●  work, on Version 1        ◀──── 10. step 2 opened before the take
- 8. Deliver: Update waits in temp/    │                  ┊
- read again                           │               c7 ●  a Copy changed            ◀──── 1. a Change, with its Record
- c6 to c8                             │                  │
-                                      └               c8 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
-                                                         │
-                                         c8 ● ◀──────────┘                            ◀──── main moves to c8 by fast-forward, no new commit
-                                                                                      ┄┄┄┄┄ 9. Take refused: main is c8, not c5; no commit
- 4 again. Read: c6 to c8; a new
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ read and acted on                            ┌  c0 ●  earlier work, with Changes
+                                              │     │
+ read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
+                                                    │
+ open: does Reading 1 cover c2?                  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
+                                                    │
+                                              ┌     ├─ cut ─▶ c3 ●  work, no Copy changed
+ Reading 1                                    │     │            │
+ covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
+ c3 to c6                                     │     │            │
+                                              │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
+                                              │     │            │
+                                              └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
+                                                    │            │
+ 4 to 7. Read, List, Judge, Act:           ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
+ c3 to c6; c6 becomes read to              ┘        ┊
+                                                    │
+                                              ┌     └─ cut ─▶ c7 ●  work, on Version 1        ◀──── 10. step 2 opened before the take
+ 8. Deliver: the Update waits in temp/        │                  ┊
+ read again                                   │               c8 ●  a Copy changed            ◀──── 1. a Change, with its Record
+ c7 to c9                                     │                  │
+                                              └               c9 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
+                                                                 │
+                                                 c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, no new commit
+                                                                                              ┄┄┄┄┄ 9. Take refused: main is c9, not c6; no commit
+ 4 again. Read: c7 to c9; a new
  Update replaces the waiting one
 ```
 
@@ -123,16 +124,73 @@ Key: as in picture 1.
 
 | Commit | Where | System Repo | Maintainer Repo |
 |---|---|---|---|
-| c0 | main | earlier work | read and acted on |
-| c1 | main | the last stop, on Version 1 | *read to* |
-| c2 | step 1's branch | work, no Copy changed | covered by Reading 1 |
-| c3 | step 1's branch | 1. a Change: a Copy changed, with its Record | covered by Reading 1 |
-| c4 | step 1's branch | 1. another Change: another Copy changed, with its Record | covered by Reading 1 |
-| c5 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c5 by fast-forward | covered by Reading 1, its stop |
-| no commit | | | 4 to 7. Read, List, Judge, Act: c2 to c5; c5 becomes *read to* |
-| c6 | step 2's branch | 10. step 2 opened before the take: work on Version 1 | covered by the Reading again |
+| c0 | main | earlier work, with Changes | read and acted on |
+| c1 | main | earlier work, the last stop | read and acted on; *read to* |
+| c2 | main | 9. the last take: main was still c1, and Version 1 comes in | open: does Reading 1 cover c2? |
+| c3 | step 1's branch | work, no Copy changed | covered by Reading 1 |
+| c4 | step 1's branch | 1. a Change: a Copy changed, with its Record | covered by Reading 1 |
+| c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | covered by Reading 1 |
+| c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | covered by Reading 1, its stop |
+| no commit | | | 4 to 7. Read, List, Judge, Act: c3 to c6; c6 becomes *read to* |
+| c7 | step 2's branch | 10. step 2 opened before the take: work on Version 1 | covered by the Reading again |
 | no commit | | | 8. Deliver: the Update waits in `temp/` |
-| c7 | step 2's branch | 1. a Change: a Copy changed, with its Record | covered by the Reading again |
-| c8 | step 2's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c8 by fast-forward | covered by the Reading again, its stop |
-| no commit | | 9. the take: main is c8, not c5, so it is refused | |
-| no commit | | | 4 again. Read: c6 to c8; a new Update replaces the waiting one |
+| c8 | step 2's branch | 1. a Change: a Copy changed, with its Record | covered by the Reading again |
+| c9 | step 2's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c9 by fast-forward | covered by the Reading again, its stop |
+| no commit | | 9. the take: main is c9, not c6, so it is refused | |
+| no commit | | | 4 again. Read: c7 to c9; a new Update replaces the waiting one |
+
+## 3. After, item 1b
+
+The question: after a take, where does the next Reading start (`temp/system-repo-change-simulation.md` §4, step 3, *Open*)? *Read to* is c1, and the take at c2 lies inside Reading 1's span. Only the start of picture 1 changes; the rest stays as in Now.
+
+### Option a, read the take
+
+Reading 1 starts after *read to*, c1, and covers the take. Its first part reads c2 alone: it compares the Copies at c2 with Version 1, and what differs is what the System Repo put back at the take. Then the rest is read as usual. This is the answer to try already written into Read step 3's two Opens.
+
+```
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ read and acted on                            ┌  c0 ●  earlier work, with Changes
+                                              │     │
+ read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
+                                                    │
+ Reading 1 covers c2 to c6.                   ┌  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
+ First part, c2 alone: its Copies             │     │
+ against Version 1; what differs              │     ├─ cut ─▶ c3 ●  work, no Copy changed
+ was put back at the take                     │     │            │
+                                              │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
+                                              │     │            │
+                                              │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
+                                              │     │            │
+                                              └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
+                                                    │            │
+ 4 to 6. Read, List, Judge: c2 to c6       ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
+ 7. Act: c6 becomes read to                │        ┊
+ 8. Deliver: the Update waits in temp/     ┘        ┊
+```
+
+### Option b, skip the take
+
+Reading 1 starts after the commit the take recorded, c2, not after *read to*, so it covers c3 to c6 (`temp/system-repo-change-simulation.md` §8, step 1, item 6). A Change the System Repo put back inside the take's commit is never read; it is read only if it is made in a commit after c2.
+
+```
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ read and acted on                            ┌  c0 ●  earlier work, with Changes
+                                              │     │
+ read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
+                                                    │
+ skipped: Reading 1 starts after c2 ─▶           c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
+                                                    │
+                                              ┌     ├─ cut ─▶ c3 ●  work, no Copy changed
+ Reading 1                                    │     │            │
+ covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
+ c3 to c6                                     │     │            │
+                                              │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
+                                              │     │            │
+                                              └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
+                                                    │            │
+ 4 to 6. Read, List, Judge: c3 to c6       ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
+ 7. Act: c6 becomes read to                │        ┊
+ 8. Deliver: the Update waits in temp/     ┘        ┊
+```
