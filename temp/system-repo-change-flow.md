@@ -5,10 +5,10 @@
      temp/system-repo-change-simulation.md, and the part acting on
      each. The facts live in the
      simulation, never here. "Now" pictures the simulation as it is.
-     "After" pictures one open decision, one drawing per option, each
-     named by its option. When the decision is made, the simulation
-     changes, the chosen option's drawing becomes "Now", and "After"
-     is emptied. It goes when the Plan Step closes, and
+     Each "After" section pictures one open decision, one drawing per
+     option, each named by its option. When the decision is made, the
+     simulation changes, the chosen option's drawing becomes "Now",
+     and that "After" section goes. It goes when the Plan Step closes, and
      git keeps every version. -->
 
 It uses the simulation's short words: Change, Record, Copy, Update, Update Note, Version, Reading, Register (`temp/system-repo-change-simulation.md`, its table at the top).
@@ -139,7 +139,57 @@ Key: as in picture 1.
 | no commit | | 9. the take: main is c9, not c6, so it is refused | |
 | no commit | | | 4 again. Read: c7 to c9; a new Update replaces the waiting one |
 
-## 3. After, item 1b
+## 3. After, item 1a
+
+The question: where does the take happen, so that main still moves only at a close? Only the end of picture 1 changes; the rest stays as in Now. Options b and c of item 1a, the next Plan Step's first commit and a Plan Step of its own, were drawn once and dropped; they can be drawn again.
+
+### Option a, a take of its own, on a branch
+
+The take is run by its own Adapted Case, with no Plan Step. It cuts a branch from main at c6, makes one commit per part of the take's order, and moves main by fast-forward, as a gate does (`temp/system-repo-change-simulation.md` §8, step 1, *At the take, in order*). Its checks are its gate: main is still the Reading's stop, and the files match the Update Note. Step 2 is cut from t7 as c7. t1 commits the Update as delivered, and may go later. The t-commits are the take's own; t4 and t5 stand for one commit each per Change put back and per verdict acted on, zero or more.
+
+```
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ read and acted on                            ┌  c0 ●  earlier work, with Changes
+                                              │     │
+ read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
+                                                    │
+ open: does Reading 1 cover c2?                  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
+                                                    │
+                                              ┌     ├─ cut ─▶ c3 ●  work, no Copy changed
+ Reading 1                                    │     │            │
+ covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
+ c3 to c6                                     │     │            │
+                                              │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
+                                              │     │            │
+                                              └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
+                                                    │            │
+ 4 to 6. Read, List, Judge: c3 to c6       ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
+ 7. Act: c6 becomes read to                │        ┊
+ 8. Deliver: the Update waits in temp/     ┘        ┊
+                                                    ┊
+                                                    ┊
+                                                    │
+ open: does                                   ┌     ├─ cut ─▶ t1 ●  the Update as delivered   ◀──── 9. Take: main is still c6, so it runs
+ the next Reading                             ┆     │            │
+ cover t1 to t7?                              ┆     │         t2 ●  the take's Adapted Case   ◀──── taken first, alone
+                                              ┆     │            ┊                            ┄┄┄┄┄ the files checked against the Update Note; no commit
+                                              ┆     │         t3 ●  every Copy at Version 2   ◀──── Copies taken whole; every Record cleared
+                                              ┆     │            │
+                                              ┆     │         t4 ●  a Change put back         ◀──── one per Change, each with a fresh Record
+                                              ┆     │            │
+                                              ┆     │         t5 ●  a verdict acted on        ◀──── zero or more: unsound reversed or kept, a question answered
+                                              ┆     │            │
+                                              ┆     │         t6 ●  Version 2 recorded        ◀──── with the commit that holds it, t3
+                                              ┆     │            │
+                                              └     │         t7 ●  the Update removed        ◀──── the Update and the Update Note leave temp/
+                                                    │            │
+                                                 t7 ● ◀──────────┘                            ◀──── main moves to t7 by fast-forward, the take's checks its gate
+                                                    │
+                                                    └─ cut ─▶ c7 ●  work, on Version 2        ◀──── 10. step 2 opens on Version 2
+```
+
+## 4. After, item 1b
 
 The question: after a take, where does the next Reading start (`temp/system-repo-change-simulation.md` §4, step 3, *Open*)? *Read to* is c1, and the take at c2 lies inside Reading 1's span. Only the start of picture 1 changes; the rest stays as in Now.
 
