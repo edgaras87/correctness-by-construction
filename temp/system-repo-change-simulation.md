@@ -54,7 +54,7 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | what changed | one reason behind changes to several Adapted Cases | not yet checked | recorded: one why, naming every copy it changed; read: the changes are listed together |
 | what changed | a System Kit Attention Note with no change | not yet checked | read: a line of its own, from the System Kit Attention Notes' place, with no copy's diff; a copy no longer used shows only so, since nothing in its file changes; decided: questions 1 to 4 fit a doubt about a line, not a lack or an unused copy |
 | how deep | a. it stays in the System Repo | not yet checked | — |
-| how deep | b. the System Kit's Adapted Case changes | not yet checked | the update brings it to this System Repo too, whose copy already has it |
+| how deep | b. the System Kit's Adapted Case changes | not yet checked | the System Kit Update brings it to this System Repo too, whose copy already has it |
 | how deep | c. the project-agnostic text changes | not yet checked | the other Adapted Cases are surveyed, the Maintainer Repo's own among them |
 | how deep | d. the project-agnostic text already holds it | not yet checked | question 3 checks only the Maintainer Repo's own Adapted Case for the same loss, though every Adapted Case on that idea may have lost it; if several did, the project-agnostic wording may be too weak, and is reworded clearer, never narrower |
 | how deep | e. it asks to narrow the project-agnostic text | not yet checked | the narrowing goes into the Adapted Case, marked with its why (`temp/common-ground-problem.md` §2.1, *Narrowing, never shrinking*) |
@@ -99,7 +99,7 @@ Two steps:
   - what happened is written concretely, in the System Repo's own words;
   - whether the change is its own or any repo's is a proposal, never a verdict;
   - a System Kit Attention Note, written at any time, carries only what has no change; one about a change points at its entry, and never retells it (step 2).
-- **Open:** which System Kit Version an entry is written against, and whether an entry goes once an update takes its change in. Before the first update, every entry stands against the System Kit Version the copies arrived at. Its trigger: the first update to reach a System Repo whose copies have entries.
+- **Open:** which System Kit Version an entry is written against, and whether an entry goes once a System Kit Update takes its change in. Before the first System Kit Update, every entry stands against the System Kit Version the copies arrived at. Its trigger: the first System Kit Update to reach a System Repo whose copies have entries.
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
@@ -159,7 +159,7 @@ Four steps:
 - **Options,** for how the Maintainer Repo learns:
   - c. the human tells it, and its Maintainer Repo Register is marked by hand;
   - d. the human names a System Repo, and the agent compares its main with where its last System Repo Reading stopped. Every System Repo is compared when the human asks what to read;
-  - e. only when work resumes in the System Repo, by the fixed order: reading back, judging, then the update.
+  - e. only when work resumes in the System Repo, by the fixed order: reading back, judging, then the System Kit Update.
 - **Chosen:** b and d. The others:
   - a reads changes the gate has not yet looked at, which the System Repo may still edit or reverse (§3, step 2);
   - c depends on the human remembering, and the Maintainer Repo Register then says a System Repo was read when it has new work (Failure Case 2);
@@ -184,16 +184,16 @@ Four steps:
 
 **Step 2. The Maintainer Repo finds where to start reading.**
 
-- **What must happen:** the agent finds where this System Repo Reading starts, and writes where it stops, before reading anything. A later System Repo Reading must start where this one stopped, whether an update follows this System Repo Reading or not.
+- **What must happen:** the agent finds where this System Repo Reading starts, and writes where it stops, before reading anything. A later System Repo Reading must start where this one stopped, whether a System Kit Update follows this System Repo Reading or not.
 - **Options,** for where the last System Repo Reading's stop is kept:
-  - a. in the System Repo, carried there by the next update;
+  - a. in the System Repo, carried there by the next System Kit Update;
   - b. in the Maintainer Repo Register, a *read to* commit beside where each System Repo lives;
   - c. in the Maintainer Repo, as the first line of each System Repo Reading, every System Repo Reading kept.
 - **Chosen:** b. The others:
-  - a fails when a System Repo Reading has no update after it, which step 1's System Repo Readings between allow: the System Repo still holds the old stop, and the next System Repo Reading finds again what was read;
+  - a fails when a System Repo Reading has no System Kit Update after it, which step 1's System Repo Readings between allow: the System Repo still holds the old stop, and the next System Repo Reading finds again what was read;
   - c keeps every System Repo Reading only for one line.
 
-  The start is the Maintainer Repo Register's *read to*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with *read to* set to the start, the commit holding the System Kit Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own change, so it stands as read. So every System Repo Reading, the first among them, starts at *read to*, and no "none" needs a path of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation). The stop is the System Repo's main, written as the open System Repo Reading's first line before anything is read, so a commit landing during the System Repo Reading falls into the next one. It moves into the Maintainer Repo Register once the System Repo Reading's verdicts are acted on in the Maintainer Repo (§6, step 1), right after judging when they ask for no change, never before: a System Repo Reading left half done must not mark its changes read. Whether the System Repo takes the update does not hold it back: by then all in the span is read, judged and acted on, and what follows is the next System Repo Reading's. The System Repo Reading stays a draft, and goes once its work is done.
+  The start is the Maintainer Repo Register's *read to*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with *read to* set to the start, the commit holding the System Kit Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own change, so it stands as read. So every System Repo Reading, the first among them, starts at *read to*, and no "none" needs a path of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation). The stop is the System Repo's main, written as the open System Repo Reading's first line before anything is read, so a commit landing during the System Repo Reading falls into the next one. It moves into the Maintainer Repo Register once the System Repo Reading's verdicts are acted on in the Maintainer Repo (§6, step 1), right after judging when they ask for no change, never before: a System Repo Reading left half done must not mark its changes read. Whether the System Repo takes the System Kit Update does not hold it back: by then all in the span is read, judged and acted on, and what follows is the next System Repo Reading's. The System Repo Reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - the start is the Maintainer Repo Register's *read to*;
   - the stop is the System Repo's main, written as the System Repo Reading's first line before anything is read;
@@ -202,7 +202,7 @@ Four steps:
   - borrowed: the stop is written first, as the System Repo Reading's first line, before anything is read (`.claude/skills/exchange-read/SKILL.md`, Stage 2);
   - borrowed: the Maintainer Repo Register keeps where each System Repo lives, as today's list of CBC Runs does (`ARCHITECTURE.md` §2.5, *The CBC Runs*). It gains *read to*;
   - borrowed: a CBC Run Reading is a draft in `temp/`, deleted once the work that needed it is done (`temp/README.md`; `.claude/skills/exchange-read/SKILL.md`, Stage 4);
-  - changed: today the stop, the Read-Through Commit, is kept in the CBC Run, carried there by the next Delivery Note, because "it is the only place the Concept Deliverer can look" (`docs/conventions/exchange/` §2.2, *The CBC Run*). Today every CBC Run Reading is followed by a delivery, so the stop always arrives. Here a System Repo Reading may have no update after it;
+  - changed: today the stop, the Read-Through Commit, is kept in the CBC Run, carried there by the next Delivery Note, because "it is the only place the Concept Deliverer can look" (`docs/conventions/exchange/` §2.2, *The CBC Run*). Today every CBC Run Reading is followed by a delivery, so the stop always arrives. Here a System Repo Reading may have no System Kit Update after it;
   - changed: today a CBC Run is born with its Read-Through Commit written as *none*, and the exchange-read Agent Skill names no span for it (`delivery/installs/pure-seed.md`, step 2). Here birth writes the start as *read to*, and the first System Repo Reading starts there.
 
 **Step 3. The Maintainer Repo compares the copies, and reads each entry.**
@@ -214,7 +214,7 @@ Four steps:
   - c. only the entries read, with no comparison;
   - d. the span walked commit by commit.
 - **Chosen:** a. The others:
-  - b finds the same as a until the first update. After it, a copy that kept a change differs from the System Kit at every System Repo Reading, and the change is found again each time;
+  - b finds the same as a until the first System Kit Update. After it, a copy that kept a change differs from the System Kit at every System Repo Reading, and the change is found again each time;
   - c misses a change with no entry, which the commit's check should have stopped, but which can still land (Failure Case 22);
   - d shows every edit on the way, and changes the gate reversed. The gate has settled those (§3, step 2); what stands at the stop is what is read.
 
@@ -230,7 +230,7 @@ Four steps:
   - compare the System Kit Attention Notes' place across the span, and read each new System Kit Attention Note;
   - judge nothing.
 - **Open:**
-  - an update lands inside the next span, so its changes to the copies would read as the System Repo's own, with no entry. They might be told apart by starting the span after the update, by marking the update's commits, or by comparing with the System Kit minus the entries, option b. Its trigger: the first update to reach a System Repo whose copies have entries, §3, step 1's trigger too;
+  - a System Kit Update lands inside the next span, so its changes to the copies would read as the System Repo's own, with no entry. They might be told apart by starting the span after the System Kit Update, by marking the System Kit Update's commits, or by comparing with the System Kit minus the entries, option b. Its trigger: the first System Kit Update to reach a System Repo whose copies have entries, §3, step 1's trigger too;
   - a System Repo with nothing new since its take still differs from the System Kit, by the changes it put back. Whether it is read again is open. Its trigger: the first return to a System Repo with nothing new since its take;
   - a System Repo Reading keeps no memory of earlier verdicts, so a change put back at the take is read like any other, and may be judged again. Whether that costs too much is open. Its trigger: the first System Repo Reading after a take that put changes back.
 - **Today:**
@@ -269,7 +269,7 @@ Four steps:
 
 - the four questions decide (`temp/common-ground-problem.md` §2.1, *Judging a change read back*), and the System Repo's own view of its change is input, never the verdict;
 - the depth comes from the reason, never the edit. A cap raised from 50 to 60 stays in the System Repo, depth a, when its reason is "our scope names are long". The same edit is a project-agnostic lesson, depth c, when its reason is "the cap counts the scope, which any repo with scopes meets". Only the recorded reason tells them apart;
-- what the System Repo gets reaches it with the next update, and its copy keeps its change either way (`temp/common-ground-problem.md` §2.1, *An update*).
+- what the System Repo gets reaches it with the next System Kit Update, and its copy keeps its change either way (`temp/common-ground-problem.md` §2.1, *An update*).
 
 Two steps:
 
@@ -345,7 +345,7 @@ Two steps:
 
 **Step 1. The Maintainer Repo makes its changes. For depth a, none.**
 
-- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth a, nothing changes in the System Kit or the project-agnostic understanding. The verdict waits in the System Repo Reading, which stays a draft until the update carries what the System Repo needs (§7, step 1). Once the verdicts are acted on here, right after judging for depth a, the System Repo Reading's stop moves into the Maintainer Repo Register as *read to* (§4, step 2).
+- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth a, nothing changes in the System Kit or the project-agnostic understanding. The verdict waits in the System Repo Reading, which stays a draft until the System Kit Update carries what the System Repo needs (§7, step 1). Once the verdicts are acted on here, right after judging for depth a, the System Repo Reading's stop moves into the Maintainer Repo Register as *read to* (§4, step 2).
 - **Options,** for depth a:
   - a. nothing changes here; the verdict waits in the System Repo Reading;
   - b. nothing changes in the System Kit, and the verdict is also kept in a lasting record, by the part it changed, so a later System Repo Reading sees when another System Repo makes the same change;
@@ -355,75 +355,75 @@ Two steps:
   - c is a speculation: one System Repo's own change, offered to System Repos that have not met it. Several Adapted Cases needing a change, but not all, is its own case (§2, row f).
 
   For the other depths, this step holds the work, each checked here later: depth b changes the System Kit's Adapted Case; depth c changes the project-agnostic understanding, after the survey; depth d fixes the Adapted Case from the project-agnostic understanding; a narrowing is marked with its why. A lesson is reworded here, never before: for every System Repo at depth b, naming no project at depth c (`temp/common-ground-problem.md` §2.1, *A project-agnostic lesson*).
-- **Adapted Case:** the Maintainer Repo's, for judging a System Repo Reading. For this step it says: a verdict of its own changes nothing here; the System Repo Reading stays a draft until the update carries what the System Repo needs; once the verdicts are acted on, the stop moves into the Maintainer Repo Register.
-- **Open:** whether depth a's verdicts are kept beyond the update, so the same change by a second System Repo is seen. Without it, two System Repos making one change are each judged alone. Its trigger: the second System Repo read back.
+- **Adapted Case:** the Maintainer Repo's, for judging a System Repo Reading. For this step it says: a verdict of its own changes nothing here; the System Repo Reading stays a draft until the System Kit Update carries what the System Repo needs; once the verdicts are acted on, the stop moves into the Maintainer Repo Register.
+- **Open:** whether depth a's verdicts are kept beyond the System Kit Update, so the same change by a second System Repo is seen. Without it, two System Repos making one change are each judged alone. Its trigger: the second System Repo read back.
 - **Today:**
   - borrowed: a declined change moves nothing in the Concept Deliverer's tree (`docs/conventions/exchange/` §6.5, *Verdicts*);
   - borrowed: a taken change is committed here, and the next delivery carries it (`docs/conventions/exchange/` §6.5). It is the other depths' path;
-  - borrowed: the why of a declined change goes in the Delivery Note and nowhere else (`docs/conventions/exchange/` §6.5). Here the System Repo Reading holds it until the update.
+  - borrowed: the why of a declined change goes in the Delivery Note and nowhere else (`docs/conventions/exchange/` §6.5). Here the System Repo Reading holds it until the System Kit Update.
 
 ## 7. Deliver
 
 Two steps:
 
-1. The update is made: the System Kit's changes, and the verdicts the System Repo can act on.
-2. The update is delivered.
+1. The System Kit Update is made: the System Kit's changes, and the verdicts the System Repo can act on.
+2. The System Kit Update is delivered.
 
-**Step 1. The update is made: the System Kit's changes, and the verdicts the System Repo can act on.**
+**Step 1. The System Kit Update is made: the System Kit's changes, and the verdicts the System Repo can act on.**
 
-- **What must happen:** when work resumes in the System Repo, after it is read back and judged, the Maintainer Repo makes its update, the agent drafting and the human deciding (`temp/common-ground-problem.md` §2.1, *An update*). An update is due when the System Kit has moved past the System Kit Version the System Repo's copies came from, or when its System Repo Reading left a verdict that goes down. It reaches the System Repo on the human's word, in a step of its own: nothing crosses without that word, and the agent may carry it. For depth a, the System Kit has not changed for this change, so the update carries it only if its verdict is one the System Repo can act on.
+- **What must happen:** when work resumes in the System Repo, after it is read back and judged, the Maintainer Repo makes its System Kit Update, the agent drafting and the human deciding (`temp/common-ground-problem.md` §2.1, *An update*). A System Kit Update is due when the System Kit has moved past the System Kit Version the System Repo's copies came from, or when its System Repo Reading left a verdict that goes down. It reaches the System Repo on the human's word, in a step of its own: nothing crosses without that word, and the agent may carry it. For depth a, the System Kit has not changed for this change, so the System Kit Update carries it only if its verdict is one the System Repo can act on.
 - **Options,** for which verdicts go down:
   - a. every verdict;
   - b. only those the System Repo can act on: unsound, misread, and a proposal that did not hold;
   - c. none; only the System Kit's changes.
-- **Options,** for when an update goes:
+- **Options,** for when a System Kit Update goes:
   - d. after every System Repo Reading, even with nothing to carry;
   - e. only when it carries something: a System Kit change, or a verdict that goes down.
 - **Chosen:** b and e. The others:
   - a sends lines that ask nothing of the System Repo. A change judged its own, with its proposal holding, needs no answer: the copy keeps it either way;
   - c leaves an unsound change unknown to the only repo that can reverse it;
-  - d sends an empty update to carry where the System Repo Reading stopped. *Read to* is in the Maintainer Repo Register now (§4, step 2), so nothing needs carrying.
+  - d sends an empty System Kit Update to carry where the System Repo Reading stopped. *Read to* is in the Maintainer Repo Register now (§4, step 2), so nothing needs carrying.
 
-  Whether an update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's System Kit Version, which it holds, against the newest. It runs when the human names a System Repo to update, or asks which are behind. A System Repo is blind, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
+  Whether a System Kit Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's System Kit Version, which it holds, against the newest. It runs when the human names a System Repo to update, or asks which are behind. A System Repo is blind, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
 
-  An update is two things: every System Kit Copy, whole, at the new System Kit Version, and a System Kit Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The System Kit Update Note holds:
+  A System Kit Update is two things: every System Kit Copy, whole, at the new System Kit Version, and a System Kit Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The System Kit Update Note holds:
   - the new System Kit Version;
   - the System Kit Version it was built from, and the System Repo's commit the System Repo Reading stopped at. The take checks both before anything moves (§8, step 1). The System Kit Update Note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
   - what changed since the System Repo's System Kit Version: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a copy cannot carry its own absence;
   - the why of each System Kit change since then, whatever its source: the System Repo Reading of this System Repo or of another, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo. With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - the verdicts that go down, from this System Repo's own System Repo Reading only, each naming the System Repo's own copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (§8, step 1);
   - a question for each line held for want of its why: what happened, to the change named. The answer comes back as an entry or a System Kit Attention Note, and the next System Repo Reading finds it;
-  - which files are taken first: the Adapted Case for taking an update, so an update is never taken by instructions older than it (`temp/common-ground-problem.md` §2.1, *An update*; Failure Case 10);
-  - the update it replaces, when one was waiting.
+  - which files are taken first: the Adapted Case for taking a System Kit Update, so a System Kit Update is never taken by instructions older than it (`temp/common-ground-problem.md` §2.1, *An update*; Failure Case 10);
+  - the System Kit Update it replaces, when one was waiting.
 
-  The System Kit Update Note is no summary of the Maintainer Repo's work, which the System Repo cannot check. It is not a record either: it goes once the update is taken, and what the System Repo decides goes in its entries.
+  The System Kit Update Note is no summary of the Maintainer Repo's work, which the System Repo cannot check. It is not a record either: it goes once the System Kit Update is taken, and what the System Repo decides goes in its entries.
 
   Nothing in it cites what the System Repo cannot open: no path, record or word of the Maintainer Repo's own. A depth-a change whose proposal held sends nothing, and the System Repo's copy keeps it.
 
-  A System Repo Reading stays open until its update is made, or until it is judged with nothing to send. One System Repo Reading is open per System Repo at a time: a System Repo Reading made while one is open extends it, and its lines are judged with the rest, so judging already done is kept. One update waits for the System Repo at a time: a newer one replaces one not yet taken, since it carries every System Kit change since the copies' System Kit Version, and the verdicts of both System Repo Readings.
-- **Adapted Case:** the Maintainer Repo's, for making an update. It loads on the human's word to update a System Repo. For this step it says:
+  A System Repo Reading stays open until its System Kit Update is made, or until it is judged with nothing to send. One System Repo Reading is open per System Repo at a time: a System Repo Reading made while one is open extends it, and its lines are judged with the rest, so judging already done is kept. One System Kit Update waits for the System Repo at a time: a newer one replaces one not yet taken, since it carries every System Kit change since the copies' System Kit Version, and the verdicts of both System Repo Readings.
+- **Adapted Case:** the Maintainer Repo's, for making a System Kit Update. It loads on the human's word to update a System Repo. For this step it says:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change or a verdict;
   - it is due when the System Repo's System Kit Version is behind the newest, or a verdict goes down; the System Kit Versions are compared when the human names a System Repo or asks which are behind;
-  - it carries every System Kit Copy whole, at the new System Kit Version, and a System Kit Update Note: that System Kit Version, the one it was built from and the System Repo Reading's stop, what changed and how many, the whys whatever their source, the verdicts from the System Repo Reading of this System Repo that it can act on, a question for each held line, what is taken first, and the update it replaces;
+  - it carries every System Kit Copy whole, at the new System Kit Version, and a System Kit Update Note: that System Kit Version, the one it was built from and the System Repo Reading's stop, what changed and how many, the whys whatever their source, the verdicts from the System Repo Reading of this System Repo that it can act on, a question for each held line, what is taken first, and the System Kit Update it replaces;
   - it cites nothing the System Repo cannot open;
   - each verdict names the System Repo's commit it judged;
-  - one System Repo Reading open per System Repo, a new System Repo Reading extending it; one update waiting, a newer one replacing it.
+  - one System Repo Reading open per System Repo, a new System Repo Reading extending it; one System Kit Update waiting, a newer one replacing it.
 - **Today:**
   - borrowed: the delivery is staged into the CBC Run's `temp/` on the reviewer's word, the CBC Run's tree checked clean first, and named by the commit it was final at (`docs/conventions/exchange/` §3.1, *Delivery Staging*);
   - borrowed: files go whole, every copy at every delivery after birth (`docs/conventions/exchange/` §3.2, *What goes*);
   - borrowed: a delivery goes after a CBC Run Reading, or when something a CBC Run holds has changed in the Concept Deliverer (`.claude/skills/exchange-deliver/SKILL.md`, its description);
   - borrowed: the Delivery Note says what changed since the Delivery Pin, as paths the CBC Run can check, and why it matters to this CBC Run; it never describes the Concept Deliverer's own practice (`docs/conventions/exchange/` §3.7, *The Delivery Note*; `.claude/skills/exchange-deliver/SKILL.md`);
   - borrowed: a verdict says the decision and what the CBC Run owes now, nothing else; no path or word of this repo's reaches it (`docs/conventions/exchange/` §3.7);
-  - borrowed: a Delivery Note may arrive alone, with no files (`docs/conventions/exchange/` §6.6, *The Delivery Note after a read*). An update of verdicts only is one;
+  - borrowed: a Delivery Note may arrive alone, with no files (`docs/conventions/exchange/` §6.6, *The Delivery Note after a read*). A System Kit Update of verdicts only is one;
   - borrowed: the Delivery Note carries what is gone (`docs/conventions/exchange/` §3.6, *Absence in a delivery*);
   - borrowed: one CBC Run Reading is open per CBC Run at a time, and a new read extends it (`.claude/skills/exchange-read/SKILL.md`, Stage 4);
-  - changed: today every read ends with a Delivery Note, even an empty one, to carry the Read-Through Commit (`docs/conventions/exchange/` §6.6). Here an update goes only when it carries something;
+  - changed: today every read ends with a Delivery Note, even an empty one, to carry the Read-Through Commit (`docs/conventions/exchange/` §6.6). Here a System Kit Update goes only when it carries something;
   - changed: today the Delivery Note gives a verdict on everything the CBC Run addressed to the Concept Deliverer (`docs/conventions/exchange/` §3.7). Here only the verdicts the System Repo can act on go down.
 
-**Step 2. The update is delivered.**
+**Step 2. The System Kit Update is delivered.**
 
-- **What must happen:** on the human's word, the update is staged into the System Repo's `temp/`, by the human or by the agent. It writes only into the System Repo's `temp/`, nowhere else there. Nothing in `temp/` is in force until the System Repo takes it (§8, step 1).
+- **What must happen:** on the human's word, the System Kit Update is staged into the System Repo's `temp/`, by the human or by the agent. It writes only into the System Repo's `temp/`, nowhere else there. Nothing in `temp/` is in force until the System Repo takes it (§8, step 1).
 - **Options,** for checking what was staged:
   - a. a second Adapted Case of the Maintainer Repo's checks it, apart from the one that delivered, as at birth;
   - b. the delivering Adapted Case compares each staged file with the new System Kit Version, once staged, and the System Repo checks the System Kit Update Note against the files when it takes them;
@@ -432,11 +432,11 @@ Two steps:
   - a was chosen at birth because the start becomes the base of every System Repo Reading (`temp/between-repos-simulation.md` §5.1, step 2). Here a wrong file is held in `temp/`, never in force, and a comparison of files leaves little mistake to share. It comes back if a staged file is found, after a take, to differ from the System Kit;
   - c leaves only the System Repo to check, and it cannot open the System Kit, so a staged file that differs from it passes.
 
-  The System Repo's tree is checked clean first, with nothing in flight. When it is not, the agent says what it found and waits for the word. An update already waiting there is replaced by the new one (step 1). The update is named by the Maintainer Repo's commit at which its files and System Kit Update Note were final, so its System Kit Version is exact.
-- **Adapted Case:** the Maintainer Repo's, for delivering an update. It loads on the human's word to deliver. For this step it says:
+  The System Repo's tree is checked clean first, with nothing in flight. When it is not, the agent says what it found and waits for the word. A System Kit Update already waiting there is replaced by the new one (step 1). The System Kit Update is named by the Maintainer Repo's commit at which its files and System Kit Update Note were final, so its System Kit Version is exact.
+- **Adapted Case:** the Maintainer Repo's, for delivering a System Kit Update. It loads on the human's word to deliver. For this step it says:
   - never stage unasked; check the System Repo's tree clean first;
-  - write only into the System Repo's `temp/`, replacing an update already waiting;
-  - name the update by the commit it was final at;
+  - write only into the System Repo's `temp/`, replacing a System Kit Update already waiting;
+  - name the System Kit Update by the commit it was final at;
   - compare each staged file with the new System Kit Version.
 - **Today:**
   - borrowed: the delivery and its Delivery Note are copied into the CBC Run's `temp/` on the reviewer's word, by the reviewer or by the agent when told; the agent never stages unasked; the tree is checked clean first; the Delivery Staging is named by the commit at which files and Delivery Note are final (`docs/conventions/exchange/` §3.1, *Delivery Staging*);
@@ -447,10 +447,10 @@ Two steps:
 
 ## 8. Take
 
-**Step 1. The System Repo takes the update.**
+**Step 1. The System Repo takes the System Kit Update.**
 
-- **What must happen:** the update is taken when the System Repo's next Plan Step opens, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: the System Repo is read back to main, judged, and its update made, delivered and taken. Then the step opens on the new copies.
-- **Options,** for when an update is taken:
+- **What must happen:** the System Kit Update is taken when the System Repo's next Plan Step opens, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: the System Repo is read back to main, judged, and its System Kit Update made, delivered and taken. Then the step opens on the new copies.
+- **Options,** for when a System Kit Update is taken:
   - a. whenever it arrives;
   - b. at a Plan Step's opening, right after a System Repo Reading that reached main;
   - c. at a Plan Step's opening, whatever was read.
@@ -459,35 +459,35 @@ Two steps:
   - e. all cleared, every copy taken whole, and what is still needed re-applied with a fresh entry.
 - **Chosen:** b and e. The others:
   - a lands in the middle of a step, which then runs on two sets of rules;
-  - c takes the update over changes not yet read. The update answered none of them, and clearing their entries loses them before they are read;
+  - c takes the System Kit Update over changes not yet read. The System Kit Update answered none of them, and clearing their entries loses them before they are read;
   - d keeps entries that say how a copy differed from the old System Kit. After the take some describe nothing, and none says how the copy differs from the new one.
 
-  The opening order follows the fixed order already set: reading back, judging, then the update (`temp/common-ground-problem.md` §2.1, *An update*). An open System Repo Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old copies first; the human may instead drop or restart it, when the update changes a rule it rests on. The take checks first, from the System Kit Update Note, what the System Repo itself can see:
-  - case 1, its main is still the System Repo Reading's stop, and its System Kit Version is the one the update was built from: the update is taken;
-  - case 2, anything else: there is no take, and the System Repo says so, which starts a System Repo Reading. The cycle runs again from *read to*: the new span is read, judged against the System Kit as it is now, the Maintainer Repo's changes made, and a new update made. It replaces the waiting one and carries its verdicts not yet sent (§7, step 1).
+  The opening order follows the fixed order already set: reading back, judging, then the System Kit Update (`temp/common-ground-problem.md` §2.1, *An update*). An open System Repo Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old copies first; the human may instead drop or restart it, when the System Kit Update changes a rule it rests on. The take checks first, from the System Kit Update Note, what the System Repo itself can see:
+  - case 1, its main is still the System Repo Reading's stop, and its System Kit Version is the one the System Kit Update was built from: the System Kit Update is taken;
+  - case 2, anything else: there is no take, and the System Repo says so, which starts a System Repo Reading. The cycle runs again from *read to*: the new span is read, judged against the System Kit as it is now, the Maintainer Repo's changes made, and a new System Kit Update made. It replaces the waiting one and carries its verdicts not yet sent (§7, step 1).
 
-  The Maintainer Repo may compare the System Repo's main with the stop before delivery too, to save a delivery bound to fail. A System Kit moved since the update was made is no reason to refuse it: the update is correct, if not the latest, and the next brings the rest.
+  The Maintainer Repo may compare the System Repo's main with the stop before delivery too, to save a delivery bound to fail. A System Kit moved since the System Kit Update was made is no reason to refuse it: the System Kit Update is correct, if not the latest, and the next brings the rest.
 
-  A gate may have fixed, merged or dropped entries the update answered. These show in the new span as changes with their entries, and are judged like any. Entries from before *read to* still in the copies are cleared at the take, and what is still needed comes back with a fresh entry, judged in the next System Repo Reading.
+  A gate may have fixed, merged or dropped entries the System Kit Update answered. These show in the new span as changes with their entries, and are judged like any. Entries from before *read to* still in the copies are cleared at the take, and what is still needed comes back with a fresh entry, judged in the next System Repo Reading.
 
   At the take, in order:
-  1. the Adapted Case for taking an update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
+  1. the Adapted Case for taking a System Kit Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the System Kit Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
   3. every copy is taken whole, at the new System Kit Version; each path gone is removed, and each renamed is moved. Every entry is cleared: the System Repo Reading reached main, so each was read and judged;
   4. what the System Repo still needs is re-applied, each with a fresh entry written against the new version: what did not fit, what it keeps, which work found it, and its proposal. An old entry's what-happened may be carried in a line. Only a change with evidence is re-applied: its old entry, or a clash with the new version. A System Kit change on a part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
   5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its entry saying which. One naming a part that changed after its commit is checked, with a System Kit Attention Note when it no longer applies. A question is answered as an entry or a System Kit Attention Note;
-  6. the new System Kit Version is recorded, with the System Repo's commit that holds it, so the next update finds its base;
-  7. the update and its System Kit Update Note are removed from `temp/`.
+  6. the new System Kit Version is recorded, with the System Repo's commit that holds it, so the next System Kit Update finds its base;
+  7. the System Kit Update and its System Kit Update Note are removed from `temp/`.
 
-  A take may be postponed, with its why. Work then goes on with the old copies, and the order runs again at the next opening: the System Repo Reading is extended, and a newer update replaces the waiting one (§7, step 1).
+  A take may be postponed, with its why. Work then goes on with the old copies, and the order runs again at the next opening: the System Repo Reading is extended, and a newer System Kit Update replaces the waiting one (§7, step 1).
 - **Adapted Case:**
-  - the System Repo's, for taking an update, itself in the update and taken first. It loads when a Plan Step opens with an update waiting. For this step it says: check first that main is still the System Repo Reading's stop and its System Kit Version is the update's base, and take nothing when either differs, saying so; take only at a Plan Step's opening, or postpone with why; take in the order above; re-apply only with evidence, each with a fresh entry;
-  - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its update taken, since the last opening? A System Repo cannot see this itself; the human answers.
+  - the System Repo's, for taking a System Kit Update, itself in the System Kit Update and taken first. It loads when a Plan Step opens with a System Kit Update waiting. For this step it says: check first that main is still the System Repo Reading's stop and its System Kit Version is the System Kit Update's base, and take nothing when either differs, saying so; take only at a Plan Step's opening, or postpone with why; take in the order above; re-apply only with evidence, each with a fresh entry;
+  - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its System Kit Update taken, since the last opening? A System Repo cannot see this itself; the human answers.
 - **Open:**
-  - finished work done under a rule the update changed may now be wrong. New work follows the new copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first update that changes a rule a finished Plan Step followed;
+  - finished work done under a rule the System Kit Update changed may now be wrong. New work follows the new copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first System Kit Update that changes a rule a finished Plan Step followed;
   - a take postponed again and again leaves the System Repo far behind. Its trigger: the first take postponed past two openings.
 
-  The take answers §3, step 1's Open on its own terms: every entry stands against the last System Kit Version taken, or birth's, and every entry goes at a take, rewritten when its difference stays. It is confirmed by that Open's trigger, the first update to reach a System Repo whose copies have entries.
+  The take answers §3, step 1's Open on its own terms: every entry stands against the last System Kit Version taken, or birth's, and every entry goes at a take, rewritten when its difference stays. It is confirmed by that Open's trigger, the first System Kit Update to reach a System Repo whose copies have entries.
 - **Today:**
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
   - borrowed: the Delivery Take's order: the Delivery Note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);

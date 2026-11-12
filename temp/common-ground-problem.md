@@ -131,9 +131,9 @@ The Maintainer Repo keeps:
 3. the System Kit, for every System Repo to work from (below, *What the System Kit holds*);
 4. its own Adapted Case of agent work, updated as the project-agnostic understanding changes;
 5. findings from System Repos. A System Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other System Repos. The Maintainer Repo reads the changes back and judges each, by its own Adapted Case of taking a change from another repo (below, *Judging a change read back*);
-6. updates for System Repos, taken when work resumes in one (below, *An update*): a System Repo born earlier gets the System Kit's changes, and judges each against its own System Kit Copy;
+6. System Kit Updates for System Repos, taken when work resumes in one (below, *An update*): a System Repo born earlier gets the System Kit's changes, and judges each against its own System Kit Copy;
 7. its own records: the history and the backlog of this work.
-8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' System Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches that System Repo by an update, judged there like any other change.
+8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' System Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches that System Repo by a System Kit Update, judged there like any other change.
 
 Each System Repo:
 
@@ -141,7 +141,7 @@ Each System Repo:
 2. keeps understanding of its own problem: one specific system's design;
 3. keeps its own records, started from the record forms in its System Kit;
 4. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back;
-5. takes updates by its copy of the Adapted Case for taking them, and may change any part of it (below, *An update*).
+5. takes System Kit Updates by its copy of the Adapted Case for taking them, and may change any part of it (below, *An update*).
 
 #### What the System Kit holds
 
@@ -149,7 +149,7 @@ Other parts of this document point here, and list none of it.
 
 Agent work and CBC system design are each held as Adapted Cases. How each splits into Adapted Cases, one or several, is open.
 
-1. agent work, written from its project-agnostic understanding for System Repos, among it how a System Repo takes an update;
+1. agent work, written from its project-agnostic understanding for System Repos, among it how a System Repo takes a System Kit Update;
 2. CBC system design, written from its project-agnostic understanding for one kind of system: backends, so far;
 3. the Defined Terms the Adapted Cases use;
 4. the forms a System Repo's records start from. They go once, at birth, and are the System Repo's own after it;
@@ -167,7 +167,7 @@ So far, three movements:
 
 Each sort of repo takes a change from the other by its own Adapted Case of one idea, how a repo takes a change from another. The Maintainer Repo's is the judging below. The System Repos' is part of the System Kit: each System Repo uses its copy and may change it, and the Maintainer Repo judges those changes like any other.
 
-A change read back is followed in six parts, from the change to the update's take, each with its rules below. Their cases are simulated one at a time (below, *A System Repo's change*).
+A change read back is followed in six parts, from the change to the System Kit Update's take, each with its rules below. Their cases are simulated one at a time (below, *A System Repo's change*).
 
 The rules of Change and Read come from one case, one Adapted Case changed in any of its texts, simulated step by step. Each rule's options, and why the others were not taken, are there (`temp/system-repo-change-simulation.md` §3, *Change*; §4, *Read*). The other cases are checked against them next.
 
@@ -181,7 +181,7 @@ The rules of Change and Read come from one case, one Adapted Case changed in any
 
 ##### Read
 
-**Reading a change.** The Maintainer Repo Register keeps, for each System Repo, where it lives and *read to*, the commit its last System Repo Reading stopped at. *Read to* moves to a System Repo Reading's stop once its verdicts are acted on, right after judging when they ask for no change, never before. Birth sets *read to* to the commit holding the copies as they arrived, so it is never empty. A System Repo has work to read when its main has moved past *read to*. It is checked when the human names it, and every System Repo is when the human asks what to read. A System Repo Reading runs from *read to* to main, so it reads only closed Plan Steps, and it writes main down before reading anything. It compares the System Kit's folders and the System Kit Attention Notes' place across that span, in the System Repo's own history, and pairs each change with its entry in the same diff. So a change with no entry is still found (Failure Case 22), and one already read is not found again. A look past main may be asked for; it moves nothing, and gives only System Kit Attention Notes. Open: an update lands inside the next span, and how its changes are told from the System Repo's own. Its trigger: the first update to reach a System Repo whose copies have entries.
+**Reading a change.** The Maintainer Repo Register keeps, for each System Repo, where it lives and *read to*, the commit its last System Repo Reading stopped at. *Read to* moves to a System Repo Reading's stop once its verdicts are acted on, right after judging when they ask for no change, never before. Birth sets *read to* to the commit holding the copies as they arrived, so it is never empty. A System Repo has work to read when its main has moved past *read to*. It is checked when the human names it, and every System Repo is when the human asks what to read. A System Repo Reading runs from *read to* to main, so it reads only closed Plan Steps, and it writes main down before reading anything. It compares the System Kit's folders and the System Kit Attention Notes' place across that span, in the System Repo's own history, and pairs each change with its entry in the same diff. So a change with no entry is still found (Failure Case 22), and one already read is not found again. A look past main may be asked for; it moves nothing, and gives only System Kit Attention Notes. Open: a System Kit Update lands inside the next span, and how its changes are told from the System Repo's own. Its trigger: the first System Kit Update to reach a System Repo whose copies have entries.
 
 **The list.** A System Repo Reading is one line per change and per System Kit Attention Note, nothing judged: the System Repo's proposal stays a proposal. Changes with one reason are listed together. The human checks that the list is whole. The System Repo Reading is a draft, and goes once its work is done.
 
@@ -211,17 +211,17 @@ How each question is answered, and by whom, is open. So is a change that arrives
 
 ##### Deliver
 
-**What an update sends.** An update sends the System Kit's changes, each with its why. The project-agnostic understanding stays home, as at birth. A change that comes from a project-agnostic lesson quotes the lesson as its why.
+**What an update sends.** A System Kit Update sends the System Kit's changes, each with its why. The project-agnostic understanding stays home, as at birth. A change that comes from a project-agnostic lesson quotes the lesson as its why.
 
 ##### Take
 
 **An update.** How a System Repo takes one is open. Seen so far:
 
-- a System Kit Copy may differ from its original, and keeps the System Repo's specific changes. This holds for an Instruction Text and its Adapted Understanding Text alike, and still holds after reading back and an update. An update never overwrites it: the System Repo judges what is new, as the Maintainer Repo judges a lesson;
-- work resuming in a System Repo goes in a fixed order: reading back, judging, then the update;
+- a System Kit Copy may differ from its original, and keeps the System Repo's specific changes. This holds for an Instruction Text and its Adapted Understanding Text alike, and still holds after reading back and a System Kit Update. A System Kit Update never overwrites it: the System Repo judges what is new, as the Maintainer Repo judges a lesson;
+- work resuming in a System Repo goes in a fixed order: reading back, judging, then the System Kit Update;
 - each System Repo says which System Kit Version its copies come from;
-- a declined update is recorded with its why, so a later reading back does not take it for a new change;
-- the instructions for taking an update are taken first, on their own, and the rest under them. Otherwise an update is taken by instructions older than it (Failure Case 10).
+- a declined System Kit Update is recorded with its why, so a later reading back does not take it for a new change;
+- the instructions for taking a System Kit Update are taken first, on their own, and the rest under them. Otherwise a System Kit Update is taken by instructions older than it (Failure Case 10).
 
 #### A System Repo's change
 
@@ -230,7 +230,7 @@ This section follows one source of the Common Ground Problem: a System Repo chan
 A change is followed in six parts: change, read, judge, act on the verdicts, deliver, and take. Its cases are of two kinds:
 
 - **What was changed:** these vary how the System Repo records its change, and how the Maintainer Repo finds it. They are the same however deep the change turns out to go, since that is known only once it is judged.
-- **How deep it goes:** these vary how the Maintainer Repo decides, and how the update is written.
+- **How deep it goes:** these vary how the Maintainer Repo decides, and how the System Kit Update is written.
 
 The cases are simulated in `temp/system-repo-change-simulation.md`, and the rules above are written from it.
 
@@ -382,7 +382,7 @@ An instruction can be copied to other repos, for the agents working there, with 
 
 A text is kept in the Maintainer Repo, or in a System Repo. Some is in both: what the Maintainer Repo ships becomes a System Kit Copy in each System Repo, and a System Repo's changes come back only when the Maintainer Repo reads them.
 
-Some failures can happen in either repo. Others happen only between the two: a System Kit Copy drifts from its original; the Maintainer Repo judges a System Repo's change wrongly, as a lesson when it was specific to the System Repo, or the other way round; work resumes in a System Repo without an update.
+Some failures can happen in either repo. Others happen only between the two: a System Kit Copy drifts from its original; the Maintainer Repo judges a System Repo's change wrongly, as a lesson when it was specific to the System Repo, or the other way round; work resumes in a System Repo without a System Kit Update.
 
 The two repos are not the two sides of §1. The human and the agent work in both.
 
@@ -463,7 +463,7 @@ The next step of this work tests these against the Maintainer Repo's history: th
 - when checking before costs more than it gives, and whether it can harm: by what reading it costs, by anchoring new thinking to old framing, or by being read as now;
 - which parts of before pay, and which aren't worth keeping. The Maintainer Repo's devlog alone is 8,773 lines, after 4 months;
 - whether the middle level is needed for every idea, or only for an idea that serves projects with different needs;
-- whether an update taken only when work resumes in a System Repo still holds when more than one project runs at once, or someone other than the human works in a System Repo;
+- whether a System Kit Update taken only when work resumes in a System Repo still holds when more than one project runs at once, or someone other than the human works in a System Repo;
 - whether part of the cost of One Home per Fact comes from levels missing or merged: an instruction written straight from a project-agnostic idea is reread whenever the idea changes.
 
 ## 7. What would show it's solved
