@@ -39,7 +39,7 @@ Each step has these fields. A field with nothing in it is left out.
 - **Chosen:** the option taken, and why the others were not.
 - **Adapted Case:** which Adapted Case runs the step, whose it is, what loads it, and what it must say for this step. Once a part is done, these are read together: they give the rules, and later the Adapted Case texts.
 - **Open:** what the step leaves undecided, each with the trigger that decides it.
-- **Today:** what is borrowed from today, and what changes, each with its source.
+- **Today:** what is borrowed from today, and what changes, each with its source. Today's things keep today's names, such as the Delivery Note.
 
 ## 2. The cases
 
