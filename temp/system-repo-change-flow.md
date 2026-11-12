@@ -145,7 +145,7 @@ The question: where does the take happen, so that main still moves only at a clo
 
 ### Option a, a take of its own, on a branch
 
-The take is run by its own Adapted Case, with no Plan Step. It cuts a branch from main at c6, makes one commit per part of the take's order, and moves main by fast-forward, as a gate does (`temp/system-repo-change-simulation.md` §8, step 1, *At the take, in order*). Its checks are its gate: main is still the Reading's stop, and the files match the Update Note. Step 2 is cut from t7 as c7. t1 commits the Update as delivered, and may go later. The t-commits are the take's own; t4 and t5 stand for one commit each per Change put back and per verdict acted on, zero or more.
+The take is run by its own Adapted Case, with no Plan Step. It cuts a branch from main at c6, makes one commit per part of the take's order, and moves main by fast-forward, as a gate does (`temp/system-repo-change-simulation.md` §8, step 1, *At the take, in order*). The take is run by the Adapted Case for taking an Update; the first thing it takes is the Update's own new version of itself, so the rest is taken by the new one (Failure Case 10). Its checks are its gate: main is still the Reading's stop, and the files match the Update Note. Step 2 is cut from c13 as c14. c7 commits the Update as delivered, and may go later. c10 and c11 stand for one commit each per Change put back and per verdict acted on, zero or more.
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -170,23 +170,23 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                                     ┊
                                                     ┊
                                                     │
- open: does                                   ┌     ├─ cut ─▶ t1 ●  the Update as delivered   ◀──── 9. Take: main is still c6, so it runs
+ open: does                                   ┌     ├─ cut ─▶ c7 ●  the Update as delivered   ◀──── 9. Take, by its Adapted Case: main is still c6
  the next Reading                             ┆     │            │
- cover t1 to t7?                              ┆     │         t2 ●  the take's Adapted Case   ◀──── taken first, alone
+ cover c7 to c13?                             ┆     │         c8 ●  its new Adapted Case      ◀──── the Update's own, taken first; it runs the rest
                                               ┆     │            ┊                            ┄┄┄┄┄ the files checked against the Update Note; no commit
-                                              ┆     │         t3 ●  every Copy at Version 2   ◀──── Copies taken whole; every Record cleared
+                                              ┆     │         c9 ●  every Copy at Version 2   ◀──── Copies taken whole; every Record cleared
                                               ┆     │            │
-                                              ┆     │         t4 ●  a Change put back         ◀──── one per Change, each with a fresh Record
+                                              ┆     │        c10 ●  a Change put back         ◀──── one per Change, each with a fresh Record
                                               ┆     │            │
-                                              ┆     │         t5 ●  a verdict acted on        ◀──── zero or more: unsound reversed or kept, a question answered
+                                              ┆     │        c11 ●  a verdict acted on        ◀──── zero or more: unsound reversed or kept, a question answered
                                               ┆     │            │
-                                              ┆     │         t6 ●  Version 2 recorded        ◀──── with the commit that holds it, t3
+                                              ┆     │        c12 ●  Version 2 recorded        ◀──── with the commit that holds it, c9
                                               ┆     │            │
-                                              └     │         t7 ●  the Update removed        ◀──── the Update and the Update Note leave temp/
+                                              └     │        c13 ●  the Update removed        ◀──── the Update and the Update Note leave temp/
                                                     │            │
-                                                 t7 ● ◀──────────┘                            ◀──── main moves to t7 by fast-forward, the take's checks its gate
+                                                c13 ● ◀──────────┘                            ◀──── main moves to c13 by fast-forward, the take's checks its gate
                                                     │
-                                                    └─ cut ─▶ c7 ●  work, on Version 2        ◀──── 10. step 2 opens on Version 2
+                                                    └─ cut ─▶ c14 ● work, on Version 2        ◀──── 10. step 2 opens on Version 2
 ```
 
 ## 4. After, item 1b
