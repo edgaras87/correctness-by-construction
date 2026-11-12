@@ -87,7 +87,7 @@ Two steps:
 
 **Step 1. The work meets a Copy that does not fit, and the Copy is changed, with its Record.**
 
-- **What must happen:** during its own work, the System Repo finds that a Copy does not fit what happened. The human decides the Change, the agent proposing. It is made then, and its Record is written with it. Either may be edited or reversed later, the Record with it.
+- **What must happen:** during its own work, the System Repo finds that a Copy does not fit what happened. The human decides the Change, the agent proposing. It is made then, and its Record is written with it. The Change may be edited or reversed later, its Record with it.
 - **Options:**
   - a. the Copy is changed when the work shows it does not fit, and its Record written with it;
   - b. the Copy is changed ahead, for what the agent foresees;
@@ -179,7 +179,7 @@ Four steps:
 - **Chosen:** b and d. The others:
   - a reads Changes the gate has not yet looked at, which the System Repo may still edit or reverse (§3, step 2);
   - c depends on the human remembering, and the Register then says a System Repo was read when it has new work (Failure Case 2);
-  - e alone never reads a System Repo whose work does not resume, so what it learned is lost (Failure Case 1). It stands as it is, for every System Repo (`temp/common-ground-problem.md` §2.1, *An update*), and d adds the Reading between.
+  - e alone never reads a System Repo whose work does not resume, so what it learned is lost (Failure Case 1). It stands as it is, for every System Repo (`temp/common-ground-problem.md` §2.1, *An update*), and d adds Readings between two resumptions of work.
 
   Main moves only at a gate's close, so main is always at a closed gate, and nothing on it waits for a gate. Work past it, in a branch or not yet committed, is left for the next Reading.
 
@@ -206,10 +206,10 @@ Four steps:
   - b. in the Register, a *read to* commit beside where each System Repo lives;
   - c. in the Maintainer Repo, as the first line of each Reading, every Reading kept.
 - **Chosen:** b. The others:
-  - a fails when a Reading has no Update after it, which step 1's Readings between allow: the System Repo still holds the old stop, and the next Reading finds again what was read;
-  - c keeps every Reading only for one line.
+  - a fails when a Reading has no Update after it, which step 1 allows, since a Reading may come between two resumptions of work: the System Repo still holds the old stop, and the next Reading finds again what was read;
+  - c keeps every Reading for good, only for its first line.
 
-  The start is the Register's *read to*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with *read to* set to the start, the commit holding the Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Change, so it stands as read. So every Reading, the first among them, starts at *read to*, and no "none" needs a path of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation). The stop is the System Repo's main, written as the open Reading's first line before anything is read, so a commit landing during the Reading falls into the next one. It moves into the Register once the Reading's verdicts are acted on in the Maintainer Repo (§6, step 1), right after judging when they ask for no change, never before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all in the span is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
+  The start is the Register's *read to*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with *read to* set to the start, the commit holding the Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Change, so it stands as read. So every Reading, the first among them, starts at *read to*, and a System Repo never read needs no rule of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation). The stop is the System Repo's main, written as the open Reading's first line before anything is read, so a commit landing during the Reading falls into the next one. It moves into the Register once the Reading's verdicts are acted on in the Maintainer Repo (§6, step 1), right after judging when they ask for no change, never before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all in the span is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - the start is the Register's *read to*;
   - the stop is the System Repo's main, written as the Reading's first line before anything is read;
@@ -303,7 +303,7 @@ Two steps:
   - d. judged from the comparison alone;
   - e. held, until the human brings its why from the System Repo.
 - **Chosen:** a and e. The others:
-  - b lets the agent's agreement with the proposal pass unchecked: two readings agreeing is not a verdict (Failure Case 20);
+  - b lets the agent's agreement with the proposal pass unchecked: two views agreeing is not a verdict (Failure Case 20);
   - c leaves the human to read every text the questions need, which the agent reads faster, and with nothing written down to check;
   - d judges on a guess at the why (Failure Case 22).
 
@@ -400,12 +400,12 @@ Two steps:
   - c leaves an unsound Change unknown to the only repo that can reverse it;
   - d sends an empty Update to carry where the Reading stopped. *Read to* is in the Register now (§4, step 2), so nothing needs carrying.
 
-  Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. It runs when the human names a System Repo to update, or asks which are behind. A System Repo is blind, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
+  Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. It runs when the human names a System Repo to update, or asks which are behind. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
 
   An Update is two things: every Copy, whole, at the new Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
   - the new Version;
   - the Version it was built from, and the System Repo's commit the Reading stopped at. The take checks both before anything moves (§8, step 1). The Update Note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
-  - what changed since the System Repo's Version: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a Copy cannot carry its own absence;
+  - what changed since the System Repo's Version: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a file that is gone cannot say so itself;
   - the why of each System Kit change since then, whatever its source: the Reading of this System Repo or of another, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo. With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - the verdicts that go down, from this System Repo's own Reading only, each naming the System Repo's own Copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (§8, step 1);
   - a question for each line held for want of its why: what happened, to the Change named. The answer comes back as a Record or an Attention Note, and the next Reading finds it;
