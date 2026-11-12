@@ -26,7 +26,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-11.
+     Last touched: 2026-11-12.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
@@ -2012,6 +2012,72 @@ The questions the reviewer was asking, put by the agent:
 #### What the reviewer took
 
 The scenarios are frozen, and one case, "A System Repo's change", is followed in two halves, recorded and read, then decided and updated (`d9cd5ca`, `fc15327`, `61f8770`). A Project-Agnostic Understanding Text narrows and never shrinks (`9f6cc48`). The case is simulated step by step in `temp/system-repo-change-simulation.md`, by a scope rather than an example, with its cases table (`75808bd`, `698878d`, `98929f7`). A copy changes with its entry in the Adapted Understanding Text's footer, checked at the commit; each step names its Adapted Case (`5226a0e`, `22d9624`, `c15c23f`). The gate keeps, edits or reverses each change, and a note carries only what has no change (`a357418`, `eb94bc9`). "Read to" lives in the register, set by birth (`3ea48da`, `22b803c`). The first half's rules are written from the steps (`8412f15`). Judging gains question 0 and reads substance; the verdict is the Maintainer Repo's (`4bf6aa9`, `0af84ad`, `f037caa`). The update carries the whole System Kit and the verdicts that can be acted on, is delivered in a step, and is taken at a Plan Step's opening, entries cleared (`a3a597e` to `05050ed`). "Read to" moves once the verdicts are acted on; the take checks its own base, case 1 or case 2 (`b2f458c`, `d124fd7`). The six parts are mapped (`0b24556`). Next: the halves give way to the six parts when the rules are written from both.
+
+### 2026-11-11 and 2026-11-12
+
+#### What the reviewer said
+
+- **Six parts, not halves:** "what about droping the split and making it into six parts which table we have in "## 1. How it is worked" of "system-repo-change-simulation"?"
+- **Alike cases:** "i think we could drop or merge something. for example having different cases where "both halves of one Adapted Case" and "an Instruction Text only" as sep is no point anymore, doesnt it? it does not matter if we have change entries in Adaped Case , right?" And: "it quit big change, maybe we should write down how we gonna do this? where we start and what order?"
+- **The rule headings:** "why we keeping in "##### Recording and reading" and "##### Deciding and updating" in common-ground-problem? should we split in same way as in simulation? why?"
+- **Always read first:** "if update is delivered to repo,where we dont need to read, that means that repo dont have repo specifics? or i missing something. lets consider the case, when we deliver update to repo, which we not read. so that repo should be with same system kit moment the change was done and also work was not moved on. can that case be without any change entries? should i comepletle ignore that case and always read, especialy when i return on prev repo which was paused?"
+- **Specifics written back:** "we get reading in which there is finding which are project specific. in judge we confirm those and write those back. system repo itself writes those back to system copy when it takes updates and write entries again. that means we have updated and we can continue working." And: "maybe only one case where after we took update and rewrote specific to project changes with entries and nothing have change we dont do reading and judging as nothing really have changes even though system kit copy if different. but that we may want to leave as open question for practice to test and not overcomplicate here"
+- **No memory of verdicts:** "lets go b. it is same thing we just talked. in this modeling lets leave just normal read without memory of what was done before"
+- **New Defined Terms:** "Do we need these new terms: moment ..., change ..., entry ...? what could they be?"
+- **Version, change and record:** ""System Kit Version" i think is good, but should it be more correct if we say "System Kit Copy Version", or "System Kit Version" works too?" And: "Now "Change Entry" is does not say alot, doesnt it? also definition is not quite right too. we write entry in Adapted Case understanding text. System Kit does not has footer. But then hat means all parts has to have Adapted Understanding Text, not only instructions. this could be true, but we not know that now. maybe in definition tell that." And: "About change, maybe we should have Adapted Case Change where it is only about changes of those which came wih System Kit copy? current version?"
+- **The two notes:** ""System Kit Note" is actualy a "System Kit Change Note" as todo, doesnt it? And "System Kit Update Note" is what maintainer write as note when we deliver update to take." And: "should we say, then attention note or what?"
+- **Whose register:** "what about "Maintainer's System Repo Register"?"
+- **Long names:** "Is it because of long name? how that could be solved? we cant use just Change, doesnt we? because if we later will need again new Change it will be ambiguas?" And: "i dont see here anything better actually. we still need to distinct kit from copy, copy from change, record from change... so i think those stays. also does this more clear for agent and it will not mixed up things?"
+- **The steps again:** "i think we will go each step again to confirm or fix each again after this commit plan."
+
+#### What the reviewer said, edited
+
+The same words, with grammar and spelling fixed, the meaning kept:
+
+- **Six parts, not halves:** "What about dropping the split and making it into the six parts, from the table in "## 1. How it is worked" of the simulation?"
+- **Alike cases:** "I think we could drop or merge something. For example, having "both halves of one Adapted Case" and "an Instruction Text only" as separate cases has no point any more, does it? It does not matter where in the Adapted Case the change entries are, right?" And: "It is quite a big change. Maybe we should write down how we are going to do it: where we start, and in what order?"
+- **The rule headings:** "Why are we keeping "Recording and reading" and "Deciding and updating" in the problem file? Should we split them the same way as the simulation? Why?"
+- **Always read first:** "If an update is delivered to a repo we did not need to read, does that mean the repo has no specifics of its own, or am I missing something? Consider delivering an update to a repo we have not read: it would still be on the System Kit version the change was made from, and its work would not have moved on. Can that case have no change entries at all? Should I ignore that case completely and always read, especially when I return to a repo that was paused?"
+- **Specifics written back:** "We get a reading with findings that are project-specific. In judging, we confirm those, and they are written back: the System Repo itself writes them back into its System Kit Copy when it takes the update, and writes their entries again. Then the update is done, and we can continue working." And: "Maybe there is one case: after we took the update and rewrote the project-specific changes with their entries, and nothing else changed, we don't read and judge, since nothing has really changed, even though the System Kit Copy differs. But we may want to leave that as an open question for practice to test, and not overcomplicate it here."
+- **No memory of verdicts:** "Let's go with b. It is the same thing we just talked about. In this model, let's keep a normal reading, with no memory of what was done before."
+- **New Defined Terms:** "Do we need these new terms: moment, change, entry? What could they be?"
+- **Version, change and record:** ""System Kit Version" is good, I think. But would "System Kit Copy Version" be more correct, or does "System Kit Version" work too?" And: ""Change Entry" doesn't say much, does it? The definition isn't quite right either: we write the entry in the Adapted Case's Adapted Understanding Text, and the System Kit has no footer. That would mean every part has to have an Adapted Understanding Text, not only the instructions. That could be true, but we don't know it yet; maybe the definition should say so." And: "About change: maybe we should have Adapted Case Change, only for changes to what came with a System Kit Copy, its current version?"
+- **The two notes:** ""System Kit Note" is actually a "System Kit Change Note", like a TODO, isn't it? And "System Kit Update Note" is what the Maintainer Repo writes as a note when we deliver an update to take." And: "Should we call it an attention note, then, or what?"
+- **Whose register:** "What about "Maintainer's System Repo Register"?"
+- **Long names:** "Is it because of the long names? How could that be solved? We can't use just Change, can we? Because if we later need another Change, it will be ambiguous." And: "I don't actually see anything better here. We still need to tell kit from copy, copy from change, and record from change, so I think those stay. Also, is this clearer for the agent, so it won't mix things up?"
+- **The steps again:** "I think we will go through each step again, to confirm or fix it, after this commit plan."
+
+#### What the reviewer asked, as the agent would ask it
+
+The questions the reviewer was asking, put by the agent:
+
+1. Should the simulation drop its two halves and run in the six parts its own table maps?
+2. Do cases that differ only in which text of an Adapted Case changed still need rows of their own, given the entry sits in one place?
+3. Should a change this size be planned commit by commit before it starts?
+4. Should the problem file's rules be grouped by the same six parts, and why were the two groups kept?
+5. Is there ever an update without a reading, or is every update preceded by one, even for a paused repo?
+6. Who puts a System Repo's own changes back after a take, and does the next reading need to know they were judged before?
+7. Do "moment", "change" and "entry" need Defined Terms, and what are they?
+8. Whose version is it, the System Kit's or the copy's; where does a record sit for a copy outside any Adapted Case; and how narrow is the change?
+9. What should the System Repo's note and the update's note each be called?
+10. Should the register's name say whose it is?
+11. Can the long names be made shorter without becoming ambiguous, and are they clearer for the agent?
+
+#### What the agent added
+
+- **"Half" named two things:** a part of the case, and one text of an Adapted Case. The six parts removed both.
+- **Every update already follows a reading:** the Deliver step makes one only after the System Repo is read and judged, so no case of an update without a reading exists.
+- **The agent proposed that the Maintainer Repo build each update with the System Repo's own changes in it,** so the take is a plain install. The reviewer kept the System Repo putting them back itself, as Take step 4 says.
+- **Step 7 decided nothing** once the reading kept no memory of verdicts, so its questions became Opens in Read, step 3.
+- **"Note" meant two things in the same steps:** what a System Repo writes, and what goes with an update.
+- **"System Kit Copy Version" would name one copy's version,** which changes with every edit; the version is the whole System Kit's.
+- **"Adapted Case Change" would leave out the Defined Terms and the description,** which the System Kit holds too.
+- **A name built on another carries it whole,** so "Maintainer's" became Maintainer Repo Register, and shorter names such as Local Change were weighed against the long ones.
+- **Misreadings:** the agent first kept the problem file's two rule groups as work done twice; counted the cases table by eye, "10 or 11", where 12 was right; and offered a step 7 that the simulation's own Take step had already contradicted.
+
+#### What the reviewer took
+
+The simulation runs in six parts, its alike cases merged, under a commit plan (`d875239` to `5af546f`); the problem file's rules sit under the same parts (`0266d9d`). Every update follows a System Repo Reading, the System Repo puts its own changes back at the take, and a reading keeps no memory of earlier verdicts; step 7 became two Opens left to practice (`63de51b`). Eight Defined Terms and a label are defined: System Kit Version, System Kit Copy Change, System Kit Copy Change Record, System Kit Attention Note, System Kit Update, System Kit Update Note, Maintainer Repo Register with *read to*, and System Repo Reading (`514b706` to `e738413`), and the two files use them (`15e7b32` to `8b96309`). The long names stay, since they keep kit, copy, change and record apart. Next: each step gone through again, then depth c, then the rules rewritten from the steps.
 
 ## 32. The agent's memory
 
