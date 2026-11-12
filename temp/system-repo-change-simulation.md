@@ -69,6 +69,8 @@ Two steps:
 1. The work meets a copy that does not fit, and the copy is changed, with its System Kit Copy Change Record.
 2. The Plan Step's gate: the step's System Kit Copy Changes are compared with their System Kit Copy Change Records, and each is kept, edited or reversed, and linked when they share a reason.
 
+**The System Kit Attention Note.** Its rule: (`temp/common-ground-problem.md` §2.1, *A System Kit Attention Note*). A System Kit Attention Note carries what has no System Kit Copy Change to carry it: a misfit with none made, a doubt about a line left as it is, something the System Kit lacked, a copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. System Kit Attention Notes are kept in one known place in the System Repo's records. A System Kit Attention Note never lists a System Kit Copy Change: the System Kit Copy Change Record already says it, and a second line would have to follow every edit and reversal. One about a System Kit Copy Change points at its System Kit Copy Change Record. A System Repo Reading reads the System Kit Attention Notes as well as the copies (§4, step 3).
+
 **Step 1. The work meets a copy that does not fit, and the copy is changed, with its System Kit Copy Change Record.**
 
 - **What must happen:** during its own work, the System Repo finds that a System Kit Copy does not fit what happened. The human decides the System Kit Copy Change, the agent proposing. It is made then, and its System Kit Copy Change Record is written with it. Either may be edited or reversed later, the System Kit Copy Change Record with it.
@@ -98,7 +100,7 @@ Two steps:
   - the System Kit Copy Change Record is written with the System Kit Copy Change, with its four parts, and goes in the same commit;
   - what happened is written concretely, in the System Repo's own words;
   - whether the System Kit Copy Change is its own or any repo's is a proposal, never a verdict;
-  - a System Kit Attention Note, written at any time, carries only what has no System Kit Copy Change; one about a System Kit Copy Change points at its System Kit Copy Change Record, and never retells it (step 2).
+  - a System Kit Attention Note, written at any time, carries only what has no System Kit Copy Change (above, *The System Kit Attention Note*).
 - **Open:** which System Kit Version a System Kit Copy Change Record is written against, and whether one goes once a System Kit Update takes its System Kit Copy Change in. Before the first System Kit Update, every System Kit Copy Change Record stands against the System Kit Version the copies arrived at. Its trigger: the first System Kit Update to reach a System Repo whose copies have System Kit Copy Change Records.
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
@@ -126,8 +128,6 @@ Two steps:
   A System Kit Copy Change kept as it is needs nothing more. One edited gets its System Kit Copy Change Record rewritten. When System Kit Copy Changes share one reason, the reason is written in full in one System Kit Copy Change Record, and each other one says how its own copy was affected and points at that one. If the one holding the reason is reversed, the reason moves to one that stays, and the others point there.
 
   The gate also asks once: did an Adapted Case used in this step not fit, with no System Kit Copy Change made? A misfit worked around without a System Kit Copy Change leaves nothing for the comparison to find. The human, who saw every session of the step, answers. Each misfit named is written as a System Kit Attention Note for the Maintainer Repo.
-
-  A System Kit Attention Note carries what has no System Kit Copy Change to carry it: a misfit with none made, a doubt about a line left as it is, something the System Kit lacked, a copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. System Kit Attention Notes are kept in one known place in the System Repo's records. A System Kit Attention Note never lists a System Kit Copy Change: the System Kit Copy Change Record already says it, and a second line would have to follow every edit and reversal. One about a System Kit Copy Change points at its System Kit Copy Change Record, and never retells it. A System Repo Reading reads the System Kit Attention Notes as well as the copies (§4, step 3).
 - **Adapted Case:** the System Repo's, for closing a Plan Step, its gate list. It loads when the Plan Step closes. For this step it says:
   - compare the copies against where the Plan Step began, and check each System Kit Copy Change has a System Kit Copy Change Record that says it;
   - the human decides each System Kit Copy Change: kept, edited or reversed, its System Kit Copy Change Record with it;
