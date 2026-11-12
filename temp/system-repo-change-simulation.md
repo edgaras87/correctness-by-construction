@@ -96,7 +96,7 @@ Two steps:
 - **Chosen:** a. The others:
   - b is a speculation, with nothing that happened behind it;
   - c gains nothing by waiting. A Record lets any Change be edited or reversed later. And until the gate, the Copy would say what the System Repo no longer does;
-  - d leaves the Copy saying it for good, and the next agent reads the Copy, not the records.
+  - d leaves the Copy saying it for good, and the next agent reads the Copy, not the System Repo's records.
 
   **Where it sits.** The Record goes in a footer of the Copy's Adapted Understanding Text, which is not loaded for work. So the Change and its why land in one diff, and the why cannot lose its Copy. When only an Instruction Text changes, its Record goes there too.
 
@@ -490,7 +490,7 @@ Two steps:
   1. the Adapted Case for taking an Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
   3. every Copy is taken whole, at the new Version; each path gone is removed, and each renamed is moved. Every Record is cleared: the Reading reached main, so each was read and judged;
-  4. what the System Repo still needs is re-applied, each with a fresh Record written against the new version: what did not fit, what it keeps, which work found it, and its proposal. An old Record's what-happened may be carried in a line. Only a Change with evidence is re-applied: its old one, or a clash with the new version. A System Kit change on a part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
+  4. what the System Repo still needs is re-applied, each with a fresh Record written against the new Version: what did not fit, what it keeps, which work found it, and its proposal. An old Record's what-happened may be carried in a line. Only a Change with evidence is re-applied: its old one, or a clash with the new Version. A System Kit change on a part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
   5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its Record saying which. One naming a part that changed after its commit is checked, with an Attention Note when it no longer applies. A question is answered as a Record or an Attention Note;
   6. the new Version is recorded, with the System Repo's commit that holds it, so the next Update finds its base;
   7. the Update and its Update Note are removed from `temp/`.
