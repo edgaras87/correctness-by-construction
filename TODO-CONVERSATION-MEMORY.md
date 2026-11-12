@@ -2319,3 +2319,100 @@ The question the reviewer was asking, put by the agent:
 #### What the reviewer took
 
 Kept for the trial: the simulation is its natural input.
+
+## 34. Refining a document
+
+Items: "Design how a document is refined: a broad Adapted Case, an
+Output Shape read after the work, and how each corrects the other";
+and "Decide where small work is gated when it is too small for a
+Plan Step".
+
+### 2026-11-12
+
+#### What the reviewer asked
+
+The agent had run nine checks on the simulation, chosen by itself,
+on the reviewer's ask. The reviewer: "what about those checks we
+applied to simulation doc, should we note them? i thinking to have
+later Adapted Case for refining docs, which i run by my ask for now.
+Maybe we should draft one now?"
+
+Then, once the checks were noted: "i thinking to have this idea we
+not yet dealt about output shape. i thinking we should have it
+applies to doc refinement, where rule has this broader description
+of refinement without specific points and telling to find out agent
+itself. that, when results comes, we check with the shape. we update
+shape if needed by outputs if something new is found. we rerun
+refinement checks if something from shape is missing. this kind of
+needs plan step or something similar where we put gate. or as some
+sep work, which could be done during the plan step, when we feel
+that doc needs refinement. if this is not plan step, then we need
+work idea with gates at the end, which looks like plan step but it
+isnt because it is too small for one. what u think on this and how
+we should store this? as multiple todos? with conversation mem?"
+
+#### What the reviewer asked, edited
+
+The same words, with grammar and spelling fixed, the meaning kept:
+
+- "What about the checks we applied to the simulation document:
+  should we note them? I am thinking of having, later, an Adapted
+  Case for refining documents, which for now I run by asking. Maybe
+  we should draft one now?"
+- "There is an idea about the Output Shape we have not dealt with
+  yet. I think it should apply to refining a document. The rule
+  holds a broad description of refinement, with no specific points,
+  and tells the agent to find them out itself. Then, when the
+  results come, we check them against the shape. We update the shape
+  from the outputs when something new is found. We run the
+  refinement's checks again when something from the shape is
+  missing."
+- "This needs a Plan Step, or something like it, where we put a
+  gate. Or it is separate work, done during a Plan Step, when we
+  feel a document needs refining. If it is not a Plan Step, we need
+  a kind of work with gates at its end, which looks like a Plan Step
+  but is not one, because it is too small for one."
+- "What do you think of this, and how should we store it? As several
+  TODO items? With Conversation Memory?"
+
+#### What the reviewer asked, as the agent would ask it
+
+The questions the reviewer was asking, put by the agent:
+
+1. Should the checks run on the simulation be written down, and
+   should an Adapted Case for refining a document be drafted from
+   them now?
+2. Should a refinement work as an Output Shape does? The Adapted
+   Case stays broad and names no checks. The Output Shape is read
+   against the results. What the results hold and the Output Shape
+   lacks goes into it. What the Output Shape holds and the results
+   lack is checked again.
+3. Where is that Output Shape read? A refinement is too small to be
+   a Plan Step, yet it needs a gate at its end.
+4. Is this one TODO item or several, and is the talk saved?
+
+#### What the agent showed
+
+- **Draft later, note now:** one run on one document would give a
+  case that copies that run. The nine checks went into the devlog
+  entry, and a TODO item waits for a second document.
+- **Most of the idea exists:** an Output Shape is read at a Plan
+  Step Gate only, so it does not steer the work, and a difference
+  may end with the Output Shape changing
+  (`docs/conventions/shapes/` §2.3, *Not a convention*; §3, *Where an Output Shape lives*).
+  The nine checks are a first draft of a refinement's Output Shape.
+- **What the run showed:** the walk of one case through every part
+  found the contradiction and the gaps. The scripts found none.
+- **One caution:** an agent that reads the Output Shape before it
+  works follows it as a list, and stops looking past it.
+- **The new part is the gate,** and it is wider than refinement:
+  any small work that needs a check at its end has it. A commit
+  plan's close is one candidate. The agent would not design the
+  small work now.
+
+#### What the reviewer took
+
+Two TODO items and this section: the refinement's item rewritten to
+hold the Adapted Case, the Output Shape and how each corrects the
+other; a second item for where small work is gated. The Adapted Case
+is not drafted yet.
