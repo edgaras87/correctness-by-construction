@@ -114,6 +114,7 @@ Two steps:
 - **Adapted Case:** the System Repo's, for changing a Copy, itself a Copy. It loads when a Copy, or the Attention Notes' place, is touched. For this step it says:
   - a Copy changes only when the work shows it does not fit, never ahead;
   - the Record is written with the Change, with its four parts, and goes in the same commit;
+  - the Record sits in a footer of the Copy's Adapted Understanding Text, and says the Change as it stands: a later edit rewrites it;
   - a commit that changes a Copy and not its Record is stopped. A take is not a Change, and passes;
   - what happened is written concretely, in the System Repo's own words;
   - whether the Change is its own or any repo's is a proposal, never a verdict;
@@ -249,6 +250,7 @@ Four steps:
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - compare each Copy from *read to* to the stop, in the System Repo's history;
   - pair each Change with its Record; mark one with none "no entry";
+  - read a Record changed with no Change as a change of its why;
   - compare the Attention Notes' place across the span, and read each new Attention Note;
   - judge nothing.
 - **Open:**
@@ -278,6 +280,7 @@ Four steps:
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - one line per Change and per Attention Note, nothing judged;
   - linked Changes listed together, under their reason;
+  - a line holds what step 3 found, the proposal marked as one; an Attention Note about a Change sits with it;
   - the human checks the list is whole; the stop moves into the Register once the verdicts are acted on.
 - **Today:**
   - borrowed: one line per item, what it is and where, nothing decided (`.claude/skills/exchange-read/SKILL.md`, Stage 4 and *Gates*);
@@ -365,6 +368,7 @@ Two steps:
   **The agreement.** The agreement is said in one line, "the proposal holds" or "the proposal does not hold, because …". An unsound verdict says what the Change breaks or leaves unfixed; whether to reverse it is the System Repo's decision, once the verdict reaches it (§7, step 1).
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says:
   - one verdict per line or part: its answer, its why, and whether the proposal holds;
+  - the answer is one of the eight verdicts listed above; an unsound one says what the Change breaks or leaves unfixed;
   - lines under one reason share a verdict, each saying how its own Copy is affected.
 - **Open:** whether an unsound verdict offers a fix. Its trigger: the first unsound verdict.
 - **Today:**
