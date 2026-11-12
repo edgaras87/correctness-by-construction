@@ -213,7 +213,7 @@ Four steps:
 
   **Where it stops.** The stop is the System Repo's main, written as the open Reading's first line before anything is read, so a commit landing during the Reading falls into the next one.
 
-  **When the stop moves.** The stop moves into the Register once the Reading's verdicts are acted on in the Maintainer Repo (§6, step 1), right after judging when they ask for no change, never before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all in the span is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
+  **When the stop moves.** The stop moves into the Register once the Reading's verdicts are acted on in the Maintainer Repo (§6, step 1). When they ask for no change, that is right after judging. It never moves before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all in the span is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - the start is the Register's *read to*;
   - the stop is the System Repo's main, written as the Reading's first line before anything is read;
@@ -268,7 +268,7 @@ Four steps:
   - c. only the Changes the System Repo proposed as any repo's are listed;
   - d. one line per Copy, its Changes summed.
 - **Chosen:** a. The others:
-  - b judges before the whole list is seen, so Changes with one reason are judged apart, and each verdict leans on the System Repo's proposal (Failure Case 20). Listing is cheap and judging is not, so the list is checked whole first;
+  - b judges before the whole list is seen, so Changes with one reason are judged apart, and each verdict tends to follow the System Repo's proposal (Failure Case 20). Listing is cheap and judging is not, so the list is checked whole first;
   - c takes the proposal for the verdict, and a lesson for every repo stays in one System Repo (Failure Case 20);
   - d merges two Changes to one Copy, and one of their reasons is lost.
 
@@ -312,7 +312,7 @@ Two steps:
   - d judges on a guess at the why (Failure Case 22).
 
   **What each question reads:**
-  - question 0, the Change is sound: what happened, the Change, and the original part. Does it fix what happened, without breaking something the Copy did? An unsound Change spreads nowhere: the depth questions are not asked, and the verdict says why. The Copy is the System Repo's own, so the Change stays there unless the System Repo reverses it;
+  - question 0, the Change is sound: what happened, the Change, and the original part. Does it fix what happened, without breaking something the Copy did? An unsound Change goes no further: the depth questions are not asked, and the verdict says why. The Copy is the System Repo's own, so the Change stays there unless the System Repo reverses it;
   - question 1, the Copy already said it: the original part, in the Version the Copies came from, beside the Change. When the System Kit has moved since, its part as it is now is read too: a change the System Kit has since made the same way is covered, and nothing new is made, so one lesson is not made twice;
   - question 2, specific to that System Repo's problem: what happened, the System Repo's proposal, and its framing of its problem;
   - question 3, the project-agnostic understanding already holds it: the Project-Agnostic Understanding Text the Adapted Case narrows;
@@ -322,7 +322,7 @@ Two steps:
 
   **Not from the wording.** A question is answered from what the Change does and why, never from its wording. The System Repo writes in its own words on purpose (§3, step 1), and making a lesson general is rewording, after judging (§6, step 1). A Change worded for one project may still be a lesson for every repo. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. It loads when the human starts judging a Reading whose list was checked whole. For this step it says:
-  - question 0 first: does the Change fix what happened, without breaking something the Copy did? An unsound Change spreads nowhere, and its verdict says why;
+  - question 0 first: does the Change fix what happened, without breaking something the Copy did? An unsound Change goes no further, and its verdict says why;
   - then the four questions, in order, until one holds; for each, what it reads;
   - a line whose parts answer differently is split, each part judged on its own;
   - a question is answered from what the Change does and why, never from its wording;
@@ -452,7 +452,7 @@ Two steps:
   - a was chosen at birth because the start becomes the base of every Reading (`temp/between-repos-simulation.md` §5.1, step 2). Here a wrong file is held in `temp/`, never in force, and a comparison of files leaves little mistake to share. It comes back if a staged file is found, after a take, to differ from the System Kit;
   - c leaves only the System Repo to check, and it cannot open the System Kit, so a staged file that differs from it passes.
 
-  **Before staging.** The System Repo's tree is checked clean first, with nothing in flight. When it is not, the agent says what it found and waits for the word. An Update already waiting there is replaced by the new one (step 1). The Update is named by the Maintainer Repo's commit at which its files and Update Note were final, so its Version is exact.
+  **Before staging.** The System Repo's tree is checked clean first, with no work under way. When it is not, the agent says what it found and waits for the word. An Update already waiting there is replaced by the new one (step 1). The Update is named by the Maintainer Repo's commit at which its files and Update Note were final, so its Version is exact.
 - **Adapted Case:** the Maintainer Repo's, for delivering an Update. It loads on the human's word to deliver. For this step it says:
   - never stage unasked; check the System Repo's tree clean first;
   - write only into the System Repo's `temp/`, replacing an Update already waiting;
