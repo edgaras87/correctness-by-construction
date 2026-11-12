@@ -157,12 +157,12 @@ Four steps:
   - a. at any commit, the System Repo's latest;
   - b. at a closed Plan Step's gate, the last one on main.
 - **Options,** for how the Maintainer Repo learns:
-  - c. the human tells it, and its register is marked by hand;
+  - c. the human tells it, and its Maintainer Repo Register is marked by hand;
   - d. the human names a System Repo, and the agent compares its main with where its last reading stopped. Every System Repo is compared when the human asks what to read;
   - e. only when work resumes in the System Repo, by the fixed order: reading back, judging, then the update.
 - **Chosen:** b and d. The others:
   - a reads changes the gate has not yet looked at, which the System Repo may still edit or reverse (§3, step 2);
-  - c depends on the human remembering, and the register then says a System Repo was read when it has new work (Failure Case 2);
+  - c depends on the human remembering, and the Maintainer Repo Register then says a System Repo was read when it has new work (Failure Case 2);
   - e alone never reads a System Repo whose work does not resume, so what it learned is lost (Failure Case 1). It stands as it is, for every System Repo (`temp/common-ground-problem.md` §2.1, *An update*), and d adds the reading between.
 
   Main moves only at a gate's close, so main is always at a closed gate, and nothing on it waits for a gate. Work past it, in a branch or not yet committed, is left for the next reading.
@@ -179,7 +179,7 @@ Four steps:
 - **Today:**
   - borrowed: a Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
   - borrowed: the Maintainer Repo keeps where each System Repo lives (`ARCHITECTURE.md` §2.5, *The CBC Runs*);
-  - changed: today the register's state, such as "through Release, not yet read", is written by hand (`ARCHITECTURE.md` §2.5). Here it is found by comparison when asked;
+  - changed: today the state of the list of CBC Runs, such as "through Release, not yet read", is written by hand (`ARCHITECTURE.md` §2.5). Here it is found by comparison when asked;
   - changed: today a reading runs to the CBC Run's `HEAD`, and names work not yet committed (`.claude/skills/exchange-read/SKILL.md`, Stages 2 and 3). Here it runs to main, and work past it waits.
 
 **Step 2. The Maintainer Repo finds where to start reading.**
@@ -187,29 +187,29 @@ Four steps:
 - **What must happen:** the agent finds where this reading starts, and writes where it stops, before reading anything. A later reading must start where this one stopped, whether an update follows this reading or not.
 - **Options,** for where the last reading's stop is kept:
   - a. in the System Repo, carried there by the next update;
-  - b. in the Maintainer Repo's register, a "read to" commit beside where each System Repo lives;
+  - b. in the Maintainer Repo Register, a *read to* commit beside where each System Repo lives;
   - c. in the Maintainer Repo, as the first line of each reading, every reading kept.
 - **Chosen:** b. The others:
   - a fails when a reading has no update after it, which step 1's readings between allow: the System Repo still holds the old stop, and the next reading finds again what was read;
   - c keeps every reading only for one line.
 
-  The start is the register's "read to", and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with "read to" set to the start, the commit holding the System Kit Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own change, so it stands as read. So every reading, the first among them, starts at "read to", and no "none" needs a path of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation). The stop is the System Repo's main, written as the open reading's first line before anything is read, so a commit landing during the reading falls into the next one. It moves into the register once the reading's verdicts are acted on in the Maintainer Repo (§6, step 1), right after judging when they ask for no change, never before: a reading left half done must not mark its changes read. Whether the System Repo takes the update does not hold it back: by then all in the span is read, judged and acted on, and what follows is the next reading's. The reading stays a draft, and goes once its work is done.
+  The start is the Maintainer Repo Register's *read to*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with *read to* set to the start, the commit holding the System Kit Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own change, so it stands as read. So every reading, the first among them, starts at *read to*, and no "none" needs a path of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation). The stop is the System Repo's main, written as the open reading's first line before anything is read, so a commit landing during the reading falls into the next one. It moves into the Maintainer Repo Register once the reading's verdicts are acted on in the Maintainer Repo (§6, step 1), right after judging when they ask for no change, never before: a reading left half done must not mark its changes read. Whether the System Repo takes the update does not hold it back: by then all in the span is read, judged and acted on, and what follows is the next reading's. The reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
-  - the start is the register's "read to";
+  - the start is the Maintainer Repo Register's *read to*;
   - the stop is the System Repo's main, written as the reading's first line before anything is read;
-  - the stop moves into the register once the reading's verdicts are acted on in the Maintainer Repo.
+  - the stop moves into the Maintainer Repo Register once the reading's verdicts are acted on in the Maintainer Repo.
 - **Today:**
   - borrowed: the stop is written first, as the reading's first line, before anything is read (`.claude/skills/exchange-read/SKILL.md`, Stage 2);
-  - borrowed: the register keeps where each System Repo lives (`ARCHITECTURE.md` §2.5, *The CBC Runs*). It gains the "read to" commit;
+  - borrowed: the Maintainer Repo Register keeps where each System Repo lives, as today's list of CBC Runs does (`ARCHITECTURE.md` §2.5, *The CBC Runs*). It gains *read to*;
   - borrowed: a CBC Run Reading is a draft in `temp/`, deleted once the work that needed it is done (`temp/README.md`; `.claude/skills/exchange-read/SKILL.md`, Stage 4);
   - changed: today the stop, the Read-Through Commit, is kept in the CBC Run, carried there by the next Delivery Note, because "it is the only place the Concept Deliverer can look" (`docs/conventions/exchange/` §2.2, *The CBC Run*). Today every reading is followed by a delivery, so the stop always arrives. Here a reading may have no update after it;
-  - changed: today a CBC Run is born with its Read-Through Commit written as *none*, and the exchange-read Agent Skill names no span for it (`delivery/installs/pure-seed.md`, step 2). Here birth writes the start as "read to", and the first reading starts there.
+  - changed: today a CBC Run is born with its Read-Through Commit written as *none*, and the exchange-read Agent Skill names no span for it (`delivery/installs/pure-seed.md`, step 2). Here birth writes the start as *read to*, and the first reading starts there.
 
 **Step 3. The Maintainer Repo compares the copies, and reads each entry.**
 
-- **What must happen:** across the span, from "read to" to the stop, the agent finds every change in the System Kit's folders, a new file among them, pairs each with its entry, and reads the notes written in the span. It only reads the System Repo, and writes only in the Maintainer Repo.
+- **What must happen:** across the span, from *read to* to the stop, the agent finds every change in the System Kit's folders, a new file among them, pairs each with its entry, and reads the notes written in the span. It only reads the System Repo, and writes only in the Maintainer Repo.
 - **Options,** for how changes are found:
-  - a. each copy compared across the span, in the System Repo's own history, from "read to" to the stop;
+  - a. each copy compared across the span, in the System Repo's own history, from *read to* to the stop;
   - b. each copy compared with the System Kit Version the copies came from;
   - c. only the entries read, with no comparison;
   - d. the span walked commit by commit.
@@ -225,7 +225,7 @@ Four steps:
 
   The notes are found the same way: their place in the System Repo's records is compared across the span, and each new note is read beside the changes. A note about a change points at its entry, so it is read with that change.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
-  - compare each copy from "read to" to the stop, in the System Repo's history;
+  - compare each copy from *read to* to the stop, in the System Repo's history;
   - pair each change with its entry; mark one with none "no entry";
   - compare the notes' place across the span, and read each new note;
   - judge nothing.
@@ -241,7 +241,7 @@ Four steps:
 
 **Step 4. It lists what changed, nothing judged.**
 
-- **What must happen:** the reading gets one line per change and one per note, nothing judged. The human checks that the list is whole. Then it is judged, and its stop moves into the register once its verdicts are acted on (step 2).
+- **What must happen:** the reading gets one line per change and one per note, nothing judged. The human checks that the list is whole. Then it is judged, and its stop moves into the Maintainer Repo Register once its verdicts are acted on (step 2).
 - **Options:**
   - a. one line per change, nothing decided; judging is §5's;
   - b. each change judged as it is listed;
@@ -256,7 +256,7 @@ Four steps:
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - one line per change and per note, nothing judged;
   - linked changes listed together, under their reason;
-  - the human checks the list is whole; the stop moves into the register once the verdicts are acted on.
+  - the human checks the list is whole; the stop moves into the Maintainer Repo Register once the verdicts are acted on.
 - **Today:**
   - borrowed: one line per item, what it is and where, nothing decided (`.claude/skills/exchange-read/SKILL.md`, Stage 4 and *Gates*);
   - borrowed: the reading is a draft to its form (`.claude/rules/exchange-reading.md`);
@@ -345,7 +345,7 @@ Two steps:
 
 **Step 1. The Maintainer Repo makes its changes. For depth a, none.**
 
-- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth a, nothing changes in the System Kit or the project-agnostic understanding. The verdict waits in the reading, which stays a draft until the update carries what the System Repo needs (§7, step 1). Once the verdicts are acted on here, right after judging for depth a, the reading's stop moves into the register as "read to" (§4, step 2).
+- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth a, nothing changes in the System Kit or the project-agnostic understanding. The verdict waits in the reading, which stays a draft until the update carries what the System Repo needs (§7, step 1). Once the verdicts are acted on here, right after judging for depth a, the reading's stop moves into the Maintainer Repo Register as *read to* (§4, step 2).
 - **Options,** for depth a:
   - a. nothing changes here; the verdict waits in the reading;
   - b. nothing changes in the System Kit, and the verdict is also kept in a lasting record, by the part it changed, so a later reading sees when another System Repo makes the same change;
@@ -355,7 +355,7 @@ Two steps:
   - c is a speculation: one System Repo's own change, offered to System Repos that have not met it. Several Adapted Cases needing a change, but not all, is its own case (§2, row f).
 
   For the other depths, this step holds the work, each checked here later: depth b changes the System Kit's Adapted Case; depth c changes the project-agnostic understanding, after the survey; depth d fixes the Adapted Case from the project-agnostic understanding; a narrowing is marked with its why. A lesson is reworded here, never before: for every System Repo at depth b, naming no project at depth c (`temp/common-ground-problem.md` §2.1, *A project-agnostic lesson*).
-- **Adapted Case:** the Maintainer Repo's, for judging a reading. For this step it says: a verdict of its own changes nothing here; the reading stays a draft until the update carries what the System Repo needs; once the verdicts are acted on, the stop moves into the register.
+- **Adapted Case:** the Maintainer Repo's, for judging a reading. For this step it says: a verdict of its own changes nothing here; the reading stays a draft until the update carries what the System Repo needs; once the verdicts are acted on, the stop moves into the Maintainer Repo Register.
 - **Open:** whether depth a's verdicts are kept beyond the update, so the same change by a second System Repo is seen. Without it, two System Repos making one change are each judged alone. Its trigger: the second System Repo read back.
 - **Today:**
   - borrowed: a declined change moves nothing in the Concept Deliverer's tree (`docs/conventions/exchange/` §6.5, *Verdicts*);
@@ -382,7 +382,7 @@ Two steps:
 - **Chosen:** b and e. The others:
   - a sends lines that ask nothing of the System Repo. A change judged its own, with its proposal holding, needs no answer: the copy keeps it either way;
   - c leaves an unsound change unknown to the only repo that can reverse it;
-  - d sends an empty update to carry where the reading stopped. "Read to" is in the register now (§4, step 2), so nothing needs carrying.
+  - d sends an empty update to carry where the reading stopped. *Read to* is in the Maintainer Repo Register now (§4, step 2), so nothing needs carrying.
 
   Whether an update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's System Kit Version, which it holds, against the newest. It runs when the human names a System Repo to update, or asks which are behind. A System Repo is blind, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
 
@@ -464,11 +464,11 @@ Two steps:
 
   The opening order follows the fixed order already set: reading back, judging, then the update (`temp/common-ground-problem.md` §2.1, *An update*). An open reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old copies first; the human may instead drop or restart it, when the update changes a rule it rests on. The take checks first, from the note, what the System Repo itself can see:
   - case 1, its main is still the reading's stop, and its System Kit Version is the one the update was built from: the update is taken;
-  - case 2, anything else: there is no take, and the System Repo says so, which starts a reading. The cycle runs again from "read to": the new span is read, judged against the System Kit as it is now, the Maintainer Repo's changes made, and a new update made. It replaces the waiting one and carries its verdicts not yet sent (§7, step 1).
+  - case 2, anything else: there is no take, and the System Repo says so, which starts a reading. The cycle runs again from *read to*: the new span is read, judged against the System Kit as it is now, the Maintainer Repo's changes made, and a new update made. It replaces the waiting one and carries its verdicts not yet sent (§7, step 1).
 
   The Maintainer Repo may compare the System Repo's main with the stop before delivery too, to save a delivery bound to fail. A System Kit moved since the update was made is no reason to refuse it: the update is correct, if not the latest, and the next brings the rest.
 
-  A gate may have fixed, merged or dropped entries the update answered. These show in the new span as changes with their entries, and are judged like any. Entries from before "read to" still in the copies are cleared at the take, and what is still needed comes back with a fresh entry, judged in the next reading.
+  A gate may have fixed, merged or dropped entries the update answered. These show in the new span as changes with their entries, and are judged like any. Entries from before *read to* still in the copies are cleared at the take, and what is still needed comes back with a fresh entry, judged in the next reading.
 
   At the take, in order:
   1. the Adapted Case for taking an update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
