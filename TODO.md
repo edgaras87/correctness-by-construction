@@ -34,6 +34,23 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Draft an Adapted Case for refining a document
+      (2026-11-12, the reviewer).
+      Context: the reviewer asks for a refinement by hand today, and
+      the agent chooses the checks each time. On 2026-11-12 nine
+      checks were run on `temp/system-repo-change-simulation.md`. The
+      walk of one case through every part found what the scripts
+      could not: a contradiction and four gaps. One run on one
+      document is not yet a form to derive a case from.
+      Ideas:
+      - start from the nine checks, in the order they were run;
+      - the walk comes before the wording, since it changes what the
+        text says;
+      - the case says which checks a script runs and which need a
+        read by eye.
+      Trigger: a second document is refined by the reviewer's ask.
+      See: devlog 2026-11-12, the checks run on the simulation.
+
 - [ ] Resume the simulation of what passes between the repos,
       `temp/between-repos-simulation.md` (2026-11-10, the reviewer).
       Context: the simulation grew into designing the whole exchange:
