@@ -30,16 +30,14 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
 
 ### The System Repo's commits
 
-Imaginary commits of the System Repo, oldest first, top to bottom. Main is the first column of commits; a step's branch is cut from main and drawn to its right. The middle column marks the commits a Reading reads. The System Repo's parts point at the commit they act on; the Maintainer Repo's stand in a column of their own on the left, between the commits, since they make none. The parts are numbered: 1 a Change, 2 the gate decides, 3 the gate closes, 4 Read, 5 List, 6 Judge, 7 Act, 8 Deliver, 9 the take, 10 the next Plan Step opens. A dotted line is no commit. The Copies are at Version 1 until a take brings Version 2. At a gate's close, main moves to the branch's last commit by fast-forward: a commit named again on main is main moving to it, not a new commit.
-
 #### Picture 1, the take inside its window
 
 ```
  Maintainer Repo                         main      branches                         read                System Repo
  ───────────────                         ────      ────────                         ────                ───────────
-                                         c0 ●  earlier work, already read           ┐ read
-                                            │                                       │ before
-                                         c1 ●  where the last Reading stopped       ┘             ◀──── read to: where the last Reading stopped
+                                         c0 ●  earlier work                         ┐ read and
+                                            │                                       │ acted on
+                                         c1 ●  the last stop, on Version 1          ┘             ◀──── read to: where the last Reading stopped
                                             │
                                             ├─ cut ─▶ c2 ●  work, no Copy changed   ┐
                                             │            │                          │ Reading 1
@@ -59,12 +57,24 @@ Imaginary commits of the System Repo, oldest first, top to bottom. Main is the f
                                             │                                                     ◀┄┄┄┄ open: next Reading after c5, or after c6?
                                             │
                                             └─ cut ─▶ c7 ●  work, on Version 2                    ◀──── 10. step 2 opens on Version 2
+
 ```
+
+**Key:**
+
+- **commits:** imaginary commits of the System Repo, oldest first, top to bottom.
+- **main, branches:** a step's branch is cut from main, to its right. At its gate's close, main moves to the branch's last commit by fast-forward: a commit named again on main is no new commit.
+- **read:** the commits a Reading covers. A Reading is the Maintainer Repo comparing the System Repo's Copies across them, and it writes nothing there. A bracket closes when the verdicts are acted on, and its last commit becomes *read to*. *Read to* is not a take.
+- **System Repo:** its parts, each pointing at the commit it acts on.
+- **Maintainer Repo:** its parts, between the commits, since it makes none.
+- **┊:** no commit.
+- **numbers:** 1 a Change, 2 the gate decides, 3 the gate closes, 4 Read, 5 List, 6 Judge, 7 Act, 8 Deliver, 9 the take, 10 the next Plan Step opens.
+- **Versions:** the Copies are at Version 1 until a take brings Version 2. The picture starts at c1: read, judged and acted on, and taken as Version 1, so nothing earlier waits.
 
 | Commit | Where | System Repo | Maintainer Repo | Reading |
 |---|---|---|---|---|
-| c0 | main | earlier work, already read | | read before |
-| c1 | main | where the last Reading stopped | | *read to* |
+| c0 | main | earlier work | | read and acted on |
+| c1 | main | the last stop, on Version 1 | | *read to* |
 | c2 | step 1's branch | work, no Copy changed | | Reading 1 |
 | c3 | step 1's branch | 1. a Change: a Copy changed, with its Record | | Reading 1 |
 | c4 | step 1's branch | 1. another Change: another Copy changed, with its Record | | Reading 1 |
@@ -80,9 +90,9 @@ Step 2 opened before the take: the human started it before the Update came, or p
 ```
  Maintainer Repo                         main      branches                         read                System Repo
  ───────────────                         ────      ────────                         ────                ───────────
-                                         c0 ●  earlier work, already read           ┐ read
-                                            │                                       │ before
-                                         c1 ●  where the last Reading stopped       ┘             ◀──── read to: where the last Reading stopped
+                                         c0 ●  earlier work                         ┐ read and
+                                            │                                       │ acted on
+                                         c1 ●  the last stop, on Version 1          ┘             ◀──── read to: where the last Reading stopped
                                             │
                                             ├─ cut ─▶ c2 ●  work, no Copy changed   ┐
                                             │            │                          │ Reading 1
@@ -106,12 +116,15 @@ Step 2 opened before the take: the human started it before the Update came, or p
                                                                                                   ┄┄┄┄┄ 9. Take refused: main is c8, not c5; no commit
  4 again. Read: c6 to c8; a new
  Update replaces the waiting one
+
 ```
+
+Key: as in picture 1.
 
 | Commit | Where | System Repo | Maintainer Repo | Reading |
 |---|---|---|---|---|
-| c0 | main | earlier work, already read | | read before |
-| c1 | main | where the last Reading stopped | | *read to* |
+| c0 | main | earlier work | | read and acted on |
+| c1 | main | the last stop, on Version 1 | | *read to* |
 | c2 | step 1's branch | work, no Copy changed | | Reading 1 |
 | c3 | step 1's branch | 1. a Change: a Copy changed, with its Record | | Reading 1 |
 | c4 | step 1's branch | 1. another Change: another Copy changed, with its Record | | Reading 1 |
