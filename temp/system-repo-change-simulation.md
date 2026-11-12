@@ -81,22 +81,22 @@ Two steps:
   - d. the copy stays as it is, and the System Repo writes what it does instead in its own records.
 - **Chosen:** a. The others:
   - b is a speculation, with nothing that happened behind it;
-  - c waits for no reason: a System Kit Copy Change Record lets any System Kit Copy Change be edited or reversed later, and until the gate the copy says what the System Repo no longer does;
+  - c gains nothing by waiting. A System Kit Copy Change Record lets any System Kit Copy Change be edited or reversed later. And until the gate, the copy would say what the System Repo no longer does;
   - d leaves the copy saying it for good, and the next agent reads the copy, not the records.
 
-  **Where it sits.** The System Kit Copy Change Record goes in a footer of the copy's Adapted Understanding Text, which is not loaded for work. So the System Kit Copy Change and its why land in one diff, and the why cannot lose its copy. An Instruction Text changed alone has one there too.
+  **Where it sits.** The System Kit Copy Change Record goes in a footer of the copy's Adapted Understanding Text, which is not loaded for work. So the System Kit Copy Change and its why land in one diff, and the why cannot lose its copy. When only an Instruction Text changes, its System Kit Copy Change Record goes there too.
 
   **What it holds:**
-  - what changed, by meaning: the part, and what it says now. When the System Kit Copy Change left some of the Adapted Case's texts as they were, whether they still match it (Failure Case 8);
+  - what changed, by meaning: the part, and what it says now. When some of the Adapted Case's texts were left as they were, it also says whether they still match the System Kit Copy Change (Failure Case 8);
   - what happened, concretely, in the System Repo's own words. It is never written to sound project-agnostic: making it general is the Maintainer Repo's, after judging;
   - which work found it;
   - the System Repo's proposal: its own problem, or one any repo would meet. It is marked as a proposal. The Maintainer Repo judges every System Kit Copy Change, and says whether it agrees, and why if not (§5).
 
   **When it is rewritten.** The System Kit Copy Change Record says the System Kit Copy Change as it stands. A later edit rewrites it, and git keeps the old one.
 
-  **The commit.** The System Kit Copy Change and its System Kit Copy Change Record go in the same commit. A commit that changes a copy and not its System Kit Copy Change Record is stopped there. A take is not a System Kit Copy Change, so the check lets its commit pass: it replaces every copy with the System Kit's and clears every System Kit Copy Change Record. What the System Repo puts back at the take is one, and carries a fresh System Kit Copy Change Record (§8, step 1). The commit is always reached: work never committed is lost, the two together.
+  **The commit.** The System Kit Copy Change and its System Kit Copy Change Record go in the same commit. A commit that changes a copy and not its System Kit Copy Change Record is stopped there. A take is not a System Kit Copy Change, so the check lets its commit pass: it replaces every copy with the System Kit's and clears every System Kit Copy Change Record. What the System Repo puts back at the take is a System Kit Copy Change, and carries a fresh System Kit Copy Change Record (§8, step 1). Every System Kit Copy Change that lasts passes through a commit. Work never committed is lost, the System Kit Copy Change and its System Kit Copy Change Record together.
 
-  **Weighed and dropped:** a check at each session's end, comparing the copies with their System Kit Copy Change Records. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds a System Kit Copy Change Record missing or wrong whose System Kit Copy Change was committed in an earlier session.
+  **Weighed and dropped:** a check at each session's end, comparing the copies with their System Kit Copy Change Records. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds a System Kit Copy Change committed in an earlier session with its System Kit Copy Change Record missing or wrong.
 - **Adapted Case:** the System Repo's, for changing a System Kit Copy, itself a System Kit Copy. It loads when a copy, or the System Kit Attention Notes' place, is touched. For this step it says:
   - a copy changes only when the work shows it does not fit, never ahead;
   - the System Kit Copy Change Record is written with the System Kit Copy Change, with its four parts, and goes in the same commit;
