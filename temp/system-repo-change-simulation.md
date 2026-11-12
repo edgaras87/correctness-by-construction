@@ -496,14 +496,14 @@ Two steps:
   7. the Update and its Update Note are removed from `temp/`.
 
   A take may be postponed, with its why. Work then goes on with the old Copies, and the order runs again at the next opening: the Reading is extended, and a newer Update replaces the waiting one (§7, step 1).
+
+  Every Record stands against the last Version taken, or birth's, and every Record goes at a take, rewritten when its difference stays. This is confirmed at the first Update to reach a System Repo whose Copies have Records.
 - **Adapted Case:**
   - the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says: check first that main is still the Reading's stop and its Version is the Update's base, and take nothing when either differs, saying so; take only at a Plan Step's opening, or postpone with why; take in the order above; re-apply only with evidence, each with a fresh Record;
   - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its Update taken, since the last opening? A System Repo cannot see this itself; the human answers.
 - **Open:**
   - finished work done under a rule the Update changed may now be wrong. New work follows the new Copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Update that changes a rule a finished Plan Step followed;
   - a take postponed again and again leaves the System Repo far behind. Its trigger: the first take postponed past two openings.
-
-  Every Record stands against the last Version taken, or birth's, and every Record goes at a take, rewritten when its difference stays. This is confirmed at the first Update to reach a System Repo whose Copies have Records.
 - **Today:**
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
   - borrowed: the Delivery Take's order: the Delivery Note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);
