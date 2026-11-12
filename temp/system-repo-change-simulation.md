@@ -90,7 +90,7 @@ Two steps:
 
   The System Kit Copy Change Record says the System Kit Copy Change as it stands. A later edit rewrites it, and git keeps the old one.
 
-  The System Kit Copy Change and its System Kit Copy Change Record go in the same commit. A commit that changes a copy and not its System Kit Copy Change Record is stopped there. The commit is always reached: work never committed is lost, the two together.
+  The System Kit Copy Change and its System Kit Copy Change Record go in the same commit. A commit that changes a copy and not its System Kit Copy Change Record is stopped there. A take is not a System Kit Copy Change, so the check lets its commit pass: it replaces every copy with the System Kit's and clears every System Kit Copy Change Record. What the System Repo puts back at the take is one, and carries a fresh System Kit Copy Change Record (§8, step 1). The commit is always reached: work never committed is lost, the two together.
 
   Weighed and dropped: a check at each session's end, comparing the copies with their System Kit Copy Change Records. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds a System Kit Copy Change Record missing or wrong whose System Kit Copy Change was committed in an earlier session.
 - **Adapted Case:** the System Repo's, for changing a System Kit Copy, itself a System Kit Copy. It loads when a copy, or the System Kit Attention Notes' place, is touched. For this step it says:
