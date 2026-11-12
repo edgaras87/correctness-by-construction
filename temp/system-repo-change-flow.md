@@ -183,8 +183,8 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                                     │
                                                     ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still the Reading's stop, c6,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
- open: does                                   ┌     │         c7 ●  the Update, as it arrived       (committed in temp/, not yet in force: a record
- the next Reading                             ┆     │            │                                  of what came, before the take changes anything)
+ open: does                                   ┌     │         c7 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force: a record
+ the next Reading                             ┆     │            │                                  of what came, before the take changes anything
  cover c7 to c13?                             ┆     │            │
                                               ┆     │         c8 ●  its new Adapted Case      ◀──── the Update's own, taken first; it runs the rest
                                               ┆     │            ┊                            ┄┄┄┄┄ the files checked against the Update Note; no commit
