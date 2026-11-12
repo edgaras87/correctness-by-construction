@@ -190,7 +190,9 @@ Four steps:
   **Cleaned history.** If a stretch's history is cleaned before main moves, the Records are unharmed: they are in the Copies, not in the commits.
 - **Adapted Case:**
   - the System Repo's gate list: main moves only at a gate's close. It is there today;
-  - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read, or asks what to read. For this step it says: compare the named System Repo's main with where its last Reading stopped, or every System Repo's when asked; a look past main moves nothing, and gives only Attention Notes.
+  - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read, or asks what to read. For this step it says:
+    - compare the named System Repo's main with where its last Reading stopped, or every System Repo's when asked;
+    - a look past main moves nothing, and gives only Attention Notes.
 - **Open:** a System Repo nobody names is not read until its work resumes. Its trigger: the first lesson found late because a System Repo went unread.
 - **Today:**
   - borrowed: a Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
@@ -348,7 +350,17 @@ Two steps:
   - a leaves the change made from it with nothing to check it against, and a proposal judged wrong goes unseen;
   - c decides what changes before it is worked out: that is §6, step 1's, with the survey where the depth needs one.
 
-  **The verdicts.** A verdict is one of: unsound; misread, question 1; covered by a System Kit change since the System Repo's Version, question 1; its own, question 2, depth a; lost in narrowing, question 3, depth d; a project-agnostic lesson, question 4, depth c; a lesson for System Repos only, depth b; or held, with its trigger. Lines under one reason share one verdict, and each line says how its own Copy is affected.
+  **The verdicts.** A verdict is one of:
+  - unsound;
+  - misread, question 1;
+  - covered by a System Kit change since the System Repo's Version, question 1;
+  - its own, question 2, depth a;
+  - lost in narrowing, question 3, depth d;
+  - a project-agnostic lesson, question 4, depth c;
+  - a lesson for System Repos only, depth b;
+  - held, with its trigger.
+
+  Lines under one reason share one verdict, and each line says how its own Copy is affected.
 
   **The agreement.** The agreement is said in one line, "the proposal holds" or "the proposal does not hold, because …". An unsound verdict says what the Change breaks or leaves unfixed; whether to reverse it is the System Repo's decision, once the verdict reaches it (§7, step 1).
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says:
@@ -374,8 +386,17 @@ Two steps:
   - b builds a record before any part has been changed by two System Repos;
   - c is a speculation: one System Repo's own Change, offered to System Repos that have not met it. Several Adapted Cases needing a change, but not all, is its own case (§2, row f).
 
-  **The other depths.** For the other depths, this step holds the work, each checked here later: depth b changes the System Kit's Adapted Case; depth c changes the project-agnostic understanding, after the survey; depth d fixes the Adapted Case from the project-agnostic understanding; a narrowing is marked with its why. A lesson is reworded here, never before: for every System Repo at depth b, naming no project at depth c (`temp/common-ground-problem.md` §2.1, *A project-agnostic lesson*).
-- **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says: a verdict of its own changes nothing here; the Reading stays a draft until the Update carries what the System Repo needs; once the verdicts are acted on, the stop moves into the Register.
+  **The other depths.** For the other depths, this step holds the work, each checked here later:
+  - depth b changes the System Kit's Adapted Case;
+  - depth c changes the project-agnostic understanding, after the survey;
+  - depth d fixes the Adapted Case from the project-agnostic understanding;
+  - a narrowing is marked with its why.
+
+  A lesson is reworded here, never before: for every System Repo at depth b, naming no project at depth c (`temp/common-ground-problem.md` §2.1, *A project-agnostic lesson*).
+- **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says:
+  - a verdict of its own changes nothing here;
+  - the Reading stays a draft until the Update carries what the System Repo needs;
+  - once the verdicts are acted on, the stop moves into the Register.
 - **Open:** whether depth a's verdicts are kept beyond the Update, so the same Change by a second System Repo is seen. Without it, two System Repos making one Change are each judged alone. Its trigger: the second System Repo read back.
 - **Today:**
   - borrowed: a declined change moves nothing in the Concept Deliverer's tree (`docs/conventions/exchange/` §6.5, *Verdicts*);
@@ -503,7 +524,11 @@ Two steps:
 
   **What a Record stands against.** Every Record stands against the last Version taken, or birth's, and every Record goes at a take, rewritten when its difference stays. This is confirmed at the first Update to reach a System Repo whose Copies have Records.
 - **Adapted Case:**
-  - the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says: check first that main is still the Reading's stop and its Version is the Update's base, and take nothing when either differs, saying so; take only at a Plan Step's opening, or postpone with why; take in the order above; re-apply only with evidence, each with a fresh Record;
+  - the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says:
+    - check first that main is still the Reading's stop and its Version is the Update's base, and take nothing when either differs, saying so;
+    - take only at a Plan Step's opening, or postpone with why;
+    - take in the order above;
+    - re-apply only with evidence, each with a fresh Record;
   - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its Update taken, since the last opening? A System Repo cannot see this itself; the human answers.
 - **Open:**
   - finished work done under a rule the Update changed may now be wrong. New work follows the new Copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Update that changes a rule a finished Plan Step followed;
