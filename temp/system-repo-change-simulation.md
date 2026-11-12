@@ -100,6 +100,7 @@ Two steps:
 - **Adapted Case:** the System Repo's, for changing a System Kit Copy, itself a System Kit Copy. It loads when a copy, or the System Kit Attention Notes' place, is touched. For this step it says:
   - a copy changes only when the work shows it does not fit, never ahead;
   - the System Kit Copy Change Record is written with the System Kit Copy Change, with its four parts, and goes in the same commit;
+  - a commit that changes a copy and not its System Kit Copy Change Record is stopped. A take is not a System Kit Copy Change, and passes;
   - what happened is written concretely, in the System Repo's own words;
   - whether the System Kit Copy Change is its own or any repo's is a proposal, never a verdict;
   - a System Kit Attention Note, written at any time, carries only what has no System Kit Copy Change (above, *The System Kit Attention Note*).
