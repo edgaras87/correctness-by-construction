@@ -186,7 +186,7 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
  open: does                                   ┌     │         c7 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force: a record
  the next Reading                             ┆     │            │                                  of what came, before the take changes anything
  cover c7 to c13?                             ┆     │            │
-                                              ┆     │         c8 ●  its new Adapted Case      ◀──── the Update's own, taken first; it runs the rest
+                                              ┆     │         c8 ●  the new Adapted Case      ◀──── for taking, at Version 2, put in first; it runs the rest of the take
                                               ┆     │            ┊                            ┄┄┄┄┄ the files checked against the Update Note; no commit
                                               ┆     │         c9 ●  every Copy at Version 2   ◀──── Copies taken whole; every Record cleared
                                               ┆     │            │
