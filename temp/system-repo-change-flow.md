@@ -139,3 +139,80 @@ Step 2 opened before the take: the human started it before the Update came, or p
                                                         ┄┄┄┄┄ 9. Take: main is c8, not c5, so it is refused; no commit
                                                         ┄┄┄┄┄ 4 again. Read: c6 to c8; a new Update replaces the waiting one
 ```
+
+### Other ways to picture the commits
+
+Picture 1 again, the take inside its window, drawn four other ways, to compare with the one above.
+
+#### Way 1, time left to right
+
+Parts above the commits, Readings below.
+
+```
+                  read to                                                                        the stop       9. the take
+                     ▼                                                                              ▼               ▼
+ main     c0 ─────── c1 ─────────────────────────────────────────────────────────────────────────── c5 ──────────── c6 ──────────────────────
+                      │                                                                              ▲               │
+ branches             └─ cut ─────c2────────────c3────────────c4────────────c5──fast-forward─────────┘               └─ cut ─────── c7
+                                  ▲                           ▲             ▲                                                       ▲
+                                  1. a Change                 1. a Change   2, 3. the gate                                          10. step 2
+                                                                            closes                                                  opens
+
+          └─ read before ─┘       └───────────── Reading 1: c2 to c5 ────────┘
+
+
+ between c5 and c6, in the Maintainer Repo: 4 to 6. Read, List, Judge · 7. Act: c5 becomes read to · 8. Deliver
+ at c6: main is still c5, so the take runs · main moves here? Read says only at a gate
+ open: does the next Reading start after c5, or after c6?
+```
+
+#### Way 2, three lanes
+
+The Maintainer Repo gets a lane of its own, above the System Repo's.
+
+```
+ Maintainer Repo                                                                    4 to 6. Read, List, Judge ─ 7. Act ─ 8. Deliver┐
+                                                                                 ▲ read only, c2 to c5                             │ into temp/
+                                                                                 │                                                 ▼ 9. the take
+ System Repo main   c0 ──── c1 ──────────────────────────────────────────────── c5 ────────────────────────────────────────────── c6 ────────────────────
+                             │                                                   ▲                                                 │
+ System Repo branches        └──────────c2──────c3──────c4──────c5──ff───────────┘                                                 └─────────── c7
+                                        1               1       2, 3                                                                            10
+
+ numbers: the round's parts · ff: main moves to c5 by fast-forward · c0 to c1 read before, c1 is read to
+ at c6: main moves here? Read says only at a gate · open: does the next Reading start after c5, or after c6?
+```
+
+#### Way 3, a table
+
+| Commit | Where | What happens | Reading |
+|---|---|---|---|
+| c0 | main | earlier steps' work | read before |
+| c1 | main | the last stop | *read to* |
+| c2 | step 1's branch | 1. a Change, with its Record | Reading 1 |
+| c3 | step 1's branch | work | Reading 1 |
+| c4 | step 1's branch | 1. another Change, with its Record | Reading 1 |
+| c5 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c5 by fast-forward | Reading 1 stops here |
+| no commit | Maintainer Repo | 4 to 6. Read, List, Judge: c2 to c5. 7. Act: c5 becomes *read to*. 8. Deliver: the Update waits in `temp/` | |
+| c6 | main | 9. the take: main is still c5, so it runs. Main moves here? Read says only at a gate | open: does the next Reading start after c5, or after c6? |
+| c7 | step 2's branch | 10. step 2 opens on the new Copies | |
+
+#### Way 4, a Mermaid timeline
+
+```mermaid
+timeline
+  title The take inside its window
+  section Read before
+    c0 to c1 : earlier steps' work : c1 is read to
+  section Step 1's branch, Reading 1
+    c2 : 1. a Change, with its Record
+    c3 : work
+    c4 : 1. another Change, with its Record
+    c5 : 2 and 3. the gate closes : main moves to c5 by fast-forward
+  section Maintainer Repo, no commit
+    Read : 4 to 6. Read, List, Judge c2 to c5 : 7. Act, c5 becomes read to : 8. Deliver, the Update waits in temp/
+  section Main
+    c6 : 9. the take : main moves here? Read says only at a gate : open, the next Reading after c5 or after c6?
+  section Step 2's branch
+    c7 : 10. step 2 opens on the new Copies
+```
