@@ -61,6 +61,18 @@ Imaginary commits of the System Repo, oldest first, top to bottom. The left colu
     └─ cut ─▶ c7 ●  step 2's work                       ◀──── 10. step 2 opens on the new Copies
 ```
 
+| Commit | Where | What happens | Reading |
+|---|---|---|---|
+| c0 | main | earlier steps' work | read before |
+| c1 | main | the last stop | *read to* |
+| c2 | step 1's branch | 1. a Change, with its Record | Reading 1 |
+| c3 | step 1's branch | work | Reading 1 |
+| c4 | step 1's branch | 1. another Change, with its Record | Reading 1 |
+| c5 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c5 by fast-forward | Reading 1 stops here |
+| no commit | Maintainer Repo | 4 to 6. Read, List, Judge: c2 to c5. 7. Act: c5 becomes *read to*. 8. Deliver: the Update waits in `temp/` | |
+| c6 | main | 9. the take: main is still c5, so it runs. Main moves here? Read says only at a gate | open: does the next Reading start after c5, or after c6? |
+| c7 | step 2's branch | 10. step 2 opens on the new Copies | |
+
 #### Picture 2, the window missed
 
 Step 2 opened before the take: the human started it before the Update came, or postponed the take (`temp/system-repo-change-simulation.md` §8, step 1, *A postponed take*).
@@ -95,10 +107,6 @@ Step 2 opened before the take: the human started it before the Update came, or p
                                                         ┄┄┄┄┄ 4 again. Read: c6 to c8; a new Update replaces the waiting one
 ```
 
-### The commits as a table
-
-Picture 1 as a table, one row per commit.
-
 | Commit | Where | What happens | Reading |
 |---|---|---|---|
 | c0 | main | earlier steps' work | read before |
@@ -107,6 +115,10 @@ Picture 1 as a table, one row per commit.
 | c3 | step 1's branch | work | Reading 1 |
 | c4 | step 1's branch | 1. another Change, with its Record | Reading 1 |
 | c5 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c5 by fast-forward | Reading 1 stops here |
-| no commit | Maintainer Repo | 4 to 6. Read, List, Judge: c2 to c5. 7. Act: c5 becomes *read to*. 8. Deliver: the Update waits in `temp/` | |
-| c6 | main | 9. the take: main is still c5, so it runs. Main moves here? Read says only at a gate | open: does the next Reading start after c5, or after c6? |
-| c7 | step 2's branch | 10. step 2 opens on the new Copies | |
+| no commit | Maintainer Repo | 4 to 7. Read, List, Judge, Act: c2 to c5; c5 becomes *read to* | |
+| c6 | step 2's branch | 10. step 2 opened before the take: work on the old Copies | read again |
+| no commit | Maintainer Repo | 8. Deliver: the Update waits in `temp/` | |
+| c7 | step 2's branch | 1. a Change, with its Record | read again |
+| c8 | step 2's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c8 by fast-forward | read again stops here |
+| no commit | System Repo | 9. the take: main is c8, not c5, so it is refused | |
+| no commit | Maintainer Repo | 4 again. Read: c6 to c8; a new Update replaces the waiting one | |
