@@ -85,7 +85,7 @@ Two steps:
 
 **The Attention Note.** Its rule: (`temp/common-ground-problem.md` §2.1, *A System Kit Attention Note*). An Attention Note carries what has no Change to carry it: a misfit with none made, a doubt about a line left as it is, something the System Kit lacked, a Copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. Attention Notes are kept in one known place in the System Repo's records. An Attention Note never lists a Change: the Record already says it, and a second line would have to follow every edit and reversal. One about a Change points at its Record. A Reading reads the Attention Notes as well as the Copies (§4, step 3).
 
-**Step 1. The work meets a Copy that does not fit, and the Copy is changed, with its Record.**
+**Step 1. A Copy is changed, with its Record.**
 
 - **What must happen:** during its own work, the System Repo finds that a Copy does not fit what happened. The human decides the Change, the agent proposing. It is made then, and its Record is written with it. The Change may be edited or reversed later, its Record with it.
 - **Options:**
@@ -128,7 +128,7 @@ Two steps:
   - changed: today every edit must claim to be for any CBC Run. Here the System Repo proposes, and the Maintainer Repo judges;
   - borrowed: a check fires at the commit because, before, it had to be remembered (`.claude/rules/foundation-check.md`, its header comment). That one is the Maintainer Repo's own.
 
-**Step 2. The Plan Step's gate: the step's Changes are compared with their Records, and each is kept, edited or reversed, and linked when they share a reason.**
+**Step 2. The Plan Step's gate decides each Change.**
 
 - **What must happen:** at the Plan Step's close, the step's Changes are seen together, now that the whole step is seen. The agent compares the Copies against where the Plan Step began, and shows each with its Record. The human decides each, the agent proposing: kept, edited, or reversed, its Record with it. Changes that share one reason are linked.
 - **Options:**
