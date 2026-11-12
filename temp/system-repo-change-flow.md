@@ -33,30 +33,33 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
 #### Picture 1, the take inside its window
 
 ```
- Maintainer Repo                           main      branches                          System Repo
- ───────────────                           ────      ────────                          ───────────
- read and                             ┌  c0 ●  earlier work
- acted on                             │     │
-                                      └  c1 ●  the last stop, on Version 1            ◀──── read to: where the last Reading stopped
-                                            │
-                                      ┌     ├─ cut ─▶ c2 ●  work, no Copy changed
- Reading 1                            │     │            │
- covers                               │     │         c3 ●  a Copy changed            ◀──── 1. a Change, with its Record
- c2 to c5                             │     │            │
-                                      │     │         c4 ●  another Copy changed      ◀──── 1. another Change, with its Record
-                                      │     │            │
-                                      └     │         c5 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
-                                            │            │
-                                         c5 ● ◀──────────┘                            ◀──── main moves to c5 by fast-forward, no new commit
- 4 to 6. Read, List, Judge: c2 to c5        ┊
- 7. Act: c5 becomes read to                 ┊
- 8. Deliver: the Update waits in temp/      ┊
-                                            │
-                                         c6 ●  the take: Version 2 comes in           ◀──── 9. Take: main is still c5, so it runs
-                                            │                                         ◀──── main moves here? Read says only at a gate
-                                            │                                         ◀┄┄┄┄ open: next Reading after c5, or after c6?
-                                            │
-                                            └─ cut ─▶ c7 ●  work, on Version 2        ◀──── 10. step 2 opens on Version 2
+ Maintainer Repo                                 main      branches                                 System Repo
+ ───────────────                                 ────      ────────                                 ───────────
+ 
+ read and
+ acted on.
+ read to: where the last Reading stopped  ─▶  ┌  c0 ●  earlier work
+                                              │     │
+                                              └  c1 ●  take                                   ◀──── the last take, on Version 1
+                                                    │
+                                              ┌     ├─ cut ─▶ c2 ●  work, no Copy changed
+ Reading 1                                    │     │            │
+ covers                                       │     │         c3 ●  a Copy changed            ◀──── 1. a Change, with its Record
+ c2 to c5                                     │     │            │
+                                              │     │         c4 ●  another Copy changed      ◀──── 1. another Change, with its Record
+                                              │     │            │
+                                              └     │         c5 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
+                                                    │            │
+                                                 c5 ● ◀──────────┘                            ◀──── main moves to c5 by fast-forward, no new commit
+ 4 to 6. Read, List, Judge: c2 to c5                ┊
+ 7. Act: c5 becomes read to                         ┊
+ 8. Deliver: the Update waits in temp/              ┊
+                                                    │
+                                                 c6 ●  the take: Version 2 comes in           ◀──── 9. Take: main is still c5, so it runs
+                                                    │                                         ◀──── main moves here? Read says only at a gate
+                                                    │                                         ◀┄┄┄┄ open: next Reading after c5, or after c6?
+                                                    │
+                                                    └─ cut ─▶ c7 ●  work, on Version 2        ◀──── 10. step 2 opens on Version 2
 ```
 
 **Key:**
