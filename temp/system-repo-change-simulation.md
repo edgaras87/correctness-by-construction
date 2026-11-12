@@ -66,8 +66,8 @@ A stretch of work may hold several System Kit Copy Changes, alike or mixed. Each
 
 Two steps:
 
-1. The work meets a copy that does not fit, and the copy is changed, with its System Kit Copy Change Record.
-2. The Plan Step's gate: the step's System Kit Copy Changes are compared with their System Kit Copy Change Records, and each is kept, edited or reversed, and linked when they share a reason.
+1. A copy is changed, with its System Kit Copy Change Record.
+2. The Plan Step's gate decides each System Kit Copy Change.
 
 **The System Kit Attention Note.** Its rule: (`temp/common-ground-problem.md` §2.1, *A System Kit Attention Note*). A System Kit Attention Note carries what has no System Kit Copy Change to carry it: a misfit with none made, a doubt about a line left as it is, something the System Kit lacked, a copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. System Kit Attention Notes are kept in one known place in the System Repo's records. A System Kit Attention Note never lists a System Kit Copy Change: the System Kit Copy Change Record already says it, and a second line would have to follow every edit and reversal. One about a System Kit Copy Change points at its System Kit Copy Change Record. A System Repo Reading reads the System Kit Attention Notes as well as the copies (§4, step 3).
 
