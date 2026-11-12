@@ -57,7 +57,8 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
                                                     ┊
                                                     ┊
                                                     │
- open: does the next Reading cover c7?           c7 ●  the take: Version 2 comes in           ◀──── 9. Take: main is still c6 and the Version is still 1, so it runs
+ open: does the next Reading cover c7?           c7 ●  the take: Version 2 comes in           ◀──── 9. Take, once it checks: main is still the Reading's stop, c6,
+                                                    │                                               and the Version is still 1, the one the Update was built from
                                                     │                                         ◀──── main moves here? Read says only at a gate
                                                     │
                                                     └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
@@ -85,7 +86,7 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
 | c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | covered by Reading 1 |
 | c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | covered by Reading 1, its stop |
 | no commit | | | 4 to 6. Read, List, Judge: c3 to c6. 7. Act: c6 becomes *read to*. 8. Deliver: the Update waits in `temp/` |
-| c7 | main | 9. the take: main is still c6, so it runs, and Version 2 comes in. Main moves here? Read says only at a gate | open: does the next Reading cover c7? |
+| c7 | main | 9. the take, once it checks: main is still the Reading's stop, c6, and the Version is still 1, the one the Update was built from. Version 2 comes in. Main moves here? Read says only at a gate | open: does the next Reading cover c7? |
 | c8 | step 2's branch | 10. step 2 opens on Version 2 | |
 
 #### Picture 2, the window missed
