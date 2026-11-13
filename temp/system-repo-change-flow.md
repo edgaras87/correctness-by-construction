@@ -200,16 +200,16 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                                     │
                                                     ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still the Reading's stop, c6,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
- The next Reading covers                      │     │         c7 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force: a record
- c7 to c14. Open: how the                     │     │            │                                  of what came, before the take changes anything
- take's changes are told apart                │     │            │
-                                              │     │         c8 ●  the new Adapted Case      ◀──── for taking, at Version 2, put in first; it runs the rest of the take
-                                              │     │            ┊                            ┄┄┄┄┄ the files checked against the Update Note; no commit
-                                              │     │         c9 ●  every Copy at Version 2   ◀──── Copies taken whole; every Record cleared
-                                              │     │            │
-                                              │     │        c10 ●  a Change put back         ◀──── one per Change, each with a fresh Record
-                                              │     │            │
-                                              │     │        c11 ●  a verdict acted on        ◀──── zero or more: unsound reversed or kept, a question answered
+                                                    │         c7 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force: a record
+                                                    │            │                                  of what came, before the take changes anything
+                                                    │            │
+                                                    │         c8 ●  the new Adapted Case      ◀──── for taking, at Version 2, put in first; it runs the rest of the take
+                                                    │            ┊                            ┄┄┄┄┄ the files checked against the Update Note; no commit
+                                                    │         c9 ●  every Copy at Version 2   ◀──── Copies taken whole; every Record cleared
+                                                    │            │
+ The next Reading compares                    ┌     │        c10 ●  a Change put back         ◀──── one per Change, each with a fresh Record
+ c9, the clean copy, with                     │     │            │
+ main (item 2)                                │     │        c11 ●  a verdict acted on        ◀──── zero or more: unsound reversed or kept, a question answered
                                               │     │            │
                                               │     │        c12 ●  Version 2 recorded        ◀──── with the commit that holds it, c9
                                               │     │            │
@@ -266,103 +266,28 @@ Read's rule is narrowed to its reason: a Plan Step's work reaches main only at i
                                                               c8 ●  work, on Version 2
 ```
 
-## 4. After, item 1b
+## 4. After, item 2
 
-The question: after a take, where does the next Reading start (`temp/system-repo-change-simulation.md` §4, step 3, *Open*)? *Read to* is c1, and the take at c2 lies inside Reading 1's span. Only the start of picture 1 changes; the rest stays as in Now.
+The question: what does a look at a System Repo find, and what follows in each case? It replaces item 1b, which asked where the next Reading starts. A Reading reads no commits: it compares two snapshots, so the question is which two. It stands on item 1a's option a.
 
-### Option a, read the take
+A look makes three checks, each from the simulation (`temp/system-repo-change-simulation.md`):
 
-Reading 1 starts after *read to*, c1, and covers the take. Its first part reads c2 alone: it compares the Copies at c2 with Version 1, and what differs is what the System Repo put back at the take. Then the rest is read as usual. This is the answer to try already written into Read step 3's two Opens.
+1. **Main moved:** the System Repo's main against *read to* in the Register (§4, step 1).
+2. **Changes:** the Copies and the Attention Notes' place, compared between an older snapshot and main (§4, step 3). The older snapshot is *read to*, or the clean copy when a take came after *read to*. The take records its Version and the commit that holds it, c9 in item 1a's option a (§8, step 1, *At the take, in order*, item 6). The clean copy is first checked against that Version, which the Maintainer Repo holds.
+3. **Update due:** the Version the take recorded against the newest, or a verdict that waits to go down (§7, step 1, *When one is due*). An Update already waiting in `temp/` is replaced by a newer one, never joined by a second.
 
-```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
- read and acted on                            ┌  c0 ●  earlier work, with Changes
-                                              │     │
- read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
-                                                    │
- Reading 1 covers c2 to c6.                   ┌  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
- First part, c2 alone: its Copies             │     │                                         ◀──── main moves here? Read says only at a gate
- against Version 1; what differs              │     ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
- was put back at the take                     │     │            │
-                                              │     │         c3 ●  work, no Copy changed
-                                              │     │            │
-                                              │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
-                                              │     │            │
-                                              │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
-                                              │     │            │
-                                              └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
-                                                    │            │
- 4 to 6. Read, List, Judge: c2 to c6       ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
- 7. Act: c6 becomes read to                │        ┊
- 8. Deliver: the Update waits in temp/     ┘        ┊
-```
+| Case | Main moved | What the look finds | What follows |
+|---|---|---|---|
+| A | no | the recorded Version is the newest, and no verdict waits | nothing. Copies that differ from the System Kit are the System Repo's kept Changes, judged before *read to* reached main |
+| B | no | the recorded Version is behind, or a verdict waits | an Update is made and delivered |
+| C | yes | no Copy and no Attention Note changed between the two snapshots | *read to* moves to main; nothing is judged |
+| D | yes | Changes or Attention Notes between the two snapshots | the full Reading: listed, judged, acted on |
 
-### Option b, skip the take
+**A step open.** Main stands at the last gate, so the look finds one of A to D by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate to close (§4, step 1, *Where a stretch ends*; §7, step 2, *Before staging*).
 
-Reading 1 starts after the commit the take recorded, c2, not after *read to*, so it covers c3 to c6 (`temp/system-repo-change-simulation.md` §8, step 1, item 6). A Change the System Repo put back inside the take's commit is never read; it is read only if it is made in a commit after c2.
+**What judging ends in, in case D:**
 
-```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
- read and acted on                            ┌  c0 ●  earlier work, with Changes
-                                              │     │
- read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
-                                                    │
- skipped: Reading 1 starts after c2 ─▶           c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
-                                                    │                                         ◀──── main moves here? Read says only at a gate
-                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
-                                                    │            │
-                                              ┌     │         c3 ●  work, no Copy changed
- Reading 1                                    │     │            │
- covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
- c3 to c6                                     │     │            │
-                                              │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
-                                              │     │            │
-                                              └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
-                                                    │            │
- 4 to 6. Read, List, Judge: c3 to c6       ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
- 7. Act: c6 becomes read to                │        ┊
- 8. Deliver: the Update waits in temp/     ┘        ┊
-```
+1. every line judged the System Repo's own, and every proposal holds: nothing is acted on or sent, and *read to* moves to the Reading's stop;
+2. a verdict changes the System Kit, or goes down: unsound, misread, a proposal that does not hold, or a question for a line with no why (§7, step 1). It is acted on, *read to* moves, and check 3 then finds an Update due.
 
-### Option c, start at the commit holding the Version
-
-Drawn on item 1a's take, where each part of the take is its own commit. A Reading compares each Copy at two points, its start and its stop, and the Records in the Copies say the why (`temp/system-repo-change-simulation.md` §4, step 3, option a). After a take, the start is the later of *read to* and the commit the take recorded as holding the new Version, c9 here: from there, everything that differs is the System Repo's own. The take's System Kit part, c7 to c9, is skipped; what it put back, c10, and the verdicts it acted on, c11, are read, with the step's new work. A Change put back carries a fresh Record saying so, so it is told apart from a new one; where the take ended, c14, could mark the split as well, but is not needed for it.
-
-```
- Maintainer Repo                                   main      branches                              System Repo
- ───────────────                                   ────      ────────                              ───────────
- read to: Reading 1's stop ─▶                    c6 ●  step 1's gate closed
-                                                    │
-                                                    ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still c6, Version still 1
-                                                    │            │
- skipped: the System Kit's part                     │         c7 ●  the Update, as it arrived
-                                                    │            │
-                                                    │         c8 ●  the new Adapted Case
-                                                    │            │
- Reading 2 starts after c9 ─▶                       │         c9 ●  every Copy at Version 2   ◀──── the commit that holds Version 2
-                                                    │            │
- Reading 2 covers                             ┌     │        c10 ●  a Change put back         ◀──── with its fresh Record, saying so
- c10 to c17:                                  │     │            │
- the System Repo's                            │     │        c11 ●  a verdict acted on
- own part only                                │     │            │
-                                              │     │        c12 ●  Version 2 recorded        ◀──── with the commit that holds it, c9
-                                              │     │            │
-                                              │     │        c13 ●  the Update removed
-                                              │     │            │
-                                              │     │        c14 ●  the gate closes           ◀──── the take's gate decides each Change put back, and closes
-                                              │     │            │
-                                              │ c14 ● ◀──────────┘                            ◀──── main moves to c14 by fast-forward, at the gate's close
-                                              │     │
-                                              │     └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
-                                              │                  │
-                                              │              c15 ●  work, no Copy changed
-                                              │                  │
-                                              │              c16 ●  a Copy changed            ◀──── 1. a Change, with its Record
-                                              │                  │
-                                              └              c17 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
-                                                                 │
- 4 to 7. Read, List, Judge, Act:              ┐ c17 ● ◀──────────┘                            ◀──── main moves to c17 by fast-forward
- c10 to c17; c17 becomes read to              ┘     ┊
-```
+**Open:** a Change put back at a take is read like any other, and whether it is judged again is open (§4, step 3, Open).
