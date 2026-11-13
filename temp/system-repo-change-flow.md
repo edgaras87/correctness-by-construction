@@ -208,28 +208,30 @@ Key: as in picture 1.
 | c17 | the take's branch, then main | the take's gate decides each Change put back, and closes; main moves to c17 by fast-forward | main's latest snapshot, until step 3's work reaches main |
 | c18 | step 3's branch | 10. step 3 opens on Version 2 | |
 
-### The Maintainer Repo's flow
+### A look, to the Update staged
 
 What the Maintainer Repo does with one System Repo, from a look at main to the Update staged, drawn as its choices. Each step names its section of `temp/system-repo-change-simulation.md`.
 
 ```mermaid
 flowchart TD
-  start(["the human names a System Repo"]) --> c1{"main moved?"}
-  c1 -- yes --> c2{"Copy or Attention Note changed?"}
+  start(["the human names a System Repo: a look at main"]) --> c1{"main moved past read to?"}
+  c1 -- yes --> c2{"anything new to read?"}
   c1 -- no --> c3
-  c2 -- "no: case C" --> C["read to moves to main"]
-  c2 -- "yes: case D" --> D["the full Reading: Read, List, Judge, Act (§4 to §6)"]
+  c2 -- "no: case C" --> C["move read to up to main; nothing judged"]
+  c2 -- "yes: case D, a Reading" --> D["read, list, judge, act (§4 to §6)"]
   C --> c3
-  D --> c3{"Update due?"}
-  c3 -- "no: case A" --> none(["nothing follows"])
-  c3 -- "yes: case B" --> make["the Update made, when work resumes (§7, step 1)"]
-  make --> ok{"word given, tree clean?"}
-  ok -- no --> wait["the agent waits"]
-  ok -- yes --> stage["the Update staged in temp/ (§7, step 2)"]
-  stage --> take(["the take (§8)"])
+  D --> c3{"Version behind?"}
+  c3 -- "yes: case B" --> make["once work resumes, make the Update (§7, step 1)"]
+  c3 -- no --> v{"a verdict waiting?"}
+  v -- "yes: case B" --> make
+  v -- "no: case A" --> none(["the look ends"])
+  make --> ok{"clear to stage?"}
+  ok -- "no: no word, or work under way" --> wait["say what was found; wait for the word"]
+  ok -- yes --> stage["stage the Update in temp/ (§7, step 2)"]
+  stage --> take(["the System Repo takes it (§8)"])
 ```
 
-**Open:** after case C or D, the look asks check 3, *Update due?*, so it also reaches case A or case B. Whether a look then ends in one case or in two is the simulation's to decide (§4, step 1, *A look at main*).
+**Open:** after case C or D, the look asks check 3, *Version behind?* and *a verdict waiting?*, so it also reaches case A or case B. Whether a look then ends in one case or in two is the simulation's to decide (§4, step 1, *A look at main*).
 
 ### A look's cases
 
