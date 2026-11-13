@@ -15,8 +15,8 @@ take, the older snapshot a Reading compares is the clean copy,
 checked against its Version.
 
 The flow file's Now pictures the simulation as it then stands. Its
-two After sections, item 1a and item 2, are gone. Cases A to D each
-have a picture of their own. A Change put back at a take is judged
+two After sections, item 1a and item 2, are gone. How cases A to D
+are shown is work of its own, a TODO item. A Change put back at a take is judged
 like any other; a Change that comes back and is never settled is
 left to practice, as an Open.
 
@@ -90,34 +90,16 @@ every take is refused. Found by commit 4's check of case 2.
 The found-item-1 line in Now's intro, the 1a section and item 2 go.
 Their facts now live in the simulation.
 
-**6a to 6d. One picture per case, A to D** (refined from commit 6)
-A new `### A look's cases` under Now, after picture 2. Each case has
-its own heading, picture, "Key: as in picture 1" and a short table,
-citing the simulation (§4, step 1, *A look at main*). Each picture
-starts from a state the reader holds, stops once its case shows,
-and is checked against R1 to R6. A case that shows something the
-simulation lacks is a revision of this plan, not a silent fix.
+**6a. `docs: temp's R5 asks for the two snapshots`** (replaces 6a to 6d)
+The flow file's R5 asks which two snapshots each Reading compares,
+not where it starts and stops.
 
-**6a. `docs: temp's Now draws case A`**
-*Read to* is main, the Version is the newest, and no verdict waits:
-the look finds nothing, and kept Changes are not read again. R5
-gains snapshot words: which two snapshots each Reading compares.
-Folded in here, since case A's picture is the first checked
-against it.
-
-**6b. `docs: temp's Now draws case B`**
-*Read to* is main, but the System Kit has moved to Version 2: an
-Update is made and delivered, and the take follows as in picture 1.
-
-**6c. `docs: temp's Now draws case C`**
-After a take that put nothing back: the clean copy and main at the
-take's gate hold the same Copies, so *read to* moves, and check 3
-runs again.
-
-**6d. `docs: temp's Now draws case D`**
-After a take that put one Change back, then a step with one Change:
-the full Reading, the Change put back judged like any other. C and
-D both start after a take, and differ only in what it put back.
+**6b. `docs: temp's opening order has an Update when due`**
+§8, step 1: the order before a step opens has the Update made,
+delivered and taken when one is due, and the gate-list question at
+an opening asks the same. Both read as if an Update always comes,
+though §7, step 1 sends one only when it carries something. Found
+by case A's drawing.
 
 ## Decisions taken inside this plan
 
@@ -137,3 +119,8 @@ D both start after a take, and differ only in what it put back.
 - **No records commit inside the plan.** No ADR, glossary entry or
   CHANGELOG line is due, since the drafts in `temp/` are not the concept.
   The devlog entry is written at the session's end.
+- **The case pictures leave the plan.** Case A's commit picture
+  repeated picture 1, and showed its case in three lines. A look is
+  a choice between four outcomes, so its form, a picture of commits,
+  a diagram or the table, is chosen first, as work of its own with
+  the visual-comparison Agent Skill.
