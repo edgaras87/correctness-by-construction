@@ -14,10 +14,13 @@ No Living Text says *read to* any more. History keeps its words.
 This plan.
 
 **2. `docs: temp's problem names the settled snapshot`**
-`temp/common-ground-problem.md`, 8 uses. The problem file is the label's home: the Register's Defined Term and its entry list it. Its definition changes from "the commit its last System Repo Reading stopped at" to the snapshot at that commit, read, judged and acted on. First, so that the files after it follow a name already defined.
+`temp/common-ground-problem.md`, 8 uses. The problem file is the label's home: the Register's Defined Term and its entry list it. Its definition changes from "the commit the next System Repo Reading starts from" to what the snapshot is: read, judged and acted on up to there, holding the System Kit Version the System Repo had then, which may be behind the newest. "Starts from" goes, since a Reading compares two snapshots and walks no commits. First, so that the files after it follow a name already defined.
+
+**2b. `docs: TODO sweeps the drafts for commit walks`**
+A TODO item: words that read as walking commits, such as "runs from … to main" and "across that span", where a Reading compares two snapshots. A sweep of its own, not part of this rename.
 
 **3. `docs: temp's simulation says settled snapshot`**
-`temp/system-repo-change-simulation.md`, 15 uses, the *Snapshots* paragraph among them. Each changed sentence re-read for what it now claims.
+`temp/system-repo-change-simulation.md`, 15 uses, the *Snapshots* paragraph among them. That paragraph keeps its sentences and points at the label's home with a Fact Reference (`temp/common-ground-problem.md`, *Defined Terms*), so the settled snapshot has one home. Each changed sentence re-read for what it now claims.
 
 **4. `docs: temp's flow says settled snapshot`**
 `temp/system-repo-change-flow.md`, 21 uses, most inside the box-drawing pictures and the Mermaid chart. The pictures are realigned by script; their line counts and the columns of `●` and `│` are counted before and after. The chart is rendered again and looked at.
