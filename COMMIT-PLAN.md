@@ -76,6 +76,16 @@ as §8, step 1, *Before the take* writes it: whether it still holds,
 and how it is worded. A case that does not hold is a revision of
 this plan.
 
+**4b. `docs: temp's refused take goes through a look`** (inserted)
+The simulation's case 2 (§8, step 1, *Before the take*) is reworded:
+there is no take, and the System Repo says so; the human has it
+looked at, the look finds case C or D (§4, step 1, *A look at
+main*), and a new Update replaces the waiting one. *Old Records*
+loses "span" for snapshot words. Case C's *What follows* gains "then
+check 3 again": after a refused take with no Copy changed, the
+waiting Update still names the old stop, and without a new one
+every take is refused. Found by commit 4's check of case 2.
+
 **5. `docs: temp's flow drops its decided After items`**
 The found-item-1 line in Now's intro, the 1a section and item 2 go.
 Their facts now live in the simulation.
