@@ -199,7 +199,7 @@ Four steps:
   |---|---|---|---|
   | A | no | the Version is the newest, and no verdict waits | nothing. Copies that differ from the System Kit are the System Repo's kept Changes, judged before *read to* reached main |
   | B | no | the Version is behind, or a verdict waits | an Update is made and delivered (§7) |
-  | C | yes | no Copy and no Attention Note changed between the two snapshots | *read to* moves to main; nothing is judged |
+  | C | yes | no Copy and no Attention Note changed between the two snapshots | *read to* moves to main; nothing is judged; then check 3 again |
   | D | yes | Changes or Attention Notes between the two snapshots | the full Reading: listed, judged and acted on, then check 3 again |
 
   A Plan Step open in the System Repo changes no case: main stands at the last gate, so the look finds its case by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate (§7, step 2, *Before staging*).
@@ -536,11 +536,11 @@ Two steps:
 
   **Before the take.** The opening order follows the fixed order already set: reading back, judging, then the Update (`temp/common-ground-problem.md` §2.1, *An update*). An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old Copies first; the human may instead drop or restart it, when the Update changes a rule it rests on. The take checks first, from the Update Note, what the System Repo itself can see:
   - case 1, its main is still the Reading's stop, and its Version is the one the Update was built from: the Update is taken;
-  - case 2, anything else: there is no take, and the System Repo says so, which starts a Reading. The cycle runs again from *read to*: the new span is read, judged against the System Kit as it is now, the Maintainer Repo's changes made, and a new Update made. It replaces the waiting one and carries its verdicts not yet sent (§7, step 1).
+  - case 2, anything else: there is no take, and the System Repo says so. The human has it looked at, and the look finds its case, C or D when main has moved (§4, step 1, *A look at main*). Its check 3 then finds a new Update due, made against the System Kit as it is now. It replaces the waiting one and carries its verdicts not yet sent (§7, step 1).
 
   **A check before delivery.** The Maintainer Repo may compare the System Repo's main with the stop before delivery too, to save a delivery bound to fail. A System Kit moved since the Update was made is no reason to refuse it: the Update is correct, if not the latest, and the next brings the rest.
 
-  **Old Records.** A gate may have fixed, merged or dropped Records the Update answered. These show in the new span as Changes with their Records, and are judged like any. Records from before *read to* still in the Copies are cleared at the take, and what is still needed comes back with a fresh Record, judged in the next Reading.
+  **Old Records.** A gate may have fixed, merged or dropped Records the Update answered. These show in the next Reading's comparison as Changes with their Records, and are judged like any. Records from before *read to* still in the Copies are cleared at the take, and what is still needed comes back with a fresh Record, judged in the next Reading.
 
   **At the take, in order.** Once the check finds case 1, the take cuts a branch from main, the Reading's stop. Its first commit is the Update as it arrived, in `temp/`, not yet in force: a record of what came, before the take changes anything. Each item below is then a commit of its own, but item 2, a check. Items 4 and 5 make one commit per Change put back and per verdict acted on, zero or more. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§4, step 1, *Where a stretch ends*).
   1. the Adapted Case for taking an Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
