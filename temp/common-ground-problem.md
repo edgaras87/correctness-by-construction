@@ -41,7 +41,7 @@ Defined Terms, in alphabetical order:
 - **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
 - **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
 - **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns.
-- **Maintainer Repo Register:** the Maintainer Repo's list of its System Repos: where each lives, and its *read to*.
+- **Maintainer Repo Register:** the Maintainer Repo's list of its System Repos: where each lives, and its *settled snapshot*.
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
 - **Project-Agnostic Understanding Text:** an Understanding Text bound to no project.
@@ -69,7 +69,7 @@ Labels:
 - *kind*: Understanding Text, Instruction Text
 - *where*: *the Maintainer Repo*, *a System Repo*; a Failure Case is *either* or *between*
 - Text Life Phase: *writing*, *aging*, *reading*
-- Maintainer Repo Register: *read to*, the System Repo's commit the next System Repo Reading starts from
+- Maintainer Repo Register: *settled snapshot*, the System Repo's snapshot up to which the Maintainer Repo has read, judged and acted on. It holds the System Kit Version the System Repo had then, which may be behind the newest.
 
 ## 1. The purpose
 
@@ -181,7 +181,7 @@ The rules of Change and Read come from one case, one Adapted Case changed in any
 
 ##### Read
 
-**Reading a change.** The Maintainer Repo Register keeps, for each System Repo, where it lives and *read to*, the commit its last System Repo Reading stopped at. *Read to* moves to a System Repo Reading's stop once its verdicts are acted on, right after judging when they ask for no change, never before. Birth sets *read to* to the commit holding the copies as they arrived, so it is never empty. A System Repo has work to read when its main has moved past *read to*. It is checked when the human names it, and every System Repo is when the human asks what to read. A System Repo Reading runs from *read to* to main, so it reads only closed Plan Steps, and it writes main down before reading anything. It compares the System Kit's folders and the System Kit Attention Notes' place across that span, in the System Repo's own history, and pairs each System Kit Copy Change with its System Kit Copy Change Record in the same diff. So a System Kit Copy Change with no System Kit Copy Change Record is still found (Failure Case 22), and one already read is not found again. A look past main may be asked for; it moves nothing, and gives only System Kit Attention Notes. Open: a System Kit Update lands inside the next span, and how its changes are told from the System Repo's own. Its trigger: the first System Kit Update to reach a System Repo whose copies have System Kit Copy Change Records.
+**Reading a change.** The Maintainer Repo Register keeps, for each System Repo, where it lives and its *settled snapshot*, the snapshot at the commit its last System Repo Reading stopped at. The *settled snapshot* moves to a System Repo Reading's stop once its verdicts are acted on, right after judging when they ask for no change, never before. Birth sets the *settled snapshot* at the commit holding the copies as they arrived, so it is never empty. A System Repo has work to read when its main has moved past the *settled snapshot*. It is checked when the human names it, and every System Repo is when the human asks what to read. A System Repo Reading runs from the *settled snapshot* to main, so it reads only closed Plan Steps, and it writes main down before reading anything. It compares the System Kit's folders and the System Kit Attention Notes' place across that span, in the System Repo's own history, and pairs each System Kit Copy Change with its System Kit Copy Change Record in the same diff. So a System Kit Copy Change with no System Kit Copy Change Record is still found (Failure Case 22), and one already read is not found again. A look past main may be asked for; it moves nothing, and gives only System Kit Attention Notes. Open: a System Kit Update lands inside the next span, and how its changes are told from the System Repo's own. Its trigger: the first System Kit Update to reach a System Repo whose copies have System Kit Copy Change Records.
 
 **The list.** A System Repo Reading is one line per System Kit Copy Change and per System Kit Attention Note, nothing judged: the System Repo's proposal stays a proposal. System Kit Copy Changes with one reason are listed together. The human checks that the list is whole. The System Repo Reading is a draft, and goes once its work is done.
 
@@ -259,7 +259,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | Defined Term | In the Maintainer Repo today |
 |---|---|
 | Maintainer Repo | the Concept Deliverer, a Concept Repo by its Tiers Model: `correctness-by-construction` |
-| Maintainer Repo Register | the list of CBC Runs (`ARCHITECTURE.md` §2.5, *The CBC Runs*). Its *read to* is today's Read-Through Commit, kept in the CBC Run instead |
+| Maintainer Repo Register | the list of CBC Runs (`ARCHITECTURE.md` §2.5, *The CBC Runs*). Its *settled snapshot* is today's Read-Through Commit, kept in the CBC Run instead |
 | System Repo | a CBC Run |
 | System Kit | the delivery, `delivery/`: the Container Group, the Method Group and a Stack Group, with the concept and each group's Glossary Names |
 | System Kit Copy | a CBC Run's copy of a Master Copy |
