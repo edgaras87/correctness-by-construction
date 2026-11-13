@@ -524,7 +524,7 @@ Two steps:
   6. the new Version is recorded, with the System Repo's commit that holds it, so the next Update finds its base;
   7. the Update and its Update Note are removed from `temp/`.
 
-  **A postponed take.** A take may be postponed, with its why. Work then goes on with the old Copies, and the order runs again at the next opening: the Reading is extended, and a newer Update replaces the waiting one (§7, step 1).
+  **A postponed take.** A take may be postponed, with its why. Work then goes on with the old Copies. At the next opening, the take starts again from its check, case 1 or case 2 (*Before the take*).
 
   **What a Record stands against.** Every Record stands against the last Version taken, or birth's, and every Record goes at a take, rewritten when its difference stays. This is confirmed at the first Update to reach a System Repo whose Copies have Records.
 - **Adapted Case:**

@@ -123,7 +123,7 @@ Step 2 opened before the take: the Update waited in `temp/`, and the human postp
                                                     └─ cut ──────┐                            ◀──── 9. the take postponed, with its why
                                                                  │                            ◀──── 10. step 2 opens on Version 1
                                               ┌               c7 ●  work, on Version 1
- read again                                   │                  │
+ Reading 2 covers                             │                  │
  c7 to c9                                     │               c8 ●  a Copy changed            ◀──── 1. a Change, with its Record
                                               │                  │
                                               └               c9 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
@@ -147,9 +147,9 @@ Key: as in picture 1.
 | c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | covered by Reading 1 |
 | c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | covered by Reading 1, its stop |
 | no commit | | 9. the take postponed, with its why | 4 to 8. Read, List, Judge, Act, Deliver: c2 to c6; c6 becomes *read to*; the Update waits in `temp/` |
-| c7 | step 2's branch | 10. step 2 opens: work on Version 1 | covered by the Reading again |
-| c8 | step 2's branch | 1. a Change: a Copy changed, with its Record | covered by the Reading again |
-| c9 | step 2's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c9 by fast-forward | covered by the Reading again, its stop |
+| c7 | step 2's branch | 10. step 2 opens: work on Version 1 | covered by Reading 2 |
+| c8 | step 2's branch | 1. a Change: a Copy changed, with its Record | covered by Reading 2 |
+| c9 | step 2's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c9 by fast-forward | covered by Reading 2, its stop |
 | no commit | | 9. the take: main is c9, not c6, so it is refused | |
 | no commit | | | 4 to 8 again. Read, List, Judge, Act, Deliver: c7 to c9; c9 becomes *read to*; a new Update replaces the waiting one, and carries its verdicts not yet sent (`temp/system-repo-change-simulation.md` §8, step 1, *Before the take*) |
 
