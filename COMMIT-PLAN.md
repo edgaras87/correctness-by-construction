@@ -30,6 +30,13 @@ the clean-copy commit. The Change part's commit check (§3, step 1)
 says "its commits", since a take now makes several. Its own commit,
 since Read (commit 2) stands on it.
 
+**1b. `docs: temp's take sits between two Plan Steps`** (inserted)
+§8, step 1's *What must happen* opens: the Update is taken between
+two Plan Steps, when the next is about to open, never in the middle
+of one. It said "when the next Plan Step opens", then "before that
+step opens". With its own branch and gate, the take sits outside
+both steps.
+
 **2. `docs: temp's look ends in one of four cases`**
 The simulation's Read part (§4): a look's three checks and cases A to
 D, and after a take, the clean copy as the older snapshot, checked
@@ -50,11 +57,17 @@ commit 1: its parts on a branch, the gate, main moving at c14. c2
 loses its "main moves here?" mark. The next Reading compares from
 the clean copy. The Key no longer says a bracket marks the commits
 a Reading covers: it shows the two snapshots compared, and the
-commits between them are history.
+commits between them are history. The take's case 1, the take that
+passes its check, is checked against the redraw, as §8, step 1,
+*Before the take* writes it.
 
 **4. `docs: temp's Now picture 2 takes the new take`**
 Picture 2 and its table, the same way. Its own commit: picture 2's
 round, the postponed take and the refused take, has more to check.
+The take's case 2, the refused take, is checked against the redraw,
+as §8, step 1, *Before the take* writes it: whether it still holds,
+and how it is worded. A case that does not hold is a revision of
+this plan.
 
 **5. `docs: temp's flow drops its decided After items`**
 The found-item-1 line in Now's intro, the 1a section and item 2 go.
