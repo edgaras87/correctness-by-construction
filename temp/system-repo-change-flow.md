@@ -39,27 +39,27 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
                                               │     │
  read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
                                                     │
- open: does Reading 1 cover c2?                  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
-                                                    │
-                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
-                                                    │            │
-                                              ┌     │         c3 ●  work, no Copy changed
- Reading 1                                    │     │            │
- covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
- c3 to c6                                     │     │            │
+ Reading 1 covers c2 to c6.                   ┌  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
+ Open: how the take's changes                 │     │
+ in c2 are told apart from the                │     ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+ System Repo's own                            │     │            │
+                                              │     │         c3 ●  work, no Copy changed
+                                              │     │            │
+                                              │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
+                                              │     │            │
                                               │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
                                               │     │            │
                                               └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
                                                     │            │
- 4 to 6. Read, List, Judge: c3 to c6       ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
+ 4 to 6. Read, List, Judge: c2 to c6       ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
  7. Act: c6 becomes read to                │        ┊
  8. Deliver: the Update waits in temp/     ┘        ┊
                                                     ┊
                                                     ┊
                                                     │
- open: does the next Reading cover c7?           c7 ●  the take: Version 2 comes in           ◀──── 9. Take, once it checks: main is still the Reading's stop, c6,
-                                                    │                                               and the Version is still 1, the one the Update was built from
-                                                    │                                         ◀──── main moves here? Read says only at a gate
+ The next Reading covers c7.                     c7 ●  the take: Version 2 comes in           ◀──── 9. Take, once it checks: main is still the Reading's stop, c6,
+ Open: how the take's changes                       │                                               and the Version is still 1, the one the Update was built from
+ are told apart                                     │                                         ◀──── main moves here? Read says only at a gate
                                                     │
                                                     └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
                                                                  │
@@ -80,13 +80,13 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
 |---|---|---|---|
 | c0 | main | earlier work, with Changes | read and acted on |
 | c1 | main | earlier work, the last stop | read and acted on; *read to* |
-| c2 | main | 9. the last take: main was still c1, and Version 1 comes in | open: does Reading 1 cover c2? |
+| c2 | main | 9. the last take: main was still c1, and Version 1 comes in | covered by Reading 1; open: how the take's changes are told apart from the System Repo's own |
 | c3 | step 1's branch | work, no Copy changed | covered by Reading 1 |
 | c4 | step 1's branch | 1. a Change: a Copy changed, with its Record | covered by Reading 1 |
 | c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | covered by Reading 1 |
 | c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | covered by Reading 1, its stop |
-| no commit | | | 4 to 6. Read, List, Judge: c3 to c6. 7. Act: c6 becomes *read to*. 8. Deliver: the Update waits in `temp/` |
-| c7 | main | 9. the take, once it checks: main is still the Reading's stop, c6, and the Version is still 1, the one the Update was built from. Version 2 comes in. Main moves here? Read says only at a gate | open: does the next Reading cover c7? |
+| no commit | | | 4 to 6. Read, List, Judge: c2 to c6. 7. Act: c6 becomes *read to*. 8. Deliver: the Update waits in `temp/` |
+| c7 | main | 9. the take, once it checks: main is still the Reading's stop, c6, and the Version is still 1, the one the Update was built from. Version 2 comes in. Main moves here? Read says only at a gate | covered by the next Reading; open: how the take's changes are told apart |
 | c8 | step 2's branch | 10. step 2 opens on Version 2 | |
 
 #### Picture 2, the window missed
@@ -100,20 +100,20 @@ Step 2 opened before the take: the human started it before the Update came, or p
                                               │     │
  read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
                                                     │
- open: does Reading 1 cover c2?                  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
-                                                    │
-                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
-                                                    │            │
-                                              ┌     │         c3 ●  work, no Copy changed
- Reading 1                                    │     │            │
- covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
- c3 to c6                                     │     │            │
+ Reading 1 covers c2 to c6.                   ┌  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
+ Open: how the take's changes                 │     │
+ in c2 are told apart from the                │     ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+ System Repo's own                            │     │            │
+                                              │     │         c3 ●  work, no Copy changed
+                                              │     │            │
+                                              │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
+                                              │     │            │
                                               │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
                                               │     │            │
                                               └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
                                                     │            │
  4 to 7. Read, List, Judge, Act:           ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
- c3 to c6; c6 becomes read to              ┘        ┊
+ c2 to c6; c6 becomes read to              ┘        ┊
                                                     │
                                                     └─ cut ──────┐                            ◀──── 10. step 2 opened before the take
                                                                  │
@@ -135,12 +135,12 @@ Key: as in picture 1.
 |---|---|---|---|
 | c0 | main | earlier work, with Changes | read and acted on |
 | c1 | main | earlier work, the last stop | read and acted on; *read to* |
-| c2 | main | 9. the last take: main was still c1, and Version 1 comes in | open: does Reading 1 cover c2? |
+| c2 | main | 9. the last take: main was still c1, and Version 1 comes in | covered by Reading 1; open: how the take's changes are told apart from the System Repo's own |
 | c3 | step 1's branch | work, no Copy changed | covered by Reading 1 |
 | c4 | step 1's branch | 1. a Change: a Copy changed, with its Record | covered by Reading 1 |
 | c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | covered by Reading 1 |
 | c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | covered by Reading 1, its stop |
-| no commit | | | 4 to 7. Read, List, Judge, Act: c3 to c6; c6 becomes *read to* |
+| no commit | | | 4 to 7. Read, List, Judge, Act: c2 to c6; c6 becomes *read to* |
 | c7 | step 2's branch | 10. step 2 opened before the take: work on Version 1 | covered by the Reading again |
 | no commit | | | 8. Deliver: the Update waits in `temp/` |
 | c8 | step 2's branch | 1. a Change: a Copy changed, with its Record | covered by the Reading again |
@@ -163,19 +163,19 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                               │     │
  read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
                                                     │
- open: does Reading 1 cover c2?                  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
-                                                    │
-                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
-                                                    │            │
-                                              ┌     │         c3 ●  work, no Copy changed
- Reading 1                                    │     │            │
- covers                                       │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
- c3 to c6                                     │     │            │
+ Reading 1 covers c2 to c6.                   ┌  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
+ Open: how the take's changes                 │     │
+ in c2 are told apart from the                │     ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+ System Repo's own                            │     │            │
+                                              │     │         c3 ●  work, no Copy changed
+                                              │     │            │
+                                              │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
+                                              │     │            │
                                               │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
                                               │     │            │
                                               └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
                                                     │            │
- 4 to 6. Read, List, Judge: c3 to c6       ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
+ 4 to 6. Read, List, Judge: c2 to c6       ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
  7. Act: c6 becomes read to                │        ┊
  8. Deliver: the Update waits in temp/     ┘        ┊
                                                     ┊
@@ -183,19 +183,19 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                                     │
                                                     ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still the Reading's stop, c6,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
- open: does                                   ┌     │         c7 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force: a record
- the next Reading                             ┆     │            │                                  of what came, before the take changes anything
- cover c7 to c13?                             ┆     │            │
-                                              ┆     │         c8 ●  the new Adapted Case      ◀──── for taking, at Version 2, put in first; it runs the rest of the take
-                                              ┆     │            ┊                            ┄┄┄┄┄ the files checked against the Update Note; no commit
-                                              ┆     │         c9 ●  every Copy at Version 2   ◀──── Copies taken whole; every Record cleared
-                                              ┆     │            │
-                                              ┆     │        c10 ●  a Change put back         ◀──── one per Change, each with a fresh Record
-                                              ┆     │            │
-                                              ┆     │        c11 ●  a verdict acted on        ◀──── zero or more: unsound reversed or kept, a question answered
-                                              ┆     │            │
-                                              ┆     │        c12 ●  Version 2 recorded        ◀──── with the commit that holds it, c9
-                                              ┆     │            │
+ The next Reading covers                      │     │         c7 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force: a record
+ c7 to c13. Open: how the                     │     │            │                                  of what came, before the take changes anything
+ take's changes are told apart                │     │            │
+                                              │     │         c8 ●  the new Adapted Case      ◀──── for taking, at Version 2, put in first; it runs the rest of the take
+                                              │     │            ┊                            ┄┄┄┄┄ the files checked against the Update Note; no commit
+                                              │     │         c9 ●  every Copy at Version 2   ◀──── Copies taken whole; every Record cleared
+                                              │     │            │
+                                              │     │        c10 ●  a Change put back         ◀──── one per Change, each with a fresh Record
+                                              │     │            │
+                                              │     │        c11 ●  a verdict acted on        ◀──── zero or more: unsound reversed or kept, a question answered
+                                              │     │            │
+                                              │     │        c12 ●  Version 2 recorded        ◀──── with the commit that holds it, c9
+                                              │     │            │
                                               └     │        c13 ●  the Update removed        ◀──── the Update and the Update Note leave temp/
                                                     │            │
                                                 c13 ● ◀──────────┘                            ◀──── main moves to c13 by fast-forward, the take's checks its gate
