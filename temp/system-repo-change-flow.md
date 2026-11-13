@@ -167,7 +167,7 @@ Key: as in picture 1.
 
 ## 3. After, item 1a
 
-The question: where does the take happen, so that main still moves only at a close? Only the end of picture 1 changes; the rest stays as in Now. Options b and c of item 1a, the next Plan Step's first commit and a Plan Step of its own, were drawn once and dropped; they can be drawn again.
+The question: where does the take happen, and must main move only at a close? Option a changes only the end of picture 1; the rest stays as in Now. Options b and c of item 1a, the next Plan Step's first commit and a Plan Step of its own, were drawn once and dropped; they can be drawn again.
 
 ### Option a, a take of its own, on a branch
 
@@ -220,6 +220,48 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                                     └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
                                                                  │
                                                              c14 ●  work, on Version 2
+```
+
+### Option d, the rule narrowed
+
+Read's rule is narrowed to its reason: a Plan Step's work reaches main only at its gate's close, by fast-forward, so a Reading never reads Changes a gate may still edit or reverse (`temp/system-repo-change-simulation.md` §4, step 1, *Chosen*). Today's playbook says the same: a Plan Step reaches main by fast-forward from its branch (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). Main then moves in two ways only: at a gate's close, and at a take. A take is not a Change (§3, step 1), and what it puts back is decided by the human at the take (§8, step 1), so nothing on main waits for a gate. The take stays one commit on main, as in Now; only the marks at c2 and c7 change.
+
+```
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ read and acted on                            ┌  c0 ●  earlier work, with Changes
+                                              │     │
+ read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
+                                                    │
+ Reading 1 covers c2 to c6.                   ┌  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1
+ Open: how the take's changes                 │     │                                         ◀──── main moves to c2 by the take, which the rule allows
+ in c2 are told apart from the                │     ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+ System Repo's own                            │     │            │
+                                              │     │         c3 ●  work, no Copy changed
+                                              │     │            │
+                                              │     │         c4 ●  a Copy changed            ◀──── 1. a Change, with its Record
+                                              │     │            │
+                                              │     │         c5 ●  another Copy changed      ◀──── 1. another Change, with its Record
+                                              │     │            │
+                                              └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
+                                                    │            │
+ 4 to 6. Read, List, Judge: c2 to c6       ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
+ 7. Act: c6 becomes read to                │        ┊
+ 8. Deliver: the Update waits in temp/     ┘        ┊
+                                                    ┊
+                                                    ┊
+                                                    │
+ The next Reading covers c7.                     c7 ●  the take: Version 2 comes in           ◀──── 9. Take, once it checks: main is still the Reading's stop, c6,
+ Open: how the take's changes                       │                                               and the Version is still 1, the one the Update was built from
+ are told apart                                     │                                               In order: the Adapted Case for taking first; the files checked
+                                                    │                                               against the Update Note; every Copy taken whole, every Record
+                                                    │                                               cleared; Changes still needed put back, each with a fresh Record;
+                                                    │                                               verdicts acted on; Version 2 recorded; the Update removed from temp/
+                                                    │                                         ◀──── main moves to c7 by the take, which the rule allows
+                                                    │
+                                                    └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
+                                                                 │
+                                                              c8 ●  work, on Version 2
 ```
 
 ## 4. After, item 1b
