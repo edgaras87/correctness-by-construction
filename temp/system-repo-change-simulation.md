@@ -167,7 +167,7 @@ Four steps:
 3. It compares the Copies, and reads each Record.
 4. It lists what changed, nothing judged.
 
-**Snapshots.** A Reading compares two snapshots of the System Repo, and never walks its commits. *Read to* is the snapshot already taken into account. Main's latest snapshot is the one checked, and becomes the Reading's stop. The commits between them are history, opened only to understand something deeper. The clean copy a take leaves is the one special point, used only after a take (step 2, *After a take*).
+**Snapshots.** A Reading compares two snapshots of the System Repo, and never walks its commits. *Read to* is the snapshot already taken into account. It holds the Version the System Repo had recorded then (§8, step 1, *At the take, in order*, item 6), so the last Version the Maintainer Repo saw is read from it, never kept apart. Main's latest snapshot is the one checked, and becomes the Reading's stop. The commits between them are history, opened only to understand something deeper. The clean copy a take leaves is the one special point, used only after a take (step 2, *After a take*).
 
 **Step 1. The stretch of work ends, and the Maintainer Repo is told.**
 
