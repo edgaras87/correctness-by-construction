@@ -34,6 +34,26 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Decide whether the Maintainer Repo must check the take's
+      window before it delivers a System Kit Update, and what the
+      check looks at (2026-11-13, the reviewer).
+      Context: the Maintainer Repo may compare the System Repo's main
+      with the Reading's stop before delivery, a may, not a must
+      (`temp/system-repo-change-simulation.md` §8, step 1, *A check
+      before delivery*). Staging waits for the human's word when
+      work is under way (§7, step 2, *Before staging*). A Plan Step
+      on a branch leaves main at the stop, so a check of main alone
+      passes. A take postponed after delivery goes stale whatever
+      the check found.
+      Ideas:
+      - the check is a must: a missed window means no delivery, and
+        the Reading is extended instead;
+      - the check asks whether a Plan Step is open, not only where
+        main is.
+      Trigger: Now in `temp/system-repo-change-flow.md` pictures the
+      simulation as it stands; the question is then drawn as an After
+      item there.
+
 - [ ] Design how a document is refined: a broad Adapted Case, an
       Output Shape read after the work, and how each corrects the
       other (2026-11-12, the reviewer).
