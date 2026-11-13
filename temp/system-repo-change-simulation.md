@@ -550,7 +550,7 @@ Two steps:
   5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its Record saying which. One naming a part that changed after its commit is checked, with an Attention Note when it no longer applies. A question is answered as a Record or an Attention Note;
   6. the new Version is recorded, with the commit that holds it: item 3's, the clean copy, every Copy at the new Version and nothing put back yet. So the next Update finds its base;
   7. the Update and its Update Note are removed from `temp/`;
-  8. the take's gate, last. It does for the Changes put back and the verdicts acted on what a Plan Step's gate does for its Changes (§3, step 2): the Copies compared against the Reading's stop, each Change shown with its fresh Record and decided, Changes with one reason linked, and the misfit question asked against the new Version.
+  8. the take's gate, last. It does for the Changes put back and the verdicts acted on what a Plan Step's gate does for its Changes (§3, step 2): the Copies compared against the clean copy, item 3's commit, each Change shown with its fresh Record and decided, Changes with one reason linked, and the misfit question asked against the new Version.
 
   **A postponed take.** A take may be postponed, with its why. Work then goes on with the old Copies. At the next opening, the take starts again from its check, case 1 or case 2 (*Before the take*).
 
