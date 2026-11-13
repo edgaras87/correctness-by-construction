@@ -130,8 +130,9 @@ Step 2 opened before the take: the Update waited in `temp/`, and the human postp
                                                                  │
                                                  c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, no new commit
                                                                                               ┄┄┄┄┄ 9. Take refused: main is c9, not c6; no commit
- 4 again. Read: c7 to c9; a new
- Update replaces the waiting one
+ 4 to 8 again. Read, List, Judge, Act,
+ Deliver: c7 to c9; c9 becomes read to;
+ a new Update replaces the waiting one
 ```
 
 Key: as in picture 1.
@@ -150,7 +151,7 @@ Key: as in picture 1.
 | c8 | step 2's branch | 1. a Change: a Copy changed, with its Record | covered by the Reading again |
 | c9 | step 2's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c9 by fast-forward | covered by the Reading again, its stop |
 | no commit | | 9. the take: main is c9, not c6, so it is refused | |
-| no commit | | | 4 again. Read: c7 to c9; a new Update replaces the waiting one |
+| no commit | | | 4 to 8 again. Read, List, Judge, Act, Deliver: c7 to c9; c9 becomes *read to*; a new Update replaces the waiting one, and carries its verdicts not yet sent (`temp/system-repo-change-simulation.md` §8, step 1, *Before the take*) |
 
 ## 3. After, item 1a
 
