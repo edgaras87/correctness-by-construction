@@ -146,7 +146,7 @@
       - the birth scenario gains what
         `temp/system-repo-change-simulation.md` §4, step 2 asks of it:
         the delivery check writes the System Repo's register row,
-        with "read to" set to the start.
+        with the *settled snapshot* set to the start.
       Trigger: the Common Ground Problem is finished.
       See: devlog 2026-11-10, the simulation frozen;
       `TODO-CONVERSATION-MEMORY.md` §31.
