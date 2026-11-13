@@ -108,7 +108,7 @@ Two steps:
 
   **When it is rewritten.** The Record says the Change as it stands. A later edit rewrites it, and git keeps the old one.
 
-  **The commit.** The Change and its Record go in the same commit. A commit that changes a Copy and not its Record is stopped there. A take is not a Change, so the check lets its commit pass: it replaces every Copy with the System Kit's and clears every Record. What the System Repo puts back at the take is a Change, and carries a fresh Record (§8, step 1). Every Change that lasts passes through a commit. Work never committed is lost, the Change and its Record together.
+  **The commit.** The Change and its Record go in the same commit. A commit that changes a Copy and not its Record is stopped there. A take is not a Change, so the check lets its commits pass: one replaces every Copy with the System Kit's and clears every Record. What the System Repo puts back at the take is a Change, and carries a fresh Record (§8, step 1). Every Change that lasts passes through a commit. Work never committed is lost, the Change and its Record together.
 
   **Weighed and dropped:** a check at each session's end, comparing the Copies with their Records. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds a Change committed in an earlier session with its Record missing or wrong.
 - **Adapted Case:** the System Repo's, for changing a Copy, itself a Copy. It loads when a Copy, or the Attention Notes' place, is touched. For this step it says:
@@ -494,7 +494,7 @@ Two steps:
 
 **Step 1. The System Repo takes the Update.**
 
-- **What must happen:** the Update is taken when the System Repo's next Plan Step opens, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: the System Repo is read back to main, judged, and its Update made, delivered and taken. Then the step opens on the new Copies.
+- **What must happen:** the Update is taken when the System Repo's next Plan Step opens, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: the System Repo is read back to main, judged, and its Update made, delivered and taken. Then the step opens on the new Copies. The take runs on a branch of its own, and reaches main only at its gate's close.
 - **Options,** for when an Update is taken:
   - a. whenever it arrives;
   - b. at a Plan Step's opening, right after a Reading that reached main;
@@ -502,10 +502,18 @@ Two steps:
 - **Options,** for the System Repo's Records at the take:
   - d. kept, since the merge keeps what only the System Repo added;
   - e. all cleared, every Copy taken whole, and what is still needed re-applied with a fresh Record.
-- **Chosen:** b and e. The others:
+- **Options,** for where the take is committed:
+  - f. on a branch of its own, one commit per part, a gate last, main moving by fast-forward at the gate's close;
+  - g. as the next Plan Step's first commit;
+  - h. as a Plan Step of its own;
+  - i. as one commit on main, Read's rule narrowed so that only a Plan Step's work waits for a gate.
+- **Chosen:** b, e and f. The others:
   - a lands in the middle of a step, which then runs on two sets of rules;
   - c takes the Update over Changes not yet read. The Update answered none of them, and clearing their Records loses them before they are read;
-  - d keeps Records that say how a Copy differed from the old System Kit. After the take some describe nothing, and none says how the Copy differs from the new one.
+  - d keeps Records that say how a Copy differed from the old System Kit. After the take some describe nothing, and none says how the Copy differs from the new one;
+  - g leaves main on the old Version until the step's gate closes, so a look in between finds the Update due again;
+  - h gives the take a Plan Step's opening for work the Update Note already orders. f keeps what it needs from one: the gate;
+  - i lets the Changes put back reach main with no gate. Every Change is decided at a gate (§3, step 2), the take's among them.
 
   **Before the take.** The opening order follows the fixed order already set: reading back, judging, then the Update (`temp/common-ground-problem.md` §2.1, *An update*). An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old Copies first; the human may instead drop or restart it, when the Update changes a rule it rests on. The take checks first, from the Update Note, what the System Repo itself can see:
   - case 1, its main is still the Reading's stop, and its Version is the one the Update was built from: the Update is taken;
@@ -515,14 +523,15 @@ Two steps:
 
   **Old Records.** A gate may have fixed, merged or dropped Records the Update answered. These show in the new span as Changes with their Records, and are judged like any. Records from before *read to* still in the Copies are cleared at the take, and what is still needed comes back with a fresh Record, judged in the next Reading.
 
-  **At the take, in order:**
+  **At the take, in order.** Once the check finds case 1, the take cuts a branch from main, the Reading's stop. Its first commit is the Update as it arrived, in `temp/`, not yet in force: a record of what came, before the take changes anything. Each item below is then a commit of its own, but item 2, a check. Items 4 and 5 make one commit per Change put back and per verdict acted on, zero or more. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§4, step 1, *Where a stretch ends*).
   1. the Adapted Case for taking an Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
   3. every Copy is taken whole, at the new Version; each path gone is removed, and each renamed is moved. Every Record is cleared: the Reading reached main, so each was read and judged;
   4. what the System Repo still needs is re-applied, each with a fresh Record written against the new Version: what did not fit, what it keeps, which work found it, and its proposal. An old Record's what-happened may be carried in a line. Only a Change with evidence is re-applied: its old one, or a clash with the new Version. A System Kit change on a part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
   5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its Record saying which. One naming a part that changed after its commit is checked, with an Attention Note when it no longer applies. A question is answered as a Record or an Attention Note;
-  6. the new Version is recorded, with the System Repo's commit that holds it, so the next Update finds its base;
-  7. the Update and its Update Note are removed from `temp/`.
+  6. the new Version is recorded, with the commit that holds it: item 3's, the clean copy, every Copy at the new Version and nothing put back yet. So the next Update finds its base;
+  7. the Update and its Update Note are removed from `temp/`;
+  8. the take's gate, last. It does for the Changes put back and the verdicts acted on what a Plan Step's gate does for its Changes (§3, step 2): the Copies compared against the Reading's stop, each Change shown with its fresh Record and decided, Changes with one reason linked, and the misfit question asked against the new Version.
 
   **A postponed take.** A take may be postponed, with its why. Work then goes on with the old Copies. At the next opening, the take starts again from its check, case 1 or case 2 (*Before the take*).
 
@@ -531,7 +540,7 @@ Two steps:
   - the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says:
     - check first that main is still the Reading's stop and its Version is the Update's base, and take nothing when either differs, saying so;
     - take only at a Plan Step's opening, or postpone with why;
-    - take in the order above;
+    - take on a branch of its own, in the order above, one commit per item, the gate last; main moves by fast-forward at the gate's close;
     - re-apply only with evidence, each with a fresh Record;
   - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its Update taken, since the last opening? A System Repo cannot see this itself; the human answers.
 - **Open:**
@@ -540,6 +549,10 @@ Two steps:
 - **Today:**
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
   - borrowed: the Delivery Take's order: the Delivery Note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);
+  - borrowed: a Plan Step reaches main by fast-forward from its branch, at its close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). The take's branch does the same;
+  - borrowed: a Receipt Branch may hold the delivery as it arrived (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 4). Here the Update is committed as it arrived, on the take's branch;
+  - changed: today, with more than one commit, the Delivery Take's entry goes in the last, where every copy equals the Delivery Pin (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the Version names the clean copy, since Changes are put back after it;
+  - changed: today nothing at the Delivery Take is decided at a gate. Here the take's gate decides each Change put back;
   - borrowed: being behind the Concept Deliverer is acceptable (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). A postponed take is that;
   - changed: today an edit made after the Read-Through Commit is re-applied on top, its record standing (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 3). Here the opening order leaves no such edit;
   - changed: today a declined edit is gone at the Delivery Take, and never edited back in (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the System Repo re-applies what it still needs, with a fresh Record;
