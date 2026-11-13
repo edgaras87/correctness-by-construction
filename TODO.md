@@ -54,20 +54,15 @@
       simulation as it stands; the question is then drawn as an After
       item there.
 
-- [ ] Choose, with the visual-comparison Agent Skill, how a look's
-      cases A to D are shown in `temp/system-repo-change-flow.md`,
-      and show them (2026-11-13, the reviewer).
-      Context: a look at main makes three checks and ends in one of
-      cases A to D (`temp/system-repo-change-simulation.md` §4, step
-      1, *A look at main*), where they stand as a table. Case A,
-      drawn as a picture of commits like the flow file's, repeated
-      picture 1 and showed its case in three lines. A look is a
-      choice between four outcomes, not a run of commits.
-      Ideas:
-      - a picture of commits per case, each cut down to its case;
-      - one diagram of the three checks and the four outcomes;
-      - the table alone, the flow file pointing at it.
-      Trigger: the commit plan for the take's branch closes.
+- [ ] Draw a look's cases B to D in `temp/system-repo-change-flow.md`,
+      one at a time, as case A is drawn (2026-11-13, the reviewer).
+      Context: a look at main ends in one of cases A to D
+      (`temp/system-repo-change-simulation.md` §4, step 1, *A look at
+      main*). Each case is a picture of commits in the Now pictures'
+      style, split by three lines into before, the case, and an
+      example of what follows. The chart *A look, to the Update
+      staged* shows how the four cases come about.
+      Trigger: due now.
 
 - [ ] Sweep the drafts for words that read as walking commits, where
       a Reading compares two snapshots (2026-11-13, the reviewer).
