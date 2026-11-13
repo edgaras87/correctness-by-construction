@@ -35,7 +35,7 @@ Each drawing is checked against these.
  ───────────────                                   ────      ────────                               ───────────
  read and acted on                            ┌  c0 ●  earlier work, with Changes
                                               │     │
- read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
+ settled snapshot: the last Reading's stop ─▶ └  c1 ●  earlier work, the last stop
                                                     │
  Reading 1 compares the last take's           ┌  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1; its branch is not drawn
  clean copy, on c2's branch, with             │     │                                         ◀──── main moved to c2 when the take's gate closed, as at c14
@@ -50,7 +50,7 @@ Each drawing is checked against these.
                                               └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
                                                     │            │
  4 to 6. Read, List, Judge                 ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
- 7. Act: c6 becomes read to                │        ┊
+ 7. Act: c6 becomes the settled snapshot   │        ┊
  8. Deliver: the Update waits in temp/     ┘        ┊
                                                     ┊
                                                     ┊
@@ -85,22 +85,22 @@ Each drawing is checked against these.
 
 - **commits:** imaginary commits of the System Repo, oldest first, top to bottom.
 - **main, branches:** a step's or a take's branch is cut from main, to its right. At its gate's close, main moves to the branch's last commit by fast-forward: a commit named again on main is no new commit.
-- **Maintainer Repo:** a bracket joins the two snapshots a Reading compares: its top is the older, *read to* or, after a take, the clean copy, and its bottom is the stop. The commits between are history, opened only to understand something deeper. A Reading writes nothing in the System Repo. A bracket closes when the verdicts are acted on, and its stop becomes *read to*. *Read to* is not a take. The Maintainer Repo's parts stand between the commits, since it makes none.
+- **Maintainer Repo:** a bracket joins the two snapshots a Reading compares: its top is the older, the *settled snapshot* or, after a take, the clean copy, and its bottom is the stop. The commits between are history, opened only to understand something deeper. A Reading writes nothing in the System Repo. A bracket closes when the verdicts are acted on, and its stop becomes the *settled snapshot*. The *settled snapshot* is not a take. The Maintainer Repo's parts stand between the commits, since it makes none.
 - **System Repo:** its parts, each pointing at the commit it acts on.
 - **┊:** no commit.
 - **numbers:** 1 a Change, 2 the gate decides, 3 the gate closes, 4 Read, 5 List, 6 Judge, 7 Act, 8 Deliver, 9 the take, 10 the next Plan Step opens.
-- **Versions:** the picture starts in the middle of the work. c0 and c1 were read and acted on, *read to* is c1, and c2 is the last take, which brought Version 1 by the same parts as picture 1's take from c7 to c14. Its branch is not drawn. The Copies stay at Version 1 until a take brings Version 2.
+- **Versions:** the picture starts in the middle of the work. c0 and c1 were read and acted on, the *settled snapshot* is c1, and c2 is the last take, which brought Version 1 by the same parts as picture 1's take from c7 to c14. Its branch is not drawn. The Copies stay at Version 1 until a take brings Version 2.
 
 | Commit | Where | System Repo | Maintainer Repo |
 |---|---|---|---|
 | c0 | main | earlier work, with Changes | read and acted on |
-| c1 | main | earlier work, the last stop | read and acted on; *read to* |
+| c1 | main | earlier work, the last stop | read and acted on; the *settled snapshot* |
 | c2 | main | 9. the last take: main was still c1, and Version 1 comes in. Its branch is not drawn; main moved to c2 when its gate closed | Reading 1's older snapshot is this take's clean copy, on its branch |
 | c3 | step 1's branch | work, no Copy changed | history between Reading 1's snapshots |
 | c4 | step 1's branch | 1. a Change: a Copy changed, with its Record | history between Reading 1's snapshots |
 | c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | history between Reading 1's snapshots |
 | c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | Reading 1's stop |
-| no commit | | | 4 to 6. Read, List, Judge: the last take's clean copy compared with c6. 7. Act: c6 becomes *read to*. 8. Deliver: the Update waits in `temp/` |
+| no commit | | | 4 to 6. Read, List, Judge: the last take's clean copy compared with c6. 7. Act: c6 becomes the *settled snapshot*. 8. Deliver: the Update waits in `temp/` |
 | no commit | main | 9. the take checks, case 1: main is still the Reading's stop, c6, and the Version is still 1, the one the Update was built from (`temp/system-repo-change-simulation.md` §8, step 1, *Before the take*). Its branch is cut from c6 | |
 | c7 | the take's branch | the Update, as it arrived, committed in `temp/`, not yet in force | |
 | c8 | the take's branch | the new Adapted Case for taking, at Version 2, put in first; then the files are checked against the Update Note, with no commit | |
@@ -121,7 +121,7 @@ Step 2 opened before the take: the Update waited in `temp/`, and the human postp
  ───────────────                                   ────      ────────                               ───────────
  read and acted on                            ┌  c0 ●  earlier work, with Changes
                                               │     │
- read to: the last Reading's stop ─▶          └  c1 ●  earlier work, the last stop
+ settled snapshot: the last Reading's stop ─▶ └  c1 ●  earlier work, the last stop
                                                     │
  Reading 1 compares the last take's           ┌  c2 ●  the last take: Version 1 comes in      ◀──── 9. the last take: main was still c1; its branch is not drawn
  clean copy, on c2's branch, with             │     │                                         ◀──── main moved to c2 when the take's gate closed, as at c17
@@ -136,12 +136,12 @@ Step 2 opened before the take: the Update waited in `temp/`, and the human postp
                                               └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
                                                     │            │
  4 to 8. Read, List, Judge, Act,           ┐  ┌  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
- Deliver; c6 becomes read to;              │  │     ┊
+ Deliver; c6 becomes the settled snapshot; │  │     ┊
  the Update waits in temp/                 ┘  │     ┊
                                               │     │
                                               │     └─ cut ──────┐                            ◀──── 9. the take postponed, with its why
                                               │                  │                            ◀──── 10. step 2 opens on Version 1
- Reading 2 compares c6, read to,              │               c7 ●  work, on Version 1
+ Reading 2 compares c6, the settled snapshot, │               c7 ●  work, on Version 1
  with c9, its stop. The commits               │                  │
  between are history                          │               c8 ●  a Copy changed            ◀──── 1. a Change, with its Record
                                               │                  │
@@ -150,7 +150,7 @@ Step 2 opened before the take: the Update waited in `temp/`, and the human postp
                                                  c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, no new commit
                                                     ┊                                         ┄┄┄┄┄ 9. Take, at step 3's opening: case 2, main is c9, not c6, so no take; no commit
  4 to 8 again. Read, List, Judge, Act,     ┐        ┊
- Deliver; c9 becomes read to;              │        ┊
+ Deliver; c9 becomes the settled snapshot; │        ┊
  a new Update replaces the waiting one     ┘        ┊
                                                     │
                                                     ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still Reading 2's stop, c9,
@@ -184,19 +184,19 @@ Key: as in picture 1.
 | Commit | Where | System Repo | Maintainer Repo |
 |---|---|---|---|
 | c0 | main | earlier work, with Changes | read and acted on |
-| c1 | main | earlier work, the last stop | read and acted on; *read to* |
+| c1 | main | earlier work, the last stop | read and acted on; the *settled snapshot* |
 | c2 | main | 9. the last take: main was still c1, and Version 1 comes in. Its branch is not drawn; main moved to c2 when its gate closed | Reading 1's older snapshot is this take's clean copy, on its branch |
 | c3 | step 1's branch | work, no Copy changed | history between Reading 1's snapshots |
 | c4 | step 1's branch | 1. a Change: a Copy changed, with its Record | history between Reading 1's snapshots |
 | c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | history between Reading 1's snapshots |
-| c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | Reading 1's stop; then *read to*, Reading 2's older snapshot |
-| no commit | | | 4 to 8. Read, List, Judge, Act, Deliver: the last take's clean copy compared with c6; c6 becomes *read to*; the Update waits in `temp/` |
+| c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | Reading 1's stop; then the *settled snapshot*, Reading 2's older snapshot |
+| no commit | | | 4 to 8. Read, List, Judge, Act, Deliver: the last take's clean copy compared with c6; c6 becomes the *settled snapshot*; the Update waits in `temp/` |
 | open | | 9. the take postponed, with its why: where the why is written, and so whether it is a commit, is open | |
 | c7 | step 2's branch | 10. step 2 opens: work on Version 1 | history between Reading 2's snapshots |
 | c8 | step 2's branch | 1. a Change: a Copy changed, with its Record | history between Reading 2's snapshots |
 | c9 | step 2's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c9 by fast-forward | Reading 2's stop |
 | no commit | | 9. the take checks at step 3's opening, case 2: main is c9, not c6, so there is no take, and the System Repo says so (`temp/system-repo-change-simulation.md` §8, step 1, *Before the take*) | |
-| no commit | | | 4 to 8 again. Read, List, Judge, Act, Deliver: c6 compared with c9; c9 becomes *read to*; a new Update replaces the waiting one, and carries its verdicts not yet sent (`temp/system-repo-change-simulation.md` §8, step 1, *Before the take*) |
+| no commit | | | 4 to 8 again. Read, List, Judge, Act, Deliver: c6 compared with c9; c9 becomes the *settled snapshot*; a new Update replaces the waiting one, and carries its verdicts not yet sent (`temp/system-repo-change-simulation.md` §8, step 1, *Before the take*) |
 | no commit | main | 9. the take checks, case 1: main is still Reading 2's stop, c9, and the Version is still 1, the one the Update was built from. Its branch is cut from c9 | |
 | c10 | the take's branch | the Update, as it arrived, committed in `temp/`, not yet in force | |
 | c11 | the take's branch | the new Adapted Case for taking, at Version 2, put in first; then the files are checked against the Update Note, with no commit | |
@@ -214,10 +214,10 @@ What the Maintainer Repo does with one System Repo, from a look at main to the U
 
 ```mermaid
 flowchart TD
-  start(["the human names a System Repo: a look at main"]) --> c1{"main moved past read to?"}
+  start(["the human names a System Repo: a look at main"]) --> c1{"main moved past the settled snapshot?"}
   c1 -- yes --> c2{"anything new to read?"}
   c1 -- no --> c3
-  c2 -- "no: case C" --> C["move read to up to main; nothing judged"]
+  c2 -- "no: case C" --> C["move the settled snapshot up to main; nothing judged"]
   c2 -- "yes: case D, a Reading" --> D["read, list, judge, act (§4 to §6)"]
   C --> c3
   D --> c3{"Version behind?"}
@@ -245,13 +245,13 @@ Key: as in picture 1.
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- read and acted on                            ┌  c0 ●  earlier work, with Changes             ◀──── kept Changes: judged before read to reached main
+ read and acted on                            ┌  c0 ●  earlier work, with Changes             ◀──── kept Changes: judged before the settled snapshot moved to main
                                               │     │
- read to: the last Reading's stop ─▶          └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
+ settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
                                                     │
  ── case A ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
  4. the look at main:                               ┊
- check 1: main is c1, read to.                      ┊
+ check 1: main is c1, the settled snapshot.         ┊
  Main has not moved                                 ┊
  check 3: the Version is the newest,                ┊
  and no verdict waits                               ┊
