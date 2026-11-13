@@ -59,7 +59,11 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
                                                     │
  The next Reading covers c7.                     c7 ●  the take: Version 2 comes in           ◀──── 9. Take, once it checks: main is still the Reading's stop, c6,
  Open: how the take's changes                       │                                               and the Version is still 1, the one the Update was built from
- are told apart                                     │                                         ◀──── main moves here? Read says only at a gate
+ are told apart                                     │                                               In order: the Adapted Case for taking first; the files checked
+                                                    │                                               against the Update Note; every Copy taken whole, every Record
+                                                    │                                               cleared; Changes still needed put back, each with a fresh Record;
+                                                    │                                               verdicts acted on; Version 2 recorded; the Update removed from temp/
+                                                    │                                         ◀──── main moves here? Read says only at a gate
                                                     │
                                                     └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
                                                                  │
@@ -74,7 +78,7 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
 - **System Repo:** its parts, each pointing at the commit it acts on.
 - **┊:** no commit.
 - **numbers:** 1 a Change, 2 the gate decides, 3 the gate closes, 4 Read, 5 List, 6 Judge, 7 Act, 8 Deliver, 9 the take, 10 the next Plan Step opens.
-- **Versions:** the picture starts in the middle of the work. c0 and c1 were read and acted on, *read to* is c1, and c2 is the last take, which brought Version 1. The Copies stay at Version 1 until a take brings Version 2.
+- **Versions:** the picture starts in the middle of the work. c0 and c1 were read and acted on, *read to* is c1, and c2 is the last take, which brought Version 1, in the same order as the take at c7. The Copies stay at Version 1 until a take brings Version 2.
 
 | Commit | Where | System Repo | Maintainer Repo |
 |---|---|---|---|
@@ -86,7 +90,7 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
 | c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | covered by Reading 1 |
 | c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | covered by Reading 1, its stop |
 | no commit | | | 4 to 6. Read, List, Judge: c2 to c6. 7. Act: c6 becomes *read to*. 8. Deliver: the Update waits in `temp/` |
-| c7 | main | 9. the take, once it checks: main is still the Reading's stop, c6, and the Version is still 1, the one the Update was built from. Version 2 comes in. Main moves here? Read says only at a gate | covered by the next Reading; open: how the take's changes are told apart |
+| c7 | main | 9. the take, once it checks: main is still the Reading's stop, c6, and the Version is still 1, the one the Update was built from. Version 2 comes in, in order: the Adapted Case for taking first; the files checked against the Update Note; every Copy taken whole, every Record cleared; Changes still needed put back, each with a fresh Record; verdicts acted on; Version 2 recorded; the Update removed from `temp/` (`temp/system-repo-change-simulation.md` §8, step 1, *At the take, in order*). Main moves here? Read says only at a gate | covered by the next Reading; open: how the take's changes are told apart |
 | c8 | step 2's branch | 10. step 2 opens on Version 2 | |
 
 #### Picture 2, the window missed
