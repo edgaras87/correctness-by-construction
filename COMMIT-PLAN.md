@@ -37,14 +37,20 @@ against its Version. The Opens these answer go, the one on judging
 a Change put back again among them: it is judged like any other,
 and the cost is accepted. A new Open names the rare case, a Change
 that comes back and is never settled; its trigger, the first Change
-judged twice with no settling. Provisional: where in §4 the look
-sits is found when the text is written.
+judged twice with no settling. §4 is written in snapshot words:
+*read to* is the snapshot already taken into account, main's latest
+snapshot is the one checked, the commits between are history,
+opened only to understand something deeper, and the clean copy is
+the one special point, used only after a take. Provisional: where
+in §4 the look sits is found when the text is written.
 
 **3. `docs: temp's Now picture 1 takes the new take`**
 The flow file's picture 1 and its table, redrawn on the take of
 commit 1: its parts on a branch, the gate, main moving at c14. c2
 loses its "main moves here?" mark. The next Reading compares from
-the clean copy.
+the clean copy. The Key no longer says a bracket marks the commits
+a Reading covers: it shows the two snapshots compared, and the
+commits between them are history.
 
 **4. `docs: temp's Now picture 2 takes the new take`**
 Picture 2 and its table, the same way. Its own commit: picture 2's
