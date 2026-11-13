@@ -207,3 +207,33 @@ Key: as in picture 1.
 | c16 | the take's branch | the Update and its Update Note removed from `temp/` | history between the next Reading's snapshots |
 | c17 | the take's branch, then main | the take's gate decides each Change put back, and closes; main moves to c17 by fast-forward | main's latest snapshot, until step 3's work reaches main |
 | c18 | step 3's branch | 10. step 3 opens on Version 2 | |
+
+### A look's cases
+
+A look at main makes three checks and ends in one of cases A to D (`temp/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into what came before, the case, and an example of what follows.
+
+Key: as in picture 1.
+
+#### Case A, nothing follows
+
+```
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ read and acted on                            ┌  c0 ●  earlier work, with Changes             ◀──── kept Changes: judged before read to reached main
+                                              │     │
+ read to: the last Reading's stop ─▶          └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
+                                                    │
+ ── case A ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ 4. the look at main:                               ┊
+ check 1: main is c1, read to.                      ┊
+ Main has not moved                                 ┊
+ check 3: the Version is the newest,                ┊
+ and no verdict waits                               ┊
+ case A: nothing follows                            ┊
+                                                    │
+ ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
+                                                    └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 1
+                                                                 │
+                                                             c2 ●  work, on Version 1         ◀──── it reaches main at its gate; the next look sees it
+```
