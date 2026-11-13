@@ -513,7 +513,7 @@ Two steps:
 
 **Step 1. The System Repo takes the Update.**
 
-- **What must happen:** the Update is taken between two Plan Steps, when the next is about to open, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: the System Repo is read back to main, judged, and its Update made, delivered and taken. Then the step opens on the new Copies. The take runs on a branch of its own, and reaches main only at its gate's close.
+- **What must happen:** the Update is taken between two Plan Steps, when the next is about to open, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: the System Repo is read back to main, judged, and its Update, when one is due, made, delivered and taken. Then the step opens on the new Copies, or on the same ones when no Update was due. The take runs on a branch of its own, and reaches main only at its gate's close.
 - **Options,** for when an Update is taken:
   - a. whenever it arrives;
   - b. at a Plan Step's opening, right after a Reading that reached main;
@@ -561,7 +561,7 @@ Two steps:
     - take only at a Plan Step's opening, or postpone with why;
     - take on a branch of its own, in the order above, one commit per item, the gate last; main moves by fast-forward at the gate's close;
     - re-apply only with evidence, each with a fresh Record;
-  - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its Update taken, since the last opening? A System Repo cannot see this itself; the human answers.
+  - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its Update, when one was due, taken, since the last opening? A System Repo cannot see this itself; the human answers.
 - **Open:**
   - finished work done under a rule the Update changed may now be wrong. New work follows the new Copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Update that changes a rule a finished Plan Step followed;
   - a take postponed again and again leaves the System Repo far behind. Its trigger: the first take postponed past two openings.
