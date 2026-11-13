@@ -264,3 +264,42 @@ Reading 1 starts after the commit the take recorded, c2, not after *read to*, so
  7. Act: c6 becomes read to                │        ┊
  8. Deliver: the Update waits in temp/     ┘        ┊
 ```
+
+### Option c, start at the commit holding the Version
+
+Drawn on item 1a's take, where each part of the take is its own commit. A Reading compares each Copy at two points, its start and its stop, and the Records in the Copies say the why (`temp/system-repo-change-simulation.md` §4, step 3, option a). After a take, the start is the later of *read to* and the commit the take recorded as holding the new Version, c9 here: from there, everything that differs is the System Repo's own. The take's System Kit part, c7 to c9, is skipped; what it put back, c10, and the verdicts it acted on, c11, are read, with the step's new work. A Change put back carries a fresh Record saying so, so it is told apart from a new one; where the take ended, c13, could mark the split as well, but is not needed for it.
+
+```
+ Maintainer Repo                                   main      branches                              System Repo
+ ───────────────                                   ────      ────────                              ───────────
+ read to: Reading 1's stop ─▶                    c6 ●  step 1's gate closed
+                                                    │
+                                                    ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still c6, Version still 1
+                                                    │            │
+ skipped: the System Kit's part                     │         c7 ●  the Update, as it arrived
+                                                    │            │
+                                                    │         c8 ●  the new Adapted Case
+                                                    │            │
+ Reading 2 starts after c9 ─▶                       │         c9 ●  every Copy at Version 2   ◀──── the commit that holds Version 2
+                                                    │            │
+ Reading 2 covers                             ┌     │        c10 ●  a Change put back         ◀──── with its fresh Record, saying so
+ c10 to c16:                                  │     │            │
+ the System Repo's                            │     │        c11 ●  a verdict acted on
+ own part only                                │     │            │
+                                              │     │        c12 ●  Version 2 recorded        ◀──── with the commit that holds it, c9
+                                              │     │            │
+                                              │     │        c13 ●  the Update removed
+                                              │     │            │
+                                              │ c13 ● ◀──────────┘                            ◀──── main moves to c13 by fast-forward
+                                              │     │
+                                              │     └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
+                                              │                  │
+                                              │              c14 ●  work, no Copy changed
+                                              │                  │
+                                              │              c15 ●  a Copy changed            ◀──── 1. a Change, with its Record
+                                              │                  │
+                                              └              c16 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
+                                                                 │
+ 4 to 7. Read, List, Judge, Act:              ┐ c16 ● ◀──────────┘                            ◀──── main moves to c16 by fast-forward
+ c10 to c16; c16 becomes read to              ┘     ┊
+```
