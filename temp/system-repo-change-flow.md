@@ -95,7 +95,7 @@ The take moves main, but Read says main moves only at a gate's close (`temp/syst
 
 #### Picture 2, the window missed
 
-Step 2 opened before the take: the human started it before the Update came, or postponed the take (`temp/system-repo-change-simulation.md` §8, step 1, *A postponed take*).
+Step 2 opened before the take: the Update waited in `temp/`, and the human postponed the take (`temp/system-repo-change-simulation.md` §8, step 1, *A postponed take*). When step 2 opens before the Update is made, nothing is refused: no Update is staged while work is under way without the human's word, and it is made when work resumes, at the next opening (§7, step 1; step 2, *Before staging*).
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -116,15 +116,16 @@ Step 2 opened before the take: the human started it before the Update came, or p
                                               │     │            │
                                               └     │         c6 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
                                                     │            │
- 4 to 7. Read, List, Judge, Act:           ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
- c2 to c6; c6 becomes read to              ┘        ┊
+ 4 to 8. Read, List, Judge, Act,           ┐ ─▶  c6 ● ◀──────────┘                            ◀──── main moves to c6 by fast-forward, no new commit
+ Deliver: c2 to c6; c6 becomes read to;    │        ┊
+ the Update waits in temp/                 ┘        ┊
                                                     │
-                                                    └─ cut ──────┐                            ◀──── 10. step 2 opened before the take
-                                                                 │
+                                                    └─ cut ──────┐                            ◀──── 9. the take postponed, with its why
+                                                                 │                            ◀──── 10. step 2 opens on Version 1
                                               ┌               c7 ●  work, on Version 1
- 8. Deliver: the Update waits in temp/        │                  ┊
- read again                                   │               c8 ●  a Copy changed            ◀──── 1. a Change, with its Record
- c7 to c9                                     │                  │
+ read again                                   │                  │
+ c7 to c9                                     │               c8 ●  a Copy changed            ◀──── 1. a Change, with its Record
+                                              │                  │
                                               └               c9 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
                                                                  │
                                                  c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, no new commit
@@ -144,9 +145,8 @@ Key: as in picture 1.
 | c4 | step 1's branch | 1. a Change: a Copy changed, with its Record | covered by Reading 1 |
 | c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | covered by Reading 1 |
 | c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | covered by Reading 1, its stop |
-| no commit | | | 4 to 7. Read, List, Judge, Act: c2 to c6; c6 becomes *read to* |
-| c7 | step 2's branch | 10. step 2 opened before the take: work on Version 1 | covered by the Reading again |
-| no commit | | | 8. Deliver: the Update waits in `temp/` |
+| no commit | | 9. the take postponed, with its why | 4 to 8. Read, List, Judge, Act, Deliver: c2 to c6; c6 becomes *read to*; the Update waits in `temp/` |
+| c7 | step 2's branch | 10. step 2 opens: work on Version 1 | covered by the Reading again |
 | c8 | step 2's branch | 1. a Change: a Copy changed, with its Record | covered by the Reading again |
 | c9 | step 2's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c9 by fast-forward | covered by the Reading again, its stop |
 | no commit | | 9. the take: main is c9, not c6, so it is refused | |
