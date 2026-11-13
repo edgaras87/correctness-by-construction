@@ -69,6 +69,16 @@
       - the table alone, the flow file pointing at it.
       Trigger: the commit plan for the take's branch closes.
 
+- [ ] Sweep the drafts for words that read as walking commits, where
+      a Reading compares two snapshots (2026-11-13, the reviewer).
+      Context: a System Repo Reading compares two snapshots and never
+      walks commits (`temp/system-repo-change-simulation.md` §4,
+      *Snapshots*). "Runs from … to main" and "across that span"
+      still read as a walk, in `temp/common-ground-problem.md` §2.1,
+      *Reading a change*, and may elsewhere.
+      Trigger: the problem file's rules are rewritten from the
+      simulation.
+
 - [ ] Design how a document is refined: a broad Adapted Case, an
       Output Shape read after the work, and how each corrects the
       other (2026-11-12, the reviewer).
