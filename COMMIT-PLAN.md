@@ -61,6 +61,13 @@ commits between them are history. The take's case 1, the take that
 passes its check, is checked against the redraw, as §8, step 1,
 *Before the take* writes it.
 
+**3b. `docs: temp's take's gate compares the clean copy`** (inserted)
+§8, step 1, item 8: the take's gate compares the Copies against the
+clean copy, item 3's commit, not the Reading's stop. Against the
+stop it would see every change the new Version brought; against the
+clean copy, only the Changes put back and the verdicts acted on.
+Item 1a's option a had it so; commit 1 wrote the stop.
+
 **4. `docs: temp's Now picture 2 takes the new take`**
 Picture 2 and its table, the same way. Its own commit: picture 2's
 round, the postponed take and the refused take, has more to check.
