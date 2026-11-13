@@ -21,7 +21,7 @@ Each drawing is checked against these.
 2. **R2, the repo:** which repo each step happens in.
 3. **R3, what crosses:** a Reading only reads the System Repo, and writes nothing there. An Update is written only into the System Repo's `temp/`.
 4. **R4, where main moves:** each place main moves.
-5. **R5, where a Reading reads:** where each Reading starts and stops.
+5. **R5, what a Reading compares:** the two snapshots each Reading compares.
 6. **R6, what is open:** each part not decided is marked open, and nothing decides it.
 
 ## 2. Now
