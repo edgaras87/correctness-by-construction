@@ -167,7 +167,7 @@ Four steps:
 3. It compares the Copies, and reads each Record.
 4. It lists what changed, nothing judged.
 
-**Snapshots.** A Reading compares two snapshots of the System Repo, and never walks its commits. *Read to* is the snapshot already taken into account. It holds the Version the System Repo had recorded then (§8, step 1, *At the take, in order*, item 6), so the last Version the Maintainer Repo saw is read from it, never kept apart. Main's latest snapshot is the one checked, and becomes the Reading's stop. The commits between them are history, opened only to understand something deeper. The clean copy a take leaves is the one special point, used only after a take (step 2, *After a take*).
+**Snapshots.** A Reading compares two snapshots of the System Repo, and never walks its commits. The *settled snapshot* is the one already taken into account: read, judged and acted on (`temp/common-ground-problem.md`, *Defined Terms*). It holds the Version the System Repo had recorded then (§8, step 1, *At the take, in order*, item 6), so the last Version the Maintainer Repo saw is read from it, never kept apart. Main's latest snapshot is the one checked, and becomes the Reading's stop. The commits between them are history, opened only to understand something deeper. The clean copy a take leaves is the one special point, used only after a take (step 2, *After a take*).
 
 **Step 1. The stretch of work ends, and the Maintainer Repo is told.**
 
@@ -189,7 +189,7 @@ Four steps:
   **A look past main.** A look at work past main may be asked for, as when a Change is in doubt before its gate. It is not a Reading: it does not move where the last Reading stopped, judges nothing, and gives only Attention Notes, for the human and for the System Repo's gate. The work is read when it reaches main.
 
   **A look at main.** d is a look at one System Repo. It makes three checks:
-  1. **main moved:** the System Repo's main against *read to*;
+  1. **main moved:** the System Repo's main against the *settled snapshot*;
   2. **Changes:** the Copies and the Attention Notes' place, compared between the older snapshot and main (step 2, step 3);
   3. **Update due:** the System Repo's Version against the newest, or a verdict that waits to go down (§7, step 1, *When one is due*).
 
@@ -197,9 +197,9 @@ Four steps:
 
   | Case | Main moved | What the look finds | What follows |
   |---|---|---|---|
-  | A | no | the Version is the newest, and no verdict waits | nothing. Copies that differ from the System Kit are the System Repo's kept Changes, judged before *read to* reached main |
+  | A | no | the Version is the newest, and no verdict waits | nothing. Copies that differ from the System Kit are the System Repo's kept Changes, judged before the *settled snapshot* moved to main |
   | B | no | the Version is behind, or a verdict waits | an Update is made and delivered (§7) |
-  | C | yes | no Copy and no Attention Note changed between the two snapshots | *read to* moves to main; nothing is judged; then check 3 again |
+  | C | yes | no Copy and no Attention Note changed between the two snapshots | the *settled snapshot* moves to main; nothing is judged; then check 3 again |
   | D | yes | Changes or Attention Notes between the two snapshots | the full Reading: listed, judged and acted on, then check 3 again |
 
   A Plan Step open in the System Repo changes no case: main stands at the last gate, so the look finds its case by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate (§7, step 2, *Before staging*).
@@ -225,29 +225,29 @@ Four steps:
 - **What must happen:** the agent finds the older snapshot, and writes the newer one, the stop, before reading anything. A later Reading's older snapshot must be where this one stopped, whether an Update follows this Reading or not, or the clean copy of a take since.
 - **Options,** for where the last Reading's stop is kept:
   - a. in the System Repo, carried there by the next Update;
-  - b. in the Register, a *read to* commit beside where each System Repo lives;
+  - b. in the Register, the *settled snapshot*'s commit beside where each System Repo lives;
   - c. in the Maintainer Repo, as the first line of each Reading, every Reading kept.
 - **Chosen:** b. The others:
   - a fails when a Reading has no Update after it, which step 1 allows, since a Reading may come between two resumptions of work: the System Repo still holds the old stop, and the next Reading finds again what was read;
   - c keeps every Reading for good, only for its first line.
 
-  **Where it starts.** The older snapshot is the Register's *read to*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with *read to* set to the start, the commit holding the Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Change, so it stands as read. So every Reading, the first among them, starts at *read to*, and a System Repo never read needs no rule of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation).
+  **Where it starts.** The older snapshot is the Register's *settled snapshot*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with the *settled snapshot* set to the start, the commit holding the Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Change, so it stands as read. So every Reading, the first among them, starts at the *settled snapshot*, and a System Repo never read needs no rule of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation).
 
   **Where it stops.** The stop is the System Repo's main, its latest snapshot, written as the open Reading's first line before anything is read, so a commit landing during the Reading falls into the next one.
 
-  **After a take.** When a take came after *read to*, the older snapshot is the clean copy instead: the commit the take recorded with its Version (§8, step 1, *At the take, in order*, item 6), every Copy at that Version and nothing put back yet. It is first checked against that Version, which the Maintainer Repo holds; a difference is said before anything is read. So the take's own changes are never read as the System Repo's, and each Change put back shows with its fresh Record, judged like any other (step 3, *Open*).
+  **After a take.** When a take came after the *settled snapshot*, the older snapshot is the clean copy instead: the commit the take recorded with its Version (§8, step 1, *At the take, in order*, item 6), every Copy at that Version and nothing put back yet. It is first checked against that Version, which the Maintainer Repo holds; a difference is said before anything is read. So the take's own changes are never read as the System Repo's, and each Change put back shows with its fresh Record, judged like any other (step 3, *Open*).
 
   **When the stop moves.** The stop moves into the Register once the Reading's verdicts are acted on in the Maintainer Repo (§6, step 1). When they ask for no change, that is right after judging. It never moves before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all between the two snapshots is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
-  - the older snapshot is the Register's *read to*; after a take, the clean copy, checked first against its Version;
+  - the older snapshot is the Register's *settled snapshot*; after a take, the clean copy, checked first against its Version;
   - the stop is the System Repo's main, written as the Reading's first line before anything is read;
   - the stop moves into the Register once the Reading's verdicts are acted on in the Maintainer Repo.
 - **Today:**
   - borrowed: the stop is written first, as the Reading's first line, before anything is read (`.claude/skills/exchange-read/SKILL.md`, Stage 2);
-  - borrowed: the Register keeps where each System Repo lives, as today's list of CBC Runs does (`ARCHITECTURE.md` §2.5, *The CBC Runs*). It gains *read to*;
+  - borrowed: the Register keeps where each System Repo lives, as today's list of CBC Runs does (`ARCHITECTURE.md` §2.5, *The CBC Runs*). It gains the *settled snapshot*;
   - borrowed: a CBC Run Reading is a draft in `temp/`, deleted once the work that needed it is done (`temp/README.md`; `.claude/skills/exchange-read/SKILL.md`, Stage 4);
   - changed: today the stop, the Read-Through Commit, is kept in the CBC Run, carried there by the next Delivery Note, because "it is the only place the Concept Deliverer can look" (`docs/conventions/exchange/` §2.2, *The CBC Run*). Today every CBC Run Reading is followed by a delivery, so the stop always arrives. Here a Reading may have no Update after it;
-  - changed: today a CBC Run is born with its Read-Through Commit written as *none*, and the exchange-read Agent Skill names no span for it (`delivery/installs/pure-seed.md`, step 2). Here birth writes the start as *read to*, and the first Reading starts there.
+  - changed: today a CBC Run is born with its Read-Through Commit written as *none*, and the exchange-read Agent Skill names no span for it (`delivery/installs/pure-seed.md`, step 2). Here birth writes the start as the *settled snapshot*, and the first Reading starts there.
 
 **Step 3. The Maintainer Repo compares the Copies, and reads each Record.**
 
@@ -400,7 +400,7 @@ Two steps:
 
 **Step 1. The Maintainer Repo makes its changes. For depth a, none.**
 
-- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth a, nothing changes in the System Kit or the project-agnostic understanding. The verdict waits in the Reading, which stays a draft until the Update carries what the System Repo needs (§7, step 1). Once the verdicts are acted on here, right after judging for depth a, the Reading's stop moves into the Register as *read to* (§4, step 2).
+- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth a, nothing changes in the System Kit or the project-agnostic understanding. The verdict waits in the Reading, which stays a draft until the Update carries what the System Repo needs (§7, step 1). Once the verdicts are acted on here, right after judging for depth a, the Reading's stop moves into the Register as the *settled snapshot* (§4, step 2).
 - **Options,** for depth a:
   - a. nothing changes here; the verdict waits in the Reading;
   - b. nothing changes in the System Kit, and the verdict is also kept in a lasting record, by the part it changed, so a later Reading sees when another System Repo makes the same Change;
@@ -446,7 +446,7 @@ Two steps:
 - **Chosen:** b and e. The others:
   - a sends lines that ask nothing of the System Repo. A Change judged its own, with its proposal holding, needs no answer: the Copy keeps it either way;
   - c leaves an unsound Change unknown to the only repo that can reverse it;
-  - d sends an empty Update to carry where the Reading stopped. *Read to* is in the Register now (§4, step 2), so nothing needs carrying.
+  - d sends an empty Update to carry where the Reading stopped. The *settled snapshot* is in the Register now (§4, step 2), so nothing needs carrying.
 
   **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. It runs when the human names a System Repo to update, or asks which are behind. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
 
@@ -540,7 +540,7 @@ Two steps:
 
   **A check before delivery.** The Maintainer Repo may compare the System Repo's main with the stop before delivery too, to save a delivery bound to fail. A System Kit moved since the Update was made is no reason to refuse it: the Update is correct, if not the latest, and the next brings the rest.
 
-  **Old Records.** A gate may have fixed, merged or dropped Records the Update answered. These show in the next Reading's comparison as Changes with their Records, and are judged like any. Records from before *read to* still in the Copies are cleared at the take, and what is still needed comes back with a fresh Record, judged in the next Reading.
+  **Old Records.** A gate may have fixed, merged or dropped Records the Update answered. These show in the next Reading's comparison as Changes with their Records, and are judged like any. Records from before the *settled snapshot* still in the Copies are cleared at the take, and what is still needed comes back with a fresh Record, judged in the next Reading.
 
   **At the take, in order.** Once the check finds case 1, the take cuts a branch from main, the Reading's stop. Its first commit is the Update as it arrived, in `temp/`, not yet in force: a record of what came, before the take changes anything. Each item below is then a commit of its own, but item 2, a check. Items 4 and 5 make one commit per Change put back and per verdict acted on, zero or more. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§4, step 1, *Where a stretch ends*).
   1. the Adapted Case for taking an Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
