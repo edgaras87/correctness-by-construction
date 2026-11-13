@@ -3,7 +3,7 @@
 <!-- A draft for the Plan Step "Find how what we know stays true",
      stage 1. It pictures the System Repo's commits in the round of
      temp/system-repo-change-simulation.md, and the part acting on
-     each. The facts live in the
+     each, and the Maintainer Repo's choices. The facts live in the
      simulation, never here. "Now" pictures the simulation as it is.
      Each "After" section pictures one open decision, one drawing per
      option, each named by its option. When the decision is made, the
@@ -207,6 +207,33 @@ Key: as in picture 1.
 | c16 | the take's branch | the Update and its Update Note removed from `temp/` | history between the next Reading's snapshots |
 | c17 | the take's branch, then main | the take's gate decides each Change put back, and closes; main moves to c17 by fast-forward | main's latest snapshot, until step 3's work reaches main |
 | c18 | step 3's branch | 10. step 3 opens on Version 2 | |
+
+### The Maintainer Repo's flow
+
+What the Maintainer Repo does with one System Repo, from a look at main to the Update staged, drawn as its choices. The numbers are picture 1's, and each part names its section of `temp/system-repo-change-simulation.md`.
+
+```mermaid
+flowchart TD
+  start(["the human names a System Repo, or asks what to read"]) --> look["4. Read, step 1 (§4): a look at main"]
+  look --> c1{"check 1: main moved since read to?"}
+  c1 -- yes --> c2{"check 2: a Copy or an Attention Note changed between the two snapshots?"}
+  c1 -- no --> c3
+  c2 -- "no: case C" --> C["read to moves to main; nothing judged"]
+  c2 -- "yes: case D, the full Reading" --> read["4. Read, steps 2 and 3 (§4): the stop written first; the Copies compared, each Change paired with its Record"]
+  read --> list["5. List (§4, step 4): one line each, nothing judged; the human checks the list is whole"]
+  list --> judge["6. Judge (§5): each line sound or not; a sound one asked questions 1 to 4 until one holds; the agent proposes, the human decides; a verdict for each"]
+  judge --> act["7. Act (§6): the Maintainer Repo makes its changes; the stop becomes read to"]
+  C --> c3
+  act --> c3{"check 3: an Update due? The Version behind, or a verdict that waits to go down"}
+  c3 -- "no: case A, when main had not moved" --> none(["nothing follows; a Reading closes with nothing to send"])
+  c3 -- "yes: case B, when main had not moved" --> make["8. Deliver, step 1 (§7): when work resumes in the System Repo, the Update is made, and the Reading closes"]
+  make --> ok{"the human's word, and the System Repo's tree clean?"}
+  ok -- no --> wait["the agent says what it found, and waits"]
+  ok -- yes --> stage["8. Deliver, step 2: the Update staged into the System Repo's temp/, replacing one waiting there"]
+  stage --> take(["9. the take, the System Repo's (§8)"])
+```
+
+**Open:** after case C or D, the look meets check 3 again, so it also reaches case A or case B. Whether a look then ends in one case or in two is the simulation's to decide (§4, step 1, *A look at main*).
 
 ### A look's cases
 
