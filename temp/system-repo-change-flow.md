@@ -129,10 +129,19 @@ Step 2 opened before the take: the Update waited in `temp/`, and the human postp
                                               └               c9 ●  the gate closes           ◀──── 2, 3. the gate decides each Change, and closes
                                                                  │
                                                  c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, no new commit
-                                                                                              ┄┄┄┄┄ 9. Take refused: main is c9, not c6; no commit
- 4 to 8 again. Read, List, Judge, Act,
- Deliver: c7 to c9; c9 becomes read to;
- a new Update replaces the waiting one
+                                                    ┊                                         ┄┄┄┄┄ 9. Take refused: main is c9, not c6; no commit
+ 4 to 8 again. Read, List, Judge, Act,     ┐        ┊
+ Deliver: c7 to c9; c9 becomes read to;    │        ┊
+ a new Update replaces the waiting one     ┘        ┊
+                                                    │
+ The next Reading covers c10.                   c10 ●  the take: Version 2 comes in           ◀──── 9. Take, once it checks: main is still Reading 2's stop, c9,
+ Open: how the take's changes                       │                                               and the Version is still 1, the one the Update was built from
+ are told apart                                     │                                               In the order of picture 1's c7
+                                                    │                                         ◀──── main moves here? Read says only at a gate
+                                                    │
+                                                    └─ cut ──────┐                            ◀──── 10. step 3 opens on Version 2
+                                                                 │
+                                                             c11 ●  work, on Version 2
 ```
 
 Key: as in picture 1.
@@ -152,6 +161,8 @@ Key: as in picture 1.
 | c9 | step 2's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c9 by fast-forward | covered by Reading 2, its stop |
 | no commit | | 9. the take: main is c9, not c6, so it is refused | |
 | no commit | | | 4 to 8 again. Read, List, Judge, Act, Deliver: c7 to c9; c9 becomes *read to*; a new Update replaces the waiting one, and carries its verdicts not yet sent (`temp/system-repo-change-simulation.md` §8, step 1, *Before the take*) |
+| c10 | main | 9. the take, once it checks: main is still Reading 2's stop, c9, and the Version is still 1, the one the Update was built from. Version 2 comes in, in the order of picture 1's c7. Main moves here? Read says only at a gate | covered by the next Reading; open: how the take's changes are told apart |
+| c11 | step 3's branch | 10. step 3 opens on Version 2 | |
 
 ## 3. After, item 1a
 
