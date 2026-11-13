@@ -494,7 +494,7 @@ Two steps:
 
 **Step 1. The System Repo takes the Update.**
 
-- **What must happen:** the Update is taken when the System Repo's next Plan Step opens, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: the System Repo is read back to main, judged, and its Update made, delivered and taken. Then the step opens on the new Copies. The take runs on a branch of its own, and reaches main only at its gate's close.
+- **What must happen:** the Update is taken between two Plan Steps, when the next is about to open, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: the System Repo is read back to main, judged, and its Update made, delivered and taken. Then the step opens on the new Copies. The take runs on a branch of its own, and reaches main only at its gate's close.
 - **Options,** for when an Update is taken:
   - a. whenever it arrives;
   - b. at a Plan Step's opening, right after a Reading that reached main;
