@@ -90,11 +90,34 @@ every take is refused. Found by commit 4's check of case 2.
 The found-item-1 line in Now's intro, the 1a section and item 2 go.
 Their facts now live in the simulation.
 
-**6. `docs: temp's Now draws case A` (provisional; one per case, A to D)**
-One picture per case, drawn on Now. Provisional: the split and the
-wording follow from commits 3 and 4. Each case may show something
-the simulation lacks; that is a revision of this plan, not a silent
-fix.
+**6a to 6d. One picture per case, A to D** (refined from commit 6)
+A new `### A look's cases` under Now, after picture 2. Each case has
+its own heading, picture, "Key: as in picture 1" and a short table,
+citing the simulation (§4, step 1, *A look at main*). Each picture
+starts from a state the reader holds, stops once its case shows,
+and is checked against R1 to R6. A case that shows something the
+simulation lacks is a revision of this plan, not a silent fix.
+
+**6a. `docs: temp's Now draws case A`**
+*Read to* is main, the Version is the newest, and no verdict waits:
+the look finds nothing, and kept Changes are not read again. R5
+gains snapshot words: which two snapshots each Reading compares.
+Folded in here, since case A's picture is the first checked
+against it.
+
+**6b. `docs: temp's Now draws case B`**
+*Read to* is main, but the System Kit has moved to Version 2: an
+Update is made and delivered, and the take follows as in picture 1.
+
+**6c. `docs: temp's Now draws case C`**
+After a take that put nothing back: the clean copy and main at the
+take's gate hold the same Copies, so *read to* moves, and check 3
+runs again.
+
+**6d. `docs: temp's Now draws case D`**
+After a take that put one Change back, then a step with one Change:
+the full Reading, the Change put back judged like any other. C and
+D both start after a take, and differ only in what it put back.
 
 ## Decisions taken inside this plan
 
