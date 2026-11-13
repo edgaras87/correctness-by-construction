@@ -171,7 +171,7 @@ The question: where does the take happen, and must main move only at a close? Op
 
 ### Option a, a take of its own, on a branch
 
-The take is run by its own Adapted Case, with no Plan Step. It cuts a branch from main at c6, makes one commit per part of the take's order, and moves main by fast-forward, as a gate does (`temp/system-repo-change-simulation.md` §8, step 1, *At the take, in order*). The take is run by the Adapted Case for taking an Update; the first thing it takes is the Update's own new version of itself, so the rest is taken by the new one (Failure Case 10). Its checks are its gate: main is still the Reading's stop, and the files match the Update Note. Step 2 is cut from c13 as c14. c7 commits the Update as it arrived, in `temp/` and not yet in force: a record of what came, before the take changes anything. It may go later. c10 and c11 stand for one commit each per Change put back and per verdict acted on, zero or more.
+The take is run by its own Adapted Case, with no Plan Step. It cuts a branch from main at c6, makes one commit per part of the take's order, and moves main by fast-forward at its gate's close (`temp/system-repo-change-simulation.md` §8, step 1, *At the take, in order*). The take is run by the Adapted Case for taking an Update; the first thing it takes is the Update's own new version of itself, so the rest is taken by the new one (Failure Case 10). Its checks come first: main is still the Reading's stop, and the files match the Update Note. Its gate comes last, c14. It does for the Changes put back and the verdicts acted on what a Plan Step's gate does for its Changes (`temp/system-repo-change-simulation.md` §3, step 2): the Copies compared against c9, each Change shown with its fresh Record and decided, Changes with one reason linked, and the misfit question asked against Version 2. Step 2 is cut from c14 as c15. c7 commits the Update as it arrived, in `temp/` and not yet in force: a record of what came, before the take changes anything. It may go later. c10 and c11 stand for one commit each per Change put back and per verdict acted on, zero or more.
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -201,7 +201,7 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                                     ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still the Reading's stop, c6,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
  The next Reading covers                      │     │         c7 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force: a record
- c7 to c13. Open: how the                     │     │            │                                  of what came, before the take changes anything
+ c7 to c14. Open: how the                     │     │            │                                  of what came, before the take changes anything
  take's changes are told apart                │     │            │
                                               │     │         c8 ●  the new Adapted Case      ◀──── for taking, at Version 2, put in first; it runs the rest of the take
                                               │     │            ┊                            ┄┄┄┄┄ the files checked against the Update Note; no commit
@@ -213,13 +213,15 @@ The take is run by its own Adapted Case, with no Plan Step. It cuts a branch fro
                                               │     │            │
                                               │     │        c12 ●  Version 2 recorded        ◀──── with the commit that holds it, c9
                                               │     │            │
-                                              └     │        c13 ●  the Update removed        ◀──── the Update and the Update Note leave temp/
+                                              │     │        c13 ●  the Update removed        ◀──── the Update and the Update Note leave temp/
+                                              │     │            │
+                                              └     │        c14 ●  the gate closes           ◀──── the gate decides each Change put back, and closes
                                                     │            │
-                                                c13 ● ◀──────────┘                            ◀──── main moves to c13 by fast-forward, the take's checks its gate
+                                                c14 ● ◀──────────┘                            ◀──── main moves to c14 by fast-forward, at the gate's close
                                                     │
                                                     └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
                                                                  │
-                                                             c14 ●  work, on Version 2
+                                                             c15 ●  work, on Version 2
 ```
 
 ### Option d, the rule narrowed
