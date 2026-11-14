@@ -9,7 +9,7 @@
      Repo*, and §5.3, *Reading a System Repo*. It goes when the Plan
      Step closes, and git keeps every version. -->
 
-This document simulates the cases of a System Repo's change, step by step (`temp/common-ground-problem.md` §2.1, *A System Repo's change*). The rules are written from it in that file, never here (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
+This document simulates the cases of a System Repo's change (§2), step by step (`temp/common-ground-problem.md` §2.1, *A System Repo's change*). The rules are written from it in that file, never here (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
 
 Nine Defined Terms are shortened here to their last word or words. The short forms belong to this file only; the problem file keeps the full Defined Terms.
 
