@@ -21,15 +21,14 @@ This document says what the layers of knowledge are, in any domain, and how know
            │ Domain-agnostic                          │
            │ ideas bound to no domain: understanding  │
            └──────────────────────────────────────────┘
-                │                     ▲
-              adapt                 lesson
-                ▼                     │
+                    │        ▲           │
+                  adapt    lesson      adapt
+                    ▼        │           ▼
  Layer 2   ┌──────────────────────────────────────────┐
-           │ Domain Ideas                             │
-           │ narrowed to one domain: understanding    │
-           │  ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐                 │
-           │  ┆ Domain Idea Variant ┆                 │
-           │  └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘                 │
+           │ Each domain: understanding               │
+           │ ┌─────────────┐  ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐ │
+           │ │ Domain Idea │  ┆ Domain Idea Variant ┆ │
+           │ └─────────────┘  └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘ │
            └──────────────────────────────────────────┘
                 │                     ▲
               adapt                 lesson
@@ -68,7 +67,7 @@ It holds understanding only. An instruction applies an idea to some piece of wor
 
 Layer 2 holds a domain's understanding, in two kinds: Domain Ideas (§2.2.1) and Domain Idea Variants (§2.2.2). It holds understanding only.
 
-The two differ by reach. A Domain Idea is the domain's default, kept by every use in the domain. A Domain Idea Variant serves one situation inside the domain, and says only how it differs from its Domain Idea.
+The two differ by reach. A Domain Idea is the domain's default. A Domain Idea Variant serves one situation inside the domain.
 
 A difference in one use is not a Domain Idea Variant: it is a second Adapted Case. A Domain Idea Variant is written when several Adapted Cases differ for one reason, so that the reason has one home (§3.1).
 
@@ -78,7 +77,7 @@ A **Domain Idea** is an idea of layer 1 narrowed to one domain, with what the do
 
 #### 2.2.2 Domain Idea Variants
 
-A **Domain Idea Variant** is a Domain Idea narrowed again, for one situation inside the domain: the dotted box. It writes only how it differs, and takes the rest from its Domain Idea, which every other use keeps.
+A **Domain Idea Variant** is another version of a Domain Idea, for one situation inside the domain: the dotted box. It is written whole, adapted from the same layer-1 idea as its Domain Idea. Each is read whole and changed alone: a change to one does not reach the other. The Domain Idea is the default, the version used outside that situation.
 
 ### 2.3 The Adapted Case layer
 
