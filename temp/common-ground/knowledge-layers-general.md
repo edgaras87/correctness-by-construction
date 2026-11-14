@@ -25,11 +25,11 @@ This document says what the layers of knowledge are, in any domain, and how know
               adapt                 lesson
                 ▼                     │
  Layer 2   ┌──────────────────────────────────────────┐
-           │ Each domain                              │
-           │ ideas narrowed to it: understanding      │
-           │  ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐                   │
-           │  ┆ a case, if needed ┆                   │
-           │  └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘                   │
+           │ Domain Ideas                             │
+           │ narrowed to one domain: understanding    │
+           │  ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐                 │
+           │  ┆ Domain Idea Variant ┆                 │
+           │  └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘                 │
            └──────────────────────────────────────────┘
                 │                     ▲
               adapt                 lesson
@@ -48,7 +48,7 @@ This document says what the layers of knowledge are, in any domain, and how know
            └──────────────────────────────────────────┘
 ```
 
-Key: a dotted box inside a layer is a narrower case, written only when needed.
+Key: a dotted box inside a layer is a Domain Idea Variant, written only when needed.
 
 ## 2. The layers
 
@@ -66,9 +66,19 @@ It holds understanding only. An instruction applies an idea to some piece of wor
 
 ### 2.2 The domain layer
 
-Layer 2 holds ideas narrowed to one domain, with what the domain adds. The idea's backbone stays; its details differ. It holds understanding only.
+Layer 2 holds a domain's understanding, in two kinds: Domain Ideas (§2.2.1) and Domain Idea Variants (§2.2.2). It holds understanding only.
 
-Inside a domain, an idea may be narrowed again for one case: the dotted box. A case is written only when work shows it differs from its domain's idea.
+The two differ by reach. A Domain Idea is the domain's default, kept by every use in the domain. A Domain Idea Variant serves one situation inside the domain, and says only how it differs from its Domain Idea.
+
+A difference in one use is not a Domain Idea Variant: it is a second Adapted Case. A Domain Idea Variant is written when several Adapted Cases differ for one reason, so that the reason has one home (§3.1).
+
+#### 2.2.1 Domain Ideas
+
+A **Domain Idea** is an idea of layer 1 narrowed to one domain, with what the domain adds. The idea's backbone stays; its details differ.
+
+#### 2.2.2 Domain Idea Variants
+
+A **Domain Idea Variant** is a Domain Idea narrowed again, for one situation inside the domain: the dotted box. It writes only how it differs, and takes the rest from its Domain Idea, which every other use keeps.
 
 ### 2.3 The Adapted Case layer
 
@@ -84,7 +94,7 @@ Knowledge moves along the picture's arrows. Going down, an idea is adapted and t
 
 ### 3.1 How the layers fill
 
-The layers are filled from below. New knowledge mostly comes from work: work meets something new, tries it, and changes what it works by. Judged, it is written as high as it holds: in an Adapted Case; in its domain's idea, if the domain shares it; in layer 1, if every domain does.
+The layers are filled from below. New knowledge mostly comes from work: work meets something new, tries it, and changes what it works by. Judged, it is written as high as it holds: in an Adapted Case; in its Domain Idea, if the domain shares it; in layer 1, if every domain does.
 
 A higher layer is written when the layers below show the need: a second text below needs the idea, or a text being written says something true for every text below that layer, and would otherwise sit lower. Written from one text below, it stays on trial until a second one uses it.
 
@@ -93,7 +103,7 @@ Writing from the top is rare, and is a trial: an idea written before work has te
 ### 3.2 The arrows
 
 - **adapt,** layer 1 to layer 2, and layer 2 to layer 3: a text is written from the idea above it, narrowed to its need, with what the need adds. When the idea above changes, each text built on it is checked, and changes if it must. A part left out on purpose is marked, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*).
-- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it holds. It enters its domain's idea if the whole domain shares it, and layer 1 if every domain does, reworded to name no domain.
+- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it holds. It enters its Domain Idea if the whole domain shares it, and layer 1 if every domain does, reworded to fit every text below the layer it enters: no single Adapted Case at layer 2, no single domain at layer 1.
 - **worked by,** layer 3 to layer 4: work is done by an Adapted Case, kept where the work is done, or as a copy there.
 - **change,** layer 4 to layer 3: where the work shows the Adapted Case does not fit, the work changes it. The change is judged, and goes up the arrow *lesson* as far as it holds.
 
@@ -103,3 +113,4 @@ None is answered by the text above. Each is answered when work reaches it: its a
 
 1. **What a domain is:** a field of work, a sort of repo, a kind of system, or more than one of these.
 2. **Text shared across domains, but not by all:** what holds it? It fits neither one domain nor layer 1.
+3. **When a difference is a Domain Idea Variant:** can one use alone need one, when its difference changes how the idea is understood (§2.2)?
