@@ -169,7 +169,7 @@ Each sort of repo takes a change from the other by its own Adapted Case of one i
 
 A System Kit Copy Change read back is followed in six parts, from the System Kit Copy Change to the System Kit Update's take, each with its rules below. Their cases are simulated one at a time (below, *A System Repo's change*).
 
-The rules of Change and Read come from one case, one Adapted Case changed in any of its texts, simulated step by step. Each rule's options, and why the others were not taken, are there (`temp/system-repo-change-simulation.md` §3, *Change*; §4, *Read*). The other cases are checked against them next.
+The rules of Change and Read come from one case, one Adapted Case changed in any of its texts, simulated step by step. Each rule's options, and why the others were not taken, are there (`temp/common-ground/system-repo-change-simulation.md` §3, *Change*; §4, *Read*). The other cases are checked against them next.
 
 ##### Change
 
@@ -232,7 +232,7 @@ A System Kit Copy Change is followed in six parts: change, read, judge, act on t
 - **What was changed:** these vary how the System Repo records its System Kit Copy Change, and how the Maintainer Repo finds it. They are the same however deep the System Kit Copy Change turns out to go, since that is known only once it is judged.
 - **How deep it goes:** these vary how the Maintainer Repo decides, and how the System Kit Update is written.
 
-The cases are simulated in `temp/system-repo-change-simulation.md`, and the rules above are written from it.
+The cases are simulated in `temp/common-ground/system-repo-change-simulation.md`, and the rules above are written from it.
 
 **Taken into account:** the cases the rules have been checked against. None is finished yet.
 

@@ -35,7 +35,7 @@
 ## Next (each due at its trigger)
 
 - [ ] Model the layers of knowledge in a draft of its own, then
-      write the model into `temp/common-ground-problem.md` §3,
+      write the model into `temp/common-ground/common-ground-problem.md` §3,
       *The Knowledge Axes* (2026-11-14, the reviewer).
       Context: nothing names what happens to a System Kit Copy
       Change as a whole, from the Change to the take of the next
@@ -67,7 +67,7 @@
       check looks at (2026-11-13, the reviewer).
       Context: the Maintainer Repo may compare the System Repo's main
       with the Reading's stop before delivery, a may, not a must
-      (`temp/system-repo-change-simulation.md` §8, step 1, *A check
+      (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *A check
       before delivery*). Staging waits for the human's word when
       work is under way (§7, step 2, *Before staging*). A Plan Step
       on a branch leaves main at the stop, so a check of main alone
@@ -78,14 +78,14 @@
         the Reading is extended instead;
       - the check asks whether a Plan Step is open, not only where
         main is.
-      Trigger: Now in `temp/system-repo-change-flow.md` pictures the
+      Trigger: Now in `temp/common-ground/system-repo-change-flow.md` pictures the
       simulation as it stands; the question is then drawn as an After
       item there.
 
-- [ ] Draw a look's cases B to D in `temp/system-repo-change-flow.md`,
+- [ ] Draw a look's cases B to D in `temp/common-ground/system-repo-change-flow.md`,
       one at a time, as case A is drawn (2026-11-13, the reviewer).
       Context: a look at main ends in one of cases A to D
-      (`temp/system-repo-change-simulation.md` §4, step 1, *A look at
+      (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at
       main*). Each case is a picture of commits in the Now pictures'
       style, split by three lines into before, the case, and an
       example of what follows. The chart *A look, to the Update
@@ -95,9 +95,9 @@
 - [ ] Sweep the drafts for words that read as walking commits, where
       a Reading compares two snapshots (2026-11-13, the reviewer).
       Context: a System Repo Reading compares two snapshots and never
-      walks commits (`temp/system-repo-change-simulation.md` §4,
+      walks commits (`temp/common-ground/system-repo-change-simulation.md` §4,
       *Snapshots*). "Runs from … to main" and "across that span"
-      still read as a walk, in `temp/common-ground-problem.md` §2.1,
+      still read as a walk, in `temp/common-ground/common-ground-problem.md` §2.1,
       *Reading a change*, and may elsewhere.
       Trigger: the problem file's rules are rewritten from the
       simulation.
@@ -107,7 +107,7 @@
       other (2026-11-12, the reviewer).
       Context: the reviewer asks for a refinement by hand today, and
       the agent chooses the checks each time. On 2026-11-12 nine
-      checks were run on `temp/system-repo-change-simulation.md`. An
+      checks were run on `temp/common-ground/system-repo-change-simulation.md`. An
       Output Shape is read after the work, and changes when an output
       differs from it (`docs/conventions/shapes/` §2.3, *Not a convention*;
       §3, *Where an Output Shape lives*). One run on one document is
@@ -153,7 +153,7 @@
       `TODO-CONVERSATION-MEMORY.md` §34, *Refining a document*.
 
 - [ ] Resume the simulation of what passes between the repos,
-      `temp/between-repos-simulation.md` (2026-11-10, the reviewer).
+      `temp/common-ground/between-repos-simulation.md` (2026-11-10, the reviewer).
       Context: the simulation grew into designing the whole exchange:
       an idea's repo, birth, cleanups, reading back. That is solution
       work, and it made the problem bigger while stage 1 is the
@@ -167,7 +167,7 @@
         become scenarios of their own;
       - start from the file's *Open* fields, each with its trigger;
       - the birth scenario gains what
-        `temp/system-repo-change-simulation.md` §4, step 2 asks of it:
+        `temp/common-ground/system-repo-change-simulation.md` §4, step 2 asks of it:
         the delivery check writes the System Repo's register row,
         with the *settled snapshot* set to the start.
       Trigger: the Common Ground Problem is finished.
@@ -295,7 +295,7 @@
 
 - [ ] Land the writing rules found in the problem draft (2026-11-06,
       the reviewer).
-      Context: writing `temp/common-ground-problem.md` found rules the
+      Context: writing `temp/common-ground/common-ground-problem.md` found rules the
       writing rule lacks, each in force there on trial: a plain word
       keeps one meaning in a text ("time", "place", "seat", "case",
       "kind", "level" each carried two); an exact meaning gets a Name,

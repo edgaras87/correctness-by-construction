@@ -2420,7 +2420,7 @@ is not drafted yet.
 ## 35. The layers of knowledge
 
 Item: "Model the layers of knowledge in a draft of its own, then
-write the model into `temp/common-ground-problem.md` §3, *The
+write the model into `temp/common-ground/common-ground-problem.md` §3, *The
 Knowledge Axes*".
 
 ### 2026-11-14

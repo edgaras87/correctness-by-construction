@@ -1,15 +1,15 @@
 # A System Repo's Change, Simulated
 
 <!-- A draft for the Plan Step "Find how what we know stays true",
-     stage 1. It simulates the cases of temp/common-ground-problem.md
+     stage 1. It simulates the cases of temp/common-ground/common-ground-problem.md
      §2.1, *A System Repo's change*, step by step, until that draft's
      rules can be written from it, in its §2.1, *What passes between
      the repos*. The rules live there, never here. Its input: the
-     frozen temp/between-repos-simulation.md, §5.2, *Work in a System
+     frozen temp/common-ground/between-repos-simulation.md, §5.2, *Work in a System
      Repo*, and §5.3, *Reading a System Repo*. It goes when the Plan
      Step closes, and git keeps every version. -->
 
-This document simulates the cases of a System Repo's change (§2), step by step (`temp/common-ground-problem.md` §2.1, *A System Repo's change*). The rules are written from it in that file, never here (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
+This document simulates the cases of a System Repo's change (§2), step by step (`temp/common-ground/common-ground-problem.md` §2.1, *A System Repo's change*). The rules are written from it in that file, never here (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
 Nine Defined Terms are shortened here to their last word or words. The short forms belong to this file only; the problem file keeps the full Defined Terms.
 
@@ -32,7 +32,7 @@ The scope of that case: a Change may touch the Adapted Understanding Text, an In
 Three moves, in order:
 
 1. **Simulate:** each step below says what must happen, what could be done, and what is chosen.
-2. **Write the rules:** once all of a part's steps are seen together, its rules are written in `temp/common-ground-problem.md` §2.1, *What passes between the repos*.
+2. **Write the rules:** once all of a part's steps are seen together, its rules are written in `temp/common-ground/common-ground-problem.md` §2.1, *What passes between the repos*.
 3. **Check them:** each step is walked again against the rules. A step a rule does not hold for changes the rule or the step.
 
 The steps make six parts, each done by one repo:
@@ -57,7 +57,7 @@ Each step has these fields. A field with nothing in it is left out.
 
 ## 2. The cases
 
-The cases are simulated one at a time. The first is simulated whole; each other case is then checked against it, and what differs is written. A case that grows too complex goes to TODO, to be checked once the Common Ground Problem is finished. The cases are of two kinds: what was changed, and how deep the Change goes in the Maintainer Repo (`temp/common-ground-problem.md` §2.1, *A System Repo's change*).
+The cases are simulated one at a time. The first is simulated whole; each other case is then checked against it, and what differs is written. A case that grows too complex goes to TODO, to be checked once the Common Ground Problem is finished. The cases are of two kinds: what was changed, and how deep the Change goes in the Maintainer Repo (`temp/common-ground/common-ground-problem.md` §2.1, *A System Repo's change*).
 
 | Kind | Case | Status | Differs so far |
 |---|---|---|---|
@@ -71,7 +71,7 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | how deep | b. the System Kit's Adapted Case changes | not yet checked | the Update brings it to this System Repo too, whose Copy already has it |
 | how deep | c. the project-agnostic text changes | not yet checked | the other Adapted Cases are surveyed, the Maintainer Repo's own among them |
 | how deep | d. the project-agnostic text already holds it | not yet checked | question 3 checks only the Maintainer Repo's own Adapted Case for the same loss, though every Adapted Case on that idea may have lost it; if several did, the project-agnostic wording may be too weak, and is reworded clearer, never narrower |
-| how deep | e. it asks to narrow the project-agnostic text | not yet checked | the narrowing goes into the Adapted Case, marked with its why (`temp/common-ground-problem.md` §2.1, *Narrowing, never shrinking*) |
+| how deep | e. it asks to narrow the project-agnostic text | not yet checked | the narrowing goes into the Adapted Case, marked with its why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*) |
 | how deep | f. several Adapted Cases need it, but not all | not yet checked | it cannot enter the project-agnostic text, so each Adapted Case gains it, and the same text has no shared home. Open; its trigger: the first change two Adapted Cases need, but not every one |
 
 A stretch of work may hold several Changes, alike or mixed. Each is recorded and read on its own, so they add no row but one: one reason behind Changes to several Adapted Cases.
@@ -83,7 +83,7 @@ Two steps:
 1. A Copy is changed, with its Record.
 2. The Plan Step's gate decides each Change.
 
-**The Attention Note.** Its rule: (`temp/common-ground-problem.md` §2.1, *A System Kit Attention Note*). An Attention Note carries what has no Change to carry it: a misfit with none made, a doubt about a line left as it is, something the System Kit lacked, a Copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. Attention Notes are kept in one known place in the System Repo's records. An Attention Note never lists a Change: the Record already says it, and a second line would have to follow every edit and reversal. One about a Change points at its Record. A Reading reads the Attention Notes as well as the Copies (§4, step 3).
+**The Attention Note.** Its rule: (`temp/common-ground/common-ground-problem.md` §2.1, *A System Kit Attention Note*). An Attention Note carries what has no Change to carry it: a misfit with none made, a doubt about a line left as it is, something the System Kit lacked, a Copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. Attention Notes are kept in one known place in the System Repo's records. An Attention Note never lists a Change: the Record already says it, and a second line would have to follow every edit and reversal. One about a Change points at its Record. A Reading reads the Attention Notes as well as the Copies (§4, step 3).
 
 **Step 1. A Copy is changed, with its Record.**
 
@@ -124,7 +124,7 @@ Two steps:
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
   - changed: today its paths do not hold `TODO.md`, where *To the deliverer* is. Here the Attention Notes' place loads it too;
   - borrowed: the Record names which work found the Change, as a Decisions Log entry names its Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
-  - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the Copy keeps it (`temp/common-ground-problem.md` §2.1, *An update*);
+  - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the Copy keeps it (`temp/common-ground/common-ground-problem.md` §2.1, *An update*);
   - changed: today nothing is written into a copy but the edit, since "a file says how to use it, never its own history", and the why goes in the Decisions Log (`docs/conventions/exchange/` §5.1). Here the why goes in the Copy's Adapted Understanding Text, which is not read while working;
   - changed: today every edit must claim to be for any CBC Run. Here the System Repo proposes, and the Maintainer Repo judges;
   - borrowed: a check fires at the commit because, before, it had to be remembered (`.claude/rules/foundation-check.md`, its header comment). That one is the Maintainer Repo's own.
@@ -167,7 +167,7 @@ Four steps:
 3. It compares the Copies, and reads each Record.
 4. It lists what changed, nothing judged.
 
-**Snapshots.** A Reading compares two snapshots of the System Repo, and never walks its commits. The *settled snapshot* is the one already taken into account: read, judged and acted on (`temp/common-ground-problem.md`, *Defined Terms*). It holds the Version the System Repo had recorded by then (§8, step 1, *At the take, in order*, item 6), which may be behind the newest. So the last Version the Maintainer Repo has seen the System Repo on is read from it, never stored anywhere else. Main's latest snapshot is the one checked, and becomes the Reading's stop. The commits between them are history, opened only to understand something deeper. The clean copy a take leaves is the one special point, used only after a take (step 2, *After a take*).
+**Snapshots.** A Reading compares two snapshots of the System Repo, and never walks its commits. The *settled snapshot* is the one already taken into account: read, judged and acted on (`temp/common-ground/common-ground-problem.md`, *Defined Terms*). It holds the Version the System Repo had recorded by then (§8, step 1, *At the take, in order*, item 6), which may be behind the newest. So the last Version the Maintainer Repo has seen the System Repo on is read from it, never stored anywhere else. Main's latest snapshot is the one checked, and becomes the Reading's stop. The commits between them are history, opened only to understand something deeper. The clean copy a take leaves is the one special point, used only after a take (step 2, *After a take*).
 
 **Step 1. The stretch of work ends, and the Maintainer Repo is told.**
 
@@ -182,7 +182,7 @@ Four steps:
 - **Chosen:** b and d. The others:
   - a reads Changes the gate has not yet looked at, which the System Repo may still edit or reverse (§3, step 2);
   - c depends on the human remembering, and the Register then says a System Repo was read when it has new work (Failure Case 2);
-  - e alone never reads a System Repo whose work does not resume, so what it learned is lost (Failure Case 1). It stands as it is, for every System Repo (`temp/common-ground-problem.md` §2.1, *An update*), and d adds Readings between two resumptions of work.
+  - e alone never reads a System Repo whose work does not resume, so what it learned is lost (Failure Case 1). It stands as it is, for every System Repo (`temp/common-ground/common-ground-problem.md` §2.1, *An update*), and d adds Readings between two resumptions of work.
 
   **Where a stretch ends.** Main moves only at a gate's close, so main is always at a closed gate, and nothing on it waits for a gate. Work past it, in a branch or not yet committed, is left for the next Reading.
 
@@ -231,7 +231,7 @@ Four steps:
   - a fails when a Reading has no Update after it, which step 1 allows, since a Reading may come between two resumptions of work: the System Repo still holds the old stop, and the next Reading finds again what was read;
   - c keeps every Reading for good, only for its first line.
 
-  **Where it starts.** The older snapshot is the Register's *settled snapshot*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with the *settled snapshot* set to the start, the commit holding the Copies as they arrived (`temp/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Change, so it stands as read. So every Reading, the first among them, starts at the *settled snapshot*, and a System Repo never read needs no rule of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation).
+  **Where it starts.** The older snapshot is the Register's *settled snapshot*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with the *settled snapshot* set to the start, the commit holding the Copies as they arrived (`temp/common-ground/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Change, so it stands as read. So every Reading, the first among them, starts at the *settled snapshot*, and a System Repo never read needs no rule of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation).
 
   **Where it stops.** The stop is the System Repo's main, its latest snapshot, written as the open Reading's first line before anything is read, so a commit landing during the Reading falls into the next one.
 
@@ -311,9 +311,9 @@ Four steps:
 
 §5 to §8 are simulated first for depth a, the Change staying in the System Repo: the shortest path through every step. Depth c, the project-agnostic text changing, is then checked against them (§2, the "how deep" rows). Known before it was simulated:
 
-- the four questions decide (`temp/common-ground-problem.md` §2.1, *Judging a change read back*), and the System Repo's own view of its Change is input, never the verdict;
+- the four questions decide (`temp/common-ground/common-ground-problem.md` §2.1, *Judging a change read back*), and the System Repo's own view of its Change is input, never the verdict;
 - the depth comes from the reason, never the edit. A cap raised from 50 to 60 stays in the System Repo, depth a, when its reason is "our scope names are long". The same edit is a project-agnostic lesson, depth c, when its reason is "the cap counts the scope, which any repo with scopes meets". Only the recorded reason tells them apart;
-- what the System Repo gets reaches it with the next Update, and its Copy keeps its Change either way (`temp/common-ground-problem.md` §2.1, *An update*).
+- what the System Repo gets reaches it with the next Update, and its Copy keeps its Change either way (`temp/common-ground/common-ground-problem.md` §2.1, *An update*).
 
 Two steps:
 
@@ -322,7 +322,7 @@ Two steps:
 
 **Step 1. The list is judged.**
 
-- **What must happen:** each line of the Reading is first judged sound or not. A sound line is then judged by the four questions, in order, the cheapest first, until one holds (`temp/common-ground-problem.md` §2.1, *Judging a change read back*). The agent proposes an answer to each, with what it read; the human decides. For depth a, question 2 holds: the Change answers that System Repo's own problem.
+- **What must happen:** each line of the Reading is first judged sound or not. A sound line is then judged by the four questions, in order, the cheapest first, until one holds (`temp/common-ground/common-ground-problem.md` §2.1, *Judging a change read back*). The agent proposes an answer to each, with what it read; the human decides. For depth a, question 2 holds: the Change answers that System Repo's own problem.
 - **Options,** for who judges:
   - a. the agent proposes each answer, with what it read, and the human decides each line;
   - b. the agent judges, and the human looks only at the lines where the agent disagrees with the System Repo's proposal;
@@ -355,7 +355,7 @@ Two steps:
   - a line with no Record is held until its why is brought.
 - **Open:** how question 4 is answered, and by whom. Its trigger: depth c is checked against these steps.
 - **Today:**
-  - borrowed: the four questions, from the rules on deciding written before this simulation (`temp/common-ground-problem.md` §2.1, *Judging a change read back*). They leave how each is answered, and by whom, open; step 1 answers it for questions 1 to 3;
+  - borrowed: the four questions, from the rules on deciding written before this simulation (`temp/common-ground/common-ground-problem.md` §2.1, *Judging a change read back*). They leave how each is answered, and by whom, open; step 1 answers it for questions 1 to 3;
   - borrowed: a change may be declined as "not worth the change" (`docs/conventions/exchange/` §6.5, *Verdicts*). Question 0 asks it first, for every depth;
   - changed: the four questions gain question 0, and a line may be split into parts. The rules on deciding have neither;
   - borrowed: a verdict that cannot be reached yet is held, with its trigger and a line so it is not lost (`docs/conventions/exchange/` §6.5, *Verdicts*);
@@ -415,7 +415,7 @@ Two steps:
   - depth d fixes the Adapted Case from the project-agnostic understanding;
   - a narrowing is marked with its why.
 
-  A lesson is reworded here, never before: for every System Repo at depth b, naming no project at depth c (`temp/common-ground-problem.md` §2.1, *A project-agnostic lesson*).
+  A lesson is reworded here, never before: for every System Repo at depth b, naming no project at depth c (`temp/common-ground/common-ground-problem.md` §2.1, *A project-agnostic lesson*).
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says:
   - a verdict of its own changes nothing here;
   - the Reading stays a draft until the Update carries what the System Repo needs;
@@ -435,7 +435,7 @@ Two steps:
 
 **Step 1. The Update is made: the System Kit's changes, and the verdicts the System Repo can act on.**
 
-- **What must happen:** when work resumes in the System Repo, after it is read back and judged, the Maintainer Repo makes its Update, the agent drafting and the human deciding (`temp/common-ground-problem.md` §2.1, *An update*). An Update is due when the System Kit has moved past the Version the System Repo's Copies came from, or when its Reading left a verdict that goes down. It reaches the System Repo on the human's word, in a step of its own: nothing crosses without that word, and the agent may carry it. For depth a, the System Kit has not changed for this Change, so the Update carries it only if its verdict is one the System Repo can act on.
+- **What must happen:** when work resumes in the System Repo, after it is read back and judged, the Maintainer Repo makes its Update, the agent drafting and the human deciding (`temp/common-ground/common-ground-problem.md` §2.1, *An update*). An Update is due when the System Kit has moved past the Version the System Repo's Copies came from, or when its Reading left a verdict that goes down. It reaches the System Repo on the human's word, in a step of its own: nothing crosses without that word, and the agent may carry it. For depth a, the System Kit has not changed for this Change, so the Update carries it only if its verdict is one the System Repo can act on.
 - **Options,** for which verdicts go down:
   - a. every verdict;
   - b. only those the System Repo can act on: unsound, misread, and a proposal that did not hold;
@@ -457,7 +457,7 @@ Two steps:
   - the why of each System Kit change since then, whatever its source: the Reading of this System Repo or of another, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo. With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - the verdicts that go down, from this System Repo's own Reading only, each naming the System Repo's own Copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (§8, step 1);
   - a question for each line held for want of its why: what happened, to the Change named. The answer comes back as a Record or an Attention Note, and the next Reading finds it;
-  - which files are taken first: the Adapted Case for taking an Update, so an Update is never taken by instructions older than it (`temp/common-ground-problem.md` §2.1, *An update*; Failure Case 10);
+  - which files are taken first: the Adapted Case for taking an Update, so an Update is never taken by instructions older than it (`temp/common-ground/common-ground-problem.md` §2.1, *An update*; Failure Case 10);
   - the Update it replaces, when one was waiting.
 
   **What the Update Note is not.** The Update Note is no summary of the Maintainer Repo's work, which the System Repo cannot check. It is not a record either: it goes once the Update is taken, and what the System Repo decides goes in its Records.
@@ -493,7 +493,7 @@ Two steps:
   - b. the delivering Adapted Case compares each staged file with the new Version, once staged, and the System Repo checks the Update Note against the files when it takes them;
   - c. only the System Repo's check, at the take.
 - **Chosen:** b. The others:
-  - a was chosen at birth because the start becomes the base of every Reading (`temp/between-repos-simulation.md` §5.1, step 2). Here a wrong file is held in `temp/`, never in force, and a comparison of files leaves little mistake to share. It comes back if a staged file is found, after a take, to differ from the System Kit;
+  - a was chosen at birth because the start becomes the base of every Reading (`temp/common-ground/between-repos-simulation.md` §5.1, step 2). Here a wrong file is held in `temp/`, never in force, and a comparison of files leaves little mistake to share. It comes back if a staged file is found, after a take, to differ from the System Kit;
   - c leaves only the System Repo to check, and it cannot open the System Kit, so a staged file that differs from it passes.
 
   **Before staging.** The System Repo's tree is checked clean first, with no work under way. When it is not, the agent says what it found and waits for the word. An Update already waiting there is replaced by the new one (step 1). The Update is named by the Maintainer Repo's commit at which its files and Update Note were final, so its Version is exact.
@@ -534,7 +534,7 @@ Two steps:
   - h gives the take a Plan Step's opening for work the Update Note already orders. f keeps what it needs from one: the gate;
   - i lets the Changes put back reach main with no gate. Every Change is decided at a gate (§3, step 2), the take's among them.
 
-  **Before the take.** The opening order follows the fixed order already set: reading back, judging, then the Update (`temp/common-ground-problem.md` §2.1, *An update*). An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old Copies first; the human may instead drop or restart it, when the Update changes a rule it rests on. The take checks first, from the Update Note, what the System Repo itself can see:
+  **Before the take.** The opening order follows the fixed order already set: reading back, judging, then the Update (`temp/common-ground/common-ground-problem.md` §2.1, *An update*). An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old Copies first; the human may instead drop or restart it, when the Update changes a rule it rests on. The take checks first, from the Update Note, what the System Repo itself can see:
   - case 1, its main is still the Reading's stop, and its Version is the one the Update was built from: the Update is taken;
   - case 2, anything else: there is no take, and the System Repo says so. The human has it looked at, and the look finds its case, C or D when main has moved (§4, step 1, *A look at main*). Its check 3 then finds a new Update due, made against the System Kit as it is now. It replaces the waiting one and carries its verdicts not yet sent (§7, step 1).
 

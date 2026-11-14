@@ -4,7 +4,7 @@
      stage 1. It simulates, step by step, what passes between the
      Maintainer Repo and a System Repo, and inside the Maintainer
      Repo when understanding changes. What it finds goes into
-     temp/common-ground-problem.md §2.1, *What passes between the
+     temp/common-ground/common-ground-problem.md §2.1, *What passes between the
      repos*; how it differs from today goes into that draft's §2.2,
      for stage 2. The talk behind it: TODO-CONVERSATION-MEMORY.md §31,
      its part of 2026-11-08 and 2026-11-09. It goes when the Plan
@@ -16,7 +16,7 @@
 
 This document simulates how understanding moves between the repos, one step at a time. It is written for the system as intended, starting fresh, not from today's exchange. Each step says what happens, and what must be marked for a later step. A later step that finds something missing adds it to the earlier step, and says why.
 
-It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*). One more is decided and not yet written there; it goes there once the simulation is done:
+It uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*). One more is decided and not yet written there; it goes there once the simulation is done:
 
 - **Understanding Lesson:** knowledge that judging finds changes an Understanding Text, wherever it came from: *project-agnostic* when it changes a Project-Agnostic Understanding Text, *adapted* when it changes only one sort of repo's Adapted Understanding Text.
 
@@ -306,7 +306,7 @@ The example starts here (§3).
   - a copy is never renamed or deleted; one not used gets a line, "we do not use this" (`docs/conventions/exchange/` §5.5, *Renaming or deleting a copy*);
   - an Approach on Trial takes a dated note of each use (`docs/conventions/exchange/` §5.1).
 - **Changed from today:**
-  - an edit for the System Repo's own problem stays in its copy. Today an edit must ask what any CBC Run would want, "never this CBC Run's own answer", and what only the CBC Run needs goes in its records (`docs/conventions/exchange/` §5.1; `delivery/container/.claude/rules/delivered-copies.md`, rules 2 and 3). The intent keeps a System Repo's specific changes in its copy (`temp/common-ground-problem.md` §2.1, *An update*). Today's rule forbids the example's edit;
+  - an edit for the System Repo's own problem stays in its copy. Today an edit must ask what any CBC Run would want, "never this CBC Run's own answer", and what only the CBC Run needs goes in its records (`docs/conventions/exchange/` §5.1; `delivery/container/.claude/rules/delivered-copies.md`, rules 2 and 3). The intent keeps a System Repo's specific changes in its copy (`temp/common-ground/common-ground-problem.md` §2.1, *An update*). Today's rule forbids the example's edit;
   - the System Repo's own reading of whether an edit is its own or for every repo. Today the rule makes every edit claim to be for every repo;
   - the mark on the other half. Today the explanation stays home, so a copy has no other half.
 - **Can go wrong:**
@@ -340,7 +340,7 @@ It ends in a list of what changed, nothing judged. Judging is scenario 4.
 - **Who acts:** the agent, on the human's word, from the Maintainer Repo. It only reads the System Repo.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says: find the System Repo by the register; find where the last reading stopped, or the start if none has; write where this reading stops before reading anything.
 - **Reads:** the register; in the System Repo, its records, for where the last reading stopped, and its history, for the start.
-- **Decides:** the human decides which System Repo is read, and when: when the register says it has work to read back, or when work resumes in it. Work resuming goes in a fixed order: reading back, judging, then the update (`temp/common-ground-problem.md` §2.1, *An update*).
+- **Decides:** the human decides which System Repo is read, and when: when the register says it has work to read back, or when work resumes in it. Work resuming goes in a fixed order: reading back, judging, then the update (`temp/common-ground/common-ground-problem.md` §2.1, *An update*).
 - **Marks:**
   - in the reading, its first line: the System Repo's commit this reading stops at;
   - that commit reaches the System Repo with the update (scenario 6), so the next reading starts there. The System Repo holds it, since the Maintainer Repo can look only there.
