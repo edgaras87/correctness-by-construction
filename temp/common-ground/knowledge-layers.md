@@ -48,3 +48,37 @@ This document models the layers knowledge sits in, from an idea bound to no proj
 ```
 
 Key: the dotted frame holds what the Maintainer Repo keeps. A double line joins two layers kept as one text.
+
+## 2. The layers
+
+Knowledge sits in three layers. The higher the layer, the more projects its text fits. How knowledge moves between them is §3.
+
+The model uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*). The picture shortens three: Copy for System Kit Copy, Change for System Kit Copy Change, Update for System Kit Update.
+
+The kind of text runs across the layers (`temp/common-ground/common-ground-problem.md` §3.3, *The kind of text*). Layer 1 holds understanding only. Layers 2 and 3 each hold understanding and instructions.
+
+### 2.1 The project-agnostic layer
+
+Layer 1 holds ideas bound to no project. So far there are two groups: how work is done with an agent, and how a CBC system is designed (`temp/common-ground/common-ground-problem.md` §2.1, *As intended*). Each is a Project-Agnostic Understanding Text.
+
+It holds understanding only. An instruction applies an idea to some piece of work, and work always belongs to a project.
+
+It is kept in the Maintainer Repo, and stays there. A System Repo receives it only adapted, in the System Kit.
+
+### 2.2 The Adapted Case layer
+
+Layer 2 holds Adapted Cases. An Adapted Case is an idea of layer 1 narrowed to one sort of need, with what that need adds, and the Instruction Texts built on it. So it holds both kinds of text.
+
+So far an idea is adapted for two places, the picture's two boxes:
+
+- **The System Kit's Adapted Cases:** for System Repos. Two groups so far: agent work, adapted for System Repos, and CBC system design, adapted for one kind of system, backends so far. Each System Repo works from Copies of them.
+- **The Maintainer Repo's own Adapted Cases:** for itself. Agent work only, adapted to keeping this knowledge.
+
+Both are kept in the Maintainer Repo.
+
+### 2.3 The layer of a repo's work
+
+Layer 3 is a repo working by an Adapted Case. The text is the Adapted Case of layer 2, or a Copy of it. What puts it in layer 3 is the use: the work shows where the text does not fit, and the repo changes it.
+
+- **Each System Repo's work, by its Copies:** a System Repo is born with Copies of the System Kit and works by them. As its work needs, it makes Changes, so its Copies differ from layer 2 on purpose. It is kept outside the Maintainer Repo, so every arrow between it and layer 2 crosses from one repo to the other.
+- **The Maintainer Repo's own work:** the Maintainer Repo works by its own Adapted Cases in place, with no Copy. There, layers 2 and 3 are one text, the double line *used in place*. A change its work makes is, at once, a change to its Adapted Case. Its problem is keeping this knowledge, as a System Repo's is designing one system.
