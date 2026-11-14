@@ -61,23 +61,26 @@ The kind of text runs across the layers (`temp/common-ground/common-ground-probl
 
 Layer 1 holds ideas bound to no domain.
 
-It holds understanding only. An instruction applies an idea to some piece of work, and work always belongs to a domain.
+**Rules:**
+
+- It holds no instruction (§2): an instruction applies an idea to some piece of work, and work always belongs to a domain.
 
 ### 2.2 The domain layer
 
-Layer 2 holds a domain's understanding, in two kinds: Domain Ideas (§2.2.1) and Domain Idea Variants (§2.2.2). It holds understanding only.
-
-The two differ by reach. A Domain Idea is the domain's default. A Domain Idea Variant serves one situation inside the domain.
-
-A difference in one use is not a Domain Idea Variant: it is a second Adapted Case. A Domain Idea Variant is written when several Adapted Cases differ for one reason, so that the reason has one home (§3.1).
+Layer 2 holds a domain's understanding, in two kinds. A Domain Idea is the domain's default (§2.2.1). A Domain Idea Variant is another version of it, for one situation inside the domain (§2.2.2).
 
 #### 2.2.1 Domain Ideas
 
-A **Domain Idea** is an idea of layer 1 narrowed to one domain, with what the domain adds. The idea's backbone stays; its details differ.
+A **Domain Idea** is an idea of layer 1 narrowed to one domain, with what the domain adds. The idea's backbone stays; its details differ. It is the version used in the domain outside a variant's situation.
 
 #### 2.2.2 Domain Idea Variants
 
-A **Domain Idea Variant** is another version of a Domain Idea, for one situation inside the domain: the dotted box. It is written whole, adapted from the same layer-1 idea as its Domain Idea. Each is read whole and changed alone: a change to one does not reach the other. The Domain Idea is the default, the version used outside that situation.
+A **Domain Idea Variant** is another version of a Domain Idea, for one situation inside the domain: the dotted box.
+
+**Rules:**
+
+- It is written when, in one situation, the idea itself is understood differently enough that it is clearer read and changed on its own, whole. A difference only in one use is not that: it is a second Adapted Case.
+- It is written whole, adapted from the same layer-1 idea as its Domain Idea. Each is read whole and changed alone: a change to one does not reach the other.
 
 ### 2.3 The Adapted Case layer
 
@@ -112,4 +115,4 @@ None is answered by the text above. Each is answered when work reaches it: its a
 
 1. **What a domain is:** a field of work, a sort of repo, a kind of system, or more than one of these.
 2. **Text shared across domains, but not by all:** what holds it? It fits neither one domain nor layer 1.
-3. **When a difference is a Domain Idea Variant:** can one use alone need one, when its difference changes how the idea is understood (§2.2)?
+3. **When a Domain Idea Variant is worth it:** how differently must the idea be understood in one situation before a variant is clearer than the Domain Idea alone? Practice decides (§2.2.2).
