@@ -9,7 +9,7 @@
      Repo*, and §5.3, *Reading a System Repo*. It goes when the Plan
      Step closes, and git keeps every version. -->
 
-This document simulates a System Repo's change to its System Kit Copies, from the System Kit Copy Change to the take of the next System Kit Update (`temp/common-ground-problem.md` §2.1, *A System Repo's change*). One case is simulated whole, through all six parts (§3 to §8): a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases, listed in §2, are checked against it. It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
+This document simulates the cases of a System Repo's change, step by step (`temp/common-ground-problem.md` §2.1, *A System Repo's change*). The rules are written from it in that file, never here (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
 
 Nine Defined Terms are shortened here to their last word or words. The short forms belong to this file only; the problem file keeps the full Defined Terms.
 
@@ -25,7 +25,7 @@ Nine Defined Terms are shortened here to their last word or words. The short for
 | Reading | System Repo Reading |
 | Register | Maintainer Repo Register |
 
-The scope of the case simulated whole: a Change may touch the Adapted Understanding Text, an Instruction Text built on it, or both, in either order. Its reason may be the System Repo's own, or one any repo would meet. A stretch of work may hold several Changes (§2). No fixed example is used: each step's choice must hold at each end of this scope.
+The scope of that case: a Change may touch the Adapted Understanding Text, an Instruction Text built on it, or both, in either order. Its reason may be the System Repo's own, or one any repo would meet. A stretch of work may hold several Changes (§2). No fixed example is used: each step's choice must hold at each end of this scope.
 
 ## 1. How it is worked
 
