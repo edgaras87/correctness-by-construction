@@ -9,7 +9,7 @@
      Repo*, and §5.3, *Reading a System Repo*. It goes when the Plan
      Step closes, and git keeps every version. -->
 
-This document simulates how a System Repo's change to its System Kit Copies reaches the Maintainer Repo and is judged there (`temp/common-ground-problem.md` §2.1, *A System Repo's change*). The first case is simulated whole: a System Repo changes one Adapted Case, and the Maintainer Repo reads the System Kit Copy Change back. The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
+This document simulates a System Repo's change to its System Kit Copies, from the System Kit Copy Change to the take of the next System Kit Update (`temp/common-ground-problem.md` §2.1, *A System Repo's change*). The first case runs through all six parts (§3 to §8): a System Repo changes one Adapted Case. The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
 
 Nine Defined Terms are shortened here to their last word or words. The short forms belong to this file only; the problem file keeps the full Defined Terms.
 
