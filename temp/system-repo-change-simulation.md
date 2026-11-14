@@ -9,7 +9,7 @@
      Repo*, and §5.3, *Reading a System Repo*. It goes when the Plan
      Step closes, and git keeps every version. -->
 
-This document simulates a System Repo's change to its System Kit Copies, from the System Kit Copy Change to the take of the next System Kit Update (`temp/common-ground-problem.md` §2.1, *A System Repo's change*). The first case runs through all six parts (§3 to §8): a System Repo changes one Adapted Case. The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
+This document simulates a System Repo's change to its System Kit Copies, from the System Kit Copy Change to the take of the next System Kit Update (`temp/common-ground-problem.md` §2.1, *A System Repo's change*). One case is simulated whole, through all six parts (§3 to §8): a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases, listed in §2, are checked against it. It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
 
 Nine Defined Terms are shortened here to their last word or words. The short forms belong to this file only; the problem file keeps the full Defined Terms.
 
@@ -25,7 +25,7 @@ Nine Defined Terms are shortened here to their last word or words. The short for
 | Reading | System Repo Reading |
 | Register | Maintainer Repo Register |
 
-The first case's scope: a Change may touch the Adapted Understanding Text, an Instruction Text built on it, or both, in either order. Its reason may be the System Repo's own, or one any repo would meet. A stretch of work may hold several Changes (§2). No fixed example is used: each step's choice must hold at each end of this scope.
+The scope of the case simulated whole: a Change may touch the Adapted Understanding Text, an Instruction Text built on it, or both, in either order. Its reason may be the System Repo's own, or one any repo would meet. A stretch of work may hold several Changes (§2). No fixed example is used: each step's choice must hold at each end of this scope.
 
 ## 1. How it is worked
 
@@ -67,7 +67,7 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | what changed | new text of the System Repo's own, on trial | not yet checked | read: written in the System Kit's on-trial folder, so the comparison finds it as a new file; decided: with no original, the first question does not apply |
 | what changed | one reason behind Changes to several Adapted Cases | not yet checked | recorded: one why, naming every Copy it changed; read: the Changes are listed together |
 | what changed | an Attention Note with no Change | not yet checked | read: a line of its own, from the Attention Notes' place, with no Copy's diff; a Copy no longer used shows only so, since nothing in its file changes; decided: questions 1 to 4 fit a doubt about a line, not a lack or an unused Copy |
-| how deep | a. it stays in the System Repo | not yet checked | — |
+| how deep | a. it stays in the System Repo | being simulated, §5 to §8 | — |
 | how deep | b. the System Kit's Adapted Case changes | not yet checked | the Update brings it to this System Repo too, whose Copy already has it |
 | how deep | c. the project-agnostic text changes | not yet checked | the other Adapted Cases are surveyed, the Maintainer Repo's own among them |
 | how deep | d. the project-agnostic text already holds it | not yet checked | question 3 checks only the Maintainer Repo's own Adapted Case for the same loss, though every Adapted Case on that idea may have lost it; if several did, the project-agnostic wording may be too weak, and is reworded clearer, never narrower |
