@@ -1,19 +1,23 @@
 # The layers of knowledge
 
-<!-- A draft for temp/common-ground/common-ground-problem.md §3, *The
-     Knowledge Axes*: a model of the layers knowledge sits in, and
-     how it moves between them. Drawn from TODO-CONVERSATION-MEMORY.md
-     §35, *The layers of knowledge*, as the TODO item on the layers
-     asks. Its sources are input, not rules, and the model may differ
-     from each: the problem file's §2.1 and §3; the simulation's six
-     parts and depths, temp/common-ground/system-repo-change-simulation.md;
+<!-- The model of the layers knowledge sits in, and how it moves
+     between them: a layer-2 idea of the Maintainer Repo's own
+     domain, keeping knowledge (§2.2), and its one home. Other texts
+     point here, and never retell it. Still a draft and a trial (§3):
+     practice changes it. Its place in the repo is decided when
+     today's Maintainer Repo is brought into it (TODO.md, the item on
+     the layers of knowledge). Started from TODO-CONVERSATION-MEMORY.md
+     §35, *The layers of knowledge*. Its first sources, input and not
+     rules:
+     temp/common-ground/common-ground-problem.md §2.1 and §3; the
+     simulation's six parts and depths,
+     temp/common-ground/system-repo-change-simulation.md;
      temp/model-example/idea-model-problem.md §1 and
      temp/model-example/layers.md; docs/models/tiers.md. The picture
      and the text are checked against each other at every change: each
      label in the picture is explained in the text, each part the text
      names is in the picture, and what the text says moves where
-     matches the arrows. It goes once written back into the problem
-     file, and git keeps every version. -->
+     matches the arrows. -->
 
 This document models the layers knowledge sits in, from an idea bound to no domain down to a repo working by it, and how knowledge moves between them. The picture comes first; the text explains each of its labels.
 
@@ -172,8 +176,7 @@ None is answered by the text above. Each is answered when work reaches it: its a
 4. **The depths and the layers:** is how deep a Change goes the same as how high it goes (§3.2)? What holds text shared across domains, but not by all?
 5. **Where Judge sits:** §3.2 puts it at layer 3, since a Change is judged against the Adapted Case its Copy came from. The sources say only that it runs in the Maintainer Repo.
 6. **Depth d and the layer above:** if several Adapted Cases lost the same part, the layer above may be reworded clearer (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). §3.2's row leaves it out.
-7. **How it joins §3:** does the model join §3.3, *The kind of text*, and §3.4, *Where the text is*, or stand beside them? Is the layer a Knowledge Axis of its own? Or is its home elsewhere, since it is a layer-2 idea of the Maintainer Repo's own domain?
-8. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
-9. **What a domain is:** the sort of repo, the kind of system, or both. Backends may be a domain, or a case inside the domain of building a system.
-10. **What the System Kit holds:** layer 3 only, or the System Repos' domain ideas too. CBC system design adapted for backends (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*, item 2) may already be layer 2.
-11. **Which ideas are domain-agnostic:** of today's project-agnostic ideas, how work is done with an agent may be; how a CBC system is designed may belong to the domain of building a system.
+7. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
+8. **What a domain is:** the sort of repo, the kind of system, or both. Backends may be a domain, or a case inside the domain of building a system.
+9. **What the System Kit holds:** layer 3 only, or the System Repos' domain ideas too. CBC system design adapted for backends (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*, item 2) may already be layer 2.
+10. **Which ideas are domain-agnostic:** of today's project-agnostic ideas, how work is done with an agent may be; how a CBC system is designed may belong to the domain of building a system.
