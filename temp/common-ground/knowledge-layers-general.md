@@ -6,7 +6,10 @@
      Maintainer Repo's, so it is on trial until a second domain uses
      it (§3.1). What stands on it: the Maintainer Repo's instance,
      temp/common-ground/knowledge-layers.md. Its place in the repo is
-     decided with that document's. The picture and the text are
+     decided with that document's. A trial of a way of writing rules,
+     here only: a section's rules close it, in a last paragraph marked
+     Rules, and govern that section; a rule may be split across a
+     section and its subsections. The picture and the text are
      checked against each other at every change: each label in the
      picture is explained in the text, each part the text names is in
      the picture, and what the text says moves where matches the
