@@ -47,7 +47,7 @@ This document says what the layers of knowledge are, in any domain, and how know
            └──────────────────────────────────────────┘
 ```
 
-Key: a dotted box inside a layer is a Domain Idea Variant, written only when needed.
+Key: a dotted box inside a layer is a Domain Idea Variant (§2.2.2).
 
 ## 2. The layers
 
@@ -117,3 +117,4 @@ None is answered by the text above. Each is answered when work reaches it: its a
 2. **Text shared across domains, but not by all:** what holds it? It fits neither one domain nor layer 1.
 3. **When a Domain Idea Variant is worth it:** how differently must the idea be understood in one situation before a variant is clearer than the Domain Idea alone? Practice decides (§2.2.2).
 4. **Where a skipped part is marked:** a domain may leave out a part of a layer-1 idea it does not need, such as a gate, and the part stays in layer 1. Is it marked in the layer-1 idea, as optional, ahead of any domain? Or in the Domain Idea that leaves it out, when it decides to, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*)?
+5. **A lesson for a Domain Idea Variant:** where does a lesson go that holds only in a variant's situation? And since each changes alone (§2.2.2), is a lesson for both written into each?
