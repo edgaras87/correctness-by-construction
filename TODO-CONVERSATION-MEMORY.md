@@ -26,7 +26,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-14.
+     Last touched: 2026-11-15.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
@@ -2489,3 +2489,70 @@ continue from there."
 #### What the reviewer took
 
 The model is drafted in a document of its own, first in the next session, before `temp/`'s old files are decided. The TODO item holds it.
+
+### 2026-11-14, later, and 2026-11-15
+
+#### What the reviewer said
+
+On drafting the model: "lets go and start modeling and leave all those question for answering after we draft that model. lets use that info we have not as final but as source to use to draft model. model could diff from what we though before. would it be better if model together with picturing that model. so we draw picture which is refered what we write? also if we change something in picture we check if what we write corresponds of how we picture?"
+
+On the top layer: "when we say: "Project-agnostic ideas bound to no project: understanding", i think i wanted to say not project agnostic but domain agnostis. ... So i thinking i should have idea writen not related to domain. then that idea could be adapted to domain and then adapted domain idea is used to write adated case."
+
+On how the layers fill: "can we say that this model layers are filled from lower level to upper? one of the case when new ideas is comming is from work we do, where find new things and change what we know. ... but this is not necessary how it will work and that it is final. it could happen that we may change that model or edit based what practice will show. this is now to orientate how we are planning to handle understanding."
+
+On what the model is for: "i think we should build this model till that point where we could go back and rewrite our todays maintainer repo into that model. then using this model maintain understanding in relevance and correctnes."
+
+On a Maintainer Kit: "now question is should we write such kit from which maintainer could be born? ... should we mark this when we will be designing or we should decide that now?" Then: "maybe in todo with refering that we have question here in model section of open questions?"
+
+On the model's home: "question 7 could be answered now as this is idea undertanding text of layer 2 of maintainer domain. we will refer to it as one-home."
+
+On a general model: "do we need domain agnostic layer model, that this repo could refere and explain that it is maintainer how maintains instance of that model?" Then, on the rule that blocked it: "i think it should reduce boundary, to "when a second domain needs it, or when we need to write domain agnostice description that it would not land in domain " or something similar , better formulated."
+
+On a variant: "in my head we write this another variant for domain idea becuase of controling how we understand some complex idea, where that complex idea can have variants. ... i see it full and i not dependable when i make change to default case, so as when i touch default case i do not have to consider Slice variant of it."
+
+On the next work: "i was thinking to go manualy each doc especialy common ground problem and check what ideas could be moved here, not necessary in exact text they write there. So basicaly i dont want to loose thinking we did before that fits this model we writing now."
+
+#### What the reviewer said, edited
+
+"Let's start modeling, and leave the questions until the model is drafted. Let's use what we have as sources, not as final; the model may differ from what we thought before. Would it be better to model and picture it together, so the text refers to the picture? And when the picture changes, we check that the text still matches it?"
+
+"Where we say 'project-agnostic ideas, bound to no project', I meant domain-agnostic. An idea should be written with no domain in it. Then it is adapted to a domain, and the domain's idea is used to write an Adapted Case."
+
+"Can we say the layers are filled from below? New ideas mostly come from the work we do, where we find new things and change what we know. This is not necessarily how it will work, nor final: practice may change the model. It is for now, to orient how we plan to handle understanding."
+
+"We should build the model until we can rewrite today's Maintainer Repo into it, then use it to keep our understanding relevant and correct."
+
+"Should we write a kit a Maintainer Repo could be born from? Should that be marked for when we design it, or decided now?" Then: "Maybe in TODO, pointing at the question in the model's open questions?"
+
+"Question 7 can be answered now: this is the understanding text of layer 2, in the Maintainer domain. We refer to it as its one home."
+
+"Do we need a domain-agnostic layer model, which this repo refers to, saying the Maintainer Repo maintains one instance of it?" Then: "The rule should be widened: when a second domain needs it, or when a domain-agnostic description would otherwise land in a domain. Something like that, better worded."
+
+"I write a variant of a Domain Idea to control how a complex idea is understood, where that idea can have variants. I see the variant whole, and I don't depend on it when I change the default; when I change the default, I don't have to consider the slicing variant."
+
+"I want to go through each document by hand, the Common Ground Problem first, and see which ideas can move here, not necessarily in their words. I don't want to lose the thinking we did before that fits this model."
+
+#### What the reviewer asked, as the agent would ask it
+
+1. Should the model be drafted with a picture, the text checked against the picture at every change?
+2. Is the top layer domain-agnostic rather than project-agnostic, with a domain layer between it and the Adapted Cases?
+3. Are the layers filled from below, by work, the model itself only an orientation that practice may change?
+4. Is the model built only until today's Maintainer Repo can be rewritten into it?
+5. Should a Maintainer Kit be decided now, or marked with its trigger; and can the question sit in the model while TODO holds its trigger?
+6. Is this draft the model's one home, as the Maintainer domain's layer-2 text?
+7. Should a domain-agnostic model be written apart, this draft its Maintainer instance; and should the fill rule allow a general text before a second domain needs it?
+8. Is a Domain Idea Variant written whole, to understand a complex idea in one situation, each version changed alone?
+9. Should the earlier drafts be gone through together, their fitting ideas moved into the model?
+
+#### What the agent added
+
+- **Today's drafts already hold layers 1 and 2 as text levels** (the problem file's §2.1 and §3.3), and the idea model's third level is instructions, not a repo; the reviewer's layer of a repo using an Adapted Case was new.
+- **The simulation is one Change's movement through the layers,** and its depths a to f read as how high a Change goes; depth f had no layer until the domain layer gave it part of one.
+- **The System Kit is not a layer** but what is copied to System Repos, drawn as a frame.
+- **The Tiers Model and ADR-0038** argue against building a Maintainer Kit ahead of a second Maintainer Repo; `cbc-concept` is close to one.
+- **`cbc-concept/ideas/`** already holds ten domain-agnostic ideas, among them the parts of a piece of work.
+- **A variant's name carries Domain Idea whole,** by writing rule 9.
+
+#### What the reviewer took
+
+The model is drawn and written in `temp/common-ground/knowledge-layers.md`, its own home, and its general part in `temp/common-ground/knowledge-layers-general.md`, on trial; the fill rule is widened. A Domain Idea Variant is written whole. The Maintainer Kit stays an open question, with a TODO item for its trigger. The earlier drafts are gone through together, the problem file first, before `temp/`'s old files are decided.
