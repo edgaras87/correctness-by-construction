@@ -57,6 +57,16 @@
       Trigger: due now.
       See: `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
+- [ ] Decide whether a Maintainer Kit should exist, for a new
+      Maintainer Repo to be born from (2026-11-14, the reviewer).
+      Context: one Maintainer Repo exists, so a kit would be written
+      from one example and no repo would be born from it yet. The
+      question and its facts are the draft's.
+      Trigger: the rebuild in `cbc-concept` resuming, or a second
+      Concept Repo.
+      See: `temp/common-ground/knowledge-layers.md` §4, *Open questions*,
+      "A Maintainer Kit".
+
 - [ ] Decide whether the Maintainer Repo must check the take's
       window before it delivers a System Kit Update, and what the
       check looks at (2026-11-13, the reviewer).
