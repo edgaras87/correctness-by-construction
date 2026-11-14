@@ -129,3 +129,16 @@ Depth f is where the model has a gap: text shared by some Adapted Cases, but not
 A lesson from the Maintainer Repo's own work starts in layer 3 of the right column. Since that layer is one text with its own Adapted Cases, the lesson changes layer 2 at once. It is then judged by the same questions 3 and 4 as a Change read back, and if it is true for every repo it goes up the arrow *lesson* (`temp/common-ground/common-ground-problem.md` §2.1, *Judging a change read back*). From layer 1 it comes down the arrow *adapt*, to the System Kit's Adapted Cases too, and reaches System Repos by an Update.
 
 It has no Read, Deliver or Take of its own: nothing crosses between repos until an Update carries it to a System Repo.
+
+## 4. Questions for after the draft
+
+Each is answered once the draft stands, one at a time. None is answered by the text above.
+
+1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, built by the stopped Plan Step *Rebuild in cbc-concept*, is close to a second Maintainer Repo.
+2. **What layer 3 holds:** a repo's use of Adapted Cases only, or also its own knowledge, such as a System Repo's design of its system and its own Knowledge on Trial?
+3. **A name for the movement:** what runs from a Change to the take of the next Update, as one thing (§3.2), so the simulation can name it.
+4. **The depths and the layers:** is how deep a Change goes the same as how high it goes (§3.2)? What fills depth f's gap?
+5. **Where Judge sits:** §3.2 puts it at layer 2, since a Change is judged against the Adapted Case its Copy came from. The sources say only that it runs in the Maintainer Repo.
+6. **Depth d and layer 1:** if several Adapted Cases lost the same part, layer 1 may be reworded clearer (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). §3.2's row leaves it out.
+7. **How it joins §3:** does the model join §3.3, *The kind of text*, and §3.4, *Where the text is*, or stand beside them? Is the layer a Knowledge Axis of its own?
+8. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
