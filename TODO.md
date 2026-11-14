@@ -34,32 +34,27 @@
 
 ## Next (each due at its trigger)
 
-- [ ] Model the layers of knowledge in a draft of its own, then
-      write the model into `temp/common-ground/common-ground-problem.md` §3,
-      *The Knowledge Axes* (2026-11-14, the reviewer).
-      Context: nothing names what happens to a System Kit Copy
-      Change as a whole, from the Change to the take of the next
-      System Kit Update, so each draft says it in its own words. The
-      reviewer sees three layers: project-agnostic text; the Adapted
-      Case, in the System Kit; and a repo using the Adapted Case,
-      through its System Kit Copy. The simulation's six parts move a
-      Change between the layers, and its depths a to f may say how
-      high a lesson goes. Pieces exist apart: the two levels of
-      understanding (§3.3, *The kind of text*), where a text is kept
-      (§3.4, *Where the text is*), and the idea model's three levels
-      (`temp/model-example/idea-model-problem.md` §1, *The model we try to build*),
-      whose third level is instructions, not a repo.
+- [ ] Bring the model of the layers of knowledge to what is enough
+      to work by; then finish the change work by it; then bring
+      today's Maintainer Repo into it; and keep it true from practice
+      (2026-11-14, the reviewer).
+      Context: the draft is `temp/common-ground/knowledge-layers.md`:
+      four layers, domain-agnostic, the domain, the Adapted Cases, and
+      a repo working by them, filled from below. It is the minimum
+      written where how to keep knowledge is not yet known, a trial:
+      practice changes it, and the ideas around it, such as Change.
+      It is itself a layer-2 idea of the Maintainer Repo's domain. Its
+      §4 holds its questions, none answered yet.
       Ideas:
-      - whether the Maintainer Repo is a repo of the third layer, for
-        its own Adapted Cases;
-      - whether the model joins §3.3 and §3.4, or stands beside them;
-      - once it stands, the simulation's opening and the problem
-        file's §2.1 point at it;
-      - then `temp/`'s old files are decided, one by one, and how
-        today's ways are written across the drafts: the simulation's
-        *Today* fields, the frozen simulation's *Changed from today*,
-        the problem file's §2.2.
-      Trigger: due now; first in the next session.
+      - the change work: the simulation of a System Repo's change, and
+        the problem file's rules written from it, both pointing at
+        the model;
+      - a piece of work modeled at each layer, in a document of its
+        own, starting from `cbc-concept/ideas/`, to see how ideas are
+        kept at each layer;
+      - today's Maintainer Repo brought in: its ideas, manuals and
+        Agent Skills, each to its layer.
+      Trigger: due now.
       See: `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
 - [ ] Decide whether the Maintainer Repo must check the take's
