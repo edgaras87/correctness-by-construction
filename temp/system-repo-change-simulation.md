@@ -1,19 +1,19 @@
 # A System Repo's Change, Simulated
 
 <!-- A draft for the Plan Step "Find how what we know stays true",
-     stage 1. It simulates one case of temp/common-ground-problem.md,
-     *A System Repo's change*, step by step, until that draft's rules
-     can be written from it, one heading per part. The rules live
-     there, never here. Its
-     input: the frozen temp/between-repos-simulation.md, scenarios 2
-     and 3. It goes when the Plan Step closes, and git keeps every
-     version. -->
+     stage 1. It simulates the cases of temp/common-ground-problem.md
+     §2.1, *A System Repo's change*, step by step, until that draft's
+     rules can be written from it, in its §2.1, *What passes between
+     the repos*. The rules live there, never here. Its input: the
+     frozen temp/between-repos-simulation.md, §5.2, *Work in a System
+     Repo*, and §5.3, *Reading a System Repo*. It goes when the Plan
+     Step closes, and git keeps every version. -->
 
-This document simulates one case: a System Repo changes one Adapted Case in its System Kit Copies, any of its texts, and the Maintainer Repo reads the System Kit Copy Change back. It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
+This document simulates how a System Repo's change to its System Kit Copies reaches the Maintainer Repo and is judged there (`temp/common-ground-problem.md` §2.1, *A System Repo's change*). The first case is simulated whole: a System Repo changes one Adapted Case, and the Maintainer Repo reads the System Kit Copy Change back. The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground-problem.md`, *Defined Terms*).
 
-Nine of those Defined Terms are written here by a short word, capitalized. They are short forms of this file only, not Names: each Defined Term keeps its full Name in the problem file.
+Nine Defined Terms are shortened here to their last word or words. The short forms belong to this file only; the problem file keeps the full Defined Terms.
 
-| Short word | Defined Term |
+| Short form | Defined Term |
 |---|---|
 | Change | System Kit Copy Change |
 | Record | System Kit Copy Change Record |
@@ -25,7 +25,7 @@ Nine of those Defined Terms are written here by a short word, capitalized. They 
 | Reading | System Repo Reading |
 | Register | Maintainer Repo Register |
 
-The scope: the Change may touch the Adapted Understanding Text, an Instruction Text built on it, or both, in either order. It may have any reason, its own or one any repo would meet. One stretch of work may hold several such Changes. Each step's choice must hold for all of it, so no fixed example is used: a step is tried against the scope's edges.
+The first case's scope: a Change may touch the Adapted Understanding Text, an Instruction Text built on it, or both, in either order. Its reason may be the System Repo's own, or one any repo would meet. A stretch of work may hold several Changes (§2). No fixed example is used: each step's choice must hold at each end of this scope.
 
 ## 1. How it is worked
 
