@@ -38,16 +38,17 @@ This document models the layers knowledge sits in, from an idea bound to no doma
           ┆  │ ┆a case, if needed┆ │   │                     │  ┆
           ┆  │ └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘ │   │                     │  ┆
           ┆  └─────────────────────┘   └─────────────────────┘  ┆
-          ┆      │          ▲               ▲         │         ┆
-          ┆    adapt      lesson          lesson    adapt       ┆
-          ┆      ▼          │               │         ▼         ┆
-          ┆  ┌─────────────────────┐   ┌─────────────────────┐  ┆
-          ┆  │ the System Kit's    │   │ its own             │  ┆
- Layer 3  ┆  │ Adapted Cases       │   │ Adapted Cases       │  ┆
-          ┆  │ understanding and   │   │ understanding and   │  ┆
-          ┆  │ instructions        │   │ instructions        │  ┆
-          ┆  └─────────────────────┘   └─────────────────────┘  ┆
-          ┆      │          ▲                     ║             ┆
+          ┆    │                 ▲          ▲         │         ┆
+          ┆  adapt             lesson     lesson    adapt       ┆
+          ┆    │                 │          │         │         ┆
+          ┆ ┌╌╌▼ the System Kit ╌│╌╌┐       │         ▼         ┆
+          ┆ ╎┌─────────────────────┐╎  ┌─────────────────────┐  ┆
+          ┆ ╎│ the System Repos'   │╎  │ its own             │  ┆
+          ┆ ╎│ Adapted Cases       │╎  │ Adapted Cases       │  ┆
+ Layer 3  ┆ ╎│ understanding and   │╎  │ understanding and   │  ┆
+          ┆ ╎│ instructions        │╎  │ instructions        │  ┆
+          ┆ ╎└─────────────────────┘╎  └─────────────────────┘  ┆
+          ┆ └╌╌╌╌│╌╌╌╌╌╌╌╌╌╌▲╌╌╌╌╌╌╌┘             ║             ┆
           └┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┐            ║             ┆
                birth,    Change,     ┆      used in place       ┆
                Update   read back    ┆            ║             ┆
@@ -59,7 +60,7 @@ This document models the layers knowledge sits in, from an idea bound to no doma
                                      └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘
 ```
 
-Key: the dotted frame holds what the Maintainer Repo keeps. A dotted box inside a layer is a narrower case, written only when needed. A double line joins two layers kept as one text.
+Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame holds what the System Kit copies to each System Repo. A dotted box inside a layer is a narrower case, written only when needed. A double line joins two layers kept as one text.
 
 ## 2. The layers
 
