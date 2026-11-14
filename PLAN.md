@@ -198,7 +198,7 @@ Notes:
 - Stages, in order, each taken off this list once done. The order
   changes only when something changes.
   1. The problem, written in the reviewer's words, starting from
-     `temp/idea-model-problem.md`: it has the loop between a home and
+     `temp/model-example/idea-model-problem.md`: it has the loop between a home and
      its references (§5) and 9 musts with checks (§3), not the
      purpose or the bottom-up direction.
   2. The real-world record, in two parts. First, the repo set

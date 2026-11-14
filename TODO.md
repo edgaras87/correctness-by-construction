@@ -47,7 +47,7 @@
       high a lesson goes. Pieces exist apart: the two levels of
       understanding (§3.3, *The kind of text*), where a text is kept
       (§3.4, *Where the text is*), and the idea model's three levels
-      (`temp/idea-model-problem.md` §1, *The model we try to build*),
+      (`temp/model-example/idea-model-problem.md` §1, *The model we try to build*),
       whose third level is instructions, not a repo.
       Ideas:
       - whether the Maintainer Repo is a repo of the third layer, for

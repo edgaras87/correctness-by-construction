@@ -2,7 +2,7 @@
 
 <!-- A draft: the two ideas tried in temp/model-example/, set against
      how this repo holds the same two today. Counts taken 2026-11-02.
-     The checks and criteria are temp/idea-model-problem.md §3. -->
+     The checks and criteria are temp/model-example/idea-model-problem.md §3. -->
 
 ## In short
 

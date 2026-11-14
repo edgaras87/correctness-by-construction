@@ -104,7 +104,7 @@ one would stop the move again.
   exchange, commit-plan and conventions
   (`temp/rebuild-inventory.md` §4, *What the table shows*).
 - The goals drafted for the model were never approved one by one
-  (`temp/idea-model-problem.md` §3); the costs of decision 7 stand in
+  (`temp/model-example/idea-model-problem.md` §3); the costs of decision 7 stand in
   for them on this trial.
 - The layering has a second version, the reviewer's concept: the idea
   layer as a graph of chains, each kept true by an agent of its own.

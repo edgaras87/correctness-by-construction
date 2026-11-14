@@ -3,7 +3,7 @@
 <!-- A draft: the three layers of the idea-to-approach model, as
      pictured fresh, not from how this repo works today. Tried on one
      idea, one home per fact, in the folders beside this file. The
-     problem it answers: temp/idea-model-problem.md. -->
+     problem it answers: temp/model-example/idea-model-problem.md. -->
 
 Three layers, from general to concrete. Each links only up: a Work
 Approach to its project text, a project text to the ideas it draws

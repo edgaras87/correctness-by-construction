@@ -3,7 +3,7 @@
 <!-- A draft: the problem of the Plan Step "Find how what we know
      stays true", its stage 1, in the reviewer's words. Built from
      TODO-CONVERSATION-MEMORY.md §31, *Keeping what we know true*,
-     and from what temp/idea-model-problem.md says of the problem,
+     and from what temp/model-example/idea-model-problem.md says of the problem,
      not of a model. Polished one insight at a time, each a commit,
      so the diffs show what changed. It states the problem only: an
      answer met on the way is kept as an option to consider (§8),
