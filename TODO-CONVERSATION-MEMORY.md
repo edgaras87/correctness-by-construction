@@ -26,7 +26,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-12.
+     Last touched: 2026-11-14.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
@@ -2416,3 +2416,76 @@ Two TODO items and this section: the refinement's item rewritten to
 hold the Adapted Case, the Output Shape and how each corrects the
 other; a second item for where small work is gated. The Adapted Case
 is not drafted yet.
+
+## 35. The layers of knowledge
+
+Item: "Model the layers of knowledge in a draft of its own, then
+write the model into `temp/common-ground-problem.md` §3, *The
+Knowledge Axes*".
+
+### 2026-11-14
+
+#### What the reviewer said
+
+While the simulation's opening was made plain, on its "step by
+step": "also these step by step sounds not nice, but i think this
+must first be changed in common-ground-problem. we should define
+there this from change to take there as one thing of what this is."
+
+Then the model: "we should refine our "common-ground-problem". I
+think we should start from "## 3. The Knowledge Axes". we should
+define 3 layer model of knowledge similar we had idea model if i
+remmeber right, when we had sep repo open for it. So basical we
+define model where to top layer is project agnostic, second layer is
+adapted case, and 3rd is repo using adapted case. now we have this
+simulation where change in this adapted case use, which we: read,
+judge , act, deliver, take. so what i thinking is to start from
+defining that model to see what part we simulating. we can then
+refer better and describe better. i thinking to do that first in sep
+doc from "common-ground-problem" to write it first as sep and then
+put that back. what u think?"
+
+And at the session's end: "lets start from that model thing first.
+then we decide what to with all this. lets finish this session with
+task for next, for modeling in sep doc how we see those layers. then
+we continue from there."
+
+#### What the reviewer said, edited
+
+"Also, this 'step by step' doesn't sound nice, but I think it must
+first be changed in the Common Ground Problem. We should define
+there what runs from the change to the take, as one thing."
+
+"We should refine the Common Ground Problem, starting from §3, *The
+Knowledge Axes*. We should define a three-layer model of knowledge,
+like the idea model we had, if I remember right, when we had a
+separate repo for it. The top layer is project-agnostic, the second
+is the Adapted Case, and the third is a repo using the Adapted Case.
+The simulation follows a change made where an Adapted Case is used:
+read, judge, act, deliver, take. I want to define the model first,
+to see which part we are simulating. Then we can refer to it and
+describe it better. I want to write it first in a document separate
+from the Common Ground Problem, then put it back. What do you think?"
+
+"Let's start with the model first. Then we decide what to do with
+all this. Let's end this session with the task for next time:
+modeling, in a separate document, how we see those layers. Then we
+continue from there."
+
+#### What the reviewer asked, as the agent would ask it
+
+1. Should what happens from a System Kit Copy Change to the take of the next System Kit Update be defined as one thing in the problem file, so the simulation can name it instead of saying "step by step"?
+2. Should the problem file's §3 hold a model of three layers: project-agnostic text, the Adapted Case, and a repo using the Adapted Case?
+3. Does the simulation then show which part of that model it covers?
+4. Should the model be drafted in a separate document first, and then written back into the problem file?
+
+#### What the agent added
+
+- **The simulation is a Change moving between the layers:** it starts at the third, in a System Repo's Copy; Read and Judge carry it up; Deliver and Take bring the result down. The depths a to f may be how high a lesson goes: a stays at the third layer, b reaches the second, c to e reach the first.
+- **Most pieces exist apart:** the two levels of understanding (§3.3, *The kind of text*); a System Repo's copy that "may adapt it further" (*Defined Terms*, Adapted Understanding Text); and the idea model (`temp/idea-model-problem.md` §1, *The model we try to build*), whose third level is the instructions, not a repo. In the reviewer's model, the kind of text stays an axis of its own, and each layer holds both kinds.
+- **Two questions for the model:** whether the Maintainer Repo is a repo of the third layer, for its own Adapted Cases; and whether the model joins §3.3 and §3.4, or stands beside them.
+- **A separate draft** carries a header saying it is a draft for the problem file's §3 and goes once written back, so it is never a second home.
+
+#### What the reviewer took
+
+The model is drafted in a document of its own, first in the next session, before `temp/`'s old files are decided. The TODO item holds it.

@@ -34,6 +34,34 @@
 
 ## Next (each due at its trigger)
 
+- [ ] Model the layers of knowledge in a draft of its own, then
+      write the model into `temp/common-ground-problem.md` §3,
+      *The Knowledge Axes* (2026-11-14, the reviewer).
+      Context: nothing names what happens to a System Kit Copy
+      Change as a whole, from the Change to the take of the next
+      System Kit Update, so each draft says it in its own words. The
+      reviewer sees three layers: project-agnostic text; the Adapted
+      Case, in the System Kit; and a repo using the Adapted Case,
+      through its System Kit Copy. The simulation's six parts move a
+      Change between the layers, and its depths a to f may say how
+      high a lesson goes. Pieces exist apart: the two levels of
+      understanding (§3.3, *The kind of text*), where a text is kept
+      (§3.4, *Where the text is*), and the idea model's three levels
+      (`temp/idea-model-problem.md` §1, *The model we try to build*),
+      whose third level is instructions, not a repo.
+      Ideas:
+      - whether the Maintainer Repo is a repo of the third layer, for
+        its own Adapted Cases;
+      - whether the model joins §3.3 and §3.4, or stands beside them;
+      - once it stands, the simulation's opening and the problem
+        file's §2.1 point at it;
+      - then `temp/`'s old files are decided, one by one, and how
+        today's ways are written across the drafts: the simulation's
+        *Today* fields, the frozen simulation's *Changed from today*,
+        the problem file's §2.2.
+      Trigger: due now; first in the next session.
+      See: `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
+
 - [ ] Decide whether the Maintainer Repo must check the take's
       window before it delivers a System Kit Update, and what the
       check looks at (2026-11-13, the reviewer).
