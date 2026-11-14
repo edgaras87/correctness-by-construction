@@ -119,7 +119,7 @@ Layer 4 is a repo working by an Adapted Case. The text is the Adapted Case of la
 
 Knowledge moves along the picture's arrows. Going down, an idea is adapted and sent to where it is used. Going up, what the work taught is read back and judged, and lands in the layer it holds for.
 
-The layers are filled from below. New knowledge mostly comes from work: a repo meets something new, tries it, and changes what it works by. Read back and judged, it is written as high as it holds: in an Adapted Case; in its domain's idea, if the domain shares it; in layer 1, if every domain does. A higher layer is written only when the layers below show the need.
+The layers are filled from below. New knowledge mostly comes from work: a repo meets something new, tries it, and changes what it works by. Read back and judged, it is written as high as it holds: in an Adapted Case; in its domain's idea, if the domain shares it; in layer 1, if every domain does. A higher layer is written when the layers below show the need: a second text below needs the idea, or a text being written says something true for every text below that layer, and would otherwise sit lower. Written from one text below, it stays on trial until a second one uses it.
 
 Writing from the top is rare, and is a trial: an idea written before work has tested it, such as this model. It stays on trial until work does. Once a higher layer is written, a change to it spreads down, to each text built on it.
 
