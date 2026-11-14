@@ -82,3 +82,50 @@ Layer 3 is a repo working by an Adapted Case. The text is the Adapted Case of la
 
 - **Each System Repo's work, by its Copies:** a System Repo is born with Copies of the System Kit and works by them. As its work needs, it makes Changes, so its Copies differ from layer 2 on purpose. It is kept outside the Maintainer Repo, so every arrow between it and layer 2 crosses from one repo to the other.
 - **The Maintainer Repo's own work:** the Maintainer Repo works by its own Adapted Cases in place, with no Copy. There, layers 2 and 3 are one text, the double line *used in place*. A change its work makes is, at once, a change to its Adapted Case. Its problem is keeping this knowledge, as a System Repo's is designing one system.
+
+## 3. How knowledge moves
+
+Knowledge moves along the picture's arrows. Going down, an idea is adapted and sent to where it is used. Going up, what the work taught is read back and judged, and lands in the layer it holds for.
+
+### 3.1 The arrows
+
+- **adapt,** layer 1 to layer 2: an Adapted Case is written from an idea of layer 1, narrowed to its need, with what the need adds. When layer 1 changes, each Adapted Case built on that idea is checked, and changes if it must. A part of layer 1 left out on purpose is marked, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*).
+- **lesson,** layer 2 to layer 1: a lesson true for every repo enters layer 1, reworded to name no project. It can come from either column.
+- **birth,** layer 2 to layer 3: a new System Repo receives Copies of the System Kit, at one System Kit Version.
+- **Update,** layer 2 to layer 3: the System Kit's changes since a System Repo's Copies were taken. The System Repo takes them by its own Copy of the Adapted Case for taking them.
+- **Change, read back,** layer 3 to layer 2: a System Repo changes a Copy and records why. The Maintainer Repo reads it back and judges it against the Adapted Case the Copy came from.
+- **used in place,** layer 2 and layer 3 as one text: the Maintainer Repo's own work changes its own Adapted Cases directly.
+
+### 3.2 How a Change moves
+
+The simulation follows one System Repo's Change through six parts (`temp/common-ground/system-repo-change-simulation.md` §1, *How it is worked*). Each part sits at a layer, or on an arrow:
+
+| Part | Who | Where in the picture |
+|---|---|---|
+| Change | System Repo | layer 3, in a Copy |
+| Read | Maintainer Repo | the arrow *Change, read back* |
+| Judge | Maintainer Repo | layer 2: which layer the Change holds for |
+| Act on the verdicts | Maintainer Repo | the layer the verdict names; the arrows *lesson* and *adapt* |
+| Deliver | Maintainer Repo | the arrow *Update* |
+| Take | System Repo | layer 3, its Copies |
+
+So the six parts are one movement: up from layer 3, as high as the Change holds, and back down.
+
+The simulation's depths say how high a Change goes (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*):
+
+| Depth | Highest layer it changes | Arrows it travels |
+|---|---|---|
+| a. it stays in the System Repo | layer 3 | *Change, read back*; nothing comes down |
+| b. the System Kit's Adapted Case changes | layer 2 | *Change, read back*; *Update* |
+| c. the project-agnostic text changes | layer 1 | *Change, read back*; *lesson*; *adapt*, to every Adapted Case on that idea, the Maintainer Repo's own among them; *Update* |
+| d. the project-agnostic text already holds it | layer 2, fixed from layer 1 | *Change, read back*; *adapt*; *Update* |
+| e. it asks to narrow the project-agnostic text | layer 2, marked; layer 1 stays | *Change, read back*; *Update* |
+| f. several Adapted Cases need it, but not all | none | no layer holds it: it lies between layer 1 and layer 2 |
+
+Depth f is where the model has a gap: text shared by some Adapted Cases, but not all, has no layer of its own.
+
+### 3.3 The Maintainer Repo's lessons
+
+A lesson from the Maintainer Repo's own work starts in layer 3 of the right column. Since that layer is one text with its own Adapted Cases, the lesson changes layer 2 at once. It is then judged by the same questions 3 and 4 as a Change read back, and if it is true for every repo it goes up the arrow *lesson* (`temp/common-ground/common-ground-problem.md` §2.1, *Judging a change read back*). From layer 1 it comes down the arrow *adapt*, to the System Kit's Adapted Cases too, and reaches System Repos by an Update.
+
+It has no Read, Deliver or Take of its own: nothing crosses between repos until an Update carries it to a System Repo.
