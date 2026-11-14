@@ -162,9 +162,9 @@ A lesson from the Maintainer Repo's own work starts in layer 4 of the right colu
 
 It has no Read, Deliver or Take of its own: nothing crosses between repos until an Update carries it to a System Repo.
 
-## 4. Questions for after the draft
+## 4. Open questions
 
-Each is answered once the draft stands, one at a time. None is answered by the text above.
+None is answered by the text above. Each is answered when work reaches it: its answer goes into the text above, and the question leaves this list.
 
 1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, built by the stopped Plan Step *Rebuild in cbc-concept*, is close to a second Maintainer Repo.
 2. **What layer 4 holds:** a repo's use of Adapted Cases only, or also its own knowledge, such as a System Repo's design of its system and its own Knowledge on Trial?
