@@ -15,7 +15,7 @@
      matches the arrows. It goes once written back into the problem
      file, and git keeps every version. -->
 
-This document models the layers knowledge sits in, from an idea bound to no project down to a repo working by it, and how knowledge moves between them. The picture comes first; the text explains each of its labels.
+This document models the layers knowledge sits in, from an idea bound to no domain down to a repo working by it, and how knowledge moves between them. The picture comes first; the text explains each of its labels.
 
 ## 1. The picture
 
@@ -23,15 +23,27 @@ This document models the layers knowledge sits in, from an idea bound to no proj
           ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐
           ┆ the Maintainer Repo                                 ┆
           ┆  ┌───────────────────────────────────────────────┐  ┆
- Layer 1  ┆  │ Project-agnostic                              │  ┆
-          ┆  │ ideas bound to no project: understanding      │  ┆
+ Layer 1  ┆  │ Domain-agnostic                               │  ┆
+          ┆  │ ideas bound to no domain: understanding       │  ┆
           ┆  └───────────────────────────────────────────────┘  ┆
           ┆      │          ▲               ▲         │         ┆
           ┆    adapt      lesson          lesson    adapt       ┆
           ┆      ▼          │               │         ▼         ┆
           ┆  ┌─────────────────────┐   ┌─────────────────────┐  ┆
+          ┆  │ the System Repos'   │   │ its own domain:     │  ┆
+          ┆  │ domain: building    │   │ keeping knowledge   │  ┆
+ Layer 2  ┆  │ a system            │   │                     │  ┆
+          ┆  │ understanding       │   │ understanding       │  ┆
+          ┆  │ ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐ │   │                     │  ┆
+          ┆  │ ┆a case, if needed┆ │   │                     │  ┆
+          ┆  │ └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘ │   │                     │  ┆
+          ┆  └─────────────────────┘   └─────────────────────┘  ┆
+          ┆      │          ▲               ▲         │         ┆
+          ┆    adapt      lesson          lesson    adapt       ┆
+          ┆      ▼          │               │         ▼         ┆
+          ┆  ┌─────────────────────┐   ┌─────────────────────┐  ┆
           ┆  │ the System Kit's    │   │ its own             │  ┆
- Layer 2  ┆  │ Adapted Cases       │   │ Adapted Cases       │  ┆
+ Layer 3  ┆  │ Adapted Cases       │   │ Adapted Cases       │  ┆
           ┆  │ understanding and   │   │ understanding and   │  ┆
           ┆  │ instructions        │   │ instructions        │  ┆
           ┆  └─────────────────────┘   └─────────────────────┘  ┆
@@ -41,13 +53,13 @@ This document models the layers knowledge sits in, from an idea bound to no proj
                Update   read back    ┆            ║             ┆
                  ▼          │        ┆            ║             ┆
              ┌─────────────────────┐ ┆ ┌─────────────────────┐  ┆
- Layer 3     │ each System Repo's  │ ┆ │ its own work        │  ┆
+ Layer 4     │ each System Repo's  │ ┆ │ its own work        │  ┆
              │ work, by its Copies │ ┆ │                     │  ┆
              └─────────────────────┘ ┆ └─────────────────────┘  ┆
                                      └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘
 ```
 
-Key: the dotted frame holds what the Maintainer Repo keeps. A double line joins two layers kept as one text.
+Key: the dotted frame holds what the Maintainer Repo keeps. A dotted box inside a layer is a narrower case, written only when needed. A double line joins two layers kept as one text.
 
 ## 2. The layers
 
