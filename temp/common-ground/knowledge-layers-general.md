@@ -1,6 +1,6 @@
 # The layers of knowledge, in general
 
-<!-- A layer-1 idea: the layers knowledge sits in, in any Work Domain, and
+<!-- A Backbone Idea: the layers knowledge sits in, in any Work Domain, and
      how it moves between them. Its one home: each Work Domain's instance
      points here, and never retells it. What stands on it: the
      Maintainer Repo's instance,
@@ -20,7 +20,8 @@ This document says what the layers of knowledge are, in any Work Domain, and how
 
 ```
  Layer 1   ┌────────────────────────────────────────────────────┐
-           │ Bound to no Work Domain: understanding             │
+           │ Backbone Ideas, bound to no Work Domain:           │
+           │ understanding                                      │
            │ ┌──────────────────┐    ┌──────────────────┐       │
            │ │ Idea 1           │    │ Idea 2           │       │
            │ └──────────────────┘    └──────────────────┘       │
@@ -59,21 +60,21 @@ This document says what the layers of knowledge are, in any Work Domain, and how
            └────────────────────────────────────────────────────┘
 ```
 
-Key: each Work Domain Idea names the layer-1 idea it is adapted from (§2.1).
+Key: each Work Domain Idea names the Backbone Idea it is adapted from (§2.1).
 
 ## 2. The layers
 
 Knowledge sits in four layers. The higher the layer, the closer its text is to an idea's backbone.
 
-A **Work Domain** is a sort of work, such as keeping knowledge, or designing a backend by CBC. Each Work Domain adapts the layer-1 ideas it needs to its own work. Different work is a different Work Domain.
+A **Work Domain** is a sort of work, such as keeping knowledge, or designing a backend by CBC. Each Work Domain adapts the Backbone Ideas it needs to its own work. Different work is a different Work Domain.
 
 The model uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
 The kind of text runs across the layers (`temp/common-ground/common-ground-problem.md` §3.3, *The kind of text*). Layers 1 and 2 hold understanding only. Layers 3 and 4 each hold understanding and instructions.
 
-### 2.1 The layer above Work Domains
+### 2.1 The Backbone Idea layer
 
-Layer 1 holds ideas bound to no Work Domain: an idea's backbone, without the details a Work Domain adds. It may stand under several Work Domain Ideas, one, or none, as the picture's Ideas 1, 2 and 3 do. An idea with none is adapted by no Work Domain yet, and is kept as understanding.
+Layer 1 holds Backbone Ideas. A **Backbone Idea** is an idea bound to no Work Domain: its backbone, without the details a Work Domain adds. It may stand under several Work Domain Ideas, one, or none, as the picture's Ideas 1, 2 and 3 do. A Backbone Idea with none is adapted by no Work Domain yet, and is kept as understanding.
 
 **Rules:**
 
@@ -81,9 +82,9 @@ Layer 1 holds ideas bound to no Work Domain: an idea's backbone, without the det
 
 ### 2.2 The Work Domain layer
 
-Layer 2 holds a Work Domain's understanding, as Work Domain Ideas. A **Work Domain Idea** is an idea of layer 1 adapted to one Work Domain, with what the Work Domain adds. The idea's backbone stays; its details differ.
+Layer 2 holds a Work Domain's understanding, as Work Domain Ideas. A **Work Domain Idea** is a Backbone Idea adapted to one Work Domain, with what the Work Domain adds. The backbone stays; its details differ.
 
-One layer-1 idea may be adapted more than once in the same Work Domain, as the picture's Idea 1 is.
+One Backbone Idea may be adapted more than once in the same Work Domain, as the picture's Idea 1 is.
 
 **Rules:**
 
@@ -124,7 +125,7 @@ Knowledge can enter at any layer. Work meets something new and changes the Adapt
 None is answered by the text above. Each is answered when work reaches it: its answer goes into the text above, and the question leaves this list.
 
 1. **Text shared across Work Domains, but not by all:** what holds it? It fits neither one Work Domain nor layer 1.
-2. **When a second adaptation is worth it:** how differently must a layer-1 idea be understood in one Work Domain before two Work Domain Ideas are clearer than one? Practice decides (§2.2).
-3. **Where a skipped part is marked:** a Work Domain may leave out a part of a layer-1 idea it does not need, such as a gate, and the part stays in layer 1. Is it marked in the layer-1 idea, as optional, ahead of any Work Domain? Or in the Work Domain Idea that leaves it out, when it decides to, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*)?
-4. **A lesson for one adaptation:** where does a lesson go that holds for only one of a layer-1 idea's Work Domain Ideas? And since each changes alone (§2.2), is a lesson for both written into each?
+2. **When a second adaptation is worth it:** how differently must a Backbone Idea be understood in one Work Domain before two Work Domain Ideas are clearer than one? Practice decides (§2.2).
+3. **Where a skipped part is marked:** a Work Domain may leave out a part of a Backbone Idea it does not need, such as a gate, and the part stays in layer 1. Is it marked in the Backbone Idea, as optional, ahead of any Work Domain? Or in the Work Domain Idea that leaves it out, when it decides to, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*)?
+4. **A lesson for one adaptation:** where does a lesson go that holds for only one of a Backbone Idea's Work Domain Ideas? And since each changes alone (§2.2), is a lesson for both written into each?
 5. **A second adaptation or a second Adapted Case:** where does a second Work Domain Idea end, and a second Adapted Case of one Work Domain Idea begin?
