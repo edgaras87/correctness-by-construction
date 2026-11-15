@@ -109,7 +109,7 @@ Knowledge can enter at any layer. Work meets something new and changes the Adapt
 ### 3.2 The arrows
 
 - **adapt,** layer 1 to layer 2, and layer 2 to layer 3: a text is written from the idea above it, narrowed to its need, with what the need adds. When the idea above changes, each text built on it is checked, and changes if it must. A part left out on purpose is marked, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*).
-- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it is true (§3.1). It is reworded to fit every text below the layer it enters: no single Adapted Case at layer 2, no single Work Domain at layer 1.
+- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it is true (§3.1). It is reworded to name no Adapted Case at layer 2, and no Work Domain at layer 1.
 - **set apart,** layer 3 to layer 2, and layer 2 to layer 1: while a text is written, a part of it shows as true without what the text adds. The part is written in the layer above, and the text is then adapted from it.
 - **worked by,** layer 3 to layer 4: work is done by an Adapted Case, kept where the work is done, or as a copy there.
 - **change,** layer 4 to layer 3: where the work shows the Adapted Case does not fit, the work changes it. The change is judged, and goes up the arrow *lesson* as far as it holds.
