@@ -32,29 +32,27 @@ This document is the layers of knowledge in the Maintainer Repo's Work Domain: w
  Layer 1  ┆  │ Backbone Ideas, bound to no Work Domain:      │  ┆
           ┆  │ understanding                                 │  ┆
           ┆  └───────────────────────────────────────────────┘  ┆
-          ┆      │          ▲               ▲         │         ┆
-          ┆    adapt      lesson          lesson    adapt       ┆
-          ┆      ▼          │               │         ▼         ┆
+          ┆    │      ▲        ▲           ▲        ▲      │    ┆
+          ┆  adapt lesson  set apart   set apart lesson  adapt  ┆
+          ┆    ▼      │        │           │        │      ▼    ┆
           ┆  ┌─────────────────────┐   ┌─────────────────────┐  ┆
           ┆  │ the System Repos'   │   │ its own             │  ┆
           ┆  │ Work Domain:        │   │ Work Domain:        │  ┆
  Layer 2  ┆  │ designing a backend │   │ keeping knowledge   │  ┆
           ┆  │ by CBC              │   │                     │  ┆
           ┆  │ understanding       │   │ understanding       │  ┆
-          ┆  │ ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐ │   │                     │  ┆
-          ┆  │ ┆a case, if needed┆ │   │                     │  ┆
-          ┆  │ └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘ │   │                     │  ┆
           ┆  └─────────────────────┘   └─────────────────────┘  ┆
-          ┆    │                 ▲          ▲         │         ┆
-          ┆  adapt             lesson     lesson    adapt       ┆
-          ┆    │                 │          │         │         ┆
-          ┆ ┌╌╌▼ the System Kit ╌│╌╌┐       │         ▼         ┆
+          ┆    │      ▲        ▲           ▲        ▲      │    ┆
+          ┆  adapt lesson  set apart   set apart lesson  adapt  ┆
+          ┆    │      │        │           │        │      │    ┆
+          ┆ ┌╌╌▼╌╌╌╌╌╌│╌╌╌╌╌╌╌╌│╌╌╌╌┐      │        │      ▼    ┆
           ┆ ╎┌─────────────────────┐╎  ┌─────────────────────┐  ┆
           ┆ ╎│ the System Repos'   │╎  │ its own             │  ┆
           ┆ ╎│ Adapted Cases       │╎  │ Adapted Cases       │  ┆
  Layer 3  ┆ ╎│ understanding and   │╎  │ understanding and   │  ┆
           ┆ ╎│ instructions        │╎  │ instructions        │  ┆
           ┆ ╎└─────────────────────┘╎  └─────────────────────┘  ┆
+          ┆ ╎ the System Kit        ╎             ║             ┆
           ┆ └╌╌╌╌│╌╌╌╌╌╌╌╌╌╌▲╌╌╌╌╌╌╌┘             ║             ┆
           └┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┐            ║             ┆
                birth,    Change,     ┆      used in place       ┆
@@ -67,7 +65,7 @@ This document is the layers of knowledge in the Maintainer Repo's Work Domain: w
                                      └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘
 ```
 
-Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame holds what the System Kit copies to each System Repo. A dotted box inside a layer is a narrower case, written only when needed. A double line joins two layers kept as one text.
+Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame holds what the System Kit copies to each System Repo. A double line joins two layers kept as one text.
 
 ## 2. The layers
 
@@ -91,8 +89,6 @@ So far there are two Work Domains, the picture's two boxes.
 
 - **The System Repos' Work Domain:** designing a backend by CBC.
 - **The Maintainer Repo's own Work Domain:** keeping knowledge. This model is one of its Work Domain Ideas.
-
-Inside a Work Domain, an idea may be narrowed again for one case, such as a piece of work while slicing: the dotted box. A case is written only when work shows it differs from its Work Domain Idea.
 
 Both are kept in the Maintainer Repo.
 
@@ -120,7 +116,7 @@ How knowledge enters the layers and moves between them is the general document's
 
 ### 3.1 The arrows
 
-- **adapt** and **lesson,** between layers 1, 2 and 3: as the general document has them (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*). A lesson can come from either column.
+- **adapt,** **lesson** and **set apart,** between layers 1, 2 and 3: as the general document has them (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*). A lesson, or a part set apart, can come from either column.
 - **birth,** layer 3 to layer 4: a new System Repo receives Copies of the System Kit, at one System Kit Version.
 - **Update,** layer 3 to layer 4: the System Kit's changes since a System Repo's Copies were taken. The System Repo takes them by its own Copy of the Adapted Case for taking them.
 - **Change, read back,** layer 4 to layer 3: a System Repo changes a Copy and records why. The Maintainer Repo reads it back and judges it against the Adapted Case the Copy came from.
@@ -150,9 +146,9 @@ The simulation's depths say how high a Change goes (`temp/common-ground/system-r
 | c. the project-agnostic text changes | layer 2 or layer 1 | *Change, read back*; *lesson*; *adapt*, to every text built on that idea, the Maintainer Repo's own among them; *Update* |
 | d. the project-agnostic text already holds it | layer 3, fixed from the layer above | *Change, read back*; *adapt*; *Update* |
 | e. it asks to narrow the project-agnostic text | layer 3, marked; the layer above stays | *Change, read back*; *Update* |
-| f. several Adapted Cases need it, but not all | layer 2, if they share a Work Domain or a case | *Change, read back*; *lesson*; *adapt*; *Update* |
+| f. several Adapted Cases need it, but not all | layer 2, if they share a Work Domain | *Change, read back*; *lesson*; *adapt*; *Update* |
 
-The Work Domain layer fills part of depth f's gap: text shared by the Adapted Cases of one Work Domain, or of one case, has a layer. Text shared across Work Domains, but not by all, still has none.
+The Work Domain layer fills part of depth f's gap: text shared by the Adapted Cases of one Work Domain has a layer. Text shared across Work Domains, but not by all, still has none.
 
 ### 3.3 The Maintainer Repo's lessons
 
