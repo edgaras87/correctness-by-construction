@@ -73,7 +73,7 @@ Layer 1 holds ideas bound to no Work Domain: an idea's backbone, without the det
 
 Layer 2 holds a Work Domain's understanding, as Work Domain Ideas. A **Work Domain Idea** is an idea of layer 1 adapted to one Work Domain, with what the Work Domain adds. The idea's backbone stays; its details differ.
 
-One layer-1 idea may be adapted more than once in the same Work Domain, such as a version for slicing: the picture's two boxes.
+One layer-1 idea may be adapted more than once in the same Work Domain: the picture's two boxes.
 
 **Rules:**
 
