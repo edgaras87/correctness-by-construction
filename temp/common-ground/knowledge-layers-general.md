@@ -20,17 +20,27 @@ This document says what the layers of knowledge are, in any Work Domain, and how
 
 ```
  Layer 1   ┌────────────────────────────────────────────────────┐
-           │ Bound to no Work Domain                            │
-           │ ideas for any work: understanding                  │
+           │ Bound to no Work Domain: understanding             │
+           │ ┌──────────────────┐    ┌──────────────────┐       │
+           │ │ Idea 1           │    │ Idea 2           │       │
+           │ └──────────────────┘    └──────────────────┘       │
+           │ ┌──────────────────┐                               │
+           │ │ Idea 3           │                               │
+           │ └──────────────────┘                               │
            └────────────────────────────────────────────────────┘
-                      │         ▲         ▲          │
-                    adapt    lesson   set apart    adapt
-                      ▼         │         │          ▼
+                  │          ▲           ▲             │
+                adapt     lesson     set apart       adapt
+                  ▼          │           │             ▼
  Layer 2   ┌────────────────────────────────────────────────────┐
            │ Each Work Domain: understanding                    │
-           │ ┌──────────────────┐          ┌──────────────────┐ │
-           │ │ Work Domain Idea │          │ Work Domain Idea │ │
-           │ └──────────────────┘          └──────────────────┘ │
+           │ ┌──────────────────┐    ┌──────────────────┐       │
+           │ │ Work Domain Idea │    │ Work Domain Idea │       │
+           │ │ from Idea 1      │    │ from Idea 1      │       │
+           │ └──────────────────┘    └──────────────────┘       │
+           │ ┌──────────────────┐                               │
+           │ │ Work Domain Idea │                               │
+           │ │ from Idea 2      │                               │
+           │ └──────────────────┘                               │
            └────────────────────────────────────────────────────┘
                         │            ▲            ▲
                       adapt       lesson      set apart
@@ -49,7 +59,7 @@ This document says what the layers of knowledge are, in any Work Domain, and how
            └────────────────────────────────────────────────────┘
 ```
 
-Key: the two boxes in layer 2 are one layer-1 idea adapted twice in one Work Domain (§2.2).
+Key: each Work Domain Idea names the layer-1 idea it is adapted from. Idea 1 is adapted twice, Idea 2 once, and Idea 3 not at all: it is kept as understanding (§2.1, §2.2).
 
 ## 2. The layers
 
@@ -63,7 +73,7 @@ The kind of text runs across the layers (`temp/common-ground/common-ground-probl
 
 ### 2.1 The layer above Work Domains
 
-Layer 1 holds ideas bound to no Work Domain: an idea's backbone, without the details a Work Domain adds. It may stand under one Work Domain Idea, several, or none: an idea kept as understanding, which no Work Domain needs yet.
+Layer 1 holds ideas bound to no Work Domain: an idea's backbone, without the details a Work Domain adds. It may stand under one Work Domain Idea, several, or none: an idea kept as understanding, which no Work Domain needs yet (the picture's Ideas 1 to 3).
 
 **Rules:**
 
@@ -73,7 +83,7 @@ Layer 1 holds ideas bound to no Work Domain: an idea's backbone, without the det
 
 Layer 2 holds a Work Domain's understanding, as Work Domain Ideas. A **Work Domain Idea** is an idea of layer 1 adapted to one Work Domain, with what the Work Domain adds. The idea's backbone stays; its details differ.
 
-One layer-1 idea may be adapted more than once in the same Work Domain: the picture's two boxes.
+One layer-1 idea may be adapted more than once in the same Work Domain, as the picture's Idea 1 is.
 
 **Rules:**
 
