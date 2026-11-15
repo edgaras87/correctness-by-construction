@@ -2,9 +2,8 @@
 
 <!-- A layer-1 idea: the layers knowledge sits in, in any Work Domain, and
      how it moves between them. Its one home: each Work Domain's instance
-     points here, and never retells it. Written from one Work Domain, the
-     Maintainer Repo's, so it is on trial until a second Work Domain uses
-     it (§3.1). What stands on it: the Maintainer Repo's instance,
+     points here, and never retells it. What stands on it: the
+     Maintainer Repo's instance,
      temp/common-ground/knowledge-layers.md. Its place in the repo is
      decided with that document's. A trial of a way of writing rules,
      here only: a section's rules close it, in a last paragraph marked
@@ -54,7 +53,7 @@ Key: a dotted box inside a layer is a Work Domain Idea Variant (§2.2.2).
 
 ## 2. The layers
 
-Knowledge sits in four layers. The higher the layer, the more Work Domains its text fits. A **Work Domain** is a sort of work, such as keeping knowledge, or designing a backend by CBC. Each Work Domain adapts the layer-1 ideas to its own work.
+Knowledge sits in four layers. The higher the layer, the closer its text is to an idea's backbone. A **Work Domain** is a sort of work, such as keeping knowledge, or designing a backend by CBC. Each Work Domain adapts the layer-1 ideas it needs to its own work.
 
 The model uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
@@ -62,7 +61,7 @@ The kind of text runs across the layers (`temp/common-ground/common-ground-probl
 
 ### 2.1 The layer above Work Domains
 
-Layer 1 holds ideas bound to no Work Domain.
+Layer 1 holds ideas bound to no Work Domain: an idea's backbone, without the details a Work Domain adds. It may stand under one Work Domain Idea, several, or none: an idea kept as understanding, which no Work Domain needs yet.
 
 **Rules:**
 
@@ -99,16 +98,18 @@ Knowledge moves along the picture's arrows. Going down, an idea is adapted and t
 
 ### 3.1 How the layers fill
 
-The layers are filled from below. New knowledge mostly comes from work: work meets something new, tries it, and changes what it works by. Judged, it is written as high as it holds: in an Adapted Case; in its Work Domain Idea, if the Work Domain shares it; in layer 1, if every Work Domain does.
+Knowledge can enter at any layer. Work meets something new and changes the Adapted Case it works by. An idea to test may be written first as understanding, in a Work Domain Idea or in layer 1, and Adapted Cases are then written from it. While a Work Domain Idea is written, its backbone may show, and is set apart in layer 1.
 
-A higher layer is written when the layers below show the need: a second text below needs the idea, or a text being written says something true for every text below that layer, and would otherwise sit lower. Written from one text below, it stays on trial until a second one uses it.
+**Rules:**
 
-Writing from the top is rare, and is a trial: an idea written before work has tested it. It stays on trial until work does. Once a higher layer is written, a change to it spreads down, to each text built on it.
+- A text is written in the layer it belongs to, wherever its knowledge entered.
+- A lesson from work goes as high as it is true.
+- Once a higher text is written, a change to it spreads down, to each text built on it.
 
 ### 3.2 The arrows
 
 - **adapt,** layer 1 to layer 2, and layer 2 to layer 3: a text is written from the idea above it, narrowed to its need, with what the need adds. When the idea above changes, each text built on it is checked, and changes if it must. A part left out on purpose is marked, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*).
-- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it holds. It enters its Work Domain Idea if the whole Work Domain shares it, and layer 1 if every Work Domain does, reworded to fit every text below the layer it enters: no single Adapted Case at layer 2, no single Work Domain at layer 1.
+- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it is true (§3.1). It is reworded to fit every text below the layer it enters: no single Adapted Case at layer 2, no single Work Domain at layer 1.
 - **worked by,** layer 3 to layer 4: work is done by an Adapted Case, kept where the work is done, or as a copy there.
 - **change,** layer 4 to layer 3: where the work shows the Adapted Case does not fit, the work changes it. The change is judged, and goes up the arrow *lesson* as far as it holds.
 
