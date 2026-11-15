@@ -23,14 +23,14 @@ This document says what the layers of knowledge are, in any Work Domain, and how
            │ Bound to no Work Domain                            │
            │ ideas for any work: understanding                  │
            └────────────────────────────────────────────────────┘
-                  │          ▲           ▲             │
-                adapt     lesson     set apart       adapt
-                  ▼          │           │             ▼
+                      │         ▲         ▲          │
+                    adapt    lesson   set apart    adapt
+                      ▼         │         │          ▼
  Layer 2   ┌────────────────────────────────────────────────────┐
            │ Each Work Domain: understanding                    │
-           │ ┌──────────────────┐  ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐ │
-           │ │ Work Domain Idea │  ┆ Work Domain Idea Variant ┆ │
-           │ └──────────────────┘  └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘ │
+           │ ┌──────────────────┐          ┌──────────────────┐ │
+           │ │ Work Domain Idea │          │ Work Domain Idea │ │
+           │ └──────────────────┘          └──────────────────┘ │
            └────────────────────────────────────────────────────┘
                         │            ▲            ▲
                       adapt       lesson      set apart
@@ -49,7 +49,7 @@ This document says what the layers of knowledge are, in any Work Domain, and how
            └────────────────────────────────────────────────────┘
 ```
 
-Key: a dotted box inside a layer is a Work Domain Idea Variant (§2.2.2).
+Key: the two boxes in layer 2 are one layer-1 idea adapted twice in one Work Domain (§2.2).
 
 ## 2. The layers
 
@@ -71,20 +71,13 @@ Layer 1 holds ideas bound to no Work Domain: an idea's backbone, without the det
 
 ### 2.2 The Work Domain layer
 
-Layer 2 holds a Work Domain's understanding, in two kinds. A Work Domain Idea is the Work Domain's default (§2.2.1). A Work Domain Idea Variant is another version of it, for one situation inside the Work Domain (§2.2.2).
+Layer 2 holds a Work Domain's understanding, as Work Domain Ideas. A **Work Domain Idea** is an idea of layer 1 adapted to one Work Domain, with what the Work Domain adds. The idea's backbone stays; its details differ.
 
-#### 2.2.1 Work Domain Ideas
-
-A **Work Domain Idea** is an idea of layer 1 narrowed to one Work Domain, with what the Work Domain adds. The idea's backbone stays; its details differ. It is used everywhere in the Work Domain, except in a situation that has its own Work Domain Idea Variant.
-
-#### 2.2.2 Work Domain Idea Variants
-
-A **Work Domain Idea Variant** is another version of a Work Domain Idea, for one situation inside the Work Domain: the dotted box.
+One layer-1 idea may be adapted more than once in the same Work Domain, such as a version for slicing: the picture's two boxes.
 
 **Rules:**
 
-- It is written when, in one situation, the idea itself is understood differently enough that it is clearer read and changed on its own, whole. A difference only in one use is not that: it is a second Adapted Case.
-- It is written whole, adapted from the same layer-1 idea as its Work Domain Idea. Each is read whole and changed alone: a change to one does not reach the other.
+- Each adaptation is a Work Domain Idea of its own: written whole, read alone, and changed alone. A change to one does not reach the other.
 
 ### 2.3 The Adapted Case layer
 
@@ -121,6 +114,7 @@ Knowledge can enter at any layer. Work meets something new and changes the Adapt
 None is answered by the text above. Each is answered when work reaches it: its answer goes into the text above, and the question leaves this list.
 
 1. **Text shared across Work Domains, but not by all:** what holds it? It fits neither one Work Domain nor layer 1.
-2. **When a Work Domain Idea Variant is worth it:** how differently must the idea be understood in one situation before a variant is clearer than the Work Domain Idea alone? Practice decides (§2.2.2).
+2. **When a second adaptation is worth it:** how differently must a layer-1 idea be understood in one Work Domain before two Work Domain Ideas are clearer than one? Practice decides (§2.2).
 3. **Where a skipped part is marked:** a Work Domain may leave out a part of a layer-1 idea it does not need, such as a gate, and the part stays in layer 1. Is it marked in the layer-1 idea, as optional, ahead of any Work Domain? Or in the Work Domain Idea that leaves it out, when it decides to, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*)?
-4. **A lesson for a Work Domain Idea Variant:** where does a lesson go that holds only in a variant's situation? And since each changes alone (§2.2.2), is a lesson for both written into each?
+4. **A lesson for one adaptation:** where does a lesson go that holds for only one of a layer-1 idea's Work Domain Ideas? And since each changes alone (§2.2), is a lesson for both written into each?
+5. **A second adaptation or a second Adapted Case:** where does a second Work Domain Idea end, and a second Adapted Case of one Work Domain Idea begin?
