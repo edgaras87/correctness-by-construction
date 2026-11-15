@@ -161,9 +161,9 @@ It has no Read, Deliver or Take of its own: nothing crosses between repos until 
 None is answered by the text above. Each is answered when work reaches it: its answer goes into the text above, and the question leaves this list.
 
 1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, built by the stopped Plan Step *Rebuild in cbc-concept*, is close to a second Maintainer Repo.
-2. **What layer 4 holds:** a repo's use of Adapted Cases only, or also its own knowledge, such as a System Repo's design of its system and its own Knowledge on Trial?
+2. **What layer 4 holds:** the general document's question (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6). Here it is met at a System Repo's design of its system and its own Knowledge on Trial.
 3. **A name for the movement:** what runs from a Change to the take of the next Update, as one thing (§3.2), so the simulation can name it.
-4. **The depths and the layers:** is how deep a Change goes the same as how high it goes (§3.2)? What holds text shared across Work Domains, but not by all?
+4. **The depths and the layers:** is how deep a Change goes the same as how high it goes (§3.2)? Text shared across Work Domains, but not by all, is the general document's question (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1). Here it is met when the open Plan Step's stage 2 labels which parts of `concept/` are which.
 5. **Where Judge sits:** §3.2 puts it at layer 3, since a Change is judged against the Adapted Case its Copy came from. The sources say only that it runs in the Maintainer Repo.
 6. **Depth d and the layer above:** if several Adapted Cases lost the same part, the layer above may be reworded clearer (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). §3.2's row leaves it out.
 7. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.

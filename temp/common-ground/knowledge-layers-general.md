@@ -129,3 +129,4 @@ None is answered by the text above. Each is answered when work reaches it: its a
 3. **Where a skipped part is marked:** a Work Domain may leave out a part of a Backbone Idea it does not need, such as a gate, and the part stays in layer 1. Is it marked in the Backbone Idea, as optional, ahead of any Work Domain? Or in the Work Domain Idea that leaves it out, when it decides to, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*)?
 4. **A lesson for one adaptation:** where does a lesson go that holds for only one of a Backbone Idea's Work Domain Ideas? And since each changes alone (§2.2), is a lesson for both written into each?
 5. **A second adaptation or a second Adapted Case:** where does a second Work Domain Idea end, and a second Adapted Case of one Work Domain Idea begin?
+6. **What layer 4 holds:** only work done by an Adapted Case, or also the knowledge the work makes of its own (§2.4)?
