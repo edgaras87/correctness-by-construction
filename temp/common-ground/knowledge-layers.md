@@ -1,8 +1,8 @@
 # The layers of knowledge
 
 <!-- The model of the layers knowledge sits in, and how it moves
-     between them: a layer-2 idea of the Maintainer Repo's own
-     domain, keeping knowledge (§2.2), and its one home. Other texts
+     between them: a Work Domain Idea of the Maintainer Repo's own
+     Work Domain, keeping knowledge (§2.2), and its one home. Other texts
      point here, and never retell it. Still a draft and a trial (§3):
      practice changes it. Its place in the repo is decided when
      today's Maintainer Repo is brought into it (TODO.md, the item on
@@ -19,7 +19,7 @@
      names is in the picture, and what the text says moves where
      matches the arrows. -->
 
-This document models the layers knowledge sits in, from an idea bound to no domain down to a repo working by it, and how knowledge moves between them. The picture comes first; the text explains each of its labels.
+This document models the layers knowledge sits in, from a Backbone Idea down to a repo working by it, and how knowledge moves between them. The picture comes first; the text explains each of its labels.
 
 ## 1. The picture
 
@@ -27,16 +27,17 @@ This document models the layers knowledge sits in, from an idea bound to no doma
           ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐
           ┆ the Maintainer Repo                                 ┆
           ┆  ┌───────────────────────────────────────────────┐  ┆
- Layer 1  ┆  │ Domain-agnostic                               │  ┆
-          ┆  │ ideas bound to no domain: understanding       │  ┆
+ Layer 1  ┆  │ Backbone Ideas, bound to no Work Domain:      │  ┆
+          ┆  │ understanding                                 │  ┆
           ┆  └───────────────────────────────────────────────┘  ┆
           ┆      │          ▲               ▲         │         ┆
           ┆    adapt      lesson          lesson    adapt       ┆
           ┆      ▼          │               │         ▼         ┆
           ┆  ┌─────────────────────┐   ┌─────────────────────┐  ┆
-          ┆  │ the System Repos'   │   │ its own domain:     │  ┆
-          ┆  │ domain: building    │   │ keeping knowledge   │  ┆
- Layer 2  ┆  │ a system            │   │                     │  ┆
+          ┆  │ the System Repos'   │   │ its own             │  ┆
+          ┆  │ Work Domain:        │   │ Work Domain:        │  ┆
+ Layer 2  ┆  │ designing a backend │   │ keeping knowledge   │  ┆
+          ┆  │ by CBC              │   │                     │  ┆
           ┆  │ understanding       │   │ understanding       │  ┆
           ┆  │ ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐ │   │                     │  ┆
           ┆  │ ┆a case, if needed┆ │   │                     │  ┆
@@ -76,24 +77,24 @@ The kind of text runs across the layers (`temp/common-ground/common-ground-probl
 
 The System Kit is not a layer. It is what is copied to each System Repo, the picture's dashed frame: so far, the System Repos' Adapted Cases of layer 3.
 
-### 2.1 The domain-agnostic layer
+### 2.1 The Backbone Idea layer
 
-Layer 1 holds ideas bound to no domain. Which of today's project-agnostic ideas belong here is open (§4).
+Layer 1 holds Backbone Ideas, bound to no Work Domain. Which of today's project-agnostic ideas are Backbone Ideas is open (§4).
 
-It holds understanding only. An instruction applies an idea to some piece of work, and work always belongs to a domain.
+It holds understanding only. An instruction applies an idea to some piece of work, and work always belongs to a Work Domain.
 
 It is kept in the Maintainer Repo, and stays there. A System Repo receives it only adapted, in the System Kit.
 
-### 2.2 The domain layer
+### 2.2 The Work Domain layer
 
-Layer 2 holds ideas narrowed to one domain, with what the domain adds. The idea's backbone stays; its details differ. It holds understanding only.
+Layer 2 holds Work Domain Ideas: Backbone Ideas adapted to one Work Domain, with what the Work Domain adds. The idea's backbone stays; its details differ. It holds understanding only.
 
-So far there are two domains, the picture's two boxes. What a domain is, exactly, is open (§4).
+So far there are two Work Domains, the picture's two boxes.
 
-- **The System Repos' domain:** building a system.
-- **The Maintainer Repo's own domain:** keeping knowledge. This model is one of its ideas.
+- **The System Repos' Work Domain:** designing a backend by CBC.
+- **The Maintainer Repo's own Work Domain:** keeping knowledge. This model is one of its Work Domain Ideas.
 
-Inside a domain, an idea may be narrowed again for one case, such as a piece of work while slicing: the dotted box. A case is written only when work shows it differs from its domain's idea.
+Inside a Work Domain, an idea may be narrowed again for one case, such as a piece of work while slicing: the dotted box. A case is written only when work shows it differs from its Work Domain Idea.
 
 Both are kept in the Maintainer Repo.
 
@@ -156,9 +157,9 @@ The simulation's depths say how high a Change goes (`temp/common-ground/system-r
 | c. the project-agnostic text changes | layer 2 or layer 1 | *Change, read back*; *lesson*; *adapt*, to every text built on that idea, the Maintainer Repo's own among them; *Update* |
 | d. the project-agnostic text already holds it | layer 3, fixed from the layer above | *Change, read back*; *adapt*; *Update* |
 | e. it asks to narrow the project-agnostic text | layer 3, marked; the layer above stays | *Change, read back*; *Update* |
-| f. several Adapted Cases need it, but not all | layer 2, if they share a domain or a case | *Change, read back*; *lesson*; *adapt*; *Update* |
+| f. several Adapted Cases need it, but not all | layer 2, if they share a Work Domain or a case | *Change, read back*; *lesson*; *adapt*; *Update* |
 
-The domain layer fills part of depth f's gap: text shared by the Adapted Cases of one domain, or of one case, has a layer. Text shared across domains, but not by all, still has none.
+The Work Domain layer fills part of depth f's gap: text shared by the Adapted Cases of one Work Domain, or of one case, has a layer. Text shared across Work Domains, but not by all, still has none.
 
 ### 3.3 The Maintainer Repo's lessons
 
@@ -173,10 +174,9 @@ None is answered by the text above. Each is answered when work reaches it: its a
 1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, built by the stopped Plan Step *Rebuild in cbc-concept*, is close to a second Maintainer Repo.
 2. **What layer 4 holds:** a repo's use of Adapted Cases only, or also its own knowledge, such as a System Repo's design of its system and its own Knowledge on Trial?
 3. **A name for the movement:** what runs from a Change to the take of the next Update, as one thing (§3.2), so the simulation can name it.
-4. **The depths and the layers:** is how deep a Change goes the same as how high it goes (§3.2)? What holds text shared across domains, but not by all?
+4. **The depths and the layers:** is how deep a Change goes the same as how high it goes (§3.2)? What holds text shared across Work Domains, but not by all?
 5. **Where Judge sits:** §3.2 puts it at layer 3, since a Change is judged against the Adapted Case its Copy came from. The sources say only that it runs in the Maintainer Repo.
 6. **Depth d and the layer above:** if several Adapted Cases lost the same part, the layer above may be reworded clearer (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). §3.2's row leaves it out.
 7. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
-8. **What a domain is:** the sort of repo, the kind of system, or both. Backends may be a domain, or a case inside the domain of building a system.
-9. **What the System Kit holds:** layer 3 only, or the System Repos' domain ideas too. CBC system design adapted for backends (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*, item 2) may already be layer 2.
-10. **Which ideas are domain-agnostic:** of today's project-agnostic ideas, how work is done with an agent may be; how a CBC system is designed may belong to the domain of building a system.
+8. **What the System Kit holds:** layer 3 only, or the System Repos' Work Domain Ideas too. CBC system design adapted for backends (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*, item 2) may already be layer 2.
+9. **Which ideas are Backbone Ideas:** of today's project-agnostic ideas, how work is done with an agent may be; how a CBC system is designed may belong to the Work Domain of designing a backend by CBC.
