@@ -54,7 +54,7 @@ Key: a dotted box inside a layer is a Work Domain Idea Variant (§2.2.2).
 
 ## 2. The layers
 
-Knowledge sits in four layers. The higher the layer, the more Work Domains its text fits. A **Work Domain** is a sort of work, such as keeping knowledge, or designing a backend by CBC. Each Work Domain adapts the layer-1 ideas to its own work. It is not the business a system serves, such as orders or payments.
+Knowledge sits in four layers. The higher the layer, the more Work Domains its text fits. A **Work Domain** is a sort of work, such as keeping knowledge, or designing a backend by CBC. Each Work Domain adapts the layer-1 ideas to its own work.
 
 The model uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
