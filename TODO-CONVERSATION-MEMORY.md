@@ -2556,3 +2556,53 @@ On the next work: "i was thinking to go manualy each doc especialy common ground
 #### What the reviewer took
 
 The model is drawn and written in `temp/common-ground/knowledge-layers.md`, its own home, and its general part in `temp/common-ground/knowledge-layers-general.md`, on trial; the fill rule is widened. A Domain Idea Variant is written whole. The Maintainer Kit stays an open question, with a TODO item for its trigger. The earlier drafts are gone through together, the problem file first, before `temp/`'s old files are decided.
+
+### 2026-11-15, later
+
+#### What the reviewer said
+
+On a domain: "but i actualy think it is sort of work. when we have some work, like maintainer, we use domain agnostic idea to adapt to maintainer repo. when we have cbc backend design kit, we use those domain agnostic ideas to adapt to that domain. where is the problem to define what domain means?" Then, on its name: "craft sound weird. how else we could call, what maintainer repo work and system repo is doing? it seems that it is kind of Work Domain or what?"
+
+On layer 1: "layer 1 not only about sharing. it is also information layer. this doc we write now is one of examples. we write general understanding here which we will not put in layer 2. also it could be used in another work domain which will need to write its work domain idea based on this but it is not only one reason or condition"
+
+On how knowledge enters: "when we have idea in mind which needs to test, it could go first in understanding, like work domain or even Bound to no Work Domain . then based on that we write approahes. ... knowledge could enter at any place. if we already in some work domain, it could come idea for layer 1. during the writing we notice that we have some backbone of idea which we want o distinct and put in layer 1. it does nothing to do with reuse. so maybe layer 1 should be define not as share between work domains, but as backbone if idea in layer 2. it could happen that it will be writen only for one or even non of layer 2. i may want to put idea for understanding of something that no current work domain needs it, but we as context would use."
+
+On a variant: "we should say that there could be idea's from layer 1 variants, so same idea from layer 1 could have multiple adaptations. maybe we should drop saying a  default. ... it is al theory, maybe we should sorten most of it and move to open questions"
+
+On examples: "i dont want specific example, so it should sound not specific to any or remove at all."
+
+On the picture: "should we place idea boxes in layer 1? should we put multiple with tags numers, that we could also refer those from layer 2? we could then domonstrat same idea 2 times , one 1 time or non (not included)." Then: "i want same picture. lets have a rows that picture would fit. lets make max 2 boxes in the row, with 2 rows"
+
+#### What the reviewer said, edited
+
+"I think a domain is a sort of work. Maintainer work adapts the domain-agnostic ideas to the Maintainer Repo; a CBC backend design kit adapts them to its own domain. Where is the problem in defining what a domain means?" Then: "'Craft' sounds odd. What do we call what the Maintainer Repo and a System Repo do? A kind of Work Domain?"
+
+"Layer 1 is not only about sharing. It holds understanding too, and this document is an example: general understanding we will not put in layer 2. Another Work Domain may write its Work Domain Idea from it, but that is not the only reason or condition."
+
+"An idea to test may go first into understanding, in a Work Domain or even bound to no Work Domain; then the approaches are written from it. Knowledge can enter anywhere. Inside a Work Domain, an idea for layer 1 may come up: while writing, we see a backbone we want to set apart in layer 1. That has nothing to do with reuse. So layer 1 is the backbone of an idea in layer 2, not what Work Domains share. It may be written for one Work Domain Idea, or for none: I may write an idea no current Work Domain needs, as context we use."
+
+"One layer-1 idea can have several adaptations. Maybe drop the default. It is all theory: shorten most of it and move it to the open questions."
+
+"No specific example: make it general, or remove it."
+
+"Put idea boxes in layer 1, numbered, so layer 2 can refer to them, and show one idea adapted twice, one once, one not at all." Then: "Keep one picture. Fit it in rows of at most two boxes, two rows."
+
+#### What the reviewer asked, as the agent would ask it
+
+1. Is a domain a sort of work, so open question 1 is answered, and is its Name Work Domain?
+2. Is layer 1 an idea's backbone, written for one Work Domain Idea, several or none, rather than what Work Domains share?
+3. Can knowledge enter at any layer, a backbone set apart while a lower text is written?
+4. Is a layer-1 idea adapted more than once in one Work Domain, with no default, the rest of the variant theory moved to the open questions?
+5. Should the general document name no specific example?
+6. Should the one picture show numbered layer-1 ideas, adapted twice, once and not at all, in rows of two?
+
+#### What the agent added
+
+- **"Domain" means a system's business in the backend Agent Skills** ("a domain class", "domain state" in `cbc-bootstrap`). Application Domain is the same meaning; Repo Domain names the repo, not the work, and many repos share one.
+- **The fill rule stood three times,** in two words: "shares" in §3.1 and §3.2, "needs" or "true for every text below" in §3.1.
+- **Setting a backbone apart is not a lesson from work,** so the picture had no arrow for it.
+- **Understanding Idea does not tell layer 1 from layer 2:** a Work Domain Idea is understanding too.
+
+#### What the reviewer took
+
+Work Domain, a sort of work, its own paragraph in §2. Layer 1 holds Backbone Ideas, each standing under several Work Domain Ideas, one, or none; reuse is not why it is written. Knowledge enters at any layer; the arrow *set apart* joins *lesson* at both gaps going up; "on trial" and "writing from the top is rare" go. Layer 2 holds one kind, the Work Domain Idea, a Backbone Idea adapted once or more; the variant's theory moves to the open questions. The picture numbers three ideas, in rows of two. No example names a case.
