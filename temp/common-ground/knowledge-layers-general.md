@@ -1,9 +1,9 @@
 # The layers of knowledge, in general
 
-<!-- A layer-1 idea: the layers knowledge sits in, in any domain, and
-     how it moves between them. Its one home: each domain's instance
-     points here, and never retells it. Written from one domain, the
-     Maintainer Repo's, so it is on trial until a second domain uses
+<!-- A layer-1 idea: the layers knowledge sits in, in any Work Domain, and
+     how it moves between them. Its one home: each Work Domain's instance
+     points here, and never retells it. Written from one Work Domain, the
+     Maintainer Repo's, so it is on trial until a second Work Domain uses
      it (§3.1). What stands on it: the Maintainer Repo's instance,
      temp/common-ground/knowledge-layers.md. Its place in the repo is
      decided with that document's. A trial of a way of writing rules,
@@ -15,75 +15,75 @@
      the picture, and what the text says moves where matches the
      arrows. -->
 
-This document says what the layers of knowledge are, in any domain, and how knowledge moves between them. It names no repo: each domain's instance says where its layers are kept and how its texts travel.
+This document says what the layers of knowledge are, in any Work Domain, and how knowledge moves between them. It names no repo: each Work Domain's instance says where its layers are kept and how its texts travel.
 
 ## 1. The picture
 
 ```
- Layer 1   ┌──────────────────────────────────────────┐
-           │ Domain-agnostic                          │
-           │ ideas bound to no domain: understanding  │
-           └──────────────────────────────────────────┘
-                    │        ▲           │
-                  adapt    lesson      adapt
-                    ▼        │           ▼
- Layer 2   ┌──────────────────────────────────────────┐
-           │ Each domain: understanding               │
-           │ ┌─────────────┐  ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐ │
-           │ │ Domain Idea │  ┆ Domain Idea Variant ┆ │
-           │ └─────────────┘  └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘ │
-           └──────────────────────────────────────────┘
-                │                     ▲
-              adapt                 lesson
-                ▼                     │
- Layer 3   ┌──────────────────────────────────────────┐
-           │ Adapted Cases                            │
-           │ an idea written for one use:             │
-           │ understanding and instructions           │
-           └──────────────────────────────────────────┘
-                │                     ▲
-            worked by               change
-                ▼                     │
- Layer 4   ┌──────────────────────────────────────────┐
-           │ Work                                     │
-           │ done by an Adapted Case                  │
-           └──────────────────────────────────────────┘
+ Layer 1   ┌────────────────────────────────────────────────────┐
+           │ Bound to no Work Domain                            │
+           │ ideas for any work: understanding                  │
+           └────────────────────────────────────────────────────┘
+                        │            ▲            │
+                      adapt       lesson        adapt
+                        ▼            │            ▼
+ Layer 2   ┌────────────────────────────────────────────────────┐
+           │ Each Work Domain: understanding                    │
+           │ ┌──────────────────┐  ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐ │
+           │ │ Work Domain Idea │  ┆ Work Domain Idea Variant ┆ │
+           │ └──────────────────┘  └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘ │
+           └────────────────────────────────────────────────────┘
+                            │                 ▲
+                          adapt            lesson
+                            ▼                 │
+ Layer 3   ┌────────────────────────────────────────────────────┐
+           │ Adapted Cases                                      │
+           │ an idea written for one use:                       │
+           │ understanding and instructions                     │
+           └────────────────────────────────────────────────────┘
+                            │                 ▲
+                        worked by          change
+                            ▼                 │
+ Layer 4   ┌────────────────────────────────────────────────────┐
+           │ Work                                               │
+           │ done by an Adapted Case                            │
+           └────────────────────────────────────────────────────┘
 ```
 
-Key: a dotted box inside a layer is a Domain Idea Variant (§2.2.2).
+Key: a dotted box inside a layer is a Work Domain Idea Variant (§2.2.2).
 
 ## 2. The layers
 
-Knowledge sits in four layers. The higher the layer, the more domains its text fits. A domain is a field of work with needs of its own, such as building a system, or keeping knowledge. What a domain is, exactly, is open (§4).
+Knowledge sits in four layers. The higher the layer, the more Work Domains its text fits. A **Work Domain** is a sort of work, such as keeping knowledge, or designing a backend by CBC. Each Work Domain adapts the layer-1 ideas to its own work. It is not the business a system serves, such as orders or payments.
 
 The model uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
 The kind of text runs across the layers (`temp/common-ground/common-ground-problem.md` §3.3, *The kind of text*). Layers 1 and 2 hold understanding only. Layers 3 and 4 each hold understanding and instructions.
 
-### 2.1 The domain-agnostic layer
+### 2.1 The layer above Work Domains
 
-Layer 1 holds ideas bound to no domain.
+Layer 1 holds ideas bound to no Work Domain.
 
 **Rules:**
 
-- It holds no instruction (§2): an instruction applies an idea to some piece of work, and work always belongs to a domain.
+- It holds no instruction (§2): an instruction applies an idea to some piece of work, and work always belongs to a Work Domain.
 
-### 2.2 The domain layer
+### 2.2 The Work Domain layer
 
-Layer 2 holds a domain's understanding, in two kinds. A Domain Idea is the domain's default (§2.2.1). A Domain Idea Variant is another version of it, for one situation inside the domain (§2.2.2).
+Layer 2 holds a Work Domain's understanding, in two kinds. A Work Domain Idea is the Work Domain's default (§2.2.1). A Work Domain Idea Variant is another version of it, for one situation inside the Work Domain (§2.2.2).
 
-#### 2.2.1 Domain Ideas
+#### 2.2.1 Work Domain Ideas
 
-A **Domain Idea** is an idea of layer 1 narrowed to one domain, with what the domain adds. The idea's backbone stays; its details differ. It is used everywhere in the domain, except in a situation that has its own Domain Idea Variant.
+A **Work Domain Idea** is an idea of layer 1 narrowed to one Work Domain, with what the Work Domain adds. The idea's backbone stays; its details differ. It is used everywhere in the Work Domain, except in a situation that has its own Work Domain Idea Variant.
 
-#### 2.2.2 Domain Idea Variants
+#### 2.2.2 Work Domain Idea Variants
 
-A **Domain Idea Variant** is another version of a Domain Idea, for one situation inside the domain: the dotted box.
+A **Work Domain Idea Variant** is another version of a Work Domain Idea, for one situation inside the Work Domain: the dotted box.
 
 **Rules:**
 
 - It is written when, in one situation, the idea itself is understood differently enough that it is clearer read and changed on its own, whole. A difference only in one use is not that: it is a second Adapted Case.
-- It is written whole, adapted from the same layer-1 idea as its Domain Idea. Each is read whole and changed alone: a change to one does not reach the other.
+- It is written whole, adapted from the same layer-1 idea as its Work Domain Idea. Each is read whole and changed alone: a change to one does not reach the other.
 
 ### 2.3 The Adapted Case layer
 
@@ -99,7 +99,7 @@ Knowledge moves along the picture's arrows. Going down, an idea is adapted and t
 
 ### 3.1 How the layers fill
 
-The layers are filled from below. New knowledge mostly comes from work: work meets something new, tries it, and changes what it works by. Judged, it is written as high as it holds: in an Adapted Case; in its Domain Idea, if the domain shares it; in layer 1, if every domain does.
+The layers are filled from below. New knowledge mostly comes from work: work meets something new, tries it, and changes what it works by. Judged, it is written as high as it holds: in an Adapted Case; in its Work Domain Idea, if the Work Domain shares it; in layer 1, if every Work Domain does.
 
 A higher layer is written when the layers below show the need: a second text below needs the idea, or a text being written says something true for every text below that layer, and would otherwise sit lower. Written from one text below, it stays on trial until a second one uses it.
 
@@ -108,7 +108,7 @@ Writing from the top is rare, and is a trial: an idea written before work has te
 ### 3.2 The arrows
 
 - **adapt,** layer 1 to layer 2, and layer 2 to layer 3: a text is written from the idea above it, narrowed to its need, with what the need adds. When the idea above changes, each text built on it is checked, and changes if it must. A part left out on purpose is marked, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*).
-- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it holds. It enters its Domain Idea if the whole domain shares it, and layer 1 if every domain does, reworded to fit every text below the layer it enters: no single Adapted Case at layer 2, no single domain at layer 1.
+- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it holds. It enters its Work Domain Idea if the whole Work Domain shares it, and layer 1 if every Work Domain does, reworded to fit every text below the layer it enters: no single Adapted Case at layer 2, no single Work Domain at layer 1.
 - **worked by,** layer 3 to layer 4: work is done by an Adapted Case, kept where the work is done, or as a copy there.
 - **change,** layer 4 to layer 3: where the work shows the Adapted Case does not fit, the work changes it. The change is judged, and goes up the arrow *lesson* as far as it holds.
 
@@ -116,8 +116,7 @@ Writing from the top is rare, and is a trial: an idea written before work has te
 
 None is answered by the text above. Each is answered when work reaches it: its answer goes into the text above, and the question leaves this list.
 
-1. **What a domain is:** a field of work, a sort of repo, a kind of system, or more than one of these.
-2. **Text shared across domains, but not by all:** what holds it? It fits neither one domain nor layer 1.
-3. **When a Domain Idea Variant is worth it:** how differently must the idea be understood in one situation before a variant is clearer than the Domain Idea alone? Practice decides (§2.2.2).
-4. **Where a skipped part is marked:** a domain may leave out a part of a layer-1 idea it does not need, such as a gate, and the part stays in layer 1. Is it marked in the layer-1 idea, as optional, ahead of any domain? Or in the Domain Idea that leaves it out, when it decides to, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*)?
-5. **A lesson for a Domain Idea Variant:** where does a lesson go that holds only in a variant's situation? And since each changes alone (§2.2.2), is a lesson for both written into each?
+1. **Text shared across Work Domains, but not by all:** what holds it? It fits neither one Work Domain nor layer 1.
+2. **When a Work Domain Idea Variant is worth it:** how differently must the idea be understood in one situation before a variant is clearer than the Work Domain Idea alone? Practice decides (§2.2.2).
+3. **Where a skipped part is marked:** a Work Domain may leave out a part of a layer-1 idea it does not need, such as a gate, and the part stays in layer 1. Is it marked in the layer-1 idea, as optional, ahead of any Work Domain? Or in the Work Domain Idea that leaves it out, when it decides to, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*)?
+4. **A lesson for a Work Domain Idea Variant:** where does a lesson go that holds only in a variant's situation? And since each changes alone (§2.2.2), is a lesson for both written into each?
