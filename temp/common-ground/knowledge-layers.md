@@ -2,8 +2,10 @@
 
 <!-- The model of the layers knowledge sits in, and how it moves
      between them: a Work Domain Idea of the Maintainer Repo's own
-     Work Domain, keeping knowledge (§2.2), and its one home. Other texts
-     point here, and never retell it. Still a draft and a trial (§3):
+     Work Domain, keeping knowledge (§2.2), and its one home. It adapts
+     temp/common-ground/knowledge-layers-general.md, the layers in any
+     Work Domain, and never retells it. Other texts
+     point here, and never retell it. Still a draft and a trial:
      practice changes it. Its place in the repo is decided when
      today's Maintainer Repo is brought into it (TODO.md, the item on
      the layers of knowledge). Started from TODO-CONVERSATION-MEMORY.md
@@ -19,7 +21,7 @@
      names is in the picture, and what the text says moves where
      matches the arrows. -->
 
-This document models the layers knowledge sits in, from a Backbone Idea down to a repo working by it, and how knowledge moves between them. The picture comes first; the text explains each of its labels.
+This document is the layers of knowledge in the Maintainer Repo's Work Domain: where each layer is kept, and how knowledge travels between the Maintainer Repo and the System Repos. The layers themselves, and how knowledge moves between them, are the general document's (`temp/common-ground/knowledge-layers-general.md`). The picture comes first; the text explains each of its labels.
 
 ## 1. The picture
 
@@ -69,25 +71,21 @@ Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame hol
 
 ## 2. The layers
 
-Knowledge sits in four layers. The higher the layer, the more domains its text fits. How knowledge moves between them is §3.
+Knowledge sits in four layers (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*). This section says where each is kept here, and what each holds so far.
 
 The model uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*). The picture shortens three: Copy for System Kit Copy, Change for System Kit Copy Change, Update for System Kit Update.
-
-The kind of text runs across the layers (`temp/common-ground/common-ground-problem.md` §3.3, *The kind of text*). Layers 1 and 2 hold understanding only. Layers 3 and 4 each hold understanding and instructions.
 
 The System Kit is not a layer. It is what is copied to each System Repo, the picture's dashed frame: so far, the System Repos' Adapted Cases of layer 3.
 
 ### 2.1 The Backbone Idea layer
 
-Layer 1 holds Backbone Ideas, bound to no Work Domain. Which of today's project-agnostic ideas are Backbone Ideas is open (§4).
-
-It holds understanding only. An instruction applies an idea to some piece of work, and work always belongs to a Work Domain.
+Layer 1 holds Backbone Ideas (`temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer*). Which of today's project-agnostic ideas are Backbone Ideas is open (§4).
 
 It is kept in the Maintainer Repo, and stays there. A System Repo receives it only adapted, in the System Kit.
 
 ### 2.2 The Work Domain layer
 
-Layer 2 holds Work Domain Ideas: Backbone Ideas adapted to one Work Domain, with what the Work Domain adds. The idea's backbone stays; its details differ. It holds understanding only.
+Layer 2 holds Work Domain Ideas (`temp/common-ground/knowledge-layers-general.md` §2.2, *The Work Domain layer*).
 
 So far there are two Work Domains, the picture's two boxes.
 
@@ -100,7 +98,7 @@ Both are kept in the Maintainer Repo.
 
 ### 2.3 The Adapted Case layer
 
-Layer 3 holds Adapted Cases. An Adapted Case is an idea of layer 2 written for one use, with the Instruction Texts built on it. So it holds both kinds of text.
+Layer 3 holds Adapted Cases (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
 
 So far an idea is adapted for two places, the picture's two boxes:
 
@@ -111,23 +109,18 @@ Both are kept in the Maintainer Repo.
 
 ### 2.4 The layer of a repo's work
 
-Layer 4 is a repo working by an Adapted Case. The text is the Adapted Case of layer 3, or a Copy of it. What puts it in layer 4 is the use: the work shows where the text does not fit, and the repo changes it.
+Layer 4 is work done by an Adapted Case (`temp/common-ground/knowledge-layers-general.md` §2.4, *The layer of work*). Here the work is a repo's:
 
 - **Each System Repo's work, by its Copies:** a System Repo is born with Copies of the System Kit and works by them. As its work needs, it makes Changes, so its Copies differ from layer 3 on purpose. It is kept outside the Maintainer Repo, so every arrow between it and layer 3 crosses from one repo to the other.
 - **The Maintainer Repo's own work:** the Maintainer Repo works by its own Adapted Cases in place, with no Copy. There, layers 3 and 4 are one text, the double line *used in place*. A change its work makes is, at once, a change to its Adapted Case. Its problem is keeping this knowledge, as a System Repo's is designing one system.
 
 ## 3. How knowledge moves
 
-Knowledge moves along the picture's arrows. Going down, an idea is adapted and sent to where it is used. Going up, what the work taught is read back and judged, and lands in the layer it holds for.
-
-The layers are filled from below. New knowledge mostly comes from work: a repo meets something new, tries it, and changes what it works by. Read back and judged, it is written as high as it holds: in an Adapted Case; in its domain's idea, if the domain shares it; in layer 1, if every domain does. A higher layer is written when the layers below show the need: a second text below needs the idea, or a text being written says something true for every text below that layer, and would otherwise sit lower. Written from one text below, it stays on trial until a second one uses it.
-
-Writing from the top is rare, and is a trial: an idea written before work has tested it, such as this model. It stays on trial until work does. Once a higher layer is written, a change to it spreads down, to each text built on it.
+How knowledge enters the layers and moves between them is the general document's (`temp/common-ground/knowledge-layers-general.md` §3, *How knowledge moves*). This section adds the arrows between the Maintainer Repo and the System Repos, and how a Change travels them.
 
 ### 3.1 The arrows
 
-- **adapt,** layer 1 to layer 2, and layer 2 to layer 3: a text is written from the idea above it, narrowed to its need, with what the need adds. When the idea above changes, each text built on it is checked, and changes if it must. A part left out on purpose is marked, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*).
-- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it holds. It enters its domain's idea if the whole domain shares it, and layer 1 if every domain does, reworded to name no domain. It can come from either column.
+- **adapt** and **lesson,** between layers 1, 2 and 3: as the general document has them (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*). A lesson can come from either column.
 - **birth,** layer 3 to layer 4: a new System Repo receives Copies of the System Kit, at one System Kit Version.
 - **Update,** layer 3 to layer 4: the System Kit's changes since a System Repo's Copies were taken. The System Repo takes them by its own Copy of the Adapted Case for taking them.
 - **Change, read back,** layer 4 to layer 3: a System Repo changes a Copy and records why. The Maintainer Repo reads it back and judges it against the Adapted Case the Copy came from.

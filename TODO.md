@@ -38,13 +38,13 @@
       to work by; then finish the change work by it; then bring
       today's Maintainer Repo into it; and keep it true from practice
       (2026-11-14, the reviewer).
-      Context: the draft is `temp/common-ground/knowledge-layers.md`:
-      four layers, domain-agnostic, the domain, the Adapted Cases, and
-      a repo working by them, filled from below. It is the minimum
+      Context: the draft is two documents: the layers in any Work
+      Domain, `temp/common-ground/knowledge-layers-general.md`, and the
+      Maintainer Repo's Work Domain Idea of them,
+      `temp/common-ground/knowledge-layers.md`. It is the minimum
       written where how to keep knowledge is not yet known, a trial:
       practice changes it, and the ideas around it, such as Change.
-      It is itself a layer-2 idea of the Maintainer Repo's domain. Its
-      §4 holds its questions, none answered yet.
+      Each document's §4 holds its open questions.
       Ideas:
       - the change work: the simulation of a System Repo's change, and
         the problem file's rules written from it, both pointing at
