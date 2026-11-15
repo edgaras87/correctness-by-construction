@@ -59,7 +59,7 @@ This document says what the layers of knowledge are, in any Work Domain, and how
            └────────────────────────────────────────────────────┘
 ```
 
-Key: each Work Domain Idea names the layer-1 idea it is adapted from. Idea 1 is adapted twice, Idea 2 once, and Idea 3 not at all: it is kept as understanding (§2.1, §2.2).
+Key: each Work Domain Idea names the layer-1 idea it is adapted from (§2.1).
 
 ## 2. The layers
 
@@ -73,7 +73,7 @@ The kind of text runs across the layers (`temp/common-ground/common-ground-probl
 
 ### 2.1 The layer above Work Domains
 
-Layer 1 holds ideas bound to no Work Domain: an idea's backbone, without the details a Work Domain adds. It may stand under one Work Domain Idea, several, or none: an idea kept as understanding, which no Work Domain needs yet (the picture's Ideas 1 to 3).
+Layer 1 holds ideas bound to no Work Domain: an idea's backbone, without the details a Work Domain adds. It may stand under several Work Domain Ideas, one, or none, as the picture's Ideas 1, 2 and 3 do. An idea with none is adapted by no Work Domain yet, and is kept as understanding.
 
 **Rules:**
 
