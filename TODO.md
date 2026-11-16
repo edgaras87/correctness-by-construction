@@ -191,6 +191,11 @@
       that way shapes it. No fact or step of the concept or the
       methods may be lost.
       Ideas:
+      - the three parts as layers (`temp/common-ground/knowledge-layers.md`):
+        CBC design as a Backbone Idea in layer 1; its Work Domain Idea
+        for backends in layer 2; framing, slicing and the like as
+        Adapted Cases in layer 3, worked by in layer 4 (2026-11-16,
+        the reviewer);
       - stage 2's labels as the split's input;
       - the concept's software examples may go with the backend case,
         which meets the item on whether the concept keeps examples;
