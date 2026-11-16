@@ -1,19 +1,14 @@
 # The layers of knowledge, in general
 
-<!-- A Backbone Idea: the layers knowledge sits in, in any Work Domain, and
-     how it moves between them. Its one home: each Work Domain's instance
-     points here, and never retells it. What stands on it: the
-     Maintainer Repo's instance,
-     temp/common-ground/knowledge-layers.md. Its place in the repo is
-     decided with that document's. A trial of a way of writing rules,
-     here only: a section's rules close it, in a last paragraph marked
-     Rules, and govern that section; a rule may be split across a
-     section and its subsections. The picture and the text are
-     checked against each other at every change: each label in the
-     picture is explained in the text, each part the text names is in
-     the picture, and what the text says moves where matches the
-     arrows. It gives no example from one Work Domain's work. §2 names
-     two sorts of work only to show what a Work Domain is. -->
+<!--
+What it is: a Backbone Idea (§2.1), and its one home.
+What stands on it: temp/common-ground/knowledge-layers.md, the Maintainer Repo's Work Domain Idea. Each Work Domain Idea points here, and never retells it.
+Its place in the repo: decided with that document's.
+How it is edited:
+- The picture and the text are checked against each other at every change: each label in the picture is explained in the text, each part the text names is in the picture, and what the text says moves where matches the arrows.
+- It gives no example from one Work Domain's work. §2 names two sorts of work only to show what a Work Domain is.
+- A trial, here only: a section's rules close it, in a last paragraph marked Rules, and govern that section. A rule may be split across a section and its subsections.
+-->
 
 This document says what the layers of knowledge are, in any Work Domain, and how knowledge moves between them. It names no repo: each Work Domain's instance says where its layers are kept and how its texts travel.
 
