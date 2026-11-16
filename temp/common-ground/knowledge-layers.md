@@ -110,16 +110,24 @@ The System Repos' Work Domain. The Maintainer Repo keeps its Work Domain Ideas a
 
 ### 2.3 The Adapted Case layer
 
-Layer 3 holds Adapted Cases (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
+Layer 3 holds Adapted Cases (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*), each written from a Work Domain Idea of §2.2.
 
 Here an Adapted Case is one piece of agent work, such as reading a System Repo, working one step of its Plan Step, or writing a commit message. Its instruction text is an Agent Skill or an Agent Rule; how many one Adapted Case holds is open (§4). Its understanding text says why the instruction text is as it is. The agent uses the instruction text in the work, and reads the understanding text only when the instruction text is changed. The two travel together: a System Repo's Copy holds both.
 
-So far an idea is adapted for two places, the picture's two boxes:
+The Adapted Cases fall under the same two Work Domains as §2.2, the picture's two boxes. Both are kept in the Maintainer Repo.
 
-- **The System Repos' Adapted Cases:** two groups so far: agent work, adapted for System Repos, and CBC system design, adapted for one kind of system, backends so far. They are the System Kit, and each System Repo works from Copies of them.
-- **The Maintainer Repo's own Adapted Cases:** for itself. Agent work only, adapted to keeping this knowledge.
+#### 2.3.1 Keeping knowledge
 
-Both are kept in the Maintainer Repo.
+The Maintainer Repo's own Adapted Cases, for itself. So far all are written from one Work Domain Idea of §2.2.1: how an agent works, keeping knowledge. The Maintainer Repo works by them in place, with no Copy (§2.4).
+
+#### 2.3.2 Designing a backend by CBC
+
+The System Repos' Adapted Cases, in two groups so far, one for each Work Domain Idea of §2.2.2:
+
+- **Agent work,** from how an agent works, designing a backend.
+- **CBC system design,** from CBC design for backends. How it meets agent work in one Adapted Case is open (§4).
+
+They are the System Kit. Each System Repo works from Copies of them (§2.4).
 
 ### 2.4 The layer of a repo's work
 
