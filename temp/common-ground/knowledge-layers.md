@@ -70,7 +70,7 @@ The System Kit is not a layer. It is what is copied to each System Repo, the pic
 
 ### 2.1 The Backbone Idea layer
 
-Layer 1 holds Backbone Ideas (`temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer*). Which of today's project-agnostic ideas are Backbone Ideas is open (§4).
+Layer 1 holds Backbone Ideas (`temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer*). Two are planned, each rewritten from today's text: how an agent works, from the Agent Model (`docs/models/agent.md`), and CBC design, from `concept/` (`TODO.md`, the item that splits the concept). How an agent works holds what one piece of agent work is: what the agent does, when, where and how (§2.3). The piece of work is set apart as a Backbone Idea of its own when a second Backbone Idea needs it. Which other of today's project-agnostic ideas are Backbone Ideas is open (§4).
 
 It is kept in the Maintainer Repo, and stays there. A System Repo receives it only adapted, in the System Kit.
 
@@ -82,6 +82,8 @@ So far there are two Work Domains, the picture's two boxes.
 
 - **The System Repos' Work Domain:** designing a backend by CBC.
 - **The Maintainer Repo's own Work Domain:** keeping knowledge. This model is one of its Work Domain Ideas.
+
+Each Work Domain holds its own Work Domain Idea of how an agent works, adapted to its work. The System Repos' Work Domain also holds CBC design, adapted for backends. Whether the two Work Domain Ideas of how an agent works differ is open (§4).
 
 Both are kept in the Maintainer Repo.
 
@@ -163,5 +165,7 @@ None is answered by the text above. Each is answered when work reaches it: its a
 6. **Depth d and the layer above:** if several Adapted Cases lost the same part, the layer above may be reworded clearer (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). §3.2's row leaves it out.
 7. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
 8. **What the System Kit holds:** layer 3 only, or the System Repos' Work Domain Ideas too. CBC system design adapted for backends (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*, item 2) may already be layer 2.
-9. **Which ideas are Backbone Ideas:** of today's project-agnostic ideas, how work is done with an agent may be; how a CBC system is designed may belong to the Work Domain of designing a backend by CBC.
+9. **Which other ideas are Backbone Ideas:** of today's project-agnostic ideas, beyond how an agent works and CBC design (§2.1).
 10. **What one Adapted Case holds:** one Agent Skill or Agent Rule under its understanding text, or several. One understanding text may stand under more than one, as the facts-in-sync manual stands under two Agent Rules.
+11. **Two Work Domain Ideas of how an agent works:** does an agent's work differ enough between keeping knowledge and designing a backend by CBC to need two texts, or would they be one text written twice (§2.2)?
+12. **An Adapted Case from two ideas:** the cbc-framing Agent Skill holds CBC design's content, written as a piece of agent work. Is it adapted from two Work Domain Ideas, or from one, with the other giving only its form?
