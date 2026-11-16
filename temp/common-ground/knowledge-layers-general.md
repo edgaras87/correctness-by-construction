@@ -93,7 +93,7 @@ Layer 3 holds Adapted Cases. An Adapted Case is an idea of layer 2 written for o
 
 **Rules:**
 
-- An Adapted Case is tied to another only through the ideas above them. A change to one reaches another only when it goes up the arrow *lesson* and comes down the arrow *adapt*: it is then true beyond its own Adapted Case.
+- An Adapted Case is tied to another only through the nearest idea above them both: their Work Domain Idea, if they share one, or else their Backbone Idea. A change to one reaches another only when it goes up the arrow *lesson* to that idea and comes down the arrow *adapt*: it is then true beyond its own Adapted Case.
 
 ### 2.4 The layer of work
 
