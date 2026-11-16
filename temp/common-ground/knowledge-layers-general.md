@@ -56,7 +56,7 @@ This document says what the layers of knowledge are, in any Work Domain, and how
            └────────────────────────────────────────────────────┘
 ```
 
-Key: each Work Domain Idea names the Backbone Idea it is adapted from (§2.1).
+Key: each Work Domain Idea names the Backbone Idea it is adapted from (§2.2).
 
 ## 2. The layers
 
@@ -85,6 +85,7 @@ One Backbone Idea may be adapted more than once in the same Work Domain, as the 
 **Rules:**
 
 - Each adaptation is a Work Domain Idea of its own: written whole, read alone, and changed alone. A change to one does not reach the other.
+- A Work Domain Idea names the Work Domain it is adapted to, and the Backbone Idea it is adapted from.
 
 ### 2.3 The Adapted Case layer
 
