@@ -131,3 +131,4 @@ None is answered by the text above. Each is answered when work reaches it: its a
 4. **A lesson for one adaptation:** where does a lesson go that holds for only one of a Backbone Idea's Work Domain Ideas? And since each changes alone (§2.2), is a lesson for both written into each?
 5. **A second adaptation or a second Adapted Case:** where does a second Work Domain Idea end, and a second Adapted Case of one Work Domain Idea begin?
 6. **What layer 4 holds:** only work done by an Adapted Case, or also the knowledge the work makes of its own (§2.4)?
+7. **A lesson the layer above already holds:** a change is true beyond its own Adapted Case, but the idea above already says it, so nothing comes down the arrow *adapt*. How do the other Adapted Cases built on that idea learn of it? Does whoever judges the change decide this, and tell each one? The change work answers it.
