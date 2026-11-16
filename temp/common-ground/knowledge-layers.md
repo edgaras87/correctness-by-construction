@@ -70,7 +70,15 @@ The System Kit is not a layer. It is what is copied to each System Repo, the pic
 
 ### 2.1 The Backbone Idea layer
 
-Layer 1 holds Backbone Ideas (`temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer*). Two are planned, each rewritten from today's text: how an agent works, from the Agent Model (`docs/models/agent.md`), and CBC design, from `concept/` (`TODO.md`, the item that splits the concept). How an agent works holds what one piece of agent work is: what the agent does, when, where and how (§2.3). The piece of work is set apart as a Backbone Idea of its own when a second Backbone Idea needs it. Which other of today's project-agnostic ideas are Backbone Ideas is open (§4).
+Layer 1 holds Backbone Ideas (`temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer*). Each row's description is a summary; the idea's home holds it.
+
+| Backbone Idea | What it says | Home |
+|---|---|---|
+| The layers of knowledge | the layers knowledge sits in, and how it moves between them | `temp/common-ground/knowledge-layers-general.md` |
+| How an agent works | what one piece of agent work is: what the agent does, when, where and how | planned, from `docs/models/agent.md` (`TODO.md`, the item that rewrites the Agent Model) |
+| CBC design | how a system is designed by CBC, for no one kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
+
+The piece of work (§2.3) is set apart as a Backbone Idea of its own when a second Backbone Idea needs it. Which other of today's project-agnostic ideas are Backbone Ideas is open (§4).
 
 It is kept in the Maintainer Repo, and stays there. A System Repo receives it only adapted, in the System Kit.
 
@@ -81,9 +89,18 @@ Layer 2 holds Work Domain Ideas (`temp/common-ground/knowledge-layers-general.md
 So far there are two Work Domains, the picture's two boxes.
 
 - **The System Repos' Work Domain:** designing a backend by CBC.
-- **The Maintainer Repo's own Work Domain:** keeping knowledge. This model is one of its Work Domain Ideas.
+- **The Maintainer Repo's own Work Domain:** keeping knowledge.
 
-Each Work Domain holds its own Work Domain Idea of how an agent works, adapted to its work. The System Repos' Work Domain also holds CBC design, adapted for backends. Whether the two Work Domain Ideas of how an agent works differ is open (§4).
+Each row's description is a summary; the idea's home holds it.
+
+| Work Domain Idea | Work Domain | Adapted from | What it adds | Home |
+|---|---|---|---|---|
+| The layers of knowledge, in the Maintainer Repo | keeping knowledge | The layers of knowledge | where each layer is kept; how knowledge travels between the repos | this document |
+| How an agent works, keeping knowledge | keeping knowledge | How an agent works | | planned |
+| How an agent works, designing a backend | designing a backend by CBC | How an agent works | | planned |
+| CBC design for backends | designing a backend by CBC | CBC design | backends as the kind of system | planned, from `concept/` |
+
+Whether the two Work Domain Ideas of how an agent works differ is open (§4).
 
 Both are kept in the Maintainer Repo.
 
