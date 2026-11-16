@@ -84,25 +84,29 @@ It is kept in the Maintainer Repo, and stays there. A System Repo receives it on
 
 ### 2.2 The Work Domain layer
 
-Layer 2 holds Work Domain Ideas (`temp/common-ground/knowledge-layers-general.md` §2.2, *The Work Domain layer*).
+Layer 2 holds Work Domain Ideas (`temp/common-ground/knowledge-layers-general.md` §2.2, *The Work Domain layer*), each a Backbone Idea of §2.1 adapted to one Work Domain.
 
-So far there are two Work Domains, the picture's two boxes.
+The Maintainer Repo works in one Work Domain, keeping knowledge, and keeps the texts of two so far: its own, and the System Repos'. Keeping the System Repos' texts is part of its own work (§3.2). Both are kept in the Maintainer Repo, the picture's two boxes.
 
-- **The System Repos' Work Domain:** designing a backend by CBC.
-- **The Maintainer Repo's own Work Domain:** keeping knowledge.
+In each table, a row's description is a summary; the idea's home holds it. Whether the two Work Domain Ideas of how an agent works differ is open (§4).
 
-Each row's description is a summary; the idea's home holds it.
+#### 2.2.1 Keeping knowledge
 
-| Work Domain Idea | Work Domain | Adapted from | What it adds | Home |
-|---|---|---|---|---|
-| The layers of knowledge, in the Maintainer Repo | keeping knowledge | The layers of knowledge | where each layer is kept; how knowledge travels between the repos | this document |
-| How an agent works, keeping knowledge | keeping knowledge | How an agent works | | planned |
-| How an agent works, designing a backend | designing a backend by CBC | How an agent works | | planned |
-| CBC design for backends | designing a backend by CBC | CBC design | backends as the kind of system | planned, from `concept/` |
+The Maintainer Repo's own Work Domain. Its Work Domain Ideas are worked here, by its own Adapted Cases, in place (§2.4).
 
-Whether the two Work Domain Ideas of how an agent works differ is open (§4).
+| Work Domain Idea | Adapted from | What it adds | Home |
+|---|---|---|---|
+| The layers of knowledge, in the Maintainer Repo | The layers of knowledge | where each layer is kept; how knowledge travels between the repos | this document |
+| How an agent works, keeping knowledge | How an agent works | | planned |
 
-Both are kept in the Maintainer Repo.
+#### 2.2.2 Designing a backend by CBC
+
+The System Repos' Work Domain. The Maintainer Repo keeps its Work Domain Ideas and writes the System Kit's Adapted Cases from them. The work is done in each System Repo, by its Copies (§2.4).
+
+| Work Domain Idea | Adapted from | What it adds | Home |
+|---|---|---|---|
+| How an agent works, designing a backend | How an agent works | | planned |
+| CBC design for backends | CBC design | backends as the kind of system | planned, from `concept/` |
 
 ### 2.3 The Adapted Case layer
 
