@@ -89,6 +89,8 @@ Both are kept in the Maintainer Repo.
 
 Layer 3 holds Adapted Cases (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
 
+Here an Adapted Case is one piece of agent work, such as reading a System Repo, working one step of its Plan Step, or writing a commit message. Its instruction text is an Agent Skill or an Agent Rule; how many one Adapted Case holds is open (§4). Its understanding text says why the instruction text is as it is. The agent uses the instruction text in the work, and reads the understanding text only when the instruction text is changed. The two travel together: a System Repo's Copy holds both.
+
 So far an idea is adapted for two places, the picture's two boxes:
 
 - **The System Repos' Adapted Cases:** two groups so far: agent work, adapted for System Repos, and CBC system design, adapted for one kind of system, backends so far. They are the System Kit, and each System Repo works from Copies of them.
@@ -162,3 +164,4 @@ None is answered by the text above. Each is answered when work reaches it: its a
 7. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
 8. **What the System Kit holds:** layer 3 only, or the System Repos' Work Domain Ideas too. CBC system design adapted for backends (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*, item 2) may already be layer 2.
 9. **Which ideas are Backbone Ideas:** of today's project-agnostic ideas, how work is done with an agent may be; how a CBC system is designed may belong to the Work Domain of designing a backend by CBC.
+10. **What one Adapted Case holds:** one Agent Skill or Agent Rule under its understanding text, or several. One understanding text may stand under more than one, as the facts-in-sync manual stands under two Agent Rules.
