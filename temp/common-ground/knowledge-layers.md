@@ -1,25 +1,18 @@
 # The layers of knowledge
 
-<!-- The model of the layers knowledge sits in, and how it moves
-     between them: a Work Domain Idea of the Maintainer Repo's own
-     Work Domain, keeping knowledge (§2.2), and its one home. It adapts
-     temp/common-ground/knowledge-layers-general.md, the layers in any
-     Work Domain, and never retells it. Other texts
-     point here, and never retell it. Still a draft and a trial:
-     practice changes it. Its place in the repo is decided when
-     today's Maintainer Repo is brought into it (TODO.md, the item on
-     the layers of knowledge). Started from TODO-CONVERSATION-MEMORY.md
-     §35, *The layers of knowledge*. Its first sources, input and not
-     rules:
-     temp/common-ground/common-ground-problem.md §2.1 and §3; the
-     simulation's six parts and depths,
-     temp/common-ground/system-repo-change-simulation.md;
-     temp/model-example/idea-model-problem.md §1 and
-     temp/model-example/layers.md; docs/models/tiers.md. The picture
-     and the text are checked against each other at every change: each
-     label in the picture is explained in the text, each part the text
-     names is in the picture, and what the text says moves where
-     matches the arrows. -->
+<!--
+What it is: a Work Domain Idea of the Maintainer Repo's own Work Domain, keeping knowledge (§2.2), and its one home. Still a draft and a trial: practice changes it.
+What it stands on: temp/common-ground/knowledge-layers-general.md, the layers in any Work Domain. It adapts that document, and never retells it.
+What stands on it: other texts point here, and never retell it.
+Its place in the repo: decided when today's Maintainer Repo is brought into it (TODO.md, the item on the layers of knowledge).
+Where it started: TODO-CONVERSATION-MEMORY.md §35, *The layers of knowledge*.
+Its first sources, input and not rules:
+- temp/common-ground/common-ground-problem.md §2.1 and §3;
+- the simulation's six parts and depths, temp/common-ground/system-repo-change-simulation.md;
+- temp/model-example/idea-model-problem.md §1 and temp/model-example/layers.md;
+- docs/models/tiers.md.
+How it is edited: the picture and the text are checked against each other at every change, as the general document's header says.
+-->
 
 This document is the layers of knowledge in the Maintainer Repo's Work Domain: where each layer is kept, and how knowledge travels between the Maintainer Repo and the System Repos. The layers themselves, and how knowledge moves between them, are the general document's (`temp/common-ground/knowledge-layers-general.md`). The picture comes first; the text explains each of its labels.
 
