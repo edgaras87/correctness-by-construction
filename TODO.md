@@ -211,6 +211,25 @@
       See: devlog 2026-11-08, CBC design beyond backends;
       `TODO-CONVERSATION-MEMORY.md` §33, *CBC design beyond backends*.
 
+- [ ] Rewrite the Agent Model into the layers of knowledge: how an
+      agent works as a Backbone Idea, a Work Domain Idea of it in
+      each Work Domain, and Adapted Cases written from each
+      (2026-11-16, the reviewer).
+      Context: the layers model plans how an agent works as a
+      Backbone Idea, rewritten from the Agent Model
+      (`docs/models/agent.md`). It holds what one piece of agent
+      work is: what the agent does, when, where and how
+      (`temp/common-ground/knowledge-layers.md` §2.1, *The Backbone
+      Idea layer*). Each Work Domain holds its own Work Domain Idea
+      of it (§2.2 there).
+      Ideas:
+      - the same shape as the concept's split, the item above;
+      - whether the two Work Domain Ideas differ is the layers
+        model's §4, question 11.
+      Trigger: the close of the Plan Step "Find how what we know stays
+      true", with the concept's split.
+      See: devlog 2026-11-16.
+
 - [ ] Try CBC design on the finished Common Ground Problem, beside
       the way chosen (2026-11-08, the reviewer).
       Context: the Common Ground Problem draft already reads in part
