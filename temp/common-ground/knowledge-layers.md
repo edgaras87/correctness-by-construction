@@ -114,7 +114,7 @@ Layer 3 holds Adapted Cases (`temp/common-ground/knowledge-layers-general.md` §
 
 Here an Adapted Case is one piece of agent work, such as reading a System Repo, working one step of its Plan Step, or writing a commit message. Its instruction text is an Agent Skill or an Agent Rule; how many one Adapted Case holds is open (§4). Its understanding text says why the instruction text is as it is. The agent uses the instruction text in the work, and reads the understanding text only when the instruction text is changed. The two travel together: a System Repo's Copy holds both.
 
-Layer 3 is split like layer 2: one part for each Work Domain, the picture's two boxes. The Maintainer Repo keeps both. An Agent Skill or Agent Rule found in both parts is two Adapted Cases, one in each.
+Layer 3 is split like layer 2: one part for each Work Domain, the picture's two boxes. The Maintainer Repo keeps both. An Agent Skill or Agent Rule found in both parts is two Adapted Cases, one in each. The two are tied only through layer 1, the Backbone Idea they share (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
 
 #### 2.3.1 Keeping knowledge
 

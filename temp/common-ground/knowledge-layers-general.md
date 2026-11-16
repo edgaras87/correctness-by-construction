@@ -91,6 +91,10 @@ One Backbone Idea may be adapted more than once in the same Work Domain, as the 
 
 Layer 3 holds Adapted Cases. An Adapted Case is an idea of layer 2 written for one use, with the Instruction Texts built on it. So it holds both kinds of text.
 
+**Rules:**
+
+- An Adapted Case is tied to another only through the ideas above them. A change to one reaches another only when it goes up the arrow *lesson* and comes down the arrow *adapt*: it is then true beyond its own Adapted Case.
+
 ### 2.4 The layer of work
 
 Layer 4 is work done by an Adapted Case. The text is the Adapted Case itself, or a copy of it where the work is done. What puts it in layer 4 is the use: the work shows where the text does not fit, and the text is changed.
