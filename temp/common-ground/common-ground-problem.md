@@ -431,6 +431,7 @@ The interface between the human's mind and the agent breaks in these Failure Cas
 | 22. A System Kit Copy Change reaches the Maintainer Repo without its why: the System Repo wrote down what it changed, not why. | writing | where | between |
 | 23. An adapted understanding lags behind its project-agnostic idea, which has moved on. | aging | layer | either |
 | 24. A project-agnostic idea is bent to one project's needs, and no longer fits the others. | writing | layer | between |
+| 25. The agent reads a text at the wrong layer, such as a line of an Adapted Case taken as true for the whole idea it was adapted from, or the other way round. | reading | layer | either |
 
 The same Failure Cases by Text Life Phase and Knowledge Axis. Every cell has a Failure Case; an empty one would point at a missing Failure Case:
 
@@ -438,7 +439,7 @@ The same Failure Cases by Text Life Phase and Knowledge Axis. Every cell has a F
 |---|---|---|---|---|---|
 | **writing** | 1, 4, 5 | 12 | 9, 11, 16 | 15, 22 | 24 |
 | **aging** | 3 | 2, 8 | 10 | 19, 21 | 23 |
-| **reading** | 6, 7 | 13, 17, 18 | 14 | 20 | none yet |
+| **reading** | 6, 7 | 13, 17, 18 | 14 | 20 | 25 |
 
 Seen on 2026-11-05: Failure Case 1, the purpose of an earlier attempt to rebuild the Maintainer Repo's way of working, written nowhere for 3 days; Failure Cases 4 and 5, the agent's dense answers, until the human said they had lost common ground.
 
