@@ -339,7 +339,7 @@ Two steps:
   - question 0, the Change is sound: what happened, the Change, and the original part. Does it fix what happened, without breaking something the Copy did? An unsound Change goes no further: the depth questions are not asked, and the verdict says why. The Copy is the System Repo's own, so the Change stays there unless the System Repo reverses it;
   - question 1, the Copy already said it: the original part, in the Version the Copies came from, beside the Change. When the System Kit has moved since, its part as it is now is read too: a change the System Kit has since made the same way is covered, and nothing new is made, so one lesson is not made twice;
   - question 2, specific to that System Repo's problem: what happened, the System Repo's proposal, and its framing of its problem;
-  - question 3, the project-agnostic understanding already holds it: the Project-Agnostic Understanding Text the Adapted Case narrows;
+  - question 3, the project-agnostic understanding already holds it: the text above the Adapted Case, the Work Domain Idea or Backbone Idea it narrows;
   - question 4, true for every repo: depth c's step, checked later.
 
   **Lines together, lines split.** Lines listed together under one reason are judged together, and the reason is judged once. A line whose parts answer differently is split, each part judged on its own; the parts keep their one Record.

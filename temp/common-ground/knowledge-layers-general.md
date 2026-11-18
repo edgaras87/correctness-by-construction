@@ -64,9 +64,7 @@ Knowledge sits in four layers. The higher the layer, the closer its text is to a
 
 A **Work Domain** is a sort of work, such as keeping knowledge, or designing a backend. Each Work Domain adapts the Backbone Ideas it needs to its own work. Different work is a different Work Domain.
 
-The model uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
-
-The kind of text runs across the layers (`temp/common-ground/common-ground-problem.md` §3.3, *The kind of text*). Layers 1 and 2 hold understanding only. Layers 3 and 4 each hold understanding and instructions.
+Text comes in two kinds, and the kind runs across the layers. An **Understanding Text** holds what is known, and how it is understood. An **Instruction Text** is built on an Understanding Text, to apply it: what the agent acts on. Layers 1 and 2 hold understanding only. Layers 3 and 4 each hold understanding and instructions.
 
 ### 2.1 The Backbone Idea layer
 
@@ -90,7 +88,7 @@ One Backbone Idea may be adapted more than once in the same Work Domain, as the 
 
 ### 2.3 The Adapted Case layer
 
-Layer 3 holds Adapted Cases. An Adapted Case is an idea of layer 2 written for one use, with the Instruction Texts built on it. So it holds both kinds of text.
+Layer 3 holds Adapted Cases. An **Adapted Case** is an idea of layer 2 written for one use, as its **Adapted Understanding Text**, with the Instruction Texts built on it. Its Adapted Understanding Text says why its Instruction Texts are as they are. So it holds both kinds of text.
 
 **Rules:**
 
@@ -106,7 +104,7 @@ Knowledge moves along the picture's arrows. Going down, an idea is adapted and t
 
 ### 3.1 How the layers fill
 
-Knowledge can enter at any layer. Work meets something new and changes the Adapted Case it works by, or writes one, on trial, where none covers it. An idea to test may be written first as understanding, in a Work Domain Idea or in layer 1, and Adapted Cases are then written from it. While a text is written, a part of it may show as the idea above it, and is set apart there: a Work Domain Idea's backbone in layer 1, or the part of an Adapted Case true for its whole Work Domain, in its Work Domain Idea.
+Knowledge can enter at any layer. Work meets something new and changes the Adapted Case it works by, or writes one, on trial, where none covers it. New knowledge used before it is judged is **Knowledge on Trial**: a way of working, an Understanding Text, or a text's form. An idea to test may be written first as understanding, in a Work Domain Idea or in layer 1, and Adapted Cases are then written from it. While a text is written, a part of it may show as the idea above it, and is set apart there: a Work Domain Idea's backbone in layer 1, or the part of an Adapted Case true for its whole Work Domain, in its Work Domain Idea.
 
 **Rules:**
 

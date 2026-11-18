@@ -15,7 +15,7 @@ This document states the Common Ground Problem. It chooses no answer; answers me
 
 ## Defined Terms
 
-A Defined Term is a word or words given an exact meaning, written capitalized, so plain English stays free. Each Defined Term below is defined here, once. Six plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground. Any other lowercase word is plain English. An *italic* word is a label inside the Defined Term it belongs to. The Defined Terms below are local to the Common Ground Problem, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. They are the intent's words; the repo's own names for the same things are today's, set beside them in §2.2. When this document lands, each Defined Term replaces a repo name, joins the repo's glossary, or goes. A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
+A Defined Term is a word or words given an exact meaning, written capitalized, so plain English stays free. Each Defined Term below is defined here, once, except those the layers model defines, whose entries point there. Its other Names, such as Backbone Idea and Work Domain Idea, are used as it defines them (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*). Six plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground. Any other lowercase word is plain English. An *italic* word is a label inside the Defined Term it belongs to. The Defined Terms below are local to the Common Ground Problem, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. They are the intent's words; the repo's own names for the same things are today's, set beside them in §2.2. When this document lands, each Defined Term replaces a repo name, joins the repo's glossary, or goes. A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
 
 Plain words, in a narrow sense:
 
@@ -28,23 +28,22 @@ Plain words, in a narrow sense:
 
 Defined Terms, in alphabetical order:
 
-- **Adapted Case:** an Adapted Understanding Text with the Instruction Texts built on it. They are read, checked and updated together.
-- **Adapted Understanding Text:** a Project-Agnostic Understanding Text narrowed to one sort of need, with what that need adds: a sort of repo, or a kind of system. A System Repo's copy may adapt it further, to its own project. It is the middle level between Project-Agnostic Understanding Text and Instruction Text.
+- **Adapted Case:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
+- **Adapted Understanding Text:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
 - **Common Ground Problem:** keeping common ground between the human and the agent from one session to the next, while the text it is built from goes stale; the problem this document states.
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **File Instruction Text:** an Instruction Text the agent loads when a certain kind of file is opened.
-- **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. So far it comes in three sorts, by when the agent loads it: Task Instruction Text, Session Instruction Text and File Instruction Text.
+- **Instruction Text:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*). So far it comes in three sorts, by when the agent loads it: Task Instruction Text, Session Instruction Text and File Instruction Text.
 - **Knowledge Axis:** one way of sorting text. There are five: *who uses it*, *time*, *kind*, *where*, *layer* (§3).
 - **Knowledge Drift:** text and knowledge moving apart. The text holds less than the knowledge, or is older than it.
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
-- **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
+- **Knowledge on Trial:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §3.1, *How the layers fill*).
 - **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
 - **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns.
 - **Maintainer Repo Register:** the Maintainer Repo's list of its System Repos: where each lives, and its *settled snapshot*.
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
-- **Project-Agnostic Understanding Text:** an Understanding Text bound to no project.
 - **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
 - **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
@@ -60,7 +59,7 @@ Defined Terms, in alphabetical order:
 - **System Repo Reading:** the Maintainer Repo reading one System Repo since it last read it, and the draft that lists what it found.
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
-- **Understanding Text:** text that holds what is known, and how it is understood.
+- **Understanding Text:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*).
 
 Labels:
 
@@ -191,7 +190,7 @@ If none holds, it is a lesson for System Repos only: the Adapted Case it came fr
 
 ##### Act on the verdicts
 
-**A project-agnostic lesson.** A Project-Agnostic Understanding Text is bound to no project, so a lesson enters it if it holds for any project, whatever an Adapted Case says.
+**A project-agnostic lesson.** The text above an Adapted Case, a Work Domain Idea or a Backbone Idea, is bound to no project, so a lesson enters it if it holds for any project, whatever an Adapted Case says.
 
 - It is reworded to name no project, the agent drafting and the human deciding. Its first wording is kept beside it, since the rewording is the agent's reading.
 - Every other Adapted Case built on that idea is surveyed; the one the lesson came from is not. Each answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto. If every answer conflicts, the lesson may not be project-agnostic.
@@ -200,7 +199,7 @@ If none holds, it is a lesson for System Repos only: the Adapted Case it came fr
 
 How each question is answered, and by whom, is open. So is a System Kit Copy Change that arrives without its why (Failure Case 22).
 
-**Narrowing, never shrinking.** A Project-Agnostic Understanding Text changes only where it is wrong for every repo (Failure Case 11). A part that does not fit one sort of repo stays in it: the Adapted Case leaves the part out, and marks that it did, with why. The mark is written when the exclusion is decided, never listed ahead. So question 3 can tell a part lost in narrowing, with no mark, from one left out on purpose, with its mark. A change to a marked part reopens its why.
+**Narrowing, never shrinking.** The text above an Adapted Case changes only where it is wrong for every repo (Failure Case 11). A part that does not fit one sort of repo stays in it: the Adapted Case leaves the part out, and marks that it did, with why. The mark is written when the exclusion is decided, never listed ahead. So question 3 can tell a part lost in narrowing, with no mark, from one left out on purpose, with its mark. A change to a marked part reopens its why.
 
 ##### Deliver
 
@@ -267,9 +266,9 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules |
 | File Instruction Text | an Agent Rule loaded by path, when a file it names is opened |
 | Knowledge on Trial | the Approach on Trial, for ways of working only |
-| Project-Agnostic Understanding Text | an Idea Model, `docs/models/`; the concept, `concept/`, with its backend case inside it |
+| Backbone Idea and Work Domain Idea, the layers model's Names | an Idea Model, `docs/models/`; the concept, `concept/`, with its backend case inside it |
 | Adapted Case | no one thing: a convention manual, with the Work Approaches made from it |
-| Adapted Understanding Text | a convention manual, `docs/conventions/`; the concept's backend case, not split from the concept |
+| Adapted Understanding Text | a convention manual, `docs/conventions/` |
 | Defined Term | a Glossary Name, in `docs/glossary.md` |
 | One Home per Fact | the facts-in-sync convention, and the one-home Agent Rule |
 | Knowledge Drift Repair | the Foundation Check and its Change Walk at each commit; the refinement's reads of the whole repo |
