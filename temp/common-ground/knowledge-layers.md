@@ -96,7 +96,7 @@ Worked in every repo. The Maintainer Repo works its Work Domain Ideas by its own
 | Work Domain Idea | Adapted from | What it adds | Home |
 |---|---|---|---|
 | The layers of knowledge, in the Maintainer Repo | The layers of knowledge | where each layer is kept; how knowledge travels between the repos | this document |
-| How an agent works, keeping knowledge | How an agent works | | planned |
+| How an agent works, keeping knowledge | How an agent works | open (§4, question 11) | planned (`TODO.md`, the item that rewrites the Agent Model) |
 
 #### 2.2.2 Designing a backend by CBC
 
@@ -104,8 +104,8 @@ The System Repos' problem, a Work Domain worked in them alone. The Maintainer Re
 
 | Work Domain Idea | Adapted from | What it adds | Home |
 |---|---|---|---|
-| How an agent works, designing a backend | How an agent works | | planned |
-| CBC design for backends | CBC design | backends as the kind of system | planned, from `concept/` |
+| How an agent works, designing a backend | How an agent works | open (§4, question 11) | planned (`TODO.md`, the item that rewrites the Agent Model) |
+| CBC design for backends | CBC design | backends as the kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 
 ### 2.3 The Adapted Case layer
 
