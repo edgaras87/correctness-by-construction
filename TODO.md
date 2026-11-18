@@ -57,6 +57,30 @@
       Trigger: due now.
       See: `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
+- [ ] Define the Change idea: how a change travels between the
+      repos, a Work Domain Idea of its own, the one home of Change
+      (2026-11-18, the reviewer).
+      Context: the six parts' rules sit in the problem file's §2.1,
+      written from the simulation; the travel terms sit in the layers
+      document's §2 since `32b507e`. The problem file names the idea
+      it adapts: how a repo takes a change from another. The problem
+      file's run stopped part-way for it (`73c37b3`).
+      Ideas:
+      - its own document, a row in the layers document's §2.2.1;
+      - it takes System Kit Copy, System Kit Copy Change, System Kit
+        Update and System Kit Version from the layers document, and
+        five terms from the problem file: System Kit Copy Change
+        Record, System Kit Attention Note, Maintainer Repo Register,
+        System Repo Reading and System Kit Update Note;
+      - the System Kit Update definition fixed on the way: the
+        simulation's §7 sends the changes and the verdicts, not every
+        file;
+      - the Judge rules reach layer 2, as the layers model's depth f;
+      - the layers document then points at it, which needs a rule
+        that a Work Domain Idea may stand on another.
+      Trigger: due now; a design talk first, then its plan.
+      See: devlog 2026-11-18, later.
+
 - [ ] Decide whether a Maintainer Kit should exist, for a new
       Maintainer Repo to be born from (2026-11-14, the reviewer).
       Context: one Maintainer Repo exists, so a kit would be written
