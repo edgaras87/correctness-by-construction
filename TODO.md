@@ -225,7 +225,11 @@
       Ideas:
       - the same shape as the concept's split, the item above;
       - whether the two Work Domain Ideas differ is the layers
-        model's §4, question 11.
+        model's §4, question 11;
+      - the piece of work, split off as a Backbone Idea of its own if
+        a second Backbone Idea uses it; both then point at it
+        (`temp/common-ground/knowledge-layers-general.md` §2.1, *The
+        Backbone Idea layer*).
       Trigger: the close of the Plan Step "Find how what we know stays
       true", with the concept's split.
       See: devlog 2026-11-16 and 2026-11-18, layers 3 and 4 read back.
