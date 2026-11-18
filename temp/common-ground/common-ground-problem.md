@@ -35,7 +35,7 @@ Defined Terms, in alphabetical order:
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **File Instruction Text:** an Instruction Text the agent loads when a certain kind of file is opened.
 - **Instruction Text:** text built on an Understanding Text, to apply it; what the agent acts on. So far it comes in three sorts, by when the agent loads it: Task Instruction Text, Session Instruction Text and File Instruction Text.
-- **Knowledge Axis:** one way of sorting text. There are four: *who uses it*, *time*, *kind*, *where* (§3).
+- **Knowledge Axis:** one way of sorting text. There are five: *who uses it*, *time*, *kind*, *where*, *layer* (§3).
 - **Knowledge Drift:** text and knowledge moving apart. The text holds less than the knowledge, or is older than it.
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
 - **Knowledge on Trial:** new knowledge used before it is judged: a way of working, an Understanding Text, or a text's form.
@@ -68,6 +68,7 @@ Labels:
 - *time*: *before*, *now*, *later*
 - *kind*: Understanding Text, Instruction Text
 - *where*: *the Maintainer Repo*, *a System Repo*; a Failure Case is *either* or *between*
+- *layer*: *layer 1* to *layer 4*
 - Text Life Phase: *writing*, *aging*, *reading*
 - Maintainer Repo Register: *settled snapshot*, the System Repo's snapshot up to which the Maintainer Repo has read, judged and acted on. It holds the System Kit Version the System Repo had then, which may be behind the newest.
 
@@ -112,8 +113,8 @@ Between understanding and instruction, the Maintainer Repo means to keep a middl
 
 | Level | What it holds |
 |---|---|
-| understanding, project-agnostic | an idea any repo can adapt (§3.3) |
-| the middle | understanding adapted to one sort of repo, or one kind of system (§3.3) |
+| understanding, project-agnostic | an idea any repo can adapt (§3.5) |
+| the middle | understanding adapted to one sort of repo, or one kind of system (§3.5) |
 | instruction | how a piece of work is done, for the agent |
 
 Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
@@ -285,19 +286,19 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 
 ## 3. The Knowledge Axes
 
-Where text is kept today, in the Maintainer Repo, on each of the four Knowledge Axes, which §3.1 to §3.4 explain. Every text should have a place on each Knowledge Axis; one that doesn't is a finding.
+Where text is kept today, in the Maintainer Repo, on each of the five Knowledge Axes, which §3.1 to §3.5 explain. Every text should have a place on each Knowledge Axis; one that doesn't is a finding. A text not yet sorted by layer waits for today's Maintainer Repo to be brought into the layers model (`TODO.md`, the item on the layers of knowledge).
 
-| Where it's kept | Kind | Time | Who uses it | Where |
-|---|---|---|---|---|
-| Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo |
-| Instruction Texts, of all three sorts; today, Agent Skills and Agent Rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as System Kit Copies in each System Repo, for those in the System Kit |
-| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own |
-| TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own |
-| The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo |
-| The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files |
-| Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a System Repo |
-| System Kit Copy | mostly instruction; the concept and the Defined Terms are understanding | now | the agent in the System Repo | each System Repo |
-| The Repo Responsibility, §2's lists | understanding | later | both | the Maintainer Repo |
+| Where it's kept | Kind | Time | Who uses it | Where | Layer |
+|---|---|---|---|---|---|
+| Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo | not yet sorted: the concept holds layers 1 and 2 in one text |
+| Instruction Texts, of all three sorts; today, Agent Skills and Agent Rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as System Kit Copies in each System Repo, for those in the System Kit | 3 |
+| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own | open (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6) |
+| TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own | open, as the devlog's |
+| The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo | not yet sorted |
+| The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files | not yet sorted |
+| Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a System Repo | 3 |
+| System Kit Copy | mostly instruction; the concept and the Defined Terms are understanding | now | the agent in the System Repo | each System Repo | 3, used in 4 |
+| The Repo Responsibility, §2's lists | understanding | later | both | the Maintainer Repo | not yet sorted |
 
 ### 3.1 Who uses the text
 
@@ -355,12 +356,7 @@ Text comes in two kinds, so far:
 - understanding: what is known, and how it is understood;
 - instruction: text built on understanding, to apply it.
 
-Understanding can have levels, so far:
-
-- project-agnostic: an idea bound to no project;
-- adapted: the same idea narrowed to one sort of need, with what that need adds, such as the Maintainer Repo's upkeep or a System Repo's work.
-
-An instruction comes from the adapted level where there is one, and the adapted level from the project-agnostic one.
+How close a text is to an idea's backbone is a Knowledge Axis of its own, the layer (§3.5).
 
 An instruction has two readers too. The agent acts on it. The human reads it to know what they told the agent.
 
@@ -385,6 +381,10 @@ A text is kept in the Maintainer Repo, or in a System Repo. Some is in both: wha
 Some failures can happen in either repo. Others happen only between the two: a System Kit Copy drifts from its original; the Maintainer Repo judges a System Kit Copy Change wrongly, as a lesson when it was specific to the System Repo, or the other way round; work resumes in a System Repo without a System Kit Update.
 
 The two repos are not the two sides of §1. The human and the agent work in both.
+
+### 3.5 The layer of text
+
+A text also sits in a layer of knowledge, by how close it is to an idea's backbone: from layer 1, bound to no Work Domain, to layer 4, the work done by a text. What each layer holds, and where each is kept, is the layers model's (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 
 ## 4. What goes wrong
 
@@ -429,16 +429,16 @@ The interface between the human's mind and the agent breaks in these Failure Cas
 | 20. The Maintainer Repo judges a System Kit Copy Change wrongly: a lesson taken as specific to the System Repo, or something specific taken as a lesson. | reading | where | between |
 | 21. Work resumes in a System Repo without reading back and updating first, and goes on from its old System Kit Copy. | aging | where | between |
 | 22. A System Kit Copy Change reaches the Maintainer Repo without its why: the System Repo wrote down what it changed, not why. | writing | where | between |
-| 23. An adapted understanding lags behind its project-agnostic idea, which has moved on. | aging | kind | either |
-| 24. A project-agnostic idea is bent to one project's needs, and no longer fits the others. | writing | kind | between |
+| 23. An adapted understanding lags behind its project-agnostic idea, which has moved on. | aging | layer | either |
+| 24. A project-agnostic idea is bent to one project's needs, and no longer fits the others. | writing | layer | between |
 
 The same Failure Cases by Text Life Phase and Knowledge Axis. Every cell has a Failure Case; an empty one would point at a missing Failure Case:
 
-| | who uses it | time | kind | where |
-|---|---|---|---|---|
-| **writing** | 1, 4, 5 | 12 | 9, 11, 16, 24 | 15, 22 |
-| **aging** | 3 | 2, 8 | 10, 23 | 19, 21 |
-| **reading** | 6, 7 | 13, 17, 18 | 14 | 20 |
+| | who uses it | time | kind | where | layer |
+|---|---|---|---|---|---|
+| **writing** | 1, 4, 5 | 12 | 9, 11, 16 | 15, 22 | 24 |
+| **aging** | 3 | 2, 8 | 10 | 19, 21 | 23 |
+| **reading** | 6, 7 | 13, 17, 18 | 14 | 20 | none yet |
 
 Seen on 2026-11-05: Failure Case 1, the purpose of an earlier attempt to rebuild the Maintainer Repo's way of working, written nowhere for 3 days; Failure Cases 4 and 5, the agent's dense answers, until the human said they had lost common ground.
 
