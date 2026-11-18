@@ -19,43 +19,42 @@ This document is the layers of knowledge in the Maintainer Repo's Work Domain: w
 ## 1. The picture
 
 ```
-          ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐
-          ┆ the Maintainer Repo                                 ┆
-          ┆  ┌───────────────────────────────────────────────┐  ┆
- Layer 1  ┆  │ Backbone Ideas, bound to no Work Domain:      │  ┆
-          ┆  │ understanding                                 │  ┆
-          ┆  └───────────────────────────────────────────────┘  ┆
-          ┆    │      ▲        ▲           ▲        ▲      │    ┆
-          ┆  adapt lesson  set apart   set apart lesson  adapt  ┆
-          ┆    ▼      │        │           │        │      ▼    ┆
-          ┆  ┌─────────────────────┐   ┌─────────────────────┐  ┆
-          ┆  │ the System Repos'   │   │ its own             │  ┆
-          ┆  │ Work Domain:        │   │ Work Domain:        │  ┆
- Layer 2  ┆  │ designing a backend │   │ keeping knowledge   │  ┆
-          ┆  │ by CBC              │   │                     │  ┆
-          ┆  │ understanding       │   │ understanding       │  ┆
-          ┆  └─────────────────────┘   └─────────────────────┘  ┆
-          ┆    │      ▲        ▲           ▲        ▲      │    ┆
-          ┆  adapt lesson  set apart   set apart lesson  adapt  ┆
-          ┆    │      │        │           │        │      │    ┆
-          ┆ ┌╌╌▼╌╌╌╌╌╌│╌╌╌╌╌╌╌╌│╌╌╌╌┐      │        │      ▼    ┆
-          ┆ ╎┌─────────────────────┐╎  ┌─────────────────────┐  ┆
-          ┆ ╎│ the System Repos'   │╎  │ its own             │  ┆
-          ┆ ╎│ Adapted Cases       │╎  │ Adapted Cases       │  ┆
- Layer 3  ┆ ╎│ understanding and   │╎  │ understanding and   │  ┆
-          ┆ ╎│ instructions        │╎  │ instructions        │  ┆
-          ┆ ╎└─────────────────────┘╎  └─────────────────────┘  ┆
-          ┆ ╎ the System Kit        ╎             ║             ┆
-          ┆ └╌╌╌╌│╌╌╌╌╌╌╌╌╌╌▲╌╌╌╌╌╌╌┘             ║             ┆
-          └┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┐            ║             ┆
-               birth,    Change,     ┆      used in place       ┆
-               Update   read back    ┆            ║             ┆
-                 ▼          │        ┆            ║             ┆
-             ┌─────────────────────┐ ┆ ┌─────────────────────┐  ┆
- Layer 4     │ each System Repo's  │ ┆ │ its own work        │  ┆
-             │ work, by its Copies │ ┆ │                     │  ┆
-             └─────────────────────┘ ┆ └─────────────────────┘  ┆
-                                     └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘
+          ┌┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐
+          ┆ the Maintainer Repo                                                           ┆
+          ┆  ┌─────────────────────────────────────────────────────────────────────────┐  ┆
+ Layer 1  ┆  │ Backbone Ideas, bound to no Work Domain:                                │  ┆
+          ┆  │ understanding                                                           │  ┆
+          ┆  └─────────────────────────────────────────────────────────────────────────┘  ┆
+          ┆     │      ▲       ▲                                    ▲        ▲      │     ┆
+          ┆   adapt lesson set apart                            set apart lesson  adapt   ┆
+          ┆     ▼      │       │                                    │        │      ▼     ┆
+          ┆  ┌──────────────────────┐  ┌───────────────────────────────────────────────┐  ┆
+          ┆  │ designing a backend  │  │ keeping knowledge,                            │  ┆
+ Layer 2  ┆  │ by CBC: the System   │  │ in every repo                                 │  ┆
+          ┆  │ Repos' problem       │  │                                               │  ┆
+          ┆  │ understanding        │  │ understanding                                 │  ┆
+          ┆  └──────────────────────┘  └───────────────────────────────────────────────┘  ┆
+          ┆     │      ▲       ▲          │      ▲       ▲          │      ▲       ▲      ┆
+          ┆   adapt lesson set apart    adapt lesson set apart    adapt lesson set apart  ┆
+          ┆ ┌╌╌╌▼╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌╌╌╌╌╌▼╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌┐    ▼      │       │      ┆
+          ┆ ╎┌──────────────────────┐  ┌──────────────────────┐╎ ┌─────────────────────┐  ┆
+          ┆ ╎│ the System Repos'    │  │ the System Repos'    │╎ │ its own             │  ┆
+          ┆ ╎│ Adapted Cases for    │  │ Adapted Cases for    │╎ │ Adapted Cases       │  ┆
+ Layer 3  ┆ ╎│ designing a backend  │  │ keeping knowledge    │╎ │                     │  ┆
+          ┆ ╎│ understanding and    │  │ understanding and    │╎ │ understanding and   │  ┆
+          ┆ ╎│ instructions         │  │ instructions         │╎ │ instructions        │  ┆
+          ┆ ╎└──────────────────────┘  └──────────────────────┘╎ └─────────────────────┘  ┆
+          ┆ ╎ the System Kit                                   ╎            ║             ┆
+          ┆ └╌╌╌╌╌╌╌╌╌╌╌╌│╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌▲╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘            ║             ┆
+          └┄┄┄┄┄┄┄┄┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐           ║             ┆
+                      birth,              Change,               ┆     used in place       ┆
+                      Update             read back              ┆           ║             ┆
+                         ▼                   │                  ┆           ║             ┆
+              ┌─────────────────────────────────────┐           ┆ ┌────────────────────┐  ┆
+ Layer 4      │ each System Repo's work,            │           ┆ │ its own work       │  ┆
+              │ by its Copies                       │           ┆ │                    │  ┆
+              └─────────────────────────────────────┘           ┆ └────────────────────┘  ┆
+                                                                └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘
 ```
 
 Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame holds what the System Kit copies to each System Repo. A double line joins layer 3 to the work done by it in the same repo, with no Copy between.
@@ -86,13 +85,13 @@ It is kept in the Maintainer Repo, and stays there. A System Repo receives it on
 
 Layer 2 holds Work Domain Ideas (`temp/common-ground/knowledge-layers-general.md` §2.2, *The Work Domain layer*), each a Backbone Idea of §2.1 adapted to one Work Domain.
 
-The Maintainer Repo works in one Work Domain, keeping knowledge, and keeps the texts of two so far: its own, and the System Repos'. Keeping the System Repos' texts is part of its own work (§3.2). Both are kept in the Maintainer Repo, the picture's two boxes.
+The Maintainer Repo works in one Work Domain, keeping knowledge. A System Repo works in two so far: designing a backend by CBC, its problem, and keeping its own knowledge. So keeping knowledge is worked in every repo. The Maintainer Repo keeps the texts of both Work Domains, the picture's two boxes. Keeping the System Repos' texts is part of its own work (§3.2).
 
 In each table, a row's description is a summary; the idea's home holds it. Whether the two Work Domain Ideas of how an agent works differ is open (§4).
 
 #### 2.2.1 Keeping knowledge
 
-The Maintainer Repo's own Work Domain. Its Work Domain Ideas are worked here, by its own Adapted Cases, in place (§2.4).
+Worked in every repo. The Maintainer Repo works its Work Domain Ideas by its own Adapted Cases, in place, and each System Repo by its Copies (§2.4).
 
 | Work Domain Idea | Adapted from | What it adds | Home |
 |---|---|---|---|
@@ -101,7 +100,7 @@ The Maintainer Repo's own Work Domain. Its Work Domain Ideas are worked here, by
 
 #### 2.2.2 Designing a backend by CBC
 
-The System Repos' Work Domain. The Maintainer Repo keeps its Work Domain Ideas and writes the System Kit's Adapted Cases from them. The work is done in each System Repo, by its Copies (§2.4).
+The System Repos' problem, a Work Domain worked in them alone. The Maintainer Repo keeps its Work Domain Ideas and writes the System Kit's Adapted Cases for designing a backend from them. The work is done in each System Repo, by its Copies (§2.4).
 
 | Work Domain Idea | Adapted from | What it adds | Home |
 |---|---|---|---|
@@ -114,22 +113,25 @@ Layer 3 holds Adapted Cases (`temp/common-ground/knowledge-layers-general.md` §
 
 Here an Adapted Case is one piece of agent work, such as reading a System Repo, working one step of its Plan Step, or writing a commit message. Its instruction text is an Agent Skill or an Agent Rule; how many one Adapted Case holds is open (§4). Its understanding text says why the instruction text is as it is. The agent uses the instruction text in the work, and reads the understanding text only when the instruction text is changed. The two travel together: a System Repo's Copy holds both.
 
-Layer 3 is split like layer 2: one part for each Work Domain, the picture's two boxes. The Maintainer Repo keeps both. An Agent Skill or Agent Rule found in both parts is two Adapted Cases, one in each. The two are tied only through layer 1, the Backbone Idea they share (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
+Layer 3 is split like layer 2: one part for each Work Domain. The Maintainer Repo keeps both. Keeping knowledge's part holds two groups, the picture's two right boxes (§2.3.1). An Agent Skill or Agent Rule found in two groups is two Adapted Cases, one in each. The two are tied only through the nearest idea above them both (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
 
 An Adapted Case may also be written by work no Adapted Case covers, on trial: one kind of Knowledge on Trial (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, the arrow *change*). Either repo writes it. A System Repo's Knowledge on Trial is kept in the System Repo, comes from no Copy, and is handed over at its close.
 
 #### 2.3.1 Keeping knowledge
 
-The Maintainer Repo's own Adapted Cases, for itself. So far, apart from its Approaches on Trial, all are written from one Work Domain Idea of §2.2.1: how an agent works, keeping knowledge. The Maintainer Repo works by them in place, with no Copy (§2.4). If a Maintainer Kit is wanted, it is made from them (§4, question 1).
+Two groups so far:
+
+- **Its own,** the Maintainer Repo's, for itself. So far, apart from its Approaches on Trial, all are written from one Work Domain Idea of §2.2.1: how an agent works, keeping knowledge. The Maintainer Repo works by them in place, with no Copy (§2.4). If a Maintainer Kit is wanted, it is made from them (§4, question 1).
+- **The System Repos',** for keeping a System Repo's own knowledge, such as taking an Update. They are written from §2.2.1's Work Domain Ideas, and are part of the System Kit (§2.3.2).
 
 #### 2.3.2 Designing a backend by CBC
 
-The System Repos' Adapted Cases, in two groups so far, one for each Work Domain Idea of §2.2.2:
+The System Repos' Adapted Cases for designing a backend, in two groups so far, one for each Work Domain Idea of §2.2.2:
 
 - **Agent work,** from how an agent works, designing a backend.
 - **CBC system design,** from CBC design for backends. How it meets agent work in one Adapted Case is open (§4).
 
-They are the System Kit. Each System Repo works from Copies of them (§2.4).
+With the System Repos' group of §2.3.1, they are the System Kit. Each System Repo works from Copies of them (§2.4).
 
 ### 2.4 The layer of a repo's work
 
