@@ -116,7 +116,7 @@ Here an Adapted Case is one piece of agent work, such as reading a System Repo, 
 
 Layer 3 is split like layer 2: one part for each Work Domain, the picture's two boxes. The Maintainer Repo keeps both. An Agent Skill or Agent Rule found in both parts is two Adapted Cases, one in each. The two are tied only through layer 1, the Backbone Idea they share (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
 
-An Adapted Case may also be written by work no Adapted Case covers, on trial: an Approach on Trial (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, the arrow *change*). Either repo writes them. A System Repo's is kept in the System Repo, comes from no Copy, and is handed over at its close.
+An Adapted Case may also be written by work no Adapted Case covers, on trial: one kind of Knowledge on Trial (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, the arrow *change*). Either repo writes it. A System Repo's Knowledge on Trial is kept in the System Repo, comes from no Copy, and is handed over at its close.
 
 #### 2.3.1 Keeping knowledge
 
@@ -201,4 +201,4 @@ None is answered by the text above. Each is answered when work reaches it: its a
 11. **Two Work Domain Ideas of how an agent works:** does an agent's work differ enough between keeping knowledge and designing a backend by CBC to need two texts, or would they be one text written twice (§2.2)?
 12. **An Adapted Case from two ideas:** the cbc-framing Agent Skill holds CBC design's content, written as a piece of agent work. Is it adapted from two Work Domain Ideas, or from one, with the other giving only its form?
 13. **When a change is judged:** a System Repo's Change is judged before it reaches layer 3 (§3.2). The Maintainer Repo's own change reaches layer 3 at once, and is judged after (§3.3). Does the difference matter? The change work answers it.
-14. **Knowledge on Trial offered back:** a System Repo's Approach on Trial is handed over at its close (§2.3). It is not a Change, so the arrow *Change, read back* does not carry it, and the picture has no arrow that does. The change work answers it, when the simulation takes its other sources.
+14. **Knowledge on Trial offered back:** a System Repo's Knowledge on Trial is handed over at its close (§2.3). It is not a Change, so the arrow *Change, read back* does not carry it, and the picture has no arrow that does. The change work answers it, when the simulation takes its other sources.
