@@ -77,7 +77,7 @@ Layer 1 holds Backbone Ideas (`temp/common-ground/knowledge-layers-general.md` �
 | How an agent works | what one piece of agent work is: what the agent does, when, where and how | planned, from `docs/models/agent.md` (`TODO.md`, the item that rewrites the Agent Model) |
 | CBC design | how a system is designed by CBC, for no one kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 
-The piece of work (§2.3) is set apart as a Backbone Idea of its own when a second Backbone Idea needs it. Which other of today's project-agnostic ideas are Backbone Ideas is open (§4).
+The piece of work (§2.3) is split off as a Backbone Idea of its own when a second Backbone Idea needs it, and the ideas that need it point at it (`temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer*). Which other of today's project-agnostic ideas are Backbone Ideas is open (§4).
 
 It is kept in the Maintainer Repo, and stays there. A System Repo receives it only adapted, in the System Kit.
 

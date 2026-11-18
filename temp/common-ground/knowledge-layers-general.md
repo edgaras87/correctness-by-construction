@@ -75,6 +75,7 @@ Layer 1 holds Backbone Ideas. A **Backbone Idea** is an idea bound to no Work Do
 **Rules:**
 
 - It holds no instruction (§2): an instruction applies an idea to some piece of work, and work always belongs to a Work Domain.
+- A Backbone Idea may stand on another: it points at it, and never retells it.
 
 ### 2.2 The Work Domain layer
 
