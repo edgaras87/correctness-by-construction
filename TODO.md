@@ -102,7 +102,8 @@
       the layers model, Judge and Act included; the change flow
       finished, Change to Take; where it goes decided; then one home
       for each fact across the drafts.
-      See: devlog 2026-11-18, the Change idea's design talk.
+      See: devlog 2026-11-18, the Change idea's design talk;
+      `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
 - [ ] Decide whether a Maintainer Kit should exist, for a new
       Maintainer Repo to be born from (2026-11-14, the reviewer).

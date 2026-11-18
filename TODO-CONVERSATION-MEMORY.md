@@ -26,7 +26,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-15.
+     Last touched: 2026-11-18.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
@@ -2606,3 +2606,53 @@ On the picture: "should we place idea boxes in layer 1? should we put multiple w
 #### What the reviewer took
 
 Work Domain, a sort of work, its own paragraph in §2. Layer 1 holds Backbone Ideas, each standing under several Work Domain Ideas, one, or none; reuse is not why it is written. Knowledge enters at any layer; the arrow *set apart* joins *lesson* at both gaps going up; "on trial" and "writing from the top is rare" go. Layer 2 holds one kind, the Work Domain Idea, a Backbone Idea adapted once or more; the variant's theory moves to the open questions. The picture numbers three ideas, in rows of two. No example names a case.
+
+### 2026-11-18, the Change idea
+
+#### What the reviewer said
+
+On where Change sits: "maybe lets try to have as section to see how it goes and if we want to have as sep doc"
+
+On the order: "i think we should wait with maintainer change behavior. we now should relocate this change thing into knowledge layer. after we go to recheck change flow in system repo. then move that final version in knowldege layer. then we check and update "read to take" part and maybe draw too. after one side will be finished we would look at other. what u think?" Then: "is it true that we should first finish change flow and simulation before we do this Change section?"
+
+On the pointers: "current simulation is pointing to those parts. will those pointers move now into knowledge layer?" Then: "does current simulation and change-flow needs updates accordingly knowledge layers?"
+
+On the old word: "why we not renaming it? doesnt we now have layers?" Then: "is that true that we should update judge and act? because before we did not considered this layer stuff?"
+
+On the next session: "i am thinking to stop this commit plan and write for next session: start from updating simulation by new layers we have defined. After update and finish chnage flow. then decide where we put change. then update everything where each has one-home and we do not repeat one thing everythere. what u think?"
+
+#### What the reviewer said, edited
+
+"Let's try it as a section first, to see how it goes, and whether we want it as a separate document."
+
+"I think we should wait with the Maintainer Repo's own changes. First move the Change rules into the layers document. Then recheck the change flow in the System Repo, and move the final version into the layers document. Then check and update Read to Take, and maybe draw it. Once one side is finished, we look at the other. What do you think?" Then: "Is it true that we should first finish the change flow and the simulation before we write this Change section?"
+
+"The simulation points at those parts. Will its pointers now move to the layers document?" Then: "Do the simulation and the change flow need updates for the layers model?"
+
+"Why aren't we renaming it? Don't we have layers now?" Then: "Is it true that Judge and Act need updating, because they were written before the layers?"
+
+"I'm thinking of stopping this commit plan and writing down for next session: start by updating the simulation to the layers we defined; then finish the change flow; then decide where Change goes; then update everything so each fact has one home and nothing is repeated everywhere. What do you think?"
+
+#### What the reviewer asked, as the agent would ask it
+
+1. Should the Change idea start as a section of the layers document, on trial, and become a document of its own only if practice shows it should?
+2. Should the Maintainer Repo's own changes wait until the System Repo's side is finished?
+3. Must the rules be finished and checked before they move to their home, or can they move first?
+4. Do the simulation's pointers follow the rules when they move?
+5. Do the simulation and the flow drawing need updates for the layers model?
+6. Why keep the old word "project-agnostic" when the layers model replaced it?
+7. Do Judge and Act need rework, since they were written before the layers?
+8. Should the commit plan stop, and the next session work in four steps: the simulation brought up to the layers, the change flow finished, where Change goes decided, then one home for each fact?
+
+#### What the agent added
+
+- **The general document's §2.2 rule** says each adaptation is "written whole, read alone, and changed alone". A Change idea in a document of its own would stand on the layers document's repo terms. So the rule would first have to be narrowed to variants, the case it came from.
+- **Nothing forces the move to wait,** and nothing is fixed twice: a fix moves with its text. But the rules are checked against one case only. Moving them once, finished, keeps unchecked rules out of the layers document.
+- **The simulation's 15 pointers** at the problem file's §2.1 all aim at parts that move. The flow drawing has none.
+- **Four kinds of update** in the simulation: the old word on 14 lines, depth f, the on-trial row that is not a Change, and Judge and Act knowing one level above an Adapted Case.
+- **"Project-agnostic lesson" names a verdict,** on 6 lines across two files. Its home is a bold lead, which the agent first called a title. With two layers above, the verdict may split in two, so renaming it before the rework would change those lines twice.
+- **The TODO item's claim was wrong:** it said the simulation's §7 sends only the changes. §7 sends every Copy whole.
+
+#### What the reviewer took
+
+The Change idea adapts "The layers of knowledge", in keeping knowledge. Its subject is a change crossing between the repos, written from one source so far. Where it goes was drafted as a section of the layers document, then held until the rules are finished. The commit plan for the simulation was dropped before its first commit. The next session works in four steps: the simulation brought up to the layers model, Judge and Act included; the change flow finished, Change to Take; where Change goes decided; one home for each fact across the drafts.
