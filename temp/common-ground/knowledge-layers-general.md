@@ -105,7 +105,7 @@ Knowledge moves along the picture's arrows. Going down, an idea is adapted and t
 
 ### 3.1 How the layers fill
 
-Knowledge can enter at any layer. Work meets something new and changes the Adapted Case it works by. An idea to test may be written first as understanding, in a Work Domain Idea or in layer 1, and Adapted Cases are then written from it. While a text is written, a part of it may show as the idea above it, and is set apart there: a Work Domain Idea's backbone in layer 1, or the part of an Adapted Case true for its whole Work Domain, in its Work Domain Idea.
+Knowledge can enter at any layer. Work meets something new and changes the Adapted Case it works by, or writes one, on trial, where none covers it. An idea to test may be written first as understanding, in a Work Domain Idea or in layer 1, and Adapted Cases are then written from it. While a text is written, a part of it may show as the idea above it, and is set apart there: a Work Domain Idea's backbone in layer 1, or the part of an Adapted Case true for its whole Work Domain, in its Work Domain Idea.
 
 **Rules:**
 
@@ -119,7 +119,7 @@ Knowledge can enter at any layer. Work meets something new and changes the Adapt
 - **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it is true (§3.1). It is reworded to name no Adapted Case at layer 2, and no Work Domain at layer 1.
 - **set apart,** layer 3 to layer 2, and layer 2 to layer 1: while a text is written, a part of it shows as true without what the text adds. The part is written in the layer above, and the text is then adapted from it.
 - **worked by,** layer 3 to layer 4: work is done by an Adapted Case, kept where the work is done, or as a copy there.
-- **change,** layer 4 to layer 3: where the work shows the Adapted Case does not fit, the work changes it. The change is judged, and goes up the arrow *lesson* as far as it holds.
+- **change,** layer 4 to layer 3: where the work shows the Adapted Case does not fit, the work changes it. Where no Adapted Case covers the work, the work writes one, on trial. The change is judged, and goes up the arrow *lesson* as far as it holds.
 
 ## 4. Open questions
 
