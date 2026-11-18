@@ -109,15 +109,7 @@ Its understanding falls in two groups. Each is adapted for two places, the Maint
 | How work is done with an agent: a change, a commit, a plan | its own Adapted Case of agent work | agent work, adapted for System Repos (below, *What the System Kit holds*) |
 | How a CBC system is designed: the concept and its methods | none | CBC system design, adapted for one kind of system (below, *What the System Kit holds*) |
 
-Between understanding and instruction, the Maintainer Repo means to keep a middle level, for both groups:
-
-| Level | What it holds |
-|---|---|
-| understanding, project-agnostic | an idea any repo can adapt (§3.5) |
-| the middle | understanding adapted to one sort of repo, or one kind of system (§3.5) |
-| instruction | how a piece of work is done, for the agent |
-
-Each idea can then live in three texts, not two. Whether the levels are kept apart as meant is checked in the next step.
+The Maintainer Repo means to keep both groups in the layers of knowledge (§3.5). Whether the layers are kept apart as meant is checked in the next step.
 
 The understanding of CBC system design is project-agnostic: it fits any system, not only software. The System Kit holds it adapted for one kind of system so far (below, *What the System Kit holds*).
 
