@@ -120,7 +120,7 @@ An Adapted Case may also be written by work no Adapted Case covers, on trial: on
 
 #### 2.3.1 Keeping knowledge
 
-The Maintainer Repo's own Adapted Cases, for itself. So far, apart from its Approaches on Trial, all are written from one Work Domain Idea of §2.2.1: how an agent works, keeping knowledge. The Maintainer Repo works by them in place, with no Copy (§2.4).
+The Maintainer Repo's own Adapted Cases, for itself. So far, apart from its Approaches on Trial, all are written from one Work Domain Idea of §2.2.1: how an agent works, keeping knowledge. The Maintainer Repo works by them in place, with no Copy (§2.4). If a Maintainer Kit is wanted, it is made from them (§4, question 1).
 
 #### 2.3.2 Designing a backend by CBC
 
@@ -188,7 +188,7 @@ It has no Read, Deliver or Take of its own: nothing crosses between repos until 
 
 None is answered by the text above. Each is answered when work reaches it: its answer goes into the text above, and the question leaves this list.
 
-1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, built by the stopped Plan Step *Rebuild in cbc-concept*, is close to a second Maintainer Repo.
+1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, built by the stopped Plan Step *Rebuild in cbc-concept*, is close to a second Maintainer Repo. §2.3.1 says what a Maintainer Kit would be made from.
 2. **What layer 4 holds:** the general document's question (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6). Here it is met at a System Repo's design of its system and its own Knowledge on Trial.
 3. **A name for the movement:** what runs from a Change to the take of the next Update, as one thing (§3.2), so the simulation can name it.
 4. **The depths and the layers:** is how deep a Change goes the same as how high it goes (§3.2)? Text shared across Work Domains, but not by all, is the general document's question (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1). Here it is met when the open Plan Step's stage 2 labels which parts of `concept/` are which.
