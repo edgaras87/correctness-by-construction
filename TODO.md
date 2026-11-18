@@ -58,28 +58,51 @@
       See: `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
 - [ ] Define the Change idea: how a change travels between the
-      repos, a Work Domain Idea of its own, the one home of Change
+      repos, in either direction, a Work Domain Idea with one home
       (2026-11-18, the reviewer).
       Context: the six parts' rules sit in the problem file's §2.1,
-      written from the simulation; the travel terms sit in the layers
-      document's §2 since `32b507e`. The problem file names the idea
-      it adapts: how a repo takes a change from another. The problem
-      file's run stopped part-way for it (`73c37b3`).
+      written from the simulation before the layers model, and
+      checked against one case only. Two things are settled: it is a
+      second adaptation of the Backbone Idea "The layers of
+      knowledge", in keeping knowledge; its subject is a change
+      crossing between the repos, written from one source so far, a
+      System Repo's Change. The problem file's run stopped part-way
+      for it (`73c37b3`).
       Ideas:
-      - its own document, a row in the layers document's §2.2.1;
-      - it takes System Kit Copy, System Kit Copy Change, System Kit
-        Update and System Kit Version from the layers document, and
-        five terms from the problem file: System Kit Copy Change
-        Record, System Kit Attention Note, Maintainer Repo Register,
-        System Repo Reading and System Kit Update Note;
-      - the System Kit Update definition fixed on the way: the
-        simulation's §7 sends the changes and the verdicts, not every
-        file;
-      - the Judge rules reach layer 2, as the layers model's depth f;
-      - the layers document then points at it, which needs a rule
-        that a Work Domain Idea may stand on another.
-      Trigger: due now; a design talk first, then its plan.
-      See: devlog 2026-11-18, later.
+      - the simulation's updates for the layers model:
+        "project-agnostic" in 14 lines; depth f, since the Work
+        Domain layer gives a change shared within one Work Domain a
+        home; the row "new text of the System Repo's own, on trial",
+        which is Knowledge on Trial handed back, not a Change; and
+        Judge and Act, which know one level above an Adapted Case
+        where the model has two;
+      - "project-agnostic lesson" names a verdict in 6 lines, 3 in
+        the simulation and 3 in the problem file; it may split in
+        two, one verdict for each layer above;
+      - the System Kit Update definition: the simulation's §7 sends
+        every Copy whole, as the definition says; its step 1 title,
+        the problem file's *Deliver* and the borrowed Update of
+        verdicts only say otherwise;
+      - where it goes, a first draft: a section of the layers
+        document, its §3.2 grown and retitled *How a change
+        travels*; the problem file's §2.1 block, *What passes
+        between the repos* to *A System Repo's change*, moved whole
+        with its five terms; all nine travel terms in the layers
+        document's §2 list;
+      - a document of its own needs the general document's §2.2
+        rule, each adaptation "changed alone", narrowed to variants
+        first, and a rule that a Work Domain Idea may stand on
+        another;
+      - the sources not yet taken into account, each named: the
+        Maintainer Repo's own lesson, the layers document's §3.3,
+        and Knowledge on Trial handed back; birth stays outside, as
+        the start;
+      - the flow drawing needs no change for the layers model.
+      Trigger: due now, in four steps: the simulation brought up to
+      the layers model, Judge and Act included; the change flow
+      finished, Change to Take; where it goes decided; then one home
+      for each fact across the drafts.
+      See: devlog 2026-11-18, the Change idea's design talk.
 
 - [ ] Decide whether a Maintainer Kit should exist, for a new
       Maintainer Repo to be born from (2026-11-14, the reviewer).
