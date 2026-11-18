@@ -228,7 +228,7 @@
         model's §4, question 11.
       Trigger: the close of the Plan Step "Find how what we know stays
       true", with the concept's split.
-      See: devlog 2026-11-16.
+      See: devlog 2026-11-16 and 2026-11-18, layers 3 and 4 read back.
 
 - [ ] Try CBC design on the finished Common Ground Problem, beside
       the way chosen (2026-11-08, the reviewer).
