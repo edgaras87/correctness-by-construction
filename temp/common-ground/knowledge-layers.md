@@ -116,9 +116,11 @@ Here an Adapted Case is one piece of agent work, such as reading a System Repo, 
 
 Layer 3 is split like layer 2: one part for each Work Domain, the picture's two boxes. The Maintainer Repo keeps both. An Agent Skill or Agent Rule found in both parts is two Adapted Cases, one in each. The two are tied only through layer 1, the Backbone Idea they share (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
 
+An Adapted Case may also be written by work no Adapted Case covers, on trial: an Approach on Trial (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, the arrow *change*). Either repo writes them. A System Repo's is kept in the System Repo, comes from no Copy, and is handed over at its close.
+
 #### 2.3.1 Keeping knowledge
 
-The Maintainer Repo's own Adapted Cases, for itself. So far all are written from one Work Domain Idea of §2.2.1: how an agent works, keeping knowledge. The Maintainer Repo works by them in place, with no Copy (§2.4).
+The Maintainer Repo's own Adapted Cases, for itself. So far, apart from its Approaches on Trial, all are written from one Work Domain Idea of §2.2.1: how an agent works, keeping knowledge. The Maintainer Repo works by them in place, with no Copy (§2.4).
 
 #### 2.3.2 Designing a backend by CBC
 
