@@ -58,7 +58,7 @@ This document is the layers of knowledge in the Maintainer Repo's Work Domain: w
                                      └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘
 ```
 
-Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame holds what the System Kit copies to each System Repo. A double line joins two layers kept as one text.
+Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame holds what the System Kit copies to each System Repo. A double line joins layer 3 to the work done by it in the same repo, with no Copy between.
 
 ## 2. The layers
 
@@ -131,10 +131,10 @@ They are the System Kit. Each System Repo works from Copies of them (§2.4).
 
 ### 2.4 The layer of a repo's work
 
-Layer 4 is work done by an Adapted Case (`temp/common-ground/knowledge-layers-general.md` §2.4, *The layer of work*). Here the work is a repo's:
+Layer 4 is work done by an Adapted Case (`temp/common-ground/knowledge-layers-general.md` §2.4, *The layer of work*). The text it works by is a layer-3 text, wherever it is kept. Whether what the work makes is layer 4 is open (§4). Here the work is a repo's:
 
-- **Each System Repo's work, by its Copies:** a System Repo is born with Copies of the System Kit and works by them. As its work needs, it makes Changes, so its Copies differ from layer 3 on purpose. It is kept outside the Maintainer Repo, so every arrow between it and layer 3 crosses from one repo to the other.
-- **The Maintainer Repo's own work:** the Maintainer Repo works by its own Adapted Cases in place, with no Copy. There, layers 3 and 4 are one text, the double line *used in place*. A change its work makes is, at once, a change to its Adapted Case. Its problem is keeping this knowledge, as a System Repo's is designing one system.
+- **Each System Repo's work, by its Copies:** a System Repo is born with Copies of the System Kit and works by them. A Copy is a layer-3 text kept in the System Repo. As its work needs, it makes Changes, so its Copies differ from the System Kit on purpose. It is kept outside the Maintainer Repo, so every arrow between it and layer 3 crosses from one repo to the other.
+- **The Maintainer Repo's own work:** the Maintainer Repo works by its own Adapted Cases in place, with no Copy: they are kept where the work is done, so nothing is delivered. There, layer 3 and the work are in one repo, the double line *used in place*. A change its work makes is, at once, a change to its Adapted Case. Its problem is keeping this knowledge, as a System Repo's is designing one system.
 
 ## 3. How knowledge moves
 
@@ -146,7 +146,7 @@ How knowledge enters the layers and moves between them is the general document's
 - **birth,** layer 3 to layer 4: a new System Repo receives Copies of the System Kit, at one System Kit Version.
 - **Update,** layer 3 to layer 4: the System Kit's changes since a System Repo's Copies were taken. The System Repo takes them by its own Copy of the Adapted Case for taking them.
 - **Change, read back,** layer 4 to layer 3: a System Repo changes a Copy and records why. The Maintainer Repo reads it back and judges it against the Adapted Case the Copy came from.
-- **used in place,** layer 3 and layer 4 as one text: the Maintainer Repo's own work changes its own Adapted Cases directly.
+- **used in place,** layer 3 and layer 4 in one repo, with no Copy: the Maintainer Repo's own work changes its own Adapted Cases directly.
 
 ### 3.2 How a Change moves
 
@@ -178,7 +178,7 @@ The Work Domain layer fills part of depth f's gap: text shared by the Adapted Ca
 
 ### 3.3 The Maintainer Repo's lessons
 
-A lesson from the Maintainer Repo's own work starts in layer 4 of the right column. Since that layer is one text with its own Adapted Cases, the lesson changes layer 3 at once. It is then judged by the same questions 3 and 4 as a Change read back, and goes up the arrow *lesson* as far as it holds (`temp/common-ground/common-ground-problem.md` §2.1, *Judging a change read back*). If it reaches layer 1, it comes down the arrow *adapt*, to the System Repos' Adapted Cases too, and reaches System Repos by an Update.
+A lesson from the Maintainer Repo's own work starts in layer 4 of the right column. Since that work is done by its own Adapted Cases in place, the lesson changes layer 3 at once. It is then judged by the same questions 3 and 4 as a Change read back, and goes up the arrow *lesson* as far as it holds (`temp/common-ground/common-ground-problem.md` §2.1, *Judging a change read back*). If it reaches layer 1, it comes down the arrow *adapt*, to the System Repos' Adapted Cases too, and reaches System Repos by an Update.
 
 It has no Read, Deliver or Take of its own: nothing crosses between repos until an Update carries it to a System Repo.
 
