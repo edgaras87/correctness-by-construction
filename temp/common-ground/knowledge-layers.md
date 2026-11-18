@@ -63,7 +63,17 @@ Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame hol
 
 Knowledge sits in four layers (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*). This section says where each is kept here, and what each holds so far. Layers 1 to 3 are kept in the Maintainer Repo; where inside it is decided when today's Maintainer Repo is brought into this model (`TODO.md`, the item on the layers of knowledge).
 
-The model uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*). The picture shortens three: Copy for System Kit Copy, Change for System Kit Copy Change, Update for System Kit Update.
+Its repos, and what travels between them:
+
+- **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns.
+- **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
+- **System Kit:** what the Maintainer Repo keeps for System Repos to work from, shared by the System Repos it serves (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*). Its originals stay in the Maintainer Repo, beside the Work Domain Ideas they are adapted from; each System Repo works from copies, and takes the System Kit's changes by a System Kit Update.
+- **System Kit Version:** the System Kit as it stood at one Maintainer Repo commit. Each System Repo records the one its System Kit Copies came from.
+- **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo. The picture shortens it to Copy.
+- **System Kit Copy Change:** a System Repo's change to a System Kit Copy, made against the System Kit Version that copy came from. The picture shortens it to Change.
+- **System Kit Update:** what the Maintainer Repo sends a System Repo: a copy of every System Kit file at one System Kit Version, with its System Kit Update Note. The picture shortens it to Update.
+
+Its other Defined Terms are the general document's, or the Common Ground Problem's (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
 The System Kit is not a layer. It is what is copied to each System Repo, the picture's dashed frame: so far, the System Repos' Adapted Cases of layer 3.
 

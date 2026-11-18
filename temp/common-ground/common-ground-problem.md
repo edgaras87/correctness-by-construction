@@ -15,7 +15,7 @@ This document states the Common Ground Problem. It chooses no answer; answers me
 
 ## Defined Terms
 
-A Defined Term is a word or words given an exact meaning, written capitalized, so plain English stays free. Each Defined Term below is defined here, once, except those the layers model defines, whose entries point there. Its other Names, such as Backbone Idea and Work Domain Idea, are used as it defines them (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*). Six plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground. Any other lowercase word is plain English. An *italic* word is a label inside the Defined Term it belongs to. The Defined Terms below are local to the Common Ground Problem, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. They are the intent's words; the repo's own names for the same things are today's, set beside them in §2.2. When this document lands, each Defined Term replaces a repo name, joins the repo's glossary, or goes. A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
+A Defined Term is a word or words given an exact meaning, written capitalized, so plain English stays free. Each Defined Term below is defined here, once, except those the layers model defines: their entries point there. Six plain words keep a narrow sense here, written below, and are used in no other: knowledge, text, the chat, the human, the agent, common ground. Any other lowercase word is plain English. An *italic* word is a label inside the Defined Term it belongs to. The Defined Terms below are local to the Common Ground Problem, a trial for TODO's item *Decide which names go in the glossary, and how a name one text uses alone is kept apart*, and each was checked against the repo's glossary. They are the intent's words; the repo's own names for the same things are today's, set beside them in §2.2. When this document lands, each Defined Term replaces a repo name, joins the repo's glossary, or goes. A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
 
 Plain words, in a narrow sense:
 
@@ -30,6 +30,7 @@ Defined Terms, in alphabetical order:
 
 - **Adapted Case:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
 - **Adapted Understanding Text:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
+- **Backbone Idea:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer*).
 - **Common Ground Problem:** keeping common ground between the human and the agent from one session to the next, while the text it is built from goes stale; the problem this document states.
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
@@ -40,26 +41,28 @@ Defined Terms, in alphabetical order:
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
 - **Knowledge on Trial:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §3.1, *How the layers fill*).
 - **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
-- **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns.
+- **Maintainer Repo:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **Maintainer Repo Register:** the Maintainer Repo's list of its System Repos: where each lives, and its *settled snapshot*.
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
 - **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
 - **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
-- **System Kit:** what the Maintainer Repo keeps for System Repos to work from, shared by the System Repos it serves, and listed in §2.1, *What the System Kit holds*. Its originals stay in the Maintainer Repo, beside the project-agnostic understanding they are adapted from; each System Repo works from copies, and takes the System Kit's changes by a System Kit Update.
+- **System Kit:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Kit Attention Note:** what a System Repo writes for the Maintainer Repo to look at in the System Kit, when no System Kit Copy Change carries it.
-- **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo.
-- **System Kit Copy Change:** a System Repo's change to a System Kit Copy, made against the System Kit Version that copy came from.
+- **System Kit Copy:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
+- **System Kit Copy Change:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Kit Copy Change Record:** what a System Repo writes with each System Kit Copy Change: what changed, what happened, which work found it, and the System Repo's proposal. It sits in the footer of the Adapted Understanding Text of the Adapted Case the copy belongs to. For a System Kit Copy outside any Adapted Case, where it sits is open.
-- **System Kit Update:** what the Maintainer Repo sends a System Repo: a copy of every System Kit file at one System Kit Version, with its System Kit Update Note.
+- **System Kit Update:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Kit Update Note:** what the Maintainer Repo writes with a System Kit Update, for the System Repo that takes it.
-- **System Kit Version:** the System Kit as it stood at one Maintainer Repo commit. Each System Repo records the one its System Kit Copies came from.
-- **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
+- **System Kit Version:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
+- **System Repo:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Repo Reading:** the Maintainer Repo reading one System Repo since it last read it, and the draft that lists what it found.
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
 - **Understanding Text:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*).
+- **Work Domain:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*).
+- **Work Domain Idea:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2.2, *The Work Domain layer*).
 
 Labels:
 
