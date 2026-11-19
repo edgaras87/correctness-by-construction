@@ -111,6 +111,7 @@ Knowledge can enter at any layer. Work meets something new and changes the Adapt
 - A text is written in the layer it belongs to, wherever its knowledge entered.
 - A lesson from work goes as high as it is true.
 - Once a higher text is written, a change to it spreads down, to each text built on it.
+- A guess is written as open, with the trigger that tests it. Only what follows from a text already written is stated as a rule.
 
 ### 3.2 The arrows
 
