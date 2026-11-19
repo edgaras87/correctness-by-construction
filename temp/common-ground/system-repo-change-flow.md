@@ -262,3 +262,38 @@ Key: as in picture 1.
                                                                  │
                                                              c2 ●  work, on Version 1         ◀──── it reaches main at its gate; the next look sees it
 ```
+
+#### Case B, an Update follows
+
+```
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ read and acted on                            ┌  c0 ●  earlier work, with Changes             ◀──── kept Changes: judged before the settled snapshot moved to main
+                                              │     │
+ settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
+                                                    │
+ ── case B ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ 4. the look at main:                               ┊
+ check 1: main is c1, the settled snapshot.         ┊
+ Main has not moved                                 ┊
+ check 3: the Version is 1, and the newest          ┊
+ is 2                                               ┊
+ case B: an Update is made and delivered            ┊
+                                                    │
+ ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
+ 8. Deliver, once work resumes: the Update          ┊
+ waits in temp/, built from Version 1               ┊
+                                                    │
+                                                    ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still c1, the commit the Update
+                                                    │            │                                  Note names, and the Version is still 1, the one the Update was built from
+                                                    │         c2 ●  the Update, as it arrived ◀──── the take's commits, in the order of picture 1's c7 to c14
+                                                    │            │                            ◀──── c3 to c8, not drawn
+                                                    │         c9 ●  the gate closes           ◀──── the take's gate decides each Change put back, and closes
+                                                    │            │
+                                                 c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
+                                                    │
+                                                    └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
+                                                                 │
+                                                             c10 ●  work, on Version 2
+```
