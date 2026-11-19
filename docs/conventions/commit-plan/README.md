@@ -111,7 +111,7 @@ rule that stops it. *Its story: ADR-0050, 4 and 5.*
 ### 2.8 Counting subjects
 
 A subject's characters are counted against the subject's 50-character
-limit (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*)
+aim (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*)
 when it is written. A plan writes every subject
 before any lands. Counted only at each boundary, a long one lands
 long, or is rewritten there with nothing in the plan saying why. *Its story: devlog 2026-10-08; devlog 2026-10-29, the lessons' own stories: the other manuals and the tiers model.*
