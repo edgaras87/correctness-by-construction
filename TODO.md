@@ -293,7 +293,7 @@
         trigger to check and confirm it (2026-11-10, the reviewer).
       Trigger: the Common Ground Problem is finished.
       See: devlog 2026-11-10, the simulation frozen;
-      `TODO-CONVERSATION-MEMORY.md` §31.
+      `TODO-CONVERSATION-MEMORY.md` §31, in git at `60f692d`.
 
 - [ ] Split the concept into general understanding, the System
       Kit's backend case and their instructions, losing nothing
@@ -458,7 +458,7 @@
       Trigger: the draft's renames done, in place of its fourth fresh
       read.
       See: `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what we know
-      true*, its part of 2026-11-06 and 2026-11-07.
+      true*, its part of 2026-11-06 and 2026-11-07, in git at `60f692d`.
 
 - [ ] Land the writing rules found in the problem draft (2026-11-06,
       the reviewer).
