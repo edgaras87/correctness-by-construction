@@ -26,7 +26,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-18.
+     Last touched: 2026-11-19.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
@@ -2656,3 +2656,46 @@ On the next session: "i am thinking to stop this commit plan and write for next 
 #### What the reviewer took
 
 The Change idea adapts "The layers of knowledge", in keeping knowledge. Its subject is a change crossing between the repos, written from one source so far. Where it goes was drafted as a section of the layers document, then held until the rules are finished. The commit plan for the simulation was dropped before its first commit. The next session works in four steps: the simulation brought up to the layers model, Judge and Act included; the change flow finished, Change to Take; where Change goes decided; one home for each fact across the drafts.
+
+### 2026-11-19, step 1 and the three places
+
+#### What the reviewer said
+
+On the guesses: "yes, 4a then 4b, but we should keep in mind that this is just a guess and real practice should show how to correct those guesses later. so should we now define that or would it be better if we leave that as open questions? or maybe we could have both, define some how simpler and general and have as guesses open questions, that practice was not influanced by guess?"
+
+On the three places: "yes, commit it, then explain. Do we have today in multile places a Change? i see it repeating in knowledge layers, common ground problem and simulation. am i missing something? should we move everything in one place and just refer that one place from others? for example move to simulation till we finish with that and relocate in final (no simulation place) or change simulation into final place of change? should we first finish this commit plan and do that as next?"
+
+On the order: "yes, stage commit 5 with the new order"
+
+The other decisions, each on the agent's recommendation: "yes, depths are layers, c split in two"; "yes, apply that split, next question"; "yes, agree with that split, next question", three times; "yes, agree with these names, next question"; "yes, agree with this scope, next question"; "yes, commit the revision, keep the label".
+
+#### What the reviewer said, edited
+
+"Yes, 4a then 4b. But we should keep in mind that this is just a guess, and real practice should show how to correct those guesses later. So should we define it now, or would it be better to leave it as open questions? Or could we have both: define something simpler and general, and keep the guesses as open questions, so that practice is not influenced by a guess?"
+
+"Yes, commit it, then explain. Do we have Change in several places today? I see it repeating in the layers document, the Common Ground Problem and the simulation. Am I missing something? Should we move everything into one place and just point at that place from the others? For example, move it into the simulation until we finish it, then relocate it to its final place, with no simulation left; or turn the simulation into Change's final place? Should we first finish this commit plan and do that next?"
+
+"Yes, stage commit 5 with the new order."
+
+The other decisions keep their words; each is a "yes" to the agent's recommendation.
+
+#### What the reviewer asked, as the agent would ask it
+
+1. Should a guess, such as the order of 4a and 4b, be written as a rule, left as an open question, or both: a simple, general rule, and the guess open, so practice is not steered by it?
+2. Is Change written in more than one place: the layers document, the problem file and the simulation?
+3. Should it move to one place, the others pointing there: into the simulation until it is done, then to the final home; or should the simulation become the final home?
+4. Should this commit plan finish first, and the move come next?
+
+#### What the agent added
+
+- **Nine decisions, one at a time:** the on-trial row out; depths are layers, c split in two; question 4 as 4a and 4b; the split of defined and Open; the survey, depth d and depth e by that split; names by layer; the scope, three files.
+- **The split's test:** what follows from a rule already written, in the general document, is defined, by pointer; a choice of how is an Open item with its trigger. Depths are layers stays defined, since it rests on "a lesson goes as high as it is true".
+- **Depth f, found while reading:** a Work Domain Idea stands above every Adapted Case of its Work Domain, so "all of one Work Domain" is depth c, at layer 2. Two cases are left with no home.
+- **Decision 8's list named f's column phrase as its label.** The label was kept, and the phrase went to its column.
+- **The three places are three roles, overlapping:** the simulation's workings, the problem file's rules, the layers document's summary. Four kinds of fact stand in two places each: the depth table, the six parts, the rules, the movements between repos. One change of meaning took three commits.
+- **A third way:** the rules moved once, now, to the final home drafted on 2026-11-18, on trial, the simulation pointing there. The simulation as the final home would keep its options and its *Today* lines, which are workings.
+- **The order:** the change flow edits every part again, so where Change goes is decided before it.
+
+#### What the reviewer took
+
+Depths are layers, c split in two; question 4 as 4a and 4b. What follows from a rule already written is defined, by pointer; each choice of how is an Open item with its trigger, so practice is not steered by a guess. The survey, depth d and depth e follow that split; verdicts are named by layer; the work reaches three files. Depth f keeps its label. This commit plan finishes first. Where Change goes is decided next, before the change flow; which of the three ways is open.
