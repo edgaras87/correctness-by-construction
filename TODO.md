@@ -1373,6 +1373,21 @@
                whichever comes first.
       See: devlog 2026-10-28; ADR-0070.
 
+- [ ] Decide whether a single commit's subject is counted by script
+      when it is written (2026-11-19, the reviewer).
+      Context: the writer aims at 50 characters, and the checks, at a
+      Plan Step's close and a session's end, pass a subject up to 70
+      (ADR-0083). Nothing counts a single commit's subject when it is
+      written; a commit plan still counts its own. Each subject past
+      70 a check finds counts here, fixed or kept. Found so far: 0.
+      Ideas:
+      - found fast: the commit-messages Agent Skill counts each
+        subject when it is written;
+      - not sure yet: 5 more finds before deciding;
+      - rare, and a reword cheaper than counting: drop the question.
+      Trigger: the 5th subject past 70 found by a check.
+      See: ADR-0083; devlog 2026-11-19, the subject's aim and its line.
+
 ## Later / someday
 
 - [ ] Release concept v2 (2026-10-17, from PLAN's Step N).
