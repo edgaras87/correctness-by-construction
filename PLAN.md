@@ -136,3 +136,84 @@ reason. That is a finding about the item, not a Plan Step skipping
 work.
 
 ---
+
+## Step: Give Change one home  (the commit-plan Agent Skill)    [~]
+
+Goal: each fact of Change is written once, in the simulation, until
+the change flow is done, and every other place points there.
+Now: the opening.
+Gate:
+
+**At the opening.**
+
+- [ ] The Plan Step's branch `change-home-2026-11-19` is cut from main
+      at `385a684`, and nothing of the Plan Step was done on main.
+- [ ] This Plan Step Gate was written before the work started.
+- [ ] The Plan Step's Work Approach is known: the commit-plan Agent
+      Skill, for its Change Set; the one-home, writing and
+      foundation-check Agent Rules.
+
+**The Plan Step's own items.**
+
+- [ ] The simulation's header says it holds the facts of Change until
+      the change flow is done, and that they then move to their final
+      home, by the TODO item's third step.
+- [ ] The problem file's §2.1 states no fact of Change: its rules,
+      from *Change* to *Take*, and its paragraphs on the six parts and
+      the cases, point at the simulation.
+- [ ] Each line taken out of the problem file's §2.1 is placed, and
+      its commit body says where: already in the simulation, moved
+      there, kept elsewhere as not a fact of Change, or dropped as
+      superseded by the simulation.
+- [ ] The layers document's §3.2 states only what is its own, where
+      each part and depth sits in the picture and the arrows it
+      travels, and points at the simulation for the six parts and the
+      depths.
+- [ ] The movements between the repos are written once, and the
+      other place points there.
+- [ ] Every Fact Reference to a section this Plan Step moved,
+      retitled or cut resolves, across Living Text.
+
+**Known already.** The commit-plan Agent Skill and the three Agent
+Rules have no *Gates* section, so nothing is known already. This
+Plan Step has only its own items.
+
+**At the close.**
+
+- [ ] Every link and path in the records resolves.
+- [ ] Every ADR a record cites exists.
+- [ ] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
+- [ ] No line of Living Text in a record the Plan Step touched, or one that
+      mentions its subject, still says "now", "today" or "not yet"
+      about something the Plan Step changed.
+- [ ] New and changed text meets `.claude/rules/writing.md`.
+- [ ] Every commit on `change-home-2026-11-19` follows the
+      commit-messages Agent Skill.
+- [ ] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
+- [ ] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept.
+- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      three tests, or leaves (`docs/conventions/agent-arrangement/`
+      §2.4, *How the Entry File is written*).
+- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      use's dated note, and was handed over for evaluation
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+
+Notes:
+- Opened 2026-11-19, the Change idea's first step (`TODO.md`, the
+  item "Define the Change idea").
+- The way, decided in talk on 2026-11-19: the simulation is the one
+  place until the change flow is done, then everything moves once.
+  Rejected:
+  - the simulation as the final home: its *Options* and *Today*
+    fields are workings, and a comparison with today's kit;
+  - the rules moved now to their final home: each rework in the
+    change flow would then edit a fact in two places again, and Judge
+    to Take are checked against depth a only.
+- Found at the opening: at least 4 of the 6 parts in the problem
+  file's §2.1 say something older than the simulation: Read, Judge,
+  Deliver and Take.
+- Stages: the commit plan's (the commit-plan Agent Skill §4, *The
+  lifecycle*). The reviewer signs the plan, then each commit.

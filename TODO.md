@@ -77,10 +77,6 @@
         simulation's 15 *Adapted Case* fields; the movements between
         repos, in the problem file's table and the layers
         document's §3.1;
-      - where they go, three ways: the simulation as the one place
-        until it is done, then a move to the final home; the
-        simulation as the final home; the rules moved once, now, to
-        the final home, on trial, the simulation pointing there;
       - the System Kit Update definition: the simulation's §7 sends
         every Copy whole, as the definition says; its step 1 title,
         the problem file's *Deliver* and the borrowed Update of
@@ -100,10 +96,11 @@
         and Knowledge on Trial handed back; birth stays outside, as
         the start;
       - the flow drawing needs no change for the layers model.
-      Trigger: due now, in three steps: where Change goes decided, so
-      each of its facts is written once, before the change flow edits
-      every part again; the change flow finished, Change to Take;
-      then one home for each fact across the drafts.
+      Trigger: due now, in three steps. The first, where Change goes,
+      is the open Plan Step (`PLAN.md`). Then the change flow
+      finished, Change to Take; then one home for each fact across
+      the drafts, the facts of Change moved out of the simulation
+      among them.
       See: devlog 2026-11-18, the Change idea's design talk;
       `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
