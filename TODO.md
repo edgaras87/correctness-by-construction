@@ -223,7 +223,12 @@
       - the birth scenario gains what
         `temp/common-ground/system-repo-change-simulation.md` §4, step 2 asks of it:
         the delivery check writes the System Repo's register row,
-        with the *settled snapshot* set to the start.
+        with the *settled snapshot* set to the start;
+      - scenarios as checks: how the alert fires was to be decided
+        once the simulation was done (2026-11-09, the reviewer);
+      - the birth's branch: one option was chosen, a branch cut from
+        main; the other, going on in the same branch, still needs a
+        trigger to check and confirm it (2026-11-10, the reviewer).
       Trigger: the Common Ground Problem is finished.
       See: devlog 2026-11-10, the simulation frozen;
       `TODO-CONVERSATION-MEMORY.md` §31.
@@ -254,7 +259,10 @@
         System Repo's readers, is decided with it: its form, such as
         a README paragraph, a longer text or a playbook part, and
         whether a System Repo may change it (the Common Ground
-        Problem, *What the System Kit holds*, item 5).
+        Problem, *What the System Kit holds*, item 5);
+      - whether infra, the stack, is only a bigger set of input to
+        the backend case, not a complexity of its own (2026-11-07,
+        the reviewer's question, not yet answered).
       Trigger: the close of the Plan Step "Find how what we know stays
       true".
       See: devlog 2026-11-08, CBC design beyond backends;
