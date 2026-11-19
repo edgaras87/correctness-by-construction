@@ -117,6 +117,16 @@
       Trigger: the Plan Step "Give Change one home" closed, before the
       change flow starts.
 
+- [ ] Decide what becomes of the branch `experiment-simulation-auto`
+      (2026-11-19, the reviewer).
+      Context: 9 commits on the simulation, of 2026-11-12, kept, not
+      merged. 8 were taken onto `knowledge-2026-11-05`, now in main.
+      The one left, `401e68b`, puts an "Its rules:" line under each
+      part heading, pointing at the problem file's rules, which were
+      cut on 2026-11-19 (`71dfe16`).
+      Trigger: the reviewer's word.
+      See: devlog 2026-11-12, the simulation made plain.
+
 - [ ] Confirm the Common Ground Problem in the reviewer's words
       (2026-11-05, the reviewer; an item since 2026-11-19).
       Context: the problem is drafted in
