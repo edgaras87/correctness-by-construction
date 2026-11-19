@@ -125,6 +125,28 @@ Not known still: the first two items of *Not known yet*, and whether
 the light read cost CBC Run 5 anything, which its CBC Run Reading
 will say.
 
+*The Concept Deliverer, CBC Run 6's CBC Run Birth, 2026-10-29; noted
+2026-11-19, at its Plan Step's close.* Prepared and born in one day,
+7 commits (`56875c9`..`798327d`):
+- Stage 1 a light read: CBC Run 5's CBC Run Reading already held
+  its lessons, each marked keep, change or add for CBC Run 6;
+- the CBC Run Briefing the reviewer's, `checkout`, larger than CBC
+  Run 5's: three Responsibility Areas, 6 to 12 Invariant Slices;
+- the playbook's one line meant for CBC Run 5 alone removed
+  (`7f6e3a8`);
+- the CBC Run Birth from main at `657d372`, by the Pure Seed, its
+  own checks passing, and started by the reviewer;
+- twelve entries in `~/IdeaProjects` made unreadable first, since a
+  `Read` deny rule does not stop `grep -r` or a script.
+
+CBC Run 6 ran through Release and closed a Step 15 after it: 7
+Invariant Slices, 233 commits on main and 254 across its branches,
+tag `v0.1.0`. What it taught is not yet known: it is unread, and
+its reading is TODO's item that reads and judges CBC Runs 4, 5 and 6.
+
+Not known still: as for CBC Run 5, and whether a larger CBC Run
+Briefing holds on full auto.
+
 ---
 
 ## Decisions
