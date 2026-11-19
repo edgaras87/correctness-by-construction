@@ -46,9 +46,12 @@
       practice changes it, and the ideas around it, such as Change.
       Each document's §4 holds its open questions.
       Ideas:
-      - the change work: the simulation of a System Repo's change, and
-        the problem file's rules written from it, both pointing at
-        the model;
+      - the change work: the simulation of a System Repo's change,
+        which holds its rules, pointing at the model;
+      - the general document's open question 3, where a skipped part
+        is marked, is already answered by the problem file's
+        *Narrowing, never shrinking*: in the text that leaves the
+        part out, when that is decided;
       - a piece of work modeled at each layer, in a document of its
         own, starting from `cbc-concept/ideas/`, to see how ideas are
         kept at each layer;
@@ -61,32 +64,27 @@
 - [ ] Define the Change idea: how a change travels between the
       repos, in either direction, a Work Domain Idea with one home
       (2026-11-18, the reviewer).
-      Context: Change is written in three places that overlap: the
-      simulation, its workings; the problem file's §2.1, its rules;
-      the layers document's §3, a summary. The depths, the six parts
-      and the rules each stand in two, so one change of meaning took
-      three commits (`dd56eab`, `a1267ce`, `1db7be1`). The simulation
-      now judges by the layers model; its rules are checked against
-      one case only. The problem file's run stopped part-way for it
-      (`73c37b3`).
+      Context: Change is written once, in the simulation, until the
+      change flow is done; the problem file's §2.1 and the layers
+      document's §3 point there (`d55d58a`..`73f1d87`). The
+      simulation judges by the layers model; its rules are checked
+      against one case only. The problem file's run stopped part-way
+      for it (`73c37b3`).
       Ideas:
-      - the three places, by kind: the depth table, in the
-        simulation's §2 and the layers document's §3.2; the six
-        parts, in the simulation's §1 and the layers document's
-        §3.2; the rules, in the problem file's block and the
-        simulation's 15 *Adapted Case* fields; the movements between
-        repos, in the problem file's table and the layers
-        document's §3.1;
       - the System Kit Update definition: the simulation's §7 sends
         every Copy whole, as the definition says; its step 1 title,
-        the problem file's *Deliver* and the borrowed Update of
-        verdicts only say otherwise;
+        the layers document's §3.1 arrow *Update* and the borrowed
+        Update of verdicts only say otherwise;
+      - the Defined Term System Kit Copy Change Record, in the
+        problem file, retells what a Record holds and where it sits
+        (the simulation's §3, step 1), and alone holds an open
+        point: where a Record sits for a Copy outside any Adapted
+        Case;
       - the final home, a first draft: a section of the layers
         document, its §3.2 grown and retitled *How a change
-        travels*; the problem file's §2.1 block, *What passes
-        between the repos* to *A System Repo's change*, moved whole
-        with its five terms; all nine travel terms in the layers
-        document's §2 list;
+        travels*; the simulation's rules written out there, with the
+        problem file's five terms; all nine travel terms in the
+        layers document's §2 list;
       - a document of its own needs the general document's §2.2
         rule, each adaptation "changed alone", narrowed to variants
         first, and a rule that a Work Domain Idea may stand on
