@@ -231,6 +231,53 @@ flowchart TD
   stage --> take(["the System Repo takes it (§8)"])
 ```
 
+### The take
+
+The System Repo takes an Update at a Plan Step's opening, on a branch of its own (`temp/common-ground/system-repo-change-simulation.md` §8, step 1). It is drawn once, here; each case that ends in an Update points at it. "Item" names an item of §8's *At the take, in order*.
+
+Key: as in picture 1.
+
+```
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
+                         settled snapshot ─▶     c1 ●  the last gate closed                   ◀──── the Copies at Version 1
+                                                    ┊                                         ┄┄┄┄┄ 8. Deliver: the Update waits in temp/, built from Version 1 against c1
+                                                    │
+ ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
+                                                    ┊                                         ┄┄┄┄┄ 9. at a Plan Step's opening, the take checks first, from the Update Note:
+                                                    ┊                                               case 1, main is still c1, the settled snapshot, and the Version is still 1:
+                                                    ┊                                               the Update is taken, below. Case 2, anything else: no take; the System Repo
+                                                    ┊                                               says so, and the human has it looked at. The take may also be postponed,
+                                                    ┊                                               with its why, and starts again from this check at the next opening
+                                                    │
+ ── the take ───────────────────────────────────────┼───────────────────────────────────────────────────────────
+                                                    ├─ cut ──────┐                            ◀──── the take's branch, cut from c1
+                                                    │            │
+                                                    │         c2 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force: a record of what came
+                                                    │            │
+                                                    │         c3 ●  the new Adapted Case      ◀──── item 1: for taking, at Version 2, put in first; it runs the rest
+                                                    │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
+ c4, the clean copy: the next Reading               │         c4 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared
+ starts here, checked against Version 2             │            │
+                                                    │         c5 ●  a Change put back         ◀──── item 4: one per Change still needed, with a fresh Record; zero or more
+                                                    │            │
+                                                    │         c6 ●  a verdict acted on        ◀──── item 5: unsound reversed or kept, a question answered; zero or more
+                                                    │            │
+                                                    │         c7 ●  Version 2 recorded        ◀──── item 6: with the commit that holds it, c4
+                                                    │            │
+                                                    │         c8 ●  the Update removed        ◀──── item 7: the Update and the Update Note leave temp/
+                                                    │            │
+                                                    │         c9 ●  the gate closes           ◀──── item 8: the gate decides each Change put back and verdict acted on
+                                                    │            │
+                                                 c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
+                                                    │
+ ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
+                                                    └─ cut ──────┐                            ◀──── 10. the next Plan Step opens on Version 2
+                                                                 │
+                                                             c10 ●  work, on Version 2
+```
+
 ### A look's cases
 
 A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into what came before, the case, and an example of what follows. Under each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
