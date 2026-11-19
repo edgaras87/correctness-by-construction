@@ -331,3 +331,50 @@ Key: as in picture 1.
                                                                  │
                                                               c4 ●  work, on Version 1        ◀──── the next look compares c3, the settled snapshot, with main
 ```
+
+#### Case C2, an Update follows
+
+```
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ read and acted on                            ┌  c0 ●  earlier work, with Changes             ◀──── kept Changes: judged before the settled snapshot moved to main
+                                              │     │
+ settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
+                                                    │
+                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+                                                    │            │
+                                                    │         c2 ●  work, no Copy changed     ◀──── and no Attention Note written
+                                                    │            │
+                                                    │         c3 ●  the gate closes           ◀──── 2, 3. no Change to decide, no misfit named; the gate closes
+                                                    │            │
+                                                 c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
+                                                    │
+ ── case C2 ────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ 4. the look at main:                               ┊
+ check 1: main is c3, past the settled              ┊
+ snapshot, c1. Main has moved                       ┊
+ check 2: c1 against c3: no Copy and no             ┊
+ Attention Note changed                             ┊
+ the settled snapshot moves up to c3, with          ┊
+ no Reading; nothing is judged                      ┊
+ check 3: the Version is 1, and the newest          ┊
+ is 2                                               ┊
+ case C2: an Update is made and delivered           ┊
+                                                    │
+ ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
+ 8. Deliver, once work resumes: the Update          ┊
+ waits in temp/, built from Version 1               ┊
+                                                    │
+                                                    ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still c3, the settled snapshot,
+                                                    │            │                                  and the Version is still 1, the one the Update was built from
+                                                    │         c4 ●  the Update, as it arrived ◀──── the take's commits, in the order of picture 1's c7 to c14
+                                                    │            │                            ◀──── c5 to c10, not drawn
+                                                    │        c11 ●  the gate closes           ◀──── the take's gate decides each Change put back, and closes
+                                                    │            │
+                                                c11 ● ◀──────────┘                            ◀──── main moves to c11 by fast-forward, at the gate's close
+                                                    │
+                                                    └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
+                                                                 │
+                                                             c12 ●  work, on Version 2
+```
