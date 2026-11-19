@@ -9,7 +9,7 @@ foundation: the commit-messages convention
 ## Format
 
 ```
-<type>(<scope>): <description>          ← subject: ≤50 chars, present tense, no period
+<type>(<scope>): <description>          ← subject: aim ≤50 chars, ask past 70; present tense, no period
                                         ← blank line (mandatory)
 <body>                                  ← the WHY, wrapped at 72 chars, optional
                                         ← blank line
@@ -24,6 +24,10 @@ makes sense alone in `git log --oneline`. Either mood will do:
 - a record reads as what became true, "TODO asks for a glossary".
 
 "Fixed race" fails: it reports the author, not the repo.
+
+Count the subject by script when it is written, and aim at 50
+characters. One of 51 to 70 stands. Past 70, ask the reviewer
+whether to rewrite it.
 
 ## Types
 
@@ -138,3 +142,4 @@ Why they are so: (the Concept Deliverer's docs/conventions/commit-messages/ §1,
 - ADR-0038, 1f — *Rules*: the stop is this file's sentence,
   gated nowhere
 - ADR-0049, 5 — *Format*: either mood, present tense
+- ADR-0083 — *Format*: the subject's aim, 50, and its line, 70
