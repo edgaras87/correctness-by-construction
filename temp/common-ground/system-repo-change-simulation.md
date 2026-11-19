@@ -1,15 +1,18 @@
 # A System Repo's Change, Simulated
 
-<!-- A draft of the knowledge work (ADR-0082). It simulates the cases of temp/common-ground/common-ground-problem.md
-     §2.1, *A System Repo's change*, step by step, until that draft's
-     rules can be written from it, in its §2.1, *What passes between
-     the repos*. The rules live there, never here. Its input: the
+<!-- A draft of the knowledge work (ADR-0082). It simulates the cases
+     of a System Repo's Change, step by step. It is the one home of
+     the facts of Change until the change flow is done: the six
+     parts, their rules and the cases. A part's rules are its steps'
+     *Chosen* and *Adapted Case* fields. Then they move to their
+     final home, written out as rules, and this file points there
+     (TODO.md, the item "Define the Change idea"). Its input: the
      frozen temp/common-ground/between-repos-simulation.md, §5.2, *Work in a System
      Repo*, and §5.3, *Reading a System Repo*. It goes once what it
      holds has landed in the rewrite into the layers model, and git
      keeps every version. -->
 
-This document simulates the cases of a System Repo's change (§2), step by step (`temp/common-ground/common-ground-problem.md` §2.1, *A System Repo's change*). The rules are written from it in that file, never here (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
+This document simulates the cases of a System Repo's change (§2), step by step. It holds the facts of Change until the change flow is done, and its steps' *Chosen* and *Adapted Case* fields are the rules (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
 Nine Defined Terms are shortened here to their last word or words. The short forms belong to this file only; the problem file keeps the full Defined Terms.
 
@@ -32,7 +35,7 @@ The scope of that case: a Change may touch the Adapted Understanding Text, an In
 Three moves, in order:
 
 1. **Simulate:** each step below says what must happen, what could be done, and what is chosen.
-2. **Write the rules:** once all of a part's steps are seen together, its rules are written in `temp/common-ground/common-ground-problem.md` §2.1, *What passes between the repos*.
+2. **Read the rules together:** once all of a part's steps are seen together, their *Chosen* and *Adapted Case* fields are read as one: they are the part's rules. They are written out as rules only when they move to their final home (the header comment).
 3. **Check them:** each step is walked again against the rules. A step a rule does not hold for changes the rule or the step.
 
 The steps make six parts, each done by one repo:

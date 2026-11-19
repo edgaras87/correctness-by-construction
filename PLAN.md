@@ -157,9 +157,9 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] The simulation's header says it holds the facts of Change until
+- [x] The simulation's header says it holds the facts of Change until
       the change flow is done, and that they then move to their final
-      home, by the TODO item's third step.
+      home, by the TODO item's third step (2026-11-19).
 - [ ] The problem file's §2.1 states no fact of Change: its rules,
       from *Change* to *Take*, and its paragraphs on the six parts and
       the cases, point at the simulation.
