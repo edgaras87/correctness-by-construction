@@ -61,6 +61,13 @@ the subject and 72 for a body line. The type prefix carries
 information a plain subject does not, and it is enforceable later
 by a commitlint hook (ADR-0038, 1a).
 
+The 50 is an aim, and 70 is the line. A subject is counted by
+script when it is written. One of 51 to 70 characters stands as it
+is. Past 70, the reviewer decides whether it is rewritten. Nothing
+breaks below 72: GitHub cuts a subject past 72, and `git log
+--oneline`'s hash with 70 characters fits an 80-column terminal. So
+a miss of a few characters is not worth a reword (ADR-0083).
+
 ### 2.2 Mood and tense
 
 Either mood, in the present tense. A subject says what the
