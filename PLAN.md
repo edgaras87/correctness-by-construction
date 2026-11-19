@@ -141,17 +141,19 @@ work.
 
 Goal: each fact of Change is written once, in the simulation, until
 the change flow is done, and every other place points there.
-Now: the opening.
+Now: the commit plan's work, `COMMIT-PLAN.md`.
 Gate:
 
 **At the opening.**
 
-- [ ] The Plan Step's branch `change-home-2026-11-19` is cut from main
-      at `385a684`, and nothing of the Plan Step was done on main.
-- [ ] This Plan Step Gate was written before the work started.
-- [ ] The Plan Step's Work Approach is known: the commit-plan Agent
+- [x] The Plan Step's branch `change-home-2026-11-19` is cut from main
+      at `385a684`, and nothing of the Plan Step was done on main
+      (2026-11-19).
+- [x] This Plan Step Gate was written before the work started
+      (2026-11-19, in `96426d4`, the branch's first commit).
+- [x] The Plan Step's Work Approach is known: the commit-plan Agent
       Skill, for its Change Set; the one-home, writing and
-      foundation-check Agent Rules.
+      foundation-check Agent Rules (2026-11-19).
 
 **The Plan Step's own items.**
 
