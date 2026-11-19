@@ -4,9 +4,9 @@ Date: 2026-11-02
 Status: Proposed, opened at the close of the Plan Step "Weigh the
 idea-to-approach model"; changed 2026-11-03, before any move, from
 moving this repo in place to rebuilding in a new repo; decision 7
-changed 2026-11-04, from commits to rounds of correction; judged at
-the close of the Plan Step "Rebuild in cbc-concept, until it stands
-on its own"
+changed 2026-11-04, from commits to rounds of correction; Superseded
+by 0082 (2026-11-19): the rebuild in `cbc-concept` ended before it
+was judged, and today's repo is rewritten into the layers model here
 
 ## Context
 

@@ -1,8 +1,9 @@
 # 0082. The knowledge work re-cut, the repo rewritten here
 
 Date: 2026-11-19
-Status: Proposed, opened while the Plan Step "Find how what we know
-stays true" closes; accepted in that close's final records commit
+Status: Accepted (2026-11-19, the reviewer, in the final records
+commit of the close of the Plan Step "Find how what we know stays
+true")
 
 ## Context
 
