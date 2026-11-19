@@ -142,8 +142,9 @@ work.
 Goal: a way to keep what the reviewer and the agent know true, from
 one session to the next, is chosen from the problem in the
 reviewer's words and from real cases in this repo.
-Now: stage 1, the problem, drafted in `temp/common-ground/common-ground-problem.md`
-and polished one insight at a time.
+Now: the close, re-cut 2026-11-19: the goal is the problem file's §1,
+*The purpose*, and §7, *What would show it's solved*; the work goes on
+as TODO items (ADR-0082).
 Gate:
 
 **At the opening.**
@@ -158,42 +159,56 @@ Gate:
 
 **The Plan Step's own items.**
 
-- [ ] The problem is written in the reviewer's words, purpose first,
-      and the reviewer says it is right.
-- [ ] Where the same page failed is sorted by cause, with counts,
+- [-] The problem is written in the reviewer's words, purpose first,
+      and the reviewer says it is right
+      (struck 2026-11-19, re-cut: moved to TODO, the item "Confirm the Common Ground Problem in the reviewer's words", ADR-0082).
+- [-] Where the same page failed is sorted by cause, with counts,
       from the devlog's "What context was missing" lines and a sample
-      of the refinement's findings.
-- [ ] At least two real cases are drawn side by side, and it is
+      of the refinement's findings
+      (struck 2026-11-19, re-cut: moved to TODO, the item "Sort where common ground was lost, by cause, with counts", ADR-0082).
+- [-] At least two real cases are drawn side by side, and it is
       decided whether one fits both, the two stay apart, or one
-      general one is drawn.
-- [ ] The way chosen is written, set against one home per fact: what
-      it keeps true, what it lets go stale, and what one change costs.
+      general one is drawn
+      (struck 2026-11-19, re-cut: moved to TODO, the item "Draw two real cases side by side", ADR-0082).
+- [-] The way chosen is written, set against one home per fact: what
+      it keeps true, what it lets go stale, and what one change costs
+      (struck 2026-11-19, re-cut: moved to TODO, the item "Choose the way to keep what we know true", ADR-0082).
 
 **Known already.** No Agent Skill or Agent Rule is used, so nothing is
 known already. This Plan Step has only its own items.
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves.
-- [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in the
-      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
-- [ ] No line of Living Text in a record the Plan Step touched, or one that
+- [x] Every link and path in the records resolves
+      (2026-11-19, by script; the paths unresolved from the root resolve in their own context).
+- [x] Every ADR a record cites exists
+      (2026-11-19, by script).
+- [x] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill
+      (2026-11-19, the worked example byte-identical).
+- [x] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the Plan Step changed.
-- [ ] New and changed text meets `.claude/rules/writing.md`.
-- [ ] Every commit on `knowledge-2026-11-05` follows
-      the commit-messages Agent Skill.
-- [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
-- [ ] The Plan Step's lessons are written back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      about something the Plan Step changed
+      (2026-11-19, on the records only, not the drafts in `temp/`, which say "today" of today's repo on purpose; a one-time narrowing, the rule unchanged).
+- [x] New and changed text meets `.claude/rules/writing.md`
+      (2026-11-19, on the records' changed lines only, not the drafts, which are read again when they land; a one-time narrowing; two fixes, `35ca188`).
+- [-] Every commit on `knowledge-2026-11-05` follows
+      the commit-messages Agent Skill
+      (not met: 27 of 504 subjects are over 50 characters, landed 2026-11-05 to 2026-11-14, before subjects were counted by script; no body line over 72; history not rewritten).
+- [x] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*)
+      (2026-11-19, by script, none).
+- [x] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept
+      (2026-11-19, one lesson, by the reviewer's word: a Plan Step's goal is one piece of work, `3d23e3a`; the CBC Run's playbook form follows in the rewrite; lessons about knowledge wait for the knowledge work).
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the Entry File is written*).
-- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      §2.4, *How the Entry File is written*)
+      (2026-11-19, nothing this Plan Step made untrue).
+- [x] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*)
+      (2026-11-19, none used).
 
 Notes:
 - Opened 2026-11-05, when the rebuild in `cbc-concept` stopped for it
@@ -381,26 +396,36 @@ Gate:
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves.
-- [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in the
-      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
-- [ ] No line of Living Text in a record the Plan Step touched, or one that
+- [x] Every link and path in the records resolves
+      (2026-11-19, run once with the knowledge step's close).
+- [x] Every ADR a record cites exists
+      (2026-11-19, run once with the knowledge step's close).
+- [x] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill
+      (2026-11-19, run once with the knowledge step's close).
+- [x] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the Plan Step changed.
-- [ ] New and changed text meets `.claude/rules/writing.md`.
-- [ ] Every commit on `run-6-birth-2026-10-29` follows
-      the commit-messages Agent Skill.
-- [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
-- [ ] The Plan Step's lessons are written back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      about something the Plan Step changed
+      (2026-11-19; `ARCHITECTURE.md` §2.5's "through Release, not yet read" still true).
+- [x] New and changed text meets `.claude/rules/writing.md`
+      (2026-11-19, its lines read by the refinement's last read, which closed after it).
+- [x] Every commit on `run-6-birth-2026-10-29` follows
+      the commit-messages Agent Skill
+      (2026-11-19, by script, 7 commits).
+- [x] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*)
+      (2026-11-19, by script, none).
+- [x] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept
+      (2026-11-19, in the auto-run Approach on Trial's note, `e5bb8ca`; what CBC Run 6 taught waits for its reading).
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the Entry File is written*).
-- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      §2.4, *How the Entry File is written*)
+      (2026-11-19, run once with the knowledge step's close).
+- [x] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*)
+      (2026-11-19, the auto-run note, `e5bb8ca`; its evaluation is TODO's item).
 
 Notes:
 - Opened 2026-10-29, from the devlog's entry 2026-10-29, later: the

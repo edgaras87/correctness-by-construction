@@ -710,15 +710,15 @@
       full-auto CBC Run (2026-10-22, the Plan Step that birthed CBC Run 5).
       Context: drafted for CBC Run 5 and used twice, for CBC Runs 5
       and 6 (`.claude/approaches-on-trial/auto-run.md`, its use note;
-      CBC Run 6's note waits for the close of its CBC Run Birth's Plan Step). Its
+      CBC Run 6's note written at its CBC Run Birth's close, `e5bb8ca`). Its
       open questions are CBC Run 5's CBC Run Reading's to answer: what in the
       CBC Run Hand-off is general enough for the Container Group, and whether the
       light read of the last CBC Run cost CBC Run 5 anything. Evaluated
       before that, every piece would end on trial and be judged
       again.
-      Trigger: WORK-10 of CBC Run 5's CBC Run Reading lands, putting
-               the reading's nine lessons into the auto-run Approach
-               on Trial.
+      Trigger: CBC Runs 4, 5 and 6 read and judged, CBC Run 5's nine
+               lessons for the auto-run Approach on Trial among the
+               findings (the item that reads and judges them).
       See: devlog 2026-10-22.
 
 - [ ] Decide how a Work Approach and an Output Shape divide an output: the
