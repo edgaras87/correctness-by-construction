@@ -246,6 +246,8 @@ Four steps:
 
   A Plan Step open in the System Repo changes no case: main stands at the last gate, so the look finds its case by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate (§7, step 2, *Before staging*).
 
+  An Update already waiting changes no case: the System Repo has not taken it, so its Version is still behind, check 3 finds an Update due, and the new one replaces the waiting one (§7, step 1, *One at a time*).
+
   **No state kept.** d keeps no state of its own: whether a System Repo has work comes from its main and the *settled snapshot*, never from a line someone must keep true.
 
   **Cleaned history.** If a stretch's history is cleaned before main moves, the Records are unharmed: they are in the Copies, not in the commits.
