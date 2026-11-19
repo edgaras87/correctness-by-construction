@@ -10,6 +10,11 @@ For your later self: short
 plain sentences, and honest. Never rewrite an earlier entry. Mark dead ends with
 "DEAD END:" so they're greppable. End every session with a "Resume:"
 line: the next session starts there.
+Each step the Resume line names points at its home: a TODO item,
+`PLAN.md`'s Now line, or `COMMIT-PLAN.md`. Something noticed and not
+yet weighed goes into TODO first, written light. An action left to
+the reviewer is said as theirs. Steps are put in order only where
+one needs another.
 
 <!-- Why the form is as it is: (docs/conventions/project-recording/
      §4.4, How the devlog is written).
