@@ -271,10 +271,11 @@
       `temp/common-ground/between-repos-simulation.md` (2026-11-10, the reviewer).
       Context: the simulation grew into designing the whole exchange:
       an idea's repo, birth, cleanups, reading back. That is solution
-      work, and it made the problem bigger while stage 1 is the
-      problem. It is frozen after scenario 3: scenarios 0 to 3
+      work, and it made the problem bigger while the problem was
+      still being written. It is frozen after scenario 3: scenarios 0 to 3
       written, 4 to 8 not. Its *Changed from today* fields hold
-      findings about today's repo that stage 2 needs. The Common
+      findings about today's repo that the sorting of where common
+      ground was lost needs. The Common
       Ground Problem takes one case instead: a System Repo changes a
       System Kit Copy.
       Ideas:
@@ -325,8 +326,8 @@
       - whether infra, the stack, is only a bigger set of input to
         the backend case, not a complexity of its own (2026-11-07,
         the reviewer's question, not yet answered).
-      Trigger: the close of the Plan Step "Find how what we know stays
-      true".
+      Trigger: the way to keep what we know true chosen (the item
+      that chooses it).
       See: devlog 2026-11-08, CBC design beyond backends;
       `TODO-CONVERSATION-MEMORY.md` §33, *CBC design beyond backends*.
 
@@ -349,8 +350,7 @@
         a second Backbone Idea uses it; both then point at it
         (`temp/common-ground/knowledge-layers-general.md` §2.1, *The
         Backbone Idea layer*).
-      Trigger: the close of the Plan Step "Find how what we know stays
-      true", with the concept's split.
+      Trigger: with the concept's split.
       See: devlog 2026-11-16 and 2026-11-18, layers 3 and 4 read back.
 
 - [ ] Check `cbc-concept` for ideas not yet taken in here, then drop
@@ -428,7 +428,8 @@
         commit rhythm against a risk not yet met.
       - the check by name and date finds only notes the agent edited;
         a note made stale by a change in the repo around it shows only
-        in a full review, as on 2026-11-07, or in stage 2's reading.
+        in a full review, as on 2026-11-07, or when where common
+        ground was lost is sorted.
       Trigger: the session-end item is decided, or the Agent Model is
       reworked, whichever comes first.
       See: `TODO-CONVERSATION-MEMORY.md` §32, *The agent's memory*.
@@ -505,8 +506,8 @@
         Defined Terms follow, being local aside: sorted alphabetically,
         a definition naming what it builds on by its Term, and no Term
         shortened by sharing words with another.
-      Trigger: the close of "Find how what we know stays true", when
-      its lessons are written back.
+      Trigger: the problem file's Defined Terms land, as today's repo
+      is rewritten into the layers model (ADR-0082).
 
 - [ ] Read and judge CBC Runs 4, 5 and 6: each read apart, their
       findings judged together, kept for the rewrite (2026-11-19,
