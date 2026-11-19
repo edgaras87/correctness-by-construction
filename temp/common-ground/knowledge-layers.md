@@ -189,7 +189,7 @@ How deep a Change goes is how high it goes: each of the simulation's depths name
 | e. it asks to narrow the idea above | layer 3, or layer 2, marked; the idea that does not fit stays | *Change, read back*; *Update* |
 | f. several Adapted Cases need it, but not all | layer 3, in each Adapted Case; no shared home | *Change, read back*; *Update* |
 
-The Work Domain layer fills part of depth f's gap: text shared by every Adapted Case of one Work Domain has a layer, and is depth c, at layer 2. Text shared by several Adapted Cases of one Work Domain, but not all, or across Work Domains, but not all, still has none (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1). The second is met when the open Plan Step's stage 2 labels which parts of `concept/` are which.
+The Work Domain layer fills part of depth f's gap: text shared by every Adapted Case of one Work Domain has a layer, and is depth c, at layer 2. Text shared by several Adapted Cases of one Work Domain, but not all, or across Work Domains, but not all, still has none (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1). The second is met when `concept/` is labelled general or backend, for the concept's split (`TODO.md`, the item that splits the concept).
 
 ### 3.3 The Maintainer Repo's lessons
 
@@ -201,7 +201,7 @@ It has no Read, Deliver or Take of its own: nothing crosses between repos until 
 
 None is answered by the text above. Each is answered when work reaches it: its answer goes into the text above, and the question leaves this list.
 
-1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, built by the stopped Plan Step *Rebuild in cbc-concept*, is close to a second Maintainer Repo. §2.3.1 says what a Maintainer Kit would be made from.
+1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, once close to a second Maintainer Repo, ended as a rebuild and is kept only as a source (ADR-0082). §2.3.1 says what a Maintainer Kit would be made from.
 2. **What layer 4 holds:** the general document's question (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6). Here it is met at a System Repo's design of its system and its own Knowledge on Trial.
 3. **A name for the movement:** what runs from a Change to the take of the next Update, as one thing (§3.2), so the simulation can name it.
 4. **Where Judge sits:** §3.2 puts it at layer 3, since a Change is judged against the Adapted Case its Copy came from. The sources say only that it runs in the Maintainer Repo.

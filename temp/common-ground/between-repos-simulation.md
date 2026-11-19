@@ -1,14 +1,15 @@
 # Between the Repos, Simulated
 
-<!-- A draft for the Plan Step "Find how what we know stays true",
-     stage 1. It simulates, step by step, what passes between the
+<!-- A draft of the knowledge work (ADR-0082). It simulates, step by step, what passes between the
      Maintainer Repo and a System Repo, and inside the Maintainer
      Repo when understanding changes. What it finds goes into
      temp/common-ground/common-ground-problem.md §2.1, *What passes between the
      repos*; how it differs from today goes into that draft's §2.2,
-     for stage 2. The talk behind it: TODO-CONVERSATION-MEMORY.md §31,
-     its part of 2026-11-08 and 2026-11-09. It goes when the Plan
-     Step closes, and git keeps every version.
+     for the sorting of where common ground was lost. The talk
+     behind it: TODO-CONVERSATION-MEMORY.md §31, its part of
+     2026-11-08 and 2026-11-09, in git at `60f692d`. It goes once
+     what it holds has landed in the rewrite into the layers model,
+     and git keeps every version.
      Frozen on 2026-11-10, after scenario 3, on the reviewer's word:
      the Common Ground Problem takes one case instead, a System Repo
      changing a System Kit Copy. It resumes by the TODO item that

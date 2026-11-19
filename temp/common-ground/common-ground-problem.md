@@ -1,15 +1,16 @@
 # The Common Ground Problem
 
-<!-- A draft: the problem of the Plan Step "Find how what we know
-     stays true", its stage 1, in the reviewer's words. Built from
-     TODO-CONVERSATION-MEMORY.md §31, *Keeping what we know true*,
-     and from what temp/model-example/idea-model-problem.md says of the problem,
+<!-- A draft: the Common Ground Problem, in the reviewer's words;
+     its §1 and §7 hold the goal of the knowledge work (ADR-0082).
+     Built from TODO-CONVERSATION-MEMORY.md §31, *Keeping what we
+     know true*, in git at `60f692d`, and from what temp/model-example/idea-model-problem.md says of the problem,
      not of a model. Polished one insight at a time, each a commit,
      so the diffs show what changed. It states the problem only: an
      answer met on the way is kept as an option to consider (§8),
      not chosen. Its
-     home is decided when the Plan Step closes; it goes then, and
-     git keeps every version. -->
+     home is decided as today's repo is rewritten into the layers
+     model; it goes once what it holds has landed, and git keeps
+     every version. -->
 
 This document states the Common Ground Problem. It chooses no answer; answers met along the way are kept as options to weigh (§8). It is written about the system as intended (§2.1), and its options are weighed there; what the Maintainer Repo has today, and what was already noticed there, is set apart (§2.2). The next step sets the two against each other, and an answer is tried on the real repo only where they fit.
 

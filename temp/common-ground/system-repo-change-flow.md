@@ -1,15 +1,15 @@
 # A System Repo's Change, as a Flow
 
-<!-- A draft for the Plan Step "Find how what we know stays true",
-     stage 1. It pictures the System Repo's commits in the round of
+<!-- A draft of the knowledge work (ADR-0082). It pictures the System Repo's commits in the round of
      temp/common-ground/system-repo-change-simulation.md, and the part acting on
      each, and the Maintainer Repo's choices. The facts live in the
      simulation, never here. "Now" pictures the simulation as it is.
      Each "After" section pictures one open decision, one drawing per
      option, each named by its option. When the decision is made, the
      simulation changes, the chosen option's drawing becomes "Now",
-     and that "After" section goes. It goes when the Plan Step closes, and
-     git keeps every version. -->
+     and that "After" section goes. It goes once what it holds has
+     landed in the rewrite into the layers model, and git keeps every
+     version. -->
 
 It uses the simulation's short words: Change, Record, Copy, Update, Update Note, Version, Reading, Register (`temp/common-ground/system-repo-change-simulation.md`, its table at the top).
 

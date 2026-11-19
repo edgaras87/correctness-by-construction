@@ -1,13 +1,13 @@
 # A System Repo's Change, Simulated
 
-<!-- A draft for the Plan Step "Find how what we know stays true",
-     stage 1. It simulates the cases of temp/common-ground/common-ground-problem.md
+<!-- A draft of the knowledge work (ADR-0082). It simulates the cases of temp/common-ground/common-ground-problem.md
      §2.1, *A System Repo's change*, step by step, until that draft's
      rules can be written from it, in its §2.1, *What passes between
      the repos*. The rules live there, never here. Its input: the
      frozen temp/common-ground/between-repos-simulation.md, §5.2, *Work in a System
-     Repo*, and §5.3, *Reading a System Repo*. It goes when the Plan
-     Step closes, and git keeps every version. -->
+     Repo*, and §5.3, *Reading a System Repo*. It goes once what it
+     holds has landed in the rewrite into the layers model, and git
+     keeps every version. -->
 
 This document simulates the cases of a System Repo's change (§2), step by step (`temp/common-ground/common-ground-problem.md` §2.1, *A System Repo's change*). The rules are written from it in that file, never here (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
