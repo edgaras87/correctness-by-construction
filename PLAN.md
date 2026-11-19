@@ -141,7 +141,7 @@ work.
 
 Goal: each fact of Change is written once, in the simulation, until
 the change flow is done, and every other place points there.
-Now: the commit plan's work, `COMMIT-PLAN.md`.
+Now: the close: the commit plan's close, then main's fast-forward.
 Gate:
 
 **At the opening.**
@@ -173,8 +173,12 @@ Gate:
       depths (2026-11-19).
 - [x] The movements between the repos are written once, and the
       other place points there (2026-11-19).
-- [ ] Every Fact Reference to a section this Plan Step moved,
-      retitled or cut resolves, across Living Text.
+- [x] Every Fact Reference to a section this Plan Step moved,
+      retitled or cut resolves, across Living Text
+      (2026-11-19, by script, unwrapped: every cut label and phrase
+      found only in `COMMIT-PLAN.md` and in TODO's line naming the
+      cut; the frozen `between-repos-simulation.md` left as it is,
+      by the plan).
 
 **Known already.** The commit-plan Agent Skill and the three Agent
 Rules have no *Gates* section, so nothing is known already. This
@@ -182,26 +186,42 @@ Plan Step has only its own items.
 
 **At the close.**
 
-- [ ] Every link and path in the records resolves.
-- [ ] Every ADR a record cites exists.
-- [ ] Each pair of copies agrees, such as the worked example in the
-      cbc-framing Agent Skill and in the cbc-slice Agent Skill.
-- [ ] No line of Living Text in a record the Plan Step touched, or one that
+- [x] Every link and path in the records resolves
+      (2026-11-19, by script: no unresolved path that main did not
+      already have; those resolve in their own context).
+- [x] Every ADR a record cites exists
+      (2026-11-19, by script).
+- [x] Each pair of copies agrees, such as the worked example in the
+      cbc-framing Agent Skill and in the cbc-slice Agent Skill
+      (2026-11-19, the worked example byte-identical).
+- [x] No line of Living Text in a record the Plan Step touched, or one that
       mentions its subject, still says "now", "today" or "not yet"
-      about something the Plan Step changed.
-- [ ] New and changed text meets `.claude/rules/writing.md`.
-- [ ] Every commit on `change-home-2026-11-19` follows the
-      commit-messages Agent Skill.
-- [ ] No commit straddles agent and project paths
-      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
-- [ ] The Plan Step's lessons are written back where they came from:
-      conventions, the playbook, the concept.
-- [ ] `CLAUDE.md` read top to bottom; each line still passes its
+      about something the Plan Step changed
+      (2026-11-19, by grep on the changed lines of `PLAN.md` and
+      `TODO.md`; the Change idea's trigger, which names this open
+      Plan Step, is rewritten in the closing commit on main).
+- [x] New and changed text meets `.claude/rules/writing.md`
+      (2026-11-19, read at each commit; one fix before staging, a
+      bare "§2" in the layers document that named the simulation's).
+- [x] Every commit on `change-home-2026-11-19` follows the
+      commit-messages Agent Skill
+      (2026-11-19, by script: the longest subject 49 characters, no
+      body line over 72).
+- [x] No commit straddles agent and project paths
+      (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*)
+      (2026-11-19, by script, none).
+- [x] The Plan Step's lessons are written back where they came from:
+      conventions, the playbook, the concept
+      (2026-11-19, none for them: the step's findings are about the
+      drafts, and went to TODO in `a139b6e`).
+- [x] `CLAUDE.md` read top to bottom; each line still passes its
       three tests, or leaves (`docs/conventions/agent-arrangement/`
-      §2.4, *How the Entry File is written*).
-- [ ] Each Approach on Trial the Plan Step drafted or used has this
+      §2.4, *How the Entry File is written*)
+      (2026-11-19, nothing this Plan Step made untrue).
+- [x] Each Approach on Trial the Plan Step drafted or used has this
       use's dated note, and was handed over for evaluation
-      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*).
+      (`.claude/approaches-on-trial/approach-drafting.md` §3, *Close*)
+      (2026-11-19, none used).
 
 Notes:
 - Opened 2026-11-19, the Change idea's first step (`TODO.md`, the
