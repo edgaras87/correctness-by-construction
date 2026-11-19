@@ -104,6 +104,21 @@
       See: devlog 2026-11-18, the Change idea's design talk;
       `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
+- [ ] Draw Change whole: its six parts across the two repos, and how
+      high each depth goes, in one picture (2026-11-19, the reviewer).
+      Context: the rules of Change are read across the simulation's
+      steps; no page shows them together. The flow drawing,
+      `temp/common-ground/system-repo-change-flow.md`, shows one
+      round's commits, not the parts and depths. The picture follows
+      the simulation and holds no fact of its own. Drawn earlier, it
+      would draw from three places; drawn after the change flow, it
+      would only describe it.
+      Ideas: settled by the visual-comparison Agent Skill, checked
+      against the flow drawing and the layers document's picture so
+      it repeats neither.
+      Trigger: the Plan Step "Give Change one home" closed, before the
+      change flow starts.
+
 - [ ] Confirm the Common Ground Problem in the reviewer's words
       (2026-11-05, the reviewer; an item since 2026-11-19).
       Context: the problem is drafted in
