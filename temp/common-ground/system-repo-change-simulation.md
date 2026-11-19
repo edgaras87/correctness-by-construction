@@ -88,6 +88,34 @@ New text of the System Repo's own, on trial, is not a case here. It comes from n
 
 **Other sources.** A Change is one source of the Common Ground Problem. Others exist: a birth, a lesson found in the Maintainer Repo's own work, Knowledge on Trial a System Repo hands over at its close, and new knowledge from the human. They are left on purpose until Change is finished (`TODO.md`, the item on resuming the simulation).
 
+**Change whole.** The six parts of §1 and the depths of the table above, in one picture. It is a summary: the sections it names hold the facts.
+
+```
+ System Repo  ┆ Maintainer Repo
+ ───────────  ┆ ───────────────
+              ┆
+ 1. Change ───┼── reads; writes nothing there ──▶ 2. Read ──▶ 3. Judge ──▶ 4. Act on the verdicts
+    §3        ┆                                      §4          §5           §6
+              ┆                                                               │
+ 6. Take ◀────┼── writes only into its temp/ ──── 5. Deliver ◀────────────────┘
+    §8        ┆                                      §7
+
+ How high each depth goes: 3. Judge sets it, 4. Act on the verdicts changes it
+
+ depth                          a           b        c, at 2   c, at 1   d         e         f
+                                            └──────────────── not yet checked ────────────────┘
+ layer 1  Backbone Idea                                        ●
+ layer 2  Work Domain Idea                           ●         ●         ○         ○
+ layer 3  Adapted Case                      ●        ●         ●         ●         ●
+ layer 4  a System Repo's work  ●           ●        ●         ●         ●         ●         ●
+ ───────────────────────────────────────────────────────────────────────────────────────────────────────
+ highest layer                  4           3        2         1         3, or 2   3, or 2   none, open
+ 5. Deliver brings down         a verdict,  Update   Update    Update    Update    Update    Update
+                                if one goes
+```
+
+Key: ● is the Change's path, from its Copy up to the highest layer it changes. ○ is "or up to here", when the case asks it (the table above, rows d and e). The last row follows the layers document's arrows (`temp/common-ground/knowledge-layers.md` §3.2, *How a Change moves*). A § is a section of this document.
+
 ## 3. Change
 
 Two steps:
