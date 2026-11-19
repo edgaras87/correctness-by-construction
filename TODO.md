@@ -173,8 +173,7 @@
       Context: one Maintainer Repo exists, so a kit would be written
       from one example and no repo would be born from it yet. The
       question and its facts are the draft's.
-      Trigger: the rebuild in `cbc-concept` resuming, or a second
-      Concept Repo.
+      Trigger: a second Concept Repo.
       See: `temp/common-ground/knowledge-layers.md` §4, *Open questions*,
       "A Maintainer Kit".
 
@@ -353,6 +352,20 @@
       Trigger: the close of the Plan Step "Find how what we know stays
       true", with the concept's split.
       See: devlog 2026-11-16 and 2026-11-18, layers 3 and 4 read back.
+
+- [ ] Check `cbc-concept` for ideas not yet taken in here, then drop
+      it (2026-11-19, the reviewer).
+      Context: the rebuild in `cbc-concept` ended (ADR-0082). The
+      reviewer will not go back to it, but it holds ideas to consider
+      once, among them ten in `cbc-concept/ideas/`, such as plan,
+      gate, change and one home. The repo is kept only until this
+      check.
+      Ideas:
+      - the reviewer reads it manually first; then the agent checks it
+        for ideas not yet taken in here; then it is dropped.
+      Trigger: the Agent Model's rewrite reaches the piece of work as a
+      Backbone Idea (the item above).
+      See: ADR-0082; ADR-0081.
 
 - [ ] Try CBC design on the finished Common Ground Problem, beside
       the way chosen (2026-11-08, the reviewer).
