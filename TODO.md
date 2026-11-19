@@ -232,7 +232,7 @@
       Kit's backend case and their instructions, losing nothing
       (2026-11-08, the reviewer).
       Context: CBC design fits any system, not only software. The
-      System Kit holds one adapted case of it so far, for backends.
+      System Kit holds one Adapted Case of it so far, for backends.
       Today `concept/` holds both in one text, its examples and words
       leaning toward software, and the Method Group's Agent Skills
       stand on it. The open Plan Step's stage 2 labels which parts are
@@ -295,7 +295,7 @@
       Ideas:
       - each change sorted first: a feature, or a change that touches
         a System Guarantee; only the second gets the full analysis;
-      - if it holds, the Maintainer Repo's own adapted case of CBC
+      - if it holds, the Maintainer Repo's own Adapted Case of CBC
         design, with its instructions;
       - the risks seen: a Structural Wall is hard to build in text;
         part of the system is a person; the repo is judged by the
