@@ -60,30 +60,31 @@
 - [ ] Define the Change idea: how a change travels between the
       repos, in either direction, a Work Domain Idea with one home
       (2026-11-18, the reviewer).
-      Context: the six parts' rules sit in the problem file's §2.1,
-      written from the simulation before the layers model, and
-      checked against one case only. Two things are settled: it is a
-      second adaptation of the Backbone Idea "The layers of
-      knowledge", in keeping knowledge; its subject is a change
-      crossing between the repos, written from one source so far, a
-      System Repo's Change. The problem file's run stopped part-way
-      for it (`73c37b3`).
+      Context: Change is written in three places that overlap: the
+      simulation, its workings; the problem file's §2.1, its rules;
+      the layers document's §3, a summary. The depths, the six parts
+      and the rules each stand in two, so one change of meaning took
+      three commits (`dd56eab`, `a1267ce`, `1db7be1`). The simulation
+      now judges by the layers model; its rules are checked against
+      one case only. The problem file's run stopped part-way for it
+      (`73c37b3`).
       Ideas:
-      - the simulation's updates for the layers model:
-        "project-agnostic" in 14 lines; depth f, since the Work
-        Domain layer gives a change shared within one Work Domain a
-        home; the row "new text of the System Repo's own, on trial",
-        which is Knowledge on Trial handed back, not a Change; and
-        Judge and Act, which know one level above an Adapted Case
-        where the model has two;
-      - "project-agnostic lesson" names a verdict in 6 lines, 3 in
-        the simulation and 3 in the problem file; it may split in
-        two, one verdict for each layer above;
+      - the three places, by kind: the depth table, in the
+        simulation's §2 and the layers document's §3.2; the six
+        parts, in the simulation's §1 and the layers document's
+        §3.2; the rules, in the problem file's block and the
+        simulation's 15 *Adapted Case* fields; the movements between
+        repos, in the problem file's table and the layers
+        document's §3.1;
+      - where they go, three ways: the simulation as the one place
+        until it is done, then a move to the final home; the
+        simulation as the final home; the rules moved once, now, to
+        the final home, on trial, the simulation pointing there;
       - the System Kit Update definition: the simulation's §7 sends
         every Copy whole, as the definition says; its step 1 title,
         the problem file's *Deliver* and the borrowed Update of
         verdicts only say otherwise;
-      - where it goes, a first draft: a section of the layers
+      - the final home, a first draft: a section of the layers
         document, its §3.2 grown and retitled *How a change
         travels*; the problem file's §2.1 block, *What passes
         between the repos* to *A System Repo's change*, moved whole
@@ -98,10 +99,10 @@
         and Knowledge on Trial handed back; birth stays outside, as
         the start;
       - the flow drawing needs no change for the layers model.
-      Trigger: due now, in four steps: the simulation brought up to
-      the layers model, Judge and Act included; the change flow
-      finished, Change to Take; where it goes decided; then one home
-      for each fact across the drafts.
+      Trigger: due now, in three steps: where Change goes decided, so
+      each of its facts is written once, before the change flow edits
+      every part again; the change flow finished, Change to Take;
+      then one home for each fact across the drafts.
       See: devlog 2026-11-18, the Change idea's design talk;
       `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
