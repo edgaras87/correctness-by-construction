@@ -53,7 +53,8 @@
         own, starting from `cbc-concept/ideas/`, to see how ideas are
         kept at each layer;
       - today's Maintainer Repo brought in: its ideas, manuals and
-        Agent Skills, each to its layer.
+        Agent Skills, each to its layer; a text goes once everything
+        it holds has landed, or has been judged not needed (ADR-0082).
       Trigger: due now.
       See: `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
@@ -105,6 +106,67 @@
       then one home for each fact across the drafts.
       See: devlog 2026-11-18, the Change idea's design talk;
       `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
+
+- [ ] Confirm the Common Ground Problem in the reviewer's words
+      (2026-11-05, the reviewer; an item since 2026-11-19).
+      Context: the problem is drafted in
+      `temp/common-ground/common-ground-problem.md`, purpose first,
+      and polished one insight at a time. The reviewer has not yet
+      said it is right. Its §1 and §7 hold the goal of the whole
+      knowledge work (ADR-0082).
+      Trigger: the Change idea defined, since its rules leave the
+      problem file's §2.1.
+      See: ADR-0082; `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what
+      we know true*, in git at `60f692d`.
+
+- [ ] Sort where common ground was lost, by cause, with counts
+      (2026-11-05, the reviewer; an item since 2026-11-19).
+      Context: two parts. First, the repo set against what the
+      problem file says it is meant to keep, its §2.1: what it does,
+      and what it does not; its descriptions of itself, such as
+      `CLAUDE.md` and `ARCHITECTURE.md`, checked for intent written as
+      if it were now (Failure Case 17). Then where common ground was
+      lost: the devlog's "What context was missing" lines, the
+      refinement's findings and the agent's memory notes.
+      Ideas:
+      - a sample sorted by the problem file's Failure Cases, so each
+        gets its count; a failure none fits is a new Failure Case;
+      - the sources as the closing Plan Step counted them: 18 devlog
+        lines since October, 485 findings in round 3's close read,
+        385 in the last read.
+      Trigger: the Common Ground Problem confirmed.
+      See: ADR-0082; `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what
+      we know true*, in git at `60f692d`.
+
+- [ ] Draw two real cases side by side, and decide whether one fits
+      both (2026-11-05, the reviewer; an item since 2026-11-19).
+      Context: one case drawn and defined, as `cbc-concept`'s step
+      drawings did one change; a second beside it, from outside this
+      repo, such as a CBC Run, since the problem holds wherever a
+      human works with an agent. Then it is decided whether one fits
+      both, the two stay apart, or one general one is drawn. The
+      layers model already answers part of it.
+      Ideas:
+      - the simulation's case, a System Repo's change, may be the
+        first; the judged findings of CBC Runs 4, 5 and 6 may give
+        the second.
+      Trigger: where common ground was lost, sorted.
+      See: ADR-0082; `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what
+      we know true*, in git at `60f692d`.
+
+- [ ] Choose the way to keep what we know true, set against one home
+      per fact (2026-11-05, the reviewer; an item since 2026-11-19).
+      Context: the way is written with what it keeps true, what it
+      lets go stale, and what one change costs. It answers the
+      problem file's §7, *What would show it's solved*.
+      Ideas:
+      - not everything must stay true, since history cannot go stale;
+      - check a text when it is about to be used, not by a sweep;
+      - if this repo's rules steer the answers, the reviewer or the
+        agent says so when it is felt, and the reviewer decides then.
+      Trigger: two real cases drawn side by side.
+      See: ADR-0082; `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what
+      we know true*, in git at `60f692d`.
 
 - [ ] Decide whether a Maintainer Kit should exist, for a new
       Maintainer Repo to be born from (2026-11-14, the reviewer).
@@ -240,9 +302,10 @@
       System Kit holds one Adapted Case of it so far, for backends.
       Today `concept/` holds both in one text, its examples and words
       leaning toward software, and the Method Group's Agent Skills
-      stand on it. The open Plan Step's stage 2 labels which parts are
-      which. The split waits for the way that Plan Step chooses, so
-      that way shapes it. No fact or step of the concept or the
+      stand on it. `concept/` and the Method Group are first labelled
+      general or backend, labels only, nothing rewritten. The split
+      waits for the way chosen, so that way shapes it. No fact or
+      step of the concept or the
       methods may be lost.
       Ideas:
       - the three parts as layers (`temp/common-ground/knowledge-layers.md`):
@@ -250,7 +313,7 @@
         for backends in layer 2; framing, slicing and the like as
         Adapted Cases in layer 3, worked by in layer 4 (2026-11-16,
         the reviewer);
-      - stage 2's labels as the split's input;
+      - the labels as the split's input;
       - the concept's software examples may go with the backend case,
         which meets the item on whether the concept keeps examples;
       - concept v2's release may carry it, since every CBC Run pins a
