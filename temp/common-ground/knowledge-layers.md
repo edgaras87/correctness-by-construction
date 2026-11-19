@@ -193,7 +193,7 @@ The Work Domain layer fills part of depth f's gap: text shared by every Adapted 
 
 ### 3.3 The Maintainer Repo's lessons
 
-A lesson from the Maintainer Repo's own work starts in layer 4 of the right column. Since that work is done by its own Adapted Cases in place, the lesson changes layer 3 at once. It is then judged by the same questions 3 and 4 as a Change read back, and goes up the arrow *lesson* as far as it holds (`temp/common-ground/common-ground-problem.md` §2.1, *Judging a change read back*). If it reaches layer 1, it comes down the arrow *adapt*, to the System Repos' Adapted Cases too, and reaches System Repos by an Update.
+A lesson from the Maintainer Repo's own work starts in layer 4 of the right column. Since that work is done by its own Adapted Cases in place, the lesson changes layer 3 at once. It is then judged by the same questions 3 and 4 as a Change read back, and goes up the arrow *lesson* as far as it holds (`temp/common-ground/system-repo-change-simulation.md` §5, *Judge*). If it reaches layer 1, it comes down the arrow *adapt*, to the System Repos' Adapted Cases too, and reaches System Repos by an Update.
 
 It has no Read, Deliver or Take of its own: nothing crosses between repos until an Update carries it to a System Repo.
 

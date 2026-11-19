@@ -224,10 +224,10 @@
       Context: a System Repo Reading compares two snapshots and never
       walks commits (`temp/common-ground/system-repo-change-simulation.md` §4,
       *Snapshots*). "Runs from … to main" and "across that span"
-      still read as a walk, in `temp/common-ground/common-ground-problem.md` §2.1,
-      *Reading a change*, and may elsewhere.
-      Trigger: the problem file's rules are rewritten from the
-      simulation.
+      read as a walk in the problem file's rules on reading, cut on
+      2026-11-19; the same words may stand in other drafts.
+      Trigger: the facts of Change moved to their final home, so the
+      sweep reads the final text.
 
 - [ ] Design how a document is refined: a broad Adapted Case, an
       Output Shape read after the work, and how each corrects the

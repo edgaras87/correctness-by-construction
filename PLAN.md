@@ -160,13 +160,13 @@ Gate:
 - [x] The simulation's header says it holds the facts of Change until
       the change flow is done, and that they then move to their final
       home, by the TODO item's third step (2026-11-19).
-- [ ] The problem file's §2.1 states no fact of Change: its rules,
+- [x] The problem file's §2.1 states no fact of Change: its rules,
       from *Change* to *Take*, and its paragraphs on the six parts and
-      the cases, point at the simulation.
-- [ ] Each line taken out of the problem file's §2.1 is placed, and
+      the cases, point at the simulation (2026-11-19).
+- [x] Each line taken out of the problem file's §2.1 is placed, and
       its commit body says where: already in the simulation, moved
       there, kept elsewhere as not a fact of Change, or dropped as
-      superseded by the simulation.
+      superseded by the simulation (2026-11-19).
 - [ ] The layers document's §3.2 states only what is its own, where
       each part and depth sits in the picture and the arrows it
       travels, and points at the simulation for the six parts and the
