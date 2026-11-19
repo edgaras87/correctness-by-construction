@@ -1279,3 +1279,10 @@
   already its record, as the commit-messages Agent Skill has it.
   Rejected: the agent rendering, with a permission rule for the
   renderer; a TODO item for step 6, when one line settled it.
+
+- 2026-11-19 `CLAUDE.local.md`: the session's end opens with a count
+  of its commit subjects, by script; any past 70 is shown to the
+  reviewer, and counts toward the TODO item on counting subjects.
+  Why: ADR-0083; the session's end is where `CLAUDE.local.md` lists
+  its steps.
+  Rejected: see ADR-0083.
