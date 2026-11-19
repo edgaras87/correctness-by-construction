@@ -94,11 +94,10 @@
         and Knowledge on Trial handed back; birth stays outside, as
         the start;
       - the flow drawing needs no change for the layers model.
-      Trigger: due now, in three steps. The first, where Change goes,
-      is the open Plan Step (`PLAN.md`). Then the change flow
-      finished, Change to Take; then one home for each fact across
-      the drafts, the facts of Change moved out of the simulation
-      among them.
+      Trigger: due now, in two steps: the change flow finished,
+      Change to Take, once Change is drawn whole (the item below);
+      then one home for each fact across the drafts, the facts of
+      Change moved out of the simulation among them.
       See: devlog 2026-11-18, the Change idea's design talk;
       `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
