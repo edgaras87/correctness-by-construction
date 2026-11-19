@@ -548,8 +548,9 @@
         `temp/run-6-handoff/`, the hand-off its reading starts from;
       - a later update to a CBC Run born before names the renames in
         its Delivery Note, once.
-      Trigger: where Change goes decided, the Change idea's first
-      step, so the findings are judged by rules standing in one place.
+      Trigger: before the rewrite of today's repo into the layers model
+      begins (the layers item's idea, today's Maintainer Repo brought
+      in), since the findings are about the texts it rewrites.
       See: ADR-0082; devlog 2026-10-29, morning; `f097695`;
       `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's reading: two moves
       from layer 6*, and §30, *Reading a CBC Run born before*.
