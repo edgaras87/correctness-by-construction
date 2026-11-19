@@ -95,26 +95,12 @@
         the start;
       - the flow drawing needs no change for the layers model.
       Trigger: due now, in two steps: the change flow finished,
-      Change to Take, once Change is drawn whole (the item below);
-      then one home for each fact across the drafts, the facts of
+      Change to Take, its picture kept in step with it (the
+      simulation's §2, *Change whole*); then one home for each fact
+      across the drafts, the facts of
       Change moved out of the simulation among them.
       See: devlog 2026-11-18, the Change idea's design talk;
       `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
-
-- [ ] Draw Change whole: its six parts across the two repos, and how
-      high each depth goes, in one picture (2026-11-19, the reviewer).
-      Context: the rules of Change are read across the simulation's
-      steps; no page shows them together. The flow drawing,
-      `temp/common-ground/system-repo-change-flow.md`, shows one
-      round's commits, not the parts and depths. The picture follows
-      the simulation and holds no fact of its own. Drawn earlier, it
-      would draw from three places; drawn after the change flow, it
-      would only describe it.
-      Ideas: settled by the visual-comparison Agent Skill, checked
-      against the flow drawing and the layers document's picture so
-      it repeats neither.
-      Trigger: the Plan Step "Give Change one home" closed, before the
-      change flow starts.
 
 - [ ] Decide what becomes of the branch `experiment-simulation-auto`
       (2026-11-19, the reviewer).
