@@ -19,6 +19,9 @@ The decision first, since it was settled in talk. Opens Proposed. Context: 672 o
 **3. `docs: commit-messages manual draws a line at 70`**
 The manual's §2.1 holds the rule and its why: 50 the aim, 51 to 70 standing, past 70 the reviewer's decision. A Canonical Description changed, so the Change Walk runs on what stands on it: the commit-plan manual's §2.8, *Counting subjects*, and the two Agent Skill copies. What the walk finds, beyond commits 4 and 5, is said at this boundary.
 
+**3b. `docs: commit-plan manual counts against the aim`**
+Inserted at commit 3's boundary, from its Change Walk. The commit-plan manual's §2.8, *Counting subjects*, says a subject is counted against "the subject's 50-character limit"; after commit 3, 50 is the aim and 70 the line, so "limit" becomes "aim". The commit-plan Agent Skill's "its limit" reads true either way, and stays.
+
 **4. `fix(delivery): commit-messages asks past 70 only`**
 The Master Copy's subject line in *Format*: aim for 50, ask only past 70. The Foundation Check reads the manual's new §2.1 beside it.
 
