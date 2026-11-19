@@ -2,9 +2,11 @@
 
 ## Summary — the state after all commits
 
-A commit subject still aims at 50 characters, and is still counted by script when it is written. What changes is what a miss costs. A subject of 51 to 70 characters stands, with no decision and no reword. Past 70, the reviewer decides whether it is rewritten. The 70 has a reason: GitHub cuts a subject past 72, and an 8-character hash with 70 fits an 80-column terminal.
+The writer of a commit message sees one number: 50. The commit-messages Agent Skill states only that, as before this plan. The 70 belongs to the checks, at rare points: a Plan Step's close and a session's end. There every subject is counted by script. One up to 70 characters passes. One past 70 is the reviewer's to keep or rewrite. The 70 has a reason: GitHub cuts a subject past 72, and an 8-character hash with 70 fits an 80-column terminal.
 
-ADR-0083 records the change, and supersedes ADR-0049's decision 4 in part: the 50 stays, and so does the counting when a plan writes a subject. The commit-messages manual's §2.1 holds the rule and its why. The commit-messages Agent Skill states it, in the Master Copy and in our copy.
+Nothing counts a single commit's subject when it is written. A commit plan still counts its own subjects once, when it is written (ADR-0049, decision 4). Whether single commits should be counted at writing is a trial: a TODO item counts each subject past 70 a check finds, and at the 5th, the reviewer decides to adopt counting, give it 5 more, or drop the question.
+
+ADR-0083 records the change, and supersedes ADR-0049's decision 4 in part. The commit-messages manual's §2.1 holds the rule and says who uses which number. The two close items, `PLAN.md`'s Plan Step Form and the CBC Run playbook's, check against 70.
 
 The Decisions Log also gains the entry this session's visual-comparison change missed: the reviewer renders, and the agent checks the syntax (`5b9f2cf`, `9b7b169`).
 
@@ -25,8 +27,28 @@ Inserted at commit 3's boundary, from its Change Walk. The commit-plan manual's 
 **4. `fix(delivery): commit-messages asks past 70 only`**
 The Master Copy's subject line in *Format*: aim for 50, ask only past 70. The Foundation Check reads the manual's new §2.1 beside it.
 
-**5. `chore(agent): commit-messages follows delivery`**
-Our copy takes commit 4's change, and the Decisions Log gains its entry: the limit's line, pointing at ADR-0083. The agent's memory note on measuring subjects is changed with it, outside git: 50 the aim, 70 the line.
+**Revised at commit 4's boundary.** The reviewer: the writer must see only 50; the 70 is for the checks, at rare points, never for whoever writes a message. And no counting at every commit: a trial decides it. So commit 4 was wrong, and its 70 and its counting sentence come out again in 4d. Commits 4b to 4g are inserted; commit 5 is rewritten.
+
+**4b. `docs(adr): 0083 moves the 70 to the checks`**
+ADR-0083, still Proposed, revised. The writer's Agent Skill states 50 only. The checks, at a Plan Step's close and a session's end, count every subject: up to 70 passes, past 70 the reviewer decides. Counting a single commit's subject at writing is not done, and its TODO item decides it; a plan's count stays. Options gain: 70 in the writer's Agent Skill, as commit 4 did, rejected; counting at every commit, rejected for now, on trial.
+
+**4c. `docs: commit-messages manual gives 70 to checks`**
+The manual's §2.1, rewritten from commit 3's paragraph: the writer aims at 50, the checks use 70, and where the checks run. Its Change Walk: the commit-plan manual's §2.8 says "aim" and counts a plan's subjects, still true; the two Agent Skill copies follow in 4d and 5.
+
+**4d. `fix(delivery): commit-messages states 50 only`**
+The Master Copy goes back to its text before commit 4: `≤50 chars`, with no 70 and no counting sentence. Its *Decisions* footer keeps an ADR-0083 line, for why no 70 is there. The Foundation Check reads 4c's §2.1 beside it.
+
+**4e. `docs: PLAN's close checks subjects against 70`**
+The Plan Step Form's close item, "Every commit on `<branch>` follows the commit-messages Agent Skill", gains the check: subjects counted by script, up to 70 passing, past 70 the reviewer's. Without it, the gate would fail every subject from 51 to 70. The Foundation Check reads the project-recording manual's part on the plan.
+
+**4f. `fix(delivery): playbook's close checks against 70`**
+The same change to the CBC Run playbook's close item, `delivery/fills/cbc-run-pure-playbook.md`, since it is shipped. Its own commit: `delivery/` and our records are kept apart.
+
+**4g. `docs: TODO weighs counting subjects at writing`**
+The trial. Context: nothing counts a single commit's subject when it is written; each subject past 70 a check finds counts here, fixed or kept, the count rewritten true at each find. Ideas: found fast, adopt counting at writing; unsure, give it 5 more; rare, and a reword cheaper than counting, drop the question. Trigger: the 5th found.
+
+**5. `chore(agent): log the subject's aim and its line`**
+Our copy's *Decisions* footer gains the same ADR-0083 line as 4d; its text needs nothing else, since it still says `≤50 chars`. The Decisions Log gains its entry, pointing at ADR-0083. The agent's memory note `measure-commit-subjects-by-script` is changed with it, outside git: its subject part goes, and "every count I state, by script" stays.
 
 **6. `chore(agent): log the reviewer rendering pictures`**
 The Decisions Log entry `9b7b169` lacked: the visual-comparison Agent Skill now asks the reviewer to render, and the agent to check the syntax. Why: the reviewer always looks at the render, and the renderer was refused here. Rejected: the agent rendering, with a permission rule for the renderer. Its own commit, since it is another decision.
@@ -39,10 +61,11 @@ Deletes this file. Its body says what diverged.
 
 ## Decisions taken inside this plan
 
-- **70, not 65 or 72.** 70 is your number. It sits below GitHub's cut at 72, and with a hash it fits an 80-column terminal.
+- **70, not 65 or 72.** 70 is the reviewer's number. It sits below GitHub's cut at 72, and with a hash it fits an 80-column terminal.
 - **A new ADR, not an edit to ADR-0049.** An accepted ADR's decision is never edited (`docs/adr/README.md`, its header comment).
 - **Commit 6 is in this plan, though it is another change.** It is the same record, the Decisions Log, found missing while this plan walked the records table. It could instead stand alone after the close.
 - **No CHANGELOG entry:** the commit-messages Agent Skill is not derived from the concept (`CHANGELOG.md`, its header comment).
 - **No glossary entry:** the rule needs no new Name. "The aim" and "the line" are plain English.
-- **Today's two subjects stand:** `5b9f2cf` at 59 and `9b7b169` at 55 pass the new rule. This plan's subjects all fit 50, measured by script: 46 to 49.
+- **Today's two subjects stand:** `5b9f2cf` at 59 and `9b7b169` at 55 pass the checks' 70. This plan's subjects all fit 50, measured by script when it was written and when it was revised.
+- **The session-end check goes in `CLAUDE.local.md`,** in its session-end list, outside git: that list is where the session's end is written. A Change Set's close gets no check of its own: its plan counts its subjects, and a session's end follows it.
 - **The devlog entry comes after the close,** as the session's last step, outside this plan.
