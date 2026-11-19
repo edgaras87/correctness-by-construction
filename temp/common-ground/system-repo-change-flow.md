@@ -55,7 +55,7 @@ Each drawing is checked against these.
                                                     ┊
                                                     ┊
                                                     │
-                                                    ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still the Reading's stop, c6,
+                                                    ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still the settled snapshot, c6,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
                                                     │         c7 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force: a record
                                                     │            │                                  of what came, before the take changes anything
@@ -101,7 +101,7 @@ Each drawing is checked against these.
 | c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | history between Reading 1's snapshots |
 | c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | Reading 1's stop |
 | no commit | | | 4 to 6. Read, List, Judge: the last take's clean copy compared with c6. 7. Act: c6 becomes the *settled snapshot*. 8. Deliver: the Update waits in `temp/` |
-| no commit | main | 9. the take checks, case 1: main is still the Reading's stop, c6, and the Version is still 1, the one the Update was built from (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *Before the take*). Its branch is cut from c6 | |
+| no commit | main | 9. the take checks, case 1: main is still the *settled snapshot*, c6, and the Version is still 1, the one the Update was built from (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *Before the take*). Its branch is cut from c6 | |
 | c7 | the take's branch | the Update, as it arrived, committed in `temp/`, not yet in force | |
 | c8 | the take's branch | the new Adapted Case for taking, at Version 2, put in first; then the files are checked against the Update Note, with no commit | |
 | c9 | the take's branch | every Copy taken whole, at Version 2; every Record cleared | the clean copy: the next Reading's older snapshot, checked first against Version 2 |
@@ -285,8 +285,8 @@ Key: as in picture 1.
  8. Deliver, once work resumes: the Update          ┊
  waits in temp/, built from Version 1               ┊
                                                     │
-                                                    ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still c1, the commit the Update
-                                                    │            │                                  Note names, and the Version is still 1, the one the Update was built from
+                                                    ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still c1, the settled snapshot,
+                                                    │            │                                  and the Version is still 1, the one the Update was built from
                                                     │         c2 ●  the Update, as it arrived ◀──── the take's commits, in the order of picture 1's c7 to c14
                                                     │            │                            ◀──── c3 to c8, not drawn
                                                     │         c9 ●  the gate closes           ◀──── the take's gate decides each Change put back, and closes

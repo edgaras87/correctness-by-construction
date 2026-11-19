@@ -186,7 +186,7 @@
       window before it delivers a System Kit Update, and what the
       check looks at (2026-11-13, the reviewer).
       Context: the Maintainer Repo may compare the System Repo's main
-      with the Reading's stop before delivery, a may, not a must
+      with the settled snapshot before delivery, a may, not a must
       (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *A check
       before delivery*). Staging waits for the human's word when
       work is under way (§7, step 2, *Before staging*). A Plan Step

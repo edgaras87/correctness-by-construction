@@ -244,7 +244,7 @@ Four steps:
 
   A Plan Step open in the System Repo changes no case: main stands at the last gate, so the look finds its case by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate (§7, step 2, *Before staging*).
 
-  **No state kept.** d keeps no state of its own: whether a System Repo has work comes from its main and the last Reading's stop, never from a line someone must keep true.
+  **No state kept.** d keeps no state of its own: whether a System Repo has work comes from its main and the *settled snapshot*, never from a line someone must keep true.
 
   **Cleaned history.** If a stretch's history is cleaned before main moves, the Records are unharmed: they are in the Copies, not in the commits.
 - **Adapted Case:**
@@ -506,7 +506,7 @@ Two steps:
 
   **What it is.** An Update is two things: every Copy, whole, at the new Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
   - the new Version;
-  - the Version it was built from, and the System Repo's commit the Reading stopped at. The take checks both before anything moves (§8, step 1). The Update Note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
+  - the Version it was built from, and the System Repo's *settled snapshot* it was built against, whether a Reading ran or not. The take checks both before anything moves (§8, step 1). The Update Note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
   - what changed since the System Repo's Version: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a file that is gone cannot say so itself;
   - the why of each System Kit change since then, whatever its source: the Reading of this System Repo or of another, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo; a change that comes from a lesson for the idea above quotes the lesson as its why. With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - the verdicts that go down, from this System Repo's own Reading only, each naming the System Repo's own Copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (§8, step 1);
@@ -589,17 +589,17 @@ Two steps:
   - i lets the Changes put back reach main with no gate. Every Change is decided at a gate (§3, step 2), the take's among them.
 
   **Before the take.** The opening order is fixed: reading back, judging, then the Update. An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old Copies first; the human may instead drop or restart it, when the Update changes a rule it rests on. The take checks first, from the Update Note, what the System Repo itself can see:
-  - case 1, its main is still the Reading's stop, and its Version is the one the Update was built from: the Update is taken;
+  - case 1, its main is still the *settled snapshot* the Update Note names, and its Version is the one the Update was built from: the Update is taken;
   - case 2, anything else: there is no take, and the System Repo says so. The human has it looked at, and the look finds its case, C or D when main has moved (§4, step 1, *A look at main*). Its check 3 then finds a new Update due, made against the System Kit as it is now. It replaces the waiting one and carries its verdicts not yet sent (§7, step 1).
 
-  **A check before delivery.** The Maintainer Repo may compare the System Repo's main with the stop before delivery too, to save a delivery bound to fail. A System Kit moved since the Update was made is no reason to refuse it: the Update is correct, if not the latest, and the next brings the rest.
+  **A check before delivery.** The Maintainer Repo may compare the System Repo's main with the *settled snapshot* before delivery too, to save a delivery bound to fail. A System Kit moved since the Update was made is no reason to refuse it: the Update is correct, if not the latest, and the next brings the rest.
 
   **Old Records.** A gate may have fixed, merged or dropped Records the Update answered. These show in the next Reading's comparison as Changes with their Records, and are judged like any. Records from before the *settled snapshot* still in the Copies are cleared at the take, and what is still needed comes back with a fresh Record, judged in the next Reading.
 
-  **At the take, in order.** Once the check finds case 1, the take cuts a branch from main, the Reading's stop. Its first commit is the Update as it arrived, in `temp/`, not yet in force: a record of what came, before the take changes anything. Each item below is then a commit of its own, but item 2, a check. Items 4 and 5 make one commit per Change put back and per verdict acted on, zero or more. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§4, step 1, *Where a stretch ends*).
+  **At the take, in order.** Once the check finds case 1, the take cuts a branch from main, the *settled snapshot*. Its first commit is the Update as it arrived, in `temp/`, not yet in force: a record of what came, before the take changes anything. Each item below is then a commit of its own, but item 2, a check. Items 4 and 5 make one commit per Change put back and per verdict acted on, zero or more. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§4, step 1, *Where a stretch ends*).
   1. the Adapted Case for taking an Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
-  3. every Copy is taken whole, at the new Version; each path gone is removed, and each renamed is moved. Every Record is cleared: the Reading reached main, so each was read and judged;
+  3. every Copy is taken whole, at the new Version; each path gone is removed, and each renamed is moved. Every Record is cleared: main is the *settled snapshot*, so each was read and judged;
   4. what the System Repo still needs is re-applied, each with a fresh Record written against the new Version: what did not fit, what it keeps, which work found it, and its proposal. An old Record's what-happened may be carried in a line. Only a Change with evidence is re-applied: its old one, or a clash with the new Version. A System Kit change on a part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
   5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its Record saying which. One naming a part that changed after its commit is checked, with an Attention Note when it no longer applies. A question is answered as a Record or an Attention Note;
   6. the new Version is recorded, with the commit that holds it: item 3's, the clean copy, every Copy at the new Version and nothing put back yet. So the next Update finds its base;
@@ -611,7 +611,7 @@ Two steps:
   **What a Record stands against.** Every Record stands against the last Version taken, or birth's, and every Record goes at a take, rewritten when its difference stays. This is confirmed at the first Update to reach a System Repo whose Copies have Records.
 - **Adapted Case:**
   - the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says:
-    - check first that main is still the Reading's stop and its Version is the Update's base, and take nothing when either differs, saying so;
+    - check first that main is still the *settled snapshot* and its Version is the Update's base, and take nothing when either differs, saying so;
     - take only at a Plan Step's opening, or postpone with why;
     - take on a branch of its own, in the order above, one commit per item, the gate last; main moves by fast-forward at the gate's close;
     - re-apply only with evidence, each with a fresh Record;
