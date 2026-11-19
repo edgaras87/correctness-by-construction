@@ -186,27 +186,31 @@ The rules of Change and Read come from one case, one Adapted Case changed in any
 
 1. Did the System Kit Copy already say this? Then it is a misreading (Failure Case 7). Nothing changes but, perhaps, the copy's wording.
 2. Is it specific to that System Repo's problem? Then nothing changes here; it stays in that System Repo.
-3. Does the project-agnostic understanding already hold it? Then the Adapted Case it came from lost it in narrowing, and is fixed from the project-agnostic understanding. The Maintainer Repo's own Adapted Case of the same idea is checked for the same loss.
-4. Is it true for every repo? Then it is a project-agnostic lesson, below.
+3. Does the idea above already hold it, the Work Domain Idea above the Adapted Case, or the Backbone Idea above that? Then the Adapted Case it came from lost it in narrowing, and is fixed from the idea above. When only the Backbone Idea holds it, the Work Domain Idea lost it too, and is fixed first. Which other texts are checked for the same loss is open.
+4. How high is it true? A lesson goes as high as it is true (`temp/common-ground/knowledge-layers-general.md` §3.1, *How the layers fill*):
+   - 4a. Is it still true naming no Adapted Case? Then it is a lesson for its Work Domain Idea, below.
+   - 4b. Is it still true naming no Work Domain? Then it is a lesson for its Backbone Idea, below.
 
-If none holds, it is a lesson for System Repos only: the Adapted Case it came from gains it, and the project-agnostic understanding stays as it is. A lesson found in the Maintainer Repo's own work takes questions 3 and 4 the same way.
+   Which of 4a and 4b is asked first is open.
+
+If none holds, it is a lesson for its Adapted Case: the Adapted Case it came from gains it, and the idea above stays as it is. A lesson found in the Maintainer Repo's own work takes questions 3 and 4 the same way.
 
 ##### Act on the verdicts
 
-**A project-agnostic lesson.** The text above an Adapted Case, a Work Domain Idea or a Backbone Idea, is bound to no project, so a lesson enters it if it holds for any project, whatever an Adapted Case says.
+**A lesson for the idea above.** A lesson enters the idea above an Adapted Case at the layer where it is still true, whatever an Adapted Case says: its Work Domain Idea, if it holds naming no Adapted Case; its Backbone Idea, if it holds naming no Work Domain.
 
-- It is reworded to name no project, the agent drafting and the human deciding. Its first wording is kept beside it, since the rewording is the agent's reading.
-- Every other Adapted Case built on that idea is surveyed; the one the lesson came from is not. Each answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto. If every answer conflicts, the lesson may not be project-agnostic.
-- The survey is always run when the lesson changes or contradicts project-agnostic text that already exists, and at the human's choice when the lesson is new.
-- The project-agnostic understanding then gains the lesson, or is fixed where it was wrong (Failure Case 11), and what the survey found must change, changes.
+- It is reworded to name no Adapted Case at layer 2, and no Work Domain at layer 1 (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, the arrow *lesson*), the agent drafting and the human deciding. Its first wording is kept beside it, since the rewording is the agent's reading.
+- Every other text built on that idea is surveyed; the one the lesson came from is not (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, the arrow *adapt*; §2.3, *The Adapted Case layer*). At layer 2, that is the other Adapted Cases of that Work Domain Idea; at layer 1, every Work Domain Idea on that Backbone Idea. Each answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto. If every answer conflicts, the lesson is not true that high.
+- The survey is always run when the lesson changes or contradicts text the idea above already holds, and at the human's choice when the lesson is new.
+- The idea above then gains the lesson, or is fixed where it was wrong (Failure Case 11), and what the survey found must change, changes.
 
 How each question is answered, and by whom, is open. So is a System Kit Copy Change that arrives without its why (Failure Case 22).
 
-**Narrowing, never shrinking.** The text above an Adapted Case changes only where it is wrong for every repo (Failure Case 11). A part that does not fit one sort of repo stays in it: the Adapted Case leaves the part out, and marks that it did, with why. The mark is written when the exclusion is decided, never listed ahead. So question 3 can tell a part lost in narrowing, with no mark, from one left out on purpose, with its mark. A change to a marked part reopens its why.
+**Narrowing, never shrinking.** An idea changes only where it is wrong for every text built on it (Failure Case 11). A part that does not fit one text built on it stays in the idea: that text leaves the part out, and marks that it did, with why. The mark is written when the exclusion is decided, never listed ahead. So question 3 can tell a part lost in narrowing, with no mark, from one left out on purpose, with its mark. A change to a marked part reopens its why.
 
 ##### Deliver
 
-**What an update sends.** A System Kit Update sends the System Kit's changes, each with its why. The project-agnostic understanding stays home, as at birth. A change that comes from a project-agnostic lesson quotes the lesson as its why.
+**What an update sends.** A System Kit Update sends the System Kit's changes, each with its why. The idea above stays home, as at birth. A change that comes from a lesson for the idea above quotes the lesson as its why.
 
 ##### Take
 
