@@ -65,21 +65,25 @@ Why they are so: (the Concept Deliverer's docs/conventions/visual-comparison/ §
    plugin and are out; a committed SVG renders but is not text anyone
    can read in a diff.
 
-5. **Render them where they will actually be read**, and judge
-   pass or fail per requirement with the reason. A verdict reached
-   by reasoning is a *prediction*; mark it as one until the render
-   confirms it.
+5. **The reviewer renders them where they will actually be read**,
+   and judges how each looks. The agent makes sure each candidate's
+   syntax is valid, and marks its own verdicts on the look as
+   predictions until the reviewer has seen them.
 
 6. **Decide, and record it** where the Entry File's records table
    puts a decision of its kind — the requirements, the candidates,
    and why each lost. Then delete the draft; it has served, and git
    history keeps it.
+   An outcome too small for an ADR is recorded in the body of the
+   commit that places the winner, and the draft goes in that commit.
+   The body names the commit that holds the draft
+   (`.claude/skills/commit-messages/SKILL.md`, *Rules*).
 
 ## 3. The comparison's checks
 
 - Every requirement is stated before any candidate is built.
-- Every candidate is built and rendered, including the ones
-  expected to lose.
+- Every candidate is built, its syntax checked, and rendered by the
+  reviewer, including the ones expected to lose.
 - Every verdict cites the requirement it turns on.
 - A verdict not yet rendered is marked as a prediction.
 - The outcome is recorded before the draft is deleted.
