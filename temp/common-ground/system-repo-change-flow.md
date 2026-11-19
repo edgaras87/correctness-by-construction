@@ -221,21 +221,19 @@ flowchart TD
   c2 -- "yes: case D, a Reading" --> D["read, list, judge, act (§4 to §6)"]
   C --> c3
   D --> c3{"Version behind?"}
-  c3 -- "yes: case B" --> make["once work resumes, make the Update (§7, step 1)"]
+  c3 -- "yes: case B, C2 or D2" --> make["once work resumes, make the Update (§7, step 1)"]
   c3 -- no --> v{"a verdict waiting?"}
-  v -- "yes: case B" --> make
-  v -- "no: case A" --> none(["the look ends"])
+  v -- "yes: case B, C2 or D2" --> make
+  v -- "no: case A, C1 or D1" --> none(["the look ends"])
   make --> ok{"clear to stage?"}
   ok -- "no: no word, or work under way" --> wait["say what was found; wait for the word"]
   ok -- yes --> stage["stage the Update in temp/ (§7, step 2)"]
   stage --> take(["the System Repo takes it (§8)"])
 ```
 
-**Open:** after case C or D, the look asks check 3, *Version behind?* and *a verdict waiting?*, so it also reaches case A or case B. Whether a look then ends in one case or in two is the simulation's to decide (§4, step 1, *A look at main*).
-
 ### A look's cases
 
-A look at main makes three checks and ends in one of cases A to D (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into what came before, the case, and an example of what follows.
+A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into what came before, the case, and an example of what follows.
 
 Key: as in picture 1.
 

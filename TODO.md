@@ -202,14 +202,15 @@
       simulation as it stands; the question is then drawn as an After
       item there.
 
-- [ ] Draw a look's cases B to D in `temp/common-ground/system-repo-change-flow.md`,
+- [ ] Draw a look's cases B to D2 in `temp/common-ground/system-repo-change-flow.md`,
       one at a time, as case A is drawn (2026-11-13, the reviewer).
-      Context: a look at main ends in one of cases A to D
+      Context: a look at main ends in one of six cases, A to D2
       (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at
       main*). Each case is a picture of commits in the Now pictures'
       style, split by three lines into before, the case, and an
       example of what follows. The chart *A look, to the Update
-      staged* shows how the four cases come about.
+      staged* shows how the six cases come about. The case pictures
+      replace pictures 1 and 2 (2026-11-20, the reviewer).
       Trigger: due now.
 
 - [ ] Sweep the drafts for words that read as walking commits, where

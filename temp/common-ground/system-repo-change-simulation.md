@@ -233,14 +233,16 @@ Four steps:
   2. **Changes:** the Copies and the Attention Notes' place, compared between the older snapshot and main (step 2, step 3);
   3. **Update due:** the System Repo's Version against the newest, or a verdict that waits to go down (§7, step 1, *When one is due*).
 
-  It ends in one of four cases:
+  It ends in one of six cases. When main moved, check 3 is asked last: after check 2 for C, and after the Reading is acted on for D, since a verdict to send down exists only once the Changes are judged. C and D are each split by its answer: 1, nothing follows; 2, an Update follows.
 
   | Case | Main moved | What the look finds | What follows |
   |---|---|---|---|
   | A | no | the Version is the newest, and no verdict waits | nothing. Copies that differ from the System Kit are the System Repo's kept Changes, judged before the *settled snapshot* moved to main |
   | B | no | the Version is behind, or a verdict waits | an Update is made and delivered (§7) |
-  | C | yes | no Copy and no Attention Note changed between the two snapshots | the *settled snapshot* moves to main; nothing is judged; then check 3 again |
-  | D | yes | Changes or Attention Notes between the two snapshots | the full Reading: listed, judged and acted on, then check 3 again |
+  | C1 | yes | no Copy and no Attention Note changed between the two snapshots; then nothing due | the *settled snapshot* moves to main; nothing is judged; nothing else follows |
+  | C2 | yes | no Copy and no Attention Note changed between the two snapshots; then an Update due | the *settled snapshot* moves to main; nothing is judged; an Update is made and delivered (§7) |
+  | D1 | yes | Changes or Attention Notes between the two snapshots; after acting, nothing due | the full Reading: listed, judged and acted on; no Update |
+  | D2 | yes | Changes or Attention Notes between the two snapshots; after acting, an Update due | the full Reading: listed, judged and acted on; an Update is made and delivered (§7) |
 
   A Plan Step open in the System Repo changes no case: main stands at the last gate, so the look finds its case by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate (§7, step 2, *Before staging*).
 
@@ -251,7 +253,7 @@ Four steps:
   - the System Repo's gate list: main moves only at a gate's close. It is there today;
   - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read, or asks what to read. For this step it says:
     - compare the named System Repo's main with where its last Reading stopped, or every System Repo's when asked;
-    - make the look's three checks, and end in one of cases A to D;
+    - make the look's three checks, and end in one of cases A, B, C1, C2, D1 and D2;
     - a look past main moves nothing, and gives only Attention Notes.
 - **Open:** a System Repo nobody names is not read until its work resumes. Its trigger: the first lesson found late because a System Repo went unread.
 - **Today:**
