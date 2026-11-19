@@ -167,10 +167,10 @@ Gate:
       its commit body says where: already in the simulation, moved
       there, kept elsewhere as not a fact of Change, or dropped as
       superseded by the simulation (2026-11-19).
-- [ ] The layers document's §3.2 states only what is its own, where
+- [x] The layers document's §3.2 states only what is its own, where
       each part and depth sits in the picture and the arrows it
       travels, and points at the simulation for the six parts and the
-      depths.
+      depths (2026-11-19).
 - [x] The movements between the repos are written once, and the
       other place points there (2026-11-19).
 - [ ] Every Fact Reference to a section this Plan Step moved,

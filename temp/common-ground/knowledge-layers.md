@@ -166,30 +166,30 @@ How knowledge enters the layers and moves between them is the general document's
 
 The simulation follows one System Repo's Change through six parts (`temp/common-ground/system-repo-change-simulation.md` §1, *How it is worked*). Each part sits at a layer, or on an arrow:
 
-| Part | Who | Where in the picture |
-|---|---|---|
-| Change | System Repo | layer 4, in a Copy |
-| Read | Maintainer Repo | the arrow *Change, read back* |
-| Judge | Maintainer Repo | layer 3: which layer the Change holds for |
-| Act on the verdicts | Maintainer Repo | the layer the verdict names; the arrows *lesson* and *adapt* |
-| Deliver | Maintainer Repo | the arrow *Update* |
-| Take | System Repo | layer 4, its Copies |
+| Part | Where in the picture |
+|---|---|
+| Change | layer 4, in a Copy |
+| Read | the arrow *Change, read back* |
+| Judge | layer 3: which layer the Change holds for |
+| Act on the verdicts | the layer the verdict names; the arrows *lesson* and *adapt* |
+| Deliver | the arrow *Update* |
+| Take | layer 4, its Copies |
 
 So the six parts are one movement: up from layer 4, as high as the Change holds, and back down.
 
-How deep a Change goes is how high it goes: each of the simulation's depths names the highest layer it changes (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). The idea above an Adapted Case is its Work Domain Idea, layer 2, or the Backbone Idea above that, layer 1:
+Each of the simulation's depths names the highest layer a Change reaches (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). The arrows each travels:
 
-| Depth | Highest layer it changes | Arrows it travels |
-|---|---|---|
-| a. it stays in the System Repo | layer 4 | *Change, read back*; nothing comes down |
-| b. the System Kit's Adapted Case changes | layer 3 | *Change, read back*; *Update* |
-| c, at layer 2. the idea above changes: its Work Domain Idea | layer 2 | *Change, read back*; *lesson*; *adapt*, to every text built on that idea, the Maintainer Repo's own when they stand on it; *Update* |
-| c, at layer 1. the idea above changes: its Backbone Idea | layer 1 | *Change, read back*; *lesson*, twice; *adapt*, to every text built on that idea, the Maintainer Repo's own when they stand on it; *Update* |
-| d. the idea above already holds it | layer 3, or layer 2, fixed from the layer above | *Change, read back*; *adapt*; *Update* |
-| e. it asks to narrow the idea above | layer 3, or layer 2, marked; the idea that does not fit stays | *Change, read back*; *Update* |
-| f. several Adapted Cases need it, but not all | layer 3, in each Adapted Case; no shared home | *Change, read back*; *Update* |
+| Depth | Arrows it travels |
+|---|---|
+| a. it stays in the System Repo | *Change, read back*; nothing comes down |
+| b. the System Kit's Adapted Case changes | *Change, read back*; *Update* |
+| c, at layer 2. the idea above changes: its Work Domain Idea | *Change, read back*; *lesson*; *adapt*, to every text built on that idea, the Maintainer Repo's own when they stand on it; *Update* |
+| c, at layer 1. the idea above changes: its Backbone Idea | *Change, read back*; *lesson*, twice; *adapt*, to every text built on that idea, the Maintainer Repo's own when they stand on it; *Update* |
+| d. the idea above already holds it | *Change, read back*; *adapt*; *Update* |
+| e. it asks to narrow the idea above | *Change, read back*; *Update* |
+| f. several Adapted Cases need it, but not all | *Change, read back*; *Update* |
 
-The Work Domain layer fills part of depth f's gap: text shared by every Adapted Case of one Work Domain has a layer, and is depth c, at layer 2. Text shared by several Adapted Cases of one Work Domain, but not all, or across Work Domains, but not all, still has none (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1). The second is met when `concept/` is labelled general or backend, for the concept's split (`TODO.md`, the item that splits the concept).
+Depth f's gap, text shared by several Adapted Cases but not all, is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*, its row f). Its second case, across Work Domains, is met when `concept/` is labelled general or backend, for the concept's split (`TODO.md`, the item that splits the concept).
 
 ### 3.3 The Maintainer Repo's lessons
 
