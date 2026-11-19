@@ -495,19 +495,50 @@
       Trigger: the close of "Find how what we know stays true", when
       its lessons are written back.
 
-- [ ] Read CBC Run 6, `checkout`, by the exchange-read Agent Skill (2026-10-29, the
-      reviewer).
-      Context: CBC Run 6 ran on full auto through its Release, Step 14,
-      and closed a Step 15 after it: 254 commits, 7 Invariant Slices, tag
-      `v0.1.0`. The Plan Step of its CBC Run Birth stopped before its close, so its
-      CBC Run Reading waits.
+- [ ] Read and judge CBC Runs 4, 5 and 6: each read apart, their
+      findings judged together, kept for the rewrite (2026-11-19,
+      the reviewer; from three items of 2026-10-15 to 2026-10-31).
+      Context: CBC Run 4 is unread, born by hand from CBC Run 3's kit
+      at `dac4dd1`, twelve lines under *To the deliverer*. CBC Run 5
+      was read on 2026-10-22, `temp/reading-run-5-2026-10-22.md`, its
+      judging half done. CBC Run 6 is unread: 233 commits on main, 254
+      across its branches, tag `v0.1.0`. The kit is updated during
+      the rewrite, not now: no old text changed, no update sent
+      (ADR-0082).
       Ideas:
-      - whether CBC Run 5's and CBC Run 6's Entry Files added the
-        ground-must-be-up rule unasked: the shipped Entry File teaches
-        it, and no Agent Skill prompts it (ADR-0013).
-      Trigger: the refinement's close, or the reviewer's word.
-      See: devlog 2026-10-29, morning; `temp/run-6-handoff/`, the CBC
-      Run Hand-off the reading starts from.
+      - CBC Run 6 first, its folder open; then CBC Run 4, once its
+        folder is unlocked (the item that unlocks the folders);
+      - read by needs, not by diff: how the CBC Run went and what it
+        needed, since the refinement and the rewrite change the
+        texts its diff touched; each need ends met, naming where;
+        missing or wrong; or no longer applies, saying why the need
+        is gone;
+      - CBC Run 5's Reading re-judged by needs, not read again; its
+        open DECISION-2 and DECISION-5, and WORK-1 and WORK-3 to
+        WORK-10, among the findings;
+      - judged by the simulation's Judge, by meaning: each finding's
+        depth, kept where the rewrite finds it;
+      - old words read through the refinement's Names table, at
+        `55e2bd0^:temp/refinement-2026-10-18.md`;
+      - CBC Run 4's own questions: CBC Run 3's and CBC Run 4's
+        `RETRO.md` against the retrospective Agent Skill's form
+        (ADR-0054); `temp/RUN-4.md`, the hand-off that started it,
+        read and then deleted; how it closed its Plan Step branches;
+        whether its birth fired three triggers, shipping `temp/`, the
+        ground-must-be-up rule, the cbc-bootstrap Agent Skill's
+        hygiene; its "rules in force now" list on an append-only
+        Decisions Log; the cbc-framing Agent Skill's README status
+        line; whether it confirmed its Plan Steps once framed;
+      - CBC Run 6's: whether CBC Run 5's and CBC Run 6's Entry Files
+        added the ground-must-be-up rule unasked (ADR-0013);
+        `temp/run-6-handoff/`, the hand-off its reading starts from;
+      - a later update to a CBC Run born before names the renames in
+        its Delivery Note, once.
+      Trigger: where Change goes decided, the Change idea's first
+      step, so the findings are judged by rules standing in one place.
+      See: ADR-0082; devlog 2026-10-29, morning; `f097695`;
+      `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's reading: two moves
+      from layer 6*, and §30, *Reading a CBC Run born before*.
 
 - [ ] Unlock the folders locked for CBC Run 6 (2026-10-29, the
       reviewer).
@@ -902,41 +933,6 @@
       Trigger: due — the pair it waited on was made on 2026-09-30.
       See: devlog 2026-09-30, Local Maps; `cb41ade`.
 
-- [ ] Read CBC Run 4 against `dac4dd1`, the CBC Run 3 commit it was born
-      from (2026-10-15, the reviewer).
-      Context: CBC Run 4, `safe-reservation-2`, was born 2026-10-15 by
-      hand from CBC Run 3's Agent Skills, Agent Rules and Output Shapes at `dac4dd1` and
-      our Container Group at `35edd3f`, and ran on full auto through
-      Release. Reading it shows what it changed on top of
-      `dac4dd1`, what of CBC Run 3's asks it answered, what still has
-      to be checked, and what is new. It left twelve lines under
-      *To the deliverer*.
-      Ideas:
-      - CBC Run 3's and CBC Run 4's `RETRO.md` read against the
-        retrospective Agent Skill's form, for an Output Shape (ADR-0054).
-      - `temp/RUN-4.md`, CBC Run 3's CBC Run Hand-off that started CBC Run 4, never
-        committed there: what CBC Run 4 was told, read for lessons, and
-        deleted once read.
-      - how CBC Run 4 closed its Plan Step branches (`run4/step-9` to 11):
-        the playbook still ticks "reached main by fast-forward" in
-        the Plan Step Gate, which ours dropped (`49d06e6`).
-      - whether CBC Run 4's CBC Run Birth fired three triggers: "before the next
-        birth", shipping `temp/`; "the next birth's Step 3 close",
-        the ground-must-be-up rule; "a fourth CBC Run deriving
-        `.gitignore` by hand", the cbc-bootstrap Agent Skill's hygiene.
-      - the retrospective Agent Skill puts a "rules in force now" list on top of
-        a Decisions Log kept append-only; CBC Run 3 and CBC Run 4 both did:
-        which side changes.
-      - the cbc-framing Agent Skill writes a status line into the README, where
-        the README's form, its header comment, keeps changing status
-        in PLAN: how that line lived in CBC Run 4.
-      - whether CBC Run 4 confirmed its plan's Plan Steps once framed, as project-recording says a CBC Run does
-        (`docs/conventions/project-recording/` §9.4, *How a playbook is written*).
-        The playbook's Step 2 now asks part of it.
-      Trigger: the refinement of this repo closes; in a new session.
-      See: `f097695`, the kickoff and the message it took;
-      `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's reading: two moves from layer 6*.
-
 - [ ] Decide whether our own forms become Output Shapes, and whether an
       Output Shape's part can be optional (2026-10-17, the reviewer).
       Context: an Output Shape is read at a Plan Step Gate only, so the work
@@ -1043,37 +1039,6 @@
                and joins them.
       See: `TODO-CONVERSATION-MEMORY.md` §27, *Shared names of
       conventions and approaches*.
-
-- [ ] Read a CBC Run born before the refinement by its needs, not its
-      diff (2026-10-31, the reviewer).
-      Context: a CBC Run Reading takes three things from a CBC Run: the
-      diff of its copies, its Decisions Log and its CBC Run Asks
-      (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*). The
-      refinement renames the delivered text to Glossary Names and may
-      change how the parts are put together, so a diff by CBC Runs
-      4, 5 and 6 shows edits to text we no longer hold, and cannot be
-      taken as it stands. Their Decisions Log entries and CBC Run Asks
-      still say what each needed and what went wrong without it. The
-      readings come after the refinement, which closed at `55e2bd0`, so
-      an item taken lands in text the refinement no longer changes.
-      Ideas:
-      - read how the CBC Run went and what it did, and ask whether
-        the new structure meets each need, defines it wrongly, or
-        misses it.
-      - each item ends one of three ways: met, naming where; still
-        missing or wrong, becoming work; no longer applies, saying
-        why the need is gone, not only the text it touched.
-      - the old words a CBC Run wrote are read through the
-        refinement's Names table, under DECISION-19, at the commit
-        that last holds `temp/refinement-2026-10-18.md`, `55e2bd0^`; most Names
-        hold their old word, "slice" in Invariant Slice.
-      - a delivery to a CBC Run born before names the renames in its
-        Delivery Note, once, since its records keep the old words.
-      Trigger: the CBC Run Reading of CBC Run 4 opens. If its diff proves
-               still usable as it stands, the item closes with nothing
-               changed.
-      See: `TODO-CONVERSATION-MEMORY.md` §30, *Reading a CBC Run
-      born before*.
 
 - [ ] Write an Agent Rule that writes an Agent Skill or Agent Rule from its convention
       (2026-10-17, the reviewer).
