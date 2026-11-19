@@ -1265,3 +1265,17 @@
   should.
   Why: ADR-0083.
   Rejected: see ADR-0083.
+
+- 2026-11-19 The visual-comparison Agent Skill asks the reviewer to
+  render the candidates and judge how they look; the agent checks
+  their syntax, and marks its verdicts on the look as predictions.
+  An outcome too small for an ADR is recorded in the body of the
+  commit that places the winner, and the draft goes in that commit
+  (`5b9f2cf`, `9b7b169`).
+  Why: the reviewer always looks at the render and suggests
+  changes, and the Mermaid renderer was refused here: it runs Chrome
+  with its sandbox off. The comparison's draft for Change whole
+  waited for a devlog line, though the placing commit's body was
+  already its record, as the commit-messages Agent Skill has it.
+  Rejected: the agent rendering, with a permission rule for the
+  renderer; a TODO item for step 6, when one line settled it.
