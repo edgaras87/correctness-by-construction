@@ -3,7 +3,9 @@
 Date: 2026-10-09
 Status: Accepted (2026-10-09, at the set's records commit; opened
 Proposed under the commit plan for commit rules and revised once,
-when the reviewer kept the past-tense ban at commit 5)
+when the reviewer kept the past-tense ban at commit 5); decision 4
+superseded in part by ADR-0083 (2026-11-19): 50 stays the writer's
+aim, and a plan's count stays; the checks pass a subject up to 70
 
 ## Context
 

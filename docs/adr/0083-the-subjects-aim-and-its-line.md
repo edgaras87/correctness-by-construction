@@ -1,9 +1,10 @@
 # 0083. The subject's aim, 50, and its line, 70
 
 Date: 2026-11-19
-Status: Proposed, opened under the commit plan for the subject limit;
+Status: Accepted (2026-11-19, the reviewer, at the final records
+commit of the commit plan for the subject limit; opened Proposed, and
 revised at its commit 4, the 70 moved out of the writer's Agent Skill
-into the checks
+into the checks)
 
 ## Context
 
