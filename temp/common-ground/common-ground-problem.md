@@ -153,15 +153,7 @@ Agent work and CBC system design are each held as Adapted Cases. How each splits
 
 #### What passes between the repos
 
-So far, three movements:
-
-| Movement | From, to | What passes |
-|---|---|---|
-| birth | the Maintainer Repo to a new System Repo | System Kit Copies, taken at one System Kit Version |
-| reading back | a System Repo to the Maintainer Repo | what the System Repo changed in its System Kit Copies, and why |
-| update | the Maintainer Repo to a System Repo, when work resumes in it | the System Kit's changes since its copies were taken |
-
-Each sort of repo takes a change from the other by its own Adapted Case of one idea, how a repo takes a change from another. The Maintainer Repo's is its judging (below, *A System Repo's change*). The System Repos' is part of the System Kit: each System Repo uses its copy and may change it, and the Maintainer Repo judges those System Kit Copy Changes like any other.
+What passes between the Maintainer Repo and the System Repos is the layers model's (`temp/common-ground/knowledge-layers.md` §3.1, *The arrows*).
 
 How a System Kit Copy Change read back travels, in six parts, is below (*A System Repo's change*).
 

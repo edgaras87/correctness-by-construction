@@ -171,8 +171,8 @@ Gate:
       each part and depth sits in the picture and the arrows it
       travels, and points at the simulation for the six parts and the
       depths.
-- [ ] The movements between the repos are written once, and the
-      other place points there.
+- [x] The movements between the repos are written once, and the
+      other place points there (2026-11-19).
 - [ ] Every Fact Reference to a section this Plan Step moved,
       retitled or cut resolves, across Living Text.
 
