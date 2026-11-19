@@ -106,7 +106,7 @@ Worked in every repo. The Maintainer Repo works its Work Domain Ideas by its own
 | Work Domain Idea | Adapted from | What it adds | Home |
 |---|---|---|---|
 | The layers of knowledge, in the Maintainer Repo | The layers of knowledge | where each layer is kept; how knowledge travels between the repos | this document |
-| How an agent works, keeping knowledge | How an agent works | open (§4, question 11) | planned (`TODO.md`, the item that rewrites the Agent Model) |
+| How an agent works, keeping knowledge | How an agent works | open (§4, question 10) | planned (`TODO.md`, the item that rewrites the Agent Model) |
 
 #### 2.2.2 Designing a backend by CBC
 
@@ -114,7 +114,7 @@ The System Repos' problem, a Work Domain worked in them alone. The Maintainer Re
 
 | Work Domain Idea | Adapted from | What it adds | Home |
 |---|---|---|---|
-| How an agent works, designing a backend | How an agent works | open (§4, question 11) | planned (`TODO.md`, the item that rewrites the Agent Model) |
+| How an agent works, designing a backend | How an agent works | open (§4, question 10) | planned (`TODO.md`, the item that rewrites the Agent Model) |
 | CBC design for backends | CBC design | backends as the kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 
 ### 2.3 The Adapted Case layer
@@ -177,18 +177,19 @@ The simulation follows one System Repo's Change through six parts (`temp/common-
 
 So the six parts are one movement: up from layer 4, as high as the Change holds, and back down.
 
-The simulation's depths say how high a Change goes (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). They name the project-agnostic text, which here is layer 2 or layer 1:
+How deep a Change goes is how high it goes: each of the simulation's depths names the highest layer it changes (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). The idea above an Adapted Case is its Work Domain Idea, layer 2, or the Backbone Idea above that, layer 1:
 
 | Depth | Highest layer it changes | Arrows it travels |
 |---|---|---|
 | a. it stays in the System Repo | layer 4 | *Change, read back*; nothing comes down |
 | b. the System Kit's Adapted Case changes | layer 3 | *Change, read back*; *Update* |
-| c. the project-agnostic text changes | layer 2 or layer 1 | *Change, read back*; *lesson*; *adapt*, to every text built on that idea, the Maintainer Repo's own among them; *Update* |
-| d. the project-agnostic text already holds it | layer 3, fixed from the layer above | *Change, read back*; *adapt*; *Update* |
-| e. it asks to narrow the project-agnostic text | layer 3, marked; the layer above stays | *Change, read back*; *Update* |
-| f. several Adapted Cases need it, but not all | layer 2, if they share a Work Domain | *Change, read back*; *lesson*; *adapt*; *Update* |
+| c, at layer 2. the idea above changes: its Work Domain Idea | layer 2 | *Change, read back*; *lesson*; *adapt*, to every text built on that idea, the Maintainer Repo's own when they stand on it; *Update* |
+| c, at layer 1. the idea above changes: its Backbone Idea | layer 1 | *Change, read back*; *lesson*, twice; *adapt*, to every text built on that idea, the Maintainer Repo's own when they stand on it; *Update* |
+| d. the idea above already holds it | layer 3, or layer 2, fixed from the layer above | *Change, read back*; *adapt*; *Update* |
+| e. it asks to narrow the idea above | layer 3, or layer 2, marked; the idea that does not fit stays | *Change, read back*; *Update* |
+| f. several Adapted Cases need it, but not all | layer 3, in each Adapted Case; no shared home | *Change, read back*; *Update* |
 
-The Work Domain layer fills part of depth f's gap: text shared by the Adapted Cases of one Work Domain has a layer. Text shared across Work Domains, but not by all, still has none.
+The Work Domain layer fills part of depth f's gap: text shared by every Adapted Case of one Work Domain has a layer, and is depth c, at layer 2. Text shared by several Adapted Cases of one Work Domain, but not all, or across Work Domains, but not all, still has none (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1). The second is met when the open Plan Step's stage 2 labels which parts of `concept/` are which.
 
 ### 3.3 The Maintainer Repo's lessons
 
@@ -203,14 +204,13 @@ None is answered by the text above. Each is answered when work reaches it: its a
 1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, built by the stopped Plan Step *Rebuild in cbc-concept*, is close to a second Maintainer Repo. §2.3.1 says what a Maintainer Kit would be made from.
 2. **What layer 4 holds:** the general document's question (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6). Here it is met at a System Repo's design of its system and its own Knowledge on Trial.
 3. **A name for the movement:** what runs from a Change to the take of the next Update, as one thing (§3.2), so the simulation can name it.
-4. **The depths and the layers:** is how deep a Change goes the same as how high it goes (§3.2)? Text shared across Work Domains, but not by all, is the general document's question (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1). Here it is met when the open Plan Step's stage 2 labels which parts of `concept/` are which.
-5. **Where Judge sits:** §3.2 puts it at layer 3, since a Change is judged against the Adapted Case its Copy came from. The sources say only that it runs in the Maintainer Repo.
-6. **Depth d and the layer above:** if several Adapted Cases lost the same part, the layer above may be reworded clearer (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). §3.2's row leaves it out.
-7. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
-8. **What the System Kit holds:** layer 3 only, or the System Repos' Work Domain Ideas too. CBC system design adapted for backends (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*, item 2) may already be layer 2.
-9. **Which other ideas are Backbone Ideas:** of today's project-agnostic ideas, beyond how an agent works and CBC design (§2.1).
-10. **What one Adapted Case holds:** one Agent Skill or Agent Rule under its understanding text, or several. One understanding text may stand under more than one, as the facts-in-sync manual stands under two Agent Rules.
-11. **Two Work Domain Ideas of how an agent works:** does an agent's work differ enough between keeping knowledge and designing a backend by CBC to need two texts, or would they be one text written twice (§2.2)?
-12. **An Adapted Case from two ideas:** the cbc-framing Agent Skill holds CBC design's content, written as a piece of agent work. Is it adapted from two Work Domain Ideas, or from one, with the other giving only its form?
-13. **When a change is judged:** a System Repo's Change is judged before it reaches layer 3 (§3.2). The Maintainer Repo's own change reaches layer 3 at once, and is judged after (§3.3). Does the difference matter? The change work answers it.
-14. **Knowledge on Trial offered back:** a System Repo's Knowledge on Trial is handed over at its close (§2.3). It is not a Change, so the arrow *Change, read back* does not carry it, and the picture has no arrow that does. The change work answers it, when the simulation takes its other sources.
+4. **Where Judge sits:** §3.2 puts it at layer 3, since a Change is judged against the Adapted Case its Copy came from. The sources say only that it runs in the Maintainer Repo.
+5. **Depth d and the layer above:** which other texts are checked for a loss that Judge's question 3 finds, and whether the idea above is reworded clearer when several lost the same part. Its first guess and its trigger are the simulation's (`temp/common-ground/system-repo-change-simulation.md` §5, *Judge*, step 1, *Open*).
+6. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
+7. **What the System Kit holds:** layer 3 only, or the System Repos' Work Domain Ideas too. CBC system design adapted for backends (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*, item 2) may already be layer 2.
+8. **Which other ideas are Backbone Ideas:** of today's project-agnostic ideas, beyond how an agent works and CBC design (§2.1).
+9. **What one Adapted Case holds:** one Agent Skill or Agent Rule under its understanding text, or several. One understanding text may stand under more than one, as the facts-in-sync manual stands under two Agent Rules.
+10. **Two Work Domain Ideas of how an agent works:** does an agent's work differ enough between keeping knowledge and designing a backend by CBC to need two texts, or would they be one text written twice (§2.2)?
+11. **An Adapted Case from two ideas:** the cbc-framing Agent Skill holds CBC design's content, written as a piece of agent work. Is it adapted from two Work Domain Ideas, or from one, with the other giving only its form?
+12. **When a change is judged:** a System Repo's Change is judged before it reaches layer 3 (§3.2). The Maintainer Repo's own change reaches layer 3 at once, and is judged after (§3.3). Does the difference matter? The change work answers it.
+13. **Knowledge on Trial offered back:** a System Repo's Knowledge on Trial is handed over at its close (§2.3). It is not a Change, so the arrow *Change, read back* does not carry it, and the picture has no arrow that does. The change work answers it, when the simulation takes its other sources.
