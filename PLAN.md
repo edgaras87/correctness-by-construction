@@ -93,6 +93,9 @@ Plan Step that uses none has only its own items.
       about something the Plan Step changed.
 - [ ] New and changed text meets `.claude/rules/writing.md`.
 - [ ] Every commit on `<branch>` follows the commit-messages Agent Skill.
+      Its subjects are counted by script: one up to 70 characters
+      passes, and one past 70 is the reviewer's to keep or rewrite
+      (`docs/conventions/commit-messages/` §2.1, *Conventional Commits*).
 - [ ] No commit straddles agent and project paths
       (`docs/conventions/commit-messages/` §2.3, *The `agent` scope*).
 - [ ] The Plan Step's lessons are written back where they came from:
