@@ -64,7 +64,6 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | what changed | one Adapted Case, any of its texts | being simulated, §3 to §8 | — |
 | what changed | a Defined Term | not yet checked | — |
 | what changed | delivered Knowledge on Trial | not yet checked | read: compared like any Copy; decided: the original was never proven, so the Change is evidence for its trial |
-| what changed | new text of the System Repo's own, on trial | not yet checked | read: written in the System Kit's on-trial folder, so the comparison finds it as a new file; decided: with no original, the first question does not apply |
 | what changed | one reason behind Changes to several Adapted Cases | not yet checked | recorded: one why, naming every Copy it changed; read: the Changes are listed together |
 | what changed | an Attention Note with no Change | not yet checked | read: a line of its own, from the Attention Notes' place, with no Copy's diff; a Copy no longer used shows only so, since nothing in its file changes; decided: questions 1 to 4 fit a doubt about a line, not a lack or an unused Copy |
 | how deep | a. it stays in the System Repo | being simulated, §5 to §8 | — |
@@ -75,6 +74,8 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | how deep | f. several Adapted Cases need it, but not all | not yet checked | it cannot enter the project-agnostic text, so each Adapted Case gains it, and the same text has no shared home. Open; its trigger: the first change two Adapted Cases need, but not every one |
 
 A stretch of work may hold several Changes, alike or mixed. Each is recorded and read on its own, so they add no row but one: one reason behind Changes to several Adapted Cases.
+
+New text of the System Repo's own, on trial, is not a case here. It comes from no Copy, so it is not a Change. It is Knowledge on Trial, handed over at the System Repo's close (`temp/common-ground/knowledge-layers.md` §2.3, *The Adapted Case layer*). It is a source not yet taken into account (`temp/common-ground/common-ground-problem.md` §2.1, *A System Repo's change*).
 
 ## 3. Change
 

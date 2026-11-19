@@ -220,7 +220,7 @@ How each question is answered, and by whom, is open. So is a System Kit Copy Cha
 
 #### A System Repo's change
 
-This section follows one source of the Common Ground Problem: a System Repo changes its System Kit Copies, and the System Kit Copy Change has to reach the Maintainer Repo and be judged there. What the System Repo needs then comes back to it in a System Kit Update. Other sources exist, such as a birth, a lesson found in the Maintainer Repo's own work, or new knowledge from the human. They are left on purpose until this problem is finished (`TODO.md`, the item on resuming the simulation).
+This section follows one source of the Common Ground Problem: a System Repo changes its System Kit Copies, and the System Kit Copy Change has to reach the Maintainer Repo and be judged there. What the System Repo needs then comes back to it in a System Kit Update. Other sources exist, such as a birth, a lesson found in the Maintainer Repo's own work, Knowledge on Trial a System Repo hands over at its close, or new knowledge from the human. They are left on purpose until this problem is finished (`TODO.md`, the item on resuming the simulation).
 
 A System Kit Copy Change is followed in six parts: change, read, judge, act on the verdicts, deliver, and take. Its cases are of two kinds:
 
