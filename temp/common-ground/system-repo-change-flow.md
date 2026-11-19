@@ -295,3 +295,39 @@ Key: as in picture 1.
                                                                  │
                                                              c10 ●  work, on Version 2
 ```
+
+#### Case C1, nothing to read
+
+```
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ read and acted on                            ┌  c0 ●  earlier work, with Changes             ◀──── kept Changes: judged before the settled snapshot moved to main
+                                              │     │
+ settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
+                                                    │
+                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+                                                    │            │
+                                                    │         c2 ●  work, no Copy changed     ◀──── and no Attention Note written
+                                                    │            │
+                                                    │         c3 ●  the gate closes           ◀──── 2, 3. no Change to decide, no misfit named; the gate closes
+                                                    │            │
+                                                 c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
+                                                    │
+ ── case C1 ────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ 4. the look at main:                               ┊
+ check 1: main is c3, past the settled              ┊
+ snapshot, c1. Main has moved                       ┊
+ check 2: c1 against c3: no Copy and no             ┊
+ Attention Note changed                             ┊
+ the settled snapshot moves up to c3, with          ┊
+ no Reading; nothing is judged                      ┊
+ check 3: the Version is the newest, and            ┊
+ no verdict waits                                   ┊
+ case C1: nothing else follows                      ┊
+                                                    │
+ ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
+                                                    └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 1
+                                                                 │
+                                                              c4 ●  work, on Version 1        ◀──── the next look compares c3, the settled snapshot, with main
+```
