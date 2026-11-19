@@ -233,7 +233,7 @@ flowchart TD
 
 ### A look's cases
 
-A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into what came before, the case, and an example of what follows.
+A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into what came before, the case, and an example of what follows. Under each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
 
 Key: as in picture 1.
 
@@ -260,6 +260,10 @@ Key: as in picture 1.
                                                                  │
                                                              c2 ●  work, on Version 1         ◀──── it reaches main at its gate; the next look sees it
 ```
+
+| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
+|---|---|---|---|---|
+| no | — | no | no | nothing |
 
 #### Case B, an Update follows
 
@@ -296,6 +300,10 @@ Key: as in picture 1.
                                                              c10 ●  work, on Version 2
 ```
 
+| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
+|---|---|---|---|---|
+| no | — | yes | no | an Update |
+
 #### Case C1, nothing to read
 
 ```
@@ -331,6 +339,10 @@ Key: as in picture 1.
                                                                  │
                                                               c4 ●  work, on Version 1        ◀──── the next look compares c3, the settled snapshot, with main
 ```
+
+| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
+|---|---|---|---|---|
+| yes | no | no | no | the settled snapshot moves up to main; nothing else |
 
 #### Case C2, an Update follows
 
@@ -378,3 +390,7 @@ Key: as in picture 1.
                                                                  │
                                                              c12 ●  work, on Version 2
 ```
+
+| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
+|---|---|---|---|---|
+| yes | no | yes | no | the settled snapshot moves up to main; an Update |
