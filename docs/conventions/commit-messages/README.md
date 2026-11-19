@@ -61,12 +61,17 @@ the subject and 72 for a body line. The type prefix carries
 information a plain subject does not, and it is enforceable later
 by a commitlint hook (ADR-0038, 1a).
 
-The 50 is an aim, and 70 is the line. A subject is counted by
-script when it is written. One of 51 to 70 characters stands as it
-is. Past 70, the reviewer decides whether it is rewritten. Nothing
-breaks below 72: GitHub cuts a subject past 72, and `git log
---oneline`'s hash with 70 characters fits an 80-column terminal. So
-a miss of a few characters is not worth a reword (ADR-0083).
+The 50 is the writer's aim, and 70 is the checks' line. The
+commit-messages Agent Skill states only 50: a number the writer sees becomes room to
+spare. The checks, at a Plan Step's close and a session's end,
+count every subject by script. One up to 70 characters passes. Past
+70, the reviewer decides whether it is rewritten. Nothing breaks
+below 72: GitHub cuts a subject past 72, and `git log --oneline`'s
+hash with 70 characters fits an 80-column terminal. So a miss of a
+few characters is not worth a reword. A single commit's subject is
+not counted when it is written; a commit plan counts its own
+(`docs/conventions/commit-plan/` §2.8, *Counting subjects*). Whether
+single commits are counted too is on trial (ADR-0083).
 
 ### 2.2 Mood and tense
 
