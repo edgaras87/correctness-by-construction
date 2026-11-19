@@ -23,7 +23,7 @@ The simulation's Judge and Act, its depth rows, and its "project-agnostic" lines
 - §2: the depth rows renamed to "the idea above"; c as two rows; d and e "layer 3, or layer 2"; f shrunk to its two cases with no home; each row's *Differs so far* by the decisions on the survey, depth d and depth e;
 - §3, step 1: "never written to sound project-agnostic" becomes "general";
 - §5: the questions read against both layers; 4a and 4b, by pointer to the general document's §3.1 and §3.2; the cap example's verdict; the 9 verdicts; step 2's "eight" becomes "nine"; the Open items for the order of 4a and 4b, and for depth d's check;
-- §6: the other depths by layer; the survey's set, by pointer to the general document's §3.2 and §2.3; the rewording line, naming no Adapted Case at layer 2 and no Work Domain at layer 1; the Open items for the survey at layer 1, and for depth e.
+- §6: the other depths by layer; the survey's set, by pointer to the general document's §3.2 and §2.3; the rewording line, naming no Adapted Case at layer 2 and no Work Domain at layer 1, by pointer to the general document's §3.2, the arrow *lesson*, where the rule for each layer lives; the Open items for the survey at layer 1, and for depth e.
 
 One commit, so each line changes once: the depth rows carry decisions from Judge and Act both.
 
@@ -34,7 +34,7 @@ In the problem file's moving block, only the lines the layers make wrong:
 - *Narrowing, never shrinking*: "wrong for every repo" becomes "wrong for every text built on it" (line 205);
 - *What an update sends*: the lesson's name (line 209).
 
-The simulation's §6 pointer at the old bold lead follows in this commit, by the rename grep.
+The rename grep runs on the old bold lead. The one pointer at it from Living Text, the simulation's §6, moved in commit 2.
 
 **4. `docs: layers document reads depths as layers`**
 The layers document's §3.2: its lead sentence and depth table follow the simulation's rows. Its §4 question 4 is answered there, and leaves the list; questions 5 to 14 become 4 to 13, and the pointers at question 11 follow: the layers document's §2.2 tables, twice, and `TODO.md`, line 276. Question 6, renumbered 5, points at the simulation's Open item for depth d.
@@ -49,7 +49,7 @@ The item's step 1 leaves; its ideas done leave; three steps remain.
 
 - **The simulation's changes are one commit, not one per part.** A depth row carries decisions from Judge and Act. Split by part, each row would change twice.
 - **The problem file follows in its own commit.** Undone alone, it leaves the problem file behind the simulation, as the drafts stand today.
-- **The bold lead *A project-agnostic lesson* becomes *A lesson for the idea above*,** after the verdict names of decision 8. One pointer reaches it from Living Text, the simulation's §6.
+- **The bold lead *A project-agnostic lesson* becomes *A lesson for the idea above*,** after the verdict names of decision 8. One pointer reached it from Living Text, the simulation's §6. It moves in commit 2 to the general document's §3.2, since its line changes there anyway.
 - **The cap example's verdict** (simulation §5, line 315) becomes "a lesson for its Work Domain Idea, depth c at layer 2": "any repo with scopes" is a test inside one Work Domain.
 - **Removing question 4 renumbers the rest,** as the layers document's §4 rule says it leaves the list. Three pointers follow.
 - **The devlog entry is not in the plan.** It comes at the session's end, as each session's does.
