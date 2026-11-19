@@ -1257,3 +1257,11 @@
   the reviewer took each diff as shown once the plan and its
   decisions were in); a grant given again in each session's prompt (the file
   loads first and said the opposite); a TODO item (nothing is open).
+
+- 2026-11-19 The commit-messages Agent Skill keeps one number for a
+  subject, 50. The 70 is the checks', at a Plan Step's close and a
+  session's end. The agent's memory note no longer counts each
+  subject when it is written; a trial in TODO decides whether it
+  should.
+  Why: ADR-0083.
+  Rejected: see ADR-0083.

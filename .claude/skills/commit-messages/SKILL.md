@@ -138,3 +138,4 @@ Why they are so: (`docs/conventions/commit-messages/` §1, *What a commit messag
 - ADR-0038, 1f — *Rules*: the stop is this file's sentence,
   gated nowhere
 - ADR-0049, 5 — *Format*: either mood, present tense
+- ADR-0083 — *Format*: the writer's number is 50, and no other
