@@ -257,6 +257,10 @@ Plan Step Form. Why the form is as it is:
   stays the record the others point back to (§1, *The records at a glance*).
 - A Plan Step that stops is not done and not dropped: it keeps its place
   and the work it did, and resumes where it stopped.
+- A Plan Step's goal is one piece of work. A goal that grows past
+  one keeps the step open while the real work runs elsewhere, so the
+  step is re-cut: its own items are struck, each naming the TODO item
+  it moved to, and it closes (ADR-0082).
 - "Discovered along the way" holds what a Plan Step finds and does not
   do. In a CBC Run, the look back is not the plan's: it is `RETRO.md`'s, under the
   retrospective manual (`docs/conventions/retrospective/`).

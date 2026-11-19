@@ -122,6 +122,11 @@ restarts at that stage. Any stage whose input the other Plan Step
 changed runs again. A ticked item stays ticked unless the other
 Plan Step made it untrue.
 
+**A Plan Step whose goal grew past one piece of work is re-cut.** Its
+own items are struck, each naming the TODO item it moved to; its
+stages become TODO items; and it closes as above, its devlog entry
+saying why.
+
 **A trial names the close that judges it.** A change to how work is
 done, put on trial, names the Plan Step whose close judges it. Its
 verdict there is one line: kept, changed or dropped.
