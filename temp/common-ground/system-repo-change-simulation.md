@@ -496,7 +496,7 @@ Two steps:
 
   **What it is.** An Update is two things: every Copy, whole, at the new Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
   - the new Version;
-  - the Version it was built from, and the System Repo's *settled snapshot* it was built against, whether a Reading ran or not. The Take checks both before anything moves (§8, step 1). The Update Note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
+  - the System Repo's *settled snapshot* it was built against, whether a Reading ran or not. The Take checks it before anything moves (§8, step 1). The Update Note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
   - what changed since the System Repo's Version: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a file that is gone cannot say so itself;
   - the why of each System Kit change since then, whatever its source: the Reading of this System Repo or of another, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo; a change that comes from a lesson for the idea above quotes the lesson as its why. With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - the verdicts that go down, from this System Repo's own Reading only, each naming the System Repo's own Copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (§8, step 1);
@@ -579,7 +579,7 @@ Two steps:
   - i narrows Read's rule, that main moves only at a gate's close, for the Take alone. f keeps the rule whole, its gate checking that the Take finished.
 
   **Before the Take.** The opening order is fixed: reading back, judging, then the Update. An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old Copies first; the human may instead drop or restart it, when the Update changes a rule it rests on. The Take checks first, from the Update Note, what the System Repo itself can see:
-  - case 1, its main is still the *settled snapshot* the Update Note names, and its Version is the one the Update was built from: the Update is taken;
+  - case 1, its main is still the *settled snapshot* the Update Note names: the Update is taken. Its Version needs no check of its own: it is recorded in main, so it cannot change while main stands still;
   - case 2, anything else: there is no Take, and the System Repo says so. The human has it looked at, and the look finds its case, C or D when main has moved (§4, step 1, *A look at main*). Deliver's check then finds a new Update due, made against the System Kit as it is now. It replaces the waiting one and carries its verdicts not yet sent (§7, step 1).
 
   **A check before delivery.** The Maintainer Repo may compare the System Repo's main with the *settled snapshot* before delivery too, to save a delivery bound to fail. A System Kit moved since the Update was made is no reason to refuse it: the Update is correct, if not the latest, and the next brings the rest.
@@ -591,7 +591,7 @@ Two steps:
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
   3. every Copy is taken whole, at the new Version; each path gone is removed, and each renamed is moved. Every Record is cleared: main is the *settled snapshot*, so each was read and judged. A part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
   4. each verdict is read. One on a Change the System Kit took asks nothing more: the new Version holds the Change. What follows any other is not ruled (§2, *Known, not ruled*);
-  5. the new Version is recorded, with the commit that holds it: item 3's, the clean copy, every Copy at the new Version. So the next Update finds its base;
+  5. the new Version is recorded, with the commit that holds it: item 3's, the clean copy, every Copy at the new Version. So Deliver's check can compare it with the newest;
   6. the Update and its Update Note are removed from `temp/`;
   7. the Take's gate, last. It checks that the Take finished: the files matched the Update Note, every Copy is at the new Version, the Version is recorded, and `temp/` holds no Update.
 
@@ -600,7 +600,7 @@ Two steps:
   **What a Record stands against.** Every Record stands against the last Version taken, or birth's, and every Record goes at a Take. This is confirmed at the first Update to reach a System Repo whose Copies have Records.
 - **Adapted Case:**
   - the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says:
-    - check first that main is still the *settled snapshot* and its Version is the Update's base, and take nothing when either differs, saying so;
+    - check first that main is still the *settled snapshot*, and take nothing when it differs, saying so;
     - take only at a Plan Step's opening, or postpone with why;
     - take on a branch of its own, in the order above, one commit per item, the gate last, checking that the Take finished; main moves by fast-forward at the gate's close;
   - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its Update, when one was due, taken, since the last opening? A System Repo cannot see this itself; the human answers.

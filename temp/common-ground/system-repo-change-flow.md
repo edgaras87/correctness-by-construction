@@ -76,7 +76,7 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
                                                     │
  ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ┊                                         ┄┄┄┄┄ at a Plan Step's opening, the Take checks first, from the Update Note:
-                                                    ┊                                               case 1, main is still c1, the settled snapshot, and the Version is still 1:
+                                                    ┊                                               case 1, main is still c1, the settled snapshot:
                                                     ┊                                               the Update is taken, below. Case 2, anything else: no Take; the System Repo
                                                     ┊                                               says so, and the human has it looked at. The Take may also be postponed,
                                                     ┊                                               with its why, and starts again from this check at the next opening
@@ -185,8 +185,8 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
    stages it in the System Repo's temp/             ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c1, the settled snapshot,
-                                                    │            │                                  and the Version is still 1, the one the Update was built from
+                                                    ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c1, the settled snapshot
+                                                    │            │
                                                     │         c2 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
                                                     │            │                            ◀──── c3 to c6, not drawn
                                                     │         c7 ●  the gate closes           ◀──── the Take's gate checks that the Take finished, and closes
@@ -291,8 +291,8 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
    stages it in the System Repo's temp/             ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot,
-                                                    │            │                                  and the Version is still 1, the one the Update was built from
+                                                    ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot
+                                                    │            │
                                                     │         c4 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
                                                     │            │                            ◀──── c5 to c8, not drawn
                                                     │         c9 ●  the gate closes           ◀──── the Take's gate checks that the Take finished, and closes
@@ -357,8 +357,8 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
    stages it in the System Repo's temp/             ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot,
-                                                    │            │                                  and the Version is still 1
+                                                    ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot
+                                                    │            │
                                                     │         c4 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force
                                                     │            │
                                                     │         c5 ●  the new Adapted Case      ◀──── item 1: for taking, at Version 2, put in first

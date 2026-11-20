@@ -214,14 +214,6 @@
       Trigger: the change flow finished, Change to Take: the first
       step of the "Define the Change idea" item.
 
-- [ ] Reword "the Version it was built from" in the simulation's §7
-      (2026-11-20, the agent).
-      Context: it names the Version the System Repo's Copies are on,
-      but reads as making the new Version out of the old. The flow
-      file's pictures dropped it for "Version 2, for Copies at
-      Version 1".
-      Trigger: due now.
-
 - [ ] Sweep the drafts for words that read as walking commits, where
       a Reading compares two snapshots (2026-11-13, the reviewer).
       Context: a System Repo Reading compares two snapshots and never
