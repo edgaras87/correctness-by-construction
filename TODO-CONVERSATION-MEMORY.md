@@ -1711,3 +1711,54 @@ Then, told the simulation still held both: "i think we should set aside those in
 #### What the reviewer took
 
 Both are set aside in the simulation, not only in the pictures, until practice meets them. The simulated case becomes depth b, the Change taken into the System Kit; their rules leave §3 to §8, and git keeps them; §2 keeps a short list of what is known and not ruled, each with its trigger. The work waits for the next session, a commit plan first.
+
+### 2026-11-20, later
+
+#### What the reviewer said
+
+Before the decisions: "so before we continue, can u tell me back again what currently those attention notes and specific changes solves and where? are they connected or are sep things? how much complexity we drop if remove them now? would it be better to leave them and draw pictures from them separatly and have those other pictures when take case is pure?"
+
+Then: "set them aside as planned. what we need to decide now?"
+
+On the look past main: "wait a second, doesnt we read only main? where this comes from?"
+
+On the Take's gate: "yes, take a and keep branch thing too"
+
+#### What the reviewer said, edited
+
+"Before we continue, can you tell me again what those Attention Notes and specific Changes currently solve, and where? Are they connected, or separate things? How much complexity do we drop if we remove them now? Would it be better to leave them, draw pictures of them separately, and have the other pictures for when the Take's case is pure?"
+
+"Set them aside as planned. What do we need to decide now?"
+
+"Wait a second, don't we read only main? Where does this come from?"
+
+"Yes, take a, and keep the branch thing too."
+
+#### What the reviewer asked, as the agent would ask it
+
+1. What does each solve, and where in the simulation?
+2. Are they one thing or two?
+3. How much does setting them aside remove?
+4. Would keeping them, drawn apart from the pure pictures, be better?
+5. What must be decided before the work?
+6. A Reading reads only main: where does a look past main come from?
+
+#### What the agent showed
+
+- **Attention Notes** carry what no Change carries: a misfit worked around, a doubt about a line, a lack, a Copy no longer used. 24 lines, in §2, §3, §4, §7 and §8.
+- **A project's own Change** lets a System Repo keep a Change that fits only it, which today forbids. About 36 lines, by grep, of the simulation's 527 non-empty: the simulated case, question 2, and the Take's putting back and its gate.
+- **Two things,** meeting in one line, §8's item 5.
+- **What setting them aside drops:** the Take's putting back, the gate's main job, and judging a put-back Change again at each Take. **What it costs:** §5 to §8 re-simulated for depth b.
+- **Three ways:** set aside as planned; keep them and draw them apart; keep them, each marked set aside where it stands. Kept, the next step, which checks the rules by drawing them, meets them again.
+- **The look past main** came in `5dd275c`, 2026-11-11, in the same paragraph as the rule that a Reading reads only main, as an exception. Nothing that happened asked for it.
+
+#### Options weighed, with the agent's suggestions
+
+1. **A Change the System Kit does not take:** judged its own, unsound, misread or held. With nothing put back, the Take's whole Copies replace it. Suggested: Judge keeps every verdict; the simulation follows only Changes the System Kit takes; §2's list names this one with its trigger, the first such verdict; the Take's rules say nothing of putting back.
+2. **The look past main:** first suggested as set aside, with a list entry. Once the reviewer asked where it came from: removed outright, since it is a tool someone might want, not something that can happen.
+3. **The Take's gate,** with nothing put back to decide: a, keep the branch and the gate, the gate checking that the Take finished; b, drop both, the Take on main, Read's rule given an exception. Suggested: a; whether the Take still needs its branch noted, not acted on.
+4. **Pictures 1 and 2,** due to go by their own item: a, remove them first, in this work; b, fix them, then remove them. Suggested: a.
+
+#### What the reviewer took
+
+Set aside as planned, and all four as suggested: the look past main removed outright; for the gate, a, and the branch question kept, as an open point in the simulation's §8.
