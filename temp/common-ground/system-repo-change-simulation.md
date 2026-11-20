@@ -343,17 +343,17 @@ Four steps:
 
 ## 5. Judge
 
-§5 to §8 are simulated first for depth a, the Change staying in the System Repo: the shortest path through every step. Depth c, the idea above changing, at either layer, is then checked against them (§2, the "how deep" rows). Known before it was simulated:
+§5 to §8 are simulated first for depth b, the System Kit's Adapted Case changing: the shortest path into the System Kit through every step. Depth c, the idea above changing, at either layer, is then checked against them (§2, the "how deep" rows). Known before it was simulated:
 
 - the four questions decide, in order, the cheapest first, and the System Repo's own view of its Change is input, never the verdict:
   1. Did the Copy already say this? Then it is a misreading (Failure Case 7). Nothing changes but, perhaps, the Copy's wording.
-  2. Is it specific to that System Repo's problem? Then nothing changes here; it stays in that System Repo.
+  2. Is it specific to that System Repo's problem? Then nothing changes here (§2, *Known, not ruled*).
   3. Does the idea above already hold it, the Work Domain Idea above the Adapted Case, or the Backbone Idea above that? Then the Adapted Case it came from lost it in narrowing, and is fixed from the idea above. When only the Backbone Idea holds it, the Work Domain Idea lost it too, and is fixed first.
   4. How high is it true? 4a, still true naming no Adapted Case: a lesson for its Work Domain Idea. 4b, still true naming no Work Domain: a lesson for its Backbone Idea.
 
   If none holds, it is a lesson for its Adapted Case: the Adapted Case it came from gains it, and the idea above stays as it is;
-- the depth comes from the reason, never the edit. A cap raised from 50 to 60 stays in the System Repo, depth a, when its reason is "our scope names are long". The same edit is a lesson for its Work Domain Idea, depth c at layer 2, when its reason is "the cap counts the scope, which any repo with scopes meets". Only the recorded reason tells them apart;
-- what the System Repo gets reaches it with the next Update, and its Copy keeps its Change either way, re-applied at the Take while it is still needed (§8, step 1, *At the Take, in order*, item 4).
+- the depth comes from the reason, never the edit. A cap raised from 50 to 60 is the System Repo's own, depth a, when its reason is "our scope names are long". The same edit is a lesson for its Work Domain Idea, depth c at layer 2, when its reason is "the cap counts the scope, which any repo with scopes meets". Only the recorded reason tells them apart;
+- what the System Repo gets reaches it with the next Update (§7, step 1).
 
 Two steps:
 
@@ -362,7 +362,7 @@ Two steps:
 
 **Step 1. The list is judged.**
 
-- **What must happen:** each line of the Reading is first judged sound or not. A sound line is then judged by the four questions, in order, the cheapest first, until one holds (above). The agent proposes an answer to each, with what it read; the human decides. For depth a, question 2 holds: the Change answers that System Repo's own problem. An empty list gives no verdicts, and Judge hands Act only the stop.
+- **What must happen:** each line of the Reading is first judged sound or not. A sound line is then judged by the four questions, in order, the cheapest first, until one holds (above). The agent proposes an answer to each, with what it read; the human decides. For depth b, none of the four holds: it is a lesson for its Adapted Case. An empty list gives no verdicts, and Judge hands Act only the stop.
 - **Options,** for who judges:
   - a. the agent proposes each answer, with what it read, and the human decides each line;
   - b. the agent judges, and the human looks only at the lines where the agent disagrees with the System Repo's proposal;
@@ -376,7 +376,7 @@ Two steps:
   - d judges on a guess at the why (Failure Case 22).
 
   **What each question reads:**
-  - question 0, the Change is sound: what happened, the Change, and the original part. Does it fix what happened, without breaking something the Copy did? An unsound Change goes no further: the depth questions are not asked, and the verdict says why. The Copy is the System Repo's own, so the Change stays there unless the System Repo reverses it;
+  - question 0, the Change is sound: what happened, the Change, and the original part. Does it fix what happened, without breaking something the Copy did? An unsound Change goes no further: the depth questions are not asked, and the verdict says why. What becomes of the Change is not ruled (§2, *Known, not ruled*);
   - question 1, the Copy already said it: the original part, in the Version the Copies came from, beside the Change. When the System Kit has moved since, its part as it is now is read too: a change the System Kit has since made the same way is covered, and nothing new is made, so one lesson is not made twice;
   - question 2, specific to that System Repo's problem: what happened, the System Repo's proposal, and its framing of its problem;
   - question 3, the idea above already holds it: the Work Domain Idea above the Adapted Case, then the Backbone Idea above that. When only the Backbone Idea holds it, the Work Domain Idea lost it too, and the loss sits at layer 2;
@@ -401,11 +401,11 @@ Two steps:
   - borrowed: a change may be declined as "not worth the change" (`docs/conventions/exchange/` §6.5, *Verdicts*). Question 0 asks it first, for every depth;
   - changed: the four questions gain question 0, and a line may be split into parts. The rules on deciding have neither;
   - borrowed: a verdict that cannot be reached yet is held, with its trigger and a line so it is not lost (`docs/conventions/exchange/` §6.5, *Verdicts*);
-  - changed: today a verdict says whether the Concept Deliverer takes a hunk: taken, declined or held (`docs/conventions/exchange/` §6.5). Here it says how deep the Change goes. Depth a is near today's declined, "not general", but the Copy keeps the Change, where today the next Delivery Take overwrites it.
+  - changed: today a verdict says whether the Concept Deliverer takes a hunk: taken, declined or held (`docs/conventions/exchange/` §6.5). Here it says how deep the Change goes. Depth b is near today's taken: the Change enters the System Kit.
 
 **Step 2. The verdict is written.**
 
-- **What must happen:** each judged line, or part of one, gets a verdict, the agent drafting and the human deciding. It is the Maintainer Repo's decision, written for its own work: what it changes, in the System Kit or the idea above, starts from it (§6, step 1). Which verdicts the System Repo gets is §7, step 1's. For depth a: the Change stays, as the System Repo's own, and nothing changes here.
+- **What must happen:** each judged line, or part of one, gets a verdict, the agent drafting and the human deciding. It is the Maintainer Repo's decision, written for its own work: what it changes, in the System Kit or the idea above, starts from it (§6, step 1). Which verdicts the System Repo gets is §7, step 1's. For depth b: a lesson for its Adapted Case. The proposal holds when the System Repo gave it as one any repo would meet.
 - **Options,** for what a verdict holds:
   - a. the answer only: unsound, misread, or its depth;
   - b. the answer, its why, and whether it agrees with the System Repo's proposal, with why if not;
@@ -427,7 +427,7 @@ Two steps:
 
   Lines under one reason share one verdict, and each line says how its own Copy is affected.
 
-  **The agreement.** The agreement is said in one line, "the proposal holds" or "the proposal does not hold, because …". An unsound verdict says what the Change breaks or leaves unfixed; whether to reverse it is the System Repo's decision, once the verdict reaches it (§7, step 1).
+  **The agreement.** The agreement is said in one line, "the proposal holds" or "the proposal does not hold, because …". An unsound verdict says what the Change breaks or leaves unfixed; what becomes of the Change is not ruled (§2, *Known, not ruled*).
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says:
   - one verdict per line or part: its answer, its why, and whether the proposal holds;
   - the answer is one of the nine verdicts listed above; an unsound one says what the Change breaks or leaves unfixed;
