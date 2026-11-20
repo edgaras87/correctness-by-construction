@@ -242,9 +242,9 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                         settled snapshot ─▶     c1 ●  the last gate closed                   ◀──── the Copies at Version 1
- Deliver (§7): the Update waits in temp/,           ┊
- built from Version 1 against c1                    ┊
+                         settled snapshot ─▶     c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
+ Deliver (§7): the Update waits in temp/:           ┊
+ Version 2, for Copies at Version 1                 ┊
                                                     │
  ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ┊                                         ┄┄┄┄┄ at a Plan Step's opening, the Take checks first, from the Update Note:
