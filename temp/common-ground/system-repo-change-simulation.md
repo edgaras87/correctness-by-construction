@@ -585,8 +585,6 @@ Two steps:
 
   **A check before delivery.** The Maintainer Repo may compare the System Repo's main with the *settled snapshot* before delivery too, to save a delivery bound to fail. A System Kit moved since the Update was made is no reason to refuse it: the Update is correct, if not the latest, and the next brings the rest.
 
-  **Old Records.** A gate may have fixed, merged or dropped Records the Update answered. These show in the next Reading's comparison as Changes with their Records, and are judged like any. Records from before the *settled snapshot* still in the Copies are cleared at the Take.
-
   **At the Take, in order.** Once the check finds case 1, the Take cuts a branch from main, the *settled snapshot*. Its first commit is the Update as it arrived, in `temp/`, not yet in force: a record of what came, before the Take changes anything. Each item below is then a commit of its own, but items 2 and 4, a check and a reading. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§4, step 1, *Where a stretch ends*).
   1. the Adapted Case for taking an Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
