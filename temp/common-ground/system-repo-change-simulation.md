@@ -227,7 +227,7 @@ Four steps:
 
   Whether an Update is due is Deliver's check, asked after Act at every look, since a verdict to send down exists only once the Changes are judged (§7, step 1, *When one is due*).
 
-  With Deliver's check, a look ends in one of five cases. A and B differ only by its answer, as C1 and C2 do: nothing follows, or an Update follows. D has one case here, D2. Only a Change judged its own, with its proposal holding, leaves nothing to send after acting, and that case, D1, is not ruled (§2, *Known, not ruled*).
+  With Deliver's check, a look ends in one of five cases. A and B differ only by its answer, as C1 and C2 do: nothing follows, or an Update follows. D has one case here, D2. Case D1, a Change read with no Update due after, comes only from a Change the System Kit does not take, and is not ruled (§2, *Known, not ruled*).
 
   | Case | Main moved | Copy changed | Update due, Deliver's check | What follows |
   |---|---|---|---|---|
