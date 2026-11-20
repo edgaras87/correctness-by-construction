@@ -441,19 +441,18 @@ Two steps:
 
 ## 6. Act on the verdicts
 
-**Step 1. The Maintainer Repo makes its changes. For depth a, none.**
+**Step 1. The Maintainer Repo makes its changes. For depth b, the System Kit's Adapted Case.**
 
-- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth a, nothing changes in the System Kit or the idea above. The verdict waits in the Reading, which stays a draft until the Update carries what the System Repo needs (§7, step 1). Once the verdicts are acted on here, right after judging for depth a, Act sets the *settled snapshot* to the stop, in the Register (§4, step 2). It does so at every look: with no verdicts, as in cases A and C, that is all it does (§4, step 1, *A look at main*).
-- **Options,** for depth a:
-  - a. nothing changes here; the verdict waits in the Reading;
-  - b. nothing changes in the System Kit, and the verdict is also kept in a lasting record, by the part it changed, so a later Reading sees when another System Repo makes the same Change;
-  - c. the Change enters the System Kit as a variant, for System Repos like this one.
+- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth b, the System Kit's Adapted Case gains the lesson, worded for every System Repo, and is committed in the Maintainer Repo: the System Kit stands at a new Version. The System Repo the lesson came from gets it back with the next Update, though its Copy already holds the Change in its own words (§7, step 1). The Reading stays a draft until that Update is made. Once the verdicts are acted on here, Act sets the *settled snapshot* to the stop, in the Register (§4, step 2). It does so at every look: with no verdicts, as in cases A and C, that is all it does (§4, step 1, *A look at main*).
+- **Options,** for depth b:
+  - a. the lesson is reworded for every System Repo, and the System Kit's Adapted Case gains it, its first wording kept beside it;
+  - b. the Change goes into the System Kit's Adapted Case as the System Repo wrote it;
+  - c. the lesson waits until a second System Repo makes the same Change.
 - **Chosen:** a. The others:
-  - b builds a record before any part has been changed by two System Repos;
-  - c is a speculation: one System Repo's own Change, offered to System Repos that have not met it. Several Adapted Cases needing a change, but not all, is its own case (§2, row f).
+  - b carries one project's words to every System Repo, since the System Repo writes what happened in its own words, on purpose (§3, step 1);
+  - c waits for a second proof of what judging already found: question 2 found the Change is not that System Repo's own.
 
   **The other depths.** For the other depths, this step holds the work, each checked here later:
-  - depth b changes the System Kit's Adapted Case;
   - depth c changes the idea above at its layer, after the survey: its Work Domain Idea at layer 2, its Backbone Idea at layer 1;
   - depth d fixes the Adapted Case from the idea above, after fixing the Work Domain Idea from its Backbone Idea when the loss sits at layer 2;
   - depth e marks a narrowing with its why, in the text just below the idea that does not fit.
@@ -462,17 +461,14 @@ Two steps:
 
   A lesson is reworded here, never before: for every System Repo at depth b; at depth c, naming no Adapted Case at layer 2, and no Work Domain at layer 1 (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, the arrow *lesson*). Its first wording is kept beside it, since the rewording is the agent's reading.
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says:
-  - a verdict of its own changes nothing here;
+  - a lesson for its Adapted Case is reworded for every System Repo, its first wording kept beside it, and the System Kit's Adapted Case gains it;
   - the Reading stays a draft until the Update carries what the System Repo needs;
   - once the verdicts are acted on, or when there are none, the *settled snapshot* is set to the stop, in the Register.
 - **Open:**
   - at layer 1, how far down the survey reaches before the change: only the Work Domain Ideas, each checking its own Adapted Cases when it changes, or every Adapted Case below them at once. The first is cheaper; the second may catch a conflict two layers down. Its trigger: the first lesson judged at layer 1;
-  - how a part of a Backbone Idea is known not to fit a whole Work Domain, when one System Repo's Change shows one Adapted Case. A first guess: the same survey, over that Work Domain Idea's Adapted Cases. Its trigger: the first depth-e verdict;
-  - whether depth a's verdicts are kept beyond the Update, so the same Change by a second System Repo is seen. Without it, two System Repos making one Change are each judged alone. Its trigger: the second System Repo read back.
+  - how a part of a Backbone Idea is known not to fit a whole Work Domain, when one System Repo's Change shows one Adapted Case. A first guess: the same survey, over that Work Domain Idea's Adapted Cases. Its trigger: the first depth-e verdict.
 - **Today:**
-  - borrowed: a declined change moves nothing in the Concept Deliverer's tree (`docs/conventions/exchange/` §6.5, *Verdicts*);
-  - borrowed: a taken change is committed here, and the next delivery carries it (`docs/conventions/exchange/` §6.5). It is the other depths' path;
-  - borrowed: the why of a declined change goes in the Delivery Note and nowhere else (`docs/conventions/exchange/` §6.5). Here the Reading holds it until the Update.
+  - borrowed: a taken change is committed here, and the next delivery carries it (`docs/conventions/exchange/` §6.5, *Verdicts*). It is depth b's path, and the other depths'.
 
 ## 7. Deliver
 
