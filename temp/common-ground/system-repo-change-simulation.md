@@ -248,7 +248,7 @@ Four steps:
   **Cleaned history.** If a stretch's history is cleaned before main moves, the Records are unharmed: they are in the Copies, not in the commits.
 - **Adapted Case:**
   - the System Repo's gate list: main moves only at a gate's close. It is there today;
-  - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read, or asks what to read. For this step it says:
+  - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read or to update, or asks what to read. For this step it says:
     - compare the named System Repo's main with where its last Reading stopped, or every System Repo's when asked;
     - make the look's two checks; with Deliver's check after Act, the look ends in one of cases A, B, C1, C2 and D2.
 - **Open:** a System Repo nobody names is not read until its work resumes. Its trigger: the first lesson found late because a System Repo went unread.
@@ -494,7 +494,7 @@ Two steps:
   - c leaves an unsound Change unknown to the only repo that can reverse it;
   - d sends an empty Update to carry where the Reading stopped. The *settled snapshot* is in the Register now (§4, step 2), so nothing needs carrying.
 
-  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. It runs after Act, at every look, and when the human names a System Repo to update, or asks which are behind. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
+  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. It runs after Act, at every look. When the human names a System Repo to update, a look runs first (§4, step 1). When the human asks which are behind, the Versions are compared, and nothing is made. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
 
   **What it is.** An Update is two things: every Copy, whole, at the new Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
   - the new Version;
@@ -513,7 +513,7 @@ Two steps:
 - **Adapted Case:** the Maintainer Repo's, for making an Update. It loads on the human's word to update a System Repo. For this step it says:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change or a verdict;
-  - it is due when the System Repo's Version is behind the newest, or a verdict goes down; the Versions are compared after Act at every look, and when the human names a System Repo or asks which are behind;
+  - it is due when the System Repo's Version is behind the newest, or a verdict goes down; the Versions are compared after Act at every look; naming a System Repo to update starts a look; asking which are behind only compares, and makes nothing;
   - it carries every Copy whole, at the new Version, and an Update Note holding the seven things listed above;
   - it cites nothing the System Repo cannot open;
   - each verdict names the System Repo's commit it judged;
