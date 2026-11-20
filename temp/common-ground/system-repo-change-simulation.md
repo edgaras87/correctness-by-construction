@@ -479,7 +479,7 @@ Two steps:
 
 **Step 1. The Update is made: the System Kit's changes, and the verdicts the System Repo can act on.**
 
-- **What must happen:** when work resumes in the System Repo, after it is read back and judged, the Maintainer Repo makes its Update, the agent drafting and the human deciding (§8, step 1, *Before the Take*). An Update is due when the System Kit has moved past the Version the System Repo's Copies came from, or when its Reading left a verdict that goes down. It reaches the System Repo on the human's word, in a step of its own: nothing crosses without that word, and the agent may carry it. For depth a, the System Kit has not changed for this Change, so the Update carries it only if its verdict is one the System Repo can act on.
+- **What must happen:** when work resumes in the System Repo, after it is read back and judged, the Maintainer Repo makes its Update, the agent drafting and the human deciding (§8, step 1, *Before the Take*). An Update is due when the System Kit has moved past the Version the System Repo's Copies came from, or when its Reading left a verdict that goes down. It reaches the System Repo on the human's word, in a step of its own: nothing crosses without that word, and the agent may carry it. For depth b, the System Kit has moved for this Change, so an Update is due: it carries the System Kit's Adapted Case at the new Version, with the lesson as its why. Its verdict goes down only if its proposal did not hold.
 - **Options,** for which verdicts go down:
   - a. every verdict;
   - b. only those the System Repo can act on: unsound, misread, and a proposal that did not hold;
@@ -488,7 +488,7 @@ Two steps:
   - d. after every Reading, even with nothing to carry;
   - e. only when it carries something: a System Kit change, or a verdict that goes down.
 - **Chosen:** b and e. The others:
-  - a sends lines that ask nothing of the System Repo. A Change judged its own, with its proposal holding, needs no answer: the Copy keeps it either way;
+  - a sends lines that ask nothing of the System Repo. A lesson taken into the System Kit, with its proposal holding, needs no answer: the Update brings the change and its why;
   - c leaves an unsound Change unknown to the only repo that can reverse it;
   - d sends an empty Update to carry where the Reading stopped. The *settled snapshot* is in the Register now (§4, step 2), so nothing needs carrying.
 
@@ -506,7 +506,7 @@ Two steps:
 
   **What the Update Note is not.** The Update Note is no summary of the Maintainer Repo's work, which the System Repo cannot check. It is not a record either: it goes once the Update is taken, and what the System Repo decides goes in its Records.
 
-  **What it cites.** Nothing in it cites what the System Repo cannot open: no path, record or word of the Maintainer Repo's own. A depth-a Change whose proposal held sends nothing, and the System Repo's Copy keeps it.
+  **What it cites.** Nothing in it cites what the System Repo cannot open: no path, record or word of the Maintainer Repo's own.
 
   **One at a time.** A Reading stays open until its Update is made, or until it is judged with nothing to send. One Reading is open per System Repo at a time: a Reading made while one is open extends it, and its lines are judged with the rest, so judging already done is kept. One Update waits for the System Repo at a time: a newer one replaces one not yet taken, since it carries every System Kit change since the Copies' Version, and the verdicts of both Readings.
 - **Adapted Case:** the Maintainer Repo's, for making an Update. It loads on the human's word to update a System Repo. For this step it says:
