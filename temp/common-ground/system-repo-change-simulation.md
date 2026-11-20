@@ -227,8 +227,6 @@ Four steps:
 
   **Where a stretch ends.** Main moves only at a gate's close, so main is always at a closed gate, and nothing on it waits for a gate. Work past it, in a branch or not yet committed, is left for the next Reading.
 
-  **A look past main.** A look at work past main may be asked for, as when a Change is in doubt before its gate. It is not a Reading: it does not move where the last Reading stopped, judges nothing, and gives only Attention Notes, for the human and for the System Repo's gate. The work is read when it reaches main.
-
   **A look at main.** d is a look at one System Repo. It makes three checks:
   1. **main moved:** the System Repo's main against the *settled snapshot*;
   2. **Changes:** the Copies and the Attention Notes' place, compared between the older snapshot and main (step 2, step 3);
@@ -258,8 +256,7 @@ Four steps:
   - the System Repo's gate list: main moves only at a gate's close. It is there today;
   - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read, or asks what to read. For this step it says:
     - compare the named System Repo's main with where its last Reading stopped, or every System Repo's when asked;
-    - make the look's three checks, and end in one of cases A, B, C1, C2, D1 and D2;
-    - a look past main moves nothing, and gives only Attention Notes.
+    - make the look's three checks, and end in one of cases A, B, C1, C2, D1 and D2.
 - **Open:** a System Repo nobody names is not read until its work resumes. Its trigger: the first lesson found late because a System Repo went unread.
 - **Today:**
   - borrowed: a Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
