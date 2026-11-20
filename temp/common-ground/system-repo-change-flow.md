@@ -188,14 +188,14 @@ A look at main makes three checks and ends in one of five cases: A, B, C1, C2 an
                                                     ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c1, the settled snapshot,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
                                                     │         c2 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
-                                                    │            │                            ◀──── c3 to c8, not drawn
-                                                    │         c9 ●  the gate closes           ◀──── the Take's gate checks that the Take finished, and closes
+                                                    │            │                            ◀──── c3 to c6, not drawn
+                                                    │         c7 ●  the gate closes           ◀──── the Take's gate checks that the Take finished, and closes
                                                     │            │
-                                                 c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
+                                                 c7 ● ◀──────────┘                            ◀──── main moves to c7 by fast-forward, at the gate's close
                                                     │
                                                     └─ cut ──────┐                            ◀──── step 2 opens on Version 2
                                                                  │
-                                                             c10 ●  work, on Version 2
+                                                              c8 ●  work, on Version 2
 ```
 
 #### Case C1, nothing to read
@@ -292,14 +292,14 @@ A look at main makes three checks and ends in one of five cases: A, B, C1, C2 an
                                                     ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
                                                     │         c4 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
-                                                    │            │                            ◀──── c5 to c10, not drawn
-                                                    │        c11 ●  the gate closes           ◀──── the Take's gate checks that the Take finished, and closes
+                                                    │            │                            ◀──── c5 to c8, not drawn
+                                                    │         c9 ●  the gate closes           ◀──── the Take's gate checks that the Take finished, and closes
                                                     │            │
-                                                c11 ● ◀──────────┘                            ◀──── main moves to c11 by fast-forward, at the gate's close
+                                                 c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
                                                     │
                                                     └─ cut ──────┐                            ◀──── step 2 opens on Version 2
                                                                  │
-                                                             c12 ●  work, on Version 2
+                                                             c10 ●  work, on Version 2
 ```
 
 #### Case D2, an Update follows
