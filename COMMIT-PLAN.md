@@ -34,7 +34,7 @@ The intro, §2's table (row a goes to the list as the second entry, with case D1
 §8: no putting back (decision 1), the gate checks the Take finished (decision 3), the branch question in *Open*. Items renumbered, and every reference to them fixed: §4's "item 6", the flow file's item notes. The flow file's *The Take*, D2 and the other cases' gate notes follow. Wording and split are set at its boundary.
 
 **10. `docs: TODO closes setting guesses aside`**
-The set-aside item leaves. The triggers of the check-3 item and of the "Version it was built from" item named it; both become due now.
+The set-aside item leaves, and its Conversation Memory §36 with it, since a section goes in the commit that works its item (`TODO-CONVERSATION-MEMORY.md`, its header comment). The triggers of the check-3 item and of the "Version it was built from" item named it; both become due now.
 
 ## Decisions taken inside this plan
 
