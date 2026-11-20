@@ -496,7 +496,7 @@ Two steps:
 
   **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. Two Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. It runs after Act, at every look. When the human names a System Repo to update, a look runs first (§4, step 1). When the human asks which are behind, the Versions are compared, and nothing is made. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
 
-  **What it is.** An Update is two things: every Copy, whole, at the new Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
+  **What it is.** An Update is two things: every Copy, whole, at the newest Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
   - the new Version;
   - the System Repo's *settled snapshot* it was built against, whether a Reading ran or not. The Take checks it before anything moves (§8, step 1). The Update Note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
   - what changed since the System Repo's Version, from the same comparison of files: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a file that is gone cannot say so itself;
