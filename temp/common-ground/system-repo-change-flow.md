@@ -332,11 +332,12 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                                     │
  ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
  Deliver (§7), once work resumes: the Update        ┊
- waits in temp/, built from Version 1               ┊
+ waits in temp/: Version 2, for Copies at           ┊
+ Version 1                                          ┊
                                                     │
                                                     ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c1, the settled snapshot,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
-                                                    │         c2 ●  the Update, as it arrived ◀──── the Take's commits, in the order of picture 1's c7 to c14
+                                                    │         c2 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
                                                     │            │                            ◀──── c3 to c8, not drawn
                                                     │         c9 ●  the gate closes           ◀──── the Take's gate decides each Change put back, and closes
                                                     │            │
@@ -423,11 +424,12 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                                     │
  ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
  Deliver (§7), once work resumes: the Update        ┊
- waits in temp/, built from Version 1               ┊
+ waits in temp/: Version 2, for Copies at           ┊
+ Version 1                                          ┊
                                                     │
                                                     ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
-                                                    │         c4 ●  the Update, as it arrived ◀──── the Take's commits, in the order of picture 1's c7 to c14
+                                                    │         c4 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
                                                     │            │                            ◀──── c5 to c10, not drawn
                                                     │        c11 ●  the gate closes           ◀──── the Take's gate decides each Change put back, and closes
                                                     │            │
