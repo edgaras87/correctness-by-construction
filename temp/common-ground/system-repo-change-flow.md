@@ -243,8 +243,10 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
                          settled snapshot ─▶     c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
- Deliver (§7): the Update waits in temp/:           ┊
- Version 2, for Copies at Version 1                 ┊
+ Deliver (§7):                                      ┊
+   makes the Update: every Copy at Version 2,       ┊
+   and an Update Note for Copies at Version 1       ┊
+   stages it in the System Repo's temp/             ┊
                                                     │
  ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ┊                                         ┄┄┄┄┄ at a Plan Step's opening, the Take checks first, from the Update Note:
@@ -299,6 +301,9 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ before the System Repo's next Plan Step, the       ┊
+ human has the Maintainer Repo look at it           ┊
+ (§8, Before the Take):                             ┊
  Read (§4):                                         ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c1, the settled snapshot.       ┊
@@ -331,6 +336,9 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ before the System Repo's next Plan Step, the       ┊
+ human has the Maintainer Repo look at it           ┊
+ (§8, Before the Take):                             ┊
  Read (§4):                                         ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c1, the settled snapshot.       ┊
@@ -338,12 +346,13 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    check 3: the Version is 1, and the newest        ┊
    is 2                                             ┊
    case B. What follows: an Update is made          ┊
-   and delivered, in Deliver below                  ┊
+   and delivered                                    ┊
  Judge (§5): none                                   ┊
  Act on the verdicts (§6): none                     ┊
- Deliver (§7), once work resumes: the Update        ┊
-   waits in temp/: Version 2, for Copies at         ┊
-   Version 1                                        ┊
+ Deliver (§7):                                      ┊
+   makes the Update: every Copy at Version 2,       ┊
+   and an Update Note for Copies at Version 1       ┊
+   stages it in the System Repo's temp/             ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c1, the settled snapshot,
@@ -382,6 +391,9 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ before the System Repo's next Plan Step, the       ┊
+ human has the Maintainer Repo look at it           ┊
+ (§8, Before the Take):                             ┊
  Read (§4):                                         ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c3, past the settled            ┊
@@ -426,6 +438,9 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ before the System Repo's next Plan Step, the       ┊
+ human has the Maintainer Repo look at it           ┊
+ (§8, Before the Take):                             ┊
  Read (§4):                                         ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c3, past the settled            ┊
@@ -437,12 +452,13 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    check 3: the Version is 1, and the newest        ┊
    is 2                                             ┊
    case C2. What follows: an Update is made         ┊
-   and delivered, in Deliver below                  ┊
+   and delivered                                    ┊
  Judge (§5): none                                   ┊
  Act on the verdicts (§6): none                     ┊
- Deliver (§7), once work resumes: the Update        ┊
-   waits in temp/: Version 2, for Copies at         ┊
-   Version 1                                        ┊
+ Deliver (§7):                                      ┊
+   makes the Update: every Copy at Version 2,       ┊
+   and an Update Note for Copies at Version 1       ┊
+   stages it in the System Repo's temp/             ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot,
@@ -483,12 +499,15 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ before the System Repo's next Plan Step, the       ┊
+ human has the Maintainer Repo look at it           ┊
+ (§8, Before the Take):                             ┊
  Read (§4):                                         ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
    check 2: c1 against c3: a Copy changed           ┊
-   case D. What follows: the Reading, below         ┊
+   case D. What follows: the Reading                ┊
    the Reading: c1 compared with c3; one            ┊
    line, the Change with its Record                 ┊
  Judge (§5): a lesson for its Adapted Case,         ┊
@@ -500,10 +519,11 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
  Deliver (§7):                                      ┊
    check 3, after acting: the Version is 1,         ┊
    and the newest is 2: case D2. What follows:      ┊
-   an Update is made and delivered, below           ┊
-   the Update waits in temp/: Version 2, for        ┊
-   Copies at Version 1; its Update Note             ┊
-   gives the lesson as the why                      ┊
+   an Update is made and delivered                  ┊
+   makes the Update: every Copy at Version 2,       ┊
+   and an Update Note for Copies at Version 1,      ┊
+   giving the lesson as the why                     ┊
+   stages it in the System Repo's temp/             ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot,
