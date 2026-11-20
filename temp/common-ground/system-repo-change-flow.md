@@ -104,7 +104,7 @@ Each drawing is checked against these.
 | c5 | step 1's branch | 1. another Change: another Copy changed, with its Record | history between Reading 1's snapshots |
 | c6 | step 1's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c6 by fast-forward | Reading 1's stop |
 | no commit | | | 4 to 6. Read, List, Judge: the last take's clean copy compared with c6. 7. Act: c6 becomes the *settled snapshot*. 8. Deliver: the Update waits in `temp/` |
-| no commit | main | 9. the take checks, case 1: main is still the *settled snapshot*, c6, and the Version is still 1, the one the Update was built from (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *Before the take*). Its branch is cut from c6 | |
+| no commit | main | 9. the take checks, case 1: main is still the *settled snapshot*, c6, and the Version is still 1, the one the Update was built from (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *Before the Take*). Its branch is cut from c6 | |
 | c7 | the take's branch | the Update, as it arrived, committed in `temp/`, not yet in force | |
 | c8 | the take's branch | the new Adapted Case for taking, at Version 2, put in first; then the files are checked against the Update Note, with no commit | |
 | c9 | the take's branch | every Copy taken whole, at Version 2; every Record cleared | the clean copy: the next Reading's older snapshot, checked first against Version 2 |
@@ -112,12 +112,12 @@ Each drawing is checked against these.
 | c11 | the take's branch | a verdict acted on; zero or more | history between the next Reading's snapshots |
 | c12 | the take's branch | Version 2 recorded, with the commit that holds it, c9 | history between the next Reading's snapshots |
 | c13 | the take's branch | the Update and its Update Note removed from `temp/` | history between the next Reading's snapshots |
-| c14 | the take's branch, then main | the take's gate decides each Change put back, and closes; main moves to c14 by fast-forward (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *At the take, in order*) | main's latest snapshot, until step 2's work reaches main |
+| c14 | the take's branch, then main | the take's gate decides each Change put back, and closes; main moves to c14 by fast-forward (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *At the Take, in order*) | main's latest snapshot, until step 2's work reaches main |
 | c15 | step 2's branch | 10. step 2 opens on Version 2 | |
 
 #### Picture 2, the window missed
 
-Step 2 opened before the take: the Update waited in `temp/`, and the human postponed the take (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *A postponed take*). When step 2 opens before the Update is made, nothing is refused: no Update is staged while work is under way without the human's word, and it is made when work resumes, at the next opening (§7, step 1; step 2, *Before staging*).
+Step 2 opened before the take: the Update waited in `temp/`, and the human postponed the take (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *A postponed Take*). When step 2 opens before the Update is made, nothing is refused: no Update is staged while work is under way without the human's word, and it is made when work resumes, at the next opening (§7, step 1; step 2, *Before staging*).
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -198,8 +198,8 @@ Key: as in picture 1.
 | c7 | step 2's branch | 10. step 2 opens: work on Version 1 | history between Reading 2's snapshots |
 | c8 | step 2's branch | 1. a Change: a Copy changed, with its Record | history between Reading 2's snapshots |
 | c9 | step 2's branch, then main | 2, 3. the gate decides each Change, and closes; main moves to c9 by fast-forward | Reading 2's stop |
-| no commit | | 9. the take checks at step 3's opening, case 2: main is c9, not c6, so there is no take, and the System Repo says so (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *Before the take*) | |
-| no commit | | | 4 to 8 again. Read, List, Judge, Act, Deliver: c6 compared with c9; c9 becomes the *settled snapshot*; a new Update replaces the waiting one, and carries its verdicts not yet sent (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *Before the take*) |
+| no commit | | 9. the take checks at step 3's opening, case 2: main is c9, not c6, so there is no take, and the System Repo says so (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *Before the Take*) | |
+| no commit | | | 4 to 8 again. Read, List, Judge, Act, Deliver: c6 compared with c9; c9 becomes the *settled snapshot*; a new Update replaces the waiting one, and carries its verdicts not yet sent (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *Before the Take*) |
 | no commit | main | 9. the take checks, case 1: main is still Reading 2's stop, c9, and the Version is still 1, the one the Update was built from. Its branch is cut from c9 | |
 | c10 | the take's branch | the Update, as it arrived, committed in `temp/`, not yet in force | |
 | c11 | the take's branch | the new Adapted Case for taking, at Version 2, put in first; then the files are checked against the Update Note, with no commit | |
@@ -236,7 +236,7 @@ flowchart TD
 
 ### The take
 
-The System Repo takes an Update at a Plan Step's opening, on a branch of its own (`temp/common-ground/system-repo-change-simulation.md` §8, step 1). It is drawn once, here; each case that ends in an Update points at it. "Item" names an item of §8's *At the take, in order*.
+The System Repo takes an Update at a Plan Step's opening, on a branch of its own (`temp/common-ground/system-repo-change-simulation.md` §8, step 1). It is drawn once, here; each case that ends in an Update points at it. "Item" names an item of §8's *At the Take, in order*.
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
