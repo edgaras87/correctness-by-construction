@@ -220,7 +220,7 @@ flowchart TD
   start(["the human names a System Repo: a look at main"]) --> c1{"main moved past the settled snapshot?"}
   c1 -- yes --> c2{"anything new to read?"}
   c1 -- no --> c3
-  c2 -- "no: case C" --> C["move the settled snapshot up to main; nothing judged"]
+  c2 -- "no: case C" --> C["an empty list: nothing judged; Act sets the settled snapshot to main"]
   c2 -- "yes: case D, a Reading" --> D["read, list, judge, act (§4 to §6)"]
   C --> c3
   D --> c3{"Version behind?"}
@@ -311,8 +311,11 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    check 3: the Version is the newest, and          ┊
    no verdict waits                                 ┊
    case A. What follows: nothing                    ┊
- Judge (§5): none                                   ┊
- Act on the verdicts (§6): none                     ┊
+   gives: the stop, c1, and an empty list           ┊
+ Judge (§5): gives no verdicts                      ┊
+ Act on the verdicts (§6): nothing to act on;       ┊
+   the settled snapshot set to the stop, c1,        ┊
+   as it was                                        ┊
  Deliver (§7): none, nothing to send                ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
@@ -347,8 +350,11 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    is 2                                             ┊
    case B. What follows: an Update is made          ┊
    and delivered                                    ┊
- Judge (§5): none                                   ┊
- Act on the verdicts (§6): none                     ┊
+   gives: the stop, c1, and an empty list           ┊
+ Judge (§5): gives no verdicts                      ┊
+ Act on the verdicts (§6): nothing to act on;       ┊
+   the settled snapshot set to the stop, c1,        ┊
+   as it was                                        ┊
  Deliver (§7):                                      ┊
    makes the Update: every Copy at Version 2,       ┊
    and an Update Note for Copies at Version 1       ┊
@@ -399,13 +405,13 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
    check 2: c1 against c3: no Copy changed          ┊
-   the settled snapshot moves up to c3, with        ┊
-   no Reading; nothing is judged                    ┊
    check 3: the Version is the newest, and          ┊
    no verdict waits                                 ┊
    case C1. What follows: nothing else              ┊
- Judge (§5): none                                   ┊
- Act on the verdicts (§6): none                     ┊
+   gives: the stop, c3, and an empty list           ┊
+ Judge (§5): gives no verdicts                      ┊
+ Act on the verdicts (§6): nothing to act on;       ┊
+   the settled snapshot set to the stop, c3         ┊
  Deliver (§7): none, nothing to send                ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
@@ -445,14 +451,14 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
    check 2: c1 against c3: no Copy changed          ┊
-   the settled snapshot moves up to c3, with        ┊
-   no Reading; nothing is judged                    ┊
    check 3: the Version is 1, and the newest        ┊
    is 2                                             ┊
    case C2. What follows: an Update is made         ┊
    and delivered                                    ┊
- Judge (§5): none                                   ┊
- Act on the verdicts (§6): none                     ┊
+   gives: the stop, c3, and an empty list           ┊
+ Judge (§5): gives no verdicts                      ┊
+ Act on the verdicts (§6): nothing to act on;       ┊
+   the settled snapshot set to the stop, c3         ┊
  Deliver (§7):                                      ┊
    makes the Update: every Copy at Version 2,       ┊
    and an Update Note for Copies at Version 1       ┊
@@ -508,12 +514,13 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
    case D. What follows: the Reading                ┊
    the Reading: c1 compared with c3; one            ┊
    line, the Change with its Record                 ┊
- Judge (§5): a lesson for its Adapted Case,         ┊
-   depth b; the proposal holds                      ┊
+   gives: the stop, c3, and a list of one line      ┊
+ Judge (§5): one verdict: a lesson for its          ┊
+   Adapted Case, depth b; the proposal holds        ┊
  Act on the verdicts (§6): the System Kit's         ┊
    Adapted Case gains the lesson, reworded:         ┊
-   the System Kit reaches Version 2. c3             ┊
-   becomes the settled snapshot                     ┊
+   the System Kit reaches Version 2. The            ┊
+   settled snapshot set to the stop, c3             ┊
  Deliver (§7):                                      ┊
    check 3, after acting: the Version is 1,         ┊
    and the newest is 2: case D2. What follows:      ┊
