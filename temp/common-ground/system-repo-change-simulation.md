@@ -12,7 +12,7 @@
      holds has landed in the rewrite into the layers model, and git
      keeps every version. -->
 
-This document simulates the cases of a System Repo's change (§2), step by step. It holds the facts of Change until the change flow is done, and its steps' *Chosen* and *Adapted Case* fields are the rules (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
+This document simulates the cases of a System Repo's change (§2), step by step. It holds the facts of Change until the change flow is done, and its steps' *Chosen* and *Adapted Case* fields are the rules (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the System Kit takes the Change: its Adapted Case changes (depth b, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
 Ten Defined Terms are shortened here to their last word or words. The short forms belong to this file only; the problem file keeps the full Defined Terms.
 
@@ -72,8 +72,7 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | what changed | a Defined Term | not yet checked | — |
 | what changed | delivered Knowledge on Trial | not yet checked | read: compared like any Copy; decided: the original was never proven, so the Change is evidence for its trial |
 | what changed | one reason behind Changes to several Adapted Cases | not yet checked | recorded: one why, naming every Copy it changed; read: the Changes are listed together |
-| how deep | a. it stays in the System Repo: layer 4 | being simulated, §5 to §8 | — |
-| how deep | b. the System Kit's Adapted Case changes: layer 3 | not yet checked | the Update brings it to this System Repo too, whose Copy already has it |
+| how deep | b. the System Kit's Adapted Case changes: layer 3 | being simulated, §5 to §8 | — |
 | how deep | c, at layer 2. the idea above changes: its Work Domain Idea | not yet checked | the other Adapted Cases of that Work Domain Idea are surveyed, the Maintainer Repo's own only when they share it (§6, step 1) |
 | how deep | c, at layer 1. the idea above changes: its Backbone Idea | not yet checked | every Work Domain Idea on that Backbone Idea is surveyed; how far down the survey reaches is open (§6, step 1) |
 | how deep | d. the idea above already holds it: layer 3, or layer 2 | not yet checked | the loss sits at layer 2 when the Work Domain Idea lost a part its Backbone Idea holds: the Work Domain Idea is fixed from its Backbone Idea, then the Adapted Case from the Work Domain Idea. Which other texts are checked for the same loss is open (§5, step 1) |
@@ -89,6 +88,7 @@ New text of the System Repo's own, on trial, is not a case here. It comes from n
 **Known, not ruled.** These can happen, and have no rules here until practice meets them. Rules once written for them are in git. Each says what can happen, and its trigger:
 
 - **an Attention Note:** a System Repo has something for the Maintainer Repo that no Change carries: a misfit worked around with no Change made, a doubt about a line left as it is, something the System Kit lacked, a Copy no longer used. Its trigger: the first such thing a System Repo needs to tell.
+- **a Change the System Kit does not take:** judged its own, depth a, the Change staying in the System Repo at layer 4; or unsound, misread or held. It stays only in the System Repo's Copy, and the Take takes every Copy whole. Whether the Copy keeps it past the Take is not ruled. Case D1 comes back with it (§4, step 1, *A look at main*). Its trigger: the first such verdict.
 
 **Other sources.** A Change is one source of the Common Ground Problem. Others exist: a birth, a lesson found in the Maintainer Repo's own work, Knowledge on Trial a System Repo hands over at its close, and new knowledge from the human. They are left on purpose until Change is finished (`TODO.md`, the item on resuming the simulation).
 
@@ -106,16 +106,15 @@ New text of the System Repo's own, on trial, is not a case here. It comes from n
 
  How high each depth goes: 3. Judge sets it, 4. Act on the verdicts changes it
 
- depth                          a           b        c, at 2   c, at 1   d         e         f
-                                            └──────────────── not yet checked ────────────────┘
- layer 1  Backbone Idea                                        ●
- layer 2  Work Domain Idea                           ●         ●         ○         ○
- layer 3  Adapted Case                      ●        ●         ●         ●         ●
- layer 4  a System Repo's work  ●           ●        ●         ●         ●         ●         ●
- ───────────────────────────────────────────────────────────────────────────────────────────────────────
- highest layer                  4           3        2         1         3, or 2   3, or 2   none, open
- 5. Deliver brings down         a verdict,  Update   Update    Update    Update    Update    Update
-                                if one goes
+ depth                          b        c, at 2   c, at 1   d         e         f
+                                         └─────────── not yet checked ────────────┘
+ layer 1  Backbone Idea                            ●
+ layer 2  Work Domain Idea               ●         ●         ○         ○
+ layer 3  Adapted Case          ●        ●         ●         ●         ●
+ layer 4  a System Repo's work  ●        ●         ●         ●         ●         ●
+ ───────────────────────────────────────────────────────────────────────────────────────────
+ highest layer                  3        2         1         3, or 2   3, or 2   none, open
+ 5. Deliver brings down         Update   Update    Update    Update    Update    Update
 ```
 
 Key: ● is the Change's path, from its Copy up to the highest layer it changes. ○ is "or up to here", when the case asks it (the table above, rows d and e). The last row follows the layers document's arrows (`temp/common-ground/knowledge-layers.md` §3.2, *How a Change moves*). A § is a section of this document.
@@ -164,7 +163,7 @@ Two steps:
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
   - borrowed: the Record names which work found the Change, as a Decisions Log entry names its Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
-  - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the Copy keeps it (§8, step 1, *At the Take, in order*, item 4);
+  - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the System Repo makes it; what becomes of it at the Take is not ruled (§2, *Known, not ruled*);
   - changed: today nothing is written into a copy but the edit, since "a file says how to use it, never its own history", and the why goes in the Decisions Log (`docs/conventions/exchange/` §5.1). Here the why goes in the Copy's Adapted Understanding Text, which is not read while working;
   - changed: today every edit must claim to be for any CBC Run. Here the System Repo proposes, and the Maintainer Repo judges;
   - borrowed: a check fires at the commit because, before, it had to be remembered (`.claude/rules/foundation-check.md`, its header comment). That one is the Maintainer Repo's own.
@@ -227,7 +226,7 @@ Four steps:
   2. **Changes:** the Copies, compared between the older snapshot and main (step 2, step 3);
   3. **Update due:** the System Repo's Version against the newest, or a verdict that waits to go down (§7, step 1, *When one is due*).
 
-  It ends in one of six cases. When main moved, check 3 is asked last: after check 2 for C, and after the Reading is acted on for D, since a verdict to send down exists only once the Changes are judged. C and D are each split by its answer: 1, nothing follows; 2, an Update follows.
+  It ends in one of five cases. When main moved, check 3 is asked last: after check 2 for C, and after the Reading is acted on for D, since a verdict to send down exists only once the Changes are judged. C is split by its answer: 1, nothing follows; 2, an Update follows. D has one case here, D2. Only a Change judged its own, with its proposal holding, leaves nothing to send after acting, and that case, D1, is not ruled (§2, *Known, not ruled*).
 
   | Case | Main moved | Copy changed | Update due | What follows |
   |---|---|---|---|---|
@@ -235,10 +234,9 @@ Four steps:
   | B | no | — | yes | an Update is made and delivered (§7) |
   | C1 | yes | no | no | Read's list is empty: nothing is judged, and Act sets the *settled snapshot* to main (§6, step 1) |
   | C2 | yes | no | yes | Read's list is empty: nothing is judged, and Act sets the *settled snapshot* to main (§6, step 1); an Update is made and delivered (§7) |
-  | D1 | yes | yes | no, after acting | the full Reading: listed, judged and acted on |
   | D2 | yes | yes | yes, after acting | the full Reading: listed, judged and acted on; an Update is made and delivered (§7) |
 
-  Each column is one check's answer. Check 2 is asked only when main moved, so A and B show "—". An Update is due when the Version is behind the newest, or a verdict waits to go down. In A, Copies that differ from the System Kit are the System Repo's kept Changes, judged before the *settled snapshot* moved to main.
+  Each column is one check's answer. Check 2 is asked only when main moved, so A and B show "—". An Update is due when the Version is behind the newest, or a verdict waits to go down.
 
   A Plan Step open in the System Repo changes no case: main stands at the last gate, so the look finds its case by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate (§7, step 2, *Before staging*).
 
@@ -251,7 +249,7 @@ Four steps:
   - the System Repo's gate list: main moves only at a gate's close. It is there today;
   - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read, or asks what to read. For this step it says:
     - compare the named System Repo's main with where its last Reading stopped, or every System Repo's when asked;
-    - make the look's three checks, and end in one of cases A, B, C1, C2, D1 and D2.
+    - make the look's three checks, and end in one of cases A, B, C1, C2 and D2.
 - **Open:** a System Repo nobody names is not read until its work resumes. Its trigger: the first lesson found late because a System Repo went unread.
 - **Today:**
   - borrowed: a Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
@@ -297,7 +295,7 @@ Four steps:
   - c. only the Records read, with no comparison;
   - d. the commits between walked one by one.
 - **Chosen:** a. The others:
-  - b finds the same as a at the first Reading after birth or a Take. After it, a Copy that kept a Change differs from the System Kit at every Reading, and the Change is found again each time;
+  - b finds the same as a at the first Reading after birth or a Take. After it, a Change already read differs from that Version until the next Take, and is found again at every Reading before it;
   - c misses a Change with no Record, which the commit's check should have stopped, but which can still land (Failure Case 22);
   - d shows every edit on the way, and Changes the gate reversed. The gate has settled those (§3, step 2); what stands at the stop is what is read.
 
@@ -314,7 +312,7 @@ Four steps:
 - **Today:**
   - borrowed: every item is read from the copies' diff, the whys, and the lines to the Concept Deliverer (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*; `.claude/skills/exchange-read/SKILL.md`, Stage 3). Here the whys are in the diff, and nothing else is sent to the Maintainer Repo, so it is one: the diff;
   - borrowed: the CBC Run is only read, never written (`.claude/skills/exchange-read/SKILL.md`, *Gates*);
-  - changed: today the diff runs against what was delivered, the Receipt Branch or the last delivery entry (`.claude/skills/exchange-read/SKILL.md`, Stage 3). That works because a Delivery Take makes every copy equal its original again. Here a Copy keeps its Changes;
+  - changed: today the diff runs against what was delivered, the Receipt Branch or the last delivery entry (`.claude/skills/exchange-read/SKILL.md`, Stage 3). That works because a Delivery Take makes every copy equal its original again. Here a Reading may come before the Take, while a Copy still holds Changes already read;
   - borrowed: a Receipt Branch holds the delivery as it arrived, and makes the next diff exact (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 4). The clean copy does the same after a Take;
   - changed: today the whys are read from the Decisions Log. Here they are read from the Records, in the Copies.
 

@@ -53,7 +53,7 @@ flowchart TD
   c3 -- "yes: case B, C2 or D2" --> make["once work resumes, make the Update (§7, step 1)"]
   c3 -- no --> v{"a verdict waiting?"}
   v -- "yes: case B, C2 or D2" --> make
-  v -- "no: case A, C1 or D1" --> none(["the look ends"])
+  v -- "no: case A or C1" --> none(["the look ends"])
   make --> ok{"clear to stage?"}
   ok -- "no: no word, or work under way" --> wait["say what was found; wait for the word"]
   ok -- yes --> stage["stage the Update in temp/ (§7, step 2)"]
@@ -110,7 +110,7 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
 
 ### A look's cases
 
-A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read, with the look and its case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. The examples are pure: every Change is taken into the System Kit, and no Attention Note is written; the rest waits (`TODO.md`, the item on a project's own Changes and Attention Notes). Above each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
+A look at main makes three checks and ends in one of five cases: A, B, C1, C2 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read, with the look and its case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. The examples are pure, as the simulation is: every Change is taken into the System Kit (`temp/common-ground/system-repo-change-simulation.md` §2, *Known, not ruled*). Above each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
 
 #### Case A, nothing follows
 
