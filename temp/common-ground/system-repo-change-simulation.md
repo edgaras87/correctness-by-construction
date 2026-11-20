@@ -149,7 +149,7 @@ Two steps:
 
   **When it is rewritten.** The Record says the Change as it stands. A later edit rewrites it, and git keeps the old one.
 
-  **The commit.** The Change and its Record go in the same commit. A commit that changes a Copy and not its Record is stopped there. A Take is not a Change, so the check lets its commits pass: one replaces every Copy with the System Kit's and clears every Record. What the System Repo puts back at the Take is a Change, and carries a fresh Record (§8, step 1). Every Change that lasts passes through a commit. Work never committed is lost, the Change and its Record together.
+  **The commit.** The Change and its Record go in the same commit. A commit that changes a Copy and not its Record is stopped there. A Take is not a Change, so the check lets its commits pass: one replaces every Copy with the System Kit's and clears every Record. Every Change that lasts passes through a commit. Work never committed is lost, the Change and its Record together.
 
   **Weighed and dropped:** a check at each session's end, comparing the Copies with their Records. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds a Change committed in an earlier session with its Record missing or wrong.
 - **Adapted Case:** the System Repo's, for changing a Copy, itself a Copy. It loads when a Copy is touched. For this step it says:
