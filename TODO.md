@@ -214,14 +214,6 @@
       Trigger: the change flow finished, Change to Take: the first
       step of the "Define the Change idea" item.
 
-- [ ] Weigh moving check 3, "is an Update due?", from the look into
-      Deliver for every case (2026-11-20, the agent).
-      Context: check 3 sits in Read's look
-      (`temp/common-ground/system-repo-change-simulation.md` §4, step
-      1, *A look at main*), but §7, step 1, *When one is due*, defines
-      it, and case D2's picture already puts it under Deliver.
-      Trigger: due now.
-
 - [ ] Reword "the Version it was built from" in the simulation's §7
       (2026-11-20, the agent).
       Context: it names the Version the System Repo's Copies are on,

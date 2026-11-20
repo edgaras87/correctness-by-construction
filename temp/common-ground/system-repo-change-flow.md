@@ -108,7 +108,7 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
 
 ### A look's cases
 
-A look at main makes three checks and ends in one of five cases: A, B, C1, C2 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read, with the look and its case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. The examples are pure, as the simulation is: every Change is taken into the System Kit (`temp/common-ground/system-repo-change-simulation.md` §2, *Known, not ruled*). Above each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
+A look at main makes two checks, and with Deliver's check, whether an Update is due, ends in one of five cases: A, B, C1, C2 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read, with the look and its case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. The examples are pure, as the simulation is: every Change is taken into the System Kit (`temp/common-ground/system-repo-change-simulation.md` §2, *Known, not ruled*). Above each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
 
 #### Case A, nothing follows
 
@@ -131,16 +131,17 @@ A look at main makes three checks and ends in one of five cases: A, B, C1, C2 an
  Read (§4):                                         ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c1, the settled snapshot.       ┊
-   Main has not moved                               ┊
-   check 3: the Version is the newest, and          ┊
-   no verdict waits                                 ┊
-   case A. What follows: nothing                    ┊
+   Main has not moved: nothing to read              ┊
    gives: the stop, c1, and an empty list           ┊
  Judge (§5): gives no verdicts                      ┊
  Act on the verdicts (§6): nothing to act on;       ┊
    the settled snapshot set to the stop, c1,        ┊
    as it was                                        ┊
- Deliver (§7): none, nothing to send                ┊
+ Deliver (§7):                                      ┊
+   is an Update due? The Version is the             ┊
+   newest, and no verdict waits: case A.            ┊
+   What follows: nothing                            ┊
+   none, nothing to send                            ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     └─ cut ──────┐                            ◀──── step 2 opens on Version 1
@@ -169,17 +170,16 @@ A look at main makes three checks and ends in one of five cases: A, B, C1, C2 an
  Read (§4):                                         ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c1, the settled snapshot.       ┊
-   Main has not moved                               ┊
-   check 3: the Version is 1, and the newest        ┊
-   is 2                                             ┊
-   case B. What follows: an Update is made          ┊
-   and delivered                                    ┊
+   Main has not moved: nothing to read              ┊
    gives: the stop, c1, and an empty list           ┊
  Judge (§5): gives no verdicts                      ┊
  Act on the verdicts (§6): nothing to act on;       ┊
    the settled snapshot set to the stop, c1,        ┊
    as it was                                        ┊
  Deliver (§7):                                      ┊
+   is an Update due? The Version is 1, and          ┊
+   the newest is 2: case B. What follows:           ┊
+   an Update is made and delivered                  ┊
    makes the Update: every Copy at Version 2,       ┊
    and an Update Note for Copies at Version 1       ┊
    stages it in the System Repo's temp/             ┊
@@ -228,15 +228,17 @@ A look at main makes three checks and ends in one of five cases: A, B, C1, C2 an
    the look at main (§4, step 1):                   ┊
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
-   check 2: c1 against c3: no Copy changed          ┊
-   check 3: the Version is the newest, and          ┊
-   no verdict waits                                 ┊
-   case C1. What follows: nothing else              ┊
+   check 2: c1 against c3: no Copy changed:         ┊
+   nothing to read                                  ┊
    gives: the stop, c3, and an empty list           ┊
  Judge (§5): gives no verdicts                      ┊
  Act on the verdicts (§6): nothing to act on;       ┊
    the settled snapshot set to the stop, c3         ┊
- Deliver (§7): none, nothing to send                ┊
+ Deliver (§7):                                      ┊
+   is an Update due? The Version is the             ┊
+   newest, and no verdict waits: case C1.           ┊
+   What follows: nothing else                       ┊
+   none, nothing to send                            ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     └─ cut ──────┐                            ◀──── step 2 opens on Version 1
@@ -274,16 +276,16 @@ A look at main makes three checks and ends in one of five cases: A, B, C1, C2 an
    the look at main (§4, step 1):                   ┊
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
-   check 2: c1 against c3: no Copy changed          ┊
-   check 3: the Version is 1, and the newest        ┊
-   is 2                                             ┊
-   case C2. What follows: an Update is made         ┊
-   and delivered                                    ┊
+   check 2: c1 against c3: no Copy changed:         ┊
+   nothing to read                                  ┊
    gives: the stop, c3, and an empty list           ┊
  Judge (§5): gives no verdicts                      ┊
  Act on the verdicts (§6): nothing to act on;       ┊
    the settled snapshot set to the stop, c3         ┊
  Deliver (§7):                                      ┊
+   is an Update due? The Version is 1, and          ┊
+   the newest is 2: case C2. What follows:          ┊
+   an Update is made and delivered                  ┊
    makes the Update: every Copy at Version 2,       ┊
    and an Update Note for Copies at Version 1       ┊
    stages it in the System Repo's temp/             ┊
@@ -346,8 +348,8 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
    the System Kit reaches Version 2. The            ┊
    settled snapshot set to the stop, c3             ┊
  Deliver (§7):                                      ┊
-   check 3, after acting: the Version is 1,         ┊
-   and the newest is 2: case D2. What follows:      ┊
+   is an Update due? The Version is 1, and          ┊
+   the newest is 2: case D2. What follows:          ┊
    an Update is made and delivered                  ┊
    makes the Update: every Copy at Version 2,       ┊
    and an Update Note for Copies at Version 1,      ┊
