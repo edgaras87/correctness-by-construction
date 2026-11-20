@@ -236,6 +236,8 @@
         Change a System Repo keeps for itself;
       - their pictures, and case D1, come back with their rules.
       Trigger: next session, a commit plan first.
+      See: `TODO-CONVERSATION-MEMORY.md` §36, *Guesses set aside for
+      practice*.
 
 - [ ] Sweep the drafts for words that read as walking commits, where
       a Reading compares two snapshots (2026-11-13, the reviewer).

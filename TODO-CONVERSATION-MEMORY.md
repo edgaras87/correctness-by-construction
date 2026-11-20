@@ -26,7 +26,7 @@
      changed the work. It goes in the commit that works its item;
      the file stays, empty or not.
 
-     Last touched: 2026-11-19.
+     Last touched: 2026-11-20.
      Why the form is as it is: (docs/conventions/project-recording/
      §14, Conversation Memory).
      foundation: the project-recording convention -->
@@ -1668,3 +1668,46 @@ The other decisions keep their words; each is a "yes" to the agent's recommendat
 #### What the reviewer took
 
 Depths are layers, c split in two; question 4 as 4a and 4b. What follows from a rule already written is defined, by pointer; each choice of how is an Open item with its trigger, so practice is not steered by a guess. The survey, depth d and depth e follow that split; verdicts are named by layer; the work reaches three files. Depth f keeps its label. This commit plan finishes first. Where Change goes is decided next, before the change flow; which of the three ways is open.
+
+## 36. Guesses set aside for practice
+
+Item: "Set aside a project's own Changes and Attention Notes in
+`temp/common-ground/system-repo-change-simulation.md`, until practice
+meets them".
+
+### 2026-11-20
+
+#### What the reviewer said
+
+While case D2 was drawn, and the Take's putting back needed a new
+rule: "what u think if we now make this put back changes that is project related back  and just draw all cases where we take only Chnage thats pure. because now it feels overwhelming to think all at once?"
+
+Then, on case D1: "can we do now same thing with Attention Note as we did with personal chages? put them in todo for later to reconcider ?"
+
+Then, told the simulation still held both: "i think we should set aside those in simulatio and here is why. first it just a guess and we already strugle to define what could happen. i think i need facing that in practice not guess. we should mark that as we aware that could happen. now taking everything into account just make this too complex and we cant finish. also we i think in simulation, that case we took should have those, doesnt it? so we wrote rules upfront simulation it self, doesnt it?"
+
+#### What the reviewer said, edited
+
+"What do you think if we now put back the changes that are project-related, and just draw all the cases where we take only Changes that are pure? Right now it feels overwhelming to think about everything at once."
+
+"Can we now do the same with Attention Notes as we did with personal Changes, and put them in TODO to reconsider later?"
+
+"I think we should set those aside in the simulation too, and here is why. First, it is just a guess, and we already struggle to define what could happen. I need to face that in practice, not guess. We should mark that we are aware it could happen. Taking everything into account just makes this too complex, and we can't finish. Also, in the simulation, the case we took should have those, shouldn't it? So we wrote rules up front in the simulation itself, didn't we?"
+
+#### What the reviewer asked, as the agent would ask it
+
+1. Should the pictures draw only pure Changes, those taken into the System Kit, and leave a project's own Changes for later?
+2. Should Attention Notes wait in TODO the same way?
+3. Should the simulation set both aside too, as guesses to meet in practice, with a mark that they can happen?
+4. Is a project's own Change the simulated case itself, and were rules written ahead of what happened?
+
+#### What the agent added
+
+- **Pure, defined:** every Change is taken into the System Kit, so nothing stays in the System Repo's Copies and nothing is put back at the Take.
+- **Case D1 has no pure example:** with pure Changes only, every Reading ends with something to send, a new Version or a verdict that goes down, so it is D2.
+- **The simulated case is depth a,** a project's own Change: §5 to §8 are written for it. The Attention Notes came from outside the case, in §3, to carry what no Change carries: rules written ahead of anything that happened.
+- **The size:** most of §3 to §8, about 35 places by a rough count, so a commit plan, next session.
+
+#### What the reviewer took
+
+Both are set aside in the simulation, not only in the pictures, until practice meets them. The simulated case becomes depth b, the Change taken into the System Kit; their rules leave §3 to §8, and git keeps them; §2 keeps a short list of what is known and not ruled, each with its trigger. The work waits for the next session, a commit plan first.
