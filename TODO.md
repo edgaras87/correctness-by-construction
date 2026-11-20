@@ -203,15 +203,16 @@
       item there.
 
 - [ ] Remove pictures 1 and 2 from
-      `temp/common-ground/system-repo-change-flow.md`: the case
-      pictures replace them (2026-11-20, the reviewer).
-      Context: cases A, B, C1, C2 and D2 are drawn, each with its
-      answers, and the Take once, in *The Take*
-      (`temp/common-ground/system-repo-change-simulation.md` §4, step
-      1, *A look at main*). Cases B and C2 still point at picture 1's
-      c7 to c14 for the Take. Picture 2's table holds an open point
-      written nowhere else: where a postponed Take's why is written.
-      Trigger: due now.
+      `temp/common-ground/system-repo-change-flow.md`, once the
+      cases are drawn (2026-11-20, the reviewer).
+      Context: the case pictures and *The Take* replace them. They
+      stand in the flow file's §3, *Old pictures*, not Now, and are
+      not kept in step with the simulation. Picture 2 is the only
+      drawing of the missed window: the Take postponed, then its
+      check's case 2 (`temp/common-ground/system-repo-change-simulation.md`
+      §8, step 1, *Before the Take*).
+      Trigger: the change flow finished, Change to Take: the first
+      step of the "Define the Change idea" item.
 
 - [ ] Set aside a project's own Changes and Attention Notes in
       `temp/common-ground/system-repo-change-simulation.md`, until
