@@ -202,18 +202,19 @@
       simulation as it stands; the question is then drawn as an After
       item there.
 
-- [ ] Draw a look's cases B to D2 in `temp/common-ground/system-repo-change-flow.md`,
-      one at a time, as case A is drawn (2026-11-13, the reviewer).
-      Context: a look at main ends in one of six cases, A to D2
-      (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at
-      main*). Each case is a picture of commits in the Now pictures'
-      style, split by three lines into before, the case, and an
-      example of what follows. The chart *A look, to the Update
-      staged* shows how the six cases come about. The case pictures
-      replace pictures 1 and 2 (2026-11-20, the reviewer).
+- [ ] Remove pictures 1 and 2 from
+      `temp/common-ground/system-repo-change-flow.md`: the case
+      pictures replace them (2026-11-20, the reviewer).
+      Context: cases A, B, C1, C2 and D2 are drawn, each with its
+      answers, and the Take once, in *The Take*
+      (`temp/common-ground/system-repo-change-simulation.md` §4, step
+      1, *A look at main*). Cases B and C2 still point at picture 1's
+      c7 to c14 for the Take. Picture 2's table holds an open point
+      written nowhere else: where a postponed Take's why is written.
       Trigger: due now.
 
-- [ ] Draw the cases with a project's own Changes in
+- [ ] Draw the cases with a project's own Changes, with Attention
+      Notes, and case D1, in
       `temp/common-ground/system-repo-change-flow.md` (2026-11-20, the
       reviewer).
       Context: the cases are drawn pure first: every Change is taken
@@ -222,8 +223,11 @@
       project needs, depth a, stays in its Copies and comes back at
       every Take (`temp/common-ground/system-repo-change-simulation.md`
       §8, step 1, *At the Take, in order*, item 4). Both kinds at once
-      were too much to hold.
-      Trigger: the pure cases drawn, A to D2.
+      were too much to hold. Attention Notes wait too, and with them
+      case D1: with pure Changes only, every Reading ends with
+      something to send, a new Version or a verdict that goes down, so
+      it is D2.
+      Trigger: pictures 1 and 2 removed (the item above).
 
 - [ ] Sweep the drafts for words that read as walking commits, where
       a Reading compares two snapshots (2026-11-13, the reviewer).
