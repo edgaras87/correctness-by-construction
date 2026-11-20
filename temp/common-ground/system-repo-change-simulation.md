@@ -369,11 +369,13 @@ Two steps:
   - c. the human judges alone.
 - **Options,** for a line marked "no entry":
   - d. judged from the comparison alone;
-  - e. held, until the human brings its why from the System Repo.
-- **Chosen:** a and e. The others:
+  - e. held, until the human brings its why from the System Repo;
+  - f. its why looked for in the System Repo first, in the commit that made the Change and in the System Repo's records, then asked of the human. The line says where its why was found, and is held while neither gives it.
+- **Chosen:** a and f. The others:
   - b lets the agent's agreement with the proposal pass unchecked: two views agreeing is not a verdict (Failure Case 20);
   - c leaves the human to read every text the questions need, which the agent reads faster, and with nothing written down to check;
-  - d judges on a guess at the why (Failure Case 22).
+  - d judges on a guess at the why (Failure Case 22);
+  - e asks the human for what the System Repo may already have written.
 
   **What each question reads:**
   - question 0, the Change is sound: what happened, the Change, and the original part. Does it fix what happened, without breaking something the Copy did? An unsound Change goes no further: the depth questions are not asked, and the verdict says why. What becomes of the Change is not ruled (§2, *Known, not ruled*);
@@ -392,7 +394,7 @@ Two steps:
   - a question is answered from what the Change does and why, never from its wording;
   - the agent proposes each answer with what it read; the human decides;
   - lines under one reason are judged together;
-  - a line with no Record is held until its why is brought.
+  - a line with no Record: its why is looked for in the System Repo's commits and records, then asked of the human; the line says where its why was found, and is held while neither gives it.
 - **Open:**
   - how question 4 is answered, and by whom. A first guess, not a rule: 4a first, and 4b only if 4a holds. 4a is the cheaper check, inside one Work Domain, and a lesson still true naming no Work Domain is true across its own. Its trigger: depth c is checked against these steps, or the first lesson judged at layer 1;
   - which other texts are checked for a loss question 3 finds. Nothing comes down the arrow *adapt*, since the idea above did not change (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 7). Today's draft checks only the Maintainer Repo's own Adapted Case of the same idea. A first guess: the texts built on the idea that holds the part, as the survey asks (§6, step 1). If several lost it, the idea's wording may be too weak, and is reworded clearer, never narrower. Its trigger: the first depth-d verdict.
@@ -500,7 +502,6 @@ Two steps:
   - what changed since the System Repo's Version: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a file that is gone cannot say so itself;
   - the why of each System Kit change since then, whatever its source: the Reading of this System Repo or of another, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo; a change that comes from a lesson for the idea above quotes the lesson as its why. With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - the verdicts that go down, from this System Repo's own Reading only, each naming the System Repo's own Copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (§8, step 1);
-  - a question for each line held for want of its why: what happened, to the Change named. The answer comes back as a Record, and the next Reading finds it;
   - which files are taken first: the Adapted Case for taking an Update, so an Update is never taken by instructions older than it (§8, step 1, *At the Take, in order*, item 1; Failure Case 10);
   - the Update it replaces, when one was waiting.
 
@@ -513,7 +514,7 @@ Two steps:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change or a verdict;
   - it is due when the System Repo's Version is behind the newest, or a verdict goes down; the Versions are compared after Act at every look, and when the human names a System Repo or asks which are behind;
-  - it carries every Copy whole, at the new Version, and an Update Note holding the eight things listed above;
+  - it carries every Copy whole, at the new Version, and an Update Note holding the seven things listed above;
   - it cites nothing the System Repo cannot open;
   - each verdict names the System Repo's commit it judged;
   - one Reading open per System Repo, a new Reading extending it; one Update waiting, a newer one replacing it.
