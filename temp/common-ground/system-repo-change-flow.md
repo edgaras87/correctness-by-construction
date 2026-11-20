@@ -441,3 +441,71 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
 | Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
 |---|---|---|---|---|
 | yes | no | yes | no | the settled snapshot moves up to main; an Update |
+
+#### Case D2, an Update follows
+
+The example's Update brings back the System Repo's own lesson: depth b, the System Kit's Adapted Case changing (`temp/common-ground/system-repo-change-simulation.md` §2, the "how deep" rows). The Take is drawn in full, to show what it does with a Change Version 2 already holds.
+
+```
+ Maintainer Repo                                   main      branches                               System Repo
+ ───────────────                                   ────      ────────                               ───────────
+ ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ read and acted on                            ┌  c0 ●  earlier steps and Takes                ◀──── history
+                                              │     │
+ settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
+                                                    │
+                                                    ├─ cut ──────┐                            ◀──── step 1 opens on Version 1
+                                                    │            │
+                                                    │         c2 ●  a Copy changed            ◀──── a Change, with its Record; its proposal: any repo would meet it
+                                                    │            │
+                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): the Change kept; it closes
+                                                    │            │
+                                                 c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
+                                                    │
+ ── case D2 ────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ the look at main (§4, step 1):                     ┊
+ check 1: main is c3, past the settled              ┊
+ snapshot, c1. Main has moved                       ┊
+ check 2: c1 against c3: a Copy changed             ┊
+ Read (§4): c1 compared with c3; one line,          ┊
+ the Change with its Record                         ┊
+ Judge (§5): a lesson for its Adapted Case,         ┊
+ depth b; the proposal holds                        ┊
+ Act (§6): the System Kit's Adapted Case            ┊
+ gains the lesson, reworded: the System Kit         ┊
+ reaches Version 2. c3 becomes the settled          ┊
+ snapshot                                           ┊
+ check 3: the Version is 1, and the newest          ┊
+ is 2                                               ┊
+ case D2: an Update is made and delivered           ┊
+                                                    │
+ ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
+ Deliver (§7): the Update waits in temp/:           ┊
+ Version 2, for Copies at Version 1; its            ┊
+ Update Note gives the lesson as the why            ┊
+                                                    │
+                                                    ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot,
+                                                    │            │                                  and the Version is still 1
+                                                    │         c4 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force
+                                                    │            │
+                                                    │         c5 ●  the new Adapted Case      ◀──── item 1: for taking, at Version 2, put in first
+                                                    │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
+ c6, the clean copy: the next Reading               │         c6 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared, c2's among them
+ starts here, checked against Version 2             │            ┊                            ┄┄┄┄┄ item 4: nothing put back: Version 2 holds the lesson; no commit
+                                                    │            ┊                            ┄┄┄┄┄ item 5: no verdict came; the proposal held; no commit
+                                                    │         c7 ●  Version 2 recorded        ◀──── item 6: with the commit that holds it, c6
+                                                    │            │
+                                                    │         c8 ●  the Update removed        ◀──── item 7: the Update and the Update Note leave temp/
+                                                    │            │
+                                                    │         c9 ●  the gate closes           ◀──── item 8: no Change put back to decide; it asks its misfit question, and closes
+                                                    │            │
+                                                 c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
+                                                    │
+                                                    └─ cut ──────┐                            ◀──── step 2 opens on Version 2
+                                                                 │
+                                                             c10 ●  work, on Version 2        ◀──── the next look compares c6, the clean copy, with main
+```
+
+| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
+|---|---|---|---|---|
+| yes | yes | yes, after acting | no | the Reading; an Update |
