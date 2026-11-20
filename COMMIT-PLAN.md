@@ -14,7 +14,7 @@ The name exists before any text uses it: the Defined Term in the problem file, a
 
 **3–5. One commit per file group, in this order:**
 
-- **3. `docs: temp's simulation writes the Take`** — about 60 hits.
+- **3. `docs: temp's simulation writes the Take`** — about 60 hits. Four bold leads change with them: §4's *After a Take*, and §8's *Before the Take*, *At the Take, in order* and *A postponed Take*. The flow file's six Fact References to them follow in this commit, by the rename grep.
 - **4. `docs: temp's flow writes the Take`** — about 72 hits, and the flow file's list of the simulation's short forms gains Take.
 - **5. `docs: temp's drafts and TODO write the Take`** — the problem file's §2.1 block, the layers document's §3.3, and TODO's items.
 
