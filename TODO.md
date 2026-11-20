@@ -213,6 +213,18 @@
       replace pictures 1 and 2 (2026-11-20, the reviewer).
       Trigger: due now.
 
+- [ ] Draw the cases with a project's own Changes in
+      `temp/common-ground/system-repo-change-flow.md` (2026-11-20, the
+      reviewer).
+      Context: the cases are drawn pure first: every Change is taken
+      into the System Kit, so nothing stays in the System Repo's
+      Copies, and nothing is put back at the Take. A Change only its
+      project needs, depth a, stays in its Copies and comes back at
+      every Take (`temp/common-ground/system-repo-change-simulation.md`
+      §8, step 1, *At the Take, in order*, item 4). Both kinds at once
+      were too much to hold.
+      Trigger: the pure cases drawn, A to D2.
+
 - [ ] Sweep the drafts for words that read as walking commits, where
       a Reading compares two snapshots (2026-11-13, the reviewer).
       Context: a System Repo Reading compares two snapshots and never
