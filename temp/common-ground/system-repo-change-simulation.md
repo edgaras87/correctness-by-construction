@@ -240,8 +240,8 @@ Four steps:
   |---|---|---|---|---|
   | A | no | — | no | nothing |
   | B | no | — | yes | an Update is made and delivered (§7) |
-  | C1 | yes | no | no | the *settled snapshot* moves to main; nothing is judged |
-  | C2 | yes | no | yes | the *settled snapshot* moves to main; nothing is judged; an Update is made and delivered (§7) |
+  | C1 | yes | no | no | Read's list is empty: nothing is judged, and Act sets the *settled snapshot* to main (§6, step 1) |
+  | C2 | yes | no | yes | Read's list is empty: nothing is judged, and Act sets the *settled snapshot* to main (§6, step 1); an Update is made and delivered (§7) |
   | D1 | yes | yes | no, after acting | the full Reading: listed, judged and acted on |
   | D2 | yes | yes | yes, after acting | the full Reading: listed, judged and acted on; an Update is made and delivered (§7) |
 
@@ -280,15 +280,15 @@ Four steps:
 
   **Where it starts.** The older snapshot is the Register's *settled snapshot*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with the *settled snapshot* set to the start, the commit holding the Copies as they arrived (`temp/common-ground/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Change, so it stands as read. So every Reading, the first among them, starts at the *settled snapshot*, and a System Repo never read needs no rule of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation).
 
-  **Where it stops.** The stop is the System Repo's main, its latest snapshot, written as the open Reading's first line before anything is read, so a commit landing during the Reading falls into the next one.
+  **Where it stops.** The stop is the System Repo's main, its latest snapshot, written first at every look, before anything is read: as the open Reading's first line, or, when nothing is found and no draft is written, handed on with the empty list. So a commit landing during the look falls into the next one.
 
   **After a Take.** When a Take came after the *settled snapshot*, the older snapshot is the clean copy instead: the commit the Take recorded with its Version (§8, step 1, *At the Take, in order*, item 6), every Copy at that Version and nothing put back yet. It is first checked against that Version, which the Maintainer Repo holds; a difference is said before anything is read. So the Take's own changes are never read as the System Repo's, and each Change put back shows with its fresh Record, judged like any other (step 3, *Open*).
 
-  **When the stop moves.** The stop moves into the Register once the Reading's verdicts are acted on in the Maintainer Repo (§6, step 1). When they ask for no change, that is right after judging. It never moves before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all between the two snapshots is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
+  **When the stop moves.** Act on the verdicts sets the *settled snapshot* to the stop at every look, whether or not anything was read (§6, step 1). When the verdicts ask for no change, or there are none, that is right after judging. It never moves before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all between the two snapshots is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - the older snapshot is the Register's *settled snapshot*; after a Take, the clean copy, checked first against its Version;
-  - the stop is the System Repo's main, written as the Reading's first line before anything is read;
-  - the stop moves into the Register once the Reading's verdicts are acted on in the Maintainer Repo.
+  - the stop is the System Repo's main, written first at every look, before anything is read;
+  - Act sets the *settled snapshot* to the stop at every look, once the verdicts, if any, are acted on.
 - **Today:**
   - borrowed: the stop is written first, as the Reading's first line, before anything is read (`.claude/skills/exchange-read/SKILL.md`, Stage 2);
   - borrowed: the Register keeps where each System Repo lives, as today's list of CBC Runs does (`ARCHITECTURE.md` §2.5, *The CBC Runs*). It gains the *settled snapshot*;
@@ -331,7 +331,7 @@ Four steps:
 
 **Step 4. It lists what changed, nothing judged.**
 
-- **What must happen:** the Reading gets one line per Change and one per Attention Note, nothing judged. The human checks that the list is whole. Then it is judged, and its stop moves into the Register once its verdicts are acted on (step 2).
+- **What must happen:** the Reading gets one line per Change and one per Attention Note, nothing judged. The list may be empty: then no draft is written, and only the stop is handed on. The human checks that the list is whole. Then it is judged, and its stop moves into the Register once its verdicts are acted on (step 2).
 - **Options:**
   - a. one line per Change, nothing decided; judging is §5's;
   - b. each Change judged as it is listed;
@@ -375,7 +375,7 @@ Two steps:
 
 **Step 1. The list is judged.**
 
-- **What must happen:** each line of the Reading is first judged sound or not. A sound line is then judged by the four questions, in order, the cheapest first, until one holds (above). The agent proposes an answer to each, with what it read; the human decides. For depth a, question 2 holds: the Change answers that System Repo's own problem.
+- **What must happen:** each line of the Reading is first judged sound or not. A sound line is then judged by the four questions, in order, the cheapest first, until one holds (above). The agent proposes an answer to each, with what it read; the human decides. For depth a, question 2 holds: the Change answers that System Repo's own problem. An empty list gives no verdicts, and Judge hands Act only the stop.
 - **Options,** for who judges:
   - a. the agent proposes each answer, with what it read, and the human decides each line;
   - b. the agent judges, and the human looks only at the lines where the agent disagrees with the System Repo's proposal;
@@ -456,7 +456,7 @@ Two steps:
 
 **Step 1. The Maintainer Repo makes its changes. For depth a, none.**
 
-- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth a, nothing changes in the System Kit or the idea above. The verdict waits in the Reading, which stays a draft until the Update carries what the System Repo needs (§7, step 1). Once the verdicts are acted on here, right after judging for depth a, the Reading's stop moves into the Register as the *settled snapshot* (§4, step 2).
+- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth a, nothing changes in the System Kit or the idea above. The verdict waits in the Reading, which stays a draft until the Update carries what the System Repo needs (§7, step 1). Once the verdicts are acted on here, right after judging for depth a, Act sets the *settled snapshot* to the stop, in the Register (§4, step 2). It does so at every look: with no verdicts, as in cases A and C, that is all it does (§4, step 1, *A look at main*).
 - **Options,** for depth a:
   - a. nothing changes here; the verdict waits in the Reading;
   - b. nothing changes in the System Kit, and the verdict is also kept in a lasting record, by the part it changed, so a later Reading sees when another System Repo makes the same Change;
@@ -477,7 +477,7 @@ Two steps:
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says:
   - a verdict of its own changes nothing here;
   - the Reading stays a draft until the Update carries what the System Repo needs;
-  - once the verdicts are acted on, the stop moves into the Register.
+  - once the verdicts are acted on, or when there are none, the *settled snapshot* is set to the stop, in the Register.
 - **Open:**
   - at layer 1, how far down the survey reaches before the change: only the Work Domain Ideas, each checking its own Adapted Cases when it changes, or every Adapted Case below them at once. The first is cheaper; the second may catch a conflict two layers down. Its trigger: the first lesson judged at layer 1;
   - how a part of a Backbone Idea is known not to fit a whole Work Domain, when one System Repo's Change shows one Adapted Case. A first guess: the same survey, over that Work Domain Idea's Adapted Cases. Its trigger: the first depth-e verdict;
