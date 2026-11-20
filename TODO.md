@@ -72,9 +72,8 @@
       for it (`73c37b3`).
       Ideas:
       - the System Kit Update definition: the simulation's §7 sends
-        every Copy whole, as the definition says; its step 1 title,
-        the layers document's §3.1 arrow *Update* and the borrowed
-        Update of verdicts only say otherwise;
+        every Copy whole, as the definition says; the layers
+        document's §3.1 arrow *Update* still says otherwise;
       - the Defined Term System Kit Copy Change Record, in the
         problem file, retells what a Record holds and where it sits
         (the simulation's §3, step 1), and alone holds an open
