@@ -203,7 +203,7 @@ Four steps:
 3. It compares the Copies, and reads each Record.
 4. It lists what changed, nothing judged.
 
-**Snapshots.** A Reading compares two snapshots of the System Repo, and never walks its commits. The *settled snapshot* is the one already taken into account: read, judged and acted on (`temp/common-ground/common-ground-problem.md`, *Defined Terms*). It holds the Version the System Repo had recorded by then (§8, step 1, *At the Take, in order*, item 5), which may be behind the newest. So the last Version the Maintainer Repo has seen the System Repo on is read from it, never stored anywhere else. Main's latest snapshot is the one checked, and becomes the Reading's stop. The commits between them are history, opened only to understand something deeper. The clean copy a Take leaves is the one special point, used only after a Take (step 2, *After a Take*).
+**Snapshots.** A Reading compares two snapshots of the System Repo, and never walks its commits. The *settled snapshot* is the one already taken into account: read, judged and acted on (`temp/common-ground/common-ground-problem.md`, *Defined Terms*). It holds the Version the System Repo had recorded by then (§8, step 1, *At the Take, in order*, item 4), which may be behind the newest. So the last Version the Maintainer Repo has seen the System Repo on is read from it, never stored anywhere else. Main's latest snapshot is the one checked, and becomes the Reading's stop. The commits between them are history, opened only to understand something deeper. The clean copy a Take leaves is the one special point, used only after a Take (step 2, *After a Take*).
 
 **Step 1. The stretch of work ends, and the Maintainer Repo is told.**
 
@@ -274,7 +274,7 @@ Four steps:
 
   **Where it stops.** The stop is the System Repo's main, its latest snapshot, written first at every look, before anything is read: as the open Reading's first line, or, when nothing is found and no draft is written, handed on with the empty list. So a commit landing during the look falls into the next one.
 
-  **After a Take.** When a Take came after the *settled snapshot*, the older snapshot is the clean copy instead: the commit the Take recorded with its Version (§8, step 1, *At the Take, in order*, item 5), every Copy at that Version. It is first checked against that Version, which the Maintainer Repo holds; a difference is said before anything is read. So the Take's own changes are never read as the System Repo's.
+  **After a Take.** When a Take came after the *settled snapshot*, the older snapshot is the clean copy instead: the commit the Take recorded with its Version (§8, step 1, *At the Take, in order*, item 4), every Copy at that Version. It is first checked against that Version, which the Maintainer Repo holds; a difference is said before anything is read. So the Take's own changes are never read as the System Repo's.
 
   **When the stop moves.** Act on the verdicts sets the *settled snapshot* to the stop at every look, whether or not anything was read (§6, step 1). When the verdicts ask for no change, or there are none, that is right after judging. It never moves before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all between the two snapshots is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
@@ -576,14 +576,13 @@ Two steps:
 
   **A check before delivery.** The Maintainer Repo may compare the System Repo's main with the *settled snapshot* before delivery too, to save a delivery bound to fail. A System Kit moved since the Update was made is no reason to refuse it: the Update is correct, if not the latest, and the next brings the rest.
 
-  **At the Take, in order.** Once the check finds case 1, the Take cuts a branch from main, the *settled snapshot*. Its first commit is the Update as it arrived, in `temp/`, not yet in force: a record of what came, before the Take changes anything. Each item below is then a commit of its own, but items 2 and 4, a check and a reading. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§4, step 1, *Where a stretch ends*).
+  **At the Take, in order.** Once the check finds case 1, the Take cuts a branch from main, the *settled snapshot*. Its first commit is the Update as it arrived, in `temp/`, not yet in force: a record of what came, before the Take changes anything. Each item below is then a commit of its own, but item 2, a check. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§4, step 1, *Where a stretch ends*).
   1. the Adapted Case for taking an Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
   3. every Copy is taken whole, at the new Version; each path gone is removed, and each renamed is moved. Every Record is cleared: main is the *settled snapshot*, so each was read and judged. A part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
-  4. each verdict is read. One on a Change the System Kit took asks nothing more: the new Version holds the Change. What follows any other is not ruled (§2, *Known, not ruled*);
-  5. the new Version is recorded, with the commit that holds it: item 3's, the clean copy, every Copy at the new Version. So Deliver's check can compare it with the newest;
-  6. the Update and its Update Note are removed from `temp/`;
-  7. the Take's gate, last. It checks that the Take finished: the files matched the Update Note, every Copy is at the new Version, the Version is recorded, and `temp/` holds no Update.
+  4. the new Version is recorded, with the commit that holds it: item 3's, the clean copy, every Copy at the new Version. So Deliver's check can compare it with the newest;
+  5. the Update and its Update Note are removed from `temp/`;
+  6. the Take's gate, last. It checks that the Take finished: the files matched the Update Note, every Copy is at the new Version, the Version is recorded, and `temp/` holds no Update.
 
   **A postponed Take.** A Take may be postponed, with its why. Work then goes on with the old Copies. At the next opening, the Take starts again from its check, case 1 or case 2 (*Before the Take*).
 

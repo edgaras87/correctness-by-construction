@@ -90,13 +90,11 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
  c4, the clean copy: the next Reading               │         c4 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared
  starts here, checked against Version 2             │            │
-                                                    │            ┊                            ┄┄┄┄┄ item 4: each verdict read; no commit
+                                                    │         c5 ●  Version 2 recorded        ◀──── item 4: with the commit that holds it, c4
                                                     │            │
-                                                    │         c5 ●  Version 2 recorded        ◀──── item 5: with the commit that holds it, c4
+                                                    │         c6 ●  the Update removed        ◀──── item 5: the Update and the Update Note leave temp/
                                                     │            │
-                                                    │         c6 ●  the Update removed        ◀──── item 6: the Update and the Update Note leave temp/
-                                                    │            │
-                                                    │         c7 ●  the gate closes           ◀──── item 7: the gate checks that the Take finished
+                                                    │         c7 ●  the gate closes           ◀──── item 6: the gate checks that the Take finished
                                                     │            │
                                                  c7 ● ◀──────────┘                            ◀──── main moves to c7 by fast-forward, at the gate's close
                                                     │
@@ -364,12 +362,12 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
                                                     │         c5 ●  the new Adapted Case      ◀──── item 1: for taking, at Version 2, put in first
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
  c6, the clean copy: the next Reading               │         c6 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared, c2's among them
- starts here, checked against Version 2             │            ┊                            ┄┄┄┄┄ item 4: no verdict came; the proposal held; no commit
-                                                    │         c7 ●  Version 2 recorded        ◀──── item 5: with the commit that holds it, c6
+ starts here, checked against Version 2             │            │
+                                                    │         c7 ●  Version 2 recorded        ◀──── item 4: with the commit that holds it, c6
                                                     │            │
-                                                    │         c8 ●  the Update removed        ◀──── item 6: the Update and the Update Note leave temp/
+                                                    │         c8 ●  the Update removed        ◀──── item 5: the Update and the Update Note leave temp/
                                                     │            │
-                                                    │         c9 ●  the gate closes           ◀──── item 7: the gate checks that the Take finished; it closes
+                                                    │         c9 ●  the gate closes           ◀──── item 6: the gate checks that the Take finished; it closes
                                                     │            │
                                                  c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
                                                     │
