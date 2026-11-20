@@ -494,12 +494,12 @@ Two steps:
   - c leaves an unsound Change unknown to the only repo that can reverse it;
   - d sends an empty Update to carry where the Reading stopped. The *settled snapshot* is in the Register now (§4, step 2), so nothing needs carrying.
 
-  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. It runs after Act, at every look. When the human names a System Repo to update, a look runs first (§4, step 1). When the human asks which are behind, the Versions are compared, and nothing is made. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
+  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. Two Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. It runs after Act, at every look. When the human names a System Repo to update, a look runs first (§4, step 1). When the human asks which are behind, the Versions are compared, and nothing is made. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
 
   **What it is.** An Update is two things: every Copy, whole, at the new Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
   - the new Version;
   - the System Repo's *settled snapshot* it was built against, whether a Reading ran or not. The Take checks it before anything moves (§8, step 1). The Update Note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
-  - what changed since the System Repo's Version: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a file that is gone cannot say so itself;
+  - what changed since the System Repo's Version, from the same comparison of files: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a file that is gone cannot say so itself;
   - the why of each System Kit change since then, whatever its source: the Reading of this System Repo or of another, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo; a change that comes from a lesson for the idea above quotes the lesson as its why. With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - the verdicts that go down, from this System Repo's own Reading only, each naming the System Repo's own Copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (§8, step 1);
   - which files are taken first: the Adapted Case for taking an Update, so an Update is never taken by instructions older than it (§8, step 1, *At the Take, in order*, item 1; Failure Case 10);
@@ -513,7 +513,7 @@ Two steps:
 - **Adapted Case:** the Maintainer Repo's, for making an Update. It loads on the human's word to update a System Repo. For this step it says:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change or a verdict;
-  - it is due when the System Repo's Version is behind the newest, or a verdict goes down; the Versions are compared after Act at every look; naming a System Repo to update starts a look; asking which are behind only compares, and makes nothing;
+  - it is due when the System Repo's Version is behind the newest, or a verdict goes down; the Versions are compared by the System Kit's files, never by the commits, after Act at every look; naming a System Repo to update starts a look; asking which are behind only compares, and makes nothing;
   - it carries every Copy whole, at the new Version, and an Update Note holding the seven things listed above;
   - it cites nothing the System Repo cannot open;
   - each verdict names the System Repo's commit it judged;
