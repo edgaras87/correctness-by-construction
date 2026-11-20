@@ -284,11 +284,11 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
 
 ### A look's cases
 
-A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read, with the look and its case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. Above each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
+A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read, with the look and its case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. The examples are pure: every Change is taken into the System Kit, and no Attention Note is written; the rest waits (`TODO.md`, the item on a project's own Changes and Attention Notes). Above each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
 
 #### Case A, nothing follows
 
-| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
+| Main moved | Copy changed | Version behind | Verdict waiting | What follows |
 |---|---|---|---|---|
 | no | — | no | no | nothing |
 
@@ -323,7 +323,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
 
 #### Case B, an Update follows
 
-| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
+| Main moved | Copy changed | Version behind | Verdict waiting | What follows |
 |---|---|---|---|---|
 | no | — | yes | no | an Update |
 
@@ -370,7 +370,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
 
 #### Case C1, nothing to read
 
-| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
+| Main moved | Copy changed | Version behind | Verdict waiting | What follows |
 |---|---|---|---|---|
 | yes | no | no | no | the settled snapshot moves up to main; nothing else |
 
@@ -384,9 +384,9 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                                     │
                                                     ├─ cut ──────┐                            ◀──── step 1 opens on Version 1
                                                     │            │
-                                                    │         c2 ●  work, no Copy changed     ◀──── and no Attention Note written
+                                                    │         c2 ●  work, no Copy changed
                                                     │            │
-                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): no Change to decide, no misfit named; it closes
+                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): no Change to decide; it closes
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
                                                     │
@@ -398,8 +398,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    the look at main (§4, step 1):                   ┊
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
-   check 2: c1 against c3: no Copy and no           ┊
-   Attention Note changed                           ┊
+   check 2: c1 against c3: no Copy changed          ┊
    the settled snapshot moves up to c3, with        ┊
    no Reading; nothing is judged                    ┊
    check 3: the Version is the newest, and          ┊
@@ -417,7 +416,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
 
 #### Case C2, an Update follows
 
-| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
+| Main moved | Copy changed | Version behind | Verdict waiting | What follows |
 |---|---|---|---|---|
 | yes | no | yes | no | the settled snapshot moves up to main; an Update |
 
@@ -431,9 +430,9 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                                     │
                                                     ├─ cut ──────┐                            ◀──── step 1 opens on Version 1
                                                     │            │
-                                                    │         c2 ●  work, no Copy changed     ◀──── and no Attention Note written
+                                                    │         c2 ●  work, no Copy changed
                                                     │            │
-                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): no Change to decide, no misfit named; it closes
+                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): no Change to decide; it closes
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
                                                     │
@@ -445,8 +444,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    the look at main (§4, step 1):                   ┊
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
-   check 2: c1 against c3: no Copy and no           ┊
-   Attention Note changed                           ┊
+   check 2: c1 against c3: no Copy changed          ┊
    the settled snapshot moves up to c3, with        ┊
    no Reading; nothing is judged                    ┊
    check 3: the Version is 1, and the newest        ┊
@@ -476,7 +474,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
 
 #### Case D2, an Update follows
 
-| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
+| Main moved | Copy changed | Version behind | Verdict waiting | What follows |
 |---|---|---|---|---|
 | yes | yes | yes, after acting | no | the Reading; an Update |
 
@@ -539,7 +537,7 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
                                                     │            │
                                                     │         c8 ●  the Update removed        ◀──── item 7: the Update and the Update Note leave temp/
                                                     │            │
-                                                    │         c9 ●  the gate closes           ◀──── item 8: no Change put back to decide; it asks its misfit question, and closes
+                                                    │         c9 ●  the gate closes           ◀──── item 8: no Change put back to decide; it closes
                                                     │            │
                                                  c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
                                                     │
