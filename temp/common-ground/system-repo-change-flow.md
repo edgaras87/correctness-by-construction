@@ -282,9 +282,13 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
 
 ### A look's cases
 
-A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into what came before, the case, and an example of what follows. Under each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
+A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read, with the look and its case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. Above each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
 
 #### Case A, nothing follows
+
+| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
+|---|---|---|---|---|
+| no | — | no | no | nothing |
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -294,25 +298,29 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                               │     │
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
                                                     │
- ── case A ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the look at main (§4, step 1):                     ┊
- check 1: main is c1, the settled snapshot.         ┊
- Main has not moved                                 ┊
- check 3: the Version is the newest,                ┊
- and no verdict waits                               ┊
- case A: nothing follows                            ┊
+ ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ Read (§4):                                         ┊
+   the look at main (§4, step 1):                   ┊
+   check 1: main is c1, the settled snapshot.       ┊
+   Main has not moved                               ┊
+   check 3: the Version is the newest, and          ┊
+   no verdict waits                                 ┊
+   case A: nothing follows                          ┊
+ Judge (§5): none                                   ┊
+ Act on the verdicts (§6): none                     ┊
+ Deliver (§7): none, nothing to send                ┊
                                                     │
- ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
+ ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     └─ cut ──────┐                            ◀──── step 2 opens on Version 1
                                                                  │
                                                              c2 ●  work, on Version 1         ◀──── it reaches main at its gate; the next look sees it
 ```
 
+#### Case B, an Update follows
+
 | Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
 |---|---|---|---|---|
-| no | — | no | no | nothing |
-
-#### Case B, an Update follows
+| no | — | yes | no | an Update |
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -322,19 +330,21 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                               │     │
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
                                                     │
- ── case B ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the look at main (§4, step 1):                     ┊
- check 1: main is c1, the settled snapshot.         ┊
- Main has not moved                                 ┊
- check 3: the Version is 1, and the newest          ┊
- is 2                                               ┊
- case B: an Update is made and delivered            ┊
-                                                    │
- ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
+ ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ Read (§4):                                         ┊
+   the look at main (§4, step 1):                   ┊
+   check 1: main is c1, the settled snapshot.       ┊
+   Main has not moved                               ┊
+   check 3: the Version is 1, and the newest        ┊
+   is 2                                             ┊
+   case B: an Update is made and delivered          ┊
+ Judge (§5): none                                   ┊
+ Act on the verdicts (§6): none                     ┊
  Deliver (§7), once work resumes: the Update        ┊
- waits in temp/: Version 2, for Copies at           ┊
- Version 1                                          ┊
+   waits in temp/: Version 2, for Copies at         ┊
+   Version 1                                        ┊
                                                     │
+ ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c1, the settled snapshot,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
                                                     │         c2 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
@@ -348,11 +358,11 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                                              c10 ●  work, on Version 2
 ```
 
+#### Case C1, nothing to read
+
 | Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
 |---|---|---|---|---|
-| no | — | yes | no | an Update |
-
-#### Case C1, nothing to read
+| yes | no | no | no | the settled snapshot moves up to main; nothing else |
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -370,29 +380,33 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
                                                     │
- ── case C1 ────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the look at main (§4, step 1):                     ┊
- check 1: main is c3, past the settled              ┊
- snapshot, c1. Main has moved                       ┊
- check 2: c1 against c3: no Copy and no             ┊
- Attention Note changed                             ┊
- the settled snapshot moves up to c3, with          ┊
- no Reading; nothing is judged                      ┊
- check 3: the Version is the newest, and            ┊
- no verdict waits                                   ┊
- case C1: nothing else follows                      ┊
+ ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ Read (§4):                                         ┊
+   the look at main (§4, step 1):                   ┊
+   check 1: main is c3, past the settled            ┊
+   snapshot, c1. Main has moved                     ┊
+   check 2: c1 against c3: no Copy and no           ┊
+   Attention Note changed                           ┊
+   the settled snapshot moves up to c3, with        ┊
+   no Reading; nothing is judged                    ┊
+   check 3: the Version is the newest, and          ┊
+   no verdict waits                                 ┊
+   case C1: nothing else follows                    ┊
+ Judge (§5): none                                   ┊
+ Act on the verdicts (§6): none                     ┊
+ Deliver (§7): none, nothing to send                ┊
                                                     │
- ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
+ ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     └─ cut ──────┐                            ◀──── step 2 opens on Version 1
                                                                  │
                                                               c4 ●  work, on Version 1        ◀──── the next look compares c3, the settled snapshot, with main
 ```
 
+#### Case C2, an Update follows
+
 | Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
 |---|---|---|---|---|
-| yes | no | no | no | the settled snapshot moves up to main; nothing else |
-
-#### Case C2, an Update follows
+| yes | no | yes | no | the settled snapshot moves up to main; an Update |
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -410,23 +424,25 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
                                                     │
- ── case C2 ────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the look at main (§4, step 1):                     ┊
- check 1: main is c3, past the settled              ┊
- snapshot, c1. Main has moved                       ┊
- check 2: c1 against c3: no Copy and no             ┊
- Attention Note changed                             ┊
- the settled snapshot moves up to c3, with          ┊
- no Reading; nothing is judged                      ┊
- check 3: the Version is 1, and the newest          ┊
- is 2                                               ┊
- case C2: an Update is made and delivered           ┊
-                                                    │
- ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
+ ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ Read (§4):                                         ┊
+   the look at main (§4, step 1):                   ┊
+   check 1: main is c3, past the settled            ┊
+   snapshot, c1. Main has moved                     ┊
+   check 2: c1 against c3: no Copy and no           ┊
+   Attention Note changed                           ┊
+   the settled snapshot moves up to c3, with        ┊
+   no Reading; nothing is judged                    ┊
+   check 3: the Version is 1, and the newest        ┊
+   is 2                                             ┊
+   case C2: an Update is made and delivered         ┊
+ Judge (§5): none                                   ┊
+ Act on the verdicts (§6): none                     ┊
  Deliver (§7), once work resumes: the Update        ┊
- waits in temp/: Version 2, for Copies at           ┊
- Version 1                                          ┊
+   waits in temp/: Version 2, for Copies at         ┊
+   Version 1                                        ┊
                                                     │
+ ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
                                                     │         c4 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
@@ -440,11 +456,11 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
                                                              c12 ●  work, on Version 2
 ```
 
+#### Case D2, an Update follows
+
 | Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
 |---|---|---|---|---|
-| yes | no | yes | no | the settled snapshot moves up to main; an Update |
-
-#### Case D2, an Update follows
+| yes | yes | yes, after acting | no | the Reading; an Update |
 
 The example's Update brings back the System Repo's own lesson: depth b, the System Kit's Adapted Case changing (`temp/common-ground/system-repo-change-simulation.md` §2, the "how deep" rows). The Take is drawn in full, to show what it does with a Change Version 2 already holds.
 
@@ -464,28 +480,29 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
                                                     │
- ── case D2 ────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the look at main (§4, step 1):                     ┊
- check 1: main is c3, past the settled              ┊
- snapshot, c1. Main has moved                       ┊
- check 2: c1 against c3: a Copy changed             ┊
- Read (§4): c1 compared with c3; one line,          ┊
- the Change with its Record                         ┊
+ ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
+ Read (§4):                                         ┊
+   the look at main (§4, step 1):                   ┊
+   check 1: main is c3, past the settled            ┊
+   snapshot, c1. Main has moved                     ┊
+   check 2: c1 against c3: a Copy changed           ┊
+   case D: a Reading                                ┊
+   the Reading: c1 compared with c3; one            ┊
+   line, the Change with its Record                 ┊
  Judge (§5): a lesson for its Adapted Case,         ┊
- depth b; the proposal holds                        ┊
- Act (§6): the System Kit's Adapted Case            ┊
- gains the lesson, reworded: the System Kit         ┊
- reaches Version 2. c3 becomes the settled          ┊
- snapshot                                           ┊
- check 3: the Version is 1, and the newest          ┊
- is 2                                               ┊
- case D2: an Update is made and delivered           ┊
+   depth b; the proposal holds                      ┊
+ Act on the verdicts (§6): the System Kit's         ┊
+   Adapted Case gains the lesson, reworded:         ┊
+   the System Kit reaches Version 2. c3             ┊
+   becomes the settled snapshot                     ┊
+ Deliver (§7):                                      ┊
+   check 3, after acting: the Version is 1,         ┊
+   and the newest is 2: case D2                     ┊
+   the Update waits in temp/: Version 2, for        ┊
+   Copies at Version 1; its Update Note             ┊
+   gives the lesson as the why                      ┊
                                                     │
- ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
- Deliver (§7): the Update waits in temp/:           ┊
- Version 2, for Copies at Version 1; its            ┊
- Update Note gives the lesson as the why            ┊
-                                                    │
+ ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot,
                                                     │            │                                  and the Version is still 1
                                                     │         c4 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force
@@ -507,7 +524,3 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
                                                                  │
                                                              c10 ●  work, on Version 2        ◀──── the next look compares c6, the clean copy, with main
 ```
-
-| Main moved | Copy or Attention Note changed | Version behind | Verdict waiting | What follows |
-|---|---|---|---|---|
-| yes | yes | yes, after acting | no | the Reading; an Update |
