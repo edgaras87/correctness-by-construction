@@ -72,7 +72,6 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | what changed | a Defined Term | not yet checked | — |
 | what changed | delivered Knowledge on Trial | not yet checked | read: compared like any Copy; decided: the original was never proven, so the Change is evidence for its trial |
 | what changed | one reason behind Changes to several Adapted Cases | not yet checked | recorded: one why, naming every Copy it changed; read: the Changes are listed together |
-| what changed | an Attention Note with no Change | not yet checked | read: a line of its own, from the Attention Notes' place, with no Copy's diff; a Copy no longer used shows only so, since nothing in its file changes; decided: questions 1 to 4 fit a doubt about a line, not a lack or an unused Copy |
 | how deep | a. it stays in the System Repo: layer 4 | being simulated, §5 to §8 | — |
 | how deep | b. the System Kit's Adapted Case changes: layer 3 | not yet checked | the Update brings it to this System Repo too, whose Copy already has it |
 | how deep | c, at layer 2. the idea above changes: its Work Domain Idea | not yet checked | the other Adapted Cases of that Work Domain Idea are surveyed, the Maintainer Repo's own only when they share it (§6, step 1) |
@@ -86,6 +85,10 @@ How deep a Change goes is how high it goes: each depth names the highest layer i
 A stretch of work may hold several Changes, alike or mixed. Each is recorded and read on its own, so they add no row but one: one reason behind Changes to several Adapted Cases.
 
 New text of the System Repo's own, on trial, is not a case here. It comes from no Copy, so it is not a Change. It is Knowledge on Trial, handed over at the System Repo's close (`temp/common-ground/knowledge-layers.md` §2.3, *The Adapted Case layer*). It is one of the other sources (below).
+
+**Known, not ruled.** These can happen, and have no rules here until practice meets them. Rules once written for them are in git. Each says what can happen, and its trigger:
+
+- **an Attention Note:** a System Repo has something for the Maintainer Repo that no Change carries: a misfit worked around with no Change made, a doubt about a line left as it is, something the System Kit lacked, a Copy no longer used. Its trigger: the first such thing a System Repo needs to tell.
 
 **Other sources.** A Change is one source of the Common Ground Problem. Others exist: a birth, a lesson found in the Maintainer Repo's own work, Knowledge on Trial a System Repo hands over at its close, and new knowledge from the human. They are left on purpose until Change is finished (`TODO.md`, the item on resuming the simulation).
 
@@ -124,8 +127,6 @@ Two steps:
 1. A Copy is changed, with its Record.
 2. The Plan Step's gate decides each Change.
 
-**The Attention Note.** An Attention Note carries what has no Change to carry it: a misfit with none made, a doubt about a line left as it is, something the System Kit lacked, a Copy no longer used, or anything the human wants the Maintainer Repo to check. It may be written at any time, not only at the gate. Attention Notes are kept in one known place in the System Repo's records. An Attention Note never lists a Change: the Record already says it, and a second line would have to follow every edit and reversal. One about a Change points at its Record. A Reading reads the Attention Notes as well as the Copies (§4, step 3).
-
 **Step 1. A Copy is changed, with its Record.**
 
 - **What must happen:** during its own work, the System Repo finds that a Copy does not fit what happened. The human decides the Change, the agent proposing. It is made then, and its Record is written with it. The Change may be edited or reversed later, its Record with it.
@@ -152,18 +153,16 @@ Two steps:
   **The commit.** The Change and its Record go in the same commit. A commit that changes a Copy and not its Record is stopped there. A Take is not a Change, so the check lets its commits pass: one replaces every Copy with the System Kit's and clears every Record. What the System Repo puts back at the Take is a Change, and carries a fresh Record (§8, step 1). Every Change that lasts passes through a commit. Work never committed is lost, the Change and its Record together.
 
   **Weighed and dropped:** a check at each session's end, comparing the Copies with their Records. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds a Change committed in an earlier session with its Record missing or wrong.
-- **Adapted Case:** the System Repo's, for changing a Copy, itself a Copy. It loads when a Copy, or the Attention Notes' place, is touched. For this step it says:
+- **Adapted Case:** the System Repo's, for changing a Copy, itself a Copy. It loads when a Copy is touched. For this step it says:
   - a Copy changes only when the work shows it does not fit, never ahead;
   - the Record is written with the Change, with its four parts, and goes in the same commit;
   - the Record sits in a footer of the Copy's Adapted Understanding Text, and says the Change as it stands: a later edit rewrites it;
   - a commit that changes a Copy and not its Record is stopped. A Take is not a Change, and passes;
   - what happened is written concretely, in the System Repo's own words;
-  - whether the Change is its own or any repo's is a proposal, never a verdict;
-  - an Attention Note, written at any time, carries only what has no Change (above, *The Attention Note*).
+  - whether the Change is its own or any repo's is a proposal, never a verdict.
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
-  - changed: today its paths do not hold `TODO.md`, where *To the deliverer* is. Here the Attention Notes' place loads it too;
   - borrowed: the Record names which work found the Change, as a Decisions Log entry names its Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
   - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the Copy keeps it (§8, step 1, *At the Take, in order*, item 4);
   - changed: today nothing is written into a copy but the edit, since "a file says how to use it, never its own history", and the why goes in the Decisions Log (`docs/conventions/exchange/` §5.1). Here the why goes in the Copy's Adapted Understanding Text, which is not read while working;
@@ -184,18 +183,14 @@ Two steps:
   - d adds nothing to the Records: a Reading compares every Copy, and reads the Records. It comes back if a Reading misses a changed Copy because nothing asked it to look.
 
   **After the decision.** A Change kept as it is needs nothing more. One edited gets its Record rewritten. When Changes share one reason, the reason is written in full in one Record, and each other one says how its own Copy was affected and points at that one. If the one holding the reason is reversed, the reason moves to one that stays, and the others point there.
-
-  **The gate's question.** The gate also asks once: did an Adapted Case used in this step not fit, with no Change made? A misfit worked around without a Change leaves nothing for the comparison to find. The human, who saw every session of the step, answers. Each misfit named is written as an Attention Note for the Maintainer Repo.
 - **Adapted Case:** the System Repo's, for closing a Plan Step, its gate list. It loads when the Plan Step closes. For this step it says:
   - compare the Copies against where the Plan Step began, and check each Change has a Record that says it;
   - the human decides each Change: kept, edited or reversed, its Record with it;
-  - Changes with one reason are linked, and the reason never stays only in a reversed Record;
-  - ask once whether an Adapted Case did not fit, with no Change made, and write each as an Attention Note.
+  - Changes with one reason are linked, and the reason never stays only in a reversed Record.
 - **Open:** whether a reversed Change leaves a trace for the Maintainer Repo. One tried and undone may be evidence that the Copy was right. Its trigger: the first Change reversed at a gate.
 - **Today:**
   - borrowed: the gate is a list of outcomes checked at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
   - borrowed: each Approach on Trial the Plan Step used has its dated note at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). A Record checked at the gate is the same shape;
-  - borrowed: a line the CBC Run disagrees with is quoted under *To the deliverer*, and a copy it does not use gets a CBC Run Ask there (`delivery/container/.claude/rules/delivered-copies.md`, rule 1). Attention Notes can go under that heading;
   - changed: today the close writes one CBC Run Ask per edited copy (`delivery/container/.claude/rules/delivered-copies.md`, rule 4), option d. Here the Records are what a Reading reads;
   - changed: today nothing at the close looks at the step's changes to copies together.
 
@@ -229,12 +224,12 @@ Four steps:
 
   **A look at main.** d is a look at one System Repo. It makes three checks:
   1. **main moved:** the System Repo's main against the *settled snapshot*;
-  2. **Changes:** the Copies and the Attention Notes' place, compared between the older snapshot and main (step 2, step 3);
+  2. **Changes:** the Copies, compared between the older snapshot and main (step 2, step 3);
   3. **Update due:** the System Repo's Version against the newest, or a verdict that waits to go down (§7, step 1, *When one is due*).
 
   It ends in one of six cases. When main moved, check 3 is asked last: after check 2 for C, and after the Reading is acted on for D, since a verdict to send down exists only once the Changes are judged. C and D are each split by its answer: 1, nothing follows; 2, an Update follows.
 
-  | Case | Main moved | Copy or Attention Note changed | Update due | What follows |
+  | Case | Main moved | Copy changed | Update due | What follows |
   |---|---|---|---|---|
   | A | no | — | no | nothing |
   | B | no | — | yes | an Update is made and delivered (§7) |
@@ -295,7 +290,7 @@ Four steps:
 
 **Step 3. The Maintainer Repo compares the Copies, and reads each Record.**
 
-- **What must happen:** between the two snapshots, the older one and the stop, the agent finds every Change in the System Kit's folders, a new file among them, pairs each with its Record, and reads the Attention Notes new since the older snapshot. It only reads the System Repo, and writes only in the Maintainer Repo.
+- **What must happen:** between the two snapshots, the older one and the stop, the agent finds every Change in the System Kit's folders, a new file among them, and pairs each with its Record. It only reads the System Repo, and writes only in the Maintainer Repo.
 - **Options,** for how Changes are found:
   - a. each Copy compared between two snapshots of the System Repo's own: the older one and the stop;
   - b. each Copy compared with the Version the Copies came from;
@@ -310,17 +305,14 @@ Four steps:
   - a Change with its Record: read with its what, what happened, which work found it, and the System Repo's proposal;
   - a Change with no Record: read from the comparison alone, and marked "no entry";
   - a Record changed with no Change, as when a why is rewritten: read as a change of its why.
-
-  **The Attention Notes.** The Attention Notes are found the same way: their place in the System Repo's records is compared between the two snapshots, and each new Attention Note is read beside the Changes. One about a Change points at its Record, so the two are read together.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - compare each Copy between the older snapshot and the stop; the commits between are history, opened only to understand something deeper;
   - pair each Change with its Record; mark one with none "no entry";
   - read a Record changed with no Change as a change of its why;
-  - compare the Attention Notes' place between the two snapshots, and read each new Attention Note;
   - judge nothing.
 - **Open:** every Change is judged, a Change put back at a Take among them, and the cost of judging it again is accepted. A Change that comes back at Take after Take and is never settled is judged each time. Its trigger: the first Change judged twice with no settling.
 - **Today:**
-  - borrowed: every item is read from the copies' diff, the whys, and the lines to the Concept Deliverer (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*; `.claude/skills/exchange-read/SKILL.md`, Stage 3). Here the whys are in the diff, so it is two: the diff and the Attention Notes;
+  - borrowed: every item is read from the copies' diff, the whys, and the lines to the Concept Deliverer (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*; `.claude/skills/exchange-read/SKILL.md`, Stage 3). Here the whys are in the diff, and nothing else is sent to the Maintainer Repo, so it is one: the diff;
   - borrowed: the CBC Run is only read, never written (`.claude/skills/exchange-read/SKILL.md`, *Gates*);
   - changed: today the diff runs against what was delivered, the Receipt Branch or the last delivery entry (`.claude/skills/exchange-read/SKILL.md`, Stage 3). That works because a Delivery Take makes every copy equal its original again. Here a Copy keeps its Changes;
   - borrowed: a Receipt Branch holds the delivery as it arrived, and makes the next diff exact (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 4). The clean copy does the same after a Take;
@@ -328,7 +320,7 @@ Four steps:
 
 **Step 4. It lists what changed, nothing judged.**
 
-- **What must happen:** the Reading gets one line per Change and one per Attention Note, nothing judged. The list may be empty: then no draft is written, and only the stop is handed on. The human checks that the list is whole. Then it is judged, and its stop moves into the Register once its verdicts are acted on (step 2).
+- **What must happen:** the Reading gets one line per Change, nothing judged. The list may be empty: then no draft is written, and only the stop is handed on. The human checks that the list is whole. Then it is judged, and its stop moves into the Register once its verdicts are acted on (step 2).
 - **Options:**
   - a. one line per Change, nothing decided; judging is §5's;
   - b. each Change judged as it is listed;
@@ -339,16 +331,16 @@ Four steps:
   - c takes the proposal for the verdict, and a lesson for every repo stays in one System Repo (Failure Case 20);
   - d merges two Changes to one Copy, and one of their reasons is lost.
 
-  **What a line holds.** A line holds what step 3 found: the Copy and its part, what it says now, what happened, which work found it, and the System Repo's proposal, marked as one. A Change with no Record says "no entry". Changes linked by one reason are listed together, under it. An Attention Note is a line of its own; one about a Change sits with it.
+  **What a line holds.** A line holds what step 3 found: the Copy and its part, what it says now, what happened, which work found it, and the System Repo's proposal, marked as one. A Change with no Record says "no entry". Changes linked by one reason are listed together, under it.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
-  - one line per Change and per Attention Note, nothing judged;
+  - one line per Change, nothing judged;
   - linked Changes listed together, under their reason;
-  - a line holds what step 3 found, the proposal marked as one; an Attention Note about a Change sits with it;
+  - a line holds what step 3 found, the proposal marked as one;
   - the human checks the list is whole; the stop moves into the Register once the verdicts are acted on.
 - **Today:**
   - borrowed: one line per item, what it is and where, nothing decided (`.claude/skills/exchange-read/SKILL.md`, Stage 4 and *Gates*);
   - borrowed: the Reading is a draft to its form (`.claude/rules/exchange-reading.md`);
-  - changed: today a line is one per edit, per CBC Run Ask and per finding, read from three places (`.claude/skills/exchange-read/SKILL.md`, Stage 3). Here a line is one per Change, with its Record, and one per Attention Note;
+  - changed: today a line is one per edit, per CBC Run Ask and per finding, read from three places (`.claude/skills/exchange-read/SKILL.md`, Stage 3). Here a line is one per Change, with its Record;
   - changed: today the proposal is not asked for: every edit must claim to be for any CBC Run (`docs/conventions/exchange/` §5.1). Here each line carries it, as input to judging.
 
 ## 5. Judge
@@ -514,7 +506,7 @@ Two steps:
   - what changed since the System Repo's Version: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a file that is gone cannot say so itself;
   - the why of each System Kit change since then, whatever its source: the Reading of this System Repo or of another, or the Maintainer Repo's own work. Each why stands on its own, and names no other repo; a change that comes from a lesson for the idea above quotes the lesson as its why. With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - the verdicts that go down, from this System Repo's own Reading only, each naming the System Repo's own Copy and part, the System Repo's commit it judged, and what the System Repo may do now. The commit is the System Repo's own, so it can open it, and see whether the part has changed since (§8, step 1);
-  - a question for each line held for want of its why: what happened, to the Change named. The answer comes back as a Record or an Attention Note, and the next Reading finds it;
+  - a question for each line held for want of its why: what happened, to the Change named. The answer comes back as a Record, and the next Reading finds it;
   - which files are taken first: the Adapted Case for taking an Update, so an Update is never taken by instructions older than it (§8, step 1, *At the Take, in order*, item 1; Failure Case 10);
   - the Update it replaces, when one was waiting.
 
@@ -605,10 +597,10 @@ Two steps:
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
   3. every Copy is taken whole, at the new Version; each path gone is removed, and each renamed is moved. Every Record is cleared: main is the *settled snapshot*, so each was read and judged;
   4. what the System Repo still needs is re-applied, each with a fresh Record written against the new Version: what did not fit, what it keeps, which work found it, and its proposal. An old Record's what-happened may be carried in a line. Only a Change with evidence is re-applied: its old one, or a clash with the new Version. A Change whose lesson the Update Note gives as a why is held by the new Version, and is not re-applied; only what the new Version leaves out comes back, with its evidence (§7, step 1, *What it is*). A System Kit change on a part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
-  5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its Record saying which. One naming a part that changed after its commit is checked, with an Attention Note when it no longer applies. A question is answered as a Record or an Attention Note;
+  5. each verdict is read. An unsound one is the System Repo's to reverse or keep, its Record saying which. One naming a part that changed after its commit is checked. A question is answered as a Record;
   6. the new Version is recorded, with the commit that holds it: item 3's, the clean copy, every Copy at the new Version and nothing put back yet. So the next Update finds its base;
   7. the Update and its Update Note are removed from `temp/`;
-  8. the Take's gate, last. It does for the Changes put back and the verdicts acted on what a Plan Step's gate does for its Changes (§3, step 2): the Copies compared against the clean copy, item 3's commit, each Change shown with its fresh Record and decided, Changes with one reason linked, and the misfit question asked against the new Version.
+  8. the Take's gate, last. It does for the Changes put back and the verdicts acted on what a Plan Step's gate does for its Changes (§3, step 2): the Copies compared against the clean copy, item 3's commit, each Change shown with its fresh Record and decided, and Changes with one reason linked.
 
   **A postponed Take.** A Take may be postponed, with its why. Work then goes on with the old Copies. At the next opening, the Take starts again from its check, case 1 or case 2 (*Before the Take*).
 
