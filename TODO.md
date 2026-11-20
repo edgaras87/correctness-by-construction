@@ -214,39 +214,13 @@
       Trigger: the change flow finished, Change to Take: the first
       step of the "Define the Change idea" item.
 
-- [ ] Set aside a project's own Changes and Attention Notes in
-      `temp/common-ground/system-repo-change-simulation.md`, until
-      practice meets them (2026-11-20, the reviewer).
-      Context: both are guesses. The simulated case, depth a, is a
-      project's own Change, kept in its Copies and put back at every
-      Take; §3's Attention Notes were written ahead of anything that
-      happened. Taking every case into account at once made the
-      simulation too complex to finish. The flow file already draws
-      only pure cases, every Change taken into the System Kit (its
-      *A look's cases*), and case D1 has none: with pure Changes
-      only, every Reading ends with something to send.
-      Ideas:
-      - the simulated case becomes depth b, the Change taken into the
-        System Kit, as case D2 draws it; §5 to §8's "for depth a"
-        lines follow;
-      - the rules for both leave §3 to §8: the Attention Note, the
-        gate's misfit question, the pairing of notes, the Take's
-        putting back; git keeps every word;
-      - §2 keeps a short list of what is known and not ruled, each
-        entry with what can happen and its trigger, such as the first
-        Change a System Repo keeps for itself;
-      - their pictures, and case D1, come back with their rules.
-      Trigger: next session, a commit plan first.
-      See: `TODO-CONVERSATION-MEMORY.md` §36, *Guesses set aside for
-      practice*.
-
 - [ ] Weigh moving check 3, "is an Update due?", from the look into
       Deliver for every case (2026-11-20, the agent).
       Context: check 3 sits in Read's look
       (`temp/common-ground/system-repo-change-simulation.md` §4, step
       1, *A look at main*), but §7, step 1, *When one is due*, defines
       it, and case D2's picture already puts it under Deliver.
-      Trigger: the set-aside item above done.
+      Trigger: due now.
 
 - [ ] Reword "the Version it was built from" in the simulation's §7
       (2026-11-20, the agent).
@@ -254,7 +228,7 @@
       but reads as making the new Version out of the old. The flow
       file's pictures dropped it for "Version 2, for Copies at
       Version 1".
-      Trigger: the set-aside item above, which rewrites §5 to §8.
+      Trigger: due now.
 
 - [ ] Sweep the drafts for words that read as walking commits, where
       a Reading compares two snapshots (2026-11-13, the reviewer).
