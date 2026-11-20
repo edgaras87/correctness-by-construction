@@ -236,14 +236,16 @@ Four steps:
 
   It ends in one of six cases. When main moved, check 3 is asked last: after check 2 for C, and after the Reading is acted on for D, since a verdict to send down exists only once the Changes are judged. C and D are each split by its answer: 1, nothing follows; 2, an Update follows.
 
-  | Case | Main moved | What the look finds | What follows |
-  |---|---|---|---|
-  | A | no | the Version is the newest, and no verdict waits | nothing. Copies that differ from the System Kit are the System Repo's kept Changes, judged before the *settled snapshot* moved to main |
-  | B | no | the Version is behind, or a verdict waits | an Update is made and delivered (§7) |
-  | C1 | yes | no Copy and no Attention Note changed between the two snapshots; then nothing due | the *settled snapshot* moves to main; nothing is judged; nothing else follows |
-  | C2 | yes | no Copy and no Attention Note changed between the two snapshots; then an Update due | the *settled snapshot* moves to main; nothing is judged; an Update is made and delivered (§7) |
-  | D1 | yes | Changes or Attention Notes between the two snapshots; after acting, nothing due | the full Reading: listed, judged and acted on; no Update |
-  | D2 | yes | Changes or Attention Notes between the two snapshots; after acting, an Update due | the full Reading: listed, judged and acted on; an Update is made and delivered (§7) |
+  | Case | Main moved | Copy or Attention Note changed | Update due | What follows |
+  |---|---|---|---|---|
+  | A | no | — | no | nothing |
+  | B | no | — | yes | an Update is made and delivered (§7) |
+  | C1 | yes | no | no | the *settled snapshot* moves to main; nothing is judged |
+  | C2 | yes | no | yes | the *settled snapshot* moves to main; nothing is judged; an Update is made and delivered (§7) |
+  | D1 | yes | yes | no, after acting | the full Reading: listed, judged and acted on |
+  | D2 | yes | yes | yes, after acting | the full Reading: listed, judged and acted on; an Update is made and delivered (§7) |
+
+  Each column is one check's answer. Check 2 is asked only when main moved, so A and B show "—". An Update is due when the Version is behind the newest, or a verdict waits to go down. In A, Copies that differ from the System Kit are the System Repo's kept Changes, judged before the *settled snapshot* moved to main.
 
   A Plan Step open in the System Repo changes no case: main stands at the last gate, so the look finds its case by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate (§7, step 2, *Before staging*).
 
