@@ -14,7 +14,7 @@
 
 This document simulates the cases of a System Repo's change (§2), step by step. It holds the facts of Change until the change flow is done, and its steps' *Chosen* and *Adapted Case* fields are the rules (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the Change stays in the System Repo (depth a, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
-Nine Defined Terms are shortened here to their last word or words. The short forms belong to this file only; the problem file keeps the full Defined Terms.
+Ten Defined Terms are shortened here to their last word or words. The short forms belong to this file only; the problem file keeps the full Defined Terms.
 
 | Short form | Defined Term |
 |---|---|
@@ -24,6 +24,7 @@ Nine Defined Terms are shortened here to their last word or words. The short for
 | Attention Note | System Kit Attention Note |
 | Update | System Kit Update |
 | Update Note | System Kit Update Note |
+| Take | System Kit Update Take |
 | Version | System Kit Version |
 | Reading | System Repo Reading |
 | Register | Maintainer Repo Register |
