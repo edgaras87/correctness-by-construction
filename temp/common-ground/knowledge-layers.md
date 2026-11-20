@@ -203,7 +203,7 @@ None is answered by the text above. Each is answered when work reaches it: its a
 
 1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, once close to a second Maintainer Repo, ended as a rebuild and is kept only as a source (ADR-0082). §2.3.1 says what a Maintainer Kit would be made from.
 2. **What layer 4 holds:** the general document's question (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6). Here it is met at a System Repo's design of its system and its own Knowledge on Trial.
-3. **A name for the movement:** what runs from a Change to the take of the next Update, as one thing (§3.2), so the simulation can name it.
+3. **A name for the movement:** what runs from a Change to the Take of the next Update, as one thing (§3.2), so the simulation can name it.
 4. **Where Judge sits:** §3.2 puts it at layer 3, since a Change is judged against the Adapted Case its Copy came from. The sources say only that it runs in the Maintainer Repo.
 5. **Depth d and the layer above:** which other texts are checked for a loss that Judge's question 3 finds, and whether the idea above is reworded clearer when several lost the same part. Its first guess and its trigger are the simulation's (`temp/common-ground/system-repo-change-simulation.md` §5, *Judge*, step 1, *Open*).
 6. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.

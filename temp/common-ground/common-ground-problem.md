@@ -164,7 +164,7 @@ How a System Kit Copy Change read back travels, in six parts, is below (*A Syste
 
 #### A System Repo's change
 
-A System Kit Copy Change travels from a System Repo to the Maintainer Repo, is judged there, and what the System Repo needs comes back in a System Kit Update. Its six parts, from the change to the take, their rules, its cases and the sources it leaves aside are the simulation's, their one home until the change flow is done (`temp/common-ground/system-repo-change-simulation.md`).
+A System Kit Copy Change travels from a System Repo to the Maintainer Repo, is judged there, and what the System Repo needs comes back in a System Kit Update. Its six parts, from the change to the Take, their rules, its cases and the sources it leaves aside are the simulation's, their one home until the change flow is done (`temp/common-ground/system-repo-change-simulation.md`).
 
 ### 2.2 Today and what to check
 

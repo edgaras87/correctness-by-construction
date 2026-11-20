@@ -182,7 +182,7 @@
       See: `temp/common-ground/knowledge-layers.md` §4, *Open questions*,
       "A Maintainer Kit".
 
-- [ ] Decide whether the Maintainer Repo must check the take's
+- [ ] Decide whether the Maintainer Repo must check the Take's
       window before it delivers a System Kit Update, and what the
       check looks at (2026-11-13, the reviewer).
       Context: the Maintainer Repo may compare the System Repo's main
@@ -191,7 +191,7 @@
       before delivery*). Staging waits for the human's word when
       work is under way (§7, step 2, *Before staging*). A Plan Step
       on a branch leaves main at the stop, so a check of main alone
-      passes. A take postponed after delivery goes stale whatever
+      passes. A Take postponed after delivery goes stale whatever
       the check found.
       Ideas:
       - the check is a must: a missed window means no delivery, and
