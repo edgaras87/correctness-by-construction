@@ -213,21 +213,29 @@
       written nowhere else: where a postponed Take's why is written.
       Trigger: due now.
 
-- [ ] Draw the cases with a project's own Changes, with Attention
-      Notes, and case D1, in
-      `temp/common-ground/system-repo-change-flow.md` (2026-11-20, the
-      reviewer).
-      Context: the cases are drawn pure first: every Change is taken
-      into the System Kit, so nothing stays in the System Repo's
-      Copies, and nothing is put back at the Take. A Change only its
-      project needs, depth a, stays in its Copies and comes back at
-      every Take (`temp/common-ground/system-repo-change-simulation.md`
-      §8, step 1, *At the Take, in order*, item 4). Both kinds at once
-      were too much to hold. Attention Notes wait too, and with them
-      case D1: with pure Changes only, every Reading ends with
-      something to send, a new Version or a verdict that goes down, so
-      it is D2.
-      Trigger: pictures 1 and 2 removed (the item above).
+- [ ] Set aside a project's own Changes and Attention Notes in
+      `temp/common-ground/system-repo-change-simulation.md`, until
+      practice meets them (2026-11-20, the reviewer).
+      Context: both are guesses. The simulated case, depth a, is a
+      project's own Change, kept in its Copies and put back at every
+      Take; §3's Attention Notes were written ahead of anything that
+      happened. Taking every case into account at once made the
+      simulation too complex to finish. The flow file already draws
+      only pure cases, every Change taken into the System Kit (its
+      *A look's cases*), and case D1 has none: with pure Changes
+      only, every Reading ends with something to send.
+      Ideas:
+      - the simulated case becomes depth b, the Change taken into the
+        System Kit, as case D2 draws it; §5 to §8's "for depth a"
+        lines follow;
+      - the rules for both leave §3 to §8: the Attention Note, the
+        gate's misfit question, the pairing of notes, the Take's
+        putting back; git keeps every word;
+      - §2 keeps a short list of what is known and not ruled, each
+        entry with what can happen and its trigger, such as the first
+        Change a System Repo keeps for itself;
+      - their pictures, and case D1, come back with their rules.
+      Trigger: next session, a commit plan first.
 
 - [ ] Sweep the drafts for words that read as walking commits, where
       a Reading compares two snapshots (2026-11-13, the reviewer).
