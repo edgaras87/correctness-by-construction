@@ -305,7 +305,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    Main has not moved                               ┊
    check 3: the Version is the newest, and          ┊
    no verdict waits                                 ┊
-   case A: nothing follows                          ┊
+   case A. What follows: nothing                    ┊
  Judge (§5): none                                   ┊
  Act on the verdicts (§6): none                     ┊
  Deliver (§7): none, nothing to send                ┊
@@ -337,7 +337,8 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    Main has not moved                               ┊
    check 3: the Version is 1, and the newest        ┊
    is 2                                             ┊
-   case B: an Update is made and delivered          ┊
+   case B. What follows: an Update is made          ┊
+   and delivered, in Deliver below                  ┊
  Judge (§5): none                                   ┊
  Act on the verdicts (§6): none                     ┊
  Deliver (§7), once work resumes: the Update        ┊
@@ -391,7 +392,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    no Reading; nothing is judged                    ┊
    check 3: the Version is the newest, and          ┊
    no verdict waits                                 ┊
-   case C1: nothing else follows                    ┊
+   case C1. What follows: nothing else              ┊
  Judge (§5): none                                   ┊
  Act on the verdicts (§6): none                     ┊
  Deliver (§7): none, nothing to send                ┊
@@ -435,7 +436,8 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
    no Reading; nothing is judged                    ┊
    check 3: the Version is 1, and the newest        ┊
    is 2                                             ┊
-   case C2: an Update is made and delivered         ┊
+   case C2. What follows: an Update is made         ┊
+   and delivered, in Deliver below                  ┊
  Judge (§5): none                                   ┊
  Act on the verdicts (§6): none                     ┊
  Deliver (§7), once work resumes: the Update        ┊
@@ -486,7 +488,7 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
    check 2: c1 against c3: a Copy changed           ┊
-   case D: a Reading                                ┊
+   case D. What follows: the Reading, below         ┊
    the Reading: c1 compared with c3; one            ┊
    line, the Change with its Record                 ┊
  Judge (§5): a lesson for its Adapted Case,         ┊
@@ -497,7 +499,8 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
    becomes the settled snapshot                     ┊
  Deliver (§7):                                      ┊
    check 3, after acting: the Version is 1,         ┊
-   and the newest is 2: case D2                     ┊
+   and the newest is 2: case D2. What follows:      ┊
+   an Update is made and delivered, below           ┊
    the Update waits in temp/: Version 2, for        ┊
    Copies at Version 1; its Update Note             ┊
    gives the lesson as the why                      ┊
