@@ -26,6 +26,14 @@ Each drawing is checked against these.
 
 ## 2. Now
 
+**Key,** for every commit picture below:
+
+- **commits:** imaginary commits of the System Repo, oldest first, top to bottom.
+- **main, branches:** a step's or a take's branch is cut from main, to its right. At its gate's close, main moves to the branch's last commit by fast-forward: a commit named again on main is no new commit.
+- **Maintainer Repo:** a bracket joins the two snapshots a Reading compares: its top is the older, the *settled snapshot* or, after a take, the clean copy, and its bottom is the stop. The commits between are history, opened only to understand something deeper. A Reading writes nothing in the System Repo. A bracket closes when the verdicts are acted on, and its stop becomes the *settled snapshot*. The *settled snapshot* is not a take. The Maintainer Repo's parts stand between the commits, since it makes none.
+- **System Repo:** its parts, each pointing at the commit it acts on.
+- **┊:** no commit.
+
 ### The System Repo's commits
 
 #### Picture 1, the take inside its window
@@ -81,13 +89,8 @@ Each drawing is checked against these.
                                                              c15 ●  work, on Version 2
 ```
 
-**Key:**
+**Key:** as at the top of §2, and:
 
-- **commits:** imaginary commits of the System Repo, oldest first, top to bottom.
-- **main, branches:** a step's or a take's branch is cut from main, to its right. At its gate's close, main moves to the branch's last commit by fast-forward: a commit named again on main is no new commit.
-- **Maintainer Repo:** a bracket joins the two snapshots a Reading compares: its top is the older, the *settled snapshot* or, after a take, the clean copy, and its bottom is the stop. The commits between are history, opened only to understand something deeper. A Reading writes nothing in the System Repo. A bracket closes when the verdicts are acted on, and its stop becomes the *settled snapshot*. The *settled snapshot* is not a take. The Maintainer Repo's parts stand between the commits, since it makes none.
-- **System Repo:** its parts, each pointing at the commit it acts on.
-- **┊:** no commit.
 - **numbers:** 1 a Change, 2 the gate decides, 3 the gate closes, 4 Read, 5 List, 6 Judge, 7 Act, 8 Deliver, 9 the take, 10 the next Plan Step opens.
 - **Versions:** the picture starts in the middle of the work. c0 and c1 were read and acted on, the *settled snapshot* is c1, and c2 is the last take, which brought Version 1 by the same parts as picture 1's take from c7 to c14. Its branch is not drawn. The Copies stay at Version 1 until a take brings Version 2.
 
@@ -235,17 +238,16 @@ flowchart TD
 
 The System Repo takes an Update at a Plan Step's opening, on a branch of its own (`temp/common-ground/system-repo-change-simulation.md` §8, step 1). It is drawn once, here; each case that ends in an Update points at it. "Item" names an item of §8's *At the take, in order*.
 
-Key: as in picture 1.
-
 ```
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
                          settled snapshot ─▶     c1 ●  the last gate closed                   ◀──── the Copies at Version 1
-                                                    ┊                                         ┄┄┄┄┄ 8. Deliver: the Update waits in temp/, built from Version 1 against c1
+ Deliver (§7): the Update waits in temp/,           ┊
+ built from Version 1 against c1                    ┊
                                                     │
  ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ┊                                         ┄┄┄┄┄ 9. at a Plan Step's opening, the take checks first, from the Update Note:
+                                                    ┊                                         ┄┄┄┄┄ at a Plan Step's opening, the take checks first, from the Update Note:
                                                     ┊                                               case 1, main is still c1, the settled snapshot, and the Version is still 1:
                                                     ┊                                               the Update is taken, below. Case 2, anything else: no take; the System Repo
                                                     ┊                                               says so, and the human has it looked at. The take may also be postponed,
@@ -273,7 +275,7 @@ Key: as in picture 1.
                                                  c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    └─ cut ──────┐                            ◀──── 10. the next Plan Step opens on Version 2
+                                                    └─ cut ──────┐                            ◀──── the next Plan Step opens on Version 2
                                                                  │
                                                              c10 ●  work, on Version 2
 ```
@@ -281,8 +283,6 @@ Key: as in picture 1.
 ### A look's cases
 
 A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into what came before, the case, and an example of what follows. Under each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
-
-Key: as in picture 1.
 
 #### Case A, nothing follows
 
@@ -295,7 +295,7 @@ Key: as in picture 1.
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
                                                     │
  ── case A ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- 4. the look at main:                               ┊
+ the look at main (§4, step 1):                     ┊
  check 1: main is c1, the settled snapshot.         ┊
  Main has not moved                                 ┊
  check 3: the Version is the newest,                ┊
@@ -303,7 +303,7 @@ Key: as in picture 1.
  case A: nothing follows                            ┊
                                                     │
  ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 1
+                                                    └─ cut ──────┐                            ◀──── step 2 opens on Version 1
                                                                  │
                                                              c2 ●  work, on Version 1         ◀──── it reaches main at its gate; the next look sees it
 ```
@@ -323,7 +323,7 @@ Key: as in picture 1.
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
                                                     │
  ── case B ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- 4. the look at main:                               ┊
+ the look at main (§4, step 1):                     ┊
  check 1: main is c1, the settled snapshot.         ┊
  Main has not moved                                 ┊
  check 3: the Version is 1, and the newest          ┊
@@ -331,10 +331,10 @@ Key: as in picture 1.
  case B: an Update is made and delivered            ┊
                                                     │
  ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
- 8. Deliver, once work resumes: the Update          ┊
+ Deliver (§7), once work resumes: the Update        ┊
  waits in temp/, built from Version 1               ┊
                                                     │
-                                                    ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still c1, the settled snapshot,
+                                                    ├─ cut ──────┐                            ◀──── the take (§8), once it checks: main is still c1, the settled snapshot,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
                                                     │         c2 ●  the Update, as it arrived ◀──── the take's commits, in the order of picture 1's c7 to c14
                                                     │            │                            ◀──── c3 to c8, not drawn
@@ -342,7 +342,7 @@ Key: as in picture 1.
                                                     │            │
                                                  c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
                                                     │
-                                                    └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
+                                                    └─ cut ──────┐                            ◀──── step 2 opens on Version 2
                                                                  │
                                                              c10 ●  work, on Version 2
 ```
@@ -361,16 +361,16 @@ Key: as in picture 1.
                                               │     │
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
                                                     │
-                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+                                                    ├─ cut ──────┐                            ◀──── step 1 opens on Version 1
                                                     │            │
                                                     │         c2 ●  work, no Copy changed     ◀──── and no Attention Note written
                                                     │            │
-                                                    │         c3 ●  the gate closes           ◀──── 2, 3. no Change to decide, no misfit named; the gate closes
+                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): no Change to decide, no misfit named; it closes
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
                                                     │
  ── case C1 ────────────────────────────────────────┼───────────────────────────────────────────────────────────
- 4. the look at main:                               ┊
+ the look at main (§4, step 1):                     ┊
  check 1: main is c3, past the settled              ┊
  snapshot, c1. Main has moved                       ┊
  check 2: c1 against c3: no Copy and no             ┊
@@ -382,7 +382,7 @@ Key: as in picture 1.
  case C1: nothing else follows                      ┊
                                                     │
  ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 1
+                                                    └─ cut ──────┐                            ◀──── step 2 opens on Version 1
                                                                  │
                                                               c4 ●  work, on Version 1        ◀──── the next look compares c3, the settled snapshot, with main
 ```
@@ -401,16 +401,16 @@ Key: as in picture 1.
                                               │     │
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
                                                     │
-                                                    ├─ cut ──────┐                            ◀──── 10. step 1 opens on Version 1
+                                                    ├─ cut ──────┐                            ◀──── step 1 opens on Version 1
                                                     │            │
                                                     │         c2 ●  work, no Copy changed     ◀──── and no Attention Note written
                                                     │            │
-                                                    │         c3 ●  the gate closes           ◀──── 2, 3. no Change to decide, no misfit named; the gate closes
+                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): no Change to decide, no misfit named; it closes
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
                                                     │
  ── case C2 ────────────────────────────────────────┼───────────────────────────────────────────────────────────
- 4. the look at main:                               ┊
+ the look at main (§4, step 1):                     ┊
  check 1: main is c3, past the settled              ┊
  snapshot, c1. Main has moved                       ┊
  check 2: c1 against c3: no Copy and no             ┊
@@ -422,10 +422,10 @@ Key: as in picture 1.
  case C2: an Update is made and delivered           ┊
                                                     │
  ── after, an example ──────────────────────────────┼───────────────────────────────────────────────────────────
- 8. Deliver, once work resumes: the Update          ┊
+ Deliver (§7), once work resumes: the Update        ┊
  waits in temp/, built from Version 1               ┊
                                                     │
-                                                    ├─ cut ──────┐                            ◀──── 9. Take, once it checks: main is still c3, the settled snapshot,
+                                                    ├─ cut ──────┐                            ◀──── the take (§8), once it checks: main is still c3, the settled snapshot,
                                                     │            │                                  and the Version is still 1, the one the Update was built from
                                                     │         c4 ●  the Update, as it arrived ◀──── the take's commits, in the order of picture 1's c7 to c14
                                                     │            │                            ◀──── c5 to c10, not drawn
@@ -433,7 +433,7 @@ Key: as in picture 1.
                                                     │            │
                                                 c11 ● ◀──────────┘                            ◀──── main moves to c11 by fast-forward, at the gate's close
                                                     │
-                                                    └─ cut ──────┐                            ◀──── 10. step 2 opens on Version 2
+                                                    └─ cut ──────┐                            ◀──── step 2 opens on Version 2
                                                                  │
                                                              c12 ●  work, on Version 2
 ```
