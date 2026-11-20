@@ -90,22 +90,20 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
  c4, the clean copy: the next Reading               │         c4 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared
  starts here, checked against Version 2             │            │
-                                                    │         c5 ●  a Change put back         ◀──── item 4: one per Change still needed, with a fresh Record; zero or more
+                                                    │            ┊                            ┄┄┄┄┄ item 4: each verdict read; no commit
                                                     │            │
-                                                    │         c6 ●  a verdict acted on        ◀──── item 5: unsound reversed or kept, a question answered; zero or more
+                                                    │         c5 ●  Version 2 recorded        ◀──── item 5: with the commit that holds it, c4
                                                     │            │
-                                                    │         c7 ●  Version 2 recorded        ◀──── item 6: with the commit that holds it, c4
+                                                    │         c6 ●  the Update removed        ◀──── item 6: the Update and the Update Note leave temp/
                                                     │            │
-                                                    │         c8 ●  the Update removed        ◀──── item 7: the Update and the Update Note leave temp/
+                                                    │         c7 ●  the gate closes           ◀──── item 7: the gate checks that the Take finished
                                                     │            │
-                                                    │         c9 ●  the gate closes           ◀──── item 8: the gate decides each Change put back and verdict acted on
-                                                    │            │
-                                                 c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
+                                                 c7 ● ◀──────────┘                            ◀──── main moves to c7 by fast-forward, at the gate's close
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     └─ cut ──────┐                            ◀──── the next Plan Step opens on Version 2
                                                                  │
-                                                             c10 ●  work, on Version 2
+                                                              c8 ●  work, on Version 2
 ```
 
 ### A look's cases
@@ -191,7 +189,7 @@ A look at main makes three checks and ends in one of five cases: A, B, C1, C2 an
                                                     │            │                                  and the Version is still 1, the one the Update was built from
                                                     │         c2 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
                                                     │            │                            ◀──── c3 to c8, not drawn
-                                                    │         c9 ●  the gate closes           ◀──── the Take's gate decides each Change put back, and closes
+                                                    │         c9 ●  the gate closes           ◀──── the Take's gate checks that the Take finished, and closes
                                                     │            │
                                                  c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
                                                     │
@@ -295,7 +293,7 @@ A look at main makes three checks and ends in one of five cases: A, B, C1, C2 an
                                                     │            │                                  and the Version is still 1, the one the Update was built from
                                                     │         c4 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
                                                     │            │                            ◀──── c5 to c10, not drawn
-                                                    │        c11 ●  the gate closes           ◀──── the Take's gate decides each Change put back, and closes
+                                                    │        c11 ●  the gate closes           ◀──── the Take's gate checks that the Take finished, and closes
                                                     │            │
                                                 c11 ● ◀──────────┘                            ◀──── main moves to c11 by fast-forward, at the gate's close
                                                     │
@@ -364,13 +362,12 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
                                                     │         c5 ●  the new Adapted Case      ◀──── item 1: for taking, at Version 2, put in first
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
  c6, the clean copy: the next Reading               │         c6 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared, c2's among them
- starts here, checked against Version 2             │            ┊                            ┄┄┄┄┄ item 4: nothing put back: Version 2 holds the lesson; no commit
-                                                    │            ┊                            ┄┄┄┄┄ item 5: no verdict came; the proposal held; no commit
-                                                    │         c7 ●  Version 2 recorded        ◀──── item 6: with the commit that holds it, c6
+ starts here, checked against Version 2             │            ┊                            ┄┄┄┄┄ item 4: no verdict came; the proposal held; no commit
+                                                    │         c7 ●  Version 2 recorded        ◀──── item 5: with the commit that holds it, c6
                                                     │            │
-                                                    │         c8 ●  the Update removed        ◀──── item 7: the Update and the Update Note leave temp/
+                                                    │         c8 ●  the Update removed        ◀──── item 6: the Update and the Update Note leave temp/
                                                     │            │
-                                                    │         c9 ●  the gate closes           ◀──── item 8: no Change put back to decide; it closes
+                                                    │         c9 ●  the gate closes           ◀──── item 7: the gate checks that the Take finished; it closes
                                                     │            │
                                                  c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
                                                     │
