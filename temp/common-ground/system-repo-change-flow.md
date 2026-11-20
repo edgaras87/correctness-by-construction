@@ -51,9 +51,7 @@ flowchart TD
   C --> c3
   D --> c3{"Version behind?"}
   c3 -- "yes: case B, C2 or D2" --> make["once work resumes, make the Update (§7, step 1)"]
-  c3 -- no --> v{"a verdict waiting?"}
-  v -- "yes: case B, C2 or D2" --> make
-  v -- "no: case A or C1" --> none(["the look ends"])
+  c3 -- "no: case A or C1" --> none(["the look ends"])
   make --> ok{"clear to stage?"}
   ok -- "no: no word, or work under way" --> wait["say what was found; wait for the word"]
   ok -- yes --> stage["stage the Update in temp/ (§7, step 2)"]
@@ -110,9 +108,9 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
 
 #### Case A, nothing follows
 
-| Main moved | Copy changed | Version behind | Verdict waiting | What follows |
-|---|---|---|---|---|
-| no | — | no | no | nothing |
+| Main moved | Copy changed | Version behind | What follows |
+|---|---|---|---|
+| no | — | no | nothing |
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -137,7 +135,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
    as it was                                        ┊
  Deliver (§7):                                      ┊
    is an Update due? The Version is the             ┊
-   newest, and no verdict waits: case A.            ┊
+   newest: case A.                                  ┊
    What follows: nothing                            ┊
    none, nothing to send                            ┊
                                                     │
@@ -149,9 +147,9 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
 
 #### Case B, an Update follows
 
-| Main moved | Copy changed | Version behind | Verdict waiting | What follows |
-|---|---|---|---|---|
-| no | — | yes | no | an Update |
+| Main moved | Copy changed | Version behind | What follows |
+|---|---|---|---|
+| no | — | yes | an Update |
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -198,9 +196,9 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
 
 #### Case C1, nothing to read
 
-| Main moved | Copy changed | Version behind | Verdict waiting | What follows |
-|---|---|---|---|---|
-| yes | no | no | no | the settled snapshot moves up to main; nothing else |
+| Main moved | Copy changed | Version behind | What follows |
+|---|---|---|---|
+| yes | no | no | the settled snapshot moves up to main; nothing else |
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -234,7 +232,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
    the settled snapshot set to the stop, c3         ┊
  Deliver (§7):                                      ┊
    is an Update due? The Version is the             ┊
-   newest, and no verdict waits: case C1.           ┊
+   newest: case C1.                                 ┊
    What follows: nothing else                       ┊
    none, nothing to send                            ┊
                                                     │
@@ -246,9 +244,9 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
 
 #### Case C2, an Update follows
 
-| Main moved | Copy changed | Version behind | Verdict waiting | What follows |
-|---|---|---|---|---|
-| yes | no | yes | no | the settled snapshot moves up to main; an Update |
+| Main moved | Copy changed | Version behind | What follows |
+|---|---|---|---|
+| yes | no | yes | the settled snapshot moves up to main; an Update |
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -304,9 +302,9 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
 
 #### Case D2, an Update follows
 
-| Main moved | Copy changed | Version behind | Verdict waiting | What follows |
-|---|---|---|---|---|
-| yes | yes | yes, after acting | no | the Reading; an Update |
+| Main moved | Copy changed | Version behind | What follows |
+|---|---|---|---|
+| yes | yes | yes, after acting | the Reading; an Update |
 
 The example's Update brings back the System Repo's own lesson: depth b, the System Kit's Adapted Case changing (`temp/common-ground/system-repo-change-simulation.md` §2, the "how deep" rows). The Take is drawn in full, to show what it does with a Change Version 2 already holds.
 
