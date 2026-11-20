@@ -239,6 +239,22 @@
       See: `TODO-CONVERSATION-MEMORY.md` §36, *Guesses set aside for
       practice*.
 
+- [ ] Weigh moving check 3, "is an Update due?", from the look into
+      Deliver for every case (2026-11-20, the agent).
+      Context: check 3 sits in Read's look
+      (`temp/common-ground/system-repo-change-simulation.md` §4, step
+      1, *A look at main*), but §7, step 1, *When one is due*, defines
+      it, and case D2's picture already puts it under Deliver.
+      Trigger: the set-aside item above done.
+
+- [ ] Reword "the Version it was built from" in the simulation's §7
+      (2026-11-20, the agent).
+      Context: it names the Version the System Repo's Copies are on,
+      but reads as making the new Version out of the old. The flow
+      file's pictures dropped it for "Version 2, for Copies at
+      Version 1".
+      Trigger: the set-aside item above, which rewrites §5 to §8.
+
 - [ ] Sweep the drafts for words that read as walking commits, where
       a Reading compares two snapshots (2026-11-13, the reviewer).
       Context: a System Repo Reading compares two snapshots and never
