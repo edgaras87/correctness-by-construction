@@ -290,7 +290,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- read and acted on                            ┌  c0 ●  earlier work, with Changes             ◀──── kept Changes: judged before the settled snapshot moved to main
+ read and acted on                            ┌  c0 ●  earlier steps and Takes                ◀──── history
                                               │     │
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
                                                     │
@@ -318,7 +318,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- read and acted on                            ┌  c0 ●  earlier work, with Changes             ◀──── kept Changes: judged before the settled snapshot moved to main
+ read and acted on                            ┌  c0 ●  earlier steps and Takes                ◀──── history
                                               │     │
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
                                                     │
@@ -357,7 +357,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- read and acted on                            ┌  c0 ●  earlier work, with Changes             ◀──── kept Changes: judged before the settled snapshot moved to main
+ read and acted on                            ┌  c0 ●  earlier steps and Takes                ◀──── history
                                               │     │
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
                                                     │
@@ -397,7 +397,7 @@ A look at main makes three checks and ends in one of six cases: A, B, C1, C2, D1
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- read and acted on                            ┌  c0 ●  earlier work, with Changes             ◀──── kept Changes: judged before the settled snapshot moved to main
+ read and acted on                            ┌  c0 ●  earlier steps and Takes                ◀──── history
                                               │     │
  settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
                                                     │
