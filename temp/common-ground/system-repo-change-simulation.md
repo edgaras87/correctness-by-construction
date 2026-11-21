@@ -494,7 +494,15 @@ Two steps:
   - a sends an empty Update to carry where the Reading stopped. The *settled snapshot* is in the Register now (§4, step 2), so nothing needs carrying;
   - c answers, at a look for lessons, a question nothing acts on: nothing is made until work resumes, and the System Kit may move again before then.
 
-  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. Two Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. It runs only when the human names a System Repo to update, after the look that starts (§4, step 1). Before the look, the agent checks that none of the System Repo's Plan Steps is open. If one is, it says so, and nothing runs. Finishing that step would move main, and the Take would then refuse the Update (§8, step 1, *Before the Take*). The look comes before the Update: an Update is built against the *settled snapshot*, and a Change still unread would make the Take refuse it (§8, step 1, *Before the Take*). When the human asks which are behind, the Versions are compared, and nothing is made. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is made for, or sent to, a System Repo whose work has not resumed. Work resumes when the human, about to open the System Repo's next Plan Step, names it to update; neither repo can see that moment itself (§8, step 1, *Before the Take*).
+  **When one is due.** An Update is due when the System Repo's Version, which it holds, is behind the newest. It is found by comparison, as §4, step 1 finds work to read. Two Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself.
+
+  The check runs only when work resumes. Work resumes when the human, about to open the System Repo's next Plan Step, names it to update; neither repo can see that moment itself (§8, step 1, *Before the Take*). Nothing is made for, or sent to, a System Repo whose work has not resumed. Then, in order:
+  1. a look runs (§4, step 1). It comes first: an Update is built against the *settled snapshot*, and a Change still unread would make the Take refuse it;
+  2. the Versions are compared. When the System Repo's is the newest, nothing follows;
+  3. the agent checks that none of the System Repo's Plan Steps is open. If one is, it says so, and makes nothing: finishing that step would move main, and the Take would refuse the Update too (§8, step 1, *Before the Take*);
+  4. the Update is made.
+
+  When the human only asks which System Repos are behind, the Versions are compared, and nothing is made.
 
   **What it is.** An Update is two things: every Copy, whole, at the newest Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
   - the new Version;
@@ -512,8 +520,8 @@ Two steps:
 - **Adapted Case:** the Maintainer Repo's, for making an Update. It loads on the human's word to update a System Repo. For this step it says:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change;
-  - before the look, check that none of the System Repo's Plan Steps is open; if one is, say so and stop;
-  - it is due when the System Repo's Version is behind the newest; the Versions are compared by the System Kit's files, never by the commits, only when the human names a System Repo to update, after the look that starts; asking which are behind only compares, and makes nothing;
+  - it is due when the System Repo's Version is behind the newest; the Versions are compared by the System Kit's files, never by the commits; it is checked only when the human names a System Repo to update, once the look has run; asking which are behind only compares, and makes nothing;
+  - before making the Update, check that none of the System Repo's Plan Steps is open; if one is, say so, and make nothing;
   - it carries every Copy whole, at the new Version, and an Update Note holding the six things listed above;
   - it cites nothing the System Repo cannot open;
   - one Reading open per System Repo, a new Reading extending it; one Update waiting, a newer one replacing it.
