@@ -68,11 +68,11 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 
 | Kind | Case | Status | Differs so far |
 |---|---|---|---|
-| what changed | one Adapted Case, any of its texts | being simulated, §3 to §8 | — |
+| what changed | one Adapted Case, any of its texts | simulated, §3 to §8 | — |
 | what changed | a Defined Term | not yet checked | — |
 | what changed | delivered Knowledge on Trial | not yet checked | read: compared like any Copy; decided: the original was never proven, so the Change is evidence for its trial |
 | what changed | one reason behind Changes to several Adapted Cases | not yet checked | recorded: one why, naming every Copy it changed; read: the Changes are listed together |
-| how deep | b. the System Kit's Adapted Case changes: layer 3 | being simulated, §5 to §8 | — |
+| how deep | b. the System Kit's Adapted Case changes: layer 3 | simulated, §5 to §8 | — |
 | how deep | c, at layer 2. the idea above changes: its Work Domain Idea | not yet checked | the other Adapted Cases of that Work Domain Idea are surveyed, the Maintainer Repo's own only when they share it (§6, step 1) |
 | how deep | c, at layer 1. the idea above changes: its Backbone Idea | not yet checked | every Work Domain Idea on that Backbone Idea is surveyed; how far down the survey reaches is open (§6, step 1) |
 | how deep | d. the idea above already holds it: layer 3, or layer 2 | not yet checked | the loss sits at layer 2 when the Work Domain Idea lost a part its Backbone Idea holds: the Work Domain Idea is fixed from its Backbone Idea, then the Adapted Case from the Work Domain Idea. Which other texts are checked for the same loss is open (§5, step 1) |
