@@ -216,6 +216,23 @@
       Trigger: the change flow finished, Change to Take: the first
       step of the "Define the Change idea" item.
 
+- [ ] Define the look: what it spans, in one home, and its Name
+      (2026-11-22, the reviewer).
+      Context: "look" is no Defined Term. The simulation describes
+      it twice in §4, step 1, *A look at main*: as Read's two
+      checks, and as reading for lessons that ends once Act is done,
+      so through Read, Judge and Act. It is described inside one
+      step of the Read part, though it spans three parts. The drafts
+      use "look" and "read" for one thing.
+      Ideas:
+      - keep "look", and rename the Read part and its words to match
+        (the reviewer);
+      - "Reading" is also the Defined Term System Repo Reading, a
+        short form, and in *Change read* and "names it to read".
+      Trigger: before the flow file's case pictures are redrawn, so
+      each of their lines changes once.
+      See: devlog 2026-11-22, the Take and the version snapshot.
+
 - [ ] Sweep the drafts for words that read as walking commits, where
       a Reading compares two snapshots (2026-11-13, the reviewer).
       Context: a System Repo Reading compares two snapshots and never
