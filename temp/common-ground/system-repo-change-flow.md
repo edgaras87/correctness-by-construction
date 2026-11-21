@@ -36,7 +36,7 @@ Each drawing is checked against these.
 
 ### The two jobs
 
-What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A look for lessons runs when the human names the System Repo to read, and ends once Act is done (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). An Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the look runs first, then Deliver's check (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*). The two together end in one of the five cases. Each step names its section of the simulation.
+What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A look for lessons runs when the human names the System Repo to read, and ends once Act is done (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). An Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the look runs first, then Deliver's check (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*). A look ends in one of three cases: *not moved*, *no Change* and *Change read* (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each step names its section of the simulation.
 
 ```mermaid
 flowchart TD
@@ -44,10 +44,10 @@ flowchart TD
   upd(["about to open the System Repo's next Plan Step, the human names it to update"]) --> c1
   subgraph lessons ["A look for lessons"]
     c1{"main moved past the settled snapshot?"}
-    c1 -- no --> A["nothing to read"]
+    c1 -- no --> A["not moved: nothing to read"]
     c1 -- yes --> c2{"a Copy changed?"}
-    c2 -- no --> C["an empty list: no Reading written; Act sets the settled snapshot to main"]
-    c2 -- "yes: a Reading" --> D["read, list, judge, act (§4 to §6); the Reading goes"]
+    c2 -- no --> C["no Change: an empty list; no Reading written; Act sets the settled snapshot to main"]
+    c2 -- yes --> D["Change read: read, list, judge, act (§4 to §6); the Reading goes"]
     A --> done(["the look ends"])
     C --> done
     D --> done
@@ -55,8 +55,8 @@ flowchart TD
   done -- "only when it was named to update" --> c3
   subgraph update ["An Update when work resumes"]
     c3{"Version behind the newest?"}
-    c3 -- "no: case A or C1" --> same(["the System Repo's Plan Step opens on the same Copies"])
-    c3 -- "yes: case B, C2 or D2" --> open{"one of the System Repo's Plan Steps open?"}
+    c3 -- no --> same(["the System Repo's Plan Step opens on the same Copies"])
+    c3 -- yes --> open{"one of the System Repo's Plan Steps open?"}
     open -- "yes" --> wait1(["say so; make nothing; the step finishes on the old Copies first (§7, step 1)"])
     open -- no --> make["make the Update (§7, step 1)"]
     make --> ok{"clear to stage?"}
