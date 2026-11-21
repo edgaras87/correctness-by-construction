@@ -90,7 +90,7 @@ The System Repo takes an Update at the opening of the System Repo's next Plan St
                                                     │            │
                                                     │         c3 ●  the new Adapted Case      ◀──── item 1: for taking, at Version 2, put in first; it runs the rest
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
- c4, the clean copy: the next Reading               │         c4 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared
+ c4, the clean copy: the next Reading               │         c4 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole, each path gone removed, each renamed moved; every Record cleared
  starts here, checked against Version 2             │            │
                                                     │         c5 ●  Version 2 recorded        ◀──── item 4: with the commit that holds it, c4
                                                     │            │
