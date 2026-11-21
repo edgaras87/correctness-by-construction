@@ -80,9 +80,8 @@ The System Repo takes an Update at the opening of the System Repo's next Plan St
                                                     │
  ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ┊                                         ┄┄┄┄┄ at the opening of the System Repo's next Plan Step, the Take checks first, from the Update Note:
-                                                    ┊                                               case 1, main is still c1, the settled snapshot:
-                                                    ┊                                               the Update is taken, below. Case 2, anything else: no Take; the System Repo
-                                                    ┊                                               says so, and the human names it to update again
+                                                    ┊                                               case 1, main is still c1, the settled snapshot: the Update is taken, below
+                                                    ┊                                               case 2, anything else: no Take; the System Repo says so, and the human names it to update again
                                                     │
  ── the Take ───────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ├─ cut ──────┐                            ◀──── the Take's branch, cut from c1
