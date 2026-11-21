@@ -589,18 +589,15 @@ Two steps:
   5. the Update and its Update Note are removed from `temp/`;
   6. the Take's gate, last. It checks that the Take finished: the files matched the Update Note, every Copy is at the new Version, the Version is recorded, and `temp/` holds no Update.
 
-  **A postponed Take.** A Take may be postponed, with its why. Work then goes on with the old Copies. At the next opening, the Take starts again from its check, case 1 or case 2 (*Before the Take*).
-
   **What a Record stands against.** Every Record stands against the last Version taken, or birth's, and every Record goes at a Take. This is confirmed at the first Update to reach a System Repo whose Copies have Records.
 - **Adapted Case:** the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says:
   - check first that main is still the *settled snapshot*, and take nothing when it differs, saying so;
-  - take only at a Plan Step's opening, or postpone with why;
+  - take only at a Plan Step's opening;
   - take on a branch of its own: first the Update as it arrived, then the items in the order above, one commit each but item 2, a check, the gate last, checking that the Take finished; main moves by fast-forward at the gate's close;
 - **Open:**
   - finished work done under a rule the Update changed may now be wrong. New work follows the new Copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Update that changes a rule a finished Plan Step followed;
-  - a Take postponed again and again leaves the System Repo far behind. Its trigger: the first Take postponed past two openings.
-  - where a postponed Take's why is written, and so whether it is a commit, and who reads it. Its trigger: the first Take postponed.
-  - whether a Plan Step's opening asks if this System Repo was read back, and its Update taken or postponed. Without it, a forgotten Update works as a postponed Take. Its trigger: the first Plan Step opened on old Copies because nobody named the System Repo to update.
+  - postponing a Take after its Update is staged, so the step opens on the old Copies and the Update waits. For now there is no such choice: a staged Update is taken at the opening, unless the Take's check finds main moved (case 2). Its trigger: the first staged Update the human does not want taken.
+  - whether a Plan Step's opening asks: was this System Repo named to update? Without that question, a System Repo nobody names opens each step on the old Copies, and falls further behind each time. Its trigger: the first Plan Step opened on old Copies because nobody named the System Repo to update.
   - whether the Take still needs a branch and a gate of its own, now that nothing is put back for the gate to decide. One commit on main, option i, would narrow Read's rule. Its trigger: the first Take, or putting back coming back (§2, *Known, not ruled*).
 - **Today:**
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
@@ -609,8 +606,8 @@ Two steps:
   - borrowed: a Receipt Branch may hold the delivery as it arrived (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 4). Here the Update is committed as it arrived, on the Take's branch;
   - changed: today, with more than one commit, the Delivery Take's entry goes in the last, where every copy equals the Delivery Pin (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the Version names the clean copy, item 3's commit, where the next Reading starts (§4, step 2, *After a Take*);
   - changed: today nothing at the Delivery Take is decided at a gate. Here the Take's gate checks that the Take finished;
-  - borrowed: being behind the Concept Deliverer is acceptable (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). A postponed Take is that;
+  - borrowed: being behind the Concept Deliverer is acceptable (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). A System Repo not named to update is that;
   - changed: today an edit made after the Read-Through Commit is re-applied on top, its record standing (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 3). Here the opening order leaves no such edit;
   - changed: today a declined edit is gone at the Delivery Take, and never edited back in (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here what becomes of a Change the System Kit did not take is not ruled (§2, *Known, not ruled*);
-  - changed: today work continues on the edited copy when a Plan Step opens before the reply (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). Here the next step waits for the Take, unless it is postponed with why.
+  - changed: today work continues on the edited copy when a Plan Step opens before the reply (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). Here the next step waits for the Take, once the human has named the System Repo to update.
 
