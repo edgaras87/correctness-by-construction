@@ -125,7 +125,7 @@ Key: ● is the Change's path, from its Copy up to the highest layer it changes.
 Two steps:
 
 1. A Copy is changed, with its Record.
-2. The Plan Step's gate decides each Change.
+2. The gate of the System Repo's Plan Step decides each Change.
 
 **Step 1. A Copy is changed, with its Record.**
 
@@ -133,7 +133,7 @@ Two steps:
 - **Options:**
   - a. the Copy is changed when the work shows it does not fit, and its Record written with it;
   - b. the Copy is changed ahead, for what the agent foresees;
-  - c. the misfit is noted, and the Copy changed at the Plan Step's gate;
+  - c. the misfit is noted, and the Copy changed at the gate of the System Repo's Plan Step;
   - d. the Copy stays as it is, and the System Repo writes what it does instead in its own records.
 - **Chosen:** a. The others:
   - b is a speculation, with nothing that happened behind it;
@@ -163,15 +163,15 @@ Two steps:
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
-  - borrowed: the Record names which work found the Change, as a Decisions Log entry names its Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
+  - borrowed: the Record names which work found the Change, as a Decisions Log entry names the CBC Run's Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
   - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the System Repo makes it; what becomes of it at the Take is not ruled (§2, *Known, not ruled*);
   - changed: today nothing is written into a copy but the edit, since "a file says how to use it, never its own history", and the why goes in the Decisions Log (`docs/conventions/exchange/` §5.1). Here the why goes in the Copy's Adapted Understanding Text, which is not read while working;
   - changed: today every edit must claim to be for any CBC Run. Here the System Repo proposes, and the Maintainer Repo judges;
   - borrowed: a check fires at the commit because, before, it had to be remembered (`.claude/rules/foundation-check.md`, its header comment). That one is the Maintainer Repo's own.
 
-**Step 2. The Plan Step's gate decides each Change.**
+**Step 2. The gate of the System Repo's Plan Step decides each Change.**
 
-- **What must happen:** at the Plan Step's close, the step's Changes are seen together, now that the whole step is seen. The agent compares the Copies against where the Plan Step began, and shows each with its Record. The human decides each, the agent proposing: kept, edited, or reversed, its Record with it. Changes that share one reason are linked.
+- **What must happen:** at the close of the System Repo's Plan Step, the step's Changes are seen together, now that the whole step is seen. The agent compares the Copies against where the System Repo's Plan Step began, and shows each with its Record. The human decides each, the agent proposing: kept, edited, or reversed, its Record with it. Changes that share one reason are linked.
 - **Options:**
   - a. the gate looks at the step's Changes together: the comparison, a decision on each, and the links;
   - b. the gate only checks that each Change has a Record that says it, and decides nothing;
@@ -183,14 +183,14 @@ Two steps:
   - d adds nothing to the Records: a Reading compares every Copy, and reads the Records. It comes back if a Reading misses a changed Copy because nothing asked it to look.
 
   **After the decision.** A Change kept as it is needs nothing more. One edited gets its Record rewritten. When Changes share one reason, the reason is written in full in one Record, and each other one says how its own Copy was affected and points at that one. If the one holding the reason is reversed, the reason moves to one that stays, and the others point there.
-- **Adapted Case:** the System Repo's, for closing a Plan Step, its gate list. It loads when the Plan Step closes. For this step it says:
-  - compare the Copies against where the Plan Step began, and check each Change has a Record that says it;
+- **Adapted Case:** the System Repo's, for closing one of the System Repo's Plan Steps, its gate list. It loads when the System Repo's Plan Step closes. For this step it says:
+  - compare the Copies against where the System Repo's Plan Step began, and check each Change has a Record that says it;
   - the human decides each Change: kept, edited or reversed, its Record with it;
   - Changes with one reason are linked, and the reason never stays only in a reversed Record.
 - **Open:** whether a reversed Change leaves a trace for the Maintainer Repo. One tried and undone may be evidence that the Copy was right. Its trigger: the first Change reversed at a gate.
 - **Today:**
   - borrowed: the gate is a list of outcomes checked at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
-  - borrowed: each Approach on Trial the Plan Step used has its dated note at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). A Record checked at the gate is the same shape;
+  - borrowed: each Approach on Trial the CBC Run's Plan Step used has its dated note at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). A Record checked at the gate is the same shape;
   - changed: today the close writes one CBC Run Ask per edited copy (`delivery/container/.claude/rules/delivered-copies.md`, rule 4), option d. Here the Records are what a Reading reads;
   - changed: today nothing at the close looks at the step's changes to copies together.
 
@@ -210,7 +210,7 @@ Four steps:
 - **What must happen:** a stretch of work ends where reading can stop, and the Maintainer Repo learns that the System Repo has work it has not read. The human decides which System Repo is read, and when.
 - **Options,** for where a stretch ends:
   - a. at any commit, the System Repo's latest;
-  - b. at a closed Plan Step's gate, the last one on main.
+  - b. at the gate where one of the System Repo's Plan Steps closed, the last one on main.
 - **Options,** for how the Maintainer Repo learns:
   - c. the human tells it, and its Register is marked by hand;
   - d. the human names a System Repo, and the agent compares its main with where its last Reading stopped. Every System Repo is compared when the human asks what to read;
@@ -240,7 +240,7 @@ Four steps:
 
   Each column is one check's answer, the last Deliver's. Check 2 is asked only when main moved, so A and B show "—". An Update is due when the Version is behind the newest.
 
-  A Plan Step open in the System Repo changes no case: main stands at the last gate, so the look finds its case by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate (§7, step 1, *When one is due*).
+  A System Repo's open Plan Step changes no case: main stands at the last gate, so the look finds its case by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate (§7, step 1, *When one is due*).
 
   An Update already waiting changes no case: the System Repo has not taken it, so its Version is still behind, Deliver's check finds an Update due, and the new one replaces the waiting one (§7, step 1, *One at a time*).
 
@@ -254,7 +254,7 @@ Four steps:
     - make the look's two checks; the look ends once Act is done; when the human named the System Repo to update, Deliver's check follows, and the two jobs end in one of cases A, B, C1, C2 and D2.
 - **Open:** a System Repo nobody names is not read until its work resumes. Its trigger: the first lesson found late because a System Repo went unread.
 - **Today:**
-  - borrowed: a Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
+  - borrowed: a CBC Run's Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
   - borrowed: the Maintainer Repo keeps where each System Repo lives (`ARCHITECTURE.md` §2.5, *The CBC Runs*);
   - changed: today the state of the list of CBC Runs, such as "through Release, not yet read", is written by hand (`ARCHITECTURE.md` §2.5). Here it is found by comparison when asked;
   - changed: today a CBC Run Reading runs to the CBC Run's `HEAD`, and names work not yet committed (`.claude/skills/exchange-read/SKILL.md`, Stages 2 and 3). Here it runs to main, and work past it waits.
@@ -470,7 +470,7 @@ Two steps:
 - **Open:**
   - at layer 1, how far down the survey reaches before the change: only the Work Domain Ideas, each checking its own Adapted Cases when it changes, or every Adapted Case below them at once. The first is cheaper; the second may catch a conflict two layers down. Its trigger: the first lesson judged at layer 1;
   - how a part of a Backbone Idea is known not to fit a whole Work Domain, when one System Repo's Change shows one Adapted Case. A first guess: the same survey, over that Work Domain Idea's Adapted Cases. Its trigger: the first depth-e verdict;
-  - whether Read, Judge and Act are one Plan Step of the Maintainer Repo's, and whether Act gets an Adapted Case of its own, apart from Judge's. Today a CBC Run Reading is one Plan Step, and its work follows it. Its trigger: the Adapted Case texts written from these rules.
+  - whether Read, Judge and Act are one of the Maintainer Repo's Plan Steps, and whether Act gets an Adapted Case of its own, apart from Judge's. Today a CBC Run Reading is one of the Concept Deliverer's Plan Steps, and its work follows it. Its trigger: the Adapted Case texts written from these rules.
 - **Today:**
   - borrowed: a taken change is committed here, and the next delivery carries it (`docs/conventions/exchange/` §6.5, *Verdicts*). It is depth b's path, and the other depths'.
 
@@ -494,7 +494,7 @@ Two steps:
   - a sends an empty Update to carry where the Reading stopped. The *settled snapshot* is in the Register now (§4, step 2), so nothing needs carrying;
   - c answers, at a look for lessons, a question nothing acts on: nothing is made until work resumes, and the System Kit may move again before then.
 
-  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. Two Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. It runs only when the human names a System Repo to update, after the look that starts (§4, step 1). Before the look, the agent checks that no Plan Step is open in the System Repo. If one is, it says so, and nothing runs. Finishing that step would move main, and the Take would then refuse the Update (§8, step 1, *Before the Take*). The look comes before the Update: an Update is built against the *settled snapshot*, and a Change still unread would make the Take refuse it (§8, step 1, *Before the Take*). When the human asks which are behind, the Versions are compared, and nothing is made. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is made for, or sent to, a System Repo whose work has not resumed. Work resumes when the human, about to open the System Repo's next Plan Step, names it to update; neither repo can see that moment itself (§8, step 1, *Before the Take*).
+  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. Two Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. It runs only when the human names a System Repo to update, after the look that starts (§4, step 1). Before the look, the agent checks that none of the System Repo's Plan Steps is open. If one is, it says so, and nothing runs. Finishing that step would move main, and the Take would then refuse the Update (§8, step 1, *Before the Take*). The look comes before the Update: an Update is built against the *settled snapshot*, and a Change still unread would make the Take refuse it (§8, step 1, *Before the Take*). When the human asks which are behind, the Versions are compared, and nothing is made. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is made for, or sent to, a System Repo whose work has not resumed. Work resumes when the human, about to open the System Repo's next Plan Step, names it to update; neither repo can see that moment itself (§8, step 1, *Before the Take*).
 
   **What it is.** An Update is two things: every Copy, whole, at the newest Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
   - the new Version;
@@ -512,7 +512,7 @@ Two steps:
 - **Adapted Case:** the Maintainer Repo's, for making an Update. It loads on the human's word to update a System Repo. For this step it says:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change;
-  - before the look, check that no Plan Step is open in the System Repo; if one is, say so and stop;
+  - before the look, check that none of the System Repo's Plan Steps is open; if one is, say so and stop;
   - it is due when the System Repo's Version is behind the newest; the Versions are compared by the System Kit's files, never by the commits, only when the human names a System Repo to update, after the look that starts; asking which are behind only compares, and makes nothing;
   - it carries every Copy whole, at the new Version, and an Update Note holding the six things listed above;
   - it cites nothing the System Repo cannot open;
@@ -555,28 +555,28 @@ Two steps:
 
 **Step 1. The System Repo takes the Update.**
 
-- **What must happen:** the Update is taken between two Plan Steps, when the next is about to open, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: the System Repo is read back to main, judged, and its Update, when one is due, made, delivered and taken. Then the step opens on the new Copies, or on the same ones when no Update was due. The Take runs on a branch of its own, and reaches main only at its gate's close.
+- **What must happen:** the Update is taken between two of the System Repo's Plan Steps, when the next is about to open, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: the System Repo is read back to main, judged, and its Update, when one is due, made, delivered and taken. Then the step opens on the new Copies, or on the same ones when no Update was due. The Take runs on a branch of its own, and reaches main only at its gate's close.
 - **Options,** for when an Update is taken:
   - a. whenever it arrives;
-  - b. at a Plan Step's opening, right after a Reading that reached main;
-  - c. at a Plan Step's opening, whatever was read.
+  - b. at the opening of the System Repo's next Plan Step, right after a Reading that reached main;
+  - c. at the opening of the System Repo's next Plan Step, whatever was read.
 - **Options,** for the System Repo's Records at the Take:
   - d. kept, since the merge keeps what only the System Repo added;
   - e. all cleared, every Copy taken whole.
 - **Options,** for where the Take is committed:
   - f. on a branch of its own, one commit per part, a gate last, main moving by fast-forward at the gate's close;
-  - g. as the next Plan Step's first commit;
-  - h. as a Plan Step of its own;
-  - i. as one commit on main, Read's rule narrowed so that only a Plan Step's work waits for a gate.
+  - g. as the first commit of the System Repo's next Plan Step;
+  - h. as the System Repo's Plan Step, for the Take alone;
+  - i. as one commit on main, Read's rule narrowed so that only the work of the System Repo's Plan Steps waits for a gate.
 - **Chosen:** b, e and f. The others:
   - a lands in the middle of a step, which then runs on two sets of rules;
   - c takes the Update over Changes not yet read. The Update answered none of them, and clearing their Records loses them before they are read;
   - d keeps Records that say how a Copy differed from the old System Kit. After the Take some describe nothing, and none says how the Copy differs from the new one;
   - g leaves main on the old Version until the step's gate closes, so naming the System Repo to update in between finds the Update due again;
-  - h gives the Take a Plan Step's opening for work the Update Note already orders. f keeps what it needs from one: the gate;
+  - h gives the Take an opening, as the System Repo's Plan Steps have, for work the Update Note already orders. f keeps what it needs from one: the gate;
   - i narrows Read's rule, that main moves only at a gate's close, for the Take alone. f keeps the rule whole, its gate checking that the Take finished.
 
-  **Before the Take.** The opening order is fixed: reading back, judging, then the Update. An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old Copies first, and the human names the System Repo to update at the next opening (§7, step 1, *When one is due*). The Take checks first, from the Update Note, what the System Repo itself can see:
+  **Before the Take.** The opening order is fixed: reading back, judging, then the Update. An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A System Repo's Plan Step open when the human returns finishes on the old Copies first, and the human names the System Repo to update at the next opening (§7, step 1, *When one is due*). The Take checks first, from the Update Note, what the System Repo itself can see:
   - case 1, its main is still the *settled snapshot* the Update Note names: the Update is taken. Its Version needs no check of its own: it is recorded in main, so it cannot change while main stands still;
   - case 2, anything else: there is no Take, and the System Repo says so. The human names it to update again, and the look finds its case, C1, C2 or D2 when main has moved (§4, step 1, *A look at main*). Deliver's check then finds a new Update due, made against the System Kit as it is now. It replaces the waiting one (§7, step 1).
 
@@ -591,25 +591,25 @@ Two steps:
   6. the Take's gate, last. It checks that the Take finished: the files matched the Update Note, every Copy is at the new Version, the Version is recorded, and `temp/` holds no Update.
 
   **What a Record stands against.** Every Record stands against the last Version taken, or birth's, and every Record goes at a Take. This is confirmed at the first Update to reach a System Repo whose Copies have Records.
-- **Adapted Case:** the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says:
+- **Adapted Case:** the System Repo's, for taking an Update, itself in the Update and taken first. It loads when the System Repo's next Plan Step opens with an Update waiting. For this step it says:
   - check first that main is still the *settled snapshot*, and take nothing when it differs, saying so;
-  - take only at a Plan Step's opening;
+  - take only at the opening of the System Repo's next Plan Step;
   - take on a branch of its own: first the Update as it arrived, then the items in the order above, one commit each but item 2, a check, the gate last, checking that the Take finished; main moves by fast-forward at the gate's close;
 - **Open:**
-  - finished work done under a rule the Update changed may now be wrong. New work follows the new Copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Update that changes a rule a finished Plan Step followed;
+  - finished work done under a rule the Update changed may now be wrong. New work follows the new Copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Update that changes a rule one of the System Repo's finished Plan Steps followed;
   - postponing a Take after its Update is staged, so the step opens on the old Copies and the Update waits. For now there is no such choice: a staged Update is taken at the opening, unless the Take's check finds main moved (case 2). Its trigger: the first staged Update the human does not want taken.
-  - dropping or restarting an open Plan Step so the Update is taken sooner, when the Update changes a rule the step rests on. Its trigger: the first Update the human wants taken before an open step finishes.
-  - whether a Plan Step's opening asks: was this System Repo named to update? Without that question, a System Repo nobody names opens each step on the old Copies, and falls further behind each time. Its trigger: the first Plan Step opened on old Copies because nobody named the System Repo to update.
+  - dropping or restarting the System Repo's open Plan Step so the Update is taken sooner, when the Update changes a rule the step rests on. Its trigger: the first Update the human wants taken before an open step finishes.
+  - whether each opening of the System Repo's Plan Steps asks: was this System Repo named to update? Without that question, a System Repo nobody names opens each step on the old Copies, and falls further behind each time. Its trigger: the first time one of the System Repo's Plan Steps opens on old Copies because nobody named the System Repo to update.
   - whether the Take still needs a branch and a gate of its own, now that nothing is put back for the gate to decide. One commit on main, option i, would narrow Read's rule. Its trigger: the first Take, or putting back coming back (§2, *Known, not ruled*).
 - **Today:**
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
   - borrowed: the Delivery Take's order: the Delivery Note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);
-  - borrowed: a Plan Step reaches main by fast-forward from its branch, at its close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). The Take's branch does the same;
+  - borrowed: a CBC Run's Plan Step reaches main by fast-forward from its branch, at its close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). The Take's branch does the same;
   - borrowed: a Receipt Branch may hold the delivery as it arrived (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 4). Here the Update is committed as it arrived, on the Take's branch;
   - changed: today, with more than one commit, the Delivery Take's entry goes in the last, where every copy equals the Delivery Pin (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the Version names the clean copy, item 3's commit, where the next Reading starts (§4, step 2, *After a Take*);
   - changed: today nothing at the Delivery Take is decided at a gate. Here the Take's gate checks that the Take finished;
   - borrowed: being behind the Concept Deliverer is acceptable (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). A System Repo not named to update is that;
   - changed: today an edit made after the Read-Through Commit is re-applied on top, its record standing (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 3). Here the opening order leaves no such edit;
   - changed: today a declined edit is gone at the Delivery Take, and never edited back in (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here what becomes of a Change the System Kit did not take is not ruled (§2, *Known, not ruled*);
-  - changed: today work continues on the edited copy when a Plan Step opens before the reply (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). Here the next step waits for the Take, once the human has named the System Repo to update.
+  - changed: today work continues on the edited copy when a CBC Run's Plan Step opens before the reply (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). Here the next step waits for the Take, once the human has named the System Repo to update.
 

@@ -20,7 +20,7 @@ It uses the simulation's short forms: Change, Record, Copy, Update, Update Note,
 
 Each drawing is checked against these.
 
-1. **R1, the order:** every step of one round, from a Change to the next Plan Step opening.
+1. **R1, the order:** every step of one round, from a Change to the System Repo's next Plan Step opening.
 2. **R2, the repo:** which repo each step happens in.
 3. **R3, what crosses:** a Reading only reads the System Repo, and writes nothing there. An Update is written only into the System Repo's `temp/`.
 4. **R4, where main moves:** each place main moves.
@@ -59,11 +59,11 @@ What follows when the human, about to open the System Repo's next Plan Step, nam
 
 ```mermaid
 flowchart TD
-  start(["about to open the next Plan Step, the human names the System Repo to update"]) --> open{"a Plan Step open?"}
+  start(["about to open the System Repo's next Plan Step, the human names it to update"]) --> open{"one of the System Repo's Plan Steps open?"}
   open -- "yes" --> wait1(["say so; the step finishes on the old Copies first (§7, step 1)"])
   open -- no --> look["a look at main, to its end (above)"]
   look --> c3{"Version behind the newest?"}
-  c3 -- "no: case A or C1" --> same(["the Plan Step opens on the same Copies"])
+  c3 -- "no: case A or C1" --> same(["the System Repo's Plan Step opens on the same Copies"])
   c3 -- "yes: case B, C2 or D2" --> make["make the Update (§7, step 1)"]
   make --> ok{"clear to stage?"}
   ok -- "no: no word, or work under way" --> wait["say what was found; wait for the word"]
@@ -73,7 +73,7 @@ flowchart TD
 
 ### The Take
 
-The System Repo takes an Update at a Plan Step's opening, on a branch of its own (`temp/common-ground/system-repo-change-simulation.md` §8, step 1). It is drawn once, here; each case that ends in an Update points at it. "Item" names an item of §8's *At the Take, in order*.
+The System Repo takes an Update at the opening of the System Repo's next Plan Step, on a branch of its own (`temp/common-ground/system-repo-change-simulation.md` §8, step 1). It is drawn once, here; each case that ends in an Update points at it. "Item" names an item of §8's *At the Take, in order*.
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -86,7 +86,7 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
    stages it in the System Repo's temp/             ┊
                                                     │
  ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ┊                                         ┄┄┄┄┄ at a Plan Step's opening, the Take checks first, from the Update Note:
+                                                    ┊                                         ┄┄┄┄┄ at the opening of the System Repo's next Plan Step, the Take checks first, from the Update Note:
                                                     ┊                                               case 1, main is still c1, the settled snapshot:
                                                     ┊                                               the Update is taken, below. Case 2, anything else: no Take; the System Repo
                                                     ┊                                               says so, and the human names it to update again
@@ -109,7 +109,7 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
                                                  c7 ● ◀──────────┘                            ◀──── main moves to c7 by fast-forward, at the gate's close
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    └─ cut ──────┐                            ◀──── the next Plan Step opens on Version 2
+                                                    └─ cut ──────┐                            ◀──── the System Repo's next Plan Step opens on Version 2
                                                                  │
                                                               c8 ●  work, on Version 2
 ```
