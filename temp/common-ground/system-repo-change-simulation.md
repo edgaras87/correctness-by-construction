@@ -446,7 +446,7 @@ Two steps:
 
 **Step 1. The Maintainer Repo makes its changes. For depth b, the System Kit's Adapted Case.**
 
-- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth b, the System Kit's Adapted Case gains the lesson, worded for every System Repo, and is committed in the Maintainer Repo: the System Kit stands at a new Version. The System Repo the lesson came from gets it back with the next Update, though its Copy already holds the Change in its own words (§7, step 1). The Reading stays a draft until that Update is made. Once the verdicts are acted on here, Act sets the *settled snapshot* to the stop, in the Register (§4, step 2). It does so at every look: with no verdicts, as in cases A, B, C1 and C2, that is all it does (§4, step 1, *A look at main*).
+- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth b, the System Kit's Adapted Case gains the lesson, worded for every System Repo, and is committed in the Maintainer Repo: the System Kit stands at a new Version. The System Repo the lesson came from gets it back with the next Update, though its Copy already holds the Change in its own words (§7, step 1). The Reading then goes: nothing in the Update is read from it (§7, step 1, *What it is*). Once the verdicts are acted on here, Act sets the *settled snapshot* to the stop, in the Register (§4, step 2). It does so at every look: with no verdicts, as in cases A, B, C1 and C2, that is all it does (§4, step 1, *A look at main*).
 - **Options,** for depth b:
   - a. the lesson is reworded for every System Repo, and the System Kit's Adapted Case gains it, its first wording kept beside it;
   - b. the Change goes into the System Kit's Adapted Case as the System Repo wrote it;
@@ -465,7 +465,7 @@ Two steps:
   A lesson is reworded here, never before: for every System Repo at depth b; at depth c, naming no Adapted Case at layer 2, and no Work Domain at layer 1 (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, the arrow *lesson*). Its first wording is kept beside it, since the rewording is the agent's reading.
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says:
   - a lesson for its Adapted Case is reworded for every System Repo, its first wording kept beside it, and the System Kit's Adapted Case gains it;
-  - the Reading stays a draft until the Update carries what the System Repo needs;
+  - the Reading goes once its verdicts are acted on;
   - once the verdicts are acted on, or when there are none, the *settled snapshot* is set to the stop, in the Register.
 - **Open:**
   - at layer 1, how far down the survey reaches before the change: only the Work Domain Ideas, each checking its own Adapted Cases when it changes, or every Adapted Case below them at once. The first is cheaper; the second may catch a conflict two layers down. Its trigger: the first lesson judged at layer 1;
@@ -503,7 +503,7 @@ Two steps:
 
   **What it cites.** Nothing in it cites what the System Repo cannot open: no path, record or word of the Maintainer Repo's own.
 
-  **One at a time.** A Reading stays open until its Update is made, or until it is judged with nothing to send. One Reading is open per System Repo at a time: a Reading made while one is open extends it, and its lines are judged with the rest, so judging already done is kept. One Update waits for the System Repo at a time: a newer one replaces one not yet taken, since it carries every System Kit change since the Copies' Version.
+  **One at a time.** A Reading stays open until its verdicts are acted on. One Reading is open per System Repo at a time: a Reading made while one is open extends it, and its lines are judged with the rest, so judging already done is kept. One Update waits for the System Repo at a time: a newer one replaces one not yet taken, since it carries every System Kit change since the Copies' Version.
 - **Adapted Case:** the Maintainer Repo's, for making an Update. It loads on the human's word to update a System Repo. For this step it says:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change;
