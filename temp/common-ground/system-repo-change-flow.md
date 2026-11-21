@@ -59,14 +59,16 @@ What follows when the human, about to open the System Repo's next Plan Step, nam
 
 ```mermaid
 flowchart TD
-  start(["about to open the next Plan Step, the human names the System Repo to update"]) --> look["a look at main, to its end (above)"]
+  start(["about to open the next Plan Step, the human names the System Repo to update"]) --> open{"a Plan Step open?"}
+  open -- "yes" --> wait1(["say so; the step finishes on the old Copies first (§7, step 1)"])
+  open -- no --> look["a look at main, to its end (above)"]
   look --> c3{"Version behind the newest?"}
   c3 -- "no: case A or C1" --> same(["the Plan Step opens on the same Copies"])
   c3 -- "yes: case B, C2 or D2" --> make["make the Update (§7, step 1)"]
   make --> ok{"clear to stage?"}
   ok -- "no: no word, or work under way" --> wait["say what was found; wait for the word"]
   ok -- yes --> stage["stage the Update in temp/ (§7, step 2)"]
-  stage --> take(["the System Repo takes it at the opening, or postpones it with its why (§8)"])
+  stage --> take(["the System Repo takes it at the opening (§8)"])
 ```
 
 ### The Take
@@ -87,8 +89,7 @@ The System Repo takes an Update at a Plan Step's opening, on a branch of its own
                                                     ┊                                         ┄┄┄┄┄ at a Plan Step's opening, the Take checks first, from the Update Note:
                                                     ┊                                               case 1, main is still c1, the settled snapshot:
                                                     ┊                                               the Update is taken, below. Case 2, anything else: no Take; the System Repo
-                                                    ┊                                               says so, and the human has it looked at. The Take may also be postponed,
-                                                    ┊                                               with its why, and starts again from this check at the next opening
+                                                    ┊                                               says so, and the human names it to update again
                                                     │
  ── the Take ───────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ├─ cut ──────┐                            ◀──── the Take's branch, cut from c1
