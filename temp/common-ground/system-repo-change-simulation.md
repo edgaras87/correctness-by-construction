@@ -218,7 +218,7 @@ Four steps:
 - **Chosen:** b and d. The others:
   - a reads Changes the gate has not yet looked at, which the System Repo may still edit or reverse (§3, step 2);
   - c depends on the human remembering, and the Register then says a System Repo was read when it has new work (Failure Case 2);
-  - e alone never reads a System Repo whose work does not resume, so what it learned is lost (Failure Case 1). It stands as it is, for every System Repo (§8, step 1, *Before the Take*), and d adds Readings between two resumptions of work.
+  - e alone never reads a System Repo whose work does not resume, so what it learned is lost (Failure Case 1). The reading when work resumes still runs, as d: the human names the System Repo to update, which starts a look (§7, step 1, *When one is due*).
 
   **Where a stretch ends.** Main moves only at a gate's close, so main is always at a closed gate, and nothing on it waits for a gate. Work past it, in a branch or not yet committed, is left for the next Reading.
 
