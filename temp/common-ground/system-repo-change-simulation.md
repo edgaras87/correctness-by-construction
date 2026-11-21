@@ -261,7 +261,7 @@ Four steps:
 
 **Step 2. The Maintainer Repo finds the two snapshots it compares.**
 
-- **What must happen:** the agent finds the older snapshot, and writes the newer one, the stop, before reading anything. A later Reading's older snapshot must be where this one stopped, whether an Update follows this Reading or not, or the clean copy of a Take since.
+- **What must happen:** the agent finds the older snapshot, and takes the newer one, the stop, when the look begins. A later Reading's older snapshot must be where this one stopped, whether an Update follows this Reading or not, or the clean copy of a Take since.
 - **Options,** for where the last Reading's stop is kept:
   - a. in the System Repo, carried there by the next Update;
   - b. in the Register, the *settled snapshot*'s commit beside where each System Repo lives;
@@ -272,17 +272,17 @@ Four steps:
 
   **Where it starts.** The older snapshot is the Register's *settled snapshot*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with the *settled snapshot* set to the start, the commit holding the Copies as they arrived (`temp/common-ground/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Change, so it stands as read. So every Reading, the first among them, starts at the *settled snapshot*, and a System Repo never read needs no rule of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation).
 
-  **Where it stops.** The stop is the System Repo's main, its latest snapshot, written first at every look, before anything is read: as the open Reading's first line, or, when nothing is found and no draft is written, handed on with the empty list. So a commit landing during the look falls into the next one.
+  **Where it stops.** The stop is the System Repo's main as it stands when the look begins: its latest snapshot, named by its commit. Everything is compared against that commit, never against main as it moves, so a commit landing during the look falls into the next one. The Reading names its stop. When the list is empty, no Reading is written, and Act sets the *settled snapshot* to the stop.
 
   **After a Take.** When a Take came after the *settled snapshot*, the older snapshot is the clean copy instead: the commit the Take recorded with its Version (§8, step 1, *At the Take, in order*, item 4), every Copy at that Version. It is first checked against that Version, which the Maintainer Repo holds; a difference is said before anything is read. So the Take's own changes are never read as the System Repo's.
 
   **When the stop moves.** Act on the verdicts sets the *settled snapshot* to the stop at every look, whether or not anything was read (§6, step 1). When the verdicts ask for no change, or there are none, that is right after judging. It never moves before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all between the two snapshots is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
   - the older snapshot is the Register's *settled snapshot*; after a Take, the clean copy, checked first against its Version;
-  - the stop is the System Repo's main, written first at every look, before anything is read;
+  - the stop is the System Repo's main as it stands when the look begins, named by its commit; everything is compared against it;
   - Act sets the *settled snapshot* to the stop at every look, once the verdicts, if any, are acted on.
 - **Today:**
-  - borrowed: the stop is written first, as the Reading's first line, before anything is read (`.claude/skills/exchange-read/SKILL.md`, Stage 2);
+  - changed: today the stop is written first, as the Reading's first line, before anything is read (`.claude/skills/exchange-read/SKILL.md`, Stage 2). Here it is taken when the look begins, and the Reading names it when it is written;
   - borrowed: the Register keeps where each System Repo lives, as today's list of CBC Runs does (`ARCHITECTURE.md` §2.5, *The CBC Runs*). It gains the *settled snapshot*;
   - borrowed: a CBC Run Reading is a draft in `temp/`, deleted once the work that needed it is done (`temp/README.md`; `.claude/skills/exchange-read/SKILL.md`, Stage 4);
   - changed: today the stop, the Read-Through Commit, is kept in the CBC Run, carried there by the next Delivery Note, because "it is the only place the Concept Deliverer can look" (`docs/conventions/exchange/` §2.2, *The CBC Run*). Today every CBC Run Reading is followed by a delivery, so the stop always arrives. Here a Reading may have no Update after it;
@@ -319,7 +319,7 @@ Four steps:
 
 **Step 4. It lists what changed, nothing judged.**
 
-- **What must happen:** the Reading gets one line per Change, nothing judged. The list may be empty: then no draft is written, and only the stop is handed on. The human checks that the list is whole. Then it is judged, and its stop moves into the Register once its verdicts are acted on (step 2).
+- **What must happen:** the Reading gets one line per Change, nothing judged. The list may be empty: then no Reading is written, and Act sets the *settled snapshot* to the stop (step 2). The human checks that the list is whole. Then it is judged, and its stop moves into the Register once its verdicts are acted on (step 2).
 - **Options:**
   - a. one line per Change, nothing decided; judging is §5's;
   - b. each Change judged as it is listed;
