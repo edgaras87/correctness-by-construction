@@ -240,7 +240,7 @@ Four steps:
 
   Each column is one check's answer, the last Deliver's. Check 2 is asked only when main moved, so A and B show "—". An Update is due when the Version is behind the newest.
 
-  A Plan Step open in the System Repo changes no case: main stands at the last gate, so the look finds its case by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate (§7, step 2, *Before staging*).
+  A Plan Step open in the System Repo changes no case: main stands at the last gate, so the look finds its case by what main holds. The open step's work waits for the next look, and an Update waits for the step's gate (§7, step 1, *When one is due*).
 
   An Update already waiting changes no case: the System Repo has not taken it, so its Version is still behind, Deliver's check finds an Update due, and the new one replaces the waiting one (§7, step 1, *One at a time*).
 
