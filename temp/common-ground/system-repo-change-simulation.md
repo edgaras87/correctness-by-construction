@@ -469,7 +469,8 @@ Two steps:
   - once the verdicts are acted on, or when there are none, the *settled snapshot* is set to the stop, in the Register.
 - **Open:**
   - at layer 1, how far down the survey reaches before the change: only the Work Domain Ideas, each checking its own Adapted Cases when it changes, or every Adapted Case below them at once. The first is cheaper; the second may catch a conflict two layers down. Its trigger: the first lesson judged at layer 1;
-  - how a part of a Backbone Idea is known not to fit a whole Work Domain, when one System Repo's Change shows one Adapted Case. A first guess: the same survey, over that Work Domain Idea's Adapted Cases. Its trigger: the first depth-e verdict.
+  - how a part of a Backbone Idea is known not to fit a whole Work Domain, when one System Repo's Change shows one Adapted Case. A first guess: the same survey, over that Work Domain Idea's Adapted Cases. Its trigger: the first depth-e verdict;
+  - whether Read, Judge and Act are one Plan Step of the Maintainer Repo's, and whether Act gets an Adapted Case of its own, apart from Judge's. Today a CBC Run Reading is one Plan Step, and its work follows it. Its trigger: the Adapted Case texts written from these rules.
 - **Today:**
   - borrowed: a taken change is committed here, and the next delivery carries it (`docs/conventions/exchange/` §6.5, *Verdicts*). It is depth b's path, and the other depths'.
 
