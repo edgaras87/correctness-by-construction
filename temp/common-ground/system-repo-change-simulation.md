@@ -587,16 +587,15 @@ Two steps:
   **A postponed Take.** A Take may be postponed, with its why. Work then goes on with the old Copies. At the next opening, the Take starts again from its check, case 1 or case 2 (*Before the Take*).
 
   **What a Record stands against.** Every Record stands against the last Version taken, or birth's, and every Record goes at a Take. This is confirmed at the first Update to reach a System Repo whose Copies have Records.
-- **Adapted Case:**
-  - the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says:
-    - check first that main is still the *settled snapshot*, and take nothing when it differs, saying so;
-    - take only at a Plan Step's opening, or postpone with why;
-    - take on a branch of its own: first the Update as it arrived, then the items in the order above, one commit each but item 2, a check, the gate last, checking that the Take finished; main moves by fast-forward at the gate's close;
-  - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its Update, when one was due, taken, since the last opening? A System Repo cannot see this itself; the human answers.
+- **Adapted Case:** the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says:
+  - check first that main is still the *settled snapshot*, and take nothing when it differs, saying so;
+  - take only at a Plan Step's opening, or postpone with why;
+  - take on a branch of its own: first the Update as it arrived, then the items in the order above, one commit each but item 2, a check, the gate last, checking that the Take finished; main moves by fast-forward at the gate's close;
 - **Open:**
   - finished work done under a rule the Update changed may now be wrong. New work follows the new Copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Update that changes a rule a finished Plan Step followed;
   - a Take postponed again and again leaves the System Repo far behind. Its trigger: the first Take postponed past two openings.
   - where a postponed Take's why is written, and so whether it is a commit, and who reads it. Its trigger: the first Take postponed.
+  - whether a Plan Step's opening asks if this System Repo was read back, and its Update taken or postponed. Without it, a forgotten Update works as a postponed Take. Its trigger: the first Plan Step opened on old Copies because nobody named the System Repo to update.
   - whether the Take still needs a branch and a gate of its own, now that nothing is put back for the gate to decide. One commit on main, option i, would narrow Read's rule. Its trigger: the first Take, or putting back coming back (§2, *Known, not ruled*).
 - **Today:**
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
