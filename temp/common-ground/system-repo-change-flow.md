@@ -30,7 +30,7 @@ Each drawing is checked against these.
 
 - **commits:** imaginary commits of the System Repo, oldest first, top to bottom.
 - **main, branches:** a step's or a Take's branch is cut from main, to its right. At its gate's close, main moves to the branch's last commit by fast-forward: a commit named again on main is no new commit.
-- **Maintainer Repo:** a bracket joins the two snapshots a Reading compares: its top is the older, the *settled snapshot* or, after a Take, the clean copy, and its bottom is the stop. The commits between are history, opened only to understand something deeper. A Reading writes nothing in the System Repo. A bracket closes when the verdicts are acted on, and its stop becomes the *settled snapshot*. The *settled snapshot* is not a Take. The Maintainer Repo's parts stand between the commits, since it makes none.
+- **Maintainer Repo:** a bracket joins the two snapshots a Reading compares: its top is the older, the *settled snapshot* or, after a Take, the *version snapshot*, and its bottom is the stop. The commits between are history, opened only to understand something deeper. A Reading writes nothing in the System Repo. A bracket closes when the verdicts are acted on, and its stop becomes the *settled snapshot*. The *settled snapshot* is not a Take. The Maintainer Repo's parts stand between the commits, since it makes none.
 - **System Repo:** its parts, each pointing at the commit it acts on.
 - **┊:** no commit.
 
@@ -90,7 +90,7 @@ The System Repo takes an Update at the opening of the System Repo's next Plan St
                                                     │            │
                                                     │         c3 ●  the new Adapted Case      ◀──── item 1: for taking, at Version 2, put in first; it runs the rest
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
- c4, the clean copy: the next Reading               │         c4 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole, each path gone removed, each renamed moved; every Record cleared
+ c4, the version snapshot: the next Reading         │         c4 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole, each path gone removed, each renamed moved; every Record cleared
  starts here, checked against Version 2             │            │
                                                     │         c5 ●  Version 2 recorded        ◀──── item 4: with the commit that holds it, c4
                                                     │            │
@@ -363,7 +363,7 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
                                                     │            │
                                                     │         c5 ●  the new Adapted Case      ◀──── item 1: for taking, at Version 2, put in first
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
- c6, the clean copy: the next Reading               │         c6 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared, c2's among them
+ c6, the version snapshot: the next Reading         │         c6 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared, c2's among them
  starts here, checked against Version 2             │            │
                                                     │         c7 ●  Version 2 recorded        ◀──── item 4: with the commit that holds it, c6
                                                     │            │
@@ -375,5 +375,5 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
                                                     │
                                                     └─ cut ──────┐                            ◀──── step 2 opens on Version 2
                                                                  │
-                                                             c10 ●  work, on Version 2        ◀──── the next look compares c6, the clean copy, with main
+                                                             c10 ●  work, on Version 2        ◀──── the next look compares c6, the version snapshot, with main
 ```

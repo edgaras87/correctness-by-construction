@@ -75,6 +75,7 @@ Labels:
 - *layer*: *layer 1* to *layer 4*
 - Text Life Phase: *writing*, *aging*, *reading*
 - Maintainer Repo Register: *settled snapshot*, the System Repo's snapshot up to which the Maintainer Repo has read, judged and acted on. It holds the System Kit Version the System Repo had then, which may be behind the newest.
+- System Kit Update Take: *version snapshot*, the System Repo's commit where the System Kit Update Take put every System Kit Copy at the new System Kit Version, its hash written beside that System Kit Version.
 
 ## 1. The purpose
 

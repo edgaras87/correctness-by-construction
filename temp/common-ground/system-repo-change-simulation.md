@@ -203,7 +203,7 @@ Four steps:
 3. It compares the Copies, and reads each Record.
 4. It lists what changed, nothing judged.
 
-**Snapshots.** A Reading compares two snapshots of the System Repo, and never walks its commits. The *settled snapshot* is the one already taken into account: read, judged and acted on (`temp/common-ground/common-ground-problem.md`, *Defined Terms*). It holds the Version the System Repo had recorded by then (§8, step 1, *At the Take, in order*, item 4), which may be behind the newest. So the last Version the Maintainer Repo has seen the System Repo on is read from it, never stored anywhere else. Main's latest snapshot is the one checked, and becomes the Reading's stop. The commits between them are history, opened only to understand something deeper. The clean copy a Take leaves is the one special point, used only after a Take (step 2, *After a Take*).
+**Snapshots.** A Reading compares two snapshots of the System Repo, and never walks its commits. The *settled snapshot* is the one already taken into account: read, judged and acted on (`temp/common-ground/common-ground-problem.md`, *Defined Terms*). It holds the Version the System Repo had recorded by then (§8, step 1, *At the Take, in order*, item 4), which may be behind the newest. So the last Version the Maintainer Repo has seen the System Repo on is read from it, never stored anywhere else. Main's latest snapshot is the one checked, and becomes the Reading's stop. The commits between them are history, opened only to understand something deeper. The *version snapshot* a Take leaves is the one special point, used only after a Take (step 2, *After a Take*).
 
 **Step 1. The stretch of work ends, and the Maintainer Repo is told.**
 
@@ -261,7 +261,7 @@ Four steps:
 
 **Step 2. The Maintainer Repo finds the two snapshots it compares.**
 
-- **What must happen:** the agent finds the older snapshot, and takes the newer one, the stop, when the look begins. A later Reading's older snapshot must be where this one stopped, whether an Update follows this Reading or not, or the clean copy of a Take since.
+- **What must happen:** the agent finds the older snapshot, and takes the newer one, the stop, when the look begins. A later Reading's older snapshot must be where this one stopped, whether an Update follows this Reading or not, or the *version snapshot* of a Take since.
 - **Options,** for where the last Reading's stop is kept:
   - a. in the System Repo, carried there by the next Update;
   - b. in the Register, the *settled snapshot*'s commit beside where each System Repo lives;
@@ -274,11 +274,11 @@ Four steps:
 
   **Where it stops.** The stop is the System Repo's main as it stands when the look begins: its latest snapshot, named by its commit. Everything is compared against that commit, never against main as it moves, so a commit landing during the look falls into the next one. The Reading names its stop. When the list is empty, no Reading is written, and Act sets the *settled snapshot* to the stop.
 
-  **After a Take.** When a Take came after the *settled snapshot*, the older snapshot is the clean copy instead: the commit the Take recorded with its Version (§8, step 1, *At the Take, in order*, item 4), every Copy at that Version. It is first checked against that Version, which the Maintainer Repo holds; a difference is said before anything is read. So the Take's own changes are never read as the System Repo's. The Version itself, as the Maintainer Repo holds it, would compare the same, but it lies in the Maintainer Repo: each of its files would first be matched to its Copy, across the two repos. The clean copy keeps the comparison one diff between two commits of the System Repo, as at every other look.
+  **After a Take.** When a Take came after the *settled snapshot*, the older snapshot is the *version snapshot* instead: the commit the Take recorded with its Version (§8, step 1, *At the Take, in order*, item 4), every Copy at that Version. It is first checked against that Version, which the Maintainer Repo holds; a difference is said before anything is read. So the Take's own changes are never read as the System Repo's. The Version itself, as the Maintainer Repo holds it, would compare the same, but it lies in the Maintainer Repo: each of its files would first be matched to its Copy, across the two repos. The *version snapshot* keeps the comparison one diff between two commits of the System Repo, as at every other look.
 
   **When the stop moves.** Act on the verdicts sets the *settled snapshot* to the stop at every look, whether or not anything was read (§6, step 1). When the verdicts ask for no change, or there are none, that is right after judging. It never moves before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all between the two snapshots is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
-  - the older snapshot is the Register's *settled snapshot*; after a Take, the clean copy, checked first against its Version;
+  - the older snapshot is the Register's *settled snapshot*; after a Take, the *version snapshot*, checked first against its Version;
   - the stop is the System Repo's main as it stands when the look begins, named by its commit; everything is compared against it;
   - Act sets the *settled snapshot* to the stop at every look, once the verdicts, if any, are acted on.
 - **Today:**
@@ -314,7 +314,7 @@ Four steps:
   - borrowed: every item is read from the copies' diff, the whys, and the lines to the Concept Deliverer (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*; `.claude/skills/exchange-read/SKILL.md`, Stage 3). Here the whys are in the diff, and nothing else is sent to the Maintainer Repo, so it is one: the diff;
   - borrowed: the CBC Run is only read, never written (`.claude/skills/exchange-read/SKILL.md`, *Gates*);
   - changed: today the diff runs against what was delivered, the Receipt Branch or the last delivery entry (`.claude/skills/exchange-read/SKILL.md`, Stage 3). That works because a Delivery Take makes every copy equal its original again. Here a Reading may come before the Take, while a Copy still holds Changes already read;
-  - borrowed: a Receipt Branch holds the delivery as it arrived, and makes the next diff exact (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 4). The clean copy does the same after a Take;
+  - borrowed: a Receipt Branch holds the delivery as it arrived, and makes the next diff exact (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 4). The *version snapshot* does the same after a Take;
   - changed: today the whys are read from the Decisions Log. Here they are read from the Records, in the Copies.
 
 **Step 4. It lists what changed, nothing judged.**
@@ -594,7 +594,7 @@ Two steps:
   1. the Adapted Case for taking an Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
   3. every Copy is taken whole, at the new Version; each path gone is removed, and each renamed is moved. Every Record is cleared: main is the *settled snapshot*, so each was read and judged. A part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
-  4. the new Version is recorded, with the commit that holds it: item 3's, the clean copy, every Copy at the new Version. So Deliver's check can compare it with the newest. It names item 3's commit because a commit cannot hold its own hash, and item 3's is the last before it;
+  4. the new Version is recorded, with the commit that holds it: item 3's, the *version snapshot*, every Copy at the new Version. So Deliver's check can compare it with the newest. It names item 3's commit because a commit cannot hold its own hash, and item 3's is the last before it;
   5. the Update and its Update Note are removed from `temp/`;
   6. the Take's gate, last. It checks that the Take finished: the files matched the Update Note, every Copy is at the new Version, the Version is recorded, and `temp/` holds no Update.
 
@@ -614,7 +614,7 @@ Two steps:
   - borrowed: the Delivery Take's order: the Delivery Note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);
   - borrowed: a CBC Run's Plan Step reaches main by fast-forward from its branch, at its close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). The Take's branch does the same;
   - borrowed: a Receipt Branch may hold the delivery as it arrived (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 4). Here the Update is committed as it arrived, on the Take's branch;
-  - changed: today, with more than one commit, the Delivery Take's entry goes in the last, where every copy equals the Delivery Pin (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the Version names the clean copy, item 3's commit, where the next Reading starts (§4, step 2, *After a Take*);
+  - changed: today, with more than one commit, the Delivery Take's entry goes in the last, where every copy equals the Delivery Pin (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the Version names the *version snapshot*, item 3's commit, where the next Reading starts (§4, step 2, *After a Take*);
   - changed: today nothing at the Delivery Take is decided at a gate. Here the Take's gate checks that the Take finished;
   - borrowed: being behind the Concept Deliverer is acceptable (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). A System Repo not named to update is that;
   - changed: today an edit made after the Read-Through Commit is re-applied on top, its record standing (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 3). Here the opening order leaves no such edit;
