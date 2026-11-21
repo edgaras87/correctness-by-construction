@@ -233,10 +233,10 @@ Four steps:
   | Case | Main moved | Copy changed | Update due, Deliver's check | What follows |
   |---|---|---|---|---|
   | A | no | — | no | nothing |
-  | B | no | — | yes | an Update is made and delivered (§7) |
+  | B | no | — | yes | an Update is due: made and delivered when work resumes (§7, step 1, *When one is due*) |
   | C1 | yes | no | no | Read's list is empty: nothing is judged, and Act sets the *settled snapshot* to main (§6, step 1) |
-  | C2 | yes | no | yes | Read's list is empty: nothing is judged, and Act sets the *settled snapshot* to main (§6, step 1); an Update is made and delivered (§7) |
-  | D2 | yes | yes | yes, after acting | the full Reading: listed, judged and acted on; an Update is made and delivered (§7) |
+  | C2 | yes | no | yes | Read's list is empty: nothing is judged, and Act sets the *settled snapshot* to main (§6, step 1); an Update is due: made and delivered when work resumes (§7, step 1, *When one is due*) |
+  | D2 | yes | yes | yes, after acting | the full Reading: listed, judged and acted on; an Update is due: made and delivered when work resumes (§7, step 1, *When one is due*) |
 
   Each column is one check's answer, the last Deliver's. Check 2 is asked only when main moved, so A and B show "—". An Update is due when the Version is behind the newest.
 
@@ -489,7 +489,7 @@ Two steps:
 - **Chosen:** b. The other:
   - a sends an empty Update to carry where the Reading stopped. The *settled snapshot* is in the Register now (§4, step 2), so nothing needs carrying.
 
-  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. Two Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. It runs after Act, at every look. When the human names a System Repo to update, a look runs first (§4, step 1). When the human asks which are behind, the Versions are compared, and nothing is made. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is sent to a System Repo whose work has not resumed.
+  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. Two Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. It runs after Act, at every look. When the human names a System Repo to update, a look runs first (§4, step 1). When the human asks which are behind, the Versions are compared, and nothing is made. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is made for, or sent to, a System Repo whose work has not resumed. Work resumes when the human, about to open the System Repo's next Plan Step, names it to update; neither repo can see that moment itself (§8, step 1, *Before the Take*).
 
   **What it is.** An Update is two things: every Copy, whole, at the newest Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
   - the new Version;
