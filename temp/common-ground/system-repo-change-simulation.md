@@ -226,9 +226,9 @@ Four steps:
   1. **main moved:** the System Repo's main against the *settled snapshot*;
   2. **Changes:** the Copies, compared between the older snapshot and main (step 2, step 3).
 
-  Whether an Update is due is Deliver's check, asked after Act at every look, since the System Kit moves for a Change only once it is judged and acted on (§7, step 1, *When one is due*).
+  A look is reading for lessons, and ends once Act is done. Bringing the System Repo up to date is a second job, which needs the first. It runs only when the human names the System Repo to update, and starts with a look. Its check, whether an Update is due, is Deliver's. It comes after Act, since the System Kit moves for a Change only once it is judged and acted on (§7, step 1, *When one is due*).
 
-  With Deliver's check, a look ends in one of five cases. A and B differ only by its answer, as C1 and C2 do: nothing follows, or an Update follows. D has one case here, D2. Case D1, a Change read with no Update due after, comes only from a Change the System Kit does not take, and is not ruled (§2, *Known, not ruled*).
+  A look alone ends in one of three outcomes: main has not moved; main moved and no Copy changed; or a Change was read. With Deliver's check, the two jobs together end in one of five cases. A and B differ only by its answer, as C1 and C2 do: nothing follows, or an Update follows. D has one case here, D2. Case D1, a Change read with no Update due after, comes only from a Change the System Kit does not take, and is not ruled (§2, *Known, not ruled*).
 
   | Case | Main moved | Copy changed | Update due, Deliver's check | What follows |
   |---|---|---|---|---|
@@ -251,7 +251,7 @@ Four steps:
   - the System Repo's gate list: main moves only at a gate's close. It is there today;
   - the Maintainer Repo's, for reading a System Repo. It loads when the human names a System Repo to read or to update, or asks what to read. For this step it says:
     - compare the named System Repo's main with where its last Reading stopped, or every System Repo's when asked;
-    - make the look's two checks; with Deliver's check after Act, the look ends in one of cases A, B, C1, C2 and D2.
+    - make the look's two checks; the look ends once Act is done; when the human named the System Repo to update, Deliver's check follows, and the two jobs end in one of cases A, B, C1, C2 and D2.
 - **Open:** a System Repo nobody names is not read until its work resumes. Its trigger: the first lesson found late because a System Repo went unread.
 - **Today:**
   - borrowed: a Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
@@ -487,10 +487,14 @@ Two steps:
 - **Options,** for when an Update goes:
   - a. after every Reading, even with nothing to carry;
   - b. only when it carries a System Kit change.
-- **Chosen:** b. The other:
-  - a sends an empty Update to carry where the Reading stopped. The *settled snapshot* is in the Register now (§4, step 2), so nothing needs carrying.
+- **Options,** for when Deliver's check runs:
+  - c. after Act, at every look;
+  - d. only when the human names the System Repo to update, after the look that starts.
+- **Chosen:** b and d. The others:
+  - a sends an empty Update to carry where the Reading stopped. The *settled snapshot* is in the Register now (§4, step 2), so nothing needs carrying;
+  - c answers, at a look for lessons, a question nothing acts on: nothing is made until work resumes, and the System Kit may move again before then.
 
-  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. Two Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. It runs after Act, at every look. When the human names a System Repo to update, a look runs first (§4, step 1). When the human asks which are behind, the Versions are compared, and nothing is made. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is made for, or sent to, a System Repo whose work has not resumed. Work resumes when the human, about to open the System Repo's next Plan Step, names it to update; neither repo can see that moment itself (§8, step 1, *Before the Take*).
+  **When one is due.** Whether an Update is due is found by comparison, as §4, step 1 finds work to read: the System Repo's Version, which it holds, against the newest. Two Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. It runs only when the human names a System Repo to update, after the look that starts (§4, step 1). The look comes first: an Update is built against the *settled snapshot*, and a Change still unread would make the Take refuse it (§8, step 1, *Before the Take*). When the human asks which are behind, the Versions are compared, and nothing is made. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. Nothing is made for, or sent to, a System Repo whose work has not resumed. Work resumes when the human, about to open the System Repo's next Plan Step, names it to update; neither repo can see that moment itself (§8, step 1, *Before the Take*).
 
   **What it is.** An Update is two things: every Copy, whole, at the newest Version, and an Update Note. The System Repo then has the new version of each file, and finds its old one in its own history (§8, step 1). The Update Note holds:
   - the new Version;
@@ -508,7 +512,7 @@ Two steps:
 - **Adapted Case:** the Maintainer Repo's, for making an Update. It loads on the human's word to update a System Repo. For this step it says:
   - it follows the System Repo's reading back and judging, never comes before them;
   - it goes only when it carries a System Kit change;
-  - it is due when the System Repo's Version is behind the newest; the Versions are compared by the System Kit's files, never by the commits, after Act at every look; naming a System Repo to update starts a look; asking which are behind only compares, and makes nothing;
+  - it is due when the System Repo's Version is behind the newest; the Versions are compared by the System Kit's files, never by the commits, only when the human names a System Repo to update, after the look that starts; asking which are behind only compares, and makes nothing;
   - it carries every Copy whole, at the new Version, and an Update Note holding the six things listed above;
   - it cites nothing the System Repo cannot open;
   - one Reading open per System Repo, a new Reading extending it; one Update waiting, a newer one replacing it.
@@ -567,13 +571,13 @@ Two steps:
   - a lands in the middle of a step, which then runs on two sets of rules;
   - c takes the Update over Changes not yet read. The Update answered none of them, and clearing their Records loses them before they are read;
   - d keeps Records that say how a Copy differed from the old System Kit. After the Take some describe nothing, and none says how the Copy differs from the new one;
-  - g leaves main on the old Version until the step's gate closes, so a look in between finds the Update due again;
+  - g leaves main on the old Version until the step's gate closes, so naming the System Repo to update in between finds the Update due again;
   - h gives the Take a Plan Step's opening for work the Update Note already orders. f keeps what it needs from one: the gate;
   - i narrows Read's rule, that main moves only at a gate's close, for the Take alone. f keeps the rule whole, its gate checking that the Take finished.
 
   **Before the Take.** The opening order is fixed: reading back, judging, then the Update. An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old Copies first; the human may instead drop or restart it, when the Update changes a rule it rests on. The Take checks first, from the Update Note, what the System Repo itself can see:
   - case 1, its main is still the *settled snapshot* the Update Note names: the Update is taken. Its Version needs no check of its own: it is recorded in main, so it cannot change while main stands still;
-  - case 2, anything else: there is no Take, and the System Repo says so. The human has it looked at, and the look finds its case, C1, C2 or D2 when main has moved (§4, step 1, *A look at main*). Deliver's check then finds a new Update due, made against the System Kit as it is now. It replaces the waiting one (§7, step 1).
+  - case 2, anything else: there is no Take, and the System Repo says so. The human names it to update again, and the look finds its case, C1, C2 or D2 when main has moved (§4, step 1, *A look at main*). Deliver's check then finds a new Update due, made against the System Kit as it is now. It replaces the waiting one (§7, step 1).
 
   **A check before delivery.** The Maintainer Repo may compare the System Repo's main with the *settled snapshot* before delivery too, to save a delivery bound to fail. A System Kit moved since the Update was made is no reason to refuse it: the Update is correct, if not the latest, and the next brings the rest.
 
