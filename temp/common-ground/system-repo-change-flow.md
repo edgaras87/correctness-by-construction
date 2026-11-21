@@ -37,38 +37,36 @@ Each drawing is checked against these.
 - **System Repo:** its parts, each pointing at the commit it acts on.
 - **┊:** no commit.
 
-### A look for lessons
+### The two jobs
 
-What the Maintainer Repo does when it looks at one System Repo: reading for lessons, drawn as its choices. It ends once Act is done (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each step names its section of the simulation.
-
-```mermaid
-flowchart TD
-  start(["the human names a System Repo to read, or to update: a look at main"]) --> c1{"main moved past the settled snapshot?"}
-  c1 -- no --> A["nothing to read"]
-  c1 -- yes --> c2{"a Copy changed?"}
-  c2 -- no --> C["an empty list: no Reading written; Act sets the settled snapshot to main"]
-  c2 -- "yes: a Reading" --> D["read, list, judge, act (§4 to §6); the Reading goes"]
-  A --> done(["the look ends"])
-  C --> done
-  D --> done
-```
-
-### An Update when work resumes
-
-What follows when the human, about to open the System Repo's next Plan Step, names it to update. The look above runs first, then Deliver's check (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*). The two together end in one of the five cases.
+What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A look for lessons runs when the human names the System Repo to read, and ends once Act is done (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). An Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the look runs first, then Deliver's check (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*). The two together end in one of the five cases. Each step names its section of the simulation.
 
 ```mermaid
 flowchart TD
-  start(["about to open the System Repo's next Plan Step, the human names it to update"]) --> open{"one of the System Repo's Plan Steps open?"}
-  open -- "yes" --> wait1(["say so; the step finishes on the old Copies first (§7, step 1)"])
-  open -- no --> look["a look at main, to its end (above)"]
-  look --> c3{"Version behind the newest?"}
-  c3 -- "no: case A or C1" --> same(["the System Repo's Plan Step opens on the same Copies"])
-  c3 -- "yes: case B, C2 or D2" --> make["make the Update (§7, step 1)"]
-  make --> ok{"clear to stage?"}
-  ok -- "no: no word, or work under way" --> wait["say what was found; wait for the word"]
-  ok -- yes --> stage["stage the Update in temp/ (§7, step 2)"]
-  stage --> take(["the System Repo takes it at the opening (§8)"])
+  read(["the human names a System Repo to read"]) --> c1
+  upd(["about to open the System Repo's next Plan Step, the human names it to update"]) --> c1
+  subgraph lessons ["A look for lessons"]
+    c1{"main moved past the settled snapshot?"}
+    c1 -- no --> A["nothing to read"]
+    c1 -- yes --> c2{"a Copy changed?"}
+    c2 -- no --> C["an empty list: no Reading written; Act sets the settled snapshot to main"]
+    c2 -- "yes: a Reading" --> D["read, list, judge, act (§4 to §6); the Reading goes"]
+    A --> done(["the look ends"])
+    C --> done
+    D --> done
+  end
+  done -- "only when it was named to update" --> c3
+  subgraph update ["An Update when work resumes"]
+    c3{"Version behind the newest?"}
+    c3 -- "no: case A or C1" --> same(["the System Repo's Plan Step opens on the same Copies"])
+    c3 -- "yes: case B, C2 or D2" --> open{"one of the System Repo's Plan Steps open?"}
+    open -- "yes" --> wait1(["say so; make nothing; the step finishes on the old Copies first (§7, step 1)"])
+    open -- no --> make["make the Update (§7, step 1)"]
+    make --> ok{"clear to stage?"}
+    ok -- "no: no word, or work under way" --> wait["say what was found; wait for the word"]
+    ok -- yes --> stage["stage the Update in temp/ (§7, step 2)"]
+    stage --> take(["the System Repo takes it at the opening (§8)"])
+  end
 ```
 
 ### The Take
