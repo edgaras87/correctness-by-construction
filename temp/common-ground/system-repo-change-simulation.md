@@ -274,7 +274,7 @@ Four steps:
 
   **Where it stops.** The stop is the System Repo's main as it stands when the look begins: its latest snapshot, named by its commit. Everything is compared against that commit, never against main as it moves, so a commit landing during the look falls into the next one. The Reading names its stop. When the list is empty, no Reading is written, and Act sets the *settled snapshot* to the stop.
 
-  **After a Take.** When a Take came after the *settled snapshot*, the older snapshot is the clean copy instead: the commit the Take recorded with its Version (§8, step 1, *At the Take, in order*, item 4), every Copy at that Version. It is first checked against that Version, which the Maintainer Repo holds; a difference is said before anything is read. So the Take's own changes are never read as the System Repo's.
+  **After a Take.** When a Take came after the *settled snapshot*, the older snapshot is the clean copy instead: the commit the Take recorded with its Version (§8, step 1, *At the Take, in order*, item 4), every Copy at that Version. It is first checked against that Version, which the Maintainer Repo holds; a difference is said before anything is read. So the Take's own changes are never read as the System Repo's. The Version itself, as the Maintainer Repo holds it, would compare the same, but it lies in the Maintainer Repo: each of its files would first be matched to its Copy, across the two repos. The clean copy keeps the comparison one diff between two commits of the System Repo, as at every other look.
 
   **When the stop moves.** Act on the verdicts sets the *settled snapshot* to the stop at every look, whether or not anything was read (§6, step 1). When the verdicts ask for no change, or there are none, that is right after judging. It never moves before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all between the two snapshots is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
@@ -594,7 +594,7 @@ Two steps:
   1. the Adapted Case for taking an Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
   3. every Copy is taken whole, at the new Version; each path gone is removed, and each renamed is moved. Every Record is cleared: main is the *settled snapshot*, so each was read and judged. A part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
-  4. the new Version is recorded, with the commit that holds it: item 3's, the clean copy, every Copy at the new Version. So Deliver's check can compare it with the newest;
+  4. the new Version is recorded, with the commit that holds it: item 3's, the clean copy, every Copy at the new Version. So Deliver's check can compare it with the newest. It names item 3's commit because a commit cannot hold its own hash, and item 3's is the last before it;
   5. the Update and its Update Note are removed from `temp/`;
   6. the Take's gate, last. It checks that the Take finished: the files matched the Update Note, every Copy is at the new Version, the Version is recorded, and `temp/` holds no Update.
 
