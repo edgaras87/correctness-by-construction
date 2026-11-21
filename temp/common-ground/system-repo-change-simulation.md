@@ -274,11 +274,11 @@ Four steps:
 
   **Where it stops.** The stop is the System Repo's main as it stands when the look begins: its latest snapshot, named by its commit. Everything is compared against that commit, never against main as it moves, so a commit landing during the look falls into the next one. The Reading names its stop. When the list is empty, no Reading is written, and Act sets the *settled snapshot* to the stop.
 
-  **The first look after a Take.** It has to start from the *version snapshot*, not the *settled snapshot*. The *settled snapshot* still holds the Copies of the previous Version. Starting there, the look would read the Take's changes as the System Repo's. The agent finds the *version snapshot* at main (§8, step 1, *At the Take, in order*, item 4). Before reading, the agent checks that the Take put every Copy in right: the *version snapshot*'s Copies must match the new Version in the Maintainer Repo.
+  **The first look after a Take.** It has to start from the *version snapshot*, not the *settled snapshot*. The *settled snapshot* still holds the Copies of the previous Version. Starting there, the look would read the Take's changes as the System Repo's. The agent finds the *version snapshot* at main (§8, step 1, *At the Take, in order*, item 4). The agent does not check the *version snapshot*'s Copies against the new Version: Deliver and the Take check the files three times before (§7, step 2; §8, step 1, items 2 and 6). That check comes back if a Take is found to have put a Copy in wrong.
 
   **When the stop moves.** Act on the verdicts sets the *settled snapshot* to the stop at every look, whether or not anything was read (§6, step 1). When the verdicts ask for no change, or there are none, that is right after judging. It never moves before: a Reading left half done must not mark its Changes read. Whether the System Repo takes the Update does not hold it back: by then all between the two snapshots is read, judged and acted on, and what follows is the next Reading's. The Reading stays a draft, and goes once its work is done.
 - **Adapted Case:** the Maintainer Repo's, for reading a System Repo. For this step it says:
-  - the older snapshot is the Register's *settled snapshot*; at the first look after a Take, the *version snapshot*, checked first against its Version;
+  - the older snapshot is the Register's *settled snapshot*; at the first look after a Take, the *version snapshot*;
   - the stop is the System Repo's main as it stands when the look begins, named by its commit; everything is compared against it;
   - Act sets the *settled snapshot* to the stop at every look, once the verdicts, if any, are acted on.
 - **Today:**
