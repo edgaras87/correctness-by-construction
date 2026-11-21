@@ -446,7 +446,7 @@ Two steps:
 
 **Step 1. The Maintainer Repo makes its changes. For depth b, the System Kit's Adapted Case.**
 
-- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth b, the System Kit's Adapted Case gains the lesson, worded for every System Repo, and is committed in the Maintainer Repo: the System Kit stands at a new Version. The System Repo the lesson came from gets it back with the next Update, though its Copy already holds the Change in its own words (§7, step 1). The Reading stays a draft until that Update is made. Once the verdicts are acted on here, Act sets the *settled snapshot* to the stop, in the Register (§4, step 2). It does so at every look: with no verdicts, as in cases A and C, that is all it does (§4, step 1, *A look at main*).
+- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth b, the System Kit's Adapted Case gains the lesson, worded for every System Repo, and is committed in the Maintainer Repo: the System Kit stands at a new Version. The System Repo the lesson came from gets it back with the next Update, though its Copy already holds the Change in its own words (§7, step 1). The Reading stays a draft until that Update is made. Once the verdicts are acted on here, Act sets the *settled snapshot* to the stop, in the Register (§4, step 2). It does so at every look: with no verdicts, as in cases A, B, C1 and C2, that is all it does (§4, step 1, *A look at main*).
 - **Options,** for depth b:
   - a. the lesson is reworded for every System Repo, and the System Kit's Adapted Case gains it, its first wording kept beside it;
   - b. the Change goes into the System Kit's Adapted Case as the System Repo wrote it;
@@ -572,7 +572,7 @@ Two steps:
 
   **Before the Take.** The opening order is fixed: reading back, judging, then the Update. An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A Plan Step open when the human returns finishes on the old Copies first; the human may instead drop or restart it, when the Update changes a rule it rests on. The Take checks first, from the Update Note, what the System Repo itself can see:
   - case 1, its main is still the *settled snapshot* the Update Note names: the Update is taken. Its Version needs no check of its own: it is recorded in main, so it cannot change while main stands still;
-  - case 2, anything else: there is no Take, and the System Repo says so. The human has it looked at, and the look finds its case, C or D when main has moved (§4, step 1, *A look at main*). Deliver's check then finds a new Update due, made against the System Kit as it is now. It replaces the waiting one (§7, step 1).
+  - case 2, anything else: there is no Take, and the System Repo says so. The human has it looked at, and the look finds its case, C1, C2 or D2 when main has moved (§4, step 1, *A look at main*). Deliver's check then finds a new Update due, made against the System Kit as it is now. It replaces the waiting one (§7, step 1).
 
   **A check before delivery.** The Maintainer Repo may compare the System Repo's main with the *settled snapshot* before delivery too, to save a delivery bound to fail. A System Kit moved since the Update was made is no reason to refuse it: the Update is correct, if not the latest, and the next brings the rest.
 
