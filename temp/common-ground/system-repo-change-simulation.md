@@ -591,7 +591,7 @@ Two steps:
   - the System Repo's, for taking an Update, itself in the Update and taken first. It loads when a Plan Step opens with an Update waiting. For this step it says:
     - check first that main is still the *settled snapshot*, and take nothing when it differs, saying so;
     - take only at a Plan Step's opening, or postpone with why;
-    - take on a branch of its own, in the order above, one commit per item, the gate last, checking that the Take finished; main moves by fast-forward at the gate's close;
+    - take on a branch of its own: first the Update as it arrived, then the items in the order above, one commit each but item 2, a check, the gate last, checking that the Take finished; main moves by fast-forward at the gate's close;
   - the System Repo's gate list, at a Plan Step's opening: was this System Repo read back, and its Update, when one was due, taken, since the last opening? A System Repo cannot see this itself; the human answers.
 - **Open:**
   - finished work done under a rule the Update changed may now be wrong. New work follows the new Copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Update that changes a rule a finished Plan Step followed;
