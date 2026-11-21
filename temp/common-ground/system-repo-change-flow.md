@@ -92,7 +92,7 @@ The System Repo takes an Update at the opening of the System Repo's next Plan St
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
  c4, the version snapshot: the next look            │         c4 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole, each path gone removed, each renamed moved; every Record cleared
  compares from here                                 │            │
-                                                    │         c5 ●  Version 2 recorded        ◀──── item 4: with the commit that holds it, c4
+                                                    │         c5 ●  Version 2 recorded        ◀──── item 4: with the commit that holds it, c4; open: where in the System Repo Version 2 and c4 are written (§8, Open)
                                                     │            │
                                                     │         c6 ●  the Update removed        ◀──── item 5: the Update and the Update Note leave temp/
                                                     │            │
