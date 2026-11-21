@@ -75,10 +75,8 @@ The System Repo takes an Update at the opening of the System Repo's next Plan St
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
                          settled snapshot ─▶     c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
- Deliver (§7):                                      ┊
-   makes the Update: every Copy at Version 2,       ┊
-   and an Update Note for Copies at Version 1       ┊
-   stages it in the System Repo's temp/             ┊
+                                                    ┊                                         ┄┄┄┄┄ an Update waits in temp/, staged by Deliver (§7), not yet in force: every Copy
+                                                    ┊                                               at Version 2, and an Update Note naming c1, the settled snapshot it was built against
                                                     │
  ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ┊                                         ┄┄┄┄┄ at the opening of the System Repo's next Plan Step, the Take checks first, from the Update Note:
