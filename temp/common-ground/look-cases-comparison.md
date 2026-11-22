@@ -47,7 +47,7 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
    snapshot set to the stop, c1, as it was          ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
- settled snapshot: c1                       ─▶   c1 ●
+ settled snapshot: c1                       ─▶   c1 ●                                         ◀──── the System Repo: a Plan Step already open goes on; its next opens once it is named to update
  if named for its lessons: nothing follows
  if named to update: Deliver's check comes next,
  then the System Repo's next Plan Step opens,
@@ -84,7 +84,7 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
    snapshot set to the stop, c3                     ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
- settled snapshot: c3                       ─▶   c3 ●
+ settled snapshot: c3                       ─▶   c3 ●                                         ◀──── the System Repo: a Plan Step already open goes on; its next opens once it is named to update
  if named for its lessons: nothing follows
  if named to update: Deliver's check comes next,
  then the System Repo's next Plan Step opens,
@@ -126,7 +126,7 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
    the stop, c3                                     ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
- settled snapshot: c3                       ─▶   c3 ●
+ settled snapshot: c3                       ─▶   c3 ●                                         ◀──── the System Repo: a Plan Step already open goes on; its next opens once it is named to update
  if named for its lessons: nothing follows
  if named to update: Deliver's check comes next,
  then the System Repo's next Plan Step opens,
