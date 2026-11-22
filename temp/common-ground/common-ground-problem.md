@@ -54,7 +54,7 @@ Defined Terms, in alphabetical order:
 - **System Kit Attention Note:** what a System Repo writes for the Maintainer Repo to look at in the System Kit, when no System Kit Copy Change carries it.
 - **System Kit Copy:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Kit Copy Change:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Copy Change Record:** what a System Repo writes with each System Kit Copy Change: what changed, what happened, which work found it, and the System Repo's proposal. It sits in the footer of the Adapted Understanding Text of the Adapted Case the copy belongs to. For a System Kit Copy outside any Adapted Case, where it sits is open.
+- **System Kit Copy Change Record:** what a System Repo writes with each System Kit Copy Change, saying what changed and why. What it holds and where it sits are the simulation's (`temp/common-ground/system-repo-change-simulation.md` §3, *Change*, step 1).
 - **System Kit Update:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Kit Update Note:** what the Maintainer Repo writes with a System Kit Update, for the System Repo that takes it.
 - **System Kit Update Take:** a System Repo taking a System Kit Update into its System Kit Copies. How it runs is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §8, *Take*).

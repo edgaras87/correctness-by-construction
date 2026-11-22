@@ -164,6 +164,7 @@ Two steps:
   - a commit that changes a Copy and not its Record is stopped. A Take is not a Change, and passes;
   - what happened is written concretely, in the System Repo's own words;
   - whether the Change is its own or any repo's is a proposal, never a verdict.
+- **Open:** where the Record goes when the Copy belongs to no Adapted Case. A copy of the Defined Terms is one (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*, item 3). Such a Copy has no Adapted Understanding Text, so the Record's usual place is missing. Its trigger: the first Change to such a Copy.
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);

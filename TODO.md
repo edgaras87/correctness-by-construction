@@ -69,11 +69,6 @@
       yet simulated. The problem file's run stopped part-way for it
       (`73c37b3`).
       Ideas:
-      - the Defined Term System Kit Copy Change Record, in the
-        problem file, retells what a Record holds and where it sits
-        (the simulation's §3, step 1), and alone holds an open
-        point: where a Record sits for a Copy outside any Adapted
-        Case;
       - the final home, a first draft: a section of the layers
         document, its §3.2 grown and retitled *How a change
         travels*; the simulation's rules written out there, its
