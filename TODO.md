@@ -201,21 +201,6 @@
       simulation as it stands; the question is then drawn as an After
       item there.
 
-- [ ] Remove pictures 1 and 2: delete
-      `temp/common-ground/system-repo-change-flow-old-pictures.md`,
-      once the flow file's new pictures are drawn (2026-11-20, the
-      reviewer).
-      Context: the case pictures and *The Take* in
-      `temp/common-ground/system-repo-change-flow.md` replace them.
-      They moved out of its §3, *Old pictures*, into a file of their
-      own (2026-11-21, the reviewer). They are not Now, and are
-      not kept in step with the simulation. Picture 2 is the only
-      drawing of the missed window: the Take postponed, then its
-      check's case 2 (`temp/common-ground/system-repo-change-simulation.md`
-      §8, step 1, *Before the Take*).
-      Trigger: the change flow finished, Change to Take: the first
-      step of the "Define the Change idea" item.
-
 - [ ] Sweep the drafts for words that read as walking commits, where
       Read Changes compares two snapshots (2026-11-13, the reviewer).
       Context: Read Changes compares two snapshots and never
