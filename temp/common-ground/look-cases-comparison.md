@@ -47,12 +47,17 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
    snapshot set to the stop, c1, as it was          ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
- settled snapshot: c1                       ─▶   c1 ●                                         ◀──── the System Repo may go on with a Plan Step already open; its next opens once it is named to update
- what may follow, by why the human named it:
- - for its lessons: nothing follows
- - to update it: Deliver's check comes next,
-   then the System Repo's next Plan Step opens,
-   with or without an Update (§7, step 1)
+ settled snapshot: c1                       ─▶   c1 ●
+ what may follow:
+ - if the human asked for its lessons: nothing
+   follows
+ - if the human asked to update it: Deliver's
+   check comes next, then the System Repo's next
+   Plan Step opens, with or without an Update
+   (§7, step 1)
+ - the System Repo: a Plan Step already open
+   goes on; its next opens once it is named to
+   update
 ```
 
 ### *no Change*
@@ -85,12 +90,17 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
    snapshot set to the stop, c3                     ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
- settled snapshot: c3                       ─▶   c3 ●                                         ◀──── the System Repo may go on with a Plan Step already open; its next opens once it is named to update
- what may follow, by why the human named it:
- - for its lessons: nothing follows
- - to update it: Deliver's check comes next,
-   then the System Repo's next Plan Step opens,
-   with or without an Update (§7, step 1)
+ settled snapshot: c3                       ─▶   c3 ●
+ what may follow:
+ - if the human asked for its lessons: nothing
+   follows
+ - if the human asked to update it: Deliver's
+   check comes next, then the System Repo's next
+   Plan Step opens, with or without an Update
+   (§7, step 1)
+ - the System Repo: a Plan Step already open
+   goes on; its next opens once it is named to
+   update
 ```
 
 ### *Change read*
@@ -128,10 +138,15 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
    the stop, c3                                     ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
- settled snapshot: c3                       ─▶   c3 ●                                         ◀──── the System Repo may go on with a Plan Step already open; its next opens once it is named to update
- what may follow, by why the human named it:
- - for its lessons: nothing follows
- - to update it: Deliver's check comes next,
-   then the System Repo's next Plan Step opens,
-   with or without an Update (§7, step 1)
+ settled snapshot: c3                       ─▶   c3 ●
+ what may follow:
+ - if the human asked for its lessons: nothing
+   follows
+ - if the human asked to update it: Deliver's
+   check comes next, then the System Repo's next
+   Plan Step opens, with or without an Update
+   (§7, step 1)
+ - the System Repo: a Plan Step already open
+   goes on; its next opens once it is named to
+   update
 ```
