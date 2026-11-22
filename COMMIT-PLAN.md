@@ -17,7 +17,9 @@ Change.
 
 The problem file's seven travel terms and two labels sit in the
 layers document's §2 list, eleven entries beside the System Kit, and
-the problem file keeps pointer entries. Its Repo Responsibility
+the problem file keeps pointer entries. The short forms stand in one
+table there, each the last two words of its Defined Term, and every
+text that uses them uses those. Its Repo Responsibility
 lists and §2.2 table stay, re-pointed, and its 3 stale lines are
 fixed. The flow drawing points at the new home.
 
@@ -43,6 +45,23 @@ for Look for Lessons and System Kit Update Take, one of its 3 stale
 lines. The simulation's and the flow drawing's notes on their short
 forms point at the layers document. A commit of its own: the rules
 in commits 2 to 9 use these terms, so they must stand first.
+
+**1b. `docs: temp's short forms, two words, one table`**
+Inserted on the reviewer's word, after commit 1. The short forms
+move into one table in the layers document's §2, and each becomes
+the last two words of its Defined Term: Kit Version, Kit Copy, Copy
+Change, Change Record, Attention Note, Repo Register, Repo Reading,
+Kit Update, Update Note, Update Take. A one-word short form met the
+plain word, and some met a Glossary Name: Change Set, Record Stub,
+Master Copy, Delivery Take, CBC Run Reading. The entries' "This
+document shortens it to" sentences go, and with them a sentence that
+read as if the *settled snapshot* were the one shortened. Every use
+is swept in the layers document, the simulation and the flow
+drawing, the pictures' labels among them; each picture is checked
+against its text after. The simulation's table of short forms
+becomes a pointer. A commit of its own: the rules in commits 2 to 9
+are written in these names. The table and the names are one
+change, so no line changes twice.
 
 **2. `docs: temp's layers frame how a change travels`**
 The layers document's §3.2 is retitled *How a change travels*. It
@@ -116,9 +135,9 @@ true.
   rules. The simulation keeps only why each choice was made.
 - **Parts as subsections of §3.2,** one for each part, titled by the
   part's name. The depth table stays in §3.2.
-- **Short forms in the layers document.** The three entries that now
-  say "The picture shortens it to" say instead that the document
-  shortens it, since the rules use the short forms too.
+- **Short forms in the layers document.** Commit 1 had each entry
+  name its short form. Commit 1b replaces that with one table, on
+  the reviewer's word, and the rules use its names.
 - **The simulation's picture, *Change whole*,** stays in the
   simulation in this plan. Commit 10 judges whether it repeats §3.2,
   and says what it found.
