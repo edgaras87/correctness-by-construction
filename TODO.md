@@ -135,6 +135,16 @@
       devlog. The Change idea's move rewrites the problem file's
       §2.1 and its Defined Terms, so the pass waits for it, and each
       line changes once. Each fault is checked again when due.
+      Ideas:
+      - the problem file's answers that belong in the layers
+        document move there: *What the System Kit holds*, unless it
+        is part of the Repo Responsibility; §2.1's table of the two
+        groups of understanding; the lines of the Repo
+        Responsibility lists that retell the layers document; §8's
+        middle-level option, which the layers model answers. With
+        the list go the layers document's §2 and §2.3.2 lines that
+        say the System Kit holds only Adapted Cases, and its §4,
+        question 7, which asks only of layer 2.
       Trigger: the Change idea written from depth b (the item
       "Define the Change idea").
       See: devlog 2026-11-18, later, *Found, not fixed*, item 5.
@@ -156,6 +166,16 @@
       and polished one insight at a time. The reviewer has not yet
       said it is right. Its §1 and §7 hold the goal of the whole
       knowledge work (ADR-0082).
+      Ideas:
+      - the problem as an idea of its own, which the layers model
+        answers, the layers documents pointing up to it in one line
+        as their purpose. A first guess, looked at again when due:
+        how the idea looks, what goes, what stays, what changes and
+        what is new. One shape met so far: its general part, the
+        purpose, the five Knowledge Axes and most Failure Cases, a
+        Backbone Idea; the Maintainer Repo's part, the Repo
+        Responsibility, §2.2 and the Failure Cases between repos,
+        its adaptation.
       Trigger: the Change idea defined, since its rules leave the
       problem file's §2.1.
       See: ADR-0082; `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what
