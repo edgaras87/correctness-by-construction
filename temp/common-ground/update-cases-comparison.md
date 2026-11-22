@@ -43,8 +43,9 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
    next Plan Step, names it to update (§7, step 1)  ┊
  - Look for Lessons (§4 to §6): case not moved,     ┊
    drawn above; the settled snapshot stays c1       ┊
- - Deliver (§7): the Version is 1, the newest:      ┊
-   no Update is due; nothing is made                ┊
+ - Deliver (§7): the System Repo's Version, 1,      ┊
+   is the newest: no Update is due; nothing is      ┊
+   made                                             ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     └─ cut ──────┐                            ◀──── the System Repo's next Plan Step opens on Version 1
