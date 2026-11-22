@@ -97,8 +97,11 @@
       - the flow drawing needs no change for the layers model;
       - the other six rows of the simulation's §2 table move as not
         yet checked, each checked when practice first meets it.
-      Trigger: due now: one home for each fact across the drafts,
-      the facts of Change moved out of the simulation among them,
+      Trigger: due now, in three steps: the simulation read whole
+      against itself; every line of the problem file about Change
+      compared with the simulation, each stale line fixed with the
+      move; then one home for each fact across the drafts, the
+      facts of Change moved out of the simulation among them,
       written from depth b, with what depth c leaves undecided
       marked as not yet done.
       See: devlog 2026-11-18, the Change idea's design talk;
@@ -124,6 +127,17 @@
       Trigger: the Change idea written from depth b (the item
       "Define the Change idea").
       See: devlog 2026-11-22, the depth c item.
+
+- [ ] Do the problem file's next pass: §6 and §8, Failure Case 15,
+      the rest of the "project-agnostic" sweep, and §2.2's "middle
+      level" (2026-11-22, the reviewer).
+      Context: found on 2026-11-18, and written since only in the
+      devlog. The Change idea's move rewrites the problem file's
+      §2.1 and its Defined Terms, so the pass waits for it, and each
+      line changes once. Each fault is checked again when due.
+      Trigger: the Change idea written from depth b (the item
+      "Define the Change idea").
+      See: devlog 2026-11-18, later, *Found, not fixed*, item 5.
 
 - [ ] Decide what becomes of the branch `experiment-simulation-auto`
       (2026-11-19, the reviewer).
