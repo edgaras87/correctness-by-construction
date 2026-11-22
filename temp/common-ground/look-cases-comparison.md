@@ -32,8 +32,8 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- taken into account                           ┌  c0 ●  earlier steps and Takes                ◀──── history
-                                              │     │
+ taken into account by                        ┌  c0 ●  earlier Plan Steps and Takes           ◀──── history
+ earlier Looks for Lessons                    │     │
  settled snapshot: the last stop           ─▶ └  c1 ●  the last gate closed                   ◀──── no Plan Step has closed since
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
@@ -57,8 +57,8 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- taken into account                           ┌  c0 ●  earlier steps and Takes                ◀──── history
-                                              │     │
+ taken into account by                        ┌  c0 ●  earlier Plan Steps and Takes           ◀──── history
+ earlier Looks for Lessons                    │     │
  settled snapshot: the last stop           ─▶ └  c1 ●  the last gate closed
                                                     │
                                                     ├─ cut ──────┐                            ◀──── one of the System Repo's Plan Steps opens
@@ -91,8 +91,8 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- taken into account                           ┌  c0 ●  earlier steps and Takes                ◀──── history
-                                              │     │
+ taken into account by                        ┌  c0 ●  earlier Plan Steps and Takes           ◀──── history
+ earlier Looks for Lessons                    │     │
  settled snapshot: the last stop           ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
                                                     │
                                                     ├─ cut ──────┐                            ◀──── one of the System Repo's Plan Steps opens
