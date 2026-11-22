@@ -60,10 +60,10 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | what changed | delivered Knowledge on Trial | not yet checked | read: compared like any Kit Copy; decided: the original was never proven, so the Copy Change is evidence for its trial |
 | what changed | one reason behind Copy Changes to several Adapted Cases | not yet checked | recorded: one why, naming every Kit Copy it changed; read: the Copy Changes are listed together |
 | how deep | b. the System Kit's Adapted Case changes: layer 3 | simulated, §5 to §8 | — |
-| how deep | c, at layer 2. the idea above changes: its Work Domain Idea | not yet checked | the other Adapted Cases of that Work Domain Idea are surveyed, the Maintainer Repo's own only when they share it (§6, step 1) |
-| how deep | c, at layer 1. the idea above changes: its Backbone Idea | not yet checked | every Work Domain Idea on that Backbone Idea is surveyed; how far down the survey reaches is open (§6, step 1) |
+| how deep | c, at layer 2. the idea above changes: its Work Domain Idea | not yet checked | the other Adapted Cases of that Work Domain Idea are surveyed, the Maintainer Repo's own only when they share it (`temp/common-ground/knowledge-layers.md` §3.2.4, *Act on the verdicts*) |
+| how deep | c, at layer 1. the idea above changes: its Backbone Idea | not yet checked | every Work Domain Idea on that Backbone Idea is surveyed; how far down the survey reaches is open (`temp/common-ground/knowledge-layers.md` §3.2.4, *Act on the verdicts*) |
 | how deep | d. the idea above already holds it: layer 3, or layer 2 | not yet checked | the loss sits at layer 2 when the Work Domain Idea lost a part its Backbone Idea holds: the Work Domain Idea is fixed from its Backbone Idea, then the Adapted Case from the Work Domain Idea. Which other texts are checked for the same loss is open (`temp/common-ground/knowledge-layers.md` §3.2.3, *Judge Copy Changes*) |
-| how deep | e. it asks to narrow the idea above: layer 3, or layer 2 | not yet checked | the narrowing goes into the text just below the idea that does not fit, marked with its why (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**, *Narrowing, never shrinking*): the Adapted Case, or the Work Domain Idea when a part of its Backbone Idea does not fit its whole Work Domain. How that is known is open (§6, step 1) |
+| how deep | e. it asks to narrow the idea above: layer 3, or layer 2 | not yet checked | the narrowing goes into the text just below the idea that does not fit, marked with its why (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**, *Narrowing, never shrinking*): the Adapted Case, or the Work Domain Idea when a part of its Backbone Idea does not fit its whole Work Domain. How that is known is open (`temp/common-ground/knowledge-layers.md` §3.2.4, *Act on the verdicts*) |
 | how deep | f. several Adapted Cases need it, but not all: no layer | not yet checked | it cannot enter the idea above. When it holds for every Adapted Case of one Work Domain, it is depth c, at layer 2. Two cases are left: several Adapted Cases of one Work Domain, but not all; and Adapted Cases across Work Domains, but not all (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1). Each Adapted Case gains it, and the same text has no shared home. Open; its trigger: the first change two Adapted Cases need, but not every one |
 
 How deep a Copy Change goes is how high it goes: each depth names the highest layer it changes, since a lesson goes as high as it is true (`temp/common-ground/knowledge-layers-general.md` §3.1, *How the layers fill*). The idea above is the Work Domain Idea an Adapted Case is written from, or the Backbone Idea that one is adapted from.
@@ -279,7 +279,7 @@ Two steps:
   - c. b, and what the Maintainer Repo changes for it.
 - **Chosen:** b. The others:
   - a leaves the change made from it with nothing to check it against, and a proposal judged wrong goes unseen;
-  - c decides what changes before it is worked out: that is §6, step 1's, with the survey where the depth needs one.
+  - c decides what changes before it is worked out: that is the work of Act on the verdicts, with the survey where the depth needs one (`temp/common-ground/knowledge-layers.md` §3.2.4, *Act on the verdicts*).
 - **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.3, *Judge Copy Changes*).
 - **Today:**
   - borrowed: a verdict carries its why (`docs/conventions/exchange/` §6.5, *Verdicts*);
@@ -291,7 +291,6 @@ Two steps:
 
 **Step 1. The Maintainer Repo makes its changes. For depth b, the System Kit's Adapted Case.**
 
-- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth b, the System Kit's Adapted Case gains the lesson, worded for every System Repo, and is committed in the Maintainer Repo: the System Kit stands at a new Kit Version. The System Repo the lesson came from gets it back with the next Kit Update, though its Kit Copy already holds the Copy Change in its own words (§7, step 1). The Repo Reading then goes: nothing in the Kit Update is read from it (§7, step 1, *What it is*). Once the verdicts are acted on here, Act sets the *settled snapshot* to the stop, in the Repo Register (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). It does so at every Look for Lessons: with no verdicts, as in cases *not moved* and *no Copy Change*, that is all it does (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*).
 - **Options,** for depth b:
   - a. the lesson is reworded for every System Repo, and the System Kit's Adapted Case gains it;
   - b. the Copy Change goes into the System Kit's Adapted Case as the System Repo wrote it;
@@ -299,23 +298,7 @@ Two steps:
 - **Chosen:** a. The others:
   - b carries one project's words to every System Repo, since the System Repo writes what happened in its own words, on purpose (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*);
   - c waits for a second proof of what judging already found: question 2 found the Copy Change is not that System Repo's own.
-
-  **The other depths.** For the other depths, this step holds the work, each checked here later:
-  - depth c changes the idea above at its layer, after the survey: its Work Domain Idea at layer 2, its Backbone Idea at layer 1;
-  - depth d fixes the Adapted Case from the idea above, after fixing the Work Domain Idea from its Backbone Idea when the loss sits at layer 2;
-  - depth e marks a narrowing with its why, in the text just below the idea that does not fit.
-
-  **The survey.** Before a lesson enters the idea above, every other text built on that idea is asked whether it fits, the one the lesson came from excepted (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**; §2.3, *The Adapted Case layer*). At layer 2, that is the other Adapted Cases of that Work Domain Idea, the Maintainer Repo's own only when they share it. At layer 1, it is every Work Domain Idea on that Backbone Idea. It is the arrow *adapt*'s check, run before the idea changes, so a conflict shows first. Each text answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto, and what the survey finds must change, changes. Its answers are also evidence for question 4: if every answer conflicts, the lesson is not true that high.
-
-  A lesson is reworded here, never before: for every System Repo at depth b; at depth c, naming no Adapted Case at layer 2, and no Work Domain at layer 1 (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**).
-- **Adapted Case:** the Maintainer Repo's, for judging a Repo Reading. For this step it says:
-  - a lesson for its Adapted Case is reworded for every System Repo, and the System Kit's Adapted Case gains it;
-  - the Repo Reading goes once its verdicts are acted on;
-  - once the verdicts are acted on, or when there are none, the *settled snapshot* is set to the stop, in the Repo Register.
-- **Open:**
-  - at layer 1, how far down the survey reaches before the change: only the Work Domain Ideas, each checking its own Adapted Cases when it changes, or every Adapted Case below them at once. The first is cheaper; the second may catch a conflict two layers down. Its trigger: the first lesson judged at layer 1;
-  - how a part of a Backbone Idea is known not to fit a whole Work Domain, when one System Repo's Copy Change shows one Adapted Case. A first guess: the same survey, over that Work Domain Idea's Adapted Cases. Its trigger: the first depth-e verdict;
-  - whether a Look for Lessons is one of the Maintainer Repo's Plan Steps, and whether Act gets an Adapted Case of its own, apart from the one for Judge Copy Changes. Today a CBC Run Reading is one of the Concept Deliverer's Plan Steps, and its work follows it. Its trigger: the Adapted Case texts written from these rules.
+- **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.4, *Act on the verdicts*).
 - **Today:**
   - borrowed: a taken change is committed here, and the next delivery carries it (`docs/conventions/exchange/` §6.5, *Verdicts*). It is depth b's path, and the other depths'.
 
@@ -353,7 +336,7 @@ Two steps:
   - the new Kit Version;
   - the System Repo's *settled snapshot* it was built against, whether a Repo Reading was written or not. The Update Take checks it before anything moves (§8, step 1). The Update Note names the check, so a System Repo whose Adapted Case for taking is older still meets it;
   - what changed since the System Repo's Kit Version, from the same comparison of files: each path changed, new, gone or renamed, and how many. The System Repo checks the files against it when they arrive, and a file that is gone cannot say so itself;
-  - the why of each System Kit change since then, whatever its source: a Look for Lessons at this System Repo or at another, or the Maintainer Repo's own work. It is read from the bodies of the Maintainer Repo's commits that changed a System Kit file between the two Kit Versions, since a body says why (`docs/conventions/commit-messages/` §1, *What a commit message is*). Each why stands on its own, and names no other repo; a change that comes from a lesson, at any depth, quotes the lesson as Act reworded it (§6, step 1). With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
+  - the why of each System Kit change since then, whatever its source: a Look for Lessons at this System Repo or at another, or the Maintainer Repo's own work. It is read from the bodies of the Maintainer Repo's commits that changed a System Kit file between the two Kit Versions, since a body says why (`docs/conventions/commit-messages/` §1, *What a commit message is*). Each why stands on its own, and names no other repo; a change that comes from a lesson, at any depth, quotes the lesson as Act reworded it (`temp/common-ground/knowledge-layers.md` §3.2.4, *Act on the verdicts*). With it, the System Repo judges a change against its own needs without seeing the Maintainer Repo;
   - which files are taken first: the Adapted Case for taking a Kit Update, so a Kit Update is never taken by instructions older than it (§8, step 1, *At the Update Take, in order*, item 1; Failure Case 10);
   - the Kit Update it replaces, when one was waiting.
 

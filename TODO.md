@@ -122,7 +122,8 @@
         simulation's §2 leaves for later: only its start may differ;
       - questions likely met: whether other System Repos fall behind
         too; what the Update Note's why says; at layer 1, how far
-        down the survey reaches (the simulation's §6, *Open*).
+        down the survey reaches (`temp/common-ground/knowledge-layers.md`
+        §3.2.4, *Act on the verdicts*, its *Open*).
       Trigger: the Change idea written from depth b (the item
       "Define the Change idea").
       See: devlog 2026-11-22, the depth c item.
