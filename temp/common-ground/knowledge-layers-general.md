@@ -115,15 +115,17 @@ Knowledge can enter at any layer. Work meets something new and changes the Adapt
 
 ### 3.2 The arrows
 
-- **adapt,** layer 1 to layer 2, and layer 2 to layer 3: a text is written from the idea above it, narrowed to its need, with what the need adds. When the idea above changes, each text built on it is checked, and changes if it must. A part left out on purpose is marked, with why (§3.2's **Rules**, *Narrowing, never shrinking*).
-- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it is true (§3.1). It is reworded to name no Adapted Case at layer 2, and no Work Domain at layer 1.
+- **adapt,** layer 1 to layer 2, and layer 2 to layer 3: a text is written from the idea above it, narrowed to its need, with what the need adds. A part left out on purpose is marked, with why (§3.2's **Rules**, *Narrowing, never shrinking*).
+- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it is true (§3.1).
 - **set apart,** layer 3 to layer 2, and layer 2 to layer 1: while a text is written, a part of it shows as true without what the text adds. The part is written in the layer above, and the text is then adapted from it.
 - **worked by,** layer 3 to layer 4: work is done by an Adapted Case, kept where the work is done, or as a copy there.
 - **change,** layer 4 to layer 3: where the work shows the Adapted Case does not fit, the work changes it. Where no Adapted Case covers the work, the work writes one, on trial. The change is judged, and goes up the arrow *lesson* as far as it holds.
 
 **Rules:**
 
+- When an idea changes, each text built on it is checked, and changes if it must.
 - **Narrowing, never shrinking.** An idea changes only where it is wrong for every text built on it. A part that does not fit one text built on it stays in the idea: that text leaves the part out, and marks that it did, with why. The mark is written when the exclusion is decided, never listed ahead. A change to a marked part reopens its why.
+- A lesson is reworded to name no Adapted Case at layer 2, and no Work Domain at layer 1.
 
 ## 4. Open questions
 
