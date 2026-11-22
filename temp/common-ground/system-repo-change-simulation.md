@@ -1,18 +1,20 @@
 # A System Repo's Copy Change, Simulated
 
 <!-- A draft of the knowledge work (ADR-0082). It simulates the cases
-     of a System Repo's Copy Change, step by step. It is the one home of
-     the facts of Change until the change flow is done: the six
-     parts, their rules and the cases. A part's rules are its steps'
-     *Chosen* and *Adapted Case* fields. Then they move to their
-     final home, written out as rules, and this file points there
-     (TODO.md, the item "Define the Change idea"). Its input: the
+     of a System Repo's Copy Change, step by step, and keeps how each
+     rule was chosen: each step's options, why the others were not
+     taken, and how today's ways compare. The rules, the cases and
+     what is open are the layers document's, and each step points
+     there (temp/common-ground/knowledge-layers.md §3.2, How a
+     change travels). Depth c is simulated here first, then brought
+     there (TODO.md, the item "Simulate depth c, then bring the
+     Change idea to it"). Its input: the
      frozen temp/common-ground/between-repos-simulation.md, §5.2, *Work in a System
      Repo*, and §5.3, *Reading a System Repo*. It goes once what it
      holds has landed in the rewrite into the layers model, and git
      keeps every version. -->
 
-This document simulates the cases of a System Repo's change (§2), step by step. It holds the facts of Change until the change flow is done, and its steps' *Chosen* and *Adapted Case* fields are the rules (§1). One case is simulated through every step: a System Repo changes one Adapted Case, and the System Kit takes the Copy Change: its Adapted Case changes (depth b, §5). The other cases are checked against it (§2). It uses the Common Ground Problem's Defined Terms (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
+This document simulates the cases of a System Repo's change (§2), step by step, and keeps how each rule was chosen. The rules are the layers document's (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). One case is simulated through every step: a System Repo changes one Adapted Case, and the System Kit takes the Copy Change: its Adapted Case changes (depth b, §5). The other cases are checked against it (§2). It uses the Defined Terms of the layers document and of the Common Ground Problem (`temp/common-ground/knowledge-layers.md` §2, *The layers*; `temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
 It shortens ten Defined Terms to their last two words, as the layers document does, in its table (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 
@@ -23,7 +25,7 @@ The scope of that case: a Copy Change may touch the Adapted Understanding Text, 
 Three moves, in order:
 
 1. **Simulate:** each step below says what must happen, what could be done, and what is chosen.
-2. **Read the rules together:** once all of a part's steps are seen together, their *Chosen* and *Adapted Case* fields are read as one: they are the part's rules. They are written out as rules only when they move to their final home (the header comment).
+2. **Read the rules together:** once all of a part's steps are seen together, their choices are read as one: they are the part's rules, written out in the layers document's §3.2.
 3. **Check them:** each step is walked again against the rules. A step a rule does not hold for changes the rule or the step.
 
 The steps make six parts. Who does each, and how they make one movement, are the layers document's (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*):
@@ -39,18 +41,18 @@ The steps make six parts. Who does each, and how they make one movement, are the
 
 Each step has these fields. A field with nothing in it is left out.
 
-- **What must happen:** the outcome, and who acts.
 - **Options:** what could be done here, today's way among them.
 - **Chosen:** the option taken, and why the others were not.
-- **Adapted Case:** which Adapted Case runs the step, whose it is, what loads it, and what it must say for this step. Once a part is done, these are read together: they give the rules, and later the Adapted Case texts.
-- **Open:** what the step leaves undecided, each with the trigger that decides it.
+- **Its rules:** where the rules it led to are written, in the layers document's §3.2.
 - **Today:** what is borrowed from today, and what changes, each with its source. Today's things keep today's names, such as the Delivery Note.
+
+A step simulated anew also says what must happen, which Adapted Case runs it, and what it leaves open, each with its trigger, until its part is read together and they move to the layers document.
 
 ## 2. The cases
 
 The cases are simulated one at a time. The first is simulated whole; each other case is then checked against it, and what differs is written. A case that grows too complex goes to TODO, to be checked once the Common Ground Problem is finished. The cases themselves, what is known but not ruled, and the other sources are the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.7, *The cases*).
 
-**The whole flow.** The six parts of §1 and the depths of the layers document's table of cases (`temp/common-ground/knowledge-layers.md` §3.2.7, *The cases*), in one picture. It is a summary: the sections it names hold the facts.
+**The whole flow.** The six parts of §1 and the depths of the layers document's table of cases (`temp/common-ground/knowledge-layers.md` §3.2.7, *The cases*), in one picture. It is a summary: the layers document's §3.2 holds the facts, and each § in the picture names the section of this document that weighed them.
 
 ```
  System Repo               ┆ Maintainer Repo

@@ -1,12 +1,13 @@
 # A System Repo's Copy Change, as a Flow
 
 <!-- A draft of the knowledge work (ADR-0082). It pictures the System Repo's commits in the round of
-     temp/common-ground/system-repo-change-simulation.md, and the part acting on
-     each, and the Maintainer Repo's choices. The facts live in the
-     simulation, never here. "Now" pictures the simulation as it is.
+     a Copy Change, as temp/common-ground/knowledge-layers.md §3.2
+     rules it, and the part acting on each, and the Maintainer
+     Repo's choices. The facts live in the layers document, never
+     here. "Now" pictures its rules as they are.
      Each "After" section pictures one open decision, one drawing per
      option, each named by its option. When the decision is made, the
-     simulation changes, the chosen option's drawing becomes "Now",
+     layers document changes, the chosen option's drawing becomes "Now",
      and that "After" section goes. It goes once what it holds has
      landed in the rewrite into the layers model, and git keeps every
      version. -->
@@ -36,7 +37,7 @@ Each drawing is checked against these.
 
 ### The two jobs
 
-What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A Look for Lessons runs when the human names a System Repo for its lessons, and ends once Act is done (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). A Kit Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the Look for Lessons runs first, then the check in Deliver the Kit Update (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*). A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). Each step names its section of the simulation.
+What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A Look for Lessons runs when the human names a System Repo for its lessons, and ends once Act is done (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). A Kit Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the Look for Lessons runs first, then the check in Deliver the Kit Update (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*). A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). Each step names its section of the simulation, which points at its rules.
 
 ```mermaid
 flowchart TD
