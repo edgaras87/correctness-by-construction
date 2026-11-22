@@ -158,7 +158,7 @@ How knowledge enters the layers and moves between them is the general document's
 
 - **adapt,** **lesson** and **set apart,** between layers 1, 2 and 3: as the general document has them (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*). A lesson, or a part set apart, can come from either column.
 - **birth,** layer 3 to layer 4: a new System Repo receives Copies of the System Kit, at one System Kit Version.
-- **Update,** layer 3 to layer 4: the System Kit's changes since a System Repo's Copies were taken. The System Repo takes them by its own Copy of the Adapted Case for taking them.
+- **Update,** layer 3 to layer 4: a System Kit Update (§2) brings a System Repo's Copies to a newer System Kit Version. The System Repo takes it by its own Copy of the Adapted Case for taking an Update.
 - **Change, read back,** layer 4 to layer 3: a System Repo changes a Copy and records why. The Maintainer Repo reads it back and judges it against the Adapted Case the Copy came from.
 - **used in place,** layer 3 and layer 4 in one repo, with no Copy: the Maintainer Repo's own work changes its own Adapted Cases directly.
 
