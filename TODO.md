@@ -88,10 +88,9 @@
         the start;
       - the flow drawing needs no change for the layers model;
       - the problem file's stale lines, found by the check on
-        2026-11-22, fixed with the move: Maintainer Repo item 5
-        names the Adapted Case of Judge Copy Changes by an old name;
-        item 6 says a System Repo gets the System Kit's changes and
-        judges each against its Kit Copy;
+        2026-11-22, fixed with the move: Maintainer Repo item 6 says
+        a System Repo gets the System Kit's changes and judges each
+        against its Kit Copy;
       - "every Change Record cleared", in the simulation's §8, *At
         the Update Take, in order*, item 3, follows from taking each
         Kit Copy whole, and is no act of its own; it can be worded so in the

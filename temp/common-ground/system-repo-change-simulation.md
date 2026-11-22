@@ -62,7 +62,7 @@ The cases are simulated one at a time. The first is simulated whole; each other 
 | how deep | b. the System Kit's Adapted Case changes: layer 3 | simulated, §5 to §8 | — |
 | how deep | c, at layer 2. the idea above changes: its Work Domain Idea | not yet checked | the other Adapted Cases of that Work Domain Idea are surveyed, the Maintainer Repo's own only when they share it (§6, step 1) |
 | how deep | c, at layer 1. the idea above changes: its Backbone Idea | not yet checked | every Work Domain Idea on that Backbone Idea is surveyed; how far down the survey reaches is open (§6, step 1) |
-| how deep | d. the idea above already holds it: layer 3, or layer 2 | not yet checked | the loss sits at layer 2 when the Work Domain Idea lost a part its Backbone Idea holds: the Work Domain Idea is fixed from its Backbone Idea, then the Adapted Case from the Work Domain Idea. Which other texts are checked for the same loss is open (§5, step 1) |
+| how deep | d. the idea above already holds it: layer 3, or layer 2 | not yet checked | the loss sits at layer 2 when the Work Domain Idea lost a part its Backbone Idea holds: the Work Domain Idea is fixed from its Backbone Idea, then the Adapted Case from the Work Domain Idea. Which other texts are checked for the same loss is open (`temp/common-ground/knowledge-layers.md` §3.2.3, *Judge Copy Changes*) |
 | how deep | e. it asks to narrow the idea above: layer 3, or layer 2 | not yet checked | the narrowing goes into the text just below the idea that does not fit, marked with its why (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**, *Narrowing, never shrinking*): the Adapted Case, or the Work Domain Idea when a part of its Backbone Idea does not fit its whole Work Domain. How that is known is open (§6, step 1) |
 | how deep | f. several Adapted Cases need it, but not all: no layer | not yet checked | it cannot enter the idea above. When it holds for every Adapted Case of one Work Domain, it is depth c, at layer 2. Two cases are left: several Adapted Cases of one Work Domain, but not all; and Adapted Cases across Work Domains, but not all (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1). Each Adapted Case gains it, and the same text has no shared home. Open; its trigger: the first change two Adapted Cases need, but not every one |
 
@@ -241,17 +241,7 @@ Four steps:
 
 ## 5. Judge Copy Changes
 
-§5 to §8 are simulated first for depth b, the System Kit's Adapted Case changing: the shortest path into the System Kit through every step. Depth c, the idea above changing, at either layer, is then checked against them (§2, the "how deep" rows). Known before it was simulated:
-
-- the four questions decide, in order, the cheapest first, and the System Repo's own view of its Copy Change is input, never the verdict:
-  1. Did the Kit Copy already say this? Then it is a misreading (Failure Case 7). Nothing changes but, perhaps, the System Kit's wording.
-  2. Is it specific to that System Repo's problem? Then nothing changes here (§2, *Known, not ruled*).
-  3. Does the idea above already hold it, the Work Domain Idea above the Adapted Case, or the Backbone Idea above that? Then the Adapted Case it came from lost it in narrowing, and is fixed from the idea above. When only the Backbone Idea holds it, the Work Domain Idea lost it too, and is fixed first.
-  4. How high is it true? 4a, still true naming no Adapted Case: a lesson for its Work Domain Idea. 4b, still true naming no Work Domain: a lesson for its Backbone Idea.
-
-  If none holds, it is a lesson for its Adapted Case: the Adapted Case it came from gains it, and the idea above stays as it is;
-- the depth comes from the reason, never the edit. A cap raised from 50 to 60 is the System Repo's own, depth a, when its reason is "our scope names are long". The same edit is a lesson for its Work Domain Idea, depth c at layer 2, when its reason is "the cap counts the scope, which any repo with scopes meets". Only the recorded reason tells them apart;
-- what the System Repo gets reaches it with the next Kit Update (§7, step 1).
+§5 to §8 are simulated first for depth b, the System Kit's Adapted Case changing: the shortest path into the System Kit through every step. Depth c, the idea above changing, at either layer, is then checked against them (§2, the "how deep" rows).
 
 Two steps:
 
@@ -260,7 +250,6 @@ Two steps:
 
 **Step 1. The list is judged.**
 
-- **What must happen:** each line of the Repo Reading is first judged sound or not. A sound line is then judged by the four questions, in order, the cheapest first, until one holds (above). The agent proposes an answer to each, with what it read; the human decides. For depth b, none of the four holds: it is a lesson for its Adapted Case. An empty list gives no verdicts, and Judge Copy Changes hands Act only the stop.
 - **Options,** for who judges:
   - a. the agent proposes each answer, with what it read, and the human decides each line;
   - b. the agent judges, and the human looks only at the lines where the agent disagrees with the System Repo's proposal;
@@ -274,28 +263,7 @@ Two steps:
   - c leaves the human to read every text the questions need, which the agent reads faster, and with nothing written down to check;
   - d judges on a guess at the why (Failure Case 22);
   - e asks the human for what the System Repo may already have written.
-
-  **What each question reads:**
-  - question 0, the Copy Change is sound: what happened, the Copy Change, and the original part. Does it fix what happened, without breaking something the Kit Copy did? An unsound Copy Change goes no further: the depth questions are not asked, and the verdict says why. What becomes of the Copy Change is not ruled (§2, *Known, not ruled*);
-  - question 1, the Kit Copy already said it: the original part, in the Kit Version the Kit Copies came from, beside the Copy Change. When the System Kit has moved since, its part as it is now is read too: a change the System Kit has since made the same way is covered, and nothing new is made, so one lesson is not made twice;
-  - question 2, specific to that System Repo's problem: what happened, the System Repo's proposal, and its framing of its problem;
-  - question 3, the idea above already holds it: the Work Domain Idea above the Adapted Case, then the Backbone Idea above that. When only the Backbone Idea holds it, the Work Domain Idea lost it too, and the loss sits at layer 2. A part lost in narrowing has no mark, and one left out on purpose has its mark, so the two are told apart (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**, *Narrowing, never shrinking*);
-  - question 4, how high the lesson is true, since it goes as high as it is true (`temp/common-ground/knowledge-layers-general.md` §3.1, *How the layers fill*): 4a, still true naming no Adapted Case, for its Work Domain Idea, layer 2; 4b, still true naming no Work Domain, for its Backbone Idea, layer 1 (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**). When 4a does not hold, it is a lesson for its Adapted Case, depth b. Depth c's step, checked later.
-
-  **Lines together, lines split.** Lines listed together under one reason are judged together, and the reason is judged once. A line whose parts answer differently is split, each part judged on its own; the parts keep their one Change Record.
-
-  **Not from the wording.** A question is answered from what the Copy Change does and why, never from its wording. The System Repo writes in its own words on purpose (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*), and making a lesson general is rewording, after judging (§6, step 1). A Copy Change worded for one project may still be a lesson for every repo. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
-- **Adapted Case:** the Maintainer Repo's, for judging a Repo Reading. It loads when the human starts judging a Repo Reading whose list was checked whole. For this step it says:
-  - question 0 first: does the Copy Change fix what happened, without breaking something the Kit Copy did? An unsound Copy Change goes no further, and its verdict says why;
-  - then the four questions, in order, until one holds; for each, what it reads;
-  - a line whose parts answer differently is split, each part judged on its own;
-  - a question is answered from what the Copy Change does and why, never from its wording;
-  - the agent proposes each answer with what it read; the human decides;
-  - lines under one reason are judged together;
-  - a line with no Change Record: its why is looked for in the System Repo's commits and records, then asked of the human; the line says where its why was found, and is held while neither gives it.
-- **Open:**
-  - how question 4 is answered, and by whom. A first guess, not a rule: 4a first, and 4b only if 4a holds. 4a is the cheaper check, inside one Work Domain, and a lesson still true naming no Work Domain is true across its own. Its trigger: depth c is checked against these steps, or the first lesson judged at layer 1;
-  - which other texts are checked for a loss question 3 finds. Nothing comes down the arrow *adapt*, since the idea above did not change (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6). A first guess: the texts built on the idea that holds the part, as the survey asks (§6, step 1). If several lost it, the idea's wording may be too weak, and is reworded clearer, never narrower. Its trigger: the first depth-d verdict.
+- **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.3, *Judge Copy Changes*).
 - **Today:**
   - borrowed: the four questions, from the rules on deciding written in the problem file before this simulation. They leave how each is answered, and by whom, open; step 1 answers it for questions 1 to 3;
   - borrowed: a change may be declined as "not worth the change" (`docs/conventions/exchange/` §6.5, *Verdicts*). Question 0 asks it first, for every depth;
@@ -305,7 +273,6 @@ Two steps:
 
 **Step 2. The verdict is written.**
 
-- **What must happen:** each judged line, or part of one, gets a verdict, the agent drafting and the human deciding. It is the Maintainer Repo's decision, written for its own work: what it changes, in the System Kit or the idea above, starts from it (§6, step 1). No verdict goes down to the System Repo (§2, *Known, not ruled*). For depth b: a lesson for its Adapted Case. The proposal holds when the System Repo gave it as one any repo would meet.
 - **Options,** for what a verdict holds:
   - a. the answer only: unsound, misread, or its depth;
   - b. the answer, its why, and whether it agrees with the System Repo's proposal, with why if not;
@@ -313,26 +280,7 @@ Two steps:
 - **Chosen:** b. The others:
   - a leaves the change made from it with nothing to check it against, and a proposal judged wrong goes unseen;
   - c decides what changes before it is worked out: that is §6, step 1's, with the survey where the depth needs one.
-
-  **The verdicts.** A verdict is one of:
-  - unsound;
-  - misread, question 1;
-  - covered by a System Kit change since the System Repo's Kit Version, question 1;
-  - its own, question 2, depth a;
-  - lost in narrowing, question 3, depth d;
-  - a lesson for its Work Domain Idea, question 4a, depth c at layer 2;
-  - a lesson for its Backbone Idea, question 4b, depth c at layer 1;
-  - a lesson for its Adapted Case, depth b;
-  - held, with its trigger.
-
-  Lines under one reason share one verdict, and each line says how its own Kit Copy is affected.
-
-  **The agreement.** The agreement is said in one line, "the proposal holds" or "the proposal does not hold, because …". An unsound verdict says what the Copy Change breaks or leaves unfixed; what becomes of the Copy Change is not ruled (§2, *Known, not ruled*).
-- **Adapted Case:** the Maintainer Repo's, for judging a Repo Reading. For this step it says:
-  - one verdict per line or part: its answer, its why, and whether the proposal holds;
-  - the answer is one of the nine verdicts listed above; an unsound one says what the Copy Change breaks or leaves unfixed;
-  - lines under one reason share a verdict, each saying how its own Kit Copy is affected.
-- **Open:** whether an unsound verdict offers a fix. Its trigger: the first unsound verdict.
+- **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.3, *Judge Copy Changes*).
 - **Today:**
   - borrowed: a verdict carries its why (`docs/conventions/exchange/` §6.5, *Verdicts*);
   - changed: today every verdict goes down in the Delivery Note (`docs/conventions/exchange/` §6.5). Here the verdict is the Maintainer Repo's, and none goes down (§2, *Known, not ruled*);

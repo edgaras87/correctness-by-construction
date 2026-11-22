@@ -296,9 +296,51 @@ The agent only reads the System Repo, and writes only in the Maintainer Repo.
 
 **Open:** a System Repo nobody names gets no Look for Lessons until its work resumes. Its trigger: the first lesson found late because a System Repo went without one.
 
+#### 3.2.3 Judge Copy Changes
+
+The Maintainer Repo judges each line of the Repo Reading, and writes its verdict. How each rule was chosen is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §5, *Judge Copy Changes*).
+
+**Who judges.** The agent proposes an answer to each question, with what it read; the human decides each line. The System Repo's own view of its Copy Change is input, never the verdict. An empty list gives no verdicts, and only the stop goes on to Act on the verdicts.
+
+**Question 0, first.** Is the Copy Change sound? It reads what happened, the Copy Change and the original part: does the Copy Change fix what happened, without breaking something the Kit Copy did? An unsound Copy Change goes no further: the depth questions are not asked, and the verdict says why.
+
+**The four questions.** A sound line is judged by four questions, in order, the cheapest first, until one holds:
+1. **Did the Kit Copy already say this?** Then it is a misreading (`temp/common-ground/common-ground-problem.md` §4, Failure Case 7), and nothing changes but, perhaps, the System Kit's wording. It reads the original part, in the Kit Version the Kit Copies came from, beside the Copy Change. When the System Kit has moved since, its part as it is now is read too: a change the System Kit has since made the same way covers it, and nothing new is made, so one lesson is not made twice.
+2. **Is it specific to that System Repo's problem?** Then nothing changes here. It reads what happened, the System Repo's proposal, and its framing of its problem.
+3. **Does the idea above already hold it,** the Work Domain Idea above the Adapted Case, or the Backbone Idea above that? Then the Adapted Case lost it in narrowing, and is fixed from the idea above. When only the Backbone Idea holds it, the Work Domain Idea lost it too: the loss sits at layer 2, and the Work Domain Idea is fixed first. A part lost in narrowing has no mark, and one left out on purpose has its mark, so the two are told apart (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**, *Narrowing, never shrinking*).
+4. **How high is it true?** A lesson goes as high as it is true (`temp/common-ground/knowledge-layers-general.md` §3.1, *How the layers fill*). 4a, still true naming no Adapted Case: a lesson for its Work Domain Idea, layer 2. 4b, still true naming no Work Domain: a lesson for its Backbone Idea, layer 1 (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**).
+
+If none holds, it is a lesson for its Adapted Case, depth b: the Adapted Case gains it, and the idea above stays as it is. For depth c, how question 4 is answered is not yet done: its first guess is under *Open*.
+
+**From the reason, never the wording.** The depth comes from the reason, never the edit. A cap raised from 50 to 60 is the System Repo's own, depth a, when its reason is "our scope names are long". The same edit is a lesson for its Work Domain Idea, depth c at layer 2, when its reason is "the cap counts the scope, which any repo with scopes meets". A Copy Change worded for one project may still be a lesson for every repo: the System Repo writes in its own words on purpose (§3.2.1), and making a lesson general is rewording, after judging (`temp/common-ground/system-repo-change-simulation.md` §6, step 1). The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
+
+**Lines together, lines split.** Lines listed together under one reason are judged together, and the reason is judged once. A line whose parts answer differently is split, each part judged on its own; the parts keep their one Change Record.
+
+**A line with no Change Record.** Its why is looked for in the System Repo first, in the commit that made the Copy Change and in the System Repo's records, then asked of the human. The line says where its why was found, and is held while neither gives it.
+
+**The verdict.** Each judged line, or part of one, gets a verdict, the agent drafting and the human deciding. It holds the answer, its why, and one line on the proposal: "the proposal holds" or "the proposal does not hold, because …". It is the Maintainer Repo's decision, written for its own work: what it changes starts from it. A verdict is one of:
+- unsound, saying what the Copy Change breaks or leaves unfixed;
+- misread, question 1;
+- covered by a System Kit change since the System Repo's Kit Version, question 1;
+- its own, question 2, depth a;
+- lost in narrowing, question 3, depth d;
+- a lesson for its Work Domain Idea, question 4a, depth c at layer 2;
+- a lesson for its Backbone Idea, question 4b, depth c at layer 1;
+- a lesson for its Adapted Case, depth b;
+- held, with its trigger.
+
+Lines under one reason share one verdict, and each line says how its own Kit Copy is affected. No verdict goes down to the System Repo, and what becomes of a Copy Change the System Kit does not take is not ruled (`temp/common-ground/system-repo-change-simulation.md` §2, *Known, not ruled*). What the System Repo gets reaches it with the next Kit Update.
+
+**Its Adapted Case.** The Maintainer Repo's, for judging a Repo Reading. It loads when the human starts judging a Repo Reading whose list was checked whole, and says everything above.
+
+**Open:**
+- how question 4 is answered, and by whom. A first guess, not a rule: 4a first, and 4b only if 4a holds. 4a is the cheaper check, inside one Work Domain, and a lesson still true naming no Work Domain is true across its own. Its trigger: depth c checked against these rules (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it"), or the first lesson judged at layer 1;
+- which other texts are checked for a loss question 3 finds. Nothing comes down the arrow *adapt*, since the idea above did not change (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6). A first guess: the texts built on the idea that holds the part, as the survey asks (`temp/common-ground/system-repo-change-simulation.md` §6, step 1, *The survey*). If several lost it, the idea's wording may be too weak, and is reworded clearer, never narrower. Its trigger: the first depth-d verdict;
+- whether an unsound verdict offers a fix. Its trigger: the first unsound verdict.
+
 ### 3.3 The Maintainer Repo's lessons
 
-A lesson from the Maintainer Repo's own work starts in layer 4 of the right column. Since that work is done by its own Adapted Cases in place, the lesson changes layer 3 at once. It is then judged by the same questions 3 and 4 as a Copy Change read back, and goes up the arrow *lesson* as far as it holds (`temp/common-ground/system-repo-change-simulation.md` §5, *Judge Copy Changes*). If it reaches layer 1, it comes down the arrow *adapt*, to the System Repos' Adapted Cases too, and reaches System Repos by a Kit Update.
+A lesson from the Maintainer Repo's own work starts in layer 4 of the right column. Since that work is done by its own Adapted Cases in place, the lesson changes layer 3 at once. It is then judged by the same questions 3 and 4 as a Copy Change read back, and goes up the arrow *lesson* as far as it holds (§3.2.3). If it reaches layer 1, it comes down the arrow *adapt*, to the System Repos' Adapted Cases too, and reaches System Repos by a Kit Update.
 
 It has no Read Copy Changes, Deliver the Kit Update or Take the Kit Update of its own: nothing crosses between repos until a Kit Update carries it to a System Repo.
 
@@ -310,7 +352,7 @@ None is answered by the text above. Each is answered when work reaches it: its a
 2. **What layer 4 holds:** the general document's question (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 5). Here it is met at a System Repo's design of its system and its own Knowledge on Trial.
 3. **A name for the movement:** what runs from a Copy Change to the Update Take of the next Kit Update, as one thing (§3.2), so the simulation can name it.
 4. **Where Judge Copy Changes sits:** §3.2 puts it at layer 3, since a Copy Change is judged against the Adapted Case its Kit Copy came from. The sources say only that it runs in the Maintainer Repo.
-5. **Depth d and the layer above:** which other texts are checked for a loss that question 3 of Judge Copy Changes finds, and whether the idea above is reworded clearer when several lost the same part. Its first guess and its trigger are the simulation's (`temp/common-ground/system-repo-change-simulation.md` §5, *Judge Copy Changes*, step 1, *Open*).
+5. **Depth d and the layer above:** which other texts are checked for a loss that question 3 of Judge Copy Changes finds, and whether the idea above is reworded clearer when several lost the same part. Its first guess and its trigger are §3.2.3's, under *Open*.
 6. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
 7. **What the System Kit holds:** layer 3 only, or the System Repos' Work Domain Ideas too. CBC system design adapted for backends (§2, the System Kit's item 2) may already be layer 2. Three cases the rule that each part is an Adapted Case (§2) does not yet cover:
    - an Instruction Text with no Adapted Understanding Text. A first guess: its System Kit Copy Change Record goes in a footer of the Instruction Text itself, as a record file carries its instructions in its header comment;
