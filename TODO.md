@@ -48,10 +48,6 @@
       Ideas:
       - the change work: the simulation of a System Repo's change,
         which holds its rules, pointing at the model;
-      - the general document's open question 3, where a skipped part
-        is marked, is already answered by the problem file's
-        *Narrowing, never shrinking*: in the text that leaves the
-        part out, when that is decided;
       - a piece of work modeled at each layer, in a document of its
         own, starting from `cbc-concept/ideas/`, to see how ideas are
         kept at each layer;

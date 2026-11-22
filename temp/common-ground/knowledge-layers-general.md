@@ -115,11 +115,15 @@ Knowledge can enter at any layer. Work meets something new and changes the Adapt
 
 ### 3.2 The arrows
 
-- **adapt,** layer 1 to layer 2, and layer 2 to layer 3: a text is written from the idea above it, narrowed to its need, with what the need adds. When the idea above changes, each text built on it is checked, and changes if it must. A part left out on purpose is marked, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*).
+- **adapt,** layer 1 to layer 2, and layer 2 to layer 3: a text is written from the idea above it, narrowed to its need, with what the need adds. When the idea above changes, each text built on it is checked, and changes if it must. A part left out on purpose is marked, with why (§3.2's **Rules**, *Narrowing, never shrinking*).
 - **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it is true (§3.1). It is reworded to name no Adapted Case at layer 2, and no Work Domain at layer 1.
 - **set apart,** layer 3 to layer 2, and layer 2 to layer 1: while a text is written, a part of it shows as true without what the text adds. The part is written in the layer above, and the text is then adapted from it.
 - **worked by,** layer 3 to layer 4: work is done by an Adapted Case, kept where the work is done, or as a copy there.
 - **change,** layer 4 to layer 3: where the work shows the Adapted Case does not fit, the work changes it. Where no Adapted Case covers the work, the work writes one, on trial. The change is judged, and goes up the arrow *lesson* as far as it holds.
+
+**Rules:**
+
+- **Narrowing, never shrinking.** An idea changes only where it is wrong for every text built on it. A part that does not fit one text built on it stays in the idea: that text leaves the part out, and marks that it did, with why. The mark is written when the exclusion is decided, never listed ahead. A change to a marked part reopens its why.
 
 ## 4. Open questions
 
@@ -127,8 +131,7 @@ None is answered by the text above. Each is answered when work reaches it: its a
 
 1. **Text shared across Work Domains, but not by all:** what holds it? It fits neither one Work Domain nor layer 1.
 2. **When a second adaptation is worth it:** how differently must a Backbone Idea be understood in one Work Domain before two Work Domain Ideas are clearer than one? Practice decides (§2.2).
-3. **Where a skipped part is marked:** a Work Domain may leave out a part of a Backbone Idea it does not need, and the part stays in layer 1. Is it marked in the Backbone Idea, as optional, ahead of any Work Domain? Or in the Work Domain Idea that leaves it out, when it decides to, with why (`temp/common-ground/common-ground-problem.md` §2.1, *Narrowing, never shrinking*)?
-4. **A lesson for one adaptation:** where does a lesson go that holds for only one of a Backbone Idea's Work Domain Ideas? And since each changes alone (§2.2), is a lesson for both written into each?
-5. **A second adaptation or a second Adapted Case:** where does a second Work Domain Idea end, and a second Adapted Case of one Work Domain Idea begin?
-6. **What layer 4 holds:** only work done by an Adapted Case, or also the knowledge the work makes of its own (§2.4)?
-7. **A lesson the layer above already holds:** a change is true beyond its own Adapted Case, but the idea above already says it, so nothing comes down the arrow *adapt*. How do the other Adapted Cases built on that idea learn of it? Does whoever judges the change decide this, and tell each one? The change work answers it.
+3. **A lesson for one adaptation:** where does a lesson go that holds for only one of a Backbone Idea's Work Domain Ideas? And since each changes alone (§2.2), is a lesson for both written into each?
+4. **A second adaptation or a second Adapted Case:** where does a second Work Domain Idea end, and a second Adapted Case of one Work Domain Idea begin?
+5. **What layer 4 holds:** only work done by an Adapted Case, or also the knowledge the work makes of its own (§2.4)?
+6. **A lesson the layer above already holds:** a change is true beyond its own Adapted Case, but the idea above already says it, so nothing comes down the arrow *adapt*. How do the other Adapted Cases built on that idea learn of it? Does whoever judges the change decide this, and tell each one? The change work answers it.

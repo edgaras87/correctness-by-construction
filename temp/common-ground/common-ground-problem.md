@@ -160,10 +160,6 @@ What passes between the Maintainer Repo and the System Repos is the layers model
 
 How a System Kit Copy Change read back travels, in six parts, is below (*A System Repo's change*).
 
-#### Narrowing an idea
-
-**Narrowing, never shrinking.** An idea changes only where it is wrong for every text built on it (Failure Case 11). A part that does not fit one text built on it stays in the idea: that text leaves the part out, and marks that it did, with why. The mark is written when the exclusion is decided, never listed ahead. So Judge's question 3 (`temp/common-ground/system-repo-change-simulation.md` §5, *Judge*) can tell a part lost in narrowing, with no mark, from one left out on purpose, with its mark. A change to a marked part reopens its why.
-
 #### A System Repo's change
 
 A System Kit Copy Change travels from a System Repo to the Maintainer Repo, is judged there, and what the System Repo needs comes back in a System Kit Update. Its six parts, from the change to the Take, their rules, its cases and the sources it leaves aside are the simulation's, their one home until the change flow is done (`temp/common-ground/system-repo-change-simulation.md`).
@@ -221,7 +217,7 @@ Where text is kept today, in the Maintainer Repo, on each of the five Knowledge 
 |---|---|---|---|---|---|
 | Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo | not yet sorted: the concept holds layers 1 and 2 in one text |
 | Instruction Texts, of all three sorts; today, Agent Skills and Agent Rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as System Kit Copies in each System Repo, for those in the System Kit | 3 |
-| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own | open (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6) |
+| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own | open (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 5) |
 | TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own | open, as the devlog's |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo | not yet sorted |
 | The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files | not yet sorted |
