@@ -79,9 +79,13 @@
         Case;
       - the final home, a first draft: a section of the layers
         document, its §3.2 grown and retitled *How a change
-        travels*; the simulation's rules written out there, with the
-        problem file's five terms; all nine travel terms in the
-        layers document's §2 list;
+        travels*; the simulation's rules written out there, its
+        options, reasons and *Today* fields staying in the
+        simulation, which points there; the problem file's seven
+        travel terms and two labels move to the layers document's
+        §2 list, beside its four, eleven in all, and leave pointer
+        entries; its Repo Responsibility lists and §2.2 table stay,
+        re-pointed;
       - a document of its own needs the general document's §2.2
         rule, each adaptation "changed alone", narrowed to variants
         first, and a rule that a Work Domain Idea may stand on
