@@ -67,7 +67,8 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
                                                     │         c2 ●  work, on Version 1        ◀──── the step is still open: no gate yet
                                                     │            ┊
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- - the human names the System Repo to update        ┊            ┊
+ - the human names the System Repo to update,       ┊            ┊
+   while one of its Plan Steps is still open        ┊            ┊
    (§7, step 1)                                     ┊            ┊
  - Look for Lessons (§4 to §6): case not moved;     ┊            ┊
    the open step's work waits for the next one      ┊            ┊
@@ -78,12 +79,16 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
                                                     │            ┊
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     │            │
-                                                    │         c3 ●  the gate closes           ◀──── the step finishes on Version 1 (§8, Before the Take)
+                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2)
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward
- at the next opening, the human names the           │
- System Repo to update again (§8, Before the        │
- Take)                                              │
+ - the open step finishes on Version 1, and its     │
+   gate moves main to c3 (§8, Before the Take)      │
+ - at the next opening, the human names the         │
+   System Repo to update again                      │
+ - Look for Lessons: main moved; case no Change     │
+   or Change read, by what c3 holds                 │
+ - then as in taken                                 │
 ```
 
 ### *taken*
