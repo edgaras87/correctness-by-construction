@@ -36,7 +36,7 @@ Defined Terms, in alphabetical order:
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **File Instruction Text:** an Instruction Text the agent loads when a certain kind of file is opened.
-- **Instruction Text:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*). So far it comes in three sorts, by when the agent loads it: Task Instruction Text, Session Instruction Text and File Instruction Text.
+- **Instruction Text:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*). So far it comes in three sorts, by when the agent loads it: Task Instruction Text, Session Instruction Text and File Instruction Text. One read only when needed, such as the Defined Terms, has no sort yet.
 - **Knowledge Axis:** one way of sorting text. There are five: *who uses it*, *time*, *kind*, *where*, *layer* (§3).
 - **Knowledge Drift:** text and knowledge moving apart. The text holds less than the knowledge, or is older than it.
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
@@ -195,7 +195,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | System Kit Update | a delivery |
 | System Kit Update Note | the Delivery Note |
 | System Kit Version | the Delivery Pin: the Concept Deliverer's commit a CBC Run's copies equal |
-| Instruction Text | a Work Approach: an Agent Skill, an Agent Rule, an Approach on Trial or an Output Form. Which of the three sorts an Output Form is, is open |
+| Instruction Text | a Work Approach: an Agent Skill, an Agent Rule, an Approach on Trial or an Output Form; also the Glossary Names, and the forms records start from. Which of the three sorts an Output Form is, is open |
 | Task Instruction Text | an Agent Skill |
 | Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules |
 | File Instruction Text | an Agent Rule loaded by path, when a file it names is opened |
@@ -216,7 +216,7 @@ Where text is kept today, in the Maintainer Repo, on each of the five Knowledge 
 | Where it's kept | Kind | Time | Who uses it | Where | Layer |
 |---|---|---|---|---|---|
 | Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo | not yet sorted: the concept holds layers 1 and 2 in one text |
-| Instruction Texts, of all three sorts; today, Agent Skills and Agent Rules | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as System Kit Copies in each System Repo, for those in the System Kit | 3 |
+| Instruction Texts; today, Agent Skills, Agent Rules, the Glossary Names and the forms records start from | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as System Kit Copies in each System Repo, for those in the System Kit | 3 |
 | Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own | open (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 5) |
 | TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own | open, as the devlog's |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo | not yet sorted |
