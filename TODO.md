@@ -64,7 +64,7 @@
       judges by the layers model; the problem file's §2.1 and the
       layers document's §3 point there (`d55d58a`..`73f1d87`). The
       change flow is done for one case, one Adapted Case at depth b,
-      simulated from Change to Take and pictured in
+      simulated from Change a Kit Copy to Take the Kit Update and pictured in
       `temp/common-ground/system-repo-change-flow.md`. Depth c is not
       yet simulated. The problem file's run stopped part-way for it
       (`73c37b3`).
@@ -89,13 +89,12 @@
       - the flow drawing needs no change for the layers model;
       - the problem file's stale lines, found by the check on
         2026-11-22, fixed with the move: Maintainer Repo item 5
-        names Judge's Adapted Case by an old name; item 6 says a
-        System Repo gets the System Kit's changes and judges each
-        against its Copy; §2.2's table has no row for Look for
-        Lessons or System Kit Update Take;
-      - "every Record cleared", in the simulation's §8, *At the
-        Take, in order*, item 3, follows from taking each Copy
-        whole, and is no act of its own; it can be worded so in the
+        names the Adapted Case of Judge Copy Changes by an old name;
+        item 6 says a System Repo gets the System Kit's changes and
+        judges each against its Kit Copy;
+      - "every Change Record cleared", in the simulation's §8, *At
+        the Update Take, in order*, item 3, follows from taking each
+        Kit Copy whole, and is no act of its own; it can be worded so in the
         final home;
       - the other six rows of the simulation's §2 table move as not
         yet checked, each checked when practice first meets it.
@@ -114,7 +113,8 @@
       New ideas are written at those layers now, so the case is met
       today. The simulation's §6, *The survey*, holds a first guess:
       each text built on the idea is asked whether it still fits. It
-      was never walked through Deliver and the Take, nor drawn.
+      was never walked through Deliver the Kit Update and Take the Kit
+      Update, nor drawn.
       Ideas:
       - layer 2 first, then layer 1, each walked against depth b as
         the simulation's §2 says, writing only what differs; its
@@ -236,8 +236,9 @@
       "A Maintainer Kit".
 
 - [ ] Sweep the drafts for words that read as walking commits, where
-      Read Changes compares two snapshots (2026-11-13, the reviewer).
-      Context: Read Changes compares two snapshots and never
+      Read Copy Changes compares two snapshots (2026-11-13, the
+      reviewer).
+      Context: Read Copy Changes compares two snapshots and never
       walks commits (`temp/common-ground/system-repo-change-simulation.md` §4,
       *Snapshots*). "Runs from … to main" and "across that span"
       read as a walk in the problem file's rules on reading, cut on
@@ -558,7 +559,7 @@
       - CBC Run 5's Reading re-judged by needs, not read again; its
         open DECISION-2 and DECISION-5, and WORK-1 and WORK-3 to
         WORK-10, among the findings;
-      - judged by the simulation's Judge, by meaning: each finding's
+      - judged by the simulation's Judge Copy Changes, by meaning: each finding's
         depth, kept where the rewrite finds it;
       - old words read through the refinement's Names table, at
         `55e2bd0^:temp/refinement-2026-10-18.md`;

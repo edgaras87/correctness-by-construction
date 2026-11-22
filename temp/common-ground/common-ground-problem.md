@@ -127,8 +127,8 @@ The Maintainer Repo keeps:
 2. understanding of the concept, CBC system design;
 3. the System Kit, for every System Repo to work from (below, *What the System Kit holds*);
 4. its own Adapted Case of agent work, updated as the project-agnostic understanding changes;
-5. findings from System Repos. A System Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other System Repos. The Maintainer Repo reads the System Kit Copy Changes back and judges each, by its own Adapted Case of taking a change from another repo (`temp/common-ground/system-repo-change-simulation.md` §5, *Judge*);
-6. System Kit Updates for System Repos, taken when work resumes in one (`temp/common-ground/system-repo-change-simulation.md` §7, *Deliver*; §8, *Take*): a System Repo born earlier gets the System Kit's changes, and judges each against its own System Kit Copy;
+5. findings from System Repos. A System Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other System Repos. The Maintainer Repo reads the System Kit Copy Changes back and judges each, by its own Adapted Case of taking a change from another repo (`temp/common-ground/system-repo-change-simulation.md` §5, *Judge Copy Changes*);
+6. System Kit Updates for System Repos, taken when work resumes in one (`temp/common-ground/system-repo-change-simulation.md` §7, *Deliver the Kit Update*; §8, *Take the Kit Update*): a System Repo born earlier gets the System Kit's changes, and judges each against its own System Kit Copy;
 7. its own records: the history and the backlog of this work.
 8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' System Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches that System Repo by a System Kit Update, judged there like any other change.
 
@@ -138,7 +138,7 @@ Each System Repo:
 2. keeps understanding of its own problem: one specific system's design;
 3. keeps its own records, started from the record forms in its System Kit;
 4. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back;
-5. takes System Kit Updates by its copy of the Adapted Case for taking them, and may change any part of it (`temp/common-ground/system-repo-change-simulation.md` §8, *Take*).
+5. takes System Kit Updates by its copy of the Adapted Case for taking them, and may change any part of it (`temp/common-ground/system-repo-change-simulation.md` §8, *Take the Kit Update*).
 
 #### What the System Kit holds
 
@@ -152,7 +152,7 @@ How a System Kit Copy Change read back travels, in six parts, is below (*A Syste
 
 #### A System Repo's change
 
-A System Kit Copy Change travels from a System Repo to the Maintainer Repo, is judged there, and what the System Repo needs comes back in a System Kit Update. Its six parts, from the change to the Take, their rules, its cases and the sources it leaves aside are the simulation's, their one home until the change flow is done (`temp/common-ground/system-repo-change-simulation.md`).
+A System Kit Copy Change travels from a System Repo to the Maintainer Repo, is judged there, and what the System Repo needs comes back in a System Kit Update. Its six parts, from the change to the Update Take, their rules, its cases and the sources it leaves aside are the simulation's, their one home until the change flow is done (`temp/common-ground/system-repo-change-simulation.md`).
 
 ### 2.2 Today and what to check
 
