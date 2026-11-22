@@ -150,24 +150,22 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  - Deliver stages it in the System Repo's temp/     ┊
                                                     ┊                                         ┄┄┄┄┄ the Update waits in temp/, not yet in force
                                                     │
-                                                    ├─ cut ──────┐                            ◀──── main moves before the Take; how is open: postponing a Take (§8, Open)
-                                                    │            │
-                                                    │         c2 ●  work, on Version 1
-                                                    │            │
-                                                    │         c3 ●  the gate closes
-                                                    │            │
-                                                 c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward
+ ── before the Take ────────────────────────────────┼───────────────────────────────────────────────────────────
+                                                 c2 ●  a gate closed                          ◀──── main moved past c1 before the Take; how is open: postponing a Take (§8, Open)
                                                     │
  ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ┊                                         ┄┄┄┄┄ at the next opening, the Take checks, from the Update Note:
-                                                    ┊                                               main is c3, not c1: case 2, no Take; the System Repo says so (§8)
+                                                    ┊                                         ┄┄┄┄┄ at the opening, the Take checks, from the Update Note:
+                                                    ┊                                               main is c2, not c1: case 2, no Take; the System Repo says so (§8)
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the human names the System Repo to update          │
- again: the Look for Lessons finds main moved;      │
- Deliver makes a new Update against c3 and the      │
- newest Version, which replaces the waiting one     │
- (§7, step 1)                                       │
+ - the Update stays in temp/, not taken             │
+ - the human names the System Repo to update        │
+   again (§8, Before the Take)                      │
+ - Look for Lessons: main moved; case no Change     │
+   or Change read, by what c2 holds                 │
+ - Deliver makes a new Update against c2 and the    │
+   newest Version; it replaces the waiting one      │
+   (§7, step 1)                                     │
 ```
 
 **An Update at the newest Version.** An Update is always made at the newest Version. When the Look for Lessons ends in *Change read*, Act may raise the Version first: the Update is then made at that Version, and brings the System Repo's own lesson back. If the System Kit moves after it is made, the Update is still taken, and the next brings the rest (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *A check before delivery*).
