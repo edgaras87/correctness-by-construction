@@ -64,12 +64,14 @@
 - [ ] Define the Change idea: how a change travels between the
       repos, in either direction, a Work Domain Idea with one home
       (2026-11-18, the reviewer).
-      Context: Change is written once, in the simulation, until the
-      change flow is done; the problem file's §2.1 and the layers
-      document's §3 point there (`d55d58a`..`73f1d87`). The
-      simulation judges by the layers model; its rules are checked
-      against one case only. The problem file's run stopped part-way
-      for it (`73c37b3`).
+      Context: Change is written once, in the simulation, which
+      judges by the layers model; the problem file's §2.1 and the
+      layers document's §3 point there (`d55d58a`..`73f1d87`). The
+      change flow is done for one case, one Adapted Case at depth b,
+      simulated from Change to Take and pictured in
+      `temp/common-ground/system-repo-change-flow.md`. Depth c is not
+      yet simulated. The problem file's run stopped part-way for it
+      (`73c37b3`).
       Ideas:
       - the System Kit Update definition: the simulation's §7 sends
         every Copy whole, as the definition says; the layers
@@ -92,14 +94,36 @@
         Maintainer Repo's own lesson, the layers document's §3.3,
         and Knowledge on Trial handed back; birth stays outside, as
         the start;
-      - the flow drawing needs no change for the layers model.
-      Trigger: due now, in two steps: the change flow finished,
-      Change to Take, its picture kept in step with it (the
-      simulation's §2, *Change whole*); then one home for each fact
-      across the drafts, the facts of
-      Change moved out of the simulation among them.
+      - the flow drawing needs no change for the layers model;
+      - the other six rows of the simulation's §2 table move as not
+        yet checked, each checked when practice first meets it.
+      Trigger: due now: one home for each fact across the drafts,
+      the facts of Change moved out of the simulation among them,
+      written from depth b, with what depth c leaves undecided
+      marked as not yet done.
       See: devlog 2026-11-18, the Change idea's design talk;
       `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
+
+- [ ] Simulate depth c, then bring the Change idea to it
+      (2026-11-22, the reviewer).
+      Context: depth c is a lesson that changes the idea above: a
+      Work Domain Idea at layer 2, or a Backbone Idea at layer 1.
+      New ideas are written at those layers now, so the case is met
+      today. The simulation's §6, *The survey*, holds a first guess:
+      each text built on the idea is asked whether it still fits. It
+      was never walked through Deliver and the Take, nor drawn.
+      Ideas:
+      - layer 2 first, then layer 1, each walked against depth b as
+        the simulation's §2 says, writing only what differs; its
+        pictures by a visual comparison in the flow file;
+      - then the Maintainer Repo's own new idea, a source the
+        simulation's §2 leaves for later: only its start may differ;
+      - questions likely met: whether other System Repos fall behind
+        too; what the Update Note's why says; at layer 1, how far
+        down the survey reaches (the simulation's §6, *Open*).
+      Trigger: the Change idea written from depth b (the item
+      "Define the Change idea").
+      See: devlog 2026-11-22, the depth c item.
 
 - [ ] Decide what becomes of the branch `experiment-simulation-auto`
       (2026-11-19, the reviewer).
