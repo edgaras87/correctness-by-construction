@@ -36,7 +36,7 @@ Each drawing is checked against these.
 
 ### The two jobs
 
-What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A Look for Lessons runs when the human names a System Repo for its lessons, and ends once Act is done (`temp/common-ground/system-repo-change-simulation.md` §1, *How it is worked*). A Kit Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the Look for Lessons runs first, then the check in Deliver the Kit Update (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*). A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *Two checks at main*). Each step names its section of the simulation.
+What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A Look for Lessons runs when the human names a System Repo for its lessons, and ends once Act is done (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). A Kit Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the Look for Lessons runs first, then the check in Deliver the Kit Update (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*). A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *Two checks at main*). Each step names its section of the simulation.
 
 ```mermaid
 flowchart TD
@@ -126,7 +126,7 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
  the human names the System Repo, for its           ┊
- lessons or to update it (§1)                       ┊
+ lessons or to update it (layers §3.2)              ┊
  Read Copy Changes (§4): the stop is main, c1       ┊
    check 1: main is c1, the settled snapshot:       ┊
    not moved, nothing new                           ┊
@@ -163,7 +163,7 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
  the human names the System Repo, for its           ┊
- lessons or to update it (§1)                       ┊
+ lessons or to update it (layers §3.2)              ┊
  Read Copy Changes (§4): the stop is main, c3       ┊
    check 1: main is c3, past c1: moved              ┊
    check 2: c1 against c3: no Kit Copy changed:     ┊
@@ -201,7 +201,7 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
  the human names the System Repo, for its           ┊
- lessons or to update it (§1)                       ┊
+ lessons or to update it (layers §3.2)              ┊
  Read Copy Changes (§4): the stop is main, c3       ┊
    check 1: main is c3, past c1: moved              ┊
    check 2: c1 against c3: a Kit Copy changed:      ┊

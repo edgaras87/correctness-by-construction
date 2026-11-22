@@ -74,7 +74,7 @@ Its repos, and what travels between them:
 - **System Kit Copy Change Record:** what a System Repo writes with each System Kit Copy Change, saying what changed and why. What it holds and where it sits are the simulation's (`temp/common-ground/system-repo-change-simulation.md` §3, *Change a Kit Copy*, step 1).
 - **System Kit Attention Note:** what a System Repo writes for the Maintainer Repo to look at in the System Kit, when no System Kit Copy Change carries it.
 - **Maintainer Repo Register:** the Maintainer Repo's list of its System Repos: where each lives, and its *settled snapshot*, the System Repo's snapshot up to which the Maintainer Repo has read, judged and acted on. The *settled snapshot* holds the System Kit Version the System Repo had then, which may be behind the newest.
-- **Look for Lessons:** the Maintainer Repo taking one System Repo's work since its *settled snapshot* into account: read, judged and acted on. How it runs is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §1, *How it is worked*).
+- **Look for Lessons:** the Maintainer Repo taking one System Repo's work since its *settled snapshot* into account: read, judged and acted on. How it runs is §3.2's.
 - **System Repo Reading:** the draft that lists the System Kit Copy Changes one Look for Lessons found in a System Repo, nothing judged. With none found, none is written.
 - **System Kit Update:** what the Maintainer Repo sends a System Repo: a copy of every System Kit file at one System Kit Version, with its System Kit Update Note.
 - **System Kit Update Note:** what the Maintainer Repo writes with a System Kit Update, for the System Repo that takes it.
@@ -190,20 +190,24 @@ How knowledge enters the layers and moves between them is the general document's
 - **Copy Change, read back,** layer 4 to layer 3: a System Repo changes a Kit Copy and records why. The Maintainer Repo reads it back and judges it against the Adapted Case the Kit Copy came from.
 - **used in place,** layer 3 and layer 4 in one repo, with no Kit Copy: the Maintainer Repo's own work changes its own Adapted Cases directly.
 
-### 3.2 How a Change moves
+### 3.2 How a change travels
 
-The simulation follows one System Repo's Copy Change through six parts (`temp/common-ground/system-repo-change-simulation.md` §1, *How it is worked*). Each part sits at a layer, or on an arrow:
+A Copy Change travels through six parts, each done by one repo. Each part sits at a layer, or on an arrow:
 
-| Part | Where in the picture |
-|---|---|
-| Change a Kit Copy | layer 4, in a Kit Copy |
-| Read Copy Changes | the arrow *Copy Change, read back* |
-| Judge Copy Changes | layer 3: which layer the Copy Change holds for |
-| Act on the verdicts | the layer the verdict names; the arrows *lesson* and *adapt* |
-| Deliver the Kit Update | the arrow *Kit Update* |
-| Take the Kit Update | layer 4, its Kit Copies |
+| Part | Who | Where in the picture |
+|---|---|---|
+| Change a Kit Copy | System Repo | layer 4, in a Kit Copy |
+| Read Copy Changes | Maintainer Repo | the arrow *Copy Change, read back* |
+| Judge Copy Changes | Maintainer Repo | layer 3: which layer the Copy Change holds for |
+| Act on the verdicts | Maintainer Repo | the layer the verdict names; the arrows *lesson* and *adapt* |
+| Deliver the Kit Update | Maintainer Repo | the arrow *Kit Update* |
+| Take the Kit Update | System Repo | layer 4, its Kit Copies |
 
 So the six parts are one movement: up from layer 4, as high as the Copy Change holds, and back down.
+
+**The Look for Lessons.** Read Copy Changes, Judge Copy Changes and Act on the verdicts make one pass over one System Repo, the Look for Lessons. It starts when the human names a System Repo, for its lessons or to update it. It ends once Act on the verdicts is done, which sets the *settled snapshot* to the stop (`temp/common-ground/system-repo-change-simulation.md` §4, step 2, *When the stop moves*). Its first step, two checks at main, sorts it into one of three cases (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *Two checks at main*). Deliver the Kit Update and Take the Kit Update are outside it.
+
+**Bringing a System Repo up to date.** It is a second job, which needs the first. It runs only when the human names the System Repo to update, and starts with a Look for Lessons. Its check, whether a Kit Update is due, belongs to Deliver the Kit Update. It comes after Act on the verdicts, since the System Kit moves for a Copy Change only once it is judged and acted on (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*).
 
 Each of the simulation's depths names the highest layer a Copy Change reaches (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). The arrows each travels:
 

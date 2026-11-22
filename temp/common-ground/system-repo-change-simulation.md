@@ -26,20 +26,16 @@ Three moves, in order:
 2. **Read the rules together:** once all of a part's steps are seen together, their *Chosen* and *Adapted Case* fields are read as one: they are the part's rules. They are written out as rules only when they move to their final home (the header comment).
 3. **Check them:** each step is walked again against the rules. A step a rule does not hold for changes the rule or the step.
 
-The steps make six parts, each done by one repo:
+The steps make six parts. Who does each, and how they make one movement, are the layers document's (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*):
 
-| Part | Who | Steps |
-|---|---|---|
-| Change a Kit Copy | System Repo | §3, steps 1–2 |
-| Read Copy Changes | Maintainer Repo | §4, steps 1–4 |
-| Judge Copy Changes | Maintainer Repo | §5, steps 1–2 |
-| Act on the verdicts | Maintainer Repo | §6, step 1 |
-| Deliver the Kit Update | Maintainer Repo | §7, steps 1–2 |
-| Take the Kit Update | System Repo | §8, step 1 |
-
-**The Look for Lessons.** Read Copy Changes, Judge Copy Changes and Act on the verdicts make one pass over one System Repo, the Look for Lessons. It starts when the human names a System Repo, for its lessons or to update it. It ends once Act is done, which sets the *settled snapshot* to the stop (§4, step 2, *When the stop moves*). Its first step, two checks at main, sorts it into one of three cases (§4, step 1, *Two checks at main*). Deliver the Kit Update and Take the Kit Update are outside it.
-
-Bringing the System Repo up to date is a second job, which needs the first. It runs only when the human names the System Repo to update, and starts with a Look for Lessons. Its check, whether a Kit Update is due, is Deliver the Kit Update's. It comes after Act, since the System Kit moves for a Copy Change only once it is judged and acted on (§7, step 1, *When one is due*).
+| Part | Steps |
+|---|---|
+| Change a Kit Copy | §3, steps 1–2 |
+| Read Copy Changes | §4, steps 1–4 |
+| Judge Copy Changes | §5, steps 1–2 |
+| Act on the verdicts | §6, step 1 |
+| Deliver the Kit Update | §7, steps 1–2 |
+| Take the Kit Update | §8, step 1 |
 
 Each step has these fields. A field with nothing in it is left out.
 
@@ -110,7 +106,7 @@ New text of the System Repo's own, on trial, is not a case here. It comes from n
 
 At every depth, 5. Deliver the Kit Update brings a Kit Update down.
 
-Key: ● is the Copy Change's path, from its Kit Copy up to the highest layer it changes. ○ is "or up to here", when the case asks it (the table above, rows d and e). The line after the picture follows the layers document's arrows (`temp/common-ground/knowledge-layers.md` §3.2, *How a Change moves*). A § is a section of this document.
+Key: ● is the Copy Change's path, from its Kit Copy up to the highest layer it changes. ○ is "or up to here", when the case asks it (the table above, rows d and e). The line after the picture follows the layers document's arrows (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). A § is a section of this document.
 
 ## 3. Change a Kit Copy
 
@@ -215,7 +211,7 @@ Four steps:
 
   **Where a stretch ends.** Main moves only at a gate's close, so main is always at a closed gate, and nothing on it waits for a gate. Work past it, in a branch or not yet committed, is left for the next Look for Lessons.
 
-  **Two checks at main.** d starts a Look for Lessons at one System Repo (§1). It makes two checks, both on whether there are Copy Changes to judge:
+  **Two checks at main.** d starts a Look for Lessons at one System Repo (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). It makes two checks, both on whether there are Copy Changes to judge:
   1. **main moved:** the System Repo's main against the *settled snapshot*;
   2. **Copy Changes:** the Kit Copies, compared between the older snapshot and main (step 2, step 3).
 
