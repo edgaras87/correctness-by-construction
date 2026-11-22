@@ -101,9 +101,8 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
    next Plan Step, names it to update (§7, step 1)  ┊
  - Look for Lessons (§4 to §6): here case not       ┊
    moved; the settled snapshot stays c1. Any of     ┊
-   its three cases leads on the same way; after     ┊
-   Change read, Act may raise the Version, and      ┊
-   the Update is made at that newest one            ┊
+   its three cases leads on the same way: see       ┊
+   An Update at the newest Version, below           ┊
  - Deliver (§7): the Version is 1, the newest is    ┊
    2: behind; no Plan Step open (§7, step 1)        ┊
  - Deliver makes the Update: every Copy at          ┊
@@ -171,4 +170,4 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  (§7, step 1)                                       │
 ```
 
-**An Update at the newest Version.** An Update is always made at the newest Version. If the System Kit moves after it is made, the Update is still taken, and the next brings the rest (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *A check before delivery*).
+**An Update at the newest Version.** An Update is always made at the newest Version. When the Look for Lessons ends in *Change read*, Act may raise the Version first: the Update is then made at that Version, and brings the System Repo's own lesson back. If the System Kit moves after it is made, the Update is still taken, and the next brings the rest (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *A check before delivery*).
