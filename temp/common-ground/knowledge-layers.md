@@ -67,7 +67,7 @@ Its repos, and what travels between them:
 
 - **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns.
 - **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
-- **System Kit:** what the Maintainer Repo keeps for System Repos to work from, shared by the System Repos it serves (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*). Its originals stay in the Maintainer Repo, beside the Work Domain Ideas they are adapted from; each System Repo works from copies, and takes the System Kit's changes by a System Kit Update.
+- **System Kit:** what the Maintainer Repo keeps for System Repos to work from, shared by the System Repos it serves; what it holds is listed below. Its originals stay in the Maintainer Repo, beside the Work Domain Ideas they are adapted from; each System Repo works from copies, and takes the System Kit's changes by a System Kit Update.
 - **System Kit Version:** the System Kit as it stood at one Maintainer Repo commit. Each System Repo records the one its System Kit Copies came from.
 - **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo. The picture shortens it to Copy.
 - **System Kit Copy Change:** a System Repo's change to a System Kit Copy, made against the System Kit Version that copy came from. The picture shortens it to Change.
@@ -75,7 +75,13 @@ Its repos, and what travels between them:
 
 Its other Defined Terms are the general document's, or the Common Ground Problem's (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
-The System Kit is not a layer. It is what is copied to each System Repo, the picture's dashed frame: so far, the System Repos' Adapted Cases of layer 3.
+The System Kit is not a layer. It is what is copied to each System Repo, the picture's dashed frame. Each of its parts is an Adapted Case of layer 3: an Adapted Understanding Text with its Instruction Text (§2.3). A part that has only one of the two is open (§4, question 7). So far it holds:
+
+1. the System Repos' Adapted Cases for keeping knowledge, such as taking an Update (§2.3.1);
+2. their Adapted Cases for designing a backend: agent work, and CBC system design (§2.3.2);
+3. the Defined Terms the Adapted Cases use;
+4. the forms a System Repo's records start from. They go once, at birth, and are the System Repo's own after it;
+5. a description of CBC system design for the System Repo's readers, as adapted to its kind of system. Its form is decided when the concept is split, and so is whether a System Repo may change it.
 
 ### 2.1 The Backbone Idea layer
 
@@ -141,7 +147,7 @@ The System Repos' Adapted Cases for designing a backend, in two groups so far, o
 - **Agent work,** from how an agent works, designing a backend.
 - **CBC system design,** from CBC design for backends. How it meets agent work in one Adapted Case is open (§4).
 
-With the System Repos' group of §2.3.1, they are the System Kit. Each System Repo works from Copies of them (§2.4).
+With the System Repos' group of §2.3.1, they are part of the System Kit (§2). Each System Repo works from Copies of them (§2.4).
 
 ### 2.4 The layer of a repo's work
 
@@ -207,7 +213,10 @@ None is answered by the text above. Each is answered when work reaches it: its a
 4. **Where Judge sits:** §3.2 puts it at layer 3, since a Change is judged against the Adapted Case its Copy came from. The sources say only that it runs in the Maintainer Repo.
 5. **Depth d and the layer above:** which other texts are checked for a loss that Judge's question 3 finds, and whether the idea above is reworded clearer when several lost the same part. Its first guess and its trigger are the simulation's (`temp/common-ground/system-repo-change-simulation.md` §5, *Judge*, step 1, *Open*).
 6. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
-7. **What the System Kit holds:** layer 3 only, or the System Repos' Work Domain Ideas too. CBC system design adapted for backends (`temp/common-ground/common-ground-problem.md` §2.1, *What the System Kit holds*, item 2) may already be layer 2.
+7. **What the System Kit holds:** layer 3 only, or the System Repos' Work Domain Ideas too. CBC system design adapted for backends (§2, the System Kit's item 2) may already be layer 2. Three cases the rule that each part is an Adapted Case (§2) does not yet cover:
+   - an Instruction Text with no Adapted Understanding Text. A first guess: its System Kit Copy Change Record goes in a footer of the Instruction Text itself, as a record file carries its instructions in its header comment;
+   - an Understanding Text with no Instruction Text, such as the description of CBC system design for a System Repo's readers (§2, the System Kit's item 5);
+   - Knowledge on Trial in the System Kit: an Approach on Trial is one text of both kinds, not yet split, and today's deliveries carry it.
 8. **Which other ideas are Backbone Ideas:** of today's project-agnostic ideas, beyond how an agent works and CBC design (§2.1).
 9. **What one Adapted Case holds:** one Agent Skill or Agent Rule under its understanding text, or several. One understanding text may stand under more than one, as the facts-in-sync manual stands under two Agent Rules.
 10. **Two Work Domain Ideas of how an agent works:** does an agent's work differ enough between keeping knowledge and designing a backend by CBC to need two texts, or would they be one text written twice (§2.2)?

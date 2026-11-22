@@ -137,14 +137,10 @@
       line changes once. Each fault is checked again when due.
       Ideas:
       - the problem file's answers that belong in the layers
-        document move there: *What the System Kit holds*, unless it
-        is part of the Repo Responsibility; §2.1's table of the two
-        groups of understanding; the lines of the Repo
-        Responsibility lists that retell the layers document; §8's
-        middle-level option, which the layers model answers. With
-        the list go the layers document's §2 and §2.3.2 lines that
-        say the System Kit holds only Adapted Cases, and its §4,
-        question 7, which asks only of layer 2.
+        document move there: §2.1's table of the two groups of
+        understanding; the lines of the Repo Responsibility lists
+        that retell the layers document; §8's middle-level option,
+        which the layers model answers.
       Trigger: the Change idea written from depth b (the item
       "Define the Change idea").
       See: devlog 2026-11-18, later, *Found, not fixed*, item 5.
@@ -353,8 +349,8 @@
       - the System Kit's description of CBC system design, for a
         System Repo's readers, is decided with it: its form, such as
         a README paragraph, a longer text or a playbook part, and
-        whether a System Repo may change it (the Common Ground
-        Problem, *What the System Kit holds*, item 5);
+        whether a System Repo may change it (the layers document,
+        §2, the System Kit's item 5);
       - whether infra, the stack, is only a bigger set of input to
         the backend case, not a complexity of its own (2026-11-07,
         the reviewer's question, not yet answered).

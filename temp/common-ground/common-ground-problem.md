@@ -144,15 +144,7 @@ Each System Repo:
 
 #### What the System Kit holds
 
-Other parts of this document point here, and list none of it.
-
-Agent work and CBC system design are each held as Adapted Cases. How each splits into Adapted Cases, one or several, is open.
-
-1. agent work, written from its project-agnostic understanding for System Repos, among it how a System Repo takes a System Kit Update;
-2. CBC system design, written from its project-agnostic understanding for one kind of system: backends, so far;
-3. the Defined Terms the Adapted Cases use;
-4. the forms a System Repo's records start from. They go once, at birth, and are the System Repo's own after it;
-5. a description of CBC system design for the System Repo's readers, as adapted to its kind of system. Its form is open, and is decided when the concept is split, and so is whether a System Repo may change it.
+What the System Kit holds is the layers model's (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 
 #### What passes between the repos
 
@@ -222,7 +214,7 @@ Where text is kept today, in the Maintainer Repo, on each of the five Knowledge 
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo | not yet sorted |
 | The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files | not yet sorted |
 | Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a System Repo | 3 |
-| System Kit Copy | mostly instruction; the concept and the Defined Terms are understanding | now | the agent in the System Repo | each System Repo | 3, used in 4 |
+| System Kit Copy | both: each an Adapted Case; the description of CBC system design is understanding alone (`temp/common-ground/knowledge-layers.md` §4, *Open questions*, question 7) | now | the agent in the System Repo | each System Repo | 3, used in 4 |
 | The Repo Responsibility, §2's lists | understanding | later | both | the Maintainer Repo | not yet sorted |
 
 ### 3.1 Who uses the text
