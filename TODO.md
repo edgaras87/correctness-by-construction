@@ -239,8 +239,8 @@
       Read Copy Changes compares two snapshots (2026-11-13, the
       reviewer).
       Context: Read Copy Changes compares two snapshots and never
-      walks commits (`temp/common-ground/system-repo-change-simulation.md` §4,
-      *Snapshots*). "Runs from … to main" and "across that span"
+      walks commits (`temp/common-ground/knowledge-layers.md` §3.2.2,
+      *Read Copy Changes*). "Runs from … to main" and "across that span"
       read as a walk in the problem file's rules on reading, cut on
       2026-11-19; the same words may stand in other drafts.
       Trigger: the facts of Change moved to their final home, so the
@@ -312,7 +312,7 @@
         become scenarios of their own;
       - start from the file's *Open* fields, each with its trigger;
       - the birth scenario gains what
-        `temp/common-ground/system-repo-change-simulation.md` §4, step 2 asks of it:
+        `temp/common-ground/knowledge-layers.md` §3.2.2 asks of it:
         the delivery check writes the System Repo's register row,
         with the *settled snapshot* set to the start;
       - scenarios as checks: how the alert fires was to be decided

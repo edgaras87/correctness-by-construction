@@ -165,11 +165,8 @@ Four steps:
 3. It compares the Kit Copies, and reads each Change Record.
 4. It lists what changed, nothing judged.
 
-**Snapshots.** Read Copy Changes compares two snapshots of the System Repo, the older snapshot and the stop, and never walks its commits. The *settled snapshot* is the one already taken into account: read, judged and acted on (`temp/common-ground/common-ground-problem.md`, *Defined Terms*). It holds the Kit Version the System Repo had recorded by then (§8, step 1, *At the Update Take, in order*, item 4), which may be behind the newest. So the last Kit Version the Maintainer Repo has seen the System Repo on is read from it, never stored anywhere else. Main's latest snapshot is the one checked, and becomes the stop. The commits between them are history, opened only to understand something deeper. The *version snapshot* an Update Take leaves is the one special point, used only by the first Look for Lessons after that Update Take (step 2, *The first Look for Lessons after an Update Take*).
-
 **Step 1. The stretch of work ends, and the Maintainer Repo is told.**
 
-- **What must happen:** a stretch of work ends where a Look for Lessons can stop, and the Maintainer Repo learns that the System Repo has work it has not taken into account. The human decides which System Repo gets a Look for Lessons, and when.
 - **Options,** for where a stretch ends:
   - a. at any commit, the System Repo's latest;
   - b. at the gate where one of the System Repo's Plan Steps closed, the last one on main.
@@ -181,34 +178,7 @@ Four steps:
   - a reads Copy Changes the gate has not yet looked at, which the System Repo may still edit or reverse (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*);
   - c depends on the human remembering, and the Repo Register then says a System Repo has nothing new when it has new work (Failure Case 2);
   - e alone gives no Look for Lessons to a System Repo whose work does not resume, so what it learned is lost (Failure Case 1). The Look for Lessons when work resumes still runs, as d: the human names the System Repo to update, which starts a Look for Lessons (§7, step 1, *When one is due*).
-
-  **Where a stretch ends.** Main moves only at a gate's close, so main is always at a closed gate, and nothing on it waits for a gate. Work past it, in a branch or not yet committed, is left for the next Look for Lessons.
-
-  **Two checks at main.** d starts a Look for Lessons at one System Repo (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). It makes two checks, both on whether there are Copy Changes to judge:
-  1. **main moved:** the System Repo's main against the *settled snapshot*;
-  2. **Copy Changes:** the Kit Copies, compared between the older snapshot and main (step 2, step 3).
-
-  A Look for Lessons ends in one of three cases:
-
-  | Case | Main moved | Kit Copy changed | What follows |
-  |---|---|---|---|
-  | *not moved* | no | — | nothing new; Act sets the *settled snapshot* to the stop, as it was (§6, step 1) |
-  | *no Copy Change* | yes | no | Read Copy Changes finds no Copy Change: nothing is judged, and Act sets the *settled snapshot* to the stop (§6, step 1) |
-  | *Copy Change read* | yes | yes | the Copy Changes listed in a Repo Reading, judged and acted on (§5, §6) |
-
-  Check 2 is asked only when main moved, so the first row shows "—".
-
-  A System Repo's open Plan Step changes no case: main stands at the last gate, so the Look for Lessons finds its case by what main holds. The open step's work waits for the next Look for Lessons, and a Kit Update waits for the step's gate (§7, step 1, *When one is due*).
-
-  **No state kept.** d keeps no state of its own: whether a System Repo has work comes from its main and the *settled snapshot*, never from a line someone must keep true.
-
-  **Cleaned history.** If a stretch's history is cleaned before main moves, the Change Records are unharmed: they are in the Kit Copies, not in the commits.
-- **Adapted Case:**
-  - the System Repo's gate list: main moves only at a gate's close. It is there today;
-  - the Maintainer Repo's, for reading a System Repo's Copy Changes. It loads when the human names a System Repo, for its lessons or to update it, or asks which have new work. For this step it says:
-    - compare the named System Repo's main with its *settled snapshot*, or every System Repo's when asked;
-    - make the two checks; the Look for Lessons ends once Act is done, in one of three cases: *not moved*, *no Copy Change*, *Copy Change read*; when the human named the System Repo to update, the check in Deliver the Kit Update follows.
-- **Open:** a System Repo nobody names gets no Look for Lessons until its work resumes. Its trigger: the first lesson found late because a System Repo went without one.
+- **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*).
 - **Today:**
   - borrowed: a CBC Run's Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
   - borrowed: the Maintainer Repo keeps where each System Repo lives (`ARCHITECTURE.md` §2.5, *The CBC Runs*);
@@ -217,7 +187,6 @@ Four steps:
 
 **Step 2. The Maintainer Repo finds the two snapshots it compares.**
 
-- **What must happen:** the agent finds the older snapshot, and takes the newer one, the stop, when the Look for Lessons begins. The next Look for Lessons must start where this one stopped, whether a Kit Update follows or not, or at the *version snapshot* of an Update Take since.
 - **Options,** for where the last stop is kept:
   - a. in the System Repo, carried there by the next Kit Update;
   - b. in the Repo Register, the *settled snapshot*'s commit beside where each System Repo lives;
@@ -225,18 +194,7 @@ Four steps:
 - **Chosen:** b. The others:
   - a fails when a Look for Lessons has no Kit Update after it, which step 1 allows, since one may come between two resumptions of work: the System Repo still holds the old stop, and the next Look for Lessons finds again what was judged;
   - c keeps every Repo Reading for good, only for its first line.
-
-  **Where it starts.** The older snapshot is the Repo Register's *settled snapshot*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, with the *settled snapshot* set to the start, the commit holding the Kit Copies as they arrived (`temp/common-ground/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Copy Change, so it stands as taken into account. So every Look for Lessons, the first among them, starts at the *settled snapshot*, and a System Repo with none yet needs no rule of its own. The frozen birth scenario gains this when it resumes (`TODO.md`, the item on resuming the simulation).
-
-  **Where it stops.** The stop is the System Repo's main as it stands when the Look for Lessons begins: its latest snapshot, named by its commit. Everything is compared against that commit, never against main as it moves, so a commit landing during the Look for Lessons falls into the next one. The Repo Reading names its stop. When the list is empty, no Repo Reading is written, and Act sets the *settled snapshot* to the stop.
-
-  **The first Look for Lessons after an Update Take.** It has to start from the *version snapshot*, not the *settled snapshot*. The *settled snapshot* still holds the Kit Copies of the previous Kit Version. Starting there, the Look for Lessons would read the Update Take's changes as the System Repo's. The agent finds the *version snapshot* at main (§8, step 1, *At the Update Take, in order*, item 4). The agent does not check the *version snapshot*'s Kit Copies against the new Kit Version: Deliver the Kit Update and the Update Take check the files three times before (§7, step 2; §8, step 1, items 2 and 6). That check comes back if an Update Take is found to have put a Kit Copy in wrong.
-
-  **When the stop moves.** Act on the verdicts sets the *settled snapshot* to the stop at every Look for Lessons, whether or not a Copy Change was found (§6, step 1). When the verdicts ask for no change, or there are none, that is right after judging. It never moves before: a Look for Lessons left half done must not mark its Copy Changes taken into account. Whether the System Repo takes the Kit Update does not hold it back: by then all between the two snapshots is read, judged and acted on, and what follows waits for the next Look for Lessons. The Repo Reading stays a draft, and goes once its work is done.
-- **Adapted Case:** the Maintainer Repo's, for reading a System Repo's Copy Changes. For this step it says:
-  - the older snapshot is the Repo Register's *settled snapshot*; at the first Look for Lessons after an Update Take, the *version snapshot*;
-  - the stop is the System Repo's main as it stands when the Look for Lessons begins, named by its commit; everything is compared against it;
-  - Act sets the *settled snapshot* to the stop at every Look for Lessons, once the verdicts, if any, are acted on.
+- **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*).
 - **Today:**
   - changed: today the stop is written first, as the Repo Reading's first line, before anything is read (`.claude/skills/exchange-read/SKILL.md`, Stage 2). Here it is taken when the Look for Lessons begins, and the Repo Reading names it when it is written;
   - borrowed: the Repo Register keeps where each System Repo lives, as today's list of CBC Runs does (`ARCHITECTURE.md` §2.5, *The CBC Runs*). It gains the *settled snapshot*;
@@ -246,7 +204,6 @@ Four steps:
 
 **Step 3. The Maintainer Repo compares the Kit Copies, and reads each Change Record.**
 
-- **What must happen:** between the two snapshots, the older one and the stop, the agent finds every Copy Change in the System Kit's folders, a new file among them, and pairs each with its Change Record. It only reads the System Repo, and writes only in the Maintainer Repo.
 - **Options,** for how Copy Changes are found:
   - a. each Kit Copy compared between two snapshots of the System Repo's own: the older one and the stop;
   - b. each Kit Copy compared with the Kit Version the Kit Copies came from;
@@ -256,16 +213,7 @@ Four steps:
   - b finds the same as a at the first Look for Lessons after birth or an Update Take. After it, a Copy Change already judged differs from that Kit Version until the next Update Take, and is found again at every Look for Lessons before it;
   - c misses a Copy Change with no Change Record, which the commit's check should have stopped, but which can still land (Failure Case 22);
   - d shows every edit on the way, and Copy Changes the gate reversed. The gate has settled those (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*); what stands at the stop is what is read.
-
-  **Pairing.** A Change Record lands in the same diff as its Copy Change, in the Kit Copy's Adapted Understanding Text, so pairing them is reading one diff. Three things can come out:
-  - a Copy Change with its Change Record: read with its what, what happened, which work found it, and the System Repo's proposal;
-  - a Copy Change with no Change Record: read from the comparison alone, and marked "no entry";
-  - a Change Record changed with no Copy Change, as when a why is rewritten: read as a change of its why.
-- **Adapted Case:** the Maintainer Repo's, for reading a System Repo's Copy Changes. For this step it says:
-  - compare each Kit Copy between the older snapshot and the stop; the commits between are history, opened only to understand something deeper;
-  - pair each Copy Change with its Change Record; mark one with none "no entry";
-  - read a Change Record changed with no Copy Change as a change of its why;
-  - judge nothing.
+- **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*).
 - **Today:**
   - borrowed: every item is read from the copies' diff, the whys, and the lines to the Concept Deliverer (`docs/conventions/exchange/` §6.1, *Reading a CBC Run*; `.claude/skills/exchange-read/SKILL.md`, Stage 3). Here the whys are in the diff, and nothing else is sent to the Maintainer Repo, so it is one: the diff;
   - borrowed: the CBC Run is only read, never written (`.claude/skills/exchange-read/SKILL.md`, *Gates*);
@@ -275,7 +223,6 @@ Four steps:
 
 **Step 4. It lists what changed, nothing judged.**
 
-- **What must happen:** the Repo Reading gets one line per Copy Change, nothing judged. The list may be empty: then no Repo Reading is written, and Act sets the *settled snapshot* to the stop (step 2). The human checks that the list is whole. Then it is judged, and its stop moves into the Repo Register once its verdicts are acted on (step 2).
 - **Options:**
   - a. one line per Copy Change, nothing decided; judging is §5's;
   - b. each Copy Change judged as it is listed;
@@ -285,13 +232,7 @@ Four steps:
   - b judges before the whole list is seen, so Copy Changes with one reason are judged apart, and each verdict tends to follow the System Repo's proposal (Failure Case 20). Listing is cheap and judging is not, so the list is checked whole first;
   - c takes the proposal for the verdict, and a lesson for every repo stays in one System Repo (Failure Case 20);
   - d merges two Copy Changes to one Kit Copy, and one of their reasons is lost.
-
-  **What a line holds.** A line holds what step 3 found: the Kit Copy and its part, what it says now, what happened, which work found it, and the System Repo's proposal, marked as one. A Copy Change with no Change Record says "no entry". Copy Changes linked by one reason are listed together, under it.
-- **Adapted Case:** the Maintainer Repo's, for reading a System Repo's Copy Changes. For this step it says:
-  - one line per Copy Change, nothing judged;
-  - linked Copy Changes listed together, under their reason;
-  - a line holds what step 3 found, the proposal marked as one;
-  - the human checks the list is whole; the stop moves into the Repo Register once the verdicts are acted on.
+- **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*).
 - **Today:**
   - borrowed: one line per item, what it is and where, nothing decided (`.claude/skills/exchange-read/SKILL.md`, Stage 4 and *Gates*);
   - borrowed: the Repo Reading is a draft to its form (`.claude/rules/exchange-reading.md`);
@@ -402,7 +343,7 @@ Two steps:
 
 **Step 1. The Maintainer Repo makes its changes. For depth b, the System Kit's Adapted Case.**
 
-- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth b, the System Kit's Adapted Case gains the lesson, worded for every System Repo, and is committed in the Maintainer Repo: the System Kit stands at a new Kit Version. The System Repo the lesson came from gets it back with the next Kit Update, though its Kit Copy already holds the Copy Change in its own words (§7, step 1). The Repo Reading then goes: nothing in the Kit Update is read from it (§7, step 1, *What it is*). Once the verdicts are acted on here, Act sets the *settled snapshot* to the stop, in the Repo Register (§4, step 2). It does so at every Look for Lessons: with no verdicts, as in cases *not moved* and *no Copy Change*, that is all it does (§4, step 1, *Two checks at main*).
+- **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth b, the System Kit's Adapted Case gains the lesson, worded for every System Repo, and is committed in the Maintainer Repo: the System Kit stands at a new Kit Version. The System Repo the lesson came from gets it back with the next Kit Update, though its Kit Copy already holds the Copy Change in its own words (§7, step 1). The Repo Reading then goes: nothing in the Kit Update is read from it (§7, step 1, *What it is*). Once the verdicts are acted on here, Act sets the *settled snapshot* to the stop, in the Repo Register (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). It does so at every Look for Lessons: with no verdicts, as in cases *not moved* and *no Copy Change*, that is all it does (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*).
 - **Options,** for depth b:
   - a. the lesson is reworded for every System Repo, and the System Kit's Adapted Case gains it;
   - b. the Copy Change goes into the System Kit's Adapted Case as the System Repo wrote it;
@@ -447,13 +388,13 @@ Two steps:
   - c. after Act, at every Look for Lessons;
   - d. only when the human names the System Repo to update, after the Look for Lessons that starts.
 - **Chosen:** b and d. The others:
-  - a sends an empty Kit Update to carry where the Look for Lessons stopped. The *settled snapshot* is in the Repo Register now (§4, step 2), so nothing needs carrying;
+  - a sends an empty Kit Update to carry where the Look for Lessons stopped. The *settled snapshot* is in the Repo Register now (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*), so nothing needs carrying;
   - c answers, at a Look for Lessons, a question nothing acts on: nothing is made until work resumes, and the System Kit may move again before then.
 
-  **When one is due.** A Kit Update is due when the System Repo's Kit Version, which it holds, is behind the newest. It is found by comparison, as §4, step 1 finds new work. Two Kit Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself.
+  **When one is due.** A Kit Update is due when the System Repo's Kit Version, which it holds, is behind the newest. It is found by comparison, as Read Copy Changes finds new work (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). Two Kit Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself.
 
   The check runs only when work resumes. Work resumes when the human, about to open the System Repo's next Plan Step, names it to update; neither repo can see that moment itself (§8, step 1, *Before the Update Take*). Nothing is made for, or sent to, a System Repo whose work has not resumed. Then, in order:
-  1. a Look for Lessons runs (§4, step 1). It comes first: a Kit Update is built against the *settled snapshot*, and a Copy Change not yet taken into account would make the Update Take refuse it;
+  1. a Look for Lessons runs (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). It comes first: a Kit Update is built against the *settled snapshot*, and a Copy Change not yet taken into account would make the Update Take refuse it;
   2. the Kit Versions are compared. When the System Repo's is the newest, nothing follows;
   3. the agent checks that none of the System Repo's Plan Steps is open. If one is, it says so, and makes nothing: finishing that step would move main, and the Update Take would refuse the Kit Update too (§8, step 1, *Before the Update Take*);
   4. the Kit Update is made.
@@ -531,7 +472,7 @@ Two steps:
   - f. on a branch of its own, one commit per part, a gate last, main moving by fast-forward at the gate's close;
   - g. as the first commit of the System Repo's next Plan Step;
   - h. as the System Repo's Plan Step, for the Update Take alone;
-  - i. as one commit on main, the rule that main moves only at a gate's close (§4, step 1, *Where a stretch ends*) narrowed so that only the work of the System Repo's Plan Steps waits for a gate.
+  - i. as one commit on main, the rule that main moves only at a gate's close (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*) narrowed so that only the work of the System Repo's Plan Steps waits for a gate.
 - **Chosen:** b, e and f. The others:
   - a lands in the middle of a step, which then runs on two sets of rules;
   - c takes the Kit Update over Copy Changes not yet judged. The Kit Update answered none of them, and clearing their Change Records loses them before they are judged;
@@ -542,11 +483,11 @@ Two steps:
 
   **Before the Update Take.** The opening order is fixed: a Look for Lessons, then the Kit Update. An open Repo Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A System Repo's Plan Step open when the human returns finishes on the old Kit Copies first, and the human names the System Repo to update at the next opening (§7, step 1, *When one is due*). The Update Take checks first, from the Update Note, what the System Repo itself can see:
   - case 1, its main is still the *settled snapshot* the Update Note names: the Kit Update is taken. Its Kit Version needs no check of its own: it is recorded in main, so it cannot change while main stands still;
-  - case 2, anything else: there is no Update Take, and the System Repo says so. The human names it to update again, and the Look for Lessons finds that main has moved (§4, step 1, *Two checks at main*). The check in Deliver the Kit Update then finds a new Kit Update due, made against the System Kit as it is now. It replaces the waiting one (§7, step 1).
+  - case 2, anything else: there is no Update Take, and the System Repo says so. The human names it to update again, and the Look for Lessons finds that main has moved (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). The check in Deliver the Kit Update then finds a new Kit Update due, made against the System Kit as it is now. It replaces the waiting one (§7, step 1).
 
   **When the System Kit moves on.** The System Kit may move after the Kit Update is made. That is no reason to refuse the Kit Update: it is correct, if not the latest, and the next brings the rest.
 
-  **At the Update Take, in order.** Once the check finds case 1, the Update Take cuts a branch from main, the *settled snapshot*. Its first commit is the Kit Update as it arrived, in `temp/`, not yet in force: a record of what came, before the Update Take changes anything. Each item below is then a commit of its own, but item 2, a check. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§4, step 1, *Where a stretch ends*).
+  **At the Update Take, in order.** Once the check finds case 1, the Update Take cuts a branch from main, the *settled snapshot*. Its first commit is the Kit Update as it arrived, in `temp/`, not yet in force: a record of what came, before the Update Take changes anything. Each item below is then a commit of its own, but item 2, a check. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*).
   1. the Adapted Case for taking a Kit Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
   3. every Kit Copy is taken whole, at the new Kit Version; each path gone is removed, and each renamed is moved. Every Change Record is cleared: main is the *settled snapshot*, so each was read and judged. A part the System Repo never changed is taken, and work shows whether it fits (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*);
@@ -570,7 +511,7 @@ Two steps:
   - borrowed: the Delivery Take's order: the Delivery Note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);
   - borrowed: a CBC Run's Plan Step reaches main by fast-forward from its branch, at its close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). The Update Take's branch does the same;
   - borrowed: a Receipt Branch may hold the delivery as it arrived (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 4). Here the Kit Update is committed as it arrived, on the Update Take's branch;
-  - changed: today, with more than one commit, the Delivery Take's entry goes in the last, where every copy equals the Delivery Pin (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the Kit Version names the *version snapshot*, item 3's commit, where the next Look for Lessons starts (§4, step 2, *The first Look for Lessons after an Update Take*);
+  - changed: today, with more than one commit, the Delivery Take's entry goes in the last, where every copy equals the Delivery Pin (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here the Kit Version names the *version snapshot*, item 3's commit, where the next Look for Lessons starts (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*);
   - changed: today nothing at the Delivery Take is decided at a gate. Here the Update Take's gate checks that the Update Take finished;
   - borrowed: being behind the Concept Deliverer is acceptable (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). A System Repo not named to update is that;
   - changed: today an edit made after the Read-Through Commit is re-applied on top, its record standing (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 3). Here the opening order leaves no such edit;

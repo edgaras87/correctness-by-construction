@@ -205,7 +205,7 @@ A Copy Change travels through six parts, each done by one repo. Each part sits a
 
 So the six parts are one movement: up from layer 4, as high as the Copy Change holds, and back down.
 
-**The Look for Lessons.** Read Copy Changes, Judge Copy Changes and Act on the verdicts make one pass over one System Repo, the Look for Lessons. It starts when the human names a System Repo, for its lessons or to update it. It ends once Act on the verdicts is done, which sets the *settled snapshot* to the stop (`temp/common-ground/system-repo-change-simulation.md` §4, step 2, *When the stop moves*). Its first step, two checks at main, sorts it into one of three cases (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *Two checks at main*). Deliver the Kit Update and Take the Kit Update are outside it.
+**The Look for Lessons.** Read Copy Changes, Judge Copy Changes and Act on the verdicts make one pass over one System Repo, the Look for Lessons. It starts when the human names a System Repo, for its lessons or to update it. It ends once Act on the verdicts is done, which sets the *settled snapshot* to the stop (§3.2.2). Its first step, two checks at main, sorts it into one of three cases (§3.2.2). Deliver the Kit Update and Take the Kit Update are outside it.
 
 **Bringing a System Repo up to date.** It is a second job, which needs the first. It runs only when the human names the System Repo to update, and starts with a Look for Lessons. Its check, whether a Kit Update is due, belongs to Deliver the Kit Update. It comes after Act on the verdicts, since the System Kit moves for a Copy Change only once it is judged and acted on (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*).
 
@@ -250,6 +250,51 @@ The System Repo changes a Kit Copy during its own work, and the gate of its Plan
 **Open:**
 - where the Change Record goes when the Kit Copy has no Adapted Understanding Text: §4, question 7, with its first guess;
 - whether a reversed Copy Change leaves a trace for the Maintainer Repo. One tried and undone may be evidence that the Kit Copy was right. Its trigger: the first Copy Change reversed at a gate.
+
+#### 3.2.2 Read Copy Changes
+
+The Maintainer Repo finds what changed in one System Repo since it last looked, and lists it, judging nothing. How each rule was chosen is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §4, *Read Copy Changes*).
+
+**How it starts.** The human decides which System Repo gets a Look for Lessons, and when. The human names a System Repo, for its lessons or to update it, and the agent compares its main with its *settled snapshot*. When the human asks which System Repos have new work, every one's main is compared with its *settled snapshot*, and nothing more is done. No state is kept: whether a System Repo has work comes from its main and the *settled snapshot*, never from a line someone must keep true.
+
+**Where a stretch ends.** At the gate where one of the System Repo's Plan Steps closed, the last one on main. Main moves only at a gate's close, so main is always at a closed gate. Work past it, in a branch or not yet committed, is left for the next Look for Lessons. An open Plan Step changes nothing here: its work waits for the next Look for Lessons, and a Kit Update waits for the step's gate (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*). If a stretch's history is cleaned before main moves, the Change Records are unharmed: they are in the Kit Copies, not in the commits.
+
+**Two snapshots.** Read Copy Changes compares two snapshots of the System Repo, the older snapshot and the stop, and never walks its commits. The commits between them are history, opened only to understand something deeper.
+- **The older snapshot** is the Repo Register's *settled snapshot*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, its *settled snapshot* set to the start: the commit holding the Kit Copies as they arrived (`temp/common-ground/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Copy Change. So every Look for Lessons, the first among them, starts at the *settled snapshot*.
+- **After an Update Take,** the first Look for Lessons starts at the *version snapshot* instead, found at main (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *At the Update Take, in order*, item 4). The *settled snapshot* still holds the Kit Copies of the previous Kit Version, and starting there would read the Update Take's changes as the System Repo's. The *version snapshot*'s Kit Copies are not checked against the new Kit Version: Deliver the Kit Update and the Update Take check the files three times before (`temp/common-ground/system-repo-change-simulation.md` §7, step 2; §8, step 1, items 2 and 6).
+- **The stop** is the System Repo's main as it stands when the Look for Lessons begins, named by its commit. Everything is compared against that commit, never against main as it moves, so a commit landing during the Look for Lessons falls into the next one.
+- **The System Repo's Kit Version** is read from the *settled snapshot*, never stored anywhere else. It may be behind the newest.
+
+**Two checks at main,** both on whether there are Copy Changes to judge:
+1. **main moved:** the System Repo's main against the *settled snapshot*;
+2. **Copy Changes:** the Kit Copies, compared between the older snapshot and the stop. It is asked only when main moved.
+
+A Look for Lessons ends in one of three cases:
+
+| Case | Main moved | Kit Copy changed | What follows |
+|---|---|---|---|
+| *not moved* | no | — | nothing new; Act on the verdicts sets the *settled snapshot* to the stop, as it was |
+| *no Copy Change* | yes | no | nothing is judged, no Repo Reading is written, and Act on the verdicts sets the *settled snapshot* to the stop |
+| *Copy Change read* | yes | yes | the Copy Changes are listed in a Repo Reading, judged and acted on |
+
+When the human named the System Repo to update, the check in Deliver the Kit Update follows, once Act on the verdicts is done.
+
+**Finding each Copy Change.** Each Kit Copy in the System Kit's folders, a new file among them, is compared between the older snapshot and the stop. A Change Record lands in the same diff as its Copy Change, so pairing them is reading one diff. Three things can come out:
+- a Copy Change with its Change Record: read with its what, what happened, which work found it, and the System Repo's proposal;
+- a Copy Change with no Change Record: read from the comparison alone, and marked "no entry";
+- a Change Record changed with no Copy Change, as when a why is rewritten: read as a change of its why.
+
+The agent only reads the System Repo, and writes only in the Maintainer Repo.
+
+**The Repo Reading.** One line per Copy Change, nothing judged. A line holds the Kit Copy and its part, what it says now, what happened, which work found it, and the System Repo's proposal, marked as one. A Copy Change with no Change Record says "no entry". Copy Changes linked by one reason are listed together, under it. The Repo Reading names its stop. When the list is empty, none is written. The human checks that the list is whole; then it is judged. The Repo Reading stays a draft, and goes once its work is done.
+
+**When the stop moves.** Act on the verdicts sets the *settled snapshot* to the stop, in the Repo Register, at every Look for Lessons, whether or not a Copy Change was found. With no verdicts, that is right after judging. It never moves before: a Look for Lessons left half done must not mark its Copy Changes taken into account. Whether the System Repo takes the Kit Update does not hold it back.
+
+**Its Adapted Cases:**
+- the System Repo's gate list: main moves only at a gate's close. It is there today;
+- the Maintainer Repo's, for reading a System Repo's Copy Changes. It loads when the human names a System Repo, for its lessons or to update it, or asks which have new work, and says everything above.
+
+**Open:** a System Repo nobody names gets no Look for Lessons until its work resumes. Its trigger: the first lesson found late because a System Repo went without one.
 
 ### 3.3 The Maintainer Repo's lessons
 
