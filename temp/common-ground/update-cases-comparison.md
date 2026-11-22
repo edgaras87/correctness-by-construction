@@ -13,7 +13,7 @@ The flow file shows the update job only as the second box of *The two jobs*, and
 
 ## 2. What the reader must get
 
-1. **U1, the outcomes:** five, and what decides each, in order: is the Version behind; is a Plan Step open; is it clear to stage; does the Take find main where the Update Note says. *not behind*, *step open*, *waits for the word*, *taken*, *refused* (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*; §7, step 2, *Before staging*; §8, step 1, *Before the Take*).
+1. **U1, the outcomes:** four, and what decides each, in order: is the Version behind; is a Plan Step open; does the Take find main where the Update Note says: *not behind*, *step open*, *taken*, *refused*. Before staging, the job may pause, waiting for the human's word or a clean tree (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*; §7, step 2, *Before staging*; §8, step 1, *Before the Take*).
 2. **U2, where it starts:** the human, about to open the System Repo's next Plan Step, names it to update; a Look for Lessons runs first, and the job goes on from where it ended.
 3. **U3, what moves main:** the Take's branch, at its gate; an open Plan Step's gate, which comes first.
 4. **U4, the refused Take:** main moved after the Update was built against the *settled snapshot*; what follows: the human names the System Repo to update again, and a new Update replaces the waiting one.
@@ -22,7 +22,7 @@ The flow file shows the update job only as the second box of *The two jobs*, and
 
 Found while building: every way main can move between staging and the Take is one the simulation leaves open, so the refused Take can be drawn only with its cause marked open (U6).
 
-## 3. The five pictures
+## 3. The four pictures
 
 The reviewer chose candidate A, a picture per outcome. The other candidates, B to F, and their verdicts are in git at `822b60e5`.
 
@@ -85,34 +85,6 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  Take)                                              │
 ```
 
-### *waits for the word*
-
-```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
- ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- taken into account by                        ┌  c0 ●  earlier Plan Steps and Takes           ◀──── history
- earlier Looks for Lessons                    │     │
- settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
-                                                    │
- ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the human, about to open the System Repo's next    ┊
- Plan Step, names it to update (§7, step 1)         ┊
- Look for Lessons (§4 to §6): case not moved,       ┊
- drawn above; the settled snapshot stays c1         ┊
- Deliver (§7): the Version is 1, the newest is      ┊
-   2: behind; no Plan Step open (§7, step 1)        ┊
-   makes the Update: every Copy at Version 2,       ┊
-   and an Update Note naming c1                     ┊
-   before staging (§7, step 2): the System          ┊
-   Repo's tree is not clean, or no word yet:        ┊
-   the agent says what it found, and waits          ┊
-                                                    │
- ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
- on the word: staged in the System Repo's temp/;    │
- the Take follows, as drawn in The Take             │
-```
-
 ### *taken*
 
 ```
@@ -132,7 +104,11 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
    2: behind; no Plan Step open (§7, step 1)        ┊
    makes the Update: every Copy at Version 2,       ┊
    and an Update Note naming c1                     ┊
-   stages it in the System Repo's temp/             ┊
+   before staging (§7, step 2): when the System     ┊
+   Repo's tree is not clean, or no word yet, the    ┊
+   agent says what it found, and waits              ┊
+   on the word, stages it in the System Repo's      ┊
+   temp/                                            ┊
                                                     ┊                                         ┄┄┄┄┄ the Update waits in temp/, not yet in force
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
