@@ -39,11 +39,11 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the human, about to open the System Repo's next    ┊
- Plan Step, names it to update (§7, step 1)         ┊
- Look for Lessons (§4 to §6): case not moved,       ┊
- drawn above; the settled snapshot stays c1         ┊
- Deliver (§7): the Version is 1, the newest:        ┊
+ - the human, about to open the System Repo's       ┊
+   next Plan Step, names it to update (§7, step 1)  ┊
+ - Look for Lessons (§4 to §6): case not moved,     ┊
+   drawn above; the settled snapshot stays c1       ┊
+ - Deliver (§7): the Version is 1, the newest:      ┊
    no Update is due; nothing is made                ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
@@ -67,13 +67,14 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
                                                     │         c2 ●  work, on Version 1        ◀──── the step is still open: no gate yet
                                                     │            ┊
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the human names the System Repo to update          ┊            ┊
- (§7, step 1)                                       ┊            ┊
- Look for Lessons (§4 to §6): case not moved;       ┊            ┊
- the open step's work waits for the next one        ┊            ┊
- Deliver (§7): the Version is 1, the newest is      ┊            ┊
-   2: behind. A Plan Step is open: the agent        ┊            ┊
-   says so, and makes nothing (§7, step 1)          ┊            ┊
+ - the human names the System Repo to update        ┊            ┊
+   (§7, step 1)                                     ┊            ┊
+ - Look for Lessons (§4 to §6): case not moved;     ┊            ┊
+   the open step's work waits for the next one      ┊            ┊
+ - Deliver (§7): the Version is 1, the newest is    ┊            ┊
+   2: behind                                        ┊            ┊
+ - a Plan Step is open: the agent says so, and      ┊            ┊
+   makes nothing (§7, step 1)                       ┊            ┊
                                                     │            ┊
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     │            │
@@ -96,19 +97,19 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the human, about to open the System Repo's next    ┊
- Plan Step, names it to update (§7, step 1)         ┊
- Look for Lessons (§4 to §6): case not moved,       ┊
- drawn above; the settled snapshot stays c1         ┊
- Deliver (§7): the Version is 1, the newest is      ┊
+ - the human, about to open the System Repo's       ┊
+   next Plan Step, names it to update (§7, step 1)  ┊
+ - Look for Lessons (§4 to §6): case not moved,     ┊
+   drawn above; the settled snapshot stays c1       ┊
+ - Deliver (§7): the Version is 1, the newest is    ┊
    2: behind; no Plan Step open (§7, step 1)        ┊
-   makes the Update: every Copy at Version 2,       ┊
-   and an Update Note naming c1                     ┊
-   before staging (§7, step 2): when the System     ┊
+ - Deliver makes the Update: every Copy at          ┊
+   Version 2, and an Update Note naming c1          ┊
+ - before staging (§7, step 2): when the System     ┊
    Repo's tree is not clean, or no word yet, the    ┊
    agent says what it found, and waits              ┊
-   on the word, stages it in the System Repo's      ┊
-   temp/                                            ┊
+ - on the word, Deliver stages the Update in the    ┊
+   System Repo's temp/                              ┊
                                                     ┊                                         ┄┄┄┄┄ the Update waits in temp/, not yet in force
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
@@ -136,14 +137,15 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the human, about to open the System Repo's next    ┊
- Plan Step, names it to update (§7, step 1)         ┊
- Look for Lessons (§4 to §6): case not moved,       ┊
- drawn above; the settled snapshot stays c1         ┊
- Deliver (§7): the Version is 1, the newest is      ┊
+ - the human, about to open the System Repo's       ┊
+   next Plan Step, names it to update (§7, step 1)  ┊
+ - Look for Lessons (§4 to §6): case not moved,     ┊
+   drawn above; the settled snapshot stays c1       ┊
+ - Deliver (§7): the Version is 1, the newest is    ┊
    2: behind; no Plan Step open (§7, step 1)        ┊
-   makes the Update, its Update Note naming c1      ┊
-   stages it in the System Repo's temp/             ┊
+ - Deliver makes the Update, its Update Note        ┊
+   naming c1                                        ┊
+ - Deliver stages it in the System Repo's temp/     ┊
                                                     ┊                                         ┄┄┄┄┄ the Update waits in temp/, not yet in force
                                                     │
                                                     ├─ cut ──────┐                            ◀──── main moves before the Take; how is open: postponing a Take (§8, Open)
