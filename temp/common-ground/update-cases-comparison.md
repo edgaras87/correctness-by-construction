@@ -2,9 +2,10 @@
 
 <!-- A visual comparison's draft (.claude/skills/visual-comparison/SKILL.md).
      It settles how temp/common-ground/system-repo-change-flow.md §2 shows
-     the second of the two jobs, an Update when work resumes. The
-     outcome is recorded in the body of the commit that places it in
-     the flow file, and this draft goes in that commit. -->
+     the second of the two jobs, an Update when work resumes.
+     Candidate A was chosen, and is worked here. The outcome is
+     recorded in the body of the commit that places it in the flow
+     file, and this draft goes in that commit. -->
 
 ## 1. The defect
 
@@ -21,20 +22,13 @@ The flow file shows the update job only as the second box of *The two jobs*, and
 
 Found while building: every way main can move between staging and the Take is one the simulation leaves open, so the refused Take can be drawn only with its cause marked open (U6).
 
-## 3. The candidates
+## 3. The five pictures
 
-- **A.** A picture per outcome: five.
-- **B.** Two pictures, *step open* and *refused*; the other three as a list, *taken* pointing at *The Take*.
-- **C.** One picture, its now holding every outcome as a branch of the checks.
-- **D.** A table, no picture.
-- **E.** Nothing new: *The two jobs* and *The Take* as they stand.
-- **F.** Old picture 2, for the refused Take. Not rebuilt here; it is in the old pictures file.
+The reviewer chose candidate A, a picture per outcome. The other candidates, B to F, and their verdicts are in git at `822b60e5`.
 
 Every picture uses the flow file's key (`temp/common-ground/system-repo-change-flow.md` §2, *Now*). The example: Version 1 in the System Repo, Version 2 the newest; the Look for Lessons ends in case *not moved*.
 
-### Candidate A, a picture per outcome
-
-#### *not behind*
+### *not behind*
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -58,7 +52,7 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
                                                               c2 ●  work, on Version 1
 ```
 
-#### *step open*
+### *step open*
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -91,7 +85,7 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  Take)                                              │
 ```
 
-#### *waits for the word*
+### *waits for the word*
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -119,7 +113,7 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  the Take follows, as drawn in The Take             │
 ```
 
-#### *taken*
+### *taken*
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -155,7 +149,7 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
                                                               c8 ●  work, on Version 2
 ```
 
-#### *refused*
+### *refused*
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -194,75 +188,3 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  Deliver makes a new Update against c3, which       │
  replaces the waiting one (§7, step 1)              │
 ```
-
-### Candidate B, two pictures and a list
-
-Its two pictures are A's *step open* and *refused*, above. Below them, the list:
-
-**What else may happen.**
-
-- *not behind*: no Update is due, and the System Repo's next Plan Step opens on the same Copies;
-- *waits for the word*: the Update is made, and staging waits while the System Repo's tree is not clean or no word is given (`temp/common-ground/system-repo-change-simulation.md` §7, step 2);
-- *taken*: the Take, as drawn in *The Take*.
-
-### Candidate C, one picture
-
-```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
- ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- taken into account by                        ┌  c0 ●  earlier Plan Steps and Takes           ◀──── history
- earlier Looks for Lessons                    │     │
- settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
-                                                    │
- ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the human, about to open the System Repo's next    ┊
- Plan Step, names it to update (§7, step 1)         ┊
- Look for Lessons (§4 to §6): case not moved,       ┊
- drawn above; the settled snapshot stays c1         ┊
- Deliver (§7): is the Version behind the newest?    ┊
-   no: not behind; nothing is made                  ┊
-   yes: is one of the System Repo's Plan Steps      ┊
-   open?                                            ┊
-     yes: step open; the agent says so, and         ┊
-     makes nothing                                  ┊
-     no: makes the Update. Clear to stage?          ┊
-       no: waits for the word; the agent says       ┊
-       what it found (§7, step 2)                   ┊
-       yes: stages it in the System Repo's temp/    ┊
-                                                    ┊                                         ┄┄┄┄┄ the Update waits in temp/, not yet in force
-                                                    │
- ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ┊                                         ┄┄┄┄┄ at the opening, the Take checks, from the Update Note (§8):
-                                                    ┊                                               main still c1: taken, as drawn in The Take
-                                                    ┊                                               anything else: refused; no Take, and the human names the System Repo to update again
- not behind, or after a Take: the System Repo's     │
- next Plan Step opens (§8)                          │
-```
-
-### Candidate D, a table
-
-| Outcome | What decides it | What happens | Main |
-|---|---|---|---|
-| *not behind* | the System Repo's Version is the newest | no Update; the System Repo's next Plan Step opens on the same Copies | stays; the next Plan Step's branch is cut from it |
-| *step open* | Version behind; one of the System Repo's Plan Steps is open | the agent says so and makes nothing; the step finishes on the old Copies | moves at the open step's gate |
-| *waits for the word* | Update made; the System Repo's tree not clean, or no word yet | the agent says what it found, and waits | stays |
-| *taken* | Update staged; the Take finds main at the *settled snapshot* | the Take, as drawn in *The Take* | moves at the Take's gate |
-| *refused* | Update staged; main has moved since, how is open | no Take; the human names the System Repo to update again, and a new Update replaces the waiting one | moved before the Take |
-
-### Candidate E, nothing new
-
-*The two jobs* draws the job's checks as a chart, and *The Take* draws the Take (`temp/common-ground/system-repo-change-flow.md` §2).
-
-## 4. Verdicts
-
-Predictions, until the reviewer has rendered each.
-
-| | U1 outcomes | U2 start | U3 what moves main | U4 refused Take | U5 what crosses | U6 open marked |
-|---|---|---|---|---|---|---|
-| A, five pictures | yes, one each | yes | yes, each drawn | yes, drawn | yes | yes |
-| B, two pictures and a list | yes | yes | yes, where main moves; the list where it does not | yes, drawn | yes | yes |
-| C, one picture | yes, as branches | yes | in part: no branch drawn for step open or refused | in words | yes | in part |
-| D, a table | yes | no | in words | in words | no | yes, in a word |
-| E, nothing new | yes, in the chart | yes | in part: the Take only | no: the chart's check has no refused case | yes | no |
-| F, old picture 2 | no | no | yes, for its case | yes, from before the check was settled | yes | no: it draws a postponed Take as allowed |
