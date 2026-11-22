@@ -92,10 +92,10 @@ New text of the System Repo's own, on trial, is not a case here. It comes from n
 **Known, not ruled.** These can happen, and have no rules here until practice meets them. Rules once written for them are in git. Each says what can happen, and its trigger:
 
 - **an Attention Note:** a System Repo has something for the Maintainer Repo that no Change carries: a misfit worked around with no Change made, a doubt about a line left as it is, something the System Kit lacked, a Copy no longer used. Its trigger: the first such thing a System Repo needs to tell.
-- **a Change the System Kit does not take:** judged its own, depth a, the Change staying in the System Repo at layer 4; or unsound, misread or held. It stays only in the System Repo's Copy, and the Take takes every Copy whole. Whether the Copy keeps it past the Take is not ruled. Case *Change read* with no Update due after comes back with it (§4, step 1, *Two checks at main*). Its trigger: the first such verdict.
+- **a Change the System Kit does not take:** judged its own, depth a, the Change staying in the System Repo at layer 4; or unsound, misread or held. It stays only in the System Repo's Copy, and the Take takes every Copy whole. Whether the Copy keeps it past the Take is not ruled. Only such a verdict lets a Look for Lessons end in *Change read* with no Update due after (§7, step 1, *When one is due*). Its trigger: the first such verdict.
 - **a verdict sent down:** a verdict the System Repo would act on: unsound, misread, or a proposal that did not hold. In the case simulated every Change is taken, and the Update brings it back with the lesson as its why. A proposal that did not hold is cleared with its Record at the Take, and the human already decided it in Judge. Today's Delivery Note sends every verdict (`docs/conventions/exchange/` §6.5, *Verdicts*). Its trigger: the first Change the System Kit does not take, or a System Repo that needs a verdict it was not sent.
 
-**Other sources.** A Change is one source of the Common Ground Problem. Others exist: a birth, a lesson found in the Maintainer Repo's own work, Knowledge on Trial a System Repo hands over at its close, and new knowledge from the human. They are left on purpose until Change is finished (`TODO.md`, the item on resuming the simulation).
+**Other sources.** A Change is one source of the Common Ground Problem. Others exist: a birth, a lesson found in the Maintainer Repo's own work, Knowledge on Trial a System Repo hands over at its close, and new knowledge from the human. They are left on purpose until Change is finished (`TODO.md`, the item "Define the Change idea", its idea on the sources; the Maintainer Repo's own lesson in the item "Simulate depth c, then bring the Change idea to it").
 
 **Change whole.** The six parts of §1 and the depths of the table above, in one picture. It is a summary: the sections it names hold the facts.
 
@@ -154,7 +154,7 @@ Two steps:
 
   **When it is rewritten.** The Record says the Change as it stands. A later edit rewrites it, and git keeps the old one.
 
-  **The commit.** The Change and its Record go in the same commit. A commit that changes a Copy and not its Record is stopped there. A Take is not a Change, so the check lets its commits pass: one replaces every Copy with the System Kit's and clears every Record. Every Change that lasts passes through a commit. Work never committed is lost, the Change and its Record together.
+  **The commit.** The Change and its Record go in the same commit. A commit that changes a Copy and not its Record is stopped there. A Take is not a Change, so the check lets its commits pass: together they replace every Copy with the System Kit's, and clear every Record. Every Change that lasts passes through a commit. Work never committed is lost, the Change and its Record together.
 
   **Weighed and dropped:** a check at each session's end, comparing the Copies with their Records. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds a Change committed in an earlier session with its Record missing or wrong.
 - **Adapted Case:** the System Repo's, for changing a Copy, itself a Copy. It loads when a Copy is touched. For this step it says:
@@ -345,7 +345,7 @@ Four steps:
 §5 to §8 are simulated first for depth b, the System Kit's Adapted Case changing: the shortest path into the System Kit through every step. Depth c, the idea above changing, at either layer, is then checked against them (§2, the "how deep" rows). Known before it was simulated:
 
 - the four questions decide, in order, the cheapest first, and the System Repo's own view of its Change is input, never the verdict:
-  1. Did the Copy already say this? Then it is a misreading (Failure Case 7). Nothing changes but, perhaps, the Copy's wording.
+  1. Did the Copy already say this? Then it is a misreading (Failure Case 7). Nothing changes but, perhaps, the System Kit's wording.
   2. Is it specific to that System Repo's problem? Then nothing changes here (§2, *Known, not ruled*).
   3. Does the idea above already hold it, the Work Domain Idea above the Adapted Case, or the Backbone Idea above that? Then the Adapted Case it came from lost it in narrowing, and is fixed from the idea above. When only the Backbone Idea holds it, the Work Domain Idea lost it too, and is fixed first.
   4. How high is it true? 4a, still true naming no Adapted Case: a lesson for its Work Domain Idea. 4b, still true naming no Work Domain: a lesson for its Backbone Idea.
@@ -396,11 +396,11 @@ Two steps:
   - a line with no Record: its why is looked for in the System Repo's commits and records, then asked of the human; the line says where its why was found, and is held while neither gives it.
 - **Open:**
   - how question 4 is answered, and by whom. A first guess, not a rule: 4a first, and 4b only if 4a holds. 4a is the cheaper check, inside one Work Domain, and a lesson still true naming no Work Domain is true across its own. Its trigger: depth c is checked against these steps, or the first lesson judged at layer 1;
-  - which other texts are checked for a loss question 3 finds. Nothing comes down the arrow *adapt*, since the idea above did not change (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6). Today's draft checks only the Maintainer Repo's own Adapted Case of the same idea. A first guess: the texts built on the idea that holds the part, as the survey asks (§6, step 1). If several lost it, the idea's wording may be too weak, and is reworded clearer, never narrower. Its trigger: the first depth-d verdict.
+  - which other texts are checked for a loss question 3 finds. Nothing comes down the arrow *adapt*, since the idea above did not change (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6). A first guess: the texts built on the idea that holds the part, as the survey asks (§6, step 1). If several lost it, the idea's wording may be too weak, and is reworded clearer, never narrower. Its trigger: the first depth-d verdict.
 - **Today:**
   - borrowed: the four questions, from the rules on deciding written in the problem file before this simulation. They leave how each is answered, and by whom, open; step 1 answers it for questions 1 to 3;
   - borrowed: a change may be declined as "not worth the change" (`docs/conventions/exchange/` §6.5, *Verdicts*). Question 0 asks it first, for every depth;
-  - changed: the four questions gain question 0, and a line may be split into parts. The rules on deciding have neither;
+  - changed: the four questions gain question 0, and a line may be split into parts. The rules on deciding had neither;
   - borrowed: a verdict that cannot be reached yet is held, with its trigger and a line so it is not lost (`docs/conventions/exchange/` §6.5, *Verdicts*);
   - changed: today a verdict says whether the Concept Deliverer takes a hunk: taken, declined or held (`docs/conventions/exchange/` §6.5). Here it says how deep the Change goes. Depth b is near today's taken: the Change enters the System Kit.
 
@@ -446,7 +446,7 @@ Two steps:
 
 - **What must happen:** from each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth b, the System Kit's Adapted Case gains the lesson, worded for every System Repo, and is committed in the Maintainer Repo: the System Kit stands at a new Version. The System Repo the lesson came from gets it back with the next Update, though its Copy already holds the Change in its own words (§7, step 1). The Reading then goes: nothing in the Update is read from it (§7, step 1, *What it is*). Once the verdicts are acted on here, Act sets the *settled snapshot* to the stop, in the Register (§4, step 2). It does so at every Look for Lessons: with no verdicts, as in cases *not moved* and *no Change*, that is all it does (§4, step 1, *Two checks at main*).
 - **Options,** for depth b:
-  - a. the lesson is reworded for every System Repo, and the System Kit's Adapted Case gains it, its first wording kept beside it;
+  - a. the lesson is reworded for every System Repo, and the System Kit's Adapted Case gains it;
   - b. the Change goes into the System Kit's Adapted Case as the System Repo wrote it;
   - c. the lesson waits until a second System Repo makes the same Change.
 - **Chosen:** a. The others:
@@ -460,9 +460,9 @@ Two steps:
 
   **The survey.** Before a lesson enters the idea above, every other text built on that idea is asked whether it fits, the one the lesson came from excepted (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**; §2.3, *The Adapted Case layer*). At layer 2, that is the other Adapted Cases of that Work Domain Idea, the Maintainer Repo's own only when they share it. At layer 1, it is every Work Domain Idea on that Backbone Idea. It is the arrow *adapt*'s check, run before the idea changes, so a conflict shows first. Each text answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto, and what the survey finds must change, changes. Its answers are also evidence for question 4: if every answer conflicts, the lesson is not true that high.
 
-  A lesson is reworded here, never before: for every System Repo at depth b; at depth c, naming no Adapted Case at layer 2, and no Work Domain at layer 1 (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**). Its first wording is kept beside it, since the rewording is the agent's reading.
+  A lesson is reworded here, never before: for every System Repo at depth b; at depth c, naming no Adapted Case at layer 2, and no Work Domain at layer 1 (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**).
 - **Adapted Case:** the Maintainer Repo's, for judging a Reading. For this step it says:
-  - a lesson for its Adapted Case is reworded for every System Repo, its first wording kept beside it, and the System Kit's Adapted Case gains it;
+  - a lesson for its Adapted Case is reworded for every System Repo, and the System Kit's Adapted Case gains it;
   - the Reading goes once its verdicts are acted on;
   - once the verdicts are acted on, or when there are none, the *settled snapshot* is set to the stop, in the Register.
 - **Open:**
@@ -600,7 +600,7 @@ Two steps:
 - **Adapted Case:** the System Repo's, for taking an Update, itself in the Update and taken first. It loads when the System Repo's next Plan Step opens with an Update waiting. For this step it says:
   - check first that main is still the *settled snapshot*, and take nothing when it differs, saying so;
   - take only at the opening of the System Repo's next Plan Step;
-  - take on a branch of its own: first the Update as it arrived, then the items in the order above, one commit each but item 2, a check, the gate last, checking that the Take finished; main moves by fast-forward at the gate's close;
+  - take on a branch of its own: first the Update as it arrived, then the items in the order above, one commit each but item 2, a check, the gate last, checking that the Take finished; main moves by fast-forward at the gate's close.
 - **Open:**
   - finished work done under a rule the Update changed may now be wrong. New work follows the new Copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Update that changes a rule one of the System Repo's finished Plan Steps followed;
   - postponing a Take after its Update is staged, so the step opens on the old Copies and the Update waits. For now there is no such choice: a staged Update is taken at the opening, unless the Take's check finds main moved (case 2). Once a Take can be postponed, main can move before it, so decide then whether the Maintainer Repo must check main before delivery, and whether main alone is enough: a Plan Step on a branch leaves main where it is. Its trigger: the first staged Update the human does not want taken.
