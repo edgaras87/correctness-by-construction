@@ -376,4 +376,4 @@ An Update when work resumes, the second job, runs when the human names the Syste
    (§7, step 1)                                     │
 ```
 
-**An Update at the newest Version.** An Update is always made at the newest Version. When the Look for Lessons ends in *Change read*, Act may raise the Version first: the Update is then made at that Version, and brings the System Repo's own lesson back. If the System Kit moves after it is made, the Update is still taken, and the next brings the rest (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *A check before delivery*).
+**An Update at the newest Version.** An Update is always made at the newest Version. When the Look for Lessons ends in *Change read*, Act may raise the Version first: the Update is then made at that Version, and brings the System Repo's own lesson back. If the System Kit moves after it is made, the Update is still taken, and the next brings the rest (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *When the System Kit moves on*).
