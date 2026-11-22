@@ -11,7 +11,7 @@
      landed in the rewrite into the layers model, and git keeps every
      version. -->
 
-It uses the simulation's short forms: Change, Record, Copy, Update, Update Note, Take, Version, Reading, Register (`temp/common-ground/system-repo-change-simulation.md`, its table at the top).
+It uses the layers document's short forms: Change, Record, Copy, Update, Update Note, Take, Version, Reading, Register (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 
 ## 1. What the reader must get
 

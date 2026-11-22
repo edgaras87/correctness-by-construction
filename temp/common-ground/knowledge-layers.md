@@ -68,12 +68,19 @@ Its repos, and what travels between them:
 - **Maintainer Repo:** the repo that keeps the understanding and the System Kit, and reads back what each System Repo learns.
 - **System Repo:** a repo where a real system is built by the concept, working from copies of the System Kit.
 - **System Kit:** what the Maintainer Repo keeps for System Repos to work from, shared by the System Repos it serves; what it holds is listed below. Its originals stay in the Maintainer Repo, beside the Work Domain Ideas they are adapted from; each System Repo works from copies, and takes the System Kit's changes by a System Kit Update.
-- **System Kit Version:** the System Kit as it stood at one Maintainer Repo commit. Each System Repo records the one its System Kit Copies came from.
-- **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo. The picture shortens it to Copy.
-- **System Kit Copy Change:** a System Repo's change to a System Kit Copy, made against the System Kit Version that copy came from. The picture shortens it to Change.
-- **System Kit Update:** what the Maintainer Repo sends a System Repo: a copy of every System Kit file at one System Kit Version, with its System Kit Update Note. The picture shortens it to Update.
+- **System Kit Version:** the System Kit as it stood at one Maintainer Repo commit. Each System Repo records the one its System Kit Copies came from. This document shortens it to Version.
+- **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo. This document shortens it to Copy.
+- **System Kit Copy Change:** a System Repo's change to a System Kit Copy, made against the System Kit Version that copy came from. This document shortens it to Change.
+- **System Kit Copy Change Record:** what a System Repo writes with each System Kit Copy Change, saying what changed and why. What it holds and where it sits are the simulation's (`temp/common-ground/system-repo-change-simulation.md` §3, *Change*, step 1). This document shortens it to Record.
+- **System Kit Attention Note:** what a System Repo writes for the Maintainer Repo to look at in the System Kit, when no System Kit Copy Change carries it. This document shortens it to Attention Note.
+- **Maintainer Repo Register:** the Maintainer Repo's list of its System Repos: where each lives, and its *settled snapshot*, the System Repo's snapshot up to which the Maintainer Repo has read, judged and acted on. The *settled snapshot* holds the System Kit Version the System Repo had then, which may be behind the newest. This document shortens it to Register.
+- **Look for Lessons:** the Maintainer Repo taking one System Repo's work since its *settled snapshot* into account: read, judged and acted on. How it runs is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §1, *How it is worked*).
+- **System Repo Reading:** the draft that lists the System Kit Copy Changes one Look for Lessons found in a System Repo, nothing judged. With none found, none is written. This document shortens it to Reading.
+- **System Kit Update:** what the Maintainer Repo sends a System Repo: a copy of every System Kit file at one System Kit Version, with its System Kit Update Note. This document shortens it to Update.
+- **System Kit Update Note:** what the Maintainer Repo writes with a System Kit Update, for the System Repo that takes it. This document shortens it to Update Note.
+- **System Kit Update Take:** a System Repo taking a System Kit Update into its System Kit Copies. How it runs is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §8, *Take*). Its *version snapshot* is the System Repo's commit where the System Kit Update Take put every System Kit Copy at the new System Kit Version, its hash written beside that System Kit Version. This document shortens it to Take.
 
-Its other Defined Terms are the general document's, or the Common Ground Problem's (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
+An *italic* word is a label inside the Defined Term it belongs to. Its other Defined Terms are the general document's, or the Common Ground Problem's (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
 The System Kit is not a layer. It is what is copied to each System Repo, the picture's dashed frame. Each of its parts is an Adapted Case of layer 3: an Adapted Understanding Text with its Instruction Text (§2.3). A part that has only one of the two is open (§4, question 7). So far it holds:
 

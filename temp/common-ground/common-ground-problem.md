@@ -42,25 +42,25 @@ Defined Terms, in alphabetical order:
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
 - **Knowledge on Trial:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §3.1, *How the layers fill*).
 - **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
-- **Look for Lessons:** the Maintainer Repo taking one System Repo's work since its *settled snapshot* into account: read, judged and acted on. How it runs is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §1, *How it is worked*).
+- **Look for Lessons:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **Maintainer Repo:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **Maintainer Repo Register:** the Maintainer Repo's list of its System Repos: where each lives, and its *settled snapshot*.
+- **Maintainer Repo Register:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
 - **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
 - **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
 - **System Kit:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Attention Note:** what a System Repo writes for the Maintainer Repo to look at in the System Kit, when no System Kit Copy Change carries it.
+- **System Kit Attention Note:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Kit Copy:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Kit Copy Change:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Copy Change Record:** what a System Repo writes with each System Kit Copy Change, saying what changed and why. What it holds and where it sits are the simulation's (`temp/common-ground/system-repo-change-simulation.md` §3, *Change*, step 1).
+- **System Kit Copy Change Record:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Kit Update:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Update Note:** what the Maintainer Repo writes with a System Kit Update, for the System Repo that takes it.
-- **System Kit Update Take:** a System Repo taking a System Kit Update into its System Kit Copies. How it runs is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §8, *Take*).
+- **System Kit Update Note:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
+- **System Kit Update Take:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Kit Version:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Repo:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Repo Reading:** the draft that lists the System Kit Copy Changes one Look for Lessons found in a System Repo, nothing judged. With none found, none is written.
+- **System Repo Reading:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
 - **Understanding Text:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*).
@@ -75,8 +75,6 @@ Labels:
 - *where*: *the Maintainer Repo*, *a System Repo*; a Failure Case is *either* or *between*
 - *layer*: *layer 1* to *layer 4*
 - Text Life Phase: *writing*, *aging*, *reading*
-- Maintainer Repo Register: *settled snapshot*, the System Repo's snapshot up to which the Maintainer Repo has read, judged and acted on. It holds the System Kit Version the System Repo had then, which may be behind the newest.
-- System Kit Update Take: *version snapshot*, the System Repo's commit where the System Kit Update Take put every System Kit Copy at the new System Kit Version, its hash written beside that System Kit Version.
 
 ## 1. The purpose
 
@@ -186,6 +184,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | System Kit Attention Note | a CBC Run Ask with no edit behind it, such as a question (`docs/conventions/exchange/` §5.1, *When a copy may be edited*) |
 | System Kit Update | a delivery |
 | System Kit Update Note | the Delivery Note |
+| System Kit Update Take | a Delivery Take (`docs/conventions/exchange/` §4, *The Delivery Take*) |
 | System Kit Version | the Delivery Pin: the Concept Deliverer's commit a CBC Run's copies equal |
 | Instruction Text | a Work Approach: an Agent Skill, an Agent Rule, an Approach on Trial or an Output Form; also the Glossary Names, and the forms records start from. Which of the three sorts an Output Form is, is open |
 | Task Instruction Text | an Agent Skill |
@@ -199,6 +198,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | One Home per Fact | the facts-in-sync convention, and the one-home Agent Rule |
 | Knowledge Drift Repair | the Foundation Check and its Change Walk at each commit; the refinement's reads of the whole repo |
 | System Repo Reading | a CBC Run Reading |
+| Look for Lessons | a CBC Run Reading, the reading with its verdicts acted on |
 | birth of a System Repo | a CBC Run Birth |
 
 ## 3. The Knowledge Axes
