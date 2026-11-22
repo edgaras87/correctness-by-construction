@@ -91,15 +91,19 @@
         and Knowledge on Trial handed back; birth stays outside, as
         the start;
       - the flow drawing needs no change for the layers model;
+      - the problem file's stale lines, found by the check on
+        2026-11-22, fixed with the move: Maintainer Repo item 5
+        names Judge's Adapted Case by an old name; item 6 says a
+        System Repo gets the System Kit's changes and judges each
+        against its Copy; §2.2's table has no row for Look for
+        Lessons or System Kit Update Take;
       - the other six rows of the simulation's §2 table move as not
         yet checked, each checked when practice first meets it.
-      Trigger: due now, in three steps: the simulation read whole
-      against itself; every line of the problem file about Change
-      compared with the simulation, each stale line fixed with the
-      move; then one home for each fact across the drafts, the
-      facts of Change moved out of the simulation among them,
-      written from depth b, with what depth c leaves undecided
-      marked as not yet done.
+      Trigger: due now, the simulation and the problem file checked
+      (`2b9477a5`, and the idea above): one home for each fact
+      across the drafts, the facts of Change moved out of the
+      simulation among them, written from depth b, with what depth
+      c leaves undecided marked as not yet done.
       See: devlog 2026-11-18, the Change idea's design talk;
       `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
