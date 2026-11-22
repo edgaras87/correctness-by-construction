@@ -36,7 +36,7 @@ Each drawing is checked against these.
 
 ### The two jobs
 
-What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A Look for Lessons runs when the human names a System Repo for its lessons, and ends once Act is done (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). A Kit Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the Look for Lessons runs first, then the check in Deliver the Kit Update (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*). A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). Each step names its section of the simulation.
+What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A Look for Lessons runs when the human names a System Repo for its lessons, and ends once Act is done (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). A Kit Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the Look for Lessons runs first, then the check in Deliver the Kit Update (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*). A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). Each step names its section of the simulation.
 
 ```mermaid
 flowchart TD
@@ -228,7 +228,7 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
 
 ### The update job's outcomes
 
-A Kit Update when work resumes, the second job, runs when the human names the System Repo to update, and starts with a Look for Lessons (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*). It ends in one of four outcomes: *not behind*, *step open*, *taken* and *refused*. Before staging, it may pause for the human's word or a clean tree (`temp/common-ground/system-repo-change-simulation.md` §7, step 2, *Before staging*); *taken* draws the pause. Each outcome is drawn on its own, split into before, now and after; *refused* adds a band for main moving before the Update Take, and one for the Update Take's check. The example: Kit Version 1 in the System Repo, Kit Version 2 the newest; the Look for Lessons ends in case *not moved*, drawn above. The Update Take is drawn once, in *The Update Take*, and *taken* points at it.
+A Kit Update when work resumes, the second job, runs when the human names the System Repo to update, and starts with a Look for Lessons (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*). It ends in one of four outcomes: *not behind*, *step open*, *taken* and *refused*. Before staging, it may pause for the human's word or a clean tree (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*); *taken* draws the pause. Each outcome is drawn on its own, split into before, now and after; *refused* adds a band for main moving before the Update Take, and one for the Update Take's check. The example: Kit Version 1 in the System Repo, Kit Version 2 the newest; the Look for Lessons ends in case *not moved*, drawn above. The Update Take is drawn once, in *The Update Take*, and *taken* points at it.
 
 #### *not behind*
 
