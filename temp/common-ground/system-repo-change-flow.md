@@ -19,9 +19,9 @@ Each drawing is checked against these.
 
 1. **R1, the order:** every step of one round, from a Change to the System Repo's next Plan Step opening.
 2. **R2, the repo:** which repo each step happens in.
-3. **R3, what crosses:** a Reading only reads the System Repo, and writes nothing there. An Update is written only into the System Repo's `temp/`.
+3. **R3, what crosses:** a Look for Lessons only reads the System Repo, and writes nothing there. An Update is written only into the System Repo's `temp/`.
 4. **R4, where main moves:** each place main moves.
-5. **R5, what a Reading compares:** the two snapshots each Reading compares.
+5. **R5, what a Look for Lessons compares:** the two snapshots each one compares.
 6. **R6, what is open:** each part not decided is marked open, and nothing decides it.
 
 ## 2. Now
@@ -30,25 +30,25 @@ Each drawing is checked against these.
 
 - **commits:** imaginary commits of the System Repo, oldest first, top to bottom.
 - **main, branches:** a step's or a Take's branch is cut from main, to its right. At its gate's close, main moves to the branch's last commit by fast-forward: a commit named again on main is no new commit.
-- **Maintainer Repo:** a bracket joins the two snapshots a Reading compares: its top is the older, the *settled snapshot* or, after a Take, the *version snapshot*, and its bottom is the stop. The commits between are history, opened only to understand something deeper. A Reading writes nothing in the System Repo. A bracket closes when the verdicts are acted on, and its stop becomes the *settled snapshot*. The *settled snapshot* is not a Take. The Maintainer Repo's parts stand between the commits, since it makes none.
+- **Maintainer Repo:** a bracket joins the two snapshots a Look for Lessons compares: its top is the older, the *settled snapshot* or, after a Take, the *version snapshot*, and its bottom is the stop. The commits between are history, opened only to understand something deeper. A Look for Lessons writes nothing in the System Repo. A bracket closes when the verdicts are acted on, and its stop becomes the *settled snapshot*. The *settled snapshot* is not a Take. The Maintainer Repo's parts stand between the commits, since it makes none.
 - **System Repo:** its parts, each pointing at the commit it acts on.
 - **┊:** no commit.
 
 ### The two jobs
 
-What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A look for lessons runs when the human names the System Repo to read, and ends once Act is done (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). An Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the look runs first, then Deliver's check (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*). A look ends in one of three cases: *not moved*, *no Change* and *Change read* (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each step names its section of the simulation.
+What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A Look for Lessons runs when the human names a System Repo for its lessons, and ends once Act is done (`temp/common-ground/system-repo-change-simulation.md` §1, *How it is worked*). An Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the Look for Lessons runs first, then Deliver's check (`temp/common-ground/system-repo-change-simulation.md` §7, step 1, *When one is due*). A Look for Lessons ends in one of three cases: *not moved*, *no Change* and *Change read* (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *Two checks at main*). Each step names its section of the simulation.
 
 ```mermaid
 flowchart TD
-  read(["the human names a System Repo to read"]) --> c1
+  read(["the human names a System Repo for its lessons"]) --> c1
   upd(["about to open the System Repo's next Plan Step, the human names it to update"]) --> c1
-  subgraph lessons ["A look for lessons"]
+  subgraph lessons ["A Look for Lessons"]
     c1{"main moved past the settled snapshot?"}
-    c1 -- no --> A["not moved: nothing to read"]
+    c1 -- no --> A["not moved: nothing new"]
     c1 -- yes --> c2{"a Copy changed?"}
     c2 -- no --> C["no Change: an empty list; no Reading written; Act sets the settled snapshot to main"]
-    c2 -- yes --> D["Change read: read, list, judge, act (§4 to §6); the Reading goes"]
-    A --> done(["the look ends"])
+    c2 -- yes --> D["Change read: compare, list, judge, act (§4 to §6); the Reading goes"]
+    A --> done(["the Look for Lessons ends"])
     C --> done
     D --> done
   end
@@ -90,8 +90,8 @@ The System Repo takes an Update at the opening of the System Repo's next Plan St
                                                     │            │
                                                     │         c3 ●  the new Adapted Case      ◀──── item 1: for taking, at Version 2, put in first; it runs the rest
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
- c4, the version snapshot: the next look            │         c4 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole, each path gone removed, each renamed moved; every Record cleared
- compares from here                                 │            │
+ c4, the version snapshot: the next                 │         c4 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole, each path gone removed, each renamed moved; every Record cleared
+ Look for Lessons compares from here                │            │
                                                     │         c5 ●  Version 2 recorded        ◀──── item 4: with the commit that holds it, c4; open: where in the System Repo Version 2 and c4 are written (§8, Open)
                                                     │            │
                                                     │         c6 ●  the Update removed        ◀──── item 5: the Update and the Update Note leave temp/
@@ -106,9 +106,9 @@ The System Repo takes an Update at the opening of the System Repo's next Plan St
                                                               c8 ●  work, on Version 2
 ```
 
-### A look's cases
+### The Look for Lessons' cases
 
-A look at main makes two checks, and with Deliver's check, whether an Update is due, ends in one of five cases: A, B, C1, C2 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read Changes, with the look and its case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. The examples are pure, as the simulation is: every Change is taken into the System Kit (`temp/common-ground/system-repo-change-simulation.md` §2, *Known, not ruled*). Above each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
+A Look for Lessons makes two checks at main, and with Deliver's check, whether an Update is due, ends in one of five cases: A, B, C1, C2 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *Two checks at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read Changes, with the two checks and their case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. The examples are pure, as the simulation is: every Change is taken into the System Kit (`temp/common-ground/system-repo-change-simulation.md` §2, *Known, not ruled*). Above each picture, a table gives that example's answers to the two checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
 
 #### Case A, nothing follows
 
@@ -129,7 +129,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
  human has the Maintainer Repo look at it           ┊
  (§8, Before the Take):                             ┊
  Read Changes (§4):                                 ┊
-   the look at main (§4, step 1):                   ┊
+   the two checks at main (§4, step 1):             ┊
    check 1: main is c1, the settled snapshot.       ┊
    Main has not moved: nothing to read              ┊
    gives: the stop, c1, and an empty list           ┊
@@ -146,7 +146,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     └─ cut ──────┐                            ◀──── step 2 opens on Version 1
                                                                  │
-                                                             c2 ●  work, on Version 1         ◀──── it reaches main at its gate; the next look sees it
+                                                             c2 ●  work, on Version 1         ◀──── it reaches main at its gate; the next Look for Lessons sees it
 ```
 
 #### Case B, an Update follows
@@ -168,7 +168,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
  human has the Maintainer Repo look at it           ┊
  (§8, Before the Take):                             ┊
  Read Changes (§4):                                 ┊
-   the look at main (§4, step 1):                   ┊
+   the two checks at main (§4, step 1):             ┊
    check 1: main is c1, the settled snapshot.       ┊
    Main has not moved: nothing to read              ┊
    gives: the stop, c1, and an empty list           ┊
@@ -225,7 +225,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
  human has the Maintainer Repo look at it           ┊
  (§8, Before the Take):                             ┊
  Read Changes (§4):                                 ┊
-   the look at main (§4, step 1):                   ┊
+   the two checks at main (§4, step 1):             ┊
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
    check 2: c1 against c3: no Copy changed:         ┊
@@ -243,7 +243,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     └─ cut ──────┐                            ◀──── step 2 opens on Version 1
                                                                  │
-                                                              c4 ●  work, on Version 1        ◀──── the next look compares c3, the settled snapshot, with main
+                                                              c4 ●  work, on Version 1        ◀──── the next Look for Lessons compares c3, the settled snapshot, with main
 ```
 
 #### Case C2, an Update follows
@@ -273,7 +273,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
  human has the Maintainer Repo look at it           ┊
  (§8, Before the Take):                             ┊
  Read Changes (§4):                                 ┊
-   the look at main (§4, step 1):                   ┊
+   the two checks at main (§4, step 1):             ┊
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
    check 2: c1 against c3: no Copy changed:         ┊
@@ -333,7 +333,7 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
  human has the Maintainer Repo look at it           ┊
  (§8, Before the Take):                             ┊
  Read Changes (§4):                                 ┊
-   the look at main (§4, step 1):                   ┊
+   the two checks at main (§4, step 1):             ┊
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
    check 2: c1 against c3: a Copy changed           ┊
@@ -363,8 +363,8 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
                                                     │            │
                                                     │         c5 ●  the new Adapted Case      ◀──── item 1: for taking, at Version 2, put in first
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
- c6, the version snapshot: the next look            │         c6 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared, c2's among them
- compares from here                                 │            │
+ c6, the version snapshot: the next                 │         c6 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared, c2's among them
+ Look for Lessons compares from here                │            │
                                                     │         c7 ●  Version 2 recorded        ◀──── item 4: with the commit that holds it, c6
                                                     │            │
                                                     │         c8 ●  the Update removed        ◀──── item 5: the Update and the Update Note leave temp/
@@ -375,5 +375,5 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
                                                     │
                                                     └─ cut ──────┐                            ◀──── step 2 opens on Version 2
                                                                  │
-                                                             c10 ●  work, on Version 2        ◀──── the next look compares c6, the version snapshot, with main
+                                                             c10 ●  work, on Version 2        ◀──── the next Look for Lessons compares c6, the version snapshot, with main
 ```

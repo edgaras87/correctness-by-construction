@@ -42,6 +42,7 @@ Defined Terms, in alphabetical order:
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
 - **Knowledge on Trial:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §3.1, *How the layers fill*).
 - **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
+- **Look for Lessons:** the Maintainer Repo taking one System Repo's work since its *settled snapshot* into account: read, judged and acted on. How it runs is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §1, *How it is worked*).
 - **Maintainer Repo:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **Maintainer Repo Register:** the Maintainer Repo's list of its System Repos: where each lives, and its *settled snapshot*.
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
@@ -59,7 +60,7 @@ Defined Terms, in alphabetical order:
 - **System Kit Update Take:** a System Repo taking a System Kit Update into its System Kit Copies. How it runs is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §8, *Take*).
 - **System Kit Version:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **System Repo:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Repo Reading:** the Maintainer Repo reading one System Repo since it last read it, and the draft that lists what it found.
+- **System Repo Reading:** the draft that lists the System Kit Copy Changes one Look for Lessons found in a System Repo, nothing judged. With none found, none is written.
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
 - **Understanding Text:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*).
