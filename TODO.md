@@ -97,6 +97,10 @@
         System Repo gets the System Kit's changes and judges each
         against its Copy; §2.2's table has no row for Look for
         Lessons or System Kit Update Take;
+      - "every Record cleared", in the simulation's §8, *At the
+        Take, in order*, item 3, follows from taking each Copy
+        whole, and is no act of its own; it can be worded so in the
+        final home;
       - the other six rows of the simulation's §2 table move as not
         yet checked, each checked when practice first meets it.
       Trigger: due now, the simulation and the problem file checked
