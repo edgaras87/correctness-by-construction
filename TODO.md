@@ -44,10 +44,13 @@
       `temp/common-ground/knowledge-layers.md`. It is the minimum
       written where how to keep knowledge is not yet known, a trial:
       practice changes it, and the ideas around it, such as Change.
-      Each document's §4 holds its open questions.
+      Each document's §4 holds its open questions. The layers
+      document's §3.2 holds the open points of how a change travels,
+      each beside its part's rules, with its trigger.
       Ideas:
-      - the change work: the simulation of a System Repo's change,
-        which holds its rules, pointing at the model;
+      - the change work: its rules in the layers document's §3.2,
+        how each was chosen in the simulation; depth c next (its
+        item);
       - a piece of work modeled at each layer, in a document of its
         own, starting from `cbc-concept/ideas/`, to see how ideas are
         kept at each layer;
@@ -56,40 +59,6 @@
         it holds has landed, or has been judged not needed (ADR-0082).
       Trigger: due now.
       See: `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
-
-- [ ] Define the Change idea: how a change travels between the
-      repos, in either direction, a Work Domain Idea with one home
-      (2026-11-18, the reviewer).
-      Context: Change is written once, in the simulation, which
-      judges by the layers model; the problem file's §2.1 and the
-      layers document's §3 point there (`d55d58a`..`73f1d87`). The
-      change flow is done for one case, one Adapted Case at depth b,
-      simulated from Change a Kit Copy to Take the Kit Update and pictured in
-      `temp/common-ground/system-repo-change-flow.md`. Depth c is not
-      yet simulated. The problem file's run stopped part-way for it
-      (`73c37b3`).
-      Ideas:
-      - the final home, a first draft: a section of the layers
-        document, its §3.2 grown and retitled *How a change
-        travels*; the simulation's rules written out there, its
-        options, reasons and *Today* fields staying in the
-        simulation, which points there; the problem file's seven
-        travel terms and two labels move to the layers document's
-        §2 list, beside its four, eleven in all, and leave pointer
-        entries; its Repo Responsibility lists and §2.2 table stay,
-        re-pointed;
-      - a document of its own needs the general document's §2.2
-        rule, each adaptation "changed alone", narrowed to variants
-        first, and a rule that a Work Domain Idea may stand on
-        another;
-      - the flow drawing needs no change for the layers model.
-      Trigger: due now, the simulation and the problem file checked
-      (`2b9477a5`, and the idea above): one home for each fact
-      across the drafts, the facts of Change moved out of the
-      simulation among them, written from depth b, with what depth
-      c leaves undecided marked as not yet done.
-      See: devlog 2026-11-18, the Change idea's design talk;
-      `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
 - [ ] Simulate depth c, then bring the Change idea to it
       (2026-11-22, the reviewer).
@@ -110,25 +79,25 @@
         too; what the Update Note's why says; at layer 1, how far
         down the survey reaches (`temp/common-ground/knowledge-layers.md`
         §3.2.4, *Act on the verdicts*, its *Open*).
-      Trigger: the Change idea written from depth b (the item
-      "Define the Change idea").
+      Trigger: due now, the Change idea written from depth b in the
+      layers document's §3.2.
       See: devlog 2026-11-22, the depth c item.
 
 - [ ] Do the problem file's next pass: §6 and §8, Failure Case 15,
       the rest of the "project-agnostic" sweep, and §2.2's "middle
       level" (2026-11-22, the reviewer).
       Context: found on 2026-11-18, and written since only in the
-      devlog. The Change idea's move rewrites the problem file's
-      §2.1 and its Defined Terms, so the pass waits for it, and each
-      line changes once. Each fault is checked again when due.
+      devlog. The Change idea's move rewrote the problem file's §2.1
+      and its Defined Terms first, so each line changes once. Each
+      fault is checked again now it is due.
       Ideas:
       - the problem file's answers that belong in the layers
         document move there: §2.1's table of the two groups of
         understanding; the lines of the Repo Responsibility lists
         that retell the layers document; §8's middle-level option,
         which the layers model answers.
-      Trigger: the Change idea written from depth b (the item
-      "Define the Change idea").
+      Trigger: due now, the Change idea written in the layers
+      document's §3.2.
       See: devlog 2026-11-18, later, *Found, not fixed*, item 5.
 
 - [ ] Decide what becomes of the branch `experiment-simulation-auto`
@@ -158,8 +127,8 @@
         Backbone Idea; the Maintainer Repo's part, the Repo
         Responsibility, §2.2 and the Failure Cases between repos,
         its adaptation.
-      Trigger: the Change idea defined, since its rules leave the
-      problem file's §2.1.
+      Trigger: due now, the Change idea defined: its rules have left
+      the problem file's §2.1.
       See: ADR-0082; `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what
       we know true*, in git at `60f692d`.
 
@@ -229,8 +198,8 @@
       *Read Copy Changes*). "Runs from … to main" and "across that span"
       read as a walk in the problem file's rules on reading, cut on
       2026-11-19; the same words may stand in other drafts.
-      Trigger: the facts of Change moved to their final home, so the
-      sweep reads the final text.
+      Trigger: due now, the facts of Change in their final home, the
+      layers document's §3.2, so the sweep reads the final text.
 
 - [ ] Design how a document is refined: a broad Adapted Case, an
       Output Shape read after the work, and how each corrects the
