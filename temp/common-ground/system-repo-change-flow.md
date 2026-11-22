@@ -68,7 +68,7 @@ flowchart TD
 
 ### The Take
 
-The System Repo takes an Update at the opening of the System Repo's next Plan Step, on a branch of its own (`temp/common-ground/system-repo-change-simulation.md` §8, step 1). It is drawn once, here; each case that ends in an Update points at it. "Item" names an item of §8's *At the Take, in order*.
+The System Repo takes an Update at the opening of the System Repo's next Plan Step, on a branch of its own (`temp/common-ground/system-repo-change-simulation.md` §8, step 1). It is drawn once, here, where the update job ends (*The two jobs*, above). "Item" names an item of §8's *At the Take, in order*.
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -108,272 +108,120 @@ The System Repo takes an Update at the opening of the System Repo's next Plan St
 
 ### The Look for Lessons' cases
 
-A Look for Lessons makes two checks at main, and with Deliver's check, whether an Update is due, ends in one of five cases: A, B, C1, C2 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *Two checks at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read Changes, with the two checks and their case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. The examples are pure, as the simulation is: every Change is taken into the System Kit (`temp/common-ground/system-repo-change-simulation.md` §2, *Known, not ruled*). Above each picture, a table gives that example's answers to the two checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
+A Look for Lessons ends in one of three cases: *not moved*, *no Change* and *Change read* (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *Two checks at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Before holds the System Repo's commits since the *settled snapshot*. Now holds the Maintainer Repo's parts, in the simulation's order: Read Changes, with the two checks, Judge, and Act on the verdicts. After holds the new *settled snapshot*; what may follow is listed once, below the pictures. Deliver and the Take are outside the Look for Lessons: *The two jobs* draws when they follow, and *The Take* draws the Take. The examples are pure, as the simulation is: every Change is taken into the System Kit (`temp/common-ground/system-repo-change-simulation.md` §2, *Known, not ruled*). Above each picture, a table gives that example's answers to the two checks; check 2 is asked only when main moved, so *not moved* shows "—". What defines each case is the simulation's table.
 
-#### Case A, nothing follows
+#### Case *not moved*
 
-| Main moved | Copy changed | Version behind | What follows |
-|---|---|---|---|
-| no | — | no | nothing |
+| Main moved | Copy changed |
+|---|---|
+| no | — |
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- read and acted on                            ┌  c0 ●  earlier steps and Takes                ◀──── history
-                                              │     │
- settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
+ taken into account by                        ┌  c0 ●  earlier Plan Steps and Takes           ◀──── history
+ earlier Looks for Lessons                    │     │
+ settled snapshot: the last stop           ─▶ └  c1 ●  the last gate closed                   ◀──── no Plan Step has closed since
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- before the System Repo's next Plan Step, the       ┊
- human has the Maintainer Repo look at it           ┊
- (§8, Before the Take):                             ┊
- Read Changes (§4):                                 ┊
-   the two checks at main (§4, step 1):             ┊
-   check 1: main is c1, the settled snapshot.       ┊
-   Main has not moved: nothing to read              ┊
-   gives: the stop, c1, and an empty list           ┊
- Judge (§5): gives no verdicts                      ┊
- Act on the verdicts (§6): nothing to act on;       ┊
-   the settled snapshot set to the stop, c1,        ┊
-   as it was                                        ┊
- Deliver (§7):                                      ┊
-   is an Update due? The Version is the             ┊
-   newest: case A.                                  ┊
-   What follows: nothing                            ┊
-   none, nothing to send                            ┊
+ the human names the System Repo, for its           ┊
+ lessons or to update it (§1)                       ┊
+ Read Changes (§4): the stop is main, c1            ┊
+   check 1: main is c1, the settled snapshot:       ┊
+   not moved, nothing new                           ┊
+ Judge (§5): nothing to judge                       ┊
+ Act on the verdicts (§6): the settled              ┊
+   snapshot set to the stop, c1, as it was          ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    └─ cut ──────┐                            ◀──── step 2 opens on Version 1
-                                                                 │
-                                                             c2 ●  work, on Version 1         ◀──── it reaches main at its gate; the next Look for Lessons sees it
+ settled snapshot: c1                       ─▶   c1 ●
+ what may follow: the list below the pictures
 ```
 
-#### Case B, an Update follows
+#### Case *no Change*
 
-| Main moved | Copy changed | Version behind | What follows |
-|---|---|---|---|
-| no | — | yes | an Update |
+| Main moved | Copy changed |
+|---|---|
+| yes | no |
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- read and acted on                            ┌  c0 ●  earlier steps and Takes                ◀──── history
-                                              │     │
- settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
+ taken into account by                        ┌  c0 ●  earlier Plan Steps and Takes           ◀──── history
+ earlier Looks for Lessons                    │     │
+ settled snapshot: the last stop           ─▶ └  c1 ●  the last gate closed
                                                     │
- ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- before the System Repo's next Plan Step, the       ┊
- human has the Maintainer Repo look at it           ┊
- (§8, Before the Take):                             ┊
- Read Changes (§4):                                 ┊
-   the two checks at main (§4, step 1):             ┊
-   check 1: main is c1, the settled snapshot.       ┊
-   Main has not moved: nothing to read              ┊
-   gives: the stop, c1, and an empty list           ┊
- Judge (§5): gives no verdicts                      ┊
- Act on the verdicts (§6): nothing to act on;       ┊
-   the settled snapshot set to the stop, c1,        ┊
-   as it was                                        ┊
- Deliver (§7):                                      ┊
-   is an Update due? The Version is 1, and          ┊
-   the newest is 2: case B. What follows:           ┊
-   an Update is made and delivered                  ┊
-   makes the Update: every Copy at Version 2,       ┊
-   and an Update Note for Copies at Version 1       ┊
-   stages it in the System Repo's temp/             ┊
-                                                    │
- ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c1, the settled snapshot
-                                                    │            │
-                                                    │         c2 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
-                                                    │            │                            ◀──── c3 to c6, not drawn
-                                                    │         c7 ●  the gate closes           ◀──── the Take's gate checks that the Take finished, and closes
-                                                    │            │
-                                                 c7 ● ◀──────────┘                            ◀──── main moves to c7 by fast-forward, at the gate's close
-                                                    │
-                                                    └─ cut ──────┐                            ◀──── step 2 opens on Version 2
-                                                                 │
-                                                              c8 ●  work, on Version 2
-```
-
-#### Case C1, nothing to read
-
-| Main moved | Copy changed | Version behind | What follows |
-|---|---|---|---|
-| yes | no | no | the settled snapshot moves up to main; nothing else |
-
-```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
- ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- read and acted on                            ┌  c0 ●  earlier steps and Takes                ◀──── history
-                                              │     │
- settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
-                                                    │
-                                                    ├─ cut ──────┐                            ◀──── step 1 opens on Version 1
+                                                    ├─ cut ──────┐                            ◀──── one of the System Repo's Plan Steps opens
                                                     │            │
                                                     │         c2 ●  work, no Copy changed
                                                     │            │
-                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): no Change to decide; it closes
+                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): no Change to decide
                                                     │            │
-                                                 c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
+                                                 c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- before the System Repo's next Plan Step, the       ┊
- human has the Maintainer Repo look at it           ┊
- (§8, Before the Take):                             ┊
- Read Changes (§4):                                 ┊
-   the two checks at main (§4, step 1):             ┊
-   check 1: main is c3, past the settled            ┊
-   snapshot, c1. Main has moved                     ┊
+ the human names the System Repo, for its           ┊
+ lessons or to update it (§1)                       ┊
+ Read Changes (§4): the stop is main, c3            ┊
+   check 1: main is c3, past c1: moved              ┊
    check 2: c1 against c3: no Copy changed:         ┊
-   nothing to read                                  ┊
-   gives: the stop, c3, and an empty list           ┊
- Judge (§5): gives no verdicts                      ┊
- Act on the verdicts (§6): nothing to act on;       ┊
-   the settled snapshot set to the stop, c3         ┊
- Deliver (§7):                                      ┊
-   is an Update due? The Version is the             ┊
-   newest: case C1.                                 ┊
-   What follows: nothing else                       ┊
-   none, nothing to send                            ┊
+   no Change; no Reading written                    ┊
+ Judge (§5): nothing to judge                       ┊
+ Act on the verdicts (§6): the settled              ┊
+   snapshot set to the stop, c3                     ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    └─ cut ──────┐                            ◀──── step 2 opens on Version 1
-                                                                 │
-                                                              c4 ●  work, on Version 1        ◀──── the next Look for Lessons compares c3, the settled snapshot, with main
+ settled snapshot: c3                       ─▶   c3 ●
+ what may follow: the list below the pictures
 ```
 
-#### Case C2, an Update follows
+#### Case *Change read*
 
-| Main moved | Copy changed | Version behind | What follows |
-|---|---|---|---|
-| yes | no | yes | the settled snapshot moves up to main; an Update |
+| Main moved | Copy changed |
+|---|---|
+| yes | yes |
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
  ───────────────                                   ────      ────────                               ───────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- read and acted on                            ┌  c0 ●  earlier steps and Takes                ◀──── history
-                                              │     │
- settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
+ taken into account by                        ┌  c0 ●  earlier Plan Steps and Takes           ◀──── history
+ earlier Looks for Lessons                    │     │
+ settled snapshot: the last stop           ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
                                                     │
-                                                    ├─ cut ──────┐                            ◀──── step 1 opens on Version 1
-                                                    │            │
-                                                    │         c2 ●  work, no Copy changed
-                                                    │            │
-                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): no Change to decide; it closes
-                                                    │            │
-                                                 c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
-                                                    │
- ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- before the System Repo's next Plan Step, the       ┊
- human has the Maintainer Repo look at it           ┊
- (§8, Before the Take):                             ┊
- Read Changes (§4):                                 ┊
-   the two checks at main (§4, step 1):             ┊
-   check 1: main is c3, past the settled            ┊
-   snapshot, c1. Main has moved                     ┊
-   check 2: c1 against c3: no Copy changed:         ┊
-   nothing to read                                  ┊
-   gives: the stop, c3, and an empty list           ┊
- Judge (§5): gives no verdicts                      ┊
- Act on the verdicts (§6): nothing to act on;       ┊
-   the settled snapshot set to the stop, c3         ┊
- Deliver (§7):                                      ┊
-   is an Update due? The Version is 1, and          ┊
-   the newest is 2: case C2. What follows:          ┊
-   an Update is made and delivered                  ┊
-   makes the Update: every Copy at Version 2,       ┊
-   and an Update Note for Copies at Version 1       ┊
-   stages it in the System Repo's temp/             ┊
-                                                    │
- ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot
-                                                    │            │
-                                                    │         c4 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take, above
-                                                    │            │                            ◀──── c5 to c8, not drawn
-                                                    │         c9 ●  the gate closes           ◀──── the Take's gate checks that the Take finished, and closes
-                                                    │            │
-                                                 c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
-                                                    │
-                                                    └─ cut ──────┐                            ◀──── step 2 opens on Version 2
-                                                                 │
-                                                             c10 ●  work, on Version 2
-```
-
-#### Case D2, an Update follows
-
-| Main moved | Copy changed | Version behind | What follows |
-|---|---|---|---|
-| yes | yes | yes, after acting | the Reading; an Update |
-
-The example's Update brings back the System Repo's own lesson: depth b, the System Kit's Adapted Case changing (`temp/common-ground/system-repo-change-simulation.md` §2, the "how deep" rows). The Take is drawn in full, to show what it does with a Change Version 2 already holds.
-
-```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
- ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- read and acted on                            ┌  c0 ●  earlier steps and Takes                ◀──── history
-                                              │     │
- settled snapshot: the last Reading's stop ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1, the newest
-                                                    │
-                                                    ├─ cut ──────┐                            ◀──── step 1 opens on Version 1
+                                                    ├─ cut ──────┐                            ◀──── one of the System Repo's Plan Steps opens
                                                     │            │
                                                     │         c2 ●  a Copy changed            ◀──── a Change, with its Record; its proposal: any repo would meet it
                                                     │            │
-                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): the Change kept; it closes
+                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): the Change kept
                                                     │            │
-                                                 c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward, no new commit
+                                                 c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- before the System Repo's next Plan Step, the       ┊
- human has the Maintainer Repo look at it           ┊
- (§8, Before the Take):                             ┊
- Read Changes (§4):                                 ┊
-   the two checks at main (§4, step 1):             ┊
-   check 1: main is c3, past the settled            ┊
-   snapshot, c1. Main has moved                     ┊
-   check 2: c1 against c3: a Copy changed           ┊
-   case D. What follows: the Reading                ┊
-   the Reading: c1 compared with c3; one            ┊
-   line, the Change with its Record                 ┊
-   gives: the stop, c3, and a list of one line      ┊
+ the human names the System Repo, for its           ┊
+ lessons or to update it (§1)                       ┊
+ Read Changes (§4): the stop is main, c3            ┊
+   check 1: main is c3, past c1: moved              ┊
+   check 2: c1 against c3: a Copy changed:          ┊
+   Change read. The Reading: one line, the          ┊
+   Change with its Record                           ┊
  Judge (§5): one verdict: a lesson for its          ┊
    Adapted Case, depth b; the proposal holds        ┊
  Act on the verdicts (§6): the System Kit's         ┊
    Adapted Case gains the lesson, reworded:         ┊
    the System Kit reaches Version 2. The            ┊
-   settled snapshot set to the stop, c3             ┊
- Deliver (§7):                                      ┊
-   is an Update due? The Version is 1, and          ┊
-   the newest is 2: case D2. What follows:          ┊
-   an Update is made and delivered                  ┊
-   makes the Update: every Copy at Version 2,       ┊
-   and an Update Note for Copies at Version 1,      ┊
-   giving the lesson as the why                     ┊
-   stages it in the System Repo's temp/             ┊
+   Reading goes. The settled snapshot set to        ┊
+   the stop, c3                                     ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ├─ cut ──────┐                            ◀──── the Take (§8), once it checks: main is still c3, the settled snapshot
-                                                    │            │
-                                                    │         c4 ●  the Update, as it arrived ◀──── committed in temp/, not yet in force
-                                                    │            │
-                                                    │         c5 ●  the new Adapted Case      ◀──── item 1: for taking, at Version 2, put in first
-                                                    │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
- c6, the version snapshot: the next                 │         c6 ●  every Copy at Version 2   ◀──── item 3: Copies taken whole; every Record cleared, c2's among them
- Look for Lessons compares from here                │            │
-                                                    │         c7 ●  Version 2 recorded        ◀──── item 4: with the commit that holds it, c6
-                                                    │            │
-                                                    │         c8 ●  the Update removed        ◀──── item 5: the Update and the Update Note leave temp/
-                                                    │            │
-                                                    │         c9 ●  the gate closes           ◀──── item 6: the gate checks that the Take finished; it closes
-                                                    │            │
-                                                 c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
-                                                    │
-                                                    └─ cut ──────┐                            ◀──── step 2 opens on Version 2
-                                                                 │
-                                                             c10 ●  work, on Version 2        ◀──── the next Look for Lessons compares c6, the version snapshot, with main
+ settled snapshot: c3                       ─▶   c3 ●
+ what may follow: the list below the pictures
 ```
+
+**What may follow.** After every case, the same:
+
+- if the human asked for the System Repo's lessons: nothing follows;
+- if the human asked to update the System Repo: Deliver's check comes next, then the System Repo's next Plan Step opens, with or without an Update (`temp/common-ground/system-repo-change-simulation.md` §7, step 1);
+- the System Repo: a Plan Step already open goes on, and the System Repo's next Plan Step opens once the human names the System Repo to update.
