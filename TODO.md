@@ -87,14 +87,6 @@
         and Knowledge on Trial handed back; birth stays outside, as
         the start;
       - the flow drawing needs no change for the layers model;
-      - the problem file's stale lines, found by the check on
-        2026-11-22, fixed with the move: Maintainer Repo item 6 says
-        a System Repo gets the System Kit's changes and judges each
-        against its Kit Copy;
-      - "every Change Record cleared", in the simulation's §8, *At
-        the Update Take, in order*, item 3, follows from taking each
-        Kit Copy whole, and is no act of its own; it can be worded so in the
-        final home;
       - the other six rows of the simulation's §2 table move as not
         yet checked, each checked when practice first meets it.
       Trigger: due now, the simulation and the problem file checked
@@ -110,10 +102,10 @@
       Context: depth c is a lesson that changes the idea above: a
       Work Domain Idea at layer 2, or a Backbone Idea at layer 1.
       New ideas are written at those layers now, so the case is met
-      today. The simulation's §6, *The survey*, holds a first guess:
-      each text built on the idea is asked whether it still fits. It
-      was never walked through Deliver the Kit Update and Take the Kit
-      Update, nor drawn.
+      today. The survey of the layers document's §3.2.4 holds a first
+      guess: each text built on the idea is asked whether it still
+      fits. It was never walked through Deliver the Kit Update and
+      Take the Kit Update, nor drawn.
       Ideas:
       - layer 2 first, then layer 1, each walked against depth b as
         the simulation's §2 says, writing only what differs; its

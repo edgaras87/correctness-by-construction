@@ -352,7 +352,6 @@ Two steps:
 
 **Step 1. The System Repo takes the Kit Update.**
 
-- **What must happen:** the Kit Update is taken between two of the System Repo's Plan Steps, when the next is about to open, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: a Look for Lessons runs to main, and the System Repo's Kit Update, when one is due, made, delivered and taken. Then the step opens on the new Kit Copies, or on the same ones when no Kit Update was due. The Update Take runs on a branch of its own, and reaches main only at its gate's close.
 - **Options,** for when a Kit Update is taken:
   - a. whenever it arrives;
   - b. at the opening of the System Repo's next Plan Step, right after a Look for Lessons that reached main;
@@ -372,32 +371,7 @@ Two steps:
   - g leaves main on the old Kit Version until the step's gate closes, so naming the System Repo to update in between finds the Kit Update due again;
   - h gives the Update Take an opening, as the System Repo's Plan Steps have, for work the Update Note already orders. f keeps what it needs from one: the gate;
   - i narrows that rule for the Update Take alone. f keeps the rule whole, its gate checking that the Update Take finished.
-
-  **Before the Update Take.** The opening order is fixed: a Look for Lessons, then the Kit Update. An open Repo Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A System Repo's Plan Step open when the human returns finishes on the old Kit Copies first, and the human names the System Repo to update at the next opening (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*). The Update Take checks first, from the Update Note, what the System Repo itself can see:
-  - case 1, its main is still the *settled snapshot* the Update Note names: the Kit Update is taken. Its Kit Version needs no check of its own: it is recorded in main, so it cannot change while main stands still;
-  - case 2, anything else: there is no Update Take, and the System Repo says so. The human names it to update again, and the Look for Lessons finds that main has moved (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). The check in Deliver the Kit Update then finds a new Kit Update due, made against the System Kit as it is now. It replaces the waiting one (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*).
-
-  **When the System Kit moves on.** The System Kit may move after the Kit Update is made. That is no reason to refuse the Kit Update: it is correct, if not the latest, and the next brings the rest.
-
-  **At the Update Take, in order.** Once the check finds case 1, the Update Take cuts a branch from main, the *settled snapshot*. Its first commit is the Kit Update as it arrived, in `temp/`, not yet in force: a record of what came, before the Update Take changes anything. Each item below is then a commit of its own, but item 2, a check. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*).
-  1. the Adapted Case for taking a Kit Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
-  2. the files are checked against the Update Note: what changed, and how many (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*). A mismatch is said before anything moves;
-  3. every Kit Copy is taken whole, at the new Kit Version; each path gone is removed, and each renamed is moved. Every Change Record is cleared: main is the *settled snapshot*, so each was read and judged. A part the System Repo never changed is taken, and work shows whether it fits (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*);
-  4. the new Kit Version is recorded, with the commit that holds it: item 3's, the *version snapshot*, every Kit Copy at the new Kit Version. So the check in Deliver the Kit Update can compare it with the newest. It names item 3's commit because a commit cannot hold its own hash, and item 3's is the last before it;
-  5. the Kit Update and its Update Note are removed from `temp/`;
-  6. the Update Take's gate, last. It checks that the Update Take finished: the files matched the Update Note, every Kit Copy is at the new Kit Version, the Kit Version is recorded, and `temp/` holds no Kit Update.
-
-  **What a Change Record stands against.** Every Change Record stands against the last Kit Version taken, or birth's, and every Change Record goes at an Update Take. This is confirmed at the first Kit Update to reach a System Repo whose Kit Copies have Change Records.
-- **Adapted Case:** the System Repo's, for taking a Kit Update, itself in the Kit Update and taken first. It loads when the System Repo's next Plan Step opens with a Kit Update waiting. For this step it says:
-  - check first that main is still the *settled snapshot*, and take nothing when it differs, saying so;
-  - take only at the opening of the System Repo's next Plan Step;
-  - take on a branch of its own: first the Kit Update as it arrived, then the items in the order above, one commit each but item 2, a check, the gate last, checking that the Update Take finished; main moves by fast-forward at the gate's close.
-- **Open:**
-  - finished work done under a rule the Kit Update changed may now be wrong. New work follows the new Kit Copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Kit Update that changes a rule one of the System Repo's finished Plan Steps followed;
-  - postponing an Update Take after its Kit Update is staged, so the step opens on the old Kit Copies and the Kit Update waits. For now there is no such choice: a staged Kit Update is taken at the opening, unless the Update Take's check finds main moved (case 2). Once an Update Take can be postponed, main can move before it, so decide then whether the Maintainer Repo must check main before delivery, and whether main alone is enough: a Plan Step on a branch leaves main where it is. Its trigger: the first staged Kit Update the human does not want taken.
-  - dropping or restarting the System Repo's open Plan Step so the Kit Update is taken sooner, when the Kit Update changes a rule the step rests on. Its trigger: the first Kit Update the human wants taken before an open step finishes.
-  - whether each opening of the System Repo's Plan Steps asks: was this System Repo named to update? Without that question, a System Repo nobody names opens each step on the old Kit Copies, and falls further behind each time. Its trigger: the first time one of the System Repo's Plan Steps opens on old Kit Copies because nobody named the System Repo to update.
-  - where in the System Repo the Kit Version and the *version snapshot*'s hash are written. Today a Delivery Take writes one entry with the new Delivery Pin (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Its trigger: the Adapted Case for taking a Kit Update written from these rules.
+- **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.6, *Take the Kit Update*).
 - **Today:**
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);
   - borrowed: the Delivery Take's order: the Delivery Note checked against the staging first, copies taken whole, what is gone removed, one entry with the new Delivery Pin, the staging removed (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, steps 1, 4, 5, 6 and 7);

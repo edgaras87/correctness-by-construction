@@ -78,7 +78,7 @@ Its repos, and what travels between them:
 - **System Repo Reading:** the draft that lists the System Kit Copy Changes one Look for Lessons found in a System Repo, nothing judged. With none found, none is written.
 - **System Kit Update:** what the Maintainer Repo sends a System Repo: a copy of every System Kit file at one System Kit Version, with its System Kit Update Note.
 - **System Kit Update Note:** what the Maintainer Repo writes with a System Kit Update, for the System Repo that takes it.
-- **System Kit Update Take:** a System Repo taking a System Kit Update into its System Kit Copies. How it runs is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §8, *Take the Kit Update*). Its *version snapshot* is the System Repo's commit where the System Kit Update Take put every System Kit Copy at the new System Kit Version, its hash written beside that System Kit Version.
+- **System Kit Update Take:** a System Repo taking a System Kit Update into its System Kit Copies. How it runs is §3.2.6's. Its *version snapshot* is the System Repo's commit where the System Kit Update Take put every System Kit Copy at the new System Kit Version, its hash written beside that System Kit Version.
 
 This document shortens ten of these Defined Terms to their last two words:
 
@@ -261,7 +261,7 @@ The Maintainer Repo finds what changed in one System Repo since it last looked, 
 
 **Two snapshots.** Read Copy Changes compares two snapshots of the System Repo, the older snapshot and the stop, and never walks its commits. The commits between them are history, opened only to understand something deeper.
 - **The older snapshot** is the Repo Register's *settled snapshot*, and it is never empty. At birth, the Maintainer Repo's check of the delivery writes the System Repo's row, its *settled snapshot* set to the start: the commit holding the Kit Copies as they arrived (`temp/common-ground/between-repos-simulation.md` §5.1, step 2). Nothing before the start is the System Repo's own Copy Change. So every Look for Lessons, the first among them, starts at the *settled snapshot*.
-- **After an Update Take,** the first Look for Lessons starts at the *version snapshot* instead, found at main (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *At the Update Take, in order*, item 4). The *settled snapshot* still holds the Kit Copies of the previous Kit Version, and starting there would read the Update Take's changes as the System Repo's. The *version snapshot*'s Kit Copies are not checked against the new Kit Version: Deliver the Kit Update and the Update Take check the files three times before (§3.2.5; `temp/common-ground/system-repo-change-simulation.md` §8, step 1, items 2 and 6).
+- **After an Update Take,** the first Look for Lessons starts at the *version snapshot* instead, found at main (§3.2.6, *At the Update Take, in order*, item 4). The *settled snapshot* still holds the Kit Copies of the previous Kit Version, and starting there would read the Update Take's changes as the System Repo's. The *version snapshot*'s Kit Copies are not checked against the new Kit Version: Deliver the Kit Update and the Update Take check the files three times before (§3.2.5; §3.2.6, items 2 and 6).
 - **The stop** is the System Repo's main as it stands when the Look for Lessons begins, named by its commit. Everything is compared against that commit, never against main as it moves, so a commit landing during the Look for Lessons falls into the next one.
 - **The System Repo's Kit Version** is read from the *settled snapshot*, never stored anywhere else. It may be behind the newest.
 
@@ -368,7 +368,7 @@ The Maintainer Repo makes a Kit Update for one System Repo, when its work resume
 
 **When one is due.** A Kit Update is due when the System Repo's Kit Version, which the System Repo holds, is behind the newest. It goes only when it carries a System Kit change. Two Kit Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. For depth b, the System Kit has moved for the Copy Change, so a Kit Update is due: it carries the System Kit's Adapted Case at the new Kit Version, with the lesson as its why. Depth c is not yet walked through this part (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it").
 
-**When the check runs.** Only when work resumes. Work resumes when the human, about to open the System Repo's next Plan Step, names it to update; neither repo can see that moment itself (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *Before the Update Take*). Nothing is made for, or sent to, a System Repo whose work has not resumed. Then, in order:
+**When the check runs.** Only when work resumes. Work resumes when the human, about to open the System Repo's next Plan Step, names it to update; neither repo can see that moment itself (§3.2.6). Nothing is made for, or sent to, a System Repo whose work has not resumed. Then, in order:
 1. a Look for Lessons runs (§3.2.2). It comes first: a Kit Update is built against the *settled snapshot*, and a Copy Change not yet taken into account would make the Update Take refuse it;
 2. the Kit Versions are compared. When the System Repo's is the newest, nothing follows;
 3. the agent checks that none of the System Repo's Plan Steps is open. If one is, it says so, and makes nothing: finishing that step would move main, and the Update Take would refuse the Kit Update too;
@@ -393,6 +393,35 @@ The Update Note is no summary of the Maintainer Repo's work, which the System Re
 **Its Adapted Cases:**
 - the Maintainer Repo's, for making a Kit Update. It loads on the human's word to update a System Repo, and says everything above but *Staging*;
 - the Maintainer Repo's, for delivering a Kit Update. It loads on the human's word to deliver, and says *Staging*.
+
+#### 3.2.6 Take the Kit Update
+
+The System Repo takes a waiting Kit Update, at the opening of its next Plan Step. How each rule was chosen is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §8, *Take the Kit Update*).
+
+**Before the Update Take.** A Kit Update is taken between two of the System Repo's Plan Steps, when the next is about to open, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: a Look for Lessons runs to main, and the System Repo's Kit Update, when one is due, is made, delivered and taken. Then the step opens on the new Kit Copies, or on the same ones when no Kit Update was due. An open Repo Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A System Repo's Plan Step open when the human returns finishes on the old Kit Copies first, and the human names the System Repo to update at the next opening (§3.2.5). The Update Take checks first, from the Update Note, what the System Repo itself can see:
+- case 1, its main is still the *settled snapshot* the Update Note names: the Kit Update is taken. Its Kit Version needs no check of its own: it is recorded in main, so it cannot change while main stands still;
+- case 2, anything else: there is no Update Take, and the System Repo says so. The human names it to update again, and the Look for Lessons finds that main has moved (§3.2.2). The check in Deliver the Kit Update then finds a new Kit Update due, made against the System Kit as it is now, and it replaces the waiting one (§3.2.5).
+
+**When the System Kit moves on.** The System Kit may move after the Kit Update is made. That is no reason to refuse the Kit Update: it is correct, if not the latest, and the next brings the rest.
+
+**At the Update Take, in order.** Once the check finds case 1, the Update Take cuts a branch from main, the *settled snapshot*. Its first commit is the Kit Update as it arrived, in `temp/`, not yet in force: a record of what came, before the Update Take changes anything. Each item below is then a commit of its own, but item 2, a check. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§3.2.2).
+1. the Adapted Case for taking a Kit Update is taken first, on its own, so the rest is taken by the new one (`temp/common-ground/common-ground-problem.md` §4, Failure Case 10);
+2. the files are checked against the Update Note: what changed, and how many (§3.2.5). A mismatch is said before anything moves;
+3. every Kit Copy is taken whole, at the new Kit Version; each path gone is removed, and each renamed is moved. A part the System Repo never changed is taken, and work shows whether it fits (§3.2.1). A Kit Copy taken whole takes its Change Records away with it, so clearing them is no act of its own. Nothing is lost: main is the *settled snapshot*, so each was read and judged;
+4. the new Kit Version is recorded, with the commit that holds it: item 3's, the *version snapshot*, every Kit Copy at the new Kit Version. So the check in Deliver the Kit Update can compare it with the newest. It names item 3's commit because a commit cannot hold its own hash, and item 3's is the last before it;
+5. the Kit Update and its Update Note are removed from `temp/`;
+6. the Update Take's gate, last. It checks that the Update Take finished: the files matched the Update Note, every Kit Copy is at the new Kit Version, the Kit Version is recorded, and `temp/` holds no Kit Update.
+
+**What a Change Record stands against.** Every Change Record stands against the last Kit Version taken, or birth's, and every Change Record goes at an Update Take. This is confirmed at the first Kit Update to reach a System Repo whose Kit Copies have Change Records.
+
+**Its Adapted Case.** The System Repo's, for taking a Kit Update, itself in the Kit Update and taken first. It loads when the System Repo's next Plan Step opens with a Kit Update waiting, and says everything above.
+
+**Open:**
+- finished work done under a rule the Kit Update changed may now be wrong. New work follows the new Kit Copy; the System Repo lists which System Kit changes touch rules its finished work followed, and the human decides. Its trigger: the first Kit Update that changes a rule one of the System Repo's finished Plan Steps followed;
+- postponing an Update Take after its Kit Update is staged, so the step opens on the old Kit Copies and the Kit Update waits. For now there is no such choice: a staged Kit Update is taken at the opening, unless the Update Take's check finds main moved (case 2). Once an Update Take can be postponed, main can move before it, so decide then whether the Maintainer Repo must check main before delivery, and whether main alone is enough: a Plan Step on a branch leaves main where it is. Its trigger: the first staged Kit Update the human does not want taken;
+- dropping or restarting the System Repo's open Plan Step so the Kit Update is taken sooner, when the Kit Update changes a rule the step rests on. Its trigger: the first Kit Update the human wants taken before an open step finishes;
+- whether each opening of the System Repo's Plan Steps asks: was this System Repo named to update? Without that question, a System Repo nobody names opens each step on the old Kit Copies, and falls further behind each time. Its trigger: the first time one of the System Repo's Plan Steps opens on old Kit Copies because nobody named the System Repo to update;
+- where in the System Repo the Kit Version and the *version snapshot*'s hash are written. Today a Delivery Take writes one entry with the new Delivery Pin (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Its trigger: the Adapted Case for taking a Kit Update written from these rules.
 
 ### 3.3 The Maintainer Repo's lessons
 

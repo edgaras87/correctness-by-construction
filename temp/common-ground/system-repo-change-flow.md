@@ -68,7 +68,7 @@ flowchart TD
 
 ### The Update Take
 
-The System Repo takes a Kit Update at the opening of the System Repo's next Plan Step, on a branch of its own (`temp/common-ground/system-repo-change-simulation.md` §8, step 1). It is drawn once, here, where the update job ends (*The two jobs*, above). "Item" names an item of §8's *At the Update Take, in order*.
+The System Repo takes a Kit Update at the opening of the System Repo's next Plan Step, on a branch of its own (`temp/common-ground/knowledge-layers.md` §3.2.6, *Take the Kit Update*). It is drawn once, here, where the update job ends (*The two jobs*, above). "Item" names an item of its *At the Update Take, in order*.
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -92,7 +92,7 @@ The System Repo takes a Kit Update at the opening of the System Repo's next Plan
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
  c4, the version snapshot: the next                 │         c4 ●  Kit Copies: Kit Version 2 ◀──── item 3: Kit Copies taken whole, each path gone removed, each renamed moved; every Change Record cleared
  Look for Lessons compares from here                │            │
-                                                    │         c5 ●  Kit Version 2 recorded    ◀──── item 4: with the commit that holds it, c4; open: where in the System Repo Kit Version 2 and c4 are written (§8, Open)
+                                                    │         c5 ●  Kit Version 2 recorded    ◀──── item 4: with the commit that holds it, c4; open: where in the System Repo Kit Version 2 and c4 are written (layers §3.2.6, Open)
                                                     │            │
                                                     │         c6 ●  the Kit Update removed    ◀──── item 5: the Kit Update and the Update Note leave temp/
                                                     │            │
@@ -286,8 +286,7 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward
  - the open step finishes on Kit Version 1, and its │
-   gate moves main to c3 (§8, Before the Update     │
-   Take)                                            │
+   gate moves main to c3 (layers §3.2.6)            │
  - at the next opening, the human names the         │
    System Repo to update again                      │
  - Look for Lessons: main moved; case no Copy       │
@@ -364,7 +363,7 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
                                                     ┊                                         ┄┄┄┄┄ the Kit Update waits in temp/, not yet in force
                                                     │
  ── before the Update Take ─────────────────────────┼───────────────────────────────────────────────────────────
-                                                 c2 ●  a gate closed                          ◀──── main moved past c1 before the Update Take; how is open: postponing an Update Take (§8, Open)
+                                                 c2 ●  a gate closed                          ◀──── main moved past c1 before the Update Take; how is open: postponing an Update Take (layers §3.2.6, Open)
                                                     │
  ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ┊                                         ┄┄┄┄┄ at the opening, the Update Take checks, from the Update Note:
@@ -373,7 +372,7 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
  - the Kit Update stays in temp/, not taken         │
  - the human names the System Repo to update        │
-   again (§8, Before the Update Take)               │
+   again (layers §3.2.6)                            │
  - Look for Lessons: main moved; case no Copy       │
    Change or Copy Change read, by what c2 holds     │
  - Deliver the Kit Update makes a new Kit Update    │
@@ -381,4 +380,4 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
    replaces the waiting one (§7, step 1)            │
 ```
 
-**A Kit Update at the newest Kit Version.** A Kit Update is always made at the newest Kit Version. When the Look for Lessons ends in *Copy Change read*, Act may raise the Kit Version first: the Kit Update is then made at that Kit Version, and brings the System Repo's own lesson back. If the System Kit moves after it is made, the Kit Update is still taken, and the next brings the rest (`temp/common-ground/system-repo-change-simulation.md` §8, step 1, *When the System Kit moves on*).
+**A Kit Update at the newest Kit Version.** A Kit Update is always made at the newest Kit Version. When the Look for Lessons ends in *Copy Change read*, Act may raise the Kit Version first: the Kit Update is then made at that Kit Version, and brings the System Repo's own lesson back. If the System Kit moves after it is made, the Kit Update is still taken, and the next brings the rest (`temp/common-ground/knowledge-layers.md` §3.2.6, *Take the Kit Update*).
