@@ -71,7 +71,7 @@ Its repos, and what travels between them:
 - **System Kit Version:** the System Kit as it stood at one Maintainer Repo commit. Each System Repo records the one its System Kit Copies came from.
 - **System Kit Copy:** a copy of a System Kit file, as it lives in a System Repo.
 - **System Kit Copy Change:** a System Repo's change to a System Kit Copy, made against the System Kit Version that copy came from.
-- **System Kit Copy Change Record:** what a System Repo writes with each System Kit Copy Change, saying what changed and why. What it holds and where it sits are the simulation's (`temp/common-ground/system-repo-change-simulation.md` §3, *Change a Kit Copy*, step 1).
+- **System Kit Copy Change Record:** what a System Repo writes with each System Kit Copy Change, saying what changed and why. What it holds and where it sits are §3.2.1's.
 - **System Kit Attention Note:** what a System Repo writes for the Maintainer Repo to look at in the System Kit, when no System Kit Copy Change carries it.
 - **Maintainer Repo Register:** the Maintainer Repo's list of its System Repos: where each lives, and its *settled snapshot*, the System Repo's snapshot up to which the Maintainer Repo has read, judged and acted on. The *settled snapshot* holds the System Kit Version the System Repo had then, which may be behind the newest.
 - **Look for Lessons:** the Maintainer Repo taking one System Repo's work since its *settled snapshot* into account: read, judged and acted on. How it runs is §3.2's.
@@ -222,6 +222,34 @@ Each of the simulation's depths names the highest layer a Copy Change reaches (`
 | f. several Adapted Cases need it, but not all | *Copy Change, read back*; *Kit Update* |
 
 Depth f's gap, text shared by several Adapted Cases but not all, is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*, its row f). Its second case, across Work Domains, is met when `concept/` is labelled general or backend, for the concept's split (`TODO.md`, the item that splits the concept).
+
+#### 3.2.1 Change a Kit Copy
+
+The System Repo changes a Kit Copy during its own work, and the gate of its Plan Step decides each Copy Change. How each rule was chosen is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §3, *Change a Kit Copy*).
+
+**When a Kit Copy changes.** A Kit Copy changes only when the System Repo's work shows it does not fit what happened, never ahead. The human decides the Copy Change, the agent proposing. It is made then, with its Change Record. A Copy Change may be edited or reversed later, its Change Record with it.
+
+**Where the Change Record sits.** In a footer of the Kit Copy's Adapted Understanding Text, which is not loaded for work. So the Copy Change and its why land in one diff, and the why cannot lose its Kit Copy. When only an Instruction Text changes, its Change Record goes there too.
+
+**What the Change Record holds:**
+- what changed, by meaning: the part, and what it says now. When some of the Adapted Case's texts were left as they were, it also says whether they still match the Copy Change (`temp/common-ground/common-ground-problem.md` §4, Failure Case 8);
+- what happened, concretely, in the System Repo's own words. It is never written to sound general: rewording it is the Maintainer Repo's, after judging;
+- which work found it;
+- the System Repo's proposal, marked as one: its own problem, or one any repo would meet. The Maintainer Repo judges every Copy Change, and says whether it agrees, and why if not.
+
+**When it is rewritten.** The Change Record says the Copy Change as it stands. A later edit rewrites it, and git keeps the old one.
+
+**The commit.** A Copy Change and its Change Record go in the same commit. A commit that changes a Kit Copy and not its Change Record is stopped there. An Update Take is not a Copy Change, so its commits pass: together they replace every Kit Copy with the System Kit's, and clear every Change Record. Work never committed is lost, the Copy Change and its Change Record together.
+
+**At the gate.** At the close of the System Repo's Plan Step, its Copy Changes are seen together, now that the whole step is seen. The agent compares the Kit Copies against where the step began, checks that each Copy Change has a Change Record that says it, and shows each with its Change Record. The human decides each, the agent proposing: kept, edited or reversed, its Change Record with it. One edited gets its Change Record rewritten. Copy Changes that share one reason are linked: the reason is written in full in one Change Record, and each other one says how its own Kit Copy was affected and points at that one. If the one holding the reason is reversed, the reason moves to one that stays, and the others point there.
+
+**Its Adapted Cases:**
+- the System Repo's, for changing a Kit Copy, itself a Kit Copy. It loads when a Kit Copy is touched, and says everything above but *At the gate*;
+- the System Repo's gate list, for closing one of its Plan Steps. It loads when the step closes, and says *At the gate*.
+
+**Open:**
+- where the Change Record goes when the Kit Copy has no Adapted Understanding Text: §4, question 7, with its first guess;
+- whether a reversed Copy Change leaves a trace for the Maintainer Repo. One tried and undone may be evidence that the Kit Copy was right. Its trigger: the first Copy Change reversed at a gate.
 
 ### 3.3 The Maintainer Repo's lessons
 

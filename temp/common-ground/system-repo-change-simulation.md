@@ -117,7 +117,6 @@ Two steps:
 
 **Step 1. A Kit Copy is changed, with its Change Record.**
 
-- **What must happen:** during its own work, the System Repo finds that a Kit Copy does not fit what happened. The human decides the Copy Change, the agent proposing. It is made then, and its Change Record is written with it. The Copy Change may be edited or reversed later, its Change Record with it.
 - **Options:**
   - a. the Kit Copy is changed when the work shows it does not fit, and its Change Record written with it;
   - b. the Kit Copy is changed ahead, for what the agent foresees;
@@ -128,27 +127,8 @@ Two steps:
   - c gains nothing by waiting. A Change Record lets any Copy Change be edited or reversed later. And until the gate, the Kit Copy would say what the System Repo no longer does;
   - d leaves the Kit Copy saying it for good, and the next agent reads the Kit Copy, not the System Repo's records.
 
-  **Where it sits.** The Change Record goes in a footer of the Kit Copy's Adapted Understanding Text, which is not loaded for work. So the Copy Change and its why land in one diff, and the why cannot lose its Kit Copy. When only an Instruction Text changes, its Change Record goes there too.
-
-  **What it holds:**
-  - what changed, by meaning: the part, and what it says now. When some of the Adapted Case's texts were left as they were, it also says whether they still match the Copy Change (Failure Case 8);
-  - what happened, concretely, in the System Repo's own words. It is never written to sound general: rewording it is the Maintainer Repo's, after judging;
-  - which work found it;
-  - the System Repo's proposal: its own problem, or one any repo would meet. It is marked as a proposal. The Maintainer Repo judges every Copy Change, and says whether it agrees, and why if not (§5).
-
-  **When it is rewritten.** The Change Record says the Copy Change as it stands. A later edit rewrites it, and git keeps the old one.
-
-  **The commit.** The Copy Change and its Change Record go in the same commit. A commit that changes a Kit Copy and not its Change Record is stopped there. An Update Take is not a Copy Change, so the check lets its commits pass: together they replace every Kit Copy with the System Kit's, and clear every Change Record. Every Copy Change that lasts passes through a commit. Work never committed is lost, the Copy Change and its Change Record together.
-
   **Weighed and dropped:** a check at each session's end, comparing the Kit Copies with their Change Records. It would run every session, needs an Adapted Case of its own, and never runs when a session stops with no warning. The commit's check and the gate's comparison (step 2) cover what it would find. It comes back if a gate finds a Copy Change committed in an earlier session with its Change Record missing or wrong.
-- **Adapted Case:** the System Repo's, for changing a Kit Copy, itself a Kit Copy. It loads when a Kit Copy is touched. For this step it says:
-  - a Kit Copy changes only when the work shows it does not fit, never ahead;
-  - the Change Record is written with the Copy Change, with its four parts, and goes in the same commit;
-  - the Change Record sits in a footer of the Kit Copy's Adapted Understanding Text, and says the Copy Change as it stands: a later edit rewrites it;
-  - a commit that changes a Kit Copy and not its Change Record is stopped. An Update Take is not a Copy Change, and passes;
-  - what happened is written concretely, in the System Repo's own words;
-  - whether the Copy Change is its own or any repo's is a proposal, never a verdict.
-- **Open:** where the Change Record goes when the Kit Copy has no Adapted Understanding Text. The question and its first guess are the layers model's (`temp/common-ground/knowledge-layers.md` §4, *Open questions*, question 7).
+- **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*).
 - **Today:**
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
@@ -160,7 +140,6 @@ Two steps:
 
 **Step 2. The gate of the System Repo's Plan Step decides each Copy Change.**
 
-- **What must happen:** at the close of the System Repo's Plan Step, the step's Copy Changes are seen together, now that the whole step is seen. The agent compares the Kit Copies against where the System Repo's Plan Step began, and shows each with its Change Record. The human decides each, the agent proposing: kept, edited, or reversed, its Change Record with it. Copy Changes that share one reason are linked.
 - **Options:**
   - a. the gate looks at the step's Copy Changes together: the comparison, a decision on each, and the links;
   - b. the gate only checks that each Copy Change has a Change Record that says it, and decides nothing;
@@ -170,13 +149,7 @@ Two steps:
   - b keeps a Copy Change made early in the step, though the end of the step may show it wrong, and leaves Copy Changes with one reason unlinked;
   - c leaves the review to the side that cannot see what happened, and a wrong Copy Change then reaches the Maintainer Repo's judging;
   - d adds nothing to the Change Records: Read Copy Changes compares every Kit Copy, and reads the Change Records. It comes back if Read Copy Changes misses a changed Kit Copy because nothing asked it to look.
-
-  **After the decision.** A Copy Change kept as it is needs nothing more. One edited gets its Change Record rewritten. When Copy Changes share one reason, the reason is written in full in one Change Record, and each other one says how its own Kit Copy was affected and points at that one. If the one holding the reason is reversed, the reason moves to one that stays, and the others point there.
-- **Adapted Case:** the System Repo's, for closing one of the System Repo's Plan Steps, its gate list. It loads when the System Repo's Plan Step closes. For this step it says:
-  - compare the Kit Copies against where the System Repo's Plan Step began, and check each Copy Change has a Change Record that says it;
-  - the human decides each Copy Change: kept, edited or reversed, its Change Record with it;
-  - Copy Changes with one reason are linked, and the reason never stays only in a reversed Change Record.
-- **Open:** whether a reversed Copy Change leaves a trace for the Maintainer Repo. One tried and undone may be evidence that the Kit Copy was right. Its trigger: the first Copy Change reversed at a gate.
+- **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*).
 - **Today:**
   - borrowed: the gate is a list of outcomes checked at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
   - borrowed: each Approach on Trial the CBC Run's Plan Step used has its dated note at the close (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*). A Change Record checked at the gate is the same shape;
@@ -205,7 +178,7 @@ Four steps:
   - d. the human names a System Repo, and the agent compares its main with its *settled snapshot*. Every System Repo's main is compared with its *settled snapshot* when the human asks which have new work;
   - e. only when work resumes in the System Repo, by the fixed order: a Look for Lessons, then the Kit Update.
 - **Chosen:** b and d. The others:
-  - a reads Copy Changes the gate has not yet looked at, which the System Repo may still edit or reverse (§3, step 2);
+  - a reads Copy Changes the gate has not yet looked at, which the System Repo may still edit or reverse (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*);
   - c depends on the human remembering, and the Repo Register then says a System Repo has nothing new when it has new work (Failure Case 2);
   - e alone gives no Look for Lessons to a System Repo whose work does not resume, so what it learned is lost (Failure Case 1). The Look for Lessons when work resumes still runs, as d: the human names the System Repo to update, which starts a Look for Lessons (§7, step 1, *When one is due*).
 
@@ -282,7 +255,7 @@ Four steps:
 - **Chosen:** a. The others:
   - b finds the same as a at the first Look for Lessons after birth or an Update Take. After it, a Copy Change already judged differs from that Kit Version until the next Update Take, and is found again at every Look for Lessons before it;
   - c misses a Copy Change with no Change Record, which the commit's check should have stopped, but which can still land (Failure Case 22);
-  - d shows every edit on the way, and Copy Changes the gate reversed. The gate has settled those (§3, step 2); what stands at the stop is what is read.
+  - d shows every edit on the way, and Copy Changes the gate reversed. The gate has settled those (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*); what stands at the stop is what is read.
 
   **Pairing.** A Change Record lands in the same diff as its Copy Change, in the Kit Copy's Adapted Understanding Text, so pairing them is reading one diff. Three things can come out:
   - a Copy Change with its Change Record: read with its what, what happened, which work found it, and the System Repo's proposal;
@@ -370,7 +343,7 @@ Two steps:
 
   **Lines together, lines split.** Lines listed together under one reason are judged together, and the reason is judged once. A line whose parts answer differently is split, each part judged on its own; the parts keep their one Change Record.
 
-  **Not from the wording.** A question is answered from what the Copy Change does and why, never from its wording. The System Repo writes in its own words on purpose (§3, step 1), and making a lesson general is rewording, after judging (§6, step 1). A Copy Change worded for one project may still be a lesson for every repo. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
+  **Not from the wording.** A question is answered from what the Copy Change does and why, never from its wording. The System Repo writes in its own words on purpose (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*), and making a lesson general is rewording, after judging (§6, step 1). A Copy Change worded for one project may still be a lesson for every repo. The agent's answer to question 2 says whether it agrees with the System Repo's proposal, and why if not.
 - **Adapted Case:** the Maintainer Repo's, for judging a Repo Reading. It loads when the human starts judging a Repo Reading whose list was checked whole. For this step it says:
   - question 0 first: does the Copy Change fix what happened, without breaking something the Kit Copy did? An unsound Copy Change goes no further, and its verdict says why;
   - then the four questions, in order, until one holds; for each, what it reads;
@@ -435,7 +408,7 @@ Two steps:
   - b. the Copy Change goes into the System Kit's Adapted Case as the System Repo wrote it;
   - c. the lesson waits until a second System Repo makes the same Copy Change.
 - **Chosen:** a. The others:
-  - b carries one project's words to every System Repo, since the System Repo writes what happened in its own words, on purpose (§3, step 1);
+  - b carries one project's words to every System Repo, since the System Repo writes what happened in its own words, on purpose (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*);
   - c waits for a second proof of what judging already found: question 2 found the Copy Change is not that System Repo's own.
 
   **The other depths.** For the other depths, this step holds the work, each checked here later:
@@ -576,7 +549,7 @@ Two steps:
   **At the Update Take, in order.** Once the check finds case 1, the Update Take cuts a branch from main, the *settled snapshot*. Its first commit is the Kit Update as it arrived, in `temp/`, not yet in force: a record of what came, before the Update Take changes anything. Each item below is then a commit of its own, but item 2, a check. Main moves to the branch's last commit by fast-forward at the gate's close, so it still moves only at a gate's close (§4, step 1, *Where a stretch ends*).
   1. the Adapted Case for taking a Kit Update is taken first, on its own, so the rest is taken by the new one (Failure Case 10);
   2. the files are checked against the Update Note: what changed, and how many (§7, step 1). A mismatch is said before anything moves;
-  3. every Kit Copy is taken whole, at the new Kit Version; each path gone is removed, and each renamed is moved. Every Change Record is cleared: main is the *settled snapshot*, so each was read and judged. A part the System Repo never changed is taken, and work shows whether it fits (§3, step 1);
+  3. every Kit Copy is taken whole, at the new Kit Version; each path gone is removed, and each renamed is moved. Every Change Record is cleared: main is the *settled snapshot*, so each was read and judged. A part the System Repo never changed is taken, and work shows whether it fits (`temp/common-ground/knowledge-layers.md` §3.2.1, *Change a Kit Copy*);
   4. the new Kit Version is recorded, with the commit that holds it: item 3's, the *version snapshot*, every Kit Copy at the new Kit Version. So the check in Deliver the Kit Update can compare it with the newest. It names item 3's commit because a commit cannot hold its own hash, and item 3's is the last before it;
   5. the Kit Update and its Update Note are removed from `temp/`;
   6. the Update Take's gate, last. It checks that the Update Take finished: the files matched the Update Note, every Kit Copy is at the new Kit Version, the Kit Version is recorded, and `temp/` holds no Kit Update.

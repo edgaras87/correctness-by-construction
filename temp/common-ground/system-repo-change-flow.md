@@ -157,7 +157,7 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
                                                     │            │
                                                     │         c2 ●  work, no Kit Copy changed
                                                     │            │
-                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): no Copy Change to decide
+                                                    │         c3 ●  the gate closes           ◀──── the gate (layers §3.2.1): no Copy Change to decide
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward
                                                     │
@@ -195,7 +195,7 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
                                                     │            │
                                                     │         c2 ●  a Kit Copy changed        ◀──── a Copy Change, with its Change Record; its proposal: any repo would meet it
                                                     │            │
-                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): the Copy Change kept
+                                                    │         c3 ●  the gate closes           ◀──── the gate (layers §3.2.1): the Copy Change kept
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward
                                                     │
@@ -282,7 +282,7 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
                                                     │            ┊
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     │            │
-                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2)
+                                                    │         c3 ●  the gate closes           ◀──── the gate (layers §3.2.1)
                                                     │            │
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward
  - the open step finishes on Kit Version 1, and its │
