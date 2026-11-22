@@ -22,9 +22,9 @@ The flow file shows the update job only as the second box of *The two jobs*, and
 
 Found while building: every way main can move between staging and the Take is one the simulation leaves open, so the refused Take can be drawn only with its cause marked open (U6).
 
-## 3. The five pictures
+## 3. The four pictures
 
-The reviewer chose candidate A, a picture per outcome. The other candidates, B to F, and their verdicts are in git at `822b60e5`. The fifth picture, *taken, after Change read*, is *taken* when the Look for Lessons raises the Version; it draws only what differs, and points at *taken* for the rest.
+The reviewer chose candidate A, a picture per outcome. The other candidates, B to F, and their verdicts are in git at `822b60e5`.
 
 Every picture uses the flow file's key (`temp/common-ground/system-repo-change-flow.md` §2, *Now*). The example: Version 1 in the System Repo, Version 2 the newest; the Look for Lessons ends in case *not moved*.
 
@@ -99,8 +99,11 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
  - the human, about to open the System Repo's       ┊
    next Plan Step, names it to update (§7, step 1)  ┊
- - Look for Lessons (§4 to §6): case not moved,     ┊
-   drawn above; the settled snapshot stays c1       ┊
+ - Look for Lessons (§4 to §6): here case not       ┊
+   moved; the settled snapshot stays c1. Any of     ┊
+   its three cases leads on the same way; after     ┊
+   Change read, Act may raise the Version, and      ┊
+   the Update is made at that newest one            ┊
  - Deliver (§7): the Version is 1, the newest is    ┊
    2: behind; no Plan Step open (§7, step 1)        ┊
  - Deliver makes the Update: every Copy at          ┊
@@ -124,53 +127,6 @@ Every picture uses the flow file's key (`temp/common-ground/system-repo-change-f
                                                     └─ cut ──────┐                            ◀──── the System Repo's next Plan Step opens on Version 2
                                                                  │
                                                               c8 ●  work, on Version 2
-```
-
-### *taken, after Change read*
-
-```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
- ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
- taken into account by                        ┌  c0 ●  earlier Plan Steps and Takes           ◀──── history
- earlier Looks for Lessons                    │     │
- settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Copies at Version 1; the System Kit has since reached Version 2
-                                                    │
-                                                    ├─ cut ──────┐                            ◀──── one of the System Repo's Plan Steps opens
-                                                    │            │
-                                                    │         c2 ●  a Copy changed            ◀──── a Change, with its Record; its proposal: any repo would meet it
-                                                    │            │
-                                                    │         c3 ●  the gate closes           ◀──── the gate (§3, step 2): the Change kept
-                                                    │            │
-                                                 c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward
-                                                    │
- ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- - the human, about to open the System Repo's       ┊
-   next Plan Step, names it to update (§7, step 1)  ┊
- - Look for Lessons (§4 to §6): case Change read,   ┊
-   drawn above; Act puts the lesson in the          ┊
-   System Kit: Version 3. The settled snapshot      ┊
-   set to c3                                        ┊
- - Deliver (§7): the Version is 1, the newest is    ┊
-   3: behind; no Plan Step open (§7, step 1)        ┊
- - Deliver makes the Update: every Copy at          ┊
-   Version 3, and an Update Note naming c3, its     ┊
-   whys from 1 to 3, the lesson among them          ┊
- - the pause and the staging: as in taken           ┊
-                                                    ┊                                         ┄┄┄┄┄ the Update waits in temp/, not yet in force
-                                                    │
- ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ├─ cut ──────┐                            ◀──── the Take (§8), as in taken, once it checks: main is still c3
-                                                    │            │
-                                                    │         c4 ●  the Update, as it arrived ◀──── the Take's commits, as drawn in The Take
-                                                    │            │                            ◀──── c5 to c8, not drawn
-                                                    │         c9 ●  the gate closes           ◀──── Version 3 taken: the System Repo's own lesson comes back, reworded
-                                                    │            │
-                                                 c9 ● ◀──────────┘                            ◀──── main moves to c9 by fast-forward, at the gate's close
-                                                    │
-                                                    └─ cut ──────┐                            ◀──── the System Repo's next Plan Step opens on Version 3
-                                                                 │
-                                                             c10 ●  work, on Version 3
 ```
 
 ### *refused*
