@@ -44,7 +44,7 @@ The steps make six parts, each done by one repo:
 | Part | Who | Steps |
 |---|---|---|
 | Change | System Repo | §3, steps 1–2 |
-| Read | Maintainer Repo | §4, steps 1–4 |
+| Read Changes | Maintainer Repo | §4, steps 1–4 |
 | Judge | Maintainer Repo | §5, steps 1–2 |
 | Act on the verdicts | Maintainer Repo | §6, step 1 |
 | Deliver | Maintainer Repo | §7, steps 1–2 |
@@ -99,10 +99,10 @@ New text of the System Repo's own, on trial, is not a case here. It comes from n
  System Repo  ┆ Maintainer Repo
  ───────────  ┆ ───────────────
               ┆
- 1. Change ───┼── reads; writes nothing there ──▶ 2. Read ──▶ 3. Judge ──▶ 4. Act on the verdicts
-    §3        ┆                                      §4          §5           §6
-              ┆                                                               │
- 6. Take ◀────┼── writes only into its temp/ ──── 5. Deliver ◀────────────────┘
+ 1. Change ───┼── reads; writes nothing there ──▶ 2. Read Changes ──▶ 3. Judge ──▶ 4. Act on the verdicts
+    §3        ┆                                      §4                  §5           §6
+              ┆                                                                       │
+ 6. Take ◀────┼── writes only into its temp/ ──── 5. Deliver ◀────────────────────────┘
     §8        ┆                                      §7
 
  How high each depth goes: 3. Judge sets it, 4. Act on the verdicts changes it
@@ -194,7 +194,7 @@ Two steps:
   - changed: today the close writes one CBC Run Ask per edited copy (`delivery/container/.claude/rules/delivered-copies.md`, rule 4), option d. Here the Records are what a Reading reads;
   - changed: today nothing at the close looks at the step's changes to copies together.
 
-## 4. Read
+## 4. Read Changes
 
 Four steps:
 
@@ -233,7 +233,7 @@ Four steps:
   | Case | Main moved | Copy changed | What follows |
   |---|---|---|---|
   | *not moved* | no | — | nothing to read; Act sets the *settled snapshot* to the stop, as it was (§6, step 1) |
-  | *no Change* | yes | no | Read's list is empty: nothing is judged, and Act sets the *settled snapshot* to the stop (§6, step 1) |
+  | *no Change* | yes | no | Read Changes' list is empty: nothing is judged, and Act sets the *settled snapshot* to the stop (§6, step 1) |
   | *Change read* | yes | yes | the full Reading: listed, judged and acted on (§5, §6) |
 
   Check 2 is asked only when main moved, so the first row shows "—".
@@ -466,7 +466,7 @@ Two steps:
 - **Open:**
   - at layer 1, how far down the survey reaches before the change: only the Work Domain Ideas, each checking its own Adapted Cases when it changes, or every Adapted Case below them at once. The first is cheaper; the second may catch a conflict two layers down. Its trigger: the first lesson judged at layer 1;
   - how a part of a Backbone Idea is known not to fit a whole Work Domain, when one System Repo's Change shows one Adapted Case. A first guess: the same survey, over that Work Domain Idea's Adapted Cases. Its trigger: the first depth-e verdict;
-  - whether Read, Judge and Act are one of the Maintainer Repo's Plan Steps, and whether Act gets an Adapted Case of its own, apart from Judge's. Today a CBC Run Reading is one of the Concept Deliverer's Plan Steps, and its work follows it. Its trigger: the Adapted Case texts written from these rules.
+  - whether Read Changes, Judge and Act are one of the Maintainer Repo's Plan Steps, and whether Act gets an Adapted Case of its own, apart from Judge's. Today a CBC Run Reading is one of the Concept Deliverer's Plan Steps, and its work follows it. Its trigger: the Adapted Case texts written from these rules.
 - **Today:**
   - borrowed: a taken change is committed here, and the next delivery carries it (`docs/conventions/exchange/` §6.5, *Verdicts*). It is depth b's path, and the other depths'.
 
@@ -571,14 +571,14 @@ Two steps:
   - f. on a branch of its own, one commit per part, a gate last, main moving by fast-forward at the gate's close;
   - g. as the first commit of the System Repo's next Plan Step;
   - h. as the System Repo's Plan Step, for the Take alone;
-  - i. as one commit on main, Read's rule narrowed so that only the work of the System Repo's Plan Steps waits for a gate.
+  - i. as one commit on main, Read Changes' rule narrowed so that only the work of the System Repo's Plan Steps waits for a gate.
 - **Chosen:** b, e and f. The others:
   - a lands in the middle of a step, which then runs on two sets of rules;
   - c takes the Update over Changes not yet read. The Update answered none of them, and clearing their Records loses them before they are read;
   - d keeps Records that say how a Copy differed from the old System Kit. After the Take some describe nothing, and none says how the Copy differs from the new one;
   - g leaves main on the old Version until the step's gate closes, so naming the System Repo to update in between finds the Update due again;
   - h gives the Take an opening, as the System Repo's Plan Steps have, for work the Update Note already orders. f keeps what it needs from one: the gate;
-  - i narrows Read's rule, that main moves only at a gate's close, for the Take alone. f keeps the rule whole, its gate checking that the Take finished.
+  - i narrows Read Changes' rule, that main moves only at a gate's close, for the Take alone. f keeps the rule whole, its gate checking that the Take finished.
 
   **Before the Take.** The opening order is fixed: reading back, judging, then the Update. An open Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A System Repo's Plan Step open when the human returns finishes on the old Copies first, and the human names the System Repo to update at the next opening (§7, step 1, *When one is due*). The Take checks first, from the Update Note, what the System Repo itself can see:
   - case 1, its main is still the *settled snapshot* the Update Note names: the Update is taken. Its Version needs no check of its own: it is recorded in main, so it cannot change while main stands still;

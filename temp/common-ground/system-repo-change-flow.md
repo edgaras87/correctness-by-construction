@@ -108,7 +108,7 @@ The System Repo takes an Update at the opening of the System Repo's next Plan St
 
 ### A look's cases
 
-A look at main makes two checks, and with Deliver's check, whether an Update is due, ends in one of five cases: A, B, C1, C2 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read, with the look and its case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. The examples are pure, as the simulation is: every Change is taken into the System Kit (`temp/common-ground/system-repo-change-simulation.md` §2, *Known, not ruled*). Above each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
+A look at main makes two checks, and with Deliver's check, whether an Update is due, ends in one of five cases: A, B, C1, C2 and D2 (`temp/common-ground/system-repo-change-simulation.md` §4, step 1, *A look at main*). Each case is drawn on its own. Three lines split each picture into before, now and after. Now holds the Maintainer Repo's parts, in the simulation's order: Read Changes, with the look and its case, Judge, Act on the verdicts and Deliver. The System Repo's parts, a Change and the Take, stand in before and after. The examples are pure, as the simulation is: every Change is taken into the System Kit (`temp/common-ground/system-repo-change-simulation.md` §2, *Known, not ruled*). Above each picture, a table gives that example's answers to the look's checks; check 2 is asked only when main moved, so A and B show "—". What defines each case is the simulation's table.
 
 #### Case A, nothing follows
 
@@ -128,7 +128,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
  before the System Repo's next Plan Step, the       ┊
  human has the Maintainer Repo look at it           ┊
  (§8, Before the Take):                             ┊
- Read (§4):                                         ┊
+ Read Changes (§4):                                 ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c1, the settled snapshot.       ┊
    Main has not moved: nothing to read              ┊
@@ -167,7 +167,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
  before the System Repo's next Plan Step, the       ┊
  human has the Maintainer Repo look at it           ┊
  (§8, Before the Take):                             ┊
- Read (§4):                                         ┊
+ Read Changes (§4):                                 ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c1, the settled snapshot.       ┊
    Main has not moved: nothing to read              ┊
@@ -224,7 +224,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
  before the System Repo's next Plan Step, the       ┊
  human has the Maintainer Repo look at it           ┊
  (§8, Before the Take):                             ┊
- Read (§4):                                         ┊
+ Read Changes (§4):                                 ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
@@ -272,7 +272,7 @@ A look at main makes two checks, and with Deliver's check, whether an Update is 
  before the System Repo's next Plan Step, the       ┊
  human has the Maintainer Repo look at it           ┊
  (§8, Before the Take):                             ┊
- Read (§4):                                         ┊
+ Read Changes (§4):                                 ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
@@ -332,7 +332,7 @@ The example's Update brings back the System Repo's own lesson: depth b, the Syst
  before the System Repo's next Plan Step, the       ┊
  human has the Maintainer Repo look at it           ┊
  (§8, Before the Take):                             ┊
- Read (§4):                                         ┊
+ Read Changes (§4):                                 ┊
    the look at main (§4, step 1):                   ┊
    check 1: main is c3, past the settled            ┊
    snapshot, c1. Main has moved                     ┊
