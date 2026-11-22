@@ -209,7 +209,7 @@ So the six parts are one movement: up from layer 4, as high as the Copy Change h
 
 **Bringing a System Repo up to date.** It is a second job, which needs the first. It runs only when the human names the System Repo to update, and starts with a Look for Lessons. Its check, whether a Kit Update is due, belongs to Deliver the Kit Update. It comes after Act on the verdicts, since the System Kit moves for a Copy Change only once it is judged and acted on (§3.2.5).
 
-Each of the simulation's depths names the highest layer a Copy Change reaches (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*). The arrows each travels:
+Each of the simulation's depths names the highest layer a Copy Change reaches (§3.2.7). The arrows each travels:
 
 | Depth | Arrows it travels |
 |---|---|
@@ -221,7 +221,7 @@ Each of the simulation's depths names the highest layer a Copy Change reaches (`
 | e. it asks to narrow the idea above | *Copy Change, read back*; *Kit Update* |
 | f. several Adapted Cases need it, but not all | *Copy Change, read back*; *Kit Update* |
 
-Depth f's gap, text shared by several Adapted Cases but not all, is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*, its row f). Its second case, across Work Domains, is met when `concept/` is labelled general or backend, for the concept's split (`TODO.md`, the item that splits the concept).
+Depth f's gap, text shared by several Adapted Cases but not all, is the simulation's (§3.2.7, its row f). Its second case, across Work Domains, is met when `concept/` is labelled general or backend, for the concept's split (`TODO.md`, the item that splits the concept).
 
 #### 3.2.1 Change a Kit Copy
 
@@ -329,7 +329,7 @@ If none holds, it is a lesson for its Adapted Case, depth b: the Adapted Case ga
 - a lesson for its Adapted Case, depth b;
 - held, with its trigger.
 
-Lines under one reason share one verdict, and each line says how its own Kit Copy is affected. No verdict goes down to the System Repo, and what becomes of a Copy Change the System Kit does not take is not ruled (`temp/common-ground/system-repo-change-simulation.md` §2, *Known, not ruled*). What the System Repo gets reaches it with the next Kit Update.
+Lines under one reason share one verdict, and each line says how its own Kit Copy is affected. No verdict goes down to the System Repo, and what becomes of a Copy Change the System Kit does not take is not ruled (§3.2.7, *Known, not ruled*). What the System Repo gets reaches it with the next Kit Update.
 
 **Its Adapted Case.** The Maintainer Repo's, for judging a Repo Reading. It loads when the human starts judging a Repo Reading whose list was checked whole, and says everything above.
 
@@ -422,6 +422,42 @@ The System Repo takes a waiting Kit Update, at the opening of its next Plan Step
 - dropping or restarting the System Repo's open Plan Step so the Kit Update is taken sooner, when the Kit Update changes a rule the step rests on. Its trigger: the first Kit Update the human wants taken before an open step finishes;
 - whether each opening of the System Repo's Plan Steps asks: was this System Repo named to update? Without that question, a System Repo nobody names opens each step on the old Kit Copies, and falls further behind each time. Its trigger: the first time one of the System Repo's Plan Steps opens on old Kit Copies because nobody named the System Repo to update;
 - where in the System Repo the Kit Version and the *version snapshot*'s hash are written. Today a Delivery Take writes one entry with the new Delivery Pin (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Its trigger: the Adapted Case for taking a Kit Update written from these rules.
+
+#### 3.2.7 The cases
+
+A Copy Change varies in two ways. What was changed varies how the System Repo records it, and how the Maintainer Repo finds it; it is the same however deep the Copy Change turns out to go, since that is known only once it is judged. How deep it goes varies how the Maintainer Repo decides, and how the Kit Update is written. The rules above are worked for the first case and depth b. Each row not yet checked is checked when practice first meets it, depth c's by its own item (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it"). How each case was weighed is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*).
+
+| Kind | Case | Status | Differs so far |
+|---|---|---|---|
+| what changed | one Adapted Case, any of its texts | worked, §3.2.1 to §3.2.6 | — |
+| what changed | a Defined Term | not yet checked | — |
+| what changed | delivered Knowledge on Trial | not yet checked | read: compared like any Kit Copy; decided: the original was never proven, so the Copy Change is evidence for its trial |
+| what changed | one reason behind Copy Changes to several Adapted Cases | not yet checked | recorded: one why, naming every Kit Copy it changed; read: the Copy Changes are listed together |
+| how deep | b. the System Kit's Adapted Case changes: layer 3 | worked, §3.2.3 to §3.2.6 | — |
+| how deep | c, at layer 2. the idea above changes: its Work Domain Idea | not yet checked | the other Adapted Cases of that Work Domain Idea are surveyed, the Maintainer Repo's own only when they share it (§3.2.4) |
+| how deep | c, at layer 1. the idea above changes: its Backbone Idea | not yet checked | every Work Domain Idea on that Backbone Idea is surveyed; how far down the survey reaches is open (§3.2.4) |
+| how deep | d. the idea above already holds it: layer 3, or layer 2 | not yet checked | the loss sits at layer 2 when the Work Domain Idea lost a part its Backbone Idea holds: the Work Domain Idea is fixed from its Backbone Idea, then the Adapted Case from the Work Domain Idea. Which other texts are checked for the same loss is open (§3.2.3) |
+| how deep | e. it asks to narrow the idea above: layer 3, or layer 2 | not yet checked | the narrowing goes into the text just below the idea that does not fit, marked with its why (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**, *Narrowing, never shrinking*): the Adapted Case, or the Work Domain Idea when a part of its Backbone Idea does not fit its whole Work Domain. How that is known is open (§3.2.4) |
+| how deep | f. several Adapted Cases need it, but not all: no layer | not yet checked | it cannot enter the idea above. When it holds for every Adapted Case of one Work Domain, it is depth c, at layer 2. Two cases are left: several Adapted Cases of one Work Domain, but not all; and Adapted Cases across Work Domains, but not all (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1). Each Adapted Case gains it, and the same text has no shared home. Open; its trigger: the first change two Adapted Cases need, but not every one |
+
+How deep a Copy Change goes is how high it goes: each depth names the highest layer it changes, since a lesson goes as high as it is true (`temp/common-ground/knowledge-layers-general.md` §3.1, *How the layers fill*). The idea above is the Work Domain Idea an Adapted Case is written from, or the Backbone Idea that one is adapted from.
+
+A stretch of work may hold several Copy Changes, alike or mixed. Each is recorded and read on its own, so they add no row but one: one reason behind Copy Changes to several Adapted Cases.
+
+New text of the System Repo's own, on trial, is not a case here. It comes from no Kit Copy, so it is not a Copy Change. It is Knowledge on Trial, handed over at the System Repo's close (§2.3). It is one of the other sources, below.
+
+**Known, not ruled.** These can happen, and have no rules until practice meets them. Rules once written for them are in git. Each says what can happen, and its trigger:
+
+- **an Attention Note:** a System Repo has something for the Maintainer Repo that no Copy Change carries: a misfit worked around with no Copy Change made, a doubt about a line left as it is, something the System Kit lacked, a Kit Copy no longer used. Its trigger: the first such thing a System Repo needs to tell.
+- **a Copy Change the System Kit does not take:** judged its own, depth a, the Copy Change staying in the System Repo at layer 4; or unsound, misread or held. It stays only in the System Repo's Kit Copy, and the Update Take takes every Kit Copy whole. Whether the Kit Copy keeps it past the Update Take is not ruled. Only such a verdict lets a Look for Lessons end in *Copy Change read* with no Kit Update due after (§3.2.5). Its trigger: the first such verdict.
+- **a verdict sent down:** a verdict the System Repo would act on: unsound, misread, or a proposal that did not hold. In the case worked, every Copy Change is taken, and the Kit Update brings it back with the lesson as its why. A proposal that did not hold is cleared with its Change Record at the Update Take, and the human already decided it when it judged Copy Changes (§3.2.3). Today's Delivery Note sends every verdict (`docs/conventions/exchange/` §6.5, *Verdicts*). Its trigger: the first Copy Change the System Kit does not take, or a System Repo that needs a verdict it was not sent.
+
+**Other sources.** A Copy Change is one source of new knowledge. Others exist, and are not yet taken into account here, each left on purpose until Change is finished:
+- a lesson found in the Maintainer Repo's own work (§3.3). Its start may differ (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it");
+- Knowledge on Trial a System Repo hands over at its close (§4, question 13);
+- new knowledge from the human.
+
+Birth stays outside, as the start: it gives a System Repo its first Kit Copies and its *settled snapshot* (§3.2.2).
 
 ### 3.3 The Maintainer Repo's lessons
 

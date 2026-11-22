@@ -16,7 +16,7 @@ This document simulates the cases of a System Repo's change (§2), step by step.
 
 It shortens ten Defined Terms to their last two words, as the layers document does, in its table (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 
-The scope of that case: a Copy Change may touch the Adapted Understanding Text, an Instruction Text built on it, or both, in either order. Its reason may be the System Repo's own, or one any repo would meet. A stretch of work may hold several Copy Changes (§2). No fixed example is used: each step's choice must hold at each end of this scope.
+The scope of that case: a Copy Change may touch the Adapted Understanding Text, an Instruction Text built on it, or both, in either order. Its reason may be the System Repo's own, or one any repo would meet. A stretch of work may hold several Copy Changes (`temp/common-ground/knowledge-layers.md` §3.2.7, *The cases*). No fixed example is used: each step's choice must hold at each end of this scope.
 
 ## 1. How it is worked
 
@@ -48,39 +48,9 @@ Each step has these fields. A field with nothing in it is left out.
 
 ## 2. The cases
 
-The cases are simulated one at a time. The first is simulated whole; each other case is then checked against it, and what differs is written. A case that grows too complex goes to TODO, to be checked once the Common Ground Problem is finished. The cases are of two kinds:
+The cases are simulated one at a time. The first is simulated whole; each other case is then checked against it, and what differs is written. A case that grows too complex goes to TODO, to be checked once the Common Ground Problem is finished. The cases themselves, what is known but not ruled, and the other sources are the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.7, *The cases*).
 
-- **What was changed:** these vary how the System Repo records its Copy Change, and how the Maintainer Repo finds it. They are the same however deep the Copy Change turns out to go, since that is known only once it is judged.
-- **How deep it goes:** these vary how the Maintainer Repo decides, and how the Kit Update is written.
-
-| Kind | Case | Status | Differs so far |
-|---|---|---|---|
-| what changed | one Adapted Case, any of its texts | simulated, §3 to §8 | — |
-| what changed | a Defined Term | not yet checked | — |
-| what changed | delivered Knowledge on Trial | not yet checked | read: compared like any Kit Copy; decided: the original was never proven, so the Copy Change is evidence for its trial |
-| what changed | one reason behind Copy Changes to several Adapted Cases | not yet checked | recorded: one why, naming every Kit Copy it changed; read: the Copy Changes are listed together |
-| how deep | b. the System Kit's Adapted Case changes: layer 3 | simulated, §5 to §8 | — |
-| how deep | c, at layer 2. the idea above changes: its Work Domain Idea | not yet checked | the other Adapted Cases of that Work Domain Idea are surveyed, the Maintainer Repo's own only when they share it (`temp/common-ground/knowledge-layers.md` §3.2.4, *Act on the verdicts*) |
-| how deep | c, at layer 1. the idea above changes: its Backbone Idea | not yet checked | every Work Domain Idea on that Backbone Idea is surveyed; how far down the survey reaches is open (`temp/common-ground/knowledge-layers.md` §3.2.4, *Act on the verdicts*) |
-| how deep | d. the idea above already holds it: layer 3, or layer 2 | not yet checked | the loss sits at layer 2 when the Work Domain Idea lost a part its Backbone Idea holds: the Work Domain Idea is fixed from its Backbone Idea, then the Adapted Case from the Work Domain Idea. Which other texts are checked for the same loss is open (`temp/common-ground/knowledge-layers.md` §3.2.3, *Judge Copy Changes*) |
-| how deep | e. it asks to narrow the idea above: layer 3, or layer 2 | not yet checked | the narrowing goes into the text just below the idea that does not fit, marked with its why (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, its **Rules**, *Narrowing, never shrinking*): the Adapted Case, or the Work Domain Idea when a part of its Backbone Idea does not fit its whole Work Domain. How that is known is open (`temp/common-ground/knowledge-layers.md` §3.2.4, *Act on the verdicts*) |
-| how deep | f. several Adapted Cases need it, but not all: no layer | not yet checked | it cannot enter the idea above. When it holds for every Adapted Case of one Work Domain, it is depth c, at layer 2. Two cases are left: several Adapted Cases of one Work Domain, but not all; and Adapted Cases across Work Domains, but not all (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1). Each Adapted Case gains it, and the same text has no shared home. Open; its trigger: the first change two Adapted Cases need, but not every one |
-
-How deep a Copy Change goes is how high it goes: each depth names the highest layer it changes, since a lesson goes as high as it is true (`temp/common-ground/knowledge-layers-general.md` §3.1, *How the layers fill*). The idea above is the Work Domain Idea an Adapted Case is written from, or the Backbone Idea that one is adapted from.
-
-A stretch of work may hold several Copy Changes, alike or mixed. Each is recorded and read on its own, so they add no row but one: one reason behind Copy Changes to several Adapted Cases.
-
-New text of the System Repo's own, on trial, is not a case here. It comes from no Kit Copy, so it is not a Copy Change. It is Knowledge on Trial, handed over at the System Repo's close (`temp/common-ground/knowledge-layers.md` §2.3, *The Adapted Case layer*). It is one of the other sources (below).
-
-**Known, not ruled.** These can happen, and have no rules here until practice meets them. Rules once written for them are in git. Each says what can happen, and its trigger:
-
-- **an Attention Note:** a System Repo has something for the Maintainer Repo that no Copy Change carries: a misfit worked around with no Copy Change made, a doubt about a line left as it is, something the System Kit lacked, a Kit Copy no longer used. Its trigger: the first such thing a System Repo needs to tell.
-- **a Copy Change the System Kit does not take:** judged its own, depth a, the Copy Change staying in the System Repo at layer 4; or unsound, misread or held. It stays only in the System Repo's Kit Copy, and the Update Take takes every Kit Copy whole. Whether the Kit Copy keeps it past the Update Take is not ruled. Only such a verdict lets a Look for Lessons end in *Copy Change read* with no Kit Update due after (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*). Its trigger: the first such verdict.
-- **a verdict sent down:** a verdict the System Repo would act on: unsound, misread, or a proposal that did not hold. In the case simulated every Copy Change is taken, and the Kit Update brings it back with the lesson as its why. A proposal that did not hold is cleared with its Change Record at the Update Take, and the human already decided it in Judge Copy Changes. Today's Delivery Note sends every verdict (`docs/conventions/exchange/` §6.5, *Verdicts*). Its trigger: the first Copy Change the System Kit does not take, or a System Repo that needs a verdict it was not sent.
-
-**Other sources.** A Copy Change is one source of the Common Ground Problem. Others exist: a birth, a lesson found in the Maintainer Repo's own work, Knowledge on Trial a System Repo hands over at its close, and new knowledge from the human. They are left on purpose until Change is finished (`TODO.md`, the item "Define the Change idea", its idea on the sources; the Maintainer Repo's own lesson in the item "Simulate depth c, then bring the Change idea to it").
-
-**The whole flow.** The six parts of §1 and the depths of the table above, in one picture. It is a summary: the sections it names hold the facts.
+**The whole flow.** The six parts of §1 and the depths of the layers document's table of cases (`temp/common-ground/knowledge-layers.md` §3.2.7, *The cases*), in one picture. It is a summary: the sections it names hold the facts.
 
 ```
  System Repo               ┆ Maintainer Repo
@@ -106,7 +76,7 @@ New text of the System Repo's own, on trial, is not a case here. It comes from n
 
 At every depth, 5. Deliver the Kit Update brings a Kit Update down.
 
-Key: ● is the Copy Change's path, from its Kit Copy up to the highest layer it changes. ○ is "or up to here", when the case asks it (the table above, rows d and e). The line after the picture follows the layers document's arrows (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). A § is a section of this document.
+Key: ● is the Copy Change's path, from its Kit Copy up to the highest layer it changes. ○ is "or up to here", when the case asks it (that table, rows d and e). The line after the picture follows the layers document's arrows (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). A § is a section of this document.
 
 ## 3. Change a Kit Copy
 
@@ -133,7 +103,7 @@ Two steps:
   - borrowed: an edit comes from something that happened, never a speculation (`delivery/container/.claude/rules/delivered-copies.md`, rule 2; `docs/conventions/exchange/` §5.1, *When a copy may be edited*);
   - borrowed: the rule for changing a copy loads when a copy is touched (`delivery/container/.claude/rules/delivered-copies.md`, its `paths:`);
   - borrowed: the Change Record names which work found the Copy Change, as a Decisions Log entry names the CBC Run's Plan Step (`delivery/container/.claude/rules/delivered-copies.md`, rule 2);
-  - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the System Repo makes it; what becomes of it at the Update Take is not ruled (§2, *Known, not ruled*);
+  - changed: today d is required when the need is the CBC Run's own: "never this CBC Run's own answer", and what only it needs goes in its records (`docs/conventions/exchange/` §5.1). So today forbids an edit for the System Repo's own reason. Here the System Repo makes it; what becomes of it at the Update Take is not ruled (`temp/common-ground/knowledge-layers.md` §3.2.7, *Known, not ruled*);
   - changed: today nothing is written into a copy but the edit, since "a file says how to use it, never its own history", and the why goes in the Decisions Log (`docs/conventions/exchange/` §5.1). Here the why goes in the Kit Copy's Adapted Understanding Text, which is not read while working;
   - changed: today every edit must claim to be for any CBC Run. Here the System Repo proposes, and the Maintainer Repo judges;
   - borrowed: a check fires at the commit because, before, it had to be remembered (`.claude/rules/foundation-check.md`, its header comment). That one is the Maintainer Repo's own.
@@ -241,7 +211,7 @@ Four steps:
 
 ## 5. Judge Copy Changes
 
-§5 to §8 are simulated first for depth b, the System Kit's Adapted Case changing: the shortest path into the System Kit through every step. Depth c, the idea above changing, at either layer, is then checked against them (§2, the "how deep" rows).
+§5 to §8 are simulated first for depth b, the System Kit's Adapted Case changing: the shortest path into the System Kit through every step. Depth c, the idea above changing, at either layer, is then checked against them (`temp/common-ground/knowledge-layers.md` §3.2.7, *The cases*).
 
 Two steps:
 
@@ -283,7 +253,7 @@ Two steps:
 - **Its rules:** the layers document's (`temp/common-ground/knowledge-layers.md` §3.2.3, *Judge Copy Changes*).
 - **Today:**
   - borrowed: a verdict carries its why (`docs/conventions/exchange/` §6.5, *Verdicts*);
-  - changed: today every verdict goes down in the Delivery Note (`docs/conventions/exchange/` §6.5). Here the verdict is the Maintainer Repo's, and none goes down (§2, *Known, not ruled*);
+  - changed: today every verdict goes down in the Delivery Note (`docs/conventions/exchange/` §6.5). Here the verdict is the Maintainer Repo's, and none goes down (`temp/common-ground/knowledge-layers.md` §3.2.7, *Known, not ruled*);
   - changed: today a verdict is taken, declined or held (`docs/conventions/exchange/` §6.5). Here it is a depth, or unsound, misread, covered or held;
   - changed: today no verdict answers a proposal, since every edit claims to be for any CBC Run (`docs/conventions/exchange/` §5.1). Here each says whether the proposal holds.
 
@@ -329,7 +299,7 @@ Two steps:
   - borrowed: the Delivery Note carries what is gone (`docs/conventions/exchange/` §3.6, *Absence in a delivery*);
   - borrowed: one CBC Run Reading is open per CBC Run at a time, and a new read extends it (`.claude/skills/exchange-read/SKILL.md`, Stage 4);
   - changed: today every read ends with a Delivery Note, even an empty one, to carry the Read-Through Commit (`docs/conventions/exchange/` §6.6). Here a Kit Update goes only when it carries a System Kit change;
-  - changed: today the Delivery Note gives a verdict on everything the CBC Run addressed to the Concept Deliverer (`docs/conventions/exchange/` §3.7). Here none goes down (§2, *Known, not ruled*).
+  - changed: today the Delivery Note gives a verdict on everything the CBC Run addressed to the Concept Deliverer (`docs/conventions/exchange/` §3.7). Here none goes down (`temp/common-ground/knowledge-layers.md` §3.2.7, *Known, not ruled*).
 
 **Step 2. The Kit Update is delivered.**
 
@@ -381,6 +351,6 @@ Two steps:
   - changed: today nothing at the Delivery Take is decided at a gate. Here the Update Take's gate checks that the Update Take finished;
   - borrowed: being behind the Concept Deliverer is acceptable (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). A System Repo not named to update is that;
   - changed: today an edit made after the Read-Through Commit is re-applied on top, its record standing (`delivery/container/.claude/rules/delivered-copies.md`, rule 5, step 3). Here the opening order leaves no such edit;
-  - changed: today a declined edit is gone at the Delivery Take, and never edited back in (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here what becomes of a Copy Change the System Kit did not take is not ruled (§2, *Known, not ruled*);
+  - changed: today a declined edit is gone at the Delivery Take, and never edited back in (`delivery/container/.claude/rules/delivered-copies.md`, rule 5). Here what becomes of a Copy Change the System Kit did not take is not ruled (`temp/common-ground/knowledge-layers.md` §3.2.7, *Known, not ruled*);
   - changed: today work continues on the edited copy when a CBC Run's Plan Step opens before the reply (`delivery/container/.claude/rules/delivered-copies.md`, rule 6). Here the next step waits for the Update Take, once the human has named the System Repo to update.
 

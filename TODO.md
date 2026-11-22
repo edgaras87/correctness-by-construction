@@ -82,13 +82,7 @@
         rule, each adaptation "changed alone", narrowed to variants
         first, and a rule that a Work Domain Idea may stand on
         another;
-      - the sources not yet taken into account, each named: the
-        Maintainer Repo's own lesson, the layers document's §3.3,
-        and Knowledge on Trial handed back; birth stays outside, as
-        the start;
-      - the flow drawing needs no change for the layers model;
-      - the other six rows of the simulation's §2 table move as not
-        yet checked, each checked when practice first meets it.
+      - the flow drawing needs no change for the layers model.
       Trigger: due now, the simulation and the problem file checked
       (`2b9477a5`, and the idea above): one home for each fact
       across the drafts, the facts of Change moved out of the
