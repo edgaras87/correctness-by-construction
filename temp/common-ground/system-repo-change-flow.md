@@ -1,7 +1,7 @@
 # A System Repo's Copy Change, as a Flow
 
 <!-- A draft of the knowledge work (ADR-0082). It pictures the System Repo's commits in the round of
-     a Copy Change, as temp/common-ground/knowledge-layers.md §3.2
+     a Copy Change, as knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §3.2
      rules it, and the part acting on each, and the Maintainer
      Repo's choices. The facts live in the layers document, never
      here. "Now" pictures its rules as they are.
@@ -12,7 +12,7 @@
      landed in the rewrite into the layers model, and git keeps every
      version. -->
 
-It uses the layers document's short forms: Copy Change, Change Record, Kit Copy, Kit Update, Update Note, Update Take, Kit Version, Repo Reading, Repo Register (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
+It uses the layers document's short forms: Copy Change, Change Record, Kit Copy, Kit Update, Update Note, Update Take, Kit Version, Repo Reading, Repo Register (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
 
 ## 1. What the reader must get
 
@@ -37,7 +37,7 @@ Each drawing is checked against these.
 
 ### The two jobs
 
-What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A Look for Lessons runs when the human names a System Repo for its lessons, and ends once Act is done (`temp/common-ground/knowledge-layers.md` §3.2, *How a change travels*). A Kit Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the Look for Lessons runs first, then the check in Deliver the Kit Update (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*). A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). Each step names its section of the simulation, which points at its rules.
+What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A Look for Lessons runs when the human names a System Repo for its lessons, and ends once Act is done (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2, *How a change travels*). A Kit Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the Look for Lessons runs first, then the check in Deliver the Kit Update (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.5, *Deliver the Kit Update*). A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.2, *Read Copy Changes*). Each step names its section of the simulation, which points at its rules.
 
 ```mermaid
 flowchart TD
@@ -69,7 +69,7 @@ flowchart TD
 
 ### The Update Take
 
-The System Repo takes a Kit Update at the opening of the System Repo's next Plan Step, on a branch of its own (`temp/common-ground/knowledge-layers.md` §3.2.6, *Take the Kit Update*). It is drawn once, here, where the update job ends (*The two jobs*, above). "Item" names an item of its *At the Update Take, in order*.
+The System Repo takes a Kit Update at the opening of the System Repo's next Plan Step, on a branch of its own (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.6, *Take the Kit Update*). It is drawn once, here, where the update job ends (*The two jobs*, above). "Item" names an item of its *At the Update Take, in order*.
 
 ```
  Maintainer Repo                                   main      branches                               System Repo
@@ -109,7 +109,7 @@ The System Repo takes a Kit Update at the opening of the System Repo's next Plan
 
 ### The Look for Lessons' cases
 
-A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`temp/common-ground/knowledge-layers.md` §3.2.2, *Read Copy Changes*). Each case is drawn on its own. Three lines split each picture into before, now and after. Before holds the System Repo's commits since the *settled snapshot*. Now holds the Maintainer Repo's parts, in the simulation's order: Read Copy Changes, with the two checks, Judge Copy Changes, and Act on the verdicts. After holds the new *settled snapshot*; what may follow is listed once, below the pictures. Deliver the Kit Update and Take the Kit Update are outside the Look for Lessons: *The two jobs* draws when they follow, and *The Update Take* draws the Update Take. The examples are pure, as the simulation is: every Copy Change is taken into the System Kit (`temp/common-ground/knowledge-layers.md` §3.2.7, *Known, not ruled*). Above each picture, a table gives that example's answers to the two checks; check 2 is asked only when main moved, so *not moved* shows "—". What defines each case is the simulation's table.
+A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.2, *Read Copy Changes*). Each case is drawn on its own. Three lines split each picture into before, now and after. Before holds the System Repo's commits since the *settled snapshot*. Now holds the Maintainer Repo's parts, in the simulation's order: Read Copy Changes, with the two checks, Judge Copy Changes, and Act on the verdicts. After holds the new *settled snapshot*; what may follow is listed once, below the pictures. Deliver the Kit Update and Take the Kit Update are outside the Look for Lessons: *The two jobs* draws when they follow, and *The Update Take* draws the Update Take. The examples are pure, as the simulation is: every Copy Change is taken into the System Kit (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.7, *Known, not ruled*). Above each picture, a table gives that example's answers to the two checks; check 2 is asked only when main moved, so *not moved* shows "—". What defines each case is the simulation's table.
 
 #### Case *not moved*
 
@@ -229,7 +229,7 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
 
 ### The update job's outcomes
 
-A Kit Update when work resumes, the second job, runs when the human names the System Repo to update, and starts with a Look for Lessons (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*). It ends in one of four outcomes: *not behind*, *step open*, *taken* and *refused*. Before staging, it may pause for the human's word or a clean tree (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*); *taken* draws the pause. Each outcome is drawn on its own, split into before, now and after; *refused* adds a band for main moving before the Update Take, and one for the Update Take's check. The example: Kit Version 1 in the System Repo, Kit Version 2 the newest; the Look for Lessons ends in case *not moved*, drawn above. The Update Take is drawn once, in *The Update Take*, and *taken* points at it.
+A Kit Update when work resumes, the second job, runs when the human names the System Repo to update, and starts with a Look for Lessons (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.5, *Deliver the Kit Update*). It ends in one of four outcomes: *not behind*, *step open*, *taken* and *refused*. Before staging, it may pause for the human's word or a clean tree (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.5, *Deliver the Kit Update*); *taken* draws the pause. Each outcome is drawn on its own, split into before, now and after; *refused* adds a band for main moving before the Update Take, and one for the Update Take's check. The example: Kit Version 1 in the System Repo, Kit Version 2 the newest; the Look for Lessons ends in case *not moved*, drawn above. The Update Take is drawn once, in *The Update Take*, and *taken* points at it.
 
 #### *not behind*
 
@@ -381,4 +381,4 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
    replaces the waiting one (§7, step 1)            │
 ```
 
-**A Kit Update at the newest Kit Version.** A Kit Update is always made at the newest Kit Version. When the Look for Lessons ends in *Copy Change read*, Act may raise the Kit Version first: the Kit Update is then made at that Kit Version, and brings the System Repo's own lesson back. If the System Kit moves after it is made, the Kit Update is still taken, and the next brings the rest (`temp/common-ground/knowledge-layers.md` §3.2.6, *Take the Kit Update*).
+**A Kit Update at the newest Kit Version.** A Kit Update is always made at the newest Kit Version. When the Look for Lessons ends in *Copy Change read*, Act may raise the Kit Version first: the Kit Update is then made at that Kit Version, and brings the System Repo's own lesson back. If the System Kit moves after it is made, the Kit Update is still taken, and the next brings the rest (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.6, *Take the Kit Update*).

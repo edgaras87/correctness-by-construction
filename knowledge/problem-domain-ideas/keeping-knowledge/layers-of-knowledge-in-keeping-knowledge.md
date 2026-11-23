@@ -1,10 +1,10 @@
-# The layers of knowledge
+# The layers of knowledge, in keeping knowledge
 
 <!--
 What it is: a Problem Domain Idea of the Maintainer Repo's own Problem Domain, keeping knowledge (§2.2), and its one home. Still a draft and a trial: practice changes it.
 What it stands on: knowledge/backbone-ideas/layers-of-knowledge.md, the layers in any Problem Domain. It adapts that document, and never retells it.
 What stands on it: other texts point here, and never retell it.
-Its place in the repo: decided when today's Maintainer Repo is brought into it (TODO.md, the item on the layers of knowledge).
+Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
 Where it started: TODO-CONVERSATION-MEMORY.md §35, *The layers of knowledge*.
 Its first sources, input and not rules:
 - temp/common-ground/common-ground-problem.md §2.1 and §3;

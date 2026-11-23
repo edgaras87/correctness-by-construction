@@ -42,9 +42,9 @@ Defined Terms, in alphabetical order:
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
 - **Knowledge on Trial:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.1, *How the layers fill*).
 - **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
-- **Look for Lessons:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **Maintainer Repo:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **Maintainer Repo Register:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
+- **Look for Lessons:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **Maintainer Repo:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **Maintainer Repo Register:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
 - **Problem Domain:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The layers*).
@@ -52,17 +52,17 @@ Defined Terms, in alphabetical order:
 - **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
 - **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
-- **System Kit:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Attention Note:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Copy:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Copy Change:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Copy Change Record:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Update:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Update Note:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Update Take:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Kit Version:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Repo:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
-- **System Repo Reading:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
+- **System Kit:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **System Kit Attention Note:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **System Kit Copy:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **System Kit Copy Change:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **System Kit Copy Change Record:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **System Kit Update:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **System Kit Update Note:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **System Kit Update Take:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **System Kit Version:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **System Repo:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
+- **System Repo Reading:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
 - **Understanding Text:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The layers*).
@@ -127,8 +127,8 @@ The Maintainer Repo keeps:
 2. understanding of the concept, CBC system design;
 3. the System Kit, for every System Repo to work from (below, *What the System Kit holds*);
 4. its own Adapted Case of agent work, updated as the project-agnostic understanding changes;
-5. findings from System Repos. A System Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other System Repos. The Maintainer Repo reads the System Kit Copy Changes back and judges each, by its Adapted Case for judging a System Repo Reading (`temp/common-ground/knowledge-layers.md` §3.2.3, *Judge Copy Changes*);
-6. System Kit Updates for System Repos, taken when work resumes in one (`temp/common-ground/knowledge-layers.md` §3.2.5, *Deliver the Kit Update*; §3.2.6, *Take the Kit Update*): a System Repo born earlier takes every System Kit Copy whole, at the newest System Kit Version, with the why of each change since its own;
+5. findings from System Repos. A System Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other System Repos. The Maintainer Repo reads the System Kit Copy Changes back and judges each, by its Adapted Case for judging a System Repo Reading (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.3, *Judge Copy Changes*);
+6. System Kit Updates for System Repos, taken when work resumes in one (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.5, *Deliver the Kit Update*; §3.2.6, *Take the Kit Update*): a System Repo born earlier takes every System Kit Copy whole, at the newest System Kit Version, with the why of each change since its own;
 7. its own records: the history and the backlog of this work.
 8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' System Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches that System Repo by a System Kit Update, judged there like any other change.
 
@@ -138,15 +138,15 @@ Each System Repo:
 2. keeps understanding of its own problem: one specific system's design;
 3. keeps its own records, started from the record forms in its System Kit;
 4. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back;
-5. takes System Kit Updates by its copy of the Adapted Case for taking them, and may change any part of it (`temp/common-ground/knowledge-layers.md` §3.2.6, *Take the Kit Update*).
+5. takes System Kit Updates by its copy of the Adapted Case for taking them, and may change any part of it (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.6, *Take the Kit Update*).
 
 #### What the System Kit holds
 
-What the System Kit holds is the layers model's (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
+What the System Kit holds is the layers model's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
 
 #### What passes between the repos
 
-What passes between the Maintainer Repo and the System Repos is the layers model's (`temp/common-ground/knowledge-layers.md` §3.1, *The arrows*).
+What passes between the Maintainer Repo and the System Repos is the layers model's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.1, *The arrows*).
 
 How a System Kit Copy Change read back travels, in six parts, is below (*A System Repo's change*).
 
@@ -213,8 +213,8 @@ Where text is kept today, in the Maintainer Repo, on each of the five Knowledge 
 | TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own | layer 4, as the devlog |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo | not yet sorted |
 | The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files | not yet sorted |
-| Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a System Repo | 4, the repo's own (`temp/common-ground/knowledge-layers.md` §2.3, *The Adapted Case layer*) |
-| System Kit Copy | both: each an Adapted Case; the description of CBC system design is understanding alone (`temp/common-ground/knowledge-layers.md` §4, *Open questions*, question 6) | now | the agent in the System Repo | each System Repo | 3, used in 4 |
+| Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a System Repo | 4, the repo's own (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2.3, *The Adapted Case layer*) |
+| System Kit Copy | both: each an Adapted Case; the description of CBC system design is understanding alone (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4, *Open questions*, question 6) | now | the agent in the System Repo | each System Repo | 3, used in 4 |
 | The Repo Responsibility, §2's lists | understanding | later | both | the Maintainer Repo | not yet sorted |
 
 ### 3.1 Who uses the text
@@ -301,7 +301,7 @@ The two repos are not the two sides of §1. The human and the agent work in both
 
 ### 3.5 The layer of text
 
-A text also sits in a layer of knowledge, by how close it is to an idea's backbone: from layer 1, bound to no Problem Domain, to layer 4, the work done by a text. What each layer holds, and where each is kept, is the layers model's (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
+A text also sits in a layer of knowledge, by how close it is to an idea's backbone: from layer 1, bound to no Problem Domain, to layer 4, the work done by a text. What each layer holds, and where each is kept, is the layers model's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
 
 ## 4. What goes wrong
 

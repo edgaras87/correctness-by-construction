@@ -41,7 +41,7 @@
       Context: the draft is two documents: the layers in any
       Problem Domain, `knowledge/backbone-ideas/layers-of-knowledge.md`, and
       the Maintainer Repo's Problem Domain Idea of them,
-      `temp/common-ground/knowledge-layers.md`. It is the minimum
+      `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`. It is the minimum
       written where how to keep knowledge is not yet known, a trial:
       practice changes it, and the ideas around it, such as Change.
       Each document's §4 holds its open questions. The layers
@@ -126,7 +126,7 @@
         simulation's §2 leaves for later: only its start may differ;
       - questions likely met: whether other System Repos fall behind
         too; what the Update Note's why says; at layer 1, how far
-        down the survey reaches (`temp/common-ground/knowledge-layers.md`
+        down the survey reaches (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
         §3.2.4, *Act on the verdicts*, its *Open*).
       Trigger: due now, the Change idea written from depth b in the
       layers document's §3.2.
@@ -236,14 +236,14 @@
       from one example and no repo would be born from it yet. The
       question and its facts are the draft's.
       Trigger: a second Concept Repo.
-      See: `temp/common-ground/knowledge-layers.md` §4, *Open questions*,
+      See: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4, *Open questions*,
       "A Maintainer Kit".
 
 - [ ] Sweep the drafts for words that read as walking commits, where
       Read Copy Changes compares two snapshots (2026-11-13, the
       reviewer).
       Context: Read Copy Changes compares two snapshots and never
-      walks commits (`temp/common-ground/knowledge-layers.md` §3.2.2,
+      walks commits (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.2,
       *Read Copy Changes*). "Runs from … to main" and "across that span"
       read as a walk in the problem file's rules on reading, cut on
       2026-11-19; the same words may stand in other drafts.
@@ -316,7 +316,7 @@
         become scenarios of their own;
       - start from the file's *Open* fields, each with its trigger;
       - the birth scenario gains what
-        `temp/common-ground/knowledge-layers.md` §3.2.2 asks of it:
+        `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.2 asks of it:
         the delivery check writes the System Repo's register row,
         with the *settled snapshot* set to the start;
       - scenarios as checks: how the alert fires was to be decided
@@ -341,7 +341,7 @@
       step of the concept or the
       methods may be lost.
       Ideas:
-      - the three parts as layers (`temp/common-ground/knowledge-layers.md`):
+      - the three parts as layers (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`):
         CBC design as a Backbone Idea in layer 1; its Problem Domain Idea
         for backends in layer 2; framing, slicing and the like as
         Adapted Cases in layer 3, worked by in layer 4 (2026-11-16,
@@ -372,7 +372,7 @@
       Backbone Idea, rewritten from the Agent Model
       (`docs/models/agent.md`). It holds what one piece of agent
       work is: what the agent does, when, where and how
-      (`temp/common-ground/knowledge-layers.md` §2.1, *The Backbone
+      (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2.1, *The Backbone
       Idea layer*). Each Problem Domain holds its own Problem Domain Idea
       of it (§2.2 there).
       Ideas:
