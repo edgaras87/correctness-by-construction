@@ -225,7 +225,8 @@ delivered files below.
   the whole of it stands on: its Canonical Description, or the
   practice it was written under. An Agent Skill, an Agent Rule, an Output
   Shape, a record's form and a Convention Manual standing on an Idea
-  Model carry one; a line that uses a part of a document carries a
+  Model carry one, but for one whose understanding sits in
+  `.claude/understanding/`; a line that uses a part of a document carries a
   Fact Reference to that part instead
   (`docs/conventions/conventions/` §1.3, *The Foundation Line*;
   `docs/conventions/facts-in-sync/` §4, *A Canonical Description's rule*).

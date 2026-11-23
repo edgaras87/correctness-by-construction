@@ -121,6 +121,8 @@ An Approach on Trial carries none: it is first-time work, and stands
 on no Canonical Description until an evaluation places it
 (`docs/models/idea-to-output.md` §4.2, *The upward direction*).
 
+An Agent Skill or Agent Rule whose understanding is written beside it, in `.claude/understanding/`, carries none either. It stands on that text, and that text on one under `knowledge/`, which no value above names. That text's header says what it stands on, and what stands on it. It carries one when the rewrite of today's texts into `knowledge/` brings the Foundation Line there.
+
 What it holds:
 
 - for the method, the concept and its version, `concept v1`;
