@@ -517,6 +517,22 @@
       Trigger: this repo's writing rule is reworked, once the repo is
       fixed.
 
+- [ ] Move this repo's own lines out of the Defined Terms Problem
+      Domain Idea, into this repo's Adapted Case for Defined Terms
+      (2026-11-23, the agent, on the reviewer's question).
+      Context: two lines of
+      `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md`,
+      at layer 2, hold for this repo alone: §4's rule that a name
+      from a text not yet in the layers model, such as a Glossary
+      Name, is borrowed the same way, needed only while the rewrite
+      runs; and §6's question 1, which names writing rule 9 and
+      `knowledge/`. A text is written in the layer it belongs to:
+      theirs is layer 4, `.claude/understanding/defined-terms.md`.
+      Trigger: the next change to the Defined Terms Problem Domain
+      Idea, or the rewrite's end, whichever comes first.
+      See: devlog 2026-11-23, the `knowledge/` plan's Defined Terms
+      commits.
+
 - [ ] Decide which names go in the glossary, and how a name one text
       uses alone is kept apart (2026-11-06, the reviewer).
       Context: writing rule 9 sends every defined thing's Glossary Name
