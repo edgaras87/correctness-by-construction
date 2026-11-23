@@ -27,12 +27,12 @@ Borrowed:
 
 Each rule's source is `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md`, by section.
 
-1. **Find a definition by its bold mark.** Search for `**<Defined Term>:**` under `knowledge/` and `.claude/understanding/`, or follow the text's Borrow Table. Read the section only when the definition alone is not enough (§5, *Finding a definition*).
+1. **Find a definition by its bold mark.** Search for `**<Defined Term>:**`, or `**<short form>**` for a short form, under `knowledge/` and `.claude/understanding/`, or follow the text's Borrow Table. Read the section only when the definition alone is not enough (§5, *Finding a definition*).
 2. **Never write a twin.** A Glossary Name that names the same thing is its twin (`temp/common-ground/common-ground-problem.md` §2.2, *Today and what to check*, its table). A Glossary Name with no twin is borrowed like a Defined Term.
-3. **Define or borrow every term you use.** Each Defined Term a text uses is defined in it, or listed in its Borrow Table (§4, *Borrowing a Defined Term*).
-4. **Search for a collision before you define one:** its bold mark under `knowledge/` and `.claude/understanding/`, its words in `docs/glossary.md` and `delivery/*/docs/glossary/`. A hit that is not a listed twin is a collision: one of the two names changes (§5).
-5. **Define it at the highest layer it holds,** in the text's first section, *Its Defined Terms*: alphabetical, each a list item, the Defined Term in bold, a colon, its definition. The Borrow Table follows, under "Borrowed:" (§3, *Where it is defined*).
-6. **Write it by the mark:** two or more words, owner or kind first, each capitalized; a Defined Term it is built on carried whole; bold on its own only where it is defined; a bold lead may hold it, but is never the Defined Term alone with a colon; a short form defined as one (§2, *The mark*).
+3. **Define or borrow every term you use.** Each Defined Term or short form a text uses is defined in it, or listed in its Borrow Table, by the name used. Never define a short form another text defines (§4, *Borrowing a Defined Term*).
+4. **Search for a collision before you define one,** a short form too: its bold mark, with and without the colon, under `knowledge/` and `.claude/understanding/`, its words in `docs/glossary.md` and `delivery/*/docs/glossary/`. A hit that is not a listed twin is a collision: one of the two names changes (§5).
+5. **Define it at the highest layer it holds,** in the text's first section, *Its Defined Terms*: alphabetical, each a list item, the Defined Term in bold, a colon, its definition, a short form at its end as "Short form: **<short form>**.". The Borrow Table follows, under "Borrowed:" (§3, *Where it is defined*).
+6. **Write it by the mark:** two or more words, owner or kind first, each capitalized; a Defined Term it is built on carried whole; bold on its own only where it is defined; a bold lead may hold it, but is never a Defined Term or a short form alone; a short form defined as one (§2, *The mark*).
 
 ---
 
