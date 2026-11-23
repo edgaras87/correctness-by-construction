@@ -1286,3 +1286,14 @@
   Why: ADR-0083; the session's end is where `CLAUDE.local.md` lists
   its steps.
   Rejected: see ADR-0083.
+
+- 2026-11-23 A Paths Rule, `.claude/rules/defined-terms.md`, on
+  `knowledge/**` and `.claude/understanding/**`: this repo's first own
+  Adapted Case, its understanding in
+  `.claude/understanding/defined-terms.md`. It carries no Foundation
+  Line until the rewrite brings one into the layers model.
+  Why: ADR-0085; ADR-0084. The Foundation Line is brought in once,
+  with the facts-in-sync manual, never patched for a path value
+  first (`docs/conventions/conventions/` §1.3).
+  Rejected: an Agent Rule loaded in every session, and an Agent Skill
+  (the understanding's §5); a Foundation Line naming a path now.
