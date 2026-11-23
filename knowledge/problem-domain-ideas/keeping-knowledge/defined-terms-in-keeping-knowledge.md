@@ -76,4 +76,6 @@ An agent reads whatever it opens, and opens a file whole unless told otherwise. 
 
 ## 6. Open questions
 
-None is open now. A question joins this list when work meets one, and leaves it once its answer is in the text above.
+A question joins this list when work meets one, and leaves it once its answer is in the text above.
+
+1. **A hyphenated word:** does it count as one word, toward a Defined Term's two words and its 4? Writing rule 9 says so outside `knowledge/` (`docs/conventions/writing/` §2, *Why each rule*, rule 9). Answered when the first hyphenated Defined Term is defined.

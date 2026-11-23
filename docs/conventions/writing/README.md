@@ -154,6 +154,8 @@ there. The Agent Rule then names that kind and its style. None is named yet.
    English does not. Its Name goes into the glossary in the commit
    that first uses it, pointing at the home that defines it. A word
    whose English meaning is ours has no Name (rule 6).
+
+   Under `knowledge/`, this rule does not apply. A defined thing there follows `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md`, and the glossary does not list it (ADR-0085).
 10. **A section's title names its subject.** A title is read in every
     Fact Reference to its section, where the sentence already says
     the point. A title that states the point says it twice, and it
@@ -221,5 +223,5 @@ stays one page.
 
 ## Where to look
 
-- The decisions: ADR-0053; ADR-0074 to ADR-0079.
+- The decisions: ADR-0053; ADR-0074 to ADR-0079; ADR-0085.
 - The Agent Rule: `delivery/container/.claude/rules/writing.md`.
