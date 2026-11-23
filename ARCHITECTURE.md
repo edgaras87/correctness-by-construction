@@ -246,6 +246,8 @@ TODO-CONVERSATION-MEMORY.md
 CHANGELOG.md         record
 devlog/              record
 concept/             the concept: five chapters, 00-cbc.md first (§1.1)
+knowledge/           the layers model, one folder per layer (ADR-0084)
+└── backbone-ideas/  layer 1: the Backbone Ideas
 docs/
 ├── adr/             record
 ├── conventions/     the manuals and their index (§1.2)
