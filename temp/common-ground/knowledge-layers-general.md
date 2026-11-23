@@ -6,7 +6,7 @@ What stands on it: temp/common-ground/knowledge-layers.md, the Maintainer Repo's
 Its place in the repo: decided with that document's.
 How it is edited:
 - The picture and the text are checked against each other at every change: each label in the picture is explained in the text, each part the text names is in the picture, and what the text says moves where matches the arrows.
-- It gives no example from one Work Domain's work. §2 names two sorts of work only to show what a Work Domain is.
+- It gives no example from one Work Domain's work. §2 names two sorts of work and one kind of project only to show what a Work Domain and a Problem Domain are.
 - A trial, here only: a section's rules close it, in a last paragraph marked Rules, and govern that section. A rule may be split across a section and its subsections.
 -->
 
@@ -43,28 +43,29 @@ This document says what the layers of knowledge are, in any Work Domain, and how
                 adapt    lesson   set apart   adapt lesson set apart
                   ▼         │         │         │      │       │
  Layer 3   ┌────────────────────────────────┐   │      │       │
-           │ Adapted Cases                  │   │      │       │
-           │ an idea written for one use,   │   │      │       │
-           │ for every project of that use: │   │      │       │
+           │ Adapted Cases, one set         │   │      │       │
+           │ for each Problem Domain:       │   │      │       │
            │ understanding and instructions │   │      │       │
            └────────────────────────────────┘   │      │       │
                     │           ▲       ▲       │      │       │
                 worked by    change set apart   │      │       │
                     ▼           │       │       ▼      │       │
  Layer 4   ┌────────────────────────────────────────────────────┐
-           │ Work, and a project's own texts                    │
-           │ done by an Adapted Case, or by an Adapted Case of  │
-           │ the project's own: understanding and instructions  │
+           │ One project: its work, and the texts it works by:  │
+           │ copies of its Problem Domain's Adapted Cases, and  │
+           │ its own: understanding and instructions            │
            └────────────────────────────────────────────────────┘
 ```
 
-Key: each Work Domain Idea names the Backbone Idea it is adapted from (§2.2). The arrows on the right serve a project's own Adapted Case, written where no Adapted Case of layer 3 covers its use (§2.4).
+Key: each Work Domain Idea names the Backbone Idea it is adapted from (§2.2). The arrows on the right serve a project's own Adapted Case, written where none of its Problem Domain's covers a piece of its work (§2.4).
 
 ## 2. The layers
 
 Knowledge sits in four layers. The higher the layer, the closer its text is to an idea's backbone.
 
 A **Work Domain** is a sort of work, such as keeping knowledge, or designing a backend. Each Work Domain adapts the Backbone Ideas it needs to its own work. Different work is a different Work Domain.
+
+A **Problem Domain** is a kind of project, set by the problem its projects share, such as building a backend by CBC. A project's work draws on one or more Work Domains: a Work Domain is a sort of work, and a Problem Domain is a kind of project that does it.
 
 Text comes in two kinds, and the kind runs across the layers. An **Understanding Text** holds what is known, and how it is understood. An **Instruction Text** is built on an Understanding Text, to apply it: what the agent acts on. Layers 1 and 2 hold understanding only. Layers 3 and 4 each hold understanding and instructions.
 
@@ -90,7 +91,9 @@ One Backbone Idea may be adapted more than once in the same Work Domain, as the 
 
 ### 2.3 The Adapted Case layer
 
-Layer 3 holds Adapted Cases. An **Adapted Case** is an idea of layer 2 written for one use, for every project of that use, as its **Adapted Understanding Text**, with the Instruction Texts built on it. Its Adapted Understanding Text says why its Instruction Texts are as they are. So it holds both kinds of text.
+Layer 3 holds Adapted Cases, one set for each Problem Domain. An **Adapted Case** is a Work Domain Idea written for one piece of work, or for what all of a project's work uses, as its **Adapted Understanding Text**, with the Instruction Texts built on it. Its Adapted Understanding Text says why its Instruction Texts are as they are. So it holds both kinds of text.
+
+A Problem Domain's Adapted Cases are true for every project of it, and name none. Its set draws on each Work Domain its projects work in. An Adapted Case's owner says its layer: a Problem Domain's is layer 3, and a project's own is layer 4 (§2.4).
 
 **Rules:**
 
@@ -98,11 +101,11 @@ Layer 3 holds Adapted Cases. An **Adapted Case** is an idea of layer 2 written f
 
 ### 2.4 The layer of work
 
-Layer 4 is one project's work, and the project's own texts. The work is done by an Adapted Case, kept where the work is done or copied there. Where no Adapted Case of layer 3 covers a use, the project writes its own: an idea of layer 2 written for that use in that project alone. It holds understanding and instructions, as an Adapted Case of layer 3 does. What the work teaches changes the text it was done by, where the text does not fit.
+Layer 4 is one project: the work it does, and the texts it works by. Those texts are its copies of its Problem Domain's Adapted Cases, and its own Adapted Cases, written where none of its Problem Domain's covers a piece of its work. Its own are true for it alone. A project whose Problem Domain has no set yet works by its own alone. What the work teaches changes the text it was done by, where the text does not fit.
 
 **Rules:**
 
-- A text true only for its project stays in layer 4. A part of it true for every project of its use goes up to layer 3, by the arrow *set apart*.
+- A text true only for its project stays in layer 4. A part of it true for every project of its Problem Domain goes up to layer 3, by the arrow *set apart*.
 - A project's own Adapted Case is written from the Work Domain Idea above it, on the arrow *adapt*.
 
 ## 3. How knowledge moves
