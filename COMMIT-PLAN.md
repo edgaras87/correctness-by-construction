@@ -51,11 +51,10 @@ ADR-0084, still Proposed, gains the reviewer's reading of 2026-11-23: layer 3 ho
 **4d. `docs: layer 2 sets apart the form and search`**
 The Defined Terms Work Domain Idea takes the parts of commit 5's draft true for any repo keeping knowledge, by the arrow *set apart*: each definition a list item, the line "Borrowed:", the Borrow Table's two columns; and why the agent searches instead of reading a text whole.
 
-**4e. `docs: layer 4 holds a project's own texts`** *(provisional: its exact parts are found at the commit)*
-The general layers document: an Adapted Case is written for every project of its use (§2.3); layer 4 holds a project's own texts, its own Adapted Cases among them, where no layer-3 one covers the use (§2.4); its question 5 answered and gone; the picture to match.
+**4e. `docs: layer 4 holds a project's own texts`**
+One model change, both layers documents, so neither contradicts the other and no renumbered question is pointed at wrongly. The general document: an Adapted Case is written for every project of its use (§2.3); layer 4 holds a project's own texts, its own Adapted Cases among them, written from layer 2 where no layer-3 one covers the use (§2.4); the arrows *adapt*, *lesson* and *set apart* reach layer 4 (§3.2); its question 5 answered and gone; the picture to match. The Maintainer Repo's document: its own Adapted Cases leave layer 3 for layer 4, in `.claude/` (§2.3, §2.3.1, §2.4); the arrow *used in place* goes (§3.1, §3.3); its question 2 answered and gone, and question 12 follows; the picture to match. Every pointer at a renumbered question is fixed, and the problem file's table lines this makes false.
 
-**4f. `docs: the Maintainer Repo's own texts are layer 4`** *(provisional: its exact parts are found at the commit)*
-The Maintainer Repo's document: its own Adapted Cases leave layer 3 for layer 4, in `.claude/` (§2.3, §2.3.1, §2.4); the arrow *used in place* and its lessons follow (§3.1, §3.3); its questions 1 and 12 read again; the picture to match.
+**4f.** Merged into 4e.
 
 **5.** Dropped. Its draft held a layer-4 text; its parts went to 4d and to commit 8.
 
@@ -86,10 +85,10 @@ The Maintainer Repo's document's §2 says where each layer is kept, replacing it
 **11c. `chore(agent): CLAUDE.md points at knowledge/`**
 One line in the Entry File, loaded in every session: `knowledge/` holds the layers model, and where a text goes is the Maintainer Repo's document's §2. A pointer, not a retelling. With §2's rules, it is a small Adapted Case: the rules its understanding, the line its Instruction Text. A Paths Rule would load only once a file under `knowledge/` is read, too late for a session about to place a new idea elsewhere. After 11b, since it points at it.
 
-**12. `docs: the layers document takes Defined Terms`** *(provisional: shaped by commits 3 to 4f)*
+**12. `docs: the layers document takes Defined Terms`** *(provisional: shaped by commits 3 to 4e)*
 The general document's definitions gathered into one section, and its borrow table.
 
-**13. `docs: Maintainer layers doc takes Defined Terms`** *(provisional: shaped by commits 3 to 4f)*
+**13. `docs: Maintainer layers doc takes Defined Terms`** *(provisional: shaped by commits 3 to 4e)*
 The same for the Maintainer Repo's document, its short forms with them. Asked here: the Defined Terms it borrows from the problem file, which stays in `temp/`.
 
 **14. `docs: TODO follows knowledge/ and Defined Terms`**
@@ -111,7 +110,7 @@ Deletes this file; the body records what diverged.
 - **The simulation, the flow file and the problem file stay in `temp/`,** as sources.
 - **Two ADRs, one per decision:** the layout and Defined Terms each stand without the other.
 - **No idea of its own for the layout:** where each layer is kept is what the Maintainer Repo's document adds, by its own table row.
-- **The model changes before the Adapted Case lands** (4e, 4f before 8): the Adapted Case stands at layer 4, which the model says holds a project's own texts only from 4e.
+- **The model changes before the Adapted Case lands** (4e before 8): the Adapted Case stands at layer 4, which the model says holds a project's own texts only from 4e.
 - **The two halves of the Adapted Case in one commit** (8): understanding with no instruction, or the reverse, is not an Adapted Case.
 - **Commit 5's number is kept, and marked dropped,** so the numbers already cited stay true.
 - **The devlog entry comes after the close,** at the session's end.
