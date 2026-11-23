@@ -11,6 +11,8 @@ The Change idea's split forced the question now. Its rules for each part go to A
 
 Where each layer is kept is already the Maintainer Repo's document's to say: its row in its own table of Work Domain Ideas names "where each layer is kept" as what it adds (`temp/common-ground/knowledge-layers.md` §2.2.1, *Keeping knowledge*).
 
+The first text drafted for layer 3, the Maintainer Repo's own Adapted Case for Defined Terms, named this repo's folders, its glossary and its ADRs: a text for this repo, not for any Maintainer Repo. The layers model put such texts at layer 3, "used in place", since no copy stands between them and the work (`temp/common-ground/knowledge-layers.md` §2.3.1, *Keeping knowledge*; §2.4, *The layer of a repo's work*). But the System Kit's Adapted Cases are written for every System Repo, and a Copy Change judged a System Repo's own stays at layer 4 (`temp/common-ground/knowledge-layers.md` §3.2.7, *The cases*). The general document leaves open whether layer 4 holds texts of its own (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 5). In it, layers 3 and 4 both hold understanding and instructions (§2, *The layers*).
+
 ## Options considered
 
 - **Stay in `temp/` until today's Maintainer Repo is brought in.** Rejected: the Change Adapted Cases would be drafted there and moved.
@@ -19,17 +21,24 @@ Where each layer is kept is already the Maintainer Repo's document's to say: its
 - **Short file names,** such as `layers-in-the-maintainer-repo.md`. Rejected: the name would differ from the idea's row in the layers document's tables.
 - **The layout as an idea of its own.** Rejected: it is where this repo keeps its layers, the Maintainer Repo's document's subject, and needed in no other Work Domain.
 - **A Paths Rule on `knowledge/**` to point at the layout.** Rejected: it loads only once a file there is read, too late for a session about to place a new idea elsewhere.
+- **This repo's own Adapted Cases at layer 3, in `adapted-cases/keeping-knowledge/own/`,** used in place. Rejected: no copy between a text and its work does not make the text true for every project of its use.
+- **Layer 4 with its instructions only,** their reasons in a *Decisions* footer and `.claude/decisions.md`. Rejected: layer 4 holds understanding and instructions, as layer 3 does.
+- **A layer-4 folder in `knowledge/`.** Rejected: `knowledge/` holds what the Maintainer Repo keeps as knowledge, layers 1 to 3. Layer 4 is the work, done here through `.claude/`, where the agent loads what it acts on.
 
 ## Decision
 
-1. **The layers model leaves `temp/` for a top folder, `knowledge/`, one folder per layer:** `backbone-ideas/`; `work-domain-ideas/<Work Domain>/`; `adapted-cases/<Work Domain>/`, split into `own/` and `system-repos/` for keeping knowledge. No folder name carries a number. A folder is made when its first file lands.
+1. **The layers model leaves `temp/` for a top folder, `knowledge/`, one folder per layer, for layers 1 to 3:** `backbone-ideas/`; `work-domain-ideas/<Work Domain>/`; `adapted-cases/<Work Domain>/`, for the Adapted Cases written for every project of their use, such as the System Repos'. No folder name carries a number. A folder is made when its first file lands.
 2. **A file is named after its idea, as the layers document's tables list it,** its title matching. The general document is `layers-of-knowledge.md`; the Maintainer Repo's is `layers-of-knowledge-in-the-maintainer-repo.md`.
 3. **The model's place is decided before the change work,** so the Change Adapted Cases are written into their home.
 4. **The layout and the rules for placing a text live in the Maintainer Repo's document's §2.** `CLAUDE.md` points every session at it, in one line.
+5. **Layer 3 holds only what is true for every project of its use; a project's own texts are layer 4.** With no Maintainer Kit, this repo's own Adapted Cases are layer 4, kept whole in `.claude/`: the Instruction Text where the agent loads it, and its understanding beside it in `.claude/understanding/`, which never loads. The two layers documents say so, and the general document's question 5 is answered.
 
 ## Consequences
 
 - The layers item's order, and the Maintainer Repo's document's header line on its place, change: the place is decided first.
-- `ARCHITECTURE.md`'s codemap gains `knowledge/`.
+- `ARCHITECTURE.md`'s codemap gains `knowledge/` and `.claude/understanding/`.
+- `knowledge/adapted-cases/` stays unmade until the first Adapted Case for the System Repos is written.
+- A change to one of this repo's own Adapted Cases, either half, is a commit of the agent's files.
+- If a Maintainer Kit is wanted, the part of this repo's own Adapted Cases true for every Maintainer Repo is set apart up to layer 3.
 - Today's `docs/models/` and `docs/conventions/` stay until what they hold has landed in `knowledge/` (ADR-0082, decision 2). For that while, the repo's understanding stands in two places, the old texts and the new.
 - The simulation, the flow file and the problem file stay in `temp/` as sources. Their pointers at the two documents are fixed when the documents move.
