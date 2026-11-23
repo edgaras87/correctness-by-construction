@@ -224,7 +224,7 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
 **What may follow.** After every case, the same:
 
 - if the human asked for the System Repo's lessons: nothing follows;
-- if the human asked to update the System Repo: the check in Deliver the Kit Update comes next, then the System Repo's next Plan Step opens, with or without a Kit Update (`temp/common-ground/system-repo-change-simulation.md` §7, step 1);
+- if the human asked to update the System Repo: the check in Deliver the Kit Update comes next, then the System Repo's next Plan Step opens, with or without a Kit Update (`temp/common-ground/backend-repo-change-simulation.md` §7, step 1);
 - the System Repo: a Plan Step already open goes on, and the System Repo's next Plan Step opens once the human names the System Repo to update.
 
 ### The update job's outcomes

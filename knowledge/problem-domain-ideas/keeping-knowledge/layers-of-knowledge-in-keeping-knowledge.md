@@ -8,7 +8,7 @@ Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-00
 Where it started: TODO-CONVERSATION-MEMORY.md §35, *The layers of knowledge*.
 Its first sources, input and not rules:
 - temp/common-ground/common-ground-problem.md §2.1 and §3;
-- the simulation's six parts and depths, temp/common-ground/system-repo-change-simulation.md;
+- the simulation's six parts and depths, temp/common-ground/backend-repo-change-simulation.md;
 - temp/model-example/idea-model-problem.md §1 and temp/model-example/layers.md;
 - docs/models/tiers.md.
 How it is edited: the picture and the text are checked against each other at every change, as the general document's header says.
@@ -253,7 +253,7 @@ Depth f's gap, text shared by several Adapted Cases of one Problem Domain but no
 
 #### 4.2.1 Change a Kit Copy
 
-The System Repo changes a Kit Copy during its own work, and the gate of its Plan Step decides each Copy Change. How each rule was chosen is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §3, *Change a Kit Copy*).
+The System Repo changes a Kit Copy during its own work, and the gate of its Plan Step decides each Copy Change. How each rule was chosen is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §3, *Change a Kit Copy*).
 
 **When a Kit Copy changes.** A Kit Copy changes only when the System Repo's work shows it does not fit what happened, never ahead. The human decides the Copy Change, the agent proposing. It is made then, with its Change Record. A Copy Change may be edited or reversed later, its Change Record with it.
 
@@ -281,7 +281,7 @@ The System Repo changes a Kit Copy during its own work, and the gate of its Plan
 
 #### 4.2.2 Read Copy Changes
 
-The Maintainer Repo finds what changed in one System Repo since it last looked, and lists it, judging nothing. How each rule was chosen is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §4, *Read Copy Changes*).
+The Maintainer Repo finds what changed in one System Repo since it last looked, and lists it, judging nothing. How each rule was chosen is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §4, *Read Copy Changes*).
 
 **How it starts.** The human decides which System Repo gets a Look for Lessons, and when. The human names a System Repo, for its lessons or to update it, and the agent compares its main with its *settled snapshot*. When the human asks which System Repos have new work, every one's main is compared with its *settled snapshot*, and nothing more is done. No state is kept: whether a System Repo has work comes from its main and the *settled snapshot*, never from a line someone must keep true.
 
@@ -326,7 +326,7 @@ The agent only reads the System Repo, and writes only in the Maintainer Repo.
 
 #### 4.2.3 Judge Copy Changes
 
-The Maintainer Repo judges each line of the Repo Reading, and writes its verdict. How each rule was chosen is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §5, *Judge Copy Changes*).
+The Maintainer Repo judges each line of the Repo Reading, and writes its verdict. How each rule was chosen is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §5, *Judge Copy Changes*).
 
 **Who judges.** The agent proposes an answer to each question, with what it read; the human decides each line. The System Repo's own view of its Copy Change is input, never the verdict. An empty list gives no verdicts, and only the stop goes on to Act on the verdicts.
 
@@ -368,7 +368,7 @@ Lines under one reason share one verdict, and each line says how its own Kit Cop
 
 #### 4.2.4 Act on the verdicts
 
-The Maintainer Repo makes what each verdict asks, then moves the *settled snapshot*. How each rule was chosen is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §6, *Act on the verdicts*).
+The Maintainer Repo makes what each verdict asks, then moves the *settled snapshot*. How each rule was chosen is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §6, *Act on the verdicts*).
 
 **What each verdict asks.** From each verdict, the Maintainer Repo makes what its depth asks, the agent drafting and the human deciding. For depth b, the lesson is reworded for every System Repo, and the System Kit's Adapted Case gains it. It is committed in the Maintainer Repo, and the System Kit stands at a new Kit Version. The System Repo the lesson came from gets it back with the next Kit Update, though its Kit Copy already holds the Copy Change in its own words.
 
@@ -392,7 +392,7 @@ The Maintainer Repo makes what each verdict asks, then moves the *settled snapsh
 
 #### 4.2.5 Deliver the Kit Update
 
-The Maintainer Repo makes a Kit Update for one System Repo, when its work resumes, and stages it there. How each rule was chosen is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §7, *Deliver the Kit Update*).
+The Maintainer Repo makes a Kit Update for one System Repo, when its work resumes, and stages it there. How each rule was chosen is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §7, *Deliver the Kit Update*).
 
 **When one is due.** A Kit Update is due when the System Repo's Kit Version, which the System Repo holds, is behind the newest. It goes only when it carries a System Kit change. Two Kit Versions are compared by the System Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no System Kit file leaves every System Repo where it was. A System Repo cannot see the Maintainer Repo, so it cannot learn this itself. For depth b, the System Kit has moved for the Copy Change, so a Kit Update is due: it carries the System Kit's Adapted Case at the new Kit Version, with the lesson as its why. Depth c is not yet walked through this part (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it").
 
@@ -424,7 +424,7 @@ The Update Note is no summary of the Maintainer Repo's work, which the System Re
 
 #### 4.2.6 Take the Kit Update
 
-The System Repo takes a waiting Kit Update, at the opening of its next Plan Step. How each rule was chosen is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §8, *Take the Kit Update*).
+The System Repo takes a waiting Kit Update, at the opening of its next Plan Step. How each rule was chosen is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §8, *Take the Kit Update*).
 
 **Before the Update Take.** A Kit Update is taken between two of the System Repo's Plan Steps, when the next is about to open, never in the middle of one, the agent proposing and the human deciding. Before that step opens, in a fixed order: a Look for Lessons runs to main, and the System Repo's Kit Update, when one is due, is made, delivered and taken. Then the step opens on the new Kit Copies, or on the same ones when no Kit Update was due. An open Repo Reading is extended. The human works on one project at a time, so the System Repo waits at little cost. A System Repo's Plan Step open when the human returns finishes on the old Kit Copies first, and the human names the System Repo to update at the next opening (§4.2.5). The Update Take checks first, from the Update Note, what the System Repo itself can see:
 - case 1, its main is still the *settled snapshot* the Update Note names: the Kit Update is taken. Its Kit Version needs no check of its own: it is recorded in main, so it cannot change while main stands still;
@@ -453,7 +453,7 @@ The System Repo takes a waiting Kit Update, at the opening of its next Plan Step
 
 #### 4.2.7 The cases
 
-A Copy Change varies in two ways. What was changed varies how the System Repo records it, and how the Maintainer Repo finds it; it is the same however deep the Copy Change turns out to go, since that is known only once it is judged. How deep it goes varies how the Maintainer Repo decides, and how the Kit Update is written. The rules above are worked for the first case and depth b. Each row not yet checked is checked when practice first meets it, depth c's by its own item (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it"). How each case was weighed is the simulation's (`temp/common-ground/system-repo-change-simulation.md` §2, *The cases*).
+A Copy Change varies in two ways. What was changed varies how the System Repo records it, and how the Maintainer Repo finds it; it is the same however deep the Copy Change turns out to go, since that is known only once it is judged. How deep it goes varies how the Maintainer Repo decides, and how the Kit Update is written. The rules above are worked for the first case and depth b. Each row not yet checked is checked when practice first meets it, depth c's by its own item (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it"). How each case was weighed is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §2, *The cases*).
 
 | Kind | Case | Status | Differs so far |
 |---|---|---|---|

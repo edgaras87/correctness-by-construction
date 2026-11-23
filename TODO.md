@@ -254,7 +254,7 @@
       other (2026-11-12, the reviewer).
       Context: the reviewer asks for a refinement by hand today, and
       the agent chooses the checks each time. On 2026-11-12 nine
-      checks were run on `temp/common-ground/system-repo-change-simulation.md`. An
+      checks were run on `temp/common-ground/backend-repo-change-simulation.md`. An
       Output Shape is read after the work, and changes when an output
       differs from it (`docs/conventions/shapes/` §2.3, *Not a convention*;
       §3, *Where an Output Shape lives*). One run on one document is
