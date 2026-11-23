@@ -1,9 +1,9 @@
-# The layers of knowledge, in general
+# The layers of knowledge
 
 <!--
 What it is: a Backbone Idea (§2.1), and its one home.
 What stands on it: temp/common-ground/knowledge-layers.md, the Maintainer Repo's Problem Domain Idea. Each Problem Domain Idea points here, and never retells it.
-Its place in the repo: decided with that document's.
+Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 How it is edited:
 - The picture and the text are checked against each other at every change: each label in the picture is explained in the text, each part the text names is in the picture, and what the text says moves where matches the arrows.
 - It gives no example from one Problem Domain's work. §2 names one kind of project only to show what a Problem Domain is.

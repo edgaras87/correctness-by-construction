@@ -1,7 +1,7 @@
 # Defined Terms
 
 <!--
-What it is: a Backbone Idea, bound to no Problem Domain, and its one home (temp/common-ground/knowledge-layers-general.md §2.1, The Backbone Idea layer).
+What it is: a Backbone Idea, bound to no Problem Domain, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §2.1, The Backbone Idea layer).
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 Why it is an idea of its own: ADR-0085.
 Its first sources, input and not rules:
@@ -24,9 +24,9 @@ Borrowed:
 
 | Defined Term | Defined in |
 |---|---|
-| Backbone Idea | `temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer* |
-| Problem Domain | `temp/common-ground/knowledge-layers-general.md` §2, *The layers* |
-| Problem Domain Idea | `temp/common-ground/knowledge-layers-general.md` §2.2, *The Problem Domain layer* |
+| Backbone Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §2.1, *The Backbone Idea layer* |
+| Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The layers* |
+| Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §2.2, *The Problem Domain layer* |
 
 ## 2. Why it is marked
 
@@ -53,7 +53,7 @@ A definition written in two texts drifts: one is changed, and the other is not. 
 **Rules:**
 
 - A Defined Term is defined in one text. Every other text that uses it points there, and never retells the definition.
-- A Defined Term every Problem Domain shares is defined here. One several Problem Domains share, but not all, is defined in each one's own adaptation, as any shared text is (`temp/common-ground/knowledge-layers-general.md` §2.2, *The Problem Domain layer*).
+- A Defined Term every Problem Domain shares is defined here. One several Problem Domains share, but not all, is defined in each one's own adaptation, as any shared text is (`knowledge/backbone-ideas/layers-of-knowledge.md` §2.2, *The Problem Domain layer*).
 - A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
 
 ## 5. Plain words

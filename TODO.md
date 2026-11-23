@@ -39,7 +39,7 @@
       today's Maintainer Repo into it; and keep it true from practice
       (2026-11-14, the reviewer).
       Context: the draft is two documents: the layers in any
-      Problem Domain, `temp/common-ground/knowledge-layers-general.md`, and
+      Problem Domain, `knowledge/backbone-ideas/layers-of-knowledge.md`, and
       the Maintainer Repo's Problem Domain Idea of them,
       `temp/common-ground/knowledge-layers.md`. It is the minimum
       written where how to keep knowledge is not yet known, a trial:
@@ -87,7 +87,7 @@
       Cases (2026-11-23, the reviewer).
       Context: the layers document's §3.2.1 to §3.2.6, about 200
       lines, are mostly steps for one use each: layer 3 text at
-      layer 2 (`temp/common-ground/knowledge-layers-general.md` §3.1,
+      layer 2 (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.1,
       *How the layers fill*, its **Rules**). Each part already names
       its Adapted Cases. Left at layer 2, a change to one part's steps
       reads as a change to the Problem Domain Idea, and sets off a
@@ -379,11 +379,11 @@
       - the same shape as the concept's split, the item above;
       - the two Problem Domain Ideas of it are written apart, each its
         Problem Domain's own; what both hold goes up to the Backbone
-        Idea (`temp/common-ground/knowledge-layers-general.md` §2.2,
+        Idea (`knowledge/backbone-ideas/layers-of-knowledge.md` §2.2,
         *The Problem Domain layer*);
       - the piece of work, split off as a Backbone Idea of its own if
         a second Backbone Idea uses it; both then point at it
-        (`temp/common-ground/knowledge-layers-general.md` §2.1, *The
+        (`knowledge/backbone-ideas/layers-of-knowledge.md` §2.1, *The
         Backbone Idea layer*).
       Trigger: with the concept's split.
       See: devlog 2026-11-16 and 2026-11-18, layers 3 and 4 read back.
