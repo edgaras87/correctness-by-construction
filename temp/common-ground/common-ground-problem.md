@@ -29,26 +29,26 @@ Plain words, in a narrow sense:
 
 Defined Terms, in alphabetical order:
 
-- **Adapted Case:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §2.3, *The Adapted Case layer*).
-- **Adapted Understanding Text:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §2.3, *The Adapted Case layer*).
-- **Backbone Idea:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §2.1, *The Backbone Idea layer*).
+- **Adapted Case:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
+- **Adapted Understanding Text:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
+- **Backbone Idea:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
 - **Common Ground Problem:** keeping common ground between the human and the agent from one session to the next, while the text it is built from goes stale; the problem this document states.
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
 - **File Instruction Text:** an Instruction Text the agent loads when a certain kind of file is opened.
-- **Instruction Text:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The layers*). So far it comes in three sorts, by when the agent loads it: Task Instruction Text, Session Instruction Text and File Instruction Text. One read only when needed, such as the Defined Terms, has no sort yet.
+- **Instruction Text:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*). So far it comes in three sorts, by when the agent loads it: Task Instruction Text, Session Instruction Text and File Instruction Text. One read only when needed, such as the Defined Terms, has no sort yet.
 - **Knowledge Axis:** one way of sorting text. There are five: *who uses it*, *time*, *kind*, *where*, *layer* (§3).
 - **Knowledge Drift:** text and knowledge moving apart. The text holds less than the knowledge, or is older than it.
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
-- **Knowledge on Trial:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.1, *How the layers fill*).
+- **Knowledge on Trial:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
 - **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
 - **Look for Lessons:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
 - **Maintainer Repo:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
 - **Maintainer Repo Register:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
-- **Problem Domain:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The layers*).
-- **Problem Domain Idea:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §2.2, *The Problem Domain layer*).
+- **Problem Domain:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
+- **Problem Domain Idea:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
 - **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
 - **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
@@ -65,7 +65,7 @@ Defined Terms, in alphabetical order:
 - **System Repo Reading:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*).
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
-- **Understanding Text:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The layers*).
+- **Understanding Text:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
 
 Labels:
 
@@ -209,7 +209,7 @@ Where text is kept today, in the Maintainer Repo, on each of the five Knowledge 
 |---|---|---|---|---|---|
 | Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo | not yet sorted: the concept holds layers 1 and 2 in one text |
 | Instruction Texts; today, Agent Skills, Agent Rules, the Glossary Names and the forms records start from | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as System Kit Copies in each System Repo, for those in the System Kit | 3 |
-| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own | layer 4, each repo's own text (`knowledge/backbone-ideas/layers-of-knowledge.md` §2.4, *The layer of work*) |
+| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own | layer 4, each repo's own text (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.4, *The layer of work*) |
 | TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own | layer 4, as the devlog |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo | not yet sorted |
 | The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files | not yet sorted |

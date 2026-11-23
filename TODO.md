@@ -87,14 +87,14 @@
       Cases (2026-11-23, the reviewer).
       Context: the layers document's §3.2.1 to §3.2.6, about 200
       lines, are mostly steps for one use each: layer 3 text at
-      layer 2 (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.1,
+      layer 2 (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.1,
       *How the layers fill*, its **Rules**). Each part already names
       its Adapted Cases. Left at layer 2, a change to one part's steps
       reads as a change to the Problem Domain Idea, and sets off a
       survey of every Adapted Case built on it.
       Ideas:
       - stays at layer 2, since Adapted Cases are tied only through
-        the idea above them (the general document's §2.3): what one
+        the idea above them (the general document's §3.3): what one
         part hands the next, such as the Change Record in its Copy
         Change's diff, the *settled snapshot*, a Kit Update's whole
         files and Update Note, main moving only at a gate's close; the
@@ -379,11 +379,11 @@
       - the same shape as the concept's split, the item above;
       - the two Problem Domain Ideas of it are written apart, each its
         Problem Domain's own; what both hold goes up to the Backbone
-        Idea (`knowledge/backbone-ideas/layers-of-knowledge.md` §2.2,
+        Idea (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.2,
         *The Problem Domain layer*);
       - the piece of work, split off as a Backbone Idea of its own if
         a second Backbone Idea uses it; both then point at it
-        (`knowledge/backbone-ideas/layers-of-knowledge.md` §2.1, *The
+        (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.1, *The
         Backbone Idea layer*);
       - `CLAUDE.md` comes in whole then, its Local Rule among its
         lines: no understanding text for one line before the rest

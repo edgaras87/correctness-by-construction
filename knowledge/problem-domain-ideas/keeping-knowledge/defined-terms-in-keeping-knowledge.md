@@ -1,7 +1,7 @@
 # Defined Terms, in keeping knowledge
 
 <!--
-What it is: a Problem Domain Idea of keeping knowledge, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §2.2, The Problem Domain layer).
+What it is: a Problem Domain Idea of keeping knowledge, and its one home (knowledge/backbone-ideas/layers-of-knowledge.md §3.2, The Problem Domain layer).
 What it stands on: knowledge/backbone-ideas/defined-terms.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
 Why it is an idea of its own: ADR-0085.
@@ -23,15 +23,15 @@ Borrowed:
 
 | Defined Term | Defined in |
 |---|---|
-| Adapted Case | `knowledge/backbone-ideas/layers-of-knowledge.md` §2.3, *The Adapted Case layer* |
-| Adapted Understanding Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §2.3, *The Adapted Case layer* |
-| Backbone Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §2.1, *The Backbone Idea layer* |
+| Adapted Case | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
+| Adapted Understanding Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
+| Backbone Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |
 | Fact Reference | `docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is* |
 | Glossary Name | `docs/conventions/writing/` §2, *Why each rule*, rule 9 |
 | Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers* |
-| Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The layers* |
-| Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §2.2, *The Problem Domain layer* |
+| Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
+| Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 
 ## 2. The mark
 
@@ -51,7 +51,7 @@ A Defined Term is defined in the text whose idea it belongs to. A text sits at o
 
 **Rules:**
 
-- A Defined Term is defined at the highest layer it holds, as a lesson goes as high as it is true (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.1, *How the layers fill*).
+- A Defined Term is defined at the highest layer it holds, as a lesson goes as high as it is true (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.1, *How the layers fill*).
 - A text keeps its definitions together in one section, its first, titled *Its Defined Terms*, in alphabetical order, its Borrow Table after them. The plain words it keeps in a narrow sense are written there too. A text that defines and borrows nothing has no such section.
 - Each definition is a list item: the Defined Term in bold, a colon, then its definition.
 - The Borrow Table follows under the line "Borrowed:", in two columns, *Defined Term* and *Defined in*.
