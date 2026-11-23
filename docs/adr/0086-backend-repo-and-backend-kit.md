@@ -1,7 +1,7 @@
 # 0086. Backend Repo and Backend Kit
 
 Date: 2026-11-23
-Status: Proposed, opened under the commit plan for Backend Repo
+Status: Accepted (2026-11-23, in the final records commit of the commit plan for Backend Repo; since it was proposed: the frozen `between-repos-simulation.md` keeps the old names (decision 5))
 
 ## Context
 
@@ -22,9 +22,10 @@ On 2026-11-23, `git grep` over the text unwrapped found 685 uses in 6 living fil
 2. **Maintainer Repo and Maintainer Repo Register stay.**
 3. **The 10 short forms stay,** Kit Copy, Repo Reading and the rest.
 4. **`temp/common-ground/system-repo-change-flow.md` and `system-repo-change-simulation.md` become `backend-repo-change-flow.md` and `backend-repo-change-simulation.md`.**
+5. **The frozen `temp/common-ground/between-repos-simulation.md` keeps System Repo and System Kit.** It was written when they meant a repo and a kit for any kind of system, and says so throughout: "what each System Kit is for. Today there is one, for backends". Renamed, it would read wrong. One line of its header names this. Its TODO item now sorts the draft and drops it, and settles the names first.
 
 ## Consequences
 
-- Every Living Text says the new names. History keeps the old: the devlog, the ADRs before this one, and the parts of `TODO-CONVERSATION-MEMORY.md`.
+- Every Living Text says the new names but the frozen draft (decision 5). History keeps the old: the devlog, the ADRs before this one, and the parts of `TODO-CONVERSATION-MEMORY.md`.
 - The glossary's CBC Run, the twin of Backend Repo, is untouched; it goes in the rewrite.
 - A second Problem Domain's kit needs short forms of its own that share no words with these.
