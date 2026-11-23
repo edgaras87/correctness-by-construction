@@ -69,7 +69,7 @@ The cases are simulated one at a time. The first is simulated whole; each other 
  depth                          b        c, at 2   c, at 1   d         e         f
                                          └─────────── not yet checked ────────────┘
  layer 1  Backbone Idea                            ●
- layer 2  Work Domain Idea               ●         ●         ○         ○
+ layer 2  Problem Domain Idea            ●         ●         ○         ○
  layer 3  Adapted Case          ●        ●         ●         ●         ●
  layer 4  a System Repo's work  ●        ●         ●         ●         ●         ●
  ───────────────────────────────────────────────────────────────────────────────────────────

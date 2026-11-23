@@ -249,7 +249,7 @@ concept/             the concept: five chapters, 00-cbc.md first (§1.1)
 knowledge/           the layers model, one folder per layer (ADR-0084)
 ├── backbone-ideas/  layer 1: the Backbone Ideas
 └── work-domain-ideas/
-                     layer 2: the Work Domain Ideas, by Work Domain
+                     layer 2: the Problem Domain Ideas, by Problem Domain
 docs/
 ├── adr/             record
 ├── conventions/     the manuals and their index (§1.2)

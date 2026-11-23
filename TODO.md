@@ -38,9 +38,9 @@
       to work by; then finish the change work by it; then bring
       today's Maintainer Repo into it; and keep it true from practice
       (2026-11-14, the reviewer).
-      Context: the draft is two documents: the layers in any Work
-      Domain, `temp/common-ground/knowledge-layers-general.md`, and the
-      Maintainer Repo's Work Domain Idea of them,
+      Context: the draft is two documents: the layers in any
+      Problem Domain, `temp/common-ground/knowledge-layers-general.md`, and
+      the Maintainer Repo's Problem Domain Idea of them,
       `temp/common-ground/knowledge-layers.md`. It is the minimum
       written where how to keep knowledge is not yet known, a trial:
       practice changes it, and the ideas around it, such as Change.
@@ -83,14 +83,14 @@
       See: devlog 2026-11-23, later.
 
 - [ ] Split the Change idea: what one part hands the next stays in
-      the Work Domain Idea; each part's own steps go to its Adapted
+      the Problem Domain Idea; each part's own steps go to its Adapted
       Cases (2026-11-23, the reviewer).
       Context: the layers document's §3.2.1 to §3.2.6, about 200
       lines, are mostly steps for one use each: layer 3 text at
       layer 2 (`temp/common-ground/knowledge-layers-general.md` §3.1,
       *How the layers fill*, its **Rules**). Each part already names
       its Adapted Cases. Left at layer 2, a change to one part's steps
-      reads as a change to the Work Domain Idea, and sets off a
+      reads as a change to the Problem Domain Idea, and sets off a
       survey of every Adapted Case built on it.
       Ideas:
       - stays at layer 2, since Adapted Cases are tied only through
@@ -112,7 +112,7 @@
 - [ ] Simulate depth c, then bring the Change idea to it
       (2026-11-22, the reviewer).
       Context: depth c is a lesson that changes the idea above: a
-      Work Domain Idea at layer 2, or a Backbone Idea at layer 1.
+      Problem Domain Idea at layer 2, or a Backbone Idea at layer 1.
       New ideas are written at those layers now, so the case is met
       today. The survey of the layers document's §3.2.4 holds a first
       guess: each text built on the idea is asked whether it still
@@ -342,7 +342,7 @@
       methods may be lost.
       Ideas:
       - the three parts as layers (`temp/common-ground/knowledge-layers.md`):
-        CBC design as a Backbone Idea in layer 1; its Work Domain Idea
+        CBC design as a Backbone Idea in layer 1; its Problem Domain Idea
         for backends in layer 2; framing, slicing and the like as
         Adapted Cases in layer 3, worked by in layer 4 (2026-11-16,
         the reviewer);
@@ -365,20 +365,22 @@
       `TODO-CONVERSATION-MEMORY.md` §33, *CBC design beyond backends*.
 
 - [ ] Rewrite the Agent Model into the layers of knowledge: how an
-      agent works as a Backbone Idea, a Work Domain Idea of it in
-      each Work Domain, and Adapted Cases written from each
+      agent works as a Backbone Idea, a Problem Domain Idea of it in
+      each Problem Domain, and Adapted Cases written from each
       (2026-11-16, the reviewer).
       Context: the layers model plans how an agent works as a
       Backbone Idea, rewritten from the Agent Model
       (`docs/models/agent.md`). It holds what one piece of agent
       work is: what the agent does, when, where and how
       (`temp/common-ground/knowledge-layers.md` §2.1, *The Backbone
-      Idea layer*). Each Work Domain holds its own Work Domain Idea
+      Idea layer*). Each Problem Domain holds its own Problem Domain Idea
       of it (§2.2 there).
       Ideas:
       - the same shape as the concept's split, the item above;
-      - whether the two Work Domain Ideas differ is the layers
-        model's §4, question 10;
+      - the two Problem Domain Ideas of it are written apart, each its
+        Problem Domain's own; what both hold goes up to the Backbone
+        Idea (`temp/common-ground/knowledge-layers-general.md` §2.2,
+        *The Problem Domain layer*);
       - the piece of work, split off as a Backbone Idea of its own if
         a second Backbone Idea uses it; both then point at it
         (`temp/common-ground/knowledge-layers-general.md` §2.1, *The

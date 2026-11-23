@@ -1,20 +1,20 @@
 # Defined Terms
 
 <!--
-What it is: a Backbone Idea, bound to no Work Domain, and its one home (temp/common-ground/knowledge-layers-general.md §2.1, The Backbone Idea layer).
+What it is: a Backbone Idea, bound to no Problem Domain, and its one home (temp/common-ground/knowledge-layers-general.md §2.1, The Backbone Idea layer).
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 Why it is an idea of its own: ADR-0085.
 Its first sources, input and not rules:
 - temp/common-ground/common-ground-problem.md, Defined Terms, the rules its own Defined Terms follow;
 - writing rule 9 (docs/conventions/writing/ §2, Why each rule, rule 9);
 - TODO.md, the item "Decide which names go in the glossary".
-What stands on it: knowledge/work-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md, its Work Domain Idea of keeping knowledge. Each Work Domain Idea points here, and never retells it.
+What stands on it: knowledge/work-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge. Each Problem Domain Idea points here, and never retells it.
 How it is edited:
-- It gives no example from one Work Domain's work.
+- It gives no example from one Problem Domain's work.
 - A trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 
-This document says what a Defined Term is, and what keeps its meaning exact wherever it is read. It names no Work Domain: each Work Domain Idea adapted from it says how its texts mark, define and share their Defined Terms.
+This document says what a Defined Term is, and what keeps its meaning exact wherever it is read. It names no Problem Domain: each Problem Domain Idea adapted from it says how its texts mark, define and share their Defined Terms.
 
 ## 1. Its Defined Terms
 
@@ -25,8 +25,8 @@ Borrowed:
 | Defined Term | Defined in |
 |---|---|
 | Backbone Idea | `temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer* |
-| Work Domain | `temp/common-ground/knowledge-layers-general.md` §2, *The layers* |
-| Work Domain Idea | `temp/common-ground/knowledge-layers-general.md` §2.2, *The Work Domain layer* |
+| Problem Domain | `temp/common-ground/knowledge-layers-general.md` §2, *The layers* |
+| Problem Domain Idea | `temp/common-ground/knowledge-layers-general.md` §2.2, *The Problem Domain layer* |
 
 ## 2. Why it is marked
 
@@ -53,6 +53,7 @@ A definition written in two texts drifts: one is changed, and the other is not. 
 **Rules:**
 
 - A Defined Term is defined in one text. Every other text that uses it points there, and never retells the definition.
+- A Defined Term every Problem Domain shares is defined here. One several Problem Domains share, but not all, is defined in each one's own adaptation, as any shared text is (`temp/common-ground/knowledge-layers-general.md` §2.2, *The Problem Domain layer*).
 - A definition names what it builds on by its Defined Term, never by where it stands in the text, such as "the same idea" or "the two".
 
 ## 5. Plain words
@@ -66,6 +67,4 @@ A plain word may be given a narrow sense in a set of texts, such as "the user" f
 
 ## 6. Open questions
 
-None is answered by the text above. Each is answered when work reaches it: its answer goes into the text above, and the question leaves this list.
-
-1. **A Defined Term several Work Domains share, but not all:** where is it defined? It fits neither one Work Domain Idea nor this document (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 1).
+None is open now. A question joins this list when work meets one, and leaves it once its answer is in the text above.

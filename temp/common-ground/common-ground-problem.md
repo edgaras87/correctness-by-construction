@@ -47,6 +47,8 @@ Defined Terms, in alphabetical order:
 - **Maintainer Repo Register:** defined by the layers model (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
+- **Problem Domain:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*).
+- **Problem Domain Idea:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2.2, *The Problem Domain layer*).
 - **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
 - **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
@@ -64,8 +66,6 @@ Defined Terms, in alphabetical order:
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
 - **Understanding Text:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*).
-- **Work Domain:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*).
-- **Work Domain Idea:** defined by the layers model (`temp/common-ground/knowledge-layers-general.md` §2.2, *The Work Domain layer*).
 
 Labels:
 
@@ -191,7 +191,7 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules |
 | File Instruction Text | an Agent Rule loaded by path, when a file it names is opened |
 | Knowledge on Trial | the Approach on Trial, for ways of working only |
-| Backbone Idea and Work Domain Idea, the layers model's Names | an Idea Model, `docs/models/`; the concept, `concept/`, with its backend case inside it |
+| Backbone Idea and Problem Domain Idea, the layers model's Names | an Idea Model, `docs/models/`; the concept, `concept/`, with its backend case inside it |
 | Adapted Case | no one thing: a convention manual, with the Work Approaches made from it |
 | Adapted Understanding Text | a convention manual, `docs/conventions/` |
 | Defined Term | a Glossary Name, in `docs/glossary.md` |
@@ -301,7 +301,7 @@ The two repos are not the two sides of §1. The human and the agent work in both
 
 ### 3.5 The layer of text
 
-A text also sits in a layer of knowledge, by how close it is to an idea's backbone: from layer 1, bound to no Work Domain, to layer 4, the work done by a text. What each layer holds, and where each is kept, is the layers model's (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
+A text also sits in a layer of knowledge, by how close it is to an idea's backbone: from layer 1, bound to no Problem Domain, to layer 4, the work done by a text. What each layer holds, and where each is kept, is the layers model's (`temp/common-ground/knowledge-layers.md` §2, *The layers*).
 
 ## 4. What goes wrong
 

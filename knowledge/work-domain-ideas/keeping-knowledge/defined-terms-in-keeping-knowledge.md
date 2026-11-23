@@ -1,7 +1,7 @@
 # Defined Terms, in keeping knowledge
 
 <!--
-What it is: a Work Domain Idea of keeping knowledge, and its one home (temp/common-ground/knowledge-layers-general.md §2.2, The Work Domain layer).
+What it is: a Problem Domain Idea of keeping knowledge, and its one home (temp/common-ground/knowledge-layers-general.md §2.2, The Problem Domain layer).
 What it stands on: knowledge/backbone-ideas/defined-terms.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 Its place in the repo: knowledge/work-domain-ideas/keeping-knowledge/ (ADR-0084).
 Why it is an idea of its own: ADR-0085.
@@ -28,10 +28,10 @@ Borrowed:
 | Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |
 | Fact Reference | `docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is* |
 | Glossary Name | `docs/conventions/writing/` §2, *Why each rule*, rule 9 |
+| Problem Domain Idea | `temp/common-ground/knowledge-layers-general.md` §2.2, *The Problem Domain layer* |
 | System Kit | `temp/common-ground/knowledge-layers.md` §2, *The layers* |
 | System Kit Copy | `temp/common-ground/knowledge-layers.md` §2, *The layers* |
 | System Repo | `temp/common-ground/knowledge-layers.md` §2, *The layers* |
-| Work Domain Idea | `temp/common-ground/knowledge-layers-general.md` §2.2, *The Work Domain layer* |
 
 ## 2. The mark
 
@@ -39,7 +39,7 @@ A Defined Term is read by people and by an agent, in Markdown. Each Markdown mar
 
 **Rules:**
 
-- A Defined Term is two or more words, its owner or kind first, each word capitalized: Work Domain Idea, never Idea. A lowercase word is English.
+- A Defined Term is two or more words, its owner or kind first, each word capitalized: Problem Domain Idea, never Idea. A lowercase word is English.
 - A Defined Term built on another carries it whole: Adapted Understanding Text, never Understanding. A short form is the one exception, defined as one (§3).
 - A Defined Term of more than 4 words is a trigger to look for a shorter true one. When none is found, the long one stands.
 - It is bold once, where it is defined, and nowhere else.
@@ -47,7 +47,7 @@ A Defined Term is read by people and by an agent, in Markdown. Each Markdown mar
 
 ## 3. Where it is defined
 
-A Defined Term is defined in the text whose idea it belongs to. A text sits at one layer, so a Defined Term true for a whole Backbone Idea is defined there, not in each Work Domain Idea under it.
+A Defined Term is defined in the text whose idea it belongs to. A text sits at one layer, so a Defined Term true for a whole Backbone Idea is defined there, not in each Problem Domain Idea under it.
 
 **Rules:**
 
