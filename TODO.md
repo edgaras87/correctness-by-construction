@@ -60,6 +60,28 @@
       Trigger: due now.
       See: `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
+- [ ] Rename System Repo and System Kit for their Problem Domain,
+      CBC backend design (2026-11-23, the reviewer).
+      Context: layer 3 is grouped by Problem Domain, a kind of
+      project, and the System Kit is the System Repos' set of Adapted
+      Cases there. "System Repo" and "System Kit" name no Problem
+      Domain, so a second one would make them ambiguous. They are
+      used 682 times in 9 living files, and the Change idea's split
+      and depth c will add more. Until the rename, a System Repo is a
+      repo of CBC backend design.
+      Ideas:
+      - names that carry the Problem Domain, such as CBC Backend Repo
+        and CBC Backend Kit; the short forms, the last two words,
+        mostly stay: Kit Copy, Kit Update, Repo Reading;
+      - the 11 Defined Terms built on the two, and the two file names
+        in `temp/common-ground/` that carry "system-repo";
+      - whether Maintainer Repo needs the same;
+      - the glossary's CBC Run, its twin, goes in the rewrite, not
+        here.
+      Trigger: the commit plan for `knowledge/` closed; before the
+      Change idea's split.
+      See: devlog 2026-11-23, later.
+
 - [ ] Split the Change idea: what one part hands the next stays in
       the Work Domain Idea; each part's own steps go to its Adapted
       Cases (2026-11-23, the reviewer).
@@ -83,8 +105,8 @@
       - one picture of the whole travel at layer 2, chosen by a visual
         comparison; it settles whether the simulation's picture *The
         whole flow* moves or goes.
-      Trigger: the layers model out of `temp/`, and where layer 3's
-      texts are kept decided.
+      Trigger: the layers model out of `temp/`, where layer 3's
+      texts are kept decided, and System Repo and System Kit renamed.
       See: devlog 2026-11-23, later.
 
 - [ ] Simulate depth c, then bring the Change idea to it
