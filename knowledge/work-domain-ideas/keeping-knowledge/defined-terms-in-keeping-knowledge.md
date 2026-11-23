@@ -52,7 +52,9 @@ A Defined Term is defined in the text whose idea it belongs to. A text sits at o
 **Rules:**
 
 - A Defined Term is defined at the highest layer it holds, as a lesson goes as high as it is true (`temp/common-ground/knowledge-layers-general.md` §3.1, *How the layers fill*).
-- A text keeps its definitions together in one section, its first, in alphabetical order, its Borrow Table after them. The plain words it keeps in a narrow sense are written there too.
+- A text keeps its definitions together in one section, its first, titled *Its Defined Terms*, in alphabetical order, its Borrow Table after them. The plain words it keeps in a narrow sense are written there too. A text that defines and borrows nothing has no such section.
+- Each definition is a list item: the Defined Term in bold, a colon, then its definition.
+- The Borrow Table follows under the line "Borrowed:", in two columns, *Defined Term* and *Defined in*.
 - A short form is defined there as well, with the Defined Term it shortens.
 
 ## 4. Borrowing a Defined Term
@@ -67,7 +69,7 @@ A text often uses Defined Terms another text defines. Its Borrow Table points at
 
 ## 5. Finding a definition
 
-The bold mark appears once for each Defined Term, so a search for it finds the definition without reading the text whole. The definitions sit together, so the Defined Terms a definition builds on are usually beside it.
+An agent reads whatever it opens, and opens a file whole unless told otherwise. A text may run to hundreds of lines, and a definition is one of them. The bold mark appears once for each Defined Term, so a search for it finds the definition without reading the text whole. The definitions sit together, so the Defined Terms a definition builds on are usually beside it.
 
 **Rules:**
 
