@@ -209,12 +209,12 @@ Where text is kept today, in the Maintainer Repo, on each of the five Knowledge 
 |---|---|---|---|---|---|
 | Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo | not yet sorted: the concept holds layers 1 and 2 in one text |
 | Instruction Texts; today, Agent Skills, Agent Rules, the Glossary Names and the forms records start from | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as System Kit Copies in each System Repo, for those in the System Kit | 3 |
-| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own | open (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 5) |
-| TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own | open, as the devlog's |
+| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own | layer 4, each repo's own text (`temp/common-ground/knowledge-layers-general.md` §2.4, *The layer of work*) |
+| TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own | layer 4, as the devlog |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo | not yet sorted |
 | The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files | not yet sorted |
-| Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a System Repo | 3 |
-| System Kit Copy | both: each an Adapted Case; the description of CBC system design is understanding alone (`temp/common-ground/knowledge-layers.md` §4, *Open questions*, question 7) | now | the agent in the System Repo | each System Repo | 3, used in 4 |
+| Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a System Repo | 4, the repo's own (`temp/common-ground/knowledge-layers.md` §2.3, *The Adapted Case layer*) |
+| System Kit Copy | both: each an Adapted Case; the description of CBC system design is understanding alone (`temp/common-ground/knowledge-layers.md` §4, *Open questions*, question 6) | now | the agent in the System Repo | each System Repo | 3, used in 4 |
 | The Repo Responsibility, §2's lists | understanding | later | both | the Maintainer Repo | not yet sorted |
 
 ### 3.1 Who uses the text

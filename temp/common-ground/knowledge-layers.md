@@ -36,28 +36,31 @@ This document is the layers of knowledge in the Maintainer Repo's Work Domain: w
           ┆  └──────────────────────┘  └───────────────────────────────────────────────┘  ┆
           ┆     │      ▲       ▲          │      ▲       ▲          │      ▲       ▲      ┆
           ┆   adapt lesson set apart    adapt lesson set apart    adapt lesson set apart  ┆
-          ┆ ┌╌╌╌▼╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌╌╌╌╌╌▼╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌┐    ▼      │       │      ┆
-          ┆ ╎┌──────────────────────┐  ┌──────────────────────┐╎ ┌─────────────────────┐  ┆
-          ┆ ╎│ the System Repos'    │  │ the System Repos'    │╎ │ its own             │  ┆
-          ┆ ╎│ Adapted Cases for    │  │ Adapted Cases for    │╎ │ Adapted Cases       │  ┆
- Layer 3  ┆ ╎│ designing a backend  │  │ keeping knowledge    │╎ │                     │  ┆
-          ┆ ╎│ understanding and    │  │ understanding and    │╎ │ understanding and   │  ┆
-          ┆ ╎│ instructions         │  │ instructions         │╎ │ instructions        │  ┆
-          ┆ ╎└──────────────────────┘  └──────────────────────┘╎ └─────────────────────┘  ┆
-          ┆ ╎ the System Kit                                   ╎            ║             ┆
-          ┆ └╌╌╌╌╌╌╌╌╌╌╌╌│╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌▲╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘            ║             ┆
-          └┄┄┄┄┄┄┄┄┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐           ║             ┆
-                      birth,            Copy Change,            ┆     used in place       ┆
-                    Kit Update           read back              ┆           ║             ┆
-                         ▼                   │                  ┆           ║             ┆
+          ┆ ┌╌╌╌▼╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌╌╌╌╌╌▼╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌┐    │      │       │      ┆
+          ┆ ╎┌──────────────────────┐  ┌──────────────────────┐╎    │      │       │      ┆
+          ┆ ╎│ the System Repos'    │  │ the System Repos'    │╎    │      │       │      ┆
+          ┆ ╎│ Adapted Cases for    │  │ Adapted Cases for    │╎    │      │       │      ┆
+ Layer 3  ┆ ╎│ designing a backend  │  │ keeping knowledge    │╎    │      │       │      ┆
+          ┆ ╎│ understanding and    │  │ understanding and    │╎    │      │       │      ┆
+          ┆ ╎│ instructions         │  │ instructions         │╎    │      │       │      ┆
+          ┆ ╎└──────────────────────┘  └──────────────────────┘╎    │      │       │      ┆
+          ┆ ╎ the System Kit                                   ╎    │      │       │      ┆
+          ┆ └╌╌╌╌╌╌╌╌╌╌╌╌│╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌▲╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘    │      │       │      ┆
+          └┄┄┄┄┄┄┄┄┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄│┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┐   │      │       │      ┆
+                      birth,            Copy Change,            ┆   │      │       │      ┆
+                    Kit Update           read back              ┆   │      │       │      ┆
+                         ▼                   │                  ┆   ▼      │       │      ┆
               ┌─────────────────────────────────────┐           ┆ ┌────────────────────┐  ┆
- Layer 4      │ each System Repo's work,            │           ┆ │ its own work       │  ┆
-              │ by its Kit Copies                   │           ┆ │                    │  ┆
-              └─────────────────────────────────────┘           ┆ └────────────────────┘  ┆
+ Layer 4      │ each System Repo's work,            │           ┆ │ its own work, by   │  ┆
+              │ by its Kit Copies                   │           ┆ │ its own Adapted    │  ┆
+              └─────────────────────────────────────┘           ┆ │ Cases, in .claude/:│  ┆
+                                                                ┆ │ understanding and  │  ┆
+                                                                ┆ │ instructions       │  ┆
+                                                                ┆ └────────────────────┘  ┆
                                                                 └┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┘
 ```
 
-Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame holds what the System Kit copies to each System Repo. A double line joins layer 3 to the work done by it in the same repo, with no Kit Copy between.
+Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame holds what the System Kit copies to each System Repo. On the right, the Maintainer Repo's own Adapted Cases sit in layer 4 with its work, in `.claude/`: they are written for this repo alone, and no Adapted Case of layer 3 holds them (§2.4).
 
 ## 2. The layers
 
@@ -97,7 +100,7 @@ This document shortens ten of these Defined Terms to their last two words:
 
 An *italic* word is a label inside the Defined Term it belongs to. Its other Defined Terms are the general document's, or the Common Ground Problem's (`temp/common-ground/common-ground-problem.md`, *Defined Terms*).
 
-The System Kit is not a layer. It is what is copied to each System Repo, the picture's dashed frame. Each of its parts is an Adapted Case of layer 3: an Adapted Understanding Text with its Instruction Text (§2.3). A part that has only one of the two is open (§4, question 7). So far it holds:
+The System Kit is not a layer. It is what is copied to each System Repo, the picture's dashed frame. Each of its parts is an Adapted Case of layer 3: an Adapted Understanding Text with its Instruction Text (§2.3). A part that has only one of the two is open (§4, question 6). So far it holds:
 
 1. the System Repos' Adapted Cases for keeping knowledge, such as taking a Kit Update (§2.3.1);
 2. their Adapted Cases for designing a backend: agent work, and CBC system design (§2.3.2);
@@ -129,12 +132,12 @@ In each table, a row's description is a summary; the idea's home holds it. Wheth
 
 #### 2.2.1 Keeping knowledge
 
-Worked in every repo. The Maintainer Repo works its Work Domain Ideas by its own Adapted Cases, in place, and each System Repo by its Kit Copies (§2.4).
+Worked in every repo. The Maintainer Repo works its Work Domain Ideas by its own Adapted Cases, and each System Repo by its Kit Copies (§2.4).
 
 | Work Domain Idea | Adapted from | What it adds | Home |
 |---|---|---|---|
 | The layers of knowledge, in the Maintainer Repo | The layers of knowledge | where each layer is kept; how knowledge travels between the repos | this document |
-| How an agent works, keeping knowledge | How an agent works | open (§4, question 10) | planned (`TODO.md`, the item that rewrites the Agent Model) |
+| How an agent works, keeping knowledge | How an agent works | open (§4, question 9) | planned (`TODO.md`, the item that rewrites the Agent Model) |
 
 #### 2.2.2 Designing a backend by CBC
 
@@ -142,7 +145,7 @@ The System Repos' problem, a Work Domain worked in them alone. The Maintainer Re
 
 | Work Domain Idea | Adapted from | What it adds | Home |
 |---|---|---|---|
-| How an agent works, designing a backend | How an agent works | open (§4, question 10) | planned (`TODO.md`, the item that rewrites the Agent Model) |
+| How an agent works, designing a backend | How an agent works | open (§4, question 9) | planned (`TODO.md`, the item that rewrites the Agent Model) |
 | CBC design for backends | CBC design | backends as the kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 
 ### 2.3 The Adapted Case layer
@@ -151,16 +154,13 @@ Layer 3 holds Adapted Cases (`temp/common-ground/knowledge-layers-general.md` §
 
 Here an Adapted Case is written for one piece of agent work, such as reading a System Repo, working one step of its Plan Step, or writing a commit message, or for what all of the agent's work uses, such as the Defined Terms. Its Instruction Text is anything the agent acts on in that work: an Agent Skill, an Agent Rule, the Defined Terms it writes by, or a record form it fills. How many one Adapted Case holds is open (§4). Its Adapted Understanding Text says why the Instruction Text is as it is. The agent uses the Instruction Text in the work, and reads the Adapted Understanding Text only when the Instruction Text is changed. The two travel together: a System Repo's Kit Copy holds both.
 
-Layer 3 is split like layer 2: one part for each Work Domain. The Maintainer Repo keeps both. Keeping knowledge's part holds two groups, the picture's two right boxes (§2.3.1). An Agent Skill or Agent Rule found in two groups is two Adapted Cases, one in each. The two are tied only through the nearest idea above them both (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
+Layer 3 is split like layer 2: one part for each Work Domain. The Maintainer Repo keeps both. Each holds Adapted Cases written for every System Repo. The Maintainer Repo's own Adapted Cases are written for it alone, so they are layer 4 (§2.4). An Agent Skill or Agent Rule found both in the System Kit and among the Maintainer Repo's own is two Adapted Cases, one in each. The two are tied only through the nearest idea above them both (`temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer*).
 
-An Adapted Case may also be written by work no Adapted Case covers, on trial: one kind of Knowledge on Trial (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, the arrow *change*). Either repo writes it. A System Repo's Knowledge on Trial is kept in the System Repo, comes from no Kit Copy, and is handed over at its close.
+Work no Adapted Case covers may write one of the repo's own, on trial: one kind of Knowledge on Trial (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*, the arrow *change*). It is layer 4, the repo's own (§2.4). A System Repo's Knowledge on Trial is kept in the System Repo, comes from no Kit Copy, and is handed over at its close.
 
 #### 2.3.1 Keeping knowledge
 
-Two groups so far:
-
-- **Its own,** the Maintainer Repo's, for itself. So far, apart from its Approaches on Trial, all are written from one Work Domain Idea of §2.2.1: how an agent works, keeping knowledge. The Maintainer Repo works by them in place, with no Kit Copy (§2.4). If a Maintainer Kit is wanted, it is made from them (§4, question 1).
-- **The System Repos',** for keeping a System Repo's own knowledge, such as taking a Kit Update. They are written from §2.2.1's Work Domain Ideas, and are part of the System Kit (§2.3.2).
+The System Repos' Adapted Cases for keeping a System Repo's own knowledge, such as taking a Kit Update. They are written from §2.2.1's Work Domain Ideas, and are part of the System Kit (§2.3.2).
 
 #### 2.3.2 Designing a backend by CBC
 
@@ -173,10 +173,10 @@ With the System Repos' group of §2.3.1, they are part of the System Kit (§2). 
 
 ### 2.4 The layer of a repo's work
 
-Layer 4 is work done by an Adapted Case (`temp/common-ground/knowledge-layers-general.md` §2.4, *The layer of work*). The text it works by is a layer-3 text, wherever it is kept. Whether what the work makes is layer 4 is open (§4). Here the work is a repo's:
+Layer 4 is one repo's work, and the repo's own texts (`temp/common-ground/knowledge-layers-general.md` §2.4, *The layer of work*). Here the work is a repo's:
 
 - **Each System Repo's work, by its Kit Copies:** a System Repo is born with Kit Copies of the System Kit and works by them. A Kit Copy is a layer-3 text kept in the System Repo. As its work needs, it makes Copy Changes, so its Kit Copies differ from the System Kit on purpose. It is kept outside the Maintainer Repo, so every arrow between it and layer 3 crosses from one repo to the other.
-- **The Maintainer Repo's own work:** the Maintainer Repo works by its own Adapted Cases in place, with no Kit Copy: they are kept where the work is done, so nothing is delivered. There, layer 3 and the work are in one repo, the double line *used in place*. A change its work makes is, at once, a change to its Adapted Case. Its problem is keeping this knowledge, as a System Repo's is designing one system.
+- **The Maintainer Repo's own work, by its own Adapted Cases:** each is written for this repo alone, from a Work Domain Idea of §2.2.1, mostly how an agent works, keeping knowledge, so it is layer 4. They are kept in `.claude/`, where the agent loads them, and nothing is delivered. A change its work makes is, at once, a change to its own Adapted Case. If a Maintainer Kit is wanted, the part of them true for every Maintainer Repo is set apart up to layer 3 (§4, question 1). Its problem is keeping this knowledge, as a System Repo's is designing one system.
 
 ## 3. How knowledge moves
 
@@ -188,7 +188,7 @@ How knowledge enters the layers and moves between them is the general document's
 - **birth,** layer 3 to layer 4: a new System Repo receives Kit Copies of the System Kit, at one System Kit Version.
 - **Kit Update,** layer 3 to layer 4: a System Kit Update (§2) brings a System Repo's Kit Copies to a newer System Kit Version. The System Repo takes it by its own Kit Copy of the Adapted Case for taking a Kit Update.
 - **Copy Change, read back,** layer 4 to layer 3: a System Repo changes a Kit Copy and records why. The Maintainer Repo reads it back and judges it against the Adapted Case the Kit Copy came from.
-- **used in place,** layer 3 and layer 4 in one repo, with no Kit Copy: the Maintainer Repo's own work changes its own Adapted Cases directly.
+- **adapt,** **lesson** and **set apart,** between layer 2 and layer 4, in the right column: the Maintainer Repo's own Adapted Cases are written from its Work Domain Ideas, and its lessons, and the parts it sets apart, go up to them (`temp/common-ground/knowledge-layers-general.md` §3.2, *The arrows*).
 
 ### 3.2 How a change travels
 
@@ -248,7 +248,7 @@ The System Repo changes a Kit Copy during its own work, and the gate of its Plan
 - the System Repo's gate list, for closing one of its Plan Steps. It loads when the step closes, and says *At the gate*.
 
 **Open:**
-- where the Change Record goes when the Kit Copy has no Adapted Understanding Text: §4, question 7, with its first guess;
+- where the Change Record goes when the Kit Copy has no Adapted Understanding Text: §4, question 6, with its first guess;
 - whether a reversed Copy Change leaves a trace for the Maintainer Repo. One tried and undone may be evidence that the Kit Copy was right. Its trigger: the first Copy Change reversed at a gate.
 
 #### 3.2.2 Read Copy Changes
@@ -335,7 +335,7 @@ Lines under one reason share one verdict, and each line says how its own Kit Cop
 
 **Open:**
 - how question 4 is answered, and by whom. A first guess, not a rule: 4a first, and 4b only if 4a holds. 4a is the cheaper check, inside one Work Domain, and a lesson still true naming no Work Domain is true across its own. Its trigger: depth c checked against these rules (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it"), or the first lesson judged at layer 1;
-- which other texts are checked for a loss question 3 finds. Nothing comes down the arrow *adapt*, since the idea above did not change (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 6). A first guess: the texts built on the idea that holds the part, as the survey asks (§3.2.4). If several lost it, the idea's wording may be too weak, and is reworded clearer, never narrower. Its trigger: the first depth-d verdict;
+- which other texts are checked for a loss question 3 finds. Nothing comes down the arrow *adapt*, since the idea above did not change (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 5). A first guess: the texts built on the idea that holds the part, as the survey asks (§3.2.4). If several lost it, the idea's wording may be too weak, and is reworded clearer, never narrower. Its trigger: the first depth-d verdict;
 - whether an unsound verdict offers a fix. Its trigger: the first unsound verdict.
 
 #### 3.2.4 Act on the verdicts
@@ -454,14 +454,14 @@ New text of the System Repo's own, on trial, is not a case here. It comes from n
 
 **Other sources.** A Copy Change is one source of new knowledge. Others exist, and are not yet taken into account here, each left on purpose until Change is finished:
 - a lesson found in the Maintainer Repo's own work (§3.3). Its start may differ (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it");
-- Knowledge on Trial a System Repo hands over at its close (§4, question 13);
+- Knowledge on Trial a System Repo hands over at its close (§4, question 12);
 - new knowledge from the human.
 
 Birth stays outside, as the start: it gives a System Repo its first Kit Copies and its *settled snapshot* (§3.2.2).
 
 ### 3.3 The Maintainer Repo's lessons
 
-A lesson from the Maintainer Repo's own work starts in layer 4 of the right column. Since that work is done by its own Adapted Cases in place, the lesson changes layer 3 at once. It is then judged by the same questions 3 and 4 as a Copy Change read back, and goes up the arrow *lesson* as far as it holds (§3.2.3). If it reaches layer 1, it comes down the arrow *adapt*, to the System Repos' Adapted Cases too, and reaches System Repos by a Kit Update.
+A lesson from the Maintainer Repo's own work starts in layer 4 of the right column. Since that work is done by its own Adapted Cases, kept with it, the lesson changes its own Adapted Case at once. It is then judged by the same questions 3 and 4 as a Copy Change read back, and goes up the arrow *lesson* as far as it holds (§3.2.3). If it reaches layer 1, it comes down the arrow *adapt*, to the System Repos' Adapted Cases too, and reaches System Repos by a Kit Update.
 
 It has no Read Copy Changes, Deliver the Kit Update or Take the Kit Update of its own: nothing crosses between repos until a Kit Update carries it to a System Repo.
 
@@ -469,19 +469,18 @@ It has no Read Copy Changes, Deliver the Kit Update or Take the Kit Update of it
 
 None is answered by the text above. Each is answered when work reaches it: its answer goes into the text above, and the question leaves this list.
 
-1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, once close to a second Maintainer Repo, ended as a rebuild and is kept only as a source (ADR-0082). §2.3.1 says what a Maintainer Kit would be made from.
-2. **What layer 4 holds:** the general document's question (`temp/common-ground/knowledge-layers-general.md` §4, *Open questions*, question 5). Here it is met at a System Repo's design of its system and its own Knowledge on Trial.
-3. **A name for the movement:** what runs from a Copy Change to the Update Take of the next Kit Update, as one thing (§3.2), so the simulation can name it.
-4. **Where Judge Copy Changes sits:** §3.2 puts it at layer 3, since a Copy Change is judged against the Adapted Case its Kit Copy came from. The sources say only that it runs in the Maintainer Repo.
-5. **Depth d and the layer above:** which other texts are checked for a loss that question 3 of Judge Copy Changes finds, and whether the idea above is reworded clearer when several lost the same part. Its first guess and its trigger are §3.2.3's, under *Open*.
-6. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
-7. **What the System Kit holds:** layer 3 only, or the System Repos' Work Domain Ideas too. CBC system design adapted for backends (§2, the System Kit's item 2) may already be layer 2. Three cases the rule that each part is an Adapted Case (§2) does not yet cover:
+1. **A Maintainer Kit:** should there be a kit a new Maintainer Repo is born from, as a System Repo is born from the System Kit? There is one Maintainer Repo so far. The Tiers Model has a rule for a second Concept Repo (`docs/models/tiers.md` §2.1, *The empty top tier*), and `cbc-concept`, once close to a second Maintainer Repo, ended as a rebuild and is kept only as a source (ADR-0082). §2.4 says what a Maintainer Kit would be made from.
+2. **A name for the movement:** what runs from a Copy Change to the Update Take of the next Kit Update, as one thing (§3.2), so the simulation can name it.
+3. **Where Judge Copy Changes sits:** §3.2 puts it at layer 3, since a Copy Change is judged against the Adapted Case its Kit Copy came from. The sources say only that it runs in the Maintainer Repo.
+4. **Depth d and the layer above:** which other texts are checked for a loss that question 3 of Judge Copy Changes finds, and whether the idea above is reworded clearer when several lost the same part. Its first guess and its trigger are §3.2.3's, under *Open*.
+5. **What then points at it:** the simulation's opening and the problem file's §2.1. Then `temp/`'s old files, one by one, and how today's ways are written across the drafts.
+6. **What the System Kit holds:** layer 3 only, or the System Repos' Work Domain Ideas too. CBC system design adapted for backends (§2, the System Kit's item 2) may already be layer 2. Three cases the rule that each part is an Adapted Case (§2) does not yet cover:
    - an Instruction Text with no Adapted Understanding Text. A first guess: its System Kit Copy Change Record goes in a footer of the Instruction Text itself, as a record file carries its instructions in its header comment;
    - an Understanding Text with no Instruction Text, such as the description of CBC system design for a System Repo's readers (§2, the System Kit's item 5);
    - Knowledge on Trial in the System Kit: an Approach on Trial is one text of both kinds, not yet split, and today's deliveries carry it.
-8. **Which other ideas are Backbone Ideas:** of today's project-agnostic ideas, beyond how an agent works and CBC design (§2.1).
-9. **What one Adapted Case holds:** one Agent Skill or Agent Rule under its understanding text, or several. One understanding text may stand under more than one, as the facts-in-sync manual stands under two Agent Rules.
-10. **Two Work Domain Ideas of how an agent works:** does an agent's work differ enough between keeping knowledge and designing a backend by CBC to need two texts, or would they be one text written twice (§2.2)?
-11. **An Adapted Case from two ideas:** the cbc-framing Agent Skill holds CBC design's content, written as a piece of agent work. Is it adapted from two Work Domain Ideas, or from one, with the other giving only its form?
-12. **When a change is judged:** a System Repo's Copy Change is judged before it reaches layer 3 (§3.2). The Maintainer Repo's own change reaches layer 3 at once, and is judged after (§3.3). Does the difference matter? The change work answers it.
-13. **Knowledge on Trial offered back:** a System Repo's Knowledge on Trial is handed over at its close (§2.3). It is not a Copy Change, so the arrow *Copy Change, read back* does not carry it, and the picture has no arrow that does. The change work answers it, when the simulation takes its other sources.
+7. **Which other ideas are Backbone Ideas:** of today's project-agnostic ideas, beyond how an agent works and CBC design (§2.1).
+8. **What one Adapted Case holds:** one Agent Skill or Agent Rule under its understanding text, or several. One understanding text may stand under more than one, as the facts-in-sync manual stands under two Agent Rules.
+9. **Two Work Domain Ideas of how an agent works:** does an agent's work differ enough between keeping knowledge and designing a backend by CBC to need two texts, or would they be one text written twice (§2.2)?
+10. **An Adapted Case from two ideas:** the cbc-framing Agent Skill holds CBC design's content, written as a piece of agent work. Is it adapted from two Work Domain Ideas, or from one, with the other giving only its form?
+11. **When a change is judged:** a System Repo's Copy Change is judged before it reaches layer 3 (§3.2). The Maintainer Repo's own change reaches its own Adapted Case at once, and is judged after (§3.3). Does the difference matter? The change work answers it.
+12. **Knowledge on Trial offered back:** a System Repo's Knowledge on Trial is handed over at its close (§2.3). It is not a Copy Change, so the arrow *Copy Change, read back* does not carry it, and the picture has no arrow that does. The change work answers it, when the simulation takes its other sources.

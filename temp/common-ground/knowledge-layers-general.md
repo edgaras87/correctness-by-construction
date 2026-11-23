@@ -39,24 +39,26 @@ This document says what the layers of knowledge are, in any Work Domain, and how
            │ │ from Idea 2      │                               │
            │ └──────────────────┘                               │
            └────────────────────────────────────────────────────┘
-                        │            ▲            ▲
-                      adapt       lesson      set apart
-                        ▼            │            │
- Layer 3   ┌────────────────────────────────────────────────────┐
-           │ Adapted Cases                                      │
-           │ an idea written for one use:                       │
-           │ understanding and instructions                     │
-           └────────────────────────────────────────────────────┘
-                            │                 ▲
-                        worked by          change
-                            ▼                 │
+                  │         ▲         ▲         │      ▲       ▲
+                adapt    lesson   set apart   adapt lesson set apart
+                  ▼         │         │         │      │       │
+ Layer 3   ┌────────────────────────────────┐   │      │       │
+           │ Adapted Cases                  │   │      │       │
+           │ an idea written for one use,   │   │      │       │
+           │ for every project of that use: │   │      │       │
+           │ understanding and instructions │   │      │       │
+           └────────────────────────────────┘   │      │       │
+                    │           ▲       ▲       │      │       │
+                worked by    change set apart   │      │       │
+                    ▼           │       │       ▼      │       │
  Layer 4   ┌────────────────────────────────────────────────────┐
-           │ Work                                               │
-           │ done by an Adapted Case                            │
+           │ Work, and a project's own texts                    │
+           │ done by an Adapted Case, or by an Adapted Case of  │
+           │ the project's own: understanding and instructions  │
            └────────────────────────────────────────────────────┘
 ```
 
-Key: each Work Domain Idea names the Backbone Idea it is adapted from (§2.2).
+Key: each Work Domain Idea names the Backbone Idea it is adapted from (§2.2). The arrows on the right serve a project's own Adapted Case, written where no Adapted Case of layer 3 covers its use (§2.4).
 
 ## 2. The layers
 
@@ -88,7 +90,7 @@ One Backbone Idea may be adapted more than once in the same Work Domain, as the 
 
 ### 2.3 The Adapted Case layer
 
-Layer 3 holds Adapted Cases. An **Adapted Case** is an idea of layer 2 written for one use, as its **Adapted Understanding Text**, with the Instruction Texts built on it. Its Adapted Understanding Text says why its Instruction Texts are as they are. So it holds both kinds of text.
+Layer 3 holds Adapted Cases. An **Adapted Case** is an idea of layer 2 written for one use, for every project of that use, as its **Adapted Understanding Text**, with the Instruction Texts built on it. Its Adapted Understanding Text says why its Instruction Texts are as they are. So it holds both kinds of text.
 
 **Rules:**
 
@@ -96,7 +98,12 @@ Layer 3 holds Adapted Cases. An **Adapted Case** is an idea of layer 2 written f
 
 ### 2.4 The layer of work
 
-Layer 4 is work done by an Adapted Case. The text is the Adapted Case itself, or a copy of it where the work is done. What puts it in layer 4 is the use: the work shows where the text does not fit, and the text is changed.
+Layer 4 is one project's work, and the project's own texts. The work is done by an Adapted Case, kept where the work is done or copied there. Where no Adapted Case of layer 3 covers a use, the project writes its own: an idea of layer 2 written for that use in that project alone. It holds understanding and instructions, as an Adapted Case of layer 3 does. What the work teaches changes the text it was done by, where the text does not fit.
+
+**Rules:**
+
+- A text true only for its project stays in layer 4. A part of it true for every project of its use goes up to layer 3, by the arrow *set apart*.
+- A project's own Adapted Case is written from the Work Domain Idea above it, on the arrow *adapt*.
 
 ## 3. How knowledge moves
 
@@ -114,11 +121,11 @@ Knowledge can enter at any layer. Work meets something new and changes the Adapt
 
 ### 3.2 The arrows
 
-- **adapt,** layer 1 to layer 2, and layer 2 to layer 3: a text is written from the idea above it, narrowed to its need, with what the need adds. A part left out on purpose is marked, with why (§3.2's **Rules**, *Narrowing, never shrinking*).
-- **lesson,** layer 3 to layer 2, and layer 2 to layer 1: a lesson goes up as far as it is true (§3.1).
-- **set apart,** layer 3 to layer 2, and layer 2 to layer 1: while a text is written, a part of it shows as true without what the text adds. The part is written in the layer above, and the text is then adapted from it.
+- **adapt,** layer 1 to layer 2, and layer 2 to layer 3, or to layer 4 for a project's own Adapted Case: a text is written from the idea above it, narrowed to its need, with what the need adds. A part left out on purpose is marked, with why (§3.2's **Rules**, *Narrowing, never shrinking*).
+- **lesson,** layer 3 to layer 2, layer 2 to layer 1, and a project's own Adapted Case in layer 4 to layer 2: a lesson goes up as far as it is true (§3.1).
+- **set apart,** layer 3 to layer 2, layer 2 to layer 1, and layer 4 to layer 3, or to layer 2 from a project's own Adapted Case: while a text is written, a part of it shows as true without what the text adds. The part is written in the layer above, and the text is then adapted from it.
 - **worked by,** layer 3 to layer 4: work is done by an Adapted Case, kept where the work is done, or as a copy there.
-- **change,** layer 4 to layer 3: where the work shows the Adapted Case does not fit, the work changes it. Where no Adapted Case covers the work, the work writes one, on trial. The change is judged, and goes up the arrow *lesson* as far as it holds.
+- **change,** layer 4 to layer 3: where the work shows the Adapted Case does not fit, the work changes it. Where no Adapted Case covers the work, the project writes its own, on trial (§2.4). The change is judged, and goes up the arrow *lesson* as far as it holds.
 
 **Rules:**
 
@@ -134,5 +141,4 @@ None is answered by the text above. Each is answered when work reaches it: its a
 2. **When a second adaptation is worth it:** how differently must a Backbone Idea be understood in one Work Domain before two Work Domain Ideas are clearer than one? Practice decides (§2.2).
 3. **A lesson for one adaptation:** where does a lesson go that holds for only one of a Backbone Idea's Work Domain Ideas? And since each changes alone (§2.2), is a lesson for both written into each?
 4. **A second adaptation or a second Adapted Case:** where does a second Work Domain Idea end, and a second Adapted Case of one Work Domain Idea begin?
-5. **What layer 4 holds:** only work done by an Adapted Case, or also the knowledge the work makes of its own (§2.4)?
-6. **A lesson the layer above already holds:** a change is true beyond its own Adapted Case, but the idea above already says it, so nothing comes down the arrow *adapt*. How do the other Adapted Cases built on that idea learn of it? Does whoever judges the change decide this, and tell each one? The change work answers it.
+5. **A lesson the layer above already holds:** a change is true beyond its own Adapted Case, but the idea above already says it, so nothing comes down the arrow *adapt*. How do the other Adapted Cases built on that idea learn of it? Does whoever judges the change decide this, and tell each one? The change work answers it.
