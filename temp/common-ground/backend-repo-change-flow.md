@@ -1,6 +1,6 @@
-# A System Repo's Copy Change, as a Flow
+# A Backend Repo's Copy Change, as a Flow
 
-<!-- A draft of the knowledge work (ADR-0082). It pictures the System Repo's commits in the round of
+<!-- A draft of the knowledge work (ADR-0082). It pictures the Backend Repo's commits in the round of
      a Copy Change, as knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §4.2
      rules it, and the part acting on each, and the Maintainer
      Repo's choices. The facts live in the layers document, never
@@ -18,9 +18,9 @@ It uses the layers document's short forms: Copy Change, Change Record, Kit Copy,
 
 Each drawing is checked against these.
 
-1. **R1, the order:** every step of one round, from a Copy Change to the System Repo's next Plan Step opening.
+1. **R1, the order:** every step of one round, from a Copy Change to the Backend Repo's next Plan Step opening.
 2. **R2, the repo:** which repo each step happens in.
-3. **R3, what crosses:** a Look for Lessons only reads the System Repo, and writes nothing there. A Kit Update is written only into the System Repo's `temp/`.
+3. **R3, what crosses:** a Look for Lessons only reads the Backend Repo, and writes nothing there. A Kit Update is written only into the Backend Repo's `temp/`.
 4. **R4, where main moves:** each place main moves.
 5. **R5, what a Look for Lessons compares:** the two snapshots each one compares.
 6. **R6, what is open:** each part not decided is marked open, and nothing decides it.
@@ -29,20 +29,20 @@ Each drawing is checked against these.
 
 **Key,** for every commit picture below:
 
-- **commits:** imaginary commits of the System Repo, oldest first, top to bottom.
+- **commits:** imaginary commits of the Backend Repo, oldest first, top to bottom.
 - **main, branches:** a step's or an Update Take's branch is cut from main, to its right. At its gate's close, main moves to the branch's last commit by fast-forward: a commit named again on main is no new commit.
-- **Maintainer Repo:** a bracket joins the two snapshots a Look for Lessons compares: its top is the older, the *settled snapshot* or, after an Update Take, the *version snapshot*, and its bottom is the stop. The commits between are history, opened only to understand something deeper. A Look for Lessons writes nothing in the System Repo. A bracket closes when the verdicts are acted on, and its stop becomes the *settled snapshot*. The *settled snapshot* is not an Update Take. The Maintainer Repo's parts stand between the commits, since it makes none.
-- **System Repo:** its parts, each pointing at the commit it acts on.
+- **Maintainer Repo:** a bracket joins the two snapshots a Look for Lessons compares: its top is the older, the *settled snapshot* or, after an Update Take, the *version snapshot*, and its bottom is the stop. The commits between are history, opened only to understand something deeper. A Look for Lessons writes nothing in the Backend Repo. A bracket closes when the verdicts are acted on, and its stop becomes the *settled snapshot*. The *settled snapshot* is not an Update Take. The Maintainer Repo's parts stand between the commits, since it makes none.
+- **Backend Repo:** its parts, each pointing at the commit it acts on.
 - **┊:** no commit.
 
 ### The two jobs
 
-What the Maintainer Repo does with one System Repo, drawn as its choices, in two jobs, each in its own box. A Look for Lessons runs when the human names a System Repo for its lessons, and ends once Act is done (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2, *How a change travels*). A Kit Update when work resumes runs when the human, about to open the System Repo's next Plan Step, names it to update: the Look for Lessons runs first, then the check in Deliver the Kit Update (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*). A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*). Each step names its section of the simulation, which points at its rules.
+What the Maintainer Repo does with one Backend Repo, drawn as its choices, in two jobs, each in its own box. A Look for Lessons runs when the human names a Backend Repo for its lessons, and ends once Act is done (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2, *How a change travels*). A Kit Update when work resumes runs when the human, about to open the Backend Repo's next Plan Step, names it to update: the Look for Lessons runs first, then the check in Deliver the Kit Update (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*). A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*). Each step names its section of the simulation, which points at its rules.
 
 ```mermaid
 flowchart TD
-  read(["the human names a System Repo for its lessons"]) --> c1
-  upd(["about to open the System Repo's next Plan Step, the human names it to update"]) --> c1
+  read(["the human names a Backend Repo for its lessons"]) --> c1
+  upd(["about to open the Backend Repo's next Plan Step, the human names it to update"]) --> c1
   subgraph lessons ["A Look for Lessons"]
     c1{"main moved past the settled snapshot?"}
     c1 -- no --> A["not moved: nothing new"]
@@ -56,33 +56,33 @@ flowchart TD
   done -- "only when it was named to update" --> c3
   subgraph update ["A Kit Update when work resumes"]
     c3{"Kit Version behind the newest?"}
-    c3 -- no --> same(["the System Repo's Plan Step opens on the same Kit Copies"])
-    c3 -- yes --> open{"one of the System Repo's Plan Steps open?"}
+    c3 -- no --> same(["the Backend Repo's Plan Step opens on the same Kit Copies"])
+    c3 -- yes --> open{"one of the Backend Repo's Plan Steps open?"}
     open -- "yes" --> wait1(["say so; make nothing; the step finishes on the old Kit Copies first (§7, step 1)"])
     open -- no --> make["make the Kit Update (§7, step 1)"]
     make --> ok{"clear to stage?"}
     ok -- "no: no word, or work under way" --> wait["say what was found; wait for the word"]
     ok -- yes --> stage["stage the Kit Update in temp/ (§7, step 2)"]
-    stage --> take(["the System Repo takes it at the opening (§8)"])
+    stage --> take(["the Backend Repo takes it at the opening (§8)"])
   end
 ```
 
 ### The Update Take
 
-The System Repo takes a Kit Update at the opening of the System Repo's next Plan Step, on a branch of its own (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.6, *Take the Kit Update*). It is drawn once, here, where the update job ends (*The two jobs*, above). "Item" names an item of its *At the Update Take, in order*.
+The Backend Repo takes a Kit Update at the opening of the Backend Repo's next Plan Step, on a branch of its own (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.6, *Take the Kit Update*). It is drawn once, here, where the update job ends (*The two jobs*, above). "Item" names an item of its *At the Update Take, in order*.
 
 ```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
+ Maintainer Repo                                   main      branches                               Backend Repo
+ ───────────────                                   ────      ────────                               ────────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                         settled snapshot ─▶     c1 ●  the last gate closed                   ◀──── the Kit Copies at Kit Version 1; the System Kit has since reached Kit Version 2
+                         settled snapshot ─▶     c1 ●  the last gate closed                   ◀──── the Kit Copies at Kit Version 1; the Backend Kit has since reached Kit Version 2
                                                     ┊                                         ┄┄┄┄┄ a Kit Update waits in temp/, staged by Deliver the Kit Update (§7), not yet in force: every Kit Copy
                                                     ┊                                               at Kit Version 2, and an Update Note naming c1, the settled snapshot it was built against
                                                     │
  ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    ┊                                         ┄┄┄┄┄ at the opening of the System Repo's next Plan Step, the Update Take checks first, from the Update Note:
+                                                    ┊                                         ┄┄┄┄┄ at the opening of the Backend Repo's next Plan Step, the Update Take checks first, from the Update Note:
                                                     ┊                                               case 1, main is still c1, the settled snapshot: the Kit Update is taken, below
-                                                    ┊                                               case 2, anything else: no Update Take; the System Repo says so, and the human names it to update again
+                                                    ┊                                               case 2, anything else: no Update Take; the Backend Repo says so, and the human names it to update again
                                                     │
  ── the Update Take ────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ├─ cut ──────┐                            ◀──── the Update Take's branch, cut from c1
@@ -93,7 +93,7 @@ The System Repo takes a Kit Update at the opening of the System Repo's next Plan
                                                     │            ┊                            ┄┄┄┄┄ item 2: the files checked against the Update Note; no commit
  c4, the version snapshot: the next                 │         c4 ●  Kit Copies: Kit Version 2 ◀──── item 3: Kit Copies taken whole, each path gone removed, each renamed moved; every Change Record cleared
  Look for Lessons compares from here                │            │
-                                                    │         c5 ●  Kit Version 2 recorded    ◀──── item 4: with the commit that holds it, c4; open: where in the System Repo Kit Version 2 and c4 are written (layers §3.2.6, Open)
+                                                    │         c5 ●  Kit Version 2 recorded    ◀──── item 4: with the commit that holds it, c4; open: where in the Backend Repo Kit Version 2 and c4 are written (layers §3.2.6, Open)
                                                     │            │
                                                     │         c6 ●  the Kit Update removed    ◀──── item 5: the Kit Update and the Update Note leave temp/
                                                     │            │
@@ -102,14 +102,14 @@ The System Repo takes a Kit Update at the opening of the System Repo's next Plan
                                                  c7 ● ◀──────────┘                            ◀──── main moves to c7 by fast-forward, at the gate's close
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    └─ cut ──────┐                            ◀──── the System Repo's next Plan Step opens on Kit Version 2
+                                                    └─ cut ──────┐                            ◀──── the Backend Repo's next Plan Step opens on Kit Version 2
                                                                  │
                                                               c8 ●  work, on Kit Version 2
 ```
 
 ### The Look for Lessons' cases
 
-A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*). Each case is drawn on its own. Three lines split each picture into before, now and after. Before holds the System Repo's commits since the *settled snapshot*. Now holds the Maintainer Repo's parts, in the simulation's order: Read Copy Changes, with the two checks, Judge Copy Changes, and Act on the verdicts. After holds the new *settled snapshot*; what may follow is listed once, below the pictures. Deliver the Kit Update and Take the Kit Update are outside the Look for Lessons: *The two jobs* draws when they follow, and *The Update Take* draws the Update Take. The examples are pure, as the simulation is: every Copy Change is taken into the System Kit (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.7, *Known, not ruled*). Above each picture, a table gives that example's answers to the two checks; check 2 is asked only when main moved, so *not moved* shows "—". What defines each case is the simulation's table.
+A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and *Copy Change read* (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*). Each case is drawn on its own. Three lines split each picture into before, now and after. Before holds the Backend Repo's commits since the *settled snapshot*. Now holds the Maintainer Repo's parts, in the simulation's order: Read Copy Changes, with the two checks, Judge Copy Changes, and Act on the verdicts. After holds the new *settled snapshot*; what may follow is listed once, below the pictures. Deliver the Kit Update and Take the Kit Update are outside the Look for Lessons: *The two jobs* draws when they follow, and *The Update Take* draws the Update Take. The examples are pure, as the simulation is: every Copy Change is taken into the Backend Kit (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.7, *Known, not ruled*). Above each picture, a table gives that example's answers to the two checks; check 2 is asked only when main moved, so *not moved* shows "—". What defines each case is the simulation's table.
 
 #### Case *not moved*
 
@@ -118,15 +118,15 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
 | no | — |
 
 ```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
+ Maintainer Repo                                   main      branches                               Backend Repo
+ ───────────────                                   ────      ────────                               ────────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
  taken into account by                        ┌  c0 ●  earlier Plan Steps and Update Takes    ◀──── history
  earlier Looks for Lessons                    │     │
  settled snapshot: the last stop           ─▶ └  c1 ●  the last gate closed                   ◀──── no Plan Step has closed since
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the human names the System Repo, for its           ┊
+ the human names the Backend Repo, for its          ┊
  lessons or to update it (layers §3.2)              ┊
  Read Copy Changes (§4): the stop is main, c1       ┊
    check 1: main is c1, the settled snapshot:       ┊
@@ -147,14 +147,14 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
 | yes | no |
 
 ```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
+ Maintainer Repo                                   main      branches                               Backend Repo
+ ───────────────                                   ────      ────────                               ────────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
  taken into account by                        ┌  c0 ●  earlier Plan Steps and Update Takes    ◀──── history
  earlier Looks for Lessons                    │     │
  settled snapshot: the last stop           ─▶ └  c1 ●  the last gate closed
                                                     │
-                                                    ├─ cut ──────┐                            ◀──── one of the System Repo's Plan Steps opens
+                                                    ├─ cut ──────┐                            ◀──── one of the Backend Repo's Plan Steps opens
                                                     │            │
                                                     │         c2 ●  work, no Kit Copy changed
                                                     │            │
@@ -163,7 +163,7 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the human names the System Repo, for its           ┊
+ the human names the Backend Repo, for its          ┊
  lessons or to update it (layers §3.2)              ┊
  Read Copy Changes (§4): the stop is main, c3       ┊
    check 1: main is c3, past c1: moved              ┊
@@ -185,14 +185,14 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
 | yes | yes |
 
 ```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
+ Maintainer Repo                                   main      branches                               Backend Repo
+ ───────────────                                   ────      ────────                               ────────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
  taken into account by                        ┌  c0 ●  earlier Plan Steps and Update Takes    ◀──── history
  earlier Looks for Lessons                    │     │
  settled snapshot: the last stop           ─▶ └  c1 ●  the last gate closed                   ◀──── the Kit Copies at Kit Version 1, the newest
                                                     │
-                                                    ├─ cut ──────┐                            ◀──── one of the System Repo's Plan Steps opens
+                                                    ├─ cut ──────┐                            ◀──── one of the Backend Repo's Plan Steps opens
                                                     │            │
                                                     │         c2 ●  a Kit Copy changed        ◀──── a Copy Change, with its Change Record; its proposal: any repo would meet it
                                                     │            │
@@ -201,7 +201,7 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
                                                  c3 ● ◀──────────┘                            ◀──── main moves to c3 by fast-forward
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- the human names the System Repo, for its           ┊
+ the human names the Backend Repo, for its          ┊
  lessons or to update it (layers §3.2)              ┊
  Read Copy Changes (§4): the stop is main, c3       ┊
    check 1: main is c3, past c1: moved              ┊
@@ -210,9 +210,9 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
    the Copy Change with its Change Record           ┊
  Judge Copy Changes (§5): one verdict: a lesson for ┊
    its Adapted Case, depth b; the proposal holds    ┊
- Act on the verdicts (§6): the System Kit's         ┊
+ Act on the verdicts (§6): the Backend Kit's        ┊
    Adapted Case gains the lesson, reworded:         ┊
-   the System Kit reaches Kit Version 2. The        ┊
+   the Backend Kit reaches Kit Version 2. The       ┊
    Repo Reading goes. The settled snapshot set to   ┊
    the stop, c3                                     ┊
                                                     │
@@ -223,35 +223,35 @@ A Look for Lessons ends in one of three cases: *not moved*, *no Copy Change* and
 
 **What may follow.** After every case, the same:
 
-- if the human asked for the System Repo's lessons: nothing follows;
-- if the human asked to update the System Repo: the check in Deliver the Kit Update comes next, then the System Repo's next Plan Step opens, with or without a Kit Update (`temp/common-ground/backend-repo-change-simulation.md` §7, step 1);
-- the System Repo: a Plan Step already open goes on, and the System Repo's next Plan Step opens once the human names the System Repo to update.
+- if the human asked for the Backend Repo's lessons: nothing follows;
+- if the human asked to update the Backend Repo: the check in Deliver the Kit Update comes next, then the Backend Repo's next Plan Step opens, with or without a Kit Update (`temp/common-ground/backend-repo-change-simulation.md` §7, step 1);
+- the Backend Repo: a Plan Step already open goes on, and the Backend Repo's next Plan Step opens once the human names the Backend Repo to update.
 
 ### The update job's outcomes
 
-A Kit Update when work resumes, the second job, runs when the human names the System Repo to update, and starts with a Look for Lessons (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*). It ends in one of four outcomes: *not behind*, *step open*, *taken* and *refused*. Before staging, it may pause for the human's word or a clean tree (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*); *taken* draws the pause. Each outcome is drawn on its own, split into before, now and after; *refused* adds a band for main moving before the Update Take, and one for the Update Take's check. The example: Kit Version 1 in the System Repo, Kit Version 2 the newest; the Look for Lessons ends in case *not moved*, drawn above. The Update Take is drawn once, in *The Update Take*, and *taken* points at it.
+A Kit Update when work resumes, the second job, runs when the human names the Backend Repo to update, and starts with a Look for Lessons (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*). It ends in one of four outcomes: *not behind*, *step open*, *taken* and *refused*. Before staging, it may pause for the human's word or a clean tree (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*); *taken* draws the pause. Each outcome is drawn on its own, split into before, now and after; *refused* adds a band for main moving before the Update Take, and one for the Update Take's check. The example: Kit Version 1 in the Backend Repo, Kit Version 2 the newest; the Look for Lessons ends in case *not moved*, drawn above. The Update Take is drawn once, in *The Update Take*, and *taken* points at it.
 
 #### *not behind*
 
 ```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
+ Maintainer Repo                                   main      branches                               Backend Repo
+ ───────────────                                   ────      ────────                               ────────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
  taken into account by                        ┌  c0 ●  earlier Plan Steps and Update Takes    ◀──── history
  earlier Looks for Lessons                    │     │
  settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Kit Copies at Kit Version 1, the newest
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- - the human, about to open the System Repo's       ┊
+ - the human, about to open the Backend Repo's      ┊
    next Plan Step, names it to update (§7, step 1)  ┊
  - Look for Lessons (§4 to §6): case not moved,     ┊
    drawn above; the settled snapshot stays c1       ┊
- - Deliver the Kit Update (§7): the System Repo's   ┊
+ - Deliver the Kit Update (§7): the Backend Repo's  ┊
    Kit Version, 1, is the newest: no Kit Update is  ┊
    due; nothing is made                             ┊
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
-                                                    └─ cut ──────┐                            ◀──── the System Repo's next Plan Step opens on Kit Version 1
+                                                    └─ cut ──────┐                            ◀──── the Backend Repo's next Plan Step opens on Kit Version 1
                                                                  │
                                                               c2 ●  work, on Kit Version 1
 ```
@@ -259,19 +259,19 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
 #### *step open*
 
 ```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
+ Maintainer Repo                                   main      branches                               Backend Repo
+ ───────────────                                   ────      ────────                               ────────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
  taken into account by                        ┌  c0 ●  earlier Plan Steps and Update Takes    ◀──── history
  earlier Looks for Lessons                    │     │
- settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Kit Copies at Kit Version 1; the System Kit has since reached Kit Version 2
+ settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Kit Copies at Kit Version 1; the Backend Kit has since reached Kit Version 2
                                                     │
-                                                    ├─ cut ──────┐                            ◀──── one of the System Repo's Plan Steps opens
+                                                    ├─ cut ──────┐                            ◀──── one of the Backend Repo's Plan Steps opens
                                                     │            │
                                                     │         c2 ●  work, on Kit Version 1    ◀──── the step is still open: no gate yet
                                                     │            ┊
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- - the human names the System Repo to update,       ┊            ┊
+ - the human names the Backend Repo to update,      ┊            ┊
    while one of its Plan Steps is still open        ┊            ┊
    (§7, step 1)                                     ┊            ┊
  - Look for Lessons (§4 to §6): case not moved;     ┊            ┊
@@ -289,7 +289,7 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
  - the open step finishes on Kit Version 1, and its │
    gate moves main to c3 (layers §3.2.6)            │
  - at the next opening, the human names the         │
-   System Repo to update again                      │
+   Backend Repo to update again                     │
  - Look for Lessons: main moved; case no Copy       │
    Change or Copy Change read, by what c3 holds     │
  - then as in taken                                 │
@@ -298,15 +298,15 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
 #### *taken*
 
 ```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
+ Maintainer Repo                                   main      branches                               Backend Repo
+ ───────────────                                   ────      ────────                               ────────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
  taken into account by                        ┌  c0 ●  earlier Plan Steps and Update Takes    ◀──── history
  earlier Looks for Lessons                    │     │
- settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Kit Copies at Kit Version 1; the System Kit has since reached Kit Version 2
+ settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Kit Copies at Kit Version 1; the Backend Kit has since reached Kit Version 2
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- - the human, about to open the System Repo's       ┊
+ - the human, about to open the Backend Repo's      ┊
    next Plan Step, names it to update (§7, step 1)  ┊
  - Look for Lessons (§4 to §6): here case not       ┊
    moved; the settled snapshot stays c1. Any of     ┊
@@ -322,7 +322,7 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
    Repo's tree is not clean, or no word yet, the    ┊
    agent says what it found, and waits              ┊
  - on the word, Deliver the Kit Update stages the   ┊
-   Kit Update in the System Repo's temp/            ┊
+   Kit Update in the Backend Repo's temp/           ┊
                                                     ┊                                         ┄┄┄┄┄ the Kit Update waits in temp/, not yet in force
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
@@ -334,7 +334,7 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
                                                     │            │
                                                  c7 ● ◀──────────┘                            ◀──── main moves to c7 by fast-forward, at the gate's close
                                                     │
-                                                    └─ cut ──────┐                            ◀──── the System Repo's next Plan Step opens on Kit Version 2
+                                                    └─ cut ──────┐                            ◀──── the Backend Repo's next Plan Step opens on Kit Version 2
                                                                  │
                                                               c8 ●  work, on Kit Version 2
 ```
@@ -342,15 +342,15 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
 #### *refused*
 
 ```
- Maintainer Repo                                   main      branches                               System Repo
- ───────────────                                   ────      ────────                               ───────────
+ Maintainer Repo                                   main      branches                               Backend Repo
+ ───────────────                                   ────      ────────                               ────────────
  ── before ─────────────────────────────────────────┼───────────────────────────────────────────────────────────
  taken into account by                        ┌  c0 ●  earlier Plan Steps and Update Takes    ◀──── history
  earlier Looks for Lessons                    │     │
- settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Kit Copies at Kit Version 1; the System Kit has since reached Kit Version 2
+ settled snapshot                          ─▶ └  c1 ●  the last gate closed                   ◀──── the Kit Copies at Kit Version 1; the Backend Kit has since reached Kit Version 2
                                                     │
  ── now ────────────────────────────────────────────┼───────────────────────────────────────────────────────────
- - the human, about to open the System Repo's       ┊
+ - the human, about to open the Backend Repo's      ┊
    next Plan Step, names it to update (§7, step 1)  ┊
  - Look for Lessons (§4 to §6): case not moved,     ┊
    drawn above; the settled snapshot stays c1       ┊
@@ -368,11 +368,11 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
                                                     │
  ── the check ──────────────────────────────────────┼───────────────────────────────────────────────────────────
                                                     ┊                                         ┄┄┄┄┄ at the opening, the Update Take checks, from the Update Note:
-                                                    ┊                                               main is c2, not c1: case 2, no Update Take; the System Repo says so (§8)
+                                                    ┊                                               main is c2, not c1: case 2, no Update Take; the Backend Repo says so (§8)
                                                     │
  ── after ──────────────────────────────────────────┼───────────────────────────────────────────────────────────
  - the Kit Update stays in temp/, not taken         │
- - the human names the System Repo to update        │
+ - the human names the Backend Repo to update       │
    again (layers §3.2.6)                            │
  - Look for Lessons: main moved; case no Copy       │
    Change or Copy Change read, by what c2 holds     │
@@ -381,4 +381,4 @@ A Kit Update when work resumes, the second job, runs when the human names the Sy
    replaces the waiting one (§7, step 1)            │
 ```
 
-**A Kit Update at the newest Kit Version.** A Kit Update is always made at the newest Kit Version. When the Look for Lessons ends in *Copy Change read*, Act may raise the Kit Version first: the Kit Update is then made at that Kit Version, and brings the System Repo's own lesson back. If the System Kit moves after it is made, the Kit Update is still taken, and the next brings the rest (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.6, *Take the Kit Update*).
+**A Kit Update at the newest Kit Version.** A Kit Update is always made at the newest Kit Version. When the Look for Lessons ends in *Copy Change read*, Act may raise the Kit Version first: the Kit Update is then made at that Kit Version, and brings the Backend Repo's own lesson back. If the Backend Kit moves after it is made, the Kit Update is still taken, and the next brings the rest (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.6, *Take the Kit Update*).

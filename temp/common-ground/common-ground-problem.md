@@ -32,6 +32,17 @@ Defined Terms, in alphabetical order:
 - **Adapted Case:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
 - **Adapted Understanding Text:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
 - **Backbone Idea:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Attention Note:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Copy:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Copy Change:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Copy Change Record:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Update:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Update Note:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Update Take:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Version:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Repo:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Repo Reading:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
 - **Common Ground Problem:** keeping common ground between the human and the agent from one session to the next, while the text it is built from goes stale; the problem this document states.
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
@@ -49,20 +60,9 @@ Defined Terms, in alphabetical order:
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
 - **Problem Domain:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
 - **Problem Domain Idea:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
-- **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each System Repo (§2). Its *time* is *later*: as meant, not as done today.
+- **Repo Responsibility:** what each repo is meant to keep: the Maintainer Repo, and each Backend Repo (§2). Its *time* is *later*: as meant, not as done today.
 - **Repo Responsibility Gap:** where a repo does not keep its Repo Responsibility. It is fixed in the repo, or in the Repo Responsibility.
 - **Session Instruction Text:** an Instruction Text the agent loads in every session.
-- **System Kit:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **System Kit Attention Note:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **System Kit Copy:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **System Kit Copy Change:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **System Kit Copy Change Record:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **System Kit Update:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **System Kit Update Note:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **System Kit Update Take:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **System Kit Version:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **System Repo:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **System Repo Reading:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
 - **Task Instruction Text:** an Instruction Text the agent loads for one kind of task.
 - **Text Life Phase:** where in a text's life a Failure Case shows: *writing*, *aging*, *reading*.
 - **Understanding Text:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
@@ -72,7 +72,7 @@ Labels:
 - *who uses it*: *the human*, *the agent*, *both*
 - *time*: *before*, *now*, *later*
 - *kind*: Understanding Text, Instruction Text
-- *where*: *the Maintainer Repo*, *a System Repo*; a Failure Case is *either* or *between*
+- *where*: *the Maintainer Repo*, *a Backend Repo*; a Failure Case is *either* or *between*
 - *layer*: *layer 1* to *layer 4*
 - Text Life Phase: *writing*, *aging*, *reading*
 
@@ -102,22 +102,22 @@ The Maintainer Repo is pictured twice. §2.1 is the intent: what it should be an
 Each project is meant to live in a repo, a git repository, of one of two sorts, so far:
 
 - the Maintainer Repo, which holds the concept;
-- each System Repo, which builds a real system by the concept.
+- each Backend Repo, which builds a real system by the concept.
 
-The Maintainer Repo holds more than its own work. It also holds the understanding of agent work. No single project owns it, and every System Repo receives it adapted, in the System Kit.
+The Maintainer Repo holds more than its own work. It also holds the understanding of agent work. No single project owns it, and every Backend Repo receives it adapted, in the Backend Kit.
 
-Its understanding falls in two groups. Each is adapted for two places, the Maintainer Repo and each System Repo:
+Its understanding falls in two groups. Each is adapted for two places, the Maintainer Repo and each Backend Repo:
 
-| Understanding | Adapted for the Maintainer Repo | System Kit |
+| Understanding | Adapted for the Maintainer Repo | Backend Kit |
 |---|---|---|
-| How work is done with an agent: a change, a commit, a plan | its own Adapted Case of agent work | agent work, adapted for System Repos (below, *What the System Kit holds*) |
-| How a CBC system is designed: the concept and its methods | none | CBC system design, adapted for one kind of system (below, *What the System Kit holds*) |
+| How work is done with an agent: a change, a commit, a plan | its own Adapted Case of agent work | agent work, adapted for Backend Repos (below, *What the Backend Kit holds*) |
+| How a CBC system is designed: the concept and its methods | none | CBC system design, adapted for one kind of system (below, *What the Backend Kit holds*) |
 
 The Maintainer Repo means to keep both groups in the layers of knowledge (§3.5). Whether the layers are kept apart as meant is checked in the next step.
 
-The understanding of CBC system design is project-agnostic: it fits any system, not only software. The System Kit holds it adapted for one kind of system so far (below, *What the System Kit holds*).
+The understanding of CBC system design is project-agnostic: it fits any system, not only software. The Backend Kit holds it adapted for one kind of system, backends (below, *What the Backend Kit holds*).
 
-So knowledge written in the Maintainer Repo becomes instructions that agents act on: in the Maintainer Repo itself, for its own work, and in every System Repo. The agent in a System Repo starts with none of the Maintainer Repo's context, only its System Kit Copies, and they can drift, or change on their own.
+So knowledge written in the Maintainer Repo becomes instructions that agents act on: in the Maintainer Repo itself, for its own work, and in every Backend Repo. The agent in a Backend Repo starts with none of the Maintainer Repo's context, only its Backend Kit Copies, and they can drift, or change on their own.
 
 The Repo Responsibility follows. It may change itself, and whether the repo does all of it is not yet checked.
 
@@ -125,34 +125,34 @@ The Maintainer Repo keeps:
 
 1. understanding of agent work;
 2. understanding of the concept, CBC system design;
-3. the System Kit, for every System Repo to work from (below, *What the System Kit holds*);
+3. the Backend Kit, for every Backend Repo to work from (below, *What the Backend Kit holds*);
 4. its own Adapted Case of agent work, updated as the project-agnostic understanding changes;
-5. findings from System Repos. A System Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other System Repos. The Maintainer Repo reads the System Kit Copy Changes back and judges each, by its Adapted Case for judging a System Repo Reading (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.3, *Judge Copy Changes*);
-6. System Kit Updates for System Repos, taken when work resumes in one (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*; §4.2.6, *Take the Kit Update*): a System Repo born earlier takes every System Kit Copy whole, at the newest System Kit Version, with the why of each change since its own;
+5. findings from Backend Repos. A Backend Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other Backend Repos. The Maintainer Repo reads the Backend Kit Copy Changes back and judges each, by its Adapted Case for judging a Backend Repo Reading (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.3, *Judge Copy Changes*);
+6. Backend Kit Updates for Backend Repos, taken when work resumes in one (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*; §4.2.6, *Take the Kit Update*): a Backend Repo born earlier takes every Backend Kit Copy whole, at the newest Backend Kit Version, with the why of each change since its own;
 7. its own records: the history and the backlog of this work.
-8. its Knowledge on Trial, from System Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the System Repos' System Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A System Repo's, once judged here, reaches that System Repo by a System Kit Update, judged there like any other change.
+8. its Knowledge on Trial, from Backend Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the Backend Repos' Backend Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A Backend Repo's, once judged here, reaches that Backend Repo by a Backend Kit Update, judged there like any other change.
 
-Each System Repo:
+Each Backend Repo:
 
-1. keeps its System Kit Copies of the Adapted Cases (below, *What the System Kit holds*). It uses them, and may change any part of them. The project-agnostic understanding stays in the Maintainer Repo;
+1. keeps its Backend Kit Copies of the Adapted Cases (below, *What the Backend Kit holds*). It uses them, and may change any part of them. The project-agnostic understanding stays in the Maintainer Repo;
 2. keeps understanding of its own problem: one specific system's design;
-3. keeps its own records, started from the record forms in its System Kit;
+3. keeps its own records, started from the record forms in its Backend Kit;
 4. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back;
-5. takes System Kit Updates by its copy of the Adapted Case for taking them, and may change any part of it (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.6, *Take the Kit Update*).
+5. takes Backend Kit Updates by its copy of the Adapted Case for taking them, and may change any part of it (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.6, *Take the Kit Update*).
 
-#### What the System Kit holds
+#### What the Backend Kit holds
 
-What the System Kit holds is the layers model's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3, *The layers*).
+What the Backend Kit holds is the layers model's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3, *The layers*).
 
 #### What passes between the repos
 
-What passes between the Maintainer Repo and the System Repos is the layers model's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.1, *The arrows*).
+What passes between the Maintainer Repo and the Backend Repos is the layers model's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.1, *The arrows*).
 
-How a System Kit Copy Change read back travels, in six parts, is below (*A System Repo's change*).
+How a Backend Kit Copy Change read back travels, in six parts, is below (*A Backend Repo's change*).
 
-#### A System Repo's change
+#### A Backend Repo's change
 
-A System Kit Copy Change travels from a System Repo to the Maintainer Repo, is judged there, and what the System Repo needs comes back in a System Kit Update. Its six parts, from the change to the Update Take, their rules, its cases and the sources it leaves aside are the simulation's, their one home until the change flow is done (`temp/common-ground/backend-repo-change-simulation.md`).
+A Backend Kit Copy Change travels from a Backend Repo to the Maintainer Repo, is judged there, and what the Backend Repo needs comes back in a Backend Kit Update. Its six parts, from the change to the Update Take, their rules, its cases and the sources it leaves aside are the simulation's, their one home until the change flow is done (`temp/common-ground/backend-repo-change-simulation.md`).
 
 ### 2.2 Today and what to check
 
@@ -162,11 +162,11 @@ Its two groups of understanding, agent work and the concept, are split today. Th
 
 It describes the three levels of understanding itself, in its Idea-to-Output Model (`docs/models/idea-to-output.md`, §2).
 
-For Knowledge on Trial it has the Approach on Trial: one text for work done for the first time, written in a System Repo or here, and for ways of working only. Whether that meets the Repo Responsibility, and what other Knowledge on Trial needs, is a check for the next step.
+For Knowledge on Trial it has the Approach on Trial: one text for work done for the first time, written in a Backend Repo or here, and for ways of working only. Whether that meets the Repo Responsibility, and what other Knowledge on Trial needs, is a check for the next step.
 
 Seen already, three Repo Responsibility Gaps:
 
-- one convention manual, the middle level for one way of working, is written for both repos at once, the Maintainer Repo and every System Repo, though the two need different things from it: one middle serving two repos (Failure Case 15);
+- one convention manual, the middle level for one way of working, is written for both repos at once, the Maintainer Repo and every Backend Repo, though the two need different things from it: one middle serving two repos (Failure Case 15);
 - two of the repo's texts give one name two scopes. "Canonical Description" is the middle level only in the Idea-to-Output Model, §2, but in the glossary it covers the Idea Models too (Failure Case 8);
 - the concept, `concept/`, holds the project-agnostic understanding of CBC system design and its backend case in one text, not split. Its examples and words lean toward software. Which parts are project-agnostic and which are the backend case is sorted in the next step.
 
@@ -176,16 +176,16 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 |---|---|
 | Maintainer Repo | the Concept Deliverer, a Concept Repo by its Tiers Model: `correctness-by-construction` |
 | Maintainer Repo Register | the list of CBC Runs (`ARCHITECTURE.md` §2.5, *The CBC Runs*). Its *settled snapshot* is today's Read-Through Commit, kept in the CBC Run instead |
-| System Repo | a CBC Run |
-| System Kit | the delivery, `delivery/`: the Container Group, the Method Group and a Stack Group, with the concept and each group's Glossary Names |
-| System Kit Copy | a CBC Run's copy of a Master Copy |
-| System Kit Copy Change | a CBC Run's edit to a copy (`docs/conventions/exchange/` §5.1, *When a copy may be edited*) |
-| System Kit Copy Change Record | the edit's line in the CBC Run's Decisions Log (`docs/conventions/exchange/` §5.1, *When a copy may be edited*) |
-| System Kit Attention Note | a CBC Run Ask with no edit behind it, such as a question (`docs/conventions/exchange/` §5.1, *When a copy may be edited*) |
-| System Kit Update | a delivery |
-| System Kit Update Note | the Delivery Note |
-| System Kit Update Take | a Delivery Take (`docs/conventions/exchange/` §4, *The Delivery Take*) |
-| System Kit Version | the Delivery Pin: the Concept Deliverer's commit a CBC Run's copies equal |
+| Backend Repo | a CBC Run |
+| Backend Kit | the delivery, `delivery/`: the Container Group, the Method Group and a Stack Group, with the concept and each group's Glossary Names |
+| Backend Kit Copy | a CBC Run's copy of a Master Copy |
+| Backend Kit Copy Change | a CBC Run's edit to a copy (`docs/conventions/exchange/` §5.1, *When a copy may be edited*) |
+| Backend Kit Copy Change Record | the edit's line in the CBC Run's Decisions Log (`docs/conventions/exchange/` §5.1, *When a copy may be edited*) |
+| Backend Kit Attention Note | a CBC Run Ask with no edit behind it, such as a question (`docs/conventions/exchange/` §5.1, *When a copy may be edited*) |
+| Backend Kit Update | a delivery |
+| Backend Kit Update Note | the Delivery Note |
+| Backend Kit Update Take | a Delivery Take (`docs/conventions/exchange/` §4, *The Delivery Take*) |
+| Backend Kit Version | the Delivery Pin: the Concept Deliverer's commit a CBC Run's copies equal |
 | Instruction Text | a Work Approach: an Agent Skill, an Agent Rule, an Approach on Trial or an Output Form; also the Glossary Names, and the forms records start from. Which of the three sorts an Output Form is, is open |
 | Task Instruction Text | an Agent Skill |
 | Session Instruction Text | the Entry File, `CLAUDE.md`; an Agent Rule loaded in every session; the human's private working rules |
@@ -197,9 +197,9 @@ What the Maintainer Repo has today, for each Defined Term of the intent:
 | Defined Term | a Glossary Name, in `docs/glossary.md` |
 | One Home per Fact | the facts-in-sync convention, and the one-home Agent Rule |
 | Knowledge Drift Repair | the Foundation Check and its Change Walk at each commit; the refinement's reads of the whole repo |
-| System Repo Reading | a CBC Run Reading |
+| Backend Repo Reading | a CBC Run Reading |
 | Look for Lessons | a CBC Run Reading, the reading with its verdicts acted on |
-| birth of a System Repo | a CBC Run Birth |
+| birth of a Backend Repo | a CBC Run Birth |
 
 ## 3. The Knowledge Axes
 
@@ -208,13 +208,13 @@ Where text is kept today, in the Maintainer Repo, on each of the five Knowledge 
 | Where it's kept | Kind | Time | Who uses it | Where | Layer |
 |---|---|---|---|---|---|
 | Understanding files in the repo, such as the concept's chapters and the convention manuals | understanding | now | both | the Maintainer Repo | not yet sorted: the concept holds layers 1 and 2 in one text |
-| Instruction Texts; today, Agent Skills, Agent Rules, the Glossary Names and the forms records start from | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as System Kit Copies in each System Repo, for those in the System Kit | 3 |
-| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each System Repo keeps its own | layer 4, each repo's own text (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.4, *The layer of work*) |
-| TODO, the backlog | understanding | later | both | the Maintainer Repo; each System Repo keeps its own | layer 4, as the devlog |
+| Instruction Texts; today, Agent Skills, Agent Rules, the Glossary Names and the forms records start from | instruction | now | the agent acts on it; the human checks what they told it | the Maintainer Repo; as Backend Kit Copies in each Backend Repo, for those in the Backend Kit | 3 |
+| Devlog, the journal of the work, and commit messages | understanding | before | both, seldom | the Maintainer Repo; each Backend Repo keeps its own | layer 4, each repo's own text (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.4, *The layer of work*) |
+| TODO, the backlog | understanding | later | both | the Maintainer Repo; each Backend Repo keeps its own | layer 4, as the devlog |
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo | not yet sorted |
 | The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files | not yet sorted |
-| Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a System Repo | 4, the repo's own (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.3, *The Adapted Case layer*) |
-| System Kit Copy | both: each an Adapted Case; the description of CBC system design is understanding alone (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §5, *Open questions*, question 6) | now | the agent in the System Repo | each System Repo | 3, used in 4 |
+| Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a Backend Repo | 4, the repo's own (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.3, *The Adapted Case layer*) |
+| Backend Kit Copy | both: each an Adapted Case; the description of CBC system design is understanding alone (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §5, *Open questions*, question 6) | now | the agent in the Backend Repo | each Backend Repo | 3, used in 4 |
 | The Repo Responsibility, §2's lists | understanding | later | both | the Maintainer Repo | not yet sorted |
 
 ### 3.1 Who uses the text
@@ -251,7 +251,7 @@ Knowledge has a time too:
 
 A Knowledge Time Shift is where knowledge gets lost. If a Knowledge Time Shift isn't written down, the old text keeps claiming now.
 
-New knowledge enters in several ways, so far: the human learns, a talk ends in a decision, the agent finds something in the work, a System Repo shows something the Maintainer Repo reads back, or knowledge is used as Knowledge on Trial (§3.3).
+New knowledge enters in several ways, so far: the human learns, a talk ends in a decision, the agent finds something in the work, a Backend Repo shows something the Maintainer Repo reads back, or knowledge is used as Knowledge on Trial (§3.3).
 
 Before keeps why it changed, not only what was thought. Without that why, a reader afterwards sees what changed but not the reason: the why goes missing (§4), this time between before and now.
 
@@ -293,9 +293,9 @@ An instruction can be copied to other repos, for the agents working there, with 
 
 ### 3.4 Where the text is
 
-A text is kept in the Maintainer Repo, or in a System Repo. Some is in both: what the Maintainer Repo ships becomes a System Kit Copy in each System Repo, and System Kit Copy Changes come back only when the Maintainer Repo reads them.
+A text is kept in the Maintainer Repo, or in a Backend Repo. Some is in both: what the Maintainer Repo ships becomes a Backend Kit Copy in each Backend Repo, and Backend Kit Copy Changes come back only when the Maintainer Repo reads them.
 
-Some failures can happen in either repo. Others happen only between the two: a System Kit Copy drifts from its original; the Maintainer Repo judges a System Kit Copy Change wrongly, as a lesson when it was specific to the System Repo, or the other way round; work resumes in a System Repo without a System Kit Update.
+Some failures can happen in either repo. Others happen only between the two: a Backend Kit Copy drifts from its original; the Maintainer Repo judges a Backend Kit Copy Change wrongly, as a lesson when it was specific to the Backend Repo, or the other way round; work resumes in a Backend Repo without a Backend Kit Update.
 
 The two repos are not the two sides of §1. The human and the agent work in both.
 
@@ -320,7 +320,7 @@ A failure shows in one of three Text Life Phases: two moments, *writing* and *re
 - *Aging:* the knowledge moves on, and the text grows older than it.
 - *Reading:* the agent reads the text and builds a different understanding from it than the human holds.
 
-The interface between the human's mind and the agent breaks in these Failure Cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the Text Life Phase it breaks in, the Knowledge Axis it lives on (§3), and where: in either repo, or between the Maintainer Repo and a System Repo (§3.4):
+The interface between the human's mind and the agent breaks in these Failure Cases, found by thinking it through, each to be tested against real sessions (§6). Each is tagged with the Text Life Phase it breaks in, the Knowledge Axis it lives on (§3), and where: in either repo, or between the Maintainer Repo and a Backend Repo (§3.4):
 
 | Failure Case | Text Life Phase | Knowledge Axis | Where |
 |---|---|---|---|
@@ -342,10 +342,10 @@ The interface between the human's mind and the agent breaks in these Failure Cas
 | 16. One instruction covers several tasks, and a change made for one task changes the others. | writing | kind | either |
 | 17. A later text is read as now: what is meant to be is taken for what is. | reading | time | either |
 | 18. Unchecked knowledge is read as checked, such as Knowledge on Trial taken as proven. | reading | time | either |
-| 19. A System Kit Copy drifts from its original. | aging | where | between |
-| 20. The Maintainer Repo judges a System Kit Copy Change wrongly: a lesson taken as specific to the System Repo, or something specific taken as a lesson. | reading | where | between |
-| 21. Work resumes in a System Repo without reading back and updating first, and goes on from its old System Kit Copy. | aging | where | between |
-| 22. A System Kit Copy Change reaches the Maintainer Repo without its why: the System Repo wrote down what it changed, not why. | writing | where | between |
+| 19. A Backend Kit Copy drifts from its original. | aging | where | between |
+| 20. The Maintainer Repo judges a Backend Kit Copy Change wrongly: a lesson taken as specific to the Backend Repo, or something specific taken as a lesson. | reading | where | between |
+| 21. Work resumes in a Backend Repo without reading back and updating first, and goes on from its old Backend Kit Copy. | aging | where | between |
+| 22. A Backend Kit Copy Change reaches the Maintainer Repo without its why: the Backend Repo wrote down what it changed, not why. | writing | where | between |
 | 23. An adapted understanding lags behind its project-agnostic idea, which has moved on. | aging | layer | either |
 | 24. A project-agnostic idea is bent to one project's needs, and no longer fits the others. | writing | layer | between |
 | 25. The agent reads a text at the wrong layer, such as a line of an Adapted Case taken as true for the whole idea it was adapted from, or the other way round. | reading | layer | either |
@@ -381,7 +381,7 @@ The next step of this work tests these against the Maintainer Repo's history: th
 - when checking before costs more than it gives, and whether it can harm: by what reading it costs, by anchoring new thinking to old framing, or by being read as now;
 - which parts of before pay, and which aren't worth keeping. The Maintainer Repo's devlog alone is 8,773 lines, after 4 months;
 - whether the middle level is needed for every idea, or only for an idea that serves projects with different needs;
-- whether a System Kit Update taken only when work resumes in a System Repo still holds when more than one project runs at once, or someone other than the human works in a System Repo;
+- whether a Backend Kit Update taken only when work resumes in a Backend Repo still holds when more than one project runs at once, or someone other than the human works in a Backend Repo;
 - whether part of the cost of One Home per Fact comes from levels missing or merged: an instruction written straight from a project-agnostic idea is reread whenever the idea changes.
 
 ## 7. What would show it's solved
