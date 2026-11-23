@@ -38,6 +38,9 @@ The 249 uses in the problem file, the simulation and the flow. Their own titles 
 **6. `docs: TODO follows Backend Repo and Backend Kit`**
 The 26 uses in `TODO.md`. The rename item leaves TODO. The Change idea's split keeps one trigger: the layers model out of `temp/`.
 
+**6b. `docs: TODO asks to sort and drop the frozen draft`**
+Inserted at commit 7. The frozen draft's TODO item asked to resume it; it now asks to sort it and drop it. Most of the draft has landed in the Change simulation and the layers document's §4.2. Three parts live only there: birth, an idea's repo, and 18 *Changed from today* findings. The draft's header follows the item.
+
 **7. `docs: ADR-0086 accepted`**
 The final records commit. Its status names anything changed since it was proposed: the frozen draft kept out of the sweep.
 
