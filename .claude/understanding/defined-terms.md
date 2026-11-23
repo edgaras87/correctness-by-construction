@@ -16,16 +16,16 @@ Borrowed:
 
 | Defined Term | Defined in |
 |---|---|
-| Adapted Case | `temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer* |
-| Adapted Understanding Text | `temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer* |
+| Adapted Case | `knowledge/backbone-ideas/layers-of-knowledge.md` §2.3, *The Adapted Case layer* |
+| Adapted Understanding Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §2.3, *The Adapted Case layer* |
 | Agent Rule | `docs/conventions/agent-arrangement/` §3.2, *`.claude/rules/`* |
 | Agent Skill | `docs/conventions/agent-arrangement/` §3.1, *`.claude/skills/`* |
-| Backbone Idea | `temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer* |
+| Backbone Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §2.1, *The Backbone Idea layer* |
 | Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |
 | Glossary Name | `docs/conventions/writing/` §2, *Why each rule*, rule 9 |
-| Instruction Text | `temp/common-ground/knowledge-layers-general.md` §2, *The layers* |
+| Instruction Text | `knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The layers* |
 | Paths Rule | `docs/conventions/agent-arrangement/` §5.6, *Rules files* |
-| Problem Domain Idea | `temp/common-ground/knowledge-layers-general.md` §2.2, *The Problem Domain layer* |
+| Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §2.2, *The Problem Domain layer* |
 
 ## 2. Two sets of texts
 

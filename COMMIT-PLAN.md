@@ -101,7 +101,7 @@ This repo's own Adapted Case for Defined Terms, at layer 4, both halves in one c
 `ARCHITECTURE.md` maps the new folder; a commit of its own, since the `agent` scope touches nothing else.
 
 **8c. `docs: Defined Terms names what stands on it`**
-The Defined Terms Problem Domain Idea's header gains "What stands on it": this repo's Adapted Case, `.claude/understanding/defined-terms.md`. With no Foundation Line, the headers carry the link, so a change to the idea finds the Adapted Case (`temp/common-ground/knowledge-layers-general.md` §3.2, its Rules).
+The Defined Terms Problem Domain Idea's header gains "What stands on it": this repo's Adapted Case, `.claude/understanding/defined-terms.md`. With no Foundation Line, the headers carry the link, so a change to the idea finds the Adapted Case (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.2, its Rules).
 
 **9. *(provisional)* Whether `knowledge/` is a Canonical Description**
 Asked here, and whether it waits for the rewrite with the Foundation Line (7b). If yes: the facts-in-sync manual's §4 gains `knowledge/`, then `.claude/rules/foundation-check.md` follows, two commits. If no: no commit, and ADR-0084 says why.
