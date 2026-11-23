@@ -60,6 +60,33 @@
       Trigger: due now.
       See: `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
+- [ ] Split the Change idea: what one part hands the next stays in
+      the Work Domain Idea; each part's own steps go to its Adapted
+      Cases (2026-11-23, the reviewer).
+      Context: the layers document's §3.2.1 to §3.2.6, about 200
+      lines, are mostly steps for one use each: layer 3 text at
+      layer 2 (`temp/common-ground/knowledge-layers-general.md` §3.1,
+      *How the layers fill*, its **Rules**). Each part already names
+      its Adapted Cases. Left at layer 2, a change to one part's steps
+      reads as a change to the Work Domain Idea, and sets off a
+      survey of every Adapted Case built on it.
+      Ideas:
+      - stays at layer 2, since Adapted Cases are tied only through
+        the idea above them (the general document's §2.3): what one
+        part hands the next, such as the Change Record in its Copy
+        Change's diff, the *settled snapshot*, a Kit Update's whole
+        files and Update Note, main moving only at a gate's close; the
+        rules every part keeps; the tables of parts, depths and cases;
+      - goes to layer 3: each part's own steps, as the Adapted
+        Understanding Text of its Adapted Cases, each open point with
+        its rule;
+      - one picture of the whole travel at layer 2, chosen by a visual
+        comparison; it settles whether the simulation's picture *The
+        whole flow* moves or goes.
+      Trigger: the layers model out of `temp/`, and where layer 3's
+      texts are kept decided.
+      See: devlog 2026-11-23, later.
+
 - [ ] Simulate depth c, then bring the Change idea to it
       (2026-11-22, the reviewer).
       Context: depth c is a lesson that changes the idea above: a
