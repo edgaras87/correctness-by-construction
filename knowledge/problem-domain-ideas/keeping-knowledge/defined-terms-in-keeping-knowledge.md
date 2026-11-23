@@ -43,7 +43,7 @@ A Defined Term is read by people and by an agent, in Markdown. Each Markdown mar
 - A Defined Term built on another carries it whole: Adapted Understanding Text, never Understanding. A short form is the one exception, defined as one (§3).
 - A Defined Term of more than 4 words is a trigger to look for a shorter true one. When none is found, the long one stands.
 - It is bold on its own once, where it is defined, and nowhere else.
-- A bold lead, of a list item or a paragraph, may hold a Defined Term. It is never the Defined Term alone with a colon, so a search for a definition never finds it.
+- A bold lead, of a list item or a paragraph, may hold a Defined Term. It is never a Defined Term or a short form alone, so a search for a definition never finds it.
 - An *italic* word is a label inside the Defined Term it belongs to, and is defined there.
 
 ## 3. Where it is defined
@@ -53,10 +53,10 @@ A Defined Term is defined in the text whose idea it belongs to. A text sits at o
 **Rules:**
 
 - A Defined Term is defined at the highest layer it holds, as a lesson goes as high as it is true (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.1, *How the layers fill*).
-- A text keeps its definitions together in one section, its first, titled *Its Defined Terms*, in alphabetical order, its short forms and its Borrow Table after them. The plain words it keeps in a narrow sense are written there too. A text that defines and borrows nothing has no such section.
+- A text keeps its definitions together in one section, its first, titled *Its Defined Terms*, in alphabetical order, its Borrow Table after them. The plain words it keeps in a narrow sense are written there too. A text that defines and borrows nothing has no such section.
 - Each definition is a list item: the Defined Term in bold, a colon, then its definition.
 - The Borrow Table follows under the line "Borrowed:", in two columns, *Defined Term* and *Defined in*.
-- A text's short forms follow its definitions, before the Borrow Table, under the line "Short forms:", in a table of two columns, *Short form* and *Defined Term*.
+- A short form is written at the end of its full term's definition, as "Short form: **<short form>**.": in bold, with no colon.
 
 ## 4. Borrowing a Defined Term
 
@@ -65,6 +65,7 @@ A text often uses Defined Terms another text defines. Its Borrow Table points at
 **Rules:**
 
 - Every Defined Term a text uses is defined in it, or listed in its Borrow Table. A name defined in a text not yet brought into the layers of knowledge, such as a Glossary Name, is borrowed the same way.
+- A short form is borrowed as any Defined Term is, by its own row. A text never defines a short form another text defines.
 - A Borrow Table names the section where each Defined Term is defined, by its number and title, never by its line.
 - When a definition changes, the Borrow Tables that list its Defined Term name every text to read again.
 
@@ -74,7 +75,7 @@ An agent reads whatever it opens, and opens a file whole unless told otherwise. 
 
 **Rules:**
 
-- A definition is found by a search for its bold mark, and a short form by a search for its table row, `| <short form> |`. Its section is read only when the definition alone is not enough.
+- A definition is found by a search for its bold mark, and a short form by a search for `**<short form>**`, which finds its full term's definition. Its section is read only when the definition alone is not enough.
 - Before a new Defined Term or short form is written, both searches are run across every text it may be read with. A hit is a collision, and one of the two changes.
 
 ## 6. Open questions
