@@ -48,4 +48,4 @@ and is read back from here. Documents only — no code, no CBC Runs
 
 ## Local rules
 
-- Before writing a new text for the layers of knowledge, read where it goes: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2.5, *Where each layer is kept*.
+- Before writing a new text for the layers of knowledge, read where it goes: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.5, *Where each layer is kept*.

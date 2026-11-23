@@ -1,7 +1,7 @@
 # Defined Terms, in this repo
 
 <!--
-What it is: the Adapted Understanding Text of this repo's own Adapted Case for Defined Terms, at layer 4 (knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §2.4, The layer of a repo's work). It says why its Instruction Text is as it is.
+What it is: the Adapted Understanding Text of this repo's own Adapted Case for Defined Terms, at layer 4 (knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md §3.4, The layer of a repo's work). It says why its Instruction Text is as it is.
 What it stands on: knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md, the Problem Domain Idea it is written from. It adapts that text, and never retells it.
 What stands on it: .claude/rules/defined-terms.md, its Instruction Text, a Paths Rule.
 Its place in the repo: .claude/understanding/ (ADR-0084). It never loads; it is read when its Instruction Text changes.
