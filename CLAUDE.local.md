@@ -2,6 +2,8 @@
 
 - Before any commit: stage it, show me the diff, and stop. Commit
   only when I say so, one commit at a time. Never push unless I ask.
+- A commit not yet pushed that I want gone is undone, by a reset,
+  never removed by a new commit.
 - In a Change Set, stop once its plan is written, for my word on it.
   Then stage each planned commit, show me the diff, and stop, as for
   any commit. No commit runs without my word.
