@@ -384,7 +384,10 @@
       - the piece of work, split off as a Backbone Idea of its own if
         a second Backbone Idea uses it; both then point at it
         (`knowledge/backbone-ideas/layers-of-knowledge.md` §2.1, *The
-        Backbone Idea layer*).
+        Backbone Idea layer*);
+      - `CLAUDE.md` comes in whole then, its Local Rule among its
+        lines: no understanding text for one line before the rest
+        (2026-11-23, the reviewer).
       Trigger: with the concept's split.
       See: devlog 2026-11-16 and 2026-11-18, layers 3 and 4 read back.
 
