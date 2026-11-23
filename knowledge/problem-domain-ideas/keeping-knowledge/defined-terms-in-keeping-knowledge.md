@@ -42,7 +42,8 @@ A Defined Term is read by people and by an agent, in Markdown. Each Markdown mar
 - A Defined Term is two or more words, its owner or kind first, each word capitalized: Problem Domain Idea, never Idea. A lowercase word is English.
 - A Defined Term built on another carries it whole: Adapted Understanding Text, never Understanding. A short form is the one exception, defined as one (§3).
 - A Defined Term of more than 4 words is a trigger to look for a shorter true one. When none is found, the long one stands.
-- It is bold once, where it is defined, and nowhere else.
+- It is bold on its own once, where it is defined, and nowhere else.
+- A bold lead, of a list item or a paragraph, may hold a Defined Term. It is never the Defined Term alone with a colon, so a search for a definition never finds it.
 - An *italic* word is a label inside the Defined Term it belongs to, and is defined there.
 
 ## 3. Where it is defined
