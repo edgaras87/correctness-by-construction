@@ -88,6 +88,12 @@ The writing manual, the home of rule 9, gains one sentence: under `knowledge/`, 
 **7b. `docs: own Adapted Cases carry no Foundation Line`**
 The conventions manual's §1.3 gains one exception, beside the Approach on Trial's: this repo's own Adapted Cases in `.claude/` carry no Foundation Line until the rewrite brings it into the layers model, the trigger written beside the exception. A Canonical Description changes, so the Change Walk runs; `.claude/rules/foundation-check.md` reads only files with a Foundation Line, and is checked for a line this makes false.
 
+**7c. `docs: rule 9 steps aside for own Adapted Cases`**
+Inserted: commit 8's two files sit in `.claude/`, where rule 9 still applied, and both must use Defined Terms. Rule 9 now does not apply under `knowledge/`, under `.claude/understanding/`, or in an Agent Skill or Agent Rule whose understanding sits there: the set 7b names. The glossary's header says it lists what is defined where rule 9 applies, pointing at rule 9 instead of naming the folders.
+
+**7d. `chore(agent): writing rule follows the wider scope`**
+`.claude/rules/writing.md` follows 7c, and `CLAUDE.md`'s records table row sends a thing defined where rule 9 applies to the glossary.
+
 **8. `chore(agent): add the Defined Terms Adapted Case`**
 This repo's own Adapted Case for Defined Terms, at layer 4, both halves in one commit: its understanding, `.claude/understanding/defined-terms.md`, the parts of commit 5's draft true only here (`knowledge/` only while the rewrite runs, the twin names, the glossary in the collision search, why a Paths Rule); and its Instruction Text, the Paths Rule `.claude/rules/defined-terms.md` on `knowledge/**`. Its `.claude/decisions.md` entry. The Paths Rule carries no Foundation Line (7b). The understanding half's header names what it stands on, the Defined Terms Problem Domain Idea of keeping knowledge, and what stands on it, the Paths Rule.
 
