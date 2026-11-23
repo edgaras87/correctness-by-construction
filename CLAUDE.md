@@ -45,3 +45,7 @@ and is read back from here. Documents only — no code, no CBC Runs
      Longer than a screen means a line is failing. Shrinking it is
      maintenance, not tidying.
      foundation: the agent-arrangement convention -->
+
+## Local rules
+
+- Before writing a new text for the layers of knowledge, read where it goes: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2.5, *Where each layer is kept*.
