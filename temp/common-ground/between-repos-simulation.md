@@ -12,12 +12,11 @@
      and git keeps every version.
      Frozen on 2026-11-10, after scenario 3, on the reviewer's word:
      the Common Ground Problem takes one case instead, a System Repo
-     changing a System Kit Copy. It resumes by the TODO item that
-     names this file.
+     changing a System Kit Copy. The TODO item that names this file
+     sorts it, and drops it.
      It keeps the names System Repo and System Kit, from before
      ADR-0086: here they mean a repo and a kit for any kind of
-     system, not only backends. Its TODO item reworks them when it
-     resumes. -->
+     system, not only backends. Its TODO item settles them first. -->
 
 This document simulates how understanding moves between the repos, one step at a time. It is written for the system as intended, starting fresh, not from today's exchange. Each step says what happens, and what must be marked for a later step. A later step that finds something missing adds it to the earlier step, and says why.
 

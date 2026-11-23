@@ -277,27 +277,36 @@
       See: devlog 2026-11-12, a refinement's Output Shape;
       `TODO-CONVERSATION-MEMORY.md` §34, *Refining a document*.
 
-- [ ] Resume the simulation of what passes between the repos,
-      `temp/common-ground/between-repos-simulation.md` (2026-11-10, the reviewer).
-      Context: the simulation grew into designing the whole exchange:
-      an idea's repo, birth, cleanups, reading back. That is solution
-      work, and it made the problem bigger while the problem was
-      still being written. It is frozen after scenario 3: scenarios 0 to 3
-      written, 4 to 8 not. Its *Changed from today* fields hold
-      findings about today's repo that the sorting of where common
-      ground was lost needs. The Common
-      Ground Problem takes one case instead: a Backend Repo changes a
-      Backend Kit Copy.
+- [ ] Sort the simulation of what passes between the repos, and drop
+      it: `temp/common-ground/between-repos-simulation.md` (2026-11-10,
+      the reviewer; sort and drop, 2026-11-23).
+      Context: the simulation grew into designing the whole exchange,
+      and was frozen after scenario 3: scenarios 0 to 3 written, 4 to
+      8 not. The Common Ground Problem took one case instead: a
+      Backend Repo changes a Backend Kit Copy. That case grew into the
+      Change simulation and the layers document's §4.2, which hold the
+      draft's §5.2, steps 2 and 3, and §5.3. Three parts live only in
+      the draft:
+      - birth, §5.1: choosing the kit, the delivery and its separate
+        check, the start, the first session's prompt, the cleanup.
+        The layers document's §4.2.2 points at it for the start;
+      - an idea's repo, §5.0: the brief worked in a repo of its own,
+        on a branch, main made from its cleaned history;
+      - 18 *Changed from today* findings, which the sorting of where
+        common ground was lost needs, and two Failure Cases it noted
+        that the problem file's §4 lacks: context from the Maintainer
+        Repo written into a brief, and an agent reading the Maintainer
+        Repo on disk.
+      The draft goes once each part has landed, or is judged not
+      needed (ADR-0082).
       Ideas:
-      - write the scenarios left from practice, or let real cases
-        become scenarios of their own;
-      - start from the file's *Open* fields, each with its trigger;
       - its names for a repo and a kit of any kind of system, kept
-        from before ADR-0086, as its header says: reworked first;
-      - the birth scenario gains what
-        `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2 asks of it:
-        the delivery check writes the Backend Repo's register row,
-        with the *settled snapshot* set to the start;
+        from before ADR-0086, as its header says: settled first;
+      - birth as a case of its own, as the Copy Change became; the
+        layers document's §4.2.2 asks it for the delivery check
+        writing the Backend Repo's register row, with the *settled
+        snapshot* set to the start;
+      - each *Open* field, with its trigger, lands with its part;
       - scenarios as checks: how the alert fires was to be decided
         once the simulation was done (2026-11-09, the reviewer);
       - the birth's branch: one option was chosen, a branch cut from
