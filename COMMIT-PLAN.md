@@ -122,7 +122,7 @@ One line in the Entry File, loaded in every session: `knowledge/` holds the laye
 The general document's definitions gathered into one section, and its borrow table.
 
 **13. `docs: Maintainer layers doc takes Defined Terms`** *(provisional: shaped by commits 3 to 4m)*
-The same for the Maintainer Repo's document, its short forms with them. Asked here: the Defined Terms it borrows from the problem file, which stays in `temp/`; and its bold leads that begin with a Defined Term, such as "**Kit Update,**", which rule 9 allows and the Defined Terms texts do not say, since commit 6.
+The same for the Maintainer Repo's document, its short forms with them. Asked here: the Defined Terms it borrows from the problem file, which stays in `temp/`; and its bold leads that begin with a Defined Term, such as "**Kit Update,**", which rule 9 allows and the Defined Terms texts do not say, since commit 6. Its §4 also gains an open question: this repo's own Adapted Cases get a table in §2.4, beside §2.1's and §2.2's, when a second one lands (the reviewer, 2026-11-23).
 
 **14. `docs: TODO follows knowledge/ and Defined Terms`**
 The layers item: the model's place decided, its order as now. The depth c item: due after the Change idea's split. The glossary item, "Decide which names go in the glossary": closed, if the Defined Terms texts answer it, what is left going to their open points; the reviewer decides at the commit. A new item: the System Kit's Defined Terms, first guess one terms text in the System Kit, its trigger the first System Repo Adapted Case written.
