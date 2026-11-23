@@ -5,6 +5,7 @@ What it is: a Problem Domain Idea of keeping knowledge, and its one home (temp/c
 What it stands on: knowledge/backbone-ideas/defined-terms.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
 Why it is an idea of its own: ADR-0085.
+What stands on it: .claude/understanding/defined-terms.md, this repo's own Adapted Case for Defined Terms, its Adapted Understanding Text.
 Its first sources, input and not rules:
 - temp/common-ground/common-ground-problem.md, Defined Terms, the rules its own Defined Terms follow;
 - writing rule 9 (docs/conventions/writing/ §2, Why each rule, rule 9);
@@ -22,6 +23,7 @@ Borrowed:
 
 | Defined Term | Defined in |
 |---|---|
+| Adapted Case | `temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer* |
 | Adapted Understanding Text | `temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer* |
 | Backbone Idea | `temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer* |
 | Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |
