@@ -25,8 +25,8 @@ The glossary today: 309 lines, about 70 Names, a header of rules, 21 lines. Most
 ## Decision
 
 1. **Defined Terms is an idea of its own, at three layers:** a Backbone Idea, since CBC backend design needs it too; a Problem Domain Idea of keeping knowledge; and the Maintainer Repo's own Adapted Case, whose Instruction Text is a Paths Rule on `knowledge/**`. The problem file's rules for its Defined Terms are a source, taken where they still hold.
-2. **Under `knowledge/`, a Defined Term is defined at its home and borrowed by table, never listed in the glossary.** How, and how the agent finds one, is the Defined Terms texts'.
-3. **`docs/glossary.md` stays for today's texts** until the rewrite retires them. Writing rule 9 points `knowledge/` at the Defined Terms idea. The copy delivered to CBC Runs is not changed: a CBC Run has no `knowledge/`.
+2. **Under `knowledge/`, and in the texts decision 3 names with it, a Defined Term is defined at its home and borrowed by table, never listed in the glossary.** How, and how the agent finds one, is the Defined Terms texts'.
+3. **`docs/glossary.md` stays for today's texts** until the rewrite retires them. Writing rule 9 points `knowledge/` at the Defined Terms idea, and with it `.claude/understanding/` and an Agent Skill or Agent Rule whose understanding sits there: this repo's own Adapted Cases are kept whole in `.claude/` (ADR-0084), and must use Defined Terms. The copy delivered to CBC Runs is not changed: a CBC Run has no `knowledge/`.
 4. **The System Kit's Defined Terms are open.** First guess: one terms text in the System Kit, each Defined Term adapted from its home. It is decided when the first System Repo Adapted Case is written.
 
 ## Consequences
