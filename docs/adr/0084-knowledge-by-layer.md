@@ -34,6 +34,7 @@ Layer 2 stayed grouped by Work Domain, so one layer-2 text served several kinds 
 - **Layer 2 by Work Domain, a sort of work, beside layer 3 by Problem Domain.** Rejected: one set of Adapted Cases would draw on ideas grouped another way, and one layer-2 text would serve several kinds of project.
 - **"Keeping a concept" as the Maintainer Repo's Problem Domain.** Rejected: the model already names its problem keeping knowledge, and a System Repo's own knowledge keeping is part of CBC backend design.
 - **Layer-2 titles by the repo,** "…, in the Maintainer Repo". Rejected: a title names its Problem Domain, as its folder does.
+- **`knowledge/` a Canonical Description now, and a Foundation Line naming a path in it.** Rejected: the facts-in-sync manual and the conventions manual would be patched for it, then replaced when the rewrite brings them into the layers model.
 
 ## Decision
 
@@ -45,6 +46,7 @@ Layer 2 stayed grouped by Work Domain, so one layer-2 text served several kinds 
 6. **"Adapted Case" names the form:** a Problem Domain Idea written for one piece of work, as understanding with instructions. Its owner says its layer: a Problem Domain's Adapted Case is layer 3, a project's own is layer 4.
 7. **The System Kit is the System Repos' set at layer 3,** and what is copied to each System Repo.
 8. **Layer 2 is grouped by Problem Domain too, and Work Domain merges into it.** A layer-2 text is a Problem Domain Idea: a Backbone Idea adapted to one Problem Domain. Each Problem Domain writes its own adaptation; what is true for all goes up to layer 1. The Maintainer Repo's Problem Domain is keeping knowledge; the System Repos' is CBC backend design.
+9. **`knowledge/` is no Canonical Description, and this repo's own Adapted Cases carry no Foundation Line, until the rewrite brings the facts-in-sync manual into the layers model.** Until then a text's header says what it stands on and what stands on it, and when a text changes, each text its header says stands on it is checked (the general document's §3.2, its Rules).
 
 ## Consequences
 
