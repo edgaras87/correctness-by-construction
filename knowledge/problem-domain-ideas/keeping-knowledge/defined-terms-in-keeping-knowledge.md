@@ -9,7 +9,7 @@ What stands on it: .claude/understanding/defined-terms.md, this repo's own Adapt
 Its first sources, input and not rules:
 - temp/common-ground/common-ground-problem.md, Defined Terms, the rules its own Defined Terms follow;
 - writing rule 9 (docs/conventions/writing/ §2, Why each rule, rule 9);
-- TODO.md, the item "Decide which names go in the glossary".
+- the TODO item "Decide which names go in the glossary", closed on 2026-11-23 by the Defined Terms texts, its last state in git.
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 

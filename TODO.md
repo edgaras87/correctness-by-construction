@@ -38,14 +38,14 @@
       to work by; then finish the change work by it; then bring
       today's Maintainer Repo into it; and keep it true from practice
       (2026-11-14, the reviewer).
-      Context: the draft is two documents: the layers in any
-      Problem Domain, `knowledge/backbone-ideas/layers-of-knowledge.md`, and
+      Context: the draft is two documents, placed by layer in
+      `knowledge/` (ADR-0084): the layers in any Problem Domain, `knowledge/backbone-ideas/layers-of-knowledge.md`, and
       the Maintainer Repo's Problem Domain Idea of them,
       `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`. It is the minimum
       written where how to keep knowledge is not yet known, a trial:
       practice changes it, and the ideas around it, such as Change.
-      Each document's §4 holds its open questions. The layers
-      document's §3.2 holds the open points of how a change travels,
+      Each document's §5 holds its open questions. The layers
+      document's §4.2 holds the open points of how a change travels,
       each beside its part's rules, with its trigger.
       Ideas:
       - the change work: its rules in the layers document's §4.2,
@@ -128,8 +128,7 @@
         too; what the Update Note's why says; at layer 1, how far
         down the survey reaches (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
         §4.2.4, *Act on the verdicts*, its *Open*).
-      Trigger: due now, the Change idea written from depth b in the
-      layers document's §4.2.
+      Trigger: the Change idea split, its item.
       See: devlog 2026-11-22, the depth c item.
 
 - [ ] Do the problem file's next pass: §6 and §8, Failure Case 15,
@@ -146,7 +145,7 @@
         that retell the layers document; §8's middle-level option,
         which the layers model answers.
       Trigger: due now, the Change idea written in the layers
-      document's §3.2.
+      document's §4.2.
       See: devlog 2026-11-18, later, *Found, not fixed*, item 5.
 
 - [ ] Decide what becomes of the branch `experiment-simulation-auto`
@@ -468,6 +467,10 @@
         a note made stale by a change in the repo around it shows only
         in a full review, as on 2026-11-07, or when where common
         ground was lost is sorted.
+      - names in the agent's memory: a Defined Term or a narrowed
+        word in a note sits outside the repo, where no Borrow Table
+        or collision search reaches it. From the glossary item,
+        closed 2026-11-23.
       Trigger: the session-end item is decided, or the Agent Model is
       reworked, whichever comes first.
       See: `TODO-CONVERSATION-MEMORY.md` §32, *The agent's memory*.
@@ -533,35 +536,17 @@
       See: devlog 2026-11-23, the `knowledge/` plan's Defined Terms
       commits.
 
-- [ ] Decide which names go in the glossary, and how a name one text
-      uses alone is kept apart (2026-11-06, the reviewer).
-      Context: writing rule 9 sends every defined thing's Glossary Name
-      to `docs/glossary.md`. If every name goes there, the glossary
-      grows and names start to collide, though some are needed only to
-      read one text. But the agent reads whatever it opens, and cannot
-      tell a name local to one text from a global one unless the text
-      says so. Two texts with the same local name for different things
-      may be merged by the agent into one meaning.
+- [ ] Decide how the System Kit keeps its Defined Terms
+      (2026-11-23, the reviewer).
+      Context: a System Repo gets the System Kit's Adapted Cases,
+      but not layers 1 and 2, where most of their Defined Terms
+      are defined. Their Borrow Tables would point at texts the
+      System Repo does not hold.
       Ideas:
-      - only names used across texts go in the glossary; a local name
-        is defined in its text, and marked as local there;
-      - a local name a second text starts using becomes global, and
-        goes in;
-      - whether the glossary is mostly for the human, since the agent
-        meets names in context;
-      - what else can go wrong: a local name grows global unseen; a
-        glossary entry drifts from its home; names in the agent's
-        memory, outside the repo.
-      - a draft's local Names are used while it is worked on, and land
-        in the glossary or go when it finishes; narrowed lowercase
-        words bleed most easily between docs the agent reads together,
-        so they are kept rarest.
-      - the repo's glossary takes the rules the problem draft's
-        Defined Terms follow, being local aside: sorted alphabetically,
-        a definition naming what it builds on by its Term, and no Term
-        shortened by sharing words with another.
-      Trigger: the problem file's Defined Terms land, as today's repo
-      is rewritten into the layers model (ADR-0082).
+      - one terms text in the System Kit, each Defined Term adapted
+        from its home.
+      Trigger: the first Adapted Case for the System Repos written.
+      See: ADR-0085, decision 4.
 
 - [ ] Read and judge CBC Runs 4, 5 and 6: each read apart, their
       findings judged together, kept for the rewrite (2026-11-19,

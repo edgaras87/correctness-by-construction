@@ -7,7 +7,7 @@ Why it is an idea of its own: ADR-0085.
 Its first sources, input and not rules:
 - temp/common-ground/common-ground-problem.md, Defined Terms, the rules its own Defined Terms follow;
 - writing rule 9 (docs/conventions/writing/ §2, Why each rule, rule 9);
-- TODO.md, the item "Decide which names go in the glossary".
+- the TODO item "Decide which names go in the glossary", closed on 2026-11-23 by the Defined Terms texts, its last state in git.
 What stands on it: knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge. Each Problem Domain Idea points here, and never retells it.
 How it is edited:
 - It gives no example from one Problem Domain's work.
