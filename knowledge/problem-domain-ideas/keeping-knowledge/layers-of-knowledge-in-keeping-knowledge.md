@@ -64,7 +64,7 @@ Key: the dotted frame holds what the Maintainer Repo keeps. The dashed frame hol
 
 ## 2. The layers
 
-Knowledge sits in four layers (`knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The layers*). This section says where each is kept here, and what each holds so far. Layers 1 to 3 are kept in the Maintainer Repo; where inside it is decided when today's Maintainer Repo is brought into this model (`TODO.md`, the item on the layers of knowledge).
+Knowledge sits in four layers (`knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The layers*). This section says where each is kept here, and what each holds so far. Layers 1 to 3 are kept in the Maintainer Repo, under `knowledge/`. Where each is kept, and how a new text is placed, is §2.5.
 
 Each repo is a project of a Problem Domain (`knowledge/backbone-ideas/layers-of-knowledge.md` §2, *The layers*): a System Repo's is CBC backend design, and the Maintainer Repo's is keeping knowledge.
 
@@ -183,6 +183,24 @@ Layer 4 is one repo's work, and the repo's own texts (`knowledge/backbone-ideas/
 
 - **Each System Repo's work, by its Kit Copies:** a System Repo is born with Kit Copies of the System Kit and works by them. A Kit Copy is a layer-3 text kept in the System Repo. As its work needs, it makes Copy Changes, so its Kit Copies differ from the System Kit on purpose. It is kept outside the Maintainer Repo, so every arrow between it and layer 3 crosses from one repo to the other.
 - **The Maintainer Repo's own work, by its own Adapted Cases:** each is written for this repo alone, from a Problem Domain Idea of §2.2.1, mostly how an agent works, in keeping knowledge, so it is layer 4. They are kept in `.claude/`, where the agent loads them, and nothing is delivered. A change its work makes is, at once, a change to its own Adapted Case. If a Maintainer Kit is wanted, the part of them true for every Maintainer Repo is set apart up to layer 3 (§4, question 1). Its problem is keeping this knowledge, as a System Repo's is designing one system.
+
+### 2.5 Where each layer is kept
+
+Each layer has one folder, so a text's path says its layer:
+
+- layer 1: `knowledge/backbone-ideas/`;
+- layer 2: `knowledge/problem-domain-ideas/<Problem Domain>/`, such as `keeping-knowledge/`;
+- layer 3: `knowledge/adapted-cases/<Problem Domain>/`, one set for each Problem Domain, not made until the first Adapted Case for the System Repos is written;
+- layer 4, this repo's own Adapted Cases: whole in `.claude/`. The Instruction Text sits where its kind loads, such as `.claude/rules/`. The Adapted Understanding Text sits in `.claude/understanding/`, which never loads.
+
+A System Repo's layer 4 is kept in the System Repo.
+
+**Rules:**
+
+- One folder per layer, and no number in a folder's name.
+- A folder is made when its first file lands.
+- A file is named after its idea, and its title matches. A layer-2 title is its layer-1 title, ", in" and its Problem Domain.
+- A new idea gets its row in §2.1's or §2.2's table, with its Home.
 
 ## 3. How knowledge moves
 
