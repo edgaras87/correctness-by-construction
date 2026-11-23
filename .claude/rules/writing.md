@@ -65,7 +65,7 @@ Why each rule is so: (`docs/conventions/writing/` §2, *Why each rule*).
    in the commit that first uses it, pointing at the home that
    defines it.
 
-   Under `knowledge/`, this rule does not apply. A defined thing there follows `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md`, and the glossary does not list it.
+   Under `knowledge/` and `.claude/understanding/`, and in an Agent Skill or Agent Rule whose understanding sits there, this rule does not apply. A defined thing there follows `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md`, and the glossary does not list it.
 10. **Title a numbered section with its subject.** A title is:
     - a label, a noun phrase of 30 characters or fewer;
     - in sentence case, a Glossary Name inside it keeping its
@@ -140,5 +140,6 @@ this rule then names that kind and its style
 - ADR-0079 — rule 9: bold once at a Name's home, a list item's bold
   lead, a Foundation Line's value; rule 10: a comma or a parenthesis
   is a gloss
-- ADR-0085 — rule 9 does not apply under `knowledge/`, and the
-  glossary does not list what is defined there
+- ADR-0085 — rule 9 does not apply under `knowledge/` or
+  `.claude/understanding/`, nor in what is built on the latter, and
+  the glossary does not list what is defined there
