@@ -1,7 +1,7 @@
 # 0084. knowledge/ by layer
 
 Date: 2026-11-23
-Status: Proposed, opened under the commit plan for knowledge/
+Status: Accepted (2026-11-23, in the final records commit of the commit plan for knowledge/; since it was proposed: layer 4 holds a project's own texts, this repo's own Adapted Cases whole in `.claude/` (decision 5); layer 3, then layer 2, grouped by Problem Domain, Work Domain merged into it (decisions 1, 6 to 8); no Foundation Line or Canonical Description until the rewrite (decision 9))
 
 ## Context
 
