@@ -6,9 +6,9 @@ The layers model leaves `temp/`. A new top folder, `knowledge/`, holds layers 1 
 
 - `knowledge/backbone-ideas/`: the Backbone Ideas, layer 1;
 - `knowledge/work-domain-ideas/keeping-knowledge/`: the Work Domain Ideas of keeping knowledge, layer 2;
-- `knowledge/adapted-cases/`: layer 3, the Adapted Cases written for every project of their use, such as the System Repos'. No file lands there in this plan.
+- `knowledge/adapted-cases/<Problem Domain>/`: layer 3, one set of Adapted Cases for each Problem Domain, a kind of project, such as the System Repos'. No file lands there in this plan.
 
-Layer 3 holds only what is true for every project of its use; a project's own texts are layer 4. With no Maintainer Kit, this repo's own Adapted Cases are layer 4, kept whole in `.claude/`: the Instruction Text where it loads, its understanding beside it in `.claude/understanding/`, which never loads. The two layers documents say so.
+Layer 3 holds one set of Adapted Cases for each Problem Domain, true for every project of it; a project's own texts are layer 4. With no Maintainer Kit, this repo's own Adapted Cases are layer 4, kept whole in `.claude/`: the Instruction Text where it loads, its understanding beside it in `.claude/understanding/`, which never loads. The two layers documents say so.
 
 Defined Terms is the first idea written: its Backbone Idea and its Work Domain Idea under `knowledge/`, and this repo's own Adapted Case in `.claude/`. Under `knowledge/`, a Defined Term is defined in bold at its home, a text that uses another text's Defined Terms lists them in a Borrow Table with Fact References, and the agent finds one by its bold mark. The glossary does not list them. The Adapted Case's Paths Rule loads when the agent works under `knowledge/`. Writing rule 9 points `knowledge/` at the idea; elsewhere rule 9 stands, and the glossary stays for today's texts until the rewrite retires them (ADR-0082).
 
@@ -56,6 +56,18 @@ One model change, both layers documents, so neither contradicts the other and no
 
 **4f.** Merged into 4e.
 
+**4g. `docs: TODO adds renaming System Repo and Kit`**
+Inserted: a TODO line decided while talking. System Repo and System Kit name no Problem Domain; they are renamed right after this plan, before the Change idea's split, whose trigger now waits for it.
+
+**4h. `docs: ADR-0084 groups layer 3 by Problem Domain`**
+ADR-0084, still Proposed, takes three decisions of 2026-11-23: layer 3 is grouped by Problem Domain, a kind of project, not by Work Domain; "Adapted Case" names the form, wherever it sits, and its owner says the layer; the System Kit is the System Repos' set at layer 3. Its decision 1's folder becomes `adapted-cases/<Problem Domain>/`, and decision 5 is reworded by Problem Domain. Rejected: layer 3 by Work Domain; a new Name for a project's own text, or for layer 3's; the System Kit apart from layer 3.
+
+**4i. `docs: layer 3 is grouped by Problem Domain`**
+Both layers documents, as one change. The general document: Problem Domain defined (§2); an Adapted Case is a Work Domain Idea written for one piece of work, as understanding with instructions (§2.3); layer 3 holds one set for each Problem Domain, true for every project of it; layer 4 is one project, its copies of its Problem Domain's Adapted Cases and its own where none covers its work (§2.4); the picture's labels to match. The Maintainer Repo's document: the System Repos' Problem Domain and its own named; the System Kit is the System Repos' set at layer 3, and "not a layer" goes (§2); its question 6 follows; its picture's label "the System Repos' problem" leaves the Work Domain box.
+
+**4j. `docs: the general picture shows Problem Domains`** *(provisional: its shape is chosen at the commit)*
+The general document's picture redrawn: layer 3 as one set per Problem Domain, as layer 2 shows its Work Domain Ideas; layer 4 as projects, each with its copies and its own Adapted Cases; the arrows for a project's own Adapted Case kept. Chosen by the visual-comparison Agent Skill: what the reader must get, written first, and the candidates rendered and committed before the choice.
+
 **5.** Dropped. Its draft held a layer-4 text; its parts went to 4d and to commit 8.
 
 **6. `docs: writing rule 9 sends knowledge/ to its idea`**
@@ -80,15 +92,15 @@ The general document to `knowledge/backbone-ideas/layers-of-knowledge.md`: its t
 To `knowledge/work-domain-ideas/keeping-knowledge/layers-of-knowledge-in-the-maintainer-repo.md`: its title gains ", in the Maintainer Repo"; its header's "Its place in the repo" now says where; every Living Text pointer at its old path, about 69, in the same commit.
 
 **11b. `docs: where each layer is kept, and its rules`**
-The Maintainer Repo's document's §2 says where each layer is kept, replacing its line that this is decided later. With the folder list go the rules for placing a text: one folder per layer; no numbers in folder names; a folder made when its first file lands; a file named after its idea, its title matching; layers 1 to 3 under `knowledge/`; this repo's own Adapted Cases whole in `.claude/`, their understanding in `.claude/understanding/`; a new text's row in the document's table, with its Home. Its own commit, since the move is a rename and this is the layout's home.
+The Maintainer Repo's document's §2 says where each layer is kept, replacing its line that this is decided later. With the folder list go the rules for placing a text: one folder per layer; no numbers in folder names; a folder made when its first file lands; a file named after its idea, its title matching; layers 1 to 3 under `knowledge/`, layer 3 by Problem Domain; this repo's own Adapted Cases whole in `.claude/`, their understanding in `.claude/understanding/`; a new text's row in the document's table, with its Home. Its own commit, since the move is a rename and this is the layout's home.
 
 **11c. `chore(agent): CLAUDE.md points at knowledge/`**
 One line in the Entry File, loaded in every session: `knowledge/` holds the layers model, and where a text goes is the Maintainer Repo's document's §2. A pointer, not a retelling. With §2's rules, it is a small Adapted Case: the rules its understanding, the line its Instruction Text. A Paths Rule would load only once a file under `knowledge/` is read, too late for a session about to place a new idea elsewhere. After 11b, since it points at it.
 
-**12. `docs: the layers document takes Defined Terms`** *(provisional: shaped by commits 3 to 4e)*
+**12. `docs: the layers document takes Defined Terms`** *(provisional: shaped by commits 3 to 4j)*
 The general document's definitions gathered into one section, and its borrow table.
 
-**13. `docs: Maintainer layers doc takes Defined Terms`** *(provisional: shaped by commits 3 to 4e)*
+**13. `docs: Maintainer layers doc takes Defined Terms`** *(provisional: shaped by commits 3 to 4j)*
 The same for the Maintainer Repo's document, its short forms with them. Asked here: the Defined Terms it borrows from the problem file, which stays in `temp/`.
 
 **14. `docs: TODO follows knowledge/ and Defined Terms`**
