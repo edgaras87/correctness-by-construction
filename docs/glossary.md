@@ -1,6 +1,6 @@
 # Glossary
 
-<!-- The list of Glossary Names: every thing this repo defines outside knowledge/, named
+<!-- The list of Glossary Names: every thing this repo defines where rule 9 applies, named
      in two or more words, owner or kind first, each word capitalized,
      written exactly (docs/conventions/writing/ §2, Why each rule,
      rule 9). A lowercase word is English. One entry per Name: the
