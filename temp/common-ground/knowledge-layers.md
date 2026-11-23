@@ -140,7 +140,7 @@ The Maintainer Repo's own Problem Domain. It works by its own Adapted Cases, wri
 | Problem Domain Idea | Adapted from | What it adds | Home |
 |---|---|---|---|
 | The layers of knowledge, in keeping knowledge | The layers of knowledge | where each layer is kept; how knowledge travels between the repos | this document |
-| Defined Terms, in keeping knowledge | Defined Terms | the mark; where each is defined; the Borrow Table; finding one | `knowledge/work-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md` |
+| Defined Terms, in keeping knowledge | Defined Terms | the mark; where each is defined; the Borrow Table; finding one | `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md` |
 | How an agent works, in keeping knowledge | How an agent works | not yet known | planned (`TODO.md`, the item that rewrites the Agent Model) |
 
 #### 2.2.2 CBC backend design
@@ -151,6 +151,7 @@ The System Repos' Problem Domain. The Maintainer Repo keeps its Problem Domain I
 |---|---|---|---|
 | CBC design, in CBC backend design | CBC design | backends as the kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 | How an agent works, in CBC backend design | How an agent works | not yet known | planned (`TODO.md`, the item that rewrites the Agent Model) |
+| Defined Terms, in CBC backend design | Defined Terms | the System Kit's Defined Terms, read in a System Repo without layers 1 and 2 | planned, with the first Adapted Case for the System Repos (ADR-0085, decision 4) |
 | The layers of knowledge, in CBC backend design | The layers of knowledge | how a System Repo keeps its own knowledge, and takes the System Kit's changes | planned, with the first Adapted Case for the System Repos (`TODO.md`, the item "Split the Change idea") |
 
 ### 2.3 The Adapted Case layer

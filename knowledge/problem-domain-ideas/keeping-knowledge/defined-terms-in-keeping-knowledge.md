@@ -3,7 +3,7 @@
 <!--
 What it is: a Problem Domain Idea of keeping knowledge, and its one home (temp/common-ground/knowledge-layers-general.md §2.2, The Problem Domain layer).
 What it stands on: knowledge/backbone-ideas/defined-terms.md, the Backbone Idea it is adapted from. It adapts that document, and never retells it.
-Its place in the repo: knowledge/work-domain-ideas/keeping-knowledge/ (ADR-0084).
+Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
 Why it is an idea of its own: ADR-0085.
 Its first sources, input and not rules:
 - temp/common-ground/common-ground-problem.md, Defined Terms, the rules its own Defined Terms follow;
@@ -12,7 +12,7 @@ Its first sources, input and not rules:
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 
-This document says how texts that keep knowledge mark, define, share and find their Defined Terms. It is the Backbone Idea of Defined Terms adapted to keeping knowledge (`knowledge/backbone-ideas/defined-terms.md`). It holds for the texts kept in the layers of knowledge (`temp/common-ground/knowledge-layers-general.md` §2, *The layers*), in any repo that keeps them.
+This document says how the texts of keeping knowledge mark, define, share and find their Defined Terms. It is the Backbone Idea of Defined Terms adapted to keeping knowledge, the Maintainer Repo's Problem Domain (`temp/common-ground/knowledge-layers.md` §2, *The layers*), from `knowledge/backbone-ideas/defined-terms.md`. Another Problem Domain writes its own adaptation.
 
 ## 1. Its Defined Terms
 
@@ -22,16 +22,14 @@ Borrowed:
 
 | Defined Term | Defined in |
 |---|---|
-| Adapted Case | `temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer* |
 | Adapted Understanding Text | `temp/common-ground/knowledge-layers-general.md` §2.3, *The Adapted Case layer* |
 | Backbone Idea | `temp/common-ground/knowledge-layers-general.md` §2.1, *The Backbone Idea layer* |
 | Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |
 | Fact Reference | `docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is* |
 | Glossary Name | `docs/conventions/writing/` §2, *Why each rule*, rule 9 |
+| Maintainer Repo | `temp/common-ground/knowledge-layers.md` §2, *The layers* |
+| Problem Domain | `temp/common-ground/knowledge-layers-general.md` §2, *The layers* |
 | Problem Domain Idea | `temp/common-ground/knowledge-layers-general.md` §2.2, *The Problem Domain layer* |
-| System Kit | `temp/common-ground/knowledge-layers.md` §2, *The layers* |
-| System Kit Copy | `temp/common-ground/knowledge-layers.md` §2, *The layers* |
-| System Repo | `temp/common-ground/knowledge-layers.md` §2, *The layers* |
 
 ## 2. The mark
 
@@ -78,6 +76,4 @@ An agent reads whatever it opens, and opens a file whole unless told otherwise. 
 
 ## 6. Open questions
 
-None is answered by the text above. Each is answered when work reaches it: its answer goes into the text above, and the question leaves this list.
-
-1. **The System Kit's Defined Terms:** a System Repo cannot open layers 1 and 2, so its System Kit Copies cannot point there. A first guess: one text of Defined Terms in the System Kit, each adapted from its definition (ADR-0085). Its trigger: the first Adapted Case written for the System Repos.
+None is open now. A question joins this list when work meets one, and leaves it once its answer is in the text above.

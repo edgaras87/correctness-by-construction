@@ -8,7 +8,7 @@ Its first sources, input and not rules:
 - temp/common-ground/common-ground-problem.md, Defined Terms, the rules its own Defined Terms follow;
 - writing rule 9 (docs/conventions/writing/ §2, Why each rule, rule 9);
 - TODO.md, the item "Decide which names go in the glossary".
-What stands on it: knowledge/work-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge. Each Problem Domain Idea points here, and never retells it.
+What stands on it: knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge. Each Problem Domain Idea points here, and never retells it.
 How it is edited:
 - It gives no example from one Problem Domain's work.
 - A trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
