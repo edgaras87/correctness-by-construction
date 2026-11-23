@@ -85,14 +85,20 @@ The writing manual, the home of rule 9, gains one sentence: under `knowledge/`, 
 **7. `chore(agent): writing rule follows rule 9`**
 `.claude/rules/writing.md` follows the manual.
 
+**7b. `docs: own Adapted Cases carry no Foundation Line`**
+The conventions manual's §1.3 gains one exception, beside the Approach on Trial's: this repo's own Adapted Cases in `.claude/` carry no Foundation Line until the rewrite brings it into the layers model, the trigger written beside the exception. A Canonical Description changes, so the Change Walk runs; `.claude/rules/foundation-check.md` reads only files with a Foundation Line, and is checked for a line this makes false.
+
 **8. `chore(agent): add the Defined Terms Adapted Case`**
-This repo's own Adapted Case for Defined Terms, at layer 4, both halves in one commit: its understanding, `.claude/understanding/defined-terms.md`, the parts of commit 5's draft true only here (`knowledge/` only while the rewrite runs, the twin names, the glossary in the collision search, why a Paths Rule); and its Instruction Text, the Paths Rule `.claude/rules/defined-terms.md` on `knowledge/**`. Its `.claude/decisions.md` entry. Asked here: what the Paths Rule's Foundation Line names, since the conventions manual's values name no text under `knowledge/`.
+This repo's own Adapted Case for Defined Terms, at layer 4, both halves in one commit: its understanding, `.claude/understanding/defined-terms.md`, the parts of commit 5's draft true only here (`knowledge/` only while the rewrite runs, the twin names, the glossary in the collision search, why a Paths Rule); and its Instruction Text, the Paths Rule `.claude/rules/defined-terms.md` on `knowledge/**`. Its `.claude/decisions.md` entry. The Paths Rule carries no Foundation Line (7b). The understanding half's header names what it stands on, the Defined Terms Problem Domain Idea of keeping knowledge, and what stands on it, the Paths Rule.
 
 **8b. `docs: the codemap gains .claude/understanding/`**
 `ARCHITECTURE.md` maps the new folder; a commit of its own, since the `agent` scope touches nothing else.
 
+**8c. `docs: Defined Terms names what stands on it`**
+The Defined Terms Problem Domain Idea's header gains "What stands on it": this repo's Adapted Case, `.claude/understanding/defined-terms.md`. With no Foundation Line, the headers carry the link, so a change to the idea finds the Adapted Case (`temp/common-ground/knowledge-layers-general.md` §3.2, its Rules).
+
 **9. *(provisional)* Whether `knowledge/` is a Canonical Description**
-Asked here. If yes: the facts-in-sync manual's §4 gains `knowledge/`, then `.claude/rules/foundation-check.md` follows, two commits. If no: no commit, and ADR-0084 says why.
+Asked here, and whether it waits for the rewrite with the Foundation Line (7b). If yes: the facts-in-sync manual's §4 gains `knowledge/`, then `.claude/rules/foundation-check.md` follows, two commits. If no: no commit, and ADR-0084 says why.
 
 **10. `docs: move the layers document to knowledge/`**
 The general document to `knowledge/backbone-ideas/layers-of-knowledge.md`: its title "The layers of knowledge"; its header; every Living Text pointer at its old path, about 34, in the same commit.
@@ -133,5 +139,6 @@ Deletes this file; the body records what diverged.
 - **No idea of its own for the layout:** where each layer is kept is what the Maintainer Repo's document adds, by its own table row.
 - **The model changes before the Adapted Case lands** (4e before 8): the Adapted Case stands at layer 4, which the model says holds a project's own texts only from 4e.
 - **The two halves of the Adapted Case in one commit** (8): understanding with no instruction, or the reverse, is not an Adapted Case.
+- **No Foundation Line for this repo's own Adapted Cases until the rewrite** (7b): the Foundation Line is brought into the layers model once, with the facts-in-sync manual, never patched for a path value first. Until then the headers carry what a text stands on.
 - **Commit 5's number is kept, and marked dropped,** so the numbers already cited stay true.
 - **The devlog entry comes after the close,** at the session's end.
