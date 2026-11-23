@@ -80,7 +80,7 @@ The general document's picture redrawn: layers 2 and 3 by Problem Domain, a Prob
 **5.** Dropped. Its draft held a layer-4 text; its parts went to 4d and to commit 8.
 
 **6. `docs: writing rule 9 sends knowledge/ to its idea`**
-The writing manual, the home of rule 9, gains one sentence: under `knowledge/`, Defined Terms follow the Defined Terms idea, and the glossary does not list them. A Canonical Description changes, so the Change Walk runs: our Agent Rule follows in commit 7; the copy delivered to CBC Runs stays, since a CBC Run has no `knowledge/`.
+The writing manual, the home of rule 9, gains one sentence: under `knowledge/`, rule 9 does not apply, a defined thing there follows the Defined Terms Problem Domain Idea of keeping knowledge, and the glossary does not list it. All of rule 9 steps aside, not its glossary part alone: the Defined Terms texts allow a short form, which rule 9 forbids. A Canonical Description changes, so the Change Walk runs: the glossary's header, "every thing this repo defines", gains "outside `knowledge/`" in this commit; our Agent Rule follows in commit 7; the copy delivered to CBC Runs stays, since a CBC Run has no `knowledge/`. Rule 9 says a hyphenated word counts as one; the Defined Terms texts do not, so the Problem Domain Idea's open questions gain it in this commit, its trigger the first hyphenated Defined Term.
 
 **7. `chore(agent): writing rule follows rule 9`**
 `.claude/rules/writing.md` follows the manual.
@@ -110,7 +110,7 @@ One line in the Entry File, loaded in every session: `knowledge/` holds the laye
 The general document's definitions gathered into one section, and its borrow table.
 
 **13. `docs: Maintainer layers doc takes Defined Terms`** *(provisional: shaped by commits 3 to 4m)*
-The same for the Maintainer Repo's document, its short forms with them. Asked here: the Defined Terms it borrows from the problem file, which stays in `temp/`.
+The same for the Maintainer Repo's document, its short forms with them. Asked here: the Defined Terms it borrows from the problem file, which stays in `temp/`; and its bold leads that begin with a Defined Term, such as "**Kit Update,**", which rule 9 allows and the Defined Terms texts do not say, since commit 6.
 
 **14. `docs: TODO follows knowledge/ and Defined Terms`**
 The layers item: the model's place decided, its order as now. The depth c item: due after the Change idea's split. The glossary item, "Decide which names go in the glossary": closed, if the Defined Terms texts answer it, what is left going to their open points; the reviewer decides at the commit. A new item: the System Kit's Defined Terms, first guess one terms text in the System Kit, its trigger the first System Repo Adapted Case written.
