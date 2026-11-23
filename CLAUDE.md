@@ -27,7 +27,7 @@ and is read back from here. Documents only — no code, no CBC Runs
 | The concept changed, or an Agent Skill derived from or checked against it | What changed, for those who pin a concept version | CHANGELOG.md |
 | Something became true the outside should see | The first page: what this is, how to use it | README.md |
 | How the repo's parts tie together changed | What stands now, and how its parts tie | ARCHITECTURE.md |
-| Meeting a Glossary Name, or defining a thing | The Glossary Names, each pointing at its home | docs/glossary.md |
+| Meeting a Glossary Name, or defining a thing outside `knowledge/` | The Glossary Names, each pointing at its home | docs/glossary.md |
 | Agent setup changed | Decision, why, rejected options | .claude/decisions.md |
 | Work needs more than one commit | In-flight Change Set | COMMIT-PLAN.md (when present) |
 
