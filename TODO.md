@@ -109,6 +109,17 @@
       Trigger: the Change idea split, its item.
       See: devlog 2026-11-22, the depth c item.
 
+- [ ] Sweep the drafts for words that read as walking commits, where
+      Read Copy Changes compares two snapshots (2026-11-13, the
+      reviewer).
+      Context: Read Copy Changes compares two snapshots and never
+      walks commits (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2,
+      *Read Copy Changes*). "Runs from … to main" and "across that span"
+      read as a walk in the problem file's rules on reading, cut on
+      2026-11-19; the same words may stand in other drafts.
+      Trigger: due now, the facts of Change in their final home, the
+      layers document's §4.2, so the sweep reads the final text.
+
 - [ ] Do the problem file's next pass: §6 and §8, Failure Case 15,
       the rest of the "project-agnostic" sweep, and §2.2's "middle
       level" (2026-11-22, the reviewer).
@@ -126,15 +137,69 @@
       document's §4.2.
       See: devlog 2026-11-18, later, *Found, not fixed*, item 5.
 
-- [ ] Decide what becomes of the branch `experiment-simulation-auto`
-      (2026-11-19, the reviewer).
-      Context: 9 commits on the simulation, of 2026-11-12, kept, not
-      merged. 8 were taken onto `knowledge-2026-11-05`, now in main.
-      The one left, `401e68b`, puts an "Its rules:" line under each
-      part heading, pointing at the problem file's rules, which were
-      cut on 2026-11-19 (`71dfe16`).
-      Trigger: the reviewer's word.
-      See: devlog 2026-11-12, the simulation made plain.
+- [ ] Unlock the folders locked for CBC Run 6 (2026-10-29, the
+      reviewer).
+      Context: CBC Run 6 must not read another repository, and a
+      `Read` deny rule stops `cat` and `sed` but not `grep -r` or a script
+      (`docs/conventions/agent-arrangement/` §5.4, *Permission rules*). So, before its CBC Run Birth,
+      twelve entries in `~/IdeaProjects` were made unreadable,
+      `chmod 000`: `archive`, `cbc-pure-run`, `cbc-pure-run-2`,
+      `cbc-pure-run-3`, `cbc-pure-run-4`, `cbc-pure-run-5`,
+      `checkout-system`, `idempotent-orders`, `order-placement`,
+      `safe-reservations-v1`, each 755 before; and
+      `checkout-system-first-prompt.md`,
+      `safe-reservation-briefing.md`, each 644 before.
+      Trigger: the reviewer's word, or before CBC Run 5's lessons Plan Step
+               resumes, since it reads CBC Run 5. CBC Run 6's Release,
+               the first trigger, has passed; the reviewer kept
+               the lock for now.
+      See: devlog 2026-10-29, night.
+
+- [ ] Read and judge CBC Runs 4, 5 and 6: each read apart, their
+      findings judged together, kept for the rewrite (2026-11-19,
+      the reviewer; from three items of 2026-10-15 to 2026-10-31).
+      Context: CBC Run 4 is unread, born by hand from CBC Run 3's kit
+      at `dac4dd1`, twelve lines under *To the deliverer*. CBC Run 5
+      was read on 2026-10-22, `temp/reading-run-5-2026-10-22.md`, its
+      judging half done. CBC Run 6 is unread: 233 commits on main, 254
+      across its branches, tag `v0.1.0`. The kit is updated during
+      the rewrite, not now: no old text changed, no update sent
+      (ADR-0082).
+      Ideas:
+      - CBC Run 6 first, its folder open; then CBC Run 4, once its
+        folder is unlocked (the item that unlocks the folders);
+      - read by needs, not by diff: how the CBC Run went and what it
+        needed, since the refinement and the rewrite change the
+        texts its diff touched; each need ends met, naming where;
+        missing or wrong; or no longer applies, saying why the need
+        is gone;
+      - CBC Run 5's Reading re-judged by needs, not read again; its
+        open DECISION-2 and DECISION-5, and WORK-1 and WORK-3 to
+        WORK-10, among the findings;
+      - judged by the simulation's Judge Copy Changes, by meaning: each finding's
+        depth, kept where the rewrite finds it;
+      - old words read through the refinement's Names table, at
+        `55e2bd0^:temp/refinement-2026-10-18.md`;
+      - CBC Run 4's own questions: CBC Run 3's and CBC Run 4's
+        `RETRO.md` against the retrospective Agent Skill's form
+        (ADR-0054); `temp/RUN-4.md`, the hand-off that started it,
+        read and then deleted; how it closed its Plan Step branches;
+        whether its birth fired three triggers, shipping `temp/`, the
+        ground-must-be-up rule, the cbc-bootstrap Agent Skill's
+        hygiene; its "rules in force now" list on an append-only
+        Decisions Log; the cbc-framing Agent Skill's README status
+        line; whether it confirmed its Plan Steps once framed;
+      - CBC Run 6's: whether CBC Run 5's and CBC Run 6's Entry Files
+        added the ground-must-be-up rule unasked (ADR-0013);
+        `temp/run-6-handoff/`, the hand-off its reading starts from;
+      - a later update to a CBC Run born before names the renames in
+        its Delivery Note, once.
+      Trigger: before the rewrite of today's repo into the layers model
+      begins (the layers item's idea, today's Maintainer Repo brought
+      in), since the findings are about the texts it rewrites.
+      See: ADR-0082; devlog 2026-10-29, morning; `f097695`;
+      `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's reading: two moves
+      from layer 6*, and §30, *Reading a CBC Run born before*.
 
 - [ ] Confirm the Common Ground Problem in the reviewer's words
       (2026-11-05, the reviewer; an item since 2026-11-19).
@@ -207,6 +272,38 @@
       See: ADR-0082; `TODO-CONVERSATION-MEMORY.md` §31, *Keeping what
       we know true*, in git at `60f692d`.
 
+- [ ] Map today's Maintainer Repo for the rewrite: each text, the
+      parts it holds, the layer each part goes to, and which text
+      needs another first (2026-11-23, the reviewer).
+      Context: the rewrite brings today's texts into the layers model
+      part by part, and a text goes once all it holds has landed or
+      been judged not needed (ADR-0082, decision 2). A question many
+      texts share is decided once, on the map, not text by text.
+      `temp/rebuild-inventory.md` lists 28 Work Approaches and the 16
+      ideas behind them, counted on 2026-11-03 for the rebuild in
+      `cbc-concept`.
+      Ideas:
+      - first, the 14 items whose trigger was the refinement's close,
+        on 2026-11-02: each goes into the map, is done before the
+        rewrite, or is dropped, since most are about texts the rewrite
+        replaces;
+      - the inventory brought up to date, not started again;
+      - which of today's ideas are Backbone Ideas, open question 7 of
+        the keeping-knowledge layers document.
+      Trigger: the way to keep what we know true chosen, and CBC Runs
+      4, 5 and 6 judged.
+      See: devlog 2026-11-23, the order before the rewrite.
+
+- [ ] Decide what becomes of the branch `experiment-simulation-auto`
+      (2026-11-19, the reviewer).
+      Context: 9 commits on the simulation, of 2026-11-12, kept, not
+      merged. 8 were taken onto `knowledge-2026-11-05`, now in main.
+      The one left, `401e68b`, puts an "Its rules:" line under each
+      part heading, pointing at the problem file's rules, which were
+      cut on 2026-11-19 (`71dfe16`).
+      Trigger: the reviewer's word.
+      See: devlog 2026-11-12, the simulation made plain.
+
 - [ ] Decide whether a Maintainer Kit should exist, for a new
       Maintainer Repo to be born from (2026-11-14, the reviewer).
       Context: one Maintainer Repo exists, so a kit would be written
@@ -215,17 +312,6 @@
       Trigger: a second Concept Repo.
       See: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §5, *Open questions*,
       "A kit for new Maintainer Repos".
-
-- [ ] Sweep the drafts for words that read as walking commits, where
-      Read Copy Changes compares two snapshots (2026-11-13, the
-      reviewer).
-      Context: Read Copy Changes compares two snapshots and never
-      walks commits (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2,
-      *Read Copy Changes*). "Runs from … to main" and "across that span"
-      read as a walk in the problem file's rules on reading, cut on
-      2026-11-19; the same words may stand in other drafts.
-      Trigger: due now, the facts of Change in their final home, the
-      layers document's §4.2, so the sweep reads the final text.
 
 - [ ] Design how a document is refined: a broad Adapted Case, an
       Output Shape read after the work, and how each corrects the
@@ -536,70 +622,6 @@
         from its home.
       Trigger: the first Adapted Case for the Backend Repos written.
       See: ADR-0085, decision 4.
-
-- [ ] Read and judge CBC Runs 4, 5 and 6: each read apart, their
-      findings judged together, kept for the rewrite (2026-11-19,
-      the reviewer; from three items of 2026-10-15 to 2026-10-31).
-      Context: CBC Run 4 is unread, born by hand from CBC Run 3's kit
-      at `dac4dd1`, twelve lines under *To the deliverer*. CBC Run 5
-      was read on 2026-10-22, `temp/reading-run-5-2026-10-22.md`, its
-      judging half done. CBC Run 6 is unread: 233 commits on main, 254
-      across its branches, tag `v0.1.0`. The kit is updated during
-      the rewrite, not now: no old text changed, no update sent
-      (ADR-0082).
-      Ideas:
-      - CBC Run 6 first, its folder open; then CBC Run 4, once its
-        folder is unlocked (the item that unlocks the folders);
-      - read by needs, not by diff: how the CBC Run went and what it
-        needed, since the refinement and the rewrite change the
-        texts its diff touched; each need ends met, naming where;
-        missing or wrong; or no longer applies, saying why the need
-        is gone;
-      - CBC Run 5's Reading re-judged by needs, not read again; its
-        open DECISION-2 and DECISION-5, and WORK-1 and WORK-3 to
-        WORK-10, among the findings;
-      - judged by the simulation's Judge Copy Changes, by meaning: each finding's
-        depth, kept where the rewrite finds it;
-      - old words read through the refinement's Names table, at
-        `55e2bd0^:temp/refinement-2026-10-18.md`;
-      - CBC Run 4's own questions: CBC Run 3's and CBC Run 4's
-        `RETRO.md` against the retrospective Agent Skill's form
-        (ADR-0054); `temp/RUN-4.md`, the hand-off that started it,
-        read and then deleted; how it closed its Plan Step branches;
-        whether its birth fired three triggers, shipping `temp/`, the
-        ground-must-be-up rule, the cbc-bootstrap Agent Skill's
-        hygiene; its "rules in force now" list on an append-only
-        Decisions Log; the cbc-framing Agent Skill's README status
-        line; whether it confirmed its Plan Steps once framed;
-      - CBC Run 6's: whether CBC Run 5's and CBC Run 6's Entry Files
-        added the ground-must-be-up rule unasked (ADR-0013);
-        `temp/run-6-handoff/`, the hand-off its reading starts from;
-      - a later update to a CBC Run born before names the renames in
-        its Delivery Note, once.
-      Trigger: before the rewrite of today's repo into the layers model
-      begins (the layers item's idea, today's Maintainer Repo brought
-      in), since the findings are about the texts it rewrites.
-      See: ADR-0082; devlog 2026-10-29, morning; `f097695`;
-      `TODO-CONVERSATION-MEMORY.md` §5, *Run 4's reading: two moves
-      from layer 6*, and §30, *Reading a CBC Run born before*.
-
-- [ ] Unlock the folders locked for CBC Run 6 (2026-10-29, the
-      reviewer).
-      Context: CBC Run 6 must not read another repository, and a
-      `Read` deny rule stops `cat` and `sed` but not `grep -r` or a script
-      (`docs/conventions/agent-arrangement/` §5.4, *Permission rules*). So, before its CBC Run Birth,
-      twelve entries in `~/IdeaProjects` were made unreadable,
-      `chmod 000`: `archive`, `cbc-pure-run`, `cbc-pure-run-2`,
-      `cbc-pure-run-3`, `cbc-pure-run-4`, `cbc-pure-run-5`,
-      `checkout-system`, `idempotent-orders`, `order-placement`,
-      `safe-reservations-v1`, each 755 before; and
-      `checkout-system-first-prompt.md`,
-      `safe-reservation-briefing.md`, each 644 before.
-      Trigger: the reviewer's word, or before CBC Run 5's lessons Plan Step
-               resumes, since it reads CBC Run 5. CBC Run 6's Release,
-               the first trigger, has passed; the reviewer kept
-               the lock for now.
-      See: devlog 2026-10-29, night.
 
 - [ ] Write the exchange-birth Agent Skill while a CBC Run Birth runs (2026-09-26, the
       reviewer).
