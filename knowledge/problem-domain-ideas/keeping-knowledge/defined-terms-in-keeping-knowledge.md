@@ -53,10 +53,10 @@ A Defined Term is defined in the text whose idea it belongs to. A text sits at o
 **Rules:**
 
 - A Defined Term is defined at the highest layer it holds, as a lesson goes as high as it is true (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.1, *How the layers fill*).
-- A text keeps its definitions together in one section, its first, titled *Its Defined Terms*, in alphabetical order, its Borrow Table after them. The plain words it keeps in a narrow sense are written there too. A text that defines and borrows nothing has no such section.
+- A text keeps its definitions together in one section, its first, titled *Its Defined Terms*, in alphabetical order, its short forms and its Borrow Table after them. The plain words it keeps in a narrow sense are written there too. A text that defines and borrows nothing has no such section.
 - Each definition is a list item: the Defined Term in bold, a colon, then its definition.
 - The Borrow Table follows under the line "Borrowed:", in two columns, *Defined Term* and *Defined in*.
-- A short form is defined there as well, with the Defined Term it shortens.
+- A text's short forms follow its definitions, before the Borrow Table, under the line "Short forms:", in a table of two columns, *Short form* and *Defined Term*.
 
 ## 4. Borrowing a Defined Term
 
@@ -74,8 +74,8 @@ An agent reads whatever it opens, and opens a file whole unless told otherwise. 
 
 **Rules:**
 
-- A definition is found by a search for its bold mark. Its section is read only when the definition alone is not enough.
-- Before a new Defined Term is defined, the same search is run across every text it may be read with. A hit is a collision, and one of the two Defined Terms changes.
+- A definition is found by a search for its bold mark, and a short form by a search for its table row, `| <short form> |`. Its section is read only when the definition alone is not enough.
+- Before a new Defined Term or short form is written, both searches are run across every text it may be read with. A hit is a collision, and one of the two changes.
 
 ## 6. Open questions
 
