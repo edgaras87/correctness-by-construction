@@ -15,49 +15,53 @@ This document says what the layers of knowledge are, in any Problem Domain, and 
 ## 1. The picture
 
 ```
- Layer 1   ┌────────────────────────────────────────────────────┐
-           │ Backbone Ideas, bound to no Problem Domain:        │
-           │ understanding                                      │
-           │ ┌──────────────────┐    ┌──────────────────┐       │
-           │ │ Idea 1           │    │ Idea 2           │       │
-           │ └──────────────────┘    └──────────────────┘       │
-           │ ┌──────────────────┐                               │
-           │ │ Idea 3           │                               │
-           │ └──────────────────┘                               │
-           └────────────────────────────────────────────────────┘
-                  │          ▲           ▲             │
-                adapt     lesson     set apart       adapt
-                  ▼          │           │             ▼
- Layer 2   ┌────────────────────────────────────────────────────┐
-           │ Each Problem Domain: understanding                 │
-           │ ┌──────────────────┐    ┌──────────────────┐       │
-           │ │ Problem Domain   │    │ Problem Domain   │       │
-           │ │ Idea from Idea 1 │    │ Idea from Idea 1 │       │
-           │ └──────────────────┘    └──────────────────┘       │
-           │ ┌──────────────────┐                               │
-           │ │ Problem Domain   │                               │
-           │ │ Idea from Idea 2 │                               │
-           │ └──────────────────┘                               │
-           └────────────────────────────────────────────────────┘
-                  │         ▲         ▲         │      ▲       ▲
-                adapt    lesson   set apart   adapt lesson set apart
-                  ▼         │         │         │      │       │
- Layer 3   ┌────────────────────────────────┐   │      │       │
-           │ Adapted Cases, one set         │   │      │       │
-           │ for each Problem Domain:       │   │      │       │
-           │ understanding and instructions │   │      │       │
-           └────────────────────────────────┘   │      │       │
-                    │           ▲       ▲       │      │       │
-                worked by    change set apart   │      │       │
-                    ▼           │       │       ▼      │       │
- Layer 4   ┌────────────────────────────────────────────────────┐
-           │ One project: its work, and the texts it works by:  │
-           │ copies of its Problem Domain's Adapted Cases, and  │
-           │ its own: understanding and instructions            │
-           └────────────────────────────────────────────────────┘
+          ┌───────────────────────────────────────────────────────────────────────────────────┐
+          │ Backbone Ideas, bound to no Problem Domain:                                       │
+          │ understanding                                                                     │
+ Layer 1  │   ┌──────────┐            ┌──────────┐            ┌──────────┐                    │
+          │   │ Idea 1   │            │ Idea 2   │            │ Idea 3   │                    │
+          │   └──────────┘            └──────────┘            └──────────┘                    │
+          └───────────────────────────────────────────────────────────────────────────────────┘
+                │      ▲       ▲                │      ▲       ▲
+                │      │       │                │      │       │
+              adapt lesson set apart          adapt lesson set apart
+          ┌╌╌╌╌╌│╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌╌╌┐  ┌╌╌╌╌╌│╌╌╌╌╌╌│╌╌╌╌╌╌╌│╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐
+          ╎     ▼      │       │       ╎  ╎     ▼      │       │                              ╎
+          ╎ ┌────────────────────────┐ ╎  ╎ ┌───────────────────────────────────────────────┐ ╎
+          ╎ │ Problem Domain Ideas:  │ ╎  ╎ │ Problem Domain Ideas: understanding           │ ╎
+          ╎ │ understanding          │ ╎  ╎ │                                               │ ╎
+          ╎ │ ┌───────────────┐      │ ╎  ╎ │ ┌───────────────┐  ┌───────────────┐          │ ╎
+ Layer 2  ╎ │ │ from Idea 1   │      │ ╎  ╎ │ │ from Idea 1   │  │ from Idea 1   │          │ ╎
+          ╎ │ └───────────────┘      │ ╎  ╎ │ └───────────────┘  └───────────────┘          │ ╎
+          ╎ │ ┌───────────────┐      │ ╎  ╎ │                                               │ ╎
+          ╎ │ │ from Idea 2   │      │ ╎  ╎ │                                               │ ╎
+          ╎ │ └───────────────┘      │ ╎  ╎ │                                               │ ╎
+          ╎ └────────────────────────┘ ╎  ╎ └───────────────────────────────────────────────┘ ╎
+          ╎     │      ▲       ▲       ╎  ╎     │      ▲       ▲        │      ▲       ▲      ╎
+          ╎   adapt lesson set apart   ╎  ╎   adapt lesson set apart  adapt lesson set apart  ╎
+          ╎     ▼      │       │       ╎  ╎     ▼      │       │        │      │       │      ╎
+          ╎ ┌────────────────────────┐ ╎  ╎ ┌──────────────────────┐    │      │       │      ╎
+          ╎ │ Adapted Cases:         │ ╎  ╎ │ Adapted Cases:       │    │      │       │      ╎
+ Layer 3  ╎ │ understanding and      │ ╎  ╎ │ understanding and    │    │      │       │      ╎
+          ╎ │ instructions           │ ╎  ╎ │ instructions         │    │      │       │      ╎
+          ╎ └────────────────────────┘ ╎  ╎ └──────────────────────┘    │      │       │      ╎
+          ╎     │        ▲       ▲     ╎  ╎     │        ▲       ▲      │      │       │      ╎
+          ╎ worked by change set apart ╎  ╎ worked by change set apart  │      │       │      ╎
+          ╎     ▼        │       │     ╎  ╎     ▼        │       │      ▼      │       │      ╎
+          ╎ ┌────────────────────────┐ ╎  ╎ ┌───────────────────────────────────────────────┐ ╎
+          ╎ │ a project: its work,   │ ╎  ╎ │ a project: its work, by understanding and     │ ╎
+          ╎ │ by copies of its       │ ╎  ╎ │ instructions:                                 │ ╎
+          ╎ │ Problem Domain's       │ ╎  ╎ │ ┌───────────────────┐  ┌────────────────────┐ │ ╎
+          ╎ │ Adapted Cases:         │ ╎  ╎ │ │ copies of its     │  │ its own            │ │ ╎
+ Layer 4  ╎ │ understanding and      │ ╎  ╎ │ │ Problem Domain's  │  │ Adapted Cases      │ │ ╎
+          ╎ │ instructions           │ ╎  ╎ │ │ Adapted Cases     │  │                    │ │ ╎
+          ╎ │                        │ ╎  ╎ │ └───────────────────┘  └────────────────────┘ │ ╎
+          ╎ └────────────────────────┘ ╎  ╎ └───────────────────────────────────────────────┘ ╎
+          ╎ Problem Domain A           ╎  ╎ Problem Domain B                                  ╎
+          └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘  └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘
 ```
 
-Key: each Problem Domain Idea names the Backbone Idea it is adapted from (§2.2). The arrows on the right serve a project's own Adapted Case, written where none of its Problem Domain's covers a piece of its work (§2.4).
+Key: each dashed frame holds one Problem Domain: its Problem Domain Ideas, its set of Adapted Cases, and a project of it. Each Problem Domain Idea names the Backbone Idea it is adapted from (§2.2). The arrows on the right serve a project's own Adapted Case, written where none of its Problem Domain's covers a piece of its work (§2.4). Problem Domain A's project has none.
 
 ## 2. The layers
 
