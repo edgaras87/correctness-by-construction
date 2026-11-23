@@ -32,7 +32,7 @@ Each rule's source is `knowledge/problem-domain-ideas/keeping-knowledge/defined-
 3. **Define or borrow every term you use.** Each Defined Term a text uses is defined in it, or listed in its Borrow Table (§4, *Borrowing a Defined Term*).
 4. **Search for a collision before you define one:** its bold mark under `knowledge/` and `.claude/understanding/`, its words in `docs/glossary.md` and `delivery/*/docs/glossary/`. A hit that is not a listed twin is a collision: one of the two names changes (§5).
 5. **Define it at the highest layer it holds,** in the text's first section, *Its Defined Terms*: alphabetical, each a list item, the Defined Term in bold, a colon, its definition. The Borrow Table follows, under "Borrowed:" (§3, *Where it is defined*).
-6. **Write it by the mark:** two or more words, owner or kind first, each capitalized; a Defined Term it is built on carried whole; bold once, where it is defined; a short form defined as one (§2, *The mark*).
+6. **Write it by the mark:** two or more words, owner or kind first, each capitalized; a Defined Term it is built on carried whole; bold on its own only where it is defined; a bold lead may hold it, but is never the Defined Term alone with a colon; a short form defined as one (§2, *The mark*).
 
 ---
 
