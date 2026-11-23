@@ -48,7 +48,7 @@
       document's §3.2 holds the open points of how a change travels,
       each beside its part's rules, with its trigger.
       Ideas:
-      - the change work: its rules in the layers document's §3.2,
+      - the change work: its rules in the layers document's §4.2,
         how each was chosen in the simulation; depth c next (its
         item);
       - a piece of work modeled at each layer, in a document of its
@@ -85,7 +85,7 @@
 - [ ] Split the Change idea: what one part hands the next stays in
       the Problem Domain Idea; each part's own steps go to its Adapted
       Cases (2026-11-23, the reviewer).
-      Context: the layers document's §3.2.1 to §3.2.6, about 200
+      Context: the layers document's §4.2.1 to §4.2.6, about 200
       lines, are mostly steps for one use each: layer 3 text at
       layer 2 (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.1,
       *How the layers fill*, its **Rules**). Each part already names
@@ -114,7 +114,7 @@
       Context: depth c is a lesson that changes the idea above: a
       Problem Domain Idea at layer 2, or a Backbone Idea at layer 1.
       New ideas are written at those layers now, so the case is met
-      today. The survey of the layers document's §3.2.4 holds a first
+      today. The survey of the layers document's §4.2.4 holds a first
       guess: each text built on the idea is asked whether it still
       fits. It was never walked through Deliver the Kit Update and
       Take the Kit Update, nor drawn.
@@ -127,9 +127,9 @@
       - questions likely met: whether other System Repos fall behind
         too; what the Update Note's why says; at layer 1, how far
         down the survey reaches (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
-        §3.2.4, *Act on the verdicts*, its *Open*).
+        §4.2.4, *Act on the verdicts*, its *Open*).
       Trigger: due now, the Change idea written from depth b in the
-      layers document's §3.2.
+      layers document's §4.2.
       See: devlog 2026-11-22, the depth c item.
 
 - [ ] Do the problem file's next pass: §6 and §8, Failure Case 15,
@@ -236,19 +236,19 @@
       from one example and no repo would be born from it yet. The
       question and its facts are the draft's.
       Trigger: a second Concept Repo.
-      See: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4, *Open questions*,
-      "A Maintainer Kit".
+      See: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §5, *Open questions*,
+      "A kit for new Maintainer Repos".
 
 - [ ] Sweep the drafts for words that read as walking commits, where
       Read Copy Changes compares two snapshots (2026-11-13, the
       reviewer).
       Context: Read Copy Changes compares two snapshots and never
-      walks commits (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.2,
+      walks commits (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2,
       *Read Copy Changes*). "Runs from … to main" and "across that span"
       read as a walk in the problem file's rules on reading, cut on
       2026-11-19; the same words may stand in other drafts.
       Trigger: due now, the facts of Change in their final home, the
-      layers document's §3.2, so the sweep reads the final text.
+      layers document's §4.2, so the sweep reads the final text.
 
 - [ ] Design how a document is refined: a broad Adapted Case, an
       Output Shape read after the work, and how each corrects the
@@ -316,7 +316,7 @@
         become scenarios of their own;
       - start from the file's *Open* fields, each with its trigger;
       - the birth scenario gains what
-        `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.2.2 asks of it:
+        `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2 asks of it:
         the delivery check writes the System Repo's register row,
         with the *settled snapshot* set to the start;
       - scenarios as checks: how the alert fires was to be decided
@@ -372,7 +372,7 @@
       Backbone Idea, rewritten from the Agent Model
       (`docs/models/agent.md`). It holds what one piece of agent
       work is: what the agent does, when, where and how
-      (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2.1, *The Backbone
+      (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.1, *The Backbone
       Idea layer*). Each Problem Domain holds its own Problem Domain Idea
       of it (§2.2 there).
       Ideas:

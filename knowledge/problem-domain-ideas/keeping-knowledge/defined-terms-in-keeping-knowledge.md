@@ -13,7 +13,7 @@ Its first sources, input and not rules:
 How it is edited: a trial, as in the layers of knowledge: a section's rules close it, in a last paragraph marked Rules, and govern that section.
 -->
 
-This document says how the texts of keeping knowledge mark, define, share and find their Defined Terms. It is the Backbone Idea of Defined Terms adapted to keeping knowledge, the Maintainer Repo's Problem Domain (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers*), from `knowledge/backbone-ideas/defined-terms.md`. Another Problem Domain writes its own adaptation.
+This document says how the texts of keeping knowledge mark, define, share and find their Defined Terms. It is the Backbone Idea of Defined Terms adapted to keeping knowledge, the Maintainer Repo's Problem Domain (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3, *The layers*), from `knowledge/backbone-ideas/defined-terms.md`. Another Problem Domain writes its own adaptation.
 
 ## 1. Its Defined Terms
 
@@ -29,7 +29,7 @@ Borrowed:
 | Defined Term | `knowledge/backbone-ideas/defined-terms.md` §1, *Its Defined Terms* |
 | Fact Reference | `docs/conventions/facts-in-sync/` §3.1, *What a Fact Reference is* |
 | Glossary Name | `docs/conventions/writing/` §2, *Why each rule*, rule 9 |
-| Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §2, *The layers* |
+| Maintainer Repo | `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 | Problem Domain Idea | `knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms* |
 
