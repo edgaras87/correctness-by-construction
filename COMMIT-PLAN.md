@@ -2,7 +2,7 @@
 
 ## Summary — the state after all commits
 
-The two names carry their Problem Domain, CBC backend design. A second Problem Domain no longer makes them ambiguous. Every Living Text says Backend Repo and Backend Kit: the Maintainer Repo's layers document, which defines them, the four drafts in `temp/common-ground/`, and `TODO.md`. The 9 Defined Terms built on them change with them, each keeping its length: Backend Kit Copy, Backend Kit Update Take, Backend Repo Reading. The two drafts named `system-repo-…` are named `backend-repo-…`.
+The two names carry their Problem Domain, CBC backend design. A second Problem Domain no longer makes them ambiguous. Every Living Text says Backend Repo and Backend Kit: the Maintainer Repo's layers document, which defines them, three of the four drafts in `temp/common-ground/`, and `TODO.md`. The frozen `between-repos-simulation.md` keeps the old names: there they mean a repo and a kit for any kind of system, and one line of its header says so. The 9 Defined Terms built on them change with them, each keeping its length: Backend Kit Copy, Backend Kit Update Take, Backend Repo Reading. The two drafts named `system-repo-…` are named `backend-repo-…`.
 
 What stays:
 - Maintainer Repo, Maintainer Repo Register, and the 10 short forms, such as Kit Copy and Repo Reading;
@@ -32,23 +32,23 @@ It goes first because the decisions were settled in the chat.
 **4. `docs: Maintainer layers doc says Backend Repo`**
 The 269 uses in `layers-of-knowledge-in-keeping-knowledge.md`, the home of the definitions. §1's 11 definitions are re-read for what each now claims. Backend Repo's definition gains its Problem Domain (below). Kept apart from the drafts because the definitions are the one part to read closely.
 
-**5. `docs: the drafts say Backend Repo and Backend Kit`**
-The 390 uses in the four drafts in `temp/common-ground/`, the frozen `between-repos-simulation.md` among them. Section titles change with them, such as §5.2, *Work in a Backend Repo*. Every living pointer to those titles is inside the four drafts, so they change together. The devlog's pointers are history.
+**5. `docs: 3 drafts say Backend Repo and Backend Kit`**
+The 249 uses in the problem file, the simulation and the flow. Their own titles change with them, such as *What the Backend Kit holds*; every living pointer to them is in the same files. The problem file's list of Defined Terms is sorted again, as it says it is. In the pictures, a column's rule under "Backend Repo" grows by one. The frozen `between-repos-simulation.md` is not swept: its header gains one line saying it keeps the old names, and the simulation's 2 pointers to its titles keep them too.
 
 **6. `docs: TODO follows Backend Repo and Backend Kit`**
 The 26 uses in `TODO.md`. The rename item leaves TODO. The Change idea's split keeps one trigger: the layers model out of `temp/`.
 
 **7. `docs: ADR-0086 accepted`**
-The final records commit. Its status names anything changed since it was proposed.
+The final records commit. Its status names anything changed since it was proposed: the frozen draft kept out of the sweep.
 
 **8. `docs(agent): close commit plan for Backend Repo`**
-Deletes this file. The body records what diverged. Before it, the sweep: every old name, `system-repo-change-` and each changed title, grepped unwrapped over Living Text.
+Deletes this file. The body records what diverged. Before it, the sweep: every old name, `system-repo-change-` and each changed title, grepped unwrapped over Living Text. The frozen draft, and pointers to its titles, keep the old names.
 
 ## Decisions taken inside this plan
 
 - **Backend Repo's definition gains its Problem Domain.** Today: "a repo where a real system is built by the concept, working from copies of the System Kit". Proposed: "a repo of CBC backend design, where a real system is built by the concept, working from copies of the Backend Kit". The TODO item already says it: "Until the rename, a System Repo is a repo of CBC backend design". The other 10 definitions change only their words.
-- **The frozen simulation is swept too.** Its header says it resumes by its TODO item, and past sweeps edited it (`52a4b8f3`, `8f11cda5`).
-- **The definitions and the drafts are two commits, not one.** Between commits 4 and 5 the drafts still say System Repo. The problem file then names Defined Terms the layers document no longer defines. A revert of commit 5 leaves the same. The gain is a diff of 269 lines whose definitions the reviewer reads closely, apart from 390 mechanical ones. Merging them is the other way.
+- **The frozen simulation is not swept.** Revised at commit 5: it was written when a System Repo could be of any kind of system, and it says so throughout, such as "what each System Kit is for. Today there is one, for backends". Renamed, it reads wrong. Its TODO item reworks it when it resumes.
+- **The definitions and the drafts are two commits, not one.** Between commits 4 and 5 the drafts still say System Repo. The problem file then names Defined Terms the layers document no longer defines. A revert of commit 5 leaves the same. The gain is a diff of 269 lines whose definitions the reviewer reads closely, apart from 249 mechanical ones. Merging them is the other way.
 - **No Plan Step, on main.** As the commit plan for `knowledge/` ran.
 - **The Foundation Check finds nothing to read.** No staged file has a Foundation Line, and none is a Canonical Description. Its *A moved section* part runs at commits 3 and 5, and the close sweep repeats it.
 - **The glossary is untouched.** It lists neither name. Writing rule 9 does not apply under `knowledge/` (ADR-0085).
