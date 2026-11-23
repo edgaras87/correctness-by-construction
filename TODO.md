@@ -60,28 +60,6 @@
       Trigger: due now.
       See: `TODO-CONVERSATION-MEMORY.md` §35, *The layers of knowledge*.
 
-- [ ] Rename System Repo and System Kit for their Problem Domain,
-      CBC backend design (2026-11-23, the reviewer).
-      Context: layer 3 is grouped by Problem Domain, a kind of
-      project, and the System Kit is the System Repos' set of Adapted
-      Cases there. "System Repo" and "System Kit" name no Problem
-      Domain, so a second one would make them ambiguous. They are
-      used 682 times in 9 living files, and the Change idea's split
-      and depth c will add more. Until the rename, a System Repo is a
-      repo of CBC backend design.
-      Ideas:
-      - names that carry the Problem Domain, such as CBC Backend Repo
-        and CBC Backend Kit; the short forms, the last two words,
-        mostly stay: Kit Copy, Kit Update, Repo Reading;
-      - the 11 Defined Terms built on the two, and the two file names
-        in `temp/common-ground/` that carry "system-repo";
-      - whether Maintainer Repo needs the same;
-      - the glossary's CBC Run, its twin, goes in the rewrite, not
-        here.
-      Trigger: the commit plan for `knowledge/` closed; before the
-      Change idea's split.
-      See: devlog 2026-11-23, later.
-
 - [ ] Split the Change idea: what one part hands the next stays in
       the Problem Domain Idea; each part's own steps go to its Adapted
       Cases (2026-11-23, the reviewer).
@@ -106,7 +84,7 @@
         comparison; it settles whether the simulation's picture *The
         whole flow* moves or goes.
       Trigger: the layers model out of `temp/`, where layer 3's
-      texts are kept decided, and System Repo and System Kit renamed.
+      texts are kept decided.
       See: devlog 2026-11-23, later.
 
 - [ ] Simulate depth c, then bring the Change idea to it
@@ -124,7 +102,7 @@
         pictures by a visual comparison in the flow file;
       - then the Maintainer Repo's own new idea, a source the
         simulation's §2 leaves for later: only its start may differ;
-      - questions likely met: whether other System Repos fall behind
+      - questions likely met: whether other Backend Repos fall behind
         too; what the Update Note's why says; at layer 1, how far
         down the survey reaches (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
         §4.2.4, *Act on the verdicts*, its *Open*).
@@ -208,7 +186,7 @@
       both, the two stay apart, or one general one is drawn. The
       layers model already answers part of it.
       Ideas:
-      - the simulation's case, a System Repo's change, may be the
+      - the simulation's case, a Backend Repo's change, may be the
         first; the judged findings of CBC Runs 4, 5 and 6 may give
         the second.
       Trigger: where common ground was lost, sorted.
@@ -308,15 +286,17 @@
       written, 4 to 8 not. Its *Changed from today* fields hold
       findings about today's repo that the sorting of where common
       ground was lost needs. The Common
-      Ground Problem takes one case instead: a System Repo changes a
-      System Kit Copy.
+      Ground Problem takes one case instead: a Backend Repo changes a
+      Backend Kit Copy.
       Ideas:
       - write the scenarios left from practice, or let real cases
         become scenarios of their own;
       - start from the file's *Open* fields, each with its trigger;
+      - its names for a repo and a kit of any kind of system, kept
+        from before ADR-0086, as its header says: reworked first;
       - the birth scenario gains what
         `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2 asks of it:
-        the delivery check writes the System Repo's register row,
+        the delivery check writes the Backend Repo's register row,
         with the *settled snapshot* set to the start;
       - scenarios as checks: how the alert fires was to be decided
         once the simulation was done (2026-11-09, the reviewer);
@@ -327,11 +307,11 @@
       See: devlog 2026-11-10, the simulation frozen;
       `TODO-CONVERSATION-MEMORY.md` §31, in git at `60f692d`.
 
-- [ ] Split the concept into general understanding, the System
+- [ ] Split the concept into general understanding, the Backend
       Kit's backend case and their instructions, losing nothing
       (2026-11-08, the reviewer).
       Context: CBC design fits any system, not only software. The
-      System Kit holds one Adapted Case of it so far, for backends.
+      Backend Kit holds one Adapted Case of it so far, for backends.
       Today `concept/` holds both in one text, its examples and words
       leaning toward software, and the Method Group's Agent Skills
       stand on it. `concept/` and the Method Group are first labelled
@@ -350,11 +330,11 @@
         which meets the item on whether the concept keeps examples;
       - concept v2's release may carry it, since every CBC Run pins a
         concept version;
-      - the System Kit's description of CBC system design, for a
-        System Repo's readers, is decided with it: its form, such as
+      - the Backend Kit's description of CBC system design, for a
+        Backend Repo's readers, is decided with it: its form, such as
         a README paragraph, a longer text or a playbook part, and
-        whether a System Repo may change it (the layers document,
-        §2, the System Kit's item 5);
+        whether a Backend Repo may change it (the layers document,
+        §3, the Backend Kit's item 5);
       - whether infra, the stack, is only a bigger set of input to
         the backend case, not a complexity of its own (2026-11-07,
         the reviewer's question, not yet answered).
@@ -536,16 +516,16 @@
       See: devlog 2026-11-23, the `knowledge/` plan's Defined Terms
       commits.
 
-- [ ] Decide how the System Kit keeps its Defined Terms
+- [ ] Decide how the Backend Kit keeps its Defined Terms
       (2026-11-23, the reviewer).
-      Context: a System Repo gets the System Kit's Adapted Cases,
+      Context: a Backend Repo gets the Backend Kit's Adapted Cases,
       but not layers 1 and 2, where most of their Defined Terms
       are defined. Their Borrow Tables would point at texts the
-      System Repo does not hold.
+      Backend Repo does not hold.
       Ideas:
-      - one terms text in the System Kit, each Defined Term adapted
+      - one terms text in the Backend Kit, each Defined Term adapted
         from its home.
-      Trigger: the first Adapted Case for the System Repos written.
+      Trigger: the first Adapted Case for the Backend Repos written.
       See: ADR-0085, decision 4.
 
 - [ ] Read and judge CBC Runs 4, 5 and 6: each read apart, their
