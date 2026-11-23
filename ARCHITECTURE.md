@@ -265,7 +265,9 @@ delivery/
 └── README.md        the delivery's Local Map (§2.4)
 temp/                drafts and kept files, tracked, deleted once the work that needed them is done
 CLAUDE.md, .claude/  this repo's work arrangement; .claude/decisions.md
-                     is a record
+                     is a record; .claude/understanding/ holds why an
+                     Agent Rule or Agent Skill built on it is as it is,
+                     and never loads (ADR-0084)
 .editorconfig        hygiene: editor settings
 .gitattributes       hygiene: line endings and diffs
 .gitignore           hygiene: what git leaves untracked
