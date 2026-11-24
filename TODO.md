@@ -88,8 +88,16 @@
         (2026-11-24, the reviewer). The Backend Repo's parts go to the
         Backend Kit's group for keeping knowledge, naming nothing of
         backends. They first need the Problem Domain Idea above them,
-        the layers of knowledge in CBC backend design, and its Defined
-        Terms (the layers document's §3.2.2; ADR-0085, decision 4);
+        Change, in CBC backend design, and its Defined Terms (the
+        layers document's §3.2.2; ADR-0085, decision 4);
+      - Change, an idea of its own (2026-11-24, the reviewer): a
+        Backbone Idea, Change, for any change to knowledge, wherever
+        it starts. Under it, Change, in keeping knowledge, the
+        layers document's §4.2 and §4.3 moved out of it, and Change,
+        in CBC backend design, the parent of the Backend Kit's
+        Adapted Cases for keeping knowledge. The reviewer's guesses,
+        such as a new idea carried to all layers together, are open
+        questions in the Backbone Idea, each with its trigger;
       - each Adapted Case whole, its Adapted Understanding Text and
         its Instruction Text, written from the simulation alone.
         Today's repo is compared with them in the rewrite (2026-11-24,
@@ -126,7 +134,11 @@
         §4.2.4, *Act on the verdicts*, its *Open*);
       - the Adapted Cases the split writes follow what depth c
         changes, both halves; Judge's before CBC Runs 4, 5 and 6 are
-        judged (2026-11-24, the reviewer).
+        judged (2026-11-24, the reviewer);
+      - depth c is the first change that starts at an idea and must
+        reach every text built on it. It answers the Backbone Idea
+        Change's open question on such a change, first a guess: carried
+        to all layers together (2026-11-24, the reviewer).
       Trigger: the Change idea split, its item.
       See: devlog 2026-11-22, the depth c item.
 
