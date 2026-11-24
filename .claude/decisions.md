@@ -1297,3 +1297,13 @@
   first (`docs/conventions/conventions/` §1.3).
   Rejected: an Agent Rule loaded in every session, and an Agent Skill
   (the understanding's §5); a Foundation Line naming a path now.
+
+- 2026-11-24 An Agent Skill, `.claude/skills/read-copy-changes/`,
+  with its understanding in `.claude/understanding/read-copy-changes.md`:
+  this repo's own Adapted Case for Read Copy Changes, written whole
+  from the simulation. Its description names Backend Repos, so "read
+  a CBC Run" still fires the exchange-read Agent Skill. It carries
+  no Foundation Line (ADR-0084, decision 9).
+  Why: ADR-0087; ADR-0084.
+  Rejected: understanding only, the exchange-read Agent Skill doing
+  the work until the rewrite (ADR-0087).
