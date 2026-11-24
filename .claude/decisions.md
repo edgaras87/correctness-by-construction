@@ -1307,3 +1307,14 @@
   Why: ADR-0087; ADR-0084.
   Rejected: understanding only, the exchange-read Agent Skill doing
   the work until the rewrite (ADR-0087).
+
+- 2026-11-24 An Agent Skill, `.claude/skills/judge-copy-changes/`,
+  with its understanding in `.claude/understanding/judge-copy-changes.md`:
+  this repo's own Adapted Case for Judge Copy Changes and Act on the
+  verdicts, written whole from the simulation. One Adapted Case for
+  both: Act runs in the same pass, and most of it is layer 2's. It
+  carries no Foundation Line (ADR-0084, decision 9).
+  Why: ADR-0087; ADR-0084.
+  Rejected: Act on the verdicts as an Adapted Case of its own; an
+  Instruction Text for Judge alone, the others' left to the rewrite
+  (ADR-0087).
