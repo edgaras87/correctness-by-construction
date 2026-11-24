@@ -2,14 +2,20 @@
 
 ## Summary — the state after all commits
 
+Change is an idea of its own, at layers 1 and 2 (ADR-0088). The layers documents keep what is where; the Change documents keep how knowledge enters the layers and moves between them:
+
+- **Change,** `knowledge/backbone-ideas/change.md`, a Backbone Idea: what a change is, how the layers fill, the arrows but *worked by*, their rules. The layers of knowledge keeps the layers, *worked by*, and a short §4 pointing at it.
+- **Change, in keeping knowledge,** `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`: the arrows between the repos, how a change travels, the Maintainer Repo's lessons. Its §3 keeps what one part hands the next, the rules every part keeps, the tables, and the why of each, never pointing at the simulation. The Maintainer Repo's layers document keeps where each layer is kept.
+- **Change, in CBC backend design,** `knowledge/problem-domain-ideas/cbc-backend-design/change-in-cbc-backend-design.md`: how a Backend Repo changes a Kit Copy and takes a Kit Update, the parent of the Backend Kit's Adapted Cases for keeping knowledge.
+
 Each of the six parts of how a change travels has its Adapted Case, written whole from the simulation: its Adapted Understanding Text and its Instruction Text. Today's repo is not read for them; the rewrite compares it with them later.
 
-- **The Maintainer Repo's parts, at layer 4,** kept whole in `.claude/`: Read Copy Changes; Judge Copy Changes with Act on the verdicts; Deliver the Kit Update. Each has its understanding in `.claude/understanding/` and an Agent Skill in `.claude/skills/`.
-- **The Backend Repo's parts, at layer 3,** in the Backend Kit's group for keeping knowledge, under `knowledge/adapted-cases/cbc-backend-design/`: Change a Kit Copy, and Take the Kit Update. Nothing in them names backends.
+- **The Maintainer Repo's parts, at layer 4,** kept whole in `.claude/`: Read Copy Changes; Judge Copy Changes with Act on the verdicts; Deliver the Kit Update. Each has its understanding in `.claude/understanding/` and an Agent Skill in `.claude/skills/`, standing on Change, in keeping knowledge.
+- **The Backend Repo's parts, at layer 3,** in the Backend Kit's group for keeping knowledge, under `knowledge/adapted-cases/cbc-backend-design/`: Change a Kit Copy, with the gate's part, and Take the Kit Update. Nothing in them names backends.
 
-The Maintainer Repo's layers document, `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`, keeps in §4.2 what one part hands the next, the rules every part keeps, the tables, and the why of each. It no longer points at the simulation for how a rule was chosen. The simulation keeps its steps, which depth c walks, and its *Today* lines, which the rewrite reads.
+Each picture shows one thing: the layers pictures what is where, the Change pictures how knowledge moves. The simulation keeps its steps, which depth c walks, and its *Today* lines, which the rewrite reads.
 
-What it gives: a change to one part's steps changes its own Adapted Case, and no longer reads as a change to the Problem Domain Idea. The layers stand without `temp/`.
+What it gives: a change to one part's steps changes its own Adapted Case, and no longer reads as a change to the Problem Domain Idea; a change to how the layers are kept no longer reads as a change to Change. The layers stand without `temp/`.
 
 ## Commits
 
@@ -55,6 +61,9 @@ Still Proposed. Change takes all that is about knowledge moving, at both layers:
 **8a2. `docs: Change, a Backbone Idea`**
 `knowledge/backbone-ideas/change.md`: what a change is, and the general layers document's §4 moved in, how the layers fill, the arrows but *worked by*, their rules, and its open question 3. The arrow named *change* gets its new name here, decided at this boundary. The layers document keeps the layers and their rules, *worked by* in its layer 4, and one short section pointing at Change in place of §4. Its picture keeps its arrows until 8i, a key line naming Change. The reviewer's guesses as Change's open questions, each with its trigger. Its row in the §3.1 table. Every pointer into the general §4 followed: 12 outside Change itself.
 
+**8a2b. `chore(agent): Judge's understanding follows Change`** (landed, inserted)
+The agent's follower of 8a2: two pointers in Judge's understanding into the layers of knowledge's old §4. Inserted, since an agent follower comes in the next commit.
+
 **8a3. `docs: Change, in keeping knowledge, moved out`**
 `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`: the Maintainer Repo's layers document's §4 moved whole, its arrows between the repos, how a change travels, and the Maintainer Repo's lessons, with the Defined Terms of a change's travel and the open questions on change. The layers document keeps the layers, where each is kept, and its picture, a key line naming Change, in keeping knowledge, and points at it. Its row in the §3.2.1 table. Every pointer to a moved section followed by script, from `docs` paths: the rename grep, unwrapped.
 
@@ -62,7 +71,7 @@ Still Proposed. Change takes all that is about knowledge moving, at both layers:
 The three Maintainer Repo Adapted Cases, their understanding and Agent Skills, point at Change, in keeping knowledge: headers, Fact References and Borrow Tables. The agent's side of 8a3's rename grep.
 
 **8b. `docs: Change, in CBC backend design`** (provisional)
-The draft written for "the layers of knowledge, in CBC backend design", renamed and adapted from the Backbone Idea Change. Its row in the §3.2.2 table; the planned row for the layers of knowledge in CBC backend design kept or dropped at its boundary.
+The draft written for "the layers of knowledge, in CBC backend design", untracked at `knowledge/problem-domain-ideas/cbc-backend-design/layers-of-knowledge-in-cbc-backend-design.md`, renamed and adapted from the Backbone Idea Change. Asked first: where its §2, "What a Backend Repo keeps", goes, since it is what is where, not change: to the planned Layers of knowledge, in CBC backend design, with its trigger, or dropped with that row. Its 7 Borrow Table rows for the Defined Terms of a change's travel point at their old home, and are re-pointed to Change, in keeping knowledge. Its row in the §3.2.2 table.
 
 **8c. `docs: the Backend Kit's Defined Terms`** (provisional)
 ADR-0085's decision 4 is decided here: its first guess is one terms text in the Backend Kit. A Backend Repo reads its Kit Copies without layers 1 and 2.
@@ -113,7 +122,28 @@ After the sweep and the look back. The body names what diverged.
   - §4.2.3 keeps *Who judges*, *The verdict*, the list of verdicts, and that no verdict goes down.
   - §4.2.4 keeps *What each verdict asks*, *Rewording* and *Then the stop moves*. The survey is a call shown at commit 6; my first guess is that it stays.
   - §4.2.5 keeps *When one is due*, *What a Kit Update is*, its Update Note, and *One at a time*.
-  - §4.2.1 and §4.2.6 are sorted at 8e and 8g.
+  - §4.2.1 and §4.2.6, since 8a3 Change, in keeping knowledge, §3.1 and §3.6, are sorted below.
+- **The Backend Repo's two parts, sorted into three places,** agreed before 8b was drafted. CK is Change, in keeping knowledge, the Maintainer Repo's view; CB is Change, in CBC backend design; Kit is the Backend Kit's Adapted Cases. Five handoffs are written in both CK and CB, each in its own words, as two Problem Domains' ideas must be.
+  - *Change a Kit Copy,* §3.1:
+    - when a Kit Copy changes, only where work shows a misfit, and why not ahead, at the gate or in records: CB;
+    - where the Change Record sits, and what it holds: CK, since Read and Judge rely on it, and CB;
+    - rewritten with its Copy Change; the commit, an Update Take's commits passing: CB;
+    - the gate decides each Copy Change; main moves only at a gate: CK, already in §3.2, and CB;
+    - *At the gate*'s steps, and why the gate decides: Kit, the gate's part;
+    - the simulation's two "it comes back if" lines, a session-end check and a gate note: Kit, as open points with their triggers;
+    - the open point on a reversed Copy Change leaving a trace: CK.
+  - *Take the Kit Update,* §3.6:
+    - taken between Plan Steps, at the next opening, after a Look for Lessons, and why not mid-step or over unjudged changes: CK, since Deliver relies on it, and CB;
+    - the check, main still at the *settled snapshot*, or refused: CK and CB;
+    - the taking Adapted Case taken first: CK, since the Update Note names it, and CB;
+    - every Kit Copy taken whole, every Change Record going with it, and why: CK, since Read relies on it, and CB;
+    - the *version snapshot* recorded: CK and CB;
+    - when the Backend Kit moves on: CB;
+    - the branch, items 1 to 6, the gate last, and why: Kit;
+    - the open points on finished work under a changed rule, dropping an open step, and asking at each opening: CB;
+    - the open point on postponing a staged Kit Update: CK;
+    - where the Kit Version and the *version snapshot* are written: Kit, its trigger firing at 8f.
+  - The gate is part of how a Backend Repo closes any Plan Step; only *At the gate* belongs here. Where the rest lives is asked at 8d.
 - **What moves with Change, a first sort,** decided at 8a3: the Defined Terms of a change's travel, Copy Change, Change Record, Kit Update, Update Note, Update Take, Kit Version, Look for Lessons, Repo Reading, Repo Register, Attention Note and their short forms; §4.2 and §4.3; §5's questions 2, 3, 4, 10 and 11. Staying in the layers document: Backend Kit, Kit Copy, Backend Repo, Maintainer Repo; §3; the arrows of §4.1; the picture.
 - **Section numbers change with the move.** The plan names the moved sections by title from 8a3 on.
 - **The boundary between the layers and Change:** a sentence still true if nothing ever changed stays in the layers; one about something added, moved or changed goes to Change. Change holds how a text is checked when an idea above it changes; the layers hold what that text must hold.
