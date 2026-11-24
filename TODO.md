@@ -84,17 +84,20 @@
         `.claude/understanding/`; the Backend Repo's, Change a Kit
         Copy and Take the Kit Update, go to layer 3 (the layers
         document's §3.3 and §3.4);
-      - two Change Sets, the Maintainer Repo's parts first
-        (2026-11-24, the reviewer). Neither needs the other. The
-        Backend Repo's parts first need the Problem Domain Idea above
-        them, the layers of knowledge in CBC backend design, and its
-        Defined Terms (the layers document's §3.2.2; ADR-0085,
-        decision 4);
-      - Instruction Texts: Judge's is written with its understanding,
-        an Agent Skill, since reading CBC Runs 4, 5 and 6 judges by it
-        (its item). Read's and Deliver's wait for the rewrite; until
-        then, the exchange-read and exchange-deliver Agent Skills do
-        that work (2026-11-24, the reviewer);
+      - one Change Set, both sides, the Maintainer Repo's parts first
+        (2026-11-24, the reviewer). The Backend Repo's parts go to the
+        Backend Kit's group for keeping knowledge, naming nothing of
+        backends. They first need the Problem Domain Idea above them,
+        the layers of knowledge in CBC backend design, and its Defined
+        Terms (the layers document's §3.2.2; ADR-0085, decision 4);
+      - each Adapted Case whole, its Adapted Understanding Text and
+        its Instruction Text, written from the simulation alone.
+        Today's repo is compared with them in the rewrite (2026-11-24,
+        the reviewer);
+      - the whys leave the simulation: a shared rule's to layer 2, one
+        part's own to its Adapted Understanding Text. The simulation
+        keeps its steps, which depth c walks, and its *Today* lines,
+        which the rewrite reads (2026-11-24, the reviewer);
       - one picture of the whole travel at layer 2, chosen by a visual
         comparison; it settles whether the simulation's picture *The
         whole flow* moves or goes.
@@ -121,9 +124,9 @@
         too; what the Update Note's why says; at layer 1, how far
         down the survey reaches (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
         §4.2.4, *Act on the verdicts*, its *Open*);
-      - Judge's Agent Skill, written by the split, follows what depth
-        c changes in Judge Copy Changes, before CBC Runs 4, 5 and 6
-        are judged (2026-11-24, the reviewer).
+      - the Adapted Cases the split writes follow what depth c
+        changes, both halves; Judge's before CBC Runs 4, 5 and 6 are
+        judged (2026-11-24, the reviewer).
       Trigger: the Change idea split, its item.
       See: devlog 2026-11-22, the depth c item.
 
@@ -330,6 +333,18 @@
       Trigger: a second Concept Repo.
       See: `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §5, *Open questions*,
       "A kit for new Maintainer Repos".
+
+- [ ] Decide how a second kit reuses the Backend Kit's group for
+      keeping knowledge: a copy of its own, or one group both kits
+      share (2026-11-24, the reviewer).
+      Context: the steps a Backend Repo takes to change a Kit Copy and
+      to take a Kit Update name nothing of backends; the simulation
+      used nothing of them. Each Problem Domain has its own set at
+      layer 3, never shared (ADR-0084, decision 5;
+      `knowledge/backbone-ideas/layers-of-knowledge.md` §3.2, *The
+      Problem Domain layer*, its **Rules**), so a copy is the way
+      today. One shared group changes that rule.
+      Trigger: the second Problem Domain that needs a kit.
 
 - [ ] Design how a document is refined: a broad Adapted Case, an
       Output Shape read after the work, and how each corrects the
