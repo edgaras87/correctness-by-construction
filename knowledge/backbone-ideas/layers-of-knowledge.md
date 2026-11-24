@@ -2,15 +2,15 @@
 
 <!--
 What it is: a Backbone Idea (§3.1), and its one home.
-What stands on it: knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge. Each Problem Domain Idea points here, and never retells it.
+What stands on it: knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md, its Problem Domain Idea of keeping knowledge. knowledge/backbone-ideas/change.md, a Backbone Idea standing on it. Each Problem Domain Idea points here, and never retells it.
 Its place in the repo: knowledge/backbone-ideas/ (ADR-0084).
 How it is edited:
-- The picture and the text are checked against each other at every change: each label in the picture is explained in the text, each part the text names is in the picture, and what the text says moves where matches the arrows.
+- The picture and the text are checked against each other at every change: each label in the picture is explained in the text, each part the text names is in the picture, and what the text says moves where matches the arrows. Until the picture is redrawn, its arrows but *worked by* are explained in Change, knowledge/backbone-ideas/change.md §4 (ADR-0088, decision 8).
 - It gives no example from one Problem Domain's work. §1 names one kind of project only to show what a Problem Domain is.
 - A trial, here only: a section's rules close it, in a last paragraph marked Rules, and govern that section. A rule may be split across a section and its subsections.
 -->
 
-This document says what the layers of knowledge are, in any Problem Domain, and how knowledge moves between them. It names no repo: each Problem Domain's instance says where its layers are kept and how its texts travel.
+This document says what the layers of knowledge are, in any Problem Domain, and what each holds. How knowledge enters them and moves between them is Change's (`knowledge/backbone-ideas/change.md`). It names no repo: each Problem Domain's instance says where its layers are kept and how its texts travel.
 
 ## 1. Its Defined Terms
 
@@ -57,7 +57,7 @@ This document says what the layers of knowledge are, in any Problem Domain, and 
           ╎ │ instructions           │ ╎  ╎ │ instructions         │    │      │       │      ╎
           ╎ └────────────────────────┘ ╎  ╎ └──────────────────────┘    │      │       │      ╎
           ╎     │        ▲       ▲     ╎  ╎     │        ▲       ▲      │      │       │      ╎
-          ╎ worked by change set apart ╎  ╎ worked by change set apart  │      │       │      ╎
+          ╎ worked by   fit  set apart ╎  ╎ worked by   fit  set apart  │      │       │      ╎
           ╎     ▼        │       │     ╎  ╎     ▼        │       │      ▼      │       │      ╎
           ╎ ┌────────────────────────┐ ╎  ╎ ┌───────────────────────────────────────────────┐ ╎
           ╎ │ a project: its work,   │ ╎  ╎ │ a project: its work, by understanding and     │ ╎
@@ -72,7 +72,7 @@ This document says what the layers of knowledge are, in any Problem Domain, and 
           └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘  └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘
 ```
 
-Key: each dashed frame holds one Problem Domain: its Problem Domain Ideas, its set of Adapted Cases, and a project of it. Each Problem Domain Idea names the Backbone Idea it is adapted from (§3.2). The arrows on the right serve a project's own Adapted Case, written where none of its Problem Domain's covers a piece of its work (§3.4). Problem Domain A's project has none.
+Key: the arrows but *worked by* are Change's, and explained there (`knowledge/backbone-ideas/change.md` §4, *The arrows*). Each dashed frame holds one Problem Domain: its Problem Domain Ideas, its set of Adapted Cases, and a project of it. Each Problem Domain Idea names the Backbone Idea it is adapted from (§3.2). The arrows on the right serve a project's own Adapted Case, written where none of its Problem Domain's covers a piece of its work (§3.4). Problem Domain A's project has none.
 
 ## 3. The layers
 
@@ -115,7 +115,7 @@ A Problem Domain's Adapted Cases are true for every project of it, and name none
 
 ### 3.4 The layer of work
 
-Layer 4 is one project: the work it does, and the texts it works by. Those texts are its copies of its Problem Domain's Adapted Cases, and its own Adapted Cases, written where none of its Problem Domain's covers a piece of its work. Its own are true for it alone. A project whose Problem Domain has no set yet works by its own alone. What the work teaches changes the text it was done by, where the text does not fit.
+Layer 4 is one project: the work it does, and the texts it works by. Those texts are its copies of its Problem Domain's Adapted Cases, and its own Adapted Cases, written where none of its Problem Domain's covers a piece of its work. Its own are true for it alone. A project whose Problem Domain has no set yet works by its own alone. Work is done by an Adapted Case, kept where the work is done, or as a copy there: the picture's arrow *worked by*, layer 3 to layer 4. What the work teaches changes the text it was done by, where the text does not fit, by the arrow *fit*.
 
 **Rules:**
 
@@ -124,31 +124,7 @@ Layer 4 is one project: the work it does, and the texts it works by. Those texts
 
 ## 4. How knowledge moves
 
-Knowledge moves along the picture's arrows. Going down, an idea is adapted and taken to where it is used. Going up, what the work taught is judged, and lands in the layer it holds for.
-
-### 4.1 How the layers fill
-
-Knowledge can enter at any layer. Work meets something new and changes the Adapted Case it works by, or writes one, on trial, where none covers it: Knowledge on Trial. An idea to test may be written first as understanding, in a Problem Domain Idea or in layer 1, and Adapted Cases are then written from it. While a text is written, a part of it may show as the idea above it, and is set apart there: a Problem Domain Idea's backbone in layer 1, or the part of an Adapted Case true for its whole Problem Domain, in its Problem Domain Idea.
-
-**Rules:**
-
-- A text is written in the layer it belongs to, wherever its knowledge entered.
-- A lesson from work goes as high as it is true.
-- A guess is written as open, with the trigger that tests it. Only what follows from a text already written is stated as a rule.
-
-### 4.2 The arrows
-
-- **adapt,** layer 1 to layer 2, and layer 2 to layer 3, or to layer 4 for a project's own Adapted Case: a text is written from the idea above it, narrowed to its need, with what the need adds. A part left out on purpose is marked, with why (§4.2's **Rules**, *Narrowing, never shrinking*).
-- **lesson,** layer 3 to layer 2, layer 2 to layer 1, and a project's own Adapted Case in layer 4 to layer 2: a lesson goes up as far as it is true (§4.1).
-- **set apart,** layer 3 to layer 2, layer 2 to layer 1, and layer 4 to layer 3, or to layer 2 from a project's own Adapted Case: while a text is written, a part of it shows as true without what the text adds. The part is written in the layer above, and the text is then adapted from it.
-- **worked by,** layer 3 to layer 4: work is done by an Adapted Case, kept where the work is done, or as a copy there.
-- **change,** layer 4 to layer 3: where the work shows the Adapted Case does not fit, the work changes it. Where no Adapted Case covers the work, the project writes its own, on trial (§3.4). The change is judged, and goes up the arrow *lesson* as far as it holds.
-
-**Rules:**
-
-- When an idea changes, each text built on it is checked, and changes if it must.
-- **Narrowing, never shrinking.** An idea changes only where it is wrong for every text built on it. A part that does not fit one text built on it stays in the idea: that text leaves the part out, and marks that it did, with why. The mark is written when the exclusion is decided, never listed ahead. A change to a marked part reopens its why.
-- A lesson is reworded to name no Adapted Case at layer 2, and no Problem Domain at layer 1.
+How knowledge enters the layers and moves between them, and the picture's arrows but *worked by*, are Change's (`knowledge/backbone-ideas/change.md`).
 
 ## 5. Open questions
 
@@ -156,4 +132,3 @@ None is answered by the text above. Each is answered when work reaches it: its a
 
 1. **When a second adaptation is worth it:** how differently must a Backbone Idea be understood in one Problem Domain before two Problem Domain Ideas are clearer than one? Practice decides (§3.2).
 2. **A second adaptation or a second Adapted Case:** where does a second Problem Domain Idea end, and a second Adapted Case of one Problem Domain Idea begin?
-3. **A lesson the layer above already holds:** a change is true beyond its own Adapted Case, but the idea above already says it, so nothing comes down the arrow *adapt*. How do the other Adapted Cases built on that idea learn of it? Does whoever judges the change decide this, and tell each one? The change work answers it.

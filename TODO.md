@@ -65,7 +65,7 @@
       Cases (2026-11-23, the reviewer).
       Context: the layers document's §4.2.1 to §4.2.6, about 200
       lines, are mostly steps for one use each: text of layers 3 and
-      4 at layer 2 (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.1,
+      4 at layer 2 (`knowledge/backbone-ideas/change.md` §3,
       *How the layers fill*, its **Rules**). Each part already names
       its Adapted Cases. Left at layer 2, a change to one part's steps
       reads as a change to the Problem Domain Idea, and sets off a

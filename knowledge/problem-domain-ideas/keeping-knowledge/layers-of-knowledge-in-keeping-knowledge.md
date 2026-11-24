@@ -14,7 +14,7 @@ Its first sources, input and not rules:
 How it is edited: the picture and the text are checked against each other at every change, as the general document's header says.
 -->
 
-This document is the layers of knowledge in the Maintainer Repo's Problem Domain: where each layer is kept, and how knowledge travels between the Maintainer Repo and the Backend Repos. The layers themselves, and how knowledge moves between them, are the general document's (`knowledge/backbone-ideas/layers-of-knowledge.md`). The picture comes first; the text explains each of its labels.
+This document is the layers of knowledge in the Maintainer Repo's Problem Domain: where each layer is kept, and how knowledge travels between the Maintainer Repo and the Backend Repos. The layers themselves are the general document's (`knowledge/backbone-ideas/layers-of-knowledge.md`), and how knowledge moves between them is Change's (`knowledge/backbone-ideas/change.md`). The picture comes first; the text explains each of its labels.
 
 ## 1. Its Defined Terms
 
@@ -124,6 +124,7 @@ Layer 1 holds Backbone Ideas (`knowledge/backbone-ideas/layers-of-knowledge.md` 
 | How an agent works | what one piece of agent work is: what the agent does, when, where and how | planned, from `docs/models/agent.md` (`TODO.md`, the item that rewrites the Agent Model) |
 | CBC design | how a system is designed by CBC, for no one kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 | Defined Terms | what a Defined Term is, and what keeps its meaning exact | `knowledge/backbone-ideas/defined-terms.md` |
+| Change | any change to knowledge, wherever it starts, and what holds for every one | `knowledge/backbone-ideas/change.md` |
 
 Which other of today's project-agnostic ideas are Backbone Ideas is open (§5).
 
@@ -166,7 +167,7 @@ Here an Adapted Case is written for one piece of agent work, such as reading a B
 
 Layer 3 holds one set for each Problem Domain. So far there is one, the Backend Kit, for the Backend Repos'. The Maintainer Repo's Problem Domain has none, so its own Adapted Cases are layer 4 (§3.4). §3.3.1 and §3.3.2 list the Backend Kit's Adapted Cases in two groups: for keeping a Backend Repo's own knowledge, and for designing its backend. An Agent Skill or Agent Rule found both in the Backend Kit and among the Maintainer Repo's own is two Adapted Cases, one in each. The two are tied only through the nearest idea above them both (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.3, *The Adapted Case layer*).
 
-Work no Adapted Case covers may write one of the repo's own, on trial: one kind of Knowledge on Trial (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.2, *The arrows*, the arrow *change*). It is layer 4, the repo's own (§3.4). A Backend Repo's Knowledge on Trial is kept in the Backend Repo, comes from no Kit Copy, and is handed over at its close.
+Work no Adapted Case covers may write one of the repo's own, on trial: one kind of Knowledge on Trial (`knowledge/backbone-ideas/change.md` §4, *The arrows*, the arrow *fit*). It is layer 4, the repo's own (§3.4). A Backend Repo's Knowledge on Trial is kept in the Backend Repo, comes from no Kit Copy, and is handed over at its close.
 
 #### 3.3.1 Keeping knowledge
 
@@ -208,15 +209,15 @@ A Backend Repo's layer 4 is kept in the Backend Repo.
 
 ## 4. How knowledge moves
 
-How knowledge enters the layers and moves between them is the general document's (`knowledge/backbone-ideas/layers-of-knowledge.md` §4, *How knowledge moves*). This section adds the arrows between the Maintainer Repo and the Backend Repos, and how a Copy Change travels them.
+How knowledge enters the layers and moves between them is Change's (`knowledge/backbone-ideas/change.md`). This section adds the arrows between the Maintainer Repo and the Backend Repos, and how a Copy Change travels them.
 
 ### 4.1 The arrows
 
-- **adapt,** **lesson** and **set apart,** between layers 1, 2 and 3: as the general document has them (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.2, *The arrows*). A lesson, or a part set apart, can come from either column.
+- **adapt,** **lesson** and **set apart,** between layers 1, 2 and 3: as Change has them (`knowledge/backbone-ideas/change.md` §4, *The arrows*). A lesson, or a part set apart, can come from either column.
 - **birth,** layer 3 to layer 4: a new Backend Repo receives Kit Copies of the Backend Kit, at one Backend Kit Version.
 - **Kit Update,** layer 3 to layer 4: a Backend Kit Update (§3) brings a Backend Repo's Kit Copies to a newer Backend Kit Version. The Backend Repo takes it by its own Kit Copy of the Adapted Case for taking a Kit Update.
 - **Copy Change, read back,** layer 4 to layer 3: a Backend Repo changes a Kit Copy and records why. The Maintainer Repo reads it back and judges it against the Adapted Case the Kit Copy came from.
-- **adapt,** **lesson** and **set apart,** between layer 2 and layer 4, in the right column: the Maintainer Repo's own Adapted Cases are written from its Problem Domain Ideas, and its lessons, and the parts it sets apart, go up to them (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.2, *The arrows*).
+- **adapt,** **lesson** and **set apart,** between layer 2 and layer 4, in the right column: the Maintainer Repo's own Adapted Cases are written from its Problem Domain Ideas, and its lessons, and the parts it sets apart, go up to them (`knowledge/backbone-ideas/change.md` §4, *The arrows*).
 
 ### 4.2 How a change travels
 
@@ -331,7 +332,7 @@ Lines under one reason share one verdict, and each line says how its own Kit Cop
 **Its Adapted Case.** The Maintainer Repo's own, for judging a Repo Reading and acting on its verdicts. It holds this part's own steps, and why each is so.
 
 **Open:**
-- which other texts are checked for a loss in narrowing. Nothing comes down the arrow *adapt*, since the idea above did not change (`knowledge/backbone-ideas/layers-of-knowledge.md` §5, *Open questions*, question 3). A first guess: the texts built on the idea that holds the part, as the survey asks (§4.2.4). If several lost it, the idea's wording may be too weak, and is reworded clearer, never narrower. Its trigger: the first depth-d verdict.
+- which other texts are checked for a loss in narrowing. Nothing comes down the arrow *adapt*, since the idea above did not change (`knowledge/backbone-ideas/change.md` §6, *Open questions*, question 1). A first guess: the texts built on the idea that holds the part, as the survey asks (§4.2.4). If several lost it, the idea's wording may be too weak, and is reworded clearer, never narrower. Its trigger: the first depth-d verdict.
 
 #### 4.2.4 Act on the verdicts
 
@@ -344,9 +345,9 @@ The Maintainer Repo makes what each verdict asks, then moves the *settled snapsh
 - depth d fixes the Adapted Case from the idea above, after fixing the Problem Domain Idea from its Backbone Idea when the loss sits at layer 2;
 - depth e marks a narrowing with its why, in the text just below the idea that does not fit.
 
-**The survey.** Before a lesson enters the idea above, every other text built on that idea is asked whether it fits, the one the lesson came from excepted (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.2, *The arrows*, its **Rules**; §3.3, *The Adapted Case layer*). At layer 2, that is the other Adapted Cases of that Problem Domain Idea, the Maintainer Repo's own only when they share it. At layer 1, it is every Problem Domain Idea on that Backbone Idea. It is the arrow *adapt*'s check, run before the idea changes, so a conflict shows first. Each text answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto, and what the survey finds must change, changes. Its answers are also evidence of how high the lesson is true: if every answer conflicts, it is not true that high.
+**The survey.** Before a lesson enters the idea above, every other text built on that idea is asked whether it fits, the one the lesson came from excepted (`knowledge/backbone-ideas/change.md` §4, *The arrows*, its **Rules**; `knowledge/backbone-ideas/layers-of-knowledge.md` §3.3, *The Adapted Case layer*). At layer 2, that is the other Adapted Cases of that Problem Domain Idea, the Maintainer Repo's own only when they share it. At layer 1, it is every Problem Domain Idea on that Backbone Idea. It is the arrow *adapt*'s check, run before the idea changes, so a conflict shows first. Each text answers "holds as it is", "must change", with what and why, or "conflicts", with why. A conflict is input to the human's decision, never a veto, and what the survey finds must change, changes. Its answers are also evidence of how high the lesson is true: if every answer conflicts, it is not true that high.
 
-**Rewording.** A lesson is reworded here, never before: for every Backend Repo at depth b; at depth c, naming no Adapted Case at layer 2, and no Problem Domain at layer 1 (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.2, *The arrows*, its **Rules**).
+**Rewording.** A lesson is reworded here, never before: for every Backend Repo at depth b; at depth c, naming no Adapted Case at layer 2, and no Problem Domain at layer 1 (`knowledge/backbone-ideas/change.md` §4, *The arrows*, its **Rules**).
 
 **Then the stop moves.** Once the verdicts are acted on, the Repo Reading goes: nothing in the Kit Update is read from it. Act on the verdicts sets the *settled snapshot* to the stop, in the Repo Register (§4.2.2). With no verdicts, as in cases *not moved* and *no Copy Change*, that is all it does.
 
@@ -423,10 +424,10 @@ A Copy Change varies in two ways. What was changed varies how the Backend Repo r
 | how deep | c, at layer 2. the idea above changes: its Problem Domain Idea | not yet checked | the other Adapted Cases of that Problem Domain Idea are surveyed, the Maintainer Repo's own only when they share it (§4.2.4) |
 | how deep | c, at layer 1. the idea above changes: its Backbone Idea | not yet checked | every Problem Domain Idea on that Backbone Idea is surveyed; how far down the survey reaches is open (§4.2.4) |
 | how deep | d. the idea above already holds it: layer 3, or layer 2 | not yet checked | the loss sits at layer 2 when the Problem Domain Idea lost a part its Backbone Idea holds: the Problem Domain Idea is fixed from its Backbone Idea, then the Adapted Case from the Problem Domain Idea. Which other texts are checked for the same loss is open (§4.2.3) |
-| how deep | e. it asks to narrow the idea above: layer 3, or layer 2 | not yet checked | the narrowing goes into the text just below the idea that does not fit, marked with its why (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.2, *The arrows*, its **Rules**, *Narrowing, never shrinking*): the Adapted Case, or the Problem Domain Idea when a part of its Backbone Idea does not fit its whole Problem Domain. How that is known is open (§4.2.4) |
+| how deep | e. it asks to narrow the idea above: layer 3, or layer 2 | not yet checked | the narrowing goes into the text just below the idea that does not fit, marked with its why (`knowledge/backbone-ideas/change.md` §4, *The arrows*, its **Rules**, *Narrowing, never shrinking*): the Adapted Case, or the Problem Domain Idea when a part of its Backbone Idea does not fit its whole Problem Domain. How that is known is open (§4.2.4) |
 | how deep | f. several Adapted Cases need it, but not all: no layer | not yet checked | it cannot enter the idea above. When it holds for every Adapted Case of one Problem Domain, it is depth c, at layer 2. One case is left: several Adapted Cases of one Problem Domain, but not all. Across Problem Domains, each writes it into its own adaptation (`knowledge/backbone-ideas/layers-of-knowledge.md` §3.2, *The Problem Domain layer*, its **Rules**). Each Adapted Case gains it, and the same text has no shared home. Open; its trigger: the first change two Adapted Cases need, but not every one |
 
-How deep a Copy Change goes is how high it goes: each depth names the highest layer it changes, since a lesson goes as high as it is true (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.1, *How the layers fill*). The idea above is the Problem Domain Idea an Adapted Case is written from, or the Backbone Idea that one is adapted from.
+How deep a Copy Change goes is how high it goes: each depth names the highest layer it changes, since a lesson goes as high as it is true (`knowledge/backbone-ideas/change.md` §3, *How the layers fill*). The idea above is the Problem Domain Idea an Adapted Case is written from, or the Backbone Idea that one is adapted from.
 
 A stretch of work may hold several Copy Changes, alike or mixed. Each is recorded and read on its own, so they add no row but one: one reason behind Copy Changes to several Adapted Cases.
 
