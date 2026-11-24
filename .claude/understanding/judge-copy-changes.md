@@ -48,8 +48,8 @@ They run from the cheapest check to the dearest, and stop at the first that hold
 
 1. **Did the Kit Copy already say this?** It needs only the original part beside the Copy Change. When it holds, the Backend Repo misread its Kit Copy (Failure Case 7), and nothing new is made. The Backend Kit as it is now is read too, so a lesson it has since made the same way is not made twice.
 2. **Is it specific to that Backend Repo's problem?** It needs what happened, and the Backend Repo's own framing. When it holds, nothing leaves the Backend Repo.
-3. **Does the idea above already hold it?** Then the Adapted Case lost the part in narrowing, and the fix comes from the idea above, not from a new lesson. A part lost has no mark, and one left out on purpose has its mark (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.2, *The arrows*, its **Rules**, *Narrowing, never shrinking*), so the two are told apart.
-4. **How high is it true?** It reads across texts, the dearest check, so it comes last. A lesson goes as high as it is true (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.1, *How the layers fill*). How it is answered is open (§8).
+3. **Does the idea above already hold it?** Then the Adapted Case lost the part in narrowing, and the fix comes from the idea above, not from a new lesson. A part lost has no mark, and one left out on purpose has its mark (`knowledge/backbone-ideas/change.md` §4, *The arrows*, its **Rules**, *Narrowing, never shrinking*), so the two are told apart.
+4. **How high is it true?** It reads across texts, the dearest check, so it comes last. A lesson goes as high as it is true (`knowledge/backbone-ideas/change.md` §3, *How the layers fill*). How it is answered is open (§8).
 
 ## 5. From the reason, never the wording
 
