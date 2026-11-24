@@ -64,8 +64,8 @@
       the Problem Domain Idea; each part's own steps go to its Adapted
       Cases (2026-11-23, the reviewer).
       Context: the layers document's §4.2.1 to §4.2.6, about 200
-      lines, are mostly steps for one use each: layer 3 text at
-      layer 2 (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.1,
+      lines, are mostly steps for one use each: text of layers 3 and
+      4 at layer 2 (`knowledge/backbone-ideas/layers-of-knowledge.md` §4.1,
       *How the layers fill*, its **Rules**). Each part already names
       its Adapted Cases. Left at layer 2, a change to one part's steps
       reads as a change to the Problem Domain Idea, and sets off a
@@ -77,9 +77,24 @@
         Change's diff, the *settled snapshot*, a Kit Update's whole
         files and Update Note, main moving only at a gate's close; the
         rules every part keeps; the tables of parts, depths and cases;
-      - goes to layer 3: each part's own steps, as the Adapted
+      - goes down: each part's own steps, as the Adapted
         Understanding Text of its Adapted Cases, each open point with
-        its rule;
+        its rule. The Maintainer Repo's parts, Read, Judge with Act,
+        and Deliver, go to its own Adapted Cases at layer 4, in
+        `.claude/understanding/`; the Backend Repo's, Change a Kit
+        Copy and Take the Kit Update, go to layer 3 (the layers
+        document's §3.3 and §3.4);
+      - two Change Sets, the Maintainer Repo's parts first
+        (2026-11-24, the reviewer). Neither needs the other. The
+        Backend Repo's parts first need the Problem Domain Idea above
+        them, the layers of knowledge in CBC backend design, and its
+        Defined Terms (the layers document's §3.2.2; ADR-0085,
+        decision 4);
+      - Instruction Texts: Judge's is written with its understanding,
+        an Agent Skill, since reading CBC Runs 4, 5 and 6 judges by it
+        (its item). Read's and Deliver's wait for the rewrite; until
+        then, the exchange-read and exchange-deliver Agent Skills do
+        that work (2026-11-24, the reviewer);
       - one picture of the whole travel at layer 2, chosen by a visual
         comparison; it settles whether the simulation's picture *The
         whole flow* moves or goes.
@@ -105,7 +120,10 @@
       - questions likely met: whether other Backend Repos fall behind
         too; what the Update Note's why says; at layer 1, how far
         down the survey reaches (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
-        §4.2.4, *Act on the verdicts*, its *Open*).
+        §4.2.4, *Act on the verdicts*, its *Open*);
+      - Judge's Agent Skill, written by the split, follows what depth
+        c changes in Judge Copy Changes, before CBC Runs 4, 5 and 6
+        are judged (2026-11-24, the reviewer).
       Trigger: the Change idea split, its item.
       See: devlog 2026-11-22, the depth c item.
 
