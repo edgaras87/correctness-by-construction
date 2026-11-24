@@ -149,7 +149,7 @@ Four steps:
 - **Chosen:** b and d. The others:
   - a reads Copy Changes the gate has not yet looked at, which the Backend Repo may still edit or reverse (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.1, *Change a Kit Copy*);
   - c depends on the human remembering, and the Repo Register then says a Backend Repo has nothing new when it has new work (Failure Case 2);
-  - e alone gives no Look for Lessons to a Backend Repo whose work does not resume, so what it learned is lost (Failure Case 1). The Look for Lessons when work resumes still runs, as d: the human names the Backend Repo to update, which starts a Look for Lessons (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*).
+  - e alone gives no Look for Lessons to a Backend Repo whose work does not resume, so what it learned is lost (Failure Case 1). The Look for Lessons when work resumes still runs, as d: the human names the Backend Repo to update, which starts a Look for Lessons (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2, *How a change travels*).
 - **Its rules:** the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2, *Read Copy Changes*), and this repo's own Adapted Case for it (`.claude/understanding/read-copy-changes.md`).
 - **Today:**
   - borrowed: a CBC Run's Plan Step reaches main by fast-forward at its close, on the reviewer's word (`delivery/fills/cbc-run-pure-playbook.md`, *At the close*);
@@ -312,7 +312,7 @@ Two steps:
 - **Chosen:** b. The others:
   - a was chosen at birth because the start becomes the base of every Look for Lessons (`temp/common-ground/between-repos-simulation.md` §5.1, step 2). Here a wrong file is held in `temp/`, never in force, and a comparison of files leaves little mistake to share. It comes back if a staged file is found, after an Update Take, to differ from the Backend Kit;
   - c leaves only the Backend Repo to check, and it cannot open the Backend Kit, so a staged file that differs from it passes.
-- **Its rules:** the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*).
+- **Its rules:** the layers document's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*), and this repo's own Adapted Case for it (`.claude/understanding/deliver-the-kit-update.md`).
 - **Today:**
   - borrowed: the delivery and its Delivery Note are copied into the CBC Run's `temp/` on the reviewer's word, by the reviewer or by the agent when told; the agent never stages unasked; the tree is checked clean first; the Delivery Staging is named by the commit at which files and Delivery Note are final (`docs/conventions/exchange/` §3.1, *Delivery Staging*);
   - borrowed: nothing in `temp/` is in force until it is copied into place (`delivery/container/.claude/rules/delivered-copies.md`, rule 5);

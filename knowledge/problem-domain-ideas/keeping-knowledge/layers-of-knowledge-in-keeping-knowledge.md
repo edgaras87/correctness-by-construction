@@ -3,7 +3,7 @@
 <!--
 What it is: a Problem Domain Idea of the Maintainer Repo's own Problem Domain, keeping knowledge (§3.2), and its one home. Still a draft and a trial: practice changes it.
 What it stands on: knowledge/backbone-ideas/layers-of-knowledge.md, the layers in any Problem Domain. It adapts that document, and never retells it.
-What stands on it: other texts point here, and never retell it. This repo's own Adapted Cases written from §4.2's parts, by their Adapted Understanding Texts: .claude/understanding/read-copy-changes.md, from §4.2.2; .claude/understanding/judge-copy-changes.md, from §4.2.3 and §4.2.4.
+What stands on it: other texts point here, and never retell it. This repo's own Adapted Cases written from §4.2's parts, by their Adapted Understanding Texts: .claude/understanding/read-copy-changes.md, from §4.2.2; .claude/understanding/judge-copy-changes.md, from §4.2.3 and §4.2.4; .claude/understanding/deliver-the-kit-update.md, from §4.2.5.
 Its place in the repo: knowledge/problem-domain-ideas/keeping-knowledge/ (ADR-0084).
 Where it started: TODO-CONVERSATION-MEMORY.md §35, *The layers of knowledge*.
 Its first sources, input and not rules:
@@ -358,17 +358,11 @@ The Maintainer Repo makes what each verdict asks, then moves the *settled snapsh
 
 #### 4.2.5 Deliver the Kit Update
 
-The Maintainer Repo makes a Kit Update for one Backend Repo, when its work resumes, and stages it there. How each rule was chosen is the simulation's (`temp/common-ground/backend-repo-change-simulation.md` §7, *Deliver the Kit Update*).
+The Maintainer Repo makes a Kit Update for one Backend Repo, when its work resumes, and stages it there.
 
-**When one is due.** A Kit Update is due when the Backend Repo's Kit Version, which the Backend Repo holds, is behind the newest. It goes only when it carries a Backend Kit change. Two Kit Versions are compared by the Backend Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no Backend Kit file leaves every Backend Repo where it was. A Backend Repo cannot see the Maintainer Repo, so it cannot learn this itself. For depth b, the Backend Kit has moved for the Copy Change, so a Kit Update is due: it carries the Backend Kit's Adapted Case at the new Kit Version, with the lesson as its why. Depth c is not yet walked through this part (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it").
+**When one is due.** A Kit Update is due when the Backend Repo's Kit Version, which the Backend Repo holds, is behind the newest. It goes only when it carries a Backend Kit change. It is never sent empty, to carry where a Look for Lessons stopped: the *settled snapshot* is in the Repo Register (§4.2.2), so nothing needs carrying. Two Kit Versions are compared by the Backend Kit's files at their two commits, never by the commits themselves: a Maintainer Repo commit that touches no Backend Kit file leaves every Backend Repo where it was. A Backend Repo cannot see the Maintainer Repo, so it cannot learn this itself. For depth b, the Backend Kit has moved for the Copy Change, so a Kit Update is due: it carries the Backend Kit's Adapted Case at the new Kit Version, with the lesson as its why. Depth c is not yet walked through this part (`TODO.md`, the item "Simulate depth c, then bring the Change idea to it").
 
-**When the check runs.** Only when work resumes. Work resumes when the human, about to open the Backend Repo's next Plan Step, names it to update; neither repo can see that moment itself (§4.2.6). Nothing is made for, or sent to, a Backend Repo whose work has not resumed. Then, in order:
-1. a Look for Lessons runs (§4.2.2). It comes first: a Kit Update is built against the *settled snapshot*, and a Copy Change not yet taken into account would make the Update Take refuse it;
-2. the Kit Versions are compared. When the Backend Repo's is the newest, nothing follows;
-3. the agent checks that none of the Backend Repo's Plan Steps is open. If one is, it says so, and makes nothing: finishing that step would move main, and the Update Take would refuse the Kit Update too;
-4. the Kit Update is made, the agent drafting and the human deciding.
-
-When the human only asks which Backend Repos are behind, the Kit Versions are compared, and nothing is made.
+**When the check runs.** Only when work resumes. Work resumes when the human, about to open the Backend Repo's next Plan Step, names it to update; neither repo can see that moment itself (§4.2.6). Nothing is made for, or sent to, a Backend Repo whose work has not resumed, nor while one of its Plan Steps is open. A check at every Look for Lessons would answer a question nothing acts on: nothing is made until work resumes, and the Backend Kit may move again before then.
 
 **What a Kit Update is.** Two things: every Kit Copy, whole, at the newest Kit Version, and an Update Note. The Backend Repo then has the new version of each file, and finds its old one in its own history. The Update Note holds:
 - the new Kit Version;
@@ -382,11 +376,9 @@ The Update Note is no summary of the Maintainer Repo's work, which the Backend R
 
 **One at a time.** A Repo Reading stays open until its verdicts are acted on. One Repo Reading is open per Backend Repo at a time: a Repo Reading made while one is open extends it, and its lines are judged with the rest, so judging already done is kept. One Kit Update waits for the Backend Repo at a time: a newer one replaces one not yet taken, since it carries every Backend Kit change since the Kit Copies' Kit Version.
 
-**Staging.** A Kit Update reaches the Backend Repo on the human's word, in a step of its own: nothing crosses without that word. It is staged by the human, or by the agent, which never stages unasked. The Backend Repo's tree is checked clean first, with no work under way; when it is not, the agent says what it found and waits for the word. The Kit Update is written only into the Backend Repo's `temp/`, nowhere else there, and replaces one already waiting. Nothing in `temp/` is in force until the Backend Repo takes it. The Kit Update is named by the Maintainer Repo's commit at which its files and Update Note were final, so its Kit Version is exact. Once staged, each file is compared with the new Kit Version; the Backend Repo checks the Update Note against the files when it takes them.
+**Staging.** A Kit Update reaches the Backend Repo on the human's word, in a step of its own: nothing crosses without that word. It is staged by the human, or by the agent. The Kit Update is written only into the Backend Repo's `temp/`, nowhere else there, and replaces one already waiting. Nothing in `temp/` is in force until the Backend Repo takes it. The Kit Update is named by the Maintainer Repo's commit at which its files and Update Note were final, so its Kit Version is exact. Once staged, each file is compared with the new Kit Version; the Backend Repo checks the Update Note against the files when it takes them.
 
-**Its Adapted Cases:**
-- the Maintainer Repo's, for making a Kit Update. It loads on the human's word to update a Backend Repo, and says everything above but *Staging*;
-- the Maintainer Repo's, for delivering a Kit Update. It loads on the human's word to deliver, and says *Staging*.
+**Its Adapted Case.** The Maintainer Repo's own, for making and staging a Kit Update. It holds this part's own steps, and why each is so.
 
 #### 4.2.6 Take the Kit Update
 
