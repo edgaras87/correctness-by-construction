@@ -44,11 +44,11 @@
       `knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`. It is the minimum
       written where how to keep knowledge is not yet known, a trial:
       practice changes it, and the ideas around it, such as Change.
-      Each document's §5 holds its open questions. The layers
-      document's §4.2 holds the open points of how a change travels,
+      Each document's §5 holds its open questions. Change, in keeping knowledge,
+      §3, holds the open points of how a change travels,
       each beside its part's rules, with its trigger.
       Ideas:
-      - the change work: its rules in the layers document's §4.2,
+      - the change work: its rules in Change, in keeping knowledge, §3,
         how each was chosen in the simulation; depth c next (its
         item);
       - a piece of work modeled at each layer, in a document of its
@@ -63,7 +63,7 @@
 - [ ] Split the Change idea: what one part hands the next stays in
       the Problem Domain Idea; each part's own steps go to its Adapted
       Cases (2026-11-23, the reviewer).
-      Context: the layers document's §4.2.1 to §4.2.6, about 200
+      Context: Change, in keeping knowledge, §3.1 to §3.6, about 200
       lines, are mostly steps for one use each: text of layers 3 and
       4 at layer 2 (`knowledge/backbone-ideas/change.md` §3,
       *How the layers fill*, its **Rules**). Each part already names
@@ -93,7 +93,7 @@
       - Change, an idea of its own (2026-11-24, the reviewer): a
         Backbone Idea, Change, for any change to knowledge, wherever
         it starts. Under it, Change, in keeping knowledge, the
-        layers document's §4.2 and §4.3 moved out of it, and Change,
+        layers document's §4 moved out of it, and Change,
         in CBC backend design, the parent of the Backend Kit's
         Adapted Cases for keeping knowledge. The reviewer's guesses,
         such as a new idea carried to all layers together, are open
@@ -118,7 +118,7 @@
       Context: depth c is a lesson that changes the idea above: a
       Problem Domain Idea at layer 2, or a Backbone Idea at layer 1.
       New ideas are written at those layers now, so the case is met
-      today. The survey of the layers document's §4.2.4 holds a first
+      today. The survey of Change, in keeping knowledge, §3.4 holds a first
       guess: each text built on the idea is asked whether it still
       fits. It was never walked through Deliver the Kit Update and
       Take the Kit Update, nor drawn.
@@ -130,8 +130,8 @@
         simulation's §2 leaves for later: only its start may differ;
       - questions likely met: whether other Backend Repos fall behind
         too; what the Update Note's why says; at layer 1, how far
-        down the survey reaches (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md`
-        §4.2.4, *Act on the verdicts*, its *Open*);
+        down the survey reaches (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md`
+        §3.4, *Act on the verdicts*, its *Open*);
       - the Adapted Cases the split writes follow what depth c
         changes, both halves; Judge's before CBC Runs 4, 5 and 6 are
         judged (2026-11-24, the reviewer);
@@ -146,12 +146,12 @@
       Read Copy Changes compares two snapshots (2026-11-13, the
       reviewer).
       Context: Read Copy Changes compares two snapshots and never
-      walks commits (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.2,
+      walks commits (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.2,
       *Read Copy Changes*). "Runs from … to main" and "across that span"
       read as a walk in the problem file's rules on reading, cut on
       2026-11-19; the same words may stand in other drafts.
-      Trigger: due now, the facts of Change in their final home, the
-      layers document's §4.2, so the sweep reads the final text.
+      Trigger: due now, the facts of Change in their final home, Change,
+      in keeping knowledge, §3, so the sweep reads the final text.
 
 - [ ] Do the problem file's next pass: §6 and §8, Failure Case 15,
       the rest of the "project-agnostic" sweep, and §2.2's "middle
@@ -166,8 +166,7 @@
         understanding; the lines of the Repo Responsibility lists
         that retell the layers document; §8's middle-level option,
         which the layers model answers.
-      Trigger: due now, the Change idea written in the layers
-      document's §4.2.
+      Trigger: due now, the Change idea written in Change, in keeping knowledge, §3.
       See: devlog 2026-11-18, later, *Found, not fixed*, item 5.
 
 - [ ] Unlock the folders locked for CBC Run 6 (2026-10-29, the
@@ -321,7 +320,7 @@
         rewrite, or is dropped, since most are about texts the rewrite
         replaces;
       - the inventory brought up to date, not started again;
-      - which of today's ideas are Backbone Ideas, open question 7 of
+      - which of today's ideas are Backbone Ideas, open question 4 of
         the keeping-knowledge layers document.
       Trigger: the way to keep what we know true chosen, and CBC Runs
       4, 5 and 6 judged.
@@ -415,12 +414,12 @@
       and was frozen after scenario 3: scenarios 0 to 3 written, 4 to
       8 not. The Common Ground Problem took one case instead: a
       Backend Repo changes a Backend Kit Copy. That case grew into the
-      Change simulation and the layers document's §4.2, which hold the
+      Change simulation and Change, in keeping knowledge, §3, which hold the
       draft's §5.2, steps 2 and 3, and §5.3. Three parts live only in
       the draft:
       - birth, §5.1: choosing the kit, the delivery and its separate
         check, the start, the first session's prompt, the cleanup.
-        The layers document's §4.2.2 points at it for the start;
+        Change, in keeping knowledge, §3.2, points at it for the start;
       - an idea's repo, §5.0: the brief worked in a repo of its own,
         on a branch, main made from its cleaned history;
       - 18 *Changed from today* findings, which the sorting of where
@@ -433,8 +432,8 @@
       Ideas:
       - its names for a repo and a kit of any kind of system, kept
         from before ADR-0086, as its header says: settled first;
-      - birth as a case of its own, as the Copy Change became; the
-        layers document's §4.2.2 asks it for the delivery check
+      - birth as a case of its own, as the Copy Change became; Change,
+        in keeping knowledge, §3.2 asks it for the delivery check
         writing the Backend Repo's register row, with the *settled
         snapshot* set to the start;
       - each *Open* field, with its trigger, lands with its part;

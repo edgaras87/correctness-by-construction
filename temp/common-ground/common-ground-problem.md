@@ -33,16 +33,16 @@ Defined Terms, in alphabetical order:
 - **Adapted Understanding Text:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
 - **Backbone Idea:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
 - **Backend Kit:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **Backend Kit Attention Note:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Attention Note:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms*).
 - **Backend Kit Copy:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **Backend Kit Copy Change:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **Backend Kit Copy Change Record:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **Backend Kit Update:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **Backend Kit Update Note:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **Backend Kit Update Take:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **Backend Kit Version:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Copy Change:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Copy Change Record:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Update:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Update Note:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Update Take:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Kit Version:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms*).
 - **Backend Repo:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **Backend Repo Reading:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Backend Repo Reading:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms*).
 - **Common Ground Problem:** keeping common ground between the human and the agent from one session to the next, while the text it is built from goes stale; the problem this document states.
 - **Depth of Understanding:** how deep someone's understanding of an idea goes: basics for one, details for another.
 - **Failure Case:** one way the human and the agent lose their common ground, numbered in §4.
@@ -53,9 +53,9 @@ Defined Terms, in alphabetical order:
 - **Knowledge Drift Repair:** bringing text back in line with the knowledge, so common ground can be built from it again: finding where it drifted, judging each place, deciding with the human what changes, and fixing it. Today the finding is a sweep: one or more agents read the whole repo.
 - **Knowledge on Trial:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
 - **Knowledge Time Shift:** knowledge changing *time*: *later* to *now* when learned or checked, *now* to *before* when replaced.
-- **Look for Lessons:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Look for Lessons:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms*).
 - **Maintainer Repo:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
-- **Maintainer Repo Register:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §1, *Its Defined Terms*).
+- **Maintainer Repo Register:** defined by the layers model (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §1, *Its Defined Terms*).
 - **Mistaken Knowledge:** knowledge that is itself wrong, carried faithfully into text. It is not Knowledge Drift.
 - **One Home per Fact:** the Maintainer Repo's practice: each fact in one text, its home, with every other text pointing there.
 - **Problem Domain:** defined by the layers model (`knowledge/backbone-ideas/layers-of-knowledge.md` §1, *Its Defined Terms*).
@@ -127,8 +127,8 @@ The Maintainer Repo keeps:
 2. understanding of the concept, CBC system design;
 3. the Backend Kit, for every Backend Repo to work from (below, *What the Backend Kit holds*);
 4. its own Adapted Case of agent work, updated as the project-agnostic understanding changes;
-5. findings from Backend Repos. A Backend Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other Backend Repos. The Maintainer Repo reads the Backend Kit Copy Changes back and judges each, by its Adapted Case for judging a Backend Repo Reading (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.3, *Judge Copy Changes*);
-6. Backend Kit Updates for Backend Repos, taken when work resumes in one (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.5, *Deliver the Kit Update*; §4.2.6, *Take the Kit Update*): a Backend Repo born earlier takes every Backend Kit Copy whole, at the newest Backend Kit Version, with the why of each change since its own;
+5. findings from Backend Repos. A Backend Repo uses its Adapted Cases in practice, and changes them as its problems demand. It can judge a change against its own Adapted Cases, but not against the project-agnostic understanding or other Backend Repos. The Maintainer Repo reads the Backend Kit Copy Changes back and judges each, by its Adapted Case for judging a Backend Repo Reading (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.3, *Judge Copy Changes*);
+6. Backend Kit Updates for Backend Repos, taken when work resumes in one (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.5, *Deliver the Kit Update*; §3.6, *Take the Kit Update*): a Backend Repo born earlier takes every Backend Kit Copy whole, at the newest Backend Kit Version, with the why of each change since its own;
 7. its own records: the history and the backlog of this work.
 8. its Knowledge on Trial, from Backend Repos and its own, judged here. Each stays on trial for more uses, lands as new understanding, or lands in pieces, added to understanding texts that already exist, or is dropped. A landing is a moment for a Knowledge Drift Repair of what it touches, here and in the Backend Repos' Backend Kit Copies. The Maintainer Repo also judges its own Knowledge on Trial, with no outside judge. A Backend Repo's, once judged here, reaches that Backend Repo by a Backend Kit Update, judged there like any other change.
 
@@ -138,7 +138,7 @@ Each Backend Repo:
 2. keeps understanding of its own problem: one specific system's design;
 3. keeps its own records, started from the record forms in its Backend Kit;
 4. has its own Knowledge on Trial: it uses each until the Maintainer Repo judges it, and offers it back;
-5. takes Backend Kit Updates by its copy of the Adapted Case for taking them, and may change any part of it (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.2.6, *Take the Kit Update*).
+5. takes Backend Kit Updates by its copy of the Adapted Case for taking them, and may change any part of it (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §3.6, *Take the Kit Update*).
 
 #### What the Backend Kit holds
 
@@ -146,7 +146,7 @@ What the Backend Kit holds is the layers model's (`knowledge/problem-domain-idea
 
 #### What passes between the repos
 
-What passes between the Maintainer Repo and the Backend Repos is the layers model's (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §4.1, *The arrows*).
+What passes between the Maintainer Repo and the Backend Repos is the layers model's (`knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` §2, *The arrows*).
 
 How a Backend Kit Copy Change read back travels, in six parts, is below (*A Backend Repo's change*).
 
@@ -214,7 +214,7 @@ Where text is kept today, in the Maintainer Repo, on each of the five Knowledge 
 | The human's private working rules | instruction | now | the agent acts on it; the human wrote it | the Maintainer Repo | not yet sorted |
 | The agent's memory | both | now | the agent; the human rarely | the Maintainer Repo's work, outside its files | not yet sorted |
 | Knowledge on Trial; today, in the Maintainer Repo, the Approach on Trial, for ways of working only | both | now, unchecked | the agent works by it; the human judges it | the Maintainer Repo, or a Backend Repo | 4, the repo's own (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §3.3, *The Adapted Case layer*) |
-| Backend Kit Copy | both: each an Adapted Case; the description of CBC system design is understanding alone (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §5, *Open questions*, question 6) | now | the agent in the Backend Repo | each Backend Repo | 3, used in 4 |
+| Backend Kit Copy | both: each an Adapted Case; the description of CBC system design is understanding alone (`knowledge/problem-domain-ideas/keeping-knowledge/layers-of-knowledge-in-keeping-knowledge.md` §5, *Open questions*, question 3) | now | the agent in the Backend Repo | each Backend Repo | 3, used in 4 |
 | The Repo Responsibility, §2's lists | understanding | later | both | the Maintainer Repo | not yet sorted |
 
 ### 3.1 Who uses the text
