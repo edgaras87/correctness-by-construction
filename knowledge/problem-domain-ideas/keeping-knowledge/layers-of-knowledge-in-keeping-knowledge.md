@@ -113,7 +113,7 @@ Layer 1 holds Backbone Ideas (`knowledge/backbone-ideas/layers-of-knowledge.md` 
 
 | Backbone Idea | What it says | Home |
 |---|---|---|
-| The layers of knowledge | the layers knowledge sits in, and how it moves between them | `knowledge/backbone-ideas/layers-of-knowledge.md` |
+| The layers of knowledge | the layers knowledge sits in, and what each holds | `knowledge/backbone-ideas/layers-of-knowledge.md` |
 | How an agent works | what one piece of agent work is: what the agent does, when, where and how | planned, from `docs/models/agent.md` (`TODO.md`, the item that rewrites the Agent Model) |
 | CBC design | how a system is designed by CBC, for no one kind of system | planned, from `concept/` (`TODO.md`, the item that splits the concept) |
 | Defined Terms | what a Defined Term is, and what keeps its meaning exact | `knowledge/backbone-ideas/defined-terms.md` |
@@ -137,7 +137,7 @@ The Maintainer Repo's own Problem Domain. It works by its own Adapted Cases, wri
 
 | Problem Domain Idea | Adapted from | What it adds | Home |
 |---|---|---|---|
-| The layers of knowledge, in keeping knowledge | The layers of knowledge | where each layer is kept; how knowledge travels between the repos | this document |
+| The layers of knowledge, in keeping knowledge | The layers of knowledge | where each layer is kept | this document |
 | Defined Terms, in keeping knowledge | Defined Terms | the mark; where each is defined; the Borrow Table; finding one | `knowledge/problem-domain-ideas/keeping-knowledge/defined-terms-in-keeping-knowledge.md` |
 | Change, in keeping knowledge | Change | the arrows between the Maintainer Repo and the Backend Repos; how a change travels them | `knowledge/problem-domain-ideas/keeping-knowledge/change-in-keeping-knowledge.md` |
 | How an agent works, in keeping knowledge | How an agent works | not yet known | planned (`TODO.md`, the item that rewrites the Agent Model) |
